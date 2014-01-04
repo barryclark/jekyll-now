@@ -1,6 +1,6 @@
 # Maid
 
-Maid is an unassuming [Jekyll](http://jekyllrb.com) theme that places content first by tucking away navigation in a hidden drawer. It's based on [Poole](http://getpoole.com), the Jekyll butler and [Lanyon](http://lanyon.getpoole.com) built by [mdo](https://github.com/mdo).
+Maid is an unassuming [Jekyll](http://jekyllrb.com) theme that places content first by tucking away navigation in a hidden drawer. It's based on [Poole](http://getpoole.com) and [Lanyon](http://lanyon.getpoole.com) built by [mdo](https://github.com/mdo).
 
 ## Contents
 
@@ -22,7 +22,6 @@ Maid is a theme built on top of [Poole](https://github.com/poole/poole), which p
 ## Options
 
 Maid includes some customizable options, typically applied via classes on the `<body>` element.
-
 
 ### Sidebar menu
 
