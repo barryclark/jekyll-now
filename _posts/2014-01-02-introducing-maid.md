@@ -1,10 +1,11 @@
 ---
 layout: post
 title: Introducing Maid
-summary: A beautifully simple, content-driven theme for Jekyll.
+summary: A beautifully simple, content-driven theme for Jekyll, based on Poole and Lanyon
+category: Catch All
 ---
 
-Lanyon is an unassuming [Jekyll](http://jekyllrb.com) theme that places content first by tucking away navigation in a hidden drawer. It's based on [Poole](http://getpoole.com), the Jekyll butler.
+Maid is an unassuming [Jekyll](http://jekyllrb.com) theme that places content first by tucking away navigation in a hidden drawer. It's based on [Poole](http://getpoole.com), the Jekyll butler.
 
 ### Built on Poole
 

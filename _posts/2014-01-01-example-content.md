@@ -1,7 +1,8 @@
 ---
 layout: post
-title: Example content
+title: See the theme in action, Maid is simple and elegant
 summary: This is an example blog post that shows several types of HTML content supported in this theme.
+category: Design
 ---
 
 
