@@ -1,10 +1,6 @@
-# Lanyon
+# Maid
 
-Lanyon is an unassuming [Jekyll](http://jekyllrb.com) theme that places content first by tucking away navigation in a hidden drawer. It's based on [Poole](http://getpoole.com), the Jekyll butler.
-
-![Lanyon](https://f.cloud.github.com/assets/98681/1825266/be03f014-71b0-11e3-9539-876e61530e24.png)
-![Lanyon with open sidebar](https://f.cloud.github.com/assets/98681/1825267/be04a914-71b0-11e3-966f-8afe9894c729.png)
-
+Maid is an unassuming [Jekyll](http://jekyllrb.com) theme that places content first by tucking away navigation in a hidden drawer. It's based on [Poole](http://getpoole.com), the Jekyll butler and [Lanyon](http://lanyon.getpoole.com) built by [mdo](https://github.com/mdo).
 
 ## Contents
 
@@ -20,12 +16,12 @@ Lanyon is an unassuming [Jekyll](http://jekyllrb.com) theme that places content 
 
 ## Usage
 
-Lanyon is a theme built on top of [Poole](https://github.com/poole/poole), which provides a fully furnished Jekyll setup—just download and start the Jekyll server. See [the Poole usage guidelines](https://github.com/poole/poole#usage) for how to install and use Jekyll.
+Maid is a theme built on top of [Poole](https://github.com/poole/poole), which provides a fully furnished Jekyll setup—just download and start the Jekyll server. See [the Poole usage guidelines](https://github.com/poole/poole#usage) for how to install and use Jekyll.
 
 
 ## Options
 
-Lanyon includes some customizable options, typically applied via classes on the `<body>` element.
+Maid includes some customizable options, typically applied via classes on the `<body>` element.
 
 
 ### Sidebar menu
@@ -44,10 +40,10 @@ title: About
 
 ### Themes
 
-Lanyon ships with eight optional themes based on the [base16 color scheme](https://github.com/chriskempson/base16). Apply a theme to change the color scheme (mostly applies to sidebar and links).
+Maid ships with eight optional themes based on the [base16 color scheme](https://github.com/chriskempson/base16). Apply a theme to change the color scheme (mostly applies to sidebar and links).
 
-![Lanyon with red theme](https://f.cloud.github.com/assets/98681/1825270/be065110-71b0-11e3-9ed8-9b8de753a4af.png)
-![Lanyon with red theme and open sidebar](https://f.cloud.github.com/assets/98681/1825269/be05ec20-71b0-11e3-91ea-a9138ef07186.png)
+![Maid with red theme](https://f.cloud.github.com/assets/98681/1825270/be065110-71b0-11e3-9ed8-9b8de753a4af.png)
+![Maid with red theme and open sidebar](https://f.cloud.github.com/assets/98681/1825269/be05ec20-71b0-11e3-91ea-a9138ef07186.png)
 
 There are eight themes available at this time.
 
@@ -61,7 +57,7 @@ To use a theme, add any one of the available theme classes to the `<body>` eleme
 </body>
 ```
 
-To create your own theme, look to the Themes section of [included CSS file](https://github.com/poole/lanyon/blob/master/public/css/lanyon.css). Copy any existing theme (they're only a few lines of CSS), rename it, and change the provided colors.
+To create your own theme, look to the Themes section of [included CSS file](https://github.com/johnotander/maid/blob/master/public/css/maid.css). Copy any existing theme (they're only a few lines of CSS), rename it, and change the provided colors.
 
 
 ### Reverse layout
@@ -80,13 +76,19 @@ Reverse the page orientation with a single class.
 
 ## Development
 
-Lanyon has two branches, but only one is used for active development.
+Maid has two branches, but only one is used for active development.
 
 - `master` for development.  **All pull requests should be to submitted against `master`.**
 - `gh-pages` for our hosted site, which includes our analytics tracking code. **Please avoid using this branch.**
 
 
 ## Author
+
+**John Otander**
+- <https://github.com/johnotander>
+- <https://twitter.com/4lpine>
+
+#### Maid is based on the awesomeness of Poole and Lanyon which are designed and developed by:
 
 **Mark Otto**
 - <https://github.com/mdo>
