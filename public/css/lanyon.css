@@ -435,6 +435,7 @@ a.pagination-item:hover {
   left: auto;
   right: 1rem;
   border: thin solid #eee;
+  margin-top: -.125rem;
 }
 
 .layout-reverse #sidebar-checkbox:checked + .sidebar {
