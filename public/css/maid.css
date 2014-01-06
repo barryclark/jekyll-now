@@ -59,7 +59,7 @@ a:hover { text-decoration: none; }
 }
 
 .wrap:after {
-  height: 140px;
+  height: 75px;
   content: "";
   display: block;
 }
@@ -69,8 +69,8 @@ footer a { color: #303030; }
 footer a:hover { text-decoration: none; color: #515151; }
 
 footer {
-  padding-top: 50px;
-  height: 140px;
+  padding-top: 30px;
+  height: 100px;
   width: 100%;
   bottom: 0;
   text-align: center;
