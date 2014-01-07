@@ -310,6 +310,8 @@ a.sidebar-nav-item:focus {
   margin: 0;
 }
 
+
+.spacious-top { margin-top: 2rem; }
 .spacious-y { margin: 5rem 0; }
 
 .inline { display: inline-block; }

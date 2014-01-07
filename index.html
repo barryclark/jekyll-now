@@ -14,6 +14,12 @@ layout: default
     </h1>
 
     {{ post.summary }}
+
+    {% if post.fullcontentpreview %}
+      <div class="spacious-top">
+        {{ post.content }}
+      </div>
+    {% endif %}
   </div>
   {% endfor %}
 </div>
