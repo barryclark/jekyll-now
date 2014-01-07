@@ -30,6 +30,7 @@
 html,
 body {
   overflow-x: hidden;
+  height: 100%;
 }
 
 html {
@@ -54,6 +55,7 @@ h1, h2, h3, h4, h5, h6 {
 .wrap {
   position: relative;
   width: 100%;
+  height: 100%;
 }
 
 /*
@@ -140,8 +142,7 @@ h1, h2, h3, h4, h5, h6 {
   overflow-y: auto;
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
   font-size: .875rem; /* 15px */
-  color: rgba(255,255,255,.6);
-  background-color: #202020;
+  background-color: #fafafa;
 }
 @media (min-width: 30rem) {
   .sidebar {
@@ -152,7 +153,6 @@ h1, h2, h3, h4, h5, h6 {
 /* Sidebar content */
 .sidebar a {
   font-weight: normal;
-  color: #fff;
 }
 .sidebar-item {
   padding: 1rem;
@@ -163,18 +163,18 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Sidebar nav */
 .sidebar-nav {
-  border-bottom: 1px solid rgba(255,255,255,.1);
+  border-bottom: 1px solid rgba(100,100,100,.1);
 }
 .sidebar-nav-item {
   display: block;
   padding: .5rem 1rem;
-  border-top: 1px solid rgba(255,255,255,.1);
+  border-top: 1px solid rgba(100,100,100,.1);
 }
 .sidebar-nav-item.active,
 a.sidebar-nav-item:hover,
 a.sidebar-nav-item:focus {
   text-decoration: none;
-  background-color: rgba(255,255,255,.1);
+  background-color: rgba(100,100,100,.1);
   border-color: transparent;
 }
 
@@ -222,8 +222,7 @@ a.sidebar-nav-item:focus {
 
 .sidebar-toggle:active,
 #sidebar-checkbox:checked ~ .wrap .sidebar-toggle {
-  color: #fff;
-  background-color: #505050;
+  background-color: #eee;
 }
 
 @media (min-width: 30.1rem) {
@@ -330,9 +329,14 @@ a.sidebar-nav-item:focus {
 
 /* Related posts */
 .related {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  border-top: 1px solid #eee;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  padding: 4rem;
+  margin-top: 2rem;
+  text-align: center;
+  border-top: 1px solid #e6e6e6;
+  background-color: #fafafa;
 }
 .related-posts {
   padding-left: 0;
