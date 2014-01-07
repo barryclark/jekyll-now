@@ -369,6 +369,7 @@ a.sidebar-nav-item:focus {
   overflow: hidden; /* clearfix */
   margin-left: -1rem;
   margin-right: -1rem;
+  padding-bottom: 1rem;
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
   color: #ccc;
   text-align: center;
