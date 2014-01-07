@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Introducing Maid
-summary: A beautifully simple, content-driven theme for Jekyll, based on Poole and Lanyon. It also has a unique, multimedia focus, allowing 
+summary: A beautifully simple, content-driven theme for Jekyll, based on Poole and Lanyon. It also has a unique, multimedia focus, allowing embedded videos and images to be displayed within the post index instead of post previews.
 category: Hello World
 ---
 
