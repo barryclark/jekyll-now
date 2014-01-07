@@ -25,8 +25,19 @@
       {% endif %}
     {% endfor %}
 
-    <a class="sidebar-nav-item" href="{{ site.github.repo }}/archive/v{{ site.version }}.zip">Download</a>
-    <a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub project</a>
+    <a class="sidebar-nav-item" href="mailto:{{ site.author.email }}">
+      <i class="icon-mail"></i> Email
+    </a>
+    <a class="sidebar-nav-item" href="https://twitter.com/{{ site.author.twitter }}">
+      <i class="icon-twitter"></i> 4lpine
+    </a>
+    <a class="sidebar-nav-item" href="https://github.com/{{ site.author.github }}">
+      <i class="icon-github"></i> Github
+    </a>
+    <a class="sidebar-nav-item" href="/atom.xml">
+      <i class="icon-feed"></i> RSS Feed
+    </a>
+
     <span class="sidebar-nav-item">Currently v{{ site.version }}</span>
   </nav>
 
