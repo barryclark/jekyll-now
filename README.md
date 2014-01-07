@@ -2,13 +2,15 @@
 
 Maid is an unassuming [Jekyll](http://jekyllrb.com) theme that places content first by tucking away navigation in a hidden drawer. It's based on [Poole](http://getpoole.com) and [Lanyon](http://lanyon.getpoole.com) built by [mdo](https://github.com/mdo).
 
+![post_index](https://f.cloud.github.com/assets/1424573/1864487/fd8659d0-77f4-11e3-9922-3302dd2edbd6.png)
+
 ## Contents
 
 - [Usage](#usage)
 - [Options](#options)
+  - [Pagination](#pagination)
   - [Sidebar menu](#sidebar-menu)
-  - [Themes](#themes)
-  - [Reverse layout](#reverse-layout)
+  - [Related posts](#related-posts)
 - [Development](#development)
 - [Author](#author)
 - [License](#license)
@@ -23,9 +25,17 @@ Maid is a theme built on top of [Poole](https://github.com/poole/poole), which p
 
 Maid includes some customizable options, typically applied via classes on the `<body>` element.
 
+### Pagination
+
+It's automagic.
+
+![pagination](https://f.cloud.github.com/assets/1424573/1864488/00238352-77f5-11e3-8bc5-a61c296897eb.png)
+
 ### Sidebar menu
 
 Create a list of nav links in the sidebar by assigning each Jekyll page the correct layout in the page's [front-matter](http://jekyllrb.com/docs/frontmatter/).
+
+![sidebar](https://f.cloud.github.com/assets/1424573/1864486/fa56f6de-77f4-11e3-864c-07b845e6621e.png)
 
 ```
 ---
@@ -36,42 +46,11 @@ title: About
 
 **Why require a specific layout?** Jekyll will return *all* pages, including the `atom.xml`, and with an alphabetical sort order. To ensure the first link is *Home*, we exclude the `index.html` page from this list by specifying the `page` layout.
 
+### Related posts
 
-### Themes
+As close as you can get with Jekyll.
 
-Maid ships with eight optional themes based on the [base16 color scheme](https://github.com/chriskempson/base16). Apply a theme to change the color scheme (mostly applies to sidebar and links).
-
-![Maid with red theme](https://f.cloud.github.com/assets/98681/1825270/be065110-71b0-11e3-9ed8-9b8de753a4af.png)
-![Maid with red theme and open sidebar](https://f.cloud.github.com/assets/98681/1825269/be05ec20-71b0-11e3-91ea-a9138ef07186.png)
-
-There are eight themes available at this time.
-
-![Available theme classes](https://f.cloud.github.com/assets/98681/1817044/e5b0ec06-6f68-11e3-83d7-acd1942797a1.png)
-
-To use a theme, add any one of the available theme classes to the `<body>` element in the `default.html` layout, like so:
-
-```html
-<body class="theme-base-08">
-  ...
-</body>
-```
-
-To create your own theme, look to the Themes section of [included CSS file](https://github.com/johnotander/maid/blob/master/public/css/maid.css). Copy any existing theme (they're only a few lines of CSS), rename it, and change the provided colors.
-
-
-### Reverse layout
-
-![Lanyon with reverse layout](https://f.cloud.github.com/assets/98681/1825265/be03f2e4-71b0-11e3-89f1-360705524495.png)
-![Lanyon with reverse layout and open sidebar](https://f.cloud.github.com/assets/98681/1825268/be056174-71b0-11e3-88c8-5055bca4307f.png)
-
-Reverse the page orientation with a single class.
-
-```html
-<body class="layout-reverse">
-  ...
-</body>
-```
-
+![related_posts](https://f.cloud.github.com/assets/1424573/1864489/0209a548-77f5-11e3-961a-a10f8d53cec1.png)
 
 ## Development
 
