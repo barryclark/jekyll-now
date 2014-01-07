@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Embed Videos Beautifully
-summary: If you want the content to be displayed in the post index, rather than just the summary, simply add an attribute to the post's front matter. This works great with video and images that don't have a long textual component with them.
+summary: If you want the content to be displayed in the post index, rather than just the summary, simply add an attribute (fullcontentpreview, with the value true) to the post's front matter. This works great with video and images that don't have a long textual component with them.
 category: Video
 fullcontentpreview: true
 ---
