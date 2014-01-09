@@ -58,11 +58,11 @@ a:hover {
 }
 
 a {
-          transition: color .5s ease-out;
-       -o-transition: color .5s ease-out;
-      -ms-transition: color .5s ease-out;
-     -moz-transition: color .5s ease-out;
-  -webkit-transition: color .5s ease-out;
+          transition: color .5s ease-out, background-color .2s ease-out;
+       -o-transition: color .5s ease-out, background-color .2s ease-out;
+      -ms-transition: color .5s ease-out, background-color .2s ease-out;
+     -moz-transition: color .5s ease-out, background-color .2s ease-out;
+  -webkit-transition: color .5s ease-out, background-color .2s ease-out;
 }
 
 /*
