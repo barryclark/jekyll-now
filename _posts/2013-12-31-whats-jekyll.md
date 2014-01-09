@@ -12,3 +12,5 @@ category: Foundation
 It's an immensely useful tool and one we encourage you to use it here with the Maid theme.
 
 Find out more by [visiting the project on GitHub](https://github.com/mojombo/jekyll).
+
+[Originally published](http://lanyon.getpoole.com/2013/12/31/whats-jekyll/) by [@mdo](http://twitter.com/mdo).

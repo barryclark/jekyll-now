@@ -6,7 +6,7 @@ layout: default
   {% for post in paginator.posts %}
   <div class="post">
     <span class="post-date">{{ post.date | date_to_string }}</span>&nbsp;
-    <em class="post-category">from {{ post.category }}</em>
+    <em class="post-category">from {{ post.categories.first }}</em>
     <h1 class="post-title">
       <a href="{{ post.url }}">
         {{ post.title }}
