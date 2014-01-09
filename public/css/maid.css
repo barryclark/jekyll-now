@@ -44,6 +44,14 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0rem;
 }
 
+a {
+          transition:.5s;
+       -o-transition:.5s;
+      -ms-transition:.5s;
+     -moz-transition:.5s;
+  -webkit-transition:.5s;
+}
+
 /*
  * Wrapper
  *
