@@ -44,6 +44,11 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0rem;
 }
 
+a:hover {
+  text-decoration: none;
+  color: #2f6646;
+}
+
 .preload * {
   -webkit-transition: none !important;
      -moz-transition: none !important;
@@ -324,8 +329,6 @@ a.sidebar-nav-item:focus {
 .post-title a {
   color: #303030;
 }
-.page-title,
-.post-title,
 .post-title a:hover {
   color: #48A770;
   text-decoration: none;
@@ -365,6 +368,7 @@ a.sidebar-nav-item:focus {
   background-color: #fafafa;
 }
 .related-posts {
+  margin-top: 1rem;
   padding-left: 0;
   list-style: none;
 }
@@ -376,7 +380,7 @@ a.sidebar-nav-item:focus {
   color: #999;
 }
 .related-posts li a:hover {
-  color: #268bd2;
+  color: #2f6646;
   text-decoration: none;
 }
 .related-posts li a:hover small {
