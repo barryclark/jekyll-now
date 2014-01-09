@@ -45,11 +45,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-          transition:.5s;
-       -o-transition:.5s;
-      -ms-transition:.5s;
-     -moz-transition:.5s;
-  -webkit-transition:.5s;
+          transition: color .5s ease-out;
+       -o-transition: color .5s ease-out;
+      -ms-transition: color .5s ease-out;
+     -moz-transition: color .5s ease-out;
+  -webkit-transition: color .5s ease-out;
 }
 
 /*
