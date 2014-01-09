@@ -99,6 +99,10 @@ h1, h2, h3, h4, h5, h6 {
 .masthead-title a {
   color: #505050;
 }
+.masthead-title a:hover {
+  color: #48A770;
+  text-decoration: none;
+}
 .masthead-title small {
   font-size: 75%;
   font-weight: 400;
@@ -303,6 +307,12 @@ a.sidebar-nav-item:focus {
 .post-title,
 .post-title a {
   color: #303030;
+}
+.page-title,
+.post-title,
+.post-title a:hover {
+  color: #48A770;
+  text-decoration: none;
 }
 .page-title,
 .post-title {
