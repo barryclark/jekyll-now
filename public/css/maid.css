@@ -340,6 +340,13 @@ a.sidebar-nav-item:focus {
   margin: 0;
 }
 
+.post-category a {
+  color: #515151;
+}
+.post-category a:hover {
+  color: #313131;
+}
+
 .spacious-top { margin-top: 2rem; }
 .spacious-y { margin: 5rem 0; }
 

@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="posts">
-  {% for post in paginator.posts %}
+  {% for post in site.categories[page.category] %}
   <div class="post">
     <span class="post-date">{{ post.date | date_to_string }}</span>&nbsp;
     <em class="post-category">from {{ post.category | category_links }}</em>
@@ -17,7 +17,7 @@ layout: default
 
     {% if post.fullcontentpreview %}
       <div class="spacious-top">
-        {{ post.content }}
+        {{ post.content | markdownify }}
       </div>
     {% else %}
       <h5>
