@@ -19,6 +19,12 @@ layout: default
       <div class="spacious-top">
         {{ post.content }}
       </div>
+    {% else %}
+      <h5>
+        <a href="{{ post.url }}" class="read-more">
+          Read More
+        </a>
+      </h5>
     {% endif %}
   </div>
   {% endfor %}
