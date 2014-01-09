@@ -326,9 +326,11 @@ a.sidebar-nav-item:focus {
 /* Blog post or page title */
 .page-title,
 .post-title,
-.post-title a {
+.post-title a,
+.read-more a:hover {
   color: #303030;
 }
+.read-more a,
 .post-title a:hover {
   color: #48A770;
   text-decoration: none;
@@ -337,7 +339,6 @@ a.sidebar-nav-item:focus {
 .post-title {
   margin: 0;
 }
-
 
 .spacious-top { margin-top: 2rem; }
 .spacious-y { margin: 5rem 0; }
