@@ -59,6 +59,8 @@ Maid has two branches, but only one is used for active development.
 - `master` for development.  **All pull requests should be to submitted against `master`.**
 - `gh-pages` for our hosted site, which includes our analytics tracking code. **Please avoid using this branch.**
 
+To add a feature, or fix a bug, please create a feature branch and then make a pull request.
+
 
 ## Author
 
