@@ -285,7 +285,7 @@ html {
   font-size: 100%; }
 
 body {
-  max-width: 820px;
+  max-width: 700px;
   margin: 0 auto;
   background: white;
   font: 18px/1.4 Helvetica, Arial, sans-serif;
@@ -423,9 +423,4 @@ article {
     color: #666666; }
 
 footer {
-  text-align: center;
-  border-top: 1px #bbbbbb solid;
   padding: 1rem 0; }
-  footer p {
-    margin: 0 0 1rem 0;
-    font-size: 14px; }

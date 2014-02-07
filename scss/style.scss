@@ -6,7 +6,8 @@
 @import "_reset";
 @import "_variables";
 @import "_mixins";
-@import "_highlights"; // Tempted to move this to the end of the file, so that it shows up at the end of the .css
+@import "_highlights"; 
+// TODO - Tempted to move this to the end of the file, so that it shows up at the end of the .css. Or remove it entirely and find a better way to include highlighting. 
 
 //
 // BASE RULES
@@ -17,7 +18,7 @@ html {
 }
 
 body {
-  max-width: 820px;
+  max-width: 700px;
 	margin: 0 auto;
 	
 	background: $white;
@@ -204,13 +205,6 @@ article {
 }
 
 footer {
-	text-align: center;
-
-  border-top: 1px $lightGray solid;
+  // border-top: 1px $lightGray solid;
   padding: 1rem 0;
-
-  p {
-    margin: 0 0 1rem 0;
-    font-size: 14px;
-  }
 }
