@@ -154,39 +154,7 @@ nav {
   }
 }
 
-.hero {
-  margin: 80px 20px 40px;
-  @include mobile {
-    margin: 40px 0;
-  }
-
-  img {
-    float: left;
-    width: 160px;
-    padding-right: 30px;
-  }
-
-  h1 {
-  float: left;
-  width: 590px;
-
-  margin: 0;
-
-  font-weight: 400;
-  font-size: 2.5rem;
-  line-height: 1.3;
-    @include mobile {
-      font-size: 2.5rem;
-    }
-  }
-
-  p {
-    float: left;
-    width: 590px;
-  }
-}
-
-article {
+.post {
   width: 700px;
   //margin: 0 auto;
   

@@ -2,27 +2,23 @@
 layout: default
 ---
 
-<div class="articles"> 
-  <h2>Blog</h2>
+<ul class="posts">
+  {% for post in site.posts %}
+    <li>
+      <article class="post">
+        <header>
+          <time datetime="{{ post.date }}">{{ post.date | date: "%m.%d.%Y" }}</time>
+          <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        </header>
 
-  <div class="article">
-    <!-- <img src="assets/img/article1.jpg"/> -->
-    <h3>Article Title</h3>
-    <p>Article description text. Article description text. Article description text. Article description text. Article description text. Article description text. Article description text.</p>
-    </p>
-  </div>
+        <div class="entry">
+          {{ post.content | truncatewords:85}}
 
-  <div class="article">
-    <!-- <img src="assets/img/article2.jpg"/> -->
-    <h3>Article Title</h3>
-    <p>Article description text. Article description text. Article description text. Article description text. Article description text. Article description text. Article description text.</p>
-    </p>
-  </div>
-
-  <div class="article">
-    <!-- <img src="assets/img/article3.jpg"/> -->
-    <h3>Article Title</h3>
-    <p>Article description text. Article description text. Article description text. Article description text. Article description text. Article description text. Article description text.</p>
-    </p>
-  </div>
-</div>
+          <p class="read-more">
+            <a href="{{ post.url }}">Read more</a>
+          </p>
+        </div>
+      </article>
+    </li>
+  {% endfor %}
+</ul>
