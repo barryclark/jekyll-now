@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.name }}</title>
+
+    <meta name="author" content="{{ site.name }}" />
+    <meta name="description" content="{{ site.description }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!--[if IE]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <a href="/" class="logo"><img src="/404.ups" /></a>
+      
+      <nav>
+        <a href="/">Blog</a>
+        <a href="/about">About</a>
+      </nav>
+
+      <div style="clear:both;"></div>
+    </header>
+
+    <div id="main" role="main">{{ content }}</div>
+      
+    <footer>
+        <p></p>
+    </footer>
+
+    {% include analytics.html %}
+  </body>
+</html>

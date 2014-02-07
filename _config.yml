@@ -1,0 +1,25 @@
+name: Jekyll Boilerplate
+
+markdown: redcarpet
+markdown_ext: md
+
+pygments: true
+
+exclude:
+    - Gemfile
+    - Gemfile.lock
+    - scss
+    - js
+    - README.md
+
+disqus:
+    shortname: ''
+
+googleanalytics:
+    id: ''
+
+links:
+    #github: https://github.com/YOUR-USERNAME
+    #twitter: https://twitter.com/YOUR-USERNAME
+    #linkedin: https://linkedin.com/in/YOUR-USERNAME
+    #avatar: http://YOUR-USERNAME.github.io/images/avatar.jpg
