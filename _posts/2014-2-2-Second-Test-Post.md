@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Test Post #1
+title: Test Post #2
 ---
 
-First test post! First test post! First test post! First test post! First test post! First test post! 
+Second test post! Second test post! Second test post! Second test post! Second test post! Second test post! Second test post! Second test post! Second test post! 
 
 ### Subheader within the blog post
 

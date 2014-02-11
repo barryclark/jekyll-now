@@ -386,35 +386,12 @@ nav {
     width: 100%;
     text-align: center; } }
 
-.hero {
-  margin: 80px 20px 40px; }
+.post {
+  width: 680px; }
   @media screen and (max-width: 520px) {
-    .hero {
-      margin: 40px 0; } }
-  .hero img {
-    float: left;
-    width: 160px;
-    padding-right: 30px; }
-  .hero h1 {
-    float: left;
-    width: 590px;
-    margin: 0;
-    font-weight: 400;
-    font-size: 2.5rem;
-    line-height: 1.3; }
-    @media screen and (max-width: 520px) {
-      .hero h1 {
-        font-size: 2.5rem; } }
-  .hero p {
-    float: left;
-    width: 590px; }
-
-article {
-  width: 700px; }
-  @media screen and (max-width: 520px) {
-    article {
+    .post {
       width: 100%; } }
-  article blockquote {
+  .post blockquote {
     border-left: 2px solid #666666;
     font-size: 1.2em;
     font-style: italic;

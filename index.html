@@ -2,23 +2,16 @@
 layout: default
 ---
 
-<ul class="posts">
+<div class="posts">
   {% for post in site.posts %}
-    <li>
-      <article class="post">
-        <header>
-          <time datetime="{{ post.date }}">{{ post.date | date: "%m.%d.%Y" }}</time>
-          <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-        </header>
+  <article class="post">    
+    <header>
+      <h2>{{ post.title }}</h2>
+    </header>
 
-        <div class="entry">
-          {{ post.content | truncatewords:85}}
-
-          <p class="read-more">
-            <a href="{{ post.url }}">Read more</a>
-          </p>
-        </div>
-      </article>
-    </li>
+    <div class="entry">{{ post.content | truncatewords:50}}</div>
+    
+    <a href="{{ post.url }}">Read More</a>
+  </article>
   {% endfor %}
-</ul>
+</div>

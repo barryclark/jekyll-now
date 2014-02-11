@@ -5,7 +5,6 @@
 
 @import "_reset";
 @import "_variables";
-@import "_mixins";
 @import "_highlights"; 
 // TODO - Tempted to move this to the end of the file, so that it shows up at the end of the .css. Or remove it entirely and find a better way to include highlighting. 
 
@@ -76,8 +75,8 @@ p {
 a {
   text-decoration: none;
 	cursor: pointer;
-	color: $blue;
-	&:hover, &:active {
+  color: $blue;
+  &:hover, &:active {
     text-decoration: underline;
   }
 }
@@ -128,6 +127,7 @@ nav {
     font-size: 1rem;
   }
 
+  // nav has it's own link highlighting
   a {
     margin-left: 25px;
     text-align: right;
@@ -155,8 +155,7 @@ nav {
 }
 
 .post {
-  width: 700px;
-  //margin: 0 auto;
+  width: 680px;
   
   @include mobile {
     width: 100%;
