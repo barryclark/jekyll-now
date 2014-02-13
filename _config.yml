@@ -1,25 +1,37 @@
+#
+# This file contains configuration flags to customize your site
+#
+
+# The name of your site
 name: Jekyll Boilerplate
 
+# A short bio or description
+description: Short bio of description placeholder.
+
+# A URL pointing to your avatar or profile pic
+# To use your Gravatar: (the one that GitHub uses for your profile pic)
+#   1. Go to https://github.com/YOURUSERNAME/
+#   2. Right click > Copy Image URL on your profile pic,
+#   3. Take the first long ID from the URL and paste it in place of mine below
+avatar: http://www.gravatar.com/avatar/36b4f56a7fa40d3c06e5afc4ed0b82b5?s=200
+
+# Your disqus username, if you'd like blog commenting
+disqus: 
+
+# Your Google Analytics web tracking code (e.g. UA-2110908-2)
+google_analytics: 
+
+# Links used for your social icons
+links:
+  github: https://github.com/YOUR-USERNAME
+  twitter: https://twitter.com/YOUR-USERNAME
+  #linkedin: https://linkedin.com/in/YOUR-USERNAME
+
 markdown: redcarpet
-markdown_ext: md
 
-pygments: true
-
+# Exclude these files from your production _site
 exclude:
     - Gemfile
     - Gemfile.lock
     - scss
-    - js
     - README.md
-
-disqus:
-    shortname: ''
-
-googleanalytics:
-    id: ''
-
-links:
-    #github: https://github.com/YOUR-USERNAME
-    #twitter: https://twitter.com/YOUR-USERNAME
-    #linkedin: https://linkedin.com/in/YOUR-USERNAME
-    #avatar: http://YOUR-USERNAME.github.io/images/avatar.jpg

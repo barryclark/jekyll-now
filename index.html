@@ -6,12 +6,12 @@ layout: default
   {% for post in site.posts %}
   <article class="post">    
     <header>
-      <h2>{{ post.title }}</h2>
+      <h1>{{ post.title }}</h1>
     </header>
 
-    <div class="entry">{{ post.content | truncatewords:50}}</div>
+    <div class="entry">{{ post.content | truncatewords:40}}</div>
     
-    <a href="{{ post.url }}">Read More</a>
+    <a href="{{ post.url }}" class="read-more">Read More</a>
   </article>
   {% endfor %}
 </div>

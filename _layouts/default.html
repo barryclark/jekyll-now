@@ -20,8 +20,10 @@
   </head>
 
   <body>
-    <header>
-      <a href="/" class="logo"><img src="/404.ups" />{{ site.name }}</a>
+    <header class="masthead">
+      <img src="{{ site.avatar }}" class="avatar" />
+      <a href="/" class="name">{{ site.name }}</a>
+      <p class="description">{{ site.description }}</p>
       
       <nav>
         <a href="/">Blog</a>

@@ -1,4 +1,3 @@
-
 # Jekyll Boilerplate
 
 Create your Jekyll blog in minutes. 

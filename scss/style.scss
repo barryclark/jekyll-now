@@ -17,7 +17,7 @@ html {
 }
 
 body {
-  max-width: 700px;
+  max-width: 680px;
 	margin: 0 auto;
 	
 	background: $white;
@@ -25,20 +25,20 @@ body {
   color: $darkGray;
 }
 
-h1, h2, h3, h4, h5, h6, .section > header {
+h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
   color: $darkerGray;
-  font-weight: bold;
+  font-weight: 400;
   
   line-height: 1.7;
-  margin: 2em 0 15px;
+  margin: 1em 0 15px;
   padding: 0;
 }
-
+  
 h1 {  
-  font-size: 2rem;
+  font-size: 2.2rem;
   @include mobile {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 }
 
@@ -86,6 +86,10 @@ ul {
   list-style-type: disc;
 }
 
+img {
+  max-width: 100%;
+}
+
 // Specify the color of the selection
 ::-moz-selection {
   color: $black;
@@ -101,10 +105,6 @@ ul {
 // LAYOUT / SECTIONS
 //
 
-header {
-  margin: 40px 0;
-}
-
 .logo {
   float: left;
 
@@ -116,6 +116,10 @@ header {
       color: $blue;
     }
   }
+}
+
+.avatar {
+  border-radius: 6px;
 }
 
 nav {
@@ -154,13 +158,12 @@ nav {
   }
 }
 
-.post {
-  width: 680px;
-  
-  @include mobile {
-    width: 100%;
-  }
+.posts > .post {
+  padding-bottom: 2em;
+  border-bottom: 1px solid $lighterGray;
+}
 
+.post { 
   blockquote {
     border-left: 2px solid $gray;
     font-size: 1.2em;
