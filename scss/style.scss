@@ -105,21 +105,46 @@ img {
 // LAYOUT / SECTIONS
 //
 
-.logo {
-  float: left;
+//
+// .masthead
+//
 
-  a {
-    text-decoration: none;
-    cursor: pointer;
-    color: $darkGray;
-    &:hover, &:active {
-      color: $blue;
-    }
-  }
+.masthead {
+  margin: 20px 0 70px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid $darkGray;
 }
 
 .avatar {
-  border-radius: 6px;
+  float: left;
+  width: 35px;
+
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.site-name {
+  float: left;
+
+  font-family: $helveticaNeue; 
+  font-weight: 300;
+  font-size: 24px;
+  letter-spacing: 1px;
+  @include mobile {
+    font-size: 22px;
+  }
+
+  text-decoration: none;
+  cursor: pointer;
+  color: $darkGray;
+  &:hover, &:active {
+    text-decoration: none;
+  }
+}
+
+.site-description {
+  float: left;
+  display: none;
 }
 
 nav {
@@ -137,15 +162,12 @@ nav {
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
-    color: $gray;
+    color: $darkGray;
 
     &:hover, &:active {
       text-decoration: none;
       cursor: pointer;
       color: $darkGray;
-      &:hover, &:active {
-        color: $blue;
-      }
     }
   }
 }
@@ -157,6 +179,10 @@ nav {
     text-align: center;
   }
 }
+
+//
+// .main
+//
 
 .posts > .post {
   padding-bottom: 2em;
