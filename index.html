@@ -5,11 +5,16 @@ layout: default
 <div class="posts">
   {% for post in site.posts %}
   <article class="post">    
-    <header>
-      <h1>{{ post.title }}</h1>
-    </header>
+    
+    <h1>{{ post.title }}</h1>
 
-    <div class="entry">{{ post.content | truncatewords:40}}</div>
+    <div class="date">
+      {{ post.date | date: "%B %e, %Y" }}
+    </div>
+
+    <div class="entry">
+      {{ post.content | truncatewords:40}}
+    </div>
     
     <a href="{{ post.url }}" class="read-more">Read More</a>
   </article>

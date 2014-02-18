@@ -5,9 +5,9 @@ title: Jekyll The Easy Way
 
 I just migrated my blog over to this Jekyll powered static site that you're currently reading. Finding a good workflow with Jekyll took me longer than I expected. 
 
-When you understand how Jekyll works, it's _extremely_ fast to set up. However when learning I came across lot of articles, repos and stack overflow threads that made the setup much more complicated than it needs to be. 
-
 ![cool code image aww yea](/images/omg-code.jpg)   
+
+When you understand how Jekyll works, it's _extremely_ fast to set up. However when learning I came across lot of articles, repos and stack overflow threads that made the setup much more complicated than it needs to be. 
 
 ### Jekyll is built for one specific purpose
 

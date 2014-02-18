@@ -294,37 +294,38 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #222222;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.7;
   margin: 1em 0 15px;
   padding: 0; }
 
 h1 {
-  font-size: 2.2rem; }
+  font-weight: 400;
+  font-size: 35px; }
   @media screen and (max-width: 520px) {
     h1 {
-      font-size: 2.2rem; } }
+      font-size: 32px; } }
 
 h2 {
-  letter-spacing: 1px;
-  font-weight: 300;
-  font-size: 1.7rem; }
+  font-size: 26px; }
   @media screen and (max-width: 520px) {
     h2 {
-      font-size: 1.5rem; } }
+      font-size: 24px; } }
 
 h3 {
-  font-weight: 600;
-  font-size: 1.2rem; }
+  font-size: 22px; }
   @media screen and (max-width: 520px) {
     h3 {
-      font-size: 1.2rem; } }
+      font-size: 20px; } }
 
 h4 {
-  font-size: 1rem; }
-  @media screen and (max-width: 520px) {
-    h4 {
-      font-size: 1rem; } }
+  font-size: 18px;
+  font-weight: 600; }
+
+h5 {
+  font-size: 18px;
+  color: #666666;
+  font-weight: 600; }
 
 p {
   margin: 15px 0; }
@@ -336,12 +337,34 @@ a {
   a:hover, a:active {
     text-decoration: underline; }
 
+ul, ol {
+  margin: 15px 0;
+  padding-left: 30px; }
+
 ul {
-  padding-left: 30px;
   list-style-type: disc; }
+
+ol {
+  list-style-type: decimal; }
+
+ol ul, ul ol, ul ul, ol ol {
+  margin: 0; }
+
+ul ul, ol ul {
+  list-style-type: circle; }
+
+em {
+  font-style: italic; }
+
+strong {
+  font-weight: 600; }
 
 img {
   max-width: 100%; }
+
+.date {
+  font-style: italic;
+  color: #666666; }
 
 ::-moz-selection {
   color: black;
@@ -352,9 +375,9 @@ img {
   background: #eeeeee; }
 
 .masthead {
-  margin: 20px 0 70px;
+  margin: 20px 0 30px;
   padding-bottom: 20px;
-  border-bottom: 2px solid #333333; }
+  border-bottom: 1px dotted #aaaaaa; }
 
 .avatar {
   float: left;
@@ -379,15 +402,16 @@ img {
 
 .site-description {
   float: left;
+  font-size: 14px;
   display: none; }
 
 nav {
   float: right;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.1rem; }
+  font-size: 18px; }
   @media screen and (max-width: 520px) {
     nav {
-      font-size: 1rem; } }
+      font-size: 18px; } }
   nav a {
     margin-left: 25px;
     text-align: right;
@@ -411,11 +435,11 @@ nav {
 
 .post blockquote {
   border-left: 2px solid #666666;
-  font-size: 1.2em;
+  font-size: 22px;
   font-style: italic;
   margin: 1.8em 0.8em;
   padding: 0.1em 1em;
   color: #666666; }
 
 footer {
-  padding: 1rem 0; }
+  padding: 20px 0; }
