@@ -22,7 +22,7 @@ An image, located within /images
 - alternative syntax 1
 + alternative syntax 2
   - an indented list item
- 
+
 1. An
 2. ordered
 3. list
@@ -36,20 +36,21 @@ Inline markup styles:
 > Blockquote
 >> Nested Blockquote 
  
-Code:
+Syntax highlighting can be used by wrapping your code in a liquid tag like so:
+
+{{ "{% highlight javascript " }}%}  
+/* Some pointless Javascript */
+var rawr = ["r", "a", "w", "r"];
+{{ "{% endhighlight " }}%}  
+
+creates...
+
+{% highlight javascript %}
  
-    // Code is just text indented a bit
-    which(is_easy) to_remember();
- 
-~~~
- 
-// Markdown extra adds un-indented code blocks too
- 
-if (this_is_more_code == true && !indented) {
-    // tild wrapped code blocks, also not indented
-}
- 
-~~~
+/* Some pointless Javascript */
+var rawr = ["r", "a", "w", "r"];
+
+{% endhighlight %}
  
 Use two trailing spaces  
 on the right  

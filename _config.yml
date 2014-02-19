@@ -23,11 +23,12 @@ google_analytics:
 
 # Links used for your social icons
 links:
-  github: https://github.com/YOUR-USERNAME
-  twitter: https://twitter.com/YOUR-USERNAME
-  #linkedin: https://linkedin.com/in/YOUR-USERNAME
+  github: your-username
+  twitter: your-username
 
 markdown: rdiscount
+pygments: true
+permalink: /:title
 
 # Exclude these files from your production _site
 exclude:
