@@ -27,7 +27,7 @@ links:
   twitter: https://twitter.com/YOUR-USERNAME
   #linkedin: https://linkedin.com/in/YOUR-USERNAME
 
-markdown: redcarpet
+markdown: rdiscount
 
 # Exclude these files from your production _site
 exclude:
