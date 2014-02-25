@@ -2,11 +2,9 @@
 
 Create your Jekyll blog in minutes, without needing to set up local development. 
 
-![Jekyll Boilerplate - theme screenshot](/images/jekyll-boilerplate.jpg)    
+Demo site at <http://jekyllboilerplate.com>.
 
-- Fully responsive design
-- Syntax highlighting
-- Disqus and Google Analytics integration
+![Jekyll Boilerplate - theme screenshot](/images/jekyll-boilerplate.jpg)    
 
 ## 5 Minute Blog Setup on GitHub Pages
 
@@ -65,6 +63,10 @@ If you're just looking to make a couple of quick theme changes, then this might 
 
 I'm working on a portfolio site theme right now, and more to come after that. If you'd like me to let you know when I release a new theme, just [drop me your email for updates](http://getresponse.com). 
 
+## Got any questions or requests?
+
+Open an Issue and let's chat!
+
 ## Alternative Jekyll starting points
 
 This wasn't what you were looking for? Here are some other Jekyll starting points that might hit the spot:
@@ -73,3 +75,29 @@ This wasn't what you were looking for? Here are some other Jekyll starting point
 - [Hazelnut by Mig Reyes](https://github.com/migreyes/hazelnut) - Includes sweet Pow workflows  
 - [Octopress by Brandon Mathis](https://github.com/imathis/octopress) - Another established starting point with lots of options  
 - [mojombo.github.io by Tom Preston-Werner](https://github.com/mojombo/mojombo.github.io) - TPW's original Jekyll theme  
+
+## License
+
+```
+The MIT License (MIT)
+
+Copyright (c) 2014 Barry Clark
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+```
