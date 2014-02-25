@@ -1,10 +1,8 @@
 # Jekyll Boilerplate
 
-Create your Jekyll blog in minutes, without setting up local development. 
+Create your Jekyll blog in minutes, without needing to set up local development. 
 
-[THEME PIC!]
-
-Your Blog:
+![Jekyll Boilerplate - theme screenshot](/images/jekyll-boilerplate.jpg)    
 
 - Fully responsive design
 - Syntax highlighting
@@ -33,15 +31,13 @@ You can quickly update a lot by simply editing the configuration file. Go to the
 - Blog name
 - Description
 - Avatar
+- Social links
 - Disqus comments code
 - Google Analytics code
-- Social links
 
 ##### 5) Publish your first post
 
-Go to the _posts folder and you'll see the post that's currently being displayed. Just edit that to create your first blog post!
-
-Jekyll pulls the date of the post from the filename, so you can edit that to today's date. 
+Go to the _posts folder and simply edit the one that's there to create your first blog post! Jekyll pulls the date of the post from the filename, so you can edit that to today's date. 
 
 Ok, so writing your blog post might take more than 5 minutes, but once you've got it written you're set!
 
@@ -59,11 +55,13 @@ Alternative flow for publishing content, without needing Local Development Envir
 
 If you're just looking to make a couple of quick theme changes, then this might do the trick for you.
 
-##### Local Development 1) Install Dependancies
+##### Local Development 
+
+##### 1) Install Dependancies
 
 
 
-### Get notified when a new theme is released
+### Get notified when I release updates or a new theme
 
 I'm working on a portfolio site theme right now, and more to come after that. If you'd like me to let you know when I release a new theme, just [drop me your email for updates](http://getresponse.com). 
 
