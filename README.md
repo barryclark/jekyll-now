@@ -4,12 +4,11 @@ Create your Jekyll blog in minutes, without setting up local development.
 
 [THEME PIC!]
 
-Your Blog Features:
+Your Blog:
 
-- One column fully responsive design
+- Fully responsive design
 - Syntax highlighting
-- Minimal (X http requests)
-- Disqus commenting
+- Disqus and Google Analytics integration
 
 ### 5 Minute Blog Setup on GitHub Pages
 
@@ -46,7 +45,7 @@ Jekyll pulls the date of the post from the filename, so you can edit that to tod
 
 Ok, so writing your blog post might take more than 5 minutes, but once you've got it written you're set!
 
-### Set up your own domain name (optional)
+### Set up your own domain name
 
 Follow the latest [GitHub Pages Custom Domain Guide](https://help.github.com/articles/setting-up-a-custom-domain-with-pages) to set up your custom domain name. I've created the CNAME file already, so that you can easily edit it within the repository. 
 
@@ -72,7 +71,7 @@ I'm working on a portfolio site theme right now, and more to come after that. If
 
 This wasn't what you were looking for? Here are some other Jekyll starting points that might hit the spot:
 
-[Left by Zach Holman](https://github.com/holman/left) - Jekyll theme with a sidebar
-[Hazelnut by Mig Reyes](https://github.com/migreyes/hazelnut) - Includes sweet Pow workflows 
-[Octopress by Brandon Mathis](https://github.com/imathis/octopress) - Another established starting point with lots of options
-[mojombo.github.io by Tom Preston-Werner](https://github.com/mojombo/mojombo.github.io) - TPW's original Jekyll theme 
+[Left by Zach Holman](https://github.com/holman/left) - Jekyll theme with a sidebar  
+[Hazelnut by Mig Reyes](https://github.com/migreyes/hazelnut) - Includes sweet Pow workflows  
+[Octopress by Brandon Mathis](https://github.com/imathis/octopress) - Another established starting point with lots of options  
+[mojombo.github.io by Tom Preston-Werner](https://github.com/mojombo/mojombo.github.io) - TPW's original Jekyll theme  
