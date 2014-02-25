@@ -39,11 +39,11 @@ Go to the _posts folder and simply edit the one that's there to create your firs
 
 Ok, so writing your blog post might take more than 5 minutes, but once you've got it written you're set!
 
-## Set up your own domain name
+#### Set up your own domain name
 
 Follow the latest [GitHub Pages Custom Domain Guide](https://help.github.com/articles/setting-up-a-custom-domain-with-pages) to set up your custom domain name. I've created the CNAME file already, so that you can easily edit it within the repository. 
 
-## Publishing New Content
+#### Publishing New Content
 
 Alternative flow for publishing content, without needing Local Development Environment
 
@@ -59,13 +59,15 @@ If you're just looking to make a couple of quick theme changes, then this might 
 
 
 
-## Get notified when I release updates or a new theme
+## Get notified when I release new themes
 
-I'm working on a portfolio site theme right now, and more to come after that. If you'd like me to let you know when I release a new theme, just [drop me your email for updates](http://getresponse.com). 
+If you'd like me to let you know when I release a new theme, just [drop me your email for updates](http://getresponse.com). 
 
-## Got any questions or requests?
+Next up: A Jekyll based portfolio site theme to showcase projects and content. 
 
-Open an Issue and let's chat!
+## Questions or requests?
+
+[Open an Issue](https://github.com/barryclark/jekyll-boilerplate/issues/new) and let's chat!
 
 ## Alternative Jekyll starting points
 
