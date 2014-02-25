@@ -2,7 +2,7 @@
 
 Create your Jekyll blog in minutes, without needing to set up local development. 
 
-Demo site at <http://jekyllboilerplate.com>.
+*[Theme Demo Site](http://jekyllboilerplate.com)*
 
 ![Jekyll Boilerplate - theme screenshot](/images/jekyll-boilerplate.jpg)    
 
@@ -16,15 +16,13 @@ Click the fork button at the top right of the repository.
 
 After forking, click the Settings button on your new repository and change the repository name to username.github.io -- make sure that username is replaced with your GitHub username! 
 
-Hosting your Jekyll blog on your GitHub user account takes care of a LOT of the hard work for us. You'll see shortly. 
-
 #### 3) Your blog is live!
 
 You can now go to http://username.github.io and you'll see your site live! This can take up to 10 minutes to update, but often it's there right away. 
 
 #### 4) Customize your blog
 
-You can quickly update a lot by simply editing the configuration file. Go to the base directory and open up _config.yml. In there you'll be able to edit your:
+You can input your details by simply editing the configuration file. Go to the base directory and open up _config.yml. In there you'll be able to input your:
 
 - Blog name
 - Description
@@ -36,8 +34,6 @@ You can quickly update a lot by simply editing the configuration file. Go to the
 #### 5) Publish your first post
 
 Go to the _posts folder and simply edit the one that's there to create your first blog post! Jekyll pulls the date of the post from the filename, so you can edit that to today's date. 
-
-Ok, so writing your blog post might take more than 5 minutes, but once you've got it written you're set!
 
 #### Set up your own domain name
 
