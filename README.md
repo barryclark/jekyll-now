@@ -1,17 +1,78 @@
 # Jekyll Boilerplate
 
-Create your Jekyll blog in minutes. 
+Create your Jekyll blog in minutes, without setting up local development. 
 
-A clean, one-column theme from which to kick off your Jekyll blog.
+[THEME PIC!]
 
-### Sites based on Jekyll Boilerplate
+Your Blog Features:
 
-- <http://barryclark.co>
-- Send your site to barry@barryclark.co and I'll add it
+- One column fully responsive design
+- Syntax highlighting
+- Minimal (X http requests)
+- Disqus commenting
 
-### Good alternative Jekyll starting points
+### 5 Minute Blog Setup on GitHub Pages
 
-- Looking for a theme with a sidebar? [Left by Zach Holman](https://github.com/holman/left)
-- Looking for a starting point with sweet Pow workflows? [Hazelnut by Mig Reyes](https://github.com/migreyes/hazelnut)
-- Looking for a bulkier starting point with more options? [Octopress by Brandon Mathis](https://github.com/imathis/octopress)
-- Looking for where it all began? [mojombo.github.io by Tom Preston-Werner](https://github.com/mojombo/mojombo.github.io)
+##### 1) Fork Jekyll Boilerplate
+
+Click the fork button at the top right of the repository. 
+
+##### 2) Rename it to be your GitHub user site
+
+After forking, click the Settings button on your new repository and change the repository name to username.github.io -- make sure that username is replaced with your GitHub username! 
+
+Hosting your Jekyll blog on your GitHub user account takes care of a LOT of the hard work for us. You'll see shortly. 
+
+##### 3) Your blog is live!
+
+You can now go to http://username.github.io and you'll see your site live! This can take up to 10 minutes to update, but often it's there right away. 
+
+##### 4) Customize your blog
+
+You can quickly update a lot by simply editing the configuration file. Go to the base directory and open up _config.yml. In there you'll be able to edit your:
+
+- Blog name
+- Description
+- Avatar
+- Disqus comments code
+- Google Analytics code
+- Social links
+
+##### 5) Publish your first post
+
+Go to the _posts folder and you'll see the post that's currently being displayed. Just edit that to create your first blog post!
+
+Jekyll pulls the date of the post from the filename, so you can edit that to today's date. 
+
+Ok, so writing your blog post might take more than 5 minutes, but once you've got it written you're set!
+
+### Set up your own domain name (optional)
+
+Follow the latest [GitHub Pages Custom Domain Guide](https://help.github.com/articles/setting-up-a-custom-domain-with-pages) to set up your custom domain name. I've created the CNAME file already, so that you can easily edit it within the repository. 
+
+### Publishing New Content
+
+Alternative flow for publishing content, without needing Local Development Environment
+
+### Customizing The Theme
+
+##### Without setting up local development
+
+I realize that's pretty filthy, but if you're just looking to make a couple of quick changes, it might work well for you. 
+
+##### Local Development 1) Install Dependancies
+
+
+
+### Get notified when a new theme is released
+
+I'm working on a portfolio site theme right now, and more to come after that. If you'd like me to let you know when I release a new theme, just [drop me your email for updates](http://getresponse.com). 
+
+### Alternative Jekyll starting points
+
+This wasn't what you were looking for? Here are some other Jekyll starting points that might hit the spot:
+
+[Left by Zach Holman](https://github.com/holman/left) - Jekyll theme with a sidebar
+[Hazelnut by Mig Reyes](https://github.com/migreyes/hazelnut) - Includes sweet Pow workflows 
+[Octopress by Brandon Mathis](https://github.com/imathis/octopress) - Another established starting point with lots of options
+[mojombo.github.io by Tom Preston-Werner](https://github.com/mojombo/mojombo.github.io) - TPW's original Jekyll theme 
