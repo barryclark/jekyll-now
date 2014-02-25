@@ -55,9 +55,9 @@ Alternative flow for publishing content, without needing Local Development Envir
 
 ### Customizing The Theme
 
-##### Without setting up local development
+##### Hacking without a local development environment
 
-I realize that's pretty filthy, but if you're just looking to make a couple of quick changes, it might work well for you. 
+If you're just looking to make a couple of quick theme changes, then this might do the trick for you.
 
 ##### Local Development 1) Install Dependancies
 
@@ -71,7 +71,7 @@ I'm working on a portfolio site theme right now, and more to come after that. If
 
 This wasn't what you were looking for? Here are some other Jekyll starting points that might hit the spot:
 
-[Left by Zach Holman](https://github.com/holman/left) - Jekyll theme with a sidebar  
-[Hazelnut by Mig Reyes](https://github.com/migreyes/hazelnut) - Includes sweet Pow workflows  
-[Octopress by Brandon Mathis](https://github.com/imathis/octopress) - Another established starting point with lots of options  
-[mojombo.github.io by Tom Preston-Werner](https://github.com/mojombo/mojombo.github.io) - TPW's original Jekyll theme  
+- [Left by Zach Holman](https://github.com/holman/left) - Jekyll theme with a sidebar  
+- [Hazelnut by Mig Reyes](https://github.com/migreyes/hazelnut) - Includes sweet Pow workflows  
+- [Octopress by Brandon Mathis](https://github.com/imathis/octopress) - Another established starting point with lots of options  
+- [mojombo.github.io by Tom Preston-Werner](https://github.com/mojombo/mojombo.github.io) - TPW's original Jekyll theme  
