@@ -1,14 +1,12 @@
-# Jekyll Boilerplate
+# Jekyll Kickstart
 
 Create your Jekyll blog in minutes, without needing to set up local development. 
 
-*[Theme Demo Site](http://jekyllboilerplate.com)*
-
-![Jekyll Boilerplate - theme screenshot](/images/jekyll-boilerplate.jpg)    
+[**Theme Demo >>**](http://jekyllkickstart.com)   
 
 ## 5 Minute Blog Setup on GitHub Pages
 
-#### 1) Fork Jekyll Boilerplate
+#### 1) Fork Jekyll Kickstart
 
 Click the fork button at the top right of the repository. 
 
@@ -35,7 +33,7 @@ You can input your details by simply editing the configuration file. Go to the b
 
 Go to the _posts folder and simply edit the one that's there to create your first blog post! Jekyll pulls the date of the post from the filename, so you can edit that to today's date. 
 
-#### Set up your own domain name
+#### Setting up your own domain name
 
 Follow the latest [GitHub Pages Custom Domain Guide](https://help.github.com/articles/setting-up-a-custom-domain-with-pages) to set up your custom domain name. I've created the CNAME file already, so that you can easily edit it within the repository. 
 
@@ -63,7 +61,7 @@ Next up: A Jekyll based portfolio site theme to showcase projects and content.
 
 ## Questions or requests?
 
-[Open an Issue](https://github.com/barryclark/jekyll-boilerplate/issues/new) and let's chat!
+[Open an Issue](https://github.com/barryclark/jekyll-kickstart/issues/new) and let's chat!
 
 ## Alternative Jekyll starting points
 
