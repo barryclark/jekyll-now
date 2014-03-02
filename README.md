@@ -16,11 +16,11 @@ After forking, click the Settings button on your new repository and change the r
 
 #### 3) Your blog is live!
 
-You can now go to http://username.github.io and you'll see your site live! This can take up to 10 minutes to update, but often it's there right away. 
+Go to http://username.github.io and you'll see your site live! This can take up to 10 minutes to update, but often it's there right away. 
 
 #### 4) Customize your blog
 
-You can input your details by simply editing the configuration file. Go to the base directory and open up _config.yml. In there you'll be able to input your:
+Input your details by simply editing the configuration file. Go to your forked repository and open up _config.yml. In there you'll be able to input your:
 
 - Blog name
 - Description
@@ -33,13 +33,13 @@ You can input your details by simply editing the configuration file. Go to the b
 
 Go to the _posts folder and simply edit the one that's there to create your first blog post! Jekyll pulls the date of the post from the filename, so you can edit that to today's date. 
 
+#### Publishing New Content
+
+To publish new blog posts, go into the _posts folder and click the New File button. Name your post in this format: year-month-day-Title.md, save it, and you're set! 
+
 #### Setting up your own domain name
 
 Follow the latest [GitHub Pages Custom Domain Guide](https://help.github.com/articles/setting-up-a-custom-domain-with-pages) to set up your custom domain name. I've created the CNAME file already, so that you can easily edit it within the repository. 
-
-#### Publishing New Content
-
-Alternative flow for publishing content, without needing Local Development Environment
 
 ## Customizing The Theme
 
