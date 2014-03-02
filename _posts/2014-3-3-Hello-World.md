@@ -1,7 +1,9 @@
 ---
 layout: post
-title: Oh, Hi!
+title: Hello World!
 ---
+
+![Jekyll Octocat](http://octodex.github.com/images/total-eclipse-of-the-octocat.jpg)   
 
 This is a demo site for Jekyll Boilerplate. It was made in just a few minutes—by forking [Jekyll Boilerplate](http://github.com/barryclark/jekyll-boilerplate/)!
 
