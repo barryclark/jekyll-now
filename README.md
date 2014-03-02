@@ -33,35 +33,68 @@ Input your details by simply editing the configuration file. Go to your forked r
 
 Go to the _posts folder and edit the Hello World post that's there to create your first post! Jekyll pulls the date of the post from the filename, so change that to today's date. 
 
-#### Publishing New Content
+## Things you can do directly on GitHub.com
+
+#### Publish new content
 
 To publish new blog posts, go into the _posts folder and click the New File button. Name your post in this format: year-month-day-Title.md, save it, and you're set! 
 
-#### Setting up your own domain name
+(You can also publish new content via command line by git cloning down your repo, and pushing up your new markdown files)
+
+#### Set up your domain name
 
 Follow the latest [GitHub Pages Custom Domain Guide](https://help.github.com/articles/setting-up-a-custom-domain-with-pages) to set up your custom domain name. I've created the CNAME file already, so that you can easily edit it within the repository. 
 
-## Customizing The Theme
+#### Customize your theme
 
-#### Hacking without a local development environment
+Any files that you edit within your repo will trigger a rebuild of your GitHub Pages site. 
+
+- HTML templates are located in _layouts, _includes and index.html
+- CSS is at style.css (Jekyll doesn't compile SASS, that requires using the local development workflow below)
+
+Read more about theme development at the [Jekyll documentation](http://jekyllrb.com/docs/home/). 
+
+## Local Theme Development
+
+The first step of local development is git cloning your repo. 
+
+**PIC OF THIS**
+
+Then pick option 1 or 2 depending on whether you want to be able to build/view you site locally—that's the part where things get a little more tricky. 
+
+#### Option 1) Building and viewing your site via GitHub Pages
+
+You can make quick changes to the theme without needing to set up Jekyll and it's dependancies on your local machine if you allow GitHub Pages to tackle building and deploying the site for you. Here's what the workflow looks like:
+
+- Type "grunt" in the command line to watch and compile any edits that you make to sass files within the SCSS folder. 
+- Edit layout, styles and content. 
+- Push your changes back up to your repo, triggering GitHub Pages to rebuild your site, to view them. 
 
 If you're just looking to make a couple of quick theme changes, then this might do the trick for you.
 
-#### Local Development 
+#### Option 2) Building and viewing your Jekyll site locally
 
-#### 1) Install Dependancies
+If you're looking to do significant theme development, then you might prefer to set up Jekyll to build your site locally so that you can watch your local changes and view the site. 
 
+To do that you'll first need to install Jekyll and it's dependancies:
 
+- 
+
+Here's what the workflow looks like:
+
+- 
 
 ## Get notified when I release new themes
 
-If you'd like me to let you know when I release a new theme, just [drop me your email for updates](http://getresponse.com). 
-
 Next up: A Jekyll based portfolio site theme to showcase projects and content. 
+
+If you'd like me to let you know when I release a new theme, just [drop me your email for updates](http://getresponse.com). 
 
 ## Questions or requests?
 
 [Open an Issue](https://github.com/barryclark/jekyll-kickstart/issues/new) and let's chat!
+
+## Credits
 
 ## Alternative Jekyll starting points
 
