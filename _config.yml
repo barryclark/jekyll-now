@@ -1,12 +1,12 @@
 #
-# This file contains configuration flags to customize your site
+# This file contains configuration flags to customize your blog
 #
 
-# The name of your site
-name: Jekyll Boilerplate
+# The name of your blog
+name: Site Name
 
 # A short bio or description
-description: Your blog with Jekyll—no setup required.
+description: Your Site Description
 
 # A URL pointing to your avatar or profile pic
 # To use your Gravatar: (the one that GitHub uses for your profile pic)
