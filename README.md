@@ -84,17 +84,17 @@ Here's what the workflow looks like:
 
 - 
 
-## Get notified when I release new themes
-
-Next up: A Jekyll based portfolio site theme to showcase projects and content. 
-
-If you'd like me to let you know when I release a new theme, just [drop me your email for updates](http://getresponse.com). 
-
 ## Questions or requests?
 
 [Open an Issue](https://github.com/barryclark/jekyll-kickstart/issues/new) and let's chat!
 
 ## Credits
+
+## Get notified when I release new themes
+
+Next up: A Jekyll based portfolio site theme to showcase projects and content. 
+
+If you'd like me to let you know when I release a new theme, just [drop me your email for updates](http://getresponse.com). 
 
 ## Alternative Jekyll starting points
 
