@@ -31,7 +31,7 @@ Input your details by simply editing the configuration file. Go to your forked r
 
 #### 5) Publish your first post
 
-Go to the _posts folder and simply edit the one that's there to create your first blog post! Jekyll pulls the date of the post from the filename, so you can edit that to today's date. 
+Go to the _posts folder and edit the Hello World post that's there to create your first post! Jekyll pulls the date of the post from the filename, so change that to today's date. 
 
 #### Publishing New Content
 
