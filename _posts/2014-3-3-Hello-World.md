@@ -3,10 +3,8 @@ layout: post
 title: Hello World!
 ---
 
-![Jekyll Octocat](http://octodex.github.com/images/total-eclipse-of-the-octocat.jpg)   
+![Jekyll Octocat](http://octodex.github.com/images/total-eclipse-of-the-octocat.jpg)
 
-This is a demo site for Jekyll Boilerplate. It was made in just a few minutes—by forking [Jekyll Boilerplate](http://github.com/barryclark/jekyll-boilerplate/)!
+Yay! Your [Jekyll Kickstart](http://github.com/barryclark/jekyll-kickstart/) blog is up and running. 
 
-Jekyll boilerplate is a starting point for creating your blog using Jekyll and GitHub Pages. It make it _really easy_.
-
-Talk through benefits. 
+Next, update the varibales in _config.yml and edit this post within _posts!
