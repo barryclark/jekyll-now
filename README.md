@@ -74,11 +74,13 @@ Read more about theme development at the [Jekyll documentation](http://jekyllrb.
 
 ## Local Theme Development
 
-Explain why you'd want to use local theme development. 
+List of reasons that you might want to use local theme development: 
+
+- Cover importing posts from another blogging platform. http://import.jekyllrb.com/docs/home/
 
 The first step of local development is git cloning your repo. 
 
-**PIC OF THIS**
+PIC
 
 Then pick option 1 or 2 depending on whether you want to be able to build/view you site locally—that's the part where things get a little more tricky. 
 
