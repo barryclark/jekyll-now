@@ -6,22 +6,21 @@ I created Jekyll Kickstart to help you get your Jekyll blog set up extremely qui
 
 #### Jekyll Kickstart lets you create, personalize and post to your Jekyll blog in minutes — _all directly on GitHub.com_
 
-✓ Fully responsive and mobile optimized theme [(Theme Demo)](http://jekyllkickstart.com)
-✓ Workflow using GitHub.com to create, customize and post to your blog
-✓ Host on your free GitHub Pages user site
-✓ Blog in markdown!
-✓ Syntax highlighting
-✓ Disqus commenting
-✓ Google Analytics integration
-✓ Optional Grunt workflow for local development using SASS
+✓ Fully responsive and mobile optimized theme [(Theme Demo)](http://jekyllkickstart.com)  
+✓ Workflow using GitHub.com to create, customize and post to your blog  
+✓ Host on your free GitHub Pages user site  
+✓ Blog in markdown!  
+✓ Syntax highlighting  
+✓ Disqus commenting  
+✓ Google Analytics integration  
+✓ Optional Grunt workflow for local development using SASS  
 
-  ✘ No setting up local development
-  ✘ No installing dependancies
-  ✘ No configuring plugins
-  ✘ No need to spend time on theming
-  ✘ No setting up hosting
-  ✘ More time to do other things, wait ✓ !
-
+✘ No setting up local development  
+✘ No installing dependancies  
+✘ No configuring plugins  
+✘ No need to spend time on theming  
+✘ No setting up hosting  
+✘ More time to code other things! ... wait ✓  
 
 ## 5 Minute Blog Setup—all on GitHub.com
 
