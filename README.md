@@ -1,10 +1,28 @@
 # Jekyll Kickstart
 
-Create your Jekyll blog in minutes, without needing to set up local development. 
+I found Jekyll a little tricky to set up. I ran into complications while setting up local development, configuring plugins, and figuring out a good workflow for blogging. After finishing [my blog](http://jekyllkickstart.com), I found that I really didn't need a lot of those complexities in the first place.
 
-[**Theme Demo >>**](http://jekyllkickstart.com)   
+I created Jekyll Kickstart to help you get your Jekyll blog set up extremely quickly, avoiding the pitfalls that I fell into. It features my lovely GitHub influenced responsive base theme and no need to touch the command line. 
 
-## 5 Minute Blog Setup on GitHub Pages
+#### Jekyll Kickstart lets you create, personalize and post to your Jekyll blog in minutes — _all directly on GitHub.com_
+
+- ✓ Fully responsive and mobile optimized theme [(Theme Demo)](http://jekyllkickstart.com)
+- ✓ Workflow using GitHub.com to create, customize and post to your blog
+- ✓ Host on your free GitHub Pages user site
+- ✓ Blog in markdown!
+- ✓ Syntax highlighting
+- ✓ Disqus commenting
+- ✓ Google Analytics integration
+- ✓ Optional Grunt workflow for local development using SASS
+
+- ✘ No setting up local development
+- ✘ No installing dependancies
+- ✘ No configuring plugins
+- ✘ No need to spend time on theming
+- ✘ No setting up hosting
+- ✘ No paintrain
+
+## 5 Minute Blog Setup—all on GitHub.com
 
 #### 1) Fork Jekyll Kickstart
 
@@ -33,7 +51,7 @@ Input your details by simply editing the configuration file. Go to your forked r
 
 Go to the _posts folder and edit the Hello World post that's there to create your first post! Jekyll pulls the date of the post from the filename, so change that to today's date. 
 
-## Things you can do directly on GitHub.com
+## More things you can do directly on GitHub.com
 
 #### Publish new content
 
@@ -55,6 +73,8 @@ Any files that you edit within your repo will trigger a rebuild of your GitHub P
 Read more about theme development at the [Jekyll documentation](http://jekyllrb.com/docs/home/). 
 
 ## Local Theme Development
+
+Explain why you'd want to use local theme development. 
 
 The first step of local development is git cloning your repo. 
 
