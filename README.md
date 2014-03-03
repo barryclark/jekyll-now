@@ -1,26 +1,27 @@
 # Jekyll Kickstart
 
-I found Jekyll a little tricky to set up. I ran into complications while setting up local development, configuring plugins, and figuring out a good workflow for blogging. After finishing [my blog](http://jekyllkickstart.com), I found that I really didn't need a lot of those complexities in the first place.
+I found Jekyll a little tricky to set up. I ran into complications setting up local development, configuring plugins, and figuring out a good workflow for blogging. After [publishing my blog](http://jekyllkickstart.com), I found that I really didn't need a lot of those complexities in the first place.
 
-I created Jekyll Kickstart to help you get your Jekyll blog set up extremely quickly, avoiding the pitfalls that I fell into. It features my lovely GitHub influenced responsive base theme and no need to touch the command line. 
+I created Jekyll Kickstart to help you get your Jekyll blog set up extremely quickly, avoiding the pitfalls that I fell into. It features my lovely GitHub influenced responsive base theme and most importantly **no need to touch the command line**.
 
 #### Jekyll Kickstart lets you create, personalize and post to your Jekyll blog in minutes — _all directly on GitHub.com_
 
-- ✓ Fully responsive and mobile optimized theme [(Theme Demo)](http://jekyllkickstart.com)
-- ✓ Workflow using GitHub.com to create, customize and post to your blog
-- ✓ Host on your free GitHub Pages user site
-- ✓ Blog in markdown!
-- ✓ Syntax highlighting
-- ✓ Disqus commenting
-- ✓ Google Analytics integration
-- ✓ Optional Grunt workflow for local development using SASS
+✓ Fully responsive and mobile optimized theme [(Theme Demo)](http://jekyllkickstart.com)
+✓ Workflow using GitHub.com to create, customize and post to your blog
+✓ Host on your free GitHub Pages user site
+✓ Blog in markdown!
+✓ Syntax highlighting
+✓ Disqus commenting
+✓ Google Analytics integration
+✓ Optional Grunt workflow for local development using SASS
 
-- ✘ No setting up local development
-- ✘ No installing dependancies
-- ✘ No configuring plugins
-- ✘ No need to spend time on theming
-- ✘ No setting up hosting
-- ✘ No paintrain
+  ✘ No setting up local development
+  ✘ No installing dependancies
+  ✘ No configuring plugins
+  ✘ No need to spend time on theming
+  ✘ No setting up hosting
+  ✘ More time to do other things, wait ✓ !
+
 
 ## 5 Minute Blog Setup—all on GitHub.com
 
