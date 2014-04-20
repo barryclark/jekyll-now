@@ -1,10 +1,10 @@
-# Jekyll Kickstart
+# Jekyll Now
 
 I found Jekyll a little tricky to set up. I ran into complications setting up local development, configuring plugins, and figuring out a good workflow for blogging. After [publishing my blog](http://jekyllkickstart.com), I found that I really didn't need a lot of those complexities in the first place.
 
-I created Jekyll Kickstart to help you get your Jekyll blog set up extremely quickly, avoiding the pitfalls that I fell into. It features my lovely GitHub influenced responsive base theme and most importantly **no need to touch the command line**.
+I created Jekyll Now to help you get your Jekyll blog set up extremely quickly, avoiding the pitfalls that I fell into. It features my lovely GitHub influenced responsive base theme and most importantly **no need to touch the command line**.
 
-#### Jekyll Kickstart lets you create, personalize and post to your Jekyll blog in minutes — _all directly on GitHub.com_
+#### Jekyll Now lets you create, personalize and post to your Jekyll blog in minutes — _all directly on GitHub.com_
 
 ✓ Fully responsive and mobile optimized theme ([Theme Demo](http://jekyllkickstart.com))  
 ✓ Workflow using GitHub.com to create, customize and post to your blog  
@@ -24,7 +24,7 @@ I created Jekyll Kickstart to help you get your Jekyll blog set up extremely qui
 
 ## 5 Minute Blog Setup—all on GitHub.com
 
-#### 1) Fork Jekyll Kickstart
+#### 1) Fork Jekyll Now
 
 Click the fork button at the top right of the repository. 
 
@@ -108,7 +108,7 @@ Here's what the workflow looks like:
 
 ## Questions or requests?
 
-[Open an Issue](https://github.com/barryclark/jekyll-kickstart/issues/new) and let's chat!
+[Open an Issue](https://github.com/barryclark/jekyll-now/issues/new) and let's chat!
 
 ## Credits
 
@@ -117,12 +117,3 @@ Here's what the workflow looks like:
 Next up: A Jekyll based portfolio site theme to showcase projects and content. 
 
 If you'd like me to let you know when I release a new theme, just [drop me your email for updates](http://getresponse.com). 
-
-## Alternative Jekyll starting points
-
-This wasn't what you were looking for? Here are some other Jekyll starting points that might hit the spot:
-
-- [Left by Zach Holman](https://github.com/holman/left) - Jekyll theme with a sidebar  
-- [Hazelnut by Mig Reyes](https://github.com/migreyes/hazelnut) - Includes sweet Pow workflows  
-- [Octopress by Brandon Mathis](https://github.com/imathis/octopress) - Another established starting point with lots of options  
-- [mojombo.github.io by Tom Preston-Werner](https://github.com/mojombo/mojombo.github.io) - TPW's original Jekyll theme  
