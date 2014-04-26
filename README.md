@@ -1,8 +1,6 @@
-# Jekyll Now
-
 #### Jekyll Now lets you create your Jekyll blog in minutes, without touching the command line.
 
-## Setup
+## 3 Step Setup
 
 ##### Step 1) Fork Jekyll Now to your GitHub User Repository
 
@@ -15,11 +13,9 @@
 
 ##### Step 2) Personalize your blog
 
-![placeholder catz](http://media.giphy.com/media/xWlPqPbrlkEQU/giphy.gif "placeholder catz")   
 
 ##### Step 3) Publish your first post
 
-![placeholder catz](http://media.giphy.com/media/xWlPqPbrlkEQU/giphy.gif "placeholder catz")   
 
 ## Features
 
