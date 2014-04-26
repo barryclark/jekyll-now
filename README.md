@@ -2,31 +2,29 @@
 
 Create your Jekyll blog in minutes, without touching the command line.
 
-I wrote a more detailed walkthrough including details of a lot of the workflow benefits and intro to Jekyll here: [Getting Started With Jekyll](#). You can use the Setup guide below to try Jekyll Now out fast. 
-
 ### Setup
 
-##### Step 1) Fork Jekyll Now
+Or if you prefer, a more detailed walkthrough including details of a lot of the workflow benefits and intro to Jekyll here: [Getting Started With Jekyll](#)
 
-I love starting out by forking first as you can get a feel for what Jekyll is like _extremely quickly_. You don't have to set up a local development environment, install dependancies and figure out how the Jekyll build process works to get your site up and running.
+#### Step 1) Fork Jekyll Now
+
+With this fork first setup you can get a feel for what Jekyll is like extremely quickly. Make sure you use YOURGITHUBUSERNAME.github.io instead of souploaf.github.io!
 
 ![Step 1](/images/step1.gif "Step 1")
 
-_Make to use yourgithubusername.github.io instead of souploaf.github.io!_
-
-##### Step 2) Customize your site
+#### Step 2) Customize your site
 
 You can now edit your site name, gravatar and other options using the _config.yml file. 
 
 ![Step 2](/images/step2.gif "Step 2")
 
-##### Step 3) Publish your first blog post
+#### Step 3) Publish your first blog post
 
-Your site is customized and looking great. Now you just have to write that epic blog post!
+Your site is customized and looking great. Now you just have to write that epic blog post! We're going to edit the existing Hello World post for your first post. 
 
 ![Step 3](/images/step3.gif "Step 3")
 
-_You can just hit the + icon in the _posts folder to create new content. Just make sure to include the [front-matter](http://jekyllrb.com/docs/frontmatter/) block at the top of each new blog post and make sure the post's filename is in this format: year-month-day-title.md
+To add additional posts you can hit the + icon in the _posts folder (shown at the end of the video) to create new content. Just make sure to include the [front-matter](http://jekyllrb.com/docs/frontmatter/) block at the top of each new blog post and make sure the post's filename is in this format: year-month-day-title.md
 
 ## Features
 
