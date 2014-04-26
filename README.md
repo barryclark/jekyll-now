@@ -4,19 +4,20 @@
 
 ## Setup
 
-##### Step 1) Fork this starting point repo
+##### Step 1) Fork Jekyll Now to your GitHub User Repository
+
+![Step 1](/images/step1.gif "Step 1")   
+
+1. Walk 
+2. Through
+3. The --- Host on your GitHub Pages User repo
+4. Video --- 
+
+##### Step 2) Personalize your blog
 
 ![placeholder catz](http://media.giphy.com/media/xWlPqPbrlkEQU/giphy.gif "placeholder catz")   
 
-##### Step 2) Host on your GitHub User site
-
-![placeholder catz](http://media.giphy.com/media/xWlPqPbrlkEQU/giphy.gif "placeholder catz")   
-
-##### Step 3) Customize your site
-
-![placeholder catz](http://media.giphy.com/media/xWlPqPbrlkEQU/giphy.gif "placeholder catz")   
-
-##### Step 4) Publish your first blog post
+##### Step 3) Publish your first post
 
 ![placeholder catz](http://media.giphy.com/media/xWlPqPbrlkEQU/giphy.gif "placeholder catz")   
 
