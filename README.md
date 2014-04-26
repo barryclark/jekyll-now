@@ -12,9 +12,7 @@ I love starting out by forking first as you can get a feel for what Jekyll is li
 
 ![Step 1](/images/step1.gif "Step 1")
 
-1. Hit the fork button at the top right of the repository to fork a copy to your GitHub account.
-2. Click the Settings button on your new forked repository and change the repository name to yourusername.github.io (ensure that yourusername is replaced with your GitHub username).
-3. Your site should be live immediately! (although it can take up to 10 minutes)
+_Make to use yourgithubusername.github.io instead of souploaf.github.io!_
 
 ##### Step 2) Customize your site
 
@@ -28,10 +26,7 @@ Your site is customized and looking great. Now you just have to write that epic 
 
 ![Step 3](/images/step3.gif "Step 3")
 
-1. Edit the Hello World post in the _posts folder, deleting the placeholder content and entering your own.
-2. Change the filename to include today's date and the title of your post. Jekyll requires posts to be named year-month-day-title.md
-3. Update the Title. Those variables at the top of the blog post are called front-matter. In this case they specify which layout to use and the title of the blog post. There are [additional front-matter variables](http://jekyllrb.com/docs/frontmatter/) too, like permalink, tags, and category.
-4. You can also create new blog posts without setting up local development, you can just hit the + icon in the _posts folder to create new content. Just remember to format the filename correctly and to include the front matter block to ensure that the file gets processed by Jekyll. 
+_You can just hit the + icon in the _posts folder to create new content. Just make sure to include the [front-matter](http://jekyllrb.com/docs/frontmatter/) block at the top of each new blog post and make sure the post's filename is in this format: year-month-day-title.md
 
 ## Features
 
