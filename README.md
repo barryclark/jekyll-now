@@ -1,8 +1,10 @@
-#### Jekyll Now lets you create your Jekyll blog in minutes, without touching the command line.
+# Jekyll Now
 
-## 3 Step Setup
+_Create your Jekyll blog in minutes, without touching the command line._
 
-##### Step 1) Fork Jekyll Now to your GitHub User Repository
+### Setup
+
+##### Step 1) Fork Jekyll Now
 
 ![Step 1](/images/step1.gif "Step 1")   
 
