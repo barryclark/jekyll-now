@@ -4,9 +4,9 @@ Create your Jekyll blog in minutes, without touching the command line.
 
 ## Setup
 
-### Step 1) Fork Jekyll Now
+### Step 1) Fork to your User Repository
 
-With this fork first setup you can get a feel for what Jekyll is like extremely quickly. Make sure you use YOURGITHUBUSERNAME.github.io instead of souploaf.github.io!
+With this fork first setup you can get a feel for what Jekyll is like extremely quickly. Make sure that you rename your forked repository to yourgithubusername.github.io. It can then be viewed at that URL.
 
 ![Step 1](/images/step1.gif "Step 1")
   
@@ -29,31 +29,31 @@ To add additional posts you can hit the + icon in the _posts folder (shown at th
 
 ## Moar!
 
-I've publish a much more detailed walkthrough and intro to Jekyll here: [Getting Started With Jekyll](#)
+I've published a much more detailed introduction to Jekyll and walkthrough of using Jekyll Now here: [Getting Started With Jekyll](#)
 
 ## Jekyll Now Features
 
 ✓ Fully responsive and mobile optimized theme ([Theme Demo](http://jekyllkickstart.com))  
-✓ Workflow using GitHub.com to create, customize and post to your blog  
-✓ Host on your free GitHub Pages user site  
-✓ Blog in markdown!  
+✓ Command-line free workflow—using GitHub.com to create, customize and post to your blog  
+✓ Free hosting on your GitHub Pages user site  
+✓ Markdown blogging  
 ✓ Syntax highlighting  
 ✓ Disqus commenting  
 ✓ Google Analytics integration  
-✓ Optional Grunt workflow for local development using SASS  
+✓ Grunt SASS workflow included for local development  
 
-✘ No setting up local development  
+✘ No need to set up local development  
 ✘ No installing dependancies  
 ✘ No configuring plugins  
 ✘ No need to spend time on theming  
 ✘ No setting up hosting  
 ✘ More time to code other things! ... wait that's a ✓  
 
-## Any questions?
+## Questions?
 
 [Open an Issue](https://github.com/barryclark/jekyll-now/issues/new) and let's chat!
 
-## Get notified when I release new themes
+## New themes
 
 If you'd like me to let you know when I release a new theme, just [drop me your email for updates](http://getresponse.com). I'm currently working on a personal portfolio site Jekyll Now theme.
 
