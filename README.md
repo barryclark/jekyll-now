@@ -6,7 +6,7 @@ Create your Jekyll blog in minutes, without touching the command line.
 
 ### Step 1) Fork to your User Repository
 
-With this fork first setup you can get a feel for what Jekyll is like extremely quickly. Make sure that you rename your forked repository to yourgithubusername.github.io. It can then be viewed at that URL.
+With this fork first setup you can get a feel for what Jekyll is like extremely quickly. Fork this repo, then make sure that you rename your fork to yourgithubusername.github.io. Your Jekyll blog can then immediately be viewed at that URL.
 
 ![Step 1](/images/step1.gif "Step 1")
   
@@ -33,8 +33,8 @@ I've published a much more detailed introduction to Jekyll and walkthrough of us
 
 ## Jekyll Now Features
 
-✓ Fully responsive and mobile optimized theme ([Theme Demo](http://jekyllkickstart.com))  
 ✓ Command-line free workflow—using GitHub.com to create, customize and post to your blog  
+✓ Fully responsive and mobile optimized base theme ([Theme Demo](http://jekyllkickstart.com))  
 ✓ Free hosting on your GitHub Pages user site  
 ✓ Markdown blogging  
 ✓ Syntax highlighting  
@@ -49,7 +49,7 @@ I've published a much more detailed introduction to Jekyll and walkthrough of us
 ✘ No setting up hosting  
 ✘ More time to code other things! ... wait that's a ✓  
 
-## Questions?
+## Questions? Suggestions?
 
 [Open an Issue](https://github.com/barryclark/jekyll-now/issues/new) and let's chat!
 
