@@ -1,23 +1,37 @@
 # Jekyll Now
 
-_Create your Jekyll blog in minutes, without touching the command line._
+Create your Jekyll blog in minutes, without touching the command line.
+
+I wrote a more detailed walkthrough including details of a lot of the workflow benefits and intro to Jekyll here: [Getting Started With Jekyll](#). You can use the Setup guide below to try Jekyll Now out fast. 
 
 ### Setup
 
 ##### Step 1) Fork Jekyll Now
 
-![Step 1](/images/step1.gif "Step 1")   
+I love starting out by forking first as you can get a feel for what Jekyll is like _extremely quickly_. You don't have to set up a local development environment, install dependancies and figure out how the Jekyll build process works to get your site up and running.
 
-1. Walk 
-2. Through
-3. The --- Host on your GitHub Pages User repo
-4. Video --- 
+![Step 1](/images/step1.gif "Step 1")
 
-##### Step 2) Personalize your blog
+1. Hit the fork button at the top right of the repository to fork a copy to your GitHub account.
+2. Click the Settings button on your new forked repository and change the repository name to yourusername.github.io (ensure that yourusername is replaced with your GitHub username).
+3. Your site should be live immediately! (although it can take up to 10 minutes)
 
+##### Step 2) Customize your site
 
-##### Step 3) Publish your first post
+You can now edit your site name, gravatar and other options using the _config.yml file. 
 
+![Step 2](/images/step2.gif "Step 2")
+
+##### Step 3) Publish your first blog post
+
+Your site is customized and looking great. Now you just have to write that epic blog post!
+
+![Step 3](/images/step3.gif "Step 3")
+
+1. Edit the Hello World post in the _posts folder, deleting the placeholder content and entering your own.
+2. Change the filename to include today's date and the title of your post. Jekyll requires posts to be named year-month-day-title.md
+3. Update the Title. Those variables at the top of the blog post are called front-matter. In this case they specify which layout to use and the title of the blog post. There are [additional front-matter variables](http://jekyllrb.com/docs/frontmatter/) too, like permalink, tags, and category.
+4. You can also create new blog posts without setting up local development, you can just hit the + icon in the _posts folder to create new content. Just remember to format the filename correctly and to include the front matter block to ensure that the file gets processed by Jekyll. 
 
 ## Features
 
@@ -48,10 +62,6 @@ To publish new blog posts, go into the _posts folder and click the New File butt
 #### Set up your domain name
 
 Follow the latest [GitHub Pages Custom Domain Guide](https://help.github.com/articles/setting-up-a-custom-domain-with-pages) to set up your custom domain name. I've created the CNAME file already, so that you can easily edit it within the repository.
-
-## Looking for a more in depth walkthrough?
-
-Check out my article [Getting Started With Jekyll](#).
 
 ## Any questions?
 
