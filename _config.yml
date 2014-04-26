@@ -26,6 +26,10 @@ links:
   github: your-username
   twitter: your-username
 
+#
+# You don't need to update the configuration flags below.
+#
+
 markdown: rdiscount
 pygments: true
 permalink: /:title
