@@ -238,4 +238,9 @@ nav {
 footer {
   // border-top: 1px $lightGray solid;
   padding: 20px 0;
+  text-align: center;
+
+  .footer-icon {
+    width: 40px;
+  }
 }

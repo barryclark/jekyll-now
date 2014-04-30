@@ -479,4 +479,7 @@ nav {
   color: #666666; }
 
 footer {
-  padding: 20px 0; }
+  padding: 20px 0;
+  text-align: center; }
+  footer .footer-icon {
+    width: 40px; }
