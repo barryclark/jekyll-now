@@ -17,7 +17,7 @@ html {
 }
 
 body {
-  max-width: 680px;
+  max-width: 740px;
 	margin: 0 auto;
 	
 	background: $white;
@@ -146,9 +146,9 @@ img {
 
 .avatar {
   float: left;
-  width: 35px;
+  width: 70px;
 
-  margin-right: 10px;
+  margin-right: 15px;
   border-radius: 5px;
 }
 
@@ -157,7 +157,7 @@ img {
 
   font-family: $helveticaNeue; 
   font-weight: 300;
-  font-size: 24px;
+  font-size: 31px;
   letter-spacing: 1px;
   @include mobile {
     font-size: 22px;
@@ -173,12 +173,14 @@ img {
 
 .site-description {
   float: left;
-  font-size: 14px;
-  display: none;
+  font-size: 16px;
+  margin: 0;
+  margin-top: -5px;
 }
 
 nav {
   float: right;
+  margin-top: -25px; // @TODO - containers for nav and content blocks in header
 
   font-family: $helveticaNeue; 
   font-size: 18px;
