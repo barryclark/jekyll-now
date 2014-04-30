@@ -318,7 +318,7 @@ html {
   font-size: 100%; }
 
 body {
-  max-width: 680px;
+  max-width: 740px;
   margin: 0 auto;
   background: white;
   font: 18px/1.4 Helvetica, Arial, sans-serif;
@@ -414,15 +414,15 @@ img {
 
 .avatar {
   float: left;
-  width: 35px;
-  margin-right: 10px;
+  width: 70px;
+  margin-right: 15px;
   border-radius: 5px; }
 
 .site-name {
   float: left;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
-  font-size: 24px;
+  font-size: 31px;
   letter-spacing: 1px;
   text-decoration: none;
   cursor: pointer;
@@ -435,11 +435,13 @@ img {
 
 .site-description {
   float: left;
-  font-size: 14px;
-  display: none; }
+  font-size: 16px;
+  margin: 0;
+  margin-top: -5px; }
 
 nav {
   float: right;
+  margin-top: -25px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px; }
   @media screen and (max-width: 520px) {
