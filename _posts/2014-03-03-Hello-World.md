@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hello World!
+title: Hello World
 ---
 
 ![Jekyll Octocat](/images/total-eclipse-of-the-octocat.jpg)
