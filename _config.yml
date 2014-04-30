@@ -30,7 +30,7 @@ links:
 # You don't need to update the configuration flags below.
 #
 
-markdown: rdiscount
+markdown: kramdown
 pygments: true
 permalink: /:title
 
