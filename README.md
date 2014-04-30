@@ -2,7 +2,7 @@
 
 Create your Jekyll blog in minutes, without touching the command line.
 
-## Setup
+## Quick Start
 
 ### Step 1) Fork to your User Repository
 
@@ -29,12 +29,17 @@ To add additional posts you can hit the + icon in the _posts folder (shown at th
 
 ## Moar!
 
-I've published a much more detailed introduction to Jekyll and walkthrough of using Jekyll Now here: [Getting Started With Jekyll](#)
+I've posted a more detailed walkthrough of Jekyll Now and introduction to Jekyll here: [Getting Started With Jekyll](#)
+
+It covers:
+
+- a
+- b
 
 ## Jekyll Now Features
 
 ✓ Command-line free workflow—using GitHub.com to create, customize and post to your blog  
-✓ Fully responsive and mobile optimized base theme ([Theme Demo](http://jekyllkickstart.com))  
+✓ Fully responsive and mobile optimized base theme ([Theme Demo](http://jekyllnow.com))  
 ✓ Free hosting on your GitHub Pages user site  
 ✓ Markdown blogging  
 ✓ Syntax highlighting  
