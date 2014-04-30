@@ -37,10 +37,8 @@
     <div id="main" role="main">{{ content }}</div>
       
     <footer class="footer">
-      <ul>
-        <li><a href="http://github.com/{{ site.links.github }}">{{ site.links.github }} on GitHub</a></li>
-        <li><a href="http://twitter.com/{{ site.links.twitter }}">{{ site.links.twitter }} on Twitter</a></li>
-      </ul>
+      {% if site.links.github %}<a href="http://github.com/{{ site.links.github }}"><img class="footer-icon" src="/images/icon-github.png" /></a>{% endif %}
+      {% if site.links.twitter %}<a href="http://twitter.com/{{ site.links.github }}"><img class="footer-icon" src="/images/icon-twitter.png" /></a>{% endif %}
     </footer>
 
     {% include analytics.html %}
