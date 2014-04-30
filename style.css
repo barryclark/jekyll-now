@@ -334,10 +334,12 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-weight: 400;
-  font-size: 35px; }
+  font-size: 32px; }
   @media screen and (max-width: 520px) {
     h1 {
       font-size: 32px; } }
+  h1 a {
+    color: inherit; }
 
 h2 {
   font-size: 26px; }
@@ -422,7 +424,7 @@ img {
   float: left;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
-  font-size: 31px;
+  font-size: 28px;
   letter-spacing: 1px;
   text-decoration: none;
   cursor: pointer;

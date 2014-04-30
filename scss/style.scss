@@ -37,9 +37,12 @@ h1, h2, h3, h4, h5, h6 {
   
 h1 {  
   font-weight: 400;
-  font-size: 35px;
+  font-size: 32px;
   @include mobile {
     font-size: 32px;
+  }
+  a {
+    color: inherit;
   }
 }
 
@@ -157,7 +160,7 @@ img {
 
   font-family: $helveticaNeue; 
   font-weight: 300;
-  font-size: 31px;
+  font-size: 28px;
   letter-spacing: 1px;
   @include mobile {
     font-size: 22px;
