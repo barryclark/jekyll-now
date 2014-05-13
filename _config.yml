@@ -35,6 +35,10 @@ markdown: kramdown
 highlighter: pygments
 permalink: /:title
 
+# Emoji please!
+gems:
+  - jemoji
+
 # Exclude these files from your production _site
 exclude:
     - Gemfile
