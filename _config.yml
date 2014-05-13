@@ -31,7 +31,7 @@ links:
 #
 
 markdown: kramdown
-pygments: true
+highlighter: pygments
 permalink: /:title
 
 # Exclude these files from your production _site
