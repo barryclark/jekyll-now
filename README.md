@@ -40,12 +40,13 @@ It covers:
 
 ✓ Command-line free workflow—using GitHub.com to create, customize and post to your blog  
 ✓ Fully responsive and mobile optimized base theme ([Theme Demo](http://jekyllnow.com))  
+✓ SASS/Coffee support using Jekyll 2.0  
 ✓ Free hosting on your GitHub Pages user site  
 ✓ Markdown blogging  
 ✓ Syntax highlighting  
 ✓ Disqus commenting  
 ✓ Google Analytics integration  
-✓ Grunt SASS workflow included for local development  
+✓ Emoji! :sparkling_heart: 
 
 ✘ No need to set up local development  
 ✘ No installing dependancies  
