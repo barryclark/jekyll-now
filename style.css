@@ -318,7 +318,6 @@ html {
   font-size: 100%; }
 
 body {
-  margin: 0 auto;
   background: white;
   font: 18px/1.4 Helvetica, Arial, sans-serif;
   color: #333333; }
@@ -326,7 +325,6 @@ body {
 .container {
   margin: 0 auto;
   max-width: 740px;
-  padding: 0 20px;
   width: 100%; }
 
 h1, h2, h3, h4, h5, h6 {
@@ -340,23 +338,14 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-weight: 400;
   font-size: 32px; }
-  @media screen and (max-width: 520px) {
-    h1 {
-      font-size: 32px; } }
   h1 a {
     color: inherit; }
 
 h2 {
   font-size: 26px; }
-  @media screen and (max-width: 520px) {
-    h2 {
-      font-size: 24px; } }
 
 h3 {
   font-size: 22px; }
-  @media screen and (max-width: 520px) {
-    h3 {
-      font-size: 20px; } }
 
 h4 {
   font-size: 18px;
@@ -420,12 +409,21 @@ img {
 
 .masthead {
   padding: 25px 0; }
+  @media screen and (max-width: 520px) {
+    .masthead {
+      text-align: center; } }
 
 .avatar {
   float: left;
   width: 70px;
-  margin-right: 15px;
-  border-radius: 5px; }
+  margin-right: 15px; }
+  @media screen and (max-width: 520px) {
+    .avatar {
+      float: none;
+      display: block;
+      margin: 0 auto; } }
+  .avatar img {
+    border-radius: 5px; }
 
 .site-name {
   float: left;
@@ -438,7 +436,8 @@ img {
   color: #333333; }
   @media screen and (max-width: 520px) {
     .site-name {
-      font-size: 22px; } }
+      float: none;
+      display: block; } }
   .site-name:hover, .site-name:active {
     text-decoration: none; }
 
@@ -448,6 +447,11 @@ img {
   margin: 0;
   margin-top: -5px;
   color: #333333; }
+  @media screen and (max-width: 520px) {
+    .site-description {
+      float: none;
+      display: block;
+      margin: 3px 0; } }
 
 nav {
   float: right;
@@ -456,7 +460,10 @@ nav {
   font-size: 18px; }
   @media screen and (max-width: 520px) {
     nav {
-      font-size: 18px; } }
+      float: none;
+      display: block;
+      margin-top: 15px;
+      font-size: 16px; } }
   nav a {
     margin-left: 25px;
     text-align: right;
@@ -467,6 +474,9 @@ nav {
       text-decoration: none;
       cursor: pointer;
       color: #333333; }
+    @media screen and (max-width: 520px) {
+      nav a {
+        margin: 0 10px; } }
 
 @media screen and (max-width: 520px) {
   .logo, nav {
@@ -488,6 +498,7 @@ nav {
   color: #666666; }
 
 .wrapper-footer {
+  margin-top: 50px;
   background-color: #eeeeee;
   border-top: 1px solid #dddddd; }
 
