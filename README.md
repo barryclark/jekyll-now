@@ -65,6 +65,6 @@ If you'd like me to let you know when I release a new theme, just [drop me your 
 
 ## Credits
 
-- SVG icons
+- [SVG icons](https://github.com/neilorangepeel/Free-Social-Icons) by Neil Orange Peel 
+- The team at [Jekyll](https://github.com/jekyll/jekyll)!
 - Code/design reviewers
-- Jekyll!

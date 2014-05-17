@@ -21,9 +21,17 @@ disqus:
 # Your Google Analytics web tracking code (e.g. UA-2110908-2)
 google_analytics: 
 
-# Links used for your social icons
-links:
+# Includes an icon in the footer for each username you enter
+footer-links:
+  dribbble: 
+  email: 
+  facebook: 
+  flickr: 
   github: your-username
+  instagram: 
+  linkedin: 
+  pinterest: 
+  rss: 
   twitter: your-username
 
 #
