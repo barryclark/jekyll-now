@@ -31,7 +31,7 @@ footer-links:
   instagram: 
   linkedin: 
   pinterest: 
-  rss: 
+  rss: # for rss, add the entire URL of our site, e.g. http://www.barryclark.co
   twitter: your-username
 
 #
