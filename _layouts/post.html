@@ -6,12 +6,12 @@ layout: default
 
 	<h1>{{ page.title }}</h1>
 
-  <div class="date">
-    {{ page.date | date: "%B %e, %Y" }}
-  </div>
-
   <div class="entry">
     {{ content }}
+  </div>
+
+  <div class="date">
+    Written on {{ page.date | date: "%B %e, %Y" }}
   </div>
 
   <div class="comments">
