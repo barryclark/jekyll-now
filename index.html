@@ -8,10 +8,6 @@ layout: default
     
     <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
 
-    <div class="date">
-      {{ post.date | date: "%B %e, %Y" }}
-    </div>
-
     <div class="entry">
       {{ post.content | truncatewords:40}}
     </div>
