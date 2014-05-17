@@ -318,11 +318,16 @@ html {
   font-size: 100%; }
 
 body {
-  max-width: 740px;
   margin: 0 auto;
   background: white;
   font: 18px/1.4 Helvetica, Arial, sans-serif;
   color: #333333; }
+
+.container {
+  margin: 0 auto;
+  max-width: 740px;
+  padding: 0 20px;
+  width: 100%; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -409,10 +414,12 @@ img {
   color: black;
   background: #eeeeee; }
 
+.wrapper-masthead {
+  background-color: #e8e8f2;
+  margin-bottom: 50px; }
+
 .masthead {
-  margin: 20px 0 30px;
-  padding-bottom: 20px;
-  border-bottom: 1px dotted #aaaaaa; }
+  padding: 25px 0; }
 
 .avatar {
   float: left;
@@ -439,7 +446,8 @@ img {
   float: left;
   font-size: 16px;
   margin: 0;
-  margin-top: -5px; }
+  margin-top: -5px;
+  color: #333333; }
 
 nav {
   float: right;
@@ -466,6 +474,7 @@ nav {
     width: 100%;
     text-align: center; } }
 
+
 .posts > .post {
   padding-bottom: 2em;
   border-bottom: 1px solid #eeeeee; }
@@ -477,6 +486,10 @@ nav {
   margin: 1.8em 0.8em;
   padding: 0.1em 1em;
   color: #666666; }
+
+.wrapper-footer {
+  background-color: #eeeeee;
+  border-top: 1px solid #dddddd; }
 
 footer {
   padding: 20px 0;

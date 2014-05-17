@@ -17,12 +17,18 @@ html {
 }
 
 body {
-  max-width: 740px;
 	margin: 0 auto;
 	
 	background: $white;
   font: 18px/1.4 $helvetica;
   color: $darkGray;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 740px;
+  padding: 0 20px;
+  width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -141,10 +147,13 @@ img {
 // .masthead
 //
 
+.wrapper-masthead {
+  background-color: #e8e8f2;
+  margin-bottom: 50px;
+}
+
 .masthead {
-  margin: 20px 0 30px;
-  padding-bottom: 20px;
-  border-bottom: 1px dotted $lightGray;
+  padding: 25px 0;
 }
 
 .avatar {
@@ -179,6 +188,7 @@ img {
   font-size: 16px;
   margin: 0;
   margin-top: -5px;
+  color: $darkGray;
 }
 
 nav {
@@ -219,6 +229,10 @@ nav {
 // .main
 //
 
+.wrapper-posts {
+  
+}
+
 .posts > .post {
   padding-bottom: 2em;
   border-bottom: 1px solid $lighterGray;
@@ -235,8 +249,12 @@ nav {
   }
 }
 
+.wrapper-footer {
+  background-color: #eee;
+  border-top: 1px solid #ddd;
+}
+
 footer {
-  // border-top: 1px $lightGray solid;
   padding: 20px 0;
   text-align: center;
 

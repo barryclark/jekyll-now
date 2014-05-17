@@ -20,26 +20,34 @@
   </head>
 
   <body>
-    <header class="masthead">
-      <a href="/" class="site-name"><img src="{{ site.avatar }}" class="avatar" /></a>
-      <a href="/" class="site-name">{{ site.name }}</a>
-      <br><br>
-      <p class="site-description">{{ site.description }}</p>
-      
-      <nav>
-        <a href="/">Blog</a>
-        <a href="/about">About</a>
-      </nav>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead">
+          <a href="/" class="site-name"><img src="{{ site.avatar }}" class="avatar" /></a>
+          <a href="/" class="site-name">{{ site.name }}</a>
+          <br><br>
+          <p class="site-description">{{ site.description }}</p>
+          
+          <nav>
+            <a href="/">Blog</a>
+            <a href="/about">About</a>
+          </nav>
 
-      <div style="clear:both;"></div>
-    </header>
+          <div style="clear:both;"></div>
+        </header>
+      </div>
+    </div>
 
-    <div id="main" role="main">{{ content }}</div>
-      
-    <footer class="footer">
-      {% if site.links.github %}<a href="http://github.com/{{ site.links.github }}"><img class="footer-icon" src="/images/icon-github.png" /></a>{% endif %}
-      {% if site.links.twitter %}<a href="http://twitter.com/{{ site.links.github }}"><img class="footer-icon" src="/images/icon-twitter.png" /></a>{% endif %}
-    </footer>
+    <div id="main" role="main" class="container">{{ content }}</div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          {% if site.links.github %}<a href="http://github.com/{{ site.links.github }}"><img class="footer-icon" src="/images/icon-github.png" /></a>{% endif %}
+          {% if site.links.twitter %}<a href="http://twitter.com/{{ site.links.github }}"><img class="footer-icon" src="/images/icon-twitter.png" /></a>{% endif %}
+        </footer>
+      </div>
+    </div>
 
     {% include analytics.html %}
   </body>
