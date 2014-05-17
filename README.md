@@ -68,3 +68,4 @@ If you'd like me to let you know when I release a new theme, just [drop me your 
 - [SVG icons](https://github.com/neilorangepeel/Free-Social-Icons) by Neil Orange Peel 
 - The team at [Jekyll](https://github.com/jekyll/jekyll)!
 - Code/design reviewers
+- [Joel Glovier](http://joelglovier.com/writing/) for some of his great Jekyll articles—I used feed.xml and sitemap.xml
