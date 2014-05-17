@@ -146,6 +146,11 @@ img {
   @include mobile {
     text-align: center;
   }
+
+  // @TODO: OMG this is so bad, I just can't
+  br {
+    visibility: none;
+  }
 }
 
 .avatar {
