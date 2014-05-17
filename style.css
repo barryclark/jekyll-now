@@ -412,6 +412,8 @@ img {
   @media screen and (max-width: 520px) {
     .masthead {
       text-align: center; } }
+  .masthead br {
+    visibility: none; }
 
 .avatar {
   float: left;
