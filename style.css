@@ -404,11 +404,11 @@ img {
   background: #eeeeee; }
 
 .wrapper-masthead {
-  background-color: #e8e8f2;
-  margin-bottom: 50px; }
+  margin-bottom: 40px; }
 
 .masthead {
-  padding: 25px 0; }
+  padding: 20px 0;
+  border-bottom: #777777 dotted 1px; }
   @media screen and (max-width: 520px) {
     .masthead {
       text-align: center; } }
