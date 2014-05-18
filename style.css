@@ -418,6 +418,7 @@ img {
 .avatar {
   float: left;
   width: 70px;
+  height: 70px;
   margin-right: 15px; }
   @media screen and (max-width: 520px) {
     .avatar {
