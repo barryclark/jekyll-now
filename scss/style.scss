@@ -137,12 +137,13 @@ img {
 //
 
 .wrapper-masthead {
-  background-color: #e8e8f2;
-  margin-bottom: 50px;
+  //background-color: #e8e8f2;
+  margin-bottom: 40px;
 }
 
 .masthead {
-  padding: 25px 0;
+  padding: 20px 0;
+  border-bottom: #777 dotted 1px;
   @include mobile {
     text-align: center;
   }
