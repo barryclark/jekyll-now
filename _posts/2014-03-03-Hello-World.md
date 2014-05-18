@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Hello World
+title: You're up and running!
 ---
 
-![Jekyll Octocat](/images/total-eclipse-of-the-octocat.jpg)
+![_config.yml](/images/config.jpg)
 
-Yay! Your Jekyll blog is up and running using [Jekyll Kickstart](http://github.com/barryclark/jekyll-kickstart/).
+Next you can update your site name, avatar and other options using the _config.yml in the root of your repository.
 
-Next, update the varibales in _config.yml and edit this post within _posts!
+After you're done that, you can edit this post to write your first post. Just go into /_posts and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub. 
