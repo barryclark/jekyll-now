@@ -1,10 +1,21 @@
 # Jekyll Now
 
-Create your Jekyll blog in minutes, without touching the command line.
+** Create your Jekyll blog in minutes, without touching the command line. **
+
+Jekyll Now is my effort to make it easier to set up your Jekyll blog, eliminating the following up front work:
+
+- No need to touch the command line
+- No need to install/configure ruby, rvm/rbenv, ruby gems (my least favorite part, as I'm not a rubyist)
+- No need to install runtime dependancies like markdown processors, Pygments, etc
+- No need to spend too much time on theming
+
+The Jekyll Now base theme is fully responsive, clean, and minimal (3 http requests including social icons and your avatar).
+
+[![Jekyll Now Theme Screenshot](/images/jekyll-now-theme-screenshot.jpg "Jekyll Now Theme Screenshot")](/images/jekyll-now-theme-screenshot-big.jpg)
 
 ## Quick Start
 
-### Step 1) Fork to your User Repository
+### Step 1) Fork Jekyll Now to your User Repository
 
 With this fork first setup you can get a feel for what Jekyll is like extremely quickly. Fork this repo, then make sure that you rename your fork to yourgithubusername.github.io. Your Jekyll blog can then immediately be viewed at that URL.
 
@@ -47,7 +58,8 @@ It covers:
 ✓ Disqus commenting  
 ✓ RSS feed and Sitemap.xml good to go  
 ✓ Google Analytics integration  
-✓ SVG social icons for your footer  
+✓ SVG social icons for your footer
+✓ Speed - only 3 http requests, including your avatar
 ✓ Emoji! :sparkling_heart: :sparkling_heart: :sparkling_heart: 
 
 ✘ No installing dependancies  
