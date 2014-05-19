@@ -61,13 +61,13 @@ It covers:
 
 [Open an Issue](https://github.com/barryclark/jekyll-now/issues/new) and let's chat!
 
-## New themes
+## Wanna get new themes?
 
 If you'd like me to let you know when I release a new theme, just [drop me your email for updates](http://getresponse.com). I'm currently working on a personal portfolio site Jekyll Now theme.
 
 ## Credits
 
-- [SVG icons](https://github.com/neilorangepeel/Free-Social-Icons) by Neil Orange Peel 
-- The team at [Jekyll](https://github.com/jekyll/jekyll)!
-- Code/design reviewers
+- [SVG icons](https://github.com/neilorangepeel/Free-Social-Icons) are by Neil Orange Peel, the they're beautiful. 
 - [Joel Glovier](http://joelglovier.com/writing/) for some of his great Jekyll articles—I used feed.xml and sitemap.xml
+- [Jekyll](https://github.com/jekyll/jekyll), duh! Thanks to it's creators and contributors.
+- Code/Design reviews, thanks to X, Y, Z.
