@@ -1,6 +1,6 @@
 # Jekyll Now
 
-Jekyll Now is my effort to make it easier to set up your Jekyll blog, eliminating the following up front work:
+Jekyll Now is an effort to make it easier to set up your Jekyll blog, eliminating the following up front work:
 
 - No need to touch the command line
 - No need to install/configure ruby, rvm/rbenv, ruby gems (my least favorite part, as I'm not a rubyist)
