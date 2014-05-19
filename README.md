@@ -15,21 +15,21 @@ With this fork first setup you can get a feel for what Jekyll is like extremely 
 
 You can now edit your site name, gravatar and other options using the _config.yml file. 
 
-![Step 2](/images/step2.gif "Step 2")
+![_config.yml](/images/config.jpg "_config.yml")
   
 
 ### Step 3) Publish your first blog post
 
 Your site is customized and looking great. Now you just have to write that epic blog post! We're going to edit the existing Hello World post for your first post. 
 
-![Step 3](/images/step3.gif "Step 3")
+![First Post](/images/first-post.jpg "First Post")
 
 To add additional posts you can hit the + icon in the _posts folder (shown at the end of the video) to create new content. Just make sure to include the [front-matter](http://jekyllrb.com/docs/frontmatter/) block at the top of each new blog post and make sure the post's filename is in this format: year-month-day-title.md
 
 
 ## Moar!
 
-I've posted a more detailed walkthrough of Jekyll Now and introduction to Jekyll here: [Getting Started With Jekyll](#)
+I've created a more detailed walkthrough of [Getting Started With Jekyll](#), check it out if you'd like a more detailed walkthrough and some background on Jekyll. :metal:
 
 It covers:
 
