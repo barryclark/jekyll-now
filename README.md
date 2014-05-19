@@ -46,7 +46,7 @@ It covers:
 ✓ Syntax highlighting  
 ✓ Disqus commenting  
 ✓ Google Analytics integration  
-✓ Emoji! :sparkling_heart: 
+✓ Emoji! :sparkling_heart: :sparkling_heart: :sparkling_heart: 
 
 ✘ No need to set up local development  
 ✘ No installing dependancies  
