@@ -56,7 +56,7 @@ It covers:
 ✓ Google Analytics integration  
 ✓ SVG social icons for your footer  
 ✓ Speed - only 3 http requests, including your avatar  
-✓ Emoji! :sparkling_heart: :sparkling_heart: :sparkling_heart:  
+✓ [Emoji](http://www.emoji-cheat-sheet.com/) in blog posts! :sparkling_heart: :sparkling_heart: :sparkling_heart:  
 
 ✘ No installing dependancies  
 ✘ No need to set up local development  
