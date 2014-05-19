@@ -1,6 +1,6 @@
 # Jekyll Now
 
-Jekyll Now is an effort to make it easier to set up your Jekyll blog, eliminating the following up front work:
+Jekyll Now is an effort to make it easier to set up your Jekyll blog by eliminating a lot of the up front setup (particularly the frustrating bits!).
 
 - No need to touch the command line
 - No need to install/configure ruby, rvm/rbenv, ruby gems (my favorite part!)
@@ -13,21 +13,21 @@ In just a couple of minutes you'll be set up with a blog like this one - [**Them
 
 ### Step 1) Fork Jekyll Now to your User Repository
 
-With this fork first setup you can get a feel for what Jekyll is like extremely quickly. Fork this repo, then make sure that you rename your fork to yourgithubusername.github.io. Your Jekyll blog can then immediately be viewed at that URL.
+Fork this repo and rename the repository to yourgithubusername.github.io. Your Jekyll blog can then immediately be viewed at that URL.
 
 ![Step 1](/images/step1.gif "Step 1")
   
 
 ### Step 2) Customize your site
 
-You can now edit your site name, gravatar and other options using the _config.yml file. 
+Enter your site name, description, avatar and many other options by editing the _config.yml file. 
 
 ![_config.yml](/images/config.jpg "_config.yml")
   
 
 ### Step 3) Publish your first blog post
 
-Your site is customized and looking great. Now you just have to write that epic blog post! We're going to edit the existing Hello World post for your first post. 
+Edit the Hello World markdown file in /_posts/ to publish your first blog post.
 
 ![First Post](/images/first-post.jpg "First Post")
 
