@@ -1,6 +1,6 @@
 # Jekyll Now
 
-Jekyll Now is an effort to make it easier to set up your Jekyll blog by eliminating a lot of the up front setup (particularly the frustrating bits!).
+Jekyll Now is an effort to make it easier to create your Jekyll blog by eliminating a lot of the up front setup (particularly the frustrating bits!).
 
 - No need to touch the command line
 - No need to install/configure ruby, rvm/rbenv, ruby gems (my favorite part!)
@@ -13,14 +13,14 @@ In just a couple of minutes you'll be set up with a blog like this one - [**Them
 
 ### Step 1) Fork Jekyll Now to your User Repository
 
-Fork this repo and rename the repository to yourgithubusername.github.io. Your Jekyll blog can then immediately be viewed at that URL.
+Fork this repo, then rename the repository to yourgithubusername.github.io. Your Jekyll blog can then immediately be viewed at that URL.
 
 ![Step 1](/images/step1.gif "Step 1")
   
 
 ### Step 2) Customize your site
 
-Enter your site name, description, avatar and many other options by editing the _config.yml file. 
+Enter your site name, description, avatar and many other options by editing the _config.yml file. In seconds you can add in social icons, Google Analytics tracking and Disqus commenting here too!
 
 ![_config.yml](/images/config.jpg "_config.yml")
   
@@ -31,7 +31,7 @@ Edit the Hello World markdown file in /_posts/ to publish your first blog post.
 
 ![First Post](/images/first-post.jpg "First Post")
 
-To add additional posts you can hit the + icon in the _posts folder (shown at the end of the video) to create new content. Just make sure to include the [front-matter](http://jekyllrb.com/docs/frontmatter/) block at the top of each new blog post and make sure the post's filename is in this format: year-month-day-title.md
+To add additional posts you can hit the + icon in the /_posts/ folder to create new content. Just make sure to include the [front-matter](http://jekyllrb.com/docs/frontmatter/) block at the top of each new blog post and make sure the post's filename is in this format: year-month-day-title.md
 
 
 ## Moar!
