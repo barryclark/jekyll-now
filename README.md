@@ -3,13 +3,11 @@
 Jekyll Now is an effort to make it easier to set up your Jekyll blog, eliminating the following up front work:
 
 - No need to touch the command line
-- No need to install/configure ruby, rvm/rbenv, ruby gems (my least favorite part, as I'm not a rubyist)
+- No need to install/configure ruby, rvm/rbenv, ruby gems (my favorite part!)
 - No need to install runtime dependancies like markdown processors, Pygments, etc
 - No cleanup, you can simply delete your repository if you don't like it
 
-It gets you set up with a fully responsive, clean and minimal blog in minutes! - [**Theme Demo**](http://jekyllnow.com)
-
-[![Jekyll Now Theme Screenshot](/images/jekyll-now-theme-screenshot.jpg "Jekyll Now Theme Screenshot")](https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-now-theme-screenshot-big.jpg)
+In just a couple of minutes you'll be set up with a blog like this one - [**Theme Demo**](http://jekyllnow.com). 
 
 ## Quick Start
 
