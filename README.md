@@ -1,6 +1,6 @@
 # Jekyll Now
 
-Jekyll Now is an effort to make it easier to create your Jekyll blog by eliminating a lot of the up front setup (particularly the frustrating bits!).
+Jekyll Now makes it easier to create your Jekyll blog, by eliminating a lot of the up front setup (particularly the frustrating bits!).
 
 - No need to touch the command line
 - No need to install/configure ruby, rvm/rbenv, ruby gems (my favorite part!)
@@ -69,13 +69,13 @@ It covers:
 
 [Open an Issue](https://github.com/barryclark/jekyll-now/issues/new) and let's chat!
 
-## Wanna get new themes?
+## Get new themes
 
 If you'd like me to let you know when I release a new theme, just [drop me your email for updates](http://getresponse.com). I'm currently working on a personal portfolio site Jekyll Now theme.
 
 ## Credits
 
+- [Jekyll](https://github.com/jekyll/jekyll)! Thanks to it's creators, contributors and maintainers.
 - [SVG icons](https://github.com/neilorangepeel/Free-Social-Icons) are by Neil Orange Peel, the they're beautiful. 
 - [Joel Glovier](http://joelglovier.com/writing/) for some of his great Jekyll articles—I used feed.xml and sitemap.xml
-- [Jekyll](https://github.com/jekyll/jekyll), duh! Thanks to it's creators and contributors.
 - Code/Design reviews, thanks to X, Y, Z.
