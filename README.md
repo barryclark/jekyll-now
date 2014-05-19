@@ -38,9 +38,9 @@ It covers:
 
 ## Jekyll Now Features
 
-✓ Command-line free workflow—using GitHub.com to create, customize and post to your blog  
-✓ Fully responsive and mobile optimized base theme ([Theme Demo](http://jekyllnow.com))  
-✓ SASS/Coffee support using Jekyll 2.0  
+✓ Command-line free _fork-first_ workflow, using GitHub.com to create, customize and post to your blog  
+✓ Fully responsive and mobile optimized base theme (**[Theme Demo](http://jekyllnow.com)**)  
+✓ Sass/Coffeescript support using Jekyll 2.0  
 ✓ Free hosting on your GitHub Pages user site  
 ✓ Markdown blogging  
 ✓ Syntax highlighting  
@@ -48,8 +48,8 @@ It covers:
 ✓ Google Analytics integration  
 ✓ Emoji! :sparkling_heart: :sparkling_heart: :sparkling_heart: 
 
-✘ No need to set up local development  
 ✘ No installing dependancies  
+✘ No need to set up local development  
 ✘ No configuring plugins  
 ✘ No need to spend time on theming  
 ✘ No setting up hosting  
