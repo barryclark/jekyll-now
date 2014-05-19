@@ -38,14 +38,16 @@ It covers:
 
 ## Jekyll Now Features
 
-✓ Command-line free _fork-first_ workflow, using GitHub.com to create, customize and post to your blog  
+✓ Command-line free _fork-first workflow_, using GitHub.com to create, customize and post to your blog  
 ✓ Fully responsive and mobile optimized base theme (**[Theme Demo](http://jekyllnow.com)**)  
 ✓ Sass/Coffeescript support using Jekyll 2.0  
 ✓ Free hosting on your GitHub Pages user site  
 ✓ Markdown blogging  
 ✓ Syntax highlighting  
 ✓ Disqus commenting  
+✓ RSS feed and Sitemap.xml good to go  
 ✓ Google Analytics integration  
+✓ SVG social icons for your footer  
 ✓ Emoji! :sparkling_heart: :sparkling_heart: :sparkling_heart: 
 
 ✘ No installing dependancies  
