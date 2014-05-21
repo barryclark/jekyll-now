@@ -7,7 +7,7 @@ Jekyll Now makes it easier to create your Jekyll blog, by eliminating a lot of t
 - No need to install runtime dependancies like markdown processors, Pygments, etc
 - No cleanup, you can simply delete your repository if you don't like it
 
-In just a couple of minutes you'll be set up with a blog like this one - [**Theme Demo**](http://jekyllnow.com). 
+In just a couple of minutes you'll be set up with a blog like this one - [**Theme Demo**](http://jekyllnow.com)
 
 ## Quick Start
 
@@ -20,7 +20,9 @@ Fork this repo, then rename the repository to yourgithubusername.github.io. Your
 
 ### Step 2) Customize your site
 
-Enter your site name, description, avatar and many other options by editing the _config.yml file. In seconds you can add in social icons, Google Analytics tracking and Disqus commenting here too!
+Enter your site name, description, avatar and many other options by editing the _config.yml file. 
+
+You can easily turn on Google Analytics tracking, Disqus commenting and social icons here too!
 
 ![_config.yml](/images/config.jpg "_config.yml")
   
@@ -52,7 +54,6 @@ It covers:
 ✓ Markdown blogging  
 ✓ Syntax highlighting  
 ✓ Disqus commenting  
-✓ RSS feed and Sitemap.xml good to go  
 ✓ Google Analytics integration  
 ✓ SVG social icons for your footer  
 ✓ Speed - only 3 http requests, including your avatar  
@@ -75,7 +76,7 @@ If you'd like me to let you know when I release a new theme, just [drop me your 
 
 ## Credits
 
-- [Jekyll](https://github.com/jekyll/jekyll)! Thanks to it's creators, contributors and maintainers.
-- [SVG icons](https://github.com/neilorangepeel/Free-Social-Icons) are by Neil Orange Peel, the they're beautiful. 
-- [Joel Glovier](http://joelglovier.com/writing/) for some of his great Jekyll articles—I used feed.xml and sitemap.xml
+- [Jekyll](https://github.com/jekyll/jekyll) - Thanks to it's creators, contributors and maintainers.
+- [SVG icons](https://github.com/neilorangepeel/Free-Social-Icons) - Thanks, Neil Orange Peel, the they're beautiful. 
+- [Joel Glovier](http://joelglovier.com/writing/) - Great Jekyll articles. I used Joel's feed.xml and sitemap.xml in this repository.
 - Code/Design reviews, thanks to X, Y, Z.
