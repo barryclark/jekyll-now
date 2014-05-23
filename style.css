@@ -408,7 +408,7 @@ img {
 
 .masthead {
   padding: 20px 0;
-  border-bottom: #777777 dotted 1px; }
+  border-bottom: 1px solid #eeeeee; }
   @media screen and (max-width: 520px) {
     .masthead {
       text-align: center; } }
@@ -449,7 +449,7 @@ img {
   font-size: 16px;
   margin: 0;
   margin-top: -5px;
-  color: #333333; }
+  color: #777777; }
   @media screen and (max-width: 520px) {
     .site-description {
       float: none;
