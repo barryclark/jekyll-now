@@ -79,4 +79,4 @@ If you'd like me to let you know when I release a new theme, just [drop me your 
 - [Jekyll](https://github.com/jekyll/jekyll) - Thanks to it's creators, contributors and maintainers.
 - [SVG icons](https://github.com/neilorangepeel/Free-Social-Icons) - Thanks, Neil Orange Peel, the they're beautiful. 
 - [Joel Glovier](http://joelglovier.com/writing/) - Great Jekyll articles. I used Joel's feed.xml and sitemap.xml in this repository.
-- Code/Design reviews, thanks to [David Furnes](https://github.com/dfurnes), [Jon Uy](https://github.com/jonuy),
+- Design & Code reviews - Thanks to [David Furnes](https://github.com/dfurnes), [Jon Uy](https://github.com/jonuy),
