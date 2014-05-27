@@ -1,6 +1,6 @@
 # Jekyll Now
 
-Jekyll Now makes it easier to create your Jekyll blog, by eliminating a lot of the up front setup (particularly the frustrating bits!).
+Jekyll Now makes it easier to create your Jekyll blog, by eliminating a lot of the up front setup.
 
 - No need to touch the command line
 - No need to install/configure ruby, rvm/rbenv, ruby gems (my favorite part!)
@@ -8,6 +8,8 @@ Jekyll Now makes it easier to create your Jekyll blog, by eliminating a lot of t
 - No cleanup, you can simply delete your repository if you don't like it
 
 In just a couple of minutes you'll be set up with a blog like this one - [**Theme Demo**](http://jekyllnow.com)
+
+Spend less time installing dependancies and more time making your Jekyll blog look awesome!
 
 ## Quick Start
 
