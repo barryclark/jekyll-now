@@ -260,6 +260,11 @@ nav {
   border-bottom: 1px solid $lighterGray;
 }
 
+.posts > .post:last-child {
+  padding-bottom: 1em;
+  border-bottom: none;
+}
+
 .post { 
   blockquote {
     border-left: 2px solid $gray;
