@@ -496,9 +496,9 @@ nav {
   padding-bottom: 1em;
   border-bottom: none; }
 
-.post h1 {
+.post h1 a {
   cursor: pointer; }
-  .post h1:hover, .post h1:active {
+  .post h1 a:hover, .post h1 a:active {
     color: #4183c4;
     text-decoration: none; }
 .post blockquote {

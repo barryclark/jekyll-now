@@ -266,7 +266,7 @@ nav {
 }
 
 .post { 
-  h1 {
+  h1 a {
     cursor: pointer;
     &:hover, &:active {
       color: $blue;
