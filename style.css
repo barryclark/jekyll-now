@@ -492,6 +492,10 @@ nav {
   padding-bottom: 2em;
   border-bottom: 1px solid #eeeeee; }
 
+.posts > .post:last-child {
+  padding-bottom: 1em;
+  border-bottom: none; }
+
 .post blockquote {
   border-left: 2px solid #666666;
   font-size: 22px;
