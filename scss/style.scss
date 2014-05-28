@@ -266,6 +266,14 @@ nav {
 }
 
 .post { 
+  h1 {
+    cursor: pointer;
+    &:hover, &:active {
+      color: $blue;
+      text-decoration: none;
+    }
+  }
+
   blockquote {
     border-left: 2px solid $gray;
     font-size: 22px;
