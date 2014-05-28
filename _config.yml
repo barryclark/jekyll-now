@@ -12,8 +12,8 @@ description: Web Developer from Somewhere
 # To use your Gravatar: (the one that GitHub uses for your profile pic)
 #   1. Go to https://github.com/YOURUSERNAME/
 #   2. Right click and Copy Image URL on your profile pic,
-#   3. Take the first long ID from the URL and paste it in place of mine below
-avatar: http://www.gravatar.com/avatar/36b4f56a7fa40d3c06e5afc4ed0b82b5?s=200
+#   3. Take the first long ID from the URL and paste it in place of Jekyll's below
+avatar: http://www.gravatar.com/avatar/3083652?s=200
 
 #
 # Flags below are optional
