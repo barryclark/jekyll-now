@@ -334,6 +334,9 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.7;
   margin: 1em 0 15px;
   padding: 0; }
+  @media screen and (max-width: 520px) {
+    h1, h2, h3, h4, h5, h6 {
+      line-height: 1.4; } }
 
 h1 {
   font-weight: 400;
