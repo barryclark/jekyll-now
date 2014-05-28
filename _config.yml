@@ -2,18 +2,14 @@
 # This file contains configuration flags to customize your site
 #
 
-# The name of your site (displayed in the header)
+# Name of your site (displayed in the header)
 name: Your Name
 
-# A short bio or description (displayed in the header)
+# Short bio or description (displayed in the header)
 description: Web Developer from Somewhere
 
-# A URL pointing to your avatar or profile pic
-# To use your Gravatar: (the one that GitHub uses for your profile pic)
-#   1. Go to https://github.com/YOURUSERNAME/
-#   2. Right click and Copy Image URL on your profile pic,
-#   3. Take the first long ID from the URL and paste it in place of Jekyll's below
-avatar: http://www.gravatar.com/avatar/3083652?s=200
+# URL of your avatar or profile pic (you could use your GitHub profile pic)
+avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
 
 #
 # Flags below are optional
