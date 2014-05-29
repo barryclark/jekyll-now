@@ -9,7 +9,7 @@
 - You don't need to install runtime dependancies like markdown processors, Pygments, etc
 - It's easy to try out, you can just delete your forked repository if you don't like it
 
-In just a couple of minutes you'll be set up with a minimal, responsive blog ([**Theme Demo**](http://jekyllnow.com)). Spend less time getting set up and more time making your blog look awesome!
+In a few minutes you'll be set up with a minimal, responsive blog ([**Theme Demo**](http://jekyllnow.com)) and can spend more time making your blog awesome!
 
 ## Quick Start
 
