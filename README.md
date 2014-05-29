@@ -31,7 +31,7 @@ You can easily turn on Google Analytics tracking, Disqus commenting and social i
   
 ### Step 3) Publish your first blog post
 
-Navigate to the posts folder in the root of this repository and edit `/_posts/2014-3-3-Hello-World.md` to publish your first blog post. This [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) might come in handy.
+Edit `/_posts/2014-3-3-Hello-World.md` to publish your first blog post. This [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) might come in handy.
 
 ![First Post](/images/first-post.png "First Post")
 
