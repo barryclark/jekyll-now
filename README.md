@@ -1,15 +1,15 @@
 # Jekyll Now
 
-Jekyll Now makes it easier to create your Jekyll blog, by eliminating a lot of the up front setup.
+**Jekyll** is static site generator that's perfect for GitHub hosted blogs ([Jekyll Repository](https://github.com/jekyll/jekyll))
 
-- No need to touch the command line
-- No need to install/configure ruby, rvm/rbenv, ruby gems (my favorite part!)
-- No need to install runtime dependancies like markdown processors, Pygments, etc
-- No cleanup, you can simply delete your repository if you don't like it
+**Jekyll Now** makes it easier to create your Jekyll blog, by eliminating a lot of the up front setup.
 
-In just a couple of minutes you'll be set up with a blog like this one - [**Theme Demo**](http://jekyllnow.com)
+- You don't need to touch the command line
+- You don't need to install/configure ruby, rvm/rbenv, ruby gems :relaxed:
+- You don't need to install runtime dependancies like markdown processors, Pygments, etc
+- Easy to delete, you can just delete your forked repository if you don't like it
 
-Spend less time installing dependancies and more time making your Jekyll blog look awesome!
+In just a couple of minutes you'll be set up with a minimal, responsive blog ([**Theme Demo**](http://jekyllnow.com)). Spend less time getting set up and more time making your blog look awesome!
 
 ## Quick Start
 
@@ -32,11 +32,11 @@ You can easily turn on Google Analytics tracking, Disqus commenting and social i
 
 ### Step 3) Publish your first blog post
 
-Edit /_posts/2014-3-3-Hello-World.md to publish your first blog post. Need a markdown primer? [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) is great. 
+Edit `/_posts/2014-3-3-Hello-World.md` to publish your first blog post. [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) might come in handy.
 
 ![First Post](/images/first-post.jpg "First Post")
 
-To add additional posts you can hit the + icon in /_posts/ to create new content. Just make sure to include the [front-matter](http://jekyllrb.com/docs/frontmatter/) block at the top of each new blog post and make sure the post's filename is in this format: year-month-day-title.md
+To add additional posts you can hit the + icon in `/_posts/` to create new content. Just make sure to include the [front-matter](http://jekyllrb.com/docs/frontmatter/) block at the top of each new blog post and make sure the post's filename is in this format: year-month-day-title.md
 
 
 ## Moar!
