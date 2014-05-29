@@ -17,7 +17,7 @@ Spend less time installing dependancies and more time making your Jekyll blog lo
 
 Fork this repo, then rename the repository to YourGitHubUsername.github.io. 
 
-Your Jekyll blog can then immediately be viewed at that URL - <http://YourGitHubUsername.github.io> (note: it can occasionally take up to 10 minutes to appear :coffee:)
+Your Jekyll blog will then be live at that URL: <http://YourGitHubUsername.github.io> (it's generally live immediately, but can occasionally take up to 10 minutes)
 
 ![Step 1](/images/step1.gif "Step 1")
 
