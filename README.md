@@ -7,7 +7,7 @@
 - You don't need to touch the command line
 - You don't need to install/configure ruby, rvm/rbenv, ruby gems :relaxed:
 - You don't need to install runtime dependancies like markdown processors, Pygments, etc
-- Easy to delete, you can just delete your forked repository if you don't like it
+- It's easy to try out, you can just delete your forked repository if you don't like it
 
 In just a couple of minutes you'll be set up with a minimal, responsive blog ([**Theme Demo**](http://jekyllnow.com)). Spend less time getting set up and more time making your blog look awesome!
 
