@@ -27,14 +27,13 @@ Enter your site name, description, avatar and many other options by editing the 
 
 You can easily turn on Google Analytics tracking, Disqus commenting and social icons here too!
 
-![_config.yml](/images/config.jpg "_config.yml")
+![_config.yml](/images/config.png "_config.yml")
   
-
 ### Step 3) Publish your first blog post
 
 Navigate to the posts folder in the root of this repository and edit `/_posts/2014-3-3-Hello-World.md` to publish your first blog post. This [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) might come in handy.
 
-![First Post](/images/first-post.jpg "First Post")
+![First Post](/images/first-post.png "First Post")
 
 To add additional posts you can hit the + icon in `/_posts/` to create new content. Just make sure to include the [front-matter](http://jekyllrb.com/docs/frontmatter/) block at the top of each new blog post and make sure the post's filename is in this format: year-month-day-title.md
 
