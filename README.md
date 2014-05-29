@@ -15,10 +15,11 @@ Spend less time installing dependancies and more time making your Jekyll blog lo
 
 ### Step 1) Fork Jekyll Now to your User Repository
 
-Fork this repo, then rename the repository to yourgithubusername.github.io. Your Jekyll blog can then immediately be viewed at that URL.
+Fork this repo, then rename the repository to YourGitHubUsername.github.io. 
+
+Your Jekyll blog can then immediately be viewed at that URL - <http://YourGitHubUsername.github.io> (note: it can occasionally take up to 10 minutes to appear :coffee:)
 
 ![Step 1](/images/step1.gif "Step 1")
-  
 
 ### Step 2) Customize your site
 
