@@ -9,7 +9,7 @@
 - You don't need to install runtime dependancies like markdown processors, Pygments, etc
 - It's easy to try out, you can just delete your forked repository if you don't like it
 
-In a few minutes you'll be set up with a minimal, responsive blog ([**Theme Demo**](http://jekyllnow.com)) and can spend more time making your blog awesome!
+In a few minutes you'll be set up with a minimal, responsive blog ([**Theme Demo**](http://jekyllnow.com)) giving you more time to spend on making your blog awesome!
 
 ## Quick Start
 
@@ -32,7 +32,7 @@ You can easily turn on Google Analytics tracking, Disqus commenting and social i
 
 ### Step 3) Publish your first blog post
 
-Edit `/_posts/2014-3-3-Hello-World.md` to publish your first blog post. [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) might come in handy.
+Navigate to the posts folder in the root of this repository and edit `/_posts/2014-3-3-Hello-World.md` to publish your first blog post. This [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) might come in handy.
 
 ![First Post](/images/first-post.jpg "First Post")
 
@@ -41,12 +41,15 @@ To add additional posts you can hit the + icon in `/_posts/` to create new conte
 
 ## Moar!
 
-I've created a more detailed walkthrough of [Getting Started With Jekyll](#), check it out if you'd like a more detailed walkthrough and some background on Jekyll. :metal:
+I've created a more detailed walkthrough of [**Getting Started With Jekyll**](#), check it out if you'd like a more detailed walkthrough and some background on Jekyll. :metal:
 
 It covers:
 
-- a
-- b
+- A more detailed walkthrough of setting up your Jekyll blog
+- Common issues that you might encounter while using Jekyll
+- Importing from Wordpress, using your own domain name, and blogging in your favorite editor
+- Theming in Jekyll, with Liquid templating examples
+- A quick look at Jekyll 2.0’s new features, including Sass/Coffeescript support and Collections
 
 ## Jekyll Now Features
 
@@ -60,14 +63,13 @@ It covers:
 ✓ Google Analytics integration  
 ✓ SVG social icons for your footer  
 ✓ Speed - only 3 http requests, including your avatar  
-✓ [Emoji](http://www.emoji-cheat-sheet.com/) in blog posts! :sparkling_heart: :sparkling_heart: :sparkling_heart:  
+✓ Emoji in blog posts! :sparkling_heart: :sparkling_heart: :sparkling_heart:  
 
 ✘ No installing dependancies  
 ✘ No need to set up local development  
 ✘ No configuring plugins  
 ✘ No need to spend time on theming  
-✘ No setting up hosting  
-✘ More time to code other things! ... wait that's a ✓  
+✘ More time to code other things ... wait ✓!  
 
 ## Questions? Suggestions?
 
