@@ -20,18 +20,18 @@
   <body>
     <div class="wrapper-masthead">
       <div class="container">
-        <header class="masthead">
-          <a href="{{ site.baseurl }}/" class="avatar"><img src="{{ site.avatar }}" /></a>
-          <a href="{{ site.baseurl }}/" class="site-name">{{ site.name }}</a>
-          <br><br>
-          <p class="site-description">{{ site.description }}</p>
+        <header class="masthead clearfix">
+          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+          
+          <div class="site-info">
+            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+            <p class="site-description">{{ site.description }}</p>
+          </div>
           
           <nav>
             <a href="{{ site.baseurl }}/">Blog</a>
             <a href="{{ site.baseurl }}/about">About</a>
           </nav>
-
-          <div style="clear:both;"></div>
         </header>
       </div>
     </div>

@@ -127,6 +127,17 @@ img {
   background: $lighterGray;
 }
 
+// Nicolas Gallagher's micro clearfix hack
+// http://nicolasgallagher.com/micro-clearfix-hack/
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
 
 //
 // LAYOUT / SECTIONS
@@ -137,24 +148,19 @@ img {
 //
 
 .wrapper-masthead {
-  //background-color: #e8e8f2;
   margin-bottom: 40px;
 }
 
 .masthead {
   padding: 20px 0;
   border-bottom: 1px solid $lighterGray;
+  
   @include mobile {
     text-align: center;
   }
-
-  // @TODO: OMG this is so bad, I just can't
-  br {
-    visibility: none;
-  }
 }
 
-.avatar {
+.site-avatar {
   float: left;
   width: 70px;
   height: 70px;
@@ -171,66 +177,68 @@ img {
   }
 }
 
-.site-name {
+.site-info {
   float: left;
 
+  @include mobile {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.site-name {
+  margin: 0;
+  color: $darkGray;
+  text-decoration: none;
+  cursor: pointer;
   font-family: $helveticaNeue; 
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
-  @include mobile {
-    float: none;
-    display: block;
-  }
 
-  text-decoration: none;
-  cursor: pointer;
-  color: $darkGray;
-  &:hover, &:active {
-    text-decoration: none;
-    
+  a {
+    &:hover, &:active {
+      color: $blue;
+      text-decoration: none;
+    }
   }
 }
 
 .site-description {
-  float: left;
-  font-size: 16px;
-  margin: 0;
-  margin-top: -5px;
+  margin: -5px 0 0 0;
   color: #777;
-
+  font-size: 16px;
+  
   @include mobile {
-    float: none;
-    display: block;
     margin: 3px 0;
   }
 }
 
 nav {
   float: right;
-  margin-top: -25px; // @TODO - containers for nav and content blocks in header
-
+  margin-top: 23px; // @TODO: Vertically middle align
   font-family: $helveticaNeue; 
   font-size: 18px;
+  
   @include mobile {
     float: none;
-    display: block;
     margin-top: 15px;
+    display: block;
     font-size: 16px;
   }
 
-  // nav has it's own link highlighting
   a {
     margin-left: 25px;
+    color: $darkGray;
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
-    color: $darkGray;
 
     &:hover, &:active {
+      color: $darkGray;
       text-decoration: none;
       cursor: pointer;
-      color: $darkGray;
     }
 
     @include mobile {
@@ -239,21 +247,11 @@ nav {
   }
 }
 
-.logo, nav {
-  @include mobile {
-    float: none;
-    width: 100%;
-    text-align: center;
-  }
-}
+
 
 //
 // .main
 //
-
-.wrapper-posts {
-  
-}
 
 .posts > .post {
   padding-bottom: 2em;
@@ -275,19 +273,19 @@ nav {
   }
 
   blockquote {
-    border-left: 2px solid $gray;
-    font-size: 22px;
-    font-style: italic;
     margin: 1.8em .8em;
+    border-left: 2px solid $gray;
     padding: 0.1em 1em;
     color: $gray;
+    font-size: 22px;
+    font-style: italic;
   }
 }
 
 .wrapper-footer {
   margin-top: 50px;
-  background-color: #eee;
   border-top: 1px solid #ddd;
+  background-color: #eee;
 }
 
 footer {
