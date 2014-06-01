@@ -38,9 +38,10 @@ google_analytics:
 # Used for Sitemap.xml and your RSS feed
 url: 
 
-# If you're hosting your site at a Project repository on GitHub pages (http://yourusername.github.io/project)
+# If you're hosting your site at a Project repository on GitHub pages 
+# (http://yourusername.github.io/repository-name/)
 # and NOT your User repository (http://yourusername.github.io)
-# then add in the baseurl here, like this: "/project"
+# then add in the baseurl here, like this: "/repository-name/"
 baseurl: ""
 
 #
