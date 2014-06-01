@@ -241,7 +241,8 @@ footer {
 
 code {
   font-family: 'Courier', monospace;
-  font-size: 14px; }
+  font-size: 14px;
+  color: #999999; }
 
 .highlight .c, .highlight .c1 {
   color: #586e75; }
