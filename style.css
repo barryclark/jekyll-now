@@ -64,7 +64,8 @@ h1 {
     color: inherit; }
 
 h2 {
-  font-size: 22px; }
+  font-weight: 400;
+  font-size: 24px; }
 
 h3 {
   font-size: 18px;
