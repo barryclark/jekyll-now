@@ -466,7 +466,7 @@ nav {
   @media screen and (max-width: 520px) {
     nav {
       float: none;
-      margin-top: 15px;
+      margin-top: 9px;
       display: block;
       font-size: 16px; } }
   nav a {
@@ -477,7 +477,8 @@ nav {
     letter-spacing: 1px; }
     @media screen and (max-width: 520px) {
       nav a {
-        margin: 0 10px; } }
+        margin: 0 10px;
+        color: #4183c4; } }
 
 .posts > .post {
   padding-bottom: 2em;
