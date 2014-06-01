@@ -360,11 +360,11 @@ p {
   margin: 15px 0; }
 
 a {
+  color: #4183c4;
   text-decoration: none;
-  cursor: pointer;
-  color: #4183c4; }
+  cursor: pointer; }
   a:hover, a:active {
-    text-decoration: underline; }
+    color: #4183c4; }
 
 ul, ol {
   margin: 15px 0;
@@ -444,15 +444,11 @@ img {
 .site-name {
   margin: 0;
   color: #333333;
-  text-decoration: none;
   cursor: pointer;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px; }
-  .site-name a:hover, .site-name a:active {
-    color: #4183c4;
-    text-decoration: none; }
 
 .site-description {
   margin: -5px 0 0 0;
@@ -479,10 +475,6 @@ nav {
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px; }
-    nav a:hover, nav a:active {
-      color: #333333;
-      text-decoration: none;
-      cursor: pointer; }
     @media screen and (max-width: 520px) {
       nav a {
         margin: 0 10px; } }
@@ -495,11 +487,6 @@ nav {
   padding-bottom: 1em;
   border-bottom: none; }
 
-.post h1 a {
-  cursor: pointer; }
-  .post h1 a:hover, .post h1 a:active {
-    color: #4183c4;
-    text-decoration: none; }
 .post blockquote {
   margin: 1.8em 0.8em;
   border-left: 2px solid #666666;

@@ -71,11 +71,11 @@ p {
 }
 
 a {
+  color: $blue;
   text-decoration: none;
 	cursor: pointer;
-  color: $blue;
   &:hover, &:active {
-    text-decoration: underline;
+    color: $blue;
   }
 }
 
@@ -190,19 +190,11 @@ img {
 .site-name {
   margin: 0;
   color: $darkGray;
-  text-decoration: none;
   cursor: pointer;
   font-family: $helveticaNeue; 
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
-
-  a {
-    &:hover, &:active {
-      color: $blue;
-      text-decoration: none;
-    }
-  }
 }
 
 .site-description {
@@ -234,13 +226,7 @@ nav {
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
-
-    &:hover, &:active {
-      color: $darkGray;
-      text-decoration: none;
-      cursor: pointer;
-    }
-
+    
     @include mobile {
       margin: 0 10px;
     }
@@ -264,14 +250,6 @@ nav {
 }
 
 .post { 
-  h1 a {
-    cursor: pointer;
-    &:hover, &:active {
-      color: $blue;
-      text-decoration: none;
-    }
-  }
-
   blockquote {
     margin: 1.8em .8em;
     border-left: 2px solid $gray;
