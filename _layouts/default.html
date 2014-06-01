@@ -21,14 +21,14 @@
     <div class="wrapper-masthead">
       <div class="container">
         <header class="masthead">
-          <a href="/" class="avatar"><img src="{{ site.avatar }}" /></a>
-          <a href="/" class="site-name">{{ site.name }}</a>
+          <a href="{{ site.baseurl }}/" class="avatar"><img src="{{ site.avatar }}" /></a>
+          <a href="{{ site.baseurl }}/" class="site-name">{{ site.name }}</a>
           <br><br>
           <p class="site-description">{{ site.description }}</p>
           
           <nav>
-            <a href="/">Blog</a>
-            <a href="/about">About</a>
+            <a href="{{ site.baseurl }}/">Blog</a>
+            <a href="{{ site.baseurl }}/about">About</a>
           </nav>
 
           <div style="clear:both;"></div>
@@ -49,7 +49,7 @@
           {% if site.footer-links.instagram %}<a href="http://instagram.com/{{ site.footer-links.instagram }}">{% include svg-icons/instagram.html %}</a>{% endif %}
           {% if site.footer-links.linkedin %}<a href="http://linkedin.com/in/{{ site.footer-links.linkedin }}">{% include svg-icons/linkedin.html %}</a>{% endif %}
           {% if site.footer-links.pinterest %}<a href="http://pinterest.com/{{ site.footer-links.pinterest }}">{% include svg-icons/pinterest.html %}</a>{% endif %}
-          {% if site.footer-links.rss %}<a href="/feed.xml">{% include svg-icons/rss.html %}</a>{% endif %}
+          {% if site.footer-links.rss %}<a href="{{ site.baseurl }}/feed.xml">{% include svg-icons/rss.html %}</a>{% endif %}
           {% if site.footer-links.twitter %}<a href="http://twitter.com/{{ site.footer-links.twitter }}">{% include svg-icons/twitter.html %}</a>{% endif %}
         </footer>
       </div>
