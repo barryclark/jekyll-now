@@ -197,7 +197,7 @@ img {
 
 .site-description {
   margin: -5px 0 0 0;
-  color: #777;
+  color: $gray;
   font-size: 16px;
   
   @include mobile {
@@ -260,7 +260,7 @@ nav {
 .wrapper-footer {
   margin-top: 50px;
   border-top: 1px solid #ddd;
-  background-color: #eee;
+  background-color: $lighterGray;
 }
 
 footer {
