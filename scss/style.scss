@@ -5,8 +5,6 @@
 
 @import "_reset";
 @import "_variables";
-@import "_highlights"; 
-// TODO - Tempted to move this to the end of the file, so that it shows up at the end of the .css. Or remove it entirely and find a better way to include highlighting. 
 
 /*/
 /* BASE RULES
@@ -269,3 +267,7 @@ footer {
   padding: 20px 0;
   text-align: center;
 }
+
+// Settled on moving the import of syntax highlighting to the bottom of the CSS
+// ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
+@import "_highlights";
