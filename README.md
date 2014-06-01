@@ -23,9 +23,12 @@ Your Jekyll blog will then be live at that URL: <http://YourGitHubUsername.githu
 
 ### Step 2) Customize your site
 
-Enter your site name, description, avatar and many other options by editing the _config.yml file. 
+Enter your site name, description, avatar and many other options by editing the _config.yml file. You can easily turn on Google Analytics tracking, Disqus commenting and social icons here too.
 
-You can easily turn on Google Analytics tracking, Disqus commenting and social icons here too!
+There are 2 different ways that you can make changes to your blog's files from here onwards. Feel free to pick whichever suits you best:
+
+1. Edit files within your new username.github.io repository in the browser at GitHub.com (shown below)
+2. Clone down your repository and make updates locally, then push them to your GitHub repository
 
 ![_config.yml](/images/config.png "_config.yml")
   
