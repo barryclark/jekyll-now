@@ -1,6 +1,16 @@
 # Site navigation links
 
-- title:
-  url:
-  excerpt:
-  image:
+- title: Articles
+  url: /articles/
+  excerpt: "A collection of thoughts, inspiration, mistakes, and other minutia."
+  image: 400x250.gif
+
+- title: Portfolio
+  url: /portfolio/
+  excerpt: "Things I've designed, developed, illustrated, whatever."
+  image: 400x250.gif
+
+- title: About
+  url: /about/
+  excerpt: "Just a little something to jump start your Jekyll site."
+  image: 400x250.gif

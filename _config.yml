@@ -1,10 +1,10 @@
 # Site wide configuration
 
-title:
-description:
-logo: # 120x120 px default image used for Twitter summary card
-teaser: # 400x250 px default teaser image used in image archive grid
-locale:
+title: Skinny Bones
+description: "A lightweight site starter for Jekyll"
+logo: 120x120.gif
+teaser: 400x250.gif
+locale: en_US
 url:
 
 # Jekyll configuration
@@ -22,11 +22,11 @@ gems:
 
 # Site owner
 owner:
-  name:
-  email:
-  twitter:
-  bio: 
-  avatar: bio-photo.jpg # 160x160 px image for author byline
+  name: Michael Rose
+  email: michael@mademistakes.com
+  twitter: mmistakes
+  bio: "Just another boring, tattooed, time traveling designer."
+  avatar: bio-photo.jpg
 disqus-shortname:
 
 
