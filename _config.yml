@@ -25,6 +25,9 @@ owner:
   name:
   email:
   twitter:
+  google:
+    ad-client: 
+    ad-slot: 
   bio: 
   avatar: bio-photo.jpg # 160x160 px image for author byline
 disqus-shortname:
