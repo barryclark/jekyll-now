@@ -1,0 +1,21 @@
+	{% if site.owner.twitter %}
+		<!-- Twitter Cards -->
+		<meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+		{% if page.excerpt %}<meta name="twitter:description" content="{{ page.excerpt | strip_html }}">{% endif %}
+		<meta name="twitter:site" content="@{{ site.owner.twitter }}">
+		<meta name="twitter:creator" content="@{{ site.owner.twitter }}">
+		{% if page.image.feature %}
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:image" content="{{ site.url }}/images/{{ page.image.feature }}">
+		{% else %}
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:image" content="{% if page.image.thumb %}{{ site.url }}/images/{{ page.image.thumb }}{% else %}{{ site.url }}/images/{{ site.logo }}{% endif %}">
+		{% endif %}
+	{% endif %}
+		<!-- Open Graph -->
+		<meta property="og:locale" content="{{ site.locale }}">
+		<meta property="og:type" content="article">
+		<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+		{% if page.excerpt %}<meta property="og:description" content="{{ page.excerpt | strip_html }}">{% endif %}
+		<meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}">
+		<meta property="og:site_name" content="{{ site.title }}">

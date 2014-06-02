@@ -1,0 +1,13 @@
+<div class="bullets">
+	{% for post in site.posts %}
+	<div class="bullet three-col-bullet">
+		<div class="bullet-icon">
+			<a href="{{ post.url }}"><img src="/images/{{ post.image.teaser }}" alt=""></a>
+		</div><!-- /.bullet-icon -->
+		<div class="bullet-content">
+			<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+			<p>{{ post.excerpt | remove: '<p>' | remove: '</p>'}}</p>
+		</div><!-- /.bullet-content -->
+	</div><!-- /.bullet -->
+	{% endfor %}
+</div><!-- /.bullets -->

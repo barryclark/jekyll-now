@@ -1,0 +1,13 @@
+---
+layout: {{ layout }}
+title: {{ title }}
+date: {{ date }}
+modified:
+excerpt:
+tags: []
+image:
+  feature:
+  teaser:
+  thumb:
+ads: false  
+---

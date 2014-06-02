@@ -1,0 +1,62 @@
+// GLOBAL
+// --------------------------------------------------
+
+.wrap {
+	@include outer-container;
+}
+
+.come-in {
+	@include transform(translateY(20px));
+	@include animation(pop 0.5s ease forwards);
+}
+
+.already-visible {
+	@include transform(translateY(0));
+	@include animation(none);
+}
+
+.hidden {
+	display: none;
+}
+
+
+// thumbnail image grid default
+.th-grid {
+  @include fill-parent;
+  @include clearfix;
+  margin: 0;
+  padding: 0;
+  li {
+    list-style: none;
+    @include span-columns(3);
+    @include omega(4n);
+    margin-bottom: flex-gutter($grid-columns);
+  }
+}
+// thumbnail image grid oversized
+.th-grid-full {
+  @include clearfix;
+  margin: 0;
+  padding: 0;
+  @include media($large) {
+    margin-right: -76.76824% // magic number ugh
+  }
+  li {
+    list-style: none;
+    margin-bottom: flex-gutter($grid-columns);
+    @include media($micro) {
+      @include span-columns(3);
+      @include omega(4n);
+    }
+    @include media($small) {
+      @include span-columns(3);
+      @include omega(4n);
+    }
+    @include media($medium) {
+      @include span-columns(1.5);
+      margin-right: 2.189246%; // magic number ugh
+      margin-bottom: 2.189246%; // magic number ugh
+      @include omega(8n);
+    }
+  }
+}

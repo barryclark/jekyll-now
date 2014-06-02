@@ -1,0 +1,14 @@
+<nav role="navigation" class="js-menu sliding-menu-content">
+	<ul class="menu-item">
+		{% for link in site.data.navigation %}<li>
+			{% if link.image %}<a href="{{ link.url }}"><img src="/images/{{ link.image }}" alt="teaser" class="teaser"></a>{% endif %}
+			<a href="{{ link.url }}" class="title">{{ link.title }}</a>
+			{% if link.excerpt %}<p class="excerpt">{{ link.excerpt }}</p>{% endif %}
+		</li>{% endfor %}
+	</ul>
+</nav>
+<button type="button" class="js-menu-trigger sliding-menu-button lines-button x2" role="button" aria-label="Toggle Navigation">
+	<span class="lines"></span>
+</button>
+
+<div class="js-menu-screen menu-screen"></div>

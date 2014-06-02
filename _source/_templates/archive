@@ -1,0 +1,12 @@
+---
+layout: archive
+title: {{ title }}
+date: {{ date }}
+modified:
+excerpt:
+tags: []
+image:
+  feature:
+  teaser:
+  thumb:
+---
