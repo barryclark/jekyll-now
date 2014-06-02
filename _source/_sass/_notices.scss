@@ -9,6 +9,10 @@
 	color: $white;
 	background-color: $notice-color;
 	border-radius: $border-radius;
+	a {
+		color: $white;
+		border-bottom: 1px dotted $white !important;
+	}
 }
 .notice {
 	@include notice($primary-color);
@@ -16,6 +20,10 @@
 .notice-inverse {
 	@include notice($white);
 	color: $text-color;
+	a {
+		color: $text-color;
+		border-bottom: 1px dotted $text-color !important;
+	}
 }
 .notice-info {
 	@include notice($info-color);
