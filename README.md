@@ -4,6 +4,8 @@ Just a little something I'm using to jump start a site refresh. Super alpha and 
 
 Keep in mind, this is **not a theme** and will need styling and additional markup to really sing.
 
+Requires Jekyll 2.0.0. Doesn't currently work with GitHub Pages because they only support Jekyll 1.5.0
+
 ---
 
 ## To Do
