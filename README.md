@@ -15,9 +15,9 @@ In a few minutes you'll be set up with a minimal, responsive blog ([**Theme Demo
 
 ### Step 1) Fork Jekyll Now to your User Repository
 
-Fork this repo, then rename the repository to YourGitHubUsername.github.io. 
+Fork this repo, then rename the repository to yourgithubusername.github.io. 
 
-Your Jekyll blog will then be live at that URL: <http://YourGitHubUsername.github.io> (it's generally live immediately, but can occasionally take up to 10 minutes)
+Your Jekyll blog will then be live at that URL: <http://yourgithubusername.github.io> (it's generally live immediately, but can occasionally take up to 10 minutes)
 
 ![Step 1](/images/step1.gif "Step 1")
 
@@ -64,7 +64,7 @@ It covers:
 ✓ Disqus commenting  
 ✓ Google Analytics integration  
 ✓ SVG social icons for your footer  
-✓ Speed - only 3 http requests, including your avatar  
+✓ 3 http requests, including your avatar  
 ✓ Emoji in blog posts! :sparkling_heart: :sparkling_heart: :sparkling_heart:  
 
 ✘ No installing dependancies  
