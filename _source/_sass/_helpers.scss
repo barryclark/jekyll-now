@@ -47,6 +47,15 @@
     @include omega(4n);
     margin-bottom: flex-gutter($grid-columns);
   }
+  a {
+    img {
+      // Image hover animation
+      &:hover {
+        @include animation(pop .3s 0 linear);
+        box-shadow: 0 0 10px rgba($black, .20);
+      }
+    }
+  }
 }
 // thumbnail image grid oversized
 .th-grid-full {
@@ -72,6 +81,15 @@
       margin-right: 2.189246%; // magic number ugh
       margin-bottom: 2.189246%; // magic number ugh
       @include omega(8n);
+    }
+  }
+  a {
+    img {
+      // Image hover animation
+      &:hover {
+        @include animation(pop .3s 0 linear);
+        box-shadow: 0 0 10px rgba($black, .20);
+      }
     }
   }
 }
