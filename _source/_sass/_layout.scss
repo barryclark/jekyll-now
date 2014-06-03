@@ -255,11 +255,11 @@
 	min-height: 1px;
 	ul {
 		margin-top: $gutter;
-		@include font-size(12);
 		border: 1px solid $border-color;
 		border-radius: $border-radius;
 	}
 	li {
+		@include font-size(12,no,16);
 		border-bottom: 1px solid $border-color;
 	}
 	font-family: $alt-font;

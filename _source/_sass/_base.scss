@@ -11,6 +11,10 @@ p {
 	@include font-size(18,yes,28);
 }
 
+li {
+	@include font-size(16,12,24);
+}
+
 // Headings
 h1, h2, h3, h4, h5, h6 {
 	font-family: $heading-font;
