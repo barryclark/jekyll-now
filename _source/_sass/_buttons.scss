@@ -3,7 +3,7 @@
 
 // call to action
 .btn {
-	display: block;
+	display: inline-block;
 	padding: 8px 20px;
 	@include font-size(14);
 	font-family: $alt-font;
@@ -81,7 +81,7 @@
 }
 .btn-social {
 	$social: 
-        (facebook, $facebook-color),
+    (facebook, $facebook-color),
 		(flickr, $flickr-color),
 		(foursquare, $foursquare-color),
 		(google-plus, $google-plus-color),

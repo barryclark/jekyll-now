@@ -44,9 +44,6 @@ ins {
 // Links
 a {
 	color: $link-color;
-	&:visited {
-		color: lighten($link-color, 20);
-	}
 	&:hover {
 		color: darken($link-color, 20);
 	}
