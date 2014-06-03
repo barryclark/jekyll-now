@@ -1,7 +1,7 @@
 // BADGES
 // --------------------------------------------------
 
-.badges {
+.badge {
 	$badge-background: $primary-color;
 	$badge-dark-color: $black;
 	$badge-danger-color: $danger-color;
@@ -10,45 +10,39 @@
 	$badge-success-color: $success-color;
 	$badge-font-color: #fff;
 
-	display: block;
-	margin-bottom: 0px + $doc-line-height;
-	margin-bottom: 0rem + ($doc-line-height / $doc-font-size);
+	display: inline-block;
+	background: $badge-background;
+	border-radius: 2em;
+	color: $badge-font-color;
+	font-family: $alt-font;
+	@include font-size(12,no);
+	font-weight: 600;
+	line-height: 1;
+	padding: .25em 1em;
+	text-align: center;
 
-	.badge {
-		display: inline-block;
-		background: $badge-background;
-		border-radius: 2em;
-		color: $badge-font-color;
-		font-family: $alt-font;
-		@include font-size(12,no);
-		font-weight: 600;
-		line-height: 1;
-		padding: .25em 1em;
-		text-align: center;
+	&.inverse {
+		background: $white;
+		color: $text-color;
+	}
 
-		&.inverse {
-			background: $white;
-			color: $text-color;
-		}
+	&.info {
+		background: $badge-info-color;
+		color: $white;
+	}
 
-		&.info {
-			background: $badge-info-color;
-			color: $white;
-		}
+	&.danger {
+		background: $badge-danger-color;
+		color: $white;
+	}
 
-		&.danger {
-			background: $badge-danger-color;
-			color: $white;
-		}
+	&.warning {
+		background: $badge-warning-color;
+		color: darken($badge-warning-color, 60);
+	}
 
-		&.warning {
-			background: $badge-warning-color;
-			color: darken($badge-warning-color, 60);
-		}
-
-		&.success {
-			background: $badge-success-color;
-			color: darken($badge-success-color, 60);
-		}
+	&.success {
+		background: $badge-success-color;
+		color: darken($badge-success-color, 60);
 	}
 }
