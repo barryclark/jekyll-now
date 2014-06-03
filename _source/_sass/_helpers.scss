@@ -34,6 +34,16 @@
   text-align: center;
 }
 
+.image-right {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  @include media($medium) {
+    float: right;
+    margin-left: $gutter;
+  }
+}
+
 
 // thumbnail image grid default
 .th-grid {
