@@ -147,49 +147,53 @@
 	.page-title {
 		@include fill-parent;
 	}
-	.page-content {
-		@include media($medium) {
-			@include row($direction: RTL);
-			//@include span-columns(7 of 9);
-		}
-		@include media($large) {
-			@include span-columns(7 of 9);
-		}
-		// larger font for intro paragraph
-		> p {
-			&:first-child {
-				@include font-size(20,yes,30);
+	@at-root {
+		.page-content {
+			@include media($medium) {
+				@include row($direction: RTL);
+				//@include span-columns(7 of 9);
 			}
-		}
-		// cleaner underlines for links
-		a { text-decoration: none; }
-		p > a,
-		li > a {
-			border-bottom: 1px dotted lighten($link-color, 50);
-			&:hover {
-				border-bottom-style: solid;
+			@include media($large) {
+				@include span-columns(7 of 9);
 			}
-		}
-		p > a.reversefootnote {
-			border-bottom-width: 0;
-		}
-		.page-footer,
-		.pagination {
-			@include fill-parent;
-		}
-		.page-meta {
-			p{
-				@include font-size(14,no);
-				font-family: $alt-font;
-				color: lighten($black,60);
+			// larger font for intro paragraph
+			> p {
+				&:first-child {
+					@include font-size(20,yes,30);
+				}
+			}
+			// cleaner underlines for links
+			a { text-decoration: none; }
+			p > a,
+			li > a {
+				border-bottom: 1px dotted lighten($link-color, 50);
+				&:hover {
+					border-bottom-style: solid;
+				}
+			}
+			p > a.reversefootnote {
+				border-bottom-width: 0;
+			}
+			.page-footer,
+			.pagination {
+				@include fill-parent;
+			}
+			.page-meta {
+				p{
+					@include font-size(14,no);
+					font-family: $alt-font;
+					color: lighten($black,60);
+				}
 			}
 		}
 	}
-	.archive-wrap {
-		@include fill-parent;
-		.page-content {
-			@include reset-all;
+	@at-root {
+		.archive-wrap {
 			@include fill-parent;
+			.page-content {
+				@include reset-all;
+				@include fill-parent;
+			}
 		}
 	}
 	.ads {

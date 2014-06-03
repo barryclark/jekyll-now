@@ -11,7 +11,7 @@
 	border-radius: $border-radius;
 	a {
 		color: $white;
-		border-bottom: 1px dotted $white !important;
+		border-bottom: 1px dotted $white;
 	}
 }
 .notice {
@@ -22,7 +22,6 @@
 	color: $text-color;
 	a {
 		color: $text-color;
-		border-bottom: 1px dotted $text-color !important;
 	}
 }
 .notice-info {
