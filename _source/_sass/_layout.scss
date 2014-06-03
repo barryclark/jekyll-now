@@ -351,16 +351,6 @@
 	margin-top: 0;
 	@include font-size(16);
 }
-.share-this {
-	@include clearfix;
-	.btn {
-		float: left;
-		margin-right: 10px;
-		&:last-child {
-			margin-right: 0;
-		}
-	}
-}
 
 
 // SCROLL ARROW CUE
