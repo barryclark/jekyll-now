@@ -13,9 +13,6 @@
 	border: 0 !important;
 	border-radius: 10 * $border-radius;
 	@include transition(background 0.2s, border 0.2s);
-	&:visited {
-		color: $white;
-	}
 	&:hover {
 		color: $white;
 		background-color: lighten($primary-color, 10);
@@ -29,7 +26,8 @@
 	@extend .btn;
 	background-color: $white;
 	color: $text-color;
-	&:visited {
+	&:visited,
+	&:active {
 		color: $text-color;
 	}
 	&:hover {
@@ -96,25 +94,29 @@
 		(vimeo, $vimeo-color),
 		(youtube, $youtube-color);
 	@extend .btn-inverse;
-	color: lighten($black,60);
+	color: $text-color !important;
+	&:visited,
+	&:active {
+		color: $text-color;
+	}
 	border: 1px solid $border-color !important;
 	@each $socialnetwork, $color in $social {
 		i.fa-#{$socialnetwork} {
-		    color: $color;
-	    }    
+	    color: $color;
+    }    
 	}
 	&:hover {
-		color: $white;
+		color: $white !important;
 	}
 	@each $socialnetwork, $color in $social {
 		&.#{$socialnetwork}:hover {
 		    background: $color;
 		    border-color: $color;
 		    @each $socialnetwork, $color in $social {
-				i.fa-#{$socialnetwork} {
+					i.fa-#{$socialnetwork} {
 				    color: $white;
 			    }    
-			}
+				}
 	    }    
 	}
 }
