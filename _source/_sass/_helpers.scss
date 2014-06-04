@@ -75,6 +75,11 @@
   @include media($large) {
     margin-right: -76.76824% // magic number ugh
   }
+  @at-root {
+    .archive-wrap & {
+      margin-right: 0;
+    }
+  } 
   li {
     list-style: none;
     margin-bottom: flex-gutter($grid-columns);
