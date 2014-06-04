@@ -73,13 +73,13 @@
   margin: 0;
   padding: 0;
   @include media($large) {
-    margin-right: -76.76824% // magic number ugh
+    margin-right: -29em; // magic number ugh
   }
   @at-root {
     .archive-wrap & {
       margin-right: 0;
     }
-  } 
+  }  
   li {
     list-style: none;
     margin-bottom: flex-gutter($grid-columns);
@@ -91,11 +91,12 @@
       @include span-columns(3);
       @include omega(4n);
     }
-    @include media($medium) {
-      @include span-columns(1.5);
-      margin-right: 2.189246%; // magic number ugh
-      margin-bottom: 2.189246%; // magic number ugh
-      @include omega(8n);
+    @include media($large) {
+      float: left;
+      width: 6.575em;
+      margin-right: .25em; // magic number ugh
+      margin-bottom: .25em; // magic number ugh
+      @include omega(10n);
     }
   }
   a {
