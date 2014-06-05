@@ -2,7 +2,7 @@
 layout: none
 limit: 25
 ---
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 {% if site.url %}
     {% assign base = site.url %}
