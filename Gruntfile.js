@@ -103,8 +103,7 @@ module.exports = function(grunt) {
           banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - ' + '<%= grunt.template.today("yyyy-mm-dd") %> */',
           compress: true,
           beautify: false,
-          mangle: false,
-          sourceMap: true
+          mangle: false
         },
         files: {
           '_source/js/main.js': [
