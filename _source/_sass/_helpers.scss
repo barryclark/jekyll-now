@@ -2,21 +2,22 @@
 // --------------------------------------------------
 
 .wrap {
-	@include outer-container;
+  @include outer-container;
 }
 
 .come-in {
-	@include transform(translateY(20px));
-	@include animation(pop 0.5s ease forwards);
+  @include transform(translateY(20px));
+  @include animation(pop 0.5s ease forwards);
 }
 
 .already-visible {
-	@include transform(translateY(0));
-	@include animation(none);
+  @include transform(translateY(0));
+  @include animation(none);
 }
 
-.hidden {
-	display: none;
+.hidden,
+.load {
+  display: none;
 }
 
 .inline-btn {
@@ -27,6 +28,13 @@
     &:last-child {
       margin-right: 0;
     }
+  }
+}
+
+// shorten length to improve readability
+@include media($medium) {
+  .shorten {
+    width: percentage(8/12);
   }
 }
 
@@ -87,7 +95,7 @@
       @include span-columns(3);
       @include omega(4n);
     }
-    @include media($small) {
+    @media screen and (min-width: em(480)) and (max-width: em(999)) {
       @include span-columns(3);
       @include omega(4n);
     }
@@ -96,7 +104,7 @@
       width: 6.575em;
       margin-right: .25em; // magic number ugh
       margin-bottom: .25em; // magic number ugh
-      @include omega(10n);
+      @include omega(9n);
     }
   }
   a {
