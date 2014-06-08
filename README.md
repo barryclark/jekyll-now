@@ -4,7 +4,9 @@ Just a little something I'm using to jump start a site refresh. Super alpha and 
 
 Keep in mind, this is **not a theme** and will need styling and additional markup to really sing.
 
-Requires Jekyll 2.0.0. Doesn't currently work with GitHub Pages because they only support Jekyll 1.5.0
+Requires Jekyll 2+. Doesn't currently work with GitHub Pages because they only support Jekyll 1.5.0
+
+Full documentation coming eventually, in the meantime the import parts are below. I used this starter with some minor CSS changes to build my website [mademistakes.com](http://mademistakes.com), so check that out if you want to see what can be done and how I did it.
 
 ---
 
