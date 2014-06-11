@@ -221,6 +221,8 @@ nav {
   color: #666666;
   font-size: 22px;
   font-style: italic; }
+.post .comments {
+  margin-top: 10px; }
 
 .wrapper-footer {
   margin-top: 50px;
