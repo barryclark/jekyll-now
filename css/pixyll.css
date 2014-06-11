@@ -1,0 +1,85 @@
+@charset "UTF-8";
+/*
+
+  Pixyll
+
+  A simple, beautiful theme for Jekyll that emphasizes content rather than
+  aesthetic fluff.
+
+  Best served with BASSCSS (http://jxnblk.github.io/basscss)
+
+  Crafted with <3 by John Otander (@4lpine) - ©2014 John Otander
+  MIT License http://opensource.org/licenses/MIT
+
+*/
+
+.wrap .measure {
+  margin: 0 auto;
+}
+
+.meta {
+  width: auto;
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  padding: 0.5rem;
+  border-radius: .15rem;
+  border: 2px solid #7a7a7a;
+  color: #7a7a7a;
+}
+
+p {
+  font-family: 'Merriweather', Georgia, 'Times New Roman', serif;
+}
+
+code {
+  color: #7a7a7a;
+}
+
+pre {
+  padding: 1rem;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+}
+
+@media screen and (min-width: 48em) {
+  .h1,
+  h1 {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+
+  .h2,
+  h2 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .h3,
+  h3 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .p,
+  p {
+    font-size: 1.25rem;
+    line-height: 2rem;
+  }
+
+  .small {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 64em) {
+  .h1,
+  h1 {
+    font-size: 6rem;
+    line-height: 8rem;
+  }
+
+  .h2,
+  h2 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+}

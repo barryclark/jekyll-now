@@ -1,6 +1,7 @@
 # Site settings
 title: Pixyll for Jekyll
 email: johnotander@gmail.com
+author: John Otander
 description: "A simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff."
 baseurl: ""
 url: "http://pixyll.com"
