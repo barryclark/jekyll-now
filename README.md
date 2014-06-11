@@ -15,17 +15,19 @@ In a few minutes you'll be set up with a minimal, responsive blog ([**Theme Demo
 
 ### Step 1) Fork Jekyll Now to your User Repository
 
-Fork this repo, then rename the repository to yourgithubusername.github.io. 
+Fork this repo, then rename the repository to yourgithubusername.github.io.
 
-Your Jekyll blog will then be live at that URL: <http://yourgithubusername.github.io> (it's generally live immediately, but can occasionally take up to 10 minutes)
+Your Jekyll blog will often be viewable immediately at <http://yourgithubusername.github.io> (if it's not, you can force it to build by completing step 2)
 
 ![Step 1](/images/step1.gif "Step 1")
 
-### Step 2) Customize your site
+### Step 2) Customize and view your site
 
 Enter your site name, description, avatar and many other options by editing the _config.yml file. You can easily turn on Google Analytics tracking, Disqus commenting and social icons here too.
 
-> There are 2 different ways that you can make changes to your blog's files from here onwards. Feel free to pick whichever suits you best:
+Making a change to _config.yml (or any file in your repository) will force GitHub Pages to rebuild your site. After making a change your updates will be viewable a few seconds later at <http://yourgithubusername.github.io>
+
+> There are 2 different ways that you can make changes to your blog's files:
 
 > 1. Edit files within your new username.github.io repository in the browser at GitHub.com (shown below)
 > 2. Clone down your repository and make updates locally, then push them to your GitHub repository
