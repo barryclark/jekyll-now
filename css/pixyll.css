@@ -22,8 +22,9 @@ body {
   font-weight: 600;
 }
 
-a:hover .post-link,
-a:hover {
+.posts .post a:hover .post-meta,
+.posts .post a:hover .post-title,
+.posts .post a:hover .post-summary {
   opacity: 0.88;
 }
 
@@ -43,7 +44,7 @@ a:hover {
   padding-bottom: 0;
 }
 
-.post-link {
+.post-link .post-title {
   margin-top: 0.25rem;
   font-weight: 600;
   color: #333;
@@ -53,7 +54,8 @@ a:hover {
   margin: 0 auto;
 }
 
-.meta {
+.meta,
+.post-meta {
   width: auto;
   font-family: 'Helvetica Neue', Helvetica, sans-serif;
   padding: 0.5rem;
