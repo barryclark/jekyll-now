@@ -13,6 +13,30 @@
 
 */
 
+body {
+  font-size: 1.5rem;
+}
+
+.site-header a {
+  color: #333;
+  font-weight: 600;
+}
+
+a:hover .post-link,
+a:hover {
+  opacity: 0.88;
+}
+
+.posts {
+  margin: 0;
+}
+
+.post-link {
+  margin-top: 0.25rem;
+  font-weight: 600;
+  color: #333;
+}
+
 .wrap .measure {
   margin: 0 auto;
 }

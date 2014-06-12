@@ -1,19 +1,15 @@
 <!DOCTYPE html>
 <html>
-
-  {% include head.html %}
-
-    <body>
-
-    {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrap">
+{% include head.html %}
+<body>
+  {% include header.html %}
+  
+  <div class="post p4 p-responsive wrap">
+    <div class="measure">
       {{ content }}
-      </div>
     </div>
+  </div>
 
-    {% include footer.html %}
-
-    </body>
+  {% include footer.html %}
+</body>
 </html>
