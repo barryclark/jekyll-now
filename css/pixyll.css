@@ -149,6 +149,10 @@ h6 {
   }
 }
 
+blockquote footer {
+  background-color: #fff;
+}
+
 footer {
   color: #7a7a7a;
   background-color: #f3f3f3;
