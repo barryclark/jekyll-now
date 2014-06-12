@@ -39,6 +39,8 @@ a:hover {
 
 .posts .post:last-child {
   border-bottom: none;
+  margin-bottom: 2rem;
+  padding-bottom: 0;
 }
 
 .post-link {
