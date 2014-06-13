@@ -75,11 +75,20 @@ It covers:
 ✘ No need to spend time on theming  
 ✘ More time to code other things ... wait ✓!  
 
-## Questions? Suggestions?
+## Questions?
 
 [Open an Issue](https://github.com/barryclark/jekyll-now/issues/new) and let's chat!
 
-## Get new themes
+## Prefer another theme?
+
+A few others have repositories set up to be forked using the same workflow that I detailed in [Quick Start](https://github.com/barryclark/jekyll-now#quick-start). Here's a list of my favorites:
+
+- [Hyde](https://github.com/poole/hyde) by MDO
+- [Lanyon](https://github.com/poole/lanyon) by MDO
+- [mojombo.github.io](https://github.com/mojombo/mojombo.github.io) by Tom Preston-Werner
+- [Left](https://github.com/holman/left) by Zach Holman
+
+## Get my new themes
 
 If you'd like me to let you know when I release a new theme, just [drop me your email for updates](http://getresponse.com). I'm currently working on a personal portfolio site Jekyll Now theme.
 
