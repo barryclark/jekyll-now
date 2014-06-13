@@ -47,16 +47,7 @@
     <div class="wrapper-footer">
       <div class="container">
         <footer class="footer">
-          {% if site.footer-links.dribbble %}<a href="http://dribbble.com/{{ site.footer-links.dribbble }}">{% include svg-icons/dribbble.html %}</a>{% endif %}
-          {% if site.footer-links.email %}<a href="mailto: {{ site.footer-links.email }}">{% include svg-icons/email.html %}</a>{% endif %}
-          {% if site.footer-links.facebook %}<a href="http://facebook.com/{{ site.footer-links.facebook }}">{% include svg-icons/facebook.html %}</a>{% endif %}
-          {% if site.footer-links.flickr %}<a href="http://flickr.com/{{ site.footer-links.flickr }}">{% include svg-icons/flickr.html %}</a>{% endif %}
-          {% if site.footer-links.github %}<a href="http://github.com/{{ site.footer-links.github }}">{% include svg-icons/github.html %}</a>{% endif %}
-          {% if site.footer-links.instagram %}<a href="http://instagram.com/{{ site.footer-links.instagram }}">{% include svg-icons/instagram.html %}</a>{% endif %}
-          {% if site.footer-links.linkedin %}<a href="http://linkedin.com/in/{{ site.footer-links.linkedin }}">{% include svg-icons/linkedin.html %}</a>{% endif %}
-          {% if site.footer-links.pinterest %}<a href="http://pinterest.com/{{ site.footer-links.pinterest }}">{% include svg-icons/pinterest.html %}</a>{% endif %}
-          {% if site.footer-links.rss %}<a href="{{ site.baseurl }}/feed.xml">{% include svg-icons/rss.html %}</a>{% endif %}
-          {% if site.footer-links.twitter %}<a href="http://twitter.com/{{ site.footer-links.twitter }}">{% include svg-icons/twitter.html %}</a>{% endif %}
+          {% include svg-icons.html %}
         </footer>
       </div>
     </div>
