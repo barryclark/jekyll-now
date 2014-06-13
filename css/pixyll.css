@@ -79,7 +79,12 @@ code {
 pre {
   padding: 1rem;
   font-size: 1.125rem;
-  line-height: 1.5rem;
+  line-height: 1.25rem;
+}
+
+.highlight .p {
+  font-size: 1.125rem;
+  line-height: 1.125rem;
 }
 
 blockquote {
