@@ -90,7 +90,7 @@ A few others have repositories set up to be forked using the same workflow that 
 
 ## Get my new themes
 
-If you'd like me to let you know when I release a new theme, just [drop me your email for updates](http://getresponse.com). I'm currently working on a personal portfolio site Jekyll Now theme.
+If you'd like me to let you know when I release a new theme, just [drop me your email for updates](http://getresponse.com). I'm currently working on a hacker portfolio site theme.
 
 ## Credits
 
