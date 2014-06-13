@@ -53,6 +53,13 @@ This allows your content to have the proper informational and contextual hierarc
   2. Feed the dog
   3. Dance
 
+### There are also pretty colors
+
+Also the result of [BASSCSS](http://www.basscss.com/), you can <span class="bg-dark-gray white">highlight</span> certain components
+of a <span class="red">post</span> <span class="mid-gray">with</span> <span class="green">CSS</span> <span class="orange">classes</span>.
+
+I don't recommend using blue, though. It looks like a <span class="blue">link</span>.
+
 ### Stylish blockquotes included
 
 You can use the markdown quote syntax, `>` for simple quotes.
