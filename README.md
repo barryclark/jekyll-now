@@ -81,9 +81,9 @@ It covers:
 
 [Open an Issue](https://github.com/barryclark/jekyll-now/issues/new) and let's chat!
 
-## Prefer another theme?
+## Other fork'able themes
 
-A few others have repositories set up to be forked using the same workflow that I detailed in [Quick Start](https://github.com/barryclark/jekyll-now#quick-start). Here's a list of my favorites:
+You can use the [Quick Start](https://github.com/barryclark/jekyll-now#quick-start) workflow with other themes that are set up to be forked too! Here's a list of my favorites:
 
 - [Hyde](https://github.com/poole/hyde) by MDO
 - [Lanyon](https://github.com/poole/lanyon) by MDO
