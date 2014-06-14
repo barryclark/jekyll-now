@@ -81,6 +81,10 @@ It covers:
 
 [Open an Issue](https://github.com/barryclark/jekyll-now/issues/new) and let's chat!
 
+## Get my new themes
+
+If you'd like me to let you know when I release a new theme, just [drop me your email for updates](http://getresponse.com). I'm currently working on a hacker portfolio site theme.
+
 ## Other forkable themes
 
 You can use the [Quick Start](https://github.com/barryclark/jekyll-now#quick-start) workflow with other themes that are set up to be forked too! Here's a list of my favorites:
@@ -89,10 +93,6 @@ You can use the [Quick Start](https://github.com/barryclark/jekyll-now#quick-sta
 - [Lanyon](https://github.com/poole/lanyon) by MDO
 - [mojombo.github.io](https://github.com/mojombo/mojombo.github.io) by Tom Preston-Werner
 - [Left](https://github.com/holman/left) by Zach Holman
-
-## Get my new themes
-
-If you'd like me to let you know when I release a new theme, just [drop me your email for updates](http://getresponse.com). I'm currently working on a hacker portfolio site theme.
 
 ## Credits
 
