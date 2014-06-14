@@ -81,7 +81,7 @@ It covers:
 
 [Open an Issue](https://github.com/barryclark/jekyll-now/issues/new) and let's chat!
 
-## Other fork'able themes
+## Other forkable themes
 
 You can use the [Quick Start](https://github.com/barryclark/jekyll-now#quick-start) workflow with other themes that are set up to be forked too! Here's a list of my favorites:
 
