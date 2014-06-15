@@ -32,6 +32,7 @@ html, body {
 }
 
 body {
+  font-family: 'Merriweather', Georgia, 'Times New Roman', serif;
   font-size: 1.5rem;
 
           box-sizing: border-box;
@@ -41,7 +42,7 @@ body {
 
 .site-header a {
   color: #333;
-  font-weight: 600;
+  font-weight: 200;
 }
 
 .site-header a:hover,
@@ -107,7 +108,6 @@ body {
 
 p {
   font-weight: 200;
-  font-family: 'Merriweather', Georgia, 'Times New Roman', serif;
   line-height: 2rem;
   color: #333;
 }
@@ -141,12 +141,14 @@ blockquote footer {
 h1,
 h2,
 h3 {
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
   margin-top: 3rem;
 }
 
 h4,
 h5,
 h6 {
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
   margin-top: 1rem;
 }
 
