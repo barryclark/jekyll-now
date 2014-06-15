@@ -13,6 +13,24 @@
 
 */
 
+html, body {
+  min-height: 100%;
+}
+
+.site-wrap {
+  min-height: 100%;
+  margin-bottom: -180px;
+}
+
+.site-wrap:after {
+  content: "";
+  display: block;
+}
+
+.footer, .site-wrap:after {
+  height: 180px;
+}
+
 body {
   font-size: 1.5rem;
 
