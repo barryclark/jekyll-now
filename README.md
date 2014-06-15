@@ -32,7 +32,7 @@ Making a change to _config.yml (or any file in your repository) will force GitHu
 > There are 3 different ways that you can make changes to your blog's files:
 
 > 1. Edit files within your new username.github.io repository in the browser at GitHub.com (shown below).
-> 2. Use a third party GitHub content editor, like the fantastic [Prose by Development Seed](http://prose.io). It's optimized for use with Jekyll making markdown editing, writing drafts, and uploading images really easy.
+> 2. Use a third party GitHub content editor, like [Prose by Development Seed](http://prose.io). It's optimized for use with Jekyll making markdown editing, writing drafts, and uploading images really easy.
 > 3. Clone down your repository and make updates locally, then push them to your GitHub repository.
 
 ![_config.yml](/images/config.png "_config.yml")
