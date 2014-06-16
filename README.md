@@ -99,5 +99,5 @@ You can use the [Quick Start](https://github.com/barryclark/jekyll-now#quick-sta
 
 - [Jekyll](https://github.com/jekyll/jekyll) - Thanks to it's creators, contributors and maintainers.
 - [SVG icons](https://github.com/neilorangepeel/Free-Social-Icons) - Thanks, Neil Orange Peel. They're beautiful. 
-- [Joel Glovier](http://joelglovier.com/writing/) - Great Jekyll articles. I used Joel's feed.xml and sitemap.xml in this repository.
+- [Joel Glovier](http://joelglovier.com/writing/) - Great Jekyll articles. I used Joel's feed.xml in this repository.
 - Design & Code reviews - Thanks to [David Furnes](https://github.com/dfurnes), [Jon Uy](https://github.com/jonuy),
