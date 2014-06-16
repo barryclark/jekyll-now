@@ -8,6 +8,8 @@ Requires Jekyll 2+. Doesn't currently work with GitHub Pages because they only s
 
 Full documentation coming eventually, in the meantime the import parts are below. I used this starter with some minor CSS changes to build my website [mademistakes.com](http://mademistakes.com), so check that out if you want to see what can be done and how I did it.
 
+![Skinny Bones demo](https://raw.githubusercontent.com/mmistakes/skinny-bones-jekyll/master/_source/images/skinny-bones-demo.gif)
+
 ---
 
 ## To Do
