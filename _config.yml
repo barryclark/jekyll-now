@@ -52,9 +52,10 @@ markdown: kramdown
 highlighter: pygments
 permalink: /:title
 
-# Emoji please!
+# Use the following plug-ins
 gems:
-  - jemoji
+  - jemoji # Emoji please!
+  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
 
 # Exclude these files from your production _site
 exclude:
