@@ -24,8 +24,10 @@ layout: default
 				<footer class="page-footer">
 					{% if page.share != false %}{% include share-this.html %}{% endif %}
 					{% include page-meta.html %}
-					{% if page.comments == true %}{% include comments.html %}{% endif %}
 				</footer><!-- /.footer -->
+				<aside>
+					{% if page.comments == true %}{% include comments.html %}{% endif %}
+				</aside>
 			</div><!-- /.content -->
 		</div><!-- /.inner-wrap -->
 		{% if page.ads != false %}<div class="ads">{% include advertising.html %}</div><!-- /.ads -->{% endif %}
