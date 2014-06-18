@@ -42,7 +42,7 @@ body {
 
 .site-header a {
   color: #333;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 .site-header nav a {
@@ -93,7 +93,7 @@ body {
 .meta,
 .post-meta {
   width: auto;
-  font-weight: 200;
+  font-weight: 300;
   font-family: 'Helvetica Neue', Helvetica, sans-serif;
   padding: 0.5rem;
   border-radius: .15rem;
@@ -103,7 +103,7 @@ body {
 
 .pagination .button {
   font-size: 1rem;
-  font-weight: 200;
+  font-weight: 300;
   letter-spacing: 1px;
 }
 
@@ -120,7 +120,7 @@ body {
 }
 
 p {
-  font-weight: 200;
+  font-weight: 300;
   line-height: 2rem;
   color: #333;
 }
@@ -216,7 +216,7 @@ footer .wrap {
   color: #7a7a7a;
   background-color: #f3f3f3;
   font-family: 'Helvetica Neue', Helvetica, sans-serif;
-  font-weight: 200;
+  font-weight: 300;
   clear: both;
 }
 
