@@ -13,8 +13,6 @@ In a few minutes you'll be set up with a minimal, responsive blog giving you mor
 
 ![Jekyll Now Theme Screenshot](/images/jekyll-now-theme-screenshot.jpg "Jekyll Now Theme Screenshot")
 
-Live theme demo at ([www.jekyllnow.com](http://www.jekyllnow.com))
-
 ## Quick Start
 
 ### Step 1) Fork Jekyll Now to your User Repository
