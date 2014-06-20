@@ -52,6 +52,9 @@ markdown: kramdown
 highlighter: pygments
 permalink: /:title
 
+# The release of Jekyll Now that you're using
+version: 1.0.0 
+
 # Use the following plug-ins
 gems:
   - jemoji # Emoji please!
