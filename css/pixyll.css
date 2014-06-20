@@ -123,6 +123,15 @@ body {
   background-color: #999;
 }
 
+form {
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 1rem;
+}
+
+textarea.input {
+  height: 8rem;
+}
+
 p {
   font-weight: 300;
   line-height: 2rem;
