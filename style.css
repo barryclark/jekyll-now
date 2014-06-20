@@ -58,7 +58,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.7;
   margin: 1em 0 15px;
   padding: 0; }
-  @media screen and (max-width: 520px) {
+  @media screen and (max-width: 640px) {
     h1, h2, h3, h4, h5, h6 {
       line-height: 1.4; } }
 
@@ -142,7 +142,7 @@ img {
 .masthead {
   padding: 20px 0;
   border-bottom: 1px solid #eeeeee; }
-  @media screen and (max-width: 520px) {
+  @media screen and (max-width: 640px) {
     .masthead {
       text-align: center; } }
 
@@ -151,7 +151,7 @@ img {
   width: 70px;
   height: 70px;
   margin-right: 15px; }
-  @media screen and (max-width: 520px) {
+  @media screen and (max-width: 640px) {
     .site-avatar {
       float: none;
       display: block;
@@ -161,7 +161,7 @@ img {
 
 .site-info {
   float: left; }
-  @media screen and (max-width: 520px) {
+  @media screen and (max-width: 640px) {
     .site-info {
       float: none;
       display: block;
@@ -180,7 +180,7 @@ img {
   margin: -5px 0 0 0;
   color: #666666;
   font-size: 16px; }
-  @media screen and (max-width: 520px) {
+  @media screen and (max-width: 640px) {
     .site-description {
       margin: 3px 0; } }
 
@@ -189,7 +189,7 @@ nav {
   margin-top: 23px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px; }
-  @media screen and (max-width: 520px) {
+  @media screen and (max-width: 640px) {
     nav {
       float: none;
       margin-top: 9px;
@@ -201,7 +201,7 @@ nav {
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px; }
-    @media screen and (max-width: 520px) {
+    @media screen and (max-width: 640px) {
       nav a {
         margin: 0 10px;
         color: #4183c4; } }
