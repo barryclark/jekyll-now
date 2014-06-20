@@ -57,6 +57,10 @@ body {
   border-bottom: 2px solid #444;
 }
 
+.site-nav a + a {
+  margin-left: 1rem;
+}
+
 .site-header a:hover,
 .posts .post a:hover .post-meta,
 .posts .post a:hover .post-title,
@@ -165,6 +169,21 @@ h5,
 h6 {
   font-family: 'Helvetica Neue', Helvetica, sans-serif;
   margin-top: 1rem;
+}
+
+@media screen and (max-width: 48em) {
+  .site-header {
+    text-align: center;
+    width: 100%;
+  }
+
+  .site-header .site-nav {
+    width: 100%;
+    float: left;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
 }
 
 @media screen and (min-width: 48em) {
