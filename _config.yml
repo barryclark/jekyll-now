@@ -53,7 +53,7 @@ highlighter: pygments
 permalink: /:title
 
 # The release of Jekyll Now that you're using
-version: 1.0.0 
+version: beta
 
 # Use the following plug-ins
 gems:
