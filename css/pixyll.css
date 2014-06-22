@@ -90,6 +90,36 @@ body {
   color: #333;
 }
 
+.pagination {
+  font-size: 16px;
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  text-align: center;
+}
+
+.pagination a, .pagination .disabled {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background: #f7f7f7;
+  border-radius: 0.1875em;
+  border: 1px solid #dddddd;
+  color: #333333;
+  padding: 1rem 1.5rem;
+}
+
+.pagination .disabled {
+  opacity: 0.75;
+}
+
+.pagination a:hover, .pagination a:focus {
+  background: white;
+  color: #477dca;
+}
+
+.pagination a:active {
+  background: #f7f7f7;
+}
+
 .wrap .measure {
   margin: 0 auto;
 }
