@@ -9,7 +9,7 @@
 - You don't need to install runtime dependancies like markdown processors, Pygments, etc
 - It's easy to try out, you can just delete your forked repository if you don't like it
 
-In a few minutes you'll be set up with a minimal, responsive blog giving you more time to spend on writing epic blog posts!
+In a few minutes you'll be set up with a minimal, responsive blog like the one below giving you more time to spend on writing epic blog posts!
 
 ![Jekyll Now Theme Screenshot](/images/jekyll-now-theme-screenshot.jpg "Jekyll Now Theme Screenshot")
 
@@ -88,7 +88,7 @@ If you'd like me to let you know when I release a new theme, just [drop me your 
 
 ## Other forkable themes
 
-You can use the [Quick Start](https://github.com/barryclark/jekyll-now#quick-start) workflow with other themes that are set up to be forked too! Here's a list of my favorites:
+You can use the [Quick Start](https://github.com/barryclark/jekyll-now#quick-start) workflow with other themes that are set up to be forked too! Here are some of  my favorites:
 
 - [Hyde](https://github.com/poole/hyde) by MDO
 - [Lanyon](https://github.com/poole/lanyon) by MDO
