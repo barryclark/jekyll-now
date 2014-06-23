@@ -128,11 +128,10 @@ body {
 .post-meta {
   width: auto;
   font-weight: 300;
-  font-family: 'Helvetica Neue', Helvetica, sans-serif;
   padding: 0.5rem;
-  border-radius: .15rem;
-  border: 2px solid #7a7a7a;
   color: #7a7a7a;
+  font-style: italic;
+  border-bottom: thin dotted #f3f3f3;
 }
 
 .pagination .button {
