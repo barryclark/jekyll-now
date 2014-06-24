@@ -53,6 +53,10 @@ This allows your content to have the proper informational and contextual hierarc
   2. Feed the dog
   3. Dance
 
+### Images look great, too
+
+![A minimal desk.]({{ site.url }}/images/desk.png})
+
 ### There are also pretty colors
 
 Also the result of [BASSCSS](http://www.basscss.com/), you can <span class="bg-dark-gray white">highlight</span> certain components
