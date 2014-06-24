@@ -55,7 +55,7 @@ This allows your content to have the proper informational and contextual hierarc
 
 ### Images look great, too
 
-![A minimal desk.]({{ site.url }}/images/desk.png})
+![A minimal desk.](images/desk.png})
 
 ### There are also pretty colors
 
