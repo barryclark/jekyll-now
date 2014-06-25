@@ -55,7 +55,7 @@
 
 // thumbnail image grid default
 .th-grid {
-  @include fill-parent;
+  @include row($direction: LTR);
   @include clearfix;
   margin: 0;
   padding: 0;
