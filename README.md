@@ -84,7 +84,7 @@ It covers:
 
 ## Get my new themes
 
-If you'd like me to let you know when I release a new theme, just [drop me your email for updates](http://getresponse.com). I'm currently working on a hacker portfolio site theme.
+If you'd like me to let you know when I release a new theme, just [drop me your email for updates](http://eepurl.com/XUZpT). I'm currently working on a hacker portfolio site theme.
 
 ## Other forkable themes
 
