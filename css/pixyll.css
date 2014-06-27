@@ -13,8 +13,8 @@
 
 */
 
-* {
-  font-family: 'Merriweather', Georgia, 'Times New Roman', serif;
+body {
+  font-family: "PT Serif", Georgia, "Times New Roman", serif;
 }
 
 html, body {
@@ -172,6 +172,10 @@ p {
   font-weight: 300;
   line-height: 2rem;
   color: #333;
+}
+
+pre, code {
+  font-family: Menlo, Monaco, "Courier New", monospace
 }
 
 code {
