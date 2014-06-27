@@ -13,6 +13,10 @@
 
 */
 
+* {
+  font-family: 'Merriweather', Georgia, 'Times New Roman', serif;
+}
+
 html, body {
   min-height: 100%;
 }
@@ -36,7 +40,6 @@ img {
 }
 
 body {
-  font-family: 'Merriweather', Georgia, 'Times New Roman', serif;
   font-size: 1.5rem;
 
           box-sizing: border-box;
