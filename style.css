@@ -223,6 +223,9 @@ nav {
   font-style: italic; }
 .post .comments {
   margin-top: 10px; }
+.post .read-more {
+  text-transform: uppercase;
+  font-size: 15px; }
 
 .wrapper-footer {
   margin-top: 50px;
