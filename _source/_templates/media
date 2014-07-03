@@ -1,7 +1,6 @@
 ---
 layout: media
 title: {{ title }}
-date: {{ date }}
 modified:
 categories: {{ dir }}
 excerpt:
