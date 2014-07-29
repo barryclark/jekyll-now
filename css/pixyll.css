@@ -18,7 +18,7 @@ body {
 }
 
 html, body {
-  min-height: 100%;
+  height: 100%;
 }
 
 img {
@@ -27,7 +27,7 @@ img {
 
 .site-wrap {
   min-height: 100%;
-  margin-bottom: -180px;
+  margin-bottom: -216px;
 }
 
 .site-wrap:after {
@@ -36,7 +36,7 @@ img {
 }
 
 .footer, .site-wrap:after {
-  height: 180px;
+  height: 216px;
 }
 
 body {
@@ -204,6 +204,7 @@ blockquote footer {
   font-style: normal;
   background-color: #fff;
   color: #7a7a7a;
+  border-color: transparent;
 }
 
 h1,

@@ -2,11 +2,13 @@
 <html>
 {% include head.html %}
 <body>
-  {% include header.html %}
+  <div class="site-wrap">
+    {% include header.html %}
 
-  <div class="post p4 p-responsive wrap site-wrap" role="main">
-    <div class="measure">
-      {{ content }}
+    <div class="post p2 p-responsive wrap" role="main">
+      <div class="measure">
+        {{ content }}
+      </div>
     </div>
   </div>
 
