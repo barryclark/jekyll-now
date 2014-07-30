@@ -47,6 +47,14 @@ Edit `/_posts/2014-3-3-Hello-World.md` to publish your first blog post. This [Ma
 
 > You can add additional posts in the browser on GitHub.com too! Just hit the + icon in `/_posts/` to create new content. Just make sure to include the [front-matter](http://jekyllrb.com/docs/frontmatter/) block at the top of each new blog post and make sure the post's filename is in this format: year-month-day-title.md
 
+## Local Development
+
+1. Clone down your fork `git clone git@github.com:yourusername/yourusername.github.io.git`
+2. Install Jekyll `gem install jekyll`
+3. Install plug-ins that we use `gem install jemoji jekyll-sitemap`
+4. Serve the site and watch for markup/sass changes `jekyll serve --watch`
+5. View your website at http://0.0.0.0:4000
+6. Commit any changes and push everything to the master branch of your GitHub user repository. GitHub Pages will then rebuild and serve your website.
 
 ## Moar!
 
@@ -59,15 +67,6 @@ It covers:
 - Importing from Wordpress, using your own domain name, and blogging in your favorite editor
 - Theming in Jekyll, with Liquid templating examples
 - A quick look at Jekyll 2.0’s new features, including Sass/Coffeescript support and Collections
-
-## Local Development
-
-1. Clone down your fork `git clone git@github.com:yourusername/yourusername.github.io.git`
-2. Install Jekyll `gem install jekyll`
-3. Install plug-ins that we use `gem install jemoji jekyll-sitemap`
-4. Serve the site and watch for markup/sass changes `jekyll serve --watch`
-5. View your website at http://0.0.0.0:4000
-6. Commit any changes and push everything to the master branch of your GitHub user repository. GitHub Pages will then rebuild and serve your website.
 
 ## Jekyll Now Features
 
