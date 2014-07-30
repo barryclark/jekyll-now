@@ -5,6 +5,7 @@ Just a little something I'm using to jump start a site refresh. Super alpha and 
 Keep in mind, this is **not a theme** and will need styling and additional markup to really sing.
 
 I'm currently using it on my website [Made Mistakes](http://mademistakes.com) with some modifications. To learn more about how to use the theme and install it check out the [Skinny Bones demo](http://mmistakes.github.io/skinny-bones-jekyll/) (*work in progress*).
+
 ---
 
 ## To Do
