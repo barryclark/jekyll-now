@@ -13,7 +13,7 @@
 
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
 
-    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="{{ site.title }} Atom Feed">
+    <link href="{{ site.url }}/atom.xml" type="application/atom+xml" rel="alternate" title="{{ site.title }} Atom Feed">
 
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
@@ -39,8 +39,8 @@
     <link rel="stylesheet" href="/css/main.css">
     <!-- HTML5 Shiv and Media Query Support for IE -->
     <!--[if lt IE 9]>
-      <script src="/js/vendor/html5shiv.min.js"></script>
-      <script src="/js/vendor/respond.min.js"></script>
+      <script src="{{ site.url }}/js/vendor/html5shiv.min.js"></script>
+      <script src="{{ site.url }}/js/vendor/respond.min.js"></script>
     <![endif]-->
 
   </head>
@@ -59,8 +59,8 @@
 
     {% if page.image.feature %}{% include scroll-cue.html %}{% endif %}
 
-    <script src="/js/vendor/jquery-1.9.1.min.js"></script>
-    <script src="/js/main.js"></script>
+    <script src="{{ site.url }}/js/vendor/jquery-1.9.1.min.js"></script>
+    <script src="{{ site.url }}/js/main.js"></script>
     
     {% if page.toc == true %}
     <script type="text/javascript">
