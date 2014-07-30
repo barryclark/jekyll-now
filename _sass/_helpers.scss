@@ -20,6 +20,10 @@
   display: none;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .inline-btn {
   @include clearfix;
   a, btn {
