@@ -60,6 +60,15 @@ It covers:
 - Theming in Jekyll, with Liquid templating examples
 - A quick look at Jekyll 2.0’s new features, including Sass/Coffeescript support and Collections
 
+## Local Development
+
+1. Clone down your fork `git clone git@github.com:yourusername/yourusername.github.io.git`
+2. Install Jekyll `gem install jekyll`
+3. Install plug-ins that we use `gem install jemoji jekyll-sitemap`
+4. Serve the site and watch for markup/sass changes `jekyll serve --watch`
+5. View your website at http://0.0.0.0:4000
+6. Commit any changes and push everything to the master branch of your GitHub user repository. GitHub Pages will then rebuild and serve your website.
+
 ## Jekyll Now Features
 
 ✓ Command-line free _fork-first workflow_, using GitHub.com to create, customize and post to your blog  
