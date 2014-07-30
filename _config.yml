@@ -9,7 +9,6 @@ url:
 
 # Jekyll configuration
 
-source: _source
 sass:
     sass_dir: _sass
     style: compressed
