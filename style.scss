@@ -7,10 +7,11 @@
 
 @import "_reset";
 @import "_variables";
+// Syntax highlighting @import is at the bottom of this file
 
-/*/
-/* BASE RULES
-/*/
+/**************/
+/* BASE RULES */
+/**************/
 
 html {
   font-size: 100%;
@@ -138,9 +139,9 @@ img {
     clear: both;
 }
 
-/*/
-/* LAYOUT / SECTIONS
-/*/
+/*********************/
+/* LAYOUT / SECTIONS */
+/*********************/
 
 //
 // .masthead
