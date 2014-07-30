@@ -69,5 +69,5 @@ gems:
 exclude:
     - Gemfile
     - Gemfile.lock
-    - scss
+    - LICENSE
     - README.md
