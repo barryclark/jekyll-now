@@ -55,6 +55,11 @@ permalink: /:title
 # The release of Jekyll Now that you're using
 version: beta
 
+# Set the Sass partials directory, as we're using @imports
+sass:
+  sass_dir: _scss
+  style: :expanded # You might prefer to minify using :compressed
+
 # Use the following plug-ins
 gems:
   - jemoji # Emoji please!
