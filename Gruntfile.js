@@ -9,8 +9,8 @@ module.exports = function(grunt) {
       },
       all: [
         'Gruntfile.js',
-        '_source/js/*.js',
-        '!_source/js/main.js'
+        'js/*.js',
+        '!js/main.js'
       ]
     },
     shell: {
@@ -30,11 +30,11 @@ module.exports = function(grunt) {
       jekyll: {
         files: [
           '_config.yml',
-          '_source/*.*',
-          '_source/_layouts/**',
-          '_source/_includes/**',
-          '_source/_posts/**',
-          '_source/_work/**'
+          '*.*',
+          '_layouts/**',
+          '_includes/**',
+          '_posts/**',
+          '_work/**'
         ],
         tasks: ['shell:jekyllBuild'],
         options: {
@@ -43,7 +43,7 @@ module.exports = function(grunt) {
       },
       sass: {
         files: [
-          '_source/_sass/*.scss'
+          '_sass/*.scss'
         ],
         tasks: ['sass', 'shell:jekyllBuild'],
         options: {
@@ -61,7 +61,7 @@ module.exports = function(grunt) {
       },
       images: {
         files: [
-          '_source/_images/*.{png,jpg,jpeg}'],
+          '_images/*.{png,jpg,jpeg}'],
         tasks: ['newer:imagemin', 'shell:jekyllBuild'],
         options: {
           livereload: true
@@ -69,7 +69,7 @@ module.exports = function(grunt) {
       },
       svgs: {
         files: [
-          '_source/_images/*.svg'],
+          '_images/*.svg'],
         tasks: ['newer:svgmin', 'shell:jekyllBuild'],
         options: {
           livereload: true
@@ -84,7 +84,7 @@ module.exports = function(grunt) {
           compass: false,
         },
         files: {
-          '_source/css/main.min.css':'_source/_sass/main.scss'
+          'css/main.min.css':'_sass/main.scss'
         }
       },
       dev: {
@@ -93,7 +93,7 @@ module.exports = function(grunt) {
           compass: false,
         },
         files: {
-          '_source/css/main.css':'_source/_sass/main.scss'
+          'css/main.css':'_sass/main.scss'
         }
       }
     },
@@ -106,9 +106,9 @@ module.exports = function(grunt) {
           mangle: false
         },
         files: {
-          '_source/js/main.js': [
-            '_source/js/plugins/*.js',
-            '_source/js/_*.js'
+          'js/main.js': [
+            'js/plugins/*.js',
+            'js/_*.js'
           ]
         }
       }
@@ -121,9 +121,9 @@ module.exports = function(grunt) {
         },
         files: [{
           expand: true,
-          cwd: '_source/_images/',
+          cwd: '_images/',
           src: '{,*/}*.{png,jpg,jpeg}',
-          dest: '_source/images/'
+          dest: 'images/'
         }]
       }
     },
@@ -131,9 +131,9 @@ module.exports = function(grunt) {
       dist: {
         files: [{
           expand: true,
-          cwd: '_source/_images/',
+          cwd: '_images/',
           src: '{,*/}*.svg',
-          dest: '_source/images/'
+          dest: 'images/'
         }]
       }
     },
