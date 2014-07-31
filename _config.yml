@@ -53,7 +53,7 @@ highlighter: pygments
 permalink: /:title
 
 # The release of Jekyll Now that you're using
-version: beta
+version: v1.0.0
 
 # Set the Sass partials directory, as we're using @imports
 sass:
