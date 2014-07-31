@@ -1,5 +1,3 @@
-> I write a free newsletter: **[Get Hired as a Web Developer](http://www.barryclark.co/newsletter)**. Check it out if you're interested in improving your chances of landing the job you want.
-
 # Jekyll Now
 
 **Jekyll** is a static site generator that's perfect for GitHub hosted blogs ([Jekyll Repository](https://github.com/jekyll/jekyll))
@@ -112,3 +110,7 @@ You can use the [Quick Start](https://github.com/barryclark/jekyll-now#quick-sta
 - [Solarized Light Pygments](https://gist.github.com/edwardhotchkiss/2005058) - Thanks, Edward.
 - [Joel Glovier](http://joelglovier.com/writing/) - Great Jekyll articles. I used Joel's feed.xml in this repository.
 - [David Furnes](https://github.com/dfurnes), [Jon Uy](https://github.com/jonuy), [Luke Patton](https://github.com/lkpttn) - Thanks for the design/code reviews.
+
+## Get Hired as a Web Developer
+
+Check out my [free web development career newsletter](http://www.barryclark.co/newsletter) if you're interested in improving your chances of landing the job you want.
