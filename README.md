@@ -1,4 +1,4 @@
-> I write a free newsletter: **[Get Hired as a Web Developer](http://www.barryclark.co/web-developer-career-newsletter)**. Check it out if you're interested in improving your chances of landing the job you want.
+> I write a free newsletter: **[Get Hired as a Web Developer](http://www.barryclark.co/newsletter)**. Check it out if you're interested in improving your chances of landing the job you want.
 
 # Jekyll Now
 
