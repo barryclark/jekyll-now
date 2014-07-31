@@ -2,10 +2,12 @@
 	<nav role="navigation" class="menu bottom-menu">
 		<ul class="menu-item">
 		{% for link in site.data.footer %}
-      {% unless link.url contains 'http' %}
+      {% if link.url contains 'http' %}
+        {% assign domain = '' %}
+        {% else %}
         {% assign domain = site.url %}
-      {% endunless %}
-			<li><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+      {% endif %}
+			<li><a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank"{% endif %}>{{ link.title }}</a></li>
 		{% endfor %}
 		</ul>
 	</nav><!-- /.bottom-menu -->
