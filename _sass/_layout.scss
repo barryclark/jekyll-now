@@ -235,6 +235,44 @@
 		}
 	}
 }
+// page lead
+.page-lead {
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	text-align: center;
+	color: $white;
+	@include media($large) {
+		background-size: cover;
+	}
+}
+.page-lead-content {
+	padding: 1em;
+	@include media($medium) {
+		padding: 2em;
+	}
+	@include media($large) {
+		padding: 3em;
+	}
+	h1 {
+		@include font-size(48);
+		@include media($medium) {
+			@include font-size(60);
+		}
+		@include media($large) {
+			@include font-size(72);
+		}
+	}
+	h2 {
+		@include font-size(20);
+		@include media($medium) {
+			@include font-size(24);
+		}
+		@include media($large) {
+			@include font-size(32);
+		}
+	}
+}
 // page header
 .page-feature {
 	@include fill-parent;
@@ -328,7 +366,7 @@
 		@include font-size(18,no);
 	}
 	.post-excerpt {
-		@include font-size(14);
+		@include font-size(16);
 	}
 	.post-teaser {
 		position: relative;
