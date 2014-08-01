@@ -1,0 +1,1 @@
+This is the first post on my new blog. I'm still in the process of developing it, so features will be added throughout the next few months. Hopefully it's not too buggy, but if you happen to find something, just leave a comment on this post! Thanks!
