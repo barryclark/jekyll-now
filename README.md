@@ -57,7 +57,7 @@ Edit `/_posts/2014-3-3-Hello-World.md` to publish your first blog post. This [Ma
 
 ## Moar!
 
-I've created a more detailed walkthrough over at the Smashing Magazine website: [**Build A Blog With Jekyll And GitHub Pages**](http://www.smashingmagazine.com/?p=197342). Check it out if you'd like a more detailed walkthrough and some background on Jekyll. :metal:
+I've created a more detailed walkthrough, [**Build A Blog With Jekyll And GitHub Pages**](http://www.smashingmagazine.com/2014/08/01/build-blog-jekyll-github-pages/) over at the Smashing Magazine website. Check it out if you'd like a more detailed walkthrough and some background on Jekyll. :metal:
 
 It covers:
 
