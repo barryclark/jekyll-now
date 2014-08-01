@@ -3,13 +3,13 @@
 #
 
 # Name of your site (displayed in the header)
-name: Your Name
+name: Jordan Foreman
 
 # Short bio or description (displayed in the header)
-description: Web Developer from Somewhere
+description: Full-Stack Designer/Developer from BFE, Iowa
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
+avatar: https://en.gravatar.com/userimage/25103068/efa329fa784ce9990cf63892e55c7abd.jpg?size=200
 
 #
 # Flags below are optional
@@ -18,18 +18,18 @@ avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/je
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble: 
-  email: 
+  email: me@jordanforeman.com
   facebook: 
   flickr: 
-  github: barryclark/jekyll-now
+  github: JordanForeman
   instagram: 
   linkedin: 
   pinterest: 
   rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
-  twitter: jekyllrb
+  twitter: jordanforeman
 
 # Your disqus shortname, entering this will enable commenting on posts
-disqus: 
+disqus: JordanForeman
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 google_analytics: 
