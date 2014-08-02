@@ -55,7 +55,7 @@ html {
 
 .sidebar {
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 2rem 10rem;
   color: rgba(255,255,255,.5);
   background-color: #202020;
 }
@@ -79,8 +79,8 @@ html {
 .sidebar-about h1 {
   color: #fff;
   margin-top: 0;
-  font-family: "Abril Fatface", serif;
-  font-size: 3.25rem;
+  /* font-family: "Abril Fatface", serif; */
+  font-size: 2.2rem;
 }
 
 /* Sidebar nav */
@@ -158,7 +158,7 @@ a.sidebar-nav-item:focus {
   }
 }
 
-@media (min-width: 64em) {
+@media (min-width: 84em) {
   .layout-reverse .content {
     margin-left: 4rem;
     margin-right: 22rem;
