@@ -3,7 +3,7 @@ layout: page
 title: About
 ---
 
-![mymug](/images/kg_head.jpg) Hello, my name is Kenny Gorman. I dig database systems, data, and development. Currently I am Chief Architect and Co-Founder of ObjectRocket; a MongoDB as a Service. In 2012 we where purchased by Rackspace.
+![mymug](/images/kg_head.jpg) Hello, my name is Kenny Gorman. I dig database systems, data, and development. Currently I am Chief Architect and Co-Founder of [ObjectRocket](http://www.objectrocket.com); a MongoDB as a Service. In 2012 we where purchased by [Rackspace](http://www.rackspace.com).
 
 Here is my [Linked In]( https://www.linkedin.com/in/kgorman) profile.
 
