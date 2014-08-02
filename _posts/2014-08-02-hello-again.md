@@ -30,3 +30,4 @@ Before I go, I want to give some credit where credit is due. I couldn't have mad
 
 * [@mdo](http://www.twitter.com/mdo)
 * [Barry Clark](https://github.com/barryclark/jekyll-now)
+* [Mike](http://mikerowecode.com/2010/08/jekyll_archives_grouped_by_year.html)
