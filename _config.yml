@@ -8,6 +8,20 @@ name: Kenny Gorman
 # Short bio or description (displayed in the header)
 description: Database engineering, architecture, startups, and other assorted bits
 
+# Permalinks
+permalink:        pretty
+baseurl:          /
+title: 		  kennygorman.com
+
+author:
+  name:           'Kenny Gorman'
+  url:            https://twitter.com/kgorman
+
+paginate:         5
+
+# Custom vars
+version:          2.1.0
+
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://avatars1.githubusercontent.com/u/171600?v=1&s=460
 
