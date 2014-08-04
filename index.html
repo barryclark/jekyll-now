@@ -2,6 +2,38 @@
 layout: default
 ---
 
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="365zph.github.io : Build a Jekyll blog in minutes, without touching the command line.">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>365zph.github.io</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/365zph">View on GitHub</a>
+
+          <h1 id="project_title">365zph.github.io</h1>
+          <h2 id="project_tagline">Build a Jekyll blog in minutes, without touching the command line.</h2>
+
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      ---
+layout: default
+---
+
 <div class="posts">
   {% for post in site.posts %}
     <article class="post">    
@@ -16,3 +48,15 @@ layout: default
     </article>
   {% endfor %}
 </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
