@@ -1,0 +1,44 @@
+.post-date {
+
+	position: absolute;
+	left: -95px; top: 15px;
+
+	display: block;
+	font-family: $meta;
+	background: WHITE;
+	color: BLACK;
+	text-align: center;
+
+	width: 50px;
+
+}
+
+.post-date-anchor, .post-date-day, .post-date-month, .post-date-year {
+	display: block;
+}
+
+.post-date-anchor {
+	max-width: 100%;
+	margin: 0 auto;
+	& > svg {
+		max-width: 100%;
+		fill: BLACK;
+	}
+
+	&:hover {
+
+	}
+}
+
+.post-date-day {
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+
+.post-date-month {
+	font-size: 1rem;
+}
+
+.post-date-year {
+	font-size: .75rem;
+}

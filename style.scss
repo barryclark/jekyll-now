@@ -19,7 +19,8 @@ html {
 
 body {
 	background: $white;
-  font: 18px/1.4 $helvetica;
+  font: 18px/1.4 $skolar;
+  line-height: 2;
   color: $darkGray;
 }
 
@@ -45,8 +46,9 @@ h1, h2, h3, h4, h5, h6 {
 }
   
 h1 {  
-  font-weight: 500;
-  font-size: 32px;
+  font-family: $meta;
+  font-weight: 700;
+  font-size: 2rem;
   a {
     color: inherit;
   }
@@ -67,7 +69,7 @@ h4 {
 }
 
 p {
-  margin: 15px 0;
+  margin: 30px 0;
 }
 
 a {
@@ -110,6 +112,14 @@ strong, b {
 
 img {
   max-width: 100%;
+
+  display: block;
+  margin: 0 auto;
+}
+
+article img {
+  padding: 8px;
+  box-shadow: 0 0  2px $gray;
 }
 
 .date {
