@@ -30,7 +30,8 @@ Setup a replica set like normal. But be sure to specify a slave with some amount
 
 In the above example, here is the config:
 
-<pre lang="javascript">> c={_id:"sfly",
+~~~ javascript
+c={_id:"sfly",
          members:[
              {_id:0,host:"host_a:27017"},
              {_id:1,host:"host_b:27017"},
@@ -93,6 +94,6 @@ In the above example, here is the config:
 		}
 	]
 }
-</pre>
+~~~
 
  [1]: http://www.gliffy.com/pubdoc/2214542/L.png
