@@ -16,9 +16,11 @@ In order to learn Angular one of the many resources i used was www.angularcourse
 
 Typically with rails you can build an entire skeleton for your app with a simple 'rails new' command. To my knowledge, this is not the case with Angular. So in order to get started with a skeleton, you can fork one off of github and then clone that down to your local environment. I used the repository below to gather my skeleton.
 
-https://github.com/fredsa/appengine-angular-seed-python
+[a link](https://github.com/fredsa/appengine-angular-seed-python)
 
-## Controllers & Routes
+
+
+## Routes
 
 In rails all the routes for your app were housed in config/routes.rb. In angular, however, routes will be positioned in the app.js file. For each additional route that you;d like to add to your app, simply add:
 
