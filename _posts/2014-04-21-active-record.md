@@ -6,8 +6,6 @@ date:   2014-04-21 12:00:00
 categories: posts
 ---
 
-## Mapping your project
-
 I’m beginning to learn Active Record now. It’s difficult to wrap your mind around the idea, initially. Before I discuss Active Record I’m going to articulate my thoughts on Object Relational Modeling (ORM), in general.
 
 We started off in week 2 using csv data that we were to parse and organize. We collected that information and created objects for each line (let’s say the CSV held info on People). These packaged objects could then be manipulated, organized, and distributed however the program saw fit. If I were to add or delete information then I would be obliged to update the csv file accordingly.

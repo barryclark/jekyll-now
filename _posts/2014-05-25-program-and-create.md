@@ -2,11 +2,9 @@
 layout: post
 title: To Program is to Create
 cover: cover.jpg
-date:   2013-12-09 12:00:00
+date:   2014-05-25 12:00:00
 categories: posts
 ---
-
-## To Program is to Create
 
 I am in an interesting position. Two weeks ago i passed my assessment to move onto the final phase of DevBootcamp, the phase in which we begin to learn rails and then go on to build a final project. As the weekend before phase 3 began I caught the stomach flu and had to sit out the first 3 days which left me far too behind to be useful to my group. Instead I was given the offer to defer and wait for the next phase 3 which would begin three weeks later. This turned out to be a beautiful opportunity.
 
