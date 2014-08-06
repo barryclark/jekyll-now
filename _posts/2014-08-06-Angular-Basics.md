@@ -2,7 +2,7 @@
 layout: post
 title: Angular Plumber
 cover: cover.jpg
-date:   2014-04-21 12:00:00
+date:   2014-08-06 12:00:00
 categories: posts
 ---
 
