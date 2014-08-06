@@ -25,8 +25,8 @@
 		fill: BLACK;
 	}
 
-	&:hover {
-
+	&:hover svg{
+		-webkit-animation: tiltAnchor .5s linear;
 	}
 }
 
@@ -41,4 +41,40 @@
 
 .post-date-year {
 	font-size: .75rem;
+}
+
+@keyframes tiltAnchor {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	25% {
+		transform: rotate(80deg);
+	}
+
+	50% {
+		transform: rotate(-80deg);
+	}
+  
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+@media screen and (max-width: 910px) {
+	.post-date {
+		position: relative;
+		width: auto;
+		text-align: left;
+		left: 0; top: 0;
+		margin: -30px 0;
+	}
+
+	.post-date-anchor { display: none; }
+	.post-date-day, .post-date-month, .post-date-year {
+		display: inline-block;
+		font-size: 1rem;
+		font-weight: 500;
+		color: $gray;
+	}
 }

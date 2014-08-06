@@ -9,7 +9,7 @@ module.exports = function(grunt){
 			dist : {
 				
 				options : {
-					style : 'compressed',
+					style : 'expanded',
 					sourcemap: true
 				},
 
