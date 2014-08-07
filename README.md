@@ -51,7 +51,7 @@ Currently, the `contact.md` has the following:
 
 Where it says `johnotander@icloud.com`, you will need to change that to the email that you wish to have the form data sent to. It will require you to fill the form out once when you push it live, so that you can confirm your email.
 
-### Put in a Pixyll Plug :smirk_cat:
+### Put in a Pixyll Plug
 
 If you want to give credit to the Pixyll theme with a link to <http://pixyll.com> or my personal website <http://johnotander.com> somewhere, that'd be awesome. No worries if you don't.
 
