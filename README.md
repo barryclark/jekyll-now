@@ -11,6 +11,8 @@ This Jekyll theme was crafted with <3 by [John Otander](http://johnotander.com)
 
 ## Getting Started
 
+If you're completely new to Jekyll, I recommend checking out the documentation at <http://jekyllrb.com>.
+
 ### Installing Jekyll
 
 If you don't have Jekyll already installed, you will need to go ahead and do that.
@@ -30,6 +32,8 @@ Then, start the Jekyll Server. I always like to give the `--watch` option so it 
 ```
 $ jekyll serve --watch
 ```
+
+Now you can navigate to `localhost:4000` in your browser to see the site.
 
 ### Using Github Pages
 
