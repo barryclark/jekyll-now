@@ -3,7 +3,7 @@ layout: post
 title: How to make a Jekyll post
 ---
 
-* [Markdown cheatsheet] (https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+[Markdown cheatsheet] (https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
 * Change the file name to include today’s date and the title of your post. 
 
