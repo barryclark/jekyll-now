@@ -7,6 +7,6 @@ For Markdown reference check here [Markdown cheatsheet](https://github.com/adam-
 
 Change the file name to include today’s date and the title of your post. 
 
-Jekyll requires posts to be named year-month-day-title.md.
+Jekyll requires posts to be named `year-month-day-title.md`.
 
-Update the title at the top of the Markdown file. Those variables at the top of the blog post are called front matter, which we’ll dig into a little later. In this case, they specify which layout to use and the title of the blog post. Additional front-matter variables exist, such as permalink, tags and category.
+Update the title at the top of the Markdown file. Those variables at the top of the blog post are called `front matter`, which we’ll dig into a little later. In this case, they specify which `layout` to use and the `title` of the blog post. Additional `front-matter` `variables` exist, such as `permalink`, `tags` and `category`.
