@@ -13,7 +13,7 @@ This Jekyll theme was crafted with <3 by [John Otander](http://johnotander.com)
 
 ## Getting Started
 
-If you're completely new to Jekyll, I recommend checking out the documentation at <http://jekyllrb.com>.
+If you're completely new to Jekyll, I recommend checking out the documentation at <http://jekyllrb.com> or there's a tutorial by [Smashing Magazine](http://www.smashingmagazine.com/2014/08/01/build-blog-jekyll-github-pages/).
 
 ### Installing Jekyll
 
