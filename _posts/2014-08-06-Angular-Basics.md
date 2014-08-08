@@ -6,6 +6,12 @@ date:   2014-08-06 12:00:00
 categories: posts
 ---
 
+
+
+
+
+
+
 I am in the process of learning Angular JS and figured it would be useful to explain the basics of how to setup things with angular. Angular is an excellent tool to use if you're interested in creating one-page apps that are snappy as fuck. 
 
 My experience thus far has been in Rails, so throughout this post i will be comparing how the rails network is setup and how that differs from Angular. I will also eventually make a post on how to integrate Angular into your rails app.
@@ -14,9 +20,8 @@ In order to learn Angular one of the many resources i used was www.angularcourse
 
 ## Your Skeleton
 
-Typically with rails you can build an entire skeleton for your app with a simple 'rails new' command. To my knowledge, this is not the case with Angular. So in order to get started with a skeleton, you can fork one off of github and then clone that down to your local environment. I used the repository below to gather my skeleton.
-
-[a link](https://github.com/fredsa/appengine-angular-seed-python)
+Typically with rails you can build an entire skeleton for your app with a simple 'rails new' command. To my knowledge, this is not the case with Angular. So in order to get started with a skeleton, you can fork one off of github and then clone that down to your local environment. I used  
+[this repository](https://github.com/fredsa/appengine-angular-seed-python) to gather my skeleton.
 
 
 
@@ -24,7 +29,7 @@ Typically with rails you can build an entire skeleton for your app with a simple
 
 In rails all the routes for your app were housed in config/routes.rb. In angular, however, routes will be positioned in the app.js file. For each additional route that you;d like to add to your app, simply add:
 
-$routeProvider.when('/your_url',
+	$routeProvider.when('/your_url',
       {templateUrl: 'partials/waitlist.html',
        controller: 'WaitlistControllera'})
 
@@ -35,3 +40,22 @@ Interestingly, angular also offers an 'otherwise' clause that addresses what hap
 $routeProvider.otherwise({redirectTo: '/'});
 
 We can use otherwise as a catchall and redirect them, say, back to the homepage.
+
+So all of this is wrapped in config  in your app.js file as such:
+
+
+	config(['$routeProvider', function($routeProvider) {
+		
+		$routeProvider.when('/', 
+				{templateUrl: 'partials/landing_page.html', 
+				 controller: 'LandingPageController'});
+	  $routeProvider.when('/waitlist',
+	      {templateUrl: 'partials/waitlist.html',
+	       controller: 'WaitlistController'})
+
+	   $routeProvider.otherwise({redirectTo: '/'});
+	}]);
+
+## Controller
+
+So now you'll have to create two associated files for your new route: A template (your view) in the partials folder, and a 
