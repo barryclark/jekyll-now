@@ -12,4 +12,4 @@ When I saw a tutorial for getting started with arduino and plotly, I had to try 
 
 The code is pretty straightforward, and they now even fill it the relavent credentials for you at the above link!  Clever folks over there at plot.ly
 
-Here's a link to [my data](https://plot.ly/~rossk/6 "Awesome Apartment Data").
+Here's a link to [my data](https://plot.ly/~rossk/6 "Super Awesome Apartment Data").
