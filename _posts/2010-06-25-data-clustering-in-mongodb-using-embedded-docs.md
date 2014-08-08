@@ -26,14 +26,15 @@ So how does one manage this technique in [MongoDB][2]? If you&#8217;re not famil
 
 With [SERVER-1054][3], the MongoDB folks implemented one key feature that helps one manage data clustering in MongoDB; the ability to show what file/offset a given document lives in. This allows the inspection of the location, and action to be taken. Think of it as a measure of how fragmented your data is inside blocks.
 
-<pre lang="javascript">> var arr=db.photos.find({}, {'$diskLoc': 1}).showDiskLoc()
+~~~ javascript
+var arr=db.photos.find({}, {'$diskLoc': 1}).showDiskLoc()
 > for(var i=0; i&lt;arr.length(); i++) {
     printjson(arr[i].$diskLoc.offset/512)
   }
 3241650.34375
 3241650.4453125
 >
-</pre>
+~~~
 
 In the above example, both of these rows live in block # 3241650. Thus the data is dense.
 
@@ -45,7 +46,8 @@ In MongoDB depending on the design, that may or may not be required. A design pa
 
 Let me give an example to illustrate. Let&#8217;s give the following relational data model:
 
-<pre lang="sql">postgres=# \d photos
+~~~ sql
+>postgres=# \d photos
          Table "public.photos"
   Column   |     Type      | Modifiers
 -----------+---------------+-----------
@@ -53,35 +55,41 @@ Let me give an example to illustrate. Let&#8217;s give the following relational 
  user_id   | integer       |
  file_path | character(42) |
 
-   </pre>
+~~~
 
 And the typical access path is:
 
-<pre lang="sql">select * from photos where user_id = 10;</pre>
+~~~ sql
+select * from photos where user_id = 10;
+~~~
 
 Then one can expect results (worse case) where all the results are in different blocks. Thus at least 3 I/O operations to return this query. If they were dense, they would be all in one block.
 
-<pre lang="sql">postgres=# select ctid, * from photos where user_id=10;
- ctid  | id | user_id |                 file_path
--------+----+---------+--------------------------------------------
- (0,1) |  1 |      10 | /home/foo/1.jpg
- (22,2) | 24 |      10 | /home/foo/2.jpg
+~~~ sql
+postgres=# select ctid, * from photos where user_id=10;
+ ctid    | id | user_id |               file_path
+---------+----+---------+--------------------------------------------
+ (0,1)   |  1 |      10 | /home/foo/1.jpg
+ (22,2)  | 24 |      10 | /home/foo/2.jpg
  (334,3) | 23 |      10 | /home/foo/3.jpg
-</pre>
+
+~~~
 
 In MongoDB the following model can be used to \*always\* keep the data dense and tightly clustered.
 
-<pre lang="javascript">photos=
+~~~ javascript
+photos=
 { "_id" : ObjectId("4c252807164314895e44fb6d"),
   "user_id" : 10,
   "paths" : ['/home/foo/1.jpg','/home/foo/2.jpg','/home/foo/3.jpg']
 }
-</pre>
+~~~
 
 And a query would be:
 
-<pre lang="javascript">db.photos.find({"owner":10})
-</pre>
+~~~ javascript
+db.photos.find({"owner":10})
+~~~
 
 The data payload is exactly 1 I/O. As the embedded document grows over the block size it would start to span multiple blocks. So this is an additional design consideration. Keep embedded documents less than the block size or you may not be able to see additional benefits.
 
