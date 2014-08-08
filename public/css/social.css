@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'Mono Social Icons Font';
+    src: url('/images/social/MonoSocialIconsFont-1.10.eot');
+    src: url('/images/social/MonoSocialIconsFont-1.10.eot?#iefix') format('embedded-opentype'),
+         url('/images/social/MonoSocialIconsFont-1.10.woff') format('woff'),
+         url('/images/social/MonoSocialIconsFont-1.10.ttf') format('truetype'),
+         url('/images/social/MonoSocialIconsFont-1.10.svg#MonoSocialIconsFont') format('svg');
+    src: url('/images/social/MonoSocialIconsFont-1.10.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.symbol, a.symbol:before {
+    font-family: 'Mono Social Icons Font';
+    -webkit-text-rendering: optimizeLegibility;
+    -moz-text-rendering: optimizeLegibility;
+    -ms-text-rendering: optimizeLegibility;
+    -o-text-rendering: optimizeLegibility;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+}
+
+a.symbol:before {
+    content: attr(title);
+    margin-right: 0.3em;
+    font-size: 130%;
+}
+
+a.symbol {
+    background: #9f9f9f;
+    padding: 7px 5px 3px 5px;
+    color: white;
+    text-decoration: none;
+}
