@@ -2,11 +2,7 @@
 layout: post
 title: New Jekyll Blog
 style: |
-<style type="text/css">
-    #special{
-     color: #6195ED;
-    }
- </style>
+<link href="http://mika.ph/stylesheets/screen.css" rel="stylesheet">
 
 ---
 
