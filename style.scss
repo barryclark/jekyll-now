@@ -9,6 +9,8 @@
 @import "_variables";
 // Syntax highlighting @import is at the bottom of this file
 
+$satin-linen: #e8e6db;
+
 /**************/
 /* BASE RULES */
 /**************/
@@ -18,7 +20,7 @@ html {
 }
 
 body {
-	background: $white;
+	background: $satin-linen;
   font: 18px/1.4 $helvetica;
   color: $darkGray;
 }
