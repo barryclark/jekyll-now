@@ -17,7 +17,8 @@
 
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     {% if page.style %}
-       {{ page.style }}
+       <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/{{ page.style }}.css" />
+       <script type='text/javascript' src="{{ site.baseurl }}/{{ page.style }}.js"></script>
     {% endif %}
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
   </head>
