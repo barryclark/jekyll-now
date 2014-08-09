@@ -1,8 +1,8 @@
 ---
 layout: post
 title: New Jekyll Blog
-style: |
-<link href="http://mika.ph/stylesheets/screen.css" rel="stylesheet">
+style: !xml |
+       <link href="http://mika.ph/stylesheets/screen.css" rel="stylesheet">
 
 ---
 
