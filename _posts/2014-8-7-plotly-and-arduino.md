@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Plot + Arduino = Greatness"
+title: "Plotly + Arduino = Greatness"
 published: true
 ---
 
