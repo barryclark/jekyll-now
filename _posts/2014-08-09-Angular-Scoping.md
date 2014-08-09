@@ -85,3 +85,28 @@ Thus our template will render into:
 	<div>jam</div>
 
 
+Well, what if you want to import some variable from your controller and that's what you want foo to equal? say you have the following controller:
+
+	myApp.controller.('myCtrl', function($scope){
+		$scope.name = 'raza';
+		});
+
+in order for our directive to attain that variable we simply have to change the html to this:
+
+	<div ng-app='myApp'>
+		<div ng-controller='myCtrl'>
+			<bob foo='{{name}}'></bob>
+		</div>
+	</div>
+
+which will then render the variable from the controller. easy fuckin peasy (:
+
+
+
+## The = sign
+
+If you need to connect a object within your controller to your directive (i.e they become one in the same) then you will need to use the = sign in your scope.
+
+Thus it is important that you send in not a string but some sort of object that can be interconnected with the directive. This way, manipulation by the directive will alter the object in the controller as well.
+
+
