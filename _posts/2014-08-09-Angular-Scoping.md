@@ -6,6 +6,11 @@ date:   2014-08-09 12:00:00
 categories: posts
 ---
 
+
+
+
+
+
 Say you have a directive as such:
 
 	var myApp = Angular.module('myApp', []);
