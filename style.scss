@@ -7,6 +7,7 @@
 
 @import "_reset";
 @import "_variables";
+
 // Syntax highlighting @import is at the bottom of this file
 
 /**************/
@@ -18,8 +19,8 @@ html {
 }
 
 body {
-	background: $white;
-  font: 18px/1.4 $helvetica;
+	background: rgb(220,220,220);
+  font: 18px/1.4 $georgia;
   color: $darkGray;
 }
 
@@ -31,7 +32,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
+  font-family: $georgia;
   color: $darkerGray;
   font-weight: 600;
   
@@ -149,11 +150,12 @@ img {
 
 .wrapper-masthead {
   margin-bottom: 50px;
+  background-color: $lightGray
 }
 
 .masthead {
   padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
+  border-bottom: 1px solid $darkGray;
   
   @include mobile {
     text-align: center;
@@ -191,7 +193,7 @@ img {
   margin: 0;
   color: $darkGray;
   cursor: pointer;
-  font-family: $helveticaNeue; 
+  font-family: $georgia; 
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
@@ -210,7 +212,7 @@ img {
 nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue; 
+  font-family: $georgia; 
   font-size: 18px;
   
   @include mobile {
@@ -278,6 +280,10 @@ nav {
 footer {
   padding: 20px 0;
   text-align: center;
+}
+
+footer:hover{
+
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
