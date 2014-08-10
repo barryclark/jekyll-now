@@ -15,9 +15,13 @@
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <!-- Style Sheets -->
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/static/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/static/css/semantic.min.css" />
 
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+    <!-- Javascript -->
+    <script type="text/javascript" src="static/js/semantic.min.js"></script>
+
   </head>
 
   <body>
@@ -32,8 +36,8 @@
           </div>
           
           <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about.html">About</a>
+            <a href="{{ site.baseurl }}/"><b>B</b>LOG</a>
+            <a href="{{ site.baseurl }}/about.html"><b>A</b>BOUT</a>
           </nav>
         </header>
       </div>
@@ -46,7 +50,24 @@
     <div class="wrapper-footer">
       <div class="container">
         <footer class="footer">
-          {% include svg-icons.html %}
+
+          {% if site.footer-links.email %}<a href="mailto: {{ site.footer-links.email }}" target="_blank"><i class="large black mail link icon"></i></a>{% endif %}
+          
+          {% if site.footer-links.facebook %}
+          <a href="http://facebook.com/{{ site.footer-links.facebook }}" target="_blank"><i class="large black facebook link icon"></i></a>{% endif %}
+          
+          {% if site.footer-links.flickr %}<a href="http://flickr.com/{{ site.footer-links.flickr }}" target="_blank"><i class="large black flickr link icon"></i></a>{% endif %}
+
+          {% if site.footer-links.github %}<a href="http://github.com/{{ site.footer-links.github }}" target="_blank"><i class="large black github link icon"></i></a>{% endif %}
+          
+          {% if site.footer-links.instagram %}<a href="http://instagram.com/{{ site.footer-links.instagram }}" target="_blank"><i class="large black instagram link icon"></i></a>{% endif %}
+          
+          {% if site.footer-links.linkedin %}<a href="http://linkedin.com/in/{{ site.footer-links.linkedin }}" target="_blank"><i class="large black linkedin link icon"></i></a>{% endif %}
+
+          {% if site.footer-links.rss %}<a href="{{ site.baseurl }}/feed.xml" target="_blank">{% include svg-icons/rss.html %}</a>{% endif %}
+          
+          {% if site.footer-links.twitter %}<a href="http://twitter.com/{{ site.footer-links.twitter }}" target="_blank"><i class="large black twitter link icon"></i></a>{% endif %}
+          
         </footer>
       </div>
     </div>
