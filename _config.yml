@@ -21,12 +21,12 @@ footer-links:
   email: 
   facebook: 
   flickr: 
-  github: barryclark/jekyll-now
+  github: finucane81/finucae81.github.io
   instagram: 
   linkedin: 
   pinterest: 
   rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
-  twitter: jekyllrb
+  twitter:
 
 # Your disqus shortname, entering this will enable commenting on posts
 disqus: 
