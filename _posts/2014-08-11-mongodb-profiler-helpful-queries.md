@@ -1,5 +1,5 @@
 ---
-title: MongoDB Profiler - Helpful Queries
+title: MongoDB Profiler Helpful Queries
 author: Kenny Gorman
 type: post
 ---
