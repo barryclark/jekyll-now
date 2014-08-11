@@ -76,19 +76,28 @@ db.system.profile.aggregate([
 			"millis" : "$millis",
 			"total_time" : { $add : [ "$millis", "$timeAcquiringMicrosrMS",
                 "$timeAcquiringMicroswMS" ] },
-			"timeAcquiringMicrosrMS" : "$timeAcquiringMicrosrMS",
-			"timeAcquiringMicroswMS" : "$timeAcquiringMicroswMS",
-			"timeLockedMicrosrMS" : "$timeLockedMicrosrMS",
-			"timeLockedMicroswMS" : "$timeLockedMicroswMS" }
+			"timeAcquiringMicrosrMS" :
+                "$timeAcquiringMicrosrMS",
+			"timeAcquiringMicroswMS" :
+                "$timeAcquiringMicroswMS",
+			"timeLockedMicrosrMS" :
+                "$timeLockedMicrosrMS",
+			"timeLockedMicroswMS" :
+                "$timeLockedMicroswMS" }
 	},
 	{ $group : {
 			_id : "$op",
 			"average response time" : { $avg : "$millis" },
-			"average response time + acquire time": { $avg: "$total_time"},
-			"average acquire time reads" : { $avg : "$timeAcquiringMicrosrMS" },
-			"average acquire time writes" : { $avg : "$timeAcquiringMicroswMS" },
-			"average lock time reads" : { $avg : "$timeLockedMicrosrMS" },
-			"average lock time writes" : { $avg : "$timeLockedMicroswMS" } }
+			"average response time + acquire time":
+                { $avg: "$total_time"},
+			"average acquire time reads" :
+                { $avg : "$timeAcquiringMicrosrMS" },
+			"average acquire time writes" :
+                { $avg : "$timeAcquiringMicroswMS" },
+			"average lock time reads" :
+                { $avg : "$timeLockedMicrosrMS" },
+			"average lock time writes" :
+                { $avg : "$timeLockedMicroswMS" } }
 	}
 ]);
 ~~~
