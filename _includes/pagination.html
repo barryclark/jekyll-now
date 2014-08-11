@@ -8,7 +8,7 @@
   </div>
   <div class="right">
     {% if paginator.previous_page %}
-      {% if paginator.page == 2 %}
+      {% if paginator.page > 2 %}
         <a class="pagination-item" href="{{ site.baseurl }}/">Newer</a>
       {% else %}
         <a class="pagination-item" href="{{ site.baseurl }}page{{paginator.previous_page}}">Newer</a>
