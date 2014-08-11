@@ -109,4 +109,6 @@ If you need to connect a object within your controller to your directive (i.e th
 
 Thus it is important that you send in not a string but some sort of object that can be interconnected with the directive. This way, manipulation by the directive will alter the object in the controller as well.
 
+## The & sign
 
+The & sign will allow you to communicate back and forth from your directive and your controller without it being binding in the way that the = sign is.
