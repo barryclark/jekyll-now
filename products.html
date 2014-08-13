@@ -1,0 +1,18 @@
+---
+layout: product
+---
+
+<div class="posts">
+  {% for post in site.posts %}
+    <article class="post">    
+      
+      <h3><a href="{{ site.baseurl }}{{ product.url }}">{{ product.title }}</a></h3>
+
+      <div class="entry">
+        {{ product.content | truncatewords:40}}
+      </div>
+      
+      <a href="{{ site.baseurl }}{{ product.url }}" class="read-more">Read More</a>
+    </article>
+  {% endfor %}
+</div>

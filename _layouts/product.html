@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+<article class="post">
+  <h3>{{ page.title }}</h3>
+
+  <div class="entry">
+    {{ content }}
+  </div>
+
+  {% include disqus.html disqus_identifier=page.disqus_identifier %}
+</article>
