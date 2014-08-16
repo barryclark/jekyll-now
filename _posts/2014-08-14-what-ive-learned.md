@@ -1,10 +1,12 @@
 ---
 layout: post
-title: 3 things I've Learned This Week
+title: things I've Learned
 cover: cover.jpg
 date:   2014-08-14 12:00:00
 categories: posts
 ---
+
+## 3 things I learned this week
 
 This week we really made consistent progress in terms of creating the product we want to show for demo day. I was working on creating the 'add actions' page which would allow a property affiliate to search through his or her list of buildings, select a unit, and then send a rental application using his prospective tenant's email. This would then create an instance of that renter, if s/he was not already created, send her/him an email prompting them to log in and complete the application.
 
