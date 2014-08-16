@@ -2,7 +2,7 @@
 layout: post
 title: things I've Learned
 cover: cover.jpg
-date:   2014-08-14 12:00:00
+date:   2014-08-16 12:00:00
 categories: posts
 ---
 
