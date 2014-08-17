@@ -2,7 +2,7 @@
 layout: post
 title: On Coolhouse labs
 cover: cover.jpg
-date:   2014-08-15 12:00:00
+date:   2014-08-17 12:00:00
 categories: posts
 ---
 
