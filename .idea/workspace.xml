@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9309113b-c007-416c-9545-d40751153c54" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CNAME" afterPath="$PROJECT_DIR$/CNAME" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_config.yml" afterPath="$PROJECT_DIR$/_config.yml" />
     </list>
     <ignored path="miriamtocino.github.io.iws" />
@@ -24,10 +25,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_config.yml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_config.yml">
+      <file leaf-file-name="CNAME" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CNAME">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="8" selection-start="899" selection-end="899" vertical-scroll-proportion="0.55480117" vertical-offset="260" max-vertical-offset="2080">
+            <state line="0" column="20" selection-start="20" selection-end="20" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1031">
               <folding />
             </state>
           </provider>
@@ -49,6 +50,7 @@
         <option value="$PROJECT_DIR$/_posts/2014-3-3-Hello-World.md" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/_config.yml" />
+        <option value="$PROJECT_DIR$/CNAME" />
       </list>
     </option>
   </component>
@@ -215,6 +217,13 @@
     <entry file="file://$PROJECT_DIR$/_config.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="32" column="8" selection-start="899" selection-end="899" vertical-scroll-proportion="0.55480117" vertical-offset="260" max-vertical-offset="2080">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CNAME">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="20" selection-start="20" selection-end="20" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1031">
           <folding />
         </state>
       </provider>
