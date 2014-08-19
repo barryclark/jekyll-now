@@ -164,13 +164,13 @@ pre {
   margin-top: 0;
   margin-bottom: 1rem;
   padding: 1rem;
-  font-size: .8rem;
+  font-size: .7rem;
   line-height: 1.4;
   white-space: pre;
   white-space: pre-wrap;
   word-break: break-all;
   word-wrap: break-word;
-  background-color: #f9f9f9;
+  background-color: #F8F8F8;
 }
 pre code {
   padding: 0;
@@ -261,6 +261,7 @@ tbody tr:nth-child(odd) th {
 .lead {
   font-size: 1.25rem;
   font-weight: 300;
+  indent: 12px;
 }
 
 
