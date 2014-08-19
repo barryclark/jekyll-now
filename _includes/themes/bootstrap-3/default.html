@@ -14,6 +14,8 @@
 
     <!-- Bootstrap styles -->
     <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Optional theme -->
+    <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
     <!-- Jumbotron Narrow -->
     <link href="{{ ASSET_PATH }}/bootstrap/css/jumbotron-narrow.css" rel="stylesheet">
 
@@ -42,7 +44,6 @@
   </head>
 
   <body>
-
   <div class="container wrapper">
       <div class="header">
           <ul class="nav nav-pills pull-right">
@@ -64,20 +65,7 @@
 
       <div class="row marketing">
           <div class="col-lg-9">
-              {% for post in site.posts %}
-                  <article class="post">
-
-                      <p>{{ post.date | date_to_long_string }}</p>
-
-                      <h4 class="epsilon"><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h4>
-
-                      <div class="entry">
-                          {{ post.content | truncatewords:80}}
-                      </div>
-
-                      <a href="{{ BASE_PATH }}{{ post.url }}" class="btn read-more">Read More</a>
-                  </article>
-              {% endfor %}
+            {{ content }}
           </div>
 
           <aside class="col-lg-3 about-me">
@@ -104,6 +92,7 @@
   </div> <!-- /container -->
 
     {% include JB/analytics %}
+
 
     <!-- Latest compiled and minified JavaScript, requires jQuery 1.x (2.x not supported in IE8) -->
     <!-- Placed at the end of the document so the pages load faster -->
