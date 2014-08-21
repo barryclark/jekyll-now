@@ -25,10 +25,9 @@
       {% assign tags_list = page.tags %}
       {% include JB/tags_list %}
     </ul>
-  {% endunless %}  
-  
-    <hr>
-    <ul class="pagination">
+  {% endunless %}
+
+    <ul class="pagination pull-right">
     {% if page.previous %}
       <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&laquo; Previous</a></li>
     {% else %}
@@ -41,7 +40,8 @@
       <li class="next disabled"><a>Next &rarr;</a>
     {% endif %}
     </ul>
-    <hr>
-    {% include JB/comments %}
   </div>
 </div>
+
+{% include JB/comments %}
+

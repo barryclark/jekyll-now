@@ -51,42 +51,17 @@
               <li><a href="#">Contact</a></li>
           </ul>
           <h1 class="logo">
-              <a href="{{ HOME_PATH }}">Miriam<span>Tocino.</span></a>
+              <a href="{{ HOME_PATH }}">Miriam<span>Tocino.</span><small>Converting into a Web Developer.</small></a>
           </h1>
       </div>
 
-      <!--
-      <div class="jumbotron">
-          <h1><a href="#">Jumbotron heading</a></h1>
-          <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn" href="#" role="button">Read more</a></p>
-      </div>
-      -->
-
-      <div class="row marketing">
-          <div class="col-lg-9">
-            {{ content }}
-          </div>
-
-          <aside class="col-lg-3 about-me">
-              <div class="widget">
-                  <h4 class="epsilon">Nice to see you! </h4>
-                  <p>I am a Web Developer living and working in Frankfurt (Germany).
-                      At this very moment I spend my time coding with Symfony,
-                      but I am hooked on E-Learning and wolf down all kind of online courses.
-                      If I am not coding now, I might be doing some yoga.
-                      <a href="#">Wanna know a little bit more about me?</a></p>
-              </div>
-          </aside>
-      </div>
+      {{ content }}
 
       <div class="footer">
-          <div class="container">
-              <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}
-                  with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
-                  and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
-              </p>
-          </div>
+          <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}
+              with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+              and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
+          </p>
       </div>
 
   </div> <!-- /container -->
