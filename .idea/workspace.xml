@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9309113b-c007-416c-9545-d40751153c54" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/symfony-pocket-guides/2014-08-25-contact-form.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/themes/bootstrap-3/bootstrap/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/assets/themes/bootstrap-3/bootstrap/css/bootstrap.min.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.md" afterPath="$PROJECT_DIR$/index.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/themes/bootstrap-3/post.html" afterPath="$PROJECT_DIR$/_includes/themes/bootstrap-3/post.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/themes/bootstrap-3/css/style.css" afterPath="$PROJECT_DIR$/assets/themes/bootstrap-3/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -27,10 +30,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="default.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_includes/themes/bootstrap-3/default.html">
+      <file leaf-file-name="categories.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/categories.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="0" selection-start="2527" selection-end="2527" vertical-scroll-proportion="0.2613365" vertical-offset="1289" max-vertical-offset="2158">
+            <state line="8" column="11" selection-start="118" selection-end="118" vertical-scroll-proportion="0.0877193" vertical-offset="158" max-vertical-offset="728">
               <folding />
             </state>
           </provider>
@@ -61,13 +64,15 @@
         <option value="$PROJECT_DIR$/assets/themes/bootstrap-3/bootstrap/css/jumbotron-narrow.css" />
         <option value="$PROJECT_DIR$/_config.yml" />
         <option value="$PROJECT_DIR$/_layouts/post.html" />
-        <option value="$PROJECT_DIR$/_includes/themes/bootstrap-3/post.html" />
         <option value="$PROJECT_DIR$/_site/assets/themes/bootstrap-3/css/style.css" />
-        <option value="$PROJECT_DIR$/assets/themes/bootstrap-3/bootstrap/css/bootstrap.min.css" />
         <option value="$PROJECT_DIR$/_includes/themes/bootstrap-3/default.html" />
         <option value="$PROJECT_DIR$/_includes/themes/bootstrap-3/page.html" />
+        <option value="$PROJECT_DIR$/_posts/pocket-guides/2014-08-25-contact-form-with-symfony.md" />
+        <option value="$PROJECT_DIR$/assets/themes/bootstrap-3/bootstrap/css/bootstrap.min.css" />
         <option value="$PROJECT_DIR$/index.md" />
+        <option value="$PROJECT_DIR$/_includes/themes/bootstrap-3/post.html" />
         <option value="$PROJECT_DIR$/assets/themes/bootstrap-3/css/style.css" />
+        <option value="$PROJECT_DIR$/_posts/symfony-pocket-guides/2014-08-25-contact-form.md" />
       </list>
     </option>
   </component>
@@ -202,7 +207,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="core-samples" />
+              <option name="myItemId" value="symfony-pocket-guides" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -216,7 +221,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="_layouts" />
+              <option name="myItemId" value="_posts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core-samples" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -293,6 +302,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/_posts/pocket-guides" />
       <recent name="$PROJECT_DIR$/_posts/core-samples" />
       <recent name="$PROJECT_DIR$/assets/themes/bootstrap-3/bootstrap/css" />
     </key>
@@ -329,7 +339,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298122" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3298122" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -461,23 +471,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/themes/bootstrap-3/bootstrap/css/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="5295" selection-start="5443" selection-end="5443" vertical-scroll-proportion="0.28007182" vertical-offset="0" max-vertical-offset="557">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/core-samples/2013-12-29-jekyll-introduction.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="10842">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/core-samples/2012-12-29-jekyll-introduction.md">
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
@@ -523,9 +516,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/themes/bootstrap-3/post.html">
+    <entry file="file://$PROJECT_DIR$/assets/themes/bootstrap-3/bootstrap/css/bootstrap.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="4" selection-start="184" selection-end="270" vertical-scroll-proportion="0.28007182" vertical-offset="0" max-vertical-offset="1378">
+        <state line="6" column="5291" selection-start="5439" selection-end="5439" vertical-scroll-proportion="0.28007182" vertical-offset="0" max-vertical-offset="557">
           <folding />
         </state>
       </provider>
@@ -535,21 +528,55 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="37" selection-start="411" selection-end="430" vertical-scroll-proportion="0.7169118" vertical-offset="104" max-vertical-offset="806">
+        <state line="15" column="10" selection-start="380" selection-end="380" vertical-scroll-proportion="0.23529412" vertical-offset="262" max-vertical-offset="806">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/themes/bootstrap-3/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1320" column="22" selection-start="40879" selection-end="40879" vertical-scroll-proportion="0.199284" vertical-offset="34153" max-vertical-offset="35256">
+        <state line="1360" column="22" selection-start="41448" selection-end="41448" vertical-scroll-proportion="0.90692127" vertical-offset="34600" max-vertical-offset="35542">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/core-samples/2013-12-29-jekyll-introduction.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="314" column="0" selection-start="12601" selection-end="12663" vertical-scroll-proportion="0.48029557" vertical-offset="7774" max-vertical-offset="10842">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/symfony-pocket-guides/2014-08-25-contact-form.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="5" selection-start="1259" selection-end="1259" vertical-scroll-proportion="0.8109091" vertical-offset="293" max-vertical-offset="1118">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/themes/bootstrap-3/post.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="8" selection-start="240" selection-end="240" vertical-scroll-proportion="0.18615752" vertical-offset="0" max-vertical-offset="1456">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_includes/themes/bootstrap-3/default.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="0" selection-start="2527" selection-end="2527" vertical-scroll-proportion="0.2613365" vertical-offset="1289" max-vertical-offset="2158">
+        <state line="58" column="0" selection-start="2527" selection-end="2527" vertical-scroll-proportion="0.4308797" vertical-offset="1268" max-vertical-offset="2158">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/categories.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="11" selection-start="118" selection-end="118" vertical-scroll-proportion="0.0877193" vertical-offset="158" max-vertical-offset="728">
           <folding />
         </state>
       </provider>

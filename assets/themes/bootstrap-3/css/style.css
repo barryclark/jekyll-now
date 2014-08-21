@@ -1331,7 +1331,7 @@ a:hover {
 }
 
 .header {
-    border-bottom: 1px solid #e5e5e5;
+    border-bottom: 3px solid #000;
     padding-bottom: 20px;
 }
 
@@ -1340,12 +1340,23 @@ a:hover {
     font-weight: 400;
 }
 
-h2.epsilon a {
+h3.epsilon, h3.epsilon a {
     color: #d33682;
-
 }
 
-h2.epsilon {
+h3.epsilon a:hover {
+    color: #000;
+}
+
+h3.epsilon {
     margin-top: 10px;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.footer {
+    border-top: 3px solid #000;
+    padding-top: 20px;
+    margin-top: 150px;
 }
