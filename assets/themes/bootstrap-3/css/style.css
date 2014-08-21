@@ -1318,16 +1318,16 @@ a:hover {
 }
 
 .post {
-    border-bottom: 1px solid #e5e5e5;
-    padding: 40px 0 5px 0;
-}
-
-.post .entry {
-    padding-bottom: 20px;
+    padding-top: 40px;
 }
 
 .about-me {
     padding: 40px 0 0 40px;
+}
+
+.container-read-more {
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 40px;
 }
 
 .header {
@@ -1338,10 +1338,6 @@ a:hover {
 .date {
     color: #7f7f7f;
     font-weight: 400;
-}
-
-.footer {
-    padding-top: 40px;
 }
 
 h2.epsilon a {

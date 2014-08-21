@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9309113b-c007-416c-9545-d40751153c54" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/miriamtocino.github.io.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/core-samples/2012-12-29-jekyll-introduction.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/core-samples/2013-12-29-jekyll-introduction.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_config.yml" afterPath="$PROJECT_DIR$/_config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/themes/bootstrap-3/bootstrap/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/assets/themes/bootstrap-3/bootstrap/css/bootstrap.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/themes/bootstrap-3/default.html" afterPath="$PROJECT_DIR$/_includes/themes/bootstrap-3/default.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.md" afterPath="$PROJECT_DIR$/index.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/themes/bootstrap-3/page.html" afterPath="$PROJECT_DIR$/_includes/themes/bootstrap-3/page.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/themes/bootstrap-3/post.html" afterPath="$PROJECT_DIR$/_includes/themes/bootstrap-3/post.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_layouts/post.html" afterPath="$PROJECT_DIR$/_layouts/post.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/themes/bootstrap-3/css/style.css" afterPath="$PROJECT_DIR$/assets/themes/bootstrap-3/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -36,13 +27,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.md" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/index.md">
-          <provider editor-type-id="MarkdownPreviewEditor">
-            <state />
-          </provider>
+      <file leaf-file-name="default.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_includes/themes/bootstrap-3/default.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="2" selection-start="92" selection-end="114" vertical-scroll-proportion="0.19117647" vertical-offset="104" max-vertical-offset="806">
+            <state line="58" column="0" selection-start="2527" selection-end="2527" vertical-scroll-proportion="0.2613365" vertical-offset="1289" max-vertical-offset="2158">
               <folding />
             </state>
           </provider>
@@ -76,10 +64,10 @@
         <option value="$PROJECT_DIR$/_includes/themes/bootstrap-3/post.html" />
         <option value="$PROJECT_DIR$/_site/assets/themes/bootstrap-3/css/style.css" />
         <option value="$PROJECT_DIR$/assets/themes/bootstrap-3/bootstrap/css/bootstrap.min.css" />
-        <option value="$PROJECT_DIR$/assets/themes/bootstrap-3/css/style.css" />
         <option value="$PROJECT_DIR$/_includes/themes/bootstrap-3/default.html" />
         <option value="$PROJECT_DIR$/_includes/themes/bootstrap-3/page.html" />
         <option value="$PROJECT_DIR$/index.md" />
+        <option value="$PROJECT_DIR$/assets/themes/bootstrap-3/css/style.css" />
       </list>
     </option>
   </component>
@@ -341,7 +329,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3298122" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298122" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -490,13 +478,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/themes/bootstrap-3/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1325" column="25" selection-start="40965" selection-end="40965" vertical-scroll-proportion="0.44152746" vertical-offset="34080" max-vertical-offset="35360">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/core-samples/2012-12-29-jekyll-introduction.md">
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
@@ -549,19 +530,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/themes/bootstrap-3/default.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="6" selection-start="2533" selection-end="2533" vertical-scroll-proportion="0.39317775" vertical-offset="1289" max-vertical-offset="2158">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.md">
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="2" selection-start="92" selection-end="114" vertical-scroll-proportion="0.19117647" vertical-offset="104" max-vertical-offset="806">
+        <state line="19" column="37" selection-start="411" selection-end="430" vertical-scroll-proportion="0.7169118" vertical-offset="104" max-vertical-offset="806">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/themes/bootstrap-3/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1320" column="22" selection-start="40879" selection-end="40879" vertical-scroll-proportion="0.199284" vertical-offset="34153" max-vertical-offset="35256">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/themes/bootstrap-3/default.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="0" selection-start="2527" selection-end="2527" vertical-scroll-proportion="0.2613365" vertical-offset="1289" max-vertical-offset="2158">
           <folding />
         </state>
       </provider>

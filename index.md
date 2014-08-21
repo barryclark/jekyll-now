@@ -17,7 +17,7 @@ tagline:
           {{ post.content | truncatewords:40}}
       </div>
 
-      <div>
+      <div class="container-read-more">
         <a href="{{ BASE_PATH }}{{ post.url }}" class="btn read-more">Read More</a>
       </div>
   </article>
