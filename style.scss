@@ -33,7 +33,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
   color: $darkerGray;
-  font-weight: 600;
+  font-weight: bold;
   
   line-height: 1.7;
   margin: 1em 0 15px;
@@ -45,7 +45,6 @@ h1, h2, h3, h4, h5, h6 {
 }
   
 h1 {  
-  font-weight: 500;
   font-size: 32px;
   a {
     color: inherit;
@@ -105,7 +104,7 @@ em, i {
 }
 
 strong, b {
-  font-weight: 600;
+  font-weight: bold;
 }
 
 img {
