@@ -5,6 +5,8 @@ tagline:
 ---
 {% include JB/setup %}
 
+<h1 class="text-center" style="color: #d33682;margin-top: 130px;">Coming soon!</h1>
+
 {% for post in site.posts %}
   <article class="post">
       <div class="date">

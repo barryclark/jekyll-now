@@ -9,7 +9,14 @@ tags : [symfony]
 In this [Pocket Guide]()
 we will imagine that we have to integrate a contact form into one of our websites using Symfony2.
 
-#### Form Requirements
+### Table of Contents
+
+To-Do
+
+- - -
+
+
+### Form Requirements
 
 + **Form Fields.**
     Last Name, First Name, E-Mail, Phone, Street, City, Country, Postal Code
@@ -35,4 +42,20 @@ This technique is known as [Confirmed opt-in (COI)](http://en.wikipedia.org/wiki
 + Only the data from the customers who confirmed his details via email,
 should be downloaded via a URL (password protected) as a CSV file.
 
-- - -
+### Folder Structure
+
+    .
+    |-- _config.yml
+    |-- _includes
+    |-- _layouts
+    |   |-- default.html
+    |   |-- post.html
+    |-- _posts
+    |   |-- 2011-10-25-open-source-is-good.markdown
+    |   |-- 2011-04-26-hello-world.markdown
+    |-- _site
+    |-- index.html
+    |-- assets
+        |-- css
+            |-- style.css
+        |-- javascripts
