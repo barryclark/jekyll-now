@@ -1334,6 +1334,7 @@ a:hover {
 
 .header {
     border-bottom: 3px solid #000;
+    padding-bottom: 15px;
 }
 
 .date {
@@ -1360,12 +1361,4 @@ h3.epsilon {
     border-top: 3px solid #000;
     padding-top: 20px;
     margin-top: 150px;
-}
-
-.logo img.image-airplane {
-    margin-bottom: 20px;
-}
-
-ul.nav-pills {
-  margin-top: 14px;
 }

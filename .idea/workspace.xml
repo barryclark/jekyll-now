@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9309113b-c007-416c-9545-d40751153c54" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_drafts/development-environment.md" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_drafts/jekyll-introduction-draft.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_posts/core-samples/2012-12-29-jekyll-introduction.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_posts/core-samples/2013-12-29-jekyll-introduction.md" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/core-samples/2011-12-29-jekyll-introduction.md" afterPath="$PROJECT_DIR$/_drafts/2014-00-00-jekyll-introduction.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/symfony-pocket-guides/2014-08-25-contact-form.md" afterPath="$PROJECT_DIR$/_drafts/contact-form-ajax.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/themes/bootstrap-3/default.html" afterPath="$PROJECT_DIR$/_includes/themes/bootstrap-3/default.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.md" afterPath="$PROJECT_DIR$/index.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/themes/bootstrap-3/css/style.css" afterPath="$PROJECT_DIR$/assets/themes/bootstrap-3/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -34,10 +27,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="default.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_includes/themes/bootstrap-3/default.html">
+      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assets/themes/bootstrap-3/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="81" selection-start="2304" selection-end="2304" vertical-scroll-proportion="0.3870334" vertical-offset="880" max-vertical-offset="2184">
+            <state line="1336" column="22" selection-start="41089" selection-end="41089" vertical-scroll-proportion="0.38508064" vertical-offset="34354" max-vertical-offset="35594">
               <folding />
             </state>
           </provider>
@@ -74,10 +67,10 @@
         <option value="$PROJECT_DIR$/assets/themes/bootstrap-3/bootstrap/css/bootstrap.min.css" />
         <option value="$PROJECT_DIR$/_includes/themes/bootstrap-3/post.html" />
         <option value="$PROJECT_DIR$/_posts/symfony-pocket-guides/2014-08-25-contact-form.md" />
-        <option value="$PROJECT_DIR$/assets/themes/bootstrap-3/css/style.css" />
         <option value="$PROJECT_DIR$/_drafts/0000-00-00-development-environment.md" />
         <option value="$PROJECT_DIR$/index.md" />
         <option value="$PROJECT_DIR$/_includes/themes/bootstrap-3/default.html" />
+        <option value="$PROJECT_DIR$/assets/themes/bootstrap-3/css/style.css" />
       </list>
     </option>
   </component>
@@ -146,6 +139,54 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="miriamtocino.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="miriamtocino.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bootstrap-3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="miriamtocino.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="miriamtocino.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bootstrap-3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -470,13 +511,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/themes/bootstrap-3/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1369" column="16" selection-start="41518" selection-end="41518" vertical-scroll-proportion="2.0471513" vertical-offset="33510" max-vertical-offset="35776">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_drafts/development-environment.md">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="15" selection-start="49" selection-end="49" vertical-scroll-proportion="0.07761194" vertical-offset="0" max-vertical-offset="1716">
@@ -499,7 +533,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="64" selection-start="125" selection-end="125" vertical-scroll-proportion="0.18109453" vertical-offset="0" max-vertical-offset="1005">
+        <state line="7" column="66" selection-start="127" selection-end="127" vertical-scroll-proportion="0.18109453" vertical-offset="0" max-vertical-offset="1005">
           <folding />
         </state>
       </provider>
@@ -509,7 +543,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_includes/themes/bootstrap-3/default.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="81" selection-start="2304" selection-end="2304" vertical-scroll-proportion="0.3870334" vertical-offset="880" max-vertical-offset="2184">
+        <state line="55" column="17" selection-start="2648" selection-end="2648" vertical-scroll-proportion="0.54027504" vertical-offset="880" max-vertical-offset="2236">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/themes/bootstrap-3/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1336" column="22" selection-start="41089" selection-end="41089" vertical-scroll-proportion="0.38508064" vertical-offset="34354" max-vertical-offset="35594">
           <folding />
         </state>
       </provider>
