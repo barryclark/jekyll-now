@@ -125,8 +125,7 @@ img.avatar {
 
 .container {
   width: 600px;
-  margin: 0 auto;
-  margin-top: 100px;
+  margin: 100px auto 25px;
   background-color: rgba(255, 255, 255, 0.5);
   padding: 0 60px 30px;
   border-radius: 6px;
