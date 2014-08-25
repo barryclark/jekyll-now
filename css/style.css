@@ -27,8 +27,6 @@ body {
   font-weight: 300;
   color: #444;
    -webkit-font-smoothing: antialiased;
-   /* Delete background for a vanilla style */
-   background: url(../images/background.jpg) top center no-repeat;
 }
 
 header {
@@ -106,6 +104,11 @@ a:hover {
 
 /* Images */
 
+.background {
+   /* Delete background class from <body> for a vanilla style */
+   background: url(../images/background.jpg) top center no-repeat;
+}
+
 img.avatar {
   margin-bottom: 30px;
   border-radius: 50%;
@@ -168,7 +171,7 @@ footer {
     text-align: left;
     padding-bottom: 15px;
   }
-
+  
   .about p:nth-of-type(1) { 
     font-size: 1.25em; /* 20/16 */
     text-align: center;
