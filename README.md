@@ -9,7 +9,7 @@ __A stylish and personable webpage to tell the world about yourself.__
 
 ###Comes in 2 flavours
 
-You can choose a background image of your choice or link/upload a custom image. For those who prefer the simpler things in life, remove the background from ```<body>``` for a vanilla theme.
+You can use the default background image or set a custom image of your choice. For those who prefer the simpler things in life, remove the background from ```<body>``` for a vanilla theme.
 
 ```
 <!-- Include background -->
@@ -37,7 +37,17 @@ Personalise the content and tell the world about yourself.
 
 ###Get Social
 
-The icons for major social networks and services are baked in. Just uncomment whatever ones you need, add the url and you're done.
+Icons for major social networks and services are baked in. Just uncomment whatever ones you need, add the url and you're done.
+
+```
+<li><a href="#"><img src="images/social-icons/behance.svg" alt="View my Behance Portfolio" /></a></li>
+<li><a href="#"><img src="images/social-icons/dribbble.svg" alt="Follow me on Dribbble" /></a></li>
+<li><a href="mailto:#"><img src="images/social-icons/email.svg" alt="Send me an email" /></a></li>
+<li><a href="#"><img src="images/social-icons/facebook.svg" alt="Friend me on Facebook" /></a></li>
+<li><a href="#"><img src="images/social-icons/flickr.svg" alt="Follow me on Flickr" /></a></li>
+<li><a href="#"><img src="images/social-icons/github.svg" alt="Follow me on GitHub" /></a></li>
+...
+```
 
 
 ###Fully Responsive
