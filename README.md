@@ -59,7 +59,7 @@ If you want to give credit to the Pixyll theme with a link to <http://pixyll.com
 
 ### Enjoy
 
-I hope you enjoy using Pixyll. If you encounter any issues, please feel free to let me know. I'd love to help.
+I hope you enjoy using Pixyll. If you encounter any issues, please feel free to let me know by creating an [issue](https://github.com/johnotander/pixyll/issues). I'd love to help.
 
 ## Contributing
 
