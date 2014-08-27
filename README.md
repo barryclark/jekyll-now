@@ -27,6 +27,26 @@ $ gem install jekyll
 
 Fork the repo, and then clone it so you've got the code locally.
 
+### Modify the _config.yml
+
+The `_config.yml` located in the root of the Pixyll directory contains all of the configuration details
+for the Jekyll site. The defaults are:
+
+```yml
+# Site settings
+title: Pixyll
+email: your_email@example.com
+author: John Otander
+description: "A simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff."
+baseurl: ""
+url: "http://pixyll.com"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+paginate: 3
+```
+
 ### Jekyll Serve
 
 Then, start the Jekyll Server. I always like to give the `--watch` option so it updates the generated HTML when I make changes.
