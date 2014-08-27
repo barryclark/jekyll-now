@@ -51,7 +51,7 @@ Currently, the `contact.md` has the following:
 <form action="https://forms.brace.io/johnotander@icloud.com" method="POST" class="form-stacked form-light">
 ```
 
-Where it says `johnotander@icloud.com`, you will need to change that to the email that you wish to have the form data sent to. It will require you to fill the form out once when you push it live, so that you can confirm your email.
+Where it says `johnotander@icloud.com`, you will need to change that to the email that you wish to have the form data sent to. It will require you to fill the form out when you push it live for the first time so that you can confirm your email.
 
 ### Put in a Pixyll Plug
 
@@ -59,7 +59,7 @@ If you want to give credit to the Pixyll theme with a link to <http://pixyll.com
 
 ### Enjoy
 
-I hope you enjoy using Pixyll. If you encounter any issues, please feel free to let me know. I'd love to help.
+I hope you enjoy using Pixyll. If you encounter any issues, please feel free to let me know by creating an [issue](https://github.com/johnotander/pixyll/issues). I'd love to help.
 
 ## Contributing
 
