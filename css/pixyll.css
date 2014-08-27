@@ -226,7 +226,6 @@ h6 {
 @media screen and (max-width: 48em) {
   .site-header {
     text-align: center;
-    width: 100%;
   }
 
   .site-header .site-nav {
