@@ -58,8 +58,6 @@
       {% include footer.html %}
     </div>
 
-    {% if page.image.feature %}{% include scroll-cue.html %}{% endif %}
-
     <script src="{{ site.url }}/js/vendor/jquery-1.9.1.min.js"></script>
     <script src="{{ site.url }}/js/main.js"></script>
     
@@ -83,29 +81,6 @@
           return $heading[0].tagName.toLowerCase();
         }
       });
-    </script>
-    {% endif %}
-
-    {% if page.image.feature %}
-    <script type="text/javascript">
-	    $("#scroll-cue").hide();
-	    // disable on touch devices
-	    if ('ontouchstart' in document.documentElement == false) {
-        $("#scroll-cue").show(); 
-        // remove scroll cue when content is in view
-        window.onscroll = function () {
-          var height = $(window).height();
-          var scrollTop = $(window).scrollTop();
-          var obj = $("#content")
-          var pos = obj.position();
-          if (height + scrollTop > pos.top) {
-  	        $("#scroll-cue").hide();
-          }
-          else {
-  	        $("#scroll-cue").show(); 
-          }
-  	    }
-      }
     </script>
     {% endif %}
 
