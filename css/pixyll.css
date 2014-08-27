@@ -14,7 +14,7 @@
 */
 
 body {
-  font-family: "PT Serif", Georgia, "Times New Roman", serif;
+  font-family: "Merriweather", "PT Serif", Georgia, "Times New Roman", serif;
 }
 
 html, body {
@@ -53,8 +53,7 @@ body {
 }
 
 .site-header nav a {
-  font-size: 12px;
-  font-weight: 400;
+  font-size: 16px;
   color: #666;
 }
 
