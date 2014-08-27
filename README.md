@@ -1,27 +1,16 @@
 # Skinny Bones Jekyll Starter
 
-Just a little something I'm using to jump start a site refresh. Super alpha and super incomplete, use and abuse at your own risk.
+Just a little something I'm using to jump start a site refresh. I like to think of it as a starter for building your own Jekyll site. I purposely keep the styling minimal and bare to make it easier to add your own flare and markup.
 
-Keep in mind, this is **not a theme** and will need styling and additional markup to really sing.
+I'm currently using a variation of it on my personal website [Made Mistakes](http://mademistakes.com) with some modifications. To learn more about how to use the theme and install it check out the [Skinny Bones demo](http://mmistakes.github.io/skinny-bones-jekyll/) (*work in progress*).
 
-I'm currently using it on my website [Made Mistakes](http://mademistakes.com) with some modifications. To learn more about how to use the theme and install it check out the [Skinny Bones demo](http://mmistakes.github.io/skinny-bones-jekyll/) (*work in progress*).
+![screenshot of Skinny Bones](http://mmistakes.github.io/skinny-bones-jekyll/images/skinny-bones-theme-feature.jpg)
 
 ---
 
-## To Do
+## Notable Features
 
-Needs work:
-
-- [ ] Post pagination --- needs styling. Disabled for now.
-- [ ] Year filter for archive `_layout`
-
-Documentation needed:
-
-- [x] How files and folders are organized
-- [ ] Quick start checklist
-- [x] Creating new posts/pages with [Octopress gem](https://github.com/octopress/octopress)
-- [ ] Bug fixes and how to contribute to the project
-
-Other:
-
-- [ ] Investigate turning Skinny Bones into an [Octopress Ink](https://github.com/octopress/ink) theme
+* Stylesheet built using Sass. *Requires Jekyll 2.x*
+* Data files for easier customization of the site navigation/footer and for supporting multiple authors.
+* Optional Disqus comments, table of contents, social sharing links, and Google AdSense ads.
+* And more.
