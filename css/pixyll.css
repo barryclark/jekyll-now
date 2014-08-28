@@ -27,7 +27,7 @@ img {
 
 .site-wrap {
   min-height: 100%;
-  margin-bottom: -216px;
+  margin-bottom: -100px;
 }
 
 .site-wrap:after {
@@ -36,7 +36,7 @@ img {
 }
 
 .footer, .site-wrap:after {
-  height: 216px;
+  height: 100px;
 }
 
 body {
@@ -106,9 +106,9 @@ body {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background: #f7f7f7;
+  background: #fafafa;
   border-radius: 0.1875em;
-  border: 1px solid #dddddd;
+  border: 1px solid #f3f3f3;
   color: #333333;
   padding: 1rem 1.5rem;
 }
@@ -289,13 +289,13 @@ h6 {
 }
 
 footer {
-  border-top: thin solid #ddd;
+  border-top: thin solid #f3f3f3;
 }
 
 footer,
 footer .wrap {
   color: #7a7a7a;
-  background-color: #f3f3f3;
+  background-color: #fafafa;
   font-family: 'Helvetica Neue', Helvetica, sans-serif;
   font-weight: 300;
   clear: both;
