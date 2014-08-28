@@ -98,7 +98,7 @@ body {
 
 .pagination {
   font-size: 16px;
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
   text-align: center;
 }
 
@@ -160,7 +160,7 @@ body {
 }
 
 form {
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 1rem;
 }
 
@@ -295,7 +295,7 @@ footer,
 footer .wrap {
   color: #7a7a7a;
   background-color: #f3f3f3;
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
   font-weight: 300;
   clear: both;
 }
