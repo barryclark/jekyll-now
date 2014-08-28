@@ -259,7 +259,8 @@ h6 {
   }
 
   .p,
-  p {
+  p,
+  li {
     font-size: 1.5rem;
     line-height: 2.5rem;
   }
