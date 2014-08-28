@@ -67,7 +67,7 @@ In addition to your github-username.github.io repo that maps to the root url, yo
 
 This will require you to modify the `_config.yml` like so:
 
-```
+```yml
 # Site settings
 title: Repo Name
 email: your_email@example.com
