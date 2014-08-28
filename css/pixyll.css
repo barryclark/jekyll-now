@@ -133,6 +133,7 @@ body {
 .meta,
 .post-meta {
   width: auto;
+  font-size: 1rem;
   font-weight: 300;
   padding: 0.5rem;
   color: #7a7a7a;
@@ -211,14 +212,16 @@ blockquote footer {
 h1,
 h2,
 h3 {
-  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: "Merriweather Sans", 'Helvetica Neue', Helvetica, sans-serif;
+  font-weight: 800;
   margin-top: 3rem;
 }
 
 h4,
 h5,
 h6 {
-  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: "Merriweather Sans", 'Helvetica Neue', Helvetica, sans-serif;
+  font-weight: 800;
   margin-top: 1rem;
 }
 
@@ -263,6 +266,10 @@ h6 {
 
   .small {
     font-size: 1rem;
+  }
+
+  .post-meta {
+    font-size: 1.5rem;
   }
 }
 
