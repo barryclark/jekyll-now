@@ -5,6 +5,7 @@ author: John Otander
 description: "A simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff."
 baseurl: ""
 url: "http://pixyll.com"
+google_analytics: 
 
 # Build settings
 markdown: kramdown
