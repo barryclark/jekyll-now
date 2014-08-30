@@ -99,6 +99,7 @@ body {
 .pagination {
   font-size: 16px;
   font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
+  font-weight: 300;
   text-align: center;
 }
 
@@ -161,6 +162,7 @@ body {
 
 form {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
+  font-weight: 300;
   font-size: 1rem;
 }
 
@@ -297,7 +299,7 @@ footer .wrap {
   color: #7a7a7a;
   background-color: #fafafa;
   font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   clear: both;
 }
 
