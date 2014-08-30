@@ -78,7 +78,7 @@ hopefully sidestep this inconvenience.
   <p>
     Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away.
   </p>
-  <footer><cite title="Antoine de Saint-Exupe">Antoine de Saint-Exupe</cite></footer>
+  <footer><cite title="Antoine de Saint-Exupéry">Antoine de Saint-Exupéry</cite></footer>
 </blockquote>
 
 ### There's more being added all the time
