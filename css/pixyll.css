@@ -79,19 +79,19 @@ body {
 }
 
 .posts .post {
-  margin-bottom: 4rem;
-  padding-bottom: 2rem;
+  margin-bottom: 1rem;
+  padding-bottom: .5rem;
   border-bottom: thin solid #f3f3f3;
 }
 
 .posts .post:last-child {
   border-bottom: none;
-  margin-bottom: 2rem;
+  margin-bottom: .5rem;
   padding-bottom: 0;
 }
 
 .post-link .post-title {
-  margin-top: 0.25rem;
+  margin-top: 0;
   font-weight: 600;
   color: #333;
 }
@@ -136,7 +136,7 @@ body {
   width: auto;
   font-size: 1rem;
   font-weight: 300;
-  padding: 0.5rem;
+  padding: 0;
   color: #7a7a7a;
   font-style: italic;
   border-bottom: thin dotted #f3f3f3;
@@ -242,6 +242,12 @@ h6 {
 }
 
 @media screen and (min-width: 48em) {
+  .meta,
+  .post-meta {
+    padding: .5rem;
+    font-size: 1.25rem;
+  }
+
   .h1,
   h1 {
     font-size: 4rem;
@@ -271,8 +277,20 @@ h6 {
     font-size: 1rem;
   }
 
-  .post-meta {
-    font-size: 1.5rem;
+  .post-link .post-title {
+    margin-top: .25rem;
+  }
+
+  .posts .post {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: thin solid #f3f3f3;
+  }
+
+  .posts .post:last-child {
+    border-bottom: none;
+    margin-bottom: .5rem;
+    padding-bottom: 0;
   }
 }
 
@@ -287,6 +305,22 @@ h6 {
   h2 {
     font-size: 3rem;
     line-height: 3.5rem;
+  }
+
+  .post-link .post-title {
+    margin-top: .25rem;
+  }
+
+  .posts .post {
+    margin-bottom: 4rem;
+    padding-bottom: 2rem;
+    border-bottom: thin solid #f3f3f3;
+  }
+
+  .posts .post:last-child {
+    border-bottom: none;
+    margin-bottom: 1rem;
+    padding-bottom: 0;
   }
 }
 
