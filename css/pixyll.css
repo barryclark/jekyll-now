@@ -136,10 +136,10 @@ body {
   width: auto;
   font-size: 1rem;
   font-weight: 300;
-  padding: 0;
+  margin: 0;
+  padding: .25rem 0;
   color: #7a7a7a;
   font-style: italic;
-  border-bottom: thin dotted #f3f3f3;
 }
 
 .pagination .button {
@@ -172,7 +172,7 @@ textarea.input {
 
 p {
   font-weight: 300;
-  line-height: 2rem;
+  line-height: 1.75rem;
   color: #333;
 }
 
@@ -244,7 +244,8 @@ h6 {
 @media screen and (min-width: 48em) {
   .meta,
   .post-meta {
-    padding: .5rem;
+    margin: 0;
+    padding: 0;
     font-size: 1.25rem;
   }
 
@@ -270,7 +271,7 @@ h6 {
   p,
   li {
     font-size: 1.5rem;
-    line-height: 2.5rem;
+    line-height: 2.25rem;
   }
 
   .small {
@@ -278,7 +279,7 @@ h6 {
   }
 
   .post-link .post-title {
-    margin-top: .25rem;
+    margin-top: 1rem;
   }
 
   .posts .post {
@@ -305,6 +306,10 @@ h6 {
   h2 {
     font-size: 3rem;
     line-height: 3.5rem;
+  }
+
+  .posts .post-meta {
+    padding-bottom: .25rem;
   }
 
   .post-link .post-title {

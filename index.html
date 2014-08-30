@@ -8,7 +8,7 @@ layout: default
     {% for post in paginator.posts %}
       <div class="post">
         <a href="{{ post.url | prepend: site.baseurl }}" class="post-link">
-          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span> <br><br>
+          <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</p>
           <h3 class="h2 post-title">{{ post.title }}</h3>
           <p class="post-summary">{{ post.summary }}</p>
         </a>
