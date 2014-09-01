@@ -172,7 +172,7 @@ textarea.input {
 
 p {
   font-weight: 300;
-  line-height: 1.75rem;
+  line-height: 1.95rem;
   color: #333;
 }
 
@@ -251,8 +251,8 @@ h6 {
 
   .h1,
   h1 {
-    font-size: 4rem;
-    line-height: 5rem;
+    font-size: 3.25rem;
+    line-height: 4.5rem;
   }
 
   .h2,
@@ -270,7 +270,7 @@ h6 {
   .p,
   p,
   li {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     line-height: 2.25rem;
   }
 
@@ -298,8 +298,8 @@ h6 {
 @media screen and (min-width: 64em) {
   .h1,
   h1 {
-    font-size: 6rem;
-    line-height: 8rem;
+    font-size: 4.5rem;
+    line-height: 5.5rem;
   }
 
   .h2,
