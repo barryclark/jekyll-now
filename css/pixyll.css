@@ -67,6 +67,11 @@ body {
   margin-left: 1rem;
 }
 
+.site-nav {
+  margin: 0;
+  padding: 0;
+}
+
 .site-header a:hover,
 .posts .post a:hover .post-meta,
 .posts .post a:hover .post-title,
