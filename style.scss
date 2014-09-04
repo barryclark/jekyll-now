@@ -205,6 +205,7 @@ margin-top: 30px;
 margin-left: 50%;
 left: -50px;
 opacity: 0.8;
+z-index: 100;
 }
 
 #mikalogo{
@@ -217,6 +218,7 @@ opacity: 0.2;
 transition: opacity .25s ease-in-out;
 -moz-transition: opacity .25s ease-in-out;
 -webkit-transition: opacity .25s ease-in-out;
+z-index: 100;
 }
 
 #mikalogo:hover {
@@ -224,6 +226,7 @@ opacity: 1;
 transition: opacity .25s ease-in-out;
 -moz-transition: opacity .25s ease-in-out;
 -webkit-transition: opacity .25s ease-in-out;
+z-index: 100;
 }
 
 #leftnav{
@@ -233,6 +236,7 @@ width: 300px;
 left: -400px;
 text-align: right;  
 padding-top:75px;
+z-index: 100;
 }
 
 #leftnav a, #rightnav a{
@@ -257,6 +261,7 @@ width: 300px;
 left: 100px;  
 padding-top:75px;
 text-align: left;
+z-index: 100;
 }
 
 
@@ -265,10 +270,11 @@ text-align: left;
 //
 
 #testdiv{
-  width: 100%;
-  height: 50px;
-  background: $blue;
+}
+
+#main{
   position: relative;
+  width: 100%;
 }
 
 .posts > .post {
@@ -281,14 +287,13 @@ text-align: left;
   
 }
 
-.post { 
+.post {   
   background: black;
   color: $satin-linen;
   border-bottom: 1px solid;
   border-bottom-width: 1px;
   border-bottom-color: white;
   background-color: white;
-  opacity: 0.2;
 
   h1{
     padding-top: 150px;
