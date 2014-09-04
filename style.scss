@@ -30,10 +30,8 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: $gothamMedium;
   color: $armadillo;
-  font-weight: bold;
-  
+  font-weight: bold;  
   line-height: 1.7;
-  margin: 1em 0 15px;
   padding: 0;
 
   @include mobile {
@@ -286,7 +284,6 @@ z-index: 100;
 }
 
 .post {   
-  background: black;
   color: $satin-linen;
   border-bottom: 1px solid;
   border-bottom-width: 1px;
