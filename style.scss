@@ -9,7 +9,9 @@
 @import "_variables";
 // Syntax highlighting @import is at the bottom of this file
 
+$eastern-blue: #189fa5;
 $satin-linen: #e8e6db;
+$armadillo: #4D433D;
 
 /**************/
 /* BASE RULES */
@@ -20,9 +22,13 @@ html {
 }
 
 body {
-	background: $satin-linen;
-  font: 18px/1.4 $helvetica;
-  color: $darkGray;
+font-family:'Muli',Helvetica, Verdana, sans-serif;
+color:#42210B;
+padding: 0;
+margin: 0;
+background: url(../images/background.jpg);
+width: 100%;
+display: table;
 }
 
 .container {
@@ -33,8 +39,8 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
-  color: $darkerGray;
+  font-family: Gotham Medium,'Montserrat',Helvetica Neue Medium, Verdana, sans-serif;
+  color: $armadillo;
   font-weight: 600;
   
   line-height: 1.7;
@@ -65,7 +71,7 @@ h3 {
 
 h4 {  
   font-size: 18px;
-  color: $gray;
+  color: $armadillo;
 }
 
 p {
@@ -73,11 +79,11 @@ p {
 }
 
 a {
-  color: $blue;
+  color: $eastern-blue;
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
-    color: $blue;
+    color: $eastern-blue;
   }
 }
 
@@ -116,17 +122,17 @@ img {
 
 .date {
   font-style: italic;
-  color: $gray;
+  color: $armadillo;
 }
 
 // Specify the color of the selection
 ::-moz-selection {
   color: $black;
-  background: $lightGray;
+  background: $satin-linen;
 }
 ::selection {
   color: $black;
-  background: $lightGray;
+  background: $satin-linen;
 }
 
 // Nicolas Gallagher's micro clearfix hack
@@ -141,99 +147,388 @@ img {
     clear: both;
 }
 
+/* mika.ph General Rules */
+
+.fadeout {
+opacity: 1;
+transition: opacity .25s ease-in-out;
+-moz-transition: opacity .25s ease-in-out;
+-webkit-transition: opacity .25s ease-in-out;
+}
+
+.fadeout:hover {
+opacity: 0.8;
+transition: opacity .25s ease-in-out;
+-moz-transition: opacity .25s ease-in-out;
+-webkit-transition: opacity .25s ease-in-out;
+}
+
+.fadein {
+opacity: 0.8;
+transition: opacity .25s ease-in-out;
+-moz-transition: opacity .25s ease-in-out;
+-webkit-transition: opacity .25s ease-in-out;
+}
+
+.fadein:hover {
+opacity: 1;
+transition: opacity .25s ease-in-out;
+-moz-transition: opacity .25s ease-in-out;
+-webkit-transition: opacity .25s ease-in-out;
+}
+
+p{
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+h1{
+  padding-bottom: 20px;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /*********************/
 /* LAYOUT / SECTIONS */
 /*********************/
 
-//
-// .masthead
-//
 
-.wrapper-masthead {
-  margin-bottom: 50px;
+/* Navigation */
+
+#logo{
+position: absolute;
+text-align: center;
+width: 100px;
+background: url(../images/logo-no-text.svg);
+background-size: 100px 100px;
+margin-top: 30px;
+margin-left: 50%;
+left: -50px;
+opacity: 0.8;
 }
 
-.masthead {
-  padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
-  
-  @include mobile {
-    text-align: center;
-  }
+#mikalogo{
+background: url(../images/logo-text.svg);
+background-size: 100px 100px;
+width: 100px;
+height: 100px;
+display: block; 
+opacity: 0.2;
+transition: opacity .25s ease-in-out;
+-moz-transition: opacity .25s ease-in-out;
+-webkit-transition: opacity .25s ease-in-out;
 }
 
-.site-avatar {
+#mikalogo:hover {
+opacity: 1;
+transition: opacity .25s ease-in-out;
+-moz-transition: opacity .25s ease-in-out;
+-webkit-transition: opacity .25s ease-in-out;
+}
+
+#leftnav{
+position: absolute;
+margin-left: 50%;
+width: 300px;
+left: -400px;
+text-align: right;  
+padding-top:75px;
+}
+
+#leftnav a, #rightnav a{
+text-transform: uppercase;
+text-decoration: none;
+color: #e8e6db;
+}
+
+#leftnav a{
+  padding-left: 50px;
+}
+
+#rightnav a{
+  padding-right: 50px;
+}
+
+#rightnav{
+position: absolute;
+margin-left: 50%;
+width: 300px;
+left: 100px;  
+padding-top:75px;
+text-align: left;
+}
+
+/* Hero */
+
+#giantlogo{
+background-image: url(../images/dj.svg);
+background-size: cover;
+background-repeat: no-repeat;
+width: 400px;
+height: 400px;
+margin-top: 150px;
+margin-left: auto;
+margin-right: auto;
+position: relative;
+text-align: center;
+}
+
+#rotatingGlobe{
+margin-top: 110px;
+width: 180px;
+height: 180px;
+}
+
+/* Home Text */
+
+#welcome{
+color: $satin-linen;
+text-align: center;
+margin-top: 50px;
+width: 600px;
+margin-left: auto;
+margin-right: auto;
+padding-bottom:50px;
+}
+
+a{
+color: $satin-linen;
+}
+
+h1{
+font-size: 1.6em;
+letter-spacing: -1px;
+font-family:Gotham Medium,'Montserrat',Helvetica Neue Medium, Verdana, sans-serif;
+line-height: 1.9em;
+}
+
+p{
+line-height: 1.3em;
+}
+
+/* Social Media */
+
+#socialmedia{
+display: inline-block;
+list-style-type: none;
+padding-bottom: 20px;
+  li{
   float: left;
-  width: 70px;
-  height: 70px;
-  margin-right: 15px;
-
-  @include mobile {
-    float: none;
-    display: block;
-    margin: 0 auto;
-  }
-
-  img {
-    border-radius: 5px;
+  width: 40px;
+  height: 40px;
   }
 }
 
-.site-info {
-  float: left;
 
-  @include mobile {
-    float: none;
-    display: block;
-    margin: 0 auto;
+.smicon{
+width: 40px;
+height: 40px;
+display: block;
+background: url("../images/socialmedia.png") no-repeat; 
+}
+
+#fb{
+
+}
+
+#tw{
+background-position: -40px 0;
+}
+
+#dr{
+background-position: -80px 0;
+}
+
+#be{
+background-position: -120px 0;
+}
+
+#ig{
+background-position: -160px 0;
+}
+
+#in{
+background-position: -200px 0;
+}
+
+#gi{
+background-position: -240px 0;
+}
+
+#tu{
+background-position: -280px 0;
+}
+
+/* Default Header */
+
+#header{
+color: $satin-linen;
+text-align: center;
+margin-top: 150px;
+margin-left: auto;
+margin-right: auto;
+padding-bottom:50px;
+
+}
+
+/* Resume */
+
+.resume{
+width: 300px;
+float: left;
+position: relative; 
+text-align: left;
+a{
+  margin-top: 8px;
+  text-decoration: none;
+}
+padding-bottom: 20px;
+}
+
+.resume:hover{
+  .resumelink{
+    opacity: 1;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
   }
 }
 
-.site-name {
-  margin: 0;
-  color: $darkGray;
-  cursor: pointer;
-  font-family: $helveticaNeue; 
-  font-weight: 300;
-  font-size: 28px;
-  letter-spacing: 1px;
+.resumelink{
+opacity: 0;
+transition: opacity .25s ease-in-out;
+-moz-transition: opacity .25s ease-in-out;
+-webkit-transition: opacity .25s ease-in-out;
 }
 
-.site-description {
-  margin: -5px 0 0 0;
-  color: $gray;
-  font-size: 16px;
-  
-  @include mobile {
-    margin: 3px 0;
-  }
+/* Article */
+
+.article{
+background: $satin-linen;
+color: $armadillo;
+text-align: center;
+padding-top: 50px;
+h1{
+  padding-bottom: 20px;
 }
 
-nav {
-  float: right;
-  margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue; 
-  font-size: 18px;
-  
-  @include mobile {
-    float: none;
-    margin-top: 9px;
-    display: block;
-    font-size: 16px;
-  }
 
-  a {
-    margin-left: 20px;
-    color: $darkGray;
-    text-align: right;
-    font-weight: 300;
-    letter-spacing: 1px;
+img{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+}
 
-    @include mobile {
-      margin: 0 10px;
-      color: $blue;
-    }
+/* Disqus */
+
+#disqus_thread{
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Phone */
+
+
+@media screen and (max-width: 600px) { 
+#logo{
+margin-top: 10px;
+left: -25px;
+}
+
+#mikalogo, #mikalogo:hover{
+background-size: 50px 50px;
+width: 50px;
+height: 50px;
+}
+
+#leftnav{
+position: absolute;
+margin-left: 50%;
+width: 100px;
+left: -130px;
+text-align: right;  
+padding-top:30px;
+}
+
+#leftnav a, #rightnav a{
+text-transform: uppercase;
+text-decoration: none;
+color: #e8e6db;
+font-size: .9em;
+}
+
+#rightnav{
+position: absolute;
+margin-left: 50%;
+width: 100px;
+left: 30px; 
+padding-top:30px;
+}
+
+#giantlogo{
+width: 300px;
+height: 300px;
+margin-top: 70px;
+}
+
+#rotatingGlobe{
+margin-top: 75px;
+width: 150px;
+height: 150px;
+}
+
+#welcome{
+margin-top: 40px;
+width: 320px;
+  p{
+    padding-left:10px;
+    padding-right:10px;
   }
+} 
+
+#header{
+width:300px;
+margin-top: 60px;
+h1{
+  line-height: 1em;
+}
+}
+
+.article{
+padding-top: 50px;
+h1{
+  padding-bottom: 20px;
+}
+
+p{
+  width: 290px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+img{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+}
+
+.fullwidth{
+  width: 100%;
+}
+
+#disqus_thread{
+  width: 290px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 }
 
 //
@@ -242,7 +537,7 @@ nav {
 
 .posts > .post {
   padding-bottom: 2em;
-  border-bottom: 1px solid $lightGray;
+  border-bottom: 1px solid $satin-linen;
 }
 
 .posts > .post:last-child {
@@ -253,9 +548,9 @@ nav {
 .post { 
   blockquote {
     margin: 1.8em .8em;
-    border-left: 2px solid $gray;
+    border-left: 2px solid $armadillo;
     padding: 0.1em 1em;
-    color: $gray;
+    color: $armadillo;
     font-size: 22px;
     font-style: italic;
   }
@@ -274,7 +569,7 @@ nav {
   margin-top: 50px;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
+  background-color: $satin-linen;
 }
 
 footer {
