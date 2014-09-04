@@ -264,6 +264,13 @@ text-align: left;
 // .main
 //
 
+#testdiv{
+  width: 100%;
+  height: 50px;
+  background: $blue;
+  position: relative;
+}
+
 .posts > .post {
   margin-top: 0px;
   padding-bottom: 2em;
@@ -271,15 +278,20 @@ text-align: left;
 
 .posts > .post:last-child {
   padding-bottom: 1em;
-  border-bottom: none;
+  
 }
 
 .post { 
   background: black;
   color: $satin-linen;
+  border-bottom: 1px solid;
+  border-bottom-width: 1px;
+  border-bottom-color: white;
+  background-color: white;
+  opacity: 0.2;
 
   h1{
-    padding-top: 0px;
+    padding-top: 150px;
   }
 
   blockquote {
@@ -299,6 +311,7 @@ text-align: left;
     text-transform: uppercase;
     font-size: 15px;
   }
+
 }
 
 .read-more{
@@ -313,7 +326,7 @@ text-align: left;
 }
 
 footer {
-  padding: 0 0;
+  padding: $paddingHeight 0;
   text-align: center;
 }
 
