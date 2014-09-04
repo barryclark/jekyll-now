@@ -145,96 +145,71 @@ img {
 /* LAYOUT / SECTIONS */
 /*********************/
 
-//
-// .masthead
-//
+/* Navigation */
 
-.wrapper-masthead {
-  margin-bottom: 50px;
+#logo{
+position: absolute;
+text-align: center;
+width: 100px;
+background: url(../images/logo-no-text.svg);
+background-size: 100px 100px;
+margin-top: 30px;
+margin-left: 50%;
+left: -50px;
+opacity: 0.8;
 }
 
-.masthead {
-  padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
-  
-  @include mobile {
-    text-align: center;
-  }
+#mikalogo{
+background: url(../images/logo-text.svg);
+background-size: 100px 100px;
+width: 100px;
+height: 100px;
+display: block; 
+opacity: 0.2;
+transition: opacity .25s ease-in-out;
+-moz-transition: opacity .25s ease-in-out;
+-webkit-transition: opacity .25s ease-in-out;
 }
 
-.site-avatar {
-  float: left;
-  width: 70px;
-  height: 70px;
-  margin-right: 15px;
-
-  @include mobile {
-    float: none;
-    display: block;
-    margin: 0 auto;
-  }
-
-  img {
-    border-radius: 5px;
-  }
+#mikalogo:hover {
+opacity: 1;
+transition: opacity .25s ease-in-out;
+-moz-transition: opacity .25s ease-in-out;
+-webkit-transition: opacity .25s ease-in-out;
 }
 
-.site-info {
-  float: left;
-
-  @include mobile {
-    float: none;
-    display: block;
-    margin: 0 auto;
-  }
+#leftnav{
+position: absolute;
+margin-left: 50%;
+width: 300px;
+left: -400px;
+text-align: right;  
+padding-top:75px;
 }
 
-.site-name {
-  margin: 0;
-  color: $darkGray;
-  cursor: pointer;
-  font-family: $helveticaNeue; 
-  font-weight: 300;
-  font-size: 28px;
-  letter-spacing: 1px;
+#leftnav a, #rightnav a{
+text-transform: uppercase;
+text-decoration: none;
+color: #e8e6db;
 }
 
-.site-description {
-  margin: -5px 0 0 0;
-  color: $gray;
-  font-size: 16px;
-  
-  @include mobile {
-    margin: 3px 0;
-  }
+#leftnav a{
+  padding-left: 50px;
 }
 
-nav {
-  float: right;
-  margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue; 
-  font-size: 18px;
-  
-  @include mobile {
-    float: none;
-    margin-top: 9px;
-    display: block;
-    font-size: 16px;
-  }
-
-  a {
-    margin-left: 20px;
-    color: $darkGray;
-    text-align: right;
-    font-weight: 300;
-    letter-spacing: 1px;
-
-    @include mobile {
-      margin: 0 10px;
-      color: $blue;
-    }
-  }
+#rightnav a{
+  padding-right: 50px;
 }
+
+#rightnav{
+position: absolute;
+margin-left: 50%;
+width: 300px;
+left: 100px;  
+padding-top:75px;
+text-align: left;
+}
+
 
 //
 // .main
