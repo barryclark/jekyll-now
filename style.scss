@@ -27,13 +27,6 @@ body {
   display: table;
 }
 
-.container {
-  margin: 0 auto;
-  max-width: 740px;
-  padding: 0 10px;
-  width: 100%;
-}
-
 h1, h2, h3, h4, h5, h6 {
   font-family: $gothamMedium;
   color: $armadillo;
@@ -286,7 +279,7 @@ text-align: left;
   color: $satin-linen;
 
   h1{
-    padding-top: 150px;
+    padding-top: 0px;
   }
 
   blockquote {
@@ -320,7 +313,7 @@ text-align: left;
 }
 
 footer {
-  padding: $paddingHeight 0;
+  padding: 0 0;
   text-align: center;
 }
 
