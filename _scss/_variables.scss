@@ -5,6 +5,10 @@
 
 // Colors
 $blue: #4183C4; 
+$eastern-blue: #189fa5;
+$satin-linen: #e8e6db;
+$armadillo: #4D433D;
+
 
 // Grays
 $black: #000;
@@ -18,6 +22,8 @@ $white: #fff;
 $helvetica: Helvetica, Arial, sans-serif;
 $helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $georgia: Georgia, serif;
+$muli: 'Muli',Helvetica, Verdana, sans-serif;
+$gothamMedium: Gotham Medium,'Montserrat',Helvetica Neue Medium, Verdana, sans-serif;
 
 // Mobile breakpoints
 @mixin mobile {

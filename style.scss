@@ -18,9 +18,13 @@ html {
 }
 
 body {
-	background: $white;
-  font: 18px/1.4 $helvetica;
-  color: $darkGray;
+  font: 18px/1.4 $muli;
+  color: $armadillo;
+  padding: 0;
+  margin: 0;
+  background: url(../images/background.jpg);
+  width: 100%;
+  display: table;
 }
 
 .container {
