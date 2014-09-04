@@ -5,7 +5,9 @@ layout: default
 <div class="posts">
   {% for post in site.posts %}
     <div class="post">    
-    	it better not be this one
+    	      
+      <h1><a href="{{ site.baseurl }}{{ post.url }}" class="fadein">{{ post.title }}</a></h1>
+
     </div>
   {% endfor %}
 </div>
