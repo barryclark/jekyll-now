@@ -59,10 +59,6 @@ h4 {
   color: $gray;
 }
 
-p {
-  margin: 15px 0;
-}
-
 a {
   color: $downy;
   text-decoration: none;
@@ -107,7 +103,7 @@ img {
 
 .date {
   font-style: italic;
-  color: $gray;
+  font-size: 50%;
 }
 
 // Specify the color of the selection
@@ -322,6 +318,7 @@ z-index: 100;
 }
 
 .cover{
+  min-height: 500px;
   h1{
     padding-top: 150px;
   }
