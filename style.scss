@@ -185,11 +185,15 @@ h1{
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  color: $satin-linen;
 }
 
 hr{
-  border-color: $satin-linen;
-  background-color: $satin-linen;
+  height:1px; 
+  border:none; 
+  color:$white; 
+  background-color:$white;
+  opacity: 0.8;
 }
 
 /*********************/
@@ -267,7 +271,7 @@ text-align: left;
 //
 
 .posts > .post {
-  margin-top: 150px;
+  margin-top: 200px;
   padding-bottom: 2em;
 }
 
@@ -298,6 +302,8 @@ text-align: left;
 }
 
 .read-more{
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
   width: $itemWidth;
 }
