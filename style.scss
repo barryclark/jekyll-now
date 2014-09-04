@@ -229,7 +229,7 @@ margin-left: 50%;
 width: 300px;
 left: -400px;
 text-align: right;  
-padding-top:75px;
+padding-top:70px;
 z-index: 100;
 }
 
@@ -253,7 +253,7 @@ position: absolute;
 margin-left: 50%;
 width: 300px;
 left: 100px;  
-padding-top:75px;
+padding-top:70px;
 text-align: left;
 z-index: 100;
 }
@@ -285,6 +285,7 @@ z-index: 100;
   border: 1px solid rgba(255, 255, 255, .2);
   -webkit-background-clip: padding-box; /* for Safari */
   background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+  min-height: 500px; 
 
   h1{
     padding-top: 150px;

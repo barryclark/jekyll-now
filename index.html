@@ -8,7 +8,9 @@ layout: default
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}" class="fadein">{{ post.title }}</a></h1>
 
-        {{ post.content | truncatewords:40}}
+		{% if post.intro %}
+		    <p>{{ post.intro | truncatewords:40}}</p>
+		{% endif %}
       
       <div class="read-more"><a href="{{ site.baseurl }}{{ post.url }}" class="fadein">Read More</a></div>
     </div>
