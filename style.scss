@@ -285,9 +285,10 @@ z-index: 100;
 
 .post {   
   color: $satin-linen;
-  border-bottom: 1px solid;
-  border-bottom-width: 1px;
-  border-bottom-color: white;
+  border: 1px solid rgb(111, 202, 207);
+  border: 1px solid rgba(255, 255, 255, .2);
+  -webkit-background-clip: padding-box; /* for Safari */
+  background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
 
   h1{
     padding-top: 150px;
@@ -320,6 +321,13 @@ z-index: 100;
   width: $itemWidth;
 }
 
+.entry{
+  background: $satin-linen;
+  color: $armadillo;
+  text-align: center;
+  padding-top: 50px;
+}
+
 .wrapper-footer {
   margin-top: 50px;
 }
@@ -327,6 +335,114 @@ z-index: 100;
 footer {
   padding: $paddingHeight 0;
   text-align: center;
+}
+
+/* Disqus */
+
+#disqus_thread{
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Phone */
+
+
+@media screen and (max-width: 600px) { 
+#logo{
+margin-top: 10px;
+left: -25px;
+}
+
+#mikalogo, #mikalogo:hover{
+background-size: 50px 50px;
+width: 50px;
+height: 50px;
+}
+
+#leftnav{
+position: absolute;
+margin-left: 50%;
+width: 100px;
+left: -130px;
+text-align: right;  
+padding-top:30px;
+}
+
+#leftnav a, #rightnav a{
+text-transform: uppercase;
+text-decoration: none;
+color: #e8e6db;
+font-size: .9em;
+}
+
+#rightnav{
+position: absolute;
+margin-left: 50%;
+width: 100px;
+left: 30px; 
+padding-top:30px;
+}
+
+#giantlogo{
+width: 300px;
+height: 300px;
+margin-top: 70px;
+}
+
+#rotatingGlobe{
+margin-top: 75px;
+width: 150px;
+height: 150px;
+}
+
+#welcome{
+margin-top: 40px;
+width: 320px;
+  p{
+    padding-left:10px;
+    padding-right:10px;
+  }
+} 
+
+#header{
+width:300px;
+margin-top: 60px;
+h1{
+  line-height: 1em;
+}
+}
+
+.entry{
+padding-top: 50px;
+h1{
+  padding-bottom: 20px;
+}
+
+p{
+  width: 290px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+img{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+}
+
+.fullwidth{
+  width: 100%;
+}
+
+#disqus_thread{
+  width: 290px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS

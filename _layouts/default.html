@@ -17,7 +17,10 @@
 
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-
+    {% if page.style %}
+       <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/specialcss/{{ page.style }}.css" />
+       <script type='text/javascript' src="{{ site.baseurl }}/specialjs/{{ page.style }}.js"></script>
+    {% endif %}
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
   </head>
 
