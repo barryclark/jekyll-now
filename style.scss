@@ -1,3 +1,6 @@
+---
+---
+
 //
 // IMPORTS
 //
@@ -5,8 +8,6 @@
 @import "_reset";
 @import "_variables";
 // Syntax highlighting @import is at the bottom of this file
-
-$satin-linen: #e8e6db;
 
 /**************/
 /* BASE RULES */
@@ -17,7 +18,7 @@ html {
 }
 
 body {
-	background: $satin-linen;
+  background: $white;
   font: 18px/1.4 $helvetica;
   color: $darkGray;
 }
@@ -72,7 +73,7 @@ p {
 a {
   color: $blue;
   text-decoration: none;
-	cursor: pointer;
+  cursor: pointer;
   &:hover, &:active {
     color: $blue;
   }
