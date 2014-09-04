@@ -282,8 +282,13 @@ text-align: left;
 }
 
 .post { 
-  padding-top: 150px;
+  background: black;
   color: $satin-linen;
+
+  h1{
+    padding-top: 150px;
+  }
+
   blockquote {
     margin: 1.8em .8em;
     border-left: 2px solid $gray;
