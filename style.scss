@@ -193,7 +193,7 @@ hr{
   border:none; 
   color:$white; 
   background-color:$white;
-  opacity: 0.8;
+  opacity: 0.2;
 }
 
 /*********************/
@@ -296,13 +296,13 @@ text-align: left;
     margin-top: 10px;
   }
 
-  .read-more {
+  .read-more a{
     text-transform: uppercase;
     font-size: 15px;
   }
 }
 
-a.read-more{
+.read-more{
   margin-left: auto;
   margin-right: auto;
   text-align: center;
