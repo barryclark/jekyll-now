@@ -8,7 +8,7 @@ $blue: #4183C4;
 $eastern-blue: #189fa5;
 $satin-linen: #e8e6db;
 $armadillo: #4D433D;
-
+$downy: #6fcacf;
 
 // Grays
 $black: #000;
@@ -24,6 +24,11 @@ $helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $georgia: Georgia, serif;
 $muli: 'Muli',Helvetica, Verdana, sans-serif;
 $gothamMedium: Gotham Medium,'Montserrat',Helvetica Neue Medium, Verdana, sans-serif;
+
+
+//Measurements
+$itemWidth: 620px;
+$paddingHeight: 20px;
 
 // Mobile breakpoints
 @mixin mobile {
