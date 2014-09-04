@@ -3,5 +3,9 @@ layout: default
 ---
 
 <div class="posts">
-this is another test
+  {% for post in site.posts %}
+    <div class="post">    
+    	it better not be this one
+    </div>
+  {% endfor %}
 </div>
