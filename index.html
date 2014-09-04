@@ -2,17 +2,4 @@
 layout: default
 ---
 
-<div class="posts">
-  {% for post in site.posts %}
-    <div class="post">    
-      
-      <h1><a href="{{ site.baseurl }}{{ post.url }}" class="fadein">{{ post.title }}</a></h1>
-
-      <div class="entry">
-        {{ post.content | truncatewords:40}}
-      </div>
-      
-      <div class="read-more"><a href="{{ site.baseurl }}{{ post.url }}" class="fadein">Read More</a></div>
-    </div>
-  {% endfor %}
-</div>
+this is a test
