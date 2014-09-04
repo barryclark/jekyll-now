@@ -18,7 +18,7 @@ html {
 }
 
 body {
-  background: $white;
+	background: $white;
   font: 18px/1.4 $helvetica;
   color: $darkGray;
 }
@@ -33,7 +33,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
   color: $darkerGray;
-  font-weight: 600;
+  font-weight: bold;
   
   line-height: 1.7;
   margin: 1em 0 15px;
@@ -45,20 +45,18 @@ h1, h2, h3, h4, h5, h6 {
 }
   
 h1 {  
-  font-weight: 500;
-  font-size: 32px;
+  font-size: 30px;
   a {
     color: inherit;
   }
 }
 
 h2 {  
-  font-weight: 400;
   font-size: 24px;
 }
 
 h3 {  
-  font-size: 18px;
+  font-size: 20px;
 }
 
 h4 {  
@@ -73,7 +71,7 @@ p {
 a {
   color: $blue;
   text-decoration: none;
-  cursor: pointer;
+	cursor: pointer;
   &:hover, &:active {
     color: $blue;
   }
@@ -105,7 +103,7 @@ em, i {
 }
 
 strong, b {
-  font-weight: 600;
+  font-weight: bold;
 }
 
 img {
