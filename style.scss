@@ -271,7 +271,7 @@ text-align: left;
 //
 
 .posts > .post {
-  margin-top: 200px;
+  margin-top: 0px;
   padding-bottom: 2em;
 }
 
@@ -281,6 +281,7 @@ text-align: left;
 }
 
 .post { 
+  padding-top: 200px;
   color: $satin-linen;
   blockquote {
     margin: 1.8em .8em;
@@ -301,7 +302,7 @@ text-align: left;
   }
 }
 
-.read-more{
+a.read-more{
   margin-left: auto;
   margin-right: auto;
   text-align: center;
