@@ -321,6 +321,15 @@ z-index: 100;
   width: $itemWidth;
 }
 
+.cover{
+  h1{
+    padding-top: 150px;
+  }
+  p{
+    color: $satin-linen;
+  }
+}
+
 .entry{
   background: $satin-linen;
   color: $armadillo;
