@@ -35,7 +35,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
+  font-family: $gothamMedium;
   color: $darkerGray;
   font-weight: bold;
   
@@ -141,6 +141,56 @@ img {
     clear: both;
 }
 
+/* mika.ph General Rules */
+
+.fadeout {
+opacity: 1;
+transition: opacity .25s ease-in-out;
+-moz-transition: opacity .25s ease-in-out;
+-webkit-transition: opacity .25s ease-in-out;
+}
+
+.fadeout:hover {
+opacity: 0.8;
+transition: opacity .25s ease-in-out;
+-moz-transition: opacity .25s ease-in-out;
+-webkit-transition: opacity .25s ease-in-out;
+}
+
+.fadein {
+opacity: 0.8;
+transition: opacity .25s ease-in-out;
+-moz-transition: opacity .25s ease-in-out;
+-webkit-transition: opacity .25s ease-in-out;
+}
+
+.fadein:hover {
+opacity: 1;
+transition: opacity .25s ease-in-out;
+-moz-transition: opacity .25s ease-in-out;
+-webkit-transition: opacity .25s ease-in-out;
+}
+
+p{
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+h1{
+  padding-bottom: 20px;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+hr{
+  border-color: $satin-linen;
+  background-color: $satin-linen;
+}
+
 /*********************/
 /* LAYOUT / SECTIONS */
 /*********************/
@@ -216,8 +266,9 @@ text-align: left;
 //
 
 .posts > .post {
+  margin-top: 150px;
   padding-bottom: 2em;
-  border-bottom: 1px solid $lightGray;
+  border-bottom: 1px solid $satin-linen;
 }
 
 .posts > .post:last-child {
@@ -226,11 +277,12 @@ text-align: left;
 }
 
 .post { 
+  color: $satin-linen;
   blockquote {
     margin: 1.8em .8em;
     border-left: 2px solid $gray;
     padding: 0.1em 1em;
-    color: $gray;
+    color: $satin-linen;
     font-size: 22px;
     font-style: italic;
   }
@@ -249,7 +301,6 @@ text-align: left;
   margin-top: 50px;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
 }
 
 footer {
