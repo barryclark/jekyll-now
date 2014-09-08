@@ -24,6 +24,10 @@
        <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/specialcss/{{ page.style }}.css" />
        <script type='text/javascript' src="{{ site.baseurl }}/specialjs/{{ page.style }}.js"></script>
     {% endif %}
+    {% if page.id %}
+      <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+      <script type="text/javascript">stLight.options({publisher: "0cabde5a-c1da-4ae6-85fc-b7bfc668f405", doNotHash: false, doNotCopy: false, hashAddressBar: true});</script>
+    {% endif %}
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
   </head>
 
@@ -33,6 +37,14 @@
     <div id="leftnav"><a href="http://mika.ph/files/aldaba_portfolio2014.pdf" class="fadein">Portfolio</a><a href="http://mika.ph/resume" class="fadein">Resume</a></div>
     <div id="rightnav"><a href="http://blog.mika.ph" class="fadein">Blog</a><a href="mailto:&#104;&#105;&#064;&#109;&#105;&#107;&#097;&#046;&#112;&#104;" class="fadein">Contact Me</a></div>
 
+    <div id="mobnav">
+      <ul>
+        <li><a href="http://mika.ph/files/aldaba_portfolio2014.pdf">Portfolio</a></li>
+        <li><a href="http://mika.ph/resume">Resume</a></li>
+        <li><a href="http://blog.mika.ph"></a>Blog</li>
+        <li><a href="mailto:&#104;&#105;&#064;&#109;&#105;&#107;&#097;&#046;&#112;&#104;">Contact Me</a></li>
+      </ul>
+    </div>
 
     <div id="main" role="main">
       {{ content }}

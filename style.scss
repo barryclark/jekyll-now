@@ -381,7 +381,7 @@ display:none;
 }
 
 #header{
-width:300px;
+width:$mobWidth;
 margin-top: 60px;
 h1{
   line-height: 1em;
@@ -390,7 +390,7 @@ h1{
 
 .cover{
   h1, p{
-    width: 300px;
+    width: $mobWidth;
     margin-left: auto;
     margin-right: auto;
   }
@@ -399,12 +399,12 @@ h1{
 .entry{
 padding-top: 50px;
 h1{
-  width: 300px;
+  width: $mobWidth;
   padding-bottom: 20px;
 }
 
 p{
-  width: 290px;
+  width: $mobWidth;
   margin-left: auto;
   margin-right: auto;
   text-align: left;
@@ -423,7 +423,7 @@ img{
 }
 
 #disqus_thread{
-  width: 290px;
+  width: $mobWidth;
   margin-left: auto;
   margin-right: auto;
 }
