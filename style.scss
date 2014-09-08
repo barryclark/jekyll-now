@@ -165,7 +165,9 @@ p{
   text-align: left;
   padding-top: 0;
   padding-bottom: $paddingHeight;
+  line-height: 1.6em;
 }
+
 h1{
   padding-bottom: $paddingHeight;
   width: $itemWidth;
@@ -356,6 +358,22 @@ footer {
   text-align: center;
 }
 
+/* Social */
+
+.social{
+  padding-top:20px;
+  padding-bottom: 20px;
+}
+
+.stButton .stButton_gradient {
+height: 24px !important;
+}
+
+.stButton .stFb, .stButton .stTwbutton, .stButton .stMainServices {
+height: 24px !important;
+}
+
+
 /* Disqus */
 
 #disqus_thread{
@@ -425,12 +443,13 @@ img{
   width: 100%;
 }
 
+}
+
+
 #disqus_thread{
   width: $mobWidth;
   margin-left: auto;
   margin-right: auto;
-}
-
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
