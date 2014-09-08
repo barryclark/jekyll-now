@@ -238,6 +238,7 @@ text-transform: uppercase;
 text-decoration: none;
 color: #e8e6db;
 font-size: 80%;
+line-height: 2em;
 }
 
 #leftnav a{
@@ -338,10 +339,13 @@ z-index: 100;
   color: $armadillo;
   text-align: center;
   padding-top: 50px;
+  a{
+    color: $eastern-blue;
+  }
 }
 
 .wrapper-footer {
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 footer {
@@ -372,28 +376,8 @@ width: 50px;
 height: 50px;
 }
 
-#leftnav{
-position: absolute;
-margin-left: 50%;
-width: 100px;
-left: -130px;
-text-align: right;  
-padding-top:30px;
-}
-
-#leftnav a, #rightnav a{
-text-transform: uppercase;
-text-decoration: none;
-color: #e8e6db;
-font-size: .9em;
-}
-
-#rightnav{
-position: absolute;
-margin-left: 50%;
-width: 100px;
-left: 30px; 
-padding-top:30px;
+#leftnav, #rightnav{
+display:none;
 }
 
 #giantlogo{
@@ -437,7 +421,8 @@ p{
   margin-right: auto;
   text-align: left;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 24px;
+  line-height: 1.6em;
 }
 img{
   padding-top: 20px;
