@@ -18,7 +18,7 @@ avatar: http://mika.ph/images/ma_avatar.png
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble: hailmika 
-  email: &#104;&#105;&#064;&#109;&#105;&#107;&#097;&#046;&#112;&#104;
+  email: hi@mika.ph
   facebook: hailmika
   flickr: 
   github: hailmika
@@ -37,7 +37,7 @@ google_analytics: UA-54563649-1
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url: 
+url: http://blog.mika.ph
 
 # If you're hosting your site at a Project repository on GitHub pages 
 # (http://yourusername.github.io/repository-name)
