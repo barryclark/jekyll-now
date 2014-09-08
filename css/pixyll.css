@@ -47,6 +47,15 @@ body {
   -webkit-box-sizing: border-box;
 }
 
+.gist,
+.gist .highlight .p {
+  font-size: .75rem;
+}
+
+.gist .lines {
+  width: 100%;
+}
+
 .site-header a {
   color: #333;
   font-weight: 300;
