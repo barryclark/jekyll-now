@@ -130,14 +130,14 @@ img {
 
 /* mika.ph General Rules */
 
-.fadeout {
+#cover a, #welcome a, .fadeout {
 opacity: 1;
 transition: opacity .25s ease-in-out;
 -moz-transition: opacity .25s ease-in-out;
 -webkit-transition: opacity .25s ease-in-out;
 }
 
-.fadeout:hover {
+#cover a, #welcome a:hover, .fadeout:hover {
 opacity: 0.8;
 transition: opacity .25s ease-in-out;
 -moz-transition: opacity .25s ease-in-out;
@@ -367,39 +367,18 @@ footer {
 @media screen and (max-width: 600px) { 
 #logo{
 margin-top: 10px;
-left: -25px;
+left: -30px;
 }
 
-#mikalogo, #mikalogo:hover{
-background-size: 50px 50px;
-width: 50px;
-height: 50px;
+#logo, #mikalogo, #mikalogo:hover{
+background-size: 60px 60px;
+width: 60px;
+height: 60px;
 }
 
 #leftnav, #rightnav{
 display:none;
 }
-
-#giantlogo{
-width: 300px;
-height: 300px;
-margin-top: 70px;
-}
-
-#rotatingGlobe{
-margin-top: 75px;
-width: 150px;
-height: 150px;
-}
-
-#welcome{
-margin-top: 40px;
-width: 320px;
-  p{
-    padding-left:10px;
-    padding-right:10px;
-  }
-} 
 
 #header{
 width:300px;
@@ -412,6 +391,7 @@ h1{
 .entry{
 padding-top: 50px;
 h1{
+  width: 300px;
   padding-bottom: 20px;
 }
 
