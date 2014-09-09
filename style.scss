@@ -487,11 +487,15 @@ p{
   width: $mobWidth;
   margin-left: auto;
   margin-right: auto;
-  text-align: left;
+  text-align: center;
   padding-top: 20px;
   padding-bottom: 24px;
   line-height: 1.6em;
 }
+}
+
+.read-more{
+  width: $mobWidth;
 }
 
 .entry{
