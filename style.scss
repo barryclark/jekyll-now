@@ -477,6 +477,23 @@ h1{
   }
 }
 
+.post{
+  h1{
+  width: $mobWidth;
+  padding-bottom: 20px;
+}
+
+p{
+  width: $mobWidth;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  padding-top: 20px;
+  padding-bottom: 24px;
+  line-height: 1.6em;
+}
+}
+
 .entry{
 padding-top: 50px;
 h1{
