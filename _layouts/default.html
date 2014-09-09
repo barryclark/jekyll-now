@@ -42,7 +42,7 @@
 </span></div>
 
     <div id="main" role="main">
-      <div id="mobnav" style="display: none;">
+      <div id="mobnav">
         <ul>
           <li><a href="http://mika.ph/files/aldaba_portfolio2014.pdf">Portfolio</a></li>
           <li><a href="http://mika.ph/resume">Resume</a></li>
@@ -60,16 +60,55 @@
     </div>
 
 <script type="text/javascript">
+var mobilenav = false;
 function toggle_visibility(id) {
     var box = document.getElementById(id);
-    if(box.style.display == 'none')
+    if(mobilenav)
     {
-        box.style.display = 'block';
+        slideUp(box);
+        mobilenav = false;
     }
     else
     {
-        box.style.display = 'none';
+        slideDown(box);
+        mobilenav = true;
     }
+}
+
+function slideDown(elem) {
+    elem.style.paddingTop = '76px';
+    elem.style.maxHeight = '1000px';
+    // We're using a timer to set opacity = 0 because setting max-height = 0 doesn't (completely) hide the element.
+    elem.style.opacity   = '1';
+}
+ 
+/**
+ * Slide element up (like jQuery's slideUp)
+ * @param  {Node} elem Element
+ * @return {[type]}      [description]
+ */
+function slideUp(elem) {
+    elem.style.maxHeight = '0';
+    once( 1, function () {
+        elem.style.opacity = '0';
+        elem.style.paddingTop = '0px';
+    });
+}
+ 
+/**
+ * Call once after timeout
+ * @param  {Number}   seconds  Number of seconds to wait
+ * @param  {Function} callback Callback function
+ */
+function once (seconds, callback) {
+    var counter = 0;
+    var time = window.setInterval( function () {
+        counter++;
+        if ( counter >= seconds ) {
+            callback();
+            window.clearInterval( time );
+        }
+    }, 600 );
 }
 </script>
     {% include analytics.html %}

@@ -261,8 +261,15 @@ text-align: left;
 z-index: 100;
 }
 
-#mobnav_button, #mobnav{
+#mobnav_button{
   display: none;
+}
+
+#mobnav{
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.6s ease 0s;
 }
 
 .box-shadow-menu {
@@ -433,10 +440,6 @@ display:none;
   display: block;
   cursor: pointer;
   z-index: 10;
-}
-
-#mobnav{
-  padding-top: 76px;
 }
 
 #mobnav ul{
