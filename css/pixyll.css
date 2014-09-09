@@ -110,7 +110,8 @@ body {
   color: #333;
 }
 
-.pagination {
+.pagination,
+.button {
   font-size: 16px;
   font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
   font-weight: 300;
