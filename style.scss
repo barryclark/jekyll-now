@@ -266,6 +266,7 @@ z-index: 100;
 }
 
 #mobnav{
+  padding-top: 76px;
   max-height: 0;
   opacity: 0;
   overflow: hidden;
@@ -322,7 +323,7 @@ z-index: 100;
   min-height: 500px; 
 
   h1{
-    padding-top: 150px;
+    padding-top: 74px;
   }
 
   p{
@@ -359,7 +360,7 @@ z-index: 100;
 .cover{
   min-height: 500px;
   h1{
-    padding-top: 200px;
+    padding-top: 114px;
   }
   p{
     color: $satin-linen;

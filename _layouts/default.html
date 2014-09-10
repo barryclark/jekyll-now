@@ -76,7 +76,6 @@ function toggle_visibility(id) {
 }
 
 function slideDown(elem) {
-    elem.style.paddingTop = '76px';
     elem.style.maxHeight = '1000px';
     // We're using a timer to set opacity = 0 because setting max-height = 0 doesn't (completely) hide the element.
     elem.style.opacity   = '1';
@@ -91,7 +90,6 @@ function slideUp(elem) {
     elem.style.maxHeight = '0';
     once( 1, function () {
         elem.style.opacity = '0';
-        elem.style.paddingTop = '0px';
     });
 }
  
