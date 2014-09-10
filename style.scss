@@ -316,8 +316,8 @@ z-index: 100;
 
 .post {   
   color: $satin-linen;
-  border: 1px solid rgb(111, 202, 207);
-  border: 1px solid rgba(255, 255, 255, .2);
+  border-bottom: 1px solid rgb(111, 202, 207);
+  border-bottom: 1px solid rgba(255, 255, 255, .2);
   -webkit-background-clip: padding-box; /* for Safari */
   background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
   min-height: 500px; 
