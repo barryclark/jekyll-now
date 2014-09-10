@@ -304,6 +304,10 @@ z-index: 100;
   width: 100%;
 }
 
+.posts{
+  padding-top: 76px;
+}
+
 .posts > .post {
   margin-top: 0px;
   padding-bottom: 2em;
@@ -323,7 +327,7 @@ z-index: 100;
   min-height: 500px; 
 
   h1{
-    padding-top: 74px;
+    padding-top: 114px;
   }
 
   p{
@@ -481,10 +485,15 @@ h1{
   }
 }
 
+.posts{
+  padding-top: 0px;
+}
+
 .post{
   h1{
   width: $mobWidth;
   padding-bottom: 20px;
+  padding-top: 74px;
 }
 
 p{
