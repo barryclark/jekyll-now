@@ -1,0 +1,15 @@
+body {
+	background: #fff;
+	color: #333;
+}
+a, a:hover { color: red;}
+h2 { font-size: 60px;}
+h2 a, h3 a {color:#000;
+
+}
+
+h2, h3, h4 { font-family: 'PT Serif', serif; }
+
+p {font-family: 'Open Sans', sans-serif;}
+
+

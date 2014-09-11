@@ -1,10 +1,36 @@
 ---
-layout: page
-title : Archive
-header : Post Archive
-group: navigation
+layout: default
+title: "Miriam Tocino | Articles Archive"
 ---
-{% include JB/setup %}
 
-{% assign posts_collate = site.posts %}
-{% include JB/posts_collate %}
+<div class="row">
+
+	<!-- Eight Columns - Content -->
+	<div class="eight columns">
+		<h3>Articles Archive</h3>
+
+		<div class="row">
+			<div class="twelve columns">
+			{% for post in site.posts %}
+				<h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+				<p>{{ post.content | truncatewords:50 }}</p>
+			{% endfor %}
+			</div>
+		</div>
+
+	</div> <!-- End Eight Columns - Content -->
+
+	<!-- Four Columns - Sidebar -->
+	<div class="four columns">
+
+		<!-- About Widget -->
+    <h4>About</h4>
+    <p>
+    I went from architect to full-time web developer.
+    Want to know more about my story?
+    <a href="http://teamtreehouse.com/stories/miriam-tocino" target="_blank">Check this out!</a>
+    </p> <!-- End About Widget -->
+
+	</div> <!-- End Four Columns - Sidebar -->
+
+</div>
