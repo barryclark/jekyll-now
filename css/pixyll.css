@@ -73,7 +73,7 @@ body {
 }
 
 .site-nav a + a {
-  margin-left: 1rem;
+  margin-left: 1em;
 }
 
 .site-nav {
@@ -93,14 +93,14 @@ body {
 }
 
 .posts .post {
-  margin-bottom: 1rem;
-  padding-bottom: .5rem;
+  margin-bottom: 0.75em;
+  padding-bottom: .375em;
   border-bottom: thin solid #f3f3f3;
 }
 
 .posts .post:last-child {
   border-bottom: none;
-  margin-bottom: .5rem;
+  margin-bottom: .375em;
   padding-bottom: 0;
 }
 
@@ -126,7 +126,7 @@ body {
   border-radius: 0.1875em;
   border: 1px solid #f3f3f3;
   color: #333333;
-  padding: 1rem 1.5rem;
+  padding: 1em 1.5em;
 }
 
 .pagination .disabled {
@@ -152,7 +152,7 @@ body {
   font-size: 1rem;
   font-weight: 300;
   margin: 0;
-  padding: .25rem 0;
+  padding: .25em 0;
   color: #7a7a7a;
   font-style: italic;
 }
@@ -182,12 +182,12 @@ form {
 }
 
 textarea.input {
-  height: 8rem;
+  height: 8em;
 }
 
 p {
   font-weight: 300;
-  line-height: 1.95rem;
+  line-height: 1.5;
   color: #333;
 }
 
@@ -200,20 +200,20 @@ code {
 }
 
 pre {
-  padding: 1rem;
+  padding: 1.125em;
   font-size: 1.125rem;
-  line-height: 1.25rem;
+  line-height: 1.11;
   overflow-x: scroll;
-  margin-bottom: 1rem;
+  margin-bottom: 0.88em;
 }
 
 .highlight .p {
   font-size: 1.125rem;
-  line-height: 1.125rem;
+  line-height: 1;
 }
 
 blockquote {
-  padding: 2rem;
+  padding: 1.33em;
   font-style: italic;
   border-left: 5px solid #7a7a7a;
 }
@@ -251,8 +251,8 @@ h6 {
     width: 100%;
     float: left;
     text-align: center;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
+    margin-top: 0.666em;
+    margin-bottom: 1.333em;
   }
 }
 
@@ -286,7 +286,7 @@ h6 {
   p,
   li {
     font-size: 1.25rem;
-    line-height: 2.25rem;
+    line-height: 1.8;
   }
 
   .small {
@@ -294,18 +294,18 @@ h6 {
   }
 
   .post-link .post-title {
-    margin-top: 1rem;
+    margin-top: 0.5em;
   }
 
   .posts .post {
-    margin-bottom: 2rem;
-    padding-bottom: 1rem;
+    margin-bottom: 1.333em;
+    padding-bottom: 0.666em;
     border-bottom: thin solid #f3f3f3;
   }
 
   .posts .post:last-child {
     border-bottom: none;
-    margin-bottom: .5rem;
+    margin-bottom: .333em;
     padding-bottom: 0;
   }
 }
@@ -324,22 +324,22 @@ h6 {
   }
 
   .posts .post-meta {
-    padding-bottom: .25rem;
+    padding-bottom: .2em;
   }
 
   .post-link .post-title {
-    margin-top: .25rem;
+    margin-top: .125em;
   }
 
   .posts .post {
-    margin-bottom: 4rem;
-    padding-bottom: 2rem;
+    margin-bottom: 2.666em;
+    padding-bottom: 1.333em;
     border-bottom: thin solid #f3f3f3;
   }
 
   .posts .post:last-child {
     border-bottom: none;
-    margin-bottom: 1rem;
+    margin-bottom: .666em;
     padding-bottom: 0;
   }
 }
