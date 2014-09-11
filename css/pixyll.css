@@ -191,6 +191,11 @@ p {
   color: #333;
 }
 
+abbr {
+  border-bottom: 1px black dotted;
+  cursor: help;
+}
+
 pre, code {
   font-family: Menlo, Monaco, "Courier New", monospace
 }
