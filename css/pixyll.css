@@ -227,22 +227,44 @@ blockquote footer {
 }
 
 h1,
+.h1,
 h2,
-h3 {
-  font-family: "Lato", 'Helvetica Neue', Helvetica, sans-serif;
-  font-weight: 900;
-  margin-top: 3rem;
-}
-
+.h2,
+h3,
+.h3,
 h4,
+.h4,
 h5,
-h6 {
+.h5,
+h6,
+.h6 {
   font-family: "Lato", 'Helvetica Neue', Helvetica, sans-serif;
   font-weight: 900;
-  margin-top: 1rem;
+  line-height: 1.2;
+  margin: 1.414em 0 0.5em;
 }
 
 @media screen and (max-width: 48em) {
+  .h1,
+  h1 {
+    font-size: 2.827rem;
+  }
+
+  .h2,
+  h2 {
+    font-size: 1.999rem;
+  }
+
+  .h3,
+  h3 {
+    font-size: 1.413rem;
+  }
+
+  .h4,
+  h4 {
+    font-size: 1rem;
+  }
+
   .site-header {
     text-align: center;
   }
@@ -266,20 +288,22 @@ h6 {
 
   .h1,
   h1 {
-    font-size: 3.25rem;
-    line-height: 4.5rem;
+    font-size: 3.250rem;
   }
 
   .h2,
   h2 {
-    font-size: 2rem;
-    line-height: 2.5rem;
+    font-size: 2.298rem;
   }
 
   .h3,
   h3 {
-    font-size: 1.5rem;
-    line-height: 2rem;
+    font-size: 1.625rem;
+  }
+
+  .h4,
+  h4 {
+    font-size: 1.150rem;
   }
 
   .p,
@@ -313,14 +337,22 @@ h6 {
 @media screen and (min-width: 64em) {
   .h1,
   h1 {
-    font-size: 4.5rem;
-    line-height: 6rem;
+    font-size: 4.498rem;
   }
 
   .h2,
   h2 {
-    font-size: 3rem;
-    line-height: 3.5rem;
+    font-size: 3.18rem;
+  }
+
+  .h3,
+  h3 {
+    font-size: 2.249rem;
+  }
+
+  .h4,
+  h4 {
+    font-size: 1.591rem;
   }
 
   .posts .post-meta {
