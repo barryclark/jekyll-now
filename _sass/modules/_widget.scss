@@ -1,0 +1,46 @@
+/*-----------------------------------------------------------------------------------*/
+/*	WIDGET
+/*-----------------------------------------------------------------------------------*/
+
+.widget {
+
+	border-bottom: 1px solid $gray-lighter;
+	margin-bottom: 40px;
+
+	h4 {
+		font-weight: 500;
+	}
+
+	ul {
+		padding-left: 0;
+	}
+
+	ul.social-media-list {
+		// S
+		@include breakpoint($breakpoint-s) {
+			text-align: center;
+		};
+
+		// L
+		@include breakpoint($breakpoint-l) {
+			text-align: left;
+		};
+
+		li {
+			display: inline;
+			margin-right: 8px;
+		}
+	}
+
+	// S
+	@include breakpoint($breakpoint-s) {
+	};
+
+	// L
+	@include breakpoint($breakpoint-l) {
+	};
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	END WIDGET
+/*-----------------------------------------------------------------------------------*/

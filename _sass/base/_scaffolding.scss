@@ -1,0 +1,88 @@
+/*-----------------------------------------------------------------------------------*/
+/*	SCAFFOLDING
+/*-----------------------------------------------------------------------------------*/
+
+
+// Reset the box-sizing
+//
+// Heads up! This reset may cause conflicts with some third-party widgets.
+// For recommendations on resolving such conflicts, see
+// http://getbootstrap.com/getting-started/#third-box-sizing
+* {
+  @include box-sizing(border-box);
+}
+*:before,
+*:after {
+  @include box-sizing(border-box);
+}
+
+
+// Body reset
+
+body {
+	background: $body-bg;
+	font-family: $font-family-sans-serif;
+	font-size: $font-size-base;
+  line-height: $line-height-base;
+  color: $text-color;
+  font-weight: $text-weight;
+  overflow-x: hidden;
+  position: relative;
+}
+
+// Reset fonts for relevant elements
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+// Links
+
+a {
+  color: $link-color; text-decoration: none; font-weight: 700;
+  -webkit-transition: all 150ms ease-in-out;
+  -moz-transition: all 150ms ease-in-out;
+  -ms-transition: all 150ms ease-in-out;
+  -o-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+
+  &:hover,
+  &:focus {
+    color: $link-hover-color;
+    text-decoration: none;
+  }
+
+  &:focus {
+    @include tab-focus();
+  }
+}
+
+// Horizontal rules
+
+hr {
+	border: 0;
+  clear: both;
+  width: 100%;
+  height: 1px;
+	border-top: 1px solid $hr-border;
+  margin-top: $line-height-computed;
+  margin-bottom: $line-height-computed;
+}
+
+// Browse Happy
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/*-----------------------------------------------------------------------------------*/
+/*	END SCAFFOLDING
+/*-----------------------------------------------------------------------------------*/

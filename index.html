@@ -1,70 +1,32 @@
 ---
 layout: default
 ---
+<!-- Posts -->
+{% for post in paginator.posts limit: 3 %}
+<article>
+		<p class="date">{{ post.date | date_to_long_string }}</p>
+		<h4><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
+	{{ post.content }}
+</article>
+{% endfor %} <!-- End Posts -->
 
-  <div class="row">
-
-    <!-- Eight Columns - Main Content -->
-    <div class="eight columns">
-
-      <!-- Posts -->
-      {% for post in paginator.posts limit: 3 %}
-      <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
-
-      <div class="row">
-        <div class="twelve columns">
-          {{ post.content }}
-        </div>
-      </div>
-      {% endfor %}
-      <!-- End Posts -->
-
-      <!-- Pagination -->
-      <div class="pagination">
-	      <p>
-	        {% if paginator.previous_page %}
-	          {% if paginator.previous_page == 1 %}
-	            <a href="/" class="previous">Previous</a>
-	          {% else %}
-	            <a href="{{ site.baseurl }}/page{{ paginator.previous_page }}" class="previous">Previous</a>
-	          {% endif %}
-	        {% else %}
-	          <span class="previous">Previous</span>
-	        {% endif %}
-	        <span class="page_number">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
-	        {% if paginator.next_page %}
-	          <a href="{{ site.baseurl }}/page{{ paginator.next_page }}" class="next">Next</a>
-	        {% else %}
-	          <span class="next">Next</span>
-	        {% endif %}
-	      </p>
-	    </div>
-	    <!-- End Pagination -->
-
-    </div>
-    <!-- End Eight Columns - Main Content -->
-
-    <!-- Four Columns - Sidebar -->
-    <div class="four columns">
-
-      <!-- About Widget -->
-      <h4>About</h4>
-      <p>
-      I went from architect to full-time web developer.
-      Want to know more about my story?
-      <a href="http://teamtreehouse.com/stories/miriam-tocino" target="_blank">Check this out!</a>
-      </p>
-
-      <!-- Recent Writings Widget -->
-      <h4>Recent Writings</h4>
-      <ul class="disc">
-      {% for post in site.posts offset: 3 limit: 10 %}
-        <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-      {% endfor %}
-      </ul>
-
-      <p><a href="/feed.xml">Subscribe to Feed</a></p>
-
-    </div>
-    <!-- End Four Columns - Sidebar -->
-  </div>
+<!-- Pagination -->
+<footer class="pagination">
+  <p>
+    {% if paginator.previous_page %}
+      {% if paginator.previous_page == 1 %}
+        <a href="/" class="previous">Previous</a>
+      {% else %}
+        <a href="{{ site.baseurl }}/page{{ paginator.previous_page }}" class="previous">Previous</a>
+      {% endif %}
+    {% else %}
+      <span class="previous">Previous</span>
+    {% endif %}
+    <span class="page_number">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+    {% if paginator.next_page %}
+      <a href="{{ site.baseurl }}/page{{ paginator.next_page }}" class="next">Next</a>
+    {% else %}
+      <span class="next">Next</span>
+    {% endif %}
+  </p>
+</footer> <!-- End Pagination -->

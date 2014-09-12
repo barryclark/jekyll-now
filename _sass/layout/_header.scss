@@ -1,0 +1,71 @@
+/*-----------------------------------------------------------------------------------*/
+/*  HEADER
+/*-----------------------------------------------------------------------------------*/
+
+.main-header {
+  border-bottom: 2px solid $gray-darker;
+  padding-bottom: 20px;
+
+  // S
+  @include breakpoint($breakpoint-s) {
+    @include layout($xs-s-layout);
+    @include container(full);
+  };
+
+  // L
+  @include breakpoint($breakpoint-l) {
+    @include layout($l-layout);
+    @include container(full);
+
+  };
+
+  .logo {
+
+    h1 { font-size: 27px; }
+
+    // S
+    @include breakpoint($breakpoint-s) {
+      @include layout($xs-s-layout);
+      @include container(full);
+
+      text-align: center;
+    };
+
+    // L
+    @include breakpoint($breakpoint-l) {
+      @include layout($l-layout);
+      @include span(6);
+
+      text-align: left;
+    };
+  }
+
+  .main-nav {
+
+    a {
+      padding-left: 15px;
+      text-transform: uppercase;
+    }
+
+    // S
+    @include breakpoint($breakpoint-s) {
+      @include layout($xs-s-layout);
+      @include container(full);
+
+      text-align: center;
+      padding-top: 28px;
+    };
+
+    // L
+    @include breakpoint($breakpoint-l) {
+      @include layout($l-layout);
+      @include span(6 at 7);
+
+      text-align: right;
+    };
+  }
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*  END HEADER
+/*-----------------------------------------------------------------------------------*/

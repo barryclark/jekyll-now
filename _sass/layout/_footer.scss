@@ -1,0 +1,30 @@
+/*-----------------------------------------------------------------------------------*/
+/*	FOOTER
+/*-----------------------------------------------------------------------------------*/
+
+.main-footer {
+  border-top: 2px solid $gray-darker;
+  padding-top: 20px;
+
+  // S
+	@include breakpoint($breakpoint-s) {
+		@include layout($xs-s-layout);
+		@include container(full);
+
+		text-align: center;
+	};
+
+	// L
+	@include breakpoint($breakpoint-l) {
+		@include layout($l-layout);
+		@include container(full);
+
+		text-align: left;
+	};
+}
+
+
+
+/*-----------------------------------------------------------------------------------*/
+/*	END FOOTER
+/*-----------------------------------------------------------------------------------*/
