@@ -6,7 +6,7 @@
 
 		<!-- Logo -->
 		<div class="logo">
-			<h1><a href="{{ page.url }}">
+			<h1><a href="{{ site.url }}">
 				Miriam<span>Tocino.</span>
 				<small>Turning into Web Developer.</small>
 			</a></h1>
@@ -14,11 +14,13 @@
 
 		<!-- Navigation -->
     <nav class="main-nav">
-      {% for page in site.pages %}
-        {% if page.title %}
-        <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+      {% for link in site.navigation %}
+        {% assign current = nil %}
+        {% if page.url contains link.url %}
+            {% assign current = 'current' %}
         {% endif %}
-      {% endfor %}
+            <a href="{{ link.url }}" class="{{ current }}">{{ link.title }}</a>
+    {% endfor %}
     </nav> <!-- End Navigation -->
 
 	</header> <!-- End Main Header -->

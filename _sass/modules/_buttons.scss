@@ -1,14 +1,20 @@
 /*-----------------------------------------------------------------------------------*/
-/*	ARTICLE
+/*	BUTTONS
 /*-----------------------------------------------------------------------------------*/
 
-article {
-  border-bottom: 1px solid $gray-lighter;
-  margin-bottom: 40px;
-  padding-bottom: 40px;
+.button {
+  border: 1px solid $gray-lighter;
+  text-transform: uppercase;
+  padding: 7px 10px;
+
+  &:hover {
+  	border: 1px solid $gray-darker;
+  	background: $gray-darker;
+  	color: $white;
+  }
 }
 
 
 /*-----------------------------------------------------------------------------------*/
-/*	END ARTICLE
+/*	END BUTTONS
 /*-----------------------------------------------------------------------------------*/

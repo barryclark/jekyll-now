@@ -4,7 +4,36 @@
 
 footer.pagination {
 
+	ul {
+		padding-left: 0;
 
+		li {
+			display: inline;
+			border: 1px solid $gray-lighter;
+			margin-right: -5px;
+			padding: 10px;
+
+
+			&.active, &:hover {
+				border: 1px solid $gray-darker;
+				background: $gray-darker;
+				color: $white;
+
+				a {
+					color: $white;
+				}
+			}
+
+			&.disabled {
+				color: $gray-lighter;
+				&:hover {
+					background: none;
+					border: 1px solid $gray-lighter;
+					color: $gray-lighter;
+				}
+			}
+		}
+	}
 
 	// S
 	@include breakpoint($breakpoint-s) {
@@ -17,6 +46,7 @@ footer.pagination {
 		margin-bottom: 40px;
 		display: block;
 	};
+
 }
 
 /*-----------------------------------------------------------------------------------*/

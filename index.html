@@ -6,27 +6,40 @@ layout: default
 <article>
 		<p class="date">{{ post.date | date_to_long_string }}</p>
 		<h4><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
-	{{ post.content }}
+		<p>{{ post.content | truncatewords:100 }}</p>
+		<br>
+		<a href="{{ post.url }}" class="button"><small>Read More</small></a>
 </article>
 {% endfor %} <!-- End Posts -->
 
 <!-- Pagination -->
 <footer class="pagination">
-  <p>
-    {% if paginator.previous_page %}
-      {% if paginator.previous_page == 1 %}
-        <a href="/" class="previous">Previous</a>
+  <ul>
+      {% if paginator.previous_page %}
+        {% if paginator.previous_page == 1 %}
+        <li><a href="/">Prev</a></li>
+        {% else %}
+        <li><a href="/page{{ paginator.previous_page }}">Prev</a></li>
+        {% endif %}
       {% else %}
-        <a href="{{ site.baseurl }}/page{{ paginator.previous_page }}" class="previous">Previous</a>
+      <li class="disabled">Prev</li>
       {% endif %}
-    {% else %}
-      <span class="previous">Previous</span>
-    {% endif %}
-    <span class="page_number">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
-    {% if paginator.next_page %}
-      <a href="{{ site.baseurl }}/page{{ paginator.next_page }}" class="next">Next</a>
-    {% else %}
-      <span class="next">Next</span>
-    {% endif %}
-  </p>
+      {% if paginator.page == 1 %}
+      <li class="active">1</li>
+      {% else %}
+      <li><a href="/">1</a></li>
+      {% endif %}
+      {% for count in (2..paginator.total_pages) %}
+        {% if count == paginator.page %}
+        <li class="active"><span >{{ count }}</span></li>
+        {% else %}
+        <li><a href="/page{{ count }}">{{ count }}</a></li>
+        {% endif %}
+      {% endfor %}
+      {% if paginator.next_page %}
+      <li><a href="/page{{ paginator.next_page }}">Next</a></li>
+      {% else %}
+      <li class="disabled">Next</li>
+      {% endif %}
+    </ul>
 </footer> <!-- End Pagination -->

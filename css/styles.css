@@ -626,9 +626,20 @@ hr {
   padding: 0.2em 0;
 }
 
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
 /*-----------------------------------------------------------------------------------*/
 /*	END SCAFFOLDING
 /*-----------------------------------------------------------------------------------*/
+::selection {
+  background: #d33682;
+  color: #fff;
+}
+
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: inherit;
@@ -845,8 +856,9 @@ blockquote:after {
   text-transform: uppercase;
   font-weight: 500;
 }
-.main-header .main-nav a:hover {
+.main-header .main-nav a:hover, .main-header .main-nav a.current {
   border-bottom: 2px solid #d33682;
+  color: #d33682;
 }
 @media (min-width: 321px), (min-width: 568px) {
   .main-header .main-nav {
@@ -1008,7 +1020,7 @@ main {
 article {
   border-bottom: 1px solid #eeeeee;
   margin-bottom: 40px;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 }
 
 /*-----------------------------------------------------------------------------------*/
@@ -1017,6 +1029,31 @@ article {
 /*-----------------------------------------------------------------------------------*/
 /*	PAGINATION
 /*-----------------------------------------------------------------------------------*/
+footer.pagination ul {
+  padding-left: 0;
+}
+footer.pagination ul li {
+  display: inline;
+  border: 1px solid #eeeeee;
+  margin-right: -5px;
+  padding: 10px;
+}
+footer.pagination ul li.active, footer.pagination ul li:hover {
+  border: 1px solid #222222;
+  background: #222222;
+  color: #fff;
+}
+footer.pagination ul li.active a, footer.pagination ul li:hover a {
+  color: #fff;
+}
+footer.pagination ul li.disabled {
+  color: #eeeeee;
+}
+footer.pagination ul li.disabled:hover {
+  background: none;
+  border: 1px solid #eeeeee;
+  color: #eeeeee;
+}
 @media (min-width: 321px), (min-width: 568px) {
   footer.pagination {
     display: none;
@@ -1063,4 +1100,21 @@ article {
 
 /*-----------------------------------------------------------------------------------*/
 /*	END WIDGET
+/*-----------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------*/
+/*	BUTTONS
+/*-----------------------------------------------------------------------------------*/
+.button {
+  border: 1px solid #eeeeee;
+  text-transform: uppercase;
+  padding: 7px 10px;
+}
+.button:hover {
+  border: 1px solid #222222;
+  background: #222222;
+  color: #fff;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	END BUTTONS
 /*-----------------------------------------------------------------------------------*/

@@ -2,6 +2,13 @@
 // Typography
 // --------------------------------------------------
 
+// Selection
+// -------------------------
+
+::selection {
+	background: $brand-primary;
+	color: $white;
+}
 
 // Headings
 // -------------------------

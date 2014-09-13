@@ -1,43 +1,8 @@
 ---
 layout: default
 ---
-  <div class="row">
-    <div class="eight columns">
-      <div class="row">
-        <div class="twelve columns">
-
-					<h4>{{ page.title }}</h4>
-
-		      <!-- Grid Example -->
-		      <div class="row">
-		        <div class="twelve columns">
-							{{ content }}
-		        </div>
-		      </div>
-
-        </div>
-      </div>
-	</div>
-
-	<div class="four columns">
-
-		<!-- About Widget -->
-    <h4>About</h4>
-    <p>
-    I went from architect to full-time web developer.
-    Want to know more about my story?
-    <a href="http://teamtreehouse.com/stories/miriam-tocino" target="_blank">Check this out!</a>
-    </p>
-
-    <!-- Related Writings Widget -->
-	  <h4>Related Writings</h4>
-	  <ul class="disc">
-		  {% for post in site.related_posts limit: 10 %}
-		    <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-		  {% endfor %}
-	  </ul>
-
-
-
-	</div>
+<h4>{{ page.title }}</h4>
+<div>
+	{{ content }}
 </div>
+<a href="{{ site.url }}" class="button"><small>Back to Home</small></a>

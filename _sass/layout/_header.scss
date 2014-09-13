@@ -47,8 +47,9 @@
       text-transform: uppercase;
       font-weight: 500;
 
-      &:hover {
+      &:hover, &.current {
         border-bottom: 2px solid $brand-primary;
+        color: $brand-primary;
       }
     }
 
