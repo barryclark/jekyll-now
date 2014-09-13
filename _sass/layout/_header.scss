@@ -43,8 +43,13 @@
   .main-nav {
 
     a {
-      padding-left: 15px;
+      margin-left: 15px;
       text-transform: uppercase;
+      font-weight: 500;
+
+      &:hover {
+        border-bottom: 2px solid $brand-primary;
+      }
     }
 
     // S

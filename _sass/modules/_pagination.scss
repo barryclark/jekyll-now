@@ -4,7 +4,7 @@
 
 footer.pagination {
 
-	margin-bottom: 40px;
+
 
 	// S
 	@include breakpoint($breakpoint-s) {
@@ -13,6 +13,9 @@ footer.pagination {
 
 	// L
 	@include breakpoint($breakpoint-l) {
+		display: inline;
+		margin-bottom: 40px;
+		display: block;
 	};
 }
 

@@ -841,8 +841,12 @@ blockquote:after {
   }
 }
 .main-header .main-nav a {
-  padding-left: 15px;
+  margin-left: 15px;
   text-transform: uppercase;
+  font-weight: 500;
+}
+.main-header .main-nav a:hover {
+  border-bottom: 2px solid #d33682;
 }
 @media (min-width: 321px), (min-width: 568px) {
   .main-header .main-nav {
@@ -966,6 +970,7 @@ main {
 .main-footer {
   border-top: 2px solid #222222;
   padding-top: 20px;
+  margin-top: 40px;
 }
 @media (min-width: 321px), (min-width: 568px) {
   .main-footer {
@@ -1012,12 +1017,16 @@ article {
 /*-----------------------------------------------------------------------------------*/
 /*	PAGINATION
 /*-----------------------------------------------------------------------------------*/
-footer.pagination {
-  margin-bottom: 40px;
-}
 @media (min-width: 321px), (min-width: 568px) {
   footer.pagination {
     display: none;
+  }
+}
+@media (min-width: 769px), (min-width: 1024px) {
+  footer.pagination {
+    display: inline;
+    margin-bottom: 40px;
+    display: block;
   }
 }
 

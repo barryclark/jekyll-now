@@ -5,6 +5,7 @@
 .main-footer {
   border-top: 2px solid $gray-darker;
   padding-top: 20px;
+  margin-top: 40px;
 
   // S
 	@include breakpoint($breakpoint-s) {
