@@ -16,6 +16,16 @@
 	}
 
 	ul.social-media-list {
+
+		li {
+			display: inline;
+			margin-right: 8px;
+
+			a span svg:hover #social-media-logo {
+				fill: $brand-primary;
+			}
+		}
+
 		// S
 		@include breakpoint($breakpoint-s) {
 			text-align: center;
@@ -26,10 +36,7 @@
 			text-align: left;
 		};
 
-		li {
-			display: inline;
-			margin-right: 8px;
-		}
+
 	}
 
 	// S

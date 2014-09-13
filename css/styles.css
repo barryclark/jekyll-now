@@ -1083,6 +1083,13 @@ footer.pagination ul li.disabled:hover {
 .widget ul {
   padding-left: 0;
 }
+.widget ul.social-media-list li {
+  display: inline;
+  margin-right: 8px;
+}
+.widget ul.social-media-list li a span svg:hover #social-media-logo {
+  fill: #d33682;
+}
 @media (min-width: 321px), (min-width: 568px) {
   .widget ul.social-media-list {
     text-align: center;
@@ -1092,10 +1099,6 @@ footer.pagination ul li.disabled:hover {
   .widget ul.social-media-list {
     text-align: left;
   }
-}
-.widget ul.social-media-list li {
-  display: inline;
-  margin-right: 8px;
 }
 
 /*-----------------------------------------------------------------------------------*/
