@@ -130,7 +130,7 @@
 // animated navicons
 // https://github.com/SaraSoueidan/navicon-transformicons
 // common to all three-liners
-@mixin line {
+@mixin menuline {
 	display: inline-block;
 	width: $button-size;
 	height: $button-size/7;
@@ -139,11 +139,11 @@
 	transition: $transition;
 }
 // common to all three-liners
-.lines {
-	@include line;
+.menulines {
+	@include menuline;
 	position: relative; 
 	&:before, &:after {
-	 @include line;
+	 @include menuline;
 		position: absolute;
 		left:0;
 		content: '';
@@ -158,8 +158,8 @@
 	}
 }
 // common to all three-liners
-.lines-button:hover {
-	.lines {
+.menulines-button:hover {
+	.menulines {
 		&:before { 
 			top: $button-size/3.5; 
 		}
@@ -169,8 +169,8 @@
 	}
 }
 // for both the arrow up and left icons
-.lines-button.arrow.close {
-		.lines {
+.menulines-button.arrow.close {
+		.menulines {
 			&:before,
 			&:after {
 				top: 0;
@@ -187,12 +187,12 @@
 		}
 }
 // arrow up only: just rotate by 90degrees
-.lines-button.arrow-up.close {
+.menulines-button.arrow-up.close {
 	-webkit-transform: scale3d(.8,.8,.8) rotate3d(0,0,1,90deg);
 					transform: scale3d(.8,.8,.8) rotate3d(0, 0, 1,90deg);
 }
 // three-lines to minus only
-.lines-button.minus.close{
+.menulines-button.minus.close{
 	.lines {
 		&:before, &:after{
 			-webkit-transform: none;
@@ -203,8 +203,8 @@
 	}
 }
 // three-lines to x
-.lines-button.x.close{
-	.lines {
+.menulines-button.x.close{
+	.menulines {
 		background: transparent;
 		&:before, &:after{
 			-webkit-transform-origin: 50% 50%;
@@ -223,8 +223,8 @@
 	}
 }
 // three-lines to x method 2
-.lines-button.x2{
-		.lines{
+.menulines-button.x2{
+		.menulines{
 			transition: background .3s .5s ease;
 			&:before, &:after{
 				//set transform origin
@@ -235,8 +235,8 @@
 			}
 		}
 }
-.lines-button.x2.close{
-	.lines {
+.menulines-button.x2.close{
+	.menulines {
 		transition: background .3s 0s ease;
 		background: transparent;
 		&:before, &:after{
