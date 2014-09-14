@@ -107,6 +107,9 @@ blockquote {
 tt, code, kbd, samp, pre {
 	font-family: $code-font;
 }
+pre {
+	overflow-x: auto; // add scrollbars to wide code blocks
+}
 p code,
 li code {
 	@include font-size(16,no);
