@@ -6,6 +6,23 @@ date: September 14, 2014
 
 ![Symfony Love Vagrant](http://miriamtocino.github.io/images/symfony-love-vagrant.svg)
 
-That evening Mr. Utterson came home to his bachelor house in sombre spirits and sat down to dinner without relish. It was his custom of a Sunday, when this meal was over, to sit close by the fire, a volume of some dry divinity on his reading desk, until the clock of the neighbouring church rang out the hour of twelve, when he would go soberly and gratefully to bed. On this night however, as soon as the cloth was taken away, he took up a candle and went into his business room. There he opened his safe, took from the most private part of it a document endorsed on the envelope as Dr.
+**Did you ever wonder how to work simultaneously on different symfony projects locally on your computer?** When I first started to work with Symfony, it was very important to create a smooth and quick way to set up a new development environment every time I would like to start a new project.
 
-Jekyll's Will and sat down with a clouded brow to study its contents. The will was holograph, for Mr. Utterson though he took charge of it now that it was made, had refused to lend the least assistance in the making of it; it provided not only that, in case of the decease of Henry Jekyll, M.D., D.C.L., L.L.D., F.R.S., etc., all his possessions were to pass into the hands of his "friend and benefactor Edward Hyde," but that in case of Dr. Jekyll's "disappearance or unexplained absence for any period exceeding three calendar months," the said Edward Hyde should step into the said Henry Jekyll's shoes without further delay and free from any burthen or obligation beyond the payment of a few small sums to the members of the doctor's household. This document had long been the lawyer's eyesore. It offended him both as a lawyer and as a lover of the sane and customary sides of life, to whom the fanciful was the immodest.
+I had already worked with the vagrant version of this guy ----- , which turned out to be the best one I found in the internet so far for symfont projects.
+
+In my case I decided to configure one **Vagrant Virtual Machine** per project. Below you find the steps to follow every time you would like to set up a new project.
+
+1.
+2.
+3.
+4.
+5.
+
+
+I personally have a list of the projects and their corresponding details stored under my documents. It would look something like this:
+
+---
+
+## Small Projects
+
+Some cases I just want to check quickly one new feature out. For that I created a common virtual machine under the folder **symfony-pocket-guides** where I store all the databases and then run the built-in symfony server under the corresponding folder that I want to check out. Below you find the configuration of the database, which turns out to be the same for all projects.
