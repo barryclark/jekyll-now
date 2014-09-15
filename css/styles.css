@@ -1136,6 +1136,9 @@ ul.social-media-list li a span svg:hover #social-media-logo {
 .elearning ul li {
   list-style-type: disc;
 }
+.elearning img {
+  margin: 20px 0;
+}
 
 /*-----------------------------------------------------------------------------------*/
 /*	END ELEARNING
