@@ -1158,13 +1158,13 @@ ul.social-media-list li a span svg:hover #social-media-logo {
 /*	ABOUT PAGE
 /*-----------------------------------------------------------------------------------*/
 img.me {
-  margin: 40px auto 0 auto;
-  max-width: 250px !important;
-  -webkit-border-radius: 250px;
-  -moz-border-radius: 250px;
-  -ms-border-radius: 250px;
-  -o-border-radius: 250px;
-  border-radius: 250px;
+  margin: 60px auto 0 auto;
+  max-width: 300px !important;
+  -webkit-border-radius: 300px;
+  -moz-border-radius: 300px;
+  -ms-border-radius: 300px;
+  -o-border-radius: 300px;
+  border-radius: 300px;
 }
 
 /*-----------------------------------------------------------------------------------*/
