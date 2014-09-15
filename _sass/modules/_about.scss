@@ -3,13 +3,37 @@
 /*-----------------------------------------------------------------------------------*/
 
 img.me {
-	margin: 60px auto 0 auto;
+
 	max-width: 300px !important;
 	-webkit-border-radius: 300px;
 	-moz-border-radius: 300px;
 	-ms-border-radius: 300px;
 	-o-border-radius: 300px;
 	border-radius: 300px;
+
+		// S
+	@include breakpoint($breakpoint-s) {
+		margin: 20px auto 0 auto;
+	};
+
+	// L
+	@include breakpoint($breakpoint-l) {
+		margin: 60px auto 0 auto;
+	};
+}
+
+.about-back-home {
+
+	// S
+	@include breakpoint($breakpoint-s) {
+		display: none;
+	};
+
+	// L
+	@include breakpoint($breakpoint-l) {
+		display: inline-block;
+	};
+
 }
 
 /*-----------------------------------------------------------------------------------*/

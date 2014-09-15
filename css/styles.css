@@ -1158,13 +1158,33 @@ ul.social-media-list li a span svg:hover #social-media-logo {
 /*	ABOUT PAGE
 /*-----------------------------------------------------------------------------------*/
 img.me {
-  margin: 60px auto 0 auto;
   max-width: 300px !important;
   -webkit-border-radius: 300px;
   -moz-border-radius: 300px;
   -ms-border-radius: 300px;
   -o-border-radius: 300px;
   border-radius: 300px;
+}
+@media (min-width: 321px), (min-width: 568px) {
+  img.me {
+    margin: 20px auto 0 auto;
+  }
+}
+@media (min-width: 769px), (min-width: 1024px) {
+  img.me {
+    margin: 60px auto 0 auto;
+  }
+}
+
+@media (min-width: 321px), (min-width: 568px) {
+  .about-back-home {
+    display: none;
+  }
+}
+@media (min-width: 769px), (min-width: 1024px) {
+  .about-back-home {
+    display: inline-block;
+  }
 }
 
 /*-----------------------------------------------------------------------------------*/
