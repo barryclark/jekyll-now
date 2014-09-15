@@ -1,0 +1,44 @@
+//
+// POST
+// --------------------------------------------------
+
+.post {
+	// Lists
+	// -------------------------
+
+	ul {
+		li {
+			list-style: disc;
+			margin-left: 20px;
+		}
+	}
+
+	ol {
+		list-style-type: decimal;
+
+		li {
+			margin-top: 10px;
+		}
+	}
+
+	// Code
+	// -------------------------
+
+	pre, pre code, pre kbd, pre samp {
+	color: #fff;
+	}
+
+	pre {
+		white-space: pre;
+		word-wrap: normal;
+		overflow: auto;
+		padding: 5px;
+		background-color: #444;
+		// border-radius: 3px;
+	}
+}
+
+
+//
+// END POST
+// --------------------------------------------------

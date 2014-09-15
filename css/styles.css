@@ -335,7 +335,7 @@ dd {
 menu,
 ol,
 ul {
-  padding: 0 0 0 40px;
+  padding: 0 0 0 20px;
 }
 
 /**
@@ -1131,7 +1131,10 @@ ul.social-media-list li a span svg:hover #social-media-logo {
   margin-top: 20px;
 }
 .elearning ul {
-  padding-left: 0;
+  padding-left: 20px;
+}
+.elearning ul li {
+  list-style-type: disc;
 }
 
 /*-----------------------------------------------------------------------------------*/
@@ -1148,7 +1151,10 @@ ul.social-media-list li a span svg:hover #social-media-logo {
   margin-top: 20px;
 }
 .bookshelf ul {
-  padding-left: 0;
+  padding-left: 20px;
+}
+.bookshelf ul li {
+  list-style-type: disc;
 }
 
 /*-----------------------------------------------------------------------------------*/
@@ -1190,3 +1196,23 @@ img.me {
 /*-----------------------------------------------------------------------------------*/
 /*	END ABOUT PAGE
 /*-----------------------------------------------------------------------------------*/
+.post ul li {
+  list-style: disc;
+  margin-left: 20px;
+}
+.post ol {
+  list-style-type: decimal;
+}
+.post ol li {
+  margin-top: 10px;
+}
+.post pre, .post pre code, .post pre kbd, .post pre samp {
+  color: #fff;
+}
+.post pre {
+  white-space: pre;
+  word-wrap: normal;
+  overflow: auto;
+  padding: 5px;
+  background-color: #444;
+}
