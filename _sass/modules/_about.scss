@@ -2,7 +2,9 @@
 /*	ABOUT PAGE
 /*-----------------------------------------------------------------------------------*/
 
-.me {
+img.me {
+	margin: 0 auto;
+	max-width: 250px !important;
 	-webkit-border-radius: 250px;
 	-moz-border-radius: 250px;
 	-ms-border-radius: 250px;

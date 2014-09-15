@@ -73,7 +73,10 @@ p { margin: 0 0 ($line-height-computed / 2); }
 
 // Emphasis & misc
 // -------------------------
-strong { font-weight: 700; }
+strong {
+	font-weight: 700;
+	color: $brand-primary;
+}
 em { font-style: italic; }
 
 
