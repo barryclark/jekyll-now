@@ -1,8 +1,14 @@
 ---
-layout: default
+layout: default-related-writings
 ---
-<h4>{{ page.title }}</h4>
-<div>
-	{{ content }}
-</div>
+
+<!-- Post -->
+<article>
+	<p class="date">{{ page.date | date_to_long_string }}</p>
+	<h4>{{ page.title }}</h4>
+	<p>{{ content }}</p>
+</article> <!-- End Post -->
+
 <a href="{{ site.url }}" class="button"><small>Back to Home</small></a>
+
+

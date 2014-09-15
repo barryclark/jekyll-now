@@ -1,25 +1,24 @@
 /*-----------------------------------------------------------------------------------*/
-/*	WIDGET
+/*	ELEARNING
 /*-----------------------------------------------------------------------------------*/
 
-.widget {
+.elearning {
 
-	border-bottom: 1px solid $gray-lighter;
-	margin-bottom: 40px;
-
-	h4 {
+	h3 {
 		font-weight: 500;
 	}
 
-	// S
-	@include breakpoint($breakpoint-s) {
-	};
+  h4 {
+  	font-weight: 500;
+  	margin-top: 20px;
+  }
 
-	// L
-	@include breakpoint($breakpoint-l) {
-	};
+  ul {
+		padding-left: 0;
+	}
 }
 
+
 /*-----------------------------------------------------------------------------------*/
-/*	END WIDGET
+/*	END ELEARNING
 /*-----------------------------------------------------------------------------------*/

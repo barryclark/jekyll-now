@@ -1,25 +1,19 @@
 /*-----------------------------------------------------------------------------------*/
-/*	WIDGET
+/*	SOCIAL MEDIA LIST
 /*-----------------------------------------------------------------------------------*/
 
-.widget {
+ul.social-media-list {
 
-	border-bottom: 1px solid $gray-lighter;
-	margin-bottom: 40px;
+	li {
+		display: inline;
+		margin-right: 8px;
 
-	h4 {
-		font-weight: 500;
+		a span svg:hover #social-media-logo {
+			fill: $brand-primary;
+		}
 	}
-
-	// S
-	@include breakpoint($breakpoint-s) {
-	};
-
-	// L
-	@include breakpoint($breakpoint-l) {
-	};
 }
 
 /*-----------------------------------------------------------------------------------*/
-/*	END WIDGET
+/*	END SOCIAL MEDIA LIST
 /*-----------------------------------------------------------------------------------*/

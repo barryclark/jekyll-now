@@ -1,18 +1,27 @@
----
-layout: about-layout
-title: "About"
----
+{% include head.html %}
+{% include header.html %}
 
-<article>
-	<p>
-		Back in 2002 I went to college to study architecture, although my father did his best to get me in computer science. But I didn't want to. I wonder now what was it that didn't attract me by that time.
-		</br>
-		I decided to switch careers a couple of years ago, after having worked as an architect im Amsterdam, Vienna and Frankfurt, and having seen some of my designs built and having won some competitions in the field.
-		</br>
-		I keep being interested in building things, but this time by coding. I also would like to contribute to the growing community of women in tech and try to make girls attracted to this world from the very beginning. This corner of the web is where I would like to show that coding can also be girly.
-	</p>
+<!-- Main -->
+<main>
 
-	<ul class="social-media-list">
+  <!-- Content -->
+  <section class="content">
+    {{content}}
+  </section> <!-- End Content -->
+
+  <!-- Sidebar -->
+  <aside>
+
+    <!-- Widget: About me -->
+    <div class="widget">
+      <h4>About Me</h4>
+      <p>
+      I went from architect to full-time web developer.
+      Want to know more about my story?
+      <a href="http://teamtreehouse.com/stories/miriam-tocino" target="_blank">Check this out!</a>
+      </p>
+
+      <ul class="social-media-list">
 
         <!-- Email
         {% if site.email %}
@@ -63,4 +72,24 @@ title: "About"
 
 
       </ul>
-</article>
+    </div> <!-- End Widget: About me -->
+
+    <!-- Widget: Related Writings -->
+    <div class="widget">
+      <h4>Related Articles</h4>
+      <ul>
+      {% for post in site.related_posts limit: 5 %}
+		    <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+		  {% endfor %}
+      </ul>
+    </div> <!-- End Widget: Related Writings -->
+
+  </aside> <!-- End Sidebar -->
+
+</main> <!-- End Main -->
+
+{% include footer.html %}
+
+
+
+

@@ -1,25 +1,15 @@
 /*-----------------------------------------------------------------------------------*/
-/*	WIDGET
+/*	ABOUT PAGE
 /*-----------------------------------------------------------------------------------*/
 
-.widget {
-
-	border-bottom: 1px solid $gray-lighter;
-	margin-bottom: 40px;
-
-	h4 {
-		font-weight: 500;
-	}
-
-	// S
-	@include breakpoint($breakpoint-s) {
-	};
-
-	// L
-	@include breakpoint($breakpoint-l) {
-	};
+.me {
+	-webkit-border-radius: 250px;
+	-moz-border-radius: 250px;
+	-ms-border-radius: 250px;
+	-o-border-radius: 250px;
+	border-radius: 250px;
 }
 
 /*-----------------------------------------------------------------------------------*/
-/*	END WIDGET
+/*	END ABOUT PAGE
 /*-----------------------------------------------------------------------------------*/
