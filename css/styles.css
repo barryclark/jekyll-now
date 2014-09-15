@@ -1176,11 +1176,6 @@ img.me {
     margin: 20px auto 0 auto;
   }
 }
-@media (min-width: 769px), (min-width: 1024px) {
-  img.me {
-    margin: 60px auto 0 auto;
-  }
-}
 
 @media (min-width: 321px), (min-width: 568px) {
   .about-back-home {
