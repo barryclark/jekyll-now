@@ -3,9 +3,9 @@
 // --------------------------------------------------
 
 .post {
+
 	// Lists
 	// -------------------------
-
 	ul {
 		li {
 			list-style: disc;
@@ -21,23 +21,10 @@
 		}
 	}
 
-	// Code
-	// -------------------------
-
-	pre, pre code, pre kbd, pre samp {
-	color: #fff;
-	}
-
-	pre {
-		white-space: pre;
-		word-wrap: normal;
-		overflow: auto;
-		padding: 5px;
-		background-color: #444;
-		// border-radius: 3px;
+	p.date, h3 {
+		margin: 0;
 	}
 }
-
 
 //
 // END POST

@@ -13,7 +13,7 @@ aside {
 	// L
 	@include breakpoint($breakpoint-l) {
 		@include layout($l-layout);
-		@include span(4 at 9);
+		@include span(3 at 10);
 	};
 }
 

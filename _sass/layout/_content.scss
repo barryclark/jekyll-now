@@ -13,9 +13,9 @@
 	// L
 	@include breakpoint($breakpoint-l) {
 		@include layout($l-layout);
-		@include span(8);
+		@include span(9);
 
-		padding-right: 60px;
+		padding-right: 40px;
 	};
 }
 

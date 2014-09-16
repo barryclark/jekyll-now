@@ -60,6 +60,17 @@
           backface-visibility: $visibility;
 }
 
+// Border Radius
+//
+
+@mixin border-radius($border-radius) {
+  	-webkit-border-radius: $border-radius;
+	-moz-border-radius: $border-radius;
+	-ms-border-radius: $border-radius;
+	-o-border-radius: $border-radius;
+	border-radius: $border-radius;
+}
+
 // Drop shadows
 //
 // Note: Deprecated `.box-shadow()` as of v3.1.0 since all of Bootstrap's
