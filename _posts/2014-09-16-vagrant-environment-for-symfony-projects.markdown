@@ -24,10 +24,14 @@ Download the Vagrant virtual box from [here](https://github.com/kleiram/vagrant-
 
 Add the **vagrant-symfony-master** folder that you just downloaded to your project root folder and rename it into **vagrant**.
 
-Open the `Vagrantfile` and configure the network interfaces by changing the IP address (replace **192.168.56.101** in the following example) and the ports (replace **1234** in the following example). It is important to remark that you must **use different ports for the different projects**, otherwise you won't be able to run various projects at the same time. The rest of the file you could leave as it is:
+Open the **Vagrantfile** and configure the network interfaces by changing the IP address (replace **192.168.56.101** in the following example) and the ports (replace **1234** in the following example).
+
+> It is important to remark that you must use different ports for the different projects, otherwise you won't be able to run various projects at the same time.
+
+The rest of the file you could leave as it is:
 
 {% highlight ruby linenos %}
-# my-wonderful-project/vagrant/Vagrantfile
+# wonderful-project/vagrant/Vagrantfile
 
 Vagrant.configure("2") do |config|
   # Configure the box to use
@@ -47,7 +51,7 @@ Vagrant.configure("2") do |config|
 
   # Configure VirtualBox environment
   config.vm.provider :virtualbox do |v|
-      v.name = "my-wonderful-project"
+      v.name = "wonderful-project"
       v.customize [ "modifyvm", :id, "--memory", 512 ]
   end
 
@@ -58,47 +62,49 @@ Vagrant.configure("2") do |config|
 end
 {% endhighlight %}
 
-Go to your `hosts` file under the folder **~/etc** and add your project to the list:
+Go to your **hosts** file under the folder **~/etc** and add your project to the list:
 
 {% highlight bash %}
 # ~/etc/hosts
 # ...
-192.168.56.101     my-wonderful-project.dev
+192.168.56.101     wonderful-project.dev
 {% endhighlight %}
 
 You can now go back to your project folder in the terminal and build up your new virtual box. It could take a while the first time you run this, so it could be a good moment to grab a coffee or tea ;-):
 
 {% highlight bash %}
-$ cd /my-wonderful-project/vagrant
+$ cd /wonderful-project/vagrant
 $ vagrant up
 {% endhighlight %}
 
 You can now see that the new VM has been added into **Virtual Box**. In the terminal you can access it connecting via ssh. The project will be located under **/var/www**:
 
 {% highlight bash %}
+$ cd /wonderful-project/vagrant
 $ vagrant ssh
+# ssh connection successful
 $ cd /var/www
 {% endhighlight %}
 
 You may also want to configure the connection to the database in a program such as **SequelPro**. The settings would look something like this:
 
-  * **Name**: my-wonderful-project
+  * **Name**: wonderful-project
   * **Host**: 192.168.56.101
   * **Username**: root
   * **Password**: null
-  * **Database**: my-wonderful-project
+  * **Database**: wonderful-project
   * **Port**: 3306 (default)
 
-You are now ready to go back to your project and configure the `parameters.yml` file:
+You are now ready to go back to your project and configure the **parameters.yml** file:
 
 {% highlight bash linenos %}
-# my-wonderful-project/app/config/parameters.yml
+# wonderful-project/app/config/parameters.yml
 
 parameters:
   database_driver: pdo_mysql
   database_host: 192.168.56.101
   database_port: null
-  database_name: my-wonderful-project
+  database_name: wonderful-project
   database_user: root
   database_password: null
   mailer_transport: smtp
@@ -115,10 +121,10 @@ parameters:
 
 I like to save all the different projects that I am working on in a table like this under my documents, specially to keep track of the ports that I am already using:
 
-| **Project Name**        | **IP Address**  | **Ports** | **Host**                 | **Database Name**       |
-| ----------------------- | --------------- | ------ | --------------------------- | ----------------------- |
-| wonderful-project-1  | 192.168.56.101  | 1234   | wonderful-project-1.dev  | wonderful-project-1  |
-| wonderful-project-2  | 192.168.56.102  | 4321   | wonderful-project-2.dev  | wonderful-project-2  |
+| **Project Name**     | **IP Address**  | **Ports** | **Host**                 | **Database Name**    |
+| -------------------- | --------------- | --------- | ------------------------ | -------------------- |
+| wonderful-project-1  | 192.168.56.101  | 1234      | wonderful-project-1.dev  | wonderful-project-1  |
+| wonderful-project-2  | 192.168.56.102  | 4321      | wonderful-project-2.dev  | wonderful-project-2  |
 
 
 
