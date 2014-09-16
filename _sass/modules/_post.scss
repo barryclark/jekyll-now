@@ -21,9 +21,37 @@
 		}
 	}
 
-	p.date, h3 {
-		margin: 0;
+	// Headings
+	// -------------------------
+	h3 {
+		margin: 5px 0;
 	}
+
+	.date {
+		color: $gray-light;
+		font-weight: 400;
+		margin: 0;
+		padding: 0;
+	}
+
+	.tagline {
+		color: $brand-primary;
+		margin-top: 7px !important;
+		font-weight: 700;
+		text-transform: uppercase;
+		margin-top: 5px;
+	}
+
+	// Links
+	// -------------------------
+	p a {
+		text-decoration: underline;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
 }
 
 //

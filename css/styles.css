@@ -773,7 +773,7 @@ pre, pre code, pre kbd, pre samp {
 
 pre {
   background-color: #222222;
-  padding: 10px 15px;
+  padding: 10px;
 }
 
 p code {
@@ -788,6 +788,7 @@ code {
 }
 
 .highlight pre code {
+  /* Line Number */
   /* Comment */
   /* Error */
   /* Keyword */
@@ -851,11 +852,16 @@ code {
   /* Generic.Deleted & Diff Deleted */
   /* Generic.Inserted & Diff Inserted */
 }
+.highlight pre code .lineno {
+  border-right: 2px solid #555555;
+  padding-right: 5px;
+  color: #555555;
+}
 .highlight pre code .hll {
   background-color: #49483e;
 }
 .highlight pre code .c {
-  color: #555555;
+  color: #d33682;
 }
 .highlight pre code .err {
   color: #960050;
@@ -883,7 +889,7 @@ code {
   color: #555555;
 }
 .highlight pre code .c1 {
-  color: #555555;
+  color: #d33682;
 }
 .highlight pre code .cs {
   color: #555555;
@@ -1577,6 +1583,25 @@ ul.social-media-list li a span svg:hover #social-media-logo {
 .post ol li {
   margin-top: 10px;
 }
-.post p.date, .post h3 {
+.post h3 {
+  margin: 5px 0;
+}
+.post .date {
+  color: #777777;
+  font-weight: 400;
   margin: 0;
+  padding: 0;
+}
+.post .tagline {
+  color: #d33682;
+  margin-top: 7px !important;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 5px;
+}
+.post p a {
+  text-decoration: underline;
+}
+.post p a:hover {
+  text-decoration: underline;
 }

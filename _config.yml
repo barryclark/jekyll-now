@@ -18,9 +18,9 @@ bitbucket_username:  miriamtocino
 linkedin_username:  miriamtocino
 
 # Build settings
-markdown: redcarpet
-redcarpet:
-  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "with_toc_data", "tables"]
+# markdown: redcarpet
+# redcarpet:
+  # extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "with_toc_data", "tables"]
 permalink: /articles/:title
 paginate: 3
 

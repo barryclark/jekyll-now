@@ -9,7 +9,7 @@ pre, pre code, pre kbd, pre samp {
 
 pre {
 	background-color: $gray-darker;
-	padding: 10px 15px;
+	padding: 10px;
 }
 
 p code {
@@ -29,8 +29,16 @@ code {
 
 	pre {
 		code {
+
+			/* Line Number */
+			.lineno {
+				border-right: 2px solid $gray;
+				padding-right: 5px;
+				color: $gray;
+			}
+
 			.hll { background-color: #49483e }
-			.c { color: $gray } /* Comment */
+			.c { color: $brand-primary } /* Comment */
 			.err { color: #960050; background-color: #1e0010 } /* Error */
 			.k { color: #66d9ef } /* Keyword */
 			.l { color: #ae81ff } /* Literal */
@@ -39,7 +47,7 @@ code {
 			.p { color: #f8f8f2 } /* Punctuation */
 			.cm { color: $gray } /* Comment.Multiline */
 			.cp { color: $gray } /* Comment.Preproc */
-			.c1 { color: $gray } /* Comment.Single */
+			.c1 { color: $brand-primary } /* Comment.Single */
 			.cs { color: $gray } /* Comment.Special */
 			.ge { font-style: italic } /* Generic.Emph */
 			.gs { font-weight: bold } /* Generic.Strong */

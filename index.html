@@ -3,10 +3,11 @@ layout: default-recent-writings
 ---
 <!-- Posts -->
 {% for post in paginator.posts limit: 3 %}
-<article>
+<article class="post">
 		<p class="date">{{ post.date | date_to_long_string }}</p>
-		<h4><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
-		<p>{{ post.content | truncatewords:100 }}</p>
+		<h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
+		<p class="tagline">{{ post.tagline }}</p>
+		<p>{{ post.content | truncatewords:50 }}</p>
 		<br>
 		<a href="{{ post.url }}" class="button"><small>Read More</small></a>
 </article>
