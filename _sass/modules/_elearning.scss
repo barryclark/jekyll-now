@@ -2,18 +2,21 @@
 /*	ELEARNING
 /*-----------------------------------------------------------------------------------*/
 
-.elearning {
+article.elearning {
 
-  h4 {
-  	font-weight: 500;
-  	margin-top: 20px;
-  }
+	ul {
+    list-style: none !important;
+    padding:0;
+    margin:0;
 
-  ul {
-		padding-left: 20px;
+    li {
+	    padding-left: 1em;
+	    text-indent: -.7em;
 
-		li {
-			list-style-type: disc;
+	    &:before {
+		    content: "• ";
+		    color: $brand-primary; /* or whatever color you prefer */
+			}
 		}
 	}
 

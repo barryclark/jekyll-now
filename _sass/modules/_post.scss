@@ -2,7 +2,7 @@
 // POST
 // --------------------------------------------------
 
-article {
+article.post {
 
 	// Lists
 	// -------------------------
@@ -19,20 +19,6 @@ article {
 		li {
 			margin-top: 10px;
 		}
-	}
-
-	// Headings
-	// -------------------------
-	h3, h3 a {
-		color: $brand-primary;
-		font-weight: 500;
-	}
-
-	h3, h4 {
-		font-weight: 500;
-	}
-	h3 {
-		margin: 5px 0;
 	}
 
 	.date {

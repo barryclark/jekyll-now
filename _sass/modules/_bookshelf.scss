@@ -2,26 +2,23 @@
 /*	BOOKSHELF
 /*-----------------------------------------------------------------------------------*/
 
-.bookshelf {
+article.bookshelf {
+	ul {
+    list-style: none !important;
+    padding:0;
+    margin:0;
 
-	h3 {
-		font-weight: 500;
-	}
+    li {
+	    padding-left: 1em;
+	    text-indent: -.7em;
 
-  h4 {
-  	font-weight: 500;
-  	margin-top: 20px;
-  }
-
-  ul {
-		padding-left: 20px;
-
-		li {
-			list-style-type: disc;
+	    &:before {
+		    content: "• ";
+		    color: $brand-primary; /* or whatever color you prefer */
+			}
 		}
 	}
 }
-
 
 /*-----------------------------------------------------------------------------------*/
 /*	END BOOKSHELF

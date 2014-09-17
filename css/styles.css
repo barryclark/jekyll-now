@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -1357,6 +1358,16 @@ article {
   margin-bottom: 40px;
   padding-bottom: 40px;
 }
+article h3, article h3 a {
+  color: #d33682;
+  font-weight: 500;
+}
+article h3, article h4 {
+  font-weight: 500;
+}
+article h3 {
+  margin: 5px 0;
+}
 
 /*-----------------------------------------------------------------------------------*/
 /*	END ARTICLE
@@ -1458,17 +1469,21 @@ ul.social-media-list li a span svg:hover #social-media-logo {
 /*-----------------------------------------------------------------------------------*/
 /*	ELEARNING
 /*-----------------------------------------------------------------------------------*/
-.elearning h4 {
-  font-weight: 500;
-  margin-top: 20px;
+article.elearning ul {
+  list-style: none !important;
+  padding: 0;
+  margin: 0;
 }
-.elearning ul {
-  padding-left: 20px;
+article.elearning ul li {
+  padding-left: 1em;
+  text-indent: -.7em;
 }
-.elearning ul li {
-  list-style-type: disc;
+article.elearning ul li:before {
+  content: "• ";
+  color: #d33682;
+  /* or whatever color you prefer */
 }
-.elearning img {
+article.elearning img {
   margin: 20px 0;
 }
 
@@ -1478,18 +1493,19 @@ ul.social-media-list li a span svg:hover #social-media-logo {
 /*-----------------------------------------------------------------------------------*/
 /*	BOOKSHELF
 /*-----------------------------------------------------------------------------------*/
-.bookshelf h3 {
-  font-weight: 500;
+article.bookshelf ul {
+  list-style: none !important;
+  padding: 0;
+  margin: 0;
 }
-.bookshelf h4 {
-  font-weight: 500;
-  margin-top: 20px;
+article.bookshelf ul li {
+  padding-left: 1em;
+  text-indent: -.7em;
 }
-.bookshelf ul {
-  padding-left: 20px;
-}
-.bookshelf ul li {
-  list-style-type: disc;
+article.bookshelf ul li:before {
+  content: "• ";
+  color: #d33682;
+  /* or whatever color you prefer */
 }
 
 /*-----------------------------------------------------------------------------------*/
@@ -1498,6 +1514,12 @@ ul.social-media-list li a span svg:hover #social-media-logo {
 /*-----------------------------------------------------------------------------------*/
 /*	ABOUT PAGE
 /*-----------------------------------------------------------------------------------*/
+.about-main .content h3 {
+  margin-bottom: 30px;
+}
+.about-main .content ul li {
+  margin-left: 0;
+}
 @media (min-width: 321px), (min-width: 568px) {
   .about-main .content {
     max-width: 100%;
@@ -1554,7 +1576,7 @@ ul.social-media-list li a span svg:hover #social-media-logo {
 }
 @media (min-width: 769px), (min-width: 1024px) {
   .about-main img.me {
-    margin: 60px auto 0 auto;
+    margin: 20px auto 0 auto;
   }
 }
 @media (min-width: 321px), (min-width: 568px) {
@@ -1571,27 +1593,17 @@ ul.social-media-list li a span svg:hover #social-media-logo {
 /*-----------------------------------------------------------------------------------*/
 /*	END ABOUT PAGE
 /*-----------------------------------------------------------------------------------*/
-article ul li {
+article.post ul li {
   list-style: disc;
   margin-left: 20px;
 }
-article ol {
+article.post ol {
   list-style-type: decimal;
 }
-article ol li {
+article.post ol li {
   margin-top: 10px;
 }
-article h3, article h3 a {
-  color: #d33682;
-  font-weight: 500;
-}
-article h3, article h4 {
-  font-weight: 500;
-}
-article h3 {
-  margin: 5px 0;
-}
-article .date {
+article.post .date {
   color: #777777;
   font-weight: 400;
   margin: 0;
@@ -1599,13 +1611,13 @@ article .date {
   margin-bottom: 12px;
   margin-top: 5px;
 }
-article .tagline {
+article.post .tagline {
   margin-top: 9px;
   font-weight: 500;
 }
-article p a {
+article.post p a {
   text-decoration: underline;
 }
-article p a:hover {
+article.post p a:hover {
   text-decoration: underline;
 }

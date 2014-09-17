@@ -6,6 +6,16 @@
 
 	.content {
 
+		h3 {
+			margin-bottom: 30px;
+		}
+
+		ul {
+			li {
+				margin-left: 0;
+			}
+		}
+
 		// S
 		@include breakpoint($breakpoint-s) {
 			@include layout($xs-s-layout);
@@ -47,12 +57,11 @@
 
 		// L
 		@include breakpoint($breakpoint-l) {
-			margin: 60px auto 0 auto;
+			margin: 20px auto 0 auto;
 		};
 	}
 
 	.about-back-home {
-
 		// S
 		@include breakpoint($breakpoint-s) {
 			display: none;
@@ -62,7 +71,6 @@
 		@include breakpoint($breakpoint-l) {
 			display: inline-block;
 		};
-
 	}
 }
 

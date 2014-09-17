@@ -6,6 +6,20 @@ article {
   border-bottom: 1px solid $gray-lighter;
   margin-bottom: 40px;
   padding-bottom: 40px;
+
+  // Headings
+	// -------------------------
+	h3, h3 a {
+		color: $brand-primary;
+		font-weight: 500;
+	}
+
+	h3, h4 {
+		font-weight: 500;
+	}
+	h3 {
+		margin: 5px 0;
+	}
 }
 
 

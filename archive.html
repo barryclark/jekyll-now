@@ -4,9 +4,10 @@ title: "Archive"
 ---
 
 {% for post in site.posts %}
-	<article>
+	<article class="post">
 		<p class="date">{{ post.date | date_to_long_string }}</p>
-		<h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+		<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+		<h4 class="tagline">{{ post.tagline }}</h4>
 		<p>{{ post.content | truncatewords:50 }}</p>
 		<br>
 		<a href="{{ post.url }}" class="button"><small>Read More</small></a>
