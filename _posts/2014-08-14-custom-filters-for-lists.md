@@ -5,7 +5,7 @@ cover: cover.jpg
 date:   2014-08-14 12:00:00
 categories: posts
 ---
-
+test
 In this blog we're going to make a basic custom filter for a list. Say you have several people and their city of origin and you'd like to be able to click a button that will filter for people that are only from, say, Chicago. 
 So let's take a look at what we have in terms of the basic app. Our main.js starts off by declaring the app, and then a controller with an array of people objects:
 
