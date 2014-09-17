@@ -13,6 +13,15 @@
 		@include container(full);
 
 		text-align: center;
+
+		.impressum {
+			a {
+				margin: 10px;
+				font-weight: 500;
+
+				&:hover { font-weight: 500; }
+			}
+		}
 	};
 
 	// L
@@ -21,7 +30,17 @@
 		@include container(full);
 
 		text-align: left;
+
+		.copyright { float: left; }
+
+		.impressum {
+			float: right;
+
+			a { margin: 0 0 0 20px; }
+		}
 	};
+
+
 }
 
 

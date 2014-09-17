@@ -18,12 +18,12 @@ layout: default-recent-writings
   <ul>
     {% if paginator.previous_page %}
       {% if paginator.previous_page == 1 %}
-      <li><a href="/">Prev</a></li>
+      <li><a href="/">❮</a></li>
       {% else %}
-      <li><a href="/page{{ paginator.previous_page }}">Prev</a></li>
+      <li><a href="/page{{ paginator.previous_page }}">❮</a></li>
       {% endif %}
     {% else %}
-    <li class="disabled">Prev</li>
+    <li class="disabled">❮</li>
     {% endif %}
     {% if paginator.page == 1 %}
     <li class="active">1</li>
@@ -38,9 +38,9 @@ layout: default-recent-writings
       {% endif %}
     {% endfor %}
     {% if paginator.next_page %}
-    <li><a href="/page{{ paginator.next_page }}">Next</a></li>
+    <li><a href="/page{{ paginator.next_page }}">❯</a></li>
     {% else %}
-    <li class="disabled">Next</li>
+    <li class="disabled">❯</li>
     {% endif %}
   </ul>
 </footer> <!-- End Pagination -->

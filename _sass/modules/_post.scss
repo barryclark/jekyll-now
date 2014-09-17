@@ -2,10 +2,7 @@
 // POST
 // --------------------------------------------------
 
-article.post {
-
-	// Lists
-	// -------------------------
+.post {
 	ul {
 		li {
 			list-style: disc;
@@ -19,20 +16,6 @@ article.post {
 		li {
 			margin-top: 10px;
 		}
-	}
-
-	.date {
-		color: $gray-light;
-		font-weight: 400;
-		margin: 0;
-		padding: 0;
-		margin-bottom: 12px;
-		margin-top: 5px;
-	}
-
-	.tagline {
-		margin-top: 9px;
-		font-weight: 500;
 	}
 
 	// Links

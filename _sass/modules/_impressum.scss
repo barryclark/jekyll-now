@@ -1,14 +1,25 @@
 /*-----------------------------------------------------------------------------------*/
-/*	ARTICLE
+/*	IMPRESSUM
 /*-----------------------------------------------------------------------------------*/
 
-article {
-  border-bottom: 1px solid $gray-lighter;
-  margin-bottom: 40px;
-  padding-bottom: 40px;
+article.impressum {
+	ul {
+    list-style: none !important;
+    padding:0;
+    margin:0;
+
+    li {
+	    padding-left: 1em;
+	    text-indent: -.7em;
+
+	    &:before {
+		    content: "• ";
+		    color: $brand-primary; /* or whatever color you prefer */
+			}
+		}
+	}
 }
 
-
 /*-----------------------------------------------------------------------------------*/
-/*	END ARTICLE
+/*	END IMPRESSUM
 /*-----------------------------------------------------------------------------------*/

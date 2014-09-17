@@ -4,6 +4,34 @@
 
 .content {
 
+  // Headings
+	// -------------------------
+	h3, h3 a {
+		color: $brand-primary;
+		font-weight: 500;
+	}
+
+	h3, h4 {
+		font-weight: 500;
+	}
+	h3 {
+		margin: 5px 0;
+	}
+
+	.date {
+		color: $gray-light;
+		font-weight: 400;
+		margin: 0;
+		padding: 0;
+		margin-bottom: 12px;
+		margin-top: 5px;
+	}
+
+	.tagline {
+		margin-top: 9px;
+		font-weight: 500;
+	}
+
 	// S
 	@include breakpoint($breakpoint-s) {
 		@include layout($xs-s-layout);

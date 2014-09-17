@@ -1,7 +1,7 @@
 # Site settings
 title: Miriam Tocino
 email: miriam.tocino@gmail.com
-description: "Turning into Web Developer."
+description: "Turning into Web Developer"
 author :
   name : Miriam Tocino
   email : miriam.tocino@gmail.com
@@ -10,7 +10,7 @@ author :
   feedburner : feedname
 baseurl: "" # the subpath of your site, e.g. /blog/
 # url: "http://miriamtocino.com" # the base hostname & protocol for your site
-url: "http://localhost:4000" # the base hostname & protocol for your site
+url: "http://www.miriamtocino.com" # the base hostname & protocol for your site
 twitter_username: miriamtocino
 github_username:  miriamtocino
 pinterest_username:  miriamtocino
