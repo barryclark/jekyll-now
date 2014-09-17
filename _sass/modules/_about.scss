@@ -27,6 +27,7 @@
 			@include layout($l-layout);
 			@include span(8);
 
+			padding-left: 0;
 			padding-right: 40px;
 		};
 	}
@@ -43,6 +44,8 @@
 		@include breakpoint($breakpoint-l) {
 			@include layout($l-layout);
 			@include span(4 at 9);
+
+			padding-right: 0;
 		};
 	}
 

@@ -1103,6 +1103,23 @@ table > thead > tr > td {
   border-bottom-width: 2px;
 }
 
+/*-----------------------------------------------------------------------------------*/
+/*	HIDE-ON-MOBILE
+/*-----------------------------------------------------------------------------------*/
+@media (min-width: 321px), (min-width: 568px) {
+  .hide-on-mobile {
+    display: none;
+  }
+}
+@media (min-width: 769px), (min-width: 1024px) {
+  .hide-on-mobile {
+    display: inline-block;
+  }
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	END HIDE-ON-MOBILE
+/*-----------------------------------------------------------------------------------*/
 @media (min-width: 321px), (min-width: 568px) {
   .wrapper {
     max-width: 100%;
@@ -1300,6 +1317,7 @@ main {
     float: left;
     padding-left: 1.38889%;
     padding-right: 1.38889%;
+    padding-left: 0;
     padding-right: 40px;
   }
 }
@@ -1328,6 +1346,7 @@ main {
     float: right;
     padding-left: 1.38889%;
     padding-right: 1.38889%;
+    padding-right: 0;
   }
 }
 
@@ -1395,6 +1414,16 @@ article {
   border-bottom: 1px solid #eeeeee;
   margin-bottom: 40px;
   padding-bottom: 40px;
+}
+article h3, article h3 a {
+  color: #d33682;
+  font-weight: 500;
+}
+article h3, article h4 {
+  font-weight: 500;
+}
+article h3 {
+  margin: 5px 0;
 }
 
 /*-----------------------------------------------------------------------------------*/
@@ -1491,6 +1520,17 @@ ul.social-media-list li a span svg:hover #social-media-logo {
   color: #fff;
 }
 
+@media (min-width: 321px), (min-width: 568px) {
+  .back-to-home {
+    display: none;
+  }
+}
+@media (min-width: 769px), (min-width: 1024px) {
+  .back-to-home {
+    display: inline-block;
+  }
+}
+
 /*-----------------------------------------------------------------------------------*/
 /*	END BUTTONS
 /*-----------------------------------------------------------------------------------*/
@@ -1566,6 +1606,7 @@ article.bookshelf ul li:before {
     float: left;
     padding-left: 1.38889%;
     padding-right: 1.38889%;
+    padding-left: 0;
     padding-right: 40px;
   }
 }
@@ -1587,6 +1628,7 @@ article.bookshelf ul li:before {
     float: right;
     padding-left: 1.38889%;
     padding-right: 1.38889%;
+    padding-right: 0;
   }
 }
 .about-main img.me {
