@@ -29,9 +29,11 @@ Typically with rails you can build an entire skeleton for your app with a simple
 
 In rails all the routes for your app were housed in config/routes.rb. In angular, however, routes will be positioned in the app.js file. For each additional route that you;d like to add to your app, simply add:
 
+```html
 	$routeProvider.when('/your_url',
       {templateUrl: 'partials/waitlist.html',
        controller: 'WaitlistControllera'})
+```
 
 route provider accepts two arguments: the url you'd like to address ('/your_url') and an object that indicates the template for the url and the controller.
 
@@ -43,7 +45,7 @@ We can use otherwise as a catchall and redirect them, say, back to the homepage.
 
 So all of this is wrapped in config  in your app.js file as such:
 
-
+```html
 	config(['$routeProvider', function($routeProvider) {
 		
 		$routeProvider.when('/', 
@@ -55,7 +57,5 @@ So all of this is wrapped in config  in your app.js file as such:
 
 	   $routeProvider.otherwise({redirectTo: '/'});
 	}]);
+```
 
-## Controller
-
-So now you'll have to create two associated files for your new route: A template (your view) in the partials folder, and a 
