@@ -213,7 +213,7 @@ myApp.filter('ifCity', function () {
 Now in order to apply the filter we simply chain it to the end of the previous filter we created for our input field. thus our unordered list element will look like this:
 
 
-```html
+```JavaScript
 <ul>
 		<li ng-repeat='peeps in ctrl.people | filter:ctrl.search.val | ifCity:ctrl.city'>
 			{{peeps.name}} - {{peeps.city}}
