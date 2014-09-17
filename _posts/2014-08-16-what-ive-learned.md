@@ -13,8 +13,9 @@ This week we really made consistent progress in terms of creating the product we
 ## Rabl
 
 Rabl was influential in sending responses from my rails controller back to my angular controller. Often I was in need of not only an object (i.e a building object) and its attributes, but also the attributes of that object's relationships (i.e a unit which belongs to a building). This was done effortlessly using rabl. I simply had to articulate:
-
+	<code>
 	respond_with(@buildings)
+	<code>
 
 as the last of line in my rails controller. This would then require me to create a view that looked like, 'MY_CONTROLLER_METHOD.json.rabl'. And here i could name the attributes of the object that i craved and send them seamlessly to my angular controller.
 
