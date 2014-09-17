@@ -14,6 +14,7 @@ comments: true
 	<p>{{ content }}</p>
 </article> <!-- End Post -->
 
+<!-- DISQUS Comments -->
 <article>
 	{% if page.comments %}
 	 <div id="disqus_thread"></div>
@@ -31,10 +32,11 @@ comments: true
     <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 	{% endif %}
-</article>
+</article> <!-- End DISQUS Comments -->
 
 <a href="{{ site.url }}" class="button"><small>Back to Home</small></a>
 
+<!-- DISQUS - Calculate Number of Comments
 <script type="text/javascript">
 /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
 var disqus_shortname = 'miriamtocino'; // required: replace example with your forum shortname
@@ -46,6 +48,4 @@ var disqus_shortname = 'miriamtocino'; // required: replace example with your fo
     s.src = '//' + disqus_shortname + '.disqus.com/count.js';
     (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
 }());
-</script>
-
-
+</script> -->

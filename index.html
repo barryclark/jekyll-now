@@ -5,7 +5,7 @@ layout: default-recent-writings
 {% for post in paginator.posts limit: 3 %}
 <article class="post">
 		<p class="date">{{ post.date | date_to_long_string }}</p>
-		<h3><a href="{{ site.baseurl }}{{ post.url }}#disqus_thread">{{ post.title }}</a></h3>
+		<h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
 		<h4 class="tagline">{{ post.tagline }}</h4>
 		<p>{{ post.content | truncatewords:50 }}</p>
 		<br>
