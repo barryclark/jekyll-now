@@ -46,15 +46,15 @@ $link-hover-color:      $brand-primary !default;
 $font-family-sans-serif:  'Raleway', sans-serif !default;
 $font-family-base:        $font-family-sans-serif !default;
 
-$font-size-base:          14px !default;
+$font-size-base:          .875em !default;
 $font-size-large:         ceil(($font-size-base * 1.25)) !default;  // ~18px
 $font-size-small:         ceil(($font-size-base * 0.85)) !default;  // ~12px
 
 $font-size-h1:            floor(($font-size-base * 2.6)) !default;  // ~36px
 $font-size-h2:            floor(($font-size-base * 2.15)) !default; // ~30px
-$font-size-h3:            ceil(($font-size-base * 1.7)) !default;   // ~24px
-$font-size-h4:            ceil(($font-size-base * 1.25)) !default;  // ~18px
-$font-size-h5:            $font-size-base !default;
+$font-size-h3:            1.9em !default;   // ~24px
+$font-size-h4:            1.4em !default;  // ~18px
+$font-size-h5:            1em !default;
 $font-size-h6:            ceil(($font-size-base * 0.85)) !default;  // ~12px
 
 //** Unit-less `line-height` for use in components like buttons.
@@ -153,12 +153,17 @@ $table-border-color:            #ddd !default;
 //
 //## Define the breakpoints at which your layout will change, adapting to different screen sizes.
 
-// BREAKPOINTS SETUP
+//== BREAKPOINTS SETUP
+//
 $breakpoint-xs: 0px, 320px;
 $breakpoint-s: 321px, 568px;
 $breakpoint-m: 569px, 768px;
 $breakpoint-l: 769px, 1024px;
 $breakpoint-xl: 1025px;
+//** Special case for the header
+$breakpoint-nav-s: 0px, 900px;
+$breakpoint-nav-l: 901px, 1024px;
+
 
 
 //

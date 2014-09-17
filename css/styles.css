@@ -572,7 +572,7 @@ table {
 body {
   background: #f0f2f3;
   font-family: "Raleway", sans-serif;
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 1.7;
   color: #555555;
   font-weight: 500;
@@ -593,11 +593,9 @@ a {
   color: #333333;
   text-decoration: none;
   font-weight: 700;
-  -webkit-transition: all 150ms ease-in-out;
-  -moz-transition: all 150ms ease-in-out;
-  -ms-transition: all 150ms ease-in-out;
-  -o-transition: all 150ms ease-in-out;
-  transition: all 150ms ease-in-out;
+  -webkit-transition: 150ms;
+  -o-transition: 150ms;
+  transition: 150ms;
 }
 a:hover, a:focus {
   color: #d33682;
@@ -615,8 +613,8 @@ hr {
   width: 100%;
   height: 1px;
   border-top: 1px solid #eeeeee;
-  margin-top: 23px;
-  margin-bottom: 23px;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 .browsehappy {
@@ -675,8 +673,8 @@ h6 .small,
 h1, .h1,
 h2, .h2,
 h3, .h3 {
-  margin-top: 23px;
-  margin-bottom: 11.5px;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
 }
 h1 small,
 h1 .small, .h1 small,
@@ -698,8 +696,8 @@ h3 span, .h3 span {
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  margin-top: 11.5px;
-  margin-bottom: 11.5px;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 h4 small,
 h4 .small, .h4 small,
@@ -714,31 +712,31 @@ h6 .small, .h6 small,
 }
 
 h1, .h1 {
-  font-size: 36px;
+  font-size: 2em;
 }
 
 h2, .h2 {
-  font-size: 30px;
+  font-size: 1em;
 }
 
 h3, .h3 {
-  font-size: 24px;
+  font-size: 1.9em;
 }
 
 h4, .h4 {
-  font-size: 18px;
+  font-size: 1.4em;
 }
 
 h5, .h5 {
-  font-size: 14px;
+  font-size: 1em;
 }
 
 h6, .h6 {
-  font-size: 12px;
+  font-size: 1em;
 }
 
 p {
-  margin: 0 0 11.5px;
+  margin: 0 0 0.5em;
 }
 
 strong {
@@ -751,9 +749,9 @@ em {
 }
 
 blockquote {
-  padding: 11.5px 23px;
-  margin: 0 0 23px;
-  font-size: 17.5px;
+  padding: 0.5em 1em;
+  margin: 0 0 1em;
+  font-size: 1.09375em;
   border-left: 5px solid #eeeeee;
 }
 blockquote p:last-child,
@@ -1056,7 +1054,7 @@ th {
 table {
   width: 100%;
   max-width: 100%;
-  margin-bottom: 23px;
+  margin-bottom: 1em;
 }
 table > thead > tr > th,
 table > thead > tr > td,
@@ -1144,7 +1142,7 @@ table > thead > tr > td {
   border-bottom: 2px solid #222222;
   padding-bottom: 20px;
 }
-@media (min-width: 321px), (min-width: 568px) {
+@media (min-width: 0px), (min-width: 900px) {
   .main-header {
     max-width: 100%;
     margin-left: auto;
@@ -1156,7 +1154,7 @@ table > thead > tr > td {
     clear: both;
   }
 }
-@media (min-width: 769px), (min-width: 1024px) {
+@media (min-width: 901px), (min-width: 1024px) {
   .main-header {
     max-width: 100%;
     margin-left: auto;
@@ -1171,7 +1169,7 @@ table > thead > tr > td {
 .main-header .logo h1 {
   font-size: 27px;
 }
-@media (min-width: 321px), (min-width: 568px) {
+@media (min-width: 0px), (min-width: 900px) {
   .main-header .logo {
     max-width: 100%;
     margin-left: auto;
@@ -1184,12 +1182,9 @@ table > thead > tr > td {
     clear: both;
   }
 }
-@media (min-width: 769px), (min-width: 1024px) {
+@media (min-width: 901px), (min-width: 1024px) {
   .main-header .logo {
-    width: 50%;
     float: left;
-    padding-left: 1.38889%;
-    padding-right: 1.38889%;
     text-align: left;
   }
 }
@@ -1202,13 +1197,13 @@ table > thead > tr > td {
   border-bottom: 2px solid #d33682;
   color: #d33682;
 }
-@media (min-width: 321px), (min-width: 568px) {
+@media (min-width: 0px), (min-width: 900px) {
   .main-header .main-nav {
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    padding-top: 28px;
+    padding-top: 20px;
   }
   .main-header .main-nav:after {
     content: " ";
@@ -1216,13 +1211,11 @@ table > thead > tr > td {
     clear: both;
   }
 }
-@media (min-width: 769px), (min-width: 1024px) {
+@media (min-width: 901px), (min-width: 1024px) {
   .main-header .main-nav {
-    width: 50%;
     float: right;
-    padding-left: 1.38889%;
-    padding-right: 1.38889%;
     text-align: right;
+    padding-top: 35px;
   }
 }
 
@@ -1233,7 +1226,7 @@ table > thead > tr > td {
 /*	MAIN
 /*-----------------------------------------------------------------------------------*/
 main {
-  margin-top: 40px;
+  margin-top: 27px;
 }
 @media (min-width: 321px), (min-width: 568px) {
   main {
@@ -1378,7 +1371,7 @@ footer.pagination ul li {
   display: inline;
   border: 1px solid #eeeeee;
   margin-right: -5px;
-  padding: 10px;
+  padding: 5px 10px;
 }
 footer.pagination ul li.active, footer.pagination ul li:hover {
   border: 1px solid #222222;
@@ -1429,6 +1422,11 @@ footer.pagination ul li.disabled:hover {
 /*-----------------------------------------------------------------------------------*/
 /*	SOCIAL MEDIA LIST
 /*-----------------------------------------------------------------------------------*/
+ul.social-media-list {
+  -webkit-transition: 150ms;
+  -o-transition: 150ms;
+  transition: 150ms;
+}
 ul.social-media-list li {
   display: inline;
   margin-right: 8px;
@@ -1573,35 +1571,41 @@ ul.social-media-list li a span svg:hover #social-media-logo {
 /*-----------------------------------------------------------------------------------*/
 /*	END ABOUT PAGE
 /*-----------------------------------------------------------------------------------*/
-.post ul li {
+article ul li {
   list-style: disc;
   margin-left: 20px;
 }
-.post ol {
+article ol {
   list-style-type: decimal;
 }
-.post ol li {
+article ol li {
   margin-top: 10px;
 }
-.post h3 {
+article h3, article h3 a {
+  color: #d33682;
+  font-weight: 500;
+}
+article h3, article h4 {
+  font-weight: 500;
+}
+article h3 {
   margin: 5px 0;
 }
-.post .date {
+article .date {
   color: #777777;
   font-weight: 400;
   margin: 0;
   padding: 0;
-}
-.post .tagline {
-  color: #d33682;
-  margin-top: 7px !important;
-  font-weight: 700;
-  text-transform: uppercase;
+  margin-bottom: 12px;
   margin-top: 5px;
 }
-.post p a {
+article .tagline {
+  margin-top: 9px;
+  font-weight: 500;
+}
+article p a {
   text-decoration: underline;
 }
-.post p a:hover {
+article p a:hover {
   text-decoration: underline;
 }

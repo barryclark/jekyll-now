@@ -7,13 +7,13 @@
   padding-bottom: 20px;
 
   // S
-  @include breakpoint($breakpoint-s) {
+  @include breakpoint($breakpoint-nav-s) {
     @include layout($xs-s-layout);
     @include container(full);
   };
 
   // L
-  @include breakpoint($breakpoint-l) {
+  @include breakpoint($breakpoint-nav-l) {
     @include layout($l-layout);
     @include container(full);
 
@@ -24,17 +24,17 @@
     h1 { font-size: 27px; }
 
     // S
-    @include breakpoint($breakpoint-s) {
-      @include layout($xs-s-layout);
-      @include container(full);
+	  @include breakpoint($breakpoint-nav-s) {
+	    @include layout($xs-s-layout);
+	    @include container(full);
 
-      text-align: center;
-    };
+	    text-align: center;
+	  };
 
     // L
-    @include breakpoint($breakpoint-l) {
+    @include breakpoint($breakpoint-nav-l) {
       @include layout($l-layout);
-      @include span(6);
+      float: left;
 
       text-align: left;
     };
@@ -54,20 +54,21 @@
     }
 
     // S
-    @include breakpoint($breakpoint-s) {
+    @include breakpoint($breakpoint-nav-s) {
       @include layout($xs-s-layout);
       @include container(full);
 
       text-align: center;
-      padding-top: 28px;
+      padding-top: 20px;
     };
 
     // L
-    @include breakpoint($breakpoint-l) {
+    @include breakpoint($breakpoint-nav-l) {
       @include layout($l-layout);
-      @include span(6 at 7);
+      float: right;
 
       text-align: right;
+      padding-top: 35px;
     };
   }
 }

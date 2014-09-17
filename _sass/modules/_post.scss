@@ -2,7 +2,7 @@
 // POST
 // --------------------------------------------------
 
-.post {
+article {
 
 	// Lists
 	// -------------------------
@@ -23,6 +23,14 @@
 
 	// Headings
 	// -------------------------
+	h3, h3 a {
+		color: $brand-primary;
+		font-weight: 500;
+	}
+
+	h3, h4 {
+		font-weight: 500;
+	}
 	h3 {
 		margin: 5px 0;
 	}
@@ -32,14 +40,13 @@
 		font-weight: 400;
 		margin: 0;
 		padding: 0;
+		margin-bottom: 12px;
+		margin-top: 5px;
 	}
 
 	.tagline {
-		color: $brand-primary;
-		margin-top: 7px !important;
-		font-weight: 700;
-		text-transform: uppercase;
-		margin-top: 5px;
+		margin-top: 9px;
+		font-weight: 500;
 	}
 
 	// Links

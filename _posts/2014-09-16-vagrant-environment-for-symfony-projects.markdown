@@ -64,7 +64,7 @@ end
 
 Go to your **hosts** file under the folder **~/etc** and add your project to the list:
 
-{% highlight bash %}
+{% highlight bash linenos %}
 # ~/etc/hosts
 # ...
 192.168.56.101     wonderful-project.dev

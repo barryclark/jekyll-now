@@ -22,6 +22,26 @@ $xs-s-layout: (
   ),
 );
 
+$m-layout: (
+  flow: ltr,
+  output: float,
+  column-width: false,
+  container: auto,
+  container-position: center,
+  columns: 12,
+  gutters: 1/4,
+  gutter-position: inside,
+  global-box-sizing: border-box,
+  math: fluid,
+  last-flow: to,
+  debug: (
+    image: hide,
+    color: rgba(#66f, .25),
+    output: background,
+    toggle: top right,
+  ),
+);
+
 $l-layout: (
   flow: ltr,
   output: float,

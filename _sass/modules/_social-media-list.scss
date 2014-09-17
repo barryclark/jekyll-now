@@ -4,9 +4,14 @@
 
 ul.social-media-list {
 
+@include transition(150ms);
 	li {
 		display: inline;
 		margin-right: 8px;
+
+		svg {
+
+		}
 
 		a span svg:hover #social-media-logo {
 			fill: $brand-primary;

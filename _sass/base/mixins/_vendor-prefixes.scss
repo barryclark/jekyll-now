@@ -116,6 +116,15 @@
   &::-webkit-input-placeholder  { color: $color; } // Safari and Chrome
 }
 
+// Transitions
+@mixin transition($transition) {
+  -webkit-transition: all $transition ease-in-out;
+  	 -moz-transition: all $transition ease-in-out;
+      -ms-transition: all $transition ease-in-out;
+       -o-transition: all $transition ease-in-out;
+          transition: all $transition ease-in-out;
+}
+
 // Transformations
 @mixin scale($ratio...) {
   -webkit-transform: scale($ratio);

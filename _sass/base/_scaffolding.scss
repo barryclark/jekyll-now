@@ -44,11 +44,7 @@ textarea {
 
 a {
   color: $link-color; text-decoration: none; font-weight: 700;
-  -webkit-transition: all 150ms ease-in-out;
-  -moz-transition: all 150ms ease-in-out;
-  -ms-transition: all 150ms ease-in-out;
-  -o-transition: all 150ms ease-in-out;
-  transition: all 150ms ease-in-out;
+  @include transition(150ms);
 
   &:hover,
   &:focus {
