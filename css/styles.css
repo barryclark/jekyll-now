@@ -786,6 +786,9 @@ code {
   overflow: auto;
 }
 
+.highlight pre {
+  overflow-x: scroll;
+}
 .highlight pre code {
   /* Line Number */
   /* Comment */

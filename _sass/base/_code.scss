@@ -21,14 +21,16 @@ code {
 	white-space: pre;
 	word-wrap: normal;
 	overflow: auto;
-
-	// border-radius: 3px;
 }
 
 .highlight {
 
+
+
 	pre {
+		overflow-x: scroll;
 		code {
+
 
 			/* Line Number */
 			.lineno {
