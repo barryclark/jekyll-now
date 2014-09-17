@@ -12,7 +12,23 @@ comments: true
 	<h3>{{ page.title }}</h3>
 	<h4 class="tagline">{{ page.tagline }}</h4>
 	<p>{{ content }}</p>
+
 </article> <!-- End Post -->
+
+<article>
+	<!-- Share Post -->
+	<div class="share-post">
+		<p>
+			If you liked this post, you can
+		<a href="https://twitter.com/intent/tweet?url={{ site.url }}{{ page.url }}&text={{ page.title }}&via=miriamtocino"
+		   target="_blank">
+		  share it with your followers</a>
+		or
+		<a href="https://twitter.com/miriamtocino" target="_blank">
+		  follow me on Twitter</a>!
+		</p>
+	</div><!-- Share Post -->
+</article>
 
 <!-- DISQUS Comments -->
 <article>

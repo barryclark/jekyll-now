@@ -1621,3 +1621,14 @@ article.post p a {
 article.post p a:hover {
   text-decoration: underline;
 }
+
+.share-post {
+  margin-top: 20px;
+  background: #d33682;
+  color: #fff;
+  padding: 10px 10px 5px 10px;
+  text-align: center;
+}
+.share-post a:hover {
+  color: #fff;
+}

@@ -44,7 +44,20 @@ article.post {
 			text-decoration: underline;
 		}
 	}
+}
 
+// Share Posts Box
+// -------------------------
+.share-post {
+	margin-top: 20px;
+	background: $brand-primary;
+	color: $white;
+	padding: 10px 10px 5px 10px;
+	text-align: center;
+
+	a:hover {
+		color: $white;
+	}
 }
 
 //
