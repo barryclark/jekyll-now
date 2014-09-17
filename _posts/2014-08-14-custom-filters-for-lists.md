@@ -5,7 +5,8 @@ cover: cover.jpg
 date:   2014-08-14 12:00:00
 categories: posts
 ---
-test
+
+
 In this blog we're going to make a basic custom filter for a list. Say you have several people and their city of origin and you'd like to be able to click a button that will filter for people that are only from, say, Chicago. 
 So let's take a look at what we have in terms of the basic app. Our main.js starts off by declaring the app, and then a controller with an array of people objects:
 
@@ -212,21 +213,21 @@ myApp.filter('ifCity', function () {
 Now in order to apply the filter we simply chain it to the end of the previous filter we created for our input field. thus our unordered list element will look like this:
 
 
-	```html
+```html
 <ul>
-			<li ng-repeat='peeps in ctrl.people | filter:ctrl.search.val | ifCity:ctrl.city'>
-				{{peeps.name}} - {{peeps.city}}
-			</li>
-	</ul>
-  ```
+		<li ng-repeat='peeps in ctrl.people | filter:ctrl.search.val | ifCity:ctrl.city'>
+			{{peeps.name}} - {{peeps.city}}
+		</li>
+</ul>
+```
 
 
 All done! Now when we click the button we should see a list that only shows chicago kids. We can create another button that will reset the list to it's entirety using the same methods:
 
 
-	```html
-	<button ng-click='ctrl.findThisCity("")'>Find all</button>
-	```
+```html
+<button ng-click='ctrl.findThisCity("")'>Find all</button>
+```
 
 
-Thas wassup
+Thas wassup (:
