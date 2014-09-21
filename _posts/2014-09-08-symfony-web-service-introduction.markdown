@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Symfony Web Service: Introduction"
-date: September 15, 2014
+date: September 08, 2014
 tagline: "How to write a web service for an iOS app - Part 1"
 tags : [symfony, api]
 ---
