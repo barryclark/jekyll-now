@@ -3,18 +3,24 @@
 // --------------------------------------------------
 
 .post {
-	ul {
-		li {
-			list-style: disc;
-			margin-left: 20px;
-		}
+
+	table {
+		margin: 15px 0;
 	}
 
-	ol {
-		list-style-type: decimal;
+	ul {
+    list-style: none !important;
+    padding:0;
+    margin: 0 0 15px 0;
 
-		li {
-			margin-top: 10px;
+    li {
+	    padding-left: 1em;
+	    text-indent: -.7em;
+
+	    &:before {
+		    content: "• ";
+		    color: $brand-primary; /* or whatever color you prefer */
+			}
 		}
 	}
 

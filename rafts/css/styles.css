@@ -616,7 +616,6 @@ hr {
   border-top: 1px solid #eeeeee;
   margin-top: 1em;
   margin-bottom: 1em;
-  margin: 20px 0;
 }
 
 .browsehappy {
@@ -743,7 +742,7 @@ p {
 
 strong {
   font-weight: 700;
-  color: #333333;
+  color: #d33682;
 }
 
 em {
@@ -752,8 +751,8 @@ em {
 
 blockquote {
   padding: 0.5em 1em;
-  margin: 15px 0;
-  font-size: 1.26875em;
+  margin: 0 0 1em;
+  font-size: 1.09375em;
   border-left: 5px solid #eeeeee;
 }
 blockquote p:last-child,
@@ -1482,31 +1481,10 @@ footer.pagination ul li.disabled:hover {
 /*-----------------------------------------------------------------------------------*/
 .widget {
   border-bottom: 1px solid #eeeeee;
-  padding-bottom: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 .widget h4 {
   font-weight: 500;
-}
-.widget ul p.date {
-  margin-bottom: 20px;
-}
-.widget .toc ul {
-  list-style: none !important;
-  padding: 0;
-  margin: 0;
-}
-.widget .toc ul li:first-child {
-  display: none;
-}
-.widget .toc ul li {
-  padding-left: 1em;
-  text-indent: -.7em;
-}
-.widget .toc ul li:before {
-  content: "• ";
-  color: #d33682;
-  /* or whatever color you prefer */
 }
 
 /*-----------------------------------------------------------------------------------*/
@@ -1688,28 +1666,21 @@ article.bookshelf ul li:before {
 /*-----------------------------------------------------------------------------------*/
 /*	END ABOUT PAGE
 /*-----------------------------------------------------------------------------------*/
-.post table {
-  margin: 15px 0;
-}
-.post ul {
-  list-style: none !important;
-  padding: 0;
-  margin: 0 0 15px 0;
-}
 .post ul li {
-  padding-left: 1em;
-  text-indent: -.7em;
+  list-style: disc;
+  margin-left: 20px;
 }
-.post ul li:before {
-  content: "• ";
-  color: #d33682;
-  /* or whatever color you prefer */
+.post ol {
+  list-style-type: decimal;
+}
+.post ol li {
+  margin-top: 10px;
 }
 .post p a {
-  color: #d33682;
+  text-decoration: underline;
 }
 .post p a:hover {
-  color: #222222;
+  text-decoration: underline;
 }
 
 .share-post {

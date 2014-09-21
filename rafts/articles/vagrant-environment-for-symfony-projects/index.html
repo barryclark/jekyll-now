@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Miriam Tocino | Vagrant Environment for Symfony Projects</title>
+  <meta name="author" content="Miriam Tocino" />
+  <meta name="description" content="Miriam Tocino | Turning into Web Developer">
+
+  <link href="http://fonts.googleapis.com/css?family=Raleway:400,500,700" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="canonical" href="http://www.miriamtocino.com/articles/vagrant-environment-for-symfony-projects">
+
+	<!-- Google Analytics -->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-54900629-1', 'auto');
+	  ga('send', 'pageview');
+	</script>
+</head>
+
+<body>
+	<!--[if lt IE 7]>
+	    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	<![endif]-->
+
+<!-- Wrapper -->
+<div class="wrapper">
+
+<!-- Main Header -->
+<header class="main-header">
+
+	<!-- Logo -->
+	<div class="logo">
+		<h1><a href="http://www.miriamtocino.com">
+			Miriam<span>Tocino.</span>
+			<small>Turning into Web Developer.</small>
+		</a></h1>
+	</div> <!-- End Logo -->
+
+	<!-- Navigation -->
+  <nav class="main-nav">
+    
+      
+      
+          <a href="/about.html" class="">About</a>
+  
+      
+      
+          <a href="/archive.html" class="">Archive</a>
+  
+      
+      
+          <a href="/bookshelf.html" class="">Bookshelf</a>
+  
+      
+      
+          <a href="/elearning.html" class="">Elearning</a>
+  
+  </nav> <!-- End Navigation -->
+
+</header> <!-- End Main Header -->
+
+
+<!-- Main -->
+<main>
+
+  <!-- Content -->
+  <section class="content">
+    <!-- Post -->
+<article class="post">
+	<!-- Comments Number
+	<a href="#disqus_thread"></a> -->
+
+	<p class="date">01 September 2014</p>
+	<h3>Vagrant Environment for Symfony Projects</h3>
+	<h4 class="tagline">How to work simultaneously on different projects locally on your computer?</h4>
+	<p><p><img src="http://miriamtocino.github.io/images/symfony-love-vagrant.svg" alt="Symfony Love Vagrant" /></p>
+
+<p>When I first started to work with Symfony, it was important for me to create a smooth and quick way to set up a development environment every time I would like to start a new project.</p>
+
+<p><a href="https://twitter.com/kleiram">Ramon Kleiss</a> already built a box, which turned out to fit all my needs at first. It provides a virtual environment for Symfony2 development using <a href="https://www.vagrantup.com/">Vagrant</a>. You can download it and read its full documentation <a href="https://github.com/kleiram/vagrant-symfony">here</a>.</p>
+
+<p>But there was still something missing. How could I use this type of virtual box in different Symfony projects at the same time without having to use the built-in Symfony web server?</p>
+
+<blockquote>
+  <p>I wanted to be able to check two different projects in my browser running locally, without getting too much into trouble.</p>
+</blockquote>
+
+<hr />
+
+<h4 id="step-by-step-guide">Step-by-Step Guide</h4>
+
+<p>Download the Vagrant virtual box from <a href="https://github.com/kleiram/vagrant-symfony">here</a> and save it under your documents (I save all important downloaded files under a common folder <strong>downloads</strong> under my <strong>Projects</strong> folder).</p>
+
+<p>Add the <strong>vagrant-symfony-master</strong> folder that you just downloaded to your project root folder and rename it into <strong>vagrant</strong>.</p>
+
+<p>Open the <strong>Vagrantfile</strong> and configure the network interfaces by changing the IP address (replace <strong>192.168.56.101</strong> in the following example) and the ports (replace <strong>1234</strong> in the following example).</p>
+
+<blockquote>
+  <p>It is important to remark that you must use different ports for the different projects, otherwise you won’t be able to run various projects at the same time.</p>
+</blockquote>
+
+<p>The rest of the file you could leave as it is:</p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="lineno"> 1</span> <span class="c1"># wonderful-project/vagrant/Vagrantfile</span>
+<span class="lineno"> 2</span> 
+<span class="lineno"> 3</span> <span class="no">Vagrant</span><span class="o">.</span><span class="n">configure</span><span class="p">(</span><span class="s2">&quot;2&quot;</span><span class="p">)</span> <span class="k">do</span> <span class="o">|</span><span class="n">config</span><span class="o">|</span>
+<span class="lineno"> 4</span>   <span class="c1"># Configure the box to use</span>
+<span class="lineno"> 5</span>   <span class="n">config</span><span class="o">.</span><span class="n">vm</span><span class="o">.</span><span class="n">box</span>       <span class="o">=</span> <span class="s1">&#39;precise64&#39;</span>
+<span class="lineno"> 6</span>   <span class="n">config</span><span class="o">.</span><span class="n">vm</span><span class="o">.</span><span class="n">box_url</span>   <span class="o">=</span> <span class="s1">&#39;http://files.vagrantup.com/precise64.box&#39;</span>
+<span class="lineno"> 7</span> 
+<span class="lineno"> 8</span>   <span class="c1"># Configure the network interfaces</span>
+<span class="lineno"> 9</span>   <span class="n">config</span><span class="o">.</span><span class="n">vm</span><span class="o">.</span><span class="n">network</span> <span class="ss">:private_network</span><span class="p">,</span> <span class="ss">ip</span><span class="p">:</span>    <span class="s2">&quot;192.168.56.101&quot;</span>
+<span class="lineno">10</span>   <span class="n">config</span><span class="o">.</span><span class="n">vm</span><span class="o">.</span><span class="n">network</span> <span class="ss">:forwarded_port</span><span class="p">,</span>  <span class="ss">guest</span><span class="p">:</span> <span class="mi">80</span><span class="p">,</span>    <span class="ss">host</span><span class="p">:</span> <span class="mi">1234</span>
+<span class="lineno">11</span>   <span class="n">config</span><span class="o">.</span><span class="n">vm</span><span class="o">.</span><span class="n">network</span> <span class="ss">:forwarded_port</span><span class="p">,</span>  <span class="ss">guest</span><span class="p">:</span> <span class="mi">8081</span><span class="p">,</span>  <span class="ss">host</span><span class="p">:</span> <span class="mi">1234</span>
+<span class="lineno">12</span>   <span class="n">config</span><span class="o">.</span><span class="n">vm</span><span class="o">.</span><span class="n">network</span> <span class="ss">:forwarded_port</span><span class="p">,</span>  <span class="ss">guest</span><span class="p">:</span> <span class="mi">3306</span><span class="p">,</span>  <span class="ss">host</span><span class="p">:</span> <span class="mi">1234</span>
+<span class="lineno">13</span>   <span class="n">config</span><span class="o">.</span><span class="n">vm</span><span class="o">.</span><span class="n">network</span> <span class="ss">:forwarded_port</span><span class="p">,</span>  <span class="ss">guest</span><span class="p">:</span> <span class="mi">27017</span><span class="p">,</span> <span class="ss">host</span><span class="p">:</span> <span class="mi">1234</span>
+<span class="lineno">14</span> 
+<span class="lineno">15</span>   <span class="c1"># Configure shared folders</span>
+<span class="lineno">16</span>   <span class="n">config</span><span class="o">.</span><span class="n">vm</span><span class="o">.</span><span class="n">synced_folder</span> <span class="s2">&quot;.&quot;</span><span class="p">,</span>  <span class="s2">&quot;/vagrant&quot;</span><span class="p">,</span> <span class="nb">id</span><span class="p">:</span> <span class="s2">&quot;vagrant-root&quot;</span><span class="p">,</span> <span class="ss">:nfs</span> <span class="o">=&gt;</span> <span class="kp">true</span>
+<span class="lineno">17</span>   <span class="n">config</span><span class="o">.</span><span class="n">vm</span><span class="o">.</span><span class="n">synced_folder</span> <span class="s2">&quot;..&quot;</span><span class="p">,</span> <span class="s2">&quot;/var/www&quot;</span><span class="p">,</span> <span class="nb">id</span><span class="p">:</span> <span class="s2">&quot;application&quot;</span><span class="p">,</span>  <span class="ss">:nfs</span> <span class="o">=&gt;</span> <span class="kp">true</span>
+<span class="lineno">18</span> 
+<span class="lineno">19</span>   <span class="c1"># Configure VirtualBox environment</span>
+<span class="lineno">20</span>   <span class="n">config</span><span class="o">.</span><span class="n">vm</span><span class="o">.</span><span class="n">provider</span> <span class="ss">:virtualbox</span> <span class="k">do</span> <span class="o">|</span><span class="n">v</span><span class="o">|</span>
+<span class="lineno">21</span>       <span class="n">v</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;wonderful-project&quot;</span>
+<span class="lineno">22</span>       <span class="n">v</span><span class="o">.</span><span class="n">customize</span> <span class="o">[</span> <span class="s2">&quot;modifyvm&quot;</span><span class="p">,</span> <span class="ss">:id</span><span class="p">,</span> <span class="s2">&quot;--memory&quot;</span><span class="p">,</span> <span class="mi">512</span> <span class="o">]</span>
+<span class="lineno">23</span>   <span class="k">end</span>
+<span class="lineno">24</span> 
+<span class="lineno">25</span>   <span class="c1"># Provision the box</span>
+<span class="lineno">26</span>   <span class="n">config</span><span class="o">.</span><span class="n">vm</span><span class="o">.</span><span class="n">provision</span> <span class="ss">:ansible</span> <span class="k">do</span> <span class="o">|</span><span class="n">ansible</span><span class="o">|</span>
+<span class="lineno">27</span>       <span class="n">ansible</span><span class="o">.</span><span class="n">playbook</span> <span class="o">=</span> <span class="s2">&quot;ansible/site.yml&quot;</span>
+<span class="lineno">28</span>   <span class="k">end</span>
+<span class="lineno">29</span> <span class="k">end</span></code></pre></div>
+
+<p>Go to your <strong>hosts</strong> file under the folder <strong>~/etc</strong> and add your project to the list:</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="lineno">1</span> <span class="c"># ~/etc/hosts</span>
+<span class="lineno">2</span> <span class="c"># ...</span>
+<span class="lineno">3</span> 192.168.56.101     wonderful-project.dev</code></pre></div>
+
+<p>You can now go back to your project folder in the terminal and build up your new virtual box. It could take a while the first time you run this, so it could be a good moment to grab a coffee or tea ;-):</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span><span class="nb">cd</span> /wonderful-project/vagrant
+<span class="nv">$ </span>vagrant up</code></pre></div>
+
+<p>You can now see that the new VM has been added into <strong>Virtual Box</strong>. In the terminal you can access it connecting via ssh. The project will be located under <strong>/var/www</strong>:</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span><span class="nb">cd</span> /wonderful-project/vagrant
+<span class="nv">$ </span>vagrant ssh
+<span class="c"># ssh connection successful</span>
+<span class="nv">$ </span><span class="nb">cd</span> /var/www</code></pre></div>
+
+<p>You may also want to configure the connection to the database in a program such as <strong>SequelPro</strong>. The settings would look something like this:</p>
+
+<ul>
+  <li><strong>Name</strong>: wonderful-project</li>
+  <li><strong>Host</strong>: 192.168.56.101</li>
+  <li><strong>Username</strong>: root</li>
+  <li><strong>Password</strong>: null</li>
+  <li><strong>Database</strong>: wonderful-project</li>
+  <li><strong>Port</strong>: 3306 (default)</li>
+</ul>
+
+<p>You may also want to configure the connection to the virtual machine via SFTP in a program such as <strong>Transmit</strong>. The settings would look something like this:</p>
+
+<ul>
+  <li><strong>Name</strong>: wonderful-project</li>
+  <li><strong>Host</strong>: 192.168.56.101</li>
+  <li><strong>Username</strong>: vagrant</li>
+  <li><strong>Password</strong>: vagrant</li>
+</ul>
+
+<p>You are now ready to go back to your project and configure the <strong>parameters.yml</strong> file:</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="lineno"> 1</span> <span class="c"># wonderful-project/app/config/parameters.yml</span>
+<span class="lineno"> 2</span> 
+<span class="lineno"> 3</span> parameters:
+<span class="lineno"> 4</span>   database_driver: pdo_mysql
+<span class="lineno"> 5</span>   database_host: 192.168.56.101
+<span class="lineno"> 6</span>   database_port: null
+<span class="lineno"> 7</span>   database_name: wonderful-project
+<span class="lineno"> 8</span>   database_user: root
+<span class="lineno"> 9</span>   database_password: null
+<span class="lineno">10</span>   mailer_transport: smtp
+<span class="lineno">11</span>   mailer_host: 192.168.56.101
+<span class="lineno">12</span>   mailer_user: null
+<span class="lineno">13</span>   mailer_password: null
+<span class="lineno">14</span>   locale: en
+<span class="lineno">15</span>   secret: ThisTokenIsNotSoSecretChangeIt</code></pre></div>
+
+<hr />
+
+<h4 id="on-a-daily-basis">On a daily basis</h4>
+
+<p>I like to save all the different projects that I am working on in a table like this under my documents, specially to keep track of the ports that I am already using:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Project Name</strong></th>
+      <th><strong>IP Address</strong></th>
+      <th><strong>Ports</strong></th>
+      <th><strong>Host</strong></th>
+      <th><strong>Database Name</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>wonderful-project-1</td>
+      <td>192.168.56.101</td>
+      <td>1234</td>
+      <td>wonderful-project-1.dev</td>
+      <td>wonderful-project-1</td>
+    </tr>
+    <tr>
+      <td>wonderful-project-2</td>
+      <td>192.168.56.102</td>
+      <td>4321</td>
+      <td>wonderful-project-2.dev</td>
+      <td>wonderful-project-2</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Enjoy Symfonying!</p>
+
+</p>
+
+</article> <!-- End Post -->
+
+<article>
+	<!-- Share Post -->
+	<div class="flag-message">
+		<p>
+			♥ If you liked this article, you can
+		<a href="https://twitter.com/intent/tweet?url=http://www.miriamtocino.com/articles/vagrant-environment-for-symfony-projects&text=Vagrant Environment for Symfony Projects&via=miriamtocino"
+		   target="_blank">
+		  share it with your followers</a>
+		or
+		<a href="https://twitter.com/miriamtocino" target="_blank">
+		  follow me on Twitter</a> ♥
+		</p>
+	</div><!-- Share Post -->
+</article>
+
+<!-- DISQUS Comments -->
+<article>
+	
+	 <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'miriamtocino'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+	
+</article> <!-- End DISQUS Comments -->
+
+<a href="http://www.miriamtocino.com" class="button"><small>Back to Home</small></a>
+
+<!-- DISQUS - Calculate Number of Comments
+<script type="text/javascript">
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+var disqus_shortname = 'miriamtocino'; // required: replace example with your forum shortname
+
+/* * * DON'T EDIT BELOW THIS LINE * * */
+(function () {
+    var s = document.createElement('script'); s.async = true;
+    s.type = 'text/javascript';
+    s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());
+</script> -->
+  </section> <!-- End Content -->
+
+  <!-- Sidebar -->
+  <aside>
+
+    <!-- Widget: About me -->
+    <div class="widget">
+      <h4>About Me</h4>
+      <p>
+      I went from architect to full-time web developer.
+      Want to know more about my story?</br>
+      <a href="http://teamtreehouse.com/stories/miriam-tocino" target="_blank">Check this out!</a>
+      </p>
+
+      <ul class="social-media-list">
+
+        <!-- Email
+        
+        <li>
+          <a href="mailto: miriam.tocino@gmail.com"><svg width="40px" height="40px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <path d="M0.224580688,30 C0.224580688,13.4314567 13.454941,0 29.7754193,0 C46.0958976,0 59.3262579,13.4314567 59.3262579,30 C59.3262579,46.5685433 46.0958976,60 29.7754193,60 C13.454941,60 0.224580688,46.5685433 0.224580688,30 Z M0.224580688,30" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+    <path d="M35.0384324,31.6384006 L47.2131148,40.5764264 L47.2131148,20 L35.0384324,31.6384006 Z M13.7704918,20 L13.7704918,40.5764264 L25.9449129,31.6371491 L13.7704918,20 Z M30.4918033,35.9844891 L27.5851037,33.2065217 L13.7704918,42 L47.2131148,42 L33.3981762,33.2065217 L30.4918033,35.9844891 Z M46.2098361,20 L14.7737705,20 L30.4918033,32.4549304 L46.2098361,20 Z M46.2098361,20" id="Shape" fill="#222" sketch:type="MSShapeGroup"></path>
+</svg></a>
+        </li>
+         <!-- End Email -->
+
+        <!-- Github
+        
+        <li>
+          <a href="http://github.com/miriamtocino" alt="Github" title="Github" target="_blank"><span><svg viewBox="0 0 16 16" style="height: 30px;">
+  <path id="social-media-logo" fill="#222" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/>
+</svg></span></a>
+        </li>
+         <!-- End Github -->
+
+        <!-- Linkedin -->
+        
+        <li>
+          <a href="http://linkedin.com/in/miriamtocino" alt="Linkedin" title="Linkedin" target="_blank"><span><svg width="30px" height="30px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <path id="social-media-logo" d="M0.449161376,30 C0.449161376,13.4314567 13.6795217,0 30,0 C46.3204783,0 59.5508386,13.4314567 59.5508386,30 C59.5508386,46.5685433 46.3204783,60 30,60 C13.6795217,60 0.449161376,46.5685433 0.449161376,30 Z M0.449161376,30" fill="#222" sketch:type="MSShapeGroup"></path>
+    <path d="M22.4680392,23.7098144 L15.7808366,23.7098144 L15.7808366,44.1369537 L22.4680392,44.1369537 L22.4680392,23.7098144 Z M22.4680392,23.7098144" id="Path" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+    <path d="M22.9084753,17.3908761 C22.8650727,15.3880081 21.4562917,13.862504 19.1686418,13.862504 C16.8809918,13.862504 15.3854057,15.3880081 15.3854057,17.3908761 C15.3854057,19.3522579 16.836788,20.9216886 19.0818366,20.9216886 L19.1245714,20.9216886 C21.4562917,20.9216886 22.9084753,19.3522579 22.9084753,17.3908761 Z M22.9084753,17.3908761" id="Path" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+    <path d="M46.5846502,32.4246563 C46.5846502,26.1503226 43.2856534,23.2301456 38.8851658,23.2301456 C35.3347011,23.2301456 33.7450983,25.2128128 32.8575489,26.6036896 L32.8575489,23.7103567 L26.1695449,23.7103567 C26.2576856,25.6271338 26.1695449,44.137496 26.1695449,44.137496 L32.8575489,44.137496 L32.8575489,32.7292961 C32.8575489,32.1187963 32.9009514,31.5097877 33.0777669,31.0726898 C33.5610713,29.8530458 34.6614937,28.5902885 36.5089747,28.5902885 C38.9297703,28.5902885 39.8974476,30.4634101 39.8974476,33.2084226 L39.8974476,44.1369537 L46.5843832,44.1369537 L46.5846502,32.4246563 Z M46.5846502,32.4246563" id="Path" fill="#fff" sketch:type="MSShapeGroup"></path>
+</svg></span></a>
+        </li>
+         <!-- End Linkedin -->
+
+        <!-- Twitter -->
+        
+        <li>
+          <a href="http://twitter.com/miriamtocino" alt="Twitter" title="Twitter" target="_blank"><span><svg width="30px" height="30px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <path id="social-media-logo" d="M0,30 C0,13.4314567 13.4508663,0 30.0433526,0 C46.6358389,0 60.0867052,13.4314567 60.0867052,30 C60.0867052,46.5685433 46.6358389,60 30.0433526,60 C13.4508663,60 0,46.5685433 0,30 Z M0,30" fill="#222" sketch:type="MSShapeGroup"></path>
+    <path d="M29.2997675,23.8879776 L29.3627206,24.9260453 L28.3135016,24.798935 C24.4943445,24.3116787 21.1578281,22.6592444 18.3249368,19.8840023 L16.9399677,18.5069737 L16.5832333,19.5238563 C15.8277956,21.7906572 16.3104363,24.1845684 17.8842648,25.7946325 C18.72364,26.6844048 18.5347806,26.8115152 17.0868584,26.2818888 C16.5832333,26.1124083 16.1425613,25.985298 16.1005925,26.0488532 C15.9537019,26.1971486 16.457327,28.1249885 16.8560302,28.8876505 C17.4016241,29.9469033 18.5137962,30.9849709 19.7308902,31.5993375 L20.7591248,32.0865938 L19.5420308,32.1077788 C18.3669055,32.1077788 18.3249368,32.1289639 18.4508431,32.57385 C18.8705307,33.9508786 20.5282967,35.4126474 22.3749221,36.048199 L23.6759536,36.4930852 L22.5427971,37.1710069 C20.8640467,38.1455194 18.891515,38.6963309 16.9189833,38.738701 C15.9746862,38.759886 15.1982642,38.8446262 15.1982642,38.9081814 C15.1982642,39.1200319 17.7583585,40.306395 19.2482495,40.7724662 C23.7179224,42.1494948 29.0269705,41.5563132 33.0140027,39.2047722 C35.846894,37.5311528 38.6797853,34.2050993 40.0018012,30.9849709 C40.7152701,29.2689815 41.428739,26.1335934 41.428739,24.6294545 C41.428739,23.654942 41.4916922,23.5278317 42.6668174,22.3626537 C43.359302,21.6847319 44.0098178,20.943255 44.135724,20.7314044 C44.3455678,20.3288884 44.3245835,20.3288884 43.2543801,20.6890343 C41.4707078,21.324586 41.2188952,21.2398458 42.1002392,20.2865183 C42.750755,19.6085965 43.527177,18.3798634 43.527177,18.0197174 C43.527177,17.9561623 43.2124113,18.0620876 42.8556769,18.252753 C42.477958,18.4646036 41.6385828,18.7823794 41.0090514,18.9730449 L39.8758949,19.3331908 L38.8476603,18.634084 C38.281082,18.252753 37.4836756,17.829052 37.063988,17.7019416 C35.9937846,17.4053509 34.357003,17.447721 33.3917215,17.7866818 C30.768674,18.7400093 29.110908,21.1974757 29.2997675,23.8879776 Z M29.2997675,23.8879776" id="Path" fill="#fff" sketch:type="MSShapeGroup"></path>
+</svg></span></a>
+        </li>
+         <!-- End Twitter -->
+
+        <!-- Pinterest -->
+        
+        <li>
+          <a href="http://pinterest.com/miriamtocino" alt="Pinterest" title="Pinterest" target="_blank"><span><svg width="30px" height="30px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <path id="social-media-logo" d="M0.883833675,30 C0.883833675,13.4314567 13.9008011,0 29.9580459,0 C46.0152907,0 59.0322581,13.4314567 59.0322581,30 C59.0322581,46.5685433 46.0152907,60 29.9580459,60 C13.9008011,60 0.883833675,46.5685433 0.883833675,30 Z M0.883833675,30" fill="#222" sketch:type="MSShapeGroup"></path>
+    <path d="M17.5869165,25.6564894 C17.5869165,28.9590618 18.7986851,31.8971698 21.3976941,32.9920559 C21.8238696,33.1718356 22.2056087,32.9982405 22.3292037,32.5113638 C22.4151829,32.1744101 22.6185566,31.3243485 22.7092894,30.9703339 C22.8339179,30.4887888 22.7855546,30.3198854 22.441638,29.9001862 C21.692214,28.9880654 21.213335,27.8072348 21.213335,26.1346224 C21.213335,21.2820631 24.7318662,16.93792 30.3754877,16.93792 C35.3728188,16.93792 38.1183644,20.08865 38.1183644,24.2965188 C38.1183644,29.8330087 35.7438106,34.5057882 32.2186656,34.5057882 C30.2719407,34.5057882 28.8146355,32.8444787 29.2817337,30.8069754 C29.8410115,28.3745112 30.9244314,25.7492583 30.9244314,23.9934738 C30.9244314,22.4217342 30.1068028,21.1108139 28.4147084,21.1108139 C26.4245806,21.1108139 24.8259058,23.2351148 24.8259058,26.0808804 C24.8259058,27.8933925 25.4194926,29.1192214 25.4194926,29.1192214 C25.4194926,29.1192214 23.3828616,38.0231153 23.0259242,39.5824856 C22.3149428,42.6880041 22.9190703,46.4949407 22.9701204,46.8794518 C23.0000891,47.1072154 23.2838616,47.1613839 23.412417,46.9892816 C23.5959494,46.7421112 25.9661629,43.7227504 26.7720107,40.7057356 C26.9999795,39.8514088 28.0809192,35.427719 28.0809192,35.427719 C28.7274162,36.7002523 30.6170973,37.8211564 32.6266532,37.8211564 C38.6088176,37.8211564 42.6674052,32.1938169 42.6674052,24.6614098 C42.6674052,18.9658266 37.9920825,13.6613656 30.8861955,13.6613656 C22.0448112,13.6613656 17.5869165,20.2021053 17.5869165,25.6564894 Z M17.5869165,25.6564894" id="Path" fill="#fff" sketch:type="MSShapeGroup"></path>
+</svg></span></a>
+        </li>
+         <!-- End Pinterest -->
+
+        <!-- Bitbucket
+        
+        <li>
+          <a href="http://bitbucket.com/miriamtocino" alt="Bitbucket" title="Bitbucket" target="_blank"><span><svg version="1.1" id="Layer_1" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px"
+	 viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
+<path id="social-media-logo" sketch:type="MSShapeGroup" fill="#222222" d="M0,15C0,6.716,6.726,0,15.021,0c8.297,0,15.021,6.716,15.021,15
+	s-6.725,15-15.021,15C6.726,30,0,23.284,0,15z"/>
+<g>
+	<path fill="#FFFFFF" d="M15.021,5.92L15.021,5.92L15.021,5.92c-4.424,0-8.037,1.189-8.037,2.666c0,0.389,0.965,5.965,1.348,8.178
+		c0.171,0.992,2.735,2.448,6.686,2.448l0.005-0.013v0.013c3.951,0,6.515-1.456,6.687-2.448c0.383-2.212,1.349-7.789,1.349-8.178
+		C23.059,7.109,19.445,5.92,15.021,5.92 M15.021,17.419c-1.411,0-2.554-1.145-2.554-2.555c0-1.411,1.143-2.555,2.554-2.555
+		s2.555,1.144,2.555,2.555C17.576,16.274,16.433,17.419,15.021,17.419 M15.02,9.41c-2.842-0.004-5.146-0.498-5.145-1.103
+		c0-0.605,2.306-1.091,5.148-1.087c2.843,0.004,5.146,0.498,5.145,1.103C20.167,8.928,17.862,9.415,15.02,9.41"/>
+	<path fill="#FFFFFF" d="M20.798,18.981c-0.123,0-0.221,0.086-0.221,0.086s-1.979,1.568-5.556,1.568
+		c-3.577,0-5.556-1.568-5.556-1.568s-0.098-0.086-0.221-0.086c-0.146,0-0.283,0.098-0.283,0.314c0,0.022,0.002,0.045,0.006,0.067
+		c0.307,1.645,0.532,2.811,0.57,2.988c0.269,1.21,2.635,2.122,5.484,2.122l0,0l0,0c2.849,0,5.216-0.912,5.481-2.122
+		c0.041-0.178,0.265-1.344,0.572-2.988c0.005-0.022,0.006-0.045,0.006-0.067C21.081,19.079,20.943,18.981,20.798,18.981"/>
+	<path fill="#FFFFFF" d="M16.299,14.863c0,0.708-0.573,1.28-1.281,1.28c-0.706,0-1.28-0.572-1.28-1.28
+		c0-0.707,0.574-1.281,1.28-1.281C15.726,13.583,16.299,14.156,16.299,14.863"/>
+</g>
+</svg>
+</span></a>
+        </li>
+         <!-- End Bitbucket -->
+
+        <!-- RSS -->
+        <li>
+          <a href="/feed.xml" alt="RSS" title="RSS"><span><svg width="30px" height="30px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <path id="social-media-logo" d="M0.112290344,30 C0.112290344,13.4314567 13.3426506,0 29.663129,0 C45.9836073,0 59.2139676,13.4314567 59.2139676,30 C59.2139676,46.5685433 45.9836073,60 29.663129,60 C13.3426506,60 0.112290344,46.5685433 0.112290344,30 Z M0.112290344,30" fill="#222" sketch:type="MSShapeGroup"></path>
+    <path d="M26.5147755,38.7571296 C26.5147755,36.8192934 24.9575021,35.2291656 23.0297047,35.2291656 C21.1094331,35.2291656 19.5492775,36.8192934 19.5492775,38.7571296 C19.5492775,40.7052068 21.1094331,42.277616 23.0297047,42.277616 C24.957422,42.277616 26.5146954,40.7052881 26.5147755,38.7571296 Z M36.8075433,42.2700571 C36.8075433,32.6055847 29.062648,24.7442705 19.5492775,24.7442705 L19.5492775,29.8318017 C22.8128986,29.8318017 25.8817303,31.1272145 28.1920609,33.4740429 C30.4999895,35.8159133 31.7732853,38.9454513 31.7732853,42.2701384 L36.8075433,42.2700571 Z M45.6871482,42.2675375 C45.6871482,27.6346878 33.9604014,15.722384 19.5492775,15.722384 L19.5492775,20.8123535 C31.186916,20.8123535 40.660496,30.438869 40.660496,42.2673749 L45.6871482,42.2675375 Z M45.6871482,42.2675375" id="Path" fill="#fff" sketch:type="MSShapeGroup"></path>
+</svg></span></a>
+        </li> <!-- End RSS -->
+
+
+      </ul>
+    </div> <!-- End Widget: About me -->
+
+    <!-- Widget: Related Writings -->
+    <div class="widget">
+      <h4>Related Articles</h4>
+      <ul>
+      
+      </ul>
+    </div> <!-- End Widget: Related Writings -->
+
+  </aside> <!-- End Sidebar -->
+
+</main> <!-- End Main -->
+
+<!-- Main Footer -->
+<footer class="main-footer">
+
+	<!-- Copyright -->
+	<div class="copyright">
+		<p>&copy; 2014
+			<a href="https://twitter.com/miriamtocino" target="_blank" title="Twitter">Miriam Tocino</a> with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>, <a href="http://susy.oddbird.net/" target="_blank" title="Susy">Susy</a> and <a href="http://breakpoint-sass.com/" target="_blank" title="Really Simple, Organized, Media Queries with Sass">Breakpoint</a>.
+	  </p>
+	</div> <!-- End Copyright -->
+
+	<!-- Contact & Impressum -->
+	<div class="impressum">
+		<a href="mailto:miriam.tocino@gmail.com">Contact</a>
+		<a href="http://www.miriamtocino.com/impressum.html">Impressum</a>
+	</div>
+
+</footer> <!-- End Main Footer -->
+
+</div> <!-- End Wrapper -->
+
+</body>
+</html>
+
+
+
+
+

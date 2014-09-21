@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Vagrant Environment for Symfony Projects"
-date: September 16, 2014
+date: September 1, 2014
 tagline: "How to work simultaneously on different projects locally on your computer?"
 tags : [symfony, vagrant]
 ---
@@ -94,6 +94,13 @@ You may also want to configure the connection to the database in a program such 
   * **Password**: null
   * **Database**: wonderful-project
   * **Port**: 3306 (default)
+
+You may also want to configure the connection to the virtual machine via SFTP in a program such as **Transmit**. The settings would look something like this:
+
+  * **Name**: wonderful-project
+  * **Host**: 192.168.56.101
+  * **Username**: vagrant
+  * **Password**: vagrant
 
 You are now ready to go back to your project and configure the **parameters.yml** file:
 
