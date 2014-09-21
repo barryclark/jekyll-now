@@ -274,6 +274,10 @@ h6,
     text-align: center;
   }
 
+  .site-header .site-title {
+    float: center;
+  }
+
   .site-header .site-nav {
     width: 100%;
     float: left;
@@ -284,6 +288,10 @@ h6,
 }
 
 @media screen and (min-width: 48em) {
+  .site-header .site-title {
+    float: left;
+  }
+
   .meta,
   .post-meta {
     margin: 0;
