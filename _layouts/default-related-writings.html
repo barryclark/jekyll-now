@@ -12,6 +12,22 @@
   <!-- Sidebar -->
   <aside>
 
+  	<!-- Widget: Table of Contents -->
+    <div class="widget">
+      <div class="toc"></div>
+    </div> <!-- End Widget: Related Writings -->
+
+    <!-- Widget: Related Writings -->
+    <div class="widget">
+      <h4>Related Articles</h4>
+      <ul>
+      {% for post in site.related_posts limit: 5 %}
+        <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+        <p class="date">{{ post.date | date_to_long_string }}</p>
+      {% endfor %}
+      </ul>
+    </div> <!-- End Widget: Related Writings -->
+
     <!-- Widget: About me -->
     <div class="widget">
       <h4>About Me</h4>
@@ -74,19 +90,18 @@
       </ul>
     </div> <!-- End Widget: About me -->
 
-    <!-- Widget: Related Writings -->
-    <div class="widget">
-      <h4>Related Articles</h4>
-      <ul>
-      {% for post in site.related_posts limit: 5 %}
-		    <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-		  {% endfor %}
-      </ul>
-    </div> <!-- End Widget: Related Writings -->
-
   </aside> <!-- End Sidebar -->
 
 </main> <!-- End Main -->
+
+<script type="text/javascript" src="{{ "/js/toc.js" | prepend: site.baseurl }}"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+	console.log('hello');
+    $('.toc').toc();
+});
+</script>
 
 {% include footer.html %}
 
