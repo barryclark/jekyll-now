@@ -742,7 +742,6 @@ p {
 
 strong {
   font-weight: 700;
-  color: #d33682;
 }
 
 em {
@@ -752,7 +751,7 @@ em {
 blockquote {
   padding: 0.5em 1em;
   margin: 0 0 1em;
-  font-size: 1.09375em;
+  font-size: 1.26875em;
   border-left: 5px solid #eeeeee;
 }
 blockquote p:last-child,
@@ -1481,10 +1480,31 @@ footer.pagination ul li.disabled:hover {
 /*-----------------------------------------------------------------------------------*/
 .widget {
   border-bottom: 1px solid #eeeeee;
-  margin-bottom: 40px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 .widget h4 {
   font-weight: 500;
+}
+.widget ul p.date {
+  margin-bottom: 20px;
+}
+.widget .toc ul {
+  list-style: none !important;
+  padding: 0;
+  margin: 0;
+}
+.widget .toc ul li:first-child {
+  display: none;
+}
+.widget .toc ul li {
+  padding-left: 1em;
+  text-indent: -.7em;
+}
+.widget .toc ul li:before {
+  content: "• ";
+  color: #d33682;
+  /* or whatever color you prefer */
 }
 
 /*-----------------------------------------------------------------------------------*/
@@ -1677,10 +1697,10 @@ article.bookshelf ul li:before {
   margin-top: 10px;
 }
 .post p a {
-  text-decoration: underline;
+  color: #d33682;
 }
 .post p a:hover {
-  text-decoration: underline;
+  color: #222222;
 }
 
 .share-post {
