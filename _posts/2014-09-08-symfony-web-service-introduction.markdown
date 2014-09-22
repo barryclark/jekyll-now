@@ -67,12 +67,12 @@ We will get more into detail about each of them in the [upcoming articles of thi
 
 Status Codes are an important part of every response coming from the server. The whole list of [HTTP Response Status Codes](http://en.wikipedia.org/wiki/List_of_HTTP_status_codes) is a little bit longer than this one, which summarizes the ones that are more important when talking about Web Services. It also include information about the headers that will be required depending on the status code.
 
-| Code | Method   | Meaning   | Required Headers   |
-|------|----------|-----------| ------------------|
-| **201** | **POST**       | Resource is **CREATED**   | Location |
-| **200** | **PUT**       | Resource is **UPDATED** _(or **CREATED** at a given URI)_|   |
-| **204** | **DELETE**     | Resource is **DELETED**                                       |   |
-| **405** | Method Not Allowed  | API doesn't support an HTTP method for a resource     |    |
+| Code | Method   | Meaning   |
+|------|----------|-----------|
+| **201** | **POST**       | Resource is **CREATED**   |
+| **200** | **PUT**       | Resource is **UPDATED** _(or **CREATED** at a given URI)_|
+| **204** | **DELETE**     | Resource is **DELETED**                                       |
+| **405** | Method Not Allowed  | API doesn't support an HTTP method for a resource     |
 
 We will get more into detail about each of them in the [upcoming articles of this series](http://miriamtocino.com/articles/symfony-web-service-introduction/#upcoming-articles-in-the-symfony-web-service-series).
 
