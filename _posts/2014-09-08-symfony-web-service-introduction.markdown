@@ -2,20 +2,22 @@
 layout: post
 title: "Symfony Web Service: Introduction"
 date: September 08, 2014
-tagline: "How to write a web service for an iOS app - Part 1"
+tagline: "How to build a web service for an iOS app - Part 1"
 tags : [symfony, api]
 ---
 
 ![Symfony Love Vagrant](http://miriamtocino.github.io/images/web-service-introduction.svg)
 
-_This article is the first one in a series related to one of the last projects that I have been working on: a small **Web Service for an iOS eLearning App**._
+_This article is the first one in a series related to one of the last projects that I have been working on: a small **Web Service for an iOS eLearning iPad App**._
 
-The eLearning App is structured in several chapters, each of them containing specific content to be studied by the user. At the end of each chapter there is a test to be completed. The eLearning App must communicate with the Web Service and be able to:
+The eLearning App is structured in several modules, each of them containing specific content to be studied by the user. At the end of each module there is a test to be completed. The eLearning App must communicate with the Web Service and be able to:
 
 * **SUBMIT** user results after each test is completed and save the data.
 * **RETRIEVE** user latest results.
 
-> In this article we will go through the different HTTP Methods and Status Codes, which together provide a general framework for operating on resources over the network. **HTTP methods** are used for communication between systems, while **Status Codes** coordinate the interactions instigated by the use of those methods.
+We will go through the different HTTP Methods and Status Codes, which together provide a general framework for operating on resources over the network. In general terms **HTTP methods** are in charge of the communication between systems, while **Status Codes** are the ones coordinating the interactions instigated by the use of those methods.
+
+In this articles series, I will show you how I learnt that building an easy-to-use and consistent Web Service involves something more than building up a few endpoints.
 
 - - -
 
@@ -38,9 +40,11 @@ _For more information about Safety & Idempotency, you can check out the [Useful 
 
 It is also important to mention that there was an extra difficulty added to this project: the Web Service needs to support [Cross-Origin Resource Sharing](http://www.w3.org/TR/cors/) (CORS) requests, which are sent from the different iPads.
 
-CORS support could be a little bit tricky because it requires some additional coordination between both the server and client. We will explain how to build up CORS Requests and Responses once we start building them in the [upcoming articles of this series](http://miriamtocino.com/articles/symfony-web-service-introduction/#upcoming-articles-in-the-symfony-web-service-series), but if you are new to this topic and feel like reading more about it, the tutorial [Using CORS](http://www.html5rocks.com/en/tutorials/cors/) by [Monsur Hossain](https://twitter.com/monsur) was the best one I found online.
+CORS support could be a little bit tricky because it requires some additional coordination between both the server and client. We will explain how to build up CORS Requests and Responses once we start building them in the [upcoming articles of this series](http://miriamtocino.com/articles/symfony-web-service-introduction/#upcoming-articles-in-the-symfony-web-service-series), but if you are new to this topic and feel like reading more about it, the tutorial [Using CORS](http://www.html5rocks.com/en/tutorials/cors/) by [Monsur Hossain](https://twitter.com/monsur) was the best I found online. If you want to have a global overview of CORS workflow, you can check out this [image](http://www.html5rocks.com/static/images/cors_server_flowchart.png).
 
-_You can see also check [here](http://caniuse.com/#search=cors) a complete list of the browsers that support CORS._
+I will be using the [Nelmio CORS Bundle](https://github.com/nelmio/NelmioCorsBundle) for Symfony, which allows you to send Cross-Origin Resource Sharing headers with ACL-style per-url configuration.
+
+_You can check [here](http://caniuse.com/#search=cors) a complete list of the browsers that support CORS._
 
 - - -
 
@@ -50,7 +54,7 @@ HTTP Methods describe what _action_ you want to take against the resource. Depen
 
 | Method  | Meaning                                                             | Behavior		           |
 |---------|---------------------------------------------------------------------|------------------------|
-| **POST**    | Used for **CREATING** resources.                                   | Unsafe, non-idempotent |
+| **POST**    | Used for **CREATING** resources                                   | Unsafe, non-idempotent |
 | **PUT**			| Used for **UPDATING** resources _(or **CREATING** at a given URI)_ | Unsafe, idempotent     |
 | **GET**     | Used for **RETRIEVING** a representation of a resource/resources   | Safe, idempotent       |
 | **DELETE**  | Used for **DELETING** a resource     															| Unsafe, idempotent     |
@@ -61,14 +65,14 @@ We will get more into detail about each of them in the [upcoming articles of thi
 
 #### Status Codes
 
-The whole list of [HTTP Response Status Codes](http://en.wikipedia.org/wiki/List_of_HTTP_status_codes) is a little bit longer than this one, which summarizes the ones that are more important when talking about Web Services.
+Status Codes are an important part of every response coming from the server. The whole list of [HTTP Response Status Codes](http://en.wikipedia.org/wiki/List_of_HTTP_status_codes) is a little bit longer than this one, which summarizes the ones that are more important when talking about Web Services. It also include information about the headers that will be required depending on the status code.
 
-| Code | Method   | Meaning   | Additional Info   |
+| Code | Method   | Meaning   | Required Headers   |
 |------|----------|-----------| ------------------|
-| **201** | **POST** Created       | Resource is created   | Include **Location** Header
-| **200** | **PUT** Updated        | Resource is updated _[or created at a given specific URI]_|
-| **204** | **DELETE**     | Resource is deleted                                       |
-| **405** | Method Not Allowed  | The API doesn't support an HTTP method for a resource     |
+| **201** | **POST**       | Resource is **CREATED**   | Location |
+| **200** | **PUT**       | Resource is **UPDATED** _(or **CREATED** at a given URI)_|   |
+| **204** | **DELETE**     | Resource is **DELETED**                                       |   |
+| **405** | Method Not Allowed  | API doesn't support an HTTP method for a resource     |    |
 
 We will get more into detail about each of them in the [upcoming articles of this series](http://miriamtocino.com/articles/symfony-web-service-introduction/#upcoming-articles-in-the-symfony-web-service-series).
 
