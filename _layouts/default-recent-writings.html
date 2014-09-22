@@ -78,7 +78,7 @@
     <div class="widget">
       <h4>Recent Articles</h4>
       <ul>
-      {% for post in site.posts offset: 3 limit: 5 %}
+      {% for post in site.posts limit: 5 %}
         <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
         <p class="date">{{ post.date | date_to_long_string }}</p>
       {% endfor %}
