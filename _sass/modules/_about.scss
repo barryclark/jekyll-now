@@ -63,18 +63,6 @@
 			margin: 20px auto 0 auto;
 		};
 	}
-
-	.about-back-home {
-		// S
-		@include breakpoint($breakpoint-s) {
-			display: none;
-		};
-
-		// L
-		@include breakpoint($breakpoint-l) {
-			display: inline-block;
-		};
-	}
 }
 
 

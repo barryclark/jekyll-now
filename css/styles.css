@@ -1674,16 +1674,6 @@ article.bookshelf ul li:before {
     margin: 20px auto 0 auto;
   }
 }
-@media (min-width: 321px), (min-width: 568px) {
-  .about-main .about-back-home {
-    display: none;
-  }
-}
-@media (min-width: 769px), (min-width: 1024px) {
-  .about-main .about-back-home {
-    display: inline-block;
-  }
-}
 
 /*-----------------------------------------------------------------------------------*/
 /*	END ABOUT PAGE
