@@ -1,3 +1,5 @@
+This is the course blog for [HIST205F: Digital history](http://jasonheppler.org/teaching/hist205f.2014/) at Stanford University taught by [Jason Heppler](http://jasonheppler.org) in the Fall 2014 quarter. The initial site was created from Jekyll Now.
+
 # Jekyll Now
 
 **Jekyll** is a static site generator that's perfect for GitHub hosted blogs ([Jekyll Repository](https://github.com/jekyll/jekyll))
