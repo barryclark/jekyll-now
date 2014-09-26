@@ -52,11 +52,11 @@ _You can check [here](http://caniuse.com/#search=cors) a complete list of the br
 
 HTTP Methods describe what _action_ you want to take against the resource. Depending who you ask, there are around 10 different HTTP methods, from which 4 of the main ones are:
 
-| Method  | Meaning                                                             | Behavior		           |
+| Method  | Description                                                             | Behavior		           |
 |---------|---------------------------------------------------------------------|------------------------|
+| **GET**     | Used for **RETRIEVING** a representation of a resource/resources   | Safe, idempotent       |
 | **POST**    | Used for **CREATING** resources                                   | Unsafe, non-idempotent |
 | **PUT**			| Used for **UPDATING** resources _(or **CREATING** at a given URI)_ | Unsafe, idempotent     |
-| **GET**     | Used for **RETRIEVING** a representation of a resource/resources   | Safe, idempotent       |
 | **DELETE**  | Used for **DELETING** a resource     															| Unsafe, idempotent     |
 
 We will get more into detail about each of them in the [upcoming articles of this series](http://miriamtocino.com/articles/symfony-web-service-introduction/#upcoming-articles-in-the-symfony-web-service-series).
@@ -65,10 +65,11 @@ We will get more into detail about each of them in the [upcoming articles of thi
 
 #### Status Codes
 
-Status Codes are an important part of every response coming from the server. The whole list of [HTTP Response Status Codes](http://en.wikipedia.org/wiki/List_of_HTTP_status_codes) is a little bit longer than this one, which summarizes the ones that are more important when talking about Web Services. It also include information about the headers that will be required depending on the status code.
+Status Codes are an important part of every response coming from the server. The whole list of [HTTP Response Status Codes](http://en.wikipedia.org/wiki/List_of_HTTP_status_codes) is a little bit longer than this one, which summarizes the ones that are more important when talking about Web Services.
 
-| Code | Method   | Meaning   |
+| Code | Method   | Description   |
 |------|----------|-----------|
+| **200** | **GET**       | Resource representantion   |
 | **201** | **POST**       | Resource is **CREATED**   |
 | **200** | **PUT**       | Resource is **UPDATED** _(or **CREATED** at a given URI)_|
 | **204** | **DELETE**     | Resource is **DELETED**                                       |
