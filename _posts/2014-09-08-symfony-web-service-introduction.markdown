@@ -84,7 +84,7 @@ I am now working on these two articles coming soon, so stay tuned!
 
 * **Symfony Web Service: Retrieving Data with GET** - Part 2
 * **Symfony Web Service: Submitting Data with POST** - Part 3
-* **Symfony Web Service: Editing Data with POST** - Part 4
+* **Symfony Web Service: Editing Data with PUT** - Part 4
 
 - - -
 
