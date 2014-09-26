@@ -8,7 +8,7 @@ tags : [symfony, api]
 
 ![Symfony Love Vagrant](http://miriamtocino.github.io/images/web-service-introduction.svg)
 
-_This article is the first one in a series related to one of the last projects that I have been working on: a small **Web Service for an iOS eLearning iPad App**._
+_This article is the first one in a series related to one of the last projects that I have been working on: a **web wervice for an iOS eLearning iPad app**._
 
 The eLearning App is structured in several modules, each of them containing specific content to be studied by the user. At the end of each module there is a test to be completed. The eLearning App must communicate with the Web Service and be able to:
 
@@ -82,8 +82,9 @@ We will get more into detail about each of them in the [upcoming articles of thi
 
 I am now working on these two articles coming soon, so stay tuned!
 
-* **Symfony Web Service: Retrieving Results with GET** - Part 2
-* **Symfony Web Service: Submitting Results with POST** - Part 3
+* **Symfony Web Service: Retrieving Data with GET** - Part 2
+* **Symfony Web Service: Submitting Data with POST** - Part 3
+* **Symfony Web Service: Editing Data with POST** - Part 4
 
 - - -
 
