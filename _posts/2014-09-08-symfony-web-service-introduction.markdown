@@ -80,7 +80,7 @@ We will get more into detail about each of them in the [upcoming articles of thi
 
 #### Upcoming Articles in the Symfony Web Service Series
 
-I am now working on these two articles coming soon, so stay tuned!
+I am now working on these articles coming soon, so stay tuned!
 
 * **Symfony Web Service: Retrieving Data with GET** - Part 2
 * **Symfony Web Service: Submitting Data with POST** - Part 3
