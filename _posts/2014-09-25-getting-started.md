@@ -41,9 +41,12 @@ about adding posts:
    according to the instructions above) and write. I would recommend not doing 
    all of your writing here -- there's no automatic saving, and I would hate 
    to see you lose any work by accident. Instead, you should do your writing 
-   in a text editor of your choice (take a look at [Sublime Text](), [Atom](), 
-   or [TextWrangler](), or specific Markdown text editors like [Ulysses](), 
-   [Byword](), and [iA Writer](). If you're really feeling adventurous, check 
+   in a text editor of your choice (take a look at [Sublime 
+   Text](http://www.sublimetext.com/), [Atom](https://atom.io/), 
+   or [TextWrangler](http://www.barebones.com/products/textwrangler/), or 
+   specific Markdown text editors like [Ulysses](http://www.ulyssesapp.com/), 
+   [Byword](http://bywordapp.com/), and [iA 
+   Writer](http://www.iawriter.com/mac/). If you're really feeling adventurous, check 
    out [vim](http://en.wikipedia.org/wiki/Vim_(text_editor)) or 
    [Emacs](http://en.wikipedia.org/wiki/Emacs).). Once you've written your 
    post, you can copy/paste the text into the GitHub editor. 
