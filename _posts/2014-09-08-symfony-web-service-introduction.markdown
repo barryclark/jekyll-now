@@ -69,7 +69,7 @@ Status Codes are an important part of every response coming from the server. The
 
 | Code | Method   | Description   |
 |------|----------|-----------|
-| **200** | **GET**       | Resource representantion retrieved   |
+| **200** | **GET**       | Retrieving a resource or collection representantion   |
 | **201** | **POST**       | Resource is **CREATED**   |
 | **200** | **PUT**       | Resource is **UPDATED** _(or **CREATED** at a given URI)_|
 | **204** | **DELETE**     | Resource is **DELETED**                                       |
