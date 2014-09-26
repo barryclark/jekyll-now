@@ -18,13 +18,13 @@ about adding posts:
 *  You should have access to the stanford-history.github.io repository. It 
    should appear like this on your repository page:
 
-![Repository home](images/repository_name.png)
+![Repository home](/images/repository_name.png)
 
 *  Clicking on the repository's name will take you into the repository, which 
    is structured to allow GitHub to automatically generate web pages for us out 
    of our properly-formatted posts. The structure looks something like this:
 
-![Repository structure](images/repository_directories.png)
+![Repository structure](/images/repository_directories.png)
 
 *  For writing posts, the only directory you'll need access to is the `_posts` 
    directory. All of our reading reflections and discussion questions will go 
@@ -35,7 +35,7 @@ about adding posts:
    started with a properly-formatted blog post with the correct YAML header 
    information.
 
-![Adding files](images/adding_files.png)
+![Adding files](/images/adding_files.png)
 
 *  GitHub will give you a text editor in which to name your file (named 
    according to the instructions above) and write. I would recommend not doing 
@@ -56,7 +56,7 @@ about adding posts:
    simple as "Adding reading discussion questions") and clicking "Commit 
    changes."
 
-![Commit changes](images/commit_file.png)
+![Commit changes](/images/commit_file.png)
 
 *  Once you commit the file, GitHub will update the site after a few moments. 
    If you need to do any additional editing, you'll notice on the file's page 
@@ -65,7 +65,7 @@ about adding posts:
    raw text of the file, clone the file with GitHub for Desktop, or delete the 
    file.
 
-![File options](images/file_options.png)
+![File options](/images/file_options.png)
 
 How you add files to the repository is up to you. If you want to learn how to 
 access GitHub from the command line, then don't be afraid to experiment! You 
