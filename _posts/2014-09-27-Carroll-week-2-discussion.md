@@ -1,4 +1,9 @@
-2014-09-27-Carroll-week-2-discussion.md
+---
+title: week 2 discussion
+date: 2014-09-27
+author: Paul Carroll
+layout: post
+---
 
 1) If Sturgeon's thesis is correct, and Silicon Valley played a critical role in the development of radio, then why have these contributions been forgotten? Why is Silicon Valley unaware of its ancestral ties to radio?
 
