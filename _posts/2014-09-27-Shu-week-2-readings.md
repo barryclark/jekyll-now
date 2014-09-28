@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Archives and Access
+title: Week 2 Readings or Archives, Access and Notebooks
 author: Wayne Shu
 ---
 
