@@ -1,0 +1,7 @@
+#Discussion Questions  
+  
+1. What do we gain by digital projects that eschew linear narration for a more open-ended user experience?  What do we, as academics or journalists, forfeit in these projects?
+  
+2. Something I hear often from fellow graduate students is a fear of "falling behind" in not keeping up with new technology.  It is unlikely in the near future, however, that all historians will be digital historians, or that our success will be as dependent on our mastery of technology as it is other skills (research, writing, administration).  What  is a reasonable benchmark of "keeping up" technologically?  What do digital historians offer to our colleagues who are less savvy with technology?
+  
+3. This week our discussion focused on archives.  Digital archives have been hugely important in opening up access for historians, myself included.  They raise questions of their own, however, including the question of preservation.  Websites age much more quickly than physical media or buildings -- what steps are taken to maintain digital archives, both in terms of functionality and online presence, as technology and the internet moves forward?  Sites that are unpopular, for whom funding has disappeared, or who face legal and political challenges can be taken offline easily, making their information suddenly impossible to access.  How can we as researchers militate against this potential impermanence? 
