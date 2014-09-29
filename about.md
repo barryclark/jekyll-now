@@ -4,12 +4,8 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
-
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself. 
+Working in Perl5 daily, but I'm in various stages of learning Ruby, Python, PHP, and Haskell
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[craig dot treptow at gmail dot com](mailto:craig.treptow@gmail.com)
