@@ -1,3 +1,5 @@
+Based on: http://www.smashingmagazine.com/2014/08/01/build-blog-jekyll-github-pages/
+
 # Jekyll Now
 
 **Jekyll** is a static site generator that's perfect for GitHub hosted blogs ([Jekyll Repository](https://github.com/jekyll/jekyll))
