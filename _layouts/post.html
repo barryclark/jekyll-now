@@ -29,5 +29,22 @@ layout: default
     {{ content }}
   </div>
 
+	<div class="social">
+		<h3>Like what you just read? You should share it.</h3>
+		<ul class="social-toolbar">
+			<li class="facebook facebook-share" data-count="339">
+				Like
+			</li>
+			<li class="twitter twitter-share" data-count="45">
+				Tweet
+			</li>
+			<li class="google-plus google-plus-share" data-count="22">
+				Share
+			</li>
+		</ul>
+	</div>
+
   {% include disqus.html disqus_identifier=page.disqus_identifier %}
 </article>
+<script type="text/javascript" src="{{ site.baseurl }}/js/social-sharing/social.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/js/pages/posts.js"></script>

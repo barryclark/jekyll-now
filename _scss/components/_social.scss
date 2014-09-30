@@ -1,0 +1,99 @@
+$facebook-color: #4b68b9;
+$pinterest-color: #ce2029;
+$email-color: #28a2ad;
+$twitter-color: #00b0ed;
+$google-plus-color: #dd4c39;
+$bhg-button-color: #d8d8d8;
+$bhg-button-gradient: linear-gradient(to bottom, #f1f1f1 0%,#d8d8d8 99%);
+$bhg-button-icon-color: #28a2ad;
+
+$touch-size: 44px;
+$breakpoint: 650px;
+$shadow-height: 3px;
+
+.social-toolbar {
+  max-width: 900px;
+  
+  list-style-type: none;
+  padding: 0 10px;
+  
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  
+  li {
+    position: relative;
+    color: WHITE;
+    height: $touch-size;
+    line-height: $touch-size;
+    margin: 0 5px;
+    min-width: $touch-size;
+    border-bottom: $shadow-height solid;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 1.2em;
+    flex-grow: 1;
+    overflow: hidden;
+    cursor: pointer;
+    
+    @media screen and (max-width: $breakpoint) {
+      margin: 0;
+      width: $touch-size;
+    }
+    
+    span {
+      float: left;
+      padding: 0 10px;
+      
+      @media screen and (max-width: $breakpoint) {
+        float: none;
+        padding: 0;
+        margin-right: 9999px;
+      }
+      
+      &:before {
+        font-size: 1.5em;
+        line-height: $touch-size;
+      }
+    }
+  }
+  
+  .facebook {
+    background: $facebook-color;
+    border-color: darken($facebook-color, 20);
+  }
+  
+  .pinterest {
+    background: $pinterest-color;
+    border-color: darken($pinterest-color, 20);
+  }
+  
+  .email {
+    background: $email-color;
+    border-color: darken($email-color, 20);
+  }
+  
+  .twitter {
+    background: $twitter-color;
+    border-color: darken($twitter-color, 20);
+  }
+  
+  .google-plus {
+    background: $google-plus-color;
+    border-color: darken($google-plus-color, 20);
+  }
+  
+  .print, .save {
+    background: $bhg-button-gradient;
+    border-color: darken($bhg-button-color, 20);
+    flex-grow: 0.8;
+    
+    span {
+      float: none;
+      padding: 0;
+      &:before {
+        color: $bhg-button-icon-color;
+      }
+    }
+  }
+}
