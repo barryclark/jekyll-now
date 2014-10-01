@@ -1,0 +1,3 @@
+[submodule "js/social-sharing"]
+	path = js/social-sharing
+	url = https://github.com/JordanForeman/social-sharing.git
