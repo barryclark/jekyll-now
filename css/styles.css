@@ -1067,7 +1067,7 @@ table > tbody > tr > th,
 table > tbody > tr > td,
 table > tfoot > tr > th,
 table > tfoot > tr > td {
-  padding: 8px;
+  padding: 2px 8px;
   line-height: 1.7;
   vertical-align: top;
   border-top: 1px solid #ddd;
