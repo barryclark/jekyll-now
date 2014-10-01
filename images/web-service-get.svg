@@ -146,8 +146,8 @@
 </g>
 <rect x="332.694" y="89.271" fill="none" width="77.19" height="15.297"/>
 <text transform="matrix(1 0 0 1 332.6953 96.7881)" font-family="'MarkerFelt-Wide'" font-size="9.1">404 Not Found</text>
-<rect x="70.775" y="53.871" fill="none" width="14.738" height="19.016"/>
-<text transform="matrix(1 0 0 1 70.7744 71.7432)" font-family="'UniversLTStd-Bold'" font-size="24.7544">?</text>
+<rect x="71.775" y="53.871" fill="none" width="25.224" height="27.125"/>
+<text transform="matrix(1 0 0 1 71.7754 74.3184)" font-family="'MarkerFelt-Wide'" font-size="24.7544">?</text>
 <path fill="#010101" d="M469.586,33.125v31.676c0,1.282-0.457,2.377-1.376,3.291c-0.909,0.912-2.004,1.371-3.286,1.371h-24.228
 	c-1.274,0-2.377-0.459-3.285-1.371c-0.909-0.914-1.369-2.009-1.369-3.291V33.125c0-1.282,0.46-2.377,1.369-3.291
 	c0.908-0.913,2.011-1.371,3.285-1.371h24.228c1.282,0,2.377,0.458,3.286,1.371C469.129,30.748,469.586,31.843,469.586,33.125z
