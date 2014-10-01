@@ -253,6 +253,24 @@ h6,
   margin: 1.414em 0 0.5em;
 }
 
+.social-icons {
+    padding: 0.5em 0 0 0;
+    font-size: 1.25rem;
+    width: 100%;
+}
+.social-icons a.fa {
+    padding: 0.2em;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.social-icons a.fa:hover {
+    opacity: 1;
+}
+.social-icons iframe[title=Flattr] {
+    position: relative;
+    top: 0.1em;
+}
+
 @media screen and (max-width: 48em) {
   .h1,
   h1 {
@@ -288,6 +306,11 @@ h6,
     text-align: center;
     margin-top: 0.666em;
     margin-bottom: 1.333em;
+  }
+
+  .social-icons .left, .social-icons .right {
+    text-align: center;
+    float: none;
   }
 }
 
