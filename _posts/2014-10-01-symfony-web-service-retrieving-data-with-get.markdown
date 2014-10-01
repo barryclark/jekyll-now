@@ -12,7 +12,7 @@ _This article is part of a series related to one of the last projects that I hav
 
 Every time a user completes a test and submits his results, a **log** is sent to the web service, including information about the user and the _status_ of the corresponding module coming from the eLearning app.
 
-This article shows how I did it to **retrieve a list of a user's logs** for a specific application using GET.
+This article shows how I did it to **retrieve a list of user's logs** for a specific application using GET.
 
 - - -
 
