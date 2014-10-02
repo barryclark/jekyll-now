@@ -24,3 +24,5 @@ categories:
 format: video
 ---
 This is a nice explanation of the implications of SOPA and PIPA.
+
+<iframe width="560" height="315" src="//www.youtube.com/embed/tzqMoOk9NWc" frameborder="0" allowfullscreen></iframe>
