@@ -2,6 +2,8 @@
 title: My next chapter at Rackspace
 author: kgorman
 layout: post
+categories:
+- objectrocket
 ---
 
 ![spike]({{ site.baseurl }}images/1869-Golden_Spike.jpg)
