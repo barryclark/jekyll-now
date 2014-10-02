@@ -1,11 +1,8 @@
 ---
-layout: default
-title: Archive
+layout: page
+title: Posts by Date
 ---
-<section id="archive">
-<h2>Archives</h2>
-<ul>
-  {% for post in site.posts %}
+{% for post in site.posts %}
 
     {% unless post.next %}
       <h3>{{ post.date | date: '%Y' }}</h3>
@@ -18,6 +15,5 @@ title: Archive
     {% endunless %}
 
     <li>{{ post.date | date:"%b" }} <a href="{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
-</ul>
-</section>
+
+{% endfor %}

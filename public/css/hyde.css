@@ -58,6 +58,8 @@ html {
   padding: 2rem 10rem;
   color: rgba(255,255,255,.5);
   background-color: #202020;
+  /* background-image: url('/public/img/1.jpg'); */
+  /* http://openphoto.net */
 }
 @media (min-width: 48em) {
   .sidebar {

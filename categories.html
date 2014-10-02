@@ -1,0 +1,21 @@
+---
+layout: page
+title: Posts by Category
+---
+
+{% for category in site.categories %}
+    <strong><a href="#{{category | first }}">{{ category | first }}</a></strong> |
+{% endfor %}
+
+{% for category in site.categories %}
+  <h3><a name="{{ category | first}}">{{ category | first }}</a></h3>
+    <ul>
+    {% for posts in category %}
+        {% for post in posts %}
+            {% if post.url %}
+                <li><a href="{{ post.url }}">{{ post.title }}</a> {{ post.date | date_to_string }}</li>
+            {% endif %}
+        {% endfor %}
+    {% endfor %}
+    </ul>
+{% endfor %}
