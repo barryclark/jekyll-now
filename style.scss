@@ -224,6 +224,7 @@ nav {
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
+    text-decoration: underline;
 
     @include mobile {
       margin: 0 10px;
