@@ -1,0 +1,12 @@
+---
+title: week 2 readings
+date: 2014-09-27
+author: Paul Carroll
+layout: post
+---
+
+The two archives that I looked at were the [Valley of the Shadow](http://valley.lib.virginia.edu/) (which I chose completely because of its cool name) and [Walt Whitman](http://www.whitmanarchive.org/). Here are a couple of my observations.
+
++ *Everything is so carefully organized.* The Whitman archive divided their data into several natural categories: "published works," "in whitman's hand," "life & letters," and so on. I found it very easy to navigate. The Valley of the Shadow archive, on the other hand, faced a much more difficult task, as they were trying to vast amount of largely unstructured data pertaining to two towns. They ended up organizing their data into a virtual museum, complete with a museum map. I can't decide if I like this decision or not. On the one hand, I was able to navigate the website effectively; but I found the notion that I was walking around a museum to be distracting. Nevertheless, I'm impressed that both archives were able to present vast amounts of data in a user-friendly, easy-to-navigate format. I especially appreciated how pages like [this one](http://valley.lib.virginia.edu/VoS/cwdossier1.html) would include all their raw data under the heading "Search the Soldiers' Records," and then a summary of the data under "About the Soldiers' Records." The summary made it much easier for me to know whether I would find the raw data interesting.
+
++ *Even though these archives host nineteenth-century material, they have problems with copyright.* [Check out the most-frequently-asked questions section of the Walt Whitman archive.](http://www.whitmanarchive.org/about/faq.html) Every question except the last one is dedicated to the problem of copyright. The archive is unable to incorporate contemporary criticism because of copyright. It is also unsure if the recording of Walt Whitman reading "America" is under copyright. This hearkened back to the section of the Cohen/Rosenzweig article arguing that we should assume that every piece of recorded sound, however old, is under copyright. Of course, no one seems to know who owns the "America" copyright, so it's very unlikely that the archive will be sued. Still, I find it aggravating that a recording that is well over one hundred years old might not be in the public domain. I'm sure that, if I were a nineteenth-century historian, I would find it even more annoying.

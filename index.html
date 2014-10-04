@@ -7,12 +7,12 @@ layout: default
     <article class="post">    
       
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+      <span class="meta">{{ post.author }} | {{ post.date | date_to_string }}</span>
 
       <div class="entry">
-        {{ post.content | truncatewords:40}}
+        {{ post.content }}
       </div>
       
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
     </article>
   {% endfor %}
 </div>

@@ -1,0 +1,193 @@
+--------------------------------------------------------------------------------
+Codebook for NHGIS data file 'nhgis0011_ts_state'
+--------------------------------------------------------------------------------
+ 
+Contents
+    - Data Summary
+    - Data Dictionary
+    - Source Data
+    - Citation and Use
+ 
+Additional documentation on NHGIS data sources is available at: 
+    https://www.nhgis.org/documentation/tabular-data 
+ 
+--------------------------------------------------------------------------------
+Data Summary
+--------------------------------------------------------------------------------
+ 
+Time series layout: Time varies by row
+Geographic level:   State
+Years:              1790, 1800, 1810, 1820, 1830, 1840, 1850, 1860, 1870, 1880, 1890, 1900, 1910, 1920, 1930, 1940, 1950, 1960, 1970, 1980, 1990, 2000, 2010
+ 
+Tables:
+ 
+1. Total Population
+   Valid years in file: 1790, 1800, 1810, 1820, 1830, 1840, 1850, 1860, 1870, 1880, 1890, 1900, 1910, 1920, 1930, 1940, 1950, 1960, 1970, 1980, 1990, 2000, 2010
+   Code: A00
+ 
+--------------------------------------------------------------------------------
+Data Dictionary
+--------------------------------------------------------------------------------
+ 
+Context Fields 
+        GISJOIN:     GIS Join Match Code
+        YEAR:        Row Source Year
+        STATE:       State Name
+        STATEA:      State Code
+        NAME:        Area Name
+ 
+Table 1: (A00) Total Population
+        A00AA:       Persons: Total
+ 
+--------------------------------------------------------------------------------
+Source Data
+--------------------------------------------------------------------------------
+ 
+Table 1: (A00) Total Population
+ 
+    Time series AA: Persons: Total
+        Year: 1790
+            Source dataset: 1790 Census: Population Data [US, States & Counties]
+                Source table: NT1. Total Population
+                    Universe: Persons
+                        Variable: [AAA001] Total
+        Year: 1800
+            Source dataset: 1800 Census: Population Data [US, States & Counties]
+                Source table: NT2. Total Population (from 1900 Census Report)
+                    Universe: Persons
+                        Variable: [AAU001] Total
+        Year: 1810
+            Source dataset: 1810 Census: Population Data [US, States & Counties]
+                Source table: NT2. Total Population (from 1900 Census Report)
+                    Universe: Persons
+                        Variable: [AA3001] Total
+        Year: 1820
+            Source dataset: 1820 Census: Population Data [US, States & Counties]
+                Source table: NT9. Total Population
+                    Universe: Persons
+                        Variable: [ABM001] Total
+        Year: 1830
+            Source dataset: 1830 Census: Population Data [US, States & Counties]
+                Source table: NT1. Total Population
+                    Universe: Persons
+                        Variable: [ABN001] Total
+        Year: 1840
+            Source dataset: 1840 Census: Population & Other Data [US, States & Counties]
+                Source table: NT1. Total Population
+                    Universe: Persons
+                        Variable: [ACD001] Total
+        Year: 1850
+            Source dataset: 1850 Census: Population, Agriculture & Other Data [US, States & Counties]
+                Source table: NT1. Total Population
+                    Universe: Persons
+                        Variable: [ADQ001] Total
+        Year: 1860
+            Source dataset: 1860 Census: Population, Agriculture & Other Data [US, States & Counties]
+                Source table: NT1. Total Population
+                    Universe: Persons
+                        Variable: [AG3001] Total
+        Year: 1870
+            Source dataset: 1870 Census: Population, Agriculture & Other Data [US, States & Counties]
+                Source table: NT1. Total Population
+                    Universe: Persons
+                        Variable: [AJ3001] Total
+        Year: 1880
+            Source dataset: 1880 Census: Population, Agriculture & Other Data [US, States & Counties]
+                Source table: NT1. Total Population
+                    Universe: Persons
+                        Variable: [AOT001] Total
+        Year: 1890
+            Source dataset: 1890 Census: Population, Housing, Agriculture & Manufacturing Data [US, States & Counties]
+                Source table: NT1. Total Population
+                    Universe: Persons
+                        Variable: [AUM001] Total
+        Year: 1900
+            Source dataset: 1900 Census: Population, Housing, Agriculture & Manufacturing Data [US, States & Counties]
+                Source table: NT1. Total Population
+                    Universe: Persons
+                        Variable: [AYM001] Total
+        Year: 1910
+            Source dataset: 1910 Census: Population, Housing & Agriculture Data [US, States & Counties]
+                Source table: NT1. Total Population by Year
+                    Universe: Persons
+                        Variable: [A3Y001] 1910
+        Year: 1920
+            Source dataset: 1920 Census: Population, Housing, Agriculture & Manufacturing Data [US, States & Counties]
+                Source table: NT1. Total Population
+                    Universe: Persons
+                        Variable: [A7L001] Total
+        Year: 1930
+            Source dataset: 1930 Census: Population, Agriculture & Economic Data [US, States & Counties]
+                Source table: NT1. Total Population
+                    Universe: Persons
+                        Variable: [BDP001] Total
+        Year: 1940
+            Source dataset: 1940 Census: Population, Housing, Agriculture & Economic Data [US, States & Counties]
+                Source table: NT1. Total Population
+                    Universe: Persons
+                        Variable: [BV7001] Total
+        Year: 1950
+            Source dataset: 1950 Census: Population, Housing & Agriculture Data [US, States & Counties]
+                Source table: NT1. Population
+                    Universe: Persons
+                        Variable: [B18001] Total
+        Year: 1960
+            Source dataset: 1960 Census: Population Data [US, States, Counties]
+                Source table: NT1. Total Population
+                    Universe: Persons
+                        Variable: [B5O001] Total
+        Year: 1970
+            Source dataset: 1970 Census: Count 4Pa - Sample-Based Population Data
+                Source table: NT126. 100% Population
+                    Universe: Persons
+                        Variable: [C1I001] Total
+        Year: 1980
+            Source dataset: 1980 Census: STF 1 - 100% Data
+                Source table: NT1A. Persons
+                    Universe: Persons
+                        Variable: [C7L001] Total
+        Year: 1990
+            Source dataset: 1990 Census: STF 1 - 100% Data
+                Source table: NP1. Persons
+                    Universe: Persons
+                        Variable: [ET1001] Total
+        Year: 2000
+            Source dataset: 2000 Census: SF 1a - 100% Data [Areas Larger Than Block Groups]
+                Source table: NP001A. Total Population
+                    Universe: Persons
+                        Variable: [FL5001] Total
+        Year: 2010
+            Source dataset: 2010 Census: SF 1a - P & H Tables [Blocks & Larger Areas]
+                Source table: P1. Total Population
+                    Universe: Total Population
+                        Variable: [H7V001] Total
+ 
+--------------------------------------------------------------------------------
+Citation and Use of NHGIS Data
+--------------------------------------------------------------------------------
+ 
+All persons are granted a limited license to use this documentation and the
+accompanying data, subject to the following conditions:
+
+* Publications and research reports employing the data (either tabular or GIS)
+  must cite it appropriately. The citation should include the following:
+
+    Minnesota Population Center. National Historical Geographic Information
+    System: Version 2.0. Minneapolis, MN: University of Minnesota 2011.
+
+* If possible, citations should also include the URL for the NHGIS site:
+
+    https://www.nhgis.org/
+
+In addition, we request that users send us a copy of any publications, research
+reports, or educational material making use of the data or documentation.
+Printed matter should be sent to:
+
+    NHGIS
+    Minnesota Population Center
+    University of Minnesota
+    50 Willey Hall
+    225 19th Ave S
+    Minneapolis, MN 55455
+
+Send electronic material to: nhgis@umn.edu

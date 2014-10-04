@@ -1,0 +1,984 @@
+GISJOIN,YEAR,STATE,STATEA,NAME,A00AA
+"G090","1790","Connecticut","090","Connecticut",237655
+"G100","1790","Delaware","100","Delaware",59096
+"G130","1790","Georgia","130","Georgia",82548
+"G240","1790","Maryland","240","Maryland",319728
+"G250","1790","Massachusetts","250","Massachusetts",475199
+"G330","1790","New Hampshire","330","New Hampshire",141899
+"G340","1790","New Jersey","340","New Jersey",184139
+"G360","1790","New York","360","New York",340241
+"G370","1790","North Carolina","370","North Carolina",395005
+"G420","1790","Pennsylvania","420","Pennsylvania",433611
+"G440","1790","Rhode Island","440","Rhode Island",69112
+"G450","1790","South Carolina","450","South Carolina",249073
+"G465","1790","Southwest Territory","465","Southwest Territory",35691
+"G500","1790","Vermont","500","Vermont",85341
+"G510","1790","Virginia","510","Virginia",821287
+"G090","1800","Connecticut","090","Connecticut",251002
+"G100","1800","Delaware","100","Delaware",64273
+"G110","1800","District Of Columbia","110","District of Columbia",14093
+"G130","1800","Georgia","130","Georgia",162686
+"G185","1800","Indiana Territory","185","Indiana Territory",5641
+"G210","1800","Kentucky","210","Kentucky",220955
+"G240","1800","Maryland","240","Maryland",341548
+"G250","1800","Massachusetts","250","Massachusetts",574564
+"G285","1800","Mississippi Territory","285","Mississippi Territory",8850
+"G330","1800","New Hampshire","330","New Hampshire",183858
+"G340","1800","New Jersey","340","New Jersey",211149
+"G360","1800","New York","360","New York",589051
+"G370","1800","North Carolina","370","North Carolina",478103
+"G385","1800","Northwest Territory","385","Northwest Territory",45365
+"G420","1800","Pennsylvania","420","Pennsylvania",602365
+"G440","1800","Rhode Island","440","Rhode Island",69122
+"G450","1800","South Carolina","450","South Carolina",345591
+"G470","1800","Tennessee","470","Tennessee",105602
+"G500","1800","Vermont","500","Vermont",154465
+"G510","1800","Virginia","510","Virginia",880200
+"G090","1810","Connecticut","090","Connecticut",261942
+"G100","1810","Delaware","100","Delaware",72674
+"G110","1810","District Of Columbia","110","District of Columbia",24023
+"G130","1810","Georgia","130","Georgia",252433
+"G175","1810","Illinois Territory","175","Illinois Territory",12282
+"G185","1810","Indiana Territory","185","Indiana Territory",24520
+"G210","1810","Kentucky","210","Kentucky",406511
+"G225","1810","Louisiana Territory","225","Louisiana Territory",20845
+"G240","1810","Maryland","240","Maryland",380546
+"G250","1810","Massachusetts","250","Massachusetts",700745
+"G265","1810","Michigan Territory","265","Michigan Territory",4762
+"G285","1810","Mississippi Territory","285","Mississippi Territory",40352
+"G330","1810","New Hampshire","330","New Hampshire",214460
+"G340","1810","New Jersey","340","New Jersey",245562
+"G360","1810","New York","360","New York",959049
+"G370","1810","North Carolina","370","North Carolina",555500
+"G390","1810","Ohio","390","Ohio",230760
+"G417","1810","Orleans Territory","417","Orleans Territory",76556
+"G420","1810","Pennsylvania","420","Pennsylvania",810091
+"G440","1810","Rhode Island","440","Rhode Island",76931
+"G450","1810","South Carolina","450","South Carolina",415115
+"G470","1810","Tennessee","470","Tennessee",261727
+"G500","1810","Vermont","500","Vermont",217895
+"G510","1810","Virginia","510","Virginia",974600
+"G010","1820","Alabama","010","Alabama",127901
+"G055","1820","Arkansas Territory","055","Arkansas Territory",14273
+"G090","1820","Connecticut","090","Connecticut",275248
+"G100","1820","Delaware","100","Delaware",72749
+"G110","1820","District Of Columbia","110","District of Columbia",33039
+"G130","1820","Georgia","130","Georgia",340989
+"G170","1820","Illinois","170","Illinois",55211
+"G180","1820","Indiana","180","Indiana",147178
+"G210","1820","Kentucky","210","Kentucky",564317
+"G220","1820","Louisiana","220","Louisianna",153407
+"G230","1820","Maine","230","Maine",298335
+"G240","1820","Maryland","240","Maryland",407350
+"G250","1820","Massachusetts","250","Massachusetts",523287
+"G265","1820","Michigan Territory","265","Michigan Territory",8896
+"G280","1820","Mississippi","280","Mississippi",75448
+"G295","1820","Missouri Territory","295","Missouri Territory",66586
+"G330","1820","New Hampshire","330","New Hampshire",244161
+"G340","1820","New Jersey","340","New Jersey",277575
+"G360","1820","New York","360","New York",1372812
+"G370","1820","North Carolina","370","North Carolina",638829
+"G390","1820","Ohio","390","Ohio",581434
+"G420","1820","Pennsylvania","420","Pennsylvania",1049458
+"G440","1820","Rhode Island","440","Rhode Island",83059
+"G450","1820","South Carolina","450","South Carolina",502741
+"G470","1820","Tennessee","470","Tennessee",422813
+"G500","1820","Vermont","500","Vermont",235764
+"G510","1820","Virginia","510","Virginia",1065379
+"G010","1830","Alabama","010","Alabama",309527
+"G055","1830","Arkansas Territory","055","Arkansas Territory",30388
+"G090","1830","Connecticut","090","Connecticut",297675
+"G100","1830","Delaware","100","Delaware",76748
+"G110","1830","District Of Columbia","110","District of Columbia",39834
+"G125","1830","Florida Territory","125","Florida Territory",34730
+"G130","1830","Georgia","130","Georgia",516823
+"G170","1830","Illinois","170","Illinois",157445
+"G180","1830","Indiana","180","Indiana",343031
+"G210","1830","Kentucky","210","Kentucky",687917
+"G220","1830","Louisiana","220","Louisianna",215739
+"G230","1830","Maine","230","Maine",399455
+"G240","1830","Maryland","240","Maryland",447040
+"G250","1830","Massachusetts","250","Massachusetts",610408
+"G265","1830","Michigan Territory","265","Michigan Territory",31639
+"G280","1830","Mississippi","280","Mississippi",136621
+"G290","1830","Missouri","290","Missouri",140455
+"G330","1830","New Hampshire","330","New Hampshire",269328
+"G340","1830","New Jersey","340","New Jersey",320823
+"G360","1830","New York","360","New York",1918608
+"G370","1830","North Carolina","370","North Carolina",737987
+"G390","1830","Ohio","390","Ohio",937903
+"G420","1830","Pennsylvania","420","Pennsylvania",1348233
+"G440","1830","Rhode Island","440","Rhode Island",97199
+"G450","1830","South Carolina","450","South Carolina",581185
+"G470","1830","Tennessee","470","Tennessee",681904
+"G500","1830","Vermont","500","Vermont",280652
+"G510","1830","Virginia","510","Virginia",1211405
+"G010","1840","Alabama","010","Alabama",590756
+"G050","1840","Arkansas","050","Arkansas",97574
+"G090","1840","Connecticut","090","Connecticut",309978
+"G100","1840","Delaware","100","Delaware",78085
+"G110","1840","District Of Columbia","110","District of Columbia",43712
+"G125","1840","Florida Territory","125","Florida Territory",54477
+"G130","1840","Georgia","130","Georgia",691392
+"G170","1840","Illinois","170","Illinois",476183
+"G180","1840","Indiana","180","Indiana",685866
+"G195","1840","Iowa Territory","195","Iowa Territory",43112
+"G210","1840","Kentucky","210","Kentucky",779828
+"G220","1840","Louisiana","220","Louisianna",352411
+"G230","1840","Maine","230","Maine",501793
+"G240","1840","Maryland","240","Maryland",470019
+"G250","1840","Massachusetts","250","Massachusetts",737699
+"G260","1840","Michigan","260","Michigan",212267
+"G280","1840","Mississippi","280","Mississippi",375651
+"G290","1840","Missouri","290","Missouri",383702
+"G330","1840","New Hampshire","330","New Hampshire",284574
+"G340","1840","New Jersey","340","New Jersey",373306
+"G360","1840","New York","360","New York",2428921
+"G370","1840","North Carolina","370","North Carolina",753419
+"G390","1840","Ohio","390","Ohio",1519467
+"G420","1840","Pennsylvania","420","Pennsylvania",1724033
+"G440","1840","Rhode Island","440","Rhode Island",108830
+"G450","1840","South Carolina","450","South Carolina",594398
+"G470","1840","Tennessee","470","Tennessee",829210
+"G500","1840","Vermont","500","Vermont",291948
+"G510","1840","Virginia","510","Virginia",1239797
+"G555","1840","Wisconsin Territory","555","Wisconsin Territory",30945
+"G010","1850","Alabama","010","Alabama",771623
+"G050","1850","Arkansas","050","Arkansas",209897
+"G060","1850","California","060","California",92597
+"G090","1850","Connecticut","090","Connecticut",370792
+"G100","1850","Delaware","100","Delaware",91532
+"G110","1850","District Of Columbia","110","District of Columbia",51687
+"G120","1850","Florida","120","Florida",87445
+"G130","1850","Georgia","130","Georgia",906185
+"G170","1850","Illinois","170","Illinois",851470
+"G180","1850","Indiana","180","Indiana",988416
+"G190","1850","Iowa","190","Iowa",192214
+"G210","1850","Kentucky","210","Kentucky",982405
+"G220","1850","Louisiana","220","Louisianna",517762
+"G230","1850","Maine","230","Maine",583169
+"G240","1850","Maryland","240","Maryland",583034
+"G250","1850","Massachusetts","250","Massachusetts",994514
+"G260","1850","Michigan","260","Michigan",397654
+"G275","1850","Minnesota Territory","275","Minnesota Territory",6077
+"G280","1850","Mississippi","280","Mississippi",606526
+"G290","1850","Missouri","290","Missouri",682044
+"G330","1850","New Hampshire","330","New Hampshire",317976
+"G340","1850","New Jersey","340","New Jersey",489555
+"G355","1850","New Mexico Territory","355","New Mexico Territory",61547
+"G360","1850","New York","360","New York",3097394
+"G370","1850","North Carolina","370","North Carolina",869039
+"G390","1850","Ohio","390","Ohio",1980329
+"G413","1850","Oregon Territory","413","Oregon Territory",13294
+"G420","1850","Pennsylvania","420","Pennsylvania",2311786
+"G440","1850","Rhode Island","440","Rhode Island",147545
+"G450","1850","South Carolina","450","South Carolina",668507
+"G470","1850","Tennessee","470","Tennessee",1002717
+"G480","1850","Texas","480","Texas",212592
+"G495","1850","Utah Territory","495","Utah Territory",11380
+"G500","1850","Vermont","500","Vermont",314120
+"G510","1850","Virginia","510","Virginia",1421661
+"G550","1850","Wisconsin","550","Wisconsin",305391
+"G010","1860","Alabama","010","Alabama",964201
+"G050","1860","Arkansas","050","Arkansas",435450
+"G060","1860","California","060","California",379994
+"G085","1860","Colorado Territory","085","Colorado Territory",34277
+"G090","1860","Connecticut","090","Connecticut",460147
+"G095","1860","Dakota Territory","095","Dakota Territory",4837
+"G100","1860","Delaware","100","Delaware",112216
+"G110","1860","District Of Columbia","110","District of Columbia",75080
+"G120","1860","Florida","120","Florida",140424
+"G130","1860","Georgia","130","Georgia",1057286
+"G170","1860","Illinois","170","Illinois",1711951
+"G180","1860","Indiana","180","Indiana",1350428
+"G190","1860","Iowa","190","Iowa",674913
+"G205","1860","Kansas Territory","205","Kansas Territory",107206
+"G210","1860","Kentucky","210","Kentucky",1155684
+"G220","1860","Louisiana","220","Louisianna",708002
+"G230","1860","Maine","230","Maine",628279
+"G240","1860","Maryland","240","Maryland",687049
+"G250","1860","Massachusetts","250","Massachusetts",1231066
+"G260","1860","Michigan","260","Michigan",749113
+"G270","1860","Minnesota","270","Minnesota",172023
+"G280","1860","Mississippi","280","Mississippi",791305
+"G290","1860","Missouri","290","Missouri",1182012
+"G315","1860","Nebraska Territory","315","Nebraska Territory",28841
+"G325","1860","Nevada Territory","325","Nevada Territory",6857
+"G330","1860","New Hampshire","330","New Hampshire",326073
+"G340","1860","New Jersey","340","New Jersey",672035
+"G355","1860","New Mexico Territory","355","New Mexico Territory",93516
+"G360","1860","New York","360","New York",3880735
+"G370","1860","North Carolina","370","North Carolina",992622
+"G390","1860","Ohio","390","Ohio",2339511
+"G410","1860","Oregon","410","Oregon",52465
+"G420","1860","Pennsylvania","420","Pennsylvania",2906215
+"G440","1860","Rhode Island","440","Rhode Island",174620
+"G450","1860","South Carolina","450","South Carolina",703708
+"G470","1860","Tennessee","470","Tennessee",1109801
+"G480","1860","Texas","480","Texas",604215
+"G495","1860","Utah Territory","495","Utah Territory",40273
+"G500","1860","Vermont","500","Vermont",315098
+"G510","1860","Virginia","510","Virginia",1596318
+"G535","1860","Washington Territory","535","Washington Territory",11594
+"G550","1860","Wisconsin","550","Wisconsin",775881
+"G010","1870","Alabama","010","Alabama",996992
+"G045","1870","Arizona Territory","045","Arizona Territory",9658
+"G050","1870","Arkansas","050","Arkansas",484471
+"G060","1870","California","060","California",560247
+"G085","1870","Colorado Territory","085","Colorado Territory",39864
+"G090","1870","Connecticut","090","Connecticut",537454
+"G095","1870","Dakota Territory","095","Dakota Territory",14181
+"G100","1870","Delaware","100","Delaware",125015
+"G110","1870","District Of Columbia","110","District of Columbia",131700
+"G120","1870","Florida","120","Florida",187748
+"G130","1870","Georgia","130","Georgia",1184109
+"G165","1870","Idaho Territory","165","Idaho Territory",14999
+"G170","1870","Illinois","170","Illinois",2539891
+"G180","1870","Indiana","180","Indiana",1680637
+"G190","1870","Iowa","190","Iowa",1194020
+"G200","1870","Kansas","200","Kansas",364399
+"G210","1870","Kentucky","210","Kentucky",1321011
+"G220","1870","Louisiana","220","Louisianna",726915
+"G230","1870","Maine","230","Maine",626915
+"G240","1870","Maryland","240","Maryland",780894
+"G250","1870","Massachusetts","250","Massachusetts",1457351
+"G260","1870","Michigan","260","Michigan",1184059
+"G270","1870","Minnesota","270","Minnesota",439706
+"G280","1870","Mississippi","280","Mississippi",827922
+"G290","1870","Missouri","290","Missouri",1721295
+"G305","1870","Montana Territory","305","Montana Territory",20595
+"G310","1870","Nebraska","310","Nebraska",122993
+"G320","1870","Nevada","320","Nevada",42491
+"G330","1870","New Hampshire","330","New Hampshire",318300
+"G340","1870","New Jersey","340","New Jersey",906096
+"G355","1870","New Mexico Territory","355","New Mexico Territory",91874
+"G360","1870","New York","360","New York",4382759
+"G370","1870","North Carolina","370","North Carolina",1071361
+"G390","1870","Ohio","390","Ohio",2665260
+"G410","1870","Oregon","410","Oregon",90923
+"G420","1870","Pennsylvania","420","Pennsylvania",3521951
+"G440","1870","Rhode Island","440","Rhode Island",217353
+"G450","1870","South Carolina","450","South Carolina",705606
+"G470","1870","Tennessee","470","Tennessee",1258520
+"G480","1870","Texas","480","Texas",818579
+"G495","1870","Utah Territory","495","Utah Territory",86786
+"G500","1870","Vermont","500","Vermont",330551
+"G510","1870","Virginia","510","Virginia",1225163
+"G535","1870","Washington Territory","535","Washington Territory",23955
+"G540","1870","West Virginia","540","West Virginia",442014
+"G550","1870","Wisconsin","550","Wisconsin",1054670
+"G565","1870","Wyoming Territory","565","Wyoming Territory",9118
+"G010","1880","Alabama","010","Alabama",1262505
+"G025","1880","Alaska Territory","025","Alaska Territory",33426
+"G045","1880","Arizona Territory","045","Arizona Territory",40440
+"G050","1880","Arkansas","050","Arkansas",802525
+"G060","1880","California","060","California",864694
+"G080","1880","Colorado","080","Colorado",194327
+"G090","1880","Connecticut","090","Connecticut",622700
+"G095","1880","Dakota Territory","095","Dakota Territory",135177
+"G100","1880","Delaware","100","Delaware",146608
+"G110","1880","District Of Columbia","110","District of Columbia",177624
+"G120","1880","Florida","120","Florida",269493
+"G130","1880","Georgia","130","Georgia",1542180
+"G165","1880","Idaho Territory","165","Idaho Territory",32610
+"G170","1880","Illinois","170","Illinois",3077871
+"G180","1880","Indiana","180","Indiana",1978301
+"G190","1880","Iowa","190","Iowa",1624615
+"G200","1880","Kansas","200","Kansas",996096
+"G210","1880","Kentucky","210","Kentucky",1648690
+"G220","1880","Louisiana","220","Louisianna",939946
+"G230","1880","Maine","230","Maine",648936
+"G240","1880","Maryland","240","Maryland",934943
+"G250","1880","Massachusetts","250","Massachusetts",1783085
+"G260","1880","Michigan","260","Michigan",1636937
+"G270","1880","Minnesota","270","Minnesota",780773
+"G280","1880","Mississippi","280","Mississippi",1131597
+"G290","1880","Missouri","290","Missouri",2168380
+"G305","1880","Montana Territory","305","Montana Territory",39159
+"G310","1880","Nebraska","310","Nebraska",452402
+"G320","1880","Nevada","320","Nevada",62266
+"G330","1880","New Hampshire","330","New Hampshire",346991
+"G340","1880","New Jersey","340","New Jersey",1131116
+"G355","1880","New Mexico Territory","355","New Mexico Territory",119565
+"G360","1880","New York","360","New York",5082871
+"G370","1880","North Carolina","370","North Carolina",1399750
+"G390","1880","Ohio","390","Ohio",3198062
+"G410","1880","Oregon","410","Oregon",174768
+"G420","1880","Pennsylvania","420","Pennsylvania",4282891
+"G440","1880","Rhode Island","440","Rhode Island",276531
+"G450","1880","South Carolina","450","South Carolina",995577
+"G470","1880","Tennessee","470","Tennessee",1542359
+"G480","1880","Texas","480","Texas",1591749
+"G495","1880","Utah Territory","495","Utah Territory",143963
+"G500","1880","Vermont","500","Vermont",332286
+"G510","1880","Virginia","510","Virginia",1512565
+"G535","1880","Washington Territory","535","Washington Territory",75116
+"G540","1880","West Virginia","540","West Virginia",618457
+"G550","1880","Wisconsin","550","Wisconsin",1315497
+"G565","1880","Wyoming Territory","565","Wyoming Territory",20789
+"G010","1890","Alabama","010","Alabama",1513017
+"G025","1890","Alaska Territory","025","Alaska Territory",32052
+"G045","1890","Arizona Territory","045","Arizona Territory",59620
+"G050","1890","Arkansas","050","Arkansas",1128179
+"G060","1890","California","060","California",1208130
+"G080","1890","Colorado","080","Colorado",412198
+"G090","1890","Connecticut","090","Connecticut",746258
+"G100","1890","Delaware","100","Delaware",168493
+"G110","1890","District Of Columbia","110","District of Columbia",230392
+"G120","1890","Florida","120","Florida",391422
+"G130","1890","Georgia","130","Georgia",1837353
+"G160","1890","Idaho","160","Idaho",84385
+"G170","1890","Illinois","170","Illinois",3826351
+"G178","1890","Indian Territory","178","Indian Territory",
+"G180","1890","Indiana","180","Indiana",2192404
+"G190","1890","Iowa","190","Iowa",1911896
+"G200","1890","Kansas","200","Kansas",1427096
+"G210","1890","Kentucky","210","Kentucky",1858635
+"G220","1890","Louisiana","220","Louisianna",1118587
+"G230","1890","Maine","230","Maine",661086
+"G240","1890","Maryland","240","Maryland",1042390
+"G250","1890","Massachusetts","250","Massachusetts",2238943
+"G260","1890","Michigan","260","Michigan",2093889
+"G270","1890","Minnesota","270","Minnesota",1301826
+"G280","1890","Mississippi","280","Mississippi",1289600
+"G290","1890","Missouri","290","Missouri",2679184
+"G300","1890","Montana","300","Montana",132159
+"G310","1890","Nebraska","310","Nebraska",1058910
+"G320","1890","Nevada","320","Nevada",45761
+"G330","1890","New Hampshire","330","New Hampshire",376530
+"G340","1890","New Jersey","340","New Jersey",1444933
+"G355","1890","New Mexico Territory","355","New Mexico Territory",153593
+"G360","1890","New York","360","New York",5997853
+"G370","1890","North Carolina","370","North Carolina",1617947
+"G380","1890","North Dakota","380","North Dakota",182719
+"G390","1890","Ohio","390","Ohio",3672316
+"G405","1890","Oklahoma Territory","405","Oklahoma Territory",61834
+"G410","1890","Oregon","410","Oregon",313767
+"G420","1890","Pennsylvania","420","Pennsylvania",5258014
+"G440","1890","Rhode Island","440","Rhode Island",345506
+"G450","1890","South Carolina","450","South Carolina",1151149
+"G460","1890","South Dakota","460","South Dakota",328808
+"G470","1890","Tennessee","470","Tennessee",1767518
+"G480","1890","Texas","480","Texas",2235523
+"G495","1890","Utah Territory","495","Utah Territory",207905
+"G500","1890","Vermont","500","Vermont",332422
+"G510","1890","Virginia","510","Virginia",1655980
+"G530","1890","Washington","530","Washington",349390
+"G540","1890","West Virginia","540","West Virginia",762794
+"G550","1890","Wisconsin","550","Wisconsin",1686880
+"G560","1890","Wyoming","560","Wyoming",60705
+"G010","1900","Alabama","010","Alabama",1828697
+"G025","1900","Alaska Territory","025","Alaska Territory",63592
+"G045","1900","Arizona Territory","045","Arizona Territory",122931
+"G050","1900","Arkansas","050","Arkansas",1311564
+"G060","1900","California","060","California",1485053
+"G080","1900","Colorado","080","Colorado",539700
+"G090","1900","Connecticut","090","Connecticut",908420
+"G100","1900","Delaware","100","Delaware",184735
+"G110","1900","District Of Columbia","110","District of Columbia",278718
+"G120","1900","Florida","120","Florida",528542
+"G130","1900","Georgia","130","Georgia",2216331
+"G155","1900","Hawaii Territory","155","Hawaii Territory",154001
+"G160","1900","Idaho","160","Idaho",161772
+"G170","1900","Illinois","170","Illinois",4821550
+"G178","1900","Indian Territory","178","Indian Territory",392060
+"G180","1900","Indiana","180","Indiana",2516462
+"G190","1900","Iowa","190","Iowa",2231853
+"G200","1900","Kansas","200","Kansas",1470495
+"G210","1900","Kentucky","210","Kentucky",2147174
+"G220","1900","Louisiana","220","Louisianna",1381625
+"G230","1900","Maine","230","Maine",694466
+"G240","1900","Maryland","240","Maryland",1188044
+"G250","1900","Massachusetts","250","Massachusetts",2805346
+"G260","1900","Michigan","260","Michigan",2420982
+"G270","1900","Minnesota","270","Minnesota",1751394
+"G280","1900","Mississippi","280","Mississippi",1551270
+"G290","1900","Missouri","290","Missouri",3106665
+"G300","1900","Montana","300","Montana",243329
+"G310","1900","Nebraska","310","Nebraska",1066300
+"G320","1900","Nevada","320","Nevada",42335
+"G330","1900","New Hampshire","330","New Hampshire",411588
+"G340","1900","New Jersey","340","New Jersey",1883669
+"G355","1900","New Mexico Territory","355","New Mexico Territory",195310
+"G360","1900","New York","360","New York",7268894
+"G370","1900","North Carolina","370","North Carolina",1893810
+"G380","1900","North Dakota","380","North Dakota",319146
+"G390","1900","Ohio","390","Ohio",4157545
+"G405","1900","Oklahoma Territory","405","Oklahoma Territory",398331
+"G410","1900","Oregon","410","Oregon",413536
+"G420","1900","Pennsylvania","420","Pennsylvania",6302115
+"G440","1900","Rhode Island","440","Rhode Island",428556
+"G450","1900","South Carolina","450","South Carolina",1340316
+"G460","1900","South Dakota","460","South Dakota",401570
+"G470","1900","Tennessee","470","Tennessee",2020616
+"G480","1900","Texas","480","Texas",3048710
+"G490","1900","Utah","490","Utah",276749
+"G500","1900","Vermont","500","Vermont",343641
+"G510","1900","Virginia","510","Virginia",1854184
+"G530","1900","Washington","530","Washington",518103
+"G540","1900","West Virginia","540","West Virginia",958800
+"G550","1900","Wisconsin","550","Wisconsin",2069042
+"G560","1900","Wyoming","560","Wyoming",92531
+"G999","1900","Persons in the Military","999","Persons in Military",91219
+"G010","1910","Alabama","010","Alabama",2138093
+"G025","1910","Alaska Territory","025","Alaska Territory",64356
+"G045","1910","Arizona Territory","045","Arizona Territory",204354
+"G050","1910","Arkansas","050","Arkansas",1574449
+"G060","1910","California","060","California",2377549
+"G080","1910","Colorado","080","Colorado",799024
+"G090","1910","Connecticut","090","Connecticut",1114756
+"G100","1910","Delaware","100","Delaware",202322
+"G110","1910","District Of Columbia","110","District of Columbia",331069
+"G120","1910","Florida","120","Florida",752619
+"G130","1910","Georgia","130","Georgia",2609121
+"G155","1910","Hawaii Territory","155","Hawaii Territory",191909
+"G160","1910","Idaho","160","Idaho",325594
+"G170","1910","Illinois","170","Illinois",5638591
+"G180","1910","Indiana","180","Indiana",2700876
+"G190","1910","Iowa","190","Iowa",2224771
+"G200","1910","Kansas","200","Kansas",1690949
+"G210","1910","Kentucky","210","Kentucky",2289905
+"G220","1910","Louisiana","220","Louisianna",1656388
+"G230","1910","Maine","230","Maine",742371
+"G240","1910","Maryland","240","Maryland",1295346
+"G250","1910","Massachusetts","250","Massachusetts",3366416
+"G260","1910","Michigan","260","Michigan",2810173
+"G270","1910","Minnesota","270","Minnesota",2075708
+"G280","1910","Mississippi","280","Mississippi",1797114
+"G290","1910","Missouri","290","Missouri",3293335
+"G300","1910","Montana","300","Montana",376053
+"G310","1910","Nebraska","310","Nebraska",1192214
+"G320","1910","Nevada","320","Nevada",81875
+"G330","1910","New Hampshire","330","New Hampshire",430572
+"G340","1910","New Jersey","340","New Jersey",2537167
+"G355","1910","New Mexico Territory","355","New Mexico Territory",327301
+"G360","1910","New York","360","New York",9113614
+"G370","1910","North Carolina","370","North Carolina",2206287
+"G380","1910","North Dakota","380","North Dakota",577056
+"G390","1910","Ohio","390","Ohio",4767121
+"G400","1910","Oklahoma","400","Oklahoma",1657155
+"G410","1910","Oregon","410","Oregon",672765
+"G420","1910","Pennsylvania","420","Pennsylvania",7665111
+"G440","1910","Rhode Island","440","Rhode Island",542610
+"G450","1910","South Carolina","450","South Carolina",1515400
+"G460","1910","South Dakota","460","South Dakota",583888
+"G470","1910","Tennessee","470","Tennessee",2184789
+"G480","1910","Texas","480","Texas",3896542
+"G490","1910","Utah","490","Utah",373351
+"G500","1910","Vermont","500","Vermont",355956
+"G510","1910","Virginia","510","Virginia",2061612
+"G530","1910","Washington","530","Washington",1141990
+"G540","1910","West Virginia","540","West Virginia",1221119
+"G550","1910","Wisconsin","550","Wisconsin",2333860
+"G560","1910","Wyoming","560","Wyoming",145965
+"G010","1920","Alabama","010","Alabama",2348174
+"G025","1920","Alaska Territory","025","Alaska Territory",55036
+"G040","1920","Arizona","040","Arizona",334162
+"G050","1920","Arkansas","050","Arkansas",1752204
+"G060","1920","California","060","California",3426861
+"G080","1920","Colorado","080","Colorado",939629
+"G090","1920","Connecticut","090","Connecticut",1380631
+"G100","1920","Delaware","100","Delaware",223003
+"G110","1920","District Of Columbia","110","District of Columbia",437571
+"G120","1920","Florida","120","Florida",968470
+"G130","1920","Georgia","130","Georgia",2895832
+"G155","1920","Hawaii Territory","155","Hawaii Territory",255881
+"G160","1920","Idaho","160","Idaho",431866
+"G170","1920","Illinois","170","Illinois",6485280
+"G180","1920","Indiana","180","Indiana",2930390
+"G190","1920","Iowa","190","Iowa",2404021
+"G200","1920","Kansas","200","Kansas",1769257
+"G210","1920","Kentucky","210","Kentucky",2416630
+"G220","1920","Louisiana","220","Louisianna",1798509
+"G230","1920","Maine","230","Maine",768014
+"G240","1920","Maryland","240","Maryland",1449661
+"G250","1920","Massachusetts","250","Massachusetts",3852356
+"G260","1920","Michigan","260","Michigan",3668412
+"G270","1920","Minnesota","270","Minnesota",2387125
+"G280","1920","Mississippi","280","Mississippi",1790618
+"G290","1920","Missouri","290","Missouri",3404055
+"G300","1920","Montana","300","Montana",548889
+"G310","1920","Nebraska","310","Nebraska",1296372
+"G320","1920","Nevada","320","Nevada",77407
+"G330","1920","New Hampshire","330","New Hampshire",443083
+"G340","1920","New Jersey","340","New Jersey",3155900
+"G350","1920","New Mexico","350","New Mexico",360350
+"G360","1920","New York","360","New York",10385228
+"G370","1920","North Carolina","370","North Carolina",2559123
+"G380","1920","North Dakota","380","North Dakota",646872
+"G390","1920","Ohio","390","Ohio",5759394
+"G400","1920","Oklahoma","400","Oklahoma",2028283
+"G410","1920","Oregon","410","Oregon",783389
+"G420","1920","Pennsylvania","420","Pennsylvania",8720018
+"G440","1920","Rhode Island","440","Rhode Island",604397
+"G450","1920","South Carolina","450","South Carolina",1683724
+"G460","1920","South Dakota","460","South Dakota",636547
+"G470","1920","Tennessee","470","Tennessee",2337885
+"G480","1920","Texas","480","Texas",4663228
+"G490","1920","Utah","490","Utah",449396
+"G500","1920","Vermont","500","Vermont",352428
+"G510","1920","Virginia","510","Virginia",2309187
+"G530","1920","Washington","530","Washington",1356621
+"G540","1920","West Virginia","540","West Virginia",1463701
+"G550","1920","Wisconsin","550","Wisconsin",2632067
+"G560","1920","Wyoming","560","Wyoming",194402
+"G010","1930","Alabama","010","Alabama",2646248
+"G025","1930","Alaska Territory","025","Alaska Territory",59278
+"G040","1930","Arizona","040","Arizona",435573
+"G050","1930","Arkansas","050","Arkansas",1854482
+"G060","1930","California","060","California",5677251
+"G080","1930","Colorado","080","Colorado",1035791
+"G090","1930","Connecticut","090","Connecticut",1606903
+"G100","1930","Delaware","100","Delaware",238380
+"G110","1930","District Of Columbia","110","District of Columbia",486869
+"G120","1930","Florida","120","Florida",1468211
+"G130","1930","Georgia","130","Georgia",2908506
+"G155","1930","Hawaii Territory","155","Hawaii Territory",368336
+"G160","1930","Idaho","160","Idaho",445032
+"G170","1930","Illinois","170","Illinois",7630654
+"G180","1930","Indiana","180","Indiana",3238503
+"G190","1930","Iowa","190","Iowa",2470939
+"G200","1930","Kansas","200","Kansas",1880999
+"G210","1930","Kentucky","210","Kentucky",2614589
+"G220","1930","Louisiana","220","Louisianna",2101593
+"G230","1930","Maine","230","Maine",797423
+"G240","1930","Maryland","240","Maryland",1631526
+"G250","1930","Massachusetts","250","Massachusetts",4249614
+"G260","1930","Michigan","260","Michigan",4842325
+"G270","1930","Minnesota","270","Minnesota",2563953
+"G280","1930","Mississippi","280","Mississippi",2009821
+"G290","1930","Missouri","290","Missouri",3629367
+"G300","1930","Montana","300","Montana",537606
+"G310","1930","Nebraska","310","Nebraska",1377963
+"G320","1930","Nevada","320","Nevada",91058
+"G330","1930","New Hampshire","330","New Hampshire",465293
+"G340","1930","New Jersey","340","New Jersey",4041334
+"G350","1930","New Mexico","350","New Mexico",423317
+"G360","1930","New York","360","New York",12588066
+"G370","1930","North Carolina","370","North Carolina",3170276
+"G380","1930","North Dakota","380","North Dakota",680845
+"G390","1930","Ohio","390","Ohio",6646697
+"G400","1930","Oklahoma","400","Oklahoma",2396040
+"G410","1930","Oregon","410","Oregon",953786
+"G420","1930","Pennsylvania","420","Pennsylvania",9631350
+"G440","1930","Rhode Island","440","Rhode Island",687497
+"G450","1930","South Carolina","450","South Carolina",1738765
+"G460","1930","South Dakota","460","South Dakota",692849
+"G470","1930","Tennessee","470","Tennessee",2616556
+"G480","1930","Texas","480","Texas",5824715
+"G490","1930","Utah","490","Utah",507847
+"G500","1930","Vermont","500","Vermont",359611
+"G510","1930","Virginia","510","Virginia",2421851
+"G530","1930","Washington","530","Washington",1563396
+"G540","1930","West Virginia","540","West Virginia",1729205
+"G550","1930","Wisconsin","550","Wisconsin",2939006
+"G560","1930","Wyoming","560","Wyoming",225565
+"G010","1940","Alabama","010","Alabama",2832961
+"G025","1940","Alaska Territory","025","Alaska Territory",72524
+"G040","1940","Arizona","040","Arizona",499261
+"G050","1940","Arkansas","050","Arkansas",1949387
+"G060","1940","California","060","California",6907387
+"G080","1940","Colorado","080","Colorado",1123296
+"G090","1940","Connecticut","090","Connecticut",1709242
+"G100","1940","Delaware","100","Delaware",266505
+"G110","1940","District Of Columbia","110","District of Columbia",663091
+"G120","1940","Florida","120","Florida",1897414
+"G130","1940","Georgia","130","Georgia",3123723
+"G155","1940","Hawaii Territory","155","Hawaii Territory",422770
+"G160","1940","Idaho","160","Idaho",524873
+"G170","1940","Illinois","170","Illinois",7897241
+"G180","1940","Indiana","180","Indiana",3427796
+"G190","1940","Iowa","190","Iowa",2538268
+"G200","1940","Kansas","200","Kansas",1801028
+"G210","1940","Kentucky","210","Kentucky",2845627
+"G220","1940","Louisiana","220","Louisianna",2363880
+"G230","1940","Maine","230","Maine",847226
+"G240","1940","Maryland","240","Maryland",1821244
+"G250","1940","Massachusetts","250","Massachusetts",4316721
+"G260","1940","Michigan","260","Michigan",5256106
+"G270","1940","Minnesota","270","Minnesota",2792300
+"G280","1940","Mississippi","280","Mississippi",2183796
+"G290","1940","Missouri","290","Missouri",3784664
+"G300","1940","Montana","300","Montana",559456
+"G310","1940","Nebraska","310","Nebraska",1315834
+"G320","1940","Nevada","320","Nevada",110247
+"G330","1940","New Hampshire","330","New Hampshire",491524
+"G340","1940","New Jersey","340","New Jersey",4160165
+"G350","1940","New Mexico","350","New Mexico",531818
+"G360","1940","New York","360","New York",13479142
+"G370","1940","North Carolina","370","North Carolina",3571623
+"G380","1940","North Dakota","380","North Dakota",641935
+"G390","1940","Ohio","390","Ohio",6907612
+"G400","1940","Oklahoma","400","Oklahoma",2336434
+"G410","1940","Oregon","410","Oregon",1089684
+"G420","1940","Pennsylvania","420","Pennsylvania",9900180
+"G440","1940","Rhode Island","440","Rhode Island",713346
+"G450","1940","South Carolina","450","South Carolina",1899804
+"G460","1940","South Dakota","460","South Dakota",642961
+"G470","1940","Tennessee","470","Tennessee",2915841
+"G480","1940","Texas","480","Texas",6414824
+"G490","1940","Utah","490","Utah",550310
+"G500","1940","Vermont","500","Vermont",359231
+"G510","1940","Virginia","510","Virginia",2677773
+"G530","1940","Washington","530","Washington",1736191
+"G540","1940","West Virginia","540","West Virginia",1901974
+"G550","1940","Wisconsin","550","Wisconsin",3137587
+"G560","1940","Wyoming","560","Wyoming",250742
+"G010","1950","Alabama","010","Alabama",3061743
+"G025","1950","Alaska Territory","025","Alaska Territory",128643
+"G040","1950","Arizona","040","Arizona",749587
+"G050","1950","Arkansas","050","Arkansas",1909511
+"G060","1950","California","060","California",10586224
+"G080","1950","Colorado","080","Colorado",1325089
+"G090","1950","Connecticut","090","Connecticut",2007280
+"G100","1950","Delaware","100","Delaware",318085
+"G110","1950","District Of Columbia","110","District of Columbia",802178
+"G120","1950","Florida","120","Florida",2771305
+"G130","1950","Georgia","130","Georgia",3444578
+"G155","1950","Hawaii Territory","155","Hawaii Territory",499794
+"G160","1950","Idaho","160","Idaho",588637
+"G170","1950","Illinois","170","Illinois",8712176
+"G180","1950","Indiana","180","Indiana",3934224
+"G190","1950","Iowa","190","Iowa",2621073
+"G200","1950","Kansas","200","Kansas",1905299
+"G210","1950","Kentucky","210","Kentucky",2944806
+"G220","1950","Louisiana","220","Louisianna",2683516
+"G230","1950","Maine","230","Maine",913774
+"G240","1950","Maryland","240","Maryland",2343001
+"G250","1950","Massachusetts","250","Massachusetts",4690514
+"G260","1950","Michigan","260","Michigan",6371766
+"G270","1950","Minnesota","270","Minnesota",2982483
+"G280","1950","Mississippi","280","Mississippi",2178914
+"G290","1950","Missouri","290","Missouri",3954653
+"G300","1950","Montana","300","Montana",591024
+"G310","1950","Nebraska","310","Nebraska",1325510
+"G320","1950","Nevada","320","Nevada",160083
+"G330","1950","New Hampshire","330","New Hampshire",533242
+"G340","1950","New Jersey","340","New Jersey",4835329
+"G350","1950","New Mexico","350","New Mexico",681187
+"G360","1950","New York","360","New York",14830192
+"G370","1950","North Carolina","370","North Carolina",4061929
+"G380","1950","North Dakota","380","North Dakota",619636
+"G390","1950","Ohio","390","Ohio",7946627
+"G400","1950","Oklahoma","400","Oklahoma",2233351
+"G410","1950","Oregon","410","Oregon",1521341
+"G420","1950","Pennsylvania","420","Pennsylvania",10498012
+"G440","1950","Rhode Island","440","Rhode Island",791896
+"G450","1950","South Carolina","450","South Carolina",2117027
+"G460","1950","South Dakota","460","South Dakota",652740
+"G470","1950","Tennessee","470","Tennessee",3291718
+"G480","1950","Texas","480","Texas",7711194
+"G490","1950","Utah","490","Utah",688862
+"G500","1950","Vermont","500","Vermont",377747
+"G510","1950","Virginia","510","Virginia",3318680
+"G530","1950","Washington","530","Washington",2378963
+"G540","1950","West Virginia","540","West Virginia",2005552
+"G550","1950","Wisconsin","550","Wisconsin",3434575
+"G560","1950","Wyoming","560","Wyoming",290529
+"G010","1960","Alabama","010","Alabama",3266740
+"G020","1960","Alaska","020","Alaska",226167
+"G040","1960","Arizona","040","Arizona",1302161
+"G050","1960","Arkansas","050","Arkansas",1786272
+"G060","1960","California","060","California",15717204
+"G080","1960","Colorado","080","Colorado",1753947
+"G090","1960","Connecticut","090","Connecticut",2535234
+"G100","1960","Delaware","100","Delaware",446292
+"G110","1960","District Of Columbia","110","District of Columbia",763956
+"G120","1960","Florida","120","Florida",4951560
+"G130","1960","Georgia","130","Georgia",3943116
+"G150","1960","Hawaii","150","Hawaii",632772
+"G160","1960","Idaho","160","Idaho",667191
+"G170","1960","Illinois","170","Illinois",10081158
+"G180","1960","Indiana","180","Indiana",4662498
+"G190","1960","Iowa","190","Iowa",2757537
+"G200","1960","Kansas","200","Kansas",2178611
+"G210","1960","Kentucky","210","Kentucky",3038156
+"G220","1960","Louisiana","220","Louisianna",3257022
+"G230","1960","Maine","230","Maine",969265
+"G240","1960","Maryland","240","Maryland",3100689
+"G250","1960","Massachusetts","250","Massachusetts",5148578
+"G260","1960","Michigan","260","Michigan",7823194
+"G270","1960","Minnesota","270","Minnesota",3413864
+"G280","1960","Mississippi","280","Mississippi",2178141
+"G290","1960","Missouri","290","Missouri",4319813
+"G300","1960","Montana","300","Montana",674767
+"G310","1960","Nebraska","310","Nebraska",1411330
+"G320","1960","Nevada","320","Nevada",285278
+"G330","1960","New Hampshire","330","New Hampshire",606921
+"G340","1960","New Jersey","340","New Jersey",6066782
+"G350","1960","New Mexico","350","New Mexico",951023
+"G360","1960","New York","360","New York",16782304
+"G370","1960","North Carolina","370","North Carolina",4556155
+"G380","1960","North Dakota","380","North Dakota",632446
+"G390","1960","Ohio","390","Ohio",9706398
+"G400","1960","Oklahoma","400","Oklahoma",2328284
+"G410","1960","Oregon","410","Oregon",1768687
+"G420","1960","Pennsylvania","420","Pennsylvania",11319366
+"G440","1960","Rhode Island","440","Rhode Island",859488
+"G450","1960","South Carolina","450","South Carolina",2382594
+"G460","1960","South Dakota","460","South Dakota",680514
+"G470","1960","Tennessee","470","Tennessee",3567089
+"G480","1960","Texas","480","Texas",9579678
+"G490","1960","Utah","490","Utah",890627
+"G500","1960","Vermont","500","Vermont",389881
+"G510","1960","Virginia","510","Virginia",3966949
+"G530","1960","Washington","530","Washington",2853214
+"G540","1960","West Virginia","540","West Virginia",1860421
+"G550","1960","Wisconsin","550","Wisconsin",3951777
+"G560","1960","Wyoming","560","Wyoming",330066
+"G010","1970","Alabama","01","Alabama",3444165
+"G020","1970","Alaska","02","Alaska",300382
+"G040","1970","Arizona","04","Arizona",1770900
+"G050","1970","Arkansas","05","Arkansas",1923295
+"G060","1970","California","06","California",19953134
+"G080","1970","Colorado","08","Colorado",2207259
+"G090","1970","Connecticut","09","Connecticut",3031709
+"G100","1970","Delaware","10","Delaware",548104
+"G110","1970","District Of Columbia","11","District Of Columbia",756510
+"G120","1970","Florida","12","Florida",6789443
+"G130","1970","Georgia","13","Georgia",4589575
+"G150","1970","Hawaii","15","Hawaii",768561
+"G160","1970","Idaho","16","Idaho",712567
+"G170","1970","Illinois","17","Illinois",11113976
+"G180","1970","Indiana","18","Indiana",5193669
+"G190","1970","Iowa","19","Iowa",2824376
+"G200","1970","Kansas","20","Kansas",2246578
+"G210","1970","Kentucky","21","Kentucky",3218706
+"G220","1970","Louisiana","22","Louisiana",3641306
+"G230","1970","Maine","23","Maine",992048
+"G240","1970","Maryland","24","Maryland",3922399
+"G250","1970","Massachusetts","25","Massachusetts",5689170
+"G260","1970","Michigan","26","Michigan",8875083
+"G270","1970","Minnesota","27","Minnesota",3804971
+"G280","1970","Mississippi","28","Mississippi",2216912
+"G290","1970","Missouri","29","Missouri",4676501
+"G300","1970","Montana","30","Montana",694409
+"G310","1970","Nebraska","31","Nebraska",1483493
+"G320","1970","Nevada","32","Nevada",488738
+"G330","1970","New Hampshire","33","New Hampshire",737681
+"G340","1970","New Jersey","34","New Jersey",7168164
+"G350","1970","New Mexico","35","New Mexico",1016000
+"G360","1970","New York","36","New York",18236967
+"G370","1970","North Carolina","37","North Carolina",5082059
+"G380","1970","North Dakota","38","North Dakota",617761
+"G390","1970","Ohio","39","Ohio",10652017
+"G400","1970","Oklahoma","40","Oklahoma",2559229
+"G410","1970","Oregon","41","Oregon",2091385
+"G420","1970","Pennsylvania","42","Pennsylvania",11793909
+"G440","1970","Rhode Island","44","Rhode Island",946725
+"G450","1970","South Carolina","45","South Carolina",2590516
+"G460","1970","South Dakota","46","South Dakota",665507
+"G470","1970","Tennessee","47","Tennessee",3923687
+"G480","1970","Texas","48","Texas",11196730
+"G490","1970","Utah","49","Utah",1059273
+"G500","1970","Vermont","50","Vermont",444330
+"G510","1970","Virginia","51","Virginia",4648494
+"G530","1970","Washington","53","Washington",3409169
+"G540","1970","West Virginia","54","West Virginia",1744237
+"G550","1970","Wisconsin","55","Wisconsin",4417731
+"G560","1970","Wyoming","56","Wyoming",332416
+"G010","1980","Alabama","01","ALABAMA",3893888
+"G020","1980","Alaska","02","ALASKA",401851
+"G040","1980","Arizona","04","ARIZONA",2718215
+"G050","1980","Arkansas","05","ARKANSAS",2286435
+"G060","1980","California","06","CALIFORNIA",23667902
+"G080","1980","Colorado","08","COLORADO",2889964
+"G090","1980","Connecticut","09","CONNECTICUT",3107576
+"G100","1980","Delaware","10","DELAWARE",594338
+"G110","1980","District Of Columbia","11","DISTRICT OF COLUMBIA",638333
+"G120","1980","Florida","12","FLORIDA",9746324
+"G130","1980","Georgia","13","GEORGIA",5463105
+"G150","1980","Hawaii","15","HAWAII",964691
+"G160","1980","Idaho","16","IDAHO",943935
+"G170","1980","Illinois","17","ILLINOIS",11426518
+"G180","1980","Indiana","18","INDIANA",5490224
+"G190","1980","Iowa","19","IOWA",2913808
+"G200","1980","Kansas","20","KANSAS",2363679
+"G210","1980","Kentucky","21","KENTUCKY",3660777
+"G220","1980","Louisiana","22","LOUISIANA",4205900
+"G230","1980","Maine","23","MAINE",1124660
+"G240","1980","Maryland","24","MARYLAND",4216975
+"G250","1980","Massachusetts","25","MASSACHUSETTS",5737037
+"G260","1980","Michigan","26","MICHIGAN",9262078
+"G270","1980","Minnesota","27","MINNESOTA",4075970
+"G280","1980","Mississippi","28","MISSISSIPPI",2520638
+"G290","1980","Missouri","29","MISSOURI",4916686
+"G300","1980","Montana","30","MONTANA",786690
+"G310","1980","Nebraska","31","NEBRASKA",1569825
+"G320","1980","Nevada","32","NEVADA",800493
+"G330","1980","New Hampshire","33","NEW HAMPSHIRE",920610
+"G340","1980","New Jersey","34","NEW JERSEY",7364823
+"G350","1980","New Mexico","35","NEW MEXICO",1302894
+"G360","1980","New York","36","NEW YORK",17558072
+"G370","1980","North Carolina","37","NORTH CAROLINA",5881766
+"G380","1980","North Dakota","38","NORTH DAKOTA",652717
+"G390","1980","Ohio","39","OHIO",10797630
+"G400","1980","Oklahoma","40","OKLAHOMA",3025290
+"G410","1980","Oregon","41","OREGON",2633105
+"G420","1980","Pennsylvania","42","PENNSYLVANIA",11863895
+"G440","1980","Rhode Island","44","RHODE ISLAND",947154
+"G450","1980","South Carolina","45","SOUTH CAROLINA",3121820
+"G460","1980","South Dakota","46","SOUTH DAKOTA",690768
+"G470","1980","Tennessee","47","TENNESSEE",4591120
+"G480","1980","Texas","48","TEXAS",14229191
+"G490","1980","Utah","49","UTAH",1461037
+"G500","1980","Vermont","50","VERMONT",511456
+"G510","1980","Virginia","51","VIRGINIA",5346818
+"G530","1980","Washington","53","WASHINGTON",4132156
+"G540","1980","West Virginia","54","WEST VIRGINIA",1949644
+"G550","1980","Wisconsin","55","WISCONSIN",4705767
+"G560","1980","Wyoming","56","WYOMING",469557
+"G010","1990","Alabama","01","Alabama",4040587
+"G020","1990","Alaska","02","Alaska",550043
+"G040","1990","Arizona","04","Arizona",3665228
+"G050","1990","Arkansas","05","Arkansas",2350725
+"G060","1990","California","06","California",29760021
+"G080","1990","Colorado","08","Colorado",3294394
+"G090","1990","Connecticut","09","Connecticut",3287116
+"G100","1990","Delaware","10","Delaware",666168
+"G110","1990","District Of Columbia","11","District of Columbia",606900
+"G120","1990","Florida","12","Florida",12937926
+"G130","1990","Georgia","13","Georgia",6478216
+"G150","1990","Hawaii","15","Hawaii",1108229
+"G160","1990","Idaho","16","Idaho",1006749
+"G170","1990","Illinois","17","Illinois",11430602
+"G180","1990","Indiana","18","Indiana",5544159
+"G190","1990","Iowa","19","Iowa",2776755
+"G200","1990","Kansas","20","Kansas",2477574
+"G210","1990","Kentucky","21","Kentucky",3685296
+"G220","1990","Louisiana","22","Louisiana",4219973
+"G230","1990","Maine","23","Maine",1227928
+"G240","1990","Maryland","24","Maryland",4781468
+"G250","1990","Massachusetts","25","Massachusetts",6016425
+"G260","1990","Michigan","26","Michigan",9295297
+"G270","1990","Minnesota","27","Minnesota",4375099
+"G280","1990","Mississippi","28","Mississippi",2573216
+"G290","1990","Missouri","29","Missouri",5117073
+"G300","1990","Montana","30","Montana",799065
+"G310","1990","Nebraska","31","Nebraska",1578385
+"G320","1990","Nevada","32","Nevada",1201833
+"G330","1990","New Hampshire","33","New Hampshire",1109252
+"G340","1990","New Jersey","34","New Jersey",7730188
+"G350","1990","New Mexico","35","New Mexico",1515069
+"G360","1990","New York","36","New York",17990455
+"G370","1990","North Carolina","37","North Carolina",6628637
+"G380","1990","North Dakota","38","North Dakota",638800
+"G390","1990","Ohio","39","Ohio",10847115
+"G400","1990","Oklahoma","40","Oklahoma",3145585
+"G410","1990","Oregon","41","Oregon",2842321
+"G420","1990","Pennsylvania","42","Pennsylvania",11881643
+"G440","1990","Rhode Island","44","Rhode Island",1003464
+"G450","1990","South Carolina","45","South Carolina",3486703
+"G460","1990","South Dakota","46","South Dakota",696004
+"G470","1990","Tennessee","47","Tennessee",4877185
+"G480","1990","Texas","48","Texas",16986510
+"G490","1990","Utah","49","Utah",1722850
+"G500","1990","Vermont","50","Vermont",562758
+"G510","1990","Virginia","51","Virginia",6187358
+"G530","1990","Washington","53","Washington",4866692
+"G540","1990","West Virginia","54","West Virginia",1793477
+"G550","1990","Wisconsin","55","Wisconsin",4891769
+"G560","1990","Wyoming","56","Wyoming",453588
+"G010","2000","Alabama","01","Alabama",4447100
+"G020","2000","Alaska","02","Alaska",626932
+"G040","2000","Arizona","04","Arizona",5130632
+"G050","2000","Arkansas","05","Arkansas",2673400
+"G060","2000","California","06","California",33871648
+"G080","2000","Colorado","08","Colorado",4301261
+"G090","2000","Connecticut","09","Connecticut",3405565
+"G100","2000","Delaware","10","Delaware",783600
+"G110","2000","District Of Columbia","11","District of Columbia",572059
+"G120","2000","Florida","12","Florida",15982378
+"G130","2000","Georgia","13","Georgia",8186453
+"G150","2000","Hawaii","15","Hawaii",1211537
+"G160","2000","Idaho","16","Idaho",1293953
+"G170","2000","Illinois","17","Illinois",12419293
+"G180","2000","Indiana","18","Indiana",6080485
+"G190","2000","Iowa","19","Iowa",2926324
+"G200","2000","Kansas","20","Kansas",2688418
+"G210","2000","Kentucky","21","Kentucky",4041769
+"G220","2000","Louisiana","22","Louisiana",4468976
+"G230","2000","Maine","23","Maine",1274923
+"G240","2000","Maryland","24","Maryland",5296486
+"G250","2000","Massachusetts","25","Massachusetts",6349097
+"G260","2000","Michigan","26","Michigan",9938444
+"G270","2000","Minnesota","27","Minnesota",4919479
+"G280","2000","Mississippi","28","Mississippi",2844658
+"G290","2000","Missouri","29","Missouri",5595211
+"G300","2000","Montana","30","Montana",902195
+"G310","2000","Nebraska","31","Nebraska",1711263
+"G320","2000","Nevada","32","Nevada",1998257
+"G330","2000","New Hampshire","33","New Hampshire",1235786
+"G340","2000","New Jersey","34","New Jersey",8414350
+"G350","2000","New Mexico","35","New Mexico",1819046
+"G360","2000","New York","36","New York",18976457
+"G370","2000","North Carolina","37","North Carolina",8049313
+"G380","2000","North Dakota","38","North Dakota",642200
+"G390","2000","Ohio","39","Ohio",11353140
+"G400","2000","Oklahoma","40","Oklahoma",3450654
+"G410","2000","Oregon","41","Oregon",3421399
+"G420","2000","Pennsylvania","42","Pennsylvania",12281054
+"G440","2000","Rhode Island","44","Rhode Island",1048319
+"G450","2000","South Carolina","45","South Carolina",4012012
+"G460","2000","South Dakota","46","South Dakota",754844
+"G470","2000","Tennessee","47","Tennessee",5689283
+"G480","2000","Texas","48","Texas",20851820
+"G490","2000","Utah","49","Utah",2233169
+"G500","2000","Vermont","50","Vermont",608827
+"G510","2000","Virginia","51","Virginia",7078515
+"G530","2000","Washington","53","Washington",5894121
+"G540","2000","West Virginia","54","West Virginia",1808344
+"G550","2000","Wisconsin","55","Wisconsin",5363675
+"G560","2000","Wyoming","56","Wyoming",493782
+"G010","2010","Alabama","01","Alabama",4779736
+"G020","2010","Alaska","02","Alaska",710231
+"G040","2010","Arizona","04","Arizona",6392017
+"G050","2010","Arkansas","05","Arkansas",2915918
+"G060","2010","California","06","California",37253956
+"G080","2010","Colorado","08","Colorado",5029196
+"G090","2010","Connecticut","09","Connecticut",3574097
+"G100","2010","Delaware","10","Delaware",897934
+"G110","2010","District Of Columbia","11","District of Columbia",601723
+"G120","2010","Florida","12","Florida",18801310
+"G130","2010","Georgia","13","Georgia",9687653
+"G150","2010","Hawaii","15","Hawaii",1360301
+"G160","2010","Idaho","16","Idaho",1567582
+"G170","2010","Illinois","17","Illinois",12830632
+"G180","2010","Indiana","18","Indiana",6483802
+"G190","2010","Iowa","19","Iowa",3046355
+"G200","2010","Kansas","20","Kansas",2853118
+"G210","2010","Kentucky","21","Kentucky",4339367
+"G220","2010","Louisiana","22","Louisiana",4533372
+"G230","2010","Maine","23","Maine",1328361
+"G240","2010","Maryland","24","Maryland",5773552
+"G250","2010","Massachusetts","25","Massachusetts",6547629
+"G260","2010","Michigan","26","Michigan",9883640
+"G270","2010","Minnesota","27","Minnesota",5303925
+"G280","2010","Mississippi","28","Mississippi",2967297
+"G290","2010","Missouri","29","Missouri",5988927
+"G300","2010","Montana","30","Montana",989415
+"G310","2010","Nebraska","31","Nebraska",1826341
+"G320","2010","Nevada","32","Nevada",2700551
+"G330","2010","New Hampshire","33","New Hampshire",1316470
+"G340","2010","New Jersey","34","New Jersey",8791894
+"G350","2010","New Mexico","35","New Mexico",2059179
+"G360","2010","New York","36","New York",19378102
+"G370","2010","North Carolina","37","North Carolina",9535483
+"G380","2010","North Dakota","38","North Dakota",672591
+"G390","2010","Ohio","39","Ohio",11536504
+"G400","2010","Oklahoma","40","Oklahoma",3751351
+"G410","2010","Oregon","41","Oregon",3831074
+"G420","2010","Pennsylvania","42","Pennsylvania",12702379
+"G440","2010","Rhode Island","44","Rhode Island",1052567
+"G450","2010","South Carolina","45","South Carolina",4625364
+"G460","2010","South Dakota","46","South Dakota",814180
+"G470","2010","Tennessee","47","Tennessee",6346105
+"G480","2010","Texas","48","Texas",25145561
+"G490","2010","Utah","49","Utah",2763885
+"G500","2010","Vermont","50","Vermont",625741
+"G510","2010","Virginia","51","Virginia",8001024
+"G530","2010","Washington","53","Washington",6724540
+"G540","2010","West Virginia","54","West Virginia",1852994
+"G550","2010","Wisconsin","55","Wisconsin",5686986
+"G560","2010","Wyoming","56","Wyoming",563626
+"G720","2010","Puerto Rico","72","Puerto Rico",3725789

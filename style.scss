@@ -19,8 +19,8 @@ html {
 
 body {
 	background: $white;
-  font: 18px/1.4 $helvetica;
-  color: $darkGray;
+  font: 18px/1.4 $sourcesans;
+  color: #3f3c30;
 }
 
 .container {
@@ -31,7 +31,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
+  font-family: $sourcesans;
   color: $darkerGray;
   font-weight: bold;
   
@@ -115,6 +115,11 @@ img {
   color: $gray;
 }
 
+.meta {
+  color: $gray;
+  font-size: .8em;
+}
+
 // Specify the color of the selection
 ::-moz-selection {
   color: $black;
@@ -189,7 +194,7 @@ img {
   margin: 0;
   color: $darkGray;
   cursor: pointer;
-  font-family: $helveticaNeue; 
+  font-family: $sourcesans; 
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
@@ -208,7 +213,7 @@ img {
 nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue; 
+  font-family: $sourcesans; 
   font-size: 18px;
   
   @include mobile {
