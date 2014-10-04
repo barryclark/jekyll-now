@@ -17,33 +17,33 @@ avatar: http://web.stanford.edu/~bergsdav/stanfordlogo.jpg
 
 # Includes an icon in the footer for each username you enter
 footer-links:
-  dribbble: 
-  email: 
-  facebook: 
-  flickr: 
+  dribbble:
+  email: jheppler@stanford.edu
+  facebook:
+  flickr:
   github: stanford-history/stanford-history.github.io
-  instagram: 
-  linkedin: 
-  pinterest: 
+  instagram:
+  linkedin:
+  pinterest:
   rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
   twitter: jaheppler
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
 
 # Your disqus shortname, entering this will enable commenting on posts
-disqus: 
+disqus:
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics: 
+google_analytics: UA-54940848-1
 
 # Your website URL
 # Used for Sitemap.xml and your RSS feed
-url: 
+url:
 
-# If you're hosting your site at a Project repository on GitHub pages 
+# If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
 # and NOT your User repository (http://yourusername.github.io)
 # then add in the baseurl here, like this: "/repository-name"
-baseurl: ""
+baseurl: "http://stanford-history.github.io"
 
 #
 # !! You don't need to change any of the configuration flags below !!
