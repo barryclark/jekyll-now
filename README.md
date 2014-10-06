@@ -23,6 +23,16 @@ If you don't have Jekyll already installed, you will need to go ahead and do tha
 $ gem install jekyll
 ```
 
+#### Verify your Jekyll version
+
+It's important to also check your version of Jekyll since this project uses Native Sass which
+is [only supported by 2.0+](http://jekyllrb.com/news/2014/05/06/jekyll-turns-2-0-0/).
+
+```
+$ jekyll -v
+# This should be jekyll 2.0.0 or later
+```
+
 ### Fork, then clone
 
 Fork the repo, and then clone it so you've got the code locally.
