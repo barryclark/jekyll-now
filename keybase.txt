@@ -1,0 +1,71 @@
+==================================================================
+https://keybase.io/oskopek
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://oskopek.github.io
+  * I am oskopek (https://keybase.io/oskopek) on keybase.
+  * I have a public key with fingerprint 441A F1CB 21AB ED0F 3828  5CC7 0D75 12A1 6E94 4B7F
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "441af1cb21abed0f38285cc70d7512a16e944b7f",
+            "host": "keybase.io",
+            "key_id": "0d7512a16e944b7f",
+            "uid": "17091444649c857559e9ef420da26700",
+            "username": "oskopek"
+        },
+        "service": {
+            "hostname": "oskopek.github.io",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1412691096,
+    "expire_in": 157680000,
+    "prev": "b420c25fdb88ac55474ff2d41b21ca792560b2a34db64a35d2f4b8c0f1fdd8a6",
+    "seqno": 4,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v1.1.2
+Comment: https://keybase.io/crypto
+
+yML4AnicO8LLzMDFyFsqtDBvinc94+kD30oZQoy/zKhWSspPqVSyqlbKTgVTaZl5
+6alFBUWZeSVKVkomJoaJaYbJSUaGiUmpKQZpxhZGFqbJyeYGKeamhkaJhmapliYm
+SeZpSjpKGfnFIB1AY5ISi1P1MvOBYkBOfGYKUBSL+lKwhKG5gaWhiYmJmYllsoWp
+uampZaplapqJkUFKopGZuYEBSGFxalFeYm4qUHV+cXZ+QWq2Uq2OElCwLDM5FeRk
+kM2oCvTSM0sySpMgjigoyi/JT87PAUpnlJQUFFuBtJdUFoDUl6cmxUNNik/KzEsB
+eh6ooyy1qDgzP0/JyhCoMrkkE2S0oYmhkZmloYGlmY5SakVBZlFqfCZIham5mYUB
+EIDsSS0DGpkEdHyykWlaSpKFRWKyqamJuUlamlGKiSEwEJMTzS2NTM0MkowSjU1S
+ksxMEo1NU4zSTJIskg3SDNNSUiwSzZRAfivMy1eyMgE6MzEdaGRxZnpeYklpUapS
+7aGDMSwMjFwMbKxMoOhj4OIUgEVqzTIBhpa+lzPmFZ0UOXqcJeyFw4XiJ52HF6+b
+2xjnt+LH5K2ctpz/ngUvmPY7QjTSMlHvzs/Edrk1opp6zg88DEsvVRY/XGSZpj2j
+3PpB6Jq35t9Ub+Un6jQ8ib9ic2vV3JDphxMimdmtEg1+te3Zy++yosU86I//u93G
+P7TX8Ng6dnfHrnfZEP5i+aPShwVKaQsPT9EXr5Ct8y6NnOvucHGrdOr/SNNQDyO+
++Dlfer6aSMocevXuUIJgvGeVeojR7dUPTgnX7FZ3urRSivu2ZtnjGIXyoxceJffv
+s96+2j5ByyAk4k7yd5u3H0KeXflwftZnv9xopb/r76zsZj+2tfxa/GeTGdYXK1/t
+vMd1Yr1+UujvxKr+x6ZcC2ZMOhUz53nr1qrlRqs3pzFbLteM+1ezQYKlKKR+zyTr
+MLETomJ7G98+FzBeuWGxv/kKQZ+rrxqW3nvg7OPwMbysJ3aH3oQlH/4U/n255UVq
+RuW7pc/fO9cUshpXJ8U2T4hNF7llvJdn+9WXJh9/ril8qP5gYbXZpSOlW7gYxCM6
+Zbaevf+ab2OdgydfeamJ9/tZ//d8f14vUrRB5nSj/Im1r8uzdKoMTk9+ZXzyok3C
+z6ub3+3L1TVx35u0eMrqkGCRrl9X1kxoC064ee3jBeHbetdd+0/IHPStCTDWTRYJ
+2MFuJBxuIfFo0eLIY8fylf8sYNX1uKJlub0653/ctgv3jM4w5gAAmC+aOA==
+=9kuk
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/oskopek
+
+==================================================================
+
