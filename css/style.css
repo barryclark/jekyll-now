@@ -106,7 +106,7 @@ a:hover {
 
 .background {
    /* Delete background class from <body> for a vanilla style */
-   background: url(../images/background.jpg) top center no-repeat;
+   background: url(http://pixelpaper.org/ixd/amber_wallpaper.jpg) top center no-repeat;
 }
 
 img.avatar {
