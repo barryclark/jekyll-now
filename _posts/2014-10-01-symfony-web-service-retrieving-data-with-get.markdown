@@ -26,7 +26,7 @@ _NOTE: The following recommendations come from the [Internet Engineering Task Fo
 
 #### Building up the request
 
-We will start by building-up the request, which is sent from the client to the server. As we are retrieving a resource collection (user's logs), we will choose GET as the HTTP method. We will also need to specify the address or URI to that collection.
+We will start by building-up the request, which is sent from the client to the server. As we are retrieving a resource collection (user's logs), we will choose **GET** as the HTTP method. We will also need to specify the address or URI to that collection.
 
 Find below a list of the fields that need to be included in the request:
 
@@ -54,9 +54,9 @@ Find below a list of the fields that need to be included in the response:
 
 | Request Fields     | Values                                                  |
 |--------------------|---------------------------------------------------------|
-| **Status Code**    | 200 OK, 404 Not Found                                   |
+| **Status Code**    | 200 OK                                                  |
 | **Content-Type**   | application/json, application/problem+json              |
-| **Request Body**   | _Representation_ of a user resource including his logs  |
+| **Response Body**  | _Representation_ of a user resource including his logs  |
 
 If everything went OK, the response will end up looking something like this:
 
@@ -178,13 +178,44 @@ _NOTE: Since returning JSON is so common, Symfony has a shortcut: the **JsonResp
 
 - - -
 
-#### Handling Errors
+#### Handling Errors with application/problem+json
 
-At the moment of writing this article, there's no standard for how error responses should look like.
-In this case I included these fields: **type, title, and errors**. This is part of a potential standard
-called **API Problem**, or **Problem Details**. You can check the corresponding RFC document [here](https://tools.ietf.org/html/draft-nottingham-http-problem-07).
+If something went wrong in the server side, the response will look a little bit different. It can be that the application, the module or the user sent in the request is not found in our database. In that case the status code that we send back should be **404** (Not Found). We will still be sending some JSON-formatted data in the response body, but its Content-Type will be partialy different.
 
-It is important to know that this document may change in the future or be discarded entirely for something different. In my case, I'd rather choose to follow a draft like this, than nothing at all. By doing so, this web service will be at least consistent with some others distributed through the world wide web ;-)
+By sending back a Content-Type header of **application/problem+json** we will be telling the client that something went wrong in the server side. This is called the **media type** of the document and you can find all the official recognized types in the [Internet Assigned Numbers Authority](http://www.iana.org/assignments/media-types/media-types.xhtml)(IANA). Actually the **application/problem+json** isn't in this list because it's just a draft at the moment of writing this article.
+
+Find below a list of the fields that need to be included in the 404 Not Found response:
+
+| Request Fields     | Values                                                  |
+|--------------------|---------------------------------------------------------|
+| **Status Code**    | 404 Not Found                                           |
+| **Content-Type**   | application/problem+json                                |
+| **Response Body**  | Error information: type, title and error message.       |
+
+I built a specific function in the controller to handle the **404 Not Found Response**, which build up the response with its corresponding headers:
+
+{% highlight php startinline linenos %}
+// src/eLearningDashboard/WebserviceBundle/Controller/WebserviceController.php
+// ...
+
+private function handleResponseErrors(array $errors)
+{
+  $data = array(
+    'type' => 'not_found_error',
+    'title' => '404 Not Found',
+    'errors' => $errors
+  );
+  $response = new JsonResponse($data, 404);
+  $response->headers->set('Content-Type', 'application/problem+json');
+  return $response;
+}
+{% endhighlight %}
+
+- - -
+
+_NOTE: At the moment of writing this article, there's no standard for how error responses should look like. In this case I included these fields: **type, title, and errors**. This is part of a potential standard called **API Problem**, or **Problem Details**. You can check the corresponding RFC document [here](https://tools.ietf.org/html/draft-nottingham-http-problem-07).
+
+It is important to know that this document may change in the future or be discarded entirely for something different. However I'd rather choose to follow a draft like this, than nothing at all. By doing so, this web service will be at least consistent with some others distributed through the world wide web ;-)_
 
 - - -
 
@@ -192,3 +223,4 @@ It is important to know that this document may change in the future or be discar
 
 * [RFC 2616 - Status Code Definitions](http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html)
 * [API Problem](https://tools.ietf.org/html/draft-nottingham-http-problem-07)
+* [RESTful APIs in the Real World Episode 1 | Knp University](http://knpuniversity.com/screencast/rest)
