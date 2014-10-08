@@ -213,9 +213,9 @@ private function handleResponseErrors(array $errors)
 
 - - -
 
-_NOTE: At the moment of writing this article, there's no standard for how error responses should look like. In this case I included these fields: **type, title, and errors**. This is part of a potential standard called **API Problem**, or **Problem Details**. You can check the corresponding RFC document [here](https://tools.ietf.org/html/draft-nottingham-http-problem-07).
+_NOTE: At the moment of writing this article, there's no standard for how error responses should look like. In this case I included these fields: **type, title, and errors**. This is part of a potential standard called **API Problem**, or **Problem Details**. You can check the corresponding RFC document [here](https://tools.ietf.org/html/draft-nottingham-http-problem-07)._
 
-It is important to know that this document may change in the future or be discarded entirely for something different. However I'd rather choose to follow a draft like this, than nothing at all. By doing so, this web service will be at least consistent with some others distributed through the world wide web ;-)_
+_It is important to know that this document may change in the future or be discarded entirely for something different. However I'd rather choose to follow a draft like this, than nothing at all. By doing so, this web service will be at least consistent with some others distributed through the world wide web ;-)_
 
 - - -
 
@@ -223,4 +223,4 @@ It is important to know that this document may change in the future or be discar
 
 * [RFC 2616 - Status Code Definitions](http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html)
 * [API Problem](https://tools.ietf.org/html/draft-nottingham-http-problem-07)
-* [RESTful APIs in the Real World Episode 1 | Knp University](http://knpuniversity.com/screencast/rest)
+* [RESTful APIs in the Real World Episode 1 - Knp University](http://knpuniversity.com/screencast/rest)
