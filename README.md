@@ -48,8 +48,8 @@ Edit `/_posts/2014-3-3-Hello-World.md` to publish your first blog post. This [Ma
 
 ## Local Development
 
-1. Clone down your fork `git clone git@github.com:yourusername/yourusername.github.io.git`
-2. Install Jekyll and the same plug-ins as GitHub Pages `gem install github-pages`
+1. Install Jekyll and plug-ins in one fell swoop. `gem install github-pages` This mirrors the plug-ins used by GitHub Pages on your local machine including Jekyll, Sass, Gemoji, etc.
+2. Clone down your fork `git clone git@github.com:yourusername/yourusername.github.io.git`
 3. Serve the site and watch for markup/sass changes `jekyll serve`
 4. View your website at http://0.0.0.0:4000
 5. Commit any changes and push everything to the master branch of your GitHub user repository. GitHub Pages will then rebuild and serve your website.
