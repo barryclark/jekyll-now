@@ -14,6 +14,16 @@ animated:           false
 show_related_posts: false
 show_post_footers:  false
 
+# Social icons
+show_social_icons: false
+github_username:
+twitter_username:
+google_plus_id:
+linkedin_username:
+bitcoin_url:
+paypal_url:
+flattr_button:
+
 # Build settings
 markdown:     kramdown
 permalink:    pretty
