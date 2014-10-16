@@ -9,8 +9,8 @@ Like, many people think it is the state of the hand and some take it as some mot
 
 There are many things that people think as gesture.
 
-  1. The number of fingers that are open can be taken as a gesture.
-  2. The change of the state of the hand from one position to other.
+  1. The number of fingers that are open can be taken as a gesture **Static Gesture**.
+  2. The change of the state of the hand from one position to other **Dynamic or Pattern Gesture**.
   3. The change of the hand. (eg. open hand --> closed hand will give a **grip** gesture)
 
 I have worked on the first two and will be explaining them here.
