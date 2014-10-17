@@ -1,4 +1,4 @@
-/*   
+/*
 Project: Hello World Personal Page
 Project URI: http://timpotter.github.io
 Author: Tim Potter
@@ -13,11 +13,11 @@ Author URI: http://littlethunder.co
   margin: 0;
 }
 
-*, 
-*:before, 
+*,
+*:before,
 *:after {
-  -moz-box-sizing: border-box; 
-  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -50,7 +50,7 @@ p {
   line-height: 1.75em;
 }
 
-.about p:nth-of-type(1) { 
+.about p:nth-of-type(1) {
   font-size: 1.5em; /* 24/16 */
   line-height: 1.5em;
 }
@@ -106,7 +106,7 @@ a:hover {
 
 .background {
    /* Delete background class from <body> for a vanilla style */
-   background: url(https://farm4.staticflickr.com/3955/15308379249_cd5c3a6124_o.jpg) top left; no-repeat;
+   background: url(.../images/github_background.jpg) top left; no-repeat;
 }
 
 img.avatar {
@@ -154,7 +154,7 @@ footer {
   .container {
     width: 90%;
     margin-top: 50px;
-    padding: 0 30px 30px; 
+    padding: 0 30px 30px;
   }
 
   h1 {
@@ -170,8 +170,8 @@ footer {
     text-align: left;
     padding-bottom: 15px;
   }
-  
-  .about p:nth-of-type(1) { 
+
+  .about p:nth-of-type(1) {
     font-size: 1.25em; /* 20/16 */
     text-align: center;
   }
