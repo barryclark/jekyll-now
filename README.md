@@ -96,7 +96,7 @@ If you'd like me to let you know when I release a new theme, just [drop me your 
 
 ## Other forkable themes
 
-You can use the [Quick Start](https://github.com/barryclark/jekyll-now#quick-start) workflow with other themes that are set up to be forked too! Here are some of  my favorites:
+You can use the [Quick Start](https://github.com/barryclark/jekyll-now#quick-start) workflow with other themes that are set up to be forked too! Here are some of my favorites:
 
 - [Hyde](https://github.com/poole/hyde) by MDO
 - [Lanyon](https://github.com/poole/lanyon) by MDO
@@ -107,7 +107,7 @@ You can use the [Quick Start](https://github.com/barryclark/jekyll-now#quick-sta
 
 ## Credits
 
-- [Jekyll](https://github.com/jekyll/jekyll) - Thanks to it's creators, contributors and maintainers.
+- [Jekyll](https://github.com/jekyll/jekyll) - Thanks to its creators, contributors and maintainers.
 - [SVG icons](https://github.com/neilorangepeel/Free-Social-Icons) - Thanks, Neil Orange Peel. They're beautiful. 
 - [Solarized Light Pygments](https://gist.github.com/edwardhotchkiss/2005058) - Thanks, Edward.
 - [Joel Glovier](http://joelglovier.com/writing/) - Great Jekyll articles. I used Joel's feed.xml in this repository.
