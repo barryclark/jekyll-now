@@ -12,7 +12,13 @@ categories:
 
 If you aren't already familiar with [Ansible](http://www.ansible.com), then I suggest you add it to your list of things to explore. Simply put, Ansible is an IT automation framework. But in my opinion, that description doesn't really elaborate properly on it's true power. Sure, there have been other automation platforms in the past, but they always seemed so crufty. I didn't love using them.
 
-Where Ansible really shines is the design of it's core construct; the playbook. A playbook is just that, an idempotent list of ordered tasks to perform in a human readable format. Ansible makes it easy, and even fun to develop plays, roles and modules to automate your infrastructure. The playbook concept makes it easy to share the play with collegues and have meaningful discussions about the tasks. You can discuss the play, iterate, and ensure that the action being taken is the correct one.
+Where Ansible really shines is the design of it's core construct; the playbook. A playbook is just that, an idempotent list of ordered tasks in a human readable format. Ansible makes it easy, and even fun to develop plays, roles and modules to automate your infrastructure.
+
+It's key to note, that a playbook is more than just automation, the playbook concept makes it easy to share the play with colleges and have meaningful discussions about the tasks. You can discuss the play, iterate, and ensure that the action being taken is the correct one.
+
+## Github ##
+
+Ansible playbooks match very nicely with Git and Github. In fact, thats the defacto way to share playbooks and the only way to add roles to Ansible Galaxy. Github is essential for using Ansible. The benefit to this arrangement is that each play can go under strict revision control, changes can be discussed, submitted and finally merged via the constructs that Git and Github provide.
 
 ## Database Management ##
 
@@ -22,11 +28,7 @@ DBA's, DevOps, Developers and others can use Ansible playbooks to aid them in de
 
 ## Building playbooks ##
 
-Step 1 is to start building playbooks. Playbooks are constructed from one or more roles. Roles can use modules. [See here](http://www.ansible.com/how-ansible-works) for a primer on Ansible and playbooks. I have created a couple of simple roles to help folks get started with either [MongoDB](https://galaxy.ansible.com/list#/roles/1955) or [TokuMX](https://galaxy.ansible.com/list#/roles/1890). You can use these to help bootstrap your playbooks. These roles are listed on Ansible Galaxy to help you get them installed into your playbooks properly. Here is a [short primer](https://galaxy.ansible.com/intro) on Ansible Galaxy. Use these components (along with modeules) to create playbooks that match your business needs.
-
-## Github ##
-
-Ansible playbooks match very nicely with Git and Github. In fact, thats the defacto way to share playbooks and the only way to add roles to Ansible Galaxy. Github is essential for using Ansible. The benefit to this arrangement is that each play can go under strict revision control, changes can be discussed, submitted and finally merged via the constructs that Git and Github provide.
+Step 1 is to start building playbooks. Playbooks are constructed from one or more roles. Roles can use modules. [See here](http://www.ansible.com/how-ansible-works) for a primer on Ansible and playbooks. I have created a couple of simple roles to help folks get started with either [MongoDB](https://galaxy.ansible.com/list#/roles/1955) or [TokuMX](https://galaxy.ansible.com/list#/roles/1890). You can use these to help bootstrap your playbooks. These roles are listed on Ansible Galaxy to help you get them installed into your playbooks properly. Here is a [short primer](https://galaxy.ansible.com/intro) on Ansible Galaxy. Use these components (along with modules) to create playbooks that match your business needs.
 
 ## A play ##
 
