@@ -24,7 +24,7 @@ Ansible playbooks match very nicely with Git and Github. In fact, thats the defa
 
 So what about using Ansible for Database Management is so appealing? Well if you currently use a DBaaS provider (like [ObjectRocket](http://www.objectrocket.com)) for your database back end, then not much. The provider may use Ansible, but that fact would be hidden from you. Rather, Ansible is for the folks that want to Do it Yourself on their own or cloud infrastructure.
 
-DBA's, DevOps, Developers and others can use Ansible playbooks to aid them in dealing with sometimes complex data backends. Indeed they can use Ansible playbooks to perform not just installation, but also upgrades, HA configurations, performance testing and benchmarking, maintenance windows, routine tasks, and scaling chores. In my mind, Ansible is the new Swiss Army Knife for Automating complex clusters.
+DBA's, DevOps, Developers and others can use Ansible playbooks to aid them in dealing with sometimes complex data backends. Indeed they can use Ansible playbooks to perform not just installation, but also upgrades, HA configurations, performance testing and benchmarking, maintenance windows, routine tasks, and scaling chores. In my mind, Ansible is the new Swiss Army Knife for automating complex clusters.
 
 ## Building playbooks ##
 
