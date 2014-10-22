@@ -30,6 +30,8 @@ DBA's, DevOps, Developers and others can use Ansible playbooks to aid them in de
 
 Step 1 is to start building playbooks. Playbooks are constructed from one or more roles. Roles can use modules. [See here](http://www.ansible.com/how-ansible-works) for a primer on Ansible and playbooks. I have created a couple of simple roles to help folks get started with either [MongoDB](https://galaxy.ansible.com/list#/roles/1955) or [TokuMX](https://galaxy.ansible.com/list#/roles/1890). You can use these to help bootstrap your playbooks. These roles are listed on Ansible Galaxy to help you get them installed into your playbooks properly. Here is a [short primer](https://galaxy.ansible.com/intro) on Ansible Galaxy. Use these components (along with modules) to create playbooks that match your business needs.
 
+[Roles](https://galaxy.ansible.com/list#/roles) exist for many database platforms including mySQL, PostgreSQL, MongoDB, TokuMX, Cassandra, and more. There are also a number of [modules](http://docs.ansible.com/list_of_database_modules.html) already developed for use.
+
 ## A play ##
 
 For example, here is a sample playbook that ensures the DB is running, ensures the DBA user is present, and installs a DBA management tool written in javascript to a known directory.
@@ -51,7 +53,7 @@ For example, here is a sample playbook that ensures the DB is running, ensures t
 
 ## Going Further ##
 
-More needs to be done. Roles and Modules are sparse for specific database management tasks are sparse. More work needs to be done to create best practice components that perform every day work. For instance, a backup module that allows you to specify cloud files or S3 for your dump. Or perhaps a MongoDB module that allows you to simply and predictably rebuild a slave, then make it master. Plays built with these components would be simple and powerful.
+More needs to be done. Roles and modules are sparse for specific database management tasks. More work needs to be done to create best practice components that perform every day work. For instance, a backup module that allows you to specify cloud files or S3 for your dump. Or perhaps a MongoDB module that allows you to simply and predictably rebuild a slave, then make it master. Plays built with these components would be simple and powerful.
 
 ## The future ##
 In the near future, I expect Ansible to become very popular with DBA and DevOps types as they struggle to wrangle cloud sprawl and deal with ever more complex environments. Ansible makes is easy to bundle work tasks into playbooks that are easy for people to understand and modify. This simplicty is the key, after all we need to focus on the task at hand, not the tools to perform the task.
