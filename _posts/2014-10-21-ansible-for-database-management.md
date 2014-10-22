@@ -6,6 +6,7 @@ categories:
     - database management
     - tokumx
     - mongodb
+    - postgresql
 ---
 
 ![v8]({{ site.baseurl }}images/v8.jpg)
