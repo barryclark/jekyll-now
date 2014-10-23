@@ -38,7 +38,6 @@ Find below a list of the fields that need to be included in the request:
 The GET request for this case will end up looking something like this:
 
 {% highlight bash %}
-# Request sent from the client to the server
 GET /webservice/1/logs/wonderful-user HTTP/1.1
 Host: elearning-dashboard.dev
 Accept: application/json, text/html
@@ -64,10 +63,9 @@ If everything went OK, the response will end up looking something like this:
 # Response sent from the server to the client
 HTTP/1.1 200 OK
 Content-Type: application/json
-Cache-Control: no-cache, private
 
 {
-  username: "wonderful-test-user",
+  username: "wonderful-user",
   logs: [
     { logged_at: "2014-01-01 00:00:00",
       status: "1",
@@ -101,53 +99,55 @@ The server endpoint to get the list of the user's logs will end up looking like 
 
 public function listAction($app_id, $username)
 {
-  $em = $this->getDoctrine()->getManager();
+    $em = $this->getDoctrine()->getManager();
 
-  $application = $em->getRepository('ApplicationBundle:Application')
-    ->findOneBy(array('id' => $app_id));
+    $application = $em->getRepository('ApplicationBundle:Application')
+        ->findOneBy(array('app_id' => $app_id));
 
-  if (!$application) {
-    $errors = array('Application not found');
-    return $this->handleResponseErrors($errors);
-
-  } else {
-    $modules = $em->getRepository('ApplicationBundle:Module')
-      ->findBy(array('application' => $application->getId()));
-
-    if (!$modules) {
-      $errors = array('No modules found for this application');
-      return $this->handleResponseErrors($errors);
-
+    if (!$application) {
+        $error_message = 'Application not found';
+        return $this->handleResponseErrors('not_found_error', '404 Not Found', $error_message, '404');
     } else {
-      $user = $em->getRepository('UserBundle:User')
-        ->findOneBy(array('username' => $username));
+        $modules = $em->getRepository('ApplicationBundle:Module')
+            ->findBy(array('application' => $application->getId()));
 
-      if (!$user) {
-        $errors = array('Username not found');
-        return $this->handleResponseErrors($errors);
+        if (!$modules) {
+            $error_message = 'No modules found for this application';
+            return $this->handleResponseErrors('not_found_error', '404 Not Found', $error_message, '404');
 
-      } else {
-        $logs = array();
-        foreach ($modules as $module) {
-          $log = $em->getRepository('UserBundle:Log')
-              ->findOneBy(array(
-                      'user' => $user->getId(),
-                      'module' => $module->getId()),
-                  array('tstmp' => 'DESC')
-              );
-          $logs[] = $log;
+        } else {
+            $user = $em->getRepository('UserBundle:User')
+                ->findOneBy(array('username' => $username));
+
+            if (!$user) {
+                $error_message = 'Username not found';
+                return $this->handleResponseErrors('not_found_error', '404 Not Found', $error_message, '404');
+            } else {
+                $logs = array();
+                foreach ($modules as $module) {
+                    $log = $em->getRepository('UserBundle:Log')
+                        ->findOneBy(array(
+                                'user' => $user->getId(),
+                                'module' => $module->getId()),
+                            array(
+                                'tstmp' => 'DESC'
+                            )
+                        );
+                    if ($log) {
+                        $logs[] = $log;
+                    }
+                }
+
+                $data = array('username' => $username, 'logs' => array());
+                foreach ($logs as $log) {
+                    $data['logs'][] = $this->serializeLog($log);
+                }
+
+                $response = new JsonResponse($data, 200);
+                return $response;
+            }
         }
-
-        $data = array('username' => $username, 'logs' => array());
-        foreach ($logs as $log) {
-            $data['logs'][] = $this->serializeLog($log);
-        }
-
-        $response = new JsonResponse($data, 200);
-        return $response;
-      }
     }
-  }
 }
 
 private function serializeLog(Log $log)
@@ -161,20 +161,18 @@ private function serializeLog(Log $log)
   );
 }
 
-private function handleResponseErrors(array $errors)
+private function handleResponseErrors($error_type, $error_title, $error_message, $error_code)
 {
-  $data = array(
-    'type' => 'not_found_error',
-    'title' => '404 Not Found',
-    'errors' => $errors
-  );
-  $response = new JsonResponse($data, 404);
-  $response->headers->set('Content-Type', 'application/problem+json');
-  return $response;
+    $data = array(
+        'type' => $error_type,
+        'title' => $error_title,
+        'errors' => $error_message
+    );
+    $response = new JsonResponse($data, $error_code);
+    $response->headers->set('Content-Type', 'application/problem+json');
+    return $response;
 }
 {% endhighlight %}
-
-_NOTE: Since returning JSON is so common, Symfony has a shortcut: the **JsonResponse** class. It takes care of running **json_encode** and setting the correct **Content-Type**._
 
 - - -
 
@@ -192,22 +190,22 @@ Find below a list of the fields that need to be included in the 404 Not Found re
 | **Content-Type**   | application/problem+json                                |
 | **Response Body**  | Error information: type, title and error message.       |
 
-I built a specific function in the controller to handle the **404 Not Found Response**, which build up the response with its corresponding headers:
+I built a specific function in the controller to handle errors, which build up the response with its corresponding headers:
 
 {% highlight php startinline linenos %}
 // src/eLearningDashboard/WebserviceBundle/Controller/WebserviceController.php
 // ...
 
-private function handleResponseErrors(array $errors)
+private function handleResponseErrors($error_type, $error_title, $error_message, $error_code)
 {
-  $data = array(
-    'type' => 'not_found_error',
-    'title' => '404 Not Found',
-    'errors' => $errors
-  );
-  $response = new JsonResponse($data, 404);
-  $response->headers->set('Content-Type', 'application/problem+json');
-  return $response;
+    $data = array(
+        'type' => $error_type,
+        'title' => $error_title,
+        'errors' => $error_message
+    );
+    $response = new JsonResponse($data, $error_code);
+    $response->headers->set('Content-Type', 'application/problem+json');
+    return $response;
 }
 {% endhighlight %}
 
