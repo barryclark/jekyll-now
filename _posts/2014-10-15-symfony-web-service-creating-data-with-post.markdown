@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Symfony Web Service: Creating Data with POST"
-date: October 23, 2014
+date: October 15, 2014
 tagline: "How to build a web service for an iOS app - Part 3"
 tags : [symfony, webservice]
 ---
