@@ -10,6 +10,8 @@ tags : [symfony, webservice]
 
 This article is part of a series related to one of the last projects that I have been working on: a **web wervice for an iOS eLearning iPad app**. So far there have been articles on: [Symfony Web Service: Introduction](http://www.miriamtocino.com/articles/symfony-web-service-introduction/) and [Symfony Web Service: Retrieving Data with GET](http://www.miriamtocino.com/articles/symfony-web-service-retrieving-data-with-get/).
 
+- - -
+
 As I already explained in the previous article, every time a user completes a test and submits his results, a **log** is sent to the web service, including information about the user and the _status_ of the corresponding module coming from the eLearning app.
 
 This article shows how I did it to **submit and create the user's logs** using POST.

@@ -8,7 +8,9 @@ tags : [symfony, webservice]
 
 ![Symfony Love Vagrant](http://miriamtocino.github.io/images/web-service-introduction.svg)
 
-_This article is the first one in a series related to one of the last projects that I have been working on: a **web wervice for an iOS eLearning iPad app**._
+This article is the first one in a series related to one of the last projects that I have been working on: a **web wervice for an iOS eLearning iPad app**.
+
+- - -
 
 The eLearning App is structured in several modules, each of them containing specific content to be studied by the user. At the end of each module there is a test to be completed. The eLearning App must communicate with the Web Service and be able to:
 
