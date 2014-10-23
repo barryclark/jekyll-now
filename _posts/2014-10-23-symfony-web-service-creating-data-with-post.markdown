@@ -8,8 +8,6 @@ tags : [symfony, webservice]
 
 ![Symfony Love Vagrant](http://miriamtocino.github.io/images/web-service-post.svg)
 
-_This article is part of a series related to one of the last projects that I have been working on: a **web wervice for an iOS eLearning iPad app**. So far there have been articles on: [Symfony Web Service: Introduction](http://www.miriamtocino.com/articles/symfony-web-service-introduction/) and [Symfony Web Service: Retrieving Data with GET](http://www.miriamtocino.com/articles/symfony-web-service-retrieving-data-with-get/)._
-
 As I already explained in the previous article, every time a user completes a test and submits his results, a **log** is sent to the web service, including information about the user and the _status_ of the corresponding module coming from the eLearning app.
 
 This article shows how I did it to **submit and create the user's logs** using POST.
@@ -188,6 +186,10 @@ To include Guzzle in your Symfony project go to the terminal and run:
 {% highlight bash %}
 $ composer require guzzle/guzzle ~3.7
 {% endhighlight %}
+
+- - -
+
+_This article is part of a series about how to build a **web wervice for an iOS eLearning iPad app**. So far there have been articles on: [Symfony Web Service: Introduction](http://www.miriamtocino.com/articles/symfony-web-service-introduction/) and [Symfony Web Service: Retrieving Data with GET](http://www.miriamtocino.com/articles/symfony-web-service-retrieving-data-with-get/)._
 
 - - -
 

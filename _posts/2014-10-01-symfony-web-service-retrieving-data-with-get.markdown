@@ -8,8 +8,6 @@ tags : [symfony, webservice]
 
 ![Symfony Love Vagrant](http://miriamtocino.github.io/images/web-service-get.svg)
 
-_This article is part of a series related to one of the last projects that I have been working on: a **web wervice for an iOS eLearning iPad app**. So far there have been articles on [Introduction Symfony Web Service](http://www.miriamtocino.com/articles/symfony-web-service-introduction/)._
-
 Every time a user completes a test and submits his results, a **log** is sent to the web service, including information about the user and the _status_ of the corresponding module coming from the eLearning app.
 
 This article shows how I did it to **retrieve a list of user's logs** for a specific application using GET.
@@ -214,6 +212,10 @@ private function handleResponseErrors($error_type, $error_title, $error_message,
 NOTE: At the moment of writing this article, there's no standard for how error responses should look like. In this case I included these fields: **type, title, and errors**. This is part of a potential standard called **API Problem**, or **Problem Details**. You can check the corresponding RFC document [here](https://tools.ietf.org/html/draft-nottingham-http-problem-07).
 
 It is important to know that this document may change in the future or be discarded entirely for something different. However I'd rather choose to follow a draft like this, than nothing at all. By doing so, this web service will be at least consistent with some others distributed through the world wide web ;-)
+
+- - -
+
+_This article is part of a series about how to build a **web wervice for an iOS eLearning iPad app**. So far there have been articles on [Introduction Symfony Web Service](http://www.miriamtocino.com/articles/symfony-web-service-introduction/)._
 
 - - -
 

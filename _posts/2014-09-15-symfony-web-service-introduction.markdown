@@ -8,8 +8,6 @@ tags : [symfony, webservice]
 
 ![Symfony Love Vagrant](http://miriamtocino.github.io/images/web-service-introduction.svg)
 
-_This article is the first one in a series related to one of the last projects that I have been working on: a **web wervice for an iOS eLearning iPad app**._
-
 The eLearning App is structured in several modules, each of them containing specific content to be studied by the user. At the end of each module there is a test to be completed. The eLearning App must communicate with the Web Service and be able to:
 
 * **SUBMIT** user results after each test is completed and save the data.
@@ -86,6 +84,10 @@ I am now working on these articles coming soon, so stay tuned!
 * **Symfony Web Service: Retrieving Data with GET** - Part 2
 * **Symfony Web Service: Creating Data with POST** - Part 3
 * **Symfony Web Service: Editing Data with PUT** - Part 4
+
+- - -
+
+_This article is the first one in a series about how to build a **web wervice for an iOS eLearning iPad app**._
 
 - - -
 
