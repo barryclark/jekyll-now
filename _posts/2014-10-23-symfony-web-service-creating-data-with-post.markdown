@@ -179,11 +179,9 @@ private function handleResponseErrors($error_type, $error_title, $error_message,
 }
 {% endhighlight %}
 
-_NOTE: Since returning JSON is so common, Symfony has a shortcut: the **JsonResponse** class. It takes care of running **json_encode** and setting the correct **Content-Type**._
-
 - - -
 
-_I discovered how to work with [Guzzle](http://guzzle3.readthedocs.org/) in [this tutorial](http://knpuniversity.com/screencast/rest) and fell in love with it. A simple library for making HTTP requests and receiving responses, very useful for quick testing purposes._
+I discovered how to work with [Guzzle](http://guzzle3.readthedocs.org/) in [this tutorial](http://knpuniversity.com/screencast/rest) and fell in love with it. A simple library for making HTTP requests and receiving responses, very useful for quick testing purposes.
 
 To include Guzzle in your Symfony project go to the terminal and run:
 
