@@ -394,90 +394,54 @@
 <text transform="matrix(1 0 0 1 338.376 53.0654)" enable-background="new    "><tspan x="0" y="0" font-family="'MarkerFelt-Wide'" font-size="9.1">Status</tspan><tspan x="0" y="10.92" font-family="'MarkerFelt-Wide'" font-size="9.1">Codes</tspan></text>
 <rect x="220.768" y="123.006" fill="none" width="72.358" height="15.296"/>
 <text transform="matrix(1 0 0 1 231.4668 130.5225)" font-family="'MarkerFelt-Wide'" font-size="9.1">WEB SERVICE</text>
+<polygon stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="115.063,101.979 
+	119.837,118.811 122.75,103.438 "/>
 <g>
-	<polygon fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
-		115.063,101.979 119.837,118.811 122.75,103.438 	"/>
-	<g>
-		
-			<rect x="107.502" y="96.702" transform="matrix(-0.9888 0.1493 -0.1493 -0.9888 253.7242 187.9608)" width="24.614" height="13.599"/>
-		
-			<rect x="104.224" y="99.884" transform="matrix(-0.9888 0.1492 -0.1492 -0.9888 252.9733 189.8525)" fill="none" width="30.286" height="9.058"/>
-		
-			<text transform="matrix(0.9888 -0.1492 0.1492 0.9888 112.7607 108.0889)" fill="#FFFFFF" font-family="'MarkerFelt-Wide'" font-size="8.6929">GET</text>
-	</g>
-	<polygon fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
-		46.024,101.979 50.798,118.811 53.712,103.438 	"/>
-	<g>
-		
-			<rect x="35.068" y="96.779" transform="matrix(-0.9888 0.1493 -0.1493 -0.9888 115.4653 198.4904)" width="30.429" height="13.6"/>
-		
-			<rect x="35.186" y="99.881" transform="matrix(-0.9888 0.1492 -0.1492 -0.9888 115.6738 200.1449)" fill="none" width="30.287" height="9.059"/>
-		
-			<text transform="matrix(0.9888 -0.1492 0.1492 0.9888 38.3066 108.9062)" fill="#FFFFFF" font-family="'MarkerFelt-Wide'" font-size="8.6929">PATCH</text>
-	</g>
-	<polygon fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
-		148.663,101.979 153.438,118.811 156.351,103.438 	"/>
-	<g>
-		
-			<rect x="141.103" y="96.7" transform="matrix(-0.9888 0.1493 -0.1493 -0.9888 320.553 182.9355)" width="24.615" height="13.599"/>
-		
-			<rect x="138.694" y="99.885" transform="matrix(-0.9888 0.1492 -0.1492 -0.9888 321.5324 184.7031)" fill="none" width="30.286" height="9.059"/>
-		
-			<text transform="matrix(0.9888 -0.1492 0.1492 0.9888 144.6523 108.4785)" fill="#FFFFFF" font-family="'MarkerFelt-Wide'" font-size="8.6929">POST</text>
-	</g>
-	<polygon fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
-		184.821,101.979 189.596,118.811 192.509,103.438 	"/>
-	<g>
-		
-			<rect x="177.26" y="96.699" transform="matrix(-0.9888 0.1493 -0.1493 -0.9888 392.4621 177.5357)" width="24.615" height="13.599"/>
-		
-			<rect x="174.852" y="99.886" transform="matrix(-0.9888 0.1492 -0.1492 -0.9888 393.4393 179.3212)" fill="none" width="30.286" height="9.058"/>
-		
-			<text transform="matrix(0.9888 -0.1492 0.1492 0.9888 183.2598 108.1084)" fill="#FFFFFF" font-family="'MarkerFelt-Wide'" font-size="8.6929">PUT</text>
-	</g>
+	
+		<rect x="107.502" y="96.702" transform="matrix(-0.9888 0.1493 -0.1493 -0.9888 253.7242 187.9608)" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" width="24.614" height="13.599"/>
+	
+		<rect x="104.224" y="99.884" transform="matrix(-0.9888 0.1492 -0.1492 -0.9888 252.9733 189.8525)" fill="none" width="30.286" height="9.058"/>
+	<text transform="matrix(0.9888 -0.1492 0.1492 0.9888 112.7607 108.0889)" font-family="'MarkerFelt-Wide'" font-size="8.6929">GET</text>
 </g>
+<polygon stroke="#000000" stroke-miterlimit="10" points="46.024,101.979 50.798,118.811 53.712,103.438 "/>
 <g>
-	<polygon fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
-		327.848,101.979 332.622,118.811 335.535,103.438 	"/>
-	<g>
-		
-			<rect x="320.287" y="96.694" transform="matrix(-0.9888 0.1493 -0.1493 -0.9888 676.9128 156.1725)" width="24.615" height="13.599"/>
-		
-			<rect x="317.009" y="99.889" transform="matrix(-0.9888 0.1492 -0.1492 -0.9888 676.166 158.1137)" fill="none" width="30.286" height="9.059"/>
-		
-			<text transform="matrix(0.9888 -0.1492 0.1492 0.9888 324.1709 108.2969)" fill="#FFFFFF" font-family="'MarkerFelt-Wide'" font-size="8.6929">405</text>
-	</g>
-	<polygon fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
-		459.463,101.979 464.238,118.811 467.151,103.438 	"/>
-	<g>
-		
-			<rect x="448.508" y="96.764" transform="matrix(-0.9888 0.1493 -0.1493 -0.9888 937.7104 136.737)" width="30.431" height="13.599"/>
-		
-			<rect x="448.624" y="99.891" transform="matrix(-0.9888 0.1492 -0.1492 -0.9888 937.9247 138.4652)" fill="none" width="30.286" height="9.059"/>
-		
-			<text transform="matrix(0.9888 -0.1492 0.1492 0.9888 455.7861 108.2969)" fill="#FFFFFF" font-family="'MarkerFelt-Wide'" font-size="8.6929">404</text>
-	</g>
-	<polygon fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
-		361.448,101.979 366.223,118.811 369.136,103.438 	"/>
-	<g>
-		
-			<rect x="353.888" y="96.69" transform="matrix(-0.9888 0.1493 -0.1493 -0.9888 743.7375 151.1505)" width="24.616" height="13.599"/>
-		
-			<rect x="351.478" y="99.891" transform="matrix(-0.9888 0.1492 -0.1492 -0.9888 744.7194 152.9611)" fill="none" width="30.286" height="9.058"/>
-		
-			<text transform="matrix(0.9888 -0.1492 0.1492 0.9888 358.6406 108.2969)" fill="#FFFFFF" font-family="'MarkerFelt-Wide'" font-size="8.6929">204</text>
-	</g>
-	<polygon fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
-		397.606,101.979 402.381,118.811 405.294,103.438 	"/>
-	<g>
-		
-			<rect x="390.045" y="96.689" transform="matrix(-0.9888 0.1493 -0.1493 -0.9888 815.646 145.7484)" width="24.615" height="13.599"/>
-		
-			<rect x="387.636" y="99.891" transform="matrix(-0.9888 0.1492 -0.1492 -0.9888 816.6296 147.5804)" fill="none" width="30.286" height="9.059"/>
-		
-			<text transform="matrix(0.9888 -0.1492 0.1492 0.9888 394.7988 108.2959)" fill="#FFFFFF" font-family="'MarkerFelt-Wide'" font-size="8.6929">201</text>
-	</g>
+	
+		<rect x="35.068" y="96.779" transform="matrix(-0.9888 0.1493 -0.1493 -0.9888 115.4653 198.4904)" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" width="30.429" height="13.6"/>
+	
+		<rect x="35.186" y="99.881" transform="matrix(-0.9888 0.1492 -0.1492 -0.9888 115.6738 200.1449)" fill="none" width="30.287" height="9.059"/>
+	<text transform="matrix(0.9888 -0.1492 0.1492 0.9888 38.3066 108.9062)" font-family="'MarkerFelt-Wide'" font-size="8.6929">PATCH</text>
 </g>
+<polygon stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="148.663,101.979 
+	153.438,118.811 156.351,103.438 "/>
+<rect x="141.103" y="96.7" transform="matrix(-0.9888 0.1493 -0.1493 -0.9888 320.553 182.9355)" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" width="24.615" height="13.599"/>
+<rect x="138.694" y="99.885" transform="matrix(-0.9888 0.1492 -0.1492 -0.9888 321.5324 184.7031)" fill="none" width="30.286" height="9.059"/>
+<text transform="matrix(0.9888 -0.1492 0.1492 0.9888 144.6523 108.4785)" font-family="'MarkerFelt-Wide'" font-size="8.6929">POST</text>
+<polygon stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="184.821,101.979 
+	189.596,118.811 192.509,103.438 "/>
+<rect x="177.26" y="96.699" transform="matrix(-0.9888 0.1493 -0.1493 -0.9888 392.4621 177.5357)" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" width="24.615" height="13.599"/>
+<rect x="174.852" y="99.886" transform="matrix(-0.9888 0.1492 -0.1492 -0.9888 393.4393 179.3212)" fill="none" width="30.286" height="9.058"/>
+<text transform="matrix(0.9888 -0.1492 0.1492 0.9888 183.2598 108.1084)" font-family="'MarkerFelt-Wide'" font-size="8.6929">PUT</text>
+<polygon stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="327.848,101.979 
+	332.622,118.811 335.535,103.438 "/>
+<rect x="320.287" y="96.694" transform="matrix(-0.9888 0.1493 -0.1493 -0.9888 676.9128 156.1725)" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" width="24.615" height="13.599"/>
+<rect x="317.009" y="99.889" transform="matrix(-0.9888 0.1492 -0.1492 -0.9888 676.166 158.1137)" fill="none" width="30.286" height="9.059"/>
+<text transform="matrix(0.9888 -0.1492 0.1492 0.9888 324.1709 108.2969)" font-family="'MarkerFelt-Wide'" font-size="8.6929">405</text>
+<rect x="448.624" y="99.891" transform="matrix(-0.9888 0.1492 -0.1492 -0.9888 937.9247 138.4652)" fill="none" width="30.286" height="9.059"/>
+<polygon stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="361.448,101.979 
+	366.223,118.811 369.136,103.438 "/>
+<rect x="353.888" y="96.69" transform="matrix(-0.9888 0.1493 -0.1493 -0.9888 743.7375 151.1505)" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" width="24.616" height="13.599"/>
+<rect x="351.478" y="99.891" transform="matrix(-0.9888 0.1492 -0.1492 -0.9888 744.7194 152.9611)" fill="none" width="30.286" height="9.058"/>
+<text transform="matrix(0.9888 -0.1492 0.1492 0.9888 358.6406 108.2969)" font-family="'MarkerFelt-Wide'" font-size="8.6929">204</text>
+<polygon stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="397.606,101.979 
+	402.381,118.811 405.294,103.438 "/>
+<rect x="390.045" y="96.689" transform="matrix(-0.9888 0.1493 -0.1493 -0.9888 815.646 145.7484)" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" width="24.615" height="13.599"/>
+<rect x="387.636" y="99.891" transform="matrix(-0.9888 0.1492 -0.1492 -0.9888 816.6296 147.5804)" fill="none" width="30.286" height="9.059"/>
+<text transform="matrix(0.9888 -0.1492 0.1492 0.9888 394.7988 108.2959)" font-family="'MarkerFelt-Wide'" font-size="8.6929">201</text>
+<polygon stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="457.899,101.979 
+	462.674,118.811 465.587,103.438 "/>
+<rect x="450.338" y="96.689" transform="matrix(-0.9888 0.1493 -0.1493 -0.9888 935.5562 136.7471)" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" width="24.615" height="13.599"/>
+<rect x="447.929" y="99.891" transform="matrix(-0.9888 0.1492 -0.1492 -0.9888 936.5408 138.585)" fill="none" width="30.286" height="9.059"/>
+<text transform="matrix(0.9888 -0.1492 0.1492 0.9888 455.0918 108.2959)" font-family="'MarkerFelt-Wide'" font-size="8.6929">404</text>
 <g>
 	<g>
 		<path d="M24.917,119.273c0.37-0.396,0.592-0.866,0.879-1.318c0.189-0.297-0.767-1.074-0.895-0.873
