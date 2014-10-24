@@ -24,18 +24,16 @@
     h1 { font-size: 27px; }
 
     // S
-	  @include breakpoint($breakpoint-nav-s) {
-	    @include layout($xs-s-layout);
-	    @include container(full);
-
-	    text-align: center;
-	  };
+    @include breakpoint($breakpoint-nav-s) {
+      @include layout($xs-s-layout);
+      @include container(full);
+        text-align: center;
+      };
 
     // L
     @include breakpoint($breakpoint-nav-l) {
       @include layout($l-layout);
       float: left;
-
       text-align: left;
     };
   }
@@ -48,8 +46,8 @@
       font-weight: 500;
 
       &:hover, &.current {
-        border-bottom: 2px solid $brand-primary;
-        color: $brand-primary;
+        border-bottom: 2px solid $color-primary;
+        color: $color-primary;
       }
     }
 

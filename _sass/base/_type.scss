@@ -6,8 +6,8 @@
 // -------------------------
 
 ::selection {
-	background: $brand-primary;
-	color: $white;
+  background: $color-primary;
+  color: $white;
 }
 
 // Headings
@@ -42,7 +42,7 @@ h3, .h3 {
   }
 
   span {
-  	font-weight: 400;
+    font-weight: 400;
   }
 }
 h4, .h4,
@@ -74,8 +74,8 @@ p { margin: 0 0 ($line-height-computed / 2); }
 // Emphasis & misc
 // -------------------------
 strong {
-	font-weight: 700;
-	color: $link-color;
+    font-weight: 700;
+    color: $link-color;
 }
 em { font-style: italic; }
 

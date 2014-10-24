@@ -1,54 +1,54 @@
 /*-----------------------------------------------------------------------------------*/
-/*	WIDGET
+/*  WIDGET
 /*-----------------------------------------------------------------------------------*/
 
 .widget {
 
-	border-bottom: 1px solid $gray-lighter;
-	padding-bottom: 20px;
-	margin-bottom: 20px;
+  border-bottom: 1px solid $gray-lighter;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
 
-	h4 {
-		font-weight: 500;
-	}
+  h4 {
+    font-weight: 500;
+  }
 
-	ul {
-			p.date {
-				margin-bottom: 20px;
-			}
-	}
+  ul {
+   p.date {
+    margin-bottom: 20px;
+  }
+}
 
-	.toc {
-		ul {
-	    list-style: none !important;
-	    padding:0;
-	    margin:0;
+.toc {
+  ul {
+   list-style: none !important;
+   padding:0;
+   margin:0;
 
-	    li:first-child {
-	    	display: none;
-	    }
+   li:first-child {
+    display: none;
+  }
 
-	    li {
-		    padding-left: 1em;
-		    text-indent: -.7em;
+  li {
+    padding-left: 1em;
+    text-indent: -.7em;
 
-		    &:before {
-			    content: "• ";
-			    color: $brand-primary; /* or whatever color you prefer */
-				}
-			}
-		}
-	}
+    &:before {
+     content: "• ";
+          color: $color-primary; /* or whatever color you prefer */
+        }
+      }
+    }
+  }
 
-	// S
-	@include breakpoint($breakpoint-s) {
-	};
+  // S
+  @include breakpoint($breakpoint-s) {
+  };
 
-	// L
-	@include breakpoint($breakpoint-l) {
-	};
+  // L
+  @include breakpoint($breakpoint-l) {
+  };
 }
 
 /*-----------------------------------------------------------------------------------*/
-/*	END WIDGET
+/*  END WIDGET
 /*-----------------------------------------------------------------------------------*/

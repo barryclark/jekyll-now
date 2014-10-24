@@ -19,7 +19,7 @@
 
 	    &:before {
 		    content: "• ";
-		    color: $brand-primary; /* or whatever color you prefer */
+		    color: $color-primary; /* or whatever color you prefer */
 			}
 		}
 	}
@@ -27,7 +27,7 @@
 	// Links
 	// -------------------------
 	p a {
-		color: $brand-primary;
+		color: $color-primary;
 
 		&:hover {
 			color: $gray-darker;
@@ -39,7 +39,7 @@
 // -------------------------
 .share-post {
 	margin-top: 20px;
-	background: $brand-primary;
+	background: $color-primary;
 	color: $white;
 	padding: 10px 10px 5px 10px;
 	text-align: center;
