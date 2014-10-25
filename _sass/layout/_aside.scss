@@ -1,24 +1,19 @@
-/*-----------------------------------------------------------------------------------*/
-/*	ASIDE
-/*-----------------------------------------------------------------------------------*/
+/*------------------------------------*\
+    ASIDE
+\*------------------------------------*/
 
 aside {
 
-	// S
-	@include breakpoint($breakpoint-s) {
-		@include layout($xs-s-layout);
-		@include container(full);
-	};
+    // S
+    @include breakpoint($breakpoint-s) {
+        @include layout($xs-s-layout);
+        @include container(full);
+    };
 
-	// L
-	@include breakpoint($breakpoint-l) {
-		@include layout($l-layout);
-		@include span(3 at 10);
-
-		padding-right: 0;
-	};
+    // L
+    @include breakpoint($breakpoint-l) {
+        @include layout($l-layout);
+        @include span(3 at 10);
+        padding-right: 0;
+    };
 }
-
-/*-----------------------------------------------------------------------------------*/
-/*	END ASIDE
-/*-----------------------------------------------------------------------------------*/

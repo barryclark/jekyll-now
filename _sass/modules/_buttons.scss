@@ -1,34 +1,29 @@
-/*-----------------------------------------------------------------------------------*/
-/*	BUTTONS
-/*-----------------------------------------------------------------------------------*/
+/*------------------------------------*\
+    BUTTONS
+\*------------------------------------*/
 
 .button {
-  border: 1px solid $gray-lighter;
-  text-transform: uppercase;
-  padding: 7px 10px;
+    border: 1px solid $gray-lighter;
+    text-transform: uppercase;
+    padding: 7px 10px;
 
-  &:hover {
-  	border: 1px solid $gray-darker;
-  	background: $gray-darker;
-  	color: $white;
-  }
+    &:hover {
+        border: 1px solid $gray-darker;
+        background: $gray-darker;
+        color: $white;
+    }
 }
 
 .back-to-home {
-	// S
-	@include breakpoint($breakpoint-s) {
-		@include layout($xs-s-layout);
-		display: none;
-	};
+    // S
+    @include breakpoint($breakpoint-s) {
+        @include layout($xs-s-layout);
+        display: none;
+    };
 
-	// L
-	@include breakpoint($breakpoint-l) {
-		@include layout($l-layout);
-		display: inline-block;
-	};
+    // L
+    @include breakpoint($breakpoint-l) {
+        @include layout($l-layout);
+        display: inline-block;
+    };
 }
-
-
-/*-----------------------------------------------------------------------------------*/
-/*	END BUTTONS
-/*-----------------------------------------------------------------------------------*/

@@ -2,7 +2,8 @@
  * CONTENTS
  *
  * SETTINGS
- * _config.scss.........Globally-available variables and config.
+ * Normalize............HTML5 display definitions.
+ * Config...............Globally-available variables and config.
  *
  * TOOLS
  * Mixins...............Useful mixins.

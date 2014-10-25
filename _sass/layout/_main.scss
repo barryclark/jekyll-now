@@ -1,24 +1,20 @@
-/*-----------------------------------------------------------------------------------*/
-/*	MAIN
-/*-----------------------------------------------------------------------------------*/
+/*------------------------------------*\
+    MAIN
+\*------------------------------------*/
 
 main {
 
-	margin-top: 27px;
+    margin-top: 27px;
 
-	// S
-	@include breakpoint($breakpoint-s) {
-		@include layout($xs-s-layout);
-		@include container(full);
-	};
+    // S
+    @include breakpoint($breakpoint-s) {
+        @include layout($xs-s-layout);
+        @include container(full);
+    };
 
-	// L
-	@include breakpoint($breakpoint-l) {
-		@include layout($l-layout);
-		@include container(full);
-	};
+    // L
+    @include breakpoint($breakpoint-l) {
+        @include layout($l-layout);
+        @include container(full);
+    };
 }
-
-/*-----------------------------------------------------------------------------------*/
-/*	END MAIN
-/*-----------------------------------------------------------------------------------*/

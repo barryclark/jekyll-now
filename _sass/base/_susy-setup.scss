@@ -1,68 +1,63 @@
-//
-// Susy Setup
-// --------------------------------------------------
+/*------------------------------------*\
+    SUSY SET-UP
+\*------------------------------------*/
 
 $xs-s-layout: (
-  flow: ltr,
-  output: float,
-  column-width: false,
-  container: auto,
-  container-position: center,
-  columns: 1,
-  gutters: 1/4,
-  gutter-position: inside,
-  global-box-sizing: border-box,
-  math: fluid,
-  last-flow: to,
-  debug: (
-    image: hide,
-    color: rgba(#66f, .25),
-    output: background,
-    toggle: top right,
-  ),
+    flow: ltr,
+    output: float,
+    column-width: false,
+    container: auto,
+    container-position: center,
+    columns: 1,
+    gutters: 1/4,
+    gutter-position: inside,
+    global-box-sizing: border-box,
+    math: fluid,
+    last-flow: to,
+    debug: (
+        image: hide,
+        color: rgba(#66f, .25),
+        output: background,
+        toggle: top right,
+    ),
 );
 
 $m-layout: (
-  flow: ltr,
-  output: float,
-  column-width: false,
-  container: auto,
-  container-position: center,
-  columns: 12,
-  gutters: 1/4,
-  gutter-position: inside,
-  global-box-sizing: border-box,
-  math: fluid,
-  last-flow: to,
-  debug: (
-    image: hide,
-    color: rgba(#66f, .25),
-    output: background,
-    toggle: top right,
-  ),
+    flow: ltr,
+    output: float,
+    column-width: false,
+    container: auto,
+    container-position: center,
+    columns: 12,
+    gutters: 1/4,
+    gutter-position: inside,
+    global-box-sizing: border-box,
+    math: fluid,
+    last-flow: to,
+    debug: (
+        image: hide,
+        color: rgba(#66f, .25),
+        output: background,
+        toggle: top right,
+    ),
 );
 
 $l-layout: (
-  flow: ltr,
-  output: float,
-  column-width: false,
-  container: auto,
-  container-position: center,
-  columns: 12,
-  gutters: 1/2,
-  gutter-position: inside,
-  global-box-sizing: border-box,
-  math: fluid,
-  last-flow: to,
-  debug: (
-    image: hide,
-    color: rgba(#66f, .25),
-    output: background,
-    toggle: top right,
-  ),
+    flow: ltr,
+    output: float,
+    column-width: false,
+    container: auto,
+    container-position: center,
+    columns: 12,
+    gutters: 1/2,
+    gutter-position: inside,
+    global-box-sizing: border-box,
+    math: fluid,
+    last-flow: to,
+    debug: (
+        image: hide,
+        color: rgba(#66f, .25),
+        output: background,
+        toggle: top right,
+    ),
 );
-
-
-//
-// End of Susy Setup
-// --------------------------------------------------

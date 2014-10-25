@@ -1,50 +1,42 @@
-/*-----------------------------------------------------------------------------------*/
-/*	FOOTER
-/*-----------------------------------------------------------------------------------*/
+/*------------------------------------*\
+    FOOTER
+\*------------------------------------*/
 
 .main-footer {
-  border-top: 2px solid $gray-darker;
-  padding-top: 20px;
-  margin-top: 40px;
+    border-top: 2px solid $gray-darker;
+    padding-top: 20px;
+    margin-top: 40px;
 
-  // S
-	@include breakpoint($breakpoint-s) {
-		@include layout($xs-s-layout);
-		@include container(full);
+    // S
+    @include breakpoint($breakpoint-s) {
+        @include layout($xs-s-layout);
+        @include container(full);
 
-		text-align: center;
+        text-align: center;
 
-		.impressum {
-			a {
-				margin: 10px;
-				font-weight: 500;
+        .impressum {
+            a {
+                margin: 10px;
+                font-weight: 500;
 
-				&:hover { font-weight: 500; }
-			}
-		}
-	};
+                &:hover { font-weight: 500; }
+            }
+        }
+    };
 
-	// L
-	@include breakpoint($breakpoint-l) {
-		@include layout($l-layout);
-		@include container(full);
+    // L
+    @include breakpoint($breakpoint-l) {
+        @include layout($l-layout);
+        @include container(full);
 
-		text-align: left;
+        text-align: left;
 
-		.copyright { float: left; }
+        .copyright { float: left; }
 
-		.impressum {
-			float: right;
+        .impressum {
+            float: right;
 
-			a { margin: 0 0 0 20px; }
-		}
-	};
-
-
+            a { margin: 0 0 0 20px; }
+        }
+    };
 }
-
-
-
-/*-----------------------------------------------------------------------------------*/
-/*	END FOOTER
-/*-----------------------------------------------------------------------------------*/

@@ -1,6 +1,8 @@
-// Settings
-@import "base/config";
-@import "base/mixins";
+/*------------------------------------*\
+    STYLES
+    Made with love by Miriam Tocino
+    miriam.tocino@gmail.com
+\*------------------------------------*/
 
 // Reset and dependencies
 @import "compass/reset";
@@ -11,6 +13,8 @@
 
 // Base CSS
 @import "base/normalize";
+@import "base/config";
+@import "base/mixins";
 @import "base/susy-setup";
 @import "base/scaffolding";
 @import "base/type";

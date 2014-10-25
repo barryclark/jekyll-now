@@ -3,74 +3,70 @@
 \*------------------------------------*/
 
 .main-header {
-  border-bottom: 2px solid $gray-darker;
-  padding-bottom: 20px;
-
-  // S
-  @include breakpoint($breakpoint-nav-s) {
-    @include layout($xs-s-layout);
-    @include container(full);
-  };
-
-  // L
-  @include breakpoint($breakpoint-nav-l) {
-    @include layout($l-layout);
-    @include container(full);
-
-  };
-
-  .logo {
-
-    h1 { font-size: 27px; }
+    border-bottom: 2px solid $gray-darker;
+    padding-bottom: 20px;
 
     // S
     @include breakpoint($breakpoint-nav-s) {
-      @include layout($xs-s-layout);
-      @include container(full);
-        text-align: center;
-      };
+        @include layout($xs-s-layout);
+        @include container(full);
+    };
 
     // L
     @include breakpoint($breakpoint-nav-l) {
-      @include layout($l-layout);
-      float: left;
-      text-align: left;
+        @include layout($l-layout);
+        @include container(full);
+
     };
-  }
 
-  .main-nav {
+    .logo {
 
-    a {
-      margin-left: 15px;
-      text-transform: uppercase;
-      font-weight: 500;
+        h1 { font-size: 27px; }
 
-      &:hover, &.current {
-        border-bottom: 2px solid $color-primary;
-        color: $color-primary;
-      }
+        // S
+        @include breakpoint($breakpoint-nav-s) {
+            @include layout($xs-s-layout);
+            @include container(full);
+            text-align: center;
+        };
+
+        // L
+        @include breakpoint($breakpoint-nav-l) {
+            @include layout($l-layout);
+            float: left;
+            text-align: left;
+        };
     }
 
-    // S
-    @include breakpoint($breakpoint-nav-s) {
-      @include layout($xs-s-layout);
-      @include container(full);
+    .main-nav {
 
-      text-align: center;
-      padding-top: 20px;
-    };
+        a {
+            margin-left: 15px;
+            text-transform: uppercase;
+            font-weight: 500;
 
-    // L
-    @include breakpoint($breakpoint-nav-l) {
-      @include layout($l-layout);
-      float: right;
+            &:hover, &.current {
+                border-bottom: 2px solid $color-primary;
+                color: $color-primary;
+            }
+        }
 
-      text-align: right;
-      padding-top: 35px;
-    };
-  }
+        // S
+        @include breakpoint($breakpoint-nav-s) {
+            @include layout($xs-s-layout);
+            @include container(full);
+
+            text-align: center;
+            padding-top: 20px;
+        };
+
+        // L
+        @include breakpoint($breakpoint-nav-l) {
+            @include layout($l-layout);
+            float: right;
+
+            text-align: right;
+            padding-top: 35px;
+        };
+    }
 }
-
-/*------------------------------------*\
-    END #MAIN-HEADER
-\*------------------------------------*/
