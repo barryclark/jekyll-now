@@ -1,26 +1,28 @@
-<!-- Wrapper -->
-<div class="wrapper">
+    <!-- Wrapper -->
+    <div class="wrapper">
 
-  <!-- Main Header -->
-  <header class="main-header">
+        <!-- Main Header -->
+        <header class="main-header">
 
-    <!-- Logo -->
-    <div class="logo">
-      <h1><a href="{{ site.url }}">
-        Miriam<span>Tocino.</span>
-        <small>Turning into Web Developer.</small>
-      </a></h1>
-    </div> <!-- End Logo -->
+            <!-- Logo -->
+            <div class="logo">
+                <h1>
+                    <a href="{{ site.url }}">
+                        Miriam<span>Tocino.</span><small>Turning into Web Developer.</small>
+                    </a>
+                </h1>
+            </div> <!-- End Logo -->
 
-    <!-- Navigation -->
-    <nav class="main-nav">
-      {% for link in site.navigation %}
-      {% assign current = nil %}
-      {% if page.url contains link.url %}
-      {% assign current = 'current' %}
-      {% endif %}
-      <a href="{{ link.url }}" class="{{ current }}">{{ link.title }}</a>
-      {% endfor %}
-    </nav> <!-- End Navigation -->
+            <!-- Navigation -->
+            <nav class="main-nav">
+                {% for link in site.navigation %}
+                    {% assign current = nil %}
+                    {% if page.url contains link.url %}
+                        {% assign current = 'current' %}
+                    {% endif %}
 
-  </header> <!-- End Main Header -->
+                    <a href="{{ link.url }}" class="{{ current }}">{{ link.title }}</a>
+                {% endfor %}
+            </nav> <!-- End Navigation -->
+
+        </header> <!-- End Main Header -->

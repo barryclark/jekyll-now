@@ -1,96 +1,92 @@
 {% include head.html %}
 {% include header.html %}
 
-<!-- Main -->
-<main>
+    <!-- Main -->
+    <main>
 
-  <!-- Content -->
-  <section class="content">
-    {{content}}
-  </section> <!-- End Content -->
+        <!-- Content -->
+        <section class="content">
+        {{content}}
+        </section> <!-- End Content -->
 
-  <!-- Sidebar -->
-  <aside>
+        <!-- Sidebar -->
+        <aside>
 
-    <!-- Widget: About me -->
-    <div class="widget">
-      <h4>About Me</h4>
-      <p>
-      I went from architect to full-time web developer.
-      Want to know more about my story?</br>
-      <a href="http://teamtreehouse.com/stories/miriam-tocino" target="_blank">Check this out!</a>
-      </p>
+            <!-- Widget: About me -->
+            <div class="widget">
+                <h4>About Me</h4>
+                <p>
+                    I went from architect to full-time web developer.
+                    Want to know more about my story?</br>
+                    <a href="http://teamtreehouse.com/stories/miriam-tocino" target="_blank">Check this out!</a>
+                </p>
 
-      <ul class="social-media-list">
+                <ul class="social-media-list">
 
-        <!-- Email
-        {% if site.email %}
-        <li>
-          <a href="mailto: {{ site.email }}">{% include svg-icons/email.html %}</a>
-        </li>
-        {% endif %} <!-- End Email -->
+                    <!-- Email
+                    {% if site.email %}
+                    <li>
+                        <a href="mailto: {{ site.email }}">{% include svg-icons/email.html %}</a>
+                    </li>
+                    {% endif %} <!-- End Email -->
 
-        <!-- Github
-        {% if site.github_username %}
-        <li>
-          <a href="http://github.com/{{ site.github_username }}" alt="Github" title="Github" target="_blank"><span>{% include svg-icons/github.html %}</span></a>
-        </li>
-        {% endif %} <!-- End Github -->
+                    <!-- Github
+                    {% if site.github_username %}
+                    <li>
+                        <a href="http://github.com/{{ site.github_username }}" alt="Github" title="Github" target="_blank"><span>{% include svg-icons/github.html %}</span></a>
+                    </li>
+                    {% endif %} <!-- End Github -->
 
-        <!-- Linkedin -->
-        {% if site.linkedin_username %}
-        <li>
-          <a href="http://linkedin.com/in/{{ site.linkedin_username }}" alt="Linkedin" title="Linkedin" target="_blank"><span>{% include svg-icons/linkedin.html %}</span></a>
-        </li>
-        {% endif %} <!-- End Linkedin -->
+                    <!-- Linkedin -->
+                    {% if site.linkedin_username %}
+                    <li>
+                        <a href="http://linkedin.com/in/{{ site.linkedin_username }}" alt="Linkedin" title="Linkedin" target="_blank"><span>{% include svg-icons/linkedin.html %}</span></a>
+                    </li>
+                    {% endif %} <!-- End Linkedin -->
 
-        <!-- Twitter -->
-        {% if site.twitter_username %}
-        <li>
-          <a href="http://twitter.com/{{ site.twitter_username }}" alt="Twitter" title="Twitter" target="_blank"><span>{% include svg-icons/twitter.html %}</span></a>
-        </li>
-        {% endif %} <!-- End Twitter -->
+                    <!-- Twitter -->
+                    {% if site.twitter_username %}
+                    <li>
+                        <a href="http://twitter.com/{{ site.twitter_username }}" alt="Twitter" title="Twitter" target="_blank"><span>{% include svg-icons/twitter.html %}</span></a>
+                    </li>
+                    {% endif %} <!-- End Twitter -->
 
-        <!-- Pinterest -->
-        {% if site.pinterest_username %}
-        <li>
-          <a href="http://pinterest.com/{{ site.pinterest_username }}" alt="Pinterest" title="Pinterest" target="_blank"><span>{% include svg-icons/pinterest.html %}</span></a>
-        </li>
-        {% endif %} <!-- End Pinterest -->
+                    <!-- Pinterest -->
+                    {% if site.pinterest_username %}
+                    <li>
+                        <a href="http://pinterest.com/{{ site.pinterest_username }}" alt="Pinterest" title="Pinterest" target="_blank"><span>{% include svg-icons/pinterest.html %}</span></a>
+                    </li>
+                    {% endif %} <!-- End Pinterest -->
 
-        <!-- Bitbucket
-        {% if site.bitbucket_username %}
-        <li>
-          <a href="http://bitbucket.com/{{ site.bitbucket_username }}" alt="Bitbucket" title="Bitbucket" target="_blank"><span>{% include svg-icons/bitbucket.html %}</span></a>
-        </li>
-        {% endif %} <!-- End Bitbucket -->
+                    <!-- Bitbucket
+                    {% if site.bitbucket_username %}
+                    <li>
+                        <a href="http://bitbucket.com/{{ site.bitbucket_username }}" alt="Bitbucket" title="Bitbucket" target="_blank"><span>{% include svg-icons/bitbucket.html %}</span></a>
+                    </li>
+                    {% endif %} <!-- End Bitbucket -->
 
-        <!-- RSS
-        <li>
-          <a href="/feed.xml" alt="RSS" title="RSS"><span>{% include svg-icons/rss.html %}</span></a>
-        </li> <!-- End RSS -->
+                    <!-- RSS
+                    <li>
+                        <a href="/feed.xml" alt="RSS" title="RSS"><span>{% include svg-icons/rss.html %}</span></a>
+                    </li> <!-- End RSS -->
+                </ul>
+            </div> <!-- End Widget: About me -->
 
+            <!-- Widget: Recent Writings -->
+            <div class="widget">
+                <h4>Recent Articles</h4>
+                <ul>
+                    {% for post in site.posts limit: 5 %}
+                    <li>
+                        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+                    </li>
+                    <p class="date">{{ post.date | date_to_long_string }}</p>
+                    {% endfor %}
+                </ul>
+            </div> <!-- End Widget: Recent Writings -->
 
-      </ul>
-    </div> <!-- End Widget: About me -->
+        </aside> <!-- End Sidebar -->
 
-    <!-- Widget: Recent Writings -->
-    <div class="widget">
-      <h4>Recent Articles</h4>
-      <ul>
-      {% for post in site.posts limit: 5 %}
-        <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-        <p class="date">{{ post.date | date_to_long_string }}</p>
-      {% endfor %}
-      </ul>
-    </div> <!-- End Widget: Recent Writings -->
-
-  </aside> <!-- End Sidebar -->
-
-</main> <!-- End Main -->
+    </main> <!-- End Main -->
 
 {% include footer.html %}
-
-
-
-
