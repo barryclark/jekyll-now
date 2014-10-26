@@ -3,11 +3,17 @@
 \*------------------------------------*/
 
 .hide-on-mobile {
+
 	// S
 	@include breakpoint($breakpoint-s) {
-		@include layout($xs-s-layout);
+		@include layout($s-layout);
 		display: none;
 	};
+
+	// M
+    @include breakpoint($breakpoint-m) {
+        @include layout($m-layout);
+    };
 
 	// L
 	@include breakpoint($breakpoint-l) {

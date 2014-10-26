@@ -1,0 +1,64 @@
+/*------------------------------------*\
+    MODULE POST
+\*------------------------------------*/
+
+.mod-post {
+
+	// S
+    @include breakpoint($breakpoint-s) {
+    	@include layout($s-layout);
+    	border-bottom: 1px solid $gray-lighter;
+		margin-bottom: 40px;
+		padding-bottom: 40px;
+
+		h3, h3 a {
+			color: $color-primary;
+			font-weight: 500;
+		}
+
+		h3, h4 {
+			font-weight: 500;
+		}
+		h3 {
+			margin: 5px 0;
+		}
+
+		table {
+			margin: 15px 0;
+		}
+
+		ul {
+		list-style: none !important;
+		padding:0;
+		margin: 0 0 15px 0;
+
+		li {
+		    padding-left: 1em;
+		    text-indent: -.7em;
+
+		    &:before {
+			    content: "• ";
+			    color: $color-primary;
+				}
+			}
+		}
+
+		p a {
+			color: $color-primary;
+
+			&:hover {
+				color: $gray-darker;
+			}
+		}
+    }
+
+    // M
+    @include breakpoint($breakpoint-m) {
+        @include layout($m-layout);
+    };
+
+    // L
+    @include breakpoint($breakpoint-l) {
+        @include layout($l-layout);
+    };
+}

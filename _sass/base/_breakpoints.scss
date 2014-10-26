@@ -1,0 +1,14 @@
+/*------------------------------------*\
+    BREAKPOINT
+    Media queries breakpoints
+    Define the breakpoints at which your layout will change,
+    adapting to different screen sizes.
+\*------------------------------------*/
+
+$breakpoint-s       : 0px, 568px;
+$breakpoint-m       : 569px, 768px;
+$breakpoint-l       : 769px, 1024px;
+
+// Special case for the navigation in header
+$breakpoint-nav-s   : 0px, 900px;
+$breakpoint-nav-l   : 901px, 1024px;

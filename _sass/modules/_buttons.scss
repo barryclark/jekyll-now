@@ -17,7 +17,7 @@
 .back-to-home {
     // S
     @include breakpoint($breakpoint-s) {
-        @include layout($xs-s-layout);
+        @include layout($s-layout);
         display: none;
     };
 

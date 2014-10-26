@@ -17,7 +17,6 @@
 
 
 // Body reset
-
 body {
     background: $body-bg;
     font-family: $font-family--primary;
@@ -40,7 +39,6 @@ textarea {
 }
 
 // Links
-
 a {
     color: $link-color; text-decoration: none; font-weight: 700;
     @include transition(150ms);
@@ -57,7 +55,6 @@ a {
 }
 
 // Horizontal rules
-
 hr {
     border: 0;
     clear: both;
@@ -70,7 +67,6 @@ hr {
 }
 
 // Browse Happy
-
 .browsehappy {
     margin: 0.2em 0;
     background: #ccc;
@@ -79,7 +75,6 @@ hr {
 }
 
 // Images
-
 img {
     width:100%;
     height:100%;
@@ -87,7 +82,6 @@ img {
 }
 
 // Lists
-
 ul {
     padding-left: 0;
 }

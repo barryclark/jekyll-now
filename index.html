@@ -3,7 +3,7 @@ layout: default-recent-writings
 ---
 <!-- Posts -->
 {% for post in paginator.posts limit: 3 %}
-<article class="post">
+<article class="mod-post">
     <p class="date">{{ post.date | date_to_long_string }}</p>
     <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
     <h4 class="tagline">{{ post.tagline }}</h4>
@@ -13,8 +13,8 @@ layout: default-recent-writings
 </article>
 {% endfor %} <!-- End Posts -->
 
-<!-- Pagination -->
-<footer class="pagination">
+<!-- mod-pagination -->
+<div class="mod-pagination">
     <ul>
         {% if paginator.previous_page %}
         {% if paginator.previous_page == 1 %}
@@ -43,4 +43,5 @@ layout: default-recent-writings
         <li class="disabled">❯</li>
         {% endif %}
     </ul>
-</footer> <!-- End Pagination -->
+</div>
+<!-- /mod-pagination -->

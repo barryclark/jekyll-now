@@ -78,6 +78,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     CONFIG
 \*------------------------------------*/
 /*------------------------------------*\
+    BREAKPOINT
+    Media queries breakpoints
+    Define the breakpoints at which your layout will change,
+    adapting to different screen sizes.
+\*------------------------------------*/
+/*------------------------------------*\
     NORMALIZE
     HTML5 display definitions
     normalize.css v1.1.3
@@ -1151,7 +1157,7 @@ table > thead > tr > td {
 /*------------------------------------*\
     HIDE-ON-MOBILE
 \*------------------------------------*/
-@media (min-width: 321px), (min-width: 568px) {
+@media (min-width: 0px), (min-width: 568px) {
   .hide-on-mobile {
     display: none;
   }
@@ -1171,7 +1177,7 @@ table > thead > tr > td {
 /*------------------------------------*\
     WRAPPER
 \*------------------------------------*/
-@media (min-width: 321px), (min-width: 568px) {
+@media (min-width: 0px), (min-width: 568px) {
   .wrapper {
     max-width: 100%;
     margin-left: auto;
@@ -1207,80 +1213,54 @@ table > thead > tr > td {
 /*------------------------------------*\
     #MAIN-HEADER
 \*------------------------------------*/
-.main-header {
-  border-bottom: 2px solid #222222;
-  padding-bottom: 20px;
-}
 @media (min-width: 0px), (min-width: 900px) {
   .main-header {
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
+    border-bottom: 2px solid #222222;
+    padding-bottom: 20px;
   }
   .main-header:after {
     content: " ";
     display: block;
     clear: both;
   }
-}
-@media (min-width: 901px), (min-width: 1024px) {
-  .main-header {
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .main-header:after {
-    content: " ";
-    display: block;
-    clear: both;
-  }
-}
-.main-header .logo h1 {
-  font-size: 27px;
-}
-@media (min-width: 0px), (min-width: 900px) {
   .main-header .logo {
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
     text-align: center;
   }
-  .main-header .logo:after {
+  .main-header .logo h1 {
+    font-size: 27px;
+  }
+  .main-header .main-nav {
+    text-align: center;
+    padding-top: 20px;
+  }
+  .main-header .main-nav a {
+    margin-left: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  .main-header .main-nav a:hover, .main-header .main-nav a.current {
+    border-bottom: 2px solid #d33682;
+    color: #d33682;
+  }
+}
+@media (min-width: 901px), (min-width: 1024px) {
+  .main-header {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .main-header:after {
     content: " ";
     display: block;
     clear: both;
   }
-}
-@media (min-width: 901px), (min-width: 1024px) {
   .main-header .logo {
     float: left;
     text-align: left;
   }
-}
-.main-header .main-nav a {
-  margin-left: 15px;
-  text-transform: uppercase;
-  font-weight: 500;
-}
-.main-header .main-nav a:hover, .main-header .main-nav a.current {
-  border-bottom: 2px solid #d33682;
-  color: #d33682;
-}
-@media (min-width: 0px), (min-width: 900px) {
-  .main-header .main-nav {
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    padding-top: 20px;
-  }
-  .main-header .main-nav:after {
-    content: " ";
-    display: block;
-    clear: both;
-  }
-}
-@media (min-width: 901px), (min-width: 1024px) {
   .main-header .main-nav {
     float: right;
     text-align: right;
@@ -1294,7 +1274,7 @@ table > thead > tr > td {
 main {
   margin-top: 27px;
 }
-@media (min-width: 321px), (min-width: 568px) {
+@media (min-width: 0px), (min-width: 568px) {
   main {
     max-width: 100%;
     margin-left: auto;
@@ -1322,7 +1302,7 @@ main {
 /*------------------------------------*\
    CONTENT
 \*------------------------------------*/
-@media (min-width: 321px), (min-width: 568px) {
+@media (min-width: 0px), (min-width: 568px) {
   .content {
     max-width: 100%;
     margin-left: auto;
@@ -1370,7 +1350,7 @@ main {
 /*------------------------------------*\
     ASIDE
 \*------------------------------------*/
-@media (min-width: 321px), (min-width: 568px) {
+@media (min-width: 0px), (min-width: 568px) {
   aside {
     max-width: 100%;
     margin-left: auto;
@@ -1395,16 +1375,14 @@ main {
 /*------------------------------------*\
     FOOTER
 \*------------------------------------*/
-.main-footer {
-  border-top: 2px solid #222222;
-  padding-top: 20px;
-  margin-top: 40px;
-}
-@media (min-width: 321px), (min-width: 568px) {
+@media (min-width: 0px), (min-width: 568px) {
   .main-footer {
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
+    border-top: 2px solid #222222;
+    padding-top: 20px;
+    margin-top: 40px;
     text-align: center;
   }
   .main-footer:after {
@@ -1450,59 +1428,188 @@ main {
     # buttons, widgets etc.
 \*------------------------------------*/
 /*------------------------------------*\
-    ARTICLE
+    MODULE TEXT
+    It also main contain images,
+    but content is most important.
 \*------------------------------------*/
-article {
-  border-bottom: 1px solid #eeeeee;
-  margin-bottom: 40px;
-  padding-bottom: 40px;
-}
-article h3, article h3 a {
-  color: #d33682;
-  font-weight: 500;
-}
-article h3, article h4 {
-  font-weight: 500;
-}
-article h3 {
-  margin: 5px 0;
+@media (min-width: 0px), (min-width: 568px) {
+  .mod-text {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .mod-text:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+  .mod-text h3, .mod-text h3 a {
+    color: #d33682;
+    font-weight: 500;
+  }
+  .mod-text h3, .mod-text h4 {
+    font-weight: 500;
+  }
+  .mod-text h3 {
+    margin: 5px 0;
+  }
+  .mod-text ul {
+    list-style: none !important;
+    padding: 0;
+    margin: 0;
+  }
+  .mod-text ul li {
+    padding-left: 1em;
+    text-indent: -.7em;
+  }
+  .mod-text ul li:before {
+    content: "• ";
+    color: #d33682;
+  }
+  .mod-text img {
+    margin: 20px 0;
+  }
 }
 
 /*------------------------------------*\
+    MODULE POST
+\*------------------------------------*/
+@media (min-width: 0px), (min-width: 568px) {
+  .mod-post {
+    border-bottom: 1px solid #eeeeee;
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+  }
+  .mod-post h3, .mod-post h3 a {
+    color: #d33682;
+    font-weight: 500;
+  }
+  .mod-post h3, .mod-post h4 {
+    font-weight: 500;
+  }
+  .mod-post h3 {
+    margin: 5px 0;
+  }
+  .mod-post table {
+    margin: 15px 0;
+  }
+  .mod-post ul {
+    list-style: none !important;
+    padding: 0;
+    margin: 0 0 15px 0;
+  }
+  .mod-post ul li {
+    padding-left: 1em;
+    text-indent: -.7em;
+  }
+  .mod-post ul li:before {
+    content: "• ";
+    color: #d33682;
+  }
+  .mod-post p a {
+    color: #d33682;
+  }
+  .mod-post p a:hover {
+    color: #222222;
+  }
+}
+
+@media (min-width: 0px), (min-width: 568px) {
+  .mod-share-post {
+    margin-top: 20px;
+    background: #d33682;
+    color: #fff;
+    padding: 10px 10px 5px 10px;
+    text-align: center;
+  }
+  .mod-share-post a:hover {
+    color: #fff;
+  }
+}
+
+/*------------------------------------*\
+    MODULE DISQUS
+    Used in the file post.html
+\*------------------------------------*/
+@media (min-width: 0px), (min-width: 568px) {
+  .mod-disqus {
+    border-bottom: 1px solid #eeeeee;
+    border-top: 1px solid #eeeeee;
+    margin: 40px 0;
+    padding: 40px 0;
+  }
+}
+
+/*------------------------------------*\
+    MODULE WIDGET
+\*------------------------------------*/
+@media (min-width: 0px), (min-width: 568px) {
+  .mod-widget {
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+  .mod-widget h4 {
+    font-weight: 500;
+  }
+  .mod-widget ul p.date {
+    margin-bottom: 20px;
+  }
+  .mod-widget .toc ul {
+    list-style: none !important;
+    padding: 0;
+    margin: 0;
+  }
+  .mod-widget .toc ul li:first-child {
+    display: none;
+  }
+  .mod-widget .toc ul li {
+    padding-left: 1em;
+    text-indent: -.7em;
+  }
+  .mod-widget .toc ul li:before {
+    content: "• ";
+    color: #d33682;
+    /* or whatever color you prefer */
+  }
+}
+
+/*------------------------------------*\
+    MODULE
     PAGINATION
 \*------------------------------------*/
-footer.pagination ul {
+.mod-pagination ul {
   padding-left: 0;
 }
-footer.pagination ul li {
+.mod-pagination ul li {
   display: inline;
   border: 1px solid #eeeeee;
   margin-right: -5px;
   padding: 5px 10px;
 }
-footer.pagination ul li.active, footer.pagination ul li:hover {
+.mod-pagination ul li.active, .mod-pagination ul li:hover {
   border: 1px solid #222222;
   background: #222222;
   color: #fff;
 }
-footer.pagination ul li.active a, footer.pagination ul li:hover a {
+.mod-pagination ul li.active a, .mod-pagination ul li:hover a {
   color: #fff;
 }
-footer.pagination ul li.disabled {
+.mod-pagination ul li.disabled {
   color: #eeeeee;
 }
-footer.pagination ul li.disabled:hover {
+.mod-pagination ul li.disabled:hover {
   background: none;
   border: 1px solid #eeeeee;
   color: #eeeeee;
 }
-@media (min-width: 321px), (min-width: 568px) {
-  footer.pagination {
+@media (min-width: 0px), (min-width: 568px) {
+  .mod-pagination {
     display: none;
   }
 }
 @media (min-width: 769px), (min-width: 1024px) {
-  footer.pagination {
+  .mod-pagination {
     display: inline;
     margin-bottom: 40px;
     display: block;
@@ -1510,51 +1617,24 @@ footer.pagination ul li.disabled:hover {
 }
 
 /*------------------------------------*\
-    WIDGET
+    MODULE SOCIAL MEDIA LIST
 \*------------------------------------*/
-.widget {
-  border-bottom: 1px solid #eeeeee;
-  padding-bottom: 20px;
-  margin-bottom: 20px;
-}
-.widget h4 {
-  font-weight: 500;
-}
-.widget ul p.date {
-  margin-bottom: 20px;
-}
-.widget .toc ul {
-  list-style: none !important;
-  padding: 0;
-  margin: 0;
-}
-.widget .toc ul li:first-child {
-  display: none;
-}
-.widget .toc ul li {
-  padding-left: 1em;
-  text-indent: -.7em;
-}
-.widget .toc ul li:before {
-  content: "• ";
-  color: #d33682;
-  /* or whatever color you prefer */
-}
-
-/*------------------------------------*\
-    SOCIAL MEDIA LIST
-\*------------------------------------*/
-ul.social-media-list {
-  -webkit-transition: 150ms;
-  -o-transition: 150ms;
-  transition: 150ms;
-}
-ul.social-media-list li {
-  display: inline;
-  margin-right: 8px;
-}
-ul.social-media-list li a span svg:hover #social-media-logo {
-  fill: #d33682;
+@media (min-width: 0px), (min-width: 568px) {
+  .mod-social-media-list {
+    -webkit-transition: 150ms;
+    -o-transition: 150ms;
+    transition: 150ms;
+  }
+  .mod-social-media-list li {
+    display: inline-block;
+    margin-right: 8px;
+  }
+  .mod-social-media-list li a span svg:hover #social-media-logo {
+    fill: #d33682;
+  }
+  .mod-social-media-list li:before {
+    content: none !important;
+  }
 }
 
 /*------------------------------------*\
@@ -1571,7 +1651,7 @@ ul.social-media-list li a span svg:hover #social-media-logo {
   color: #fff;
 }
 
-@media (min-width: 321px), (min-width: 568px) {
+@media (min-width: 0px), (min-width: 568px) {
   .back-to-home {
     display: none;
   }
@@ -1583,45 +1663,6 @@ ul.social-media-list li a span svg:hover #social-media-logo {
 }
 
 /*------------------------------------*\
-    ELEARNING PAGE
-\*------------------------------------*/
-article.elearning ul {
-  list-style: none !important;
-  padding: 0;
-  margin: 0;
-}
-article.elearning ul li {
-  padding-left: 1em;
-  text-indent: -.7em;
-}
-article.elearning ul li:before {
-  content: "• ";
-  color: #d33682;
-  /* or whatever color you prefer */
-}
-article.elearning img {
-  margin: 20px 0;
-}
-
-/*-----------------------------------------------------------------------------------*/
-/*	BOOKSHELF PAGE
-/*-----------------------------------------------------------------------------------*/
-article.bookshelf ul {
-  list-style: none !important;
-  padding: 0;
-  margin: 0;
-}
-article.bookshelf ul li {
-  padding-left: 1em;
-  text-indent: -.7em;
-}
-article.bookshelf ul li:before {
-  content: "• ";
-  color: #d33682;
-  /* or whatever color you prefer */
-}
-
-/*------------------------------------*\
     ABOUT PAGE
 \*------------------------------------*/
 .about-main .content h3 {
@@ -1630,7 +1671,7 @@ article.bookshelf ul li:before {
 .about-main .content ul li {
   margin-left: 0;
 }
-@media (min-width: 321px), (min-width: 568px) {
+@media (min-width: 0px), (min-width: 568px) {
   .about-main .content {
     max-width: 100%;
     margin-left: auto;
@@ -1652,7 +1693,7 @@ article.bookshelf ul li:before {
     padding-right: 40px;
   }
 }
-@media (min-width: 321px), (min-width: 568px) {
+@media (min-width: 0px), (min-width: 568px) {
   .about-main aside {
     max-width: 100%;
     margin-left: auto;
@@ -1681,7 +1722,7 @@ article.bookshelf ul li:before {
   -o-border-radius: 300px;
   border-radius: 300px;
 }
-@media (min-width: 321px), (min-width: 568px) {
+@media (min-width: 0px), (min-width: 568px) {
   .about-main img.me {
     margin: 20px auto 0 auto;
   }
@@ -1690,43 +1731,6 @@ article.bookshelf ul li:before {
   .about-main img.me {
     margin: 20px auto 0 auto;
   }
-}
-
-/*------------------------------------*\
-    POST
-\*------------------------------------*/
-.post table {
-  margin: 15px 0;
-}
-.post ul {
-  list-style: none !important;
-  padding: 0;
-  margin: 0 0 15px 0;
-}
-.post ul li {
-  padding-left: 1em;
-  text-indent: -.7em;
-}
-.post ul li:before {
-  content: "• ";
-  color: #d33682;
-}
-.post p a {
-  color: #d33682;
-}
-.post p a:hover {
-  color: #222222;
-}
-
-.share-post {
-  margin-top: 20px;
-  background: #d33682;
-  color: #fff;
-  padding: 10px 10px 5px 10px;
-  text-align: center;
-}
-.share-post a:hover {
-  color: #fff;
 }
 
 /*------------------------------------*\

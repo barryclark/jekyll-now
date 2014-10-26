@@ -1,18 +1,33 @@
 /*------------------------------------*\
-    MAIN
+    MODULE SOCIAL MEDIA LIST
 \*------------------------------------*/
 
-main {
+.mod-social-media-list {
 
-    margin-top: 27px;
-
-    // S
+	// S
     @include breakpoint($breakpoint-s) {
         @include layout($s-layout);
-        @include container(full);
+
+        @include transition(150ms);
+		li {
+			display: inline-block;
+			margin-right: 8px;
+
+			svg {
+
+			}
+
+			a span svg:hover #social-media-logo {
+				fill: $color-primary;
+			}
+
+			&:before {
+				content: none !important;
+			}
+		}
     };
 
-    // M
+	// M
     @include breakpoint($breakpoint-m) {
         @include layout($m-layout);
     };
@@ -20,6 +35,5 @@ main {
     // L
     @include breakpoint($breakpoint-l) {
         @include layout($l-layout);
-        @include container(full);
     };
 }

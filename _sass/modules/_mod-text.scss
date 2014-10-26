@@ -1,8 +1,10 @@
 /*------------------------------------*\
-   CONTENT
+    MODULE TEXT
+    It also main contain images,
+    but content is most important.
 \*------------------------------------*/
 
-.content {
+.mod-text {
 
     // S
     @include breakpoint($breakpoint-s) {
@@ -21,18 +23,24 @@
             margin: 5px 0;
         }
 
-        .date {
-            color: $gray-light;
-            font-weight: 400;
-            margin: 0;
-            padding: 0;
-            margin-bottom: 12px;
-            margin-top: 5px;
+        ul {
+            list-style: none !important;
+            padding:0;
+            margin:0;
+
+            li {
+                padding-left: 1em;
+                text-indent: -.7em;
+
+                &:before {
+                    content: "• ";
+                    color: $color-primary;
+                }
+            }
         }
 
-        .tagline {
-            margin-top: 9px;
-            font-weight: 500;
+        img {
+            margin: 20px 0;
         }
     };
 
@@ -44,9 +52,5 @@
     // L
     @include breakpoint($breakpoint-l) {
         @include layout($l-layout);
-        @include span(9);
-
-        padding-left: 0;
-        padding-right: 40px;
     };
 }

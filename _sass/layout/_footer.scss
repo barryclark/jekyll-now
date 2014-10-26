@@ -3,15 +3,15 @@
 \*------------------------------------*/
 
 .main-footer {
-    border-top: 2px solid $gray-darker;
-    padding-top: 20px;
-    margin-top: 40px;
 
     // S
     @include breakpoint($breakpoint-s) {
-        @include layout($xs-s-layout);
+        @include layout($s-layout);
         @include container(full);
 
+        border-top: 2px solid $gray-darker;
+        padding-top: 20px;
+        margin-top: 40px;
         text-align: center;
 
         .impressum {
@@ -22,6 +22,11 @@
                 &:hover { font-weight: 500; }
             }
         }
+    };
+
+    // M
+    @include breakpoint($breakpoint-m) {
+        @include layout($m-layout);
     };
 
     // L

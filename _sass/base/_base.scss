@@ -115,18 +115,3 @@ $table-bg-hover               : #f5f5f5 !default; // Background color used for `
 $table-bg-active              : $table-bg-hover !default;
 
 $table-border-color           : #ddd !default; // Border color for table and cell borders.
-
-
-// Media queries breakpoints
-// Define the breakpoints at which your layout will change, adapting to different screen sizes.
-// BREAKPOINTS SETUP
-
-$breakpoint-xs      : 0px, 320px;
-$breakpoint-s       : 321px, 568px;
-$breakpoint-m       : 569px, 768px;
-$breakpoint-l       : 769px, 1024px;
-$breakpoint-xl      : 1025px;
-
-// Special case for the navigation in header
-$breakpoint-nav-s   : 0px, 900px;
-$breakpoint-nav-l   : 901px, 1024px;

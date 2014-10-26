@@ -1,0 +1,57 @@
+/*------------------------------------*\
+    MODULE WIDGET
+\*------------------------------------*/
+
+.mod-widget {
+
+    // S
+    @include breakpoint($breakpoint-s) {
+        @include layout($s-layout);
+
+        border-bottom: 1px solid $gray-lighter;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+
+        h4 {
+            font-weight: 500;
+        }
+
+        ul {
+            p.date {
+                margin-bottom: 20px;
+            }
+        }
+
+        .toc {
+            ul {
+                list-style: none !important;
+                padding:0;
+                margin:0;
+
+                li:first-child {
+                    display: none;
+                }
+
+                li {
+                    padding-left: 1em;
+                    text-indent: -.7em;
+
+                    &:before {
+                        content: "• ";
+                        color: $color-primary; /* or whatever color you prefer */
+                    }
+                }
+            }
+        }
+    };
+
+    // M
+    @include breakpoint($breakpoint-m) {
+        @include layout($m-layout);
+    };
+
+    // L
+    @include breakpoint($breakpoint-l) {
+        @include layout($l-layout);
+    };
+}
