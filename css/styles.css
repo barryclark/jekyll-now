@@ -4,6 +4,15 @@
     Made with love by Miriam Tocino
     miriam.tocino@gmail.com
 \*------------------------------------*/
+/*------------------------------------*\
+    UTILITIES
+    _index.scss
+    # non-CSS outputs (i.e. mixins, variables)
+    # non-modules
+\*------------------------------------*/
+/*------------------------------------*\
+    IMPORT MIXINS
+\*------------------------------------*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -60,6 +69,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
+/*------------------------------------*\
+    BASE
+    _index.scss
+    # reset, typography, site-wide
+\*------------------------------------*/
+/*------------------------------------*\
+    CONFIG
+\*------------------------------------*/
 /*------------------------------------*\
     NORMALIZE
     HTML5 display definitions
@@ -570,27 +587,21 @@ table {
 }
 
 /*------------------------------------*\
-    CONFIG
-\*------------------------------------*/
-/*------------------------------------*\
-    IMPORT MIXINS
-\*------------------------------------*/
-/*------------------------------------*\
     SUSY SET-UP
 \*------------------------------------*/
 /*------------------------------------*\
     SCAFFOLDING
 \*------------------------------------*/
 * {
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 *:before,
 *:after {
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -1152,6 +1163,12 @@ table > thead > tr > td {
 }
 
 /*------------------------------------*\
+    LAYOUT
+    _index.scss
+    # major components
+    # header, footer etc.
+\*------------------------------------*/
+/*------------------------------------*\
     WRAPPER
 \*------------------------------------*/
 @media (min-width: 321px), (min-width: 568px) {
@@ -1305,28 +1322,6 @@ main {
 /*------------------------------------*\
    CONTENT
 \*------------------------------------*/
-.content h3, .content h3 a {
-  color: #d33682;
-  font-weight: 500;
-}
-.content h3, .content h4 {
-  font-weight: 500;
-}
-.content h3 {
-  margin: 5px 0;
-}
-.content .date {
-  color: #777777;
-  font-weight: 400;
-  margin: 0;
-  padding: 0;
-  margin-bottom: 12px;
-  margin-top: 5px;
-}
-.content .tagline {
-  margin-top: 9px;
-  font-weight: 500;
-}
 @media (min-width: 321px), (min-width: 568px) {
   .content {
     max-width: 100%;
@@ -1337,6 +1332,28 @@ main {
     content: " ";
     display: block;
     clear: both;
+  }
+  .content h3, .content h3 a {
+    color: #d33682;
+    font-weight: 500;
+  }
+  .content h3, .content h4 {
+    font-weight: 500;
+  }
+  .content h3 {
+    margin: 5px 0;
+  }
+  .content .date {
+    color: #777777;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 12px;
+    margin-top: 5px;
+  }
+  .content .tagline {
+    margin-top: 9px;
+    font-weight: 500;
   }
 }
 @media (min-width: 769px), (min-width: 1024px) {
@@ -1426,6 +1443,12 @@ main {
   }
 }
 
+/*------------------------------------*\
+    MODULES
+    _index.scss
+    # minor components
+    # buttons, widgets etc.
+\*------------------------------------*/
 /*------------------------------------*\
     ARTICLE
 \*------------------------------------*/
