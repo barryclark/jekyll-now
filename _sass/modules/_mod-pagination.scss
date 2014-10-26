@@ -5,46 +5,46 @@
 
 .mod-pagination {
 
-	ul {
-		padding-left: 0;
+	// S
+	@include breakpoint($breakpoint-s) {
+		@include layout($s-layout);
 
-		li {
-			display: inline;
-			border: 1px solid $gray-lighter;
-			margin-right: -5px;
-			padding: 5px 10px;
+		margin-bottom: 40px;
+
+		ul {
+			padding-left: 0;
+
+			li {
+				display: inline;
+				border: 1px solid $gray-lighter;
+				margin-right: -5px;
+				padding: 5px 10px;
 
 
-			&.active, &:hover {
-				border: 1px solid $gray-darker;
-				background: $gray-darker;
-				color: $white;
-
-				a {
+				&.active, &:hover {
+					border: 1px solid $gray-darker;
+					background: $gray-darker;
 					color: $white;
-				}
-			}
 
-			&.disabled {
-				color: $gray-lighter;
-				&:hover {
-					background: none;
-					border: 1px solid $gray-lighter;
+					a {
+						color: $white;
+					}
+				}
+
+				&.disabled {
 					color: $gray-lighter;
+					&:hover {
+						background: none;
+						border: 1px solid $gray-lighter;
+						color: $gray-lighter;
+					}
 				}
 			}
 		}
-	}
-
-	// S
-	@include breakpoint($breakpoint-s) {
-		display: none;
 	};
 
 	// L
 	@include breakpoint($breakpoint-l) {
-		display: inline;
-		margin-bottom: 40px;
-		display: block;
+
 	};
 }

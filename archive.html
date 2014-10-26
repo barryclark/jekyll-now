@@ -4,7 +4,8 @@ title: "Archive"
 ---
 
 {% for post in site.posts %}
-	<article class="post">
+    <!-- mod-post -->
+	<article class="mod-post">
 		<p class="date">{{ post.date | date_to_long_string }}</p>
 		<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
 		<h4 class="tagline">{{ post.tagline }}</h4>
@@ -12,6 +13,7 @@ title: "Archive"
 		<br>
 		<a href="{{ post.url }}" class="button"><small>Read More</small></a>
 	</article>
+    <!-- /mod-post -->
 {% endfor %}
 
 <a href="{{ site.url }}" class="button back-to-home"><small>Back to Home</small></a>

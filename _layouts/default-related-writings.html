@@ -19,7 +19,7 @@
             <!-- /mod-widget toc -->
 
             <!-- mod-widget related-articles -->
-            <div class="mod-widget">
+            <div class="mod-widget related-articles">
                 <h4>Related Articles</h4>
                 <ul>
                     {% for post in site.related_posts limit: 5 %}
@@ -52,7 +52,7 @@
     </main>
     <!-- /main -->
 
-    <!-- loading toc with JS -->
+    <!-- JS loading toc -->
     <script type="text/javascript" src="{{ "/js/toc.js" | prepend: site.baseurl }}"></script>
 
     <script type="text/javascript">
@@ -60,7 +60,7 @@
             $('.toc').toc();
         });
     </script>
-    <!-- /loading toc with JS -->
+    <!-- /JS loading toc -->
 
 {% include footer.html %}
 

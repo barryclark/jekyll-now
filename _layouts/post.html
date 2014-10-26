@@ -5,7 +5,7 @@ comments: true
 
     <!-- mod-post -->
     <article class="mod-post">
-    <!-- Comments Number
+        <!-- comments-number
         <a href="#disqus_thread"></a> -->
 
         <p class="date">{{ page.date | date_to_long_string }}</p>
@@ -13,9 +13,10 @@ comments: true
         <h4 class="tagline">{{ page.tagline }}</h4>
         <p>{{ content }}</p>
 
-    </article> <!-- /mod-post -->
+    </article>
+    <!-- /mod-post -->
 
-    <!-- Share Post -->
+    <!-- mod-share-post -->
     <div class="mod-share-post">
         <p>
             ♥ If you liked this article, you can
@@ -26,9 +27,10 @@ comments: true
             <a href="https://twitter.com/miriamtocino" target="_blank">
                 follow me on Twitter</a> ♥
         </p>
-    </div><!-- End Share Post -->
+    </div>
+    <!-- /mod-share-post -->
 
-    <!-- DISQUS Comments -->
+    <!-- mod-disqus -->
     <div class="mod-disqus">
         {% if page.comments %}
         <div id="disqus_thread"></div>
@@ -48,7 +50,8 @@ comments: true
 
         <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
         {% endif %}
-    </div> <!-- End DISQUS Comments -->
+    </div>
+    <!-- mod-disqus -->
 
     <a href="{{ site.url }}" class="button back-to-home"><small>Back to Home</small></a>
 

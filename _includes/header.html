@@ -1,19 +1,20 @@
-    <!-- Wrapper -->
+    <!-- wrapper -->
     <div class="wrapper">
 
-        <!-- Main Header -->
+        <!-- main-header -->
         <header class="main-header">
 
-            <!-- Logo -->
+            <!-- logo -->
             <div class="logo">
                 <h1>
                     <a href="{{ site.url }}">
                         Miriam<span>Tocino.</span><small>Turning into Web Developer.</small>
                     </a>
                 </h1>
-            </div> <!-- End Logo -->
+            </div>
+            <!-- /logo -->
 
-            <!-- Navigation -->
+            <!-- main-nav -->
             <nav class="main-nav">
                 {% for link in site.navigation %}
                     {% assign current = nil %}
@@ -23,6 +24,8 @@
 
                     <a href="{{ link.url }}" class="{{ current }}">{{ link.title }}</a>
                 {% endfor %}
-            </nav> <!-- End Navigation -->
+            </nav>
+            <!-- /main-nav -->
 
-        </header> <!-- End Main Header -->
+        </header>
+        <!-- /main-header -->

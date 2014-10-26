@@ -8,6 +8,12 @@
     @include breakpoint($breakpoint-s) {
         @include layout($s-layout);
 
+        &.about-me,
+        &.recent-articles,
+        &.related-articles {
+            display: none;
+        }
+
         border-bottom: 1px solid $gray-lighter;
         padding-bottom: 20px;
         margin-bottom: 20px;
@@ -38,7 +44,7 @@
 
                     &:before {
                         content: "• ";
-                        color: $color-primary; /* or whatever color you prefer */
+                        color: $color-primary;
                     }
                 }
             }
@@ -53,5 +59,11 @@
     // L
     @include breakpoint($breakpoint-l) {
         @include layout($l-layout);
+
+        &.about-me,
+        &.recent-articles,
+        &.related-articles {
+            display: block;
+        }
     };
 }

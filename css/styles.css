@@ -1549,6 +1549,9 @@ main {
     padding-bottom: 20px;
     margin-bottom: 20px;
   }
+  .mod-widget.about-me, .mod-widget.recent-articles, .mod-widget.related-articles {
+    display: none;
+  }
   .mod-widget h4 {
     font-weight: 500;
   }
@@ -1570,7 +1573,11 @@ main {
   .mod-widget .toc ul li:before {
     content: "• ";
     color: #d33682;
-    /* or whatever color you prefer */
+  }
+}
+@media (min-width: 769px), (min-width: 1024px) {
+  .mod-widget.about-me, .mod-widget.recent-articles, .mod-widget.related-articles {
+    display: block;
   }
 }
 
@@ -1578,41 +1585,34 @@ main {
     MODULE
     PAGINATION
 \*------------------------------------*/
-.mod-pagination ul {
-  padding-left: 0;
-}
-.mod-pagination ul li {
-  display: inline;
-  border: 1px solid #eeeeee;
-  margin-right: -5px;
-  padding: 5px 10px;
-}
-.mod-pagination ul li.active, .mod-pagination ul li:hover {
-  border: 1px solid #222222;
-  background: #222222;
-  color: #fff;
-}
-.mod-pagination ul li.active a, .mod-pagination ul li:hover a {
-  color: #fff;
-}
-.mod-pagination ul li.disabled {
-  color: #eeeeee;
-}
-.mod-pagination ul li.disabled:hover {
-  background: none;
-  border: 1px solid #eeeeee;
-  color: #eeeeee;
-}
 @media (min-width: 0px), (min-width: 568px) {
   .mod-pagination {
-    display: none;
-  }
-}
-@media (min-width: 769px), (min-width: 1024px) {
-  .mod-pagination {
-    display: inline;
     margin-bottom: 40px;
-    display: block;
+  }
+  .mod-pagination ul {
+    padding-left: 0;
+  }
+  .mod-pagination ul li {
+    display: inline;
+    border: 1px solid #eeeeee;
+    margin-right: -5px;
+    padding: 5px 10px;
+  }
+  .mod-pagination ul li.active, .mod-pagination ul li:hover {
+    border: 1px solid #222222;
+    background: #222222;
+    color: #fff;
+  }
+  .mod-pagination ul li.active a, .mod-pagination ul li:hover a {
+    color: #fff;
+  }
+  .mod-pagination ul li.disabled {
+    color: #eeeeee;
+  }
+  .mod-pagination ul li.disabled:hover {
+    background: none;
+    border: 1px solid #eeeeee;
+    color: #eeeeee;
   }
 }
 
@@ -1638,27 +1638,47 @@ main {
 }
 
 /*------------------------------------*\
+    MODULE FLAG MESSAGE
+\*------------------------------------*/
+@media (min-width: 0px), (min-width: 568px) {
+  .mod-flag-message {
+    margin-top: 20px;
+    background: #d33682;
+    color: #fff;
+    padding: 10px 10px 5px 10px;
+    text-align: center;
+  }
+  .mod-flag-message a:hover {
+    color: #fff;
+  }
+}
+
+/*------------------------------------*\
     BUTTONS
 \*------------------------------------*/
-.button {
-  border: 1px solid #eeeeee;
-  text-transform: uppercase;
-  padding: 7px 10px;
-}
-.button:hover {
-  border: 1px solid #222222;
-  background: #222222;
-  color: #fff;
+@media (min-width: 0px), (min-width: 568px) {
+  .button {
+    border: 1px solid #eeeeee;
+    text-transform: uppercase;
+    padding: 7px 10px;
+  }
+  .button:hover {
+    border: 1px solid #222222;
+    background: #222222;
+    color: #fff;
+  }
 }
 
 @media (min-width: 0px), (min-width: 568px) {
   .back-to-home {
-    display: none;
+    border: 1px solid #222222;
+    color: #fff;
+    background: #222222;
   }
-}
-@media (min-width: 769px), (min-width: 1024px) {
-  .back-to-home {
-    display: inline-block;
+  .back-to-home:hover {
+    border: 1px solid #eeeeee;
+    background: none;
+    color: #222222;
   }
 }
 
@@ -1731,35 +1751,4 @@ main {
   .about-main img.me {
     margin: 20px auto 0 auto;
   }
-}
-
-/*------------------------------------*\
-    FLAG MESSAGE
-\*------------------------------------*/
-.flag-message {
-  margin-top: 20px;
-  background: #d33682;
-  color: #fff;
-  padding: 10px 10px 5px 10px;
-  text-align: center;
-}
-.flag-message a:hover {
-  color: #fff;
-}
-
-/*------------------------------------*\
-    IMPRESSUM
-\*------------------------------------*/
-article.impressum ul {
-  list-style: none !important;
-  padding: 0;
-  margin: 0;
-}
-article.impressum ul li {
-  padding-left: 1em;
-  text-indent: -.7em;
-}
-article.impressum ul li:before {
-  content: "• ";
-  color: #d33682;
 }
