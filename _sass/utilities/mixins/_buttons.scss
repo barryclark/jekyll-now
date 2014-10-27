@@ -1,0 +1,34 @@
+/*------------------------------------*\
+    MIXINS
+    BUTTONS
+\*------------------------------------*/
+
+@each $theme, $color in $ui-colors {
+    .btn--#{$theme} {
+        border: 1px solid $gray-lighter;
+        text-transform: uppercase;
+        padding: em(7px) em(10px);
+
+        &:hover {
+            border: 1px solid $color;
+            background-color: $color;
+            color: $white;
+        }
+    }
+}
+
+@each $theme, $color in $ui-colors {
+    .btn--color-brackground--#{$theme} {
+        border: 1px solid $gray-darker;
+        text-transform: uppercase;
+        padding: em(7px) em(10px);
+        background-color: $color;
+        color: $white;
+
+        &:hover {
+            border: 1px solid $gray-lighter;
+            background-color: $white;
+            color: $gray-darker;
+        }
+    }
+}

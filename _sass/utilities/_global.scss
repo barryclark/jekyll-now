@@ -4,12 +4,14 @@
 \*------------------------------------*/
 
 // Font Stacks
+// -------------------------
 
 $font-url--google         : 'http://fonts.googleapis.com/css?family=Raleway:400,500,700';
 $font-family--primary     : 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif !default;
 $font-family--secondary   : 'Helvetica Neue', Helvetica, Arial, sans-serif !default;
 
 // Font Weights
+// -------------------------
 
 $font-weight--thin        : 100 !default;
 $font-weight--light       : 300 !default;
@@ -18,6 +20,7 @@ $font-weight--bold        : 700 !default;
 $font-weight--ultra-bold  : 900 !default;
 
 // Descriptive Base Colors
+// -------------------------
 
 $white  : #fff !default;
 $black  : #0b0b0b !default;
@@ -32,11 +35,23 @@ $cerise         : #d33682; // rgb(211,54,130) // http://chir.ag/projects/name-th
 $persian-green  : #009999; // rgb(0,153,153) // http://chir.ag/projects/name-that-color
 
 // Color Usage
+// -------------------------
 
 $color-primary    : $cerise; // rgb(211,54,130)
 $color-secondary  : $persian-green; // rgb(0,153,153)
 
+// UI Colors (Sass Maps)
+// -------------------------
+
+$ui-colors  : (
+    default : $gray-darker,
+    success : $persian-green,
+    warning : $cerise,
+    info    : $white
+);
+
 // Scaffolding
+// -------------------------
 
 $body-bg      : #f0f2f3 !default; // Background color for <body>
 $text-color   : $gray !default; // Global text color on <body>
@@ -45,8 +60,8 @@ $text-weight  : 500 !default; // Global text weight on <body>
 $link-color        : $gray-dark !default; // Global textual link color
 $link-hover-color  : $color-primary !default;
 
-
 // Typography
+// -------------------------
 
 $base__font-size  : .875em !default;
 $font-size-large  : ceil(($base__font-size * 1.25)) !default;   // ~18px
@@ -68,10 +83,8 @@ $headings-font-weight     : 700 !default;
 $headings-line-height     : 1.1 !default;
 $headings-color           : $gray-dark !default;
 
-
-//== Buttons
-//
-//## For each buttons, define text, background and border color.
+// Buttons
+// -------------------------
 
 $btn-font-weight          : normal !default;
 
@@ -88,6 +101,7 @@ $btn-secondary-bg           : $color-secondary !default;
 $btn-secondary-border       : darken($btn-secondary-bg, 5%) !default;
 
 // Type
+// -------------------------
 
 $component-offset-horizontal  : 180px !default; // Horizontal offset for forms and lists.
 
@@ -106,6 +120,7 @@ $dl-horizontal-offset         : $component-offset-horizontal !default; // Width 
 $hr-border                    : $gray-lighter !default; // Horizontal line color.
 
 // Tables
+// -------------------------
 
 $table-cell-padding           : 2px 8px !default; // Padding for `<th>`s and `<td>`s.
 $table-condensed-cell-padding : 5px !default; // Padding for cells in `.table-condensed`.
