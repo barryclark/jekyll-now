@@ -1,17 +1,24 @@
 /*------------------------------------*\
     STYLES
-    Made with love by Miriam Tocino
+    Made with ♥ by Miriam Tocino
     miriam.tocino@gmail.com
 \*------------------------------------*/
 
-// Import third-party libraries
+// Third-party libraries
 @import "compass/reset";
 @import "compass/css3/box-sizing";
 @import "compass/utilities/general/min";
 @import "susy";
 @import "breakpoint";
 
+// Utilities
 @import "utilities/index";
+
+// Base
 @import "base/index";
+
+// Layout
 @import "layout/index";
+
+// Modules
 @import "modules/index";

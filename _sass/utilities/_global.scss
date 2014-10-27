@@ -1,6 +1,6 @@
 /*------------------------------------*\
     UTILITIES
-    GLOBAL
+    Global
 \*------------------------------------*/
 
 // Font Stacks
@@ -131,3 +131,8 @@ $table-bg-hover               : #f5f5f5 !default; // Background color used for `
 $table-bg-active              : $table-bg-hover !default;
 
 $table-border-color           : #ddd !default; // Border color for table and cell borders.
+
+// Path to Assets
+// -------------------------
+
+$path--rel      : "../images";

@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*------------------------------------*\
     STYLES
-    Made with love by Miriam Tocino
+    Made with ♥ by Miriam Tocino
     miriam.tocino@gmail.com
 \*------------------------------------*/
 @import url("http://fonts.googleapis.com/css?family=Raleway:400,500,700");
@@ -63,13 +63,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /*------------------------------------*\
     UTILITIES
-    _index.scss
-    # non-CSS outputs (i.e. mixins, variables)
-    # non-modules
 \*------------------------------------*/
 /*------------------------------------*\
     UTILITIES
-    GLOBAL
+    Global
 \*------------------------------------*/
 /*------------------------------------*\
     FUNCTIONS
@@ -86,6 +83,21 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     UTILITIES
     FONTS
 \*------------------------------------*/
+/*------------------------------------*\
+    UTILITIES
+    Helpers
+\*------------------------------------*/
+.srt {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
 /*------------------------------------*\
     BASE
     _index.scss
@@ -1615,6 +1627,21 @@ main {
 }
 
 /*------------------------------------*\
+    MODULE IMAGE
+\*------------------------------------*/
+@media (min-width: 0px), (min-width: 900px) {
+  .mod-img img.me {
+    max-width: 300px !important;
+    -webkit-border-radius: 300px;
+    -moz-border-radius: 300px;
+    -ms-border-radius: 300px;
+    -o-border-radius: 300px;
+    border-radius: 300px;
+    margin: 20px auto 0 auto;
+  }
+}
+
+/*------------------------------------*\
     ALERT MESSAGE
 \*------------------------------------*/
 @media (min-width: 0px), (min-width: 568px) {
@@ -1802,23 +1829,5 @@ main {
     padding-left: 1.38889%;
     padding-right: 1.38889%;
     padding-right: 0;
-  }
-}
-.about-main img.me {
-  max-width: 300px !important;
-  -webkit-border-radius: 300px;
-  -moz-border-radius: 300px;
-  -ms-border-radius: 300px;
-  -o-border-radius: 300px;
-  border-radius: 300px;
-}
-@media (min-width: 0px), (min-width: 568px) {
-  .about-main img.me {
-    margin: 20px auto 0 auto;
-  }
-}
-@media (min-width: 769px), (min-width: 1024px) {
-  .about-main img.me {
-    margin: 20px auto 0 auto;
   }
 }

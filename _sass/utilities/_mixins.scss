@@ -29,6 +29,7 @@
 
 // WebKit-style focus
 // -------------------------
+
 @mixin tab-focus() {
     // Default
     outline: thin dotted;
@@ -40,6 +41,7 @@
 // Background Colors
 // Used e.g. for alert messages
 // -------------------------
+
 @mixin bg-colors($map) {
     @each $theme, $color in $map {
         &--#{$theme} {
@@ -53,4 +55,16 @@
             }
         }
     }
+}
+
+// Image Replace
+// @include img-replace("me.jpg", 100px, 100px, inline-block)
+// -------------------------
+
+@mixin img-replace($img, $width, $height, $display: block) {
+    background-image: url('#{$path--rel}/#{$img}');
+    background-repeat: no-repeat;
+    width: $width;
+    height: $height;
+    display: $display;
 }

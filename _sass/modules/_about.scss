@@ -53,19 +53,4 @@
 			padding-right: 0;
 		};
 	}
-
-	img.me {
-		max-width: 300px !important;
-		@include border-radius(300px);
-
-			// S
-		@include breakpoint($breakpoint-s) {
-			margin: 20px auto 0 auto;
-		};
-
-		// L
-		@include breakpoint($breakpoint-l) {
-			margin: 20px auto 0 auto;
-		};
-	}
 }
