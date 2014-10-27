@@ -1326,19 +1326,7 @@ main {
     font-weight: 500;
   }
   .content h3 {
-    margin: 5px 0;
-  }
-  .content .date {
-    color: #777777;
-    font-weight: 400;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 12px;
-    margin-top: 5px;
-  }
-  .content .tagline {
-    margin-top: 9px;
-    font-weight: 500;
+    margin: 0.35714em 0;
   }
 }
 @media (min-width: 769px), (min-width: 1024px) {
@@ -1348,7 +1336,7 @@ main {
     padding-left: 1.38889%;
     padding-right: 1.38889%;
     padding-left: 0;
-    padding-right: 40px;
+    padding-right: 2.85714em;
   }
 }
 
@@ -1498,6 +1486,18 @@ main {
   .mod-post table {
     margin: 15px 0;
   }
+  .mod-post .date {
+    color: #777777;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 0.85714em;
+    margin-top: 0.35714em;
+  }
+  .mod-post .tagline {
+    margin-top: 0.64286em;
+    font-weight: 500;
+  }
   .mod-post ul {
     list-style: none !important;
     padding: 0;
@@ -1645,6 +1645,45 @@ main {
 }
 
 /*------------------------------------*\
+    MODULE ABOUT PAGE
+\*------------------------------------*/
+@media (min-width: 0px), (min-width: 568px) {
+  .mod-about {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .mod-about:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+  .mod-about .content h3 {
+    margin-bottom: 1.42857em;
+  }
+  .mod-about .content ul li {
+    margin-left: 0;
+  }
+}
+@media (min-width: 769px), (min-width: 1024px) {
+  .mod-about .content {
+    width: 66.66667%;
+    float: left;
+    padding-left: 1.38889%;
+    padding-right: 1.38889%;
+    padding-left: 0;
+    padding-right: 2.85714em;
+  }
+  .mod-about aside {
+    width: 33.33333%;
+    float: right;
+    padding-left: 1.38889%;
+    padding-right: 1.38889%;
+    padding-right: 0;
+  }
+}
+
+/*------------------------------------*\
     ALERT MESSAGE
 \*------------------------------------*/
 @media (min-width: 0px), (min-width: 568px) {
@@ -1780,57 +1819,4 @@ main {
   border: 1px solid #eeeeee;
   background-color: #fff;
   color: #222222;
-}
-
-/*------------------------------------*\
-    ABOUT PAGE
-\*------------------------------------*/
-.about-main .content h3 {
-  margin-bottom: 30px;
-}
-.about-main .content ul li {
-  margin-left: 0;
-}
-@media (min-width: 0px), (min-width: 568px) {
-  .about-main .content {
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .about-main .content:after {
-    content: " ";
-    display: block;
-    clear: both;
-  }
-}
-@media (min-width: 769px), (min-width: 1024px) {
-  .about-main .content {
-    width: 66.66667%;
-    float: left;
-    padding-left: 1.38889%;
-    padding-right: 1.38889%;
-    padding-left: 0;
-    padding-right: 40px;
-  }
-}
-@media (min-width: 0px), (min-width: 568px) {
-  .about-main aside {
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .about-main aside:after {
-    content: " ";
-    display: block;
-    clear: both;
-  }
-}
-@media (min-width: 769px), (min-width: 1024px) {
-  .about-main aside {
-    width: 33.33333%;
-    float: right;
-    padding-left: 1.38889%;
-    padding-right: 1.38889%;
-    padding-right: 0;
-  }
 }

@@ -27,6 +27,20 @@
 			margin: 15px 0;
 		}
 
+        .date {
+            color: $gray-light;
+            font-weight: 400;
+            margin: 0;
+            padding: 0;
+            margin-bottom: em(12px);
+            margin-top: em(5px);
+        }
+
+        .tagline {
+            margin-top: em(9px);
+            font-weight: 500;
+        }
+
 		ul {
 		list-style: none !important;
 		padding:0;
