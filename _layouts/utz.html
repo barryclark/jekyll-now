@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+
+    <meta name="author" content="{{ site.name }}" />
+    <meta name="description" content="{{ site.description }}">
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  <link rel="stylesheet" href="{{ site.baseurl }}/style.css" type="text/css" media="screen" />
+  <link href='http://fonts.googleapis.com/css?family=Exo:300,400,700,900,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <div id="header-container">
+        <div id="header-sub-container">
+            <div id="header">
+              <h1>galtman<span id="dot-com">.com</span></h1>
+            </div>
+            <div id="links">
+                <a href="#projects">PROJECTS</a>
+                <a href="#blog">BLOG</a>
+                <a href="http://www.linkedin.com/in/galtman/">LINKEDIN</a>
+                <a href="https://github.com/fewf">GITHUB</a>
+                <a href="mailto:g.s.altman@gmail.com">EMAIL</a>
+            </div>
+        </div>
+    </div>
+    <div id="blog-container">
+        <div class="left side">
+        </div>
+        <div class="ctcol">
+
+          <div class="top">
+            <div name="projects" id="projects">
+              <h3>
+                  projects
+              </h3>
+              <a href="http://www.galtman.com/twerqle/" target="blank" class="project">
+                  <img src="{{ site.baseurl }}/images/projects/twerqle.png" alt="twerqle" />
+                  <h4>Twerqle</h4>
+                  <p>In-browser Javascript game</p>
+              </a>
+              <a href="http://www.galtman.com/thcript/" target="blank" class="project">
+                  <img src="{{ site.baseurl }}/images/projects/thcript.png" alt="thcript" />
+                  <h4>Thcript</h4>
+                  <p>Lisp interpreter in JavaScript</p>
+              </a>
+              <a href="http://www.kingtrivia.com" target="blank" class="project">
+                  <img src="{{ site.baseurl }}/images/projects/kingtrivia.png" alt="king trivia" />
+                  <h4>King Trivia</h4>
+                  <p>Design, Development, Front End, Back End</p>
+              </a>
+              <br />
+              <a href="http://www.galtman.com/palindromizer/" target="blank" class="project">
+                  <img src="{{ site.baseurl }}/images/projects/palindromizer.png" alt="palindromizer" />
+                  <h4>Palindromizer</h4>
+                  <p>A palindrome editor, in Javascript, work-in-progress</p>
+              </a>
+              <a href="http://www.strangecage.org" target="blank" class="project">
+                  <img src="{{ site.baseurl }}/images/projects/strangecage.png" alt="strange cage" />
+                  <h4>Strange Cage</h4>
+                  <p>Design, Development, Custom CMS, Web Store</p>
+              </a>
+              <a href="http://www.anomalouspress.org/7/1.beals.carried.php" target="blank" class="project">
+                  <img src="{{ site.baseurl }}/images/projects/anomalous.png" alt="anomalous" />
+                  <h4>Anomalous</h4>
+                  <p>Interactive literature
+                  </p>
+              </a>         
+          </div>
+          <a name="blog" />
+            {{ content }}
+          </div>
+        	<div id="footer">
+        	  {% include svg-icons.html %}
+        		<p>&copy; {{ Time.new.year }} galtman.com</p>
+        	</div>
+        </div>
+        <div class="right side">
+        </div>
+    </div>
+</body>
+</html>
