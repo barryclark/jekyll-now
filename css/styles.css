@@ -75,109 +75,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     FUNCTIONS
 \*------------------------------------*/
 /*------------------------------------*\
-    MIXINS
-\*------------------------------------*/
-/*------------------------------------*\
-    MIXINS
-    BUTTONS
-\*------------------------------------*/
-.btn--default {
-  border: 1px solid #eeeeee;
-  text-transform: uppercase;
-  padding: 0.5em 0.71429em;
-}
-.btn--default:hover {
-  border: 1px solid #222222;
-  background-color: #222222;
-  color: #fff;
-}
-
-.btn--success {
-  border: 1px solid #eeeeee;
-  text-transform: uppercase;
-  padding: 0.5em 0.71429em;
-}
-.btn--success:hover {
-  border: 1px solid #009999;
-  background-color: #009999;
-  color: #fff;
-}
-
-.btn--warning {
-  border: 1px solid #eeeeee;
-  text-transform: uppercase;
-  padding: 0.5em 0.71429em;
-}
-.btn--warning:hover {
-  border: 1px solid #d33682;
-  background-color: #d33682;
-  color: #fff;
-}
-
-.btn--info {
-  border: 1px solid #eeeeee;
-  text-transform: uppercase;
-  padding: 0.5em 0.71429em;
-}
-.btn--info:hover {
-  border: 1px solid #fff;
-  background-color: #fff;
-  color: #fff;
-}
-
-.btn--color-brackground--default {
-  border: 1px solid #222222;
-  text-transform: uppercase;
-  padding: 0.5em 0.71429em;
-  background-color: #222222;
-  color: #fff;
-}
-.btn--color-brackground--default:hover {
-  border: 1px solid #eeeeee;
-  background-color: #fff;
-  color: #222222;
-}
-
-.btn--color-brackground--success {
-  border: 1px solid #222222;
-  text-transform: uppercase;
-  padding: 0.5em 0.71429em;
-  background-color: #009999;
-  color: #fff;
-}
-.btn--color-brackground--success:hover {
-  border: 1px solid #eeeeee;
-  background-color: #fff;
-  color: #222222;
-}
-
-.btn--color-brackground--warning {
-  border: 1px solid #222222;
-  text-transform: uppercase;
-  padding: 0.5em 0.71429em;
-  background-color: #d33682;
-  color: #fff;
-}
-.btn--color-brackground--warning:hover {
-  border: 1px solid #eeeeee;
-  background-color: #fff;
-  color: #222222;
-}
-
-.btn--color-brackground--info {
-  border: 1px solid #222222;
-  text-transform: uppercase;
-  padding: 0.5em 0.71429em;
-  background-color: #fff;
-  color: #fff;
-}
-.btn--color-brackground--info:hover {
-  border: 1px solid #eeeeee;
-  background-color: #fff;
-  color: #222222;
-}
-
-/*------------------------------------*\
     UTILITIES
     FONTS
 \*------------------------------------*/
@@ -1736,6 +1633,102 @@ main {
   .mod-flag-message a:hover {
     color: #fff;
   }
+}
+
+.btn--default {
+  border: 1px solid #eeeeee;
+  text-transform: uppercase;
+  padding: 0.5em 0.71429em;
+}
+.btn--default:hover {
+  border: 1px solid #222222;
+  background-color: #222222;
+  color: #fff;
+}
+
+.btn--success {
+  border: 1px solid #eeeeee;
+  text-transform: uppercase;
+  padding: 0.5em 0.71429em;
+}
+.btn--success:hover {
+  border: 1px solid #009999;
+  background-color: #009999;
+  color: #fff;
+}
+
+.btn--warning {
+  border: 1px solid #eeeeee;
+  text-transform: uppercase;
+  padding: 0.5em 0.71429em;
+}
+.btn--warning:hover {
+  border: 1px solid #d33682;
+  background-color: #d33682;
+  color: #fff;
+}
+
+.btn--info {
+  border: 1px solid #eeeeee;
+  text-transform: uppercase;
+  padding: 0.5em 0.71429em;
+}
+.btn--info:hover {
+  border: 1px solid #fff;
+  background-color: #fff;
+  color: #fff;
+}
+
+.btn--color-brackground--default {
+  border: 1px solid #222222;
+  text-transform: uppercase;
+  padding: 0.5em 0.71429em;
+  background-color: #222222;
+  color: #fff;
+}
+.btn--color-brackground--default:hover {
+  border: 1px solid #eeeeee;
+  background-color: #fff;
+  color: #222222;
+}
+
+.btn--color-brackground--success {
+  border: 1px solid #222222;
+  text-transform: uppercase;
+  padding: 0.5em 0.71429em;
+  background-color: #009999;
+  color: #fff;
+}
+.btn--color-brackground--success:hover {
+  border: 1px solid #eeeeee;
+  background-color: #fff;
+  color: #222222;
+}
+
+.btn--color-brackground--warning {
+  border: 1px solid #222222;
+  text-transform: uppercase;
+  padding: 0.5em 0.71429em;
+  background-color: #d33682;
+  color: #fff;
+}
+.btn--color-brackground--warning:hover {
+  border: 1px solid #eeeeee;
+  background-color: #fff;
+  color: #222222;
+}
+
+.btn--color-brackground--info {
+  border: 1px solid #222222;
+  text-transform: uppercase;
+  padding: 0.5em 0.71429em;
+  background-color: #fff;
+  color: #fff;
+}
+.btn--color-brackground--info:hover {
+  border: 1px solid #eeeeee;
+  background-color: #fff;
+  color: #222222;
 }
 
 /*------------------------------------*\

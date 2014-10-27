@@ -5,6 +5,9 @@
     # buttons, widgets etc.
 \*------------------------------------*/
 
+// Modules
+// -------------------------
+
 @import "mod-text";
 @import "mod-post";
 @import "mod-share-post";
@@ -13,4 +16,11 @@
 @import "mod-pagination";
 @import "mod-social-media-list";
 @import "mod-flag-message";
+
+// Buttons
+// -------------------------
+
+@import "buttons/btn";
+@import "buttons/btn--color-background";
+
 @import "about";

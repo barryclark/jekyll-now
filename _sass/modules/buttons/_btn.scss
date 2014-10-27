@@ -1,0 +1,16 @@
+// Button white background
+// -------------------------
+
+@each $theme, $color in $ui-colors {
+    .btn--#{$theme} {
+        border: 1px solid $gray-lighter;
+        text-transform: uppercase;
+        padding: em(7px) em(10px);
+
+        &:hover {
+            border: 1px solid $color;
+            background-color: $color;
+            color: $white;
+        }
+    }
+}
