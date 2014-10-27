@@ -1517,6 +1517,9 @@ main {
   .mod-post p a:hover {
     color: #222222;
   }
+  .mod-post img {
+    margin-bottom: 2.14286em;
+  }
 }
 
 /*------------------------------------*\
