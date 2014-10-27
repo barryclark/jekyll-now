@@ -1,9 +1,13 @@
 + scss/
   |
+  |
   | + base/                 # reset, typography, site-wide
   |   |-- _index.scss       # imports for all base styles
+  |   |-- _config.scss      # global configuration
   |   |-- _base.scss        # base styles
   |   |-- _normalize.scss   # normalize v3.0.1
+  |   |-- _susy-setup.scss  # global layouts definitions
+  |   |-- _breakpoints.scss # media queries for different devices
   |
   | + layout/               # major components, e.g., header, footer etc.
   |   |-- _index.scss       # imports for all layout styles
@@ -35,4 +39,3 @@
   |   + ie.scss             # IE specific Sass file
   |   + styles.scss         # primary Sass file
   |   + _shame.scss         # because hacks happen
-  |

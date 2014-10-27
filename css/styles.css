@@ -4,15 +4,7 @@
     Made with love by Miriam Tocino
     miriam.tocino@gmail.com
 \*------------------------------------*/
-/*------------------------------------*\
-    UTILITIES
-    _index.scss
-    # non-CSS outputs (i.e. mixins, variables)
-    # non-modules
-\*------------------------------------*/
-/*------------------------------------*\
-    IMPORT MIXINS
-\*------------------------------------*/
+@import url("http://fonts.googleapis.com/css?family=Raleway:400,500,700");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -70,18 +62,35 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /*------------------------------------*\
+    UTILITIES
+    _index.scss
+    # non-CSS outputs (i.e. mixins, variables)
+    # non-modules
+\*------------------------------------*/
+/*------------------------------------*\
+    UTILITIES
+    GLOBAL
+\*------------------------------------*/
+/*------------------------------------*\
+    IMPORT MIXINS
+\*------------------------------------*/
+/*------------------------------------*\
+    UTILITIES
+    FONTS
+\*------------------------------------*/
+/*------------------------------------*\
     BASE
     _index.scss
     # reset, typography, site-wide
-\*------------------------------------*/
-/*------------------------------------*\
-    CONFIG
 \*------------------------------------*/
 /*------------------------------------*\
     BREAKPOINT
     Media queries breakpoints
     Define the breakpoints at which your layout will change,
     adapting to different screen sizes.
+\*------------------------------------*/
+/*------------------------------------*\
+    SUSY SET-UP
 \*------------------------------------*/
 /*------------------------------------*\
     NORMALIZE
@@ -593,21 +602,18 @@ table {
 }
 
 /*------------------------------------*\
-    SUSY SET-UP
-\*------------------------------------*/
-/*------------------------------------*\
-    SCAFFOLDING
+    BASE
 \*------------------------------------*/
 * {
-  -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 *:before,
 *:after {
-  -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -677,9 +683,6 @@ ul {
   padding-left: 0;
 }
 
-/*------------------------------------*\
-    TYPE
-\*------------------------------------*/
 ::selection {
   background: #d33682;
   color: #fff;
@@ -808,9 +811,65 @@ blockquote:after {
   content: "";
 }
 
-/*------------------------------------*\
-    CODE
-\*------------------------------------*/
+table {
+  background-color: transparent;
+}
+
+th {
+  text-align: left;
+}
+
+table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1em;
+}
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td,
+table > tfoot > tr > th,
+table > tfoot > tr > td {
+  padding: 2px 8px;
+  line-height: 1.7;
+  vertical-align: top;
+  border-top: 1px solid #ddd;
+}
+table > thead > tr > th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #ddd;
+}
+table > caption + thead > tr:first-child > th,
+table > caption + thead > tr:first-child > td,
+table > colgroup + thead > tr:first-child > th,
+table > colgroup + thead > tr:first-child > td,
+table > thead:first-child > tr:first-child > th,
+table > thead:first-child > tr:first-child > td {
+  border-top: 0;
+}
+table > tbody + tbody {
+  border-top: 2px solid #ddd;
+}
+table .table {
+  background-color: #f0f2f3;
+}
+
+table {
+  border: 1px solid #ddd;
+}
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td,
+table > tfoot > tr > th,
+table > tfoot > tr > td {
+  border: 1px solid #ddd;
+}
+table > thead > tr > th,
+table > thead > tr > td {
+  border-bottom-width: 2px;
+}
+
 pre, pre code, pre kbd, pre samp {
   color: #fff;
 }
@@ -1090,82 +1149,6 @@ code {
 }
 .highlight pre code .gi {
   color: #a6e22e;
-}
-
-/*------------------------------------*\
-    TABLES
-\*------------------------------------*/
-table {
-  background-color: transparent;
-}
-
-th {
-  text-align: left;
-}
-
-table {
-  width: 100%;
-  max-width: 100%;
-  margin-bottom: 1em;
-}
-table > thead > tr > th,
-table > thead > tr > td,
-table > tbody > tr > th,
-table > tbody > tr > td,
-table > tfoot > tr > th,
-table > tfoot > tr > td {
-  padding: 2px 8px;
-  line-height: 1.7;
-  vertical-align: top;
-  border-top: 1px solid #ddd;
-}
-table > thead > tr > th {
-  vertical-align: bottom;
-  border-bottom: 2px solid #ddd;
-}
-table > caption + thead > tr:first-child > th,
-table > caption + thead > tr:first-child > td,
-table > colgroup + thead > tr:first-child > th,
-table > colgroup + thead > tr:first-child > td,
-table > thead:first-child > tr:first-child > th,
-table > thead:first-child > tr:first-child > td {
-  border-top: 0;
-}
-table > tbody + tbody {
-  border-top: 2px solid #ddd;
-}
-table .table {
-  background-color: #f0f2f3;
-}
-
-table {
-  border: 1px solid #ddd;
-}
-table > thead > tr > th,
-table > thead > tr > td,
-table > tbody > tr > th,
-table > tbody > tr > td,
-table > tfoot > tr > th,
-table > tfoot > tr > td {
-  border: 1px solid #ddd;
-}
-table > thead > tr > th,
-table > thead > tr > td {
-  border-bottom-width: 2px;
-}
-
-/*------------------------------------*\
-    HIDE-ON-MOBILE
-\*------------------------------------*/
-@media (min-width: 0px), (min-width: 568px) {
-  .hide-on-mobile {
-    display: none;
-  }
-}
-@media (min-width: 769px), (min-width: 1024px) {
-  .hide-on-mobile {
-    display: inline-block;
-  }
 }
 
 /*------------------------------------*\
@@ -1558,19 +1541,19 @@ main {
   .mod-widget ul p.date {
     margin-bottom: 20px;
   }
-  .mod-widget .toc ul {
+  .mod-widget.toc ul {
     list-style: none !important;
     padding: 0;
     margin: 0;
   }
-  .mod-widget .toc ul li:first-child {
+  .mod-widget.toc ul li:first-child {
     display: none;
   }
-  .mod-widget .toc ul li {
+  .mod-widget.toc ul li {
     padding-left: 1em;
     text-indent: -.7em;
   }
-  .mod-widget .toc ul li:before {
+  .mod-widget.toc ul li:before {
     content: "• ";
     color: #d33682;
   }

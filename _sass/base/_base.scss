@@ -1,117 +1,380 @@
 /*------------------------------------*\
-    CONFIG
+    BASE
 \*------------------------------------*/
 
-// Font Stacks
-
-$font-url--google         : 'http://fonts.googleapis.com/css?family=Raleway:400,500,700';
-$font-family--primary     : 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif !default;
-$font-family--secondary   : 'Helvetica Neue', Helvetica, Arial, sans-serif !default;
-
-// Font Weights
-
-$font-weight--thin        : 100 !default;
-$font-weight--light       : 300 !default;
-$font-weight--medium      : 400 !default;
-$font-weight--bold        : 700 !default;
-$font-weight--ultra-bold  : 900 !default;
-
-// Descriptive Base Colors
-
-$white  : #fff !default;
-$black  : #0b0b0b !default;
-
-$gray-darker    : lighten(#000, 13.5%) !default; // #222
-$gray-dark      : lighten(#000, 20%) !default;   // #333
-$gray           : lighten(#000, 33.5%) !default; // #555
-$gray-light     : lighten(#000, 46.7%) !default; // #777
-$gray-lighter   : lighten(#000, 93.5%) !default; // #eee
-
-$cerise         : #d33682; // rgb(211,54,130) // http://chir.ag/projects/name-that-color
-$persian-green  : #009999; // rgb(0,153,153) // http://chir.ag/projects/name-that-color
-
-// Color Usage
-
-$color-primary    : $cerise; // rgb(211,54,130)
-$color-secondary  : $persian-green; // rgb(0,153,153)
-
-// Scaffolding
-
-$body-bg      : #f0f2f3 !default; // Background color for <body>
-$text-color   : $gray !default; // Global text color on <body>
-$text-weight  : 500 !default; // Global text weight on <body>
-
-$link-color        : $gray-dark !default; // Global textual link color
-$link-hover-color  : $color-primary !default;
-
-
-// Typography
-
-$font-size-base   : .875em !default;
-$font-size-large  : ceil(($font-size-base * 1.25)) !default;  // ~18px
-$font-size-small  : ceil(($font-size-base * 0.85)) !default;  // ~12px
-
-$font-size-h1     : floor(($font-size-base * 2.6)) !default;  // ~36px
-$font-size-h2     : floor(($font-size-base * 2.15)) !default; // ~30px
-$font-size-h3     : 1.9em !default;   // ~24px
-$font-size-h4     : 1.4em !default;  // ~18px
-$font-size-h5     : 1em !default;
-$font-size-h6     : ceil(($font-size-base * 0.85)) !default;  // ~12px
-
-$line-height-base         : 1.7 !default; // Unit-less `line-height` for use in components like buttons
-$line-height-computed     : floor(($font-size-base * $line-height-base)) !default; // ~20px
-
-// By default, this inherits from the `<body>`.
-$headings-font-family     : inherit !default;
-$headings-font-weight     : 700 !default;
-$headings-line-height     : 1.1 !default;
-$headings-color           : $gray-dark !default;
-
-
-//== Buttons
+// Reset the box-sizing
 //
-//## For each buttons, define text, background and border color.
+// Heads up! This reset may cause conflicts with some third-party widgets.
+// For recommendations on resolving such conflicts, see
+// http://getbootstrap.com/getting-started/#third-box-sizing
+* {
+    @include box-sizing(border-box);
+}
+*:before,
+*:after {
+    @include box-sizing(border-box);
+}
 
-$btn-font-weight          : normal !default;
+// Body reset
+// -------------------------
 
-$btn-default-color        : #333 !default;
-$btn-default-bg           : #fff !default;
-$btn-default-border       : #ccc !default;
+body {
+    background: $body-bg;
+    font-family: $font-family--primary;
+    font-size: $base__font-size;
+    line-height: $base__line-height;
+    color: $text-color;
+    font-weight: $text-weight;
+    overflow-x: hidden;
+    position: relative;
+}
 
-$btn-primary-color        : #fff !default;
-$btn-primary-bg           : $color-primary !default;
-$btn-primary-border       : darken($btn-primary-bg, 5%) !default;
+// Reset fonts for relevant elements
+// -------------------------
 
-$btn-secondary-color        : #fff !default;
-$btn-secondary-bg           : $color-secondary !default;
-$btn-secondary-border       : darken($btn-secondary-bg, 5%) !default;
+input,
+button,
+select,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
 
-// Type
+// Links
+// -------------------------
 
-$component-offset-horizontal  : 180px !default; // Horizontal offset for forms and lists.
+a {
+    color: $link-color; text-decoration: none; font-weight: 700;
+    @include transition(150ms);
 
-$text-muted                   : $gray-light !default; // Text muted color
+    &:hover,
+    &:focus {
+        color: $link-hover-color;
+        text-decoration: none;
+    }
 
-$abbr-border-color            : $gray-light !default; // Abbreviations and acronyms border colo
+    &:focus {
+        @include tab-focus();
+    }
+}
 
-$headings-small-color         : $gray-light !default; // Headings small color
+// Horizontal rules
+// -------------------------
 
-$blockquote-small-color       : $gray-light !default; // Blockquote small color
-$blockquote-font-size         : ($font-size-base * 1.45) !default; // Blockquote font size
-$blockquote-border-color      : $gray-lighter !default; // Blockquote border color
+hr {
+    border: 0;
+    clear: both;
+    width: 100%;
+    height: 1px;
+    border-top: 1px solid $hr-border;
+    margin-top: $line-height-computed;
+    margin-bottom: $line-height-computed;
+    margin: 20px 0;
+}
 
-$page-header-border-color     : $gray-lighter !default; // Page header border color
-$dl-horizontal-offset         : $component-offset-horizontal !default; // Width of horizontal description list titles
-$hr-border                    : $gray-lighter !default; // Horizontal line color.
+// Browse Happy
+// -------------------------
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+// Images
+// -------------------------
+
+img {
+    width:100%;
+    height:100%;
+    display:block;
+}
+
+// Lists
+// -------------------------
+
+ul {
+    padding-left: 0;
+}
+
+// Selection
+// -------------------------
+
+::selection {
+    background: $color-primary;
+    color: $white;
+}
+
+// Headings
+// -------------------------
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: $headings-font-family;
+    font-weight: $headings-font-weight;
+    line-height: $headings-line-height;
+    color: $headings-color;
+
+    small,
+    .small {
+        font-weight: 400;
+        line-height: 1;
+        color: $headings-small-color;
+        display: inline-block;
+        margin-left: 10px;
+    }
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3 {
+    margin-top: $line-height-computed;
+    margin-bottom: ($line-height-computed / 2);
+
+    small,
+    .small {
+        font-size: 65%;
+    }
+
+    span {
+        font-weight: 400;
+    }
+}
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+    margin-top: ($line-height-computed / 2);
+    margin-bottom: ($line-height-computed / 2);
+
+    small,
+    .small {
+        font-size: 75%;
+    }
+}
+
+h1, .h1 { font-size: $font-size-h1; }
+h2, .h2 { font-size: $font-size-h2; }
+h3, .h3 { font-size: $font-size-h3; }
+h4, .h4 { font-size: $font-size-h4; }
+h5, .h5 { font-size: $font-size-h5; }
+h6, .h6 { font-size: $font-size-h6; }
+
+// Body text
+// -------------------------
+
+p { margin: 0 0 ($line-height-computed / 2); }
+
+// Emphasis & misc
+// -------------------------
+
+strong {
+    font-weight: 700;
+    color: $link-color;
+}
+em { font-style: italic; }
+
+// Blockquotes
+// -------------------------
+
+blockquote {
+    padding: ($line-height-computed / 2) $line-height-computed;
+    margin: 15px 0;
+    font-size: $blockquote-font-size;
+    border-left: 5px solid $blockquote-border-color;
+
+    p,
+    ul,
+    ol {
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+// Quotes
+// -------------------------
+
+blockquote:before,
+blockquote:after {
+    content: "";
+}
 
 // Tables
+// -------------------------
 
-$table-cell-padding           : 2px 8px !default; // Padding for `<th>`s and `<td>`s.
-$table-condensed-cell-padding : 5px !default; // Padding for cells in `.table-condensed`.
+table {
+    background-color: $table-bg;
+}
+th {
+    text-align: left;
+}
 
-$table-bg                     : transparent !default; // Default background color used for all tables.
-$table-bg-accent              : #f9f9f9 !default; // Background color used for `.table-striped`.
-$table-bg-hover               : #f5f5f5 !default; // Background color used for `.table-hover`.
-$table-bg-active              : $table-bg-hover !default;
+// Baseline styles
 
-$table-border-color           : #ddd !default; // Border color for table and cell borders.
+table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: $line-height-computed;
+    // Cells
+    > thead,
+    > tbody,
+    > tfoot {
+        > tr {
+            > th,
+            > td {
+                padding: $table-cell-padding;
+                line-height: $base__line-height;
+                vertical-align: top;
+                border-top: 1px solid $table-border-color;
+            }
+        }
+    }
+    // Bottom align for column headings
+    > thead > tr > th {
+        vertical-align: bottom;
+        border-bottom: 2px solid $table-border-color;
+    }
+    // Remove top border from thead by default
+    > caption + thead,
+    > colgroup + thead,
+    > thead:first-child {
+        > tr:first-child {
+            > th,
+            > td {
+                border-top: 0;
+            }
+        }
+    }
+    // Account for multiple tbody instances
+    > tbody + tbody {
+        border-top: 2px solid $table-border-color;
+    }
+
+    // Nesting
+    .table {
+        background-color: $body-bg;
+    }
+}
+
+table {
+    border: 1px solid $table-border-color;
+    > thead,
+    > tbody,
+    > tfoot {
+        > tr {
+            > th,
+            > td {
+                border: 1px solid $table-border-color;
+            }
+        }
+    }
+    > thead > tr {
+        > th,
+        > td {
+            border-bottom-width: 2px;
+        }
+    }
+}
+
+// Code
+// -------------------------
+
+pre, pre code, pre kbd, pre samp {
+    color: $white;
+}
+
+pre {
+    background-color: $gray-darker;
+    padding: 10px;
+}
+
+p code {
+    background-color: $gray-darker;
+}
+
+code {
+    color: $white;
+    white-space: pre;
+    word-wrap: normal;
+    overflow: auto;
+}
+
+.highlight {
+    pre {
+        overflow-x: scroll;
+        code {
+            /* Line Number */
+            .lineno {
+                border-right: 2px solid $gray;
+                padding-right: 5px;
+                color: $gray;
+            }
+            .hll { background-color: #49483e }
+            .c { color: $color-primary } /* Comment */
+            .err { color: #960050; background-color: #1e0010 } /* Error */
+            .k { color: #66d9ef } /* Keyword */
+            .l { color: #ae81ff } /* Literal */
+            .n { color: #f8f8f2 } /* Name */
+            .o { color: #f92672 } /* Operator */
+            .p { color: #f8f8f2 } /* Punctuation */
+            .cm { color: $gray } /* Comment.Multiline */
+            .cp { color: $gray } /* Comment.Preproc */
+            .c1 { color: $color-primary } /* Comment.Single */
+            .cs { color: $gray } /* Comment.Special */
+            .ge { font-style: italic } /* Generic.Emph */
+            .gs { font-weight: bold } /* Generic.Strong */
+            .kc { color: #66d9ef } /* Keyword.Constant */
+            .kd { color: #66d9ef } /* Keyword.Declaration */
+            .kn { color: #f92672 } /* Keyword.Namespace */
+            .kp { color: #66d9ef } /* Keyword.Pseudo */
+            .kr { color: #66d9ef } /* Keyword.Reserved */
+            .kt { color: #66d9ef } /* Keyword.Type */
+            .ld { color: #e6db74 } /* Literal.Date */
+            .m { color: #ae81ff } /* Literal.Number */
+            .s { color: #e6db74 } /* Literal.String */
+            .na { color: #a6e22e } /* Name.Attribute */
+            .nb { color: #f8f8f2 } /* Name.Builtin */
+            .nc { color: #a6e22e } /* Name.Class */
+            .no { color: #66d9ef } /* Name.Constant */
+            .nd { color: #a6e22e } /* Name.Decorator */
+            .ni { color: #f8f8f2 } /* Name.Entity */
+            .ne { color: #a6e22e } /* Name.Exception */
+            .nf { color: #a6e22e } /* Name.Function */
+            .nl { color: #f8f8f2 } /* Name.Label */
+            .nn { color: #f8f8f2 } /* Name.Namespace */
+            .nx { color: #a6e22e } /* Name.Other */
+            .py { color: #f8f8f2 } /* Name.Property */
+            .nt { color: #f92672 } /* Name.Tag */
+            .nv { color: #f8f8f2 } /* Name.Variable */
+            .ow { color: #f92672 } /* Operator.Word */
+            .w { color: #f8f8f2 } /* Text.Whitespace */
+            .mf { color: #ae81ff } /* Literal.Number.Float */
+            .mh { color: #ae81ff } /* Literal.Number.Hex */
+            .mi { color: #ae81ff } /* Literal.Number.Integer */
+            .mo { color: #ae81ff } /* Literal.Number.Oct */
+            .sb { color: #e6db74 } /* Literal.String.Backtick */
+            .sc { color: #e6db74 } /* Literal.String.Char */
+            .sd { color: #e6db74 } /* Literal.String.Doc */
+            .s2 { color: #e6db74 } /* Literal.String.Double */
+            .se { color: #ae81ff } /* Literal.String.Escape */
+            .sh { color: #e6db74 } /* Literal.String.Heredoc */
+            .si { color: #e6db74 } /* Literal.String.Interpol */
+            .sx { color: #e6db74 } /* Literal.String.Other */
+            .sr { color: #e6db74 } /* Literal.String.Regex */
+            .s1 { color: #e6db74 } /* Literal.String.Single */
+            .ss { color: #e6db74 } /* Literal.String.Symbol */
+            .bp { color: #f8f8f2 } /* Name.Builtin.Pseudo */
+            .vc { color: #f8f8f2 } /* Name.Variable.Class */
+            .vg { color: #f8f8f2 } /* Name.Variable.Global */
+            .vi { color: #f8f8f2 } /* Name.Variable.Instance */
+            .il { color: #ae81ff } /* Literal.Number.Integer.Long */
+
+            .gh { } /* Generic Heading & Diff Header */
+            .gu { color: $gray; } /* Generic.Subheading & Diff Unified/Comment? */
+            .gd { color: #f92672; } /* Generic.Deleted & Diff Deleted */
+            .gi { color: #a6e22e; } /* Generic.Inserted & Diff Inserted */
+        }
+    }
+}

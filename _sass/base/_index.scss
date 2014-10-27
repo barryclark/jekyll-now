@@ -4,12 +4,7 @@
     # reset, typography, site-wide
 \*------------------------------------*/
 
-@import "base";
 @import "breakpoints";
-@import "normalize";
 @import "susy-setup";
-@import "scaffolding";
-@import "type";
-@import "code";
-@import "tables";
-@import "hide-on-mobile";
+@import "normalize";
+@import "base";

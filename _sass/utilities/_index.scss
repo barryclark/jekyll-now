@@ -5,9 +5,6 @@
     # non-modules
 \*------------------------------------*/
 
+@import "global";
 @import "mixins";
-@import "compass/reset";
-@import "compass/css3/box-sizing";
-@import "compass/utilities/general/min";
-@import "susy";
-@import "breakpoint";
+@import "fonts";

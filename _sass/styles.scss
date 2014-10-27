@@ -4,6 +4,13 @@
     miriam.tocino@gmail.com
 \*------------------------------------*/
 
+// Import third-party libraries
+@import "compass/reset";
+@import "compass/css3/box-sizing";
+@import "compass/utilities/general/min";
+@import "susy";
+@import "breakpoint";
+
 @import "utilities/index";
 @import "base/index";
 @import "layout/index";
