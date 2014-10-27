@@ -29,7 +29,6 @@
 
 // WebKit-style focus
 // -------------------------
-
 @mixin tab-focus() {
     // Default
     outline: thin dotted;
@@ -39,8 +38,8 @@
 }
 
 // Background Colors
+// Used e.g. for alert messages
 // -------------------------
-
 @mixin bg-colors($map) {
     @each $theme, $color in $map {
         &--#{$theme} {
