@@ -8,6 +8,7 @@
     @include breakpoint($breakpoint-s) {
         @include layout($s-layout);
 
+        // Mixin will generate different alert classes
         @include bg-colors($ui-colors);
     }
 
