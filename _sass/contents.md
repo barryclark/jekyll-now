@@ -14,6 +14,10 @@
   |
   | + modules/              # minor components, e.g., buttons, widgets etc.
   |   |-- _index.scss       # imports for all modules
+  |   |-- + buttons/        # buttons types definition
+  |       | _btn.scss       # white button styles (color hover effect)
+  |       | _btn--color-background.scss   # color button styles (white hover effect)
+  |       | ...
   |
   | + states/               # js-based classes, alternative states e.g., success or error state
   |   |-- _index.scss       # imports for all state styles
@@ -35,6 +39,7 @@
   |   |-- + lib/            # third party styles
   |       | _pesticide.scss # CSS pesticide
   |       | ...
+  |   |-- _vendor-prefixes.scss   # mixins for all vendor prefixes
   |
   |   + ie.scss             # IE specific Sass file
   |   + styles.scss         # primary Sass file

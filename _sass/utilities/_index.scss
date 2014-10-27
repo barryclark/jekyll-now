@@ -7,7 +7,6 @@
 
 @import "global";
 @import "functions";
-@import "mixins/clearfix";
-@import "mixins/tab-focus";
-@import "mixins/vendor-prefixes";
+@import "vendor-prefixes";
+@import "mixins";
 @import "fonts";

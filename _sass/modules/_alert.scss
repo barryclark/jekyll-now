@@ -1,19 +1,14 @@
-// Share Posts Box
-// -------------------------
-.mod-share-post {
+/*------------------------------------*\
+    MODULE FLAG MESSAGE
+\*------------------------------------*/
+
+.alert {
 
     // S
     @include breakpoint($breakpoint-s) {
         @include layout($s-layout);
-        margin-top: 20px;
-        background: $color-primary;
-        color: $white;
-        padding: 10px 10px 5px 10px;
-        text-align: center;
 
-        a:hover {
-            color: $white;
-        }
+        @include bg-colors($ui-colors);
     }
 
     // M
@@ -25,4 +20,5 @@
     @include breakpoint($breakpoint-l) {
         @include layout($l-layout);
     };
+
 }

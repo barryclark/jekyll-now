@@ -76,6 +76,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 \*------------------------------------*/
 /*------------------------------------*\
     UTILITIES
+    Vendor Prefixes
+\*------------------------------------*/
+/*------------------------------------*\
+    UTILITIES
+    Mixins
+\*------------------------------------*/
+/*------------------------------------*\
+    UTILITIES
     FONTS
 \*------------------------------------*/
 /*------------------------------------*\
@@ -1496,19 +1504,6 @@ main {
   }
 }
 
-@media (min-width: 0px), (min-width: 568px) {
-  .mod-share-post {
-    margin-top: 20px;
-    background: #d33682;
-    color: #fff;
-    padding: 10px 10px 5px 10px;
-    text-align: center;
-  }
-  .mod-share-post a:hover {
-    color: #fff;
-  }
-}
-
 /*------------------------------------*\
     MODULE DISQUS
     Used in the file post.html
@@ -1623,14 +1618,40 @@ main {
     MODULE FLAG MESSAGE
 \*------------------------------------*/
 @media (min-width: 0px), (min-width: 568px) {
-  .mod-flag-message {
-    margin-top: 20px;
-    background: #d33682;
+  .alert--default {
+    background-color: #222222;
     color: #fff;
     padding: 10px 10px 5px 10px;
     text-align: center;
   }
-  .mod-flag-message a:hover {
+  .alert--default a:hover {
+    color: #fff;
+  }
+  .alert--success {
+    background-color: #009999;
+    color: #fff;
+    padding: 10px 10px 5px 10px;
+    text-align: center;
+  }
+  .alert--success a:hover {
+    color: #fff;
+  }
+  .alert--warning {
+    background-color: #d33682;
+    color: #fff;
+    padding: 10px 10px 5px 10px;
+    text-align: center;
+  }
+  .alert--warning a:hover {
+    color: #fff;
+  }
+  .alert--info {
+    background-color: #fff;
+    color: #fff;
+    padding: 10px 10px 5px 10px;
+    text-align: center;
+  }
+  .alert--info a:hover {
     color: #fff;
   }
 }
