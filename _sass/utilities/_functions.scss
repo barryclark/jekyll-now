@@ -1,10 +1,11 @@
 /*------------------------------------*\
-    UTILITIES
     FUNCTIONS
 \*------------------------------------*/
 
 // Calculate em values
 
-@function em($target, $context: $base__font-size) {
+$base__font-size--px: 14px;
+
+@function em($target, $context: $base__font-size--px) {
     @return ($target / $context) * 1em;
 }

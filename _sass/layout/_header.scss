@@ -10,7 +10,7 @@
         @include container(full);
 
         border-bottom: 2px solid $gray-darker;
-        padding-bottom: 20px;
+        padding-bottom: em(20px);
 
         .logo {
             text-align: center;

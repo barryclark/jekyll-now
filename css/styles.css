@@ -79,6 +79,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     FONTS
 \*------------------------------------*/
 /*------------------------------------*\
+    FUNCTIONS
+\*------------------------------------*/
+/*------------------------------------*\
     BASE
     _index.scss
     # reset, typography, site-wide
@@ -663,7 +666,6 @@ hr {
   border-top: 1px solid #eeeeee;
   margin-top: 1em;
   margin-bottom: 1em;
-  margin: 20px 0;
 }
 
 .browsehappy {
@@ -1202,7 +1204,7 @@ code {
     margin-left: auto;
     margin-right: auto;
     border-bottom: 2px solid #222222;
-    padding-bottom: 20px;
+    padding-bottom: 1.42857em;
   }
   .main-header:after {
     content: " ";
