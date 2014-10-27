@@ -2,7 +2,7 @@
     <div class="wrapper">
 
         <!-- main-header -->
-        <header class="main-header">
+        <header class="header">
 
             <!-- logo -->
             <div class="logo">
@@ -15,14 +15,19 @@
             <!-- /logo -->
 
             <!-- main-nav -->
-            <nav class="main-nav">
+            <nav class="navbar" role="navigation">
+                <ul class="nav">
+
+                </ul>
                 {% for link in site.navigation %}
                     {% assign current = nil %}
                     {% if page.url contains link.url %}
                         {% assign current = 'current' %}
                     {% endif %}
 
-                    <a href="{{ link.url }}" class="{{ current }}">{{ link.title }}</a>
+                    <li class="nav__item">
+                        <a href="{{ link.url }}" class="{{ current }}">{{ link.title }}</a>
+                    </li>
                 {% endfor %}
             </nav>
             <!-- /main-nav -->

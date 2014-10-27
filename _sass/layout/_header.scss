@@ -1,8 +1,8 @@
 /*------------------------------------*\
-    #MAIN-HEADER
+    HEADER
 \*------------------------------------*/
 
-.main-header {
+header {
 
     // S
     @include breakpoint($breakpoint-nav-s) {
@@ -14,24 +14,26 @@
 
         .logo {
             text-align: center;
-
-
-            h1 { font-size: 27px; }
+            h1 { font-size: em(27px); }
         }
 
-        .main-nav {
-
+        .navbar {
             text-align: center;
-            padding-top: 20px;
+            padding-top: em(20px);
 
-            a {
-                margin-left: 15px;
-                text-transform: uppercase;
-                font-weight: 500;
+            .nav__item {
+                display: inline-block;
+                list-style: none;
 
-                &:hover, &.current {
-                    border-bottom: 2px solid $color-primary;
-                    color: $color-primary;
+                a {
+                    margin-left: em(15px);
+                    text-transform: uppercase;
+                    font-weight: 500;
+
+                    &:hover, &.current {
+                        border-bottom: 2px solid $color-primary;
+                        color: $color-primary;
+                    }
                 }
             }
         }
@@ -52,11 +54,9 @@
             text-align: left;
         }
 
-        .main-nav {
+        .navbar {
             float: right;
-
             text-align: right;
-            padding-top: 35px;
         }
     };
 }

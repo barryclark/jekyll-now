@@ -1213,60 +1213,63 @@ code {
 }
 
 /*------------------------------------*\
-    #MAIN-HEADER
+    HEADER
 \*------------------------------------*/
 @media (min-width: 0px), (min-width: 900px) {
-  .main-header {
+  header {
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     border-bottom: 2px solid #222222;
     padding-bottom: 1.42857em;
   }
-  .main-header:after {
+  header:after {
     content: " ";
     display: block;
     clear: both;
   }
-  .main-header .logo {
+  header .logo {
     text-align: center;
   }
-  .main-header .logo h1 {
-    font-size: 27px;
+  header .logo h1 {
+    font-size: 1.92857em;
   }
-  .main-header .main-nav {
+  header .navbar {
     text-align: center;
-    padding-top: 20px;
+    padding-top: 1.42857em;
   }
-  .main-header .main-nav a {
-    margin-left: 15px;
+  header .navbar .nav__item {
+    display: inline-block;
+    list-style: none;
+  }
+  header .navbar .nav__item a {
+    margin-left: 1.07143em;
     text-transform: uppercase;
     font-weight: 500;
   }
-  .main-header .main-nav a:hover, .main-header .main-nav a.current {
+  header .navbar .nav__item a:hover, header .navbar .nav__item a.current {
     border-bottom: 2px solid #d33682;
     color: #d33682;
   }
 }
 @media (min-width: 901px), (min-width: 1024px) {
-  .main-header {
+  header {
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
-  .main-header:after {
+  header:after {
     content: " ";
     display: block;
     clear: both;
   }
-  .main-header .logo {
+  header .logo {
     float: left;
     text-align: left;
   }
-  .main-header .main-nav {
+  header .navbar {
     float: right;
     text-align: right;
-    padding-top: 35px;
   }
 }
 
