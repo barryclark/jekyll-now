@@ -17,8 +17,6 @@
             <!-- main-nav -->
             <nav class="navbar" role="navigation">
                 <ul class="nav">
-
-                </ul>
                 {% for link in site.navigation %}
                     {% assign current = nil %}
                     {% if page.url contains link.url %}
@@ -29,6 +27,7 @@
                         <a href="{{ link.url }}" class="{{ current }}">{{ link.title }}</a>
                     </li>
                 {% endfor %}
+                </ul>
             </nav>
             <!-- /main-nav -->
 
