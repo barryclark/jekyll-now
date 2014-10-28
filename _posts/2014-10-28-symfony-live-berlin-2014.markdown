@@ -6,7 +6,7 @@ tagline: "See you in Berlin!"
 tags : [symfony, webservice]
 ---
 
-![Symfony Live Berlin](http://miriamtocino.github.io/images/symfony-live-berlin.jpg)
+![Symfony Live Berlin](http://miriamtocino.github.io/images/symfony-live-berlin.png)
 
 This week I will be visiting my first official conference [Symfony Live in Berlin](http://berlin2014.live.symfony.com/) and I feel very excited about it!
 
