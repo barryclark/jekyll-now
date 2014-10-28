@@ -1,9 +1,8 @@
 /*------------------------------------*\
-    ASIDE
+    ARCHIVE: POST ITEM
 \*------------------------------------*/
 
-aside,
-.sidebar {
+.col-4 {
 
     // S
     @include breakpoint($breakpoint-s) {
@@ -14,12 +13,12 @@ aside,
     // M
     @include breakpoint($breakpoint-m) {
         @include layout($m-layout);
+        @include gallery(4 of 8);
     };
 
     // L
     @include breakpoint($breakpoint-l) {
         @include layout($l-layout);
-        @include span(3 at 10);
-        padding-right: 0;
+        @include gallery(4 of 12);
     };
 }

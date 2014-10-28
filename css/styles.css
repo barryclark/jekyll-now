@@ -1187,11 +1187,17 @@ code {
     background-color: #fff;
     padding: 60px 10px;
     margin: 50px auto;
+    /* Clearfix for floated children */
   }
   .wrapper:after {
     content: " ";
     display: block;
     clear: both;
+  }
+  .wrapper:after {
+    content: .wrapper:after quot;
+    clear: both;
+    display: block;
   }
 }
 @media (min-width: 769px), (min-width: 1024px) {
@@ -1234,20 +1240,20 @@ code {
   header .logo h1 {
     font-size: 1.92857em;
   }
-  header .navbar {
+  header nav {
     text-align: center;
     padding-top: 1.42857em;
   }
-  header .navbar .nav__item {
+  header nav .nav__item {
     display: inline-block;
     list-style: none;
   }
-  header .navbar .nav__item a {
+  header nav .nav__item a {
     margin-left: 1.07143em;
     text-transform: uppercase;
     font-weight: 500;
   }
-  header .navbar .nav__item a:hover, header .navbar .nav__item a.current {
+  header nav .nav__item a:hover, header nav .nav__item a.current {
     border-bottom: 2px solid #d33682;
     color: #d33682;
   }
@@ -1267,7 +1273,7 @@ code {
     float: left;
     text-align: left;
   }
-  header .navbar {
+  header nav {
     float: right;
     text-align: right;
   }
@@ -1344,19 +1350,22 @@ main {
     ASIDE
 \*------------------------------------*/
 @media (min-width: 0px), (min-width: 568px) {
-  aside {
+  aside,
+  .sidebar {
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
-  aside:after {
+  aside:after,
+  .sidebar:after {
     content: " ";
     display: block;
     clear: both;
   }
 }
 @media (min-width: 769px), (min-width: 1024px) {
-  aside {
+  aside,
+  .sidebar {
     width: 25%;
     float: right;
     padding-left: 1.38889%;
@@ -1415,6 +1424,63 @@ main {
 }
 
 /*------------------------------------*\
+    ARCHIVE: POST ITEM
+\*------------------------------------*/
+@media (min-width: 0px), (min-width: 568px) {
+  .col-4 {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .col-4:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
+@media (min-width: 569px), (min-width: 768px) {
+  .col-4 {
+    width: 50%;
+    float: left;
+    padding-left: 1.25%;
+    padding-right: 1.25%;
+  }
+  .col-4:nth-child(2n + 1) {
+    margin-left: 0;
+    margin-right: -100%;
+    clear: both;
+  }
+  .col-4:nth-child(2n + 2) {
+    margin-left: 50%;
+    margin-right: -100%;
+    clear: none;
+  }
+}
+@media (min-width: 769px), (min-width: 1024px) {
+  .col-4 {
+    width: 33.33333%;
+    float: left;
+    padding-left: 1.38889%;
+    padding-right: 1.38889%;
+  }
+  .col-4:nth-child(3n + 1) {
+    margin-left: 0;
+    margin-right: -100%;
+    clear: both;
+  }
+  .col-4:nth-child(3n + 2) {
+    margin-left: 33.33333%;
+    margin-right: -100%;
+    clear: none;
+  }
+  .col-4:nth-child(3n + 3) {
+    margin-left: 66.66667%;
+    margin-right: -100%;
+    clear: none;
+  }
+}
+
+/*------------------------------------*\
     MODULES
     _index.scss
     # minor components
@@ -1466,6 +1532,8 @@ main {
 
 /*------------------------------------*\
     MODULE POST
+    Main Page
+    Single Post Page
 \*------------------------------------*/
 @media (min-width: 0px), (min-width: 568px) {
   .mod-post {
@@ -1519,6 +1587,75 @@ main {
   }
   .mod-post img {
     margin-bottom: 2.14286em;
+  }
+}
+
+/*------------------------------------*\
+    MODULE POST
+    Archive Page
+\*------------------------------------*/
+@media (min-width: 0px), (min-width: 568px) {
+  .mod-post--archive {
+    padding: 1em;
+    border: 1px solid #eeeeee;
+    min-height: 550px;
+    position: relative;
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+  }
+  .mod-post--archive hgroup {
+    min-height: 100px;
+  }
+  .mod-post--archive h4, .mod-post--archive h4 a {
+    color: #d33682;
+    font-weight: 500;
+  }
+  .mod-post--archive h4, .mod-post--archive h5 {
+    font-weight: 500;
+  }
+  .mod-post--archive h4 {
+    margin: 5px 0;
+  }
+  .mod-post--archive table {
+    margin: 15px 0;
+  }
+  .mod-post--archive .date {
+    color: #777777;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 0.85714em;
+    margin-top: 0.35714em;
+  }
+  .mod-post--archive .tagline {
+    margin-top: 0.64286em;
+    font-weight: 500;
+  }
+  .mod-post--archive ul {
+    list-style: none !important;
+    padding: 0;
+    margin: 0 0 15px 0;
+  }
+  .mod-post--archive ul li {
+    padding-left: 1em;
+    text-indent: -.7em;
+  }
+  .mod-post--archive ul li:before {
+    content: "• ";
+    color: #d33682;
+  }
+  .mod-post--archive p a {
+    color: #d33682;
+  }
+  .mod-post--archive p a:hover {
+    color: #222222;
+  }
+  .mod-post--archive img {
+    margin-bottom: 2.14286em;
+  }
+  .mod-post--archive a.btn--default {
+    position: absolute;
+    bottom: 2em;
   }
 }
 
@@ -1648,28 +1785,28 @@ main {
 }
 
 /*------------------------------------*\
-    MODULE ABOUT PAGE
+    ABOUT PAGE
 \*------------------------------------*/
 @media (min-width: 0px), (min-width: 568px) {
-  .mod-about {
+  .about {
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
-  .mod-about:after {
+  .about:after {
     content: " ";
     display: block;
     clear: both;
   }
-  .mod-about .content h3 {
+  .about .content h3 {
     margin-bottom: 1.42857em;
   }
-  .mod-about .content ul li {
+  .about .content ul li {
     margin-left: 0;
   }
 }
 @media (min-width: 769px), (min-width: 1024px) {
-  .mod-about .content {
+  .about .content {
     width: 66.66667%;
     float: left;
     padding-left: 1.38889%;
@@ -1677,7 +1814,7 @@ main {
     padding-left: 0;
     padding-right: 2.85714em;
   }
-  .mod-about aside {
+  .about aside {
     width: 33.33333%;
     float: right;
     padding-left: 1.38889%;

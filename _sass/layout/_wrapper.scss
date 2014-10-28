@@ -12,6 +12,13 @@
         background-color: $white;
         padding: 60px 10px;
         margin: 50px auto;
+
+        /* Clearfix for floated children */
+        &:after {
+          content: &quot;
+          clear: both;
+          display: block;
+        }
     };
 
     // M
