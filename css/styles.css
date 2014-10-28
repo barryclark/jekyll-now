@@ -1603,6 +1603,12 @@ main {
     margin-bottom: 40px;
     padding-bottom: 40px;
   }
+  .mod-post--archive:hover {
+    background-color: #eeeeee;
+    -webkit-transition: 150ms;
+    -o-transition: 150ms;
+    transition: 150ms;
+  }
   .mod-post--archive hgroup {
     min-height: 100px;
   }
@@ -1653,7 +1659,7 @@ main {
   .mod-post--archive img {
     margin-bottom: 2.14286em;
   }
-  .mod-post--archive a.btn--default {
+  .mod-post--archive a.btn--color-brackground--default {
     position: absolute;
     bottom: 2em;
   }
