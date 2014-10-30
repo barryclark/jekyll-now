@@ -137,6 +137,26 @@ If you want to give credit to the Pixyll theme with a link to <http://pixyll.com
 
 I hope you enjoy using Pixyll. If you encounter any issues, please feel free to let me know by creating an [issue](https://github.com/johnotander/pixyll/issues). I'd love to help.
 
+## Upgrading Pixyll
+
+Pixyll is always being improved by its users, so sometimes one may need to upgrade.
+
+#### Ensure there's an upstream remote
+
+If `git remote -v` doesn't have an upstream listed, you can do the following to add it:
+
+```
+git remote add upstream https://github.com/johnotander/pixyll.git
+```
+
+#### Pull in the latest changes
+
+```
+git pull upstream master
+```
+
+There may be merge conflicts, so be sure to fix the files that git lists if they occur. That's it!
+
 ## Contributing
 
 1. Fork it
