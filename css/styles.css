@@ -1696,25 +1696,45 @@ main {
   .mod-widget ul p.date {
     margin-bottom: 20px;
   }
-  .mod-widget.toc ul {
+}
+@media (min-width: 769px), (min-width: 1024px) {
+  .mod-widget.about-me, .mod-widget.recent-articles, .mod-widget.related-articles {
+    display: block;
+  }
+}
+
+/*------------------------------------*\
+    MODULE POST TOC
+\*------------------------------------*/
+@media (min-width: 0px), (min-width: 568px) {
+  .mod-post-toc {
+    display: none;
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+  .mod-post-toc h4 {
+    font-weight: 500;
+  }
+  .mod-post-toc ul {
     list-style: none !important;
     padding: 0;
     margin: 0;
   }
-  .mod-widget.toc ul li:first-child {
+  .mod-post-toc ul li:first-child {
     display: none;
   }
-  .mod-widget.toc ul li {
+  .mod-post-toc ul li {
     padding-left: 1em;
     text-indent: -.7em;
   }
-  .mod-widget.toc ul li:before {
+  .mod-post-toc ul li:before {
     content: "• ";
     color: #d33682;
   }
 }
 @media (min-width: 769px), (min-width: 1024px) {
-  .mod-widget.about-me, .mod-widget.recent-articles, .mod-widget.related-articles {
+  .mod-post-toc {
     display: block;
   }
 }

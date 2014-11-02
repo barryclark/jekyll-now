@@ -1,18 +1,14 @@
 /*------------------------------------*\
-    MODULE WIDGET
+    MODULE POST TOC
 \*------------------------------------*/
 
-.mod-widget {
+.mod-post-toc {
 
     // S
     @include breakpoint($breakpoint-s) {
         @include layout($s-layout);
 
-        &.about-me,
-        &.recent-articles,
-        &.related-articles {
-            display: none;
-        }
+        display: none;
 
         border-bottom: 1px solid $gray-lighter;
         padding-bottom: 20px;
@@ -20,8 +16,24 @@
 
         h4 { font-weight: 500; }
 
-        ul p.date {
-            margin-bottom: 20px;
+        ul {
+            list-style: none !important;
+            padding:0;
+            margin:0;
+
+            li:first-child {
+                display: none;
+            }
+
+            li {
+                padding-left: 1em;
+                text-indent: -.7em;
+
+                &:before {
+                    content: "• ";
+                    color: $color-primary;
+                }
+            }
         }
     };
 
@@ -33,11 +45,6 @@
     // L
     @include breakpoint($breakpoint-l) {
         @include layout($l-layout);
-
-        &.about-me,
-        &.recent-articles,
-        &.related-articles {
-            display: block;
-        }
+        display: block;
     };
 }
