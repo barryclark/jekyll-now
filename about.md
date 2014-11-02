@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Developer from Shanghai, China!
 
 ### More Information
+My linkedin page: https://www.linkedin.com/profile/view?id=127220075&trk=nav_responsive_tab_profile_pic
 
-A place to include any other types of information that you'd like to include about yourself. 
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[clraychen@gmail.com](mailto:clraychen@gmail.com)
