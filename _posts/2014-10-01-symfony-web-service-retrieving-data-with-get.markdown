@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Symfony Web Service: Retrieving Data with GET"
+title: "Symfony Web Service 2: Retrieving Data with GET"
 date: October 1, 2014
-tagline: "How to build a web service for an iOS app - Part 2"
+tagline: "How to build a small web service for an iOS app"
 tags : [symfony, webservice]
 ---
 

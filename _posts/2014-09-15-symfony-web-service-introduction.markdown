@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Symfony Web Service: Introduction"
+title: "Symfony Web Service 1: Introduction"
 date: September 15, 2014
-tagline: "How to build a web service for an iOS app - Part 1"
+tagline: "How to build a small web service for an iOS app"
 tags : [symfony, webservice]
 ---
 
