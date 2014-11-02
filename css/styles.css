@@ -872,6 +872,9 @@ table > tbody + tbody {
 table .table {
   background-color: #f0f2f3;
 }
+table > thead {
+  background-color: #eeeeee;
+}
 
 table {
   border: 1px solid #ddd;

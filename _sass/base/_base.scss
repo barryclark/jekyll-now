@@ -255,6 +255,10 @@ table {
     .table {
         background-color: $body-bg;
     }
+
+    > thead {
+        background-color: $gray-lighter;
+    }
 }
 
 table {
