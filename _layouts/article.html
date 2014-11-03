@@ -12,7 +12,7 @@ layout: default
 			</div><!-- /.page-image -->
 		</div><!-- /.page-feature -->
 		{% endif %}
-		{% if page.categories %}{% include breadcrumbs.html %}{% endif %}
+		{% if page.categories and page.categories != empty %}{% include breadcrumbs.html %}{% endif %}
 		<div class="page-title">
 			<h1>{{ page.title }}</h1>
 		</div>
