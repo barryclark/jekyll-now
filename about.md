@@ -4,12 +4,14 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Hello World!
 
-### More Information
+My name is Janis Ozolins and I am Computer and Information Security student at Plymouth University. Some time ago I set myself really high (yet achievable) goals and I am fully determined to reach them.
 
-A place to include any other types of information that you'd like to include about yourself. 
+#### My Skills
 
-### Contact me
+Python, C#, Adobe Suite, LaTeX, HTML, AutoCAD, PHP.
 
-[email@domain.com](mailto:email@domain.com)
+#### Contact me
+
+[ozolins.ir@gmail.com](mailto:ozolins.ir@gmail.com)
