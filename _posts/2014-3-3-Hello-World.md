@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "My first post 2014-11-03"
+title: "2014-11-03 My first post "
 published: true
 ---
 
