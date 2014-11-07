@@ -1,3 +1,5 @@
-<nav class="breadcrumbs">
-  <a href="{{ site.url }}">Home</a> <span class="divider">/</span> <a href="{{ site.url }}/{{ page.categories | first }}/">{{ page.categories | first | replace: '-',' ' | capitalize }}</a> <span class="divider">/</span>
-</nav><!-- /.breadcrumbs -->
+{% if page.categories and page.categories != empty %}
+  <nav class="breadcrumbs">
+    <a href="{{ site.url }}">Home</a> <span class="divider">/</span> <a href="{{ site.url }}/{{ page.categories | first }}/">{{ page.categories | first | replace: '-',' ' | capitalize }}</a> <span class="divider">/</span>
+  </nav><!-- /.breadcrumbs -->
+{% endif %}
