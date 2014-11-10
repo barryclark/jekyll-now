@@ -11,6 +11,10 @@ It's pretty minimal, but leverages large type and drastic contrast to make a sta
 This Jekyll theme was crafted with <3 by [John Otander](http://johnotander.com)
 ([@4lpine](https://twitter.com/4lpine)).
 
+### Chinese translation by ee0703
+
+中文版 <https://github.com/ee0703/pixyll-zh-cn>.
+
 ## Getting Started
 
 If you're completely new to Jekyll, I recommend checking out the documentation at <http://jekyllrb.com> or there's a tutorial by [Smashing Magazine](http://www.smashingmagazine.com/2014/08/01/build-blog-jekyll-github-pages/).
