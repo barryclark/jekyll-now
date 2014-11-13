@@ -3,13 +3,13 @@
 #
 
 # Name of your site (displayed in the header)
-name: Your Name
+name: D.W.
 
 # Short bio or description (displayed in the header)
-description: Web Developer from Somewhere
+description: D.W. aka Deadman Walking or Dwyane Wade or Dream Weaver or ...
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
+avatar: http://www.qjis.com/uploads/allimg/130207/1120146431-3.jpg
 
 #
 # Flags below are optional
@@ -43,7 +43,7 @@ url:
 # (http://yourusername.github.io/repository-name)
 # and NOT your User repository (http://yourusername.github.io)
 # then add in the baseurl here, like this: "/repository-name"
-baseurl: ""
+baseurl: "/blog2"
 
 #
 # !! You don't need to change any of the configuration flags below !!
