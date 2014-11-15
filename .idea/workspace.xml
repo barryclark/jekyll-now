@@ -2,28 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc5dabb2-ced4-48c8-b1f6-57285288762e" name="Default" comment="Merge branch 'master' of https://github.com/breezedeus/breezedeus.github.io&#10;&#10;Conflicts:&#10;&#9;index.html&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2014-11-15-welcome-to-jekyll.markdown" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_config.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/about.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_layouts/default.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/feed.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_layouts/page.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_layouts/post.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/body-bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/download-button.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/github-button.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/header-bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/highlight-bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/sidebar-bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javascripts/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/params.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/stylesheets/print.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/stylesheets/pygment_trac.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/stylesheets/stylesheet.css" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_config.yml" afterPath="$PROJECT_DIR$/_config.yml" />
     </list>
     <ignored path="breezedeus.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
