@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc5dabb2-ced4-48c8-b1f6-57285288762e" name="Default" comment="Merge branch 'master' of https://github.com/breezedeus/breezedeus.github.io&#10;&#10;Conflicts:&#10;&#9;index.html&#10;">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_config.yml" afterPath="$PROJECT_DIR$/_config.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_layouts/default.html" afterPath="$PROJECT_DIR$/_layouts/default.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/header.html" afterPath="$PROJECT_DIR$/_includes/header.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="breezedeus.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,10 +28,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="head.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="head.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_includes/head.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="762" selection-end="762" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="285">
+            <state line="11" column="0" selection-start="762" selection-end="762" vertical-scroll-proportion="0.22916667" vertical-offset="0" max-vertical-offset="720">
               <folding />
             </state>
           </provider>
@@ -37,7 +40,7 @@
       <file leaf-file-name="header.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_includes/header.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="0" selection-start="1097" selection-end="1097" vertical-scroll-proportion="-15.625" vertical-offset="0" max-vertical-offset="495">
+            <state line="29" column="5" selection-start="1224" selection-end="1224" vertical-scroll-proportion="-18.125" vertical-offset="0" max-vertical-offset="615">
               <folding />
             </state>
           </provider>
@@ -52,10 +55,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="default.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="default.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_layouts/default.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="204" selection-start="434" selection-end="434" vertical-scroll-proportion="0.375" vertical-offset="0" max-vertical-offset="720">
+            <state line="18" column="0" selection-start="230" selection-end="230" vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="420">
               <folding />
             </state>
           </provider>
@@ -64,7 +67,7 @@
       <file leaf-file-name="2014-10-15-your-filename.md" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2014-10-15-your-filename.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="2" selection-start="131" selection-end="131" vertical-scroll-proportion="-5.5555553" vertical-offset="0" max-vertical-offset="285">
+            <state line="9" column="6" selection-start="128" selection-end="128" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="285">
               <folding />
             </state>
           </provider>
@@ -90,10 +93,10 @@
         <option value="$PROJECT_DIR$/_posts/2014-11-15-your-filename.markdown" />
         <option value="$PROJECT_DIR$/_posts/2014-11-15-your-filename.md" />
         <option value="$PROJECT_DIR$/_posts/2014-11-15-welcome-to-jekyll.markdown" />
-        <option value="$PROJECT_DIR$/_posts/2014-10-15-your-filename.md" />
         <option value="$PROJECT_DIR$/_includes/head.html" />
-        <option value="$PROJECT_DIR$/_includes/header.html" />
+        <option value="$PROJECT_DIR$/_posts/2014-10-15-your-filename.md" />
         <option value="$PROJECT_DIR$/_layouts/default.html" />
+        <option value="$PROJECT_DIR$/_includes/header.html" />
       </list>
     </option>
   </component>
@@ -431,19 +434,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2014-10-15-your-filename.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="2" selection-start="131" selection-end="131" vertical-scroll-proportion="-5.5555553" vertical-offset="0" max-vertical-offset="285">
+        <state line="9" column="6" selection-start="128" selection-end="128" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="285">
           <folding />
         </state>
       </provider>
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/head.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="762" selection-end="762" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="285">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_layouts/post.html">
@@ -453,16 +449,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/header.html">
+    <entry file="file://$PROJECT_DIR$/_layouts/default.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="0" selection-start="1097" selection-end="1097" vertical-scroll-proportion="-15.625" vertical-offset="0" max-vertical-offset="495">
+        <state line="18" column="0" selection-start="230" selection-end="230" vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="420">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_layouts/default.html">
+    <entry file="file://$PROJECT_DIR$/_includes/header.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="204" selection-start="434" selection-end="434" vertical-scroll-proportion="0.375" vertical-offset="0" max-vertical-offset="720">
+        <state line="29" column="5" selection-start="1224" selection-end="1224" vertical-scroll-proportion="-18.125" vertical-offset="0" max-vertical-offset="615">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/head.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="762" selection-end="762" vertical-scroll-proportion="0.22916667" vertical-offset="0" max-vertical-offset="720">
           <folding />
         </state>
       </provider>

@@ -11,3 +11,5 @@ github_username:  breezedeus
 markdown: kramdown
 
 permalink: /:year/:month/:day/breezedeus-:title.html
+
+#gems: [mathml.jb]
