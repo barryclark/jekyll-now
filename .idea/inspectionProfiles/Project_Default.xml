@@ -1,0 +1,15 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0" is_locked="false">
+    <option name="myName" value="Project Default" />
+    <option name="myLocal" value="false" />
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <value>
+          <list size="1">
+            <item index="0" class="java.lang.String" itemvalue="jyimage.use_pylearn2.jiayuan.jiayuan" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
