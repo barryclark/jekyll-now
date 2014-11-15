@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="dc5dabb2-ced4-48c8-b1f6-57285288762e" name="Default" comment="Merge branch 'master' of https://github.com/breezedeus/breezedeus.github.io&#10;&#10;Conflicts:&#10;&#9;index.html&#10;">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2014-10-15-your-filename.md" afterPath="$PROJECT_DIR$/_posts/2014-10-15-your-filename.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/head.html" afterPath="$PROJECT_DIR$/_includes/head.html" />
     </list>
     <ignored path="breezedeus.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,19 +26,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="0" selection-start="229" selection-end="229" vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="435">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="2014-11-15-welcome-to-jekyll.markdown" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2014-11-15-welcome-to-jekyll.markdown">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="2" selection-start="2" selection-end="2" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="465">
+            <state line="14" column="19" selection-start="753" selection-end="753" vertical-scroll-proportion="-7.7777777" vertical-offset="0" max-vertical-offset="465">
               <folding />
             </state>
           </provider>
@@ -47,10 +38,28 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="head.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_includes/head.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="57" selection-start="145" selection-end="145" vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="315">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_includes/header.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="495">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="2014-10-15-your-filename.md" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_posts/2014-10-15-your-filename.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="2" selection-start="0" selection-end="107" vertical-scroll-proportion="0.12552302" vertical-offset="0" max-vertical-offset="717">
+            <state line="10" column="19" selection-start="148" selection-end="148" vertical-scroll-proportion="0.20920502" vertical-offset="0" max-vertical-offset="717">
               <folding />
             </state>
           </provider>
@@ -76,6 +85,7 @@
         <option value="$PROJECT_DIR$/_posts/2014-11-15-your-filename.markdown" />
         <option value="$PROJECT_DIR$/_posts/2014-11-15-your-filename.md" />
         <option value="$PROJECT_DIR$/_posts/2014-11-15-welcome-to-jekyll.markdown" />
+        <option value="$PROJECT_DIR$/_includes/head.html" />
         <option value="$PROJECT_DIR$/_posts/2014-10-15-your-filename.md" />
       </list>
     </option>
@@ -142,6 +152,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="_posts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="breezedeus.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="breezedeus.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_includes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -369,14 +393,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="229" selection-end="229" vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="435">
+        <state line="12" column="0" selection-start="229" selection-end="229" vertical-scroll-proportion="0.24556616" vertical-offset="0" max-vertical-offset="733">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="744">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/head.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="57" selection-start="145" selection-end="145" vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="315">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2014-11-15-welcome-to-jekyll.markdown">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="2" selection-start="2" selection-end="2" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="717">
+        <state line="14" column="19" selection-start="753" selection-end="753" vertical-scroll-proportion="-7.7777777" vertical-offset="0" max-vertical-offset="465">
           <folding />
         </state>
       </provider>
@@ -386,7 +424,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2014-10-15-your-filename.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="2" selection-start="0" selection-end="107" vertical-scroll-proportion="0.12552302" vertical-offset="0" max-vertical-offset="717">
+        <state line="10" column="19" selection-start="148" selection-end="148" vertical-scroll-proportion="0.20920502" vertical-offset="0" max-vertical-offset="717">
           <folding />
         </state>
       </provider>
