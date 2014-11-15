@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="dc5dabb2-ced4-48c8-b1f6-57285288762e" name="Default" comment="Merge branch 'master' of https://github.com/breezedeus/breezedeus.github.io&#10;&#10;Conflicts:&#10;&#9;index.html&#10;">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2014-10-15-your-filename.md" afterPath="$PROJECT_DIR$/_posts/2014-10-15-your-filename.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/head.html" afterPath="$PROJECT_DIR$/_includes/head.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="breezedeus.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -59,7 +59,7 @@
       <file leaf-file-name="2014-10-15-your-filename.md" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_posts/2014-10-15-your-filename.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="19" selection-start="148" selection-end="148" vertical-scroll-proportion="0.20920502" vertical-offset="0" max-vertical-offset="717">
+            <state line="10" column="21" selection-start="150" selection-end="150" vertical-scroll-proportion="0.20920502" vertical-offset="0" max-vertical-offset="717">
               <folding />
             </state>
           </provider>
@@ -424,7 +424,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2014-10-15-your-filename.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="19" selection-start="148" selection-end="148" vertical-scroll-proportion="0.20920502" vertical-offset="0" max-vertical-offset="717">
+        <state line="10" column="21" selection-start="150" selection-end="150" vertical-scroll-proportion="0.20920502" vertical-offset="0" max-vertical-offset="717">
           <folding />
         </state>
       </provider>
