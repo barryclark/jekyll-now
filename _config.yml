@@ -10,4 +10,4 @@ github_username:  breezedeus
 # Build settings
 markdown: kramdown
 
-permalink: /:year/:month/:day/:title
+permalink: /:year/:month/:day/breezedeus-:title.html
