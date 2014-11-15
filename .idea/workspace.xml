@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc5dabb2-ced4-48c8-b1f6-57285288762e" name="Default" comment="Merge branch 'master' of https://github.com/breezedeus/breezedeus.github.io&#10;&#10;Conflicts:&#10;&#9;index.html&#10;">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/head.html" afterPath="$PROJECT_DIR$/_includes/head.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2014-10-15-your-filename.md" afterPath="$PROJECT_DIR$/_posts/2014-10-15-your-filename.md" />
     </list>
     <ignored path="breezedeus.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,31 +25,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="2014-11-15-welcome-to-jekyll.markdown" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/2014-11-15-welcome-to-jekyll.markdown">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="19" selection-start="753" selection-end="753" vertical-scroll-proportion="-7.7777777" vertical-offset="0" max-vertical-offset="465">
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="MarkdownPreviewEditor">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="head.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="head.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_includes/head.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="8" selection-start="1059" selection-end="1059" vertical-scroll-proportion="0.375" vertical-offset="0" max-vertical-offset="720">
+            <state line="18" column="8" selection-start="1059" selection-end="1059" vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="390">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2014-10-15-your-filename.md" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="2014-10-15-your-filename.md" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_posts/2014-10-15-your-filename.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="21" selection-start="150" selection-end="150" vertical-scroll-proportion="-5.5555553" vertical-offset="0" max-vertical-offset="285">
+            <state line="10" column="2" selection-start="131" selection-end="131" vertical-scroll-proportion="0.20920502" vertical-offset="0" max-vertical-offset="717">
               <folding />
             </state>
           </provider>
@@ -75,8 +63,8 @@
         <option value="$PROJECT_DIR$/_posts/2014-11-15-your-filename.markdown" />
         <option value="$PROJECT_DIR$/_posts/2014-11-15-your-filename.md" />
         <option value="$PROJECT_DIR$/_posts/2014-11-15-welcome-to-jekyll.markdown" />
-        <option value="$PROJECT_DIR$/_posts/2014-10-15-your-filename.md" />
         <option value="$PROJECT_DIR$/_includes/head.html" />
+        <option value="$PROJECT_DIR$/_posts/2014-10-15-your-filename.md" />
       </list>
     </option>
   </component>
@@ -388,26 +376,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2014-11-15-welcome-to-jekyll.markdown">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="19" selection-start="753" selection-end="753" vertical-scroll-proportion="-7.7777777" vertical-offset="0" max-vertical-offset="465">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2014-10-15-your-filename.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="21" selection-start="150" selection-end="150" vertical-scroll-proportion="-5.5555553" vertical-offset="0" max-vertical-offset="285">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_includes/header.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="744">
@@ -415,11 +383,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/head.html">
+    <entry file="file://$PROJECT_DIR$/_posts/2014-11-15-welcome-to-jekyll.markdown">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="8" selection-start="1059" selection-end="1059" vertical-scroll-proportion="0.375" vertical-offset="0" max-vertical-offset="720">
+        <state line="14" column="19" selection-start="753" selection-end="753" vertical-scroll-proportion="0.29288703" vertical-offset="0" max-vertical-offset="717">
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/head.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="8" selection-start="1059" selection-end="1059" vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="390">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2014-10-15-your-filename.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="2" selection-start="131" selection-end="131" vertical-scroll-proportion="0.20920502" vertical-offset="0" max-vertical-offset="717">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
       </provider>
     </entry>
   </component>
