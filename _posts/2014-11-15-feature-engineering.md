@@ -1,13 +1,12 @@
 ---
-published: false
+published: true
 layout: post
 title:  "特征工程（Feature Engineering）"
 date:   2014-11-15 18:30
 categories: machine_learning feature_engineering feature_learning
 ---
 
-特征工程（Feature Engineering）
-=======
+
 
 特征工程经常被说为机器学习中的**black art**，这里面包含了很多不可言说的方面，最主要的当然还是对要解决问题的了解。但是，它其实也有很多科学的地方，这就是这篇文章的主题。
 
@@ -66,6 +65,7 @@ good | (1, 1, 1)
 上面这种表达方式很巧妙地利用递进表达了值之间的顺序关系。
 
 
+
 #中级
 
 最容易让人掉以轻心的，往往就是大家觉得最简单的事。在特征处理中，最容易让刚入门同学忽略的，是对连续特征的处理方式。
@@ -78,22 +78,49 @@ $$
 
 但大部分实际情况下，$$y$$与$$x$$都不会是这么简单的线性关系，甚至连单调关系都不会有。举个只有一个特征的例子，如果$$y$$与$$x$$的实际关系如下图：
 
-![nonlinear function](/images/nonlinear_function1.png)
+![nonlinear function][img_ori]
 
 那么直接把$$x$$扔进LinearReg模型是怎么也得不到好结果的。很多人会想着既然线性分类器搞不定，那就直接找个非线性的好了，比如高斯核的SVM。我们确实可以通过这种简单换算法的方式解决这个简单的问题。但对于很多实际问题（如广告点击率预测），往往特征非常多，这时候时间约束通常不允许我们使用很复杂的非线性分类器。这也是为什么算法发展这么多年，广告点击率预测最常用的方法还是**Logistic Regression (LogisticReg)**。
 
-对于上面这个问题，有没有什么办法使得LinearReg也能处理得不错？当然是有，就是对原始特征$$x$$做转化，把原来的非线性关系转化为线性关系。最常用的转化方式是对$$x$$做**离散化(discretization)**。离散化方法包括：
+对于上面这个问题，有没有什么办法使得LinearReg也能处理得不错？当然是有。
 
-*  等距离散：
+##方法一：离散化
+就是对原始特征$$x$$做转化，把原来的非线性关系转化为线性关系。最常用的转化方式是对$$x$$做**离散化(discretization)**，也就是把原来的值分段，转化成一个取值为0或1的向量。原始值落在某个段里，向量中此段对应的元素就为1，其他元素为0。比如取离散点$$\{0.5, 1.5, 2.5\}$$，通过判断$$x$$属于$$(-\infty, 0.5)$$，$$[0.5, 1.5)$$，$$[1.5, 2.5)$$，$$[2.5, +\infty)$$中哪段来把它离散化为4维的向量。下面是离散结果：
 
-![nonlinear function](/images/nonlinear_function2.png)
+原始值$$x$$ | 离散化后的值
+-------- | -----
+0.1 | (1, 0, 0, 0)
+1.3 | (0, 1, 0, 0)
+3.2 | (0, 0, 0, 1)
+5.8 | (0, 0, 0, 1)
 
-*  等样本点离散
+离散化方法的关键是怎么确定分段中的离散点。下面是常用的选取离散点的方法：
 
-![nonlinear function](/images/nonlinear_function3.png)
+*  **等距离散**：顾名思义，就是离散点选取等距点。我们上面对$$x$$取离散点$$\{0.5, 1.5, 2.5\}$$就是一种等距离散，见下图。
 
-*  以此特征为横坐标，目标值为纵坐标，画图，看趋势和拐点
+![nonlinear function][img_equal_dist]
 
+*  **等样本点离散**：选取的离散点保证落在每段里的样本点数量大致相同，见下图。
+
+![nonlinear function][img_equal_size]
+
+*  **画图观察趋势**：以$$x$$为横坐标，$$y$$为纵坐标，画图，看曲线的趋势和拐点。通过观察下面的图我们发现可以利用3条直线（红色直线）来逐段近似原来的曲线。
+
+![nonlinear function][img_watch]
+
+
+##方法二：函数变换
+his is [eml][] reference-style link. *要反白的文字*[^esl]
+
+
+
+[img_ori]: /images/nonlinear_function1.png "样本点"
+[img_equal_dist]: /images/nonlinear_function2.png "等距离散离散法"
+[img_equal_size]: /images/nonlinear_function3.png "等样本点离散离散法"
+[img_watch]: /images/nonlinear_function4.png "画图观察趋势离散法"
+
+
+[^esl]: Trevor Hastie et al, [The Elements of Statistical Learning](http://statweb.stanford.edu/~tibs/ElemStatLearn/).
 
 
 #归一化：

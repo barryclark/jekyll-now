@@ -201,6 +201,8 @@
     font-size: 42px;
     letter-spacing: -1px;
     line-height: 1;
+    background-color: #dddddd;
+    padding: 40px;
 
     @include media-query($on-laptop) {
         font-size: 36px;
@@ -210,16 +212,27 @@
 .post-content {
     margin-bottom: $spacing-unit;
 
-    h2 {
+    h1 {
         font-size: 32px;
-
+        font-weight: bold;
+        /*line-height: 50px;*/
+        padding-top: 30px;
+        padding-bottom: 0px;
         @include media-query($on-laptop) {
             font-size: 28px;
         }
     }
 
+    h2 {
+        font-size: 28px;
+
+        @include media-query($on-laptop) {
+            font-size: 24px;
+        }
+    }
+
     h3 {
-        font-size: 26px;
+        font-size: 24px;
 
         @include media-query($on-laptop) {
             font-size: 22px;
@@ -232,5 +245,12 @@
         @include media-query($on-laptop) {
             font-size: 18px;
         }
+    }
+
+    table, td, th {
+        border: 1px solid #aaaaaa;
+        border-top: 2px solid black;
+        border-collapse: collapse;
+        text-align: center;
     }
 }
