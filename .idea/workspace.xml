@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc5dabb2-ced4-48c8-b1f6-57285288762e" name="Default" comment="Merge branch 'master' of https://github.com/breezedeus/breezedeus.github.io&#10;&#10;Conflicts:&#10;&#9;index.html&#10;">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/nonlinear_function.paint" afterPath="$PROJECT_DIR$/images/nonlinear_function.paint" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2014-11-15-feature-engineering.md" afterPath="$PROJECT_DIR$/_posts/2014-11-15-feature-engineering.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_sass/_base.scss" afterPath="$PROJECT_DIR$/_sass/_base.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_sass/_layout.scss" afterPath="$PROJECT_DIR$/_sass/_layout.scss" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_posts/2014-10-15-your-filename.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_posts/2014-11-15-feature-engineering.md" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2014-11-15-welcome-to-jekyll.markdown" afterPath="$PROJECT_DIR$/_posts/2014-11-15-welcome-to-jekyll.markdown" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="breezedeus.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,10 +28,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="2014-10-15-your-filename.md" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/2014-10-15-your-filename.md">
+      <file leaf-file-name="2014-11-15-welcome-to-jekyll.markdown" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_posts/2014-11-15-welcome-to-jekyll.markdown">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="0" selection-start="129" selection-end="129" vertical-scroll-proportion="-5.5555553" vertical-offset="0" max-vertical-offset="300">
+            <state line="16" column="2" selection-start="774" selection-end="774" vertical-scroll-proportion="0.52401745" vertical-offset="0" max-vertical-offset="480">
               <folding />
             </state>
           </provider>
@@ -40,10 +40,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2014-11-15-welcome-to-jekyll.markdown" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/2014-11-15-welcome-to-jekyll.markdown">
+      <file leaf-file-name="2014-11-15-art-of-ml.md" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/2014-11-15-art-of-ml.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="19" selection-start="753" selection-end="753" vertical-scroll-proportion="-7.7777777" vertical-offset="0" max-vertical-offset="465">
+            <state line="1" column="13" selection-start="17" selection-end="17" vertical-scroll-proportion="-0.5555556" vertical-offset="0" max-vertical-offset="1635">
               <folding />
             </state>
           </provider>
@@ -61,22 +61,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2014-11-15-feature-engineering.md" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/2014-11-15-feature-engineering.md">
-          <provider editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="4" selection-end="4" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="2370">
-              <folding />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="MarkdownPreviewEditor">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_base.scss" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_base.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_sass/_base.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="2" selection-start="705" selection-end="705" vertical-scroll-proportion="0.5991091" vertical-offset="481" max-vertical-offset="3165">
+            <state line="37" column="0" selection-start="599" selection-end="599" vertical-scroll-proportion="-2.8461537" vertical-offset="481" max-vertical-offset="3165">
               <folding />
             </state>
           </provider>
@@ -116,7 +104,6 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/_posts/2014-11-15-your-filename.markdown" />
         <option value="$PROJECT_DIR$/_posts/2014-11-15-your-filename.md" />
-        <option value="$PROJECT_DIR$/_posts/2014-11-15-welcome-to-jekyll.markdown" />
         <option value="$PROJECT_DIR$/_includes/head.html" />
         <option value="$PROJECT_DIR$/_layouts/default.html" />
         <option value="$PROJECT_DIR$/_includes/header.html" />
@@ -124,6 +111,7 @@
         <option value="$PROJECT_DIR$/_posts/2014-11-15-feature-engineering.md" />
         <option value="$PROJECT_DIR$/_sass/_base.scss" />
         <option value="$PROJECT_DIR$/_sass/_layout.scss" />
+        <option value="$PROJECT_DIR$/_posts/2014-11-15-welcome-to-jekyll.markdown" />
       </list>
     </option>
   </component>
@@ -505,41 +493,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2014-10-15-your-filename.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="129" selection-end="129" vertical-scroll-proportion="-5.5555553" vertical-offset="0" max-vertical-offset="300">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2014-11-15-welcome-to-jekyll.markdown">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="19" selection-start="753" selection-end="753" vertical-scroll-proportion="-7.7777777" vertical-offset="0" max-vertical-offset="465">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_layouts/post.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="16" selection-start="350" selection-end="350" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="315">
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2014-11-15-feature-engineering.md">
-      <provider editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="4" selection-end="4" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="2370">
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="MarkdownPreviewEditor">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_site/css/main.css">
@@ -572,9 +530,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_sass/_base.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="2" selection-start="705" selection-end="705" vertical-scroll-proportion="0.5991091" vertical-offset="481" max-vertical-offset="3165">
+        <state line="37" column="0" selection-start="599" selection-end="599" vertical-scroll-proportion="-2.8461537" vertical-offset="481" max-vertical-offset="3165">
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2014-11-15-art-of-ml.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="13" selection-start="17" selection-end="17" vertical-scroll-proportion="-0.5555556" vertical-offset="0" max-vertical-offset="1635">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2014-11-15-welcome-to-jekyll.markdown">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="2" selection-start="774" selection-end="774" vertical-scroll-proportion="0.52401745" vertical-offset="0" max-vertical-offset="480">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
       </provider>
     </entry>
   </component>
