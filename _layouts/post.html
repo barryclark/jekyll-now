@@ -2,14 +2,17 @@
 layout: default
 ---
 
-<article class="post">
+<article class="post" itemscope="itemscope" itemtype="http://schema.org/Article">
+  <meta itemprop="keywords" content="{{ page.tags | join: ',' }}" />
+  <meta itemprop="description" content="{{ content | strip_html | truncatewords: 40 }}" />
+
   <h1>{{ page.title }}</h1>
 
-  <div class="entry">
+  <div class="entry" itemprop="articleBody">
     {{ content }}
   </div>
 
-  <div class="date">
+  <div class="date" itemprop="datePublished" datetime="{{ page.date | date: '%Y-%m-%d' }}">
     Written on {{ page.date | date: "%B %e, %Y" }}
   </div>
 
