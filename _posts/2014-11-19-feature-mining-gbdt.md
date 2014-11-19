@@ -26,6 +26,9 @@ categories: machine_learning feature_engineering feature_learning
 ![原始特征加GBDT新特征][jy_have_gbdt]
 
 
+对了，已经有人利用这种方法赢得了Kaggle一个CTR预估比赛的冠军，代码可见<https://github.com/guestwalk/kaggle-2014-criteo>，里面有这种方法的具体实现。
+
+
 [fb_gbdt]: /images/fb_gbdt1.png "GBDT离散法"
 [jy_no_gbdt]: /images/jiayuan_no_gbdt1.png "仅使用原始特征"
 [jy_have_gbdt]: /images/jiayuan_have_gbdt1.png "原始特征加GBDT新特征"
