@@ -1,4 +1,9 @@
-## Mysql死锁
+---
+layout: post
+title: 一个Mysql的死锁问题，及复现过程
+---
+
+## 现象
 
 最近发现生产环境的Mysql偶发出现死锁现象，通过`show engine innodb status`来查看事务状况，发现如下异常：
 
