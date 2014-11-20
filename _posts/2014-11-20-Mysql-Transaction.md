@@ -7,7 +7,7 @@ title: 一个Mysql的死锁问题，及复现过程
 
 最近发现生产环境的Mysql偶发出现死锁现象，通过`show engine innodb status`来查看事务状况，发现如下异常：
 
-```
+{% highlight %}
 141111 15:23:29
 
 *** (1) TRANSACTION:
@@ -155,7 +155,7 @@ Record lock, heap no 207 PHYSICAL RECORD: n_fields 8; compact format; info bits 
  7: len 1; hex 80; asc  ;;
 
 *** WE ROLL BACK TRANSACTION (2)
-```
+{% endhighlight %}
 
 两条SQL更新的并非同一条数据，只是不巧落到了一个Mysql的Page数据块上，第一感觉应该是业务SQL不合理。
 
@@ -163,22 +163,22 @@ Record lock, heap no 207 PHYSICAL RECORD: n_fields 8; compact format; info bits 
 
 ####启动docker
 
-```
+{% highlight sql %}
 docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=xxx -d mysql
 docker inspect $instance_id | grep 'IPAddress'  // 查找image实例ip地址 
 docker run -it --link some-mysql:mysql --rm mysql sh -c 'exec mysql -h"$IPAddress" -P"3306" -uroot -p"xxx"'
-```
+{% endhighlight %}
 
 ####检查Mysql的隔离级别
 
-```
+{% highlight sql %}
 mysql> select @@global.tx_isolation, @@tx_isolation;
 +-----------------------+-----------------+
 | @@global.tx_isolation | @@tx_isolation  |
 +-----------------------+-----------------+
 | REPEATABLE-READ       | REPEATABLE-READ |
 +-----------------------+-----------------+
-```
+{% endhighlight %}
 
 ####创建数据库
 
