@@ -2,7 +2,6 @@
 title: Profiler Deep Dive; MongoSF 2013
 author: kgorman
 layout: post
-permalink: /?p=1333
 fave-post_views:
   - 135
 add_video:
