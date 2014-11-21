@@ -49,7 +49,8 @@ baseurl: ""
 # !! You don't need to change any of the configuration flags below !!
 #
 
-markdown: kramdown
+#markdown: kramdown
+markdown: redcarpet
 highlighter: pygments
 permalink: /:title/
 
@@ -75,3 +76,6 @@ exclude:
 
 kramdown:
   input: GFM
+
+redcarpet:
+  extensions: ["tables", "no_intra_emphasis", "autolink"]
