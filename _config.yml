@@ -50,7 +50,7 @@ baseurl: ""
 #
 
 #markdown: kramdown
-markdown: kramdown
+markdown: redcarpet
 highlighter: pygments
 permalink: /:title/
 
@@ -79,4 +79,4 @@ kramdown:
   auto_ids:      true
 
 redcarpet:
-  extensions: ["tables", "no_intra_emphasis", "autolink"]
+  extensions: ["fenced_code_blocks", "tables", "no_intra_emphasis", "autolink", "strikethrough"]
