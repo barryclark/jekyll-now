@@ -25,7 +25,7 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 740px;
+  max-width: 1024px;
   padding: 0 10px;
   width: 100%;
 }
@@ -108,30 +108,6 @@ strong, b {
 
 img {
   max-width: 100%;
-}
-
-table{
-  display: block;
-	width: 100%;
-  overflow: auto;
-  word-break: normal;
-  word-break: keep-all;
-  th {
-		padding: 6px 13px;
-    border: 1px solid #ddd;
-		font-weight: bold;
-  }
-  td {
-  	padding: 6px 13px;
-		border: 1px solid #ddd;
-  }
-  tr {
-  	background-color: #fff;
-		border-top: 1px solid #ccc;
-  }
-  tr:nth-child(2n) {
-  	background-color: #f8f8f8;
-  }
 }
 
 .date {
