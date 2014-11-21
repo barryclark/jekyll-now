@@ -112,9 +112,24 @@ img {
 
 table{
   display: block;
-  width: 100%;
+	width: 100%;
   overflow: auto;
-  word-break: normal
+  word-break: normal;
+  word-break: keep-all
+  th {
+  	font-weight: bold
+  }
+  td {
+  	padding: 6px 13px;
+    border: 1px solid #ddd
+  }
+  tr {
+  	background-color: #fff;
+    border-top: 1px solid #ccc	
+  }
+  tr:nth-child(2n) {
+  	background-color: #f8f8f8
+  }
 }
 
 .date {
