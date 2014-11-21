@@ -110,6 +110,13 @@ img {
   max-width: 100%;
 }
 
+table{
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal
+}
+
 .date {
   font-style: italic;
   color: $gray;
