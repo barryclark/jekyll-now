@@ -1551,6 +1551,7 @@ code {
   }
   .mod-text img {
     margin: 20px 0;
+    max-width: 700px;
   }
   .mod-text img.me {
     max-width: 300px !important;
