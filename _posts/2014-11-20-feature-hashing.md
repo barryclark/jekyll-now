@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 title:  "特征哈希（Feature Hashing）"
 date:   2014-11-20 21:41
