@@ -50,7 +50,7 @@ baseurl: ""
 #
 
 #markdown: kramdown
-markdown: redcarpet
+markdown: kramdown
 highlighter: pygments
 permalink: /:title/
 
@@ -75,15 +75,15 @@ exclude:
     - README.md
 
 kramdown:
-  auto_ids:      true
-  footnote_nr:   1
-  entity_output: as_char
-  toc_levels:    1..6
-  smart_quotes:  lsquo,rsquo,ldquo,rdquo
-  use_coderay:   false
-  input: GFM
+    auto_ids:      true
+    footnote_nr:   1
+    entity_output: as_char
+    toc_levels:    1..6
+    smart_quotes:  lsquo,rsquo,ldquo,rdquo
+    use_coderay:   false
+    input: GFM
 
-  coderay:
+coderay:
     coderay_wrap:              div
     coderay_line_numbers:      inline
     coderay_line_number_start: 1
@@ -92,4 +92,4 @@ kramdown:
     coderay_css:               style
 
 redcarpet:
-  extensions: ["tables", "no_intra_emphasis", "autolink"]
+    extensions: ["tables", "no_intra_emphasis", "autolink"]
