@@ -1,14 +1,19 @@
 /*------------------------------------*\
-    ASIDE
+    FOOTER MOBILE
 \*------------------------------------*/
 
-aside,
-.sidebar {
+.footer-mobile {
 
     // S
     @include breakpoint($breakpoint-s) {
         @include layout($s-layout);
         @include container(full);
+        background-color: $gray-lighter;
+        padding: 1.2em 1.8em 1em 1.8em;
+        text-align: center;
+        font-size: .9em;
+        margin-top: 2em;
+        height: 100px;
     };
 
     // M
@@ -19,10 +24,6 @@ aside,
     // L
     @include breakpoint($breakpoint-l) {
         @include layout($l-layout);
-        @include span(3 at 10 last);
-        padding-right: 0;
-        position: fixed;
-        right: 0;
-        padding-right: 2em;
+        display: none;
     };
 }

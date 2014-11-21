@@ -5,10 +5,11 @@
     # header, footer etc.
 \*------------------------------------*/
 
-@import "wrapper";
-@import "header";
+@import "main-sidebar";
 @import "main";
 @import "content";
+@import "content-blank-layout";
 @import "aside";
-@import "footer";
+@import "footer-desktop";
+@import "footer-mobile";
 @import "col-4";

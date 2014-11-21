@@ -1,16 +1,14 @@
 ---
 layout: post
-title: "Symfony Web Service 1: Introduction"
+title: "Symfony Web Service Introduction"
 date: September 15, 2014
-tagline: "How to build a small web service for an iOS app"
+tagline: "Symfony Web Service Part 1"
 tags : [symfony, webservice]
 ---
 
 ![Symfony Love Vagrant](http://miriamtocino.github.io/images/web-service-introduction.svg)
 
 This article is the first one in a series related to one of the last projects that I have been working on: a small **web service for an iOS eLearning app**. The corresponding eLearning app is structured in several modules, each of them containing specific content to be studied by the users. At the end of each module there is a test to be completed.
-
-- - -
 
 #### Writing the web service contract
 
@@ -27,8 +25,6 @@ Using this contract, we can provide a protocol to allow consumers (in this case 
 
 It is also important to mention, that in this project I chose **JSON** as the format for my resource representations, though you could have used any reasonable format, such as XML or YAML.
 
-- - -
-
 #### About safety and idempotency
 
 Before getting deeper into the project, it is important to have clear some definitions related to safety and idempotency, which help us by choosing from the different HTTP verbs available.
@@ -42,7 +38,7 @@ Second, a method is considered to be **idempotent** if it returns the same resul
 
 Check the table above to find out the behavior of the different HTTP verbs.
 
-- - -
+
 
 #### Other articles in this series
 
@@ -51,7 +47,7 @@ You can continue reading about this topic in the following articles of this seri
 * **Symfony Web Service 2: Retrieving Data with GET**
 * **Symfony Web Service 3: Creating Data with POST**
 
-- - -
+
 
 #### Useful Resources
 

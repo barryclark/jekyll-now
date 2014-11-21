@@ -1,26 +1,32 @@
 ---
 layout: post
-title: "Symfony Web Service 2: Retrieving Data with GET"
+title: "Retrieving Data with GET"
 date: October 1, 2014
-tagline: "How to build a small web service for an iOS app"
+tagline: "Symfony Web Service Part 2"
 tags : [symfony, webservice]
 ---
 
 ![Symfony Love Vagrant](http://miriamtocino.github.io/images/web-service-get.svg)
 
+_This article is part of a series about how to build a **web wervice for an iOS eLearning iPad app**. So far there have been articles on [Introduction Symfony Web Service](http://www.miriamtocino.com/articles/symfony-web-service-introduction/)._
+
+- - -
+
+_**NOTE**: The project database stores data coming from different iOS apps. That's why the URIs in this article need to include information about the application we are refering to. If your web service is used just for one application, it won't be necessary that you specify this field in your URIs._
+
+- - -
+
+_**NOTE**: The following recommendations come from the [Internet Engineering Task Force (IETF) and the Internet Society](http://en.wikipedia.org/wiki/Internet_Engineering_Task_Force), the principal technical development and standards-setting bodies for the Internet._
+
+
+
+#### Introduction
+
 Every time a user completes a test and submits his results, a **log** is sent to the web service, including information about the user and the _status_ of the corresponding module coming from the eLearning app.
 
 This article shows how I did it to **retrieve a list of user's logs** for a specific application using GET.
 
-- - -
 
-NOTE: The project database stores data coming from different iOS apps. That's why the URIs in this article need to include information about the application we are refering to. If your web service is used just for one application, it won't be necessary that you specify this field in your URIs.
-
-- - -
-
-NOTE: The following recommendations come from the [Internet Engineering Task Force (IETF) and the Internet Society](http://en.wikipedia.org/wiki/Internet_Engineering_Task_Force), the principal technical development and standards-setting bodies for the Internet.
-
-- - -
 
 #### Building up the request
 
@@ -41,7 +47,7 @@ Host: elearning-dashboard.dev
 Accept: application/json, text/html
 {% endhighlight %}
 
-- - -
+
 
 #### Building up the response
 
@@ -75,13 +81,13 @@ Content-Type: application/json
 }
 {% endhighlight %}
 
-- - -
+
 
 #### Building up the server endpoint
 
 The last thing we will be doing is to build up the server endpoint. For that, we will be adding first the new route to our routing file:
 
-{% highlight bash linenos %}
+{% highlight bash %}
 # src/Main/WebserviceBundle/Resources/config/routing/webservice.yml
 webservice_get:
     pattern:  /webservice/{app_id}/logs/{username}
@@ -91,7 +97,7 @@ webservice_get:
 
 The server endpoint to get the list of the user's logs will end up looking like this:
 
-{% highlight php startinline linenos %}
+{% highlight php startinline %}
 // src/eLearningDashboard/WebserviceBundle/Controller/WebserviceController.php
 // ...
 
@@ -172,13 +178,13 @@ private function handleResponseErrors($error_type, $error_title, $error_message,
 }
 {% endhighlight %}
 
-- - -
+
 
 #### Handling Errors with application/problem+json
 
 If something went wrong in the server side, the response will look a little bit different. It can be that the application, the module or the user sent in the request is not found in our database. In that case the status code that we send back should be **404** (Not Found). We will still be sending some JSON-formatted data in the response body, but its Content-Type will be partialy different.
 
-By sending back a Content-Type header of **application/problem+json** we will be telling the client that something went wrong in the server side. This is called the **media type** of the document and you can find all the official recognized types in the [Internet Assigned Numbers Authority](http://www.iana.org/assignments/media-types/media-types.xhtml)(IANA). Actually the **application/problem+json** isn't in this list because it's just a draft at the moment of writing this article.
+By sending back a Content-Type header of **application/problem+json** we will be telling the client that something went wrong in the server side. This is called the **media type** of the document and you can find all the official recognized types in the [Internet Assigned Numbers Authority](http://www.iana.org/assignments/media-types/media-types.xhtml) (IANA). Actually the **application/problem+json** isn't in this list because it's just a draft at the moment of writing this article.
 
 Find below a list of the fields that need to be included in the 404 Not Found response:
 
@@ -190,7 +196,7 @@ Find below a list of the fields that need to be included in the 404 Not Found re
 
 I built a specific function in the controller to handle errors, which build up the response with its corresponding headers:
 
-{% highlight php startinline linenos %}
+{% highlight php startinline %}
 // src/eLearningDashboard/WebserviceBundle/Controller/WebserviceController.php
 // ...
 
@@ -207,17 +213,8 @@ private function handleResponseErrors($error_type, $error_title, $error_message,
 }
 {% endhighlight %}
 
-- - -
+_**NOTE**: At the moment of writing this article, there's no standard for how error responses should look like. In this case I included these fields: **type, title, and errors**. This is part of a potential standard called **API Problem**, or **Problem Details**. You can check the corresponding RFC document [here](https://tools.ietf.org/html/draft-nottingham-http-problem-07). It is important to know that this document may change in the future or be discarded entirely for something different. However I'd rather choose to follow a draft like this, than nothing at all. By doing so, this web service will be at least consistent with some others distributed through the world wide web ;-)_
 
-NOTE: At the moment of writing this article, there's no standard for how error responses should look like. In this case I included these fields: **type, title, and errors**. This is part of a potential standard called **API Problem**, or **Problem Details**. You can check the corresponding RFC document [here](https://tools.ietf.org/html/draft-nottingham-http-problem-07).
-
-It is important to know that this document may change in the future or be discarded entirely for something different. However I'd rather choose to follow a draft like this, than nothing at all. By doing so, this web service will be at least consistent with some others distributed through the world wide web ;-)
-
-- - -
-
-_This article is part of a series about how to build a **web wervice for an iOS eLearning iPad app**. So far there have been articles on [Introduction Symfony Web Service](http://www.miriamtocino.com/articles/symfony-web-service-introduction/)._
-
-- - -
 
 #### Useful Resources
 

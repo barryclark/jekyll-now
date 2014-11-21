@@ -10,11 +10,15 @@
 
         display: none;
 
-        border-bottom: 1px solid $gray-lighter;
         padding-bottom: 20px;
         margin-bottom: 20px;
 
-        h4 { font-weight: 500; }
+        h4 {
+            font-weight: 500;
+            border-bottom: 1px solid $gray;
+            padding-bottom: .5em;
+            margin-top: 0;
+        }
 
         ul {
             list-style: none !important;

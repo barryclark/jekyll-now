@@ -8,6 +8,7 @@
     // S
     @include breakpoint($breakpoint-s) {
         @include layout($s-layout);
+        background-color: $white;
 
         &:hover {
             background-color: $gray-lighter;

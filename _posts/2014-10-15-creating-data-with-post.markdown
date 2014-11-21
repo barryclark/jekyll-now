@@ -1,26 +1,30 @@
 ---
 layout: post
-title: "Symfony Web Service 3: Creating Data with POST"
+title: "Creating Data with POST"
 date: October 15, 2014
-tagline: "How to build a small web service for an iOS app"
+tagline: "Symfony Web Service Part 3"
 tags : [symfony, webservice]
 ---
 
 ![Symfony Love Vagrant](http://miriamtocino.github.io/images/web-service-post.svg)
 
+_This article is part of a series about how to build a **web wervice for an iOS eLearning iPad app**. So far there have been articles on: [Symfony Web Service: Introduction](http://www.miriamtocino.com/articles/symfony-web-service-introduction/) and [Symfony Web Service: Retrieving Data with GET](http://www.miriamtocino.com/articles/symfony-web-service-retrieving-data-with-get/)._
+
+- - -
+
+_**NOTE**: The project database stores data coming from different iOS apps. That's why the URIs in this article need to include information about the application we are refering to. If your web service is used just for one application, it won't be necessary that you specify this field in your URIs._
+
+- - -
+
+_**NOTE**: The following recommendations come from the [Internet Engineering Task Force (IETF) and the Internet Society](http://en.wikipedia.org/wiki/Internet_Engineering_Task_Force), the principal technical development and standards-setting bodies for the Internet._
+
+
+
+#### Introduction
+
 As I already explained in the previous article, every time a user completes a test and submits his results, a **log** is sent to the web service, including information about the user and the _status_ of the corresponding module coming from the eLearning app.
 
 This article shows how I did it to **submit and create the user's logs** using POST.
-
-- - -
-
-NOTE: The project database stores data coming from different iOS apps. That's why the URIs in this article need to include information about the application we are refering to. If your web service is used just for one application, it won't be necessary that you specify this field in your URIs.
-
-- - -
-
-NOTE: The following recommendations come from the [Internet Engineering Task Force (IETF) and the Internet Society](http://en.wikipedia.org/wiki/Internet_Engineering_Task_Force), the principal technical development and standards-setting bodies for the Internet.
-
-- - -
 
 #### Building-up the Request
 
@@ -58,7 +62,7 @@ Content-Type: application/json
 }
 {% endhighlight %}
 
-- - -
+
 
 #### Building-up the response
 
@@ -94,7 +98,7 @@ Location: /webservice/1/logs
 }
 {% endhighlight %}
 
-- - -
+
 
 #### Building-up: Server Endpoint
 
@@ -102,7 +106,7 @@ Finally it is time to start working on the controller and focus on the **newActi
 
 So let's build the endpoint with the URL **/webservice/{app_id}/logs**. First, we will be adding the new route to our routing file and redirect the URL to the newAction located in our controller:
 
-{% highlight bash linenos %}
+{% highlight bash %}
 # src/eLearningDashboard/WebserviceBundle/Resources/config/routing/webservice.yml
 webservice_post:
     pattern: /webservice/{app_id}/logs
@@ -112,7 +116,7 @@ webservice_post:
 
 The server endpoint to create a new log for a specific user will end up looking like this:
 
-{% highlight php startinline linenos %}
+{% highlight php startinline %}
 // src/eLearningDashboard/WebserviceBundle/Controller/WebserviceController.php
 // ...
 
@@ -178,7 +182,7 @@ private function handleResponseErrors($error_type, $error_title, $error_message,
 }
 {% endhighlight %}
 
-- - -
+
 
 #### Working with Guzzle
 
@@ -192,7 +196,7 @@ $ composer require guzzle/guzzle ~3.7
 
 For this project I worked with a **testing.php** file located under the root of my project, which looked like this:
 
-{% highlight php startinline linenos %}
+{% highlight php startinline %}
 // testing.php
 
 require __DIR__.'/vendor/autoload.php';
@@ -244,11 +248,6 @@ echo "\n\n";
 // ...
 {% endhighlight %}
 
-- - -
-
-_This article is part of a series about how to build a **web wervice for an iOS eLearning iPad app**. So far there have been articles on: [Symfony Web Service: Introduction](http://www.miriamtocino.com/articles/symfony-web-service-introduction/) and [Symfony Web Service: Retrieving Data with GET](http://www.miriamtocino.com/articles/symfony-web-service-retrieving-data-with-get/)._
-
-- - -
 
 #### Useful Resources
 

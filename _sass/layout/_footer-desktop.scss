@@ -1,14 +1,13 @@
 /*------------------------------------*\
-    ASIDE
+    FOOTER DESKTOP
 \*------------------------------------*/
 
-aside,
-.sidebar {
+.footer-desktop {
 
     // S
     @include breakpoint($breakpoint-s) {
         @include layout($s-layout);
-        @include container(full);
+        display: none;
     };
 
     // M
@@ -19,10 +18,12 @@ aside,
     // L
     @include breakpoint($breakpoint-l) {
         @include layout($l-layout);
-        @include span(3 at 10 last);
-        padding-right: 0;
-        position: fixed;
-        right: 0;
-        padding-right: 2em;
+        @include container(full);
+        display: block;
+        font-size: .9em;
+        text-align: left;
+        position: absolute;
+        bottom: 1.2em;
+        padding-right: 1.8em;
     };
 }

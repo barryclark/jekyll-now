@@ -4,12 +4,19 @@
 
 main {
 
-    margin-top: 27px;
-
     // S
     @include breakpoint($breakpoint-s) {
         @include layout($s-layout);
         @include container(full);
+        padding: 2em 1.8em 0 1.8em;
+        min-height: 100%;
+        margin-bottom: -100px;
+
+        &:after {
+            content: "";
+            display: block;
+            height: 100px;
+        }
     };
 
     // M
@@ -20,6 +27,7 @@ main {
     // L
     @include breakpoint($breakpoint-l) {
         @include layout($l-layout);
-        @include container(full);
+        @include span(9 at 4);
+        padding: 3em 2em;
     };
 }

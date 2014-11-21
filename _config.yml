@@ -22,15 +22,15 @@ linkedin_username:  miriamtocino
 # redcarpet:
   # extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "with_toc_data", "tables"]
 permalink: /articles/:title
-paginate: 3
+paginate: 10
 
 # Navigation
 navigation:
  - title: About
    url: /about.html
- - title: Archive
-   url: /archive.html
  - title: Bookshelf
    url: /bookshelf.html
  - title: Elearning
    url: /elearning.html
+ - title: Impressum
+   url: /impressum.html

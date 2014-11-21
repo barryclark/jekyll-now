@@ -42,6 +42,12 @@
         img {
             margin: 20px 0;
         }
+
+        img.me {
+            max-width: 300px !important;
+            @include border-radius(300px);
+            margin: 40px auto;
+        }
     };
 
     // M
@@ -52,5 +58,11 @@
     // L
     @include breakpoint($breakpoint-l) {
         @include layout($l-layout);
+
+        img.me {
+            max-width: 300px !important;
+            @include border-radius(300px);
+            margin: 40px 0;
+        }
     };
 }

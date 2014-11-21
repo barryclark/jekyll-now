@@ -9,14 +9,25 @@
 	// S
     @include breakpoint($breakpoint-s) {
     	@include layout($s-layout);
-    	border-bottom: 1px solid $gray-lighter;
 		margin-bottom: 40px;
-		padding-bottom: 40px;
 
 		h3, h3 a {
 			color: $color-primary;
 			font-weight: 500;
 		}
+
+        h4 {
+            margin-top: 2em;
+
+            a:hover {
+                color: $gray-darker;
+            }
+        }
+
+        h4, h4 a {
+            color: $color-primary;
+            font-weight: 500;
+        }
 
 		h3, h4 {
 			font-weight: 500;
@@ -34,13 +45,12 @@
             font-weight: 400;
             margin: 0;
             padding: 0;
-            margin-bottom: em(12px);
-            margin-top: em(5px);
         }
 
-        .tagline {
-            margin-top: em(9px);
+        h4.tagline {
+            margin-top: .1em;
             font-weight: 500;
+            color: $gray-darker;
         }
 
 		ul {

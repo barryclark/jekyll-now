@@ -7,12 +7,10 @@ comments: true
     <article class="mod-post">
         <!-- comments-number
         <a href="#disqus_thread"></a> -->
-
         <p class="date">{{ page.date | date_to_long_string }}</p>
         <h3>{{ page.title }}</h3>
         <h4 class="tagline">{{ page.tagline }}</h4>
         <p>{{ content }}</p>
-
     </article>
     <!-- /mod-post -->
 
@@ -52,8 +50,6 @@ comments: true
         {% endif %}
     </div>
     <!-- mod-disqus -->
-
-    <a href="{{ site.url }}" class="button back-to-home"><small>Back to Home</small></a>
 
     <!-- DISQUS - Calculate Number of Comments
     <script type="text/javascript">

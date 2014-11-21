@@ -8,6 +8,8 @@ tags : [symfony, vagrant]
 
 ![Symfony Love Vagrant](http://miriamtocino.github.io/images/symfony-love-vagrant.svg)
 
+#### Introduction
+
 When I first started to work with Symfony, it was important for me to create a smooth and quick way to set up a development environment every time I would like to start a new project.
 
 [Ramon Kleiss](https://twitter.com/kleiram) already built a box, which turned out to fit all my needs at first. It provides a virtual environment for Symfony2 development using [Vagrant](https://www.vagrantup.com/). You can download it and read its full documentation [here](https://github.com/kleiram/vagrant-symfony).
@@ -15,8 +17,6 @@ When I first started to work with Symfony, it was important for me to create a s
 But there was still something missing. How could I use this type of virtual box in different Symfony projects at the same time without having to use the built-in Symfony web server?
 
 > I wanted to be able to check two different projects in my browser running locally, without getting too much into trouble.
-
-- - -
 
 #### Step-by-Step Guide
 
@@ -30,7 +30,7 @@ Open the **Vagrantfile** and configure the network interfaces by changing the IP
 
 The rest of the file you could leave as it is:
 
-{% highlight ruby linenos %}
+{% highlight ruby %}
 # wonderful-project/vagrant/Vagrantfile
 
 Vagrant.configure("2") do |config|
@@ -64,7 +64,7 @@ end
 
 Go to your **hosts** file under the folder **~/etc** and add your project to the list:
 
-{% highlight bash linenos %}
+{% highlight bash %}
 # ~/etc/hosts
 # ...
 192.168.56.101     wonderful-project.dev
@@ -104,7 +104,7 @@ You may also want to configure the connection to the virtual machine via SFTP in
 
 You are now ready to go back to your project and configure the **parameters.yml** file:
 
-{% highlight bash linenos %}
+{% highlight bash %}
 # wonderful-project/app/config/parameters.yml
 
 parameters:
@@ -121,8 +121,6 @@ parameters:
   locale: en
   secret: ThisTokenIsNotSoSecretChangeIt
 {% endhighlight %}
-
-- - -
 
 #### On a daily basis
 

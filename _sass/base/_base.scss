@@ -18,6 +18,10 @@
 // Body reset
 // -------------------------
 
+html, body {
+    height: 100%;
+}
+
 body {
     background: $body-bg;
     font-family: $font-family--primary;
@@ -27,6 +31,7 @@ body {
     font-weight: $text-weight;
     overflow-x: hidden;
     position: relative;
+    background: transparent url("../../images/tile-graphpaper.jpg") 50% 0;
 }
 
 // Reset fonts for relevant elements
@@ -122,7 +127,6 @@ h1, h2, h3, h4, h5, h6,
         line-height: 1;
         color: $headings-small-color;
         display: inline-block;
-        margin-left: 10px;
     }
 }
 
@@ -307,6 +311,7 @@ code {
 .highlight {
     pre {
         overflow-x: scroll;
+
         code {
             /* Line Number */
             .lineno {
