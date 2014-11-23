@@ -22,4 +22,4 @@ categories: machine_learning algorithms
 
 #References
 
-[^ml_things]: Pedro Domingos et al. [A few useful things to know about machine learning](http://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf), 2012.
+[^ml_things]: Pedro Domingos. [A few useful things to know about machine learning](http://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf), 2012.
