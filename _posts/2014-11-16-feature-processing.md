@@ -151,7 +151,7 @@ $$\log\left(\frac{x}{1-x}\right)$$ | $$(0, 1)$$
 
 在上节中我已经介绍了一些常用的离散化单个连续特征的方法，其中一个是*画图观察趋势*。画图观察趋势的好处是直观、可解释性强，坏处是很麻烦。当要离散化的特征很多时，这种方法可操作性较差。
 
-机器学习中有个很好解释，速度也不错的模型——**决策树模型**。大白话说决策树模型就是一大堆的`if else`。它天生就可以对连续特征分段，所以把它用于离散化连续特征合情合理。我称这种方法为**决策树离散化**方法。
+机器学习中有个很好解释，速度也不错的模型——**决策树模型**。大白话说决策树模型就是一大堆的`if else`。它天生就可以对连续特征分段，所以把它用于离散化连续特征合情合理。我称这种方法为**决策树离散化**方法。例如Gmail在对信件做重要性排序时就使用了决策树离散化方法[^gmail]。
 
 决策树离散化方法通常也是每次离散化一个连续特征，做法如下：
 
@@ -177,6 +177,7 @@ $$\log\left(\frac{x}{1-x}\right)$$ | $$(0, 1)$$
 
 #References
 
-[^esl]: Trevor Hastie et al, [The Elements of Statistical Learning](http://statweb.stanford.edu/~tibs/ElemStatLearn/), 2001.
-[^fhash]: Kilian Weinberger et al, Feature Hashing for Large Scale Multitask Learning, 2010.
-[^fbgbdt]: Xinran He et al, Practical Lessons from Predicting Clicks on Ads at Facebook, 2014.
+[^esl]: Trevor Hastie et al. [The Elements of Statistical Learning](http://statweb.stanford.edu/~tibs/ElemStatLearn/), 2001.
+[^gmail]: Douglas Aberdeen et al. The Learning Behind Gmail Priority Inbox, 2010.
+[^fhash]: Kilian Weinberger et al. Feature Hashing for Large Scale Multitask Learning, 2010.
+[^fbgbdt]: Xinran He et al. Practical Lessons from Predicting Clicks on Ads at Facebook, 2014.
