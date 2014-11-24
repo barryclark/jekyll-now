@@ -4,12 +4,11 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+我很懒，什么也没有留下
 
 ### More Information
-
-A place to include any other types of information that you'd like to include about yourself. 
+什么都没有
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[enhance.wang@gmail.com](mailto:enhance.wang@gmail.com)
