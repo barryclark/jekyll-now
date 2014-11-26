@@ -40,10 +40,10 @@ Let's summarise all the fields to be included in the POST request:
 
 | Request Fields     | Value                                                   |
 |--------------------|---------------------------------------------------------|
-| **HTTP Method**    | POST                                                    |
-| **URI**            | /webservice/{app_id}/logs                               |
-| **Content-Type**   | application/json                                        |
-| **Request Body**   | _Representation_ of a user resource including his logs  |
+| HTTP Method    | POST                                                    |
+| URI            | /webservice/{app_id}/logs                               |
+| Content-Type   | application/json                                        |
+| Request Body   | _Representation_ of a user resource including his logs  |
 
 The POST request for this case will end up looking something like this:
 
