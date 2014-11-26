@@ -6,7 +6,7 @@ tagline: "Symfony Web Service Part 3"
 tags : [symfony, webservice]
 ---
 
-![Symfony Love Vagrant](http://miriamtocino.github.io/images/web-service-post.svg)
+![Creating Data with POST](http://miriamtocino.github.io/images/posts/web-service-post.svg)
 
 _This article is part of a series about how to build a **web wervice for an iOS eLearning iPad app**. So far there have been articles on: [Symfony Web Service: Introduction](http://www.miriamtocino.com/articles/symfony-web-service-introduction/) and [Symfony Web Service: Retrieving Data with GET](http://www.miriamtocino.com/articles/symfony-web-service-retrieving-data-with-get/)._
 
@@ -22,19 +22,21 @@ _**NOTE**: The following recommendations come from the [Internet Engineering Tas
 
 #### Introduction
 
-As I already explained in the previous article, every time a user completes a test and submits his results, a **log** is sent to the web service, including information about the user and the _status_ of the corresponding module coming from the eLearning app.
+As I already explained in my [previous article](http://www.miriamtocino.com/articles/symfony-web-service-retrieving-data-with-get/), every time a user completes a test and submits his results, a **log** is sent to the web service, including information about the user and the _status_ of the corresponding module coming from the eLearning app.
 
-This article shows how I did it to **submit and create the user's logs** using POST.
+This article shows how I did it to **submit and create the user's logs**.
 
-#### Building-up the Request
 
-We will start by building-up the request, which is sent from the client to the server. As we are creating a new resource (in this case a new **log**), we will choose **POST** as the HTTP method. The POST request looks similar to the GET request shown in the [previous article](http://www.miriamtocino.com/articles/symfony-web-service-retrieving-data-with-get/), but with some additional fields.
 
-According to some HTTP rules, when you want to create a resource (in this case we will create a new **log**), you should send a POST request to its collection, which in this case turns out to be located under the URL **/webservice/{app_id}/logs**.
+#### Building-up the request
 
-Additionally we will need to send the user data in the request body. We should always specify the format in which this data is sent (Content-Type). In this case we will be choosing **JSON-formatted** data.
+I will start by building-up the request, which is sent from the client to the server. As we are creating a new resource (in this case a new **log**), we will choose **POST** as the HTTP method. The POST request looks similar to the GET request shown in my [previous article](http://www.miriamtocino.com/articles/symfony-web-service-retrieving-data-with-get/), but with some additional fields.
 
-Find below a complete list of the fields that need to be included in the request:
+According to some HTTP rules, when you want to create a resource (in this special case a new **log**), you should send a POST request to its collection, which in this case turns out to be located under the URI **/webservice/{app_id}/logs**.
+
+Additionally the user data needs to be sent in the request body. We should always specify the format in which this data is sent (in this case I will be choosing **JSON-formatted** data).
+
+Let's summarise all the fields to be included in the POST request:
 
 | Request Fields     | Value                                                   |
 |--------------------|---------------------------------------------------------|
@@ -46,16 +48,17 @@ Find below a complete list of the fields that need to be included in the request
 The POST request for this case will end up looking something like this:
 
 {% highlight bash %}
-POST /webservice/{application}/logs HTTP/1.1
+POST /webservice/{app_id}/logs HTTP/1.1
 Host: elearning-dashboard.dev
 Content-Type: application/json
 
 {
-  "username": "wonderful-test-user",
+  "username": "test-user",
   "logs": [
-      { "logged_at": "2014-01-01 00:00:00",
+      {
+        "logged_at": "2014-01-01 00:00:00",
         "status": "1",
-        "module_name": "wonderful-module",
+        "module_name": "test-module",
         "module_id": 1
       }
   ]
@@ -66,31 +69,31 @@ Content-Type: application/json
 
 #### Building-up the response
 
-Once the request is ready, we will focus on building up the response, which is sent from the server to the client. Everytime we are creating a new resource, the correct status code is **201**. I talked about the different status codes and when to use them in [a previous article](http://www.miriamtocino.com/articles/symfony-web-service-introduction/).
+Once the request is ready, I will focus on building up the response, which is sent from the server to the client. Everytime we are creating a new resource, the correct **status code is 201**. It is recommended that everytime the 201 status code is used, a **Location** header pointing to the new resource should be included in the response. This can be quite useful if the client needs that information. We will be saving him one request to the webservice by sending the data in the response body (this time as **JSON-formatted data**).
 
-It is recommended that everytime we use the 201 status code, we should add a **Location** header pointing to the new resource in the response. This can be quite useful if the client needs that information, because we will be saving him one request to the webservice. We will be sending the data in the response body as JSON-formatted data.
-
-Find below a list of the fields that need to be included in the response:
+Let's summarise all the fields to be included in the response:
 
 | Response Fields    | Value                                 |
 |--------------------|---------------------------------------|
 | Status Code        | 201 CREATED                           |
 | Location           | /webservice/{app_id}/logs/{username}  |
 | Content-Type       | application/json                      |
-| **Response Body**  | _Representation_ of a user resource including his logs  |
+| Response Body      | _Representation_ of a user resource including his logs  |
+
+The response will end up looking something like this:
 
 {% highlight bash %}
 HTTP/1.1 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: /webservice/1/logs
+Location: /webservice/{app_id}/logs
 
 {
-  username: "wonderful-user",
+  username: "test-user",
   logs: [
     {
       logged_at: "2014-01-01 00:00:00",
       status: "1",
-      module_name: "wonderful-module",
+      module_name: "test-module",
       module_id: 1
     },
     ...
@@ -100,7 +103,7 @@ Location: /webservice/1/logs
 
 
 
-#### Building-up: Server Endpoint
+#### Building-up the server endpoint
 
 Finally it is time to start working on the controller and focus on the **newAction**!
 
@@ -114,7 +117,7 @@ webservice_post:
     methods: [POST]
 {% endhighlight %}
 
-The server endpoint to create a new log for a specific user will end up looking like this:
+When building the server endpoint first I started by handling possible errors, secondly handling the request and saving the log in the database and lastly building-up the corresponding response. It ended up looking like this:
 
 {% highlight php startinline %}
 // src/eLearningDashboard/WebserviceBundle/Controller/WebserviceController.php
@@ -123,51 +126,83 @@ The server endpoint to create a new log for a specific user will end up looking 
 public function newAction(Request $request, $app_id)
 {
     $em = $this->getDoctrine()->getManager();
-    $log = new Log();
-
-    $this->handleRequest($request, $log);
-    $em->persist($log);
-    $em->flush();
-
-    $data = $this->serializeLog($log);
-    $response = new JsonResponse($data, 201);
-
-    $url = $this->generateUrl('webservice_get', array('app_id' => $app_id, 'username' => $log->getUser()->getUsername()));
-    $response->headers->set('Location', $url);
-
-    return $response;
-}
-
-private function serializeLog(Log $log)
-{
-    return array(
-        'logged_at' => $log->getLoggedAt()->format('Y-m-d H:i:s'),
-        'tstmp' => $log->getTstmp()->format('Y-m-d H:i:s'),
-        'status' => $log->getStatus(),
-        'module_name' => $log->module->getName(),
-        'module_id' => $log->module->getId()
-    );
-}
-
-private function handleRequest(Request $request, $log)
-{
     $data = json_decode($request->getContent(), true);
+
+    // Handling errors
 
     if ($data === null) {
         $error_message = 'Invalid request body format';
         return $this->handleResponseErrors('bad_request_error', '400 Bad Request', $error_message, '400');
     }
 
-    $em = $this->getDoctrine()->getManager();
+    $app = $em->getRepository('ApplicationBundle:Application')->findOneBy(array('id' => $app_id));
+    if (!$app) {
+        $error_message = 'Application not found';
+        return $this->handleResponseErrors('not_found_error', '404 Not Found', $error_message, '404');
+    }
+
     $user = $em->getRepository('UserBundle:User')->findOneBy(array('username' => $data['username']));
+    if (!$user) {
+
+        $error_message = 'User not found';
+        return $this->handleResponseErrors('not_found_error', '404 Not Found', $error_message, '404');
+    }
+
     $module = $em->getRepository('ApplicationBundle:Module')->findOneBy(array('id' => $data['logs'][0]['module_id']));
+    if (!$module) {
+        $error_message = 'Module not found';
+        return $this->handleResponseErrors('not_found_error', '404 Not Found', $error_message, '404');
+    }
+
+    // Handling request & saving log in DB
+
+    $log = new Log();
 
     $log->setUser($user);
     $log->setLoggedAt(new \DateTime($data['logs'][0]['logged_at']));
     $log->setTstmp(new \DateTime());
     $log->setModule($module);
     $log->setStatus($data['logs'][0]['status']);
+
+    $em->persist($log);
+    $em->flush();
+
+    // Building-up the response
+
+    $data = $this->serializeLog($log);
+
+    $response = new JsonResponse($data, 201);
+    $url_show = $this->generateUrl('webservice_get',
+        array(
+            'app_id' => $app_id,
+            'username' => $log->getUser()->getUsername()
+        )
+    );
+    $response->headers->set('Location', $url_show);
+    return $response;
 }
+{% endhighlight %}
+
+
+#### Handling errors
+
+If something went wrong in the server side, the response will look a little bit different. It can be that the data was not sent in proper JSON (400 Bad Request) or even that the application, the module or the user sent in the request is not found in our database (404 Not Found). In that case the status code that we send back should be **404** (Not Found). We will still be sending some JSON-formatted data in the response body, but its Content-Type will be partialy different.
+
+By sending back a Content-Type header of **application/problem+json** we will be telling the client that something went wrong in the server side. This is called the **media type** of the document and you can find all the official recognized types in the [Internet Assigned Numbers Authority](http://www.iana.org/assignments/media-types/media-types.xhtml) (IANA). Actually the **application/problem+json** isn't in this list because it's just a draft at the moment of writing this article.
+
+Let's summarise all the fields to be included in the response paying attention to the information included in the body:
+
+| Request Fields     | Values                                                  |
+|--------------------|---------------------------------------------------------|
+| Status Code    | 400 Bad Request, 404 Not Found                          |
+| Content-Type   | application/problem+json                                |
+| Response Body  | Error information: type, title and error message.       |
+
+I built a specific function in the controller to handle errors, which builds up the response with its corresponding headers:
+
+{% highlight php startinline %}
+// src/eLearningDashboard/WebserviceBundle/Controller/WebserviceController.php
+// ...
 
 private function handleResponseErrors($error_type, $error_title, $error_message, $error_code)
 {
@@ -182,77 +217,14 @@ private function handleResponseErrors($error_type, $error_title, $error_message,
 }
 {% endhighlight %}
 
+_**NOTE**: At the moment of writing this article, there's no standard for how error responses should look like. In this case I included these fields: **type, title, and errors**. This is part of a potential standard called **API Problem**, or **Problem Details**. You can check the corresponding RFC document [here](https://tools.ietf.org/html/draft-nottingham-http-problem-07). It is important to know that this document may change in the future or be discarded entirely for something different._
 
 
-#### Working with Guzzle
 
-I discovered how to work with [Guzzle](http://guzzle3.readthedocs.org/) in [this tutorial](http://knpuniversity.com/screencast/rest) and fell in love with it. A simple library for making HTTP requests and receiving responses, very useful for quick testing purposes.
+#### Useful resources
 
-To include Guzzle in your Symfony project go to the terminal and run:
-
-{% highlight bash %}
-$ composer require guzzle/guzzle ~3.7
-{% endhighlight %}
-
-For this project I worked with a **testing.php** file located under the root of my project, which looked like this:
-
-{% highlight php startinline %}
-// testing.php
-
-require __DIR__.'/vendor/autoload.php';
-
-use Guzzle\Http\Client;
-
-// create our http client (Guzzle)
-$client = new Client('http://elearning-dashboard.dev', array(
-    'request.options' => array(
-        'exceptions' => false,
-    )
-));
-
-// Let's go deep into business!
-
-$username = 'wonderful-user';
-$data = array(
-    'username' => $username,
-    'logs' => array(
-        array(
-            "logged_at" => "2014-01-01 00:00:00",
-            "status" => "1",
-            "module_name" => "wonderful-module",
-            "module_id" => 1
-        )
-    )
-);
-
-echo '1) POST Create a log resource';
-echo "\n\n";
-
-$request = $client->post('/webservice/{app_id}/logs', null, json_encode($data));
-$response = $request->send();
-
-echo $response;
-echo "\n\n";
-
-echo '2) GET a user resource';
-echo "\n\n";
-
-$userUrl = $response->getHeader('Location');
-
-$request = $client->get($userUrl);
-$response = $request->send();
-
-echo $response;
-echo "\n\n";
-
-// ...
-{% endhighlight %}
-
-
-#### Useful Resources
-
-* [RFC 2616 - Status Code Definitions](http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html)
 * [API Problem](https://tools.ietf.org/html/draft-nottingham-http-problem-07)
+* [RFC 2616 - Status Code Definitions](http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html)
 * [RESTful APIs in the Real World Episode 1 - Knp University](http://knpuniversity.com/screencast/rest)
 
 
