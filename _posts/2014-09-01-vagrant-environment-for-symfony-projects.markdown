@@ -6,7 +6,7 @@ tagline: "How to work simultaneously on different projects locally on your compu
 tags : [symfony, vagrant]
 ---
 
-![Symfony Love Vagrant](http://miriamtocino.github.io/images/symfony-love-vagrant.svg)
+![Symfony Love Vagrant](http://miriamtocino.github.io/images/posts/symfony-love-vagrant.svg)
 
 #### Introduction
 

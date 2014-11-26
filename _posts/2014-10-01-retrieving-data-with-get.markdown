@@ -6,7 +6,7 @@ tagline: "Symfony Web Service Part 2"
 tags : [symfony, webservice]
 ---
 
-![Symfony Love Vagrant](http://miriamtocino.github.io/images/web-service-get.svg)
+![Symfony Love Vagrant](http://miriamtocino.github.io/images/posts/web-service-get.svg)
 
 _This article is part of a series about how to build a **web wervice for an iOS eLearning iPad app**. So far there have been articles on [Introduction Symfony Web Service](http://www.miriamtocino.com/articles/symfony-web-service-introduction/)._
 
@@ -213,7 +213,7 @@ private function handleResponseErrors($error_type, $error_title, $error_message,
 }
 {% endhighlight %}
 
-_**NOTE**: At the moment of writing this article, there's no standard for how error responses should look like. In this case I included these fields: **type, title, and errors**. This is part of a potential standard called **API Problem**, or **Problem Details**. You can check the corresponding RFC document [here](https://tools.ietf.org/html/draft-nottingham-http-problem-07). It is important to know that this document may change in the future or be discarded entirely for something different. However I'd rather choose to follow a draft like this, than nothing at all. By doing so, this web service will be at least consistent with some others distributed through the world wide web ;-)_
+_**NOTE**: At the moment of writing this article, there's no standard for how error responses should look like. In this case I included these fields: **type, title, and errors**. This is part of a potential standard called **API Problem**, or **Problem Details**. You can check the corresponding RFC document [here](https://tools.ietf.org/html/draft-nottingham-http-problem-07). It is important to know that this document may change in the future or be discarded entirely for something different._
 
 
 #### Useful Resources

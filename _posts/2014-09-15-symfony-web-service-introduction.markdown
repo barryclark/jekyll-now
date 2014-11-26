@@ -6,7 +6,7 @@ tagline: "Symfony Web Service Part 1"
 tags : [symfony, webservice]
 ---
 
-![Symfony Love Vagrant](http://miriamtocino.github.io/images/web-service-introduction.svg)
+![Symfony Love Vagrant](http://miriamtocino.github.io/images/posts/web-service-introduction.svg)
 
 This article is the first one in a series related to one of the last projects that I have been working on: a small **web service for an iOS eLearning app**. The corresponding eLearning app is structured in several modules, each of them containing specific content to be studied by the users. At the end of each module there is a test to be completed.
 
