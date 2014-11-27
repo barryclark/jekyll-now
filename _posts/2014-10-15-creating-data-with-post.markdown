@@ -8,7 +8,7 @@ tags : [symfony, webservice]
 
 ![Creating Data with POST](http://miriamtocino.github.io/images/posts/web-service-post.svg)
 
-_This article is part of a series about how to build a **web wervice for an iOS eLearning iPad app**. So far there have been articles on: [Symfony Web Service: Introduction](http://www.miriamtocino.com/articles/symfony-web-service-introduction/) and [Symfony Web Service: Retrieving Data with GET](http://www.miriamtocino.com/articles/symfony-web-service-retrieving-data-with-get/)._
+_This article is part of a series about how to build a **web wervice for an iOS eLearning iPad app**. So far there have been articles on [Symfony Web Service: Introduction](http://www.miriamtocino.com/articles/symfony-web-service-introduction/) and [Retrieving Data with GET](http://www.miriamtocino.com/articles/retrieving-data-with-get/)._
 
 - - -
 
@@ -22,7 +22,7 @@ _**NOTE**: The following recommendations come from the [Internet Engineering Tas
 
 #### Introduction
 
-As I already explained in my [previous article](http://www.miriamtocino.com/articles/symfony-web-service-retrieving-data-with-get/), every time a user completes a test and submits his results, a **log** is sent to the web service, including information about the user and the _status_ of the corresponding module coming from the eLearning app.
+As I already explained in my [previous article](http://www.miriamtocino.com/articles/retrieving-data-with-get/), every time a user completes a test and submits his results, a **log** is sent to the web service, including information about the user and the **status** of the corresponding module coming from the eLearning app.
 
 This article shows how I did it to **submit and create the user's logs**.
 
@@ -30,13 +30,13 @@ This article shows how I did it to **submit and create the user's logs**.
 
 #### Building-up the request
 
-I will start by building-up the request, which is sent from the client to the server. As we are creating a new resource (in this case a new **log**), we will choose **POST** as the HTTP method. The POST request looks similar to the GET request shown in my [previous article](http://www.miriamtocino.com/articles/symfony-web-service-retrieving-data-with-get/), but with some additional fields.
+I will start by building-up the request, which is sent from the client to the server. As I am creating a new resource (in this case a new **log**), I will choose **POST** as the HTTP method. The POST request looks similar to the GET request shown in my [previous article](http://www.miriamtocino.com/articles/symfony-web-service-retrieving-data-with-get/), but with some additional fields.
 
 According to some HTTP rules, when you want to create a resource (in this special case a new **log**), you should send a POST request to its collection, which in this case turns out to be located under the URI **/webservice/{app_id}/logs**.
 
 Additionally the user data needs to be sent in the request body. We should always specify the format in which this data is sent (in this case I will be choosing **JSON-formatted** data).
 
-Let's summarise all the fields to be included in the POST request:
+Let's summarize all the fields to be included in the POST request:
 
 | Request Fields     | Value                                                   |
 |--------------------|---------------------------------------------------------|
@@ -69,9 +69,9 @@ Content-Type: application/json
 
 #### Building-up the response
 
-Once the request is ready, I will focus on building up the response, which is sent from the server to the client. Everytime we are creating a new resource, the correct **status code is 201**. It is recommended that everytime the 201 status code is used, a **Location** header pointing to the new resource should be included in the response. This can be quite useful if the client needs that information. We will be saving him one request to the webservice by sending the data in the response body (this time as **JSON-formatted data**).
+Once the request is ready, I will focus on building up the response, which is sent from the server to the client. Everytime that a new resource is created, the correct status code is 201. It is recommended that everytime the 201 status code is used, a **Location** header pointing to the new resource should be included in the response. This can be quite useful if the client needs that information. We will be saving him one request to the webservice by sending the data in the response body (this time as **JSON-formatted data**).
 
-Let's summarise all the fields to be included in the response:
+Let's summarize all the fields to be included in the response:
 
 | Response Fields    | Value                                 |
 |--------------------|---------------------------------------|
@@ -101,13 +101,15 @@ Location: /webservice/{app_id}/logs
 }
 {% endhighlight %}
 
+Please note that the body content is the same as in the response using POST in the [previous article](http://www.miriamtocino.com/articles/retrieving-data-with-get/). However the status code will be different in each case.
+
 
 
 #### Building-up the server endpoint
 
 Finally it is time to start working on the controller and focus on the **newAction**!
 
-So let's build the endpoint with the URL **/webservice/{app_id}/logs**. First, we will be adding the new route to our routing file and redirect the URL to the newAction located in our controller:
+So let's build the endpoint with the URL **/webservice/{app_id}/logs**. First, I will be adding the new route to the routing file and redirect the URL to the **newAction** located in the controller:
 
 {% highlight bash %}
 # src/eLearningDashboard/WebserviceBundle/Resources/config/routing/webservice.yml
@@ -128,7 +130,7 @@ public function newAction(Request $request, $app_id)
     $em = $this->getDoctrine()->getManager();
     $data = json_decode($request->getContent(), true);
 
-    // Handling errors
+    // Handling possible errors
 
     if ($data === null) {
         $error_message = 'Invalid request body format';
@@ -154,7 +156,7 @@ public function newAction(Request $request, $app_id)
         return $this->handleResponseErrors('not_found_error', '404 Not Found', $error_message, '404');
     }
 
-    // Handling request & saving log in DB
+    // Saving log in DB
 
     $log = new Log();
 
@@ -181,16 +183,27 @@ public function newAction(Request $request, $app_id)
     $response->headers->set('Location', $url_show);
     return $response;
 }
+
+private function serializeLog(Log $log)
+{
+    return array(
+        'logged_at' => $log->getLoggedAt()->format('Y-m-d H:i:s'),
+        'tstmp' => $log->getTstmp()->format('Y-m-d H:i:s'),
+        'status' => $log->getStatus(),
+        'module_name' => $log->module->getName(),
+        'module_id' => $log->module->getId()
+    );
+}
 {% endhighlight %}
 
 
 #### Handling errors
 
-If something went wrong in the server side, the response will look a little bit different. It can be that the data was not sent in proper JSON (400 Bad Request) or even that the application, the module or the user sent in the request is not found in our database (404 Not Found). In that case the status code that we send back should be **404** (Not Found). We will still be sending some JSON-formatted data in the response body, but its Content-Type will be partialy different.
+If something went wrong in the server side, the response will look a little bit different. It can be that the data was not sent in proper JSON (400 Bad Request) or even that the application, the module or the user sent in the request is not found in our database (404 Not Found). In this case I will still be sending some JSON-formatted data in the response body, but its Content-Type will be partialy different.
 
 By sending back a Content-Type header of **application/problem+json** we will be telling the client that something went wrong in the server side. This is called the **media type** of the document and you can find all the official recognized types in the [Internet Assigned Numbers Authority](http://www.iana.org/assignments/media-types/media-types.xhtml) (IANA). Actually the **application/problem+json** isn't in this list because it's just a draft at the moment of writing this article.
 
-Let's summarise all the fields to be included in the response paying attention to the information included in the body:
+Let's summarize all the fields to be included in the response paying attention to the information included in the body:
 
 | Request Fields     | Values                                                  |
 |--------------------|---------------------------------------------------------|
