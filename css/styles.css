@@ -1448,56 +1448,56 @@ code {
 }
 
 /*------------------------------------*\
-    ARCHIVE: POST ITEM
+    GALLERY
 \*------------------------------------*/
 @media (min-width: 0px), (min-width: 568px) {
-  .col-4 {
+  .gallery-item {
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
-  .col-4:after {
+  .gallery-item:after {
     content: " ";
     display: block;
     clear: both;
   }
 }
 @media (min-width: 569px), (min-width: 768px) {
-  .col-4 {
+  .gallery-item {
     width: 50%;
     float: left;
     padding-left: 1.25%;
     padding-right: 1.25%;
   }
-  .col-4:nth-child(2n + 1) {
+  .gallery-item:nth-child(2n + 1) {
     margin-left: 0;
     margin-right: -100%;
     clear: both;
   }
-  .col-4:nth-child(2n + 2) {
+  .gallery-item:nth-child(2n + 2) {
     margin-left: 50%;
     margin-right: -100%;
     clear: none;
   }
 }
 @media (min-width: 769px), (min-width: 1024px) {
-  .col-4 {
+  .gallery-item {
     width: 33.33333%;
     float: left;
     padding-left: 1.38889%;
     padding-right: 1.38889%;
   }
-  .col-4:nth-child(3n + 1) {
+  .gallery-item:nth-child(3n + 1) {
     margin-left: 0;
     margin-right: -100%;
     clear: both;
   }
-  .col-4:nth-child(3n + 2) {
+  .gallery-item:nth-child(3n + 2) {
     margin-left: 33.33333%;
     margin-right: -100%;
     clear: none;
   }
-  .col-4:nth-child(3n + 3) {
+  .gallery-item:nth-child(3n + 3) {
     margin-left: 66.66667%;
     margin-right: -100%;
     clear: none;
@@ -1713,6 +1713,57 @@ code {
     margin-bottom: 2.14286em;
   }
   .mod-post--archive a.btn--color-brackground--default {
+    position: absolute;
+    bottom: 2em;
+  }
+}
+
+/*------------------------------------*\
+    MODULE PROJECT
+    Ooverview Page
+\*------------------------------------*/
+@media (min-width: 0px), (min-width: 568px) {
+  .mod-project--card .project-intro {
+    background-color: #fff;
+    padding: 1em;
+    border: 1px solid #eeeeee;
+  }
+  .mod-project--card .project-description {
+    background-color: #222222;
+    color: white;
+    padding: 1em;
+    font-size: .9em;
+    border: 1px solid #222222;
+  }
+  .mod-project--card h4, .mod-project--card h4 a {
+    color: #d33682;
+    font-weight: 500;
+  }
+  .mod-project--card h5 {
+    font-weight: 500;
+  }
+  .mod-project--card h4 {
+    margin: 5px 0;
+  }
+  .mod-project--card .subtitle {
+    color: #777777;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 0.85714em;
+    margin-top: 0.35714em;
+  }
+  .mod-project--card p a {
+    color: #d33682;
+  }
+  .mod-project--card p a:hover {
+    color: #d33682;
+    text-decoration: underline;
+  }
+  .mod-project--card p.technologies {
+    font-style: italic;
+  }
+  .mod-project--card a.btn--color-brackground--default {
     position: absolute;
     bottom: 2em;
   }
