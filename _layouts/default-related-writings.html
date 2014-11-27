@@ -1,50 +1,50 @@
 {% include head.html %}
 {% include main-sidebar.html %}
 
-    <!-- main -->
-    <main>
+<!-- main -->
+<main>
 
-        <!-- content -->
-        <section class="content">
-            {{content}}
-        </section>
-        <!-- /content -->
+    <!-- content -->
+    <section class="content">
+        {{content}}
+    </section>
+    <!-- /content -->
 
-        <!-- sidebar -->
-        <aside>
+    <!-- sidebar -->
+    <aside>
 
-            <!-- mod-widget toc -->
-            <div class="mod-post-toc">
-            </div>
-            <!-- /mod-widget toc -->
+        <!-- mod-widget toc -->
+        <div class="mod-post-toc">
+        </div>
+        <!-- /mod-widget toc -->
 
-            <!-- mod-widget related-articles -->
-            <div class="mod-widget related-articles">
-                <h4>Related Articles</h4>
-                <ul>
-                    {% for post in site.related_posts limit: 5 %}
-                    <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-                    <p class="date">{{ post.date | date_to_long_string }}</p>
-                    {% endfor %}
-                </ul>
-            </div>
-            <!-- /mod-widget related-articles -->
+        <!-- mod-widget related-articles -->
+        <div class="mod-widget related-articles">
+            <h4>Related Articles</h4>
+            <ul>
+                {% for post in site.related_posts limit: 5 %}
+                <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+                <p class="date">{{ post.date | date_to_long_string }}</p>
+                {% endfor %}
+            </ul>
+        </div>
+        <!-- /mod-widget related-articles -->
 
-        </aside>
-        <!-- /sidebar -->
+    </aside>
+    <!-- /sidebar -->
 
-    </main>
-    <!-- /main -->
+</main>
+<!-- /main -->
 
-    <!-- JS loading toc -->
-    <script type="text/javascript" src="{{ "/js/toc.js" | prepend: site.baseurl }}"></script>
+<!-- JS loading toc -->
+<script type="text/javascript" src="{{ "/js/toc.js" | prepend: site.baseurl }}"></script>
 
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('.mod-post-toc').toc();
-        });
-    </script>
-    <!-- /JS loading toc -->
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('.mod-post-toc').toc();
+    });
+</script>
+<!-- /JS loading toc -->
 
 {% include footer.html %}
 
