@@ -134,32 +134,53 @@ public function newAction(Request $request, $app_id)
 
     if ($data === null) {
         $error_message = 'Invalid request body format';
-        return $this->handleResponseErrors('bad_request_error', '400 Bad Request', $error_message, '400');
+        return $this->handleResponseErrors(
+            'bad_request_error',
+            '400 Bad Request',
+            $error_message,
+            '400'
+        );
     }
 
-    $app = $em->getRepository('ApplicationBundle:Application')->findOneBy(array('id' => $app_id));
+    $app = $em->getRepository('ApplicationBundle:Application')
+        ->findOneBy(array('id' => $app_id));
     if (!$app) {
         $error_message = 'Application not found';
-        return $this->handleResponseErrors('not_found_error', '404 Not Found', $error_message, '404');
+        return $this->handleResponseErrors(
+            'not_found_error',
+            '404 Not Found',
+            $error_message,
+            '404'
+        );
     }
 
-    $user = $em->getRepository('UserBundle:User')->findOneBy(array('username' => $data['username']));
+    $user = $em->getRepository('UserBundle:User')
+        ->findOneBy(array('username' => $data['username']));
     if (!$user) {
-
         $error_message = 'User not found';
-        return $this->handleResponseErrors('not_found_error', '404 Not Found', $error_message, '404');
+        return $this->handleResponseErrors(
+            'not_found_error',
+            '404 Not Found',
+            $error_message,
+            '404'
+        );
     }
 
-    $module = $em->getRepository('ApplicationBundle:Module')->findOneBy(array('id' => $data['logs'][0]['module_id']));
+    $module = $em->getRepository('ApplicationBundle:Module')
+        ->findOneBy(array('id' => $data['logs'][0]['module_id']));
     if (!$module) {
         $error_message = 'Module not found';
-        return $this->handleResponseErrors('not_found_error', '404 Not Found', $error_message, '404');
+        return $this->handleResponseErrors(
+            'not_found_error',
+            '404 Not Found',
+            $error_message,
+            '404'
+        );
     }
 
     // Saving log in DB
 
     $log = new Log();
-
     $log->setUser($user);
     $log->setLoggedAt(new \DateTime($data['logs'][0]['logged_at']));
     $log->setTstmp(new \DateTime());
@@ -169,16 +190,17 @@ public function newAction(Request $request, $app_id)
     $em->persist($log);
     $em->flush();
 
-    // Building-up the response
+    // Building-up Response
 
     $data = $this->serializeLog($log);
 
     $response = new JsonResponse($data, 201);
-    $url_show = $this->generateUrl('webservice_get',
+    $url_show = $this->generateUrl(
+        'webservice_get',
         array(
             'app_id' => $app_id,
-            'username' => $log->getUser()->getUsername()
-        )
+            'username' => $log->getUser()->getUsername()),
+        UrlGeneratorInterface::ABSOLUTE_URL
     );
     $response->headers->set('Location', $url_show);
     return $response;

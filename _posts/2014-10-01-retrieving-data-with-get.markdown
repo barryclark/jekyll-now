@@ -113,7 +113,12 @@ public function listAction($app_id, $username)
 
     if (!$application) {
         $error_message = 'Application not found';
-        return $this->handleResponseErrors('not_found_error', '404 Not Found', $error_message, '404');
+        return $this->handleResponseErrors(
+            'not_found_error',
+            '404 Not Found',
+            $error_message,
+            '404'
+        );
     }
 
     $modules = $em->getRepository('ApplicationBundle:Module')
@@ -121,8 +126,12 @@ public function listAction($app_id, $username)
 
     if (!$modules) {
         $error_message = 'No modules found for this application';
-        return $this->handleResponseErrors('not_found_error', '404 Not Found', $error_message, '404');
-
+        return $this->handleResponseErrors(
+            'not_found_error',
+            '404 Not Found',
+            $error_message,
+            '404'
+        );
     }
 
     $user = $em->getRepository('UserBundle:User')
@@ -130,7 +139,12 @@ public function listAction($app_id, $username)
 
     if (!$user) {
         $error_message = 'Username not found';
-        return $this->handleResponseErrors('not_found_error', '404 Not Found', $error_message, '404');
+        return $this->handleResponseErrors(
+            'not_found_error',
+            '404 Not Found',
+            $error_message,
+            '404'
+        );
     }
 
     // Retrieving logs from DB
@@ -152,7 +166,11 @@ public function listAction($app_id, $username)
 
     // Building-up the response
 
-    $data = array('username' => $username, 'logs' => array());
+    $data = array(
+        'username' => $username,
+        'logs' => array()
+    );
+
     foreach ($logs as $log) {
         $data['logs'][] = $this->serializeLog($log);
     }
