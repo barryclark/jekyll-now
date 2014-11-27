@@ -1,0 +1,73 @@
+/*------------------------------------*\
+    MODULE PROJECT
+    Ooverview Page
+\*------------------------------------*/
+
+.mod-project--card {
+
+    // S
+    @include breakpoint($breakpoint-s) {
+        @include layout($s-layout);
+
+        .project-intro {
+            background-color: $white;
+            padding: 1em;
+            border: 1px solid $gray-lighter;
+        }
+
+        .project-description {
+            background-color: $gray-darker;
+            color: white;
+            padding: 1em;
+            font-size: .9em;
+            border: 1px solid $gray-darker;
+        }
+
+        h4, h4 a {
+            color: $color-primary;
+            font-weight: 500;
+        }
+        h5 {
+            font-weight: 500;
+        }
+        h4 {
+            margin: 5px 0;
+        }
+        .subtitle {
+            color: $gray-light;
+            font-weight: 400;
+            margin: 0;
+            padding: 0;
+            margin-bottom: em(12px);
+            margin-top: em(5px);
+        }
+
+        p a {
+            color: $color-primary;
+
+            &:hover {
+                color: $color-primary;
+                text-decoration: underline;
+            }
+        }
+
+        p.technologies {
+            font-style: italic;
+        }
+
+        a.btn--color-brackground--default {
+            position: absolute;
+            bottom: 2em;
+        }
+    }
+
+    // M
+    @include breakpoint($breakpoint-m) {
+        @include layout($m-layout);
+    };
+
+    // L
+    @include breakpoint($breakpoint-l) {
+        @include layout($l-layout);
+    };
+}

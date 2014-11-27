@@ -28,6 +28,8 @@ paginate: 10
 navigation:
  - title: About
    url: /about.html
+ - title: Projects
+   url: /projects.html
  - title: Bookshelf
    url: /bookshelf.html
  - title: Elearning
