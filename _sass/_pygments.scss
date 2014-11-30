@@ -10,7 +10,7 @@
 
 .highlight {
 	overflow-x: auto;
-	@include font-size(16,no);
+	@include font-size(16);
 	border: 1px solid darken($body-color, 5);
 	border-radius: $border-radius;
 	pre {
