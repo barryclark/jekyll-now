@@ -10,12 +10,12 @@ Christmas is around the corner and it is time for some geeky Christmas Crafts! G
 
 **Hardware**
 
-* RaspberryPi
-* Electric snowglobe or similar that can be turned on by button
-* Cables (like these: http://goo.gl/jYLQuW)
-* A transistor
-* Tape (some people would probably advocate soldering here)
-* Tools for opening the snowglobe
+- RaspberryPi
+- Electric snowglobe or similar that can be turned on by button
+- Cables (like these: http://goo.gl/jYLQuW)
+- A transistor
+- Tape (some people would probably advocate soldering here)
+- Tools for opening the snowglobe
 
 **Software**
 
