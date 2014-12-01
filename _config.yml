@@ -17,14 +17,14 @@ avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/je
 
 # Includes an icon in the footer for each username you enter
 footer-links:
-  dribbble: https://dribbble.com/risingdawn
+  dribbble: risingdawn
   email: fanjiadawn@outlook.com
   facebook: 
   flickr: 
   github: dawnfan/
   instagram: 
   linkedin: 
-  pinterest: http://www.pinterest.com/avafun/
+  pinterest: avafun/
   rss: dawn# just type anything here for a working RSS icon, make sure you set the "url" above!
   twitter: 
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
