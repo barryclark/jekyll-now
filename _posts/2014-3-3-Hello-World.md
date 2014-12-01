@@ -24,7 +24,9 @@ Christmas is around the corner and it is time for some geeky Christmas Crafts! G
 ## Putting the hardware together
 This is the snowglobe I found at a toys store. It plays 8 songs, whisps around some styrofoam and is powered by 3 1.5v AA batteries. 
 
-Opening it up it was really easy to modify it by cutting the cables. I started out with cutting the wires to the battery pack and replacing hooking it up to the RasPi. To strip the cable I just used a normal scissor and to make sure it doesn't pop out I used some normal tape. First make it work, then make it better :)
+Opening it up it was really easy to modify it by cutting the cables. I started out with cutting the wires to the battery pack and replacing hooking it up to the RasPi. To strip the cable I just used a normal scissor and to make sure it doesn't pop out I used some normal tape. First make it work, then make it better :) At least I'm using the correct colors!
+
+![](/images/christmas-craft/power_wiring.jpg)
 
 It was running as expected so I continued with replacing the button. To simulate a button I used a transistor. A transistor has three pins, the outer two which the wires that previously were connected to the button should be connected to, and the middle one which should be connected to a pin on the RasPi. To test this out, connect the power cables to the RasPi and the button cables to the transistor, then tap the cable connected to the middle pin on one of the 3v pins on the RasPi. If works as expected this should start the snowglobe just as if you'd press the button. If that is the case then connect the cable to one of the pins on the RasPi which is not ground or power supply. I connected it to pin number 10.
 
