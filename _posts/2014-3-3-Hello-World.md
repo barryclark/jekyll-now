@@ -9,17 +9,17 @@ Christmas is around the corner and it is time for some geeky Christmas Crafts! G
 ## What you need
 
 **Hardware**
-- RaspberryPi
-- Electric snowglobe or similar that can be turned on by button
-- Cables (like these: http://goo.gl/jYLQuW)
-- A transistor
-- Tape (some people would probably advocate soldering here)
-- Tools for opening the snowglobe
+* RaspberryPi
+* Electric snowglobe or similar that can be turned on by button
+* Cables (like these: http://goo.gl/jYLQuW)
+* A transistor
+* Tape (some people would probably advocate soldering here)
+* Tools for opening the snowglobe
 
 **Software**
-- Heroku or similar
-- Node.js
-- Redis db
+* Heroku or similar
+* Node.js
+* Redis db
 
 ## Putting the hardware together
 This is the snowglobe I found at a toys store. It plays 8 songs, whisps around some styrofoam and is powered by 3 1.5v AA batteries. 
