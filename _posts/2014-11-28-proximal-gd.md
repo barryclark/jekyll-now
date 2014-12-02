@@ -59,7 +59,7 @@ $$
 $$
 \begin{aligned}
 x_{k+1} &= \arg \min\limits_x \hat{F}(x, x_k) \\
-&= \arg \min\limits_x \frac{L}{2} \parallel x - (x_k - \frac1L \nabla f(x_k)) \parallel ^2 + g(x) \ \ \text{。}\end{aligned}
+&= \arg \min\limits_x \frac{L}{2} \parallel x - (x_k - \frac1L \nabla f(x_k)) \parallel_2^2 + g(x) \ \ \text{。}\end{aligned}
 $$
 
 这就是所谓的**Proximal Gradient Descent(PGD)**算法[^alg]。只要给定$g(x)$时下面的最小化问题能容易地求解，PGD就能高效地使用： 
