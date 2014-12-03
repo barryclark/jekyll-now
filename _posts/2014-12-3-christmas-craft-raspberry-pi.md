@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hacking a Christmas snowglobe with Raspberry Pi
+title: Connecting a Christmas snowglobe to your Raspberry Pi
 published: true
 ---
 
