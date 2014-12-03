@@ -45,8 +45,123 @@ The server needs one endpoint that can receive POST messages from Github webhook
 
 The other endpoint is called by the RasPi to determine if it should "press" the button or not. It gets the information from Redis, returns true if the button should be pressed and then resets the information on Redis so it returns false the next time.
 
+~~~ javascript
+var express = require('express');
+var app = express();
+var bodyParser = require('body-parser')
+var redis = require('redis').createClient(port, url, {no_redy_check: true});
+redis.auth(authToken, function() {
+    console.log("connected");
+});
+
+app.use(bodyParser.json())
+app.set('port', (process.env.PORT || 5000))
+app.use(express.static(__dirname + '/public'))
+
+app.get('/play', function(req, res) {
+    redis.set('play', 1, function(err) {
+        if (err) {
+            console.log(err);
+            res.send(err);
+            return;
+        }
+
+        res.send(200, "Thank you for spreading christmas joy!");
+    });
+});
+
+app.post('/webhook', function(req, res) {
+    var eventType = req.header("x-github-event");
+
+    if (eventType && eventType == "pull_request") {
+        var merged = req.body.pull_request.merged;
+        var closed = req.body.action == "closed";
+        var isMergeEvent = merged && closed;
+
+        if (isMergeEvent) {
+            setMergedStatus();
+        }
+
+        res.send(200);
+    }
+});
+
+app.get('/status', function(req, res) {
+    redis.get('play', function(err, play) {
+        if (err) {
+            console.log(err);
+            res.send(err);
+            return;
+        }
+
+        res.send(
+            {
+                play: play == '1'
+            }
+        );
+
+        redis.set('play', 0);
+    });
+});
+
+app.listen(app.get('port'), function() {
+    console.log("Node app is running at localhost:" + app.get('port'))
+});
+
+function setMergedStatus() {
+    redis.set('play', 1, function(err) {
+        if (err) console.log(err);
+    });
+}
+~~~
+
 ### Rasberry Pi
 The code on the RasPi is just an infinite loop that makes a request to the server a couple of times every second. If the server returns true in the request, the RasPi turns on the power on the pin connected to the transistor for 100ms, which simulates a button press and turns on the snowglobe.
+
+~~~ python
+import RPi.GPIO as GPIO
+import urllib2
+import simplejson
+import time
+import sys
+
+GPIO.setmode(GPIO.BCM)
+print "Setup Pin 10 to output"
+GPIO.setup(10, GPIO.OUT)
+
+def main ():
+  while True:
+    try:
+      updateStatus()
+    except KeyboardInterrupt:
+      print "Bye!"
+      sys.exit(0)
+    except:
+      print "Unexpected error:", sys.exc_info()[0]
+
+def updateStatus():
+  req = urllib2.Request(baseUrl + "/status")
+  opener = urllib2.build_opener()
+  f = opener.open(req)
+  json = simplejson.load(f)
+
+  if json["play"]:
+    print "Playing a song!"
+    simulateButton()
+    time.sleep(10)
+    simulateButton()
+
+  #Nice little sleep between songs
+  time.sleep(2)
+
+def simulateButton ():
+  GPIO.output(10, True)
+  time.sleep(0.1)
+  GPIO.output(10, False)
+
+if __name__ == '__main__':
+  main()
+~~~
 
 
 ![_config.yml]({{ site.baseurl }}/images/config.png)
