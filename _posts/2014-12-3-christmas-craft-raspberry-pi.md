@@ -52,4 +52,8 @@ The code on the RasPi is just an infinite loop that makes a request to the serve
 
 {% gist 0bbaf263b9138f06359f %}
 
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
+## Done!
+![Transistor wiring](/images/christmas-craft/finished.jpg)
+
+
+If I've left something out or have something to improve, please comment!
