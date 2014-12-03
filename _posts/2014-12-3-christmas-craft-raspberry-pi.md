@@ -45,7 +45,8 @@ The server needs one endpoint that can receive POST messages from Github webhook
 
 The other endpoint is called by the RasPi to determine if it should "press" the button or not. It gets the information from Redis, returns true if the button should be pressed and then resets the information on Redis so it returns false the next time.
 
-~~~ javascript
+{% highlight javascript %}
+
 var express = require('express');
 var app = express();
 var bodyParser = require('body-parser')
@@ -113,57 +114,12 @@ function setMergedStatus() {
         if (err) console.log(err);
     });
 }
-~~~
+
+{% endhighlight %}
 
 ### Rasberry Pi
 The code on the RasPi is just an infinite loop that makes a request to the server a couple of times every second. If the server returns true in the request, the RasPi turns on the power on the pin connected to the transistor for 100ms, which simulates a button press and turns on the snowglobe.
 
-~~~ python
-import RPi.GPIO as GPIO
-import urllib2
-import simplejson
-import time
-import sys
-
-GPIO.setmode(GPIO.BCM)
-print "Setup Pin 10 to output"
-GPIO.setup(10, GPIO.OUT)
-
-def main ():
-  while True:
-    try:
-      updateStatus()
-    except KeyboardInterrupt:
-      print "Bye!"
-      sys.exit(0)
-    except:
-      print "Unexpected error:", sys.exc_info()[0]
-
-def updateStatus():
-  req = urllib2.Request(baseUrl + "/status")
-  opener = urllib2.build_opener()
-  f = opener.open(req)
-  json = simplejson.load(f)
-
-  if json["play"]:
-    print "Playing a song!"
-    simulateButton()
-    time.sleep(10)
-    simulateButton()
-
-  #Nice little sleep between songs
-  time.sleep(2)
-
-def simulateButton ():
-  GPIO.output(10, True)
-  time.sleep(0.1)
-  GPIO.output(10, False)
-
-if __name__ == '__main__':
-  main()
-~~~
-
-
-![_config.yml]({{ site.baseurl }}/images/config.png)
+{% gist 0bbaf263b9138f06359f %}
 
 The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
