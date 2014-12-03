@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Hacking a electric snowglobe with Raspberry Pi"
+title: Hacking an electric snowglobe with Raspberry Pi
 published: true
 ---
 
