@@ -3,13 +3,15 @@ layout: post
 title: Welcome to my website!
 ---
 
-I'm currently a PhD student at the University of Pennsylvania. This space will have more things in the future.
+This space will have more things in the future.
 
-Projects:
+For now, there is an [about](about) page with information about me, a [fosters](fosters) page with information about kittens, and other pages for random projects.
+
+### Projects
 
 * [Koduino](/koduino) -- An Arduino core for STM32 microcontrollers
 
-Other sites:
+### Other sites
 
 * [Lab homepage](http://kodlab.seas.upenn.edu/Avik/Home)
 
