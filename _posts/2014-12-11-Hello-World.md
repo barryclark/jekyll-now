@@ -3,9 +3,7 @@ layout: post
 title: Welcome to my website!
 ---
 
-This space will have more things in the future.
-
-For now, there is an [about](about) page with information about me, a [fosters](fosters) page with information about kittens, and other pages for random projects.
+This space will have more things in the future. For now, there is an [about](/about) page with information about me, a [fosters](/fosters) page with information about kittens, and other pages for random projects.
 
 ### Projects
 
