@@ -27,6 +27,6 @@ Please contact me if you would like to give these sweet kitties a new home!
 [penny]:/images/penny.png "Penny"
 [piper]:/images/piper.jpg "Piper"
 [block]:/images/block.jpg "Blockie"
-[block]:/images/brody.jpg "Brody"
+[brody]:/images/brody.jpg "Brody"
 [bugs]: /images/bugs.jpg "Bugs"
 [dale]: /images/dale.jpg "Agent Dale Cooper"
