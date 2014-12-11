@@ -8,15 +8,21 @@ I’m currently a PhD student at the University of Pennsylvania. This space will
 
 ### More information
 
-My [lab homepage](http://kodlab.seas.upenn.edu/Avik/Home) has more information about the work I do. Outside of lab *(...riiight)*, I enjoy staying playing ultimate frisbee with [PADA](http://pada.org/), fostering tiny kittens and volunteering at [PAWS](http://phillypaws.org/). Please get in touch with me if you want to adopt a kitty friend!
+My [lab homepage](http://kodlab.seas.upenn.edu/Avik/Home) has more information about the work I do. Outside of lab *(...riiight)*, I enjoy staying playing ultimate frisbee with [PADA](http://pada.org/), [fostering tiny kittens](/fosters) and volunteering at [PAWS](http://phillypaws.org/). Please get in touch with me if you want to adopt a kitty friend!
 
 ### Contact me
 
 Links are in the footer.
 
+### Travels
+
+I have traveled a fair amount in my life (perk of being a graduate student ;-) ) and I decided to start documenting, because it reminds of the stories involved. 
+
+<iframe src="https://mapsengine.google.com/map/embed?mid=zlxSfKtAshHA.kE_e2uZN5mTo" width="640" height="480"></iframe>
+
 ### Mini-resume
 
-I realize that it's hip to have a Latex resume---but this is honestly way easier to keep up-to-date.
+I'm pretty set on academia, but if you are someone who is looking to hire people and give them a big salary, maybe you want some of this info! (I realize that it's hip to have a Latex resume---but this is honestly way easier to keep up-to-date.)
 
 #### EDUCATION
 
@@ -60,4 +66,4 @@ Listed at my [lab page](http://kodlab.seas.upenn.edu/Avik/Home).
   
 #### SKILLS  
 
-Mathematica, MATLAB, LATEX, Python, C/C++, Java, OpenGL, Solidworks, welding, machining, ...
+Mathematica, MATLAB, LaTeX, Python, C/C++, Java, OpenGL, Solidworks, welding, machining, ...
