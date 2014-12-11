@@ -9,7 +9,7 @@ name: Avik De
 description: Student for Life
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: images/head.jpg
+avatar: /images/head.jpg
 
 #
 # Flags below are optional
