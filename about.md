@@ -4,12 +4,14 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+I’m currently a PhD student at the University of Pennsylvania. This space will have more things in the future.
 
-### More Information
+### More information
 
-A place to include any other types of information that you'd like to include about yourself. 
+My [lab homepage](http://kodlab.seas.upenn.edu/Avik/Home) has more information about the work I do. Outside of lab *(...riiight)*, I enjoy staying playing ultimate frisbee with [PADA](http://pada.org/), fostering kittens and volunteering at [PAWS](http://phillypaws.org/).
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+Links are in the footer.
+
+
