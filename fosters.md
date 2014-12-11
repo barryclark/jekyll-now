@@ -10,14 +10,13 @@ Please contact me if you would like to give these sweet kitties a new home!
 
 | ![][bugs] | ![][dale] |
 
-[bugs]: /images/bugs.jpg "Bugs"
-[dale]: /images/dale.jpg "Agent Dale Cooper"
 
 ## Found a home!
 
 | ![][chewy_skippy] | ![][pip]   | ![][stella]|
 | ![][stevie]    | ![][brewster] | ![][pixie]  |
 | ![][penny]      | ![][piper]       | ![][block]|
+| ![][brody]      |       | |
 
 [chewy_skippy]: /images/chewy_skippy.jpg  "Chewy and Skippy"
 [pip]: /images/pip.jpg  "Pip"
@@ -28,3 +27,6 @@ Please contact me if you would like to give these sweet kitties a new home!
 [penny]:/images/penny.png "Penny"
 [piper]:/images/piper.jpg "Piper"
 [block]:/images/block.jpg "Blockie"
+[block]:/images/brody.jpg "Brody"
+[bugs]: /images/bugs.jpg "Bugs"
+[dale]: /images/dale.jpg "Agent Dale Cooper"
