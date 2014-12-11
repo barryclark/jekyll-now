@@ -4,11 +4,11 @@ title: About
 permalink: /about/
 ---
 
-I’m currently a PhD student at the University of Pennsylvania. This space will have more things in the future.
+I’m currently a PhD student at the University of Pennsylvania.
 
 ### More information
 
-My [lab homepage](http://kodlab.seas.upenn.edu/Avik/Home) has more information about the work I do. Outside of lab *(...riiight)*, I enjoy staying playing ultimate frisbee with [PADA](http://pada.org/), [fostering tiny kittens](/fosters) and volunteering at [PAWS](http://phillypaws.org/). Please get in touch with me if you want to adopt a kitty friend!
+My [lab homepage](http://kodlab.seas.upenn.edu/Avik/Home) has more information about the work I do. Outside of lab *(...riiight)*, I enjoy playing ultimate frisbee with [PADA](http://pada.org/), [fostering tiny kittens](/fosters) and volunteering at [PAWS](http://phillypaws.org/). Please get in touch with me if you want to adopt a kitty friend!
 
 ### Contact me
 
