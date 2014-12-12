@@ -12,11 +12,11 @@ My [lab homepage](http://kodlab.seas.upenn.edu/Avik/Home) has more information a
 
 ### Contact me
 
-Links are in the footer.
+Links are in the footer. :point_down:
 
 ### Travels
 
-I have traveled a fair amount in my life (perk of being a graduate student ;-) ) and I decided to start documenting, because it reminds of the stories involved. 
+I have traveled a fair amount in my life (perk of being a graduate student :wink:) and I decided to start documenting, because it reminds of the stories involved. 
 
 <iframe src="https://mapsengine.google.com/map/embed?mid=zlxSfKtAshHA.kE_e2uZN5mTo" width="640" height="480"></iframe>
 
@@ -26,9 +26,9 @@ I'm pretty set on academia, but if you are someone who is looking to hire people
 
 #### EDUCATION
 
-* **University of Pennsylvania:**
+* [**University of Pennsylvania:**](http://www.upenn.edu/)
 PhD Candidate in Electrical and Systems Engineering  
-* **Johns Hopkins University:**
+* [**Johns Hopkins University:**](http://www.jhu.edu/)
 Concurrent B.S./M.S. in Mechanical Engineering, B.S. in Applied Math, graduated 2010.
   
 #### RESEARCH & PUBLICATIONS
@@ -36,31 +36,32 @@ Concurrent B.S./M.S. in Mechanical Engineering, B.S. in Applied Math, graduated 
 Listed at my [lab page](http://kodlab.seas.upenn.edu/Avik/Home).
 
 #### HONORS AND AWARDS 
-* Hodson Trust scholar [The Hodson Trust]---2009
-* Robert George Gerstmeyer Award [JHU ME]---2009
-* Provost’s Undergraduate Research Award (PURA) grant [JHU]---2008, 2009
-* Pi Tau Sigma honor society inductee [JHU ME]---2008
-* International Scholarship [JHU]---2006-10.
+* JHU [Hodson Trust scholar](http://pages.jh.edu/finaid/prosp_stud_scholar.html#hodson)---2006-10
+* JHU ME Robert George Gerstmeyer Award---2009
+* JHU [Provost’s Undergraduate Research Award](http://web.jhu.edu/administration/provost/initiatives/pura/)---2008, 2009
+* JHU ME [Pi Tau Sigma honor society](http://www.pitausigma.net/Chapters/Johns-Hopkins-Tau-Alpha.cfm) inductee---2008
     
 #### WORK EXPERIENCE
 
-**Research Assistant, JHU LIMBS lab:** Undergraduate research with Dr. Noah Cowan.
+**Graduate Student, UPenn [Kodlab](http://kodlab.seas.upenn.edu/):** Advised by Dr Dan Koditschek.
+
+**Research Assistant, JHU [LIMBS lab](http://limbs.lcsr.jhu.edu/):** Undergraduate research with Dr. Noah Cowan.
 
 * Neuromechanical control of juggling---2009-10
 * SLAM on graphs---2007-08
 * Neuromechanical modeling of weakly electric fish---2007
 
-**Web developer, JHU Advanced Academic Programs:** Custom module development for CMS using Coldfusion and MS-SQL---2006-10.
+**Web developer, JHU [Advanced Academic Programs](http://advanced.jhu.edu/):** Custom module development for CMS using Coldfusion and MS-SQL---2006-10.
 
 **Academic Tutor, JHU:** Physics I & II, Calculus I, II & III---2007-08.
 
 ####  ACTIVITIES
 
-**Hopkins Baja:** Member of a design team involved in designing and fabricating a single seat offroad vehicle from scratch. Team captain 2007-08 season, and lead designer for suspension and steering subsystems for 2008, 2009 and 2010.
+**[Hopkins Baja](http://pages.jh.edu/~baja/):** Member of a design team involved in designing and fabricating a single seat offroad vehicle from scratch. Team captain 2007-08 season, and lead designer for suspension and steering subsystems for 2008, 2009 and 2010.
 
-**Resident Advisor (RA), JHU Res Life---2008-10:** Role modeling, community development and enforcement of regulations for sophomores and upperclassmen living in university housing.
+**Resident Advisor (RA), [JHU Res Life](http://web.jhu.edu/reslife/)---2008-10:** Role modeling, community development and enforcement of regulations for sophomores and upperclassmen living in university housing.
 
-**Johns Hopkins Math Club---2006-09:** Member of the school team taking the Putnam exam or Virginia Tech math contest, contributor to final problems for the Johns Hopkins Math Tournament (JHMT) for high school students.
+**[Johns Hopkins Math Club](http://math.jhu.edu/~mathclub/)---2006-09:** Member of the school team taking the Putnam exam or Virginia Tech math contest, contributor to final problems for the Johns Hopkins Math Tournament (JHMT) for high school students.
 
 **JHU ASME Chapter Secretary/Treasurer:** 2006-2010.
   
