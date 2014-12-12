@@ -1,3 +1,6 @@
+
+The repository is at https://github.com/avikde/koduino.
+
 This is a library of code for boards developed using the STM32 F3/F4 series of microcontrollers, chosen for their FPU instructions and friendly built-in bootloaders.
 The microcontrollers currently targeted are:
 
