@@ -22,7 +22,7 @@ html {
 
 body {
 	background: $white;
-  font: 18px/1.4 $helvetica;
+  font: 16px/1.4 $helvetica;
   color: $darkGray;
 }
 
@@ -49,6 +49,7 @@ h1, h2, h3, h4, h5, h6 {
   
 h1 {  
   font-size: 30px;
+  margin-bottom: 5px;
   a {
     color: inherit;
   }
@@ -78,6 +79,22 @@ a {
   &:hover, &:active {
     color: $blue;
   }
+}
+
+a.tag_box {
+  padding: 3px 6px;
+  margin: 2px;
+  color: white;
+  background: rgba(50, 50, 50, 0.6);
+  border-radius: 3px;
+  text-decoration: none;
+  -moz-box-shadow: rgba(128, 128, 128, 0.1) 0 1px 0, rgba(0, 0, 0, 0.8) 0 1px 7px 0px inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.8) 0 1px 0, rgba(128, 128, 128, 0.5) 0 1px 1px 0px inset;
+  -o-box-shadow: rgba(128, 128, 128, 0.1) 0 1px 0, rgba(0, 0, 0, 0.8) 0 1px 7px 0px inset;
+}
+
+a.tag_box:hover {
+  background: rgba(50, 50, 50, 0.5);
 }
 
 ul, ol {

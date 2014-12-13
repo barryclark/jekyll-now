@@ -1,7 +1,7 @@
 ---
 layout: post
-title: IMU Filtering on an STM32 + MPU6000
-categories: robots
+title: IMU filtering on an STM32 + MPU6000
+categories: robots electronics
 ---
 
 For making [balancing robots](https://www.youtube.com/watch?v=XFXj81mvInc) (disclaimer: not my robot), you certainly need a good sense of the robot's orientation in the world. I had a disastrous experience a few months ago of trying to use a [$1500+ IMU](http://www.microstrain.com/inertial/3DM-GX3-25-OEM) which *breaks if your robot moves too fast*. Like, 300 degrees/sec, which is nothing for a relatively small, agile robot.
@@ -35,6 +35,10 @@ should make anyone uneasy. The roll and pitch don't lie on a linear space, and t
 * using a more principled filtering technique (intuitively keeping track of a belief over the best state to explain the measurements, versus ad-hoc combining the disparate state estimates).
 
 ### Experiments
+
+I did the experiments on one of my own "mainboards" (boards that basically have all the things I think I'll need so I don't have to make a new one for every project):
+
+![](/images/mainboard_v1.1.jpg "Mainboard v1.1")
 
 For each of the plots, the blue trace is the complementary filter and the green trace is the EKF. I sort of tuned them both to have similar squiggliness (that's the statistically correct way to do this, right?) in this "control" test:
 
