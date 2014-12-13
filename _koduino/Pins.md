@@ -5,14 +5,16 @@
 1. (Optionally) call pinRemap() to remap the AF or timer connected to a pin
 2. Call pinMode() with any supported #WiringPinMode
 
-### Pin remapping
+### Pin assignment defaults
 
 The STM32 series allows multiplexing its pins for various purposes, but the procedure for doing so requires selecting a special "alternate function" (AF) number for the pin. This number has to be looked up from the datasheet.
 
 There are some default assignments for all the pins which are linked to below for different variants:
 
 * [f37xcc](https://docs.google.com/spreadsheet/pub?key=0Ai-vm-to9OcDdG1zMzR5WFhweGVwNlNnZmtQdlpsb2c&single=true&gid=1&output=html)
-* f4xxrg
+* [f4xxrg test (Teensy pinout)](https://docs.google.com/spreadsheet/pub?key=0Ai-vm-to9OcDdG1zMzR5WFhweGVwNlNnZmtQdlpsb2c&single=true&gid=5&output=html)
+
+### Pin remapping
 
 However, other assignments are possible, and the function pinRemap() can be called to do this. A common use case is changing the timer a pin is connected to (see example below).
 
