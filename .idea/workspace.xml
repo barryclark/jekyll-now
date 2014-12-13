@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc5dabb2-ced4-48c8-b1f6-57285288762e" name="Default" comment="Merge branch 'master' of https://github.com/breezedeus/breezedeus.github.io&#10;&#10;Conflicts:&#10;&#9;index.html&#10;" />
+    <list default="true" id="dc5dabb2-ced4-48c8-b1f6-57285288762e" name="Default" comment="Merge branch 'master' of https://github.com/breezedeus/breezedeus.github.io&#10;&#10;Conflicts:&#10;&#9;index.html&#10;">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_layouts/post.html" afterPath="$PROJECT_DIR$/_layouts/post.html" />
+    </list>
     <ignored path="breezedeus.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -98,7 +100,7 @@
       <file leaf-file-name="post.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_layouts/post.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="4" selection-start="356" selection-end="356" vertical-scroll-proportion="0.25" vertical-offset="0" max-vertical-offset="720">
+            <state line="12" column="40" selection-start="392" selection-end="392" vertical-scroll-proportion="0.25" vertical-offset="0" max-vertical-offset="720">
               <folding />
             </state>
           </provider>
@@ -701,7 +703,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_layouts/post.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="4" selection-start="356" selection-end="356" vertical-scroll-proportion="0.25" vertical-offset="0" max-vertical-offset="720">
+        <state line="12" column="40" selection-start="392" selection-end="392" vertical-scroll-proportion="0.25" vertical-offset="0" max-vertical-offset="720">
           <folding />
         </state>
       </provider>
