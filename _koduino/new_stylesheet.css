@@ -419,7 +419,8 @@ hr {
 }
 
 hr.footer {
-	height: 1px;
+	height: 0.5px;
+  color: #999;
 }
 
 /* @group Member Descriptions */
