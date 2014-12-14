@@ -5,7 +5,7 @@ permalink: /tags/
 ---
 
 {% for category in site.categories %}
-<a class="tag_box" href="#{{ category | first }}">#{{ category | first }}</a>{% endfor %}
+<a class="tag_box" href="#{{ category | first }}">#{{ category | first }}<sup>{{ category | last | size }}</sup></a>{% endfor %}
 
 {% for category in site.categories %}
 
