@@ -97,6 +97,12 @@ a.tag_box:hover {
   background: rgba(50, 50, 50, 0.5);
 }
 
+.tag_box sup {
+  position: relative;
+  top: -0.5em;
+  font-size: 80%;
+}
+
 ul, ol {
   margin: 15px 0;
   padding-left: 30px;
