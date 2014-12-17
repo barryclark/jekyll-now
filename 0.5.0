@@ -1,0 +1,8 @@
+
+You have requested to uninstall the gem:
+	pygments.rb-0.6.0
+
+github-pages-29 depends on pygments.rb (= 0.6.0)
+jekyll-2.4.0 depends on pygments.rb (~> 0.6.0)
+If you remove this gem, these dependencies will not be met.
+Continue with Uninstall? [yN]  
