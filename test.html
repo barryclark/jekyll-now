@@ -1,0 +1,86 @@
+<html>
+<head>
+    <!-- fill iPhone screen with canvas -->
+    <meta name="viewport" content="width=400" /
+    <title>Tracking Mouse and Touch Events on Canvas</title>
+    <script type="text/javascript">
+        var can, ctx, canX, canY, mouseIsDown = 0;
+ 
+        function init() {
+            can = document.getElementById("can");
+            ctx = can.getContext("2d");
+ 
+            can.addEventListener("mousedown", mouseDown, false);
+            can.addEventListener("mousemove", mouseXY, false);
+            can.addEventListener("touchstart", touchDown, false);
+            can.addEventListener("touchmove", touchXY, true);
+            can.addEventListener("touchend", touchUp, false);
+ 
+            document.body.addEventListener("mouseup", mouseUp, false);
+            document.body.addEventListener("touchcancel", touchUp, false);
+        }
+ 
+        function mouseUp() {
+            mouseIsDown = 0;
+            mouseXY();
+        }
+ 
+        function touchUp() {
+            mouseIsDown = 0;
+            // no touch to track, so just show state
+            showPos();
+        }
+ 
+        function mouseDown() {
+            mouseIsDown = 1;
+            mouseXY();
+        }
+ 
+        function touchDown() {
+            mouseIsDown = 1;
+            touchXY();
+        }
+ 
+        function mouseXY(e) {
+            if (!e)
+                var e = event;
+            canX = e.pageX - can.offsetLeft;
+            canY = e.pageY - can.offsetTop;
+            showPos();
+        }
+ 
+        function touchXY(e) {
+            if (!e)
+                var e = event;
+            e.preventDefault();
+            canX = e.targetTouches[0].pageX - can.offsetLeft;
+            canY = e.targetTouches[0].pageY - can.offsetTop;
+            showPos();
+        }
+ 
+        function showPos() {
+            // large, centered, bright green text
+            ctx.font = "24pt Helvetica";
+            ctx.textAlign = "center";
+            ctx.textBaseline = "middle";
+            ctx.fillStyle = "rgb(64,255,64)";
+            var str = canX + ", " + canY;
+            if (mouseIsDown)
+                str += " down";
+            if (!mouseIsDown)
+                str += " up";
+            ctx.clearRect(0, 0, can.width, can.height);
+            // draw text at center, max length to fit on canvas
+            ctx.fillText(str, can.width / 2, can.height / 2, can.width - 10);
+            // plot cursor
+            ctx.fillStyle = "white";
+            ctx.fillRect(canX -5, canY -5, 10, 10);
+        }
+    </script>
+ 
+</head>
+<body onload="init()">
+    <canvas id="can" height="200" width="300" style="background-color:black">
+    </canvas>
+</body>
+</html>
