@@ -106,7 +106,7 @@ Entity type but in the same time we don’t want to get the Entity class.
 {% highlight C# %}
 // Now we want to get all the generic type parameters defined for the
 // DbSets in the 
-var contextType = typeof(ProductContext);
+var contextType = typeof(ProjectContext);
 
 var allContextGenericParameterTypes = contextType.GetProperties()
     // get db set only properties
