@@ -5,7 +5,7 @@ title: Second time is the charm?
 author: emir_osmanoski
 ---
 
-![_config.yml]({{ site.baseurl }}/images/2014-12-17-Hello-World/HELLOWORLD.png)
+![Hello World]({{ site.baseurl }}/images/2014-12-18-Hello-World/HELLOWORLD.png)
 
 So I just spent all yesterday afternoon to today early morning hours setting up Jekyll to work on my local machine. I also spent some time doing some modifications to it and writing this post. The initial inspiration to search for a suitable blog platform came from an idea for a programming post regarding unit testing and entity framework contexts, but that is going to have to wait until this afternoon.
 
