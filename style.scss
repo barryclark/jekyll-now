@@ -18,7 +18,7 @@ html {
 }
 
 body {
-	background: $white;
+	background: #f7f7f7;
   font: 18px/1.4 $helvetica;
   color: $darkGray;
 }
@@ -69,11 +69,12 @@ p {
 }
 
 a {
-  color: $blue;
+  color: #3498DB;
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
-    color: $blue;
+    color: #3498DB;
+    text-decoration: underline;
   }
 }
 
@@ -147,11 +148,12 @@ img {
 
 .wrapper-masthead {
   margin-bottom: 50px;
+  background: #292F34;
 }
 
 .masthead {
-  padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
+  padding: 40px 0;
+  border-bottom: 0px solid $lightGray;
   
   @include mobile {
     text-align: center;
@@ -187,17 +189,23 @@ img {
 
 .site-name {
   margin: 0;
-  color: $darkGray;
+  color: $white;
   cursor: pointer;
   font-family: $helveticaNeue; 
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
+  a {
+    &:hover, &:active {
+      color: $lightGray;
+      text-decoration: none;
+    }
+  }
 }
 
 .site-description {
   margin: -5px 0 0 0;
-  color: $gray;
+  color: $lightGray;
   font-size: 16px;
   
   @include mobile {
@@ -220,14 +228,18 @@ nav {
 
   a {
     margin-left: 20px;
-    color: $darkGray;
+    color: #ccc;
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
+    &:hover, &:active {
+      color: $white;
+      text-decoration: none;
+    }
 
     @include mobile {
       margin: 0 10px;
-      color: $blue;
+      color: $white;
     }
   }
 }
@@ -255,6 +267,13 @@ nav {
     font-size: 22px;
     font-style: italic;
   }
+  img {
+    box-shadow: 0 0 20px;
+    -webkit-box-shadow: 0 0 20px;
+    -moz-box-shadow: 0 0 20px;
+    -o-box-shadow: 0 0 20px;
+    -ms-box-shadow: 0 0 20px; 
+  }
 
   .comments {
     margin-top: 10px;
@@ -268,14 +287,33 @@ nav {
 
 .wrapper-footer {
   margin-top: 50px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
+  border-top: 0px solid #ddd;
+  border-bottom: 0px solid #ddd;
+  background-color: #292F34;
 }
 
 footer {
   padding: 20px 0;
   text-align: center;
+  font-size: 10px;
+  color: #ccc;
+  
+  a {
+    margin-left: 10px;
+    color: #ccc;
+    text-align: right;
+    font-weight: 300;
+    letter-spacing: 1px;
+    &:hover, &:active {
+      color: $white;
+      text-decoration: none;
+    }
+
+    @include mobile {
+      margin: 0 10px;
+      color: $white;
+    }
+  }
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
