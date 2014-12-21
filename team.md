@@ -7,7 +7,7 @@ published: true
 
 ##The Manjaro Development Team
 
-##Core Team
+###Core Team
 
 * **Philip Müller** Project Leader, Project Management and Coordination, Mirrors Manager, Packager, Developer, Web Developer
 * **Roland Singer** Founder, Designer, Developer, Web Developer, Packager
@@ -21,14 +21,14 @@ published: true
 * **Demiray Muhterem** Manjaro KDE Edition Maintainer, Turkish IRC and web support, Manjaro Artwork
 * **Alexandre** A. Arnt Developer
 
-##Artwork
+###Artwork
 * **Lane Wiscombe** (anex) Manjaro Artwork, MATE Community Edition Maintainer
 
-##OpenRC Team
+###OpenRC Team
 * **Artoo** Packaging, Porting, Infrastructure
 * **Aaditya Bagga** Documentation, Testing, ISOs
 
-##Community and Support
+###Community and Support
 * **Ringo de Kroon** Community Support and IRC Manager
 * **dicktater** Community Global Moderator
 * **Esclapion** LXQt Community Edition Maintainer, Community Support
@@ -36,7 +36,7 @@ published: true
 * **Jonathan** Community Global Moderator
 * **shariebeth** Community Global Moderator
 
-##Documentation
+###Documentation
 * **Jonathon Fernyhough** Editor of the User Guide 0.8.9-0.8.11, Community Moderation
 * **Sabras** Wiki
 * **Alumni**
@@ -46,5 +46,5 @@ published: true
 * **Handy** Global Moderator, Wiki Contributor, Community Support
 * **Joshua** Strot Developer, Graphics Developer
 
-##Acknowledgements
-The awesome community on <forum.manjaro.org> and **#manjaro**
+###Acknowledgements
+The awesome community on <http://forum.manjaro.org> and **#manjaro**
