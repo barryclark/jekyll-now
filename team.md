@@ -45,4 +45,4 @@ published: true
 * **Joshua** Strot Developer, Graphics Developer
 
 ###Acknowledgements
-The awesome community on <http://forum.manjaro.org> and **#manjaro**
+The awesome community on our [forum](https://forum.manjaro.org) and **#manjaro**
