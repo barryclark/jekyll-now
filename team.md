@@ -9,7 +9,7 @@ published: true
 
 * **Philip Müller** Project Leader, Project Management and Coordination, Mirrors Manager, Packager, Developer, Web Developer
 * **Roland Singer** Founder, Designer, Developer, Web Developer, Packager
-* **Guillaume** Benoit Server Manager, Developer, Packager
+* **Guillaume Benoit** Server Manager, Developer, Packager
 * **Rob McCathie** Systems Integrator, Packager
 * **Ramon Buldó** Developer, Packager
 * **Alexandru Ianu** Systems Integrator, Packager
@@ -17,10 +17,10 @@ published: true
 * **Wlad Meixner** Web Developer, Web Consultant
 * **Mateusz Mikolajczyk** Developer
 * **Demiray Muhterem** Manjaro KDE Edition Maintainer, Turkish IRC and web support, Manjaro Artwork
-* **Alexandre** A. Arnt Developer
+* **Alexandre A. Arnt** Developer
 
 ###Artwork
-* **Lane Wiscombe** (anex) Manjaro Artwork, MATE Community Edition Maintainer
+* **Lane Wiscombe (anex)** Manjaro Artwork, MATE and Openbox Community Editions Maintainer
 
 ###OpenRC Team
 * **Artoo** Packaging, Porting, Infrastructure
@@ -43,7 +43,7 @@ published: true
 * **Cumali** Cinnamon and Gnome Community Editions Maintainer
 * **Dan S.** Openbox Editions Maintainer
 * **Handy** Global Moderator, Wiki Contributor, Community Support
-* **Joshua** Strot Developer, Graphics Developer
+* **Joshua Strot** Developer, Graphics Developer
 
 ###Acknowledgements
 The awesome community on our [forum](https://forum.manjaro.org) and **#manjaro**
