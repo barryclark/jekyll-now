@@ -1,11 +1,9 @@
 ---
 layout: page
-title: The Manjaro Team
+title: The Manjaro Development Team
 permalink: /team/
 published: true
 ---
-
-##The Manjaro Development Team
 
 ###Core Team
 
