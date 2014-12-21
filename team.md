@@ -16,11 +16,11 @@ published: true
 * **Łukasz Matysiak** Developer
 * **Wlad Meixner** Web Developer, Web Consultant
 * **Mateusz Mikolajczyk** Developer
-* **Demiray Muhterem** Manjaro KDE Edition Maintainer, Turkish IRC and web support, Manjaro Artwork
+* **Demiray Muhterem** KDE Team Leader: Manjaro KDE4 Edition Maintainer, Turkish IRC and web support, Manjaro Artwork
 * **Alexandre A. Arnt** Developer
 
 ###Artwork
-* **Lane Wiscombe (anex)** Manjaro Artwork, MATE and Openbox Community Editions Maintainer
+* **Lane Wiscombe (anex)** Manjaro Artwork, KDE Team: KDE5 Edition Maintainer, MATE, and Openbox Community Editions Maintainer
 
 ###OpenRC Team
 * **Artoo** Packaging, Porting, Infrastructure
