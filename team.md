@@ -37,7 +37,8 @@ published: true
 ###Documentation
 * **Jonathon Fernyhough** Editor of the User Guide 0.8.9-0.8.11, Community Moderation
 * **Sabras** Wiki
-* **Alumni**
+
+###Alumni
 * **Carl Duff** Community, Documentation and Wiki Management, Scripting and Configuration
 * **Cumali** Cinnamon and Gnome Community Editions Maintainer
 * **Dan S.** Openbox Editions Maintainer
