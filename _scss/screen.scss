@@ -1,0 +1,317 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "susy";
+    
+// Configuring Susy 2 Global Defaults
+$susy: (
+  key : value
+  );
+
+$susy: (
+    columns: 6,
+    container: 1120px,
+    global-box-sizing: border-box,
+);
+
+@include border-box-sizing;
+
+/* Variables */
+$color1: #252525;
+$color2: #F2F2F2;
+$color3: #FFFFFF;
+$color4: #ebebeb;
+
+/* mixins */
+@mixin cf {
+    &:after {
+        content: " ";
+        display: block;
+        clear: both;
+    }
+}
+
+@mixin mobile-padding {
+    padding-left: 1em;
+    padding-right: 1em;
+ }
+
+@mixin mobile-padding-vertical {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+/* fonts */
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 62px;
+    font-weight: 400;
+    color: $color1;
+    @media (max-width: 699px) {
+        text-align: center;
+    }
+    @media (min-width: 700px) {
+        max-width: 600px;
+        font-size: 58px;
+    }
+    @media (min-width: 1200px) {
+        max-width: 900px;
+        font-size: 62px;
+    }
+    &.sub-head {
+        font-family: 'Crete Round', serif;
+        font-style: italic;
+        @media (max-width: 699px) {
+            line-height: 1.2;
+            margin-top: .5em;
+            font-size: 22px;
+        }
+        @media (min-width: 700px) {
+            font-size: 24px;
+            margin-top: .5em;
+        }
+        @media (min-width: 800px) {
+            font-size: 26px;
+        }
+        @media (min-width: 1120px) {
+            margin-top: .4em;
+        }
+    }        
+}
+
+h2 {
+    font-family: 'Crete Round', serif;
+    font-weight: 400;
+    color: $color1;
+    margin-bottom: .2em;
+    font-size: 28px;
+    @media (min-width: 800px) {
+        font-size: 36px;
+    }
+    &.aside {
+        color: $color2;
+        font-style: italic;
+        letter-spacing: 0.05em;
+        margin-bottom: .5em;
+        font-size: 22px;
+        @media (min-width: 700px) {
+            font-size: 24px;
+        }
+        @media (min-width: 800px) {
+            font-size: 26px;
+        }
+    }
+}
+
+h3 {
+    font-family: 'Crete Round', serif;
+    font-weight: 400;
+    color: $color1;
+    font-size: 26px;
+}
+
+h4 {
+    font-family: 'Crete Round', serif;
+    font-weight: 400;
+    color: $color1;
+    font-size: 22px;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    font-size: 16px;
+    color: $color1;
+    &.caption {
+        font-size: 14px;
+    }
+    &.aside {
+        color: $color2;
+        letter-spacing: 0.06em;
+        font-size: 12px;
+    }
+}
+    
+
+/* styles */
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: $color2;
+}
+
+.nav-wrap {
+    background-color: $color1;
+    @media (max-width: 1120px) {
+        @include mobile-padding;
+    }
+}
+
+nav {
+    @include container;
+    @include cf;
+    height: 50px;
+    background-color: $color1;
+    margin-bottom: gutter(6);
+    ul {
+        list-style: none;
+        float: left;
+        li {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            letter-spacing: 0.2em;
+            color: $color2;
+            text-decoration: none;
+            display: inline-block;
+            padding: 1.3em;
+            &:first-child {
+                padding-left: 0;
+            }
+        }
+    }
+    @media (min-width: 700px) {
+        margin-bottom: gutter(12);
+    }
+    .twitter {
+        width: 2.3em;
+        height: 2.3em;
+        float: right;
+        margin-top: .4em;
+        border: 2px solid $color2;
+        border-radius: 50%;
+    }
+}
+
+header {
+    @include container;
+    @include cf;
+    margin-bottom: gutter(6);
+    @media (max-width: 1120px) {
+        @include mobile-padding;
+        @include mobile-padding-vertical;
+    }
+    @media (min-width: 700px) {
+        margin-bottom: gutter(12);
+    }
+    .logo {
+        @media (max-width: 699px) {
+            width: 100px;
+            margin: .5em auto;
+        }
+        @media (min-width: 700px) {
+            @include span(1 of 6);
+        }
+    }
+    .header-group {
+        height: 100%;
+        position: relative;
+        @media (min-width: 700px) {
+            @include span(5 of 6 last);
+            padding-top: 2em;
+        }
+        @media (min-width: 900px) {
+            padding-top: 3em;
+        }
+        @media (min-width: 1100px) {
+            padding-top: 6em;
+        }
+    }
+}
+
+main {
+    @include container;
+    @include mobile-padding;
+    @include mobile-padding-vertical;
+    @media (min-width: 1120px) {
+        padding-bottom: gutter(12);
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 0;
+    }
+}
+
+article {
+    @include mobile-padding;
+    @include mobile-padding-vertical;
+    background-color: $color3;
+    margin-bottom: gutter(6);
+    border: 1px solid $color4;
+    @media (min-width: 700px) {
+        @include span(4 of 6);
+        margin-bottom: 0;
+        padding: 1.8em;
+    }
+    a {
+        color: $color1;
+    }
+}
+
+aside {
+    @include mobile-padding;
+    @include mobile-padding-vertical;
+    background-color: $color1;
+    margin-bottom: gutter(6);
+    @media (min-width: 700px) {
+        @include span(2 of 6 last);
+        margin-bottom: 0;
+        padding: 1.8em;
+    }
+}
+
+.gallery-section {
+    background-color: $color4;
+    padding-top: gutter(12);
+    .gallery-container {
+        @include container;
+        @media (max-width: 1200px) {
+            @include mobile-padding;
+            padding-top: 1em;
+        }   
+    }
+}
+
+.gallery {
+    @include cf;
+    margin-top: gutter(12);
+    .gallery-item {
+        list-style: none;
+        padding: .5em;
+        background-color: $color3;
+        border: 1px solid $color4;
+        @media (max-width: 699px) {
+            @include gallery(3 of 6);
+            margin-bottom: gutter(6);
+        }
+        @media (min-width: 700px) {
+            @include gallery(2 of 6);
+            margin-bottom: gutter(6);
+        }
+    }
+}
+
+.gallery-thumb {
+    margin-bottom: .5em;
+    img {
+        border: 1px solid $color4;
+    }
+}
+
+footer {
+    background-color: $color1;
+    @include mobile-padding;
+    @include mobile-padding-vertical;
+    .container {
+        @include container;
+    }
+}

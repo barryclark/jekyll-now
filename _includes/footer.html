@@ -1,0 +1,34 @@
+    <!--gallery-->
+    <section class="gallery-section">
+        <div class="gallery-container">
+            <h3>Recent articles</h3>
+            <ul class="gallery">
+                {% for post in site.posts %}
+                <li class="gallery-item">
+                    <div class="gallery-thumb">{% assign foundImage = 0 %}
+      {% assign images = post.content | split:"<img " %}
+      {% for image in images %}
+        {% if image contains 'src' %}
+
+            {% if foundImage == 0 %}
+                {% assign html = image | split:"/>" | first %}
+                <img {{ html }} />
+                {% assign foundImage = 1 %}
+            {% endif %}
+        {% endif %}
+      {% endfor %}</div>
+                    <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </section>
+    <!--gallery ENDS-->
+
+<!--footer-->
+<footer class="site-footer">
+    <div class="container">
+        <p class="aside">&copy; Michelle Barker 2015</p>
+    </div>
+</footer>
+<!--footer ENDS-->

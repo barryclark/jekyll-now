@@ -2,17 +2,26 @@
 layout: default
 ---
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">    
-      
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-      <div class="entry">
-        {{ post.content | truncatewords:40}}
-      </div>
-      
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+<!--body content-->
+<body>
+    
+    <!--main content area-->
+    <main>
+        <article>
+                {% for post in paginator.posts %}
+                <h2>
+                    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                </h2>
+                <p class="caption">{{ post.date | date: "%b %-d, %Y" }}</p>
+                <p>{{ post.content }}</p>
+            
+            {% endfor %}
+        </article>
+        <aside>
+            <h2 class="aside">About this blog</h2>
+            <p class="aside">THIS BLOG WAS STARTED BY MICHELLE BARKER, DESIGNER AND ILLUSTRATOR WITH FUTURE INSIGHTS.</p>
+        </aside>
+    </main>
+    <!--main content ENDS-->
+    
+</body>
