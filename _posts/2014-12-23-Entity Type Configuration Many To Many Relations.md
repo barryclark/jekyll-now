@@ -127,7 +127,7 @@ public class UserEntityTypeConfiguration:BaseEntityTypeConfiguration<User>
 }
 {% endhighlight %}
 
-**UPDATE: There was a mistake in the above snippet. The WithMany call had a 'product' as a parameter which was wrong and probably left over from testing. Updated after the actual colleague that was mentioned in he beginning pointed it out in the comments which apparently don't work at the moment. Probably an issue with Disqus and I'll look into fixing it ASAP**
+**UPDATE: There was a mistake in the above snippet. The WithMany call had a 'product' as a parameter which was wrong and probably left over from testing. Updated after the actual colleague that was mentioned in the beginning of the post pointed it out in the comments which apparently don't work at the moment. Probably an issue with Disqus and I'll look into fixing it ASAP.**
 
 The configuration inherits from our own base abstract generic class. I found
 this convenient because I usually keep the configurations in a separate
