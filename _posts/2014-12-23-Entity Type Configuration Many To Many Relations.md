@@ -239,3 +239,4 @@ to be named. This can also be easily solved using a custom naming convention
 but that would have to wait for another post.
 
 The final example project can be found at [this repository](https://github.com/emir01/EF-Entity-Type-Configuration-For-Many-To-Many-Relations) and I hope someone finds it useful!
+
