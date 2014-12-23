@@ -241,10 +241,29 @@ nav {
   border-bottom: 1px solid $lightGray;
 }
 
+
+
 .posts > .post:last-child {
   padding-bottom: 1em;
   border-bottom: none;
 }
+
+.post-category-mark{
+  clear:both;
+  font-weight: bold;
+  font-size:14px;
+
+  color:#000000 !important;
+
+  position:relative;
+  display:block;
+}
+
+  .post-category-mark a{
+      color:#000000 !important;
+      font-style: oblique !important;
+  }
+
 
 .post { 
   blockquote {

@@ -1,6 +1,6 @@
 ---
 layout: post
-category: general
+categories: [general, blogging]
 title: Second time is the charm?
 author: emir_osmanoski
 comments: true
