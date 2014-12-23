@@ -3,6 +3,7 @@ layout: post
 category: programming
 title: Unit Testing EF Code First Database Contexts
 author: emir_osmanoski
+comments: true
 ---
 
 ![Unit Testing]({{ site.baseurl }}/images/2014-12-18-UnitTestDbContext/UnitTestSession.png)

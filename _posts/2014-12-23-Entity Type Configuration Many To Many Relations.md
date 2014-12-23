@@ -4,6 +4,7 @@ category: programming
 title: Entity Type Configuration Fluent API for Many to many relations
 author: emir_osmanoski
 headerimage: /images//2014-12-23-EntityTypeConfigurations//header_image.png
+comments: true
 ---
 
 This is going to be a post regarding an “issue” I've encountered before with

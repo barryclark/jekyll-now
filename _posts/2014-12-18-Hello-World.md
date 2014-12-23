@@ -3,6 +3,7 @@ layout: post
 category: general
 title: Second time is the charm?
 author: emir_osmanoski
+comments: true
 ---
 
 ![Hello World]({{ site.baseurl }}/images/2014-12-18-Hello-World/HELLOWORLD.png)
