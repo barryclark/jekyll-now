@@ -128,7 +128,7 @@ public class UserEntityTypeConfiguration:BaseEntityTypeConfiguration<User>
 }
 {% endhighlight %}
 
-**UPDATE: There was a mistake in the above snippet. The WithMany call had a 'product' as a parameter which was wrong and probably left over from testing. Updated after the actual colleague that was mentioned in the beginning of the post pointed it out following [discussion](https://disqus.com/home/discussion/emir01githubio/entity_type_configuration_fluent_api_for_many_to_many_relations_emirs_blog_programming_explorations_/) on Disqus.**
+**UPDATE: There was a mistake in the above snippet. The WithMany call had a 'product' as a parameter which was wrong and probably left over from testing. Updated after the actual colleague that was mentioned in the beginning of the post pointed it out in the [discussion](https://disqus.com/home/discussion/emir01githubio/entity_type_configuration_fluent_api_for_many_to_many_relations_emirs_blog_programming_explorations_/) on Disqus.**
 
 The configuration inherits from our own base abstract generic class. I found
 this convenient because I usually keep the configurations in a separate
