@@ -5,6 +5,7 @@ permalink: /about/
 ---
 ###########
 test visit in io pages
+test ssh passwd
 Some information about you!
 
 ### More Information
