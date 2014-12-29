@@ -6,7 +6,7 @@ disqus_identifier: Using Facebook API
 comments: true
 ---
 
-Hello visitor,
+Hello BlogVisitor,
 
 I just wanted to experiment with Facebook API.
 

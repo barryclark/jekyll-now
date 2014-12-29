@@ -6,6 +6,10 @@ disqus_identifier: Hello World
 comments: true
 ---
 
+Hello BlogVisitor,
+
+Below contains steps I followed for setting up a blog.
+
 1. Installed GitHub, Jekyll.
 2. Tested the website with http://localhost:4000
 3. Uploaded to github

@@ -6,6 +6,11 @@ disqus_identifier: Github could not access
 comments: true
 ---
 
+Hello BlogVisitor,
+
+I encountered a problem while accessing github. 
+Just sharing how I got it fixed.
+
 I could not access github for a while.
 The chrome browser said, DNS could not resolve.
 I rebooted my system. Still, the problem persisted.

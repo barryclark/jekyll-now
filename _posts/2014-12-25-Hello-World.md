@@ -6,7 +6,7 @@ disqus_identifier: Hello World
 comments: true
 ---
 
-Hello visitor,
+Hello BlogVisitor,
 
 Hope this website could serve your time with interesting thoughts.
 
