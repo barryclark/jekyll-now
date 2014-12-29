@@ -2,6 +2,7 @@
 layout: post
 title: Blogging Setup
 published: true
+disqus_identifier: Hello World
 ---
 
 1. Installed GitHub, Jekyll.
