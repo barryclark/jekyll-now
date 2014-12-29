@@ -19,7 +19,7 @@ avatar: https://avatars0.githubusercontent.com/u/1076621?v=3&s=460
 footer-links:
   dribbble: 
   email: 
-  facebook: https://www.facebook.com/saigan1986
+  facebook: saigan1986
   flickr: 
   github: gansai
   instagram: 
@@ -27,7 +27,7 @@ footer-links:
   pinterest: 
   rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
   twitter: gansai9
-  stackoverflow: /users/434408/gansai
+  stackoverflow: users/434408/gansai
   quora: https://www.quora.com/Ganesh-Swamypillai
 
 # Your disqus shortname, entering this will enable commenting on posts
