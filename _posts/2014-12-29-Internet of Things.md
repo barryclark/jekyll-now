@@ -1,5 +1,7 @@
 ---
-published: false
+layout: post
+title: Internet of Things
+published: true
 ---
 
 Imagine an environment which is intelligent and aware of surroundings. 
