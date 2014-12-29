@@ -28,7 +28,7 @@ footer-links:
   rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
   twitter: gansai9
   stackoverflow: users/434408/gansai
-  quora: https://www.quora.com/Ganesh-Swamypillai
+  quora: Ganesh-Swamypillai
 
 # Your disqus shortname, entering this will enable commenting on posts
 disqus: gansai
