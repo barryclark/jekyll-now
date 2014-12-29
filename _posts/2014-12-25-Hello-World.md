@@ -1,9 +1,11 @@
 ---
 layout: post
-title: Hello World
+title: Hi 
 published: true
 ---
 
-Done with updating site name, avatar.
+Hello visitor,
 
-You can follow my another blog at [gansai's blogspot](http://www.gansai.blogspot.in)
+Hope this website could serve your time with interesting thoughts.
+
+I had earlier written posts using [blogger](http://www.gansai.blogspot.in)

@@ -4,6 +4,7 @@ title: Blogging Setup
 published: true
 ---
 
-1. Just setup Jekyll on Windows
-2. Downloaded GitHub on Windows
+1. Installed GitHub, Jekyll.
+2. Tested the website with http://localhost:4000
+3. Uploaded to github
 
