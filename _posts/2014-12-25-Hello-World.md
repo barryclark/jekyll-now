@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hi 
+title: Welcome 
 published: true
 disqus_identifier: Hello World
 comments: true
