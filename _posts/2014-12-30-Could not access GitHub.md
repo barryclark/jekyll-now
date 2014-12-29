@@ -3,6 +3,7 @@ layout: post
 title: Could not access GitHub 
 published: true
 disqus_identifier: Github could not access
+comments: true
 ---
 
 I could not access github for a while.

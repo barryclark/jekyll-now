@@ -3,6 +3,7 @@ layout: post
 title: Hi 
 published: true
 disqus_identifier: Hello World
+comments: true
 ---
 
 Hello visitor,
