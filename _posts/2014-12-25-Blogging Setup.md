@@ -28,5 +28,6 @@ UPDATES:
 1. [Barry Clark's repo for setting up jekyll website](https://github.com/barryclark/jekyll-now)
 2. [Scott Bom's markdown cheetsheet pdf](http://scottboms.com/downloads/documentation/markdown_cheatsheet.pdf)
 3. [Listing of posts by Eric Jones](http://erjjones.github.io/blog/How-I-built-my-blog-in-one-day/)
+4. [Listing of posts by Tom Preston Werner](http://tom.preston-werner.com/)
   
 
