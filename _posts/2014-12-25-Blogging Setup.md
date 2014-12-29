@@ -13,5 +13,6 @@ comments: true
 UPDATES:
 
 4. Registered  with Disqus to get shortName. Comments section is present now.
+5. Can embed code into website using gist.
   
 
