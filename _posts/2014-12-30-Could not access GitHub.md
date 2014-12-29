@@ -17,3 +17,7 @@ I rebooted my system. Still, the problem persisted.
 
 [StackOverflow](https://superuser.com/questions/609587/cant-load-certain-websites-in-mountain-lion-which-load-fine-on-win7-laptop/610243#610243) came to the rescue.
 
+<u>Linkography:-</u>
+
+1. [SuperUser](superuser.com)
+

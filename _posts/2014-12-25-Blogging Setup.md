@@ -18,5 +18,13 @@ UPDATES:
 
 4. Registered  with Disqus to get shortName. Comments section is present now.
 5. Can embed code into website using gist.
+6. I shall be providing a linkography in each article
+  (similar to bibliography), containing list of links which has helped me with my experiments.
+  
+
+<u>LinkoGraphy:-</u>
+
+1. [Barry Clark's repo for setting up jekyll website](https://github.com/barryclark/jekyll-now)
+2. [Scott Bom's markdown cheetsheet pdf](http://scottboms.com/downloads/documentation/markdown_cheatsheet.pdf)
   
 

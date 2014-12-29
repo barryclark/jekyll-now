@@ -28,12 +28,13 @@ footer-links:
   rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
   twitter: gansai9
   stackoverflow: /users/434408/gansai
+  quora: https://www.quora.com/Ganesh-Swamypillai
 
 # Your disqus shortname, entering this will enable commenting on posts
 disqus: gansai
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics: 
+google_analytics: UA-57954500-1
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
