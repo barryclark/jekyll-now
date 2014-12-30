@@ -346,6 +346,12 @@ h6,
 }
 
 @media screen and (max-width: 48em) {
+  blockquote {
+    margin-left: 1rem;
+    margin-right: 0;
+    padding: 0.5em;
+  }
+
   .h1,
   h1 {
     font-size: 2.827rem;
