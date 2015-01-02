@@ -53,6 +53,9 @@ markdown: kramdown
 highlighter: pygments
 permalink: /:title/
 
+kramdown:
+  input: GFM
+
 # The release of Jekyll Now that you're using
 version: v1.0.0
 
