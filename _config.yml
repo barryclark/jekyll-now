@@ -26,7 +26,7 @@ footer-links:
   instagram: 
   linkedin: 
   pinterest: 
-  rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
+  rss: true
   twitter: 
   stackoverflow: 
 
