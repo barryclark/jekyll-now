@@ -6,7 +6,8 @@
 name: elementary apps
 
 # Short bio or description (displayed in the header)
-description: 3rd party software designed for <a href="http://elementaryos.org">elementary</a>
+description: 3rd party software designed for elementary
+description_html: 3rd party software designed for <a href="http://elementaryos.org">elementary</a>
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
