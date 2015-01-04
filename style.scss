@@ -1,11 +1,13 @@
 ---
 ---
 
+//
+// IMPORTS
+//
+
 @import "_reset";
 @import "_variables";
-// Outsourced
-// @import "_jekyll-now";
-@import "_highlights";
+// Syntax highlighting @import is at the bottom of this file
 
 /**************/
 /* BASE RULES */
@@ -16,20 +18,20 @@ html {
 }
 
 body {
-  background: $white;
-  font: 15px/1.5 $font_body;
+	background: $white;
+  font: 18px/1.4 $helvetica;
   color: $darkGrey;
 }
 
 .container {
   margin: 0 auto;
-  max-width: 940px;
+  max-width: 740px;
   padding: 0 10px;
   width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $font_heading;
+  font-family: $helveticaNeue;
   color: $darkerGrey;
   font-weight: bold;
   
@@ -113,26 +115,6 @@ img {
   color: $grey;
 }
 
-table {
-  border-spacing: 1px;
-  text-align: left;
-  width: 100%;
-}
-th, td {
-  border: 1px solid #ccc;
-  padding: .25em .5em;
-}
-th {
-  font-weight:bold;
-  background-color:#eee;
-}
-th {
-  width: 25%;
-}
-th:last-child {
-  width: 50%;
-}
-
 // Specify the color of the selection
 ::-moz-selection {
   color: $black;
@@ -207,8 +189,8 @@ th:last-child {
   margin: 0;
   color: $darkGrey;
   cursor: pointer;
-  font-family: $font_header; 
-  font-weight: 100;
+  font-family: $helveticaNeue; 
+  font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
 }
@@ -216,7 +198,6 @@ th:last-child {
 .site-description {
   margin: -5px 0 0 0;
   color: $grey;
-  font-family: $font_header;
   font-size: 16px;
   
   @include mobile {
@@ -227,7 +208,7 @@ th:last-child {
 nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $font_header; 
+  font-family: $helveticaNeue; 
   font-size: 18px;
   
   @include mobile {
@@ -271,6 +252,7 @@ nav {
     border-left: 2px solid $grey;
     padding: 0.1em 1em;
     color: $grey;
+    font-size: 22px;
     font-style: italic;
   }
 
@@ -279,6 +261,7 @@ nav {
   }
 
   .read-more {
+    text-transform: uppercase;
     font-size: 15px;
   }
 }
@@ -294,3 +277,7 @@ footer {
   padding: 20px 0;
   text-align: center;
 }
+
+// Settled on moving the import of syntax highlighting to the bottom of the CSS
+// ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
+@import "_highlights";
