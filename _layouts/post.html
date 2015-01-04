@@ -7,21 +7,6 @@ layout: default
 
   <div class="entry">
     {{ content }}
-    {% if page.screenshot %}
-        <h3 id="screenshots">Screenshots</h3>
-        <div class="screenshots">
-            <img src="{{ page.screenshot }}"/>
-            {% if page.screenshot %}<img src="{{ page.screenshot1 }}"/>{% endif %}
-            {% if page.screenshot %}<img src="{{ page.screenshot2 }}"/>{% endif %}
-        </div>
-    {% endif %}
-    {% if page.package %}
-    <h3 id="installation">Installation</h3>
-    {% if page.repository %}<b>Behold!</b> Third-party repositories are usually not verified by others. Follow these instructions at your own risk and only if you trust the owner of the repository / developer of the software.{% endif %}
-    <pre><code>{% if page.repository %}    sudo apt-add-repository {{ page.repository }}
-    sudo apt-get update{% endif %}  
-    sudo apt-get install {{ page.package }}</code></pre>
-    {% endif %}
   </div>
 
   <div class="date">
