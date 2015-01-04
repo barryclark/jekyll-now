@@ -1,4 +1,8 @@
-# Art made for elementary
+---
+layout: page
+title: Art for elementary
+permalink: /art/
+---
 
 Name | Info | Developer
 ---|---|---
