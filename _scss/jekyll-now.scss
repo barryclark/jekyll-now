@@ -104,6 +104,19 @@ img {
   color: $gray;
 }
 
+table {
+  border-spacing: 1px;
+  text-align: left;
+}
+th, td {
+  border: 1px solid #ccc;
+  padding: .25em .5em;
+}
+th {
+  font-weight:bold;
+  background-color:#eee;
+}
+
 // Specify the color of the selection
 ::-moz-selection {
   color: $black;
