@@ -1,4 +1,8 @@
-# elementary for other systems
+---
+layout: page
+title: elementary for other systems
+permalink: /others/
+---
 
 * Icons 
   * [Windows](http://neiio.deviantart.com/art/elementary-icon-pack-479987887)
