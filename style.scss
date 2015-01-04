@@ -241,7 +241,9 @@ nav {
   border-bottom: 1px solid $lightGray;
 }
 
-
+.hidden_image{
+  display:none;
+}
 
 .posts > .post:last-child {
   padding-bottom: 1em;

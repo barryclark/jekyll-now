@@ -7,6 +7,8 @@ headerimage: /images//2015-01-04-Generic Extension Methods//01_HeadShot.png
 comments: true
 ---
 
+{% include hidden_header_image.html %}
+
 While working on this new project I implemented a convenient (for now at
 least) way to work with the metadata information we store for our domain
 entities especially during the test data seeding process. For some time now,
