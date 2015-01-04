@@ -106,7 +106,7 @@ a:hover {
 
 .background {
    /* Delete background class from <body> for a vanilla style */
-   background: url(../images/lines_github_final.gif) top left; no-repeat;
+   background: url(../images/spiral_background.jpg) top left; no-repeat;
 }
 
 img.avatar {
