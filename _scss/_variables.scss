@@ -19,6 +19,17 @@ $helvetica: Helvetica, Arial, sans-serif;
 $helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $georgia: Georgia, serif;
 
+// New fonts
+$OpenSans: "Open Sans","Droid Sans", "Source Sans Pro", "Carlito", "DejaVu Sans", sans-serif;
+$Raleway: "Raleway", $OpenSans;
+// Some day there will be Open Sans Mono 
+$OpenSansMono: "Open Sans Mono", "Droid Sans Mono", "Source Code Pro", "Liberation Mono", "DejaVu Sans Mono", monospace;
+
+$font_header: $Raleway;
+$font_heading: $Raleway;
+$font_body: $OpenSans;
+$font_code: $OpenSansMono
+
 // Mobile breakpoints
 @mixin mobile {
   @media screen and (max-width: 640px) {
