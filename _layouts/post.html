@@ -7,6 +7,12 @@ layout: default
 
   <div class="entry">
     {{ content }}
+    {% if page.package %}
+    <h3 id="installation">Installation</h3>
+    <pre><code>{% if page.repository %}sudo apt-add-repository {{ page.repository }}
+    sudo apt-get update{% endif %}  
+    sudo apt-get install {{ page.package }}</code></pre>
+    {% endif %}
   </div>
 
   <div class="date">
