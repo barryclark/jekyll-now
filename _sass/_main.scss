@@ -27,6 +27,18 @@ img {
   max-width: 100%;
 }
 
+.measure {
+  max-width: 48rem;
+}
+
+.measure-narrow {
+  max-width: 32rem;
+}
+
+.measure-wide {
+  max-width: 60rem;
+}
+
 .site-wrap {
   min-height: 100%;
   margin-bottom: -120px;

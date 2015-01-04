@@ -4,6 +4,14 @@
 
 @charset "utf-8";
 
-@import "basscss";
-@import "main";
-@import "solarized-dark";
+@import 'variables';
+
+@import 'basscss';
+
+@import 'links';
+@import 'positions';
+@import 'clearfix';
+@import 'code';
+
+@import 'main';
+@import 'solarized-dark';

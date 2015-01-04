@@ -1,0 +1,71 @@
+// Typography
+$bold-font-weight: bold !default;
+$font-family: 'Helvetica Neue', Helvetica, sans-serif !default;
+$line-height: 1.5 !default;
+$heading-font-family: $font-family !default;
+$heading-font-weight: bold !default;
+$heading-line-height: 1.25 !default;
+$monospace-font-family: 'Source Code Pro', Consolas, monospace !default;
+$h1: 2rem !default;
+$h2: 1.5rem !default;
+$h3: 1.25rem !default;
+$h4: 1rem !default;
+$h5: .875rem !default;
+$h6: .75rem !default;
+$h00: 4rem !default;
+$h0: 3rem !default;
+$h00-responsive: 8vw !default;
+$h0-responsive: 6vw !default;
+$h1-responsive: 4vw !default;
+$h00-responsive-max: 7.68rem !default;
+$h0-responsive-max: 5.76rem !default;
+$h1-responsive-max: 3.84rem !default;
+
+// Colors
+$blue: #0076df !default;
+$red: #f95020 !default;
+$green: #00cf26 !default;
+$yellow: #efcc00 !default;
+$dark-gray: #333 !default;
+$mid-gray: #777 !default;
+$light-gray: #ccc !default;
+$lighter-gray: #eee !default;
+$darken-1: rgba(#000,.0625) !default;
+$darken-2: rgba(#000,.125) !default;
+$darken-3: rgba(#000,.25) !default;
+$darken-4: rgba(#000,.5) !default;
+
+// Links
+$link-color: $blue;
+$link-hover-color: darken($blue, 40%);
+
+// Code
+$pre-border-radius: 0;
+
+// Breakpoints
+$breakpoint-md: '(min-width: 52em)';
+$breakpoint-xl: '(min-width: 96em)';
+
+// Whitespace
+$space-1: .5rem !default;
+$space-2: 1rem !default;
+$space-3: 2rem !default;
+$space-4: 4rem !default;
+
+// Buttons
+$button-font-size: inherit !default;
+$button-font-weight: bold !default;
+$button-line-height: 1.125rem !default;
+$button-padding-y: .5rem !default;
+$button-padding-x: 1rem !default;
+
+// Forms
+$form-field-font-size: 1rem !default;
+$form-field-height: 2.25rem !default;
+$form-field-padding-y: .5rem !default;
+$form-field-padding-x: .5rem !default;
+
+// Borders
+$border-color: $light-gray !default;
+$border-width: 1px !default;
+$border-radius: 3px !default;
