@@ -76,7 +76,7 @@ are the extension methods *TimeStampNew()*, *SetSystemFlag()*, *SetClientFlag()*
 In the code snippet they are actually used as extension methods on the
 *SeededEntityWrapper* class but they were first developed to work with classes
 implementing Entity. Pure entities with no wrapper. We will look at how all of
-this is actually done, starting with the generic extension method
+this is actually done, starting with the generic f method
 implementations for Entity based classes.
 
 ## Entity Meta Data Management and Extension Method Implementation
@@ -144,7 +144,7 @@ public static T TimeStampUpdate<T>(this T entity, string updatedBy = null) where
 }	
 {% endhighlight %}
 
-By using the base class generic type parameter constraint and setting it to
+By using the [base class generic type parameter constraint](http://msdn.microsoft.com/en-us/library/d5x73970.aspx) and setting it to
 Entity for T we have access to the metadata information on the T entity
 object. We can also go and use the C# language (this on first parameter which
 is the extended type) format for specifying an extension method using the
