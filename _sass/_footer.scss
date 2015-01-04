@@ -1,0 +1,17 @@
+footer {
+  border-top: thin solid #f3f3f3;
+}
+
+footer,
+footer .wrap {
+  background-color: #fafafa;
+  clear: both;
+  color: #7a7a7a;
+  font-size: .75rem;
+  font-weight: 300;
+}
+
+footer:after {
+  content: '';
+  display: block;
+}

@@ -1,0 +1,33 @@
+.site-header a {
+  color: #333;
+  font-weight: 300;
+}
+
+.site-header nav a {
+  font-size: 1rem;
+  color: #666;
+}
+
+.site-header nav a:hover,
+.site-header nav a:focus,
+.site-header nav a:active {
+  color: #444;
+  opacity: 1;
+  border-bottom: 2px solid #444;
+}
+
+.site-nav a + a {
+  margin-left: 1em;
+}
+
+.site-nav {
+  margin: 0;
+  padding: 0;
+}
+
+.site-header a:hover,
+.posts .post a:hover .post-meta,
+.posts .post a:hover .post-title,
+.posts .post a:hover .post-summary {
+  opacity: 0.88;
+}

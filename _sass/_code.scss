@@ -3,3 +3,25 @@ pre code {
   background-color: transparent;
   border-radius: $pre-border-radius;
 }
+
+pre,
+code {
+  font-family: Menlo, Monaco, "Courier New", monospace
+}
+
+code {
+  color: #7a7a7a;
+}
+
+pre {
+  padding: 1.125em;
+  font-size: 1.125rem;
+  line-height: 1.11;
+  overflow-x: scroll;
+  margin-bottom: 0.88em;
+}
+
+.highlight .p {
+  font-size: 1.125rem;
+  line-height: 1;
+}
