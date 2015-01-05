@@ -1,12 +1,8 @@
 ---
-layout: default
+layout: page
 title: Category
 permalink: /category/
 ---
-
-<div class="posts">
-
-  <h1>Table of apps</h1>
 
   <table class="overview">
     <thead>
@@ -17,16 +13,8 @@ permalink: /category/
       </tr>
     </thead>
     <tbody>
-      {% for post in site.posts %}
-      {% if post.layout = 'app' %}
-        <tr>
-          <td><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></td>
-          <td>{{ post.repository }}, {{ post.ppa }}</td>
-          <td>{{ post.content}}</td>
-        </tr>
-      {% endif %}
-      {% endfor %}
+      <tr>
+        <td></td>
+      </tr>
     </tbody>
   </table>
-
-</div>
