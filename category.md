@@ -1,12 +1,14 @@
 ---
 layout: default
+title: Category
+permalink: /category/
 ---
 
 <div class="posts">
 
   <h1>Table of apps</h1>
 
-  <table class="overview>
+  <table class="overview">
     <thead>
       <tr>
         <th>Name</th>
