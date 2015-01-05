@@ -1,13 +1,15 @@
 ---
 published: true
 layout: app
+category: app
 title: Calculator
-repository: ppa:siasola/ppa
-package: lementary-calculator
+generic: 
+description: 'A fast and beautiful GTK3 Calculator completely written in Vala. The UI is rather simple, but scientific functions and mathematical constants can be typed in. It has a history functionality for the current session and clipboard support.'
+authors: '<a href="https://launchpad.net/~siasola">Lars Berscheid</a>'
+web: ''
+github: ''
+launchpad: 'https://launchpad.net/elementarycalculator'
+googleplus: ''
+repository: 'ppa:siasola/ppa'
+package: 'elementary-calculator'
 ---
-
-> A fast and beautiful GTK3 Calculator completely written in Vala. The UI is rather simple, but scientific functions and mathematical constants can be typed in. It has a history functionality for the current session and clipboard support.
-
-**Authors**: [Lars Berscheid](https://launchpad.net/~siasola)
-
-**Links**: [Launchpad](https://launchpad.net/elementarycalculator)
