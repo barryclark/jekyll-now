@@ -3,10 +3,26 @@ layout: default
 ---
 
 <article class="post">
+
   <div class="date">
     Updated on {{ page.date | date: "%e %B %Y" }}
   </div>
-
+  
+  {% if post.category %}
+      {% for site_category in site.data.categories %}
+          {% if site_category.slug == post.category %}
+              {% assign category = site_category %}
+          {% endif %}
+      {% endfor %}
+      {% if category %}
+          {% capture category_content %} in <span class="label" style="background-color:{{ category.color }}"><a href="/cat/{{ category.slug }}/">{{ category.name }}</a></span>{% endcapture %}
+      {% endif %}
+  {% else %}
+      {% assign category_content = '' %}
+  {% endif %}
+  
+  <p id="post-meta">Posted {{ category_content }}</p>
+  
   <h1>{{ page.title }}{% if page.generic %} – {{ page.generic }}{% endif %}</h1>
 
   <div class="entry">
