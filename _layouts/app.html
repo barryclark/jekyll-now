@@ -10,14 +10,14 @@ layout: default
     Updated on {{ post.date | date: "%e %B %Y" }}
   </div>
   
-  {% if post.category %}a
-      {% for site_category in site.data.categories %}b
-          {% if site_category.slug == post.category %}c
+  {% if post.category %}
+      {% for site_category in site.data.categories %}
+          {% if site_category.slug == post.category %}
               {% assign category = site_category %}
           {% endif %}
       {% endfor %}
-      {% if category %}d
-          {% capture category_content %} in <span class="label" style="background-color:{{ category.color }}"><a href="/cat/{{ category.slug }}/">{{ category.name }}</a></span>{% endcapture %}
+      {% if category %}
+          {% capture category_content %} in <span class="label" style="/*background-color:{{ category.color }}*/"><a href="{{ site.baseurl }}cat/{{ category.slug }}/">{{ category.name }}</a></span>{% endcapture %}
       {% endif %}
   {% else %}
       {% assign category_content = 'in no particular category' %}
