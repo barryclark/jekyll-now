@@ -9,7 +9,34 @@ layout: default
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
       <div class="entry">
-        {{ post.content}}
+        {% if layout == "app" %}
+          <!-- borrowed from app.html -->
+
+          {% if post.description %}
+            <blockquote>{{ post.description }}</blockquote>
+          {% endif %}
+          
+          {% if post.authors %}
+            <p>
+              <b>Authors</b>: 
+              {{ post.authors }}
+            </p>
+          {% endif %}
+          
+          <p>
+            <b>Links</b>: 
+            {% if post.web %}<a href="{{ post.web }}">Web</a>{% endif %} 
+            {% if post.github %}<a href="{{ post.github }}">Github</a>{% endif %} 
+            {% if post.launchpad %}<a href="{{ post.launchpad }}">Launchpad</a>{% endif %}
+          </p>
+          
+          {{ post.content}}
+
+        {% else %}
+        
+          {{ post.content}}
+          
+        {% endif %}
       </div>
       
     </article>
