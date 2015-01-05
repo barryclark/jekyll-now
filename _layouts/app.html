@@ -12,13 +12,18 @@ layout: default
     {% endif %}
     
     {% if page.authors %}
-      <b>Authors</b>: {{ page.authors }}
+      <p>
+        <b>Authors</b>: 
+        {{ page.authors }}
+      </p>
     {% endif %}
     
-    <b>Links</b>: 
-    {% if page.web %}[Web]({{ page.web }}){% endif %} 
-    {% if page.github %}[Github]({{ page.github }}){% endif %} 
-    {% if page.launchpad %}[Launchpad]({{ page.launchpad }}){% endif %}
+    <p>
+      <b>Links</b>: 
+      {% if page.web %}[Web]({{ page.web }}){% endif %} 
+      {% if page.github %}[Github]({{ page.github }}){% endif %} 
+      {% if page.launchpad %}[Launchpad]({{ page.launchpad }}){% endif %}
+    </p>
 
     {% if page.screenshot %}
       <h3 id="screenshots">Screenshots</h3>
