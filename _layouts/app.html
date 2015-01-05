@@ -18,7 +18,7 @@ layout: default
           {% capture category_content %} in <span class="label" style="background-color:{{ category.color }}"><a href="/cat/{{ category.slug }}/">{{ category.name }}</a></span>{% endcapture %}
       {% endif %}
   {% else %}
-      {% assign category_content = '' %}
+      {% assign category_content = 'in no particular category' %}
   {% endif %}
   
   <p id="post-meta">Posted {{ category_content }}</p>
