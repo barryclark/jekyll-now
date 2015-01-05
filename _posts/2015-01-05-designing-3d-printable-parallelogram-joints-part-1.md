@@ -4,7 +4,7 @@ title: Designing 3D-printable parallelogram joints - part 1
 categories: robots mechanical
 ---
 
-To take full advantage of increasingly ubiquitous rapid-prototyping hardware (laser-cutting, 3D printing), you really need to know how to design your hardware in a way that plays to their strengths and weaknesses. 
+To take full advantage of increasingly ubiquitous rapid-prototyping hardware (laser-cutter, 3D printer), you really need to know how to design your hardware in a way that plays to their strengths and weaknesses. 
 
 The emphasis has to be on:
 
@@ -17,7 +17,7 @@ The emphasis has to be on:
 Other than these broad strokes, after you pick the materials, you have to think about
 
 * **Strength:** Typical prototyping materials (plastics) are pretty weak. Common causes of extreme sadness are [cantilevered loads](http://en.wikipedia.org/wiki/Cantilever) (especially on long shafts), [stress concentrations](http://en.wikipedia.org/wiki/Stress_concentration) (use more fillets, avoid narrow necks)
-* **Tolerances:** Know in advance about the [kerf](http://www.cutlasercut.com/resources/tips-and-advice/what-is-laser-kerf) of your laser-cutter (your holes will be bigger than expected) and the "[blobbies](http://www.makerbot.com/blog/2011/01/06/vertex-polygon-and-diameter-recommendations-for-printing-small-holes/)" from your 3D printer (Makerbot will fill in more than expected)
+* **Tolerances:** Know in advance about the [kerf](http://www.cutlasercut.com/resources/tips-and-advice/what-is-laser-kerf) of your laser-cutter (your holes will be bigger than expected) and the "[blobbies](http://www.makerbot.com/blog/2011/01/06/vertex-polygon-and-diameter-recommendations-for-printing-small-holes/)" (official Makerbot term) from your 3D printer (some will fill in more than expected)
 
 ### Joints
 
@@ -36,11 +36,42 @@ A parallelogram joint consists of **two spherical joints** connected by a rigid 
 
 The only reasonable use for these that I have seen are in a [delta robot](http://en.wikipedia.org/wiki/Delta_robot):
 
-![Delta robot](http://i.stack.imgur.com/lDMXm.png "Delta robot")
+![Delta robot](/images/delta_annotated.png "Delta robot")
+
+(Original image from imgur, annotations mine.)
 
 The part I encircled in red is one parallelogram joint (note that the bottom triangle is always parallel to the top triangle). See how complicated that looks to make? Thankfully, that's never stopped me. :wink:
 
 #### Attempt #1: Rod-ends
 
 Going by my **off-the-shelf** dictum, I started with 4x rod-ends per joint (as in the diagram above), but instead of the two shafts with 4x bearings, I chose to use a bolt as a shaft.
+
+Here is an extremely blurry picture of what this looked like:
+
+![Rod end parallelogram joint](/images/parallelogram_rod_end.png "Rod end parallelogram joint")
+
+While it worked, there were several problems with this:
+
+* **Range of motion:** I tried many many rod ends from McMaster, but it's really difficult to find any with >30 degree swivel (end-to-end, i.e. 15 degrees from nominal). This ends up constraining the motion too much
+* **Manufacturability:** The aluminum female-threaded rods to attach to the male threaded rod ends had to be made in-house, and of course, eventually the threads stripped.
+* **Extra "roll" DOF:** the rod-ends can spin in their socket a small amount along the axis of the long aluminum link. This is strictly a nuisance... although it doesn't hurt, who wants their parts making clink clink noises constantly?
+
+#### Attempt #2: Custom 3D-printed joints
+
+With the magic of 3D printing, it's conceivable to make a compact *enough* piece that has the requisite DOF's. Here's the plan so far:
+
+![Parallelogram v0 side](/images/parallelogram_v0_side.png "Parallelogram v0 side")
+
+The white-looking links would be laser-cut from Delrin (slippery), and attached to the purple (3D-printed) pieces with shoulder screws.
+
+I tried to align the joint so that a *compressive load* along the link (most common) would mostly be transferred to the bolts and not have to be borne by the 3D-printed piece. (I mean, I didn't do any FEA, but I eyeballed it *carefully*.)
+
+Here's an animation of me moving it around so that you can see all the degrees of freedom:
+
+![Parallelogram v0](/images/parallelogram_v0.gif "Parallelogram v0")
+
+Now the onus is on getting the tolerances right (loose, but tight?) so that the motion is unhindered, but there is no wiggling near the (numerous) fasteners. 
+
+Stay tuned for part 2!
+
 
