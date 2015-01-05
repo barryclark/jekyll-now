@@ -9,7 +9,7 @@ layout: default
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
       <div class="entry">
-        {% if layout == "app" %}
+        {% if post.layout == 'app' %}
           <!-- borrowed from app.html -->
 
           {% if post.description %}
