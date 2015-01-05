@@ -3,25 +3,42 @@ layout: default
 ---
 
 <article class="post">
-  <h1>{{ page.title }}</h1>
+  <h1>{{ page.title }}{% if page.generic %} – {{ page.generic }}{% endif %}</h1>
 
   <div class="entry">
-    {{ content }}
-    {% if page.screenshot %}
-        <h3 id="screenshots">Screenshots</h3>
-        <div class="screenshots">
-            <img src="{{ page.screenshot }}"/>
-            {% if page.screenshot %}<img src="{{ page.screenshot1 }}"/>{% endif %}
-            {% if page.screenshot %}<img src="{{ page.screenshot2 }}"/>{% endif %}
-        </div>
+  
+    {% if page.description %}
+      <blockquote>{{ page.description }}</blockquote>
     {% endif %}
+    
+    {% if page.authors %}
+      <b>Authors</b>: {{ page.authors }}
+    {% endif %}
+    
+    {% if page.web or page.github or page.launchpad %}
+      <b>Links: 
+        {% if page.web %}[Web]({{ page.web }}){% endif %} 
+        {% if page.github %}[Github]({{ page.github }}){% endif %} 
+        {% if page.launchpad %}[Launchpad]({{ page.launchpad }}){% endif %}
+      </b>
+    {% endif %}
+    
+    {% if page.screenshot %}
+      <h3 id="screenshots">Screenshots</h3>
+      <img src="{{ page.screenshot }}"/>
+    {% endif %}
+    
     {% if page.package %}
-    <h3 id="installation">Installation</h3>
-    {% if page.repository %}<b>Behold!</b> Third-party repositories are usually not verified by others. Follow these instructions at your own risk and only if you trust the owner of the repository / developer of the software.{% endif %}
+      <h3 id="installation">Installation</h3>
+      {% if page.repository %}
+        <b>Behold!</b> Third-party repositories are usually not verified by others. Follow these instructions at your own risk and only if you trust the owner of the repository / developer of the software.
+      {% endif %}
     <pre><code>{% if page.repository %}    sudo apt-add-repository {{ page.repository }}
     sudo apt-get update{% endif %}  
-    sudo apt-get install {{ page.package }}</code></pre>
-    {% endif %}
+    sudo apt-get install {{ page.package }}</code></pre>{% endif %}
+    
+    {{ content }}
+    
   </div>
 
   <div class="date">
