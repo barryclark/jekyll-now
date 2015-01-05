@@ -10,7 +10,9 @@ layout: default
         Updated on {{ post.date | date: "%e %B %Y" }}
       </div>
       
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+      <h1><a href="{{ site.baseurl }}{{ post.url }}">
+        {{ post.title }}{% if post.generic %} – {{ post.generic }}{% endif %}
+      </a></h1>
       
       <div class="entry">
         {% if post.layout == 'app' %}
