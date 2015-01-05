@@ -15,14 +15,11 @@ layout: default
       <b>Authors</b>: {{ page.authors }}
     {% endif %}
     
-    {% if page.web or page.github or page.launchpad %}
-      <b>Links: 
-        {% if page.web %}[Web]({{ page.web }}){% endif %} 
-        {% if page.github %}[Github]({{ page.github }}){% endif %} 
-        {% if page.launchpad %}[Launchpad]({{ page.launchpad }}){% endif %}
-      </b>
-    {% endif %}
-    
+    <b>Links</b>: 
+    {% if page.web %}[Web]({{ page.web }}){% endif %} 
+    {% if page.github %}[Github]({{ page.github }}){% endif %} 
+    {% if page.launchpad %}[Launchpad]({{ page.launchpad }}){% endif %}
+
     {% if page.screenshot %}
       <h3 id="screenshots">Screenshots</h3>
       <img src="{{ page.screenshot }}"/>
