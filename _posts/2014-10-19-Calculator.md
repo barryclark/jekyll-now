@@ -2,8 +2,8 @@
 published: true
 layout: app
 title: Calculator
-_repository: 
-_package: 
+repository: ppa:siasola/ppa
+package: lementary-calculator
 ---
 
 > A fast and beautiful GTK3 Calculator completely written in Vala. The UI is rather simple, but scientific functions and mathematical constants can be typed in. It has a history functionality for the current session and clipboard support.
