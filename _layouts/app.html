@@ -2,10 +2,12 @@
 layout: default
 ---
 
+{% assign post = page %}
+
 <article class="post">
 
   <div class="date">
-    Updated on {{ page.date | date: "%e %B %Y" }}
+    Updated on {{ post.date | date: "%e %B %Y" }}
   </div>
   
   {% if post.category %}a
@@ -23,45 +25,45 @@ layout: default
   
   <p id="post-meta">Posted {{ category_content }}</p>
   
-  <h1>{{ page.title }}{% if page.generic %} – {{ page.generic }}{% endif %}</h1>
+  <h1>{{ post.title }}{% if post.generic %} – {{ post.generic }}{% endif %}</h1>
 
   <div class="entry">
   
-    {% if page.description %}
-      <blockquote>{{ page.description }}</blockquote>
+    {% if post.description %}
+      <blockquote>{{ post.description }}</blockquote>
     {% endif %}
     
-    {% if page.authors %}
+    {% if post.authors %}
       <p>
         <b>Authors</b>: 
-        {{ page.authors }}
+        {{ post.authors }}
       </p>
     {% endif %}
     
     <p>
       <b>Links</b>: 
-      {% if page.web %}<a href="{{ page.web }}">Web</a>{% endif %} 
-      {% if page.github %}<a href="{{ page.github }}">Github</a>{% endif %} 
-      {% if page.launchpad %}<a href="{{ page.launchpad }}">Launchpad</a>{% endif %}
+      {% if post.web %}<a href="{{ post.web }}">Web</a>{% endif %} 
+      {% if post.github %}<a href="{{ post.github }}">Github</a>{% endif %} 
+      {% if post.launchpad %}<a href="{{ post.launchpad }}">Launchpad</a>{% endif %}
     </p>
 
-    {% if page.screenshot %}
+    {% if post.screenshot %}
       <h3 id="screenshots">Screenshots</h3>
-      <img src="{{ page.screenshot }}"/>
+      <img src="{{ post.screenshot }}"/>
     {% endif %}
     
-    {% if page.package %}
+    {% if post.package %}
       <h3 id="installation">Installation</h3>
-      {% if page.repository %}
+      {% if post.repository %}
         <b>Behold!</b> Third-party repositories are usually not verified by others. Follow these instructions at your own risk and only if you trust the owner of the repository / developer of the software.
       {% endif %}
-    <pre><code>{% if page.repository %}    sudo apt-add-repository {{ page.repository }}
+    <pre><code>{% if post.repository %}    sudo apt-add-repository {{ post.repository }}
     sudo apt-get update{% endif %}  
-    sudo apt-get install {{ page.package }}</code></pre>{% endif %}
+    sudo apt-get install {{ post.package }}</code></pre>{% endif %}
     
     {{ content }}
     
   </div>
 
-  {% include disqus.html disqus_identifier=page.disqus_identifier %}
+  {% include disqus.html disqus_identifier=post.disqus_identifier %}
 </article>
