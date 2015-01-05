@@ -20,9 +20,9 @@ layout: default
     
     <p>
       <b>Links</b>: 
-      {% if page.web %}[Web]({{ page.web }}){% endif %} 
-      {% if page.github %}[Github]({{ page.github }}){% endif %} 
-      {% if page.launchpad %}[Launchpad]({{ page.launchpad }}){% endif %}
+      {% if page.web %}<a href="{{ page.web }}">Web</a>{% endif %} 
+      {% if page.github %}<a href="{{ page.github }}">Github</a>{% endif %} 
+      {% if page.launchpad %}<a href="{{ page.launchpad }}">Launchpad</a>{% endif %}
     </p>
 
     {% if page.screenshot %}
