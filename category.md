@@ -13,8 +13,14 @@ permalink: /category/
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td></td>
-      </tr>
+      {% for post in site.posts %}
+      {% if post.layout == 'app' %}
+        <tr>
+          <td><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></td>
+          <td>{{ post.repository }}, {{ post.ppa }}</td>
+          <td>{{ post.content}}</td>
+        </tr>
+      {% endif %}
+      {% endfor %}
     </tbody>
   </table>
