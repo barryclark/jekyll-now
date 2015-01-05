@@ -1,0 +1,56 @@
+---
+layout: default
+---
+
+<div class="posts">
+  <p>Category {{ page.category }}</p>
+
+  {% if site.categories[page.category] %}
+  {% for post in site.categories[page.category] %}
+    <article class="post">    
+      
+      <div class="date">
+        Updated on {{ post.date | date: "%e %B %Y" }}
+      </div>
+      
+      <h1><a href="{{ site.baseurl }}{{ post.url }}">
+        {{ post.title }}{% if post.generic %} – {{ post.generic }}{% endif %}
+      </a></h1>
+      
+      <div class="entry">
+        {% if post.layout == 'app' %}
+          <!-- borrowed from app.html -->
+
+          {% if post.description %}
+            <blockquote>{{ post.description }}</blockquote>
+          {% endif %}
+          
+          {% if post.authors %}
+            <p>
+              <b>Authors</b>: 
+              {{ post.authors }}
+            </p>
+          {% endif %}
+          
+          <p>
+            <b>Links</b>: 
+            {% if post.web %}<a href="{{ post.web }}">Web</a>{% endif %} 
+            {% if post.github %}<a href="{{ post.github }}">Github</a>{% endif %} 
+            {% if post.launchpad %}<a href="{{ post.launchpad }}">Launchpad</a>{% endif %}
+          </p>
+          
+          {{ post.content}}
+
+        {% else %}
+        
+          {{ post.content}}
+          
+        {% endif %}
+      </div>
+      
+    </article>
+  {% endfor %}
+  {% else %}
+    <p>There are no posts for this category.</p>
+  {% endif %}
+</div>
