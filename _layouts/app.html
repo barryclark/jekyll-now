@@ -8,13 +8,13 @@ layout: default
     Updated on {{ page.date | date: "%e %B %Y" }}
   </div>
   
-  {% if post.category %}
-      {% for site_category in site.data.categories %}
-          {% if site_category.slug == post.category %}
+  {% if post.category %}a
+      {% for site_category in site.data.categories %}b
+          {% if site_category.slug == post.category %}c
               {% assign category = site_category %}
           {% endif %}
       {% endfor %}
-      {% if category %}
+      {% if category %}d
           {% capture category_content %} in <span class="label" style="background-color:{{ category.color }}"><a href="/cat/{{ category.slug }}/">{{ category.name }}</a></span>{% endcapture %}
       {% endif %}
   {% else %}
