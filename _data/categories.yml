@@ -1,0 +1,11 @@
+- slug: apps
+  name: Apps
+  color: '#3498db'
+  
+- slug: art
+  name: Art
+  color: '#1abc9c'
+  
+- slug: others
+  name: Others
+  color: '#333333'
