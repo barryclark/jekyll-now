@@ -4,9 +4,9 @@
 
 Type Theme is a free and open-source [Jekyll](http://jekyllrb.com) theme, that's highly customizable and built for blogging.
 
-** [Demo](https://rohanchandra.github.io/type-theme/) **
+[Demo](https://rohanchandra.github.io/type-theme/)
 
-** [Using Type](https://rohanchandra.github.io/project/type.html) ** 
+[Using Type](https://rohanchandra.github.io/project/type.html)
 
 ## License
 The MIT License (MIT)
