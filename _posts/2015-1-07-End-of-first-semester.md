@@ -3,7 +3,7 @@ layout: post
 title: The end of the first semester
 ---
 
-I am just about to finish the first semester of my first year at [matfyz](https://matfyz.cz).
+I am just about to finish the first semester of my first year at [matfyz](http://matfyz.cz).
 It was a brand new experience for me.
 Everything seemed almost too hard at the beginning but, gradually, it got better.
 We learned a lot of new exciting stuff and revised what we already knew.
