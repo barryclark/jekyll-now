@@ -19,4 +19,4 @@ Today I had another one and I don't know how it turned out, yet. So, I have at l
 All in all, it was a very exciting semester, and I hope I get to stay here and
 learn a lot more!
 
-*EDIT 7.1.2015, 20:15: Apparently, I passed today's exams too!*
+*EDIT 7.1.2015, 20:15: Apparently, I passed today's exam too!*
