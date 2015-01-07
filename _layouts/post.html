@@ -1,0 +1,26 @@
+---
+layout: default
+---
+<article {% if page.feature-img %}class="feature-image"{% endif %}>
+
+  <header style="background-image: url('{{ site.baseurl }}/{{ page.feature-img }}')">
+    <h1 class="title">{{ page.title }}</h1>
+    
+    <p class="meta">
+    {{ page.date | date: "%B %-d, %Y" }}
+    {% if page.author %} - {{ page.author }}{% endif %}
+    </p>
+  </header>
+
+  <section class="post-content">
+    {{ content }}
+  </section>
+
+  <!-- Disqus -->
+  {% if site.theme.disqus_shortname %}
+    <section class="comments">
+      {% include disqus.html %}
+    </section>
+  {% endif %}
+  
+</article>

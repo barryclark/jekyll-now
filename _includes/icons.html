@@ -1,0 +1,159 @@
+{% if site.theme.rss %}
+<li>
+	<a href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" title="{{ site.theme.str_rss_follow }}">
+		<i class="fa fa-fw fa-rss"></i>
+	</a>
+</li>
+{% endif %}
+
+{% if site.theme.email_address %}
+<li>
+	<a href="mailto:{{ site.theme.email_address }}" title="{{ site.theme.str_email }}">
+		<i class="fa fa-fw fa-envelope"></i>
+	</a>
+</li>
+{% endif %}
+
+{% if site.theme.behance %}
+<li>
+	<a href="https://www.behance.net/{{ site.theme.behance }}" title="{{ site.theme.str_follow_on }} Behance">
+		<i class="fa fa-fw fa-behance"></i>
+	</a>
+</li>
+{% endif %}
+
+{% if site.theme.bitbucket %}
+<li>
+	<a href="https://bitbucket.org/{{ site.theme.bitbucket }}" title="{{ site.theme.str_follow_on }} Bitbucket">
+		<i class="fa fa-fw fa-bitbucket"></i>
+	</a>
+</li>
+{% endif %}
+
+{% if site.theme.dribbble %}
+<li>
+	<a href="https://dribbble.com/{{ site.theme.dribbble }}" title="{{ site.theme.str_follow_on }} Dribbble">
+		<i class="fa fa-fw fa-dribbble"></i>
+	</a>
+</li>
+{% endif %}
+
+{% if site.theme.facebook %}
+<li>
+	<a href="https://www.facebook.com/{{ site.theme.facebook }}" title="{{ site.theme.str_follow_on }} Facebook">
+		<i class="fa fa-fw fa-facebook"></i>
+	</a>
+</li>
+{% endif %}
+
+{% if site.theme.flickr %}
+<li>
+	<a href="https://www.flickr.com/photos/{{ site.theme.flickr }}" title="{{ site.theme.str_follow_on }} Flickr">
+		<i class="fa fa-fw fa-flickr"></i>
+	</a>
+</li>
+{% endif %}
+
+{% if site.theme.github %}
+<li>
+	<a href="https://github.com/{{ site.theme.github }}" title="{{ site.theme.str_follow_on }} GitHub">
+		<i class="fa fa-fw fa-github"></i>
+	</a>
+</li>
+{% endif %}
+
+{% if site.theme.google_plus %}
+<li>
+	<a href="https://plus.google.com/{{ site.theme.google_plus }}" title="{{ site.theme.str_follow_on }} Google+">
+		<i class="fa fa-fw fa-google-plus"></i>
+	</a>
+</li>
+{% endif %}
+
+{% if site.theme.instagram %}
+<li>
+	<a href="http://instagram.com/{{ site.theme.instagram }}" title="{{ site.theme.str_follow_on }} Instagram">
+		<i class="fa fa-fw fa-instagram"></i>
+	</a>
+</li>
+{% endif %}
+
+{% if site.theme.linkedin %}
+<li>
+	<a href="{{ site.theme.linkedin }}" title="{{ site.theme.str_follow_on }} LinkedIn">
+		<i class="fa fa-fw fa-linkedin"></i>
+	</a>
+</li>
+{% endif %}
+
+{% if site.theme.pinterest %}
+<li>
+	<a href="http://www.pinterest.com/{{ site.theme.pinterest }}" title="{{ site.theme.str_follow_on }} Pinterest">
+		<i class="fa fa-fw fa-pinterest"></i>
+	</a>
+</li>
+{% endif %}
+
+{% if site.theme.reddit %}
+<li>
+	<a href="https://www.reddit.com/user/{{ site.theme.reddit }}" title="{{ site.theme.str_follow_on }} Reddit">
+		<i class="fa fa-fw fa-reddit"></i>
+	</a>
+</li>
+{% endif %}
+
+{% if site.theme.soundcloud %}
+<li>
+	<a href="https://soundcloud.com/{{ site.theme.soundcloud }}" title="{{ site.theme.str_follow_on }} SoundCloud">
+		<i class="fa fa-fw fa-soundcloud"></i>
+	</a>
+</li>
+{% endif %}
+
+{% if site.theme.stack_exchange %}
+<li>
+	<a href="{{ site.theme.stack_exchange }}" title="{{ site.theme.str_follow_on }} Stack Exchange">
+		<i class="fa fa-fw fa-stack-exchange"></i>
+	</a>
+</li>
+{% endif %}
+
+{% if site.theme.steam %}
+<li>
+	<a href="http://steamcommunity.com/id/{{ site.theme.steam }}" title="{{ site.theme.str_follow_on }} Steam">
+		<i class="fa fa-fw fa-steam"></i>
+	</a>
+</li>
+{% endif %}
+
+{% if site.theme.tumblr %}
+<li>
+	<a href="https://{{ site.theme.tumblr }}.tumblr.com/" title="{{ site.theme.str_follow_on }} Tumblr">
+		<i class="fa fa-fw fa-tumblr"></i>
+	</a>
+</li>
+{% endif %}
+
+{% if site.theme.twitter %}
+<li>
+	<a href="https://twitter.com/{{ site.theme.twitter }}" title="{{ site.theme.str_follow_on }} Twitter">
+		<i class="fa fa-fw fa-twitter"></i>
+	</a>
+</li>
+{% endif %}
+
+{% if site.theme.wordpress %}
+<li>
+	<a href="https://{{ site.theme.wordpress }}.wordpress.com/" title="{{ site.theme.str_follow_on }} WordPress">
+		<i class="fa fa-fw fa-wordpress"></i>
+	</a>
+</li>
+{% endif %}
+
+{% if site.theme.youtube %}
+<li>
+	<a href="https://www.youtube.com/user/{{ site.theme.youtube }}" title="{{ site.theme.str_follow_on }} YouTube">
+		<i class="fa fa-fw fa-youtube"></i>
+	</a>
+</li>
+{% endif %}
