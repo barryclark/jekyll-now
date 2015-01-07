@@ -32,6 +32,9 @@ footer-links:
 # Your disqus shortname, entering this will enable commenting on posts
 disqus: 
 
+# Your Intense Debate account ID, entering this will enable commenting on posts
+intensedebate:
+
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 google_analytics: 
 
