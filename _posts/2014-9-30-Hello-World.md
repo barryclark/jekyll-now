@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hello World!
+title: Hello World
 ---
 
 All of my blogs eventually die of inactivity (from my side).
