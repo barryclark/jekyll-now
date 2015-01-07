@@ -52,7 +52,9 @@ baseurl: ""
 # !! You don't need to change any of the configuration flags below !!
 #
 
-markdown: kramdown
+markdown: redcarpet
+redcarpet:
+  extensions: [with_toc_data]
 highlighter: pygments
 permalink: /:title/
 
