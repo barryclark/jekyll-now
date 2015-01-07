@@ -71,5 +71,5 @@ gems:
 exclude:
     - Gemfile
     - Gemfile.lock
-    - LICENSE
+    - .gitignore
     - README.md

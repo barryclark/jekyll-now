@@ -4,6 +4,7 @@ layout: default
 
 <div class="posts">
   {% for post in site.posts %}
+  {% if post.layout != "page" %}
     <article class="post">    
       
       <div class="date">
@@ -46,5 +47,6 @@ layout: default
       </div>
       
     </article>
+  {% endif %}
   {% endfor %}
 </div>
