@@ -1,17 +1,26 @@
 ---
-layout: default
+layout: master
 ---
+<div class='post'>
+  <span class='date'>{{page.date | date_to_string}}</span>
+  <h1><a href='{{page.url}}'>{{page.title}}</a></h1>
+  <div class='body'>{{ content }}</div>
+</div>
 
-<article class="post">
-  <h1>{{ page.title }}</h1>
+<div class="related">
+  <h3>Related Posts</h3>
+  <table class="post-list">
+    {% for post in site.related_posts limit:3 %}
+      <tr>
+        <th><a href='{{ post.url }}'>{{ post.title }}</a></th>
+        <td>{{ post.date | date_to_string }}</td>
+        <td><a href='{{post.url}}#disqus_thread'>Comments</a></td>
+      </tr>
+    {% endfor %}
+  </table>
+</div>
 
-  <div class="entry">
-    {{ content }}
-  </div>
-
-  <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
-  </div>
-
-  {% include disqus.html disqus_identifier=page.disqus_identifier %}
-</article>
+<script type="text/javascript" charset="utf-8">
+  var disqus_url = "http://www.mbleigh.com/{{page.url}}";
+</script>
+<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/misterbleigh/embed.js"></script><noscript><a href="http://misterbleigh.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>

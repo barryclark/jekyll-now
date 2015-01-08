@@ -1,0 +1,31 @@
+---
+layout: master
+title: Open-Source Projects
+---
+
+<h2>Open-Source</h2>
+
+<p>I have a number of open-source projects hosted on <a href='http://github.com/mbleigh' rel='me' target='_blank'>GitHub</a>. The list below is dynamically populated from all of my projects with the most popular ones appearing first.</p>
+
+<div id='github-projects' class='big'>
+  <div class="repo">  <h3><a href="http://github.com/mbleigh/acts-as-taggable-on">acts-as-taggable-on</a></h3>  <span class="desc">A tagging plugin for Rails applications that allows for custom tagging along dynamic contexts.</span></div><div class="repo">  <h3><a href="http://github.com/mbleigh/subdomain-fu">subdomain-fu</a></h3>  <span class="desc">A new plugin approach to attempting to solve the usage of subdomains in linking and routing in Rails projects.</span></div><div class="repo">  <h3><a href="http://github.com/mbleigh/seed-fu">seed-fu</a></h3>  <span class="desc">Advanced seed data handling for Rails, combining the best practices of several methods together.</span></div><div class="repo">  <h3><a href="http://github.com/mbleigh/uberkit">uberkit</a></h3>  <span class="desc">The UberKit is a Rails plugin with a set of UI tools to ease common development.</span></div><div class="repo">  <h3><a href="http://github.com/mbleigh/mash">mash</a></h3>  <span class="desc">Mash is a Hash with the ability to read, write, and test for the presence of arbitrary attributes using method calls.</span></div><div class="repo">  <h3><a href="http://github.com/mbleigh/fetches">fetches</a></h3>  <span class="desc">A Rails plugin to simplify the fetching and memoization of records for parameter-based finds.</span></div>
+</div>
+
+<script type="text/javascript" charset="utf-8">
+  $.githubUser('mbleigh', function(data) {
+    $('#github-projects').html('');
+    
+    var repos = data.user.repositories;
+    repos.sort(function(a,b) {
+      return b.watchers - a.watchers;
+    });
+    
+    $(repos).each(function() {
+      $('#github-projects').append("\
+<div class='repo'>\
+  <h3><a href='" + this.url + "'>" + this.name + "</a></h3>\
+  <span class='desc'>"+this.description+"</span>\
+</div>");
+    });
+  });
+</script>

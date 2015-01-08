@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <title>Mister Bleigh - {{ page.title }}</title>
+    <link rel="stylesheet" href="/stylesheets/master.css" type="text/css" media="screen" charset="utf-8"/>
+    <link rel="stylesheet" href="/stylesheets/syntax.css" type="text/css" media="screen" charset="utf-8"/>
+    <script src="/javascripts/jquery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/javascripts/jquery.github.js" type="text/javascript" charset="utf-8"></script>
+    <link rel='alternate' type='application/rss+xml' href='http://feeds2.feedburner.com/mbleigh' />
+  </head>
+  <body>
+    <div id='wrapper'>
+      <div id='header'>
+        <h1><a href='/'>Michael Bleigh</a></h1>
+        
+        <div id='menu'>
+          <ul>
+            <li><a href='/blog.html' id='blog_link' title='Blog'>Blog</a></li>
+            <li><a href='/about.html' id='about_link' title='About'>About</a></li>
+            <li><a href='http://github.com/mbleigh' target='_blank' title='GitHub' rel='me' id='github_link'>GitHub</a></li>
+            <li><a href='http://www.linkedin.com/in/mbleigh' title='LinkedIn' target='_blank' rel='me' id='linkedin_link'>LinkedIn</a></li>
+            <li><a href='http://twitter.com/mbleigh' title='Twitter' target='_blank' rel='me' id='twitter_link'>Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id='content'>
+        {{ content }}
+        <div class='clearfix'></div>
+      </div>
+    </div>
+    <div id='footer'>
+      Copyright &copy; 2009 Michael Bleigh. Some rights reserved. Hosted by <a href='http://github.com/mbleigh/mbleigh.github.com/' target='_blank'>GitHub</a> and powered by <a href='http://github.com/mojombo/jekyll'>Jekyll</a>.
+    </div>
+    <script type="text/javascript">
+    //<![CDATA[
+    (function() {
+    		var links = document.getElementsByTagName('a');
+    		var query = '?';
+    		for(var i = 0; i < links.length; i++) {
+    			if(links[i].href.indexOf('#disqus_thread') >= 0) {
+    				query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+    			}
+    		}
+    		document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/misterbleigh/get_num_replies.js' + query + '"></' + 'script>');
+    	})();
+    //]]>
+    </script>
+  </body>
+</html>

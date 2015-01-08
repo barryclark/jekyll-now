@@ -1,0 +1,16 @@
+---
+title: About Michael Bleigh
+layout: master
+---
+
+h2. About Michael Bleigh
+
+Michael Bleigh is the author of this blog as well as a Rubyist, designer, and open source advocate. He is currently the Creative Director and Open-Source Activist at "Intridea":http://www.intridea.com/, a Washington D.C. based web applications development firm.
+
+Michael has contributed a number of open-source projects to the Ruby community including the "SubdomainFu":http://github.com/mbleigh/subdomain-fu and "ActsAsTaggableOn":http://github.com/mbleigh/acts-as-taggable-on plugins for Rails. He was also chosen to speak at RailsConf Europe 2008 as well as the Great Lakes Ruby Bash in 2008.
+
+His work at Intridea has included being the product manager and technical lead for "Present.ly":http://www.presentlyapp.com/, the business micro-communications platform launched in September of 2008.
+
+h2. About This Site
+
+This site is built using the "Jekyll":http://github.com/mojombo/jekyll library and hosted on "GitHub":http://github.com/. The source code used to create this library is "publicly available on GitHub":http://github.com/mbleigh/mbleigh.github.com as well.
