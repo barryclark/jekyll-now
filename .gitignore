@@ -2,3 +2,5 @@ _site
 _sass/.sass-cache
 _blogging
 .idea
+.sass-cache
+.idea/inspectionProfiles
