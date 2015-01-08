@@ -1177,6 +1177,11 @@ code {
   color: #a6e22e;
 }
 
+mark {
+  background-color: #d33682;
+  color: #fff;
+}
+
 /*------------------------------------*\
     LAYOUT
     _index.scss
