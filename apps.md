@@ -21,7 +21,7 @@ Name | Info | Developer
 **eCleaner** | Clean-up utility | [Juan Pablo Lozano](https://plus.google.com/117692827692672354132)
 **[eRadio](https://launchpad.net/eradio)** | Radio streaming | [George Sofianos](https://plus.google.com/113503999148667020901)
 **[Feedler](https://launchpad.net/feedler)** ([PPA](https://launchpad.net/~feedler-hackers/+archive/ubuntu/daily)) | Feed reader | [Avi Romanoff](https://launchpad.net/~aroman)
-**Feedreader** ([PPA](https://launchpad.net/~eviltwin1/+archive/ubuntu/feedreader-daily)) | Feed reader (not manager; for tt-rss) | [Jan Lukas Gernert](https://plus.google.com/109974726829108083807)
+**[Feedreader](https://launchpad.net/feedreader)** ([PPA](https://launchpad.net/~eviltwin1/+archive/ubuntu/feedreader-daily)) | Feed reader (not manager; for tt-rss, Feedly planned) | [Jan Lukas Gernert](https://plus.google.com/109974726829108083807)
 **[Foto](http://erasmo-marin.github.io/foto/)** ([PPA](https://launchpad.net/~erasmo-marin/+archive/ubuntu/foto-1.0)) | Photo manager | [Erasmo Marín](https://launchpad.net/~erasmo-marin), [Fabio Zaramella](https://launchpad.net/~ffabio-96-x)
 **[Gala Alternate Alt-Tab](https://github.com/tom95/gala-alternate-alt-tab)** | Window management | [Tom Beckmann](https://github.com/tom95), [Stas Sușcov](https://github.com/stas)
 **[Gazette](https://launchpad.net/gazette)** | Desktop widget | [Eduard Gotwig](https://launchpad.net/~gotwig)

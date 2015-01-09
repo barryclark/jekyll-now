@@ -1,15 +1,15 @@
 ---
-published: false
+published: true
 layout: app
 category: app
-title: 
-generic: 
+title: Indicator Search
+generic: Indicator
 description: ''
-authors: '<a href=""></a>'
+authors: ''
 license: ''
 web: ''
 github: ''
-launchpad: ''
+launchpad: '~elementary-apps/synapse-project/indicator-search'
 googleplus: ''
 repository: ''
 repository-unstable: ''

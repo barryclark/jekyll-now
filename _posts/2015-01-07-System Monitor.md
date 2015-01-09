@@ -1,11 +1,11 @@
 ---
-published: false
+published: true
 layout: app
 category: app
-title: 
-generic: 
+title: System Monitor
+generic: System monitor
 description: ''
-authors: '<a href=""></a>'
+authors: '<a href="https://plus.google.com/+MichaelStarkweather/posts">Michael Starkweather</a>'
 license: ''
 web: ''
 github: ''

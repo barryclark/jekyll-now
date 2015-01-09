@@ -1,11 +1,11 @@
 ---
-published: false
+published: true
 layout: app
 category: app
-title: 
-generic: 
+title: Power Installer
+generic: One-click installer
 description: ''
-authors: '<a href=""></a>'
+authors: '<a href="https://plus.google.com/102383287758197741530">Adam Bieńkowski</a>'
 license: ''
 web: ''
 github: ''

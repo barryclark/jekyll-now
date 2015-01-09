@@ -43,8 +43,8 @@ layout: default
     <p>
       <b>Links</b>: 
       {% if post.web %}<a href="{{ post.web }}">Web</a>{% endif %} 
-      {% if post.github %}<a href="{{ post.github }}">Github</a>{% endif %} 
-      {% if post.launchpad %}<a href="{{ post.launchpad }}">Launchpad</a>{% endif %}
+      {% if post.github %}<a href="http://github.com/{{ post.github }}">Github</a>{% endif %} 
+      {% if post.launchpad %}<a href="http://launchpad.net/{{ post.launchpad }}">Launchpad</a>{% endif %}
     </p>
 
     {% if post.screenshot %}
