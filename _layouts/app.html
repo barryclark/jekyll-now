@@ -65,7 +65,7 @@ layout: default
     {% if post.repository-unstable %}
 	  <p>The following code adds an <b>unstable repository</b>, use with even higher caution as things might break. </p>
 	<pre><code>    sudo apt-add-repository {{ post.repository-unstable }}
-    sudo apt-get update{% endif %}  
+    sudo apt-get update
     sudo apt-get install {{ post.package }}</code></pre>{% endif %}
 	{% endif %}
 	  
