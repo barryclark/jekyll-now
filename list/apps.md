@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Category
+title: Apps for elementary
 permalink: /list/apps/
 ---
 
