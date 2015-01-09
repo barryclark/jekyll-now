@@ -117,7 +117,7 @@ A relevant Jekyll Github Issue: <https://github.com/jekyll/jekyll/issues/332>
 
 ### Contact Form
 
-If you'd like to keep the contact form, which uses <http://formspree.io//>, you will need to update the email address.
+If you'd like to keep the contact form, which uses <http://formspree.io>, you will need to update the email address.
 
 Currently, the `contact.md` has the following:
 
