@@ -43,7 +43,7 @@ layout: default
     <p>
       <b>Links</b>: 
       {% if post.web %}<a href="{{ post.web }}">Web</a>{% endif %} 
-      {% if post.github %}<a href="https://github.com/{{ post.github }}">Github</a>{% endif %} 
+      {% if post.github %}<a href="https://github.com/{{ post.github }}">GitHub</a>{% endif %} 
       {% if post.launchpad %}<a href="https://launchpad.net/{{ post.launchpad }}">Launchpad</a>{% endif %}
       {% if post.googleplus %}<a href="https://plus.google.com/{{ post.googleplus }}">Google+</a>{% endif %}
     </p>
@@ -56,12 +56,20 @@ layout: default
     {% if post.package %}
       <h3 id="installation">Installation</h3>
       {% if post.repository or post.repository-unstable %}
-        <b>Behold!</b> Third-party repositories are usually not verified by others. Follow these instructions at your own risk and only if you trust the owner of the repository / developer of the software.
+        <p><b>Behold!</b> Third-party repositories are usually not verified by others. Follow these instructions at your own risk and only if you trust the owner of the repository / developer of the software.</p>
       {% endif %}
-    <pre><code>{% if post.repository %}    sudo apt-add-repository {{ post.repository }}
-    sudo apt-get update{% endif %}  
+    {% if post.repository %}<pre><code>    sudo apt-add-repository {{ post.repository }}
+    sudo apt-get update  
     sudo apt-get install {{ post.package }}</code></pre>{% endif %}
     
+    {% if post.repository-unstable %}
+	  <p>The following code adds an <b>unstable repository</b>, use with even higher caution as things might break. </p>
+	<pre><code>    sudo apt-add-repository {{ post.repository-unstable }}
+    sudo apt-get update{% endif %}  
+    sudo apt-get install {{ post.package }}</code></pre>{% endif %}
+	{% endif %}
+	  
+	<hr/>
     {{ content }}
     
   </div>
