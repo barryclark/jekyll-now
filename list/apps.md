@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Category
-permalink: /category/
+permalink: /list/apps/
 ---
 
   <table class="overview">
