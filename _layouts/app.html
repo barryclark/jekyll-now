@@ -43,8 +43,9 @@ layout: default
     <p>
       <b>Links</b>: 
       {% if post.web %}<a href="{{ post.web }}">Web</a>{% endif %} 
-      {% if post.github %}<a href="http://github.com/{{ post.github }}">Github</a>{% endif %} 
-      {% if post.launchpad %}<a href="http://launchpad.net/{{ post.launchpad }}">Launchpad</a>{% endif %}
+      {% if post.github %}<a href="https://github.com/{{ post.github }}">Github</a>{% endif %} 
+      {% if post.launchpad %}<a href="https://launchpad.net/{{ post.launchpad }}">Launchpad</a>{% endif %}
+      {% if post.googleplus %}<a href="https://plus.google.com/{{ post.googleplus }}">Google+</a>{% endif %}
     </p>
 
     {% if post.screenshot %}
@@ -54,7 +55,7 @@ layout: default
     
     {% if post.package %}
       <h3 id="installation">Installation</h3>
-      {% if post.repository %}
+      {% if post.repository or post.repository-unstable %}
         <b>Behold!</b> Third-party repositories are usually not verified by others. Follow these instructions at your own risk and only if you trust the owner of the repository / developer of the software.
       {% endif %}
     <pre><code>{% if post.repository %}    sudo apt-add-repository {{ post.repository }}
