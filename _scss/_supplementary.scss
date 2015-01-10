@@ -7,9 +7,13 @@ html {
 }
 
 body {
+  background-color: #fff;
+  background-image: url(http://elementaryos.org/img/nav-bg.png);
+  background-repeat: no-repeat;
+  background-position: center -30px;
   background: $white;
-  font: 15px/1.5 $font_body;
-  color: $darkGrey;
+  font: 14px/1.5 $font_body;
+  color: $color_body;
 }
 
 .container {
@@ -21,23 +25,20 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $font_heading;
-  color: $darkerGrey;
-  font-weight: bold;
+  color: $color_heading;
+  font-family: $font_heading;
+  font-weight: 100;
   
-  line-height: 1.7;
   margin: 1em 0 15px;
   padding: 0;
 
-  @include mobile {
-    line-height: 1.4;
+  a {
+    color: inherit;
   }
 }
   
 h1 {  
   font-size: 30px;
-  a {
-    color: inherit;
-  }
 }
 
 h2 {  
@@ -50,7 +51,6 @@ h3 {
 
 h4 {  
   font-size: 18px;
-  color: $grey;
 }
 
 p {
@@ -58,11 +58,13 @@ p {
 }
 
 a {
-  color: $blue;
+  color: $color_link;
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
-    color: $blue;
+    color: $color_link
+      ;
+    text-decoration:underline;
   }
 }
 
@@ -101,7 +103,7 @@ img {
 
 .date {
   font-style: italic;
-  color: $grey;
+  color: $color_subtley;
   float: right;
 }
 
@@ -127,12 +129,12 @@ th:last-child {
 
 // Specify the color of the selection
 ::-moz-selection {
-  color: $black;
-  background: $lightGrey;
+  color: #fff;
+  background: $color_link;
 }
 ::selection {
-  color: $black;
-  background: $lightGrey;
+  color: #fff;
+  background: $color_link;
 }
 
 // Nicolas Gallagher's micro clearfix hack
@@ -220,7 +222,7 @@ nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
   font-family: $font_header; 
-  font-size: 18px;
+  font-size: 16px;
   
   @include mobile {
     float: none;

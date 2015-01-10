@@ -14,10 +14,10 @@ $grey: #666;
 $lightGrey: #eee;
 $white: #fff;
 
-// Font stacks
-$helvetica: Helvetica, Arial, sans-serif;
-$helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$georgia: Georgia, serif;
+$color_heading: #333;
+$color_body: #333;
+$color_link: #005CFF;
+$color_subtle: #999;
 
 // New fonts
 $OpenSans: "Open Sans","Droid Sans", "Source Sans Pro", "Carlito", "DejaVu Sans", sans-serif;
@@ -25,7 +25,7 @@ $Raleway: "Raleway", "Open Sans","Droid Sans", "Source Sans Pro", "Carlito", "De
 // Some day there will be Open Sans Mono 
 $OpenSansMono: "Open Sans Mono", "Droid Sans Mono", "Source Code Pro", "Liberation Mono", "DejaVu Sans Mono", monospace;
 
-$font_header: $Raleway;
+$font_header: $OpenSans;
 $font_heading: $Raleway;
 $font_body: $OpenSans;
 $font_code: $OpenSansMono;

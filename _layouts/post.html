@@ -13,5 +13,7 @@ layout: default
     {{ content }}
   </div>
 
+  {% include post_category.html %}
+  
   {% include disqus.html disqus_identifier=page.disqus_identifier %}
 </article>
