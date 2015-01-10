@@ -8,10 +8,10 @@ html {
 
 body {
   background-color: #fff;
-  background-image: url(http://elementaryos.org/img/nav-bg.png);
+  background-image: url("http://elementaryos.org/img/nav-bg.png");
   background-repeat: no-repeat;
   background-position: center -30px;
-  background: $white;
+  background: #fff;
   font: 14px/1.5 $font_body;
   color: $color_body;
 }
@@ -103,7 +103,7 @@ img {
 
 .date {
   font-style: italic;
-  color: $color_subtley;
+  color: $color_subtle;
   float: right;
 }
 
