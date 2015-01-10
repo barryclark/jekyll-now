@@ -67,7 +67,8 @@ layout: default
 	<pre><code>    sudo apt-add-repository {{ post.repository-unstable }}
     sudo apt-get update
     sudo apt-get install {{ post.package }}</code></pre>{% endif %}
-	  
+	
+	{% endif %}
     {{ content }}
     
   </div>
