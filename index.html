@@ -17,28 +17,7 @@ layout: default
       
       <div class="entry">
         {% if post.layout == 'app' %}
-          <!-- borrowed from app.html -->
-
-          {% if post.description %}
-            <blockquote>{{ post.description }}</blockquote>
-          {% endif %}
-          
-          {% if post.authors %}
-            <p>
-              <b>Authors</b>: 
-              {{ post.authors }}
-            </p>
-          {% endif %}
-          
-          <p>
-            <b>Links</b>: 
-            {% if post.web %}<a href="{{ post.web }}">Web</a>{% endif %} 
-            {% if post.github %}<a href="https://github.com/{{ post.github }}">GitHub</a>{% endif %} 
-            {% if post.launchpad %}<a href="https://launchpad.net/{{ post.launchpad }}">Launchpad</a>{% endif %}
-            {% if post.googleplus %}<a href="https://plus.google.com/{{ post.googleplus }}">Google+</a>{% endif %}
-          </p>
-          
-          {{ post.content}}
+		  {% include app_teaser.html %}
 
         {% else %}
         
