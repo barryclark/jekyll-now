@@ -14,6 +14,8 @@
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/bootstrap.min.css" />
+
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
@@ -52,5 +54,17 @@
     </div>
 
     {% include analytics.html %}
-  </body>
+
+    <script type="text/javascript" src="{{ site.baseurl }}/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript"  src="{{ site.baseurl }}/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(function(){
+          
+          $("article.post table").addClass("table").addClass("table-striped");
+
+          $(".entry p img").parent("p").css("text-align","center");
+
+        });
+    </script>
+</body>
 </html>
