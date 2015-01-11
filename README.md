@@ -2,7 +2,7 @@ Hi there, source peeker!
 
 Here is where you can find the code belonging to my little space of the internet [miriamtocino.com](http://www.miriamtocino.com/).
 
-Below you find a list of important information and details, that I use on a daily basis, or I will need in the future if I haven't worked on the project for a long time ☺
+Below you find a list of important information and details that I use on a daily basis, or I will need in the future if I haven't worked on the project for a long time ☺
 
 On A Daily Basis
 =======
