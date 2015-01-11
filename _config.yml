@@ -63,7 +63,6 @@ sass:
 
 # Use the following plug-ins
 gems:
-  - jemoji # Emoji please!
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
 
 # Exclude these files from your production _site
