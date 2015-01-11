@@ -292,7 +292,7 @@ So, the developer was awesome enough to send me frequencies calculated from abou
 
 The frequencies calculated from the text are in the table below:
 
-|Letter   | Corpus Text Based Frequency    |
+|Letter   |  Text Corpus Based Frequency (contributed - see end of post)   |
 |---|---|
 | а | 13.66 %|
 | о | 10.63 %|
@@ -337,7 +337,7 @@ I feel the text approach is realistically better for letter frequency usage. And
 
 Finally a comparison of the frequencies based on both text and words in one single table: 
 
-|Letter   | Letter Word Based Frequency    | Corpus Text Based Frequency    |
+|Letter   | Letter Word Based Frequency    | Text Corpus Based Frequency (contributed - see end of post)    |
 |---|---|
 | а |  12.59% |  13.66 %|
 | е |  9.02%  | 9.91 %|
