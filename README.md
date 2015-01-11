@@ -48,7 +48,7 @@ Edit `/_posts/2014-3-3-Hello-World.md` to publish your first blog post. This [Ma
 
 ## Local Development
 
-1. Install Jekyll and plug-ins in one fell swoop. `gem install github-pages` This mirrors the plug-ins used by GitHub Pages on your local machine including Jekyll, Sass, Gemoji, etc.
+1. Install Jekyll and plug-ins in one fell swoop. `gem install github-pages` This mirrors the plug-ins used by GitHub Pages on your local machine including Jekyll, Sass, gemoetc.
 2. Clone down your fork `git clone git@github.com:yourusername/yourusername.github.io.git`
 3. Serve the site and watch for markup/sass changes `jekyll serve`
 4. View your website at http://0.0.0.0:4000
@@ -78,7 +78,6 @@ It covers:
 ✓ Google Analytics integration  
 ✓ SVG social icons for your footer  
 ✓ 3 http requests, including your avatar  
-✓ Emoji in blog posts! :sparkling_heart: :sparkling_heart: :sparkling_heart:  
 
 ✘ No installing dependancies  
 ✘ No need to set up local development  
