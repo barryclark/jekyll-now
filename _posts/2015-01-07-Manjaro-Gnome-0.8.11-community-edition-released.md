@@ -21,3 +21,4 @@ Manjaro Development Team
 
 * [Download here](https://sourceforge.net/projects/manjarolinux/files/community/Gnome/2015.01/)
 * [Forum post](https://forum.manjaro.org/index.php?topic=19399.0)
+* [AMD Catalyst users](https://forum.manjaro.org/index.php?topic=19479.0)
