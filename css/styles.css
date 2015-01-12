@@ -1542,6 +1542,9 @@ mark {
   .mod-text h3 {
     margin: 5px 0;
   }
+  .mod-text h4.color-primary {
+    color: #d33682;
+  }
   .mod-text ul {
     list-style: none !important;
     padding: 0;
@@ -1746,6 +1749,7 @@ mark {
     background: #fff;
     padding: 1em;
     border: 1px solid #eeeeee;
+    border-bottom: none;
   }
   .mod-project--card .project-intro .dimmer {
     border: 1px solid #d33682;
@@ -1798,9 +1802,7 @@ mark {
     text-decoration: underline;
   }
   .mod-project--card p.technologies {
-    color: #d33682;
     font-size: .9em;
-    margin-top: 1.42857em;
   }
   .mod-project--card a.btn--color-brackground--default {
     position: absolute;

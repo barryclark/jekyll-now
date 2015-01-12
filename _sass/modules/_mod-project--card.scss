@@ -14,6 +14,7 @@
             background: $white;
             padding: 1em;
             border: 1px solid $gray-lighter;
+            border-bottom: none;
 
             .dimmer {
                 border: 1px solid $color-primary;
@@ -73,9 +74,7 @@
         }
 
         p.technologies {
-            color: $color-primary;
             font-size: .9em;
-            margin-top: em(20px);
         }
 
         a.btn--color-brackground--default {
