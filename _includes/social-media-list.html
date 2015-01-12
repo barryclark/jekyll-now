@@ -8,14 +8,6 @@
     {% endif %}
     <!-- /email -->
 
-    <!-- github
-    {% if site.github_username %}
-    <li>
-        <a href="http://github.com/{{ site.github_username }}" alt="Github" title="Github" target="_blank"><span>{% include svg-icons/github.html %}</span></a>
-    </li>
-    {% endif %}
-    <!-- /github -->
-
     <!-- linkedin -->
     {% if site.linkedin_username %}
     <li>
@@ -32,7 +24,15 @@
     {% endif %}
     <!-- /twitter -->
 
-    <!-- pinterest -->
+    <!-- github -->
+    {% if site.github_username %}
+    <li>
+        <a href="http://github.com/{{ site.github_username }}" alt="Github" title="Github" target="_blank"><span>{% include svg-icons/github.html %}</span></a>
+    </li>
+    {% endif %}
+    <!-- /github -->
+
+    <!-- pinterest
     {% if site.pinterest_username %}
     <li>
         <a href="http://pinterest.com/{{ site.pinterest_username }}" alt="Pinterest" title="Pinterest" target="_blank"><span>{% include svg-icons/pinterest.html %}</span></a>
