@@ -33,6 +33,7 @@ Also I wanted to show you something that I discovered at the end of 2014, while 
 ![New Workspace 2](http://miriamtocino.github.io/images/posts/new-workspace-2.jpg)
 
 This last image was taken while following the course about [AngularJS](http://teamtreehouse.com/library/angularjs).
+
 Happy New Year & Happy Learning! ♥
 
 - - -
