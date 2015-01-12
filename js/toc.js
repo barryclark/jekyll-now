@@ -18,7 +18,7 @@
       }
       return this.id;
     }), output = $(this);
-    if (!headers.length || headers.length < 3 || !output.length) {
+    if (!headers.length || !output.length) {
       return;
     }
 
