@@ -1587,7 +1587,10 @@ mark {
 \*------------------------------------*/
 @media (min-width: 0px), (min-width: 568px) {
   .mod-post {
-    margin-bottom: 40px;
+    margin-bottom: 8em;
+  }
+  .mod-post.archive {
+    margin-bottom: 2em;
   }
   .mod-post h3, .mod-post h3 a {
     color: #d33682;
@@ -1647,6 +1650,12 @@ mark {
   }
   .mod-post img {
     margin-bottom: 2.14286em;
+  }
+  .mod-post .separator {
+    color: #d33682;
+    background-color: #d33682;
+    height: 7px;
+    border-top: none;
   }
 }
 
