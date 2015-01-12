@@ -10,7 +10,7 @@ I just moved to the Netherlands. I spent last weeks looking for a new place to l
 
 ![New Workspace 1](http://miriamtocino.github.io/images/posts/new-workspace-1.jpg)
 
-#### Learning at Treehouse
+#### Learning Flow at Treehouse
 
 Also I wanted to show you something that I discovered at the end of 2014, while doing some coding in the middle of the whole moving thing (keeping me alive in the down moments). It has to do with my way of learning at [Treehouse](http://teamtreehouse.com/miriamtocino). I guess that some of you are familiar with their [workspaces](http://teamtreehouse.com/workspaces), which help you go through their different courses. So find below a list of items that you will find on my desk. It took me some time to figure this out, so I really hope it gives you some inspiration:
 
