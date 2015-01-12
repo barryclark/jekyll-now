@@ -1623,6 +1623,9 @@ mark {
     font-weight: 500;
     color: #222222;
   }
+  .mod-post ol {
+    list-style: decimal;
+  }
   .mod-post ul {
     list-style: none !important;
     padding: 0;

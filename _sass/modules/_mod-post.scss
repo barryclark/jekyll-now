@@ -53,6 +53,10 @@
             color: $gray-darker;
         }
 
+        ol {
+            list-style: decimal;
+        }
+
 		ul {
 		list-style: none !important;
 		padding:0;
