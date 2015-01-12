@@ -18,7 +18,7 @@ Also I wanted to show you something that I discovered at the end of 2014, while 
 
 2. **Tablet.** Here is where I watch the course making use of [their app](http://teamtreehouse.com/features/ipad-app). The screen is big enough to follow new code implementations done by the teacher and at the same time, you can check it out on the laptop by yourself, see if it works for you and you got the new concepts right.
 
-3. **Notes.** I need to write things down and I need to color them: purple for variables, pink for methods, blue for objects, yellow for strings... It is just how my brain retains new ideas at its best.
+3. **Notes.** I need to write things down and I need to color them: purple for variables, pink for functions, blue for objects, yellow for strings... It is just how my brain retains new ideas at its best.
 
 4. **Color Markers.** Once again, I color everything.
 
