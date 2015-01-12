@@ -26,6 +26,8 @@ paginate: 10
 
 # Navigation
 navigation:
+ - title: Blog
+   url: /index.html
  - title: About
    url: /about.html
  - title: Projects
@@ -34,7 +36,7 @@ navigation:
    url: /bookshelf.html
  - title: Elearning
    url: /elearning.html
- - title: Impressum
-   url: /impressum.html
  - title: Archive
    url: /archive.html
+ - title: Impressum
+   url: /impressum.html
