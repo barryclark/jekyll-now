@@ -13,7 +13,6 @@ Find below the project structure so people can find its way...
 
 ```bash
 .
-| + _assets/              # files not related with code
 | + _cache/               # it needs to be one
 | + _drafts/              # posts in-progress
 | + _includes/            # html files to be included in layouts
@@ -91,4 +90,7 @@ List of commands related to jekyll and ready to use!
 jekyll serve
 # => A development server will run at http://localhost:4000/
 # Auto-regeneration: enabled. Use `--no-watch` to disable.
+
+jekyll serve --drafts
+# process and render draft posts
 ```
