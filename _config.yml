@@ -57,7 +57,7 @@ theme:
 # PAGINATION
 paginate: 5
 paginate_path: "blog/page:num"
-  
+
 # BUILD SETTINGS
 markdown: kramdown
 highlighter: pygments
