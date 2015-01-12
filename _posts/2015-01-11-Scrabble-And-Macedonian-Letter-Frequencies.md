@@ -389,6 +389,3 @@ They can be found here and everyone should check out the work:
 * [The Dictionary](http://www.makedonski.info/)
 * [The Impressium](http://www.makedonski.info/impressum)
 
-
-For any questions you can contact them [here!](mailto:drmj@sam97.de)
-
