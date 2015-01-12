@@ -10,16 +10,37 @@
         @include layout($s-layout);
 
         .project-intro {
-            background-color: $white;
+            position: relative;
+            background: $white;
             padding: 1em;
             border: 1px solid $gray-lighter;
+
+            .dimmer {
+                border: 1px solid $color-primary;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background: $color-primary;
+                opacity: 0;
+                -webkit-transition: opacity 0.1s ease-in;
+                -moz-transition: opacity 0.1s ease-in;
+                -o-transition: opacity 0.1s ease-in;
+                transition: opacity 0.1s ease-in;
+                opacity: 0;
+                cursor: pointer;
+                margin-top: -1em;
+                margin-left: -1em;
+
+                &:hover {
+                    opacity: .5;
+                }
+            }
         }
 
         .project-description {
             background-color: $gray-darker;
             color: white;
             padding: 1em;
-            font-size: .9em;
             border: 1px solid $gray-darker;
         }
 
@@ -38,7 +59,7 @@
             font-weight: 400;
             margin: 0;
             padding: 0;
-            margin-bottom: em(12px);
+            margin-bottom: em(20px);
             margin-top: em(5px);
         }
 
@@ -52,7 +73,9 @@
         }
 
         p.technologies {
-            font-style: italic;
+            color: $color-primary;
+            font-size: .9em;
+            margin-top: em(20px);
         }
 
         a.btn--color-brackground--default {

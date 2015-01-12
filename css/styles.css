@@ -1460,6 +1460,7 @@ mark {
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 4em;
   }
   .gallery-item:after {
     content: " ";
@@ -1590,7 +1591,7 @@ mark {
     margin-bottom: 8em;
   }
   .mod-post.archive {
-    margin-bottom: 2em;
+    margin-bottom: 3em;
   }
   .mod-post h3, .mod-post h3 a {
     color: #d33682;
@@ -1741,15 +1742,34 @@ mark {
 \*------------------------------------*/
 @media (min-width: 0px), (min-width: 568px) {
   .mod-project--card .project-intro {
-    background-color: #fff;
+    position: relative;
+    background: #fff;
     padding: 1em;
     border: 1px solid #eeeeee;
+  }
+  .mod-project--card .project-intro .dimmer {
+    border: 1px solid #d33682;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #d33682;
+    opacity: 0;
+    -webkit-transition: opacity 0.1s ease-in;
+    -moz-transition: opacity 0.1s ease-in;
+    -o-transition: opacity 0.1s ease-in;
+    transition: opacity 0.1s ease-in;
+    opacity: 0;
+    cursor: pointer;
+    margin-top: -1em;
+    margin-left: -1em;
+  }
+  .mod-project--card .project-intro .dimmer:hover {
+    opacity: .5;
   }
   .mod-project--card .project-description {
     background-color: #222222;
     color: white;
     padding: 1em;
-    font-size: .9em;
     border: 1px solid #222222;
   }
   .mod-project--card h4, .mod-project--card h4 a {
@@ -1767,7 +1787,7 @@ mark {
     font-weight: 400;
     margin: 0;
     padding: 0;
-    margin-bottom: 0.85714em;
+    margin-bottom: 1.42857em;
     margin-top: 0.35714em;
   }
   .mod-project--card p a {
@@ -1778,7 +1798,9 @@ mark {
     text-decoration: underline;
   }
   .mod-project--card p.technologies {
-    font-style: italic;
+    color: #d33682;
+    font-size: .9em;
+    margin-top: 1.42857em;
   }
   .mod-project--card a.btn--color-brackground--default {
     position: absolute;

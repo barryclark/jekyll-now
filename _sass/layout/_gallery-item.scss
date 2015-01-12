@@ -8,6 +8,7 @@
     @include breakpoint($breakpoint-s) {
         @include layout($s-layout);
         @include container(full);
+        margin-bottom: 4em;
     };
 
     // M
