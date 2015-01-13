@@ -4,15 +4,9 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
-
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself. 
-
 ### Contact me
 
-[oskopek@oskopek.com](mailto:oskopek@oskopek.com)
+[//]: # ([oskopek@oskopek.com](mailto:oskopek@oskopek.com))
 
 School address: [oskopek@matfyz.cz](mailto:oskopek@matfyz.cz)
 
