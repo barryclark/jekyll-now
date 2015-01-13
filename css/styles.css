@@ -1654,6 +1654,7 @@ mark {
   }
   .mod-post img {
     margin-bottom: 2.14286em;
+    max-width: 550px;
   }
   .mod-post .separator {
     color: #d33682;
