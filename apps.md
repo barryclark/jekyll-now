@@ -25,7 +25,7 @@ Name | Info | Developer
 **[Foto](http://erasmo-marin.github.io/foto/)** ([PPA](https://launchpad.net/~erasmo-marin/+archive/ubuntu/foto-1.0)) | Photo manager | [Erasmo Marín](https://launchpad.net/~erasmo-marin), [Fabio Zaramella](https://launchpad.net/~ffabio-96-x)
 **[Gala Alternate Alt-Tab](https://github.com/tom95/gala-alternate-alt-tab)** | Window management | [Tom Beckmann](https://github.com/tom95), [Stas Sușcov](https://github.com/stas)
 **[Gazette](https://launchpad.net/gazette)** | Desktop widget | [Eduard Gotwig](https://launchpad.net/~gotwig)
-**[Go For It!](https://github.com/mank319/Go-For-It)** | Task management | [Manuel Kehl](https://plus.google.com/111316844546399833250)
+**[Go For It!](https://github.com/mank319/Go-For-It)** ([PPA](https://launchpad.net/~mank319/+archive/ubuntu/go-for-it)) | Task management | [Manuel Kehl](https://plus.google.com/111316844546399833250)
 **Gravel** (formerly Manix) | Comic reader | [Shawn McTear](https://plus.google.com/109256860773710627217)
 **[Indicator Workspaces](http://dysonsimmons.com/indicator-workspaces/)** ([GH](https://github.com/dyson/indicator-workspaces)) | | [Dyson Simmons](http://dysonsimmons.com/)
 **[Indicator Search](https://code.launchpad.net/~elementary-apps/synapse-project/indicator-search)** | | 
