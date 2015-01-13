@@ -1,5 +1,6 @@
 ---
-published: true
+layout: post
+title: You're up and running!
 ---
 
 ## 代码加密保护
