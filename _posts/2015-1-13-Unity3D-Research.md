@@ -1,11 +1,13 @@
 ---
 layout: post
 title: Unity3D Research
+published: true
 ---
 
 ## 代码加密保护
     混淆代码
     增加数据验证
+    :point_down:
 
 ## 界面
     GUI
@@ -15,4 +17,3 @@ title: Unity3D Research
 ## 热更新
     资源
     脚本
-    
