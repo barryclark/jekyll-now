@@ -28,15 +28,13 @@ paginate: 10
 navigation:
  - title: Blog
    url: /index.html
- - title: About
-   url: /about.html
  - title: Projects
    url: /projects.html
- - title: Bookshelf
-   url: /bookshelf.html
+ - title: About
+   url: /about.html
  - title: Elearning
    url: /elearning.html
+ - title: Bookshelf
+   url: /bookshelf.html
  - title: Archive
    url: /archive.html
- - title: Impressum
-   url: /impressum.html
