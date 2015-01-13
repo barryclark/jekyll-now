@@ -12,7 +12,10 @@ A place to include any other types of information that you'd like to include abo
 
 ### Contact me
 
-[oskopek@matfyz.cz](mailto:oskopek@matfyz.cz)
+[oskopek@oskopek.com](mailto:oskopek@oskopek.com)
+
+School address: [oskopek@matfyz.cz](mailto:oskopek@matfyz.cz)
+
 
 ### My PGP fingerprint
 
