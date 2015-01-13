@@ -4,17 +4,15 @@ title: Unity3D Research
 published: true
 ---
 
-## 代码加密保护
-    混淆代码
-    增加数据验证
-    
-cxzcc :point_down:
+##  代码加密保护
+- 混淆代码
+- 增加数据验证
 
 ## 界面
-    GUI
-    UGUI
-    NGUI
+- GUI
+- UGUI
+- NGUI
     
 ## 热更新
-    资源
-    脚本
+- 资源
+- 脚本
