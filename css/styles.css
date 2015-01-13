@@ -1359,7 +1359,7 @@ mark {
 }
 @media (min-width: 769px), (min-width: 1024px) {
   .content-blank-layout {
-    width: 75%;
+    width: 66.66667%;
     float: left;
     padding-left: 1.38889%;
     padding-right: 1.38889%;
@@ -1560,7 +1560,7 @@ mark {
   }
   .mod-text img {
     margin: 20px 0;
-    max-width: 700px;
+    max-width: 550px;
   }
   .mod-text img.me {
     max-width: 300px !important;

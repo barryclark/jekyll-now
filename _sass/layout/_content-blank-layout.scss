@@ -30,7 +30,7 @@
     // L
     @include breakpoint($breakpoint-l) {
         @include layout($l-layout);
-        @include span(9);
+        @include span(8 at 4);
         height: 100%;
     };
 }
