@@ -292,9 +292,43 @@ So, the developer was awesome enough to send me frequencies calculated from abou
 
 The frequencies calculated from the text are in the table below:
 
-**After discussing with the digital dictionary people, I've removed the distribution they provided because of publishing rigths**
+|Letter   |  Text Corpus Based Frequency (contributed - see end of post)   |
+|---|---|
+| а | 13.66 %|
+| о | 10.63 %|
+| е | 9.91 %|
+| и | 8.32 %|
+| т | 7.06 %|
+| н | 6.47 %|
+| с | 4.79 %|
+| р | 4.37 %|
+| в | 4.27 %|
+| д | 3.95 %|
+| к | 3.82 %|
+| м | 2.93 %|
+| л | 2.88 %|
+| п | 2.64 %|
+| у | 2.38 %|
+| г | 1.9 %|
+| з | 1.72 %|
+| ј | 1.67 %|
+| ш | 1.6 %|
+| б | 1.54 %|
+| ч | 1.04 %|
+| ц | 0.62 %|
+| ж | 0.58 %|
+| ќ | 0.41 %|
+| њ | 0.28 %|
+| ф | 0.24 %|
+| х | 0.12 %|
+| ѓ | 0.12 %|
+| џ | 0.04 %|
+| љ | 0.03 %|
+| ѕ | 0.02 %|
 
-There are some differences in the percentages and frequency ordering for some of the letters. 
+
+
+As we can see there are some differences in the percentages and frequency ordering for some of the letters. 
 
 ## Conclusion
 This entire exploration into letter frequencies in Macedonian was quite an adventure. I got to create and make use of a small scrapper that actually accomplished its goal fully and got all the data. I also had an interesting discussion regarding the different way to calculate the frequencies, either word or text. 
@@ -303,41 +337,39 @@ I feel the text approach is realistically better for letter frequency usage. And
 
 Finally a comparison of the frequencies based on both text and words in one single table: 
 
-**The text based frequencies have been removed because of discussion regarding publishing rights**
-
-|Letter   | Letter Word Based Frequency    | 
+|Letter   | Letter Word Based Frequency    | Text Corpus Based Frequency (contributed - see end of post)    |
 |---|---|
-| а |  12.59% |
-| е |  9.02%  |
-| и |  8.95%  |
-| о |  7.67%  |
-| р |  7.34%  |
-| н |  6.64%  |
-| т |  5.42%  |
-| с |  5.2%   |
-| к |  4.58%  |
-| л |  4.02%  |
-| в |  3.96%  |
-| п |  3.72%  |
-| у |  3.08%  |
-| д |  2.69%  |
-| м |  2.38%  |
-| з |  2.17%  |
-| б |  1.64%  |
-| ч |  1.59%  |
-| г |  1.42%  |
-| ц |  1.22%  |
-| ј |  1.2%   |
-| ш |  1.1%   |
-| ж |  0.58%  |
-| ф |  0.57%  |
-| њ |  0.56%  |
-| х |  0.26%  |
-| џ |  0.15%  |
-| ќ |  0.12%  |
-| ѓ |  0.08%  |
-| љ |  0.06%  |
-| ѕ |  0.05%  |
+| а |  12.59% |  13.66 %|
+| е |  9.02%  | 9.91 %|
+| и |  8.95%  | 8.32 %|
+| о |  7.67%  |10.63 %|
+| р |  7.34%  | 4.37 %|
+| н |  6.64%  |  6.47 %|
+| т |  5.42%  |7.06 %|
+| с |  5.2%   | 4.79 %|
+| к |  4.58%  | 3.82 %|
+| л |  4.02%  | 2.88 %|
+| в |  3.96%  |4.27 %|
+| п |  3.72%  |2.64 %|
+| у |  3.08%  | 2.38 %|
+| д |  2.69%  | 3.95 %|
+| м |  2.38%  |2.93 %|
+| з |  2.17%  | 1.72 %|
+| б |  1.64%  |  1.54 %|
+| ч |  1.59%  |1.04 %|
+| г |  1.42%  |1.9 %|
+| ц |  1.22%  | 0.62 %|
+| ј |  1.2%   | 1.67 %|
+| ш |  1.1%   | 1.6 %|
+| ж |  0.58%  | 0.58 %|
+| ф |  0.57%  |0.24 %|
+| њ |  0.56%  | 0.28 %|
+| х |  0.26%  | 0.12 %|
+| џ |  0.15%  |0.04 %|
+| ќ |  0.12%  | 0.41 %|
+| ѓ |  0.08%  |  0.12 %|
+| љ |  0.06%  |0.03 %|
+| ѕ |  0.05%  |  0.02 %|
 
 
 Hope someone finds this useful and if people look for letter frequencies they
@@ -351,8 +383,6 @@ have done to collect and display all the information about the words.
 
 They also provided me with the information about the frequencies calculated from the text, which is 
 awesome!
-
-**UPDATE: Today I recieved an email regarding the publishing rights for the frequencies. Things are not quite clear so the text based calculations have been removed**
 
 They can be found here and everyone should check out the work:
 
