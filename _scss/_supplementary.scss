@@ -62,9 +62,7 @@ a {
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
-    color: $color_link
-      ;
-    text-decoration:underline;
+    color: $color_link;
   }
 }
 
