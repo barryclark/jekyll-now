@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Apps for elementary
-permalink: /apps/
+permalink: /apps-old/
 ---
 
 Name | Info | Developer
