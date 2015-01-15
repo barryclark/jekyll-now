@@ -1,0 +1,57 @@
+
+{
+    "timeline":
+    {
+        "headline":"Chad (Chungil) Chae Timeline",
+        "type":"default",
+		"text":"Timeline",
+		"startDate":"2013,1,23",
+        "date": [
+            {
+                "startDate":"2012,8,1",
+				"headline":"Ph.D Program",
+                "text":"<p>Workforce Educaiton and Development</p>",
+                "asset":
+                {
+                    "media":"http://www.flickr.com/photos/92285646@N06/8384550041/",
+                    "credit":"Chad",
+                    "caption":"WFED Class"
+                }
+            },
+            {
+                "startDate":"2008,8,1",
+                "headline":"Master Degree",
+                "text":"<p>Major in Human Resource Development at Indiana State University</p>",
+                "asset":
+                {
+                    "media":"http://www.flickr.com/photos/92285646@N06/8385634282/",
+                    "credit":"Graduation",
+                    "caption":"Chad"
+                }
+            },
+			{
+                "startDate":"2007,3,1",
+                "headline":"ESL Course",
+                "text":"Interlink",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+            },
+			{
+                "startDate":"1998,3,1",
+                "headline":"Bacholar Degree",
+                "text":"Chung-Ang University, major in business",
+                "asset":
+                {
+                    "media":"http://cau.ac.kr",
+                    "credit":"",
+                    "caption":"chung-ang university"
+                }
+            },
+			}
+        ]
+    }
+}
