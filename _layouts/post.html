@@ -3,15 +3,18 @@ layout: default
 ---
 
 <article class="post">
-  <h1>{{ page.title }}</h1>
 
+  <h3><img class="package-icon" src="{{ page.icon }}" />{{ page.title }}</h3>
+<img class="package-screenshot" src="{{ page.screenshot }}" >
   <div class="entry">
     {{ content }}
   </div>
 
   <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
+    {{ page.posted }} Written on {{ page.date | date_to_string }}
   </div>
 
   {% include disqus.html disqus_identifier=page.disqus_identifier %}
+  <div class="post-rule-hr"></div>
+  <p class="package-detail"> Version:{{ page.version }} | Developer:{{ page.developer }} | Category:{{ page.category }}</p>
 </article>

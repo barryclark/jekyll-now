@@ -152,6 +152,7 @@ img {
 
 .wrapper-masthead {
   margin-bottom: 50px;
+  background-image: url("/assets/black-Linen_@2X.png");
 }
 
 .masthead {
@@ -192,7 +193,7 @@ img {
 
 .site-name {
   margin: 0;
-  color: $darkGray;
+  color: $white;
   cursor: pointer;
   font-family: $helveticaNeue;
   font-weight: 300;
@@ -202,7 +203,7 @@ img {
 
 .site-description {
   margin: -5px 0 0 0;
-  color: $gray;
+  color: $orange;
   font-size: 16px;
 
   @include mobile {
@@ -225,7 +226,7 @@ nav {
 
   a {
     margin-left: 20px;
-    color: $darkGray;
+    color: $blue;
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
@@ -249,6 +250,48 @@ nav {
 .posts > .post:last-child {
   padding-bottom: 1em;
   border-bottom: none;
+}
+
+.package-header{
+  display: block;
+  margin-left:auto;
+  margin-right:auto;
+  width: auto;
+  text-align: center;
+}
+
+.package-icon{
+  width: 64px;
+  height: 64px;
+  
+  vertical-align: middle;
+  margin-right: 20px;
+}
+.package-detail{
+  color:$red;
+  margin-left:auto;
+  margin-right:auto;
+  width: auto;
+  text-align: center;
+
+}
+
+.package-screenshot{
+  display: block;
+  margin-left:auto;
+  margin-right:auto;
+  width: auto;
+  height: 320px;
+  margin-bottom: 30px;
+}
+
+.post-rule-hr{
+  border-top: 2px groove #000;
+  color: #fff;
+  background-color: #fff;
+  height: 1px;
+  width:100%;
+
 }
 
 .post {

@@ -1,10 +1,11 @@
 ---
 layout: post
-title: You're up and running!
+title: Audio Recorder
+developer: Elias Limneos
+version: 0.7-18k
+category: Tweak
+posted: admin
+icon: /assets/icons/audiorecorder.png
+screenshot: /assets/screenshot/audiorecorder.png
 ---
-
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below :point_down:).
-
-![_config.yml]({{ site.baseurl }}/images/config.png)
-
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
+iOS 7 နဲ႕ 8 ကို အသံုးျပဳတဲ့ ဖုန္းေတြအတြက္ Call Recorder ဖုန္းအသံဖမ္းတဲ့ ေဆာ့၀ဲေလးပါ။ iPhone 4S ကေန စျပီးေတာ့ 5/5S/5C/6/6 Plus အထိသံုးလို႕ရပါတယ္။ (*** မွတ္ခ်က္။ iPhone 4S မွာသံုးမယ္ဆိုရင္ အသံဖမ္းဖို႕အတြက္ စပီကာ ဖြင့္ေျပာေပးရပါတယ္။ )

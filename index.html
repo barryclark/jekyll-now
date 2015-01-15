@@ -4,15 +4,20 @@ layout: default
 
 <div class="posts">
   {% for post in site.posts %}
-    <article class="post">    
-      
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+    <article class="post">
+	      <h3 class="package-header"><img class="package-icon" src="{{ post.icon }}" /><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
+	      <p class="package-detail"> Version:{{ post.version }} | Developer:{{ post.developer }} | Category:{{ post.category }} | PostedBy:{{ post.posted }}@{{ post.date | date_to_string }}</p>
 
+
+      <!--img class="package-screenshot" src="{{ post.screenshot }}" /-->
       <div class="entry">
-        {{ post.content | truncatewords:40}}
+        {{ post.content | truncatewords:20}}
       </div>
       
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+      
+
+      <div class="post-rule-hr"></div>
     </article>
   {% endfor %}
 </div>
