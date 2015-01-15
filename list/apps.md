@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Apps for elementary
-permalink: /list/apps/
+permalink: /apps/
 ---
 
   <table class="overview tablesorter">
