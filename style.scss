@@ -4,7 +4,7 @@
 //
 // IMPORTS
 //
-
+@import url('http://mmwebfonts.comquas.com/fonts/?font=zawgyi');
 @import "_reset";
 @import "_variables";
 // Syntax highlighting @import is at the bottom of this file
@@ -15,6 +15,7 @@
 
 html {
   font-size: 100%;
+  font-family:Zawgyi-One;
 }
 
 body {
