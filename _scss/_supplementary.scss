@@ -135,6 +135,13 @@ th:last-child {
   background: $color_link;
 }
 
+.screenshots {
+  text-align: center;
+  img {
+    box-shadow: 0 10px 20px 10px rgba(0,0,0,.3); 
+  }
+}
+
 // Nicolas Gallagher's micro clearfix hack
 // http://nicolasgallagher.com/micro-clearfix-hack/
 .clearfix:before,

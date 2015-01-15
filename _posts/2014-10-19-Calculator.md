@@ -16,7 +16,7 @@ googleplus:
 repository: 'ppa:siasola/ppa'
 package: 'elementary-calculator'
 
-tech:
+tags:
   - GTK3
   - Vala
 ---

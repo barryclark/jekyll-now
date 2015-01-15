@@ -11,11 +11,10 @@ body.beta {
   background-image: url(http://elementaryos.org/img/nav-bg.png);
   background-position: center -30px;
   background-repeat: no-repeat;
-  background: #fff;
   font: 14px/1.5 $font_body;
   color: #B2BFBC; /*$color_body;*/
 
-  > {
+  > * {
     max-width: 960px;
     width: 100%;
     margin: 20px auto;
@@ -184,6 +183,13 @@ body.beta {
 
       .comments {
         margin-top: 10px;
+      }
+      
+      .screenshots {
+        text-align: center;
+        img {
+          box-shadow: 0 10px 20px 10px rgba(0,0,0,.3); 
+        }
       }
     }
 

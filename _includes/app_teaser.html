@@ -1,3 +1,12 @@
+{% if post.screenshots %}
+  <div class="screenshots">
+  {% for screenshot in post.screenshots %}
+    <img src="{{ site.baseurl }}images/{{ screenshot }}" alt="Screenshot of {{ post.title }}" />
+  {% endfor %}
+  </div>
+{% endif %}
+  
+  
 {% if post.description %}
   <blockquote>{{ post.description }}</blockquote>
 {% endif %}
