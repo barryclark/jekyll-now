@@ -138,7 +138,9 @@ th:last-child {
 .screenshots {
   text-align: center;
   img {
-    box-shadow: 0 10px 20px 10px rgba(0,0,0,.3); 
+    border-top-left-radius: 6px; /* not perfect, but hides that I cut the window borders badly */
+    border-top-right-radius: 6px;
+    box-shadow: 0 10px 50px 5px rgba(0, 0, 0, 0.5);  
   }
 }
 
