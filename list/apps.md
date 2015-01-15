@@ -4,7 +4,7 @@ title: Apps for elementary
 permalink: /list/apps/
 ---
 
-  <table class="overview">
+  <table class="overview tablesorter">
     <thead>
       <tr>
         <th>Name</th>
