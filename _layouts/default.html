@@ -34,6 +34,7 @@
           <nav>
             <a href="{{ site.baseurl }}/">Blog</a>
             <a href="{{ site.baseurl }}/about">About</a>
+            <a href="{{ site.baseurl }}/cv">Curriculum Vitae</a>
           </nav>
         </header>
       </div>
@@ -42,7 +43,11 @@
     <div id="main" role="main" class="container">
       {{ content }}
     </div>
-
+<ul class="nav nav-tabs">
+  {% assign pages_list = site.weighted_pages %}
+  {% assign group = 'navigation' %}
+  {% include pages_list %}
+</ul>
     <div class="wrapper-footer">
       <div class="container">
         <footer class="footer">
