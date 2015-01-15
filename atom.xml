@@ -1,0 +1,24 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>Chad (Chungil Chae)</title>
+<link href="http://http://chadchae.github.io/atom.xml" rel="self"/>
+<link href="http://chadchae.github.io/"/>
+<updated>{{ site.time | date_to_xmlschema }}</updated>
+<id>http://chadchae.github.io/</id>
+<author>
+<name>Chad (Chungil Chae)</name>
+<email>chadchae@gmail.com</email>
+</author>
+{% for post in site.posts %}
+<entry>
+<title>{{ post.title }}</title>
+<link href="http://chadchae.github.io/{{ post.url }}"/>
+<updated>{{ post.date | date_to_xmlschema }}</updated>
+<id>http://chadchae.github.io/{{ post.id }}</id>
+<content type="html">{{ post.content | xml_escape }}</content>
+</entry>
+{% endfor %}
+</feed>
