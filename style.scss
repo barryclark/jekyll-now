@@ -159,7 +159,7 @@ img {
   border-bottom: 1px solid $lightGray;
 
   @include mobile {
-    text-align: center;
+    text-align: left;
   }
 }
 
@@ -280,7 +280,7 @@ nav {
 
 footer {
   padding: 20px 0;
-  text-align: center;
+  text-align: left;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
@@ -305,7 +305,7 @@ body {
 background-color: white;
 font: 13.34px helvetica, arial, clean, sans-serif;
 *font-size: small;
-text-align: center;
+text-align: left;
 }
 h1, h2, h3, h4, h5, h6 {
 font-size: 100%;
