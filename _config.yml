@@ -9,18 +9,18 @@ permalink:           pretty
 relative_permalinks: true
 
 # Setup
-title:               Chad (Chungil Chae)
-tagline:             'chad'
-description:         'A reserved <a href="http://chadchae.github.io" target="_blank">Chad</a> Workforce Data Analysis. Made by <a href="https://twitter.com/chadchae" target="_blank">@chadchae</a>.'
-url:                 http://chadchae.github.io
+title:               Lanyon
+tagline:             'A Jekyll theme'
+description:         'A reserved <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
+url:                 http://lanyon.getpoole.com
 baseurl:             /
-paginate:            10
+paginate:            5
 
 # About/contact
 author:
-  name:              Chad (Chungil Chae)
-  url:               https://twitter.com/chadchae
-  email:             chadchae@gmail.com
+  name:              Mark Otto
+  url:               https://twitter.com/mdo
+  email:             markdotto@gmail.com
 
 # Custom vars
 version:             1.0.0
