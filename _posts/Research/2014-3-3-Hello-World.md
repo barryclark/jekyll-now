@@ -1,6 +1,5 @@
 ---
 layout: post
-category: Research
 title: You're up and running!
 ---
 
