@@ -4,7 +4,7 @@ layout: default
 
 <div class="post">
   <h1 class="post-title">{{ page.title }}</h1>
-  <span class="post-date">{{ page.date | date_to_string }}</span>
+  <span class="post-date">{{ page.date | date_to_string | category }}</span>
   {{ content }}
 </div>
 
@@ -16,7 +16,7 @@ layout: default
         <h3>
           <a href="{{ site.baseurl }}{{ post.url }}">
             {{ post.title }}
-            <small>{{ post.date | date_to_string }}</small>
+            <small>{{ post.date | date_to_string | category}}</small>
           </a>
         </h3>
       </li>
