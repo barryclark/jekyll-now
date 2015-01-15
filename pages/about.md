@@ -8,7 +8,7 @@ A ressource for 3rd party software designed for [elementary (OS)](http://element
 
 Started at [/r/elementaryos](http://www.reddit.com/r/elementaryos/comments/2r0xey/third_party_development_and_apps/), [with](http://madeforelementary.tumblr.com/) [some](https://github.com/PerfectCarl/elementary-apps) [inspiration](https://github.com/elementary-fr/ideas).
 
-*This is not a blog.* 
+*This is not a blog. Powered by Jekyll Now & Github Pages.* 
 
 ## Blogroll
 
