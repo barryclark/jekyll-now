@@ -19,9 +19,9 @@ avatar: https://avatars0.githubusercontent.com/u/3212140?v=3&s=40
 footer-links:
   dribbble: 
   email: chadchae@gmail.com
-  facebook: 
+  facebook: https://www.facebook.com/chadchae
   flickr: 
-  github: chadchae/
+  github: https://github.com/chadchae
   instagram: 
   linkedin: 
   pinterest: 
@@ -30,10 +30,10 @@ footer-links:
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
 
 # Your disqus shortname, entering this will enable commenting on posts
-disqus: 
+disqus: Chad
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics: 
+google_analytics: UA-58560051-1
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
@@ -43,7 +43,7 @@ url: http://chadchae.github.io/
 # (http://yourusername.github.io/repository-name)
 # and NOT your User repository (http://yourusername.github.io)
 # then add in the baseurl here, like this: "/repository-name"
-baseurl: "/chadchae"
+baseurl: ""
 
 #
 # !! You don't need to change any of the configuration flags below !!
