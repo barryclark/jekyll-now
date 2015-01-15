@@ -1,0 +1,60 @@
+a {color:#B2BFBC;}
+
+body {
+  background-color: #232C2F;
+  background-image: url(http://elementaryos.org/img/nav-bg.png);
+  background-position: center -30px;
+  background-repeat: no-repeat;
+  color: #B2BFBC;
+
+  > header {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #424C50 #313C3F #2A2F31 #313C3F;
+    box-shadow: #10170A 0px 0px 0px 1px;
+    background-image: linear-gradient(#283237 0%, #1F2527 100%);
+    margin: 20px auto;
+    width: 960px;
+    border-radius: 5px;
+    
+    
+    font-size:14px !important;
+    
+    > nav {
+      
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      float: none;
+      height: 48px;
+      line-height: 34px;
+      
+      a {
+        color: #B2BFBC;
+        text-shadow: 0 1px 0 #10170A;
+        align-items: center;
+        height: 48px;
+        line-height: 34px;
+      }
+      
+      a:after:not(:last-child) {
+        background-color: rgba(0, 0, 0, 0);
+        background-image: linear-gradient(
+          rgba(16,23,10,0) 0%, 
+          rgba(16,23,10,1) 50%, 
+          rgba(16,23,10,0) 100%
+        );
+        background-origin: padding-box;
+        background-size: auto;
+        box-shadow: #FFF 1px 0px 0px 0px;
+        content: " ";
+        font-size: 0;
+        display: block;
+        height: 48px;
+        width: 1px;
+      }
+      
+    }
+  }
+  
+}

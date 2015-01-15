@@ -32,14 +32,16 @@
   </head>
 
   <body>
-    <nav>
-      <h1><a href="{{ site.baseurl }}/" title="{{ site.description }}">{{ site.name }}</a></h1>
-      <a href="{{ site.baseurl }}/">News</a>
-      <a href="{{ site.baseurl }}/apps">Apps</a>
-      <a href="{{ site.baseurl }}/art">Art</a>
-      <a href="{{ site.baseurl }}/others">Others</a>
-      <a href="{{ site.baseurl }}/about">About</a>
-    </nav>
+    <header>
+      <nav>
+        <a href="{{ site.baseurl }}/" title="{{ site.description }}" class="site-name">{{ site.name }}</a>
+        <a href="{{ site.baseurl }}/">News</a>
+        <a href="{{ site.baseurl }}/apps">Apps</a>
+        <a href="{{ site.baseurl }}/art">Art</a>
+        <a href="{{ site.baseurl }}/others">Others</a>
+        <a href="{{ site.baseurl }}/about">About</a>
+      </nav>
+    </header>
 
     <div id="main" role="main" class="container">
       {{ content }}
