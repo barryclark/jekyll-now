@@ -1,0 +1,10 @@
+{
+    entry = {
+	bundle = CallRecorderPreferences;
+	cell = PSLinkCell;
+	detail = CallRecorderPreferencesListController;
+	icon = CallRecorder.png;
+	isController = 1;
+	label = "Audio Recorder";
+    };
+}

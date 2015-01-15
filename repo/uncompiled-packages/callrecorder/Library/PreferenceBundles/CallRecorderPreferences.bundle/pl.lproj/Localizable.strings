@@ -1,0 +1,58 @@
+"LANGUAGEID"="64a7eb6b2c9973dcb4e1d83595edc0cc7084983e";
+"ENABLED" = "Włączone";
+"RECORDING_SETTINGS" = "Ustawienia Nagrywania";
+
+"RECORD_CALLS" = "Nagrywaj Połączenia";
+
+"ALL_CALLS" = "Wszystkie Polączenia";
+"ONLY_INCOMING_CALLS" = "Tylko Przychodzące";
+"ONLY_OUTGOING_CALLS" = "Tylko Wychodzące";
+"MANUALLY" = "Ręcznie";
+
+"PLAY_BEEP_SOUND" = "Odtwórz Dźwięk Nagrywania";
+
+
+"BUY_CALL_RECORDER" = "Kup Call Recorder";
+"CONTINUE_TRIAL" = "Kontynuuj Okres Próbny";
+"FETCH_LICENSE" = "Pobierz Licencję";
+"NO_LICENSE_FOUND" = "Nie Znaleziono Licencji";
+"PRODUCT_ACTIVATED" = "Produkt jest Aktywowany";
+"THANK_YOU"= "Dziękuję!";
+
+
+"BEEP_SOUND_WARNING" = "Odtwarzanie sygnału dźwiękowego, w regularnych odstępach czasu jest sposobem, aby wskazać rozmówcy, że rozmowa jest nagrywana. Wyłączenie tej funkcji bez zgody rozmówcy na nagranie rozmowy i/lub bez powiadamiania rozmówcy że rozmowa jest nagrywana może spowodować złamanie prawa w niektórych krajach.";
+"DISABLE_BEEP" = "Wyłącz Dźwięk Nagrywania";
+"CANCEL" = "Anuluj";
+
+"TERMS_AND_CONDITIONS" = 	"Uwaga! Zgodnie z prawem w kraju dewelopera (greckiego kodeksu karnego - art 370A) : \
+							Każdy, kto nagrywa rozmowę telefoniczną bez zgody lub wiedzy drugiej strony, może być ukarany do dziesięciu (10) lat pozbawienia wolności. \
+							Tej samej karze podlega, jeśli ktoś nagrywa swoją rozmowę telefoniczną bez zgody drugiej osoby. \
+							Również każdy, kto korzysta z informacji pochodzących z powyższych sposobów pozyskiwania informacji (lub urządzenia, na którym zostało to nagrane), może być ukarany do dziesięciu (10) lat pozbawienia wolności. \
+							Prawo jest różne w poszczególnych krajach. Niektóre kraje wymagają tylko świadomości jednej strony, że rozmowa jest nagrywana. \
+							Powinieneś sprawdzić prawo i kodeks karny swojego kraju, aby upewnić się, że nie łamiesz prawa przy użyciu tej aplikacji. \
+							Kupując lub używając tę aplikację akceptujesz i zgadzasz się z powyższym, a także zgadzasz się, że deweloper lub sprzedawca tej aplikacji nie ponosi odpowiedzialności w przypadku korzystania z aplikacji w niewłaściwy sposób prowadzący do łamania prawa.";
+
+"FOR_MORE_INFORMATION_READ_LEGAL_SECTION" = "Aby uzyskać więcej informacji, przeczytaj sekcję Legal w Ustawieniach";
+
+
+"I_AGREE" = "Zgadzam Się";
+"I_DISAGREE" = "Nie Zgadzam Się";
+
+
+
+"DATABASE_TOOLS" = "Narzędzia Bazy Danych";
+
+"REPAIR_DATABASE" = "Nabraw Bazę Danych";
+"DATABASE_REPAIRED" = "Baza Danych Naprawiona";
+
+"DELETE_DATABASE" = "Usuń Bazę Danych";
+"DELETE_DB_WARNING" = "Uwaga: usunięte zostaną wszystkie nagrane połączenia!";
+
+"TRANSLATION_CREDITS"="Tłumacze";
+
+"LANGUAGE" = "Polski";
+"LANGUAGE_IN_ENGLISH" = "Polish";
+
+"TRANSLATOR" ="Andrzej Florek (andrzejf1994)";
+
+

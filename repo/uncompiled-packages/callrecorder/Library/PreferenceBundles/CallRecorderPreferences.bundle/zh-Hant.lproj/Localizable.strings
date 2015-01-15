@@ -1,0 +1,50 @@
+"LANGUAGEID"="ae2e13591682806c62c9f46e41691275b59124c3";
+"ENABLED" = "啟用";
+"RECORDING_SETTINGS" = "錄音設定";
+
+"RECORD_CALLS" = "通話錄音";
+
+"ALL_CALLS" = "所有通話";
+"ONLY_INCOMING_CALLS" = "只有來電";
+"ONLY_OUTGOING_CALLS" = "只有去電";
+"MANUALLY" = "手動";
+
+"PLAY_BEEP_SOUND" = "播放嗶嗶聲";
+
+
+"BUY_CALL_RECORDER" = "購買 Call Recorder";
+"CONTINUE_TRIAL" = "繼續試用";
+"FETCH_LICENSE" = "取得授權";
+"NO_LICENSE_FOUND" = "沒有發現授權";
+"PRODUCT_ACTIVATED" = "產品已經啟用";
+"THANK_YOU"= "謝謝！";
+
+
+"BEEP_SOUND_WARNING" = "規律地播放嗶嗶聲可提醒對方該通話正被錄音中。若未取得對方同意即停用這個設定以進行通話錄音，且未告知對方該通話正被錄音中，在某些國家是違法的。";
+"DISABLE_BEEP" = "停用嗶嗶聲";
+"CANCEL" = "取消";
+
+"TERMS_AND_CONDITIONS" = 	"注意！根據開發者國家的法律(希臘刑法條文 370A) : 任何人未取得對方同意而進行第三方通話錄音將處以 10 年以下有期徒刑。任何人未取得對方同意而使用自己的電話進行通話錄音亦受到同樣的處罰。同樣地，任何人使用上述方法衍生的資訊（或上面已印記的裝置），將處以 10 年以下有期徒刑。國家間的法律有所不同。有些國家只要求其中一位通話方知道通話正被錄音即可。您應該確認貴國法條及刑法條文以確保您能合法地使用本軟體。在您購買或使用本軟體時，您已接受並同意上述聲明，並同意本軟體開發者或販售者，在您非法使用本軟體時，不負任何法律責任。";
+
+"FOR_MORE_INFORMATION_READ_LEGAL_SECTION" = "請閱讀設定中的法律部分以取得更多資訊";
+
+
+"I_AGREE" = "我同意";
+"I_DISAGREE" = "我不同意";
+
+
+
+"DATABASE_TOOLS" = "資料庫工具";
+
+"REPAIR_DATABASE" = "修理資料庫";
+"DATABASE_REPAIRED" = "資料庫已修理完成";
+
+"DELETE_DATABASE" = "刪除資料庫";
+"DELETE_DB_WARNING" = "警告：這會刪除所有已錄音的通話！";
+
+"TRANSLATION_CREDITS"="翻譯";
+
+"LANGUAGE" = "繁體中文";
+"LANGUAGE_IN_ENGLISH" = "Traditional Chinese";
+
+"TRANSLATOR" = "@Commandor";

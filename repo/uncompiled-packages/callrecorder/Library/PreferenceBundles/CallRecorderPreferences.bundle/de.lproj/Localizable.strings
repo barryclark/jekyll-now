@@ -1,0 +1,50 @@
+"LANGUAGEID"="89019bbf4c9ea7b57073c618568d9853b0f32ae7";
+
+"ENABLED" = "Aktiviert";
+"RECORDING_SETTINGS" = "Aufnahme Einstellungen";
+
+"RECORD_CALLS" = "Anruf Aufnahme";
+
+"ALL_CALLS" = "Alle Anrufe";
+"ONLY_INCOMING_CALLS" = "Nur Eingehende";
+"ONLY_OUTGOING_CALLS" = "Nur Ausgehende";
+"MANUALLY" = "Manuell";
+
+"PLAY_BEEP_SOUND" = "Spiele Ton";
+
+"BUY_CALL_RECORDER" = "Kaufe Call Recorder";
+"CONTINUE_TRIAL" = "Probe fortsetzen";
+"FETCH_LICENSE" = "Lizenz kaufen";
+"NO_LICENSE_FOUND" = "Keine Lizenz gefunden";
+"PRODUCT_ACTIVATED" = "Produkt aktiviert";
+"THANK_YOU"= "Danke!";
+
+
+"BEEP_SOUND_WARNING" = "Spielt einen Ton in einem regelmäßigen Abstand, um den Partner darauf Aufmerksam zu machen, dass der Anruf aufgenommen wird. Eine Deaktivierung dieser Funktion und damit die angerufene Person nicht darauf hinzuweisen, dass dieser Anruf aufgenommen wird, bedeutet in manchen Ländern eine Straftat.";
+"DISABLE_BEEP" = "Ton deaktivieren";
+"CANCEL" = "Abbrechen";
+
+"TERMS_AND_CONDITIONS" = 	"Achtung! Nach dem Gesetz im Lande des Entwicklers (Griechischer Penal Code - Artikel 370A) : Jeder, der einen Anruf eines Dritten ohne die Zustimmung der Person aufnimmt, kann bis zu 10 Jahre Gefängnis verurteilt werden. Die gleiche Strafe trifft den, der sein eigenes Telefon Gespräch mit einer anderen Person aufnimmt, ohne dessen Einverständnis. Jeder der die oben genannten Informationen missbraucht, kann ebenfalls zu 10 Jahren Gefängnis verurteilt werden. Die Gesetze sind in verschiedenen Ländern unterschiedlich. In manchen Ländern reicht es, dass eine Person Bescheid weiß. Du solltest die Gesetze deines Landes überprüfen, um sicherzugehen, dass du nicht das Gesetz brichst. Mit dem Kauf oder der Benutzung dieser App, akzeptierst du die oben genannten Vorraussetzungen und willigst ein, dass der Entwickler für jegliche Vergehen nicht verantwortlich gemacht werden kann.";
+
+"FOR_MORE_INFORMATION_READ_LEGAL_SECTION" = "Für weitere Informationen, lesen sie den Abschnitt, rechtliche Informationen ";
+
+
+"I_AGREE" = "Ja";
+"I_DISAGREE" = "Nein";
+
+
+
+"DATABASE_TOOLS" = "Datenbank Hilfsmittel";
+
+"REPAIR_DATABASE" = "Datenbank reparieren";
+"DATABASE_REPAIRED" = "Datenbank repariert";
+
+"DELETE_DATABASE" = "Datenbank löschen";
+"DELETE_DB_WARNING" = "Warnung: Dadurch werden alle aufgenommenen Anrufe gelöscht!";
+
+"TRANSLATION_CREDITS"="Übersetzer";
+
+"LANGUAGE" = "Deutsch";
+"LANGUAGE_IN_ENGLISH" = "German";
+
+"TRANSLATOR" = "Nils";

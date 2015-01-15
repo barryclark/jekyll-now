@@ -1,0 +1,49 @@
+"LANGUAGEID"="384b005525299d4d7c48242e35ed9e6ba5a66c76";
+"ENABLED" = "사용";
+"RECORDING_SETTINGS" = "녹음 설정";
+
+"RECORD_CALLS" = "통화 녹음";
+
+"ALL_CALLS" = "모든 전화";
+"ONLY_INCOMING_CALLS" = "받는 전화만";
+"ONLY_OUTGOING_CALLS" = "발신 전화만";
+"MANUALLY" = "수동 선택";
+
+"PLAY_BEEP_SOUND" = "상대방에게 통화 중 녹음 알림";
+
+
+"BUY_CALL_RECORDER" = "Call Recorder 구입";
+"CONTINUE_TRIAL" = "체험판 계속하기";
+"FETCH_LICENSE" = "라이센스 가져오기";
+"NO_LICENSE_FOUND" = "라이센스가 없습니다";
+"PRODUCT_ACTIVATED" = "이 제품은 활성화되었습니다";
+"THANK_YOU"= "감사합니다";
+
+
+"BEEP_SOUND_WARNING" = "주기적으로 나는 삑 소리는 상대방에게 통화가 녹음중이라는 것을 알려줍니다. 상대방에게 통화가 녹음중이라는 것을 알리지 않거나 상대방의 허용없이 삑 소리를 비활성화하는 것은 몇몇 국가에서 불법행위에 해당할 수 있습니다.";
+"DISABLE_BEEP" = "삑 소리 비활성화";
+"CANCEL" = "취소";
+
+"TERMS_AND_CONDITIONS" = 	"경고! 개발자의 국가의 법에 따르면 (그리스 형법- 370조 A) : 상대방의 동의없이 제 3자간의 통화를 녹음하는 것은 10년 이하의 징역에 처해질 수 있습니다. 상대방의 동의없이 자신의 통화를 녹음하였을 경우에도 동일한 처벌이 적용됩니다. 한, 위의 방식에 의해 취득한 정보를 사용하는 경우 10년 이하의 징역에 처해질 수 있습니다.규제는 국가마다 다릅니다. 어느 나라에서는 통화 중 일방만이 통화가 녹음되고 있다는 것을 인지하면 무방한 경우도 있습니다. 	사용자는 본인의 국가의 관련 법규를 확인하여 본인이 본 어플리케이션을 사용함으로써 법률을 위반하지 않는 것을 확인하여야 합니다. 사용자는 본인이 본 어플리케이션을 구매하거나 사용함으로써 본인이 본 어플리케이션을 사용함으로 발생하는 위법행위에 대한 어떠한 책임도 해당 개발자에게 있지 아니함을 동의한 것으로 간주됩니다.";
+"FOR_MORE_INFORMATION_READ_LEGAL_SECTION" = "추가적인 정보를 윈하시면, 설정의 법적 공지 부분을 참조하십시오";
+
+
+"I_AGREE" = "동의합니다";
+"I_DISAGREE" = "동의하지 않습니다";
+
+
+
+"DATABASE_TOOLS" = "데이터베이스 도구";
+
+"REPAIR_DATABASE" = "데이터베이스 복구";
+"DATABASE_REPAIRED" = "데이터베이스 복구 완료";
+
+"DELETE_DATABASE" = "데이터베이스 삭제";
+"DELETE_DB_WARNING" = "경고! 해당 작업은 모든 녹음된 통화를 삭제합니다!";
+
+"TRANSLATION_CREDITS"="번역한 사람";
+
+"LANGUAGE" = "한국어";
+"LANGUAGE_IN_ENGLISH" = "Korean";
+"TRANSLATOR" = "Eom Sungchan";
+

@@ -1,0 +1,20 @@
+Origin: IT STAR Technology
+
+Label: IT STAR Technology
+
+Suite: stable
+
+Version: 0.1
+
+Codename: nasper
+
+Architectures: iphoneos-arm
+
+Components: main
+
+Description: Itstar4TECH's iOS Repo
+
+MD5Sum:
+8aedc14e891fca44e3fb5d73345b7833 1368 Packages
+c13bd7c806c55f327407f13ea7f843ac 825 Packages.gz
+c237be29797e6d44401e606333404c71 877 Packages.bz2

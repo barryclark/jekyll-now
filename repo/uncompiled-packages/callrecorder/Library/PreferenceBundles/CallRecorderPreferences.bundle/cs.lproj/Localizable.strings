@@ -1,0 +1,50 @@
+"LANGUAGEID"="7a88026736e9a0573d0ac7717015f5a6ab771d03";
+"ENABLED" = "Zapnuto";
+"RECORDING_SETTINGS" = "Možnosti nahrávání";
+
+"RECORD_CALLS" = "Nahrát hovory";
+
+"ALL_CALLS" = "Všechny hovory";
+"ONLY_INCOMING_CALLS" = "Pouze příchozí";
+"ONLY_OUTGOING_CALLS" = "Pouze odchozí";
+"MANUALLY" = "Ručně";
+
+"PLAY_BEEP_SOUND" = "Přehrát pípnutí";
+
+"BUY_CALL_RECORDER" = "Koupit Call Recorder";
+"CONTINUE_TRIAL" = "Pokračovat ve zkušební verzi";
+"FETCH_LICENSE" = "Stáhnout licenci";
+"NO_LICENSE_FOUND" = "Licence nebyla nalezena";
+"PRODUCT_ACTIVATED" = "Produkt je aktivován";
+"THANK_YOU"= "Děkuji!";
+
+
+"BEEP_SOUND_WARNING" = "Přehrání pípnutí v pravidelných intervalech je způsob, jak upozornit vzdálené stranu, že hovor je nahráván. Vypnutí tohoto nastavení bez souhlasu k nahrávání hovoru od vzdáleného strany a bez upozornění vzdálené strany, že je hovor nahráván, může mít za následek porušení práva v některých zemích.";
+
+"DISABLE_BEEP" = "Vypnout pípnutí";
+"CANCEL" = "Zrušit";
+
+"TERMS_AND_CONDITIONS" = "Pozor! Podle zákona v zemi autora (Řecký trestní zákoník - článek 370A): Každý, kdo zaznamenává telefonní rozhovor třetí strany BEZ jejího souhlasu, může být potrestán odnětím svobody až na deset (10) let. Stejný postih platí v případě záznamu vlastního telefonického rozhovoru s jinou osobou BEZ jejího souhlasu. Každý, kdo použije informace získané výše uvedenými způsoby (nebo zařízení, na kterém byl rozhovor nahrán), může být potrestán odnětím svobody až na deset (10) let. Zákon se v každé zemi liší. Některé země vyžadují uvědomění o nahrávání hovoru pouze jednoho účastníka rozhovoru. Zkontrolujte právo a trestní zákoník ve Vaší zemi a ujistěte se, že používáním této aplikace neporušujete zákon . Nákupem nebo použitím této aplikace  přijmáte a souhlasíte s výše uvedeným a rovněž souhlasíte s tím, že autor nebo prodejce této aplikace nenese žádnou odpovědnost, dojde-li používáním aplikace k porušení zákona.";
+							
+"FOR_MORE_INFORMATION_READ_LEGAL_SECTION" = "Pro více informací si přečtěte Právní sekci v Nastavení";
+
+"I_AGREE" = "Souhlasím";
+"I_DISAGREE" = "Nesouhlasím";
+
+
+"DATABASE_TOOLS" = "Správa databáze";
+
+"REPAIR_DATABASE" = "Opravit databázi";
+"DATABASE_REPAIRED" = "Databáze opravena";
+
+"DELETE_DATABASE" = "Smazat databázi";
+"DELETE_DB_WARNING" = "Pozor: Tímto smažete všechny nahrané hovory!";
+
+"TRANSLATION_CREDITS"="Překlad";
+
+"LANGUAGE" = "Česky";
+"LANGUAGE_IN_ENGLISH" = "Czech";
+
+"TRANSLATOR" = "Michal Vymazal";
+
+// translated by Michal Vymazal

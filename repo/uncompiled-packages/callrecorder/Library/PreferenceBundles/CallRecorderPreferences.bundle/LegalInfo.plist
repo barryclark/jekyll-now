@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>entry</key>
+	<dict>
+		<key>cell</key>
+		<string>PSLinkCell</string>
+		<key>icon</key>
+		<string>CallRecorder.png</string>
+		<key>label</key>
+		<string>Audio Recorder</string>
+	</dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+		</dict>
+
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Legal</string>
+			<key>id</key>
+			<string>LEGAL</string>
+			
+		</dict>	
+	
+	
+		<dict>
+			<key>cell</key>
+			<string>PSGiantCell</string>
+			<key>id</key>
+			<string>FULL_TEXT_IN_ENGLISH</string>
+		</dict>
+		
+		
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Terms and Conditions</string>
+			<key>id</key>
+			<string>TERMS_TEXT</string>
+			
+		</dict>	
+	
+	
+		<dict>
+			<key>cell</key>
+			<string>PSTitleCell</string>
+			<key>id</key>
+			<string>TERMS_AND_CONDITIONS</string>
+		</dict>
+
+		
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>More Info</string>			
+		</dict>	
+	
+	
+		<dict>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Google Search</string>
+			<key>action</key>
+			<string>googleSearch</string>
+		</dict>
+
+
+	</array>
+</dict>
+</plist>

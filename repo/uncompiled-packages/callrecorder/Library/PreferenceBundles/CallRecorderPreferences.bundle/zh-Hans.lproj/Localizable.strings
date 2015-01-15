@@ -1,0 +1,49 @@
+"LANGUAGEID"="4872d7c280a7906648d5592158966367dc61a220";
+"ENABLED" = "启用";
+"RECORDING_SETTINGS" = "录音设置";
+
+"RECORD_CALLS" = "通话录音";
+
+"ALL_CALLS" = "全部通话";
+"ONLY_INCOMING_CALLS" = "仅呼入电话";
+"ONLY_OUTGOING_CALLS" = "仅呼出电话";
+"MANUALLY" = "手动";
+
+"PLAY_BEEP_SOUND" = "播放提示音";  
+
+
+"BUY_CALL_RECORDER" = "购买 Call Recorder";  
+"CONTINUE_TRIAL" = "继续试用";  
+"FETCH_LICENSE" = "获取授权";  
+"NO_LICENSE_FOUND" = "未找到授权";
+"PRODUCT_ACTIVATED" = "产品已激活";
+"THANK_YOU"= "谢谢您！";
+
+
+"BEEP_SOUND_WARNING" = "播放提示音是为了告知通话另一方该通话正在被录音。在未经对方同意的情况下禁用此提示音或未告知对方通话正在被录音在某些国家是违法行为。";
+"DISABLE_BEEP" = "禁用提示音";
+"CANCEL" = "取消";
+
+"TERMS_AND_CONDITIONS" = "注意：根据开发者国家法律（希腊刑法 370A 号）规定：未经对方允许录音通话内容，最高可被判处十年监禁。同样处罚亦适用于仅录音自己的通话内容而未获得通话另一方的同意。此外，任何从以上方式或录音设备获取任何信息的行为，都可能导致最高十年的监禁。不同国家法律规定可能不同。某些国家只要求通话一方知晓通话正在被录音。您需要检查当地法律法规以确保自己没有违法。购买和使用此应用程序表明您已接受并同意以上信息，并同意如果您自身因为使用该应用程序而触犯法律，该应用程序的开发者和销售商无需承担任何责任。";
+
+"FOR_MORE_INFORMATION_READ_LEGAL_SECTION" = "请阅读设置中的法律声明以获取更多信息。";
+
+
+"I_AGREE" = "同意";  
+"I_DISAGREE" = "不同意";  
+
+
+
+"DATABASE_TOOLS" = "数据库工具";
+
+"REPAIR_DATABASE" = "修复数据库";
+"DATABASE_REPAIRED" = "数据库已修复";
+
+"DELETE_DATABASE" = "删除数据库";
+"DELETE_DB_WARNING" = "警告：该操作将会删除全部录音！";
+
+"TRANSLATION_CREDITS"="译者信息";
+
+"LANGUAGE" = "简体中文";  
+"LANGUAGE_IN_ENGLISH" = "Simplified Chinese";  
+"TRANSLATOR" = "Merlin Mao";

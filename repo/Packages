@@ -1,0 +1,32 @@
+Package: com.github.itstar4tech.callrecorder
+Version: 0.7-18k
+Architecture: iphoneos-arm
+Installed-Size: 1172
+Depends: mobilesubstrate (>= 0.9.5000), preferenceloader
+Filename: deb/callrecorder.deb
+Size: 397176
+MD5sum: 11d7750f17f3a119f5ab389a23504571
+SHA1: bcbca6e12f2882e1f8eb5122814315c2b74c8bda
+SHA256: 48e0f845e272a7ea06cf17f1abb72032a46b4f7a2a9fe3fa5b587a5b958b1c7d
+Section: Tweaks
+Description: iOS 8 နဲ႕ 7 မွာ အလုပ္လုပ္တဲ့ Call Recorder ေလးပါ။ iPhone 5/5S/5C/6 နဲ႕ 6 Plus ေတြမွာ အသံုးျပဳလို႕ရပါတယ္။ လိုင္စင္ပါ၀င္ျပီးသားပါ။
+Author: Elias Limneos
+Depiction: http://repo.xarold.com/depiction.php?id=callrecorder
+Icon: file:///Library/PreferenceBundles/CallRecorderPreferences.bundle/CallRecorder@2x.png
+Name: Audio Recorder
+
+Package: com.github.itstar4tech.ios8812sou-list
+Version: 1.0
+Architecture: iphoneos-arm
+Maintainer: IT STAR Technology
+Filename: deb/iOS8812Sources.deb
+Size: 26764
+MD5sum: e4db065ae5669837b6495e1e740ddbf1
+SHA1: 4eb7ae05b367e6ba2103d325914cb8f675ff4831
+SHA256: d9264b0cecea75227934983989ce771e34e797a151e7411fefd7258ebcbff5bc
+Section: Tweaks
+Description: iOS 7-8 Compatible Cydia Repo Sources Pack
+Author: Shein Myint Aung
+Icon: file:///etc/apt/ios8812sou@2x.png
+Name: iOS 8-8.1.2 Sources
+

@@ -1,0 +1,49 @@
+"LANGUAGEID"="981d79dc556ed1ab9dfb124f59e4a6b9478d651c";
+
+"ENABLED" = "Activé";
+"RECORDING_SETTINGS" = "Options d'enregistrement";
+
+"RECORD_CALLS" = "Enregistrer appels";
+
+"ALL_CALLS" = "Tous les appels";
+"ONLY_INCOMING_CALLS" = "Entrants uniquement";
+"ONLY_OUTGOING_CALLS" = "Sortants uniquement";
+"MANUALLY" = "Manuellement";
+
+"PLAY_BEEP_SOUND" = "Activer BIP enreg.";
+
+"BUY_CALL_RECORDER" = "Acheter Call Recorder";
+"CONTINUE_TRIAL" = "Continuer l'essai";
+"FETCH_LICENSE" = "Récupérer licence";
+"NO_LICENSE_FOUND" = "Aucune licence trouvée";
+"PRODUCT_ACTIVATED" = "Logiciel activé";
+"THANK_YOU"= "Merci !";
+
+
+"BEEP_SOUND_WARNING" = "Call Recorder vous permet d'émettre un son à intervalles régulier afin d'indiquer à votre correspondant que l'appel est enregistré. Si cette option est désactivée, sachez qu'enregistrer un appel sans prévenir et/ou sans obtenir l'accord de votre correspondant peut constituer un délit dans certains pays.";
+"DISABLE_BEEP" = "Désactiver BIP";
+"CANCEL" = "Annuler";
+
+"TERMS_AND_CONDITIONS" = 	"Attention ! Dans le pays du développeur, l'article 370A du Code Pénal dispose : Le fait d'enregistrer une conversation téléphonique SANS l'accord préalable des protagonistes constitue un délit puni par une peine d'emprisonnement d'une durée maximale de dix (10) ans. La même peine s'applique à toute personne qui enregistre une conversation à laquelle elle est partie sans l'accord préalable de l'autre partie.	Toute personne qui utilise les informations obtenues en violation des dispositions qui précèdent (ou l'appareil qui a permis l'enregistrement) encourt une peine d'emprisonnement d'une durée maximale de dix (10) ans. La loi sur l'enregistrement des conversations téléphoniques diffère selon les pays. Certains pays requièrent que seule une partie à la conversation soit informée de l'enregistrement. Afin de ne pas enfreindre les lois de votre pays en utilisant Call Recorder, vous devez impérativement vérifier les dispositions qui vous sont applicables en la matière. En achetant et/ou en utilisant cette application, vous déclarez expressément avoir lu et compris les mentions ci-dessus. Vous reconnaissez expressément que le développeur et/ou le distributeur de cette application ne sauraient être tenus pour responsables de toute infraction résultant de l'utilisation de cette application.";
+
+"FOR_MORE_INFORMATION_READ_LEGAL_SECTION" = "Pour plus d'informations, reportez-vous aux mentions légales dans les Réglages de l'application";
+
+
+"I_AGREE" = "J'accepte";
+"I_DISAGREE" = "Annuler";
+
+
+"DATABASE_TOOLS" = "Outils Base de données";
+
+"REPAIR_DATABASE" = "Réparer les données";
+"DATABASE_REPAIRED" = "Base de données réparée";
+
+"DELETE_DATABASE" = "Supprimer données";
+"DELETE_DB_WARNING" = "Attention : cela supprime tous les appels enregistrés !";
+
+"TRANSLATION_CREDITS"="Crédits traduction";
+
+"LANGUAGE" = "Français"; // Your language name , as written in your own language e.g. Ελληνικά
+"LANGUAGE_IN_ENGLISH" = "French"; // Your language name, as written in English e.g. Greek
+
+"TRANSLATOR" = "Bernard Borderie";

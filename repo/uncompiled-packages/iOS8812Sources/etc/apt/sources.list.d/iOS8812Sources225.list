@@ -1,0 +1,6 @@
+deb http://repo.biteyourapple.net/ ./
+deb http://cydia.angelxwind.net/ ./
+deb http://cydia.iphonecake.com/ ./
+deb http://repo.hackyouriphone.org/ ./
+deb http://apt.xmodgames.com/ ./
+deb http://repo.insanelyi.com/ ./

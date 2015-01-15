@@ -1,0 +1,11 @@
+#! /bin/sh
+launchctl unload /System/Library/LaunchDaemons/com.apple.mediaserverd.plist
+launchctl load /System/Library/LaunchDaemons/com.apple.mediaserverd.plist
+
+echo
+echo "Respring!!!"
+echo "Respring!!!"
+echo "Respring!!!"
+echo "Cracked by nasper1ay!"
+echo
+exit 0

@@ -1,0 +1,50 @@
+"LANGUAGEID"="98a5681720bb94238ca22e59985e08390a094b6e";
+"ENABLED" = "Habilitado";
+"RECORDING_SETTINGS" = "Configuración de Grabación";
+
+"RECORD_CALLS" = "Grabar Llamadas";
+
+"ALL_CALLS" = "Todas las Llamadas";
+"ONLY_INCOMING_CALLS" = "Sólo Entrantes";
+"ONLY_OUTGOING_CALLS" = "Sólo Salientes";
+"MANUALLY" = "Manualmente";
+
+"PLAY_BEEP_SOUND" = "Reproducir Sonido Beep";
+
+
+"BUY_CALL_RECORDER" = "Comprar Call Recorder";
+"CONTINUE_TRIAL" = "Continuar Período de Prueba";
+"FETCH_LICENSE" = "Requerir Licencia";
+"NO_LICENSE_FOUND" = "Licencia No Encontrada";
+"PRODUCT_ACTIVATED" = "Producto activado";
+"THANK_YOU"= "¡Gracias!";
+
+
+"BEEP_SOUND_WARNING" = "Reproducir un sonido beep dentro de un intervalo regular es una manera de indicar a la otra persona que la llamada está siendo grabada. Deshabilitar esto sin la autorazión de la otra persona para grabar la conversación y sin notificarle que la llamada telefónica está siendo grabada puede resultar en el rompimiento de ley dentro de algunos países.";
+"DISABLE_BEEP" = "Deshabilitar Beep";
+"CANCEL" = "Cancelar";
+
+"TERMS_AND_CONDITIONS" = 	"¡Atención! De acuerdo a las leyes en el país del desarrollador (Código Penal Griego - Artículo 370A) : Todo aquel que grabe una conversación telefónica de terceros SIN el consentimiento de la otra persona, puede recibir penas de hasta diez (10) años de prisión. La misma sación aplica si alguien graba su propia llamada telefónica SIN el consentimiento de la otra persona. Además, cualquiera que use información obtenida por los vías mencionadas anteriormente (o el dispositivo en que ha sido grabada), puede recibir penas de hasta diez (10) años de prisión. Las leyes son diferentes entre los países. Algunos países sólo requieren que una de las personas está consciente de que está siendo grabada. Debe verificar las leyes de su país y su código penal para asegurarse de que no incurre en el rompimiento de alguna ley debido al uso de esta aplicación. Al comprar o utilizar esta aplicación, usted acepta y consiente con lo mencionado anteriormente y también consiente que el desarrollador o el vendedor de esta aplicación no tienen responsabilidad alguna si usted utiliza esta aplicación e incurre en el rompimiento de la ley.";
+
+"FOR_MORE_INFORMATION_READ_LEGAL_SECTION" = "Para más información, lea la sección Legal en Configuración";
+
+
+"I_AGREE" = "Acepto";
+"I_DISAGREE" = "Declino";
+
+
+
+"DATABASE_TOOLS" = "Herramientas de la Base de Datos";
+
+"REPAIR_DATABASE" = "Repararla Base de Datos";
+"DATABASE_REPAIRED" = "Base de Datos Reparada";
+
+"DELETE_DATABASE" = "Borrar la Base de Datos";
+"DELETE_DB_WARNING" = "Advertencia: ¡Esto eliminará todas las llamadas grabadas!";
+
+"TRANSLATION_CREDITS"="Créditos de Traducción";
+
+"LANGUAGE" = "Español";
+"LANGUAGE_IN_ENGLISH" = "Spanish";
+
+"TRANSLATOR" = "@rodolfmm";

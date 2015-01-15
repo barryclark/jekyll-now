@@ -1,0 +1,51 @@
+"LANGUAGEID"="83ecb0d41c19ff5e8ab991d3d8a9ee41e4cf31d3";
+"ENABLED" = "Aktiverad";
+"RECORDING_SETTINGS" = "Inspelningsinställningar";
+
+"RECORD_CALLS" = "Spela in samtal";
+
+"ALL_CALLS" = "Alla samtal";
+"ONLY_INCOMING_CALLS" = "Bara inkommande";
+"ONLY_OUTGOING_CALLS" = "Bara utgående";
+"MANUALLY" = "Manuellt";
+
+"PLAY_BEEP_SOUND" = "Spela upp Beep ljud";
+
+
+"BUY_CALL_RECORDER" = "Köp Call Recorder";
+"CONTINUE_TRIAL" = "Fortsätt testversion";
+"FETCH_LICENSE" = "Hämta licens";
+"NO_LICENSE_FOUND" = "Ingen licens hittades";
+"PRODUCT_ACTIVATED" = "Produkten aktiverad";
+"THANK_YOU"= "Tack!";
+
+
+"BEEP_SOUND_WARNING" = "Spela upp en ljudsignal med jämna mellanrum är ett sätt att meddela den andra parten att samtalet spelas in. Inaktivera detta utan tillstånd att spela in samtalet från av den andra parten och utan att meddela den andra parten att samtalet spelas in kan resultera i att bryta mot lagen i vissa länder. ";
+"DISABLE_BEEP" = "Stäng av Beep";
+"CANCEL" = "Avsluta";
+
+"TERMS_AND_CONDITIONS" = 	"Observera! Enligt lagen i utvecklarens land (grekiska strafflagen - Artikel 370A): Den som registrerar tredjedel konversation part telefon utan den andra partens samtycke, kan straffas med upp till tio (10) års fängelse. Samma straff gäller om någon spelar in eget telefonsamtal mellan någon annan utan den andra en samtycke. Även, alla som använder information från ovanstående sätt (eller den enhet som den har kopieras) kan straffas med upp till tio (10) års fängelse. Lagen skiljer mellan länderna. Vissa länder kräver endast att en part av samtalet ska vara medveten om att det spelas in. Du bör kontrollera ditt lands strafflagstiftning så att du inte bryter mot lagen genom att använda det här programmet. Genom att köpa eller använda denna applikation godkänner du och håller med ovanstående och är även överens om att utvecklaren eller säljaren av detta program har inget ansvar över hur du använder programmet med ett resultat som bryter mot lagen. ";
+
+"FOR_MORE_INFORMATION_READ_LEGAL_SECTION" = "För mer information, läs sektionen Villkor/Legal i Inställningar";
+
+
+"I_AGREE" = "Godkännes";
+"I_DISAGREE" = "Godkännes ej";
+
+
+
+"DATABASE_TOOLS" = "Databas verktyg";
+
+"REPAIR_DATABASE" = "Reparera Databasen";
+"DATABASE_REPAIRED" = "Databasen Reparerad";
+
+"DELETE_DATABASE" = "Radera Databasen";
+"DELETE_DB_WARNING" = "Varning: Detta raderar alla inspelade samtal!";
+
+"TRANSLATION_CREDITS"="Översättning Kreds.";
+
+"LANGUAGE" = "Svenska";
+"LANGUAGE_IN_ENGLISH" = "Swedish";
+
+"TRANSLATOR" = "Matz Almgren";
+

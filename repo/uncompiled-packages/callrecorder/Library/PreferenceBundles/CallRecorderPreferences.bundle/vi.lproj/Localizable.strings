@@ -1,0 +1,52 @@
+"LANGUAGEID"="da39a3ee5e6b4b0d3255bfef95601890afd80709";
+"ENABLED" = "Bật";
+"RECORDING_SETTINGS" = "Tuỳ chỉnh ghi âm";
+
+"RECORD_CALLS" = "Ghi âm cuộc gọi";
+
+"ALL_CALLS" = "Tất cả cuộc gọi";
+"ONLY_INCOMING_CALLS" = "Chỉ cuộc gọi đến";
+"ONLY_OUTGOING_CALLS" = "Chỉ cuộc gọi đi";
+"MANUALLY" = "Tuỳ chỉnh bằng tay";
+
+"PLAY_BEEP_SOUND" = "Phát âm thanh tiếng bíp";
+
+
+"BUY_CALL_RECORDER" = "Mua Call Recorder";
+"CONTINUE_TRIAL" = "Tiếp tục sử dụng tạm";
+"FETCH_LICENSE" = "Cố gắng lấy bản quyền";
+"NO_LICENSE_FOUND" = "Bản quyền không tìm thấy";
+"PRODUCT_ACTIVATED" = "Ứng dụng đã được kích hoạt";
+"THANK_YOU"= "Cảm ơn!";
+
+
+"BEEP_SOUND_WARNING" = "Phát âm thanh tiếng bíp tại một khoảng thời gian thường xuyên là một cách để chỉ ra cho bên kia biết rằng cuộc gọi đang được ghi lại. Vô hiệu hóa mà không có sự cho phép để ghi lại các cuộc hội thoại từ bên kia và không có thông báo từ xa của bên kia rằng thực hiện ghi âm cuộc gọi có thể dẫn đến vi phạm pháp luật ở một số nước.";
+"DISABLE_BEEP" = "Tắt tiếng bíp";
+"CANCEL" = "Huỷ";
+
+"TERMS_TEXT"="Điều khoản và điều kiện";
+
+"TERMS_AND_CONDITIONS" = 	"Chú ý! Theo pháp luật của các nhà phát triển đạo luật trong nước (Bộ luật Hình sự Hy Lạp - Điều 370A): Bất cứ ai ghi lại một cuộc trò chuyện của bên điện thoại thứ ba mà không có sự đồng ý của bên kia, có thể bị xử phạt lên đến mười (10) năm tù giam. Hình phạt tương tự cũng sẽ được áp dụng nếu có ai ghi lại cuộc trò chuyện điện thoại của mình với một người nào khác mà không có sự đồng ý của một trong những đó. Ngoài ra, bất cứ ai sử dụng thông tin thu được từ các cách trên (hoặc các thiết bị mà trên đó nó đã được ghi âm), có thể bị trừng phạt lên đến mười (10) năm tù giam. Luật pháp là khác nhau giữa các quốc gia. Một số quốc gia yêu cầu chỉ một bên của cuộc trò chuyện để được nhận thức đang được ghi lại. Bạn nên kiểm tra pháp luật và bộ luật hình sự của nước bạn để đảm bảo bạn không vi phạm luật pháp bằng cách sử dụng ứng dụng này. Bằng cách mua hoặc sử dụng ứng dụng này, bạn chấp nhận và đồng ý với các điều khoản trên và cũng đồng ý rằng các nhà phát triển hay người bán của các ứng dụng này không có trách nhiệm nếu bạn sử dụng ứng dụng và vi phạm pháp luật pháp của nước bạn.";
+
+"FOR_MORE_INFORMATION_READ_LEGAL_SECTION" = "Để biết thêm thông tin, đọc phần vi phạm pháp luật trong cài đặt";
+
+
+"I_AGREE" = "Đồng ý";
+"I_DISAGREE" = "Không đồng ý";
+
+
+
+"DATABASE_TOOLS" = "Cấu hình dữ liệu";
+
+"REPAIR_DATABASE" = "Chỉnh sửa dữ liệu";
+"DATABASE_REPAIRED" = "Dữ liệu đã được chỉnh sửa";
+
+"DELETE_DATABASE" = "Xoá dữ liệu";
+"DELETE_DB_WARNING" = "Chú ý: Sẽ xoá tất cả dữ liệu ghi âm!";
+
+"TRANSLATION_CREDITS"="Cảm tạ cho việc dịch thuật";
+
+"LANGUAGE" = "Việt Nam";
+"LANGUAGE_IN_ENGLISH" = "Vietnam";
+"TRANSLATOR" ="@xyz_i5";
+

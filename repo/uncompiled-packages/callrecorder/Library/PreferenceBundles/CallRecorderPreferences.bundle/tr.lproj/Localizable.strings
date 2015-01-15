@@ -1,0 +1,49 @@
+
+"LANGUAGEID"="6a8339e2432d8afc526f77b765ff1662685062e9";
+"ENABLED" = "Etkin";
+"RECORDING_SETTINGS" = "Kaydetme Seçenekleri";
+
+"RECORD_CALLS" = "Aramaları Kaydet";
+
+"ALL_CALLS" = "Tüm Aramalar";
+"ONLY_INCOMING_CALLS" = "Sadece Gelen";
+"ONLY_OUTGOING_CALLS" = "Aradıklarım";
+"MANUALLY" = "Manually";
+
+"PLAY_BEEP_SOUND" = "Uyarı Sesi Çal";
+
+
+"BUY_CALL_RECORDER" = "Call Recorder Satın Al";
+"CONTINUE_TRIAL" = "Denemeye Devam Et";
+"FETCH_LICENSE" = "Lisansı Al";
+"NO_LICENSE_FOUND" = "Lisans Bulunamadı";
+"PRODUCT_ACTIVATED" = "Ürün Aktifleştirildi";
+"THANK_YOU"= "Teşekkürler!";
+
+
+"BEEP_SOUND_WARNING" = "Arama esnasında periyodik aralıklarla uyarı sesi çalması karşı tarafa aramanın kaydedildiğinin bildirilmesi içindir. Konuştuğunuz kişinin izni alınmadan yapılan görüşmelerin kaydedilmesi esnasında bu özelliğin kapalı olması ve karşı tarafa kaydedildikleri hakkında bilgi verilmemesi bazı ülkelerde yasa dışı olabilir.";
+"DISABLE_BEEP" = "Sesi Kapat";
+"CANCEL" = "İptal";
+
+"TERMS_AND_CONDITIONS" = 	"Dikkat! Uygulama geliştiricisinin ülke kanunlarına göre (Yunan Ceza Kanunu - Madde 370A) : Kaydedilen kişinin izni olmaksızın kendisini arayanı kaydeden şahıs on (10) yıla kadar hapis cezasına mahkum olabilir. Aynı cezayı yükümlülük kişinin yaptığı aramalarda da geçerlidir. İzinsiz şekilde kaydedilen görüşmelerden faydalanan kişiler de on (10) yıla kadar hapis cezasına mahkum olabilir. Başka ülkelerde bu kanunlar farklılıklar gösterebilir. Bazı ülkelerde yasal olarak aramanın kaydedilmesi için sadece bir tarafın haberinin olması yeterlidir. Bu uygulama ile kendi ülkenizin kanunlarını çiğneyip çiğnemedinizi kendiniz kontrol etmelisinizdir. Bu uygulamayı alarak ya da kullanarak yukardaki uyarı ve maddeleri anladığınızı, herhangi yasal bir durumda sorumluluğun uygulama geliştiricisine ait olmadığını kabul etmiş ve onaylamış olacaksınız.";
+
+"FOR_MORE_INFORMATION_READ_LEGAL_SECTION" = "Daha fazla bilgi için, Ayarlar uygulamasındaki Yasal bölümü okuyunuz";
+
+
+"I_AGREE" = "Kabul et";
+"I_DISAGREE" = "Kabul etme";
+
+
+"DATABASE_TOOLS" = "Veritabanı Araçları";
+
+"REPAIR_DATABASE" = "Veritabanını Onar";
+"DATABASE_REPAIRED" = "Veritabanı Onarıldı";
+
+"DELETE_DATABASE" = "Veritabanını Sil";
+"DELETE_DB_WARNING" = "Dikkat: Bu bütün kaydedilmiş aramaları silecek!";
+
+"TRANSLATION_CREDITS"="Çeviren";
+
+"LANGUAGE" = "Türkçe";
+"LANGUAGE_IN_ENGLISH" = "Turkish";
+"TRANSLATOR" = "Yasin Ahmet SEVİM";

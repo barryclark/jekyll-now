@@ -1,0 +1,9 @@
+Package: com.github.itstar4tech.ios8812sou-list
+Version: 1.0
+Section: Tweaks
+Maintainer: IT STAR Technology
+Architecture: iphoneos-arm
+Description: iOS 7-8 Compatible Cydia Repo Sources Pack
+Name: iOS 8-8.1.2 Sources
+Author: Shein Myint Aung
+Icon: file:///etc/apt/ios8812sou@2x.png
