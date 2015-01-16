@@ -7,6 +7,7 @@ theme:
   # Meta
   title: Type Theme
   avatar: avatar.png
+  gravatar: # email md5 hash
   description: "A website with blog posts, and pages." # used by search engines
   
   # Header and footer text
@@ -25,7 +26,7 @@ theme:
   dribbble: 
   facebook: 
   flickr: 
-  github: "github"
+  github: "rohanchandra/type-theme"
   google_plus: 
   instagram: 
   linkedin:  # full URL
