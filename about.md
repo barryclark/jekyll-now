@@ -15,9 +15,9 @@ permalink: /about/
 
 ### 技术偏好
 
-* 致力于Android application的开发，现在做的项目是关于VOIP的企业应用 *
-* 做过手机方案，主要针对MTK平台4.4Android的项目。选择做方案是为了能更深一步的了解Android系统机制和原理。现在看来对Android的认识还是有帮助的 * 
-* java开发也做过，不过那是很久以前的事情了 *
+* 致力于Android application的开发，现在做的项目是关于VOIP的企业应用 
+* 做过手机方案，主要针对MTK平台4.4Android的项目。选择做方案是为了能更深一步的了解Android系统机制和原理。现在看来对Android的认识还是有帮助的 
+* java开发也做过，不过那是很久以前的事情了 
 
 ### 2015年的目标
 
@@ -26,6 +26,9 @@ permalink: /about/
 ### 联系我
 
 Email : [email@domain.com](zhangchao_nwsuaf@163.com)  ,  [email@domain.com](chao.zhang@net263.com)  
-Weibo : [IT_Robert](http://weibo.com/RobertZhangSH)  （不怎么经营）
+
+Weibo : [IT_Robert](http://weibo.com/RobertZhangSH)（不怎么经营）
+
 QQ : 1615349135
+
 WeChat ID : sun_robert_zhang
