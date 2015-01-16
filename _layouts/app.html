@@ -10,9 +10,6 @@ layout: default
     Updated on {{ post.date | date: "%e %B %Y" }}
   </div>
 
-  <a id="{{ post.url }}" href="#{{ post.url }}">
-    <span class="octicon octicon-link"></span>
-  </a>
   <h1 id="{{ post.title }}">{{ post.title }}{% if post.generic %} – {{ post.generic }}{% endif %}</h1>
 
   <div class="entry">
