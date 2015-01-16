@@ -6,7 +6,7 @@ permalink: /about/
 
 ####   Robert Zhang（张超）
 
-####   标签：Android，开源，音乐
+**标签：Android，开源，音乐**
 
 **居上海浦东新区，常用ID：Robertzhang**
 **热衷于Android开发，热爱开源，喜欢学习新的知识的文艺宅男**
@@ -25,7 +25,7 @@ permalink: /about/
 
 ### 联系我
 
-Email : [email@domain.com](zhangchao_nwsuaf@163.com)  ,  [email@domain.com](chao.zhang@net263.com)  
+Email : [常用邮箱](zhangchao_nwsuaf@163.com)  ,  [公司邮箱](chao.zhang@net263.com)  
 
 Weibo : [IT_Robert](http://weibo.com/RobertZhangSH)（不怎么经营）
 
