@@ -12,7 +12,8 @@ permalink: /about/
 
 **热衷于Android开发，热爱开源，喜欢学习新知识的音乐文艺技术宅男**
 
-#####座右铭：只要你想没有什么不可能     座右铭附篇：只有成为那个更好的自己，才能迎来更好的她。
+#####座右铭：只要你想没有什么不可能  
+#####座右铭附篇：只有成为那个更好的自己，才能迎来更好的她。
 
 ### 技术偏好
 
@@ -32,4 +33,4 @@ Weibo : [IT_Robert](http://weibo.com/RobertZhangSH)（不怎么经营）
 
 QQ : 1615349135
 
-WeChat ID : sun_robert_zhang
+WeChat ID : sun\_robert\_zhang
