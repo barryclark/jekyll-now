@@ -1,7 +1,9 @@
 <header class="site-header">
 
 	<div class="branding">
-		{% if site.theme.avatar %}
+		{% if site.theme.gravatar %}
+		<img class="avatar" src="http://www.gravatar.com/avatar/{{ site.theme.gravatar }}?s=100" alt=""/>
+		{% else if site.theme.avatar %}
 		<img class="avatar" src="/img/{{ site.theme.avatar }}" alt=""/>
 		{% endif %}
 		
