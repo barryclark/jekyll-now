@@ -8,12 +8,18 @@ description: 'A simple screen capture tool made for elementary OS'
 authors: '<a href="https://launchpad.net/~ffabio-96-x">Fabio Zaramella</a>'
 license: 'GPL v3'
 
+screenshots:
+  - Screenshot.png
+
 web:
 github:
 launchpad: 'screenshot-tool'
 googleplus:
 
-repository:
+repository: ppa:fabiozaramella/screenshot-tool 
 repository-unstable:
-package:
+package: screenshot-tool
+
+tags:
+  - Vala
 ---
