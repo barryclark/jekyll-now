@@ -51,7 +51,7 @@ baseurl: ""
 
 markdown: redcarpet
 highlighter: pygments
-permalink: /:title/
+permalink: /:categories/:year/:month/:day/:title.html
 
 # The release of Jekyll Now that you're using
 version: v1.0.0
