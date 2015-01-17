@@ -1,7 +1,12 @@
 ---
 layout: post
-title: Example RMD content
+title: Rmd file 예제
 ---
+
+
+
+
+
 
 #EDPSY 558: Assignment1
 ========================================================
