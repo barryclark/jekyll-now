@@ -6,21 +6,23 @@ layout: default
 
 <article class="post">
 
-  <div class="date">
-    Updated on {{ post.date | date: "%e %B %Y" }}
-  </div>
+  <header>
+    <h1 id="{{ post.title }}">{{ post.title }}</h1>
+    {% if post.generic %}<p>{{ post.generic }}</p>{% endif %}
+  </header>
 
-  <h1 id="{{ post.title }}">{{ post.title }}{% if post.generic %} – {{ post.generic }}{% endif %}</h1>
-
-  <div class="entry">
-  
+  <div class="entry"> 
     {% include app_teaser.html %}
     {% include app_content.html %}
     {{ content }}
-    
   </div>
 
-  {% include post_category.html %}
+  <footer>
+    <div class="date">
+      Updated on {{ post.date | date: "%e %B %Y" }}
+    </div>  
+    {% include post_category.html %}
+  </footer>
   
   {% include disqus.html disqus_identifier=post.disqus_identifier %}
 </article>

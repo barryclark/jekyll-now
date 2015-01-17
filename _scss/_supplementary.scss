@@ -27,7 +27,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $font_heading;
   color: $color_heading;
   font-family: $font_heading;
-  font-weight: 100;
+  font-weight: 300;
   
   margin: 1em 0 15px;
   padding: 0;
@@ -38,7 +38,7 @@ h1, h2, h3, h4, h5, h6 {
 }
   
 h1 {  
-  font-size: 30px;
+  font-size: 40px;
 }
 
 h2 {  
@@ -140,7 +140,8 @@ th:last-child {
   img {
     border-top-left-radius: 6px; /* not perfect, but hides that I cut the window borders badly */
     border-top-right-radius: 6px;
-    box-shadow: 0 10px 50px 5px rgba(0, 0, 0, 0.5);  
+    box-shadow: 0 10px 50px 5px rgba(0, 0, 0, 0.5);
+    margin:16px 0;
   }
 }
 
@@ -267,10 +268,22 @@ nav {
 }
 
 .post { 
+  header {
+    display: flex;
+    justify-content: center;
+  }
+  header p {
+    font-size: 30px;
+    font-weight: 100;
+    padding-top: 10px;
+    padding-left: 15px;
+    color: #666;
+  }
+  
   blockquote {
-    margin: 1.8em .8em;
+    margin: 16px 8px;
     border-left: 2px solid $grey;
-    padding: 0.1em 1em;
+    padding: 4px 12px;
     color: $grey;
     font-style: italic;
   }

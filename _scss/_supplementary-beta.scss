@@ -63,7 +63,7 @@ body.beta {
       }
       
     }
-  }
+  }/* > header */
   
   > main {
     padding: 0 10px;
@@ -73,7 +73,7 @@ body.beta {
       font-family: $font_heading;
       color: $color_heading;
       font-family: $font_heading;
-      font-weight: 100;
+      font-weight: 300;
 
       margin: 1em 0 15px;
       padding: 0;
@@ -83,7 +83,7 @@ body.beta {
       }
     }
 
-    h1 {font-size: 30px;}
+    h1 {font-size: 40px;}
     h2 {font-size: 24px;}
     h3 {font-size: 20px;}
     h4 {font-size: 18px;}
@@ -173,10 +173,22 @@ body.beta {
     }
 
     .post { 
+      header {
+        display: flex;
+        justify-content: center;
+      }
+      header p {
+        font-size: 30px;
+        font-weight: 100;
+        padding-top: 10px;
+        padding-left: 15px;
+        color: #666;
+      }
+      
       blockquote {
-        margin: 1.8em .8em;
+        margin: 16px 8px;
         border-left: 2px solid $grey;
-        padding: 0.1em 1em;
+        padding: 4px 12px;
         color: $grey;
         font-style: italic;
       }
@@ -188,12 +200,15 @@ body.beta {
       .screenshots {
         text-align: center;
         img {
-          box-shadow: 0 10px 20px 10px rgba(0,0,0,.3); 
+          border-top-left-radius: 6px; /* not perfect, but hides that I cut the window borders badly */
+          border-top-right-radius: 6px;
+          box-shadow: 0 10px 50px 5px rgba(0, 0, 0, 0.5);
+          margin:16px 0;
         }
       }
     }
 
-  }
+  }/* > main */
   
   > footer {
     margin-top: 50px;
@@ -202,7 +217,7 @@ body.beta {
     background-color: $lightGrey;
     padding: 20px 0;
     text-align: center;
-  }
+  }/* > footer */
   
 }
 

@@ -2,21 +2,27 @@
 layout: default
 ---
 
-<article class="post">
-  <div class="date">
-    Updated on {{ page.date | date: "%e %B %Y" }}
-  </div>
+{% assign post = page %}
 
-  <a id="{{ post.url }}" href="#{{ post.url }}">
-    <span class="octicon octicon-link"></span>
-  </a>
-  <h1>{{ page.title }}</h1>
+<article class="post">
+
+  <header>
+    <h1 id="{{ post.title }}">{{ post.title }}</h1>
+    {% if post.generic %}<p>{{ post.generic }}</p>{% endif %}
+  </header>
 
   <div class="entry">
+    
+    
     {{ content }}
   </div>
 
-  {% include post_category.html %}
+  <footer>
+    <div class="date">
+      Updated on {{ post.date | date: "%e %B %Y" }}
+    </div>  
+    {% include post_category.html %}
+  </footer>
   
-  {% include disqus.html disqus_identifier=page.disqus_identifier %}
+  {% include disqus.html disqus_identifier=post.disqus_identifier %}
 </article>
