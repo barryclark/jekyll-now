@@ -7,14 +7,11 @@ layout: default
   {% if post.layout != "page" %}
     <article class="post">    
       
-      <div class="date">
-        Updated on {{ post.date | date: "%e %B %Y" }}
-      </div>
-      
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">
-        {{ post.title }}{% if post.generic %} – {{ post.generic }}{% endif %}
-      </a></h1>
-      
+      <header>
+        <h1 id="{{ post.title }}">{{ post.title }}</h1>
+        {% if post.generic %}<p>{{ post.generic }}</p>{% endif %}
+      </header>      
+    
       <div class="entry">
         {% if post.layout == 'app' %}
 		  {% include app_teaser.html %}
@@ -22,6 +19,17 @@ layout: default
           {{ post.content}}
         {% endif %}
       </div>
+      
+      <p>
+        <div class="date">
+          Updated on {{ post.date | date: "%e %B %Y" }}
+        </div>
+        {% if post.package %}
+          <a href="{{ site.baseurl }}{{ post.url }}">
+            Read more...
+          </a>
+        {% endif %}
+      </p>
       
     </article>
   {% endif %}
