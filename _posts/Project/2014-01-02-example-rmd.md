@@ -1,3 +1,8 @@
+---
+layout: post
+title: Example RMD content
+---
+
 #EDPSY 558: Assignment1
 ========================================================
 author: Chungil Chae
