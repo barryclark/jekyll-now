@@ -9,12 +9,12 @@ title: Rmd file 예제
 
 
 #EDPSY 558: Assignment1
-========================================================
+-----
 author: Chungil Chae
 date: September30, 2014
 
 #1. loading dataset
-========================================================
+-----
 
 ```r
 ori.MEARLI <- read.csv("MEARLI.csv", header=FALSE)
@@ -42,7 +42,7 @@ summary(MEARLI)
 
 
 #2. Column name and missing notation -99999 to Na
-========================================================
+-----
 
 ```r
 colnames(MEARLI) <- c("ID", "AGE", "CA", "M", "CO", "NN", "PR", "G")
@@ -92,7 +92,7 @@ summary(MEARLI)
 
 
 #3. Descriptive Statistics
-========================================================
+-----
 
 ```r
 plot(MEARLI)
@@ -138,7 +138,7 @@ hist(MEARLI$G)
 
 
 #Q1. Describe the amount and patterns(s) of missing data
-========================================================
+-----
 
 ```r
 summary(is.na(MEARLI))
@@ -160,7 +160,7 @@ summary(is.na(MEARLI))
 
 
 #Q2. What is the sample size with listwise deletion?
-========================================================
+-----
 254 observation | or MEARLI.lwd <- na.omit(MEARLI)
 
 ```r
@@ -207,7 +207,7 @@ str(MEARLI.lwd)
 
 #Q3. For each of the variables
 ## a. test univariate normality
-========================================================
+-----
 
 ```r
 require(nortest)
@@ -476,7 +476,7 @@ P = 9.716, p-value = 0.02114
 
 
 ## Multivariate Normality
-========================================================
+-----
 
 ```r
 require(QuantPsyc)
@@ -493,7 +493,7 @@ Kurtosis   102.62  14.25     0
 
 
 ## b. describe the level of departure (mild, moderate, severe)
-========================================================
+-----
 
 ```r
 require (psych)
@@ -761,7 +761,7 @@ b2p =  2.51   kurtosis =  -1.58  with probability =  0.11
 
 
 ###Multivarate skew and kur
-========================================================
+-----
 
 ```r
 require(ICS)
@@ -791,7 +791,7 @@ U = 224.8, df = 8, p-value < 2.2e-16
 
 
 ## c. Outliers
-========================================================
+-----
 
 ```r
 require(mvoutlier)
@@ -918,7 +918,7 @@ pairs(MEARLI.lwd.small, pch=pch, col=col, cex=3)
 
 
 # Bartlett Test of Homogeneity of Variances
-========================================================
+-----
 
 ```r
 bartlett.test(CO~AGE, data=MEARLI.lwd)
@@ -934,7 +934,7 @@ Bartlett's K-squared = 0.3601, df = 1, p-value = 0.5484
 
 
 #Q4. Linearly related? Describe any departure from linearity or potential issues.
-========================================================
+-----
 
 ```r
 require(lmtest)
