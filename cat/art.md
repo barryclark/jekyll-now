@@ -1,5 +1,5 @@
 ---
 layout: cat
 category: art
-permalink: /cat/app
+permalink: /cat/app/
 ---

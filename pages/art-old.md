@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Art for elementary
-permalink: /art
+permalink: /art/
 ---
 
 Name | Info | Developer
