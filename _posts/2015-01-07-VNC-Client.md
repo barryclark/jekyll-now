@@ -3,6 +3,7 @@ published: true
 layout: app
 category: app
 title: VNC-Client
+title_obvious: true
 generic: Remote desktop client
 description: 'An very light and neat VNC client for elementary OS.'
 authors: '<a href="https://launchpad.net/~l-admin-3">Marcus Wichelmann</a>'

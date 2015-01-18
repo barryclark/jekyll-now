@@ -3,6 +3,7 @@ published: true
 layout: app
 category: app
 title: Indicator Terminal
+title_obvious: true
 generic: Indicator
 description: 'A very simple indicator that shows a terminal in it.'
 authors: '<a href="https://launchpad.net/~gotwig">Eduard Gotwig</a>, <a href="https://launchpad.net/~erasmo-marin">Erasmo Marín</a>'

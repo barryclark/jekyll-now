@@ -3,6 +3,7 @@ published: true
 layout: app
 category: app
 title: Screenshot
+title_obvious: true
 generic: Screenshot tool
 description: 'A simple screen capture tool made for elementary OS'
 authors: '<a href="https://launchpad.net/~ffabio-96-x">Fabio Zaramella</a>'

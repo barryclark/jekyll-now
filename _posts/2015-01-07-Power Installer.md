@@ -13,7 +13,7 @@ github:
 launchpad:
 googleplus:
 
-repository:
+repository: ppa:donadigo/power-installer
 repository-unstable:
-package:
+package: power-installer
 ---

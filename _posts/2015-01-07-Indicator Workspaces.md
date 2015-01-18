@@ -3,6 +3,7 @@ published: true
 layout: app
 category: app
 title: Indicator Workspaces
+title_obvious: true
 generic: Indicator
 description: 'Configure workspaces and interact with them in the panel.'
 authors: '<a href="http://dysonsimmons.com/">Dyson Simmons</a>'

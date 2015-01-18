@@ -2,16 +2,15 @@
 published: true
 layout: app
 category: app
-title: Indicator Search
-title_obvious: true
-generic: Indicator
+title: Project Manager
+generic: Launchpad client
 description:
-authors:
+authors: '<a href="https://launchpad.net/~donadigo">Adam Bieńkowski</a>'
 license:
 
 web:
 github:
-launchpad: '~elementary-apps/synapse-project/indicator-search'
+launchpad:
 googleplus:
 
 repository:
