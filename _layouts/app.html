@@ -1,28 +1,8 @@
 ---
-layout: default
+layout: post
 ---
 
 {% assign post = page %}
 
-<article class="post">
-
-  <header>
-    <h1 id="{{ post.title }}">{{ post.title }}</h1>
-    {% if post.generic %}<p>{{ post.generic }}</p>{% endif %}
-  </header>
-
-  <div class="entry"> 
-    {% include app_teaser.html %}
-    {% include app_content.html %}
-    {{ content }}
-  </div>
-
-  <footer>
-    <div class="date">
-      Updated on {{ post.date | date: "%e %B %Y" }}
-    </div>  
-    {% include post_category.html %}
-  </footer>
-  
-  {% include disqus.html disqus_identifier=post.disqus_identifier %}
-</article>
+{% include app_teaser.html %}
+{% include app_content.html %}
