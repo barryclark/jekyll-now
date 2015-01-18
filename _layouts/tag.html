@@ -6,6 +6,15 @@ layout: default
   
   <p>Displaying posts with the tag "{{ page.tag }}"</p>  
   
+  <p>
+    All tags: 
+    {% for tag in site.tags %}
+
+      <a href="{{ site.baseurl }}/tag/{{ tag.slug }}">{{ tag.name }}</a>{% if forloop.last == false %}, {% endif %}
+
+    {% endfor %}
+  </p>
+  
   {% if site.tags[page.tag] %}
     {% for post in site.tags[page.tag] %}
 

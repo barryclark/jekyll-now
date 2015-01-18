@@ -6,6 +6,15 @@ layout: default
   
   <p>Displaying posts in the category "{{ page.category }}"</p>  
   
+  <p>
+    All categories: 
+    {% for category in site.categories %}
+
+      <a href="{{ site.baseurl }}/cat/{{ category.slug }}">{{ category.name }}</a>{% if forloop.last == false %}, {% endif %}
+
+    {% endfor %}
+  </p>
+  
   {% if site.categories[page.category] %}
     {% for post in site.categories[page.category] %}
 
