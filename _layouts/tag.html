@@ -8,7 +8,7 @@ layout: default
   
   <p>
     All tags: 
-    {% for tag in site.tags %}
+    {% for tag in site.data.tags %}
 
       <a href="{{ site.baseurl }}/tag/{{ tag.slug }}">{{ tag.name }}</a>{% if forloop.last == false %}, {% endif %}
 

@@ -25,6 +25,7 @@ layout: default
       Updated on {{ post.date | date: "%e %B %Y" }}
     </div>  
     
+    
     {% if post.category %}
       {% for site_category in site.data.categories %}
         {% if site_category.slug == post.category %}
@@ -32,16 +33,17 @@ layout: default
         {% endif %}
       {% endfor %}
       {% if category %}
-        {% capture category_content %} Posted in <a style="font-weight:bold" href="{{ site.baseurl }}/cat/{{ category.slug }}/">{{ category.name }}</a>{% endcapture %}
+        {% capture category_content %} Posted in <a style="font-weight:bold" href="{{ site.baseurl }}/cat/{{ category.slug }}/">{{ category.name }}</a>.{% endcapture %}
       {% endif %}
     {% else %}
-      {% assign category_content = 'Posted in no particular category' %}
+      {% assign category_content = 'Posted in no particular category.' %}
     {% endif %}
 
+    <div>{{ category_content }}    
+    
     {% if post.tags.size > 0 %}
-      {% capture tags_content %}, tagged with {% if post.tags.size == 1 %}<i class="fa fa-tag"></i>{% else %}<i class="fa fa-tags"></i>{% endif %}: {% endcapture %}
+      {% capture tags_content %}Tagged with {% endcapture %}
       {% for post_tag in post.tags %}
-        {% assign tag = '' %}
         {% for data_tag in site.data.tags %}
           {% if data_tag.slug == post_tag %}
             {% assign tag = data_tag %}
@@ -56,7 +58,7 @@ layout: default
       {% assign tags_content = '' %}
     {% endif %}
     
-    <div>{{ category_content }}{{ tags_content }}</div>
+    {{ tags_content }}</div>
     
   </footer>
   
