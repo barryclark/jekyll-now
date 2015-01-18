@@ -1,7 +1,7 @@
 ---
 layout: default-beta
 title: elementary for other systems
-permalink: /style/
+permalink: /style
 ---
 
 <article class="page">

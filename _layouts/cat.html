@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<div class="posts">
+  
+  <p>Displaying posts in the category "{{ page.category }}"</p>  
+  
+  {% if site.categories[page.category] %}
+    {% for post in site.categories[page.category] %}
+
+      {% include loop.html %}
+
+    {% endfor %}
+  {% else %}
+      <p>There are no posts for this category.</p>
+  {% endif %}
+
+</div>

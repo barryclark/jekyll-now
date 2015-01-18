@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<div class="posts">
+  
+  <p>Displaying posts with the tag "{{ page.tag }}"</p>  
+  
+  {% if site.tags[page.tag] %}
+    {% for post in site.tags[page.tag] %}
+
+      {% include loop.html %}
+
+    {% endfor %}
+  {% else %}
+      <p>There are no posts for with this tag.</p>
+  {% endif %}
+
+</div>

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: elementary for other systems
-permalink: /others/
+permalink: /others
 ---
 
 * Icons 

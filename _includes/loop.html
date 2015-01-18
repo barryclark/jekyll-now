@@ -1,0 +1,27 @@
+<article class="post">    
+
+  <header>
+    <a href="{{ site.baseurl }}{{ post.url }}">
+      <h1 id="{{ post.title }}">{{ post.title }}</h1>
+    </a>
+    {% if post.generic %}<p>{{ post.generic }}</p>{% endif %}
+  </header>      
+
+  <div class="entry">
+    {% if post.layout == 'app' %}
+      {% include app_teaser.html %}
+    {% else %}
+      {{ post.content}}
+    {% endif %}
+  </div>
+
+  <p>
+    <div class="date">
+      Updated on {{ post.date | date: "%e %B %Y" }}
+    </div>
+    <a href="{{ site.baseurl }}{{ post.url }}">
+      Read more...
+    </a>
+  </p>
+
+</article>

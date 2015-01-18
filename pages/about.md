@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-permalink: /about/
+permalink: /about
 ---
 
 A ressource for 3rd party software designed for [elementary (OS)](http://elementaryos.org). If you find an error or want to add an app, [file an issue](https://github.com/quassy/elementary-apps/issues/new).
