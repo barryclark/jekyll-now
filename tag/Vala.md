@@ -1,5 +1,5 @@
 ---
 layout: tag
-category: Vala
-permalink: /cat/Vala/
+tag: Vala
+permalink: /tag/Vala/
 ---

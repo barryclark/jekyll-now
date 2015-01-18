@@ -32,7 +32,7 @@ layout: default
         {% endif %}
       {% endfor %}
       {% if category %}
-        {% capture category_content %} Posted in <span class="label" style="/*background-color:{{ category.color }}*/"><a href="{{ site.baseurl }}/cat/{{ category.slug }}/">{{ category.name }}</a></span>{% endcapture %}
+        {% capture category_content %} Posted in <a style="font-weight:bold" href="{{ site.baseurl }}/cat/{{ category.slug }}/">{{ category.name }}</a>{% endcapture %}
       {% endif %}
     {% else %}
       {% assign category_content = 'Posted in no particular category' %}

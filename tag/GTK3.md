@@ -1,5 +1,5 @@
 ---
 layout: tag
-category: GTK3
-permalink: /cat/GTK3/
+tag: GTK3
+permalink: /tag/GTK3/
 ---
