@@ -4,11 +4,13 @@ title: Readme
 permalink: /readme/
 ---
 
-Check the [http://quassy.github.io/elementary-apps/about/](about page) for general info.
+Check the [about page](http://quassy.github.io/elementary-apps/about/) for general info.
 
 # Contribute
 
 ## App
+
+Check the template file in _posts.
 
 ## Screenshot
 
