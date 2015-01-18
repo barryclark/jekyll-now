@@ -1,0 +1,11 @@
+- slug: GTK3
+  name: GTK3
+  color: '#3498db'
+  
+- slug: Vala
+  name: Vala
+  color: '#1abc9c'
+  
+- slug: Webapp
+  name: Webapp
+  color: '#333'
