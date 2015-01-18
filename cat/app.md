@@ -1,5 +1,5 @@
 ---
 layout: cat
-category: app
-permalink: /cat/app/
+category: App
+permalink: /cat/App/
 ---

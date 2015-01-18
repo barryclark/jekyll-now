@@ -1,5 +1,5 @@
 ---
 layout: cat
-category: other
-permalink: /cat/other/
+category: Other
+permalink: /cat/Other/
 ---

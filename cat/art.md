@@ -1,5 +1,5 @@
 ---
 layout: cat
-category: art
-permalink: /cat/art/
+category: Art
+permalink: /cat/Art/
 ---

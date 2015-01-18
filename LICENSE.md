@@ -1,7 +1,7 @@
 ---
 layout: page
 title: License
-permalink: /license
+permalink: /license/
 ---
 
 This page uses Jekyll Now, which is licensed under the [MIT License](http://opensource.org/licenses/MIT). The contents (including images, posts and static pages) of the blog are licensed under [CC-BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)
