@@ -1,7 +1,7 @@
 Architecture: iphoneos-arm
 Author: Elias Limneos
 Depends: mobilesubstrate (>= 0.9.5000), preferenceloader
-Depiction: http://repo.xarold.com/depiction.php?id=callrecorder
+Depiction: http://iosrepo.cu.cc/tweak/2014/03/03/callrecorder.html
 Description: iOS 8 နဲ႕ 7 မွာ အလုပ္လုပ္တဲ့ Call Recorder ေလးပါ။ iPhone 5/5S/5C/6 နဲ႕ 6 Plus ေတြမွာ အသံုးျပဳလို႕ရပါတယ္။ လိုင္စင္ပါ၀င္ျပီးသားပါ။
 Icon: file:///Library/PreferenceBundles/CallRecorderPreferences.bundle/CallRecorder@2x.png
 Installed-Size: 1172
