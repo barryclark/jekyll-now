@@ -1,0 +1,116 @@
+Package: com.github.itstar4tech.callrecorder
+Version: 0.7-18k
+Architecture: iphoneos-arm
+Installed-Size: 1172
+Depends: mobilesubstrate (>= 0.9.5000), preferenceloader
+Filename: deb/callrecorder.deb
+Size: 397414
+MD5sum: 327573d714c1ea11474075d6b491ffdf
+SHA1: 1fac7cc066f680f358c47e0e47e802cf77a53895
+SHA256: 6f08601c7b3663bce68c9664eed878e35c34a46fd0e6958d0cb183dbd9f45e53
+Section: Tweaks
+Description: iOS 8 နဲ႕ 7 မွာ အလုပ္လုပ္တဲ့ Call Recorder ေလးပါ။ iPhone 5/5S/5C/6 နဲ႕ 6 Plus ေတြမွာ အသံုးျပဳလို႕ရပါတယ္။ လိုင္စင္ပါ၀င္ျပီးသားပါ။
+Author: Elias Limneos
+Depiction: http://iosrepo.cu.cc/tweak/2014/03/03/callrecorder.html
+Icon: file:///Library/PreferenceBundles/CallRecorderPreferences.bundle/CallRecorder@2x.png
+Name: Audio Recorder
+
+Package: com.github.itstar4tech.ios8812sou-list
+Version: 1.0
+Architecture: iphoneos-arm
+Maintainer: IT STAR Technology
+Filename: deb/iOS8812Sources.deb
+Size: 26770
+MD5sum: f4f93cda5e3c89349ef0b8c026607a07
+SHA1: abe645ac94b8cb42d4886215550b2f5c5159560b
+SHA256: c963ed44e8109c628922dc58e6272a349cbd21bbbabe5f691421d5f78521c063
+Section: Tweaks
+Description: iOS 7-8 Compatible Cydia Repo Sources Pack
+Author: Shein Myint Aung
+Icon: file:///etc/apt/sources.list.d/icons@2x.png
+Name: iOS 8-8.1.2 Sources
+
+Package: com.ichitaso.killbackground8
+Version: 1.0-3
+Architecture: iphoneos-arm
+Maintainer: BigBoss <bigboss@thebigboss.org>
+Installed-Size: 827
+Depends: firmware (>= 7.0), mobilesubstrate, applist, preferenceloader
+Conflicts: com.kindadev.KillBackground7
+Replaces: com.ichitaso.KillBackground8
+Filename: deb/killbackground8_1.0-3.deb
+Size: 371318
+MD5sum: 75fdb3f79b52cbe085e2da1a64f5686e
+SHA1: 280584eb798a38a9749df05d3fc2dcbf98a46c5b
+SHA256: 035f5098e48bfd330edb2381c762ba5e0bcd31a01c25497e5dd5ebd9e519bbdb
+Section: Tweaks
+Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=killbackground8Dp
+Description: Kill background apps with style !
+Tag: purpose::extension, ios7support::1, ios8support::1
+Author: ichitaso & kinda <willfeeltips+killbg8@gmail.com>
+Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=killbackground8Dp
+Dev: ichitaso
+Icon: file:///Library/PreferenceBundles/KillBackgroundPreferences.bundle/KB_icon@2x.png
+Name: KillBackground8 (iOS 7 & 8)
+Sponsor: thebigboss.org <http://thebigboss.org>
+
+Package: com.saurik.substrate.safemode
+Version: 0.9.5000
+Architecture: iphoneos-arm
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Installed-Size: 88
+Depends: mobilesubstrate (>= 0.9.3367+38)
+Conflicts: safe-mode-fixer-ios7
+Replaces: safe-mode-fixer-ios7
+Filename: deb/com.saurik.substrate.safemode_0.9.5000_iphoneos-arm.deb
+Size: 9248
+MD5sum: 505880e0b6c00de1b32e7836ec3751a5
+SHA1: 59f70563ab5c3e375b3bc029d6548e9ab2aa412e
+SHA256: f1b626a31bf71c58a8dde8204be783f0e417551eb22ad38cd4f337e36dff0e5b
+Section: Tweaks
+Priority: optional
+Description: safe mode safety extension (safe)
+Author: Jay Freeman (saurik) <saurik@saurik.com>
+Depiction: http://cydia.saurik.com/info/com.saurik.substrate.safemode/
+Name: Substrate Safe Mode
+
+Package: mobilesubstrate
+Version: 0.9.5101
+Architecture: iphoneos-arm
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: com.saurik.substrate.safemode
+Conflicts: me.devbug.msreloadfix, com.r3pwn.startsubstrate, com.ragemasta.bootstrap
+Breaks: uikittools (<< 1.1.1), com.mywi4 (<= 5.03.2), com.phoenix.pandoracontrols (<= 1.1.0-1), com.intelliborn.intelliscreenx (<= 1.0.110), com.evad3rs.evasi0n7 (<< 0.2)
+Filename: deb/mobilesubstrate_0.9.5101_iphoneos-arm.deb
+Size: 79486
+MD5sum: 07e63db96bc81426f215abc93891e70a
+SHA1: 5c28f364a97cf18b58bf4b3df43f2fb7c2233e1c
+SHA256: a4942b467e6cbdb93adaeae4135e9cff804616d752f8f003e75ad13ee51edad4
+Section: System
+Priority: optional
+Description: powerful code insertion platform
+Author: Jay Freeman (saurik) <saurik@saurik.com>
+Depiction: http://cydia.saurik.com/info/mobilesubstrate/
+Name: Cydia Substrate
+
+Package: preferenceloader
+Version: 2.2.2
+Architecture: iphoneos-arm
+Maintainer: Dustin Howett <dustin@howett.net>
+Installed-Size: 244
+Depends: mobilesubstrate
+Filename: deb/preferenceloader_2.2.2_iphoneos-arm.deb
+Size: 45042
+MD5sum: 57f8ae93cdbcbc0f222dfb1f8c5fad30
+SHA1: b0e67dd812612dbec8797a431e819843450da152
+SHA256: 44b08a712a092749a999552e5ffc5e85f4b42bec23d2cb06e23f9c739d7661a6
+Section: System
+Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=preferenceloader2Data
+Description: load preferences in style
+Tag: role::hacker, purpose::library
+Author: Dustin Howett <dustin@howett.net>
+Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=preferenceloader2Data
+Dev: dustinhowett
+Name: PreferenceLoader
+
