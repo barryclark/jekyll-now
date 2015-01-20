@@ -68,9 +68,9 @@ Installed-Size: 1172
 Depends: mobilesubstrate (>= 0.9.5000), preferenceloader
 Filename: deb/callrecorder.deb
 Size: 397414
-MD5sum: cd44bedcb96b4dda713a300dcd632426
-SHA1: a1010aba253d2ef7342a1b580cbde0fc1fb6d6ce
-SHA256: 5e7617f64f83b105b87150a5df02b6623ff37a3473a1c9c83494754b76d6d718
+MD5sum: 9673636e6db7e22805ff23f101e71efb
+SHA1: a2e62d6ccda114c495a3f5583689af320fba81e1
+SHA256: e841121137a2acafca8d737903a5ddae22ba08c9dd25af763cbd4f2212c22b31
 Section: Tweaks
 Description: iOS 8 နဲ႕ 7 မွာ အလုပ္လုပ္တဲ့ Call Recorder ေလးပါ။ iPhone 5/5S/5C/6 နဲ႕ 6 Plus ေတြမွာ အသံုးျပဳလို႕ရပါတယ္။ လိုင္စင္ပါ၀င္ျပီးသားပါ။
 Author: Elias Limneos
@@ -84,9 +84,9 @@ Architecture: iphoneos-arm
 Maintainer: IT STAR Technology
 Filename: deb/iOS8812Sources.deb
 Size: 26770
-MD5sum: f3c6f46884a2140c45e9b37cf37202cf
-SHA1: 098b4e96d992036dc9b9f0ac9634cd908974fb54
-SHA256: 8626bb350c05d26a2d8e3ca73b72aec24d7405039e75a0ff8da0921a5559bb0b
+MD5sum: 4479727b274da47057bc63f59b605806
+SHA1: 60b3b0b6bb155a1bca17a613992e55f5f7f64ed7
+SHA256: be6149e0d746102e98184da714392cecb01333134c173f29a884222022a14d3b
 Section: Tweaks
 Description: iOS 7-8 Compatible Cydia Repo Sources Pack
 Author: Shein Myint Aung
