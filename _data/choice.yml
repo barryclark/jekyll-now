@@ -1,0 +1,90 @@
+Browser:
+  Default: Midori
+  Recommended: 
+    - Firefox
+    - Chrome
+  Other:
+    - Opera
+    - Yandex
+    
+Music Player:
+  Default: Noise
+  Recommended:
+    - 
+  Other:
+    - Quodlibet
+    
+Email client:
+  Default: Geary
+  Recommended:
+    - Thunderbird
+  Other: 
+    - Web (Gmail, Yahoo)
+  
+Image Viewer:
+  Default: Shotwell
+  Recommended: 
+    - Foto
+  Other:
+  
+Calendar:
+  Default: Maya
+  Recommended:
+    - 
+  Other:
+  
+Text Editor:
+  Default: Scratch
+  Recommended:
+    - Gedit
+  Other:
+    - vim
+  
+Video Player:
+  Default: Audience
+  Recommended:
+    - Video LAN
+  Other:
+    - Totem
+  
+File Browser:
+  Default: Pantheon Files
+  Recommended: 
+    - Nemo
+    - Nautilus
+  Other:
+  
+Office suite:
+  Default: false
+  Recommended:
+    - LibreOffice
+    - Apache OpenOffice
+  Other:
+    - WordPerfect Suite
+    - Microsoft Office (Wine)
+    
+Instant messenger:
+  Default: false
+  Recommended:
+    - Pidgin
+  Other
+    - Empathy
+    
+News reader:
+  Default: false
+  Recommended:
+    - FeedReader
+  Other:
+    - Web (Feedly, tt-rss)
+    
+Note keeping
+  Default: false
+  Recommended:
+  Other:
+    - Web (Google Keep, Evernote)
+    
+Graphics editor
+  Default: false
+  Recommended: 
+    - GIMP
+  Other: 
