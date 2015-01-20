@@ -1,3 +1,66 @@
+Package: applist
+Version: 1.5.9
+Architecture: iphoneos-arm
+Maintainer: Ryan Petrich <rpetrich@gmail.com>
+Installed-Size: 468
+Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 3.0), com.rpetrich.rocketbootstrap (>= 1.0) | firmware (<< 7.0)
+Filename: deb/applist_1.5.9_iphoneos-arm.deb
+Size: 136764
+MD5sum: 91404d2c68b9bfeb06baa685a87a6f66
+SHA1: e15e9011823b66e44fedc65533c5033c539c8662
+SHA256: 7c7c4ff004b2fde170f495b7bd7cf2a5b6fed84b782f95030ac2e3fa932f5a65
+Section: System
+Description: Allow extensions to read the list of installed apps
+Author: Ryan Petrich <rpetrich@gmail.com>
+Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=AppListDp
+Dev: rpetrich
+Name: AppList
+Website: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=AppListDp
+
+Package: com.a3tweaks.flipswitch
+Version: 1.0.6
+Architecture: iphoneos-arm
+Installed-Size: 2560
+Depends: mobilesubstrate (>= 0.9.5001), com.rpetrich.rocketbootstrap (>= 1.0.2) | firmware (<< 7.0)
+Conflicts: com.rpetrich.donotdisturbtoggle (<= 1.0-1), com.jerryen.rotationlockflipswitch
+Replaces: com.jerryen.rotationlockflipswitch
+Provides: com.jerryen.rotationlockflipswitch
+Filename: deb/com.a3tweaks.flipswitch_1.0.6_iphoneos-arm.deb
+Size: 451016
+MD5sum: 3269c344d7101087837a9791d6684930
+SHA1: 02a1cece902fe8632f5fdb9bd41a86c38ade0bb4
+SHA256: 41b044396775ea628402a7999f1c17f1a6bd80bd6724c0a97939e42a47db7700
+Section: System
+Homepage: http://rpetri.ch/cydia/flipswitch/
+Description: Centralized toggle system for iOS
+Tag: purpose::extension, role::developer
+Author: rpetrich & A3Tweaks <rpetrich+flipswitch@gmail.com>
+Depiction: http://rpetri.ch/cydia/flipswitch/
+Dev: flipswitch
+Icon: file:///Applications/Preferences.app/icon-table.png
+Name: Flipswitch
+
+Package: com.autopear.installipa
+Version: 3.3-1
+Architecture: iphoneos-arm
+Maintainer: BigBoss <bigboss@thebigboss.org>
+Installed-Size: 221
+Depends: firmware (>= 4.0)
+Filename: deb/ipainstallerconsole_3.3-1.deb
+Size: 34582
+MD5sum: e2f32e47f46359928a6df85072bab190
+SHA1: 2d3e26a22e0abfe4a058ede27ccad8741431ab89
+SHA256: ae2b8f7401fb6c4a190e6c54b69409dc62cffde7f184ccea4605ced907d7a499
+Section: Utilities
+Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=ipainstallerconsoleDp
+Description: Install IPA from the command line
+Tag: purpose::console, role::enduser, ios7support::1, ios8support::1
+Author: Merlin <lonelystars@gmail.com>
+Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=ipainstallerconsoleDp
+Dev: lonelystars
+Name: IPA Installer Console
+Sponsor: thebigboss.org <http://thebigboss.org>
+
 Package: com.github.itstar4tech.callrecorder
 Version: 0.7-18k
 Architecture: iphoneos-arm
@@ -5,9 +68,9 @@ Installed-Size: 1172
 Depends: mobilesubstrate (>= 0.9.5000), preferenceloader
 Filename: deb/callrecorder.deb
 Size: 397414
-MD5sum: 327573d714c1ea11474075d6b491ffdf
-SHA1: 1fac7cc066f680f358c47e0e47e802cf77a53895
-SHA256: 6f08601c7b3663bce68c9664eed878e35c34a46fd0e6958d0cb183dbd9f45e53
+MD5sum: cd44bedcb96b4dda713a300dcd632426
+SHA1: a1010aba253d2ef7342a1b580cbde0fc1fb6d6ce
+SHA256: 5e7617f64f83b105b87150a5df02b6623ff37a3473a1c9c83494754b76d6d718
 Section: Tweaks
 Description: iOS 8 နဲ႕ 7 မွာ အလုပ္လုပ္တဲ့ Call Recorder ေလးပါ။ iPhone 5/5S/5C/6 နဲ႕ 6 Plus ေတြမွာ အသံုးျပဳလို႕ရပါတယ္။ လိုင္စင္ပါ၀င္ျပီးသားပါ။
 Author: Elias Limneos
@@ -21,14 +84,157 @@ Architecture: iphoneos-arm
 Maintainer: IT STAR Technology
 Filename: deb/iOS8812Sources.deb
 Size: 26770
-MD5sum: f4f93cda5e3c89349ef0b8c026607a07
-SHA1: abe645ac94b8cb42d4886215550b2f5c5159560b
-SHA256: c963ed44e8109c628922dc58e6272a349cbd21bbbabe5f691421d5f78521c063
+MD5sum: f3c6f46884a2140c45e9b37cf37202cf
+SHA1: 098b4e96d992036dc9b9f0ac9634cd908974fb54
+SHA256: 8626bb350c05d26a2d8e3ca73b72aec24d7405039e75a0ff8da0921a5559bb0b
 Section: Tweaks
 Description: iOS 7-8 Compatible Cydia Repo Sources Pack
 Author: Shein Myint Aung
 Icon: file:///etc/apt/sources.list.d/icons@2x.png
 Name: iOS 8-8.1.2 Sources
+
+Package: com.hackyouriphone.anydrop3
+Version: 1.0.1k
+Architecture: iphoneos-arm
+Maintainer: iLeoLion <repo@hackyouriphone.org>
+Depends: firmware (>= 7.0), mobilesubstrate (>= 0.9.5000)
+Conflicts: org.thebigboss.anydrop
+Filename: deb/com.hackyouriphone.anydrop3_1.0.1k_iphoneos-arm.deb
+Size: 2370924
+MD5sum: 1065e1406bdeb6080f8279d2c81a1946
+SHA1: 219db279be84578ef767283d411bf16e5d6ba187
+SHA256: 908545b37888d03cc04c9abc80e88c77cbefde5b14d0cd63e6694e163a052307
+Section: HYI - Tweaks
+Homepage: http://repo.hackyouriphone.org/depiction/depiction.php?filename=anydrop3
+Description: All-in-one AirDrop file sharing utility!
+Author: Majd Alfhaily <repo@hackyouriphone.org>
+Depiction: http://repo.hackyouriphone.org/depiction/depiction.php?filename=anydrop3
+Name: AnyDrop 3 (iOS 8 & 7)
+
+Package: com.hackyouriphone.bioprotect
+Version: 1.5-129
+Architecture: iphoneos-arm
+Maintainer: iLeoLion <repo@hackyouriphone.org>
+Depends: firmware (>= 7.0), mobilesubstrate (>= 0.9.5000), preferenceloader (>= 2.2.2)
+Filename: deb/com.hackyouriphone.bioprotect_1.5-129_iphoneos-arm.deb
+Size: 310752
+MD5sum: 272e46f762f170563fdf8dd14d2c394b
+SHA1: 91d6ce363b05d134b8db66b5197e93ff949c8e00
+SHA256: 9aaf8336f5a45253875c815372a2096024c3bb945b6961e9b2f44c8b32b6bb44
+Section: HYI - Tweaks
+Homepage: http://repo.hackyouriphone.org/depiction/depiction.php?filename=bioprotect
+Description: Protect apps with Touch ID or passcode.
+Author: Elias Limneos <repo@hackyouriphone.org>
+Depiction: http://repo.hackyouriphone.org/depiction/depiction.php?filename=bioprotect
+Name: BioProtect
+
+Package: com.hackyouriphone.cameratweak3
+Version: 1.0
+Architecture: iphoneos-arm
+Maintainer: iLeoLion <repo@hackyouriphone.org>
+Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 8.0), preferenceloader (>= 2.2.2)
+Conflicts: org.thebigboss.cameratweak2
+Filename: deb/com.hackyouriphone.cameratweak3_1.0_iphoneos-arm.deb
+Size: 447440
+MD5sum: cb876ff2d9d3ea0ddc8205aecf9c00b3
+SHA1: f5a5e06c680d3a184b5216c6edc593f4e29d2473
+SHA256: eb40dcca8e58a9b7779382abfea76afff4b36ab10aec1a6e56bcc15168b367e9
+Section: HYI - Tweaks
+Homepage: http://repo.hackyouriphone.org/depiction/depiction.php?filename=cameratweak3
+Description: powerful enhancements to Camera app
+Author: Samball <repo@hackyouriphone.org>
+Depiction: http://repo.hackyouriphone.org/depiction/depiction.php?filename=cameratweak3
+Name: CameraTweak 3 (iOS 8)
+
+Package: com.hackyouriphone.icleanerpro
+Version: 7.3.1
+Architecture: iphoneos-arm
+Maintainer: iLeoLion <repo@hackyouriphone.org>
+Pre-Depends: apt, findutils, shell-cmds
+Conflicts: org.altervista.exilecom.icleaner
+Replaces: org.altervista.exilecom.icleaner
+Filename: deb/com.hackyouriphone.icleanerpro_7.3.1_iphoneos-arm.deb
+Size: 1846066
+MD5sum: d0e728bdf85a63e5ae96c8d9a5635d25
+SHA1: 9fe45b9707a79767bf1460449c895d38f7bc5d53
+SHA256: 049ad5bd52d285900265523218384e90087946a99d25d0f25e32e2c0f39ce249
+Section: HYI - Applications
+Homepage: http://repo.hackyouriphone.org/depiction/depiction.php?filename=icleanerpro
+Description: The ultimate iPhone, iPod and iPad system cleaner & optimizer
+Author: Exile.90 <repo@hackyouriphone.org>
+Depiction: http://repo.hackyouriphone.org/depiction/depiction.php?filename=icleanerpro
+Name: iCleaner Pro
+
+Package: com.hackyouriphone.ifile
+Version: 2.2.0-1
+Architecture: iphoneos-arm
+Maintainer: iLeoLion <repo@hackyouriphone.org>
+Depends: file-cmds, zip, unzip, p7zip, gzip, bzip2, unrar, diskdev-cmds
+Filename: deb/com.hackyouriphone.ifile_2.2.0-1_iphoneos-arm.deb
+Size: 9747038
+MD5sum: 289aee1633c592fc93254c667a167481
+SHA1: 9829d4d9cbb2bdd2ba1f3db307a12347fa1ee575
+SHA256: 549ec690ee9d4c808c758e880e50442f01aed065e4b11ea91430ec32f6304c80
+Section: HYI - Tweaks
+Homepage: http://repo.hackyouriphone.org/depiction/depiction.php?filename=ifile
+Description: A File Manager and Viewer. iFile is a file manager runnning under user root. It allows fast navigation through the iPhone file system. It allows direct viewing of files of various types, e.g. movies, sound, text, HTML, Microsoft types, PDF, ZIP. For PDF files direct jumping to pages is possible. ZIP packing and unpacking is also supported. Files can be sent as email attachments. Text files and property lists can be edited. Folders and files can be bookmarked. In addition, files can be uploaded and downloaded from iFile's built-in web server.
+Author: Carsten Heinelt <repo@hackyouriphone.org>
+Depiction: http://repo.hackyouriphone.org/depiction/depiction.php?filename=ifile
+Name: iFile
+
+Package: com.hackyouriphone.motion
+Version: 1.6.2k
+Architecture: iphoneos-arm
+Maintainer: iDevid <repo@hackyouriphone.org>
+Depends: firmware (>= 4.0), mobilesubstrate, preferenceloader
+Filename: deb/com.hackyouriphone.motion_1.6.2k_iphoneos-arm.deb
+Size: 31358
+MD5sum: 94f8ef1f43ee7fb7dee91c07a5fbf24e
+SHA1: 32cd606d8b6a16e085cdc7bdbfc3b0e774b47419
+SHA256: e89afba240f46eec3368d34652b5c7f0ce7d3a835ea6f230552311c2872b9372
+Section: HYI - Tweaks
+Homepage: http://repo.hackyouriphone.org/depiction/depiction.php?filename=motion
+Description: icons move, spin & grow randomly
+Author: J. Corbett & J. Einbinder <repo@hackyouriphone.org>
+Depiction: http://repo.hackyouriphone.org/depiction/depiction.php?filename=motion
+Name: Motion
+
+Package: com.hackyouriphone.safaridownloaderplus
+Version: 3.5-1
+Architecture: iphoneos-arm
+Maintainer: iLeoLion <repo@hackyouriphone.org>
+Depends: firmware (>= 7.0), mobilesubstrate (>= 0.9.5000), preferenceloader (>= 2.2.2), com.ouraigua.jodebox (>= 1.4-1)
+Conflicts: net.howett.safaridownloader, com.ouraigua.safaridownloader
+Replaces: com.ouraigua.safaridownloader
+Filename: deb/com.hackyouriphone.safaridownloaderplus_3.5-1_iphoneos-arm.deb
+Size: 13484246
+MD5sum: 39fc318719e9548f8006345fc8ca72d0
+SHA1: a130168e964b9f9fd7095eedba35ba7d88891a16
+SHA256: beacc581db863871cefd871283671427c7c328704121ca5966fca4f8cab6f6f8
+Section: HYI - Tweaks
+Homepage: http://repo.hackyouriphone.org/depiction/depiction.php?filename=safaridownloaderplus
+Description: Powerful Youtube & Download Manager for Safari.
+Author: Jalal Ouraigua <repo@hackyouriphone.org>
+Depiction: http://repo.hackyouriphone.org/depiction/depiction.php?filename=safaridownloaderplus
+Name: Safari Downloader+
+
+Package: com.hackyouriphone.socialduplicator2
+Version: 1.0
+Architecture: iphoneos-arm
+Maintainer: iLeoLion <repo@hackyouriphone.org>
+Depends: firmware (>= 8.0), mobilesubstrate (>= 0.9.5000), preferenceloader, zip, com.autopear.installipa, applist
+Conflicts: com.f0u4d.socialduplicatorbeta, com.f0u4d.socialduplicator
+Filename: deb/com.hackyouriphone.socialduplicator2_1.0_iphoneos-arm.deb
+Size: 291736
+MD5sum: 568cd437af56923634878550521dd4a0
+SHA1: 48a937e5a52d618f26dc9a0f9a4873620166fa76
+SHA256: ef81657aec569ef8fb7035835913da53720e9788afe470df2876a3779d000020
+Section: HYI - Tweaks
+Homepage: http://repo.hackyouriphone.org/depiction/depiction.php?filename=socialduplicator2
+Description: Clone social apps to use multiple accounts!
+Author: F0u4d <repo@hackyouriphone.org>
+Depiction: http://repo.hackyouriphone.org/depiction/depiction.php?filename=socialduplicator2
+Name: Social Duplicator 2 (iOS 8)
 
 Package: com.ichitaso.killbackground8
 Version: 1.0-3
@@ -54,6 +260,77 @@ Icon: file:///Library/PreferenceBundles/KillBackgroundPreferences.bundle/KB_icon
 Name: KillBackground8 (iOS 7 & 8)
 Sponsor: thebigboss.org <http://thebigboss.org>
 
+Package: com.myopenware.sevenonenoteappfontfix
+Version: 1.0-4
+Architecture: iphoneos-arm
+Depends: firmware (>= 7.1), mobilesubstrate
+Filename: deb/com.myopenware.sevenonenoteappfontfix_1.0-4_iphoneos-arm.deb
+Size: 5038
+MD5sum: 2ccc577aa765e60a2c156f713dfdcff5
+SHA1: 8fa4617a07726c278976a60bf4ff193fe751300e
+SHA256: ee2380d9fa0bee467b07035c799aecc734009dc596a8c97f320994a53513a75e
+Section: Tweaks
+Priority: optional
+Description: This is a fixer for Mobile Notes on 7.1 and 7.1.x to force display Zawgyi-One font.
+Author: Thant Thet <t+cydia@ttkz.me>
+Name: Zawgyi-One Fix for Notes.app
+
+Package: com.myrepospace.kalora.callrecorder1
+Version: 0.7-18k
+Architecture: iphoneos-arm
+Installed-Size: 1172
+Depends: mobilesubstrate (>= 0.9.5000), preferenceloader
+Filename: deb/616891.deb
+Size: 457806
+MD5sum: b9ae16767217fa41671b4cc254726fa2
+SHA1: 384be87bacb83cc2e321ea3cafa4f9dde15cea63
+SHA256: 35d0bcff09894d3901c6cadbc3217e3056415f8359d2a45960bfbdf85fb75764
+Section: Tweaks
+Description: First iPhone Call Recorder Ever!  Record regular phone calls directly on your iPhone.  Supported iOS 6.x to 8.x   Now Supports iOS 8.x including iPhone 6 and 6 Plus!!!  Audio Recorder, the so anticipated tweak for iPhone , has come to prove it was possible!  With Audio Recorder, you can record the phone calls you need to listen to later, such as business calls, appointment arrangements etc and you can store them locally on your iPhone. You can then play them, send them to your email or delete them.  There are options to automatically notify the remote party with a warning voice message that the call will be recorded at the beginning of your recording. (You are responsible for enabling or disabling this according to your country's law, since the other party's consent is necessary by law in many countries)  Audio Recorder does not use a remote server to store your calls, like other apps use as a workaround. It records directly on the device! There is no need for an internet connection when you record a call.  Although Audio Recorder can automatically notify the other party that the call is being recorded, you should be aware that recording call conversations without the other party's consent is illegal in many countries. Check to comply with your country's laws before buying or using this application. The developer or the seller take no responsibility if you use this application in any way that would result in breaking the law.   Currently, on iPhone4S devices it only works when you switch to Speaker while in a call.  The application works on iPhone 4S,iPhone 5,iPhone 5S and iPhone 6/6 Plus devices.  The tweak that so many people have been waiting for is finally here!  Audio Recorder's price is $ 3.99  Version 0.7 Changes: Added full iOS 8.x and iPhone 6 support  Version 0.5.x Changes: Added full iOS 7.x.x and iPhone 5S support, added option to transfer license on device
+Author: Elias Limneos
+Depiction: http://repo.xarold.com/depiction.php?id=callrecorder
+Icon: file:///Library/PreferenceBundles/CallRecorderPreferences.bundle/CallRecorder@2x.png
+Name: Audio Recorder
+
+Package: com.myrepospace.thethmuswe.zawgyifont7
+Version: 0.0.3-2
+Architecture: iphoneos-arm
+Pre-Depends: firmware (>= 7.0)
+Conflicts: zawgyi-ios7-font, com.myrepospace.thethmuswe.zawgyi-ios7-font
+Filename: deb/525372.deb
+Size: 925788
+MD5sum: 5766875e81ad02ed0cf5e2541a89aae2
+SHA1: d0b8c85f0821ff3a997ee35541d834df9fe0ae5a
+SHA256: 574d35ff1e2c7d60b4c4668b553fa7c188d493cd797c4dedcae167b595e9bac9
+Description: Zawgyi font for iOS7 that works on both Notes and Mobile Safari.
+Author: Thant Thet Khin Zaw
+Name: Zawgyi Font for iOS7
+
+Package: com.rpetrich.flipcontrolcenter
+Version: 1.0.1
+Architecture: iphoneos-arm
+Maintainer: BigBoss <bigboss@thebigboss.org>
+Installed-Size: 588
+Depends: firmware (>= 7.0), mobilesubstrate (>= 0.9.5001), preferenceloader (>= 2.2.2), com.a3tweaks.flipswitch (>= 1.0.6)
+Conflicts: com.plipala.ccsettings, de.j-gessner.ccloader (<< 1.2.2), kr.slak.cctoggles
+Replaces: com.plipala.ccsettings, de.j-gessner.ccloader (<< 1.2.2), kr.slak.cctoggles
+Filename: deb/com.rpetrich.flipcontrolcenter_1.0.1_iphoneos-arm.deb
+Size: 124404
+MD5sum: 2f99ea4457452c821b29638aef114175
+SHA1: d4176463f691d3a79e4c94c8b85082d2b1727a22
+SHA256: debdab2d2795d7bc01fe888293f9356e5adf092ccdcdcc09d73013b7f89a82ba
+Section: Tweaks
+Priority: optional
+Homepage: http://rpetri.ch/cydia/flipcontrolcenter/
+Description: Customizable Control Center Switches
+Tag: purpose::extension
+Author: Ryan Petrich <rpetrich+flipcontrolcenter@gmail.com>
+Depiction: http://rpetri.ch/cydia/flipcontrolcenter/
+Dev: rpetrich
+Icon: file:///System/Library/CoreServices/SpringBoard.app/controlcenter.png
+Name: FlipControlCenter
+Sponsor: thebigboss.org <http://thebigboss.org>
+
 Package: com.saurik.substrate.safemode
 Version: 0.9.5000
 Architecture: iphoneos-arm
@@ -73,6 +350,55 @@ Description: safe mode safety extension (safe)
 Author: Jay Freeman (saurik) <saurik@saurik.com>
 Depiction: http://cydia.saurik.com/info/com.saurik.substrate.safemode/
 Name: Substrate Safe Mode
+
+Package: diskdev-cmds
+Version: 421.7-4
+Architecture: iphoneos-arm
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Installed-Size: 848
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: firmware-sbin
+Filename: deb/diskdev-cmds_421.7-4_iphoneos-arm.deb
+Size: 114822
+MD5sum: 2211d78fb6bede91ba9004aad776eacf
+SHA1: 57017a698fa3ecaac06b2a1d5dbb41b8eb206bfd
+SHA256: b5d7a6f34ce77182faaa0f2de90b348497c9c1aa66a5472cc813616c01244a88
+Section: System
+Priority: required
+Description: mount, quota, fsck, fstyp, fdisk, tunefs
+
+Package: file-cmds
+Version: 220.7-3
+Architecture: iphoneos-arm
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Installed-Size: 296
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: deb/file-cmds_220.7-3_iphoneos-arm.deb
+Size: 57908
+MD5sum: be33a80c9418b5ffc318bd0219b896c1
+SHA1: 32108b96a5d650b27b55753b025143fd4119dac6
+SHA256: 80f8889db3bd710b06d161b53d09c84e9f287d6f2a149f4df5331e8696c81c46
+Section: Utilities
+Priority: important
+Description: chflags, compress, ipcrm, ipcs, pax
+
+Package: firmware-sbin
+Version: 0-1
+Architecture: iphoneos-arm
+Essential: yes
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Installed-Size: 36
+Pre-Depends: dpkg (>= 1.14.25-8)
+Replaces: system-cmds (<= 433.4-11), diskdev-cmds (<= 421.7-3)
+Filename: deb/firmware-sbin_0-1_iphoneos-arm.deb
+Size: 1106
+MD5sum: d8c93d8cbf1922225540eab132f11a8e
+SHA1: 519584d8119f0f331270822dd8d54db0e5548462
+SHA256: 17c2a22ee7e46d6d261967e4a75ba3f89062ca5f8f27f6bcaa870706c25e378e
+Section: System
+Priority: required
+Description: represents Telesphoreo / iPhoneOS conflicts
+Name: iPhone Firmware (/sbin)
 
 Package: mobilesubstrate
 Version: 0.9.5101
@@ -94,6 +420,62 @@ Author: Jay Freeman (saurik) <saurik@saurik.com>
 Depiction: http://cydia.saurik.com/info/mobilesubstrate/
 Name: Cydia Substrate
 
+Package: net.angelxwind.appsyncunified
+Version: 5.3-1
+Architecture: iphoneos-arm
+Maintainer: Karen Tsai (angelXwind) <angelXwind@angelxwind.net>
+Installed-Size: 284
+Depends: firmware (>= 5.0), mobilesubstrate (>= 0.9.5100)
+Conflicts: us.hackulo.appsync50, us.hackulo.appsync50plus, com.hackyouriphone.appsync7, com.teiron.ppsync, appsync50plus2.25pp, com.linusyang.appsync, com.sull.appsyncunified, com.sull.appsyncunifiedbeta, com.xsellize.appsync50, com.xsellize.appsync50plus, appsync50plus.178, appsync50plus2.178
+Replaces: us.hackulo.appsync50
+Provides: appsync
+Filename: deb/nodelete-net.angelxwind.appsyncunified.deb
+Size: 36904
+MD5sum: 2211badf93b662fd3d9b6f93c02692af
+SHA1: 80c6a928a249c262e9ee060d9e603f5b7346e456
+SHA256: e1278b5034c1146e1d24a99d5a791332b1d7e834e5d1a91ad3d65987883abd30
+Section: Tweaks
+Homepage: http://cydia.angelxwind.net/
+Description: AppSync Unified allows you to sync and install unsigned iOS applications. Works on iOS 5, 6, 7, and 8.
+Author: Linus Yang, Karen Tsai <angelXwind@angelxwind.net>
+Depiction: http://cydia.angelxwind.net/?page/net.angelxwind.appsyncunified
+Name: AppSync Unified
+
+Package: net.angelxwind.mikoto
+Version: 2.6.2-1
+Architecture: iphoneos-arm
+Maintainer: Karen Tsai (angelXwind) <angelXwind@angelxwind.net>
+Installed-Size: 4764
+Depends: firmware (>= 5.0), mobilesubstrate, preferenceloader (>= 2.2.0-1)
+Conflicts: com.sull.mikoto
+Filename: deb/nodelete-net.angelxwind.mikoto.deb
+Size: 3150582
+MD5sum: e9177d06c2653de071da2dd228f83d09
+SHA1: fadc318d30df0ceb93c1b63f37be2c565d723736
+SHA256: acedd2ab9274f8a42c5f22d6d9d98b0ce8c719124af1ff96894addd9c3cfd9e7
+Section: Tweaks
+Homepage: http://cydia.angelxwind.net/
+Description: Customize your apps and iOS!
+Author: Karen Tsai (angelXwind) <angelXwind@angelxwind.net>
+Depiction: http://cydia.angelxwind.net/?page/net.angelxwind.mikoto
+Icon: file:///Library/PreferenceBundles/mikotoPreferences.bundle/mikoto@2x.png
+Name: mikoto
+
+Package: p7zip
+Version: 4.57-3p
+Architecture: iphoneos-arm
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Installed-Size: 4328
+Filename: deb/p7zip_4.57-3p_iphoneos-arm.deb
+Size: 1595788
+MD5sum: 80396bec09f94e23cd1d59fe818cbf5f
+SHA1: ee4d0b30cb5628a31830cab89df3764cdfb27015
+SHA256: 72035b550c364ca25362a7f2dbf67254950da2c5989347a40f860eb56508816e
+Section: Archiving
+Priority: optional
+Description: claims to be a good compressor
+Name: 7-zip (POSIX)
+
 Package: preferenceloader
 Version: 2.2.2
 Architecture: iphoneos-arm
@@ -113,4 +495,98 @@ Author: Dustin Howett <dustin@howett.net>
 Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=preferenceloader2Data
 Dev: dustinhowett
 Name: PreferenceLoader
+
+Package: ttkz.FixViberInput
+Version: 1.0-1
+Architecture: iphoneos-arm
+Depends: firmware (>= 7.0), mobilesubstrate
+Filename: deb/ttkz.FixViberInput_1.0-1_iphoneos-arm.deb
+Size: 7092
+MD5sum: cc16a30240de84f0c9990fef0d550b6f
+SHA1: e4995c57a389ebf7bfc1b9aa0c5e22c9c84b2ee3
+SHA256: 75fbcee02c5bdb73ff252ed82e9c76bc76a764d1c8a67ea11594b8d13a5d438a
+Section: Tweaks
+Priority: optional
+Description: Fixes Viber not to delete multiple characters when using with Asian languages
+Author: Thant Thet Khin Zaw
+Depiction: Fixes Viber not to delete multiple characters when using with Asian languages
+Name: FixViberInput
+
+Package: ttkz.ttkb7
+Version: 1.3.2-0
+Architecture: iphoneos-arm
+Maintainer: Thant Thet Khin Zaw <t+cydia@ttkz.me>
+Pre-Depends: firmware (>=7.0)
+Depends: ttkz.FixViberInput, mobilesubstrate (>=0.9-3069)
+Filename: deb/ttkz.ttkb7_1.3.2-0_iphoneos-arm.deb
+Size: 231846
+MD5sum: f926e211ea3260556685b980e378f9f6
+SHA1: 801bc4e36965f8c1e59f9aad5378e3a76ff23f4d
+SHA256: e25dc099cbb3f0a836468193ef218112c26e6e6272c39d17eb6b1b3856f0ff35
+Section: Keyboards
+Homepage: http://ttkz.me/mmkeyboard7
+Description: ttKeyboard - iOS7 အတြက္ ေဇာ္ဂ်ီ ကီးဘုတ္
+Author: Thant Thet Khin Zaw <t+cydia@ttkz.me>
+Depiction: http://ttkz.me/mmkeyboard7
+Name: ttKeyboard for iOS7
+Support: http://ttkz.me/mmkeyboard7
+
+Package: ttkz.zawgyifont7
+Version: 0.0.3-2
+Architecture: iphoneos-arm
+Maintainer: Thant Thet Khin Zaw
+Installed-Size: 2080
+Pre-Depends: firmware (>=7.0)
+Conflicts: zawgyi-ios7-font
+Filename: deb/ttkz.zawgyifont7_0.0.3-2_iphoneos-arm.deb
+Size: 925838
+MD5sum: f87ae7e3eefb35f9397ca87fa6d7e8f2
+SHA1: fc8de8bab0215d8c08809fb6c4c7584a6f3a5cb6
+SHA256: b6386ff2b641f4c716b3312d1f6a810acacce8333343fd9086f01b5983afb851
+Section: Fonts
+Description: Zawgyi font for iOS7 that works on both Notes and Mobile Safari.
+Author: Thant Thet Khin Zaw
+Name: Zawgyi Font for iOS7
+
+Package: unrar
+Version: 3.6.8-2p
+Architecture: iphoneos-arm
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Installed-Size: 292
+Filename: deb/unrar_3.6.8-2p_iphoneos-arm.deb
+Size: 141040
+MD5sum: 6b4047075066f85147c348639c771ac6
+SHA1: ff8461d90cfe629c920eb4a4a6d13091e29195a8
+SHA256: 9e6102512ea1208890ce33a61c76756c9d554b1867b4b08bedbd7ab855c28596
+Section: Archiving
+Priority: optional
+Description: de-compresses files in rar format
+
+Package: unzip
+Version: 5.52-5p
+Architecture: iphoneos-arm
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Installed-Size: 316
+Filename: deb/unzip_5.52-5p_iphoneos-arm.deb
+Size: 148628
+MD5sum: 97d055ec9b4aa2d13f9c6c632e3b6c06
+SHA1: e3baaeff6c973831749a8a066441f896fa1616f8
+SHA256: e552bdd910ddef6db8a0ca0858ca5b355aa15ef758a9eeab71d0b0a3f3c86930
+Section: Archiving
+Priority: important
+Description: de-compesses files in zip format
+
+Package: zip
+Version: 2.32-5p
+Architecture: iphoneos-arm
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Installed-Size: 232
+Filename: deb/zip_2.32-5p_iphoneos-arm.deb
+Size: 98846
+MD5sum: 4407f210f74b9fbb28284861cf11a7cd
+SHA1: 9301792e1289f038855244c15556a4ddc2648067
+SHA256: 0247dbc1f83d493f514d5e684f0734f56d4bd9f036207a4b139af9d482a619a5
+Section: Archiving
+Priority: important
+Description: standard Windows compression tool
 
