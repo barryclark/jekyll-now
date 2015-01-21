@@ -6,4 +6,3 @@ Architecture: iphoneos-arm
 Description: iOS 7-8 Compatible Cydia Repo Sources Pack
 Name: iOS 8-8.1.2 Sources
 Author: Shein Myint Aung
-Icon: file:///etc/apt/sources.list.d/icons@2x.png
