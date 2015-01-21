@@ -54,6 +54,7 @@ my $output = "";
 foreach (@files) {
  	my $fname = $_;
     my $Maintainer = "IT STAR <itstar4tech@gmail.com>";
+    my $Homepage = "http://iosrepo.cu.cc"
     my $Package = "cc.cu.iosrepo.".$fname;
 	my $md5 =  md5sum($fname);
 	my $size = -s $fname;
