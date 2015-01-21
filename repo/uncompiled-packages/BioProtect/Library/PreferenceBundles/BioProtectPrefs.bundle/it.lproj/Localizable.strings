@@ -1,0 +1,41 @@
+{
+	"GLOBAL_SETTINGS" = "Impostazioni globali";
+	"ENABLED" = "Abilitato";
+	"VIBRATE_ON_ERROR" = "Vibrazione quando errato";
+	"RECOVERY_OPTIONS" = "Opzioni di recupero";
+	"PROTECTED_APPLICATIONS" = "Applicazioni protette";
+	"ADD_PASSCODE" = "Aggiungi una password di recupero";
+	"REMOVE_PASSCODE" = "Rimuovi la password di recupero";
+	"CHANGE_PASSCODE" = "Cambia la passoword di recupero";
+	"ENTER_PASSCODE" = "Inserisci una password di recupero";
+	"ENTER_OLD_PASSCODE" = "Inserisci la vecchia password di recupero";
+	"REENTER_PASSCODE" = "Reinserisci la password di recupero";
+	"PASSCODES_DID_NOT_MATCH_TRY_AGAIN" = "Le due password non corrispondono. Riprova.";
+	"WRONG_PASSCODE_TRY_AGAIN" = "Password errata. Riprova!";
+
+	"TOO_MANY_ATTEMPTS_SORRY" = "Spiacente, troppi tentativi.";
+	"CANCEL" = "Cancel";
+
+	"NO_FINGERPRINT_SET" = "Non hai salvato nessun'impronta. Per abilitare quest'app, Devi avere almeno un'imporonta salvata. Vuoi salvarne una adesso?";
+	"NO" = "No";
+	"YES_PLEASE" = "Si, per favore!";
+
+	"PLEASE_AUTHENTICATE" = "Posiziona il dito sul sensore per l'autenticazione.";
+	"ADDED_FIRST_FINGERPRINT_AFTER_REBOOT" = "Hai aggiunto un'impronta mentre avevi un codice attivo. Il dispositivo si bloccherà in %d secondi per ricostruire le informazioni di sicurezza.";
+	"ALL_FINGERPRINTS_REMOVED" = "Tutte le impronte sono state eliminate. Se avevi protetto qualche applicazione, ora le app non sono più protette. Aggiungi almeno un'impronta per riabilitare la protezione.";
+
+	"AUTHENTICATION_FAILED" = "Autenticazione fallita!";
+	"TRY_CLEANING" = "Prova a pulire il tuo dito o il tasto home!";
+	"OKAY" = "OK";
+
+	"CIRCLE_COLOR" = "Colore del cerchio";
+	"CHOOSE_COLOR" = "Scegli un colore";
+	"PROTECT_SWITCHER" = "Proteggi AppSwitcher";
+	"TRANSLATOR" = "@lucadaddabbo";
+    
+    "TRANSLATION_CREDITS"="Crediti per la traduzioni";
+    
+    "LANGUAGE" = "Italiano";
+    "LANGUAGE_IN_ENGLISH" = "Italian";
+	
+}

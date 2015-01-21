@@ -1,0 +1,42 @@
+{
+	"GLOBAL_SETTINGS" = "Ustawienia Globalne";
+	"ENABLED" = "Włączony";
+	"VIBRATE_ON_ERROR" = "Wibruj jeśli wystąpi błąd";
+	"RECOVERY_OPTIONS" = "Opcje Odzyskiwania";
+	"PROTECTED_APPLICATIONS" = "Chronione Aplikacje";
+	"ADD_PASSCODE" = "Dodaj hasło do odzyskiwania";
+	"REMOVE_PASSCODE" = "Usuń hasło do odzyskiwania";
+	"CHANGE_PASSCODE" = "Zmień hasło do odzyskiwania";
+	"ENTER_PASSCODE" = "Wprowadź hasło do odzyskiwania";
+	"ENTER_OLD_PASSCODE" = "Wprowadź stare hasło do odzyskiwania";
+	"REENTER_PASSCODE" = "Ponownie wprowadź hasło do odzyskiwania";
+	"PASSCODES_DID_NOT_MATCH_TRY_AGAIN" = "Hasła nie pasują do siebie. Spróbuj ponownie.";
+	"WRONG_PASSCODE_TRY_AGAIN" = "Błędne hasło. Spróbuj ponownie.";
+
+	"TOO_MANY_ATTEMPTS_SORRY" = "Za dużo prób. Przykro mi.";
+	"CANCEL" = "Anuluj";
+
+	"NO_FINGERPRINT_SET" = "Nie masz ustawionych żadnych odcisków palca. Aby włączyć tą aplikację, musisz mieć ustawiony przynajmniej jeden odcisk palca. Czy chciałbyś ustawić go teraz?";
+	"NO" = "Nie";
+	"YES_PLEASE" = "Tak, proszę";
+
+	"PLEASE_AUTHENTICATE" = "Proszę zweryfikować używając swojego odcisku palca";
+	"ADDED_FIRST_FINGERPRINT_AFTER_REBOOT" = "Dodałeś odcisk palca podczas włączonego zabezpieczenia hasłem. Urządzenie zostanie zablokowane za %d sekund w celu odbudowy ochronnych informacji";
+	"ALL_FINGERPRINTS_REMOVED" = "Wszystkie odciski palca zostały usunięte. Jeżeli miałeś jakieś aplikacje pod ochroną, nie będą one dłużej chronione. Dodaj przynajmniej jeden odcisk palca, aby ponownie włączyć ochronę.";
+
+	"AUTHENTICATION_FAILED" = "Weryfikacja nie powiodła się";
+	"TRY_CLEANING" = "Spróbuj wyczyścić końcówkę palca i/lub przycisk Home";
+	"OKAY" = "Ustaw";
+
+	"CIRCLE_COLOR" = "Kolor Okręgu";
+	"CHOOSE_COLOR" = "Wybierz kolor";
+	"PROTECT_SWITCHER" = "Chroń AppSwitcher";
+
+	"TRANSLATION_CREDITS"="Tłumacze";
+
+	"LANGUAGE" = "Polski";
+	"LANGUAGE_IN_ENGLISH" = "Polish";
+	"TRANSLATOR" = "@RadZol";
+
+	
+}

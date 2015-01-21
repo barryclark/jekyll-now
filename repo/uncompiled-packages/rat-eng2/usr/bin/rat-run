@@ -1,0 +1,957 @@
+#!/bin/bash
+#  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#  Title: iLEX R.A.T.
+#  Author: iLEX
+#  Contact: ilexrepo@gmail.com
+#  Copyright iLEX R.A.T. © 2014
+#  The Official Twitter Page: http://twitter.com/iLEXiNFO
+#  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+#  Thanks to Andrew Liu (Rootify), brc0703.
+
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+
+    echo "© iLEX R.A.T., 2014, twitter.com/iLEXiNFO"
+    echo
+    echo "1. Remove All Cydia App Tweaks At Once."
+    echo "2. Remove All Tweaks Settings."
+    echo ""
+    echo "3. Cydia Clear Cache."
+    echo "4. Cydia Troubleshooting."
+    echo "5. Cydia Repair."
+    echo "6. Cydia Reinstall."
+    echo ""
+    echo "7. Clearing Cache iOS."
+    echo "8. Reset Settings iOS."
+    echo "9. Reset Settings Icon."
+    echo "0. Remove All Apps."
+    echo ""
+    echo "10. Backup All Cydia Tweaks & Dependencies to DEB."
+    echo "11. Restore All Cydia Tweaks & Dependencies."
+    echo ""
+    echo "12. iLEX-RESTORE: Revive, Speed Up, Clean Up."
+    echo ""
+echo "Type a number and press enter:"
+    echo ""
+read person
+case "$person" in
+
+
+  "1" | "1" )
+  echo
+ratdel
+exit
+  ;;
+
+
+  "2" | "2" )
+  echo
+ratdelcfg
+  ;;
+
+
+  "3" | "3" )
+ echo
+
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+
+killall kill MobileCydia &> /dev/null
+sleep 3s 
+
+rm -rf /var/lib/apt/lists/*Packages* &> /dev/null
+rm -rf /var/lib/apt/lists/*Release* &> /dev/null
+rm -rf /var/lib/apt/lists/partial/* &> /dev/null
+apt-get clean
+
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+
+echo "Cydia cache cleared"
+
+echo ''
+
+echo ''
+echo "Press enter";
+read num;
+rat
+exit 0;
+
+exit
+  ;;
+
+
+  "4" | "4" )
+  echo
+
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+
+killall kill MobileCydia &> /dev/null
+sleep 3s 
+
+apt-get update
+
+
+echo ''
+echo "Press enter";
+read num;
+rat
+exit 0;
+
+exit
+  ;;
+
+
+  "5" | "5" )
+ echo
+
+
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+
+killall kill MobileCydia &> /dev/null
+sleep 3s 
+
+rm -rf /var/lib/dpkg/updates/*
+rm -rf /var/lib/dpkg/tmp.ci/*
+rm -rf /var/lib/dpkg/alternatives/*
+
+apt-get clean
+apt-get autoclean
+apt-get update
+apt-get upgrade
+dpkg --configure -a
+apt-get -f install
+apt-get autoremove
+dpkg --configure -a
+apt-get update
+apt-get upgrade
+apt-get clean
+apt-get autoclean
+
+# apt-get remove cydia
+# apt-get install cydia
+
+
+echo ''
+
+echo "Done!"
+echo "It is desirable to restart your device"
+
+echo ''
+sleep 3s 
+
+echo "Do you want to Reboot (y/n)?"
+read answer
+if [ "$answer" == "y" ]; then
+reboot 2>/dev/null
+else
+echo ""
+fi
+
+rat
+exit 0;
+
+exit
+  ;;
+
+
+
+
+
+"6" | "6" )
+ echo
+
+
+
+
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+
+
+
+echo -n "Cydia will be removed and re-installed!
+Do you Want To Continue?
+Are you sure? [y/n]: "
+read item
+case "$item" in
+    y|Y) echo ""
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+killall kill MobileCydia &> /dev/null
+killall -1 apt-get &> /dev/null
+killall -1 aptitude &> /dev/null
+killall -1 dpkg &> /dev/null
+dpkg -P --force-remove-reinstreq --force-depends cydia &> /dev/null
+
+echo ''
+echo "Cydia removed..."
+echo ''
+sleep 3s 
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo ''
+echo "Re-installed Cydia..."
+echo ''
+sleep 3s 
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+dpkg -i --force-architecture --force-depends /var/mobile/Cydia/*.deb
+echo ''
+echo "Done!"
+echo ''
+echo "If no icons Cydia on SpringBoard
+Reboot your device!"
+echo ''
+echo ''
+sleep 3s
+exit 0
+        ;;
+    n|N) 
+
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo "Frightened? :)))"
+echo ''
+sleep 2s
+rat
+        ;;
+    *) echo "..."
+rat
+        ;;
+esac
+exit
+  ;;
+
+
+
+
+"7" | "7" )
+ echo
+
+
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+
+
+
+echo -n "Clearing Cache iOS!
+Do you Want To Continue?
+Are you sure? [y/n]: "
+read item
+case "$item" in
+    y|Y) echo ""
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+# rm -rf /var/mobile/Library/Caches/* &> /dev/null
+# find /var/mobile/Library/Caches/ ! -name "libactivator.plist" -a ! -name "libactivator.plist"  -type f -exec rm -rf {} \; &> /dev/null
+find /var/mobile/Library/Caches \! -name "libactivator.plist" -type f -exec rm {} \; &> /dev/null
+for dir in `find /var/mobile/Library/Caches -type d | sort -r` ; do rmdir $dir ; done &> /dev/null
+echo ''
+echo ''
+sleep 1s 
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo ''
+echo ''
+sleep 2s 
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo ''
+echo "Done!"
+echo "Reboot device!"
+echo ''
+sleep 3s
+echo ''
+
+echo "Do you want to Reboot (y/n)?"
+read answer
+if [ "$answer" == "y" ]; then
+reboot 2>/dev/null
+else
+echo ""
+fi
+
+echo ''
+rat
+        ;;
+    n|N) 
+
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo "Frightened? :)))"
+echo ''
+sleep 2s
+rat
+        ;;
+    *) echo "..."
+rat
+        ;;
+esac
+exit 0
+  ;;
+
+
+"8" | "8" )
+ echo
+
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo -n "Reset Settings iOS?
+Do you Want To Continue?
+Are you sure? [y/n]: "
+read item
+case "$item" in
+    y|Y) echo ""
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+# rm -rf /var/mobile/Library/Preferences/* &> /dev/null
+find /var/mobile/Library/Preferences \( -name "*com.apple.*.plist*" -o  -name "*.GlobalPreferences.plist*" -o  -name "*com.apple.apsd.launchd*" \) -exec rm {} \; &> /dev/null
+# rm -rf /var/mobile/Library/Caches/* &> /dev/null
+# find /var/mobile/Library/Caches/ ! -name "libactivator.plist" -a ! -name "libactivator.plist"  -type f -exec rm -rf {} \; &> /dev/null
+find /var/mobile/Library/Caches \! -name "libactivator.plist" -type f -exec rm {} \; &> /dev/null
+for dir in `find /var/mobile/Library/Caches -type d | sort -r` ; do rmdir $dir ; done &> /dev/null
+rm -rf /var/mobile/Library/SpringBoard/applicationstate.plist &> /dev/null
+rm -rf /var/mobile/Library/SpringBoard/transientSettings.plist &> /dev/null
+rm -rf /var/mobile/Library/SpringBoard/LockBackgroundThumbnail.jpg &> /dev/null
+rm -rf /var/mobile/Library/SpringBoard/LockBackground.cpbitmap &> /dev/null
+rm -rf /var/mobile/Library/SpringBoard/PushStore/* &> /dev/null
+rm -rf /var/mobile/Library/BulletinBoard/* &> /dev/null
+echo ''
+echo ''
+sleep 1s 
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo ''
+echo ''
+sleep 2s 
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo ''
+echo ''
+echo "Done!"
+echo "Reboot device!"
+echo ''
+sleep 3s
+echo ''
+
+echo "Do you want to Reboot (y/n)?"
+read answer
+if [ "$answer" == "y" ]; then
+reboot 2>/dev/null
+else
+echo ""
+fi
+
+
+rat
+        ;;
+    n|N) 
+
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo "Frightened? :)))"
+echo ''
+sleep 2s
+rat
+        ;;
+    *) echo "..."
+rat
+        ;;
+esac
+exit 0
+  ;;
+
+
+
+"9" | "9" )
+ echo
+
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo -n "Reset Settings Icon?
+Do you Want To Continue?
+Are you sure? [y/n]: "
+read item
+case "$item" in
+    y|Y) echo ""
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+rm -rf /var/mobile/Library/SpringBoard/DesiredIconState.plist &> /dev/null
+rm -rf /var/mobile/Library/SpringBoard/DesiredIconSupportState.plist &> /dev/null
+rm -rf /var/mobile/Library/SpringBoard/IconState.plist &> /dev/null
+rm -rf /var/mobile/Library/SpringBoard/IconSupportState.plist &> /dev/null
+rm -rf /var/mobile/Library/Caches/com.apple.IconsCache/* &> /dev/null
+echo ''
+echo ''
+sleep 1s 
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo ''
+echo ''
+sleep 2s 
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo ''
+echo ''
+echo "Done!"
+echo "Respring!"
+sleep 2s
+echo ''
+
+
+echo "Do you want to Respring (y/n)?"
+read answer
+if [ "$answer" == "y" ]; then
+killall -1 SpringBoard &> /dev/null
+exit 0
+else
+echo ""
+fi
+
+
+echo ''
+sleep 3s
+rat
+        ;;
+    n|N) 
+
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo "Frightened? :)))"
+echo ''
+sleep 2s
+rat
+        ;;
+    *) echo "..."
+rat
+        ;;
+esac
+exit 0
+  ;;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"0" | "0" )
+ echo
+
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo -n "Remove All Apps?
+Do you Want To Continue?
+Are you sure? [y/n]: "
+read item
+case "$item" in
+    y|Y) echo ""
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+
+
+sleep 2s 
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo ''
+echo ''
+echo "Please wait..."
+echo ""
+
+
+
+APP_DIR="/var/mobile/Applications"
+BACKUP_DIR="/tmp/999"
+
+rm -rf /tmp/999  &> /dev/null
+
+for i in $(find ${APP_DIR} -name Weather.app -exec dirname {} \;);
+
+
+do
+        mkdir -p ${BACKUP_DIR}
+        cp -a ${i}/ ${BACKUP_DIR}
+done
+
+
+
+APP_DIR="/var/mobile/Applications"
+BACKUP_DIR="/tmp/999"
+
+
+for i in $(find ${APP_DIR} -name WebViewService.app -exec dirname {} \;);
+
+
+do
+        mkdir -p ${BACKUP_DIR}
+        cp -a ${i}/ ${BACKUP_DIR}
+done
+
+
+
+
+cd ${BACKUP_DIR}
+
+
+
+rm -rf /var/mobile/Applications/*  &> /dev/null
+mv /tmp/999/* /var/mobile/Applications
+
+
+
+echo ''
+echo ''
+sleep 1s 
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo ''
+echo ''
+sleep 2s 
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo ''
+echo ''
+echo "Done!"
+echo "Reboot!!!"
+sleep 3s
+echo ''
+
+echo "Do you want to Reboot (y/n)?"
+read answer
+if [ "$answer" == "y" ]; then
+reboot 2>/dev/null
+else
+echo ""
+fi
+
+# reboot 2>/dev/null
+rat
+exit 0
+echo ''
+sleep 3s
+rat
+        ;;
+    n|N) 
+
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo "Frightened? :)))"
+echo ''
+sleep 2s
+rat
+        ;;
+    *) echo "..."
+rat
+        ;;
+esac
+exit 0
+  ;;
+
+
+
+
+
+
+
+
+
+
+
+
+"10" | "10" )
+ echo
+
+
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+
+echo 'Start Backup All Cydia Tweaks to DEB...'
+sleep 3s 
+
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+
+ratdebpack
+echo ''
+echo ''
+echo "Done!"
+echo ''
+echo "Archive - /var/mobile/Media/general_storage/iLEX/deb"
+echo "Copy folder iLEX to your computer."
+echo "Restore - return folder and select 11."
+
+
+
+
+echo ''
+echo "Press enter"
+read num;
+rat
+exit 0;
+
+
+exit
+  ;;
+
+
+
+
+"11" | "11" )
+ratdebinstall
+
+exit
+  ;;
+
+
+
+
+
+
+
+"12" | "12" )
+
+
+
+
+
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo -n "WARNING!
+Erase All Content and Settings!
+Jailbreak and Unlock Stay!
+
+Do you Want To Continue?
+Are you sure? [y/n]: "
+read item
+case "$item" in
+    y|Y) echo ""
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+
+
+
+
+sleep 2s 
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo ''
+echo ''
+echo "Please wait..."
+echo ""
+
+
+
+rm -rf /tmp/999  &> /dev/null
+
+APP_DIR="/var/mobile/Applications"
+BACKUP_DIR="/tmp/999"
+
+for i in $(find ${APP_DIR} -name Weather.app -exec dirname {} \;);
+do
+        mkdir -p ${BACKUP_DIR}
+        cp -a ${i}/ ${BACKUP_DIR}
+done
+
+
+
+
+for i in $(find ${APP_DIR} -name WebViewService.app -exec dirname {} \;);
+do
+        cp -a ${i}/ ${BACKUP_DIR}
+done
+
+
+
+
+
+
+
+rm -rf /private/var/iLEXTEMP  &> /dev/null
+
+mkdir /private/var/iLEXTEMP  &> /dev/null
+chown -R mobile:mobile /private/var/iLEXTEMP  &> /dev/null
+chmod -R 0777 /private/var/iLEXTEMP  &> /dev/null
+
+mv /private/var/mobile/Library/VoiceServices /private/var/iLEXTEMP 2>/tmp/ilexrestore.log 1>&2
+mv /private/var/mobile/Library/PreinstalledAssets /private/var/iLEXTEMP 2>/tmp/ilexrestore.log 1>&2
+mv /private/var/mobile/.localized /private/var/iLEXTEMP/.localized 2>/tmp/ilexrestore.log 1>&2
+
+
+rm -rf /private/var/mobile/* 2>/tmp/ilexrestore.log 1>&2
+rm -rfv /private/var/mobile/*
+rm -rf /private/var/mobile/*
+
+mkdir /var/mobile/Applications
+chown -R mobile:mobile /var/mobile/Applications
+chmod -R 0755 /var/mobile/Applications
+
+mkdir /var/mobile/Library
+chown -R mobile:mobile /var/mobile/Library
+chmod -R 0711 /var/mobile/Library
+
+mkdir /var/mobile/Media
+chown -R mobile:mobile /var/mobile/Media
+chmod -R 0750 /var/mobile/Media
+
+mkdir /var/mobile/Media/DCIM
+chown -R mobile:mobile /var/mobile/Media/DCIM
+chmod -R 0755 /var/mobile/Media/DCIM
+
+mkdir /var/mobile/Media/PhotoData
+chown -R mobile:mobile /var/mobile/Media/PhotoData
+chmod -R 0750 /var/mobile/Media/PhotoData
+
+mkdir /var/mobile/Media/Photos
+chown -R mobile:mobile /var/mobile/Media/Photos
+chmod -R 0750 /var/mobile/Media/Photos
+
+
+mkdir /var/mobile/Library/AddressBook
+mkdir /var/mobile/Library/Caches
+mkdir /var/mobile/Library/Cookies
+mkdir /var/mobile/Library/Inboxes
+mkdir /var/mobile/Library/Keyboard
+mkdir /var/mobile/Library/Logs
+mkdir /var/mobile/Library/Preferences
+mkdir /var/mobile/Library/PreinstalledAssets
+mkdir /var/mobile/Library/Safari
+mkdir /var/mobile/Library/WebClips
+mkdir /var/mobile/Library/WebKit
+chown -R mobile:mobile /var/mobile/Library/AddressBook
+chmod -R 0700 /var/mobile/Library/AddressBook
+chown -R mobile:mobile /var/mobile/Library/Caches
+chmod -R 0777 /var/mobile/Library/Caches
+chown -R mobile:mobile /var/mobile/Library/Cookies
+chmod -R 0700 /var/mobile/Library/Cookies
+chown -R mobile:mobile /var/mobile/Library/Inboxes
+chmod -R 0755 /var/mobile/Library/Inboxes
+chown -R mobile:mobile /var/mobile/Library/Keyboard
+chmod -R 0700 /var/mobile/Library/Keyboard
+chown -R mobile:mobile /var/mobile/Library/Logs
+chmod -R 0755 /var/mobile/Library/Logs
+chown -R mobile:mobile /var/mobile/Library/Preferences
+chmod -R 0755 /var/mobile/Library/Preferences
+chown -R mobile:mobile /var/mobile/Library/PreinstalledAssets
+chmod -R 0755 /var/mobile/Library/PreinstalledAssets
+chown -R mobile:mobile /var/mobile/Library/Safari
+chmod -R 0700 /var/mobile/Library/Safari
+chown -R mobile:mobile /var/mobile/Library/WebClips
+chmod -R 0700 /var/mobile/Library/WebClips
+chown -R mobile:mobile /var/mobile/Library/WebKit
+chmod -R 0700 /var/mobile/Library/WebKit
+
+
+cd /var/mobile &> /dev/null
+mkdir Media &> /dev/null
+cd /var/mobile/Media &> /dev/null
+mkdir general_storage &> /dev/null
+chown -R mobile:mobile /var/mobile/Media &> /dev/null
+chown -R mobile:mobile /var/mobile/Media/general_storage &> /dev/null
+
+
+
+rm -rfv /var/wireless/Library/*
+rm -rfv /var/wireless/awdd
+rm -rf /var/root/Library/Caches/*
+rm -rf /var/root/Library/Cookies/*
+rm -rf /var/root/Library/Keyboard/*
+rm -rf /var/root/Library/Logs/*
+rm -rf /var/root/Library/Preferences/*
+rm -rf /var/root/Library/com.apple.itunesstored/*
+
+
+
+
+mv /private/var/iLEXTEMP/VoiceServices /private/var/mobile/Library
+mv /private/var/iLEXTEMP/PreinstalledAssets /private/var/mobile/Library
+mv /private/var/iLEXTEMP/.localized /private/var/mobile/.localized
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+mv /tmp/999/* /var/mobile/Applications
+
+#rm -rf /Library/Preferences/*
+
+
+
+
+
+
+
+
+
+sleep 2s 
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo ''
+echo ''
+echo "Please wait..."
+echo ""
+
+
+ratdel2
+
+
+
+
+
+
+
+echo ''
+echo ''
+sleep 1s 
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo ''
+echo ''
+sleep 2s 
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo ''
+echo ''
+echo "Done!"
+echo "Reboot!!!"
+sleep 3s
+echo ''
+
+
+
+echo "Do you want to Reboot (y/n)?"
+read answer
+if [ "$answer" == "y" ]; then
+reboot 2>/dev/null
+else
+echo ""
+fi
+
+
+
+# reboot 2>/dev/null
+exit 0
+echo ''
+
+
+
+
+
+
+
+
+
+
+
+  ;;
+    n|N) 
+
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo "Frightened? :)))"
+echo ''
+sleep 2s
+rat
+        ;;
+    *) echo "..."
+rat
+        ;;
+esac
+exit 0
+  ;;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          * )
+   # 
+   #
+   echo
+   echo ""
+
+
+
+  ;;
+
+esac
+
+echo
+
+exit 0

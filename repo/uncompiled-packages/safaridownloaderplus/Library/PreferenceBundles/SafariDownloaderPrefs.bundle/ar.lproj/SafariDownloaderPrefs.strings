@@ -1,0 +1,25 @@
+
+/*--------------------------------------------------------------- */
+/* PREFS VIEW */
+/*--------------------------------------------------------------- */
+
+"Download regular files"        = "Download regular files";
+"Regular Files"                 = "Regular Files";
+"Download videos"               = "Download videos from websites";
+"Desktop User Agent"            = "Desktop User Agent";
+"Auto Detect MIME Types"        = "Auto Detect MIME Types";
+"Remember Drag Position"        = "Remember Drag Position";
+"2 Fingers Swipe"               = "2 Fingers Swipe";
+"File Types"                    = "File Types";
+"Max Concurrent Downloads"      = "Max Concurrent Downloads";
+"Version"                       = "Version";
+
+"Some settings require"         = "Some settings require restarting Safari App to take effect.";
+
+"Disable this to"               = "Disable this to prevent Safari from constantly prompting you to download a file and only give you the option when you manually tap and hold a link.";
+
+"Vibrate on Finish"             = "Vibrate on Finish";
+"Vibrate when"                  = "Vibrate when a download is finished.";
+"Reset All Settings"            = "Reset All Settings";
+"In case of a persistent"       = "In case of a persistent malfunction, try this reset option.";
+"Remove all failed"             = "Remove all failed downloads to gain some disk space.";

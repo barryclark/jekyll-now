@@ -1,0 +1,39 @@
+{
+	"GLOBAL_SETTINGS" = "Réglages généraux ";
+	"ENABLED" = "Activé";
+	"VIBRATE_ON_ERROR" = "Vibre si erreur";
+	"RECOVERY_OPTIONS" = "Options de secours";
+	"PROTECTED_APPLICATIONS" = "Applications protégées";
+	"ADD_PASSCODE" = "Ajoutez un mot de passe de secours";
+	"REMOVE_PASSCODE" = "Effacez le mot de passe de secours";
+	"CHANGE_PASSCODE" = "Changez le mot de passe de secours";
+	"ENTER_PASSCODE" = "Entrez un mot de passe de secours";
+	"ENTER_OLD_PASSCODE" = "Entrez l'ancien mot de passe de secours";
+	"REENTER_PASSCODE" = "Rentrez à nouveau le mot de passe de secours";
+	"PASSCODES_DID_NOT_MATCH_TRY_AGAIN" = "Les mots de passe ne correspondent pas. Réeesayez.";
+	"WRONG_PASSCODE_TRY_AGAIN" = "Mauvais mot de passe. Réessayez.";
+
+	"TOO_MANY_ATTEMPTS_SORRY" = "Trop de tentatives. Désolé.";
+	"CANCEL" = "Annuler";
+
+	"NO_FINGERPRINT_SET" = "Vous n'avez pas d'empreintes configurées. Pour activer cette application, vous devez avoir au moins une empreinte configurée. Voudriez-vous en configurer une ?";
+	"NO" = "Non";
+	"YES_PLEASE" = "Oui, s'il vous plait";
+
+	"PLEASE_AUTHENTICATE" = "Merci de vous identifier avec votre empreinte";
+	"ADDED_FIRST_FINGERPRINT_AFTER_REBOOT" = "Vous avez ajouté une empreinte alors que vous aviez un mot de passe. L'appareil va se bloquer dans %d secondes pour récréer les informations de protection";
+	"ALL_FINGERPRINTS_REMOVED" = "Toutes les empreintes ont été retirées. Si vous aviez des applications protégées, elles ne le seront plus. Ajoutez au moins une empreinte pour activer la protection.";
+
+	"AUTHENTICATION_FAILED" = "L'authentification a échoué";
+	"TRY_CLEANING" = "Essayez de nettoyer votre doigt ou le bouton Home";
+	"OKAY" = "Okay";
+
+	"CIRCLE_COLOR" = "Cercle de couleur";
+	"CHOOSE_COLOR" = "Choisissez une couleur";
+	"PROTECT_SWITCHER" = "Protéger AppSwitcher";
+	"TRANSLATOR" = "@JBeylovesyou";
+    "LANGUAGE" = "Français";
+    "LANGUAGE_IN_ENGLISH" = "French";
+    "TRANSLATION_CREDITS"="Crédits traduction";
+	
+}

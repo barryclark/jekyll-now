@@ -1,0 +1,54 @@
+/*--------------------------------------------------------------- */
+/* IMPORT VIEW */
+/*--------------------------------------------------------------- */
+
+"Browse"                        = "Parcourir";
+"You can now browse"            = "Vous pouvez maintenant parcourir votre appareil pour importer les fichiers valables vers les applications Musique, Vidéos, Podcasts, Appareil Photo...";
+"Failed to retrieve images"     = "Failed to retrieve images.\nGive it another try!";
+
+
+
+
+"Import"                        = "Importer";
+"Import Media"                  = "Importer Le Média";
+"Select"                        = "Sélectionner";
+"Media Import Started"          = "L'importation du Média est en route";
+
+"Import is now progressing"     = "L'importation est maintenant en progrès. \nVotre Média devrait apparaître d’ici peu dans la destination correspondante.";
+
+"This app is used to import"    = "\n Cette application permet d'importer vos médias téléchargés avec Safari Downloader +.\n\nElle est lancée automatiquement lorsque vous initiez une action d'importation.\n\n\nVeuillez ne pas la supprimer tant que vous avez Safari Downloader+ installé.";
+
+
+"Kind"                          = "Type";
+"Change Artwork"                = "Changer l'ilustration";
+"Search Google Images"          = "Rechercher sur Google Images";
+"Search Photo Library"          = "Rechercher sur les Photos";
+"Preview Media"                 = "Jeter un coup d'oeil";
+"Results"                       = "Résultats";
+"Search Images"                 = "Rechercher des images";
+"Size"                          = "Taille";
+"Images"                        = "Images";
+"Please wait..."                = "Veuillez Attendre SVP...";
+"Example"                       = "Exemple";
+"Movie"                         = "Film";
+"Movie Name"                    = "Nom du film";
+"TV Episode"                    = "Episode TV";
+"Episode Name"                  = "Non de l'episode";
+"Video Podcast"                 = "Podcast Vidéo";
+"Podcast"                       = "Podcast";
+"Music Video"                   = "Music Video";
+"Song"                          = "Chanson";
+"Title"                         = "Titre";
+"Media Title"                   = "Titre du Média";
+"Artist"                        = "Artiste";
+"Artist Name"                   = "Nom de l'artiste";
+"Album"                         = "Album";
+"Album Name"                    = "Nom de l'album";
+"Genre"                         = "Genre";
+"Year"                          = "Année";
+"Name"                          = "Nom";
+"Podcast Name"                  = "Nom du Podcast";
+"Episode"                       = "Episode";
+"Series"                        = "Série";
+"Series Name"                   = "Nom de la série";
+"Season"                        = "Saison";

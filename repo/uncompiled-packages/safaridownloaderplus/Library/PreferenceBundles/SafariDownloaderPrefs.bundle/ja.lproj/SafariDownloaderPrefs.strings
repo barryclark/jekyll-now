@@ -1,0 +1,25 @@
+
+/*--------------------------------------------------------------- */
+/* PREFS VIEW */
+/*--------------------------------------------------------------- */
+
+"Download regular files"        = "Download regular files";
+"Regular Files"                 = "Regular Files";
+"Download videos"               = "Download videos from websites";
+"Desktop User Agent"            = "デスクトップユーザーエージェント";
+"Auto Detect MIME Types"        = "MIMEタイプの自動認識";
+"Remember Drag Position"        = "ドラッグ位置の記憶";
+"2 Fingers Swipe"               = "2本指のスワイプ";
+"File Types"                    = "ファイルタイプ";
+"Max Concurrent Downloads"      = "最大同時ダウンロード";
+"Version"                       = "バージョン";
+
+"Some settings require"         = "いくつかの設定を有効化するためにSafariの再起動が必要です。";
+
+"Disable this to"               = "Safariが常にファイルダウンロードを表示しないように無効化します。手動でリンクを長押ししたときにだけ表示します。";
+
+"Vibrate on Finish"             = "Vibrate on Finish";
+"Vibrate when"                  = "Vibrate when a download is finished.";
+"Reset All Settings"            = "Reset All Settings";
+"In case of a persistent"       = "In case of a persistent malfunction, try this reset option.";
+"Remove all failed"             = "Remove all failed downloads to gain some disk space.";

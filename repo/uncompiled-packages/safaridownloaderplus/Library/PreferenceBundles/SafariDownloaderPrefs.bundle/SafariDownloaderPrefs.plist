@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>title</key>
+	<string>Safari Downloader+</string>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>isStaticText</key>
+			<true/>
+			<key>label</key>
+			<string>Some settings require</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>com.ouraigua.safaridownloaderprefs</string>
+			<key>key</key>
+			<string>enabled</string>
+			<key>label</key>
+			<string>Enable Safari Downloader+</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>isStaticText</key>
+			<true/>
+			<key>footerText</key>
+			<string>Disable this to</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>com.ouraigua.safaridownloaderprefs</string>
+			<key>key</key>
+			<string>detectLink</string>
+			<key>label</key>
+			<string>Auto Detect MIME Types</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>isStaticText</key>
+			<true/>
+			<key>footerText</key>
+			<string>Vibrate when</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.ouraigua.safaridownloaderprefs</string>
+			<key>key</key>
+			<string>draggable</string>
+			<key>label</key>
+			<string>Remember Drag Position</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>com.ouraigua.safaridownloaderprefs</string>
+			<key>key</key>
+			<string>twoFingers</string>
+			<key>label</key>
+			<string>2 Fingers Swipe</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>com.ouraigua.safaridownloaderprefs</string>
+			<key>key</key>
+			<string>showGuide</string>
+			<key>label</key>
+			<string>Show Tutorial Slides</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>com.ouraigua.safaridownloaderprefs</string>
+			<key>key</key>
+			<string>isVibrate</string>
+			<key>label</key>
+			<string>Vibrate on Finish</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string></string>
+			<key>isStaticText</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkCell</string>
+			<key>detail</key>
+			<string>SFCategoriesListController</string>
+			<key>label</key>
+			<string>File Types</string>
+		</dict>
+		<dict>
+			<key>default</key>
+			<integer>4</integer>
+			<key>validValues</key>
+			<array>
+				<integer>1</integer>
+				<integer>2</integer>
+				<integer>3</integer>
+				<integer>4</integer>
+				<integer>5</integer>
+				<integer>6</integer>
+				<integer>7</integer>
+				<integer>8</integer>
+				<integer>9</integer>
+			</array>
+			<key>defaults</key>
+			<string>com.ouraigua.safaridownloaderprefs</string>
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>detail</key>
+			<string>PSListItemsController</string>
+			<key>key</key>
+			<string>maxDownloads</string>
+			<key>validTitles</key>
+			<array>
+				<string>1</string>
+				<string>2</string>
+				<string>3</string>
+				<string>4</string>
+				<string>5</string>
+				<string>6</string>
+				<string>7</string>
+				<string>8</string>
+				<string>9</string>
+			</array>
+			<key>label</key>
+			<string>Max Concurrent Downloads</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>isStaticText</key>
+			<true/>
+			<key>footerText</key>
+			<string>In case of a persistent</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>id</key>
+			<string>reset</string>
+			<key>label</key>
+			<string>Reset All Settings</string>
+			<key>action</key>
+			<string>resetButtonPressed:</string>
+			<key>detail</key>
+			<string>SafariDownloaderPrefsListController</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>isStaticText</key>
+			<true/>
+			<key>footerText</key>
+			<string>Remove all failed</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>id</key>
+			<string>clean</string>
+			<key>label</key>
+			<string>Empty Downloads Folder</string>
+			<key>action</key>
+			<string>cleanButtonPressed:</string>
+			<key>detail</key>
+			<string>SafariDownloaderPrefsListController</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>© 2014 - Jalal Ouraigua</string>
+			<key>isStaticText</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSTitleValueCell</string>
+			<key>label</key>
+			<string>Version</string>
+			<key>get</key>
+			<string>valueForSpecifier:</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string></string>
+			<key>isStaticText</key>
+			<true/>
+		</dict>
+	</array>
+</dict>
+</plist>

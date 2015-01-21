@@ -1,0 +1,37 @@
+{
+	"GLOBAL_SETTINGS" = "전역 설정";
+	"ENABLED" = "활성화"; 
+	"VIBRATE_ON_ERROR" = "에러시 진동";
+	"RECOVERY_OPTIONS" = "복구 옵션";
+	"PROTECTED_APPLICATIONS" = "잠근 앱";
+	"ADD_PASSCODE" = "암호 추가";
+	"REMOVE_PASSCODE" = "암호 제거";
+	"CHANGE_PASSCODE" = "암호 변경";
+	"ENTER_PASSCODE" = "암호 입력";
+	"ENTER_OLD_PASSCODE" = "기존 암호를 입력해 주세요.";
+	"REENTER_PASSCODE" = "암호를 다시 입력해 주세요.";
+	"PASSCODES_DID_NOT_MATCH_TRY_AGAIN" = "암호가 일치하지 않습니다. 다시 시도해 주세요.";
+	"WRONG_PASSCODE_TRY_AGAIN" = "암호가 틀립니다. 다시 시도해 주세요.";
+
+	"TOO_MANY_ATTEMPTS_SORRY" = "시도횟수를 초과하였습니다.";
+	"CANCEL" = "취소";
+
+	"NO_FINGERPRINT_SET" = "지문이 등록되지 않았습니다. 이 앱을 활성화하려면 최소한 하나 이상의 지문을 등록해야 합니다. 지금 등록하시겠습니까?";
+	"NO" = "아니오";
+	"YES_PLEASE" = "예";
+
+	"PLEASE_AUTHENTICATE" = "지문을 이용하여 인증해 주세요.";
+	"ADDED_FIRST_FINGERPRINT_AFTER_REBOOT" = "암호가 설정된 이후에 지문을 등록하였습니다. 잠금정보 재생성을 위해 기기가 %d초 후에 잠깁니다.";
+	"ALL_FINGERPRINTS_REMOVED" = "모든 지문이 삭제되었습니다. 잠금설정 해놓았던 앱들은 더 이상 보호되지 않습니다. 보호기능을 활성화하려면 지문을 등록해 주세요.";
+
+	"AUTHENTICATION_FAILED" = "인증 실패";
+	"TRY_CLEANING" = "손과 홈버튼을 깨끗이 한 후 시도해 보세요.";
+	"OKAY" = "확인";
+
+	"CIRCLE_COLOR" = "지문인식원 색";
+	"CHOOSE_COLOR" = "색상을 선택해 주세요.";
+	"PROTECT_SWITCHER" = "앱스위처 잠금";
+	"TRANSLATOR"="@orangeday";
+	"LANGUAGE_IN_ENGLISH" = "Korean";
+	
+}

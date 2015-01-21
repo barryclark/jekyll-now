@@ -1,0 +1,100 @@
+/*--------------------------------------------------------------- */
+/* MAIN VIEW */
+/*--------------------------------------------------------------- */
+
+"OK"                                        = "OK";
+"Error Occurred"                            = "Une erreur est survenue";
+"Alert"                                     = "Alerte";
+"Success"                                   = "Success";
+"Trial Expired"                             = "Version d'essai expirée";
+"Download Target"                           = "Télécharger la cible";
+"Download Image"                            = "Télécharger l'image";
+"Unavailable"                               = "Indisponible";
+"Unknown"                                   = "Unconnu";
+
+"Unable to create default save directory"   = "Impossible de créer le répertoire de sauvegarde par défaut: \"%@\".\nPrière de signaler ce problème au développeur.";
+
+"Your BETA copy"                            = "Votre copie BETA de Safari Downloader+ est maintenant expirée.\nVeuillez la désinstaller de Cydia pour continuer à utiliser Safari.\n\nMerci de votre évaluation.";
+
+"Unable to write to the Preferences file"   = "Impossible d'écrire dans le fichier de préférences. Veuillez vérifier s’il existe.";
+
+"Double-Tap me to reveal available videos"  = "Double-cliquez moi pour révéler les vidéos disponibles.\nFaites moi glisser sur l'ecran si vous avez besoin de me déplacer.\n\nVous pouvez me configurer sur l'app Paramètres pour que je me rappelle toujours de la dernière position où vous m'avez placée.\n\n\n\n ";
+
+
+
+/*--------------------------------------------------------------- */
+/* SELECT VIEW */
+/*--------------------------------------------------------------- */
+
+"Select Download"                           = "Téléchargement";
+"Download"                                  = "Télécharger";
+"View"                                      = "Lire";
+"Cancel"                                    = "Annuler";
+"Select Destination"                        = "Sélectionner La Destination";
+"Size"                                      = "Taille";
+"Size Unavailable"                          = "Taille Indisponible";
+"Create"                                    = "Créer";
+"Select"                                    = "Sélectionner";
+"Unable to write to the Preferences file"   = "Impossible de modifier le fichier de préférences.\nVeuillez vérifier s'il existe.";
+"Tap the text to change the name"           = "Cliquez sur le text pour changer le nom du fichier.\n\n ";
+
+
+
+/*--------------------------------------------------------------- */
+/* DOWNLOADS VIEW */
+/*--------------------------------------------------------------- */
+
+"Files"                                     = "Fichiers";
+"Videos"                                    = "Vidéos";
+"Open In..."                                = "Ouvrir dans...";
+"Delete From Disk"                          = "Supprimer du disque";
+"Delete"                                    = "Supprimer";
+"Clear From List"                           = "Effacer de la list";
+"Clear All"                                 = "Effacer tout";
+"Delete All"                                = "Supprimer tout";
+"Import"                                    = "Importer";
+"Import to Videos"                          = "Importer aux Vidéos";
+"Import Audio to Music"                     = "Importer l'audio vers Musique";
+"Preview"                                   = "Coup d'oeil";
+"Confirm"                                   = "Confirmer";
+"Clear"                                     = "Effacer";
+"Pirated Version!"                          = "Version Piratés!";
+"Failed to create the Preferences file"     = "Impossible de créer le fichier de préférences.";
+"Unable to connect to the internet"         = "Impossible de se connecter à l'Internet.";
+
+"This action will clear downloads"          = "Choisissez de seulement effacer la liste des téléchargements ou de tout effacer et supprimer.";
+
+"This action will clear Youtube"            = "Choisissez de seulement effacer la liste des vidéos ou de tout effacer et supprimer.";
+
+"You are using a pirated copy"              = "Vous utilisez une copie piratée de Safari Downloader+. \nPrière d'acheter votre copie afin de soutenir le développeur et encourager tous les développeurs de continuer à donner le meilleur d’eux.";
+
+"Tap the title bar to switch tabs"          = "Cliquez sur le titre pour changer d'onglet. \n\nVous pouvez également changer d'onglet en glissant avec un ou deux doigts en fonction de l'option choisie dans l'application Réglages.\n\n ";
+
+/*--------------------------------------------------------------- */
+/* TUTORIALS VIEW */
+/*--------------------------------------------------------------- */
+
+"OK. Got it."                               = "OK. Compris.";
+"Downloads"                                 = "Downloads";
+"Convenient Switch"                         = "Convenient Switch";
+"Download Videos"                           = "Download Videos";
+"Custom Naming"                             = "Custom Naming";
+"Media Importer"                            = "Media Importer";
+"Enjoy"                                     = "Amusez-vous";
+"On"                                        = "On";
+"Off"                                       = "Off";
+
+"The new “Downloads” button"                = "The new “Downloads” button has a new function which will make using Safari Downloader+ simply easy and more convenient.\n\nPress on the new “Downloads” button and without releasing Swipe left or right to toggle downloading between On (blue) and Off (grey).";
+
+"When viewing a YouTube video"              = "When viewing a YouTube video, SD+ will detect available qualities and will present you with round button at the bottom right corner of your screen.";
+
+"Double click this button"                  = "Double click this button to reveal different  available video qualities.";
+
+"Before you start your download"            = "Before you start your download, you can change the file name by tapping its existing name field.";
+
+"Import supported Media to"                 = "Import supported Media to a wide range of destinations and freely modify the Metadata with option to search for specific album artwork.";
+
+"Thank you for downloading SD+"             = "Thank you for downloading SD+.\nPlease support the developper and reject piracy.\n\nFor reporting bugs and issues please contact the dev via Cydia.";
+
+"The fun way to using iOS Safari."          = "The fun way to using iOS Safari.";
+

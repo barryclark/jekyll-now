@@ -1,0 +1,10 @@
+{
+	entry = {
+		bundle = "SafariDownloaderPrefs";
+		cell = PSLinkCell;
+		detail = "SafariDownloaderPrefsListController";
+		icon = "icon.png";
+		isController = 1;
+		label = "Safari Downloader+";
+	};
+}

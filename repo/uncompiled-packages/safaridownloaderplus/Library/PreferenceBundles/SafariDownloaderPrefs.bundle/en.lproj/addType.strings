@@ -1,0 +1,11 @@
+
+/*--------------------------------------------------------------- */
+/* ADD VIEW */
+/*--------------------------------------------------------------- */
+
+"Type Name"             = "Type Name";
+"Excel Document"        = "Excel Document";
+"Extensions"            = "Extensions";
+"Mime Types"            = "Mime Types";
+"Save"                  = "Save";
+"If you're inserting"   = "If you're inserting multiples extensions and MIME types, make sure you separate them by commas.";

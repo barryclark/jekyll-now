@@ -1,0 +1,45 @@
+
+/*--------------------------------------------------------------- */
+/* SETTINGS VIEW */
+/*--------------------------------------------------------------- */
+
+"Audio Files"                  			 	= "Audio Files";
+"Video Files"                   			= "Video Files";
+"Compressed Files"              			= "Compressed Files";
+"Text Files"                    			= "Text Files";
+"Data Files"                    			= "Data Files";
+"Raster Image Files"            			= "Raster Image Files";
+"Vector Image Files"                        = "Vector Image Files";
+"Page Layout Files"                         = "Page Layout Files";
+"3D Image Files"                            = "3D Image Files";
+"Web Files"                                 = "Web Files";
+"Font Files"                                = "Font Files";
+"Executable Files"                          = "Executable Files";
+"System Files"                              = "System Files";
+"Disk Image Files"                          = "Disk Image Files";
+"Developer Files"                           = "Developer Files";
+"Game Files"                                = "Game Files";
+"Miscellaneous Files"                       = "Miscellaneous Files";
+"My Types"                                  = "My Types";
+"Add New File Type"                         = "Add New File Type";
+"Delete Custom Type"                        = "Delete Custom Type";
+"File Type Details"                         = "File Type Details";
+"Please fill in all the fields"             = "Please fill in all the fields.";
+"Custom Files"                              = "Custom Files";
+"Please make a selection first"             = "Please make a selection first.";
+"Delete Type"                               = "Delete Type";
+"Delete Selected"                           = "Delete Selected";
+"Select and delete"                         = "Select and delete multiple entries in one go.";
+
+"Fully personalize the list"                = "Fully personalize the list of build-in file types by adding your own entries.";
+
+"failed to create safaridownloaderprefs.plist file." = "Failed to create safaridownloaderprefs.plist file.";
+
+"When you disable a file type"              = "When you disable a file type Safari will no longer present you the option to download the file when you click on its link.\nHowever if you press and hold the link down Safari will still allow you to download the file if you wish to.";
+
+"Are you sure?"                             = "Are you sure you wish to reset Safari Downloader+?\nThis will also clear the list of downloads but will not delete the actual files from where they are saved in this device.";
+
+"Restart the app"                           = "Now make sure you restart Safari app for the settings to take effect.";
+"Your Downloads folder"                     = "Your Downloads folder should now be empty.";
+"There was an error trying"                 = "There was an error trying to reset Safari Downloader+.";
+"There was an error trying-2"               = "There was an error trying to empty your Downloads folder.";

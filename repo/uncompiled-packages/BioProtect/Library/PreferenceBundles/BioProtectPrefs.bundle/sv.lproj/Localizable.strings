@@ -1,0 +1,41 @@
+{
+	"GLOBAL_SETTINGS" = "Allmänna inställningar";
+	"ENABLED" = "Aktiverad";
+	"VIBRATE_ON_ERROR" = "VibrEra vid fel";
+	"RECOVERY_OPTIONS" = "Återställningsinställningar";
+	"PROTECTED_APPLICATIONS" = "Skyddade appar";
+	"ADD_PASSCODE" = "Lägg till en lösenkod för återställning";
+	"REMOVE_PASSCODE" = "Ta bort lösenkoden för återställning";
+	"CHANGE_PASSCODE" = "Ändra lösenkoden för återställning";
+	"ENTER_PASSCODE" = "Mata in en lösenkod";
+	"ENTER_OLD_PASSCODE" = "Mata in den gamla lösenkoden";
+	"REENTER_PASSCODE" = "Mata in lösenkoden igen";
+	"PASSCODES_DID_NOT_MATCH_TRY_AGAIN" = "Lösenkoderna matchar inte, försök igen.";
+	"WRONG_PASSCODE_TRY_AGAIN" = "Fel lösenkod, försök igen.";
+
+	"TOO_MANY_ATTEMPTS_SORRY" = "För många försök, tyvärr.";
+	"CANCEL" = "Avbryt";
+
+	"NO_FINGERPRINT_SET" = "Du har inte lagt till något fingeravtryck. För att använda denna applikation måste du ha åtminstone 1 fingeravtryck inlagt. Vill du lägga till ett nu?";
+	"NO" = "Nej";
+	"YES_PLEASE" = "Ja, tack";
+
+	"PLEASE_AUTHENTICATE" = "Autentisera med hjälp av ditt fingeravtryck";
+	"ADDED_FIRST_FINGERPRINT_AFTER_REBOOT" = "Du har lagt till ett fingeravtryck samtidigt som du har en aktiv lösenkod. Din enhet kommer låsas inom %d sekunder för att återbygga skyddsinformationen";
+	"ALL_FINGERPRINTS_REMOVED" = "Alla fingeravtryck har tagits bort. Om du hade några skyddade appar så är de inte längre skyddade. Lägg till åtminstone 1 fingeravtryck för att aktivera skyddet.";
+
+	"AUTHENTICATION_FAILED" = "Autentisering misslyckades";
+	"TRY_CLEANING" = "Försök att rengöra din fingertopp och/eller hemknappen";
+	"OKAY" = "OK";
+
+	"CIRCLE_COLOR" = "Cirkelfärg";
+	"CHOOSE_COLOR" = "Välj en färg";
+	"PROTECT_SWITCHER" = "Skydda AppSwitcher";
+
+	"TRANSLATION_CREDITS"="Översättning Kreds.";
+
+	"LANGUAGE" = "Svenska";
+	"LANGUAGE_IN_ENGLISH" = "Swedish";
+	"TRANSLATOR" = "@sthlmsrille";
+	
+}

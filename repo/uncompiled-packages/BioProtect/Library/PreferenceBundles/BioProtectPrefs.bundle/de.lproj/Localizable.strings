@@ -1,0 +1,38 @@
+{
+	"GLOBAL_SETTINGS" = "Globale Einstellungen";
+	"ENABLED" = "Aktiviert";
+	"VIBRATE_ON_ERROR" = "Bei fehlgeschlagener Erkennung vibrieren";
+	"RECOVERY_OPTIONS" = "Wiederherstellungsoptionen";
+	"PROTECTED_APPLICATIONS" = "Geschützte Apps";
+	"ADD_PASSCODE" = "Wiederherstellungspascode hinzufügen";
+	"REMOVE_PASSCODE" = "Wiederherstellungspasscode entfernen";
+	"CHANGE_PASSCODE" = "Wiederherstellungspasscode ändern";
+	"ENTER_PASSCODE" = "Passcode eingeben";
+	"ENTER_OLD_PASSCODE" = "Alten Passcode eingeben";
+	"REENTER_PASSCODE" = "Passcode erneut eingeben";
+	"PASSCODES_DID_NOT_MATCH_TRY_AGAIN" = "Passcodes stimmen nicht überein. Erneut versuchen.";
+	"WRONG_PASSCODE_TRY_AGAIN" = "Falscher Passcode. Erneut versuchen";
+    
+	"TOO_MANY_ATTEMPTS_SORRY" = "Zu viele Versuche. Sorry.";
+	"CANCEL" = "Abbrechen";
+    
+	"NO_FINGERPRINT_SET" = "Du hast keinen Fingerabdruck gespeichert. Um BioProtect zu nutzen, musst du mindestens einen Fingetabdruck hinzufügen. Möchtest du jetzt einen Fingerabdruck hinzufügen?";
+	"NO" = "Nein";
+	"YES_PLEASE" = "Ja, bitte";
+    
+	"PLEASE_AUTHENTICATE" = "Bitte durch Fingerabdruck identifizieren";
+	"ADDED_FIRST_FINGERPRINT_AFTER_REBOOT" = "Du hast einen Fingerabdruck hinzugefügt, als der Passcode noch aktiviert war. Das Gerät wird sich in %d Sekunden sperren, um den Schutz zu erneuern";
+	"ALL_FINGERPRINTS_REMOVED" = "Alle Fingerabdrücke wurden entfernt. Ausgewählte Apps sind nicht länger geschützt. Mindestens einen Fingerabdruck eingeben, um den Schutz wieder zu aktiveren.";
+    
+	"AUTHENTICATION_FAILED" = "Erkennung fehlgeschlagen";
+	"TRY_CLEANING" = "Finger und/oder Homebutton säubern und erneut versuchen";
+	"OKAY" = "Okay";
+    
+	"CIRCLE_COLOR" = "Ringfarbe";
+	"CHOOSE_COLOR" = "Wähle eine Farbe";
+	"PROTECT_SWITCHER" = "AppSwitcher schützen";
+    "TRANSLATOR" = "@Kingsonny89";
+    "LANGUAGE" = "Deutsch";
+    "LANGUAGE_IN_ENGLISH" = "German";
+    
+}

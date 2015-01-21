@@ -1,0 +1,40 @@
+{
+	"GLOBAL_SETTINGS" = "Globale Einstellungen";
+	"ENABLED" = "Eingeschaltet";
+	"VIBRATE_ON_ERROR" = "Vibration bei Fehler";
+	"RECOVERY_OPTIONS" = "Wiederherstellungs Optionen";
+	"PROTECTED_APPLICATIONS" = "Geschützte Applikationen";
+	"ADD_PASSCODE" = "Wiederherstellungspasswort hinzufügen";
+	"REMOVE_PASSCODE" = "Wiederherstellungspasswort entfernen";
+	"CHANGE_PASSCODE" = "Wiederherstellungspasswort ändern";
+	"ENTER_PASSCODE" = "Wiederherstellungspasswort eingeben";
+	"ENTER_OLD_PASSCODE" = "Altes Wiederherstellungspasswort eingeben";
+	"REENTER_PASSCODE" = "Altes Wiederherstellungspasswort bestätigen";
+	"PASSCODES_DID_NOT_MATCH_TRY_AGAIN" = "Passwort stimmt nicht überein. Versuch es erneut.";
+	"WRONG_PASSCODE_TRY_AGAIN" = "Falsches Passwort. Versuch es erneut.";
+
+	"TOO_MANY_ATTEMPTS_SORRY" = "Zu viele Versuche. Sorry.";
+	"CANCEL" = "Abbrechen";
+
+	"NO_FINGERPRINT_SET" = "Du hast keine Fingerabdrücke eingelesen. Um diese Anwendung zu aktivieren, musst du mindestens einen Fingerabdruck einlesen. Möchtest du dies tun?";
+	"NO" = "Nein";
+	"YES_PLEASE" = "Ja, bitte";
+
+	"PLEASE_AUTHENTICATE" = "Bitte mit deinem Fingerabdruck authentifizieren";
+	"ADDED_FIRST_FINGERPRINT_AFTER_REBOOT" = "Du fügtest einen Fingerabdruck hinzu, obwohl ein Passwort aktiviert war. Gerät wird in %d Sekunden sperren, um die Informationen zu aktualisieren.";
+	"ALL_FINGERPRINTS_REMOVED" = "Alle Fingerabdrücke wurden entfernt. Wenn du irgendwelche geschützte Anwendungen hattest, sind sie nicht mehr geschützt. Füge mindestens einen Fingerabdruck hinzu, um den Schutz zu aktivieren.";
+
+	"AUTHENTICATION_FAILED" = "Authentifizierung fehlgeschlagen";
+	"TRY_CLEANING" = "Reinige deine Fingerspitze und/oder die Home Taste";
+	"OKAY" = "Okay";
+
+	"CIRCLE_COLOR" = "Kreis Farbe";
+	"CHOOSE_COLOR" = "wähle eine Farbe";
+	"PROTECT_SWITCHER" = "Schütze  AppSwitcher";
+	"TRANSLATOR" = "@DodooosLife";
+    "LANGUAGE" = "Indonesian";
+    "LANGUAGE_IN_ENGLISH" = "Indonesian";
+    
+
+	
+}

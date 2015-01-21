@@ -1,0 +1,41 @@
+{
+	"GLOBAL_SETTINGS" = "Ajustes generales";
+	"ENABLED" = "Activado";
+	"VIBRATE_ON_ERROR" = "Vibrar al fallar";
+	"RECOVERY_OPTIONS" = "Opciones de recuperación";
+	"PROTECTED_APPLICATIONS" = "Aplicaciones protegidas";
+	"ADD_PASSCODE" = "Añadir código de recuperación";
+	"REMOVE_PASSCODE" = "Eliminar código de recuperación";
+	"CHANGE_PASSCODE" = "Cambiar código de recuperación";
+	"ENTER_PASSCODE" = "Introducir código de recuperación";
+	"ENTER_OLD_PASSCODE" = "Introducir código de recuperación anterior";
+	"REENTER_PASSCODE" = "Repetir código de recuperación anterior";
+	"PASSCODES_DID_NOT_MATCH_TRY_AGAIN" = "El código no coincide, inténtalo nuevamente.";
+	"WRONG_PASSCODE_TRY_AGAIN" = "Contraseña incorrecta, inténtalo nuevamente.";
+
+	"TOO_MANY_ATTEMPTS_SORRY" = "Demasiados intentos, lo siento.";
+	"CANCEL" = "Cancelar";
+
+	"NO_FINGERPRINT_SET" = "No hay ninguna huella establecida. Para activar esta aplicación debes añadir por lo menos una. ¿Te gustaría configurarla ahora?";
+	"NO" = "No";
+	"YES_PLEASE" = "Si, por favor";
+
+	"PLEASE_AUTHENTICATE" = "Por favor,  identificate con tus huellas";
+	"ADDED_FIRST_FINGERPRINT_AFTER_REBOOT" = "Has añadido una huella mientras tenías un código de bloque. El dispositivo se bloqueará en %d segundos para actualizar la información";
+	"ALL_FINGERPRINTS_REMOVED" = "Todas las huellas han sido eliminadas. Si tenías alguna aplicación protegida, ha quedado desbloqueada. Añade al menos una huella para protegerla de nuevo.";
+
+	"AUTHENTICATION_FAILED" = "Identificación fallida";
+	"TRY_CLEANING" = "Inténtalo de nuevo, prueba a limpiarte el dedo y/o el botón";
+	"OKAY" = "Vale";
+
+	"CIRCLE_COLOR" = "Color del círculo";
+	"CHOOSE_COLOR" = "Elige un color";
+	"PROTECT_SWITCHER" = "Proteger Multitarea";
+	"TRANSLATOR" = "@javy97";
+    
+    "TRANSLATION_CREDITS"="Créditos de Traducción";
+    
+    "LANGUAGE" = "Español";
+    "LANGUAGE_IN_ENGLISH" = "Spanish";
+
+}

@@ -1,0 +1,42 @@
+{
+	"GLOBAL_SETTINGS" = "Setări Generale";
+	"ENABLED" = "Activat";
+	"VIBRATE_ON_ERROR" = "Vibrează la eroare";
+	"RECOVERY_OPTIONS" = "Opțiuni recuperare";
+	"PROTECTED_APPLICATIONS" = "Aplicații protejate";
+	"ADD_PASSCODE" = "Adaugați parola recuperare";
+	"REMOVE_PASSCODE" = "Ștergeți parola recuperare";
+	"CHANGE_PASSCODE" = "Schimbați parola recuperare";
+	"ENTER_PASSCODE" = "Introduceți un cod recuperare";
+	"ENTER_OLD_PASSCODE" = "Introduceți codul vechi recuperare";
+	"REENTER_PASSCODE" = "Reintroduceți cod recuperare";
+	"PASSCODES_DID_NOT_MATCH_TRY_AGAIN" = "Parolele nu se potrivesc. Încercați din nou.";
+	"WRONG_PASSCODE_TRY_AGAIN" = "Parola greșită. Încercați din nou.";
+
+	"TOO_MANY_ATTEMPTS_SORRY" = "Prea multe încercări. Imi pare rău.";
+	"CANCEL" = "Anulează";
+
+	"NO_FINGERPRINT_SET" = "Nu aveți nicio amprentă digitală setată. Pentru activarea aplicației, trebuie să aveti cel puțin o amprentă digitală setată. Doriți să setați una acum?";
+	"NO" = "Nu";
+	"YES_PLEASE" = "Da, te rog";
+
+	"PLEASE_AUTHENTICATE" = "Vă rog să vă autentificați folosind amprenta digitală";
+	"ADDED_FIRST_FINGERPRINT_AFTER_REBOOT" = "Ați adaugat o amprentă digitală în timp ce aveați cod activat. Telefonul se va bloca în %d secunde pentru a reface informațiile de protecție";
+	"ALL_FINGERPRINTS_REMOVED" = "Toate amprentele au fost sterse. Dacă ați avut vreo aplicație protejată, acestea nu mai sunt protejate. Adăugați cel putin o amprentă digitală pentru a activa protecția.";
+
+	"AUTHENTICATION_FAILED" = "Autentificare eșuată";
+	"TRY_CLEANING" = "Încercați să curatați vârful degetului și / sau butonul home";
+	"OKAY" = "Ok";
+
+	"CIRCLE_COLOR" = "Cerc Culoare";
+	"CHOOSE_COLOR" = "Alege culoarea";
+	"PROTECT_SWITCHER" = "Protect AppSwitcher";
+	"TRANSLATOR" = "@dualsimcect";
+	
+	"LANGUAGE" = "Română";
+
+	"LANGUAGE_IN_ENGLISH" = "Romanian";
+
+
+	
+}

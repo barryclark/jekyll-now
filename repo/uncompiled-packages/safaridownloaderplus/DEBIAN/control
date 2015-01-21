@@ -1,0 +1,15 @@
+Package: cc.cu.iosrepo.safaridownloaderplus
+Version: 3.5-1
+Section: Tweaks
+Maintainer: IT STAR <itstar4tech@gmail.com>
+Depends: firmware (>= 7.0), mobilesubstrate (>= 0.9.5000), preferenceloader (>= 2.2.2), com.ouraigua.jodebox (>= 1.3-1)
+Conflicts: net.howett.safaridownloader, com.ouraigua.safaridownloader, vn.gsm.safaridownloader
+Replaces: com.ouraigua.safaridownloader, vn.gsm.safaridownloader
+Architecture: iphoneos-arm
+Installed-Size: 18112
+Description: Safari နဲ့ အင္တာနက္ သံုးရင္း Youtube နဲ႕ တျခား ဖိုင္ေတြကို ေဒါင္းလုပ္ရယူလို႕ရတဲ့ အစြမ္းထက္ ေဆာ့၀ဲလ္ေလးပါ။
+Name: Safari Downloader+
+Homepage: http://iosrepo.cu.cc/
+Depiction: http://cydia.vn/depic/t4882/
+Icon: file:///Library/PreferenceBundles/SafariDownloaderPrefs.bundle/icon@2x.png
+

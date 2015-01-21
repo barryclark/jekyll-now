@@ -1,0 +1,40 @@
+{
+	"GLOBAL_SETTINGS" = "整體設定";
+	"ENABLED" = "啟用";
+	"VIBRATE_ON_ERROR" = "錯誤時震動";
+	"RECOVERY_OPTIONS" = "復原選項";
+	"PROTECTED_APPLICATIONS" = "保護的應用程式";
+	"ADD_PASSCODE" = "新增復原密碼";
+	"REMOVE_PASSCODE" = "移除復原密碼";
+	"CHANGE_PASSCODE" = "變更復原密碼";
+	"ENTER_PASSCODE" = "請輸入復原密碼";
+	"ENTER_OLD_PASSCODE" = "請輸入舊的復原密碼";
+	"REENTER_PASSCODE" = "請再輸入一次復原密碼";
+	"PASSCODES_DID_NOT_MATCH_TRY_AGAIN" = "密碼不相符。請再試一次。";
+	"WRONG_PASSCODE_TRY_AGAIN" = "密碼錯誤。請再試一次。";
+
+	"TOO_MANY_ATTEMPTS_SORRY" = "已嘗試太多次。抱歉。";
+	"CANCEL" = "取消";
+
+	"NO_FINGERPRINT_SET" = "您並沒有設定任何指紋組。要啟用該應用程式，您必須至少設定一組指紋。您想現在設定嗎？";
+	"NO" = "不要";
+	"YES_PLEASE" = "是的，請設定";
+
+	"PLEASE_AUTHENTICATE" = "請使用您的指紋授權";
+	"ADDED_FIRST_FINGERPRINT_AFTER_REBOOT" = "您在密碼啟用時新增了指紋。裝置將於 %d 秒內鎖定以重建保護資訊";
+	"ALL_FINGERPRINTS_REMOVED" = "已移除所有指紋。如果您曾有任何保護的應用程式，它們將不再受到保護。新增至少一組指紋以啟用保護。";
+
+	"AUTHENTICATION_FAILED" = "授權失敗";
+	"TRY_CLEANING" = "請試著清潔您的指紋以及/或Home按鍵";
+	"OKAY" = "好的";
+
+	"CIRCLE_COLOR" = "圈環顏色";
+	"CHOOSE_COLOR" = "請選擇顏色";
+	"PROTECT_SWITCHER" = "保護程式切換介面";
+	"TRANSLATOR" = "@Commandor";
+    "TRANSLATION_CREDITS"="翻譯";
+    
+    "LANGUAGE" = "繁體中文";
+    "LANGUAGE_IN_ENGLISH" = "Traditional Chinese";
+	
+}

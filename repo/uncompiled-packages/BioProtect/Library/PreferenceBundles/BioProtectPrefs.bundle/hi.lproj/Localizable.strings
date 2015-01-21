@@ -1,0 +1,40 @@
+{
+	"GLOBAL_SETTINGS" = "वैश्विक सेटिंग्स";
+	"ENABLED" = "सक्षम";
+	"VIBRATE_ON_ERROR" = "त्रुटि पर कंपन";
+	"RECOVERY_OPTIONS" = "वसूली के विकल्प";
+	"PROTECTED_APPLICATIONS" = "संरक्षित ऐप्लकेशन";
+	"ADD_PASSCODE" = "एक वसूली पासकोड जोड़ें";
+	"REMOVE_PASSCODE" = "वसूली पासकोड निकालें";
+	"CHANGE_PASSCODE" = "बदले वसूली पासकोड";
+	"ENTER_PASSCODE" = "एक वसूली पासकोड दर्ज";
+	"ENTER_OLD_PASSCODE" = "पुराने वसूली पासकोड दर्ज";
+	"REENTER_PASSCODE" = "पुन-दर्ज वसूली पासकोड";
+	"PASSCODES_DID_NOT_MATCH_TRY_AGAIN" = "Passcodes से मेल नहीं खाती. फिर से कोशिश करें.";
+	"WRONG_PASSCODE_TRY_AGAIN" = "गलत पासकोड. फिर से कोशिश करें.";
+
+	"TOO_MANY_ATTEMPTS_SORRY" = "बहुत सारे प्रयास. माफ़ कीजिए.";
+	"CANCEL" = "रद्द करें";
+
+	"NO_FINGERPRINT_SET" = "निर्धारित किसी भी उंगलियों के निशान नहीं है. इस आवेदन को सक्षम करने के लिए आपको कम से कम एक अंगुली की छाप सेट होना आवश्यक है. आप अब सेटअप एक करना चाहेंगे?";
+	"NO" = "नहीं";
+	"YES_PLEASE" = "हाँ, कृपया";
+
+	"PLEASE_AUTHENTICATE" = "अपने फिंगरप्रिंट का उपयोग कर प्रमाणीकृत कृपया";
+	"ADDED_FIRST_FINGERPRINT_AFTER_REBOOT" = "आप सक्रिय एक पासकोड था, जबकि आप एक अंगुली की छाप गयी. डिवाइस संरक्षण जानकारी के पुनर्निर्माण के लिए% d सेकेंड में बंद कर दूँगा";
+	"ALL_FINGERPRINTS_REMOVED" = "सभी उंगलियों के निशान हटा दिया गया है. आप किसी भी संरक्षित आवेदन किया था, तो वे संरक्षित नहीं रह रहे हैं. सुरक्षा को सक्रिय करने के लिए कम से कम एक अंगुली की छाप जोड़ें.";
+
+	"AUTHENTICATION_FAILED" = "सत्यापन विफल";
+	"TRY_CLEANING" = "अपनी उंगलियों और / या घर बटन साफ करने की कोशिश";
+	"OKAY" = "अच्छा";
+
+	"CIRCLE_COLOR" = "सर्किल का रंग";
+	"CHOOSE_COLOR" = "एक रंग चुनें";
+	"PROTECT_SWITCHER" = "AppSwitcher सुरक्षित रखें";
+
+	"TRANSLATOR"="@nags9100";
+	"LANGUAGE" = "मानक हिन्दी";
+
+	"LANGUAGE_IN_ENGLISH" = "Hindi";
+	
+}

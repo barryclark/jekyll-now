@@ -1,0 +1,49 @@
+/*--------------------------------------------------------------- */
+/* IMPORT VIEW */
+/*--------------------------------------------------------------- */
+
+"Browse"                        = "Browse";
+"You can now browse"            = "You can now browse your device for supported files so you can import them to your Music app, Videos app, Podcasts, Camera Roll...";
+"Import"                        = "Trasferisci";
+"Select"                        = "Seleziona";
+"Import Media"                  = "Trasferisci File";
+"Media Import Started"          = "Trasferimento File Iniziato";
+
+"Import is now progressing"     = "Il trasferimento sta procedendo in background. \nIl tuo file dovrebbe apparire nella destinazione corrispondente a breve.";
+
+"This app is used to import"    = "\n Questa app serve per trasferire il tuo file scaricato con Safari Downloader+.\n\nSi avvia automaticamente quando attivi un comando di trasferimento.\n\n\nPer favore assicurati che la attivi mentre hai Safari Downloader+ installato.";
+"Failed to retrieve images"     = "Failed to retrieve images.\nGive it another try!";
+
+"Kind"                          = "Tipo";
+"Change Artwork"                = "Cambia Copertina";
+"Search Google Images"          = "Cerca Immagini su Google";
+"Search Photo Library"          = "Cerca nella Libreria Foto";
+"Preview Media"                 = "Anteprima File";
+"Results"                       = "Risultati";
+"Search Images"                 = "Cerca Immagini";
+"Size"                          = "Dimensione";
+"Images"                        = "Immagini";
+"Please wait..."                = "Per favore attendi...";
+"Example"                       = "Esempio";
+"Movie"                         = "Film";
+"TV Episode"                    = "Episodio Tv";
+"Video Podcast"                 = "Video Podcast";
+"Podcast"                       = "Podcast";
+"Music Video"                   = "Video Musicale";
+"Song"                          = "Canzone";
+"Title"                         = "Titolo";
+"Media Title"                   = "Titolo File";
+"Artist"                        = "Artista";
+"Artist Name"                   = "Nome Artista";
+"Album"                         = "Album";
+"Album Name"                    = "Nome Album";
+"Genre"                         = "Genere";
+"Year"                          = "Anno";
+"Name"                          = "Nome";
+"Podcast Name"                  = "Nome Podcast";
+"Episode"                       = "Episodio";
+"Episode Name"                  = "Nome Episodio";
+"Series"                        = "Serie";
+"Series Name"                   = "Nome Serie";
+"Season"                        = "Stagione";
+"Movie Name"                    = "Nome Film";

@@ -1,0 +1,198 @@
+#!/bin/bash
+#  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#  Title: iLEX R.A.T.
+#  Author: iLEX
+#  Contact: ilexrepo@gmail.com
+#  Copyright iLEX R.A.T.  2014
+#  The Official Twitter Page: http://twitter.com/iLEXiNFO
+#  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+#  Thanks to Andrew Liu (Rootify), brc0703.
+
+
+
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+sleep 1s 
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+
+
+cd /var/mobile/Media/general_storage/iLEX/deb/ &> /dev/null
+
+echo 'The list of archives for restoration'
+echo ''
+
+#ищем в каталоге архивы и выводим
+for i in *.zip;
+do
+echo $((j+=1))'. '$i;
+done;
+
+#ввод номера архива
+echo ''
+echo "Enter archive number for restoration:";
+read num;
+
+
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+
+
+if [ -z $num ];
+then
+        echo "Not correct.";
+sleep 2s
+rat
+    exit 0;
+fi
+
+i=0;
+j=0;
+
+for i in *.zip;
+do
+echo $((j+=1))'. '$i &> /dev/null;
+if [ $j -eq $num ]
+then
+    arh=$i;
+fi
+done;
+
+
+
+
+
+
+
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+sleep 1s 
+echo "Relax and watch process..."
+sleep 5s 
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo "Let's begin!"
+sleep 2s
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+
+
+
+
+
+
+
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+sleep 2s 
+echo "Unpacking DEB files from the ZIP archive..."
+sleep 3s 
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+sleep 2s 
+
+
+
+unzip -o -X -K /var/mobile/Media/general_storage/iLEX/deb/$arh -d /var/root/Media/Cydia/AutoInstall/
+
+rm -f /var/root/Media/Cydia/AutoInstall/unzip_*.deb &> /dev/null
+rm -f /var/root/Media/Cydia/AutoInstall/zip_*.deb &> /dev/null
+rm -f /var/root/Media/Cydia/AutoInstall/openssh_*.deb &> /dev/null
+rm -f /var/root/Media/Cydia/AutoInstall/openssl_*.deb &> /dev/null
+rm -f /var/root/Media/Cydia/AutoInstall/gawk_*.deb &> /dev/null
+rm -f /var/root/Media/Cydia/AutoInstall/com.*mobileterminal*.deb &> /dev/null
+rm -f /var/root/Media/Cydia/AutoInstall/com.*killbackground*.deb &> /dev/null
+
+
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+sleep 2s 
+echo "Done!"
+sleep 2s 
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+sleep 2s 
+echo "Installing DEB packages..."
+sleep 3s 
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+
+
+
+
+debs=(/var/root/Media/Cydia/AutoInstall/*.deb)
+if [[ ${#debs[@]} -ne 0 && -f ${debs[0]} ]]; then
+    dpkg -i --force-architecture --force-depends "${debs[@]}"
+    rm -f "${debs[@]}"
+
+    cache=
+
+    killall -9 Lowtide AppleTV
+fi
+
+if [[ ${cache+@} ]]; then
+    su -c uicache mobile &> /dev/null
+fi
+
+
+
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+sleep 7
+echo "BOOO!!!"
+sleep 5s 
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+sleep 2s 
+echo "Congrats To you!
+You lost jailbreak!"
+sleep 5s 
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo "I am sorry"
+sleep 5s
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo "LOL"
+sleep 2s 
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+sleep 2s 
+echo "RESPRING..."
+sleep 2s 
+killall -9 SpringBoard 2>/dev/null
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+
+
+exit 0;
+
+
+
+
+
+
+
+
+
+
+
+

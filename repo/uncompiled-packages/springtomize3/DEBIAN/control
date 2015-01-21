@@ -1,0 +1,17 @@
+Package: com.myrepospace.kalora.springtomize3
+Depends: firmware (>= 7.0), mobilesubstrate (>= 0.9.5000), preferenceloader (>= 2.2.2), com.rpetrich.rocketbootstrap
+Conflicts: com.filippobiga.springtomize2
+Name: Springtomize 3 (iOS 7 & 8)
+Version: 1.3.0-5
+Architecture: iphoneos-arm
+Description: Customize your device like never before.
+Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=springtomize3Dp
+Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=springtomize3Dp
+Installed-Size: 2512
+Maintainer: BigBoss <bigboss@thebigboss.org>
+Author: FilippoBiga <springtomize@filippobiga.com>
+Sponsor: thebigboss.org <http://thebigboss.org>
+Section: Tweaks
+dev: filippobiga
+Tag: cydia::commercial, purpose::extension, ios7support::1, ios8support::1
+Icon: file:///Library/PreferenceBundles/ST3Settings.bundle/icons/Main@2x.png

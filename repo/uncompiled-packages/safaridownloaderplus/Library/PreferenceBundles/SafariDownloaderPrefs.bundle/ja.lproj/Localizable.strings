@@ -1,0 +1,45 @@
+
+/*--------------------------------------------------------------- */
+/* SETTINGS VIEW */
+/*--------------------------------------------------------------- */
+
+"Audio Files"                  			 	= "オーディオファイル";
+"Video Files"                   			= "ビデオファイル";
+"Compressed Files"              			= "圧縮ファイル";
+"Text Files"                    			= "テキストファイル";
+"Data Files"                    			= "データファイル";
+"Raster Image Files"            			= "ラスターイメージファイル";
+"Vector Image Files"                        = "ベクターイメージファイル";
+"Page Layout Files"                         = "ページレイアウトファイル";
+"3D Image Files"                            = "3Dイメージファイル";
+"Web Files"                                 = "WEBファイル";
+"Font Files"                                = "フォントファイル";
+"Executable Files"                          = "実行ファイル";
+"System Files"                              = "システムファイル";
+"Disk Image Files"                          = "ディスクイメージファイル";
+"Developer Files"                           = "デベロッパーファイル";
+"Game Files"                                = "ゲームファイル";
+"Miscellaneous Files"                       = "その他ファイル";
+"My Types"                                  = "マイタイプ";
+"Add New File Type"                         = "新しいファイルタイプの追加";
+"Delete Custom Type"                        = "カスタムタイプの削除";
+"File Type Details"                         = "ファイルタイプ詳細";
+"Please fill in all the fields"             = "すべてのフィールドに記入してください";
+"Custom Files"                              = "カスタムファイル";
+"Please make a selection first"             = "最初にセレクションを作成してください";
+"Delete Type"                               = "タイプの削除";
+"Delete Selected"                           = "選択項目の削除";
+"Select and delete"                         = "複数のエントリを一度で選択・削除します。";
+
+"Fully personalize the list"                = "追加したエントリでファイルタイプリストをパーソナライズします。";
+
+"failed to create safaridownloaderprefs.plist file." = "safaridownloaderprefs.plistの作成に失敗しました。";
+
+"When you disable a file type"              = "ファイルタイプを無効化するとSafariはファイルリンクをクリックしたときにダウンロードオプションを表示しなくなります。。\nこの場合はリンクを長押しすることで、ファイルをダウンロードすることができます。";
+
+"Are you sure?"                             = "Are you sure you wish to reset Safari Downloader+?\nThis will also clear the list of downloads but will not delete the actual files from where they are saved in this device.";
+
+"Restart the app"                           = "Now make sure you restart Safari app for the settings to take effect.";
+"Your Downloads folder"                     = "Your Downloads folder should now be empty.";
+"There was an error trying"                 = "There was an error trying to reset Safari Downloader+.";
+"There was an error trying-2"               = "There was an error trying to empty your Downloads folder.";

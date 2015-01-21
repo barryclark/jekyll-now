@@ -1,0 +1,38 @@
+{
+    "GLOBAL_SETTINGS" = "الأعدادات الرئيسية";
+    "ENABLED" = "تمكين";
+    "VIBRATE_ON_ERROR" = "الأهتزاز عند الخطأ";
+    "RECOVERY_OPTIONS" = "خيارات الأصلاح";
+    "PROTECTED_APPLICATIONS" = "التطبيقات المحمية";
+    "ADD_PASSCODE" = "إضافة رمز المرور";
+    "REMOVE_PASSCODE" = "إزالة رمز المرور";
+    "CHANGE_PASSCODE" = "تغيير رمز المرور";
+    "ENTER_PASSCODE" = "أدخل رمز المرور";
+    "ENTER_OLD_PASSCODE" = "أدخل رمز المرور القديم";
+    "REENTER_PASSCODE" = "أعد كتابة رمز المرور";
+    "PASSCODES_DID_NOT_MATCH_TRY_AGAIN" = "رمز المرور غير متطابق. حاول مرة أخرى.";
+    "WRONG_PASSCODE_TRY_AGAIN" = "رمز المرور خطأ. حاول مرة أخرى.";
+
+    "TOO_MANY_ATTEMPTS_SORRY" = "محاولات كثيرة جداً. آسف.";
+    "CANCEL" = "إلغاء";
+
+    "NO_FINGERPRINT_SET" = "لا يوجد لديك أي بصمة أصابع. لتمكين هذا التطبيق, يجب أن يكون لديك بصمة أصبع واحدة على الأقل. هل ترغب في إعداد بصمة واحدة الأن؟";
+    "NO" = "لا";
+    "YES_PLEASE" = "نعم، أرجوك";
+
+    "PLEASE_AUTHENTICATE" = "الرجاء ضع بصمتك لتتم المصادقة";
+    "ADDED_FIRST_FINGERPRINT_AFTER_REBOOT" = "لقد قمت بإضافة بصمة في حين كان لديك رمز المرور مفعلة. سوف يتم قفل الجهاز في %d ثانية لأعادة بناء معلومات الحماية";
+    "ALL_FINGERPRINTS_REMOVED" = "تم إزالة جميع بصمات الأصابع. اذا كان لديك تطبيقات محمية, فهي لم تعد محمية الأن. قم بإضافة بصمة واحدة على الأقل لتفعيل الحماية.";
+
+    "AUTHENTICATION_FAILED" = "فشل في المصادقة";
+    "TRY_CLEANING" = "قم بتنظيف أصبعك و / أو الزر الرئيسي";
+    "OKAY" = "حسناً";
+
+    "CIRCLE_COLOR" = "لون الدائرة";
+    "CHOOSE_COLOR" = "اختيار لون";
+    "PROTECT_SWITCHER" = "حماية التطبيقات في الخلفية";
+
+    "LANGUAGE" = "العربية";
+    "LANGUAGE_IN_ENGLISH" = "Arabic";
+	"TRANSLATOR" = "@iD7me";
+}

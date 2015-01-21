@@ -1,0 +1,39 @@
+{
+	"GLOBAL_SETTINGS" = "Genel Ayarlar";
+	"ENABLED" = "Etkin";
+	"VIBRATE_ON_ERROR" = "Hata sırasında titreşimi aktifleştir";
+	"RECOVERY_OPTIONS" = "Kurtarma Seçenekleri";
+	"PROTECTED_APPLICATIONS" = "Korunacak Uygulamalar";
+	"ADD_PASSCODE" = "Yeni bir kurtarma şifresi ekle";
+	"REMOVE_PASSCODE" = "Şifreyi kaldır";
+	"CHANGE_PASSCODE" = "Şifreyi değiştir";
+	"ENTER_PASSCODE" = "Bir şifre giriniz";
+	"ENTER_OLD_PASSCODE" = "Eski şifreyi giriniz";
+	"REENTER_PASSCODE" = "Şifreyi tekrar giriniz";
+	"PASSCODES_DID_NOT_MATCH_TRY_AGAIN" = "Parolalar eşleşmiyor. Tekrar deneyiniz.";
+	"WRONG_PASSCODE_TRY_AGAIN" = "Yanlış parola. Tekrar deneyiniz.";
+
+	"TOO_MANY_ATTEMPTS_SORRY" = "Çok fazla yanlış deneme yaptınız. Özür dileriz.";
+	"CANCEL" = "İptal";
+
+	"NO_FINGERPRINT_SET" = "Henüz herhangi bir parmak izi tanımlanmadı. Uygulamayı aktif hale getirmek için, en az bir parmak izi tanımlamalısınız. Parmak izinizi şimdi tanımlamak ister misiniz?";
+	"NO" = "Hayır";
+	"YES_PLEASE" = "Evet, lütfen";
+
+	"PLEASE_AUTHENTICATE" = "Lütfen parmak izinizi tanımlayınız";
+	"ADDED_FIRST_FINGERPRINT_AFTER_REBOOT" = "Parmak izinizi tanımlayarak korumayı etkinleştirdiniz. Cihazınız %d saniye içerisinde kilitlenecek ve güvenlik bilgileri yeniden yapılandırılacaktır.";
+	"ALL_FINGERPRINTS_REMOVED" = "Tüm parmak izleri silindi. Eğer parmak izinizle korunan bir uygulama var ise, bundan sonra korunamayacaktır. Korumayı tekrar aktif hale getirmek için en azından bir parmak izi eklemeniz gerekmektedir.";
+
+	"AUTHENTICATION_FAILED" = "Yetkilendirme başarısız";
+	"TRY_CLEANING" = "Parmağınızı temizlemeyi ve/veya ana ekran tuşunu temizlemeyi deneyiniz";
+	"OKAY" = "Tamam";
+
+	"CIRCLE_COLOR" = "Çember Rengi";
+	"CHOOSE_COLOR" = "Bir renk seçin";
+	"PROTECT_SWITCHER" = "Uygulama değiştirici koruması";
+	"TRANSLATOR" = "@Dr_M_Kaya";
+	
+	"LANGUAGE" = "Türkçe";
+	"LANGUAGE_IN_ENGLISH" = "Turkish";
+	
+}

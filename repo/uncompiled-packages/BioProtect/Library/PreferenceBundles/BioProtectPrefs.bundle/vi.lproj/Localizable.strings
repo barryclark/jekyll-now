@@ -1,0 +1,41 @@
+{
+	"GLOBAL_SETTINGS" = "Cài đặt tổng quát";
+	"ENABLED" = "Kích hoạt";
+	"VIBRATE_ON_ERROR" = "Rung khi bị lỗi";
+	"RECOVERY_OPTIONS" = "Các tùy chọn phục hồi";
+	"PROTECTED_APPLICATIONS" = "Các ứng dụng được bảo vệ";
+	"ADD_PASSCODE" = "Thêm mật mã phục hồi";
+	"REMOVE_PASSCODE" = "Gỡ bỏ mật mã phục hồi";
+	"CHANGE_PASSCODE" = "Thay đổi mật mã phục hồi";
+	"ENTER_PASSCODE" = "Nhập mật mã phục hồi";
+	"ENTER_OLD_PASSCODE" = "Nhập mật mã phục hồi cũ";
+	"REENTER_PASSCODE" = "Nhập lại mật mã phục hồi";
+	"PASSCODES_DID_NOT_MATCH_TRY_AGAIN" = "Mật mã không khớp. Hãy thử lại.";
+	"WRONG_PASSCODE_TRY_AGAIN" = "Sai mật mã. Hãy thử lại.";
+
+	"TOO_MANY_ATTEMPTS_SORRY" = "Sai quá nhiều lần. Rất tiếc.";
+	"CANCEL" = "Hủy bỏ";
+
+	"NO_FINGERPRINT_SET" = "Bạn chưa thiết lập cài đặt dấu tay. Để kích hoạt ứng dụng này, bạn phải thiết lập ít nhất một dấu tay. Bạn có muốn thiết lập bây giờ không?";
+	"NO" = "Không";
+	"YES_PLEASE" = "Có, hãy tiến hành";
+
+	"PLEASE_AUTHENTICATE" = "Vui lòng xác thực sử dụng dấu tay của bạn";
+	"ADDED_FIRST_FINGERPRINT_AFTER_REBOOT" = "Bạn đã thêm một dấu tay khi bạn đã kích hoạt mật mã. Thiết bị sẽ khóa trong %d giây để tái thiết lập thông tin bảo vệ";
+	"ALL_FINGERPRINTS_REMOVED" = "Tất cả các dấu tay đã được xóa bỏ. Nếu bạn có bất kỳ ứng dụng nào đang được bảo vệ, chúng sẽ không còn được bảo vệ nữa. Hãy thêm ít nhất một dấu tay để khởi động bảo vệ.";
+
+	"AUTHENTICATION_FAILED" = "Xác thực thất bại";
+	"TRY_CLEANING" = "Cố gắng làm sạch đầu ngón tay và/hoặc làm sạch nút Home";
+	"OKAY" = "Okay";
+
+	"CIRCLE_COLOR" = "Vòng tròn màu sắc";
+	"CHOOSE_COLOR" = "Lựa chọn màu sắc";
+	"PROTECT_SWITCHER" = "Bảo vệ Chuyển đổi Ứng dụng";
+	"TRANSLATOR" = "@tunutsaigon";
+    
+    "TRANSLATION_CREDITS"="Cảm tạ cho việc dịch thuật";
+    
+    "LANGUAGE" = "Việt Nam";
+    "LANGUAGE_IN_ENGLISH" = "Vietnam";
+	
+}

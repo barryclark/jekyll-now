@@ -1,0 +1,205 @@
+#!/bin/bash
+#  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#  Title: iLEX R.A.T.
+#  Author: iLEX
+#  Contact: ilexrepo@gmail.com
+#  Copyright iLEX R.A.T.  2014
+#  The Official Twitter Page: http://twitter.com/iLEXiNFO
+#  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+#  Thanks to Andrew Liu (Rootify), brc0703.
+
+
+CONSCR="/var/lib/dpkg/info"
+LOG=/tmp/redeb.log
+
+
+cd /var/mobile &> /dev/null
+mkdir Media &> /dev/null
+cd /var/mobile/Media &> /dev/null
+mkdir general_storage &> /dev/null
+chown -R mobile:mobile /var/mobile/Media &> /dev/null
+chown -R mobile:mobile /var/mobile/Media/general_storage &> /dev/null
+
+
+mkdir /var/mobile/Media/general_storage/iLEX &> /dev/null
+chown -R mobile:mobile /var/mobile/Media/general_storage/iLEX &> /dev/null
+
+mkdir /var/mobile/Media/general_storage/iLEX/tmp &> /dev/null
+chown -R mobile:mobile /var/mobile/Media/general_storage/iLEX/tmp &> /dev/null
+
+mkdir /var/mobile/Media/general_storage/iLEX/deb &> /dev/null
+chown -R mobile:mobile /var/mobile/Media/general_storage/iLEX/deb &> /dev/null
+
+cd /var/mobile/Media/general_storage/iLEX/tmp &> /dev/null
+
+if [ "$1" == "--help" ]; then
+	echo "redeb [ search ] (will find any package matching [search])"
+fi
+
+rm *.brc 2>>$LOG
+#rm *.deb 2>>$LOG
+# list of installed apps
+
+
+
+dpkg --get-selections | grep -v deinstall | grep -v gsc | sed -e 's/[\t]install//' > install.brc
+
+
+
+
+
+
+sed -i "/apr-lib/d" install.brc
+sed -i "/apt7-key/d" install.brc
+sed -i "/apt7-lib/d" install.brc
+sed -i "/base/d" install.brc
+sed -i "/bash/d" install.brc
+sed -i "/bzip2/d" install.brc
+sed -i "/com.chronic-dev.greenpois0n.rocky-racoon/d" install.brc
+sed -i "/coreutils-bin/d" install.brc
+sed -i "/cy+cpu.arm/d" install.brc
+sed -i "/cy+kernel.darwin/d" install.brc
+sed -i "/cy+lib.corefoundation/d" install.brc
+sed -i "/cy+model.iphone/d" install.brc
+sed -i "/cy+model.ipod/d" install.brc
+sed -i "/cy+model.ipad/d" install.brc
+sed -i "/cy+os.ios/d" install.brc
+sed -i "/cydia/d" install.brc
+sed -i "/cydia-lproj/d" install.brc
+sed -i "/darwintools/d" install.brc
+sed -i "/debianutils/d" install.brc
+sed -i "/diffutils/d" install.brc
+sed -i "/dpkg/d" install.brc
+sed -i "/findutils/d" install.brc
+sed -i "/firmware/d" install.brc
+sed -i "/firmware-sbin/d" install.brc
+sed -i "/gnupg/d" install.brc
+sed -i "/grep/d" install.brc
+sed -i "/gzip/d" install.brc
+sed -i "/lzma/d" install.brc
+sed -i "/ncurses/d" install.brc
+sed -i "/org.thebigboss.repo.icons/d" install.brc
+sed -i "/pam/d" install.brc
+sed -i "/pam-modules/d" install.brc
+sed -i "/pcre/d" install.brc
+sed -i "/profile.d/d" install.brc
+sed -i "/readline/d" install.brc
+sed -i "/sed/d" install.brc
+sed -i "/shell-cmds/d" install.brc
+sed -i "/system-cmds/d" install.brc
+sed -i "/tar/d" install.brc
+sed -i "/uikittools/d" install.brc
+
+sed -i "/com.evad3rs.evasi0n7/d" install.brc
+
+
+
+
+
+
+cat install.brc | sort | uniq > lista.brc
+
+# if user chose package to build find that name and only build those that match
+if [ -n "$1" ]; then
+	ARC=$(grep -i "$1" lista.brc)
+	if [ -n $(echo "$ARC" | wc -l) ]; then
+		echo "$ARC" >install.brc
+		if [ "`cat install.brc | wc -l`" -gt "1" ]; then
+			while read brc
+			do	let k=$k+1
+				echo "$k - $brc" >>chosen.brc
+			done < install.brc
+			cat chosen.brc
+			read -p "enter numbers corresponding to packages you wish to repackage " NUMBER
+			while read some
+			do CHECK=$(echo "$some" | awk '{ print $1 }')
+			for EACH in `echo "$NUMBER" | tr ' ' '\n'`; do
+			if [[ "$CHECK" == "$EACH" ]]; then
+				FINAL=$(echo $some | awk '{ print $NF }')
+				echo $FINAL >>picked.brc
+			fi; done; done < chosen.brc
+		cat picked.brc >install.brc
+		fi
+	fi
+fi
+
+# start make directories,  make list of package objects, make list of package objects, make the folder with all files
+num=1
+while read line
+do	mkdir -p $line
+	cd $line
+	dpkg -L $line > lista.txt
+	echo -e "#!/bin/bash\nwhile read io\ndo\nif [ -d \"\$io\" ]; then\nmkdir ./\"\$io\" 2>>/dev/null\nelse\nif [ -f \"\$io\" ]; then\ncp -a \"\$io\" ./\"\$io\"\nfi\nfi\ndone < lista.txt" >>getit
+	chmod 4775 getit
+	./getit
+	rm lista.txt
+	rm getit
+	mkdir DEBIAN
+	cd DEBIAN
+	dpkg -p $line > control
+	SETUP=$(find $CONSCR -name $line* | grep -v list$)
+		if [ -n "$SETUP" ]; then
+			for SCRIPT in $(echo $SETUP)
+				do	NEW=$(echo "$SCRIPT" | tr '.' ' ' | awk '{ print $NF }')
+				cp -a $SCRIPT ./$NEW
+			done
+		fi
+	chmod 0775 ./*
+	cd /var/mobile/Media/general_storage/iLEX/tmp
+	echo "Preparing $line"
+done < install.brc
+
+echo ""
+echo ""
+
+while read line
+do	dpkg -b $line ./ > $LOG 2>&1
+	echo "Packed DEB $line"
+done < install.brc
+
+echo ""
+echo ""
+echo "Delete the temporary folder..."
+# erasing folders
+while read line
+	do	rm -rf $line
+done < lista.brc
+rm *.brc
+
+
+
+
+
+
+cd /var/mobile/Media/general_storage/iLEX/tmp
+
+zip /var/mobile/Media/general_storage/iLEX/deb/bckupok.zip *.deb &> /dev/null
+mv -f /var/mobile/Media/general_storage/iLEX/deb/bckupok.zip /var/mobile/Media/general_storage/iLEX/deb/deb_`date '+%d-%m-%Y_%R'`.zip &> /dev/null
+rm /var/mobile/Media/general_storage/iLEX/deb/bckupok.zip &> /dev/null
+rm *.deb
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+rm -rf /var/mobile/Media/general_storage/iLEX/tmp
+
+
+
+
+exit 0
+
+

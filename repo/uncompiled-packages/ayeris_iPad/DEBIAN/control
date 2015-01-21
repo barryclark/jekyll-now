@@ -1,0 +1,10 @@
+Architecture: iphoneos-arm
+Author: Surenix
+Conflicts: gsc.ipad
+Depends: firmware (>= 7.0), winterboard (>= 0.9.3914)
+Depiction: http://repo.xarold.com/depiction.php?id=ayeris
+Description: Beauty's in the aye of the beholder.
+Name: ayeris_iPad
+Package: cc.cu.iosrepo.ayeris_iPad
+Section: Themes
+Version: 1.2.1

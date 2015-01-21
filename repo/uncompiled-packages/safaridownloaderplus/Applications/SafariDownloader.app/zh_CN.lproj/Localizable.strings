@@ -1,0 +1,49 @@
+/*--------------------------------------------------------------- */
+/* IMPORT VIEW */
+/*--------------------------------------------------------------- */
+
+"Browse"                        = "Browse";
+"You can now browse"            = "You can now browse your device for supported files so you can import them to your Music app, Videos app, Podcasts, Camera Roll...";
+"Import"                        = "导入";
+"Select"                        = "选择";
+"Import Media"                  = "导入媒体";
+"Media Import Started"          = "媒体开始导入";
+
+"Import is now progressing"     = "媒体导入操作正在后台运行中。\n你所导入的媒体将会很快出现在相应的媒体库内。";
+
+"This app is used to import"    = "\n此程序是用来导入Safari Downloader+下载的媒体文件的。\n\n当你触发导入媒体的操作后此程序便会自动运行。\n\n\n请不要单独删除它。";
+"Failed to retrieve images"     = "Failed to retrieve images.\nGive it another try!";
+
+"Kind"                          = "类型";
+"Change Artwork"                = "更改封面图片";
+"Search Google Images"          = "搜索Google图片";
+"Search Photo Library"          = "搜索图片媒体库";
+"Preview Media"                 = "预览媒体";
+"Results"                       = "结果";
+"Search Images"                 = "搜索图片";
+"Size"                          = "大小";
+"Images"                        = "图片";
+"Please wait..."                = "请稍后...";
+"Example"                       = "例子";
+"Movie"                         = "电影";
+"TV Episode"                    = "电视节目";
+"Video Podcast"                 = "视频播客";
+"Podcast"                       = "播客";
+"Music Video"                   = "音乐视频";
+"Song"                          = "歌曲";
+"Title"                         = "标题";
+"Media Title"                   = "媒体标题";
+"Artist"                        = "艺术家";
+"Artist Name"                   = "艺术家名字";
+"Album"                         = "专辑";
+"Album Name"                    = "专辑名称";
+"Genre"                         = "类型";
+"Year"                          = "年份";
+"Name"                          = "名";
+"Podcast Name"                  = "播客名称";
+"Episode"                       = "插曲";
+"Episode Name"                  = "插曲名称";
+"Series"                        = "风格";
+"Series Name"                   = "风格名称";
+"Season"                        = "季";
+"Movie Name"                    = "电影名称";

@@ -1,0 +1,25 @@
+
+/*--------------------------------------------------------------- */
+/* PREFS VIEW */
+/*--------------------------------------------------------------- */
+
+"Download regular files"    = "Download regular files";
+"Download videos"           = "Download videos from websites";
+"Regular Files"             = "Regular Files";
+"Desktop User Agent"        = "Desktop User Agent";
+"Auto Detect MIME Types"    = "Automatische Erkennung MIME-Typen";
+"Remember Drag Position"    = "Denken sie an das ziehen in eine position";
+"2 Fingers Swipe"           = "Streichen mit 2 Fingern";
+"File Types"                = "Datei Typen";
+"Max Concurrent Downloads"  = "Max. gleichzeitige Downloads";
+"Version"                   = "Version";
+
+"Some settings require"     = "Einige Einstellungen erfordern einen Neustart.";
+
+"Disable this to"           = "Deaktivieren Sie diese Option, um Safari daran zu hindern automatisch, eine Datei herunter zuladen und nur die möglichkeit besteht, wenn Sie manuell auf einen link klicken und  und nicht automatisch.";
+
+"Vibrate on Finish"         = "Vibrate on Finish";
+"Vibrate when"              = "Vibrate when a download is finished.";
+"Reset All Settings"        = "Reset All Settings";
+"In case of a persistent"   = "In case of a persistent malfunction, try this reset option.";
+"Remove all failed"             = "Remove all failed downloads to gain some disk space.";

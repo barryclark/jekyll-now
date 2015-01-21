@@ -1,0 +1,36 @@
+"ilexguiratdel" = "iLEX R.A.T.";
+"ilexguiratcydia" = "iLEX RESTORE";
+"Instructions_title" = "iLEX R.A.T.";
+"Instructions_message" = "iLEX R.A.T.: Remove All Cydia Tweaks And Dependencies Installed After Jailbreak! All Content and Settings Stay! Jailbreak and Activation Stay!
+
+iLEX RESTORE: Restore iDevice Back To Stock. Restore Clean Firmware! Erase All Content and Settings! Jailbreak and Activation Stay!
+
+Please, install iLEX R.A.T. only from an official source - Don't Risk!";
+"Dismiss" = "Dismiss";
+"instructions" = "Info";
+"about_title" = "iLEX R.A.T.";
+"about_message" = "Author: iLEX
+iLEX R.A.T. © 2014
+All rights reserved
+GUI by Firemoon777
+Please Donate for ilexrepo@gmail.com";
+"ilexguiratdel_confirmmessage" = "WARNING! This Will Remove All Cydia Tweaks And Dependencies Installed After Jailbreak! All Content And Settings Stay! Jailbreak and Activation Stay. iDevice Will Be Rebooted Automatically. Continued?";
+"ilexguiratdel_confirm" = "iLEX R.A.T.";
+"ilexguiratdel_complete" = "iLEX R.A.T.";
+"ilexguiratdel_message" = "Remove iLEX R.A.T.? iDevice Will Be Rebooted Automatically.";
+"Cancel" = "No";
+"Confirm" = "Yes";
+"ilexguiratdelrat_complete" = "iLEX R.A.T.";
+"ilexguiratdelrat_message" = "Reboot Your iDevice";
+"ilexguiratcydia_complete" = "iLEX R.A.T.";
+"ilexguiratcydia_message" = "Please, run iLEX R.A.T.";
+"ilexguiratcydia_confirmmessage" = "WARNING! Restore iDevice Back To Stock. Restore Clean Firmware! Erase All Content and Settings! Jailbreak and Activation Stay! iDevice Will Be Rebooted Automatically. Continued?";
+"ilexguiratcydia_confirm" = "iLEX R.A.T.";
+
+
+
+"ilexguirat2tap_confirm" = "iLEX R.A.T.";
+"ilexguirat2tap_confirmmessage" = "WARNING! Activation Sim-Card & Passwords Will Be Reset! iDevice Will Be Rebooted Automatically. Continued? Are You Sure?";
+"ilexguirat2tap_confirmreboot" = "iLEX R.A.T.";
+"ilexguirat2tap_confirmmessagereboot" = "Done! Please, Restart Your iDevice! Restart?
+Reserve copy: /Developer/iLEX/iLEX-RESTORE/Lockdown* can be removed.";

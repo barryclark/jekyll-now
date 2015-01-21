@@ -1,0 +1,15 @@
+Name: iLEX R.A.T. & RESTORE
+Version: 2.2-22
+Installed-Size: 2700
+Description: iLEX R.A.T. (iOS 4/5/6/7/8). Cydia ကို Jailbreak လုပ္ျပီးျပီးခ်င္း တုန္းကလိုမ်ိဳး ျပန္ Restore လုပ္ေပးတာပါ။ Cydia ကေန တင္ထားတဲ့ Jailbreak Apps ေတြအကုန္ ဖ်က္တာပါ။ Cydia ထဲမွာ ကလိတာ မ်ားသြားသူေတြ အတြက္ အဆင္ေျပပါတယ္။.
+Depends: apt7, sed, coreutils, coreutils-bin, openssl, openssh, gawk, zip, unzip, mobilesubstrate, preferenceloader
+Package: cc.cu.iosrepo.rat-eng2
+Section: Tweaks
+Architecture: iphoneos-arm
+Author: iLEX <ilexrepo@gmail.com>
+Sponsor: iLEX <http://twitter.com/iLEXiNFO/>
+Support: http://twitter.com/iLEXiNFO
+Maintainer: IT STAR <itstar4tech@gmail.com>
+Homepage: http://iosrepo.cu.cc
+Conflicts: com.myrepospace.iLEX.rat-eng, com.myrepospace.iLEXiNFO.ilexrestore, com.myrepospace.iLEXiNFO.rat-eng1
+Tag: ios4support::1, ios5support::1, ios6support::1, ios7support::1, ios8support::1

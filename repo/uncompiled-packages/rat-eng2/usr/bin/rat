@@ -1,0 +1,14 @@
+#!/bin/bash
+#  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#  Title: iLEX R.A.T.
+#  Author: iLEX
+#  Contact: ilexrepo@gmail.com
+#  Copyright iLEX R.A.T. © 2014
+#  The Official Twitter Page: http://twitter.com/iLEXiNFO
+#  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+#  Thanks to Andrew Liu (Rootify), brc0703.
+
+ratroot rat-run
+
+exit 0

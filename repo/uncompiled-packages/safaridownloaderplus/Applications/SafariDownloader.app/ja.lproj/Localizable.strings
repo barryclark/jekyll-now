@@ -1,0 +1,49 @@
+/*--------------------------------------------------------------- */
+/* IMPORT VIEW */
+/*--------------------------------------------------------------- */
+
+"Browse"                        = "Browse";
+"You can now browse"            = "You can now browse your device for supported files so you can import them to your Music app, Videos app, Podcasts, Camera Roll...";
+"Import"                        = "インポート";
+"Select"                        = "選択";
+"Import Media"                  = "インポートメディア";
+"Media Import Started"          = "メディアインポートが開始しました。";
+
+"Import is now progressing"     = "バックグラウンドでインポート処理中です。\nまもなく保存先に表示されます。";
+
+"This app is used to import"    = "このアプリはSafari Downloader+でダウンロードしたメディアのインポートに使われます。\n\nインポート操作をトリガーとして自動的に起動します。\n\nSafari Downloader+がインストールされていることを確認して下さい。";
+"Failed to retrieve images"     = "Failed to retrieve images.\nGive it another try!";
+
+"Kind"                          = "種類";
+"Change Artwork"                = "アートワークの変更";
+"Search Google Images"          = "Google画像検索";
+"Search Photo Library"          = "フォトライブラリの検索";
+"Preview Media"                 = "メディアプレビュー";
+"Results"                       = "結果";
+"Search Images"                 = "イメージの検索";
+"Size"                          = "サイズ";
+"Images"                        = "イメージ";
+"Please wait..."                = "お待ちください...";
+"Example"                       = "例";
+"Movie"                         = "映画";
+"TV Episode"                    = "TV番組";
+"Video Podcast"                 = "ビデオポッドキャスト";
+"Podcast"                       = "ポッドキャスト";
+"Music Video"                   = "ミュージックビデオ";
+"Song"                          = "ソング";
+"Title"                         = "タイトル";
+"Media Title"                   = "メディアタイトル";
+"Artist"                        = "アーティスト";
+"Artist Name"                   = "アーティスト名";
+"Album"                         = "アルバム";
+"Album Name"                    = "アルバム名";
+"Genre"                         = "ジャンル";
+"Year"                          = "年";
+"Name"                          = "名前";
+"Podcast Name"                  = "ポッドキャスト名";
+"Episode"                       = "番組";
+"Episode Name"                  = "番組名";
+"Series"                        = "シリーズ";
+"Series Name"                   = "シリーズ名";
+"Season"                        = "シーズン名";
+"Movie Name"                    = "映画名";

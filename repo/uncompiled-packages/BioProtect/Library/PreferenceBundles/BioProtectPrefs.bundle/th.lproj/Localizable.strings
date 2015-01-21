@@ -1,0 +1,37 @@
+{
+	"GLOBAL_SETTINGS" = "การตั้งค่าทั่วไป";
+	"ENABLED" = "เปิดใช้งาน";
+	"VIBRATE_ON_ERROR" = "สั่นอุปกรณ์เมื่อมีข้อผิดพลาด";
+	"RECOVERY_OPTIONS" = "ตัวเลือกการกู้รหัสผ่าน";
+	"PROTECTED_APPLICATIONS" = "แอพพลิเคชั่นที่ป้องกันไว้";
+	"ADD_PASSCODE" = "เพิ่มรหัสผ่าน";
+	"REMOVE_PASSCODE" = "ลบรหัสผ่าน";
+	"CHANGE_PASSCODE" = "เปลี่ยนรหัสผ่าน";
+	"ENTER_PASSCODE" = "ใส่รหัสผ่าน";
+	"ENTER_OLD_PASSCODE" = "ใส่รหัสผ่านเก่า";
+	"REENTER_PASSCODE" = "ใส่รหัสผ่านอีกครั้ง";
+	"PASSCODES_DID_NOT_MATCH_TRY_AGAIN" = "รหัสผ่านไม่ตรงกัน กรุณาลองใหม่อีกครั้ง";
+	"WRONG_PASSCODE_TRY_AGAIN" = "รหัสผ่านไม่ถูกต้อง กรุณาลองใหม่อีกครั้ง";
+
+	"TOO_MANY_ATTEMPTS_SORRY" = "มีการเข้าผิดพลาดมากเกินไป ขออภัย";
+	"CANCEL" = "ปิด";
+
+	"NO_FINGERPRINT_SET" = "คุณยังไม่ได้กำหนดลายนิ้วมือใดๆ ถ้าต้องการเปิดใช้งานแอพพลิเคชั่นนี้ คุณต้องกำหนดอย่างน้อยหนึ่งลายนิ้วมือ จะกำหนดตอนนี้เลยหรือไม่?";
+	"NO" = "ไม่";
+	"YES_PLEASE" = "ใช่ ได้โปรด";
+
+	"PLEASE_AUTHENTICATE" = "กรุณายืนยันโดยใช้ลายนิ้วมือของ";
+	"ADDED_FIRST_FINGERPRINT_AFTER_REBOOT" = "คุณได้เพิ่มลายนิ้วมือในขณะที่คุณมีรหัสผ่าน อุปกรณ์จะล๊อคภายใน %d วินาที เพื่อสร้างข้อมูลด้านความปลอดภัยใหม่";
+	"ALL_FINGERPRINTS_REMOVED" = "ลายนิ้วมือทั้งหมดถูกลบออกไปแล้ว หากคุณมีแอพพลิเคชั่นที่ป้องกันไว้ มันจะไม่ถูกป้องกันแล้ว เพิ่มลายนิ้วมืออย่างน้อยหนึ่งลายนิ้วมือเพื่อเปิดใช้การป้องกัน";
+
+	"AUTHENTICATION_FAILED" = "การยืนยันล้มเหลว";
+	"TRY_CLEANING" = "ลองทำความสะอาดนิ้วของคุณ และ/หรือ ปุ่มโฮม";
+	"OKAY" = "ตกลง";
+
+	"CIRCLE_COLOR" = "สีวงกลม";
+	"CHOOSE_COLOR" = "เลือกสี";
+	"PROTECT_SWITCHER" = "ป้องกัน AppSwitcher";
+	"TRANSLATOR" = "@PoomSmart";
+    "LANGUAGE" = "ภาษาไทย";
+    "LANGUAGE_IN_ENGLISH" = "Thai";
+}

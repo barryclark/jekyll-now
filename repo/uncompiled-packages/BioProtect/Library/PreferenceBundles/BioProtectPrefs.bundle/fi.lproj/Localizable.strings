@@ -1,0 +1,39 @@
+{
+	"GLOBAL_SETTINGS" = "Universaalit asetukset";
+	"ENABLED" = "Käytössä";
+	"VIBRATE_ON_ERROR" = "Värisee virheestä";
+	"RECOVERY_OPTIONS" = "Palautusasetukset";
+	"PROTECTED_APPLICATIONS" = "Suojatut Sovellukset";
+	"ADD_PASSCODE" = "Aseta palautuksen pääsykoodi";
+	"REMOVE_PASSCODE" = "Poista palautuksen pääsykoodi";
+	"CHANGE_PASSCODE" = "Vaihda palautuksen pääsykoodi";
+	"ENTER_PASSCODE" = "Anna palautuksen pääsykoodi";
+	"ENTER_OLD_PASSCODE" = "Anna vanha pääsykoodi";
+	"REENTER_PASSCODE" = "Anna palautuksen pääsykoodi uudelleen";
+	"PASSCODES_DID_NOT_MATCH_TRY_AGAIN" = "Pääsykoodit eivät täsmänneet. Yritä uudelleen";
+	"WRONG_PASSCODE_TRY_AGAIN" = "Väärä pääsykoodi. Yritä uudelleen";
+
+	"TOO_MANY_ATTEMPTS_SORRY" = "Liian monta yritystä. Pahoittelut";
+	"CANCEL" = "Peruuta";
+
+	"NO_FINGERPRINT_SET" = "Sinulla ei ole yhtään sormenjälkeä asetettuna. Käyttääksesi tätä sovelllustasinulla tulee olla vähintään yski sormenjälki asetettuna. Haluaisitko asettaa sormenjäljen nyt?";
+	"NO" = "En";
+	"YES_PLEASE" = "Kyllä";
+
+	"PLEASE_AUTHENTICATE" = "Todenna käyttämällä sormenjälkeä";
+	"ADDED_FIRST_FINGERPRINT_AFTER_REBOOT" = "Lisäsit sormenjäljen samalla kun laitteesi oli lukittu pääsykoodilla. Laite lukkiutuu %d sekunnissa uudelleenrakentaakseen suojaustiedot";
+	"ALL_FINGERPRINTS_REMOVED" = "Kailli sormenjäljet on poistettu. Jos sinulla oli suojattuja sovelluksia, niin ne eivät ole enään suojattu. Lisää ainakin yksi aktivoidaksesi suojauksen.";
+
+	"AUTHENTICATION_FAILED" = "Todennus epäonnistui";
+	"TRY_CLEANING" = "Yritä puhdistaa sormenpääsi ja/tai koti-nappi";
+	"OKAY" = "Ok";
+
+	"CIRCLE_COLOR" = "Ympyrän väri";
+	"CHOOSE_COLOR" = "Valitse väri";
+	"PROTECT_SWITCHER" = "Suojaa Multitasking valikko";
+	"TRANSLATION_CREDITS"="Käännösten creditsit";
+
+	"LANGUAGE" = "Suomi";
+	"LANGUAGE_IN_ENGLISH" = "Finnish";  
+	"TRANSLATOR" = "@p0sixcon";
+}

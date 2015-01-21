@@ -1,0 +1,82 @@
+#!/bin/bash
+#  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#  Title: iLEX R.A.T.
+#  Author: iLEX
+#  Contact: ilexrepo@gmail.com
+#  Copyright iLEX R.A.T.  2014
+#  The Official Twitter Page: http://twitter.com/iLEXiNFO
+#  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+#  Thanks to Andrew Liu (Rootify), brc0703.
+
+
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+
+
+echo -n "Remove all tweaks settings? (y/n) "
+
+read item
+case "$item" in
+    y|Y) echo ""
+
+
+cd /var/mobile/Library/Preferences && rm -f $(ls -A --ignore="com.apple.*.plist" --ignore=".GlobalPreferences.plist") 2>/dev/null
+rm -f /var/mobile/Library/Caches/libactivator.plist 2>/dev/null
+rm -rf /var/mobile/Library/kBatteryDoctorPro 2>/dev/null
+rm -rf /var/mobile/Library/biteSMS 2>/dev/null
+rm -rf /var/mobile/Library/iFile 2>/dev/null
+
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+
+echo "All tweaks settings were removed."
+
+
+sleep 2s
+
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+
+echo "Respring..."
+sleep 2s
+killall -1 SpringBoard &> /dev/null
+
+
+
+echo ''
+echo "Press enter";
+read num;
+rat
+exit 0;
+
+
+        ;;
+    n|N) echo ""
+
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+
+echo "..."
+sleep 3s
+
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+
+        exit 0
+
+
+        ;;
+    *) echo ""
+
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';echo '';
+
+        ;;
+esac

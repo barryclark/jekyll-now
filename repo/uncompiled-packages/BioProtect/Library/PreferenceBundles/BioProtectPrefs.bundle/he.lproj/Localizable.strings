@@ -1,0 +1,39 @@
+{
+	"GLOBAL_SETTINGS" = "הגדרות גלובליות";
+	"ENABLED" = "מופעל";
+	"VIBRATE_ON_ERROR" = "רטט בזמן שגיאה";
+	"RECOVERY_OPTIONS" = "אפשרויות שחזור";
+	"PROTECTED_APPLICATIONS" = "אפליקציות מוגנות";
+	"ADD_PASSCODE" = "הוסף סיסמה";
+	"REMOVE_PASSCODE" = "הסר סיסמה";
+	"CHANGE_PASSCODE" = "שנה סיסמה";
+	"ENTER_PASSCODE" = "הכנס סיסמה";
+	"ENTER_OLD_PASSCODE" = "הכנס סיסמה קודמת";
+	"REENTER_PASSCODE" = "הכנס סיסמה שוב";
+	"PASSCODES_DID_NOT_MATCH_TRY_AGAIN" = "הסיסמאות לא תאמו. נסה שוב.";
+	"WRONG_PASSCODE_TRY_AGAIN" = "סיסמה שגויה. נסה שוב.";
+
+	"TOO_MANY_ATTEMPTS_SORRY" = "יותר מדי ניסיונות. מצטער.";
+	"CANCEL" = "ביטול";
+
+	"NO_FINGERPRINT_SET" = "אין לך שום טביעות אצבע שמורות. כדי להפעיל את האפלקציה הזאת עליך להגדיר לפחות טביעת אצבע אחת. האם תרצה לעשות זאת עכשיו?";
+	"NO" = "לא";
+	"YES_PLEASE" = "כן, בבקשה";
+
+	"PLEASE_AUTHENTICATE" = "נא לאמת באמצעות טביעת אצבע";
+	"ADDED_FIRST_FINGERPRINT_AFTER_REBOOT" = "הוספת טביעת אצבע חדשה בזמן שהייתה סיסמה פעילה. המכשיר ינעל בעוד %d שניות כדי לבנות מחדש את מידע ההגנה";
+	"ALL_FINGERPRINTS_REMOVED" = "כל טביעות האצבע הוסרו. אם היו לך אפליקציות מוגנות, הן כבר לא מוגנות יותר. הוסף לפחות טביעת אצבע אחת כדי להפעיל את ההגנה.";
+
+	"AUTHENTICATION_FAILED" = "אימות נכשל";
+	"TRY_CLEANING" = "נסה לנקות את קצה האצבע שלך ו/או את כפתור הבית";
+	"OKAY" = "אישור";
+
+	"CIRCLE_COLOR" = "צבע עיגול";
+	"CHOOSE_COLOR" = "בחר צבע";
+	"PROTECT_SWITCHER" = "הגן על מנהל המשימות";
+	"TRANSLATOR" = "@ShaiSimel";
+    "TRANSLATION_CREDITS"="קרדיט למתרגם";
+    "LANGUAGE" = "עיברית";
+    "LANGUAGE_IN_ENGLISH" = "Hebrew";
+	
+}

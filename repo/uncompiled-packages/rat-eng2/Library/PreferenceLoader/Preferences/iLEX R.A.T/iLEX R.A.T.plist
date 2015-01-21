@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>entry</key>
+	<dict>
+		<key>cell</key>
+		<string>PSLinkCell</string>
+		<key>icon</key>
+		<string>iLEX R.A.T.png</string>
+		<key>label</key>
+		<string>iLEX R.A.T.</string>
+	</dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>alignment</key>
+			<integer>1</integer>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string></string>
+			<key>label</key>
+			<string>iLEX R.A.T.
+
+Compatible: iOS 4.x.x & 8.x.x
+iPhone / iPad / iPod
+
+Install MobileTerminal!
+command: rat</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Author: iLEX
+ilexrepo@gmail.com
+Official Source: http://cydia.myrepospace.com/iLEXiNFO/
+The Official iLEX Twitter Page: http://twitter.com/iLEXiNFO
+
+PayPal: ilexrepo@gmail.com
+</string>
+		</dict>
+		<dict>
+			<key>alignment</key>
+			<integer>1</integer>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string></string>
+			<key>label</key>
+			<string>iLEX R.A.T. © 2014</string>
+		</dict>
+	</array>
+	<key>title</key>
+	<string>iLEX R.A.T.</string>
+</dict>
+</plist>

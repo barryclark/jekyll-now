@@ -1,0 +1,100 @@
+/*--------------------------------------------------------------- */
+/* MAIN VIEW */
+/*--------------------------------------------------------------- */
+
+"OK"                                        = "OK";
+"Error Occurred"                            = "エラー発生";
+"Alert"                                     = "アラート";
+"Success"                                   = "Success";
+"Trial Expired"                             = "試用期間終了";
+"Download Target"                           = "ダウンロード先";
+"Download Image"                            = "Download Image";
+"Unavailable"                               = "利用不可";
+"Unknown"                                   = "Unknown";
+
+"Unable to create default save directory"   = "デフォルトの保存先ディレクトリが作成できません。\"%@\" 開発者までご報告ください。";
+
+"Your BETA copy"                            = "Safari Downloader+ベータ版の利用期間が終了しました。\nSafariを利用できるようにCydiaからアンインストールしてください。\n評価版のご利用ありがとうございました。";
+
+"Unable to write to the Preferences file"   = "設定ファイルに書き込みできません。設定ファイルが存在するかを確認して下さい。";
+
+"Double-Tap me to reveal available videos"  = "有効なビデオを表示するためにダブルタップしてください。\n移動したいときはドラッグしてください。\n\n設定内の最終の位置を記憶するようにセットできます。\n\n\n\n ";
+
+
+
+
+/*--------------------------------------------------------------- */
+/* SELECT VIEW */
+/*--------------------------------------------------------------- */
+
+"Select Download"                           = "ダウンロード選択";
+"Download"                                  = "ダウンロード";
+"View"                                      = "ビュー";
+"Cancel"                                    = "キャンセル";
+"Select Destination"                        = "保存先の選択";
+"Size"                                      = "サイズ";
+"Size Unavailable"                          = "利用不可サイズ";
+"Create"                                    = "作成";
+"Select"                                    = "選択";
+"Unable to write to the Preferences file"   = "設定ファイルに書き込みできません。\n設定ファイルが存在するかを確認して下さい。";
+"Tap the text to change the name"           = "Tap on the text to change the file name.\n\n ";
+
+
+/*--------------------------------------------------------------- */
+/* DOWNLOADS VIEW */
+/*--------------------------------------------------------------- */
+
+"Files"                                     = "ファイル";
+"Videos"                                    = "ビデオ";
+"Open In..."                                = "このアプリで開く...";
+"Delete From Disk"                          = "ディスクから削除";
+"Clear From List"                           = "リストから削除";
+"Clear All"                                 = "すべてをクリア";
+"Delete All"                                = "すべてを削除";
+"Delete"                                    = "削除";
+"Import"                                    = "インポート";
+"Import to Videos"                          = "ビデオにインポート";
+"Import Audio to Music"                     = "ミュージックにインポート";
+"Preview"                                   = "プレビュー";
+"Pirated Version!"                          = "海賊版!";
+"Confirm"                                   = "確認";
+"Clear"                                     = "クリア";
+"Failed to create the Preferences file"     = "設定ファイルの作成に失敗しました";
+"Unable to connect to the internet"         = "インターネットに接続できません";
+
+"This action will clear downloads"          = "このデバイスに保存されたダウンロードリストをクリアするかクリアと削除するかを選択してください。";
+"This action will clear Youtube"            = "このデバイスに保存されたYoutubeビデオリストをクリアするかクリアと削除するかを選択してください。";
+
+"You are using a pirated copy"              = "あなたは海賊版のSafari Downloader+を利用しています。\nよりよいアプリ開発の継続を支援するために、正規版を購入してください。";
+
+"Tap the title bar to switch tabs"          = "タブを切り替えるにはタイトルバーをタップしてください。\n\n設定アプリで1本指または2本指でのスワイプでタブを切り替えるように変更することもできます。\n\n ";
+
+/*--------------------------------------------------------------- */
+/* TUTORIALS VIEW */
+/*--------------------------------------------------------------- */
+
+"OK. Got it."                               = "OK. Got it.";
+"Downloads"                                 = "Downloads";
+"Convenient Switch"                         = "Convenient Switch";
+"Download Videos"                           = "Download Videos";
+"Custom Naming"                             = "Custom Naming";
+"Media Importer"                            = "Media Importer";
+"Enjoy"                                     = "Enjoy";
+"On"                                        = "On";
+"Off"                                       = "Off";
+
+"The new “Downloads” button"                = "The new “Downloads” button has a new function which will make using Safari Downloader+ simply easy and more convenient.\n\nPress on the new “Downloads” button and without releasing Swipe left or right to toggle downloading between On (blue) and Off (grey).";
+
+"When viewing a YouTube video"              = "When viewing a YouTube video, SD+ will detect available qualities and will present you with round button at the bottom right corner of your screen.";
+
+"Double click this button"                  = "Double click this button to reveal different  available video qualities.";
+
+"Before you start your download"            = "Before you start your download, you can change the file name by tapping its existing name field.";
+
+"Import supported Media to"                 = "Import supported Media to a wide range of destinations and freely modify the Metadata with option to search for specific album artwork.";
+
+"Thank you for downloading SD+"             = "Thank you for downloading SD+.\nPlease support the developper and reject piracy.\n\nFor reporting bugs and issues please contact the dev via Cydia.";
+
+"The fun way to using iOS Safari."          = "The fun way to using iOS Safari.";
+
+

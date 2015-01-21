@@ -1,0 +1,36 @@
+{
+	"GLOBAL_SETTINGS" = "Global Settings";
+	"ENABLED" = "Enabled";
+	"VIBRATE_ON_ERROR" = "Vibrate on error";
+	"PASSCODE_OPTIONS" = "Passcode options";
+	"PROTECTED_APPLICATIONS" = "Protected Applications";
+	"ADD_PASSCODE" = "Add a recovery passcode";
+	"REMOVE_PASSCODE" = "Remove recovery passcode";
+	"CHANGE_PASSCODE" = "Change recovery passcode";
+	"ENTER_PASSCODE" = "Enter a recovery passcode";
+	"ENTER_OLD_PASSCODE" = "Enter old recovery passcode";
+	"REENTER_PASSCODE" = "Re-enter recovery passcode";
+	"PASSCODES_DID_NOT_MATCH_TRY_AGAIN" = "Passcodes didn't match. Try again.";
+	"WRONG_PASSCODE_TRY_AGAIN" = "Wrong passcode. Try again.";
+
+	"TOO_MANY_ATTEMPTS_SORRY" = "Too many attempts. Sorry.";
+	"CANCEL" = "Cancel";
+
+	"NO_FINGERPRINT_SET" = "You do not have any fingerprints set. To enable this application, you must have at least one fingerprint set. Would you like to setup one now?";
+	"NO" = "No";
+	"YES_PLEASE" = "Yes, please";
+
+	"PLEASE_AUTHENTICATE" = "Please authenticate using your fingerprint";
+	"ADDED_FIRST_FINGERPRINT_AFTER_REBOOT" = "You added a fingerprint while you had a passcode activated. Device will lock in %d seconds to rebuild protection information";
+	"ALL_FINGERPRINTS_REMOVED" = "All fingerprints have been removed. If you had any protected applications, they are no longer protected. Add at least one fingerprint to activate protection.";
+
+	"AUTHENTICATION_FAILED" = "Authentication failed";
+	"TRY_CLEANING" = "Try cleaning your fingertip and/or the home button";
+	"OKAY" = "Okay";
+
+	"CIRCLE_COLOR" = "Circle Color";
+	"CHOOSE_COLOR" = "Choose a color";
+	"PROTECT_SWITCHER" = "Protect AppSwitcher";
+
+	
+}

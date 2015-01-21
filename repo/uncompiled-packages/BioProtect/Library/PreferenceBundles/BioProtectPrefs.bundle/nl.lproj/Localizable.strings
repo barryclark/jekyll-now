@@ -1,0 +1,42 @@
+{
+	"GLOBAL_SETTINGS" = "Algemene instellingen";
+	"ENABLED" = "Aan";
+	"VIBRATE_ON_ERROR" = "Trillen bij error";
+	"RECOVERY_OPTIONS" = "Herstel opties";
+	"PROTECTED_APPLICATIONS" = "Beschermde applicaties";
+	"ADD_PASSCODE" = "Herstel code toevoegen";
+	"REMOVE_PASSCODE" = "Herstel code verwijderen";
+	"CHANGE_PASSCODE" = "Herstel code veranderen";
+	"ENTER_PASSCODE" = "Herstel code invoeren";
+	"ENTER_OLD_PASSCODE" = "Voer uw oude code in";
+	"REENTER_PASSCODE" = "Voer nogmaals uw oude code in";
+	"PASSCODES_DID_NOT_MATCH_TRY_AGAIN" = "Codes komen niet overeen. Probeer opnieuw.";
+	"WRONG_PASSCODE_TRY_AGAIN" = "Verkeerde code. Probeer opnieuw.";
+
+	"TOO_MANY_ATTEMPTS_SORRY" = "Te veel pogingen. Sorry.";
+	"CANCEL" = "Annuleer";
+
+	"NO_FINGERPRINT_SET" = "U heeft geen vingerafdrukken ingesteld. Om deze applicatie in te schakelen, moet u tenminste één vingerafdruk ingesteld hebben. Wilt u dit nu instellen?";
+	"NO" = "Nee";
+	"YES_PLEASE" = "Ja, graag";
+
+	"PLEASE_AUTHENTICATE" = "Authenticeer u a.u.b. door middel van uw vinkgerafdruk";
+	"ADDED_FIRST_FINGERPRINT_AFTER_REBOOT" = "U heeft uw vingerafdruk toegevoegd terwijl een toegangscode actief was. In %d seconden zal dit apparaat vergrendeld worden om beveiligings informatie opnieuw op te bouwen";
+	"ALL_FINGERPRINTS_REMOVED" = "Alle vingerafdrukken zijn verwijderd. Alle beveiligde applicatie zijn niet langer beveiligd. Voeg a.u.b. tenminste één vingerafdruk toe om beveiliging te activeren.";
+
+	"AUTHENTICATION_FAILED" = "Authenticatie mislukt";
+	"TRY_CLEANING" = "Probeer het schoonmaken van uw vingertop en/of de home-knop";
+	"OKAY" = "Ok";
+
+	"CIRCLE_COLOR" = "Cirkel Kleur";
+	"CHOOSE_COLOR" = "Kies een kleur";
+	"PROTECT_SWITCHER" = "Beveilig AppSwitcher";
+	"TRANSLATOR" = "@hellwich";
+    
+    "TRANSLATION_CREDITS"="Translation Credits";
+    
+    "LANGUAGE" = "Nederlands";
+    
+    "LANGUAGE_IN_ENGLISH" = "Dutch";
+	
+}

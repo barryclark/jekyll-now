@@ -1,0 +1,40 @@
+{
+	"GLOBAL_SETTINGS" = "整体设定";
+	"ENABLED" = "开启";
+	"VIBRATE_ON_ERROR" = "出错时震动";
+	"RECOVERY_OPTIONS" = "复原设置";
+	"PROTECTED_APPLICATIONS" = "已加密程序";
+	"ADD_PASSCODE" = "添加复原密码";
+	"REMOVE_PASSCODE" = "移除复原密码";
+	"CHANGE_PASSCODE" = "修改复原密码";
+	"ENTER_PASSCODE" = "输入复原密码";
+	"ENTER_OLD_PASSCODE" = "输入旧的复原密码";
+	"REENTER_PASSCODE" = "再输入一次复原密码";
+	"PASSCODES_DID_NOT_MATCH_TRY_AGAIN" = "密码不匹配，再试一次";
+	"WRONG_PASSCODE_TRY_AGAIN" = "密码错误，再试一次";
+    
+	"TOO_MANY_ATTEMPTS_SORRY" = "对不起，尝试次数过多";
+	"CANCEL" = "取消";
+    
+	"NO_FINGERPRINT_SET" = "您没有设定任何指纹。要使用此软件，您必须设定至少有一个指纹。想要现在设定吗？";
+	"NO" = "不";
+	"YES_PLEASE" = "是";
+    
+	"PLEASE_AUTHENTICATE" = "请使用您的指纹验证";
+	"ADDED_FIRST_FINGERPRINT_AFTER_REBOOT" = "您在已经设定密码后添加了新的指纹。设备将会在%d秒后锁定，用来重设加密信息";
+	"ALL_FINGERPRINTS_REMOVED" = "所有指纹已被清除，如果您已经设置了任何加密程序，它们不再被加密。要重新加密，您必须添加至少一个指纹";
+    
+	"AUTHENTICATION_FAILED" = "验证失败";
+	"TRY_CLEANING" = "尝试清洁您的指尖和/或Home键";
+	"OKAY" = "好的";
+    
+	"CIRCLE_COLOR" = "圆环颜色";
+	"CHOOSE_COLOR" = "选择一个颜色";
+	"PROTECT_SWITCHER" = "加密多任务界面";
+	"TRANSLATOR" = "@MichaelYuen23";
+    "TRANSLATION_CREDITS"="译者信息";
+    
+    "LANGUAGE" = "简体中文";
+    "LANGUAGE_IN_ENGLISH" = "Simplified Chinese";
+	
+}
