@@ -1,0 +1,50 @@
+---
+layout: page
+title: Centrifuge (Class 5)
+permalink: /biofactory/class/5-centrifuge/
+---
+
+## Synopsys
+
+We’ll try to isolate our first biomaterial. For that we need centrifugal force to take your samples for a spin. In class you will learn more about analog electronics and physical separation techniques.
+
+## Schedule
+
+* Electronics
+* Fritzing documentation
+* OpenSCAD
+* Centrifugation
+* Centrifuge design
+
+## Centrifuge Design
+
+This week we will build the centrifuge. Download the design files here:
+
+* [Functional and technical requirements](/biofactory/class/5-centrifuge/requirements/)
+* SketchUp assembly
+* SVG laser cut files
+* [Fritzing wiring](/biofactory/class/5/Centrifuge-Fritzing.fz)
+
+## Bill of Materials
+
+In order to take part in this class you will need the following materials:
+
+* [Centrifuge materials](/biofactory/class/5-centrifuge/centrifuge-materials/)
+
+## Assignment
+
+Start sketching your bioreactor controller in Fritzing.
+
+## Additional reading and hacking
+
+* Electronics
+* Fritzing
+* Centrifugation
+* Centrifuge
+  * [RWXBioFuge](https://github.com/PieterVanBoheemen/RWXBioFuge)
+
+## Feeling lazy?
+
+Go ahead and buy a table top centrifuge:
+
+* 

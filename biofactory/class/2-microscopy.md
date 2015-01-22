@@ -1,0 +1,72 @@
+---
+layout: page
+title: Microscope (Class 2)
+permalink: /biofactory/class/2-microscope/
+---
+
+## Synopsys
+
+We will make our own microscope to take a closer look at how last week’s
+cultures have grown. The subject of this class is microbio physiology and
+open source publishing. 
+
+## Schedule
+
+* Microbial physiology & Nutrient diversity
+* Microscopy & Optics theory
+* Open Source licensing & publishing
+* Microscope design
+* Microscopy practical
+  * [Preparing microscope slides](/biofactory/class/2-microscope/preparing-slides/)
+  * [Operating a microscope](/biofactory/class/2-microscope/operating-microscope/)
+  * [Gram Staining](/biofactory/class/2-microscope/gram-staining/)
+  * [Loeffler Methylene Blue Staining](/biofactory/class/2-microscope/loeffler-staining/)
+
+## Microscope Design
+
+In the next seven days you will build your own microscope. Download the design files here:
+
+* [Functional and technical requirements](/biofactory/class/2-microscope/requirements/)
+* [SketchUp assembly](/biofactory/class/2/Microscope-Sketchup.skp)
+* [SVG laser cut files](/biofactory/class/2/Microscope-SVGs.zip)
+* [Fritzing wiring](/biofactory/class/2/Microscope-Fritzing.fz)
+
+![Microscope](/biofactory/class/2/Microscope.png)
+
+## Microscope Webcam Hack
+
+Alternatively you can make the much simpler Hackteria-style microscope hack:
+
+* [SketchUp assembly](/biofactory/class/2/Webcam-Microscope-Sketchup.skp)
+* [SVG laser cut files](/biofactory/class/2/Webcam-Microscope-SVGs.zip)
+
+![Webcam Microscope](/biofactory/class/2/Webcam-Microscope.png)
+
+## Bill of Materials
+
+In order to take part in this class you will need the following materials:
+
+* [Microscope materials](/biofactory/class/2-microscope/microscope-materials/)
+* [Microscopy practical materials](/biofactory/class/2-microscope/microscopy-materials/)
+
+## Assignment
+
+Publish your microscopy video along with a Creative Commons license on your Github page.
+
+## Additional reading and hacking
+
+* Microscopy
+  * [Microscopy theory](http://micro.magnet.fsu.edu/primer/anatomy/anatomy.html)
+  * [Microbehunter](http://www.microbehunter.com/)
+  * [Yahoo Microscopy Group](https://groups.yahoo.com/neo/groups/Microscope/info)
+* DIY Designs
+  * [OneDollar Compound Microscope](http://www.funsci.com/fun3_en/ucomp1/ucomp1.htm)
+  * [Hackteria Microscopy](http://hackteria.org/wiki/index.php/DIY_microscopy)
+  * [DIYBio Singapore](https://diybiosingapore.wordpress.com/2014/06/22/diy-webcam-microscope-sg-style-2/)
+  * [Makezine Laser Microscope](http://makezine.com/projects/make-36-boards/laser-projection-microscope/)
+
+## Feeling lazy?
+
+Go ahead and buy a microscope:
+
+* [LCD video microscope](https://www.conrad.nl/nl/bresser-lcd-microscoop-35-inch-40x-1600x-815889.html)

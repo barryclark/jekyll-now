@@ -1,0 +1,17 @@
+---
+layout: default
+title: Spirulina maxima
+permalink: /biofactory/annex/culture-collection/spirulina-maxima/
+categories: culture-collection
+---
+
+## Spirulina maxima
+
+* Cyanobacteria
+* Grows best on [Spirulina medium](/biofactory/annex/cultivation-media/spirulina-medium/)
+* Find out more on [Wikipedia](http://en.wikipedia.org/wiki/Spirulina_%28genus%29) and [MicrobeWiki](https://microbewiki.kenyon.edu/index.php/Spirulina)
+* Bought on eBay
+
+![spirulina]({{ site.baseurl }}/biofactory/culture-collection/spirulina.jpg) 
+
+[Back to Culture Collection](/biofactory/annex/culture-collection/)
