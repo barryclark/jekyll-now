@@ -1,6 +1,7 @@
 #!/usr/bin/env perl
 
 # Author: Patrick Muff <muff.pa@gmail.com>
+# updated: Shein Myint Aung <sheinmyintaung@gmail.com>
 # Purpose: Compiles a Cydia repository
 
 use Digest::MD5;
