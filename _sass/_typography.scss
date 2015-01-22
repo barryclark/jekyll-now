@@ -20,3 +20,8 @@ h6,
   line-height: 1.2;
   margin: 1em 0 0.5em;
 }
+
+abbr {
+  border-bottom: 1px black dotted;
+  cursor: help;
+}

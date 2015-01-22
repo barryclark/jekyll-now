@@ -1,3 +1,17 @@
+.site-wrap {
+  min-height: 100%;
+  margin-bottom: -120px;
+}
+
+.site-wrap:after {
+  content: "";
+  display: block;
+}
+
+.footer, .site-wrap:after {
+  height: 120px;
+}
+
 footer {
   border-top: thin solid #f3f3f3;
 }

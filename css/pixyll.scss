@@ -8,6 +8,8 @@
 
 @import 'basscss';
 
+@import 'base';
+
 @import 'links';
 @import 'positions';
 @import 'clearfix';
@@ -20,6 +22,10 @@
 @import 'footer';
 @import 'social-icons';
 @import 'blockquotes';
+@import 'posts';
+@import 'media-queries';
+@import 'gists';
+@import 'measure';
 
 @import 'main';
 @import 'solarized-dark';
