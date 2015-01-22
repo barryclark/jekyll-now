@@ -1,0 +1,35 @@
+---
+layout: default
+title: Photobacterium Phospherium Agar (PPA)
+permalink: /biofactory/annex/cultivation-media/photobacterium-phosperium-agar/
+categories: cultivation-media
+---
+
+## Photobacterium Phospherium Agar (PPA)
+
+|Compound| Amount | Unit |
+|:-------|-------:|-----:|
+|Nutrient borth|8|g|
+|NaCl|30|g|
+|Glycerol|10|g|
+|CaCO<sub>3</sub>|5|g|
+|Agar|15|g|
+|Distellid water|up to 1000|mL|
+
+### Biohacker Alternatives
+
+This works just as well:
+
+|Compound| Amount | Unit |
+|:-------|-------:|-----:|
+|Vegetable Buillon powder|16|g|
+|Yeast extract|0.7|g|
+|Sea salt|30|g|
+|Glycerine|10|g|
+|Ground chalk|5|g|
+|Agar|15|g|
+|Distellid water|up to 1000|mL
+
+Derived from the [Microbiology at Home manual](http://exploringtheinvisible.files.wordpress.com/2012/11/manual.pdf)
+
+[Back to Cultivation Media](/biofactory/annex/cultivation-media/)

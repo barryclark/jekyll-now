@@ -1,0 +1,52 @@
+---
+layout: page
+title: Reactor Controller (Class 9)
+permalink: /biofactory/class/9-reactor-controller/
+---
+
+## Synopsys
+
+Now that we have constructed pumps, stirrers and a spectrometer we can start connecting all the dots into one big bioreactor. The controller will be able to set the environmental parameters, input and analyse the effluent of your reactor. 
+
+## Schedule
+
+* Reactor assembly
+* Inoculation and sampling
+* Controller Design
+
+## Reactor Controller Design
+
+This week is all about Arduino code. We need to tie everything together into one mean machine.
+
+* [Arduino code](/biofactory/class/19/reactor-controller-arduino-code.txt
+
+## Bill of Materials
+
+In order to take part in this class you will need the following materials:
+
+* [Reactor Controller materials](/biofactory/class/9-reactor-controller/controller-materials/)
+
+## Assignment
+
+Document your entire bioreactor, anwering the following questions:
+
+* What does the reactor do? What product has been made?
+* From what designs is it derived?
+* How much does it cost?
+* Which parts have been custom made, by what machine?
+* What are all the components and how much do they cost?
+* How is it assembled?
+* What can be improved?
+
+## Additional reading and hacking
+
+* Reactor Design
+  * 
+* Controllers
+  * 
+
+## Feeling lazy?
+
+Go ahead and buy a reactor controller:
+
+* 
