@@ -1,3 +1,23 @@
+- slug: Jupiter
+  name: Jupiter
+
+- slug: Luna
+  name: Luna
+
+- slug: Freya
+  name: Freya
+  
+  
+- slug: stock
+  name: stock
+
+- slug: official
+  name: official
+
+
+- slug: Gala
+  name: Gala
+  
 - slug: GTK3
   name: GTK3
   
@@ -7,8 +27,12 @@
 - slug: Webapp
   name: Webapp
   
-- slug: Gala
-  name: Gala
-  
+
+- slug: Android
+  name: Android
+
 - slug: Apple
   name: Apple
+  
+- slug: Microsoft
+  name: Microsoft
