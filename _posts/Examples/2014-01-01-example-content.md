@@ -1,5 +1,6 @@
 ---
 layout: post
+category: example
 title: Example - content example
 ---
 
