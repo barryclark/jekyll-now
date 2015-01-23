@@ -1,6 +1,5 @@
 ---
 layout: post
-category: example
 title: Example - Rstudio에서 md 파일을 남기는 방법
 ---
 
