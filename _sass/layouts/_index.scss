@@ -30,9 +30,12 @@
 }
 // pagination
 .pagination .button {
-  margin-left: 0 2em;
+  margin: 0 1.5em;
+  i {
+    vertical-align: middle;
+  }
 }
 .pagination {
-  padding: 0 $padding-large;
+  padding: $padding-small $padding-large 0 $padding-large;
   text-align: center;
 }
