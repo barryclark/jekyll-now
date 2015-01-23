@@ -3,6 +3,8 @@ layout: page
 title: Curriculum Vitae
 permalink: /cv/
 ---
+[Download PDF format CV](http://chadchae.github.io/resource_documents/2015_jan_chad_cv.pdf)
+
 
 ### Chungil Chae (Chad)  
 10 Vairo Blvd, APT 24H. | State College, PA 16803  
