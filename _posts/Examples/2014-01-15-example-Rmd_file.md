@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Rmd file 을 블로그에 포스트 하기위해 md 파일을 남기는 방법
+title: Example - Rmd file 을 블로그에 포스트 하기위해 md 파일을 남기는 방법
 ---
 
 <br/>

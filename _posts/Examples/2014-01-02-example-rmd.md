@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Rmd file 예제
+title: Example - Rmd file 예제
 ---
 
 
