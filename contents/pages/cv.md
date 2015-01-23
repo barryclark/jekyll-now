@@ -47,6 +47,8 @@ teaching in Workforce Education and Human Resource Development field. My area of
 - 2013 : MPSOD Online Course Development | Course Development Staff
 
 ### Contact me
+814-880-5200
 
 [chadchae@gmail.com](mailto:chadchae@gmail.com)
+
 [czc176@psu.edu](mailto:czc176@psu.edu)
