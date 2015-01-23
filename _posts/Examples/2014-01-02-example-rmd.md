@@ -1,5 +1,6 @@
 ---
 layout: post
+category: example
 title: Example - Rmd file 예제
 ---
 
