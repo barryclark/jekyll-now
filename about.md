@@ -4,12 +4,8 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Check out our site and try Waterbear for yourself at waterbearlang.com [waterbearlang.com](waterbearlang.com)
 
-### More Information
+### Contact us
 
-A place to include any other types of information that you'd like to include about yourself. 
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+[discuss@lists.waterbearlang.com](mailto:discuss@lists.waterbearlang.com)
