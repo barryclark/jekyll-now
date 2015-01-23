@@ -11,7 +11,10 @@ Success of learning interventions and human performance improvement depends on e
 <table>
 <tr>
 <td><img src="http://chadchae.github.io/resource_images/face.png"></td>
-<td><iframe width="853" height="480" src="//www.youtube.com/embed/7RLLAEKZNDE" frameborder="0" allowfullscreen></iframe></td>
+<td>"learning is not just learning</td>
+</tr>
+<tr>
+<td colspan = "2"><iframe width="853" height="480" src="//www.youtube.com/embed/7RLLAEKZNDE" frameborder="0" allowfullscreen></iframe></td>
 </tr>
 </table>
 
