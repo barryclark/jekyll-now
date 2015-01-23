@@ -8,11 +8,12 @@ I am pursuing a leadership and a scholarship position as a faculty member focusi
 
 Success of learning interventions and human performance improvement depends on evaluation process that includes identification of key learning factors, and provides a pipeline to strategic business plan and competency. However, there are difficulties related with measuring human capital and intangible effects. Therefore, understanding nature of learning and evaluation became my focus of study.
 
-
-| <img src="http://chadchae.github.io/resource_images/face.png"> | "Learning is not just leaning."|
-| ------------- |:-------------:|
-
-
+<table>
+<tr>
+<td><img src="http://chadchae.github.io/resource_images/face.png"></td>
+<td><iframe width="853" height="480" src="//www.youtube.com/embed/7RLLAEKZNDE" frameborder="0" allowfullscreen></iframe></td>
+</tr>
+</table>
 
 
 ## Some certifications are currently available: 

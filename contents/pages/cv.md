@@ -33,8 +33,10 @@ teaching in Workforce Education and Human Resource Development field. My area of
 
 
 ### Selected Conference Papers
-- Eversole & Chae (2010) Decision-Making Styles of CEOs: A New Model for Human Relations Problems. Proceedings of the Academy of Human Resource Development, Knoxville, TN: The Academy of Human Resource Development
 - Chae, Yoon, Cho (2015) Structural Determinants of Human Resource Development Research Collaboration Network - Social Network Perspectives. Proceedings of the Academy of Human Resource Development, Saint Louis, MO: The Academy of Human Resource Development
+
+- Eversole & Chae (2010) Decision-Making Styles of CEOs: A New Model for Human Relations Problems. Proceedings of the Academy of Human Resource Development, Knoxville, TN: The Academy of Human Resource Development
+
 
 ### Scholarly / Academic Project
 - 2013 : Bootcamp R | Seminar Coordinator
