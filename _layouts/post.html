@@ -12,8 +12,14 @@ layout: default
   <span class="post-meta">{{ page.date | date: "%b %-d, %Y" }}</span><br>
   {% if page.update_date %}
     <span class="post-meta">Updated: {{ page.update_date | date: "%b %-d, %Y" }}</span><br>
+  {% endif %}  
+  <span class="post-meta small">
+  {% if page.minutes %}
+    {{ page.minutes }} minute read
+  {% else %}
+    {{ minutes }} minute read
   {% endif %}
-  <span class="post-meta small">{{ minutes }} minute read</span>
+  </span>
 </div>
 
 <article class="post-content">
