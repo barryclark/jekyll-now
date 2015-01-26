@@ -17,3 +17,4 @@ Thanks to the following:
 * [Jekyll](http://jekyllrb.com)
 * [Refills](http://refills.bourbon.io/)
 * [Solarized](http://ethanschoonover.com/solarized)
+* [Type Scale](http://type-scale.com/)
