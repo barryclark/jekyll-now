@@ -22,9 +22,18 @@ open source publishing.
   * [Gram Staining](/biofactory/class/2-microscope/gram-staining/)
   * [Loeffler Methylene Blue Staining](/biofactory/class/2-microscope/loeffler-staining/)
 
+## Microscope Webcam Hack
+
+To make a microscope you can hack a webcam Hackteria-style:
+
+* [SketchUp assembly](/biofactory/class/2/Webcam-Microscope-Sketchup.skp)
+* [SVG laser cut files](/biofactory/class/2/Webcam-Microscope-SVGs.zip)
+
+![Webcam Microscope](/biofactory/class/2/Webcam-Microscope.png)
+
 ## Microscope Design
 
-In the next seven days you will build your own microscope. Download the design files here:
+Alternatively build your own microscope. Download the design files here:
 
 * [Functional and technical requirements](/biofactory/class/2-microscope/requirements/)
 * [SketchUp assembly](/biofactory/class/2/Microscope-Sketchup.skp)
@@ -33,19 +42,11 @@ In the next seven days you will build your own microscope. Download the design f
 
 ![Microscope](/biofactory/class/2/Microscope.png)
 
-## Microscope Webcam Hack
-
-Alternatively you can make the much simpler Hackteria-style microscope hack:
-
-* [SketchUp assembly](/biofactory/class/2/Webcam-Microscope-Sketchup.skp)
-* [SVG laser cut files](/biofactory/class/2/Webcam-Microscope-SVGs.zip)
-
-![Webcam Microscope](/biofactory/class/2/Webcam-Microscope.png)
-
 ## Bill of Materials
 
 In order to take part in this class you will need the following materials:
 
+* [Webcam Microscope materials](/biofactory/class/2-microscope/webcam-microscope-materials/)
 * [Microscope materials](/biofactory/class/2-microscope/microscope-materials/)
 * [Microscopy practical materials](/biofactory/class/2-microscope/microscopy-materials/)
 

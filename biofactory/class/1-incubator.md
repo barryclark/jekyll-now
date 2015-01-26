@@ -10,7 +10,7 @@ Build your own incubator and start growing microbes under controlled conditions.
 
 ## Schedule
 
-* Introduction & tour through the Waag Labs
+* Introduction & tour around the lab
 * Microbiology fundamentals & Biological safety instructions
 * Arduino programming & soldering
 * Incubator design
@@ -22,7 +22,7 @@ Build your own incubator and start growing microbes under controlled conditions.
 
 ## Incubator Design
 
-The following week we will build our first Open Hardware lab device: the incubator. Download the design files here:
+This week we will build our first Open Hardware lab device: the incubator. Download the design files here:
 
 * [Functional and technical requirements](/biofactory/class/1-incubator/requirements/)
 * [SketchUp assembly](/biofactory/class/1/Incubator-Sketchup.skp)

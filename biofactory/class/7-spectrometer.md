@@ -62,4 +62,4 @@ Hack the spectrometer into a flow spectrometer.
 
 Go ahead and buy a spectrometer:
 
-* 
+* Second hand photospectrometers at [LabX](http://www.labx.com/spectrophotometer-uv-vis-fluor) 

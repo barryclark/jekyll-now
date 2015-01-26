@@ -45,10 +45,10 @@ In order to take part in this class you will need the following materials:
   * [Hackteria](http://www.hackteria.org)
   * [Biocoder](http://www.biocoder.com)
 * Sterile Hoods
-  * [Hackteria Sterile Hood]
+  * [Hackteria Sterile Hood](http://hackteria.org/wiki/index.php/DIY_Sterlisation_Hood)
 
 ## Feeling lazy?
 
 Go ahead and buy a sterile hood:
 
-* 
+* Buy one on [eBay](http://www.ebay.com/bhp/laminar-flow-hood)
