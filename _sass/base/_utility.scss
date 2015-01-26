@@ -25,6 +25,7 @@
 }
 a.button:hover {
   background: $link-color;
+  border: 1px solid $link-color;
   color: $background-color;
   text-decoration: none;
 }
