@@ -21,13 +21,18 @@ This week we will two type of pumps. Download the design files here:
 
 * [Functional and technical requirements](/biofactory/class/8-pumps/requirements/)
 * Syringe pump design
-  * SketchUp assembly
-  * SVG laser cut files
-  * [Fritzing wiring](/biofactory/class/8/Syringe-Pump-Fritzing.fz)
+  * [SketchUp assembly](/biofactory/class/8/Syringe-Pump-Sketchup.skp)
+  * [SVG laser cut files](/biofactory/class/8/Syringe-Pump-SVGs.zip)
+  * [Fritzing wiring]
+  * [Arduino Code]
+
+![Syringe Pump](/biofactory/class/8/Syringe-Pump.png)
+
 * Peristaltic pump design
   * SketchUp assembly
   * SVG laser cut files
-  * [Fritzing wiring](/biofactory/class/8/Persistaltic-Pump-Fritzing.fz)
+  * [Fritzing wiring]
+  * [Arduino Code]
 
 ## Bill of Materials
 

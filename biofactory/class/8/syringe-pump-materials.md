@@ -32,7 +32,9 @@ You will need an Arduino UNO or similar microprocessor.
 |--|--|---|---|---|
 |||*Total costs*|||
 
-* You will also need 3mm MDF and some M3 10 mm bolts and nuts
+You will also need: 
+* 60 mL syringe, make sure you adjust the mount according to the dimensions of your syringe!!
+* 3mm MDF and some M3 10 mm bolts and nuts
 
 ### Nice to have
 
