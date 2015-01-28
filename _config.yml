@@ -45,7 +45,7 @@ share_stumbleupon: false
 share_hackernews: false
 
 # Build settings
-markdown:     redcarpet
+markdown:     kramdown
 redcarpet:
   extensions: ['smart', 'tables', 'with_toc_data']
 permalink:    pretty
