@@ -1,0 +1,41 @@
+0 - 25 bodu		4
+26 - 35 bodu		3
+36 - 44 bodu		2
+45 - 54 bodu		1
+
+Jmeno			Pocet bodu		Znamka		Moznost zlepseni na ustni zkousce?
+Bujnošek Tomáš		8			4		ne
+Češeková Nikoleta	15			4		ne
+Čižmárik Andrej		24			4		ano
+Diviš Jiří		7			4		ne
+Faryad Ján		53			1		ne
+Firment Roman		36			2		ne
+Hodík Karel		22			4		ano
+Hovanová Tatiana	27			3		ne
+Hulík Marek		0			4		ne
+Chytrý Pavel		21			4		ano
+Iser Tomáš		32			3		ne
+Jurčo Michal		30			3		ne
+Knotek Jaroslav		24			4		ano
+Kožik Juraj		11			4		ne
+Kurysheva Ekaterina	21			4		ano
+Macke Jaroslav		15			4		ne
+Pantůčková Kristýna	33			3		ano
+Papinčák Marek		9			4		ne
+Patík Vladimír		29			3		ne
+Scholleová Klára	18			4		ne
+Sianov Denis		9			4		ne
+Sučan Ján		36			2		ne
+Suchomel Jan		26			3		ne
+Šindler Jaroslav	11			4		ne
+Škopek Ondrej		33			3		ano
+Šrůtek Michal		19			4		ne
+Šťavík Petr		31			3		ne
+Štědronský Filip	49			1		ne
+Wirth Martin		30			3		ne
+Zeman Dalibor		29			3		ne
+
+1: 2x
+2: 2x
+3: 10x (z toho 2x s moznosti dvojky)
+4: 16x (z toho 5x s moznosti trojky)
