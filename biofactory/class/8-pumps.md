@@ -48,14 +48,15 @@ Document one of your devices in as an instructable.
 ## Additional reading and hacking
 
 * Metabolomics
-  * 
+  * [Wikipedia Flux Analysis](http://en.wikipedia.org/wiki/Flux_balance_analysis
 * DIY Syringe pumps
   * [OpenPump](https://www.wevolver.com/gerrit.niezen/openpump---an-open-source-hardware-syringe-pump/openpump)
 * DIY Peristaltic pumps
-  * 
+  * [Instrutable Peristaltic Pump](http://www.instructables.com/id/Inexpensive-easy-to-build-peristaltic-pump/)
 
 ## Feeling lazy?
 
 Go ahead and buy some pumps:
 
-* 
+* [Syringepump.com](http://www.syringepump.com/index.php)
+* [LabX Peristaltic Pump](http://www.labx.com/pumps-peristaltic)

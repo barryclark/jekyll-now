@@ -17,7 +17,7 @@ Needless to say, you will need an Arduino UNO or equivalent microcontroller.
 |1|1|3mm MDF|Houthandel Schmidt|3.00|
 |2|1|Expanded polystyrene (EPS) 5 plates of 100 x 50 x 5cm|[Praxis](https://www.praxis.nl/bouwmaterialen/isolatie/isolatie/isolatieplaat-eps-60-100-x-50-x-5cm-5-stuks/5322572)|7.99|
 |4|1|3mm Acrylic sheet 25 x 35 cm|[Plexiglas.nl](http://www.plexiglas.nl/shop/plexiglas-helder-3-mm)|3.50|
-|5|2|22 ohm 7 W resistor|[Farnell](http://nl.farnell.com/welwyn/sqp7s-22rjb15/resistor-compact-ceramic-22r-7w/dp/1292536?ost=WELWYN+compact+ceramic+resistor) [EOO](http://www.eoo-bv.nl/index.php?_a=viewProd&productId=10052)|0.55|
+|5|1|100W infrared light bulb, fitting and power cord|*|*|
 |6|1|12V 80 mm Axial Fan|[Farnell](http://nl.farnell.com/bisonic/sp802512l-03/fan-80x25mm-12vdc/dp/1832326) [EOO](http://www.eoo-bv.nl/index.php?_a=viewProd&productId=13244)|8.99|
 |7|1|Light switch|[iPrototype](https://iprototype.nl/products/components/buttons-switches/rocker-switch-large) [EOO](http://www.eoo-bv.nl/index.php?_a=viewProd&productId=11596)|0.95|
 |8|1|Water proof temperature sensor|[iPrototype](https://iprototype.nl/products/components/sensors/waterproof-tmp-sensor-10k)|2.95|
@@ -28,10 +28,11 @@ Needless to say, you will need an Arduino UNO or equivalent microcontroller.
 |13|2|Button|[iPrototype](https://iprototype.nl/products/components/buttons-switches/momentary-push-button) [EOO](http://www.eoo-bv.nl/index.php?_a=viewProd&productId=14721)|0.55|
 |14|1|White LED|[iPrototype](https://iprototype.nl/products/components/led-lcd/ledwit) [EOO](http://www.eoo-bv.nl/index.php?_a=viewProd&productId=9088)|0.52|
 |15|1|220 Ohm resistor|[iPrototype](https://iprototype.nl/products/components/resistors/220R) [EOO](http://www.eoo-bv.nl/index.php?_a=viewProd&productId=5785)|0.45|
-|16|1|60 W power supply|[Farnell](http://nl.farnell.com/ideal-power/66ms-00120500-s01-v/psu-12v-5a-earthed-output/dp/2112013) [EEO](http://www.eoo-bv.nl/index.php?_a=viewProd&productId=13247)|19.26|
+|16|1|7.5 W power supply|[iPrototype](https://iprototype.nl/products/accessoires/power/adapter) [EOO](http://www.eoo-bv.nl/index.php?_a=viewProd&productId=11642)|13.95|
 |17|1|Jack Adapter|[iPrototype](https://iprototype.nl/products/accessoires/power/DC-barrel-jack-adapter) [EOO](http://www.eoo-bv.nl/index.php?_a=viewProd&productId=3298)|0.85|
+|18|1|Relay|[Sparkfun](https://www.sparkfun.com/products/11042) [Floris.cc](http://floris.cc/shop/en/general-components/591-beefcake-relay-control-kit-.html)|9.00|
 |--|--|---|---|---|
-|||*Total costs*||*52.75*|
+|||*Total costs*||*|
 
 **Alternatives**
 

@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Arthobacter polychromogens (AG) 
-permalink: /biofactory/annex/culture-collection/arthobacter-polychromogens/
-categories: culture-collection
+title: Arthobacter polychromogens (AG)
+permalink: /biofactory/annex/culture-collection/arthrobacter-polychromogens/
+categories: culture-collection 
 ---
 
 ## Arthobacter polychromogens (AG) 

@@ -38,8 +38,11 @@ Start sketching your bioreactor controller in Fritzing.
 ## Additional reading and hacking
 
 * Electronics
+  * [Electronics for Dummies](http://www.amazon.com/Electronics-For-Dummies-Cathleen-Shamieh/dp/0470286970)
 * Fritzing
+  * [Fritzing Tutorials](http://fritzing.org/learning/tutorials)
 * Centrifugation
+  * [Forbidden F Word](http://www.physicsclassroom.com/class/circles/Lesson-1/The-Forbidden-F-Word)
 * Centrifuge
   * [RWXBioFuge](https://github.com/PieterVanBoheemen/RWXBioFuge)
 
