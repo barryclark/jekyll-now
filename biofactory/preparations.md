@@ -11,7 +11,7 @@ At the start of the Biohack Academy we assume you have taken care of the followi
   * A tablet will not do
 * Arduino UNO microcontroller + USB cable or [a cheaper equivalent board](http://en.wikipedia.org/wiki/List_of_Arduino_boards_and_compatible_systems#Arduino_footprint-compatible_boards) such as Freeduino, Seeeduino or Sparkfun Redboard
   * Also check the [suppliers page](/suppliers/)
-* Soldering iron, helping hand, solder and heat shrink [iPrototype](https://iprototype.nl/products/accessoires/tools/Heat-Shrink-Kit)
+* Soldering iron, multimeter, helping hand, solder and heat shrink [iPrototype](https://iprototype.nl/products/accessoires/tools/Heat-Shrink-Kit)
 * M3 [DIN84](http://www.bevestigingsmateriaal.nl/bevestigingsmateriaal/bouten-schroeven/zaagsnede-kop/cilinderkopschroef-din-84/106) or [DIN933](http://www.bevestigingsmateriaal.nl/bevestigingsmateriaal/bouten-schroeven/buitenzeskant-kop/tapbouten-din-933/61) (what ever you prefer) bolts and nuts [DIN934](http://www.bevestigingsmateriaal.nl/bevestigingsmateriaal/moeren/zeskantmoer-din-934/75) in several lengths, such as 10 mm, 20 mm and 30 mm
 
 ## Software
@@ -40,6 +40,8 @@ In case you wish to do experiments at home you will need to following equipment:
 * Fridge, freezer and stove
 * Pressure cooker (6 Liters or more)
 * Empty glass marmalade or vegetable jars
+* Pasteur Transfer Pipettes (disposible single use are fine), 15 mL volume pipettes (don't forget the pipetting balloon) and micropipettes (Gilson, Pipetman or go for cheap Huawei via Alibaba)
 * A scale, 1 gram accuracy will do for most of the work. Perhaps also consider having a gold scale for smaller amounts [eBay](http://www.ebay.com/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313.TR12.TRC2.A0.H0.Xgold+scale&_nkw=gold+scale&_sacat=0).
 * [Labogaz 206](http://www.campingaz.com/RU/p-22842-labogaz-206.aspx)
+* Lab coats
 

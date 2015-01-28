@@ -49,4 +49,4 @@ Document your entire bioreactor, anwering the following questions:
 
 Go ahead and buy a reactor controller:
 
-* 
+* [Applikon](https://www.applikon-biotechnology.us/products/bioreactors)

@@ -9,9 +9,9 @@ permalink: /biofactory/annex/culture-collection/
 The following cultures are available in the Waag Society's Open Wetlab:
 
 {% for page in site.pages %}
-	{% if page.categories contains 'culture-collection' %}
+{% if page.categories contains 'culture-collection' %}
 * [{{ page.title }}]({{ page.url | prepend: site.baseurl }})
-	{% endif %}
+{% endif %}
 {% endfor %}
 
 ## Isolate yourself
@@ -26,3 +26,4 @@ The following cultures are available in the Waag Society's Open Wetlab:
 
 * Yeast can be found in the baking section of any supermarket
 * Lactobacilli are sold as pills at any drug store
+
