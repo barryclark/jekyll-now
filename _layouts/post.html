@@ -15,12 +15,12 @@ layout: default
   <section class="post-content">
     {{ content }}
   </section>
-
-  <!-- Disqus -->
-  {% if site.theme.disqus_shortname %}
-    <section class="comments">
-      {% include disqus.html %}
-    </section>
-  {% endif %}
   
 </article>
+
+<!-- Disqus -->
+{% if site.theme.disqus_shortname %}
+<div class="comments">
+  {% include disqus.html %}
+</div>
+{% endif %}
