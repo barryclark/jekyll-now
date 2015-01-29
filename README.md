@@ -6,6 +6,10 @@ permalink: /readme/
 
 A ressource for 3rd party software designed for [elementary (OS)](http://elementaryos.org). If you find an error or want to add an app, [file an issue](https://github.com/quassy/elementary-apps/issues/new). Check the [about page](http://quassy.github.io/elementary-apps/about/) for general info.
 
+## Ask
+
+Feel free to ask, discuss and critize in our [Gitter chat](https://gitter.im/quassy/elementary-apps).
+
 ## Contribute
 
 ### App
@@ -26,4 +30,4 @@ Guidelines:
 
 ## Credits
 
-Backend based on [Jekyll Now](https://github.com/barryclark/jekyll-now), [Minddust](http://www.minddust.com/post/tags-and-categories-on-github-pages/).
+Backend based on [Jekyll Now](https://github.com/barryclark/jekyll-now), [Minddust](http://www.minddust.com/post/tags-and-categories-on-github-pages/), [Octicons](octicons.github.com/).

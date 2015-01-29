@@ -12,7 +12,7 @@ license:
 
 links:
   - web:
-  - github:
+  - github: mank319/elementaryPlus
   - launchpad:
   - googleplus:
 
@@ -21,7 +21,7 @@ repository-unstable:
 package:
 ---
 
-<table class="overview tablesorter">
+<table class="tablesorter icons">
   <thead>
     <tr>
       <th>16</th>
