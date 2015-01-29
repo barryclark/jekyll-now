@@ -46,6 +46,11 @@ url: http://golang-challenge.com
 baseurl: "/golang-challenge"
 
 #
+# Specific to Golang Challenge
+#
+encoding: UTF-8
+
+#
 # !! You don't need to change any of the configuration flags below !!
 #
 
