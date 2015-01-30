@@ -8,6 +8,10 @@ layout: default
 	{% for post in paginator.posts %}
 	<article class="post">
 
+		{% if page.image %}
+		<img src="{{ page.image }}" alt="{{page.title}}" style="max-width: 200px; margin: 10px; float: left;" />
+		{% endif %}
+
 		{% if post.date %}
 		<div class="post-date">
 			<a class="post-date-anchor permalink" href="{{ site.baseurl }}{{ post.url }}">
