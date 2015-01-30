@@ -9,7 +9,6 @@
       {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.owner %}
     {% endif %}
     {% include open-graph.html %}
-    {% if author.google.plus %}<link rel="author" href="https://plus.google.com/{{ author.google.plus }}"/>{% endif %}
 
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
 
