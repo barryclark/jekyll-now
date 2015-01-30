@@ -8,7 +8,7 @@ theme:
   title: Type Theme
   avatar: avatar.png
   gravatar: # email md5 hash
-  description: "A website with blog posts, and pages." # used by search engines
+  description: "A website with blog posts and pages" # used by search engines
   
   # Header and footer text
   header_text: >
