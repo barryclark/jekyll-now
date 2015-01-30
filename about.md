@@ -27,7 +27,7 @@ permalink: /about/
 
 ### 联系我
 
-Email : [常用邮箱](zhangchao_nwsuaf@163.com)  ,  [公司邮箱](chao.zhang@net263.com)  
+Email : [Gmail邮箱](robertzhangsh@gmail.com)  ,  [163邮箱](zhangchao_nwsuaf@163.com)  ,  [net263邮箱](chao.zhang@net263.com)  
 
 Weibo : [IT_Robert](http://weibo.com/RobertZhangSH)（不怎么经营）
 
