@@ -36,7 +36,6 @@ limit: 25
     <content type="html">
       {% if post.image.feature %}&lt;img src=&quot;{{ site.url }}/images/{{ post.image.feature }}&quot;&gt;&lt;br/&gt;{% endif %}
       {{ post.content | xml_escape }}
-      {% include feed-footer.html %}
     </content>
   </entry>
   {% endfor %}
