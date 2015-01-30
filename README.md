@@ -8,7 +8,7 @@ A free and open-source [Jekyll](http://jekyllrb.com) theme. Great for blogs and 
 
 [Demo](https://rohanchandra.github.io/type-theme/)
 
-[Using Type](https://rohanchandra.github.io/project/type.html)
+[Using Type](https://rohanchandra.github.io/project/type/)
 
 ## License
 The MIT License (MIT)
