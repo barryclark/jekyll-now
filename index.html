@@ -8,8 +8,8 @@ layout: default
 	{% for post in paginator.posts %}
 	<article class="post">
 
-		{% if page.image %}
-		<img src="{{ page.image }}" alt="{{page.title}}" style="max-width: 200px; margin: 10px; float: left;" />
+		{% if post.image %}
+		<img src="{{ post.image }}" alt="{{post.title}}" style="max-width: 200px; margin: 10px; float: left;" />
 		{% endif %}
 
 		{% if post.date %}
