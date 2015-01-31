@@ -58,10 +58,10 @@ Maintainer: IT STAR <itstar4tech@gmail.com>
 Installed-Size: 913
 Depends: firmware (>= 7.0), mobilesubstrate (>= 0.9.5000), preferenceloader (>= 2.2.2)
 Filename: deb/BioProtect.deb
-Size: 680332
-MD5sum: f3cdd74ec20d738a571bc9bf055603ed
-SHA1: 66f748a564ff86402b361a7a5fbfc889058097b7
-SHA256: e3149ce6f339325d71fdd7e2400ac7404a652ed54c5963abb38b49071c3c46ba
+Size: 680644
+MD5sum: a486fb93260f0af550a4c93d0866a9c8
+SHA1: 582678358f060675350e8f44acc3f5703135d59b
+SHA256: 9f72665a45603c51f967e5c6d46235a4d564e639e5e74721478c473de79965a7
 Section: Tweaks
 Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=bioprotectDp
 Description: Apps ေတြကို Password ဒါမွမဟုတ္ လက္ေဗြနဲ႕ပိတ္မယ္.
@@ -80,10 +80,10 @@ Installed-Size: 1112
 Depends: firmware (>= 8.0), mobilesubstrate (>= 0.9.5000), preferenceloader (>= 2.2.2)
 Conflicts: com.cunstuck.ccquick, com.danyl.cccontrols, vn.gsm.ccquickpro, org.thebigboss.ccquickpro
 Filename: deb/ccquickpro8.deb
-Size: 619116
-MD5sum: 22050c101e7dac7d670a1b7ba73a1986
-SHA1: 1b8ad8beab0c8a08cd61259c85b02875be600b52
-SHA256: 30eea97840d9f76f2972e1b663d09918724874f6025f986f43fd4ea2b1282d29
+Size: 619280
+MD5sum: e9c9a0b45a664cfed1a580ce73b102be
+SHA1: 7b0a6e974b2060f6ea856775ab19c8fc5a4dc478
+SHA256: 6a56ecc45de92ba5fbabd4d15c82e0f2a2fcdd59bc5ec79d1698fca56b441637
 Section: Tweaks
 Homepage: http://iosrepo.cu.cc/
 Description: shortcuts ေတြနဲ႕ အျခား အသံုး၀င္တဲ့ အပိုင္းေတြကို Control Center မွၾထည့္မယ္။
@@ -100,10 +100,10 @@ Installed-Size: 2700
 Depends: apt7, sed, coreutils, coreutils-bin, openssl, openssh, gawk, zip, unzip, mobilesubstrate, preferenceloader
 Conflicts: com.myrepospace.iLEX.rat-eng, com.myrepospace.iLEXiNFO.ilexrestore, com.myrepospace.iLEXiNFO.rat-eng1
 Filename: deb/rat-eng2.deb
-Size: 2335200
-MD5sum: 9a9bd3848e91260f00af0f82cc644d0d
-SHA1: e5594396e660e0dea940fab95c96626bab2354ac
-SHA256: bad7d30ad2c3b3690693a8793aee4198d0c29cff1a2dd6dcdb18d86d81e30d66
+Size: 2335424
+MD5sum: e0655c03e75e2a52622b776fba8fa147
+SHA1: dd299b2d32a026ee2172ba1a8b01b5434f1bbba2
+SHA256: fcb218bb52420c06eb511dd0580b0ac9f1bc53d8ab1bf0760fcd2a8868c9e7ad
 Section: Tweaks
 Homepage: http://iosrepo.cu.cc
 Description: iLEX R.A.T. (iOS 4/5/6/7/8). Cydia ကို Jailbreak လုပ္ျပီးျပီးခ်င္း တုန္းကလိုမ်ိဳး ျပန္ Restore လုပ္ေပးတာပါ။ Cydia ကေန တင္ထားတဲ့ Jailbreak Apps ေတြအကုန္ ဖ်က္တာပါ။ Cydia ထဲမွာ ကလိတာ မ်ားသြားသူေတြ အတြက္ အဆင္ေျပပါတယ္။.
@@ -122,10 +122,10 @@ Depends: firmware (>= 7.0), mobilesubstrate (>= 0.9.5000), preferenceloader (>= 
 Conflicts: net.howett.safaridownloader, com.ouraigua.safaridownloader, vn.gsm.safaridownloader
 Replaces: com.ouraigua.safaridownloader, vn.gsm.safaridownloader
 Filename: deb/safaridownloaderplus.deb
-Size: 13576750
-MD5sum: 33e9c51f1d3172abf438d7936d8f16db
-SHA1: 24d6878a5db4b6a9f65c86392f38de7ef17bea91
-SHA256: 0c1b4bba95b92c57f87480e3a104dca08961dec7481d371526b34090d0e3c5cb
+Size: 13578474
+MD5sum: fef7097f33c67b9bd31b6e850c6e9ee8
+SHA1: b27382142ece68e3d18319bcbc4b2b431fe35230
+SHA256: f5b9dd255008f567a17f2b8f57d015c377d3037404511f40259a8d3909a9db23
 Section: Tweaks
 Homepage: http://iosrepo.cu.cc/
 Description: Safari နဲ့ အင္တာနက္ သံုးရင္း Youtube နဲ႕ တျခား ဖိုင္ေတြကို ေဒါင္းလုပ္ရယူလို႕ရတဲ့ အစြမ္းထက္ ေဆာ့၀ဲလ္ေလးပါ။
@@ -200,10 +200,10 @@ Architecture: iphoneos-arm
 Installed-Size: 1172
 Depends: mobilesubstrate (>= 0.9.5000), preferenceloader
 Filename: deb/callrecorder.deb
-Size: 397422
-MD5sum: 7bf29baaa068c0f9af0818a3adc09c74
-SHA1: fd147ffadd98f90a33224c2a42560ec4837c21df
-SHA256: 25a7ece01292eaae5b587e19c523a1985757f4057ce31233ad39ed58c897f660
+Size: 397034
+MD5sum: 7d2f72860d831b9ad37f7be26f2600ab
+SHA1: cd658010735adf9ca7a3c0ae713231ae3c48a8bc
+SHA256: 8cfbe2c5a25f09ef8a63f313dae796146e0484d12a99b0327ffc26b6e8351eb1
 Section: Tweaks
 Description: iOS 8 နဲ႕ 7 မွာ အလုပ္လုပ္တဲ့ Call Recorder ေလးပါ။ iPhone 5/5S/5C/6 နဲ႕ 6 Plus ေတြမွာ အသံုးျပဳလို႕ရပါတယ္။ လိုင္စင္ပါ၀င္ျပီးသားပါ။
 Author: Elias Limneos
@@ -225,6 +225,21 @@ Description: iOS 7-8 Compatible Cydia Repo Sources Pack
 Author: Shein Myint Aung
 Icon: file:///etc/apt/sources.list.d/icons@2x.png
 Name: iOS 8-8.1.2 Sources
+
+Package: com.github.itstar4tech.myanmarfriendly
+Version: 0.1
+Architecture: iphoneos-arm
+Filename: deb/Friendly_Myanmar_Multi_facebook.deb
+Size: 4429696
+MD5sum: a8ce36e1c27e9ed6f3f629fc12f9dcb5
+SHA1: 530e5aa4a79a0baf24ec59d5b234e096c6a12962
+SHA256: 1b42cadb9045b4c340c9257081f4bea5ae3d9774bc8b1e3f441d233450e8cd40
+Section: Tweaks
+Description: Facebook အေကာင့္ကို ၂ခု၊ ၃ခု သံုးခ်င္သူေတြအတြက္ပါ။ ျမန္မာလိုလည္း ျမင္ရျပီး။ Message ေတြကိုလည္း တခါတည္း ဖတ္ႏိုင္ပါတယ္။ သို႕ေပမယ့္ အနည္းဆံုး iOS Version 5.1 နဲ႕ အထက္ရွိဖုိ႕ေတာ့ လိုအပ္မယ္ေနာ္။
+Author: Shein Myint Aung
+Depiction: http://iosrepo.cu.cc/tweak/2015/01/31/myanmarfriendly.html
+Icon: file:///Applications/Friendly for Facebook.app/AppIcon40x40@2x.png
+Name: Myanmar: FriendlyForFacebook
 
 Package: com.hackyouriphone.anydrop3
 Version: 1.0.1k
@@ -548,122 +563,6 @@ Description: This is a fixer for Mobile Notes on 7.1 and 7.1.x to force display 
 Author: Thant Thet <t+cydia@ttkz.me>
 Name: Zawgyi-One Fix for Notes.app
 
-Package: com.myrepospace.iLEXiNFO.rat-eng2
-Version: 2.2-22
-Architecture: iphoneos-arm
-Maintainer: iLEX <ilexrepo@gmail.com>
-Installed-Size: 2700
-Depends: apt7, sed, coreutils, coreutils-bin, openssl, openssh, gawk, zip, unzip, mobilesubstrate, preferenceloader
-Conflicts: com.myrepospace.iLEX.rat-eng, com.myrepospace.iLEXiNFO.ilexrestore, com.myrepospace.iLEXiNFO.rat-eng1
-Filename: deb/615180.deb
-Size: 2919294
-MD5sum: e5dbedc9e7f89ae3f8ec0abb405c5097
-SHA1: 759131aa459b3905152db014d33a837b29feb25a
-SHA256: eec2b8f692ee901651c2e040abeb1dd364c36e6b6080d898feff151c95c4a489
-Section: iLEX
-Homepage: http://twitter.com/iLEXiNFO
-Description: iLEX R.A.T. (iOS 4/5/6/7/8). Restore iDevice Back To Stock. Revive, Speed Up, Clean Up Your iDevice. Remove All Cydia Apps & Tweaks & Dependencies At Once! Cydia Repair! Backup & Restore All Cydia Apps & Tweaks & Dependencies (DEB).
-Author: iLEX <ilexrepo@gmail.com>
-Name: iLEX R.A.T. & RESTORE
-Sponsor: iLEX <http://twitter.com/iLEXiNFO/>
-Support: http://twitter.com/iLEXiNFO
-
-Package: com.myrepospace.kalora.ayeris
-Version: 1.2.1
-Architecture: iphoneos-arm
-Depends: firmware (>= 7.0), winterboard (>= 0.9.3914)
-Conflicts: gsc.ipad
-Filename: deb/509397.deb
-Size: 20028034
-MD5sum: a3ceab9940e3970a789ac0c542599ec4
-SHA1: 53a6643496c0766745a0726d820893647749024f
-SHA256: 0b5295fcfcaaf2db5f0e7629dcf284839cdb6a951d246a6ed6b50972d407f01e
-Section: Themes
-Description: Beauty's in the aye of the beholder.
-Author: Surenix
-Depiction: http://repo.xarold.com/depiction.php?id=ayeris
-Name: ayeris
-
-Package: com.myrepospace.kalora.bioprotect
-Version: 1.5-129
-Architecture: iphoneos-arm
-Maintainer: BigBoss <bigboss@thebigboss.org>
-Installed-Size: 913
-Depends: firmware (>= 7.0), mobilesubstrate (>= 0.9.5000), preferenceloader (>= 2.2.2)
-Filename: deb/447679.deb
-Size: 384938
-MD5sum: 9c436147fab8f0d90dac8ae69c45ba14
-SHA1: bc996673de50d701206f2abab0811400eedd04a9
-SHA256: 5a24a00e34e35039b58dc88f089b6d95d6dd1bfa0892f0a8552d1834a026af5e
-Section: Tweaks
-Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=bioprotectDp
-Description: Protect apps with Touch ID or passcode.
-Tag: cydia::commercial, purpose::extension, ios7support::1, ios8support::1
-Author: Elias Limneos <iphone@limneos.net>
-Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=bioprotectDp
-Dev: limneos
-Icon: file:///Library/PreferenceBundles/BioProtectPrefs.bundle/Icon.png
-Name: BioProtect
-Sponsor: thebigboss.org <http://thebigboss.org>
-
-Package: com.myrepospace.kalora.callrecorder1
-Version: 0.7-18k
-Architecture: iphoneos-arm
-Installed-Size: 1172
-Depends: mobilesubstrate (>= 0.9.5000), preferenceloader
-Filename: deb/616891.deb
-Size: 457806
-MD5sum: b9ae16767217fa41671b4cc254726fa2
-SHA1: 384be87bacb83cc2e321ea3cafa4f9dde15cea63
-SHA256: 35d0bcff09894d3901c6cadbc3217e3056415f8359d2a45960bfbdf85fb75764
-Section: Tweaks
-Description: First iPhone Call Recorder Ever!  Record regular phone calls directly on your iPhone.  Supported iOS 6.x to 8.x   Now Supports iOS 8.x including iPhone 6 and 6 Plus!!!  Audio Recorder, the so anticipated tweak for iPhone , has come to prove it was possible!  With Audio Recorder, you can record the phone calls you need to listen to later, such as business calls, appointment arrangements etc and you can store them locally on your iPhone. You can then play them, send them to your email or delete them.  There are options to automatically notify the remote party with a warning voice message that the call will be recorded at the beginning of your recording. (You are responsible for enabling or disabling this according to your country's law, since the other party's consent is necessary by law in many countries)  Audio Recorder does not use a remote server to store your calls, like other apps use as a workaround. It records directly on the device! There is no need for an internet connection when you record a call.  Although Audio Recorder can automatically notify the other party that the call is being recorded, you should be aware that recording call conversations without the other party's consent is illegal in many countries. Check to comply with your country's laws before buying or using this application. The developer or the seller take no responsibility if you use this application in any way that would result in breaking the law.   Currently, on iPhone4S devices it only works when you switch to Speaker while in a call.  The application works on iPhone 4S,iPhone 5,iPhone 5S and iPhone 6/6 Plus devices.  The tweak that so many people have been waiting for is finally here!  Audio Recorder's price is $ 3.99  Version 0.7 Changes: Added full iOS 8.x and iPhone 6 support  Version 0.5.x Changes: Added full iOS 7.x.x and iPhone 5S support, added option to transfer license on device
-Author: Elias Limneos
-Depiction: http://repo.xarold.com/depiction.php?id=callrecorder
-Icon: file:///Library/PreferenceBundles/CallRecorderPreferences.bundle/CallRecorder@2x.png
-Name: Audio Recorder
-
-Package: com.myrepospace.kalora.ccquickpro8
-Version: 1.0-4
-Architecture: iphoneos-arm
-Maintainer: Cydia.vn <repo@cydia.vn>
-Installed-Size: 1112
-Depends: firmware (>= 8.0), mobilesubstrate (>= 0.9.5000), preferenceloader (>= 2.2.2)
-Conflicts: com.cunstuck.ccquick, com.danyl.cccontrols, vn.gsm.ccquickpro, org.thebigboss.ccquickpro
-Filename: deb/620671.deb
-Size: 385668
-MD5sum: 882fd2ff7d40270205cba8290f9506e7
-SHA1: 26eec1d44f5d96905910fe71794eed8a004479c0
-SHA256: fa3421ee00b5ef6b3f8db4b6dc14993ea4df2924f8457cfff8e957f1a436b01f
-Section: !CydiaVn-Tools
-Homepage: http://cydia.vn/
-Description: shortcuts & powerful options for Control Center
-Author: Cunstuck <repo@cydia.vn>
-Depiction: http://cydia.vn/depic/t5544/
-Icon: file:///Library/PreferenceBundles/CCQuick.bundle/CCQuickIcon@2x.png
-Name: CCQuick Pro for iOS8
-
-Package: com.myrepospace.kalora.safaridownloaderplus
-Version: 3.5-1
-Architecture: iphoneos-arm
-Maintainer: Cydia.vn <repo@cydia.vn>
-Installed-Size: 18112
-Depends: firmware (>= 7.0), mobilesubstrate (>= 0.9.5000), preferenceloader (>= 2.2.2), com.ouraigua.jodebox (>= 1.3-1)
-Conflicts: net.howett.safaridownloader, com.ouraigua.safaridownloader, vn.gsm.safaridownloader
-Replaces: com.ouraigua.safaridownloader, vn.gsm.safaridownloader
-Filename: deb/514525.deb
-Size: 14912010
-MD5sum: 7f910bb7b5fd3939a491c70800f99fb1
-SHA1: 0717708ebfc8b09fe0d85cdc8900112f1fa0fedb
-SHA256: ca7f8df09a61045564f89bec7cad3f05f61aaebe13240cbc175a5ed5f1d5a163
-Section: !CydiaVn-Tools
-Homepage: http://cydia.vn/
-Description: Powerful Youtube & Download Manager for Safari.
-Author: Jalal Ouraigua
-Depiction: http://cydia.vn/depic/t4882/
-Icon: file:///Library/PreferenceBundles/SafariDownloaderPrefs.bundle/icon@2x.png
-Name: Safari Downloader+
-
 Package: com.myrepospace.kalora.springtomize3
 Version: 1.3.0-5
 Architecture: iphoneos-arm
@@ -672,10 +571,10 @@ Installed-Size: 2512
 Depends: firmware (>= 7.0), mobilesubstrate (>= 0.9.5000), preferenceloader (>= 2.2.2), com.rpetrich.rocketbootstrap
 Conflicts: com.filippobiga.springtomize2
 Filename: deb/springtomize3.deb
-Size: 480256
-MD5sum: ba8f9d66336fbb37f14c4fe03b7f7518
-SHA1: e5bff59b72993ecdb43b3c2095f31e538d880441
-SHA256: bcaa6bc17a5fbdc4e7d4742103fbeb0cc835a60bb337cb8486b53b964f89235a
+Size: 480852
+MD5sum: 9c762fd8548bc34460918befdfa7960a
+SHA1: 7ba616544b0fdf8610174a0a5eeabaf2b7a8d192
+SHA256: 77c91044069341ef10153d84ac72cb9598d5ce4ce8fa2e33e39f50088a1b9f29
 Section: Tweaks
 Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=springtomize3Dp
 Description: Customize your device like never before.
