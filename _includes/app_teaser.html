@@ -1,8 +1,8 @@
 {% if post.screenshots %}
   <div class="screenshots">
-  {% for screenshot in post.screenshots %}
-    <img src="{{ site.baseurl }}/images/screenshots/{{ screenshot }}" alt="Screenshot of {{ post.title }}" />
-  {% endfor %}
+    {% for screenshot in post.screenshots %}
+      <img src="{{ site.baseurl }}/images/screenshots/{{ screenshot }}" alt="Screenshot of {{ post.title }}" />
+    {% endfor %}
   </div>
 {% endif %}
   
@@ -14,14 +14,23 @@
 {% if post.authors %}
   <p>
 	<b>Authors</b>: 
-	{{ post.authors }}
+    {% for author in post.authors %}
+	  <a href="{{ author.url }}">
+        {{ author.name }}
+      </a>{% if forloop.last == false %}, {% endif %}
+    {% endfor %}
   </p>
 {% endif %}
 
-<p>
-  <b>Links</b>: 
-  {% if post.web %}<a href="{{ post.web }}">Web</a>{% endif %} 
-  {% if post.github %}<a href="https://github.com/{{ post.github }}">GitHub</a>{% endif %} 
-  {% if post.launchpad %}<a href="https://launchpad.net/{{ post.launchpad }}">Launchpad</a>{% endif %}
-  {% if post.googleplus %}<a href="https://plus.google.com/{{ post.googleplus }}">Google+</a>{% endif %}
-</p>
+{% if post.links & post.category == "art" %}
+  <p>
+    <b>Links</b>: 
+    {% for link in post.links %}
+      {% if link[0] == "web" %}<a href="{{ link[1] }}">Web</a>{% endif %} 
+      {% if link[0] == "github" %}<a href="https://github.com/{{ link[1] }}">GitHub</a>{% endif %} 
+      {% if link[0] == "launchpad" %}<a href="https://launchpad.net/{{ link[1] }}">Launchpad</a>{% endif %}
+      {% if link[0] == "googleplus" %}<a href="https://plus.google.com/{{ link[1] }}">Google+</a>{% endif %}
+      {% if forloop.last == false %}, {% endif %}
+    {% endif %}
+  </p>
+{% endif %}

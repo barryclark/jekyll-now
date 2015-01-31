@@ -11,7 +11,7 @@ authors:
 license:
 
 links:
-  - web:
+  - web: test.de
   - github: mank319/elementaryPlus
   - launchpad:
   - googleplus:
