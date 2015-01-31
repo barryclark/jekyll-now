@@ -26,11 +26,8 @@
   <p>
     <b>Links</b>: 
     {% for link in post.links %}
-      {% if link[0] == "web" %}<a href="{{ link[1] }}">Web</a>{% endif %} 
-      {% if link[0] == "github" %}<a href="https://github.com/{{ link[1] }}">GitHub</a>{% endif %} 
-      {% if link[0] == "launchpad" %}<a href="https://launchpad.net/{{ link[1] }}">Launchpad</a>{% endif %}
-      {% if link[0] == "googleplus" %}<a href="https://plus.google.com/{{ link[1] }}">Google+</a>{% endif %}
-      {% if forloop.last == false %}, {% endif %}
+	  <a href="{{ site.data.links[link.type].url }}{{ link.url }}" class="{{ link.type }}">
+        {% if link.name %}{{ link.name }}{% else %}{{ ste.data.links[link.type].name }}{% endif %}</a>{% if forloop.last == false %}, {% endif %}  
     {% endfor %}
   </p>
 {% endif %}

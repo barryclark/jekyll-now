@@ -1,0 +1,12 @@
+- web: 
+  - name: Web
+    url: ""
+- launchpad:
+  - name: Launchpad
+    url: https://launchpad.net/
+- github: 
+  - name: GitHub
+    url: https://github.com/
+- googleplus:
+  - name: Google+
+    url: https://plus.google.com/

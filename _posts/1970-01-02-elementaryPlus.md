@@ -11,10 +11,11 @@ authors:
 license:
 
 links:
-  - web: test.de
-  - github: mank319/elementaryPlus
-  - launchpad:
-  - googleplus:
+  - type: github
+    url: mank319/elementaryPlus
+  - type: googleplus
+    name: Personal Google+ of developer
+    url: +ManuelKehl319/posts
 
 repository:
 repository-unstable:
