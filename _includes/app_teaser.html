@@ -31,6 +31,6 @@
       {% if link[0] == "launchpad" %}<a href="https://launchpad.net/{{ link[1] }}">Launchpad</a>{% endif %}
       {% if link[0] == "googleplus" %}<a href="https://plus.google.com/{{ link[1] }}">Google+</a>{% endif %}
       {% if forloop.last == false %}, {% endif %}
-    {% endif %}
+    {% endfor %}
   </p>
 {% endif %}
