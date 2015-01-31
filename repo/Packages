@@ -59,9 +59,9 @@ Installed-Size: 913
 Depends: firmware (>= 7.0), mobilesubstrate (>= 0.9.5000), preferenceloader (>= 2.2.2)
 Filename: deb/BioProtect.deb
 Size: 680644
-MD5sum: a486fb93260f0af550a4c93d0866a9c8
-SHA1: 582678358f060675350e8f44acc3f5703135d59b
-SHA256: 9f72665a45603c51f967e5c6d46235a4d564e639e5e74721478c473de79965a7
+MD5sum: b292c1ecd61b49a4358f094fe7987db3
+SHA1: 72c891f672dd8794fc98c6446d2353920f4dab30
+SHA256: 7ceddcc7aa21fe108ed2f123179fa1d032a5a2f84e30a7dcaf1d4a107fd45179
 Section: Tweaks
 Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=bioprotectDp
 Description: Apps ေတြကို Password ဒါမွမဟုတ္ လက္ေဗြနဲ႕ပိတ္မယ္.
@@ -81,9 +81,9 @@ Depends: firmware (>= 8.0), mobilesubstrate (>= 0.9.5000), preferenceloader (>= 
 Conflicts: com.cunstuck.ccquick, com.danyl.cccontrols, vn.gsm.ccquickpro, org.thebigboss.ccquickpro
 Filename: deb/ccquickpro8.deb
 Size: 619280
-MD5sum: e9c9a0b45a664cfed1a580ce73b102be
-SHA1: 7b0a6e974b2060f6ea856775ab19c8fc5a4dc478
-SHA256: 6a56ecc45de92ba5fbabd4d15c82e0f2a2fcdd59bc5ec79d1698fca56b441637
+MD5sum: f65e66b16de0783eb5c55f9927c39278
+SHA1: 9a26a012ec3af7ef2322ccf7187bed283165748d
+SHA256: c8195d51905e35535cf18b340020ace8a26cd62a7d500250fa197fc7cd3f4291
 Section: Tweaks
 Homepage: http://iosrepo.cu.cc/
 Description: shortcuts ေတြနဲ႕ အျခား အသံုး၀င္တဲ့ အပိုင္းေတြကို Control Center မွၾထည့္မယ္။
@@ -101,9 +101,9 @@ Depends: apt7, sed, coreutils, coreutils-bin, openssl, openssh, gawk, zip, unzip
 Conflicts: com.myrepospace.iLEX.rat-eng, com.myrepospace.iLEXiNFO.ilexrestore, com.myrepospace.iLEXiNFO.rat-eng1
 Filename: deb/rat-eng2.deb
 Size: 2335424
-MD5sum: e0655c03e75e2a52622b776fba8fa147
-SHA1: dd299b2d32a026ee2172ba1a8b01b5434f1bbba2
-SHA256: fcb218bb52420c06eb511dd0580b0ac9f1bc53d8ab1bf0760fcd2a8868c9e7ad
+MD5sum: 48d96001d3612f2a3e2af915b52df9df
+SHA1: 625e8db428b9f83ee86e642150d26693b8282c54
+SHA256: f13a592d4fe99263875389f907b269fb6f0526be57e1089dadc2e5610989e3f0
 Section: Tweaks
 Homepage: http://iosrepo.cu.cc
 Description: iLEX R.A.T. (iOS 4/5/6/7/8). Cydia ကို Jailbreak လုပ္ျပီးျပီးခ်င္း တုန္းကလိုမ်ိဳး ျပန္ Restore လုပ္ေပးတာပါ။ Cydia ကေန တင္ထားတဲ့ Jailbreak Apps ေတြအကုန္ ဖ်က္တာပါ။ Cydia ထဲမွာ ကလိတာ မ်ားသြားသူေတြ အတြက္ အဆင္ေျပပါတယ္။.
@@ -123,9 +123,9 @@ Conflicts: net.howett.safaridownloader, com.ouraigua.safaridownloader, vn.gsm.sa
 Replaces: com.ouraigua.safaridownloader, vn.gsm.safaridownloader
 Filename: deb/safaridownloaderplus.deb
 Size: 13578474
-MD5sum: fef7097f33c67b9bd31b6e850c6e9ee8
-SHA1: b27382142ece68e3d18319bcbc4b2b431fe35230
-SHA256: f5b9dd255008f567a17f2b8f57d015c377d3037404511f40259a8d3909a9db23
+MD5sum: fd0e14b03e542fd5d7dccb5b5c79b1af
+SHA1: f10810ad19a90dfd52f12b3e2af3ac397f6e36a7
+SHA256: 8f68c7aeb697d6ea83c42fafa9ee3d37f4a8a0cbb6b52b73f8a73dcfa3ce8f75
 Section: Tweaks
 Homepage: http://iosrepo.cu.cc/
 Description: Safari နဲ့ အင္တာနက္ သံုးရင္း Youtube နဲ႕ တျခား ဖိုင္ေတြကို ေဒါင္းလုပ္ရယူလို႕ရတဲ့ အစြမ္းထက္ ေဆာ့၀ဲလ္ေလးပါ။
@@ -201,9 +201,9 @@ Installed-Size: 1172
 Depends: mobilesubstrate (>= 0.9.5000), preferenceloader
 Filename: deb/callrecorder.deb
 Size: 397034
-MD5sum: 7d2f72860d831b9ad37f7be26f2600ab
-SHA1: cd658010735adf9ca7a3c0ae713231ae3c48a8bc
-SHA256: 8cfbe2c5a25f09ef8a63f313dae796146e0484d12a99b0327ffc26b6e8351eb1
+MD5sum: 18c2e8703d1158631f9a5f3a006bc015
+SHA1: 09a067a9b9301c2cadf864016fb842b0333d3885
+SHA256: ba47fa976313f890b308cfa131cfa40e9ad590cda773ec2363209ae67b79be71
 Section: Tweaks
 Description: iOS 8 နဲ႕ 7 မွာ အလုပ္လုပ္တဲ့ Call Recorder ေလးပါ။ iPhone 5/5S/5C/6 နဲ႕ 6 Plus ေတြမွာ အသံုးျပဳလို႕ရပါတယ္။ လိုင္စင္ပါ၀င္ျပီးသားပါ။
 Author: Elias Limneos
@@ -211,29 +211,14 @@ Depiction: http://iosrepo.cu.cc/tweak/2014/03/03/callrecorder.html
 Icon: file:///Library/PreferenceBundles/CallRecorderPreferences.bundle/CallRecorder@2x.png
 Name: Audio Recorder
 
-Package: com.github.itstar4tech.ios8812sou-list
-Version: 1.0
-Architecture: iphoneos-arm
-Maintainer: IT STAR Technology
-Filename: deb/iOS8812Sources.deb
-Size: 26770
-MD5sum: f6e34b3bf83d130bdb6ad14173106805
-SHA1: 15bdc55cabf628f135710ecee69542d819456e35
-SHA256: 66cdba7a32330f3e12b281b600f588ba3e4f537142c79d09a8846376096213bd
-Section: Tweaks
-Description: iOS 7-8 Compatible Cydia Repo Sources Pack
-Author: Shein Myint Aung
-Icon: file:///etc/apt/sources.list.d/icons@2x.png
-Name: iOS 8-8.1.2 Sources
-
 Package: com.github.itstar4tech.myanmarfriendly
 Version: 0.1
 Architecture: iphoneos-arm
 Filename: deb/Friendly_Myanmar_Multi_facebook.deb
 Size: 4429696
-MD5sum: a8ce36e1c27e9ed6f3f629fc12f9dcb5
-SHA1: 530e5aa4a79a0baf24ec59d5b234e096c6a12962
-SHA256: 1b42cadb9045b4c340c9257081f4bea5ae3d9774bc8b1e3f441d233450e8cd40
+MD5sum: 5f77ff8957516491046fecaeae67579c
+SHA1: 63402ccc607ca109c0302eee36d44a4f4e0b93ca
+SHA256: 450fb4938ebd660ac8fd55ab06688eeee1b602d44c0a92fd1d898aa29e418548
 Section: Tweaks
 Description: Facebook အေကာင့္ကို ၂ခု၊ ၃ခု သံုးခ်င္သူေတြအတြက္ပါ။ ျမန္မာလိုလည္း ျမင္ရျပီး။ Message ေတြကိုလည္း တခါတည္း ဖတ္ႏိုင္ပါတယ္။ သို႕ေပမယ့္ အနည္းဆံုး iOS Version 5.1 နဲ႕ အထက္ရွိဖုိ႕ေတာ့ လိုအပ္မယ္ေနာ္။
 Author: Shein Myint Aung
@@ -572,9 +557,9 @@ Depends: firmware (>= 7.0), mobilesubstrate (>= 0.9.5000), preferenceloader (>= 
 Conflicts: com.filippobiga.springtomize2
 Filename: deb/springtomize3.deb
 Size: 480852
-MD5sum: 9c762fd8548bc34460918befdfa7960a
-SHA1: 7ba616544b0fdf8610174a0a5eeabaf2b7a8d192
-SHA256: 77c91044069341ef10153d84ac72cb9598d5ce4ce8fa2e33e39f50088a1b9f29
+MD5sum: fbcbce869a5a2715b87b4344fc6382a0
+SHA1: d783d2a6bb576511a9a1c362f5c616d24ea14a58
+SHA256: 0078a007dc88c475a678115b76fde8d6753f71a725a5f21f70ddc9a29e932f7d
 Section: Tweaks
 Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=springtomize3Dp
 Description: Customize your device like never before.
