@@ -1,6 +1,0 @@
-#! /bin/sh
-launchctl unload /System/Library/LaunchDaemons/com.apple.mediaserverd.plist
-launchctl load /System/Library/LaunchDaemons/com.apple.mediaserverd.plist
-launchctl unload /Library/LaunchDaemons/com.apple.mediaserverd.plist
-launchctl load /Library/LaunchDaemons/com.apple.mediaserverd.plist
-exit 0

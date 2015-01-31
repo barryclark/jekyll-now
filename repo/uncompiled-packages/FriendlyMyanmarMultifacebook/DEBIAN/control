@@ -1,0 +1,10 @@
+Package: cc.cu.iosrepo.myanmarfriendly
+Architecture: iphoneos-arm
+Author: Shein Myint Aung
+Depiction: http://iosrepo.cu.cc/tweak/2015/01/31/myanmarfriendly.html
+Description: Facebook Multi User For Myanmar
+Icon: file:///Applications/Friendly for Facebook.app/AppIcon40x40@2x.png
+Name: Myanmar Friendly For Facebook
+Section: Tweaks
+Version: 0.1
+Maintainer: IT STAR <itstar4tech@gmail.com>

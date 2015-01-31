@@ -1,1 +1,0 @@
-Filter = {Bundles = ("com.apple.InCallService","com.apple.springboard","com.apple.mobilephone");  Executables = ("mediaserverd");    Mode = "Any"; };

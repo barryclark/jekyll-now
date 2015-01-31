@@ -1,7 +1,0 @@
-{
-	Filter = {
-		Bundles = (
-			"com.apple.mobilesafari",
-		);
-	};
-}

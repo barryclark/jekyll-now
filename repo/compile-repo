@@ -1,5 +1,4 @@
 #!/usr/bin/env perl
-
 # Author: Patrick Muff <muff.pa@gmail.com>
 # Purpose: Compiles a Cydia repository
 
@@ -52,11 +51,9 @@ open(RLS, ">>Release");
 my $output = "";
 
 foreach (@files) {
-    my $Package = "cc.cu.iosrepo.".$fname;
+    my $fname = $_;
 	my $md5 =  md5sum($fname);
 	my $size = -s $fname;
-	my $Icon = "https://itstar4tech.github.io/repo/CydiaIcon.png";
-    my $Tag = "ios7support::1, ios8support::1";
 	$output = $output.$md5." ".$size." ".$fname."\n";
 };
 
