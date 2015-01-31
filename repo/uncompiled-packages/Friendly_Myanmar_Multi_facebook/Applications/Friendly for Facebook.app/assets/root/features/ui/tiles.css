@@ -1,0 +1,15 @@
+.tile {
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:50% 50%;
+	-webkit-border-radius: 8px;
+	-webkit-box-shadow: 0 2px 4px rgba(0,0,0,.7);
+	-webkit-animation-duration:.15s;
+	-webkit-transform:translate3d(0,0,0);
+	-webkit-transition:all .1s ease;
+}
+
+.tile.touched {
+	-webkit-box-shadow: 0 0 0px rgba(0,0,0,.7);
+	-webkit-transform:translate3d(0,2px,0);
+}

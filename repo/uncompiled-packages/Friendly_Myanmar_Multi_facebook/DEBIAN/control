@@ -1,0 +1,9 @@
+Architecture: iphoneos-arm
+Author: Shein Myint Aung
+Depiction: http://iosrepo.cu.cc/tweak/2015/01/31/myanmarfriendly.html
+Description: Facebook အေကာင့္ကို ၂ခု၊ ၃ခု သံုးခ်င္သူေတြအတြက္ပါ။ ျမန္မာလိုလည္း ျမင္ရျပီး။ Message ေတြကိုလည္း တခါတည္း ဖတ္ႏိုင္ပါတယ္။ သို႕ေပမယ့္ အနည္းဆံုး iOS Version 5.1 နဲ႕ အထက္ရွိဖုိ႕ေတာ့ လိုအပ္မယ္ေနာ္။
+Icon: file:///Applications/Friendly for Facebook.app/AppIcon40x40@2x.png
+Name: Myanmar: FriendlyForFacebook
+Package: com.github.itstar4tech.myanmarfriendly
+Section: Tweaks
+Version: 0.1
