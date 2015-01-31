@@ -22,7 +22,7 @@
   </p>
 {% endif %}
 
-{% if post.links & post.category == "art" %}
+{% if post.links and post.category == "art" %}
   <p>
     <b>Links</b>: 
     {% for link in post.links %}
