@@ -4,6 +4,8 @@ title: Sterile Hood (Class 4)
 permalink: /biofactory/class/4-sterile-hood/
 ---
 
+> NOTE: these instructions are still under construction. The designs and BoM might be subject to change.
+
 ## Synopsys
 
 In order to make it easier to work sterile with microbes, we will construct our own sterile hood. During class you will learn more about biological safety and how to purify strains.

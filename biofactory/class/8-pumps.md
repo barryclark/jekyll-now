@@ -4,6 +4,8 @@ title: Syringe & Peristaltic Pump (Class 8)
 permalink: /biofactory/class/8-pumps/
 ---
 
+> NOTE: these instructions are still under construction. The designs and BoM might be subject to change.
+
 ## Synopsys
 
 The microbes in your bioreactor need fresh food. Let’s get rid of the manual labour and connect syringe & peristaltic pumps. You will also learn more about feed stocks and other substrates. We’ll go a bit deeper into metabolic networks too.

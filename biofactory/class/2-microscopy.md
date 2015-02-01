@@ -4,6 +4,8 @@ title: Microscope (Class 2)
 permalink: /biofactory/class/2-microscope/
 ---
 
+> NOTE: these instructions are still under construction. The designs and BoM might be subject to change.
+
 ## Synopsys
 
 We will make our own microscope to take a closer look at how last week’s

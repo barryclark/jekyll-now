@@ -4,6 +4,8 @@ title: Spectrometer (Class 7)
 permalink: /biofactory/class/7-spectrometer/
 ---
 
+> NOTE: these instructions are still under construction. The designs and BoM might be subject to change.
+
 ## Synopsys
 
 Spectroscopy is an essential tool for monitoring the growth and production in your bioreactor. We will make our own light source and detector setup. The class is about other analytical techniques too.

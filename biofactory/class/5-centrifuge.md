@@ -4,6 +4,8 @@ title: Centrifuge (Class 5)
 permalink: /biofactory/class/5-centrifuge/
 ---
 
+> NOTE: these instructions are still under construction. The designs and BoM might be subject to change.
+
 ## Synopsys
 
 We’ll try to isolate our first biomaterial. For that we need centrifugal force to take your samples for a spin. In class you will learn more about analog electronics and physical separation techniques.
