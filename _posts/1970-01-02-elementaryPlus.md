@@ -11,9 +11,9 @@ authors:
 license:
 
 links:
-  - type: github
+  - type: GitHub
     url: mank319/elementaryPlus
-  - type: googleplus
+  - type: Google+
     name: Personal Google+ of developer
     url: +ManuelKehl319/posts
 

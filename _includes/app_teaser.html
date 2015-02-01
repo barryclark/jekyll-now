@@ -26,8 +26,17 @@
   <p>
     <b>Links</b>: 
     {% for link in post.links %}
-	  <a href="{{ site.data.links.[link.type].url }}{{ link.url }}" class="{{ link.type }}">
-        {% if link.name %}{{ link.name }}{% else %}{{ site.data.links.[link.type].name }}{% endif %}</a>{% if forloop.last == false %}, {% endif %}  
+      {% if link.type == "Launchpad" %}
+        {% assign link.prefix = "https://launchpad.net/" %}
+      {% elsif link.type == "GitHub" %}
+        {% assign link.prefix = "https://github.com/ %}
+      {% elsif link.type == "Google+" %}
+        {% assign link.prefix = "https://plus.google.com/ %}
+      {% else %}
+        {% assign link.prefix = nil %}
+      {% endif %}
+	  <a href="{{ link.prefix }}{{ link.url }}" class="{{ link.type }}">
+        {% if link.name %}{{ link.name }}{% else %}{{ link.type }}{% endif %}</a>{% if forloop.last == false %}, {% endif %}  
     {% endfor %}
   </p>
 {% endif %}
