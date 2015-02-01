@@ -6,13 +6,15 @@ title: Indicator USB
 title_obvious: true
 generic: Indicator
 description:
-authors: '<a href="https://github.com/pfragoso">Pedro Fragoso</a>'
 license:
 
-web:
-github: 'pfragoso/indicator-usb'
-launchpad:
-googleplus:
+authors: 
+  - name: Pedro Fragoso
+    url: "https://github.com/pfragoso"
+
+links:
+  - type: GitHub
+    url: pfragoso/indicator-usb
 
 repository:
 repository-unstable:

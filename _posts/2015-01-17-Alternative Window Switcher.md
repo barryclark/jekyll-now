@@ -5,13 +5,15 @@ category: app
 title: Alternative Window Switcher
 generic: Gala plugin
 description: This is an alternative to the stock libplank window switcher.
-authors: '<a href="https://github.com/tom95">Tom Beckmann</a>'
 license:
 
-web:
-github: tom95/gala-alternate-alt-tab
-launchpad:
-googleplus:
+authors: 
+  - name: Tom Beckmann
+    url: "https://github.com/tom95"
+
+links:
+  - type: GitHub
+    url: tom95/gala-alternate-alt-tab
 
 repository:
 repository-unstable:

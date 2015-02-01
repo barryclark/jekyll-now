@@ -6,16 +6,18 @@ title: Screenshot
 title_obvious: true
 generic: Screenshot tool
 description: 'A simple screen capture tool made for elementary OS'
-authors: '<a href="https://launchpad.net/~ffabio-96-x">Fabio Zaramella</a>'
-license: 'GPL v3'
+license: GPL v3
+
+authors: 
+  - name: Fabio Zaramella
+    url: "https://launchpad.net/~ffabio-96-x"
+
+links:
+  - type: Launchpad
+    url: screenshot-tool
 
 screenshots:
   - Screenshot.png
-
-web:
-github:
-launchpad: 'screenshot-tool'
-googleplus:
 
 repository: ppa:fabiozaramella/screenshot-tool 
 repository-unstable:

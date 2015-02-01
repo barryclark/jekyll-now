@@ -6,13 +6,15 @@ title: VNC-Client
 title_obvious: true
 generic: Remote desktop client
 description: 'An very light and neat VNC client for elementary OS.'
-authors: '<a href="https://launchpad.net/~l-admin-3">Marcus Wichelmann</a>'
 license:
 
-web:
-github:
-launchpad: 'evnc'
-googleplus:
+authors: 
+  - name: Marcus Wichelmann
+    url: "https://launchpad.net/~l-admin-3"
+
+links:
+  - type: Launchpad
+    url: evnc
 
 repository:
 repository-unstable: 'ppa:l-admin-3/apps-daily'

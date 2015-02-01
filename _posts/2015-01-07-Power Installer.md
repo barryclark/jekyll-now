@@ -5,13 +5,17 @@ category: app
 title: Power Installer
 generic: One-click installer
 description: 
-authors: '<a href="https://plus.google.com/102383287758197741530">Adam Bieńkowski</a>'
-license: 'GPL v3'
+license: GPL v3
 
-web: 'http://donadigo.github.io/power-installer'
-github:
-launchpad: power-installer
-googleplus:
+authors: 
+  - name: Adam Bieńkowski
+    url: "https://plus.google.com/102383287758197741530"
+
+links:
+  - type: Web
+    url: 'http://donadigo.github.io/power-installer'
+  - type: Launchpad
+    url: power-installer
 
 repository: ppa:donadigo/power-installer
 repository-unstable:

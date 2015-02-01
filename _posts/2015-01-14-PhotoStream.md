@@ -5,13 +5,21 @@ category: app
 title: PhotoStream
 generic: Instagram client
 description:
-authors: '<a href="https://github.com/serge1peshcoff">serge1peshcoff</a>'
 license:
 
-web:
-github: 'serge1peshcoff/photostream'
-launchpad:
-googleplus:
+authors: 
+  - name: serge1peshcoff
+    url: "https://github.com/serge1peshcoff"
+
+links:
+  - type: Web
+    url: 
+  - type: Google+
+    url: 
+  - type: GitHub
+    url: serge1peshcoff/photostream
+  - type: Launchpad
+    url:
 
 repository:
 repository-unstable:

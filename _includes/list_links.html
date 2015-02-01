@@ -1,0 +1,15 @@
+{% for link in post.links %}
+  {% if link.type == "Launchpad" %}
+    {% assign prefix = "https://launchpad.net/" %}
+  {% elsif link.type == "GitHub" %}
+    {% assign prefix = "https://github.com/" %}
+  {% elsif link.type == "Google+" %}
+    {% assign prefix = "https://plus.google.com/" %}
+  {% elsif link.type == "Bitbucket" %}
+    {% assign prefix = "https://bitbucket.org/" %}
+  {% else %}
+    {% assign prefix = nil %}
+  {% endif %}
+  <a href="{{ prefix }}{{ link.url }}">
+    {% if link.name %}{{ link.name }}{% else %}{{ link.type }}{% endif %}</a>{% if forloop.last == false %}, {% endif %}  
+{% endfor %}

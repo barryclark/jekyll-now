@@ -6,13 +6,13 @@ title: Indicator Search
 title_obvious: true
 generic: Indicator
 description:
-authors:
 license:
 
-web:
-github:
-launchpad: '~elementary-apps/synapse-project/indicator-search'
-googleplus:
+authors: 
+
+links:
+  - type: Launchpad
+    url: ~elementary-apps/synapse-project/indicator-search
 
 repository:
 repository-unstable:

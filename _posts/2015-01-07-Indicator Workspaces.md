@@ -6,13 +6,21 @@ title: Indicator Workspaces
 title_obvious: true
 generic: Indicator
 description: 'Configure workspaces and interact with them in the panel.'
-authors: '<a href="http://dysonsimmons.com/">Dyson Simmons</a>'
-license: 'MIT'
+license: MIT
 
-web: 'http://dysonsimmons.com/indicator-workspaces/'
-github: '/dyson/indicator-workspaces'
-launchpad:
-googleplus:
+authors: 
+  - name: Dyson Simmons
+    url: "http://dysonsimmons.com"
+
+links:
+  - type: Web
+    url: 'http://dysonsimmons.com/indicator-workspaces/'
+  - type: Google+
+    url: 
+  - type: GitHub
+    url: dyson/indicator-workspaces
+  - type: Launchpad
+    url:
 
 repository:
 repository-unstable:

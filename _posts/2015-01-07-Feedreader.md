@@ -6,13 +6,15 @@ title: FeedReader
 title_obvious: true
 generic: Feed reader
 description: 'A simple feedreader client (not manager) for web services like Tiny Tiny RSS and in the future others (especially Feedly).'
-authors: '<a href="https://plus.google.com/109974726829108083807">Jan Lukas Gernert</a>'
-license: 'GPL v3'
+license: GPL v3
 
-web:
-github:
-launchpad: 'feedreader'
-googleplus:
+authors: 
+  - name: Jan Lukas Gernert
+    url: "https://plus.google.com/109974726829108083807"
+
+links:
+  - type: Launchpad
+    url: feedreader
 
 repository:
 repository-unstable: 'ppa:eviltwin1/feedreader-daily'
