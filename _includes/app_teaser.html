@@ -26,8 +26,8 @@
   <p>
     <b>Links</b>: 
     {% for link in post.links %}
-	  <a href="{{ site.data.links[link.type].url }}{{ link.url }}" class="{{ link.type }}">
-        {% if link.name %}{{ link.name }}{% else %}{{ site.data.links[link.type].name }}{% endif %}</a>{% if forloop.last == false %}, {% endif %}  
+	  <a href="{{ site.data.links.[link.type].url }}{{ link.url }}" class="{{ link.type }}">
+        {% if link.name %}{{ link.name }}{% else %}{{ site.data.links.[link.type].name }}{% endif %}</a>{% if forloop.last == false %}, {% endif %}  
     {% endfor %}
   </p>
 {% endif %}
