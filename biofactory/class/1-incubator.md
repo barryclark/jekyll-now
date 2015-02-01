@@ -27,7 +27,7 @@ This week we will build our first Open Hardware lab device: the incubator. Downl
 * [Functional and technical requirements](/biofactory/class/1-incubator/requirements/)
 * [SketchUp assembly](/biofactory/class/1/Incubator-Sketchup.skp)
 * [SVG laser cut files](/biofactory/class/1/Incubator-SVGs.zip)
-* [Fritzing wiring](/biofactory/class/1/Incubator-Fritzing.fz)
+* [Fritzing wiring](/biofactory/class/1/Incubator-Fritzing.fzz)
 * [Arduino code](/biofactory/class/1/Incubator-Arduino.txt)
 
 ![Incubator](/biofactory/class/1/Incubator.png)

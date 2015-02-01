@@ -22,40 +22,30 @@
 /* Attribution
 
 MOSFET code derived from: 	http://bildr.org/2012/03/rfp30n06le-arduino/
-OneWire code derived from:	https://tushev.org/articles/arduino/item/52-how-it-works-ds18b20-and-arduino
 4 digit 7 segment code derived from: 	http://dlnmh9ip6v2uc.cloudfront.net/datasheets/Components/LED/_7Seg_Example.pde
 button code derived from: 	http://arduino.cc/en/tutorial/button
-PID code derived from: 	http://playground.arduino.cc/Code/PIDLibaryBasicExample
+Thermistor code derived from: http://computers.tutsplus.com/tutorials/how-to-read-temperatures-with-arduino--mac-53714
 
 NOTICE for first time users:
 - Try to build the circuits and run the sketches in the above examples prior to using this code
-*/
-
-/* Dependencies
-
-For the OneWire temperature sensor to work, you need to include the OneWire library from: 	http://playground.arduino.cc/Learning/OneWire
-
-The PID library should also be included
 
 */
 
 // Include libraries
-#include <OneWire.h>
-#include <PID_v1.h>
+#include <math.h>    // loads a library with more advanced math functions
 
 // Define pins
-OneWire ds(2);
-#define MOSFETPin 3
-#define DS18S20_ID 0x10
-#define DS18B20_ID 0x28
+#define fanPin 3     // The mosfet that drives the 80mm fan is connected to pin 3
+#define relayPin 6   // Pin for the relay that controls the 100W light
+#define buttonPin1 7 // Pin for the push button left of the screen
+#define buttonPin2 8 // Pin for the push button right of the screen
+#define ledPin 13    // Arduino nboard LED pin used as indicator
 
+// Display pins
 //int digit1 = 11; //PWM Display pin 1
 int digit2 = 10; //PWM Display pin 2
 int digit3 = 9; //PWM Display pin 6
 //int digit4 = 6; //PWM Display pin 8
-
-//Pin mapping from Arduino to the ATmega DIP28 if you need it
-//http://www.arduino.cc/en/Hacking/PinMapping
 int segA = A1; //Display pin 14
 int segB = 12; //Display pin 16
 int segC = 4; //Display pin 13
@@ -63,143 +53,120 @@ int segD = 5; //Display pin 3
 int segE = A0; //Display pin 5
 int segF = 6; //Display pin 11
 int segG = 11; //Display pin 15
-
 // Connected to ground
 // Display pin 7: dots
 // Display pin 4 & 12: semi colon
 // Display pin 9 & 10: degree
 // Display pin 1 & 8: digit 1 & 4
 
-// Temperature sensor variable
-double temp;
-
-// Temperature target variable
-double set_temp = 0;
-
-// MOSFET control
-double output;
+// Define variables
+int targetTemp = 25;   // Initial target temperature
+int button1State = 0;  // variable for reading the pushbutton status
+int button2State = 0;  // variable for reading the pushbutton status
 
 // User interaction vairables
 boolean set_mode = false;
-long set_time = 10000;
+long set_time = 5000; // max set mode time 
 long begin_set_time = 0;
 
-// Buttton pins
-const int buttonUpPin = 7;
-const int buttonDownPin = 8;
-int buttonUpState = 0;
-int buttonDownState = 0;
+void setup() {            //This function gets called when the Arduino starts
+  Serial.begin(115200);   //This code sets up the Serial port at 115200 baud rate
+  
+  // Set pin modes
+  pinMode(fanPin, OUTPUT);  // Fanpin
+  pinMode(ledPin, OUTPUT); // initialize the LED pin as an output:
+  pinMode(buttonPin1, INPUT); // initialize the pushbutton pin as an input:  
+  pinMode(buttonPin2, INPUT); // initialize the pushbutton pin as an input:
+  pinMode(relayPin, OUTPUT);
 
-// Initiate PID
-PID myPID(&temp, &output, &set_temp,2,5,1, DIRECT);
+  // 4 Digit display
+  pinMode(segA, OUTPUT);
+  pinMode(segB, OUTPUT);
+  pinMode(segC, OUTPUT);
+  pinMode(segD, OUTPUT);
+  pinMode(segE, OUTPUT);
+  pinMode(segF, OUTPUT);
+  pinMode(segG, OUTPUT);
 
-void setup(){
-	pinMode(MOSFETPin, OUTPUT);  
-	
-	// 4 Digit display
-	pinMode(segA, OUTPUT);
-	pinMode(segB, OUTPUT);
-	pinMode(segC, OUTPUT);
-	pinMode(segD, OUTPUT);
-	pinMode(segE, OUTPUT);
-	pinMode(segF, OUTPUT);
-	pinMode(segG, OUTPUT);
-
-	// pinMode(digit1, OUTPUT);
-	pinMode(digit2, OUTPUT);
-	pinMode(digit3, OUTPUT);
-	// pinMode(digit4, OUTPUT);
-
-	// buttons
-	pinMode(buttonUpPin, INPUT);
-	pinMode(buttonDownPin, INPUT);
-
-	// On board Arduion LED  
-	pinMode(13, OUTPUT);
-
-	// Set time
-	begin_set_time = millis();
-
-	//turn the PID on
-	myPID.SetMode(AUTOMATIC);
+  // pinMode(digit1, OUTPUT);
+  pinMode(digit2, OUTPUT);
+  pinMode(digit3, OUTPUT);
+  // pinMode(digit4, OUTPUT);  
+  
+  // Set time
+  begin_set_time = millis();  
 }
 
-void loop(){
+// Thermistor function
+double Thermister(int RawADC) {  //Function to perform the fancy math of the Steinhart-Hart equation
+  double Temp;
+  Temp = log(((10240000/RawADC) - 10000));
+  Temp = 1 / (0.001129148 + (0.000234125 + (0.0000000876741 * Temp * Temp ))* Temp );
+  Temp = Temp - 273.15;              // Convert Kelvin to Celsius
+  //Temp = (Temp * 9.0)/ 5.0 + 32.0; // Celsius to Fahrenheit - comment out this line if you need Celsius
+  return Temp;
+}
+ 
+void loop() {             //This function loops while the arduino is powered
+  int val;                //Create an integer variable
+  double temp;            //Variable to hold a temperature value
+  val=analogRead(5);      //Read the analog port 0 and store the value in val
+  temp=Thermister(val);   //Runs the fancy math on the raw analog value
+  Serial.println(temp);   //Print the value to the serial port
+  
+  // Turn the 100W infrared light on or of depending on temperature
+  if (temp < targetTemp) {
+    digitalWrite(relayPin, HIGH);
+  }
+  else {
+    digitalWrite(relayPin, LOW);
+  }
+  
+  // Keep spinning the fan
+  digitalWrite(fanPin, HIGH);
+  
+  // Read the state of the pushbutton value:
+  button1State = digitalRead(buttonPin1);
+  button2State = digitalRead(buttonPin2); 
+ 
+  // Check if the pushbutton is pressed.
+  // If it is, the buttonState is HIGH:
+  if (button1State == HIGH) {     
+    // turn LED on:    
+    digitalWrite(ledPin, HIGH);  
+    ++targetTemp;      
+    begin_set_time = millis();        // Reset set mode counter
+    if(targetTemp > 50) targetTemp = 50;  // Sanity check, do not allow temperatures higher than 50  
+  } 
+  else if (button2State == HIGH) {
+    digitalWrite(ledPin, HIGH);
+    --targetTemp;
+    begin_set_time = millis(); // Reset set mode counter
+    if(targetTemp < 0) targetTemp = 0;  // Sanity check, do not allow temperatures higher than 50    
+  }
+  else {
+    // turn LED off:
+    digitalWrite(ledPin, LOW); 
+    
+  }  
+  
+  // Print the new target temperature to the Serial port
+  Serial.println(targetTemp);
 
-	// Read the temperature
-	getTemperature();
-
-	// Decide to turn on heat or not (without PID)
-	//if(temp < set_temp) {
-	//	analogWrite(MOSFETPin, 255);	
-	//}
-
-	// PID
-	myPID.Compute();
-	analogWrite(MOSFETPin, output);
-
-	// Decide what temperature to display
-	if((millis() - begin_set_time) < set_time) {
-		// Display set time
-		displayNumber(constrain(set_temp,0,99)*10);
-	}
-	else {
-		// Display current temperature
-  		displayNumber(constrain(temp,0,99)*10);
-	}
-
-	// Interact with user
-	buttonUpState = digitalRead(buttonUpPin);
-	buttonDownState = digitalRead(buttonDownPin);
-
-	// Check if button is pressed
-	if (buttonUpState == HIGH) { 
-		++set_temp;
-		begin_set_time = millis();
-		if(set_temp > 50) set_temp = 50;
-	}
-	if (buttonDownState == HIGH) { 
-		--set_temp;
-		begin_set_time = millis();
-		if(set_temp < 0) set_temp = 0;
-	}
+  // Decide what temperature to display
+  if((millis() - begin_set_time) < set_time) {
+    // Display set time
+    displayNumber(constrain(targetTemp,0,99)*10);
+  }
+  else {
+    // Display current temperature
+    displayNumber(constrain(temp,0,99)*10);
+  }
+  
+  delay(100);            //Wait one hundred millisecond before we do it again  
 }
 
-boolean getTemperature(){
-	byte i;
-	byte present = 0;
-	byte data[12];
-	byte addr[8];
-	//find a device
-	if (!ds.search(addr)) {
-		ds.reset_search();
-		return false;
-	}
-	if (OneWire::crc8( addr, 7) != addr[7]) {
-		return false;
-	}
-	if (addr[0] != DS18S20_ID && addr[0] != DS18B20_ID) {
-		return false;
-	}
-	ds.reset();
-	ds.select(addr);
-	// Start conversion
-	ds.write(0x44, 1);
-	// Wait some time...
-	delay(850);
-	present = ds.reset();
-	ds.select(addr);
-	// Issue Read scratchpad command
- 	ds.write(0xBE);
-	// Receive 9 bytes
-	for ( i = 0; i < 9; i++) {
-		data[i] = ds.read();
-	}
-	// Calculate temperature value
-	temp = ( (data[1] << 8) + data[0] )*0.0625;
-	return true;
-}
-
+// Functions for controlling the LCD display
 //Let's define a variable called brightness that varies from:
 //5000 blindingly bright (15.7mA current draw per digit)
 //2000 shockingly bright (11.4mA current draw per digit)
@@ -375,4 +342,3 @@ void lightNumber(int numberToDisplay) {
 		break;
 	}
 }
-
