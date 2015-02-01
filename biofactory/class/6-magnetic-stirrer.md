@@ -4,6 +4,8 @@ title: Magnetic Stirrer (Class 6)
 permalink: /biofactory/class/6-magnetic-stirrer/
 ---
 
+> NOTE: these instructions are still under construction. The designs and BoM might be subject to change.
+
 ## Synopsys
 
 In order to scale up our BioFactory, we need to stir things up. Production is often limited by mass transport, so the stirrer will fix that. We’ll explore the basics of bioreactor design too.

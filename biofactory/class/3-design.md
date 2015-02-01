@@ -4,6 +4,8 @@ title: 2D & 3D Design (Class 3)
 permalink: /biofactory/class/3-design/
 ---
 
+> NOTE: these instructions are still under construction. The designs and BoM might be subject to change.
+
 ## Synopsys
 
 This class is essential. You will learn how to design objects in 2D and 3D and transform them into real objects with a lasercutter or 3D printer. As a demo we will make basic lab utilities, such as tube racks. 
