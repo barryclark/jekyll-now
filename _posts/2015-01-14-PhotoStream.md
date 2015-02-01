@@ -12,14 +12,8 @@ authors:
     url: "https://github.com/serge1peshcoff"
 
 links:
-  - type: Web
-    url: 
-  - type: Google+
-    url: 
   - type: GitHub
     url: serge1peshcoff/photostream
-  - type: Launchpad
-    url:
 
 repository:
 repository-unstable:

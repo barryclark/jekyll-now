@@ -15,12 +15,8 @@ authors:
 links:
   - type: Web
     url: 'http://dysonsimmons.com/indicator-workspaces/'
-  - type: Google+
-    url: 
   - type: GitHub
     url: dyson/indicator-workspaces
-  - type: Launchpad
-    url:
 
 repository:
 repository-unstable:
