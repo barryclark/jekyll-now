@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>imagenet<sub>alex</sub></title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1"/>
+<meta name="title" content="imagenet<sub>alex</sub>"/>
+<meta name="generator" content="Org-mode"/>
+<meta name="generated" content="2015-02-03T22:54+0800"/>
+<meta name="author" content="dzh"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  html { font-family: Times, serif; font-size: 12pt; }
+  .title  { text-align: center; }
+  .todo   { color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #add8e6; font-weight:normal }
+  .target { }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  {margin-left:auto; margin-right:0px;  text-align:right;}
+  .left   {margin-left:0px;  margin-right:auto; text-align:left;}
+  .center {margin-left:auto; margin-right:auto; text-align:center;}
+  p.verse { margin-left: 3% }
+  pre {
+	border: 1pt solid #AEBDCC;
+	background-color: #F3F5F7;
+	padding: 5pt;
+	font-family: courier, monospace;
+        font-size: 90%;
+        overflow:auto;
+  }
+  table { border-collapse: collapse; }
+  td, th { vertical-align: top;  }
+  th.right  { text-align:center;  }
+  th.left   { text-align:center;   }
+  th.center { text-align:center; }
+  td.right  { text-align:right;  }
+  td.left   { text-align:left;   }
+  td.center { text-align:center; }
+  dt { font-weight: bold; }
+  div.figure { padding: 0.5em; }
+  div.figure p { text-align: center; }
+  div.inlinetask {
+    padding:10px;
+    border:2px solid gray;
+    margin:10px;
+    background: #ffffcc;
+  }
+  textarea { overflow-x: auto; }
+  .linenr { font-size:smaller }
+  .code-highlighted {background-color:#ffff00;}
+  .org-info-js_info-navigation { border-style:none; }
+  #org-info-js_console-label { font-size:10px; font-weight:bold;
+                               white-space:nowrap; }
+  .org-info-js_search-highlight {background-color:#ffff00; color:#000000;
+                                 font-weight:bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+
+</head>
+<body>
+
+<div id="preamble">
+
+</div>
+
+<div id="content">
+<h1 class="title">imagenet<sub>alex</sub></h1>
+
+
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1 imagenet classification with deep convolution network</a>
+<ul>
+<li><a href="#sec-1-1">1.1 alex karpathy, geffory hintion</a></li>
+<li><a href="#sec-1-2">1.2 words</a></li>
+<li><a href="#sec-1-3">1.3 imagenet classfication challenage, http://www.gageet.com/2014/09140.php</a></li>
+<li><a href="#sec-1-4">1.4 Dataset</a></li>
+<li><a href="#sec-1-5">1.5 architecture</a>
+<ul>
+<li><a href="#sec-1-5-1">1.5.1 relu layer</a></li>
+<li><a href="#sec-1-5-2">1.5.2 training on multiGPUs</a></li>
+<li><a href="#sec-1-5-3">1.5.3 local response normalization</a></li>
+<li><a href="#sec-1-5-4">1.5.4 over lapping pooling</a></li>
+<li><a href="#sec-1-5-5">1.5.5 overall architecture</a></li>
+<li><a href="#sec-1-5-6">1.5.6 full-connected layer</a></li>
+</ul>
+</li>
+<li><a href="#sec-1-6">1.6 prevent overfitting</a>
+<ul>
+<li><a href="#sec-1-6-1">1.6.1 data augmentation</a></li>
+<li><a href="#sec-1-6-2">1.6.2 Dropout</a></li>
+<li><a href="#sec-1-6-3">1.6.3 Learning Details</a></li>
+</ul>
+</li>
+<li><a href="#sec-1-7">1.7 qualitive evaluation</a></li>
+<li><a href="#sec-1-8">1.8 dicussion</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> imagenet classification with deep convolution network</h2>
+<div class="outline-text-2" id="text-1">
+
+
+</div>
+
+<div id="outline-container-1-1" class="outline-3">
+<h3 id="sec-1-1"><span class="section-number-3">1.1</span> alex karpathy, geffory hintion</h3>
+<div class="outline-text-3" id="text-1-1">
+
+
+</div>
+
+</div>
+
+<div id="outline-container-1-2" class="outline-3">
+<h3 id="sec-1-2"><span class="section-number-3">1.2</span> words</h3>
+<div class="outline-text-3" id="text-1-2">
+
+<p>   <a href="http://www.gageet.com/2014/09140.php">http://www.gageet.com/2014/09140.php</a>
+   full connect output vector, there is no use of its real value.
+   but their eculidean distance make sense
+</p>
+<p>
+   training on two GPU
+   GPU2 is sensitive to color but GPU1 don't
+</p></div>
+
+</div>
+
+<div id="outline-container-1-3" class="outline-3">
+<h3 id="sec-1-3"><span class="section-number-3">1.3</span> imagenet classfication challenage, <a href="http://www.gageet.com/2014/09140.php">http://www.gageet.com/2014/09140.php</a></h3>
+<div class="outline-text-3" id="text-1-3">
+
+<p>   classifcation result 
+</p><table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<colgroup><col class="left" /><col class="left" /><col class="left" />
+</colgroup>
+<tbody>
+<tr><td class="left">errorits real value. rate</td><td class="left">top 1</td><td class="left">top 5</td></tr>
+<tr><td class="left"></td><td class="left">but their eculidean distance make sense</td><td class="left"></td></tr>
+</tbody>
+</table>
+
+
+<p>
+   training on two GPU
+   GPU2 is sensitive to color but GPU1 don't
+</p><table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<colgroup><col class="left" /><col class="right" /><col class="left" />
+</colgroup>
+<thead>
+<tr><th scope="col" class="left"></th><th scope="col" class="right">15.3%</th><th scope="col" class="left">37.5%</th></tr>
+</thead>
+<tbody>
+<tr><td class="left">neural numbers</td><td class="right">650000</td><td class="left"></td></tr>
+<tr><td class="left">parameters</td><td class="right">60million</td><td class="left"></td></tr>
+</tbody>
+</table>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-1-4" class="outline-3">
+<h3 id="sec-1-4"><span class="section-number-3">1.4</span> Dataset</h3>
+<div class="outline-text-3" id="text-1-4">
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<colgroup><col class="left" /><col class="left" />
+</colgroup>
+<tbody>
+<tr><td class="left">name</td><td class="left">imagenet</td></tr>
+<tr><td class="left">category</td><td class="left">1000</td></tr>
+<tr><td class="left">train images</td><td class="left">1.2 million</td></tr>
+<tr><td class="left">validation images</td><td class="left">50,000</td></tr>
+<tr><td class="left">test images</td><td class="left">150,000</td></tr>
+<tr><td class="left">image resulotion</td><td class="left">256 x 256</td><td class="left">rescaled the shorted length 256, then cropped out the central 256x256 patch</td></tr>
+<tr><td class="left"></td><td class="left">RGB</td></tr>
+</tbody>
+</table>
+
+</div>
+
+</div>
+
+<div id="outline-container-1-5" class="outline-3">
+<h3 id="sec-1-5"><span class="section-number-3">1.5</span> architecture</h3>
+<div class="outline-text-3" id="text-1-5">
+
+<p>   five convolution and three full-connnect layers
+</p>
+</div>
+
+<div id="outline-container-1-5-1" class="outline-4">
+<h4 id="sec-1-5-1"><span class="section-number-4">1.5.1</span> relu layer</h4>
+<div class="outline-text-4" id="text-1-5-1">
+
+<p>   severial times faster
+   do not require input normalize to prevent saturate
+   <b>accelerate corresponding</b> 
+</p>
+<p>   
+   <a href="http:://www.gageet.com/2014/091162.php">http:://www.gageet.com/2014/091162.php</a>
+   argue this with
+   don't use sigmoid or tanh as activation function.
+   the two function derivate shape like a bow, that is the value decrease with x increase.But Relu unit keep constant value of 1. which ensure back-popagation can transport though the network. 
+</p></div>
+
+</div>
+
+<div id="outline-container-1-5-2" class="outline-4">
+<h4 id="sec-1-5-2"><span class="section-number-4">1.5.2</span> training on multiGPUs</h4>
+<div class="outline-text-4" id="text-1-5-2">
+
+<p>    similar to "columnar" CNN employed by Ciresan. except the column isn't independent.
+    reduce 1.7% and 1.2% error rate compare to the CNN in artical
+    puts parallization kernels on each GPU, layer4 only take input from layer 3
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-1-5-3" class="outline-4">
+<h4 id="sec-1-5-3"><span class="section-number-4">1.5.3</span> local response normalization</h4>
+<div class="outline-text-4" id="text-1-5-3">
+
+<p>    if there some examples in produce positive input to a Relu, learninng will happen in that neural. local response normlization can generalization. 
+    use LRU after every RELU
+</p>
+<p>    
+    <b>y = |tanh(x)|</b> 
+    have some similar with local contrast normalization schema of Jarrett
+    reduce error rate by 1.4% and 1.2%
+    at CIFAR10 reduce error rate 18% to 11%
+</p>
+<p>    
+    <a href="http:://www.gageet.com/2014/091162.php">http:://www.gageet.com/2014/091162.php</a>
+    argue 
+    prevent activation funciton saturate.
+    make input is close to the bow middle, such that can get bigger derivate value. back-popagation can work.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-1-5-4" class="outline-4">
+<h4 id="sec-1-5-4"><span class="section-number-4">1.5.4</span> over lapping pooling</h4>
+<div class="outline-text-4" id="text-1-5-4">
+
+<p>    kernel size is z
+    step is s
+    set s = z there is no overlapping 
+    set s &lt; z there is overlapping
+    with overlapping sightly more difficult to overfit
+    with s =2, z =3 , reduce the error rate of 0.4% and 0.3% respectively
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-1-5-5" class="outline-4">
+<h4 id="sec-1-5-5"><span class="section-number-4">1.5.5</span> overall architecture</h4>
+<div class="outline-text-4" id="text-1-5-5">
+
+<p>    maximize the multinomial logisitic regression objective
+    RELU nonlinearity is applied to the output of every convolution and fully-connect layer
+</p></div>
+
+</div>
+
+<div id="outline-container-1-5-6" class="outline-4">
+<h4 id="sec-1-5-6"><span class="section-number-4">1.5.6</span> full-connected layer</h4>
+<div class="outline-text-4" id="text-1-5-6">
+
+<ul>
+<li>the dimension 
+      input is 224*224*3
+      have 60 million parameters
+</li>
+<li>neurals number
+      253440 -&gt; 186624 -&gt; 64896 -&gt; 64896 -&gt; 43264 -&gt; 4096 -&gt; 4096 -&gt; 1000
+</li>
+<li>detail
+</li>
+</ul>
+
+<p>    input 224 224 3
+    convolution 1 layer 96 kernel kernel size is 11x11x3 stride 4 (response normalized and pooled) 
+    convolution 2 layer 256 kernel kernel size is 5x5x48 stride (response normalized and pooled)
+    convolution 3 layer 384 kernels 3x3x256 
+    convolution 4 layer 384 kernels 3x3x192 
+    convolution 5 layer 256 kernels 3x3x192 
+    full connect layer 4096 neurals
+    softmax 1000-way prediction
+</p>
+
+
+<p>    
+    make each train example impose 10 bits of constraint on the mapping from image to label
+</p></div>
+</div>
+
+</div>
+
+<div id="outline-container-1-6" class="outline-3">
+<h3 id="sec-1-6"><span class="section-number-3">1.6</span> prevent overfitting</h3>
+<div class="outline-text-3" id="text-1-6">
+
+
+</div>
+
+<div id="outline-container-1-6-1" class="outline-4">
+<h4 id="sec-1-6-1"><span class="section-number-4">1.6.1</span> data augmentation</h4>
+<div class="outline-text-4" id="text-1-6-1">
+
+
+<ul>
+<li id="sec-1-6-1-1">translation and horizontal reflection<br/>
+     extract 224 x 224 from 256 x 256 randomly 
+     increase data augmentation by a factor of 2048
+     at test dataset 
+     four corner patch , center patch, reflaction in horizional. that means a test example extract 10 patch
+     average the prediction on the last softmax prediction
+     result highly interdependent
+
+</li>
+</ul>
+<ul>
+<li id="sec-1-6-1-2">alter the intensive the RGB channel<br/>
+     pca on the set of RGB
+     <a href="http:://www.gageet.com/2014/091162.php">http:://www.gageet.com/2014/091162.php</a>
+     point that make pca analysis and add nosie (0,0,1)
+     reduce the top 1 error rate of 1%
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-1-6-2" class="outline-4">
+<h4 id="sec-1-6-2"><span class="section-number-4">1.6.2</span> Dropout</h4>
+<div class="outline-text-4" id="text-1-6-2">
+
+<p>    efficient , reduce the complex co-adapations of neurals, since a neural cannot rely on a particular neural
+    cost factor of 2 to make a combination
+</p>
+<ul>
+<li>at train time
+</li>
+</ul>
+
+<p>    setting ot zero in a probablity of 0.5 , if set to 0, don't participant the feed forward and back propagation. 
+</p><ul>
+<li>at test time 
+</li>
+</ul>
+
+<p>    use all the neural, but multiply their output by 0.5, approximate the dropout effect.
+    reduce overfitting , reduce about twice iterations to coverage
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-1-6-3" class="outline-4">
+<h4 id="sec-1-6-3"><span class="section-number-4">1.6.3</span> Learning Details</h4>
+<div class="outline-text-4" id="text-1-6-3">
+
+<p>    stochastic gradient descent, batch size of 128
+    momentum 0.9
+</p>
+<p>    
+    Vi+1 = 0.9*Vi - 0.0005*lr*Wi - lr*dL/dw
+    Wi+1 = Wi + Vi+1
+</p>
+<p>
+    <b>weight decay important</b> recude error rate
+    weight decay 0.0005 
+        reduce the train error
+        regurlizer
+    weight initilization is zero-mean, standard deviation 0.01
+    bias initlization constant of 1 (layer 2, 4, 5)
+    other biase initlization constant of 0
+    90 epoch on the 1.2 million images
+    all layers learning rate is same ,learning rate initlization of 0.01, when validatio error is stop, divid it by 10. 
+</p>
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-1-7" class="outline-3">
+<h3 id="sec-1-7"><span class="section-number-3">1.7</span> qualitive evaluation</h3>
+<div class="outline-text-3" id="text-1-7">
+
+<p>   use euclidean distance between two 4096 dimension, can make auto encode to make it more sufficient.
+   depth is important
+       remove layer increase about 2% on top 1 error rate
+</p></div>
+
+</div>
+
+<div id="outline-container-1-8" class="outline-3">
+<h3 id="sec-1-8"><span class="section-number-3">1.8</span> dicussion</h3>
+<div class="outline-text-3" id="text-1-8">
+
+<p>   remove the middle layer will increase error rate of 2%
+</p></div>
+</div>
+</div>
+</div>
+
+<div id="postamble">
+<p class="date">Date: 2015-02-03T22:54+0800</p>
+<p class="author">Author: dzh</p>
+<p class="creator"><a href="http://orgmode.org">Org</a> version 7.9.3f with <a href="http://www.gnu.org/software/emacs/">Emacs</a> version 24</p>
+<a href="http://validator.w3.org/check?uri=referer">Validate XHTML 1.0</a>
+
+</div>
+</body>
+</html>
