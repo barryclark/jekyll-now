@@ -15,6 +15,7 @@ Netherlands:
 
 * [iPrototype](http://www.iprototype.nl)
 * [EOO](http://www.eoo-bv.nl)
+* [Floris.cc](http://www.floris.cc)
 
 Chinese suppliers (take possible long shipping time into account):
 
@@ -55,6 +56,7 @@ Live cultures:
 * [KNAW Fungal Biodiversity Center](http://www.cbs.knaw.nl/)
 * [DSMZ](http://www.dsmz.de)
 * [ATCC](http://www.lgcstandards-atcc.org/)
+* [Carolina](http://www.carolina.com/)
 
 ## Disposable labware
 
