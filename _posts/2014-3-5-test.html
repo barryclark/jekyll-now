@@ -1,0 +1,23 @@
+<ul>
+<li>Gradient-Based Learning Applied to Document Recognition ** lecun 1998</li>
+<li>word over-segmentation one expectd region is divid in two or more segmentation</li>
+<li>neurals component-wise sigmoid functions</li>
+<li>weights alternative layers matrix multiplication( pixels )</li>
+<li>trick</li>
+<li>gradient based learning method improve in practice usefulness is very limited</li>
+<li>size-normalized or centerd before input ** gradient back propagation</li>
+<li>the presence in local minima is not a major problem in practice
+<ul>
+<li>especially in the success of early non-linear gradient based machine , Bolzmann machine</li>
+</ul></li>
+<li>back propagation in computing the gradient in non-linear gradient</li>
+<li><p>BP algorithm applied to neural network with sigmoid units can solve complicated tasks</p></li>
+<li>global method field locator -&gt; extract region of interest -&gt; a field segmenter -&gt; a recognizer trained on pre-segment characters -&gt; assemble the each modules, manually optimaled. (each module output can be represent as an asclicl graph, each arc contains the label and score. each path is the string) -&gt; recognizer minimize the global error rate ====&gt; grammer correct</li>
+<li><p>model | mnist | train | test | | resolution | 28<em>28 | 28</em>28 | | number | 60000 | 10000 | | 10class | | | |------------+-------+-------| | cifar | train | test | | | 50000 | 10000 | | | 32<em>32 | 32</em>32 | | 10 class | | |</p></li>
+</ul>
+<p>| lenet-5 | | output | neural | freeparameter | | parameter | 60000 | | | | | connection | 340908 | | | | | neural | | | | | | mnist | 28*28 | | | | | conv1 | 20 kernel size 5 stride 1 bias 0 | | | | | pool1 | max kernel size 2 stride 2 | | | | | conv2 | 50 kernel size 5 stride 1 bias 0 | | | | | pool2 | max kernel size 2 stride 2 | | | | | full1 | output 500 bias 0 | | | | | full2 | output 10 bias 0 | | | | | loss | softmax loss | | | |</p>
+<ul>
+<li>convolution network to ensure some degree of SHIFT, SCALE, DISTORTION invariance use some features: local recepecitve field shared weights or weights replicate spatial or temporal sub-sampling</li>
+<li>neural with local perspective field, neurals can extract elementary feature such as oriented edges, end-point and corners.(some other features in other signal like spectrograms)</li>
+<li>sub-sampling reduce the precise position, sub sampling down resolution. perform an local average and sub-sampling ** consist of layers convolution layers, sub-sampling layers, full_connect layers, RBF layers ** 60000 free parameters and 384000 connections most parameter is in the full connect layers.</li>
+</ul>
