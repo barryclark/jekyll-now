@@ -11,7 +11,7 @@ At the start of the Biohack Academy we assume you have taken care of the followi
   * A tablet will not do
 * Arduino UNO microcontroller + USB cable or [a cheaper equivalent board](http://en.wikipedia.org/wiki/List_of_Arduino_boards_and_compatible_systems#Arduino_footprint-compatible_boards) such as Freeduino, Seeeduino or Sparkfun Redboard
   * Also check the [suppliers page](/suppliers/)
-* Soldering iron, multimeter, helping hand, solder and heat shrink [iPrototype](https://iprototype.nl/products/accessoires/tools/Heat-Shrink-Kit)
+* For those building at home: soldering iron, multimeter, helping hand, solder and heat shrink [iPrototype](https://iprototype.nl/products/accessoires/tools/Heat-Shrink-Kit)
 * M3 [DIN84](http://www.bevestigingsmateriaal.nl/bevestigingsmateriaal/bouten-schroeven/zaagsnede-kop/cilinderkopschroef-din-84/106) or [DIN933](http://www.bevestigingsmateriaal.nl/bevestigingsmateriaal/bouten-schroeven/buitenzeskant-kop/tapbouten-din-933/61) (what ever you prefer) bolts and nuts [DIN934](http://www.bevestigingsmateriaal.nl/bevestigingsmateriaal/moeren/zeskantmoer-din-934/75) in several lengths, such as 10 mm, 20 mm and 30 mm
 
 ## Software
