@@ -1,6 +1,6 @@
 ---
-title: Building Your First Website Using Node.js - Part 1: Hello Node!
 layout: post
+title: Building Your First Website Using Node.js (Part 1) Hello Node
 ---
 
 This is the first in a series of posts that explain, at length, how to build a fully-featured website or web application using Node.js and the popular Express framework.
