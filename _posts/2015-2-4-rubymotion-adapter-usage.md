@@ -1,6 +1,6 @@
-# Note about rubymotion for android adapter usage 
+# Rubymotion about android adapter usage 
 
-rubymotion关于adapter的用法的笔记（该文为转载）
+rubymotion关于adapter的用法（该文为转载）
 
 ### ArrayAdapter使用
 main_activity.rb
