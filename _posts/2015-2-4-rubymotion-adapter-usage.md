@@ -66,7 +66,7 @@ class MainActivity < Android::App::Activity
   end
 end
 ```
-hello_list_adapter.rb
+hello\_list\_adapter.rb
 ```
 class HelloListAdapter < Android::Widget::BaseAdapter 
   Data = ["Kanako", "Aayaka", "Shiori", "Momoka", "Reni"]
