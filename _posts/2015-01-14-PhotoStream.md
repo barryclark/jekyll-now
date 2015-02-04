@@ -5,7 +5,7 @@ category: app
 title: PhotoStream
 generic: Instagram client
 description:
-license:
+license: GPL v3
 
 authors: 
   - name: serge1peshcoff
@@ -14,8 +14,6 @@ authors:
 links:
   - type: GitHub
     url: serge1peshcoff/photostream
-
-repository:
-repository-unstable:
-package:
 ---
+
+Build instructions are available at the GitHub page.

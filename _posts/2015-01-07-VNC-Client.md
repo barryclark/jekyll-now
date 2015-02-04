@@ -6,7 +6,7 @@ title: VNC-Client
 title_obvious: true
 generic: Remote desktop client
 description: 'An very light and neat VNC client for elementary OS.'
-license:
+license: GPL v3
 
 authors: 
   - name: Marcus Wichelmann

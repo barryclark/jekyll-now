@@ -15,8 +15,4 @@ authors:
 links:
   - type: GitHub
     url: pfragoso/indicator-usb
-
-repository:
-repository-unstable:
-package:
 ---

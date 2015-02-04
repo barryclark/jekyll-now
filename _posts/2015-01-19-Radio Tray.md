@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: app
 category: app
 title: Radio Tray
@@ -16,10 +16,6 @@ links:
     url: "http://radiotray.sourceforge.net"
   - type: Bitbucket
     url: "carlmig/radio-tray"
-
-repository:
-repository-unstable:
-package:
 
 tags:
   - Python

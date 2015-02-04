@@ -27,6 +27,8 @@ tags:
   - official
   - Vala
   - GTK3
+  
+redirect_from: "/Calculus/"
 ---
 
 Originally developed by [Marvin Beckers](https://plus.google.com/115808436961854096673) as a third-party app for elementary, called "[Calculus](https://launchpad.net/calculus)".

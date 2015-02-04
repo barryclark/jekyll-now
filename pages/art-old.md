@@ -13,3 +13,7 @@ Name | Info | Developer
 [**Firefox** headerbar](https://github.com/chpii/Headerbar) | Firefox add-ons | [Svitozar Cherepii](https://github.com/chpii)
 [**Sublime Text**](https://github.com/samuelrafo/elementary) ([DeviantArt](http://srff.deviantart.com/art/Elementary-for-Sublime-Text-updated-393125257)) | Sublime theme | [Samuel Rafo](https://github.com/samuelrafo)
 [**Thunderbird**](https://github.com/alxlit/elementary-thunderbird) ([MOZ](https://addons.mozilla.org/de/thunderbird/addon/elementary-thunderbird/?src=search), inactive?)| Thunderbird add-on |
+
+<p>
+  We currently have {{ site.posts | size }} <a href="{{ site.baseurl }}/apps/">apps</a> and pieces of <a href="{{ site.baseurl }}/art/">art</a> in our database. Found something fancy? <a href="https://github.com/quassy/elementary-apps/issues/new">Tell us at GitHub.</a>
+</p>

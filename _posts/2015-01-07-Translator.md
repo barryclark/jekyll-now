@@ -5,7 +5,7 @@ category: app
 title: Translator
 generic: Translator
 description: 'Translates a text side-by-side.'
-license:
+license: GPL v3
 
 authors: 
   - name: Grabli66

@@ -5,7 +5,7 @@ category: art
 title: elementary+
 generic: Icon set
 description: An addition to the default icon theme, containing icons for several third party applications that resemble the elementary style.
-license:
+license: TBD
 
 authors: 
   - name: Manuel Kehl
@@ -17,8 +17,4 @@ links:
   - type: Google+
     name: Google+ (personal)
     url: +ManuelKehl319/posts
-
-repository:
-repository-unstable:
-package:
 ---

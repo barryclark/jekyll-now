@@ -12,10 +12,15 @@ authors:
   - name: Lars Berscheid
     url: "https://launchpad.net/~siasola"
 
-web:
-github:
-launchpad: 'elementarycalculator'
-googleplus:
+links:
+  - type: Web
+    url: 
+  - type: Google+
+    url: 
+  - type: GitHub
+    url: 
+  - type: Launchpad
+    url: elementarycalculator
 
 repository: 'ppa:siasola/ppa'
 package: 'elementary-calculator'

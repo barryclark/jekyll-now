@@ -6,15 +6,14 @@ title: System Monitor
 title_obvious: true
 generic: System monitor
 description: 
-license:
+license: TBD
 
 authors: 
   - name: Michael Starkweather
     url: "https://plus.google.com/+MichaelStarkweather/posts"
 
 links:
-
-repository:
-repository-unstable:
-package:
+  - type: Launchpad
+    name: Launchpad (Code)
+    url: https://code.launchpad.net/~mpstark/+junk/system-monitor
 ---

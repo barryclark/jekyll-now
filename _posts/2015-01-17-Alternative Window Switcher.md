@@ -15,10 +15,6 @@ links:
   - type: GitHub
     url: tom95/gala-alternate-alt-tab
 
-repository:
-repository-unstable:
-package:
-
 tags:
   - Gala
 ---

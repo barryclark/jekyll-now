@@ -17,8 +17,4 @@ links:
     url: 'http://dysonsimmons.com/indicator-workspaces/'
   - type: GitHub
     url: dyson/indicator-workspaces
-
-repository:
-repository-unstable:
-package:
 ---
