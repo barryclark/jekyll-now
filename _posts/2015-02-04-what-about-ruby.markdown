@@ -10,13 +10,13 @@ tags : [ruby, learning]
 
 For the past few weeks I have been playing around with Ruby, a totally new language for me. I thought that it would be a good idea to list the most important aspects and useful information that I am learning about it and share it with you:
 
-1. [Interpreted language](http://en.wikipedia.org/wiki/Interpreted_language). A program doesn't need to be compiled previously into machine-language instructions.
+[Interpreted language](http://en.wikipedia.org/wiki/Interpreted_language). A program doesn't need to be compiled previously into machine-language instructions.
 
-2. [Object-oriented language](http://en.wikipedia.org/wiki/Object-oriented_programming). Everything is an [object](http://www.ruby-doc.org/core-2.2.0/Object.html) and every operation is a method call on some object. It is class-based, meaning that objects are instances of classes, which determines their type.
+[Object-oriented language](http://en.wikipedia.org/wiki/Object-oriented_programming). Everything is an [object](http://www.ruby-doc.org/core-2.2.0/Object.html) and every operation is a method call on some object. It is class-based, meaning that objects are instances of classes, which determines their type.
 
-3. [Dynamic language](http://en.wikipedia.org/wiki/Dynamic_programming_language). It executes at _runtime_ common programming behaviours that static programming languages perform during _compilation_. These behaviours could include extension of the program, by adding new code, by extending objects and definitions, or by modifying the type system ([metaprogramming](http://en.wikipedia.org/wiki/Metaprogramming)). It also can ask objects about themselves ([reflection](http://en.wikipedia.org/wiki/Reflection_(computer_programming))).
+[Dynamic language](http://en.wikipedia.org/wiki/Dynamic_programming_language). It executes at _runtime_ common programming behaviours that static programming languages perform during _compilation_. These behaviours could include extension of the program, by adding new code, by extending objects and definitions, or by modifying the type system ([metaprogramming](http://en.wikipedia.org/wiki/Metaprogramming)). It also can ask objects about themselves ([reflection](http://en.wikipedia.org/wiki/Reflection_(computer_programming))).
 
-4. [Dynamically typed](http://rubylearning.com/satishtalim/duck_typing.html) aka _duck typing_, objects have types but variables don't.
+[Dynamically typed](http://rubylearning.com/satishtalim/duck_typing.html) aka _duck typing_, objects have types but variables don't.
 
 
 #### Naming Conventions
