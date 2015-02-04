@@ -6,7 +6,7 @@ permalink: /biofactory/class/1-incubator/incubator-materials/
 
 > PLEASE NOTE: as this is the first Bill of Materials of the Academy take note of the following:
 
-1. The components on this list are the bare minimum you need to build an incubator and compatible with the incubator [3D design](/biofactory/class/1/Incubator-Sketchup.skp), [Fritzing wiring](/biofactory/class/1/Incubator-Fritzing.fzz) and [Arduino code](/biofactory/class/1/Incubator-Arduino.txt). In case you feel welcome to do so, please feel free to make adjustments to this list and change the design accordingly. During the Academy we will keep track of your forks on your own documentation site.
+1. The components on this list are the bare minimum you need to build an incubator and compatible with the incubator [3D design](/biofactory/class/1/Incubator-Sketchup.skp), [Fritzing wiring](/biofactory/class/1/Incubator-Fritzing.fzz) and [Arduino code](/biofactory/class/1/Incubator-Arduino.txt). Please feel free to deviate from this list and change the design accordingly. Once the classes started we will keep track of your hacks on your own documentation site.
 2. The suppliers all ship to addresses in The Netherlands, and some also ship abroad. Alternative sources are listed on the [Suppliers](/suppliers/) page. Whenever you find a suitable alternative, please post it in the comments at the bottom of the page.
 3. Check the stock level and shipping times of each component before ordering. If it takes more than two weeks, look for an alternative.
 4. Some suppliers, such as Farnell, only ship to businesses by default. Contact their service department to order as an individual. 
