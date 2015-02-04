@@ -1,5 +1,8 @@
-# Rubymotion about android adapter usage 
-
+---
+layout: post
+title: Rubymotion about android adapter usage
+---
+ 
 rubymotion关于adapter的用法（该文为转载）
 
 ### ArrayAdapter使用
