@@ -5,7 +5,7 @@ permalink: /biofactory/annex/cultivation-media/salina-medium/
 categories: cultivation-media
 ---
 
-## D. Saline Medium (DSM)
+## D. Salina Medium (DSM)
 
 |Compound| Amount | Unit |
 |:-------|-------:|-----:|
