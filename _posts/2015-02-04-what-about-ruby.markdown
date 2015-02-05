@@ -187,11 +187,71 @@ Regexp.new('(.*)$', Regexp::IGNORECASE)
 # If not match, value is false
 # If match, value is non-false,
 # and $1...$n capture parenthesized groups
-# ($1 == 'miriam', $2 == 'gmail')
+# ($1 == 'miriam.tocino', $2 == 'gmail')
 
 {% endhighlight %}
 
 
+#### Classes & Inheritances
+
+This is a good example to summarise the definition of a class taken from [this course](https://courses.edx.org/courses/BerkeleyX/CS-CS169.1x/3T2014/) I followed and that I totally recommend if you are starting out with the notion of services:
+
+{% highlight ruby %}
+class SavingsAccount < Account  # inheritance
+  # constructor used when SavingsAccount.new(...) called
+  def initialize(balance=0)     # optional argument
+    @balance = balance          # note instance vs local variable
+  end
+
+  def balance     # instance method
+    @balance      # instance var: visible only to this object
+  end
+
+  def balance=(new_amount)      # note method name: like setter
+    @balance = new_amount
+  end
+
+  # An instance method
+  def deposit(amount)
+    @balance += amount
+  end
+
+  @@bank_name = "MyBank.com"  # class (static) variable
+
+  # A class method
+  def self.bank_name    # note difference in method def
+    @@bank_name
+  end
+  # OR
+  def SavingsAccount.bank_name : @@bank_name ; end
+
+end
+{% endhighlight %}
 
 
-Am I missing something that you think I should be mentioning in this introduction? Please take the time to add a comment and I will get back to you ☺
+#### Attributes Readers & Accessors
+
+In Ruby there is a shortcut to get and set instance variables. It is important to note that **attr_accessor** is NOT part of the language, but a plain method that uses _metaprogramming_ to create getters and setters for object attributes on the fly.
+
+{% highlight ruby %}
+class SavingsAccount < Account
+  def initialize(balance=0)
+    @balance = balance
+  end
+
+  attr_accessor :balance  # allows instance var to be read and set
+  # OR
+  attr_reader :balance    # allows instance var to be read
+  attr_writer :balance    # allows instance var to be set
+#  def balance
+#    @balance
+#  end
+
+#  def balance=(new_amount)
+#    @balance = new_amount
+#  end
+end
+{% endhighlight %}
+
+
+Am I missing something that you think I should be mentioning in this quick introduction? Please take the time to add a comment and I will get back to you ☺
