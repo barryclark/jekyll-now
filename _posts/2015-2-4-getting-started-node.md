@@ -121,9 +121,7 @@ node index.js
 
 Again, if you named your entry point something other than `index.js`, now is the time to adjust. Once you see the console log we added above display, you know your app is ready to start handling requests. Open up your favorite web browser, and navigate to `localhost:3000`. If you did everything right, you should simply see:
 
-{% highlight %}
 Hello World!
-{% endhighlight %}
 
 That’s it for our first look at Node.js and Express. Next time we’ll dig deeper by adding more NPM modules, serving templated HTML, persisting data to a database, and much much more!
 
