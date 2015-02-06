@@ -12,7 +12,7 @@ This is the first in a series of posts that explain, at length, how to build a f
 
 ## What is Node?
 
-Node.js is an open-source server-side I/O framework built on Chrome’s V8 JavaScript engine. It provides an event-driven asynchronous framework for developing highly scalable web applications quickly. What this means for us is basically just that node is a JavaScript framework for building custom web servers. These web servers can be as simple or as complex as a given project needs to be.
+Node.js is an open-source server-side I/O framework built on Chrome’s V8 JavaScript engine. It provides an event-driven asynchronous framework ideal for developing highly scalable web applications quickly. What this means for us is basically just that node is a JavaScript framework primarily used for building custom web servers. These web servers can be as simple or as complex as a given project needs to be. You can do **many** other things with Node, but this is the use case that we will cover. 
 
 Because of the open source nature of node.js, the use of other open source packages to build enhanced functionality on top of the framework makes rapidly developing a full-featured application a breeze. Enter NPM.
 
@@ -71,9 +71,8 @@ Inside your project’s root folder, create a new file called `index.js`. This c
 Inside your new file, add the following two lines:
 
 {% highlight javascript linenos %}
-	var Express = require(‘express’);
-
-	var app = new Express();
+var Express = require('express'),
+    app = new Express();
 {% endhighlight %}
 
 Node applications rely on the require syntax for modularity, allowing developers to create modular JavaScript files that are all linked from a single entry point (`index.js`). Node applications also know to look in the `node_modules` folder by default, and will only include relatively pathed requires if no corresponding `node_module` is found.
@@ -81,7 +80,7 @@ Node applications rely on the require syntax for modularity, allowing developers
 Because the Express module ultimately exports a JavaScript class definition, we’re going to capture that in a variable `Express` and then instantiate a new instance of that object as our `app` variable. The above code could be condensed to one line like so:
 
 {% highlight javascript linenos %}
-var app = new (require(‘express’))();
+var app = new (require('express'))();
 {% endhighlight %}
 
 ...but we won’t do that, because that looks gross.
@@ -104,15 +103,15 @@ var server = app.listen(3000, function(){
 
 **Note:** When using `console.log` from within a node project, contents are logged to the system running the node process. Locally, this will probably be your terminal application. When you are ready to host your app in the cloud, you may need to look into professional logging services.
 
-	Now your app knows to listen for requests, but we haven’t told it what to do with any of those requests yet. Go back to your `index.js` file, and make a few lines of space before `app.listen`. Write the following code:
+Now your app knows to listen for requests, but we haven’t told it what to do with any of those requests yet. Go back to your `index.js` file, and make a few lines of space before `app.listen`. Write the following code:
 
 {% highlight javascript linenos %}
-app.get(‘/’, function(req, res){
+app.get('/', function(req, res){
 	res.send("Hello World!");
 });
 {% endhighlight %}
 
-	This code tells our application how to respond to a `GET` request to the root (`/`) of our site. When our application receives a GET request to the root path, an anonymous callback function is called with the parameters `req` and `res`. These represent HTTP `Request` and `Response` objects respectively. We can use the `req` object to collect data from the request and respond accordingly. We’ll use the `res` object (and its predefined functionality) to define responses to be sent to the client that made the request.
+This code tells our application how to respond to a `GET` request to the root (`/`) of our site. When our application receives a GET request to the root path, an anonymous callback function is called with the parameters `req` and `res`. These represent HTTP `Request` and `Response` objects respectively. We can use the `req` object to collect data from the request and respond accordingly. We’ll use the `res` object (and its predefined functionality) to define responses to be sent to the client that made the request.
 
 In the simple example above, when a client makes a request to the root path of our application, we will simply return the text "Hello World!". Let’s check to make sure this works. Go back to your terminal, and from the root of your application type:
 
@@ -122,7 +121,9 @@ node index.js
 
 Again, if you named your entry point something other than `index.js`, now is the time to adjust. Once you see the console log we added above display, you know your app is ready to start handling requests. Open up your favorite web browser, and navigate to `localhost:3000`. If you did everything right, you should simply see:
 
+{% highlight %}
 Hello World!
+{% endhighlight %}
 
-	That’s it for our first look at Node.js and Express. Next time we’ll dig deeper by adding more NPM modules, serving templated HTML, persisting data to a database, and much much more!
+That’s it for our first look at Node.js and Express. Next time we’ll dig deeper by adding more NPM modules, serving templated HTML, persisting data to a database, and much much more!
 
