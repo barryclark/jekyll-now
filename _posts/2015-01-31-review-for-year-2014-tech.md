@@ -1,7 +1,7 @@
 ---
 published: true
 layout: post
-title:  "(2011-)2014年年终总结：技术篇"
+title:  "(2011-)2014 年终总结：技术篇"
 date:   2015-01-31 21:07
 categories: 工作 总结 技术 推荐系统
 ---
