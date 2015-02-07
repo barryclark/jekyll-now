@@ -13,13 +13,13 @@ google_analytics:
 animated:           false
 show_related_posts: false
 show_post_footers:  false
+show_social_icons:  false
 
 # Disqus post comments
 # (leave blank to disable Disqus)
 disqus_shortname:
 
 # Social icons
-show_social_icons: false
 github_username:
 stackoverflow_id:
 twitter_username:
