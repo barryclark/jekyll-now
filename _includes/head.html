@@ -29,6 +29,15 @@
     <meta property="og:url" content="{{ site.url }}{{ page.url }}">
     <meta property="og:site_name" content="{{ site.title | xml_escape }}">
 
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    {% if site.twitter_username %}
+        <meta name="twitter:site" content="@{{ site.twitter_username }}" />
+    {% endif %}
+    <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+    <meta name="twitter:description" content="{% if page.summary %}{{ page.summary }}{% else %}{{ site.description }}{% endif %}" />
+    <meta name="twitter:url" content="{{ site.url }}{{ page.url }}" />
+
     <!-- Icons -->
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
