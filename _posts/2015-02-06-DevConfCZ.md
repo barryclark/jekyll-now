@@ -3,8 +3,8 @@ layout: post
 title: DevConfCZ
 ---
 
-&#35DevConfCZ
-=============
+#DevConfCZ
+==========
 
 ## Intro
 
