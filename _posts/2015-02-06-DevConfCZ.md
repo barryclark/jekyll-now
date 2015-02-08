@@ -1,7 +1,9 @@
 ---
 layout: post
-title: #DevConfCZ
+title: &#35DevConfCZ
 ---
+
+# &#35DevConfCZ
 
 ## Intro
 
@@ -37,6 +39,7 @@ The Go talks I attended were also fascinating, and I will look at Go a bit more 
 Most of the talks I attended on Saturday were QA themed. The PerfCake talk was a great start to the day, I bookmarked that project and will take a look at it next week. Next up were interesting talks on Arquillian Spacelift and a few other parts of Arquillian (Osmium and Droidium). Tadeas Kriz also created a physical "robot" for functional testing mobile applications.
 
 ![Tapster](../images/tapster.jpg)
+
 Tapster. Photo by: [Jiri Folta](https://twitter.com/JiriFolta/status/564031697147400192)
 
 After lunch, Lukas Krejci talked about his project Revapi -- if you manage a library/public API, check it out. Tomas Hradec presented Ceylon, which seems valuable for the future, especially thanks to the integration of Java libraries and very nice syntactical features.
@@ -44,6 +47,7 @@ After lunch, Lukas Krejci talked about his project Revapi -- if you manage a lib
 And of course, the highlight of all the talks I attented at DevConf was the OptaPlanner talk by Lukas Petrovicky. Too bad I had to leave early to catch the train home because I was really enjoying the details of OptaPlanner's participation in the ICON scheduling competition. I'm hoping to catch the rest of the talk on YouTube, as most of the session were live-streamed and recorded. OptaPlanner has taken part in Google Summer of Code for the last few years and because I like the project very much, I am hoping to participate this year (I'm finally elligible!).
 
 ![OptaPlanner](../images/optaplanner.jpg)
+
 OptaPlanner talk by Lukas Petrovicky. Photo by: [me](https://twitter.com/oskopek/status/564054797226356736)
 
 Here you can see a complete list of the sessions:
