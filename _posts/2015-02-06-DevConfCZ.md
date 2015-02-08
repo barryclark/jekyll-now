@@ -1,9 +1,10 @@
 ---
 layout: post
-title: &#35DevConfCZ
+title: DevConfCZ
 ---
 
-# &#35DevConfCZ
+&#35DevConfCZ
+=============
 
 ## Intro
 
