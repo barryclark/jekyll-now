@@ -2,7 +2,7 @@
 layout: page
 title: Categories
 header: Posts By Category
-group: navigation
+#group: navigation
 ---
 {% include JB/setup %}
 
