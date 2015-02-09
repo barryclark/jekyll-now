@@ -7,8 +7,8 @@ group: navigation
 {% include JB/setup %}
 
 
-[UMD]!()
-#Past Astronomy Classes
+#Past Classes
+![UMD]({{site.url}}images/UMDbanner.jpg)
 
 * #####**ASTR100: Introduction to Astronomy**
 <p>University of Maryland College Park - Spring 2010</p>
