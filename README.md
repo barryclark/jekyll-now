@@ -1,2 +1,1 @@
-# eringrand.github.io
-Homepage 
+# This is Erin's website

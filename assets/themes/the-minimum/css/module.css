@@ -1,0 +1,38 @@
+/*
+Base .mod module from http://j.mp/svs81k
+
+HTML should look like this and .bd is required:
+	<div class="mod">
+		<div class="inner">
+			<div class="hd"></div>
+			<div class="bd"></div>
+			<div class="ft"></div>
+		</div><!-- inner -->
+	</div><!-- mod -->
+
+No styleguide reference.
+*/
+
+.mod .inner { position:relative; }
+.mod .bd, .mod .ft, .mod .hd { overflow:hidden; *overflow:visible; zoom:1; }
+
+/*
+.media module from http://j.mp/tQCTa8
+Since .media uses overflow: hidden, box-shadow needs padding to render correctly.
+Using dropdown or pop over should be problematic. Anything try to go outside of this module box should have problem.
+HTML should look like this and .media-left or .media-right and .bd is required:
+
+	<div class="media">
+		<a href="#" class="media-left"><img src="#" alt=""></a>
+		<a href="#" class="media-right"><img src="#" alt=""></a>
+		<div class="bd"></div>
+	</div><!-- media -->
+
+No styleguide reference.
+*/
+
+.media { overflow:hidden; *overflow:visible; zoom:1; }
+.media .media-left { float:left; margin-right: 14px; }
+.media .img img { display:block; }
+.media .media-right { float:right; margin-left: 14px; }
+.media .bd, .media .ft, .media .hd { overflow:hidden; *overflow:visible; zoom:1; }

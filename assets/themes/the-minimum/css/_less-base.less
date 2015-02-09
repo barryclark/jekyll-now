@@ -1,0 +1,213 @@
+/*
+Frameless			<http://framelessgrid.com/>
+by Joni Korpi 		<http://jonikorpi.com/>
+licensed under CC0	<http://creativecommons.org/publicdomain/zero/1.0/>
+
+No styleguide reference.
+*/
+
+@font-size: 16;			// Your base font-size in pixels
+@line-height: 26;		// Your base line-height in pixels
+@em: @font-size*1em;	// Shorthand for outputting ems, e.g. "12/@em"
+
+@column: 60;	// The column-width of your grid in pixels
+@gutter: 30;	// The gutter-width of your grid in pixels
+
+// Column-widths in variables, in ems
+
+ @1cols: ( 1 * (@column + @gutter) - @gutter) / @em; @1col: @1cols; // 60px
+ @2cols: ( 2 * (@column + @gutter) - @gutter) / @em; // 150px
+ @3cols: ( 3 * (@column + @gutter) - @gutter) / @em; // 240px
+ @4cols: ( 4 * (@column + @gutter) - @gutter) / @em; // 330px
+ @5cols: ( 5 * (@column + @gutter) - @gutter) / @em; // 420px
+ @6cols: ( 6 * (@column + @gutter) - @gutter) / @em; // 510px
+ @7cols: ( 7 * (@column + @gutter) - @gutter) / @em; // 600px
+ @8cols: ( 8 * (@column + @gutter) - @gutter) / @em; // 690px
+ @9cols: ( 9 * (@column + @gutter) - @gutter) / @em; // 780px
+@10cols: (10 * (@column + @gutter) - @gutter) / @em; // 870px
+@11cols: (11 * (@column + @gutter) - @gutter) / @em; // 960px
+@12cols: (12 * (@column + @gutter) - @gutter) / @em; // 1050px
+@13cols: (13 * (@column + @gutter) - @gutter) / @em; // 1140px
+@14cols: (14 * (@column + @gutter) - @gutter) / @em; // 1230px 
+@15cols: (15 * (@column + @gutter) - @gutter) / @em; // 1320px
+@16cols: (16 * (@column + @gutter) - @gutter) / @em; // 1410px
+
+// Column-widths in a function, in ems
+
+.width (@cols:1) { width: (@cols * (@column + @gutter) - @gutter) / @em; }
+
+/*
+Font families
+
+No styleguide reference.
+*/
+
+@font-stack: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, "MS PGothic", Osaka, Sans-Serif;
+@webfont: junctionregularRegular, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, "MS PGothic", Osaka, Sans-Serif;
+
+/*
+Base font size should be larger than 16px.
+Calculation should be done via  http://j.mp/rNg5uA
+
+No styleguide reference.
+*/
+
+body {
+	font-family: @font-stack;
+	font-size: @font-size / 16*1em;
+	line-height: @line-height / @em;
+}
+
+/*
+Font size setting
+Using Golden ratio section (Caliculated via http://j.mp/sB6oxM):
+109.657	6.854	843.515 * h1
+82.241	5.14	632.623
+67.773	4.236	521.331
+50.829	3.177	390.992
+41.887	2.618	322.208 * h2
+31.415	1.963	241.654
+25.888	1.618	199.138 * h3
+19.416	1.214	149.354 * h4
+16.000	1	    123.077 * Base font size
+12.000	0.75	92.308  * Minimum font size
+Vertical Rhythm is caluculated via http://j.mp/sUvKuN
+
+No styleguide reference.
+*/
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: @webfont;
+	font-weight: bold;
+}
+
+h1, .h1 {
+	font-size: 42px;
+	line-height: 52px;
+	margin-top: 52px;
+	margin-bottom: 26px;
+	letter-spacing: -1px;
+}
+h2, .h2 {
+	font-size: 42px;
+	line-height: 52px;
+	margin-top: 52px;
+	margin-bottom: 26px;
+	letter-spacing: -1px;
+}
+h3, .h3 {
+	font-size: 26px;
+	line-height: 26px;
+	margin-top: 26px;
+	margin-bottom: 26px;
+}
+h4, .h4 {
+	font-size: 20px;
+	line-height: 26px;
+	margin-top: 26px;
+	margin-bottom: 26px;
+}
+p, ul, ol, dl, img {
+	margin-top: 0;
+	margin-bottom: @line-height / @em;
+}
+small, .small, aside { font-size: 0.75 * (@font-size / @em); }
+.font-size-default { font-size: @font-size / @em; }
+
+blockquote { font-weight: bold; }
+blockquote cite { font-weight: normal; }
+strong { font-weight: bold; }
+em { font-weight: bold; }
+
+/*
+Color schemes
+
+No styleguide reference.
+*/
+
+/* solarized - http://j.mp/s9Xuw9
+
+@base03:    #002b36;
+@base02:    #073642;
+@base01:    #586e75;
+@base00:    #657b83;
+@base0:     #839496;
+@base1:     #93a1a1;
+@base2:     #eee8d5;
+@base3:     #fdf6e3;
+@yellow:    #b58900;
+@orange:    #cb4b16;
+@red:       #dc322f;
+// @magenta:   #d33682;
+@violet:    #6c71c4;
+@blue:      #268bd2;
+@cyan:      #2aa198;
+@green:     #859900;
+
+*/
+
+// Tomorrow Night - http://j.mp/wvO4U4
+
+@base03:    #2d2d2d;
+@base02:    #393939;
+@base01:    #515151;
+@base0:     #cccccc;
+@subtle:    #999999;
+@yellow:    #ffcc66;
+@orange:    #f99157;
+@red:       #f2777a;
+@violet:    #cc99cc;
+@blue:      #6699cc;
+@cyan:      #66cccc;
+@green:     #99cc99;
+
+// Texture
+
+@noise-100-90-5: "/assets/themes/the-minimum/skin/100-90-5-monochrome.png"; // http://noisepng.com/
+@cross-hair: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAR0lEQVQYGYVOQQoAIAizHuJXpafqR4wFCw9Ggji2OSbubpkp3UI7Qmcidz9JIKniAYITEQasqovcJHhelquxFf9LVjfTeKFtWPOYLQ+xHqUAAAAASUVORK5CYII="; // http://ptrn.it/AmYV5d
+
+/* Junction Font
+ * http://www.theleagueofmoveabletype.com/
+ * Using for Logo and headers
+*/
+
+@font-face {
+    font-family: 'junctionregularRegular';
+    src: url('/assets/themes/the-minimum/font/Junction-webfont.eot');
+    src: url('/assets/themes/the-minimum/font/Junction-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/themes/the-minimum/font/Junction-webfont.woff') format('woff'),
+         url('/assets/themes/the-minimum/font/Junction-webfont.ttf') format('truetype'),
+         url('/assets/themes/the-minimum/font/Junction-webfont.svg#junctionregularRegular') format('svg');
+    font-weight: normal !important;
+    font-style: normal;
+}
+
+/*
+LESS helper
+*/
+
+/*
+List modules
+.list-linear  - list line up horizontally
+
+No styleguide reference.
+*/
+
+.list-linear {
+	letter-spacing: -0.31em;
+	*letter-spacing: normal;
+	word-spacing: -0.43em;
+	list-style: none;
+	padding-left: 0;
+	li {
+		display: inline-block;
+		*display: inline;
+		zoom: 1;
+		line-height: normal;
+		letter-spacing: normal;
+		margin-right: 16px;
+		word-spacing: normal;
+		vertical-align: middle;
+		&:last-child { margin-right: 0; }
+	}
+}
