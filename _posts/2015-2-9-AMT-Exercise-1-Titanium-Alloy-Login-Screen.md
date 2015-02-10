@@ -1,6 +1,6 @@
 ---
 layout: post
-title: WebDev2 AMT Exercise 1 Titanium ALloy Login Screen
+title: WebDev2 AMT Exercise 1 - Titanium ALloy Login Screen
 tags: amt, android, ios, titanium, alloy
 ---
 
