@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  ”Starting next week”
+title:  Starting next week
 date:   2015-02-10 17:16:01
 categories: biofactory update 2015-2
 ---
