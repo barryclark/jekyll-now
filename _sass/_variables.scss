@@ -68,6 +68,7 @@ $button-font-weight: bold !default;
 $button-line-height: 1.125rem !default;
 $button-padding-y: .5rem !default;
 $button-padding-x: 1rem !default;
+$button-font-family: $heading-font-family;
 
 // Forms
 $form-field-font-size: 1rem !default;
@@ -79,6 +80,12 @@ $form-field-padding-x: .5rem !default;
 $border-color: $light-gray !default;
 $border-width: 1px !default;
 $border-radius: 3px !default;
+
+// Forms
+$form-field-font-size: 1rem;
+$form-field-height: 2.25rem;
+$form-field-padding-y: .5rem;
+$form-field-padding-x: .5rem;
 
 // Footer
 $footer-border-top: thin solid #f3f3f3;

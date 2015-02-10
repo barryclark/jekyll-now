@@ -2,6 +2,7 @@
 
 button,
 .button {
+  font-family: $button-font-family;
   font-size: $button-font-size;
   font-weight: $bold-font-weight;
   text-decoration: none;
