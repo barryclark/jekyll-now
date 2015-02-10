@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Microscope Materials
-permalink: /biofactory/class/2-microscope/microscope-materials/
+permalink: /biofactory/class/2-microscope/webcam-microscope-materials/
 ---
 
 The material list is based on the [Requirements list](/biofactory/class/2-microscope/requirements/)
