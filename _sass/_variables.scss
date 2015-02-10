@@ -36,6 +36,12 @@ $red: #f95020 !default;
 $green: #00cf26 !default;
 $yellow: #efcc00 !default;
 $orange: #ffcc22 !default;
+$purple: #f92080 !default;
+$dark-blue: #00369f !default;
+$dark-green: #00ab37 !default;
+$dark-green: #009f06 !default;
+$light-pink: #ffdddd !default;
+$light-green: #ddffdd !default;
 $dark-gray: #333 !default;
 $mid-gray: #777 !default;
 $light-gray: #ccc !default;
@@ -48,9 +54,6 @@ $darken-4: rgba(#000,.5) !default;
 // Links
 $link-color: $blue;
 $link-hover-color: darken($blue, 40%);
-
-// Code
-$pre-border-radius: 0;
 
 // Breakpoints
 $breakpoint-md: '(min-width: 52em)';
@@ -86,6 +89,26 @@ $form-field-font-size: 1rem;
 $form-field-height: 2.25rem;
 $form-field-padding-y: .5rem;
 $form-field-padding-x: .5rem;
+
+// Code
+$pre-border-radius: 0;
+$pre-background-color: #fafafa;
+$hljs-comment: $mid-gray;
+$hljs-keyword: $dark-gray;
+$hljs-number: $dark-green;
+$hljs-string: $red;
+$hljs-title: $red;
+$hljs-type: $dark-blue;
+$hljs-tag: $dark-blue;
+$hljs-attribute: $dark-green;
+$hljs-regexp: $dark-green;
+$hljs-symbol: $purple;
+$hljs-built-in: $dark-blue;
+$hljs-preprocessor: $mid-gray;
+$hljs-deletion: $light-pink;
+$hljs-addition: $light-green;
+$hljs-change: $dark-blue;
+$hljs-chunk: $light-gray;
 
 // Footer
 $footer-border-top: thin solid #f3f3f3;

@@ -6,7 +6,7 @@ pre code {
 
 pre,
 code {
-  font-family: Menlo, Monaco, "Courier New", monospace
+  font-family: $monospace-font-family;
 }
 
 code {
@@ -19,6 +19,7 @@ pre {
   line-height: 1.11;
   overflow-x: scroll;
   margin-bottom: 0.88em;
+  background-color: $pre-background-color;
 }
 
 .highlight .p {
