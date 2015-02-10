@@ -4,13 +4,13 @@ title: Microscope (Class 2)
 permalink: /biofactory/class/2-microscope/
 ---
 
-> NOTE: these instructions are still under construction. The designs and BoM might be subject to change.
-
 ## Synopsys
 
 We will make our own microscope to take a closer look at how last week’s
 cultures have grown. The subject of this class is microbio physiology and
 open source publishing. 
+
+> This time you may choose what type of device you like to build. The Microscope Webcam Hack is relatively simple, compared to the full Microscope Design.
 
 ## Schedule
 
@@ -63,6 +63,7 @@ Publish your microscopy video along with a Creative Commons license on your Gith
   * [Microbehunter](http://www.microbehunter.com/)
   * [Yahoo Microscopy Group](https://groups.yahoo.com/neo/groups/Microscope/info)
 * DIY Designs
+  * [3D printable microscope](http://www.thingiverse.com/thing:77450)
   * [OneDollar Compound Microscope](http://www.funsci.com/fun3_en/ucomp1/ucomp1.htm)
   * [Hackteria Microscopy](http://hackteria.org/wiki/index.php/DIY_microscopy)
   * [DIYBio Singapore](https://diybiosingapore.wordpress.com/2014/06/22/diy-webcam-microscope-sg-style-2/)
