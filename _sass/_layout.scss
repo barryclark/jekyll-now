@@ -1,0 +1,495 @@
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	background-color: $body-color;
+	border-top: 5px solid $black;
+}
+
+
+// Top Navigation
+// --------------------------------------------------
+
+.navigation-wrapper {
+	text-align: center;
+	@include clearfix;
+	ul {
+		display: inline-block;
+		width: 100%;
+		vertical-align: top;
+		margin: 0 0 50px;
+		padding: 4px 20px;
+		background-color: $black;
+		@include media($medium) {
+			width: auto;
+			@include rounded(0 0 10px 10px);
+		}
+		@include clearfix;
+	}
+	li {
+		display: block;
+		float: left;
+		list-style: none;
+		text-align: center;
+		@include font-size(24,no);
+		text-transform: uppercase;
+		color: $white;
+		@include media($medium) {
+			@include font-size(14,no);
+		}
+		a:hover {
+			@include box-shadow($shadow: inset 0 0 1px $white);
+		}
+	}
+	a {
+		display: block;
+		margin-bottom: 10px;
+		padding: 12px 20px;
+		@include media($medium) {
+			margin-bottom: 0;
+			padding: 6px 10px;
+		}
+		color: $white;
+		@include rounded(4px);
+		&:hover {
+			background-color: lighten($black, 10);
+		}
+	}
+}
+// Responsive nav toggle stuff
+#site-nav {
+	display: none;
+	z-index: 5;
+	@include media($medium) {
+		-webkit-animation-duration: 1s;
+		-moz-animation-duration: 1s;
+		-o-animation-duration: 1s;
+		animation-duration: 1s;
+	}
+	&.closed {
+		@include media($medium) {
+			display: block;
+		}
+	}
+	&.opened {
+		display: block;
+		max-height: 100%;
+		li {
+			float: none;
+			@include media($medium) {
+				float: left;
+			}
+		}
+	}
+}
+.no-js #site-nav {
+	display: block;
+}	
+#nav-toggle { 
+	z-index: 20;
+	display: block;
+	vertical-align: top;
+	margin: 0;
+	padding: 6px 20px;
+	background-color: $black;
+	height: 44px;
+	@include rounded(0);
+	@include media($medium) {
+		display: none;
+	}
+}
+// menu overlay
+.menu-screen {
+	@include position(fixed, 0px 0px 0px 0px);
+	@include transition;
+	background: $black;
+	opacity: 0;
+	visibility: hidden;
+	z-index: 10;
+	&.is-visible {
+		opacity: 1;
+		visibility: visible;
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}
+
+
+// Masthead
+// --------------------------------------------------
+
+.masthead {
+	margin-top: 40px;
+	@include clearfix;
+	@include media($medium) {
+		margin-top: 0;
+	}
+	.wrap {
+		text-align: center;
+		max-width: em(440);
+		padding-right: 20px;
+		padding-left: 20px;
+		@include media($medium) {
+			max-width: em(728);
+			padding-right: 60px;
+			padding-left: 60px;
+		}
+		@include media($large) {
+			max-width: em(960);
+		}
+	}
+}
+.site-logo {
+	img {
+		width: 100px;
+		height: 100px;
+		@include animation-duration(1s);
+	    @include animation-delay(.05s);
+	    border: 4px solid $white;
+	    @include rounded(100px);
+		@include media($medium) {
+			width: 150px;
+			height: 150px;
+			@include rounded(150px);
+		}
+		@include media($large) {
+			width: 200px;
+			height: 200px;
+			@include rounded(200px);
+		}
+	}
+}
+.site-title {
+	margin-bottom: 0;
+	@include animation-duration(1s);
+    @include animation-delay(.75s);
+	a { 
+		color: $black; 
+	}
+}
+.site-description {
+	margin-top: 0;
+	font-family: $alt-font;
+	@include font-size(16);
+	font-weight: 400;
+	font-style: italic;
+	@include animation-duration(1s);
+    @include animation-delay(1s);
+	@include media($medium) {
+		@include font-size(20);
+	}
+}
+
+
+// Main
+// --------------------------------------------------
+
+#main {
+	@include clearfix;
+}
+.entry,
+.hentry {
+	@include clearfix;
+	border-bottom: 1px solid lighten($black,80);
+	border-bottom: 1px solid rgba($black,.10);
+}
+.entry-feature-image {
+	margin: 20px 0 0;
+	width: 100%;
+	@include media($medium) {
+		margin-top: -75px;
+	}
+	@include media($large) {
+		margin-top: -145px;
+	}
+}
+.entry-header {
+	@include fill-parent;
+}
+.entry-tags {
+	display: block;
+	margin-top: 2em;
+	text-transform: uppercase;
+	@include font-size(16);
+	font-weight: 600;
+	a { 
+		color: $text-color; 
+	}
+}
+span + .entry-title {
+	margin-top: 0;
+}
+.entry-title {
+	font-family: $alt-font;
+	font-style: italic;
+	@include font-size(36,yes,36);
+	font-weight: 400;
+	line-height: 1;
+	letter-spacing: -3px;
+	a {
+		color: $black;
+		text-decoration: underline;
+	}
+	@include media($medium) {
+		@include font-size(52,yes,54);
+	}
+	@include media($large) {
+		@include font-size(68,yes,72);
+	}
+}
+.entry-wrapper {
+	@include outer-container;
+	margin-top: 0;
+	margin-bottom: 3em;
+	padding-right: $gutter;
+	padding-left: $gutter;
+}
+.entry-meta {
+	@include span-columns(12);
+	text-transform: uppercase;
+	@include font-size(14);
+	a { 
+		color: $text-color; 
+	}
+	@include media($large) {
+		@include span-columns(2.5);
+	}
+	& > span {
+		padding: 0 20px 10px 0;
+		display: inline-block;
+		@include media($large) {
+			display: block;
+			padding: 8px 0;
+			border-bottom: 1px solid lighten($black,80);
+			border-bottom: 1px solid rgba($black,.10);
+		}
+	}
+}
+.bio-photo {
+	display: none;
+	@include media($large) {
+		display: block;
+		width: 150px;
+		height: 150px;
+		margin-bottom: 10px;
+		@include rounded(150px);
+		@include clearfix;
+	}
+}
+.entry-content {
+	@include span-columns(12);
+	p:first-child {
+		margin-top: 0;
+	}
+	@include media($large) {
+		@include span-columns(9.5);
+	}
+	p > a,
+	li > a {
+		border-bottom: 1px dotted lighten($link-color, 50);
+		&:hover {
+			border-bottom-style: solid;
+		}
+	}
+}
+.post-list {
+	li > a {
+		border-bottom-width: 0;
+	}
+}
+// Disqus Comments
+#disqus_thread {
+	margin-top: 2em;
+}
+// Pagination
+.pagination {
+	margin-top: 2em;
+	text-align: center;
+}
+// Page layout
+#home,
+#page {
+	.entry-wrapper {
+		max-width: em(760);
+	}
+	.entry-title {
+		text-align: center;
+		max-width: 100%;
+	}
+	.entry-content {
+		@include span-columns(12);
+	}
+}
+// Post index layout
+.post-list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	li {
+		padding: 8px 0;
+		border-bottom: 1px solid lighten($black,80);
+		border-bottom: 1px solid rgba($black,.10);
+		@include font-size(18,no);
+		@include clearfix;
+	}
+	a > span {
+		float: right;
+	}
+	.entry-date {
+		@include font-size(14,no);
+		text-transform: uppercase;
+		display: none;
+		@include media($medium) {
+			display: inline;
+		}
+	}
+	/* post excerpt */
+	.excerpt {
+		display: block;
+		float: none;
+		@include font-size(14, no, 16);
+		@include media($medium) {
+			width: 70%;
+		}
+		@include media($large) {
+			width: 60%;
+		}
+	}
+}
+// Tag index
+.tag-box {
+	list-style: none;
+	margin: 0;
+	padding: 4px 0;
+	overflow: hidden;
+	@include clearfix;
+	&.inline li {
+		float: left;
+		@include font-size(14);
+		line-height: 2.5;
+	}
+	a { 
+		padding: 4px 6px;
+		margin: 2px;
+		background-color: lighten($black, 90);
+		@include rounded(4px);
+		text-decoration: none;
+		span { 
+			vertical-align: super;
+			@include font-size(10);
+		}
+	}
+}
+// Table of Contents
+// table of contents
+#markdown-toc {
+	font-family: $alt-font;
+	margin-top: $gutter;
+	margin-bottom: $gutter;
+	padding-left: 0;
+	border: 1px solid $border-color;
+	border-radius: $border-radius;
+  ul {
+  	list-style-type: none;
+  	padding-left: 0;
+  }
+  li {
+    @include font-size(16,no,18);
+    border-bottom: 1px solid $border-color;
+    list-style-type: none;
+  }
+  h6 {
+    margin: 0;
+    padding: (.25 * $gutter) (.5 * $gutter);
+    background: $table-stripe-color;
+  }
+  a {
+    display: block;
+    padding: (.25 * $gutter) (.5 * $gutter);
+    border-left: 2px solid transparent;
+    border-bottom: 0 solid transparent;
+    &:hover,
+    &:focus {
+      background: lighten($border-color,5);
+    }
+  }
+}
+
+
+// Footer
+// --------------------------------------------------
+
+.footer-wrapper {
+	@include clearfix;
+	margin: 2em auto;
+	text-align: center;
+	font-family: $alt-font;
+	@include font-size(14);
+	font-style: italic;
+	color: lighten($text-color,20);
+	a {
+		color: lighten($text-color,20);
+	}
+}
+
+
+// Search Overlay
+// --------------------------------------------------
+
+.search-wrapper {
+	@include outer-container;
+	margin-top: 0;
+	padding-right: $gutter;
+	padding-left: $gutter;
+	height: 1px;
+}
+
+
+// Social Icons
+// --------------------------------------------------
+
+.social-icons {
+	margin: 1em 0 2em;
+	a {
+		padding: 4px 8px;
+		&:hover { 
+			color: $black; 
+		}
+	}
+}
+
+
+// Browser Upgrade
+// --------------------------------------------------
+
+.upgrade {
+	padding: 10px;
+	text-align: center;
+}
+
+
+// Google Search Form
+// --------------------------------------------------
+
+#goog-fixurl {
+	ul {
+		list-style: none;
+		margin-left: 0;
+		padding-left: 0;
+		li {
+			list-style-type: none;
+		}
+	}
+}
+#goog-wm-qt {
+	width: auto;
+	margin-right: 10px;
+	padding: 8px 10px;
+	@include font-size(14);
+	border-width: 2px;
+	border-radius: $border-radius;
+}
+#goog-wm-sb {
+	@extend .btn;
+}
