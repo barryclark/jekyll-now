@@ -10,26 +10,17 @@ group: navigation
 #Past Classes
 ![UMD]({{site.url}}images/UMDbanner.jpg)
 
-* #####**ASTR100: Introduction to Astronomy**
-<p>University of Maryland College Park - Spring 2010</p>
-<p>University of Maryland College Park - Fall 2010</p>
+##Degrees: 
+BS Physics & Astronomy  (University of Maryland)
+MS Astronomy (University of Maryland)
 
-* #####**ASTR305: Astronomy and the Media**
-<p>University of Maryland College Park - Spring 2014</p>
-<p>University of Maryland College Park - Spring 2013</p>
+##Past Research: 
+Determining the formation mechanism for pillar structures found on the rims of HII regions  - with Dr. Marc Pound and Dr. Lee Mundy
 
-* #####**PHYS115: Physics Lab for Education Majors**
-University of Maryland College Park - Fall 2010
+Ultraviolet Portrait of M31 - with Dr. Stefan Immler
+Analyzing the Star Formation of Galaxies in the MIDGET survey - with Dr. Alberto Bolatto
 
-* #####**ASTR101: General Astronomy**
-University of Maryland College Park - Fall 2012
-
-* #####**ASTR230I: The Science and Fiction of Planetary Science**
-University of Maryland College Park - Fall 2012
-
-
-* #####**ASTR305I: Astronomy and the Media**
-University of Maryland College Park - Spring 2014
-University of Maryland College Park - Spring 2013
+##Things I do for fun:
+I spent many years playing bass clarinet in the Gamer Symphony Orchestra. I have since graduated to singing in choir of the Washington Metro Gamer Symphony Orchestra. 
 
 
