@@ -171,6 +171,9 @@ name.upcase
 name.downcase
 name.reverse # => "mairiM"
 name.chars # => ["M", "i", "r", "i", "a", "m"]
+
+full_name = "Miriam Tocino"
+full_name.split # => ["Miriam", "Tocino"]
 {% endhighlight %}
 
 Here it comes a very useful site when working with [regular expressions](http://www.ruby-doc.org/core-2.2.0/Regexp.html) in ruby [www.rubular.com](http://rubular.com/). Now let's match a string against a regexp:
@@ -254,4 +257,72 @@ end
 {% endhighlight %}
 
 
-Am I missing something that you think I should be mentioning in this quick introduction? Please take the time to add a comment and I will get back to you ☺
+#### Iteration
+
+**Iterators** let objects manage their own traversal. This tip I read is interesting and worth to remember:
+
+> If you’re iterating with an index, you’re probably doing it wrong
+
+I will let you know what's my experience with it after some time working with the language ☺ 
+
+{% highlight ruby %}
+# range traversal
+(1..10).each do |x| ... end
+(1..10).each { |x| ... }
+1.upto(10) do |x| ... end
+
+# array traversal
+my_array.each do |elt| ... end
+
+# hash traversal
+hash.each_key do |key| ... end
+hash.each_pair do |key,val| ... end
+
+10.times {...} # iterator of arity zero
+10.times do ... end
+{% endhighlight %}
+
+
+#### Modules & Classes
+
+A **module** is a collection of methods that aren't a class, which means that you can't instantiate it. There are extensively used to mix its methods into a class.
+
+{% highlight ruby %}
+class A ; include MyModule ; end
+A.foo
+# 1 - will search A,
+# 2 - then MyModule, then
+# 3 - method_missing in A & B, then
+# 4 - A's ancestor
+{% endhighlight %}
+
+So then, the question would be... how do you choose between a module or a class?
+
+**Modules** reuse high-level **behaviours** that could conceptually apply to many classes. Some examples of modules would be: _Enumerable_ or _Comparable_. Modules use **mixin** (_include Module_) as mechanism.
+
+**Classes** reuse **implementation**. The subclass will reuse or override any of the superclass methods. The mechanism used to do so is **inheritance** (_class Submodule < Module_).
+
+> Remarkably often, **composition** will be preferred over **inheritance**.
+
+
+#### Expression Orientation
+
+Some useful methods related to orientation of objects:
+
+{% highlight ruby %}
+x = ['apple','cherry','apple','banana']
+x.sort # => ['apple','apple','banana','cherry']
+x.uniq.reverse # => ['banana','cherry','apple']
+x.reverse! # modifies x !!!
+
+x.map do |fruit|
+  fruit.reverse
+end.sort
+# => ['ananab','elppa','elppa','yrrehc']
+
+x.collect { |f| f.include?("e") } # => [true, true, true, false]
+x.any? { |f| f.length > 5 } # => true
+{% endhighlight %}
+
+
+For sure there is still a lot to be added here, but do you think it is OK for a quick introduction or am I missing something crucial? ☺
