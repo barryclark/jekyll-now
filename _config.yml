@@ -1,6 +1,5 @@
-#
+
 # This file contains configuration flags to customize your site
-#
 
 # Name of your site (displayed in the header)
 name: Erin Grand
@@ -22,16 +21,17 @@ footer-links:
   facebook: 
   flickr: 
   github: eringrand
-  email: 
+  email: eringrand@gmail.com
   facebook: 
   flickr: 
-  github: barryclark/jekyll-now
+  github: eringrand
   instagram: 
-  linkedin: 
+  linkedin: eringrand
   pinterest: 
   rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
   twitter: astroeringrand
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
+  youtube: AstroErin
 
 # Your disqus shortname, entering this will enable commenting on posts
 disqus: 
@@ -52,6 +52,17 @@ baseurl: ""
 #
 # !! You don't need to change any of the configuration flags below !!
 #
+
+# These paths are to the main pages Jekyll-Bootstrap ships with.
+# Some JB helpers refer to these paths; change them here if needed.
+#
+archive_path: /archive.html
+categories_path : /categories.html
+tags_path : /tags.html
+atom_path : /atom.xml
+rss_path : /rss.xml
+
+BASE_PATH: "/"
 
 markdown: redcarpet
 highlighter: pygments

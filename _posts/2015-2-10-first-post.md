@@ -10,3 +10,5 @@ the idea of following the right path for you, whether or not that path was the o
 you were on. As someone, who was on a strict path for many years and has recently jumped ship, 
 this topic is very relevant to me. 
 
+Started with love of math and space
+![UMD]({{site.baseurl }}/images/M31.png)

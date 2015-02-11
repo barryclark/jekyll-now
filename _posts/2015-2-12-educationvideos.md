@@ -2,6 +2,7 @@
 layout: post
 title: Education via Youtube
 description: "There many great educational channels and videos on YouTube."
+tags: youtube, education, vlogbrothers, entertainment
 ---
 
 YouTube is well know as the website that hosts the cat videos, and while the cat videos are 
@@ -17,13 +18,11 @@ through their human sexuality [video](https://www.youtube.com/watch?v=xXAoG8vAyz
 In my mind, the Vlogbrothers (John and Hank Green) revolutionized YouTube. Their channel 
 started in 2007 with Brotherhood 2.0 as a experiment for the brothers and entertainment for their viewers. 
 As time went on, their videos started including more educational materials about history and current events.
-When it clear that viewship took a strong liking to these types of videos, the brothers 
-decided to create channels with educational themes in mind.
-
+In 2011, the brothers started what would become a long list of educational channels each with a different theme.
 At the time of writing this, the Vlogbrothers have produced:
 
-* SciShow - a channel about all things science
-* SciShow Space - a channel about all things astronomy
+* [SciShow](www.youtube.com/user/scishow) - a channel about all things science
+* [SciShow Space](https://www.youtube.com/user/scishowspace) - a channel about all things astronomy
 * Crash Course - a series of playlists for topics at the level of high school course, 
 so far there are playlists for:
 	* [US Government and Politics](https://www.youtube.com/watch?v=lrk4oY7UxpQ&list=PL8dPuuaLjXtOfse2ncvffeelTrqvhrz8H)
@@ -35,25 +34,30 @@ so far there are playlists for:
 	* [US History](https://www.youtube.com/watch?v=6E9WU9TGrec&list=PL8dPuuaLjXtMwmepBjTSG593eG7ObzO7s)
 	* [Literture](https://www.youtube.com/watch?v=MSYw502dJNY&list=PL8dPuuaLjXtOeEc9ME62zTfqc0h6Pe8vb)
 	* [Big History](https://www.youtube.com/watch?v=tq6be-CZJ3w&list=PL8dPuuaLjXtMczXZUmjb3mZSU1Roxnrey)
-	* [Astronomy](https://www.youtube.com/watch?v=0rHUDWjR5gg&list=PL8dPuuaLjXtPAJr1ysd5yGIyiSFuh0mIL), taught by Phil Phailt 
-	* [Anatomy and Physiology](https://www.youtube.com/watch?v=uBGl2BujkPQ&list=PL8dPuuaLjXtOAKed_MxxWBNaPno5h3Zs8)
+	* [Astronomy](https://www.youtube.com/watch?v=0rHUDWjR5gg&list=PL8dPuuaLjXtPAJr1ysd5yGIyiSFuh0mIL), taught by Phil Phailt  (in progress)
+	* [Anatomy and Physiology](https://www.youtube.com/watch?v=uBGl2BujkPQ&list=PL8dPuuaLjXtOAKed_MxxWBNaPno5h3Zs8) (in progress)
 * [Brain Scoop](https://www.youtube.com/user/thebrainscoop) - a channel from the Chief Curiosity Correspondent of The Field Museum in Chicago about animals, 
 biology, and other parts of science 
 * Health Care Triage - a channel that focuses on providing health information where research is the main source
 * How to Adult - a channel that teaches basic thing they don't teach in school about being an adult
 * Sexplanations - a channel that focus on sexuality and gender
 
-I tend to watch mostly educational channels relating to STEM subjects. 
-Other channels that I've enjoyed are: 
-* Minute Physics
-* Minute Earth
-* AsapSCIENCE
-* [Veritasium](https://www.youtube.com/user/1veritasium)
+Outside of the family of Vlogbrothers channels, there's also: 
 
-Other great educational channels:
+* [Minute Physics](https://www.youtube.com/user/minutephysics)
+* [Minute Earth](https://www.youtube.com/user/minuteearth)
+* [AsapSCIENCE](https://www.youtube.com/user/AsapSCIENCE)
+* [Veritasium](https://www.youtube.com/user/1veritasium)
 * Mental Floss
-* Drunk History
+* Epic Rap Battles of History
+
+These types of videos are being watched in classes, for assignments, or as extra learning. 
+The structure of these types of videos are such that the videos are meant for both entertainment
+and education. 
+
+
 
 There are hundreds of wonderful educational channels out there and I encourage you to go look for them,
 or to start your own. 
-(I produced one video on my channel so far! I hope to one day return and post more.) 
+(I produced one video on my channel so far, which you can watch [here](https://www.youtube.com/watch?v=leJuucunLak)! 
+I hope to one day return and post more.) 
