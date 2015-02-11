@@ -1,6 +1,5 @@
----
-layout:post
-title:ブログ開設
----
-GitHubに慣れるべくこのブログを開設！！
-これから色々に挑戦していくぞ！！
+#ブログ開設
+
+これから色々挑戦していくぞ！！
+github Flavored Markdown(GFM)勉強中！！
+
