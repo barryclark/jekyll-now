@@ -15,7 +15,7 @@ Ansible + sysbench-mongodb to the rescue
 
 ## sysbench-mongodb
 
-sysbench-mongodb is a java program created by [tmcallaghan](https://github.com/tmcallaghan) when he worked at Tokutek. He still maintains the repo. It's a simple yet powerful load testing harness, also it has a lot of things I wanted in a load test framework:
+sysbench-mongodb is a java program created by [tmcallaghan](https://github.com/tmcallaghan) when he worked at Tokutek. He still maintains the [repo](https://github.com/tmcallaghan/sysbench-mongodb). It's a simple yet powerful load testing harness, also it has a lot of things I wanted in a load test framework:
 
 - Uses one of the best in class MongoDB drivers. In this case java.
 - Written in a language I know. In this case java.
