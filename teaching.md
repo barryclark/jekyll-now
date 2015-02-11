@@ -1,12 +1,13 @@
 ---
 layout: page
-title: "Teaching"
+title: Teaching
+permalink: /teaching/
 description: ""
 ---
 
 
 #Past Classes
-![UMD]({{site.url}}images/UMDbanner.jpg)
+![UMD]({{site.baseurl }}/images/UMDbanner.jpg)
 
 * #####**ASTR100: Introduction to Astronomy**
 <p>University of Maryland College Park - Spring 2010</p>

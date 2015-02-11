@@ -7,7 +7,7 @@ permalink: /about/
 ### Contact me
 
 #Past Classes
-![UMD]({{site.url}}images/UMDbanner.jpg)
+![UMD]({{site.baseurl }}/images/UMDbanner.jpg)
 
 ##Degrees: 
 BS Physics & Astronomy  (University of Maryland)
