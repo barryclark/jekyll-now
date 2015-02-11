@@ -8,7 +8,6 @@ permalink: /about/
 * [Info](#info)
 * [Research](#research)
 * [Hire](#hire)
-* [Blog](#blog)
 * [Teaching](#teaching)
 * [Misc](#misc)
 
@@ -18,11 +17,9 @@ permalink: /about/
 < This would be a great space to explain yourself. > 
 
 ###Degrees: 
-MS Data Science (Columbia Univiersity) - in progress 
-
-MS Astronomy (University of Maryland) 2014
-
-BS Physics & Astronomy  (University of Maryland) 2011
+* MS Data Science (Columbia Univiersity) - in progress 
+* MS Astronomy (University of Maryland) 2014
+* BS Physics & Astronomy  (University of Maryland) 2011
 
 ###Links
 * [Resume/CV](https://www.linkedin.com/in/eringrand)
@@ -33,12 +30,14 @@ BS Physics & Astronomy  (University of Maryland) 2011
 
 ---
 ##<a name="research"></a>Research
-*Determining the formation mechanism for pillar structures found on the rims of HII regions  - with Dr. Marc Pound and Dr. Lee Mundy
+* Determining the formation mechanism for pillar structures found on the rims of HII regions  
+	* with Dr. Marc Pound and Dr. Lee Mundy
 
-*[Ultraviolet Portrait of M31](http://www.nasa.gov/mission_pages/swift/bursts/uv_andromeda.html)
- - with Dr. Stefan Immler
+* [Ultraviolet Portrait of M31](http://www.nasa.gov/mission_pages/swift/bursts/uv_andromeda.html)
+ 	* with Dr. Stefan Immler
 
-*Analyzing the Star Formation of Galaxies in the MIDGET survey - with Dr. Alberto Bolatto
+* Analyzing the Star Formation of Galaxies in the MIDGET survey 
+	* with Dr. Alberto Bolatto
 
 [Top](#top)
 
@@ -47,21 +46,12 @@ BS Physics & Astronomy  (University of Maryland) 2011
 ##<a name="hire"></a>Hire
 < make this about yourself >
 
-* GIS
-	* GIS (geoprocessing, mapping, data collection, data mining, geocoding, etc.) is my main concentration and would be happy to help with any type of GIS or mapping project. 
-* Python
-	* I program in Python and know many modules such as Pandas, Shapely, Fiona, etc. 
-* Website development
-	* I do some basic web programming and have worked on large websites for public outreach for engineering and transit projects. 
-	
-[Top](#top)
-
----
-
-##<a name="blog"></a>Blog
-* My current [blog is on this website](http://eringrand.github.io).
-* [Wordpress](http://stumpthegreat.wordpress.com/)
-	* I never really used this but own this wordpress page.
+* Teaching
+	*  I've been a teachers assistant for several introductory astronomy classes.
+* Coding
+	* I am learning R and Python. Most of my past experience is in IDL and shell scripts.
+* Public Outreach
+	* 
 
 [Top](#top)
 
@@ -75,7 +65,6 @@ My [teaching information](https://eringrand.github.io/teaching/) can be found [h
 ---
 		
 ###<a name="misc"></a>Misc
----
 
 ####Things I do for fun:
 * I spent many years playing bass clarinet in the Gamer Symphony Orchestra. 
@@ -83,3 +72,4 @@ My [teaching information](https://eringrand.github.io/teaching/) can be found [h
 
 [Top](#top)
 
+---

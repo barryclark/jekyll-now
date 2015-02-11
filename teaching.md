@@ -5,15 +5,13 @@ permalink: /teaching/
 description: ""
 ---
 
+###Past Astronomy and Physics Classes
 
-#Past Classes
 ---
 
 ![UMD]({{site.baseurl }}/images/UMDbanner.jpg)
 
 ---
-
-###Past Astronomy and Physics Classes
 
 * #####**ASTR100: Introduction to Astronomy**
 <p>University of Maryland College Park - Spring 2010</p>
@@ -22,7 +20,6 @@ description: ""
 * #####**ASTR305: Astronomy and the Media**
 <p>University of Maryland College Park - Spring 2014</p>
 <p>University of Maryland College Park - Spring 2013</p>
-
 
 * #####**ASTR101: General Astronomy**
 University of Maryland College Park - Fall 2012
