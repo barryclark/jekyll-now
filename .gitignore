@@ -1,6 +1,18 @@
+<<<<<<< HEAD
 # OS generated files #
 ######################
 .DS_Store
 .DS_Store?
 _site
 _theme_packages
+=======
+_site
+.DS_Store
+.jekyll
+.bundle
+.sass-cache
+Gemfile
+Gemfile.lock
+node_modules
+package.json
+>>>>>>> f35771a57c836550dca70566c61f6c38ba19d49d
