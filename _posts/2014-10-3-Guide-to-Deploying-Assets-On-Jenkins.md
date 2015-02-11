@@ -29,13 +29,13 @@ Select 'New item' from the main menu and call it something like "[ENTER-PROJECT-
 #### Step 2: Create a post-build action
 Go to your client project and select configure. Create a post-build action and select ‘archive artififacts’ from the drop down menu. Add the type of files you want to archive (and eventually, copy and export). Next add another post-build action ‘Build other project’ and enter the name of the build item you created earlier. 
 
-![Archive artifacts build step](/assets/img/custom/blog/jenkinsPost/archiveArtifacts.png)
+![Archive artifacts build step](http://www.codurance.com/assets/img/custom/blog/jenkinsPost/archiveArtifacts.png)
 
 
 #### Step 3: Install the Copy Artifact plugin
 Next you need to install the [Copy Artifact plugin](https://wiki.jenkins-ci.org/display/JENKINS/Copy+Artifact+Plugin) in the Manage Plugins section of Jenkins. Go to "[PROJECT-NAME]-Output" > configure and add a new build step. Because you have installed the Copy Artifact plugin you should see an option called ‘copy artifacts from another project’ in the drop down menu. Specify the folder or files you want copied and set the location path. Notice that we set set our location to "var/www/clients/…". This leads to a new folder on the server (we were using an Apache server on an Amazon EC2 instance). Don't do what we did and set the path using an http address(!).
 
-![Archive artifacts build step](/assets/img/custom/blog/jenkinsPost/copyArtifacts.png)
+![Archive artifacts build step](http://www.codurance.com/assets/img/custom/blog/jenkinsPost/copyArtifacts.png)
 
 
 #### Step 4: Test it Out
@@ -54,4 +54,4 @@ SSH into your server and check the permissions of you output folder. As you migh
 
 Don’t forget to restart your server to finalise the changes!
 
-![Archive artifacts build step](/assets/img/custom/blog/jenkinsPost/console.png)
+![Archive artifacts build step](http://www.codurance.com/assets/img/custom/blog/jenkinsPost/console.png)
