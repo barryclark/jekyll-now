@@ -1,26 +1,15 @@
 ---
 layout: page
-title: "About"
-description: ""
-group: navigation
+title: About
+permalink: /about/
 ---
-{% include JB/setup %}
 
+Some information about you!
 
-#Past Classes
-![UMD]({{site.url}}images/UMDbanner.jpg)
+### More Information
 
-##Degrees: 
-BS Physics & Astronomy  (University of Maryland)
-MS Astronomy (University of Maryland)
+A place to include any other types of information that you'd like to include about yourself. 
 
-##Past Research: 
-Determining the formation mechanism for pillar structures found on the rims of HII regions  - with Dr. Marc Pound and Dr. Lee Mundy
+### Contact me
 
-Ultraviolet Portrait of M31 - with Dr. Stefan Immler
-Analyzing the Star Formation of Galaxies in the MIDGET survey - with Dr. Alberto Bolatto
-
-##Things I do for fun:
-I spent many years playing bass clarinet in the Gamer Symphony Orchestra. I have since graduated to singing in choir of the Washington Metro Gamer Symphony Orchestra. 
-
-
+[email@domain.com](mailto:email@domain.com)
