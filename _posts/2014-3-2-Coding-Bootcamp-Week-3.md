@@ -1,7 +1,7 @@
 ---
 layout: post
 name: coding-bootcamp-week-3
-title: Coding Bootcamp Week 3
+title: Coding Bootcamp - Week 3
 date: 2014-3-2 18:31:00 +00:00
 ---
 ## This is the stuff that my dreams are made of
