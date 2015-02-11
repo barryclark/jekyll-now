@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="author" content="{{ site.author.name }}" />
+    <title>{{ page.title }}</title>
+
+    <link rel="stylesheet" href="{{ ASSET_PATH }}/css/styles.css">
+    <link rel="stylesheet" href="{{ ASSET_PATH }}/css/pygment_trac.css">
+    <script src="{{ ASSET_PATH }}/js/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    {% include JB/analytics %}
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header"><a href="{{ HOME_PATH }}">{{ site.title }}</a></h1>
+        <p class="header">{{ site.tagline }}</p>
+        <ul>
+          {% assign pages_list = site.pages %}
+          {% assign group = 'navigation' %}
+          {% include JB/pages_list %}
+        </ul>
+        {% if site.ads.google %}
+        <div class="misc ad">
+          <script type="text/javascript"><!--
+            google_ad_client = "{{ site.ads.google.client }}";
+            google_ad_slot = "{{ site.ads.google.slot }}";
+            google_ad_width = {{ site.ads.google.width }};
+            google_ad_height = {{ site.ads.google.height }};
+            //-->
+          </script>
+          <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+        </div>
+        {% endif %}
+        {% if site.author %}
+        <div class="misc vcard">
+          <h4>about</h4>
+          <ul>
+            {% if site.author.email %}
+            <li class="contact"><address><span class="author fn n">{{ site.author.name }}</span> - <span class="fn email">{{ site.author.email }}</span></address></li>
+            {% endif %}
+            {% if site.author.github %}
+            <li class="github"><a href="http://github.com/{{ site.author.github }}/" rel="me">github.com/{{ site.author.github }}</a></li>
+            {% endif %}
+            {% if site.author.twitter %}
+            <li class="twitter"><a href="http://twitter.com/{{ site.author.twitter }}/" rel="me">twitter.com/{{ site.author.twitter }}</a></li>
+            {% endif %}
+            {% if site.author.facebook %}
+            <li class="facebook"><a href="http://facebook.com/{{ site.author.facebook }}/" rel="me">facebook.com/{{ site.author.facebook }}</a></li>
+            {% endif %}
+            {% if site.author.flickr %}
+            <li class="flickr"><a href="http://flickr.com/{{ site.author.flickr }}/" rel="me">flickr.com/{{ site.author.flickr }}</a></li>
+            {% endif %}
+            {% if site.author.yelp %}
+            <li class="yelp"><a href="http://{{ site.author.yelp }}.yelp.com/" rel="me">{{ site.author.yelp }}.yelp.com</a></li>
+            {% endif %}
+            {% if site.author.pinterest %}
+            <li class="pinterest"><a href="http://pinterest.com/{{ site.author.pinterest }}" rel="me">pinterest.com/{{ site.author.pinterest }}</a></li>
+            {% endif %}
+          </ul>
+        </div><!-- misc -->
+        {% endif %}
+      </header>
+
+      <section>
+      {{ content }}
+      </section>
+
+      <footer>
+      <p><small>Hosted on <a href="http://pages.github.com/">GitHub Pages</a> using the <a href="https://github.com/sodabrew/theme-dinky">Dinky theme</a> for <a href="http://jekyllbootstrap.com/">Jekyll Bootstrap</a></small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
+  </body>
+</html>
