@@ -3,7 +3,6 @@ layout: page
 title: "Teaching"
 description: ""
 ---
-{% include JB/setup %}
 
 
 #Past Classes
