@@ -2,10 +2,10 @@
 layout: post
 title: Education via Youtube
 description: "There many great educational channels and videos on YouTube."
-tags: youtube, education, vlogbrothers, entertainment
+tags: youtube education vlogbrothers entertainment
 ---
 
-YouTube is well know as the website that hosts the cat videos, and while the cat videos are 
+YouTube is well known as the website that hosts the cat videos, and while the cat videos are 
 abundant and adorable, there's been a new trend on YouTube toward channels and videos that
 offer viewers education as well as entertainment. 
 
