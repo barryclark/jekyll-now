@@ -3,13 +3,13 @@
 #
 
 # Name of your site (displayed in the header)
-name: Your Name
+name: Robert Zhang(张超)
 
 # Short bio or description (displayed in the header)
-description: Web Developer from Somewhere
+description: Android Developer
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
+avatar: https://raw.githubusercontent.com/robertzhang/robertzhang.github.io/robertzhang20150217/images/mine_icon.jpg
 
 #
 # Flags below are optional
@@ -18,15 +18,11 @@ avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/je
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble: 
-  email: 
-  facebook: 
-  flickr: 
-  github: barryclark/jekyll-now
+  github: robertzhang
   instagram: 
   linkedin: 
-  pinterest: 
   rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
-  twitter: jekyllrb
+  wechat: sun_robert_zhang
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
 
 # Your disqus shortname, entering this will enable commenting on posts
