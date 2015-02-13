@@ -21,6 +21,6 @@ happy with my research project, the project did not have any funding, and felt t
 in the same place for too long. 
 I intended to transfer to an astronomy program with funded projects closer to my interests, 
 in a different part of the country. As I began the application process, I was directed 
-the (then) Institute for Data Science  project
+the (then) Institute for Data Science at Columbia. 
 
 
