@@ -26,6 +26,7 @@ permalink: /about/
 能今年保证项目需求的情况下，学习IOS。不是因为Android不好，而是技术需要广，然后才能钻。可能还会学习一点Ruby，毕竟公司现在大多数同事做的是这个。当然还有Python也希望有时间研究一下，14年已经喊很久了。总之15年注定将是繁忙的一年，当然希望今天会有更好的收获。
 
 ### 联系我
+[Follow GitHub: robertzhang](https://github.com/robertzhang)
 
 [Gmail邮箱：robertzhangsh@gmail.com](robertzhangsh@gmail.com)  ,  [163邮箱：zhangchao_nwsuaf@163.com](zhangchao_nwsuaf@163.com)  ,  [net263邮箱：chao.zhang@net263.com](chao.zhang@net263.com)  
 
