@@ -31,10 +31,13 @@ This week we will two type of pumps. Download the design files here:
 ![Syringe Pump](/biofactory/class/8/Syringe-Pump.png)
 
 * Peristaltic pump design
-  * SketchUp assembly
-  * SVG laser cut files
+  * [SketchUp assembly](/biofactory/class/8/Peristaltic-Pump-Sketchup.skp)
+  * [SVG laser cut files](/biofactory/class/8/Peristaltic-Pump-SVGs.zip)
+  * [3 Arm Rotor STL file](/biofactory/class/8/3 Arm Rotor.stl)
   * [Fritzing wiring]
   * [Arduino Code]
+
+![Peristaltic Pump](/biofactory/class/8/Peristaltic-Pump.png)
 
 ## Bill of Materials
 

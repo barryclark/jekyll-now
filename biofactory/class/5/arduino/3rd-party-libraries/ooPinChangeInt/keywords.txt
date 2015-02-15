@@ -1,0 +1,8 @@
+# LITERAL1 specifies constants
+
+# KEYWORD1 specifies datatypes and C/C++ keywords
+PCintPort	KEYWORD1	PCInterruptPort
+
+# KEYWORD2 specifies methods and functions
+attachInterrupt	KEYWORD2	AttachInterrupt
+detachInterrupt	KEYWORD2	DetachInterrupt

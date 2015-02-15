@@ -23,7 +23,7 @@ This week we will build the stirrer. Download the design files here:
 * [Functional and technical requirements](/biofactory/class/6-stirrer/requirements/)
 * [SketchUp assembly](/biofactory/class/6/Magnetic-Stirrer-Sketchup.skp)
 * [SVG laser cut files](/biofactory/class/6/Magnetic-Stirrer-SVGs.zip)
-* [Fritzing wiring](/biofactory/class/6/Magnetic-Stirrer-Fritzing.fz)
+* [Fritzing wiring](/biofactory/class/6/Magnetic-Stirrer-Fritzing.fzz)
 
 ![Magnetic Strirrer](/biofactory/class/6/Magnetic-Stirrer.png)
 
