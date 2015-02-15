@@ -2,14 +2,12 @@
 layout: page
 title: About
 permalink: /about/
+published: true
 ---
 
-Some information about you!
+I'm 20 years old, formally a Computational Programmer Analyst, but meh! a Software Developer at the end. Like many of you I like to try new stuff, and learn about bits and code. 
 
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself. 
-
+Now I'm working in a company called [evolSystem](http://evol.systems) we love to make software :D!
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[e.noyer.silva@gmail.com](mailto:e.noyer.silva@gmail.com)
