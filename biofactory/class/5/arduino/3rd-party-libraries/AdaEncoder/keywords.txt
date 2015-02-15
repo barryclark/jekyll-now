@@ -1,0 +1,11 @@
+# LITERAL1 specifies constants
+
+# KEYWORD1 specifies datatypes and C/C++ keywords
+AdaEncoder	KEYWORD1	AdaEncoder
+
+# KEYWORD2 specifies methods and functions
+addEncoder	KEYWORD2	AddEncoder
+attachInterrupt	KEYWORD2	AttachInterrupt
+encoderInterrupt KEYWORD2	encoderInterrupt
+turnOffPWM	KEYWORD2	turnOffPWM
+genie		KEYWORD2	Genie

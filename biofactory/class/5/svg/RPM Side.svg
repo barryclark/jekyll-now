@@ -1,0 +1,25 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="30.0mm" height="25.0mm"
+ viewBox="0 0 30.0 25.0"
+ xmlns="http://www.w3.org/2000/svg" version="1.1"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+<desc>Output from Flights of Ideas SVG Sketchup Plugin</desc>
+
+  <g id="face0" fill="none" stroke="rgb(0,0,255)" stroke-width="1" stroke-miterlimit="4" stroke-dasharray="none" stroke-linejoin="round" stroke-linecap="round">
+    <line x1="26.0" y1="1.0" x2="26.0" y2="4.0"/>
+    <line x1="26.0" y1="4.0" x2="11.3" y2="4.0"/>
+    <line x1="11.3" y1="4.0" x2="11.3" y2="1.0"/>
+    <line x1="11.3" y1="1.0" x2="8.99999999999997" y2="1.0"/>
+    <line x1="8.99999999999997" y1="1.0" x2="8.99999999999997" y2="11.0"/>
+    <line x1="8.99999999999997" y1="11.0" x2="1.0" y2="11.0"/>
+    <line x1="1.0" y1="11.0" x2="1.0" y2="14.0000000000001"/>
+    <line x1="1.0" y1="14.0000000000001" x2="4.0" y2="14.0000000000001"/>
+    <line x1="4.0" y1="14.0000000000001" x2="4.0" y2="21.0"/>
+    <line x1="4.0" y1="21.0" x2="1.0" y2="21.0"/>
+    <line x1="1.0" y1="21.0" x2="1.0" y2="24.0"/>
+    <line x1="1.0" y1="24.0" x2="29.0" y2="24.0"/>
+    <line x1="29.0" y1="24.0" x2="29.0" y2="1.0"/>
+    <line x1="29.0" y1="1.0" x2="26.0" y2="1.0"/>
+  </g>
+</svg>

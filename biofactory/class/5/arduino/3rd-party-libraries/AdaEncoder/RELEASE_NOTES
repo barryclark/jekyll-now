@@ -1,0 +1,45 @@
+// We use 4-character tabstops, so IN VIM:  <esc>:set ts=4 sw=4 <cr>
+// ...that's: ESCAPE key, colon key, then "s-e-t SPACE key t-s-=-4 SPACE key s-w-=-4 CARRIAGE RETURN key"
+/*
+ AdaEncoder.h - A library for reading Lady Ada's or Sparkfun's rotary encoder.
+ Should work for any rotary encoder with 2 pins (4 states).
+
+Version 0.7 Tue Nov 20 17:56:29 CST 2012
+Now works with the latest ooPinChangeInt. Should be much more reliable.
+
+Bugfixes: the clicks variable was supposed to be int8_t, but I had query() and getClicks() returning uint8_t types.
+
+Updated to utilize the ByteBuffer to fill a buffer of text for debug purposes.
+
+turnOffPWM has been moved into its own file, as that code is distributed under the LPGL license. I use the GPL.
+
+ Version 0.5 Wed Feb 29 07:30:23 CST 2012
+	Shipped without PinChangeInt, so we don't stomp on PinChangeInt if the user has both libraries.
+	Includes the LIBCALL_PINCHANGEINT macro for work with PinChangeInt v1.70beta (and newer).
+	Cleaned up some of the #includes.
+	Included a copy of the gpl in the zip file, like a good citizen.  The file is gpl.txt.
+ Version 0.4 Sun Oct  9 12:09:17 CDT 2011
+    Includes cppfix.h, so that we can use the new() operator with PinChangeInt-0.3 (and above).
+ Version 0.3 Thu Sep 22 20:11:31 CDT 2011
+ 	Updated to save the old value of the SREG prior to cli().
+*/
+
+/*
+  Copyright 2011 Michael Schwager (aka, "GreyGnome")
+
+	This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+	Questions?  Send mail to mschwage@gmail.com
+
+*/

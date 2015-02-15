@@ -40,7 +40,8 @@ Alternatively build your own microscope. Download the design files here:
 * [Functional and technical requirements](/biofactory/class/2-microscope/requirements/)
 * [SketchUp assembly](/biofactory/class/2/Microscope-Sketchup.skp)
 * [SVG laser cut files](/biofactory/class/2/Microscope-SVGs.zip)
-* [Fritzing wiring](/biofactory/class/2/Microscope-Fritzing.fz)
+* [STL 3D print files](/biofactory/class/2/Microscope-STLs.zip)
+* [Fritzing wiring](/biofactory/class/2/Microscope-Fritzing.fzz)
 
 ![Microscope](/biofactory/class/2/Microscope.png)
 
