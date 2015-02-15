@@ -5,9 +5,7 @@ title: Code Snippet Testing
 
 Now, let's try something different with code snippets of Jekyll or.. well the 
 template that i'm using.
-
-{% highlight c# %}
-
+{% highlight C# %}
 using some.namespace;
 namespace foo.jekyll {
     public class FooClass {
@@ -18,5 +16,4 @@ namespace foo.jekyll {
         }
     }
 }
-
 {% endhighlight %}
