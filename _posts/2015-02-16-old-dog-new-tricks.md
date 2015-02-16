@@ -9,7 +9,7 @@ Let's say we have a loop that only terminates when killed by system shutdown. Wh
 while True:
 	print("Hello, world!")
 else:
-	print("Goodbye!")
+	print("Nothing. We'll never hit this line.")
 {% endhighlight %}
 
 In the meantime I'll be at [contrafactum](https://github.com/contrafactum/) on GitHub.
