@@ -8,7 +8,7 @@ Let's say we have a loop that only terminates when killed by system shutdown. Wh
 {% highlight python %}
 while True:
 	print("Hello, world. Coffee time!")
-	time.sleep(864000)
+	time.sleep(86400)
 else:
 	print("Nothing. We'll never hit this line.")
 {% endhighlight %}
