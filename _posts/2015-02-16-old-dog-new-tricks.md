@@ -3,7 +3,7 @@ layout: post
 title: old dog, new tricks
 ---
 
-Let's say we have a loop that only terminates when killed. What would make this interesting?
+Let's say there's loop that only terminates when the system kills its process. What would make this interesting?
 
 {% highlight python %}
 while True:
