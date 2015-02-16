@@ -10,7 +10,7 @@ while True:
 	print("Hello, world. Coffee time!")
 	time.sleep(86400)
 else:
-	print("Nothing. We'll never hit this line.")
+	# Nothing. We'll never hit this line.
 {% endhighlight %}
 
 In the meantime I'll be at [contrafactum](https://github.com/contrafactum/) on GitHub.
