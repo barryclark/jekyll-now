@@ -42,8 +42,8 @@
 	<path fill="#D43783" d="M30.487,32.527c-1.253-1.262-2.323-2.34-3.394-3.418c0.027-0.05,0.052-0.101,0.082-0.149
 		c0.841,0.24,1.69,0.462,2.521,0.736c0.166,0.054,0.341,0.29,0.379,0.471C30.228,30.866,30.329,31.579,30.487,32.527z"/>
 </g>
-<line stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="213" y1="62.25" x2="8.055" y2="62.25"/>
-<line stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="40.882" y1="1.666" x2="8.305" y2="1.666"/>
+<line stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="213" y1="62.25" x2="1.25" y2="62.25"/>
+<line stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="40.882" y1="1.666" x2="1.25" y2="1.666"/>
 <line stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="16.605" y1="62.25" x2="16.605" y2="2.398"/>
 <line stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="40.881" y1="6.062" x2="40.881" y2="1.788"/>
 <line stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="23.323" y1="1.91" x2="16.605" y2="9.361"/>
