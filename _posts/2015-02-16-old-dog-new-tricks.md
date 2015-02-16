@@ -7,7 +7,6 @@ Let's say we have a loop that only terminates when killed by system shutdown. Wh
 
 {% highlight python %}
 while True:
-	
 	print("Hello, world!")
 else:
 	print("Goodbye!")
