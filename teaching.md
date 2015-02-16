@@ -4,10 +4,18 @@ title: Teaching
 permalink: /teaching/
 description: ""
 ---
+###Current Classes
+
+Not currently teaching anything, but I am available for 
+tutoring in math, astronomy and physics. 
+ 
+---
 
 ###Past Astronomy and Physics Classes
 
+
 ---
+
 
 ![UMD]({{site.baseurl }}/images/UMDbanner.jpg)
 
