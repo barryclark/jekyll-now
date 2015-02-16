@@ -83,7 +83,7 @@ end
 In another file I created the main loop of the game (don't forget to include the class **Hangman** at the beginning of this file to make it work ☺)
 
 {% highlight ruby %}
-# hangman.rb
+# main.rb
 
 # Allows the word to be typed as hidden
 require 'io/console'
