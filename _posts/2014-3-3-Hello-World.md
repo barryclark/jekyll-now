@@ -3,7 +3,7 @@ layout: post
 title: old dog, new tricks
 ---
 
-Just a placeholder until there's actually someting new. How about some empty Ruby code?
+Just a placeholder waiting for someting new. How about some empty Ruby code?
 
 {% highlight ruby %}
 def foo
