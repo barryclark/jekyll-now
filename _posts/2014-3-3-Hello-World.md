@@ -1,10 +1,14 @@
 ---
 layout: post
-title: You're up and running!
+title: old dog, new tricks
 ---
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below :point_down:).
+Just a placeholder until there's actually someting new. How about some empty Ruby code?
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
+{% highlight ruby %}
+def foo
+  puts 'foo'
+end
+{% endhighlight %}
 
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
+For more detail head over to the [contrafactum repository](https://github.com/contrafactum/) on GitHub.
