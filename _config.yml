@@ -1,41 +1,41 @@
-title:            Site Title
-description:      Describe your website here.
-disqus_shortname: hpstrtheme
+title:            Eduardo Noyer (Wuff!')
+description:      Software Developer, mainly C# and No-SQL lover.
+disqus_shortname:
 reading_time:     true
 words_per_minute: 200
 # Your site's domain goes here (eg: //mmistakes.github.io, http://mademistakes.com, etc)
 # When testing locally leave blank or use http://localhost:4000
-url:
+url: //bitrvmpd.github.io
 
 # Owner/author information
 owner:
-  name:           Your Name
+  name:           Eduardo Noyer
   avatar:         avatar.jpg
-  bio:            "Your bio goes here. It shouldn't be super long but a good two sentences or two should suffice."
-  email:          you@email.com
+  bio:            "I'm 20 years old, formally a Computer Programmer Analyst, but meh! a Software Developer at the end. Like many of you I like to try new stuff, and learn about bits and code."
+  email:          e.noyer.silva@gmail.com
   # Social networking links used in footer. Update and remove as you like.
-  twitter:        
-  facebook:       
-  github:         
-  stackexchange:  
-  linkedin:       
-  instagram:      
-  flickr:         
-  tumblr:         
+  twitter:        noyer
+  facebook:       eduardo.n.s
+  github:         bitrvmpd
+  stackexchange:
+  linkedin:
+  instagram:      noxer
+  flickr:
+  tumblr:         n0xer
   # google plus id, include the '+', eg +mmistakes
-  google_plus:    +yourid
+  google_plus:
 
 # Background image to be tiled on all pages
-background: 
+background:
 
 # Analytics and webmaster tools stuff goes here
-google_analytics:   
-google_verify:      
+google_analytics:
+google_verify:
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:         
+bing_verify:
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    America/New_York
+timezone:    America/Santiago
 future:      true
 highlighter: pygments
 markdown:    kramdown
