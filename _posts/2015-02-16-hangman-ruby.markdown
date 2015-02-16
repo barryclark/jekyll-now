@@ -17,6 +17,8 @@ The topic of the night was to go through the implementation of the game **Hangma
 First I created a class **Hangman**, containing the _state_ of the game and the different operations to be done while playing:
 
 {% highlight ruby %}
+# hangman.rb
+
 class Hangman
   # Total number of turns stored in a constant variable
   TOTAL_TURNS = 10
@@ -81,6 +83,8 @@ end
 In another file I created the main loop of the game (don't forget to include the class **Hangman** at the beginning of this file to make it work ☺)
 
 {% highlight ruby %}
+# hangman.rb
+
 # Allows the word to be typed as hidden
 require 'io/console'
 # Don't forget to include your class Hangman
