@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-####<a name="top"></a>*Menu*
+###<a name="top"></a>*Menu*
 * [Info](#info)
 * [Research](#research)
 * [Hire](#hire)
@@ -14,8 +14,8 @@ permalink: /about/
 ---
 
 ##<a name="info"></a>Info
-< This would be a great space to explain yourself. > 
-
+<!--  This would be a great space to explain yourself --> 
+  
 ###Degrees: 
 * MS Data Science (Columbia Univiersity) - in progress 
 * MS Astronomy (University of Maryland) 2014
@@ -44,10 +44,11 @@ permalink: /about/
 ---
 
 ##<a name="hire"></a>Hire
-< make this about yourself >
+<!--  make this about yourself  -->
 
 * Teaching
-	*  I've been a teachers assistant for several introductory astronomy classes.
+	*  I've been a teachers assistant for several introductory astronomy classes 
+	and a physics tutor for friends in physics. 
 * Coding
 	* I am learning R and Python. Most of my past experience is in IDL and shell scripts.
 * Public Outreach

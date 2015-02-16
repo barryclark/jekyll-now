@@ -4,21 +4,15 @@ title: Teaching
 permalink: /teaching/
 description: ""
 ---
-###Current Classes
+##Current Classes
 
 Not currently teaching anything, but I am available for 
 tutoring in math, astronomy and physics. 
- 
----
-
-###Past Astronomy and Physics Classes
-
 
 ---
-
-
+##Past Classes
+---
 ![UMD]({{site.baseurl }}/images/UMDbanner.jpg)
-
 ---
 
 * #####**ASTR100: Introduction to Astronomy**
@@ -42,4 +36,4 @@ University of Maryland College Park - Spring 2013
 * #####**PHYS115: Physics Lab for Education Majors**
 University of Maryland College Park - Fall 2010
 
----
+
