@@ -3,7 +3,7 @@ layout: post
 title: old dog, new tricks
 ---
 
-Let's say we have a loop that only terminates when killed by system shutdown. What would make this loop interesting?
+Let's say we have a loop that only terminates on system shutdown. What would make this interesting?
 
 {% highlight python %}
 while True:
