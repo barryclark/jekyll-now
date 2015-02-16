@@ -3,12 +3,12 @@ layout: post
 title: old dog, new tricks
 ---
 
-Just a placeholder waiting for someting new. How about some empty Ruby code?
+Let's say you have a loop that only terminates when the system shuts-down. What would make that loop interesting?
 
-{% highlight ruby %}
-def foo
-  puts 'foo'
-end
+{% highlight python %}
+while True:
+	
+	print("Hello, world!")
 {% endhighlight %}
 
-For more detail head over to the [contrafactum repository](https://github.com/contrafactum/) on GitHub.
+In the meantime I'll be at [contrafactum](https://github.com/contrafactum/) on GitHub.
