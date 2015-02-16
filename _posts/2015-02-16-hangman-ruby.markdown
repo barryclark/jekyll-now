@@ -8,7 +8,7 @@ tags : [ruby, learning]
 
 ![Hangman Ruby](http://miriamtocino.github.io/images/posts/hangman-ruby.svg)
 
-Some weeks ago I attended my first [Coding Kata Meetup](http://www.meetup.com/RailsGirls-NL/events/197906212/) organised by [RailsGirlsNL](https://twitter.com/RailsGirls_NL) in Utrecht. We had a great evening, so yo should definitely join [next time](http://www.meetup.com/RailsGirls-NL/events/197905672/)!
+Some weeks ago I attended my first [Coding Kata Meetup](http://www.meetup.com/RailsGirls-NL/events/197906212/) organised by [RailsGirlsNL](https://twitter.com/RailsGirls_NL) in Utrecht. We had a great evening, so you should definitely join [next time](http://www.meetup.com/RailsGirls-NL/events/197905672/)!
 
 The topic of the night was to go through the implementation of the game **Hangman**. I have been learning some Ruby since then and didn't want to miss the opportunity to build the game on my own and share the results with you. There it goes... **Ruby Hangman**!
 
