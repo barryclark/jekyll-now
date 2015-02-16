@@ -8,15 +8,21 @@ title: Code Snippet Testing
 Now, let's try something different with code snippets of Jekyll or.. well the
 template that i'm using.
 foo
+
 foo
 
 foo
+
 foo
+
 foo
+
 foo
+
 foo
 
 foooooooooooooooooooooooooooooooooooooooo
+
 moar fooos
 
 -------------------------------------------------------------------------------
