@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Blog Post 1
+title: Blog Post 1 - Visualizing NYPD Data
+Source: NYC Open Data
 ---
 <!DOCTYPE html>
 <!-- saved from url=(0014)about:internet -->
