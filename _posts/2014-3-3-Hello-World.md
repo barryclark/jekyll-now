@@ -182,7 +182,6 @@ hljs.initHighlightingOnLoad();
 </head>
 
 <body>
-<h1>Homework for Feb 17th 2015</h1>
 
 <p>NYPD Data</p>
 
