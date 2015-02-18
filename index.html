@@ -11,7 +11,9 @@ layout: default
       <div class="entry">
         {{ post.content | truncatewords:150}}
       </div>
+      <nav>
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">&#171;Read More&#187;</a>
+      </nav>
     </article>
   {% endfor %}
 </div>
