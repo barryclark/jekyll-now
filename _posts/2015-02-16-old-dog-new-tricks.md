@@ -3,7 +3,7 @@ layout: post
 title: old dog, new tricks
 ---
 
-A loop that only terminates when killed.
+Suppose we have a loop that only terminates when killed. What might make this interesting?
 
 {% highlight python %}
 while True:
@@ -13,4 +13,4 @@ else:
 	# Nothing. We'll never hit this line.
 {% endhighlight %}
 
-What if we add a few new tricks? In the meantime I'll be at [contrafactum](https://github.com/contrafactum/) on GitHub.
+In the meantime I'll be at [contrafactum](https://github.com/contrafactum/) on GitHub.
