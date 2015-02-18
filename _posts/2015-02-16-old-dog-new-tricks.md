@@ -3,7 +3,7 @@ layout: post
 title: old dog, new tricks
 ---
 
-A loop that only terminates when the system kills its process?
+A loop that only terminates when killed.
 
 {% highlight python %}
 while True:
@@ -13,4 +13,4 @@ else:
 	# Nothing. We'll never hit this line.
 {% endhighlight %}
 
-A new trick or two might make it more interesting. In the meantime I'll be at [contrafactum](https://github.com/contrafactum/) on GitHub.
+What if we add a few new tricks? In the meantime I'll be at [contrafactum](https://github.com/contrafactum/) on GitHub.
