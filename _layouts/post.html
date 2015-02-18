@@ -10,7 +10,7 @@ layout: default
   </div>
 
   <div class="date">
-    {{ page.date | date: "%B %e, %Y" }}
+    {{ page.date | date: "%D, %T" }}
   </div>
 
   {% include disqus.html disqus_identifier=page.disqus_identifier %}
