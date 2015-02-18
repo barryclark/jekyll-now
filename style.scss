@@ -227,6 +227,7 @@ nav {
 
   a {
     margin-left: 20px;
+    text-align: left;
     color: $darkGray;
     font-weight: 300;
     letter-spacing: 1px;
@@ -267,7 +268,6 @@ nav {
   }
 
   .read-more {
-    text-align: left;
     text-transform: lowercase;
   }
 }
