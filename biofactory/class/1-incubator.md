@@ -10,12 +10,13 @@ Build your own incubator and start growing microbes under controlled conditions.
 
 ## Schedule
 
-* Introduction
-* Microbiology fundamentals & Biological safety instructions
-* Arduino programming & soldering
-* Incubator design
-* Documentating your designs
-* Microorganism cultivation & enrichment practical intro
+* [Introduction](/biofactory/class/1/pdf/0 Introduction.pdf)
+* [Microbiology fundamentals & Biological safety instructions](/biofactory/class/1/pdf/1 Microbiology.pdf)
+* [Arduino programming & soldering](/biofactory/class/1/pdf/2 Arduino & soldering.pdf)
+* [Art & Biohacking](/biofactory/class/1/pdf/3 Art & Bio Hacking.pdf)
+* [Incubator design](/biofactory/class/1/pdf/5 Incubator design.pdf)
+* [Documentating your designs](/biofactory/class/1/pdf/4 Documentation.pdf)
+* [Microorganism cultivation & enrichment practical intro](/biofactory/class/1/pdf/6 Microorganism cultivation.pdf)
   * [Contamination test](/biofactory/class/1-incubator/contamination-test/)
   * [Isolation of Yoghurt bacteria](/biofactory/class/1-incubator/yoghurt-bacteria-isolation/)
   * [Isolation of Beer yeasts](/biofactory/class/1-incubator/beer-yeasts-isolation/)
