@@ -26,7 +26,7 @@ You set up your page and contact and then you have to submit your form once. Aft
     <br />
     What do you have to say? 
     <br /><textarea name="body"></textarea>
-    <input type="hidden" name="_next" value="//{{ site.url }}/thanks/" />
+    <input type="hidden" name="_next" value="{{ site.url }}/thanks/" />
     <input type="hidden" name="_subject" value="Contact from website!" />
     <input type="text" name="_gotcha" style="display:none" />
     <input type="submit" value="Send">
