@@ -216,6 +216,7 @@ nav {
   margin-top: 23px; // @TODO: Vertically middle align
   font-family: $helveticaNeue;
   font-size: 18px;
+  text-transform: lowercase;
 
   @include mobile {
     float: none;
@@ -268,7 +269,6 @@ nav {
 
   .read-more {
     text-transform: lowercase;
-    font-size: 15px;
   }
 }
 
