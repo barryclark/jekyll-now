@@ -116,8 +116,7 @@ img {
 }
 
 .date {
-  text-align: center;
-  font-size: 15px;
+  text-align: right;
   font-style: italic;
   color: $gray;
 }
@@ -129,7 +128,7 @@ img {
 }
 ::selection {
   color: $black;
-  background: $lightGray;
+  background: $yellow;
 }
 
 // Nicolas Gallagher's micro clearfix hack
