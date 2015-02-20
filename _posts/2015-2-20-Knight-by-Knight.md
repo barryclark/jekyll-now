@@ -1,6 +1,6 @@
 ---
 layout: post
-title: It's up and running!
+title: Knight by Knight
 ---
   Mysterious murders have happened all over Kenderhead and the inhabitants are scared. Ten murders in ten weeks, all committed with sharp objects, and no leads...
   Ivan Walters is a Private Investigator who has a keen fondness for books and might be able to find a pattern.
