@@ -9,7 +9,12 @@ layout: default
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
       <div class="entry">
-        {{ post.content | truncatewords:40}}
+        {% for post in site.posts %}
+          <h1><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+          <p>{{ post.excerpt }}</p>
+          <a class="post-link2" href="{{ post.url | prepend: site.baseurl }}">&#187; Read more</a>
+        {% endfor %}
       </div>
       
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
