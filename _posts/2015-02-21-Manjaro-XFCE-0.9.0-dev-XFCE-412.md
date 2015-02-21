@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Manjaro XFCE 0.9.0-dev with XFCE 4.12
+title: Manjaro 0.9.0-dev with XFCE 4.12
 ---
 
 Xfce 4.12 will be released by the end of February. Here's an update on some of the completed features.
