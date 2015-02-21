@@ -4,12 +4,12 @@ title: About me
 permalink: /about/
 ---
 
-Currently I am a CS student at the [http://mff.cuni.cz](Faculty of Mathematics and Physics) at [http://cuni.cz](Charles University) in Prague.
+Currently I am a CS student at the [Faculty of Mathematics and Physics](http://mff.cuni.cz) at [Charles University](http://cuni.cz) in Prague.
 
 ### CV
 
-Here is my [/about/cv.pdf](semi-updated CV).
-For an up-to-date version, see my [https://www.linkedin.com/in/oskopek](LinkedIn profile).
+Here is my [semi-updated CV](/about/cv.pdf).
+For an up-to-date version, see my [LinkedIn profile](https://www.linkedin.com/in/oskopek).
 
 ### Contact me
 
