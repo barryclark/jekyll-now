@@ -6,7 +6,7 @@ permalink: /about/
 
 ### Contact me
 
-[//]: # ([oskopek@oskopek.com](mailto:oskopek@oskopek.com))
+Professional address: [oskopek@oskopek.com](mailto:oskopek@oskopek.com)
 
 School address: [oskopek@matfyz.cz](mailto:oskopek@matfyz.cz)
 
