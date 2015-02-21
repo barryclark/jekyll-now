@@ -19,10 +19,7 @@ Some of the features that have been completed for Xfce 4.12 include:
 * The xfce4-settings area has improved display settings with the ability to clone displays via the GUI and other basic monitor management options. There's also now mouse settings as part of xfce4-settings.
 * The xfwm4 window manager has smart placement optimizations for determining the best area to place a new window where it's least covered on the screen. Xfwm4 also now supports alinging windows next to each other rather than using random gaps. 
 
-kind regards
-
-Philip Müller
-Manjaro Development Team
+Kind regards, The Manjaro Team.
 
 ----
 
