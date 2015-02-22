@@ -9,7 +9,7 @@ layout: default
   <header>
     
     <h1 id="{{ post.title }}">{{ post.title }}</h1>
-    {% if post.generic %}<p>{{ post.generic }}</p>{% endif %}
+    {% if post.generic and title_obvious != true %}<p>{{ post.generic }}</p>{% endif %}
     
   </header>
 
