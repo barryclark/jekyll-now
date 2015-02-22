@@ -14,6 +14,11 @@ authors:
 links:
   - type: GitHub
     url: serge1peshcoff/photostream
+  - type: License
+    url: 'https://github.com/serge1peshcoff/photostream/blob/master/debian/copyright'
+  - type: Build
+    url: 'https://github.com/serge1peshcoff/photostream/blob/master/README.md'
+    
 ---
 
 Build instructions are available at the GitHub page.

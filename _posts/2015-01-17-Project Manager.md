@@ -10,6 +10,6 @@ license:
 authors: 
   - name: Adam "donadigo" Bieńkowski
     url: "https://launchpad.net/~donadigo"
-
+    
 links:
 ---

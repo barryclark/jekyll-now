@@ -16,7 +16,7 @@ links:
     url: "http://radiotray.sourceforge.net"
   - type: Bitbucket
     url: "carlmig/radio-tray"
-
+    
 tags:
   - Python
   - GTK2
