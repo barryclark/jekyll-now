@@ -1,12 +1,15 @@
 {% for link in post.links %}
-  {% if link.type == "Launchpad" %}
+  {% case link.type %}
+  {% when "Launchpad" %}
     {% assign prefix = "https://launchpad.net/" %}
-  {% elsif link.type == "GitHub" %}
+  {% when "GitHub" %}
     {% assign prefix = "https://github.com/" %}
-  {% elsif link.type == "Google+" %}
+  {% when "Google+" %}
     {% assign prefix = "https://plus.google.com/" %}
-  {% elsif link.type == "Bitbucket" %}
+  {% when "Bitbucket" %}
     {% assign prefix = "https://bitbucket.org/" %}
+  {% when "Build" or "License" %}
+    {% continue %}
   {% else %}
     {% assign prefix = nil %}
   {% endif %}

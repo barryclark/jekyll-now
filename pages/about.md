@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-A ressource for 3rd party software designed for [elementary (OS)](http://elementaryos.org). If you find an error or want to add an app, [file an issue](https://github.com/quassy/elementary-apps/issues/new). You can find detailed info about contributing in the [readme file]({{ site.baseurl }}/readme).
+A ressource for 3rd party software designed for [elementary (OS)](http://elementary.io). If you find an error or want to add an app, [file an issue](https://github.com/quassy/elementary-apps/issues/new). You can find detailed info about contributing in the [readme file]({{ site.baseurl }}/readme).
 
 Started at [/r/elementaryos](http://www.reddit.com/r/elementaryos/comments/2r0xey/third_party_development_and_apps/), [with](http://madeforelementary.tumblr.com/) [some](https://github.com/PerfectCarl/elementary-apps) [inspiration](https://github.com/elementary-fr/ideas).
 
@@ -22,7 +22,7 @@ Started at [/r/elementaryos](http://www.reddit.com/r/elementaryos/comments/2r0xe
 
 ## Other elementary links
 
-* [official journal](http://elementaryos.org/journal)
+* [Journal](http://elementary.io/journal) & [Blog](http://blog.elementary.io)
 * [designs and mockups on deviantArt](http://elementaryos.deviantart.com/)
-* [official developers starting point](http://elementaryos.org/developer)
+* [official developers starting point](http://elementary.io/developer)
 * [Launchpad project](https://launchpad.net/elementary/)
