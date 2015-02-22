@@ -9,10 +9,10 @@
   {% when "Bitbucket" %}
     {% assign prefix = "https://bitbucket.org/" %}
   {% when "Build" or "License" %}
-    {% continue %}
+    {% assign prefix = nil %}
   {% else %}
     {% assign prefix = nil %}
-  {% endif %}
+  {% endcase %}
   <a href="{{ prefix }}{{ link.url }}">
     {% if link.name %}{{ link.name }}{% else %}{{ link.type }}{% endif %}</a>{% if forloop.last == false %}, {% endif %}  
 {% endfor %}
