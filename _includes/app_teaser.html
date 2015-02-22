@@ -3,7 +3,8 @@
     {% for screenshot in post.screenshots %}
       <img src="{{ site.baseurl }}/images/screenshots/{{ screenshot }}" alt="Screenshot of {{ post.title }}" />
     {% endfor %}
-    
+  </div>
+  <p id="showcase" style="text-align:center">
     {% for link in post.links %}
       {% case link.type %}
       {% when "Screenshots" or "Videos" %}
@@ -14,7 +15,7 @@
       <a href="{{ prefix }}{{ link.url }}">
         {% if link.name %}{{ link.name }}{% else %}{{ link.type }}{% endif %}</a>{% if forloop.last == false %}, {% endif %}  
     {% endfor %}
-  </div>
+  </p>
 {% endif %}
   
   
