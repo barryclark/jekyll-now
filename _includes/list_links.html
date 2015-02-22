@@ -10,6 +10,8 @@
     {% assign prefix = "https://bitbucket.org/" %}
   {% when "Build" or "License" %}
     {% assign prefix = nil %}
+  {% when "Screenshots" or "Videos" %}
+    {% continue %}
   {% else %}
     {% assign prefix = nil %}
   {% endcase %}
