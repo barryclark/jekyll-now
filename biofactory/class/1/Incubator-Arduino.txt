@@ -36,7 +36,7 @@ NOTICE for first time users:
 
 // Define pins
 #define fanPin 3     // The mosfet that drives the 80mm fan is connected to pin 3
-#define relayPin 6   // Pin for the relay that controls the 100W light
+#define relayPin 2   // Pin for the relay that controls the 100W light
 #define buttonPin1 7 // Pin for the push button left of the screen
 #define buttonPin2 8 // Pin for the push button right of the screen
 #define ledPin 13    // Arduino nboard LED pin used as indicator
@@ -149,6 +149,9 @@ void loop() {             //This function loops while the arduino is powered
     digitalWrite(ledPin, LOW); 
     
   }  
+
+  button1State = 0;
+  button2State = 0; 
   
   // Print the new target temperature to the Serial port
   Serial.println(targetTemp);
