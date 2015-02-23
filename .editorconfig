@@ -1,0 +1,15 @@
+# This file is for unifying the coding style for different editors and IDEs.
+# More information at http://EditorConfig.org
+root = true
+
+# Baseline configuration (applies to all filetypes)
+[*]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+
+# Markdown customizations
+[*.md]
+trim_trailing_whitespace = false
