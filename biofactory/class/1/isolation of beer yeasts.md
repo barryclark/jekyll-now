@@ -39,7 +39,7 @@ Especially famous Belgian beers continue to ferment in the bottle. During fermen
 1. Label the 5 test tubes: -1, -3, -5, -7 and -9
 2. Add 9 mL Ringer's solution to tube -1
 3. Add 9.9 mL Ringer's solution to tube -3, -5, -7 and -9
-4. Add 1 g of yoghurt to tube -1 and vortex/mix
+4. Add 1 g of beer to tube -1 and vortex/mix
 5. With the use of sterile pipette transfer 0.1 mL from the -1 tube to the -3 tube. Vortex / mix.
 6. Transfer 0.1 mL from the -3 tube to the -5 tube. Vortex / mix.
 7. Transfer 0.1 mL from the -5 tube to the -7 tube. Vortex / mix.
