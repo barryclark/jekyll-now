@@ -14,11 +14,11 @@ open source publishing.
 
 ## Schedule
 
-* Microbial physiology & Nutrient diversity
-* Microscopy & Optics theory
-* Open Source licensing & publishing
-* Microscope design
-* Microscopy practical
+* [Microbial physiology & Nutrient diversity](/biofactory/class/2/pdf/1 Microbial physiology & nutrient diversity.pdf)
+* [Microscopy & Optics theory](/biofactory/class/2/pdf/2 Microscopy & Optics theory.pdf)
+* [Open Source licensing & publishing](/biofactory/class/2/pdf/3 Open Source licensing & publishing.pdf)
+* [Microscope design](/biofactory/class/2/pdf/4 Microscope design.pdf)
+* [Microscopy practical](/biofactory/class/2/pdf/5 Microscopy practical.pdf)
   * [Preparing microscope slides](/biofactory/class/2-microscope/preparing-slides/)
   * [Operating a microscope](/biofactory/class/2-microscope/operating-microscope/)
   * [Gram Staining](/biofactory/class/2-microscope/gram-staining/)
