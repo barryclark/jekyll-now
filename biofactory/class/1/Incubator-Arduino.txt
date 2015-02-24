@@ -60,7 +60,7 @@ int segG = 11; //Display pin 15
 // Display pin 1 & 8: digit 1 & 4
 
 // Define variables
-int targetTemp = 25;   // Initial target temperature
+int targetTemp = 18;   // Initial target temperature
 int button1State = 0;  // variable for reading the pushbutton status
 int button2State = 0;  // variable for reading the pushbutton status
 
@@ -68,7 +68,15 @@ int button2State = 0;  // variable for reading the pushbutton status
 boolean set_mode = false;
 long set_time = 5000; // max set mode time 
 long begin_set_time = 0;
+long switch_time = 3000;
+long begin_switch_time = 0;
+long temp_time = 2000;
+long begin_temp_time = 0;
 
+// Vars
+int val;                //Create an integer variable
+double temp;            //Variable to hold a temperature value
+  
 void setup() {            //This function gets called when the Arduino starts
   Serial.begin(115200);   //This code sets up the Serial port at 115200 baud rate
   
@@ -95,6 +103,7 @@ void setup() {            //This function gets called when the Arduino starts
   
   // Set time
   begin_set_time = millis();  
+  begin_switch_time = millis();  
 }
 
 // Thermistor function
@@ -108,18 +117,24 @@ double Thermister(int RawADC) {  //Function to perform the fancy math of the Ste
 }
  
 void loop() {             //This function loops while the arduino is powered
-  int val;                //Create an integer variable
-  double temp;            //Variable to hold a temperature value
-  val=analogRead(5);      //Read the analog port 0 and store the value in val
-  temp=Thermister(val);   //Runs the fancy math on the raw analog value
-  Serial.println(temp);   //Print the value to the serial port
-  
-  // Turn the 100W infrared light on or of depending on temperature
-  if (temp < targetTemp) {
-    digitalWrite(relayPin, HIGH);
+
+  if((millis() - begin_temp_time) > temp_time) {
+    val=analogRead(5);      //Read the analog port 0 and store the value in val
+    temp=Thermister(val);   //Runs the fancy math on the raw analog value
+    Serial.println(temp);   //Print the value to the serial port
+    begin_temp_time = millis();
   }
-  else {
-    digitalWrite(relayPin, LOW);
+  
+  if((millis() - begin_switch_time) > switch_time) {
+    // Turn the 100W infrared light on or of depending on temperature
+    if (temp < targetTemp) {
+      digitalWrite(relayPin, HIGH);
+      begin_switch_time = millis(); 
+    }
+    else {
+      digitalWrite(relayPin, LOW);
+      begin_switch_time = millis(); 
+    }
   }
   
   // Keep spinning the fan
@@ -137,12 +152,14 @@ void loop() {             //This function loops while the arduino is powered
     ++targetTemp;      
     begin_set_time = millis();        // Reset set mode counter
     if(targetTemp > 50) targetTemp = 50;  // Sanity check, do not allow temperatures higher than 50  
+    delay(500);
   } 
   else if (button2State == HIGH) {
     digitalWrite(ledPin, HIGH);
     --targetTemp;
     begin_set_time = millis(); // Reset set mode counter
     if(targetTemp < 0) targetTemp = 0;  // Sanity check, do not allow temperatures higher than 50    
+    delay(500);
   }
   else {
     // turn LED off:
@@ -165,8 +182,6 @@ void loop() {             //This function loops while the arduino is powered
     // Display current temperature
     displayNumber(constrain(temp,0,99)*10);
   }
-  
-  delay(100);            //Wait one hundred millisecond before we do it again  
 }
 
 // Functions for controlling the LCD display
