@@ -15,6 +15,7 @@ open source publishing.
 ## Schedule
 
 * [Microbial physiology & Nutrient diversity](/biofactory/class/2/pdf/1 Microbial physiology & nutrient diversity.pdf)
+* [Optics & The Cell](/biofactory/class/2/pdf/Optics & the cell.pdf)
 * [Microscopy & Optics theory](/biofactory/class/2/pdf/2 Microscopy & Optics theory.pdf)
 * [Open Source licensing & publishing](/biofactory/class/2/pdf/3 Open Source licensing & publishing.pdf)
 * [Microscope design](/biofactory/class/2/pdf/4 Microscope design.pdf)
