@@ -10,6 +10,8 @@ permalink: /biofactory/participants/documentation/
   * [Eline](http://elinevanderploeg.github.io/endexam/biohack.html)
   * [Tamara](http://tamaratomoro.github.io/)
   * [Tony](https://github.com/tg4259)
+  * [Giacomo](https://github.com/GG-loop)
+  * [Yuan](https://github.com/Yuanamoto)
 * [Garagem Fablab](http://www.garagemfablab.com) - São Paulo
 * [DIYBio Barcelona](http://www.meetup.com/Barcelona-DIYbio-Meetup/) - Barcelona
 * [University of New Mexico](http://www.unm.edu) - Albuquerque

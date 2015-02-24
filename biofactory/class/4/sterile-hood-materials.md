@@ -19,6 +19,7 @@ This time we will not use a microprocessor.
 |3|1|Inline cord switch|[Gamma](https://www.gamma.nl/assortiment/gamma-snoerschakelaar-wit/p/B456235)|2.19|
 |4|1|Power cord|[Gamma](https://www.gamma.nl/assortiment/gamma-huishoudsnoer-rond-3x1-5-mm-wit-5-m/p/B457211)|14.29|
 |5|1|Wall socket power plug|[Gamma](https://www.gamma.nl/assortiment/stekker-wit/p/B306915)|1.09|
+|6|2|Kitchen range hood filters (15 x 25 cm)|[Blokker](http://www.blokker.nl/nl/blknl/handy-afzuigkapfilter-universeel)|4.99|
 |--|--|---|---|---|
 |||*Total costs*|||
 
