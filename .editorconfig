@@ -1,14 +1,17 @@
-# This file is for unifying the coding style for different editors and IDEs.
-# More information at http://EditorConfig.org
+# This file is used by editors and IDEs to unify coding standards
+# @see http://EditorConfig.org
+# @styling https://github.com/styleguide/ruby
+
 root = true
 
-# Baseline configuration (applies to all filetypes)
+# Default configuration (applies to all file types)
 [*]
 indent_style = space
 indent_size = 2
-end_of_line = lf
-charset = utf-8
 trim_trailing_whitespace = true
+insert_final_newline = true
+charset = utf-8
+end_of_line = lf
 
 # Markdown customizations
 [*.md]
