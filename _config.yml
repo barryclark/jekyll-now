@@ -3,7 +3,7 @@
 #
 
 # Name of your site (displayed in the header)
-name: Hoff
+name: Neil Hoff
 
 # Short bio or description (displayed in the header)
 description: Lessons Learned from a Web Developer / SharePoint Admin / SAP Basis Admin / Whatever Breaks Admin 
@@ -25,7 +25,7 @@ footer-links:
   instagram:
   linkedin:
   pinterest:
-  rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
+  rss: anything # just type anything here for a working RSS icon, make sure you set the "url" above!
   twitter: neilhoff
   stackoverflow: /users/756623/neil-hoff
   youtube: # channel/<your_long_string> or user/<user-name>
