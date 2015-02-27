@@ -25,6 +25,7 @@ Make sure you have an Arduino or equivalent microprocessor.
 |9|1|Push button|[iPrototype](https://iprototype.nl/products/components/buttons-switches/momentary-push-button), [EOO](http://www.eoo-bv.nl/index.php?_a=viewProd&productId=14721)|0.55|
 |10|4|Rubber feet|[Conrad](https://www.conrad.nl/nl/toolcraft-elastische-buffer-zelfklevend-pd2104sw-x-h-10-mm-x-4-mm-zwart-1-stuks-401489.html)|0.08|
 |11|1|Sheet of 45cm x 95cm 3mm MDF|Houthandel Schmidt||
+|12|1|Heavy weight max 12cm diameter|[Bol](http://www.bol.com/nl/p/bremshey-halterschijven-1-x-0-5-kg-30-mm/9200000019401344/)|4.79|
 |--|--|---|---|---|
 |||*Total costs*|||
 

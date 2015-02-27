@@ -23,7 +23,9 @@ For this device you do not need an Arduino or equivalent microprocessor.
 |7|1|Power supply|||
 |8|1|Red LED|[iPrototype](https://iprototype.nl/products/components/led-lcd/rood#)|0.15|
 |9|1|470 ohm resistor|[iPrototype](https://iprototype.nl/products/components/resistors/470R)|0.45|
-|10|1|Magnetic stirring rod|[Supermagnete](http://www.supermagnete.nl/eng/rod-magnets-neodymium/rod-magnet-diameter-12mm-height-60mm-neodymium-n38-nickel-plated_S-12-60-N)|5.71|
+|10|1|Magnetic stirring rod|[Hinmeijer](http://www.hinmeijer.nl/product/121939/Magneetroerstaafjes_ellipsvormig.aspx)|3.06|
+|11|1|Heavy weight, max 12 cm diameter|[Bol](http://www.bol.com/nl/p/bremshey-halterschijven-1-x-0-5-kg-30-mm/9200000019401344/)|4.72|
+|12|4|Rubber feet|[Conrad](https://www.conrad.nl/nl/toolcraft-elastische-buffer-zelfklevend-pd2104sw-x-h-10-mm-x-4-mm-zwart-1-stuks-401489.html)|0.08|
 |--|--|---|---|---|
 |||*Total costs*|||
 
