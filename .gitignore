@@ -7,3 +7,6 @@ Gemfile
 Gemfile.lock
 node_modules
 package.json
+
+# Rubymine files
+.idea
