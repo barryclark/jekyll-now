@@ -175,8 +175,8 @@
 			}
 			// cleaner underlines for links
 			a { text-decoration: none; }
-			p > a,
-			li > a {
+			p a,
+			li a {
 				border-bottom: 1px dotted lighten($link-color, 50);
 				&:hover {
 					border-bottom-style: solid;
