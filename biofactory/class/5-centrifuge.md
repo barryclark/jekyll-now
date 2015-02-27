@@ -27,6 +27,7 @@ This week we will build the centrifuge. Download the design files here:
 * [SVG laser cut files](/biofactory/class/5/Centrifuge-SVGs.zip)
 * [Fritzing wiring](/biofactory/class/5/Centrifuge-Fritzing.fzz)
 * [Arduino code](/biofactory/class/5/Centrifuge-Arduino.zip)
+  * The code also contains a number of examples, to test some components separately
 
 ![Sterile Hood](/biofactory/class/5/Centrifuge.png)
 
@@ -44,6 +45,9 @@ Start sketching your bioreactor controller in Fritzing.
 
 * Electronics
   * [Electronics for Dummies](http://www.amazon.com/Electronics-For-Dummies-Cathleen-Shamieh/dp/0470286970)
+  * [Rotary Encoder](http://bildr.org/2012/08/rotary-encoder-arduino/)
+  * [Electronic Speed Controller](http://www.rctoys.com/pr/2006/12/11/choosing-the-right-electronic-speed-control-esc-for-your-electric-rc-airplane/)
+  * [Arduino I2C Wire functionality](http://www.arduino.cc/en/Reference/Wire)
 * Fritzing
   * [Fritzing Tutorials](http://fritzing.org/learning/tutorials)
 * Centrifugation
