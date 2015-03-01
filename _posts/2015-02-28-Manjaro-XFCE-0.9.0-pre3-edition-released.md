@@ -81,4 +81,4 @@ Philip Müller, Manjaro Development Team
 ##Links
 
 * [Download here](http://sourceforge.net/projects/manjarotest/files/0.9.0/xfce/0.9.0-pre3/)
-* [Forum post](https://forum.manjaro.org/index.php?topic=20924.0)
+* [Forum post](http://manjaro.freeforums.net/thread/3/manjaro-xfce-9-pre3-feedback)
