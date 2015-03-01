@@ -25,16 +25,16 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 740px;
+  max-width: 960px;
   padding: 0 10px;
   width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
+  //font-family: $helveticaNeue;
   color: $darkerGray;
   font-weight: bold;
-
+  font-family: $helveticaNeue;
   line-height: 1.7;
   margin: 1em 0 15px;
   padding: 0;
@@ -108,6 +108,10 @@ strong, b {
 
 img {
   max-width: 100%;
+}
+
+pre {
+  font-size: 0.75em;
 }
 
 // Fixes images in popup boxes from Google Translate
@@ -198,15 +202,19 @@ img {
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
+  line-height: 1;
+  padding-bottom: 8px;
 }
 
 .site-description {
   margin: -5px 0 0 0;
   color: $gray;
   font-size: 16px;
+  max-width: 400px;
 
   @include mobile {
     margin: 3px 0;
+    max-width: 100%;
   }
 }
 
