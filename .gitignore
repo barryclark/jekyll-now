@@ -10,3 +10,7 @@ package.json
 
 # Rubymine files
 .idea
+
+# Windows Stuff
+Thumbs.db
+
