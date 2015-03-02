@@ -1,5 +1,10 @@
-// ANIMATIONS
-// --------------------------------------------------
+/* ==========================================================================
+   Animations
+   ========================================================================== */
+
+/*
+   Wiggle animation
+   ========================================================================== */
 
 @include keyframes(wiggle) {
 	25%, 50%, 75%, 100% { @include transform-origin(top center); }
@@ -9,12 +14,18 @@
 	100% { @include transform(rotate(0deg)); }
 }
 
+/*
+   Pop animation
+   ========================================================================== */
 
 @include keyframes(pop) {
 	50% { @include transform(scale(1.1)); }
 	100% { @include transform(scale(1)); }
 }
 
+/*
+   Hang animation
+   ========================================================================== */
 
 @include keyframes(hang) {
 	50% { @include transform(translateY(-3px)); }

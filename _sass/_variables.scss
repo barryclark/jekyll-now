@@ -1,7 +1,10 @@
-// SASS VARIABLES
-// --------------------------------------------------
+/* ==========================================================================
+   SCSS Variables
+   ========================================================================== */
 
-// Typography variables
+/*
+   Typography variables
+   ========================================================================== */
 
 $base-font                   	: Georgia,Times,"Times New Roman",serif;
 $heading-font                	: "Helvetica Neue","Segoe UI",Arial,sans-serif;
@@ -14,17 +17,23 @@ $doc-line-height             	: 24;
 
 $border-radius               	: 3px;
 
+/*
+   Color variables
+   ========================================================================== */
 
-// Color variables
+$white                        : #fff;
+$black                        : #000;
 
 $body-color                  	: #ebebeb;
+
 $text-color                  	: #313130;
+$caption-color                : mix($white, $text-color, 25%);
+
 $base-color                  	: #343434;
 $comp-color                  	: complement($base-color);
 $border-color                	: #ddd;
-$white                       	: #fff;
-$black                       	: #000;
 $link-color                  	: #222;
+
 $primary-color               	: $black;
 $success-color               	: #2ecc71;
 $warning-color               	: #f1c40f;
@@ -39,21 +48,23 @@ $table-hover-color           	: darken($table-background, 2);
 $table-stripe-color          	: darken($table-background, 4);
 $table-stripe-color-hover    	: darken($table-stripe-color, 5);
 
-$facebook-color					: #3b5998;
-$flickr-color					: #ff0084;
-$foursquare-color				: #0cbadf;
-$google-plus-color				: #dd4b39;
-$instagram-color				: #4e433c;
-$linkedin-color					: #4875b4;
-$pinterest-color				: #cb2027;
-$rss-color						: #fa9b39;
-$tumblr-color					: #2c4762;
-$twitter-color					: #55acee;
-$vimeo-color					: #1ab7ea;
-$youtube-color					: #ff3333;
+$facebook-color					      : #3b5998;
+$flickr-color					        : #ff0084;
+$foursquare-color				      : #0cbadf;
+$google-plus-color				    : #dd4b39;
+$instagram-color				      : #4e433c;
+$linkedin-color					      : #4875b4;
+$pinterest-color				      : #cb2027;
+$rss-color						        : #fa9b39;
+$tumblr-color					        : #2c4762;
+$twitter-color					      : #55acee;
+$vimeo-color					        : #1ab7ea;
+$youtube-color		            : #ff3333;
 
 
-// Form variables
+/*
+   Form variables
+   ========================================================================== */
 
 $form-border-color           	: $border-color;
 $form-border-color-hover     	: darken($border-color, 10);
@@ -65,7 +76,9 @@ $form-font-family            	: $base-font;
 $form-font-size              	: $doc-font-size;
 
 
-// Sliding Menu Navigation
+/*
+   Sliding menu navigation variables
+   ========================================================================== */
 
 $sliding-menu-border-color	 	 : $black;
 $sliding-menu-background 		   : $black;
@@ -77,8 +90,21 @@ $button-size		         	     : 30px;
 $transition						         : 0.3s; // increase this to see the transformations in slow-motion
 $sliding-menu-animation        : all 500ms cubic-bezier(.86,.01,.77,.78);
 
+/*
+   Badge variables
+   ========================================================================== */
+
+$badge-background              : $primary-color;
+$badge-dark-color              : $black;
+$badge-danger-color            : $danger-color;
+$badge-info-color              : $info-color;
+$badge-warning-color           : $warning-color;
+$badge-success-color           : $success-color;
+$badge-font-color              : $white;
 
 
-// Masthead
+/*
+   Masthead variables
+   ========================================================================== */
 
 $masthead-height: $button-size * 2;

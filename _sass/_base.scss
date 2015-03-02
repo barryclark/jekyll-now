@@ -1,5 +1,10 @@
-// TYPOGRAPHY
-// --------------------------------------------------
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+/*
+   Typography
+   ========================================================================== */
 
 body {
 	font-family: $base-font;
@@ -15,7 +20,8 @@ li {
 	@include font-size(16,12,24);
 }
 
-// Headings
+/* Headings */
+
 h1, h2, h3, h4, h5, h6 {
 	font-family: $heading-font;
 	text-rendering: optimizeLegibility; // Fix the character spacing for headings
@@ -39,13 +45,16 @@ h6 {
 	@include font-size(18);
 }
 
+/* Underlined text */
+
 u,
 ins {
 	text-decoration: none;
 	border-bottom: 1px solid $text-color;
 }
 
-// Links
+/* Links */
+
 a {
 	color: $link-color;
 	&:hover {
@@ -60,47 +69,22 @@ a {
 	}
 }
 
-// Captions
-figcaption {
-	padding-left: 2 * $gutter;
-	padding-right: 2 * $gutter;
-	font-family: $alt-font;
-	@include font-size(12,no,15);
-	color: lighten($text-color, 10);
-	text-align: center;
-	clear: both;
-	@include media($large) {
-		position: absolute;
-		top: 1px;
-		right: (3 * $column + $gutter) * -1;
-		padding-top: 10px;
-		padding-left: 0;
-		padding-right: 0;
-		width: (3 * $column);
-		text-align: left;
-		&:before {
-			content: '';
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 50px;
-			height: 1px;
-			background: lighten($black, 70);
-		}
-	}
-	a {
-		text-decoration: none;
-	}
-}
+/* Quoted text */
 
-// Blockquotes
 blockquote {
-	padding-left: $gutter;
-	padding-right: $gutter;
-	font-style: italic;
-	p {
-		@include font-size(16);
-	}
+  padding-left: $gutter;
+  padding-right: $gutter;
+  border-left: 6px solid $info-color;
+  p {
+    font-family: $alt-font;
+    @include font-size(24);
+  }
+  cite {
+    font-family: $base-font;
+    font-weight: 700;
+    font-style: normal;
+    @include font-size(18);
+  }
 }
 
 // Code
@@ -122,7 +106,105 @@ li code {
 	border-radius: $border-radius;
 }
 
-// Tables
+/*
+   Media and embeds
+   ========================================================================== */
+
+/* Figures and images */
+
+figure {
+  margin-left: -1 * $gutter;
+  margin-right: -1 * $gutter;
+  // full width figures on small screens
+  @include media($small) {
+    margin-left: 0;
+    margin-right: 0;
+    position: relative;
+  }
+  @include clearfix;
+  img,
+  .fluid-width-video-wrapper,
+  .palette {
+    margin-bottom: (0px + $doc-line-height) / 2;
+    // margin-bottom: (0rem + ($doc-line-height / $doc-font-size)) / 2;
+  }
+  a {
+    img {
+      /* Image hover animation */
+      @include transition(box-shadow 0.3s);
+      &:hover {
+        box-shadow: 0 0 10px rgba($black, .20);
+      }
+    }
+  }
+  &.half {
+    @include outer-container;
+    @include media($small) {
+      a,
+      > img {
+        @include span-columns(6);
+        @include omega(2n);
+      }
+      figcaption {
+        clear: left;
+      }
+    }
+  }
+  &.third {
+    @include outer-container;
+    @include media($small) {
+      a,
+      > img {
+        @include span-columns(4);
+        @include omega(3n);
+      }
+      figcaption {
+        clear: left;
+      }
+    }
+  }
+}
+
+/* Figure captions */
+
+figcaption {
+  padding-left: $gutter;
+  padding-right: $gutter;
+  @include media($small) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  font-family: $alt-font;
+  @include font-size(14,yes);
+  color: $caption-color;
+  clear: both;
+  a {
+    color: $caption-color;
+    text-decoration: none;
+    border-bottom: 1px dotted $caption-color;
+    &:hover {
+      border-bottom-style: solid;
+    }
+  }
+}
+
+.half,
+.third {
+  & figcaption { /* Remove caption indents */
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* Fix IE9 SVG bug */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/*
+   Tables
+   ========================================================================== */
+
 table {
 	border-collapse: collapse;
 	margin: ((0px + $doc-line-height) / 2) 0;
@@ -157,10 +239,10 @@ tr, td, th {
 	vertical-align: middle;
 }
 
-// ELEMENTS (MEDIA, EMBEDS, BUTTONS, ETC.)
-// --------------------------------------------------
+/*
+   Horizontal rules
+   ========================================================================== */
 
-// Line rules
 hr {
 	display: block;
 	position: relative;
@@ -180,66 +262,9 @@ hr {
 	}
 }
 
-// Figures and images
-figure {
-	margin-left: -1 * $gutter;
-	margin-right: -1 * $gutter;
-	// full width figures on small screens
-	@include media($medium) {
-		margin-left: 0;
-		margin-right: 0;
-		position: relative;
-	}
-	@include clearfix;
-	img {
-		margin-bottom: 0px + $doc-line-height;
-		margin-bottom: 0rem + ($doc-line-height / $doc-font-size);
-	}
-	a {
-		img {
-			// Image hover animation
-			&:hover {
-				@include animation(pop .3s 0 linear);
-				box-shadow: 0 0 10px rgba($black, .20);
-			}
-		}
-	}
-	&.half {
-		@include outer-container;
-		@include media($medium) {
-			a,
-			> img {
-				@include span-columns(6);
-				@include omega(2n);
-			}
-			figcaption {
-				clear: left;
-			}
-		}
-	}
-	&.third {
-		@include outer-container;
-		@include media($medium) {
-			a,
-			> img {
-				@include span-columns(4);
-				@include omega(3n);
-			}
-			figcaption {
-				clear: left;
-			}
-		}
-	}
-}
-
-// Fix IE9 SVG bug
-svg:not(:root) {
-	overflow: hidden;
-}
-
-
-// FORMS
-// --------------------------------------------------
+/*
+   Forms
+   ========================================================================== */
 
 fieldset {
 	background: lighten($border-color, 10);
@@ -332,24 +357,40 @@ input[type="submit"] {
 	white-space: nowrap;
 }
 
-// NAVIGATION
-// --------------------------------------------------
+/*
+   Navigation lists
+   ========================================================================== */
+
+/**
+ * Removes margins, padding, and bullet points from navigation lists
+ *
+ * Example usage:
+ * <nav>
+ *    <ul>
+ *      <li><a href="#link-1">Link 1</a></li>
+ *      <li><a href="#link-2">Link 2</a></li>
+ *      <li><a href="#link-3">Link 3</a></li>
+ *    </ul>
+ *  </nav>
+ */
 
 nav {
-	ul {
-		margin: 0;
-		padding: 0;
-	}
-	li {
-		list-style: none;
-	}
-	a {
-		text-decoration: none;
-	}
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
 }
 
-// GLOBAL TRANSITION
-// --------------------------------------------------
+/*
+   Global animation transition
+   ========================================================================== */
+
 b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a, tr, td, .highlight {
 	@include transition (color 0.2s ease-out, opacity 0.2s ease-out, background 0.2s ease-out, border-color 0.2s ease-out);
 }

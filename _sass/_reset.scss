@@ -1,6 +1,7 @@
-// STYLE RESETS
-// Adapted from http://github.com/necolas/normalize.css
-// --------------------------------------------------
+/* ==========================================================================
+   Style resets
+   Adapted from http://github.com/necolas/normalize.css
+   ========================================================================== */
 
 // Apply a natural box layout model to all elements
 *, *:before, *:after {
@@ -8,7 +9,7 @@
  }
 
 // Remove margin
-body { margin: 0; } 
+body { margin: 0; }
 
 // Display HTML5 elements in IE6-9 and FF3
 article,

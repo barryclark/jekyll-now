@@ -1,7 +1,11 @@
-// BUTTONS
-// --------------------------------------------------
+/* ==========================================================================
+   Buttons
+   ========================================================================== */
 
-// call to action
+/*
+   Default button .btn
+   ========================================================================== */
+
 .btn {
 	display: inline-block;
 	padding: 8px 20px;
@@ -22,6 +26,11 @@
 		@include transform(translateY(1px));
 	}
 }
+
+/*
+   Inverse button .btn-inverse
+   ========================================================================== */
+
 .btn-inverse {
 	@extend .btn;
 	background-color: $white;
@@ -35,6 +44,11 @@
 		background-color: $text-color;
 	}
 }
+
+/*
+   Info button .btn-info
+   ========================================================================== */
+
 .btn-info {
 	@extend .btn;
 	background-color: $info-color;
@@ -46,6 +60,11 @@
 		background-color: lighten($info-color, 10);
 	}
 }
+
+/*
+   Warning button .btn-warning
+   ========================================================================== */
+
 .btn-warning {
 	@extend .btn;
 	background-color: $warning-color;
@@ -57,6 +76,11 @@
 		background-color: lighten($warning-color ,10);
 	}
 }
+
+/*
+   Success button .btn-success
+   ========================================================================== */
+
 .btn-success {
 	@extend .btn;
 	background-color: $success-color;
@@ -68,6 +92,11 @@
 		background-color:lighten($success-color, 10);
 	}
 }
+
+/*
+   Danger button .btn-danger
+   ========================================================================== */
+
 .btn-danger {
 	@extend .btn;
 	background-color: $danger-color;
@@ -79,8 +108,13 @@
 		background-color: lighten($danger-color, 10);
 	}
 }
+
+/*
+   Social media buttons
+   ========================================================================== */
+
 .btn-social {
-	$social: 
+	$social:
     (facebook, $facebook-color),
 		(flickr, $flickr-color),
 		(foursquare, $foursquare-color),
@@ -103,20 +137,20 @@
 	@each $socialnetwork, $color in $social {
 		i.fa-#{$socialnetwork} {
 	    color: $color;
-    }    
+    }
 	}
 	&:hover {
 		color: $white !important;
 	}
 	@each $socialnetwork, $color in $social {
 		&.#{$socialnetwork}:hover {
-		    background: $color;
-		    border-color: $color;
-		    @each $socialnetwork, $color in $social {
-					i.fa-#{$socialnetwork} {
-				    color: $white;
-			    }    
-				}
-	    }    
+	    background: $color;
+	    border-color: $color;
+	    @each $socialnetwork, $color in $social {
+				i.fa-#{$socialnetwork} {
+			    color: $white;
+		    }
+			}
+    }
 	}
 }

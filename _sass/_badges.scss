@@ -1,15 +1,8 @@
-// BADGES
-// --------------------------------------------------
+/* ==========================================================================
+   Badges
+   ========================================================================== */
 
 .badge {
-	$badge-background: $primary-color;
-	$badge-dark-color: $black;
-	$badge-danger-color: $danger-color;
-	$badge-info-color: $info-color;
-	$badge-warning-color: $warning-color;
-	$badge-success-color: $success-color;
-	$badge-font-color: #fff;
-
 	display: inline-block;
 	background: $badge-background;
 	border-radius: 2em;

@@ -1,5 +1,10 @@
-// NOTICES
-// --------------------------------------------------
+/* ==========================================================================
+   Notices
+   ========================================================================== */
+
+/*
+   Default notice .notice
+   ========================================================================== */
 
 @mixin notice($notice-color) {
 	position: relative;
@@ -17,6 +22,11 @@
 .notice {
 	@include notice($primary-color);
 }
+
+/*
+   Inverse notice .notice-inverse
+   ========================================================================== */
+
 .notice-inverse {
 	@include notice($white);
 	color: $text-color;
@@ -24,15 +34,46 @@
 		color: $text-color;
 	}
 }
+
+/*
+   Info notice .notice-info
+   ========================================================================== */
+
 .notice-info {
 	@include notice($info-color);
 }
+
+/*
+   Warning notice .notice-warning
+   ========================================================================== */
+
 .notice-warning {
 	@include notice($warning-color);
 }
+
+/*
+   Success notice .notice-success
+   ========================================================================== */
+
 .notice-success {
 	@include notice($success-color);
 }
+
+/*
+   Danger notice .notice-danger
+   ========================================================================== */
+
 .notice-danger {
 	@include notice($danger-color);
+}
+
+/*
+   Browser upgrade notice
+   ========================================================================== */
+
+.upgrade {
+  text-align: center;
+  a {
+    text-decoration: none;
+  }
 }
