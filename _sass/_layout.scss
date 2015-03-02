@@ -147,26 +147,12 @@
 			@include span-columns(9);
 		}
 	}
-	.toc {
-		@include media($medium) {
-			@include row($direction: RTL);
-		}
-		@include media($large) {
-			@include span-columns(2 of 9);
-		}
-	}
 	.page-title {
 		@include fill-parent;
 	}
 	@at-root {
 		.page-content {
-			@include media($medium) {
-				@include row($direction: RTL);
-				//@include span-columns(7 of 9);
-			}
-			@include media($large) {
-				@include span-columns(7 of 9);
-			}
+			@include fill-parent;
 			// larger font for intro paragraph
 			> p {
 				&:first-child {
@@ -185,6 +171,9 @@
 			p > a.reversefootnote {
 				border-bottom-width: 0;
 			}
+      .toc li > a {
+        border-bottom-width: 0;
+      }
 			.page-footer,
 			.pagination {
 				@include fill-parent;
@@ -316,31 +305,6 @@
 		font-weight: 700;
 		text-align: left;
 		text-transform: uppercase;
-	}
-}
-// table of contents
-.toc {
-	min-height: 1px;
-	ul {
-		margin-top: $gutter;
-		border: 1px solid $border-color;
-		border-radius: $border-radius;
-	}
-	li {
-		@include media($micro) { @include font-size(16,no,18); }
-    @include media($small) { @include font-size(16,no,18); }
-		@include font-size(12,no,16);
-		border-bottom: 1px solid $border-color;
-	}
-	font-family: $alt-font;
-	a {
-		display: block;
-		padding: (.25 * $gutter) (.5 * $gutter);
-		border-left: 2px solid transparent;
-		&:hover,
-		&:focus {
-			background: lighten($border-color,5);
-		}
 	}
 }
 // tiles
