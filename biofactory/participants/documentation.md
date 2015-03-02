@@ -14,6 +14,7 @@ permalink: /biofactory/participants/documentation/
   * [Yuan](https://github.com/Yuanamoto)
   * [Jamillah](http://jamillah.github.io/)
   * [Vittorio](http://vittoriomilone.github.io/)
+  * [Gerrit](https://www.wevolver.com/gerrit.niezen/biofactory)
 * [Garagem Fablab](http://www.garagemfablab.com) - São Paulo
 * [DIYBio Barcelona](http://www.meetup.com/Barcelona-DIYbio-Meetup/) - Barcelona
 * [University of New Mexico](http://www.unm.edu) - Albuquerque
