@@ -1,17 +1,17 @@
-<nav role="navigation" class="js-menu sliding-menu-content">
-	<ul class="menu-item">
-		{% for link in site.data.navigation %}<li>
-      {% unless link.url contains 'http' %}
-        {% assign domain = site.url %}
-      {% endunless %}
-			{% if link.image %}<a href="{{ domain }}{{ link.url }}"><img src="{{ site.url }}/images/{{ link.image }}" alt="teaser" class="teaser"></a>{% endif %}
-			<a href="{{ domain }}{{ link.url }}" class="title">{{ link.title }}</a>
-			{% if link.excerpt %}<p class="excerpt">{{ link.excerpt }}</p>{% endif %}
-		</li>{% endfor %}
-	</ul>
+<nav role="navigation" id="js-menu" class="sliding-menu-content">
+  <h5>{{ site.title }} <span>Table of Contents</span></h5>
+  <ul class="menu-item">
+    {% for link in site.data.navigation %}<li>
+      <a href="{{ link.url }}">
+        {% if link.image %}<img src="/images/{{ link.image }}" alt="teaser" class="teaser">{% endif %}
+        <div class="title">{{ link.title }}</div>
+        {% if link.excerpt %}<p class="excerpt">{{ link.excerpt }}</p>{% endif %}
+      </a>
+    </li>{% endfor %}
+  </ul>
 </nav>
-<button type="button" class="js-menu-trigger sliding-menu-button menulines-button x2" role="button" aria-label="Toggle Navigation">
-	<span class="menulines"></span>
+<button type="button" id="js-menu-trigger" class="sliding-menu-button lines-button x2" role="button" aria-label="Toggle Navigation">
+  <span class="lines"></span>
 </button>
 
-<div class="js-menu-screen menu-screen"></div>
+<div id="js-menu-screen" class="menu-screen"></div>

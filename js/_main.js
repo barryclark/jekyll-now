@@ -1,20 +1,13 @@
 // Off Canvas Sliding
-
 $(document).ready(function(){
-	$('.js-menu-trigger').on('click touchstart', function(e){
-		$('body').toggleClass('no-scroll');
-		$('.js-menu, .js-menu-screen').toggleClass('is-visible');
-		$('.sliding-menu-button').toggleClass('slide close');
-		$('#masthead, #page-wrapper').toggleClass('slide');
-		e.preventDefault();
-	});
-	$('.js-menu-screen').on('click touchstart', function(e){
-		$('body').toggleClass('no-scroll');
-		$('.js-menu, .js-menu-screen').toggleClass('is-visible');
-		$('.sliding-menu-button').toggleClass('slide close');
-		$('#masthead, #page-wrapper').toggleClass('slide');
-		e.preventDefault();
-	});
+  // Menu button click
+  $('#js-menu-trigger,#js-menu-screen').on('click touchstart', function(e){
+    // $('#js-body').toggleClass('no-scroll');
+    $('#js-menu, #js-menu-screen').toggleClass('is-visible');
+    $('#js-menu-trigger').toggleClass('slide close');
+    // $('#masthead, #page-wrapper').toggleClass('slide');
+    e.preventDefault();
+  });
 });
 
 // FitVids

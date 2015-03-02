@@ -1,257 +1,189 @@
-// OFF CANVAS SLIDING MENU
-// Based on code by Diego Eis
-// --------------------------------------------------
+/* ==========================================================================
+   OFF CANVAS SLIDING MENU
+   Based on code by Diego Eis
+   http://tableless.com.br/fazendo-um-slide-menu-mobile-sem-plugin/
+   ========================================================================== */
+
+/* Slider */
+
+.slide {
+    transform: translateX(-100%);
+    @include media($medium) {
+      transform: translateX(em(-600));
+    }
+    @include media($large) {
+      transform: translateX(em(-900));
+    }
+  }
+
+/*
+   Sliding menu button
+   ========================================================================== */
 
 .sliding-menu-button {
-	position: fixed;
-	top: $gutter;
-	right: $gutter;
-	display: block;
-	width: $button-size * 2;
-	height: $button-size * 2;
-	background: #000;
-	outline: 0;
-	padding: 0;
-	border: 2.5px solid transparent;
-	cursor: pointer;
-	z-index: 5;
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-	@include media($medium) {
-		@include transform(0);
-	}
-	@include transition(right 500ms cubic-bezier(.645,.045,.355,1.000));
-	&.slide {
-		@include media($medium) {
-			right: 90%;
-		}
-		@include transition(right 500ms ease-in-out);
-	}
+  position: fixed;
+  transform: translateZ(0);
+  backface-visibility: hidden; /* fix scroll jank */
+  top: $gutter;
+  right: $gutter;
+  display: block;
+  width: $button-size * 2;
+  height: $button-size * 2;
+  background: $primary-color;
+  outline: 0;
+  padding: 0;
+  border: 2.5px solid transparent;
+  cursor: pointer;
+  z-index: 20;
+  box-sizing: border-box;
+  &:hover {
+    background: $black;
+  }
+  transition: $sliding-menu-animation;
+  &.slide {
+    background: $danger-color;
+    transform: translateX(0); /* don't slide close button on small screens only */
+    @include media($medium) {
+      transform: translateX(em(-600)); /* reset slide position */
+    }
+    @include media($large) {
+      transform: translateX(em(-900)); /* reset slide position */
+    }
+  }
 }
+
+/*
+   Sliding content
+   ========================================================================== */
 
 .sliding-menu-content {
-	position: fixed;
-	top: 0;
-	right: 0;
-	padding: em(22) 0;
-	text-align: center;
-	visibility: hidden;
-	@include media($medium) {
-		text-align: left;
-	}
-	@include size(100% 100%);
-	@include media($medium) {
-		@include size(87% 100%);
-	}
-	@include transform(translateX(100%));
-	@include transition(500ms cubic-bezier(.645,.045,.355,1.000));
-	background: $sliding-menu-background;
-	z-index: 5;
-	overflow-y: auto;
-	overflow-x: hidden;
-	-webkit-overflow-scrolling: touch;
-	&.is-visible {
-		visibility: visible;
-		@include transform(translateX(0));
-		@include transition(500ms ease-in-out);
-	}
-	ul {
-		margin: 0 10%;
-	}
-	ul,
-	li {
-		list-style: none;
-	}
-	li {
-		display: block;
-		position: relative;
-		padding: 1em 0;
-	}
-	.menu-item > li {
-		a {
-			color: $white;
-			text-decoration: none;
-		}
-		.teaser {
-			width: 150px;
-			border: 2px solid $white;
-			margin-bottom: ($gutter / 2);
-			@include media($medium) {
-				position: absolute;
-				top: 20px;
-				left: 0;
-				margin-bottom: 0;
-			}
-		}
-		.title {
-			display: block;
-			font-family: $alt-font;
-			@include font-size(32,no);
-			font-weight: 700;
-			@include media($medium) {
-				margin-left: 170px;
-			}
-		}
-		.excerpt {
-			color: $white;
-			margin-top: 0;
-			@include media($medium) {
-				margin-left: 170px;
-			}
-		}
-	}
-	.sub-menu-item > li a {
-		display: block;
-		color: $white;
-		font-style: italic;
-	}
-	.menu-item .home a {
-		@include font-size(32);
-	}
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: em(22) 0;
+  visibility: hidden;
+  backface-visibility: hidden;
+  text-align: left;
+  @include size(100% 100%);
+  @include media($small) {
+    width: em(600);
+  }
+  @include media($large) {
+    width: em(900);
+  }
+  transform: translateX(100%);
+  transition: $sliding-menu-animation;
+  background: $sliding-menu-background;
+  z-index: 20;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  &.is-visible {
+    visibility: visible;
+    transform: translateX(0);
+  }
+  h5 {
+    margin: 0 20% 0 10%;
+    @include media($large) {
+      margin-right: 20%;
+    }
+    color: $white;
+    @include font-size(14);
+    @include media($small) {
+      @include font-size(16);
+    }
+    span {
+      display: block;
+      @include font-size(32,no,1);
+      @include media($small) {
+        @include font-size(48,no,1);
+      }
+      font-family: $base-font;
+      text-transform: uppercase;
+      font-weight: 400;
+    }
+  }
+  ul {
+    margin: 0 10%;
+    @include media($large) {
+      margin-right: 20%;
+    }
+  }
+  ul,
+  li {
+    list-style: none;
+  }
+  li {
+    display: block;
+    position: relative;
+    padding-bottom: 1em;
+    min-height: 70px;
+    @include media($small) {
+      min-height: 100px;
+    }
+  }
+  .menu-item {
+    a {
+      display: block;
+      color: $white;
+      text-decoration: none;
+    }
+    .teaser {
+      position: absolute;
+      left: 0;
+      margin-bottom: 0;
+      width: 50px;
+      border: 2px solid $white;
+      margin-bottom: ($gutter / 2);
+      opacity: 0.6;
+      @include media($small) {
+        width: 150px;
+      }
+    }
+    a:hover .teaser {
+      opacity: 1;
+    }
+    .title {
+      display: block;
+      margin-left: 60px;
+      font-family: $alt-font;
+      @include font-size(24,no);
+      font-weight: 700;
+      @include media($small) {
+        margin-left: 170px;
+        @include font-size(32,no);
+      }
+    }
+    .excerpt {
+      margin-top: 0;
+      margin-left: 60px;
+      @include font-size(14,no);
+      @include media($small) {
+        margin-left: 170px;
+        @include font-size(16,no);
+      }
+    }
+  }
+  .sub-menu-item > li a {
+    display: block;
+    color: $white;
+    font-style: italic;
+  }
+  .menu-item .home a {
+    @include font-size(32);
+  }
 }
+
+/* Dim content when off canvas nav slides in */
 
 .menu-screen {
-	@include position(fixed, 0px 0px 0px 0px);
-	@include transition;
-	background: $sliding-menu-border-color;
-	opacity: 0;
-	visibility: hidden;
-	z-index: 4;
-	&.is-visible {
-		opacity: .4;
-		visibility: visible;
-		&:hover {
-			cursor: pointer;
-		}
-	}
-}
-
-// animated navicons
-// https://github.com/SaraSoueidan/navicon-transformicons
-// common to all three-liners
-@mixin menuline {
-	display: inline-block;
-	width: $button-size;
-	height: $button-size/7;
-	background: $white;
-	border-radius: $button-size/14; 
-	transition: $transition;
-}
-// common to all three-liners
-.menulines {
-	@include menuline;
-	position: relative; 
-	&:before, &:after {
-	 @include menuline;
-		position: absolute;
-		left:0;
-		content: '';
-		-webkit-transform-origin: $button-size/14 center;
-						transform-origin: $button-size/14 center;
-	}
-	&:before { 
-		top: $button-size/4; 
-	}
-	&:after { 
-		top: -$button-size/4; 
-	}
-}
-// common to all three-liners
-.menulines-button:hover {
-	.menulines {
-		&:before { 
-			top: $button-size/3.5; 
-		}
-		&:after { 
-			top: -$button-size/3.5; 
-		}
-	}
-}
-// for both the arrow up and left icons
-.menulines-button.arrow.close {
-		.menulines {
-			&:before,
-			&:after {
-				top: 0;
-				width: $button-size/1.8;
-			}
-			&:before { 
-				-webkit-transform: rotate3d(0,0,1,40deg); 
-								transform: rotate3d(0,0,1,40deg); 
-			}
-			&:after { 
-				-webkit-transform: rotate3d(0,0,1,-40deg); 
-								transform: rotate3d(0,0,1,-40deg); 
-			}
-		}
-}
-// arrow up only: just rotate by 90degrees
-.menulines-button.arrow-up.close {
-	-webkit-transform: scale3d(.8,.8,.8) rotate3d(0,0,1,90deg);
-					transform: scale3d(.8,.8,.8) rotate3d(0, 0, 1,90deg);
-}
-// three-lines to minus only
-.menulines-button.minus.close{
-	.lines {
-		&:before, &:after{
-			-webkit-transform: none;
-							transform: none;
-			top:0;
-			width: $button-size;
-		}
-	}
-}
-// three-lines to x
-.menulines-button.x.close{
-	.menulines {
-		background: transparent;
-		&:before, &:after{
-			-webkit-transform-origin: 50% 50%;
-							transform-origin: 50% 50%;
-			top:0;
-			width: $button-size;
-		}
-		&:before{
-			-webkit-transform: rotate3d(0,0,1,45deg); 
-							transform: rotate3d(0,0,1,45deg); 
-		}
-		&:after{
-			-webkit-transform: rotate3d(0,0,1,-45deg); 
-							transform: rotate3d(0,0,1,-45deg); 
-		}
-	}
-}
-// three-lines to x method 2
-.menulines-button.x2{
-		.menulines{
-			transition: background .3s .5s ease;
-			&:before, &:after{
-				//set transform origin
-			-webkit-transform-origin: 50% 50%;
-							transform-origin: 50% 50%;
-				transition: top .3s .6s ease, -webkit-transform .3s ease;
-				transition: top .3s .6s ease, transform .3s ease;
-			}
-		}
-}
-.menulines-button.x2.close{
-	.menulines {
-		transition: background .3s 0s ease;
-		background: transparent;
-		&:before, &:after{
-			transition: top .3s ease, -webkit-transform .3s .5s ease;//delay the formation of the x till the minus is formed  
-			transition: top .3s ease, transform .3s .5s ease;//delay the formation of the x till the minus is formed  
-			top:0;
-			width: $button-size;
-		}
-		&:before{
-			-webkit-transform: rotate3d(0,0,1,45deg); 
-							transform: rotate3d(0,0,1,45deg); 
-		}
-		&:after{
-			-webkit-transform: rotate3d(0,0,1,-45deg); 
-							transform: rotate3d(0,0,1,-45deg); 
-		}
-	}
+  @include position(fixed, 0 0 0 0);
+  visibility: hidden;
+  z-index: 4;
+  &.is-visible {
+    visibility: visible;
+    &:hover {
+      cursor: pointer;
+    }
+  }
 }

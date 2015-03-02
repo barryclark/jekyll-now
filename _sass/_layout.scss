@@ -350,14 +350,10 @@
 	@include media($micro) {
 		@include fill-parent;
 	}
-	@include media($small) {
-		@include span-columns(6);
-		@include omega(2n);
-	}
-	@include media($medium) {
-		@include span-columns(3);
-		@include omega(4n);
-	}
+	@include media(new-breakpoint(min-width em(480) 12)) {
+    @include span-columns(3);
+    @include omega(4n);
+  }
 	.entry-date {
 		@include font-size(16,no);
 		color: lighten($text-color,25);

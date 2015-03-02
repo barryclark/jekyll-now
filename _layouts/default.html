@@ -20,22 +20,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="cleartype" content="on">
 
-    <style>
-    .sliding-menu-content {
-      top: 0;
-      right: 0;
-      text-align: center;
-      visibility: hidden;
-      height: 100%;
-      width: 100%;
-      -webkit-transform: translateX(100%);
-      -moz-transform: translateX(100%);
-      -ms-transform: translateX(100%);
-      -o-transform: translateX(100%);
-      transform: translateX(100%);
-    }
-    </style>
-
     <link rel="stylesheet" href="{{ site.url }}/css/main.css">
     <!-- HTML5 Shiv and Media Query Support for IE -->
     <!--[if lt IE 9]>
@@ -45,21 +29,19 @@
 
   </head>
 
-  <body>
+  <body id="js-body">
+    {% include browser-upgrade.html %}
     {% include header.html %}
     {% include navigation-sliding.html %}
 
     <div id="page-wrapper">
-      {% include browser-upgrade.html %}
-
       {{ content }}
-
       {% include footer.html %}
     </div>
 
     <script src="{{ site.url }}/js/vendor/jquery-1.9.1.min.js"></script>
     <script src="{{ site.url }}/js/main.js"></script>
-    
+
     {% if page.toc == true %}
     <script type="text/javascript">
       $('.toc').toc({
@@ -67,7 +49,7 @@
         'container': '.page-content', //element to find all selectors in
         'smoothScrolling': true, //enable or disable smooth scrolling on click
         'prefix': 'toc', //prefix for anchor tags and class names
-        'onHighlight': function(el) {}, //called when a new section is highlighted 
+        'onHighlight': function(el) {}, //called when a new section is highlighted
         'highlightOnScroll': true, //add class to heading that is currently in focus
         'highlightOffset': 100, //offset to trigger the next headline
         'anchorName': function(i, heading, prefix) { //custom function for anchor name
