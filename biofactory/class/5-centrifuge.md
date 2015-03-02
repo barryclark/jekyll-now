@@ -29,7 +29,7 @@ The code also contains a number of examples, to test some components separately
 
 In order to take part in this class you will need the following materials:
 
-* [Centrifuge materials](/biofactory/class/5-centrifuge/centrifuge-materials/)
+* [Centrifuge materials](/biofactory/class/5/centrifuge-materials/)
 
 ## Assignment
 
