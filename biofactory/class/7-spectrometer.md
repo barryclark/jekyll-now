@@ -30,10 +30,9 @@ This week we will build the spectrometer. You may choose which design. Download 
 
 ![Webcam Spectrometer](/biofactory/class/7/Webcam-Spectrometer.png)
 
-* Photodiode array design
-  * [SketchUp assembly](/biofactory/class/7/CCD-Array-Spectrometer-Sketchup.skp)
-  * [SVG laser cut files](/biofactory/class/7/CCD-Array-Spectrometer-SVGs.zip)
-  * [Fritzing wiring](/biofactory/class/7/Spectrometer-Fritzing.fzz)
+## Photodiode array-based photospectrometer
+
+The photodiode array spectrophotometer files are stored in a [git repository](https://github.com/BioHackAcademy/BHA_Spectrophotometer) which you can clone or [download as a zip archive](https://github.com/BioHackAcademy/BHA_Spectrophotometer/archive/master.zip)
 
 ![CCD Array Spectrometer](/biofactory/class/7/CCD-Array-Spectrometer.png)
 

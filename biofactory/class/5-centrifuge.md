@@ -20,14 +20,8 @@ We’ll try to isolate our first biomaterial. For that we need centrifugal force
 
 ## Centrifuge Design
 
-This week we will build the centrifuge. Download the design files here:
-
-* [Functional and technical requirements](/biofactory/class/5-centrifuge/requirements/)
-* [SketchUp assembly](/biofactory/class/5/Centrifuge-Sketchup.skp)
-* [SVG laser cut files](/biofactory/class/5/Centrifuge-SVGs.zip)
-* [Fritzing wiring](/biofactory/class/5/Centrifuge-Fritzing.fzz)
-* [Arduino code](/biofactory/class/5/Centrifuge-Arduino.zip)
-  * The code also contains a number of examples, to test some components separately
+This week we will build the centrifuge. All the design files (Sketchup design, SVG laser cutting, Fritzing wiring and arduino code) can be found in the [Centrifuge repository](https://github.com/BioHackAcademy/BHA_Centrifuge). Alternatively, download  the whole centrifuge repository directly as a [zip archive](https://github.com/BioHackAcademy/BHA_Centrifuge/archive/master.zip).
+The code also contains a number of examples, to test some components separately
 
 ![Sterile Hood](/biofactory/class/5/Centrifuge.png)
 
