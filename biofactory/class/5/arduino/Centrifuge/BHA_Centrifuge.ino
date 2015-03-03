@@ -398,4 +398,3 @@ static void measureSpeed()
   RPMnow *= 60;
 
   CurrentRPM = (CurrentRPM + RPMnow + PrevRPM) / 3;
-}

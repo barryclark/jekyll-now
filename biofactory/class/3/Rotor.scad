@@ -11,8 +11,8 @@ difference () { // substract inner groove
 		translate([0,0,-0.4])
 		cylinder (h = 4, r=12); // main disk
 
-		translate([0,0,1]) // raise cone from bottom
-		cylinder (h = 2.7, r1 = 8, r2 = 10.8, center = false); // cone
+		translate([0,0,0.9]) // raise cone from bottom
+		cylinder (h = 2.8, r1 = 8, r2 = 10.8, center = false); // cone
 
 		translate([0,0,-0.6])
 		cylinder (h = 1.6, r=0.635); // axis

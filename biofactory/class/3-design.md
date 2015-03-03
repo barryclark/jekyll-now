@@ -25,6 +25,7 @@ This class is essential. You will learn how to design objects in 2D and 3D and t
 * OpenSCAD
   * [Centrifuge rotor](/biofactory/class/3/Rotor.scad)
   * [GL45 Bottle cap with 3 connectors](/biofactory/class/3/GL45 Bottle cap.scad)
+    * [Threads library](http://dkprojects.net/openscad-threads/)
 
 ## Assignment
 
