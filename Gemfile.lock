@@ -2,9 +2,6 @@ GEM
   remote: https://rubygems.org/
   specs:
     blankslate (2.1.2.4)
-    bourbon (4.0.2)
-      sass (~> 3.3)
-      thor
     celluloid (0.16.0)
       timers (~> 4.0.0)
     classifier-reborn (2.0.2)
@@ -50,9 +47,6 @@ GEM
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
     mercenary (0.3.4)
-    neat (1.7.0)
-      bourbon (>= 4.0)
-      sass (>= 3.3)
     octopress (3.0.0.rc.15)
       jekyll (~> 2.0)
       mercenary (~> 0.3.2)
@@ -82,7 +76,6 @@ GEM
     redcarpet (3.2.0)
     safe_yaml (1.0.4)
     sass (3.4.7)
-    thor (0.19.1)
     timers (4.0.1)
       hitimes
     titlecase (0.1.1)
@@ -95,9 +88,7 @@ PLATFORMS
   x64-mingw32
 
 DEPENDENCIES
-  bourbon
   jekyll (~> 2.4.0)
   jekyll-sitemap (~> 0.6.1)
-  neat
   octopress (~> 3.0.0.rc.12)
   sass
