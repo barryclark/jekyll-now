@@ -3,7 +3,7 @@ layout: post
 title: The Sandstorm Box
 ---
 # Sandstorm Box
-![Render of Sandstorm Box in 123D](images/sandstorm_box1.png)
+![Render of Sandstorm Box in 123D](../images/sandstorm_box1.png)
 
 The Sandstorm Box is part of a larger art project called Interactive Picture Frames.
 The Interactive Picture Frames project consists of a collection of five picture frames, which combine photographs with responsive technology (sensors and actuators), each frame aiming to affect one of the five senses. That is, these frames presents still images and associate the idea or the meaning of each image to a experience of sight, sound, smell, taste or touch.EXAMPLES
