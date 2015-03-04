@@ -30,7 +30,7 @@ Also, I will report all my steps to build this project in this blog so conceivab
 9. Switch
 
 
-![blades](../images/blades.png)
+!(../images/blades.png)
 
 In the place of the fans I will try to use quadcopter blades. They blow a lot of ar and the kit with blades and 2 pcs motors is not expensive. 
 Whater pipers will be used to channel the air.
