@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Sandstorm Box
+title: Interactive Picture Frames
 ---
 The Interactive Picture Frames project consists of a collection of five picture frames, which combine photographs with responsive technology (sensors and actuators), each frame aiming to affect one of the five senses. That is, these frames presents still images and associate the idea or the meaning of each image to a experience of sight, sound, smell, taste or touch.
 
