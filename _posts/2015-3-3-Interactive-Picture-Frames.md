@@ -5,7 +5,7 @@ title: Interactive Picture Frames
 The Interactive Picture Frames project consists of a collection of five picture frames, which combine photographs with responsive technology (sensors and actuators), each frame aiming to affect one of the five senses. That is, these frames presents still images and associate the idea or the meaning of each image to a experience of sight, sound, smell, taste or touch.
 
 ###EXAMPLES 
-For a photo of the sea, the interactive picture frame could play sounds of the ocean when the presence of a viewer is detected. For a picture of a perfume flask, the scent of sandalo could be spayed. For a picture of the desert, a box with sand and fans could simulate the experience of a dust storm just for a hand of the viewer.
+For a photo of the sea, the interactive picture frame could play sounds of the ocean when the presence of a viewer is detected. For a picture of a perfume flask, the scent of lavender could be spayed. For a picture of the desert, a box with sand and fans could simulate the experience of a sandstorm just for a hand of the viewer.
 
 ###BACKGROUND 
 I have no knowledge of any project in which frames hold print photos, sensors and actuators. Usually, projects that combine photographs and interactivity make use of digital photos. 
