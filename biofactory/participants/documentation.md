@@ -16,6 +16,7 @@ permalink: /biofactory/participants/documentation/
   * [Vittorio](http://vittoriomilone.github.io/)
   * [Gerrit](https://www.wevolver.com/gerrit.niezen/biofactory)
 * [Garagem Fablab](http://www.garagemfablab.com) - São Paulo
+  * [Eduardo](https://biohackacademyelopes.wordpress.com)
 * [DIYBio Barcelona](http://www.meetup.com/Barcelona-DIYbio-Meetup/) - Barcelona
 * [University of New Mexico](http://www.unm.edu) - Albuquerque
   * [UNM Bio Art and Design](https://github.com/unmbioartanddesign/biofactory/wiki/Biofactory-Course,-Waag-Society-Documentation:--Week-1)
