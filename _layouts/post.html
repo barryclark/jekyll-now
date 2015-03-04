@@ -3,7 +3,18 @@ layout: default
 ---
 
 <article class="post">
-  <h1>{{ page.title }}</h1>
+<h1>{{ page.title }}</h1>
+
+{% if page.tags %}
+<div>
+<ul class="tag_list_in_post">
+<emph> Tags: </emph>
+{% for tag in page.tags %}
+<a class="tag_list_link" href="/tag/{{ tag }}">{{ tag }},</a>
+{% endfor %}
+</ul>
+</div>
+{% endif%}
 
   <div class="entry">
     {{ content }}
