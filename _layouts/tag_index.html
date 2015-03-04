@@ -9,7 +9,7 @@ layout: default
 	<li class="archive_list">
 		<h3 class="archive_list_header"><a class="archive_list_article_link" href='{{post.url}}'>{{post.title}}</a></h3>
 		<time class="archive_list_post_date" datetime='{{post.date | date: "%Y-%m-%d"}}'>{{post.date | date: "%m/%e/%y"}}</time>
-		<p class="summary">Summary: {{post.summary}}
+		<p class="summary">Summary: {{post.description}}
 		<ul class="tag_list">
 			{% for tag in post.tags %}
 			<li class="inline archive_list"><a class="tag_list_link" href="/tag/{{ tag }}">{{ tag }}</a></li>
@@ -19,4 +19,4 @@ layout: default
 	{% endif %}
 	{% endfor %}
 	{% endfor %}
-</ul>cd
+</ul>
