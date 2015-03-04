@@ -1,0 +1,237 @@
+//
+//  STACK OVERFLOW CAREERS
+//
+//  Created May 2, 2014
+//  Updated September 10, 2014
+//
+//  http://careers.stackoverflow.com
+//
+//  TYPE
+//  
+//  TABLE OF CONTENTS
+//  • Variables & Mixins
+//  • Baseline
+//  • Headings
+//  • Notifications
+//
+//  ============================================================================
+//  $ VARIABLES & MIXINS
+//  ----------------------------------------------------------------------------
+//  While most variables and mixins are kept within files like this, type is an
+//  outlier. Type is a fundamental design element and requires regular modification.
+//  To maintain consistency, we need to be able to re-use these variables and mixins
+//  throughout the project, yet without restating the type CSS below. To accomplish
+//  this goal we have kept the variables and mixins for type within the universal
+//  base and mixin less files.
+//
+//  If you would like to modify type variables, go to "/base/_variables.less".
+//
+//  If you would like to modify type mixins, go to "/base/_mixins.less".
+//  
+//  ============================================================================
+//  $ BASELINE
+//  ----------------------------------------------------------------------------
+small             { font-size: floor(100% * 0.857142857); }
+strong,b          { .fontWeight(7); }
+em, i             { font-style: italic; }
+address,cite      { font-style: normal; }
+
+
+//  -- Paragraph Styles
+p,.text {
+    margin-bottom: 1em;
+    margin-top: 0;
+    .lineHeight(loose);
+
+    //  -- Indent paragraphs after the first paragraph to help with readability
+    // + p { text-indent: 1em; }
+
+    //  When you want a larger, initial paragraph.
+    &._lead {
+        color: @copy_lead-color;
+        .fontSize(xl);
+        .fontWeight(2);
+        letter-spacing: -1px;
+        .lineHeight(base);
+    }
+
+    //  -- Type Sizes
+    &._xlarge {
+        .fontSize(l);
+        .fontWeight(2);
+    }
+    &._large  { .fontSize(m); }
+    &._small  { .fontSize(s); }
+    &._xsmall { .fontSize(xs); }
+
+    //  -- Type Styles
+    &._help {
+        color: @copy_muted-color;
+        .fontSize(s);
+        .lineHeight(loose);
+    }
+    &._muted { color: @copy_muted-color; }
+
+    //  -- Footnotes
+    &._footnotes {
+        margin-left: 0;
+        padding-top: @padding-half;
+        padding-left: @padding-base + 4;
+        border-top: 1px solid @borderColor-grayLight;
+
+        li  {
+            color: @copy_muted-color;
+            .fontSize(xs);
+        }
+        a   { color: desaturate(@link-color,80%);}
+    }  
+}
+
+
+//  -- Text Alignment
+._textLeft    { text-align: left; }
+._textCenter  { text-align: center; }
+._textRight   { text-align: right; }
+
+
+//  -- Footnote Numbers
+sup.fn {
+    padding-right: 2px;
+    padding-left: 2px;
+}
+
+
+//  -- Quotes
+blockquote, .quote {
+    margin: 0.75em 0;
+    padding: 1em 1.5em;
+
+    font-family: @fontFamily-serif;
+    font-style: italic;
+    .fontSize(m);
+    letter-spacing: 0;
+    .lineHeight(looser);
+    color: @quote-textColor;
+
+    border-left: 1px dotted @quote-border;
+
+    // For when you want to add a background to a blockquote, and ONLY A BLOCKQUOTE.
+    &._accent {
+        background-color: @quote-background;
+        border-left: 2px solid @quote-border_accent;
+    }
+    &._pull {  
+        font-family: @fontFamily-sans;
+        .fontWeight(2);
+        .lineHeight(looser);
+        text-align: center;
+        color: @quote_pull-textColor;
+        border-left: none;
+    }
+}
+
+//  -- Links
+a, .link {
+    color: @link-color;
+    text-decoration: none;
+    transition: all 0.1s ease-in;
+
+    &:hover, &._hover,
+    &:focus, &._focus {
+        color: @link_hover-color;
+        text-decoration: underline;
+    }
+    &:focus, &._focus { outline: none; }
+}
+
+
+
+
+//  ============================================================================
+//  $ TYPE STYLES: HEADINGS
+//  ============================================================================
+//  -- HEADINGS
+h1, h2, h3, h4, h5, h6, 
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    .fontWeight(4);
+    margin-top: 0;
+    margin-bottom: 0.5em;
+
+    color: @title-color;
+    
+    > small, > .small {
+        margin-top: -0.25em;
+
+        color: @title_muted-color;
+        font-size: 75%;
+        font-weight: inherit;
+    }
+
+    //  Have heading links inherit previous color.
+    > a, > a:link { color: inherit; }
+
+    //  -- Specific Title Styles
+    &._hugeTitle {
+        .fontSize(xxxl);
+        .fontWeight(2);
+        letter-spacing: -1px;
+        text-rendering: optimizeLegibility;
+    }
+    &._pageTitle {
+        .fontSize(xl);
+        .fontWeight(2);
+        text-rendering: optimizeLegibility;
+    }
+    &._section {
+        color: @title_section-color;
+        .fontSize(l);
+        .fontWeight(7);
+        letter-spacing: 0;
+        .lineHeight(base);
+    }
+    &._subSection {
+        margin-bottom: 1em;
+        color: @title_subSection-color;
+        .fontSize(m);
+        letter-spacing: 0;
+        .lineHeight(tight);
+    }
+}
+
+h1, h2, h3,
+.h1, .h2, .h3 {
+    .lineHeight(tighter);
+    .fontWeight(2);
+}
+h1, .h1 { .fontSize(xxl); }
+h2, .h2 { .fontSize(xl); }
+h3, .h3 { .fontSize(l); }
+h4, .h4 { .fontSize(m); }
+h5, .h5 { .fontSize(base); }
+h6, .h6 { 
+    .fontSize(xs);
+    .fontWeight(7);
+    text-transform: uppercase;
+}
+
+
+//  ============================================================================
+//  $ TYPE STYLES: NOTIFICATIONS
+//  ============================================================================
+.callout {
+    padding: ceil(@padding-base * 1.5);
+
+    color: @callout-infoText;
+    .fontSize(base);
+    .lineHeight(loose);
+    text-indent: 0;
+
+    border-style: solid;
+    border-width: 1px;
+
+    &._info {
+        background-color: @callout-infoBck; 
+        border-color: @callout-infoBorder;
+    }
+}
+

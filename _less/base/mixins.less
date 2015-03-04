@@ -1,0 +1,117 @@
+//
+//  Careers 2.0 by Stack Exchange
+//
+//  MIXINS
+//
+//	Mixins should be used as s
+//
+//  TABLE OF CONTENTS
+//  • Type
+//  • Box Sizing
+//  • Transitions & Transformations
+//  • Clearfix
+//
+//  ============================================================================
+//  $ TYPE
+//  ----------------------------------------------------------------------------
+//  Unlike colors which are set and rarely changed, type values are altered
+//  regularly based on the need of the component and context. To maintain consistent
+//  sizes, line-heights, and letter-spacing; we have created a number of mixins.
+//  These mixins deliver the correct value based on the shorthand
+//  value passed to it. For example, if you want declare a large font-size using
+//  a light font-weight value, you will use the following:;
+//
+//  Example:  .title-page {
+//                .fontSize(l);
+//                .fontWeight(2);
+//            }
+//
+//  In this example we are declaring the shorthand values of "l" and "2" within
+//  their mixins. When compiled, this will output:
+//
+//  Output:   .title-page {
+//                font-size: 24px;
+//                font-size: 1.714285714rem;
+//                font-weight: 200;
+//            }
+//  ----------------------------------------------------------------------------
+//  -- REM Font Mixin
+//  This is primarily used within the .fontSize mixin, though sometimes it can
+//  be used on it's own. In the interest of maintaining consistent font-sizes,
+//  it is highly discouraged to declare a font-size not already pre-defined.
+.fontRem(@fs) {
+    @remValue: @fs / @fontSize-base;
+    font-size: ~"@{fs}px";
+    font-size: ~"@{remValue}rem";
+}
+
+.fontSize (@s) {
+    & when (@s = base)  { .fontRem(@fontSize-base); }
+    & when (@s = xxs)   { .fontRem(@fontSize-base * (10 / @fontSize-base)); }
+    & when (@s = xs)    { .fontRem(@fontSize-base * (11 / @fontSize-base)); }
+    & when (@s = s)     { .fontRem(@fontSize-base * (12 / @fontSize-base)); } 
+    & when (@s = m)     { .fontRem(@fontSize-base * (18 / @fontSize-base)); }
+    & when (@s = l)     { .fontRem(@fontSize-base * (24 / @fontSize-base)); }
+    & when (@s = xl)    { .fontRem(@fontSize-base * (36 / @fontSize-base)); }
+    & when (@s = xxl)   { .fontRem(@fontSize-base * (48 / @fontSize-base)); }
+    & when (@s = xxxl)  { .fontRem(@fontSize-base * (60 / @fontSize-base)); }
+}
+
+.fontWeight (@w) {
+    & when (@w = 2) { font-weight: 200; }
+    & when (@w = 4) { font-weight: 400; }
+    & when (@w = 7) { font-weight: 700; }
+}
+
+//  Line Height Mixin
+//  Do not declare values with your line-heights (i.e. px, em). This allows
+//  for the value to be relative to the declared font-size and have
+//  greater flexibility.
+.lineHeight (@lh) {
+    & when (@lh = base)     { line-height: (@fontSize-base + 6) / @fontSize-base; }
+    & when (@lh = tight)    { line-height: (@fontSize-base + 4) / @fontSize-base; }
+    & when (@lh = tighter)  { line-height: (@fontSize-base + 2) / @fontSize-base; }
+    & when (@lh = tightest) { line-height: @fontSize-base / @fontSize-base; }
+    & when (@lh = loose)    { line-height: (@fontSize-base + 8) / @fontSize-base; }
+    & when (@lh = looser)   { line-height: (@fontSize-base + 10) / @fontSize-base; }
+    & when (@lh = loosest)  { line-height: (@fontSize-base / @fontSize-base) * 2; }
+}
+
+//  ============================================================================
+//  $ BOX SIZING
+//  ----------------------------------------------------------------------------
+.box-sizing(@boxmodel) {
+    -webkit-box-sizing: @boxmodel;
+     -moz-box-sizing: @boxmodel;
+          box-sizing: @boxmodel;
+}
+
+
+//  ============================================================================
+//  $ TRANSITIONS, TRANSFORMATIONS
+//  ----------------------------------------------------------------------------
+.transition-delay(@transition-delay) {
+    -webkit-transition-delay: @transition-delay;
+            transition-delay: @transition-delay;
+}
+.transition-duration(@transition-duration) {
+    -webkit-transition-duration: @transition-duration;
+            transition-duration: @transition-duration;
+}
+.transition(@transition) {
+    -webkit-transition: @transition;
+            transition: @transition;
+}
+
+
+//  ============================================================================
+//  $ CLEARFIX
+//  ----------------------------------------------------------------------------
+.clearfix {
+    &:before,
+    &:after {
+        content: " ";
+        display: table;
+    }
+    &:after { clear: both; }
+}

@@ -1,0 +1,163 @@
+//
+//  STACK OVERFLOW CAREERS
+//  http://careers.stackoverflow.com
+//
+//  Last updated September 28, 2014
+//
+//  Modules — Navigation
+//
+//  TABLE OF CONTENTS
+//  • VARIABLES
+//  • BASE STYLE
+//  • LAYOUT PATTERNS
+//
+//  ============================================================================
+//  $ VARIABLES
+//  ----------------------------------------------------------------------------
+@nav-link-color:                        spin(desaturate(lighten(@color-grayMid,9%),7%),8);
+@nav-link_hover-color:                  spin(darken(@color-grayMid,14%),2);
+@nav-link-background:                   fade(@color-white,0%);
+@nav-link_hover-background:             desaturate(lighten(@color-grayMid,53%),6%);
+@nav-link_active-color:                 spin(darken(@color-grayMid,14%),2);
+@nav-link_active_hover-color:           darken(@nav-link_active-color,5%);
+@nav-link_active-background:            fade(@color-white,0%);
+@nav-link_active_hover-background:      desaturate(lighten(@color-grayMid,56%),10%);
+@nav-link_active-border:                spin(desaturate(lighten(@color-grayMid,9%),7%),8);
+@nav-link_active_hover-border:          spin(darken(@color-grayMid,14%),2);
+
+
+//  ----------------------------------------------------------------------------
+//  $ BASELINE
+//  Reset margins and paddings for the list
+//  ----------------------------------------------------------------------------
+.nav {
+    ul&, li {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    .-item, a { position: relative; }
+
+    a, a:link {
+        color: @nav-link-color;
+        .fontSize(base);
+        text-decoration: none;
+
+        background-color: @nav-link-background;
+        transition: all 0.05s ease-in;
+
+        &:hover {
+            color: @nav-link_hover-color;
+            text-decoration: none;
+
+            background-color: @nav-link_hover-background;
+            transition: all 0.05s ease-out;
+        }
+    }
+
+    //  -- Nested Navigation Styles
+    &._nested {
+        display: none; // Hide all nested nav until needed
+
+        a {
+            .fontSize(s);
+            .lineHeight(base);
+        }
+    }
+
+
+    > .active > .nav {
+        // Show the second-level nav when needed
+        @media all and (min-width: @mediaQuery-small)       { display: inline-block; }
+        @media all and (min-width: (@mediaQuery-small + 1)) { display: block; }
+
+        // Show the third-level nav when needed
+        & {
+            @media all and (min-width: @mediaQuery-small)       { display: inline-block; }
+            @media all and (min-width: (@mediaQuery-small + 1)) { display: block; }
+        }
+    }
+
+    // -- States
+    .active > a {
+        color: @nav-link_active-color;
+        background-color: @nav-link_active-background;
+        border-left: 3px solid @nav-link_active-border;
+        transition: all 0.1s ease-in;
+
+        &:hover, &:active {
+            color: @nav-link_active_hover-color;
+            background-color: @nav-link_active_hover-background;
+            border-left-color: @nav-link_active_hover-border;
+            transition: all 0.1s ease-out;
+        }
+    }
+
+    // Disabled
+    .is-disabled {
+        cursor: not-allowed;
+        opacity: 0.5;
+    }
+}
+
+//  ----------------------------------------------------------------------------
+//  $ GENERAL LAYOUT PATTERNS
+//  ----------------------------------------------------------------------------
+.nav {
+
+    // -- Sidebar / Column Layout Style
+    &._column {
+        @media all and (max-width: @mediaQuery-small)       { float: left; }
+        @media all and (min-width: (@mediaQuery-small + 1)) { width: 100%; }
+
+        .-item, a {
+            display: inline-block;
+
+            @media all and (min-width: @mediaQuery-small) { display: block; }
+        }
+
+        a {
+            padding-left: 2.3em;
+            padding-right: 2.3em;
+
+            @media all and (max-width: @mediaQuery-small) {
+                padding-top: 3.4em;
+                padding-bottom: 2.6em;
+            }
+            @media all and (min-width: (@mediaQuery-small + 1)) {
+                padding-top: 0.5em;
+                padding-bottom: 0.5em;
+            }
+        }
+
+        &._nested {
+            a {
+                padding-top: @padding-half - 1;
+                padding-right: @padding-base;
+                padding-bottom: @padding-half - 2;
+                padding-left: @padding-base * 3;
+            }
+
+            ._nested a {
+                padding-left: @padding-base * 4;
+            }
+        }
+    }
+    //  -- Single Row / Top Nav Layout Style
+    &._row {
+        .-item, a { display: inline-block; }
+
+        a {
+            margin-right: @margin-base * 3;
+            padding-bottom: @padding-base - 4;
+            padding-top: @padding-base - 4;
+
+            @media all and (min-width: @mediaQuery-medium)  {
+                margin-right: 0;
+                padding-left: @padding-double;
+                padding-right: @padding-double;
+            }
+        }
+    }
+}

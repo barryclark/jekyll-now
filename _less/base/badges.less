@@ -1,0 +1,258 @@
+//
+//  STACK OVERFLOW CAREERS
+//
+//  Created May 2, 2014
+//  Updated December 23, 2014
+//
+//  http://careers.stackoverflow.com
+//
+//  BADGES
+//  
+//  TABLE OF CONTENTS
+//  • VARIABLES
+//  • BASE STYLE
+//  • LAYOUT VARIATIONS
+//  • STYLE VARIATIONS
+//
+//  ============================================================================
+//  $ VARIABLES
+//  ----------------------------------------------------------------------------
+//  -- Default
+@badge-cornerRadius:                @borderRadius-small;
+@badge-background:                  transparent;
+@badge-border:                      @badge-background;
+@badge-color:                       inherit;
+
+//  -- Featured Colors
+@badgeFeatured-background:          spin(lighten(@color-blue,35%),-1);
+@badgeFeatured_hover-background:    saturate(@badgeFeatured-background,10%);
+@badgeFeatured-border:              @badgeFeatured-background;
+@badgeFeatured_hover-border:        @badgeFeatured_hover-background;
+@badgeFeatured-color:               desaturate(darken(@color-blue,22%),18%);
+@badgeFeatured_hover-color:         saturate(@badgeFeatured-color,5%);
+
+//  -- Top Spot Colors
+@badgeTopSpot-background:           desaturate(lighten(@color-orange,15%),1%);
+@badgeTopSpot_hover-background:     desaturate(darken(@badgeTopSpot-background,10%),3%);
+@badgeTopSpot-border:               @badgeTopSpot-background;
+@badgeTopSpot_hover-border:         @badgeTopSpot_hover-background;
+@badgeTopSpot-color:                spin(desaturate(darken(@color-orange,32%),42%),2);
+@badgeTopSpot_hover-color:          darken(@badgeTopSpot-color,5%);
+
+//  -- Joel Test
+@badgeJoelTest-background:          spin(saturate(darken(@color-green,27%),30%),-8);
+@badgeJoelTest_hover-background:    desaturate(darken(@badgeJoelTest-background,3%),5%);
+@badgeJoelTest-border:              @badgeJoelTest-background;
+@badgeJoelTest_hover-border:        @badgeJoelTest_hover-background;
+@badgeJoelTest-color:               @color-white;
+@badgeJoelTest_hover-color:         @badgeJoelTest-color;
+
+//  -- Offers Relocation
+@badgeRelocation-background:        @color-grayLight;
+@badgeRelocation_hover-background:  darken(@badgeRelocation-background,5%);
+@badgeRelocation-border:            @badgeRelocation_hover-background;
+@badgeRelocation_hover-border:      darken(@badgeRelocation-border,5%);
+@badgeRelocation-color:             @color-grayDark;
+@badgeRelocation_hover-color:       @badgeRelocation-color;
+
+//  -- Work Remotely
+@badgeRemote-background:            spin(darken(@color-yellow,21%),-5);
+@badgeRemote_hover-background:      darken(@badgeRemote-background,3%);
+@badgeRemote-border:                @badgeRemote-background;
+@badgeRemote_hover-border:          @badgeRemote_hover-background;
+@badgeRemote-color:                 @color-black;
+@badgeRemote_hover-color:           @badgeRemote-color;
+
+//  -- Message Count
+@badgeMessages-background:          @color-orange;
+@badgeMessages_hover-background:    spin(darken(@color-orange,6%),-1);
+@badgeMessages-border:              @badgeMessages-background;
+@badgeMessages_hover-border:        @badgeMessages_hover-background;
+@badgeMessages-color:               @color-white;
+@badgeMessages_hover-color:         @badgeMessages-color;
+
+//  -- Invites Count
+@badgeInvites-background:           spin(desaturate(lighten(@color-brown,24%),11%),-3);
+@badgeInvites_hover-background:     darken(@badgeInvites-background,5%);
+@badgeInvites-border:               @badgeInvites-background;
+@badgeInvites_hover-border:         @badgeInvites_hover-background;
+@badgeInvites-color:                @color-white;
+@badgeInvites_hover-color:          @badgeInvites-color;
+
+
+//  ============================================================================
+//  $ BASE STYLE
+//  ----------------------------------------------------------------------------
+.badge {
+    padding: 3px 5px;
+    position: relative;
+
+    color: @badge-color;
+    .fontSize(xxs);
+    .fontWeight(7);
+    .lineHeight(tighter);
+    text-transform: uppercase;
+
+    background-color: @badge-background;
+    border-radius: @badge-cornerRadius;
+    border-width: 0;
+    border-style: solid;
+    border-color: @badge-border;
+}
+
+
+//  ============================================================================
+//  $ LAYOUT VARIATIONS
+//  ----------------------------------------------------------------------------
+.badge { 
+    //  -- Abbreviations
+    &._abbrev {
+        display: block;
+        width: 1.5em;
+        text-indent: -9999px;
+
+        &:before {
+            position: absolute;
+            left: 0.4em;
+            top: 0.3em;
+            
+            font-weight: bold;
+            text-indent: 0;
+        }
+    }
+
+
+    //  -- Inline Block
+    &._inline {
+        display: inline-block;
+        vertical-align: text-top;
+    }
+
+    //  -- Sizes
+    &._large  {
+        padding: 4px 6px;
+        .fontSize(s);
+
+        &._inline { vertical-align: baseline; } 
+    }
+
+    &._medium { .fontRem(11); }
+}
+
+
+//  ============================================================================
+//  $ STYLE VARIATIONS
+//  ----------------------------------------------------------------------------
+.badge {
+    //  -- Featured
+    &.-featured {
+        background-color: @badgeFeatured-background;
+        border-color: @badgeFeatured-border;
+        color: @badgeFeatured-color;
+
+        // Abbreviation (First Letter) Version
+        &._abbrev:before {
+            content: "F";   // English
+
+            body.lang-fr & { content: "A"; } // Français
+            body.lang-de & { content: "F"; } // Deutsch
+        }
+
+        &:hover, &._hover {
+            background-color: @badgeFeatured_hover-background;
+            border-color: @badgeFeatured_hover-border;
+            color: @badgeFeatured_hover-color;
+        }
+    }
+
+    //  -- Top Spot
+    &.-topSpot {
+        background-color: @badgeTopSpot-background;
+        border-color: @badgeTopSpot-border;
+        color: @badgeTopSpot-color;
+
+        // Abbreviation (First Letter) Version
+        &._abbrev:before {
+            content: "T";   // English
+
+            body.lang-fr & { content: "T"; } // Français
+            body.lang-de & { content: "T"; } // Deutsch
+        }
+
+        &:hover, &._hover {
+            background-color: @badgeTopSpot_hover-background;
+            border-color: @badgeTopSpot_hover-border;
+            color: @badgeTopSpot_hover-color;
+        }
+    }
+
+    //  -- Joel Test
+    &.-joelTest {
+        background-color: @badgeJoelTest-background;
+        border-color: @badgeJoelTest-border;
+        color: @badgeJoelTest-color;
+
+        &:hover, &._hover {
+            background-color: @badgeJoelTest_hover-background;
+            border-color: @badgeJoelTest_hover-border;
+            color: @badgeJoelTest_hover-color;
+        }
+    }
+
+    //  -- Offers Relocation
+    &.-relocation {
+        background-color: @badgeRelocation-background;
+        border-width: 1px;  
+        border-color: @badgeRelocation-border;
+        color: @badgeRelocation-color;
+
+        &:hover, &._hover {
+            background-color: @badgeRelocation_hover-background;
+            border-color: @badgeRelocation_hover-border;
+            color: @badgeRelocation_hover-color;
+        }
+    }
+
+    //  -- Work Remotely
+    &.-remote {
+        background-color: @badgeRemote-background;
+        border-color: @badgeRemote-border;
+        color: @badgeRemote-color;
+
+        &:hover, &._hover {
+            background-color: @badgeRemote_hover-background;
+            border-color: @badgeRemote_hover-border;
+            color: @badgeRemote_hover-color;
+        }
+    }
+
+    //  -- Messages
+    &.-messages {
+        &,
+        &:visited, &._visited {
+            background-color: @badgeMessages-background;
+            border-color: @badgeMessages-border;
+            color: @badgeMessages-color;
+        }
+
+        &:hover, &._hover,
+        &:focus, &._focus {
+            background-color: @badgeMessages_hover-background;
+            border-color: @badgeMessages_hover-border;
+            color: @badgeMessages_hover-color;
+        }
+    }
+
+    //  -- Invites
+    &.-invites {
+        background-color: @badgeInvites-background;
+        border-color: @badgeInvites-border;
+        color: @badgeInvites-color;
+
+        &:hover, &._hover {
+            background-color: @badgeInvites_hover-background;
+            border-color: @badgeInvites_hover-border;
+            color: @badgeInvites_hover-color;
+        }
+    }
+}

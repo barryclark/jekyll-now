@@ -1,0 +1,147 @@
+//  STACK OVERFLOW CAREERS
+//  Product UI Style Guide
+//  Designed & managed by the Stack Exchange Design & Careers Team
+//
+//  Created September 12, 2014
+//  Updated September 15, 2014
+//
+//  http://careers.stackoveflow.com
+//
+//  GRID
+//  Based on Bootstrap v3.2.0 (http://getbootstrap.com)
+//  Copyright 2011-2014 Twitter, Inc.
+//  Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+//  
+//  TABLE OF CONTENTS
+//  • VARIABLES
+//  • FOUNDATION
+//  • COLUMN SIZES
+//
+//  ===========================================================================
+//  $ VARIABLES
+//  ---------------------------------------------------------------------------
+@grid-columnCount:         12;
+@grid-width:               100%;
+@grid-column-width:        @grid-width / @grid-columnCount;
+@grid-column-gutter:       2em;
+@grid-column-padding:      1em;
+@grid-column-margin:       1em;
+
+
+//  ===========================================================================
+//  $ FOUNDATION
+//  ---------------------------------------------------------------------------
+*,
+*:before,
+*:after { .box-sizing(border-box); }
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    // @media (min-width: @mediaQuery-small)   { max-width: @mediaQuery-small - 18; }
+    // @media (min-width: @mediaQuery-medium)  { max-width: @mediaQuery-medium - 22; }
+    // @media (min-width: @mediaQuery-large)   { max-width: @mediaQuery-large - 30; }
+
+    &,
+    .-row {
+        &:before, &:after {
+            display: table;
+            content: " ";
+        }
+
+        &:after { clear: both; }
+    }
+
+    .-row,
+    .-row > [class*="-col"] > .-row {
+        > [class*="-col"] {
+            position: relative;
+            min-height: 1px;
+            width: 100%;
+
+            @media (min-width: @mediaQuery-small)  { float: left; }
+        }
+
+        > .-col12 { clear: left; }
+
+        //  ===========================================================================
+        //  $ COLUMN SIZES
+        //  ---------------------------------------------------------------------------
+        @media (min-width: @mediaQuery-small) { 
+            //  -- Column Sizes
+            > .-col1   { width: @grid-column-width * 1; }
+            > .-col2   { width: @grid-column-width * 2; }
+            > .-col3   { width: @grid-column-width * 3; }
+            > .-col4   { width: @grid-column-width * 4; }
+            > .-col5   { width: @grid-column-width * 5; }
+            > .-col6   { width: @grid-column-width * 6; }
+            > .-col7   { width: @grid-column-width * 7; }
+            > .-col8   { width: @grid-column-width * 8; }
+            > .-col9   { width: @grid-column-width * 9; }
+            > .-col10  { width: @grid-column-width * 10; }
+            > .-col11  { width: @grid-column-width * 11; }
+            > .-col12  { width: @grid-column-width * 12; }
+
+            > [class*="-col"] {
+                //  -- Push Sizes
+                //  For when you want to push a column across the page
+                &._push1   { left: @grid-column-width * 1; }
+                &._push2   { left: @grid-column-width * 2; }
+                &._push3   { left: @grid-column-width * 3; }
+                &._push4   { left: @grid-column-width * 4; }
+                &._push5   { left: @grid-column-width * 5; }
+                &._push6   { left: @grid-column-width * 6; }
+                &._push7   { left: @grid-column-width * 7; }
+                &._push8   { left: @grid-column-width * 8; }
+                &._push9   { left: @grid-column-width * 9; }
+                &._push10  { left: @grid-column-width * 10; }
+                &._push11  { left: @grid-column-width * 11; }
+
+                //  -- Pull Sizes
+                //  For when you want to pull a column across the page
+                &._pull1   { right: @grid-column-width * 1; }
+                &._pull2   { right: @grid-column-width * 2; }
+                &._pull3   { right: @grid-column-width * 3; }
+                &._pull4   { right: @grid-column-width * 4; }
+                &._pull5   { right: @grid-column-width * 5; }
+                &._pull6   { right: @grid-column-width * 6; }
+                &._pull7   { right: @grid-column-width * 7; }
+                &._pull8   { right: @grid-column-width * 8; }
+                &._pull9   { right: @grid-column-width * 9; }
+                &._pull10  { right: @grid-column-width * 10; }
+                &._pull11  { right: @grid-column-width * 11; }
+
+                //  -- Offset Sizes
+                //  For when you want to pull a column across the page
+                &._offset1   { margin-left: @grid-column-width * 1; }
+                &._offset2   { margin-left: @grid-column-width * 2; }
+                &._offset3   { margin-left: @grid-column-width * 3; }
+                &._offset4   { margin-left: @grid-column-width * 4; }
+                &._offset5   { margin-left: @grid-column-width * 5; }
+                &._offset6   { margin-left: @grid-column-width * 6; }
+                &._offset7   { margin-left: @grid-column-width * 7; }
+                &._offset8   { margin-left: @grid-column-width * 8; }
+                &._offset9   { margin-left: @grid-column-width * 9; }
+                &._offset10  { margin-left: @grid-column-width * 10; }
+                &._offset11  { margin-left: @grid-column-width * 11; }
+            }
+        }
+
+        //  ===========================================================================
+        //  $ GUTTERS
+        //  ---------------------------------------------------------------------------
+        &._gutter {
+            > [class*="-col"] {
+                padding-left: (@grid-column-gutter / 2);
+                padding-right: (@grid-column-gutter / 2);
+                
+                &:first-of-type { padding-left: 0; }
+                &:last-of-type  { padding-right: 0; }
+            }
+        }
+
+        //  -- Helper classes
+        &._marginBottom { margin-bottom: @grid-column-gutter; }
+    }
+}

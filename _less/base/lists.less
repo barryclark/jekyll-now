@@ -1,0 +1,90 @@
+//
+//  STACK OVERFLOW CAREERS
+//  Product UI Guide
+//  Designed & managed by the Stack Exchange Creative Team
+//
+//  Created May 8, 2014
+//
+//  http://careers.stackoveflow.com
+//  http://creative.stackexchange.com
+//
+//
+//  LISTS
+//
+//  TABLE OF CONTENTS
+//  • DEFINITION LISTS
+//
+// ===========================================================================
+//  $ DEFINITION LISTS 
+// ---------------------------------------------------------------------------
+dl {
+    margin-bottom: 1em;
+
+    dt {
+        position: absolute;
+        .fontSize(m);
+        .fontWeight(7);
+    }
+    dd {
+        display: inline-block;
+        margin: 0.25em 0 0.75em 25%;
+
+        > p { .fontSize(base); }
+    }
+
+    &._rows {
+
+        > dt {
+            position: relative;
+            display: block;
+        }
+        > dd {
+            display: block;
+            margin: 0;
+        }
+    }
+}
+
+
+//  ---------------------------------------------------------------------------
+//  $ UL LISTS
+//  ---------------------------------------------------------------------------
+//  -- Reset it all
+ul, ol, li {
+    margin: 0;
+    padding: 0;
+}
+ul, ol {
+    margin-bottom: @margin-base;
+    margin-left: @margin-double;
+
+    ul, ol {
+        margin-top: @margin-half;
+        margin-bottom: 0;
+    }
+}
+ol ol {
+    list-style-type: upper-latin;
+    ol { list-style-type: lower-roman; }
+    ol ol { list-style-type: lower-latin; }
+}
+
+li { padding-bottom: @padding-half; }
+
+
+//  -- Inline List
+// ---------------------------------------------------------------------------
+.list-inline, .list-stacked {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  .list-item {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+}
+
+.list-inline  .list-item { display: inline-block; }
+.list-stacked .list-item { display: block; }

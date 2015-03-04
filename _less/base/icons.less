@@ -1,0 +1,93 @@
+//
+//  STACK OVERFLOW CAREERS
+//  Base: Icons
+//
+//  http://careers.stackoverflow.com/
+//
+//
+//  TABLE OF CONTENTS
+//
+//  $ VARIABLES
+//  $ BASE STYLE
+//  $ INDIVIDUAL ICONS
+//
+//  ============================================================================
+//  $ VARIABLES
+//  ----------------------------------------------------------------------------
+@icon-urlPath:      "images";
+
+
+//  ============================================================================
+//  $ BASE STYLES
+//  ----------------------------------------------------------------------------
+.icon {
+    background-image: url("@{icon-urlPath}/icons-jobCampaigns.png"); // PNG Fallback
+    background-image: url("@{icon-urlPath}/icons-jobCampaigns.svg"); // SVG
+    background-position: 0 0;
+    background-repeat: no-repeat;
+
+    display: inline-block;
+    content: "";
+    text-indent: -9999px;
+}
+
+
+//  ============================================================================
+//  $ INDIVIDUAL ICONS
+//  ----------------------------------------------------------------------------
+.icon {
+    //  $$  UI Icons
+    &.-ui {
+        //  Back Arrow
+        &-arrowBack {
+            background-position: 0 0;
+            width: 6px;
+            height: 9px;
+        }
+
+        //  Link: Outbound
+        &-outLink {
+            background-position: -50px 0;
+            width: 9px;
+            height: 9px;
+        }
+
+        //  Settings
+        &-settings {
+            background-position: -100px 0;
+            width: 8px;
+            height: 8px;
+        }
+
+        //  Close Icon
+        &-close {
+            background-position: 0 -50px;
+            width: 9px;
+            height: 9px;
+        }
+
+        //  Warning
+        &-warning {
+            background-position: -50px -50px;
+            width: 16px;
+            height: 14px;   
+        }
+    }
+
+    //  $$  Job Campaign Icons
+    &.-jobs {
+        //  Remote
+        &-remote {
+            background-position: 0 -100px;
+            width: 24px;
+            height: 17px;   
+        }
+
+        //  Relocation
+        &-relocate {
+            background-position: -50px -100px;
+            width: 40px;
+            height: 19px;
+        }
+    }
+}

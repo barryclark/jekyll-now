@@ -1,0 +1,88 @@
+//
+//  STACK OVERFLOW CAREERS
+//  http://careers.stackoverflow.com
+//
+//  Created January 5, 2015
+//
+//  Modules: Summary Boxes
+//
+//  TABLE OF CONTENTS
+//  • VARIABLES
+//  • BASE STYLE
+//
+//  ============================================================================
+//  $ VARIABLES
+//  ----------------------------------------------------------------------------
+//  -- Colors
+@contentRollup-background:                  spin(desaturate(lighten(@color-grayMid,54%),1%),4);
+@contentRollup-border:                      spin(desaturate(lighten(@color-grayMid,41%),1%),-3);
+@contentRollup-color:                       @color-grayMid;
+@contentRollup-content-background:          @color-white;
+
+
+//  ============================================================================
+//  $ BASE STYLE
+//  ----------------------------------------------------------------------------
+.contentRollup {
+    display: block;
+    position: relative;
+    width: 100%;
+
+    background-color: @contentRollup-background;
+    border-width: 1px;
+    border-style: solid;
+    border-color: @contentRollup-border;
+    border-radius: @borderRadius-small;
+
+    dl._rows > dt { .fontSize(s); }
+
+    .-header {
+        padding: 1em;
+
+        //  In order for the copy to line up with the buttons perfectly, we have
+        //  to assign a line-height. The target height is 32px. This solution
+        //  will not work though if we have multiple lines.
+        line-height: 2.285714286;
+
+        // Alter button styles
+        .btn {
+            .fontSize(xs);
+            .fontWeight(4);
+
+            &._clear { padding: 0.5em; }
+
+            &:hover, &._hover,
+            &:active, &._active {
+                text-decoration: none;
+                box-shadow: none;
+            }
+        }
+
+        // Align images
+        img {
+            display: inline-block;
+            margin-right: 4px;
+        }
+    }
+
+    .-content {
+        padding: 1.43em;
+
+        background-color: @contentRollup-content-background;
+        border-radius: 0 0 @borderRadius-small @borderRadius-small;
+
+        dl { margin-bottom: 0; }
+    }
+
+
+    // Image Layouts
+    .-favicon {
+        vertical-align: text-bottom;
+        max-height: 16px;
+        max-width: 16px;
+    }
+    .-cc_visa {
+        position: relative;
+        top: 0.5em;
+    }
+}

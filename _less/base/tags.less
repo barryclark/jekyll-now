@@ -1,0 +1,95 @@
+//
+//  STACK OVERFLOW CAREERS
+//  Product UI Style Guide
+//  Designed & managed by the Stack Exchange Design Team
+//
+//  Created January 12, 2013
+//  Updated January 5, 2015
+//
+//  http://careers.stackoveflow.com
+//
+//  TAGS
+//  
+//  TABLE OF CONTENTS
+//  • VARIABLES
+//  • BASE
+//  • ALTERNATES
+//
+//  ============================================================================
+//  $ VARIABLES
+//  ============================================================================
+//  -- Colors
+@tagSO-background:                      desaturate(lighten(@color-blue,41%),62%);
+@tagSO_hover-background:                spin(desaturate(lighten(@color-blue,34%),54%),-1);
+@tagSO-border:                          @tagSO-background;
+@tagSO_hover-border:                    @tagSO_hover-background;
+@tagSO-color:                           desaturate(darken(@color-blue,10%),61%);
+@tagSO_hover-color:                     darken(@tagSO-color,5%);
+
+@tagSO_dark-background:                 desaturate(darken(@color-blue,10%),61%);
+@tagSO_dark_hover-background:           darken(@tagSO_dark-background,3%);
+@tagSO_dark-border:                     @tagSO_dark-background;
+@tagSO_dark_hover-border:               @tagSO_dark_hover-background;
+@tagSO_dark-color:                      desaturate(lighten(@color-blue,45%),62%);
+@tagSO_dark_hover-color:                @tagSO_dark-color;
+
+@tagSO_highlighted-background:          spin(desaturate(lighten(@color-orange,34%),24%),7);
+@tagSO_highlighted_hover-background:    saturate(darken(@tagSO_highlighted-background,3%),5%);
+@tagSO_highlighted-border:              @color-orange;
+@tagSO_highlighted_hover-border:        @tagSO_highlighted-border;
+@tagSO_highlighted-color:               @color-grayDark;
+@tagSO_highlighted_hover-color:         darken(@tagSO_highlighted-color,2%);
+
+//  ----------------------------------------------------------------------------
+//  $ TAGS: POST TAG
+//  Base style for "tags" from SO. Used on job ad listings and company pages.
+//  ----------------------------------------------------------------------------
+.post-tag, .postTag {
+    display: inline-block;
+    margin: 0.167em;
+    margin-left: 0;
+    padding: 0.35em 0.42em 0.5em;
+
+    .fontSize(s);
+    .lineHeight(tightest);
+    text-decoration: none;
+    text-transform: lowercase;
+    color: @tagSO-color;
+    
+    background-color: @tagSO-background;
+    border: 0 solid @tagSO-border;
+    white-space: nowrap;
+
+    .transition(all 0.1s ease-in);
+
+    &:hover, &._hover {
+        background-color: @tagSO_hover-background;
+        border-color: @tagSO_hover-border;
+        color: @tagSO_hover-color;
+        text-decoration: none;
+    }
+
+    &._dark {
+        background-color: @tagSO_dark-background;
+        border-color: @tagSO_dark-border;
+        color: @tagSO_dark-color;
+        &:hover, &._hover {
+            background-color: @tagSO_dark_hover-background;
+            border-color: @tagSO_dark_hover-border;
+            color: @tagSO_dark_hover-color;
+        }
+    }
+
+    //  Not sure entirely the purpose of this. Keeping it until I know further.
+    &.highlighted, &._highlighted {
+        border-color: @tagSO_highlighted-border;
+        background-color: @tagSO_highlighted-background;
+        color: @tagSO_highlighted-color;
+
+        &:hover, &._hover {
+            border-color: @tagSO_highlighted_hover-border;
+            background-color: @tagSO_highlighted_hover-background;
+            color: @tagSO_highlighted_hover-color;
+        }
+    }
+}
