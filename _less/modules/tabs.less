@@ -1,0 +1,265 @@
+//
+//  STACK OVERFLOW CAREERS
+//  http://careers.stackoverflow.com
+//
+//  Last updated October 7, 2014
+//
+//  Modules — Tabs
+//
+//  TABLE OF CONTENTS
+//  • VARIABLES
+//  • BASE STYLE
+//
+//  ============================================================================
+//  $ VARIABLES
+//  ----------------------------------------------------------------------------
+@tab-background:                transparent;
+@tab_hover-background:          fade(@backgroundColor-grayLighter,40%);
+@tab-border:                    transparent;
+@tab_hover-border:              @tab_hover-background;
+@tab-borderBottom:              @tab_selected-border;
+@tab-color:                     desaturate(lighten(@color-grayMid,13%),4%);
+@tab_hover-color:               @color-grayMid;
+
+@tab_selected-background:       @color-white;
+@tab_selected_hover-background: @tab_selected-background;
+@tab_selected-borderTop:        @color-orange;
+@tab_selected-borderBottom:     @tab_selected-background;
+@tab_selected-border:           @borderColor-gray;
+@tab_selected_hover-border:     @tab_selected-border;
+@tab_selected-color:            @color-black;
+@tab_selected_hover-color:      darken(@tab_selected-color,5%);
+
+@tabBoard-background:               transparent;
+@tabBoard-border:                   transparent;
+@tabBoard-color:                    desaturate(lighten(@color-grayMid,13%),4%);
+@tabBoard-success-color:            spin(saturate(darken(@color-green,19%),37%),-9);
+@tabBoard-warning-color:            @color-red;
+@tabBoard_selected-borderBottom:    @color-orange;
+
+
+//  ============================================================================
+//  $ BASE STYLE
+//  ----------------------------------------------------------------------------
+.tabNav {
+    &:extend(.clearfix all);
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    > .-tab {
+        float: left;
+        position: relative;
+        margin-right: 4px;
+        padding-bottom: 0;
+        z-index: 0;
+
+        > a {
+            display: inline-block;
+            padding: 0.7em 1.5em;
+            
+            color: @tab-color;
+            .fontSize(base);
+            .lineHeight(base);
+            text-align: center;
+
+            background-color: @tab-background;
+            border: 1px solid @tab-border;
+
+            &:hover, &._hover,
+            &:active, &._active,
+            &:focus, &._focus {
+                color: @tab_hover-color;
+                text-decoration: none;
+                background-color: @tab_hover-background;
+                border-color: @tab_hover-border;
+                border-bottom: 1px solid @tab-border;
+            }
+        }
+    }
+
+    > ._selected {
+        z-index: 2;
+
+        > a {
+            padding-bottom: 0.85em;
+            color: @tab_selected-color;
+            border-color: @tab_selected-border;
+            border-bottom-color: @tab_selected-borderBottom;
+            background-color: @tab_selected-background;
+
+            &:hover, &._hover,
+            &:active, &._active,
+            &:focus, &._focus {
+                color: @tab_selected_hover-color;
+                border-color: @tab_selected_hover-border;
+                border-bottom-color: @tab_selected-borderBottom;
+                background-color: @tab_selected_hover-background;
+            }
+        }
+
+        > span {
+            position: absolute;
+            top: 0;
+            display: block;
+            height: 2px;
+            width: 100%;
+            background-color: @tab_selected-borderTop;
+        }
+    }
+
+    &._padded .-tab:first-child { margin-left: 1em; }
+
+    // --  Little number notice
+    .notice {
+        padding: 1px 0.25em;
+        background-color: @color-orange;
+        border-radius: @borderRadius-base;
+        color: @color-white;
+    }
+
+    &-borderBottom {
+        margin-top: -1px;
+        margin-bottom: 2em;
+        height: 1px;
+        width: 100%;
+        border-bottom: 1px solid @tab-borderBottom;
+        z-index: 1;
+    }
+}
+
+//  ============================================================================
+//  $ TAB DASHBOARD
+//  ----------------------------------------------------------------------------
+.tabBoard {
+    &:extend(.clearfix all);
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    > .-tab {
+        float: left;
+        position: relative;
+        margin-right: 0;
+        padding-bottom: 0;
+        z-index: 0;
+
+        > a {
+            display: inline-block;
+            opacity: 0.6;
+            
+            .fontSize(base);
+            .lineHeight(base);
+            color: @tabBoard-color;
+
+            &:hover, &._hover,
+            &:active, &._active,
+            &:focus, &._focus {
+                opacity: 0.75;
+                text-decoration: none;
+            }
+        }
+
+        &:first-child .stat { padding-left: 4px; }
+    }
+    > ._selected {
+        z-index: 2;
+
+        > a {
+            opacity: 1;
+
+            &:hover, &._hover,
+            &:active, &._active,
+            &:focus, &._focus {
+                opacity: 0.9;
+            }
+        }
+
+        > span {
+            position: absolute;
+            bottom: 0;
+            display: block;
+            height: 3px;
+            width: 100%;
+            background-color: @tabBoard_selected-borderBottom;
+        }
+    }
+}
+
+//  -- Tabs: Dashboard Content
+.tabBoard .-content {
+}
+
+//  -- Tabs: Stat Styles
+.stat {
+    &:extend(.clearfix all);
+    padding: 10px 30px 36px 14px;
+
+    > div {
+        float: left;
+
+        &._contentLabel {
+            clear: left;
+            position: absolute;
+            bottom: 26px;
+            left: 10px;
+        }
+        &._secondary {
+            margin-left: 0.75em;
+            margin-top: 0.25em;
+        }
+    }
+
+    // -- Stat Values (52.5% or 11,591)
+    .-value, .-label {
+        color: @tabBoard-color;
+        .lineHeight(tight);
+        letter-spacing: 0;
+    }
+
+    .-value {
+        margin-bottom: 0;
+        .fontSize(m);
+        .fontWeight(7);
+        .lineHeight(tightest);
+
+        &._large {
+            margin-bottom: 7px;
+            color: @color-grayDark;
+            .fontSize(xxl);
+            letter-spacing: -1px;            
+        }
+    }
+
+    .-label {
+        margin-bottom: 0;
+        .fontSize(xs);
+        .fontWeight(4);
+
+        &._large {
+            .fontSize(m);
+        }
+    }
+
+    .is-better, .is-worse {
+        margin-left: 11px;
+        position: relative;
+        .fontSize(s);
+        .fontWeight(7);
+
+        &:before {
+            position: absolute;
+            left: -10px;
+            top: 0;
+            padding: 1px;
+        }
+    }
+    .is-better {
+        color: @tabBoard-success-color;
+        &:before { content: "+"; }
+    }
+    .is-worse {
+        color: @tabBoard-warning-color;
+        &:before { content: "-"; }
+    }
+}

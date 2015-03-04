@@ -1,0 +1,195 @@
+//
+//  STACK OVERFLOW CAREERS
+//
+//  Created May 2, 2014
+//  Updated October 28, 2014
+//
+//  http://careers.stackoverflow.com
+//
+//  FORMS
+//  
+//  TABLE OF CONTENTS
+//  • VARIABLES
+//  • BASE STYLE
+//  • LAYOUT VARIATIONS
+//
+//  ============================================================================
+//  $ VARIABLES
+//  ----------------------------------------------------------------------------
+//  -- Size Varibles
+@table-columnCount:                     12;
+@table-width:                           100%;
+@table-column-width:                    @table-width / @table-columnCount;
+@tableCell-padding:                     @padding-base;
+@tableCell_condensed-padding:           floor(@padding-half);
+@tableCell-margin:                      @margin-double;
+
+//  -- Color Varibles
+@table-background:                      @color-white;
+@tableHeader-background:                @backgroundColor-grayLight;
+@tableHeader-border:                    @borderColor-grayDark;
+@tableCell-border:                      @borderColor-gray;
+@tableCell-background:                  @color-white;
+@tableCell_hover-background:            darken(@color-white,3%);
+@tableCell_hover-shadowInner-top:       @color-white;
+@tableCell_hover-shadowInner-bottom:    @color-white;
+
+
+//  ============================================================================
+//  $ BASE STYLE
+//  ----------------------------------------------------------------------------
+caption, .caption {
+    padding-top: @tableCell-padding;
+    padding-bottom: @tableCell-padding;
+    color: @copy_muted-color;
+    text-align: left;
+}
+
+th { text-align: left; }
+
+table, .table {
+    margin-bottom: @margin-double;
+    width: 100%;
+    max-width: 100%;
+
+    background-color: transparent;
+    border-spacing: 0;
+    border-collapse: collapse;
+    border-width: 0;
+
+    > thead,
+    > tbody,
+    > tfoot {
+        > tr {
+            > th,
+            > td {
+                padding: @tableCell-padding;
+                vertical-align: top;
+                .lineHeight(base);
+            }
+        }
+    }
+
+    > thead > tr > th { vertical-align: bottom; }
+    > tfoot > tr > td { vertical-align: top; }
+
+    > caption + thead, > .caption + thead,
+    > colgroup + thead, > .colgroup + thead,
+    > thead:first-child {
+        > tr:first-child {
+            > th,
+            > td { border-top: 0; }
+        }
+    }
+
+    //  -- Text Alignment
+    ._textLeft   { text-align: left; }
+    ._textCenter { text-align: center; }
+    ._textRight  { text-align: right; }
+
+    //  -- Table Cell Sizing
+    col[class*="-col"] {
+        position: static; // Prevent border hiding in Firefox and IE9/10 (see https://github.com/twbs/bootstrap/issues/11623)
+        float: none;
+        display: table-column;        
+    }
+    td,
+    th {
+        &[class*="-col"] {
+            position: static;
+            float: none;
+            display: table-cell;
+        }
+        //  -- Column Sizes
+        &.-col1   { width: @table-column-width * 1; }
+        &.-col2   { width: @table-column-width * 2; }
+        &.-col3   { width: @table-column-width * 3; }
+        &.-col4   { width: @table-column-width * 4; }
+        &.-col5   { width: @table-column-width * 5; }
+        &.-col6   { width: @table-column-width * 6; }
+        &.-col7   { width: @table-column-width * 7; }
+        &.-col8   { width: @table-column-width * 8; }
+        &.-col9   { width: @table-column-width * 9; }
+        &.-col10  { width: @table-column-width * 10; }
+        &.-col11  { width: @table-column-width * 11; }
+        &.-col12  { width: @table-column-width * 12; }
+    }
+}
+
+
+//  ============================================================================
+//  $ LAYOUT VARIATIONS
+//  ----------------------------------------------------------------------------
+table, .table {
+    //  -- Row Hover Effect
+    &._hover > tbody > tr:hover {
+        background-color: @tableCell_hover-background;
+        > td { box-shadow: inset 0 2px 0 @tableCell_hover-shadowInner-top, inset 0 -2px 0 @tableCell_hover-shadowInner-bottom; }
+    }
+
+    //  -- Condensed Table
+    &._condensed {
+        > thead,
+        > tbody,
+        > tfoot {
+            > tr {
+                > th,
+                > td { padding: @tableCell_condensed-padding; }
+            }
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] { margin-top: 0; }
+    }
+
+    //  --  Add Borders
+    &._borders {
+        > thead,
+        > tbody,
+        > tfoot {
+            > tr {
+                > th,
+                > td { border-top: 1px solid @tableCell-border; }
+            }
+        }
+        > thead > tr > th { border-bottom: 1px solid @tableHeader-border; }
+        > tbody + tbody { border-top: 2px solid @tableCell-border; }
+    }
+
+    //  -- Totals Row: When you want to really summarize things
+    tfoot.-totals {
+        > tr > td { font-size: 18px; }
+
+        &:hover {
+            background-color: transparent;
+            transition: none;
+        }
+    }
+
+    //  -- Toggle a table into view. Default is hidden.
+    .js-tableToggle { display: none; }
+}
+
+//  -- Column Sizes
+th, td {
+    &.-checkbox { width: 2em; }
+}
+
+
+// Specific table styles
+.data-table-referrers {
+  thead th { background-color: @color-white; }
+
+  // Hide extra data rows until desired.
+  tr.data-more { display: none; }
+}
+
+// Column Widths
+// We sometimes want the ability to limit the width of a table column
+.l-dt-col-sm  { width: 15%; }
+.l-dt-col-med { width: 25%; }
+
+td.empty, .no-referrer {
+  font-style: italic;
+  opacity: 0.75;
+}

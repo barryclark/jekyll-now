@@ -1,0 +1,160 @@
+//
+//  STACK OVERFLOW CAREERS
+//
+//  Created May 2, 2014
+//  Updated February 6, 2015
+//
+//  http://careers.stackoverflow.com
+//
+//  VARIABLES
+//  
+//  TABLE OF CONTENTS
+//  • Corner Radius
+//  • Media Queries
+//  • Padding, Margin, Whitespace
+//  • Z-Index
+//  • Colors
+//  • Type
+//
+// ===========================================================================
+//  $ CORNER RADIUS
+// ---------------------------------------------------------------------------
+@borderRadius-base:   	4px;
+@borderRadius-large:    @borderRadius-base * 2;
+@borderRadius-small:    @borderRadius-base / 2;
+
+
+// ===========================================================================
+//  $ MEDIA QUERY SIZES
+// ---------------------------------------------------------------------------
+@mediaQuery-small:      768px;
+@mediaQuery-medium:     992px;
+@mediaQuery-large:      1200px;
+
+
+// ===========================================================================
+//  $ PADDING, MARGINS, WHITESPACE
+// ---------------------------------------------------------------------------
+@padding-half:          @padding-base / 2;
+@padding-base:          @fontSize-base * 1px;
+@padding-double:        @padding-base * 2;
+
+@margin-half:			@margin-base / 2;
+@margin-base:           @fontSize-base * 1px;
+@margin-double:         @margin-base * 2;
+
+
+// ===========================================================================
+//  $ Z-INDEX
+// ---------------------------------------------------------------------------
+@zindex-navbar:			1000;
+@zindex-navbar_fixed:	1030;
+@zindex-dropdown:		1000;
+@zindex-popover:		1010;
+@zindex-tooltip:		1020;
+@zindex-modal:			1050;
+@zindex-modalBackdrop:	1040;
+
+
+//  ============================================================================
+//  $ COLOR
+//  ----------------------------------------------------------------------------
+//  Color management is a big undertaking in a product like Stack Overflow
+//  Careers. Various situations call for varying colors. In the past we would
+//  declare all of those values within components, littering our LESS files with
+//  either declared colors or color variable names (i.e., #FFF, rgb(255,255,255),
+//  @gray-light-01, @gray-dark, etc). This approach made managing colors a losing
+//  battle. Like other property variables, they can have global scope or 
+//  component scope. Global variables are defined here, as are variables for 
+//  simple (primitive) components. Variables for components that have their own
+//  LESS file are defined in that file.
+//
+//  1.  The designers mainly control colors and HSL is a much easier color space
+//      to visualize a color within. If you aren't familiar with HSL, it stands
+//      for Hue, Saturation, and Lightness. Hue is set in a circular angle, going
+//      from red (0º) all the way back around to red again (360º). The major stops
+//      along the way are:
+//      0     Red
+//      60    Yellow
+//      120   Green
+//      180   Aqua
+//      240   Blue
+//      300   Purple
+//      360   Red
+//
+//      To generate colors like orange, brown, white, grays, and black, you use the
+//      saturation and lightness to move a color forward and backward. For a more
+//      in-depth understanding of HSL, visit the W3C's Wiki:
+//      http://www.w3.org/wiki/CSS/Properties/color/HSL
+//
+//  2.  LESS' color functions allow for easier manipulation of colors than RGB.
+//      Granted, you could generate the initial the color as a HEX or RGB value and
+//      manipulate it using HSL color functions. This is a bit confusing though to
+//      declare values one way and manipulate them another. Both HSL and RGB are
+//      supported in all browsers except IE6 amd IE8.
+//
+//  
+//  Converting HSB to HSL:
+//  HSB is not the same as HSL. In order to use HSL colors, convert the RGB values
+//	found within Photoshop or Sketch to HSL values at the following website:
+//	http://serennu.com/colour/hsltorgb.php
+//
+//  ----------------------------------------------------------------------------
+//	-- Global colors
+@color-orange:    hsl(21,100%,56%);
+@color-brown:     hsl(35,45%,26%);
+@color-yellow:    hsl(50,100%,71%);
+@color-green:     hsl(160,63%,61%);
+@color-blue:      hsl(205,100%,50%);
+@color-red:       hsl(0,75%,50%);
+
+@color-white:     hsl(0,0%,100%);
+@color-grayLight: spin(desaturate(lighten(@color-grayMid,50%),3%),-6);
+@color-grayMid:   hsl(206,10%,42%);
+@color-grayDark:  spin(darken(@color-grayMid,14%),2);
+@color-black:     spin(saturate(darken(@color-grayMid,26%),11%),2);
+
+//	-- Global Background Variables
+@backgroundColor-grayLighter:  spin(desaturate(lighten(@color-grayMid,53%),6%),-26);
+@backgroundColor-grayLight:    @color-grayLight;
+
+//	-- Global Border Variables
+@borderColor-grayLight: spin(desaturate(lighten(@color-grayMid,46%),5%),14);
+@borderColor-gray:      spin(desaturate(lighten(@color-grayMid,41%),8%),4);
+@borderColor-grayDark:  desaturate(lighten(@color-grayMid,13%),4%);
+
+
+//  ============================================================================
+//  $ TYPE
+//	Please see "/base/_type" for the reasons this is kept here vs. there.
+//  ----------------------------------------------------------------------------
+//  -- Sizes
+@fontSize-base:             13;
+
+//  -- Font Family
+@fontFamily-sans:           "HelveticaNeue-Regular", "Helvetica Neue Regular", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+@fontFamily-serif:          Georgia, Times New Roman, Times, serif;
+@fontFamily-code:           Menlo, Monaco, Consolas, "Courier New", monospace;
+
+//  -- Colors
+@copy-color:                @color-grayDark;
+@copy_lead-color:           spin(desaturate(lighten(@color-grayMid,25%),8%),14);
+@copy_muted-color:          desaturate(lighten(@color-grayMid,13%),4%);
+
+@link-color:                @color-blue;
+@link_hover-color:          spin(@link-color, 2);
+
+@title-color:               saturate(darken(@color-grayDark,12%),16%);
+@title_section-color:       @title-color;
+@title_subSection-color:    @color-grayMid;
+@title_muted-color:         @copy_muted-color;
+
+@quote-background:          @backgroundColor-grayLighter;
+@quote-border:              @borderColor-grayDark;
+@quote-border_accent:       @color-orange;
+@quote-textColor:           @color-grayMid;
+@quote_pull-textColor:      saturate(darken(@color-grayMid,19%),3%);
+
+@callout-infoBck:           spin(lighten(@color-yellow,25%),-6);
+@callout-infoBorder:        spin(desaturate(lighten(@color-yellow,14%),53%),-5);
+@callout-infoText:          spin(desaturate(lighten(@color-grayMid,6%),6%),-2);
