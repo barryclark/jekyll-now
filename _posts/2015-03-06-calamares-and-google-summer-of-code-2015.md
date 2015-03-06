@@ -1,12 +1,12 @@
 ---
 published: true
 layout: post
-title: Calamares and Google Summer of Code 2015
+title: Calamares and GSoC 2015
 ---
 
 [KDE](http://kde.org) has been [accepted](https://www.google-melange.com/gsoc/org2/google/gsoc2015/kde) as a mentoring organization for Google Summer of Code 2015, and the KDE Student Programs team has kindly granted Calamares the opportunity to participate under the KDE umbrella.
 
-![](https://1.bp.blogspot.com/-vIaQK-is11M/VC2kGKZ3udI/AAAAAAAAYzY/aZ63pTa5h6U/s1600/image01.jpg)
+<img src="https://1.bp.blogspot.com/-vIaQK-is11M/VC2kGKZ3udI/AAAAAAAAYzY/aZ63pTa5h6U/s1600/image01.jpg">
 
 Google Summer of Code (GSoC) is an annual program, first held in 2005, in which Google awards stipends (of US$5,500, as of 2014) to all students who successfully complete a requested open source software coding project during the summer.
 
