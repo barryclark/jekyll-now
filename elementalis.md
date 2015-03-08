@@ -22,6 +22,6 @@ ElementaliS was my first game design, and my only released game to date. In 2006
 
 ElementaliS sets are currently $5
 
-ElemeneT Dice sets are currently $2.50
+ElemenT Dice sets are currently $2.50
 
 If you'd like to purchase either, email me at rkalajian [at] gmail.com.
