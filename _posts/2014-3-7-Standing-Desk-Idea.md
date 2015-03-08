@@ -17,6 +17,6 @@ The second idea is much cheaper, and a bit more flexible, but not as functional.
 
 ![Standing Desk]({{ site.url }}/images/standing-desk-2.jpg)
 
-This one would only be around $22, and was designed by Colin Nederkoorn and  Ryan Witt. I'd actually probably need to make this a bit wider, but it's something I could put on another desk, and maybe even hide away during the holidays when we have guests over.
+[This one](http://iamnotaprogrammer.com/Ikea-Standing-desk-for-22-dollars.html) would only be around $22, and was designed by Colin Nederkoorn and  Ryan Witt. I'd actually probably need to make this a bit wider, but it's something I could put on another desk, and maybe even hide away during the holidays when we have guests over.
 
 
