@@ -4,7 +4,7 @@ title: ElementaliS
 permalink: /elementalis/
 ---
 
-({{ site.url }}/images/elementalis.jpg)
+![ElementaliS Set]({{ site.url }}/images/elementalis.jpg)
 
 **Publisher:** Tremorworks
 **Year:** 2006
