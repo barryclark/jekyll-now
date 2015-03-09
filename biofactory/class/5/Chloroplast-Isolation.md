@@ -1,3 +1,9 @@
+---
+layout: page
+title: Chloroplast Isolation
+permalink: /biofactory/class/5-centrifuge/chloroplast-isolation/
+---
+
 # Chloroplast Isolation
 
 ### Materials
