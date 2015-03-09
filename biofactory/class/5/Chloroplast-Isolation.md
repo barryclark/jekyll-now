@@ -4,12 +4,10 @@ title: Chloroplast Isolation
 permalink: /biofactory/class/5-centrifuge/chloroplast-isolation/
 ---
 
-# Chloroplast Isolation
-
 ### Materials
 - Fresh Spinach
 - Cheese cloth or coffee filter
-- 10 2 mL centrifuge tubes
+- 10x 2 mL centrifuge tubes
 - Pasteur transfer pipettes
 - Beaker
 - Ice
