@@ -17,7 +17,7 @@ Spectroscopy is an essential tool for monitoring the growth and production in yo
 * Analytical techniques
 * Spectrometer Design
 * Spectrometry Practical
-  * Iron Calibration Curve
+  * [Iodine Clock Reaction](/biofactory/class/7-spectrometer/iodine-clock-reaction/)
 
 ## Spectrometer Design
 
