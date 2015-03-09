@@ -10,10 +10,10 @@ This class is essential. You will learn how to design objects in 2D and 3D and t
 
 ## Schedule
 
-* Digital Fabrication & Materials
-* Construction
-* SketchUp
-* OpenSCAD
+* Digital Fabrication & Materials & Construction, [pictures of Alex](/biofactory/class/3/pdf/1 - Alex.zip)
+* [3D Printing, Biology & Sculpture](/biofactory/class/3/pdf/2 - 3D Printing, Biology, Sculpture.pdf)
+* [SketchUp & OpenSCAD](/biofactory/class/3/pdf/3 - SketchUp, OpenSCAD and Inkscape.pdf)
+  * Example [Tube Rack files](/biofactory/class/3/pdf/Tube Rack.zip)
 * Practicals
   * 3D Printing
   * Lasercutting
@@ -25,6 +25,7 @@ This class is essential. You will learn how to design objects in 2D and 3D and t
 * OpenSCAD
   * [Centrifuge rotor](/biofactory/class/3/Rotor.scad)
   * [GL45 Bottle cap with 3 connectors](/biofactory/class/3/GL45 Bottle cap.scad)
+    * [Threads library](http://dkprojects.net/openscad-threads/)
 
 ## Assignment
 

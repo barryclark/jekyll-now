@@ -11,6 +11,7 @@ Visualize cell nuclei in eukaryote cells.
 ## Materials
 
 * Gas burner
+* 95% alcohol
 * Loeffler's methylene blue solution
 * Tap water
 * Blotting paper
@@ -19,13 +20,15 @@ Visualize cell nuclei in eukaryote cells.
 
 1. Prepare a drop of sample on your microscope slide according to our [Method](/biofactory/class/2-microscope/preparing-slides/)
 2. Air dry the sample for 5 to 10 minutes.
-3. Fixate the cells by quickly moving the object glass through a flame.
-4. Let the sample cool down.
-5. Add the Loeffler's solution for about 60 seconds.
-6. Rinse the slide with tap water.
-7. Air dry the sample.
-8. Cover the sample with a cover slide.
-9. Take a look at the sample through the microscope with the diaphragm fully open.
+3. Soak the cells in a drop of 95% alcohol to de-hydrate the cells
+4. Air dry the sample for 5 to 10 minutes, make sure all the alcohol is evaporated
+5. Fixate the cells by quickly moving the object glass through a flame.
+6. Let the sample cool down.
+7. Add the Loeffler's solution for about 60 seconds.
+8. Rinse the slide with tap water.
+9. Air dry the sample.
+10. Cover the sample with a cover slide.
+11. Take a look at the sample through the microscope with the diaphragm fully open.
 
 # Composition of the stains
 

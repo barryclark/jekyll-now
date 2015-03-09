@@ -4,7 +4,7 @@ title: Centrifuge (Class 5)
 permalink: /biofactory/class/5-centrifuge/
 ---
 
-> NOTE: these instructions are still under construction. The designs and BoM might be subject to change.
+> WARNING: Centrifuges are dangerous machines. Always make sure you detach the rotor from the motor when testing the device. Attach something to the motor only after you are confident that you have the machine working properly.
 
 ## Synopsys
 
