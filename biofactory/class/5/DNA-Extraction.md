@@ -1,4 +1,8 @@
-
+---
+layout: page
+title: DNA Extraction
+permalink: /biofactory/class/5-centrifuge/DNA-extraction/
+---
 # DNA Extraction
 
 This procedure will teach you how to isolate DNA from biological samples like saliva. Basically what we will do is open up the cells with soap, deteriate proteins with salt and precipitate the DNA with alcohol. Using the centrifuge, the DNA will stick to the bottom of our tube for us to get rid of the rest.
