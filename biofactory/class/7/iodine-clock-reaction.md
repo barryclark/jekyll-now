@@ -1,3 +1,9 @@
+---
+layout: page
+title: Iodine Clock Reaction
+permalink: /biofactory/class/7-spectrometer/iodine-clock-reaction/
+---
+
 ## Materials
 
 * 4x 50 mL tube
