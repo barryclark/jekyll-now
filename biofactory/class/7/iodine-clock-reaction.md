@@ -14,7 +14,7 @@ permalink: /biofactory/class/7-spectrometer/iodine-clock-reaction/
 * Liquid Starch Solution (0.3%, so 3 grams of starch in 1 liter of heated water)
 * Safety goggles
 
-Method
+## Method
 
 1. Put on those safety goggles
 2. Crush the Vitamin C tablet in a plastic bag 
