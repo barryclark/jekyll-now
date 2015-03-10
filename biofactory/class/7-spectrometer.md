@@ -32,7 +32,7 @@ This week we will build the spectrometer. You may choose which design. Download 
 
 ## Photodiode array-based photospectrometer
 
-The photodiode array spectrophotometer files are stored in a [git repository](https://github.com/BioHackAcademy/BHA_Spectrophotometer) which you can clone or [download as a zip archive](https://github.com/BioHackAcademy/BHA_Spectrophotometer/archive/master.zip)
+The photodiode array spectrophotometer files are stored in a [git repository](https://github.com/BioHackAcademy/BHA_Spectrophotometer) which you can clone or [download as a zip archive](https://github.com/BioHackAcademy/BHA_Spectrophotometer/archive/master.zip). Instructions for building are found [here](/biofactory/class/7-spectrometer/spectrometer-guide/)
 
 ![CCD Array Spectrometer](/biofactory/class/7/CCD-Array-Spectrometer.png)
 
