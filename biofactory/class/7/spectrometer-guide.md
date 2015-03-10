@@ -8,18 +8,11 @@ The material list is based on the [Requirements list](/biofactory/class/7-spectr
 
 ### TSL1406R spectrometer building guide
 
+This spectrometer uses the TSL1406R linear sensor array, which is basically a lot of photodiodes in a row. The sensor actually consists of 2 internal sensors which can be connected either in serial or in parallel mode. Both require a lot of connections however. We chose the serial mode and connected it to the arduino as shown below:
+![Connection diagram](https://raw.githubusercontent.com/BioHackAcademy/BHA_Spectrophotometer/master/sensor%20pins.png)
 
-|#|Amount|Description|Supplier NL|Cost|
-|-:|----:|:---------|:-------|---:|
-|1|1|White LED|[iPrototype](https://iprototype.nl/products/components/led-lcd/ledwit)|0.52|
-|2|1|TSL1406R Photo diode array|[Mouser](http://nl.mouser.com/ProductDetail/ams/TSL1406R/?qs=owm69ILshgasXOGrAzFz%252bQ%3D%3D)|22.35|
-|3|1|1,000 lines/mm grating|[ipacity](http://ipacity.biedmeer.nl/Webwinkel-Product-78540591/Folie-tralie-1000-lijnen-mm-%2815-x-30-cm%29.html) [carolina](http://www.carolina.com/physical-science-light-and-optics/diffraction-grating/755230.pr?catId=&mCat=&sCat=&ssCat=&question=diffraction+grating)|15.90|
-|4|1|220 ohm resistor|[iPrototype](https://iprototype.nl/products/components/resistors/220R)|0.45|
-|5|1|Power switch|[iPrototype](https://iprototype.nl/products/components/buttons-switches/rocker-switch-large)|0.95|
-|6|1|Power supply|||
-|--|--|---|---|---|
-|||*Total costs*|||
-
+Ofcourse there is a nicer way of connecting those pins, but we went for the quick and dirty approach:
+![Connecting the pins in practice](https://raw.githubusercontent.com/BioHackAcademy/BHA_Spectrophotometer/master/sensor%20wires%20photo.jpg)
 
 
 Back to [Biofactory - Class 7: Spectrometer](/biofactory/class/7-spectrometer/)
