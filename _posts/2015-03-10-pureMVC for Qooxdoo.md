@@ -9,6 +9,6 @@ date:   2015-03-10 17:05:00
 
 랩핑한지 오래 되었지만 제가 직접 하나하나 랩핑하였습니다.
 
-[puremvc for Qooxdoo]({{ site.baseurl}}https://github.com/windofwind/pureMVC-for-Qooxdoo/)
+[pureMVC for Qooxdoo]({{ site.baseurl}}https://github.com/windofwind/pureMVC-for-Qooxdoo/)
 
 qooxdoo 에 pureMVC 적용하고 싶으신 분들은 프로젝트 라이브러리에 추가하세요.
