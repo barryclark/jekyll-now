@@ -15,7 +15,7 @@ permalink: /biofactory/participants/documentation/
   * [Jamillah](http://jamillah.github.io/)
   * [Vittorio](http://vittoriomilone.github.io/)
   * [Gerrit](https://www.wevolver.com/gerrit.niezen/biofactory)
-  * [Jurjen](http://github.com/Jurminator/biohacking)
+  * [Jurjen](http://jurminator.github.io/)
   * [Dragoslav](http://dragoslav.github.io/diy/)
   * [Maria](http://mariaboto.github.io)
 * [Garagem Fablab](http://www.garagemfablab.com) - São Paulo
