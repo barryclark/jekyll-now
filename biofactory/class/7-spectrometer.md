@@ -41,7 +41,6 @@ The photodiode array spectrophotometer files are stored in a [git repository](ht
 In order to take part in this class you will need the following materials:
 
 * [Spectrometer materials](/biofactory/class/7-spectrometer/spectrometer-materials/)
-* Spectrometry materials
 
 ## Assignment
 
