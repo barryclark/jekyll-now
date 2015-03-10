@@ -1,11 +1,8 @@
 ---
 layout: post
-title:  "Github Pages 에 올리는 첫 글"
+title:  "내가 렙핑한 pureMVC 모듈"
 date:   2015-03-10 17:05:00
 ---
-
-# 내가 렙핑한 pureMVC 모듈
-
 
 랩핑한지 오래 되었지만 제가 직접 하나하나 랩핑하였습니다.
 
