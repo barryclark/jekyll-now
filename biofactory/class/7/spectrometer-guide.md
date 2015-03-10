@@ -29,7 +29,8 @@ Ofcourse there is a nicer way of connecting those pins, but we went for the quic
 
 ## Software
 
-This DIY spectrometer also shows how to do serial communication between Arduino and Processing. The device accepts a few commands:
+This DIY spectrometer also shows how to do serial communication between Arduino and Processing. The device accepts a few commands
+
 * 'read': Outputs the sensor data. First a line with "start" and then 768 lines follow with the sensor data.
 * 'exp <Number>': Sets exposure time in millisecond
 * 'led 0/1': Toggle LED
@@ -42,6 +43,7 @@ We have implemented a really basic way of calibration approach in the Processing
 ## Assignment
 
 Implement the following in Processing:
+
 * Automate the calibration procedures!
 * Export the data to files
 
