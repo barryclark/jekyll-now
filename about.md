@@ -4,8 +4,8 @@ title: About
 permalink: /about/
 ---
 
-name : minsu Kim
-birthday : 1979.09.22
+name : minsu Kim  
+birthday : 1979.09.22 
 
 
 ### More Information
