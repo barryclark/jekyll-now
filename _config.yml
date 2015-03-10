@@ -42,9 +42,6 @@ share_tumblr: false
 share_reddit: false
 share_stumbleupon: false
 
-
-
-
 # Build settings
 markdown:     redcarpet
 redcarpet:
