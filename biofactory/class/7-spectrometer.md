@@ -17,7 +17,7 @@ Spectroscopy is an essential tool for monitoring the growth and production in yo
 * Analytical techniques
 * Spectrometer Design
 * Spectrometry Practical
-  * Iron Calibration Curve
+  * [Iodine Clock Reaction](/biofactory/class/7-spectrometer/iodine-clock-reaction/)
 
 ## Spectrometer Design
 
@@ -32,7 +32,7 @@ This week we will build the spectrometer. You may choose which design. Download 
 
 ## Photodiode array-based photospectrometer
 
-The photodiode array spectrophotometer files are stored in a [git repository](https://github.com/BioHackAcademy/BHA_Spectrophotometer) which you can clone or [download as a zip archive](https://github.com/BioHackAcademy/BHA_Spectrophotometer/archive/master.zip)
+The photodiode array spectrophotometer files are stored in a [git repository](https://github.com/BioHackAcademy/BHA_Spectrophotometer) which you can clone or [download as a zip archive](https://github.com/BioHackAcademy/BHA_Spectrophotometer/archive/master.zip). Instructions for building are found [here](/biofactory/class/7-spectrometer/spectrometer-guide/)
 
 ![CCD Array Spectrometer](/biofactory/class/7/CCD-Array-Spectrometer.png)
 
@@ -41,7 +41,6 @@ The photodiode array spectrophotometer files are stored in a [git repository](ht
 In order to take part in this class you will need the following materials:
 
 * [Spectrometer materials](/biofactory/class/7-spectrometer/spectrometer-materials/)
-* Spectrometry materials
 
 ## Assignment
 

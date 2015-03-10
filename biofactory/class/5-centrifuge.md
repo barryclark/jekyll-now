@@ -17,6 +17,9 @@ We’ll try to isolate our first biomaterial. For that we need centrifugal force
 * OpenSCAD
 * Centrifugation
 * Centrifuge design
+* Centrifuge experiments
+  * [DNA Extraction](/biofactory/class/5-centrifuge/DNA-extraction/)
+  * [Chloroplast Isolation](/biofactory/class/5-centrifuge/chloroplast-isolation)
 
 ## Centrifuge Design
 
