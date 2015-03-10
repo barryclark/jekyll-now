@@ -21,20 +21,21 @@ Spectroscopy is an essential tool for monitoring the growth and production in yo
 
 ## Spectrometer Design
 
-This week we will build the spectrometer. You may choose which design. Download the design files here:
+This week we will build a spectrometer. We have created 2 spectrometer designs, you may choose which design to build. 
 
 * [Functional and technical requirements](/biofactory/class/7-spectrometer/requirements/)
-* Webcam design
+
+## Photodiode array-based photospectrometer
+
+The photodiode array spectrophotometer files are stored in a [git repository](https://github.com/BioHackAcademy/BHA_Spectrophotometer) which you can clone or [download as a zip archive](https://github.com/BioHackAcademy/BHA_Spectrophotometer/archive/master.zip). Instructions for building are found [here](/biofactory/class/7-spectrometer/spectrometer-guide/).
+
+![CCD Array Spectrometer](/biofactory/class/7/CCD-Array-Spectrometer.png)
+
+## Webcam-based spectrometer design
   * [SketchUp assembly](/biofactory/class/7/Webcam-Spectrometer-Sketchup.skp)
   * [SVG laser cut files](/biofactory/class/7/Webcam-Spectrometer-SVGs.zip)
 
 ![Webcam Spectrometer](/biofactory/class/7/Webcam-Spectrometer.png)
-
-## Photodiode array-based photospectrometer
-
-The photodiode array spectrophotometer files are stored in a [git repository](https://github.com/BioHackAcademy/BHA_Spectrophotometer) which you can clone or [download as a zip archive](https://github.com/BioHackAcademy/BHA_Spectrophotometer/archive/master.zip). Instructions for building are found [here](/biofactory/class/7-spectrometer/spectrometer-guide/)
-
-![CCD Array Spectrometer](/biofactory/class/7/CCD-Array-Spectrometer.png)
 
 ## Bill of Materials
 
