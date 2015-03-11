@@ -43,6 +43,7 @@ theme:
   # Scripts
   google_analytics: # tracking id, e.g. "UA-000000-01"
   disqus_shortname:
+  katex: true # Enable if using math markup 
   
   # Localization strings
   str_follow_on: "Follow on"
