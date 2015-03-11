@@ -41,6 +41,7 @@ Design your bioreactor dimensions and fluxes.
 * Bioreactor Design
 * Magnetic Stirrer
   * [TeklaLabs](http://www.teklalabs.org/magnetic-stirrer/)
+  * [IORodeo](http://www.iorodeo.com/content/desktop-stir-plate-kit)
 
 ## Feeling lazy?
 
