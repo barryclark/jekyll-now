@@ -8,23 +8,7 @@ The material list is based on the [Requirements list](/biofactory/class/7-spectr
 
 ## Bill of Materials
 
-This time the materials you need depend on the design you prefer.
-
-### Must have for webcam design
-
-For this device you do not need an Arduino or equivalent microprocessor.
-
-|#|Amount|Description|Supplier NL|Cost|
-|-:|----:|:---------|:-------|---:|
-|1|1|White LED|[iPrototype](https://iprototype.nl/products/components/led-lcd/ledwit)|0.52|
-|2|1|Webcam|[Tweakers Pricewatch](http://tweakers.net/categorie/289/webcams/producten/#filter:q1bKL0pJLXLLTM1JUbJSKijKzCpW0oEIBucXlQDFEouT4SIFqcmeQHW6hrUA)|7.00|
-|3|1|4.7 GB DVD-R (track pitch 0.74 microns)||1.00|
-|4|1|220 ohm resistor|[iPrototype](https://iprototype.nl/products/components/resistors/220R)|0.45|
-|5|1|Power switch|[iPrototype](https://iprototype.nl/products/components/buttons-switches/rocker-switch-large)|0.95|
-|6|1|Power jack|[EOO](http://www.eoo-bv.nl/index.php?_a=viewProd&productId=3298) [iPrototype](https://iprototype.nl/products/accessoires/power/DC-barrel-jack-adapter)|0.85|
-|7|1|Power supply|||
-|--|--|---|---|---|
-|||*Total costs*|||
+This time the materials you need depend on the design you prefer. Ofcourse you can use the same 1,000 lines/mm grating for both designs.
 
 ### Must have for photodiode array design
 
@@ -32,12 +16,13 @@ For this device you need an Arduino or equivalent microprocessor.
 
 |#|Amount|Description|Supplier NL|Cost|
 |-:|----:|:---------|:-------|---:|
-|1|1|White LED|[iPrototype](https://iprototype.nl/products/components/led-lcd/ledwit)|0.52|
+|1|1|White LED|[iPrototype](https://iprototype.nl/products/components/led-lcd/ledwit), [EOO](http://www.eoo-bv.nl/index.php?_a=viewProd&productId=9088)|0.52|
 |2|1|TSL1406R Photo diode array|[Mouser](http://nl.mouser.com/ProductDetail/ams/TSL1406R/?qs=owm69ILshgasXOGrAzFz%252bQ%3D%3D)|22.35|
 |3|1|1,000 lines/mm grating|[ipacity](http://ipacity.biedmeer.nl/Webwinkel-Product-78540591/Folie-tralie-1000-lijnen-mm-%2815-x-30-cm%29.html) [carolina](http://www.carolina.com/physical-science-light-and-optics/diffraction-grating/755230.pr?catId=&mCat=&sCat=&ssCat=&question=diffraction+grating)|15.90|
 |4|1|220 ohm resistor|[iPrototype](https://iprototype.nl/products/components/resistors/220R)|0.45|
-|5|1|Power switch|[iPrototype](https://iprototype.nl/products/components/buttons-switches/rocker-switch-large)|0.95|
-|6|1|Power supply|||
+|5|1|1|Power switch|[EOO](http://www.eoo-bv.nl/index.php?_a=viewProd&productId=11596), [iPrototype](https://iprototype.nl/products/components/buttons-switches/rocker-switch-large)|0.95|
+|5|1|7.5 W power supply|[iPrototype](https://iprototype.nl/products/accessoires/power/adapter), [EOO](http://www.eoo-bv.nl/index.php?_a=viewProd&productId=11642)|13.95|
+|6|1|Jack Adapter|[iPrototype](https://iprototype.nl/products/accessoires/power/DC-barrel-jack-adapter), [EOO](http://www.eoo-bv.nl/index.php?_a=viewProd&productId=3298)|0.85|
 |--|--|---|---|---|
 |||*Total costs*|||
 
