@@ -32,7 +32,7 @@ For this device you need an Arduino or equivalent microprocessor.
 
 |#|Amount|Description|Supplier NL|Cost|
 |-:|----:|:---------|:-------|---:|
-|1|1|I2C LCD 16x2 Display|[iPrototype](https://iprototype.nl/products/components/led-lcd/lcd16x2-I2C-BL)|16.95|
+|1|1|I2C LCD 16x2 Display|[iPrototype](https://iprototype.nl/products/components/led-lcd/lcd16x2-I2C-BL), ([HobbyElectronica](http://www.hobbyelectronica.nl/product/hd44780-16x2-karakters-lcd-display-module-blauw-backlight/) + [HobbyElektronica](http://www.hobbyelectronica.nl/product/i2c-lcd-interface-voor-16x2-en-20x4-displays/)|16.95|
 |--|--|---|---|---|
 |||*Total costs*|||
 
