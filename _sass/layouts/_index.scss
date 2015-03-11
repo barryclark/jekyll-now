@@ -1,4 +1,4 @@
-// call out feature
+// Header text feature
 .call-out {
   @extend %padding-regular;
   display: inline-block;
@@ -11,7 +11,7 @@
 .call-out p:last-child {
   margin-bottom: 0;
 }
-// post listing
+// Post listing
 .posts {
   .post-teaser {
     @extend %padding-regular;
@@ -28,7 +28,7 @@
     margin-top: 1em;
   }
 }
-// pagination
+// Pagination
 .pagination .button {
   margin: 0 1.5em;
   i {

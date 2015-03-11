@@ -7,7 +7,7 @@ html {
   background: $background-color;
 }
 
-// typography
+// Typography
 ::selection {
   background: $selection-color;
 }
@@ -94,7 +94,7 @@ a {
   margin: 0;
   padding: 0;
 }
-// responsive media
+// Responsive media
 iframe, img, embed, object, video {
   max-width: 100%;
 }

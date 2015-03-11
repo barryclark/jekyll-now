@@ -7,7 +7,7 @@ theme:
   # Meta
   title: Type Theme
   avatar: avatar.png
-  gravatar: # email md5 hash
+  gravatar: # Email MD5 hash
   description: "A website with blog posts and pages" # used by search engines
   
   # Header and footer text
@@ -20,7 +20,7 @@ theme:
   
   # Icons
   rss: false
-  email_address: # full email address, e.g. "sam@example.com"
+  email_address: # Full email address, e.g. "sam@example.com"
   behance:
   bitbucket: 
   dribbble: 
@@ -29,11 +29,11 @@ theme:
   github: "rohanchandra/type-theme"
   google_plus: 
   instagram: 
-  linkedin:  # full URL
+  linkedin:  # Full URL
   pinterest: 
   reddit: 
   soundcloud: 
-  stack_exchange:  # full URL
+  stack_exchange:  # Full URL
   steam: 
   tumblr: 
   twitter: "twitter"
@@ -41,7 +41,7 @@ theme:
   youtube: 
   
   # Scripts
-  google_analytics: # tracking id, e.g. "UA-000000-01"
+  google_analytics: # Tracking ID, e.g. "UA-000000-01"
   disqus_shortname:
   katex: true # Enable if using math markup 
   
@@ -53,7 +53,7 @@ theme:
   str_prev: "Prev"
   str_continue_reading: "Continue reading"
   
-  # Colors, typography and padding
+  # Colours, typography and padding
   # Open the "_sass > base" folder, and open "_variables.scss"
 
 # PAGINATION
