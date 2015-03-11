@@ -1,14 +1,11 @@
 ---
 layout: page
-title: Sensor-array Spectrometer guide
+title: TSL1406R spectrometer building guide
 permalink: /biofactory/class/7-spectrometer/spectrometer-guide/
 ---
 
-The material list is based on the [Requirements list](/biofactory/class/7-spectrometer/requirements/)
-
-## TSL1406R spectrometer building guide
-
 Steps:
+
 * Download all the files from [git](https://github.com/BioHackAcademy/BHA_Spectrophotometer/) or [ZIP](https://github.com/BioHackAcademy/BHA_Spectrophotometer/archive/master.zip).
 * Lasercut the [SVG file](https://raw.githubusercontent.com/BioHackAcademy/BHA_Spectrophotometer/master/Spectrometer-Lasercut.svg)
 * Get an Arduino and upload the [sketch](https://raw.githubusercontent.com/BioHackAcademy/BHA_Spectrophotometer/master/arduino/Spectrophotometer/Spectrophotometer.ino) to it. We used an Arduino Duemilanove, but nothing special so many other arduino's will work too. 
