@@ -10,9 +10,11 @@ In order to make it easier to work sterile with microbes, we will construct our 
 
 ## Schedule
 
-* Biohacking overview
-* Biological safety instructions
-* Sterile Hood design
+* [Biohacking overview](/biofactory/class/4/pdf/1 History of Biohacking.pdf)
+* [Biological safety instructions](/biofactory/class/4/pdf/2 Biosafety.pdf)
+* [Sterile hoods, bio reactors and allowed spaces](/biofactory/class/4/pdf/3 Sterile hoods, bio reactors and allowed spaces.pdf)
+* [Sterile Hood design](/biofactory/class/4/pdf/4 Flow hood design.pdf)
+* [Open Source Biological Safety Cabinet](/biofactory/class/4/pdf/5 Presentation Hany & Veit.pdf)
 
 ## Sterile Hood Design
 
