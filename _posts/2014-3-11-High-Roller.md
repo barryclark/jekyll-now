@@ -5,7 +5,7 @@ title: High Roller
 
 OK, I really just need to start off my post with this image.
 
-![High Roller]({{ site.url }}/images/highroller.png)
+![High Roller]({{ site.url }}/images/highroller.jpg)
 
 Yup. That's me at Toy Fair riding an adult sized Big Wheel. The bike is make by [High Roller USA](http://www.highrollerusa.com) and is an absolute marvel. I actually got to tear down the isles of Toy Fair on this bad boy, and the awesome people at the booth even taught me how to power slide on it.
 
