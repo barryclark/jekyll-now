@@ -16,7 +16,11 @@ In 2012, ObjectRocket was acquired by [Rackspace](http://www.rackspace.com).
 ### My Bio
 
 <p class="message">
-Kenny has many years of experience with various database platforms behind some of the busiest websites in the world. He has had roles as Architect, Director, Manager, Developer, and DBA. He was a key member of the early teams that scaled Paypal and then eBay on Oracle, he ran one of the busiest PostgreSQL installations in the world, was an early adopter of MongoDB using it for various large projects at Shutterfly. He has been an active MongoDB community member, speaker, MongoDB evangelist, and now Mongo Master. In 2011 he formed the MongoDB as a Service provider ObjectRocket with colleagues from eBaY. ObjectRocket was acquired by Rackspace in 2012.
+Kenny has many years of experience with various database platforms behind some of the busiest websites in the world. He has had roles as Architect, Director, Manager, Developer, and DBA. He was a key member of the early teams that scaled Paypal and then eBay on Oracle, he ran one of the busiest PostgreSQL installations in the world, was an early adopter of MongoDB using it for various large projects at Shutterfly.
+
+He has been an active MongoDB community member, speaker, MongoDB evangelist, and now Mongo Master. In 2011 he formed the MongoDB as a Service provider ObjectRocket with colleagues from eBaY. ObjectRocket was acquired by Rackspace in 2012.
+
+Currently, Kenny is Chief Technologist; Data in the Office of the CTO at Rackspace. Part evangelist part coder, he spends his time working to ensure Rackspace is always at the forefront of data technologies. 
 </p>
 
 The first [article](/images/2002_os_snapshots_for_backup.pdf) I wrote for NoCOUG Journal in 2002.
