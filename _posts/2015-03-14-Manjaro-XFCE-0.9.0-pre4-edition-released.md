@@ -42,8 +42,8 @@ We worked also hard to improve our graphical installer Calamares and our system 
 
 **Calamares changes**
 
-* #204 add cleartempmountsjob to partition module
-* #207 add debug window function
+* [204] add cleartempmountsjob to partition module
+* [207] add debug window function
 * prevent crash when going back from EraseDiskPage and then next
 * merge transifex translations
 
@@ -52,6 +52,7 @@ We worked also hard to improve our graphical installer Calamares and our system 
 With this release we stabilized Pamac and made it more unified.
 v2.2 mainly contains internal changes not visible to the user.
 Changes we want to point out:
+
 * automatic refresh after mirrorslist generation
 * code improvements
 * possible null string fixed
