@@ -1,7 +1,7 @@
 ---
 layout: post
 name: Coding-Bootcamp-Week-1
-title: Coding Bootcamp Week 1
+title: Coding Bootcamp - Week 1
 date: 2014-2-22 18:31:00 +00:00
 author: Toby Retallick
 ---

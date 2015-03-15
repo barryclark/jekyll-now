@@ -1,7 +1,7 @@
 ---
 layout: post
 name: coding-bootcamp-graduation-day
-title: Coding Bootcamp Graduation Day
+title: Coding Bootcamp - Graduation Day
 date: 2014-5-9 09:00:00 +00:00
 ---
 
