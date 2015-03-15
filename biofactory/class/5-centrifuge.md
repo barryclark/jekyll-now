@@ -12,9 +12,9 @@ We’ll try to isolate our first biomaterial. For that we need centrifugal force
 
 ## Schedule
 
+* Growth and Production
 * Electronics
 * Fritzing documentation
-* OpenSCAD
 * Centrifugation
 * Centrifuge design
 * Centrifuge experiments
