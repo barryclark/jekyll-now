@@ -22,7 +22,7 @@ permalink: /biofactory/participants/documentation/
   * [Eduardo Lopes](https://biohackacademyelopes.wordpress.com)
   * [Carlo](https://github.com/carloscandidojr/biohackacademy/wiki)
   * [Martina](https://martinaferracane.wordpress.com/bio-hack-adventure-in-sao-paulo/)
-  * [Eduardo Padilha](http://hackscientist.github.io)
+  * [Eduardo Padilha](https://hackscientist.wordpress.com/2015/03/16/ola-mundo/)
 * [DIYBio Barcelona](http://www.meetup.com/Barcelona-DIYbio-Meetup/) - Barcelona
 * [University of New Mexico](http://www.unm.edu) - Albuquerque
   * [UNM Bio Art and Design](https://github.com/unmbioartanddesign/biofactory/wiki/Biofactory-Course,-Waag-Society-Documentation:--Week-1)
