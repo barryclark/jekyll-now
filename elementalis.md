@@ -20,6 +20,8 @@ permalink: /elementalis/
 
 ElementaliS was my first game design, and my only released game to date. In 2006 I formed Tremorworks with Sean Boyle to self publish ElementaliS and Sean's HDL Role Playing System. Many mistakes were made with manufacturing the game, the two biggest being overproduction and a wrong copy of the rules being included in the box. Still, ElementaliS sold over 1000 copies. I currently still have copies available for interested parties, and also sell stripped down versions with just the dice and counters.
 
+[Download the latest Rules](/pdf/ElementaliS-Latest.pdf)
+
 ElementaliS sets are currently $5
 
 ElemenT Dice sets are currently $2.50
