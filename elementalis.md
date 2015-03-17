@@ -6,7 +6,7 @@ permalink: /elementalis/
 
 ![ElementaliS Set]({{ site.url }}/images/elementalis.jpg)
 
-**Publisher:** Tremorworks  
+**Publisher:** [Tremorworks](http://tremorworks.com)
 
 **Year:** 2006  
 
