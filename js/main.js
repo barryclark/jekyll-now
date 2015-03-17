@@ -4,7 +4,7 @@ Array.prototype.forEach.call(elements, function(element) {
   if (element.type.indexOf('math/tex') != -1) {
      // Extract math markdown
      var textToRender = element.innerText || element.textContent;
-     
+
     // Create span for KaTeX
      var katexElement = document.createElement('span');
      
@@ -15,7 +15,7 @@ Array.prototype.forEach.call(elements, function(element) {
      } else {
        katexElement.className += "math-inline";
      }
-    
+
      katex.render(textToRender, katexElement);
      element.parentNode.insertBefore(katexElement, element);
   }

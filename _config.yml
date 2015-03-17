@@ -9,42 +9,42 @@ theme:
   avatar: avatar.png
   gravatar: # Email MD5 hash
   description: "A website with blog posts and pages" # used by search engines
-  
+
   # Header and footer text
   header_text: >
      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-     
+
      <p>Remove all header text in <code>_config.yml</code> to disable this feature.</p>
   footer_text: >
    Powered by <a href="http://jekyllrb.com">Jekyll</a> with <a href="https://rohanchandra.github.io/project/type/">Type Theme</a>
-  
+
   # Icons
   rss: false
   email_address: # Full email address, e.g. "sam@example.com"
   behance:
-  bitbucket: 
-  dribbble: 
-  facebook: 
-  flickr: 
+  bitbucket:
+  dribbble:
+  facebook:
+  flickr:
   github: "rohanchandra/type-theme"
-  google_plus: 
-  instagram: 
+  google_plus:
+  instagram:
   linkedin:  # Full URL
-  pinterest: 
-  reddit: 
-  soundcloud: 
+  pinterest:
+  reddit:
+  soundcloud:
   stack_exchange:  # Full URL
-  steam: 
-  tumblr: 
+  steam:
+  tumblr:
   twitter: "twitter"
-  wordpress: 
-  youtube: 
-  
+  wordpress:
+  youtube:
+
   # Scripts
   google_analytics: # Tracking ID, e.g. "UA-000000-01"
   disqus_shortname:
-  katex: true # Enable if using math markup 
-  
+  katex: true # Enable if using math markup
+
   # Localization strings
   str_follow_on: "Follow on"
   str_rss_follow: "Follow RSS feed"
@@ -52,7 +52,7 @@ theme:
   str_next: "Next"
   str_prev: "Prev"
   str_continue_reading: "Continue reading"
-  
+
   # Colours, typography and padding
   # Open the "_sass > base" folder, and open "_variables.scss"
 
