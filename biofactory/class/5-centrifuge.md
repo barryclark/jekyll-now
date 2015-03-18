@@ -12,11 +12,9 @@ We’ll try to isolate our first biomaterial. For that we need centrifugal force
 
 ## Schedule
 
-* Growth and Production
-* Electronics
-* Fritzing documentation
-* Centrifugation
-* Centrifuge design
+* [Growth and Production](/biofactory/class/5/pdf/1 Growth & Product Formation.pdf)
+* [Electronics & Fritzing documentation](/biofactory/class/5/pdf/2 Electronics.pdf)
+* [Centrifugation & Centrifuge design](/biofactory/class/5/pdf/3 Centrifuge design.pdf)
 * Centrifuge experiments
   * [DNA Extraction](/biofactory/class/5-centrifuge/DNA-extraction/)
   * [Chloroplast Isolation](/biofactory/class/5-centrifuge/chloroplast-isolation)
