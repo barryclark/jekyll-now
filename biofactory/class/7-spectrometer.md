@@ -25,7 +25,7 @@ This week we will build a spectrometer. We have created 2 spectrometer designs, 
 
 ## Photodiode array-based photospectrometer
 
-The photodiode array spectrophotometer files are stored in a [git repository](https://github.com/BioHackAcademy/BHA_Spectrophotometer) which you can clone or [download as a zip archive](https://github.com/BioHackAcademy/BHA_Spectrophotometer/archive/master.zip). Instructions for building are found [here](/biofactory/class/7-spectrometer/spectrometer-guide/).
+The photodiode array spectrophotometer files are stored in a [git repository](https://github.com/BioHackAcademy/BHA_Spectrophotometer) which you can clone or [download as a zip archive](https://github.com/BioHackAcademy/BHA_Spectrophotometer/archive/master.zip). Check out the [Building instructions](/biofactory/class/7-spectrometer/spectrometer-guide/) for info about assembly.
 
 ![CCD Array Spectrometer](/biofactory/class/7/CCD-Array-Spectrometer.png)
 
@@ -50,6 +50,7 @@ Hack the spectrometer into a flow spectrometer.
 
 * Spectroscopy
   * [PublicLab](http://publiclab.org/wiki/spectrometer)
+  * [Calibration Assays](http://www.iorodeo.com/colorimeter/assays)
 * DIY Spectrometers
   * [Really Basic - Instructable](http://www.instructables.com/id/DIY-Spectroscope/)
   * [Spectruino](http://myspectral.com/)

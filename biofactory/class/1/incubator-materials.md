@@ -29,11 +29,11 @@ These are the parts you will need to assemble the incubator:
 |7|1|Water proof temperature sensor (*1)|[HobbyElectronica](http://www.hobbyelectronica.nl/product/ds18b20-waterdicht/), [iPrototype](https://iprototype.nl/products/components/sensors/waterproof-tmp-sensor-10k)|2.95|
 |8|1|4 section 7 segment display|[EOO](http://www.eoo-bv.nl/index.php?_a=viewProd&productId=8390), [iPrototype](https://iprototype.nl/products/components/led-lcd/led-bar-4xsegment-red)|1.95|
 |9|1|MOSFET|[Farnell](http://nl.farnell.com/stmicroelectronics/stp36nf06l/mosfet-n-logic-to-220/dp/9935614?CMP=i-bf9f-00001000), [EOO](http://www.eoo-bv.nl/index.php?_a=viewProd&productId=1279)|0.98|
-|10|4|10K resistor|[Farnell](http://nl.farnell.com/te-connectivity/cfr16j10k/resistor-carbon-10k-0-25w-5/dp/2329474), [EOO](http://www.eoo-bv.nl/index.php?_a=viewProd&productId=13492)|0.06|
+|10|4|10K resistor|[Farnell](http://nl.farnell.com/te-connectivity/cfr16j10k/resistor-carbon-10k-0-25w-5/dp/2329474), [EOO](http://www.eoo-bv.nl/index.php?_a=viewProd&productId=7016)|0.06|
 |11|1|Diode|[iPrototype](https://iprototype.nl/products/components/overige/diode), [EOO](http://www.eoo-bv.nl/index.php?_a=viewProd&productId=10717)|0.19|
 |12|2|Button|[iPrototype](https://iprototype.nl/products/components/buttons-switches/momentary-push-button), [EOO](http://www.eoo-bv.nl/index.php?_a=viewProd&productId=14721)|0.55|
 |13|1|White LED|[iPrototype](https://iprototype.nl/products/components/led-lcd/ledwit), [EOO](http://www.eoo-bv.nl/index.php?_a=viewProd&productId=9088)|0.52|
-|14|1|220 Ohm resistor|[iPrototype](https://iprototype.nl/products/components/resistors/220R), [EOO](http://www.eoo-bv.nl/index.php?_a=viewProd&productId=5785)|0.45|
+|14|1|220 Ohm resistor|[iPrototype](https://iprototype.nl/products/components/resistors/220R), [EOO](http://www.eoo-bv.nl/index.php?_a=viewProd&productId=7085)|0.45|
 |15|1|7.5 W power supply|[iPrototype](https://iprototype.nl/products/accessoires/power/adapter), [EOO](http://www.eoo-bv.nl/index.php?_a=viewProd&productId=11642)|13.95|
 |16|1|Jack Adapter|[iPrototype](https://iprototype.nl/products/accessoires/power/DC-barrel-jack-adapter), [EOO](http://www.eoo-bv.nl/index.php?_a=viewProd&productId=3298)|0.85|
 |17|1|Relay|[Sparkfun](https://www.sparkfun.com/products/11042), [Floris.cc](http://floris.cc/shop/en/general-components/591-beefcake-relay-control-kit-.html)|9.00|
