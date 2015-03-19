@@ -1,0 +1,58 @@
+body {
+background: #fff;
+font: 18px/1.4 Helvetica, Arial, sans-serif;
+color: #333;
+}
+
+
+.rtl {
+  margin: 0 auto;
+  max-width: 740px;
+  padding: 0 10px;
+  width: 100%;
+  direction: rtl;
+  text-align: right;
+}
+
+
+.site-avatar-rtl {
+float: right;
+width: 70px;
+height: 70px;
+margin-right: 3px;
+}
+
+.site-info-rtl {
+float: right;
+}
+
+.site-name-rtl {
+margin: 0;
+color: #333;
+cursor: pointer;
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-weight: 300;
+font-size: 28px;
+letter-spacing: 1px;
+margin-right: 10px;
+direction: rtl;
+}
+
+.site-description-rtl {
+margin: -5px 0 0 0;
+color: #666;
+font-size: 16px;
+margin-right: 10px;
+direction:rtl
+}
+.nav-rtl{
+float: left;
+margin-top: 23px;
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size: 18px;  
+  
+}
+img {
+max-width: 100%;
+border-radius: 10px;
+}
