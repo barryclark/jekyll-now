@@ -38,7 +38,12 @@ Design your bioreactor dimensions and fluxes.
 ## Additional reading and hacking
 
 * Physical Transport Phenonoma
+  * [Bird et al](http://www.amazon.com/Transport-Phenomena-Revised-2nd-Edition/dp/0470115394)
+  * [Introduction to Transport Phenonoma](http://www.engr.colostate.edu/cheme/pages/documents/IntroToTransportPhenomenaNew.pdf)
+  * [Online Lecture Series](https://www.youtube.com/playlist?list=PL03DABD078B5BCACF)
 * Bioreactor Design
+  * [Selection Guide](http://people.clarkson.edu/~wwilcox/Design/reactbio.pdf)
+  * [Design Parameters](http://d.umn.edu/~rdavis/courses/che4601/notes/BioreactorDesignForChEs.pdf)
 * Magnetic Stirrer
   * [TeklaLabs](http://www.teklalabs.org/magnetic-stirrer/)
   * [IORodeo](http://www.iorodeo.com/content/desktop-stir-plate-kit)
