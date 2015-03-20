@@ -1,0 +1,29 @@
+---
+layout: blog
+title: 时间轴
+---
+
+<link rel="stylesheet" href="/res/css/page.css">
+<div>
+{% for post in site.posts reverse %}
+{% capture y %}{{post.date | date:"%Y"}}{% endcapture %}
+{% if year != y %}{% assign year = y %}<h1 class="year">{{ post.date | date: "%Y" }}</h1>{% endif %}
+<div class="timing">
+  <time class="time">{{ post.date | date: "%m" }}-{{ post.date | date: "%d" }}</time>
+  <div class="link"><a href="{{ post.url }}">{{post.title}}</a></div>
+  <div class="point-time "></div>
+</div>
+{% endfor %}
+</div>
+<br/>
+<script>
+$(function() {
+  var tags_a = $(".point-time");
+  tags_a.each(function(){
+    var x = 5;
+    var y = 0;
+    var rand = parseInt(Math.random() * (x - y + 1) + y);
+    $(this).addClass("point"+rand);
+  });
+});
+</script>

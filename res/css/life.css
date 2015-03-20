@@ -1,0 +1,324 @@
+@keyframes fadeIn {
+	0% {
+		opacity:0.1;
+	}
+	25% {
+		opacity:0.25;
+	}
+	50% {
+		opacity:0.5;
+	}
+	75% {
+		opacity:0.75;
+	}
+	100% {
+		opacity:1;
+	}
+}
+@-webkit-keyframes fadeIn {
+	0% {
+		opacity:0.1;
+	}
+	25% {
+		opacity:0.25;
+	}
+	50% {
+		opacity:0.5;
+	}
+	75% {
+		opacity:0.75;
+	}
+	100% {
+		opacity:1;
+	}
+}
+@-o-keyframes fadeIn {
+	0% {
+		opacity:0.1;
+	}
+	25% {
+		opacity:0.25;
+	}
+	50% {
+		opacity:0.5;
+	}
+	75% {
+		opacity:0.75;
+	}
+	100% {
+		opacity:1;
+	}
+}
+@-moz-keyframes fadeIn {
+	0% {
+		opacity:0.1;
+	}
+	25% {
+		opacity:0.25;
+	}
+	50% {
+		opacity:0.5;
+	}
+	75% {
+		opacity:0.75;
+	}
+	100% {
+		opacity:1;
+	}
+}
+::selection {
+	background:#F0F7FA;
+}
+::-moz-selection {
+	background:#F0F7FA;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-family:"Microsoft YaHei",SimHei,"Ubuntu Mono",Ubuntu,"Ubuntu Light",Arial,"STHeiti",Corbel,sans-serif;
+	margin-top:30px;
+	letter-spacing:2px;
+	color:#525d67;
+}
+h1 {
+	font-weight:lighter;
+}
+.main {
+	font-family:"Microsoft YaHei",SimHei,"Ubuntu Mono",Ubuntu,"Ubuntu Light",Arial,"STHeiti",Corbel,sans-serif;
+	letter-spacing:1px;
+	line-height:1.4;
+	width:65%;
+	overflow:hidden;
+	padding:20px;
+	padding-top:30px;
+	margin:0 auto;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	animation-name:fadeIn;
+	animation-duration:0.6s;
+	-webkit-animation-name:fadeIn;
+	-webkit-animation-duration:0.6s;
+	-o-animation-name:fadeIn;
+	-o-animation-duration:0.6s;
+	-moz-animation-name:fadeIn;
+	-moz-animation-duration:0.6s;
+}
+.title {
+	font-size:2.6rem;
+	margin-bottom:10px;
+	color:#525d67;
+	word-break:break-all;
+	letter-spacing:2px;
+}
+.post-info {
+	color:#999;
+	font-size:18px;
+	margin-left:5px;
+}
+.content a {
+	color:#747f8c;
+	margin:0 2px;
+	padding:3px;
+	border-bottom:2px solid #ecf0f1;
+	padding-bottom:1px;
+}
+.content a:hover {
+	text-shadow:0 0 1px;
+	color:#747f8c;
+	margin:0 2px;
+	padding:3px;
+	border-bottom:2px solid #ecf0f1;
+	padding-bottom:1px;
+}
+a:link {
+	text-decoration:none;
+}
+p {
+	font-size:18px;
+	line-height:2;
+	color:#494949;
+	word-break:break-all;
+}
+p img {
+	width:100%;
+	height:auto;
+	border-radius:3px;
+}
+ul {
+	margin-left:-20px;
+}
+ol {
+	margin-left:-10px;
+}
+li {
+	font-size:18px;
+	line-height:2;
+	color:#494949;
+}
+hr {
+	height:4px;
+	padding:0;
+	margin-top:25px;
+	margin-bottom:-10px;
+	background-color:#EBEBEB;
+	border:0 none;
+}
+sup {
+	padding:0 2px 0 1px;
+	letter-spacing:0;
+}
+.footnotes {
+	border-top:2px solid #f0f0f0;
+	padding-top:15px;
+}
+.footnotes ol {
+	margin-left:0;
+}
+.footnotes ol li {
+	font-size:17px;
+	line-height:1;
+}
+.footnotes p {
+	color:#747f8c;
+	font-size:17px;
+	line-height:1;
+}
+.footnotes p a {
+	vertical-align:super;
+	padding:0;
+	margin:0 0 0 1px;
+	border:0;
+}
+.footnotes p a:hover {
+	padding:0;
+	margin:0 0 0 1px;
+	border:0;
+}
+table {
+	border-collapse:collapse;
+	margin-bottom:25px;
+	margin-top:-10px;
+}
+th {
+	padding:8px 20px;
+	border:1px solid #ddd;
+}
+td {
+	padding:6px 20px;
+	border:1px solid #ddd;
+}
+#rocket {
+	opacity:0.8;
+}
+blockquote {
+	font-family:"Microsoft YaHei",SimHei,"Ubuntu Mono",Ubuntu,"Ubuntu Light",Arial,"STHeiti",Corbel,sans-serif;
+	border-left:4px solid #F1EBEB;
+	color:#777777;
+	margin:auto;
+	padding-left:10px;
+}
+blockquote p {
+	color:#777777;
+	font-size:18px;
+}
+code {
+	font-family:Monaco,Consolas,Menlo,"Andale Mono","Courier New","Ubuntu Mono",Arial,"Microsoft YaHei","Hiragino Sans GB",sans-serif;
+	background:#f7fafb;
+	color:#7f8c8d;
+	margin:0 2px;
+	padding:0 5px;
+	border-radius:4px;
+	word-break:initial;
+}
+pre code {
+	font-family:Monaco,Consolas,Menlo,"Andale Mono","Courier New","Ubuntu Mono",Arial,"Microsoft YaHei","Hiragino Sans GB",sans-serif;
+	font-size:16px;
+	background:#f7fafb;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	border:none;
+	margin-bottom:25px;
+	line-height:1.5;
+	display:block;
+	border-left:7px solid rgba(102,128,153,0.075);
+	padding:5px 0px 5px 10px;
+	overflow-x:auto;
+	word-wrap:normal;
+	white-space:pre;
+	letter-spacing:0.5px;
+	tab-size:4;
+	-moz-tab-size:4;
+	-o-tab-size:4;
+}
+
+.hll{background-color:#ffffcc}.c{color:#408080;font-style:italic}.k{color:#008000;font-weight:bold}.o{color:#666666}.cm{color:#408080;font-style:italic}.cp{color:#BC7A00}.c1{color:#408080;font-style:italic}.cs{color:#408080;font-style:italic}.gd{color:#A00000}.ge{font-style:italic}.gr{color:#FF0000}.gh{color:#000080;font-weight:bold}.gi{color:#00A000}.go{color:#888888}.gp{color:#000080;font-weight:bold}.gs{font-weight:bold}.gu{color:#800080;font-weight:bold}.gt{color:#0044DD}.kc{color:#008000;font-weight:bold}.kd{color:#008000;font-weight:bold}.kn{color:#008000;font-weight:bold}.kp{color:#008000}.kr{color:#008000;font-weight:bold}.kt{color:#B00040}.m{color:#666666}.s{color:#BA2121;}.na{color:#7D9029}.nb{color:#008000}.nc{color:#0000FF;font-weight:bold}.no{color:#880000}.nd{color:#AA22FF}.ni{color:#999999;font-weight:bold}.ne{color:#D2413A;font-weight:bold}.nf{color:#0000FF}.nl{color:#A0A000}.nn{color:#0000FF;font-weight:bold}.nt{color:#008000;font-weight:bold}.nv{color:#19177C}.ow{color:#AA22FF;font-weight:bold}.w{color:#bbbbbb}.mf{color:#666666}.mh{color:#666666}.mi{color:#666666}.mo{color:#666666}.sb{color:#BA2121}.sc{color:#BA2121}.sd{color:#BA2121;font-style:italic}.s2{color:#BA2121}.se{color:#BB6622;font-weight:bold}.sh{color:#BA2121}.si{color:#BB6688;font-weight:bold}.sx{color:#008000}.sr{color:#BB6688}.s1{color:#BA2121}.ss{color:#19177C}.bp{color:#008000}.vc{color:#19177C}.vg{color:#19177C}.vi{color:#19177C}.il{color:#666666}
+
+@media (max-width:1300px) {
+	.main {
+		width:75%;
+	}
+}
+@media (max-width:1100px) {
+	.main {
+		width:80%;
+	}
+}
+@media (max-width:900px) {
+	.main {
+		width:90%;
+		padding-top:20px;
+	}
+}
+@media (max-width:768px) {
+	h1,h2,h3,h4,h5,h6 {
+		margin-top:25px;
+	}
+	.main {
+		width:100%;
+		padding:5px 5px 0 4px;
+	}
+	.title {
+		font-size:30px;
+		margin-bottom:5px;
+	}
+	.post-info {
+		font-size:16px;
+		margin-left:2px;
+		margin-bottom:-5px;
+	}
+	p,blockquote p,li {
+		font-size:16px;
+	}
+	p img {
+		border-radius:2px;
+	}
+	code {
+		word-break:break-all;
+	}
+	.footnotes ol li,.footnotes p {
+		font-size:15px;
+	}
+	th,td {
+		font-size:16px;
+		padding:4px 8px;
+	}
+}
+.comments {
+	margin-top:50px;
+}
+.ds-powered-by {
+	display:none;
+}
+#img {
+	margin:0;
+	padding:0;
+	border-bottom:0;
+	padding-bottom:0;
+}
+.fancybox-close,.fancybox-close:hover {
+	top:-17px;
+	right:-23px;
+	width:36px;
+	height:30px;
+	border-bottom:0;
+}

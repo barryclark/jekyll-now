@@ -1,0 +1,19 @@
+<div class="sidebar">
+  <div class="profilepic">
+    <a href="/"><img src="{{ site.author.logo }}" alt="logo"/></a>
+  </div>
+  <h1 class="title"><a href="/">{{ site.blog.name }}</a></h1>
+  <h2 class="sub-title">{{ site.blog.description }}</h2>
+  <nav id="nav">
+    <ul>
+    {% for nav in site.data.nav %}
+      <li><a href="{{ nav.href }}"{% if nav.newblank == true %}target="_blank"{% endif %}><i class="{{ nav.icon }}"></i>&nbsp;{{ nav.title }}</a></li>
+    {% endfor%}
+    </ul>
+  </nav>  
+  <nav id="sub-nav">
+    <a class="weibo " href="{{ site.author.weibo }}" title="新浪微博" target="_blank"><i class="fa fa-weibo"></i></a>
+    <a class="github" href="{{ site.author.github }}" title="GitHub" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+    <a class="rss" href="/page/feed.xml" title="RSS订阅" target="_blank"><i class="fa fa-rss"></i></a>
+  </nav>
+</div>

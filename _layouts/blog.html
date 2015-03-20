@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta name="description" content="{{ site.blog.title }}">
+  <meta name="author" content="{{ site.author.name }}">
+  {% if page.index == true %}<meta name="keywords" content="{{ site.blog.title }}, {{ site.blog.name }}, {{ site.blog.description }}, {{ site.author.name }}">{% else %}<meta name="keywords" content="{{ page.title }}, {{ site.blog.name }}, {{ site.author.name }}">{% endif %}
+  {% if page.index == true %}<title>{{ site.blog.title }}</title>{% else %}<title>{{ page.title }} - {{ site.blog.name }}</title>{% endif %}
+  {% if page.index == true %}<link rel="canonical" href="{{ site.blog.url }}">{% else %}<link rel="canonical" href="{{ site.blog.url }}{{ page.url }}">{% endif %}
+  <link rel="icon" href="/res/img/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="/res/img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/res/css/public.css">
+  <link rel="stylesheet" href="/res/css/light.css">
+  <script src="/res/js/light.js"></script>
+  {% include tongji.html %}
+</head>
+<body>
+  <div id="blog">
+    {% include sidebar.html %}
+    <div class="main">
+    {{ content }}
+    {% if page.index == true or page.post == true %}{% include footer.html %}{% endif %}
+    </div>
+  </div>    
+  <div id="top"><a id="rocket" href="javascript:;" title="返回顶部"><i></i></a></div>
+  {% if page.math == true %}<script src="http://cdn.bootcss.com/mathjax/2.4.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><script>MathJax.Hub.Config({tex2jax:{inlineMath: [['\[','\]']],displayMath: [['$$','$$']]}});</script>{% endif %}
+</body>
+</html>

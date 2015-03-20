@@ -1,0 +1,42 @@
+::selection {
+	color:#fff;
+	background-color:#1abc9c;
+}
+body,div {
+	margin:0;
+	padding:0;
+}
+body {
+	background:#67ace4 url("/res/img/404/404_error.jpg") repeat-x;
+}
+#container {
+	text-align:center;
+}
+#container img {
+	margin-top:50px;
+}
+#cloud {
+	position:absolute;
+	bottom:0;
+	width:100%;
+	height:170px;
+	background:url("/res/img/404/404_cloud.png") repeat-x;
+	_background:none;
+}
+.tips {
+	color:#fff;
+	font-size:24px;
+	font-family:"Microsoft YaHei","Arial","Helvetica Neue",sans-serif;
+	text-align:center;
+}
+@media (max-width:768px) {
+	#container img {
+		max-width:16em;
+	}
+	.tips {
+		font-size:20px;
+	}
+	#cloud {
+		max-height:25%;
+	}
+}
