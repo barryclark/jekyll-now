@@ -1,28 +1,59 @@
-# Jekyll Now
+# Tinker Ideas
 
-**Jekyll** is a static site generator that's perfect for GitHub hosted blogs ([Jekyll Repository](https://github.com/jekyll/jekyll))
+This is the repo where all Tinkerbox folks can easily create posts to share their knowdedge and storys.
 
-**Jekyll Now** makes it easier to create your Jekyll blog, by eliminating a lot of the up front setup.
+## What It Does
 
-- You don't need to touch the command line
-- You don't need to install/configure ruby, rvm/rbenv, ruby gems :relaxed:
-- You don't need to install runtime dependancies like markdown processors, Pygments, etc
-- If you're on Windows, this will make setting up Jekyll a lot easier
-- It's easy to try out, you can just delete your forked repository if you don't like it
+It is a static site generator for Github hosted blogs.
 
-In a few minutes you'll be set up with a minimal, responsive blog like the one below giving you more time to spend on writing epic blog posts!
+## How It works
 
-![Jekyll Now Theme Screenshot](/images/jekyll-now-theme-screenshot.jpg "Jekyll Now Theme Screenshot")
+You fork/clone this repo, create a blog using any text editer you like, then send a push request back to master branch. That's it, your post will appears at [our offical blog site](https://tinkerbox.github.io).
+
+## Requirements
+
+Some git and markdown knowledge is needed.
 
 ## Quick Start
 
-### Step 1) Fork Jekyll Now to your User Repository
+### Step 0) Some tools you need.
 
-Fork this repo, then rename the repository to yourgithubusername.github.io.
+[Homebrew](http://brew.sh) A easy way to install other command line tools on Mac OS.
 
-Your Jekyll blog will often be viewable immediately at <http://yourgithubusername.github.io> (if it's not, you can often force it to build by completing step 2)
+```
+$ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
 
-![Step 1](/images/step1.gif "Step 1")
+[Jekyll](http://jekyllrb.com) is the blog engine to tranform .md text into static websites
+
+```
+$ gem install jekyll
+```
+
+[Git](http://git-scm.com/)
+
+```
+$ brew install git
+```
+
+### Step 1) Fork the reop to your User Repository and start to write blog
+
+```
+$ git clone https://github.com/tinkerbox/tinkerbox.github.io.git
+```
+
+Now you will have a local repo folder named `tinkerbox.github.io`, and the `_posts/` is the folder where all the company blogs will live. To create a new post, all you need to do is create a new file in the `_posts/` directory, and the blog MUST be in the following format:
+
+```
+YYYY-MM-DD-title.MARKUP
+```
+
+`MARKUP` is the file extension representing the format used in the file. For example, the following are examples of valid post filenames:
+
+```
+2011-12-31-new-years-eve-is-awesome.md
+2012-09-12-how-to-write-a-blog.textile
+```
 
 ### Step 2) Customize and view your site
 
