@@ -3,7 +3,7 @@ layout: post
 title: Github博客安家了～
 ---
 
-从本周开始，每周一篇技术分享，坚持就是进步。
+从本周开始，每周至少一篇技术分享。
 
 ```
 Talk is cheap, show me the code.
