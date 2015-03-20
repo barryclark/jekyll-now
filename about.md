@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Acerca de Manu Contreras y este sitio
+title: Acerca de
 permalink: /about/
 ---
 
