@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Github博客安家了～
+published: true
 ---
 
 从本周开始，每周至少一篇技术分享。
