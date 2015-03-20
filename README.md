@@ -1,6 +1,6 @@
 # Tinker Ideas
 
-This is the repo where all Tinkerbox folks can easily create posts to share their knowdedge and storys.
+This is the repo where all Tinkerbox folks can easily create posts to share their knowdedge and stories.
 
 ## What It Does
 
