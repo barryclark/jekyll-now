@@ -4,16 +4,33 @@ title: Games
 permalink: /games/
 ---
 
-Games are listed below.
+---------
 
- - Game #1 [link](). ![Screenshot](http://i.imgur.com/GQcmfQY.png "Pacman Clone")
- - Game #2 [link]().
- - Game #3 [link](). ![Screenshot2](http://i.imgur.com/GQcmfQY.png "Pacman Clone")
- - Game #4 [link]().
- 
- 
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+##Pacman
+
+![Screenshot](http://i.imgur.com/GQcmfQY.png "Pacman Clone")
+
+A pacman clone with increasing difficulty on each level made in Unity3D 4.6. The game features the original ghost AI and a global leaderboard.
+
+
+
+See [Shaunew's Pac-Man](http://pacman.shaunew.com/play/index.htm) to see how each ghost's AI works.
+
+
+Play - View Source.
+
+---------------
+
+##Zaptor 
+
+
+
+
+-----------------
+
+|Bug |Description
+|------|---------------
+|[#98](https://github.com/plusjade/jekyll-bootstrap/issues/98)  |&#x2611; GIST Integration
+|[#244](https://github.com/plusjade/jekyll-bootstrap/issues/244)|&#x2611; JB/file_exists Helper
+|[#42](https://github.com/plusjade/jekyll-bootstrap/issues/42)  |&#x2611; Sort collections of Pages / Posts
+|[#84](https://github.com/plusjade/jekyll-bootstrap/issues/84)  |&#x2610; Detecting production mode
