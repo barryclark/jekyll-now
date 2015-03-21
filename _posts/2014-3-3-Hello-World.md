@@ -1,10 +1,13 @@
 ---
 layout: post
-title: You're up and running!
+title: Hello World!
 ---
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+Hey Guys! I was just getting ready to blog. Just need to learn more about Jekyll and need to toy with some themes. 
+Content will be pushed a little later. Until then, you can play some of the games I made recently: 
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
 
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
+ - [Zaptor](vilbeyli.github.io/Zaptor/), A 2D Space-shooter. If you want to cheat, go ahead, press Backspace!
+ - [Pacman](https://vilbeyli.github.io/Pacman/), A pacman clone with increasing difficulty on each level. There are highscores! Get your name up there. 
+ 
+See you soon!
