@@ -1,7 +1,11 @@
 ---
 layout: post
 title: Ahora si, hola mundo en GitHub!
-tags: Pruebas, GitHub, Markdown
+tags:
+- wordpress
+- jekyll
+- ruby
+- github
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pellentesque pretium risus, nec convallis nisl rhoncus eget. Cras diam lectus, feugiat quis odio egestas, faucibus mattis tellus. Proin id libero purus. In accumsan fringilla lectus condimentum sodales. Fusce eget nibh tempor, aliquet libero pharetra, congue dui. Aenean vel faucibus metus, ut rutrum quam. **Integer eget malesuada massa**.
