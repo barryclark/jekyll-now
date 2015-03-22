@@ -9,7 +9,7 @@ Los precios son casi de risa, 0,99€ por 20GB para guardar las fotos y vídeos,
 
 Tus fotos, tus vídeos, todos esos preciados momentos que capturas con tu móvil y que crees están seguros en una hipotética nube, han parado de sincronizarse.
 
-[caption id=“attachment_7172” align=“alignleft” width=“360”]![200 GB por 4€ al mes es un buen precio para guardar todos tus datos, hasta que se llene de nuevo.](http://obviedades.com/wp-content/uploads/2015/03/iphone-icloud-360x640.png) 200 GB por 4€ al mes es un buen precio para guardar todos tus datos, hasta que se llene de nuevo.[/caption]
+![200 GB por 4€ al mes es un buen precio para guardar todos tus datos, hasta que se llene de nuevo.](http://obviedades.com/wp-content/uploads/2015/03/iphone-icloud-360x640.png) 200 GB por 4€ al mes es un buen precio para guardar todos tus datos, hasta que se llene de nuevo.
 
 _Que no cunda el pánico_, siempre puedes invertir un poco de tu tiempo, buscar otro sistema de almacenamiento y subir ahí todas tus fotos. Pero no importa la plataforma, el problema de estas aplicaciones es que tienes que invertir mucho tiempo en subir todas las fotos y vídeos, sin garantías de mantener la calidad y sobre todo, volviendo al mismo problema, la capacidad puede ser inicialmente interesante hasta que lo llenes, después a pagar por un plan con más gigas.
 
