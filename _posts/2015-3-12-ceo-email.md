@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ahora si, hola mundo en GitHub!
+title: Como un CEO usa el email
 tags: Correo Electrónico
 ---
 <q>Cuando abro mi email, me pongo en la parte superior y me abro camino hacía abajo, y voy hasta donde quiero. Cualquier cosa a la que no llegue nunca será leída. Algunas personas se sorprenden de recibir una respuestas de un fundador de Google en solo 5 minutos. Otros simplemente tienen lo que esperaban (ninguna respuesta).</q>
