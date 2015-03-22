@@ -47,8 +47,8 @@ We worked also hard to improve our graphical installer Calamares and our system 
 
 **Calamares changes**
 
-* #204 add cleartempmountsjob to partition module
-* #207 add debug window function
+* add cleartempmountsjob to partition module
+* add debug window function
 * prevent crash when going back from EraseDiskPage and then next
 * show efi mountpoint when creating/editing partitions
 * merge transifex translations
