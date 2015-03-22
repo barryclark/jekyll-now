@@ -4,6 +4,8 @@ title: Acerca de
 permalink: /about/
 ---
 
+<img src="http://f.cl.ly/items/07142w0z2T2r1x2S0K2H/avatar.jpg" alt="Manu Contreras" class="alignright" width="250">
+
 Soy Manu Contreras (Madrid, 1984), principalmente escribo sobre tecnología, diseño, TV y cultura pop para varios medios en internet, además de colaborar esporádicamente en medios tradicionales como [La Tercera](http://www.latercera.com/).
 
 Actualmente escribo en varios medios como [Fayerwayer](http://www.fayerwayer.com/author/mcontreras/), [Wayerless](http://www.wayerless.com/author/mcontreras/) de _Betazeta Networks_ y [Sony Mobile Blog](http://blogs.sonymobile.com/es/ "Sony Mobile Blog"), anteriormente en [TecnoXplora](http://www.antena3.com/tecnoxplora/) del grupo _Atresmedia_.
