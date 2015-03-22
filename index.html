@@ -21,17 +21,17 @@ title: Home
 
 <div class="pagination">
   {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">Older</a>
+    <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">Antiguos</a>
   {% else %}
-    <span class="pagination-item older">Older</span>
+    <span class="pagination-item older">Antiguos</span>
   {% endif %}
   {% if paginator.previous_page %}
     {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}">Newer</a>
+      <a class="pagination-item newer" href="{{ site.baseurl }}">Nuevos</a>
     {% else %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">Newer</a>
+      <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">Nuevos</a>
     {% endif %}
   {% else %}
-    <span class="pagination-item newer">Newer</span>
+    <span class="pagination-item newer">Nuevos</span>
   {% endif %}
 </div>
