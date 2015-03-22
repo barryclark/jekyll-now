@@ -3,8 +3,9 @@ layout: post
 title: Como un CEO usa el email
 tags: Correo Electrónico
 ---
-<q>Cuando abro mi email, me pongo en la parte superior y me abro camino hacía abajo, y voy hasta donde quiero. Cualquier cosa a la que no llegue nunca será leída. Algunas personas se sorprenden de recibir una respuestas de un fundador de Google en solo 5 minutos. Otros simplemente tienen lo que esperaban (ninguna respuesta).</q>
-<p aling="right">– Larry Page o Sergey Brin en un Q&amp;A</p>
+>Cuando abro mi email, me pongo en la parte superior y me abro camino hacía abajo, y voy hasta donde quiero. Cualquier cosa a la que no llegue nunca será leída. Algunas personas se sorprenden de recibir una respuestas de un fundador de Google en solo 5 minutos. Otros simplemente tienen lo que esperaban (ninguna respuesta).
+
+<p align="right">– Larry Page o Sergey Brin en un Q&A</p>
 
 Este es un interesante hilo en Quora sobre como algunos personajes relevantes del mundo de la tecnología usan el email: **[How do Bill Gates, Larry Page, Mark Zuckerberg and Jack Dorsey manage their email?](http://www.quora.com/How-do-Bill-Gates-Larry-Page-Mark-Zuckerberg-and-Jack-Dorsey-manage-their-email "How do Bill Gates, Larry Page, Mark Zuckerberg and Jack Dorsey manage their email? — Quora")**
 
