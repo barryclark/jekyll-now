@@ -20,7 +20,7 @@
       </div>
 
       <div class="container content">
-        {{ content }}
+        {{ post.content | split: '<!-- more -->' | first }}
       </div>
     </div>
 
