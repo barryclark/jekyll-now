@@ -11,8 +11,8 @@ relative_permalinks: true
 # Setup
 title:               Manu Contreras
 tagline:             'Sobre tecnología móvil'
-description:         'Blog sobre tecnología, diseño y vida de Manu Contreras. Versión alojada en <a href="https://www.github.com">GitHub</a>.'
-url:                 http://mcontreras.github.io
+description:         'Escribo sobre tecnología de consumo y tecnología móvil.'
+url:                 http://mcontreras.me
 baseurl:             /
 paginate:            5
 
