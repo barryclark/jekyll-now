@@ -1,5 +1,5 @@
 ---
-typo: post
+layout: post
 title: Twitter vs. Meerkat
 tags: Twitter, Meerkat, Vídeo
 excerpt: Una nueva guerra entre plataforma y aplicaciones por la nueva eufória del vídeo en streaming de móvil a móvil.
