@@ -1,8 +1,8 @@
-- - -
+---
 layout: post
 title: Encerrado en su plataforma
 tags: Apple, iCloud
-- - -
+---
 Al final caes, no te queda otra. Un verdadero problema del primer mundo, lo se: los sistemas de almacenamiento en la nube integrados en móviles es lo que tienen, una facilidad de sincronización y uso que te olvidas de buscar otras opciones. En mi caso, [iCloud](https://www.apple.com/es/icloud/).
 
 Los precios son casi de risa, 0,99€ por 20GB para guardar las fotos y vídeos, además de algún documento. El problema, no te das cuenta de como vas llenando ese espacio que en un principio crees ilimitado, hasta que llega el mensaje que te avisa que estás a punto de llenar tu cuota. <!—more—>
