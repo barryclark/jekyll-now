@@ -14,11 +14,8 @@ title: Home
 
     <span class="post-date">{{ post.date | date_to_string }}</span>
 
-    {% if post.content contains "<!-- more -->" %}
-    {{ post.content | split:"<!-- more -->" | first % }}
-  {% else %}
-    {{ post.content | strip_html | truncatewords:100 }}
-  {% endif %}
+    {{ post.excerpt }}
+
   </div>
   {% endfor %}
 </div>
