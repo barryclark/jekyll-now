@@ -19,10 +19,11 @@ The microbes in your bioreactor need fresh food. Let’s get rid of the manual l
 
 ## Pump Designs
 
-This week we will two type of pumps. Download the design files here:
+This week we will two type of pumps. As with the other projects, each of the devices has its own github repository.
 
 * [Functional and technical requirements](/biofactory/class/8-pumps/requirements/)
 * Syringe pump design
+  * [Github repository](https://github.com/BioHackAcademy/BHA_SyringePump)
   * [SketchUp assembly](/biofactory/class/8/Syringe-Pump-Sketchup.skp)
   * [SVG laser cut files](/biofactory/class/8/Syringe-Pump-SVGs.zip)
   * [Fritzing wiring]
@@ -31,11 +32,11 @@ This week we will two type of pumps. Download the design files here:
 ![Syringe Pump](/biofactory/class/8/Syringe-Pump.png)
 
 * Peristaltic pump design
-  * [SketchUp assembly](/biofactory/class/8/Peristaltic-Pump-Sketchup.skp)
-  * [SVG laser cut files](/biofactory/class/8/Peristaltic-Pump-SVGs.zip)
-  * [3 Arm Rotor STL file](/biofactory/class/8/3 Arm Rotor.stl)
+  * [Github](https://github.com/BioHackAcademy/BHA_PeristalticPump)
+  * [Download repository as ZIP](https://github.com/BioHackAcademy/BHA_PeristalticPump/archive/master.zip)
+  * [Sketchup design](https://github.com/BioHackAcademy/BHA_PeristalticPump/blob/master/Peristaltic-Pump-Sketchup.skp?raw=true)
   * [Fritzing wiring]
-  * [Arduino Code]
+  * Arduino Code: See repository. We have included the LiquidCrystal_I2C library. However, as there are multiple libraries named LiquidCrystal_I2C around, if you have included one in your Arduino libraries directory it can result in a conflict (errors during compilation). Temporarily remove the library from your Arduino libraries directory.
 
 ![Peristaltic Pump](/biofactory/class/8/Peristaltic-Pump.png)
 
