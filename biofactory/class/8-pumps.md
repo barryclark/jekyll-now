@@ -29,7 +29,7 @@ This week we will two type of pumps. As with the other projects, each of the dev
   * [Fritzing wiring]
   * [Arduino Code]
 
-![Syringe Pump](/biofactory/class/8/Syringe-Pump.png)
+![Syringe Pump](https://raw.githubusercontent.com/BioHackAcademy/BHA_SyringePump/master/Syringe-Pump.png)
 
 * Peristaltic pump design
   * [Github](https://github.com/BioHackAcademy/BHA_PeristalticPump)
