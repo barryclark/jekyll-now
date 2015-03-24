@@ -4,7 +4,10 @@ layout: default
 
 <div class="home">
   {% if site.theme.header_text %}
-  <div class="call-out">{{ site.theme.header_text }}</div>
+  <div class="call-out" 
+  style="background-image: url('{{ site.baseurl }}/{{ site.theme.header_text_feature_image }}')">
+    {{ site.theme.header_text }}
+  </div>
   {% endif %}
 
   <div class="posts">

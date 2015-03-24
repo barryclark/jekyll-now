@@ -3,7 +3,8 @@
   @extend %padding-regular;
   display: inline-block;
   width: 100%;
-  background: none repeat scroll 0% 0% $header-desc-background-color;
+  background-color:$header-desc-background-color;
+  background-size: cover;
   font-size: 1.2em;
   text-align: center;
   color: $header-desc-text-color;
