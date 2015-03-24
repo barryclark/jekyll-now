@@ -12,9 +12,13 @@ Magic: The Gathering: 13 plays
 ***5 or more plays***
 
 Pokémon Trading Card Game: 9 plays
+
 Eleminis: 8 plays
+
 Golem Arcana: 6 plays
+
 Knee Jerk: 5 plays
+
 Tsuro: 5 plays
 
 
