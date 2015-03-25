@@ -4,7 +4,18 @@ title: About
 permalink: /about/
 ---
 
-Biohack Academy is an education program of Waag Society Amsterdam. You can find more information on [waag.org/biohackacademy](http://www.waag.org/biohackacademy)
+Biohack Academy is an education program of Waag Society Amsterdam. Held for the first time in the Spring of 2015. The course is fully open source and distributed through partner labs around the globe. 
+
+The team behind the first edition consists of:
+* Pieter van Boheemen (main coordinator)
+* Lucas Evers (bio art & design expert)
+* Maria Boto Ordoñez (biotech assistant)
+* Hany Saad (fabrication assistant)
+* Veit Penzenstadler (fabrication assistant)
+
+You can find more information on [waag.org/biohackacademy](http://www.waag.org/biohackacademy)
+
+Interested in joining the second edition? [Sign up for the BioHack Academy II](www.waag.org/bha2)
 
 ![Waag Society Open Wetlab]({{ site.baseurl }}/biofactory/graphics/WS_openwetlab_logo.png)
 
