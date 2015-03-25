@@ -17,9 +17,9 @@ The microbes in your bioreactor need fresh food. Let’s get rid of the manual f
 
 ## Pump Designs
 
-This week we will two type of pumps. As with the other projects, each of the devices has its own github repository.
+This week you can build two types of pumps. As with the other projects, each of the devices has its own github repository.
 
-### Some notes on the source files
+### Some notes on the source files and designs
 * Code: We have included the LiquidCrystal_I2C library. However, as there are multiple libraries named LiquidCrystal_I2C around on the web, if you have included one in your Arduino libraries directory it can result in a conflict (errors during compilation). Temporarily remove the library from your Arduino libraries directory.
 * Peristaltic pump: the design of the pump depends on the diameter of the tube. In case you use a different type, you will need to adjust the diameters. In our design we used HelixMark™ tubes (internal diameter 6.35 mm; external diameter 9.55 mm)
 * Syringe pump: the mounting interface between the pump and the syringe depends on the type of syringe you use. In our design we used a MediWare 60mL syringe (REF: I3 040800).
