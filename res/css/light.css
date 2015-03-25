@@ -364,7 +364,7 @@ footer {
 }
 .post-main {
 	color:#525d67;
-	font-size:18px;
+	font-size:14px;
 	letter-spacing:1px;
 	line-height:1.8;
 	margin-top:-10px;
@@ -431,7 +431,7 @@ blockquote {
 }
 code {
 	font-family:Monaco,Consolas,Menlo,"Andale Mono","Courier New","Ubuntu Mono",Arial,"Microsoft YaHei","Hiragino Sans GB",sans-serif;
-	font-size:17px;
+	font-size:12px;
 	background:rgba(235,245,245,0.75);
 	color:#494949;
 	margin:0 2px;
@@ -443,7 +443,7 @@ code {
 }
 pre code {
 	font-family:Monaco,Consolas,Menlo,"Andale Mono","Courier New","Ubuntu Mono",Arial,"Microsoft YaHei","Hiragino Sans GB",sans-serif;
-	font-size:16px;
+	font-size:11px;
 	background:rgba(235,245,245,0.75);
 	border-radius:3px;
 	-moz-border-radius:3px;
