@@ -24,11 +24,10 @@ You will need an Arduino UNO or similar microprocessor.
 |8|1|Rotary encoder|[iPrototype](https://iprototype.nl/products/components/buttons-switches/rotary-encoder-rgb), [Farnell](http://nl.farnell.com/alps/ec12e1240406/encoder-vertical-12mm-12det-12ppr/dp/2065052), [EOO](http://www.eoo-bv.nl/index.php?_a=viewProd&productId=9553)|0.60|
 |9|1|Knob|[Farnell](http://nl.farnell.com/multicomp/cr-r4-7/knob-soft-touch-d-shaft-black/dp/1440012?ost=1440012), ([EOO](http://www.eoo-bv.nl/index.php?_a=viewProd&productId=6065) + [EOO](http://www.eoo-bv.nl/index.php?_a=viewProd&productId=11139))|0.23|
 |10|1|Button|[iPrototype](https://iprototype.nl/products/components/buttons-switches/momentary-push-button), [EOO](http://www.eoo-bv.nl/index.php?_a=viewProd&productId=14721)|0.55|
-|11|2|10K resistor|[Farnell](http://nl.farnell.com/te-connectivity/cfr16j10k/resistor-carbon-10k-0-25w-5/dp/2329474), [EOO](http://www.eoo-bv.nl/index.php?_a=viewProd&productId=7016)|0.06|
-|12|2|10K resistor|[Farnell](http://nl.farnell.com/te-connectivity/cfr16j10k/resistor-carbon-10k-0-25w-5/dp/2329474), [EOO](http://www.eoo-bv.nl/index.php?_a=viewProd&productId=7016)|0.12|
-|13|2|10nF capacitor|[EOO](http://www.eoo-bv.nl/index.php?_a=viewProd&productId=5695)|0.2|
-|14|2|100nF capacitor|[EOO](http://www.eoo-bv.nl/index.php?_a=viewProd&productId=13443)|0.24|
-|15|1|12V 5A Power supply|[Farnell](http://nl.farnell.com/ideal-power/66ms-00120500-s01-v/psu-12v-5a-earthed-output/dp/2112013), [EOO](http://www.eoo-bv.nl/index.php?_a=viewProd&productId=13247)|20.00|
+|11|2|10K resistor|[Farnell](http://nl.farnell.com/te-connectivity/cfr16j10k/resistor-carbon-10k-0-25w-5/dp/2329474), [EOO](http://www.eoo-bv.nl/index.php?_a=viewProd&productId=7016)|0.12|
+|12|2|10nF capacitor|[EOO](http://www.eoo-bv.nl/index.php?_a=viewProd&productId=5695)|0.2|
+|13|2|100nF capacitor|[EOO](http://www.eoo-bv.nl/index.php?_a=viewProd&productId=13443)|0.24|
+|14|1|12V 5A Power supply|[Farnell](http://nl.farnell.com/ideal-power/66ms-00120500-s01-v/psu-12v-5a-earthed-output/dp/2112013), [EOO](http://www.eoo-bv.nl/index.php?_a=viewProd&productId=13247)|20.00|
 |--|--|---|---|---|
 |||*Total costs*|||
 
