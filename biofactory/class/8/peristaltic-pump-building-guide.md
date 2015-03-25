@@ -4,6 +4,8 @@ title: Peristaltic Pump Building Guide
 permalink: /biofactory/class/8-pumps/peristaltic-pump-building-guide/
 ---
 
+[Rotary encoder tutorial](http://bildr.org/2012/08/rotary-encoder-arduino/)
+
 The material list is based on the [Requirements list](/biofactory/class/8-pumps/requirements/)
 
 ## Bill of Materials

@@ -10,9 +10,8 @@ In order to scale up our BioFactory, we need to stir things up. Production is of
 
 ## Schedule
 
-* Physical Transport Phenonoma
-* Bioreactor Design
-* Magnetic Stirrer Design
+* [Bioreactor Design & Physical Transport Phenonoma](/biofactory/class/5/pdf/1 Bioreactor Design.pdf)
+* [Magnetic Stirrer Design](/biofactory/class/5/pdf/2 Magnetic Stirrer design.pdf)
 
 ## Stirrer Design
 
