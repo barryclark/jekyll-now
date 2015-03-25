@@ -23,11 +23,10 @@ This week we will two type of pumps. As with the other projects, each of the dev
 
 * [Functional and technical requirements](/biofactory/class/8-pumps/requirements/)
 * Syringe pump design
-  * [Github repository](https://github.com/BioHackAcademy/BHA_SyringePump)
-  * [SketchUp assembly](/biofactory/class/8/Syringe-Pump-Sketchup.skp)
-  * [SVG laser cut files](/biofactory/class/8/Syringe-Pump-SVGs.zip)
-  * [Fritzing wiring]
-  * [Arduino Code]
+  * [Github repository (including arduino code)](https://github.com/BioHackAcademy/BHA_SyringePump)
+  * [Github repository (as ZIP)](https://github.com/BioHackAcademy/BHA_SyringePump/archive/master.zip)
+  * [SketchUp assembly](https://github.com/BioHackAcademy/BHA_SyringePump/blob/master/Syringe-Pump-Sketchup.skp?raw=true)
+  * [SVG laser cut files](https://raw.githubusercontent.com/BioHackAcademy/BHA_SyringePump/master/syringe-pump-lasercut.svg)
 
 ![Syringe Pump](https://raw.githubusercontent.com/BioHackAcademy/BHA_SyringePump/master/Syringe-Pump.png)
 
