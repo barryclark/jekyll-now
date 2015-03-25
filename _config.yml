@@ -20,7 +20,8 @@ avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/je
 {% assign rm = url_parts | last %} 
 {% assign base_url = page.url | replace: rm %}  
 
-<ul> {% for node in site.pages %}  
+<ul> 
+{% for node in site.pages %}  
 {% if node.url contains base_url %}     
 {% assign node_url_parts = node.url | split: '/' %}     
 {% assign node_url_parts_size = node_url_parts | size %}     
