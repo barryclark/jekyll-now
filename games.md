@@ -4,8 +4,6 @@ title: Games
 permalink: /games/
 ---
 
-<h1>Games</h1>
-
 <h2>Published Titles</h2>
 [Elementalis](/games/elementalis)
 
