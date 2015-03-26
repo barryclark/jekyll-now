@@ -1,7 +1,7 @@
 ---
 layout: page
 title: ElementaliS
-permalink: /elementalis/
+permalink: /games/elementalis/
 ---
 
 ![ElementaliS Set]({{ site.url }}/images/elementalis.jpg)
