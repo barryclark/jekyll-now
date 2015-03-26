@@ -1,6 +1,6 @@
 ---
 layout: post
-title: DragorHach Peek
+title: Dragorhach Peek
 ---
 
 ![Dragorhach Card]({{ site.url }}/images/Dragorhach-peek.jpg)
