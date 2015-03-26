@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Games
-permalink: /games
+permalink: /games/
 ---
 
 <h1>Games</h1>

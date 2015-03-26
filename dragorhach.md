@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Dragorhach
-permalink: /games/dragorhach
+permalink: /games/dragorhach/
 ---
 
 <h1>Coming Soon</h1>
