@@ -15,7 +15,7 @@ I then wanted to learn more about the state of the market of visual programming 
 Scratch. Create stories, games, and animations. 
 Scratch is a visual block based programming language designed to be simple and kid friendly. It was developed in MIT’s Media Lab and is a fun stepping stone to get interested in programming. It is easy to step into and learn for young kids or anyone who has never seen code before. Many other platforms seem to have borrowed ideas from Scratch but are optimized for more specific use cases.
 
-There are step by step interactive tutorials, but students can also make their own projects. Scratch has spent a lot of effort fostering a strong social platform for students to be able to collaborate and share their projects, social skills essential for any well balanced computer programmer. It also seems to be a key aspect of its widespread popularity. 
+There are step by step interactive tutorials, but students can also make their own projects. Scratch has spent a lot of effort fostering a strong social platform for students to be able to collaborate and share their projects -- social skills essential for any well balanced computer programmer. It also seems to be a key aspect of its widespread popularity. 
 
 **A bit more advanced**
 
@@ -38,7 +38,7 @@ CodeAcademy.com teaches people to program in a course based format. It is free, 
 **Tablet based learning**
 
 PocketCode.
-PocketCode was created by Catrobat and allows users to create games, art, and animations directly on a phone or tablet.  PocketCode is again directed towards children, but in a different setting. The ability code on mobile applications provides much higher accessibility, particularly for schools who use tablets in curriculum or parents who let their kids play on their tablets.
+PocketCode was created by Catrobat and allows users to create games, art, and animations directly on a phone or tablet.  PocketCode is again directed towards children, but in a different setting. The ability to code on mobile applications provides much higher accessibility, particularly for schools who use tablets in curriculum or parents who let their kids play on their tablets.
 
 **Tools that help you build applications**
 
