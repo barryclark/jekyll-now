@@ -1,51 +1,72 @@
 <!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <html>
   <head>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+    <title></title>
 
-    {% include meta.html %}
 
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/globofcrap.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/globofcrap2.css">
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
   </head>
-
   <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
-
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
-          </div>
-
-          <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
-          </nav>
-        </header>
-      </div>
+    <div class="custom-block">
+      <header class="header-10">
+       <div class="container">
+         <div class="row">
+           <div class="navbar col-sm-12" role="navigation">
+             <div class="navbar-header">
+               <button type="button" class="navbar-toggle"></button>
+               <a class="brand" href="/"><img src="{{ site.baseurl }}/images/logo.png" alt="GrassRoots" height="130" width="130"></a>
+             </div>
+             <div class="collapse navbar-collapse pull-right">
+               <div class="pull-left">
+                 <ul class="nav">
+                   <li><a href="{{ site.baseurl }}/#about">About</a> </li>
+                   <li><a href="{{ site.baseurl }}/blog">Blog</a> </li>
+                   <li><a href="{{ site.baseurl }}/contact">Contact Us</a></li>
+                   <li><a href="{{ site.baseurl }}/faq">FAQ</a> </li>
+                   <li><a href="{{ site.baseurl }}/sponsor">Sponsor</a> </li>
+                 </ul>
+               </div>
+               <form class="navbar-form pull-left" action="" style="margin-top:10px">
+                 <a href="http://www.brownpapertickets.com/event/1373803">
+                 <button type="button" class="btn btn-success">Register Now!
+                 </button></a>
+               </form>
+             </div>
+           </div>
+         </div>
+       </div>
+       <div class="header-background">
+       </div>
+     </header>
+   </div>
+    {{ content }}
+    <div class="custom-block">
+      <footer class="footer-2 bg-midnight-blue">
+         <div class="container">
+           <nav class="pull-left">
+             <ul>
+               <li><a href="{{ site.baseurl }}/#about">About</a></li>
+               <li><a href="{{ site.baseurl }}/blog">Blog</a></li>
+               <li><a href="{{ site.baseurl }}/contact">Contact Us</a></li>
+               <li><a href="{{ site.baseurl }}/faq">FAQ</a></li>
+               <li><a href="{{ site.baseurl }}/sponsor">Sponsor</a></li>
+             </ul>
+           </nav>
+           <div class="additional-links">
+             Designed by <a href="#">Online Marijuana Design</a>
+           </div>
+         </div>
+       </footer>
     </div>
-
-    <div id="main" role="main" class="container">
-      {{ content }}
-    </div>
-
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          {% include svg-icons.html %}
-        </footer>
-      </div>
-    </div>
-
-    {% include analytics.html %}
   </body>
 </html>
