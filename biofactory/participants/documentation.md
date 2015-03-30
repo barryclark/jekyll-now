@@ -10,7 +10,7 @@ permalink: /biofactory/participants/documentation/
   * [Eline](http://elinevanderploeg.github.io/endexam/biohack.html)
   * [Tamara](http://tamaratomoro.github.io/)
   * [Tony](https://github.com/tg4259)
-  * [Giacomo](https://github.com/GG-loop)
+  * [Giacomo](http://gg-loop.github.io)
   * [Yuan](https://github.com/Yuanamoto)
   * [Jamillah](http://jamillah.github.io/)
   * [Vittorio](http://vittoriomilone.github.io/)
