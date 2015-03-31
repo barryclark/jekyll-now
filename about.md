@@ -40,5 +40,8 @@ WeChat ID : sun\_robert\_zhang
 
 
 ### 友情链接：
-[http://guides.ruby-china.org]{http://guides.ruby-china.org}
-[api.rubyonrails.org]{http://api.rubyonrails.org}
+
+[http://guides.ruby-china.org](http://guides.ruby-china.org)
+
+
+[api.rubyonrails.org](http://api.rubyonrails.org)
