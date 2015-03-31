@@ -20,10 +20,10 @@ layout: default
 <!-- Pagination links -->
 <div class="pagination">
   {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}" class="previous">Previous page</a>
+    <a href="{{ paginator.previous_page_path }}" class="previous">&laquo; Previous page</a>
   {% endif %}
 
   {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}" class="next">Next page</a>
+    <a href="{{ paginator.next_page_path }}" class="next">Next page &raquo;</a>
   {% endif %}
 </div>
