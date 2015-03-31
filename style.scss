@@ -285,10 +285,10 @@ footer {
 
 // Pagination
 .pagination {
-  margin-top: 5px;
+  margin-top: 2em;
   padding-top: 10px;
-  border-top: 1px solid #ddd;
-  font-size: 12px;
+  border-top: 1px solid $lightGray;
+  font-size: 14px;
 }
 
 .pagination .previous {
