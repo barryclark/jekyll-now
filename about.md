@@ -23,7 +23,8 @@ permalink: /about/
 
 ### 2015年的目标
 
-能今年保证项目需求的情况下，学习IOS。不是因为Android不好，而是技术需要广，然后才能钻。可能还会学习一点Ruby，毕竟公司现在大多数同事做的是这个。当然还有Python也希望有时间研究一下，14年已经喊很久了。总之15年注定将是繁忙的一年，当然希望今天会有更好的收获。
+* 上半年根据业务需要学习ruby和rails，预期目标是能带环境，能开发，能测试，能部署。
+* 下半年学习ios，能开发即可。
 
 ### 联系我
 
@@ -36,3 +37,8 @@ Weibo : [IT_Robert](http://weibo.com/RobertZhangSH)（不怎么经营）
 QQ : 1615349135
 
 WeChat ID : sun\_robert\_zhang
+
+
+### 友情链接：
+[http://guides.ruby-china.org]{http://guides.ruby-china.org}
+[api.rubyonrails.org]{http://api.rubyonrails.org}
