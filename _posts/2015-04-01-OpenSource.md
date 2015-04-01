@@ -28,12 +28,12 @@ Free 有两种解释，一个是免费 一个是自由
 比如你有一个fix你是贡献还是不贡献？如果你不想贡献 那么怎么维护？ 怎样和社区同步代码？ 怎样把自己产品的发布周期与社区同步？？等等等等
 
 前面讲了很多成本，事实上最直接的，任何人都是可以卖开源软件的，只要你卖得掉。
-开源软件从来没有要求说一定要免费，有兴趣等等可以看看这个链接 http://www.gnu.org/philosophy/selling.html
+开源软件从来没有要求说一定要免费，有兴趣等等可以看看这个链接 [http://www.gnu.org/philosophy/selling.html](http://www.gnu.org/philosophy/selling.html)
 到这里我们有个小结论：开源软件从钱这个角度来讲，不是free的，甚至比商业软件管理起来更复杂。
 
 ## 下面我们来谈谈自由，open source 自由吗？
 当然不了！因为有license这个玩意儿
-世界上的license 数不胜数，看这个链接 http://en.wikipedia.org/wiki/List_of_software_licenses
+世界上的license 数不胜数，看这个链接 [http://en.wikipedia.org/wiki/List_of_software_licenses](http://en.wikipedia.org/wiki/List_of_software_licenses)
 我猜大伙儿平常在安装软件的时候看到license信息，基本都是accept, accept
 个人来说，除了道德上的不妥，倒是很少有真正的法律后果，但是对于公司来说就不一样了。
 下面介绍几个重要的license, 其真正的法律定义非常复杂，有兴趣可以深入研究，这里只把最重要的点说一下
@@ -64,7 +64,7 @@ Apache总的来说是商业友好的，为什么呢？ 因为Apache背后有很�
 有这样一个license： Wtfpl
 全称就是Do what the 敏感词 You want to public license
 这不是玩笑，是真的
-你们可以去这个网站看一看 http://www.wtfpl.net/
+你们可以去这个网站看一看 [http://www.wtfpl.net/](http://www.wtfpl.net/)
 到这里我们可以得出开源一点也不Free 既不免费也不自由
 尤其对公司来说更是如此，因为树大招风嘛
 
@@ -107,21 +107,21 @@ Patch是交换信息的最基础的单位  有个玩笑说Apache为啥叫Apache,
 但是说实话QA还是不能完全替代邮件列表，所以我看到现在Apache 内部有人做了些工具去同步GitHub里面的comments到邮件列表里面
 
 到这里总结一下，开发软件的一些基本组件
-信息传播的渠道，在这里是邮件列表 
-源代码管理，当时是svn现在更多的是git 
-Issue/task tracker 这里是JIRA 
-自动build/test 这里是ant
+1. 信息传播的渠道，在这里是邮件列表 
+2. 源代码管理，当时是svn现在更多的是git 
+3. Issue/task tracker 这里是JIRA 
+4. 自动build/test 这里是ant
 
 有了这些基本组件  你就可以开发软件了 成功率会高很多；当然工具一直在发展，但这几个组件解决的问题目前来看是必须要有的，也是我们这个行业的前辈们多年总结的结果
 
 有了这些工具组件，我们相当于有了肉身了，但还缺少灵魂，灵魂是啥？ 就是一下这些规则：
-1. Code Review is important——tough people are lovely. 什么意思呢？因为一个人的思维终归是有盲点的，多一双眼睛就多一个发现问题的可能性；有本书上还说，即使你拿一个洋娃娃放在那里，然后对着它解释你的code就这样也还能提高软件质量。
+## 1. Code Review is important——tough people are lovely. 什么意思呢？因为一个人的思维终归是有盲点的，多一双眼睛就多一个发现问题的可能性；有本书上还说，即使你拿一个洋娃娃放在那里，然后对着它解释你的code就这样也还能提高软件质量。
 Tough people is lovely，翻译成中文就是事儿事儿的人其实是很可爱的。我刚工作的时候和欧美的人合作，开始还有点小不适应，因为他们说话比较直接，你代码啥啥啥问题，有啥说啥；到后来习惯了以后我后面的团队里 我倒是一直希望有这样一个tough的人，像门神一样把着源代码库的大门；如果你所在的team里面有这样一个人，请好好珍惜！
 
-2. 单元测试，极端重要；而且单元测试要自动化，要能简单地部分跑，全部跑，出report
+## 2. 单元测试，极端重要；而且单元测试要自动化，要能简单地部分跑，全部跑，出report
 只有全部自动化了，才能鼓励开发人员多跑，单元测试能把一些比较低级的错误扼杀在摇篮里，很重要
 
-3. 透明，开源社区里面因为讨论相对透明，所以大家参与讨论的积极性很高；企业里面就可能没那么透明了，manager们有自己聊的内容；员工们有自己聊的内容；当然这也是应该的，商业公司有些事儿就是要控制的；但我们还是要做到尽量地透明
+## 3. 透明，开源社区里面因为讨论相对透明，所以大家参与讨论的积极性很高；企业里面就可能没那么透明了，manager们有自己聊的内容；员工们有自己聊的内容；当然这也是应该的，商业公司有些事儿就是要控制的；但我们还是要做到尽量地透明
 那么以上这些rules其实就扮演了一个项目经理的角色。schedule,scope商量着来，quality通过review和test 保证。
 我们在企业里面常常听到Process这个词，一听就觉得好重，对吧？事实上通过Open Source社区里面的经验，通过infrastructure + culture这样的方式其实更自然，更好。
 infrastructure: build/test 挂了就是挂了，没啥好说的；culture,无论多牛逼的人在贡献代码的时候还是要找人review下； 这些东西形成了以后就不是负担，而是大大的助力了
