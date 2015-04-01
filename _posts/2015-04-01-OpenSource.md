@@ -107,7 +107,7 @@ Patch是交换信息的最基础的单位  有个玩笑说Apache为啥叫Apache,
 具体的说就是回答这两个问题。如果让你从头开发一个软件，你需要什么最基本的工具？ 以及那些最基本的规则是你要遵守的
 这张图是我参与Apache的时候涉及到的一些基本infrastructure
 
-[<img src="{{ site.baseurl }}/images/OpenSource.png" alt="Constructocat by https://github.com/jasoncostello" style="width: 400px;"/>]({{ site.baseurl }}/)
+[<img src="{{ site.baseurl }}/images/OpenSource.png" alt="Constructocat by https://github.com/jasoncostello" style="width: 800px;"/>]({{ site.baseurl }}/)
 
 我们看到邮件列表也就是信息渠道，bug tracking也就是JIRA，有源代码管理，当时我们用的是svn，然后是自动化的build和测试,当时用的是ant
 可以看到邮件列表被用户用来报告问题或者询问问题，也同时被社区内的人员用来讨论问题；当然这分成了不同的邮件列表，有些你可以自由地选择要不要监听，有的是要你有一定权限才能监听的比如committer邮件列表
