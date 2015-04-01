@@ -10,10 +10,8 @@ Spectroscopy is an essential tool for monitoring the growth and production in yo
 
 ## Schedule
 
-* Acids & Bases
-* Spectroscopy & Spectrometry
-* Analytical techniques
-* Spectrometer Design
+* [Analytical techniques](/biofactory/class/7/pdf/1 Analytical Techniques.pdf)
+* [Spectrometer Design](/biofactory/class/7/pdf/2 Spectrometer design.pdf)
 * Spectrometry Practical
   * [Iodine Clock Reaction](/biofactory/class/7-spectrometer/iodine-clock-reaction/)
 
