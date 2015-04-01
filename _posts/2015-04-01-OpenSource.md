@@ -33,10 +33,12 @@ Free 有两种解释，一个是免费 一个是自由
 
 ## 下面我们来谈谈自由，open source 自由吗？
 当然不了！因为有license这个玩意儿
+
 世界上的license 数不胜数，看这个链接 [http://en.wikipedia.org/wiki/List_of_software_licenses](http://en.wikipedia.org/wiki/List_of_software_licenses)
 我猜大伙儿平常在安装软件的时候看到license信息，基本都是accept, accept
 个人来说，除了道德上的不妥，倒是很少有真正的法律后果，但是对于公司来说就不一样了。
 下面介绍几个重要的license, 其真正的法律定义非常复杂，有兴趣可以深入研究，这里只把最重要的点说一下
+
 ### GPL
 GPL的全称是GNU General Public License
 它的主要要求就是，你只要用了它的code就必须以GPL开源，你即使是动态链接上去，你也得开源，而且要以GPL license开源。
