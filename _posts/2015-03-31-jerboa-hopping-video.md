@@ -20,7 +20,7 @@ Obviously the design is bio-inspired (well, as long as you count animatronic rep
 
 ### Kangaroo
 
-Tail-energized Jerboa hopping doesn't *really* look [like a kangaroo]((https://youtu.be/ftgY63SlmKY?t=1m7s)) (probably what you think of if someone mentions a tailed hopping thing). In the video above, the tail and leg seem to move "in phase", whereas they counter-rotate in the kangaroo. 
+Tail-energized Jerboa hopping doesn't *really* look [like a kangaroo]((https://youtu.be/ftgY63SlmKY?t=1m7s)) (probably what you think of if someone mentions a tailed hopping thing). In the video above, the tail and leg seem to move "in phase," whereas they counter-rotate in the kangaroo. 
 
 It seems fairly well-accepted that the reason for the counter-rotation in the kangaroo is to cancel the leg angular momentum during swing aka recirculation in flight [[1]](http://www.academia.edu/download/30989167/1807.pdf) [[2]](http://dl.acm.org/citation.cfm?id=122755 ). If you accept that, there's really no reason for a robot with a light leg to use the tail for that function.
 
@@ -36,7 +36,7 @@ You were wondering where that name came from, right? :wink: This frankly adorabl
 
 <iframe width="420" height="315" src="https://www.youtube.com/embed/AwJMP_pYqs4" frameborder="0" allowfullscreen></iframe>
 
-BTW the "skipping" behavior, where the relative leg timing is awkwardly between a hop (legs in phase) and a run (legs exactly out of phase), is very interesting to me of itself, and probably will feature in a future post here. But I digress...
+BTW the "skipping" behavior, where the relative leg timing is awkwardly between a hop (legs in phase) and a run (legs exactly out of phase), is very interesting to me in and of itself, and probably will feature in a future post here. But I digress...
 
 To me, it seems in that video that the tail is being used for balance, but at the same time it isn't moving very much. I.e., it seems that the balance is quasistatic (tail slowly moving center of mass around) versus dynamic (tail flinging to exert reaction torques on the body).
 
