@@ -34,7 +34,7 @@ This week you can build two types of pumps. As with the other projects, each of 
 ![Syringe Pump](https://raw.githubusercontent.com/BioHackAcademy/BHA_SyringePump/master/Syringe-Pump.png)
 
 * Peristaltic pump design
-  * [Building guide](/biofactory/class/8-pumps/building-guide/) 
+  * [Building guide](/biofactory/class/8-pumps/peristaltic-pump-building-guide/) 
   * [Github Repository (including code and wiring)](https://github.com/BioHackAcademy/BHA_PeristalticPump)
   * [Download repository as ZIP](https://github.com/BioHackAcademy/BHA_PeristalticPump/archive/master.zip)
   * [Sketchup design](https://github.com/BioHackAcademy/BHA_PeristalticPump/blob/master/Peristaltic-Pump-Sketchup.skp?raw=true)
