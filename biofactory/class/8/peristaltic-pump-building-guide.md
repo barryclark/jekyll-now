@@ -14,12 +14,12 @@ See [here](/biofactory/class/8-pumps/peristaltic-pump-materials/)
 
 ### Axis mount
 The perstaltic pump has a stepper motor with axis mount made from laser cut wood, as shown below. This needs a few 20mm M3 bolts, and the bearings. We used a total of 3 spacers in the end (even though only 2 are in the picture below), to make some space for extra washers between the bearings and the wood. YMMV
-![Axis mount](https://raw.githubusercontent.com/BioHackAcademy/BHA_PeristalticPump/master/photos/axismount.png)
-![Axis mount assembled](https://raw.githubusercontent.com/BioHackAcademy/BHA_PeristalticPump/master/photos/axismount-assembled.png)
+![Axis mount](https://raw.githubusercontent.com/BioHackAcademy/BHA_PeristalticPump/master/photos/axismount.JPG)
+![Axis mount assembled](https://raw.githubusercontent.com/BioHackAcademy/BHA_PeristalticPump/master/photos/axismount-assembled.JPG)
 
 ### Motor mount
 Next is the motor mount. This is a critical piece. If the cutout is too wide, the tube will not be properly constrained and no pumping will occur. It's important to have the same diameter tube, otherwise you will have to adjust the lasercut SVG to match.
-![Motormount](https://raw.githubusercontent.com/BioHackAcademy/BHA_PeristalticPump/master/photos/motormount.png)
+![Motormount](https://raw.githubusercontent.com/BioHackAcademy/BHA_PeristalticPump/master/photos/motormount.JPG)
 
 
 ## Links
