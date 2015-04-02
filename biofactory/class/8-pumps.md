@@ -11,7 +11,7 @@ The microbes in your bioreactor need fresh food. Let’s get rid of the manual f
 ## Schedule
 
 * Metabolic networks & flux analysis
-* Mechinical drive materials
+* Mechanical drive materials
 * Syringe pump design
 * Peristaltic pump design
 
