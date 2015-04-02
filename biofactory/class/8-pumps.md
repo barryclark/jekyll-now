@@ -51,8 +51,8 @@ Peristaltic pumps are best used in continious flow systems or for pumping large 
 ![Peristaltic Pump Sketchup](/biofactory/class/8/Peristaltic-Pump.png)
 
 Finished peristaltic pump:
-[![Peristaltic Pump in action](http://img.youtube.com/vi/rvNwhfQSCfg/0.jpg = 250x)](http://www.youtube.com/watch?v=rvNwhfQSCfg)
-![Peristaltic Pump Finished](https://raw.githubusercontent.com/BioHackAcademy/BHA_PeristalticPump/master/photos/finished.JPG = 250x)
+[![Peristaltic Pump in action](http://img.youtube.com/vi/rvNwhfQSCfg/0.jpg)](http://www.youtube.com/watch?v=rvNwhfQSCfg)
+![Peristaltic Pump Finished](https://raw.githubusercontent.com/BioHackAcademy/BHA_PeristalticPump/master/photos/finished.JPG)
 
 [Watch the pump in action on Youtube](http://www.youtube.com/watch?v=rvNwhfQSCfg)
 
