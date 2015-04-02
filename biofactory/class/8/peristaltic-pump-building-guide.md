@@ -13,7 +13,7 @@ See [here](/biofactory/class/8-pumps/peristaltic-pump-materials/)
 ## Assembly
 
 ### Axis mount
-The perstaltic pump has a stepper motor with axis mount made from laser cut wood, as shown below. This needs a few 20mm M3 bolts, and the bearings. We used a total of 3 spacers in the end (even though only 2 are in the picture below), to make some space for extra washers between the bearings and the wood (TODO make a picture with washers shown). YMMV
+The perstaltic pump has a stepper motor with axis mount made from laser cut wood, as shown below. This needs a few 20mm M3 bolts, and the bearings. We used a total of 3 spacers in the end (even though only 2 are in the picture below), to make some space for extra washers between the bearings and the wood (TODO make a picture with washers shown).
 ![Axis mount](https://raw.githubusercontent.com/BioHackAcademy/BHA_PeristalticPump/master/photos/axismount.JPG)
 ![Axis mount assembled](https://raw.githubusercontent.com/BioHackAcademy/BHA_PeristalticPump/master/photos/axismount-assembled.JPG)
 
