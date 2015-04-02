@@ -38,6 +38,8 @@ This week you can build two types of pumps. As with the other projects, each of 
   * [Download repository as ZIP](https://github.com/BioHackAcademy/BHA_PeristalticPump/archive/master.zip)
   * [Sketchup design](https://github.com/BioHackAcademy/BHA_PeristalticPump/blob/master/Peristaltic-Pump-Sketchup.skp?raw=true)
 
+[![Peristaltic Pump in action](http://img.youtube.com/vi/rvNwhfQSCfg/0.jpg)](http://www.youtube.com/watch?v=rvNwhfQSCfg)
+
 ![Peristaltic Pump](/biofactory/class/8/Peristaltic-Pump.png)
 
 ## Bill of Materials
