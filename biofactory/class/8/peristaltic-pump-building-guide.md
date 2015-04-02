@@ -6,6 +6,12 @@ permalink: /biofactory/class/8-pumps/peristaltic-pump-building-guide/
 
 The material list is based on the [Requirements list](/biofactory/class/8-pumps/requirements/)
 
+## What will you build?
+The end result looks like this:
+![Pump](https://raw.githubusercontent.com/BioHackAcademy/BHA_PeristalticPump/master/photos/finished.JPG)
+[Pump in action - Youtube video](https://www.youtube.com/watch?v=rvNwhfQSCfg)
+
+
 ## Bill of Materials
 
 See [here](/biofactory/class/8-pumps/peristaltic-pump-materials/)
