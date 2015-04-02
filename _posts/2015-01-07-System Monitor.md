@@ -15,5 +15,5 @@ authors:
 links:
   - type: Launchpad
     name: Launchpad (Code)
-    url: https://code.launchpad.net/~mpstark/+junk/system-monitor
+    url: ~mpstark/+junk/system-monitor
 ---
