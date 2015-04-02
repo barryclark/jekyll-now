@@ -43,6 +43,7 @@ Finished peristaltic pump:
 ![Peristaltic Pump Finished](https://raw.githubusercontent.com/BioHackAcademy/BHA_PeristalticPump/master/photos/finished.JPG)
 
 See in action:
+
 [![Peristaltic Pump in action](http://img.youtube.com/vi/rvNwhfQSCfg/0.jpg)](http://www.youtube.com/watch?v=rvNwhfQSCfg)
 ![Peristaltic Pump Sketchup](/biofactory/class/8/Peristaltic-Pump.png)
 
