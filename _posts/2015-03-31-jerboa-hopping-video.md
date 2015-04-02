@@ -20,7 +20,7 @@ Obviously the design is bio-inspired (well, as long as you count animatronic rep
 
 ### Kangaroo
 
-Tail-energized Jerboa hopping doesn't *really* look [like a kangaroo]((https://youtu.be/ftgY63SlmKY?t=1m7s)) (probably what you think of if someone mentions a tailed hopping thing). In the video above, the tail and leg seem to move "in phase," whereas they counter-rotate in the kangaroo. 
+Tail-energized Jerboa hopping doesn't *really* look [like a kangaroo](https://youtu.be/ftgY63SlmKY?t=1m7s) (probably what you think of if someone mentions a tailed hopping thing). In the robot video above, the tail and leg seem to move "in phase," whereas they counter-rotate in the kangaroo. 
 
 It seems fairly well-accepted that the reason for the counter-rotation in the kangaroo is to cancel the leg angular momentum during swing aka recirculation in flight [[1]](http://www.academia.edu/download/30989167/1807.pdf) [[2]](http://dl.acm.org/citation.cfm?id=122755 ). If you accept that, there's really no reason for a robot with a light leg to use the tail for that function.
 
