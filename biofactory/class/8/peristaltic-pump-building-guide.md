@@ -34,7 +34,13 @@ The user interface consists of a rotary encoder, a pushbutton and a 2-line LCD c
 ## Wiring diagram
 On to the hardest part: Wiring up all the electronics and getting it into the enclosure can be a challenge. Make sure you create long wires from the control panel to the breadboard/arduino to make assembly a bit easier. 
 
-![Wiring](https://raw.githubusercontent.com/BioHackAcademy/BHA_PeristalticPump/Wiring.png)
+![Wiring](https://raw.githubusercontent.com/BioHackAcademy/BHA_PeristalticPump/master/Wiring.png)
+
+The shown wiring diagram creates some problems with the user interface. Due to electromagnetic interference the arduino will detect random voltage fluctuations and think the user is turning the rotary encoder. 
+To fix this, some RC filters can be added to the circuit to reduce the noise on the button/encoder inputs, like shown below. A RC filter is a combination of Resistor and Capacitor, and is a very practical way to filter high frequency noise out of a signal. See [wikipedia](http://en.wikipedia.org/wiki/Low-pass_filter#RC_filter) for more details
+
+![Debounce circuit](https://raw.githubusercontent.com/BioHackAcademy/BHA_PeristalticPump/master/RotaryEncoderDebounceCircuit.png)
+
 
 
 ## Links
