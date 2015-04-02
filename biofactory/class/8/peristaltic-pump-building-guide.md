@@ -13,13 +13,28 @@ See [here](/biofactory/class/8-pumps/peristaltic-pump-materials/)
 ## Assembly
 
 ### Axis mount
-The perstaltic pump has a stepper motor with axis mount made from laser cut wood, as shown below. This needs a few 20mm M3 bolts, and the bearings. We used a total of 3 spacers in the end (even though only 2 are in the picture below), to make some space for extra washers between the bearings and the wood. YMMV
+The perstaltic pump has a stepper motor with axis mount made from laser cut wood, as shown below. This needs a few 20mm M3 bolts, and the bearings. We used a total of 3 spacers in the end (even though only 2 are in the picture below), to make some space for extra washers between the bearings and the wood (TODO make a picture with washers shown). YMMV
 ![Axis mount](https://raw.githubusercontent.com/BioHackAcademy/BHA_PeristalticPump/master/photos/axismount.JPG)
 ![Axis mount assembled](https://raw.githubusercontent.com/BioHackAcademy/BHA_PeristalticPump/master/photos/axismount-assembled.JPG)
 
 ### Motor mount
 Next is the motor mount. This is a critical piece. If the cutout is too wide, the tube will not be properly constrained and no pumping will occur. It's important to have the same diameter tube, otherwise you will have to adjust the lasercut SVG to match.
 ![Motormount](https://raw.githubusercontent.com/BioHackAcademy/BHA_PeristalticPump/master/photos/motormount.JPG)
+
+After that, the motor mount can be inserted into the side panels, so it ends up like this:
+
+![Assembly](https://raw.githubusercontent.com/BioHackAcademy/BHA_PeristalticPump/master/photos/assembly.JPG)
+
+### Control panel
+
+The user interface consists of a rotary encoder, a pushbutton and a 2-line LCD character display. You will need a few 10mm and 20mm bolts to assemble it. The LCD I2C module pins have to be bent a little so it fits in the enclosure.
+![Control panel](https://raw.githubusercontent.com/BioHackAcademy/BHA_PeristalticPump/master/photos/controlpanel2.JPG)
+
+
+## Wiring diagram
+On to the hardest part: Wiring up all the electronics and getting it into the enclosure can be a challenge. Make sure you create long wires from the control panel to the breadboard/arduino to make assembly a bit easier. 
+
+![Wiring](https://raw.githubusercontent.com/BioHackAcademy/BHA_PeristalticPump/Wiring.png)
 
 
 ## Links
