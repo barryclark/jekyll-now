@@ -110,6 +110,13 @@ img {
   max-width: 100%;
 }
 
+p > img {
+  display: block;
+  text-align: center;
+  margin: 1.5em auto;
+
+}
+
 // Fixes images in popup boxes from Google Translate
 .gmnoprint img {
   max-width: none;
@@ -281,6 +288,11 @@ nav {
 footer {
   padding: 20px 0;
   text-align: center;
+}
+
+.footnote {
+  vertical-align: super;
+  font-size: smaller;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
