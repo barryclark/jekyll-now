@@ -12,10 +12,8 @@ Last Saturday I joined [Rails Girls Utrecht](http://railsgirls.com/utrecht). It 
 
 You can check the [storify](https://storify.com/RailsGirls_UT/rails-girls-utrecht) for all the tweets (and pictures!) and [Lieke Boon](https://twitter.com/Lieke2208) also wrote a small [recap](http://codepancake.com/it-really-happened-rails-girls-utrecht/) of the event.
 
-During the event I shared my story with them about how I landed a job in tech a couple of years ago. I got lots of questions and some of the girls turned out to be very inspired and interested in giving coding a try. That made me very happy!
+During the event I shared my story with them about how I landed a job in tech a couple of years ago. Here you can check out the [slides](http://www.miriamtocino.com/projects/from_architect_to_full_time_developer.pdf). I got lots of questions and some of the girls turned out to be very inspired and interested in giving coding a try. That made me very happy!
 
 Interested in joining us next time? What about passing by [the next meetup](http://www.meetup.com/RailsGirls-NL/events/197906272/) on the 15th of April?
 
 You still have questions? Get in touch! ☺
-
-[SLIDES OF MY TALK >>>](http://www.miriamtocino.com/projects/from_architect_to_full_time_developer.pdf)
