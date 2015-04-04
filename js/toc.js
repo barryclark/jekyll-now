@@ -18,7 +18,9 @@
       }
       return this.id;
     }), output = $(this);
-    if (!headers.length || !output.length) {
+    // Miriam: In my case there is already a h4 in the subtitle of each post
+    // if (!headers.length || !output.length) {
+    if (headers.length <= 1 || !output.length) {
       return;
     }
 
