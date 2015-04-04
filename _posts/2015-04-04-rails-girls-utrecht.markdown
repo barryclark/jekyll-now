@@ -18,4 +18,4 @@ Interested in joining us next time? What about passing by [the next meetup](http
 
 You still have questions? Get in touch! ☺
 
-[SLIDES OF MY TALK >>>](http://www.miriamtocino.com/projects/from_architect_to_full_time_developer.pdf). 
+[SLIDES OF MY TALK >>>](http://www.miriamtocino.com/projects/from_architect_to_full_time_developer.pdf)
