@@ -22,7 +22,7 @@ This also means that we will do another 0.8.x release. You'll get all the goodie
 This release will come with XFCE 4.12 and Plasma 5, linux318 kernel and all the usual Manjaro and upstream updates. So what do we need from you guys? Well, you can do this:
 
 * Get the latest [Manjaro 0.8.13 dev-build](http://sourceforge.net/projects/manjarotest/files/0.8.13/xfce-minimal/) and test it
-* Find issues and bugs in [Thus 0.8.13]()
+* Find issues and bugs in [Thus 0.8.13](https://github.com/manjaro/thus/tree/devel)
 * Translate [Thus 0.8.13](https://www.transifex.com/projects/p/manjaro-thus/)
 * Spread the word that we need your support ...
 
