@@ -290,9 +290,26 @@ footer {
   text-align: center;
 }
 
+/* The inline footnote link. */
 .footnote {
   vertical-align: super;
   font-size: smaller;
+}
+
+/* The container at the bottom of the post. */
+.footnotes:before {
+  /* Essentially, copy the styles of an <hr/> */
+  display: block;
+  border: 1px inset;
+  content: " ";
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  padding-left: 1em;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
