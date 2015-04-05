@@ -3,7 +3,7 @@ layout: post
 title: expired SSL certificate 
 ---
 
-<img src="{{ site.baseurl }}/images/lock.jpg">
+<img src="{{ site.baseurl }}/images/lock.png">
 
 Seems we forgot to update our SSL certificate in time. This means our wiki and forum is not reachable for now.
 We will work on the matter as soon as possible. In time, please use followed workaround:
