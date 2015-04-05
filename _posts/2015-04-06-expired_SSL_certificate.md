@@ -9,7 +9,7 @@ We will work on the matter as soon as possible. In time, please use followed wor
 * open a terminal
 * enter followed line: **sudo date --set 2015-04-06 +09**
 
-This will set back your system time to **Mo 6. Apr 00:00:03 CEST 2015**
+This will set back your system time to Mo 6. Apr 00:00:03 CEST 2015.
 
 kind regards
 Philip Müller, Manjaro Development Team
