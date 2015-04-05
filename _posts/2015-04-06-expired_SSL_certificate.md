@@ -7,7 +7,7 @@ Seems we forgot to update our SSL certificate in time. This means our wiki and f
 We will work on the matter as soon as possible. In time, please use followed workaround:
 
 * open a terminal
-* enter followed line: **sudo date --set 2015-04-06 +09**
+* enter followed line: <pre>sudo date --set 2015-04-06 +09</pre>
 
 This will set back your system time to Mo 6. Apr 00:00:03 CEST 2015.
 
