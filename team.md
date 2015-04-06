@@ -21,6 +21,7 @@ published: true
 
 ###Artwork
 * **Lane Wiscombe (anex)** Manjaro Artwork, KDE Team: KDE5 Edition Maintainer, MATE, and Openbox Community Editions Maintainer
+* **David Linares (mcder3)** Manjaro Artwork: Plasma5 Designer, Theme designer, Installer visual design
 
 ###OpenRC Team
 * **Artoo** Packaging, Porting, Infrastructure
