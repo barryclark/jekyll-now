@@ -19,6 +19,12 @@ Now that we have constructed pumps, stirrers and a spectrometer we can start con
 ## Reactor Controller Design
 
 This week is all about Arduino code. We need to tie everything together into one mean machine.
+The github for the bioreactor can be found [here](https://github.com/BioHackAcademy/BHA_Bioreactor), or in [ZIP](https://github.com/BioHackAcademy/BHA_Bioreactor/archive/master.zip). It consists of:
+
+* Flask, sitting on a heating pad to control temperature 
+* Magnetic stirrer
+* [Arduino program](https://github.com/BioHackAcademy/BHA_Bioreactor/tree/master/Arduino/Bioreactor), with a connection system to connect pumps and other devices. See the [bus protocol](/biofactory/class/9-reactor-controller/serial-bus/).
+* [Bioreactor control program](https://github.com/BioHackAcademy/BHA_Bioreactor/blob/master/BioreactorControl/BioreactorControl.pde) written in Processing
 
 * [Arduino code](/biofactory/class/19/reactor-controller-arduino-code.txt)
 
@@ -46,6 +52,7 @@ Document your entire bioreactor, anwering the following questions:
   * 
 * Controllers
   * 
+  
 
 ## Feeling lazy?
 
