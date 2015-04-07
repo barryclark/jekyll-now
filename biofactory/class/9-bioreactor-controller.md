@@ -26,8 +26,6 @@ The github for the bioreactor can be found [here](https://github.com/BioHackAcad
 * [Arduino program](https://github.com/BioHackAcademy/BHA_Bioreactor/tree/master/Arduino/Bioreactor), with a connection system to connect pumps and other devices. See the [bus protocol](/biofactory/class/9-reactor-controller/serial-bus/).
 * [Bioreactor control program](https://github.com/BioHackAcademy/BHA_Bioreactor/blob/master/BioreactorControl/BioreactorControl.pde) written in Processing
 
-* [Arduino code](/biofactory/class/19/reactor-controller-arduino-code.txt)
-
 ## Bill of Materials
 
 In order to take part in this class you will need the following materials:
