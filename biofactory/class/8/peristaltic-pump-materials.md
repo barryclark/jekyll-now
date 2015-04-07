@@ -32,7 +32,7 @@ You will need an Arduino UNO or similar microprocessor.
 |--|--|---|---|---|
 |||*Total costs*|||
 
-* You will also need 3mm MDF and some M3 10 mm bolts and nuts
+* You will also need 3mm MDF, some M3 10 mm bolts and nuts, some M3 20mm bolts and some M3 30mm bolts
 
 ### Nice to have
 

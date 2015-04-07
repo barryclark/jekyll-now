@@ -11,7 +11,7 @@ The microbes in your bioreactor need fresh food. Let’s get rid of the manual f
 ## Schedule
 
 * Metabolic networks & flux analysis
-* Mechinical drive materials
+* Mechanical drive materials
 * Syringe pump design
 * Peristaltic pump design
 
@@ -25,6 +25,11 @@ This week you can build two types of pumps. As with the other projects, each of 
 * Syringe pump: the mounting interface between the pump and the syringe depends on the type of syringe you use. In our design we used a MediWare 60mL syringe (REF: I3 040800).
 
 * [Functional and technical requirements](/biofactory/class/8-pumps/requirements/)
+
+### Syringe pump
+
+This pump is best for moving small volumes of liquids.
+
 * Syringe pump design
   * [Github repository (including code and wiring)](https://github.com/BioHackAcademy/BHA_SyringePump)
   * [Github repository (as ZIP)](https://github.com/BioHackAcademy/BHA_SyringePump/archive/master.zip)
@@ -33,12 +38,23 @@ This week you can build two types of pumps. As with the other projects, each of 
 
 ![Syringe Pump](https://raw.githubusercontent.com/BioHackAcademy/BHA_SyringePump/master/Syringe-Pump.png)
 
+### Peristaltic pump
+
+Peristaltic pumps are best used in continious flow systems or for pumping large volumes.
+
 * Peristaltic pump design
+  * [Building guide](/biofactory/class/8-pumps/peristaltic-pump-building-guide/) 
   * [Github Repository (including code and wiring)](https://github.com/BioHackAcademy/BHA_PeristalticPump)
   * [Download repository as ZIP](https://github.com/BioHackAcademy/BHA_PeristalticPump/archive/master.zip)
   * [Sketchup design](https://github.com/BioHackAcademy/BHA_PeristalticPump/blob/master/Peristaltic-Pump-Sketchup.skp?raw=true)
 
-![Peristaltic Pump](/biofactory/class/8/Peristaltic-Pump.png)
+![Peristaltic Pump Sketchup](/biofactory/class/8/Peristaltic-Pump.png)
+
+Finished peristaltic pump:
+[![Peristaltic Pump in action](http://img.youtube.com/vi/rvNwhfQSCfg/0.jpg)](http://www.youtube.com/watch?v=rvNwhfQSCfg)
+![Peristaltic Pump Finished](https://raw.githubusercontent.com/BioHackAcademy/BHA_PeristalticPump/master/photos/finished.JPG)
+
+[Watch the pump in action on Youtube](http://www.youtube.com/watch?v=rvNwhfQSCfg)
 
 ## Bill of Materials
 
@@ -58,7 +74,7 @@ Document one of your devices in as an instructable.
 * DIY Syringe pumps
   * [OpenPump](https://www.wevolver.com/gerrit.niezen/openpump---an-open-source-hardware-syringe-pump/openpump)
 * DIY Peristaltic pumps
-  * [Instrutable Peristaltic Pump](http://www.instructables.com/id/Inexpensive-easy-to-build-peristaltic-pump/)
+  * [Instructable Peristaltic Pump](http://www.instructables.com/id/Inexpensive-easy-to-build-peristaltic-pump/)
 
 ## Feeling lazy?
 
