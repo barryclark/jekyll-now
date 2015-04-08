@@ -34,15 +34,7 @@ In order to take part in this class you will need the following materials:
 
 ## Assignment
 
-Document your entire bioreactor, anwering the following questions:
-
-* What does the reactor do? What product has been made?
-* From what designs is it derived?
-* How much does it cost?
-* Which parts have been custom made, by what machine?
-* What are all the components and how much do they cost?
-* How is it assembled?
-* What can be improved?
+Prepare for the Graduation Show on April 21st.
 
 ## Additional reading and hacking
 

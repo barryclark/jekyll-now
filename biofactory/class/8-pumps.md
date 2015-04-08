@@ -10,10 +10,9 @@ The microbes in your bioreactor need fresh food. Let’s get rid of the manual f
 
 ## Schedule
 
-* Metabolic networks & flux analysis
-* Mechanical drive materials
-* Syringe pump design
-* Peristaltic pump design
+* [Metabolic networks & flux analysis](/biofactory/class/8-pumps/pdf/1 Metabolic Flux Analysis.pdf)
+* [Mechanical drive materials](/biofactory/class/8-pumps/pdf/2 Mechanical Design.pdf)
+* [Pump designs](/biofactory/class/8-pumps/pdf/3 Pumps design.pdf)
 
 ## Pump Designs
 
@@ -64,7 +63,14 @@ In order to take part in this class you will need the following materials:
 
 ## Assignment
 
-Document one of your devices in as an instructable.
+Answer the following questions in your documentation:
+
+* What does the reactor do? What product has been made?
+* From what designs is it derived?
+* Which parts have been custom made, by what machine?
+* What are all the components and how much do they cost?
+* How is it assembled?
+* What can be improved?
 
 ## Additional reading and hacking
 
