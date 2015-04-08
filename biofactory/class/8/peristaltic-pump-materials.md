@@ -16,7 +16,7 @@ You will need an Arduino UNO or similar microprocessor.
 |-:|----:|:---------|:-------|---:|
 |1|1|NEMA17 Stepper motor|[RepRapWorld](http://reprapworld.com/?products_details&products_id=94&cPath=1614)|12.50|
 |2|1|Pololu Stepper Driver|[RepRapWorld](http://reprapworld.com/?products_details&products_id=356)|11.99|
-|3|2|LM8UU Linear Bearings|[RepRapWorld](http://reprapworld.com/?products_details&products_id=151&cPath=1655)|1.99|
+|3|2|Bearing 608ZZ|[RepRapWorld](http://reprapworld.com/?products_details&products_id/24/cPath/1595_1596)|0.25|
 |4|1|100 uF capacitor|[RepRapWorld](http://reprapworld.com/?products_details&products_id=45&cPath=1591_1600_1603)|0.20|
 |5|1|Heatsink|[RepRapWorld](http://reprapworld.com/?products_details&products_id/67/cPath/1591_1600)|1.25|
 |6|1|10 pack washers|[RepRapWorld](http://reprapworld.com/?products_details&products_id/241/cPath/1595_1597_1634)|1.99|
