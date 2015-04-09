@@ -3,7 +3,7 @@ layout: post
 title: Expired SSL certificate
 ---
 
-Oops! We forgot to update our SSL certificate before it expired. This means you will get a warning in you web browser when you try to access our wiki or forum.
+Oops! We forgot to update our SSL certificate before it expired. This means you will get a warning in your web browser when you try to access our wiki or forum.
 
 We are working on getting a new SSL certificate - please bear with us.
 
