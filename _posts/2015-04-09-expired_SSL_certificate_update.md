@@ -5,11 +5,11 @@ title: Expired SSL certificate (update)
 
 We have good news. Roland is back from Saudi Arabia. His new company [desertbit](http://desertbit.com/) will fly soon. This will bring also a new **CMS** for manjaro.org. We will soon replace our current broken webserver, holding our forums, wiki, mailing list and merge to a new one. We also plan to provide a packaging service for packages and iso-images.
 
-Regarding the expired SSL certificate. Roland got a reminder on **Mon, 23 Mar 2015 18:14:37 +0900 (JST)** from **GlobalSign**. He also replied in time for extension. Sadly we got no response from GlobalSign back.
+Regarding the expired SSL certificate. Roland got a reminder on **Mon, 23 Mar 2015 18:14:37 +0900 (JST)** from **GlobalSign**. He also replied in time for extension. Sadly we got no response from GlobalSign back that time.
 
-Therefor we hold a meeting with some of our core members to decide what to do. Result: we bought a [2 Year Thawte Wildcard 256 Bit SSL Certificate](https://www.hetzner.de/gb/hosting/ssl/zertifikat) from your [donations]({{ site.baseurl }}/donate). We thank all our community members who made that happen. Also these donations will finance us for another half year.
+Luckily today I got mail with a new certificate code from [GlobalSign](https://gcc.globalsign.com). They sponsor us a [Wildcard SSL](https://www.globalsign.com/en/ssl/wildcard-ssl/) from now on. Also we want to thank all our community members, who [donated]({{ site.baseurl }}/donate). These donations will finance us for another half year.
 
-Expect the current page run again by Wednesday.
+Expect the current page run again by tomorrow.
 
 Kind regards,
 
