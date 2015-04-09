@@ -9,7 +9,7 @@ We will soon replace our current broken webserver, holding our forums, wiki, mai
 
 Regarding the expired SSL certificate: Roland got a reminder on **Mon, 23 Mar 2015 18:14:37 +0900 (JST)** from **GlobalSign**. He also replied in time for extension. Sadly we got no response from GlobalSign back then.
 
-Luckily today, I got mail with a new certificate code from [GlobalSign](https://gcc.globalsign.com). They will sponsor us a [Wildcard SSL](https://www.globalsign.com/en/ssl/wildcard-ssl/) from now on. Also, we want to thank all our community members, who [donated]({{ site.baseurl }}/donate) so far. These donations will finance us for another half year.
+Luckily today, I got mail with a new certificate code from [GlobalSign](https://www.globalsign.com/en/). They will sponsor us a [Wildcard SSL](https://www.globalsign.com/en/ssl/wildcard-ssl/) from now on. Also, we want to thank all our community members, who [donated]({{ site.baseurl }}/donate) so far. These donations will finance us for another half year.
 
 Expect the current page run again by tomorrow.
 
