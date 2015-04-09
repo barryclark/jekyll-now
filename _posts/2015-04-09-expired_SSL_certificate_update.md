@@ -7,7 +7,7 @@ We have good news. Roland is back from Saudi Arabia. His new company [desertbit]
 
 Regarding the expired SSL certificate. Roland got a reminder on **Mon, 23 Mar 2015 18:14:37 +0900 (JST)** from **GlobalSign**. He also replied in time for extension. Sadly we got no response from GlobalSign back.
 
-Therefor we hold a meeting with some of our core members to decide what to do. Result: we bought a 2 Year Hetzner SSL certificate from your [donations]({{ site.baseurl }}/donate). We thank all our community members who made that happen. Also these donations will finance us for another half year.
+Therefor we hold a meeting with some of our core members to decide what to do. Result: we bought a [2 Year Thawte Wildcard 256 Bit SSL Certificate](https://www.hetzner.de/gb/hosting/ssl/zertifikat) from your [donations]({{ site.baseurl }}/donate). We thank all our community members who made that happen. Also these donations will finance us for another half year.
 
 Expect the current page run again by Wednesday.
 
