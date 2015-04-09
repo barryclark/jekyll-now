@@ -25,7 +25,9 @@ The donations will mainly cover the operating costs of the webserver. Any surplu
 - A tax-related donation receipt can not be issued because Manjaro.org is not a commercial and registered organization.
 - Legally, it is a private donation.
 
-On the transfer form the word <i>donation</i> must be mentioned in the <i>purpose</i> area. Who also indicates his email address, receives on request a confirmation of receipt.</p>
+On the transfer form the word **donation** must be mentioned in the **purpose** area. Who also indicates his email address, receives on request a confirmation of receipt.
+
+##Bank Account
 
 <table>
 <tbody>
@@ -55,5 +57,7 @@ On the transfer form the word <i>donation</i> must be mentioned in the <i>purpos
 </tr>
 </tbody>
 </table>
+
+##Paypal
 
 <form action="/web/20140716205321/https://www.paypal.com/cgi-bin/webscr" method="post"><input type="hidden" name="cmd" value="_s-xclick" /> <input type="hidden" name="hosted_button_id" value="CMZENCJDAF2TL" /> <input type="image" alt="PayPal - The safer, easier way to pay online!" name="submit" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" /> <img alt="" src="https://www.paypalobjects.com/de_DE/i/scr/pixel.gif" width="1" height="1" border="0" /></form>
