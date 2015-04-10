@@ -9,7 +9,7 @@ permalink: /biofactory/participants/documentation/
 * [Waag Society](http://www.waag.org) - Amsterdam
   * [Eline](http://elinevanderploeg.github.io/endexam/biohack.html)
   * [Tamara](http://tamaratomoro.github.io/)
-  * [Tony](https://github.com/tg4259)
+  * [Tony](https://tg4259.github.io)
   * [Giacomo](http://gg-loop.github.io)
   * [Yuan](https://github.com/Yuanamoto)
   * [Jamillah](http://jamillah.github.io/)
