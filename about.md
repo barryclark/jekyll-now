@@ -21,7 +21,7 @@ in category 11 - Computer Science (Stredoškolská odborná činnosť).
 
 ### Contact me
 
-Professional address: [oskopek@oskopek.com](mailto:oskopek@oskopek.com)
+Personal address: [oskopek@oskopek.com](mailto:oskopek@oskopek.com)
 
 School address: [oskopek@matfyz.cz](mailto:oskopek@matfyz.cz)
 
