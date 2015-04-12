@@ -17,7 +17,7 @@ You will need an Arduino UNO or similar microprocessor.
 |4|1|MOSFET|[Farnell](http://nl.farnell.com/stmicroelectronics/stp36nf06l/mosfet-n-logic-to-220/dp/9935614?CMP=i-bf9f-00001000), [EOO](http://www.eoo-bv.nl/index.php?_a=viewProd&productId=1279)|0.98|
 |5|2|10K resistor|[Farnell](http://nl.farnell.com/multicomp/mcmf0w8ff1002a20/metal-film-resistor-10kohm-125mw/dp/1127017)
 |6|2|1K resistor|[Farnell](http://nl.farnell.com/multicomp/mcmf0w8ff1001a20/metal-film-resistor-1kohm-125mw/dp/1127016)
-|7|1|OneWire Thermometer|[Farnell]|http://nl.farnell.com/maxim-integrated-products/ds18s20/digital-thermometer-18s20-3to/dp/9724761
+|7|1|OneWire Thermometer|[Farnell](http://nl.farnell.com/maxim-integrated-products/ds18s20/digital-thermometer-18s20-3to/dp/9724761)
 |--|--|---|---|---|
 |||*Total costs*|||
 
