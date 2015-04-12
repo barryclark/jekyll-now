@@ -23,14 +23,14 @@ The github for the bioreactor can be found [here](https://github.com/BioHackAcad
 
 * Flask, sitting on a heating pad to control temperature 
 * Magnetic stirrer
-* [Arduino program](https://github.com/BioHackAcademy/BHA_Bioreactor/tree/master/Arduino/Bioreactor), with a connection system to connect pumps and other devices. See the [bus protocol](/biofactory/class/9-reactor-controller/serial-bus/).
+* [Arduino program](https://github.com/BioHackAcademy/BHA_Bioreactor/tree/master/Arduino/Bioreactor), with a connection system to connect pumps and other devices.
 * [Bioreactor control program](https://github.com/BioHackAcademy/BHA_Bioreactor/blob/master/BioreactorControl/BioreactorControl.pde) written in Processing
 
 ## Bill of Materials
 
 In order to take part in this class you will need the following materials:
 
-* [Reactor Controller materials](/biofactory/class/9-reactor-controller/controller-materials/)
+* [Reactor Controller materials](/biofactory/class/9-reactor-controller/materials/)
 
 ## Assignment
 
