@@ -40,12 +40,14 @@ But what if you have multiple instances of the application that need to access t
 
 ## The Data Container Pattern
 
-Rather than mounting a volume to your applications' container, the Data Container Pattern follows the single responsibility principle and involves setting up a volume in a separate **data container**. Your application container then points to the data container to read and write information (using the **volume-from** command). This is a common practice when working with databases. 
+Rather than mounting a volume to your application's container, the Data Container Pattern closely follows the single responsibility principle. It involves setting up a volume in a separate **data container**. Your application container then points to the data container to read and write information (using the **volume-from** command). This is a common practice when working with databases. 
 
 
 ## The Lifecycle of a Data Container      
 
-The data container only runs whilst it is needed and is largely passive. The application container mounts the volume contained inside the data container, once this is done the data container shuts down as it has done its job.
+The data container only runs whilst it is needed and is does next to nothing in terms of work. The application container mounts the volume contained inside the data container, once this is done the data container shuts down.
+
+## Preventing Problems
 
 When creating a data container (e.g for running a database) it's wise to use the same base image in both your application container and data container. This will prevent any file permission issues (the data container will seed the application container will the correct file permissions) … and most efficient approach (since you are reusing the image).
 
@@ -57,5 +59,5 @@ When creating a data container (e.g for running a database) it's wise to use the
 
 
 ##Thanks
-*Thanks to Rob Taylor for proofing this article*
+*Thanks to Rob Taylor for proof-reading this article*
 
