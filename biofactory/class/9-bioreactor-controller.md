@@ -30,7 +30,7 @@ The github for the bioreactor can be found [here](https://github.com/BioHackAcad
 
 In order to take part in this class you will need the following materials:
 
-* [Reactor Controller materials](/biofactory/class/9-reactor-controller/materials/)
+* [Reactor Controller materials](/biofactory/class/9/bioreactor-materials/)
 
 ## Assignment
 
