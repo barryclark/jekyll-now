@@ -4,12 +4,13 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+I'm Android Developer. 
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+I wrote social college application when i'm in the junior.
+Now I work at the Loving as Android Developer.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[venciallee@gmail.com](mailto:email@domain.com)
