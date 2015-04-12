@@ -25,6 +25,11 @@ The github for the bioreactor can be found [here](https://github.com/BioHackAcad
 * Magnetic stirrer
 * [Arduino program](https://github.com/BioHackAcademy/BHA_Bioreactor/tree/master/Arduino/Bioreactor), with a connection system to connect pumps and other devices.
 * [Bioreactor control program](https://github.com/BioHackAcademy/BHA_Bioreactor/blob/master/BioreactorControl/BioreactorControl.pde) written in Processing
+* 2X Mosfet circuit (one for fan, and one for heating pad) ![circuit](https://raw.githubusercontent.com/BioHackAcademy/BHA_Bioreactor/master/mosfet%20circuit.jpg)
+
+## Control program
+
+The control program is able to use multiple devices at the same time. This is done by having the processing code send "id" to each arduino, which responds with either "id:bioreactor", "id:peristaltic-pump", or "id:syringe-pump" so it knows which COM port is connected to which device.
 
 ## Bill of Materials
 
