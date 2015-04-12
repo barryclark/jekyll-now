@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Bioreactor Materials
-permalink: /biofactory/class/9-reactor-controller/materials/
+permalink: /biofactory/class/9/bioreactor-materials/
 ---
 
 ## Bill of Materials
