@@ -22,4 +22,4 @@ You will need an Arduino UNO or similar microprocessor.
 
 * You will also need 3mm MDF, some M3 bolts and nuts.
 
-Back to [Biofactory - Class 8:Syringe & Peristaltic Pumps](/biofactory/class/8-pumps/)
+Back to [Biofactory - Class 9:Bioreactor](/biofactory/class/9-bioreactor-controller/)
