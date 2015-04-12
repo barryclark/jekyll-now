@@ -4,8 +4,6 @@ title: Reactor Controller (Class 9)
 permalink: /biofactory/class/9-reactor-controller/
 ---
 
-> NOTE: these instructions are still under construction. The designs and BoM might be subject to change.
-
 ## Synopsys
 
 Now that we have constructed pumps, stirrers and a spectrometer we can start connecting all the dots into one big bioreactor. The controller will be able to set the environmental parameters, input and analyse the effluent of your reactor. 
