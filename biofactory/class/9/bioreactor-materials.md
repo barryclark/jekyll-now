@@ -10,8 +10,7 @@ You will need an Arduino UNO or similar microprocessor.
 
 |#|Amount|Description|Supplier NL|Cost|
 |-:|----:|:---------|:-------|---:|
-|1|1|Heating pad|[Conrad](https://www.conrad.nl/nl/verwarmingsfolie-zelfklevend-12-vdc-12-vac-22-w-veiligheidstype-ipx4-90-mm-thermo-1216623.html?sc.ref=Product%20Details
-)|20.68|
+|1|1|Heating pad|[Conrad](https://www.conrad.nl/nl/verwarmingsfolie-zelfklevend-12-vdc-12-vac-22-w-veiligheidstype-ipx4-90-mm-thermo-1216623.html?sc.ref=Product%20Details)|20.68|
 |2|1|Fan|[EOO](http://www.eoo-bv.nl/index.php?_a=viewProd&productId=13244), [Farnell](http://nl.farnell.com/bisonic/sp802512l-03/fan-80x25mm-12vdc/dp/1832326)|8.99|
 |3|2|Permanent magnets|[Supermagnete](http://www.supermagnete.nl/blokmagneten-neodymium-middelgroot/blokmagneet-10mm-x-10mm-x-5mm-neodymium-n42-vernikkeld_Q-10-10-05-N)|0.65|
 |4|1|MOSFET|[Farnell](http://nl.farnell.com/stmicroelectronics/stp36nf06l/mosfet-n-logic-to-220/dp/9935614?CMP=i-bf9f-00001000), [EOO](http://www.eoo-bv.nl/index.php?_a=viewProd&productId=1279)|0.98|
