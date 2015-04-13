@@ -19,7 +19,7 @@ http://alistapart.com/column/wai-finding-with-aria-landmark-roles
 
 #### Moj stil pisanja HTML-a / CSS-a -- BEM metodologija
 
-```css
+```
 // block-name
 // block-name--modifier-name
 // block-name__element-name
@@ -29,7 +29,7 @@ http://alistapart.com/column/wai-finding-with-aria-landmark-roles
 ##### Primjer u praksi
 
 
-```html
+```
 <nav class="main-nav" role="navigation">
     <ul class="main-nav__list">
          <li class="main-nav__item main-nav__item--has-child">
