@@ -18,6 +18,7 @@ permalink: /biofactory/participants/documentation/
   * [Jurjen](http://jurminator.github.io/)
   * [Dragoslav](http://dragoslav.github.io/diy/)
   * [Maria](http://mariaboto.github.io)
+  * [Claudia](http://claudiasbricks.github.io/)
 * [Garagem Fablab](http://www.garagemfablab.com) - São Paulo
   * [Eduardo Lopes](https://biohackacademyelopes.wordpress.com)
   * [Carlo](https://github.com/carloscandidojr/biohackacademy/wiki)
