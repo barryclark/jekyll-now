@@ -19,12 +19,12 @@ http://alistapart.com/column/wai-finding-with-aria-landmark-roles
 
 #### Moj stil pisanja HTML-a / CSS-a -- BEM metodologija
 
-{% highlight css %}
+```
 // block-name
 // block-name--modifier-name
 // block-name__element-name
 // block-name__element-name--modifier-name
-{% endhighlight %}
+```
 
 ##### Primjer u praksi
 
