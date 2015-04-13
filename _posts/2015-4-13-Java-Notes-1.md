@@ -22,9 +22,10 @@ Instructor: [Dashi Tang](https://www.coursera.org/instructor/~3838), [Peking Uni
 1. JVM(Java Virtual Machine)
  * source.java --_compile(javac)_--> source.class(bytecode) --_run_--> JVM for different platforms
  * JRE = JVM + API(lib)
-  * JRE: load  codes(by _class loader_), check codes(by _bytecode verifier_), run codes(by _runtime interpreter_).  
+   * JRE: load codes(by _class loader_), check codes(by _bytecode verifier_), run codes(by _runtime interpreter_).  
 2. Code Security  
 3. Garbage Collection  
 4. JDK(Java Development Kit) = JRE + Tools  
 
 ###Object-Oriented Programming
+* 
