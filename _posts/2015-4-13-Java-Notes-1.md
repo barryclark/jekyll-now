@@ -15,5 +15,16 @@ Instructor: [Dashi Tang](https://www.coursera.org/instructor/~3838), [Peking Uni
 
 ###What is Java
 * Simple, OOP, cross-platform, secure, muti-threads.
-* C++--
+* "**C++--**":
  * No pointers, automatical memory control, stable data types, no header files, no macros, no multiple inheritance, no global variables except for classes...
+
+###Java Mechanism
+####JVM(Java Virtual Machine)
+* source.java --_compile(javac)_--> source.class(bytecode) --_run_--> JVM for different platforms
+* JRE = JVM + API(lib)
+ * JRE: load  codes(by _class loader_), check codes(by _bytecode verifier_), run codes(by _runtime interpreter_).
+####Code Security
+####Garbage Collection
+####JDK(Java Development Kit) = JRE + Tools
+
+###Object-Oriented Programming
