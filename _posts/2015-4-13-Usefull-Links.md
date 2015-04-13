@@ -19,14 +19,15 @@ http://alistapart.com/column/wai-finding-with-aria-landmark-roles
 
 #### Moj stil pisanja HTML-a / CSS-a -- BEM metodologija
 
-```
+```css
 // block-name
 // block-name--modifier-name
 // block-name__element-name
 // block-name__element-name--modifier-name
-
 ```
+
 ##### Primjer u praksi
+
 
 ```html
 <nav class="main-nav" role="navigation">
@@ -39,7 +40,9 @@ http://alistapart.com/column/wai-finding-with-aria-landmark-roles
     </ul>
 </nav>
 ```
+
 ## JavaScript
+
 #### ES5 i ES6
 
 * ES6 (latest) guidelines:  https://github.com/airbnb/javascript/tree/es6 - by Airbnb
