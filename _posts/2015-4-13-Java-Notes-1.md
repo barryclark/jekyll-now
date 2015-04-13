@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Java Programming Notes 1 -- Introduction to Java
+title: Java Programming Notes (1): Introduction to Java
 ---
 
 Course: Java Programming (coursera.com)
