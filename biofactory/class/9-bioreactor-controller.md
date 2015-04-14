@@ -42,9 +42,12 @@ Prepare for the Graduation Show on April 21st.
 ## Additional reading and hacking
 
 * Reactor Design
-  * 
+  * [Bioreactor Design for Chemical Engineers](http://d.umn.edu/~rdavis/courses/che4601/notes/BioreactorDesignForChEs.pdf)
+  * [Bioreactor Design Software](http://www.bioreactordesign.org)
+  * [Modeling a Batch Reactor in SuperPro Design](https://www.youtube.com/watch?v=MLfonzyG3T0)
 * Controllers
-  * 
+  * [Applikon bioreactors and controllers](http://www.applikon-bio.com/cms3/index.php?option=com_content&view=article&id=344&Itemid=45)
+  * [I2C communication between Arduinos](http://www.instructables.com/id/I2C-between-Arduinos/)
   
 
 ## Feeling lazy?
