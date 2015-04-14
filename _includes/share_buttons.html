@@ -33,5 +33,11 @@
     {% if site.share_stumbleupon %}
       <a class="fa fa-stumbleupon" href="http://www.stumbleupon.com/submit?url={{ site.url }}{{ page.url }}&title={{ page.title }}" rel="nofollow" target="_blank" title="Share on StumbleUpon"></a>
     {% endif %}
+
+    {% if site.share_hackernews %}
+      <a class = "fa fa-hacker-news" onclick="parent.postMessage('submit','*')" href="https://news.ycombinator.com/submitlink?u={{ site.url }}{{ page.url }}&t={{ page.title }}" rel="nofollow" target="_blank" title="Share on Hacker News"></a>
+    {% endif %}
+
+
   </div>
 </div>
