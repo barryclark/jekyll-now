@@ -41,6 +41,7 @@ share_digg: false
 share_tumblr: false
 share_reddit: false
 share_stumbleupon: false
+share_hackernews: false
 
 # Build settings
 markdown:     redcarpet
