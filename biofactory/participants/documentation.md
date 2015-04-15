@@ -29,3 +29,8 @@ permalink: /biofactory/participants/documentation/
 * [University of New Mexico](http://www.unm.edu) - Albuquerque
   * [UNM Bio Art and Design](https://github.com/unmbioartanddesign/biofactory/wiki/Biofactory-Course,-Waag-Society-Documentation:--Week-1)
 * [Roma Makers](http://officine.romamakers.org/biohack/students/)
+  * [Michele Martinelli](http://officine.romamakers.org/biohack/students/Michele_Martinelli/)
+  * [Michele Monti](http://officine.romamakers.org/biohack/students/Michele_Monti/)
+  * [Valeria Iovino](http://officine.romamakers.org/biohack/students/Valeria%20Iovino/)
+  * [Francesco Guarino](http://officine.romamakers.org/biohack/students/francesco%20guarino%20bio%20hack/)
+  * [Nome Cognome](http://officine.romamakers.org/biohack/students/nome_cognome/)
