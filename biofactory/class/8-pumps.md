@@ -10,9 +10,10 @@ The microbes in your bioreactor need fresh food. Let’s get rid of the manual f
 
 ## Schedule
 
-* [Metabolic networks & flux analysis](/biofactory/class/8-pumps/pdf/1 Metabolic Flux Analysis.pdf)
-* [Mechanical drive materials](/biofactory/class/8-pumps/pdf/2 Mechanical Design.pdf)
-* [Pump designs](/biofactory/class/8-pumps/pdf/3 Pumps design.pdf)
+* [Metabolic networks & flux analysis](/biofactory/class/8/pdf/1 Metabolic Flux Analysis.pdf)
+* [Mechanical drive materials](/biofactory/class/8/pdf/2 Mechanical Design.pdf)
+* [Pump designs](/biofactory/class/8/pdf/3 Pumps design.pdf)
+
 
 ## Pump Designs
 

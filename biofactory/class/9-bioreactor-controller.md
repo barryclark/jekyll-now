@@ -10,7 +10,7 @@ Now that we have constructed pumps, stirrers and a spectrometer we can start con
 
 ## Schedule
 
-* [Bioreactor Controller](/biofactory/class/9-bioreactor-controller/pdf/1 Bioreactor Controller.pdf)
+* [Bioreactor Controller](/biofactory/class/9/pdf/1 Bioreactor Controller.pdf)
 
 ## Reactor Controller Design
 
