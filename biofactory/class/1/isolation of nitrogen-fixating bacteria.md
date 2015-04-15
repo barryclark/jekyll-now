@@ -10,8 +10,8 @@ N<sub>2</sub> is a gas that ubiquitously available in the atmosphere. Some speci
 
 ## Materials
 
-* 100 mL of [Azotobacter medium](http://127.0.0.1:4000/biofactory/annex/cultivation-media/azotobacter-medium/)
-* 1 [Azotobacter Agar](http://127.0.0.1:4000/biofactory/annex/cultivation-media/azotobacter-agar/) plate
+* 100 mL of [Azotobacter medium](/biofactory/annex/cultivation-media/azotobacter-medium/)
+* 1 [Azotobacter Agar](/biofactory/annex/cultivation-media/azotobacter-agar/) plate
 * 3 100 mL erlenmeyer flasks
 * Soil
 * Nitrogen test strips

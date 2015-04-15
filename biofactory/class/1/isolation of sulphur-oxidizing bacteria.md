@@ -10,7 +10,7 @@ Some bacteria can grown without any organic compound, except CO<sub>2</sub>. The
 
 ## Materials
 
-* 100 mL of [THt](http://127.0.0.1:4000/biofactory/annex/cultivation-media/tht/)
+* 100 mL of [THt](/biofactory/annex/cultivation-media/tht/)
 * 3 50 mL erlenmeyer flasks
 * Soil
 * pH test strips
