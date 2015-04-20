@@ -13,6 +13,6 @@
     <meta name="author" content="{{ site.name }}" />
 
     {% if page.title %}
-    <meta property="og:title" content="{{ page.title }}" />
-    <meta property="twitter:title" content="{{ page.title }}" />
+    <meta property="og:title" content="{{ page.title }}{% if paginator.page > 1 %} - Page {{ paginator.page }}{% endif %}" />
+    <meta property="twitter:title" content="{{ page.title }}{% if paginator.page > 1 %} - Page {{ paginator.page }}{% endif %}" />
     {% endif %}
