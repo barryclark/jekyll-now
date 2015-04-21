@@ -16,4 +16,4 @@ permalink: /people/
 
 ## This could be you!
 
-* We are [hiring]({% post_url 2015-04-21-hiring %})
+* We are [hiring]({% post_url 2015-4-21-Hiring %})
