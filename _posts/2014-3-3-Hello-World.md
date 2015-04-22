@@ -1,7 +1,13 @@
 ---
 layout: post
-title: You're up and running!
+title: Jekyll Actually Works
+published: true
 ---
+
+Wow. After struggling with the instructions, I finally got Jekyll running. This is going to be interseting.
+
+
+
 
 Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
 
