@@ -33,8 +33,6 @@ This pump is best for moving small volumes of liquids.
 * Syringe pump design
   * [Github repository (including code and wiring)](https://github.com/BioHackAcademy/BHA_SyringePump)
   * [Github repository (as ZIP)](https://github.com/BioHackAcademy/BHA_SyringePump/archive/master.zip)
-  * [SketchUp assembly](https://github.com/BioHackAcademy/BHA_SyringePump/blob/master/Syringe-Pump-Sketchup.skp?raw=true)
-  * [SVG laser cut files](https://raw.githubusercontent.com/BioHackAcademy/BHA_SyringePump/master/syringe-pump-lasercut.svg)
 
 ![Syringe Pump](https://raw.githubusercontent.com/BioHackAcademy/BHA_SyringePump/master/Syringe-Pump.png)
 
@@ -46,7 +44,6 @@ Peristaltic pumps are best used in continious flow systems or for pumping large 
   * [Building guide](/biofactory/class/8-pumps/peristaltic-pump-building-guide/) 
   * [Github Repository (including code and wiring)](https://github.com/BioHackAcademy/BHA_PeristalticPump)
   * [Download repository as ZIP](https://github.com/BioHackAcademy/BHA_PeristalticPump/archive/master.zip)
-  * [Sketchup design](https://github.com/BioHackAcademy/BHA_PeristalticPump/blob/master/Peristaltic-Pump-Sketchup.skp?raw=true)
 
 ![Peristaltic Pump Sketchup](/biofactory/class/8/Peristaltic-Pump.png)
 

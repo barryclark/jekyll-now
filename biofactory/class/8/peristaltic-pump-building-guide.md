@@ -47,12 +47,8 @@ To fix this, some RC filters can be added to the circuit to reduce the noise on 
 
 ![Debounce circuit](https://raw.githubusercontent.com/BioHackAcademy/BHA_PeristalticPump/master/RotaryEncoderDebounceCircuit.png)
 
-
-
 ## Links
 
-[Rotary encoder tutorial](http://bildr.org/2012/08/rotary-encoder-arduino/)
-
-* 
+* [Rotary encoder tutorial](http://bildr.org/2012/08/rotary-encoder-arduino/)
 
 Back to [Biofactory - Class 8:Syringe & Peristaltic Pumps](/biofactory/class/8-pumps/)
