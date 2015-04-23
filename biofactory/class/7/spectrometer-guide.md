@@ -18,6 +18,8 @@ Steps:
 This spectrometer uses the TSL1406R linear sensor array, which is basically a lot of photodiodes in a row. The sensor actually consists of 2 internal sensors which can be connected either in serial or in parallel mode. Both require a lot of connections however. We chose the serial mode and connected it to the arduino as shown below:
 ![Connection diagram](https://raw.githubusercontent.com/BioHackAcademy/BHA_Spectrophotometer/master/sensor%20pins.png)
 
+Capacitor: the data sheet of the sensor array specifies that a capacitor between pin 1 and 13 improves the performance. We recommend using 100 uF.
+
 Additionally, the LED was connected to pin A5, but ofcourse all of these pin assignments are changeable if you modify the Arduino sketch.
 
 Ofcourse there is a nicer way of connecting those pins, but we went for the quick and dirty approach:
