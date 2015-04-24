@@ -1,0 +1,14 @@
+
+.profile-photo {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profile-photo img {
+    max-width: 100%;
+}
+.person-name {
+    font-family: Verdana,"Helvetica Neue", Helvetica, Arial, sans-serif;
+}
