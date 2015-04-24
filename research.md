@@ -10,12 +10,11 @@ We design __statistical models__ and __machine learning methods__ specialized fo
 
 How is information represented in the *noisy* spatio-temporal pattern of neural activity?
 
-* Data-driven neural encoding model (Visual, olfactory, auditory, tactile)
- * Generalized linear model
- * Generalized quadratic model
+* Data-driven neural encoding model (visual, olfactory, auditory, tactile)
+    * Generalized linear/quadratic model
 * Population model of neural spike trains
- * Universal binary model
- * Latent process model
+    * Universal binary model
+    * Latent process model
 
 ## Neural Computation and Dynamics
 
