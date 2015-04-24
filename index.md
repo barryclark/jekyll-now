@@ -1,6 +1,5 @@
 ---
 layout: page
-title: About
 permalink: /
 ---
 
@@ -15,10 +14,12 @@ See [research page](research) for details.
 * Alex Huk (University of Texas at Austin)
 * Jacob Yates (University of Texas at Austin)
 * Yuriy Bobkov (Whitney Marine Biology Lab)
-* Evan Archer (Columbia University)
-* Lars Büsing (Columbia University)
-* Jonathan Pillow (Princeton University)
+* [Evan Archer](http://www.evanarcher.com/) (Columbia University)
+* [Lars Büsing](http://www.gatsby.ucl.ac.uk/~lars/) (Columbia University)
+* [Jonathan Pillow](pillowlab.princeton.edu) (Princeton University)
 * Anqi Wu (Princeton University)
+* [Steven Van Vaerenbergh](http://gtas.unican.es/people/steven) (University of Cantabria)
+* [Sohan Seth](http://www.sohanseth.com/) (University of Edinburgh)
 
 ### Location
 

@@ -4,7 +4,9 @@ title: People
 permalink: /people/
 ---
 
-## PI: Il Memming Park
+{: .person-name }
+## Principal Investigator: Il Memming Park
+![I. Memming Park's photo](/images/Park.jpg){: .profile-photo }
 
 * Assistant Professor, Department of Neurobiology and Behavior, Stony Brook University
 * [Blog](http://memming.wordpress.com)
@@ -14,6 +16,9 @@ permalink: /people/
  * 2010–2014 postdoc with Jonathan Pillow (UT Austin)
  * 2006–2010 PhD under José C. Príncipe (University of Florida)
 
-## This could be you!
+{: .person-name }
+## Lab member #1
+![Cartoon MRI head](/images/MRI_brain_outline_memming.png){: .profile-photo }
 
-* We are [hiring]({% post_url 2015-4-21-Hiring %})
+* This could be you!
+* We are [hiring]({% post_url 2015-4-21-Hiring %})!!
