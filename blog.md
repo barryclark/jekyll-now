@@ -1,10 +1,10 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: Blog
+permalink: /blog/
 ---
 
-Some information about you!
+Blog page
 
 ### More Information
 

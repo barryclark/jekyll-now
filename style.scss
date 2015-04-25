@@ -18,7 +18,7 @@ html {
 }
 
 body {
-	background: $white;
+  background: rgba(198,194,194,0.1);
   font: 18px/1.4 $helvetica;
   color: $darkGray;
 }
@@ -192,29 +192,62 @@ img {
 
 .site-name {
   margin: 0;
-  color: $darkGray;
-  cursor: pointer;
-  font-family: $helveticaNeue;
+  /* font-family: $helveticaNeue; */
+  /* line-height: 93px; */
+
   font-weight: 300;
-  font-size: 28px;
   letter-spacing: 1px;
+  font-family: AvenirNext-UltraLight;
+  font-size: 68px;
+  color: $white;
+
 }
 
 .site-description {
-  margin: -5px 0 0 0;
+  /* margin: -5px 0 0 0;
   color: $gray;
-  font-size: 16px;
+  font-size: 16px; */
+
+  font-weight: 300;
+  font-family: AvenirNext-UltraLight;
+  font-size: 29px;
+  color: $white;
+  line-height: 40px;
 
   @include mobile {
     margin: 3px 0;
   }
 }
 
+.block-top {
+  position: relative;
+
+  .gradient {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    /* box-gradient: */
+    /* box-gradient: */
+    background: #7990AB;
+    background-image: linear-gradient(-135deg, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%);
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50), 0px 2px 4px 0px rgba(0,0,0,0.50);
+  }
+}
+
 nav {
-  float: right;
-  margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
-  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  /* background: transparent; */
+  /* opacity: 0.1; */
+  padding: 20px;
+
+  background: rgba(255,255,255,0.10);
+  text-transform: uppercase;
+
 
   @include mobile {
     float: none;
@@ -225,16 +258,136 @@ nav {
 
   a {
     margin-left: 20px;
-    color: $darkGray;
-    text-align: right;
     font-weight: 300;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
+
+    font-family: AvenirNext-Regular;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 1.66px;
+    line-height: 22px;
 
     @include mobile {
       margin: 0 10px;
       color: $blue;
     }
   }
+}
+
+.hero {
+  padding: 150px 0;
+  .btn-work {
+    background: transparent;
+    text-transform: uppercase;
+    margin: 50px 0;
+    padding: 10px 30px;
+
+    /* Button Background: */
+    border: 1px solid rgba(0,0,0,0.2);
+    /* box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.2); */
+    border-radius: 4px;
+
+    &:hover {
+      border: 1px solid rgba(255,255,255,0.7);
+      a {
+        color: rgba(255,255,255,0.8);
+      }
+    }
+
+    a {
+      font-family: AvenirNext-Medium;
+      font-size: 18px;
+      font-weight: 300;
+      color: rgba(0,0,0,0.4);
+      letter-spacing: 1.66px;
+      /* text-shadow: 0px 1px 0px rgba(0,0,0,0.5); */
+    }
+  } // btn-work
+}
+
+.block-featured-work {
+  z-index:2;
+  width: 100%;
+
+  .container {
+    margin-top: -100px;
+    background: white;
+    border-radius: 4px;
+    border: 1px solid rgba(151,151,151,0.3);
+
+
+    /* FEATURED WORK: */
+    h3 {
+      opacity: 0.5;
+      font-family: AvenirNext-Medium;
+      font-size: 24px;
+      font-weight: 300;
+      color: #000000;
+      letter-spacing: 1.66px;
+      text-transform: uppercase;
+      padding: 40px;
+    }
+  }
+}
+
+.featured-work-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+
+  .hexagon {
+    position: relative;
+    width: 170px;
+    height: 98.15px;
+    margin: 49.07px 0;
+  }
+
+  .hexagon:before,
+  .hexagon:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: 85px solid transparent;
+    border-right: 85px solid transparent;
+  }
+
+  .hexagon1:before {
+    bottom: 100%;
+    border-bottom: 49.07px solid #A4D7EF;
+  }
+
+  .hexagon1:after {
+    top: 100%;
+    width: 0;
+    border-top: 49.07px solid #A4D7EF;
+  }
+
+  .hexagon2:before {
+    bottom: 100%;
+    border-bottom: 49.07px solid #FFBDAB;
+  }
+
+  .hexagon2:after {
+    top: 100%;
+    width: 0;
+    border-top: 49.07px solid #FFBDAB;
+  }
+
+  .hexagon3:before {
+    bottom: 100%;
+    border-bottom: 49.07px solid #A3F3C5;
+  }
+
+  .hexagon3:after {
+    top: 100%;
+    width: 0;
+    border-top: 49.07px solid #A3F3C5;
+  }
+
+  .hexagon1 { background: #A4D7EF; }
+  .hexagon2 { background: #FFBDAB; }
+  .hexagon3 { background: #A3F3C5; }
 }
 
 //
