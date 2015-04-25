@@ -16,8 +16,10 @@
   </head>
 
   <body>
-    <div class="wrapper-masthead">
-      <div class="container">
+    <div class="hero" style="background-image: url({{ site.baseurl }}/images/beach.jpg">
+      </div>
+
+    <div class="container">
         <header class="masthead clearfix">
           <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
 
@@ -29,11 +31,10 @@
           <nav>
             <a href="{{ site.baseurl }}/">Blog</a>
             <a href="{{ site.baseurl }}/about">About</a>
+            <a href="{{ set.baseurl }}/timeline">Time Line</a>
           </nav>
         </header>
       </div>
-    </div>
-
     <div id="main" role="main" class="container">
       {{ content }}
     </div>
