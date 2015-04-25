@@ -36,7 +36,7 @@
     </section>
 
     <section class="block-featured-work">
-      <div class="container">
+      <div class="container main">
         <h3>featured work</h3>
         <div class="featured-work-inner">
           <div class="hexagon hexagon1"></div>
@@ -44,6 +44,18 @@
           <div class="hexagon hexagon3"></div>
         </div>
       </div>
+
+      <div class="container post">
+        {% for post in site.posts limit:1 %}
+          <h3 class="latest-post-title">{{ post.title }}</h3>
+          <p class="latest-post-date">{{ post.date | date: "%d %B %Y" }}</p>
+          <div class="content-post">
+            <p>{{ post.content |truncatehtml | truncatewords: 60 }}</p>
+          </div>
+        {% endfor %}
+        <!-- {{ content }} -->
+      </div>
+
     </section>
 
     <!-- <div class="wrapper-masthead">
@@ -74,6 +86,16 @@
       </div>
     </div>
 
-    {% include analytics.html %}
-  </body> -->
+    {% include analytics.html %} -->
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          <span>&copy; {{ site.time | date: '%Y' }} Dawit Elias &middot; All rights reserved</span>
+          {% include svg-icons.html %}
+        </footer>
+      </div>
+    </div>
+
+  </body>
 </html>

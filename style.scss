@@ -18,7 +18,7 @@ html {
 }
 
 body {
-  background: rgba(198,194,194,0.1);
+  background: rgb(245,245,245);
   font: 18px/1.4 $helvetica;
   color: $darkGray;
 }
@@ -150,7 +150,7 @@ img {
 // .masthead
 //
 
-.wrapper-masthead {
+/* .wrapper-masthead {
   margin-bottom: 50px;
 }
 
@@ -178,7 +178,7 @@ img {
   img {
     border-radius: 5px;
   }
-}
+} */
 
 .site-info {
   float: left;
@@ -201,13 +201,19 @@ img {
   font-size: 68px;
   color: $white;
 
+  @include mobile {
+    width: 90%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 }
 
 .site-description {
   /* margin: -5px 0 0 0;
   color: $gray;
   font-size: 16px; */
-
   font-weight: 300;
   font-family: AvenirNext-UltraLight;
   font-size: 29px;
@@ -215,7 +221,10 @@ img {
   line-height: 40px;
 
   @include mobile {
-    margin: 3px 0;
+    width: 90%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -229,31 +238,39 @@ img {
     width: 100%;
     height: 100%;
     /* box-gradient: */
-    /* box-gradient: */
     background: #7990AB;
-    background-image: linear-gradient(-135deg, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%);
-    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50), 0px 2px 4px 0px rgba(0,0,0,0.50);
+    background-image: -webkit-linear-gradient(225deg, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%);background-image: linear-gradient(-135deg, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%);
   }
 }
 
 nav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+          justify-content: flex-end;
   width: 100%;
   /* background: transparent; */
   /* opacity: 0.1; */
-  padding: 20px;
+  padding: 10px 40px 10px 10px;
 
   background: rgba(255,255,255,0.10);
   text-transform: uppercase;
 
 
   @include mobile {
-    float: none;
-    margin-top: 9px;
-    display: block;
-    font-size: 16px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size: 14px;
   }
 
   a {
@@ -262,15 +279,10 @@ nav {
     letter-spacing: 2px;
 
     font-family: AvenirNext-Regular;
-    font-size: 16px;
+    font-size: 14px;
     color: #FFFFFF;
     letter-spacing: 1.66px;
     line-height: 22px;
-
-    @include mobile {
-      margin: 0 10px;
-      color: $blue;
-    }
   }
 }
 
@@ -284,8 +296,15 @@ nav {
 
     /* Button Background: */
     border: 1px solid rgba(0,0,0,0.2);
-    /* box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.2); */
+    box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.2);
     border-radius: 4px;
+
+    @include mobile {
+      width: 90%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
     &:hover {
       border: 1px solid rgba(255,255,255,0.7);
@@ -300,7 +319,6 @@ nav {
       font-weight: 300;
       color: rgba(0,0,0,0.4);
       letter-spacing: 1.66px;
-      /* text-shadow: 0px 1px 0px rgba(0,0,0,0.5); */
     }
   } // btn-work
 }
@@ -309,32 +327,74 @@ nav {
   z-index:2;
   width: 100%;
 
-  .container {
+  .container h3 {
+    font-family: AvenirNext-Medium;
+    font-size: 24px;
+    font-weight: 300;
+    color: rgba(0,0,0,0.5);
+    letter-spacing: 1.66px;
+    text-transform: uppercase;
+    padding: 40px;
+    margin-top: 25px;
+  }
+
+  .container.main {
+    padding: 0;
     margin-top: -100px;
-    background: white;
-    border-radius: 4px;
-    border: 1px solid rgba(151,151,151,0.3);
+    background: $white;
+    border-radius: 6px;
+		box-shadow: 0 2px 0 0 #e5e5e5;
+    border: 1px solid rgba(151,151,151,0.1);
+  }
 
+  .container.post {
+    padding: 0;
+    margin: 40px auto;
+    background: $white;
+    border-radius: 6px;
+		box-shadow: 0 2px 0 0 #e5e5e5;
+    border: 1px solid rgba(151,151,151,0.1);
 
-    /* FEATURED WORK: */
-    h3 {
-      opacity: 0.5;
+    .latest-post-title {
+      padding-bottom: 0;
+    }
+
+    .latest-post-date {
+      padding: 0 40px;
+      color: rgba(0,0,0,0.7);
       font-family: AvenirNext-Medium;
-      font-size: 24px;
-      font-weight: 300;
-      color: #000000;
-      letter-spacing: 1.66px;
-      text-transform: uppercase;
-      padding: 40px;
+      font-size: 14px;
     }
   }
 }
 
+.content-post {
+  padding: 20px 40px 40px 40px;
+}
+
 .featured-work-inner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+          flex-direction: row;
   width: 100%;
+  padding-bottom: 40px;
+  margin-bottom: 25px;
 
   .hexagon {
     position: relative;
@@ -425,15 +485,44 @@ nav {
 }
 
 .wrapper-footer {
-  margin-top: 50px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
+  margin-top: 40px;
+  border-top: 1px solid rgb(248,248,248);
+  background: rgb(253,253,253);
 }
 
 footer {
-  padding: 20px 0;
-  text-align: center;
+  padding: 10px 0;
+  font-size: 14px;
+  color: rgba(0,0,0,0.6);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+          flex-direction: row;
+
+  span {
+    margin-right: 40px;
+  }
+
+  a {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
