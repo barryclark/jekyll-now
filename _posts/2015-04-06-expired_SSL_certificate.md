@@ -3,9 +3,9 @@ layout: post
 title: Expired SSL certificate
 ---
 
-Oops! We forgot to update our SSL certificate before it expired. This means you will get a warning in your web browser when you try to access our wiki or forum.
+Oops! We didn't update our SSL certificate before it expired. This means you will get a warning in your web browser when you try to access our wiki or forum.
 
-We are working on getting a new SSL certificate - please bear with us.
+We are working on getting a new SSL certificate - please bear with us. We are waiting on the issuer (GlobalSign) to repond.
 
 Until then, if you use Firefox you can try a 'private window' which may allow you to add an exception to ignore the expired certificate. You could also try a different web browser, as different browsers treat the issue in different ways.
 
