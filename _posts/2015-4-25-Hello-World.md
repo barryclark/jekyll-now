@@ -1,11 +1,8 @@
 ---
 layout: post
-title: Welcome to my lab
+title: Welcome to the Wheeler Computational Biology Lab
 ---
 
-Hello world!
-
-<!-- ![_config.yml]({{ site.baseurl }}/images/config.png) -->
-![](https://raw.githubusercontent.com/hwheeler01/PrediXcan/master/Paper-Scripts/Heather/make-figures/Fig3_compareR2_h2_en_poly_top.png)
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
-
+We want to better understand how genetic variation leads to phenotypic variation for complex traits including disease susceptibility and drug response. 
+We develop systems approaches to complex trait prediction, building computational models that leverage and integrate similarity in genetic, transcriptomic or other omics-level data.
+<a href="{{ site.baseurl }}/research">READ MORE</a>
