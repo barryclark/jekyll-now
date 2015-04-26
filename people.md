@@ -4,11 +4,23 @@ title: People
 permalink: /people/
 ---
 
-| Tables        	 | Are           | Cool  |
-| ------------- 	 |:-------------:| -----:|
-| Heather       	 | right-aligned | $1600 |
-| ![alt text][logo]      | centered      |   $12 |
-| zebra stripes 	 | are neat      |    $1 |
+<table width="500" border="0" cellpadding="5">
 
+<tr>
 
-[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2"
+<td align="center" valign="center">
+<img src="images/8584221.jpeg" alt="description here" />
+<br />
+Caption text centered under the image.
+</td>
+
+<td align="center" valign="center">
+<img src="http://yoursite.com/images/filename.jpg" alt="description here" />
+<br />
+Caption text centered under the image.
+</td>
+
+</tr>
+
+</table>
+
