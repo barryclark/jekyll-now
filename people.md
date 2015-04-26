@@ -7,7 +7,7 @@ permalink: /people/
 
 <figure>
     <a href="../images/filename">
-       <img width=200 height=200 src="{{ site.baseurl }}/images/DNA1.png" float:left;>
+       <img width=200 height=200 src="{{ site.baseurl }}/images/DNA1.png" float: left;>
     </a>
 <figcaption>
     <b>Heather E. Wheeler, Principal Investigator</b><br>
