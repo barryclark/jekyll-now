@@ -1,4 +1,3 @@
-
 ---
 layout: page
 title: People
@@ -28,4 +27,3 @@ permalink: /people/
 </figcaption>
 </figure>
 
-<br>
