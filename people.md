@@ -1,3 +1,4 @@
+
 ---
 layout: page
 title: People
@@ -26,3 +27,11 @@ permalink: /people/
     About Lab Member 1
 </figcaption>
 </figure>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
