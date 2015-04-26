@@ -14,7 +14,7 @@ permalink: /people/
 <figcaption>
 	Heather is an Assistant Professor at Loyola University Chicago with a joint appointment in the Departments of Biology and Computer Science. Before joining Loyola in 2015, she was a Postdoctoral Fellow at The University of Chicago. Heather holds a Ph.D. in Genetics from Stanford University and a B.A. in Biology from Hamline University.
 </figcaption>
-</figure>
+</figure>  
 
 
 
@@ -31,9 +31,8 @@ permalink: /people/
 <figcaption>
         Heather is an Assistant Professor at Loyola University Chicago with a joint appointment in the Departments of Biology and Computer Science. Before joining Loyola in 2015, she was a Postdoctoral Fellow at The University of Chicago. Heather holds a Ph.D. in Genetics from Stanford University and a B.A. in Biology from Hamline University.
 </figcaption>
-</figure>
+</figure>  
 
-<p>
-</p>
+
 
 
