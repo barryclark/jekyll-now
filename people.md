@@ -31,4 +31,22 @@ permalink: /people/
 <br>
 <br>
 <br>
+<br>
+<br>
 
+
+**Lab Member 2**
+
+<figure>
+    <a href="../images/filename">
+        <img src="{{ site.baseurl }}/images/DNA1.png" width="150px" height="150px" align="left"/>
+    </a>
+<figcaption>
+        Lab member info
+</figcaption>
+</figure>
+<br>
+<br>
+<br>
+<br>
+<br>
