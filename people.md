@@ -16,6 +16,8 @@ permalink: /people/
 </figure>
 <br>
 
+---
+
 **Lab Member 1**
 
 <figure>
@@ -28,6 +30,8 @@ permalink: /people/
 </figure>
 <br>
 
+---
+
 **Lab Member 2**
 
 <figure>
@@ -38,6 +42,7 @@ permalink: /people/
     About Lab Member 2
 </figcaption>
 </figure>
-<br>
+
+---
 
 **You?**
