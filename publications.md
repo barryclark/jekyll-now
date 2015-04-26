@@ -5,7 +5,6 @@ permalink: /publications/
 ---
 
 
-### Publications
 
 Diouf B, Crews KR, Lew G, Pei D, Cheng C, Bao J, Zheng JJ, Yang W, Fan Y, <b>Wheeler HE</b>, Wing C, Delaney SM, Komatsu M, Paugh SW, McCorkle JR, Lu X, Winick NJ, Carroll WL, Loh ML, Hunger SP, Devidas M, Pui CH, Dolan ME, Relling MV, Evans WE. (2015) Association of an inherited genetic variant with vincristine-related peripheral neuropathy in children with acute lymphoblastic leukemia. JAMA 313(8):815-823. PMCID: PMC4377066
 
