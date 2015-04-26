@@ -13,3 +13,8 @@ permalink: /people/
     Caption to image
 </figcaption>
 </figure>
+
+
+![Step 1](/images/DNA1.png "Step 1")
+Heather E. Wheeler, Assistant Professor
+PhD 2010, Stanford University
