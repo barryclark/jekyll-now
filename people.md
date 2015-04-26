@@ -7,10 +7,10 @@ permalink: /people/
 
 <figure>
     <a href="../images/filename">
-       <img width=50 height=50 src="{{ site.baseurl }}/images/DNA3.png" alt="Heather E. Wheeler<br>PhD 2010, Stanford University">
+       <img width=50 height=50 src="{{ site.baseurl }}/images/DNA3.png">
     </a>
 <figcaption>
-    Caption to image
+    "Heather E. Wheeler<br>PhD 2010, Stanford University"
 </figcaption>
 </figure>
 
