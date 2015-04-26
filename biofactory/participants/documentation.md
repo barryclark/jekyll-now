@@ -36,3 +36,5 @@ permalink: /biofactory/participants/documentation/
   * [Valeria Iovino](http://officine.romamakers.org/biohack/students/Valeria%20Iovino/)
   * [Francesco Guarino](http://officine.romamakers.org/biohack/students/francesco%20guarino%20bio%20hack/)
   * [Nome Cognome](http://officine.romamakers.org/biohack/students/nome_cognome/)
+* Rio de Janeiro
+  * [Willian](http://wilmaker.github.io)
