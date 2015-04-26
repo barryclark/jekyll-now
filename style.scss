@@ -218,7 +218,7 @@ img {
   font-family: AvenirNext-UltraLight;
   font-size: 29px;
   color: $white;
-  line-height: 40px;
+  margin: 0;
 
   @include mobile {
     width: 90%;
