@@ -9,7 +9,7 @@ permalink: /people/
 <tr>
 
 <td align="center" valign="center">
-<img src="images/8584221.jpeg" alt="description here" />
+<img src="{{ site.baseurl }}/images/DNA1.png" alt="description here" />
 <br />
 Caption text centered under the image.
 </td>
