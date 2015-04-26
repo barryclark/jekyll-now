@@ -28,10 +28,4 @@ permalink: /people/
 </figcaption>
 </figure>
 
-
-<br>
-<br>
-<br>
-<br>
-<br>
 <br>
