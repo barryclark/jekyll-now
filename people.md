@@ -4,6 +4,10 @@ title: People
 permalink: /people/
 ---
 
+TR {
+    text-align: middle;
+}
+
 <CENTER>
 <TABLE BORDER="0" CELLSPACING="1" CELLPADDING="2" ALIGN="middle">
 <TR>
