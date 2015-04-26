@@ -4,23 +4,16 @@ title: People
 permalink: /people/
 ---
 
-<table width="500" border="0" cellpadding="5">
-
-<tr>
-
-<td align="center" valign="center">
-<img src="{{ site.baseurl }}/images/DNA1.png" alt="description here" />
-<br />
-Caption text centered under the image.
-</td>
-
-<td align="center" valign="center">
-<img src="http://yoursite.com/images/filename.jpg" alt="description here" />
-<br />
-Caption text centered under the image.
-</td>
-
-</tr>
-
-</table>
+<CENTER>
+<TABLE BORDER="0" CELLSPACING="1" CELLPADDING="2" ALIGN="Center">
+<TR>
+<TD><IMG BORDER="0" WIDTH="200" HEIGHT="200" SRC="{{ site.baseurl }}/images/DNA1.png"></TD>
+<TD><B>Heather E. Wheeler, Assistant Professor<br>PhD 2010, Stanford University</B></TD>
+</TR>
+<TR>
+<TD><IMG BORDER="0" WIDTH="200" HEIGHT="200" SRC="{{ site.baseurl }}/images/DNA1.png"></TD>
+<TD><B>Lab Member</B></TD>
+</TR>
+</TABLE>
+</CENTER>
 
