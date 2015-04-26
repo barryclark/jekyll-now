@@ -11,7 +11,7 @@ permalink: /people/
     </a>
 <figcaption>
     <b>Heather E. Wheeler, PhD</b><br>
-	She is an Assistant Professor at Loyola University Chicago, with a joint appointment in the Departments of Biology and Computer Science. Before joining Loyola in 2015, Ran was a Postdoctoral Fellow at The University of Chicago. Heather holds a Ph.D. in Genetics from Stanford University.
+	She is an Assistant Professor at Loyola University Chicago, with a joint appointment in the Departments of Biology and Computer Science. Before joining Loyola in 2015, Heather was a Postdoctoral Fellow at The University of Chicago. Heather holds a Ph.D. in Genetics from Stanford University and a B.A. in Biology from Hamline University.
 </figcaption>
 </figure>
 
