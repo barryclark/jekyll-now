@@ -16,10 +16,9 @@ permalink: /people/
 </figcaption>
 </figure>  
 
-
-
-
-
+<p></p>
+<p></p>
+<p></p>
 
 
 **Heather E. Wheeler, Principal Investigator**
@@ -33,6 +32,8 @@ permalink: /people/
 </figcaption>
 </figure>  
 
-
+<p></p>
+<p></p>
+<p></p>
 
 
