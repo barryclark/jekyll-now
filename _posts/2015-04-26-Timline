@@ -1,0 +1,123 @@
+
+# Snapshot Timeline
+By  Ranjith Tellis and Shiemi Lim
+
+### Objective
+----------------------------------------------------
+1. New Visualization
+2. Implement using widely used technology
+3. Meaningful to our field of work Adverting, Healthcare
+
+ 
+
+### Ground work:
+----------------------------------------------------
+1.       Visualizing events over a period of time.
+2.       Scouted how certain timelines are visualized.
+    * Facebook timeline
+    * Twitter timeline
+    * Linear one dimensional timeline of events occurred (Patient data).
+
+3.       How to visualize events such as these?
+    * Advertisement strategy
+    * Patient clinical data
+
+4.       Generalize visualization to any events over a period of time.
+
+### Mockup:
+----------------------------------------------------
+
+### Demo:
+----------------------------------------------------
+1.       Full timeline of Patient data.
+2.       Exlpanation of Patient data set.
+3.       Highlight different events.
+4.       Modify some data to demonstrate data is retrieved dynamically.
+5.       Change data source to advertising data to demonstrate its data agnostic.
+
+
+
+### Key features:
+----------------------------------------------------
+1.       Framework to visualize timeline data.
+2.       Developed using Html5, JavaScript & D3 library.
+3.       Data abstracted from visualization code.
+
+ 
+
+### Technical concepts:
+----------------------------------------------------
+1.       Create timeline axis.
+2.       Map events to timeline and vice-versa.
+3.       Create shapes in SVG
+
+ 
+### Technical Challenges:
+----------------------------------------------------
+1.       Zoom: Add a background rectangle.
+2.       Removing existing elements.
+
+
+### Future enhancements:
+----------------------------------------------------
+1.       Visualize events further apart in single view port.
+2.       Visualize related events.
+3.       Fix nitty-gritty issues overlapping events, text overflow, aesthetics.
+
+
+### Summary
+----------------------------------------------------
+Software development life cycle:
+
+1.       Agile development.
+a.       Created sprint/backlog.
+2.       Pair programming.
+
+
+
+----------------------------------------------------
+
+### OBSERVATION:
+In many industries, we often need to find some quick visualization of events. Currently, the visualizations out there are some you are probably familiar with. Facebook has a timeline of events, that people and other people can post.  
+
+Twitter streams tweets of thoughts of users. Just as these are useful for Social Media, we started thinking about whether there is  a way to visualize events on a timeline that would help industries. 
+
+Facebook: 
+![alt text](https://github.com/Shemster/shemster.github.io/blob/master/images/sketch.png "Logo Title Text 1")
+
+Twitter: 
+![alt text](https://github.com/Shemster/shemster.github.io/blob/master/images/timelimetwitter.png "Logo Title Text 1")
+
+
+Take for example, in healthcare, a patient’s medical history is recorded on a computer as a list. The current protocol is for a doctor to open up this patient’s file on the computer scroll down the list and investigate the patients history, 
+and then to make a treatment decision. Say in a case where the patient has cancer. 
+
+The list of history of this patient may include remission, the timeline of medication prescribed, treatment period etc. To have a visual snapshot timeline instead of a list of these events can help the doctor process the information faster. 
+
+Similarily, in the media industry.the decision by a media planner to buy ads for a client at a certain time can depend on what ads and when it was bought the last time.  A quick way to visualize what was used before could help give an idea of what was spend last time. 
+
+So our product that we created was called Snapshot Timeline, a dtime line that could make use for different events. 
+
+* [A link to the file](file:///Users/shiemi/Desktop/R/cheatsheets/Timeline-1.htm)
+
+Early sketch of the product:
+
+
+How it works: 
+```sh
+      return data.EventLocationType == "flag";
+                })
+                .append("rect")
+                    .attr("class", "eventFlag")
+                    .attr("width", 70)
+                    .attr("height", 20)
+                    .attr("transform", function (d) {
+                        return "translate(" + (x(parseDate(d.Date))) + "," + hEventFlag + ")";
+                    })
+                .append("svg:title")
+                    .text(function (d) { 
+                        return d.Date + "\n" + d.Description; });
+                    
+            eventCEnter
+```
+
