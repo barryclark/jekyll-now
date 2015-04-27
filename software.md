@@ -14,4 +14,4 @@ permalink: /software/
 
 <a href="https://github.com/hakyimlab/PrediXcan">GitHub Repository</a>
 
-<a href="http://www.ashg.org/2014meeting/abstracts/fulltext/f140121915.htm">2014 ASHG Abstract</a>
+Publication under revision
