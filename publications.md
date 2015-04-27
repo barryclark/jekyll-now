@@ -71,4 +71,4 @@ Wen Y, Gorsic LK, <b>Wheeler HE</b>, Ziliak DM, Huang RS, Dolan ME. (2011) Chemo
 <b>Wheeler HE</b>, Metter EJ, Tanaka T, Absher D, Higgins J, Zahn JM, Wilhelmy J, Davis RW, Singleton A, Myers RM, Ferrucci L, Kim SK. (2009) Sequential use of transcriptional profiling, expression quantitative trait mapping and gene association implicates MMP20 in human kidney aging. PLoS Genetics 5(10): e1000685. <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=PMC2752811">PMC</a>
 
 
-<a href="{{ site.baseurl }}/oldpubs.md">Old Pubs</a>
+<a href="{{ site.baseurl }}/publications/oldpubs.md">Older</a>
