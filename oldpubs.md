@@ -1,5 +1,7 @@
 ---
 layout: page
+title: Older publications
+permalink: /oldpubs/
 ---
 
 ###2012
