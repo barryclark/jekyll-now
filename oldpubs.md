@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Older publications
-permalink: {{ site.baseurl }}/oldpubs/
+permalink: {{ site.baseurl }}/publications/oldpubs/
 ---
 
 ###2012
