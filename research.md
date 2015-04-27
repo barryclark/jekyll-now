@@ -4,6 +4,25 @@ title: Research
 permalink: /research/
 ---
 
-###Project 1
+Genome-wide analyses of the past few years have revealed that a substantial portion of the genetic control of complex traits is exerted through the regulation of gene expression. Much of the genetic variation associated with complex traits falls outside the protein coding regions of genes. Mechanistic understanding of how this variation contributes to phenotype is lacking, but gene regulation is thought to play a major role. We develop and apply methods that fully harness gene regulation within complex trait association and prediction studies.
 
-###Project 2
+##OmicKriging
+
+We have developed a novel systems approach to complex trait prediction, which leverages and integrates similarity in genetic, transcriptomic or other omics-level data. Our method called OmicKriging (published in Genetic Epidemiology) emphasizes the use of a wide variety of systems-level data, such as those increasingly made available by comprehensive surveys of the genome, transcriptome and epigenome, for complex trait prediction. Using an LCL growth phenotype, we have shown that integrating mRNA and microRNA expression data substantially increases prediction performance over either dataset or genetic data alone. 
+
+Add Fig 2
+
+##PrediXcan
+
+We have developed a gene-based association method called PrediXcan that directly tests the molecular mechanisms through which genetic variation affects phenotype. The approach estimates the component of gene expression determined by an individual’s genetic profile and correlates the “imputed” gene expression with the phenotype under investigation to identify genes associated with the phenotype. The genetically regulated gene expression is estimated using whole-genome tissue-dependent prediction models trained with reference transcriptome datasets. The PrediXcan novel gene-based test is focused on the mechanism of gene regulation and comes with key information on direction of effect (i.e. whether high or low gene expression is associated with disease risk). Directional information can help to close in on potential drug targets.
+
+Add Fig 1
+
+##Future research
+
+For our future research, we will apply and extend methods like OmicKriging and PrediXcan using data available to the public and researchers from databases like the Gene Expression Omnibus (GEO), the database of Genotypes and Phenotypes (dbGaP), The Cancer Genome Atlas (TCGA), and the European Genome-Phenome Archive (EGA). These databases contain genome-wide genotype (genotyping array and exome sequencing) and gene expression (microarray and RNA-seq) datasets. Many funding sources (including the NIH) require database deposition of genome-wide datasets and thus the amount of data available will continue to grow. Combining gene expression data and multiple variants within a gene or pathway may reveal new genetic associations with a particular phenotype that were not discovered in an original association study where the genetic variants were analyzed singly. In addition, combining gene expression and genetic association data from multiple different studies may reveal new associations that were missed by single investigations. Because so much data is publicly available, students interested in joining our lab could potentially choose to study traits and diseases that interest them while learning how to mine the data and perform computational analyses. 
+
+##Collaborators
+
+Haky Im Lab
+
