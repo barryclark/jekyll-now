@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+<head>
+    <title>Time line</title>
+    <script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
+    <style type="text/css">
+        body
+        {
+            font: 12px sans-serif;
+        }
+        
+        .axis path, .axis line
+        {
+            fill: none;
+            stroke: #000;
+            shape-rendering: crispEdges;
+        }
+        
+        .x.axis path
+        {
+            fill: none;
+            stroke: #000;
+            shape-rendering: crispEdges;
+        }
+        
+        .lineEventFlag
+         {
+            stroke: Red;            
+         }
+        .lineEventBtm
+         {
+            stroke: Blue;            
+         }
+         .lineEventTop
+         {
+            stroke: Orange;            
+         }
+        .eventC
+        {
+            opacity: 0.4;
+        }
+        .eventC:hover
+        {
+            opacity: 1;
+        }
+        .eventFlag
+        {            
+            opacity: 0.6;
+            fill: Red;
+        }
+        .eventBg
+        {            
+            opacity: 0.4;
+            fill: Lime;
+        }  
+        .eventTop
+        {   
+            opacity: 0.6;
+            fill: Orange;
+        }
+        .eventBtm
+        {   
+            opacity: 0.6;
+            fill: Blue;
+        }      
+        .rectForZoom {
+          fill: #fff;
+        }
+    </style>
+</head>
+<body>
+    <script type="text/javascript">
+        var id = (function () { return function () { var a = 0; return a++ } })();
+
+        function centerinparent(element) { //only works for SVG elements
+            var bbox = element.getBBox();
+            var parentwidth = element.parentNode.width.baseVal.value;
+            var parentheight = element.parentNode.height.baseVal.value;
+            var newwidth = ((parentwidth / 2) - (bbox.width / 2)) - 2; //i start everything off by 2 to account for line thickness
+            var newheight = ((parentheight / 2) - (bbox.height / 2)) - 2;
+            //need to adjust for line thickness??
+
+            if (element.classList.contains("textclass")) { //text is origined from bottom left, whereas everything else origin is top left
+                newheight += bbox.height; //move it down by its height
+            }
+
+            element.setAttributeNS(null, "transform", "translate(" + newwidth + "," + newheight + ")");
+            // console.log("centering BOXES:  between width:"+element.parentNode.width.baseVal.value + "   height:"+parentheight);
+            // console.log(bbox);
+        }
+
+        // set the stage for the visualization
+        var margin = { top: 20, right: 80, bottom: 30, left: 50 },
+        w = 1000 - margin.left - margin.right,
+        h = 250 - margin.top - margin.bottom,
+        totW = w + margin.left + margin.right,
+        totH = h + margin.top + margin.bottom,
+        hEventBtm = h - 75;
+        hEventTop = hEventBtm - 50;
+        hEventFlag = hEventTop - 50;
+        hEventBg = h;
+        x = d3.time.scale().range([0, w]),
+        parseDate = d3.time.format("%m/%d/%Y").parse;
+
+        var isStandAlone = false;
+        timelineData = "ImagingData.csv";
+
+        var color = d3.scale.category10(); // to generate a different color for each line
+
+        // to be used later
+        var allEvents,
+        filtered,
+        transpose;
+        
+        // define the x axis and its class, append it to svg 
+        var xAxis = d3.svg.axis()
+        .scale(x)
+        .orient("bottom")
+               
+       var zoom = d3.behavior.zoom()
+        .x(x)        
+        .on("zoom", redraw);
+
+        // add svg box where viz will go    
+        var svg = d3.select("body").append("svg")
+        .attr("width", totW)
+        .attr("height", totH)
+        .append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
+        .call(zoom); ;
+
+        svg.append("svg:g")
+        .attr("class", "x axis");
+
+        svg.append("rect")
+    .attr("width", w)
+    .attr("height", h)
+    .attr("class", "rectForZoom");
+
+        if (isStandAlone) {
+            allEvents = [{ Date: "6/5/2009", Description: "Description comes here", EndDate: "", EventLocationType: "bottom", HeaderText: "Bottom event", Result: "+ve" },
+            { Date: "11/15/2010", Description: "Description comes here", EndDate: "", EventLocationType: "flag", HeaderText: "Flag event", Result: "-ve" },
+            { Date: "12/5/2009", Description: "Description comes here", EndDate: "12/7/2010", EventLocationType: "background", HeaderText: "Background event", Result: "" },
+            { Date: "6/5/2012", Description: "Description comes here", EndDate: "", EventLocationType: "top", HeaderText: "Top event", Result: "~" },
+            ];
+            draw();
+        } else {
+            // put data from csv into allEvents variable
+            //run draw function that will refresh whenever a new data is available
+            d3.csv(timelineData, function (csv) {
+                allEvents = csv;
+                draw();
+            });
+        }
+        
+        function redraw() {
+            svg.select("g.x.axis").call(xAxis);            
+            svg.selectAll(".eventGp").remove();            
+            drawEvents();
+        }
+
+        var toDate;
+        var fromDate;
+        function filterByDate(obj) {
+            if ('Date' in obj && parseDate(obj.Date) >= fromDate && parseDate(obj.Date) <= toDate) {
+            return true;
+          } else {            
+            return false;
+          }
+        }
+
+        function drawEvents() {
+            var domainX = x.domain();
+            fromDate = domainX[0];
+            toDate = domainX[1];
+            var filteredData = allEvents.filter(filterByDate);
+            
+            var eventsC = svg.append("g")
+            .attr("class", "eventGp")
+            .selectAll(".eventsC")
+            .data(filteredData);
+
+            // create separate groups for each event
+            // assign them a class and individual IDs (for styling) 
+            var eventCEnter = eventsC.enter().append("g")
+            .attr("class", "eventC")
+            .attr("id", function (d) {
+                return "id" + id();
+            });
+
+            //NOTE: this approach did not work to remove the exiting elements even though tried creating unique Ids for elements.
+            //eventsC.exit().remove();
+
+            eventCEnter
+                .filter(function (data) {
+                    return data.EventLocationType == "flag";
+                })
+                .append("rect")
+                    .attr("class", "eventFlag")
+                    .attr("width", 70)
+                    .attr("height", 20)
+                    .attr("transform", function (d) {
+                        return "translate(" + (x(parseDate(d.Date))) + "," + hEventFlag + ")";
+                    })
+                .append("svg:title")
+                    .text(function (d) { 
+                        return d.Date + "\n" + d.Description; });
+                    
+            eventCEnter
+                .filter(function (data) {
+                    return data.EventLocationType == "flag";
+                })
+                .append("line")
+                .attr("class", "lineEventFlag")
+                .attr("x1", function (d) {
+                    return x(parseDate(d.Date));
+                })     // x position of the first end of the line
+                .attr("y1", h)      // y position of the first end of the line
+                .attr("x2", function (d) {
+                    return x(parseDate(d.Date));
+                })     // x position of the second end of the line
+                .attr("y2", hEventFlag + 20);
+
+                eventCEnter
+            .filter(function (data) {
+                return data.EventLocationType == "flag";
+            })
+            .append("text")
+            .attr("x", function (d) { return x(parseDate(d.Date))+ 5; })
+            .attr("y", hEventFlag + 10)
+            .text(function (d) {
+                return d.HeaderText;
+            })            
+            .append("svg:title")
+                    .text(function (d) {
+                        return d.Date + "\n" + d.Description;
+                    });
+
+                eventCEnter
+            .filter(function (data) {
+                return data.EventLocationType == "flag";
+            })
+            .append("text")
+            .attr("x", function (d) { return x(parseDate(d.Date)) + 28; })
+            .attr("y", hEventFlag + 18)
+            .text(function (d) {
+                return d.Result;
+            });
+
+           var rectEventBtm = eventCEnter
+                .filter(function (data) {
+                    return data.EventLocationType == "bottom";
+                })
+                .append("rect")
+                    .attr("class", "eventBtm")
+                    .attr("width", 80)
+                    .attr("height", 30)
+                    .attr("transform", function (d) {
+                        return "translate(" + (x(parseDate(d.Date)) - 25) + "," + hEventBtm + ")";
+                    });
+
+                eventCEnter
+            .filter(function (data) {
+                return data.EventLocationType == "bottom";
+            })
+            .append("line")            
+            .attr("class", "lineEventBtm")                
+            .attr("x1", function (d) {
+                return x(parseDate(d.Date));
+            })     // x position of the first end of the line
+            .attr("y1", h)      // y position of the first end of the line
+            .attr("x2", function (d) {
+                return x(parseDate(d.Date));
+            })     // x position of the second end of the line
+            .attr("y2", hEventBtm + 30);
+
+            eventCEnter
+            .filter(function (data) {
+                return data.EventLocationType == "bottom";
+            })
+            .append("text")
+            .attr("x", function (d) { return x(parseDate(d.Date)) - 23; })
+            .attr("y", hEventBtm + 15)
+            .text(function (d) {
+                return d.HeaderText;
+            })
+            .append("svg:title")
+                    .text(function (d) {
+                        return d.Date + " " + d.Description;
+                    }) ;
+
+            eventCEnter
+            .filter(function (data) {
+                return data.EventLocationType == "bottom";
+            })
+            .append("text")
+            .attr("x", function (d) { return x(parseDate(d.Date)) + 6; })
+            .attr("y", hEventBtm + 25)
+            .text(function (d) {
+                return d.Result;
+            });
+
+                eventCEnter
+            .filter(function (data) {
+                return data.EventLocationType == "top";
+            })
+            .append("rect")
+                .attr("class", "eventTop")
+                .attr("width", 70)
+                .attr("height", 30)
+                .attr("transform", function (d) {
+                    return "translate(" + (x(parseDate(d.Date)) - 25) + "," + hEventTop + ")";
+                });
+
+            eventCEnter
+        .filter(function (data) {
+            return data.EventLocationType == "top";
+        })
+        .append("line")
+        .attr("class", "lineEventTop")
+        .attr("x1", function (d) {
+            return x(parseDate(d.Date));
+        })     // x position of the first end of the line
+        .attr("y1", h)      // y position of the first end of the line
+        .attr("x2", function (d) {
+            return x(parseDate(d.Date));
+        })     // x position of the second end of the line
+        .attr("y2", hEventTop + 30);
+
+        eventCEnter
+            .filter(function (data) {
+                return data.EventLocationType == "top";
+            })
+            .append("text")
+            .attr("x", function (d) { return x(parseDate(d.Date)) - 23; })
+            .attr("y", hEventTop + 15)
+            .text(function (d) {
+                return d.HeaderText;
+            })
+            .append("svg:title")
+                    .text(function (d) {
+                        return d.Date + " " + d.Description;
+                    });
+
+            eventCEnter
+        .filter(function (data) {
+            return data.EventLocationType == "top";
+        })
+        .append("text")
+            .attr("x", function (d) { return x(parseDate(d.Date)) + 6; })
+            .attr("y", hEventTop + 25)
+            .text(function (d) {
+                return d.Result;
+            });
+
+            eventCEnter
+            .filter(function (data) {
+                return data.EventLocationType == "background";
+            })
+            .append("rect")
+                .attr("class", "eventBg")
+                .attr("width", function (d) {
+                    return x(parseDate(d.EndDate)) - x(parseDate(d.Date))
+                })
+                .attr("height", hEventBg)
+                .attr("transform", function (d) {
+                    return "translate(" + (x(parseDate(d.Date))) + "," + 0 + ")";
+                });
+
+            eventCEnter
+            .filter(function (data) {
+                return data.EventLocationType == "background";
+            })
+            .append("text")
+            .attr("x", function (d) { return x(parseDate(d.Date)) + 2; })
+            .attr("y", 15)
+            .text(function (d) {
+                return d.HeaderText + "\n" + d.Result;
+            });
+        }
+
+        // all the meat goes in the draw function
+        function draw() {
+            // set the x and y domains as the max and min
+            // of the related year and event type, respectively
+            x.domain([
+                d3.min(allEvents, function (c) {
+                    return d3.time.month.offset(parseDate(c.Date), -4);
+                }),
+                d3.max(allEvents, function (c) {
+                    return d3.time.month.offset(parseDate(c.Date), 4);
+                })
+              ]);
+            
+            //If the scale's domain or range is modified programmatically, this function should be called again.
+            zoom.x(x);                   
+            d3.transition(svg).select(".x.axis")
+            .attr("transform", "translate(0," + h + ")")
+          .call(xAxis);
+
+            drawEvents();
+        }
+
+        
+    </script>
+</body>
+</html>
