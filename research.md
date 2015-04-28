@@ -8,9 +8,9 @@ Genome-wide analyses of the past few years have revealed that a substantial port
 
 ##OmicKriging
 
-We have developed a novel systems approach to complex trait prediction, which leverages and integrates similarity in genetic, transcriptomic or other omics-level data. Our method called OmicKriging (published in Genetic Epidemiology) emphasizes the use of a wide variety of systems-level data, such as those increasingly made available by comprehensive surveys of the genome, transcriptome and epigenome, for complex trait prediction. Using an LCL growth phenotype, we have shown that integrating mRNA and microRNA expression data substantially increases prediction performance over either dataset or genetic data alone. 
+We have developed a novel systems approach to complex trait prediction, which leverages and integrates similarity in genetic, transcriptomic or other omics-level data. Our method called OmicKriging (<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=PMC4072756">published in <i>Genetic Epidemiology</i></a>) emphasizes the use of a wide variety of systems-level data, such as those increasingly made available by comprehensive surveys of the genome, transcriptome and epigenome, for complex trait prediction. For example, integrating different omic correlation matrices such as a genetic relationship matrix (GRM) derived from SNPs and a gene expression correlation matrix (GXM) derived from gene expression levels may optimize predictive performance over either dataset alone.
 
-Add Fig 2
+![OKFig2]({{ site.baseurl }}/images/OKFig2.jpg)
 
 ##PrediXcan
 
