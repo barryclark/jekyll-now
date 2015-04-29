@@ -8,7 +8,7 @@ permalink: /people/
 
 
 <figure>
-    <a href="../images/filename">
+    <a href="../images/DNA1.png">
 	<img src="{{ site.baseurl }}/images/DNA1.png" width="150px" height="150px" align="left"/>
     </a>
 <figcaption>
@@ -20,7 +20,7 @@ permalink: /people/
 **Lab Member 1**
 
 <figure>
-    <a href="../images/filename">
+    <a href="../images/DNA1.png">
         <img src="{{ site.baseurl }}/images/DNA1.png" width="150px" height="150px" align="left"/>
     </a>
 <figcaption>
@@ -37,7 +37,7 @@ permalink: /people/
 **Lab Member 2**
 
 <figure>
-    <a href="../images/filename">
+    <a href="../images/DNA1.png">
         <img src="{{ site.baseurl }}/images/DNA1.png" width="150px" height="150px" align="left"/>
     </a>
 <figcaption>
