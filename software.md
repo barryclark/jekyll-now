@@ -8,6 +8,8 @@ permalink: /software/
 
 - <a href="http://cran.r-project.org/web/packages/OmicKriging/index.html">R Package</a>
 
+```install.packages('OmicKriging')```
+
 - <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=PMC4072756">Publication</a>
 
 ##PrediXcan
