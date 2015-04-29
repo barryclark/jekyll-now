@@ -1,5 +1,6 @@
 ---
-layout:default
+layout: post
+title: blogtestpage
 ---
 
-这是一个测试文件
+hi i am a test page
