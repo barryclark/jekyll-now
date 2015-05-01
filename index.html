@@ -10,6 +10,18 @@ Enter a Uniprot Accession number, ex. P00395
 </p>
 </div> 
 
+<form>
+Number: <input type="text" name="url1" id="url1" value=""><br>
+<input type="submit" name="submit" value="Goto URL" onclick="redirect()">
+</form>
+
+<script>
+function redirect()
+{
+  window.location='http://somewhere.com?url=' + document.getElementByID('url1').value;
+}
+</script>
+
 
  <form action="https://github.com/clairemcwhite/clairemcwhite.github.io/blob/master/OrthologTables/P00395.csv" method="get">
   UNIPROT ACC: <input type="text" name="fname"><br>
