@@ -15,14 +15,15 @@ Enter a Uniprot Accession number, ex. P00395
 function changeText2(){
     var userInput = document.getElementById('userInput').value;
     var lnk = document.getElementById('lnk');
-    lnk.href = "http://www.google.com?q=" + userInput;
+    lnk.href = "https://clairemcwhite.github.io/blob/master/OrthologTables/" + userInput +".csv";
     lnk.innerHTML = lnk.href;
 }
 </script>
-Here is a link : <a href="" id=lnk>nothing here yet</a> <br>
+Link to table : <a href="" id=lnk>Please enter a Uniprot accession number</a> <br>
 <input type='text' id='userInput' value='Enter Search String Here' />
 <input type='button' onclick='changeText2()' value='Change Link'/>
 
+<p></p>
 
 <a id="reflectedlink" href="http://www.google.com/search">http://www.google.com/search</a>
 <input id="searchterm"/>
