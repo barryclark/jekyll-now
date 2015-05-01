@@ -25,39 +25,6 @@ Link to table : <a href="" id=lnk>Please enter a Uniprot accession number</a> <b
 
 <p></p>
 
-<a id="reflectedlink" href="http://www.google.com/search">http://www.google.com/search</a>
-<input id="searchterm"/>
-
-<script type="text/javascript">
-    var link= document.getElementById('reflectedlink');
-    var input= document.getElementById('searchterm');
-    input.onchange=input.onkeyup= function() {
-        link.search= '?q='+encodeURIComponent(input.value);
-        link.firstChild.data= link.href;
-    };
-</script>
-
-
-
-<form>
-Number: <input type="text" name="url1" id="url1" value=""><br>
-<input type="submit" name="submit" value="Submit" onclick="redirect()">
-</form>
-
-<script>
-function redirect()
-{
-  window.location='https://clairemcwhite.github.io/blob/master/OrthologTables/' + document.getElementByID('url1').value;
-}
-</script>
-
-
- <form action="https://clairemcwhite.github.io/blob/master/OrthologTables/P00395.csv" method="get">
-  UNIPROT ACC: <input type="text" name="fname"><br>
-  <button type="submit">Submit</button><br>
-
-</form> 
-
 
 
 <div class="posts">
