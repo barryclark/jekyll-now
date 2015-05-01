@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: Enter a Uniprot Accession number, ex. P00395
 ---
 Testing
