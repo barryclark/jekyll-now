@@ -16,7 +16,7 @@ See [research page](research) for details.
 * Yuriy Bobkov (Whitney Marine Biology Lab)
 * [Evan Archer](http://www.evanarcher.com/) (Columbia University)
 * [Lars Büsing](http://www.gatsby.ucl.ac.uk/~lars/) (Columbia University)
-* [Jonathan Pillow](pillowlab.princeton.edu) (Princeton University)
+* [Jonathan Pillow](http://pillowlab.princeton.edu) (Princeton University)
 * Anqi Wu (Princeton University)
 * [Steven Van Vaerenbergh](http://gtas.unican.es/people/steven) (University of Cantabria)
 * [Sohan Seth](http://www.sohanseth.com/) (University of Edinburgh)
