@@ -1,10 +1,12 @@
 ---
 layout: post
-title: You're up and running!
+title: Enter a Uniprot Accession number, ex. P00395
 ---
 Testing
 
 Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+
+<input type="text" id="name" name="name"/>
 
 ![_config.yml]({{ site.baseurl }}/images/config.png)
 
