@@ -26,6 +26,26 @@ function changeText2(){
 Link to table : <a href="" id=lnk></a> <br>
 </p>
 
+
+
+<script type="text/javascript">
+function changeText3(){
+    var userInput = document.getElementById('userInput').value;
+    var lnk = document.getElementById('lnk');
+    lnk.href = "https://github.com/clairemcwhite/clairemcwhite.github.io/blob/master/OrthologTables/" + userInput +".csv";
+    lnk.innerHTML = lnk.href;
+    window.open("https://github.com/clairemcwhite/clairemcwhite.github.io/blob/master/OrthologTables/" + userInput +".csv";)
+}
+</script>
+
+<input type='text' id='userInput' value='Enter Search String Here' />
+<input type='button' onclick='changeText2()' value='Get Link'/>
+<p>
+Link to table : <a href="" id=lnk></a> <br>
+</p>
+
+
+
 <p></p>
 ![Figure 1-1](https://github.com/clairemcwhite/clairemcwhite.github.io/blob/master/OrthologTables/P00395.csv "Figure 1-1")
 
