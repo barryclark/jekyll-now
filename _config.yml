@@ -22,10 +22,10 @@ navigation:
    url: /about/index.html
  - title: Data
    url: /data/index.html
- - title: Knoedler
-   url: /Knoedler/index.html
+ - title: History
+   url: /history/index.html
  - title: Visualization
-   url: /Visualization/index.html
+   url: /visualization/index.html
 
 # Includes an icon in the footer for each username you enter
 footer-links:
