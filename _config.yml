@@ -25,7 +25,7 @@ navigation:
  - title: Knoedler
    url: /Knoedler/index.html
  - title: Visualization
- || url: /Visualization/index.html
+   url: /Visualization/index.html
 
 # Includes an icon in the footer for each username you enter
 footer-links:
