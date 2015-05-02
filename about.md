@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Jay Kim (IT Cosultant/Technology Strategy/SW Engineer)
+Jay Kim 
 
 ### More Information
 
