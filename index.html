@@ -25,17 +25,35 @@ function changeText3(){
 <input type='button' onclick='changeText3()' value='Go'/>
 <p>
 Link to table : <a href="" id=lnk></a> <br>
-</p>
+</p><p></p>
 
 <div class="More">
 
     <p>
-    
+    <p></p>
     Tables are currently available for <a href="https://raw.githubusercontent.com/clairemcwhite/clairemcwhite.github.io/master/humanProteomeDetails.tsv">~20,000 human protein coding genes</a> from the 2015 release of the UNIPROT reviewed human proteome ("UP000005640").
      
     
     </p>
 </div> 
+
+<div class="currentdatabases">
+<ul>
+  <li>KEGG Orthology (KO) release 74</li>
+  <li>Gene Trees - Ensembl Genome Browser 79</li>
+  <li>OMA groups 2014 release</li>
+  <li>TreeFam release 9</li>
+  <li>OrthoDB version 8</li>
+  <li>EggNOG version 4</li>
+  <li>HOGENOM release 06</li>
+  <li>HOVERGEN release 49</li>
+  <li>COG 2014 version</li>
+  <li>PhylomeDB version 4 - Human Phylome</li>
+</ul>
+    
+</div>
+
+
 
 <div class="posts">
   {% for post in paginator.posts %}
