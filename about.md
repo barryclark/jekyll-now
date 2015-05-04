@@ -33,16 +33,47 @@ The <a href="http://www.uniprot.org/database/?query=*&fil=category%3A%22Phylogen
 </ul>
 
 <a href="http://www.ncbi.nlm.nih.gov/COG/">COGS - Phylogenetic classification of proteins encoded in complete genomes </a>
+<ul>
+  <li>COG uses pairwise sequence comparisons and best hit analysis to group proteins into clusters, with a focus on funcational category prediction and annotation</li>
+  <li>2014 Update</li>
+  <li>Focus on bacteria and archaea, 711 species</li>
+</ul>
 
 <a href="http://www.uniprot.org/database/DB-0044">The HOGENOM Database of Homologous Genes from Fully Sequenced Organisms </a>
 
-<a href="http://www.uniprot.org/database/DB-0045">The HOVERGEN Database of Homologous Vertebrate Genes </a>
+<ul>
+  <li>HOGENOME uses all-by-all blastP2 followed by clustering, multiple sequence alignment and phylogenetic tree analysis</li>
+  <li>Release 06, December 2011</li>
+  <li>1233 bacteria, 97 archaea, 140 eukaryotes</li>
+</ul>
 
-<a href="http://www.uniprot.org/database/DB-0164">KEGG Orthology (KO)</a>
+<a href="http://www.uniprot.org/database/DB-0045">The HOVERGEN Database of Homologous Vertebrate Genes </a>
+<ul>
+  <li>HOVERGEN uses all-by-all blastP2 followed by clustering, multiple sequence alignment and phylogenetic tree analysis</li>
+  <li>Release 49, December 2009</li>
+  <li>All vertebrate protein sequences from the Uniprot Knowledgebase</li>
+</ul>
+
+<a href="http://www.uniprot.org/database/DB-0164">KEGG Orthology - Linking genomes to pathways by ortholog annotation(KO)</a>
+<ul>
+  <li>"The KO system is a collection of manually defined ortholog groups (KO entries), which are categorized under the hierarchy of KEGG pathways and BRITE ontologies".</li>
+  <li>KEGG release 74, April 2015</li>
+  <li>304 eukaryotes, 3504 prokaryotes</li>
+</ul>
 
 <a href="http://www.uniprot.org/database/DB-0137">OMA - Identification of Orthologs from Complete Genome Data</a>
+<ul>
+  <li></li>
+  <li></li>
+  <li></li>
+</ul>
 
 <a href="http://www.uniprot.org/database/DB-0143">OrthoDB - Database of Orthologous Groups</a>
+<ul>
+  <li></li>
+  <li></li>
+  <li></li>
+</ul>
 
 <a href="http://phylomedb.org/">PhylomeDB 4 - Database for complete collections of gene phylogenies, Human Phylome (3)</a>
 <ul>
