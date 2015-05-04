@@ -15,10 +15,9 @@ There is often no clear answer for which database to use to generate lists of or
 The <a href="http://www.uniprot.org/database/?query=*&fil=category%3A%22Phylogenomic+databases%22">cross-referencing of UniProt</a> with phylogenomic databases facilitated this project.  UniProt entries can be filtered by presence in a ortholog database, and downloaded along with their database assigned group ID.  This approach was used for retrieving eggNOG, GeneTree, HOGENOM, HOVERGEN, KO, OMA, OrthoDB, and TreeFAM databases. The entire 2014 release of the COG database was download directly from the COG website, and the given RefSeqIDs converted to UniProt using the downloadable UniProt ID mapping table.  The Human PhylomeDB was downloaded from the PhylomeDB website formatted with Uniprot Accession.  For both COG and PhylomeDB databases it was necessary to convert deprecated Accessions to current versions, as well as map up to date UniProt gene names.    
 
 ## Database details
-Non-supervised:
+
 <a href="http://www.uniprot.org/database/DB-0152">eggNOG - evolutionary genealogy of genes:Non-supervised Orthologous Groups</a>
 
-Supervised:
 <a href="http://www.uniprot.org/database/DB-0162">GeneTree </a>
 
 ???:
