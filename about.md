@@ -4,6 +4,9 @@ title: More Information
 permalink: /about/
 ---
 
+### About
+The Ortholog Database connector gives a comprehensive view of multiorganisms orthologs of a given human gene, as produced by diverse ortholog sorting algorithms.  For example, the table for the human gene P00395 has columns containing the membership of the ortholog group P00395 belongs to according to each database.     
+
 ### Rationale
 Orthologous genes are genes which arise from speciation, for example, Human Talin, and Mouse Talin. Identification and accuracy of genes classed as orthologs is key for comparative genomic approaches, however there is no consensus model.  Approximately 30 independent algorithms exist to classify orthologous genes; some based on species and gene phylogeny and some using exclusively sequence comparison.  Phylogeny based approaches have the advantage of tracking genes through realistic evolutionary paths, however tend to be computationally intensive, and subject to error from misconstructed gene trees.  BLAST approaches are much faster, generally using an all-by-all blast of multispecies proteomes in order to generate best matches, however lack the added power of phylogenetic information.  
 
@@ -28,7 +31,7 @@ The <a href="http://www.uniprot.org/database/?query=*&fil=category%3A%22Phylogen
 <a href="http://useast.ensembl.org/info/genome/compara/homology_method.html">EnsemblCompara GeneTrees </a>
 <ul>
   <li>"Protein trees are constructed using a representative protein for every gene in Ensembl: proteins are clustered using hcluster_sg based on NCBI BLAST+ e-values, and each cluster of proteins is aligned using M-Coffee or Mafft. Finally, TreeBeST is used to produce a gene tree from each multiple alignment, reconciling it with the species tree to call duplication events."
-  <li>Ensembl release 79, March 2015/li>
+  <li>Ensembl release 79, March 2015</li>
   <li>69 Eukaryotic species</li>
 </ul>
 
