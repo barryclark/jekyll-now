@@ -70,9 +70,9 @@ The <a href="http://www.uniprot.org/database/?query=*&fil=category%3A%22Phylogen
 
 <a href="http://www.uniprot.org/database/DB-0143">OrthoDB - Database of Orthologous Groups</a>
 <ul>
-  <li></li>
-  <li></li>
-  <li></li>
+  <li>OrthoDB clusters based on best-reciprocal-hits from an all-by-all Smith-Waterman algorithm, and then references clusters to species phylogenies.</li>
+  <li>Version 8</li>
+  <li>52 vertebrates, 45 arthropods, 142 fungi, 13 basal metazoans, and 1115 bacteria</li>
 </ul>
 
 <a href="http://phylomedb.org/">PhylomeDB 4 - Database for complete collections of gene phylogenies, Human Phylome (3)</a>
@@ -88,7 +88,10 @@ The <a href="http://www.uniprot.org/database/?query=*&fil=category%3A%22Phylogen
   <li>109 Species, 15,736 gene families</li>
 </ul>
 
-
+## Citations
+Waterhouse RM, Zdobnov EM, Tegenfeldt F, Li J, Kriventseva EV.
+OrthoDB: a hierarchical catalog of animal, fungal and bacterial orthologs.
+NAR, Nov 2012, PMID:23180791
 
 
 
