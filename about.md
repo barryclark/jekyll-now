@@ -17,9 +17,11 @@ The <a href="http://www.uniprot.org/database/?query=*&fil=category%3A%22Phylogen
 ## Database details
 
 <a href="http://www.uniprot.org/database/DB-0152">eggNOG - evolutionary genealogy of genes:Non-supervised Orthologous Groups</a>
-- "TreeFam is a database composed of phylogenetic trees inferred from animal genomes. It provides orthology/parology predictions as well the evolutionary history of genes."
-- Release 9, March 2013
-- 109 Species, 15,736 gene families
+
+<ul><li> "TreeFam is a database composed of phylogenetic trees inferred from animal genomes. It provides orthology/parology predictions as well the evolutionary history of genes."</li>
+<li>Release 9, March 2013</li>
+<li>109 Species, 15,736 gene families</li>
+</ul>
 
 <a href="http://www.uniprot.org/database/DB-0162">GeneTree </a>
 
