@@ -17,9 +17,9 @@ The <a href="http://www.uniprot.org/database/?query=*&fil=category%3A%22Phylogen
 ## Database details
 
 <a href="http://www.uniprot.org/database/DB-0152">eggNOG - evolutionary genealogy of genes:Non-supervised Orthologous Groups</a>
-** "TreeFam is a database composed of phylogenetic trees inferred from animal genomes. It provides orthology/parology predictions as well the evolutionary history of genes."
-** Release 9, March 2013
-** 109 Species, 15,736 gene families
+* "TreeFam is a database composed of phylogenetic trees inferred from animal genomes. It provides orthology/parology predictions as well the evolutionary history of genes."
+* Release 9, March 2013
+* 109 Species, 15,736 gene families
 
 <a href="http://www.uniprot.org/database/DB-0162">GeneTree </a>
 
@@ -37,9 +37,9 @@ The <a href="http://www.uniprot.org/database/?query=*&fil=category%3A%22Phylogen
 <a href="http://www.uniprot.org/database/DB-0143">OrthoDB - Database of Orthologous Groups</a>
 
 <a href="http://phylomedb.org/">PhylomeDB 4 - Database for complete collections of gene phylogenies, Human Phylome (3)</a>
-** "PhylomeDB provides genome-wide orthology and paralogy predictions which are based on the analysis of the phylogenetic trees. The automated pipeline used to reconstruct trees aims at providing a high-quality phylogenetic analysis of different genomes, including Maximum Likelihood tree inference, alignment trimming and evolutionary model testing."
-** Human Phylome version 3, 2011, PhylomeDB version 4
-** 39 species reference to human proteom
+* "PhylomeDB provides genome-wide orthology and paralogy predictions which are based on the analysis of the phylogenetic trees. The automated pipeline used to reconstruct trees aims at providing a high-quality phylogenetic analysis of different genomes, including Maximum Likelihood tree inference, alignment trimming and evolutionary model testing."
+* Human Phylome version 3, 2011, PhylomeDB version 4
+* 39 species proteomes referenced to human proteome
 <a href="http://www.uniprot.org/database/DB-0185">TreeFam database of animal gene trees</a>
 
 
