@@ -29,7 +29,7 @@ The <a href="http://www.uniprot.org/database/?query=*&fil=category%3A%22Phylogen
 <ul>
   <li>"Protein trees are constructed using a representative protein for every gene in Ensembl: proteins are clustered using hcluster_sg based on NCBI BLAST+ e-values, and each cluster of proteins is aligned using M-Coffee or Mafft. Finally, TreeBeST is used to produce a gene tree from each multiple alignment, reconciling it with the species tree to call duplication events."
   <li>Ensembl release 79, March 2015/li>
-  <li> </li>
+  <li>69 Eukaryotic species</li>
 </ul>
 
 <a href="http://www.ncbi.nlm.nih.gov/COG/">COGS - Phylogenetic classification of proteins encoded in complete genomes </a>
