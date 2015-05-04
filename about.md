@@ -17,7 +17,12 @@ The <a href="http://www.uniprot.org/database/?query=*&fil=category%3A%22Phylogen
 ## Database details
 
 <a href="http://www.uniprot.org/database/DB-0152">eggNOG - evolutionary genealogy of genes:Non-supervised Orthologous Groups</a>
+<ul>
+  <li>eggNOG clusters protein sequences using the FASTA algorithm to derive maximum likelihood gene family trees</li>
+  <li>Version 4.0 </li>
+  <li>2031 species, 7.7 million proteins, 1.7 million ortholog groups</li>
 
+</ul>
 
 
 <a href="http://www.uniprot.org/database/DB-0162">GeneTree </a>
