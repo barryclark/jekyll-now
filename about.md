@@ -61,11 +61,11 @@ The <a href="http://www.uniprot.org/database/?query=*&fil=category%3A%22Phylogen
   <li>304 eukaryotes, 3504 prokaryotes</li>
 </ul>
 
-<a href="http://www.uniprot.org/database/DB-0137">OMA - Identification of Orthologs from Complete Genome Data</a>
+<a href="http://www.uniprot.org/database/DB-0137">OMA - Identification of Orthologs from Complete Genome Data - Orthologous MAtrix</a>
 <ul>
-  <li></li>
-  <li></li>
-  <li></li>
+  <li>OMA uses an all-by-all Smith Waterman alignment to find mutually closest homologs based on evolutionary distance.  Orthologs are clustered to (1) pairwise to identify OMA ortholog cliques, or (2) hierarchically to identify HOGS (Hierarchical Ortholog Groups)  </li>
+  <li>September 2014 release</li>
+  <li>1706 species (eukaryote, bacteria, archaea)</li>
 </ul>
 
 <a href="http://www.uniprot.org/database/DB-0143">OrthoDB - Database of Orthologous Groups</a>
