@@ -89,11 +89,32 @@ The <a href="http://www.uniprot.org/database/?query=*&fil=category%3A%22Phylogen
 </ul>
 
 ## Citations
-Waterhouse RM, Zdobnov EM, Tegenfeldt F, Li J, Kriventseva EV.
-OrthoDB: a hierarchical catalog of animal, fungal and bacterial orthologs.
-NAR, Nov 2012, PMID:23180791
+Expanded microbial genome coverage and improved protein family annotation in the COG database. Galperin, M.Y.; Makarova, K.S.; Wolf, Y.I.; Koonin, E.V.  Nucleic Acids Res. 2014, 43, D261–D269. 
 
+eggNOG v4.0: nested orthology inference across 3686 organisms
+Sean Powell, Kristoffer Forslund, Damian Szklarczyk, Kalliopi Trachana, Alexander Roth, Jaime Huerta-Cepas, Toni Gabaldón, Thomas Rattei, Chris Creevey, Michael Kuhn, Lars J. Jensen, Christian von Mering and Peer Bork
+Nucleic Acids Res.
+Epub 2013 Dec 1; PubMed 24297252. 
 
+EnsemblCompara GeneTrees: Analysis of complete, duplication aware phylogenetic trees in vertebrates. Vilella AJ, Severin J, Ureta-Vidal A, Durbin R, Heng L, Birney E. Genome Research 2008 Nov 4.
+
+The KEGG resource for deciphering the genome. Kanehisa, M., Goto, S., Kawashima, S., Okuno, Y. & Hattori, M. Nucleic Acids Res. 32, D277–D280 (2004)
+
+Databases of homologous gene families for comparative genomics
+Penel S, Arigon AM, Dufayard JF, Sertier AS, Daubin V, Duret L, Gouy M and Perrière G (2009), BMC Bioinformatics, 10 (Suppl 6):S3 
+
+HOVERGEN: database and software for comparative analysis of homologous vertebrate genes.Duret, L., Perrière, G. and Gouy, M. (1999)  In Bioinformatics Databases and Systems, Letovsky, S. (ed.), Kluwer Academic Publishers, Boston, pp. 13-29.
+    
+The OMA orthology database in 2015: function predictions, better plant support, synteny view, and other improvements, Adrian M. Altenhoff, Nives Škunca, Natasha Glover, Clément-Marie Train, Anna Sueki, Ivana Piližota, Kevin Gori, Bartlomiej Tomiczek, Steven Müller, Henning Redestig, Gaston H Gonnet and Christophe Dessimoz, Nucleic Acids Research, 2015, in press
+
+OrthoDB: a hierarchical catalog of animal, fungal and bacterial orthologs.Waterhouse RM, Zdobnov EM, Tegenfeldt F, Li J, Kriventseva EV.NAR, Nov 2012, PMID:23180791
+
+PhylomeDB v4: zooming into the plurality of evolutionary histories of a genome. Huerta-Cepas J, Capella-Gutiérrez S, Pryszcz LP, Marcet-Houben M, Gabaldón T. Nucleic Acids Res. 2014 Jan;42(Database issue):D897-902. doi: 10.1093/nar/gkt1177.
+
+TreeFam: 2008 Update Jue Ruan, Heng Li, et al. Nucleic Acids Research (2008)
+doi: 10.1093/nar/gkm1005 
+
+Tree pattern matching in phylogenetic trees: automatic search for orthologs or paralogs in homologous gene sequence databases. Dufayard J.F., Duret L., Penel S., Gouy M., Rechenmann F. and Perrière G. (2005) Bioinformatics, vol. 21 pp.2596-2603 
 
 
 ### Contact me
