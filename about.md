@@ -20,7 +20,6 @@ The <a href="http://www.uniprot.org/database/?query=*&fil=category%3A%22Phylogen
 
 <a href="http://www.uniprot.org/database/DB-0162">GeneTree </a>
 
-???:
 <a href="http://www.ncbi.nlm.nih.gov/COG/">COGS - Phylogenetic classification of proteins encoded in complete genomes </a>
 
 <a href="http://www.uniprot.org/database/DB-0044">The HOGENOM Database of Homologous Genes from Fully Sequenced Organisms </a>
