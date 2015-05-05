@@ -4,7 +4,7 @@ title:
 permalink: /about/
 ---
 
-The Ortholog Database connector gives a comprehensive view of multiorganisms orthologs of a given human gene, as produced by diverse ortholog sorting algorithms.  For example, the table for the human gene P00395 has columns containing the membership of the ortholog group P00395 belongs to according to each database.       
+The Ortholog Database Connector gives a comprehensive view of multiorganisms orthologs of a given human gene, as produced by diverse ortholog sorting algorithms.  For example, the table for the human gene P00395 has columns containing the membership of the ortholog group P00395 belongs to according to each database.       
 
 ### Rationale
 Orthologous genes are genes which arise from speciation, for example, Human Talin, and Mouse Talin. Identification and accuracy of genes classed as orthologs is key for comparative genomic approaches, however there is no consensus model.  Approximately 30 independent algorithms exist to classify orthologous genes; some based on species and gene phylogeny and some using exclusively sequence comparison.  Phylogeny based approaches have the advantage of tracking genes through realistic evolutionary paths, however tend to be computationally intensive, and subject to error from misconstructed gene trees.  BLAST approaches are much faster, generally using an all-by-all blast of multispecies proteomes in order to generate best matches, however lack the added power of phylogenetic information.  
