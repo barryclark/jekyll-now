@@ -1,6 +1,6 @@
 ---
 layout: page
-title: More Information
+title: 
 permalink: /about/
 ---
 
