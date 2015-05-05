@@ -7,9 +7,9 @@ Ever since my wife had gotten an iPhone 8 with i0S 8, Google Voice hadn't been w
 
 Thankfully there's a way around this. You need to dial 3 different numbers to setup Google Voice on 3 different conditions:
 
-Call forwarding if phone isn't answered: \*61\*1234567890#
-Call forwarding if phone isn't reachable: \*62\*1234567890#
-Call forwarding if phone is busy: \*67\*1234567890#
+- Call forwarding if phone isn't answered: \*61\*1234567890#
+- Call forwarding if phone isn't reachable: \*62\*1234567890#
+- Call forwarding if phone is busy: \*67\*1234567890#
 
 After setting up those 3 you'll be all set with Google Voice again!
 
