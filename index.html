@@ -15,7 +15,7 @@ title: Home
 function changeText3(){
     var userInput = document.getElementById('userInput').value;
     var lnk = document.getElementById('lnk');
-    lnk.href = "https://github.com/clairemcwhite/OrthologLinking/blob/master/" + userInput +".csv";
+    lnk.href = "https://sheet.zoho.com/view.do?url=https://github.com/clairemcwhite/OrthologLinking/blob/master/" + userInput +".csv";
     lnk.innerHTML = lnk.href;
     window.open("https://github.com/clairemcwhite/OrthologLinking/blob/master/" + userInput +".csv");
 }
@@ -24,7 +24,7 @@ function changeText3(){
 <input type='text' id='userInput' value='' />
 <input type='button' onclick='changeText3()' value='Go'/>
 <p>
-Link to table : <a href="" id=lnk></a> <br>
+Link to excel view of table : <a href="" id=lnk></a> <br>
 </p>
 <br>
 
