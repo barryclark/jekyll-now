@@ -4,7 +4,6 @@ title:
 permalink: /about/
 ---
 
-### About
 The Ortholog Database connector gives a comprehensive view of multiorganisms orthologs of a given human gene, as produced by diverse ortholog sorting algorithms.  For example, the table for the human gene P00395 has columns containing the membership of the ortholog group P00395 belongs to according to each database.       
 
 ### Rationale
