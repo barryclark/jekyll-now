@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Switfly learning Rails and Ruby, along with some Javascript (Ember) and anything else that tickles my fancy at the time.
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+I also enjoy building high power rockets (not the small ones you buy at the hobby store).
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[dan@getabetterpic.com](mailto:dan@getabetterpic.com)
