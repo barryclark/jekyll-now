@@ -22,6 +22,7 @@ It was at http://emberjs.com/api/data/classes/DS.ActiveModelAdapter.html#method_
 The key was the findHasMany method was looking for JSON from the server like this:
 
 
+
 ```json
 {
   "post": {
@@ -31,6 +32,8 @@ The key was the findHasMany method was looking for JSON from the server like thi
   }
 }
 ```
+
+
 
 So instead of the normal comments array, it is replaced by a links object that
 specifies the url to hit for that resource. This in turn is just an index action
