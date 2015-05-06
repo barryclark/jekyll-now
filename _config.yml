@@ -53,9 +53,7 @@ baseurl: ""
 # !! You don't need to change any of the configuration flags below !!
 #
 
-markdown: kramdown
-kramdown:
-  input: GFM
+markdown: redcarpet
 highlighter: pygments
 permalink: /:title/
 
