@@ -36,5 +36,10 @@ permalink: /biofactory/participants/documentation/
   * [Valeria Iovino](http://officine.romamakers.org/biohack/students/Valeria%20Iovino/)
   * [Francesco Guarino](http://officine.romamakers.org/biohack/students/francesco%20guarino%20bio%20hack/)
   * [Nome Cognome](http://officine.romamakers.org/biohack/students/nome_cognome/)
-* Rio de Janeiro
+* [Olabi Makerspace - Rio de Janeiro](http://olabi.co)
   * [Willian](http://wilmaker.github.io)
+  * [Caroline Macedo](http://carolinemacedo.github.io/)
+  * [Gustavo Meira](http://gudeco.github.io)
+  * [Diogo Monteiro](http://diogomaker.github.io/)
+  * [Gabriela Rocha](http://gabirocha.github.io/)
+  * [Fernando Limoeiro](http://quantumbrew.github.io/)
