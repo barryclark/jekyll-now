@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Blog Migration
-date: '2015-05-05'
 author: Daniel Smith
 ---
 

@@ -15,11 +15,11 @@ But by default when you set these up in a model, setting async to true, if you'r
 using Ember Data it will call every single id listed in the comments array.
 I've been trying to get around that so I can implement paging if I need to.    
 
-For instance, say you have a url like /posts/1/comments. Without a way to limit
+For instance, say you have a url like `/posts/1/comments`. Without a way to limit
 comments, by default it would load all of them at once. While trying to solve
 this I wound up in the source code and stumbled across the piece I needed. 
-It was at http://emberjs.com/api/data/classes/DS.ActiveModelAdapter.html#method_findHasMany. 
-The key was the findHasMany method was looking for JSON from the server like this:
+It was [here](http://emberjs.com/api/data/classes/DS.ActiveModelAdapter.html#method_findHasMany). 
+The key was the `findHasMany` method was looking for JSON from the server like this:
 
 
 
