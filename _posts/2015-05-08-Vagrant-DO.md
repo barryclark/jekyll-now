@@ -1,4 +1,9 @@
-# 通过Vagrant快速创建DO的Droplet
+---
+layout: post
+title: 通过Vagrant快速创建DO的Droplet
+---
+
+# 生活在墙内
 
 在墙内这边生活的小伙伴，为了编译几行代码，经常需要去墙外面搭建VM。其中DO算是比较简单好用的一个基础服务提供商，各种编译依赖基本都秒级搞定。
 
