@@ -13,6 +13,170 @@ layout: default
       </div>
 
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+      
+      <div class="tags">
+        {% for tag in post.tags %}
+          <div class="tag {{tag}}">{{tag}}</div>
+        {% endfor %}
+    </div>
+        
     </article>
   {% endfor %}
 </div>
+
+<div id="tag-pane">
+<p class="filter-caption">
+    Filter by tag:
+    </p>
+</div>
+
+	<script>
+		var getTagNamesFromPost = function(post){
+			var tags = post.querySelectorAll(".tag");
+			var tagNames = [];
+				for(var i = 0; i < tags.length; i++)
+				{
+					var tag = tags[i];
+					var tagName = tag.classList[1];
+					tagNames.push(tagName);
+				}
+			return tagNames;
+		}
+		
+		var getTagsAndPosts = function(posts){
+			var allTagNames = [];
+			var tagsAndPosts = {};
+			
+			for(var i = 0; i < posts.length; i++)
+			{
+				var post = posts[i];
+				
+				var tagNames = getTagNamesFromPost(post);
+				for(var j = 0; j < tagNames.length; j++)
+				{
+					var tagName = tagNames[j];
+					allTagNames.push(tagName)
+					
+					if(tagsAndPosts[tagName] === undefined)
+						tagsAndPosts[tagName] = [i];
+					else
+						tagsAndPosts[tagName].push(i);
+				}
+			}
+			
+			return tagsAndPosts;
+		};
+		var addClass = function(element, className){
+			if (element.classList)
+				element.classList.add(className);
+			else
+				element.className += ' ' + className;
+		};
+		
+		var hideAllPosts = function(posts){
+			for(var i = 0; i < posts.length; i++)
+			{
+				posts[i].style.display = 'none';
+			}
+		};
+		
+		var displayPosts = function(allPosts, postsToDisplay){
+			hideAllPosts(allPosts);
+			
+			for(var i = 0; i < postsToDisplay.length; i++)
+			{
+				var indexToShow = postsToDisplay[i];
+				allPosts[indexToShow].style.display = '';
+			}
+		};
+		
+		var hasClass = function(element, cls) {
+			return (' ' + element.className + ' ').indexOf(' ' + cls + ' ') > -1;
+		};
+		
+		var removeClass = function(element, className){
+			element.className = element.className.replace(className, "");
+		};
+		
+		var removeSelectedClassFromAllTags = function(tagsAndTagSelectorElements, selectedClass){
+			for(var tagName in tagsAndTagSelectorElements)
+			{
+				if(tagsAndTagSelectorElements.hasOwnProperty(tagName))
+				{
+					removeClass(tagsAndTagSelectorElements[tagName], selectedClass);
+				}
+			}
+		};
+		
+		document.addEventListener("DOMContentLoaded", function(event) { 
+			var posts = document.querySelectorAll('.post');
+			var tagsAndPosts = getTagsAndPosts(posts);
+			
+			var divElement = document.createElement("div");
+			addClass(divElement, "tag-selectors");
+			
+			var clearText = "clear";
+			var clearTagsElement = document.createElement("p");
+			addClass(clearTagsElement, "clear-tags");
+			clearTagsElement.innerText = clearText;
+			divElement.appendChild(clearTagsElement);
+			
+			var selectedClass = "selected";
+			
+			var tagsAndTagSelectorElements = {}
+			tagsAndTagSelectorElements[clearText] = clearTagsElement;
+			
+			for(var tagName in tagsAndPosts)
+			{
+				if(tagsAndPosts.hasOwnProperty(tagName))
+				{
+					var postsContainingTag = tagsAndPosts[tagName];
+					var numberOfPosts = postsContainingTag.length;
+					var classToAdd = "count-" + numberOfPosts;
+					
+					var tagPElement = document.createElement("p");
+					addClass(tagPElement, "tag-selector");
+					addClass(tagPElement, classToAdd);
+					tagPElement.textContent = tagName;
+					
+					tagsAndTagSelectorElements[tagName] = tagPElement;
+					
+					divElement.appendChild(tagPElement);
+				}
+			}
+			
+			var clearShowing = "showing";
+			
+			for(var tagName in tagsAndTagSelectorElements)
+			{
+				if(tagsAndTagSelectorElements.hasOwnProperty(tagName))
+				{
+					tagsAndTagSelectorElements[tagName]
+						.addEventListener("click", 
+						function(eventObj) {
+							var tagName = eventObj.currentTarget.innerText;
+							
+							removeSelectedClassFromAllTags(tagsAndTagSelectorElements, selectedClass);
+							
+							if(tagName === clearText)
+							{
+								removeClass(clearTagsElement, clearShowing);
+								var allPosts = [];
+								for(var n = 0; n < posts.length; n++)
+									allPosts.push(n);
+								
+								displayPosts(posts, allPosts);
+								return;
+							}
+							addClass(clearTagsElement, clearShowing);
+							addClass(tagsAndTagSelectorElements[tagName], selectedClass);
+							var postsToShow = tagsAndPosts[tagName];
+							displayPosts(posts, postsToShow);
+						});
+				}
+			}
+			
+			var tagPaneElement = document.getElementById("tag-pane");
+			tagPaneElement.appendChild(divElement);
+		});
+	</script>

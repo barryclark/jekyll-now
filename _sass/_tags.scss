@@ -1,0 +1,74 @@
+$tagColour: lightblue;
+
+@mixin tag-button($colour)
+{
+    border-radius: 15px;
+    background: $colour;
+    height: 30px; 
+    vertical-align: middle;
+    text-align: center;   
+}
+
+@mixin selected-button()
+{
+    border-radius: 15px;
+    background: darkblue;
+    color: white;
+    height: 35px; 
+    vertical-align: middle;
+}
+
+.posts
+{
+    width: 78%;
+    display: inline-block;
+}
+
+#tag-pane
+{
+    width: 20%;
+    vertical-align: top;
+    display: inline-block;
+    margin-top: 30px;
+    
+    div.tag-selectors
+    {
+        p.tag-selector
+        {
+            text-align: center;   
+            @include tag-button($tagColour);
+        }
+
+        p.selected
+        {
+            @include selected-button();
+        }
+    }
+    
+}
+
+div.tags
+{
+    margin-top: 10px;
+    height: 30px;
+}
+
+p.filter-caption
+{
+    @include tag-button(yellow);
+}
+
+div.tag
+{
+    display: inline;
+    padding: 5px;
+    @include tag-button($tagColour);
+    width: 50px;
+}
+
+$clearWritingColour: black;
+
+p.clear-tags
+{
+    @include tag-button(lightgreen);
+}
