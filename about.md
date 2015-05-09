@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+I’m a designer, writer, and coder from Miami, Florida. I’ve worked with all sorts of people to get their message out and make them look good doing it. This site features a few pieces of my work, as well as things to come.
 
-### More Information
+### What I'm doing these days
 
-A place to include any other types of information that you'd like to include about yourself.
+Since adding HTML and CSS to my journalism toolkit, I've been learning as much as possible about front-end web development. I'm looking for opportunities to work on projects and switch to web development full-time.
 
-### Contact me
+### Need a hand? Got some advice? Let me know?
 
-[email@domain.com](mailto:email@domain.com)
+Need some extra hands on a project? Got some advice about my work? I'm all ears. Feel free to reach me at [c.d.villard@gmail.com](mailto:c.d.villard@gmail.com).
