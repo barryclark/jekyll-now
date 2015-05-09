@@ -9,7 +9,7 @@ name: Charles Villard
 description: Front-end Web Developer from Miami, Florida
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: {{site.baseurl}}/images/headshot.jpg
+avatar: https://raw.githubusercontent.com/cdvillard/cdvillard.github.io/master/images/headshot.jpg
 
 #
 # Flags below are optional
