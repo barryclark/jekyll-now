@@ -61,7 +61,6 @@ Then fill it in:
 
 ```ruby
 class SessionsController < ApplicationController
-  skip_before_filter :restrict_access, only: :create
   def create
     ap params
     user = User.authenticate(params[:user][:email], params[:user][:password])
