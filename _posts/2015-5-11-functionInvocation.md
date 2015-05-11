@@ -50,7 +50,7 @@ a function invocation like fn(...args) is the same as fn.call(window [ES5-strict
     // 等价于desugars to this:
     person.hello.call(person, "world");  
     
-<h2>Using Function.prototype.bind</h22>
+<h2>Using Function.prototype.bind</h2>
 
 Because it can sometimes be convenient to have a reference to a function with a persistent this value, 
 
