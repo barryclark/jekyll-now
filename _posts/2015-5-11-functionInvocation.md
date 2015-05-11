@@ -7,8 +7,8 @@ title: invocation 调用指令
 
 <code>
     function hello(thing) { 
-      console.log(this + " says hello " + thing);
-      
+    console.log(this + " says hello " + thing);
+    
     }
     
     hello.call("Yehuda", "world") 
