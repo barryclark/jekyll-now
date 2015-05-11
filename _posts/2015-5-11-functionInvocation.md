@@ -64,3 +64,5 @@ people have historically used a simple closure trick to convert a function into 
     }
     var boundHello = function(thing) { return person.hello.call(person, thing); }
     boundHello("world");  
+
+link:http://yehudakatz.com/2011/08/11/understanding-javascript-function-invocation-and-this/
