@@ -34,6 +34,21 @@ nodejs的模块系统是参照commonjs规范实现的
 
 用于加载模块 eg：
 
-var math = require('math');
+    var math = require('math');
+    math.add(1,2);
+
+但是有一个问题。commonjs是同步操作
+
+如果要使用模块就必须同步等到模块加载完成
+
+在服务器上等待的时间只是读取时间
+
+但是对浏览器而言这是一个大问题。因为模块都放在服务器上
+
+等待时间取决网络快慢。时间过长会导致浏览器处于假死状态。所以不能使用同步加载
+
+<h2>4.AMD</h2>
+
+为了解决以上问题。amd模块规范诞生了。asynchronous module definition 异步模块定义
 
 
