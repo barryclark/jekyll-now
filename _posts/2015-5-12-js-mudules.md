@@ -51,4 +51,12 @@ nodejs的模块系统是参照commonjs规范实现的
 
 为了解决以上问题。amd模块规范诞生了。asynchronous module definition 异步模块定义
 
+在所有依赖模块的语句都定义了一个回调函数。等到加载完成后。这个回调函数才会运行。
 
+amd也采用require（）加载模块 但是不同于 commonjs
+
+        requied([moduels],callback);
+        // eg
+        require([math],function(math){
+            math.add(1,2);
+        });
