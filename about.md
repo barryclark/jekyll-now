@@ -21,7 +21,7 @@ Here are the questions I generally ask students who are interested in working in
 - What courses have you taken in biology, statistics and computer science?
 - How much time can you commit to working in the lab during the academic and summer months?
 
-### Contact me to set up a meeting at [hewlab15@gmail.com](mailto:hewlab15@gmail.com)
+**Contact me to set up a meeting at [hwheeler1@luc.edu](mailto:hwheeler1@luc.edu)**
 
 ## Location
 
