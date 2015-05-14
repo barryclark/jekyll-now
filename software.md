@@ -18,4 +18,4 @@ install.packages('OmicKriging')
 
 - <a href="https://github.com/hakyimlab/PrediXcan">GitHub Repository</a>
 
-- Publication under revision
+- <a href="https://s3.amazonaws.com/imlab-open/Webdata/Papers/2015/PrediXcan/PrediXcan.pdf">Publication</a> under revision
