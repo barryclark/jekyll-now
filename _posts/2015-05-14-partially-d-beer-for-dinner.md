@@ -21,6 +21,7 @@ Thirsty Planet,Thirsty Goat,American-style Amber Ale,Austin,TX,6.5,30,http://thi
 Lagunitas,Day Time Ale,Fractional IPA,Petaluma,CA,4.6,54,https://lagunitas.com/beers/daytime/
 Goliad,GOLIAD PRESIDIO LA BAHIA,Black Hefeweizen,Goliad,TX,4.7,10,http://goliadbrewing.com/beers/
 Dogfish Head,Piercing Pils,Czech Pilsner,Milton,DE,6,35,http://www.dogfish.com/brews-spirits/the-brews/seasonal-brews/piercing-pils/index.htm
+Abita,Strawberry Harvest Lager,Lager,Abita Springs,LA,4.2,13,https://abita.com/brews/our_brews/strawberry
 ```
 
 I was humbled and excited to have participated, and have an even larger respect for the work these guys do both for the podcast and a living!
