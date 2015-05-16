@@ -78,11 +78,11 @@ This one was crucial. What you build is definitely not important. But once you h
 
 #### Breath In & Keep Coding
 
-This one took me a little bit more time to get. When something doesn’t make sense and you try and try and still nothing… leave it. Just keep going. If you hang in there for too long you might lose your motivation. And surprisingly one day, when you do not expect it, **you will get it**!
+This one took me a little bit more time to get. When something doesn’t make sense and you try and try and still nothing… leave it. Just keep going. If you hang in there for too long you might lose your motivation. **And surprisingly one day, when you do not expect it, you will get it**!
 
 #### Keep an Eye on Job Opportunities
 
-And the last one, keep an eye on job opportunities. I used to have _dark moments_ every Sunday evening. I wondered whether **I was learning something that people were asking for**. And that’s when I was checking jobs descriptions.
+And the last one, keep an eye on job opportunities. I used to have _dark moments_ every Sunday evening. **I wondered whether I was learning something that people were asking for**. And that’s when I was checking jobs descriptions.
 
 >
 >
