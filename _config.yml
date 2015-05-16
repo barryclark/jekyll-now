@@ -6,10 +6,10 @@
 name: Bradley Conn
 
 # Short bio or description (displayed in the header)
-description: My Portfolio
+description: My Projects
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: images/small-logo.jpg
+avatar: https://raw.githubusercontent.com/bec5030/bec5030.github.io/master/images/small-logo.jpg
 
 #
 # Flags below are optional
@@ -21,9 +21,9 @@ footer-links:
   email: bec5030@rit.edu
   facebook:
   flickr:
-  github:
+  github: bec5030
   instagram:
-  linkedin:
+  linkedin: bradleyconn1
   pinterest:
   rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
   twitter:
