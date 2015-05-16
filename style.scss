@@ -150,6 +150,17 @@ img {
 // .masthead
 //
 
+.quote:before {
+    content: '"'
+}
+.quote:after {
+    content: '"'
+}
+.quote {
+    text-align: center;
+    font-weight: bold;
+}
+
 .wrapper-masthead {
   margin-bottom: 50px;
 }
