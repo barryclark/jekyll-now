@@ -49,8 +49,13 @@ footer p:last-child {
   margin-bottom: 0;
 }
 table {
-  width: 100%;
-  border-collapse: collapse;
+  table-layout:fixed;
+  width:100%;
+  word-wrap:break-word;
+  @media (max-width: 1100px) {
+    overflow-x: scroll;
+    display: inline-block;
+  }
 }
 td,
 th {
