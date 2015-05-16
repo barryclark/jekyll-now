@@ -9,7 +9,7 @@ name: AWS Blog
 description: with focus on aws-cli 
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://www.gravatar.com/avatar/ea11434c6a31f77d586f19fc2b30a54d.png 
+avatar: /images/fschaeffler.jpg
 
 #
 # Flags below are optional
@@ -55,7 +55,7 @@ baseurl: ""
 
 markdown: kramdown
 highlighter: pygments
-permalink: /:title/
+# permalink: /:title/
 
 # The release of Jekyll Now that you're using
 version: v1.1.0
