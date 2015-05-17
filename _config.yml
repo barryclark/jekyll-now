@@ -47,10 +47,10 @@ baseurl: ""
 
 markdown: kramdown
 highlighter: pygments
-# permalink: /:title/
+permalink: /:year/:title/
 
 # The release of Jekyll Now that you're using
-version: v1.1.0
+version: v2.5.3
 
 # Set the Sass partials directory, as we're using @imports
 sass:
@@ -68,4 +68,6 @@ exclude:
     - README.md
     - CNAME
     - images/social-buttons/raw/
-    - _deploy.sh
+    - _deploy/_deploy.sh
+    - _deploy/_deploy-staging.sh
+    - _deploy/_deploy-production.sh
