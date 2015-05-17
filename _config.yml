@@ -76,3 +76,4 @@ exclude:
     - LICENSE
     - README.md
     - CNAME
+    - images/social-buttons/raw/
