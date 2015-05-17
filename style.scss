@@ -18,7 +18,7 @@ html {
 }
 
 body {
-	background: $white;
+  background: $white;
   font: 18px/1.4 $helvetica;
   color: $darkGray;
 }
@@ -176,8 +176,6 @@ img {
 
 .site-avatar {
   float: left;
-  width: 70px;
-  height: 70px;
   margin-right: 15px;
 
   @include mobile {
@@ -185,10 +183,14 @@ img {
     display: block;
     margin: 0 auto;
   }
+}
 
-  img {
-    border-radius: 5px;
-  }
+.site-avatar-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 35px;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
 }
 
 .site-info {
