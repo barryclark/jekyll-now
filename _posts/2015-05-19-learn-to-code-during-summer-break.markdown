@@ -87,4 +87,8 @@ _(Click on the image to start watching)_
 
 [![Scratch](http://miriamtocino.github.io/images/posts/scratch.png)](https://scratch.mit.edu/)
 
-Check out this inspiring talk about [Scratch](https://scratch.mit.edu/) from Mitch Resnick [Let's teach kids to code](https://www.ted.com/talks/mitch_resnick_let_s_teach_kids_to_code?embed=true), about the benefits of teaching kids to code, so they can do more than just “read” new technologies — but also create them.
+Check out this inspiring talk about [Scratch](https://scratch.mit.edu/) from Mitch Resnick [Let's teach kids to code](https://www.ted.com/talks/mitch_resnick_let_s_teach_kids_to_code?embed=true), about how kids can do more than just “read” new technologies — but also create them.
+
+_(Click on the image to start watching)_
+
+[![Scratch](http://miriamtocino.github.io/images/posts/lets-teach-kids-to-code.png)](https://www.ted.com/talks/mitch_resnick_let_s_teach_kids_to_code?embed=true)
