@@ -15,10 +15,15 @@
 
 html {
   font-size: 100%;
+  background: url(images/background.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 body {
-  background: $white;
+   /* background: $white; */
   font: 18px/1.4 $helvetica;
   color: $darkGray;
 }
@@ -191,6 +196,7 @@ td{
 
 .wrapper-masthead {
   margin-bottom: 50px;
+  background: $white;
 }
 
 .masthead {
@@ -273,6 +279,11 @@ nav {
 //
 // .main
 //
+
+#main {
+  background-color:rgba(255,255,255,1);
+  border-radius: 25px;
+}
 
 .posts > .post {
   padding-bottom: 2em;
