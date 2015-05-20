@@ -29,7 +29,7 @@ footer-links:
 disqus:
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics: UA-63060326-1
+# google_analytics: UA-63060326-1
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
@@ -68,6 +68,9 @@ exclude:
     - README.md
     - CNAME
     - images/social-buttons/raw/
+    - images/aws-icons/raw-svg/
+    - images/aws-icons/raw-png/
     - _deploy/_deploy.sh
     - _deploy/_deploy-staging.sh
     - _deploy/_deploy-production.sh
+    - _dev/
