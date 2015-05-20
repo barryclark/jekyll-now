@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Setup aws-cli
+tags: [cli, iam]
 ---
 
 The aws-cli is a neat and handy command line tool with which the management of AWS-services is way more faster. Therefore, this blog focuses on the usage of aws-cli. Within in this post, I'll explain to you how to setup the aws-cli.
