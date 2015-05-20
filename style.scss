@@ -145,6 +145,7 @@ td{
 .date {
   font-style: italic;
   color: $gray;
+  text-align: right;
 }
 
 // Specify the color of the selection
@@ -322,7 +323,6 @@ footer {
 
 .title-part-left {
   display: table-cell;
-  width: auto;
 }
 
 .title-part-right {
