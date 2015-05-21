@@ -116,6 +116,12 @@ img {
   max-width: 100%;
 }
 
+img.centered {
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
 table{
     border-collapse: collapse;
     border-spacing: 0;
@@ -339,6 +345,7 @@ footer {
 .title-part-right {
   display: table-cell;
   text-align: right;
+  width: 200px;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
