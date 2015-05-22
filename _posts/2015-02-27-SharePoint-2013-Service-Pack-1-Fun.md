@@ -42,7 +42,7 @@ All the following steps **must be done on each server** and can be run at the sa
     - SharePoint Search Host
 - Right click on the installer and choose "Run as Administrator".
 
-       ![Right click on the installer](/images/2015-2-27-SharePoint-2013-Service-Pack-1-Fun/right-click-install-as-admin.png)
+       ![Right click on the installer](/images/2015-02-27-SharePoint-2013-Service-Pack-1-Fun/right-click-install-as-admin.png)
 - An installer window will pop up. Accept the terms and click continue
     - This will start the installer and may take a long time depending on how fast your system is.
     - While this is running you can log onto the other SharePoint servers and go through these same steps
@@ -54,21 +54,21 @@ That was easy!  No issues.  I just had to put my feet up and wait for an hour wh
 - Navigate to the lower left hand portion of the screen and click on Start when it appears (Thank you Microsoft for bringing back the start button in R2! This is painful on servers.)
     - Start typing "SharePoint" and then right click on SharePoint 2013 Products Configuration Wizard.
 
-        ![Right click on the installer](/images/2015-2-27-SharePoint-2013-Service-Pack-1-Fun/sp-config-wizard.png)
+        ![Right click on the installer](/images/2015-02-27-SharePoint-2013-Service-Pack-1-Fun/sp-config-wizard.png)
     - Choose Run as Administrator.
 - A welcome screen will pop up. Click next.
 - A warning message pops up. It is telling you that SharePoint will not work while this is running because services will be restarted. Click yes.
 
-    ![Warning](/images/2015-2-27-SharePoint-2013-Service-Pack-1-Fun/spcw-service-warning.png)
+    ![Warning](/images/2015-02-27-SharePoint-2013-Service-Pack-1-Fun/spcw-service-warning.png)
 - The wizard will now **try** to finish the install of SP1. You will see a screen like this that goes through 9 steps
 
-    ![SharePoint Products and Configuration Wizard](/images/2015-2-27-SharePoint-2013-Service-Pack-1-Fun/spcw-install.png)
+    ![SharePoint Products and Configuration Wizard](/images/2015-02-27-SharePoint-2013-Service-Pack-1-Fun/spcw-install.png)
 
 #### The first error!
 
 - On step 9 this error popped up:
 
-    ![SharePoint Error](/images/2015-2-27-SharePoint-2013-Service-Pack-1-Fun/spcw-error-1.png)
+    ![SharePoint Error](/images/2015-02-27-SharePoint-2013-Service-Pack-1-Fun/spcw-error-1.png)
 - If you click on the link and do a search for "exception" you will be brought to this:
 
 <pre>
@@ -149,13 +149,13 @@ For more information see:
 - From the SharePoint server open up the Services application
 - Look for SharePoint Timer Service and make note of the user that is under the Log On As column
 
-    ![SharePoint Timer Service](/images/2015-2-27-SharePoint-2013-Service-Pack-1-Fun/sp-timer-service.png)
+    ![SharePoint Timer Service](/images/2015-02-27-SharePoint-2013-Service-Pack-1-Fun/sp-timer-service.png)
 
 - This user will need to be either a db_owner on all the SharePoint databases or we can give it the sysadmin server role.  I decided to go with the sysadmin role
     - From a SQL Management Studio select Security then Server roles and right click on sysadmin
         - Choose properties
 
-        ![Add a user to SQL Server sysadmin role](/images/2015-2-27-SharePoint-2013-Service-Pack-1-Fun/sql-sysadmin.png)
+        ![Add a user to SQL Server sysadmin role](/images/2015-02-27-SharePoint-2013-Service-Pack-1-Fun/sql-sysadmin.png)
 
     - Now add the user that is running the timer service and you are good to re-run the config wizard.
 
