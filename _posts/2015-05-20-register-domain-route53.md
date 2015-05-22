@@ -189,7 +189,7 @@ The steps for creating the recordsets for the concept are
 Thanks to [cli53](https://github.com/barnybug/cli53){:target="_blank"}, this can be done with the following few commands.
 
 {% highlight bash %}
-$ cli53 info aws-is-cool.de
+$ cli53 info aws-blog.io
 HostedZone:
   ResourceRecordSetCount: 5
   CallerReference: RISWorkflow-235edf15923f0XXXXXc26ddbeea39ee2
@@ -197,7 +197,7 @@ HostedZone:
     Comment: HostedZone created by Route53 Registrar
     PrivateZone: false
   Id: /hostedzone/Z3GXXXXX3UGTO
-  Name: aws-is-cool.de.
+  Name: aws-blog.io.
 DelegationSet:
   NameServers:
     - ns-806.awsdns-36.net
@@ -205,11 +205,11 @@ DelegationSet:
     - ns-1176.awsdns-19.org
     - ns-1617.awsdns-10.co.uk
 
-$ cli53 rrcreate aws-is-cool.de tim A 10.0.0.1
-$ cli53 rrcreate aws-is-cool.de struppi A 10.0.0.2
-$ cli53 rrcreate aws-is-cool.de dev ALIAS 'Z3GXXXXX3UGTO struppi.aws-is-cool.de'
-$ cli53 rrcreate aws-is-cool.de staging ALIAS 'Z3GXXXXX3UGTO tim.aws-is-cool.de'
-$ cli53 rrcreate aws-is-cool.de '' ALIAS 'Z3GXXXXX3UGTO tim.aws-is-cool.de'
+$ cli53 rrcreate aws-blog.io tim A 10.0.0.1
+$ cli53 rrcreate aws-blog.io struppi A 10.0.0.2
+$ cli53 rrcreate aws-blog.io dev ALIAS 'Z3GXXXXX3UGTO struppi.aws-blog.io'
+$ cli53 rrcreate aws-blog.io staging ALIAS 'Z3GXXXXX3UGTO tim.aws-blog.io'
+$ cli53 rrcreate aws-blog.io '' ALIAS 'Z3GXXXXX3UGTO tim.aws-blog.io'
 {% endhighlight %}
 
 The nice thing of this concept is that whenever tim or struppi need to change their IP-addresse, they don't need to get changed for all referencing entries, but only for the non-alias entry.

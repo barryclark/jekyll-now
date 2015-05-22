@@ -47,3 +47,6 @@ aws s3 sync $SITE_FOLDER s3://$BUCKET_NAME/ --delete
 invalidation_batch_param="'{\"Paths\": {\"Quantity\": 1,\"Items\": [\"/*\"]},\"CallerReference\": \"$TIMESTAMP\"}'"
 invalidation_cmd="aws cloudfront create-invalidation --distribution-id $DISTRIBUTION_ID --invalidation-batch $invalidation_batch_param"
 eval $invalidation_cmd
+
+# done as all items are compressed now
+rm -rf $SITE_FOLDER
