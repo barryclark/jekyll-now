@@ -212,4 +212,4 @@ $ cli53 rrcreate aws-blog.io staging ALIAS 'Z3GXXXXX3UGTO tim.aws-blog.io'
 $ cli53 rrcreate aws-blog.io '' ALIAS 'Z3GXXXXX3UGTO tim.aws-blog.io'
 {% endhighlight %}
 
-The nice thing of this concept is that whenever tim or struppi need to change their IP-addresse, they don't need to get changed for all referencing entries, but only for the non-alias entry.
+The nice thing of this concept is that whenever tim or struppi need to change their IP-address, they don't need to get changed for all referencing entries, but only for the non-alias entry.
