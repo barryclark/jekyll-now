@@ -67,8 +67,8 @@ The first step is to figure out how much space each site collection should be us
 Next you need to decide which sites to move and to where
 
 - The excel spreadsheet helps you figure this out.
-- WSS_Content_7 has hardly any data in it where WSS_Content_3 has 86 GB used.
-- Find the largest table in WSS_Content_3 and set the "Move Here" column to WSS_Content_7.
+- `WSS_Content_7` has hardly any data in it where `WSS_Content_3` has 86 GB used.
+- Find the largest table in `WSS_Content_3` and set the "Move Here" column to `WSS_Content_7`.
  - ![Content Database Disk Usage](/images/2015-05-22-SharePoint-2013-Site-Collection-Disk-Usage/excel-cleanup-6.png)
 - Then click over to the PivotTable -> Click on Analyze -> Click Refresh
  - The new sizes will be displayed.
@@ -81,7 +81,10 @@ Next you need to decide which sites to move and to where
  - This will list out the Site collections you need to move and where
 - Go to the SharePoint server and open up a SharePoint PowerShell Window.
 - Run this command to move a site collection:
- - `Move-SPSite <http://ServerName/Sites/SiteName> -DestinationDatabase <DestinationContentDb>`
+
+```PowerShell
+Move-SPSite <http://ServerName/Sites/SiteName> -DestinationDatabase <DestinationContentDb>
+```
  - For more info see: [Move site collections between databases in SharePoint 2013](https://technet.microsoft.com/en-us/library/cc825328.aspx) 
  
  
