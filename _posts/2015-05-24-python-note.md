@@ -2,7 +2,6 @@
 layout: post
 title: Python 点滴
 ---
-date: 2015-05-25
 
 Python 学习笔记--Closures
 
