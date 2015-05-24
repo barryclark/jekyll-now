@@ -93,16 +93,13 @@ Python 学习笔记--Closures
 	def add(x, y):
     	time.sleep(3)
     	print 'add result: %d' % (x + y,)
-        
-	{% highlight python %}
+	
 	@function_performance_statistics(False)
 	def mul(x, y=1):
     	print 'mul result: %d' % (x * y,)
         
 	add(1, 1)
 	mul(10)
-    
-    {% endhighlight %}
     
 	##等价于
     add = function_performance_statistics(True)(add(1, 1))
