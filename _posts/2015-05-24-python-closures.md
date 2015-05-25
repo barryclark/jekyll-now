@@ -2,7 +2,6 @@
 layout: post
 title: Python 点滴
 ---
-
 Python 学习笔记--Closures
 	
 	
@@ -107,6 +106,7 @@ Python 学习笔记--Closures
     
     ##其中 counter 是闭包
 	```
-    [盛江涛的 Blog][] inline link.
+
+	[盛江涛的 Blog][] inline link.
 
 [盛江涛的 Blog]: http://qiaqiaqia.github.io/ "Blog site"
