@@ -158,7 +158,7 @@ Python 学习笔记--Class
     
     类方法第一个参数为类，常习惯用 *cls* 来表示
     
-    使用 **staticmethod()** 和 **classmethod()** 内建函数作为装饰器来分别来声明静态和类函数。
+    使用 `**staticmethod()** 和 **classmethod()**` 内建函数作为装饰器来分别来声明静态和类函数。
     
     
     
