@@ -6,4 +6,4 @@ permalink: /about/
 
 Inspired by the tech bubble
 
-### Contact me on GitHub or Twitter below
+Contact me on GitHub or Twitter below
