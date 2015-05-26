@@ -3,6 +3,6 @@ layout: post
 title: Test Post for Jai's New Blog
 ---
 
-Hopefully the world can see this! Tomorrow, time to add some styling to this page
+Hi Finishing School classmates! Tomorrow, time to add some style to this page
 
 
