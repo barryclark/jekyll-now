@@ -18,6 +18,11 @@ layout: null
         <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
         <link>{{ site.url }}{{ post.url }}</link>
         <guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
+        {% if post.tags != null and post.tags.size > 0 %}
+        <enclosure url="{{ site.url }}/images/aws-icons/100x100_single/{{ post.tags[0] }}.png" type="image/png"></enclosure>
+        {% else %}
+        <enclosure url="{{ site.url }}/images/blog.png" type="image/png"></enclosure>
+        {% endif %}
       </item>
     {% endfor %}
   </channel>
