@@ -13,7 +13,7 @@ I was inspired by the above video (depicting a set of record players in control 
 
 ##Derivation of nodes `A`, `B`, `P`, `Q`, and `M`:
 
-For our pantograph assembly, we define the centers of two circles `A` and `B`, each with a radius `r_a` and `r_b`, respectively. The current positions of nodes `P` and `Q` are determined by angles \(\theta_a\) and \(\theta_b\).
+For our pantograph assembly, we define the centers of two circles `A` and `B`, each with a radius `r_a` and `r_b`, respectively. The current positions of nodes `P` and `Q` are determined by angles \\(\theta_a\\) and \\(\theta_b\\).
 
 Taking the position of `A` as the origin, we can find:
 
