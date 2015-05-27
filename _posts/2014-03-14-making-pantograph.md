@@ -15,10 +15,15 @@ I was inspired by the above video (depicting a set of record players in control 
 For our pantograph assembly, we define the centers of two circles $A$ and $B$, each with a radius $r_a$ and $r_b$, respectively. The current positions of nodes $P$ and $Q$ are determined by angles $\theta_a$ and $\theta_b$.
 
 Taking the position of $A$ as the origin, we can find
+
 $$ \vec{A} = \Big(0,\ 0\Big) $$
+
 $$ \vec{B} = \Big(0,\ (r_a + d + r_b)\Big) $$
+
 $$ \vec{P} = \vec{A} + \Big( r_a\ \angle\ \theta_a \Big) $$
+
 $$ \vec{Q} = \vec{B} + \Big( r_b\ \angle\ \theta_b \Big) $$
+
 $$ \vec{M} = \frac{1}{2}\left( \vec{P} + \vec{Q}\right) = \Big( \tfrac{1}{2}(P_x + Q_x), \tfrac{1}{2}(P_y + Q_y) \Big)$$
 
 ##Derivation of node $R$
