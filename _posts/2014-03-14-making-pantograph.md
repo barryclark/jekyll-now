@@ -18,9 +18,6 @@ For our pantograph assembly, we define the centers of two circles `A` and `B`, e
 Taking the position of `A` as the origin, we can find:
 
 
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_HTMLorMML-full"></script>
-
-
 
 
 
