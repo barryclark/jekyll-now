@@ -35,6 +35,7 @@ $$g = \tfrac{1}{2}|\overline{PQ}| = \tfrac{1}{2}{\sqrt{(Q_x - P_x)^2 + (Q_y - P_
 Thus, $h = \sqrt{(\ell_1)^2 - g^2}$. This allows us to find
 
 $$\vec{R} = \vec{M} + \left( h\ \angle\ \tan^{-1}\left(m_{\overline{MR}}\right) \right)$$
+
 $$\vec{R} = \vec{M} + \left( \sqrt{a^2 - g^2}\ \angle\ \tan^{-1}\left( \dfrac{-1}{m_{\overline{PQ}}} \right) \right) $$
 
 ##Derivation of nodes $S$, $T$
@@ -48,9 +49,12 @@ $$\vec{S} = \vec{R} + \left( \ell_2\ \angle\ \varphi_b\right) $$ $$
 
 ##Derivation of node $U$
 It is trivial to present a construction of triangle $\triangle TUS$ that directly mirrors that of triangle $\triangle QRP$. We find
-$$\vec{N} = \frac{1}{2}\left(\vec{S} + \vec{T}\right) $$ $$
-d = \sqrt{(\ell_3)^2 - c^2} $$ $$
-m_{\overline{NU}} = \dfrac{-1}{m_{\overline{ST}}} = -\dfrac{T_x - S_x}{T_y - S_y}$$
+
+$$\vec{N} = \frac{1}{2}\left(\vec{S} + \vec{T}\right) $$ 
+
+$$ d = \sqrt{(\ell_3)^2 - c^2} $$ 
+
+$$ m_{\overline{NU}} = \dfrac{-1}{m_{\overline{ST}}} = -\dfrac{T_x - S_x}{T_y - S_y}$$
 
 Thus, we can write node $U$ as
 $$\vec{U} = \vec{N} + \left(d\ \angle\ \tan^{-1}\left( m_{\overline{NU}} \right)\right)$$
