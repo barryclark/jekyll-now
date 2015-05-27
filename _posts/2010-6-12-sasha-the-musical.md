@@ -13,15 +13,13 @@ post_type: post
 layout: post
 ---
 
-# Sasha: A Musical featuring Sasha Ayvazov and his Ensemble Friend Group
+## Sasha: A Musical featuring Sasha Ayvazov and his Ensemble Friend Group
 
 This is an old draft of a musical I wrote for an old friend's birthday. He was a very specific character (as are, I think, all of us mentioned in the musical) and, as such, seemed to require a bigger gift than the common shirt/food/music triumvirate that has served me well. It's a number of years old, but even then, it's clear how the foremost attributes of people become them as they grow older. I think teenagers often become caricatures of their earlier selves. Two, three years later, Sasha is still a nationalist, abrasive math nerd. Joe still talks about RIT. Joey uses the same sort of humor - pausing the conversation, remixing, and interjecting the change. I think it's interesting how clearly these traits were even then, with us all so young. 
 
-# **SASHA: THE MUSICAL**
+## **SASHA: THE MUSICAL**
 
-## _by James Buckland_
-
-## SCENE I
+### _by James Buckland_
 
 (Sasha and friends are gathered in his living room for his College-time going-away party.)
 
