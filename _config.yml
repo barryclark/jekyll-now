@@ -62,6 +62,9 @@ theme:
 paginate: 5
 paginate_path: "blog/page:num"
 
+# POST NAVIGATION
+post_navigation: true
+
 # BUILD SETTINGS
 markdown: kramdown
 highlighter: pygments

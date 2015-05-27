@@ -12,6 +12,18 @@ layout: default
   <section class="post-content">{{ content }}</section>
 </article>
 
+<!-- Post navigation -->
+{% if site.post_navigation %}
+<div id="post_nav">
+    {% if page.previous.url %}
+        <a class="prev" href="{{ page.previous.url }}" {% if page.next.url == null %} style="border-right:1px solid rgba(0, 0, 0, 0.1)" {% endif %}><h4>{{ page.previous.title }}</h4> &laquo; {{ site.theme.str_prev }}</a>
+    {% endif %}
+    {% if page.next.url %}
+        <a class="next" href="{{ page.next.url }}" {% if page.previous.url == null %} style="margin-left:50%;border-left:1px solid rgba(0, 0, 0, 0.1)" {% else %} style="border-left:1px solid rgba(0, 0, 0, 0.1)" {% endif %}><h4>{{ page.next.title }}</h4> {{ site.theme.str_next }} &raquo;</a>
+    {% endif %}
+</div>
+{% endif %}
+
 <!-- Disqus -->
 {% if site.theme.disqus_shortname %}
 <div class="comments">
