@@ -52,6 +52,16 @@ Distressingly, this appears to be a function that cannot be resolved into a one-
 
 At a loss with the tools of continuous mathematics, I turned to discrete simulations: a set of four processing.js simulations illustrating what turned out to be a very complex space.
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.4.8/processing.min.js"></script>
+
+##First Demo
+<canvas data-processing-sources="alpha.pde"></canvas>
+
+##Second Demo
+<canvas data-processing-sources="beta.pde"></canvas>
+
+##Third Demo
+<canvas data-processing-sources="delta.pde"></canvas>
 
 
 
