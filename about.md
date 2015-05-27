@@ -4,6 +4,6 @@ title: About
 permalink: /about/
 ---
 
-See [first post] (/hello-multiverse/) for details. 
+This blog tracks my progress learning and utilizing the best tech I can understand. 
 
 Built with [Jekyll Now] (http://www.jekyllnow.com/)!
