@@ -10,6 +10,7 @@ comment_status: open
 post_name: sasha-the-musical
 status: publish
 post_type: post
+layout: post
 ---
 
 # Sasha: A Musical featuring Sasha Ayvazov and his Ensemble Friend Group
