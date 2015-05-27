@@ -1,0 +1,8 @@
+---
+title: Making Lyric
+layout: post
+---
+
+*Project*: **[Lyric](http://ambuc.github.io/lyric/).**
+
+Using a document with every [John Darnielle](http://www.themountaingoats.net/) lyric ever written, I wrote a python script to create a JSON data file containing a simple Markov-chain-style dictionary, where the user can pick a word from the vocabulary at random and find a list of words that typically follow it in written (or, sung) use. The javascript code on this page randomly picks starting words and chains them out into long, sentence-like lists that have the approximate mood and vocabulary of a singer-songwriter. The code then goes one step further to generate a typical song pattern (verse, bridge, chorus) and fills the sections with lines of a predetermined length. The end result is a piece of entirely generative writing that often reads like an intentioned song.
