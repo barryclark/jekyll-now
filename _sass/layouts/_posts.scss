@@ -47,3 +47,41 @@ header {
     @extend %padding-regular;
   }
 }
+// Post navigation
+#post-nav {
+  width:100%;
+  border-bottom: 1px solid $border-color;
+  display: inline-block;
+
+  a, .page-title {
+    display: inline-block;
+  }
+
+  .page-title {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+    width: 100%;
+  }
+
+  a {
+    @extend %padding-small;
+    border: 1px solid rgba(255, 255, 255, 0);
+    text-align: center;
+    width: 50%;
+  }
+  a:hover {
+    @extend a.button:hover;
+  }
+
+  #prev-post {
+      float: left;
+  }
+  #next-post {
+      float: right;
+  }
+
+  i {
+    vertical-align: middle;
+  }
+}
+
