@@ -1,5 +1,5 @@
 ---
-title: Design and Manufacture of an Dodecahedral Planetarium
+title: Design and Manufacture of an Dodecahedral Planetarium Made of Laser-Cut Acrylic
 layout: post
 ---
 
