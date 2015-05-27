@@ -1,5 +1,5 @@
 ---
-title: Making a Pantograph
+title: Partial Mechanical Design of a Pantograph
 layout: post
 ---
 
