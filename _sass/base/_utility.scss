@@ -11,18 +11,6 @@
     padding: $padding-small * 1.5 $padding-large / 1.6;
   }
 }
-%padding-left-regular {
-  padding: $padding-x-small $padding-large /2 $padding-x-small $padding-large;
-  @media (max-width: 1000px) {
-    padding: $padding-x-small * 1.5 $padding-large / 1.6;
-  }
-}
-%padding-right-regular {
-  padding: $padding-x-small $padding-large $padding-x-small $padding-large /2;
-  @media (max-width: 1000px) {
-    padding: $padding-x-small * 1.5 $padding-large / 1.6;
-  }
-}
 %link-hover {
   text-decoration: underline;
   color: darken($link-color, 15%);
