@@ -22,7 +22,8 @@ $$\vec{M} = \frac{1}{2}\left( \vec{P} + \vec{Q}\right) = \Big( \tfrac{1}{2}(P_x 
 ##Derivation of node $R$
 Attached to the points $P$, $Q$ are two rigid bodies of length $\ell_1$, which meet at variable point $R$. By finding the midpoint $M$ between $P$ and $Q$, we can find the right triangle $\triangle PMR$. From the definition of slope, we find $\overline{PQ}$ to be
 $$m_{\overline{PQ}} = \dfrac{Q_y - P_y}{Q_x - P_x}$$
-Because $\overline{MR} \perp \overline{PQ}$, we can find the slope of the line $\overline{MR}$ to be $m_{\overline{MR}} = \left(m_{\overline{PQ}}\right)^{-1}$. In addition, we can construct the right triangle $\triangle PMR$ with known side lengths $a$ and $g$, where
+Because $\overline{MR} \perp \overline{PQ}$, we can find the slope of the line $\overline{MR}$ to be $$ m_{\overline{MR}} = \left(m_{\overline{PQ}}\right)^{-1} $$ 
+In addition, we can construct the right triangle $\triangle PMR$ with known side lengths $a$ and $g$, where
 $$g = \tfrac{1}{2}|\overline{PQ}| = \tfrac{1}{2}{\sqrt{(Q_x - P_x)^2 + (Q_y - P_y)^2}}$$
 Thus, $h = \sqrt{(\ell_1)^2 - g^2}$. This allows us to find
 
