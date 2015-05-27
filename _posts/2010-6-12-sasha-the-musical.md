@@ -17,7 +17,7 @@ layout: post
 
 This is an old draft of a musical I wrote for an old friend's birthday. He was a very specific character (as are, I think, all of us mentioned in the musical) and, as such, seemed to require a bigger gift than the common shirt/food/music triumvirate that has served me well. It's a number of years old, but even then, it's clear how the foremost attributes of people become them as they grow older. I think teenagers often become caricatures of their earlier selves. Two, three years later, Sasha is still a nationalist, abrasive math nerd. Joe still talks about RIT. Joey uses the same sort of humor - pausing the conversation, remixing, and interjecting the change. I think it's interesting how clearly these traits were even then, with us all so young. 
 
-# **SASHA: THE MUSICAL** __
+# **SASHA: THE MUSICAL**
 
 ## _by James Buckland_
 
@@ -100,3 +100,261 @@ FAYE That wasn’t so bad. I liked the part where you fought over me.
 JOEY I didn’t follow your argument the entire time, Sasha.
 
 BAUMAN I think he was arguing for Objectivism.
+
+JOE
+Nobody appreciates me.
+
+TURTLE
+That’s okay, Joe! People at college appreciate you!
+
+(beat)
+
+SASHA
+(awkwardly moving right along) Heh, um. Well, now I’d like to present a love song to the most important guest here tonight.
+
+(Faye stands up, blushing. Sasha pushes her back down.)
+
+SASHA
+Maths!
+
+To Maths I’ve Loved
+[Emin7] [Gdim] [G]
+To Maths I’ve Loved
+[G] [G/D]
+When people can be negative
+[F] [C]
+Their emotions go askew
+[G] [G/D]
+I much prefer the positive
+[F] [C]
+I’m the absolute value
+[Emin7] [Gdim]
+And when the slope of my intentions seems to
+[G]
+go astray
+[C]
+And when there’s no-one else around
+[C/B]
+It’s time to go to town
+[C/Bb]
+on the good old equations of
+[F]
+Faraday
+[Fm]
+To maths
+[C]
+I’ve Loved
+[Bb] [B]
+(and Faye)
+[F]
+There’s nothing else for me
+[Fm]
+This song is for maths
+[C] [Gsus] [G]
+I’ve Loved
+[Eb] [G]
+Desire stretching out into infinity
+[C]
+Oh, maths, you’re the only one for me
+[Eb] [G]
+I adore you…
+[C]
+Endlessly (well, in the real number set)
+[D] [F#m]
+When my life is turning putrid.
+[C maj7] [G]
+I can always count on Euclid…
+[D] [F#m]
+When my friends are in a brawl.
+[Cmaj7] [G]
+I can count on L’Hopital…
+[D] [F#m]
+And when my soda’s lost its fizz.
+[Cmaj7] [G]
+I can turn to Leibniz…
+[D] [F#m]
+And when I’m all bothered and hot.
+[Cmaj7] [G]
+I rely on Mandelbrot…
+[Fm]
+Oh, math
+[C]
+I’m yours…
+(applause. Faye takes a bow anyway.)
+
+SASHA
+You know, I still need to devise that Mandelbrot sex game…
+
+BAUMAN
+I do know. I can help with that.
+
+JOEY
+You know, Maths haven’t been the same since Pink Floyd left the Pixies. You know, in my opinion.
+
+(Faye administers the look of disapproval)
+
+JOE
+Hey, Sasha! You know what hasn’t been the same since… well, since World War Two? Russia.
+
+BAUMAN
+I do know!
+
+(Sasha stands up, furious)
+
+SASHA
+Take that back, Joe! Take it back right now!
+
+JOE
+Oh, you know I’m right.
+
+JOEY
+Hey, guys, I’m Russian!
+
+JOE
+See?
+
+SASHA
+Oh, I suppose not. Guess I’d better sing about it.
+
+Fall Of The Russian Empire
+[Dm] [Bb]
+Russia!
+[Gm] [A]
+Such epic misfortune,
+[Dm] [Bb]
+Your populus mis-strewn
+[Gm] [A]
+To all of the corners of the globe
+[Dm] [Bb]
+Your language!
+[Gm] [A]
+The clearest that there is!
+[Dm] [Bb]
+Most logical, that it is.
+[Gm] [A]
+We even had the first space probe!
+[Gm] [A]
+Where have you gone?
+[Dm7] [Bbmaj7]
+Russia, it’s been so long.
+[Gm] [A]
+And in that time, I think I’ll find
+[Dm7] [Bbmaj7]
+I’ve missed you all along.
+[Dm] [Bb]
+Russia!
+[Gm] [A]
+Such brave-hearted conquest
+[Dm] [Bb]
+towering over the rest
+[Gm] [A]
+but we all knew that you would fall.
+[Dm] [Bb]
+Your empire!
+[Gm] [A]
+We all worked and aspired for you
+[Dm] [Bb]
+Looking round, you have tumbled, you
+[Gm] [A] [Dm]
+have fallen to the ground.
+(quiet, lamenting applause)
+
+SASHA
+Thank you.
+
+JOEY
+Are you sure we’re talking about the same Russia? I meant the one with all the cars and shit. The one on the Discovery channel, with all the strange names and faces.
+
+JOE
+(quietly) Goddamn it.
+
+FAYE
+See, this is why education is important!
+
+TURTLE
+Why not let people have their ignorance? I mean, objectively, what is knowledge? I mean, within the ideology of Objectivism, right? Why not?
+
+BAUMAN
+I will fucking kill you.
+
+SASHA
+Education is important. Unless you’re me, in which case you already know everything. Hey, did I tell you guys I got into college? (excited responses) But I’m not going. No, good-bye, my friends. Keep in touch! I won’t be on Facebook. Or answer my phone. But it’ll still be your fault if we don’t talk for a few years. I’ve missed you already. I could go to college, meet new people, but…nope, fuck college. I’m going to space.
+
+Fuck College, I’m Going to Space
+[C] [G] [F] [F]
+I got in to college.
+[C] [G] [F] [F]
+I knew that I would do it.
+[Am] [Am] [F] [F]
+You bastards all will work for me some day.
+[C] [G] [C] [F]
+(pause)
+[C] [G] [F] [F]
+They said I’d never cut it.
+[C] [G] [F] [F]
+They said that I was unfit
+[Am] [Am] [F] [F]
+I turned my back on them and said ‘you’ll pay!’
+[C] [G] [C] [F]
+(pause)
+[Em] [Em] [Eb] [Eb]
+And now, my time has come.
+[D7] [G]
+I’m no longer running from
+[C] [G] [F] [F]
+all of the things that I was afraid of.
+[C] [G] [F] [F]
+Fuck college-
+[C] [G] [F] [F]
+I’m going into space.
+[C] [G] [F] [F]
+I’m blasting off tomorrow,
+[C] [G] [F] [F]
+I’ll leave the world with my mistakes.
+[C] [G] [F] [F]
+Fuck college-
+[C] [G] [F] [F]
+There’s nebulae and shit!
+[C] [G] [F] [F]
+With galaxies, who wants four more
+[C] [G] [F] [F]
+whole years of this bullshit?
+[C] [G] [F] [F]
+I got in to college.
+[C] [G] [F] [F]
+I guess it doesn’t matter.
+[Am] [Am] [F] [F]
+You bastards all will run from me one day.
+[C] [G] [C] [F]
+(pause)
+[Em] [Em] [Eb] [Eb]
+I’ll swallow all this knowledge whole
+[D7] [G]
+Enrich my body and my soul
+[C] [G] [F] [F]
+Come back and bust some hearts and minds wide open.
+[C] [G] [F] [F]
+Fuck college-
+[C] [G] [F] [F]
+I’m going into space.
+[C] [G] [F] [F]
+I’m blasting off tomorrow,
+[C] [G] [F] [F]
+leave the world with my mistakes.
+[C] [G] [F] [F]
+Fuck college-
+[C] [G] [F] [F]
+Who knows what I might find?
+[C] [G] [F] [F]
+Good luck, you poor sad bastards
+[C] [G] [F] [F]
+with the woes of all mankind!
+[C]
+Fuck college!
+[Dm7] [Ebdim7] [Am7] [C]
+(Sasha dons a jetpack and takes off through the ceiling of his living room to the weeping of his former friends.)
+
+JOE
+Hey, RIT has jetpacks!
+
+(fin)
