@@ -11,7 +11,7 @@ I was inspired by the above video (depicting a set of record players in control 
 
 ![Pantograph](http://33.media.tumblr.com/658c3725652040e76bcb695886fb89f2/tumblr_inline_n2ka0yYvp41qzj7s0.png)
 
-##Derivation of nodes \(A\), \(B\), \(P\), \(Q\), and \(M\):
+##Derivation of nodes `A`, `B`, `P`, `Q`, and `M`:
 
 For our pantograph assembly, we define the centers of two circles \(A\) and \(B\), each with a radius \(r_a\) and \(r_b\), respectively. The current positions of nodes \(P\) and \(Q\) are determined by angles \(\theta_a\) and \(\theta_b\).
 
@@ -20,11 +20,7 @@ Taking the position of \(A\) as the origin, we can find:
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
 </script>
-<script type="text/javascript"
-  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-
-
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_HTMLorMML-full"></script>
 
 
 
