@@ -1,3 +1,4 @@
+---
 title: Sasha: A Musical featuring Sasha Ayvazov and his Ensemble Friend Group
 link: https://flotsametc.wordpress.com/2010/06/12/sasha-the-musical/
 author: jamesbuckland
@@ -9,6 +10,7 @@ comment_status: open
 post_name: sasha-the-musical
 status: publish
 post_type: post
+---
 
 # Sasha: A Musical featuring Sasha Ayvazov and his Ensemble Friend Group
 
