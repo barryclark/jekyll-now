@@ -1,118 +1,120 @@
-# Jekyll Now
+# tufte-jekyll theme
 
-**Jekyll** is a static site generator that's perfect for GitHub hosted blogs ([Jekyll Repository](https://github.com/jekyll/jekyll))
+The *Tufte-Jekyll* theme is a natural extension of the work done by [Dave Leipmann](https://github.com/daveliepmann/tufte-css) on Github that created a CSS file that allows web writers to use the simple and elegant style employed by Edward Tufte in his published materials.
 
-**Jekyll Now** makes it easier to create your Jekyll blog, by eliminating a lot of the up front setup.
+To incorporate these styles into a Jekyll theme, I have made some very slight modifications that attempt to maintain the feel of the CSS styles in this repo.
 
-- You don't need to touch the command line
-- You don't need to install/configure ruby, rvm/rbenv, ruby gems :relaxed:
-- You don't need to install runtime dependancies like markdown processors, Pygments, etc
-- If you're on Windows, this will make setting up Jekyll a lot easier
-- It's easy to try out, you can just delete your forked repository if you don't like it
+## Demo
 
-In a few minutes you'll be set up with a minimal, responsive blog like the one below giving you more time to spend on writing epic blog posts!
+A sample site with self-documenting content is available [here](http://clayh53.github.io/tufte-jekyll/) on github pages.
 
-![Jekyll Now Theme Screenshot](/images/jekyll-now-theme-screenshot.jpg "Jekyll Now Theme Screenshot")
+## Installation
 
-## Quick Start
+I'm not going to go into great detail here. I am just going to assume that anyone interested in either Jekyll, Edward Tufte's work or Github has some basic skills. I created this with Ruby 2.2.0 and Jekyll 2.5.3. There is absolutely nothing exotic going on here, so you can probably make any recent version of Jekyll work with this setup.
 
-### Step 1) Fork Jekyll Now to your User Repository
+So copy, pull, download a zipfile or whatever and fire it up. 
 
-Fork this repo, then rename the repository to yourgithubusername.github.io.
+```
+%> cd ~/thatPlaceYouPutIt/tufte-jekyll
+%> jekyll build
+%> jekyll serve -w
+```
 
-Your Jekyll blog will often be viewable immediately at <http://yourgithubusername.github.io> (if it's not, you can often force it to build by completing step 2)
+And then point your browser at localhost:4000
 
-![Step 1](/images/step1.gif "Step 1")
+## Some things about the things
 
-### Step 2) Customize and view your site
+I needed to create several custom Liquid tags to wrap content in the right kind of tags. You will create your posts in the normal way in the ```_posts``` directory, and then edit them with Github-Flavored Markdown. To all that GFM goodness, you can use the following custom Liquid tags in your content area.
 
-Enter your site name, description, avatar and many other options by editing the _config.yml file. You can easily turn on Google Analytics tracking, Disqus commenting and social icons here too.
+### Sidenote
 
-Making a change to _config.yml (or any file in your repository) will force GitHub Pages to rebuild your site with jekyll. Your rebuilt site will be viewable a few seconds later at <http://yourgithubusername.github.io> - if not, give it ten minutes as GitHub suggests and it'll appear soon
+This tag inserts a *sidenote* in the content, which is like a footnote, only its in the spacious right-hand column. It is numbered. Just put it in the content like you would insert a footnote like so:
 
-> There are 3 different ways that you can make changes to your blog's files:
+```
+blah lorem blah{% sidenote 1 'This is a random sidenote'%} blah blah
+```
+And it will add the spans and superscripts. You are responsible for keeping track of the numbering!
 
-> 1. Edit files within your new username.github.io repository in the browser at GitHub.com (shown below).
-> 2. Use a third party GitHub content editor, like [Prose by Development Seed](http://prose.io). It's optimized for use with Jekyll making markdown editing, writing drafts, and uploading images really easy.
-> 3. Clone down your repository and make updates locally, then push them to your GitHub repository.
+### Margin note
 
-![_config.yml](/images/config.png "_config.yml")
+This tag is essentially the same as a sidenote, but heh, no number. Like this:
 
-### Step 3) Publish your first blog post
+```
+lorem nobeer toasty critters{% marginnote 'Random thought when drinking'%} continue train of thought
+```
+### Full width image
 
-Edit `/_posts/2014-3-3-Hello-World.md` to publish your first blog post. This [Markdown Cheatsheet](http://www.jekyllnow.com/Markdown-Style-Guide/) might come in handy.
+This tag inserts an image that spans both the main content column and the side column. Full-width IOW:
 
-![First Post](/images/first-post.png "First Post")
+```
+blah blah {% fullwidth /url/to/image 'A caption for the image'}
+```
 
-> You can add additional posts in the browser on GitHub.com too! Just hit the + icon in `/_posts/` to create new content. Just make sure to include the [front-matter](http://jekyllrb.com/docs/frontmatter/) block at the top of each new blog post and make sure the post's filename is in this format: year-month-day-title.md
+### Main column image
 
-## Local Development
+This tag inserts an image that is confined to the main content column:
 
-1. Install Jekyll and plug-ins in one fell swoop. `gem install github-pages` This mirrors the plug-ins used by GitHub Pages on your local machine including Jekyll, Sass, etc.
-2. Clone down your fork `git clone git@github.com:yourusername/yourusername.github.io.git`
-3. Serve the site and watch for markup/sass changes `jekyll serve`
-4. View your website at http://0.0.0.0:4000
-5. Commit any changes and push everything to the master branch of your GitHub user repository. GitHub Pages will then rebuild and serve your website.
+```
+blah blah{% maincolumn /path/to/image 'This is the caption' %} blah
+```
 
-## Moar!
+### Margin figure
 
-I've created a more detailed walkthrough, [**Build A Blog With Jekyll And GitHub Pages**](http://www.smashingmagazine.com/2014/08/01/build-blog-jekyll-github-pages/) over at the Smashing Magazine website. Check it out if you'd like a more detailed walkthrough and some background on Jekyll. :metal:
+This tag inserts and image in the side column area:
 
-It covers:
+```
+blah blah {% marginfigure /path/to/image 'This is the caption' %} blah
+```
+### New thought
 
-- A more detailed walkthrough of setting up your Jekyll blog
-- Common issues that you might encounter while using Jekyll
-- Importing from Wordpress, using your own domain name, and blogging in your favorite editor
-- Theming in Jekyll, with Liquid templating examples
-- A quick look at Jekyll 2.0’s new features, including Sass/Coffeescript support and Collections
+This tag will render its contents in small caps. Useful at the beginning of new sections:
 
-## Jekyll Now Features
+```
+{% newthought 'This will be rendered in small caps %} blah blah
+```
+### Mathjax
 
-✓ Command-line free _fork-first workflow_, using GitHub.com to create, customize and post to your blog  
-✓ Fully responsive and mobile optimized base theme (**[Theme Demo](http://jekyllnow.com)**)  
-✓ Sass/Coffeescript support using Jekyll 2.0  
-✓ Free hosting on your GitHub Pages user site  
-✓ Markdown blogging  
-✓ Syntax highlighting  
-✓ Disqus commenting  
-✓ Google Analytics integration  
-✓ SVG social icons for your footer  
-✓ 3 http requests, including your avatar  
+Totally used this functionality from a [gist by Jessy Cowan-Sharpe](https://gist.github.com/jessykate/834610) to make working with Mathjax expressions a little easier. Short version, wrap inline math in a tag pair thusly: ```{% m %}mathjax expressino{% em %}``` and wrap bigger block level stuff with ```{% math %}mathjax expression{% endmath %}```
 
-✘ No installing dependancies  
-✘ No need to set up local development  
-✘ No configuring plugins  
-✘ No need to spend time on theming  
-✘ More time to code other things ... wait ✓!  
+As a side note - if you do not need the math ability, navigate to the ```_data/options.yml``` file and change the mathjax to 'false' and it will not load the mathjax javascript.
 
-## Questions?
+## Other stuff, Problems and Programming Sorrow
 
-[Open an Issue](https://github.com/barryclark/jekyll-now/issues/new) and let's chat!
+### SASS
 
-## Other forkable themes
+I made a half-hearted effort to use Sass to create the css file used by this theme. If you would like to change things like fonts, colors and so forth, edit the ```_scss/_settings.scss``` file. I really didn't do any heavy lifting with SASS on this project since the CSS is relatively straightforward.
 
-You can use the [Quick Start](https://github.com/barryclark/jekyll-now#quick-start) workflow with other themes that are set up to be forked too! Here are some of my favorites:
+### Social icons
 
-- [Hyde](https://github.com/poole/hyde) by MDO
-- [Lanyon](https://github.com/poole/lanyon) by MDO
-- [mojombo.github.io](https://github.com/mojombo/mojombo.github.io) by Tom Preston-Werner
-- [Left](https://github.com/holman/left) by Zach Holman
-- [Minimal Mistakes](https://github.com/mmistakes/minimal-mistakes) by Michael Rose
-- [Skinny Bones](https://github.com/mmistakes/skinny-bones-jekyll) by Michael Rose
+You can edit the ```_data/social.yml``` file and put in your own information for the footer links
 
-## Credits
+### Silly-ass badge in the upper left
 
-- [Jekyll](https://github.com/jekyll/jekyll) - Thanks to its creators, contributors and maintainers.
-- [SVG icons](https://github.com/neilorangepeel/Free-Social-Icons) - Thanks, Neil Orange Peel. They're beautiful.
-- [Solarized Light Pygments](https://gist.github.com/edwardhotchkiss/2005058) - Thanks, Edward.
-- [Joel Glovier](http://joelglovier.com/writing/) - Great Jekyll articles. I used Joel's feed.xml in this repository.
-- [David Furnes](https://github.com/dfurnes), [Jon Uy](https://github.com/jonuy), [Luke Patton](https://github.com/lkpttn) - Thanks for the design/code reviews.
-- [Bart Kiers](https://github.com/bkiers), [Florian Simon](https://github.com/vermluh), [Henry Stanley](https://github.com/henryaj), [Hun Jae Lee](https://github.com/hunjaelee), [Javier Cejudo](https://github.com/javiercejudo), [Peter Etelej](https://github.com/etelej), [Ben Abbott](https://github.com/jaminscript), [Ray Nicholus](https://github.com/rnicholus), [Erin Grand](https://github.com/eringrand), [Léo Colombaro](https://github.com/LeoColomb), [Dean Attali](https://github.com/daattali), [Clayton Errington](https://github.com/cjerrington), [Colton Fitzgerald](https://github.com/coltonfitzgerald), [Trace Mayer](https://github.com/sunnankar) - Thanks for your [fantastic contributions](https://github.com/barryclark/jekyll-now/commits/master) to the project!
+In the ```/assets/img``` directory is a file called ```badge_1.png```. This file's parent is ```badge_1.psd``` and is an editable photoshop file with layers for the letters comprising the initials. Change them to suit your fancy. Or just substitute another badge in its place. You can edit the ```/_includes/header.html``` file and change the file that it points too. Find your favorite Tufte emoji and fly your freak flag proudly.
 
-## Contributing
+### Which brings me to sorrow and shame
 
-Issues and Pull Requests are greatly appreciated. If you've never contributed to an open source project before I'm more than happy to walk you through how to create a pull request.
+Getting this thing to display properly on *Github Pages* revealed an issue with path names. So here is the deal: In the ```/_config.yml``` file is a setting called *baseurl*. This is used by the Jekyll engine to construct all the proper links in the static site. This is all well and good for the bones of the site. Right now it is set to '*tufte-jekyll*' and all the links are created assuming that is the root path. On your local installation, if you tire of typing in ```localhost:4000/tufte-jekyll``` all you need to do is change that baseurl parameter to '/'.
 
-You can start by [opening an issue](https://github.com/barryclark/jekyll-now/issues/new) describing the problem that you're looking to resolve and we'll go from there.
+However... When writing content that includes images that are inside the custom Liquid tags, you must hard-code the *entire* path for your intended site configuration. Normally, one could enter an image path something like ```{{site.baseurl}}/assets/img/someimage.png``` and it would be properly fleshed out. But my Liquid tags are pretty dumb, and they do not recursively call the Liquid engine to properly build the url. At the present, my N00b status in the Ruby language has prevented me from fixing this problem. 
 
-I want to keep Jekyll Now as minimal as possible. Every line of code should be one that's useful to 90% of the people using it. Please bear that in mind when submitting feature requests. If it's not something that most people will use, it probably won't get merged. :guardsman:
+Here are some discussions about the reason behind the baseurl business:
+
+* [Jekyll docs](http://jekyllrb.com/docs/configuration/)
+* [Parker Moore](http://blog.parkermoore.de/2014/04/27/clearing-up-confusion-around-baseurl/)
+* [Andrew Shell](http://blog.andrewshell.org/understanding-baseurl/)
+
+### Rakefile
+
+I have added a boilerplate Rakefile directly from the [jekyll-rake-boilerplate repo](https://github.com/gummesson/jekyll-rake-boilerplate). This saves you a small amount of time by prepending the date on a post name and populated the bare minimum of YAML front matter in the file. Please visit the link to the repo to find out how it runs. One thing to note is that there should be *no* space between the task and the opening bracket of your file name. ```rake post["Title"]``` will work while ```rake post ["Title"]``` will not. 
+
+There is another rakefile (UploadtoGithub.Rakefile) included that only has one task in it - an automated upload to a *Github Pages* location of the site. This is necessary because of the plugins used by this theme. It does scary stuff like move your ```_site``` somewhere safe, delete everything, move the ```_site``` back and then do a commit to the ```gh-pages``` branch of your repository. You can read about it [here](http://blog.nitrous.io/2013/08/30/using-jekyll-plugins-on-github-pages.html). You would only need to use this if you are using Github project pages to host your site. Integration with the existing Rakefile is left as an exercise for the reader.
+
+### To-do list
+
+It would be nice to have the sidenotes tag do all the counting for you. I have a feeling it is going to involve some ```@@rubyVariables``` to keep track of things. I'll probably get around to digging into this sooner or later, but if any of you Ruby gods out there want to take a whack at it, please fork this repo and go for it.
+
+This is not a professional shiny "works-out-of-the-box theme". But bang on it a little and I am sure you can make it work for you.
+
+
+

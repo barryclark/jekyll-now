@@ -1,18 +1,16 @@
 ---
 layout: default
+title: ambuc
 ---
-
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
-
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+  <h1 class="content-listing-header sans">Articles</h1>
+  <ul class="content">
+    {% for post in site.posts %}
+      <li class="listing">
+      	<hr class="slender">
+      	<a href="{{ post.url }}"><h4 class="contrast">{{ post.title }}</h4></a>
+      	<span class="smaller">{{ post.date | date: "%B %-d, %Y" }}</span>  <br/>
+		<div>{{ post.excerpt }}</div>
+		
+      </li>
+    {% endfor %}
+  </ul>
