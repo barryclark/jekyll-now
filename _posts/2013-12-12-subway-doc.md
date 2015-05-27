@@ -1,7 +1,6 @@
 ---
 title: Using d3.js to Model the NYC Subway Map Independent of Physical Geometry
 layout: post
-permalink: subway-doc
 ---
 
 *Project*: **[Subway](http://ambuc.github.io/subway/).**
