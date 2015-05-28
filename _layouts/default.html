@@ -19,13 +19,12 @@
         Macros: {
           vaccent: "{\\v}",
           v: ["{\\mathbf\{#1\}}", 1],
-          gv: ["{\\mbox\{\\boldmath\{\$ #1 \$\}\}}", 1]
+          abs: ["{\\left| #1 \\right|}",1],
+          d: ["{\\frac\{d #1\}\{d #2\}}",2]
         }
       }
     });
 
-  // \newcommand{\gv}[1]{\ensuremath{\mbox{\boldmath $ #1 $ }}} % for greek vectors
-  // \newcommand{\abs}[1]{\left| #1 \right|} % for absolute value
   // \let\underdot=\d % rename builtin command \d{} to \underdot{}
   // \renewcommand{\d}[2]{\frac{d #1}{d #2}} % derivatives
   // \newcommand{\dd}[2]{\frac{d^2 #1}{d #2^2}} % double derivatives
