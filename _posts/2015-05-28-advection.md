@@ -3,6 +3,10 @@ title: A Walkthrough of the Advection-Differencing Scheme
 layout: post
 ---
 
+\(
+   \def\phi{\varphi}
+\)
+
 *Disclaimer*: This is something a little different. I'm going to step through solving a practice problem for the MJ2424 Numerical Methods final exam, partially as practice teaching (and understanding) the material, partially as practice writing scientifically, and partially for fun. I'll be working off my own derivation, but checking my answers, so I really hope the material is accurate.
 
 ##What is Computational Fluid Dynamics?
@@ -17,8 +21,8 @@ As seen in Classroom Example 3 of Section 4.7 **Discretising Advection** of Davi
 
 A pipe of cross-section $A = 0.01 m^2$
 and length $L = 1 m$ carries water (density $\rho = 1000 kg / m^{3}$ at velocity $u = 0.1 m / s^{1}$.
-A faulty valve introduces a reactive chemical into the pipe half-way along its length at a rate of $0.01 kg /s^{1}$. The diffusivity of the chemical in water is $\Gamma = 0.1 kg / m s$. The chemical is subsequently broken down at a rate proportional to its concentration $\Phi$ (mass of chemical per unit mass of water), this rate amounting to $–\gamma\Phi$ per metre, where $\gamma = 0.5 kg / m s$.
-Assuming that the downstream boundary condition is $\d{\Phi}{x}=0$, set up a finite-volume calculation with 7 cells to estimate the concentration along the pipe using:
+A faulty valve introduces a reactive chemical into the pipe half-way along its length at a rate of $0.01 kg /s^{1}$. The diffusivity of the chemical in water is $\Gamma = 0.1 kg / m s$. The chemical is subsequently broken down at a rate proportional to its concentration $\phi$ (mass of chemical per unit mass of water), this rate amounting to $–\gamma\phi$ per metre, where $\gamma = 0.5 kg / m s$.
+Assuming that the downstream boundary condition is $\d{\phi}{x}=0$, set up a finite-volume calculation with 7 cells to estimate the concentration along the pipe using:
  - (a) central
  - (b) upwind
 differencing schemes for advection.
@@ -45,7 +49,7 @@ $$ F = \rho A u_w^e \qquad D = \left( \d{\Gamma A}{\Delta x} \right)_w^e$$
 
 Such that the integrated convection-diffusion equation reads:
 
-$$F_e \Phi_e - F_w \Phi_w = D_e(\Phi_E - \Phi_P) - D_w(\Phi_P - \Phi_W)$$
+$$F_e \phi_e - F_w \phi_w = D_e(\phi_E - \phi_P) - D_w(\phi_P - \phi_W)$$
 
 ##The Central Differencing Scheme (CDS)
 Here we introduce a scheme for finding the values of a given property - in this problem, a chemical concentration - at a boundary between two cells, given its value at the centers of those two cells. We introduce:
