@@ -130,7 +130,7 @@ The right boundary is the inverse of the left boundary. We know that $\pd{\phi}{
 We know $D=\Gamma A / \Delta x = 0.007 kg/s$, $F = \rho A u = 1 kg/s$, and $S_P = \gamma\Delta x = -0.07 kg/s$. We can thus solve:
 
 | n | $a_w$ | $a_e$ | $a_p$ | $S_u$ |
-|---:|---|---|---|---|
+|:---:|:---:|:---:|:---:|:---:|
 | 1 | $\ 0$ | $\ -0.493$ | $\ 0.592$ | $\ 0$ |
 | 2,3,5,6 | $\ 0.507$ | $\ -0.493$ | $\ 0.085$ | $\ 0$ |
 | 4 | $\ 0.507$ | $\ -0.493$ | $\ 0.085$ | $\ 0.01$ |
