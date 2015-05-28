@@ -4,8 +4,7 @@ title: Python 点滴
 ---
 
 Python 学习笔记--Class
-
-
+		
 1. **Python Class 特性点滴**
 
 	支持多重继承
