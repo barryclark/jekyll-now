@@ -138,9 +138,8 @@ We know $D=\Gamma A / \Delta x = 0.007 kg/s$, $F = \rho A u = 1 kg/s$, and $S_P 
 
 Using this data, we can populate a linear equation with real numerical values, and solve:
 
-$$\begin{pmatrix} 0.592 & 0.493 & 0 & 0 & 0 & 0 & 0 \\ -0.507 & 0.085 & 0.493 & 0 & 0 & 0 & 0 \\ 0 & -0.507 & 0.085 & 0.493 & 0 & 0 & 0 \\ 0 & 0 & 0 & -0.507 & 0.085 & 0.493 & 0 \\ 0 & 0 & 0 & 0 & -0.507 & 0.085 & 0.493 \\ 0 & 0 & 0 & 0 & 0 & -0.507 & 0.578 \end{pmatrix}$$
-and
-$$\begin{bmatrix}\phi(1)\\\phi(2)\\\phi(3)\\\phi(4)\\\phi(5)\\\phi(6)\\\phi(7)\end{bmatrix} 
+$$\begin{pmatrix} 0.592 & 0.493 & 0 & 0 & 0 & 0 & 0 \\ -0.507 & 0.085 & 0.493 & 0 & 0 & 0 & 0 \\ 0 & -0.507 & 0.085 & 0.493 & 0 & 0 & 0 \\ 0 & 0 & 0 & -0.507 & 0.085 & 0.493 & 0 \\ 0 & 0 & 0 & 0 & -0.507 & 0.085 & 0.493 \\ 0 & 0 & 0 & 0 & 0 & -0.507 & 0.578 \end{pmatrix}
+\begin{pmatrix}\phi(1)\\\phi(2)\\\phi(3)\\\phi(4)\\\phi(5)\\\phi(6)\\\phi(7)\end{pmatrix} 
 = \begin{pmatrix}0\\0\\0\\0.01\\0\\0\\0{\end{pmatrix}$$
 
 Which we can solve to get real values for $\phi(n)$ for all values in $n = [1..7]$. $\qed$
