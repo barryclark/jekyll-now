@@ -62,4 +62,4 @@ $$\frac{F_e}{2}(\phi_P + \phi_E) - \frac{F_w}{2}(\phi_W + \phi_P) = D_e(\phi_E -
 
 And, finally, gathering by $\phi$:
 
-$$\left(\left(D_w + \frac{F_w}{2}\right)+\left(D_e - \frac{F_e}{2}\right)+\left(F_e - F_w\right)\right)\phi_P = (D_w + \frac{F_w}{2})\phi_W + (D_e - \frac{F_e}{2}) \phi_E$$
+$$\left(\left(D_w + \dfrac{F_w}{2}\right)+\left(D_e - \dfrac{F_e}{2}\right)+\left(F_e - F_w\right)\right)\phi_P = \left(D_w + \dfrac{F_w}{2}\right)\phi_W + \left(D_e - \dfrac{F_e}{2}\right) \phi_E$$
