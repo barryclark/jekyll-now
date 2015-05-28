@@ -14,8 +14,25 @@
     <script type="text/javascript"src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script>
     <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
-      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+      TeX: {
+        Macros: {
+          vaccent: "{\\v}",
+          v: ["{\\ensuremath\{\\mathbf\{#1\}\}}",1]
+        }
+      }
     });
+
+  //   \let\vaccent=\v % rename builtin command \v{} to \vaccent{}
+  // \renewcommand{\v}[1]{\ensuremath{\mathbf{#1}}} % for vectors
+  // \newcommand{\gv}[1]{\ensuremath{\mbox{\boldmath $ #1 $ }}} % for greek vectors
+  // \newcommand{\abs}[1]{\left| #1 \right|} % for absolute value
+  // \let\underdot=\d % rename builtin command \d{} to \underdot{}
+  // \renewcommand{\d}[2]{\frac{d #1}{d #2}} % derivatives
+  // \newcommand{\dd}[2]{\frac{d^2 #1}{d #2^2}} % double derivatives
+  // \newcommand{\pd}[2]{\frac{\partial #1}{\partial #2}} % partial derivatives
+  // \newcommand{\pdd}[2]{\frac{\partial^2 #1}{\partial #2^2}} % double partial 
+  // \newcommand{\degrees}{\ensuremath{^\circ}}
     </script>
 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->

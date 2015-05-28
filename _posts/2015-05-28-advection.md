@@ -3,7 +3,7 @@ title: A Walkthrough of the Advection-Differencing Scheme
 layout: post
 ---
 
-$$
+<!-- $$
   \let\vaccent=\v % rename builtin command \v{} to \vaccent{}
   \renewcommand{\v}[1]{\ensuremath{\mathbf{#1}}} % for vectors
   \newcommand{\gv}[1]{\ensuremath{\mbox{\boldmath $ #1 $ }}} % for greek vectors
@@ -20,7 +20,7 @@ $$
   \newcommand{\lap}{\mathcal{L}}
   \let\t = \widetilde
   \newcommand{\Tau}{\mathrm{T}}
-$$
+$$ -->
 
 *Disclaimer*: This is something a little different. I'm going to step through solving a practice problem for the MJ2424 Numerical Methods final exam, partially as practice teaching (and understanding) the material, partially as practice writing scientifically, and partially for fun. I'll be working off my own derivation, but checking my answers, so I really hope the material is accurate.
 
@@ -44,4 +44,4 @@ and length $L = 1 m$ carries water (density $\rho = 1000 kg m^{–3}$ at velocit
 
 ##The Method
 From the normal steady-state one-dimensional advection diffusion equation
-$$\pd
+$$\v X$$
