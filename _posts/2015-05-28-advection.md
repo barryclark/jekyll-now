@@ -78,4 +78,3 @@ $$\frac{F_e}{2}(\phi_P + \phi_E) - \frac{F_w}{2}(\phi_W + \phi_P) = D_e(\phi_E -
 
 $$\left(\left(D_w + F_w/2\right)+\left(D_e - F_e/2\right)+\left(F_e - F_w\right)\right)\phi_P = (D_w + \frac{F_w}{2})\phi_W + (D_e - \frac{F_e}{2}) \phi_E$$
 
-
