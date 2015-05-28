@@ -136,11 +136,15 @@ We know $D=\Gamma A / \Delta x = 0.007 kg/s$, $F = \rho A u = 1 kg/s$, and $S_P 
 | 4 | $\ 0.507$ | $\ -0.493$ | $\ 0.085$ | $\ 0.01$ |
 | 7 | $\ 0.507$ | $\ 0$ | $\ 0.578$ | $\ 0$ |
 
-Using this data, we can populate a linear equation with real numerical values, and solve:
+These constants hold for any instance of:
+
+$$a_P \phi_P = a_W \phi_W + a_E \phi_E + S_u$$
+
+Using all seven iterations of this equations, we can populate a linear equation with real numerical values, and solve:
 
 $$\begin{pmatrix} 0.592 & 0.493 & 0 & 0 & 0 & 0 & 0 \\ -0.507 & 0.085 & 0.493 & 0 & 0 & 0 & 0 \\ 0 & -0.507 & 0.085 & 0.493 & 0 & 0 & 0 \\ 0 & 0 & 0 & -0.507 & 0.085 & 0.493 & 0 \\ 0 & 0 & 0 & 0 & -0.507 & 0.085 & 0.493 \\ 0 & 0 & 0 & 0 & 0 & -0.507 & 0.578 \end{pmatrix} \begin{bmatrix}\phi(1)\\\phi(2)\\\phi(3)\\\phi(4)\\\phi(5)\\\phi(6)\\\phi(7)\end{bmatrix} = \begin{pmatrix}0\\0\\0\\0.01\\0\\0\\0\end{pmatrix}$$
 
-Which we can solve to get real values for $\phi(n)$ for all values in $n = [1..7]$.
+Which we can solve in a computer (or by hand, if you're a sadist) to get real values for $\phi(n)$ for all values in $n = [1..7]$.
 
 
 
