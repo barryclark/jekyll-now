@@ -20,17 +20,15 @@
           vaccent: "{\\v}",
           v: ["{\\mathbf\{#1\}}", 1],
           abs: ["{\\left| #1 \\right|}",1],
-          d: ["{\\frac\{d #1\}\{d #2\}}",2]
+          d: ["{\\frac\{d #1\}\{d #2\}}",2],
+          dd: ["{\\frac\{d^2 #1\}\{d #2^2\}}",2],
+          pd: ["\{\\frac\{\\partial #1\}\{\\partial #2\}\}",2],
+          pdd: ["\{\\frac\{\\partial^2 #1\}\{\\partial #2^2\}\}",2] ,
+          degrees: ["\{^\\circ\}"]
         }
       }
     });
 
-  // \let\underdot=\d % rename builtin command \d{} to \underdot{}
-  // \renewcommand{\d}[2]{\frac{d #1}{d #2}} % derivatives
-  // \newcommand{\dd}[2]{\frac{d^2 #1}{d #2^2}} % double derivatives
-  // \newcommand{\pd}[2]{\frac{\partial #1}{\partial #2}} % partial derivatives
-  // \newcommand{\pdd}[2]{\frac{\partial^2 #1}{\partial #2^2}} % double partial 
-  // \newcommand{\degrees}{\ensuremath{^\circ}}
     </script>
 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->

@@ -44,4 +44,4 @@ and length $L = 1 m$ carries water (density $\rho = 1000 kg m^{–3}$ at velocit
 
 ##The Method
 From the normal steady-state one-dimensional advection diffusion equation
-$$\d{a}{b}$$
+$$\d{a}{b} \pd{c}{d} \dd{e}{f} \pdd{g}{h} x\degrees$$
