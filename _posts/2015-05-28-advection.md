@@ -37,7 +37,7 @@ As seen in Classroom Example 3 of Section 4.7 **Discretising Advection** of Davi
 * A pipe of cross-section $A = 0.01 m^2$
 and length $L = 1 m$ carries water (density $\rho = 1000 kg m^{–3}$ at velocity $u = 0.1 m s^{–1}$. *
 * A faulty valve introduces a reactive chemical into the pipe half-way along its length at a rate of $0.01 kg s^{–1}$. The diffusivity of the chemical in water is $\Gamma = 0.1 kg m^{–1} s^{–1}$. The chemical is subsequently broken down at a rate proportional to its concentration $\Phi$ (mass of chemical per unit mass of water), this rate amounting to $–\gamma\Phi$ per metre, where $\gamma = 0.5 kg s^{–1} m^{–1}$. *
-* Assuming that the downstream boundary condition is $\d{\Phi}{x}=0$, set up a finite-volume calculation with 7 cells to estimate the concentration along the pipe using: *
+* Assuming that the downstream boundary condition is $\pd{\Phi}{x}=0$, set up a finite-volume calculation with 7 cells to estimate the concentration along the pipe using: *
  - * (a) central *
  - * (b) upwind *
 * differencing schemes for advection. *
