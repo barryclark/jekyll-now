@@ -50,11 +50,16 @@ $$F_e \Phi_e - F_w \Phi_w = D_e(\Phi_E - \Phi_P) - D_w(\Phi_P - \Phi_W)$$
 ##The Central Differencing Scheme (CDS)
 Here we introduce a scheme for finding the values of a given property - in this problem, a chemical concentration - at a boundary between two cells, given its value at the centers of those two cells. We introduce:
 
-$$\phi_e = \frac{\phi_E + \phi_P}{2} \qquad \phi_w = \frac{\phi_P + \phi_W}{2}$$
+$$\phi_e = \frac{\phi_E + \phi_P}{2} \qquad \phi_w = \frac{\phi_P + \phi_W}{2} \qquad \text{(This is the CDS)}$$
 
 Expanding generally - we will expand a little more specifically in a moment - we find:
 
 $$F_e \phi_e - F_w \phi_w = D_e (\phi_E - \phi_P) - D_w (\phi_P - \phi_w)$$
+
+Expanding out for our CDS:
+
 $$\frac{F_e}{2}(\phi_P + \phi_E) - \frac{F_w}{2}(\phi_W + \phi_P) = D_e(\phi_E - \phi_P) - D_w (\phi_P - \phi_W)$$
 
-$$\left(\left(D_w + F_w/2\right)+\left(D_e - F_e/2\right)+\left(F_e - F_w\right)\right)\phi_P = (D_w + \frac{F_w}{2})\phi_W + (D_e - \frac{F_e}{2}) \phi_E$$
+And, finally, gathering by $\phi$:
+
+$$\left(\left(D_w + \frac{F_w}{2}\right)+\left(D_e - \frac{F_e}{2}\right)+\left(F_e - F_w\right)\right)\phi_P = (D_w + \frac{F_w}{2})\phi_W + (D_e - \frac{F_e}{2}) \phi_E$$
