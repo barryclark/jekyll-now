@@ -18,11 +18,13 @@ As seen in Classroom Example 3 of Section 4.7 **Discretising Advection** of Davi
 
 
 A pipe of cross-section $A = 0.01 m^2$
-and length $L = 1 m$ carries water (density $\rho = 1000 kg / m^{3}$ at velocity $u = 0.1 m / s^{1}$.
-A faulty valve introduces a reactive chemical into the pipe half-way along its length at a rate of $0.01 kg /s^{1}$. The diffusivity of the chemical in water is $\Gamma = 0.1 kg / m s$. The chemical is subsequently broken down at a rate proportional to its concentration $\phi$ (mass of chemical per unit mass of water), this rate amounting to $–\gamma\phi$ per metre, where $\gamma = 0.5 kg / m s$.
+and length $L = 1 m$ carries water (density $\rho = 1000 kg / m^{3}$ at velocity $u = 0.1 m / s$.
+A faulty valve introduces a reactive chemical into the pipe half-way along its length at a rate of $0.01 kg /s$. The diffusivity of the chemical in water is $\Gamma = 0.1 kg / m s$. The chemical is subsequently broken down at a rate proportional to its concentration $\phi$ (mass of chemical per unit mass of water), this rate amounting to $–\gamma\phi$ per metre, where $\gamma = 0.5 kg / m s$.
 Assuming that the downstream boundary condition is $\d{\phi}{x}=0$, set up a finite-volume calculation with 7 cells to estimate the concentration along the pipe using:
+
  - (a) central
  - (b) upwind
+
 differencing schemes for advection.
 
 ##The Method
@@ -42,8 +44,7 @@ Integrating the transport equation, we find:
 
 $$(\rho u A \phi)_e - (\rho u A \phi)_w = (\Gamma A)\left(\d{\phi}{x}\right)_E - (\Gamma A)\left( \d{\phi}{x} \right)$$
 
-We define the constants:
-$$ F = \rho A u_w^e \qquad D = \left( \d{\Gamma A}{\Delta x} \right)_w^e$$
+We define the constants: $ F = \rho A u_w^e$ and $D = \left( \frac{\Gamma A}{\Delta x} \right)_w^e$
 
 Such that the integrated convection-diffusion equation reads:
 
