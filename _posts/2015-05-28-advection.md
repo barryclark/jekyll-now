@@ -3,11 +3,11 @@ title: A Walkthrough of the Advection-Differencing Scheme
 layout: post
 ---
 
-\(
+$$
    \def\phi{\varphi}
-\)
+$$
 
-*Disclaimer*: This is something a little different. I'm going to step through solving a practice problem for the MJ2424 Numerical Methods final exam, partially as practice teaching (and understanding) the material, partially as practice writing scientifically, and partially for fun. I'll be working off my own derivation, but checking my answers, so I really hope the material is accurate.
+*Disclaimer: This is something a little different. I'm going to step through solving a practice problem for the MJ2424 Numerical Methods final exam, partially as practice teaching (and understanding) the material, partially as practice writing scientifically, and partially for fun. I'll be working off my own derivation, but checking my answers, so I really hope the material is accurate.* — JB
 
 ##What is Computational Fluid Dynamics?
 CFD is the process of reducing problems in Fluid Dynamics to stepwise, iterative processes computers can solve. Specifically, it involves taking a real-life continuum and reducing it to a finite-volume calculation with a set number of cells, across each of which a very simple calculation will be performed. This allows us to turn a complex calculus problem, difficult for computational problem solving, into a linear algebra problem, which is much simpler.
