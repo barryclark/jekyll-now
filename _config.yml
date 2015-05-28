@@ -8,7 +8,7 @@ name: 盛江涛
 # Short bio or description (displayed in the header)
 description: 盛江涛的 Blog
 
-excerpt_separator: ""
+excerpt_separator: "\n\n"
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 #avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
 
