@@ -1,5 +1,6 @@
 ---
 layout: post
+tags: python
 title: Python 点滴
 ---
 
