@@ -3,25 +3,6 @@ title: A Walkthrough of the Advection-Differencing Scheme
 layout: post
 ---
 
-<!-- $$
-  \let\vaccent=\v % rename builtin command \v{} to \vaccent{}
-  \renewcommand{\v}[1]{\ensuremath{\mathbf{#1}}} % for vectors
-  \newcommand{\gv}[1]{\ensuremath{\mbox{\boldmath $ #1 $ }}} % for greek vectors
-  \newcommand{\abs}[1]{\left| #1 \right|} % for absolute value
-  \let\underdot=\d % rename builtin command \d{} to \underdot{}
-  \renewcommand{\d}[2]{\frac{d #1}{d #2}} % derivatives
-  \newcommand{\dd}[2]{\frac{d^2 #1}{d #2^2}} % double derivatives
-  \newcommand{\pd}[2]{\frac{\partial #1}{\partial #2}} % partial derivatives
-  \newcommand{\pdd}[2]{\frac{\partial^2 #1}{\partial #2^2}} % double partial 
-  \newcommand{\degrees}{\ensuremath{^\circ}}
-
-  \newcommand{\dotsref}[1]{\dotfill\textbf{pp.\pageref{#1}}}
-  \newcommand{\partrule}{\rule{0.5\textwidth}{.4pt}}
-  \newcommand{\lap}{\mathcal{L}}
-  \let\t = \widetilde
-  \newcommand{\Tau}{\mathrm{T}}
-$$ -->
-
 *Disclaimer*: This is something a little different. I'm going to step through solving a practice problem for the MJ2424 Numerical Methods final exam, partially as practice teaching (and understanding) the material, partially as practice writing scientifically, and partially for fun. I'll be working off my own derivation, but checking my answers, so I really hope the material is accurate.
 
 ##What is Computational Fluid Dynamics?
@@ -45,7 +26,7 @@ differencing schemes for advection.
 ##The Method
 From the normal steady-state one-dimensional advection diffusion equation
 
-$$\pd{\rho\phi}{t} + \div(\rho\phi\v u) = div(\Gamma\grad\phi) + S_\phi$$
+<!-- $$\pd{\rho\phi}{t} + \div(\rho\phi\v u) = div(\Gamma\grad\phi) + S_\phi $$
 
 We make the equation steady-state and one-dimensional:
 
@@ -67,14 +48,15 @@ Such that the integrated convection-diffusion equation reads:
 $$F_e \Phi_e - F_w \Phi_w = D_e(\Phi_E - \Phi_P) - D_w(\Phi_P - \Phi_W)$$
 
 ##The Central Differencing Scheme (CDS)
-Here we introduce a scheme for finding the values of a given property -- in this problem, a chemical concentration -- at a boundary between two cells, given its value at the centers of those two cells. We introduce:
+Here we introduce a scheme for finding the values of a given property - in this problem, a chemical concentration - at a boundary between two cells, given its value at the centers of those two cells. We introduce:
 
 $$\phi_e = \frac{\phi_E + \phi_P}{2} \qquad \phi_w = \frac{\phi_P + \phi_W}{2}$$
 
-Expanding generally -- we will expand a little more specifically in a moment -- we find:
+Expanding generally - we will expand a little more specifically in a moment - we find:
 
 $$F_e \phi_e - F_w \phi_w = D_e (\phi_E - \phi_P) - D_w (\phi_P - \phi_w)$$
 $$\frac{F_e}{2}(\phi_P + \phi_E) - \frac{F_w}{2}(\phi_W + \phi_P) = D_e(\phi_E - \phi_P) - D_w (\phi_P - \phi_W)$$
 
 $$\left(\left(D_w + F_w/2\right)+\left(D_e - F_e/2\right)+\left(F_e - F_w\right)\right)\phi_P = (D_w + \frac{F_w}{2})\phi_W + (D_e - \frac{F_e}{2}) \phi_E$$
 
+ -->
