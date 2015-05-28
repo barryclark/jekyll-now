@@ -63,3 +63,10 @@ $$\frac{F_e}{2}(\phi_P + \phi_E) - \frac{F_w}{2}(\phi_W + \phi_P) = D_e(\phi_E -
 And, finally, gathering by $\phi$:
 
 $$\left(\left(D_w + \tfrac{F_w}{2}\right)+\left(D_e - \tfrac{F_e}{2}\right)+\left(F_e - F_w\right)\right)\phi_P = \left(D_w + \tfrac{F_w}{2}\right)\phi_W + \left(D_e - \tfrac{F_e}{2}\right) \phi_E$$
+
+Essentially, this allows us to define a set of variables, and use them repeatedly to solve this generalized cell at unique conditions, such as at boundaries or sources. 
+
+| $a_W$ | $a_E$ | $a_P$ |
+| :---: | :---: | :---: |
+| $D_w + \tfrac{F_w}{2}$ | $D_e - \tfrac{F_e}{2}$ | $a_w + a_e + F_e - F_w$ |
+
