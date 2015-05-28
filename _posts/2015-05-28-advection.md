@@ -3,9 +3,7 @@ title: A Walkthrough of the Advection-Differencing Scheme
 layout: post
 ---
 
-$$
-   \def\phi{\varphi}
-$$
+$$ \def\phi{\varphi} $$
 
 *Disclaimer: This is something a little different. I'm going to step through solving a practice problem for the MJ2424 Numerical Methods final exam, partially as practice teaching (and understanding) the material, partially as practice writing scientifically, and partially for fun. I'll be working off my own derivation, but checking my answers, so I really hope the material is accurate.* — JB
 
