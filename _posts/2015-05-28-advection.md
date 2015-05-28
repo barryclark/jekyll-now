@@ -26,7 +26,7 @@ differencing schemes for advection.
 ##The Method
 From the normal steady-state one-dimensional advection diffusion equation
 
-<!-- $$\pd{\rho\phi}{t} + \div(\rho\phi\v u) = div(\Gamma\grad\phi) + S_\phi $$
+$$\pd{\rho\phi}{t} + \div(\rho\phi\v u) = div(\Gamma\grad\phi) + S_\phi $$
 
 We make the equation steady-state and one-dimensional:
 
@@ -58,5 +58,3 @@ $$F_e \phi_e - F_w \phi_w = D_e (\phi_E - \phi_P) - D_w (\phi_P - \phi_w)$$
 $$\frac{F_e}{2}(\phi_P + \phi_E) - \frac{F_w}{2}(\phi_W + \phi_P) = D_e(\phi_E - \phi_P) - D_w (\phi_P - \phi_W)$$
 
 $$\left(\left(D_w + F_w/2\right)+\left(D_e - F_e/2\right)+\left(F_e - F_w\right)\right)\phi_P = (D_w + \frac{F_w}{2})\phi_W + (D_e - \frac{F_e}{2}) \phi_E$$
-
- -->
