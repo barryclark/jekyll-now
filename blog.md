@@ -1,15 +1,9 @@
 ---
 layout: page
-title: Blog
+title: Some Thoughts
 permalink: /blog/
 ---
 
-Blog page
+### Blog Page
 
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[dawitelias14@gmail.com](mailto:dawitelias14@gmail.com)
+Here's where I babble on about random things that intrigue me. Stay a few minutes and check it out!

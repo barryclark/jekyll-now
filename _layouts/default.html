@@ -14,77 +14,19 @@
   </head>
 
   <body>
-    <section class="block-top">
+    <section class="top top-home">
       <div class="gradient">&nbsp;</div>
       <nav class="navbar">
+        <a href="{{ site.baseurl }}/">home</a>
         <a href="{{ site.baseurl }}/blog">blog</a>
         <a href="{{ site.baseurl }}/work">work</a>
       </nav>
 
-      <div class="hero clearfix">
-    		<div class="container">
-    			 <h1 class="site-name">{{ site.name }}</h1>
-           <h2 class="site-description">{{ site.description }}</h2>
-           <p>Hi, Dawit here. I'm a designer and developer fascinated in the psychology of design and technology. I'm here to make a user experience that works for you! Feel free to check out some of my work or read my blog!</p>
-           <button class="btn-work">
-             <a href="{{ site.baseurl }}/work">work</a>
-           </button>
-    		</div>
-    	</div>
-    </section>
-
-    <section class="block-featured-work">
-      <div class="container main">
-        <h3>featured work</h3>
-        <div class="featured-work-inner">
-          <div class="hexagon hexagon1"></div>
-          <div class="hexagon hexagon2"></div>
-          <div class="hexagon hexagon3"></div>
-        </div>
-      </div>
-
-      <div class="container post">
-        {% for post in site.posts limit:1 %}
-          <h3 class="latest-post-title">{{ post.title }}</h3>
-          <p class="latest-post-date">{{ post.date | date: "%d %B %Y" }}</p>
-          <div class="content-post">
-            <p>{{ post.content |truncatehtml | truncatewords: 60 }}</p>
-          </div>
-        {% endfor %}
-        <!-- {{ content }} -->
-      </div>
-
-    </section>
-
-    <!-- <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <nav class="navbar" style="border:1px solid blue;">
-            <a href="{{ site.baseurl }}/blog">Blog</a>
-            <a href="{{ site.baseurl }}/work">Work</a>
-            <a href="{{ site.baseurl }}/about">About</a>
-          </nav>
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
-          </div>
-        </header>
-      </div>
-    </div>
-
-    <div id="main" role="main" class="container" style="border:1px solid red;">
       {{ content }}
-    </div>
 
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          {% include svg-icons.html %}
-        </footer>
-      </div>
-    </div>
+    </section>  
 
-    {% include analytics.html %} -->
+    {% include analytics.html %}
 
     <div class="wrapper-footer">
       <div class="container">
@@ -95,5 +37,6 @@
       </div>
     </div>
 
+  <script src="/js/{{ site.baseurl }}/main.js"></script>
   </body>
 </html>

@@ -2,17 +2,44 @@
 layout: default
 ---
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+  <div class="hero clearfix">
+    <div class="container">
+       <h1 class="site-name">{{ site.name }}</h1>
+       <h2 class="site-description">{{ site.description }}</h2>
+       <p>Hi, Dawit here. I'm a designer and developer fascinated in the psychology of design and technology. I'm here to make a user experience that works for you! Feel free to check out some of my work or read my blog!</p>
+       <button class="btn-work">
+         <a href="{{ site.baseurl }}/work">work</a>
+       </button>
+    </div>
+  </div>
+</section>
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+<section class="block-featured-work">
+  <div class="container main">
+    <h3>featured work</h3>
+    <div class="featured-work-inner">
+      <div class="hexagon hexagon1"></div>
+      <div class="hexagon hexagon2"></div>
+      <div class="hexagon hexagon3"></div>
+    </div>
+  </div>
+</section>
 
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
+<div class="content-posts">
+  <div class="container posts">
+    {% for post in site.posts limit:1 %}
+    <h3 class="latest-post-title">
+      <a href="{{ post.url }}">{{ post.title }}</a></h3>
+    <p class="latest-post-date">{{ post.date | date: "%d %B %Y" }} (Latest Post)</p>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
+      <article class="post">
+
+        <div class="entry">
+          {{ post.excerpt }}
+        </div>
+
+        <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+      </article>
+    {% endfor %}
+  </div>
 </div>

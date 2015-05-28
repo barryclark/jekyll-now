@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-
+<!-- <h2 class="content">{{page.title}}</h2>
 <article class="post">
   <h1>{{ page.title }}</h1>
 
@@ -14,4 +14,18 @@ layout: default
   </div>
 
   {% include disqus.html %}
-</article>
+</article> -->
+
+<div class="content-posts">
+  <article class="container posts">
+    <!-- {% if page.title %} -->
+    <h3 class="latest-post-title">{{ page.title }}</a></h3>
+    <p class="latest-post-date">{{ page.date | date: "%d %B %Y" }}</p>
+    <article class="post">
+      {{ page.excerpt }}
+    </article>
+    <!-- {% endif %} -->
+
+
+  </article>
+</div>
