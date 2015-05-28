@@ -18,13 +18,12 @@
       TeX: {
         Macros: {
           vaccent: "{\\v}",
-          v: ["{\\mathbf\{#1\}}",1]
+          v: ["{\\mathbf\{#1\}}", 1],
+          gv: ["{\\mbox\{\\boldmath\$ #1 \$\}}", 1]
         }
       }
     });
 
-  //   \let\vaccent=\v % rename builtin command \v{} to \vaccent{}
-  // \renewcommand{\v}[1]{\ensuremath{\mathbf{#1}}} % for vectors
   // \newcommand{\gv}[1]{\ensuremath{\mbox{\boldmath $ #1 $ }}} % for greek vectors
   // \newcommand{\abs}[1]{\left| #1 \right|} % for absolute value
   // \let\underdot=\d % rename builtin command \d{} to \underdot{}
