@@ -16,8 +16,8 @@ As seen in Classroom Example 3 of Section 4.7 **Discretising Advection** of Davi
 
 
 A pipe of cross-section $A = 0.01 m^2$
-and length $L = 1 m$ carries water (density $\rho = 1000 kg m^{–3}$ at velocity $u = 0.1 m s^{–1}$.
-A faulty valve introduces a reactive chemical into the pipe half-way along its length at a rate of $0.01 kg s^{–1}$. The diffusivity of the chemical in water is $\Gamma = 0.1 kg m^{–1} s^{–1}$. The chemical is subsequently broken down at a rate proportional to its concentration $\Phi$ (mass of chemical per unit mass of water), this rate amounting to $–\gamma\Phi$ per metre, where $\gamma = 0.5 kg s^{–1} m^{–1}$.
+and length $L = 1 m$ carries water (density $\rho = 1000 kg / m^{3}$ at velocity $u = 0.1 m / s^{1}$.
+A faulty valve introduces a reactive chemical into the pipe half-way along its length at a rate of $0.01 kg /s^{1}$. The diffusivity of the chemical in water is $\Gamma = 0.1 kg / m s$. The chemical is subsequently broken down at a rate proportional to its concentration $\Phi$ (mass of chemical per unit mass of water), this rate amounting to $–\gamma\Phi$ per metre, where $\gamma = 0.5 kg / m s$.
 Assuming that the downstream boundary condition is $\d{\Phi}{x}=0$, set up a finite-volume calculation with 7 cells to estimate the concentration along the pipe using:
  - (a) central
  - (b) upwind
@@ -66,7 +66,82 @@ $$\left(\left(D_w + \tfrac{F_w}{2}\right)+\left(D_e - \tfrac{F_e}{2}\right)+\lef
 
 Essentially, this allows us to define a set of variables, and use them repeatedly to solve this generalized cell at unique conditions, such as at boundaries or sources. 
 
-| $a_W$ | $a_E$ | $a_P$ |
-| :---: | :---: | :---: |
-| $D_w + \tfrac{F_w}{2}$ | $D_e - \tfrac{F_e}{2}$ | $a_w + a_e + F_e - F_w$ |
+ - $a_W = D_w + \tfrac{F_w}{2}$
+ - $a_E = D_e - \tfrac{F_e}{2}$
+ - $a_P = a_w + a_e + F_e - F_w$
+
+##Sources
+Our problem has an additional complexity - the variable in question, $\phi$, the concentration of a given chemical, has both an internal (not boundary) source, and a constant rate of dissipation. Thus we must introduce a source term. Each cell is assigned a quantity $S_u$ corresponding to the rate of material addition, and a scaling quantity $S_P$, corresponding to the dissipation of the material over space.
+
+$$\Sigma S = S_u + S_p \phi_p$$
+
+The problem description tells us that material is injected only once, at cell #4, at a rate of $\dot m = 0.01 kg/s$. Thus $S_u(4) = 0.01$, and $S_u = 0$ elsewhere. Additionally, the chemical dissipates at a rate $\gamma\phi$ per meter, where $\gamma = 0.5 kg / m s$. Thus, $S_P = \gamma\Delta x$, where $\Delta x$ is the step distance ($1m / 7$). $S_P$ is applicable on all cells, not just those with the chemical.
+
+We introduce these terms on the right-hand side of the quation, as seen in the normal steady-state one-dimensional diffusion equation at the top of the page. Thus, the general form: 
+
+$$F_e \phi_e - F_w \phi_w = D_e (\phi_E - \phi_P) - D_w (\phi_P - \phi_w)$$
+
+becomes:
+
+$$F_e \phi_e - F_w \phi_w = D_e (\phi_E - \phi_P) - D_w (\phi_P - \phi_w) + S_u + S_P \phi_P$$
+
+and the $S_P \phi_P$ term is often factored to the left-hand side, as above.
+
+##Solving the Problem
+
+We solve this problem on four unique cases, where we simplify $D_e = D_w$, $F_e = F_w$, and $S_p = \gamma\Delta x$ always.
+
+###The Default Cell (Cells 2, 3, 5, 6)
+
+If the cell has no sources and no boundaries, the transport equation is unchanged. We write:
+
+$$F_e \phi_e - F_w \phi_w = D_e (\phi_E - \phi_P) - D_w (\phi_P - \phi_W) + S_u + S_p\phi_P$$
+
+where $S_u = 0$. We expand by **CDS** and find:
+
+$$(2D - S_P)\phi_P = (D+\tfrac{F}{2})\phi_W + (D-\tfrac{F}{2})\phi_E$$
+
+And thus, $a_W = D+F/2$, $a_E = D-F/2$, $S_u = 0$, $a_p = a_E + a_W - S_P = 2D - S_P$.
+
+###The Injection Cell (Cell 4)
+
+The Injection Cell behaves in a very similar manner to the Default Cell, except that there is a source, so $S_u$ is nonzero. Thus: $a_W = D+F/2$, $a_E = D-F/2$, $S_u = 0.1$, $a_p = a_E + a_W - S_P = 2D - S_P$.
+
+###The Left Boundary (Cell 1)
+
+The boundary conditions are unique -- on the left-hand face, designated $A$, we know $\phi(A) = 0$. We expand the standard form more slowly:
+
+$$F_e \phi_e - F_w \phi_w = D_e (\phi_E - \phi_P) - D_w (\phi_P - \phi_W) + S_u + S_P \phi_P$$
+
+Expanding by CDS: 
+
+$$F_e \tfrac{\phi_E + \phi_P}{2} - F_a \phi_A = D_e (\phi_E - \phi_P) - D_A \phi_A + S_u + S_p \phi_P$$
+
+We note $\phi_A = 0$. This allows us to regroup as:
+
+$$(3D + \tfrac{F}{2} - S_p)\phi_P = (0)\phi_W + (D-\tfrac{F}{2})\phi_E + S_u$$
+
+Thus, $a_W = 0$, $a_E = D-F/2$, $S_u = 0$, $a_p = 3D + F/2 - S_P$.
+
+###The Right Boundary (Cell 7)
+The right boundary is the inverse of the left boundary. We know that $\pd{\phi}{x}(B) = 0$, so the $B$ terms similarly go to zero. Thus, $a_W = D+F/2$, $a_E = 0$, $S_u = 0$, $a_p = D + F/2 - S_P$
+
+##Numerically
+We know $D=\Gamma A / \Delta x = 0.007 kg/s$, $F = \rho A u = 1 kg/s$, and $S_P = \gamma\Delta x = -0.07 kg/s$. We can thus solve:
+
+| n | $a_w$ | $a_e$ | $a_p$ | $S_u$ |
+|---|---|---|---|---|
+| 1 | $0$ | $-0.493$ | $0.592$ | $0$ |
+| 2,3,5,6 | $0.507$ | $-0.493$ | $0.085$ | $0$ |
+| 4 | $0.507$ | $-0.493$ | $0.085$ | $0.01$ |
+| 7 | $0.507$ | $0$ | $0.578$ | $0$ |
+
+Using this data, we can populate a linear equation with real numerical values, and solve:
+
+$$\begin{pmatrix} 0.592 & 0.493 & 0 & 0 & 0 & 0 & 0 \\ -0.507 & 0.085 & 0.493 & 0 & 0 & 0 & 0 \\ 0 & -0.507 & 0.085 & 0.493 & 0 & 0 & 0 \\ 0 & 0 & 0 & -0.507 & 0.085 & 0.493 & 0 \\ 0 & 0 & 0 & 0 & -0.507 & 0.085 & 0.493 \\ 0 & 0 & 0 & 0 & 0 & -0.507 & 0.578 \end{pmatrix}\begin{bmatrix}\phi(1)\\\phi(2)\\\phi(3)\\\phi(4)\\\phi(5)\\\phi(6)\\\phi(7)\end{bmatrix} = \begin{pmatrix}0\\0\\0\\0.01\\0\\0\\0{\end{pmatrix}$$
+
+Which we can solve to get real values for $\phi(n)$ for all values in $n = [1..7]$. $\qed$
+
+
+
 
