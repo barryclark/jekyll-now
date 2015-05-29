@@ -4,7 +4,7 @@ title: Create a CloudFront distribution
 tags: [cloud-front, s3, route53]
 ---
 
-With [CloudFront](http://aws.amazon.com/cloudfront/){:target="_blank"}, Amazon created a CDN (Content Delivery Network), which can be used for serving static files in a fast manner. The actual files are being managed at one single place, but are provided by differnt servers. The particular server for a request is chosen based on the requester's location. If a US-based client is requesting a static file from the CDN, the file is being provided by a server based somewhere in the USA. However, if the client's location is Germany, the file won't be served from a US-based, but a German server. This is done in order to save loading-time. 
+With [CloudFront](http://aws.amazon.com/cloudfront/){:target="_blank"}, Amazon created a CDN (Content Delivery Network), which can be used for serving static files in a fast manner. The actual files are being managed at one single place, but are provided by different servers. The particular server for a request is chosen based on the requester's location. If a US-based client is requesting a static file from the CDN, the file is being provided by a server based somewhere in the USA. However, if the client's location is Germany, the file won't be served from a US-based, but a German server. This is done in order to save loading-time. 
 
 The servers, which hold a cached version of the static files are called Edge Locations. In the image below, each blue dot stands for at least one Edge Location. Some dots stand for up to 3 of them. More details about the AWS-Regions and Edge Locations can be found [here](http://aws.amazon.com/about-aws/global-infrastructure/){:target="_blank"}.
 
