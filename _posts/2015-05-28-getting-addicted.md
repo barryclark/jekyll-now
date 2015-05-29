@@ -3,7 +3,11 @@ published: true
 ---
 
 
-## A New Post
+---
+layout: post
+title: "Getting Addicted"
+published: true
+---
 
 Hmm, this might be an addictive problem, I can start work a little later tomorrow but I'm gonna be awfully tired.
 No fancy changes but lots of learning (I think):
