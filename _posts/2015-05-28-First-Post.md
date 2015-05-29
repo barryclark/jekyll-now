@@ -3,7 +3,7 @@ layout: post
 title: Το πρώτο ποστ έστω και αργοπορημένα
 ---
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+Είμαι ο Γιώργος Θεοφάνους, προγραμματιστής στο επάγγελμα και αυτή την στιγμή εργάζομαι στην Auto Trader (www.autotrader.co.uk) που έχει έδρα το Μάντσεστερ του Ηνωμένου Βασιλείου.
 
 ![_config.yml]({{ site.baseurl }}/images/config.png)
 
