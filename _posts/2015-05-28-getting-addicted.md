@@ -1,4 +1,6 @@
 ---
+layout: post
+title: "Getting Addicted"
 published: true
 ---
 
