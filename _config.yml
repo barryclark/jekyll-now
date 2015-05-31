@@ -64,7 +64,7 @@ highlighter: pygments
 #highlighter: rouge
 permalink: /:title/
 safe: false
-paginate: 2
+paginate: 10
 paginate_path: "page:num"
 
 # The release of Jekyll Now that you're using
