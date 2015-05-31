@@ -62,6 +62,11 @@ safe: false
 #pygments: true
 paginate: 10
 
+comments:
+provider : disqus
+disqus :
+short_name : qiaqiaqia
+
 # The release of Jekyll Now that you're using
 version: v1.1.0
 
