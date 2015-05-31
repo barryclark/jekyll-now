@@ -1,7 +1,7 @@
 ---
 layout: post
-tags: python
 title: Python 点滴
+tags: [python]
 ---
 
 Python 学习笔记--Class

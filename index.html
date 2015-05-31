@@ -8,7 +8,6 @@ layout: default
 
       	    <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
-
       	    <div class="entry">
         	    {{ post.excerpt }}
       	    </div>
@@ -17,6 +16,14 @@ layout: default
 
     	    </article>
 		{% endfor %}
+        {% for tag in site.tags %}
+            <a href="/show_by_tag.html?tag={{ tag[0] }}"> {{ tag[0] }}</a>
+        {% endfor %}
+        var dataStr = '{ {% for tag in site.tags %}{% if tag[0] != site.tags.first[0] %},{% endif %}"{{ tag[0] }}":[{% for post in tag[1] %}{% if post != tag[1].first %},{% endif %}{"url":"{{post.url}}", "title":"{{post.title}}", "date":"{{post.date | date:"%d/%m/%Y"}}"}{% endfor %}]{% endfor %} }',
+        data = JSON.parse(dataStr),
+        curTag = $.query.get("tag"),
+        archieves = data[curTag];
+    
     {% if paginator.total_pages > 1 %}
     {% if paginator.previous_page %}
         <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">上一页</a>

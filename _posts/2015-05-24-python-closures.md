@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Python 点滴
+tags: [python]
 ---
 
 Python 学习笔记--Closures
