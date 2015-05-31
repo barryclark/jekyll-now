@@ -59,13 +59,13 @@ baseurl: ""
 #
 
 markdown: redcarpet
+#pygments: true
 highlighter: pygments
 #highlighter: rouge
 permalink: /:title/
 safe: false
-#pygments: true
-paginate: 10
-
+paginate: 2
+paginate_path: "page:num"
 
 # The release of Jekyll Now that you're using
 version: v1.1.0
