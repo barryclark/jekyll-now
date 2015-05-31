@@ -56,9 +56,10 @@ baseurl: ""
 
 markdown: redcarpet
 highlighter: pygments
+#highlighter: rouge
 permalink: /:title/
 safe: false
-pygments: true
+#pygments: true
 paginate: 10
 
 # The release of Jekyll Now that you're using
