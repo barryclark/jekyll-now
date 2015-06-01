@@ -5,19 +5,16 @@ layout: default
 <div class="posts">
 	{% for post in paginator.posts %}
         <article class="post">
-
             <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
             <div class="entry">
                 {{ post.excerpt }}
             </div>
-
             <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-
         </article>
 	{% endfor %}
     
     {% if paginator.total_pages > 1 %}
+
         {% if paginator.previous_page %}
             <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">上一页</a>
         {% endif %}
@@ -35,5 +32,11 @@ layout: default
         {% if paginator.next_page %}
             <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">下一页</a>
         {% endif %}
+
     {% endif %}
+
+    {% for tag in site.tags %}
+    <a href="/show_by_tag.html?tags={{ tag[0] }}"> {{ tag[0] }}</a>
+    {% endfor %}
+
 </div>
