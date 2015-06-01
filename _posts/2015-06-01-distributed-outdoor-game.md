@@ -124,10 +124,25 @@ As per instructions, we all met in Kungstradgarden for a group photo, where I me
 
 	We expected players from each group to mostly end up finding players from their own group. Instead, most people in most zones had the bright idea of spreading as far from their home base as they could. As a result, there was far more cross-pollination than expected. With 1105 registered finds from 139 participating players, 1026 of those finds (92.8%) were of players from other zones. Some zones contained no same-zone finds. The groups quickly disseminated and play roamed free across the city -- as intended.
 
+	**Finds between Zones.** Each find is a very light red line. The more inter-zone finds, the darker the red line becomes. Point location is approximate ;)
 	![alt text](http://ambuc.github.io/has/finds.png)
 
 	Altogether, the game was a rousing success, with  [some players](http://hideandseek.ninja/rankings.php) scoring as high as 481 points (found 13 people, was found once). 
 
 #3) What Did We Learn?
 
+ - 	People are Reliable
+
+ 	The groups were surprisingly self-organizing, and the players were polite, honest, and fun. I met a ton of people, and I think everyone had a great time. (It helped that the weather was great.)
+
+ - People are Unreliable
+
+ 	On Facebook, anyway. We had 6k invited, 3.5k attending, 1k registered, and just over 150 estimated participants. Under 100 showed up for the final photo.
+
+ 	Knowing this now, we could have made the map a *lot* denser - I heard reports that some zones were so sparsely populated that finding anybody at all was a challenge.
+
  - # ¯&#92;_(ツ)_/¯
+
+
+
+
