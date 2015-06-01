@@ -72,7 +72,7 @@ Additionally, the players needed another key ingredient...
 
  - ##Socks
 
-	The game was called, colloquially, *Hide and Sock*. Players had to know who was playing and who was just a bystander. We instructed players to wear a sock on their hand, so that they could be found. So they had to bring a sock.
+	The game was called, colloquially, **Hide and Sock**. Players had to know who was playing and who was just a bystander. We instructed players to wear a sock on their hand, so that they could be found. So they had to bring a sock.
 
 #1) The Game
 
@@ -104,4 +104,4 @@ As per instructions, we all met in Kungstradgarden for a group photo, where I me
 
 #3) What Did We Learn?
 
- - 	¯\_(ツ)_/¯
+ - # ¯&#92;_(ツ)_/¯
