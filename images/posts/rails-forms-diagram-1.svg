@@ -116,8 +116,8 @@
 		<circle fill="#B8C6D0" cx="242.206" cy="172.841" r="2.691"/>
 		<circle fill="#B8C6D0" cx="242.206" cy="182.564" r="2.691"/>
 	</g>
-	<text transform="matrix(1 0 0 1 136.5654 91.7456)" fill="#708199" font-family="'MyriadPro-Bold'" font-size="7">Company Name</text>
-	<text transform="matrix(1 0 0 1 129.2705 71.4121)" fill="#708199" font-family="'MyriadPro-Bold'" font-size="9">Edit Company Form</text>
+	<text transform="matrix(1 0 0 1 136.5654 91.7456)" fill="#708199" font-family="'MyriadPro-Bold'" font-size="7">Name</text>
+	<text transform="matrix(1 0 0 1 129.2705 71.4121)" fill="#708199" font-family="'MyriadPro-Bold'" font-size="9">Edit Company</text>
 	<text transform="matrix(1 0 0 1 136.5654 115.0791)" fill="#708199" font-family="'MyriadPro-Bold'" font-size="7">Description</text>
 	<text transform="matrix(1 0 0 1 136.5654 154.9189)" fill="#708199" font-family="'MyriadPro-Bold'" font-size="7">Size</text>
 	<text transform="matrix(1 0 0 1 136.5654 174.5337)" fill="#708199" font-family="'MyriadPro-Bold'" font-size="6">Category 1</text>
