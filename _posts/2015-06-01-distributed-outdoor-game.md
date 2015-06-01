@@ -70,8 +70,6 @@ How did we invite people?
 
 	Once the game was designed, the rest was simple. We started a Facebook event and invited every student we knew. I personally asked a few social mavens to invite everyone they knew. 
 
-	I collected data for the first three days, while it
-
 	After the first few days, Facebook's attendance measurement began to lose digits of accuracy. Thus, I only have rate-of-attendance data for the first thousand attendees or so. We eventually reached just over 6k invited / 3.5k attending on Facebook, with just over 1k of those people actually registering to play on [http://hideandseek.ninja](http://hideandseek.ninja).
 
 	**Those Attending on Facebook, vs...**
