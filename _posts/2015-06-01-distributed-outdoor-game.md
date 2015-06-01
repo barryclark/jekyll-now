@@ -70,11 +70,11 @@ How did we invite people?
 
 	After the first few days, Facebook's attendance measurement began to lose digits of accuracy. Thus, I only have rate-of-attendance data for the first thousand attendees or so. We eventually reached just over 6k invited / 3.5k attending on Facebook, with just over 1k of those people actually registering to play on [http://hideandseek.ninja](http://hideandseek.ninja).
 
-	#### those Attending on Facebook, vs...
+	**Those Attending on Facebook, vs...**
 	
 	![alt text](http://ambuc.github.io/has/attending.png)
 
-	#### ...those Officially Registered on the Website.
+	**...those Officially Registered on the Website.**
 	
 	![alt text](http://ambuc.github.io/has/registered.png)
 
