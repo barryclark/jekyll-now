@@ -2,6 +2,10 @@
 title: Design and Operation of a Crowd-Run Distributed Outdoor Game
 layout: post
 ---
+
+*Project*: **[Hide and Seek in Gamla Stan](http://hideandseek.ninja).**
+
+
 ![alt text](http://ambuc.github.io/has/map.png)
 
 #0) The Pre-Game
