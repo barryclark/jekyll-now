@@ -40,7 +40,7 @@ How were the codes generated?
 
 	Additionally, the codes had to be *salted*: that is, it ought to be difficult to randomly guess a string and have it be an extant secret code.
 
-	$$\underbrace{\texttt{B}}_\text{\texttt{\$email_string[0]}}\overbrace{\texttt{030}}^\text{\texttt{dec2hex(\$id)}}$$
+	$$\underbrace{\texttt{B}}_\texttt{\$email_string[0]}\overbrace{\texttt{030}}^\texttt{dec2hex(\$id)}$$
 
 	We did this like so: of the *four digits*, the *first* is a letter or number, the first of their email string (most emails began with alphanumeric character); the *second through fourth* are the hexadecimal representation of their identification number in the database, which represents if they were first, second, etc. to sign up for the game. The first bit was known to the user; the second was not. The second bit was easy to figure out, if you knew hex; the first was not. It doesn't stand up to real cryptographic analysis, of course, but it did the trick -- we didn't detect any cheating.
 
