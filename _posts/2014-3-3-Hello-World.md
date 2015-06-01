@@ -1,6 +1,9 @@
 ---
 layout: post
 title: You're up and running!
+summary: Enter this post to know how configure your blog
+tags:
+- welcome-tag
 ---
 
 Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
