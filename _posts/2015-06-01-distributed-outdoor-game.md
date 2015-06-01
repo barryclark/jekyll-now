@@ -2,7 +2,7 @@
 title: Design and Operation of a Crowd-Run Distributed Outdoor Game
 layout: post
 ---
-![alt text][http://ambuc.github.io/has/map.png]
+![alt text](http://ambuc.github.io/has/map.png)
 
 #0) The Pre-Game
 
@@ -52,7 +52,7 @@ How did we invite people?
 
 	Once the game was designed, the rest was simple. We started a Facebook event and invited every student we knew. I personally asked a few social mavens to invite everyone they knew. After the first few days, Facebook's attendance measurement began to lose digits of accuracy. Thus, I only have rate-of-attendance data for the first thousand attendees or so. We eventually reached just over 6k invited / 3.5k attending on Facebook, with just over 1k of those people actually registering to play on [http://hideandseek.ninja](http://hideandseek.ninja).
 
-	![alt text][http://ambuc.github.io/has/attending.png]
+	![alt text](http://ambuc.github.io/has/attending.png)
 
 	The registration system collected the player's first and last name, email, and hometown. Upon submission of the registration form, each player recieved a customized email containing more detailed gameplay instructions, their **secret code**, their team (whether they were to hide first or seek first), and their **Zone** -- initially, merely a random number between 1 and 24. (24 is a very divisible number.)
 
@@ -62,7 +62,7 @@ How did we assign zones?
 
 	Once we reached 800 registered, we began to divide up Gamla Stan and the surrounding neighborhood into 12 zones. 
 
-	![alt text][http://ambuc.github.io/has/zones.png]
+	![alt text](http://ambuc.github.io/has/zones.png)
 
 	We picked good meeting points - public squares, parks, places far from traffic and palaces - and emailed instructions on a per-zone basis on where to meet, when to begin playing, etc. 
 
@@ -86,19 +86,19 @@ The game went fast - I regret how tight we made the schedule, and how long we ma
 
 As per instructions, we all met in Kungstradgarden for a group photo, where I met many of the players and got feedback on how the event went. We also used Aaron's selfie stick to take a group photo. (I'm in the center, behind the photographer.)
 
-![alt text][http://ambuc.github.io/has/photo.jpg]
+![alt text](http://ambuc.github.io/has/photo.jpg)
 
  - 	##Countries of Origin
 
 	When a player registered, we collected their first and last name, email, and hometown (just for fun data analysis). We ended up with 1141 registered players, hailing from 127 regions (countries, large cities, neighborhoods). It's difficult to graph, but the top three countries were Sweden, Germany, India, Italy, France, Singapore, China, and then over one hundred more with shares under 1%.
 
-	![alt text][http://ambuc.github.io/has/origins.png]
+	![alt text](http://ambuc.github.io/has/origins.png)
 
  - 	##Finds
 
 	We expected players from each group to mostly end up finding players from their own group. Instead, most people in most zones had the bright idea of spreading as far from their home base as they could. As a result, there was far more cross-pollination than expected. With 1105 registered finds from 139 participating players, 1026 of those finds (92.8%) were of players from other zones. Some zones contained no same-zone finds. The groups quickly disseminated and play roamed free across the city -- as intended.
 
-	![alt text][http://ambuc.github.io/has/finds.png]
+	![alt text](http://ambuc.github.io/has/finds.png)
 
 	Altogether, the game was a rousing success, with  [some players](http://hideandseek.ninja/rankings.php) scoring as high as 481 points (found 13 people, was found once). 
 
