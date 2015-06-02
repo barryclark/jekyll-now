@@ -5,6 +5,8 @@ layout: post
 
 *Project*: **[Subway](http://ambuc.github.io/subway/).**
 
+![alt](/images/subway_thumbnail.png)
+
 Here I attempted to render the NYC Subway system as a [force-directed graph](http://en.wikipedia.org/wiki/Force-directed_graph_drawing) in [d3.js](http://d3js.org/). The purpose of a force-directed graph is to
 
 >“…position the nodes of a [graph](http://en.wikipedia.org/wiki/Graph_(mathematics)) in two-dimensional or three-dimensional space so that all the edges are of more or less equal length and there are as few crossing edges as possible, by assigning forces among the set of edges and the set of nodes, based on their relative positions, and then using these forces either to simulate the motion of the edges and nodes or to minimize their energy.” ~ [Wikipedia](http://en.wikipedia.org/wiki/Force-directed_graph_drawing)
