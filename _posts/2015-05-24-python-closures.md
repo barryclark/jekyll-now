@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Python 点滴
+title: Python 点滴 —— Closures
 tags: [python]
 ---
 
