@@ -1,3 +1,8 @@
+---
+title: Bio
+layout: post
+---
+
 I'm a Junior in Mechanical Engineering at the University of Illinois at Urbana-Champaign. I'm currently studying Sustainability Engineering and Computational Fluid Dynamics at KTH Royal Institute of Technology in Stockholm, Sweden. 
 
 In the past, I've seen employment as 
