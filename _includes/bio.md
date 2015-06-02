@@ -10,4 +10,4 @@ In the past, I've seen employment as:
 For more, see my [Resume](http://ambuc.github.ioresume.pdf).
 
 ### Contact
-Email me at [j@mesbuck.land](j@mesbuck.land).
+Email me at [j@mesbuck.land](mailto:j@mesbuck.land).
