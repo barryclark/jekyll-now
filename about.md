@@ -15,7 +15,7 @@ Office: 324
 
 ## Prospective Students
 
-I am looking for motivated Bioinformatics and Computer Science graduate and undergraduate students interested in developing and applying statistical modeling approaches to understand the genetics of complex traits. Students joining our lab need to have good communication (both oral and written) and organizational skills. Prior coursework in genetics/genomics, statistics, and programming is preferred. Familiarity or willingness to become familiar with Linux, R, Python, and GitHub is required.
+I am looking for motivated Bioinformatics, Computer Science, and Biology  graduate and undergraduate students interested in developing and applying statistical modeling approaches to understand the genetics of complex traits. Students joining our computational lab need to have good communication (both oral and written) and organizational skills. Prior coursework in genetics/genomics, statistics, and programming is preferred. Familiarity or willingness to become familiar with Linux, R, Python, and GitHub is required.
 
 Undergraduate students working in my lab have to commit to at least 1.5 years and are expected to be in the lab 10-15 hours/week during the semester and full-time (funding is usually available) during the summer. 
 
