@@ -4,6 +4,10 @@ title: Work
 permalink: /work/
 ---
 
+Have a look at some of my past work. Something showier will take this table's place soon.
+</br>
+</br>
+
 <div class="content">
   <table id="work-table" style="width: 100%">
     <tr>
