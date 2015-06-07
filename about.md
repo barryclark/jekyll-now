@@ -6,7 +6,7 @@ permalink: /about/
 
 Greetings!
 
-My name is Samson Brock, and this is badMOTIVATOR.io. (badMOTIVATOR was my [Battle.net](http://battle.net/) username way back when I started playing Warcraft II on the Undergraduate Library computers at the University of Texas at Austin.) This blog was started on June 6th, 2015, to journal my re-entry into the world of professional software engineering.
+My name is Samson Brock, and this is badMOTIVATOR.io. (badMOTIVATOR was my [Battle.net](http://battle.net/) username way back when I started playing Warcraft and Starcraft on the Undergraduate Library computers at the University of Texas at Austin.) This blog was started on June 6th, 2015, to journal my re-entry into the world of professional software engineering.
 
 I already had about 10 years of combined experience across software engineering, IT consulting, and web development roles. It had, however, been a few years since I had programmed professionally. Technology changes, and skills rust quickly. Never one to do things half-assed, I chose to enroll at the Turing School of Software & Design to get myself back up to speed the right way.
 
