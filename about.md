@@ -15,3 +15,5 @@ The [Turing School of Software & Design](http://turing.io/) is a 7-month intensi
 This blog exists to provide some insight into my experience at the Turing School in addition to other topics generally software engineering related. Please feel free to interact with me through any of my accounts linked below.
 
 Cheers!
+
+![R5 Astromech Droid](/images/Star-Wars-R5-Astromech-Droid.png "image courtesy of WookieePedia")
