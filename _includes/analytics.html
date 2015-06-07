@@ -11,10 +11,6 @@
 		  'page': '{{ page.url }}',
 		  'title': '{{ page.title | replace: "'", "\\'" }}'
 		});
-
-                if (window.location.toString().includes("?")) {
-                  window.location = window.location.toString().split("?")[0]
-                }
 	</script>
 	<!-- End Google Analytics -->
 {% endif %}
