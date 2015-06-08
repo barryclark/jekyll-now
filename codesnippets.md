@@ -5,7 +5,7 @@ permalink: /codesnippets/
 ---
 
 
-### Where I keep useful one liners/short coding tasks 
+# Where I keep useful one liners/short coding tasks 
 
 # Run a script on multiple files in a directory - command line
 $for file in *2col; do echo $file; done
