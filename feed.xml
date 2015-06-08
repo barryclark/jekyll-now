@@ -10,7 +10,7 @@ layout: null
     <atom:link href="{{ site.url }}/feed.xml" rel="self" type="application/rss+xml" />
     <image>{{ site.url }}/images/blog.png</image>
     {% if site.language %}<language>en</language>{% endif %}
-    {% for post in site.posts limit:10 %}
+    {% for post in site.posts limit 10 %}
       <item>
         <title>{{ post.title | xml_escape }}</title>
         <description>{{ post.content | xml_escape }}</description>
