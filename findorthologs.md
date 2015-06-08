@@ -2,7 +2,8 @@
 layout: default
 title: findorthologs
 ---
-<h2>FindOrthologs</h2>
+<H2>FindOrthologs</H2>
+<HR>
 <div class="Instructions">
 <H5>Search for an ortholog table</H5>
     <p>
