@@ -4,9 +4,6 @@ title:
 permalink: /findorthologs/
 ---
 
-
---- layout: default title: Home ---
-
 <div class="Instructions">
 
 ##### Search for an ortholog table
@@ -58,7 +55,7 @@ The current proteome set covers [66 species](http://www.ebi.ac.uk/reference_prot
 
 ##### Table viewing instructions
 
-Github initially renders a ".csv" file as an interactive table. To save a table, click the "Raw" icon, and then save the page. The [entire collection of tables](https://github.com/clairemcwhite/OrthologLinking) can be downloaded as a zip file. The Ortholog Database Connector gives a comprehensive view of multiorganism orthologs of a given human gene, as produced by diverse ortholog sorting algorithms. For example, the table for the human gene P00395 has columns containing the membership of the ortholog group P00395 belongs to according to each database.
+Github initially renders a ".csv" file as an interactive table. To save a table, click the "Raw" icon, and then save the page. The [entire collection of tables](https://github.com/clairemcwhite/QfOreferencetables) can be downloaded as a zip file. The Ortholog Database Connector gives a comprehensive view of multiorganism orthologs of a given human gene, as produced by diverse ortholog sorting algorithms. For example, the table for the human gene P00395 has columns containing the membership of the ortholog group P00395 belongs to according to each database.
 
 ##### Rationale
 
