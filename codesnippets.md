@@ -5,17 +5,21 @@ permalink: /codesnippets/
 ---
 
 
-# Where I'm keeping useful one liners/short coding tasks 
+## Where I'm keeping useful one liners/short coding tasks 
 
-##### Run a script on multiple files in a directory - command line
-$for file in *2col; do echo $file; done
+##### Run a script on multiple files in a directory -Linux command line
+for file in *2col; do echo $file; done
 
 ##### Split two Ensembl identifiers between a number and a letter - vim
 :%s/[0-9]E/E\t/g
 
 ex. ENS0000001ENS0000002 -> ENS0000001 ENS0000002
 
-##### remove a line if it has a blank - command line
+##### Most recent 5 modified files - Linux command line
+ls -1t -l | head -5
+
+
+##### remove a line if it has a blank - Linux command line
 awk '!/^\t|\t\t|\t$/' file.tab | awk '!a[$0]++' > newfile.tab
 
 ##### Command line arguments - python
@@ -41,7 +45,7 @@ cols = ['col1', 'col2']
 
 final = original[cols]
 
-##### Delete the first line of a file - command line
+##### Delete the first line of a file - Linux command line
 sed '1d' file.txt > tmpfile; mv tmpfile file.txt
 
 ##### Make binary black and white heatmap on table of 1's and blanks - R
