@@ -2,13 +2,13 @@
 layout: default
 title: findorthologs
 ---
-<H1>FindOrthologs</H1>
+<H1>FindOrthologs Tool</H1>
 <HR>
 <div class="Instructions">
-<H5>Search for an ortholog table</H5>
+<H5>Search for multispecies orthologs</H5>
     <p>
-
-    <b></b>Enter a  human proteome Uniprot Accession, ex. P00395</b>
+    Tables are created by reference to individual human genes.
+    <b></b>Enter a  human proteome Uniprot Accession to pull a table for orthologs to that gene, ex. P00395</b>
     </p>
 </div> 
 
