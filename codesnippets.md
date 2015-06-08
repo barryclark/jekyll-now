@@ -36,9 +36,13 @@ LOC=$(pwd)
 df.to_csv(filenameA, sep="\t", index=True)
 
 ##### Take certain columns from a pandas dataframe - python pandas
+'''python
 cols = ['col1', 'col2']
 
 final = original[cols]
+'''
+##### Delete the first line of a file - command line
+sed '1d' file.txt > tmpfile; mv tmpfile file.txt
 
 ##### Make binary black and white heatmap on table of 1's and blanks - R
 df <- read.csv(gene, sep="\t", header=TRUE, row.names=1)
@@ -54,6 +58,5 @@ m[is.na(m)] <- 0
 nr <- nrow(m)
 
 heatmap.2(m, scale="none", col=c("white", "black"), cexRow=0.2/log10(nr), trace="none", colsep=c(1,2,3,4,5,6,7,8,9,10), sepcolor="grey", sepwidth=0.01, key=FALSE, xlab="DATABASES", ylab="GENES", margins=c(15,10))
-
 
 
