@@ -16,9 +16,9 @@ title: Home
 function changeText3(){
     var userInput = document.getElementById('userInput').value;
     var lnk = document.getElementById('lnk');
-    lnk.href = "https://sheet.zoho.com/view.do?url=https://raw.githubusercontent.com/clairemcwhite/OrthologLinking/master/" + userInput +".csv";
+    lnk.href = "https://sheet.zoho.com/view.do?url=https://raw.githubusercontent.com/clairemcwhite/QfOreferencetables/master/" + userInput +".csv";
     lnk.innerHTML = lnk.href;
-    window.open("https://github.com/clairemcwhite/OrthologLinking/blob/master/" + userInput +".csv");
+    window.open("https://github.com/clairemcwhite/QfOreferencetables/blob/master/" + userInput +".csv");
 }
 </script>
 
@@ -47,7 +47,7 @@ Link to Excel view of most recent search: <a href="" id=lnk></a><br>
 
 <div class="currentdatabases">
 
-Ortholog groups are pulled from:
+Ortholog groups are pulled from the Quest for Orthologs reference proteome <a href="http://orthology.benchmarkservice.org/cgi-bin/gateway.pl?f=ShowProject"> benchmarking</a>:
 <ul>
   
   <li>KEGG Orthology (KO) release 74</li>
