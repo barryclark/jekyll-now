@@ -5,40 +5,40 @@ permalink: /codesnippets/
 ---
 
 
-# Where I keep useful one liners/short coding tasks 
+# Where I'm keeping useful one liners/short coding tasks 
 
-### Run a script on multiple files in a directory - command line
+##### Run a script on multiple files in a directory - command line
 $for file in *2col; do echo $file; done
 
-### Split two Ensembl identifiers between a number and a letter - vim
+##### Split two Ensembl identifiers between a number and a letter - vim
 :%s/[0-9]E/E\t/g
 ex. ENS0000001ENS0000002 -> ENS0000001 ENS0000002
 
-### remove a line if it has a blank - command line
+##### remove a line if it has a blank - command line
 awk '!/^\t|\t\t|\t$/' file.tab | awk '!a[$0]++' > newfile.tab
 
-### Command line arguments - python
+##### Command line arguments - python
 import sys
 infile = sys.argv[1]
 
-### Command line arguments - R
+##### Command line arguments - R
 args<-commandArgs(TRUE)
 genename=args[1]
 
-### Command line arguments - Bash script
+##### Command line arguments - Bash script
 FILENAME=$@
 
-### Current directory - Bash script
+##### Current directory - Bash script
 LOC=$(pwd)
 
-### Save a pandas csv - python pandas
+##### Save a pandas csv - python pandas
 df.to_csv(filenameA, sep="\t", index=True)
 
-### Take certain columns from a pandas dataframe - python pandas
+##### Take certain columns from a pandas dataframe - python pandas
 cols = ['col1', 'col2']
 final = original[cols]
 
-### Make binary black and white heatmap on table of 1's and blanks - R
+##### Make binary black and white heatmap on table of 1's and blanks - R
 df <- read.csv(gene, sep="\t", header=TRUE, row.names=1)
 
 m <- as.matrix(df, rownames.force=TRUE)
