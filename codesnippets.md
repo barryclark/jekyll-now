@@ -38,7 +38,7 @@ FILENAME=$@
 ##### Current directory - Bash script
 LOC=$(pwd)
 
-##### Save a pandas csv - python pandas
+##### Save a pandas dataframe - python pandas
 df.to_csv(filenameA, sep="\t", index=True)
 
 ##### Take certain columns from a pandas dataframe - python pandas
