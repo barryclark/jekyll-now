@@ -12,6 +12,7 @@ $for file in *2col; do echo $file; done
 
 ##### Split two Ensembl identifiers between a number and a letter - vim
 :%s/[0-9]E/E\t/g
+
 ex. ENS0000001ENS0000002 -> ENS0000001 ENS0000002
 
 ##### remove a line if it has a blank - command line
@@ -36,6 +37,7 @@ df.to_csv(filenameA, sep="\t", index=True)
 
 ##### Take certain columns from a pandas dataframe - python pandas
 cols = ['col1', 'col2']
+
 final = original[cols]
 
 ##### Make binary black and white heatmap on table of 1's and blanks - R
