@@ -50,14 +50,14 @@ Link to Excel view of most recent search: <a href="" id=lnk></a><br>
 
 <div class="currentdatabases">
 
-Ortholog groups are pulled from the <a href="http://orthology.benchmarkservice.org/cgi-bin/gateway.pl?f=ShowProject">Quest for Orthologs reference proteome benchmarking</a>:
+Ortholog groups are pulled from the <a href="http://orthology.benchmarkservice.org/cgi-bin/gateway.pl?f=ShowProject">Quest for Orthologs reference proteome benchmarking</a>.  The following algorithms ortholog calling algorithms were run on identical data sets.
 <ul>
   
   <li>Hieranoid 2.0 (KO) release 74</li>
   <li><a href="http://www.ensembl.org/index.html">EnsemblCompara v2</a></li>
   <li><a href="http://inparanoid.sbc.su.se/cgi-bin/index.cgi">InParanoid</a></li>
   <li><a href="http://inparanoid.sbc.su.se/cgi-bin/index.cgi">InParanoidCore</a></li>
-  <li><a href="http://orthology.phylomedb.org/">metaPhOrs</a></li>
+  <li><a href="http://orthology.phylomedb.org/">metaPhOrs</a> missing genomes: {PYRKO,STRCO,THEMA</li>
   <li><a href="http://omabrowser.org/oma/home/">OMA GETHOGs</a></li>
   <li><a href="http://omabrowser.org/oma/home/">OMA Groups (RefSet5)</a>OMA </li>
   <li><a href="http://omabrowser.org/oma/home/">OMA OMA Pairs (Refset5)</a></li>
@@ -65,7 +65,7 @@ Ortholog groups are pulled from the <a href="http://orthology.benchmarkservice.o
   <li><a href="http://pantherdb.org/">PANTHER 8.0 (all)</a></li>
   <li><a href="http://pantherdb.org/">PANTHER 8.0 (LDO only)</a></li>
   <li><a href="http://phylomedb.org/">phylomeDB</a></li>
-  <li>RBH</li>
+  <li>RBH - 26 genomes missing</li>
   <li>RSD 0.8 1e-5 Deluca (Roundup)</li>
 </ul>
     
