@@ -21,6 +21,15 @@ function changeText3(){
     window.open("https://github.com/clairemcwhite/QfOreferencetables/blob/master/" + userInput +".csv");
 }
 </script>
+<script type="text/javascript">
+function changeText3(){
+    var userInput = document.getElementById('userInput').value;
+    var lnk = document.getElementById('lnk');
+    lnk.href = "https://sheet.zoho.com/view.do?url=https://raw.githubusercontent.com/clairemcwhite/QfOreferencetables/master/" + userInput +".csv";
+    lnk.innerHTML = lnk.href;
+    window.open("https://github.com/clairemcwhite/QfOreferencetables/blob/master/" + userInput +".csv");
+}
+</script>
 Link to Excel view of most recent search:<a href="" id="lnk"></a>  
 
 * * *
