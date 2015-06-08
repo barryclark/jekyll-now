@@ -47,21 +47,26 @@ Link to Excel view of most recent search: <a href="" id=lnk></a><br>
 
 <div class="currentdatabases">
 
-Ortholog groups are pulled from the Quest for Orthologs reference proteome <a href="http://orthology.benchmarkservice.org/cgi-bin/gateway.pl?f=ShowProject"> benchmarking</a>:
+Ortholog groups are pulled from the <a href="http://orthology.benchmarkservice.org/cgi-bin/gateway.pl?f=ShowProject">Quest for Orthologs reference proteome benchmarking</a>:
 <ul>
   
-  <li>KEGG Orthology (KO) release 74</li>
-  <li>EnsemblCompara Gene Trees - Ensembl Genome Browser version 79</li>
-  <li>OMA groups 2014 release</li>
-  <li>TreeFam release 9</li>
-  <li>OrthoDB version 8</li>
-  <li>EggNOG version 4</li>
-  <li>HOGENOM release 06</li>
-  <li>HOVERGEN release 49</li>
-  <li>COG 2014 update n</li>
-  <li>PhylomeDB version 4 - Human Phylome</li>
+  <li>Hieranoid 2.0 (KO) release 74</li>
+  <li><a href="http://www.ensembl.org/index.html">EnsemblCompara v2</a></li>
+  <li><a href="http://inparanoid.sbc.su.se/cgi-bin/index.cgi">InParanoid</a></li>
+  <li><a href="http://inparanoid.sbc.su.se/cgi-bin/index.cgi">InParanoidCore</a></li>
+  <li><a href="http://orthology.phylomedb.org/"></a>metaPhOrs</a></li>
+  <li><a href="http://omabrowser.org/oma/home/">OMA GETHOGs</a></li>
+  <li><a href="http://omabrowser.org/oma/home/">OMA Groups (RefSet5)</a>OMA </li>
+  <li><a href="http://omabrowser.org/oma/home/">OMA OMA Pairs (Refset5)</a></li>
+  <li><a href="http://www.lbgi.fr/orthoinspector/">orthoinspector 1.30</a></li>
+  <li><a href="http://pantherdb.org/">PANTHER 8.0 (all)</a></li>
+  <li><a href="http://pantherdb.org/">PANTHER 8.0 (LDO only)</a></li>
+  <li><a href="http://phylomedb.org/">phylomeDB</a></li>
+  <li>RBH</li>
+  <li>RSD 0.8 1e-5 Deluca (Roundup)</li>
 </ul>
     
+The current proteome set covers <a href="http://www.ebi.ac.uk/reference_proteomes">66 species</a>, including eukaryotes, archaea and bacteria. 
 </div>
 <HR>
 <div class="More">
@@ -71,7 +76,13 @@ Ortholog groups are pulled from the Quest for Orthologs reference proteome <a hr
 
     <h5>Table viewing instructions</h5>
     Github initially renders a ".csv" file as an interactive table.  To save a table, click the "Raw" icon, and then save the page.  The <a href="https://github.com/clairemcwhite/OrthologLinking">entire collection of tables</a> can be downloaded as a zip file. 
-        
+    The Ortholog Database Connector gives a comprehensive view of multiorganism orthologs of a given human gene, as produced by diverse ortholog sorting algorithms. For example, the table for the human gene P00395 has columns containing the membership of the ortholog group P00395 belongs to according to each database.
+
+    <h5>Rationale</h5>
+
+    Orthologous genes are genes which arise from speciation, for example, Human Talin, and Mouse Talin. Identification and accuracy of genes classed as orthologs is key for comparative genomic approaches, however there is no consensus model. Approximately 30 independent algorithms exist to classify orthologous genes; some based on species and gene phylogeny and some using exclusively sequence comparison. Phylogeny based approaches have the advantage of tracking genes through realistic evolutionary paths, however tend to be computationally intensive, and subject to error from misconstructed gene trees. BLAST approaches are much faster, generally using an all-by-all blast of multispecies proteomes in order to generate best matches, however lack the added power of phylogenetic information.
+
+    There is often no clear answer for which database to use to generate lists of orthologs for a comparative project. Confounding this problem is the lack of a method to easily compare results from different databases. Additionally, precomputed data available from the databases use various gene naming methods, or different releases of the same naming type with non-overlapping gene names. The Orthology Database Connector attempts to inform research using orthologs by standardizing and aligning ortholog groups from ten separate ortholog grouping algorithms. Additionally, the number of databases which call a gene as an ortholog may be used as a proxy for confidence of that gene's assignment of orthology to the reference gene. The ability to visualize and compare ortholog groupings from multiple sources will aid comparative study of proteins and genes.    
 
     </p>
 </div>     
