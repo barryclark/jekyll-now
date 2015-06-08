@@ -50,7 +50,7 @@ Link to Excel view of most recent search: <a href="" id=lnk></a><br>
 
 <div class="currentdatabases">
 
-Ortholog groups are pulled from the <a href="http://orthology.benchmarkservice.org/cgi-bin/gateway.pl?f=ShowProject">Quest for Orthologs reference proteome benchmarking</a>.  The following algorithms ortholog calling algorithms were run on identical data sets.
+Ortholog groups are pulled from the <a href="http://orthology.benchmarkservice.org/cgi-bin/gateway.pl?f=ShowProject">Quest for Orthologs reference proteome benchmarking</a>.  The following algorithms ortholog calling algorithms were run on identical proteome sets covering <a href="http://www.ebi.ac.uk/reference_proteomes">66 species</a>, including eukaryotes, archaea and bacteria.
 <ul>
   
   <li>Hieranoid 2.0 (KO) release 74</li>
@@ -69,7 +69,6 @@ Ortholog groups are pulled from the <a href="http://orthology.benchmarkservice.o
   <li>RSD 0.8 1e-5 Deluca (Roundup)</li>
 </ul>
     
-The current proteome set covers <a href="http://www.ebi.ac.uk/reference_proteomes">66 species</a>, including eukaryotes, archaea and bacteria. 
 </div>
 <HR>
 <div class="More">
