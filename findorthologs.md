@@ -33,7 +33,8 @@ Link to Excel view of most recent search: <a href="" id=lnk></a><br>
 
 <div class="More">
 <h5>About</h5>
-    <p>The Ortholog Database Connector displays multispecies orthologs to a reference human gene according to ten diverse ortholog sorting algorithms.</p>
+ 
+    <p>FindOrthologs displays multispecies orthologs to a reference human gene according to diverse ortholog sorting algorithms.</p>
     </p>
      <p>
     Tables indexed by UniProt Accession are currently available for the <a href="https://raw.githubusercontent.com/clairemcwhite/clairemcwhite.github.io/master/humanProteomeDetails.tsv">20,188 human protein coding genes</a> from the 2015 release of the UNIPROT reviewed human proteome ("UP000005640").  
@@ -76,13 +77,13 @@ The current proteome set covers <a href="http://www.ebi.ac.uk/reference_proteome
 
     <h5>Table viewing instructions</h5>
     Github initially renders a ".csv" file as an interactive table.  To save a table, click the "Raw" icon, and then save the page.  The <a href="https://github.com/clairemcwhite/OrthologLinking">entire collection of tables</a> can be downloaded as a zip file. 
-    The Ortholog Database Connector gives a comprehensive view of multiorganism orthologs of a given human gene, as produced by diverse ortholog sorting algorithms. For example, the table for the human gene P00395 has columns containing the membership of the ortholog group P00395 belongs to according to each database.
+    FindOrthologs gives a comprehensive view of multiorganism orthologs of a given human gene, as produced by diverse ortholog sorting algorithms. For example, the table for the human gene P00395 has columns containing the membership of the ortholog group P00395 belongs to according to each database.
 <HR>
     <h5>Rationale</h5>
 
     Orthologous genes are genes which arise from speciation, for example, Human Talin, and Mouse Talin. Identification and accuracy of genes classed as orthologs is key for comparative genomic approaches, however there is no consensus model. Approximately 30 independent algorithms exist to classify orthologous genes; some based on species and gene phylogeny and some using exclusively sequence comparison. Phylogeny based approaches have the advantage of tracking genes through realistic evolutionary paths, however tend to be computationally intensive, and subject to error from misconstructed gene trees. BLAST approaches are much faster, generally using an all-by-all blast of multispecies proteomes in order to generate best matches, however lack the added power of phylogenetic information.
 
-    There is often no clear answer for which database to use to generate lists of orthologs for a comparative project. Confounding this problem is the lack of a method to easily compare results from different databases. Additionally, precomputed data available from the databases use various gene naming methods, or different releases of the same naming type with non-overlapping gene names. The Orthology Database Connector attempts to inform research using orthologs by standardizing and aligning ortholog groups from ten separate ortholog grouping algorithms. Additionally, the number of databases which call a gene as an ortholog may be used as a proxy for confidence of that gene's assignment of orthology to the reference gene. The ability to visualize and compare ortholog groupings from multiple sources will aid comparative study of proteins and genes.    
+    There is often no clear answer for which database to use to generate lists of orthologs for a comparative project. Confounding this problem is the lack of a method to easily compare results from different databases. Additionally, precomputed data available from the databases use various gene naming methods, or different releases of the same naming type with non-overlapping gene names. FindOrthologs attempts to inform research using orthologs by standardizing and aligning ortholog groups from ten separate ortholog grouping algorithms. Additionally, the number of databases which call a gene as an ortholog may be used as a proxy for confidence of that gene's assignment of orthology to the reference gene. The ability to visualize and compare ortholog groupings from multiple sources will aid comparative study of proteins and genes.    
 
     </p>
 </div>     
