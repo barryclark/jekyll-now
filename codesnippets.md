@@ -36,11 +36,11 @@ LOC=$(pwd)
 df.to_csv(filenameA, sep="\t", index=True)
 
 ##### Take certain columns from a pandas dataframe - python pandas
-'''python
+
 cols = ['col1', 'col2']
 
 final = original[cols]
-'''
+
 ##### Delete the first line of a file - command line
 sed '1d' file.txt > tmpfile; mv tmpfile file.txt
 
