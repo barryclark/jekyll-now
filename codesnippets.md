@@ -5,7 +5,7 @@ permalink: /codesnippets/
 ---
 
 
-## Useful one liners/short coding tasks 
+#### Personal useful one liners/short coding tasks 
 
 ##### Run a script on multiple files in a directory -Linux command line
 for file in *2col; do echo $file; done
