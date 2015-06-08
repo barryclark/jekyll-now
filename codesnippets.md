@@ -24,10 +24,12 @@ awk '!/^\t|\t\t|\t$/' file.tab | awk '!a[$0]++' > newfile.tab
 
 ##### Command line arguments - python
 import sys
+
 infile = sys.argv[1]
 
 ##### Command line arguments - R
 args<-commandArgs(TRUE)
+
 genename=args[1]
 
 ##### Command line arguments - Bash script
