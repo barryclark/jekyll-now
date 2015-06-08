@@ -7,7 +7,8 @@ title: findorthologs
 <div class="Instructions">
 <H5>Search for multispecies orthologs</H5>
     <p>
-    Tables are created by reference to individual human genes.
+    Tables are created by reference to individual human genes.</p>
+    <p>
     <b></b>Enter a  human proteome Uniprot Accession to pull a table for orthologs to that gene, ex. P00395</b>
     </p>
 </div> 
