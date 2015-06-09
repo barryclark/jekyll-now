@@ -28,6 +28,21 @@ body {
   max-width: 740px;
   padding: 0 10px;
   width: 100%;
+  position: relative;
+}
+
+aside {
+    width: 200px;
+    height: 700px;
+    font-size: 120%;
+  }
+
+#left-side {
+  float: left;
+}
+
+#right-side {
+  float: right;
 }
 
 h1, h2, h3, h4, h5, h6 {
