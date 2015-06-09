@@ -33,6 +33,7 @@ LOC=$(pwd)
 
 ##### Split two Ensembl identifiers between a number and a letter
 :%s/[0-9]E/E\t/g<br>
+
 ex. ENS0000001ENS0000002 -> ENS0000001 ENS0000002
 
 #### <font color="red">Python</font>
@@ -49,11 +50,12 @@ df.query("COL1==a")
 ##### Column bind - equivalent to R cbind()
 pd.concat([a], [b], axis = 1)
 
-Axis = 0 for row bind
+(axis = 0 for row bind)
 
 ##### Row count
-df.sum(axis=1)<br>
-axis = 0 for column sum
+df.sum(axis=1)
+
+(axis = 0 for column sum)
 
 ##### Move row index to a column
 df.reset_index(inplace=True)
