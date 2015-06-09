@@ -7,9 +7,9 @@ title: findorthologs
 <div class="Instructions">
 <H5>Search for multispecies orthologs</H5>
     <p>
-    Tables are organized by reference to individual human genes.</p>
+    Tables are organized by reference to individual human protein coding genes.</p>
     <p>
-    <b></b>Enter a <a href="https://raw.githubusercontent.com/clairemcwhite/clairemcwhite.github.io/master/humanProteomeDetails.tsv"> human proteome Uniprot Accession </a> to pull a table of orthologs to that gene.<br> ex. P00395</b>
+    <b></b>Enter a <a href="https://raw.githubusercontent.com/clairemcwhite/clairemcwhite.github.io/master/humanProteomeDetails.tsv"> human proteome Uniprot Accession </a> to pull a table of orthologs to that protein.<br> ex. P00395</b>
     </p>
 </div> 
 
@@ -36,17 +36,17 @@ Link to Excel view of most recent search: <a href="" id=lnk></a><br>
 <div class="More">
 <h5>About</h5>
  
-    <p>FindOrthologs displays multispecies orthologs to a reference human gene according to diverse ortholog sorting algorithms.</p>
+    <p>FindOrthologs displays multispecies orthologs to a reference human protein coding gene according to diverse ortholog sorting algorithms.</p>
     </p>
     <img src="https://cloud.githubusercontent.com/assets/11052278/8070776/a983d0e8-0ec9-11e5-8086-02e04b0fa248.png" alt="simplified example table"><br>
-    <sub><i>Simplified example table of ortholog calls from three algorithms. Rows: Proteins called as orthologous to the reference human protein, here P04637/P53_HUMAN. Columns:"ACC" = UniProt Accession, "ENTRY_NAME" = UniProt Entry Name, "ROW_COUNT" = The count of databases which call that row's protein as an ortholog to the reference gene  </i> </sub> <br><br>
+    <sub><i>Simplified example table of ortholog calls from three algorithms. Rows: Proteins called as orthologous to the reference human protein, here P04637/P53_HUMAN. Columns:"ACC" = UniProt Accession, "ENTRY_NAME" = UniProt Entry Name, "ROW_COUNT" = The count of databases which call that row's protein as an ortholog to the reference protein  </i> </sub> <br><br>
     
      <p>
     Tables indexed by UniProt Accession are currently available for the <a href="https://raw.githubusercontent.com/clairemcwhite/clairemcwhite.github.io/master/humanProteomeDetails.tsv">20,188 human protein coding genes</a> from the 2015 release of the UniProt reviewed human proteome ("UP000005640").  
 
     <p>
     
-    Tables are created by searching for a gene within ortholog databases, and listing genes named as orthologs to it according to each database.  Table rows contain putative orthologs, labeled by Uniprot Accession, Uniprot Gene Name, and number of databases where that gene was called as an ortholog to the query gene. A gene which is called as an ortholog by a database will have a "1" in that database's column.   
+    Tables are created by searching for a gene within ortholog lists, and listing genes named as orthologs to it according to each database.  Table rows contain putative orthologs, labeled by Uniprot Accession, Uniprot Entry Name, and number of databases where that gene was called as an ortholog to the query. A protein which is called as an ortholog by a database will have a "1" in that database's column.   
     </p>    
    
 </div> 
@@ -87,7 +87,7 @@ Ortholog groups are pulled from the <a href="http://orthology.benchmarkservice.o
 
     Orthologous genes are genes which arise from speciation, for example, Human Talin, and Mouse Talin. Identification and accuracy of genes classed as orthologs is key for comparative genomic approaches, however there is no consensus model. Approximately 30 independent algorithms exist to classify orthologous genes; some based on species and gene phylogeny and some using exclusively sequence comparison. Phylogeny based approaches have the advantage of tracking genes through realistic evolutionary paths, however tend to be computationally intensive, and subject to error from misconstructed gene trees. BLAST approaches are much faster, generally using an all-by-all blast of multispecies proteomes in order to generate best matches, however lack the added power of phylogenetic information.
 
-    There is often no clear answer for which database to use to generate lists of orthologs for a comparative project. Confounding this problem is the lack of a method to easily compare results from different databases. Additionally, precomputed data available from the databases use various gene naming methods, or different releases of the same naming type with non-overlapping gene names. FindOrthologs attempts to inform research using orthologs by standardizing and aligning ortholog groups from ten separate ortholog grouping algorithms. Additionally, the number of databases which call a gene as an ortholog may be used as a proxy for confidence of that gene's assignment of orthology to the reference gene. The ability to visualize and compare ortholog groupings from multiple sources will aid comparative study of proteins and genes.    
+    There is often no clear answer for which database to use to generate lists of orthologs for a comparative project. Confounding this problem is the lack of a method to easily compare results from different databases. Additionally, precomputed data available from the databases use various gene/protein naming methods, or different releases of the same naming type with non-overlapping gene names. FindOrthologs attempts to inform research using orthologs by standardizing and aligning ortholog groups from ten separate ortholog grouping algorithms. Additionally, the number of databases which call a gene as an ortholog may be used as a proxy for confidence of that gene's assignment of orthology to the reference gene. The ability to visualize and compare ortholog groupings from multiple sources will aid comparative study of proteins and genes.    
 
     </p>
 </div>     
