@@ -38,8 +38,8 @@ Link to Excel view of most recent search: <a href="" id=lnk></a><br>
  
     <p>FindOrthologs displays multispecies orthologs to a reference human protein coding gene according to diverse ortholog sorting algorithms.</p>
     </p>
- <!---   <img src="https://cloud.githubusercontent.com/assets/11052278/8070776/a983d0e8-0ec9-11e5-8086-02e04b0fa248.png" alt="simplified example table"><br
-    <sub><i>Simplified example table of ortholog calls from three algorithms. Rows: Proteins called as orthologous to the reference human protein, here P04637/P53_HUMAN. Columns:"ACC" = UniProt Accession, "ENTRY_NAME" = UniProt Entry Name, "ROW_COUNT" = The count of databases which call that row's protein as an ortholog to the reference protein  </i> </sub> <br><br>--->
+    <img src="https://cloud.githubusercontent.com/assets/11052278/8070776/a983d0e8-0ec9-11e5-8086-02e04b0fa248.png" alt="simplified example table"><br
+    <sub><i>Simplified example table of ortholog calls from three algorithms. Rows: Proteins called as orthologous to the reference human protein, here P04637/P53_HUMAN. Columns:"ACC" = UniProt Accession, "ENTRY_NAME" = UniProt Entry Name, "ROW_COUNT" = The count of databases which call that row's protein as an ortholog to the reference protein  </i> </sub> <br><br>
     
      <p>
     Tables indexed by UniProt Accession are currently available for the <a href="https://raw.githubusercontent.com/clairemcwhite/clairemcwhite.github.io/master/humanProteomeDetails.tsv">20,188 human protein coding genes</a> from the 2015 release of the UniProt reviewed human proteome ("UP000005640").  
