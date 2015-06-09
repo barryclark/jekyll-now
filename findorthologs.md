@@ -43,7 +43,7 @@ Link to Excel view of most recent search: <a href="" id=lnk></a><br>
 
     <p>
     
-    Tables are created by searching for a gene within ortholog databases, and listing genes named as orthologs to it according to each database.  Table rows contain putative orthologs, labeled by Uniprot Accession, Uniprot Gene Name, and number of databases where that gene was called as an ortholog to the query gene.  Table column headers contain the database name and the ortholog group ID from that database. A gene which is called as an ortholog by a database will have a "1" in that database's column.   
+    Tables are created by searching for a gene within ortholog databases, and listing genes named as orthologs to it according to each database.  Table rows contain putative orthologs, labeled by Uniprot Accession, Uniprot Gene Name, and number of databases where that gene was called as an ortholog to the query gene. A gene which is called as an ortholog by a database will have a "1" in that database's column.   
     </p>    
    
 </div> 
@@ -59,7 +59,7 @@ Ortholog groups are pulled from the <a href="http://orthology.benchmarkservice.o
   <li><a href="http://inparanoid.sbc.su.se/cgi-bin/index.cgi">InParanoidCore</a></li>
   <li><a href="http://orthology.phylomedb.org/">metaPhOrs</a> missing genomes: {PYRKO,STRCO,THEMA}</li>
   <li><a href="http://omabrowser.org/oma/home/">OMA GETHOGs</a></li>
-  <li><a href="http://omabrowser.org/oma/home/">OMA Groups (RefSet5)</a>OMA </li>
+  <li><a href="http://omabrowser.org/oma/home/">OMA Groups (RefSet5)</a> </li>
   <li><a href="http://omabrowser.org/oma/home/">OMA OMA Pairs (Refset5)</a></li>
   <li><a href="http://www.lbgi.fr/orthoinspector/">orthoinspector 1.30</a></li>
   <li><a href="http://pantherdb.org/">PANTHER 8.0 (all)</a></li>
