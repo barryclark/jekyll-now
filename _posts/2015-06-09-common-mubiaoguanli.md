@@ -78,6 +78,9 @@ tags: [管理学]
 2. 目标管理资料
 	
     [目标管理 76 ppt](http://www.doc88.com/p-995394650184.html)
+    
     [目标管理 178 ppt](http://wenku.baidu.com/link?url=AFKvNdkHzhnVcCv1XpoB94rgYHd8bIwoMbbAXZJGV0S63CeXp40MY61JPOyMDD6Tlglc1rQtQRgm2PbC0gFTt8wIISxQ-ni6DbqQVfykibK)
+    
     [目标管理 66 ppt](http://wenku.baidu.com/view/da05df62a98271fe910ef91f.html?re=view)
+    
     [目标管理 98 ppt](http://wenku.baidu.com/view/c1403c8771fe910ef12df82b.html)
