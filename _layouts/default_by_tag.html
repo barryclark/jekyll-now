@@ -42,7 +42,7 @@
         <ul class="category-list">
           {% for tag in site.tags %}
           <li>
-            <a href="/show_by_tag.html?tags={{ tag[0] }}"> {{ tag[0] }} </a>
+            <a href="/show_by_tag.html?tags={{ tag[0] }}"> {{ tag[0] }} ({{ tag[1].size }}) </a>
           </li>
           {% endfor %}
         </ul>

@@ -103,7 +103,9 @@ ul, ol {
 }
 
 ul {
-  list-style-type: disc;
+  list-style-type: none;
+  width:100%;
+  margin:0px;
 }
 
 ol {
