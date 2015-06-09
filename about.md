@@ -4,11 +4,13 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+name : Junhyung Park
+job : spine animator
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+Game Graphic Designer
+지금은 spine에 집중 중
 
 ### Contact me
 
