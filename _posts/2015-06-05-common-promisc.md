@@ -17,5 +17,6 @@ tags: [common]
 	```
 	**注：** *Php扩展支持调用c函数P， 当在扩展目录中添加子目录后，需要删掉php目录下configure 及其缓存项，然后再buildconfig生成新的configure文件才能生效。*
     
+    [php 调用 C 函数详解](http://blog.csdn.net/oyd/article/details/3168417)
     
 2. 
