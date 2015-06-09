@@ -1,6 +1,6 @@
 ---
 layout: default
-title: findorthologs
+title: findorthologs/
 ---
 <H1>FindOrthologs Tool</H1>
 <HR>
