@@ -9,7 +9,7 @@ title: findorthologs
     <p>
     Tables are created by reference to individual human genes.</p>
     <p>
-    <b></b>Enter a  human proteome Uniprot Accession to pull a table for orthologs to that gene, ex. P00395</b>
+    <b></b>Enter a <a href="https://raw.githubusercontent.com/clairemcwhite/clairemcwhite.github.io/master/humanProteomeDetails.tsv"> human proteome Uniprot Accession </a> to pull a table for orthologs to that gene,<br> ex. P00395</b>
     </p>
 </div> 
 
