@@ -7,7 +7,7 @@ permalink: /codesnippets/
 
 #### Personal reference for useful one liners/short coding tasks 
 
-#### <font color="red">Linux Command Lineasdf ad</font>
+#### <font color="red">Linux Command Line</font>
 
 ##### Run a script on multiple files in a directory 
 for file in *2col; do echo $file; done
@@ -21,7 +21,7 @@ awk '!/^\t|\t\t|\t$/' file.tab | awk '!a[$0]++' > newfile.tab
 ##### Delete the first line of a file 
 sed '1d' file.txt > tmpfile; mv tmpfile file.txt
 
-#### Bash script
+#### <font color="red">Bash script</font>
 
 ##### Command line arguments
 FILENAME=$@
@@ -29,21 +29,21 @@ FILENAME=$@
 ##### Current directory
 LOC=$(pwd)
 
-#### vim
+#### <font color="red">vim</font>
 
 ##### Split two Ensembl identifiers between a number and a letter
 :%s/[0-9]E/E\t/g
 
 ex. ENS0000001ENS0000002 -> ENS0000001 ENS0000002
 
-#### Python
+#### <font color="red">Python</font>
 
 ##### Command line arguments
 import sys
 
 infile = sys.argv[1]
 
-#### Pandas
+#### <font color="red">Pandas</font>
 
 ##### Save a pandas dataframe 
 df.to_csv(filenameA, sep="\t", index=True)
@@ -54,7 +54,7 @@ cols = ['col1', 'col2']
 
 final = original[cols]
 
-#### R
+#### <font color="red">R</font>
 
 ##### Command line arguments 
 args<-commandArgs(TRUE)
