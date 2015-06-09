@@ -19,7 +19,7 @@ ls -1t -l | head -5
 awk '!/^\t|\t\t|\t$/' file.tab | awk '!a[$0]++' > newfile.tab
 
 ##### Delete the first line of a file 
-sed '1d' file.txt > tmpfile; mv tmpfile file.txt
+sed -i '1d' file.txt
 
 #### <font color="red">Bash script</font>
 
