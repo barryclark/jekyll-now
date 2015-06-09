@@ -37,6 +37,17 @@
       </div>
     </div>
 
+    <aside id="left-side">
+        <h2> 文章分类 </h2>
+        <ul class="category-list">
+          {% for tag in site.tags %}
+          <li>
+            <a href="/show_by_tag.html?tags={{ tag[0] }}"> {{ tag[0] }} </a>
+          </li>
+          {% endfor %}
+        </ul>
+    </aside>
+
     <div id="main" role="main" class="container">
         {{ content }}
     </div>

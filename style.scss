@@ -18,7 +18,7 @@ html {
 }
 
 body {
-	background: $white;
+  background: $white;
   font: 18px/1.4 $helvetica;
   color: $darkGray;
 }
@@ -31,11 +31,16 @@ body {
   position: relative;
 }
 
+.wrapper_asside {
+  min-height: 100%;
+  position: relative;
+}
+
 aside {
-    width: 200px;
-    height: 700px;
-    font-size: 120%;
-  }
+  width: 200px;
+  height: 700px;
+  font-size: 120%;
+}
 
 #left-side {
   float: left;
@@ -287,6 +292,11 @@ nav {
 }
 
 .wrapper-footer {
+  margin: 0 auto;
+  max-width: 740px;
+  padding: 0 10px;
+  width: 100%;
+  position: relative;
   margin-top: 50px;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
