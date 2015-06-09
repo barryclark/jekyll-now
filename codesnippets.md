@@ -7,7 +7,7 @@ permalink: /codesnippets/
 
 #### Personal reference for useful one liners/short coding tasks 
 
-#### Linux Command Line
+#### <font color="red">Linux Command Lineasdf ad</font>
 
 ##### Run a script on multiple files in a directory 
 for file in *2col; do echo $file; done
