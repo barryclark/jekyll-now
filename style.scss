@@ -36,7 +36,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 
   line-height: 1.7;
-  margin: 1em 0 15px;
+  margin-top: 1em;
   padding: 0;
 
   @include mobile {
@@ -280,6 +280,12 @@ nav {
 
 footer {
   padding: 20px 0;
+  text-align: center;
+}
+
+
+.work-link {
+  width: 12%;
   text-align: center;
 }
 
