@@ -1,0 +1,14 @@
+---
+layout: post
+title: Hello World!
+---
+
+Welcome! This is the first post of a blog created statically with both Jekyll and GitHub pages.
+
+In case you wonder, I'm a software engineer from Spain, working in Drupal Backend development since more than two and a half years. Also, when my contractors need it, I also code Android apps with its native SDK. Whether its PHP or Java, I'm up for the task.
+
+But wait, there's more! On my free time I can't stop creating 48h jam experimental games with the awesome engine Unity3D, all in C#. You may play any of these little games in these two websites:
+[Itch.io](https://maesk.itch.io/)
+[Gamejolt](http://gamejolt.com/profile/maesk/679194/)
+
+Feel free to comment anything on these social links below. Thanks for your visit!
