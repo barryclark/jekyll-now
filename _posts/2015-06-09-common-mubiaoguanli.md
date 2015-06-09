@@ -1,6 +1,6 @@
 ---
 layout: post
-title: thingking everyday
+title: 管理点滴 —— 目标管理
 tags: [管理学]
 ---
 
