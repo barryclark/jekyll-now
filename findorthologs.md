@@ -1,10 +1,5 @@
-<!------>
-<!---layout: default
-title: findorthologs/
---- --->
-
 ---
-layout: page
+layout: default
 title: 
 permalink: /findorthologs/
 ---
