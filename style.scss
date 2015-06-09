@@ -97,15 +97,65 @@ a {
   }
 }
 
+.category-list li {
+    background:
+        url('/images/notepad.png')
+        no-repeat
+        left
+        center;
+    padding-left: 30px;
+}
+
+aside li {
+    margin-left: 30px;
+    line-height: 40px;
+    list-style: none;
+}
+
+aside ul.category-list li {
+    width: 140px;
+}
+
+aside ul.archive-list li {
+    width: 130px;
+}
+
+aside li:hover {
+    background-color: #444;
+    transition: 0.5s;
+}
+
+aside ul.category-list li:hover {
+    width: 140px;
+}
+
+aside ul.archive-list li:hover {
+    width: 130px;
+}
+
+aside li a:before {
+    content: "";
+    display: inline;
+}
+
+aside li a {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    display: block;
+}
+
+aside ul {
+    padding-left: 10px;
+}
+
 ul, ol {
   margin: 15px 0;
   padding-left: 30px;
 }
 
 ul {
-  list-style-type: none;
-  width:100%;
-  margin:0px;
+  list-style-type: disc;
 }
 
 ol {
