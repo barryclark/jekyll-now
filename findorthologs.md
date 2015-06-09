@@ -33,7 +33,7 @@ Link to Excel view of most recent search: <a href="" id=lnk></a><br>
 
 <HR>
 
-<div class="More">
+<div class="More"> 
 <h5>About</h5>
  
     <p>FindOrthologs displays multispecies orthologs to a reference human protein coding gene according to diverse ortholog sorting algorithms.</p>
