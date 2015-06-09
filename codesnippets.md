@@ -52,7 +52,7 @@ pd.concat([a], [b], axis = 1)
 
 (axis = 0 for row bind)
 
-##### Row count
+##### Row sum
 df.sum(axis=1)
 
 (axis = 0 for column sum)
