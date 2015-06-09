@@ -1,7 +1,14 @@
----
-layout: default
+<!------>
+<!---layout: default
 title: findorthologs/
+--- --->
+
 ---
+layout: page
+title: 
+permalink: /findorthologs/
+---
+
 <H1>FindOrthologs Tool</H1>
 <HR>
 <div class="Instructions">
