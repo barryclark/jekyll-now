@@ -5,7 +5,7 @@ permalink: /codesnippets/
 ---
 
 
-#### Personal useful one liners/short coding tasks 
+#### Personal reference for useful one liners/short coding tasks 
 
 #### Linux Command Line
 
