@@ -10,7 +10,7 @@ job : spine animator
 ### More Information
 
 Game Graphic Designer  
-지금은 spine에 집중 중
+Japan NOW!
 
 ### Contact me
 
