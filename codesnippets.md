@@ -45,9 +45,45 @@ infile = sys.argv[1]
 
 #### <font color="red">Pandas</font>
 
+##### Query a dataframe
+df.query("COL1==a")
+
+##### Column bind - equivalent to R cbind()
+pd.concat([a], [b], axis = 1)
+
+Axis = 0 for row bind
+
+##### Row count
+df.sum(axis=1)<br>
+axis = 0 for column sum
+
+##### Move row index to a column
+df.reset_index(inplace=True)
+
+##### Change csv to string to manipulate values (save pandas df with integers instead of floats)
+import csv<br>
+import StringIO<br>
+s=StringIO.StringIO()<br>
+df.to_csv(s)<br>
+t=string.getvalue()<br>
+t = t.replace(".0", "")<br>
+t = t.replace(",0", ",")<br>
+filename=open(path/to/save, "w")<br>
+filename.write(t)<br>
+
+
+##### Get value from location in dataframe
+first_value_in_COL1 = df['COL1'].iloc[0] 
+
 ##### Save a pandas dataframe 
 df.to_csv(filenameA, sep="\t", index=True)
 
+##### Make an empty dataframe
+cols = ['hold']<br>
+df = DataFrame(columns = cols)
+
+##### Set two level column index
+df.columns = pd.MultiIndex.from_tuples([a, b])
 ##### Take certain columns from a pandas dataframe
 
 cols = ['col1', 'col2']
