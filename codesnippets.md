@@ -32,15 +32,13 @@ LOC=$(pwd)
 #### <font color="red">vim</font>
 
 ##### Split two Ensembl identifiers between a number and a letter
-:%s/[0-9]E/E\t/g
-
+:%s/[0-9]E/E\t/g<br>
 ex. ENS0000001ENS0000002 -> ENS0000001 ENS0000002
 
 #### <font color="red">Python</font>
 
 ##### Command line arguments
-import sys
-
+import sys<br>
 infile = sys.argv[1]
 
 #### <font color="red">Pandas</font>
@@ -85,32 +83,23 @@ df = DataFrame(columns = cols)
 ##### Set two level column index
 df.columns = pd.MultiIndex.from_tuples([a, b])
 ##### Take certain columns from a pandas dataframe
-
-cols = ['col1', 'col2']
-
+cols = ['col1', 'col2']<br>
 final = original[cols]
 
 #### <font color="red">R</font>
 
 ##### Command line arguments 
-args<-commandArgs(TRUE)
-
+args<-commandArgs(TRUE)<br>
 genename=args[1]
 
 
 ##### Make binary black and white heatmap on table of 1's and blanks 
-df <- read.csv(gene, sep="\t", header=TRUE, row.names=1)
-
-m <- as.matrix(df, rownames.force=TRUE)
-
-class(m) <- "numeric"
-
-m[m==""] <- 0
-
-m[is.na(m)] <- 0
-
-nr <- nrow(m)
-
-heatmap.2(m, scale="none", col=c("white", "black"), cexRow=0.2/log10(nr), trace="none", colsep=c(1,2,3,4,5,6,7,8,9,10), sepcolor="grey", sepwidth=0.01, key=FALSE, xlab="DATABASES", ylab="GENES", margins=c(15,10))
+df <- read.csv(gene, sep="\t", header=TRUE, row.names=1)<br>
+m <- as.matrix(df, rownames.force=TRUE)<br>
+class(m) <- "numeric"<br>
+m[m==""] <- 0<br>
+m[is.na(m)] <- 0<br>
+nr <- nrow(m)<br>
+heatmap.2(m, scale="none", col=c("white", "black"), cexRow=0.2/log10(nr), trace="none", colsep=c(1,2,3,4,5,6,7,8,9,10), sepcolor="grey", sepwidth=0.01, key=FALSE, xlab="DATABASES", ylab="GENES", margins=c(15,10))<br>
 
 
