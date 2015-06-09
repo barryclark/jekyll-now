@@ -38,6 +38,7 @@ Link to Excel view of most recent search: <a href="" id=lnk></a><br>
  
     <p>FindOrthologs displays multispecies orthologs to a reference human gene according to diverse ortholog sorting algorithms.</p>
     </p>
+    <img src="https://cloud.githubusercontent.com/assets/11052278/8070776/a983d0e8-0ec9-11e5-8086-02e04b0fa248.png" alt="simplified example table">
      <p>
     Tables indexed by UniProt Accession are currently available for the <a href="https://raw.githubusercontent.com/clairemcwhite/clairemcwhite.github.io/master/humanProteomeDetails.tsv">20,188 human protein coding genes</a> from the 2015 release of the UNIPROT reviewed human proteome ("UP000005640").  
 
