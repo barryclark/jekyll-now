@@ -82,40 +82,39 @@ ex. ENS0000001ENS0000002 -> ENS0000001 ENS0000002
     df.reset_index(inplace=True)
 
 ##### Change csv to string to manipulate values (save pandas df with integers instead of floats)
- 
-    import csv<br>
-    import StringIO<br>
-    s=StringIO.StringIO()<br>
-    df.to_csv(s)<br>
-    t=string.getvalue()<br>
-    t = t.replace(".0", "")<br>
-    t = t.replace(",0", ",")<br>
-    filename=open(path/to/save, "w")<br>
-    filename.write(t)<br>
+     import csv<br>
+     import StringIO<br>
+     s=StringIO.StringIO()<br>
+     df.to_csv(s)<br>
+     t=string.getvalue()<br>
+     t = t.replace(".0", "")<br>
+     t = t.replace(",0", ",")<br>
+     filename=open(path/to/save, "w")<br>
+     filename.write(t)<br>
 
 
 ##### Get value from location in dataframe
  
-    first_value_in_COL1 = df['COL1'].iloc[0] 
+     first_value_in_COL1 = df['COL1'].iloc[0] 
 
 ##### Save a pandas dataframe 
  
-    df.to_csv(filenameA, sep="\t", index=True)
+     df.to_csv(filenameA, sep="\t", index=True)
 
 ##### Make an empty dataframe
  
-    cols = ['hold']<br>
-    df = DataFrame(columns = cols)
+     cols = ['hold']<br>
+     df = DataFrame(columns = cols)
 
 ##### Set two level column index
 
-    df.columns = pd.MultiIndex.from_tuples([a, b])
+     df.columns = pd.MultiIndex.from_tuples([a, b])
   
 ##### Take certain columns from a pandas dataframe
   
-    cols = ['col1', 'col2']<br>
-    final = original[cols]
-
+     cols = ['col1', 'col2']<br>
+     final = original[cols]
+ 
 #### <font color="red">BioPython</font>
 
 ##### get ORF from sequence
