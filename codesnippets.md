@@ -121,7 +121,6 @@ ex. ENS0000001ENS0000002 -> ENS0000001 ENS0000002
 
 
      def orf(s):
-
          length = len(s)
          i = 0
          while i<length-2:
