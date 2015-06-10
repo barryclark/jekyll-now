@@ -63,7 +63,7 @@ ex. ENS0000001ENS0000002 -> ENS0000001 ENS0000002
 
 ##### Query a dataframe
 
-   df.query("COL1==a")
+    df.query("COL1==a")
 
 ##### Column bind - equivalent to R cbind()
 
@@ -148,19 +148,19 @@ def orf(s):
 
 ##### Command line arguments 
   
-   args<-commandArgs(TRUE)<br>
-    genename=args[1]
+     args<-commandArgs(TRUE)<br>
+     genename=args[1]
 
 
 ##### Make binary black and white heatmap on table of 1's and blanks 
 
-   df <- read.csv(gene, sep="\t", header=TRUE, row.names=1)<br>
-    m <- as.matrix(df, rownames.force=TRUE)<br>
-   class(m) <- "numeric"<br>
-   m[m==""] <- 0<br>
-   m[is.na(m)] <- 0<br>
-    nr <- nrow(m)<br>
-    heatmap.2(m, scale="none", col=c("white", "black"), cexRow=0.2/log10(nr), trace="none", colsep=c(1,2,3,4,5,6,7,8,9,10), sepcolor="grey", sepwidth=0.01, key=FALSE, xlab="DATABASES", ylab="GENES", margins=c(15,10))<br>
+     df <- read.csv(gene, sep="\t", header=TRUE, row.names=1)<br>
+     m <- as.matrix(df, rownames.force=TRUE)<br>
+     class(m) <- "numeric"<br>
+     m[m==""] <- 0<br>
+     m[is.na(m)] <- 0<br>
+     nr <- nrow(m)<br>
+     heatmap.2(m, scale="none", col=c("white", "black"), cexRow=0.2/log10(nr), trace="none", colsep=c(1,2,3,4,5,6,7,8,9,10), sepcolor="grey", sepwidth=0.01, key=FALSE, xlab="DATABASES", ylab="GENES", margins=c(15,10))<br>
 
 
 <script>
