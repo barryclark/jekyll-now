@@ -29,7 +29,15 @@ FILENAME=$@
 ##### Current directory
 LOC=$(pwd)
 
+##### Get filename without the extension, ex. filename.txt -> filename
+F=${FILENAME%.*}
+
+
 #### <font color="red">vim</font>
+
+##### Delete a block of text
+in normal mode, type ma at beginning of block and d'a at end of block. <br>
+"mark a" then "delete to a"
 
 ##### Split two Ensembl identifiers between a number and a letter
 :%s/[0-9]E/E\t/g<br>
@@ -87,6 +95,40 @@ df.columns = pd.MultiIndex.from_tuples([a, b])
 ##### Take certain columns from a pandas dataframe
 cols = ['col1', 'col2']<br>
 final = original[cols]
+
+#### <font color="red">BioPython</font>
+
+##### get ORF from sequence
+def orf(s):
+'''
+    length = len(s)
+    i = 0
+    while i<length-2:
+
+        tri = s[i:i+3]
+
+        if tri == "atg":
+
+
+
+            break
+        i = i + 1
+
+    j = i
+    while j<length-2:
+
+        tri = s[j:j+3]
+
+        if tri == "tga" or tri == "taa" or tri == "tag":
+
+
+            break
+        j = j + 3
+
+    seq = Seq(s[i:j], generic_dna)
+
+    return seq
+'''
 
 #### <font color="red">R</font>
 
