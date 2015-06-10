@@ -1,10 +1,10 @@
 ---
 layout: default
 title: 
-permalink: /findorthologs/
+permalink: /orthologblender/
 ---
 
-<H1>FindOrthologs Tool</H1>
+<H1>OrthologBlender</H1>
 <HR>
 <div class="Instructions">
 <H5>Search for multispecies orthologs</H5>
@@ -38,7 +38,7 @@ Link to Excel view of most recent search: <a href="" id=lnk></a><br>
 <div class="More"> 
 <h5>About</h5>
  
-    <p>FindOrthologs displays multispecies orthologs to a reference human protein coding gene according to diverse ortholog sorting algorithms.</p>
+    <p>OrthologBlender displays multispecies orthologs to a reference human protein coding gene according to diverse ortholog sorting algorithms.</p>
     </p>
     <img src="https://cloud.githubusercontent.com/assets/11052278/8072170/17ff4800-0ed8-11e5-806b-0ec7fec2a7e7.png" alt="simplified example table"><br
     <sub><i>Simplified example table of ortholog calls from three algorithms.<br> Rows: Proteins called as orthologous to the reference human protein, here P04637/P53_HUMAN. <br>Columns:"ACC" = UniProt Accession, "ENTRY_NAME" = UniProt Entry Name, "ROW_COUNT" = The count of databases which call that row's protein as an ortholog to the reference protein  </i> </sub> <br><br>
@@ -83,13 +83,13 @@ Ortholog groups are pulled from the <a href="http://orthology.benchmarkservice.o
 
     <h5>Table viewing instructions</h5>
     Github initially renders a ".csv" file as an interactive table.  To save a table, click the "Raw" icon, and then save the page.  The <a href="https://github.com/clairemcwhite/OrthologLinking">entire collection of tables</a> can be downloaded as a zip file. 
-    FindOrthologs gives a comprehensive view of multiorganism orthologs of a given human gene, as produced by diverse ortholog sorting algorithms. For example, the table for the human gene P00395 has columns containing the membership of the ortholog group P00395 belongs to according to each database.
+    OrthologBlender gives a comprehensive view of multiorganism orthologs of a given human gene, as produced by diverse ortholog sorting algorithms. For example, the table for the human gene P00395 has columns containing the orthologs to P00395 to according to each database.
 <HR>
     <h5>Rationale</h5>
 
-    Orthologous genes are genes which arise from speciation, for example, Human Talin, and Mouse Talin. Identification and accuracy of genes classed as orthologs is key for comparative genomic approaches, however there is no consensus model. Approximately 30 independent algorithms exist to classify orthologous genes; some based on species and gene phylogeny and some using exclusively sequence comparison. Phylogeny based approaches have the advantage of tracking genes through realistic evolutionary paths, however tend to be computationally intensive, and subject to error from misconstructed gene trees. BLAST approaches are much faster, generally using an all-by-all blast of multispecies proteomes in order to generate best matches, however lack the added power of phylogenetic information.
+    Orthologous genes are genes which arise from speciation, for example, Human Talin, and Mouse Talin. Identification and accuracy of genes classed as orthologs is key for comparative genomic approaches, however there is no consensus model. Approximately 30 independent algorithms exist to classify orthologous genes; some based on species and gene phylogeny and some using exclusively sequence comparison. Phylogeny based approaches have the advantage of tracking genes through realistic evolutionary paths, however tend to be computationally intensive, and subject to error from misconstructed gene trees. BLAST approaches are much faster, generally using an all-by-all blast of multispecies proteomes in order to generate best matches, however lack the added power of phylogenetic information.  Individual methods tend toward high recall/true positive rate, while allowing a high false negative rate. Combining the results of these methods may decrease the false negative rate of ortholog calls, while maintaining the high recall of the individual algorithms.  
 
-    There is often no clear answer for which database to use to generate lists of orthologs for a comparative project. Confounding this problem is the lack of a method to easily compare results from different databases. Additionally, precomputed data available from the databases use various gene/protein naming methods, or different releases of the same naming type with non-overlapping gene names. FindOrthologs attempts to inform research using orthologs by standardizing and aligning ortholog groups from ten separate ortholog grouping algorithms. Additionally, the number of databases which call a gene as an ortholog may be used as a proxy for confidence of that gene's assignment of orthology to the reference gene. The ability to visualize and compare ortholog groupings from multiple sources will aid comparative study of proteins and genes.    
+    There is often no clear answer for which database to use to generate lists of orthologs for a comparative project. Confounding this problem is the lack of a method to easily compare ortholog calls from different databases. OrthologBlender attempts to inform research using orthologs by standardizing and aligning ortholog groups from separate ortholog grouping algorithms. Additionally, the number of databases which call a gene as an ortholog may be used as a proxy for confidence of that gene's assignment of orthology to the reference gene. The ability to visualize and compare ortholog groupings from multiple sources will aid comparative study of proteins and genes.    
 
     </p>
 </div>     
