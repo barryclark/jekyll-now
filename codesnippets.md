@@ -43,12 +43,12 @@ permalink: /codesnippets/
 #### <font color="red">vim</font>
 
 ##### Delete a block of text
-in normal mode, type ma at beginning of block and d'a at end of block. <br>
+in normal mode, type ma at beginning of block and d'a at end of block. 
 "mark a" then "delete to a"
 
 ##### Split two Ensembl identifiers between a number and a letter
 
-    :%s/[0-9]E/E\t/g<br>
+    :%s/[0-9]E/E\t/g
 
 ex. ENS0000001ENS0000002 -> ENS0000001 ENS0000002
 
@@ -56,7 +56,7 @@ ex. ENS0000001ENS0000002 -> ENS0000001 ENS0000002
 
 ##### Command line arguments
 
-    import sys<br>
+    import sys
     infile = sys.argv[1]
 
 #### <font color="red">Pandas</font>
@@ -82,15 +82,15 @@ ex. ENS0000001ENS0000002 -> ENS0000001 ENS0000002
     df.reset_index(inplace=True)
 
 ##### Change csv to string to manipulate values (save pandas df with integers instead of floats)
-     import csv<br>
-     import StringIO<br>
-     s=StringIO.StringIO()<br>
-     df.to_csv(s)<br>
-     t=string.getvalue()<br>
-     t = t.replace(".0", "")<br>
-     t = t.replace(",0", ",")<br>
-     filename=open(path/to/save, "w")<br>
-     filename.write(t)<br>
+     import csv
+     import StringIO
+     s=StringIO.StringIO()
+     df.to_csv(s)
+     t=string.getvalue()
+     t = t.replace(".0", "")
+     t = t.replace(",0", ",")
+     filename=open(path/to/save, "w")
+     filename.write(t)
 
 
 ##### Get value from location in dataframe
@@ -103,7 +103,7 @@ ex. ENS0000001ENS0000002 -> ENS0000001 ENS0000002
 
 ##### Make an empty dataframe
  
-     cols = ['hold']<br>
+     cols = ['hold']
      df = DataFrame(columns = cols)
 
 ##### Set two level column index
@@ -112,7 +112,7 @@ ex. ENS0000001ENS0000002 -> ENS0000001 ENS0000002
   
 ##### Take certain columns from a pandas dataframe
   
-     cols = ['col1', 'col2']<br>
+     cols = ['col1', 'col2']
      final = original[cols]
  
 #### <font color="red">BioPython</font>
@@ -147,19 +147,19 @@ ex. ENS0000001ENS0000002 -> ENS0000001 ENS0000002
 
 ##### Command line arguments 
   
-     args<-commandArgs(TRUE)<br>
+     args<-commandArgs(TRUE)
      genename=args[1]
 
 
 ##### Make binary black and white heatmap on table of 1's and blanks 
 
-     df <- read.csv(gene, sep="\t", header=TRUE, row.names=1)<br>
-     m <- as.matrix(df, rownames.force=TRUE)<br>
-     class(m) <- "numeric"<br>
-     m[m==""] <- 0<br>
-     m[is.na(m)] <- 0<br>
-     nr <- nrow(m)<br>
-     heatmap.2(m, scale="none", col=c("white", "black"), cexRow=0.2/log10(nr), trace="none", colsep=c(1,2,3,4,5,6,7,8,9,10), sepcolor="grey", sepwidth=0.01, key=FALSE, xlab="DATABASES", ylab="GENES", margins=c(15,10))<br>
+     df <- read.csv(gene, sep="\t", header=TRUE, row.names=1)
+     m <- as.matrix(df, rownames.force=TRUE)
+     class(m) <- "numeric"
+     m[m==""] <- 0
+     m[is.na(m)] <- 0
+     nr <- nrow(m)
+     heatmap.2(m, scale="none", col=c("white", "black"), cexRow=0.2/log10(nr), trace="none", colsep=c(1,2,3,4,5,6,7,8,9,10), sepcolor="grey", sepwidth=0.01, key=FALSE, xlab="DATABASES", ylab="GENES", margins=c(15,10))
 
 
 <script>
