@@ -119,8 +119,10 @@ def orf(s):
 '''
 ##### Parse a FASTA file
 '''
+
     handle = open("filename.fasta", "rU")
     for record in SeqIO.parse(handle, "fasta"):
+    
 '''
 
 #### <font color="red">R</font>
