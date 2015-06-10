@@ -120,23 +120,23 @@ ex. ENS0000001ENS0000002 -> ENS0000001 ENS0000002
 ##### get ORF from sequence
 
 
-def orf(s):
+     def orf(s):
 
-    length = len(s)
-    i = 0
-    while i<length-2:
-        tri = s[i:i+3]
-        if tri == "atg":
-            break
-        i = i + 1
-    j = i
-    while j<length-2:
-        tri = s[j:j+3]
-        if tri == "tga" or tri == "taa" or tri == "tag":
-            break
-        j = j + 3
-    seq = Seq(s[i:j], generic_dna)
-    return seq
+         length = len(s)
+         i = 0
+         while i<length-2:
+            tri = s[i:i+3]
+            if tri == "atg":
+                break
+            i = i + 1
+        j = i
+        while j<length-2:
+            tri = s[j:j+3]
+            if tri == "tga" or tri == "taa" or tri == "tag":
+                break
+            j = j + 3
+        seq = Seq(s[i:j], generic_dna)
+        return seq
 
 ##### Parse a FASTA file
 
