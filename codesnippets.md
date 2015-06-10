@@ -16,6 +16,10 @@ permalink: /codesnippets/
 ##### Convert variable space separated table to tab separated table
 
         unexpand -a file.txt > newfile.tab
+##### Size of a directory in human readable format (ex. Kb, Mb) - disk usage -sum human
+
+        du -sh
+
 
 ##### Place something between two sequential tabs, Ex. NA. (<a href="http://unix.stackexchange.com/questions/53448/replacing-missing-value-blank-space-with-zero">Source</a>)
 
