@@ -15,15 +15,15 @@ permalink: /codesnippets/
 
 ##### Most recent 5 modified files
  
-   ls -1t -l | head -5
+     ls -1t -l | head -5
 
 ##### remove a line if it has a blank
 
-   awk '!/^\t|\t\t|\t$/' file.tab | awk '!a[$0]++' > newfile.tab
+     awk '!/^\t|\t\t|\t$/' file.tab | awk '!a[$0]++' > newfile.tab
 
 ##### Delete the first line of a file 
 
-    sed -i '1d' file.txt
+     sed -i '1d' file.txt
 
 #### <font color="red">Bash script</font>
 
