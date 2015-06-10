@@ -99,8 +99,10 @@ final = original[cols]
 #### <font color="red">BioPython</font>
 
 ##### get ORF from sequence
-def orf(s):
 '''
+
+def orf(s):
+
     length = len(s)
     i = 0
     while i<length-2:
