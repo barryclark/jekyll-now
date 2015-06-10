@@ -7,7 +7,7 @@ permalink: /codesnippets/
 
 #### Personal reference for useful one liners/short coding tasks 
 
-#### <font color="red">Linux Command Line</font>
+### <font color="red">Linux Command Line</font>
 
 ##### Run a script on multiple files in a directory 
 
@@ -25,7 +25,7 @@ permalink: /codesnippets/
 
      sed -i '1d' file.txt
 
-#### <font color="red">Bash script</font>
+### <font color="red">Bash script</font>
 
 ##### Command line arguments
 
@@ -40,7 +40,7 @@ permalink: /codesnippets/
     F=${FILENAME%.*}
 
 
-#### <font color="red">vim</font>
+### <font color="red">vim</font>
 
 ##### Delete a block of text
 in normal mode, type ma at beginning of block and d'a at end of block. 
@@ -52,14 +52,14 @@ in normal mode, type ma at beginning of block and d'a at end of block.
 
 ex. ENS0000001ENS0000002 -> ENS0000001 ENS0000002
 
-#### <font color="red">Python</font>
+### <font color="red">Python</font>
 
 ##### Command line arguments
 
     import sys
     infile = sys.argv[1]
 
-#### <font color="red">Pandas</font>
+### <font color="red">Pandas</font>
 
 ##### Query a dataframe
 
@@ -115,7 +115,7 @@ ex. ENS0000001ENS0000002 -> ENS0000001 ENS0000002
      cols = ['col1', 'col2']
      final = original[cols]
  
-#### <font color="red">BioPython</font>
+### <font color="red">BioPython</font>
 
 ##### get ORF from sequence
 
@@ -143,7 +143,7 @@ ex. ENS0000001ENS0000002 -> ENS0000001 ENS0000002
     for record in SeqIO.parse(handle, "fasta"):
     
 
-#### <font color="red">R</font>
+### <font color="red">R</font>
 
 ##### Command line arguments 
   
