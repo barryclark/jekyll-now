@@ -13,6 +13,14 @@ permalink: /codesnippets/
 
     for file in *2col; do echo $file; done
 
+##### Convert variable space separated table to tab separated table
+
+        unexpand -a file.txt > newfile.tab
+
+##### Place something between two sequential tabs, Ex. NA
+    
+        awk 'BEGIN { FS = OFS = "\t" } { for(i=1; i<=NF; i++) if($i ~ /^ *$/) $i = "NA" }; 1' file.tab > newfile.tab
+
 ##### Most recent 5 modified files
  
      ls -1t -l | head -5
