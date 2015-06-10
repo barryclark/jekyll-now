@@ -93,13 +93,14 @@ df = DataFrame(columns = cols)
 ##### Set two level column index
 df.columns = pd.MultiIndex.from_tuples([a, b])
 ##### Take certain columns from a pandas dataframe
-cols = ['col1', 'col2']<br>
-final = original[cols]
+  
+    cols = ['col1', 'col2']<br>
+    final = original[cols]
 
 #### <font color="red">BioPython</font>
 
 ##### get ORF from sequence
-'''
+
 
 def orf(s):
 
@@ -118,14 +119,12 @@ def orf(s):
         j = j + 3
     seq = Seq(s[i:j], generic_dna)
     return seq
-'''
+
 ##### Parse a FASTA file
-'''
 
     handle = open("filename.fasta", "rU")
     for record in SeqIO.parse(handle, "fasta"):
     
-'''
 
 #### <font color="red">R</font>
 
