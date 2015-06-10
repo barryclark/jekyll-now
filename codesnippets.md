@@ -9,7 +9,7 @@ permalink: /codesnippets/
 
 ### <font color="red">Linux Command Line</font>
 
-##### Run a script on multiple files in a directory 
+Run a script on multiple files in a directory 
 
     for file in *2col; do echo $file; done
 
