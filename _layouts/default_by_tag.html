@@ -37,7 +37,8 @@
       </div>
     </div>
 
-    <aside id="left-side">
+    <div class="wrapper_asside">
+      <aside id="left-side">
         <h2> 文章分类 </h2>
         <ul class="category-list">
           {% for tag in site.tags %}
@@ -46,7 +47,8 @@
           </li>
           {% endfor %}
         </ul>
-    </aside>
+      </aside>
+    </div>
 
     <div id="main" role="main" class="container">
         {{ content }}

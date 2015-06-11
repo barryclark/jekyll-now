@@ -23,6 +23,26 @@ body {
   color: $darkGray;
 }
 
+/*
+body {
+  background-color: #333;
+  color: #D6DBDF;
+  font-family:
+    Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+  height: 100%;
+  line-height: 27px;
+}
+*/
+
+.container {
+  margin: 0 auto 0 300px;
+  max-width: 800px;
+  padding: 0 30px;
+  width: 100%;
+  position: relative;
+}
+
+/*
 .container {
   margin: 0 auto;
   max-width: 740px;
@@ -31,8 +51,15 @@ body {
   position: relative;
 }
 
+.container {
+    min-height: 100%;
+    position: relative;
+}
+*/
 .wrapper_asside {
+  margin: 0 auto;
   min-height: 100%;
+  padding: 0 10px 0 80px;
   position: relative;
 }
 
