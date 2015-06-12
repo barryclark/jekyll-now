@@ -71,6 +71,16 @@ ex. ENS0000001ENS0000002 -> ENS0000001 ENS0000002
 
     import sys
     infile = sys.argv[1]
+    
+##### Check if one string contains another string
+
+        if string1 in string 2:
+            ...
+
+##### Skip first argv
+
+        args = sys.argv[1:]
+
 
 ### <font color="red">Pandas</font>
 
