@@ -147,12 +147,12 @@ img {
 //
 
 .wrapper-masthead {
-  margin-bottom: 50px;
-  background: #292F34;
+  /* margin-bottom: 50px; */
+  background: #353839;
 }
 
 .masthead {
-  padding: 40px 0;
+  padding: 40px 0 20px;
   border-bottom: 0px solid $lightGray;
   
   @include mobile {
@@ -215,7 +215,7 @@ img {
 
 nav {
   float: left;
-  margin-top: 23px; // @TODO: Vertically middle align
+  margin-top: 30px;
   font-family: $helveticaNeue; 
   font-size: 18px;
   
@@ -230,8 +230,9 @@ nav {
     margin-left: 20px;
     color: #ccc;
     text-align: right;
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: 1px;
+    vertical-align: middle;
     &:hover, &:active {
       color: $white;
       text-decoration: none;
@@ -242,6 +243,11 @@ nav {
       color: $white;
     }
   }
+}
+
+.green-stripe {
+  background: #2ECC71;
+  height: 20px;
 }
 
 //
@@ -289,7 +295,7 @@ nav {
   margin-top: 50px;
   border-top: 0px solid #ddd;
   border-bottom: 0px solid #ddd;
-  background-color: #292F34;
+  background-color: #353839;
 }
 
 footer {
