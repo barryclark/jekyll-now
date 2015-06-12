@@ -162,8 +162,8 @@ img {
 
 .site-avatar {
   float: left;
-  width: 70px;
-  height: 70px;
+  width: 90px;
+  /* height: 70px; */
   margin-right: 15px;
 
   @include mobile {
@@ -193,7 +193,7 @@ img {
   cursor: pointer;
   font-family: "Comfortaa", $helveticaNeue;
   font-weight: 700;
-  font-size: 28px;
+  font-size: 36px;
   letter-spacing: 1px;
   a {
     &:hover, &:active {
@@ -215,7 +215,7 @@ img {
 
 nav {
   float: left;
-  margin-top: 30px;
+  margin-top: 10px;
   font-family: $helveticaNeue; 
   font-size: 18px;
   
