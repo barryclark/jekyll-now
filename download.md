@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Manjaro Installation Media
-permalink: /
+permalink: /download/
 ---
 
 
