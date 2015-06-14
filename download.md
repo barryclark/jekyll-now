@@ -20,43 +20,38 @@ Both 32 and 64 bit versions of Manjaro are available in the following flavours (
 
 ## XFCE
 
-  - **[manjaro-xfce-0.8.12-i686.iso](http://sourceforge.net/projects/manjarolinux/files/release/0.8.12/xfce/manjaro-xfce-0.8.12-i686.iso/download)**
-   `SHA1SUM: e7b36483dc04b189209145b54911c0ae456edbc0`
-  - **[manjaro-xfce-0.8.12-x86_64.iso](http://sourceforge.net/projects/manjarolinux/files/release/0.8.12/xfce/manjaro-xfce-0.8.12-x86_64.iso/download)**
-   `SHA1SUM: 3f36e34d53777e6182ce99d0d047e645675304c6`
+  - **[manjaro-xfce-0.8.13-i686.iso](http://sourceforge.net/projects/manjarolinux/files/release/0.8.13/xfce/manjaro-xfce-0.8.13-i686.iso)**
+   `SHA1SUM: 50c3a1795f6e1320db37ef133d40f43babcf6aad`
+  - **[manjaro-xfce-0.8.13-x86_64.iso](http://sourceforge.net/projects/manjarolinux/files/release/0.8.13/xfce/manjaro-xfce-0.8.13-x86_64.iso)**
+   `SHA1SUM: 11f4af9635d1178a29be8d0cbda72af66774cc87`
 
 #### Testbuilds
 
-  - [manjaro-xfce-0.9.0-pre4-i686.iso](http://sourceforge.net/projects/manjarotest/files/0.9.0/xfce/0.9.0-pre4/manjaro-xfce-0.9.0-pre4-i686.iso/download)
-  - [manjaro-xfce-0.9.0-pre4-x86_64.iso](http://sourceforge.net/projects/manjarotest/files/0.9.0/xfce/0.9.0-pre4/manjaro-xfce-0.9.0-pre4-x86_64.iso/download)
+  - [manjaro-xfce-0.9.0-dev-i686.iso](http://sourceforge.net/projects/manjarotest/files/0.9.0/xfce-minimal/0.9.0-dev/manjaro-xfce-0.9.0-dev-i686.iso)
+  - [manjaro-xfce-0.9.0-dev-x86_64.iso](http://sourceforge.net/projects/manjarotest/files/0.9.0/xfce-minimal/0.9.0-dev/manjaro-xfce-0.9.0-dev-x86_64.iso)
 
 
 ## KDE
 
-  - **[manjaro-kde-0.8.12-i686.iso](http://sourceforge.net/projects/manjarolinux/files/release/0.8.12/kde/manjaro-kde-0.8.12-i686.iso/download)**
-  `SHA1SUM: c07cd0c336dafaaea5cf708dc1638b94d1adf3a6`
-  - **[manjaro-kde-0.8.12-x86_64.iso](http://sourceforge.net/projects/manjarolinux/files/release/0.8.12/kde/manjaro-kde-0.8.12-x86_64.iso/download)**
-  `SHA1SUM: 8045633b0b0d31c9680227916f2dc13ad70382d5`
-
-#### Testbuilds
-
-  - [manjaro-kde-0.9.0-pre5-i686.iso](http://sourceforge.net/projects/manjarotest/files/0.9.0/kde/0.9.0-pre5/manjaro-kde-0.9.0-pre5-i686.iso/download)
-  - [manjaro-kde-0.9.0-pre5-x86_64.iso](http://sourceforge.net/projects/manjarotest/files/0.9.0/kde/0.9.0-pre5/manjaro-kde-0.9.0-pre5-x86_64.iso/download)
+  - **[manjaro-kde-0.8.13-i686.iso](http://sourceforge.net/projects/manjarolinux/files/release/0.8.13/kde/manjaro-kde-0.8.13-i686.iso)**
+  `SHA1SUM: 87703e6ef000d4da56b7a416a8f09e2e2f811604`
+  - **[manjaro-kde-0.8.13-x86_64.iso](http://sourceforge.net/projects/manjarolinux/files/release/0.8.13/kde/manjaro-kde-0.8.13-x86_64.iso)**
+  `SHA1SUM: c20b77def30b1b478e93415a693c2a6ac917e5cd`
 
 
 ## Net-Edition
 
 The NET edition of Manjaro provides a base installation without a pre-installed display manager, desktop environment, or any desktop software applications. It allows you to build your own version of Manjaro from the ground up.
 
-  - **[manjaro-net-0.8.12-i686.iso](http://sourceforge.net/projects/manjarolinux/files/release/0.8.12/netinstall/manjaro-net-0.8.12-i686.iso/download)**
-  `SHA1SUM: 57b6bc1551baa624acba29af838b7c6d10f8ec1d`
-  - **[manjaro-net-0.8.12-x86_64.iso](http://sourceforge.net/projects/manjarolinux/files/release/0.8.12/netinstall/manjaro-net-0.8.12-x86_64.iso/download)**
-  `SHA1SUM: 3373c2119edf25482f2bd1fbcc57a7ec5f0dd6eb`
+  - **[manjaro-net-0.8.13-i686.iso](http://sourceforge.net/projects/manjarolinux/files/release/0.8.13/netinstall/manjaro-net-0.8.13-i686.iso)**
+  `SHA1SUM: eb919a3a95d4d6d90ba00557a43831aa6b8b2325`
+  - **[manjaro-net-0.8.13-x86_64.iso](http://sourceforge.net/projects/manjarolinux/files/release/0.8.13/netinstall/manjaro-net-0.8.13-x86_64.iso)**
+  `SHA1SUM: b773b3f578416a6b53bdca98ed35427903ec7bf5`
 
 
 ### Other flavours
 
-Cinnamon, Enlightenment, Fluxbox, Gnome, LXDE, LXQT, MATE, Netbook, Openbox and PekWM can be installed from our Community Editions released when ready.
+Cinnamon, Enlightenment, Fluxbox, Gnome, i3, LXDE, LXQT, MATE, Netbook, Openbox and PekWM can be installed from our Community Editions released when ready.
 
 Razor-QT and other window-managers are also available for installation from the Official Manjaro repositories.
 
