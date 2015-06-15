@@ -10,6 +10,10 @@ permalink: /publications/
 
 ###2015
 
+Gamazon ER*, Wheeler HE</b>*, Shah KP*, Mozaffari SV, Aquino-Michaels K, Carroll RJ, Eyler AE, Denny JC, GTEx Consortium, Nicolae DL, Cox NJ, Im HK. (2015) PrediXcan: Trait Mapping Using Human Transcriptome Regulation. Nature Genetics, <i>in press</i> *Contributed equally.
+
+Komatsu M, <b>Wheeler HE</b>, Chung S, Low SK, Wing C, Delaney SM, Gorsic LK, Takahashi A, Kubo M, Kroetz D, Zhang W, Nakamura Y, Dolan ME. (2015) Pharmacoethnicity in paclitaxel-induced sensory peripheral neuropathy. Clinical Cancer Research, <a href="http://www.ncbi.nlm.nih.gov/pubmed/26015512"><i>in press</i></a>
+
 Diouf B, Crews KR, Lew G, Pei D, Cheng C, Bao J, Zheng JJ, Yang W, Fan Y, <b>Wheeler HE</b>, Wing C, Delaney SM, Komatsu M, Paugh SW, McCorkle JR, Lu X, Winick NJ, Carroll WL, Loh ML, Hunger SP, Devidas M, Pui CH, Dolan ME, Relling MV, Evans WE. (2015) Association of an inherited genetic variant with vincristine-related peripheral neuropathy in children with acute lymphoblastic leukemia. JAMA 313(8):815-823. <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=PMC4377066">PMC4377066</a>
 
 <b>Wheeler HE</b>, Wing C, Delaney SM, Komatsu M, Dolan ME. (2015) Modeling chemotherapeutic neurotoxicity with human induced pluripotent stem cell-derived neuronal cells. PLoS One 10(2):e0118020. <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=PMC4331516">PMC4331516</a>
