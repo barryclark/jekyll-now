@@ -71,7 +71,7 @@ $font-size-h1     : floor(($base__font-size * 2.6)) !default;   // ~36px
 $font-size-h2     : floor(($base__font-size * 2.15)) !default;  // ~30px
 $font-size-h3     : 1.9em !default;                             // ~24px
 $font-size-h4     : 1.4em !default;                             // ~18px
-$font-size-h5     : 1em !default;
+$font-size-h5     : 1.2em !default;
 $font-size-h6     : ceil(($base__font-size * 0.85)) !default;   // ~12px
 
 $base__line-height        : 1.7 !default; // Unit-less `line-height`

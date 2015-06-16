@@ -298,11 +298,11 @@ pre {
 }
 
 p code {
-    background-color: $gray-darker;
+    background-color: $gray-lighter;
+    padding: 0 .5em;
 }
 
 code {
-    color: $white;
     white-space: pre;
     word-wrap: normal;
     overflow: auto;
