@@ -19,4 +19,8 @@ tags: [common]
     
     [php 调用 C 函数详解](http://blog.csdn.net/oyd/article/details/3168417)
     
-2. 
+2. **Linux 相关**
+
+	[linux下限制进程在多核cpu中指定cpu上运行](http://blog.sina.com.cn/s/blog_a39910330101dgqe.html)
+    
+3. 
