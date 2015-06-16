@@ -5,9 +5,9 @@ date: June 16, 2015
 tagline: "Building Forms in a Simple Way"
 ---
 
-During my first months at [Springest][springest-homepage], as a fast-learning junior developer, I will be diving into the workings and usage of popular gems and posting here my experiences with each of them once in a while. [Simple Form][simple-form-gem-homepage] is the gem of this week!
-
 ![][simple-form-logo]
+
+During my first months at [Springest][springest-homepage], as a fast-learning junior developer, I will be diving into the workings and usage of popular gems and posting here my experiences with each of them once in a while. [Simple Form][simple-form-gem-homepage] is the gem of this week!
 
 Forms are essential for user input in web applications. However, they can become tedious to write and maintain because of the need to handle form control naming and its numerous attributes.
 
