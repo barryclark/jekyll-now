@@ -218,6 +218,7 @@ nav {
   margin-top: 10px;
   font-family: $helveticaNeue; 
   font-size: 18px;
+  width: 100%;
   
   @include mobile {
     float: none;
@@ -233,6 +234,7 @@ nav {
     font-weight: 400;
     letter-spacing: 0px;
     vertical-align: middle;
+    padding: 0 5px;
     &:hover, &:active {
       color: $white;
       text-decoration: none;
