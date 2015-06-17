@@ -48,7 +48,7 @@ end
 Unlike classes, modules cannot be instantiated in Ruby. If you were to call `MyFunction.new` you would receive an error. Therefore, you are forced to call a class method; in this case `MyFunction.evaluate_this(input)`. Using modules in this way makes Ruby operate less like an object oriented language and more like a functional one.
 
 ## Mixin
-Mixins are a way to share common methods and attributes in Ruby. (You can also do this through inheritance.) Take the following example.
+Mixins are a way to share common methods and attributes among classes in Ruby. (You can also do this through inheritance.) Take the following example.
 
 ```ruby
 module TwoWheeled
