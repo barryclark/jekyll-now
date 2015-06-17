@@ -11,7 +11,7 @@ This time we ship Plasma 5.3.1, KDE Frameworks 5.10.0, latest KDE Apps 15.04.1 a
 
 ##New in KDE
 
-With this new release of Plasma 5 providing a visually updated core desktop experience that is easy to use and familiar to the user. Changes under the hood of KDE include the migration to a new, fully hardware-accelerated graphics stack centered around an OpenGL(ES) scenegraph. Plasma is built using Qt 5 and Frameworks 5. Plasma 5.3 introduces a new major version of KDE's workspace offering. The Netrunner Art Team has worked on their theme to follow in line with the rest of our visually appealing desktops. Most of the known errors within KDE5 are now fixed. Post those, we should still take a look at ...
+With this new release of Plasma 5 providing a visually updated core desktop experience that is easy to use and familiar to the user. Changes under the hood of KDE include the migration to a new, fully hardware-accelerated graphics stack centered around an OpenGL(ES) scenegraph. Plasma is built using Qt 5 and Frameworks 5. Plasma 5.3 introduces a new major version of KDE's workspace offering. The Netrunner Art Team has worked on their theme to follow in line with KDE4 and Plasma5 to match all themes as best as possible. Most of the known errors within KDE5 are now fixed. Post those, we should still take a look at ...
 
 ##Changes in Calamares
 
