@@ -7,7 +7,7 @@ title: Netrunner Rolling 15.06 (beta3) released
 
 Based on Manjaro 0.8.13 [Blue Systems](http://www.blue-systems.com/) is proud to present Netrunner Rolling 15.06 (beta 3) to you.
 
-This time we ship Plasma 5.3.1, KDE Frameworks 5.10.0 and latest KDE Apps 15.04.1 and the brand new graphical installer Calamares 1.1-rc2!
+This time we ship Plasma 5.3.1, KDE Frameworks 5.10.0, latest KDE Apps 15.04.1 and the brand new graphical installer Calamares 1.1-rc2!
 
 ##New in KDE
 
