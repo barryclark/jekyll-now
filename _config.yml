@@ -78,3 +78,4 @@ exclude:
     - _dev/
     - images/aws-icons/100x100/stylesheet.txt
     - images/aws-icons/40x40/stylesheet.txt
+    - _scripts/
