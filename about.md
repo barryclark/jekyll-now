@@ -2,9 +2,6 @@
 layout: page
 title: About me
 permalink: /about/
-redirect_from:
- - /~skopeko
- - /~skopeko/
 ---
 
 Currently I am a CS student at the [Faculty of Mathematics and Physics](http://mff.cuni.cz) at [Charles University](http://cuni.cz) in Prague.
