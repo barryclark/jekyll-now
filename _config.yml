@@ -6,7 +6,7 @@
 name: Dawn Mercurio
 
 # Short bio or description (displayed in the header)
-description: Designer Illustrator and developer
+description: Designer Illustrator and Developer
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://avatars2.githubusercontent.com/u/11967600?v=3&u=ec48aa0df95127827ba1bbdd6b6e77061172701d&s=140
@@ -20,9 +20,9 @@ footer-links:
   dribbble:
   email:
   facebook:
-  flickr:
+  flickr: dawnmercurio
   github: barryclark/jekyll-now
-  instagram:
+  instagram: dawnmarymac
   linkedin:
   pinterest:
   rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
