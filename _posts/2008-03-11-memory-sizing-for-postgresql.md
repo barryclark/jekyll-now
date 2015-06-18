@@ -64,7 +64,7 @@ Thus:
 
 ```(32876680-1762176-30040432)-(524280+8192+46875)=494725 KB```
 
-Now that we have the variable memory size, we have defined the major components of the memory footprint. Then we can calculate the average size of each backend process by dividing the total usage by the number of backend processes. Assuming for we expect very few, or perhaps no backends consuming maintenance\_work\_mem at any time (for instance auto-vacuum&#8217;s running)
+Now that we have the variable memory size, we have defined the major components of the memory footprint. Then we can calculate the average size of each backend process by dividing the total usage by the number of backend processes. Assuming for we expect very few, or perhaps no backends consuming maintenance_work_mem at any time (for instance auto-vacuum's running)
 
 ```
 $>ps -ef | grep "postgres: postgres" | grep -v grep | wc -l
