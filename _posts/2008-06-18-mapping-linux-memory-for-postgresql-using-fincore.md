@@ -23,7 +23,8 @@ I put together some python to glue this all together. The best way would be to u
 
 Using this code, one can see the set of most used buffers in the OS cache, and compare them to the PG cache. Sizes are in bytes.
 
-<pre lang='text'>$>./pg_osmem.py
+```
+    $>./pg_osmem.py
 	postgres:accounts:268435456
 	postgres:tellers:3332096
 	postgres:branches:3155968
@@ -50,11 +51,12 @@ Using this code, one can see the set of most used buffers in the OS cache, and c
 	postgres:branches_pkey:14336
 	postgres:sql_features:12288
 
-</pre>
+```
 
 And then you can see that the PG buffer cache has the following:
 
-<pre lang='text'>postgres=# SELECT current_database(),c.relname, count(*)*8192 as bytes
+```sql
+    postgres=# SELECT current_database(),c.relname, count(*)*8192 as bytes
 	postgres-# FROM pg_buffercache b INNER JOIN pg_class c
 	postgres-# ON b.relfilenode = c.relfilenode AND
 	postgres-# b.reldatabase IN (0, (SELECT oid FROM pg_database
@@ -92,4 +94,4 @@ And then you can see that the PG buffer cache has the following:
 
 
 
-</pre>
+```

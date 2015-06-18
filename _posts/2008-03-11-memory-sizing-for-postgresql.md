@@ -27,20 +27,23 @@ fixed parameters:
 
 1.  shared_buffers
 2.  wall_buffers
-3.  max\_fsm\_pages
+3.  max_fsm_pages
 
 variable parameters:
 
 1.  work_mem
-2.  maintenance\_work\_mem
+2.  maintenance_work_mem
 
 Using /proc/meminfo and the postgresql.conf file one can calculate the memory footprint with a reasonably high degree of certainty using:
 
-<pre>(MemTotal-MemFree-Cached)-((shared_buffers*8)+(wal_buffers*8)+((fsm_pages*6)/1024))=variable size in KB</pre>
+```
+(MemTotal-MemFree-Cached)-((shared_buffers*8)+(wal_buffers*8)+((fsm_pages*6)/1024))=variable size in KB
+```
 
 For instance:
 
-<pre>$>cat /proc/meminfo
+```
+$>cat /proc/meminfo
 MemTotal: 32876680 kB
 MemFree: 1762176 kB
 Buffers: 256664 kB
@@ -48,24 +51,27 @@ Cached: 30040432 kB
 $>cat /data/postgresql.conf | grep buffers
 shared_buffers = 65535 # min 16 or max_connections*2, 8KB each
 wal_buffers = 1024 # min 4, 8KB each
+
 $>cat /data/postgresql.conf | grep fsm
 max_fsm_pages = 8000000 # min max_fsm_relations*16, 6 bytes each
 max_fsm_relations = 2000 # min 100, ~70 bytes each
 $>cat /data/postgresql.conf | grep mem
 work_mem = 32768 # size in KB
-maintenance_work_mem = 768000 # min 1024, size in KB</pre>
+maintenance_work_mem = 768000 # min 1024, size in KB
+```
 
 Thus:
 
-<pre>(32876680-1762176-30040432)-(524280+8192+46875)=494725 KB</pre>
+```(32876680-1762176-30040432)-(524280+8192+46875)=494725 KB```
 
 Now that we have the variable memory size, we have defined the major components of the memory footprint. Then we can calculate the average size of each backend process by dividing the total usage by the number of backend processes. Assuming for we expect very few, or perhaps no backends consuming maintenance\_work\_mem at any time (for instance auto-vacuum&#8217;s running)
 
-<pre>$>ps -ef | grep "postgres: postgres" | grep -v grep | wc -l
+```
+$>ps -ef | grep "postgres: postgres" | grep -v grep | wc -l
 122
 $>echo 494725/122 | bc
 4055
-</pre>
+```
 
 So each connection consumes avg ~4KB. We can now adjust, tune, and play what-if with those numbers as we desire.
 
