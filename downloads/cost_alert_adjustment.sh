@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # BEGIN: change values
-AWS_ID=913654XXXXXX
+AWS_ID=XXXXXXXXXXXX
 BILLING_BUCKET="billing.aws-blog.io"
-PROFILE="aws-blog.io"
+PROFILE="default"
 # END:
 
 # maximum decrease or increase ratio

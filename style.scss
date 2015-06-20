@@ -156,6 +156,32 @@ td{
 .date {
   font-style: italic;
   color: $gray;
+  text-align: center;
+}
+
+.post-footer {
+  width: 100%;
+  margin: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: inline-block;
+}
+
+.post-cursor {
+  width: 50%;
+  margin: 0;
+
+  a {
+    margin: 0;
+    color: $blue;
+  } 
+}
+
+.post-previous {
+  text-align: left;
+}
+
+.post-next {
   text-align: right;
 }
 
@@ -318,6 +344,11 @@ nav {
   .read-more {
     text-transform: uppercase;
     font-size: 15px;
+  }
+
+  img {
+    padding: 3px;
+    border: 1px solid $gray;
   }
 }
 
