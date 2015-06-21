@@ -38,8 +38,20 @@
   }
 
   &.xing {
-     width: 40px;
+    width: 40px;
     height: 40px;
     background-position: -200px 0;
+  }
+
+  &.twitter {
+    width: 40px;
+    height: 40px;
+    background-position: -240px 0;
+  }
+
+  &.facebook {
+    width: 40px;
+    height: 40px;
+    background-position: -280px 0;
   }
 }
