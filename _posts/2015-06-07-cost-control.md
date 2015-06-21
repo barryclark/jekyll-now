@@ -10,7 +10,7 @@ The concept of running instances on [AWS](http://aws.amazon.com){:target="_blank
 
 The billing alerts is one of the few things that need to get enabled within the [Management Console](https://console.aws.amazon.com){:target="_blank"}. Navigate to **Billing & Cost Management**. The link to it is shown in a sub-menu, when you click on your name on the top right. Select **Preferences** on the left side. On the selected screen you need to enable **Receive Billing Alerts**. Your screen should now look like the following screenshot.
 
-![Recieve Billing Alerts](/images/cost-control.png)
+<img src="/images/cost-control.png" width="720" height="433" alt="Recieve Billing Alerts" />
 
 **NOTE:** This setting can't get disabled after being enabled once. However, this service is for free and any notfications can be disabled again.
 

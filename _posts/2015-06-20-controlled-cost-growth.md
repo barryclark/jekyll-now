@@ -59,7 +59,7 @@ $ rm reporting.aws-blog.io.policy
 
 The next step is one of the few tasks that need to be done within the [Management Console](https://console.aws.amazon.com){:target="_blank"}. Login and navigate to **Billing & Cost Management**. The link to it is shown in a sub-menu, when you click on your name on the top right. Select **Preferences** on the left side. In the field **Save to S3 Bucket** enter the bucket-name **reporting.aws-blog.io** and press **Verify**. This will trigger an validation-check, where an AWS-service tries to write a file called **aws-programmatic-access-test-object** to the [S3](http://aws.amazon.com/s3/){:target="_blank"}-bucket. If the check had been successful, you get a result as shown in the screenshot below.
 
-![Verified S3-Bucket for Reporting](/images/cost-control-s3.png)
+<img src="/images/cost-control-s3.png" width="720" height="448" alt="Verified S3-Bucket for Reporting" />
 
 ## Adjust limits once per month
 

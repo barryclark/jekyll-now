@@ -8,7 +8,7 @@ With [CloudFront](http://aws.amazon.com/cloudfront/){:target="_blank"}, Amazon c
 
 The servers, which hold a cached version of the static files are called Edge Locations. In the image below, each blue dot stands for at least one Edge Location. Some dots stand for up to 3 of them. More details about the AWS-Regions and Edge Locations can be found [here](http://aws.amazon.com/about-aws/global-infrastructure/){:target="_blank"}.
 
-![AWS Edge Locations](/images/aws-edge-locations.png){:class='centered'}
+<img class="centered" src="/images/aws-edge-locations.png" width="608" height="197" alt="AWS Edge Locations" />
 
 |---
 | Region | Country | City | ELs

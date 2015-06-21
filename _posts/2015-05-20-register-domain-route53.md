@@ -175,7 +175,7 @@ With the above code, a less risky way of domain-import is being done. If you don
 ### Alias Entries
 In order to explain the concept of alias-entries I took the following architecture.
 
-![Route 53 Concept](/images/route53-concept.png){:class='centered'}
+<img class="centered" src="/images/route53-concept.png" width="394" height="204" alt="Route 53 Concept" />
 
 The steps for creating the recordsets for the concept are
 
