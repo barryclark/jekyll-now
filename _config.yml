@@ -3,9 +3,11 @@ title: lightj
 description: "Web DevBlog"
 url: "http://lightj.github.io/"
 baseurl: ""
+google_analytics: "UA-64331584-1"
 markdown: redcarpet
 highlighter: pygments
 permalink: /:title/
+show_related_posts: false
 sass:
   style:: expanded
   compressed: true
