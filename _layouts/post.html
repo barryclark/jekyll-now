@@ -1,7 +1,10 @@
 ---
 layout: default
 ---
-
+<div class="post-header mb2">
+  <span class="post-meta">{{ page.date | date: "%b %-d, %Y" }}</span><br>
+  {% if page.update_date %}
+</div>
 <article class="post">
   <h1>{{ page.title }}</h1>
 

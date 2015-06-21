@@ -1,15 +1,18 @@
 ---
 layout: page
-title: About
+title: lightj
 permalink: /about/
 ---
 
-Some information about you!
+### About
+- 4년제 대학 컴퓨터공학과 재학중
 
-### More Information
+### Learning
+- Ajax
+- PHP
+- Javascript
+    - jQuery
+- Python
+- Mysql
 
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+### Contact [mkjzone@gmail.com](mailto:mkjzone@gmail.com)
