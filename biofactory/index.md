@@ -1,22 +1,11 @@
 ---
 layout: default
-title: Biofactory
+title: BioHack Academy 1
 permalink: /biofactory/
 ---
 
 ##Biohack Academy 1: Biofactory
 
-The age of personal biotechnology is upon us! Engineers have turned
-biology in a design discipline and it’s now up to us to shape it’s
-applications. After completing this first BioHack Academy you can grow
-your own fuel, food, filaments, farmaceuticals, fragrances, fungi and
-much more funky bio stuff at home. We’ll teach you how to join the bio
-revolution and build your own BioFactory using a Fablab, Maker/Hackspace
-or other shared machine shop.
-
-Learn how to design, grow and extract your own biomaterials using only
-Open Source hardware you fabricate yourself. Whether it’s a new type of
-bio ink, bio polymer or bio fuel, we’ll show you can grow it yourself and
-share the results with others.
+Ready for 10 intense weeks of biohacking? Alright, let's go:
 
 {% include biofactory-intro.html %}
