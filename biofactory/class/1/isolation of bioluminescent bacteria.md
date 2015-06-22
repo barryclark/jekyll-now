@@ -11,8 +11,8 @@ In the ocean many organisms produce light. There are also many diffent colors. I
 ## Materials
 
 * 1 Fresh fish
-* 4 [Artificial Seawater](/biofactory/annex/cultivation-media/artficial-seawater/) plates, simply add 10% agar before autoclaving
-* 100 mL [Artificial Seawater](/biofactory/annex/cultivation-media/artficial-seawater/)
+* 4 [Artificial Seawater](/biofactory/annex/cultivation-media/artificial-seawater/) plates, simply add 10% agar before autoclaving
+* 100 mL [Artificial Seawater](/biofactory/annex/cultivation-media/artificial-seawater/)
 * 2 50 mL Erlenmeyer flasks
 * Glass spatula
 * Inoculation loop
