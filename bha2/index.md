@@ -1,7 +1,7 @@
 ---
 layout: default
 title: BHA 2
-permalink: /biofactory/
+permalink: /bha2/
 ---
 
 ##Biohack Academy 2
