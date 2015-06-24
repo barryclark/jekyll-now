@@ -51,7 +51,8 @@ header {
 #post-nav {
   width:100%;
   border-bottom: 1px solid $border-color;
-  display: inline-block;
+  display: flex;
+  float: left;
 
   a, .page-title {
     display: inline-block;
@@ -64,20 +65,13 @@ header {
   }
 
   a {
-    @extend %padding-small;
+    padding: 2em 3em;
     border: 1px solid rgba(255, 255, 255, 0);
     text-align: center;
     width: 50%;
   }
   a:hover {
     @extend a.button:hover;
-  }
-
-  #prev-post {
-      float: left;
-  }
-  #next-post {
-      float: right;
   }
 
   i {

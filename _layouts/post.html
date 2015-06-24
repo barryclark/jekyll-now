@@ -18,13 +18,17 @@ layout: default
     {% if page.previous.url %}
     <a id="prev-post" href="{{ site.baseurl }}{{ page.previous.url }}">
       <span class="page-title">{{ page.previous.title }}</span>
-      <i class="fa fa-chevron-left"></i> {{ site.theme.str_prev }}
+      <span class="nav-label">
+        <i class="fa fa-chevron-left"></i> {{ site.theme.str_prev }}
+      </span>
     </a>
     {% endif %}
     {% if page.next.url %}
     <a id="next-post" href="{{ site.baseurl }}{{ page.next.url }}">
-      <span class="page-title">{{ page.next.title }}</span>
-       {{ site.theme.str_next }} <i class="fa fa-chevron-right"></i>
+       <span class="page-title">{{ page.next.title }}</span>
+       <span class="nav-label">
+        {{ site.theme.str_next }} <i class="fa fa-chevron-right"></i>
+       </span>
      </a>
     {% endif %}
 </div>
