@@ -19,14 +19,14 @@ avatar: https://raw.githubusercontent.com/ivanqueiroz/ivanqueiroz.github.io/mast
 footer-links:
   dribbble:
   email: ivanqueiroz@gmail.com
-  facebook:
+  facebook: ivan.queiroz
   flickr:
   github: ivanqueiroz
   instagram:
-  linkedin:
+  linkedin: ivanqueiroz
   pinterest:
   rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
-  twitter: https://twitter.com/ivanqueiroz
+  twitter: ivanqueiroz
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: u/0/+IvanQueiroz/
@@ -34,7 +34,7 @@ footer-links:
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
-disqus:
+disqus: blogivanqueiroz
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 google_analytics:
