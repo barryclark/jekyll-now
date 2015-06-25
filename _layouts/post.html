@@ -10,7 +10,9 @@ layout: default
   </div>
 
   <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
+    Written on {{ page.date | date: "%B %e, %Y" }} by <span class="author-name">
+  {{ site.data.authors.[page.author_github].name }}
+</span>
   </div>
 
   {% include disqus.html %}
