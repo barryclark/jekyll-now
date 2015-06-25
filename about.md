@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: 关于我
 permalink: /about/
 ---
 
@@ -8,8 +8,8 @@ Some information about you!
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+I'm a android developer,already work 2 years.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[fenghebaiyang@163.com](mailto:fenghebaiyang@163.com)
