@@ -27,8 +27,8 @@ Both 32 and 64 bit versions of Manjaro are available in the following flavours (
 
 #### Testbuilds
 
-  - [manjaro-xfce-0.9.0-dev-i686.iso](http://sourceforge.net/projects/manjarotest/files/0.9.0/xfce-minimal/0.9.0-dev/manjaro-xfce-0.9.0-dev-i686.iso)
-  - [manjaro-xfce-0.9.0-dev-x86_64.iso](http://sourceforge.net/projects/manjarotest/files/0.9.0/xfce-minimal/0.9.0-dev/manjaro-xfce-0.9.0-dev-x86_64.iso)
+  - [manjaro-xfce-minimal-0.9.0-dev-i686.iso](http://sourceforge.net/projects/manjarotest/files/0.9.0/xfce-minimal/0.9.0-dev/manjaro-xfce-minimal-0.9.0-dev-i686.iso)
+  - [manjaro-xfce-minimal-0.9.0-dev-x86_64.iso](http://sourceforge.net/projects/manjarotest/files/0.9.0/xfce-minimal/0.9.0-dev/manjaro-xfce-minimal-0.9.0-dev-x86_64.iso)
 
 
 ## KDE
