@@ -127,5 +127,5 @@ Ringo de Kroon, Community Support and IRC Manager
 
 ##Links
 
-* [Download here](http://manjaro.github.io/download/)
+* [Download here](http://sourceforge.net/projects/manjarolinux/files/community/Cinnamon/2015.06/)
 * [Forum post](https://forum.manjaro.org/index.php?topic=23666.0)
