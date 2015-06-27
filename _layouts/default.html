@@ -1,51 +1,56 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+---
+layout: post
+title: Markdown Style Guide
+---
 
-    {% include meta.html %}
+This is a demo of all styled elements in Jekyll Now.
 
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+[View the markdown used to create this post](https://raw.githubusercontent.com/barryclark/www.jekyllnow.com/gh-pages/_posts/2014-6-19-Markdown-Style-Guide.md).
 
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+This is a paragraph, it's surrounded by whitespace. Next up are some headers, they're heavily influenced by GitHub's markdown style.
 
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
-  </head>
+## Header 2 (H1 is reserved for post titles)##
 
-  <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+### Header 3
 
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
-          </div>
+#### Header 4
 
-          <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
-          </nav>
-        </header>
-      </div>
-    </div>
+A link to [Jekyll Now](http://github.com/barryclark/jekyll-now/). A big ass literal link <http://github.com/barryclark/jekyll-now/>
 
-    <div id="main" role="main" class="container">
-      {{ content }}
-    </div>
+An image, located within /images
 
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          {% include svg-icons.html %}
-        </footer>
-      </div>
-    </div>
+![an image alt text]({{ site.baseurl }}/images/jekyll-logo.png "an image title")
 
-    {% include analytics.html %}
-  </body>
-</html>
+* A bulletted list
+- alternative syntax 1
++ alternative syntax 2
+  - an indented list item
+
+1. An
+2. ordered
+3. list
+
+Inline markup styles:
+
+- _italics_
+- **bold**
+- `code()`
+
+> Blockquote
+>> Nested Blockquote
+
+Syntax highlighting can be used with triple backticks, like so:
+
+```javascript
+/* Some pointless Javascript */
+var rawr = ["r", "a", "w", "r"];
+```
+
+Use two trailing spaces  
+on the right  
+to create linebreak tags  
+
+Finally, horizontal lines
+
+----
+****
