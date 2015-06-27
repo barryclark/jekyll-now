@@ -12,8 +12,9 @@ The Manjaro Community is proud to present to you our Cinnamon 2.6 Edition.
 * Cinnamon 2.6
   * Latest cinnamon version
 * Desktop freezes
-  * On supported hardware Cinnamon now uses a newer “cogl” API. This change is known to prevent some of the causes of desktop freezes i observed in earlier releases.
-* logind/consolekit-upower support    - systemd-logind support also consolekit (possibly openrc).
+  * On supported hardware Cinnamon now uses a newer “cogl” API. This change is known to prevent some of the causes of desktop freezes I observed in earlier releases.
+* logind/consolekit-upower support
+  * systemd-logind support also consolekit (possibly openrc).
 * Responsiveness, load times and CPU usage
 * Multi-monitor and multi-panel support
 * Screensaver
