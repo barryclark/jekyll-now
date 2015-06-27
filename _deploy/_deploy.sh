@@ -13,7 +13,7 @@ if [ -z "$SITE_FOLDER" ] || [ -z "$BUCKET_NAME" ] || [ -z "$DISTRIBUTION_ID" ]; 
 fi
 
 if [[ $PROFILE == '' ]]; then
-  $PROFILE='default'
+  PROFILE='default'
 fi
 
 timestamp=`LC_ALL=en_US.UTF-8 date`
