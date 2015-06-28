@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc5dabb2-ced4-48c8-b1f6-57285288762e" name="Default" comment="Merge branch 'master' of https://github.com/breezedeus/breezedeus.github.io&#10;&#10;Conflicts:&#10;&#9;index.html&#10;">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_layouts/default.html" afterPath="$PROJECT_DIR$/_layouts/default.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="dc5dabb2-ced4-48c8-b1f6-57285288762e" name="Default" comment="Merge branch 'master' of https://github.com/breezedeus/breezedeus.github.io&#10;&#10;Conflicts:&#10;&#9;index.html&#10;" />
     <ignored path="breezedeus.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,19 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="default.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_layouts/default.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="0" selection-start="230" selection-end="230" vertical-scroll-proportion="0.36734694" vertical-offset="0" max-vertical-offset="735">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="head.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="head.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_includes/head.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="0" selection-start="1017" selection-end="1017" vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="375">
+            <state line="19" column="0" selection-start="1017" selection-end="1017" vertical-scroll-proportion="0.39473686" vertical-offset="0" max-vertical-offset="722">
               <folding />
             </state>
           </provider>
@@ -667,13 +655,6 @@
         <state line="1" column="28" selection-start="29" selection-end="29" vertical-scroll-proportion="0.020463847" vertical-offset="0" max-vertical-offset="733" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/head.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="1017" selection-end="1017" vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_includes/footer.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="30" column="25" selection-start="1772" selection-end="1772" vertical-scroll-proportion="0.35416666" vertical-offset="195" max-vertical-offset="915" />
@@ -710,6 +691,13 @@
     <entry file="file://$PROJECT_DIR$/_layouts/default.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="0" selection-start="230" selection-end="230" vertical-scroll-proportion="0.36734694" vertical-offset="0" max-vertical-offset="735">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/head.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="0" selection-start="1017" selection-end="1017" vertical-scroll-proportion="0.39473686" vertical-offset="0" max-vertical-offset="722">
           <folding />
         </state>
       </provider>
