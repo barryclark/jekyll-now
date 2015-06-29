@@ -1,9 +1,9 @@
---
+---
 layout: post
 title: Estás viviendo en un mundo Post PC y no te has enterado
 tags: PostPC
 excerpt: La distorsión de la realidad y como el móvil ha roto el mundo del PC y tablet.
---
+---
 Cuando [Steve Jobs dijo](https://www.youtube.com/watch?v=YfJ3QxJYsw8) aquella famosa frase de que el iPad era el inicio de la era Post PC se equivocó en una cosa, que no sería el iPad el dispositivo que cambiará el dominio del PC. Ha resultado ser el móvil.
 
 Este es uno de esos temas que me gusta explicar y debatir, sobre todo escribirlos. A estas alturas hay muchas personas aficionadas a la tecnología que no se creen eso del mundo Post-PC. Es normal, intentamos extrapolar nuestro uso de la tecnología como el estándar, muy lejos de la realidad.
