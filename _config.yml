@@ -6,7 +6,7 @@
 name: Code Connect
 
 # Short bio or description (displayed in the header)
-description: We build tools for devs.
+description: Cool tools for cool devs. :)
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://avatars1.githubusercontent.com/u/9244729?v=3&s=200
@@ -21,7 +21,7 @@ footer-links:
   email: founders@codeconnect.io
   facebook:
   flickr:
-  github: barryclark/jekyll-now
+  github: 
   instagram:
   linkedin:
   pinterest:
