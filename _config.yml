@@ -14,6 +14,7 @@ avatar: https://raw.githubusercontent.com/ivanqueiroz/ivanqueiroz.github.io/mast
 #
 # Flags below are optional
 #
+paginate: 5
 
 # Includes an icon in the footer for each username you enter
 footer-links:
