@@ -188,6 +188,25 @@ ex. ENS0000001ENS0000002 -> ENS0000001 ENS0000002
      nr <- nrow(m)
      heatmap.2(m, scale="none", col=c("white", "black"), cexRow=0.2/log10(nr), trace="none", colsep=c(1,2,3,4,5,6,7,8,9,10), sepcolor="grey", sepwidth=0.01, key=FALSE, xlab="DATABASES", ylab="GENES", margins=c(15,10))
 
+##### Heatmap with overlayed values
+    
+        library("lattice")
+        myPanel <- function(x, y, z, ...) {
+        panel.levelplot(x,y,z,...)
+        panel.text(x, y, round(z,2))
+        }
+        colors <- colorRampPalette(c('red', 'seashell'))(256)
+
+        # fullcorr is a numeric 15x15 matrix
+        hmap <- print(levelplot(fullcorr[,15:1],  xlab="", ylab="",panel = myPanel, col.regions=colors ,scales=list(tck=0, x=list(rot=45,alternating=2))))
+##### Make a multipanel figure with cowplot
+
+        library("cowplot)
+        ab <- qplot(a, b)
+        bc <- qplot(b, c)
+        cd <- qplot(c, d)
+        de <- qplot(d, e)
+        allplotted <- plot_grid(ab, bc, cd,de, labels = c("A", "B", "C", "D"), ncol = 2)
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -199,3 +218,5 @@ ex. ENS0000001ENS0000002 -> ENS0000001 ENS0000002
   ga('send', 'pageview');
 
 </script>
+
+
