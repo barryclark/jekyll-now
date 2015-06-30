@@ -69,6 +69,12 @@ gems:
 paginate: 5
 paginate_path: "/page/:num"
 
+# Collections Support
+collections:
+  portfolio:
+    output: true
+    permalink: /portfolio/:path/
+
 # Exclude these files from your production _site
 exclude:
     - Gemfile

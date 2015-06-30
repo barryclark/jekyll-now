@@ -1,0 +1,80 @@
+.post-date {
+
+	position: absolute;
+	left: -95px; top: 15px;
+
+	display: block;
+	font-family: $meta;
+	background: WHITE;
+	color: BLACK;
+	text-align: center;
+
+	width: 50px;
+
+}
+
+.post-date-anchor, .post-date-day, .post-date-month, .post-date-year {
+	display: block;
+}
+
+.post-date-anchor {
+	max-width: 100%;
+	margin: 0 auto;
+	& > svg {
+		max-width: 100%;
+		fill: BLACK;
+	}
+
+	&:hover svg{
+		-webkit-animation: tiltAnchor .5s linear;
+	}
+}
+
+.post-date-day {
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+
+.post-date-month {
+	font-size: 1rem;
+}
+
+.post-date-year {
+	font-size: .75rem;
+}
+
+@keyframes tiltAnchor {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	25% {
+		transform: rotate(80deg);
+	}
+
+	50% {
+		transform: rotate(-80deg);
+	}
+  
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+@media screen and (max-width: 910px) {
+	.post-date {
+		position: relative;
+		width: auto;
+		text-align: left;
+		left: 0; top: 0;
+		margin: -30px 0;
+	}
+
+	.post-date-anchor { display: none; }
+	.post-date-day, .post-date-month, .post-date-year {
+		display: inline-block;
+		font-size: 1rem;
+		font-weight: 500;
+		color: $gray;
+	}
+}

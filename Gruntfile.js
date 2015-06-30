@@ -4,52 +4,71 @@ module.exports = function(grunt){
 
 		pkg : grunt.file.readJSON('package.json'),
 
-		sass : {
-			
+		sass : {			
 			dist : {
-				
 				options : {
 					style : 'expanded',
-					sourcemap: true
+					sourcemap: true,
+					trace: true
 				},
 
 				files : [{
 					expand: true,
-					cwd: '_scss',
+					cwd: 'assets/sass',
 					src: [
 						'*.scss',
-						'*/*.scss'
+						'**/*.scss'
 					],
-					dest: 'css',
+					dest: 'assets/build/css',
 					ext: '.css'
 				}]
 			}
 		},
 
 		watch : {
-
-			css : {
-				
-				files : [
-					'_scss/*.scss',
-					'_scss/*/*.scss'
-				],
-				
+			sass : {				
+				files : ['assets/sass/**/*.scss'],
 				tasks : ['sass'],
-				
 				options : {
 					spawn: false,
 					livereload: true
 				}
+			},
+
+			js : {
+				files: ['assets/js/**/*.js'],
+				tasks: ['concat', 'uglify'],
+				options: {
+					spawn: false,
+					livereload: true
+				}
+			}
+		},
+
+		concat: {
+			javascript: {
+				files: {
+					'assets/build/js/main.js': ['assets/js/**/*.js']
+				}
+			}
+		},
+
+		uglify: {
+			javascript: {
+				files: {
+					'assets/build/js/main.min.js' : ['assets/build/js/main.js']
+				}
 			}
 		}
-
 	});
 
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks('grunt-contrib-concat');
+	grunt.loadNpmTasks('grunt-contrib-uglify');
 
-	grunt.registerTask('default', ['watch']);
-	grunt.registerTask('build', ['sass']);
+	grunt.registerTask('default', ['sass', 'concat', 'uglify']);
+	grunt.registerTask('local', ['sass', 'concat', 'uglify', 'watch']);
+	grunt.registerTask('build', ['default']);
 
 };

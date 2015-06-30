@@ -2,7 +2,20 @@
 layout: default
 ---
 
-<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/pages/homepage.css" />
+<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/build/css/pages/homepage.css" />
+
+{% if site.portfolio %}
+<ul class="portfolio-items">
+	{% for item in site.portfolio limit:3 %}
+	<li>
+		<a href="{{ item.link }}" class="portfolio-item">
+			<h3>{{ item.title }}</h3>
+			<img src="{{ item.image }}" />
+		</a>
+	</li>
+	{% endfor %}
+</ul>
+{% endif %}
 
 <div class="posts">
 	{% for post in paginator.posts %}
