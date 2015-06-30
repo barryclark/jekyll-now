@@ -2,6 +2,7 @@
 layout: default
 title: Cultivation Media
 permalink: /biofactory/annex/cultivation-media/
+alias: [/annex/cultivation-media]
 ---
 
 ## Cultivation Media
