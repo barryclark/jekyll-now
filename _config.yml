@@ -8,5 +8,8 @@ url: "http://code.waag.org" # the base hostname & protocol for your site
 twitter_username: waag
 github_username:  pietervanboheemen
 
+# Plugins
+safe: false
+
 # Build settings
 markdown: kramdown
