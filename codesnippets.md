@@ -70,10 +70,31 @@ permalink: /codesnippets/
 ##### Delete a block of text
 in normal mode, type ma at beginning of block and d'a at end of block. 
 "mark a" then "delete to a"
+##### Visual mode things
+esc v gets into visual mode
+y copies
+d cuts
+p pastes
 
+##### Navigating things
+in command mode:
+$ goes to end of the line
+shift-g to bottom of document
+gg to top of document
+e moves cursor forward faster
+ctrl-f forward a page
+ctrl-g back a page
+
+##### replacing
+Add /g to the end of the :s/a/b statement to replace multiple occurances of pattern in line
+Without /g, it will only replace the first occurance
+
+##### replace within a range of lines
+
+    :1,10s/a/b
 ##### Split two Ensembl identifiers between a number and a letter
 
-    :%s/[0-9]E/E\t/g
+    :%s/[0-9]E/E\t
 
 ex. ENS0000001ENS0000002 -> ENS0000001 ENS0000002
 
