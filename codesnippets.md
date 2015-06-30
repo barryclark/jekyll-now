@@ -26,6 +26,9 @@ permalink: /codesnippets/
     
         awk 'BEGIN { FS = OFS = "\t" } { for(i=1; i<=NF; i++) if($i ~ /^ *$/) $i = "NA" }; 1' file.tab > newfile.tab
 
+##### Or statement in grep
+        grep "cilia\|axone" genome.txt > ciliagenes.txt
+
 ##### Most recent 5 modified files
  
      ls -1t -l | head -5
@@ -39,6 +42,15 @@ permalink: /codesnippets/
      sed -i '1d' file.txt
 
 ### <font color="red">Bash script</font>
+
+##### Loop through files in  a directory
+
+        for f in out_*.txt
+        do
+               echo $f
+        done
+##### Append to a file
+        python test.py >> holder.txt
 
 ##### Command line arguments
 
@@ -76,12 +88,18 @@ ex. ENS0000001ENS0000002 -> ENS0000001 ENS0000002
 
         args = sys.argv[1:]
             
-    
+##### Check that there are the right number of command line arguments
+        if len(sys.argv) != 2:
+            print "Please provide infile as a command-line argument"
+
+
 ##### Check if one string contains another string
 
         if string1 in string 2:
             ...
 
+##### Get unique members of a list
+        uniqlist = list(set(nonUniqList)
 
 ##### Make a modified filename out of another filename
         g1 = open("20112015%s" % infile, "w")
@@ -177,6 +195,38 @@ ex. ENS0000001ENS0000002 -> ENS0000001 ENS0000002
      args<-commandArgs(TRUE)
      genename=args[1]
 
+##### Better R color palette (colorblind sensitive)
+
+        cbPalette <- c("#999999", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
+        # grey, orange, blue, forest green, banana yellow, navy blue, red, purplypink
+        #http://www.cookbook-r.com/Graphs/Colors_(ggplot2)/
+
+##### Get r.squared from a linear regression
+        a <- summary(lm(a ~ b), data =d)
+        a$r.squared
+##### Make r variables on the fly, and assign them values
+
+        ct <- 1
+        assign(paste("value.", ct, sep=""), 5)
+        ct <- ct + 1
+        assign(paste("value.", ct, sep=""), 10)
+        
+        #value.1 = 5
+        #value.2 = 10
+
+##### Make a bar chart with colored groups
+        r.vals <- c(value.1a, value.2a, value.1b, value.2b)  #values
+        r.names<-c(r.1, r.2, r.3, r.4)  #names
+        groups <- c("group1", "group2", "group1", "group2" #categories
+        df <- data.frame(r.square = vals, names = factor(r.names, levels=r.names), groups)
+        cbbPalette <- c("#000000", "#E69F00") #black and orange
+        scale_fill_manual(values=cbbPalette)
+        a<-ggplot(aes(x = names, y = r.square), data = df) +
+            geom_bar(stat = 'identity', aes(fill=rows)) +
+            ylab(expression(paste("Variance Explained (R"^"2", ')', sep=''))) +
+            xlab("Predictor Variables") + scale_fill_manual(values=cbbPalette) +
+            theme(axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1)) +
+            scale_y_continuous(limits = c(0, 0.3))
 
 ##### Make binary black and white heatmap on table of 1's and blanks 
 
