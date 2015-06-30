@@ -21,7 +21,7 @@ The github for the bioreactor can be found [here](https://github.com/BioHackAcad
 * Magnetic stirrer
 * [Arduino program](https://github.com/BioHackAcademy/BHA_Bioreactor/tree/master/Arduino/Bioreactor), with a connection system to connect pumps and other devices.
 * [Bioreactor control program](https://github.com/BioHackAcademy/BHA_Bioreactor/blob/master/BioreactorControl/BioreactorControl.pde) written in Processing
-* 2X Mosfet circuit (see below, one for fan, and one for heating pad) ![circuit](https://raw.githubusercontent.com/BioHackAcademy/BHA_Bioreactor/master/mosfet%20circuit.jpg)
+* 2X Mosfet circuit (see below, one for fan, and one for heating pad) ![circuit](/biofactory/class/9/mosfet circuit.jpg)
 
 ## Control program
 
