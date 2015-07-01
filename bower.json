@@ -1,0 +1,13 @@
+{
+  "name": "jordanforeman.com",
+  "version": "1.0.0",
+  "homepage": "https://github.com/JordanForeman/jordanforeman.github.io",
+  "authors": [
+    "Jordan Foreman <thejordanforeman@gmail.com>"
+  ],
+  "description": "front end dependencies for jordanforeman.com",
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "~2.1.4"
+  }
+}
