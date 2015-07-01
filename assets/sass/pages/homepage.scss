@@ -3,3 +3,19 @@
 @import "../partials/components/date";
 @import "../partials/components/article";
 @import "../partials/components/portfolio";
+
+.header--homepage {
+	position: relative;
+
+	background: black;
+	height: 100vh;
+
+	padding: 0 20px;
+
+	img {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		max-width: 100%;
+	}
+}

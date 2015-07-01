@@ -1,0 +1,27 @@
+.nav--topnav {
+	position: fixed;
+	z-index: 1;
+	top: 0; left: 0;
+
+	display: block;
+	width: 100%;
+	height: $topnav-height;
+
+	background: WHITE;
+	text-align: center;
+	font-family: $helveticaNeue;
+
+	a {
+		color: $purple;
+	}
+
+	ul {
+		list-style-type: none;
+		padding: 0;
+	}
+
+	li {
+		display: inline-block;
+		padding: 0;
+	}
+}

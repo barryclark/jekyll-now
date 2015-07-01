@@ -5,6 +5,7 @@
 
 // Colors
 $blue: #4183C4; 
+$purple: #6441a5;
 
 // Grays
 $black: #000;
@@ -20,6 +21,9 @@ $helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $georgia: Georgia, serif;
 $meta: ff-meta-web-pro, sans-serif;
 $skolar: skolar, serif;
+
+// Sizes
+$topnav-height: 50px;
 
 // Mobile breakpoints
 @mixin mobile {

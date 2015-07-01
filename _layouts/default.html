@@ -25,7 +25,34 @@
 		<!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
 	</head>
 
-	<body>
+	<body class="{{page.pagetype}}">
+		
+		<nav class="nav--topnav">
+			<ul>
+				<li>
+					<a href="#">About</a>
+				</li>
+				<li>
+					<a href="#">Blog</a>
+				</li>
+				<li>
+					<a href="#">Web</a>
+				</li>
+				<li>
+					<a href="#">Video</a>
+				</li>
+				<li>
+					<a href="#">Podcasts</a>
+				</li>
+			</ul>	
+		</nav>
+
+		{% if page.pagetype == 'homepage' %}
+		<header class="header--homepage">
+			<img src="/images/svg/logo_white.svg" alt="Jordan Foreman"> 
+		</header>
+		{% endif %}
+
 		<div class="wrapper-masthead">
 			<div class="container">
 				<header class="masthead clearfix">
