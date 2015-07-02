@@ -10,7 +10,7 @@ Soy blogger freelance dedicado a la tecnología. Anteriormente en  [Fayerwayer](
 
 Ex-Hipertextual, desde 2005 a finales de 2012 ocupé varios cargos de coordinación, contenidos y diseño, aunque actualmente mi papel es meramente la de socio en la empresa.
 
-Algunos enlaces en redes sociales: [Twitter](http://twitter.com/mcontreras), [Flickr](http://flickr.com/people/mc/) o [Instagram](http://instagram.com/mcontreras).
+Algunos enlaces en redes sociales: [Twitter](http://twitter.com/mcontreras) o [Instagram](http://instagram.com/mcontreras).
 
 ## Contacto
 
