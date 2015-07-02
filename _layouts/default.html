@@ -48,10 +48,7 @@
 		</nav>
 
 		{% if page.pagetype == 'homepage' %}
-		<header class="header--homepage">
-			<img src="/images/svg/logo_white.svg" alt="Jordan Foreman">
-			<span><!-- SUBHEADING ANIMATION HOOK --></span>
-		</header>
+			{% include components/siteHeader.html %}
 		{% endif %}
 
 		<div class="wrapper-masthead">

@@ -71,4 +71,8 @@ module.exports = function(grunt){
 	grunt.registerTask('local', ['sass', 'concat', 'uglify', 'watch']);
 	grunt.registerTask('build', ['default']);
 
+	// TODO: build some helpful tasks
+	grunt.registerTask('install', []);
+	grunt.registerTask('update', []);
+
 };

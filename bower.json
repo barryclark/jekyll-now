@@ -8,6 +8,6 @@
   "description": "front end dependencies for jordanforeman.com",
   "license": "MIT",
   "dependencies": {
-    "jquery": "~2.1.4"
+    "jquery": "#2.1.4"
   }
 }
