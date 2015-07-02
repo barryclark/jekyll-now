@@ -4,22 +4,20 @@ title: Acerca de
 permalink: /about/
 ---
 
-<img src="http://f.cl.ly/items/07142w0z2T2r1x2S0K2H/avatar.jpg" alt="Manu Contreras" class="alignright" width="200">Soy Manu Contreras (Madrid, 1984), principalmente escribo sobre tecnología, diseño, TV y cultura pop para varios medios en internet, además de colaborar esporádicamente en medios tradicionales como [La Tercera](http://www.latercera.com/).
+Soy Manu Contreras (Madrid, 1984), principalmente escribo sobre tecnología, diseño, TV y cultura popular para varios medios en internet, además de colaborar esporádicamente en medios tradicionales.
 
-Actualmente escribo en varios medios como [Fayerwayer](http://www.fayerwayer.com/author/mcontreras/), [Wayerless](http://www.wayerless.com/author/mcontreras/) de _Betazeta Networks_ y [Sony Mobile Blog](http://blogs.sonymobile.com/es/ "Sony Mobile Blog"), anteriormente en [TecnoXplora](http://www.antena3.com/tecnoxplora/) del grupo _Atresmedia_.
+Soy blogger freelance dedicado a la tecnología. Anteriormente en  [Fayerwayer](http://www.fayerwayer.com/author/mcontreras/), o [Wayerless](http://www.wayerless.com/author/mcontreras/) de _Betazeta Networks_ y [Sony Mobile Blog](http://blogs.sonymobile.com/es/ "Sony Mobile Blog"). También he colaborado como columnista en [TecnoXplora](http://www.antena3.com/tecnoxplora/) del grupo _Atresmedia_.
 
 Ex-Hipertextual, desde 2005 a finales de 2012 ocupé varios cargos de coordinación, contenidos y diseño, aunque actualmente mi papel es meramente la de socio en la empresa.
 
-Algunos enlaces en redes sociales: [Twitter](http://twitter.com/mcontreras), [Flickr](http://flickr.com/people/mc/) o [Instagram](http://instagram.com/mcontreras).
+Algunos enlaces en redes sociales: [Twitter](http://twitter.com/mcontreras), [Flickr](http://flickr.com/people/mc/) o [Instagram](http://instagram.com/mcontreras).
 
 ## Contacto
 
 Varias formas de contactarme:
 
 *   Email: **manu@contreras.cc**
-*   Gtalk: **manu@contreras.cc**
 *   Skype: **manucontreras**
-*   Twitter (DM): [**@mcontreras**](https://twitter.com/mcontreras)
 
 ## Clave pública PGP
 
