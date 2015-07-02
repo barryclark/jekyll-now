@@ -17,6 +17,7 @@ Algunos enlaces en redes sociales: [Twitter](http://twitter.com/mcontreras), [Fl
 Varias formas de contactarme:
 
 *   Email: **manu@contreras.cc**
+*   Telegram: **[@mcontreras](http://telegram.me/mcontreras)**
 *   Skype: **manucontreras**
 
 ## Clave pública PGP
