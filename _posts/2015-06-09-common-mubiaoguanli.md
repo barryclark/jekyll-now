@@ -84,3 +84,5 @@ tags: [管理学]
     [目标管理 66 ppt](http://wenku.baidu.com/view/da05df62a98271fe910ef91f.html?re=view)
     
     [目标管理 98 ppt](http://wenku.baidu.com/view/c1403c8771fe910ef12df82b.html)
+    
+    [目标与计划管理*](http://wenku.baidu.com/view/b71fbb0090c69ec3d5bb75a2.html?re=view)
