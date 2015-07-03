@@ -15,20 +15,14 @@ Some facts about me
 
 Beyond coding and mining data, I like 
 
-Traveling and Backpacking
- :Roadtrip is always fun! I also had been an international volunteer working at a NGO in Indonesia. Looking forward to explore more places in the world!
-Music 
- :English: Radiohead, Wild Child, Rachael Yamagata  
- :Chinese: Jay Chou，Eason(陈奕迅），陈粒, Beyond
-Movie
-Book
+-  Traveling and Backpacking
+   Roadtrip is always fun! I also had been an international volunteer working at a NGO in Indonesia. Looking forward to explore   more places in the world!
+-  Music 
+   English: Radiohead, Wild Child, Rachael Yamagata  
+   Chinese: Jay Chou，Eason(陈奕迅），陈粒, Beyond
+-  Movie
+-  Book
 
-apples
-  : Good for making applesauce.
-oranges
-  : Citrus!
-tomatoes
-  : There's no "e" in tomatoe.
 
 ### Contact me
 [jpzhang@ucdavis.edu](mailto:jpzhang@ucdavis.edu)
