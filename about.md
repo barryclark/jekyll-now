@@ -20,11 +20,12 @@ Beyond coding and mining data, I like
     Roadtrip is always fun! I also had been an international volunteer working at a NGO in Indonesia. Looking forward to explore more places in the world!
 -  Music 
 
-    English: Radiohead, Wild Child, Rachael Yamagata  
-    Chinese: Jay Chou，Eason(陈奕迅），陈粒, Beyond
+    English: Radiohead, Wild Child, Rachael Yamagata ... 
+    Chinese: Jay Chou，Eason(陈奕迅），陈粒, Beyond ...
 -  Movie
 -  Book
 
+(to be continued)
 
 ### Contact me
 [jpzhang@ucdavis.edu](mailto:jpzhang@ucdavis.edu)
