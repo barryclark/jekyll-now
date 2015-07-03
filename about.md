@@ -23,5 +23,12 @@ Music
 Movie
 Book
 
+apples
+  : Good for making applesauce.
+oranges
+  : Citrus!
+tomatoes
+  : There's no "e" in tomatoe.
+
 ### Contact me
 [jpzhang@ucdavis.edu](mailto:jpzhang@ucdavis.edu)
