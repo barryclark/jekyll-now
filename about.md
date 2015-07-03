@@ -8,18 +8,19 @@ I'm a graduate student at UC Davis majoring Statistics. I am learning and practi
 
 ### More Information
 Some facts about me
-
-* Born in Shantou, a costal city in South China. 
-* Foodie 
-* Learning web design and javascript programming
+- Born in Shantou, a costal city in South China. 
+- Foodie 
+- Learning web design and javascript programming
 
 Beyond coding and mining data, I like 
 
-* Traveling and Backpacking
-..Roadtrip is always fun! I also had been an international volunteer working at a NGO in Indonesia. Looking forward to explore more places in the world!
-* Music and Movies
-.. English: Radiohead, Wild Child, Rachael Yamagata ... 
-.. Chinese: Jay Chou，Eason(陈奕迅），陈粒, Beyond ...
+- Traveling and Backpacking
+...Roadtrip is always fun! I also had been an international volunteer working at a NGO in Indonesia. Looking forward to explore more places in the world!
+- Music 
+..* English: Radiohead, Wild Child, Rachael Yamagata ... 
+..* Chinese: Jay Chou，Eason(陈奕迅），陈粒, Beyond ...
+- Movie
+- Book
 
 ### Contact me
 [jpzhang@ucdavis.edu](mailto:jpzhang@ucdavis.edu)
