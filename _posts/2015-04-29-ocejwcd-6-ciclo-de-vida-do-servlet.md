@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "[OCEJWCD 6] - Ciclo de Vida do Servlet"
+permalink: "/2015/04/ocejwcd-6-ciclo-de-vida-do-servlet.html"
 categories: [java, certificação, ocejwcd]
 ---
 

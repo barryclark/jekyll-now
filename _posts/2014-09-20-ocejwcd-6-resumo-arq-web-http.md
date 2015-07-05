@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "[OCEJWCD 6] - Resumo da Arquitetura Web e o Protocolo HTTP"
+permalink: "/2014/09/ocejwcd-6-resumo-da-arquitetura-web-e-o.html"
 categories: [java, certificação, ocejwcd]
 ---
 

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "[OCEJWCD 6] - Iniciando Estudos"
+permalink: "/2014/09/ocejwcd-6-iniciando-estudos.html"
 categories: [java, certificação, ocejwcd]
 ---
 Após procrastinar por muito tempo os estudos para a certificação (e deixar meu blog abandonado), devido ao trabalho e "desculpinhas" que sempre encontro para justificar a preguiça, decidi retomar os estudos e ao mesmo tempo movimentar meu blog.

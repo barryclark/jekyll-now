@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "[OCEJWCD 6] - Respondendo o cliente"
+permalink: "/2015/04/ocejwcd-6-respondendo-o-cliente.html"
 categories: [java, certificação, ocejwcd]
 ---
 

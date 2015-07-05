@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Aprendendo GO/GOLANG"
+permalink: "/2015/04/aprendendo-gogolang.html"
 categories: [go, golang, programação]
 ---
 

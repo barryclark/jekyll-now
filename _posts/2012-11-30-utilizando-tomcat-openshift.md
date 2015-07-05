@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Utilizando Tomcat 6 nas nuvens com o OpenShift
+title: "Utilizando Tomcat 6 nas nuvens com o OpenShift"
+permalink: "/2014/09/ocejwcd-6-iniciando-estudos.html"
 categories: [java, dicas, tomcat, openshift]
 ---
 Recentemente tive a vontade de colocar meu currículo on-line disponível em meu domínio principal (www.ivanqueiroz.com) e para isso tive a idéia de utilizar a plataforma Openshift da Red Hat. Para quem não conhece trata-se de uma plataforma como serviço (PaaS) de computação em nuvem, que possui suporte a várias plataformas (Java, Node.js, PHP, Python, Perl e Ruby) fornecendo a infra-estrutura  para o desenvolvimento, teste, construção e execução de aplicativos. A solução possui planos gratuitos (a utilizada nesse artigo) e pagos, para quem quer um suporte mais robusto.
