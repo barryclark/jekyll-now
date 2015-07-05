@@ -11,4 +11,4 @@ Para o estudo vou utilizar o livro OCEJWCD Study Companion que um amigo meu me e
 
 Um abraço e até a próxima!
 
-![OCEJWCD Study Companion]({{ site.baseurl }}/images/20140906/capa_ocejwcd_guia.jpeg)
+{% include image.html url="/images/20140906/capa_ocejwcd_guia.jpeg" description="OCEJWCD Study Companion" %}
