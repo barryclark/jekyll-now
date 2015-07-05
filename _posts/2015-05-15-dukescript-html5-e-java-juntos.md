@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "DukeScript - HTML5 e Java juntos"
+permalink: "/2015/05/dukescript-html5-e-java-juntos.html"
 categories: [java, dukescript, html5]
 ---
 
