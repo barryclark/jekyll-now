@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: Sobre
 permalink: /about/
 ---
 Programador, desenvolvedor, analista de sistemas e pai de Carolina.
