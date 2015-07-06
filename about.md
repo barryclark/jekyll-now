@@ -13,6 +13,7 @@ The team behind the first edition consists of:
 * Maria Boto Ordoñez (biotech assistant)
 * Hany Saad (fabrication assistant)
 * Veit Penzenstadler (fabrication assistant)
+* Jelmer Cnossen (prototyping)
 
 You can find more information on [waag.org/biohackacademy](http://www.waag.org/biohackacademy)
 
