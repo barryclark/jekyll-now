@@ -31,13 +31,26 @@ However, it is still a little bit annoying as one has to go in various [location
 
 The following table gives an overview of the various items
 
-| Item type          | Size \(in bytes\)  | Comments                                                                              |
-| ------------------ | ---------------- | ------------------------------------------------------------------------------------- |
-| Node               | 15               | Per node instance                                                                     |
-| Relationship       | 34               | Per relationship                                                                      |
-| Property           | 41               | Each property value, including strings                                                |
-| String value       | 128              | Strings take up whole blocks of 128b                                                  |
-| Indexed property   | 1/3 \* AVG(X)     | Each index entry is approximately 1/3 of the average property value size              |
+<table>
+    <tr>
+        <th>Item type</th><th>Size (in bytes)</th><th>Comments</th>    
+    </tr>
+    <tr>
+        <td>Node</td><td>15</td><td>Per node instance</td>
+    </tr>
+    <tr>
+        <td>Relationship</td><td>34</td><td>Per relationship</td>
+    </tr>
+    <tr>
+        <td>Property</td><td>41</td><td>Each property value, including strings </td>
+    </tr>
+    <tr>
+        <td>String value</td><td>128</td><td>Strings take up whole blocks of 128b</td>
+    </tr>
+    <tr>
+        <td>Indexed property</td><td>1/3 * AVG(X)</td><td>Each index entry is approximately 1/3 of the average property value size</td>
+    </tr>
+</table>
 
 
 ## Example calculation
@@ -121,15 +134,29 @@ So for this tiny dataset we have
 * ...16 of which are string values
 * 8 index entries
 
-
-| Item type          | Multiplied       | Result \(in bytes\)                                                                         |
-| ------------------ | ---------------- | ----------------------------------------------------------------------------------------- |
-| Node               | 3 \* 15           | 45                                                                                        |
-| Relationship       | 2 \* 34           | 68                                                                                        |
-| Property           | 24 \* 41          | 984                                                                                       |
-| String value       | 16 \* 128         | 2048 (all values are small so only one 120b chunk required)                               |
-| Indexed property   | 8 \* 1.5          | 12 (average value length is ~4 bytes and Lucene calculations assume 1/3 of that per entry) |
-| **Total**          |                  | **3157**                                                                                  |
+<table>
+    <tr>
+        <th>Item type</th><th>Multiplied</th><th>Result (in bytes) </th>
+    </tr>
+    <tr>
+        <td>Node</td><td>3 * 15</td><td>45</td>
+    </tr>
+    <tr>
+        <td>Relationship</td><td>2 * 34</td><td>68</td>
+    </tr>
+    <tr>
+        <td>Property</td><td>24 * 41</td><td>984</td>
+    </tr>
+    <tr>
+        <td>String value</td><td>16 * 128</td><td>2048 (all values are small so only one 120b chunk required)</td>
+    </tr>
+    <tr>
+        <td>Indexed property</td><td>8 * 1.5</td><td>12 (average value length is ~4 bytes and Lucene calculations assume 1/3 of that per entry)</td>
+    </tr>
+    <tr>
+        <td><b>Total</b></td><td></td><td><b>3157</b></td>
+    </tr>
+</table>
 
 So, the Neo4J database folder storing our model, will be around 3Kb on disk (provided we ignore logs and other housekeeping files) 
 
