@@ -31,13 +31,13 @@ However, it is still a little bit annoying as one has to go in various [location
 
 The following table gives an overview of the various items
 
-| Item type          | Size (in bytes)  | Comments                                                                              |
-| -------------------| -----------------| --------------------------------------------------------------------------------------|
+| Item type          | Size \(in bytes\)  | Comments                                                                              |
+| ------------------ | ---------------- | ------------------------------------------------------------------------------------- |
 | Node               | 15               | Per node instance                                                                     |
 | Relationship       | 34               | Per relationship                                                                      |
 | Property           | 41               | Each property value, including strings                                                |
 | String value       | 128              | Strings take up whole blocks of 128b                                                  |
-| Indexed property   | 1/3 * AVG(X)     | Each index entry is approximately 1/3 of the average property value size              |
+| Indexed property   | 1/3 \* AVG(X)     | Each index entry is approximately 1/3 of the average property value size              |
 
 
 ## Example calculation
@@ -122,20 +122,20 @@ So for this tiny dataset we have
 * 8 index entries
 
 
-| Item type          | Multiplied       | Result (in bytes)                                                                         |
-| -------------------| -----------------| ------------------------------------------------------------------------------------------|
-| Node               | 3 * 15           | 45                                                                                        |
-| Relationship       | 2 * 34           | 68                                                                                        |
-| Property           | 24 * 41          | 984                                                                                       |
-| String value       | 16 * 128         | 2048 (all values are small so only one 120b chunk required)                               |
-| Indexed property   | 8 * 1.5          | 12 (average value length is ~4 bytes and Lucene calculations assume 1/3 of that per entry) |
+| Item type          | Multiplied       | Result \(in bytes\)                                                                         |
+| ------------------ | ---------------- | ----------------------------------------------------------------------------------------- |
+| Node               | 3 \* 15           | 45                                                                                        |
+| Relationship       | 2 \* 34           | 68                                                                                        |
+| Property           | 24 \* 41          | 984                                                                                       |
+| String value       | 16 \* 128         | 2048 (all values are small so only one 120b chunk required)                               |
+| Indexed property   | 8 \* 1.5          | 12 (average value length is ~4 bytes and Lucene calculations assume 1/3 of that per entry) |
 | **Total**          |                  | **3157**                                                                                  |
 
 So, the Neo4J database folder storing our model, will be around 3Kb on disk (provided we ignore logs and other housekeeping files) 
 
 ## A calculation template
  
-Let's consider the following example model to store in Neo4J; 
+Let's consider the following example model to store in Neo4J. 
 
 ![Example model][8]
 
@@ -180,6 +180,6 @@ I hope you find it useful.
    [6]: https://lucidworks.com/blog/estimating-memory-and-storage-for-lucenesolr/
    [7]: http://neo4j.com/docs/stable/
    [8]: {{ site.baseurl }}/images/capacity-planning/example_model.png
-   [9]: {{ site.baseurl }}/images/capacity-planning/capacity_planning_excel.png
-   [10]: {{ site.baseurl }}/resource/capacity-planning/example-neo4j-capacity-planning.xls
+   [9]: {{ site.baseurl }}/images/capacity-planning/capacity-planning-excel.png
+   [10]: {{ site.baseurl }}/resources/capacity-planning/example-neo4j-capacity-planning.xls
    [11]: {{ site.baseurl }}/images/capacity-planning/vb_macro.png
