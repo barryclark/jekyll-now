@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Prepress Class
-permalink: /Prepress/
+permalink: /prepress/
 ---
 
 
