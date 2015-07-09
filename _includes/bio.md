@@ -1,4 +1,4 @@
-I'm a Junior in [Mechanical Engineering](http://mechanical.illinois.edu/) at the [University of Illinois at Urbana-Champaign](http://illinois.edu/). I'm currently studying Sustainability Engineering and Computational Fluid Dynamics at [KTH Royal Institute of Technology](https://www.kth.se/) in Stockholm, Sweden. 
+I'm a Junior in [Mechanical Engineering](http://mechanical.illinois.edu/) at the [University of Illinois at Urbana-Champaign](http://illinois.edu/). I'm currently studying Sustainability Engineering and Computational Fluid Dynamics at [KTH Royal Institute of Technology](https://www.kth.se/) in Stockholm, [Sweden](http://sweden.jbuckland.com). 
 
 In the past, I've seen employment as:
 
