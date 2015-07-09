@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<div class="blog-page-wrapper">
+  {% for post in site.posts %}
+    <article class="container posts">
+      <!-- {{ content }} -->
+      <h3 class="post-title">
+        <a href="{{ post.url }}">{{ post.title }}</a></h3>
+      <p class="post-date">{{ post.date | date: "%d %B %Y" }}</p>
+
+      <article class="post">
+        {{ post.excerpt }}
+      </article>
+    </article>
+  {% endfor %}
+</div>

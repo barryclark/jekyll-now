@@ -22,6 +22,9 @@ body {
   background: rgb(245,245,245);
   font: 18px/1.4 $helvetica;
   color: $darkGray;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 .container {
@@ -246,6 +249,7 @@ img {
 
 .top.top-blog, .top-work {
   position: relative;
+  flex: 1 0 auto;
 
   .gradient {
     position: absolute;
@@ -491,14 +495,14 @@ nav {
 
 @keyframes fly-in-from-left {
   from {
-    transform: translateY(15rem) rotate(15deg);
+    transform: translateY(15rem);
     opacity: 0;
   }
 }
 
 @keyframes fly-in-from-right {
   from {
-    transform: translateY(15rem) rotate(-15deg);
+    transform: translateY(15rem);
     opacity: 0;
   }
 }
@@ -580,41 +584,88 @@ nav {
   margin-top: 40px;
   border-top: 1px solid rgb(248,248,248);
   background: rgb(253,253,253);
+  /* flex: none; */
 }
 
 footer {
   padding: 10px 0;
   font-size: 14px;
   color: rgba(0,0,0,0.6);
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
+
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
   span {
-    margin-right: 40px;
+    flex: 1;
+    flex-direction: row;
+    margin-bottom: 2%;
   }
 
-  a {
-    padding-left: 10px;
-    padding-right: 10px;
+  .contact-container {
+    flex: 1;
+    flex-direction: row;
+
+    a {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
   }
+
+} // footer
+
+/* blog */
+
+.blog-page-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 40px auto 0;
+  max-width: 90%;
+
+  @include mobile {
+    max-width: 90%;
+    margin-top: 20px;
+  }
+}
+
+.container.blog {
+  max-width: initial; // cancel default
+
+  width: 48%;
+  margin: 0 auto 2%;
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+
+  @include mobile {
+    min-width: 100%;
+    margin-bottom: 5%;
+  }
+
+  .post-title {
+    padding: 0 5%;
+  }
+
+  .post-date {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 14px;
+    padding-left: 5%;
+  }
+
+  .post {
+    margin-bottom: auto;
+    padding: 0 5% 5%;
+
+    p {
+      font-size: 16px;
+      margin: 10px 0;
+    }
+  }
+
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS

@@ -24,7 +24,7 @@
 
       {{ content }}
 
-    </section>  
+    </section>
 
     {% include analytics.html %}
 
@@ -32,7 +32,11 @@
       <div class="container">
         <footer class="footer">
           <span>&copy; {{ site.time | date: '%Y' }} Dawit Elias. All rights reserved.</span>
-          {% include svg-icons.html %}
+          <div class="contact-container">
+            <a href="#">email icon</a>
+            <a href="#">linkedin icon</a>
+            <a href="#">facebook icon</a>
+          </div>
         </footer>
       </div>
     </div>

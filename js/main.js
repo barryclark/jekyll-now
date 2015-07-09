@@ -3,6 +3,7 @@
   var nav_a = document.querySelectorAll(".navbar a");
   var node;
   var i;
+  var blogEntries = document.querySelectorAll(".container.posts");
 
   switch (window.location.pathname) {
 
@@ -13,6 +14,11 @@
       for (i=0; i < nav_a.length; i++) {
         node = nav_a[i];
         node.style.color = "rgba(0,0,0,0.5)";
+      }
+
+      for (i=0; i < blogEntries.length; i++) {
+        node = blogEntries[i];
+        node.classList.add("blog");
       }
 
       break;
@@ -43,7 +49,7 @@
         node = nav_a[i];
         node.style.color = "rgba(0,0,0,0.5)";
       }
-      
+
       break;
   }
 
