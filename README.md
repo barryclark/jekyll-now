@@ -129,6 +129,10 @@ Where it says `johnotander@icloud.com`, you will need to change that to the emai
 
 More setup instructions and advanced options can be found at [http://formspree.io](http://formspree.io/)
 
+### Customizing the CSS
+
+All variables can be found in the `_sass/_variables.scss` file, toggle these as you'd like to change the look and feel of Pixyll.
+
 ### Page Animation
 
 If you would like to add a [fade-in-down effect](http://daneden.github.io/animate.css/), you can add `animated: true` to your `_config.yml`.
