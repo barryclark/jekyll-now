@@ -1,4 +1,4 @@
-Copyright (c) 2014 John Otander
+Copyright (c) 2014-2015 John Otander
 
 MIT License
 

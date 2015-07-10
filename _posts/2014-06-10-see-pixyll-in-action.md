@@ -16,10 +16,10 @@ works if <del>for some reason you need to update your post</del>. For consistenc
 
 ### Code, with syntax highlighting
 
-Code blocks use the [solarized](http://ethanschoonover.com/solarized) theme. Both the light and
-dark versions are included, so you can swap them out easily. _Solarized Dark_ is the default.
+Here's an example of some ruby code with line anchors.
 
-{% highlight ruby %}
+{% highlight ruby lineanchors %}
+# The most awesome of classes
 class Awesome < ActiveRecord::Base
   include EvenMoreAwesome
 
@@ -29,8 +29,23 @@ class Awesome < ActiveRecord::Base
   def initialize(email, name = nil)
     self.email = email
     self.name = name
+    self.favorite_number = 12
+    puts 'created awesomeness'
+  end
+
+  def email_format
+    email =~ /\S+@\S+\.\S+/
   end
 end
+{% endhighlight %}
+
+Here's some CSS:
+
+{% highlight css %}
+.foobar {
+  /* Named colors rule */
+  color: tomato;
+}
 {% endhighlight %}
 
 # Headings!

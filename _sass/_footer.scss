@@ -1,0 +1,19 @@
+.site {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.site-wrap {
+  flex: 1;
+}
+
+footer {
+  background-color: $footer-bg-color;
+  border-top: $footer-border-top;
+  color: $footer-color;
+  font-size: $footer-font-size;
+  font-weight: $footer-font-weight;
+  padding: $footer-padding;
+  text-align: center;
+}

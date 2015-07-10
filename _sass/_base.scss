@@ -1,0 +1,30 @@
+@charset "UTF-8";
+/*!
+
+Pixyll
+
+A simple, beautiful theme for Jekyll that emphasizes content rather than
+aesthetic fluff.
+
+Built upon BASSCSS (http://jxnblk.github.io/basscss).
+
+Crafted with <3 by John Otander (@4lpine) - ©2015 John Otander
+MIT License http://opensource.org/licenses/MIT
+
+*/
+
+html, body {
+  height: auto;
+  min-height: 100%;
+}
+
+img {
+  width: auto;
+  max-width: 100%;
+}
+
+body {
+          box-sizing: border-box;
+     -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}

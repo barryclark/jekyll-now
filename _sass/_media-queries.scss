@@ -1,0 +1,25 @@
+@media screen and (min-width: $viewport-small) {
+  h1,
+  .h1 {
+    font-size: 2.998rem;
+  }
+}
+
+@media screen and (min-width: $viewport-small) {
+  .site-header {
+    text-align: left;
+  }
+
+  .site-header .site-title {
+    float: left;
+  }
+
+  .site-header .site-nav {
+    float: right;
+  }
+
+  blockquote {
+    margin-left: $space-3;
+    padding: $space-3;
+  }
+}
