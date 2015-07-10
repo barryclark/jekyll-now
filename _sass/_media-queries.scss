@@ -1,11 +1,13 @@
 @media screen and (min-width: $viewport-small) {
+  html {
+    font-size: 16px;
+  }
+
   h1,
   .h1 {
     font-size: 2.998rem;
   }
-}
 
-@media screen and (min-width: $viewport-small) {
   .site-header {
     text-align: left;
   }
@@ -21,5 +23,17 @@
   blockquote {
     margin-left: $space-3;
     padding: $space-3;
+  }
+}
+
+@media screen and (min-width: $viewport-medium) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: $viewport-large) {
+  html {
+    font-size: 20px;
   }
 }
