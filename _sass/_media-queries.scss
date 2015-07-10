@@ -5,38 +5,16 @@
   }
 }
 
-@media screen and (min-width: $viewport-medium) {
+@media screen and (min-width: $viewport-small) {
+  .site-header {
+    text-align: left;
+  }
+
   .site-header .site-title {
     float: left;
-  }
-}
-
-// TODO FIX ME TO BE MOBILE FIRST
-@media screen and (max-width: $viewport-medium) {
-  blockquote {
-    margin-left: 1rem;
-    margin-right: 0;
-    padding: 0.5em;
-  }
-
-  .site-header {
-    text-align: center;
-  }
-
-  .site-header .site-title {
-    float: center;
   }
 
   .site-header .site-nav {
-    width: 100%;
-    float: left;
-    text-align: center;
-    margin-top: 0.666em;
-    margin-bottom: 1.333em;
-  }
-
-  .social-icons .left, .social-icons .right {
-    text-align: center;
-    float: none;
+    float: right;
   }
 }

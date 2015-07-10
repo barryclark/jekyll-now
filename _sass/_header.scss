@@ -4,7 +4,7 @@
 }
 
 .site-header nav a {
-  font-size: 1rem;
+  font-size: $h6;
   color: #666;
 }
 
@@ -30,4 +30,23 @@
 .posts .post a:hover .post-title,
 .posts .post a:hover .post-summary {
   opacity: 0.88;
+}
+
+.site-header {
+  text-align: center;
+}
+
+.site-header .site-title {
+  float: center;
+}
+
+.site-header .site-nav {
+  text-align: center;
+  margin-top: 0.666em;
+  margin-bottom: 1.333em;
+}
+
+.social-icons .left, .social-icons .right {
+  text-align: center;
+  float: none;
 }
