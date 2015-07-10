@@ -1,10 +1,10 @@
 .site-header a {
   color: #333;
+  font-size: $h3;
   font-weight: 300;
 }
 
 .site-header nav a {
-  font-size: $h6;
   color: #666;
 }
 
@@ -42,8 +42,6 @@
 
 .site-header .site-nav {
   text-align: center;
-  margin-top: 0.666em;
-  margin-bottom: 1.333em;
 }
 
 .social-icons .left, .social-icons .right {
