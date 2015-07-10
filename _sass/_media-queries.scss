@@ -1,14 +1,11 @@
-@media screen and (min-width: $viewport-large) {
-  html {
-    font-size: 20px;
+@media screen and (min-width: $viewport-small) {
+  h1,
+  .h1 {
+    font-size: 2.998rem;
   }
 }
 
 @media screen and (min-width: $viewport-medium) {
-  html {
-    font-size: 18px;
-  }
-
   .site-header .site-title {
     float: left;
   }
