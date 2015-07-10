@@ -12,7 +12,12 @@
     text-align: left;
   }
 
+  .site-header a {
+    font-size: $h4;
+  }
+
   .site-header .site-title {
+    font-size: $h3;
     float: left;
   }
 
