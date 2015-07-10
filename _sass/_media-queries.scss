@@ -17,4 +17,9 @@
   .site-header .site-nav {
     float: right;
   }
+
+  blockquote {
+    margin-left: $space-3;
+    padding: $space-3;
+  }
 }
