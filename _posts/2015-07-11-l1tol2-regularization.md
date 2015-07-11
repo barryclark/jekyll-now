@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 title:  "L1正则化优化问题的一种求解方法"
 date:   2015-07-11 20:05
@@ -70,7 +70,7 @@ $$
 	
 所以上面的迭代算法能保证目标函数$F(\theta)$单调下降。下面的图给出了直观理解：
 
-![迭代算法直观解释][l2tol1]
+![迭代算法直观解释][l1tol2]
 
 当然，因为是迭代求解，整个求解算法可能效率并不高。欢迎有经验的同学给出更详细的说明。
 
@@ -78,12 +78,12 @@ $$
 更详细的资料可见参考文献[^graph_ml]。
 
 
-[l2tol1]: /images/l2tol1.png "迭代算法直观解释"
+[l1tol2]: /images/l1tol2.png "迭代算法直观解释"
 
 #References
 
 [^g_inverse_matrix]: [广义逆矩阵](http://baike.baidu.com/view/2597901.htm)。
-[^graph_ml]: 杉山将，《图解机器学习》第5.3节，2015。
+[^graph_ml]: 杉山将，《图解机器学习》第5.2节，2015。
 
 
 
