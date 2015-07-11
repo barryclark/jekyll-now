@@ -16,3 +16,6 @@ permalink: /:year/:month/:day/breezedeus-:title.html
 
 # new
 #comments: true
+
+#paginate: 5
+#paginate_path: "/page:num/"

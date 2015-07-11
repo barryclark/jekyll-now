@@ -91,7 +91,7 @@ $$
 [jy_no_gbdt]: /images/jiayuan_no_gbdt1.png "仅使用原始特征"
 [jy_have_gbdt]: /images/jiayuan_have_gbdt1.png "原始特征加GBDT新特征"
 
-[fproc]: ../../../2014/11/15/breezedeus-feature-processing.html "特征处理（Feature Processing）"
+[fproc]: {% post_url 2014-11-16-feature-processing %} "特征处理（Feature Processing）"
 [fb]: http://www.facebook.com "Facebook"
 
 
