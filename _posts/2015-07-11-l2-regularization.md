@@ -1,9 +1,9 @@
 ---
 published: true
 layout: post
-title:  "L2约束问题与L2正则项"
+title:  "L2约束与L2正则项优化问题的关系"
 date:   2015-07-11 09:52
-categories: 机器学习 优化算法 L2正则项
+categories: 机器学习 最优化 L2正则项
 ---
 
 所谓的**L2约束问题**，就是带L2约束的优化问题，见下式：
@@ -54,25 +54,13 @@ $$
 \min\limits_{\theta} \left[ J(\theta) + \frac{\lambda_0}{2} \parallel \theta \parallel^2 \right] \ \ \text{。} 
 $$
 
+更详细的资料可见参考文献[^graph_ml]。
 
+> 上面的推导不仅适用于$L_2$约束，它其实适用于所有的$L_p$约束（$p\geq 1$），因为上面的推导过程只用到了$L_p$是凸函数的条件。
 
-记：
+#References
 
-$$
-\begin{aligned}
-g(\lambda) &\triangleq \min\limits_{\theta} \left[ J(\theta) + \frac{\lambda}{2} \left( \parallel \theta \parallel^2 - R \right) \right] \\
-&= \min\limits_{\theta} \left[ J(\theta) + \frac{\lambda}{2}  \parallel \theta \parallel^2 \right] - \frac 1 2 \lambda R \\
-&\triangleq h(\lambda) - \frac 1 2 \lambda R \ \ \text{。} 
-\end{aligned}
-$$
-
-所以对偶问题就变成：
-
-$$
-\max\limits_{\lambda\geq 0} \left[ h(\lambda) - \frac 1 2 \lambda R \right] \ \ \text{。}
-$$
-
-记这个优化问题的最优解为$\lambda^{\*}$，显然$\lambda^*$是依赖于$R$的。
+[^graph_ml]: 杉山将，《图解机器学习》第4.2节，2015.
 
 
 
