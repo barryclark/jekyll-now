@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc5dabb2-ced4-48c8-b1f6-57285288762e" name="Default" comment="Merge branch 'master' of https://github.com/breezedeus/breezedeus.github.io&#10;&#10;Conflicts:&#10;&#9;index.html&#10;">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_config.yml" afterPath="$PROJECT_DIR$/_config.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="breezedeus.github.io.iws" />
@@ -44,10 +43,19 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="0" selection-start="229" selection-end="229" vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="435">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="page.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_layouts/page.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="12" selection-start="182" selection-end="182" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="300">
+            <state line="10" column="12" selection-start="182" selection-end="182" vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="300">
               <folding />
             </state>
           </provider>
@@ -56,7 +64,7 @@
       <file leaf-file-name="statistics.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_includes/statistics.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="291" selection-end="291" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="150">
+            <state line="4" column="0" selection-start="291" selection-end="291" vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="150">
               <folding />
             </state>
           </provider>
@@ -65,7 +73,7 @@
       <file leaf-file-name="post.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_layouts/post.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="0" selection-start="425" selection-end="425" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="345">
+            <state line="14" column="0" selection-start="425" selection-end="425" vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="345">
               <folding />
             </state>
           </provider>
@@ -74,7 +82,7 @@
       <file leaf-file-name="share.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_includes/share.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="604" selection-end="604" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="105">
+            <state line="1" column="0" selection-start="604" selection-end="604" vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="105">
               <folding />
             </state>
           </provider>
@@ -163,6 +171,34 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="breezedeus.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="breezedeus.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="breezedeus.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="breezedeus.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="breezedeus.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_includes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -583,11 +619,6 @@
         <state line="6" column="6" selection-start="137" selection-end="137" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="1515" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="229" selection-end="229" vertical-scroll-proportion="0.24556616" vertical-offset="0" max-vertical-offset="733" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_site/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="28" column="2" selection-start="501" selection-end="501" vertical-scroll-proportion="0.12631579" vertical-offset="360" max-vertical-offset="6915" />
@@ -660,42 +691,49 @@
         <state line="30" column="25" selection-start="1772" selection-end="1772" vertical-scroll-proportion="0.35416666" vertical-offset="195" max-vertical-offset="915" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_layouts/post.html">
+    <entry file="file://$PROJECT_DIR$/_layouts/default.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="425" selection-end="425" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="345">
+        <state line="18" column="0" selection-start="230" selection-end="230" vertical-scroll-proportion="0.36734694" vertical-offset="0" max-vertical-offset="735" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_layouts/page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="12" selection-start="182" selection-end="182" vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="300">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_includes/statistics.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="291" selection-end="291" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="150">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_layouts/page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="12" selection-start="182" selection-end="182" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="300">
+        <state line="4" column="0" selection-start="291" selection-end="291" vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="150">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_includes/share.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="604" selection-end="604" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="105">
+        <state line="1" column="0" selection-start="604" selection-end="604" vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="105">
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_layouts/default.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="230" selection-end="230" vertical-scroll-proportion="0.36734694" vertical-offset="0" max-vertical-offset="735" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_includes/head.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="0" selection-start="1017" selection-end="1017" vertical-scroll-proportion="-11.875" vertical-offset="0" max-vertical-offset="375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_layouts/post.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="0" selection-start="425" selection-end="425" vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="345">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="229" selection-end="229" vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="435">
           <folding />
         </state>
       </provider>
