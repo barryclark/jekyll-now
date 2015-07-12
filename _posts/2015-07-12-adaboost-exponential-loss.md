@@ -112,6 +112,7 @@ $$
 
 上面计算$\hat{\theta}$的公式，就是Adaboost里子分类器对应权重的计算公式。
 
+经过上面的推导，我们可以认为Adaboost对应着指数损失函数的可加模型。很多研究者也提出了基于其他损失函数的Boosting算法，如MAdaboost和Logitboost等。
 
 更详细的资料可见参考文献[^graph_ml]。
 
