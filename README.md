@@ -7,8 +7,8 @@ The website is accessible at https://onefootball.github.io/. It uses the GitHub 
 
   * All blog posts are in the `_posts/` directory. The naming pattern should be `YYYY-MM-DD-$title.md`.
   * If you want to tweek the theme, checkout the markup in `_layouts/` and the CSS/SASS in `_sass`
-  * Images should be stored in `images/` and grouped by date.
-  * Linking to images from a post is done with the `site.baseurl` variable: `![_config.yml]({{ site.baseurl }}/images/2015-07-08/hacker.jpg)`
+  * Images should be stored in `images/` and grouped by date (YYYY-MM).
+  * Linking to images from a post is done with the `site.baseurl` variable: `![_config.yml]({{ site.baseurl }}/images/2015-07/hacker.jpg)`
 
 
 ## Jekyll (needed to test locally)
@@ -20,16 +20,19 @@ See https://help.github.com/articles/using-jekyll-with-pages/#installing-jekyll 
 
 Quick start (on Debian):
 
+```
   $ cd $project_dir
   $ rvm install 2.1.5 # needs >2
   $ ruby --version # if necessary `$ rvm use 2.1.5`
   $ gem install bundler
-
+```
 
 ### Running
 
+```
   $ git checkout master
   $ bundle exec jekyll serve
+```
 
 Then open your browser on `http://localhost:4000`.
 
