@@ -19,6 +19,11 @@ permalink: /codesnippets/
 ##### Size of a directory in human readable format (ex. Kb, Mb) - disk usage -sum human
 
         du -sh
+##### Count occurences of a string within one line
+    
+    gsub counts the number of substitutions made, as a proxy for number of matches. source: http://stackoverflow.com/a/21765379
+
+        awk '{print gsub(/string/)}' file
 
 
 ##### Place something between two sequential tabs, Ex. NA. (<a href="http://unix.stackexchange.com/questions/53448/replacing-missing-value-blank-space-with-zero">Source</a>)
