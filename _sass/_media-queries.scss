@@ -12,6 +12,10 @@
     text-align: left;
   }
 
+  .site-nav {
+    margin-top: 0;
+  }
+
   .site-header a {
     font-size: $h4;
   }
@@ -23,6 +27,7 @@
 
   .site-header .site-nav {
     float: right;
+    margin-top: .25rem;
   }
 
   blockquote {
