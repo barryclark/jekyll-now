@@ -27,9 +27,9 @@ layout: default
       {% when '11' %}Novembro
       {% when '12' %}Dezembro
     {% endcase %}
-    de 
+    de
     {{ page.date | date: "%Y" }}
   </div>
-
+  {% include share-buttons.html %}
   {% include disqus.html %}
 </article>
