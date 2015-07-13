@@ -20,8 +20,7 @@ permalink: /codesnippets/
 
         du -sh
 ##### Count occurences of a string within one line
-    
-    gsub counts the number of substitutions made, as a proxy for number of matches. source: http://stackoverflow.com/a/21765379
+gsub counts the number of substitutions made, as a proxy for number of matches. source: http://stackoverflow.com/a/21765379
 
         awk '{print gsub(/string/,"")}' file
 
