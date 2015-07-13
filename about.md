@@ -4,12 +4,9 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
 
-### More Information
+### Football for the People.
 
-A place to include any other types of information that you'd like to include about yourself.
+We are crazy about football. That’s why we created the best mobile football platform for fans around the world. Whether you’re looking for the latest scores and news or want to connect with your football mates, Onefootball makes it happen. Anytime. Anywhere.
 
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+[Visit our website for more information.](http://www.onefootball.com/)
