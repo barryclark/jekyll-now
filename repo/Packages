@@ -2,15 +2,15 @@ Package: cc.cu.iosrepo.myanmarfriendly
 Version: 0.1
 Architecture: iphoneos-arm
 Maintainer: IT STAR <itstar4tech@gmail.com>
-Filename: deb/FriendlyMyanmarMultifacebook.deb
-Size: 4429448
-MD5sum: 8fdb39c741bfb5f2ea5e8ffe3251afc2
-SHA1: f459b33a9714bdedd4610072cdba29c42481b8b7
-SHA256: 20ee6cd5033c76ffb55266876014b2cd156e54fafe822d7bba687f5e0568f3d4
+Filename: deb/..deb
+Size: 4432192
+MD5sum: 2c5e6454465fd396c8efa2b30bf2a2b5
+SHA1: 46839723fac58e7c38725f013b417c71a3206641
+SHA256: 5156f7cf2997b5271a12557388682c9b9c59f8cb20947780e16641d2313607a6
 Section: Tweaks
-Homepage: http://iosrepo.cu.cc
 Description: Facebook Multi User For Myanmar
 Author: Shein Myint Aung
 Depiction: http://iosrepo.cu.cc/tweak/2015/01/31/myanmarfriendly.html
+Icon: file:///Applications/Friendly for Facebook.app/AppIcon40x40@2x.png
 Name: Myanmar Friendly For Facebook
 
