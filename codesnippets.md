@@ -104,6 +104,11 @@ ex. ENS0000001ENS0000002 -> ENS0000001 ENS0000002
 
 ### <font color="red">Python</font>
 
+##### Get current working directory
+
+        import os
+        currentwd = os.getcwd()
+
 ##### Command line arguments
 
     import sys
