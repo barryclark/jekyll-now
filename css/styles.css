@@ -1586,9 +1586,9 @@ mark {
 }
 
 /*------------------------------------*\
-    MODULE POST
-    Main Page
-    Single Post Page
+MODULE POST
+Main Page
+Single Post Page
 \*------------------------------------*/
 @media (min-width: 0px), (min-width: 568px) {
   .mod-post {
@@ -1654,6 +1654,7 @@ mark {
     color: #222222;
   }
   .mod-post img {
+    margin-top: 2.14286em;
     margin-bottom: 2.14286em;
     max-width: 550px;
   }

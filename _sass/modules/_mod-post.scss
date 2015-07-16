@@ -1,110 +1,111 @@
 /*------------------------------------*\
-    MODULE POST
-    Main Page
-    Single Post Page
+MODULE POST
+Main Page
+Single Post Page
 \*------------------------------------*/
 
 .mod-post {
 
-	// S
-    @include breakpoint($breakpoint-s) {
-    	@include layout($s-layout);
-		margin-bottom: 8em;
+  // S
+  @include breakpoint($breakpoint-s) {
+    @include layout($s-layout);
+    margin-bottom: 8em;
 
-        &.archive {
-            margin-bottom: 3em;
-        }
-
-		h3, h3 a {
-			color: $color-primary;
-			font-weight: 500;
-		}
-
-        h4, h5 {
-            margin-top: 2em;
-
-            a:hover {
-                color: $gray-darker;
-            }
-        }
-
-        h4, h4 a {
-            color: $color-primary;
-            font-weight: 500;
-        }
-
-		h3, h4 {
-			font-weight: 500;
-		}
-		h3 {
-			margin: 5px 0;
-		}
-
-		table {
-			margin: 15px 0;
-		}
-
-        .date {
-            color: $gray-light;
-            font-weight: 400;
-            margin: 0;
-            padding: 0;
-        }
-
-        h4.tagline {
-            margin-top: .1em;
-            font-weight: 500;
-            color: $gray-darker;
-        }
-
-        ol {
-            list-style: decimal;
-        }
-
-		ul {
-		list-style: none !important;
-		padding:0;
-		margin: 0 0 15px 0;
-
-		li {
-		    padding-left: 1em;
-		    text-indent: -.7em;
-
-		    &:before {
-			    content: "• ";
-			    color: $color-primary;
-				}
-			}
-		}
-
-		p a {
-			color: $color-primary;
-
-			&:hover {
-				color: $gray-darker;
-			}
-		}
-
-        img {
-            margin-bottom: em(30px);
-            max-width: 550px;
-        }
-
-        .separator {
-            color: $color-primary;
-            background-color: $color-primary;
-            height: 7px;
-            border-top: none;
-        }
+    &.archive {
+      margin-bottom: 3em;
     }
 
-    // M
-    @include breakpoint($breakpoint-m) {
-        @include layout($m-layout);
-    };
+    h3, h3 a {
+      color: $color-primary;
+      font-weight: 500;
+    }
 
-    // L
-    @include breakpoint($breakpoint-l) {
-        @include layout($l-layout);
-    };
+    h4, h5 {
+      margin-top: 2em;
+
+      a:hover {
+        color: $gray-darker;
+      }
+    }
+
+    h4, h4 a {
+      color: $color-primary;
+      font-weight: 500;
+    }
+
+    h3, h4 {
+      font-weight: 500;
+    }
+    h3 {
+      margin: 5px 0;
+    }
+
+    table {
+      margin: 15px 0;
+    }
+
+    .date {
+      color: $gray-light;
+      font-weight: 400;
+      margin: 0;
+      padding: 0;
+    }
+
+    h4.tagline {
+      margin-top: .1em;
+      font-weight: 500;
+      color: $gray-darker;
+    }
+
+    ol {
+      list-style: decimal;
+    }
+
+    ul {
+      list-style: none !important;
+      padding:0;
+      margin: 0 0 15px 0;
+
+      li {
+        padding-left: 1em;
+        text-indent: -.7em;
+
+        &:before {
+          content: "• ";
+          color: $color-primary;
+        }
+      }
+    }
+
+    p a {
+      color: $color-primary;
+
+      &:hover {
+        color: $gray-darker;
+      }
+    }
+
+    img {
+      margin-top: em(30px);
+      margin-bottom: em(30px);
+      max-width: 550px;
+    }
+
+    .separator {
+      color: $color-primary;
+      background-color: $color-primary;
+      height: 7px;
+      border-top: none;
+    }
+  }
+
+  // M
+  @include breakpoint($breakpoint-m) {
+    @include layout($m-layout);
+  };
+
+  // L
+  @include breakpoint($breakpoint-l) {
+    @include layout($l-layout);
+  };
 }
