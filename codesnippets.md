@@ -104,6 +104,12 @@ ex. ENS0000001ENS0000002 -> ENS0000001 ENS0000002
 
 ### <font color="red">Python</font>
 
+##### Read in a file as a single string
+
+        r = open(filename, "r")
+        rejectstring = r.read().replace("\n","")
+
+
 ##### Get current working directory
 
         import os
