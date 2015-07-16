@@ -22,7 +22,7 @@ linkedin_username:  miriamtocino
 # redcarpet:
   # extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "with_toc_data", "tables"]
 permalink: /articles/:title
-paginate: 10
+paginate: 30
 
 # Navigation
 navigation:
