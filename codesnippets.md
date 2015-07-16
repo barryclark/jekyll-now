@@ -5,7 +5,7 @@ permalink: /codesnippets/
 ---
 
 
-#### Personal reference for useful one liners/short coding tasks 
+#### Personal reference for useful one liners/short coding tasks.  Anything I've ever had to google more than once.  
 
 ### <font color="red">Linux Command Line</font>
 
