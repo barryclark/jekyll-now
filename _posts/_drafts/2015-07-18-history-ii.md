@@ -1,26 +1,9 @@
 ---
 layout: post
-title: Some History I: The Early/Gaming Years
+title: Some History II: The Business/Finance Years
 ---
 
-Like all great stories, it all started when I grew up playing games. I was born soon after the Nintendo was released and I loved Super Mario/Duck Hunt and [Dig Dug](http://en.wikipedia.org/wiki/Dig_Dug) on a random [Apple ][](http://en.wikipedia.org/wiki/Apple_II) computer... until it broke one day. 
-
-I was fasinated with these ethereal worlds inside a box. Thus began my interest in technology, computers, and games. 
-
-
-# Tech bubble times
-
-In 5th grade, I remember geeking out, with the only other person that was interested in computers, on Intel and the upcoming [MMX technology](http://en.wikipedia.org/wiki/MMX_(instruction_set)). We made a class presentation with a
-
-I played chess during lunchtime and during recess I would play Kickball, philosophize, and talk to a friend about how his parents made a lot of money on Oracle stock. 
-
-Fast forward a few years and I'm in school learning how to type on an Apple IIe and play Oregon Trail. 
-
-## Then the tech bubble burst
-
-I didn't know it at the time. If anything I was more worried about Y2K and then the 9/11 terrorist attacks. What I did hear about was how people were losing jobs. 
-
-I decided that pursuing a tech career wasn't safe or any good. 
+Games got me off track for a while. They were a lot of fun; lots of things to analyze and optimize. RPGs, fighting games, and Starcraft all took a lot of time, but in the end I gained a lot of skills that I wouldn't have had otherwise. 
 
 Wikipedia
 Billiards
