@@ -9,7 +9,7 @@ I researched a lot of programming languages in my journey to the western softwar
 * Python
 * Scala
 * Go
-* Clojure
+* Lisp / Arc / Clojure
 * Javascript / CoffeeScript / TypeScript
 * Swift
 
