@@ -22,6 +22,9 @@
     {% if site.angellist_username %}
       <a class="fa fa-angellist" href="https://angel.co/{{ site.angellist_username }}"></a>
     {% endif %}
+    {% if site.medium_id %}
+      <a class="fa fa-medium" href="https://medium.com/{{ site.medium_id }}"></a>
+    {% endif %}
   </div>
   <div class="right">
     {% if site.bitcoin_url %}
