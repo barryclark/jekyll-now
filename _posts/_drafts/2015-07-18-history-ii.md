@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Some history
+title: Some History I: The Early/Gaming Years
 ---
 
 Like all great stories, it all started when I grew up playing games. I was born soon after the Nintendo was released and I loved Super Mario/Duck Hunt and [Dig Dug](http://en.wikipedia.org/wiki/Dig_Dug) on a random [Apple ][](http://en.wikipedia.org/wiki/Apple_II) computer... until it broke one day. 
@@ -10,7 +10,7 @@ I was fasinated with these ethereal worlds inside a box. Thus began my interest 
 
 # Tech bubble times
 
-In 5th grade, I remember geeking out, with the only other person that was interested in computers, on Intel and the upcoming [MMX technology](http://en.wikipedia.org/wiki/MMX_(instruction_set)). 
+In 5th grade, I remember geeking out, with the only other person that was interested in computers, on Intel and the upcoming [MMX technology](http://en.wikipedia.org/wiki/MMX_(instruction_set)). We made a class presentation with a
 
 I played chess during lunchtime and during recess I would play Kickball, philosophize, and talk to a friend about how his parents made a lot of money on Oracle stock. 
 
@@ -32,4 +32,4 @@ Websites
 Blog
 Logan party
 CS50x
-Bootcamps
+Boot camps
