@@ -36,6 +36,9 @@ disqus: flo-aws-blog
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 google_analytics: UA-63060326-1
 
+# Kissmetrics ID
+kissmetrics: ce29f663d8369425297473f5aeaed4b4e1849331
+
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
 url: http://aws-blog.io
