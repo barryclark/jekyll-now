@@ -1,3 +1,8 @@
+---
+layout: post
+title: Alive Beta Released!
+---
+
 # Alive Beta Released!
 
 Today we're pleased to release the Alive Beta. This is our biggest release since our initial alpha launch one and a half months ago. The graduation from alpha to beta is more than just a name change and includes a bunch of new features and bugfixes.
