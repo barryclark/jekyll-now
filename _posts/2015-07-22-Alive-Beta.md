@@ -3,16 +3,16 @@ layout: post
 title: Alive Beta Released!
 ---
 
-# Alive Beta Released!
-
 Today we're pleased to release the Alive Beta. This is our biggest release since our initial alpha launch one and a half months ago. The graduation from alpha to beta is more than just a name change and includes a bunch of new features and bugfixes.
 
 ### Overhauled UI
 Alive's original UI did a poor job telling you what was going on. We've rebuilt it to explicitly show you what's going on when you're using Alive. We've now made it clear when Alive is working, when it has encountered an error and when execution has succeeded.
 
-<video width="526" height="160" autoplay loop>
-  <source src="https://zippy.gfycat.com/CheapPiercingBarracuda.webm" type="video/webm">  
-</video>
+<center>
+  <video width="526" height="233" autoplay loop>
+    <source src="https://zippy.gfycat.com/CheapPiercingBarracuda.webm" type="video/webm">  
+  </video>
+</center>
 
 ### Keyboard Shortcuts
 
