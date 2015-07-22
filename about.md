@@ -4,12 +4,9 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Hi! We build tools that make it easier to read and understand source code. We're currently working on Alive: a tool that brings live programming to Visual Studio and C#.
 
-### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+### Contact Us
 
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+[founders@comealive.io](mailto:founders@comealive.io)
