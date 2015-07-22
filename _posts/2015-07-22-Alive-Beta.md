@@ -36,5 +36,6 @@ The Full Release Notes may be found on our [issue tracker](https://github.com/Co
 
 If you're interested in using Alive, you can purchase a license from [our website](http://comealive.io).
 
+You can update your copy of Alive from within Visual Studio or from the [Visual Studio Extension Gallery](https://visualstudiogallery.msdn.microsoft.com/4af8eb1a-c64f-4da8-9bf0-6835cf3e95c8).
 
 
