@@ -16,7 +16,7 @@ Alive's original UI did a poor job telling you what was going on. We've rebuilt 
 
 ### Keyboard Shortcuts
 
-First posted on our [public issue tracker](https://github.com/CodeConnect/AliveFeedback/issues/17) by RaffaelG, this feature has been long overdue. Now you can launch Alive directly from the keyboard by pressing: Ctr-[, Ctr-[
+First posted on our [public issue tracker](https://github.com/CodeConnect/AliveFeedback/issues/17) by RaffaelG, this feature has been long overdue. Now you can launch Alive directly from the keyboard by pressing: `Ctr-[, Ctr-[`
 
 ### Expanded Project Support
 
