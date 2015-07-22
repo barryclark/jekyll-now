@@ -4,7 +4,9 @@ title: About
 permalink: /about/
 ---
 
-Hi! We build tools that make it easier to read and understand source code. We're currently working on Alive: a tool that brings live programming to Visual Studio and C#.
+Hi! 
+
+We build tools that make it easier to read and understand source code. We're currently working on [Alive](http://comealive.io): a tool that brings live programming to Visual Studio and C#.
 
 
 ### Contact Us
