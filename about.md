@@ -14,3 +14,5 @@ Built with:
 * [Holacracy] (https://en.wikipedia.org/wiki/Holacracy)
 * [Disciplined Agile Delivery] (https://en.wikipedia.org/wiki/Disciplined_agile_delivery)
 * [Jekyll Now] (http://www.jekyllnow.com/)
+
+~ DijonKitchen
