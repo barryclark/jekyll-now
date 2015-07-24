@@ -3,7 +3,7 @@ layout: post
 title: Hello Multiverse!
 ---
 
-This is the beginning of my [epic] journey toward becoming a scientist, but more specifically a software engineer that utilizes the scientific method. 
+This is the beginning of my [epic] journey toward becoming a scientist, but more specifically a software hacker that utilizes the scientific method. 
 
 1. **O**bserve inefficiencies
 2. **H**ypothesize solutions
