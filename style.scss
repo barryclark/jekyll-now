@@ -266,7 +266,8 @@ nav {
   }
 
   .read-more {
-    text-transform: uppercase;
+    text-transform: lowercase;
+	font-weight: bold;
     font-size: 15px;
   }
 }
@@ -275,7 +276,7 @@ nav {
   margin-top: 50px;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
+  background-color: $black;
 }
 
 footer {
