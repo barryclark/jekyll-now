@@ -22,11 +22,15 @@
 
 		<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/build/css/core.css" />
 
+		{% if page.pagetype %}
+		<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/build/css/pages/{{page.pagetype}}.css" />
+		{% endif %}
+
 		<!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
 	</head>
 
 	<body class="{{page.pagetype}}">
-		
+
 		<nav class="nav--topnav">
 			<ul>
 				<li>
@@ -44,34 +48,10 @@
 				<li>
 					<a href="#">Podcasts</a>
 				</li>
-			</ul>	
+			</ul>
 		</nav>
 
-		{% if page.pagetype == 'homepage' %}
-			{% include components/siteHeader.html %}
-		{% endif %}
-
-		<div class="wrapper-masthead">
-			<div class="container">
-				<header class="masthead clearfix">
-					<a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
-					
-					<div class="site-info">
-						<h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-						<p class="site-description">{{ site.description }}</p>
-					</div>
-					
-					<nav>
-						<a href="{{ site.baseurl }}/">Blog</a>
-						<a href="{{ site.baseurl }}/about">About</a>
-					</nav>
-				</header>
-			</div>
-		</div>
-
-		<div id="main" role="main" class="container">
-			{{ content }}
-		</div>
+		{{ content }}
 
 		<div class="wrapper-footer">
 			<div class="container">
@@ -84,5 +64,6 @@
 		</div>
 
 		{% include analytics.html %}
+		{% include components/footerjs.html %}
 	</body>
 </html>

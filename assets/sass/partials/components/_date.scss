@@ -4,7 +4,6 @@
 	left: -95px; top: 15px;
 
 	display: block;
-	font-family: $meta;
 	background: WHITE;
 	color: BLACK;
 	text-align: center;
@@ -55,7 +54,7 @@
 	50% {
 		transform: rotate(-80deg);
 	}
-  
+
 	100% {
 		transform: rotate(0deg);
 	}

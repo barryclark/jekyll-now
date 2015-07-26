@@ -9,7 +9,7 @@ name: Jordan Foreman
 description: Full-Stack Designer/Developer from Des Moines, Iowa
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://en.gravatar.com/userimage/25103068/efa329fa784ce9990cf63892e55c7abd.jpg?size=200
+avatar: https://en.gravatar.com/userimage/25103068/192dee2ca6cae5529d6167802ceadd0a.jpg?size=200
 
 #
 # Flags below are optional
@@ -17,14 +17,14 @@ avatar: https://en.gravatar.com/userimage/25103068/efa329fa784ce9990cf63892e55c7
 
 # Includes an icon in the footer for each username you enter
 footer-links:
-  dribbble: 
+  dribbble:
   email: me@jordanforeman.com
-  facebook: 
-  flickr: 
+  facebook:
+  flickr:
   github: JordanForeman
-  instagram: 
-  linkedin: 
-  pinterest: 
+  instagram:
+  linkedin:
+  pinterest:
   rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
   twitter: jordanforeman
 
@@ -32,13 +32,13 @@ footer-links:
 disqus: jordanforemancom
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics: 
+google_analytics:
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url: 
+url:
 
-# If you're hosting your site at a Project repository on GitHub pages 
+# If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
 # and NOT your User repository (http://yourusername.github.io)
 # then add in the baseurl here, like this: "/repository-name"

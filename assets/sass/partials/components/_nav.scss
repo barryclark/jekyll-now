@@ -33,3 +33,55 @@
 		margin: 0 15px;
 	}
 }
+
+.nav--banner {
+	list-style: none;
+	text-align: center;
+	padding: 0; margin: 0;
+
+	li {
+		display: inline-block;
+
+		&:first-of-type a:after { // About
+			background-color: $purple;
+		}
+
+		&:nth-of-type(2n) a:after { // Portfolio
+			background-color: $blue;
+		}
+
+		&:last-of-type a:after { // Blog
+			background-color: $green;
+		}
+	}
+
+	a {
+		display: block;
+		color: WHITE;
+		font-size: 1.2em;
+		letter-spacing: 5px;
+		margin: 0 10px;
+		text-transform: capitalize;
+
+		position: relative;
+
+		&:hover {
+			color: WHITE;
+			&:after {
+				transform: scalex(1);
+			}
+		}
+
+		&:after {
+			background-color: white;
+			content: '';
+			display: block;
+			width: 100%;
+			transform: scaleX(0);
+			height: 3px;
+			margin: 0 auto;
+
+			transition: transform .1s linear;
+		}
+	}
+}

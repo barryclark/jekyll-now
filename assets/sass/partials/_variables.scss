@@ -4,8 +4,11 @@
 //
 
 // Colors
-$blue: #4183C4; 
+$blue: #4183C4;
+$lightBlue: lighten($blue, 20);
 $purple: #6441a5;
+$lightGray: #E4E4E4;
+$green: #26E226;
 
 // Grays
 $black: #000;
@@ -19,8 +22,8 @@ $white: #fff;
 $helvetica: Helvetica, Arial, sans-serif;
 $helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $georgia: Georgia, serif;
-$meta: ff-meta-web-pro, sans-serif;
-$skolar: skolar, serif;
+$proxima: "proxima-nova";
+$proximaSoft: "proxima-nova-soft";
 
 // Sizes
 $topnav-height: 50px;
@@ -30,4 +33,13 @@ $topnav-height: 50px;
   @media screen and (max-width: 640px) {
     @content;
   }
+}
+
+@mixin clearfix {
+    clear: both;
+    &:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
 }

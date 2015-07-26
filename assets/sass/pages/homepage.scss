@@ -5,17 +5,111 @@
 @import "../partials/components/portfolio";
 
 .header--homepage {
-	position: relative;
-
 	background: black;
-	height: 100vh;
 
 	padding: 0 20px;
 
+	font-family: $proxima;
+
 	img {
-		position: absolute;
-		top: 50%;
-		transform: translateY(-50%);
 		max-width: 100%;
+	}
+
+	h2 {
+		color: $lightGray;
+		margin-top: -5%;
+		font-size: 2em;
+	}
+}
+
+section {
+	margin: 20px;
+	margin-bottom: 50px;
+
+	h2 {
+		padding: 10px 0;
+		border: 1px solid $lightGray;
+		border-left-color: transparent;
+		border-right-color: transparent;
+	}
+}
+
+section, header.header--homepage {
+	min-height: 100vh;
+	@include clearfix;
+
+	h2 {
+		text-align: center;
+	}
+}
+
+#about, header.header--homepage {
+	position: relative;
+
+	.container {
+		position: absolute;
+		top: 50%; left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
+
+#portfolio {
+	a.seeMore {
+		display: block;
+		max-width: 200px;
+		text-align: center;
+		border: 2px solid $blue;
+		border-radius: 5px;
+		padding: 0 10px;
+		margin: 10px auto;
+
+		transition: background .1s linear;
+
+		&:hover {
+			background: $blue;
+			color: WHITE;
+		}
+	}
+
+	p {
+		clear: both;
+	}
+}
+
+#about {
+	@include clearfix;
+
+	p {
+		margin: 0;
+		float: left;
+	}
+
+	img {
+		transform: scale(0.75);
+		border-radius: 50%;
+	}
+}
+
+#blog {
+	.posts {
+		display: flex;
+		flex-wrap: wrap;
+
+		article {
+			width: 33%;
+			margin: 20px auto;
+			max-height: 400px;
+			min-width: 450px;
+			overflow-y:hidden;
+		}
+
+		.read-more {
+			position: absolute;
+			bottom: 0;
+			background-color: white;
+			width: 100%;
+			text-align: center;
+			box-shadow: 0 0 15px $gray;
+		}
 	}
 }

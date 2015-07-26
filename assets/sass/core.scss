@@ -10,6 +10,7 @@
 
 html {
   font-size: 100%;
+  font-family: $proxima;
 }
 
 * {
@@ -18,23 +19,22 @@ html {
 
 body {
 	background: $white;
-  font: 18px/1.4 $skolar;
   line-height: 2;
   color: $darkGray;
 }
 
 .container {
   margin: 0 auto;
-  max-width: 740px;
+  max-width: 1040px;
   padding: 0 10px;
   width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
+  font-family: $proximaSoft;
   color: $darkerGray;
   font-weight: 600;
-  
+
   line-height: 1.7;
   margin: 1em 0 15px;
   padding: 0;
@@ -43,9 +43,8 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.4;
   }
 }
-  
-h1 {  
-  font-family: $meta;
+
+h1 {
   font-weight: 700;
   font-size: 2rem;
   a {
@@ -53,16 +52,16 @@ h1 {
   }
 }
 
-h2 {  
+h2 {
   font-weight: 400;
   font-size: 24px;
 }
 
-h3 {  
+h3 {
   font-size: 18px;
 }
 
-h4 {  
+h4 {
   font-size: 18px;
   color: $gray;
 }
@@ -163,7 +162,7 @@ article img {
 .masthead {
   padding: 20px 0;
   border-bottom: 1px solid $lightGray;
-  
+
   @include mobile {
     text-align: center;
   }
@@ -200,7 +199,7 @@ article img {
   margin: 0;
   color: $darkGray;
   cursor: pointer;
-  font-family: $helveticaNeue; 
+  font-family: $helveticaNeue;
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
@@ -210,7 +209,7 @@ article img {
   margin: -5px 0 0 0;
   color: $gray;
   font-size: 16px;
-  
+
   @include mobile {
     margin: 3px 0;
   }
@@ -219,38 +218,6 @@ article img {
 //
 // .main
 //
-
-.posts > .post {
-  padding-bottom: 2em;
-  border-bottom: 1px solid $lightGray;
-}
-
-.posts > .post:last-child {
-  padding-bottom: 1em;
-  border-bottom: none;
-}
-
-.post { 
-  blockquote {
-    margin: 1.8em .8em;
-    border-left: 2px solid $gray;
-    padding: 0.1em 1em;
-    color: $gray;
-    font-size: 22px;
-    font-style: italic;
-  }
-
-  .comments {
-    margin-top: 10px;
-  }
-
-  .read-more {
-    text-transform: uppercase;
-    font-size: 15px;
-    display: block;
-    text-align: right;
-  }
-}
 
 .wrapper-footer {
   margin-top: 50px;

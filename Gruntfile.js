@@ -4,7 +4,7 @@ module.exports = function(grunt){
 
 		pkg : grunt.file.readJSON('package.json'),
 
-		sass : {			
+		sass : {
 			dist : {
 				options : {
 					style : 'expanded',
@@ -26,7 +26,7 @@ module.exports = function(grunt){
 		},
 
 		watch : {
-			sass : {				
+			sass : {
 				files : ['assets/sass/**/*.scss'],
 				tasks : ['sass'],
 				options : {
@@ -48,7 +48,10 @@ module.exports = function(grunt){
 		concat: {
 			javascript: {
 				files: {
-					'assets/build/js/main.js': ['assets/js/**/*.js']
+					'assets/build/js/main.js': [
+						'bower_components/jquery/dist/jquery.min.js',
+						'assets/js/**/*.js'
+					]
 				}
 			}
 		},

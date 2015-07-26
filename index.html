@@ -3,67 +3,57 @@ layout: default
 pagetype: homepage
 ---
 
-<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/build/css/pages/homepage.css" />
+{% include components/siteHeader.html %}
+
+<!-- About -->
+<section id="about">
+	<div class="container">
+		<img src="{{ site.avatar }}" />
+		<h2>Hi! My name is Jordan, and I make The Web</h2>
+		<p>I've spent the past seven years using the web to push the boundaries of human communication through the design and development of thoughtfully crafted digital experiences. I specialize in designing and implementing engaging and innovative ways for users to consume content on the web, no matter what devices they may use. <a class="scrollLink" href="#portfolio">Check out some of my work!</a></p>
+		<p>When I'm not busy solving problems, I can be found reading, writing, cycling, gaming, and pontificating on <a href="http://twitter.com/jordanforeman">Twitter</a></p>
+	</div>
+</section>
 
 {% if site.portfolio %}
-<ul class="portfolio-items">
-	{% for item in site.portfolio limit:3 %}
-	<li>
-		<a href="{{ item.link }}" class="portfolio-item">
-			<h3>{{ item.title }}</h3>
-			<img src="{{ item.image }}" />
-		</a>
-	</li>
-	{% endfor %}
-</ul>
+<section id="portfolio" class="portfolio--teaser">
+	<div class="container">
+		<h2>Products I've Helped Build</h2>
+		<ul class="portfolio-items">
+			{% for item in site.portfolio limit:3 %}
+			<li>
+				<a href="{{ site.baseurl }}{{ item.url }}" class="portfolio-item">
+					<h3>{{ item.title }}</h3>
+					<img src="{{ item.image }}" />
+				</a>
+			</li>
+			{% endfor %}
+		</ul>
+
+		<a class="seeMore" href="{{ site.baseurl }}/portfolio.html">See More</a>
+
+		<p>I've helped build a lot of cool stuff with a lot of even cooler people! If you're cool and are looking for a cool guy to build something cool with, <a href="#contact">get in touch</a>!</p>
+	</div>
+</section>
 {% endif %}
 
-<div class="posts">
-	{% for post in paginator.posts %}
-	<article class="post">
+<section id="blog" class="blog--teaser">
+	<div class="container">
+		<h2>Recent Blog Posts</h2>
+		<div class="posts">
+			{% for post in paginator.posts limit:4 %}
+			<article class="post">
 
-		{% if post.date %}
-		<div class="post-date">
-			<a class="post-date-anchor permalink" href="{{ site.baseurl }}{{ post.url }}">
-				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" x="0px" y="0px" viewBox="0 0 87.572 100" enable-background="new 0 0 87.572 100" xml:space="preserve"><path d="M43.794 0c-6.385 0-11.575 5.01-11.575 11.196c0 4.6 2.8 8.5 6.8 10.23l-0.119 5.802H7.877v6.134 h30.929l-0.936 44.47c-0.018 0.9 0 9.934-12.405 3.687c-12.449-6.265-5.414-13.36-4.578-13.569 C13.573 65.7 6.9 59.4 1.6 53.006c-5.254 11.5 4.2 23.7 4.6 25.433c1.129-1.21 2.818-1.017 3.853-0.847 C22.724 96.9 39.3 94.6 43.8 100c4.458-5.403 21.055-3.09 33.727-22.408c1.035-0.17 2.724-0.363 3.9 0.8 c0.454-1.744 9.863-13.975 4.608-25.433c-5.354 6.43-11.982 12.691-19.296 14.944c0.835 0.2 7.9 7.305-4.578 13.6 c-12.413 6.247-12.386-2.789-12.405-3.687l-0.938-44.47h30.932v-6.134H48.629l-0.122-5.802c4.031-1.752 6.847-5.677 6.847-10.23 C55.354 5 50.2 0 43.8 0z M43.794 7.101c2.261 0 4.1 1.8 4.1 4.095c0 2.262-1.834 4.095-4.095 4.1 s-4.111-1.833-4.111-4.095C39.683 8.9 41.5 7.1 43.8 7.101z"/></svg>
-			</a>
-			<span class="post-date-day">
-			{{ post.date | date: "%-d" }}
-			</span>
-			<span class="post-date-month">
-			{{ post.date | date: "%B" }}
-			</span>
-			<span class="post-date-year">
-			{{ post.date | date: "%Y" }}
-			</span>
+				<h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
+
+				<div class="entry">
+					{{ post.content | truncatewords:60}}
+				</div>
+
+				<a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+
+			</article>
+			{% endfor %}
 		</div>
-		{% endif %}
-
-		<h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-		<div class="entry">
-			{{ post.content | truncatewords:40}}
-		</div>
-		
-		<a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-
-	</article>
-	{% endfor %}
-</div>
-
-<!-- Pagination links -->
-<div class="pagination">
-	{% if paginator.previous_page %}
-	<a href="/page/{{ paginator.previous_page }}" class="previous">Previous</a>
-	{% else %}
-	<span class="previous">Previous</span>
-	{% endif %}
-
-	<span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
-	
-	{% if paginator.next_page %}
-	<a href="/page/{{ paginator.next_page }}" class="next">Next</a>
-	{% else %}
-	<span class="next ">Next</span>
-	{% endif %}
-</div>
+	</div>
+</section>
