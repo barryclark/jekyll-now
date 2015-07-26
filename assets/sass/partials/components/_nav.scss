@@ -10,10 +10,13 @@
 	display: block;
 	width: 100%;
 	height: $topnav-height;
+	box-shadow: 0 0 3px $gray;
 
 	background: WHITE;
 	text-align: center;
 	font-family: $helveticaNeue;
+
+	transition: top .3s linear;
 
 	a {
 		color: $purple;

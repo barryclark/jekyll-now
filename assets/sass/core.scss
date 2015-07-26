@@ -23,6 +23,10 @@ body {
   color: $darkGray;
 }
 
+body:not(.homepage) {
+    margin-top: 75px;
+}
+
 .container {
   margin: 0 auto;
   max-width: 1040px;

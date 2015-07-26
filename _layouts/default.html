@@ -29,24 +29,21 @@
 		<!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
 	</head>
 
-	<body class="{{page.pagetype}}">
+	<body data-pagetype="{{page.pagetype}}" class="{{page.pagetype}}">
 
 		<nav class="nav--topnav">
 			<ul>
 				<li>
-					<a href="#">About</a>
+					<a href="{{site.baseurl}}/">Home</a>
 				</li>
 				<li>
-					<a href="#">Blog</a>
+					<a href="{{site.baseurl}}/about.html">About</a>
 				</li>
 				<li>
-					<a href="#">Web</a>
+					<a href="{{site.baseurl}}/blog.html">Blog</a>
 				</li>
 				<li>
-					<a href="#">Video</a>
-				</li>
-				<li>
-					<a href="#">Podcasts</a>
+					<a href="{{site.baseurl}}/portfolio.html">Portfolio</a>
 				</li>
 			</ul>
 		</nav>

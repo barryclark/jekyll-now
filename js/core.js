@@ -1,1 +1,0 @@
-$('html').addClass('js');
