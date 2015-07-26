@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Importing a large number of tables with Sqoop: A practical example
+title: Importing multiple tables using Sqoop 
+tags: [sqoop, hadoop, utilities]
 ---
 
 We are using [Sqoop][1] as a first step in a complex ETL process. 
@@ -37,7 +38,7 @@ No rocket science, just some Bash scripting put to good use.
 
 You can find the code for the project [here][3].
 
-Hopefully you can find it useful as a starting point.
+Hopefully you will find it useful as a starting point.
 
 
 

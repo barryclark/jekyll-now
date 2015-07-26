@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Disk capacity planning: Neo4J
+title: Disk capacity planning: Neo4J 
+tags: [neo4j, capacity planning, utilities]
 ---
 
 Neo4J is a great graph database, with some really cool features. 

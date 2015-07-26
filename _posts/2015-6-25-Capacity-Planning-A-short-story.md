@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Capacity planning: A short story
+title: Capacity planning: A short story 
+tags: [capacity planning]
 ---
 
 One very important (but more-often-than-not forgotten) aspect of building and deploying any new system is [capacity planning][1].
