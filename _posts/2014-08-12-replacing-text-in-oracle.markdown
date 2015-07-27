@@ -19,7 +19,7 @@ Before and as always a best practice is to backup, so we back up the rows that w
 
 {% highlight sql %}  
 create table course_content_enrique as select main_data from course_contents where main_data like '%http://%'
- and crsmain_pk1 in (select pk1 from course_main where 
+and crsmain_pk1 in (select pk1 from course_main where course_id = 'enrique_course'); 
 {% endhighlight %}
 
 Then we actually did the change in the table:
@@ -63,8 +63,8 @@ So, you can create a query to see how it looks like the following:
 
 {% highlight sql %}
 SELECT REPLACE(main_data, 'http://', 'https://')
-  FROM course_contents
-  WHERE crsmain_pk1 IN (select pk1 from course_main where course_id = 'enrique_course');
+FROM course_contents
+WHERE crsmain_pk1 IN (select pk1 from course_main where course_id = 'enrique_course');
 {% endhighlight %}
 
 This can help you show what you are looking for, and if it is, then just switch it for the update statement.
