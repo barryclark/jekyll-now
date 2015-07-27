@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<div id="main" role="main">
+
+  {% if page.image.feature %}
+    <div class="page-image">
+      <img src="{{ site.url }}/images/{{ page.image.feature }}" class="page-feature-image" alt="{{ page.title }}" itemprop="image">
+      {% if page.image.credit %}{% include image-credit.html %}{% endif %}
+    </div><!-- /.page-image -->
+  {% endif %}
+
+  <div class="archive-wrap">
+    {% include browser-upgrade.html %}
+    <h1 class="entry-title">{{ page.title }}</h1>
+    <div class="archive-content" id="content">
+      {{ content }}
+    </div><!-- /.archive-content -->
+
+  </div><!-- /.article-wrap -->
+
+</div><!-- /#main -->
