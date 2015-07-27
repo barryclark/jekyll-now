@@ -25,30 +25,38 @@ So here it is:
 	# The following resources belong to NumberFormat
 	# Only substitute equivalent characters where necessary
 	# Note: Keep the decimal_point here in sync with the one used in the float formats below
+	{% highlight bash %}
 	number_format.decimal_point=,
 	number_format.thousands_sep=.
 	number_format.exponent=eE
+	{% endhighlight %}
 7. **Second Part**
 
 	# Regular expressions for Javascript number validation.
+	{% highlight bash %}
 	float.format=^[0-9]*(\\\\,[0-9]+)?$
 	float.allow.negative.format=^[-]?[0-9]*(\\\\,[0-9]+)?$
 	efloat.format=^[+-]?[0-9]*(\\\\,[0-9]+)?([eE][+-]?[0-9]+)?$
+	{% endhighlight %}
 8. **Change it to the first part looks like this**
 
 	# Only substitute equivalent characters where necessary
 	# Note: Keep the decimal_point here in sync with the one used in the float formats below
+	{% highlight bash %}
 	number_format.decimal_point=.
 	number_format.thousands_sep=,
 	number_format.exponent=eE
-9. **Change it to the second part looks like this** 
+	{% endhighlight %}
+9. **Change it to the second part looks like this**
 
 	# Regular expressions for Javascript number validation.
+	{% highlight bash %}
 	float.format=^[0-9]*(\\\\.[0-9]+)?$
 	float.allow.negative.format=^[-]?[0-9]*(\\\\.[0-9]+)?$
 	efloat.format=^[+-]?[0-9]*(\\\\.[0-9]+)?([eE][+-]?[0-9]+)?$
+	{% endhighlight %}
 10. As you can see is a pretty straight forward change but it actually needs to know where to look at. After this I made a few extra steps that i loved because it changes the way it will look like in the Language Packs section, so go to the _"bb-lp-manifest.xml"_ file and open it I have made it look like the following:
-
+	{% highlight xml %}
 	<?xml version="1.0" encoding="UTF-8"?>
     <manifest>
     	<languagepack>
@@ -66,6 +74,7 @@ So here it is:
           </vendor>
     	</languagepack>
     </manifest>
+	{% endhighlight %}
 As you can see above, there a few things to notice:
 
 * The name of the language pack now states: "Espanol Mexico"
@@ -80,16 +89,18 @@ In Sp13 and above there are a few differences.
 1. the files are the same
 2. the procedure is the same
 3. but the following are the contents of those lines
-
+	{% highlight bash %}
 		number_format.decimal_point=.
-        number_format.thousands_sep=,
+    number_format.thousands_sep=,
 		number_format.exponent=eE
+	{% endhighlight %}
 and in the second file should be
-
+	{% highlight bash %}
 		# Regular expressions for Javascript number validation.
 		float.format=^(([0-9]{1,3}(\\\\,[0-9]{3})*)|[0-9]*)(\\\\.[0-9]+)?$
 		float.allow.negative.format=^((([-]?[0-9]{1,3}(\\\\,[0-9]{3})*)|[-]?[0-9]*)(\\\\.[0-9]+)?|\\\\.[0-9]+)?$
 		efloat.format=^[+-]?[0-9]*(\\\\.[0-9]+)?([eE][+-]?[0-9]+)?$
+	{% endhighlight %}
 		# Regular Expression for Thousand separator.
 		thousand.sep.format=,
 

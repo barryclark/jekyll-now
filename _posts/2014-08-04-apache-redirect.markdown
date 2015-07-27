@@ -10,7 +10,7 @@ Sometimes you just want to do a simple redirect based on the domain, or well thi
 
 ![Zoo Lights](/content/images/2014/Aug/11430398143_84c7d4fc45_z.jpg)
 
-Recently I was encounter with a request where the client wanted to moved from domain A to domain B using Blackboard. But they wanted to do it transparently, which is kind of difficult when it has 
+Recently I was encounter with a request where the client wanted to moved from domain A to domain B using Blackboard. But they wanted to do it transparently, which is kind of difficult when it has
 
 * Certificates
 * Applications
@@ -40,9 +40,11 @@ it will fault. So we needed to be more specific and specify if they come to URL1
 
 #### Solution 2
 This next solution will actually see where the host is coming from and redirect if it matches the old domain.
-<pre class="language-bash">RewriteEngine on
+{% highlight bash %}
+RewriteEngine on
 RewriteCond %{HTTP_HOST} ^old\.domain\.com$
-RewriteRule ^(.*)$ https://newdomain.com [R=301,NC,L]</pre>
+RewriteRule ^(.*)$ https://newdomain.com [R=301,NC,L]
+{% endhighlight %}
 
 #### Conclusion
 Why this implementation and not generic one?
@@ -65,14 +67,14 @@ This by all means is the last portion of SSL should be there.
 
 At first I thought of just including the redirect portion and actually did it, but did not worked. So you can't have the following in the same code:
 
-<pre class="language-bash">RewriteEngine on
+{% highlight bash %}RewriteEngine on
 RewriteCond %{HTTP_HOST} ^www.example.me$
 RewriteRule ^(.*)$ https://example.me/$1 [R=301]
 
 RewriteCond %{HTTP_HOST} ^www.example.me$
 RewriteCond %{SERVER_PORT} ^443
 RewriteRule ^(.*)$ https://example.me/$1 [R=301]
-</pre>
+{% endhighlight %}
 
 So We just removed the second portion for the SSL and added it to the SSL.conf that we had in apache.
 
@@ -80,10 +82,11 @@ Then we searched for the VirtualHost `<VirtualHost _default_:443>`, which means 
 
 After that line and before the closing of the `</VirtualHost>` we added the following:
 
-<pre class='language-bash'>RewriteEngine On
+{% highlight bash %}
+RewriteEngine On
 RewriteCond %{HTTP_HOST} ^www.example.me$ [NC]
 RewriteRule ^(.*)$ https://example.me/$1 [R=301,L]
-</pre>
+{% endhighlight %}
 
 What this will actually do is whenever it comes a connection to the SSL port of 443 defined for this Apache, we will first and foremost check if we need to redirect it before presenting any content. Then continue to the display.
 

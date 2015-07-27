@@ -11,7 +11,7 @@ For the past few years I have been looking at corporate signatures and how many 
 This isn't going to be an analysis of how signatures should be or what they are or should include, but just my opinion on how important is a nice and accurate signature.
 
 #### No no
-Lets start with what for me is the biggest No No. 
+Lets start with what for me is the biggest No No.
 Including **images** in your signature, simply a no no. There are tons of way that you can have a great, impressive, shocking, nice signature, but having an image is just something else that the mail app / browser needs to download. It can become slow depending on the connection and simple its not fun anymore.
 
 #### Ideas?
@@ -28,12 +28,12 @@ I have been contacted a few times by [10Gen](http://10gen.com) folks, and their 
 What does it contain? Nothing out of the ordinary, its simple [JSON](http://json.org/) read more here - [what is json](http://en.wikipedia.org/wiki/JSON).
 So After reviewing it, i made mine, as fewer lines as possible.
 
-<pre class="language-json">-- 
-{ name     : "Enrique Valenzuela", 
-  blog     : "http://enriquemanuel.me",
-  linkedin : "http://linkedin.com/in/enriquevalenzuela",
-  twitter  : "@emvp84" }
-</pre>
+{% highlight json %}
+{ "name"     : "Enrique Valenzuela",
+  "blog"     : "http://enriquemanuel.me",
+  "linkedin" : "http://linkedin.com/in/enriquevalenzuela",
+  "twitter"  : "@emvp84" }
+{% endhighlight %}
 
 **Why didn't i included my email?**
 Simple, you are already contacting me to my email. And if you forward that email, and worst case scenario, the email is not included, my blog and linkedin have forms to contact me. So not overdoing the amount of information in it.

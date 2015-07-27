@@ -13,7 +13,7 @@ After some research and client not being happy, we found out that the logs were 
 So after researching, I found 3 tools that could do the job just perfectly.
 
 ### What I wanted to do?
-I wanted to be able to monitor the rotated log directory for any newly created file and send an alert when a file is created. 
+I wanted to be able to monitor the rotated log directory for any newly created file and send an alert when a file is created.
 Cool right? Yeah, and it can be done with the appropiate technology.
 
 Considering that our Servers OS is RedHat with different installations inside we found 3 viable options:
@@ -29,7 +29,7 @@ Huge problem ahead. My RedHat permissions did not allowed me eto use **incron** 
 **AGAIN?** new problem, I did not had the required version of Python and since its a Production environment for a client some repositories or dependencies we shouldn't be updating. I know that I can create [virtualenv](http://docs.python-guide.org/en/latest/dev/virtualenvs/) but it was not worth the time and development.
 
 ### Options and more Options
-Looking at the trend and trying to figure out options, I gather a pattern. 
+Looking at the trend and trying to figure out options, I gather a pattern.
 
 #### Pattern:
 1. Files are being rotated to `/usr/local/blackboard/<hostname>/var/logs/tomcat`
