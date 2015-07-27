@@ -1,3 +1,8 @@
+---
+layout: post
+title: Forcing DLLs to output to .vsix 
+---
+
 When migrating to Alive to the final release of Visual Studio 2015, we noticed that some of our DLLs were not getting copied to our output `.vsix` file. Specifically, the `Microsoft.CodeAnalysis` files that were not getting copied into our `.vsix`. We'd set `CopyLocal` to true and verified they were being copied through to `/Debug/bin` folder. Despite this they were still not being copied through to our `.vsix`.
 
 ### Short version
