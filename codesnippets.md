@@ -249,6 +249,10 @@ ex. ENS0000001ENS0000002 -> ENS0000001 ENS0000002
      args<-commandArgs(TRUE)
      genename=args[1]
 
+##### Get to R studio server
+
+    In browser, go to http://<yourserverIP>:8787
+
 ##### Better R color palette (colorblind sensitive)
 
         cbPalette <- c("#999999", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
