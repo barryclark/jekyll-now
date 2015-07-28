@@ -24,6 +24,21 @@ gsub counts the number of substitutions made, as a proxy for number of matches. 
 
         awk '{print gsub(/string/,"")}' file
 
+##### find files matching a pattern ("*PROTEOME) in subdirectories and move them up a level
+
+        find . -type f -name \*PROTEOME
+        find . -type f -name \*PROTEOME -exec mv {} . \;
+
+##### Running parallel
+
+        ls *PROTEOME | ~/bin/parallel -j 3 bash sort.sh {}
+        # *PROTEOME is the argument to sort.sh
+        #3 is the number of processes
+
+##### See what processes are running in a directory
+
+        lsof +D /path/to/directory/
+
 
 ##### Place something between two sequential tabs, Ex. NA. (<a href="http://unix.stackexchange.com/questions/53448/replacing-missing-value-blank-space-with-zero">Source</a>)
 
