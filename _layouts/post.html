@@ -5,6 +5,18 @@ layout: default
 <article class="post">
   <h1>{{ page.title }}</h1>
 
+  <small>
+    {% if site.disqus %}
+        <a href="{{ post.url }}#disqus_thread"></a>
+    {% endif %}
+    {% if page.tags.size > 0 %}
+        Tags: 
+      {% for tag in page.tags %}
+        <a href="/tag/{{ tag }}">{{ tag }} </a> 
+      {% endfor %}
+    {% endif %} 
+   </small>
+
   <div class="entry">
     {{ content }}
   </div>
