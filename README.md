@@ -14,6 +14,14 @@ In a few minutes you'll be set up with a minimal, responsive blog like the one b
 
 ![Jekyll Now Theme Screenshot](/images/jekyll-now-theme-screenshot.jpg "Jekyll Now Theme Screenshot")
 
+## TODO
+
+* Wiki: Feed.
+* Wiki: Disqus.
+* Wiki: how put favicon.
+* Wiki: Copy tags.
+* Code: Check social buttons - email, facebook, github, bitbucket, linkedin, rss, twitter, tumblr, youtube, g+.
+
 ## Quick Start
 
 ### Step 1) Fork Jekyll Now to your User Repository
