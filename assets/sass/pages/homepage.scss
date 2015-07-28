@@ -97,10 +97,19 @@ section, header.header--homepage {
 
 		article {
 			width: 33%;
-			margin: 20px auto;
+			margin: 20px 10px;
 			max-height: 400px;
 			min-width: 450px;
 			overflow-y:hidden;
+
+
+			@include medium {
+				min-width: 80%;
+			}
+
+			@include mobile {
+				min-width: 100%;
+			}
 		}
 
 		.read-more {

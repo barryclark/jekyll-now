@@ -30,7 +30,13 @@ $topnav-height: 50px;
 
 // Mobile breakpoints
 @mixin mobile {
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 420px) { // Haha
+    @content;
+  }
+}
+
+@mixin medium {
+  @media screen and (max-width: 720px) { // Haha
     @content;
   }
 }
