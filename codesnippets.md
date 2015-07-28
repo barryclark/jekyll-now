@@ -39,6 +39,9 @@ gsub counts the number of substitutions made, as a proxy for number of matches. 
 
         lsof +D /path/to/directory/
 
+##### Kill all processes from a user
+
+        killall --user nameofuser
 
 ##### Place something between two sequential tabs, Ex. NA. (<a href="http://unix.stackexchange.com/questions/53448/replacing-missing-value-blank-space-with-zero">Source</a>)
 
