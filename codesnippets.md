@@ -80,7 +80,7 @@ gsub counts the number of substitutions made, as a proxy for number of matches. 
 
 ##### Current directory
 
-    LOC=$( pwd )
+    LOC=$(pwd)
 
 ##### Get filename without the extension, ex. filename.txt -> filename
 
