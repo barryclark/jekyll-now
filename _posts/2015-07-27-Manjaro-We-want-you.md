@@ -25,7 +25,6 @@ Philip Müller and the Manjaro Development Team
 
 ##Links
 
-* [Manjaro Artwork Team](https://github.com/orgs/manjaro/teams/artwork)
 * [Manjaro Artwork Forum](https://forum.manjaro.org/index.php?board=12.0)
 * [Manjaro Programming Forum](https://forum.manjaro.org/index.php?board=10.0)
 * [Manjaro Translation Project](https://www.transifex.com/organization/manjarolinux)
