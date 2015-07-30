@@ -38,7 +38,7 @@ and
 
 > Will you pay for this now?
 
-Every founder sees their product through rose-colored lens and only by asking the second question do you gain any insight into whether or not you're truly creating value for someone. We want to create a product that our user's love and if no one is willing to pay for it then that should be a pretty tell-tale sign that no one truly loves it.
+Every founder sees their product through rose-colored lens and only by asking the second question do you gain any insight into whether or not you're truly creating value for someone. We want to create a product that our users love and if no one is willing to pay for it then that should be a pretty tell-tale sign that no one truly loves it.
 
 Asking for money forced our users to be completely honest with us. 
 
