@@ -15,6 +15,10 @@ avatar: https://avatars0.githubusercontent.com/u/6790201?v=3&s=460
 # Flags below are optional
 #
 
+# tagging
+tag_page_layout: tag_page
+tag_page_dir: tag
+
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
@@ -55,7 +59,8 @@ baseurl: ""
 
 markdown: redcarpet
 highlighter: pygments
-permalink: /:title/
+# permalink: /:categories/:year/:month/:day/:title/
+permalink: pretty
 
 # The release of Jekyll Now that you're using
 version: v1.1.0
