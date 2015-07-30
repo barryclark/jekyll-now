@@ -46,7 +46,7 @@ Asking for money forced our users to be completely honest with us.
 
 When we announced Alive, we'd been running Code Connect for about a year. During this time we'd managed to keep our burn rate very low, but ultimately everyone has to pay rent and eat. With no income, we occasionally consulted on the side.
 
-Charging early allowed us to focus 100% on building and improving Alive. The best outcome is one that benefits everyone. This approach allowed us to deliver a better product to our users and made it easier for us to make ends end meet. On top of it all, income from pre-orders and beta sales has funded (in part) the hiring of our first co-op student! He starts in September and we're very confident he's going to be able to help us make Alive even better.
+Charging early allowed us to focus 100% on building and improving Alive. The best outcome is one that benefits everyone. This approach allowed us to deliver a better product to our users and made it easier for us to make ends end meet. On top of it all, income from pre-orders and beta sales have funded (in part) the hiring of our first co-op student! He starts in September and we're very confident he's going to be able to help us make Alive even better.
 
 ### Manageable Growth
 
