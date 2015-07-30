@@ -1,6 +1,6 @@
 ---
 layout: post
-title: # Why we charged users to pre-order our alpha
+title: Why we charged users to pre-order our alpha
 ---
 #### (and why we'd do it again)
 
