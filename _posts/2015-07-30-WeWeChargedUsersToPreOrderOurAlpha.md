@@ -52,7 +52,7 @@ Charging early allowed us to focus 100% on building and improving Alive. The bes
 
 Alive still have a number of rough edges that our customers are going to run into. Offering a free alpha would have been a great way to gain a lot of users quickly, but we likely would have been inundated with bug reports and feature requests. Controlled growth has allowed us to respond quickly to the bugs reported by our paying customers. 
 
-Growing slowly has also meant every one of our customers truly believes in the long-term vision of Alive. This means they're more tolerant of mistakes and willing to work closely with us to help iron out bugs. Many of our customers take time out of their days to track down bugs and provide us with complete repro instructions and sample projects.
+Charging early has also meant every one of our customers truly believes in the long-term vision of Alive. This means they're more tolerant of mistakes and willing to work closely with us to help iron out bugs. Many of our customers take time out of their days to track down bugs and provide us with complete repro instructions and sample projects.
 
 ### Conclusion
 
