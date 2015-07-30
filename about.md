@@ -12,13 +12,13 @@ Alive
 ---
 [Alive](https://comealive.io) brings interactive programming to C#. Alive shows you exactly what your code does, as you write it.
 
-[![screenshot of Alive](/images/aboutAlive.png)](https://comealive.io)
+[![screenshot of Alive](/images/AboutAlive.png)](https://comealive.io)
 
 Code Connect
 ---
 [Code Connect](http://codeconnect.io) helps visualize and explore relationships within your code. Navigate the callstack to quickly understand how your code works.
 
-[![screenshot of Alive](/images/aboutCC.png)](http://codeconnect.io)
+[![screenshot of Alive](/images/AboutCC.png)](http://codeconnect.io)
 
 
 ### Contact Us
