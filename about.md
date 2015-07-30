@@ -10,7 +10,7 @@ We build tools that make it easier to read, understand and work with the source 
 
 Alive
 ---
-[Alive](https://comealive.io) brings interactive programming to C#. Alive shows you exactly what your code does, as you write it.
+[Alive](https://comealive.io) brings interactive programming to C#. Alive shows you exactly what your code does, the moment you write it.
 
 [![screenshot of Alive](/images/AboutAlive.png)](https://comealive.io)
 
