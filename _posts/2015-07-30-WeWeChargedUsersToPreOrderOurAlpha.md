@@ -22,7 +22,7 @@ The first thing to understand about programmers is that we're naturally skeptica
 
 So with this in mind: **Why did we do it?** 
 
-It boils down to two reasons:
+It boils down to three reasons:
 
 1. Immediate validation of product-market fit
 2. Allowed us to focus 100% on the product
