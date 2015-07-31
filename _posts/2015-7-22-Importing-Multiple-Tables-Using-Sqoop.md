@@ -23,16 +23,16 @@ Through trial-and-error I have concluded to a relatively simple Bash script, whi
 * All tables to be imported are defined in a format similar to the following 
 
 ```
-# DB            | Table name             | Hive Map Column           | Split By Column      | Select Conditions
+# DB             | Table name             | Data type mapping                                                | Split By Column      | Select Conditions
 
-# SOME DB
-myDatabase       | Customers             | OurWeirdColumn=String     |                      |
-myDatabase       | Invoices              |                           | InvoiceMonth         |
-myDatabase       | Payments              |                           |                      | PaymentType not in ('TEST', 'PLAYING_AROUND')
+myDatabase       | Customers             | OurWeirdColumn=String                                            |                      |
+myDatabase       | Invoices              |                                                                  | InvoiceMonth         |
+myOtherDatabase  | Products              | SomeColumn=Integer,BlobColumn=com.cloudera.sqoop.lib.BlobRef     | SupplierId           |
 ```
 
 * Each column in this CSV table entry has a set of flags/characteristics, which configure the behaviour of the core import script.
 * The script processes one line at a time and imports that table in Hive.
+* You can have more than one data type mapping columns. You can see the full list of supported types [here][4].
 
 No rocket science, just some Bash scripting put to good use.
 
@@ -45,4 +45,5 @@ Hopefully you will find it useful as a starting point.
    [1]: http://sqoop.apache.org/
    [2]: http://oozie.apache.org/
    [3]: https://github.com/sgerogia/sqoop-import-example
+   [4]: http://sgerogia.github.io/Importing-Multiple-Tables-Using-Sqoop/
    
