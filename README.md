@@ -1,4 +1,5 @@
 # Jekyll Now
+-#[EN-US]
 
 **Jekyll** is a static site generator that's perfect for GitHub hosted blogs ([Jekyll Repository](https://github.com/jekyll/jekyll))
 
@@ -14,7 +15,27 @@ In a few minutes you'll be set up with a minimal, responsive blog like the one b
 
 ![Jekyll Now Theme Screenshot](/images/jekyll-now-theme-screenshot.jpg "Jekyll Now Theme Screenshot")
 
+-#[DE-DE]
+
+**Jekyll** ist ein statischer Site-Generator welcher sich perfekt für über GitHub vorgehaltene Blogs eignet ([Jekyll Vorrat](https://github.com/jekyll/jekyll))
+
+**Jekyll Now** macht es einfacher deinen eigenen Jekyll Blog zu erstellen, indem es einen Großteil der anfänglichen Einrichtung eliminiert.
+
+- Du musst die Kommando-Zeile nicht anrühren
+- Du musst ruby, rvm/rbenv, ruby gems :relaxed: weder installieren noch konfigurieren
+- Du brauchst keine LaufZeit-Abhängigkeiten installieren wie : markdown processors, Pygments, etc .
+- Arbeitest du unter Windows , erleichtert es dir die Einrichtung eines Jekyll Blogs sehr
+- Es ist einfach auszuprobieren, gefällt dir dein Jekyll Blog nicht, lösche ihn einfach
+
+In wenigen Minuten bist du bereit , mit einem minimalen , ansprechenden Blog wie diesem ; dies gibt dir mehr Zeit für das Schreiben epischer Blog-Artikel !
+
+![Jekyll Now Theme Screenshot](/images/jekyll-now-theme-screenshot.jpg "Jekyll Now Theme Screenshot")
+
+
+
 ## Quick Start
+-- #[EN-US]
+The following three steps are simple to follow and enable you to publish your first article right from the start :
 
 ### Step 1) Fork Jekyll Now to your User Repository
 
