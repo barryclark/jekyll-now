@@ -1,74 +1,74 @@
 #
-# This file contains configuration flags to customize your site
+# [EN-US] : This file contains configuration flags to customize your site # [DE-DE] : Diese Datei enthält Konfigurations-Fahnen zur Anpassung deiner Site.
 #
 
-# Name of your site (displayed in the header)
-name: Your Name
+# [EN-US] - Name of your site (displayed in the header) -- # [DE-DE] - Name deiner Site (angezeigt im Kopf)
+name: the site-name -- der Site-Name # [EN-US] - name your site -- # [DE-DE] - benenne deine Site
 
-# Short bio or description (displayed in the header)
-description: Web Developer from Somewhere
+# [EN-US] - Short bio or description (displayed in the header) -- # [DE-DE] - Kurze Bio oder Beschreibung (angezeigt im Kopf)
+description: the-site-description -- die-Site-Beschreibung # [EN-US] - Web Developer from Somewhere -- # [DE-DE] - Web-Entwickler von irgendwo
 
-# URL of your avatar or profile pic (you could use your GitHub profile pic)
+# [EN-US] - URL of your avatar or profile pic (you could use your GitHub profile pic) -- # [DE-DE] - URL deines Avatars oder Profil-Bildes (du könntest dein GitHub-Profil-Bild benützen
 avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
 
 #
-# Flags below are optional
+# [EN-US] - Flags below are optional -- # [DE-DE] - Fahnen unterhalb sind optional
 #
 
-# Includes an icon in the footer for each username you enter
+# [EN-US] - Includes an icon in the footer for each username you enter -- # [DE-DE] - Einbinden eines Icon in den Fuß für jeden Nutzer-Namen den du angibst
 footer-links:
   dribbble:
   email:
   facebook:
   flickr:
-  github: barryclark/jekyll-now
+  github: s466531257boss/jekyll-now
   instagram:
   linkedin:
   pinterest:
-  rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
+  rss: # [EN-US] just type anything here for a working RSS icon, make sure you set the "url" above!
   twitter: jekyllrb
-  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
-  youtube: # channel/<your_long_string> or user/<user-name>
-  googleplus: # anything in your profile username that comes after plus.google.com/
+  stackoverflow: # [EN-US] your stackoverflow profile, e.g. "users/50476/bart-kiers"
+  youtube: # [EN-US] channel/<your_long_string> or user/<user-name>
+  googleplus: # [EN-US] anything in your profile username that comes after plus.google.com/
 
 
-# Enter your Disqus shortname (not your username) to enable commenting on posts
-# You can find your shortname on the Settings page of your Disqus account
+# [EN-US] Enter your Disqus shortname (not your username) to enable commenting on posts
+# [EN-US] You can find your shortname on the Settings page of your Disqus account
 disqus:
 
-# Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
+# [EN-US] Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 google_analytics:
 
-# Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
-# Used for Sitemap.xml and your RSS feed
+# [EN-US] Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
+# [EN-US] Used for Sitemap.xml and your RSS feed
 url:
 
-# If you're hosting your site at a Project repository on GitHub pages
-# (http://yourusername.github.io/repository-name)
-# and NOT your User repository (http://yourusername.github.io)
-# then add in the baseurl here, like this: "/repository-name"
+# [EN-US] If you're hosting your site at a Project repository on GitHub pages
+# [EN-US] (http://yourusername.github.io/repository-name)
+# [EN-US] and NOT your User repository (http://yourusername.github.io)
+# [EN-US] then add in the baseurl here, like this: "/repository-name"
 baseurl: ""
 
 #
-# !! You don't need to change any of the configuration flags below !!
+# [EN-US] !! You don't need to change any of the configuration flags below !!
 #
 
 markdown: redcarpet
 highlighter: pygments
 permalink: /:title/
 
-# The release of Jekyll Now that you're using
+# [EN-US] The release of Jekyll Now that you're using
 version: v1.1.0
 
-# Set the Sass partials directory, as we're using @imports
+# [EN-US] Set the Sass partials directory, as we're using @imports
 sass:
-  style: :expanded # You might prefer to minify using :compressed
+  style: :expanded # [EN-US] You might prefer to minify using :compressed
 
-# Use the following plug-ins
+# [EN-US] Use the following plug-ins
 gems:
-  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+  - jekyll-sitemap # [EN-US] Create a sitemap using the official Jekyll sitemap gem
 
-# Exclude these files from your production _site
+# [EN-US] Exclude these files from your production _site
 exclude:
     - Gemfile
     - Gemfile.lock
