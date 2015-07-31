@@ -1,3 +1,5 @@
+*[EN-US]
+
 # Jekyll Now
 
 **Jekyll** is a static site generator that's perfect for GitHub hosted blogs ([Jekyll Repository](https://github.com/jekyll/jekyll))
@@ -5,8 +7,9 @@
 **Jekyll Now** makes it easier to create your Jekyll blog, by eliminating a lot of the up front setup.
 
 - You don't need to touch the command line
-- You don't need to install/configure ruby, rvm/rbenv, ruby gems :relaxed:
+- You don't need to have ruby, rvm/rbenv, ruby gems :relaxed: to install or configure
 - You don't need to install runtime dependancies like markdown processors, Pygments, etc
+
 - If you're on Windows, this will make setting up Jekyll a lot easier
 - It's easy to try out, you can just delete your forked repository if you don't like it
 
@@ -14,45 +17,134 @@ In a few minutes you'll be set up with a minimal, responsive blog like the one b
 
 ![Jekyll Now Theme Screenshot](/images/jekyll-now-theme-screenshot.jpg "Jekyll Now Theme Screenshot")
 
+*[DE-DE]
+
+#Jekyll Jetzt
+
+**Jekyll** ist ein statischer Site-Generator welcher sich perfekt für über GitHub vorgehaltene Blogs eignet ([Jekyll Vorrat](https://github.com/jekyll/jekyll))
+
+**Jekyll Jetzt** macht es einfacher deinen eigenen Jekyll-Blog zu erstellen, indem es einen Großteil der anfänglichen Einrichtung eliminiert.
+
+- Du brauchst nicht die Kommando-Zeile anrühren
+- Du brauchst nicht ruby, rvm/rbenv, ruby gems :relaxed: zu installieren oder konfigurieren
+- Du brauchst nicht LaufZeit-Abhängigkeiten wie : markdown processors, Pygments, etc. zu installieren
+
+- Arbeitest du unter Windows , erleichtert es dir die Einrichtung eines Jekyll Blogs sehr
+- Es ist einfach auszuprobieren, gefällt dir dein Jekyll Blog nicht, lösche ihn einfach
+
+In wenigen Minuten bist du bereit , mit einem minimalen , ansprechenden Blog wie diesem ; dies gibt dir mehr Zeit für das Schreiben epischer Blog-Artikel !
+
+![Jekyll Now Theme Screenshot](/images/jekyll-now-theme-screenshot.jpg "Jekyll Now Theme Screenshot")
+
+*[EN-US]
+
 ## Quick Start
 
-### Step 1) Fork Jekyll Now to your User Repository
+The following three steps are simple to follow and enable you to publish your first article right from the start :
 
-Fork this repo, then rename the repository to yourgithubusername.github.io.
+*[DE-DE]
 
-Your Jekyll blog will often be viewable immediately at <http://yourgithubusername.github.io> (if it's not, you can often force it to build by completing step 2)
+## Schnell-Start
+
+Die folgenden drei Schritte sind einfach nach zu vollziehen und ermöglichen dir deinen ersten Artikel vom Start weg zu veröffentlichen :
+
+*[EN-US]
+
+### Step 1 : Fork Jekyll Now to your User Repository 
+
+Fork this repo , then rename the repository to ' your-GitHub-UserName.github.io '
+
+Your Jekyll blog will often be viewable immediately at <http://yourgithubusername.github.io> ( if it's not, you can often force it to build by completing step 2 )
 
 ![Step 1](/images/step1.gif "Step 1")
 
+*[DE-DE]
+
+### Schritt 1 : Zweige Jekyll Now in deinen Nutzer-Vorrat ab
+
+Zweige diesen Vorrat ab , dann benenne den Vorrat um in ' dein-GitHub-NutzerName.github.io '
+
+Dein Jekyll Blog wird zumeist unmittelbar betrachtbar sein unter <http://dein-GitHub-NutzerName.github.io> ( wenn dem nicht so ist , kannst du dies meist erzwingen durch Vervollständigung des Schritt 2 )
+
+![Schritt 1](/images/step1.gif "Schritt 1")
+
+*[EN-US]
+
 ### Step 2) Customize and view your site
 
-Enter your site name, description, avatar and many other options by editing the _config.yml file. You can easily turn on Google Analytics tracking, Disqus commenting and social icons here too.
+Enter your site name, description, avatar and many other options by editing the ' _config.yml '-file. You can easily turn on Google Analytics tracking, Disqus commenting and social icons here too.
 
-Making a change to _config.yml (or any file in your repository) will force GitHub Pages to rebuild your site with jekyll. Your rebuilt site will be viewable a few seconds later at <http://yourgithubusername.github.io> - if not, give it ten minutes as GitHub suggests and it'll appear soon
+Making a change to _config.yml (or any file in your repository) will force GitHub Pages to rebuild your site with jekyll. Your rebuilt site will be viewable a few seconds later at <http://yourgithubusername.github.io> - if not, give it ten minutes as GitHub suggests and it'll appear soon .
 
-> There are 3 different ways that you can make changes to your blog's files:
+There are 3 different ways that you can make changes to your blog's files :
 
-> 1. Edit files within your new username.github.io repository in the browser at GitHub.com (shown below).
-> 2. Use a third party GitHub content editor, like [Prose by Development Seed](http://prose.io). It's optimized for use with Jekyll making markdown editing, writing drafts, and uploading images really easy.
-> 3. Clone down your repository and make updates locally, then push them to your GitHub repository.
+1. Edit files within your new username.github.io repository in the browser at GitHub.com (shown below).
+
+2. Use a third party GitHub content editor, like e.g. : [Prose by Development Seed](http://prose.io). It's optimized for use with Jekyll making markdown editing, writing drafts, and uploading images really easy.
+
+3. Clone down your repository and make updates locally, then push them to your GitHub repository.
 
 ![_config.yml](/images/config.png "_config.yml")
 
+*[DE-DE]
+
+### Schritt 2) Anpassen und Betrachten deiner Site
+
+Gib deinen Site-Namen an , Beschreibung , Avatar und viele andere Optionen indem du die ' _config.yml '-Datei bearbeitest . Du kannst hier einfachst dein Google Analytics Tracking einschalten , Disqus-Kommentierung und Soziale Icons außerdem .
+
+Das Ändern von ' _config.yml ' ( oder einer anderen Datei deines Vorrates ) wird GitHub Pages dazu zwingen die Site mit Jekyll erneut zu erschaffen . Diese wieder erschaffene Site wird einige Sekunden später betrachtbar sein unter <http://dein-GitHub-NutzerName.github.io> - falls nicht , gedulde dich zehn Minuten wie GitHub es rät und es wird alsbald erscheinen .
+
+Es gibt 3 verschiedene Wege wie du Änderungen an deinen Blog-Dateien vornehmen kannst :
+
+1. Bearbeite Dateien innerhalb deines neuen ' dein-GitHub-NutzerName.github.io '-Vorrates im Browser auf GitHub.com ( unten dargestellt ) .
+
+2. Nutze einen GitHub Inhalts-Editor von Dritten , wie bspw. : [Prose von Development Seed](http://prose.io). Er ist optimiert zur Nutzung mit Jekyll um das Bearbeiten des MarkDowns zu erleichtern , Entwürfe zu schreiben , und Bilder sehr einfach hoch zu laden .
+
+3. Klone deinen Vorrat und mache lokale Aktualisierungen , dann schiebe diese deinen GitHub-Vorrat .
+
+![_config.yml](/images/config.png "_config.yml")
+
+*[EN-US]
+
 ### Step 3) Publish your first blog post
 
-Edit `/_posts/2014-3-3-Hello-World.md` to publish your first blog post. This [Markdown Cheatsheet](http://www.jekyllnow.com/Markdown-Style-Guide/) might come in handy.
+Edit > ' /_posts/2014-3-3-Hello-World.md ' to publish your first blog post. This [Markdown Cheatsheet](http://www.jekyllnow.com/Markdown-Style-Guide/) might come in handy.
 
 ![First Post](/images/first-post.png "First Post")
 
-> You can add additional posts in the browser on GitHub.com too! Just hit the + icon in `/_posts/` to create new content. Just make sure to include the [front-matter](http://jekyllrb.com/docs/frontmatter/) block at the top of each new blog post and make sure the post's filename is in this format: year-month-day-title.md
+> You can add additional posts in the browser on GitHub.com too! Just hit the + icon in ' /_posts/ ' to create new content. Just make sure to include the [front-matter](http://jekyllrb.com/docs/frontmatter/) block at the top of each new blog post and make sure the post's filename is in this format: year-month-day-title.md .
+
+*[DE-DE]
+
+### Schritt 3) Veröffentliche deinen ersten Blog-Artikel
+
+Bearbeite ` /_posts/2014-3-3-Hello-World.md ` um deinen ersten Blog-Artikel zu veröffentlichen . Dieses [MarkDown Kniff-Blatt](http://www.jekyllnow.com/Markdown-Style-Guide/) könnte gelegen kommen .
+
+![Erster Artikel](/images/first-post.png "Erster Artikel")
+
+> Du kannst zusätzliche Artikel in deinem Browser unter GitHub.com hinzufügen ! Drücke lediglich das ' + '-Icon in ` /_posts/ ` um deinen neuen Inhalt zu erstellen . Stelle nur sicher , dass du den [front-matter](http://jekyllrb.com/docs/frontmatter/) Block zu oberst einbindest in jedem neuen Blog-Artikel und beachte des Artikels Datei-Namen im Format: Jahr-Monat-Tag-Titel.md .
+
+*[EN-US]
 
 ## Local Development
 
-1. Install Jekyll and plug-ins in one fell swoop. `gem install github-pages` This mirrors the plug-ins used by GitHub Pages on your local machine including Jekyll, Sass, etc.
+1. Install Jekyll and plug-ins in one fell swoop . >' gem install github-pages ' This mirrors the plug-ins used by GitHub Pages on your local machine including Jekyll, Sass, etc.
 2. Clone down your fork `git clone git@github.com:yourusername/yourusername.github.io.git`
-3. Serve the site and watch for markup/sass changes `jekyll serve`
+3. Serve the site and watch for markup/sass changes via `jekyll serve`
 4. View your website at http://0.0.0.0:4000
 5. Commit any changes and push everything to the master branch of your GitHub user repository. GitHub Pages will then rebuild and serve your website.
+
+*[DE-DE]
+
+## Lokale Entwicklung
+
+1. Installiere Jekyll und Plug-Ins in einem Abwasch . ` gem install github-pages ` Dies spiegelt die von GitHub-Pages genutzten Plug-Ins auf deine Maschine vor Ort inklusive Jekyll, Sass, etc.
+2. Klone deinen Abzweig 'git clone git@github.com:dein-GitHub-NutzerName/dein-GitHub-NutzerName.github.io.git'
+3. Stelle die Site bereit und beachte MarkUp/Sass Änderungen via `jekyll serve`
+4. Betrachte deine Web-site unter http://0.0.0.0:4000
+5. Trage alle Änderungen bei und schiebe alles in den Master-Zweig deines GitHub-Nutzer-Vorrates . GitHub Pages wird sie sodann neu erschaffen und deine Web-Site bereitstellen .
+
+*[EN-US]
 
 ## Moar!
 

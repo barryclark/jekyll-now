@@ -1,74 +1,74 @@
 #
-# This file contains configuration flags to customize your site
+# [EN-US] : This file contains configuration flags to customize your site # [DE-DE] : Diese Datei enthält Konfigurations-Fahnen zur Anpassung deiner Site.
 #
 
-# Name of your site (displayed in the header)
-name: Your Name
+# [EN-US] - Name of your site (displayed in the header) -- # [DE-DE] - Name deiner Site (angezeigt im Kopf)
+name: the site-name -- der Site-Name # [EN-US] - name your site -- # [DE-DE] - benenne deine Site
 
-# Short bio or description (displayed in the header)
-description: Web Developer from Somewhere
+# [EN-US] - Short bio or description (displayed in the header) -- # [DE-DE] - Kurze Bio oder Beschreibung (angezeigt im Kopf)
+description: the-site-description -- die-Site-Beschreibung # [EN-US] - Web Developer from Somewhere -- # [DE-DE] - Web-Entwickler von irgendwo
 
-# URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
+# [EN-US] - URL of your avatar or profile pic (you could use your GitHub profile pic) -- # [DE-DE] - URL deines Avatars oder Profil-Bildes (du könntest dein GitHub-Profil-Bild benützen
+avatar: https://raw.githubusercontent.com/s466531257boss/jekyll-now/master/images/jekyll-logo.png
 
 #
-# Flags below are optional
+# [EN-US] - Flags below are optional -- # [DE-DE] - Fahnen unterhalb sind optional
 #
 
-# Includes an icon in the footer for each username you enter
+# [EN-US] - Includes an icon in the footer for each username you enter -- # [DE-DE] - Einbinden eines Icon in den Fuß für jeden Nutzer-Namen den du angibst
 footer-links:
   dribbble:
   email:
   facebook:
   flickr:
-  github: barryclark/jekyll-now
+  github: s466531257boss/jekyll-now
   instagram:
   linkedin:
   pinterest:
-  rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
-  twitter: jekyllrb
-  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
-  youtube: # channel/<your_long_string> or user/<user-name>
-  googleplus: # anything in your profile username that comes after plus.google.com/
+  rss: # [EN-US] - just type anything here for a working RSS icon, make sure you set the "url" above! -- # [DE-DE] - gib hier irgend etwas an für ein funktionierendes RSS-Icon, stelle sicher du hast "url" oberhalb gesetzt!
+  twitter: # [EN-US ] | [DE-DE] --- Twitter-Name
+  stackoverflow: # [EN-US] - your stackoverflow profile , e.g. "users/User-Number/User-Name" -- [DE-DE] - dein StackOverFlow-Profil , z.B. "users/Nutzer-Nummer/Nutzer-Name"
+  youtube: # [EN-US] - channel/YouTube-Channel-Descriptor or user/YouTube-User-Name -- # [DE-DE] - channel/YouTube-Kanal-Bezeichner oder user/YouTube-Nutzer-Name
+  googleplus: # [EN-US] - anything in your profile username that comes after plus.google.com/ -- # [DE-DE] - alles von deinem Profil-Nutzer-Namen das nach plus.google.com/ kommt
 
 
-# Enter your Disqus shortname (not your username) to enable commenting on posts
-# You can find your shortname on the Settings page of your Disqus account
+# [EN-US] - Enter your Disqus shortname (not your username) to enable commenting on posts -- # [DE-DE] - Gib deinen Disqus Kurz-Namen ( nicht dein Nutzer-Name ) an um das Kommentieren von Artikeln zu ermöglichen
+# [EN-US] - You can find your shortname on the Settings page of your Disqus account -- # [DE-DE] - Du findest deinen Kurz-Namen in der Einstellungs-Seite deines Disqus-Kontos
 disqus:
 
-# Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
+# [EN-US] - Enter your Google Analytics web tracking code ( e.g. : UA-2110908-2 ) to activate tracking -- # [DE-DE] - Gib deinen Web-Tracking-Code aus Google Analytics an ( z.B. : UA-2110908-2 ) zum Aktivieren der Nachverfolgung
 google_analytics:
 
-# Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
-# Used for Sitemap.xml and your RSS feed
+# [EN-US] - Your website URL ( e.g. : http://barryclark.github.io or http://www.barryclark.co ) -- # [DE-DE] - Deine Web-Site-URL ( z.B. : http://s466531257boss.github.io oder http://www.s466531257boss.sk
+# [EN-US] - Used for Sitemap.xml and your RSS feed -- [DE-DE] - Genutzt für Sitemap.xml und deinen RSS-Feed
 url:
 
-# If you're hosting your site at a Project repository on GitHub pages
-# (http://yourusername.github.io/repository-name)
-# and NOT your User repository (http://yourusername.github.io)
-# then add in the baseurl here, like this: "/repository-name"
+# [EN-US] - If you're hosting your site at a Project repository on GitHub pages , e.g. : -- # [DE-DE] - Wenn du deine Site in einem Projekt-Vorrat auf GitHub-Pages vorhältst , z.B. :
+# [EN-US] - ( http://your-User-Name.github.io/Repository-Name ) -- # [DE-DE] - ( http://dein-Nutzer-Name.github.io/Vorrats-Name )
+# [EN-US] - ... and NOT your User repository ( http://your-user-name.github.io ) -- # [DE-DE] - ... und NICHT in deinem Nutzer-Vorrat ( http://dein-Nutzer-Name.github.io )
+# [EN-US] - then add in the baseurl here , like this : "/Repository-Name" -- # [DE-DE] - dann ergänze hier die Basis-URL , wie folgt : "/Vorrats-Name
 baseurl: ""
 
 #
-# !! You don't need to change any of the configuration flags below !!
+# [EN-US] !! You don't need to change any of the configuration flags below !! -- # [DE-DE] - !! Du brauchst keine der Konfigurations-Fahnen unterhalb ändern !!
 #
 
 markdown: redcarpet
 highlighter: pygments
 permalink: /:title/
 
-# The release of Jekyll Now that you're using
+# [EN-US] - The release of ' Jekyll Now ' that you're using -- # [DE-DE] - Die Veröffentlichung von ' Jekyll Now ' , die du nutzt
 version: v1.1.0
 
-# Set the Sass partials directory, as we're using @imports
+# [EN-US] - Setting of the Sass partials directory , as we're using @imports -- # [DE-DE] - Setzen des Sass Anteils-Verzeichnisses , da wir @imports nutzen
 sass:
-  style: :expanded # You might prefer to minify using :compressed
+  style: :expanded # [EN-US] - You might prefer to minify using :compressed -- # [DE-DE] - Du magst Verknappung bevorzugen durch Nutzung von :compressed
 
-# Use the following plug-ins
+# [EN-US] - Use the following plug-ins -- # [DE-DE] - Nutze die folgenden Plug-Ins
 gems:
-  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+  - jekyll-sitemap # [EN-US] - Create a sitemap using the official Jekyll sitemap gem -- # [DE-DE] - Erstelle eine Site-Map durch Nutzung des offiziellen Jekyll-SiteMap-Gem
 
-# Exclude these files from your production _site
+# [EN-US] - Exclude these files from your production _site -- # [DE-DE] - Ausschluss dieser Dateien aus deiner Produktions _site
 exclude:
     - Gemfile
     - Gemfile.lock
