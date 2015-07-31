@@ -1,5 +1,5 @@
 # Jekyll Now
--#[EN-US]
+= [EN-US]
 
 **Jekyll** is a static site generator that's perfect for GitHub hosted blogs ([Jekyll Repository](https://github.com/jekyll/jekyll))
 
@@ -15,7 +15,7 @@ In a few minutes you'll be set up with a minimal, responsive blog like the one b
 
 ![Jekyll Now Theme Screenshot](/images/jekyll-now-theme-screenshot.jpg "Jekyll Now Theme Screenshot")
 
--#[DE-DE]
+= [DE-DE]
 
 **Jekyll** ist ein statischer Site-Generator welcher sich perfekt für über GitHub vorgehaltene Blogs eignet ([Jekyll Vorrat](https://github.com/jekyll/jekyll))
 
@@ -34,7 +34,7 @@ In wenigen Minuten bist du bereit , mit einem minimalen , ansprechenden Blog wie
 
 
 ## Quick Start
--- #[EN-US]
+° # [EN-US] :
 The following three steps are simple to follow and enable you to publish your first article right from the start :
 
 ### Step 1) Fork Jekyll Now to your User Repository
