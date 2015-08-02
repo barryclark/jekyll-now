@@ -48,7 +48,7 @@ $$
 \min\limits_{\theta} \left[ J(\theta) + \frac{\lambda^*}{2}  \| \theta \|^2 \right] - \frac 1 2 \lambda^* R \ \ \text{。} 
 $$
 
-如果我们最优的$\lambda^*$，而是直接指定某个值$\lambda_0$，那对偶问题的求解就等价于带L2正则项的最小化优化问题了：
+如果我们不求解最优的$\lambda^*$，而是直接指定某个值$\lambda_0$，那对偶问题的求解就等价于带L2正则项的最小化优化问题了：
 
 $$
 \min\limits_{\theta} \left[ J(\theta) + \frac{\lambda_0}{2} \| \theta \|^2 \right] \ \ \text{。} 
