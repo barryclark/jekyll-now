@@ -2,7 +2,7 @@
 layout: post
 category: philosophy, psychology
 title: Knowledge, humility, and Dunning-Kruger
-tags: philosophy
+tags: Philosophy
 excerpt: When nerds are unbearable it’s usually because they’re trying too hard to seem smart. But the smarter they are, the less pressure they feel to act smart. So as a rule you can recognize genuinely smart people by their ability to say things like “I don’t know,” “Maybe you’re right,” and “I don’t understand x well enough.”
 ---
 I really enjoyed the Paul Graham post “How to start a startup”. He talks a bit about his litmus test for detecting smarts:
