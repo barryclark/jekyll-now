@@ -1,15 +1,18 @@
 ---
 layout: default
 ---
+
 <div class="posts">
   {% for post in paginator.posts %}
     <article class="post">
-      <small> posted on: <time style="color:#666;font-size:11px;" datetime='{{ post.date | date: "%Y-%m-%d" }}'>{{ post.date | date: "%m/%d/%y" }}</time></small> 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+
+      <h1 class="post-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
       <div class="entry">
         {{ post.excerpt }}
       </div>
+
+      <div class="date"> Written on: <time style="color:#666;font-size:11px;" datetime='{{ post.date | date: "%Y-%m-%d" }}'>{{ post.date | date: "%m/%d/%y" }}</time></div>
 
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
     </article>

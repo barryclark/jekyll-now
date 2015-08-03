@@ -11,10 +11,6 @@ description: Jeffrey Wan's unorganized ramblings on the topics of web developmen
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://avatars0.githubusercontent.com/u/6790201?v=3&s=460
 
-#
-# Flags below are optional
-#
-
 # pagination
 paginate: 5
 paginate_path: "/page:num/"
@@ -51,7 +47,7 @@ url:
 # (http://yourusername.github.io/repository-name)
 # and NOT your User repository (http://yourusername.github.io)
 # then add in the baseurl here, like this: "/repository-name"
-baseurl: ""
+baseurl: "blog"
 
 #
 # !! You don't need to change any of the configuration flags below !!
