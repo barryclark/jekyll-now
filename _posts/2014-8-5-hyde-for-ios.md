@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Introducing Hyde for iOS
+image: /images/HydeIcon.png
 ---
 
 Recently, I walked through [Amit Bijlani](http://twitter.com/paradoxed)'s fantastic Treehouse course ["Build a Game with Sprite Kit"](http://teamtreehouse.com/library/build-a-game-with-sprite-kit), and it really inspired me to dig back into iOS development. I took a basic iOS course back in school right around the time iOS 5 came out. I remember it being a pretty difficult course, as I was just starting to grasp some of the basic principles of writing code.

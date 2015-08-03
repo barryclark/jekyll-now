@@ -6,6 +6,10 @@ layout: default
 
 <article class="post">
 
+	{% if page.image %}
+	<img src="{{ page.image }}" alt="{{page.title}}" style="margin: 10px auto; max-height: 300px;" />
+	{% endif %}
+
 	{% if page.date %}
 	<div class="post-date">
 		<span class="post-date-anchor">
