@@ -3,7 +3,7 @@ layout: page
 permalink: /
 ---
 
-CATNIP Lab is a computatinal and statistical neuroscience group located in Stony Brook University.
+CATNIP Lab is a computational and statistical neuroscience group located in Stony Brook University.
 We design __statistical models__ and __machine learning methods__ specialized for analyzing __neural data__.
 We aim to understand how information and computations are represented and implemented in the brain, both at a single-neuron and systems level.
 We collaborate with experimental labs on important problems in neuroscience, such as sensory coding and perceptual decision-making.
