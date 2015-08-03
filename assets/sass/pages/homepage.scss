@@ -18,7 +18,7 @@
 	h2 {
 		color: $lightGray;
 		margin-top: -5%;
-		font-size: 2em;
+		font-size: 1.5em;
 	}
 }
 
@@ -43,7 +43,8 @@ section, header.header--homepage {
 	}
 }
 
-#about, header.header--homepage {
+//#about,
+header.header--homepage {
 	position: relative;
 
 	.container {
@@ -78,6 +79,7 @@ section, header.header--homepage {
 
 #about {
 	@include clearfix;
+	margin-top: 75px;
 
 	p {
 		margin: 0;

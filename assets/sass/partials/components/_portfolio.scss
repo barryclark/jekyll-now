@@ -58,6 +58,13 @@
     }
   }
 
+
+
+  @include mobile {
+      h3 {display: block;}
+      img {opacity: 0.45;}
+  }
+
   &:hover {
     border-color: $lightBlue;
     img {
