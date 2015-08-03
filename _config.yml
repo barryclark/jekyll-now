@@ -6,7 +6,7 @@
 name: Jeffrey Wan
 
 # Short bio or description (displayed in the header)
-description: I'm a person who likes thinking and writing about web development, poker, and philosophy.
+description: Jeffrey Wan's unorganized ramblings on the topics of web development, poker, and philosophy.
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://avatars0.githubusercontent.com/u/6790201?v=3&s=460
@@ -19,10 +19,13 @@ avatar: https://avatars0.githubusercontent.com/u/6790201?v=3&s=460
 tag_page_layout: tag_page
 tag_page_dir: tag
 
+# pagination
+paginate: 5
+
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email:
+  email: Jwan622@gmail.com
   facebook:
   flickr:
   github: jwan622
@@ -55,7 +58,6 @@ baseurl: ""
 
 #
 # !! You don't need to change any of the configuration flags below !!
-#
 
 markdown: redcarpet
 highlighter: pygments
