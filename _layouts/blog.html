@@ -5,6 +5,7 @@ layout: default
 <div class="blog-page-wrapper">
   {% for post in site.posts %}
     <article class="container posts">
+      <div class="rand-border"></div>
       <!-- {{ content }} -->
       <h3 class="post-title">
         <a href="{{ post.url }}">{{ post.title }}</a></h3>
@@ -16,3 +17,28 @@ layout: default
     </article>
   {% endfor %}
 </div>
+
+<script>
+  // 0=red, 1=pink, 2=purple, 3=deep purp, 4=indigo, 5=blue, 6=light blue,
+  // 7=cyan, 8=teal, 9=green, 10=light green, 11=lime, 12=yellow, 13=amber,
+  // 14=orange, 15=deep orange, 16=brown, 17=grey, 18=blue grey
+  var colorPalette = [
+    "#F44336","#E91E63","#9C27B0","#673AB7","#3F51B5","#2196F3",
+    "#03A9F4","#00BCD4","#009688","#4CAF50","#8BC34A","#CDDC39","#FFEB3B",
+    "#FFC107","#FF9800","#FF5722","#795548","#9E9E9E","#607D8B"];
+
+  var randBorder = document.querySelectorAll(".rand-border");
+  var randomColor;
+
+  for (var i=0; i < randBorder.length; i++) {
+      console.log(randBorder[i]);
+
+      // loop through colors and set random color to random div
+      for (var j=0; j < colorPalette.length; j++) {
+        randomColor = colorPalette[Math.floor(Math.random() * colorPalette.length)];
+        randBorder[i].style.backgroundColor = randomColor;
+        randBorder[i].style.opacity = 0.3;
+      }
+  }
+
+</script>

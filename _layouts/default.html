@@ -9,17 +9,22 @@
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
+  <link href='http://fonts.googleapis.com/css?family=Pontano+Sans|Merriweather:400,900,300,700|Merriweather+Sans:400,800,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
   </head>
 
   <body>
+    {% include svg-icons.html %}
+
     <section class="top top-home">
       <div class="gradient">&nbsp;</div>
+
+      {% assign current = page.url | downcase | split: '/' %}
       <nav class="navbar">
-        <a href="{{ site.baseurl }}/">home</a>
-        <a href="{{ site.baseurl }}/blog">blog</a>
-        <a href="{{ site.baseurl }}/work">work</a>
+        <a href="{{ site.baseurl }}/" {% if current[1] == '/'%}class='current'{% endif %}>home</a>
+        <a href="{{ site.baseurl }}/blog" {% if current[1] == 'blog'%}class='current'{% endif %}>blog</a>
+        <a href="{{ site.baseurl }}/work" {% if current[1] == 'work'%}class='current'{% endif %}>work</a>
       </nav>
 
       {{ content }}
@@ -33,9 +38,32 @@
         <footer class="footer">
           <span>&copy; {{ site.time | date: '%Y' }} Dawit Elias. All rights reserved.</span>
           <div class="contact-container">
-            <a href="#">email icon</a>
-            <a href="#">linkedin icon</a>
-            <a href="#">facebook icon</a>
+            <!-- <a href="mailto:dawitelias14@gmail.com">
+              <svg class="icon icon-email">
+                <use xlink:href="#icon-email"></use>
+              </svg>
+            </a>
+
+            <a href="https://www.linkedin.com/in/dawitelias">
+              <svg class="icon icon-linkedin">
+                <use xlink:href="#icon-linkedin"><a href="#"></a></use>
+              </svg>
+            </a>
+
+            <a href="https://www.facebook.com/dawit.elias">
+              <svg class="icon icon-facebook">
+                <use xlink:href="#icon-facebook"></use>
+              </svg>
+            </a>
+
+            <a href="https://github.com/dawitelias"></a> -->
+
+            <a href="mailto:dawitelias14@gmail.com">email</a>
+            <a href="https://www.linkedin.com/in/dawitelias">linkedin</a>
+            <a href="https://www.facebook.com/dawit.elias">facebook</a>
+            <a href="https://github.com/dawitelias">github</a>
+            <a href="{{ site.baseurl }}/resume.pdf">resume</a>
+
           </div>
         </footer>
       </div>

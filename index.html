@@ -6,7 +6,7 @@ layout: default
     <div class="container">
        <h1 class="site-name">{{ site.name }}</h1>
        <h2 class="site-description">{{ site.description }}</h2>
-       <p>Hi, Dawit here. I'm a designer and developer fascinated in the psychology of design and technology. I'm here to make a user experience that works for you! Feel free to check out some of my work or read my blog!</p>
+       <p class="intro">Hi, Dawit here. I'm a designer and developer fascinated in the psychology of design and technology. I'm here to make a user experience that works for you! Feel free to check out some of my work or read my blog!</p>
        <button class="btn-work">
          <a href="{{ site.baseurl }}/work">work</a>
        </button>
@@ -16,12 +16,19 @@ layout: default
 
 <section class="block-featured-work">
   <div class="container main">
-    <h3>featured work</h3>
-    <div class="featured-work-inner">
-      <div class="hexagon hexagon1"></div>
-      <div class="hexagon hexagon2"></div>
-      <div class="hexagon hexagon3"></div>
-    </div>
+    <h3><strong>featured:</strong> gt site refresh</h3>
+      <div class="featured-work-inner">
+        <p>During the summer and fall semesters of 2014, I was employed as a co-op by Global Thinking, an awesome creative agency in Washington DC.</p>
+
+        <a href="{{ site.baseurl }}/work" class="read-more">Read More</a>
+        <p></p>
+
+        <figure>
+          <img src="/images/gtsite_new.jpg" alt="">
+        </figure>
+        <p class="caption">Here is what the home page looked like when it went live.<br>This is still a work in progress but I am no longer a part of this project.</p>
+      </div>
+
   </div>
 </section>
 
