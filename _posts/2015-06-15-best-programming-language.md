@@ -14,7 +14,7 @@ I researched a lot of programming languages in my journey to the western softwar
 * Scala
 * Go
 * Lisp / Arc / Clojure
-* Javascript / CoffeeScript / TypeScript
+* ECMAScript / Javascript / JScript / CoffeeScript / TypeScript
 * Swift
 
 My thinking was that it would save me a lot of time going forward. I could pick **the best** language and learn from there for immediate application in the real world. 
