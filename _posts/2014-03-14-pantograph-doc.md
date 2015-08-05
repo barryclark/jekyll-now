@@ -3,8 +3,6 @@ title: Partial Mechanical Design of a Pantograph
 layout: post
 ---
 
-*Project*: **[Pantograph](http://ambuc.github.io/pantograph/).**
-
 <iframe src="https://player.vimeo.com/video/31933085?color=ffffff&title=0&byline=0&portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/31933085">Drawing Apparatus</a> from <a href="https://vimeo.com/user7412944">Robert Howsare</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
 I was inspired by the above video (depicting a set of record players in control of a [pantograph](http://en.wikipedia.org/wiki/Pantograph)) to derive a closed-form solution for the vector position of the pen in terms of the angles of rotation for each of the arms
@@ -67,6 +65,10 @@ At a loss with the tools of continuous mathematics, I turned to discrete simulat
 
 ##[First Demo](http://ambuc.github.io/pantograph/alpha.html)
 
+##First Demo
+<IFRAME SRC="http://ambuc.github.io/pantograph/alpha.html">
+</IFRAME>
+
 ##[Second Demo](http://ambuc.github.io/pantograph/beta.html)
 
-##[Third Demo](http://ambuc.github.io/pantograph/delta.html)
+##[Third Demo](http://ambuc.github.io/pantograph/gamma.html)
