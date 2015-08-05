@@ -65,8 +65,8 @@ At a loss with the tools of continuous mathematics, I turned to discrete simulat
 
 #Demos
 
-##[First](http://ambuc.github.io/pantograph/alpha.html)
+##[Mouse-driven geometry demo of pantograph behavior](http://ambuc.github.io/pantograph/alpha.html)
 
-##[Second](http://ambuc.github.io/pantograph/beta.html)
+##[Mouse-driven geometry demo of point names](http://ambuc.github.io/pantograph/beta.html)
 
-##[Third](http://ambuc.github.io/pantograph/gamma.html)
+##[Sample space of points available from an array of rotational values](http://ambuc.github.io/pantograph/gamma.html)
