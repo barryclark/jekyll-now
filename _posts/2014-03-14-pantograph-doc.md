@@ -59,7 +59,7 @@ $$\vec{U} = \vec{N} + \left(d\ \angle\ \tan^{-1}\left( m_{\overline{NU}} \right)
 
 Distressingly, this appears to be a function that cannot be resolved into a one-to-one mapping from the vector space $(\phi_a, \phi_b)$ onto the $(x,y)$ coordinate system of the pen by any conventional means: that is, for each $(x,y)$ on the pad, there are two or three sets of $(\phi_a, \phi_b)$ positions that could achieve that position.
 
-At a loss with the tools of continuous mathematics, I turned to discrete simulations: a set of four processing.js simulations illustrating what turned out to be a very complex space.
+At a loss with the tools of continuous mathematics, I turned to discrete simulations: a set of three processing.js simulations illustrating what turned out to be a very complex space.
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.4.8/processing.min.js"></script>
 
