@@ -3,6 +3,8 @@ title: Partial Mechanical Design of a Pantograph
 layout: post
 ---
 
+<br/>
+
 <iframe src="https://player.vimeo.com/video/31933085?color=ffffff&title=0&byline=0&portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/31933085">Drawing Apparatus</a> from <a href="https://vimeo.com/user7412944">Robert Howsare</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
 I was inspired by the above video (depicting a set of record players in control of a [pantograph](http://en.wikipedia.org/wiki/Pantograph)) to derive a closed-form solution for the vector position of the pen in terms of the angles of rotation for each of the arms
