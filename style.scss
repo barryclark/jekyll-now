@@ -18,6 +18,10 @@ html {
   font-size: 100%;
 }
 
+html, body {
+  height: 100%;
+}
+
 body {
   background: rgb(245,245,245);
   font: 18px/1.4 $helvetica;
@@ -381,7 +385,12 @@ nav {
     font-size: 14px;
     text-align: center;
     font-family: 'Pontano Sans', sans-serif;
+    font-style: italic;
     margin: 0;
+
+    @include mobile {
+      text-align: left;
+    }
   }
 
   .read-more {
@@ -458,6 +467,12 @@ nav {
     font-size: 14px;
     text-align: center;
     font-family: 'Pontano Sans', sans-serif;
+    font-style: italic;
+
+    @include mobile {
+      text-align: left;
+      width: 80%;
+    }
   }
 
   figure {
@@ -593,6 +608,12 @@ nav {
   }
 }
 
+//
+//
+// footer
+//
+//
+
 .wrapper-footer {
   margin-top: 40px;
   border-top: 1px solid rgb(248,248,248);
@@ -618,6 +639,11 @@ footer {
   align-items: center;
   justify-content: center;
 
+  @include mobile {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
+
   span {
     flex: 1;
     flex-direction: row;
@@ -625,15 +651,22 @@ footer {
   }
 
   .contact-container {
-    flex: 1;
+    flex: 2;
     flex-direction: row;
-    text-align: center;
+    align-self: flex-end;
+    text-align: right;
 
     a {
       padding-left: 20px;
       padding-right: 20px;
       text-decoration: none;
       color: rgba(68,68,68,0.8);
+      transition: padding .4s;
+
+      @include mobile {
+        padding-left: 13px;
+        padding-right: 13px;
+      }
     }
 
     .icon {
@@ -643,11 +676,31 @@ footer {
     	fill: currentColor;
       font-size: 32px;
     }
-  }
-
+  } // contact container
 } // footer
 
-/* blog */
+@media screen and (max-width: 746px) {
+  footer {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+
+    span {
+      font-size: small;
+    }
+
+    .contact-container {
+      margin-bottom: 2.8%;
+      text-align: center;
+      align-self: center;
+    }
+  }
+} // media query
+
+//
+//
+// blog
+//
+//
 
 .blog-page-wrapper {
   display: flex;
@@ -718,8 +771,11 @@ footer {
 
 }
 
-
-/* blog */
+//
+//
+// work page
+//
+//
 
 @keyframes load-change-case {
   from { opacity: 0; }
@@ -794,7 +850,52 @@ footer {
     color: gray;
     font-size: 14px;
   }
+}
 
+//
+//
+// 404 page
+//
+//
+
+.error-container {
+  flex: 1;
+  height: calc(100vh - 42px); // viewport height - navbar height
+
+  .error-container-inner {
+    @include vertical-align;
+  }
+
+  .error-p1 {
+    font: 22px AvenirNext-UltraLight, sans-serif;
+    margin: auto;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    color: red;
+    opacity: 0.3;
+    text-transform: uppercase;
+  }
+
+  .error-h1 {
+    font: 8rem AvenirNext-UltraLight, sans-serif;
+    margin: auto;
+    text-align: center;
+    color: rgba(0,0,0,0.7);
+  }
+
+  .error-p2 {
+    font: 22px AvenirNext-UltraLight, sans-serif;
+    margin: auto;
+    text-align: center;
+
+    @include mobile {
+      width: 100%;
+      font-size: 18px;
+      padding: 0 1.5rem;
+      margin-bottom: 4%;
+    }
+  }
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
