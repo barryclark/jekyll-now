@@ -5,7 +5,10 @@ layout: post
 
 *Project*: **[Subway](http://ambuc.github.io/subway/).**
 
-![alt](/images/subway_thumbnail.png)
+<!-- ![alt](/images/subway_thumbnail.png) -->
+
+[<img src="/images/subway_thumbnail.png">](/subway)
+
 
 Here I attempted to render the NYC Subway system as a [force-directed graph](http://en.wikipedia.org/wiki/Force-directed_graph_drawing) in [d3.js](http://d3js.org/). The purpose of a force-directed graph is to
 
