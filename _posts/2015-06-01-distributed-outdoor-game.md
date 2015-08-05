@@ -5,7 +5,6 @@ layout: post
 
 *Project*: currently down for maintenance.
 
-
 ![alt text](https://raw.githubusercontent.com/ambuc/hideandseek/master/map.png)
 
 #0) The Pre-Game
