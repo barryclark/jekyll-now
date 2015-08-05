@@ -276,7 +276,6 @@ nav {
 
   // introduction paragraph
   .intro {
-    // font-family: 'Merriweather', serif;
     font-family: 'Pontano Sans', sans-serif;
     font-size: 21px;
     line-height: 1.9;
@@ -471,7 +470,6 @@ nav {
 
     @include mobile {
       text-align: left;
-      width: 80%;
     }
   }
 
@@ -479,9 +477,12 @@ nav {
     width: 80%;
     margin: 20px auto;
 
+    @include mobile {
+      width: 100%;
+    }
   }
+} // card
 
-}
 .card:nth-child(even){
   animation-name: fly-in-from-right;
   animation-delay: 0.5s;
@@ -664,8 +665,8 @@ footer {
       transition: padding .4s;
 
       @include mobile {
-        padding-left: 13px;
-        padding-right: 13px;
+        padding-left: 10px;
+        padding-right: 10px;
       }
     }
 
