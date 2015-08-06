@@ -17,7 +17,7 @@ I am a huge believer in the polyglot persistence story. That said, In my mind [p
 
 This leads me to my talk entitled: "[MongoDB Performance Tuning for MySQL DBAs and Developers]( https://www.percona.com/live/europe-amsterdam-2015/sessions/mongodb-performance-tuning-dbas-and-developers)". In this talk I take a peek at MongoDB performance but from the perspective of the Polyglot DBA. I talk about how to manage performance but using a common framework that DBA's and Developers familiar with relational databases would be familiar with.
 
-I hope you stop by for the talk and keep me honest. If you use the code "SeeMeTalk" when registering you will save 25 Euro's. We will be tweetering at [#PerconaLive](https://twitter.com/hashtag/PerconaLive?src=hash)
+I hope you stop by for the talk and keep me honest. If you use the code "SeeMeTalk" when [registering](https://www.percona.com/live/europe-amsterdam-2015/registration) you will save 25 Euro's. We will be tweetering at [#PerconaLive](https://twitter.com/hashtag/PerconaLive?src=hash)
 
 I will also be on the Keynote panel, it should be awesome.
 
