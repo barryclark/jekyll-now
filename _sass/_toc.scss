@@ -1,0 +1,71 @@
+/* ==========================================================================
+   Table of contents
+   ========================================================================== */
+
+/*
+   Page table of contents
+   ========================================================================== */
+
+.toc {
+  margin-left: -1 * $gutter;
+  margin-right: -1 * $gutter;
+  @include media($medium) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  font-family: $alt-font;
+  ul {
+    margin-top: $gutter;
+    margin-bottom: $gutter;
+    border: 1px solid $border-color;
+    @include media($medium) {
+      border-radius: $border-radius;
+    }
+  }
+  li {
+    @include font-size(14,no,16);
+    @include media($small) {
+      @include font-size(16,no,18);
+    }
+    border-bottom: 1px solid $border-color;
+    > a {
+      display: block;
+      padding: 7px 1.618rem;
+      color: $text-color;
+      border-left: 2px solid transparent;
+      &:hover,
+      &:focus {
+        background: mix($white, $border-color, 5%);
+      }
+    }
+  }
+  h6 {
+    margin: 0;
+    padding: 7px 1.618rem;
+    background: $table-stripe-color;
+    &:hover {
+      background: mix($white, $border-color, 5%);
+    }
+    a {
+      color: $text-color;
+    }
+  }
+}
+
+/*
+   1/4 wide table of contents to be used as a sidebar (left aligned)
+   ========================================================================== */
+
+.toc-left {
+  @include span-columns(12);
+  @include media($medium) {
+    @include span-columns(4);
+  }
+  margin-left: 0;
+  ul {
+    margin-top: 0;
+    @include media($small) {
+      margin-bottom: 0.5 * $gutter;
+    }
+  }
+}

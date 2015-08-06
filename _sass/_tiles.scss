@@ -1,0 +1,45 @@
+/* ==========================================================================
+   Tiles
+   ========================================================================== */
+
+.tile {
+  @include outer-container;
+  margin-bottom: $gutter;
+  @include media($micro) {
+    @include fill-parent;
+  }
+  @include media(new-breakpoint(min-width em(480) 12)) {
+    @include span-columns(3);
+    @include omega(4n);
+  }
+  .entry-date {
+    @include font-size(16,no);
+    color: lighten($text-color,25);
+  }
+  .post-title {
+    @include font-size(18,no);
+  }
+  .post-excerpt {
+    @include font-size(16);
+  }
+  .post-teaser {
+    position: relative;
+    display: block;
+    &:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: rgba($base-color,0);
+      pointer-events: none;
+      @include transition(background 0.3s);
+    }
+    &:hover {
+      &:after {
+        background: rgba($base-color,0.2);
+      }
+    }
+  }
+}

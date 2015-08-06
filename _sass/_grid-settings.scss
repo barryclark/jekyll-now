@@ -1,0 +1,15 @@
+/* ==========================================================================
+   Grid settings for Neat
+   ========================================================================== */
+
+@import "vendor/neat/neat-helpers";
+
+// Change the grid settings
+$visual_grid: false;
+
+// Define your breakpoints
+$short: new-breakpoint(max-height em(700) 12);
+$micro: new-breakpoint(min-width em(240) max-width em(480) 12);
+$small: new-breakpoint(min-width em(600) 12);
+$medium: new-breakpoint(min-width em(900) 12);
+$large: new-breakpoint(min-width em(1280) 12);
