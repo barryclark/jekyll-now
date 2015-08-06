@@ -28,9 +28,9 @@ In this example, $X$ and $Y$ are variables, which get replaced iteratively with 
 
 At a depth of 0, we have only the initial string: $FX$.
 
-At a depth of 1, we get $FX \rightarrow F[X] \rightarrow F[X+YF+] \rightarrow FX+YF+$.
+At a depth of 1, we get $FX \longrightarrow F[X] \longrightarrow F[X+YF+] \longrightarrow FX+YF+$.
 
-At a depth of 2, we get $FX+YF+ \rightarrow F[X]+[Y]F+ \rightarrow F[X+YF+]+[-FX-Y]F+ \rightarrow FX+YF++-FX-YF+$. You can see where this is going. 
+At a depth of 2, we get $FX+YF+ \longrightarrow F[X]+[Y]F+ \longrightarrow F[X+YF+]+[-FX-Y]F+ \longrightarrow FX+YF++-FX-YF+$. You can see where this is going. 
 
 The dragon curve takes a number of iterations to get going, but many of the other curves show high levels of self-similarity at a depth of only 1 or 2. It depends on the rewriting rules.
 
