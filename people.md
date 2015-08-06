@@ -17,8 +17,24 @@ permalink: /people/
  * 2006–2010 PhD under José C. Príncipe (University of Florida)
 
 {: .person-name }
-## Lab member #1
+## Yuan Zhao
+![Cartoon MRI head](/images/MRI_brain_outline_memming.png){: .profile-photo }
+
+* PhD student, [Department of Applied Mathematics and Statistics](http://www.ams.sunysb.edu/)
+
+[//]: # ## Matthew Sun
+[//]: # ![Cartoon MRI head](/images/MRI_brain_outline_memming.png){: .profile-photo }
+[//]: # 
+[//]: # ## Michael Li
+[//]: # ![Cartoon MRI head](/images/MRI_brain_outline_memming.png){: .profile-photo }
+[//]: # 
+[//]: # * M. Bennett High, Salisbury, Maryland
+[//]: # * Simons Summer Research Program (2015)
+
+## Future lab member
 ![Cartoon MRI head](/images/MRI_brain_outline_memming.png){: .profile-photo }
 
 * This could be you!
 * We are [hiring]({% post_url 2015-4-21-Hiring %})!!
+
+[//]: # # Former members
