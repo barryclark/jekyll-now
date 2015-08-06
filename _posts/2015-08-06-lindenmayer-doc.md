@@ -10,15 +10,17 @@ layout: post
 
 **L-systems** are formal grammar structures used in the study of both botany and mathematics, usually to simulate iterative or recursive structures, such as algae or fractals. In this case, we employ them to render fractals.
 
-As noted, in the [Wikipedia article](https://en.wikipedia.org/wiki/L-system) on L-systems (from which much of this math is cribbed), an L-system can be represented by the tuple $\v G = (V, \omega, P)$  
-> where $\v G$ is the _alphabet_,  
-> $\omega$ is the _seed_, the first string, and   
-> $P$ is the set of _production rules_, by which the current string is replaced by definitions from the alphabet.
+As noted, in the [Wikipedia article](https://en.wikipedia.org/wiki/L-system) on L-systems (from which much of this math is cribbed), an L-system can be represented by the tuple $$\v G = (V, \omega, P)$$
+
+where $\v G$ is the _alphabet_,  
+$\omega$ is the _seed_, the first string, and   
+$P$ is the set of _production rules_, by which the current string is replaced by definitions from the alphabet.
 
 Let's take the famous Dragon Curve for example. Here,  
-> $\v G = [X, Y]$,  
-> $\omega = FX$, and  
-> $P = (X \rightarrow X+YF+, Y \rightarrow -FX-Y)$. 
+
+$\v G = [X, Y]$,  
+$\omega = FX$, and  
+$P = (X \rightarrow X+YF+, Y \rightarrow -FX-Y)$. 
 
 In this example, $X$ and $Y$ are variables, which get replaced iteratively with the definitions in $P$; $+$ and $-$ are _right_ and _left_ turns, respectively, and $F$ means _go forwards_.
 
