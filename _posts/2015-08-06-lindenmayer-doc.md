@@ -22,24 +22,24 @@ Let's take the famous Dragon Curve for example. Here,
 
 - $\v G = [X, Y]$,  
 - $\omega = FX$, and  
-- $P = (X \rightarrow X+YF+, Y \rightarrow -FX-Y)$. 
+- $P = (X \longrightarrow X+YF+,\quad Y \longrightarrow -FX-Y)$. 
 
 In this example, $X$ and $Y$ are variables, which get replaced iteratively with the definitions in $P$; $+$ and $-$ are _right_ and _left_ turns, respectively, and $F$ means _go forwards_.
 
-At a depth of 0, we have only the initial string: 
+At a depth of 0, we have only the initial string $\omega$: 
 
 - $FX$
 
 At a depth of 1, we get 
 
-- $\qquad FX$
+- $\phantom{\longrightarrow} FX$
 - $\longrightarrow F[X]$
 - $\longrightarrow F[X+YF+]$
 - $\longrightarrow FX+YF+$
 
 At a depth of 2, we get 
 
-- $\qquad FX+YF+$
+- $\phantom{\longrightarrow} FX+YF+$
 - $\longrightarrow F[X]+[Y]F+$
 - $\longrightarrow F[X+YF+]+[-FX-Y]F+$
 - $\longrightarrow FX+YF++-FX-YF+$
