@@ -32,14 +32,14 @@ $FX$
 
 At a depth of 1, we get 
 
-$FX \longrightarrow F[X]$
-$\phantom{FX} \longrightarrow F[X+YF+]$
+$FX \longrightarrow F[X]$  
+$\phantom{FX} \longrightarrow F[X+YF+]$  
 $\phantom{FX} \longrightarrow FX+YF+$
 
 At a depth of 2, we get 
 
-$FX+YF+ \longrightarrow F[X]+[Y]F+$
-$\phantom{FX+YF+} \longrightarrow F[X+YF+]+[-FX-Y]F+$
+$FX+YF+ \longrightarrow F[X]+[Y]F+$  
+$\phantom{FX+YF+} \longrightarrow F[X+YF+]+[-FX-Y]F+$  
 $\phantom{FX+YF+} \longrightarrow FX+YF++-FX-YF+$
 
 You can see where this is going. 
