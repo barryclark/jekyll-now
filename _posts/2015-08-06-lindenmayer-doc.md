@@ -6,7 +6,7 @@ layout: post
 [<img src="/images/lindenmayer_thumbnail.png">](/lindenmayer)
 
 
-#Lindenmayer Systems
+##About Lindenmayer Systems
 
 **L-systems** are formal grammar structures used in the study of both botany and mathematics, usually to simulate iterative or recursive structures, such as algae or fractals. In this case, we employ them to render fractals.
 
@@ -15,6 +15,8 @@ As noted, in the [Wikipedia article](https://en.wikipedia.org/wiki/L-system) on 
 where $\v G$ is the _alphabet_,  
 $\omega$ is the _seed_, the first string, and   
 $P$ is the set of _production rules_, by which the current string is replaced by definitions from the alphabet.
+
+##Dragon Curve
 
 Let's take the famous Dragon Curve for example. Here,  
 
@@ -32,7 +34,7 @@ At a depth of 2, we get $FX+YF+ \rightarrow F[X]+[Y]F+ \rightarrow F[X+YF+]+[-FX
 
 The dragon curve takes a number of iterations to get going, but many of the other curves show high levels of self-similarity at a depth of only 1 or 2. It depends on the rewriting rules.
 
-#Design of the Application
+##Design of the Application
 
 [Josh Mermelstein](https://github.com/JoshMermel) and I wrote a very simple Python script which can parse these sorts of string rules, stored in a dictionary (later, a Javascript object). It then iteratively *replaces* the necessary strings, *swaps* out those strings for an array of commands, and then *evaluates* each of those commands. Using [Turtle Graphics](https://en.wikipedia.org/wiki/Turtle_graphics), Python then drew that pattern on-screen. The webapp is simply a javascript port of the same code, with the ability to modify the constants and redraw the fractal in real time.
 
