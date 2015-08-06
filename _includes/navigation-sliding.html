@@ -1,0 +1,17 @@
+<nav role="navigation" id="js-menu" class="sliding-menu-content">
+  <h5>{{ site.title }} <span>Table of Contents</span></h5>
+  <ul class="menu-item">
+    {% for link in site.data.navigation %}<li>
+      <a href="{{ site.url }}{{ link.url }}">
+        {% if link.image %}<img src="{{ site.url }}/images/{{ link.image }}" alt="teaser" class="teaser">{% endif %}
+        <div class="title">{{ link.title }}</div>
+        {% if link.excerpt %}<p class="excerpt">{{ link.excerpt }}</p>{% endif %}
+      </a>
+    </li>{% endfor %}
+  </ul>
+</nav>
+<button type="button" id="js-menu-trigger" class="sliding-menu-button lines-button x2" role="button" aria-label="Toggle Navigation">
+  <span class="nav-lines"></span>
+</button>
+
+<div id="js-menu-screen" class="menu-screen"></div>

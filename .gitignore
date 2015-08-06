@@ -7,3 +7,9 @@ Gemfile
 Gemfile.lock
 node_modules
 package.json
+*.sublime-project
+*.sublime-workspace
+codekit-config.json
+node_modules
+_asset_bundler_cache
+.sass-cache

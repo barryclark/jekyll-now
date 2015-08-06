@@ -1,0 +1,130 @@
+/* ==========================================================================
+   ANIMATED 3 LINE NAVICONS
+   https://github.com/SaraSoueidan/navicon-transformicons
+   ========================================================================== */
+
+/* Common to all three-liners */
+
+@mixin line {
+  display: inline-block;
+  width: $button-size;
+  height: $button-size/7;
+  background: $white;
+  transition: $transition;
+}
+
+.nav-lines {
+  @include line;
+  position: relative;
+  &:before, &:after {
+   @include line;
+    position: absolute;
+    left:0;
+    content: '';
+      transform-origin: $button-size/14 center;
+  }
+  &:before {
+    top: $button-size/4;
+  }
+  &:after {
+    top: -$button-size/4;
+  }
+}
+
+.lines-button:hover {
+  .nav-lines {
+    &:before {
+      top: $button-size/3.5;
+    }
+    &:after {
+      top: -$button-size/3.5;
+    }
+  }
+}
+
+/* For both the arrow up and left icons */
+
+.lines-button.arrow.close {
+  .nav-lines {
+    &:before,
+    &:after {
+      top: 0;
+      width: $button-size/1.8;
+    }
+    &:before {
+      transform: rotate3d(0,0,1,40deg);
+    }
+    &:after {
+      transform: rotate3d(0,0,1,-40deg);
+    }
+  }
+}
+
+/* Arrow up only: just rotate by 90degrees */
+
+.lines-button.arrow-up.close {
+  transform: scale3d(.8,.8,.8) rotate3d(0, 0, 1,90deg);
+}
+
+/* Three-lines to minus only */
+
+.lines-button.minus.close {
+  .nav-lines {
+    &:before, &:after {
+      transform: none;
+      top: 0;
+      width: $button-size;
+    }
+  }
+}
+
+/* Three-lines to x */
+
+.lines-button.x.close{
+  .nav-lines {
+    background: transparent;
+    &:before, &:after{
+      transform-origin: 50% 50%;
+      top: 0;
+      width: $button-size;
+    }
+    &:before{
+      transform: rotate3d(0,0,1,45deg);
+    }
+    &:after{
+      transform: rotate3d(0,0,1,-45deg);
+    }
+  }
+}
+
+/* Three-lines to x method 2 */
+
+.lines-button.x2 {
+  .nav-lines {
+    transition: background .3s .5s ease;
+    &:before, &:after {
+      /* set transform origin */
+      transform-origin: 50% 50%;
+      transition: top .3s .6s ease, -webkit-transform .3s ease;
+      transition: top .3s .6s ease, transform .3s ease;
+    }
+  }
+}
+.lines-button.x2.close {
+  .nav-lines {
+    transition: background .3s 0s ease;
+    background: transparent;
+    &:before, &:after {
+      transition: top .3s ease, -webkit-transform .3s .5s ease; /* delay the formation of the x till the minus is formed */
+      transition: top .3s ease, transform .3s .5s ease; /* delay the formation of the x till the minus is formed */
+      top: 0;
+      width: $button-size;
+    }
+    &:before {
+      transform: rotate3d(0,0,1,45deg);
+    }
+    &:after {
+      transform: rotate3d(0,0,1,-45deg);
+    }
+  }
+}
