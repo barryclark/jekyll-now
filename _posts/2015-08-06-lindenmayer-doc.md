@@ -32,17 +32,15 @@ At a depth of 0, we have only the initial string $\omega$:
 
 At a depth of 1, we get 
 
-- $\phantom{\longrightarrow} FX$
-- $\longrightarrow F[X]$
-- $\longrightarrow F[X+YF+]$
-- $\longrightarrow FX+YF+$
+- $FX \longrightarrow F[X]$
+- $\phantom{FX} \longrightarrow F[X+YF+]$
+- $\phantom{FX} \longrightarrow FX+YF+ \qed$
 
 At a depth of 2, we get 
 
-- $\phantom{\longrightarrow} FX+YF+$
-- $\longrightarrow F[X]+[Y]F+$
-- $\longrightarrow F[X+YF+]+[-FX-Y]F+$
-- $\longrightarrow FX+YF++-FX-YF+$
+- $FX+YF+ \longrightarrow F[X]+[Y]F+$
+- $\phantom{FX+YF+} \longrightarrow F[X+YF+]+[-FX-Y]F+$
+- $\phantom{FX+YF+} \longrightarrow FX+YF++-FX-YF+ \qed$
 
 You can see where this is going. 
 
