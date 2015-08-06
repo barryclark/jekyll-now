@@ -12,25 +12,39 @@ layout: post
 
 As noted, in the [Wikipedia article](https://en.wikipedia.org/wiki/L-system) on L-systems (from which much of this math is cribbed), an L-system can be represented by the tuple $$\v G = (V, \omega, P)$$
 
-where $\v G$ is the _alphabet_,  
-$\omega$ is the _seed_, the first string, and   
-$P$ is the set of _production rules_, by which the current string is replaced by definitions from the alphabet.
+- where $\v G$ is the _alphabet_,  
+- $\omega$ is the _seed_, the first string, and   
+- $P$ is the set of _production rules_, by which the current string is replaced by definitions from the alphabet.
 
 ##Dragon Curve
 
 Let's take the famous Dragon Curve for example. Here,  
 
-$\v G = [X, Y]$,  
-$\omega = FX$, and  
-$P = (X \rightarrow X+YF+, Y \rightarrow -FX-Y)$. 
+- $\v G = [X, Y]$,  
+- $\omega = FX$, and  
+- $P = (X \rightarrow X+YF+, Y \rightarrow -FX-Y)$. 
 
 In this example, $X$ and $Y$ are variables, which get replaced iteratively with the definitions in $P$; $+$ and $-$ are _right_ and _left_ turns, respectively, and $F$ means _go forwards_.
 
-At a depth of 0, we have only the initial string: $FX$.
+At a depth of 0, we have only the initial string: 
 
-At a depth of 1, we get $FX \longrightarrow F[X] \longrightarrow F[X+YF+] \longrightarrow FX+YF+$.
+- $FX$
 
-At a depth of 2, we get $FX+YF+ \longrightarrow F[X]+[Y]F+ \longrightarrow F[X+YF+]+[-FX-Y]F+ \longrightarrow FX+YF++-FX-YF+$. You can see where this is going. 
+At a depth of 1, we get 
+
+- $\qquad FX$
+- $\longrightarrow F[X]$
+- $\longrightarrow F[X+YF+]$
+- $\longrightarrow FX+YF+$
+
+At a depth of 2, we get 
+
+- $\qquad FX+YF+$
+- $\longrightarrow F[X]+[Y]F+$
+- $\longrightarrow F[X+YF+]+[-FX-Y]F+$
+- $\longrightarrow FX+YF++-FX-YF+$
+
+You can see where this is going. 
 
 The dragon curve takes a number of iterations to get going, but many of the other curves show high levels of self-similarity at a depth of only 1 or 2. It depends on the rewriting rules.
 
