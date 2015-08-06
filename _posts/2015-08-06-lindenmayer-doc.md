@@ -10,16 +10,15 @@ layout: post
 
 **L-systems** are formal grammar structures used in the study of both botany and mathematics, usually to simulate iterative or recursive structures, such as algae or fractals. In this case, we employ them to render fractals.
 
-As noted, in the [Wikipedia article](https://en.wikipedia.org/wiki/L-system) on L-systems (from which much of this math is cribbed),  
-$$\v G = (V, \omega, P)$$  
-where $\v G$ is the _alphabet_,  
-$\omega$ is the _seed_, the first string, and   
-$P$ is the set of _production rules_, by which the current string is replaced by definitions from the alphabet.
+As noted, in the [Wikipedia article](https://en.wikipedia.org/wiki/L-system) on L-systems (from which much of this math is cribbed), an L-system can be represented by the tuple $\v G = (V, \omega, P)$  
+> where $\v G$ is the _alphabet_,  
+> $\omega$ is the _seed_, the first string, and   
+> $P$ is the set of _production rules_, by which the current string is replaced by definitions from the alphabet.
 
 Let's take the famous Dragon Curve for example. Here,  
-$\v G = [X, Y]$,  
-$\omega = FX$, and  
-$P = (X \rightarrow X+YF+, Y \rightarrow -FX-Y)$. 
+> $\v G = [X, Y]$,  
+> $\omega = FX$, and  
+> $P = (X \rightarrow X+YF+, Y \rightarrow -FX-Y)$. 
 
 In this example, $X$ and $Y$ are variables, which get replaced iteratively with the definitions in $P$; $+$ and $-$ are _right_ and _left_ turns, respectively, and $F$ means _go forwards_.
 
@@ -41,7 +40,7 @@ The dragon curve takes a number of iterations to get going, but many of the othe
 	from turtle import *
 
 	//recursively rewrites $str to a given $depth using an $alphabet
-	def increase_depth(str, alphabet, depth):
+	def rewrite(str, alphabet, depth):
 	    if depth == 0:
 	        steps = ''
 	        for char in str:
@@ -51,7 +50,7 @@ The dragon curve takes a number of iterations to get going, but many of the othe
 	                steps += char
 	        return steps
 	    else:
-	        return increase_depth(increase_depth(str, alphabet, 0), alphabet, depth-1)
+	        return rewrite(rewrite(str, alphabet, 0), alphabet, depth-1)
 
 	//translates a series of $steps into commands using an $alphabet
 	def translate(steps, alphabet):
@@ -67,11 +66,20 @@ The dragon curve takes a number of iterations to get going, but many of the othe
 	    depth = 3
 
 	    //the entire fractal is here
-	    rewritingRules = {'L':'+RF-LFL-FR+', 'R':'-LF+RFR+FL-'}
-	    alphabet = {'L':'', 'R':'', '+':'T.lt(90)','-':'T.rt(90)', 'F':'T.fd(segmentLength)'}
+	    rewritingRules = {
+	    	'L' : '+RF-LFL-FR+' , 
+	    	'R' : '-LF+RFR+FL-'
+	    }
+	    alphabet = {
+	    	'L' : '' , 
+	    	'R' : '' , 
+	    	'+' : 'T.lt(90)' ,
+	    	'-' : 'T.rt(90)' , 
+	    	'F' : 'T.fd(segmentLength)'
+	    }
 	    seed = 'L'
 
-	    steps = increase_depth(seed, rewritingRules, depth)
+	    steps = rewrite(seed, rewritingRules, depth)
 
 	    instructions = translate(steps, alphabet)
 
