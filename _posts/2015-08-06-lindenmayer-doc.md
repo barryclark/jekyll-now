@@ -26,21 +26,21 @@ Let's take the famous Dragon Curve for example. Here,
 
 In this example, $X$ and $Y$ are variables, which get replaced iteratively with the definitions in $P$; $+$ and $-$ are _right_ and _left_ turns, respectively, and $F$ means _go forwards_.
 
-At a depth of 0, we have only the initial string $\omega$: 
-
-$FX$
-
-At a depth of 1, we get 
-
-$FX \longrightarrow F[X]$  
-$\phantom{FX} \longrightarrow F[X+YF+]$  
-$\phantom{FX} \longrightarrow FX+YF+$
-
-At a depth of 2, we get 
-
-$FX+YF+ \longrightarrow F[X]+[Y]F+$  
-$\phantom{FX+YF+} \longrightarrow F[X+YF+]+[-FX-Y]F+$  
-$\phantom{FX+YF+} \longrightarrow FX+YF++-FX-YF+$
+> At a depth of 0, we have only the initial string $\omega$: 
+> 
+> $FX$
+> 
+> At a depth of 1, we get 
+> 
+> $FX \longrightarrow F[X]$  
+> $\phantom{FX} \longrightarrow F[X+YF+]$  
+> $\phantom{FX} \longrightarrow FX+YF+$
+> 
+> At a depth of 2, we get 
+> 
+> $FX+YF+ \longrightarrow F[X]+[Y]F+$  
+> $\phantom{FX+YF+} \longrightarrow F[X+YF+]+[-FX-Y]F+$  
+> $\phantom{FX+YF+} \longrightarrow FX+YF++-FX-YF+$
 
 You can see where this is going. 
 
