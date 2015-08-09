@@ -18,12 +18,14 @@ permalink: /people/
 
 {: .person-name }
 ## Yuan Zhao
-![Cartoon MRI head](/images/MRI_brain_outline_memming.png){: .profile-photo }
+![Yuan Zhao](/images/Yuan.jpg){: .profile-photo }
 
 * PhD student, [Department of Applied Mathematics and Statistics](http://www.ams.sunysb.edu/)
 
 [//]: # ## Matthew Sun
 [//]: # ![Cartoon MRI head](/images/MRI_brain_outline_memming.png){: .profile-photo }
+[//]: # * Thomas Jefferson High School for Science and Technology
+[//]: # * Simons Summer Research Program (2015)
 [//]: # 
 [//]: # ## Michael Li
 [//]: # ![Cartoon MRI head](/images/MRI_brain_outline_memming.png){: .profile-photo }
