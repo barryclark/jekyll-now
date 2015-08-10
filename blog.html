@@ -6,15 +6,14 @@ title: Blog
 <table>
 	{% for post in site.posts %}
 	<tr class="post">
-		<th {% if post.project %} rowspan=2 {% endif %} > {{ post.date | date: "%d %b '%y" }} </th>
+		<th > {{ post.date | date: "%d %b '%y" }} </th>
 		
-		{% if post.project %} 
-		<td>
-			<a class='project-link' href="{{ post.projurl }}">{{post.project}}</a>
+		<td> 
+			{% if post.project %} 
+				<a class='project-link' href="{{ post.projurl }}">{{post.project}}</a> <br/>
+			{% endif %}
+			<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> 
 		</td>
-		{% endif %}
-
-		<td> <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> </td>
 		
 		
 		
