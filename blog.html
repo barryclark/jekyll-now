@@ -15,28 +15,9 @@ title: Blog
 			<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> 
 		</td>
 		
-		
-		
-
   <!-- <div class="entry"> {{ post.excerpt }} </div> -->
 
   <!-- <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a> -->
 	</tr>
 	{% endfor %}
 </table>
-
-<div class="posts">
-	{% for post in site.posts %}
-		<article class="post">
-			{{ post.date | date: "%d %b '%y" }}
-			{% if post.project %} 
-				[<a class='project-link' href="{{ post.projurl }}">{{post.project}}</a>]
-			{% endif %}
-			<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-
-      <!-- <div class="entry"> {{ post.excerpt }} </div> -->
-
-      <!-- <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a> -->
-    </article>
-  {% endfor %}
-</div>
