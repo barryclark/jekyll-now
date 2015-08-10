@@ -1,6 +1,8 @@
 ---
 title: Generating Fractals with Lindenmayer Systems
 layout: post
+project: Lindenmayer
+projurl: /lindenmayer
 ---
 
 [<img src="/images/lindenmayer_thumbnail.png">](/lindenmayer)

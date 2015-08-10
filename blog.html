@@ -7,8 +7,12 @@ title: Blog
   {% for post in site.posts %}
     <article class="post">
 
-      {{ post.date | date: "%d %b '%y" }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-      
+      {{ post.date | date: "%d %b '%y" }}
+      {% if post.project %}
+	      <b><a href="{{ site.baseurl }}{{ post.projurl }}">{{post.project}}</a></b> • 
+      {% endif %}
+      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+
       <!-- <div class="entry"> {{ post.excerpt }} </div> -->
 
       <!-- <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a> -->
