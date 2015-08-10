@@ -9,7 +9,7 @@ title: Blog
 
 			{{ post.date | date: "%d %b '%y" }}
 			{% if post.project %} 
-				<a class='project-link' href="{{ site.baseurl }}{{ post.projurl }}">{{post.project}}</a>
+				<a class='project-link' href="{{ post.projurl }}">{{post.project}}</a>
 			{% endif %}
 			<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
 

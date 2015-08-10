@@ -1,6 +1,8 @@
 ---
 title: Design and Operation of a Crowd-Run Distributed Outdoor Game
 layout: post
+project: Hide and Seek in Gamla Stan
+projurl: http://hideandseek.ninja
 ---
 
 *Project*: currently down for maintenance.
