@@ -37,7 +37,7 @@ permalink: /people/
 ## Michael Li
 ![Michael Li](/images/Michael_Li.jpg){: .profile-photo }
 
-* M. Bennett High, Salisbury, Maryland
+* James M. Bennett High, Salisbury, Maryland
 * Simons Summer Research Program (2015)
 
 ## Future lab member
