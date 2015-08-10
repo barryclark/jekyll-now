@@ -22,16 +22,23 @@ permalink: /people/
 
 * PhD student, [Department of Applied Mathematics and Statistics](http://www.ams.sunysb.edu/)
 
-[//]: # ## Matthew Sun
-[//]: # ![Cartoon MRI head](/images/MRI_brain_outline_memming.png){: .profile-photo }
-[//]: # * Thomas Jefferson High School for Science and Technology
-[//]: # * Simons Summer Research Program (2015)
-[//]: # 
-[//]: # ## Michael Li
-[//]: # ![Cartoon MRI head](/images/MRI_brain_outline_memming.png){: .profile-photo }
-[//]: # 
-[//]: # * M. Bennett High, Salisbury, Maryland
-[//]: # * Simons Summer Research Program (2015)
+## Tzvia Pinkhasov
+![Tzvia Pinkhasov](/images/Tzvia_Pinkhasov.jpg){: .profile-photo }
+
+* MSTP program, Stony Brook University
+* Rotation student (2015 summer)
+
+## Matthew Sun
+![Matthew Sun](/images/Matthew_Sun.jpg){: .profile-photo }
+
+* Thomas Jefferson High School for Science and Technology
+* Simons Summer Research Program (2015)
+
+## Michael Li
+![Michael Li](/images/Michael_Li.jpg){: .profile-photo }
+
+* M. Bennett High, Salisbury, Maryland
+* Simons Summer Research Program (2015)
 
 ## Future lab member
 ![Cartoon MRI head](/images/MRI_brain_outline_memming.png){: .profile-photo }
