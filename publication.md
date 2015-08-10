@@ -7,7 +7,7 @@ published: true
 
 ### Conference Papers
 
-[C10] Hongteng Xu, Yi Zhen, and Hongyuan Zha. "Trailer Generation via A Point Process-based Visual Attractiveness Model". To appear in proceedings of the 24th International Joint Conference on Artificial Intelligence (IJCAI). Buenos Aires, 25-31 July 2015.
+[C10] Hongteng Xu, **Yi Zhen**, and Hongyuan Zha. "Trailer Generation via A Point Process-based Visual Attractiveness Model". To appear in proceedings of the 24th International Joint Conference on Artificial Intelligence (IJCAI). Buenos Aires, 25-31 July 2015.
 
 [C9] Dixin Luo, Hongteng Xu, Yi Zhen, Xia Ning, and Hongyuan Zha. "Multi-task Multi-dimensional Hawkes Processes for Modeling Event Sequences". To appear in proceedings of the 24th International Joint Conference on Artificial Intelligence (IJCAI). Buenos Aires, 25-31 July 2015.
 
