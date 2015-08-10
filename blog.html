@@ -9,15 +9,11 @@ title: Blog
 		<td nowrap style='vertical-align:top; text-align:right;'> {{ post.date | date: "%d %b '%y" }} </td>
 		
 		<td> 
+			<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>  <br/>
 			{% if post.project %} 
-				<a class='project-link' href="{{ post.projurl }}">{{post.project}}</a> <br/>
+				Project: <a class='project-link' href="{{ post.projurl }}">{{post.project}}</a>
 			{% endif %}
-			<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> 
 		</td>
-		
-  <!-- <div class="entry"> {{ post.excerpt }} </div> -->
-
-  <!-- <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a> -->
 	</tr>
 	{% endfor %}
 </table>
