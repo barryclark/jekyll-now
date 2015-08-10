@@ -270,6 +270,14 @@ nav {
     text-transform: uppercase;
     font-size: 15px;
   }
+
+  a.project-link {
+    color: black;
+    weight:100;
+    padding:10px;
+    border: 1px solid #ddd;
+    margin: 10px;
+  }
 }
 
 .wrapper-footer {
