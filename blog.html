@@ -4,14 +4,14 @@ title: Blog
 ---
 
 <div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+	{% for post in site.posts %}
+		<article class="post">
 
-      {{ post.date | date: "%d %b '%y" }}
-      {% if post.project %}
-	      <a class='project-link' href="{{ site.baseurl }}{{ post.projurl }}">{{post.project}}</a>
-      {% endif %}
-      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+			{{ post.date | date: "%d %b '%y" }}
+			{% if post.project %} 
+				<a class='project-link' href="{{ site.baseurl }}{{ post.projurl }}">{{post.project}}</a>
+			{% endif %}
+			<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
 
       <!-- <div class="entry"> {{ post.excerpt }} </div> -->
 
