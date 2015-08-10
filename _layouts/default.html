@@ -1,74 +1,77 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+<head>
+  <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
-    {% include meta.html %}
+  {% include meta.html %}
 
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+      <![endif]-->
 
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-    <script type="text/javascript"src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script>
-    <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
-      TeX: {
-        Macros: {
-          vaccent: "{\\v}",
-          v: ["{\\mathbf\{#1\}}", 1],
-          abs: ["{\\left| #1 \\right|}",1],
-          d: ["{\\frac\{d #1\}\{d #2\}}",2],
-          dd: ["{\\frac\{d^2 #1\}\{d #2^2\}}",2],
-          pd: ["\{\\frac\{\\partial #1\}\{\\partial #2\}\}",2],
-          pdd: ["\{\\frac\{\\partial^2 #1\}\{\\partial #2^2\}\}",2] ,
-          degrees: ["\{^\\circ\}"],
-          div: ["\{\\text\{div \}\}"],
-          grad: ["\{\\text\{grad \}\}"]
-        }
-      }
-    });
+      <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
 
-    </script>
+      <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+      <script type="text/javascript"src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+          TeX: {
+            Macros: {
+              vaccent: "{\\v}",
+              v: ["{\\mathbf\{#1\}}", 1],
+              abs: ["{\\left| #1 \\right|}",1],
+              d: ["{\\frac\{d #1\}\{d #2\}}",2],
+              dd: ["{\\frac\{d^2 #1\}\{d #2^2\}}",2],
+              pd: ["\{\\frac\{\\partial #1\}\{\\partial #2\}\}",2],
+              pdd: ["\{\\frac\{\\partial^2 #1\}\{\\partial #2^2\}\}",2] ,
+              degrees: ["\{^\\circ\}"],
+              div: ["\{\\text\{div \}\}"],
+              grad: ["\{\\text\{grad \}\}"]
+            }
+          }
+        });
 
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
-  </head>
+      </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
 
-  <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+      <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+    </head>
 
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
-          </div>
+    <body>
+      <div class="wrapper-masthead">
+        <div class="container">
+          <header class="masthead clearfix">
+            <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
 
-          <nav>
-            <a href="{{ site.baseurl }}/">Home</a>
-            <a href="{{ site.baseurl }}/blog">Blog</a>
-            <a href="mailto:james.adam.buckland@gmail.com">Email</a>
-            <a href="/resume.pdf">Resume</a>
-          </nav>
-        </header>
+            <div class="site-info">
+              <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+              <p class="site-description">{{ site.description }}</p>
+            </div>
+
+            <nav>
+              <a href="{{ site.baseurl }}/">Home</a>
+              <a href="{{ site.baseurl }}/blog">Blog</a>
+              <a href="mailto:james.adam.buckland@gmail.com">Email</a>
+              <a href="/resume.pdf">Resume</a>
+            </nav>
+          </header>
+        </div>
       </div>
-    </div>
 
-    <div id="main" role="main" class="container">
-      {{ content }}
-    </div>
-
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          {% include svg-icons.html %}
-        </footer>
+      <div id="main" role="main" class="container">
+        {{ content }}
       </div>
-    </div>
 
-    {% include analytics.html %}
-  </body>
-</html>
+      <div class="wrapper-footer">
+        <div class="container">
+          <footer class="footer">
+            {% include svg-icons.html %}
+          </footer>
+        </div>
+      </div>
+
+      {% include analytics.html %}
+    </body>
+    </html>
