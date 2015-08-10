@@ -6,7 +6,7 @@ title: Blog
 <table>
 	{% for post in site.posts %}
 	<tr class="post">
-		<th > {{ post.date | date: "%d %b '%y" }} </th>
+		<th nowrap> {{ post.date | date: "%d %b '%y" }} </th>
 		
 		<td> 
 			{% if post.project %} 
