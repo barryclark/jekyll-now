@@ -29,3 +29,14 @@ Repeat above flow for further 2 or 3 pomodoro's. Break for lunch as appropriate.
 
 At the end of the day review all code written for intent, implementation bugs and design review, set goals for the next day.
 
+### So how often do I _actually_ do this?
+When our new team member joined we done this a lot in the first few weeks. 
+The feedback that I got from him was that it was beneficial. Particularly as he was learning the programming language we were using along with the purpose of the pre-existing code and structure of the project.
+Since those first few weeks we have not had the opportunity to do pomodoro pair programming. 
+
+### What do you need to get started?
+* Patience. 
+* Discuss with your pair the technique and decide on your pair's ideal flow.
+* A timer.  ( We used [Tomighty](http://www.tomighty.org) pomodoro timer ) 
+
+
