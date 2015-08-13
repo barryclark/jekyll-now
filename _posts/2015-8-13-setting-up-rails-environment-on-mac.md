@@ -65,4 +65,4 @@ rails server
 
 <i>Visit http://localhost:3000 to view your new and first rails web application. If you received an error that said Access denied for user 'root'@'localhost' (using password: NO) then you need to update your config/database.yml file to match the database username and password.</i>
 
-Bonjour !!! If you have any doubts do comment me, i'll try to answer them as quickly as possible :)
+Bonjour !!! If you have any doubts do ask me or comment here,  i'll try to answer them as quickly as possible :)
