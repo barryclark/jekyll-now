@@ -11,7 +11,7 @@ Part of the [Phase 0 preparation](https://github.com/Devbootcamp/phase-0-handboo
 
 I first heard about a growth versus fixed mindset while reviewing some algebra lessons on Khan Academy with my girlfriend. Sal Khan, the founder, had an [article](http://www.huffingtonpost.com/salman-khan/the-learning-myth-why-ill_b_5691681.html) talking about a growth mindset and why he would only praise his son for effort rather than results because that would encourage a growth mindset. This made a lot of sense to me and I was interested to hear that it also a superset (and I love supersets!) of grit and some other character traits that I've read about from [KIPP](http://www.kipp.org/our-approach/character). Of course I dug a little deeper to learn about growth mindsets and found a TED Talk about it too.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Yn966v5INaI" frameborder="0" allowfullscreen></iframe>
+-><iframe width="560" height="315" src="https://www.youtube.com/embed/Yn966v5INaI" frameborder="0" allowfullscreen></iframe><-
 
 A growth mindset is basically having the attitude that failing is acceptable because you can learn from them going forward. You experiment with new things and may fail once in a while, but what you learn from it compounds and keeps you hungry to do even more.
 
