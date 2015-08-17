@@ -60,9 +60,9 @@
   <meta content="{{ site.url }}/about/" property="article:author">
 {% endif %}
 {% if page.image %}
-  <meta content="/img/srcset/{{ page.image }}" property="og:image">
+  <meta content="{{ site.url }}/img/srcset/{{ page.image }}" property="og:image">
 {% else %}
-  <meta content="/images/favicon.png" property="og:image">
+  <meta content="{{ site.url }}/images/favicon.png" property="og:image">
 {% endif %}
 {% if page.categories %}
   {% for category in page.categories limit:1 %}
