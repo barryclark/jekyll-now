@@ -157,8 +157,8 @@ h1, h2, h3, h4, h5, h6 {
 	overflow-y: auto;
 	font-family: "PT Sans", Helvetica, Arial, sans-serif;
 	font-size: .875rem; /* 15px */
-	color: rgba(255,255,255,.6);
-	background-color: #202020;
+	color: #333;
+	background-color: #f6f6f6;
 	-webkit-transition: all .3s ease-in-out;
 					transition: all .3s ease-in-out;
 }
@@ -171,7 +171,10 @@ h1, h2, h3, h4, h5, h6 {
 /* Sidebar content */
 .sidebar a {
 	font-weight: normal;
-	color: #fff;
+	color: #000;
+}
+.sidebar a:hover {
+	color: #343434;
 }
 .sidebar-item {
 	padding: 1rem;
