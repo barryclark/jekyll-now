@@ -3,9 +3,9 @@ published: true
 ---
 
 ## Pomodoro Pair Programming
-### What is Pomodoro
-> A time management technique using a timer to break down work into intervals traditionally 25 minutes in length, separated by short breaks.
+What is Pomodoro:
 
+> A time management technique using a timer to break down work into intervals traditionally 25 minutes in length, separated by short breaks.
 
 Pairing with a new team mate can start slowly.
 
