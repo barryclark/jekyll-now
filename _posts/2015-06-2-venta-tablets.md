@@ -3,8 +3,6 @@ layout: post
 title: Nada pinta bien para las tablets
 tags: Tablets, iPad
 ---
-## El producto que inició la revolución del “todo móvil” ha tenido un mal 2014 y todo apunta a un desastroso 2015.
-
 Ha sido un año duro para algunas de las empresas más importantes que fabrican y venden tablets. Apple no logra que las ventas de los iPads suban, Samsung ha tenido unas ventas decentes pero insuficientes y muchos fabricantes de primer nivel abandonan el formato ante las malas previsiones para centrarse en los móviles.
 
 Cuando Steve Jobs presentó el primer iPad al mundo, nadie podía creer lo que estaba viendo. Lograron crear un nuevo formato que bien podría mandar a la basura mi PC, mi portátil y hasta mi móvil. Solo que no ha sido así y no parece que esto vaya a pasar jamás.

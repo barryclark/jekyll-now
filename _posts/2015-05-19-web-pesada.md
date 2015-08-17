@@ -4,8 +4,6 @@ title: La web es lenta y pesada
 tags: Internet, Diseño
 ---
 
-## Las aplicaciones son el nuevo formato más rápido y la web, años en decadencia, necesita despertar para ser más rápida y enfocada a lo que quiere mostrar.
-
 Los [Instant Articles de Facebook](http://media.fb.com/2015/05/12/instantarticles/) son una bonita versión de lo que un artículo de un medio debería ser en realidad. El artículo, los vídeos, las fotos, incluso la publicidad se carga rápido y directamente desde tu teléfono. El problema es que está encapsulado en la aplicación de Facebook.
 
 Algunos lo categorizan no sin razón como el precio que los medios están pagando por priorizar las redes sociales antes que el tráfico propio. Otros que es simplemente una forma de que estos medios consigan un público que consuma sus noticias, sus artículos.

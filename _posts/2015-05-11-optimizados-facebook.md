@@ -4,7 +4,7 @@ title: Optimizados para Facebook
 tags: Medios, Facebook
 ---
 
-## El SEO de Google cada vez importa menos y las redes sociales empiezan a ser la primera fuente de tráfico.
+> El SEO de Google cada vez importa menos y las redes sociales empiezan a ser la primera fuente de tráfico.
 
 Hace años que cuando trabajabas en un medio tenías que hacer ciertas cosas más fáciles para que tu artículo fuese más fácil encontrar en Google. De esta forma muchos medios tienen la mayor parte de su tráfico desde buscadores como Google que desde visitas directas.
 
