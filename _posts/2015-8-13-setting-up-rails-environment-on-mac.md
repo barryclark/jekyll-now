@@ -3,6 +3,7 @@ layout: post
 title: Seting up Rails development environment on Mac
 ---
 
+![My helpful screenshot]({{ site.url }}/images/RubyOnRails.png)
 Let's begin the Ruby on Rails development environment setup on Mac OS X 10.10 Yosemite !!! This will take about 30 minutes.
 
 First we need to install Homebrew , it allows us to install & compile software packages easily from the source.
