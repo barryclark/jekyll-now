@@ -2,7 +2,6 @@
 published: true
 ---
 
-
 ## Pomodoro Pair Programming
 ### What is Pomodoro
 > A time management technique using a timer to break down work into intervals traditionally 25 minutes in length, separated by short breaks.
@@ -37,6 +36,4 @@ Since those first few weeks we have not had the opportunity to do pomodoro pair 
 ### What do you need to get started?
 * Patience. 
 * Discuss with your pair the technique and decide on your pair's ideal flow.
-* A timer.  ( We used [Tomighty](http://www.tomighty.org) pomodoro timer ) 
-
-
+* A timer.  ( We used [Tomighty](http://www.tomighty.org) pomodoro timer )
