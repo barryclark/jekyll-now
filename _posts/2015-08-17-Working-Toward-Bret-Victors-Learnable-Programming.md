@@ -19,21 +19,21 @@ A few of my favorite examples of this:
 
 ###### Relate code directly to the final result it's responsible for
 
-<video controls width="640" height="110" preload>
+<video autoplay width="640" height="110" preload>
 		<source src="https://codeconnectcdn.blob.core.windows.net/cdn/blog/Vocab13.mp4" type="video/mp4">
 		<source src="https://codeconnectcdn.blob.core.windows.net/cdn/blog/Vocab13.webm" type="video/webm">
 </video>
 
 ###### Map time to space
 
-<video controls width="792" height="232" preload>
+<video autoplay width="792" height="232" preload>
 		<source src="https://codeconnectcdn.blob.core.windows.net/cdn/blog/Flow9.mp4" type="video/mp4">
 		<source src="https://codeconnectcdn.blob.core.windows.net/cdn/blog/Flow9.webm" type="video/webm">
 </video>
 
 ###### Show state directly
 
-<video controls width="808" height="216" preload>
+<video autoplay width="808" height="216" preload>
 		<source src="https://codeconnectcdn.blob.core.windows.net/cdn/blog/State13.mp4" type="video/mp4">
 		<source src="https://codeconnectcdn.blob.core.windows.net/cdn/blog/State13.webm" type="video/webm">
 </video>
@@ -72,7 +72,7 @@ So why is it a mistake to focus on 2D? **It's too easy.**
 
 It's too easy to create awesome visuals that portray live programming as a panacea. Take a look:
 
-<video controls width="640" height="110" preload>
+<video autoplay width="640" height="110" preload>
 		<source src="https://codeconnectcdn.blob.core.windows.net/cdn/blog/Vocab13.mp4" type="video/mp4">
 		<source src="https://codeconnectcdn.blob.core.windows.net/cdn/blog/Vocab13.webm" type="video/webm">
 </video>
@@ -166,7 +166,7 @@ Finally, let me thank Bret for his inspiring work in this area. In The [Future o
 
 > The real tragedy would be if people forgot you could have new ideas about programming models in the first place.
 
-Up until 2012, I had not even considered that there were different ways of programming outside of the popular C/Java/C# approach. I had considered programming to be a "solved" problem and assumed that we would be programming the same way in 50 years as we were today. It wasn't until I stumbled upon Bret's work that I considered programming could be changed and improved upon. 
+Until 2012, I'd never considered that there were different approaches to thinking about programming. I looked at programming as a "solved" problem. It wasn't until I stumbled upon Bret's work that I considered programming could be changed and improved upon. 
 
-At Code Connect we owe him a lot and are eagerly awaiting his next talk/essay/project.
+At Code Connect we owe him a lot and are eagerly awaiting his next project. :)
 
