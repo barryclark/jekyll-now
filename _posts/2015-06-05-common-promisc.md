@@ -23,4 +23,29 @@ tags: [common]
 
 	[linux下限制进程在多核cpu中指定cpu上运行](http://blog.sina.com.cn/s/blog_a39910330101dgqe.html)
     
-3. 
+3. **ssh 命令 相关**
+	
+    [ssh 免密码登陆](http://www.tuicool.com/articles/v2amAva)
+    
+    [25 个必须记住的ssh命令](http://www.cnblogs.com/weafer/archive/2011/06/10/2077852.html)
+    
+    [linux下expect安装](http://blog.163.com/023_dns/blog/static/118727366201291142252757/)
+    
+    [linux expect的使用详解](http://www.2cto.com/os/201305/209909.html)
+    
+    [移植 expect5.45](http://www.csdn123.com/html/topnews201408/51/14751.htm)
+    [Expect+TCL8.6交叉编译 arm-linux](http://blog.sina.com.cn/s/blog_43ffbf3e0101afir.html)
+    
+4. **Python 相关**
+	
+	[交叉编译Python 3.3](http://xiaoxia.org/2013/09/13/python-on-tomato/)
+    
+    [交叉编译 Python](http://randomsplat.com/id5-cross-compiling-python-for-embedded-linux.html)
+    
+    [交叉编译 Python 支持sqlite3](http://www.java123.net/v/988575.html)
+    
+    [Python sqlite3 完整篇](http://www.cnblogs.com/hongten/p/hongten_python_sqlite3.html)
+    
+5. **兴趣**
+	
+    [创业必读的7本书](http://www.fortunechina.com/business/c/2015-09/02/content_246408.htm?source=yd)
