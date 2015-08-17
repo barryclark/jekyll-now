@@ -1,6 +1,6 @@
 ---
 layout: post
-title: thingking everyday
+title: 相忘乎江湖
 tags: [thinking]
 ---
 
