@@ -10,11 +10,12 @@ relative_permalinks: true
 
 # Setup
 title:               Manu Contreras
-tagline:             'Sobre tecnología móvil'
+tagline:             'Desde el hipertexto'
 description:         'Escribo sobre tecnología de consumo y tecnología móvil.'
 url:                 http://mcontreras.me
 baseurl:             /
 paginate:            5
+excerpt_separator:   <!--more-->
 
 # About/contact
 author:
