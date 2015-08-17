@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} </title>
 
     {% include meta.html %}
 
@@ -34,6 +34,8 @@
       </div>
     </div>
 
+</script>
+
     <div id="main" role="main" class="container">
       {{ content }}
     </div>
@@ -42,10 +44,13 @@
       <div class="container">
         <footer class="footer">
           {% include svg-icons.html %}
+          <p>2015 all rights reserved</p>
         </footer>
       </div>
     </div>
 
+
     {% include analytics.html %}
+
   </body>
 </html>

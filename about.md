@@ -4,12 +4,15 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+I am Anish Talwar, currently i'm pursuing Master of Applied Computer Science at Concordia University. Web design , web development and iOS application development are my passion. I write about web design and development , open source softwares ,  algorithms and also about life.
+
+
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+Apart from studying and building cool web applications you can find me playing soccer, clicking pictures, travelling , painting and composing music on my guitar as well as laptop.
+I like owls !!!
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[talwar.anish@yahoo.in](mailto:talwar.anish@yahoo.in)
