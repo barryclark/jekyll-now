@@ -6,6 +6,7 @@ tags: Telefónica, Operadoras
 [César Alierta](http://cesaralierta.telefonica.com/) es una persona que no deja indiferente. Es una de las personas contra las que no puedes meterte en casi ningún medio por miedo a las reacciones de Telefónica. Uno de los empresarios más importantes de España y Latinoamérica al controlar una de las mayores empresas de telecomunicaciones del mundo. Alierta es intocable, pero también es un charlatán. Y que nadie tome este adjetivo como un insulto.
 
 > [Charlatán, na.](http://lema.rae.es/drae/?val=charlat%C3%A1n)
+
 > 1. adj. Que habla mucho y sin sustancia.
 
 Estaba esperando algún artículo sobre [lo que Alierta ha comentado en su junta de accionistas](http://www.eleconomista.es/empresas-finanzas/noticias/6788016/06/15/Alierta-asegura-que-la-rentabilidad-de-Telefonica-sera-este-ano-la-mayor-entre-las-grandes-telecos.html#.Kku8P9w1ZciHsvr) este viernes. La realidad es que bajo el mando de Alierta Telefónica se ha convertido en un grupo mundial que gana mucho dinero, con millones de usuarios y pese a la crisis en España, gracias a reorganizaciones y ventas de filiales, en 2015 se espera un crecimiento del 7%.
@@ -21,6 +22,7 @@ Telefónica no está sola, muchas otras operadoras piensan lo mismo. Si eres un 
 Alierta no nos ha defraudado, nos ha dejado varios comentarios.
 
 > Alierta arremetió con los denominados operadores over the top, OTT. “Los Google y Facebook no invierten un euro y saben la vida de todos ustedes, lo que les gusta, lo que no les gusta y lo que van a comprar. Imagínense el escándalo que se hubiera montado si los operadores hubiéramos grabado las conversaciones telefónicas”
+
 > Alierta recalcó que el “lenguaje que más se habla en el mundo no es el mandarín, ni el español ni el inglés, sino el Android, un sistema operativo cerrado”.
 
 <blockquote class="twitter-tweet" lang="en"><p lang="es" dir="ltr">Alierta dice que prefiere tener una &quot;carraca&quot; de teléfono a que Apple pueda tener acceso a sus datos</p>&mdash; Rebeca Arroyo (@rebearroyo) <a href="https://twitter.com/rebearroyo/status/609347110639661056">June 12, 2015</a></blockquote>

@@ -16,7 +16,7 @@ Windows Phone tiene solo el 3% del mercado móvil y esta cifra no parece que vay
 
 ## No existe una guerra de plataformas porque solo existen dos plataformas
 
-<img src="http://i.imgur.com/TysQih0.png" alt="Aplicaciones en mi iPhone, abril de 2015" class="alignleft" width="350">
+<img src="http://i.imgur.com/TysQih0.png" alt="Aplicaciones en mi iPhone, abril de 2015" class="alignleft" width="250">
 
 Estas son las aplicaciones que más uso en el día a día, por lo menos las que pongo en la pantalla principal porque son las que más me interesan.
 

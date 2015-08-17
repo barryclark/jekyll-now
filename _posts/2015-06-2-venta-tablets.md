@@ -7,7 +7,7 @@ Ha sido un año duro para algunas de las empresas más importantes que fabrican 
 
 Cuando Steve Jobs presentó el primer iPad al mundo, nadie podía creer lo que estaba viendo. Lograron crear un nuevo formato que bien podría mandar a la basura mi PC, mi portátil y hasta mi móvil. Solo que no ha sido así y no parece que esto vaya a pasar jamás.
 
-<img src="https://cdn-images-2.medium.com/max/1024/1*KBvRmUL2iT7rPtgjTMSKzQ.jpeg" class="alignleft" alt="Steve Jobs sujeta el primer iPad">
+<img src="https://cdn-images-2.medium.com/max/1024/1*KBvRmUL2iT7rPtgjTMSKzQ.jpeg" class="alignleft" alt="Steve Jobs sujeta el primer iPad" width="250">
 
 Apple vendió 3.3 millones de iPad el primer trimestre desde su puesta a la venta. En los últimos resultados económicos se indicaban 12.6 millones de unidades vendidas.
 
