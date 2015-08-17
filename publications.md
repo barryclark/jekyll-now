@@ -10,10 +10,10 @@ permalink: /publications/
 
 ###2015
 
-Gamazon ER\*, <b>Wheeler HE</b>\*, Shah KP\*, Mozaffari SV, Aquino-Michaels K, Carroll RJ, Eyler AE, Denny JC, GTEx Consortium, Nicolae DL, Cox NJ, Im HK. (2015) PrediXcan: Trait mapping using human transcriptome regulation. Nature Genetics, 2015 Aug 10. doi: 10.1038/ng.3367. <a href="http://www.ncbi.nlm.nih.gov/pubmed/26258848">PMID26258848</a>, <a href="http://biorxiv.org/content/early/2015/06/17/020164"><i>Open Access Preprint</i></a>
+Gamazon ER\*, <b>Wheeler HE</b>\*, Shah KP\*, Mozaffari SV, Aquino-Michaels K, Carroll RJ, Eyler AE, Denny JC, GTEx Consortium, Nicolae DL, Cox NJ, Im HK. (2015) PrediXcan: Trait mapping using human transcriptome regulation. Nature Genetics, advance online publication. <a href="http://www.ncbi.nlm.nih.gov/pubmed/26258848">PMID26258848</a>, <a href="http://biorxiv.org/content/early/2015/06/17/020164"><i>Open Access Preprint</i></a>
 \*Contributed equally.
 
-Komatsu M, <b>Wheeler HE</b>, Chung S, Low SK, Wing C, Delaney SM, Gorsic LK, Takahashi A, Kubo M, Kroetz D, Zhang W, Nakamura Y, Dolan ME. (2015) Pharmacoethnicity in paclitaxel-induced sensory peripheral neuropathy. Clinical Cancer Research, <a href="http://www.ncbi.nlm.nih.gov/pubmed/26015512"><i>in press</i></a>
+Komatsu M, <b>Wheeler HE</b>, Chung S, Low SK, Wing C, Delaney SM, Gorsic LK, Takahashi A, Kubo M, Kroetz D, Zhang W, Nakamura Y, Dolan ME. (2015) Pharmacoethnicity in paclitaxel-induced sensory peripheral neuropathy. Clinical Cancer Research, advance online publication. <a href="http://www.ncbi.nlm.nih.gov/pubmed/26015512">PMID26015512</a>
 
 Diouf B, Crews KR, Lew G, Pei D, Cheng C, Bao J, Zheng JJ, Yang W, Fan Y, <b>Wheeler HE</b>, Wing C, Delaney SM, Komatsu M, Paugh SW, McCorkle JR, Lu X, Winick NJ, Carroll WL, Loh ML, Hunger SP, Devidas M, Pui CH, Dolan ME, Relling MV, Evans WE. (2015) Association of an inherited genetic variant with vincristine-related peripheral neuropathy in children with acute lymphoblastic leukemia. JAMA 313(8):815-823. <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=PMC4377066">PMC4377066</a>
 
