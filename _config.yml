@@ -15,7 +15,6 @@ description:         'Escribo sobre tecnología de consumo y tecnología móvil.
 url:                 http://mcontreras.me
 baseurl:             /
 paginate:            5
-excerpt_separator:   <!--more-->
 
 # About/contact
 author:
