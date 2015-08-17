@@ -19,21 +19,21 @@ A few of my favorite examples of this:
 
 ###### Relate code directly to the final result it's responsible for
 
-<video autoplay width="640" height="110" preload>
+<video autoplay loop width="640" height="110" preload>
 		<source src="https://codeconnectcdn.blob.core.windows.net/cdn/blog/Vocab13.mp4" type="video/mp4">
 		<source src="https://codeconnectcdn.blob.core.windows.net/cdn/blog/Vocab13.webm" type="video/webm">
 </video>
 
 ###### Map time to space
 
-<video autoplay width="792" height="232" preload>
+<video autoplay loop width="792" height="232" preload>
 		<source src="https://codeconnectcdn.blob.core.windows.net/cdn/blog/Flow9.mp4" type="video/mp4">
 		<source src="https://codeconnectcdn.blob.core.windows.net/cdn/blog/Flow9.webm" type="video/webm">
 </video>
 
 ###### Show state directly
 
-<video autoplay width="808" height="216" preload>
+<video autoplay loop width="808" height="216" preload>
 		<source src="https://codeconnectcdn.blob.core.windows.net/cdn/blog/State13.mp4" type="video/mp4">
 		<source src="https://codeconnectcdn.blob.core.windows.net/cdn/blog/State13.webm" type="video/webm">
 </video>
@@ -72,7 +72,7 @@ So why is it a mistake to focus on 2D? **It's too easy.**
 
 It's too easy to create awesome visuals that portray live programming as a panacea. Take a look:
 
-<video autoplay width="640" height="110" preload>
+<video autoplay loop width="640" height="110" preload>
 		<source src="https://codeconnectcdn.blob.core.windows.net/cdn/blog/Vocab13.mp4" type="video/mp4">
 		<source src="https://codeconnectcdn.blob.core.windows.net/cdn/blog/Vocab13.webm" type="video/webm">
 </video>
