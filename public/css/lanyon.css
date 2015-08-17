@@ -310,7 +310,7 @@ a.sidebar-nav-item:focus {
 	font-size: .85rem;
 }
 
-@media (min-width: 30em) {
+@media (max-width: 30em) {
 	.page,
 	.post {
 		font-size: 1rem;
