@@ -338,6 +338,11 @@ a.sidebar-nav-item:focus {
 	color: #9a9a9a;
 }
 
+.post p small {
+	font-size: .65rem;
+	color: #666;
+}
+
 /* Related posts */
 .related {
 	padding-top: 2rem;
