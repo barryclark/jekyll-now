@@ -218,13 +218,14 @@ a.sidebar-nav-item:focus {
 /* Style the `label` that we use to target the `.sidebar-checkbox` */
 .sidebar-toggle {
 	position: absolute;
-	top:	1rem;
+	top:0.6rem;
 	left: 1rem;
 	display: block;
-	width: 2.2rem;
+	/*width: 2.2rem;*/
 	padding: .5rem .65rem;
+	font-size: 0.8rem;
 	color: #505050;
-	background-color: #fff;
+	background-color: #f7f7f7;
 	border-radius: 4px;
 	cursor: pointer;
 }
@@ -233,8 +234,6 @@ a.sidebar-nav-item:focus {
 	content: "";
 	width: 100%;
 	padding-bottom: .125rem;
-	border-top: .375rem double;
-	border-bottom: .125rem solid;
 
 	/* Make the border inside the box */
 	-webkit-box-sizing: border-box;
