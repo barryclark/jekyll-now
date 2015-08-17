@@ -250,7 +250,7 @@ a.sidebar-nav-item:focus {
 @media (min-width: 30.1em) {
 	.sidebar-toggle {
 		position: fixed;
-		width: 2.25rem;
+		/*width: 2.25rem;*/
 	}
 	.sidebar-toggle:before {
 		padding-bottom: .15rem;
