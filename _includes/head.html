@@ -26,6 +26,16 @@
   <!-- RSS -->
   <link rel="alternate" type="application/rss+xml" title="RSS" href="http://feeds.feedburner.com/manucontreras">
 
+{% if page.categories %}
+  {% for category in page.categories limit:1 %}
+  <meta content="{{ category }}" property="article:section">
+  {% endfor %}
+{% endif %}
+{% if page.tags %}
+  {% for tag in page.tags %}
+  <meta content="{{ tag }}" property="article:tag">
+  {% endfor %}
+{% endif %}
 <meta content="{{ site.title }}" property="og:site_name">
 {% if page.title %}
   <meta content="{{ page.title }}" property="og:title">
@@ -52,7 +62,7 @@
 {% if page.image %}
   <meta content="/img/srcset/{{ page.image }}" property="og:image">
 {% else %}
-  <meta content="/img/logo-high-resolution.png" property="og:image">
+  <meta content="/images/favicon.png" property="og:image">
 {% endif %}
 {% if page.categories %}
   {% for category in page.categories limit:1 %}
