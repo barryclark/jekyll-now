@@ -48,7 +48,7 @@ Our experience building and using Alive daily has shown us that Bret gets the fu
 
 ![Instant response is neat](https://i.gyazo.com/124b21a9ac1e22316b5fa4301b52eca4.gif)
 
-**Allow programmers to navigate through time.** We can enable powerful new ways of thinking by allowing developers to easily navigate forward and backward through time.
+**Allow programmers to navigate through time.** We can enable powerful new ways of thinking by allowing developers to easily navigate forwards and backwards through time.
 
 ![Time Travel Is Neat](https://i.gyazo.com/0dd097c6689b4955a98601b0ea537da8.gif)
 
@@ -91,7 +91,7 @@ Two dimensional examples are harmful to live programming research. They oversell
 
 An area left unexplored by Learnable Programming is running functions that accept complex parameters. This is problematic as most functions take parameters so they can manipulate them or do something interesting with them. Yet almost every single piece of literature we've encountered on live programming decided to ignore this.
 
-There's a huge difference between be able to provide a compelling visualization for:
+There's a huge difference between be able to provide a compelling visualization for code where the data is provided for us:
 
 ```Javascript
 function myFunction() {
@@ -103,7 +103,7 @@ function myFunction() {
 }
 ```
 
-and:
+and code where we must somehow create the data:
 
 ```Javascript
 function myFunction(person) {
