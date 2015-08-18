@@ -91,7 +91,7 @@ Two dimensional examples are harmful to live programming research. They oversell
 
 An area left unexplored by Learnable Programming is running functions that accept complex parameters. This is problematic as most functions take parameters so they can manipulate them or do something interesting with them. Yet almost every single piece of literature we've encountered on live programming decided to ignore this.
 
-There's a huge difference between be able to provide a compelling visualization for code where the data is provided for us:
+There's a huge difference between being able to provide a compelling visualization for code where the data is provided for us:
 
 ```Javascript
 function myFunction() {
