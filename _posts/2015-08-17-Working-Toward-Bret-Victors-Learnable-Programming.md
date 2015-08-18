@@ -40,7 +40,7 @@ A few of my favorite examples of this:
 
 These ideas and the approaches Bret demonstrates are nothing short of incredible. Bret's work has given us a destination for what a modern programming environment might look like, but not much is said on how we should get there. 
 
-### What "Learnable Programming" gets right
+### What  gets right
 
 Our experience building and using Alive daily has shown us that Bret gets the fundamental points right. I'll defer to [the original essay](http://worrydream.com/LearnableProgramming/) for complete explanations of these ideas, but we can take a look at Alive's interpretation of them.
 
@@ -52,9 +52,9 @@ Our experience building and using Alive daily has shown us that Bret gets the fu
 
 ![Time Travel Is Neat](https://i.gyazo.com/0dd097c6689b4955a98601b0ea537da8.gif)
 
-These are powerful ideas of which we have only scratched the surface. Bret's research in Learnable Programming and Designing by Principle have served as an anchor for our research in this area. 
+These are powerful ideas of which we have only scratched the surface. Bret's research in  and Designing by Principle have served as an anchor for our research in this area. 
 
-### Problems getting to "Learnable Programming"
+### Problems getting to Learnable Programming
 
 There are a number of problems that make it prohibitively difficult to fully realize Bret's vision. Some are artifacts of the way programming languages work today, and others are fundamental flaws in the ideas and features put forward. 
 
@@ -89,7 +89,7 @@ Two dimensional examples are harmful to live programming research. They oversell
 
 #### RealWorld™ Code
 
-An area left unexplored by "Learnable Programming" is running functions that accept complex parameters. This is problematic as most functions take parameters so they can manipulate them or do something interesting with them. Yet almost every single piece of literature we've encountered on live programming decided to ignore this.
+An area left unexplored by Learnable Programming is running functions that accept complex parameters. This is problematic as most functions take parameters so they can manipulate them or do something interesting with them. Yet almost every single piece of literature we've encountered on live programming decided to ignore this.
 
 There's a huge difference between be able to provide a compelling visualization for:
 
