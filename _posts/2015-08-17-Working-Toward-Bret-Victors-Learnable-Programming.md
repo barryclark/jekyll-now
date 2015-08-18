@@ -170,3 +170,6 @@ Until 2012, I'd never considered that there were different approaches to thinkin
 
 At Code Connect we owe him a lot and are eagerly awaiting his next project. :)
 
+P.S. We're on Twitter: [@GetCodeConnect](http://twitter.com/getcodeconnect)
+
+Interested in our take on live programming for C#? Check out [Alive](http://comealive.io)!
