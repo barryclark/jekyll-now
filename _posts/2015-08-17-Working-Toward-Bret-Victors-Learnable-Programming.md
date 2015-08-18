@@ -5,7 +5,7 @@ title: Working toward Bret Victor's "Learnable Programming"
 
 Bret Victor is singlehandedly responsible for popularizing the ideas behind live programming amongst today's programmers. In his famous essay [Learnable Programming](http://worrydream.com/LearnableProgramming/) he outlines a set of design principles that should guide the creation of a modern programming environment.
 
-To my knowledge, [Alive](http://comealive.io) is one of only two serious attempts to build a tool based these principles (the other being [Light Table](http://lighttable.com/)). This gives us a unique opportunity to explore the ideas behind Learnable Programming from the vantage point of practicality.
+To my knowledge, [Alive](http://comealive.io) is one of only two serious attempts to build a tool based on these principles (the other being [Light Table](http://lighttable.com/)). This gives us a unique opportunity to explore the ideas behind Learnable Programming from the vantage point of practicality.
 
 Bret lays out two requirements for a modern programming system. He says the goals of the system should be:
 
