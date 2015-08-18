@@ -5,8 +5,6 @@ project: Subway
 projurl: http://jbuckland.com/subway
 ---
 
-###update: this demo is currently down - something changed in the MTA API and I have to fix it :(
-
 [<img src="/images/subway_thumbnail.png">](/subway)
 
 Here I attempted to render the NYC Subway system as a [force-directed graph](http://en.wikipedia.org/wiki/Force-directed_graph_drawing) in [d3.js](http://d3js.org/). The purpose of a force-directed graph is to
