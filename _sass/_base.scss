@@ -19,8 +19,12 @@ html, body {
 }
 
 img {
-  width: auto;
   max-width: 100%;
+}
+
+em img {
+  max-width: 78em;
+  margin-left: -14em;
 }
 
 body {
