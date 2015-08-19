@@ -16,11 +16,10 @@ published: true
 * **Łukasz Matysiak** Developer
 * **Wlad Meixner** Web Developer, Web Consultant
 * **Mateusz Mikolajczyk** Developer
-* **Demiray Muhterem** KDE Team Leader: Manjaro KDE4 Edition Maintainer, Turkish IRC and web support, Manjaro Artwork
+* **Demiray Muhterem** Turkish IRC and web support, Manjaro Artwork
 * **Alexandre A. Arnt** Developer
 
 ###Artwork
-* **Lane Wiscombe (anex)** Manjaro Artwork, KDE Team: KDE5 Edition Maintainer, MATE, and Openbox Community Editions Maintainer
 * **David Linares (mcder3)** Manjaro Artwork: Plasma5 Designer, Theme designer, Installer visual design
 
 ###OpenRC Team
@@ -36,7 +35,7 @@ published: true
 * **shariebeth** Community Global Moderator
 
 ###Documentation
-* **Jonathon Fernyhough** Editor of the User Guide 0.8.9-0.8.11, Community Moderation
+* **Jonathon Fernyhough** Editor of the User Guide 0.8.9-0.8.13, Community Moderation
 * **Sabras** Wiki
 
 ###Alumni
@@ -45,6 +44,7 @@ published: true
 * **Dan S.** Openbox Editions Maintainer
 * **Handy** Global Moderator, Wiki Contributor, Community Support
 * **Joshua Strot** Developer, Graphics Developer
+* **Lane Wiscombe (anex)** Manjaro Artwork, KDE Team: KDE5 Edition Maintainer, MATE, and Openbox Community Editions Maintainer
 
 ###Acknowledgements
 The awesome community on our [forum](https://forum.manjaro.org) and **#manjaro**
