@@ -7,7 +7,7 @@ title: Blog
 	{% for post in site.posts %}
 	<tr class="post">
 		<td nowrap style='vertical-align:top; text-align:right;' rowspan=
-		{% if post.project and post.paper %} 3 {% else if post.project or post.paper %} 2 {% else %} 1 {% endif %}
+		{% if post.project and post.paper %} 3 {% else if post.project or post.paper %} 2 {% else if !post.project and !post.paper %} 1 {% endif %}
 		> 
 			{{ post.date | date: "%d %b '%y" }} 
 		</td>
