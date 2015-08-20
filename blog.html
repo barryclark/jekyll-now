@@ -6,7 +6,7 @@ title: Blog
 <table>
 	{% for post in site.posts %}
 			<tr class="post">
-				<td nowrap style='font-size: medium;'> {{ post.date | date: "%m.%-d.%y" }} </td>
+				<td nowrap style='font-size: medium; text-align: right;'> {{ post.date | date: "%m.%-d.%y" }} </td>
 				<td style='text-align: right; color:#aaa; font-size: medium;'> 
 					post
 				</td>
