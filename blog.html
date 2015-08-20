@@ -9,7 +9,7 @@ title: Blog
 		<td nowrap style='vertical-align:top; text-align:right;'> {{ post.date | date: "%d %b '%y" }} </td>
 		
 		<td> 
-			{% if !post.nopost) %} 
+			{% if not post.nopost) %} 
 				<i style='color: #aaa'>post:</i> 
 				<a class='post-link'   href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>  <br/>
 			{% endif %}
