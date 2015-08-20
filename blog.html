@@ -5,8 +5,10 @@ title: Blog
 
 <table>
 	{% for post in site.posts %}
+			<tr class='post'>
+				<td colspan=2> {{ post.date | date: "%B  #{post.date.day.ordinalize}, %y" }} </td>
+			</tr>
 			<tr class="post">
-				<td nowrap style='vertical-align:top; text-align:right;'> {{ post.date | date: "%m/%d/%y" }} </td>
 				<td style='text-align: right; color:#aaa;'> 
 					post
 				</td>
@@ -16,7 +18,6 @@ title: Blog
 			</tr>
 		{% if post.project %} 
 			<tr class='post'>
-				<td>&nbsp;</td>
 				<td style='text-align: right; color:#aaa;'>
 					demo
 				</td>
@@ -27,7 +28,6 @@ title: Blog
 		{% endif %}
 		{% if post.paper %} 
 			<tr class='post'>
-				<td>&nbsp;</td>
 				<td style='text-align: right; color:#aaa;'> 
 					paper
 				</td>
