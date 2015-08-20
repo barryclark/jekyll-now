@@ -1,7 +1,7 @@
 ---
 title: Cultural and Ecological Analysis of Mining in Norrbotten, Sweden 
 layout: post
-paper: The Norrbotten Technological Megasystem: Impact on Society and Environment
+paper: The Norrbotten Technological Megasystem&#58; Impact on Society and Environment
 paperurl: /papers/norrbotten.pdf
 ---
 
