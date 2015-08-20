@@ -6,7 +6,7 @@ title: Blog
 <table>
 	{% for post in site.posts %}
 			<tr class='post'>
-				<td colspan=2> {{ post.date | date: "%B  #{post.date.day.ordinalize}, %y" }} </td>
+				<td colspan=2> {{ post.date | date: "%B/%d/%y" }} </td>
 			</tr>
 			<tr class="post">
 				<td style='text-align: right; color:#aaa;'> 
