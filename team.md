@@ -16,7 +16,7 @@ published: true
 * **Łukasz Matysiak** Developer
 * **Wlad Meixner** Web Developer, Web Consultant
 * **Mateusz Mikolajczyk** Developer
-* **Demiray Muhterem** Turkish IRC and web support, Manjaro Artwork
+* **Demiray Muhterem** Developer, Turkish IRC and web support, Manjaro Artwork
 * **Alexandre A. Arnt** Developer
 
 ###Artwork
