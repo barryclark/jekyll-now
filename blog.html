@@ -9,9 +9,17 @@ title: Blog
 		<td nowrap style='vertical-align:top; text-align:right;'> {{ post.date | date: "%d %b '%y" }} </td>
 		
 		<td> 
-			<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>  <br/>
+			{% if !post.nopost) %} 
+				<i style='color: #aaa'>post:</i> 
+				<a class='post-link'   href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>  <br/>
+			{% endif %}
 			{% if post.project %} 
-				<i style='color: #aaa'>demo:</i> <a class='project-link' href="{{ post.projurl }}">{{post.project}}</a>
+				<i style='color: #aaa'>demo: </i> 
+				<a class='project-link' href="{{ post.projurl }}">{{post.project}}</a>
+			{% endif %}
+			{% if post.paper %} 
+				<i style='color: #aaa'>paper: </i> 
+				<a class='paper-link' href="{{ post.paperurl }}">{{post.paper}}</a>
 			{% endif %}
 		</td>
 	</tr>
