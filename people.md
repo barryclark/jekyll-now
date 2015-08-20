@@ -22,6 +22,14 @@ permalink: /people/
 
 * PhD student, [Department of Applied Mathematics and Statistics](http://www.ams.sunysb.edu/)
 
+## Future lab member
+![Cartoon MRI head](/images/MRI_brain_outline_memming.png){: .profile-photo }
+
+* This could be you!
+* We are [hiring]({% post_url 2015-4-21-Hiring %})!!
+
+# Past members
+
 ## Tzvia Pinkhasov
 ![Tzvia Pinkhasov](/images/Tzvia_Pinkhasov.jpg){: .profile-photo }
 
@@ -32,18 +40,12 @@ permalink: /people/
 ![Matthew Sun](/images/Matthew_Sun.jpg){: .profile-photo }
 
 * Thomas Jefferson High School for Science and Technology
-* Simons Summer Research Program (2015)
+* Simons Summer Research Program (2015 summer)
 
 ## Michael Li
 ![Michael Li](/images/Michael_Li.jpg){: .profile-photo }
 
 * James M. Bennett High, Salisbury, Maryland
-* Simons Summer Research Program (2015)
-
-## Future lab member
-![Cartoon MRI head](/images/MRI_brain_outline_memming.png){: .profile-photo }
-
-* This could be you!
-* We are [hiring]({% post_url 2015-4-21-Hiring %})!!
+* Simons Summer Research Program (2015 summer)
 
 [//]: # # Former members
