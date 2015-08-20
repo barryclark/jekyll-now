@@ -7,10 +7,10 @@ title: Blog
 	{% for post in site.posts %}
 			<tr class='post'>
 				<td>&nbsp;</td>
-				<td nowrap> <br/> {{ post.date | date: "%B %d, %Y" }} </td>
+				<td nowrap style='font-size: medium;'> {{ post.date | date: "%B %d, %Y" }} </td>
 			</tr>
 			<tr class="post">
-				<td style='text-align: right; color:#aaa;'> 
+				<td style='text-align: right; color:#aaa; font-size: medium;'> 
 					post
 				</td>
 				<td> 
@@ -19,7 +19,7 @@ title: Blog
 			</tr>
 		{% if post.project %} 
 			<tr class='post'>
-				<td style='text-align: right; color:#aaa;'>
+				<td style='text-align: right; color:#aaa; font-size: medium;'>
 					demo
 				</td>
 				<td>
@@ -29,7 +29,7 @@ title: Blog
 		{% endif %}
 		{% if post.paper %} 
 			<tr class='post'>
-				<td style='text-align: right; color:#aaa;'> 
+				<td style='text-align: right; color:#aaa; font-size: medium;'> 
 					paper
 				</td>
 				<td>
