@@ -6,7 +6,8 @@ title: Blog
 <table>
 	{% for post in site.posts %}
 			<tr class='post'>
-				<td colspan=2> {{ post.date | date: "%B/%d/%y" }} </td>
+				<td>&nbsp;</td>
+				<td style='color:#aaa;'> {{ post.date | date: "%B %d, %Y" }} </td>
 			</tr>
 			<tr class="post">
 				<td style='text-align: right; color:#aaa;'> 
