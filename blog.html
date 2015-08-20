@@ -7,8 +7,8 @@ title: Blog
 	{% for post in site.posts %}
 			<tr class="post">
 				<td nowrap style='vertical-align:top; text-align:right;'> {{ post.date | date: "%d %b '%y" }} </td>
-				<td style='color:#aaa;'> 
-					post:
+				<td style='text-align: right; color:#aaa;'> 
+					post
 				</td>
 				<td> 
 					<a class='post-link' href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>  <br/>
@@ -17,8 +17,8 @@ title: Blog
 		{% if post.project %} 
 			<tr class='post'>
 				<td>&nbsp;</td>
-				<td style='color:#aaa;'>
-					demo: 
+				<td style='text-align: right; color:#aaa;'>
+					demo
 				</td>
 				<td>
 					<a class='project-link' href="{{ post.projurl }}">{{post.project}}</a>
@@ -28,8 +28,8 @@ title: Blog
 		{% if post.paper %} 
 			<tr class='post'>
 				<td>&nbsp;</td>
-				<td style='color:#aaa;'> 
-					paper: 
+				<td style='text-align: right; color:#aaa;'> 
+					paper
 				</td>
 				<td>
 					<a class='paper-link' href="{{ post.paperurl }}">{{post.paper}}</a>
