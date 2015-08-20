@@ -71,4 +71,4 @@ At a loss with the tools of continuous mathematics, I turned to discrete simulat
 
 ##[Mouse-driven geometry demo of point names](http://ambuc.github.io/pantograph/beta.html)
 
-##[Sample space of points available from an array of rotational values](http://ambuc.github.io/pantograph/gamma.html)
+##[Sample space of points available from an array of rotational values](http://ambuc.github.io/pantograph/delta.html)
