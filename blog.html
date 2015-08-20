@@ -9,16 +9,37 @@ title: Blog
 		<td nowrap style='vertical-align:top; text-align:right;'> {{ post.date | date: "%d %b '%y" }} </td>
 		
 		<td> 
-			<i style='color: #aaa'>post:</i> 
-			<a class='post-link'   href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>  <br/>
-			{% if post.project %} 
-				<i style='color: #aaa'>demo: </i> 
-				<a class='project-link' href="{{ post.projurl }}">{{post.project}}</a>
-			{% endif %}
-			{% if post.paper %} 
-				<i style='color: #aaa'>paper: </i> 
-				<a class='paper-link' href="{{ post.paperurl }}">{{post.paper}}</a>
-			{% endif %}
+
+			<table>
+				<tr>
+					<td nowrap style='vertical-align:top; text-align:right; color: #aaa'>
+						<i>post:</i> 
+					</td>
+					<td style='vertical-align:top; text-align: left;'>
+						<a class='post-link'   href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>  <br/>
+					</td>
+				</tr>
+				{% if post.project %} 
+				<tr>
+					<td nowrap style='vertical-align:top; text-align:right; color: #aaa'>
+						<i>demo: </i> 
+					</td>
+					<td style='vertical-align:top; text-align: left;'>
+						<a class='project-link' href="{{ post.projurl }}">{{post.project}}</a>
+					</td>
+				</tr>
+				{% endif %}
+				{% if post.paper %} 
+				<tr>
+					<td nowrap style='vertical-align:top; text-align:right; color: #aaa'>
+						<i>paper: </i> 
+					</td>
+					<td style='vertical-align:top; text-align: left;'>
+						<a class='paper-link' href="{{ post.paperurl }}">{{post.paper}}</a>
+					</td>
+				</tr>
+				{% endif %}
+			</table>
 		</td>
 	</tr>
 	{% endfor %}
