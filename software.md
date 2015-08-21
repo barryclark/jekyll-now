@@ -18,4 +18,4 @@ install.packages('OmicKriging')
 
 - <a href="https://github.com/hwheeler01/PrediXcan">GitHub Repository</a>
 
-- <a href="http://biorxiv.org/content/early/2015/06/17/020164">Publication</a> in press
+- <a href="http://www.nature.com/ng/journal/vaop/ncurrent/full/ng.3367.html">Publication</a>
