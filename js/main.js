@@ -37,6 +37,7 @@
     case "/":
       top_container.classList.remove("top-blog", "top-work");
       top_container.classList.add("top-home");
+
       break;
 
     // this this a blog post
@@ -51,6 +52,40 @@
       }
 
       break;
+  } // end switch
+
+  if (window.location.pathname == "/") {
+    $('body').css('display', 'block');
+  } else {
+    $('body').css({
+      'display': '-webkit-flex'
+    });
   }
 
 })();
+
+window.onload = function() {
+  var elementButton = document.querySelector('.elevator');
+  var elevator = new Elevator({
+      element: elementButton,
+      duration: 500
+  });
+};
+
+elevator.elevate();
+
+/**
+ * for GT Case Study
+ */
+// ol no. 0 #logo
+$(".card ol a:first-child").click(function(){$("html,body")
+  .animate({scrollTop:$("#logo").offset().top},"500");return false;});
+// ol no. 1 #typography
+$(".card ol a:first-child + 1").click(function(){$("html,body")
+  .animate({scrollTop:$("#typography").offset().top},"500");return false;});
+// ol no. 2 #usability
+$(".card ol a:first-child + 2").click(function(){$("html,body")
+  .animate({scrollTop:$("#usability").offset().top},"500");return false;});
+// ol no. 3 #advertising
+$(".card ol a:first-child + 3").click(function(){$("html,body")
+  .animate({scrollTop:$("#advertising").offset().top},"500");return false;});

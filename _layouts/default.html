@@ -9,9 +9,10 @@
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-  <link href='http://fonts.googleapis.com/css?family=Pontano+Sans|Merriweather:400,900,300,700|Merriweather+Sans:400,800,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Pontano+Sans|Merriweather:400,900,300,700|Merriweather+Sans:400,800,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+    <script src="/js/{{ site.baseurl }}/cssua.min.js"></script>
   </head>
 
   <body>
@@ -36,7 +37,7 @@
     <div class="wrapper-footer">
       <div class="container">
         <footer class="footer">
-          <span>&copy; {{ site.time | date: '%Y' }} Dawit Elias. All rights reserved.</span>
+          <!-- <span>&copy; {{ site.time | date: '%Y' }} Dawit Elias. All rights reserved.</span> -->
           <div class="contact-container">
             <a href="mailto:dawitelias14@gmail.com">email</a>
             <a href="https://www.linkedin.com/in/dawitelias">linkedin</a>
@@ -49,6 +50,8 @@
       </div>
     </div>
 
+  <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
   <script src="/js/{{ site.baseurl }}/main.js"></script>
+  <script src="/js/{{ site.baseurl }}/elevator.min.js"></script>
   </body>
 </html>
