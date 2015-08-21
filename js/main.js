@@ -72,8 +72,6 @@ window.onload = function() {
   });
 };
 
-elevator.elevate();
-
 /**
  * for GT Case Study
  */
@@ -89,3 +87,5 @@ $(".card ol a:first-child + 2").click(function(){$("html,body")
 // ol no. 3 #advertising
 $(".card ol a:first-child + 3").click(function(){$("html,body")
   .animate({scrollTop:$("#advertising").offset().top},"500");return false;});
+
+elevator.elevate();
