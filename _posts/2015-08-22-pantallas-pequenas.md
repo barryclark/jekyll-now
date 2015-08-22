@@ -30,3 +30,5 @@ Tenía [buenas ventas](http://www.macrumors.com/2014/10/01/iphone-5c-uk/) en alg
 Los únicos que siguen aprovechando este pequeño, pero importante sector son unos pocos fabricantes Android, pero enfocándolo a una gama baja cuyas características y rendimiento acaban siendo una malísima experiencia.
 
 Hay un espacio para Apple, que al precio justo puede mantener a muchos usuarios en su ecosistema, que como mera estrategia de retención ya es interesante.
+
+*Escrito desde un móvil de 5 pulgadas, disculpad cualquier error*
