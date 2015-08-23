@@ -10,7 +10,7 @@ permalink: /publications/
 
 ###2015
 
-Gamazon ER\*, <b>Wheeler HE</b>\*, Shah KP\*, Mozaffari SV, Aquino-Michaels K, Carroll RJ, Eyler AE, Denny JC, GTEx Consortium, Nicolae DL, Cox NJ, Im HK. (2015) PrediXcan: Trait mapping using human transcriptome regulation. Nature Genetics, advance online publication. <a href="http://www.ncbi.nlm.nih.gov/pubmed/26258848">PMID26258848</a>, <a href="http://biorxiv.org/content/early/2015/06/17/020164"><i>Open Access Preprint</i></a>
+Gamazon ER\*, <b>Wheeler HE</b>\*, Shah KP\*, Mozaffari SV, Aquino-Michaels K, Carroll RJ, Eyler AE, Denny JC, GTEx Consortium, Nicolae DL, Cox NJ, Im HK. (2015) A gene-based association method for mapping traits using reference transcriptome data. Nature Genetics, advance online publication. <a href="http://www.ncbi.nlm.nih.gov/pubmed/26258848">PMID26258848</a>, <a href="http://biorxiv.org/content/early/2015/06/17/020164"><i>Open Access Preprint</i></a>
 \*Contributed equally.
 
 Komatsu M, <b>Wheeler HE</b>, Chung S, Low SK, Wing C, Delaney SM, Gorsic LK, Takahashi A, Kubo M, Kroetz D, Zhang W, Nakamura Y, Dolan ME. (2015) Pharmacoethnicity in paclitaxel-induced sensory peripheral neuropathy. Clinical Cancer Research, advance online publication. <a href="http://www.ncbi.nlm.nih.gov/pubmed/26015512">PMID26015512</a>
