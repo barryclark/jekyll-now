@@ -2,20 +2,55 @@
   -webkit-text-size-adjust: none;
 }
 
+.highlight .c,
+.highlight .cs,
+.highlight .cm,
+.highlight .cp,
 .highlight .c1 {
   color: $hljs-comment;
   font-style: italic;
 }
 
 .highlight .k,
+.highlight .kc,
+.highlight .kd,
+.highlight .kn,
+.highlight .kr,
+.highlight .kt,
 .highlight .kp {
   color: $hljs-keyword;
 }
 
-.highlight .mi {
+.highlight .na,
+.highlight .nb,
+.highlight .nc,
+.highlight .no,
+.highlight .nd,
+.highlight .ni,
+.highlight .ne,
+.highlight .nf,
+.highlight .nl,
+.highlight .nn,
+.highlight .nx {
+  color: $hljs-name;
+}
+
+.highlight .mi,
+.highlight .il {
   color: $hljs-number;
 }
 
+.highlight .s,
+.highlight .sb,
+.highlight .sc,
+.highlight .sd,
+.highlight .s2,
+.highlight .s3,
+.highlight .sh,
+.highlight .si,
+.highlight .sx,
+.highlight .sr,
+.highlight .ss,
 .highlight .s1 {
   color: $hljs-string;
 }
