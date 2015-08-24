@@ -1,6 +1,7 @@
 ---
 layout: post
 title: La resistencia de las 4 pulgadas
+category: movil
 tags: Smartphone
 excerpt: Pese a que los móviles grandes cada vez son más populares, existe una resistencia encerrada en las 4 pulgadas. 
 ---
