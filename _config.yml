@@ -6,8 +6,9 @@ description: "A simple, beautiful theme for Jekyll that emphasizes content rathe
 baseurl:     ""
 url:         "http://pixyll.com"
 
-# Google analytics
+# Google services
 google_analytics:
+google_verification:
 
 # Optional features
 animated:           false
