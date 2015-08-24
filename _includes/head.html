@@ -19,6 +19,11 @@
       <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
     {% endif %}
 
+    <!-- Verifications -->
+    {% if site.google_verification %}
+      <meta name="google-site-verification" content="{{ site.google_verification }}" />
+    {% endif %}
+
     <!-- Open Graph -->
     <!-- From: https://github.com/mmistakes/hpstr-jekyll-theme/blob/master/_includes/head.html -->
     <meta property="og:locale" content="en_US">

@@ -7,8 +7,9 @@ baseurl:     ""
 url:         "http://pixyll.com"
 date_format: "%b %-d, %Y"
 
-# Google analytics
+# Google services
 google_analytics:
+google_verification:
 
 # Optional features
 animated:           false
