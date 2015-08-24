@@ -1,9 +1,9 @@
-—
+---
 layout: post
 title: La resistencia de las 4 pulgadas
 tags: Smartphone
 excerpt: Pese a que los móviles grandes cada vez son más populares, existe una resistencia encerrada en las 4 pulgadas. 
-—
+---
 
 Durante años vivimos con móviles cuya pantalla no solía superar la pulgada y media, en su mayoría en un formato cuadrado propio de Nokia. Durante años el estándar de los móviles era tener una pantalla monocroma cuadrada porque la cantidad de información que un móvil era capaz de mostrar era muy limitada.
 
