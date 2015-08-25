@@ -38,6 +38,11 @@ Both 32 and 64 bit versions of Manjaro are available in the following flavours (
   - **[manjaro-kde-0.8.13.1-i686.iso](http://sourceforge.net/projects/manjarolinux/files/release/0.8.13.1/kde/manjaro-kde-0.8.13.1-i686.iso)**
   `SHA1SUM: eca5559924d23deb840cdd53318e7330ee7d386c`
 
+#### Testbuilds
+
+  - [manjaro-kde-next-2015.08-x86_64.iso](http://sourceforge.net/projects/manjarotest/files/2015.08/kde-next/manjaro-kde-next-2015.08-x86_64.iso)
+  - [manjaro-kde-next-2015.08-i686.iso](http://sourceforge.net/projects/manjarotest/files/2015.08/kde-next/manjaro-kde-next-2015.08-i686.iso)
+
 
 ## Net-Edition
 
