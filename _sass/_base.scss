@@ -19,7 +19,7 @@ html, body {
 }
 
 em img {
-  max-width: 56em;
+  max-width: $measure-width + 14;
   margin-left: -7em;
 }
 
