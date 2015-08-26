@@ -163,6 +163,9 @@ ex. ENS0000001ENS0000002 -> ENS0000001 ENS0000002
 ##### Query a dataframe
 
     df.query("COL1==a")
+##### Dataframe to list of lists
+
+        ListA = dfA.values.tolist()
 
 ##### Column bind - equivalent to R cbind()
 
