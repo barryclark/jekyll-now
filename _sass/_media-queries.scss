@@ -42,8 +42,15 @@
   }
 }
 
-@media screen and (min-width: $viewport-large) {
+@media screen and (min-width: $viewport-large){
   html {
     font-size: 20px;
+  }
+}
+
+@media screen and (max-width: $viewport-large){
+  em img {
+    max-width: 100%;
+    margin-left: 0;
   }
 }
