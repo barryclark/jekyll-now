@@ -25,7 +25,7 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 740px;
+  max-width: 1150px;
   padding: 0 10px;
   width: 100%;
 }
@@ -153,24 +153,37 @@ img {
 // .masthead
 //
 
-.wrapper-masthead {
-  margin-bottom: 40px;
-}
-
 .masthead {
-  padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
+  background-color: $hot-orange;
+  float:left;
+  position: fixed;
+  height: 100%;
+  width: 32%;
 
   @include mobile {
     text-align: center;
   }
 }
 
+.masthead-content {
+  position: relative;
+  margin: 15% 7% 0 43%;
+  text-align: left;
+}
+
+.main-body {
+  float: right;
+  width: 60%
+}
+
 .site-avatar {
+  border: 1px solid white;
+  border-radius: 9%;
+  overflow: hidden;
   float: left;
-  width: 70px;
-  height: 70px;
-  margin-right: 15px;
+  margin: 5% 0 8% 0%;
+  height: 120px;
+  width: 120px;
 
   @include mobile {
     float: none;
@@ -194,20 +207,22 @@ img {
 }
 
 .site-name {
-  margin-top: 2px;
-  margin-bottom: 4px;
+  margin: 1% 0 8% 0;
   color: $darkGray;
   cursor: pointer;
   font-family: $helveticaNeue;
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
+  text-align: left;
 }
 
 .site-description {
-  margin: -5px 0 0 0;
-  color: $gray;
-  font-size: 16px;
+  border-bottom: 1px solid $white;
+  color: $white;
+  font-size: 11px;
+  padding-bottom: 14%;
+  text-align: left;
 
   @include mobile {
     margin: 3px 0;
@@ -215,24 +230,22 @@ img {
 }
 
 nav {
-  float: right;
-  margin-top: 23px; // @TODO: Vertically middle align
+  float: left;
+  margin: 5%;
+  padding-bottom: 44%;
   font-family: $helveticaNeue;
-  font-size: 18px;
+  font-size: 14px;
 
   @include mobile {
-    float: none;
     margin-top: 9px;
     display: block;
     font-size: 16px;
   }
 
   a {
-    margin-left: 20px;
-    color: $darkGray;
-    text-align: right;
+    color: $white;
     font-weight: 300;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 
     @include mobile {
       margin: 0 10px;
@@ -282,8 +295,7 @@ nav {
 .wrapper-footer {
   margin-top: 50px;
   border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
+  clear:both;
 }
 
 footer {
