@@ -15,7 +15,7 @@ To get Visual Studio to build the solution, open the extension's main project's 
 
 ![video screenshot of the solution](/images/Vsix-extension-could-not-be-found/solution.gif)
 
-Hit `Ctrl+Shift+B` to build the solution. Once it builds, restore **Command line arguments** to `rootsuffix Exp` (or anything that was there previously) and build again.
+Hit `Ctrl+Shift+B` to build the solution. Once it builds, restore **Command line arguments** to `/rootsuffix Exp` (or anything that was there previously) and build again.
 
 This time the package will be built and the extension will be deployed to the Experimental Instance of Visual Studio.
 
