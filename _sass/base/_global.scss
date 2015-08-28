@@ -3,6 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+// For correct line number width in Github Gists
+.gist table tbody tr td {
+  box-sizing: content-box;
+}
 html {
   background: $background-color;
 }
