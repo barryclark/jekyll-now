@@ -5,16 +5,14 @@ layout: default
 <div class="posts">
   {% for post in paginator.posts %}
     <article class="post">
-
       <h1 class="post-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
       <div class="entry">
-        {{ post.excerpt }}
+        <span> {{ post.excerpt }} <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">[...]</a> </span>
       </div>
 
-      <div class="date"> Written on: <time style="color:#666;font-size:11px;" datetime='{{ post.date | date: "%Y-%m-%d" }}'>{{ post.date | date: "%m/%d/%y" }}</time></div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+      <span class="date front-page-date">{{ post.date | date: "%B %d, %Y" }}</span>
+      <a href="{{ site.baseurl }}{{ post.url }}#disqus_thread" class="comments-count">Comments Loading...</a>
     </article>
   {% endfor %}
 </div>

@@ -12,8 +12,7 @@
 
   <body>
     <div class="container">
-
-      <header class="masthead clearfix">
+      <div class="masthead clearfix">
         <div class="masthead-content">
           <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
 
@@ -29,14 +28,15 @@
             </footer>
           </div>
         </div>
-      </header>
+      </div>
 
       <div class="main-body" id="main" role="main" class="container">
         {{ content }}
       </div>
     </div>
 
-
     {% include analytics.html %}
+
+    {% include disqus_count.html %}
   </body>
 </html>

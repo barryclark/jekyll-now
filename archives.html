@@ -7,12 +7,13 @@ layout: default
     {{ tag[0] }}
   {% endfor %}
 {% endcapture %}
+
 {% assign sortedtags = tags | split:' ' | sort %}
 {% for tag in sortedtags %}
   <h3 id="{{ tag }}">{{ tag }}</h3>
   <ul>
   {% for post in site.tags[tag] %}
-    <li><time style="color:#666;font-size:11px;" datetime='{{ post.date | date: "%Y-%m-%d" }}'>{{ post.date | date: "%m/%d/%y" }}</time> <a class="archive_list_article_link" href='{{ post.url }}'>{{ post.title }}</a></li>
+    <li><time style="color:#666;font-size:11px;">{{ post.date | date: "%m/%d/%y" }}</time> <a class="archive_list_article_link" href='{{ post.url }}'>{{ post.title }}</a></li>
   {% endfor %}
   </ul>
 {% endfor %}
