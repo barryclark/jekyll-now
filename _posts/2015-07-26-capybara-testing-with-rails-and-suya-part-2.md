@@ -3,7 +3,7 @@ layout: post
 category: programming
 title: Capybara testing with Rails. Part 2.
 tags: Programming
-excerpt: In part 2 of this tutorial, we'll do some more advanced Capybara Testing. Suya, again, is our muse.
+excerpt: In part 2 of this tutorial, we'll do some more advanced Capybara Testing by interacting with the page, using fill_in, current_path, have_selector, and the launchy gem. Suya, again, is our muse.
 ---
 
 ## Advanced capybara testing.
@@ -365,7 +365,7 @@ Things you should do after this tutorial with a pair:
     => #<Vendor:0x007ff322a23e48 id: nil, name: "Jeff2", created_at: nil, updated_at: nil>
     ```
 
-    Notice the vendor object doesn't have an "id:". It's nil meaning it has no primary key, meaning it is not saved to the database.
+    Notice the vendor object doesn't have an "id:". It has a nil id, meaning that the vendor object has no primary key, because it is not saved to the database.
 
     The next line, if we can save the vendor, then we redirect_to the vendors_path which will first hit the index action of the controller. We can also pass redirect_to a flash notice. More on flashes and redirect_to here:
 
