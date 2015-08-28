@@ -1,0 +1,19 @@
+In particular, individuals with higher Openness may be generally more reticent to embrace formal religious beliefs – but, on the other hand, people who are extremely open would be more able to understand and tolerate individuals who hold such beliefs, even if they don’t share them. In that sense, hardcore atheism and agnosticism are as symptomatic of rigidity and narrow-mindedness as extreme religiosity, and highlight an inability to understand alternative Weltanschauungen or opposite systems of values. In any event, associations between IQ and religiosity are at least in part determined by personality traits and values. And let's not forget that there are plenty of people who are both smart and religious - as well as many individuals who are agnostic and dim.
+
+My whole life I believed myself to be an open-minded and tolerant person. It seeems I am not.
+
+https://www.psychologytoday.com/blog/mr-personality/201312/why-are-religious-people-generally-less-intelligent
+
+http://www.salon.com/2014/12/21/religions_smart_people_problem_the_shaky_intellectual_foundations_of_absolute_faith/
+
+
+Genes and environment explain human beliefs and behaviors—people do things because they are genomes in environments. The near universal appeal of religious belief suggests a biological component to religious beliefs and practices, and science increasingly confirms this view. There is a scientific consensus that our brains have been subject to natural selection. So what survival and reproductive roles might religious beliefs and practices have played in our evolutionary history? What mechanisms caused the mind to evolve toward religious beliefs and practices?
+
+Today there are two basic explanations offered. One says that religion evolved by natural selection—religion is an adaptation that provides an evolutionary advantage. For example religion may have evolved to enhance social cohesion and cooperation—it may have helped groups survive. The other explanation claims that religious beliefs and practices arose as byproducts of other adaptive traits. For example, intelligence is an adaptation that aids survival. Yet it also forms causal narratives for natural occurrences and postulates the existence of other minds. Thus the idea of hidden Gods explaining natural events was born.
+
+In addition to the biological basis for religious belief, there are environmental explanations. It is self-evident from the fact that religions are predominant in certain geographical areas but not others, that birthplace strongly influences religious belief. This suggests that people’s religious beliefs are, in large part, accidents of birth. Besides cultural influences there is the family; the best predictor of people’s religious beliefs in individuals is the religiosity of their parents. There are also social factors effecting religious belief. For example, a significant body of scientific evidence suggests that popular religion results from social dysfunction. Religion may be a coping mechanism for the stress caused by the lack of a good social safety net—hence the vast disparity between religious belief in Western Europe and the United States.
+
+This rationalist understanding of life might seem cold. But Coyne isn’t out to be heartless, and recognizes the consolation religion can provide. “Your grandmother is on her deathbed,” he writes, “and is deeply consoled by thinking that she’ll soon be in heaven, reunited with her late husband and ancestors. You don’t believe a bit of it, but refrain from saying anything. What’s wrong with that?” Nothing, of course. But there’s no guarantee that faith will always be so anodyne, as he makes apparent in recounting the case of Ashley King.
+
+
+http://www.theatlantic.com/politics/archive/2015/07/religion-science-coexist-faith-versus-fact-coyne/396362/
