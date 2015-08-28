@@ -19,13 +19,13 @@ html {
 
 body {
 	background: $white;
-  font: 18px/1.4 $helvetica;
+  font: 0.9em/1.5 $helvetica;
   color: $darkGray;
 }
 
 .container {
   margin: 0 auto;
-  max-width: 1150px;
+  max-width: 1250px;
   padding: 0 10px;
   width: 100%;
 }
@@ -116,13 +116,6 @@ img {
   max-width: none;
 }
 
-.date {
-  color: $gray;
-  font-style: italic;
-  margin-bottom: 14px;
-  font-size: .8em;
-}
-
 // Specify the color of the selection
 ::-moz-selection {
   color: $black;
@@ -173,7 +166,9 @@ img {
 
 .main-body {
   float: right;
-  width: 60%
+  // font-size: 0.9em;
+  margin-right: 8%;
+  width: 48%
 }
 
 .site-avatar {
@@ -207,20 +202,22 @@ img {
 }
 
 .site-name {
-  margin: 1% 0 8% 0;
-  color: $darkGray;
+  color: $white;
   cursor: pointer;
   font-family: $helveticaNeue;
-  font-weight: 300;
-  font-size: 28px;
+  font-weight: 700;
+  font-size: 1.2em;
+  margin: 0 0 10% 0;
   letter-spacing: 1px;
   text-align: left;
 }
 
 .site-description {
-  border-bottom: 1px solid $white;
+  border-bottom: 1px solid $border-gray;
   color: $white;
   font-size: 11px;
+  font-weight: 200;
+  letter-spacing: 1px;
   padding-bottom: 14%;
   text-align: left;
 
@@ -232,7 +229,7 @@ img {
 nav {
   float: left;
   margin: 5%;
-  padding-bottom: 44%;
+  padding-bottom: 59%;
   font-family: $helveticaNeue;
   font-size: 14px;
 
@@ -244,7 +241,7 @@ nav {
 
   a {
     color: $white;
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: 2px;
 
     @include mobile {
@@ -281,11 +278,13 @@ nav {
   .comments {
     margin-top: 10px;
   }
+}
 
-  .read-more {
-    text-transform: uppercase;
-    font-size: 19px;
-  }
+.comments-count {
+  color: $gray;
+  font-size: 1.1em;
+  font-style: italic;
+  margin-left: 5%;
 }
 
 .entry {
@@ -293,14 +292,42 @@ nav {
 }
 
 .wrapper-footer {
+  border-top: 1px solid $border-gray;
   margin-top: 50px;
-  border-top: 1px solid #ddd;
   clear:both;
 }
 
 footer {
   padding: 20px 0;
   text-align: center;
+}
+
+.date {
+  color: $gray;
+  font-style: italic;
+  font-size: .9em;
+  margin-bottom: 14px;
+  padding-right: 5%;
+
+  &.front-page-date {
+    border-right: 1px solid $hot-orange;
+  }
+}
+
+// pagination
+.pagination {
+  font-size: 1.3em;
+  font-weight: 400;
+  margin-top: 8%;
+}
+
+.next {
+  margin-left: 2%;
+}
+
+// archive
+.archive_list_article_link {
+  font-size: 0.85em;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
