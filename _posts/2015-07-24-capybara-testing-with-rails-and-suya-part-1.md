@@ -672,7 +672,7 @@ These are methods you'll be using in your rspec feature tests w/ Capybara.
 
     This is my new app/views/vendors/index.html.erb file:
 
-    ```ruby
+    ```html
     <h1> Vendors And Their Suyas</h1>
 
     <div class="vendors">
