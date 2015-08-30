@@ -1,7 +1,7 @@
 ---
 layout: post
 category: programming
-title: Building a rails API part 1. Setting Up Rails API.
+title: Building a Rails API part 1. Setting Up a Rails API.
 tags: Programming
 excerpt: In part 1 of this tutorial, we will be setting up the models that we will use for this Suya-based API tutorial.
 ---
@@ -12,6 +12,7 @@ excerpt: In part 1 of this tutorial, we will be setting up the models that we wi
 This tutorial will build an API that exposes data pertaining to vendors and suya. You heard me... I will teach you Rails using suya.
 
 In this tutorial/walkthrough, we will cover the following topics:
+
 * Setting up a rails api application
 * Rails generators
 * Creating models and their associated tables in a database.
@@ -44,6 +45,7 @@ Simply switch to a branch and follow the README
 #### Let's Begin.
 
 1. Install the Rails-api gem on your machine by typing this in terminal.
+2.
     ```Bash
     gem install rails-api
     ```
@@ -82,63 +84,10 @@ Simply switch to a branch and follow the README
 
     Anyway, once you have a basic understanding of models and migrations, let's move on.
 
-5. In the parent directory of your project, type:
-    ```Bash
-    rails g model Vendor name:string
-    ```
+    5. In the parent directory of your project, type:
 
-    That command will generate (the "g") a model called Vendor with a name column in the database of type string. Notice some convention here. It is important that you name your model a singular name. Also, the name of the column is first with the data-type of the column second.
 
-    This will invoke AR, create a model, a migration, and a test file for the model.
-    You should see something like this in your terminal (your migration file numbers may be different):
-
-    > invoke  active_record
-          create    db/migrate/20150709123903_create_his.rb
-          create    app/models/hi.rb
-          invoke    test_unit
-          create      test/models/hi_test.rb
-          create      test/fixtures/his.yml
-
-    If you open up your db/migrate file (it should be a long number), you should see:
-
-    ```Ruby
-    class CreateVendors < ActiveRecord::Migration
-      def change
-        create_table :vendors do |t|
-          t.string :name
-
-          t.timestamps null: false
-        end
-      end
-    end
-    ```
-
-    From the Hartl Tutorial:
-    > Note that the name of the migration file is prefixed by a timestamp based on when the migration was generated. In the early days of migrations, the filenames were prefixed with incrementing integers, which caused conflicts for collaborating teams if multiple programmers had migrations with the same number. Barring the improbable scenario of migrations generated the same second, using timestamps conveniently avoids such collisions.
-
-    > The migration itself consists of a change method that determines the change to be made to the database. In the case of Listing 6.2, change uses a Rails method called create_table to create a table in the database for storing users. The create_table method accepts a block (Section 4.3.2) with one block variable, in this case called t (for “table”). Inside the block, the create_table method uses the t object to create name and email columns in the database, both of type string.4 Here the table name is plural (users) even though the model name is singular (User), which reflects a linguistic convention followed by Rails: a model represents a single user, whereas a database table consists of many users. The final line in the block, t.timestamps null: false, is a special command that creates two magic columns called created_at and updated_at, which are timestamps that automatically record when a given user is created and updated.
-
-    Once again... the name of this table is "vendors" even though the model name is "Vendor"! Rails Convention!
-
-    We have a migration file which is a set of instructions on how to change to the database. We have not yet run it.
-    Let's run it with:
-
-    ```Bash
-    rake db:create
-    rake db:migrate
-    ```
-
-    Now if you open your db/schema.rb file, you should see a representation of your database. It should read:
-
-    > ActiveRecord::Schema.define(version: 20150709093432) do
-        create_table "vendors", force: :cascade do |t|
-          t.string   "name"
-          t.datetime "created_at", null: false
-          t.datetime "updated_at", null: false
-        end
-      end
-
-6. Let's do the same thing with the Suya Model. Let's first generate the model:
+    6. Let's do the same thing with the Suya Model. Let's first generate the model:
 
     ```Bash
     rails g model Suya type:string spicy:boolean

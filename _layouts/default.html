@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    {% include disqus_count.html %}
   </head>
 
   <body>
@@ -36,7 +37,6 @@
     </div>
 
     {% include analytics.html %}
-
     {% include disqus_count.html %}
   </body>
 </html>

@@ -284,13 +284,18 @@ nav {
   color: $gray;
   font-size: 1.1em;
   font-style: italic;
-  margin-left: 5%;
+  margin-left: 1%;
+}
+
+.fa-comment-o {
+  margin-left: 6%
 }
 
 .entry {
   margin-bottom: 19px;
 }
 
+// footer
 .wrapper-footer {
   border-top: 1px solid $border-gray;
   margin-top: 50px;

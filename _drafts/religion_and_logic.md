@@ -6,7 +6,6 @@ https://www.psychologytoday.com/blog/mr-personality/201312/why-are-religious-peo
 
 http://www.salon.com/2014/12/21/religions_smart_people_problem_the_shaky_intellectual_foundations_of_absolute_faith/
 
-
 Genes and environment explain human beliefs and behaviors—people do things because they are genomes in environments. The near universal appeal of religious belief suggests a biological component to religious beliefs and practices, and science increasingly confirms this view. There is a scientific consensus that our brains have been subject to natural selection. So what survival and reproductive roles might religious beliefs and practices have played in our evolutionary history? What mechanisms caused the mind to evolve toward religious beliefs and practices?
 
 Today there are two basic explanations offered. One says that religion evolved by natural selection—religion is an adaptation that provides an evolutionary advantage. For example religion may have evolved to enhance social cohesion and cooperation—it may have helped groups survive. The other explanation claims that religious beliefs and practices arose as byproducts of other adaptive traits. For example, intelligence is an adaptation that aids survival. Yet it also forms causal narratives for natural occurrences and postulates the existence of other minds. Thus the idea of hidden Gods explaining natural events was born.
@@ -15,5 +14,8 @@ In addition to the biological basis for religious belief, there are environmenta
 
 This rationalist understanding of life might seem cold. But Coyne isn’t out to be heartless, and recognizes the consolation religion can provide. “Your grandmother is on her deathbed,” he writes, “and is deeply consoled by thinking that she’ll soon be in heaven, reunited with her late husband and ancestors. You don’t believe a bit of it, but refrain from saying anything. What’s wrong with that?” Nothing, of course. But there’s no guarantee that faith will always be so anodyne, as he makes apparent in recounting the case of Ashley King.
 
-
 http://www.theatlantic.com/politics/archive/2015/07/religion-science-coexist-faith-versus-fact-coyne/396362/
+
+undersatnding... to have understanding for others, and realu understanding. Empathy. Attribute differences not to teh person but to sciety and theburder almost washes away. An overhelming force... how could one believe anything else than that God exists and that gays are bad.
+
+David foster wallace quote on atheism. "True, there are plenty of religious people who seem arrogant and certain of their own interpretations, too. They're probably even more repulsive than atheists, at least to most of us. But religious dogmatists' problem is exactly the same as the story's unbeliever: blind certainty, a close-mindedness that amounts to an imprisonment so total that the prisoner doesn't even know he's locked up."
