@@ -7,7 +7,8 @@ title: Manjaro-Fluxbox 0.8.13.1 released
 
 The Manjaro Community is proud to present our new Fluxbox Edition.
 
-This aims to present a really fully featured release, complete with office- and multimedia-applications ready to use OOTB with a preconfigured menu for pretty much everything. The AwOken-iconset (coloured, white and dark) takes up some diskspace, too, but I think those icons are really beautifully designed and extraordinarily complete. Therefor the ISOs are not so small ( >1GB ) but anyway it remains a light and extremely fast system.
+This aims to present a really fully featured release, complete with office- and multimedia-applications ready to use OOTB with a preconfigured menu for pretty much everything. The AwOken-iconset (coloured, white and dark) takes up some diskspace, too, but I think those icons are really beautifully designed and extraordinarily complete. Therefor the ISOs are not so small ( >1GB ) but anyway it remains a light and extremely fast system.  
+Install media are available with both init systems **Systemd** or **OpenRC**.
 
 ##New features and enhancements
 
@@ -33,8 +34,6 @@ This aims to present a really fully featured release, complete with office- and 
 
 As usual, this release comes with our advanced graphical installer **Thus** aswell as our **CLI-installer**.
 Default kernel is **linux41**. **Stable** branch was used to create these install medias.
-
-An alternative version with init system **OpenRC** will be available shortly.
 
 Please give us feedback and report any issues with this release.
 
