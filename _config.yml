@@ -54,6 +54,8 @@ baseurl: ""
 #
 
 markdown: redcarpet
+redcarpet:
+  extensions: ["smart", "tables", "no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "with_toc_data"]
 highlighter: pygments
 permalink: /:title/
 
@@ -75,3 +77,4 @@ exclude:
     - LICENSE
     - README.md
     - CNAME
+    - jekyll
