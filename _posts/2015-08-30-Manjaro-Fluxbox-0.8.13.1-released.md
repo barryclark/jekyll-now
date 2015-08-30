@@ -34,6 +34,8 @@ This aims to present a really fully featured release, complete with office- and 
 As usual, this release comes with our advanced graphical installer **Thus** aswell as our **CLI-installer**.
 Default kernel is **linux41**. **Stable** branch was used to create these install medias.
 
+An OpenRC version of this edition will be available shortly.
+
 Please give us feedback and report any issues with this release.
 
 kind regards
