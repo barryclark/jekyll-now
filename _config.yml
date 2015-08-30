@@ -3,10 +3,10 @@
 #
 
 # Name of your site (displayed in the header)
-name: Your Name
+name: "CS373 Fall 2015: Hao-Hsiang Chi"
 
 # Short bio or description (displayed in the header)
-description: Web Developer from Somewhere
+description: Computer Science student at UT Austin
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
