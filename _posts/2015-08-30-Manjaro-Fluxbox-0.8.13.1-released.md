@@ -7,8 +7,8 @@ title: Manjaro-Fluxbox 0.8.13.1 released
 
 The Manjaro Community is proud to present our new Fluxbox Edition.
 
-Manjaro-Fluxbox aims to be light, fast and resource friendly, yet at the same time complete and ready to use for all typical everyday office- and multimedia-needs.
-The applications are easily accessible from the native right click menu aswell as from the appealing docklike launcher **wbar** on the side.
+**Manjaro-Fluxbox** aims to be light, fast and resource friendly, yet at the same time complete and ready to use for all typical everyday office- and multimedia-needs.
+The applications are easily accessible from the native **right click menu** with detachable submenus aswell as from the appealing docklike launcher **wbar** on the side or by easily configurable **keyboard shortcuts**.
 This edition features the beautiful and extraordinarily versatile icon-theme **AwOken** (coloured, white and dark).
 Install media are available with both init systems **Systemd** or **OpenRC**.
 
@@ -24,14 +24,14 @@ Install media are available with both init systems **Systemd** or **OpenRC**.
 * Hexchat
 * Abiword, Mousepad, Nano
 * Gnumeric, Galculator
-* Pinta, Gpicview, Nitrogen, Qpdfview
+* Pinta, Gpicview, Qpdfview
 * Pulseaudio, Lxmusic, VLC media-player
 * Scrot
 * Gparted
 * manjaro-printer
 * Wbar, Fluxbox-Menu
 * Clipit, Cbatticon, nm-applet, pa-applet, Oblogout with OutMok-theme
-* AwOken-icon-theme, new custom 'manjaro-flux'-theme, Compton
+* Lxappearance, Nitrogen, AwOken-icon-theme, new custom 'manjaro-flux'-theme, Compton
 * yaourt, base-devel
 
 As usual, this release comes with our advanced graphical installer **Thus** aswell as our **CLI-installer**.
