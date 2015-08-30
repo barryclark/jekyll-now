@@ -4,6 +4,9 @@ layout: default
 
 <div class="posts">
   {% for post in paginator.posts %}
+
+  {% assign disqus_identifier = post.url | split: "/" %}
+
     <article class="post">
       <h1 class="post-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
@@ -12,6 +15,8 @@ layout: default
       </div>
 
       <span class="date front-page-date">{{ post.date | date: "%B %d, %Y" }}</span>
+      <i class="fa fa-comment-o"></i>
+
       <a href="{{ site.baseurl }}{{ post.url }}#disqus_thread" class="comments-count">Comments Loading...</a>
     </article>
   {% endfor %}

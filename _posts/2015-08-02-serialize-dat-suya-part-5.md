@@ -41,7 +41,7 @@ On the active-model-serializers:
 #### Let's Begin
 
 So, currently our API response is mad ugly (I believe this is the technical term?).  
-http://mediadb.kicker.de/2015/fussball/spieler/xl/39686_14_2014812112123295.jpg
+![ugly](http://mediadb.kicker.de/2015/fussball/spieler/xl/39686_14_2014812112123295.jpg)
 
 It would be nice if we could remove the timestamps and IDs in our API response.  
 This is where AMS comes in.
