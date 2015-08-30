@@ -4,12 +4,9 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Here I share my thoughts and ideas on a quest to understand intelligencece. Some Python code of experiments is available on my Github repo.
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+I like programming in MATLAB / C++ / Python, extending existing computer vision and machine learning algorithms,
+performing theoretical research, and sharing my experiences in this blog.
