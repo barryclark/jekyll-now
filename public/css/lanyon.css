@@ -31,13 +31,13 @@ body {
 }
 
 body {
-	font-family: "PT Sans", Georgia, "Times New Roman", serif;
+	font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: "PT Sans", Helvetica, Arial, sans-serif;
+	font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: 400;
 	color: #313131;
 	letter-spacing: -.025rem;
@@ -155,7 +155,7 @@ h1, h2, h3, h4, h5, h6 {
 	width: 14rem;
 	visibility: hidden;
 	overflow-y: auto;
-	font-family: "PT Sans", Helvetica, Arial, sans-serif;
+	font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: .875rem; /* 15px */
 	color: #333;
 	background-color: #f6f6f6;
@@ -381,7 +381,7 @@ a.sidebar-nav-item:focus {
 	overflow: hidden; /* clearfix */
 	margin-left: -1rem;
 	margin-right: -1rem;
-	font-family: "PT Sans", Helvetica, Arial, sans-serif;
+	font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color: #ccc;
 	text-align: center;
 }

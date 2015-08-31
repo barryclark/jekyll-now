@@ -1,0 +1,88 @@
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('proximanova-light-webfont.eot');
+    src: url('proximanova-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('proximanova-light-webfont.woff') format('woff'),
+         url('proximanova-light-webfont.ttf') format('truetype'),
+         url('proximanova-light-webfont.svg#ProximaNovaLight') format('svg');
+    font-weight: 100;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('proximanova-lightitalic-webfont.eot');
+    src: url('proximanova-lightitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('proximanova-lightitalic-webfont.woff') format('woff'),
+         url('proximanova-lightitalic-webfont.ttf') format('truetype'),
+         url('proximanova-lightitalic-webfont.svg#ProximaNovaLightItalic') format('svg');
+    font-weight: 100;
+    font-style: italic;
+
+}
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('proximanova-reg-webfont.eot');
+    src: url('proximanova-reg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('proximanova-reg-webfont.woff') format('woff'),
+         url('proximanova-reg-webfont.ttf') format('truetype'),
+         url('proximanova-reg-webfont.svg#ProximaNovaRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('proximanova-regitalic-webfont.eot');
+    src: url('proximanova-regitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('proximanova-regitalic-webfont.woff') format('woff'),
+         url('proximanova-regitalic-webfont.ttf') format('truetype'),
+         url('proximanova-regitalic-webfont.svg#ProximaNovaRegularItalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+
+}
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('proximanova-sbold-webfont.eot');
+    src: url('proximanova-sbold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('proximanova-sbold-webfont.woff') format('woff'),
+         url('proximanova-sbold-webfont.ttf') format('truetype'),
+         url('proximanova-sbold-webfont.svg#ProximaNovaSemibold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('proximanova-sbolditalic-webfont.eot');
+    src: url('proximanova-sbolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('proximanova-sbolditalic-webfont.woff') format('woff'),
+         url('proximanova-sbolditalic-webfont.ttf') format('truetype'),
+         url('proximanova-sbolditalic-webfont.svg#ProximaNovaSemiboldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+
+}
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('proxima_nova_black-webfont.eot');
+    src: url('proxima_nova_black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('proxima_nova_black-webfont.woff') format('woff'),
+         url('proxima_nova_black-webfont.ttf') format('truetype'),
+         url('proxima_nova_black-webfont.svg#ProximaNovaBlack') format('svg');
+    font-weight: 800;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('proxima_nova_extrabold-webfont.eot');
+    src: url('proxima_nova_extrabold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('proxima_nova_extrabold-webfont.woff') format('woff'),
+         url('proxima_nova_extrabold-webfont.ttf') format('truetype'),
+         url('proxima_nova_extrabold-webfont.svg#ProximaNovaExtrabold') format('svg');
+    font-weight: 900;
+    font-style: normal;
+
+}
