@@ -4,12 +4,26 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Hi!
 
-### More Information
+We build tools that make it easier to read, understand and work with the source code. We're pleased to offer two tools for C# developers working in in Visual Studio.
 
-A place to include any other types of information that you'd like to include about yourself.
+Alive
+---
+[Alive](https://comealive.io) brings interactive programming to C#. Alive shows you exactly what your code does, the moment you write it.
 
-### Contact me
+[![screenshot of Alive](/images/AboutAlive.png)](https://comealive.io)
 
-[email@domain.com](mailto:email@domain.com)
+Code Connect
+---
+[Code Connect](http://codeconnect.io) helps visualize and explore relationships within your code. Navigate the callstack to quickly understand how your code works.
+
+[![screenshot of Alive](/images/AboutCC.png)](http://codeconnect.io)
+
+
+### Contact Us
+
+- Email:&nbsp; [founders@comealive.io](mailto:founders@comealive.io)
+- Twitter: [Amadeus at @HiAmadeus](https://twitter.com/HiAmadeus)
+- Twitter: [Josh at @ThisIsJoshVarty](https://twitter.com/GetCodeConnect)
+- Twitter: [Code Connect Inc. at @GetCodeConnect](https://twitter.com/GetCodeConnect)
