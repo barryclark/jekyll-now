@@ -109,7 +109,7 @@ SyntaxFactory.SeparatedList<ArgumentSyntax>(
                         SyntaxFactory.TriviaList())))
             .WithOperatorToken(
                 SyntaxFactory.Token(
-                    SyntaxKind.MinusToken)))})
+                    SyntaxKind.MinusToken)))});
 ```
 
 Each of the arguments is a different type of `ExpressionSyntax`. The first two are `LiteralExpression` with `StringLiteralExpression` and `NumericLiteralExpression` inside. The last one is a `PrefixUnaryExpression` which ultimately contains a `NumericLiteralExpression`.
@@ -117,10 +117,11 @@ Each of the arguments is a different type of `ExpressionSyntax`. The first two a
 Suppose that the method arguments are supplied by the user as a string `“\”one\”, 2, 3d”`. After splitting this string into three substrings, you must 
 choose appropriate LiteralExpression for each one of them.
 
-If you need `NumericLiteralExpression`, you must pass a numeric to SyntaxFactory.Literal as the third parameter. Setting `SyntaxKind.NumericLiteralExpression` doesn’t mean that you will obtain `NumericLiteralExpression`
+If you need `NumericLiteralExpression`, you must pass a numeric to SyntaxFactory.Literal as the third parameter. Setting `SyntaxKind.NumericLiteralExpression` doesn’t mean that you will obtain `NumericLiteralExpression`.
 
 If you use a wrong expression, the syntax tree won’t compile - but it will appear ok!  Read more about [invalid syntax trees at Josh’s blog](https://joshvarty.wordpress.com/2015/03/30/lrn-quick-tips-dont-trust-syntaxnode-tofullstring/) and add a [test that tries to compile the syntax tree](https://github.com/CodeConnect/SyntaxFactoryVsParseText/blob/master/src/CodeConnect.SyntaxFactoryVsParseText.Tests/TestHelpers.cs#L14).
 
+In conclusion, ff the parameter is a `string`, then you need to parse it, validate it and and convert it yourself. Only after parsing it you can use the `SyntaxFactory` method.
 
 # Which method to use?
 
@@ -137,7 +138,7 @@ Initially I dismissed `ParseText` approach thinking that `SyntaxFactory` is *the
 ### The source code
 The source code to the generator is [available on GitHub](https://github.com/CodeConnect/SyntaxFactoryVsParseText)
 
-You can follow the call tree which is identical in both `ParseTextCodeGenerator` and `SyntaxFactoryCodeGenerator`. The entry point is method `GenerateType`, which calls `getAllMembers`. This method calls both `getRunMethod` and `getMethods`. The former calls `getMethodInvocations` and the latter one calls `getMethodBody`. There is an extra step in the `ParseTextCodeGenerator.generateType`: you must get the root of the tree and descend to down the child nodes to find the desired `TypeDeclarationSyntax`.
+You can follow the call tree which is identical in both `ParseTextCodeGenerator` and `SyntaxFactoryCodeGenerator`. The entry point is method `GenerateType`, which calls `getAllMembers`. This method calls both `getRunMethod` and `getMethods`. The former calls `getMethodInvocations` and the latter one calls `getMethodBody`. There is an extra step in the `ParseTextCodeGenerator.GenerateType`: you must get the root of the tree and descend to down the child nodes to find the desired `TypeDeclarationSyntax`.
 
 `ParseText` code generation:
 ![Screenshot of code generated with Code Connect](/images/SyntaxFactory-vs-ParseText/ptCode.png)
