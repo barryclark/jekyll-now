@@ -9,7 +9,7 @@ categories:
 
 ![pic]({{ site.baseurl }}images/atom.png)
 
-For the last six months or so I have been exclusively using Atom.io as my editor. If you aren't familiar, Atom is the editor created by Github. It's simple, easily hackable, and generally awesome. It also doesn't seem to be as slow as it used to be.
+For the last six months or so I have been exclusively using Atom as my editor. If you aren't familiar, Atom is the editor created by Github. It's simple, easily hackable, and generally awesome. It also doesn't seem to be as slow as it used to be.
 
 I switched to Atom mainly because I liked the design and hack-ability of the editor, but also the simple Github integration without needing plug-ins. The editor has become the main tool I use every day. Mostly I use it for writing [Github flavored markdown](https://help.github.com/articles/github-flavored-markdown/) and code in Python, Java, SQL, or JS (MongoDB shell).
 
