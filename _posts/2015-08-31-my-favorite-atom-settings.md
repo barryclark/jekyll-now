@@ -1,5 +1,5 @@
 ---
-title: My favorite Atom.io settings
+title: My favorite Atom editor settings
 author: kgorman
 layout: post
 categories:
