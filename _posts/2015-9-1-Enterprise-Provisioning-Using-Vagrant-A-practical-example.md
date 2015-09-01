@@ -1,8 +1,7 @@
 ---
-layout: post
-title: Enterprise Provisioning Using Vagrant: A practical example
-tags: [vagrant, virtualbox, provisioning, enterprise]
+published: false
 ---
+
 
 Vagrant is a great abstraction layer over your stack.
 If you are not using it yet, I suggest that you [give it a try][1].
@@ -206,6 +205,3 @@ Happy Vagrant-ing!
    [21]: https://github.com/sgerogia/enterprise-vagrant-example/blob/master/team-level/link_files.bat
    [22]: https://github.com/sgerogia/enterprise-vagrant-example/blob/master/team-level/link_files.sh
    [23]: https://github.com/sgerogia/enterprise-vagrant-example/blob/master/project-level/Vagrantfile
-   
-    
-   
