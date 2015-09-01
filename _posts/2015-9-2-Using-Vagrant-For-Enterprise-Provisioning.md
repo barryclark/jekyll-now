@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Vagrant for machine provisioning in the enterprise: A practical example
+title: Using Vagrant for Enterprise Provisioning: A practical example
+tags: [vagrant, virtualbox]
 ---
 
 Vagrant is a great abstraction layer over your stack.
