@@ -5,7 +5,7 @@ layout: default
 <div class="posts">
   {% for post in paginator.posts %}
 
-  {% assign disqus_identifier = post.url | split: "/" %}
+    {% assign disqus_identifier = post.url | split: "/" %}
 
     <article class="post">
       <h1 class="post-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>

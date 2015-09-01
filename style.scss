@@ -25,16 +25,14 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 1250px;
-  padding: 0 10px;
+  max-width: 1260px;
   width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
   color: $darkerGray;
+  font-family: $helveticaNeue;
   font-weight: bold;
-
   line-height: 1.6;
   margin: 1em 0 15px;
   padding: 0;
@@ -166,9 +164,8 @@ img {
 
 .main-body {
   float: right;
-  // font-size: 0.9em;
-  margin-right: 8%;
-  width: 48%
+  width: 68%;
+  padding: 0 10% 0 8%;
 }
 
 .site-avatar {
@@ -177,8 +174,8 @@ img {
   overflow: hidden;
   float: left;
   margin: 5% 0 8% 0%;
-  height: 120px;
-  width: 120px;
+  height: 8.3em;
+  width: 8.3em;
 
   @include mobile {
     float: none;
