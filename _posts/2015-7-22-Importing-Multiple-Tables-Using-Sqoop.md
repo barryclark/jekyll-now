@@ -4,9 +4,9 @@ title: Importing multiple tables using Sqoop
 tags: [sqoop, hadoop, utilities]
 ---
 
-We are using [Sqoop][1] as a first step in a complex ETL process. 
+We are using Sqoop as a first step in a complex ETL process. 
 
-Sqoop is a great command-line tool and does what it says on the tin.
+[Sqoop][1] is a great command-line tool and does what it says on the tin.
 However when it comes to importing a large number of different tables, the different options and combinations can become a hindrance.  
 
 You have the option of configuring and executing your job through [Apache Oozie][2].
