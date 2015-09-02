@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Disk capacity planning: Neo4J 
+title: Disk capacity planning for Neo4J 
 tags: [neo4j, capacity planning, utilities]
 ---
 

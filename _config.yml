@@ -11,6 +11,9 @@ description: Indoors enthusiast, Unicorn jockey, Eternal student
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://avatars1.githubusercontent.com/u/1963182?v=3&amp;u=442fb0fc1e4ec19c8fa95a32c75e2a2bcfb5d84b&amp;s=140
 
+# File encoding
+encoding: utf-8
+
 #
 # Flags below are optional
 #

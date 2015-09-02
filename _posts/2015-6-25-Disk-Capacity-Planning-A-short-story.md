@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Disk Capacity planning: A short story 
+title: Disk Capacity planning (A short story) 
 tags: [capacity planning]
 ---
 
