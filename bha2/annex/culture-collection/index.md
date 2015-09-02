@@ -10,7 +10,9 @@ The following cultures are available in the Waag Society's Open Wetlab. In case 
 
 {% for page in site.pages %}
 {% if page.categories contains 'culture-collection' %}
+{% if page.url contains 'bha2' %}
 * [{{ page.title }}]({{ page.url | prepend: site.baseurl }})
+{% endif %}
 {% endif %}
 {% endfor %}
 
