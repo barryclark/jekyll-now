@@ -8,7 +8,9 @@ alias: [/annex/cultivation-media]
 ## Cultivation Media
 
 {% for page in site.pages %}
-	{% if page.categories contains 'cultivation-media' %}
+{% if page.url contains 'biofactory' %}
+{% if page.categories contains 'cultivation-media' %}
 * [{{ page.title }}]({{ page.url | prepend: site.baseurl }})
 	{% endif %}
+{% endif %}
 {% endfor %}
