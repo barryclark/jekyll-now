@@ -11,6 +11,6 @@ categories: culture-collection
 * Grows best on [Nutrient Agar](/bha2/annex/cultivation-media/nutrient-agar/) or [Plate Count Agar](/bha2/annex/cultivation-media/plate-count-agar/)
 * Find out more on [Wikipedia](http://en.wikipedia.org/wiki/Xanthomonas_campestris) or [MicrobeWiki](https://microbewiki.kenyon.edu/index.php/Xanthomonas_campestris)
 
-![xanthomonas campestris]({{ site.baseurl }}/bha2/culture-collection/XC.JPG) 
+![xanthomonas campestris]({{ site.baseurl }}/bha2/annex/culture-collection/XC.JPG) 
 
 [Back to Culture Collection](/bha2/annex/culture-collection/)

@@ -13,6 +13,6 @@ categories: culture-collection
 * Find out more on [Wikipedia](http://en.wikipedia.org/wiki/Spirulina_%28genus%29) and [MicrobeWiki](https://microbewiki.kenyon.edu/index.php/Spirulina)
 * Bought on eBay
 
-![spirulina]({{ site.baseurl }}/bha2/culture-collection/spirulina.jpg) 
+![spirulina]({{ site.baseurl }}/bha2/annex/culture-collection/spirulina.jpg) 
 
 [Back to Culture Collection](/bha2/annex/culture-collection/)

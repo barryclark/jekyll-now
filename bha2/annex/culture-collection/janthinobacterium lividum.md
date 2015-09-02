@@ -12,6 +12,6 @@ categories: culture-collection
 * Grows best on [Nutrient Agar](/bha2/annex/cultivation-media/nutrient-agar/) or [Plate Count Agar](/bha2/annex/cultivation-media/plate-count-agar/)
 * Find out more on [Wikipedia](http://en.wikipedia.org/wiki/Janthinobacterium_lividum)
 
-![janthinobacterium lividum]({{ site.baseurl }}/bha2/culture-collection/JL.jpg) 
+![janthinobacterium lividum]({{ site.baseurl }}/bha2/annex/culture-collection/JL.jpg) 
 
 [Back to Culture Collection](/bha2/annex/culture-collection/)

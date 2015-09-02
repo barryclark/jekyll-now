@@ -12,6 +12,6 @@ categories: culture-collection
 * Find out more on [Wikipedia](http://en.wikipedia.org/wiki/Arthrobacter)
 * Obtained from Dr. Simon Park
 
-![arthobacter polychromogens]({{ site.baseurl }}/bha2/culture-collection/AG.jpg) 
+![arthobacter polychromogens]({{ site.baseurl }}/bha2/annex/culture-collection/AG.jpg) 
 
 [Back to Culture Collection](/bha2/annex/culture-collection/)

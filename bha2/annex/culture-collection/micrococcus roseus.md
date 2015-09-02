@@ -12,6 +12,6 @@ categories: culture-collection
 * Find out more on [Wikipedia](http://en.wikipedia.org/wiki/Micrococcus_roseus) or [MicrobeWiki](https://microbewiki.kenyon.edu/index.php/Micrococcus)
 * Obtained from Dr. Simon Park
 
-![micrococcus roseus]({{ site.baseurl }}/bha2/culture-collection/MR.JPG) 
+![micrococcus roseus]({{ site.baseurl }}/bha2/annex/culture-collection/MR.JPG) 
 
 [Back to Culture Collection](/bha2/annex/culture-collection/)

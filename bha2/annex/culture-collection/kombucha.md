@@ -12,6 +12,6 @@ categories: culture-collection
 * Find out more on [Wikipedia](http://en.wikipedia.org/wiki/Kombucha)
 * Obtained from BiologiGaragen Copenhagen
 
-![kombucha]({{ site.baseurl }}/bha2/culture-collection/kombucha.jpg) 
+![kombucha]({{ site.baseurl }}/bha2/annex/culture-collection/kombucha.jpg) 
 
 [Back to Culture Collection](/bha2/annex/culture-collection/)

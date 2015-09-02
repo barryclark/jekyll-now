@@ -11,6 +11,6 @@ categories: culture-collection
 * Grows best on [Plate Count Agar](/bha2/annex/cultivation-media/plate-count-agar/)
 * Obtained from Dr. Simon Park
 
-![dermacoccus nishinomyaensis]({{ site.baseurl }}/bha2/culture-collection/DN.JPG) 
+![dermacoccus nishinomyaensis]({{ site.baseurl }}/bha2/annex/culture-collection/DN.JPG) 
 
 [Back to Culture Collection](/bha2/annex/culture-collection/)

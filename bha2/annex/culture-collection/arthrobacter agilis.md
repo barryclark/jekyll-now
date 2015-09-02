@@ -12,6 +12,6 @@ categories: culture-collection
 * Find out more on [Wikipedia](http://en.wikipedia.org/wiki/Arthrobacter) or [MicrobeWiki](https://microbewiki.kenyon.edu/index.php/Arthrobacter)
 * Obtained from Dr. Simon Park
 
-![arthrobacter agilis]({{ site.baseurl }}/bha2/culture-collection/Aag.JPG) 
+![arthrobacter agilis]({{ site.baseurl }}/bha2/annex/culture-collection/Aag.JPG) 
 
 [Back to Culture Collection](/bha2/annex/culture-collection/)
