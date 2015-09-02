@@ -11,15 +11,15 @@ At the start of the Biohack Academy 2 we assume you have taken care of the follo
   * A tablet will not do
 * Arduino UNO microcontroller + USB cable or [a cheaper equivalent board](http://en.wikipedia.org/wiki/List_of_Arduino_boards_and_compatible_systems#Arduino_footprint-compatible_boards) such as Freeduino, Seeeduino or Sparkfun Redboard
   * Also check the [suppliers page](/suppliers/)
-* For those building at home: soldering iron, multimeter, helping hand, solder and heat shrink [iPrototype](https://iprototype.nl/products/accessoires/tools/Heat-Shrink-Kit)
-* M3 [DIN84](http://www.bevestigingsmateriaal.nl/bevestigingsmateriaal/bouten-schroeven/zaagsnede-kop/cilinderkopschroef-din-84/106) or [DIN933](http://www.bevestigingsmateriaal.nl/bevestigingsmateriaal/bouten-schroeven/buitenzeskant-kop/tapbouten-din-933/61) (what ever you prefer) bolts and nuts [DIN934](http://www.bevestigingsmateriaal.nl/bevestigingsmateriaal/moeren/zeskantmoer-din-934/75) in several lengths, such as 10 mm, 20 mm and 30 mm
+* For those building at home (otherwise provided in the lab): soldering iron, multimeter, helping hand, solder and heat shrink ([iPrototype](https://iprototype.nl/products/accessoires/tools/Heat-Shrink-Kit))
+* M3 [DIN84](http://www.bevestigingsmateriaal.nl/bevestigingsmateriaal/bouten-schroeven/zaagsnede-kop/cilinderkopschroef-din-84/106) or [DIN933](http://www.bevestigingsmateriaal.nl/bevestigingsmateriaal/bouten-schroeven/buitenzeskant-kop/tapbouten-din-933/61) (what ever you prefer) bolts and nuts [DIN934](http://www.bevestigingsmateriaal.nl/bevestigingsmateriaal/moeren/zeskantmoer-din-934/75) in several lengths, such as 10 mm, 20 mm and 30 mm. 
 
 ## Software
 * Text or code editor such as Notepad, Notepad++, gedit, etc
 * [Arduino IDE 1.6](http://arduino.cc/en/Main/Software) for programming the Arduino microcontroller
-* [OpenSCAD](http://www.openscad.org/downloads.html) for parametric 3D design
+* [OpenSCAD](http://www.openscad.org/downloads.html) and [FreeCAD](http://www.freecadweb.org) for parametric 3D design
 * SketchUp 8 [Mac](http://www.oldapps.com/mac/sketchup.php), [Win](http://filehippo.com/download_sketchup/download/2f2d0bce86e6554b6df98772ca7200a2/), [Linux (Needs Wine)](https://appdb.winehq.org/objectManager.php?sClass=version&iId=21290), for 3D drawing
-  * [SVG export plugin](https://code.google.com/p/sketchup-svg-outline-plugin/) for exporting to lasercutter compatible file format
+  * [SVG export plugin](https://code.google.com/p/sketchup-svg-outline-plugin/downloads/list) for exporting to lasercutter compatible file format. You will need version 0.99 for Sketchup 8
   * [STL export plugin](http://extensions.sketchup.com/en/content/sketchup-stl) for exporting to 3D printer compatible file format
 * [Fritzing](http://fritzing.org/download/) for documenting electronic circuits
 * [InkScape](https://www.inkscape.org/en/) for editing vector drawings
@@ -35,7 +35,7 @@ At the start of the Biohack Academy 2 we assume you have taken care of the follo
   * [Disqus.com](https://disqus.com) for commenting on the BioHack Academy syllabus
 
 ## Wetware
-In case you wish to do experiments at home you will need to following equipment:
+In case you wish to do experiments at home you will need to following equipment, otherwise these will be provided for in the lab:
 
 * Fridge, freezer and stove
 * Pressure cooker (6 Liters or more)
