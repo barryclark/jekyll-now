@@ -13,7 +13,9 @@ Please use the following calender to book the machines in the Fablab during the 
 Please read the following guides before using that particular machine or piece of equipment:
 
 {% for page in site.pages %}
+{% if page.url contains 'biofactory' %}'
 {% if page.categories contains 'machine-equipment-guide' %}
 * [{{ page.title }}]({{ page.url | prepend: site.baseurl }})
+{% endif %}
 {% endif %}
 {% endfor %}
