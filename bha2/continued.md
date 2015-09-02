@@ -8,6 +8,7 @@ permalink: /bha2/continued/
 
 Not done biohacking yet? Try out these hacks:
 
-* Hack 1
+* Replicate projects from BHA1
+* More ideas to come soon!
 
 Back to [BHA2](/bha2/)
