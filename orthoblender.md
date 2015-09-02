@@ -12,7 +12,7 @@ permalink: /orthoblender/
 <p>
 Tables are organized by reference to individual protein coding genes.</p>
 <p>
-<b></b>Enter a <a href="https://raw.githubusercontent.com/clairemcwhite/clairemcwhite.github.io/master/humanProteomeDetails.tsv"> proteome Uniprot Accession </a> to pull a table of orthologs to that protein.<br> ex. P00395</b>
+<b></b>Enter a <a href="https://raw.githubusercontent.com/clairemcwhite/clairemcwhite.github.io/master/humanProteomeDetails.tsv"> Uniprot Accession </a> to pull a table of orthologs to that protein.<br> ex. P00395</b>
 </p>
 </div> 
 
@@ -39,6 +39,7 @@ Link to Excel view of most recent search: <a href="" id=lnk></a><br>
 <div class="More"> 
 <h5>About</h5>
  
+ <h3>Work in progress</h3>
     <p>OrthoBlender displays multispecies orthologs to a reference human protein coding gene according to diverse ortholog sorting algorithms.</p>
     </p>
     <img src="https://cloud.githubusercontent.com/assets/11052278/8072170/17ff4800-0ed8-11e5-806b-0ec7fec2a7e7.png" alt="simplified example table"><br
