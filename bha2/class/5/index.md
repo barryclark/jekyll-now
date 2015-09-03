@@ -32,7 +32,7 @@ For this week's practicals we need 3 devices:
 
 * [BHA_Gelbox repository](https://github.com/BioHackAcademy/BHA_GelBox)
 
-![Gelbox](/bha2/class/5/Gelbox.png)
+![Gelbox](/bha2/class/5/GelBox.png)
 
 ### Power supply
 
