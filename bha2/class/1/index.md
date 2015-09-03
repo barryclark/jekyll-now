@@ -16,7 +16,8 @@ Welcome to BHA 2. We will start with a short history of the Biohacking field. Ne
 * Principles of electronics
 * Tour around your lab
 * Practicals
-* Digital Fabrication
+  * Digital Fabrication
+  * Sterile Hood Assembly
 
 ## Devices
 
@@ -46,15 +47,15 @@ Build the sterile hood collectively with your local group.
 ## Additional reading and hacking
 
 * Biohacking
-* [Biohacklabs](http://www.biohacklabs.org)
-* [DIYBio](http://www.diybio.org)
-* [Hackteria](http://www.hackteria.org)
-* [Biocoder](http://www.biocoder.com)
+  * [Biohacklabs](http://www.biohacklabs.org)
+  * [DIYBio](http://www.diybio.org)
+  * [Hackteria](http://www.hackteria.org)
+  * [Biocoder](http://www.biocoder.com)
 * Electronics
-* [Electronics for Dummies](http://www.amazon.com/Electronics-For-Dummies-Cathleen-Shamieh/dp/0470286970)
-* [Soldering](https://www.youtube.com/watch?v=oqV2xU1fee8) YouTube video
+  * [Electronics for Dummies](http://www.amazon.com/Electronics-For-Dummies-Cathleen-Shamieh/dp/0470286970)
+  * [Soldering](https://www.youtube.com/watch?v=oqV2xU1fee8) YouTube video
 * Sterile Hoods
-* [Hackteria Sterile Hood](http://hackteria.org/wiki/index.php/DIY_Sterlisation_Hood)
+  * [Hackteria Sterile Hood](http://hackteria.org/wiki/index.php/DIY_Sterlisation_Hood)
 
 ## Feeling lazy?
 
