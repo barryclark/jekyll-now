@@ -38,8 +38,8 @@ cultures have grown. The subject of this class is optics and experimental design
 
 In order to take part in this class you will need the following materials:
 
-* [Webcam Microscope materials](http://www.github.com/biohackacademy/BHA_Webcam_Microscope/BoM.md)
-* [Compound Microscope materials](http://www.github.com/biohackacademy/BHA_Microscope/BoM.md)
+* [Webcam Microscope materials](https://github.com/BioHackAcademy/BHA_Webcam_Microscope/blob/master/BoM.md)
+* [Compound Microscope materials](https://github.com/BioHackAcademy/BHA_Microscope/blob/master/BoM.md)
 
 ## Additional reading and hacking
 

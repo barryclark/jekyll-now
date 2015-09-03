@@ -30,7 +30,7 @@ Now that you are gaining an understanding on how to manipulate life, it's about 
 
 In order to take part in this class you will need the following materials:
 
-* [Centrifuge materials](http://www.github.com/biohackacademy/BHA_Centrifuge/BoM.md)
+* [Centrifuge materials](https://github.com/BioHackAcademy/BHA_Centrifuge/blob/master/BoM.md)
 
 ## Additional reading and hacking
 

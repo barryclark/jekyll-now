@@ -50,8 +50,8 @@ Finished peristaltic pump:
 
 In order to take part in this class you will need the following materials:
 
-* [Syringe Pump materials](http://www.github.com/biohackacademy/BHA_SyringePump/BoM.md)
-* [Peristaltic Pump materials](http://www.github.com/biohackacademy/BHA_PeristalticPump/BoM.md)
+* [Syringe Pump materials](https://github.com/BioHackAcademy/BHA_PeristalticPump/blob/master/BoM.md)
+* [Peristaltic Pump materials](https://github.com/BioHackAcademy/BHA_SyringePump/blob/master/BoM.md)
 
 ## Additional reading and hacking
 

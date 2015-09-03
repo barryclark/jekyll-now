@@ -41,8 +41,8 @@ This is a more precise analytical instrument. Why not hack it into a flow cell s
 
 In order to take part in this class you will need the following materials:
 
-* [Webcam Spectrophotometer materials](http://www.github.com/biohackacademy/BHA_Webcam_Spectrophotometer/BoM.md)
-* [Spectrophotometer materials](http://www.github.com/biohackacademy/BHA_Spectrophotometer/BoM.md)
+* [Webcam Spectrophotometer materials](https://github.com/BioHackAcademy/BHA_Webcam_Spectrophotometer)
+* [Spectrophotometer materials](https://github.com/BioHackAcademy/BHA_Spectrophotometer)
 
 ## Additional reading and hacking
 

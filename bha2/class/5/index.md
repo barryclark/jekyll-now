@@ -44,8 +44,8 @@ Completely open source, perfectly suitable: [IO Rodeo Power Supply](http://www.i
 
 In order to take part in this class you will need the following materials:
 
-* [Thermocycler materials](http://www.github.com/biohackacademy/BHA_Thermocycler/BoM.md)
-* [Gelbox materials](http://www.github.com/biohackacademy/BHA_GelBox/BoM.md)
+* [Thermocycler materials](https://github.com/BioHackAcademy/BHA_Thermocycler/blob/master/BoM.md)
+* [Gelbox materials](https://github.com/BioHackAcademy/BHA_GelBox/blob/master/BoM.md)
 
 ## Additional reading and hacking
 

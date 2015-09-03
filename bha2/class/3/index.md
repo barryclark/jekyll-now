@@ -29,7 +29,7 @@ Living organisms need a nice and comfort environment to grow in.
 
 In order to take part in this class you will need the following materials:
 
-* [Incubator materials](http://www.github.com/biohackacademy/BHA_Incubator/BoM.md)
+* [Incubator materials](https://github.com/BioHackAcademy/BHA_Incubator/blob/master/BoM.md)
 
 ## Additional reading and hacking
 

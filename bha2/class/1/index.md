@@ -37,7 +37,7 @@ This week we will build our first Open Hardware lab device: the sterile hood. Th
 
 In order to take part in this class you will need the following materials:
 
-* [Sterile Hood materials](http://www.github.com/biohackacademy/BHA_SterileHood/BoM.md)
+* [Sterile Hood materials](https://github.com/BioHackAcademy/BHA_SterileHood/blob/master/BoM.md)
 
 ## Assignment
 
