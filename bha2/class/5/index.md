@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Class 5: Genetics
+title: Class 5 - Genetics
 permalink: /bha2/class/5/
 ---
 

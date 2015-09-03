@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Class 8: Guest speaker
+title: Class 8 - Guest speaker
 permalink: /bha2/class/8/
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Class 4: Optics
+title: Class 4 - Optics
 permalink: /bha2/class/4/
 ---
 

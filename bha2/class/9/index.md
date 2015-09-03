@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Class 9: Bioinformatics
+title: Class 9 - Bioinformatics
 permalink: /bha2/class/9/
 ---
 

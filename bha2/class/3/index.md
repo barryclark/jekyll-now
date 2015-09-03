@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Class 3: Electronics & Coding
+title: Class 3 - Electronics & Coding
 permalink: /bha2/class/3/
 ---
 

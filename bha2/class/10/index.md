@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Class 10: Graduation Show
+title: Class 10 - Graduation Show
 permalink: /bha2/class/10/
 ---
 

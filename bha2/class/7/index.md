@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Class 7: Bioethics
+title: Class 7 - Bioethics
 permalink: /bha2/class/7/
 ---
 

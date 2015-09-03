@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Class 6: Midterm presentations
+title: Class 6 - Midterm presentations
 permalink: /bha2/class/6/
 ---
 

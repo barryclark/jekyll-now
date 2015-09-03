@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Class 2: Microbiology
+title: Class 2 - Microbiology
 permalink: /bha2/class/2/
 ---
 
