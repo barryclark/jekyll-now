@@ -30,7 +30,7 @@ This pump is best for moving small volumes of liquids.
 
 * [BHA_SyringePump repository](https://github.com/BioHackAcademy/BHA_SyringePump)
 
-![SyringePump](/biofactory/class/8/SyringePump.png)
+![SyringePump](/bha2/class/8/SyringePump.png)
 
 ### Peristaltic pump
 
@@ -39,7 +39,7 @@ This pump is best for moving small volumes of liquids.
 * [BHA_PeristalticPump repository](https://github.com/BioHackAcademy/BHA_PeristalticPump)
 * [Building guide](/biofactory/class/8-pumps/peristaltic-pump-building-guide/) 
 
-![PeristalticPump](/biofactory/class/8/PeristalticPump.png)
+![PeristalticPump](/bha2/class/8/PeristalticPump.png)
 
 Finished peristaltic pump:
 [![Peristaltic Pump in action](http://img.youtube.com/vi/rvNwhfQSCfg/0.jpg)](http://www.youtube.com/watch?v=rvNwhfQSCfg)

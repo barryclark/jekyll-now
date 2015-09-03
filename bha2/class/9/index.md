@@ -27,7 +27,7 @@ For fast and easy graphical analysis.
 
 * [BHA_Webcam_Spectrophotometer repository](https://github.com/BioHackAcademy/BHA_Webcam_Spectrophotometer)
 
-![Webcam Spectrophotometer](/biofactory/class/9/WebcamSpectrophotometer.png)
+![Webcam Spectrophotometer](/bha2/class/9/WebcamSpectrophotometer.png)
 
 ### Photodiode array-based photospectrometer
 
@@ -35,7 +35,7 @@ This is a more precise analytical instrument. Why not hack it into a flow cell s
 
 * [BHA_Spectrophotometer repository](https://github.com/BioHackAcademy/BHA_Spectrophotometer)
 
-![Spectrophotometer](/biofactory/class/9/Spectrophotometer.png)
+![Spectrophotometer](/bha2/class/9/Spectrophotometer.png)
 
 ## Bill of Materials
 

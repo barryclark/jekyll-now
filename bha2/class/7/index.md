@@ -24,7 +24,7 @@ Now that you are gaining an understanding on how to manipulate life, it's about 
 
 * [BHA_Centrifuge repository](https://github.com/BioHackAcademy/BHA_Centrifuge)
 
-![Centrifuge](/biofactory/class/7/Centrifuge.png)
+![Centrifuge](/bha2/class/7/Centrifuge.png)
 
 ## Bill of Materials
 

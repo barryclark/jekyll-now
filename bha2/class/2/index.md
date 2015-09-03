@@ -23,7 +23,7 @@ In order to grow microbes in liquids, we will start building a Magnetic Stirrer.
 
 * [BHA_Stirrer repository](https://github.com/BioHackAcademy/BHA_Stirrer)
 
-![SterileHood](/biofactory/class/2/Stirrer.png)
+![Magnetic Stirrer](/bha2/class/2/MagneticStirrer.png)
 
 ## Bill of Materials
 

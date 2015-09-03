@@ -23,7 +23,7 @@ Living organisms need a nice and comfort environment to grow in.
 
 * [BHA_Incubator repository](https://github.com/BioHackAcademy/BHA_Incubator)
 
-![Incubator](/biofactory/class/3/Incubator.png)
+![Incubator](/bha2/class/3/Incubator.png)
 
 ## Bill of Materials
 

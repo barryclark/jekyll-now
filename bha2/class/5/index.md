@@ -26,19 +26,19 @@ For this week's practicals we need 3 devices:
 
 * [BHA_Thermocycler repository](https://github.com/BioHackAcademy/BHA_Thermocycler)
 
-![Thermocycler](/biofactory/class/5/Thermocycler.png)
+![Thermocycler](/bha2/class/5/Thermocycler.png)
 
 ### Gelbox
 
 * [BHA_Gelbox repository](https://github.com/BioHackAcademy/BHA_GelBox)
 
-![Compound Microscope](/biofactory/class/5/Gelbox.png)
+![Gelbox](/bha2/class/5/Gelbox.png)
 
 ### Power supply
 
 Completely open source, perfectly suitable: [IO Rodeo Power Supply](http://www.iorodeo.com/content/electrophoresis-power-supply-kit)
 
-![Power Supply](/biofactory/class/5/Powersupply.png)
+![Power Supply](/bha2/class/5/Powersupply.png)
 
 ## Bill of Materials
 

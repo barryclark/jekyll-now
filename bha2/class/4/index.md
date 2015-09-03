@@ -26,13 +26,13 @@ cultures have grown. The subject of this class is optics and experimental design
 
 * [BHA_Webcam_Microscope repository](https://github.com/BioHackAcademy/BHA_Webcam_Microscope)
 
-![Compound Webcam Microscope](/biofactory/class/4/Webcam_Microscope.png)
+![Webcam Microscope](/bha2/class/4/WebcamMicroscope.png)
 
 ### Compound Microscope
 
 * [BHA_Microscope repository](https://github.com/BioHackAcademy/BHA_Microscope)
 
-![Compound Microscope](/biofactory/class/4/Microscope.png)
+![Compound Microscope](/bha2/class/4/CompoundMicroscope.png)
 
 ## Bill of Materials
 
