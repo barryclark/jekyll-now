@@ -47,15 +47,15 @@ In order to take part in this class you will need the following materials:
 ## Additional reading and hacking
 
 * Spectroscopy
-* [PublicLab](http://publiclab.org/wiki/spectrometer)
-* [Calibration Assays](http://www.iorodeo.com/colorimeter/assays)
+  * [PublicLab](http://publiclab.org/wiki/spectrometer)
+  * [Calibration Assays](http://www.iorodeo.com/colorimeter/assays)
 * DIY Spectrometers
-* [Really Basic - Instructable](http://www.instructables.com/id/DIY-Spectroscope/)
-* [Spectruino](http://myspectral.com/)
-* [CCD array](http://publiclab.org/notes/bhickman/10-12-2013/ccd-diodearray-spectrometer)
-* [TSL1402R](http://playground.arduino.cc/Main/TSL1402R)
+  * [Really Basic - Instructable](http://www.instructables.com/id/DIY-Spectroscope/)
+  * [Spectruino](http://myspectral.com/)
+  * [CCD array](http://publiclab.org/notes/bhickman/10-12-2013/ccd-diodearray-spectrometer)
+  * [TSL1402R](http://playground.arduino.cc/Main/TSL1402R)
 * DIY absorbance meters
-* [Open Source Colorimeter](http://www.appropedia.org/Open-source_colorimeter)
+  * [Open Source Colorimeter](http://www.appropedia.org/Open-source_colorimeter)
 
 ## Feeling lazy?
 
