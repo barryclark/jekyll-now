@@ -17,14 +17,14 @@ permalink: /people/
 </figure>
 <br>
 
-**Lab Member 1**
+**Jon Brenner, Graduate Student**
 
 <figure>
-    <a href="../images/DNA1.png">
+    <a href="../images/jon.png">
         <img src="{{ site.baseurl }}/images/DNA1.png" width="150px" height="150px" align="left"/>
     </a>
 <figcaption>
-	Lab member info
+	Jon is a graduate student within the Department of Computer Science at Loyola University Chicago from where he also received a B.S. in Bioinformatics. Jon joined the Wheeler lab in the fall of 2015 with additional past and on ongoing research endeavors focused on the computational aspects of metagenomics and the search for cross-species horizontal gene transfer. In his free time he enjoys attending live music, PC gaming, and any sport involving a board strapped to one's feet. 
 </figcaption>
 </figure>  
 <br>
@@ -34,7 +34,7 @@ permalink: /people/
 <br>
 <br>
 
-**Lab Member 2**
+**Your Name Here**
 
 <figure>
     <a href="../images/DNA1.png">
