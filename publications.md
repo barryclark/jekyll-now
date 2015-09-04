@@ -25,6 +25,7 @@ permalink: /publications/
 * Il Park, António R. C. Paiva, José C. Príncipe, Thomas B. DeMarse. An Efficient Algorithm for Continuous-time Cross Correlogram of Spike Trains, Journal of Neuroscience Methods, Volume 168, Issue 2, 15 March 2008, 514-523
 
 ### Conference Publications (peer-reviewed papers)
+* Anqi Wu, Il Memming Park, Jonathan Pillow. Convolutional spike-triggered covariance analysis for neural subunit models. Neural Information Processing Systems (NIPS) 2015
 * Il Memming Park, Sohan Seth, Steven Van Vaerenbergh. Probabilistic Kernel Least Mean Squares Algorithms. IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP) 2014
 * Il Memming Park, Evan Archer, Kenneth Latimer, Jonathan Pillow. Universal models for binary spike patterns using centered Dirichlet processes. Neural Information Processing Systems (NIPS) 2013 (25.4% acceptance rate)
 * Il Memming Park\*, Evan Archer\*, Nicholas Priebe, Jonathan Pillow. Spectral methods for neural characterization using generalized quadratic models. Neural Information Processing Systems (NIPS) 2013 (25.4% acceptance rate, (\* equal contribution)
