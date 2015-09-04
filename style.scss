@@ -187,7 +187,8 @@ img {
 .site-name {
   margin: 0;
   font-weight: 300;
-  font-family: AvenirNext-UltraLight;
+  // font-family: AvenirNext-UltraLight;
+  font-family: 'Roboto', $helveticaNeue;
   font-size: 70px;
   color: $white;
   margin-left: -6px;
@@ -203,8 +204,8 @@ img {
   /* margin: -5px 0 0 0;
   color: $gray;
   font-size: 16px; */
-  font-weight: 300;
-  font-family: AvenirNext-UltraLight;
+  font-weight: 100;
+  font-family: 'Roboto', $helveticaNeue;
   font-size: 29px;
   color: $white;
   margin: 0;
@@ -280,7 +281,6 @@ nav {
     font-weight: 300;
     letter-spacing: 2px;
     font-family: 'Pontano Sans', sans-serif;
-    // font-family: AvenirNext-Regular;
     font-size: 14px;
     color: #FFFFFF;
     letter-spacing: 1.66px;
@@ -337,9 +337,9 @@ nav {
       box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.2);
       border-radius: 4px;
 
-      font-family: AvenirNext-Medium;
+      font-family: 'Roboto', $helveticaNeue;
       font-size: 18px;
-      font-weight: 300;
+      font-weight: 400;
       color: rgba(0,0,0,0.4);
       letter-spacing: 1.66px;
       transition: all .4s;
@@ -364,15 +364,18 @@ nav {
   width: 100%;
 
   .container h3 {
-    // font-family: 'Pontano Sans', sans-serif;
     font-family: 'Merriweather Sans', sans-serif;
     font-weight: 400;
     font-size: 24px;
-    color: rgba(0,0,0,0.8);;
+    color: rgba(0,0,0,0.8);
     letter-spacing: 1px;
     text-transform: uppercase;
     margin-top: 25px;
     margin-bottom: -10px;
+
+    @include mobile {
+      padding: 1.5rem;
+    }
 
     strong {
       font-weight: 800;
@@ -389,17 +392,17 @@ nav {
   }
 
   p {
-    font-family: 'Merriweather', serif;
-    font-size: 18px;
-    line-height: 1.9;
+    font-family: 'freight-text-pro',Georgia,Cambria,'Times New Roman',Times,serif;
+    font-size: 22px;
+    line-height: 1.5;
     letter-spacing: .01rem;
     word-wrap: break-word;
-    color: rgba(0,0,0,0.8);
-    font-weight: 300;
+    color: black;
+    font-weight: 400;
+    font-style: normal;
 
     @include mobile {
-      font-size: 16px;
-      line-height: 2;
+      font-size: 20px;
     }
   }
 }
@@ -407,6 +410,10 @@ nav {
 .featured-work-inner {
   width: 100%;
   padding: 0 40px 40px 40px;
+
+  @include mobile {
+    padding: 1.5rem;
+  }
 
   .caption {
     font-weight: 400;
@@ -423,8 +430,8 @@ nav {
 
   .read-more {
     text-transform: uppercase;
-    font-family: 'Merriweather', serif;
-    font-size: 18px;
+    font-family: 'freight-text-pro',Georgia,Cambria,'Times New Roman',Times,serif;
+    font-size: 22px;
     line-height: 1.9;
     letter-spacing: .01rem;
     word-wrap: break-word;
@@ -432,7 +439,7 @@ nav {
     color: $blue;
 
     @include mobile {
-      font-size: 16px;
+      font-size: 20px;
       line-height: 2;
     }
   }
@@ -462,22 +469,39 @@ nav {
   .latest-post-title {
     padding-bottom: 0;
 
+    @include mobile {
+      padding: 0 1.5rem;
+    }
+
     a { color: inherit; }
   }
 
   .latest-post-date {
     padding: 0 40px;
     color: rgba(0,0,0,0.7);
-    // font-family: AvenirNext-Medium;
     font-family: 'Pontano Sans', sans-serif;
     font-size: 14px;
     font-style: italic;
+
+    @include mobile {
+      padding: 0 1.5rem;
+    }
   }
 
-  .entry p {
+  .entry p, .post p {
+    font-family: 'freight-text-pro',Georgia,Cambria,'Times New Roman',Times,serif;
+    font-size: 22px;
+    line-height: 1.5;
+    letter-spacing: .01rem;
+    word-wrap: break-word;
+    color: black;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0 auto 30px auto;
+
     @include mobile {
-      font-size: 16px;
-      line-height: 2;
+      font-size: 20px;
+      margin:0 auto;
     }
   }
 }
@@ -507,13 +531,18 @@ nav {
   width: 100%;
   padding: 0 40px 40px 40px;
   margin-bottom: 25px;
-  font-family: 'Merriweather', serif;
-  font-size: 18px;
+  font-family: 'freight-text-pro',Georgia,Cambria,'Times New Roman',Times,serif;
+  font-size: 22px;
   line-height: 1.9;
   letter-spacing: .01rem;
   word-wrap: break-word;
   color: rgba(0,0,0,0.8);
   font-weight: 300;
+
+  @include mobile {
+    font-size: 20px;
+    padding: 1.5rem;
+  }
 
   blockquote {
     margin: 1.8em .8em;
@@ -530,8 +559,8 @@ nav {
 
   .read-more {
     text-transform: uppercase;
-    font-family: 'Merriweather', serif;
-    font-size: 18px;
+    font-family: 'freight-text-pro',Georgia,Cambria,'Times New Roman',Times,serif;
+    font-size: 22px;
     line-height: 1.9;
     letter-spacing: .01rem;
     word-wrap: break-word;
@@ -539,8 +568,7 @@ nav {
     color: $blue;
 
     @include mobile {
-      font-size: 16px;
-      line-height: 2;
+      font-size: 20px;
     }
   }
 }
@@ -564,7 +592,7 @@ nav {
   max-width: 90%;
 
   @include mobile {
-    max-width: 90%;
+    max-width: 100%;
     margin-top: 20px;
   }
 }
@@ -619,17 +647,17 @@ nav {
 
     p {
       margin: 10px 0;
-      font-family: 'Merriweather', serif;
-      font-size: 18px;
-      line-height: 1.9;
+      font-family: 'freight-text-pro',Georgia,Cambria,'Times New Roman',Times,serif;
+      font-size: 22px;
+      line-height: 1.5;
       letter-spacing: .01rem;
       word-wrap: break-word;
-      color: rgba(0,0,0,0.8);
-      font-weight: 300;
+      color: black;
+      font-weight: 400;
+      font-style: normal;
 
       @include mobile {
-        font-size: 16px;
-        line-height: 2;
+        font-size: 20px;
       }
     }
   }
@@ -694,6 +722,11 @@ nav {
     margin-left: auto;
     margin-right: auto;
     color: rgba(0,0,0,0.8);
+
+    @include mobile {
+      font-size: 28px;
+      width: 100%;
+    }
   }
 
   p {
@@ -736,18 +769,8 @@ nav {
     }
 
     span {
-      position: relative;
-      display: inline-block;
+      text-decoration: line-through;
       pointer-events: none;
-    }
-
-    span::before {
-      content: '';
-      border-bottom: 1px solid red;
-      width: 100%;
-      position: absolute;
-      right: 0;
-      top: 50%;
     }
   }
 
@@ -914,10 +937,12 @@ nav {
     }
   }
 
-  p { margin: 0; }
+  p {
+    margin: 0;
+    font-weight: bold;
+  }
 
   p:first-child {
-    font-size: 22px;
     line-height: 1.5;
     color: black;
     font-size: 25px;
@@ -970,7 +995,7 @@ nav {
   }
 
   .error-p1 {
-    font: 22px AvenirNext-UltraLight, sans-serif;
+    font: 22px 'Roboto', $helveticaNeue;
     margin: auto;
     text-align: center;
     font-weight: 600;
@@ -988,13 +1013,13 @@ nav {
   }
 
   .error-p2 {
-    font: 22px AvenirNext-UltraLight, sans-serif;
+    font: 22px 'Roboto', $helveticaNeue;
     margin: auto;
     text-align: center;
 
     @include mobile {
       width: 100%;
-      font-size: 18px;
+      font-size: 20px;
       padding: 0 1.5rem;
       margin-bottom: 4%;
     }

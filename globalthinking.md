@@ -93,7 +93,7 @@ permalink: /work/globalthinking/
 		<div class="case-wrapper">
 			<div class="next-wrapper clearfix">
 				<a href="/work/motleyfool" title="Next Project">
-					<p>Motley Fool Referral</p>
+					<p>Motley Fool Refer-A-Friend</p>
 					<p class="change-case-txt">Next Project</p>
 				</a>
 			</div>
