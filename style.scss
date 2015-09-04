@@ -19,13 +19,12 @@ html {
 
 body {
 	background: $white;
-  font: 0.9em/1.5 $helvetica;
+  font: 0.9vw/1.5 $helvetica;
   color: $darkGray;
 }
 
 .container {
   margin: 0 auto;
-  max-width: 1260px;
   width: 100%;
 }
 
@@ -43,7 +42,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 2.6vw;
   line-height: 1.1;
   a {
     color: inherit;
@@ -106,7 +105,7 @@ strong, b {
 }
 
 img {
-  max-width: 100%;
+  max-width: 104%;
 }
 
 // Fixes images in popup boxes from Google Translate
@@ -152,7 +151,10 @@ img {
   width: 32%;
 
   @include mobile {
+    height: 35%;
     text-align: center;
+    top: 0;
+    width: 100%;
   }
 }
 
@@ -160,12 +162,11 @@ img {
   position: relative;
   margin: 15% 7% 0 43%;
   text-align: left;
-}
 
-.main-body {
-  float: right;
-  width: 68%;
-  padding: 0 10% 0 8%;
+  @include mobile {
+    margin: 0;
+    padding: 4% 20% 0 20%;
+  }
 }
 
 .site-avatar {
@@ -175,12 +176,14 @@ img {
   float: left;
   margin: 5% 0 8% 0%;
   height: 8.3em;
-  width: 8.3em;
+  width: 8em;
 
   @include mobile {
     float: none;
+    height: 17em;
     display: block;
     margin: 0 auto;
+    width: 17em;
   }
 
   img {
@@ -192,21 +195,9 @@ img {
   float: left;
 
   @include mobile {
-    float: none;
     display: block;
     margin: 0 auto;
   }
-}
-
-.site-name {
-  color: $white;
-  cursor: pointer;
-  font-family: $helveticaNeue;
-  font-weight: 700;
-  font-size: 1.2em;
-  margin: 0 0 10% 0;
-  letter-spacing: 1px;
-  text-align: left;
 }
 
 .site-description {
@@ -220,37 +211,68 @@ img {
 
   @include mobile {
     margin: 3px 0;
+    text-align: center;
   }
 }
+
+.site-name {
+  color: $white;
+  cursor: pointer;
+  font-family: $helveticaNeue;
+  font-weight: 700;
+  font-size: 1.2em;
+  margin: 0 0 10% 0;
+  letter-spacing: 1px;
+  text-align: left;
+
+  @include mobile {
+    font-size: 3vw;
+    text-align: center;
+    margin: 2% 0 6% 0;
+  }
+}
+
 
 nav {
   float: left;
   margin: 5%;
   padding-bottom: 59%;
   font-family: $helveticaNeue;
-  font-size: 14px;
+  font-size: 1.0em;
 
   @include mobile {
-    margin-top: 9px;
     display: block;
-    font-size: 16px;
+    margin: 4%;
+    font-size: 0.9em;
   }
 
   a {
     color: $white;
     font-weight: 400;
     letter-spacing: 2px;
-
-    @include mobile {
-      margin: 0 10px;
-      color: $blue;
-    }
   }
 }
 
 //
 // .main
 //
+
+.main-body {
+  float: right;
+  width: 68%;
+  padding: 0 10% 0 8%;
+
+  @include mobile {
+    height: 65%;
+    width: 100%;
+  }
+}
+
+.posts {
+  @include mobile {
+    text-align: center;
+  }
+}
 
 .posts > .post {
   padding-bottom: 2em;
@@ -321,6 +343,10 @@ footer {
   font-size: 1.3em;
   font-weight: 400;
   margin-top: 8%;
+
+  @include mobile {
+    text-align: center;
+  }
 }
 
 .next {
