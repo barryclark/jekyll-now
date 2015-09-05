@@ -32,13 +32,13 @@ body {
 
 body {
 	font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	-webkit-font-smoothing: antialiased;
+	-webkit-font-smoothing: subpixel-antialiased;
 	text-rendering: optimizeLegibility;
 }
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-weight: 400;
+	font-weight: 600;
 	color: #313131;
 	letter-spacing: -.025rem;
 }
@@ -336,6 +336,7 @@ a.sidebar-nav-item:focus {
 	display: block;
 	margin-top: -.5rem;
 	margin-bottom: 1rem;
+	font-size: .85em;
 	color: #9a9a9a;
 }
 
@@ -359,11 +360,10 @@ a.sidebar-nav-item:focus {
 	font-size: inherit;
 }
 .related-posts li small {
-	font-size: 75%;
+	font-size: 65%;
 	color: #999;
 }
 .related-posts li a:hover {
-	color: #268bd2;
 	text-decoration: none;
 }
 .related-posts li a:hover small {
