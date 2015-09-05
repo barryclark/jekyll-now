@@ -10,4 +10,14 @@ Puedes ver los correos que se han enviado previamente a los suscriptores revisan
 
 El correo se envía antes de las 12:00 (GMT+1) todos los días de lunes a viernes. Sin spam, promesa.
 
+<div class="singup">
+<form action="https://tinyletter.com/briefingdiario" method="post" target="popupwindow">
+<input id="tlemail" name="email" type="text" placeholder="Escribe aquí tu correo" />
+<input name="embed" type="hidden" value="1" />
+<input type="submit" value="Suscribirse" id="submit" />
+</form>
+</div><!-- .singup -->
+
+Gestionado con [TinyLetter](http://www.tinyletter.com).
+
 <div style="text-align:center"><a href="https://twitter.com/briefingdiario" class="twitter-follow-button" data-show-count="false" data-lang="es" data-size="large">Seguir a @briefingdiario</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
