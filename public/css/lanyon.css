@@ -110,12 +110,13 @@ h1, h2, h3, h4, h5, h6 {
 	margin-bottom: 0;
 	color: #000;
 	letter-spacing: 0px;
+	font-weight: 600;
 }
 .masthead-title a {
 	color: #000;
 }
 .masthead-title small {
-	font-size: 75%;
+	font-size: 65%;
 	font-weight: 400;
 	color: #999;
 	letter-spacing: 0;
@@ -323,7 +324,7 @@ a.sidebar-nav-item:focus {
 .page-title,
 .post-title,
 .post-title a {
-	color: #303030;
+	color: #000;
 }
 .page-title,
 .post-title {
@@ -339,7 +340,7 @@ a.sidebar-nav-item:focus {
 }
 
 .post p small {
-	font-size: .65rem;
+	font-size: .6em;
 	color: #666;
 }
 
