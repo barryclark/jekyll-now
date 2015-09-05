@@ -8,7 +8,7 @@ Briefing diario es una newsletter diaria creada y editada por Manu Contreras. Se
 
 Puedes ver los correos que se han enviado previamente a los suscriptores revisando [el archivo de Briefing](http://tinyletter.com/briefingdiario/archive).
 
-El correo se envía antes de las 12:00 (GMT+1) todos los días de lunes a viernes. Sin spam, promesa.
+El correo se envía antes de las 12:00 ([CET](https://es.wikipedia.org/wiki/Hora_central_europea)) todos los días de lunes a viernes. Sin spam, promesa.
 
 <hr>
 

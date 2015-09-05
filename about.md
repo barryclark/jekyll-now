@@ -6,7 +6,9 @@ permalink: /about/
 
 Soy Manu Contreras — escribo sobre tecnología, diseño, televisión y cultura popular para varios medios en Internet.
 
-He escrito en varios sitios enfocados en tecnología de consumo donde he podido contar historias sobre la tecnología y como nos afecta todos los días. Por ejemplo para [Diario Turing](http://www.eldiario.es/autores/manu_contreras/) de eldiario.es he escrito artículos sobre tecnología, seguridad y redes sociales enfocándome en el impacto en la sociedad de la información.
+He escrito en varios sitios enfocados en tecnología de consumo donde he podido contar historias sobre la tecnología y como nos afecta todos los días.
+
+Para [Diario Turing](http://www.eldiario.es/autores/manu_contreras/) de eldiario.es he escrito artículos sobre tecnología, seguridad y redes sociales enfocándome en el impacto en la sociedad de la información.
 
 Para [Fayerwayer](http://www.fayerwayer.com/author/mcontreras/) y [Wayerless](http://www.wayerless.com/author/mcontreras/) del grupo chileno Betazeta pasé varios años escribiendo artículos de tecnología de consumo, redes sociales y seguridad enfocado al gran público.
 

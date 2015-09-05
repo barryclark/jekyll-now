@@ -32,13 +32,13 @@ body {
 
 body {
 	font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	-webkit-font-smoothing: subpixel-antialiased;
+	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
 }
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-weight: 600;
+	font-weight: 400;
 	color: #313131;
 	letter-spacing: -.025rem;
 }
@@ -336,7 +336,6 @@ a.sidebar-nav-item:focus {
 	display: block;
 	margin-top: -.5rem;
 	margin-bottom: 1rem;
-	font-size: .85em;
 	color: #9a9a9a;
 }
 
@@ -360,10 +359,11 @@ a.sidebar-nav-item:focus {
 	font-size: inherit;
 }
 .related-posts li small {
-	font-size: 65%;
+	font-size: 75%;
 	color: #999;
 }
 .related-posts li a:hover {
+	color: #268bd2;
 	text-decoration: none;
 }
 .related-posts li a:hover small {
@@ -574,4 +574,34 @@ a.pagination-item:hover {
 /* Only one tweak for a reverse layout */
 .layout-reverse.sidebar-overlay #sidebar-checkbox:checked ~ .sidebar {
 	box-shadow: -.25rem 0 .5rem rgba(0,0,0,.1);
+}
+
+
+/* newsletter */
+.singup {
+	border: 1px solid black;
+	display: inline-block;
+}
+
+.singup input {
+	font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	outline: none;
+}
+
+.singup #tlemail {
+	font-size: .9em;
+	font-weight: 600;
+	color: #666;
+	padding: 10px;
+	border: 1px solid #fff;
+	width: 16em;
+}
+
+.singup #submit {
+	font-size: .9em;
+	font-weight: 600;
+	color: #fff;
+	background:#000;
+	border: 1px solid #000;
+	padding: 10px;
 }
