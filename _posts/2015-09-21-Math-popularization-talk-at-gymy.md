@@ -11,7 +11,7 @@ to get the (mainly senior) students interested in
 
 TODO IMAGE HERE ![Image]({{site.url}}/2015_popmath_gymy/images/some.jpg)
 
-After I introducet myself a little bit, we started talking about the field in general, how I got into university
+After I introduced myself a little bit, we started talking about the field in general, how I got into university
 and how I chose to [study Computer Science](http://www.studuj-matfyz.cz/) at [Matfyz](http://mff.cuni.cz).
 We then set forward to explore some fun mid-level math problems, mainly the
 [100 prisoners problem](https://en.wikipedia.org/wiki/100_prisoners_problem) and a few others.
