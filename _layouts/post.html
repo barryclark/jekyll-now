@@ -13,19 +13,18 @@ layout: default
     Written on {{ page.date | date: "%B %e, %Y" }}
   </div>
 
-  {% include disqus.html %}
 </article> -->
 
 <div class="content-posts">
   <article class="container posts">
-    <!-- {% if page.title %} -->
     <h3 class="latest-post-title">{{ page.title }}</a></h3>
     <p class="latest-post-date">{{ page.date | date: "%d %B %Y" }}</p>
     <article class="post">
-      {{ page.excerpt }}
+      {{ content }}
+      <div id="push"></div>
+      <span class="categories"><strong>Tags:</strong> {{ page.categories | join: ', ' }}</span>
+      <div id="push"></div>
     </article>
-    <!-- {% endif %} -->
-
 
   </article>
 </div>

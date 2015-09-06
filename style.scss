@@ -196,6 +196,7 @@ img {
   @include mobile {
     width: auto;
     margin-right: auto;
+    font-size: 50px;
   }
 
 }
@@ -212,7 +213,7 @@ img {
 
   @include mobile {
     width: 100%;
-    font-size: 24px;
+    font-size: 22px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -488,7 +489,7 @@ nav {
     }
   }
 
-  .entry p, .post p {
+  .entry p {
     font-family: 'freight-text-pro',Georgia,Cambria,'Times New Roman',Times,serif;
     font-size: 22px;
     line-height: 1.5;
@@ -504,6 +505,44 @@ nav {
       margin:0 auto;
     }
   }
+
+  .post p {
+    font-family: 'freight-text-pro',Georgia,Cambria,'Times New Roman',Times,serif;
+    font-size: 22px;
+    line-height: 1.5;
+    letter-spacing: .01rem;
+    word-wrap: break-word;
+    color: black;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0 auto 30px auto;
+
+    @include mobile {
+      font-size: 20px;
+    }
+  }
+
+  .categories {
+    border-top: 1px dotted rgba(0,0,0,0.3);
+    font-family: $helveticaNeue, sans-serif;
+    font-size: 16px;
+    color: black;
+    width: 700px;
+    font-weight: 300;
+    padding: 10px 0 0;
+
+    @include mobile {
+      font-size: 14px;
+      padding-left: 0;
+      width: 100%;
+      margin: 0 auto;
+      border: none;
+    }
+  }
+
+  #push {
+    min-height: 10px;
+  }
 }
 
 .container h3 {
@@ -517,10 +556,10 @@ nav {
   margin-top: 35px;
 }
 
-.posts > .post {
-  padding-bottom: 2em;
-  border-bottom: 1px solid $lightGray;
-}
+// .posts > .post {
+//   padding-bottom: 2em;
+//   border-bottom: 1px solid $lightGray;
+// }
 
 .posts > .post:last-child {
   padding-bottom: 1em;
@@ -530,7 +569,7 @@ nav {
 .post {
   width: 100%;
   padding: 0 40px 40px 40px;
-  margin-bottom: 25px;
+  // margin-bottom: 25px;
   font-family: 'freight-text-pro',Georgia,Cambria,'Times New Roman',Times,serif;
   font-size: 22px;
   line-height: 1.9;
@@ -538,6 +577,7 @@ nav {
   word-wrap: break-word;
   color: rgba(0,0,0,0.8);
   font-weight: 300;
+
 
   @include mobile {
     font-size: 20px;
@@ -569,10 +609,10 @@ nav {
 
     @include mobile {
       font-size: 20px;
+      line-height: 2;
     }
   }
 }
-
 
 //
 //
@@ -645,6 +685,7 @@ nav {
     margin-bottom: auto;
     padding: 0 5% 5%;
 
+
     p {
       margin: 10px 0;
       font-family: 'freight-text-pro',Georgia,Cambria,'Times New Roman',Times,serif;
@@ -660,8 +701,7 @@ nav {
         font-size: 20px;
       }
     }
-  }
-
+  }// post
 }
 
 //
@@ -699,7 +739,7 @@ nav {
 
     @include mobile {
       width: 100%;
-      font-size: 36px;
+      font-size: 31px;
       margin: 0 0 15px 0;
       padding: 20px 0;
     }

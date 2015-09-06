@@ -43,8 +43,8 @@ permalink: /work/motleyfool/
 	<div id="next">
 		<div class="case-wrapper">
 			<div class="next-wrapper clearfix">
-				<a href="/work/ag-hackathon" title="Next Project">
-					<p>AG Hackathon</p>
+				<a href="/work/ag-hackday" title="Next Project">
+					<p>AG Intern Hack Day</p>
 					<p class="change-case-txt">Next Project</p>
 				</a>
 			</div>

@@ -16,7 +16,6 @@
   </head>
 
   <body>
-    {% include svg-icons.html %}
 
     <section class="top top-home">
       <div class="gradient">&nbsp;</div>
@@ -32,12 +31,9 @@
 
     </section>
 
-    {% include analytics.html %}
-
     <div class="wrapper-footer">
       <div class="container">
         <footer class="footer">
-          <!-- <span>&copy; {{ site.time | date: '%Y' }} Dawit Elias. All rights reserved.</span> -->
           <div class="contact-container">
             <a href="mailto:dawitelias14@gmail.com">email</a>
             <a href="https://www.linkedin.com/in/dawitelias">linkedin</a>
@@ -50,6 +46,7 @@
       </div>
     </div>
 
+  {% include analytics.html %}
   <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
   <script src="/js/{{ site.baseurl }}/main.js"></script>
   <script src="/js/{{ site.baseurl }}/elevator.min.js"></script>

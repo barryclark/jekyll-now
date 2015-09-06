@@ -79,8 +79,8 @@ permalink: /work/globalthinking/
 	<div id="prev">
 		<div class="case-wrapper">
 			<div class="prev-wrapper">
-        <a href="#">
-					<p>Project Name</p>
+      <a href="/work/spaceshooters" title="Previous Project">
+        <p>Space Shooters</p>
 					<p class="change-case-txt">Previous Project</p>
 				</a>
 			</div>
