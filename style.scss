@@ -1,6 +1,5 @@
 ---
 ---
-
 //
 // IMPORTS
 //
@@ -46,6 +45,10 @@ h1 {
   line-height: 1.1;
   a {
     color: inherit;
+
+    @include mobile {
+      font-size: 4.9vw;
+    }
   }
 }
 
@@ -64,6 +67,10 @@ h4 {
 
 p {
   margin: 15px 0;
+
+  @include mobile {
+    font-size: 3.7vw;
+  }
 }
 
 a {
@@ -73,11 +80,6 @@ a {
   &:hover, &:active {
     color: $blue;
   }
-}
-
-ul, ol {
-  margin: 15px 0;
-  padding-left: 30px;
 }
 
 ul {
@@ -90,10 +92,6 @@ ol {
 
 ol ul, ul ol, ul ul, ol ol {
   margin: 0;
-}
-
-ul ul, ol ul {
-  list-style-type: circle;
 }
 
 em, i {
@@ -151,16 +149,15 @@ img {
   width: 32%;
 
   @include mobile {
-    height: 35%;
+    position: relative;
     text-align: center;
-    top: 0;
     width: 100%;
   }
 }
 
 .masthead-content {
   position: relative;
-  margin: 15% 7% 0 43%;
+  margin: 15% 13% 0 37%;
   text-align: left;
 
   @include mobile {
@@ -203,14 +200,17 @@ img {
 .site-description {
   border-bottom: 1px solid $border-gray;
   color: $white;
-  font-size: 11px;
+  font-size: 1.2vw;
   font-weight: 200;
   letter-spacing: 1px;
   padding-bottom: 14%;
   text-align: left;
 
   @include mobile {
+    border-bottom: none;
+    font-size: 2.2vw;
     margin: 3px 0;
+    padding-bottom: 0;
     text-align: center;
   }
 }
@@ -232,24 +232,40 @@ img {
   }
 }
 
-
 nav {
-  float: left;
+  display: block;
+  float:left;
+  font-family: $helveticaNeue;
+  font-size: 0.9vw;
+  line-height: 1.7;
   margin: 5%;
   padding-bottom: 59%;
-  font-family: $helveticaNeue;
-  font-size: 1.0em;
 
   @include mobile {
-    display: block;
-    margin: 4%;
-    font-size: 0.9em;
+    margin: 0 auto;
+    padding: 4% 0;
+    text-align: center;
+    width: 100%;
   }
 
-  a {
-    color: $white;
-    font-weight: 400;
-    letter-spacing: 2px;
+  ul {
+    li {
+      font-weight: 400;
+      letter-spacing: 2px;
+      list-style: none;
+      display: inline-block;
+      padding: 0 5%;
+
+      a {
+        color: $white;
+        font-size: 1.3vw;
+        text-align: center;
+
+        @include mobile {
+          font-size: 2.5vw;
+        }
+      }
+    }
   }
 }
 
@@ -263,13 +279,14 @@ nav {
   padding: 0 10% 0 8%;
 
   @include mobile {
-    height: 65%;
+    float:left;
     width: 100%;
   }
 }
 
 .posts {
   @include mobile {
+    padding-top: 7%;
     text-align: center;
   }
 }
@@ -304,47 +321,75 @@ nav {
   font-size: 1.1em;
   font-style: italic;
   margin-left: 1%;
-}
 
-.fa-comment-o {
-  margin-left: 6%
+  @include mobile {
+    font-size: 2.5vw;
+  }
 }
 
 .entry {
-  margin-bottom: 19px;
+  margin-bottom: 4%;
+  line-height: 1.4;
+  font-size: 1vw;
+
+  @include mobile {
+    font-size: 3.2vw;
+  }
 }
 
-// footer
-.wrapper-footer {
-  border-top: 1px solid $border-gray;
-  margin-top: 50px;
-  clear:both;
-}
+.fa-comment-o {
+  padding-left: 6%;
 
-footer {
-  padding: 20px 0;
-  text-align: center;
+  @include mobile {
+    font-size: 3.1vw !important;
+  }
 }
 
 .date {
   color: $gray;
   font-style: italic;
-  font-size: .9em;
+  font-size: 1.0vw;
   margin-bottom: 14px;
   padding-right: 5%;
 
   &.front-page-date {
     border-right: 1px solid $hot-orange;
+
+    @include mobile {
+      font-size: 2.5vw;
+    }
+  }
+}
+
+// footer
+
+.wrapper-footer {
+  border-top: 1px solid $border-gray;
+  clear:both;
+
+  @include mobile {
+    border:none;
+  }
+}
+
+footer {
+  padding: 20px 0;
+  text-align: center;
+
+  @include mobile{
+    padding: 0;
   }
 }
 
 // pagination
+
 .pagination {
-  font-size: 1.3em;
-  font-weight: 400;
+  font-size: 1.6vw;
+  font-weight: 300;
   margin-top: 8%;
 
   @include mobile {
+    font-size: 2.7vw;
     text-align: center;
   }
 }
@@ -355,10 +400,15 @@ footer {
 
 // archive
 .archive_list_article_link {
-  font-size: 0.85em;
+  padding-left: 3%;
+
+  @include mobile {
+    font-size: 3.1vw;
+  }
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
+
 @import "highlights";
 @import "svg-icons";
