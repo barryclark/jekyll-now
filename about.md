@@ -1,15 +1,11 @@
 ---
 layout: page
-title: About
+title: Hello there, stranger of the internet.
 permalink: /about/
 ---
 
-Some information about you!
+I welcome you on my blog! 
 
-### More Information
+Here I share my ideas and experiences on the quest to understand how intelligence work, as well as some Python code to support my findings. Feel free to click around! 
 
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+However ... By all means do not click the big red nice button below, which basically begs to be clicked! It will boot AI capable of rapid self improvement and achieving super human intellect, as well as allow this AI access to the Internet, and you know what that will lead to!
