@@ -4,9 +4,5 @@ title: About
 permalink: /about/
 ---
 
-Here I share my thoughts and ideas on a quest to understand intelligencece. Some Python code of experiments is available on my Github repo.
-
-### More Information
-
-I like programming in MATLAB / C++ / Python, extending existing computer vision and machine learning algorithms,
-performing theoretical research, and sharing my experiences in this blog.
+Hello there, stranger of the internet.
+I welcome you on my blog! Here I share my ideas and experiences on the quest to understand how intelligence work, as well as some Python code to support my findings. Feel free to click around! However ... Do not click the big red nice clickable button below! It will boot AI capable of rapid self improvement and achieving super human intellect, as well as allow this AI access to the Internet, and you know what that will lead to ... 
