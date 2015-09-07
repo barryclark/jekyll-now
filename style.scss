@@ -1,6 +1,5 @@
 ---
 ---
-
 //
 // IMPORTS
 //
@@ -19,23 +18,20 @@ html {
 
 body {
 	background: $white;
-  font: 18px/1.4 $helvetica;
+  font: 0.9vw/1.5 $helvetica;
   color: $darkGray;
 }
 
 .container {
   margin: 0 auto;
-  max-width: 740px;
-  padding: 0 10px;
   width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
   color: $darkerGray;
+  font-family: $helveticaNeue;
   font-weight: bold;
-
-  line-height: 1.7;
+  line-height: 1.6;
   margin: 1em 0 15px;
   padding: 0;
 
@@ -45,9 +41,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 2.6vw;
+  line-height: 1.1;
   a {
     color: inherit;
+
+    @include mobile {
+      font-size: 4.9vw;
+    }
   }
 }
 
@@ -66,6 +67,10 @@ h4 {
 
 p {
   margin: 15px 0;
+
+  @include mobile {
+    font-size: 3.7vw;
+  }
 }
 
 a {
@@ -75,11 +80,6 @@ a {
   &:hover, &:active {
     color: $blue;
   }
-}
-
-ul, ol {
-  margin: 15px 0;
-  padding-left: 30px;
 }
 
 ul {
@@ -94,10 +94,6 @@ ol ul, ul ol, ul ul, ol ol {
   margin: 0;
 }
 
-ul ul, ol ul {
-  list-style-type: circle;
-}
-
 em, i {
   font-style: italic;
 }
@@ -107,17 +103,12 @@ strong, b {
 }
 
 img {
-  max-width: 100%;
+  max-width: 104%;
 }
 
 // Fixes images in popup boxes from Google Translate
 .gmnoprint img {
   max-width: none;
-}
-
-.date {
-  font-style: italic;
-  color: $gray;
 }
 
 // Specify the color of the selection
@@ -150,29 +141,46 @@ img {
 // .masthead
 //
 
-.wrapper-masthead {
-  margin-bottom: 50px;
-}
-
 .masthead {
-  padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
+  background-color: $hot-orange;
+  float:left;
+  position: fixed;
+  height: 100%;
+  width: 32%;
 
   @include mobile {
+    position: relative;
     text-align: center;
+    width: 100%;
+  }
+}
+
+.masthead-content {
+  position: relative;
+  margin: 15% 13% 0 37%;
+  text-align: left;
+
+  @include mobile {
+    margin: 0;
+    padding: 4% 20% 0 20%;
   }
 }
 
 .site-avatar {
+  border: 1px solid white;
+  border-radius: 9%;
+  overflow: hidden;
   float: left;
-  width: 70px;
-  height: 70px;
-  margin-right: 15px;
+  margin: 5% 0 8% 0%;
+  height: 8.3em;
+  width: 8em;
 
   @include mobile {
     float: none;
+    height: 17em;
     display: block;
     margin: 0 auto;
+    width: 17em;
   }
 
   img {
@@ -184,55 +192,79 @@ img {
   float: left;
 
   @include mobile {
-    float: none;
     display: block;
     margin: 0 auto;
   }
 }
 
-.site-name {
-  margin: 0;
-  color: $darkGray;
-  cursor: pointer;
-  font-family: $helveticaNeue;
-  font-weight: 300;
-  font-size: 28px;
-  letter-spacing: 1px;
-}
-
 .site-description {
-  margin: -5px 0 0 0;
-  color: $gray;
-  font-size: 16px;
+  border-bottom: 1px solid $border-gray;
+  color: $white;
+  font-size: 1.2vw;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding-bottom: 14%;
+  text-align: left;
 
   @include mobile {
+    border-bottom: none;
+    font-size: 2.2vw;
     margin: 3px 0;
+    padding-bottom: 0;
+    text-align: center;
+  }
+}
+
+.site-name {
+  color: $white;
+  cursor: pointer;
+  font-family: $helveticaNeue;
+  font-weight: 700;
+  font-size: 1.2em;
+  margin: 0 0 10% 0;
+  letter-spacing: 1px;
+  text-align: left;
+
+  @include mobile {
+    font-size: 3vw;
+    text-align: center;
+    margin: 2% 0 6% 0;
   }
 }
 
 nav {
-  float: right;
-  margin-top: 23px; // @TODO: Vertically middle align
+  display: block;
+  float:left;
   font-family: $helveticaNeue;
-  font-size: 18px;
+  font-size: 0.9vw;
+  line-height: 1.7;
+  margin: 5%;
+  padding-bottom: 59%;
 
   @include mobile {
-    float: none;
-    margin-top: 9px;
-    display: block;
-    font-size: 16px;
+    margin: 0 auto;
+    padding: 4% 0;
+    text-align: center;
+    width: 100%;
   }
 
-  a {
-    margin-left: 20px;
-    color: $darkGray;
-    text-align: right;
-    font-weight: 300;
-    letter-spacing: 1px;
+  ul {
+    li {
+      font-weight: 400;
+      letter-spacing: 2px;
+      list-style: none;
+      display: inline-block;
+      padding: 0 5%;
 
-    @include mobile {
-      margin: 0 10px;
-      color: $blue;
+      a {
+        color: $white;
+        font-size: 1.3vw;
+        text-align: center;
+
+        @include mobile {
+          font-size: 2.5vw;
+        }
+      }
     }
   }
 }
@@ -240,6 +272,24 @@ nav {
 //
 // .main
 //
+
+.main-body {
+  float: right;
+  width: 68%;
+  padding: 0 10% 0 8%;
+
+  @include mobile {
+    float:left;
+    width: 100%;
+  }
+}
+
+.posts {
+  @include mobile {
+    padding-top: 7%;
+    text-align: center;
+  }
+}
 
 .posts > .post {
   padding-bottom: 2em;
@@ -264,26 +314,101 @@ nav {
   .comments {
     margin-top: 10px;
   }
+}
 
-  .read-more {
-    text-transform: uppercase;
-    font-size: 15px;
+.comments-count {
+  color: $gray;
+  font-size: 1.1em;
+  font-style: italic;
+  margin-left: 1%;
+
+  @include mobile {
+    font-size: 2.5vw;
   }
 }
 
+.entry {
+  margin-bottom: 4%;
+  line-height: 1.4;
+  font-size: 1vw;
+
+  @include mobile {
+    font-size: 3.2vw;
+  }
+}
+
+.fa-comment-o {
+  padding-left: 6%;
+
+  @include mobile {
+    font-size: 3.1vw !important;
+  }
+}
+
+.date {
+  color: $gray;
+  font-style: italic;
+  font-size: 1.0vw;
+  margin-bottom: 14px;
+  padding-right: 5%;
+
+  &.front-page-date {
+    border-right: 1px solid $hot-orange;
+
+    @include mobile {
+      font-size: 2.5vw;
+    }
+  }
+}
+
+// footer
+
 .wrapper-footer {
-  margin-top: 50px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
+  border-top: 1px solid $border-gray;
+  clear:both;
+
+  @include mobile {
+    border:none;
+  }
 }
 
 footer {
   padding: 20px 0;
   text-align: center;
+
+  @include mobile{
+    padding: 0;
+  }
+}
+
+// pagination
+
+.pagination {
+  font-size: 1.6vw;
+  font-weight: 300;
+  margin-top: 8%;
+
+  @include mobile {
+    font-size: 2.7vw;
+    text-align: center;
+  }
+}
+
+.next {
+  margin-left: 2%;
+}
+
+// archive
+.archive_list_article_link {
+  padding-left: 3%;
+
+  @include mobile {
+    font-size: 3.1vw;
+  }
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
+
 @import "highlights";
 @import "svg-icons";

@@ -1,15 +1,15 @@
 ---
-layout: page
+layout: default
 title: About
 permalink: /about/
 ---
 
-Some information about you!
+Hi, I'm Jeff!
 
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
+### A quick summary of me!
+I am a web developer. I grew up in New York City. My worst job ever was my highest paying ever: I was a revolting Wall St. trader. My best job ever: professional poker player... I learned so much about probability, software, data analysis, statistics, and game theory. I enjoy learning and will continue to learn.
 
 ### Contact me
+Feel free to compliment, praise, initiate a friendly conversation, or complain/point out factual inaccuracies/fire vitriol via email.
 
-[email@domain.com](mailto:email@domain.com)
+[Jeffrey Wan](mailto:Jwan622@gmail.com)
