@@ -7,6 +7,8 @@
 
 @import "reset";
 @import "variables";
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,100italic,100,400italic,500,500italic,700,700italic);
+
 // Syntax highlighting @import is at the bottom of this file
 
 /**************/
@@ -18,22 +20,27 @@ html {
 }
 
 body {
-	background: $white;
-  font: 18px/1.4 $helvetica;
+  background: $white;
+  font: 18px/1.4 'Roboto', $helvetica;
   color: $darkGray;
 }
 
 .container {
   margin: 0 auto;
-  max-width: 740px;
-  padding: 0 10px;
+  max-width: 100%;
+  padding: 0 15%;
   width: 100%;
+
+  @include mobile {
+      max-width: 90%;
+      padding: 0 5%;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
+  font-family: 'Roboto', $helveticaNeue;
   color: $darkerGray;
-  font-weight: bold;
+  font-weight: 300;
 
   line-height: 1.7;
   margin: 1em 0 15px;
@@ -45,18 +52,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 2.8em;
   a {
     color: inherit;
   }
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 2.2em;
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 1.7em;
 }
 
 h4 {
@@ -103,7 +110,7 @@ em, i {
 }
 
 strong, b {
-  font-weight: bold;
+  font-weight: 700;
 }
 
 img {
@@ -194,10 +201,14 @@ img {
   margin: 0;
   color: $darkGray;
   cursor: pointer;
-  font-family: $helveticaNeue;
-  font-weight: 300;
+  font-family: 'Roboto', $helveticaNeue;
+  font-weight: 500;
   font-size: 28px;
   letter-spacing: 1px;
+
+  @include mobile {
+      padding: .3em 0;
+  }
 }
 
 .site-description {
@@ -213,14 +224,14 @@ img {
 nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
+  font-family: 'Roboto', $helveticaNeue;
   font-size: 18px;
 
   @include mobile {
     float: none;
-    margin-top: 9px;
+    margin-top: 1em;
     display: block;
-    font-size: 16px;
+    font-size: 0.9em;
   }
 
   a {
@@ -262,13 +273,24 @@ nav {
   }
 
   .comments {
-    margin-top: 10px;
+    margin-top: 2em;
   }
 
   .read-more {
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 1.2em;
   }
+
+  h1 {
+      text-align: center;
+  }
+}
+
+.page {
+
+    h1 {
+        text-align: center;
+    }
 }
 
 .wrapper-footer {
