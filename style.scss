@@ -482,7 +482,10 @@ nav {
     color: rgba(0,0,0,0.7);
     font-family: 'Pontano Sans', sans-serif;
     font-size: 14px;
-    font-style: italic;
+
+    span {
+      font-style: italic;
+    }
 
     @include mobile {
       padding: 0 1.5rem;
@@ -677,7 +680,6 @@ nav {
     color: rgba(0,0,0,0.7);
     font-family: 'Pontano Sans', sans-serif;
     font-size: 14px;
-    font-style: italic;
     padding-left: 5%;
   }
 

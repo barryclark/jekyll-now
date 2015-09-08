@@ -34,12 +34,12 @@ layout: default
     {% for post in site.posts limit:1 %}
     <h3 class="latest-post-title">
       <a href="{{ post.url }}">{{ post.title }}</a></h3>
-    <p class="latest-post-date">{{ post.date | date: "%d %B %Y" }} (Latest Post)</p>
+    <p class="latest-post-date">{{ post.date | date: "%d %B %Y" }} <span>(Latest Post)</span></p>
 
       <article class="post">
 
         <div class="entry">
-          {{ post.excerpt }}
+          {{ post.excerpt | truncatewords: 50 }}
         </div>
 
         <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
