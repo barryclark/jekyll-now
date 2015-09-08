@@ -1,15 +1,15 @@
 ---
 layout: page
-title: Ego
-permalink: /ego/
+title: About
+permalink: /about/
 ---
 
-Nací en Sevilla en 1987. Escribo este blog para documentar mis experiencias como desarrollador.
+Some information about you!
 
-### Más información
+### More Information
 
-También escribo textos sobre arte, cultura y el efecto de la tecnología en nosotros. Si el tema te interesa, puedes leerlos en [juanjocerero.es](http://juanjocerero.es). También los publico en [Medium](http://medium.com/@Bukowski).
+A place to include any other types of information that you'd like to include about yourself.
 
-### Escríbeme
+### Contact me
 
-[hola AT juanjocerero DOT es](mailto:hola@juanjocerero.es)
+[email@domain.com](mailto:email@domain.com)
