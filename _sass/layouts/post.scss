@@ -1,0 +1,32 @@
+.posts {
+  margin-top: 3rem;
+
+  .post {
+    margin: 3rem 0;
+  }
+}
+
+.post {
+  margin: 3rem 0;
+
+  .post-title {
+    font-size: 2.5rem;
+    margin-bottom: 1.3rem;
+  }
+
+  h1 {
+    margin: 1.5rem 0;
+  }
+}
+
+.entry {
+  margin-top: 1.3rem;
+
+  &:not(.excerpt) {
+    a {
+      $link-text-color: $action-color;
+
+      color: $link-text-color;
+    }
+  }
+}

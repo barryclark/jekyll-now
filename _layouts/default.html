@@ -6,29 +6,24 @@
     {% include meta.html %}
 
     <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <script src='http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+    <link rel='stylesheet' type='text/css' href='{{ site.baseurl }}/style.css' />
+    <link rel='alternate' type='application/rss+xml' title='{{ site.name }} - {{ site.description }}' href='{{ site.baseurl }}/feed.xml' />
   </head>
 
   <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
-          </div>
-        </header>
-      </div>
-    </div>
-
-    <div id="main" role="main" class="container">
-      {{ content }}
+    <div class='container'>
+      <header>
+        <div class='site-info'>
+          <h1><a href='{{ site.baseurl }}/'>{{ site.name }}</a></h1>
+          <p>{{ site.description }}</p>
+        </div>
+      </header>
+      <section class='content'>
+        {{ content }}
+      </section>
     </div>
   </body>
 </html>

@@ -1,8 +1,11 @@
-#
-# This file contains configuration flags to customize your site
-#
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "pages"
+    values:
+      layout: "default"
 
-# Name of your site (displayed in the header)
 name: Dan Reynolds
 
 # Short bio or description (displayed in the header)
@@ -56,6 +59,8 @@ baseurl: ""
 markdown: redcarpet
 highlighter: pygments
 permalink: /:title/
+
+highlighter: pygments
 
 # The release of Jekyll Now that you're using
 version: v1.1.0

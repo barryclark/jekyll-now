@@ -1,27 +1,12 @@
+// Style Variables
+$content-width: rem(960);
+$font-weight: 100;
+$font-family: 'Open Sans', sans-serif;
 
-//
-// VARIABLES
-//
-
-// Colors
-$blue: #4183C4;
-
-// Grays
-$black: #000;
-$darkerGray: #222;
-$darkGray: #333;
-$gray: #666;
-$lightGray: #eee;
-$white: #fff;
-
-// Font stacks
-$helvetica: Helvetica, Arial, sans-serif;
-$helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$georgia: Georgia, serif;
-
-// Mobile breakpoints
-@mixin mobile {
-  @media screen and (max-width: 640px) {
-    @content;
-  }
-}
+// Color Variables
+$gray: #606060;
+$light-gray: lightgray;
+$green: #70FF70;
+$red: #F5BEBE;
+$orange: #F5D5BE;
+$white: #ECECEC;

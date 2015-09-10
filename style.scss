@@ -5,7 +5,13 @@
 @import 'variables';
 @import 'normalize';
 @import 'bourbon/bourbon';
+@import 'base/base';
 @import 'neat/neat';
-@import 'components/container';
+@import 'highlights';
 
 // Application files
+@import 'base';
+@import 'layouts/default';
+@import 'layouts/post';
+@import 'components/container';
+@import 'components/link';

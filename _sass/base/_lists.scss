@@ -1,0 +1,37 @@
+ul,
+ol {
+  $list-border-color: $gray;
+  list-style-type: none;
+  border-left: 5px solid $list-border-color;
+  margin: 1rem 0;
+  padding-left: 1rem;
+
+  &%default-ul {
+    list-style-type: disc;
+    margin-bottom: $small-spacing;
+    padding-left: $base-spacing;
+  }
+
+  &%default-ol {
+    list-style-type: decimal;
+    margin-bottom: $small-spacing;
+    padding-left: $base-spacing;
+  }
+}
+
+li {
+  margin: 0.1rem 0;
+}
+
+dl {
+  margin-bottom: $small-spacing;
+
+  dt {
+    font-weight: bold;
+    margin-top: $small-spacing;
+  }
+
+  dd {
+    margin: 0;
+  }
+}
