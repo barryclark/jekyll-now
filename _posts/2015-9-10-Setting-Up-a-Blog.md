@@ -3,11 +3,35 @@ layout: post
 title: Setting Up a Blog
 ---
 
-When I redid my website, it prompted the need for some sort of place where I could write about things. After some quick searching, I decided to go with [Jekyll](http://jekyllrb.com/), a static site generator that can be installed as a RubyGem.
+When I re-did my website, I decided to make some sort of blog to go with it. After some quick searching on the different ways
+to set one up, I decided to go with [Jekyll](http://jekyllrb.com/), a static site generator written
+in Ruby and that can be installed as a RubyGem.
 
-# Creating my Layouts
+# Choosing a host
 
-As Jekyll describes itself, the engine takes text written in any markup language and sends it through a series of layout files. I currently am using three layout files:
+One of the first things I did before starting my blog was finding a place to host it. I first considered getting a
+box from DigitalOcean like I have with a couple of my past projects, but I instead went with [GitHub Pages](https://pages.github.com).
+
+Each person with a GitHub account gets a free subdomain for each of their projects at `project.github.io`, as well
+as one *account* subdomain at account.github.io. This account subdomain makes for a perfect place to host a jekyll blog. Since
+GitHub Pages support Jekyll already and setting up a blog is as simple as creating a repository on GitHub and then pushing
+to your Jekyll blog repo whenever you want to redeploy.
+
+# Finding a template
+
+To setup a Jekyll Blog on GitHub pages, install the `github-pages` gem in the folder of the blog repository. To get myself off the ground,
+I used [this guide](http://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages) as a starting point, since they offered a pretty vanilla
+Jekyll setup that I could configure however I wanted.
+
+There are a bunch of Jekyll blog themes out there, although some are incompatible with GitHub Pages, as Pages only
+supports a subset of all the Jekyll plugins.
+
+# Building a layout
+
+As Jekyll describes itself, the engine takes text written in any markup language and sends it through a series of layout files. My vanilla
+install already had some layout files defined, but I modified them to be a little simpler and to match the look I was going for.
+
+I currently am using three layout files:
 
 1. **default.html**: A default layout that wraps a page or post in a predefined HTML structure.
 2. **page.html**: A template that describes the structure of any page that I create, such as an about page.
@@ -45,6 +69,22 @@ The `post.html` file is then rendered in the content section. My `post.html` lay
 </article>
 {% endhighlight %}
 
-First there is a title and a date for the post, and then the content of the post itself is injected into the entry div.
+First there is a title and a date for the post, and then the content of the post itself is injected within the entry.
 
-In addition to hosting my code, I discovered that GitHub offered a great blogging solution in the form of [Github Pages](https://pages.github.com/).
+# Styling content
+
+I used SASS to style my layouts and posts. I included the [Bourbon](http://bourbon.io) gem, which provides a collection of mixins that I find
+useful when styling applications, especially to help with vendor-prefixed styles in a similar way to Compass.  
+
+Bourbon breaks its library into general mixins, grid mixins, and scaffolding, each with its respective gem. I used all of them here, since I needed some of the general mixins, as well as a grid and wanted some default styles.  
+
+I like Bourbon because it isn't a front-end framework like Bootstrap or Foundation, which seems like overkill for my small blog, but instead just gives me the few mixins I need to make styling easier.  
+
+I did include some scaffolding with the Bourbon Bitters gem, which like the other framework alters the appearance of several components, but it is in comparison very light-weight. Bitters breaks all of its styles into logical files for different components, making it simple to keep and modify only the styles you need, such as my blog's typography, grid settings, and lists.
+
+# Hooking up the blog
+
+Now that my Blog is deployed to GitHub Pages, I want to connect it to my website at `danreynolds.ca`. To do that, I setup a
+`CNAME` in my site's DNS records, which forwards my subdomain `blog` to the Pages site.  
+
+With everything setup, I now have a perfect way to say random things that might sometimes be enjoyable or possibly even useful. Blogging!

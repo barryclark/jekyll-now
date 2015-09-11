@@ -22,6 +22,10 @@
 .entry {
   margin-top: 1.3rem;
 
+  a:hover:after {
+    border-bottom: none;
+  }
+
   &:not(.excerpt) {
     a {
       $link-text-color: $action-color;
