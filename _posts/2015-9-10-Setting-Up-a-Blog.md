@@ -87,4 +87,7 @@ I did include some scaffolding with the Bourbon Bitters gem, which like the othe
 Now that my Blog is deployed to GitHub Pages, I want to connect it to my website at `danreynolds.ca`. To do that, I setup a
 `CNAME` in my site's DNS records, which forwards my subdomain `blog` to the Pages site.  
 
-With everything setup, I now have a perfect way to say random things that might sometimes be enjoyable or possibly even useful. Blogging!
+Finally, I had to add a `CNAME` file in the root of the blog repository containing **only** the name of the custom domain.
+My custom domain was `blog.danreynolds.ca`.
+
+With everything setup, I now have a perfect way to say random things that might sometimes be enjoyable or possibly even useful. Hurray for blogging!
