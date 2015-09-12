@@ -3,11 +3,15 @@ layout: post
 title: Designing SupermarKit
 ---
 
+This is the first of a series of posts on the design of SupermarKit, a Rails web application I started last year. The goal of these posts is to show a very rough design of a user-facing web app from start to finish, for some definition of finish.
+
+This post goes through the app's initial goals and setup. It examines many of the shared steps that are taken when building this sort of an application and starts to look at some of the application's core features.
+
+# The initial idea
+
 SupermarKit is a grocery tracking and management application that tries to improve the grocery shopping process. I have four roommates where I live, and we often can't decide how to co-ordinate shopping for groceries and keeping track of what we like, what we need, and how much things have cost.  
 
-I was also at the time really itching for the opportunity to make a web application from start to finish, as the web projects I had at the time been working on were all using existing code bases.  
-
-This is the first of a series of posts on the design of SupermarKit, with this one mostly focused on the initial setup. It examines many of the shared steps that are taken when building this sort of an application and starts to look at some of the application's core features.  
+I was also at the time really itching for the opportunity to make a web application from the ground up, as the web projects I had at the time been working on were all using existing code bases.  
 
 # Finding a feature set
 
