@@ -31,7 +31,7 @@ It synchronizes with GitHub, so if you drag a card from the backlog to in progre
 
 Since I was the only one on the project, I used this mostly as a prioritized todo list, and I found it to be a great light-weight solution when something like PivotalTracker or Trello would seem like overkill.
 
-# Getting Started
+# Getting started
 
 I chose Ruby on Rails as the framework for the project, as I knew it could handle all of the requirements I had for the app, such as a database of items and lists, a user model, and many different CRUD interactions.  
 
