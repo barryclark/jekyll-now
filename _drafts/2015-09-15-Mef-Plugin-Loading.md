@@ -21,8 +21,8 @@ a "semi-public" facing ASP.NET Web API project.
 
 My initial thought was that this could be achieved easily enough by loading
 the assemblies, manually, and then using reflection to get to a class
-implementing a specific plugin contract interface. I was pretty certain
-it can be done using that aproach and probably we could have had a prototype running
+implementing a specific plugin contract interface. I was pretty certain it can
+be done using that aproach and probably we could have had a prototype running
 in a day at most.
 
 At this point one of the more experienced colleagues mentioned MEF (Managed
@@ -64,32 +64,96 @@ contained a metadata interface used to identify the plugins. MEF has this
 concept of Metadata which can be used to do some interesting queries later on
 when loading the plugins.
 
-The two core interfaces in the contract project and their respective properties:
+The two core interfaces in the contract project and their respective
+properties:
 
- public interface IPluginContract
-{
-    PluginExecutionResult ExecutePlugin(PluginExecutionEntry entry);
-}
+	public interface IPluginContract2
+	{
+	    PluginExecutionResult ExecutePlugin(PluginExecutionEntry entry);
+	}
 
 and 
 
- public interface IPluginMetadata
-{
-    string PluginName { get; }
-}
+	public interface IPluginMetadata
+	{
+    	string PluginName { get; }
+	}
 
 One defined the contract for the entry points for each of the plugins, while
-the other describes the metadata which can be used to identify the entry points and
-with that the plugins.
+the other describes the metadata which can be used to identify the entry
+points and with that the plugins.
 
 We will see how these are used furhter down the line.
 
 ## Example Plugins
 
-When defining the actual plugins, I've build the Contract project and 
+When defining the actual plugins, I've buit the the Contract project and
+references the output dll in the plugin projects as to simulate an enviorment
+where we pass the contracts to different venodrs allowing them to define the
+entry points which we can then utilize in the plugin client.
 
+For the purposes of the demo implementation we defined two plugins:
 
+- Plugin A
+- PLugin B
 
+For the purposes of the demo the actual sample plugins are simple one class
+projectgs that reference the plugin contracts dll and use the IPluginContract
+on a single entry point class:
 
+	[Export(typeof(IPluginContract))]
+	[ExportMetadata("PluginName", "ApiAPlugin")]
+	public class PluginA : IPluginContract { }
 
+At the class definition we encounter two key MEF attributes:
+
+- `Export`
+	- which tells MEF which Interface/Type this particular class is exposing
+- `ExportMetadata`
+	- First attribute "PluginName" defines the Metadata attribute name
+	- Second attribute "ApiAPlugin" defines the actual value of the Metadata attribute.
+
+We will see how the metadat attributes are used a bit later on, but for now we
+can notice that the name of the metadata attribute is the same as defined in
+the IPluginMetadata interface.
+
+The actual implementation of the ExecutePlugin method can be seen here:
+
+	public PluginExecutionResult ExecutePlugin(PluginExecutionEntry entry)
+    {
+        var url = GetInternalApiUrl();
+
+        if (!string.IsNullOrWhiteSpace(url))
+        {
+            var apiResult = ExecuteApiCall(url);
+
+            return new PluginExecutionResult() { Output = apiResult };
+        }
+
+        return new PluginExecutionResult()
+        {
+            Output = "Failed Configuratoin URL Processing"
+        };
+    }
+
+The code is reading some internal configuration defined in a config.xml file
+which in the project properties is set as content and copy always. The  plugin
+them makes an API call  using an `HttpClient` to another *internal* API. 
+
+The API call just returns a string result (*apiresult*) which is then returned to
+the client code which calls the plugin. 
+
+Plugin B is exactly the same calling a different API, so in a way there are
+also two *internal* APIs  which return string result identified by A and B.
+
+The two plugins are build and the outputs moved to a folder structure on disk,
+together with the configuration files:
+
+### Image of plugin folder structure
+
+## The plugin loader
+
+The idea was to create a "generic" plugin loader, which  could be reused in
+multiple plugin clients. The current implemenation of the loader takes in a 
+loader configuration object which currently is sued 
 
