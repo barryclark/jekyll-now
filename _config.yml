@@ -18,17 +18,13 @@ avatar: http://graph.facebook.com/joseph.hendrix5?picture
 # Includes an icon in the footer for each username you enter
 footer-links:
   facebook: joseph.hendrix5
-  flickr:
   github: hendrixjoseph
-  instagram:
   linkedin: hendrix1984
-  pinterest:
   rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
-  twitter: 
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
-  youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
   wikipedia: Hendrixjoseph
+  wrightstate: hendrix.11
 
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
