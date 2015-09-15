@@ -4,12 +4,8 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Want to know more about me? Check me out across the web!
 
-### More Information
+## Facebook
 
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+<a href="https://www.facebook.com/{{ site.footer-links.facebook }}"><i class="svg-icon facebook"></i></a>
