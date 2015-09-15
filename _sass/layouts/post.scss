@@ -29,10 +29,9 @@
   a:hover:after {
     border-bottom: none;
   }
-
   &:not(.excerpt) {
     a {
-      $link-text-color: $action-color;
+      $link-text-color: $blue;
       color: $link-text-color;
     }
   }
