@@ -11,6 +11,11 @@ description: Master of Science in Computer Science student at Wright State Unive
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: http://graph.facebook.com/joseph.hendrix5?picture
 
+navlinks:
+    - <a href="{{ site.baseurl }}/">Home</a>
+    - <a href="{{ site.baseurl }}/about">About</a>
+    - <a href="https://github.com/hendrixjoseph/FamilyTree">FamilyTree Project</a>
+
 #
 # Flags below are optional
 #
