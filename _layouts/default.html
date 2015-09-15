@@ -28,7 +28,7 @@
 
           <nav>
             {% for navlink in site.navlinks %}
-              {{ navlink }}{% if forloop.last %}{% else %}|{% endif %}
+              {{ navlink }}{% if forloop.last %}{% else %}<div style="text-align: center;">|</div>{% endif %}
             {% endfor %}
           </nav>
         </header>
