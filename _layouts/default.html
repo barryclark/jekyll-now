@@ -29,6 +29,9 @@
           <nav>
             {% for navlink in site.navlinks %}
               {{ navlink }}
+              {% if forloop.last %}{% else %}
+              |
+              {% endif %}
             {% endfor %}
           </nav>
         </header>
