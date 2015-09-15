@@ -4,8 +4,24 @@ title: About
 permalink: /about/
 ---
 
-Want to know more about me? Check me out across the web!
+Want to know more about me? Check me out across the web! Links are in the footer, and here are some descriptions about my presence across the web:
 
 ## Facebook
 
-<a href="https://www.facebook.com/{{ site.footer-links.facebook }}"><i class="svg-icon facebook"></i></a>
+<a href="https://www.facebook.com/{{ site.footer-links.facebook }}"><i class="svg-icon facebook"></i></a> Social information about me.
+
+##GitHub
+
+<a href="https://github.com/{{ site.footer-links.github }}"><i class="svg-icon github"></i></a> My projects
+
+## LinkedIn
+
+<a href="https://www.linkedin.com/in/{{ site.footer-links.linkedin }}"><i class="svg-icon linkedin"></i></a> Resume-type / professional information about me
+
+## Wikipedia
+
+<a href="https://en.wikipedia.org/wiki/User:{{ site.footer-links.wikipedia }}"><img src="https://upload.wikimedia.org/wikipedia/commons/8/80/Wikipedia-logo-v2.svg" class="svg-icon"></img></a> Biographical and historical information about me
+
+## Wright State
+
+<a href="http://people.wright.edu/{{ site.footer-links.wrightstate }}"><img src="https://upload.wikimedia.org/wikipedia/en/2/26/WrightStateLogo.png" class="svg-icon" style="width: 84px;height: 40px;"></img></a> Academic infomation about me
