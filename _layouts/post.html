@@ -5,6 +5,10 @@ layout: default
 <article class="post">
   <h1>{{ page.title }}</h1>
 
+  <div> {% for tag in page.tags %}
+{{ tag }}{% if forloop.last %}{% else %}|{% endif %}
+{% endfor %}</div>
+
   <div class="entry">
     {{ content }}
   </div>
