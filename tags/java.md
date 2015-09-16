@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: tag
 ---
 
 {% for post in site.tags.java %}
