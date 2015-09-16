@@ -2,12 +2,16 @@
 layout: default
 ---
 
-<div class="posts">
+<hr />
   {% for tag in site.tags %}
-    {{ tag }}
+    <span class="tags"><a href="#{{ tag }}">{{ tag }}</a>{% if forloop.last %}{% else %}|{% endif %}</span>
+  {% endfor %}
+<hr />
+
+  {% for tag in site.tags %}
+    <span id="{{ tag }}">{{ tag }}</span>
     
     {% for post in site.tags.{{ tag }} %}
       <a href="{{ post.url }}">{{ post.title }}</a>
     {% endfor %}
   {% endfor %}
-</div>
