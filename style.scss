@@ -118,8 +118,6 @@ img {
 .date {
   font-size: 80%;
   color: $gray;
-  float: left;
-  clear: none;
 }
 
 // Specify the color of the selection
@@ -243,7 +241,6 @@ nav {
 .tags {
   font-size: 80%;
   float: right;
-  clear: none;
 
   @include mobile {
     float: none;
