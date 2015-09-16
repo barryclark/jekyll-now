@@ -2,9 +2,9 @@
 layout: default
 ---
 
-{{ page }}
-
-{{ page.name | remove: '.html' }}
+{% if {{ page.name | remove: '.html' }} == 'java' %}
+  Hello java
+{% endif %}
 
 <hr />
   {% for tag in site.tags %}
