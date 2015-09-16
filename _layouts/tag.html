@@ -10,6 +10,7 @@ layout: default
 
 {{ content }}
 
+{{ page }}
 {% for post in page.posts %}
-  <p>tag.html: <a href="{{ post.url }}">{{ post.title }}</a> | {{ post.date | date: "%B %e, %Y" }}</p>
+  <p>tag.html: {{ post }}</p>
 {% endfor %}
