@@ -2,13 +2,13 @@
 layout: default
 ---
 
-{% if page.name == 'java.html' %}
+
   Hello java
-{% endif %}
+
 
 <hr />
   {% for tag in site.tags %}
-    <span class="tags" style="float: none;"><a href="{{ tag[0] }}.html">{{ tag[0] }}</a>{% if forloop.last %}{% else %}|{% endif %}</span>
+    <span class="tags" style="float: none;"><a href="{{ tag[0] }}.html" {% if page.name == 'java.html' %}style="font-weight: bold;"{% endif %}>{{ tag[0] }}</a>{% if forloop.last %}{% else %}|{% endif %}</span>
   {% endfor %}
 <hr />
 
