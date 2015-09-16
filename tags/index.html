@@ -11,7 +11,7 @@ layout: default
   {% for tag in site.tags %}
     <span id="{{ tag }}">{{ tag }}</span>
     
-    {% for post in site.tags.{{ tag }} %}
+    {% for post in site.tags.java %}
       <a href="{{ post.url }}">{{ post.title }}</a>
     {% endfor %}
   {% endfor %}
