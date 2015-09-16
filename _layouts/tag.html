@@ -9,3 +9,7 @@ layout: default
 <hr />
 
 {{ content }}
+
+{% for post in page.posts %}
+  <p>tag.html: <a href="{{ post.url }}">{{ post.title }}</a> | {{ post.date | date: "%B %e, %Y" }}</p>
+{% endfor %}
