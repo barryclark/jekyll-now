@@ -10,10 +10,12 @@ Welcome to BHA 2. We will start with a short history of the Biohacking field. Ne
 
 ## Schedule
 
-* Introduction
-* History of BioHacking
-* 3D Design in Sketchup
-* Principles of electronics
+* [Introduction](/bha2/class/1/pdf/0 - Introduction.pdf)
+* [History of BioHacking](/bha2/class/1/pdf/1 - History of Biohacking.pdf)
+* [Biosafety](/bha2/class/1/pdf/2 - Biosafety.pdf)
+* [3D Design in Sketchup](/bha2/class/1/pdf/3 - SketchUp.pdf)
+* [Principles of electronics](/bha2/class/1/pdf/4 - Principles of Electronics.pdf)
+* [Sterile Hood Design](/bha2/class/1/pdf/5 - Sterile hood design.pdf)
 * Tour around your lab
 * Practicals
   * Digital Fabrication
