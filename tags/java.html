@@ -1,10 +1,5 @@
 ---
 layout: tag
-posts: site.tags.java
 ---
 
-{% for post in site.tags.java %}
-  <p><a href="{{ post.url }}">{{ post.title }}</a> | {{ post.date | date: "%B %e, %Y" }}</p>
-{% endfor %}
-
-two : {% include tag.html posts=site.tags.java %} 
+{% include tag.html posts=site.tags.java %} 
