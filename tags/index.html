@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-{{ site.tags }}
+{{ site.tags.java }}
 <hr />
   {% for tag in site.tags %}
     <span class="tags" style="float: none;"><a href="#{{ tag[0] }}">{{ tag[0] }}</a>{% if forloop.last %}{% else %}|{% endif %}</span>
@@ -9,7 +9,7 @@ layout: default
 <hr />
 
   {% for tag in site.tags %}
-    <span id="{{ tag[0] }}">{{ tag[0] }}</span>
+    <div id="{{ tag[0] }}">{{ tag[0] }}</div>
     
-    <p>{{ tag }}</p>
+    <p>{{ tag.java }}</p>
   {% endfor %}
