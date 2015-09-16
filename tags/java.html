@@ -7,4 +7,8 @@ posts: site.tags.java
   <p><a href="{{ post.url }}">{{ post.title }}</a> | {{ post.date | date: "%B %e, %Y" }}</p>
 {% endfor %}
 
-{% include tag.html param="posts" variable-param=site.tags.java %}
+one : {% include tag.html param=site.tags.java variable-param=site.tags.java %}
+
+two : {% include tag.html param=site.tags.java variable-param="posts" %}
+
+three : {% include tag.html param=posts variable-param=site.tags.java %}
