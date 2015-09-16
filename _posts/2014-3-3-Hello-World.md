@@ -1,6 +1,6 @@
 ---
 layout: Test Pos
-title: Test Post up and running
+title: Test Post up and running Test
 ---
 
 Testing Testing
