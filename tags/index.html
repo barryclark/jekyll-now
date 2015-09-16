@@ -4,7 +4,7 @@ layout: default
 
 <hr />
   {% for tag in site.tags %}
-    <span class="tags"><a href="#{{ tag }}">{{ tag }}</a>{% if forloop.last %}{% else %}|{% endif %}</span>
+    <span class="tags" style="float: none;"><a href="#{{ tag[0] }}">{{ tag[0] }}</a>{% if forloop.last %}{% else %}|{% endif %}</span>
   {% endfor %}
 <hr />
 
