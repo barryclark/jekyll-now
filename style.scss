@@ -256,19 +256,19 @@ nav {
     text-align: center;
     font-weight: 300;
     letter-spacing: 1px;
-    
-    .selected {
-  	color: #fff;
-	background: #666;
-	font-weight: bold;
-	text-shadow: 0px 1px 1px #000;
-    }
 
     @include mobile {
       margin: 0 10px;
       color: $blue;
     }
   }
+  
+  a.selected {
+  	color: #fff;
+	background: #666;
+	font-weight: bold;
+	text-shadow: 0px 1px 1px #000;
+    }
 }
 
 //
