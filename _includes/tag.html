@@ -1,7 +1,5 @@
-{% for post in include.posts %}
-  <p>tag.html: {{ post }}</p>
+{% for post in include.param %}
+  <p>post.title: {{ post.title }}</p>
 {% endfor %}
 
 include.param: {{ include.param }}
-
-include.param.posts: {{ include.param.posts }}
