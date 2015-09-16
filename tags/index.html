@@ -9,9 +9,9 @@ layout: default
 <hr />
 
   {% for tag in site.tags %}
-    <span id="{{ tag }}">{{ tag }}</span>
+    <span id="{{ tag[0] }}">{{ tag[0] }}</span>
     
-    {% for post in site.tags.java %}
+    {% for post in site.tags.{{ tag[0] }} %}
       <a href="{{ post.url }}">{{ post.title }}</a>
     {% endfor %}
   {% endfor %}
