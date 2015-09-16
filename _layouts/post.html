@@ -7,10 +7,10 @@ layout: default
 
   <hr>
   <div>
-    {{ page.date | date: "%B %e, %Y" }}
-    {% for tag in page.tags %}
+    <span class="date">{{ page.date | date: "%B %e, %Y" }}</span>
+    <span class="tags">{% for tag in page.tags %}
       {{ tag }}{% if forloop.last %}{% else %}|{% endif %}
-    {% endfor %}
+    {% endfor %}</span>
   </div>
   <hr>
 
