@@ -248,6 +248,12 @@ nav {
     display: block;
     font-size: 16px;
   }
+  
+  .selected {
+  	color: #fff;
+	background: #666;
+	text-shadow: 0px 1px 1px #000;
+  }
 
   a {
     margin-left: 10px;
