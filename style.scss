@@ -70,13 +70,25 @@ table {
 	border-radius: 4px;
 }
 
-th {
+th, td {
 	border: 1px solid;
 	text-align: left;
+	padding: 5px;
+}
+
+th {
+
 }
 
 td {
-	border: 1px solid;
+}
+
+tr:nth-child(odd) {
+    background-color: $lightGray;
+}
+
+tr:nth-child(even) {
+    background-color: $white;
 }
 
 p {
