@@ -15,7 +15,7 @@ Here's how I did it:
 1. Create your normal 404 per the [GitHub guide](https://help.github.com/articles/custom-404-pages/).
 2. Create your custom 404 page wherever you want it to be. I have one in my `tags/` subfolder.
 3. Add the following script to your normal 404 page:
-```html
+{% highlight html %}
 <script>
     var url = window.location.href;
     
@@ -25,7 +25,7 @@ Here's how I did it:
       window.location.replace("http://hendrixjoseph.github.io/tags/404.html");
     }
 </script>
-```
+{% endhighlight %}
 
 Obviously, chang the URLs to match where you want it to go. And you could use `if...else if...else if` etc. to have multiple 404s.
 
