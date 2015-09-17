@@ -3,10 +3,14 @@ layout: default
 ---
 
 <hr />
-  {% for tag in site.tags %}
-    {% capture page_name %}{{ tag[0] }}.html{% endcapture %}
-    <span class="tags" style="float: none;"><a href="{{ page_name }}" {% if page.name == page_name %}class="selected"{% endif %}>{{ tag[0] }}</a>{% if forloop.last %}{% else %}|{% endif %}</span>
-  {% endfor %}
+  <nav class="tags" style="float: none;">
+    {% for tag in site.tags %}
+      {% capture page_name %}{{ tag[0] }}.html{% endcapture %}
+      <a href="{{ page_name }}" {% if page.name == page_name %}class="selected"{% endif %}>
+        {{ tag[0] }}
+      </a>{% if forloop.last %}{% else %}|{% endif %}
+    {% endfor %}
+  </nav>
 <hr />
 
 {{ content }}
