@@ -83,8 +83,11 @@ th {
 td {
 }
 
-td a:hover {
+td.post_title:hover {
 	background-color: $blue;
+}
+
+td a:hover {
 	color: $white;
 }
 
