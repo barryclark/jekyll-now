@@ -129,6 +129,12 @@ Where it says `johnotander@icloud.com`, you will need to change that to the emai
 
 More setup instructions and advanced options can be found at [http://formspree.io](http://formspree.io/)
 
+### Disqus
+
+To configure Disqus, set up a [Disqus site](https://disqus.com/admin/create/) with the same name as your site. Once that is complete,
+go to the admin page for your site. Under the "Settings" tab there is a button called "Universal Code". Take that code and replace it
+in the `_layouts/post.html` file between the `{% if site.disqus_shortname %}` and `{% endif %}` tags.
+
 ### Customizing the CSS
 
 All variables can be found in the `_sass/_variables.scss` file, toggle these as you'd like to change the look and feel of Pixyll.
