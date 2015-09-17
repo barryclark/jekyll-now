@@ -1,12 +1,16 @@
 <table>
+  <thead>
   <th>
     <td>Post Title</td>
     <td>Date</td>
   </th>
+  </thead>
+  <tbody>
   {% for post in include.posts %}
     <tr>
       <td><a href="{{ post.url }}">{{ post.title }}</td>
       <td>{{ post.date | date: "%B %e, %Y" }}</td>
     </tr>
   {% endfor %}
+  </tbody>
 </table>
