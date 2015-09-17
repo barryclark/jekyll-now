@@ -239,8 +239,11 @@ nav {
 }
 
 .tags {
-  font-size: 80%;
-  float: right;
+	@extend nav
+
+    font-size: 80%;
+	color: $gray;
+	float: right;
 
   @include mobile {
     float: none;
@@ -248,11 +251,11 @@ nav {
     display: block;
     font-size: 16px;
   }
-
-  a {
+  
+   a {
     margin-left: 10px;
     margin-right: 10px;
-    color: $darkGray;
+    color: $gray;
     text-align: center;
     font-weight: 300;
     letter-spacing: 1px;
@@ -264,7 +267,7 @@ nav {
   }
 }
 
-  a.selected {
+a.selected {
   	color: #fff;
 	background: #666;
 	text-shadow: 1px 1px 1px #000;
