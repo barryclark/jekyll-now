@@ -77,10 +77,14 @@ th, td {
 }
 
 th {
-	background-color: $white: #fff;
+	background-color: $white;
 }
 
 td {
+}
+
+td:hover {
+	background-color: $blue;
 }
 
 tr:nth-child(odd) {
