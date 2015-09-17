@@ -8,7 +8,7 @@ layout: default
   <hr />
   <div>
     <span class="date">{{ page.date | date: "%B %e, %Y" }}</span>
-    <nav>
+    <nav class="tags">
       {% for tag in page.tags %}
         <a href="/tags/{{ tag }}.html">{{ tag }}</a>{% if forloop.last %}{% else %}|{% endif %}
       {% endfor %}
