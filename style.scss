@@ -64,6 +64,21 @@ h4 {
   color: $gray;
 }
 
+table {
+	width: 100%;
+	border: 1px solid;
+	border-radius: 4px;
+}
+
+th {
+	border: 1px solid;
+	text-align: left;
+}
+
+td {
+	border: 1px solid;
+}
+
 p {
   margin: 15px 0;
 }
