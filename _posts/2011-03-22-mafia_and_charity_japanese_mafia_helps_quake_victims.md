@@ -20,7 +20,7 @@ The Japanese mafia aren’t the only criminals to do “good", either. [Al Capon
 
 <figure>
 <img src="/images/acoffee.jpg" alt="Al Capone's Soup Kitchen" title="Al Capone's Soup Kitchen">
-<figcaption>[Supposedly one of Al Capone’s Soup Kitchens](http://www.ssa.gov/history/acoffee.html)</figcaption>
+<figcaption><a href="http://www.ssa.gov/history/acoffee.html">Supposedly one of Al Capone’s Soup Kitchens</a></figcaption>
 </figure>
 
 There’s been several times where the [American Mafia cooperated with the US Government](http://en.wikipedia.org/wiki/American_Mafia#Cooperation_with_the_U.S._government) - during World War II to help keep New York free from saboteurs, several times in attempts to assassinate Fidel Castro, and even once in helping find bodies of murder victims.
