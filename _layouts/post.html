@@ -10,7 +10,7 @@ layout: default
     <span class="date">{{ page.date | date: "%B %e, %Y" }}</span>
     <nav class="tags">
       {% for tag in page.tags %}
-        <a href="/tags/{{ tag }}.html">{{ tag }}</a>{% if forloop.last %}{% else %}|{% endif %}
+        <a href="/tags/{{ tag }}.html">{{ tag | replace:'_',' ' }}</a>{% if forloop.last %}{% else %}|{% endif %}
       {% endfor %}
     </nav>
   </div>
