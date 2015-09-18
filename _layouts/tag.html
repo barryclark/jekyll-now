@@ -7,7 +7,7 @@ layout: default
     {% for tag in site.tags %}
       {% capture page_name %}{{ tag[0] }}.html{% endcapture %}
       <a href="{{ page_name }}" {% if page.name == page_name %}class="selected"{% endif %}>
-        {{ tag[0] }}
+        {{ tag[0] | replace:'_',' ' }}
       </a>{% if forloop.last %}{% else %}|{% endif %}
     {% endfor %}
   </nav>
