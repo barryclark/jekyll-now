@@ -71,6 +71,8 @@ The `post.html` file is then rendered in the content section. My `post.html` lay
 
 First there is a title and a date for the post, and then the content of the post itself is injected within the entry.
 
+Blog entries can be written in a variety of markup languages, for mine I like to use markdown.
+
 # Styling content
 
 I used SASS to style my layouts and posts. I included the [Bourbon](http://bourbon.io) gem, which provides a collection of mixins that I find
