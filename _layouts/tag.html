@@ -4,7 +4,8 @@ layout: default
 
 <hr />
   <nav class="tags" style="float: none;">
-    {% for tag in site.tags %}
+    {% assign tags = site.tags | sort:"value" %}
+    {% for tag in tags %}
       {% capture page_name %}{{ tag[0] }}.html{% endcapture %}
       <a href="{{ page_name }}" {% if page.name == page_name %}class="selected"{% endif %}>
         {{ tag[0] | replace:'_',' ' }}
