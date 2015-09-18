@@ -5,5 +5,5 @@ layout: default
 {{ site.tags }}  <br />
 
 {% for tag in site.tags %}
-  {{ tag[0] }} | {{ tag[2] }} <br />
+  {{ tag[0] }} | {{ tag[0].title }} <br />
 {% endfor %}
