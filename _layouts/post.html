@@ -9,7 +9,8 @@ layout: default
   <div>
     <span class="date">{{ page.date | date: "%B %e, %Y" }}</span>
     <nav class="tags">
-      {% for tag in page.tags %}
+      {% assign tags = page.tags | sort %}
+      {% for tag in tags %}
         <a href="/tags/{{ tag }}.html">{{ tag | replace:'_',' ' }}</a>{% if forloop.last %}{% else %}|{% endif %}
       {% endfor %}
     </nav>
