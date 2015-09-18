@@ -158,10 +158,12 @@ img {
 }
 
 .certificate img {
-	border: 1px solid;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+	border: 1px solid #555;
+	border-radius: 4px;
+       	box-shadow: 2px 2px 4px 0px #999;
+       	display: block;
+       	margin-left: auto;
+       	margin-right: auto;
 }
 
 .date {
