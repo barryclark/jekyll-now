@@ -288,6 +288,10 @@ nav {
   }
 }
 
+nav a.first {
+	margin-left: 0;
+}
+
 .tags {
     font-size: 80%;
 	float: right;
