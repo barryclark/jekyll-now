@@ -2,12 +2,8 @@
 layout: default
 ---
 
-{{ site.tags }} 
+{{ site.tags }}  <br />
 
-space: {{ site.tags.old blog }} <br />
-
-quote: {{ site.tags."old blog" }} <br />
-
-no space: {{ site.tags.oldblog }} <br />
-
-underscore: {{ site.tags.old_blog }} <br />
+{% for tag in site.tags %}
+  {{ tag }}
+{% endfor %}
