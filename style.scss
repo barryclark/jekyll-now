@@ -99,6 +99,16 @@ tr:nth-child(even) {
     background-color: $white;
 }
 
+figure img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+figcaption {
+	text-align: center;
+}
+
 p {
   margin: 15px 0;
 }
