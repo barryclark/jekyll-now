@@ -14,6 +14,6 @@ Ok, finally, after much digging, I figure out how to register, where tests cente
 
 I take the test. When I'm done, I didn't get the results immediately, but was emailed them maybe a half hour later. Got seventy-some percent right. Not as high as would've liked, but passing (had to get sixty-something or better).
 
-Now, I got this image to put places: ![Oracle Certified Associate, Java SE 7 Programmer logo](/images/hendrix_oracle_certified_associate_java_se_7_programmer_logo.gif).
+Now, I got this image to put places: <div class="certificate">![Oracle Certified Associate, Java SE 7 Programmer logo](/images/hendrix_oracle_certified_associate_java_se_7_programmer_logo.gif)</div>
 
 Oh, and [here's the actual certificate, in beautiful PDF form](/pdfs/hendrix_oracle_certified_associate_java_se_7_programmer_ecertificate.pdf).
