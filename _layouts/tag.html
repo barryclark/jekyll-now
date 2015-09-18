@@ -4,7 +4,7 @@ layout: default
 
 <hr />
   <nav class="tags" style="float: none;">
-    {% assign tags = site.tags | sort:"value" %}
+    {% assign tags = site.tags | sort %}
     {% for tag in tags %}
       {% capture page_name %}{{ tag[0] }}.html{% endcapture %}
       <a href="{{ page_name }}" {% if page.name == page_name %}class="selected"{% endif %}>
