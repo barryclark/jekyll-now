@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Using MatLab class methods without arguments
-tags: [matlab, old blog]
+tags: [matlab, old_blog]
 ---
 
 Sometimes you’ll have a class, and you want to have a function or method in that class that modifies an instance variable in some way. But if you code your class like this:
