@@ -30,7 +30,7 @@ We were lucky if the food was cooked all the way. Plus, it was against the rules
 
 Needless to say, I packed my lunch the vast majority of the time.
 
-Other source: http://studentsforliberty.org/news/school-bans-homemade-lunches/
+Other source: [http://studentsforliberty.org/news/school-bans-homemade-lunches/](http://studentsforliberty.org/news/school-bans-homemade-lunches/)
 
 Do you have any school lunch horror stories?
 
