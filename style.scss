@@ -181,6 +181,27 @@ img {
        	margin-right: auto;
 }
 
+div.outer {
+    display: block;
+    position: relative;
+    width: 100%;
+}
+
+div.inner {
+    /* shrink-to-fit width */
+    display: inline-block;
+    position: relative;
+    /* shift left edge of text to center */
+    left: 50%;
+}
+
+div.text {
+    /* shift left edge of text half distance to left */
+    margin-left: -50%;
+    /* text should all be on one line */
+    white-space: nowrap;
+}
+
 .date {
   font-size: 80%;
 }
