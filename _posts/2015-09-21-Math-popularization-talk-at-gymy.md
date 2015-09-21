@@ -11,7 +11,7 @@ hour long session on math (and a bit of computer science)
 to get the (mainly senior) students interested in
 [STEM](https://en.wikipedia.org/wiki/STEM_fields "Science, Technology, Engineering & Mathematics").
 
-![Students before the talk]({{site.url}}/2015_popmath_gymy/images/before.jpg)
+![Students after the talk]({{site.url}}/2015_popmath_gymy/images/after.jpg)
 
 After I introduced myself a little bit, we started talking about the field in general, how I got into university
 and how I chose to [study Computer Science](http://www.studuj-matfyz.cz/) at [Matfyz](http://mff.cuni.cz).
