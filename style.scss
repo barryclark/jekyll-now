@@ -181,7 +181,8 @@ img {
        	margin-right: auto;
 }
 
-.abs_center .MathJax_Display {
+.abs_center {
+	position: relative;
 	width: 200%;
 	right: 50%;
 }
