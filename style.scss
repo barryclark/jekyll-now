@@ -181,18 +181,15 @@ img {
        	margin-right: auto;
 }
 
-div.inner {
-    /* shrink-to-fit width */
-    display: inline-block;
-    position: relative;
-    /* shift left edge of text to center */
-    left: 50%;
+.abs_center {
+  position:relative;
+  right:50%;
+  text-align:center;
 }
 
-div.text {
-    /* shift left edge of text half distance to left */
-    margin-left: -50%;
-    /* text should all be on one line */
+.abs_center .MathJax_Display {
+  display:block;
+  margin-right:-100%;
     white-space: nowrap;
 }
 
