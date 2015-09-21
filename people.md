@@ -37,7 +37,7 @@ permalink: /people/
         <img src="{{ site.baseurl }}/images/carlos.jpg" width="150px" height="150px" align="left"/>
     </a>
 <figcaption>
-        Carlos is a senior majoring in Biochemistry with plans on attending a PhD program. His research interests include genetic variance in neurodegenerative diseases.  Outside of university Carlos enjoys learning about new tech, expanding his record collection, running, and exploring new restaurants and cafes.
+        Carlos is a senior majoring in Biochemistry with plans on attending a PhD program. His research interests include genetic variance in neurodegenerative diseases.  Outside of the university, Carlos enjoys learning about new tech, expanding his record collection, running, and exploring new restaurants and cafes.
 </figcaption>
 </figure>
 <br>
