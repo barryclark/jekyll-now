@@ -181,16 +181,9 @@ img {
        	margin-right: auto;
 }
 
-.abs_center {
-	position: relative;
-	right: 50%;
-	text-align: center;
-}
-
 .abs_center .MathJax_Display {
-	display: block;
-	margin-right: -100%;
-	white-space: nowrap;
+	width: 200%;
+	right: 50%;
 }
 
 .date {
