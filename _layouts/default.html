@@ -4,6 +4,7 @@
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
     {% include meta.html %}
+    {% include opengraph.html %}
     
     {% if page.mathjax %}
       <script type="text/x-mathjax-config">
