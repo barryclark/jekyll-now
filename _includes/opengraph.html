@@ -5,6 +5,10 @@
 
 <meta property="article:author" content="https://www.facebook.com/joseph.hendrix.5" />
 
+{% for tag in page.tags %}
+  <meta property="article:tag" content="{{ tag | replace:'_',' ' }}" />
+{% endfor %}
+
 {% if page.date %}
   <meta property="article:published_time" content="{{ page.date | date: "%Y-%m-%d" }}" />
 {% else %}
