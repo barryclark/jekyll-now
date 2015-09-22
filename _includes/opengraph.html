@@ -4,7 +4,7 @@
 <meta property="og:type" content="blog" />
 
 {% if page.image %}
-  <meta property="og:image" content="{{ page.image }}" />
+  <meta property="og:image" content="{{ site.url }}{{ page.image }}" />
 {% else %}
   <meta property="og:image" content="{{ site.avatar }}" />
 {% endif %}
