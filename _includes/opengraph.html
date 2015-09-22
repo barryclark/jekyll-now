@@ -3,7 +3,12 @@
 <meta property="og:site_name" content="Joe's GitHub Page" />
 <meta property="og:type" content="blog" />
 
-<meta property="og:image" content="{{ site.avatar }}" />
+{% if page.image %}
+  <meta property="og:image" content="{{ page.image }}" />
+{% else %}
+  <meta property="og:image" content="{{ site.avatar }}" />
+{% endif %}
+
 
 {% if page.url == "/index.html" %}
   <meta property="og:url" content="{{ site.url }}" />
