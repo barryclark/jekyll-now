@@ -5,21 +5,16 @@
     
     <meta property="fb:admins" content="1274573288"/>
     
-    <meta property="og:site_name" content="Joe's GitHub Page" />
-    <meta property="og:type" content="blog" />     
-    <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
     <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
 
     {% if page.excerpt %}
-    <meta name="description" content="{{ page.excerpt| strip_html }}" />
-    <meta property="og:description" content="{{ page.excerpt| strip_html }}" />
+        <meta property="og:description" content="{{ page.excerpt| strip_html }}" />
     {% else %}
-    <meta name="description" content="{{ site.description }}">
-    <meta property="og:description" content="{{ site.description }}" />
+        <meta name="description" content="{{ site.description }}">
     {% endif %}
+    
     <meta name="author" content="Joseph Hendrix" />
 
     {% if page.title %}
-    <meta property="og:title" content="{{ page.title }}" />
-    <meta property="twitter:title" content="{{ page.title }}" />
+        <meta property="twitter:title" content="{{ page.title }}" />
     {% endif %}
