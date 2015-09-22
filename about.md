@@ -16,7 +16,10 @@ Want to know more about me? Check me out across the web! Links are in the footer
 
 ## LinkedIn
 
-<a href="https://www.linkedin.com/in/{{ site.footer-links.linkedin }}"><i class="svg-icon linkedin"></i></a> Resume-type / professional information about me
+Resume-type / professional information about me:
+
+<script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
+<script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/hendrix1984" data-format="inline" data-related="false"></script>
 
 ## Wikipedia
 
