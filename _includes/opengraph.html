@@ -1,0 +1,15 @@
+<meta property="og:site_name" content="Joe's GitHub Page" />
+<meta property="og:type" content="blog" />     
+<meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+
+{% if page.title %}
+  <meta property="og:title" content="{{ page.title }}" />
+{% else %}
+  <meta property="og:title" content="{{ site.name }}" />
+{% endif %}
+
+{% if page.excerpt %}
+  <meta name="description" content="{{ page.excerpt| strip_html }}" />
+{% else %}
+  <meta property="og:description" content="{{ site.description }}" />
+{% endif %}
