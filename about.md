@@ -10,19 +10,9 @@ Want to know more about me? Check me out across the web! Links are in the footer
 
 Social information about me.
 
-<!-- Facebook Badge START -->
-<a href="https://www.facebook.com/joseph.hendrix.5" title="Joseph Hendrix" style="font-family: &quot;lucida grande&quot;,tahoma,verdana,arial,sans-serif; font-size: 11px; font-variant: normal; font-style: normal; font-weight: normal; color: #3B5998; text-decoration: none;" target="_TOP">
-  Joseph Hendrix
-</a>
-<span style="font-family: &#039;lucida grande&#039;,tahoma,verdana,arial,sans-serif;font-size: 11px;line-height: 16px;font-variant: normal;font-style: normal;font-weight: normal;color: #555555;text-decoration: none;">&nbsp;|&nbsp;</span>
-<a href="https://www.facebook.com/badges/" title="Make your own badge!" style="font-family: &quot;lucida grande&quot;,tahoma,verdana,arial,sans-serif; font-size: 11px; font-variant: normal; font-style: normal; font-weight: normal; color: #3B5998; text-decoration: none;" target="_TOP">
-  Create Your Badge
-</a>
-<br />
 <a href="https://www.facebook.com/joseph.hendrix.5" title="Joseph Hendrix" target="_TOP">
   <img class="img" src="https://badge.facebook.com/badge/1274573288.3852.1218662383.png" style="border: 0px;" alt="" />
 </a>
-<!-- Facebook Badge END -->
 
 ##GitHub
 
