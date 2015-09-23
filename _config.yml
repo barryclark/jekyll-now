@@ -3,13 +3,13 @@
 #
 
 # Name of your site (displayed in the header)
-name: Your Name
+name: Medina Colic
 
 # Short bio or description (displayed in the header)
-description: Web Developer from Somewhere
+description: Problem Solving/ Algorithms/ Biomedical Sciences/ Computer Science/ Mathematics/ CBBG 
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
+avatar: http://www.google.com/imgres?imgurl=http://d.fastcompany.net/multisite_files/fastcompany/poster/2014/03/3028124-poster-p-dna.jpg&imgrefurl=http://www.fastcoexist.com/3028124/fund-this/find-out-how-damaged-your-dna-is-with-a-home-test-kit&h=1080&w=1920&tbnid=NIgJpB6wUSVzuM:&docid=l-_YbAtHNNlxHM&ei=8xsDVrfoOoT3yQTRppbwBg&tbm=isch&client=safari&ved=0CDMQMygBMAFqFQoTCPetnYqPjsgCFYR7kgodUZMFbg
 
 #
 # Flags below are optional
@@ -18,12 +18,12 @@ avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/je
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email:
+  email: mcolic@na.edu
   facebook:
   flickr:
-  github: barryclark/jekyll-now
+  github: mcolic
   instagram:
-  linkedin:
+  linkedin: Medina Colic
   pinterest:
   rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
   twitter: jekyllrb
