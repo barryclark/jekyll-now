@@ -23,7 +23,7 @@ layout: default
     {{ content }}
   </div>
 
-  {% if page.facebook_post != blank %}
+  {% if page.facebook_post %}{% else %}
     <div class="fb-comments" data-href="{{ site.url }}{{ page.url }}" data-width="100%" data-numposts="5"></div>
   {% endif %}
   
