@@ -22,7 +22,7 @@ Social information about me.
 
 Resume-type / professional information about me:
 
-<script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
+<script src="http://platform.linkedin.com/in.js" type="text/javascript"></script>
 <script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/hendrix1984" data-format="inline" data-related="false"></script>
 
 ## Wikipedia
