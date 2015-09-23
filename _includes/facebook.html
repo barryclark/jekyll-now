@@ -7,6 +7,10 @@
       version    : 'v2.4'
     });
     
+    FB.api('/me', {fields: 'last_name'}, function(response) {
+      alert(response);
+    });
+    
 /*    FB.ui(
     {
       method: 'share',
