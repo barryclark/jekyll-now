@@ -10,7 +10,7 @@
 <script src="https://platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
 
 <!-- Facebook Like & Share -->
-<script>$("#joeShare").click(function(e) { 
+<script>document.getElementById("joeShare").addEventListener("click",function(e) { 
   FB.ui({
   method: 'share',
   href: "{{ page_url | strip_newlines }}",
