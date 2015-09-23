@@ -3,18 +3,4 @@ layout: default
 mathjax: true
 ---
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
-
-      <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-      
-     <div class="date">{{ post.date | date: "%B %e, %Y" }}</div>
-
-      <div class="entry" style="margin-top: 15px;">
-        {{ post.excerpt | strip_html }}
-      </div>
-      
-    </article>
-  {% endfor %}
-</div>
+{% include posts.html posts=site.posts %}
