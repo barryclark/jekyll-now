@@ -5,15 +5,7 @@ layout: default
 <article class="post">
   <h1>{{ page.title }}</h1>
   
-  <script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
-<script type="IN/Share" data-url="{{ site.url }}{{ page.url }}"></script>
-  <div class="fb-like" 
-    data-href="{{ site.url }}{{ page.url }}" 
-    data-layout="standard" 
-    data-action="like" 
-    data-share="true"
-    data-show-faces="true">
-  </div>
+  {% include share.html %} 
 
   <hr />
   <div>
