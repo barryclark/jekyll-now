@@ -13,7 +13,7 @@
 <script>$("#joeShare").click(function(e) { 
   FB.ui({
   method: 'share',
-  href: "{{ page_url | strip }}",
+  href: "{{ page_url | strip_newlines }}",
   }, function(response){});
 })</script><span id="joeShare">Share!</span>
 <script type="IN/Share" data-url="{{ page_url }}"></script>
