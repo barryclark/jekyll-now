@@ -23,6 +23,8 @@
 
 {% if page.url == "/index.html" %}
   <meta property="og:url" content="{{ site.url }}" />
+{% elsif page.facebook_post %}
+  <meta property="og:url" content="{{ page.facebook_post }}" />
 {% else %}
   <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
 {% endif %}
