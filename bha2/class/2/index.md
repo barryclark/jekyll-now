@@ -10,11 +10,14 @@ This week we will start growing microbes under controlled conditions. During the
 
 ## Schedule
 
-* Microbiology
-* Bio design / art
-* Documentation
-* Analog electronics & Magnetic Stirrer design
-* Practicals
+* [Microbiology](/bha2/class/2/pdf/1 Microbiology.pdf)
+* [Bio design / art](/bha2/class/2/pdf/FORM OF BIO ART.pdf)
+* [Documentation](/bha2/class/2/pdf/4 Documentation.pdf)
+* [Fritzing](/bha2/class/2/pdf/2 Fritzing.pdf)
+* [Magnetic Stirrer design](/bha2/class/2/pdf/5 Magnetic Stirrer design.pdf)
+* Open source licensing -> moved to next week
+* [Practicals](/bha2/class/2/pdf/6 Microorganism cultivation.pdf)
+  * Contamination test
   * Cultivating microbes
 
 ## Devices
