@@ -1,11 +1,19 @@
+{% capture page_url %}
+  {% if page.facebook_post %}
+    {{ page.facebook_post }}
+  {% else %}
+    {{ site.url }}{{ page.url }}
+  {% endif %}
+{% endcapture %}
+
 <!-- LinkedIn Share -->
 <script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
 
 <!-- Facebook Like & Share -->
-<script type="IN/Share" data-url="{{ site.url }}{{ page.url }}"></script>
+<script type="IN/Share" data-url="{{ page_url }}"></script>
 
   <div class="fb-like" 
-    data-href="{{ site.url }}{{ page.url }}" 
+    data-href="{{ page_url }}" 
     data-layout="standard" 
     data-action="like" 
     data-share="true"
