@@ -7,6 +7,7 @@
 
 @import "reset";
 @import "variables";
+@import "hendrix";
 // Syntax highlighting @import is at the bottom of this file
 
 /**************/
@@ -64,56 +65,6 @@ h4 {
   color: $gray;
 }
 
-table {
-	width: 100%;
-	border: 1px solid;
-	border-radius: 4px;
-}
-
-th, td {
-	border: 1px solid;
-	text-align: left;
-	padding: 5px;
-}
-
-th {
-	background-color: $white;
-}
-
-td {
-}
-
-td.post_title:hover {
-	background-color: $blue;
-}
-
-td:hover a {
-	color: $white;
-}
-
-tr:nth-child(odd) {
-    background-color: $lightGray;
-}
-
-tr:nth-child(even) {
-    background-color: $white;
-}
-
-figure img {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-figcaption {
-	text-align: center;
-	font-size: 80%;
-	
-	a {
-		color: #333;
-	}
-}
-
 p {
   margin: 15px 0;
 }
@@ -165,31 +116,12 @@ img {
   max-width: none;
 }
 
-.fourOhFour {
-	width: 400px;
-	display: block;
-    	margin-left: auto;
-    	margin-right: auto;
-}
-
-.certificate img {
-	border: 1px solid #555;
-	border-radius: 4px;
-       	box-shadow: 2px 2px 4px 0px #999;
-       	display: block;
-       	margin-left: auto;
-       	margin-right: auto;
-}
-
-.abs_center {
-	position: relative;
-	width: 200%;
-	right: 50%;
-}
-
+/* .date is specified in sass/_hendrix.scss
 .date {
-  font-size: 80%;
+  font-style: italic;
+  color: $gray;
 }
+*/
 
 // Specify the color of the selection
 ::-moz-selection {
@@ -281,6 +213,7 @@ img {
   }
 }
 
+/* nav is specified in _sass/_hendrix.scss
 nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
@@ -295,10 +228,9 @@ nav {
   }
 
   a {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 20px;
     color: $darkGray;
-    text-align: center;
+    text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
 
@@ -308,24 +240,7 @@ nav {
     }
   }
 }
-
-nav a.first {
-	margin-left: 0;
-}
-
-.tags {
-    font-size: 80%;
-	float: right;
-	margin-top: 0px;
-	margin-left: 15px;
-}
-
-a.selected {
-  	color: #fff;
-	background: #666;
-	text-shadow: 1px 1px 1px #000;
-	border-radius: 4px;
-    }
+*/
 
 //
 // .main
