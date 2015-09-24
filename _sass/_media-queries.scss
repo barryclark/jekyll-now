@@ -34,6 +34,14 @@
     margin-left: $space-3;
     padding: $space-3;
   }
+
+  .social-icons-left {
+    text-align: left;
+  }
+
+  .social-icons-right {
+    text-align: right;
+  }
 }
 
 @media screen and (min-width: $viewport-medium) {
