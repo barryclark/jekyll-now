@@ -1,0 +1,54 @@
+figure img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 80 %;
+    
+    a {
+        color: #333;
+    }
+}
+
+.fourOhFour {
+    width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.certificate img {
+    border: 1px solid #555;
+    border-radius: 4px;
+    box-shadow: 2px 2px 4px 0px #999;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.abs_center {
+    position: relative;
+    width: 200%;
+    right: 50%;
+}
+
+nav a.first {
+    margin-left: 0;
+}
+
+.tags {
+    font-size: 80%;
+    float: right;
+    margin-top: 0px;
+    margin-left: 15px;
+}
+
+a.selected {
+    color: #fff;
+    background: #666;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 4px;
+}
