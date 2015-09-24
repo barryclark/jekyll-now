@@ -1,3 +1,38 @@
+nav {
+    float: right;
+    margin-top: 23px; // @TODO: Vertically middle align
+    font-family: $helveticaNeue;
+    font-size: 18px;
+    
+    @include mobile {
+        float: none;
+        margin-top: 9px;
+        display: block;
+        font-size: 16px;
+    }
+    
+    a {
+        margin-left: 10px;
+        margin-right: 10px;
+        color: $darkGray;
+        text-align: center;
+        font-weight: 300;
+        letter-spacing: 1px;
+        @include mobile {
+            margin: 0 10px;
+            color: $blue;
+        }
+    }
+}
+
+nav a.first {
+    margin-left: 0;
+}
+
+.date {
+    font-size: 80%;
+}
+
 figure img {
     display: block;
     margin-left: auto;
@@ -33,10 +68,6 @@ figcaption {
     position: relative;
     width: 200%;
     right: 50%;
-}
-
-nav a.first {
-    margin-left: 0;
 }
 
 .tags {
