@@ -9,8 +9,7 @@ name: Medina Colic
 description: Problem Solving/ Algorithms/ Biomedical Sciences/ Computer Science/ Mathematics/ CBBG 
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: http://www.google.com/imgres?imgurl=http://d.fastcompany.net/multisite_files/fastcompany/poster/2014/03/3028124-poster-p-dna.jpg&imgrefurl=http://www.fastcoexist.com/3028124/fund-this/find-out-how-damaged-your-dna-is-with-a-home-test-kit&h=1080&w=1920&tbnid=NIgJpB6wUSVzuM:&docid=l-_YbAtHNNlxHM&ei=8xsDVrfoOoT3yQTRppbwBg&tbm=isch&client=safari&ved=0CDMQMygBMAFqFQoTCPetnYqPjsgCFYR7kgodUZMFbg
-
+avatar: http://boldlions.files.wordpress.com/2014/08/laboratory.jpg
 #
 # Flags below are optional
 #
@@ -23,10 +22,10 @@ footer-links:
   flickr:
   github: mcolic
   instagram:
-  linkedin: Medina Colic
+  linkedin:
   pinterest:
   rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
-  twitter: jekyllrb
+  twitter: 
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
