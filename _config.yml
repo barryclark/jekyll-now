@@ -49,6 +49,7 @@ url:
 # then add in the baseurl here, like this: "/repository-name"
 baseurl: ""
 
+<<<<<<< HEAD
 #
 # !! You don't need to change any of the configuration flags below !!
 #
@@ -67,6 +68,11 @@ sass:
 # Use the following plug-ins
 gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+=======
+markdown: rdiscount
+pygments: true
+permalink: /:title
+>>>>>>> parent of 4bf8bd9... Config file commenting
 
 # Exclude these files from your production _site
 exclude:
