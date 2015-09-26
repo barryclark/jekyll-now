@@ -1,1 +1,4 @@
-
+type: CNAME
+host: www.vessia.net
+answer: michaelvessia.github.io
+TTL: 300
