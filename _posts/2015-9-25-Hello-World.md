@@ -1,9 +1,7 @@
 ---
 layout: post
-title: Migrated the site to Jekyll
+title: Welcome to the new site!
 ---
-
-Hello world!
 
 I just finished migrating vessia.net to Jekyll.  My plan is to have a mostly technical blog that will document my journey into the field of software development.
 
