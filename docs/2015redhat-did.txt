@@ -1,0 +1,332 @@
+Status report for given date range (2015-07-15 to 2015-09-30).
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ Ondrej Skopek <skopekondrej@gmail.com>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+* Work on optaplanner: 227 commits
+    * 6181901 - Migrated README.md -> README.adoc
+    * da0daf8 - Added formatted names to StatisticTypes
+    * 7b54175 - PLANNER-401-blog: Removed original solverBenchmark from MR
+    * cb87ab0 - PLANNER-401-blog: Added subSingleCount and environmentMode to configs
+    * 0263bf4 - PLANNER-401: PR comments: Add a section for inheritedSolverBenchmark
+    * 0803842 - PLANNER-401: PR comments: Disambiguate upgrade recipe
+    * d0cd0ff - PLANNER-401: PR comments: Renamed subSingleStatisticType back to singleStatisticType
+    * cce3824 - PLANNER-401: PR comments: Added missing XStreamAlias annotations
+    * 21358e4 - PLANNER-401: PR comments: Removed obsolete util method, replaced with IOUtils.toString
+    * 6af1a13 - PLANNER-401: PR comments: subSingleCount field ordering
+    * 30e33a7 - PLANNER-401: PR comments: Descriptive parameter name
+    * cc5a1aa - PLANNER-401: PR comments: getName ordering
+    * 70c84c6 - PLANNER-401: PR comments: Code style ( " + ... + " ) -> (" + ... + ")
+    * 5a54b0e - PLANNER-401: Add SubSingleStatistics mention to upgrade recipe
+    * 8150830 - PLANNER-401: Fix for machine reassignment score not showing up in chart
+    * 110911b - PLANNER-401: Fixed resource loading in tests
+    * 4b93035 - PLANNER-401: Renamed methods in BenchmarkResult + some javadocs
+    * 085d655 - PLANNER-401: Fixed XStreamImplicit in SubSingle, added itemFieldNames everywhere in benchmarker
+    * 073d64a - PLANNER-401: Fix subsingle stats handling
+    * 9270144 - PLANNER-401: Moved SubSingleStats from BenchmarkReport to SubSingleBR
+    * 5a9041a - PLANNER-401: Rename SolverProblemBenchmarkResult to BenchmarkResult (report)
+    * 98655f4 - PLANNER-401: Renamed methods in BenchmarkResult
+    * 691d510 - PLANNER-401: Renamed SolverProblemBenchmarkResult -> BenchmarkResult
+    * c95cfe5 - PLANNER-401: Fixed stats loading/unloading on report generation
+    * 253be87 - PLANNER-401: Added median, worst and best subSingleBenchmarkResults to SingleBenchmarkResult
+    * c81da4e - PLANNER-401: Removed PureSingleStatistics and EffectiveStatisticMap from SingleBenchmarkResult
+    * 3c61b4a - PLANNER-401: Renamed subSingleBenchmark directories to "sub" + index
+    * 1147ed1 - PLANNER-401: Manual renaming SingleStatistic -> SubSingleStatistic
+    * 51131eb - PLANNER-401: Auto-rename org.optaplanner.benchmark.impl.statistic.single -> subsingle
+    * f15a534 - PLANNER-401: Auto-rename SingleStatisticType -> SubSingleStatisticType
+    * 4cacbdb - PLANNER-401: Auto-rename SingleStatistic -> SubSingleStatistic
+    * 1947475 - PLANNER-401: PR comments: Added minor note to upgrade recipe about functionality move from getScore...
+    * 7a979db - PLANNER-401: Added get(0) explanation comment
+    * 9c30361 - PLANNER-401: PR comments: hasNonDefaultSubSingleCount -> maximumSubSingleCount
+    * bedee7b - PLANNER-401: PR comments: Docs
+    * 159ede6 - PLANNER-401: PR comments: Added plannerBenchmarkConfig test with inherited solver benchmark
+    * a36bceb - PLANNER-401: PR comments: Removed obsolete code from comments
+    * 0a4f6f2 - PLANNER-401: PR comments: Added restoration comment on XStreamOmitField
+    * f86f96d - PLANNER-401: PR comments: Fixed inheritance and defaulting of subSingleCount
+    * 346c8fe - PLANNER-401: PR comments: Add non-changing config after read/write tests
+    * d36d81f - PLANNER-401: PR comments: benchmarking -> benchmark
+    * 9deab51 - PLANNER-401: PR comments: Code style ( {} ) -> ({})
+    * 46ca4de - PLANNER-401: PR comments: Added .getName() to user-visible strings in charts
+    * 46eb33f - PLANNER-401: PR comments: Renamed StatsUtil -> StatisticUtils
+    * 42f1083 - PLANNER-401: Fixed logger messages when aggregating
+    * 9e4ca2d - PLANNER-401: Space in logger messages
+    * d42788a - PLANNER-401: Moved StatsUtil, fixed failure handling and implement interface correctly
+    * 7a575dc - PLANNER-401: Added subsingle data to the performance summary table (ACC and time spent tab)
+    * 92dc11a - PLANNER-401: Added Box and whiskers chart for score distribtution of subsingles in a given problem
+    * fda135a - PLANNER-401: Added worst/best score of subsingles to summary statistics of single benchmark result
+    * 8b7344d - PLANNER-401: Fixed single statistic handling + tests
+    * cce0b5b - PLANNER-401: Fix median score + aggregation
+    * 53bc132 - PLANNER-401: Added stddev to statistical summary
+    * 80108d6 - PLANNER-401: Moved SingleBenchmarkResult's score functionality to averageScore and added...
+    * ec5d139 - PLANNER-401: Sub single results statistical summary
+    * 30df855 - PLANNER-401: Fixed single stats handling in sub singles
+    * 7c81181 - PLANNER-401: Added log message on report generation begin
+    * 8e4b79f - PLANNER-401: Fixed report path handling
+    * d2630a5 - PLANNER-401: Report template adjustments
+    * 6b52944 - PLANNER-401: Added SubSingleBenchmark result and SolverProblemBenchmarkResult
+    * 82c1eff - PLANNER-401: Added statistical benchmarking as a section in docs
+    * 806a25e - PLANNER-440: Tests advanced
+    * 143c447 - PLANNER-440: Tests
+    * 915c3b4 - PLANNER-440: Adding classloader to benchmark config and runners
+    * bfc3f6a - PLANNER-440: Fix
+    * 6f8457d - PLANNER-401: PR comments: hasNonDefaultSubSingleCount -> maximumSubSingleCount
+    * 0077916 - PLANNER-401: PR comments: Docs
+    * 958d5c0 - PLANNER-401: PR comments: Added plannerBenchmarkConfig test with inherited solver benchmark
+    * 32a33a5 - PLANNER-401: PR comments: Removed obsolete code from comments
+    * eb5b43f - PLANNER-401: PR comments: Added restoration comment on XStreamOmitField
+    * 824e09f - PLANNER-401: PR comments: Fixed inheritance and defaulting of subSingleCount
+    * f9bc3ef - PLANNER-401: PR comments: Add non-changing config after read/write tests
+    * e85ede6 - PLANNER-401: PR comments: benchmarking -> benchmark
+    * 6e3eb15 - PLANNER-401: PR comments: Code style ( {} ) -> ({})
+    * 6fadb87 - PLANNER-401: PR comments: Added .getName() to user-visible strings in charts
+    * 52dd3ce - PLANNER-401: PR comments: Renamed StatsUtil -> StatisticUtils
+    * 4544e98 - PLANNER-401: Fixed logger messages when aggregating
+    * dc62369 - PLANNER-401: Space in logger messages
+    * fa95a62 - Code style: space after comma
+    * 1f15628 - PLANNER-401: Moved StatsUtil, fixed failure handling and implement interface correctly
+    * da712f0 - PLANNER-401: Added subsingle data to the performance summary table (ACC and time spent tab)
+    * 60b253a - PLANNER-401: Added Box and whiskers chart for score distribtution of subsingles in a given problem
+    * 153a962 - PLANNER-401: Added worst/best score of subsingles to summary statistics of single benchmark result
+    * a99ef90 - PLANNER-401: Fixed single statistic handling + tests
+    * bb44621 - PLANNER-401: Fix median score + aggregation
+    * 8b3c365 - PLANNER-401: Added stddev to statistical summary
+    * 24ae650 - PLANNER-401: Moved SingleBenchmarkResult's score functionality to averageScore and added...
+    * 9a52d85 - PLANNER-401: Sub single results statistical summary
+    * abe25f1 - PLANNER-401: Fixed single stats handling in sub singles
+    * bf38850 - PLANNER-401: Added log message on report generation begin
+    * 7b31c36 - PLANNER-401: Fixed report path handling
+    * b75563d - PLANNER-401: Report template adjustments
+    * 059ce58 - PLANNER-401: Added SubSingleBenchmark result and SolverProblemBenchmarkResult
+    * 26b08f8 - PLANNER-401: Added statistical benchmarking as a section in docs
+    * 8294fcb - add score difference to report
+    * 4370a7e - best and worst fix
+    * c893ff9 - hide graph and dropdown if subSingleCount <= 1
+    * 551fbd2 - repr
+    * e698dc8 - stringbuilder + success fix
+    * 3599733 - repr
+    * 3c480af - comment updates
+    * b3f73d4 - fixed benchmark warm up stats erasure
+    * 0428a62 - Report formatting
+    * bc9e6d5 - box and whiskers chart 4
+    * b398019 - box and whiskers chart 3
+    * 6abdc4e - box and whiskers chart 2
+    * 65bd938 - box and whiskers chart
+    * de72458 - added worst/best to single
+    * 9df43eb - checkstyle
+    * ed57c8b - fix tests
+    * 4e8baad - added log message (TODO: fix report generation time)
+    * f853e1a - fix aggregation
+    * 6535d5f - changed single.score --> averageScore
+    * dbde4fd - added stddev
+    * e0e9350 - stats averaging
+    * e345fcc - stats averaging
+    * fb216ec - subSingleCount default value
+    * a4bfe29 - reworked initSingleStatisticsMap
+    * cebd966 - PLANNER-401: Fixed report path handling
+    * 5f07222 - PLANNER-401: Report template adjustments
+    * 6badb11 - PLANNER-401: Added SubSingleBenchmark result and SolverProblemBenchmarkResult
+    * 8da9d6f - REMOVE_ME: PLANNER-401-repr: Reproducer
+    * 22ce5e9 - Removed obsolete comments about "null"
+    * e8ee03e - SolverBenchmarkResult Correct failed singles handling in average score with uninitialized prefix
+    * ae22cbe - SolverBenchmarkResult Correct failed singles handling in average score with uninitialized prefix
+    * 7be7a63 - PLANNER-411: UninitializedVariableCount is null in older benchmarks: add a default value
+    * ba5670f - TODO
+    * d024170 - REMOVE_ME: TODO
+    * 9a86025 - PLANNER-419: Fixed tabbable pill pairing
+    * cb16d0a - Fix menu indentation
+    * 771baf4 - Fixed badges
+    * eced8fe - bootstrap upgrade in report ftl
+    * 0dfe406 - bootstrap upgrade in website resource utils
+    * 9acf976 - bootstrap and jquery update in report
+    * 14543be - Bootstrap and JQuery update
+    * 26d9191 - Repr
+    * ba42406 - repr
+    * 6e4dcf4 - webresourceutils
+    * 6109d89 - webresourceutils
+    * d6c3701 - locator refactorin
+    * c99eaf0 - locator refactorin
+    * 4e6e6e2 - MERGE_ME added locator
+    * 2f238e5 - Removed bootstrap, jquery, prettify and leaflet
+    * 3ed9075 - Added bootstrap, jquery, leaflet and google-code-prettify as a dependency to poms
+    * 824ff7f - Fixed Java8 javadoc warning in WorstScoreSolverRankingComparator
+    * 99a7a08 - PLANNER-431: Emptied out old upgrade recipe
+    * cc834aa - PLANNER-431: Upgrade docs references
+    * de2fd8a - Remade ceilDivide and floorDivide tests
+    * 1388306 - PLANNER-423: Fixes
+    * d54656b - PLANNER-423
+    * 89cfb82 - PLANNER-259: PR comments
+    * 7413bbf4 - PLANNER-259: Hibernating point lists after generating graph
+    * c4a4488 - PLANNER-259: Fix aggregator
+    * a595810 - PLANNER-259: Renamed persist to hibernate (pointList)
+    * cfac0e4 - PLANNER-259: Persist SingleStatistic pointList to disk to save memory
+    * 66b5cbb - Added mergeProperty and meldProperty tests
+    * 010465b - Fixed non-floating point arithmetic division of integers
+    * e6d4ca7 - Enabled all single statistics for NQueensBenchmarkTest
+    * 71238e0 - Added toString to MutationCounter and fixed small bug in logging in BestSolutionMutationSingleStatistic
+    * c66419f - Fixed graph unavailable message in report
+    * 59836fa - PLANNER-427: PR comments
+    * 32160d2 - PLANNER-427: Java <8 fix
+    * 918bd97 - PLANNER-427: Fix
+    * da0563e - Added usage to comment of meldProperty()
+    * d0be46e - Fixes uninitialized variable count averaging without floating point arithmetic.
+    * e2627d3 - Fixes uninitialized variable count averaging.
+    * 1dce974 - PR comment fixes
+    * 856856a - Fix aggregating failed benchmarks
+    * e116aa7 - Atomicized "differs" rendering in report
+    * 8ae4b61 - Aggregator variable name typo
+    * f111fc0 - PLANNER-420: Fix
+    * 300f6cd - PLANNER-284: Create new scoreLevelToConstraintUndoListenerMap instead of clearing it
+    * 75ed502 - PLANNER-284: Code style fixes
+    * f05dd8f - Added modules to the maven-checkstyle-plugin
+    * 35201cf - Fixed checkstyle warnings
+    * a6c3352 - PLANNER-284: Create new scoreLevelToConstraintUndoListenerMap instead of clearing it
+    * 5bcd1d0 - PLANNER-284: Code style fixes
+    * c05425d - PLANNER-284: Reproducer tests
+    * 700dc2a - PLANNER-284: Fix with a wrapper class
+    * 00462ed - Fix score level indexing bug in BendableBigDecimalScoreHolder
+    * b370be0 - PLANNER-284: Reproducer tests
+    * 3450df2 - PLANNER-284: Fix with a wrapper class
+    * d3fd880 - Fix score level indexing bug in BendableBigDecimalScoreHolder
+    * 4441e69 - SwingUI Constraint matches dialog now redraws correctly when viewed multiple times in a single solver...
+    * a4f4156 - PLANNER-409: Benchmark directory creation appends suffix instead of failing when it finds an existing...
+    * 10edc8d - PLANNER-409: Test
+    * 7863b71 - PLANNER-409: Test
+    * e3b4c06 - PLANNER-409: Benchmark directory creation appends suffix instead of failing when it finds an existing...
+    * 22af3af - Added overheating warning for parallelBenchmarkCount > 1 to benchmarker docs
+    * 91d2ec3 - Fixed PR comments
+    * 868126e - Fix long tooltips in bootstrap
+    * 6e20e4a - Add environment mode to report
+    * 71e9ded - Benchmark resolves log level from core
+    * e7b39d7 - Add ranking type to report
+    * 89b53c0 - Added TODOs referencing PLANNER-405 (Score should keep track of the uninitialized variable count) to...
+    * 6ec5250 - PLANNER-391: Fix PR comments
+    * a9d91c1 - PLANNER-391: Show uninitialized score in swingui
+    * 7a148dd - PLANNER-391: Added TODO links to PLANNER-405
+    * 12cf0f9 - PLANNER-391: Mention ranking in docs
+    * f9cea68 - PLANNER-391: Added ranking tests
+    * d9368d0 - PLANNER-391: Fixed ranking of uninitialized solutions
+    * ee3b2b4 - PLANNER-48: Add a note about datasets loading delaying the warm up
+    * 0f1cc4a - PLANNER-390: Refactored template macros and added badges to solver benchmarks
+    * c501780 - delay-reproduce
+    * 897404a - PLANNER-48: Code Style fix (dis-align method parameters)
+    * a686e66 - PLANNER-48: Fixing issues from PR comments
+    * a7581e3 - PLANNER-48: Implement the full-cycle with repeats proposal
+    * 5e78663 - PLANNER-48: Use TerminationConfiguration instead of thread timeouts + warm up all SolverConfigs at...
+    * 2f88be9 - PLANNER-48: Benchmarker warm-up runs in multiple threads (according to parallelBenchmarkCount)
+    * 4945ece - PLANNER-48: Refactor
+    * 4daffae - PLANNER-333-fix: Merge the initialized field properly when aggregating
+    * 67256db - PLANNER-302-fix2: Refactor beans.xml files in webexamples according to JSR-346 (CD1 1.2 Specification)
+    * 32651c7 - PLANNER-334: Refactor indendation in macros in benchmarkReport template
+    * 0225c5c - PLANNER-334: Fixed hiding of other badges when a benchmark fails
+    * ce9a726 - PLANNER-302-fix: Added beans.xml to enable CDI
+    * 3ae1362 - PLANNER-360: Docs: Added BigInteger to ValueRangeFactory creation method class possibilities
+    * ed3bd4d - PLANNER-360: Added BigIntegerValueRange with unit tests
+    * 98f735f - PLANNER-360: Refactor (rearrange methods in ValueRangeFactory according to docs)
+    * 5e714db - PLANNER-334: Added a tooltip to infeasible score and uninitialized solution warnings in the final...
+    * 91aa25e - PLANNER-333: Added information about initialization of the best Solution to SingleBenchmarkResult.
+    * 14f6817 - Fixed docbook section ids (they have to be unique)
+    * fd03e24 - PLANNER-389: Small javadoc error fixes: * Resolved "error: unexpected end tag: </p>" (replaced '</p...
+    * 971b7a0 - PLANNER-389: Fixed doclint errors about '<' and '>' chars by surrounding them with {@code ...}
+    * a048d0e - PLANNER-389: Resolved "error: self-closing element not allowed: <p/>"
+    * fa3ecd2 - PLANNER-341: Second refactor of createScalabilityPlot()
+    * a2cfcd7 - PLANNER-341: Refactored createScalabilityPlot() according to PR comment
+    * db1669b - PLANNER-341: Disabled LogarithmicAxis' check for non-positive values to support ambiguous problemScales
+
+* Work on optaplanner-website: 36 commits
+    * 7cfc895 - Blog post: How lucky are your random seeds? (correction)
+    * ea8985c - Blog post: How lucky are your random seeds?
+    * 5e8a582 - Blog post: How lucky are your random seeds?
+    * 9def704 - PLANNER-431: PR comments: Method rename
+    * 7234284 - PLANNER-431: PR comments: Removed upgradeRecipe5.5.adoc
+    * e115053 - PLANNER-431: PR comments: Moved *Archive.adoc -> index.adoc
+    * d8588d8 - PLANNER-431: Fixing broken links
+    * 6ef2af0 - PLANNER-431: Removed convertor, header and upgrade recipe .txt files
+    * f3f862e - PLANNER-431: Added converted upgrade recipes in AsciiDoc
+    * fea107e - PLANNER-431: Added upgrade_recipe_version and previous_version as a parameter to header partial
+    * 15f9091 - PLANNER-431: Added hiding
+    * 4bac812 - PLANNER-431: Added icons
+    * 1ed6bc1 - PLANNER-431: Added haml header and partial
+    * 9e5d08d - PLANNER-431: convertor + header
+    * 337dc3c - PLANNER-431: Fixed up input upgradeRecipes
+    * ef47a74 - PLANNER-431: Add split txt upgrade recipes
+    * 7507f71 - PLANNER-431: Added links to download
+    * e5aa8c3 - PLANNER-431: Add upgrade recipe archive
+    * da044eb - PLANNER-431: Updated release notes with links to the upgrade recipes
+    * a6b6859 - Fix asciidoctor complaints: "ERROR: README.adoc: line 3: only book doctypes can contain level 0...
+    * b6a6476 - Typo fixes
+    * c19988b - PLANNER-401: Add statistical benchmarking to release notes
+    * 609ec14 - Migrated README.md -> README.adoc + added build status icon
+    * d575f2d - TODO: PLANNER-431: convertor + header
+    * 734d958 - PLANNER-431: Add split txt upgrade recipes
+    * 91409fc - PLANNER-431: Added links to download
+    * 09b0fe3 - PLANNER-431: Add upgrade recipe archive
+    * a6465c5 - PLANNER-431: Updated release notes with links to the upgrade recipes
+    * 2a7644e - Fixed some typos in blog posts
+    * c61fb85 - Added ODP file format to gitattributes as binary
+    * 2c909a3 - Translated left-over words to German and fixed links
+    * c296fa9 - Added German localization
+    * 5c85066 - Added localization link flags to the footer
+    * 4a19e3e - PLANNER-284: Release notes mention
+    * 00baafe - PLANNER-48: Update 6.4 release notes
+    * 2695f84 - Added BigIntegerValueRange to release notes
+
+* Issues created in jboss jira: 27
+    * PLANNER-0460 - Add sub single benchmark data point distribution density to single statistic charts
+    * PLANNER-0459 - Benchmark progress bar/indicator
+    * PLANNER-0453 - XStream should omit fields that don't need to be stored in the benchmark results
+    * PLANNER-0446 - Detect sub single benchmark outliers based on ACC and report them
+    * PLANNER-0443 - Add a reliability tab to summary statistics in benchmarker report
+    * PLANNER-0439 - Use WebJars from Maven Central instead of local copies for JavaScript libraries
+    * PLANNER-0438 - Migrate benchmarker report and webexamples to newest version of Bootstrap v3
+    * PLANNER-0430 - Detect statistically significant benchmark result improvement
+    * PLANNER-0429 - Migrate box plots in benchmarker to violin plots once JFreeChart supports them
+    * PLANNER-0428 - Run SubSingleBenchmarks in separate JVMs
+    * PLANNER-0427 - Single statistics fail when parallelBenchmarkCount is bigger than the number of solvers
+    * PLANNER-0426 - Class UML diagram design issues
+    * PLANNER-0425 - SwingUI intro screen redesign
+    * PLANNER-0424 - Get rid of the unsolved datasets buttons
+    * PLANNER-0423 - Get rid of the '90s look
+    * PLANNER-0419 - Benchmark report: switching statistic "tabs" in the summary above the images doesn't update the...
+    * PLANNER-0418 - Benchmark report: Differentiate the buttons for "CSV files per solver"
+    * PLANNER-0416 - Consider migrating fonts in images to liberation-fonts
+    * PLANNER-0415 - Show a better error message for Incremental Score Calculation with Constraint Match Total Step...
+    * PLANNER-0414 - Failed benchmarks should report the exception class name/message/stack trace
+    * PLANNER-0407 - Aggregated report should show a warning when merging benchmarks of different solver ranking type...
+    * PLANNER-0405 - Score should keep track of the uninitialized variable count
+    * PLANNER-0404 - maven-exec-plugin JVM arguments aren't getting passed to the VM
+    * PLANNER-0399 - Warnings in javadoc's doclint check
+    * PLANNER-0391 - Benchmark report: Solver configurations with uninitialized single benchmark results are ranked...
+    * PLANNER-0390 - Benchmark report: Icon for solver configurations that have uninitialized/infeasible single...
+    * PLANNER-0389 - maven-javadoc-plugin fails the build on JDK8 because of <p/> usage in javadocs
+
+* Issues updated in jboss jira: 13
+    * PLANNER-0463 - Subsingle statistics graph single benchmark score distribution doesn't show all results
+    * PLANNER-0427 - Single statistics fail when parallelBenchmarkCount is bigger than the number of solvers
+    * PLANNER-0417 - Docs html style (of pressgang-tools) doesn't look good on Firefox 38.0.1
+    * PLANNER-0411 - Is benchmark aggregator compatible with benchmark reports from previous releases?
+    * PLANNER-0401 - Statistical benchmarking: run each single benchmark n times and average the results
+    * PLANNER-0391 - Benchmark report: Solver configurations with uninitialized single benchmark results are ranked...
+    * PLANNER-0389 - maven-javadoc-plugin fails the build on JDK8 because of <p/> usage in javadocs
+    * PLANNER-0333 - Benchmark report's best score summary should clearly report if a score is not completely...
+    * PLANNER-0302 - Google Maps js or Leaflet.js renderer example for Vehicle Routing webexample
+    * PLANNER-0284 - Ability to report multiple scores from a single rule 
+    * PLANNER-0259 - Long benchmarker with many statistics go out of memory because statistic pointList survive...
+    * PLANNER-0169 - Benchmark report should not mix localized numbers (graphs etc) with non-localized numbers (Score...
+    * PLANNER-0048 - Planner Benchmarker: warmUp should also use parallelBenchmarkCount to run them on multiple threads
+
+* Issues resolved in jboss jira: 14
+    * PLANNER-0427 - Single statistics fail when parallelBenchmarkCount is bigger than the number of solvers
+    * PLANNER-0420 - SwingUI's score in examples doesn't get updated after manual move (regression)
+    * PLANNER-0409 - Random failing unit test NQueensBenchmarkTest vs BrokenNQueensBenchmarkTest
+    * PLANNER-0401 - Statistical benchmarking: run each single benchmark n times and average the results
+    * PLANNER-0391 - Benchmark report: Solver configurations with uninitialized single benchmark results are ranked...
+    * PLANNER-0390 - Benchmark report: Icon for solver configurations that have uninitialized/infeasible single...
+    * PLANNER-0389 - maven-javadoc-plugin fails the build on JDK8 because of <p/> usage in javadocs
+    * PLANNER-0360 - BigIntegerValueRange
+    * PLANNER-0341 - Benchmarker: The logarithmic scaling throws exception if the problemScale is ambiguous and...
+    * PLANNER-0334 - Benchmark report should have a legend to explain what the orange and red "!"'s mean
+    * PLANNER-0333 - Benchmark report's best score summary should clearly report if a score is not completely...
+    * PLANNER-0284 - Ability to report multiple scores from a single rule 
+    * PLANNER-0259 - Long benchmarker with many statistics go out of memory because statistic pointList survive...
+    * PLANNER-0048 - Planner Benchmarker: warmUp should also use parallelBenchmarkCount to run them on multiple threads
