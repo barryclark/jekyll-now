@@ -36,10 +36,10 @@ Both 32 and 64 bit versions of Manjaro are available in the following flavours (
 
 The NET edition of Manjaro provides a base installation without a pre-installed display manager, desktop environment, or any desktop software applications. It allows you to build your own version of Manjaro from the ground up.
 
-  - **[manjaro-net-0.8.13.1-x86_64.iso](http://sourceforge.net/projects/manjarolinux/files/release/0.8.13.1/netinstall/manjaro-net-0.8.13.1-x86_64.iso)**
-  `SHA1SUM: f960b9149c357c502b140711c0daaae6e7440033`
-  - **[manjaro-net-0.8.13.1-i686.iso](http://sourceforge.net/projects/manjarolinux/files/release/0.8.13.1/netinstall/manjaro-net-0.8.13.1-i686.iso)**
-  `SHA1SUM: 47770f8c769023894e2003258af0854b96b35150`
+  - **[manjaro-net-15.09-x86_64.iso](http://sourceforge.net/projects/manjarolinux/files/release/15.09/netinstall/manjaro-net-15.09-x86_64.iso)**
+  `SHA1SUM: c54470171d9a935f3cd0dfca4c4bfe43af9ea434`
+  - **[manjaro-net-15.09-i686.iso](http://sourceforge.net/projects/manjarolinux/files/release/15.09/netinstall/manjaro-net-15.09-i686.iso)**
+  `SHA1SUM: f4901a70077e3901d731b3bc69f744dba7195850`
 
 
 ### Other flavours
