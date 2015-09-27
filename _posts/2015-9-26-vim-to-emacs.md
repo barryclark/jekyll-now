@@ -15,7 +15,7 @@ I went through vimtutor, opened up some homework, and starting editing some code
 
 What finally made me switch?
 
-My friend Danny has been using Emacs for a while, and had been showing me cool Emacs plugins and features for quite some time. I would always counter with an existing Vim plugin, as both have amazing plugin ecosystems (Thanks Tim Pope).  I liked the features of Emacs I was being shown, and a lot of the plugins were awesome (I'm looking at you, Magit), but I couldn't fathom switching over to Emacs. The keybindings for editing just made no sense to me and I felt my time investment into Vim would be a sunk cost. One day I was bored so I looked up how to install Evil-mode in Emacs.  Evil-mode implements the majority of Vim inside Emacs, and having used many Vim emulators in different programs, I had an idea of what to expect.
+My friend [Danny](http://www.barbarito.me) has been using Emacs for a while, and had been showing me cool Emacs plugins and features for quite some time. I would always counter with an existing Vim plugin, as both have amazing plugin ecosystems (Thanks Tim Pope).  I liked the features of Emacs I was being shown, and a lot of the plugins were awesome (I'm looking at you, Magit), but I couldn't fathom switching over to Emacs. The keybindings for editing just made no sense to me and I felt my time investment into Vim would be a sunk cost. One day I was bored so I looked up how to install Evil-mode in Emacs.  Evil-mode implements the majority of Vim inside Emacs, and having used many Vim emulators in different programs, I had an idea of what to expect.
 
 Apparently, I was completely wrong.
 
