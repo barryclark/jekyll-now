@@ -2,6 +2,7 @@
 layout: post
 title: Discrimination
 tags: [politics, culture, old_blog]
+excerpt: From Wikionary&#58; discrimination (plural discriminations) 1. a distinction; discernment, the act of discriminating, discerning, distinguishing, noting or perceiving differences between things.
 ---
 
 From [Wikionary](http://en.wiktionary.org/wiki/discrimination):
