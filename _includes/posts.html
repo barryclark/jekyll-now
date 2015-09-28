@@ -14,7 +14,11 @@
      <div class="date">{{ post.date | date: "%B %e, %Y" }}</div>
 
       <div class="entry" style="margin-top: 15px;">
-        {{ post.excerpt | strip_html }}
+        {% if post.facebook_post %}
+          {% include facebook_post.html facebook_post=post.facebook_post %}
+        {% else %}
+          {{ post.excerpt | strip_html }}
+        {% endif %}
       </div>
       
     </article>
