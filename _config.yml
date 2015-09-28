@@ -19,17 +19,17 @@ avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/je
 footer-links:
   dribbble:
   email: ybahman@outlook.com
-  facebook: https://www.facebook.com/ybahman
+  facebook: ybahman
   flickr:
   github: ybahman
-  instagram: yasharbahman
+  instagram: 
   linkedin: 
   pinterest:
   rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
   twitter: yasharbahman
-  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
-  youtube: user/yashar22
-  googleplus: 111498466449467215978
+  stackoverflow: users/1251507/yasharbahman
+  youtube: 
+  googleplus:
 
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
