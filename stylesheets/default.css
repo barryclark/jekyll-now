@@ -1,0 +1,32 @@
+/* Highlighted borders for debugging */
+/** {
+  border-width: 0.1rem;
+  border-color: red;
+  border-style: dashed;
+}*/
+
+/* Main Styles */
+
+a {color: #268bd2;}
+a:visited {color: #6c71c4;}
+li {list-style-type: none;}
+
+.bg-beige {background-color: #fdf6e3;}
+.font-sans {font-family: 'Noto Sans'}
+.font-gray {color: #657b83;}
+.txt-ctr {text-align: center;}
+.sd-font {font-size: 3rem;}
+.undl {text-decoration: underline;}
+.round {border-radius: 10rem}
+.no-margin {margin: 0;}
+.no-padding {padding: 0;}
+
+.sm-width {
+  min-width: 1000px;
+  max-width: 25%;
+}
+
+
+.inline-b {display: inline-block}
+.bot {bottom: 0}
+.md-logo {height: 10rem; width: auto;}
