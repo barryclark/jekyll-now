@@ -3,10 +3,10 @@ layout: post
 title: Probability
 tags: [math]
 mathjax: true
-excerpt_separator: <span></span>
+excerpt: Say we have a hungry caterpillar that wants to eat a leaf off of a tree. There are ten trees it can choose from. So, as far as we know, the probability of it choosing a specific tree is
 ---
 
-<span>Say we have a hungry caterpillar that wants to eat a leaf off of a tree. There are ten trees it can choose from. So, as far as we know, the probability of it choosing a specific tree is </span>${1 \over 10}=10%=0.10$. Once it chooses a tree, and that tree has 100 branches, then the probability of choosing a specific branch is ${1 \over 100}=1%=0.01$. Finally, once it chooses a branch, and that branch has 25 leaves, then the probability of it choosing a specific leaf is ${1 \over 25}=4%=0.04$. So, before it has chosen a tree, the probability of it choosing a specific leaf is: $$0.10×0.01×0.04=0.00004=0.004%={1 \over 25000}$$ This makes sense because there are $10×100×25=25000$ leaves total to choose from.
+Say we have a hungry caterpillar that wants to eat a leaf off of a tree. There are ten trees it can choose from. So, as far as we know, the probability of it choosing a specific tree is ${1 \over 10}=10%=0.10$. Once it chooses a tree, and that tree has 100 branches, then the probability of choosing a specific branch is ${1 \over 100}=1%=0.01$. Finally, once it chooses a branch, and that branch has 25 leaves, then the probability of it choosing a specific leaf is ${1 \over 25}=4%=0.04$. So, before it has chosen a tree, the probability of it choosing a specific leaf is: $$0.10×0.01×0.04=0.00004=0.004%={1 \over 25000}$$ This makes sense because there are $10×100×25=25000$ leaves total to choose from.
 
 When you multiply probabilities together, you will end up with a smaller probability unless one probability is $1.00=100%$. For instance, let’s say all the probabilities are $0.90=90%$ and that there are ten probabilities. Then, the resulting probability is: <div class="abs_center">$$0.90×0.90×0.90×0.90×0.90×0.90×0.90×0.90×0.90×0.90=0.90^{10}≈0.3486784401≈34.86%$$</div>
 
