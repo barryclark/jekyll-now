@@ -10,22 +10,11 @@ title: Arte de rua de Hueman
 <meta name="twitter:image" content="http://4.bp.blogspot.com/-7x0Atdyairk/VVAC0BneH8I/AAAAAAAAGk4/O1snPE21IoM/s320/TheHundreds-Hueman-1.jpg">
 
 
-<div style="text-align: right;">
-<br></div>
-<div style="text-align: justify;">
 
-<a href="***" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;">
-<img border="0" height="320" src="http://4.bp.blogspot.com/-7x0Atdyairk/VVAC0BneH8I/AAAAAAAAGk4/O1snPE21IoM/s320/TheHundreds-Hueman-1.jpg" style="cursor: move;" width="248">
 
-</a>
-
-<span style="font-family: Courier New, Courier, monospace;">
-
-<strong>Hueman</strong> é uma artista determinada, tomar a decisão de ter uma carreira no mundo da arte não é uma das decisões mais fáceis, como muitas vezes não é a escolha mais segura e rentável, mas pode ser a mais gratificante. E Hueman tem tido sucesso e compartilha seu talento com o mundo.
-
+<img src="http://4.bp.blogspot.com/-7x0Atdyairk/VVAC0BneH8I/AAAAAAAAGk4/O1snPE21IoM/s320/TheHundreds-Hueman-1.jpg">
 <br>
- </span></div>
-
+<strong>Hueman</strong> é uma artista determinada, tomar a decisão de ter uma carreira no mundo da arte não é uma das decisões mais fáceis, como muitas vezes não é a escolha mais segura e rentável, mas pode ser a mais gratificante. E Hueman tem tido sucesso e compartilha seu talento com o mundo.
 
 <br>
 
