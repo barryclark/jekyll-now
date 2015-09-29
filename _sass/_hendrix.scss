@@ -127,7 +127,7 @@ table tr:last-child td:last-child {
 	border-width: 0px 0px 0px 0px;
 }
 
-table tr:first-child td {
+table tr th {
 	background: -o-linear-gradient(bottom, #cccccc 5%, #b2b2b2 100%);
 	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #cccccc), color-stop(1, #b2b2b2) );
 	background: -moz-linear-gradient( center top, #cccccc 5%, #b2b2b2 100% );
@@ -143,15 +143,7 @@ table tr:first-child td {
 	color: #000000;
 }
 
-table tr:first-child:hover td {
-	background: -o-linear-gradient(bottom, #cccccc 5%, #b2b2b2 100%);
-	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #cccccc), color-stop(1, #b2b2b2) );
-	background: -moz-linear-gradient( center top, #cccccc 5%, #b2b2b2 100% );
-	background: -o-linear-gradient(top,#cccccc,b2b2b2);
-	background-color:#cccccc;
-}
-
-table tr:first-child td:first-child {
+table tr th:first-child {
 	border-width: 0px 0px 1px 0px;
 }
 
