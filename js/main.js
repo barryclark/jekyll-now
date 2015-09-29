@@ -16,7 +16,12 @@
 
     for (i=0; i < blogEntries.length; i++) {
       node = blogEntries[i];
-      node.classList.add("blog");
+
+      if (window.location.pathname.length > 6) {
+        node.classList.remove("blog");
+      } else {
+        node.classList.add("blog");
+      }
     }
   }
 

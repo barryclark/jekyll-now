@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 2 Upcoming Projects
+permalink: /blog/2UpcomingProjects/
 ---
 Hey all, I've got 2 exciting projects planned for my portfolio! The first, a redesign of MyCourses, the primary online course management software used here at RIT. MyCourses, at least the RIT version is not fun to use. It's got a wealth of useless information, widgets and panels. I could write a 2,000 word paper on everything that's wrong with RIT's customized MyCourses. However, that would result in me bashing the site. I don't aim to vent, I aim to provide some solid constructive criticism that will hopefully make it to the people that manage the RIT MyCourses front end.
 
