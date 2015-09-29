@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Why I Use Jekyll
-categories: Jekyll Web&nbsp;Development WordPress Opinion
 ---
 
 Have you heard of Jekyll?  Officially, Jekyll is a simple, blog aware, static site generator. In Layman's terms it is a website generator. Jekyll takes raw files such as Markdown and HTML, runs those files through parsers and converters, and then generates a static HTML site. After my first official project developing with WordPress (which you can read about [here](http://dawitelias.github.io/work/globalthinking)), I decided not to use it again unless I had to.

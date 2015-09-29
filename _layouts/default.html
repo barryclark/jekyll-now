@@ -9,26 +9,26 @@
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link href='http://fonts.googleapis.com/css?family=Pontano+Sans|Merriweather:400,900,300,700|Merriweather+Sans:400,800,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Pontano+Sans' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800,600,700,300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Average' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
     <script src="/js/{{ site.baseurl }}/cssua.min.js"></script>
   </head>
 
   <body>
-
     <section class="top top-home">
       <div class="gradient">&nbsp;</div>
 
       {% assign current = page.url | downcase | split: '/' %}
       <nav class="navbar">
-        <a href="{{ site.baseurl }}/" {% if current[1] == '/'%}class='current'{% endif %}>home</a>
-        <a href="{{ site.baseurl }}/blog" {% if current[1] == 'blog'%}class='current'{% endif %}>blog</a>
-        <a href="{{ site.baseurl }}/work/globalthinking" {% if current[1] == 'work'%}class='current'{% endif %}>work</a>
+        <a href="{{ site.baseurl }}/" {% if current[1] == 'index.html'%}class='current'{% endif %}>Home</a>
+        <a href="{{ site.baseurl }}/blog" {% if current[1] == 'blog'%}class='current'{% endif %}>Blog</a>
+        <a href="{{ site.baseurl }}/work/globalthinking" {% if current[1] == 'work'%}class='current'{% endif %}>Work</a>
       </nav>
 
       {{ content }}
-
     </section>
 
     <div class="wrapper-footer">
@@ -37,7 +37,6 @@
           <div class="contact-container">
             <a href="mailto:dawitelias14@gmail.com">email</a>
             <a href="https://www.linkedin.com/in/dawitelias">linkedin</a>
-            <a href="https://www.facebook.com/dawit.elias">facebook</a>
             <a href="https://github.com/dawitelias">github</a>
             <a href="{{ site.baseurl }}/DawitElias_2015-2016_Resume.pdf">resume</a>
 
@@ -47,6 +46,7 @@
     </div>
 
   <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script>var posts=document.querySelectorAll(".post p");var i=0;while(i<posts.length){posts[i].classList.add("readable");i++;}</script>
   <script src="/js/{{ site.baseurl }}/main.js"></script>
   <script src="/js/{{ site.baseurl }}/elevator.min.js"></script>
   {% include analytics.html %}

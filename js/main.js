@@ -2,7 +2,7 @@
   var top_container = document.querySelector(".top");
   var nav_a = document.querySelectorAll(".navbar a");
   var node;
-  var i;
+  var i = 0;
   var blogEntries = document.querySelectorAll(".container.posts");
 
   if (window.location.pathname.indexOf("/blog/") === 0) {
@@ -11,7 +11,7 @@
 
     for (i=0; i < nav_a.length; i++) {
       node = nav_a[i];
-      node.style.color = "rgba(0,0,0,0.5)";
+      // node.style.color = "rgba(0,0,0,0.5)";
     }
 
     for (i=0; i < blogEntries.length; i++) {
@@ -26,7 +26,7 @@
 
     for (i=0; i < nav_a.length; i++) {
       node = nav_a[i];
-      node.style.color = "rgba(0,0,0,0.5)";
+      // node.style.color = "rgba(0,0,0,0.5)";
     }
 
   }
@@ -44,12 +44,13 @@
 
     for (i=0; i < nav_a.length; i++) {
       node = nav_a[i];
-      node.style.color = "rgba(0,0,0,0.5)";
+      // node.style.color = "rgba(0,0,0,0.5)";
     }
   }
 
   if (window.location.pathname == "/") {
     $('body').css('display', 'block');
+    // $('nav').css("background", 'rgba(255,255,255,0.1)');
   } else {
     $('body').css({
       'display': '-webkit-flex'

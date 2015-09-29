@@ -5,7 +5,7 @@ layout: default
   <div class="hero clearfix">
     <div class="container">
        <h1 class="site-name">{{ site.name }}</h1>
-       <h2 class="site-description">{{ site.description }}</h2>
+       <h2 class="site-description"><span>developer</span> <span>•</span> designer</h2>
        <p class="intro">Hi, Dawit here. I'm a designer and developer fascinated in the psychology of design and technology. I'm here to make a user experience that works for you! Feel free to check out some of my work or read my blog!</p>
        <a class="btn-work" href="{{ site.baseurl }}/work/globalthinking">work</a>
     </div>
@@ -16,10 +16,8 @@ layout: default
   <div class="container main">
     <h3><strong>featured:</strong> gt site refresh</h3>
       <div class="featured-work-inner">
-        <p>During the summer and fall semesters of 2014, I was employed as a co-op by Global Thinking, an awesome creative agency in Washington DC.</p>
-
-        <a href="{{ site.baseurl }}/work" class="read-more">Read More</a>
-        <p></p>
+        <p class="readable">During the summer and fall semesters of 2014, I was employed as a co-op by Global Thinking, an awesome creative agency in Washington DC.</p>
+        <p class="readable"><a href="{{ site.baseurl }}/work" class="read-more">Read More</a></p>
 
         <figure>
           <img src="/images/gtsite_new.jpg" alt="">
@@ -32,17 +30,13 @@ layout: default
 <div class="content-posts">
   <div class="container posts">
     {% for post in site.posts limit:1 %}
-    <h3 class="latest-post-title">
-      <a href="{{ post.url }}">{{ post.title }}</a></h3>
+    <h3 class="latest-post-title"><strong>{{ post.title }}</strong></h3>
     <p class="latest-post-date">{{ post.date | date: "%d %B %Y" }} <span>(Latest Post)</span></p>
 
       <article class="post">
+        {{ post.excerpt | truncatewords: 50 }}
 
-        <div class="entry">
-          {{ post.excerpt | truncatewords: 50 }}
-        </div>
-
-        <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+        <p class="readable"><a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a></p>
       </article>
     {% endfor %}
   </div>

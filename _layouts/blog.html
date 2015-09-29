@@ -7,13 +7,12 @@ layout: default
     <article class="container posts">
       <div class="rand-border"></div>
       <!-- {{ content }} -->
-      <h3 class="post-title">
-        <a href="{{ post.url }}">{{ post.title }}</a></h3>
+      <h3 class="post-title"><strong>{{ post.title }}</strong></h3>
       <p class="post-date">{{ post.date | date: "%d %B %Y" }}</p>
 
       <article class="post">
         {{ post.excerpt | truncatewords: 50 }}
-        <p><a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a></p>
+        <p class="readable"><a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a></p>
       </article>
     </article>
   {% endfor %}
@@ -32,8 +31,6 @@ layout: default
   var randomColor;
 
   for (var i=0; i < randBorder.length; i++) {
-      console.log(randBorder[i]);
-
       // loop through colors and set random color to random div
       for (var j=0; j < colorPalette.length; j++) {
         randomColor = colorPalette[Math.floor(Math.random() * colorPalette.length)];
