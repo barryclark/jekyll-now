@@ -21,3 +21,9 @@ The second project idea I had is quite different. The idea of revamping the inte
 It's actually very hard to figure out without an instruction manual and especially hard for someone like me who knows absolutely nothing about e-cigs/vapes.
 
 This kind of project is a bit of a venture away from my comfort zone. I don't know how to design things that aren't apps or websites but why should that stop me? I'll be having a lot of fun with this one.
+
+<div class="to-top-container elevator">
+  <div class="to-top-btn">
+    <img src="/images/cd-top-arrow.svg" alt="" />
+  </div>
+</div>

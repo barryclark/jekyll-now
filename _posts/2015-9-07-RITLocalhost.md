@@ -19,3 +19,9 @@ While brainstorming, we thought how could we possibly incorporate some of that i
 If you couldn't tell, we had great fun brainstorming and trying to incorporate this into our competition ideas.
 
 I'll keep posting about our ideas as the semester progresses. In the meantime, please feel free to contact me with more ideas and suggestions!
+
+<div class="to-top-container elevator">
+  <div class="to-top-btn">
+    <img src="/images/cd-top-arrow.svg" alt="" />
+  </div>
+</div>
