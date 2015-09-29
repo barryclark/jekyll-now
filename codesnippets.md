@@ -108,8 +108,12 @@ ctrl-f forward a page
 ctrl-g back a page
 
 ##### replacing
-Add /g to the end of the :s/a/b statement to replace multiple occurances of pattern in line
+Add /g to the end of the :s/a/b statement to replace multiple occurences of pattern in line
 Without /g, it will only replace the first occurance
+
+Replace only the last occurence of a string in a line
+%s/.*\zsmcl/mclLECA/ is a greedy replacement that replaces only the last occurence of a string
+source: http://vi.stackexchange.com/questions/2103/how-to-change-last-occurrence-of-the-string-in-the-line
 
 ##### replace within a range of lines
 
