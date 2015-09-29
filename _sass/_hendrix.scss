@@ -113,18 +113,6 @@ table td {
 	color: #000000;
 }
 
-table tr:last-child td {
-	border-width: 0px 1px 0px 0px;
-}
-
-table tr td:last-child {
-	border-width: 0px 0px 1px 0px;
-}
-
-table tr:last-child td:last-child {
-	border-width: 0px 0px 0px 0px;
-}
-
 table tr th {
 	background: -o-linear-gradient(bottom, #cccccc 5%, #b2b2b2 100%);
 	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #cccccc), color-stop(1, #b2b2b2) );
@@ -139,12 +127,4 @@ table tr th {
 	font-family: Arial;
 	font-weight: bold;
 	color: #000000;
-}
-
-table tr th:first-child {
-	border-width: 0px 0px 1px 0px;
-}
-
-table tr:first-child td:last-child {
-	border-width: 0px 0px 1px 1px;
 }
