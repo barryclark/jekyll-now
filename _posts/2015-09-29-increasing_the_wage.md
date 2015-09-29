@@ -14,3 +14,5 @@ cost of bread | labor / hour | profit / hour | labor / bread | profit / bread | 
  $1.00  |  $1.00  |  $0.00  | 1.00 | 0.00 |  $5.00  | 5.00 |  $0.50  | no increase | 
  $1.50  |  $1.00  |  $0.50  | 0.67 | 0.33 |  $5.00  | 3.33 |  | same $ increase |  $0.50 
  $2.00  |  $1.00  |  $1.00  | 0.50 | 0.50 |  $5.00  | 2.50 |  | same % increase | 100%
+
+[Here's the excel I used to make the table.](/xlxs/min.xlxs)
