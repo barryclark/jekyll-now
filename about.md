@@ -9,4 +9,4 @@ permalink: /about/
 [meu e-mail](mailto:dgrej@wavesandbox.com)
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Praia_do_Cassange.jpg">
-<br><span style="font-size: XX-small">Gosto de praia! De preferência vazia!</span>
+<br><span style="font-size: X-small">Gosto de praia! De preferência vazia!</span>
