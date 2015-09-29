@@ -58,6 +58,9 @@ markdown: redcarpet
 highlighter: pygments
 permalink: /:title/
 
+redcarpet:
+ extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
+
 # The release of Jekyll Now that you're using
 version: v1.1.0
 
