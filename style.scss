@@ -223,6 +223,14 @@ img {
   }
 }
 
+ol.readable {
+  font-size: 18px;
+
+  @include mobile {
+    font-size: 16px;
+  }
+}
+
 .top.top-home {
   position: relative;
   -webkit-box-flex: 1;-webkit-flex: 1 0 auto;-ms-flex: 1 0 auto;flex: 1 0 auto;
