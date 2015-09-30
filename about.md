@@ -11,4 +11,4 @@ permalink: /about/
 <img src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Praia_do_Cassange.jpg">
 <br><span style="font-size: small">Gosto de praia! De preferência vazia!</span>
 <br>
-<img src="images/Sagan.png" />
+[<img src="{{ site.baseurl }}/images/Sagan.png" >]
