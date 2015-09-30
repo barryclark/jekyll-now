@@ -260,7 +260,7 @@ ex. ENS0000001ENS0000002 -> ENS0000001 ENS0000002
 
     In browser, go to http://<yourserverIP>:8787
 
-##### Better R color palette (colorblind sensitive)
+##### Better R color palette 
 
         cbPalette <- c("#999999", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
         # grey, orange, blue, forest green, banana yellow, navy blue, red, purplypink
