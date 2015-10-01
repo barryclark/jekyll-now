@@ -10,10 +10,12 @@ Build your own incubator, a constant environment for growing microbes. A crash c
 
 ## Schedule
 
-* Biomaterials
-* Coding Arduino
-* Digital Electronics
-* Incubator Design
+* [Biomaterials](/bha2/class/3/pdf/1 Materials of Life.pdf)
+* Coding Arduino - skipped to next week
+* Digital Electronics - skipped to next week
+* [Creative Bio Equipment](/bha2/class/3/pdf/Creative Equipment.pdf)
+* [Incubator Design](/bha2/class/3/pdf/4 Incubator design.pdf)
+* [BioStrike DDSS](/bha2/class/3/pdf/BioStrike - DDSS.pdf)
 * Practicals
   * Isolating microbes
 
