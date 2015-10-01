@@ -26,5 +26,7 @@ More specifically, thanks to all [contributors of OptaPlanner](http://www.optapl
 Thank you [Red Hat](http://www.redhat.com/en) for being such an awesome company.
 Let's see what next year has in store for me!
 
-TODO: P.S.: Here is [a lengthy report]({{site.url}}/docs/2015redhat-did.txt),
+P.S.: Read my [blog post on the impact of random seeds on OptaPlanner](http://www.optaplanner.org/blog/2015/09/30/HowLuckyAreYourRandomSeeds.html)!
+
+P.P.S.: Here is [a lengthy report]({{site.url}}/docs/2015redhat-did.txt),
 of what I actually [did](https://github.com/psss/did) during my internship!
