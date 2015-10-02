@@ -21,4 +21,4 @@ and
 
 ----
 
-##[Download here](https://sourceforge.net/projects/manjarolinux/files/community/)
+[Download here](https://sourceforge.net/projects/manjarolinux/files/community/)
