@@ -29,3 +29,5 @@ $1.00 | $1.50 | -$0.50 | 1.50 | -0.50 |  $5.00  | 5.00 |  $0.75  | no increase |
 $1.75 | $1.50 | $0.25  | 0.86 | 0.14 |  $5.00  | 2.86 |  | same $ increase | 
 $2.50 | $1.50 | $1.00  | 0.60 | 0.40 |  $5.00  | 2.00 |  | profit same $ | 
 $2.00 | $1.50 | $0.50  | 0.75 | 0.25 |  $5.00  | 2.50 |  | profit same % | 
+
+[Again, here's the excel I used to make the tables.](/xlxs/min2.xlsx)
