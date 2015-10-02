@@ -16,7 +16,7 @@ E-Mail: flo@aws-blog.io, Internet-Address: aws-blog.io
 
 ## Person responsible for content in accordance with 55 Abs. 2 RStV
 
-Florian Schäffler, Hauptstr. 5, 89355 Gundremmingen, Germany
+Florian Schaeffler, Hauptstr. 5, 89355 Gundremmingen, Germany
 
 ## Disclaimer
 
