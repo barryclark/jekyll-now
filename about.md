@@ -4,12 +4,8 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Hello, my name is Florian Schäffler and I'm a Software Development (and all its occurrences) addict. Furthermore, my laptop has the following sticker, which sums it up quite nicely.
 
-### More Information
+I work because I love this shit
 
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+{: .quote}

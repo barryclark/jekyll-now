@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: http://aws-blog.io/sitemap.xml

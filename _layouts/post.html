@@ -9,9 +9,36 @@ layout: default
     {{ content }}
   </div>
 
-  <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
+  <br />
+
+  <div class="post-footer">
+    <nav class="post-cursor post-next">
+    {% if page.next.url %} 
+      <a href="{{page.next.url}}">{{page.next.title}} &gt;&gt;</a>
+    {% else %}
+      Stay Tuned for new Posts &gt;&gt;
+    {% endif %}
+    </nav>
+
+    <nav class="post-cursor post-previous">
+    {% if page.previous.url %}
+      <a href="{{page.previous.url}}">&lt;&lt; {{page.previous.title}}</a>
+    {% else %}
+      &#32;
+    {% endif %}
+    </nav>
   </div>
+
+  <br />
+  <br />
+
+  <div class="date">
+    Written on {{ page.date | date: "%Y-%m-%d" }}
+    {% if page.edited %} (Edited: {{ page.edited | date: "%Y-%m-%d %H:%M" }}) {% endif %}
+  </div>
+
+  <hr />
+  <br />
 
   {% include disqus.html %}
 </article>

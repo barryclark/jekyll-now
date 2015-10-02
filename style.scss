@@ -15,10 +15,15 @@
 
 html {
   font-size: 100%;
+  background: url(images/background.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 body {
-	background: $white;
+   /* background: $white; */
   font: 18px/1.4 $helvetica;
   color: $darkGray;
 }
@@ -53,6 +58,7 @@ h1 {
 
 h2 {
   font-size: 24px;
+  margin-top: 50px;
 }
 
 h3 {
@@ -110,6 +116,38 @@ img {
   max-width: 100%;
 }
 
+img.centered {
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    border:2px solid $gray;
+    background-color: $lightGray;
+    width: 70%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+th{
+    background-color: $darkGray;
+    text-align: left;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: $white;
+    font-weight: bold;
+}
+
+td{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 // Fixes images in popup boxes from Google Translate
 .gmnoprint img {
   max-width: none;
@@ -118,6 +156,33 @@ img {
 .date {
   font-style: italic;
   color: $gray;
+  text-align: center;
+}
+
+.post-footer {
+  width: 100%;
+  margin: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: inline-block;
+}
+
+.post-cursor {
+  width: 50%;
+  margin: 0;
+
+  a {
+    margin: 0;
+    color: $blue;
+  } 
+}
+
+.post-previous {
+  text-align: left;
+}
+
+.post-next {
+  text-align: right;
 }
 
 // Specify the color of the selection
@@ -150,8 +215,20 @@ img {
 // .masthead
 //
 
+.quote:before {
+    content: '"'
+}
+.quote:after {
+    content: '"'
+}
+.quote {
+    text-align: center;
+    font-weight: bold;
+}
+
 .wrapper-masthead {
   margin-bottom: 50px;
+  background: $white;
 }
 
 .masthead {
@@ -165,18 +242,12 @@ img {
 
 .site-avatar {
   float: left;
-  width: 70px;
-  height: 70px;
   margin-right: 15px;
 
   @include mobile {
     float: none;
     display: block;
     margin: 0 auto;
-  }
-
-  img {
-    border-radius: 5px;
   }
 }
 
@@ -241,6 +312,11 @@ nav {
 // .main
 //
 
+#main {
+  background-color:rgba(255,255,255,1);
+  border-radius: 25px;
+}
+
 .posts > .post {
   padding-bottom: 2em;
   border-bottom: 1px solid $lightGray;
@@ -269,6 +345,11 @@ nav {
     text-transform: uppercase;
     font-size: 15px;
   }
+
+  img {
+    padding: 3px;
+    border: 1px solid $gray;
+  }
 }
 
 .wrapper-footer {
@@ -283,7 +364,23 @@ footer {
   text-align: center;
 }
 
+.title-container {
+  display: table;
+  width: 100%;
+}
+
+.title-part-left {
+  display: table-cell;
+}
+
+.title-part-right {
+  display: table-cell;
+  text-align: right;
+  width: 200px;
+}
+
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
-@import "svg-icons";
+@import "social-icons";
+@import "aws-icons"

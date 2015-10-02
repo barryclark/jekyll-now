@@ -1,0 +1,239 @@
+.aws-sprite-span {
+    display: table;
+    margin: 0 auto;
+    border-radius: 20px;
+    background: #ffffff;
+    background: -moz-linear-gradient(left,  #ffffff 20%, $lightGray 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(20%,#ffffff), color-stop(100%,$lightGray));
+    background: -webkit-linear-gradient(left,  #ffffff 20%,$lightGray 100%);
+    background: -o-linear-gradient(left,  #ffffff 20%,$lightGray 100%);
+    background: -ms-linear-gradient(left,  #ffffff 20%,$lightGray 100%);
+    background: linear-gradient(to right,  #ffffff 20%,$lightGray 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='$lightGray',GradientType=1 );
+    text-align: right;
+    width: 100%;
+}
+
+.aws-sprite {
+    display: table-cell;
+    vertical-align: middle;
+    background-image: url(images/aws-icons/40x40/spritesheet.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.aws-sprite-app-stream {
+    width: 40px;
+    height: 40px;
+    background-position: 0 0;
+}
+
+.aws-sprite-cli {
+    width: 40px;
+    height: 40px;
+    background-position: -40px 0;
+}
+
+.aws-sprite-cloud-formation {
+    width: 40px;
+    height: 40px;
+    background-position: -80px 0;
+}
+
+.aws-sprite-cloud-front {
+    width: 40px;
+    height: 40px;
+    background-position: -120px 0;
+}
+
+.aws-sprite-cloud-search {
+    width: 40px;
+    height: 40px;
+    background-position: -160px 0;
+}
+
+.aws-sprite-cloud-trail {
+    width: 40px;
+    height: 40px;
+    background-position: -200px 0;
+}
+
+.aws-sprite-cloud-watch {
+    width: 40px;
+    height: 40px;
+    background-position: 0 -40px;
+}
+
+.aws-sprite-code-deploy {
+    width: 40px;
+    height: 40px;
+    background-position: -40px -40px;
+}
+
+.aws-sprite-cognito {
+    width: 40px;
+    height: 40px;
+    background-position: -80px -40px;
+}
+
+.aws-sprite-config {
+    width: 40px;
+    height: 40px;
+    background-position: -120px -40px;
+}
+
+.aws-sprite-direct-connect {
+    width: 40px;
+    height: 40px;
+    background-position: -160px -40px;
+}
+
+.aws-sprite-directory-service {
+    width: 40px;
+    height: 40px;
+    background-position: -200px -40px;
+}
+
+.aws-sprite-dynmo-db {
+    width: 40px;
+    height: 40px;
+    background-position: 0 -80px;
+}
+
+.aws-sprite-ec2 {
+    width: 40px;
+    height: 40px;
+    background-position: -40px -80px;
+}
+
+.aws-sprite-elastic-beanstalk {
+    width: 40px;
+    height: 40px;
+    background-position: -80px -80px;
+}
+
+.aws-sprite-elastic-cache {
+    width: 40px;
+    height: 40px;
+    background-position: -120px -80px;
+}
+
+.aws-sprite-elastic-transcoder {
+    width: 40px;
+    height: 40px;
+    background-position: -160px -80px;
+}
+
+.aws-sprite-glacier {
+    width: 40px;
+    height: 40px;
+    background-position: -200px -80px;
+}
+
+.aws-sprite-iam {
+    width: 40px;
+    height: 40px;
+    background-position: 0 -120px;
+}
+
+.aws-sprite-kinesis {
+    width: 40px;
+    height: 40px;
+    background-position: -40px -120px;
+}
+
+.aws-sprite-lambda {
+    width: 40px;
+    height: 40px;
+    background-position: -80px -120px;
+}
+
+.aws-sprite-mechanical-turk {
+    width: 40px;
+    height: 40px;
+    background-position: -120px -120px;
+}
+
+.aws-sprite-mobile-analytics {
+    width: 40px;
+    height: 40px;
+    background-position: -160px -120px;
+}
+
+.aws-sprite-ops-works {
+    width: 40px;
+    height: 40px;
+    background-position: -200px -120px;
+}
+
+.aws-sprite-rds {
+    width: 40px;
+    height: 40px;
+    background-position: 0 -160px;
+}
+
+.aws-sprite-redshift {
+    width: 40px;
+    height: 40px;
+    background-position: -40px -160px;
+}
+
+.aws-sprite-route53 {
+    width: 40px;
+    height: 40px;
+    background-position: -80px -160px;
+}
+
+.aws-sprite-s3 {
+    width: 40px;
+    height: 40px;
+    background-position: -120px -160px;
+}
+
+.aws-sprite-ses {
+    width: 40px;
+    height: 40px;
+    background-position: -160px -160px;
+}
+
+.aws-sprite-sns {
+    width: 40px;
+    height: 40px;
+    background-position: -200px -160px;
+}
+
+.aws-sprite-sqs {
+    width: 40px;
+    height: 40px;
+    background-position: 0 -200px;
+}
+
+.aws-sprite-storage-gateway {
+    width: 40px;
+    height: 40px;
+    background-position: -40px -200px;
+}
+
+.aws-sprite-swf {
+    width: 40px;
+    height: 40px;
+    background-position: -80px -200px;
+}
+
+.aws-sprite-trusted-advisor {
+    width: 40px;
+    height: 40px;
+    background-position: -120px -200px;
+}
+
+.aws-sprite-vpc {
+    width: 40px;
+    height: 40px;
+    background-position: -160px -200px;
+}
+
+.aws-sprite-work-spaces {
+    width: 40px;
+    height: 40px;
+    background-position: -200px -200px;
+}

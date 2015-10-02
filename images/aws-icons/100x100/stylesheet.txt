@@ -1,0 +1,221 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-app-stream {
+    width: 100px;
+    height: 100px;
+    background-position: 0 0;
+}
+
+.sprite-cli {
+    width: 100px;
+    height: 100px;
+    background-position: -100px 0;
+}
+
+.sprite-cloud-formation {
+    width: 100px;
+    height: 100px;
+    background-position: -200px 0;
+}
+
+.sprite-cloud-front {
+    width: 100px;
+    height: 100px;
+    background-position: -300px 0;
+}
+
+.sprite-cloud-search {
+    width: 100px;
+    height: 100px;
+    background-position: -400px 0;
+}
+
+.sprite-cloud-trail {
+    width: 100px;
+    height: 100px;
+    background-position: -500px 0;
+}
+
+.sprite-cloud-watch {
+    width: 100px;
+    height: 100px;
+    background-position: 0 -100px;
+}
+
+.sprite-code-deploy {
+    width: 100px;
+    height: 100px;
+    background-position: -100px -100px;
+}
+
+.sprite-cognito {
+    width: 100px;
+    height: 100px;
+    background-position: -200px -100px;
+}
+
+.sprite-config {
+    width: 100px;
+    height: 100px;
+    background-position: -300px -100px;
+}
+
+.sprite-direct-connect {
+    width: 100px;
+    height: 100px;
+    background-position: -400px -100px;
+}
+
+.sprite-directory-service {
+    width: 100px;
+    height: 100px;
+    background-position: -500px -100px;
+}
+
+.sprite-dynmo-db {
+    width: 100px;
+    height: 100px;
+    background-position: 0 -200px;
+}
+
+.sprite-ec2 {
+    width: 100px;
+    height: 100px;
+    background-position: -100px -200px;
+}
+
+.sprite-elastic-beanstalk {
+    width: 100px;
+    height: 100px;
+    background-position: -200px -200px;
+}
+
+.sprite-elastic-cache {
+    width: 100px;
+    height: 100px;
+    background-position: -300px -200px;
+}
+
+.sprite-elastic-transcoder {
+    width: 100px;
+    height: 100px;
+    background-position: -400px -200px;
+}
+
+.sprite-glacier {
+    width: 100px;
+    height: 100px;
+    background-position: -500px -200px;
+}
+
+.sprite-iam {
+    width: 100px;
+    height: 100px;
+    background-position: 0 -300px;
+}
+
+.sprite-kinesis {
+    width: 100px;
+    height: 100px;
+    background-position: -100px -300px;
+}
+
+.sprite-lambda {
+    width: 100px;
+    height: 100px;
+    background-position: -200px -300px;
+}
+
+.sprite-mechanical-turk {
+    width: 100px;
+    height: 100px;
+    background-position: -300px -300px;
+}
+
+.sprite-mobile-analytics {
+    width: 100px;
+    height: 100px;
+    background-position: -400px -300px;
+}
+
+.sprite-ops-works {
+    width: 100px;
+    height: 100px;
+    background-position: -500px -300px;
+}
+
+.sprite-rds {
+    width: 100px;
+    height: 100px;
+    background-position: 0 -400px;
+}
+
+.sprite-redshift {
+    width: 100px;
+    height: 100px;
+    background-position: -100px -400px;
+}
+
+.sprite-route53 {
+    width: 100px;
+    height: 100px;
+    background-position: -200px -400px;
+}
+
+.sprite-s3 {
+    width: 100px;
+    height: 100px;
+    background-position: -300px -400px;
+}
+
+.sprite-ses {
+    width: 100px;
+    height: 100px;
+    background-position: -400px -400px;
+}
+
+.sprite-sns {
+    width: 100px;
+    height: 100px;
+    background-position: -500px -400px;
+}
+
+.sprite-sqs {
+    width: 100px;
+    height: 100px;
+    background-position: 0 -500px;
+}
+
+.sprite-storage-gateway {
+    width: 100px;
+    height: 100px;
+    background-position: -100px -500px;
+}
+
+.sprite-swf {
+    width: 100px;
+    height: 100px;
+    background-position: -200px -500px;
+}
+
+.sprite-trusted-advisor {
+    width: 100px;
+    height: 100px;
+    background-position: -300px -500px;
+}
+
+.sprite-vpc {
+    width: 100px;
+    height: 100px;
+    background-position: -400px -500px;
+}
+
+.sprite-work-spaces {
+    width: 100px;
+    height: 100px;
+    background-position: -500px -500px;
+}

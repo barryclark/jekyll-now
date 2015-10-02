@@ -6,13 +6,18 @@ layout: default
   {% for post in site.posts %}
     <article class="post">
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+      <div class="title-container">
+        <div class="title-part-left"><h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1></div>
+        <div class="title-part-right">{% include aws-icons.html tags=post.tags %}</div>
+      </div>
+
+      {% include read_time.html content=post.content %}
 
       <div class="entry">
         {{ post.excerpt }}
       </div>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More on '{{ post.title }}'</a>
     </article>
   {% endfor %}
 </div>
