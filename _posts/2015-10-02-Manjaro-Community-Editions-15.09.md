@@ -3,7 +3,7 @@ layout: post
 title: Manjaro Community Editions 15.09
 ---
 
-Following the official release of **Manjaro 15.09 Bellatrix** we are proud to present three more updated Community Editions:
+Following the official release of **Manjaro 15.09 Bellatrix** we are proud to present three more **updated Community Editions**:
 
 ##Manjaro-i3
 <img src="https://manjaro.github.io/images/manjaro-i3-15.09.jpg">
