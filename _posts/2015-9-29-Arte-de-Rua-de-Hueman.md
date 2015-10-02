@@ -44,3 +44,6 @@ title: Arte de rua de Hueman
 <iframe width="560" height="315" src="https://www.youtube.com/embed/qKNKh8mNlQc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe>
 
 <br>
+
+<blockquote class="twitter-tweet" lang="pt"><p lang="pt" dir="ltr">Vou fazer uma camiseta: &quot; quem me deu deu! quem não deu não dá mais!&quot; Cabô a putaria! 💘 cupido manda lembraças</p>&mdash; Dino (@dgrej_) <a href="https://twitter.com/dgrej_/status/649312452031717376">30 setembro 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
