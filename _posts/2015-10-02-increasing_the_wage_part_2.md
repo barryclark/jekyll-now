@@ -4,7 +4,7 @@ title: Increasing the Wage, part 2
 tags: [politics, math]
 ---
 
-An updated table from the [previous post](/increasing_the_wage_part_2/) plus two more scenerios.
+An updated table from the [previous post](/increasing_the_wage/) plus two more scenerios.
 
 bread / hour | labor / hour | profit / hour | bread earned / hour | bread earned / profit | unaffected / hour | unaffected bread earned / hour |  |  | 
 --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |  
