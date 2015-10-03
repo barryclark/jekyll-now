@@ -39,28 +39,34 @@ ul.left_nav li {
 }
 
 div#head_main { 
+    margin: 0 auto;
     background: #4e3338;  
     color: #f4e1d5;
     height: 400px;  
 }
-div#contents_main {
-}
+div#contents_main { }
 div#foot_main { 
     background: #d3c9ae;  
     color: #f4e1d5;
     height: 400px;  
 }
+div#foot_main div.footer_list {
+    xbackground: #445566;
+    color: #FFF;
+    font-size : 20px;
+    margin:10;
+    float: left; 
+    text-align : left ;
+    width : 25%;
+}
 div#foot_main2 { 
     background: #bcac83;  
     color: #f4e1d5;
     height: 60px;  
-    margin:0;
 }
-
 div.d_main {
+    margin: 0 auto;
     width : 800px;
-    margin-left: 20% ;
-    margin-right: 20% ;
 }
 div.title { 
     height : 20% ;
@@ -107,14 +113,9 @@ div.contentsB {
     background: #779966;  
     float: left; 
 }
-div.contentsZ {
-    clear:both;
-}
-
 
  -->
 </style>
-
 <div id="head_main">
  <div class="d_main">
   <div class="title">
@@ -150,35 +151,45 @@ div.contentsZ {
  </div>
 </div>
 
-
-    <div id="main" role="main" class="container">
-      {{ content }}
-    </div>
-
-<div id="contents_main">
-<div class="d_main">
-contents...<br><br>
-
-
-
-
-<br><br><br><br>
-
-
+<div id="main" role="main" class="container">
+  {{ content }}
 </div>
-</div>
-
-
-
 
 <div id="foot_main">
-footer...
+ <div class="footer_list">
+  <b>pc</b>
+  <ul>
+	 <li>ideone
+	 <li>repl.it
+	 <li>ruby
+	 <li>
+  </ul>
+ </div>
+ <div class="footer_list">
+	<b>illust</b>
+	<ul>
+	 <li>pixiv
+	 <li>tinami
+	 <li>
+	</ul>
+ </div>
+	<div class="footer_list">
+	<b>sns</b>
+	<ul>
+	 <li>twitter
+	 <li>facebook
+	 <li>line
+	 <li>google+
+	</ul>
+ </div>
 </div>
+
+</div>
+
 <div id="foot_main2">
-<center> ---- </center>
-
+<br><br>
+<center> -Copyright (C) 2008 copyrights.ir-norn All Rights Reserved.- </center>
 </div>
-
 
 
 </body></html>
