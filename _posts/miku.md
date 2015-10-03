@@ -1,10 +1,6 @@
 ---
 layout: post
 title: "tube"
-author:
-  - name: ir 
-    email: x@example.com
-keywords: [x, YAML]
 ---
 
 <iframe width="480" height="360" src="https://www.youtube.com/embed/ej2Ar-kBxlA" frameborder="0" allowfullscreen></iframe>
