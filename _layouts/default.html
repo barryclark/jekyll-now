@@ -9,16 +9,6 @@
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
 </head><body>
-
-<script type="text/javascript"><!-- 
-if ((navigator.userAgent.indexOf('iPhone') > 0 && navigator.userAgent.indexOf('iPad') == -1) || navigator.userAgent.indexOf('iPod') > 0 || navigator.userAgent.indexOf('Android') > 0) {
-    document.write('su<link rel="stylesheet" type="text/css" href="css/smartphone.css">');
-}else {
-        document.write('pc<link rel="stylesheet" type="text/css" href="css/pc.css">');
-    }
- --></script>
-	
-	
 <style><!-- 
 /* ------ init ------ */
 body{ margin:0; background: #f2efe7;
@@ -188,6 +178,16 @@ div.foot_main2 div.copyrights {
     xpadding-top : 20px;
 }
  --></style>
+ 
+ <script type="text/javascript"><!-- 
+if ((navigator.userAgent.indexOf('iPhone') > 0 && navigator.userAgent.indexOf('iPad') == -1) || navigator.userAgent.indexOf('iPod') > 0 || navigator.userAgent.indexOf('Android') > 0) {
+    document.write('<link rel="stylesheet" type="text/css" href="css/smartphone.css">');
+    document.write('<style><!-- body{ width : 800px; } --></style>');
+}else {
+        document.write('pc<link rel="stylesheet" type="text/css" href="css/pc.css">');
+    }
+ --></script>
+ 
 <!--  -->
 <div class="head_main">
  <div class="d_main">
