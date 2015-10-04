@@ -10,6 +10,7 @@
    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
 </head><body>
 <style><!-- 
+scrollbar-face-color:#fdfdfd;scrollbar-3dlight-color:#fdfdfd;scrollbar-highlight-color:silver;scrollbar-shadow-color:#fdfdfd;scrollbar-darkshadow-color:silver;scrollbar-arrow-color:silver;scrollbar-track-color:#f5f5f5;
 /* ------ init ------ */
 body{ margin:0; background: #f2efe7;
     font-family:"comic sans ms",verdana,sans-serif;
@@ -23,16 +24,13 @@ div.head_main {
     color: #f4e1d5;
     height: 400px;  
 }
-div.head_main  a {
-            color: #f4e1d5;
-}
-div.head_main a:active  { color: #fff; }
-
+div.head_main a { color: #f4e1d5; }
+div.head_main a:active { color: #fff; }
 div.head_main ul.left li { float: left; }
 div.head_main div.d_main {
       margin: 0 auto;
+      padding: 0 auto;
       width : 800px;
-      width : 60%;
 }
 div.head_main div.d_main div.title { 
         height : 20% ;
@@ -98,7 +96,6 @@ div.head_main div.d_main div.contents {
    position:relative; top : 20px;
    height:80%;
 }
-/* < hr style = "border:none;border-top:dashed 4px #995555; height:4px; color:#FFFFFF" >  */
 div.head_main div.d_main div.contentsA {
     xbackground: #995555;  
     float: left;   
@@ -111,12 +108,13 @@ div.head_main div.d_main div.contentsA img {
       padding-top : 10px;
 }
 div.head_main div.d_main div.contentsM {
-      padding-left; 50px;
       float: left;
       height: 70%;
       width: 45%;
       padding-top : 10px;
+      padding-left: 5px;
       border-top: 3px dashed #995555;
+      font-family: Consolas , AR DECODE ;
 }
 div.head_main div.d_main div.contentsB {
       position:relative; left:30px;
@@ -145,8 +143,6 @@ div.foot_main a:link    { color: #4e3338; }
 div.foot_main a:visited { color: #4e3338; }
 div.foot_main a:hover   { color: #4e3338; }
 div.foot_main a:active  { color: #fdfdfd; }
-
-
 div.foot_main div.footer_list {
       xbackground: #445566;
       color: #FFF;
@@ -176,14 +172,10 @@ div.foot_main2 div.copyrights {
     xpadding-top : 20px;
 }
  --></style>
- 
-
 <script type="text/javascript"><!-- 
 if ((navigator.userAgent.indexOf('iPhone') > 0 && navigator.userAgent.indexOf('iPad') == -1) || navigator.userAgent.indexOf('iPod') > 0 || navigator.userAgent.indexOf('Android') > 0) {
-    document.write('<style><!-- body{ width : 1200px; } --></style>'); } else { }
+    document.write('<style><!-- body{ width : 1200px; } --></style>'); } else {document.write('x'); }
 --></script>
-
- 
 <!--  -->
 <div class="head_main">
  <div class="d_main">
@@ -214,7 +206,7 @@ if ((navigator.userAgent.indexOf('iPhone') > 0 && navigator.userAgent.indexOf('i
      <img src="http://pic.prepics-cdn.com/ppr101064/21963504.jpeg">
   </div>
   <div class="contentsM">
-     Last Update : 2015-10-04
+     Last Update : 2015-10-04    
   </div>
   <div class="contentsB">
     <ul class="contentesB">
@@ -228,11 +220,10 @@ if ((navigator.userAgent.indexOf('iPhone') > 0 && navigator.userAgent.indexOf('i
  </div>
 </div>
 
-
 <div id="main" role="main" class="container">
   {{ content }}
+  <!--  <script src="https://gist.github.com/ir-norn/942e02deb273a7b8b2a9.js"></script>  -->
 </div>
-
 
 <div class="foot_main">
  <div class="footer_list">
@@ -263,10 +254,8 @@ if ((navigator.userAgent.indexOf('iPhone') > 0 && navigator.userAgent.indexOf('i
  </div>
 </div>
 
-
 <div class="foot_main2">
 <div class="copyrights"> -Copyright (C) 2015 copyrights.ir-norn All Rights Reserved.- </div>
 </div>
-
 
 </body></html>
