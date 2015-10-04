@@ -2,7 +2,7 @@ drafts_dir = '_drafts'
 posts_dir  = '_posts'
 
 # rake post['my new post']
-desc 'create a new post'
+desc 'create a new post with "rake post[\'post title\']"'
 task :post, :title do |t, args|
   if args.title
     title = args.title
@@ -29,7 +29,7 @@ task :post, :title do |t, args|
 end
 
 # usage: rake draft['my new draft']
-desc 'create a new draft post'
+desc 'create a new draft post with "rake draft[\'draft title\']"'
 task :draft, :title do |t, args|
   if args.title
     title = args.title
