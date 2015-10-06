@@ -21,7 +21,7 @@ Now we will start with the basic use of theano.
       z = x + y
       f = function([x,y],z)
 
-**Not that you created your function, apply it:
+**Now that you created your function, apply it:
 
     f(2,3)
 array(5.0)
@@ -117,4 +117,4 @@ It is possible to add scalars to matrices, vectors to matrices, scalars to vecto
 **Task for you:
 
 Modify and execute this code to compute this expression:
-     a ** 2 + b ** 2 + 2 * a  * b.
+      a \\** 2 + b \\** 2 + 2 * a  * b.
