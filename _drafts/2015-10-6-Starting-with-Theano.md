@@ -1,3 +1,7 @@
+---
+published: false
+---
+
 Hello everyone!
 
 Here we go, my first post. Since I have learn theano in order to approach my bioinformatics project, these first few posts will be related to the Theano tool.
@@ -110,9 +114,3 @@ print(f([0,1,2]))
 
 Task for you:
 Modify and execute this code to compute this expression: a ** 2 + b ** 2 + 2 * a * b.
-
-
-
-
-
-
