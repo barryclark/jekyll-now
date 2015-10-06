@@ -9,3 +9,4 @@ permalink: /bha2/participants/documentation/
 Please send the link to your documentation site as soon as it is setup to pieter@waag.org. I will add you to the list.
 
 * [Waag Society](http://www.waag.org) - Amsterdam
+  * [Bionerdy](http://bionerdy.github.io)
