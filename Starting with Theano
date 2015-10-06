@@ -117,4 +117,4 @@ It is possible to add scalars to matrices, vectors to matrices, scalars to vecto
 **Task for you:
 
 Modify and execute this code to compute this expression:
-      a \\** 2 + b \\** 2 + 2 * a  * b.
+      a * * 2 + b * * 2 + 2 * a  * b.
