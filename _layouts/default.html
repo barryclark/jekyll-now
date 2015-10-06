@@ -176,6 +176,8 @@ div.foot_main2 div.copyrights {
 if ((navigator.userAgent.indexOf('iPhone') > 0 && navigator.userAgent.indexOf('iPad') == -1) || navigator.userAgent.indexOf('iPod') > 0 || navigator.userAgent.indexOf('Android') > 0) {
     document.write('<style><!-- body{ width : 1200px; } --></style>'); } else {document.write(''); }
 --></script>
+<!-- {{ site.description }} -->
+<!-- {{ site.name }} -->
 <!--  -->
 <div class="head_main">
  <div class="d_main">
@@ -254,8 +256,16 @@ if ((navigator.userAgent.indexOf('iPhone') > 0 && navigator.userAgent.indexOf('i
  </div>
 </div>
 
+
 <div class="foot_main2">
 <div class="copyrights"> -Copyright (C) 2015 copyrights.ir-norn All Rights Reserved.- </div>
 </div>
+
+
+<hr>
+    {% include svg-icons.html %}
+<hr>
+    {% include analytics.html %}
+<hr>
 
 </body></html>
