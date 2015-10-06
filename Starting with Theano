@@ -114,7 +114,7 @@ It is possible to add scalars to matrices, vectors to matrices, scalars to vecto
 
 [  0.   2.  1026.]
 
-**Task for you:
 
-Modify and execute this code to compute this expression:
-      a * * 2 + b * * 2 + 2 * a  * b.
+*This is the end of the first post. Stay tuned for more tutorials for Theano. 
+
+
