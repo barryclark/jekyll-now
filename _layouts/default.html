@@ -1,51 +1,266 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
-
+<html><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+    <title>{% if page.title %}{{ page.title }} ? {% endif %}{{ site.name }} ? {{ site.description }}</title>
     {% include meta.html %}
-
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+   <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+</head><body>
+<style><!-- 
+scrollbar-face-color:#fdfdfd;scrollbar-3dlight-color:#fdfdfd;scrollbar-highlight-color:silver;scrollbar-shadow-color:#fdfdfd;scrollbar-darkshadow-color:silver;scrollbar-arrow-color:silver;scrollbar-track-color:#f5f5f5;
+/* ------ init ------ */
+body{ margin:0; background: #f2efe7;
+    font-family:"comic sans ms",verdana,sans-serif;
+}
+a  { text-decoration: none; } 
+li { list-style:none; }
+/* ------ header main ------ */
+div.head_main { 
+    margin: 0 auto;
+    background: #4e3338;  
+    color: #f4e1d5;
+    height: 400px;  
+}
+div.head_main a { color: #f4e1d5; }
+div.head_main a:active { color: #fff; }
+div.head_main ul.left li { float: left; }
+div.head_main div.d_main {
+      margin: 0 auto;
+      padding: 0 auto;
+      width : 800px;
+}
+div.head_main div.d_main div.title { 
+        height : 20% ;
+        background: #f2efe7;  
+        color : #4e3338 ;
+        float: left;
+}
+div.head_main div.d_main div.title div.logo { 
+          padding: 5px;
+          float: left;
+}
+div.head_main div.d_main div.title div.logo img.logo { width: 60px; border-radius: 20%; }
+div.head_main div.d_main div.title div.name {
+          white-space: nowrap;
+          font-family: AR DECODE ;
+          padding-left: 60px;
+          padding-right: 100px;
+          font-size: 32px;
+}
+div.head_main div.d_main div.title div.description { font-size: 12px; padding-left: 60px; }
+div.head_main div.d_main div.login { 
+          font-family: AR CARTER ;
+          float: right;
+          padding-left: 14px;
+          xbackground: #000;  
+}
+/* ------ header main ------ *//* ------ menu ------ */
+div.menu { 
+    position: relative; top: 0px; 
+    padding:0px;
+    height: 10%;  
+    clear:both;
+    font-size: 30;
+    text-align: left ;
+    background: #f2efe7;  
+    color : #4e3338;
+}
+div.menu a         { color: #4e3338; } 
+div.menu a:link    { color: #4e3338; }
+div.menu a:visited { color: #4e3338; }
+div.menu a:hover   { color: #4e3338; }
+div.menu a:active  { color: #fdfdfd; }
+div.menu ul.left_nav {
+      display:table;
+      table-layout: fixed;
+      width:100%;
+      height:100%;
+      margin:0;
+      padding:0;
+}
+div.menu ul.left_nav li {
+        font-family: AR HERMANN;
+        font-size: 30px;
+        display:table-cell;
+        vertical-align:middle;
+        text-align:center;
+        background: #dad2bc;
+}
+ /* Giddyup Std */
+/* ------ header main ------ *//* ------ header contents ------ */
 
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
-  </head>
+div.head_main div.d_main div.contents {
+   position:relative; top : 20px;
+   height:80%;
+}
+div.head_main div.d_main div.contentsA {
+    xbackground: #995555;  
+    float: left;   
+    xwidth: 75%;
+    width: 30%;
+    height: 70%;
+}
+div.head_main div.d_main div.contentsA img {
+      height:100%;
+      padding-top : 10px;
+}
+div.head_main div.d_main div.contentsM {
+      float: left;
+      height: 70%;
+      width: 45%;
+      padding-top : 10px;
+      padding-left: 5px;
+      border-top: 3px dashed #995555;
+      font-family: Consolas , AR DECODE ;
+}
+div.head_main div.d_main div.contentsB {
+      position:relative; left:30px;
+      float: left;
+      height: 70%;
+      width: 20%;
+      xbackground: #779966;  
+      border-top: 3px dashed #779966;
+}
+div.head_main div.d_main ul.contentesB li { 
+        font-family: Consolas , fantasy ;
+        padding-top: 17% ;
+}
+/* ------ site contents ------ */
+div.contents_main { }
+/* ------ footer ------ */
+div.foot_main { 
+    margin: 0;
+    padding:0;
+    height: 400px;  
+    background: #d3c9ae;  
+    color: #f4e1d5;
+}
+div.foot_main a         { color: #4e3338; } 
+div.foot_main a:link    { color: #4e3338; }
+div.foot_main a:visited { color: #4e3338; }
+div.foot_main a:hover   { color: #4e3338; }
+div.foot_main a:active  { color: #fdfdfd; }
+div.foot_main div.footer_list {
+      xbackground: #445566;
+      color: #FFF;
+      font-family: Consolas , fantasy ;
+      font-size:17;
+      margin:10;
+      float: left; 
+      text-align : left ;
+      width : 25%;
+}
+/* ------ copy rights ------ */
+div.foot_main2 {
+    clear : both;
+    margin: 0 auto;
+    padding:0;
+    background: #bca882;  
+    height: 20px;  
+}
+div.foot_main2 div.copyrights {
+    font-family: AR DECODE , AR HERMANN ;
+    color: #ece8b1;
+    height: 100%;
+    xbackground: #FFF;  
+    xdisplay:table-cell;
+    xvertical-align:middle;
+    text-align:center;
+    xpadding-top : 20px;
+}
+ --></style>
+<script type="text/javascript"><!-- 
+if ((navigator.userAgent.indexOf('iPhone') > 0 && navigator.userAgent.indexOf('iPad') == -1) || navigator.userAgent.indexOf('iPod') > 0 || navigator.userAgent.indexOf('Android') > 0) {
+    document.write('<style><!-- body{ width : 1200px; } --></style>'); } else {document.write(''); }
+--></script>
+<!-- {{ site.description }} -->
+<!-- {{ site.name }} -->
+<!-- <img src="{{ site.avatar }}" /> -->
+<!--  -->
+<div class="head_main">
+ <div class="d_main">
+  <div class="title">
+  <div class="logo"><img class="logo" src="http://pic.prepics-cdn.com/ppr101064/24614604_480x480.jpeg"></div>
+  <div class="name">ir-norn.github.io</div>
+  <div class="description">scripting_x</div>
+  </div>
+  <div class="login"> 
+    <ul class="left">
+    <li>[ <a href="https://github.com/">Github</a> ] </li>
+    <li>[ <a href="https://github.com/ir-norn/ir-norn.github.io">Login</a> ] </li>
+    <li>[ Mail ]</li>
+    </ul>
+    <!-- <div style="clear:both;float:right;">[ Mail ]</div>  -->
+  </div>
+  <div class="menu"> 
+    <ul class="left_nav">
+    <!--li><img src="http://pic.prepics-cdn.com/ppr101064/21963504.jpeg" width="100" height="40px"></li-->
+    <li>[ <a href="{{ site.baseurl }}/">home</a> ]</li>
+    <li>[ <a href="https://gist.github.com/ir-norn">gist</a> ]</li>
+    <li>[ <a href="{{ site.baseurl }}/about">About</a> ]</li>
+    <li>/</li>
+    </ul>
+  </div>
+  <div class="contents">
+  <div class="contentsA">
+     <img src="http://pic.prepics-cdn.com/ppr101064/21963504.jpeg">
+  </div>
+  <div class="contentsM">
+     Last Update : 2015-10-04    
+  </div>
+  <div class="contentsB">
+    <ul class="contentesB">
+    <li>[ <a href="{{ site.baseurl }}/task">task</a> ] </li>
+    <li>[ <a href="{{ site.baseurl }}/watir">watir</a> ] </li>
+    <li>[ <a href="{{ site.baseurl }}/_">/</a> ] </li>
+    <li>[ <a href="{{ site.baseurl }}/_">/</a> ] </li>
+    </ul>
+  </div>
+  </div>
+ </div>
+</div>
 
-  <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+<div id="main" role="main" class="container">
+  {{ content }}
+  <!--  <script src="https://gist.github.com/ir-norn/942e02deb273a7b8b2a9.js"></script>  -->
+</div>
 
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
-          </div>
+<div class="foot_main">
+ <div class="footer_list">
+  <b>pc</b>
+  <ul>
+	 <li><a href="https://ideone.com/">ideone</a></li>
+	 <li><a href="https://repl.it/">repl.it</a></li>
+	 <li><a href="http://www.rubyist.net/~matz/">ruby</a></li>
+	 <li><a href="https://code.openhub.net/">koders</a></li>
+  </ul>
+ </div>
+ <div class="footer_list">
+	<b>illust</b>
+	<ul>
+	 <li><a href="http://www.pixiv.net/">pixiv</a></li>
+	 <li><a href="http://www.tinami.com/">tinami</a></li>
+	 <li></li>
+	</ul>
+ </div>
+	<div class="footer_list">
+	<b>sns</b>
+	<ul>
+	 <li>twitter
+	 <li>facebook
+	 <li>line
+	 <li>google+
+	 <li>res
+	 <li>{% include svg-icons.html %}
+	</ul>
+ </div>
+</div>
 
-          <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
-          </nav>
-        </header>
-      </div>
-    </div>
-
-    <div id="main" role="main" class="container">
-      {{ content }}
-    </div>
-
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          {% include svg-icons.html %}
-        </footer>
-      </div>
-    </div>
-
-    {% include analytics.html %}
-  </body>
-</html>
+<div class="foot_main2">
+<div class="copyrights"> -Copyright (C) 2015 copyrights.ir-norn All Rights Reserved.- </div>
+</div>
+{% include analytics.html %}
+</body></html>
