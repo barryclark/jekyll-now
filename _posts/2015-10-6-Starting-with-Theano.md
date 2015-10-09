@@ -1,10 +1,12 @@
 ---
-published: false
+layout: post
+title: Starting with Theano
 ---
-
 Hello everyone!
 
-Here we go, my first post. Since I have learn theano in order to approach my bioinformatics project, these first few posts will be related to the Theano tool.
+Here we go, my first post. Since I have to learn theano in order to approach my bioinformatics project, these first few posts will be related to the Theano tool.
+Besides the posts related to Theano, I will be sharing posts related to the Machine Learning, because that is also one of the pillars of my future projects. Afterwards, there are going to be posts straight from the field of bioinformatics. 
+
 
 Okay, let's first briefly define what is Theano?
 
