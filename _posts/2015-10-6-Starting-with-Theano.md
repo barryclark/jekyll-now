@@ -2,6 +2,8 @@
 layout: post
 title: Starting with Theano
 ---
+
+
 Hello everyone!
 
 Here we go, my first post. Since I have to learn theano in order to approach my bioinformatics project, these first few posts will be related to the Theano tool.
