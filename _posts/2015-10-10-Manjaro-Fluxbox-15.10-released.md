@@ -25,5 +25,5 @@ Bernhard Landauer, Maintainer Manjaro-Fluxbox
   
 ##Links  
   
-* [Forum post](https://forum.manjaro.org/index.php?board=56.0)  
+* [Forum post](https://forum.manjaro.org/index.php?topic=27152.0)  
 * [Download here](https://sourceforge.net/projects/manjaro-fluxbox/files/manjaro-fluxbox-15.10/)  
