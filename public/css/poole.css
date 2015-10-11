@@ -40,6 +40,7 @@ body {
 html {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 16px;
+	font-weight: 400;
 	line-height: 1.5;
 }
 @media (min-width: 38em) {
@@ -57,7 +58,7 @@ body {
 
 /* No `:visited` state is required by default (browsers will use `a`) */
 a {
-	color: #2b1bda;
+	color: #0071bc;
 	text-decoration: none;
 }
 a strong {
@@ -299,9 +300,14 @@ tbody tr:nth-child(odd) th {
 	letter-spacing: 0px;
 }
 .masthead-title a {
-	color: #000;
+	color: #323a45;
+	text-decoration: none;
+}
+.masthead-title a:hover {
+	color: #212121;
 }
 .masthead-title small {
+	font-family: "Source Sans Pro", sans-serif;
 	font-size: 75%;
 	font-weight: 400;
 	color: #999;
