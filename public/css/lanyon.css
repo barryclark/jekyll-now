@@ -580,30 +580,35 @@ a.pagination-item:hover {
 
 
 /* newsletter */
-.singup {
-	border: 1px solid black;
-	display: inline-block;
-}
-
+.singup {}
 .singup input {
 	font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	outline: none;
 }
-
 .singup #tlemail {
 	font-size: .9em;
-	font-weight: 600;
+	font-weight: 400;
 	color: #666;
 	padding: 10px;
-	border: 1px solid #fff;
+	border: 1px solid #212121;
+	border-right-color: transparent;
 	width: 16em;
 }
-
 .singup #submit {
+	margin-left: -3px;
 	font-size: .9em;
-	font-weight: 600;
+	font-weight: 800;
 	color: #fff;
-	background:#000;
-	border: 1px solid #000;
+	background: #0071bc;
+	border: 1px solid #0071bc;
 	padding: 10px;
+	border-radius: 0 3px 3px 0;
+}
+.singup #submit:hover {
+	background-color: #205493;
+	border-color: #205493;
+}
+.singup #submit:active {
+	background-color: #112e51;
+	border-color: #205493;
 }
