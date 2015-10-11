@@ -31,14 +31,14 @@ body {
 }
 
 body {
-	font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-weight: 400;
+	font-family: "Merriweather", Georgia, serif;
+	font-weight: 700;
 	color: #313131;
 	letter-spacing: -.025rem;
 }
@@ -156,10 +156,10 @@ h1, h2, h3, h4, h5, h6 {
 	width: 14rem;
 	visibility: hidden;
 	overflow-y: auto;
-	font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: .875rem; /* 15px */
 	color: #333;
-	background-color: #f6f6f6;
+	border-right: 1px solid #eee;
 	-webkit-transition: all .3s ease-in-out;
 					transition: all .3s ease-in-out;
 }
@@ -172,10 +172,10 @@ h1, h2, h3, h4, h5, h6 {
 /* Sidebar content */
 .sidebar a {
 	font-weight: normal;
-	color: #000;
+	color: #323a45;
 }
 .sidebar a:hover {
-	color: #343434;
+	color: #0071bc;
 }
 .sidebar-item {
 	padding: 1rem;
@@ -197,7 +197,7 @@ h1, h2, h3, h4, h5, h6 {
 a.sidebar-nav-item:hover,
 a.sidebar-nav-item:focus {
 	text-decoration: none;
-	background-color: rgba(255,255,255,.1);
+	background-color: #efefef;
 	border-color: transparent;
 }
 
@@ -225,8 +225,9 @@ a.sidebar-nav-item:focus {
 	/*width: 2.2rem;*/
 	padding: .5rem .65rem;
 	font-size: 0.8rem;
-	color: #505050;
-	background-color: #f7f7f7;
+	font-weight: 600;
+	color: #fff;
+	background-color: #0071bc;
 	border-radius: 4px;
 	cursor: pointer;
 }
@@ -243,9 +244,10 @@ a.sidebar-nav-item:focus {
 }
 
 .sidebar-toggle:active,
+.sidebar-toggle:hover,
 #sidebar-checkbox:checked ~ .sidebar-toggle {
 	color: #fff;
-	background-color: #505050;
+	background-color: #205493;
 }
 
 @media (min-width: 30.1em) {
@@ -382,7 +384,7 @@ a.sidebar-nav-item:focus {
 	overflow: hidden; /* clearfix */
 	margin-left: -1rem;
 	margin-right: -1rem;
-	font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color: #ccc;
 	text-align: center;
 }
@@ -584,7 +586,7 @@ a.pagination-item:hover {
 }
 
 .singup input {
-	font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	outline: none;
 }
 
