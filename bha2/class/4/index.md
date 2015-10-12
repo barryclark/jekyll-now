@@ -16,7 +16,7 @@ cultures have grown. The subject of this class is optics and experimental design
 * [Open Source licensing](/bha2/class/4/pdf/3 Open Source licensing & publishing.pdf)
 * [Microscope Design](/bha2/class/4/pdf/Microscope design.pdf)
 * Practicals
-  * [reparing microscope slides](/bha2/class/4/preparing-slides/)
+  * [Preparing microscope slides](/bha2/class/4/preparing-slides/)
   * [Operating a microscope](/bha2/class/4/operating-microscope/)
   * [Gram Staining](/bha2/class/4/gram-staining/)
   * [Loeffler Methylene Blue Staining](/bha2/class/4/loeffler-staining/)
