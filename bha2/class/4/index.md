@@ -11,12 +11,15 @@ cultures have grown. The subject of this class is optics and experimental design
 
 ## Schedule
 
-* Optics
-* Experimental Design
-* Microscope Design
+* [Experiment Design](/bha2/class/4/pdf/1 Bioreactor Design.pdf)
+* [Optics](/bha2/class/4/pdf/2 Microscopy & Optics theory.pdf)
+* [Open Source licensing](/bha2/class/4/pdf/3 Open Source licensing & publishing.pdf)
+* [Microscope Design](/bha2/class/4/pdf/Microscope design.pdf)
 * Practicals
-  * Microscopy
-  * Cell Staining
+  * [reparing microscope slides](/bha2/class/4/preparing-slides/)
+  * [Operating a microscope](/bha2/class/4/operating-microscope/)
+  * [Gram Staining](/bha2/class/4/gram-staining/)
+  * [Loeffler Methylene Blue Staining](/bha2/class/4/loeffler-staining/)
 
 ## Devices
 
