@@ -1,22 +1,32 @@
-    <meta charset="utf-8" />
-    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+<meta charset="utf-8" />
+<meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
 
-    {% if page.url == "/index.html" %}
-        <link rel="canonical" href="{{ site.url }}" />
-    {% else %}
-        <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
-    {% endif %}
+{% if page.url == "/index.html" %}
+    <link rel="canonical" href="{{ site.url }}" />
+{% else %}
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+{% endif %}
 
-    {% if page.excerpt %}
-        <meta name="description" content="{{ page.excerpt| strip_html }}" />
-    {% else %}
-        <meta name="description" content="{{ site.description }}">
-    {% endif %}
-    
-    <meta name="author" content="Joseph Hendrix" />
+{% if page.excerpt %}
+    <meta name="description" content="{{ page.excerpt| strip_html }}" />
+{% else %}
+    <meta name="description" content="{{ site.description }}">
+{% endif %}
 
-    {% if page.title %}
-        <meta property="twitter:title" content="{{ page.title }}" />
-    {% endif %}
+<meta name="author" content="Joseph Hendrix" />
+
+{% if page.title %}
+    <meta property="twitter:title" content="{{ page.title }}" />
+{% endif %}
+
+{% if page.url == "/index.html" %}
+    <meta itemprop="url" content="{{ site.url }}">
+{% else %}
+    <meta itemprop="url" content="{{ site.url }}{{ page.url }}">
+{% endif %}
+
+<span itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Joseph Hendrix">
+</span>
