@@ -27,7 +27,7 @@
 
 	{% if page.isPost %}
 		<body itemscope itemtype="http://schema.org/BlogPosting">
-	{% elsif page.url == "/index.html" %}
+	{% elsif page.url == "/index.html" or page.url contains "/tags/" %}
 		<body itemscope itemtype="http://schema.org/Blog">
     {% else %}
     	<body>
