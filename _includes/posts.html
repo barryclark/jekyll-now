@@ -11,7 +11,7 @@
         </a>
       </h2>
       
-     <div class="date">{{ post.date | date: "%B %e, %Y" }}</div>
+     <div itemprop="datePublished" content="{{ page.date | date: "%Y-%m-%d" }}" class="date">{{ post.date | date: "%B %e, %Y" }}</div>
 
       <div class="entry" style="margin-top: 15px;">
         {% if post.facebook_post %}
