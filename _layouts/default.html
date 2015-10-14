@@ -25,14 +25,15 @@
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
   </head>
 
-  <body>
+	{% if page.isPost %}
+		<body itemscope itemtype="http://schema.org/Article">
+    {% else %}
+    	<body>
+    {% endif %}
+  
     {% include facebook.html %}
     
-    {% if page.isPost %}
-    	<div itemscope itemtype="http://schema.org/Article" class="wrapper-masthead">
-    {% else %}
-    	<div class="wrapper-masthead">
-    {% endif %}
+    <div class="wrapper-masthead">
     
       <div class="container">
         <header class="masthead clearfix">
