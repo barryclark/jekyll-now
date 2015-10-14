@@ -48,7 +48,7 @@
 
           <nav>
             {% for navlink in site.navlinks %}
-              {{ navlink }}{% if forloop.last %}{% else %}|{% endif %}
+              <a href="{{ navlink.url }}">{{ navlink.text }}</a>{% if forloop.last %}{% else %}|{% endif %}
             {% endfor %}
           </nav>
         </header>
