@@ -1,6 +1,6 @@
 <div class="posts">
   {% for post in include.posts %}
-    <article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting" content="test" class="post">
+    <article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting" content="{{ site.name }}" class="post">
 
       <h2 itemprop="headline" class="postHeader">
         <a href="{{ post.url }}">
@@ -11,7 +11,17 @@
         </a>
       </h2>
       
-     <div itemprop="datePublished" content="{{ page.date | date: "%Y-%m-%d" }}" class="date">{{ post.date | date: "%B %e, %Y" }}</div>
+     <div itemprop="datePublished" content="{{ post.date | date: "%Y-%m-%d" }}" class="date">{{ post.date | date: "%B %e, %Y" }}</div>
+
+      {% for tag in post.tags %}
+        <meta itemprop="keywords" content="{{ tag | replace:'_',' ' }}"/>
+      {% endfor %}
+      
+      {% if post.image %}
+        <meta itemprop="image" content="{{ site.url }}{{ post.image }}" />
+      {% else %}
+        <meta itemprop="image" content="{{ site.avatar }}" />
+      {% endif %}
 
       <div class="entry" style="margin-top: 15px;">
         {% if post.facebook_post %}
