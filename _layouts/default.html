@@ -27,7 +27,13 @@
 
   <body>
     {% include facebook.html %}
-    <div class="wrapper-masthead">
+    
+    {% if page.isPost %}
+    	<div itemscope itemtype="http://schema.org/Article" class="wrapper-masthead">
+    {% else %}
+    	<div class="wrapper-masthead">
+    {% endif %}
+    
       <div class="container">
         <header class="masthead clearfix">
           <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" alt="Joe's Facebook Profile Picture" /></a>
@@ -45,13 +51,8 @@
         </header>
       </div>
     </div>
-    
-	{% if page.isPost %}
-		<div itemscope itemtype="http://schema.org/Article" id="main" role="main" class="container">
-	{% else %}
-    	<div id="main" role="main" class="container">
-	{% endif %}
-  		{{ content }}
+    <div id="main" role="main" class="container">
+  	{{ content }}
     </div>
 
     {% include footer.html %}
