@@ -46,6 +46,7 @@
       </div>
     </div>
 
+	{{ page.isPost }}
 	{% if page.isPost %}
 		<div itemscope itemtype="http://schema.org/Article" id="main" role="main" class="container">
 	{% else %}
@@ -55,7 +56,6 @@
     </div>
 
     {% include footer.html %}
-
 
     {% include analytics.html %}
   </body>
