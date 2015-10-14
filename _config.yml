@@ -13,9 +13,12 @@ avatar: https://graph.facebook.com/1274573288/picture?type=large
 
 
 navlinks:
-    - <a href="http://hendrixjoseph.github.io/">Home</a>
-    - <a href="http://hendrixjoseph.github.io/about">About</a>
-    - <a href="https://github.com/hendrixjoseph/FamilyTree">FamilyTree Project</a>
+    - text: Home
+      url: http://hendrixjoseph.github.io/
+    - text: About
+      url: /about
+    - text: FamilyTree Project
+      url: /FamilyTree
 
 #
 # Flags below are optional
