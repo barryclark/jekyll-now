@@ -2,14 +2,14 @@
   {% for post in include.posts %}
     <article class="post">
 
-      <h1>
+      <h2>
         <a href="{{ post.url }}">
           {% if post.facebook_post %}
             <i class="svg-icon facebook" style="margin-right: 9px; top: 9px; position: relative;"></i>
           {% endif %}
           {{ post.title }}
         </a>
-      </h1>
+      </h2>
       
      <div class="date">{{ post.date | date: "%B %e, %Y" }}</div>
 
