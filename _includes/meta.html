@@ -22,13 +22,16 @@
 {% endif %}
 
 {% if page.url == "/index.html" %}
-    <meta itemprop="url" content="{{ site.url }}">
+    <meta itemprop="url" content="{{ site.url }}" />
 {% else %}
-    <meta itemprop="url" content="{{ site.url }}{{ page.url }}">
+    <meta itemprop="url" content="{{ site.url }}{{ page.url }}" />
 {% endif %}
 
 <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="Joseph Hendrix">
+    <meta itemprop="name" content="Joseph Hendrix" />
+    <meta itemprop="alumniOf" itemscope itemtype="http://schema.org/CollegeOrUniversity">
+        <meta itemprop="name" content="Wright State University" />
+    </meta>
 </span>
 
 {% for tag in page.tags %}
