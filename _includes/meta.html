@@ -30,3 +30,7 @@
 <span itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="Joseph Hendrix">
 </span>
+
+{% for tag in page.tags %}
+    <meta itemprop="keywords" content="{{ tag | replace:'_',' ' }}"/>
+{% endfor %}
