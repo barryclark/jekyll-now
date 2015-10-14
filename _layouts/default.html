@@ -45,14 +45,13 @@
         </header>
       </div>
     </div>
-
-	{{ page.isPost }}
+    
 	{% if page.isPost %}
 		<div itemscope itemtype="http://schema.org/Article" id="main" role="main" class="container">
 	{% else %}
     	<div id="main" role="main" class="container">
 	{% endif %}
-      {{ content }}
+  		{{ content }}
     </div>
 
     {% include footer.html %}
