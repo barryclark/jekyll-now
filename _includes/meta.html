@@ -34,3 +34,9 @@
 {% for tag in page.tags %}
     <meta itemprop="keywords" content="{{ tag | replace:'_',' ' }}"/>
 {% endfor %}
+
+{% if page.image %}
+    <meta itemprop="image" content="{{ site.url }}{{ page.image }}" />
+{% else %}
+    <meta itemprop="image" content="{{ site.avatar }}" />
+{% endif %}
