@@ -10,13 +10,11 @@ It's time to digg into DNA. Let's explore the characteristics of the most fundam
 
 ## Schedule
 
-* Genetics
-* Biosensing
-* Thermocycler Design
-* Gel box and power supply Design
+* [Genetics](/bha2/class/5/pdf/1 - Genetics.pdf)
+* [Thermocycler, Gel box and power supply Design](/bha2/class/5/pdf/2 - Thermocycler Design.pdf)
 * Practicals
-  * DNA extraction
-  * DNA profiling
+  * [DNA extraction](/bha2/class/5/DNA-extraction/)
+  * [DNA profiling](http://bio-rad.com/en-us/product/forensic-dna-fingerprinting-kit)
 
 ## Devices
 
@@ -24,11 +22,15 @@ For this week's practicals we need 3 devices:
 
 ### Thermocycler
 
+We have started to design our own thermocycler, but since there are already so many Open Source designs out there, you may also choose own of those. Such as the [OpenPCR](http://www.openpcr.org) or [Wild Open PCR](http://hackteria.org/wiki/Wild_OpenPCR)
+
 * [BHA_Thermocycler repository](https://github.com/BioHackAcademy/BHA_Thermocycler)
 
 ![Thermocycler](/bha2/class/5/Thermocycler.png)
 
 ### Gelbox
+
+Well, a Gelbox is exactly what the name tells you: a box. The only special features are two wires on each side. Make sure you use an inert material like platinum, gold, carbon or stainless steel for it, otherwise the electrodes will oxidize like crazy.
 
 * [BHA_Gelbox repository](https://github.com/BioHackAcademy/BHA_GelBox)
 
