@@ -58,6 +58,9 @@ markdown: redcarpet
 highlighter: pygments
 permalink: /:title/
 
+paginate: 5
+paginate_path: "/page:num"
+
 redcarpet:
  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
 
