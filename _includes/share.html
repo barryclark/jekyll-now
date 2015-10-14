@@ -8,11 +8,11 @@
 
 <!-- LinkedIn Share -->
 <script src="https://platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
-<script type="IN/Share" data-url="{{ page_url | strip_newlines | strip }}" data-counter="right"></script>
+<script type="IN/Share" data-url="{{ page_url | strip_newlines | remove: ' ' }}" data-counter="right"></script>
 
 <!-- Facebook Like & Share -->
   <div class="fb-like" 
-    data-href="{{ page_url | strip_newlines | strip }}" 
+    data-href="{{ page_url | strip_newlines | remove: ' ' }}" 
     data-layout="standard" 
     data-action="like" 
     data-share="true"
