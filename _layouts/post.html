@@ -3,13 +3,13 @@ layout: default
 ---
 
 <article class="post">
-  <h1>{{ page.title }}</h1>
+  <h1 itemprop="name">{{ page.title }}</h1>
   
   {% include share.html %} 
 
   <hr />
   <div>
-    <span class="date">{{ page.date | date: "%B %e, %Y" }}</span>
+    <span itemprop="datePublished" content="{{ page.date | date: "%Y-%m-%d" }}" class="date">{{ page.date | date: "%B %e, %Y" }}</span>
     <nav class="tags">
       {% assign tags = page.tags | sort %}
       {% for tag in tags %}
@@ -19,7 +19,7 @@ layout: default
   </div>
   <hr />
 
-  <div class="entry">
+  <div itemprop="articleBody" class="entry">
     {{ content }}
   </div>
 
