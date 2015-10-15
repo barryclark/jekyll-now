@@ -1,4 +1,4 @@
 ---
-layout: tag2
+layout: tag
 title: certificate
 ---
