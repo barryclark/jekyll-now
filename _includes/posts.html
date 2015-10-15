@@ -1,7 +1,7 @@
 <div class="posts">
   {% if include.onlytags %}
-    {{ site.tags[onlytags] }}
-    {% assign posts=site.tags[onlytags] %}
+    {{ site.tags[include.onlytags] }}
+    {% assign posts=site.tags[include.onlytags] %}
   {% else %}
     {% assign posts=site.posts %}
   {% endif %}
