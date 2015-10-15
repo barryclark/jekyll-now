@@ -19,6 +19,6 @@ layout: default
 
 {{ site.tags }} test
 
-{{ site.tags[page.title] }}
+{% include posts.html posts=site.tags[page.title] %} 
 
 {{ page.title }}
