@@ -1,5 +1,5 @@
 ---
 layout: tag
-title: old_blog
+title: old blog
 permalink: /tags/old_blog/
 ---
