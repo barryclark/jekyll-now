@@ -1,5 +1,5 @@
 ---
 layout: tag
-title: income_tax
+title: income tax
 permalink: /tags/income_tax/
 ---
