@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<hr />
+  <nav class="tags" style="float: none;">
+    {% assign tags = site.tags | sort %}
+    {% for tag in tags %}
+      {% capture page_name %}/tags/{{ tag[0] }}/{% endcapture %}
+      <a href="{{ page_name }}" 
+        {% if forloop.first or page.name == page_name %}
+          class="{% if page.name == page_name %}selected{% endif %} {% if forloop.first %}first{% endif %}"
+        {% endif %}>
+        {{ tag[0] | replace:'_',' ' }}
+      </a>{% if forloop.last %}{% else %}|{% endif %}
+    {% endfor %}
+  </nav>
+<hr />
+
+{% include posts.html posts=site.tags[title] %} 
