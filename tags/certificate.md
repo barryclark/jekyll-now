@@ -1,6 +1,6 @@
 ---
 layout: tag
-title: Certificate
+title: certificate
 permalink: /tags/certificate/
 ---
 
