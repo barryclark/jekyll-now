@@ -12,5 +12,5 @@ Please send the link to your documentation site as soon as it is setup to pieter
   * [Bionerdy](http://bionerdy.github.io)
   * [dp50mm](http://dp50mm.github.io)
   * [por](http://por.github.io/biohackacademy/)
-* [Carbon Studio](http://carbonstudio.ir) - Theran
+* [Carbon Studio](http://carbonstudio.ir) - Tehran
   * [Ali](http://alimirakbari.github.io/BHA_Tehran/)
