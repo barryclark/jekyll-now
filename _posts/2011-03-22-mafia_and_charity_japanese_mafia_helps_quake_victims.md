@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Mafia and Charity&#58; Japanese Mafia Helps Quake Victims
-tags: [culture, old_blog]
+tags: [culture, old blog]
 excerpt: From The Daily Beast&#58; The worst of times sometimes brings out the best in people, even in Japan’s “losers” a.k.a. the Japanese mafia, the yakuza.
 ---
 
