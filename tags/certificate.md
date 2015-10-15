@@ -1,5 +1,5 @@
 ---
-layout: tag
+layout: tag2
 title: certificate
 permalink: /tags/certificate/
 ---
