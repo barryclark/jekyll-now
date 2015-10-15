@@ -1,5 +1,11 @@
 <div class="posts">
-  {% for post in site.posts %}
+  {% if include.onlytags %}
+    {% assign posts=site.tags[onlytags] %}
+  {% else %}
+    {% assign posts=site.posts %}
+  {% endif %}
+  
+  {% for post in posts %}
     <article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting" content="{{ site.name }}" class="post">
 
       <h2 itemprop="headline" class="postHeader">
