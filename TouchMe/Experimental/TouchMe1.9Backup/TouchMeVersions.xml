@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TouchMe>
+  <Client>
+    <Release Version="1.4" Status="Valid"/>
+    <Release Version="1.5" Status="Valid"/>
+    <Release Version="1.6" Status="Valid"/>
+    <Release Version="1.7" Status="Valid"/>
+    <Release Version="1.8" Status="Valid"/>
+    <Release Version="1.9" Status="Valid"/>
+    <Release Version="91090.0" Status="Valid"/>
+  </Client>
+  <Server>
+    <Release Version="1.4" Status="Valid"/>
+    <Release Version="1.5" Status="Valid"/>
+    <Release Version="1.6" Status="Valid"/>
+    <Release Version="1.7" Status="Valid"/>
+    <Release Version="1.8" Status="Valid"/>
+    <Release Version="1.9" Status="Valid"/>
+    <Release Version="91090.0" Status="Valid"/>
+  </Server>
+</TouchMe>

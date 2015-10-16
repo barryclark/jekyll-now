@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TouchMe>
+  <Client>
+    <Release Version="0.1337" Status="Invalid"/>
+    <Release Version="0.1338" Status="Valid"/>
+    <Release Version="0.1339" Status="Valid"/>
+    <Release Version="0.1340" Status="Valid"/>
+    <Release Version="0.1341" Status="Valid"/>
+    <Release Version="0.1342" Status="Valid"/>
+    <Release Version="0.1343" Status="Valid"/>
+    <Release Version="0.1344" Status="Valid"/>
+    <Release Version="0.1345" Status="Valid"/>
+    <Release Version="0.1346" Status="Valid"/>
+    <Release Version="0.1347" Status="Valid"/>
+    <Release Version="1.0" Status="Valid"/>
+    <Release Version="1.1" Status="Valid"/>
+  </Client>
+  <Server>
+    <Release Version="0.69" Status="Valid"/>
+    <Release Version="0.70" Status="Valid"/>
+    <Release Version="0.71" Status="Valid"/>
+    <Release Version="0.72" Status="Valid"/>
+    <Release Version="0.73" Status="Valid"/>
+    <Release Version="0.74" Status="Valid"/>
+    <Release Version="0.75" Status="Valid"/>
+    <Release Version="0.76" Status="Valid"/>
+    <Release Version="1.0" Status="Valid"/>
+    <Release Version="1.1" Status="Valid"/>
+  </Server>
+</TouchMe>
