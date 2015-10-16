@@ -39,7 +39,7 @@ $ jekyll -v
 
 Fork the repo, and then clone it so you've got the code locally.
 
-### Modify the _config.yml
+### Modify the `_config.yml`
 
 The `_config.yml` located in the root of the Pixyll directory contains all of the configuration details
 for the Jekyll site. The defaults are:
