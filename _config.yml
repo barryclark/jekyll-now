@@ -48,7 +48,8 @@ baseurl: "https://manjaro.github.io"
 # Pagination
 # Set the number of posts per page
 paginate: 4
-
+paginate_path: "/page:num"
+paginate_limit: 7
 #
 # !! You don't need to change any of the configuration flags below !!
 #

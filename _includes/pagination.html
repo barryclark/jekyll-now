@@ -1,0 +1,100 @@
+{% assign limit = 7 %}
+{% if site.paginate_limit %}
+    {% assign limit = site.paginate_limit %}
+{% endif %}
+{% assign limitmin = limit | minus: 2 %}
+{% assign offset = limitmin | divided_by: 2 %}
+{% assign limitprev = paginator.page | minus: offset %}
+{% assign limitnext = paginator.page | plus: offset %}
+{% assign totalpages = paginator.total_pages %}
+
+{% if limitprev <= 1 %}
+    {% assign limitprevfix = limitprev | minus: 1 %}
+    {% assign limitprev = 0 %}
+    {% assign limitnext = limitnext | minus: limitprevfix | plus: 1 %}
+{% endif %}
+
+{% if limitnext >= totalpages %}
+    {% assign limitnextfix = totalpages | minus: limitnext | minus: 1 %}
+    {% assign limitnext = totalpages %}
+    {% assign limitprev = limitprev | plus: limitnextfix %}
+{% endif %}
+
+{% assign dots_prev = limitprev | minus: 1 %}
+{% assign dots_next = totalpages | minus: 1 %}
+{% assign max_next = totalpages | minus: offset | minus: 1 %}
+
+{% if totalpages > limit %}
+    {% for count in (2..paginator.total_pages) %}
+        {% if count == dots_prev  %}
+            {% assign indicator_first = ' pages-indicator--active' %}
+        {% endif %}
+        {% if count == dots_next and paginator.page < max_next %}
+            {% assign indicator_last = ' pages-indicator--active' %}
+        {% endif %}
+        {% if forloop.first %}
+            {% assign relative_first = paginator.page | minus: forloop.index | divided_by: 1 %}
+        {% endif %}
+        {% if forloop.last %}
+            {% assign relative_last = paginator.page | minus: forloop.index | replace: '-', '' | divided_by: 1 | plus: 1 %}
+        {% endif %}
+    {% endfor %}
+{% endif %}
+
+<p id="pagination-label" class="pagination-label sr-only" aria-hidden="true">Pagination</p>
+
+<ul class="pagination" role="navigation" aria-labelledby="pagination-label">
+
+    {% if paginator.previous_page %}
+    <li class="previous">
+        {% if paginator.previous_page == 1 %}
+        <a class="pagination-item" href="/" rel="prev">previous<span class="sr-only"> page</span></a>
+        {% else %}
+        <a class="pagination-item" href="{{ paginator.previous_page_path }}" rel="prev">previous<span class="sr-only"> page</span></a>
+        {% endif %}
+    </li>
+    {% endif %}
+
+    {% unless paginator.page == 1 %}
+    <li class="page first">
+        <a class="pagination-item" href="/"><span class="sr-only">page </span>1</a>
+    </li>
+    <li class="pages-indicator{{ indicator_first }} pages-indicator--offset-{{ relative_first }}"><span aria-hidden="true">...</span><span class="sr-only">Skipped pages indicator</span></li>
+    {% else %}
+    <li class="page first current-page">
+        <span class="pagination-item"><span class="sr-only">current page</span><span aria-hidden="true">1</span></span>
+    </li>
+    {% endunless %}
+
+    {% for count in (2..paginator.total_pages) %}
+        {% if count >= limitprev and count <= limitnext %}
+            {% assign relative_to_current = paginator.page | minus: count | replace: '-', '' | divided_by: 1 %}
+            {% unless count == totalpages %}
+            <li class="page offset-{{relative_to_current}}{% if count == paginator.page %} current-page{% endif %}">
+                {% if count == paginator.page %}
+                <span class="pagination-item"><span class="sr-only">current page</span><span aria-hidden="true">{{ count }}</span></span>
+                {% else %}
+                <a class="pagination-item" href="/page{{ count }}"><span class="sr-only">page </span>{{ count }}</a>
+                {% endif %}
+            </li>
+            {% endunless %}
+        {% endif %}
+    {% endfor %}
+
+    {% unless paginator.page == totalpages %}
+    <li class="pages-indicator{{ indicator_last }} pages-indicator--offset-{{ relative_last }}"><span aria-hidden="true">...</span><span class="sr-only">Skipped pages indicator</span></li>
+    <li class="page last">
+        <a class="pagination-item" href="/page{{ totalpages }}"><span class="sr-only">page </span>{{ totalpages }}</a>
+    </li>
+    {% else %}
+    <li class="page last current-page">
+        <span class="pagination-item"><span class="sr-only">current page</span><span aria-hidden="true">{{ totalpages }}</span></span>
+    </li>
+    {% endunless %}
+
+    {% if paginator.next_page %}
+    <li class="next">
+        <a class="pagination-item" href="{{ paginator.next_page_path }}" rel="next">next<span class="sr-only"> page</span></a>
+    </li>
+    {% endif %}
+</ul>
