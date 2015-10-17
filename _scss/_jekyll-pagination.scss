@@ -1,0 +1,190 @@
+// Breakpoint variables
+$pages-breakpoint1:         320px !default;
+$pages-breakpoint2:         500px !default;
+$pages-breakpoint3:         600px !default;
+$pages-breakpoint4:         768px !default;
+$pages-breakpoint5:         768px !default;
+$pages-breakpoint6:         768px !default;
+$pages-breakpoint7:         768px !default;
+$pages-breakpoint8:         768px !default;
+$pages-breakpoint9:         768px !default;
+
+// Cosmetics variables
+$pages-cosmetics:           true !default;
+$pages-sr-only:             true !default;
+
+// Styling
+$pages-margin:              1em 0 !default;
+$pages-item-margin:         0 .2em !default;
+$pages-item-size:           36px !default;
+$pages-item-background:     #eee;
+$pages-item-color:          $darkGray;
+$pages-item-link-color:     #1847AD !default;
+$pages-item-shadow:         inset 0 0 5px rgba(0, 0, 0, .05) !default;
+$pages-item-hover:          $lightGray;
+$pages-item-active:         $green;
+$pages-item-active-shadow:  inset 0 0 5px rgba(0, 0, 0, .3) !default;
+$pages-item-active-color:   $white;
+
+// Mixins
+@import "utils/clearfix";
+@import "utils/breakpoint";
+
+// Classes
+@import "utils/sr-only";
+
+// Behavioural
+.pagination {
+  @include pages-clearfix;
+
+  li {
+    display: none;
+
+    .pagination-item {
+      display: block;
+      speak-number: continuous;
+    }
+  }
+
+  // Always display the first, current and last page when
+  // They are available in the markup
+  .current-page,
+  .previous,
+  .next {
+    display: inline-block;
+  }
+
+  .previous a:before {
+    content: "« "
+  }
+
+  .next a:after {
+    content: " »"
+  }
+
+  // First breakpoint
+  @include pages-breakpoint($pages-breakpoint1) {
+
+    // When there are active indicators show them
+    // Using a double class here to win over future breakpoints
+    .pages-indicator.pages-indicator--active {
+      display: inline-block;
+    }
+
+    // The first and last item in the paginator
+    .first,
+    .last {
+      display: inline-block;
+    }
+
+    // Show indicators on smaller screen when other pages are hidden
+    // This way we'll never have "<previous 1 3 4 5 next>"
+    // But we'll have "<previous 1 ... 3 4 5 next>"
+    .pages-indicator--offset-2,
+    .pages-indicator--offset-3,
+    .pages-indicator--offset-4,
+    .pages-indicator--offset-5,
+    .pages-indicator--offset-6,
+    .pages-indicator--offset-7 {
+      display: inline-block;
+    }
+  }
+
+  @include pages-breakpoint($pages-breakpoint2) {
+    // Show items next to active item
+    .offset-1 {
+      display: inline-block;
+    }
+
+    // And hide indicator to make room
+    .pages-indicator--offset-2 {
+      display: none;
+    }
+  }
+
+  @include pages-breakpoint($pages-breakpoint3) {
+    // Show items 2 spots next to active item
+    .offset-2 {
+      display: inline-block;
+    }
+
+    // And hide indicator to make room
+    .pages-indicator--offset-3 {
+      display: none;
+    }
+  }
+
+  @include pages-breakpoint($pages-breakpoint4) {
+    // Show items 3 spots next to active item
+    .offset-3 {
+      display: inline-block;
+    }
+
+    // And hide indicator to make room
+    .pages-indicator--offset-4 {
+      display: none;
+    }
+  }
+
+  @include pages-breakpoint($pages-breakpoint5) {
+    // Show items 3 spots next to active item
+    .offset-4 {
+      display: inline-block;
+    }
+
+    // And hide indicator to make room
+    .pages-indicator--offset-5 {
+      display: none;
+    }
+  }
+
+  @include pages-breakpoint($pages-breakpoint6) {
+    // Show items 3 spots next to active item
+    .offset-5 {
+      display: inline-block;
+    }
+
+    // And hide indicator to make room
+    .pages-indicator--offset-6 {
+      display: none;
+    }
+  }
+
+  @include pages-breakpoint($pages-breakpoint7) {
+    // Show items 3 spots next to active item
+    .offset-6 {
+      display: inline-block;
+    }
+
+    // And hide indicator to make room
+    .pages-indicator--offset-7 {
+      display: none;
+    }
+  }
+
+  @include pages-breakpoint($pages-breakpoint8) {
+    // Show items 3 spots next to active item
+    .offset-7 {
+      display: inline-block;
+    }
+
+    // And hide indicator to make room
+    .pages-indicator--offset-8 {
+      display: none;
+    }
+  }
+
+  @include pages-breakpoint($pages-breakpoint9) {
+    // Show items 3 spots next to active item
+    .offset-8 {
+      display: inline-block;
+    }
+
+    // And hide indicator to make room
+    .pages-indicator--offset-9 {
+      display: none;
+    }
+  }
+}
+
+@import "cosmetics/cosmetics";

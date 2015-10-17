@@ -1,0 +1,40 @@
+// Cosmetic
+@if $pages-cosmetics == true {
+  .pagination {
+    padding: 0;
+    margin: $pages-margin;
+    text-align: center;
+
+    li {
+      margin: $pages-item-margin;
+      padding: 0;
+      list-style: none;
+
+      &.page {
+        .pagination-item {
+          text-decoration: none; // No underlines on circle links
+          width: $pages-item-size;
+          height: $pages-item-size;
+          border-radius: $pages-item-size;
+          line-height: $pages-item-size;
+          background: $pages-item-background;
+          color: $pages-item-color;
+          box-shadow: $pages-item-shadow;
+
+        }
+        
+        a:hover {
+          background: $pages-item-hover;
+        }
+
+        &.current-page {
+          .pagination-item {
+            background: $pages-item-active;
+            box-shadow: $pages-item-active-shadow;
+            color: $pages-item-active-color;
+          }
+        }
+      }
+    }
+  }
+}
