@@ -283,6 +283,32 @@ footer {
   text-align: center;
 }
 
+/*********************/
+/* CONTENT */
+/*********************/
+figcaption {
+  display: box;
+  font-size: .8em;
+}
+
+.content-image {
+  text-align: center;
+}
+
+.content-youtube {
+  margin: 0 auto;
+  width: 420px;
+  height: 315px;
+  text-align: center;
+
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
