@@ -1,3 +1,7 @@
 - article on minification + versioning + cdn
 - article on events or pubsub in polymer
 - article on VR
+
+- pick two fonts
+- color scheme
+- update header
