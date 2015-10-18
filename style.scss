@@ -211,30 +211,45 @@ img {
 }
 
 nav {
+  display: table;
   float: right;
-  margin-top: 23px; // @TODO: Vertically middle align
+  margin-top: 10px;
   font-family: $helveticaNeue;
+  line-height: 20px;
   font-size: 18px;
 
-  @include mobile {
-    float: none;
-    margin-top: 9px;
-    display: block;
-    font-size: 16px;
-  }
-
   a {
-    margin-left: 20px;
+    margin-top: 10px;
+    display: table-cell;
+    vertical-align: middle;
     color: $darkGray;
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
 
     @include mobile {
-      margin: 0 10px;
+      display: inline-block;
       color: $blue;
     }
   }
+
+  a.about {
+    padding-right: 10px;      
+  }
+
+  @include mobile {
+    float: none;
+    margin-top: 9px;
+    display: block;
+    font-size: 16px;
+
+    a.about {
+      display: block;
+      text-align: center;
+      padding-right: 0;      
+    }
+  }
+
 }
 
 //
@@ -300,18 +315,50 @@ figcaption {
 }
 
 .content-youtube {
-  margin: 0 auto;
-  width: 420px;
-  height: 335px;
   text-align: center;
+  margin: 0 auto;
+  width: 720px;
+
+  @include mobile {
+    width: 390px;
+  }
 
   iframe {
     width: 100%;
-    height: 315px;
+    height: 405px;
+    @include mobile {
+      height: 221px; 
+    }
+  }
+}
+
+.content-youtube.fourbythree {
+  iframe {
+    height: 540px;
+    @include mobile {
+      height: 315px;
+    }
   }
 }
 
 
+/*********************/
+/* ABOUT */
+/*********************/
+.about-title {
+  a {
+    vertical-align: middle;
+    display: inline-block;
+    position: relative;
+    top: -2px;
+  }
+
+  h1 {
+    line-height: 40px;
+    display: inline-block;
+    margin-right: 15px;
+  }
+}
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
