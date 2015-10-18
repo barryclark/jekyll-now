@@ -9,7 +9,9 @@ Hello friend (I hope)!
 
 My name is Mikaël Gramont, originally from France. I go by Mika in the US, as it's nicer to my ears :p
 
-I'm a frontend developer, currently working at YouTube in San Bruno, CA. There are many titles out there for what I do: web developer, front-end engineer, UX engineer, etc. It doesn't matter, it's mostly about providing great experiences for users.
+I'm a frontend developer, currently working at YouTube in San Bruno, CA. There are many titles out there for what I do: web developer, front-end engineer, UX engineer, etc. Some might say I push pixels around, but those are haters. I like to think that I build high-quality, robust user interfaces, in line with today's standards.
+
+Okay I push pixels around, fine.
 
 ### Some background
 
