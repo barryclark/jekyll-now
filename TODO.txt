@@ -1,5 +1,0 @@
-- article on events or pubsub in polymer
-- article on VR
-
-- color scheme
-- update header

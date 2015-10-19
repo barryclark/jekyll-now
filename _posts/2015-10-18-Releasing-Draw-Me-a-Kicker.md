@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Releasing 'Draw Me a Kicker'
-tag: drawmeakicker
+tag: drawmeakicker,webgl
 ---
 
 Man, it feels good to ship stuff. After a few months just sitting on this project while it was 90% done, I finally launched [Draw Me a Kicker](http://drawmeakicker.com/). It's not completely finished, and it will be a bit buggy for a while, but I'll get to it. 
