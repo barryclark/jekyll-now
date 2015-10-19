@@ -15,15 +15,17 @@ Man, it feels good to ship stuff. After a few months just sitting on this projec
 I really started working on it in the summer of '14, but it was really just a toy running on my local machine at the time. Then after getting injured last winter, I had some time on my hands, so I thought I'd sign up for [DesignLab's really cool Design 101 class](http://trydesignlab.com/web-design-course/) and use that as my design project. By the way, I was really impressed by the class, I highly recommend it. Check out [what I did](http://trydesignlab.com/certificates/design-101/mika/) during the class. Alongside the design side of things, I cleaned up and extended the code, and thought I'd take on Polymer as a framework. Why not, right?
 
 ### The last mile is the longest
-
 Over the last few weeks, I implemented the saving/loading from the database, as well as the sharing. I originally had not thought the whole saving/sharing thing through, and really only focused on designing the first two phases (designing and vizualising). Turns out that it shows, the UX isn't great! Hopefully I'll revisit, but since I'm not monetizing the project, that'll have to wait.
 
 Since I didn't want to go with Node or Mongo/Couch, I stuck with PHP and MySQL which are things my other sites are running on, so I had to write the code myself instead of dropping a couple of require's, which sucked because ORM is the most boring thing ever. Anyway
 
 The last steps were about implementing a minimum of performance best practices (concatenation, minification, vulcanizing components) and making sure things worked outside Chrome (!). For that I picked up Gulp for the first time, and was really pleasantly surprised. Such fast, very efficiency, wow!
 
-### What's next
+### What I've learned
+I've learned a bunch about ThreeJS (it's really great): building and texturing custom geometry on the fly, loading JSON objects, rendering text in 3D, and probably a few other things I forget. Hopefully I'll get some of those in writing.
+I'll probably write a short thing about Polymer and what my first impression has been, too.
 
+### What's next
 Some of the things I intend to do over the next few weeks:
 
 - clean up the UI a bit.

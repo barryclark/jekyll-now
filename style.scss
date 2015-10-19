@@ -36,7 +36,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 
   line-height: 1.7;
-  margin: 1em 0 15px;
+  margin: 0 0 1em;
   padding: 0;
 
   @include mobile {
@@ -152,7 +152,7 @@ img {
 //
 
 .wrapper-masthead {
-  margin-bottom: 50px;
+  margin: 0 0 50px 0;
 }
 
 .masthead {
@@ -259,13 +259,33 @@ nav {
 //
 
 .posts > .post {
-  padding-bottom: 2em;
-  border-bottom: 1px solid $lightGray;
+  padding: 1em;
+  border: 1px solid #eee;
+  margin: 1em 0;
+  background: #fcfcfc;
 }
 
 .posts > .post:last-child {
-  padding-bottom: 1em;
-  border-bottom: none;
+}
+
+.posts > .post:after {
+    -moz-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -moz-transform: rotate(-2deg);
+    -ms-transform: rotate(-2deg);
+    -webkit-transform: rotate(-2deg);
+    /* transform: rotate(-2deg); */
+    position: absolute;
+    left: -25%;
+    bottom: -135px;
+    content: '';
+    pointer-events: none;
+    z-index: -1;
+    width: 150%;
+    height: 200px;
+    background: inherit;  
 }
 
 .post {
@@ -294,6 +314,10 @@ nav {
 
 .wrapper-footer {
   margin-top: 50px;
+}
+
+.wrapper-footer,
+.wrapper-masthead {
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
   background-color: $lightGray;

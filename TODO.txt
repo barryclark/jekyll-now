@@ -1,4 +1,3 @@
-- article on minification + versioning + cdn
 - article on events or pubsub in polymer
 - article on VR
 

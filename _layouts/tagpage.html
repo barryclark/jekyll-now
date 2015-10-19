@@ -6,12 +6,14 @@ layout: default
 
 {{ content }}
 
-Articles about this:
+<h3>Articles about this:</h3>
 
 <ul>
-{% for post in site.tags[page.tag] %}
-  <li>
-    {{ post.date | date: "%B %d, %Y" }}: <a href="{{ post.url }}">{{ post.title }}</a>
-  </li>
+{% for post in site.posts %}
+	{% if post.tag contains page.tag %}
+	  <li>
+	    {{ post.date | date: "%B %d, %Y" }}: <a href="{{ post.url }}">{{ post.title }}</a>
+	  </li>
+	{% endif %}		
 {% endfor %}
 </ul>
