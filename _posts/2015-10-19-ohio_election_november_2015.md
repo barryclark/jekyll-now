@@ -8,8 +8,8 @@ This is just some general information and links about the issues in Ohio, or, mo
 
 [Montgomery County Board of Elections Website](http://www.mcboe.org)
 
-[Issues list AS A PDF!!!](http://www.mcohio.org/document_center/BoardElections/November_3__2015___Issues_List.pdf)
-[Candidates list AS A PDF!!!](http://www.mcohio.org/document_center/BoardElections/Candidates_9_1_15.pdf)
+[Issues list AS A PDF!!!](http://www.mcohio.org/document_center/BoardElections/November_3__2015___Issues_List.pdf) <br />
+[Candidates list AS A PDF!!!](http://www.mcohio.org/document_center/BoardElections/Candidates_9_1_15.pdf) <br />
 
 ### State of Ohio Proposed Constitutional Amendments
 
@@ -29,21 +29,20 @@ Additional 1 mill for the purpose of capital improvements & essential educationa
 
 #### Dayton Municipal Court Judge
 
-##### Carl S. Henderson
+* Carl S. Henderson
 
 #### Dayton Municipal Court Judge
 
-##### Colette Moorman
-
-##### Mia Wortham Spells
+* Colette Moorman
+* Mia Wortham Spells
 
 #### Clerk of Dayton Municipal Court
 
-##### Mark E. Owens
+* Mark E. Owens
 
 #### Dayton Commission
 
-Darryl Fairchild
-Matt Joseph
-Chris Shaw
-Scott Sliver            
+* Darryl Fairchild
+* Matt Joseph
+* Chris Shaw
+* Scott Sliver            
