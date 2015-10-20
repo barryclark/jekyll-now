@@ -15,9 +15,22 @@ This is just some general information and links about the issues in Ohio, or, mo
 
 #### Issue 1 : Proposal to establish the bipartisan Ohio Redistricting Commission
 
+* [This issue on ballotpedia.org](http://ballotpedia.org/Ohio_Bipartisan_Redistricting_Commission_Amendment,_Issue_1_%282015%29)
+* [Libertarian Party of Ohio says no](https://www.lpo.org/elections/state-ballot-issues/701-lpo-recommends-no-vote-on-ballot-issue-1)
+* [Ohio Green Party says yes](http://www.ohiogreens.org/story/green-party-ohio-announces-recommendations-ohio-statewide-ballot-issues)
+
 #### Issue 2 : Proposal to prohibit any petitioner from using the Ohio Constitution to grant a monopoly, oligopoly, or cartel
 
+* [This issue on ballotpedia.org](http://ballotpedia.org/Ohio_Initiated_Monopolies_Amendment,_Issue_2_%282015%29)
+* [Libertarian Party of Ohio says no](https://www.lpo.org/elections/state-ballot-issues/702-lpo-recommends-no-vote-on-ballot-issue-2)
+* [Ohio Green Party says no](http://www.ohiogreens.org/story/ohio-green-party-withdraws-support-issue-2)
+* [Ohio Green Party previously said yes](http://www.ohiogreens.org/story/green-party-ohio-announces-recommendations-ohio-statewide-ballot-issues)
+
 #### Issue 3 : Proposal to permit marijuana growing, cultivation, extraction, & manufacturing facilities, retail stores & not-for-profit medical marijuana dispensaries
+
+* [This issue on ballotpedia.org](http://ballotpedia.org/Ohio_Marijuana_Legalization_Initiative_%282015%29)
+* [Libertarian Party of Ohio says no](https://www.lpo.org/elections/state-ballot-issues/703-lpo-recommends-no-vote-on-ballot-issue-3)
+* [Ohio Green Party says no](http://www.ohiogreens.org/story/green-party-ohio-announces-recommendations-ohio-statewide-ballot-issues)
 
 ### Proposed Tax Levy
 
