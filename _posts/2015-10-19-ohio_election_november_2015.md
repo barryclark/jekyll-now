@@ -49,7 +49,10 @@ A "[mill](https://en.wikipedia.org/wiki/Mill_%28currency%29)" is a thousandth of
 #### Dayton Municipal Court Judge
 
 * Colette Moorman
+  * [Campaign website](http://colettemoormanforjudge.nationbuilder.com/)
+  * [Facebook page](https://www.facebook.com/colettemoormanforjudge)
 * Mia Wortham Spells
+  * [Campaign website](https://miaspells.com/)
 
 #### Clerk of Dayton Municipal Court
 
