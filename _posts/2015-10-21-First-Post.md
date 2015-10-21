@@ -9,5 +9,5 @@ Let me be the first to say. I _hate_ FatCow. God. It's so slow. TouchMe users, I
 
 Soon, I will be transitioning everything to this GitHub page which is lighting fast and super awesome.  Stay tuned!
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
+
 
