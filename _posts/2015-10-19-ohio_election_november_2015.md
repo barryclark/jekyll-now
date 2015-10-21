@@ -38,7 +38,7 @@ This is just some general information and links about the issues in Ohio, or, mo
 
 Additional 1 mill for the purpose of capital improvements & essential educational operations, starting 2016 and lasting for 8 years.
 
-A "mill" is a thousandth of a dollar, like a cent is a hundredth of a dollar. This is per dollar taxed, probably property tax. In Dayton I think it's 35% of what Dayton asseses the value of your property. So, if Dayton thinks your house is worth $100,000, then you're taxed on $35,000, so this tax would increase your taxes by $35 a year.
+A "[mill](https://en.wikipedia.org/wiki/Mill_%28currency%29)" is a thousandth of a dollar, like a [cent](https://en.wikipedia.org/wiki/Cent_%28currency%29) is a hundredth of a dollar. This is per dollar taxed, probably [property tax](https://en.wikipedia.org/wiki/Property_tax). In Dayton I think it's 35% of what Dayton asseses the value of your property. So, if Dayton thinks your house is worth $100,000, then you're taxed on $35,000, so this tax would increase your taxes by $35 a year.
 
 ### Candidates
 
