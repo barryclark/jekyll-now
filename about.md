@@ -4,12 +4,8 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+This is the place that I am going to collect my writing and thoughts on a wide range of subjects, from my professional practise , business projects and music. 
 
-### More Information
+# Contact me
 
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+I will install a contact form shortly, in the meantime, @timbailey will get to me via Twitter.
