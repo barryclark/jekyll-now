@@ -1,0 +1,321 @@
+.leftBorder{
+border-left:1px solid #ccc;
+padding:2%;
+min-height:650px !important;
+}
+
+.appSummary{
+padding-bottom:10px;
+border-bottom:1px solid #ccc;
+padding-left:10px;
+}
+
+.appSummaryTitle{
+font-size:17px;
+font-weight:bold;
+color:#000;
+margin-top:5px;
+}
+
+.appSummaryCompany{
+font-size:14px;
+font-weight:bold;
+}
+
+.underline{
+text-decoration:underline;
+color:#000;
+}
+
+
+.noMarginLeft{
+margin-left:0 !important;
+}
+
+.pageHeader{
+border-bottom:1px solid #ccc;
+text-align:center;
+font-size:18px;
+font-weight:bold;
+padding-bottom:20px;
+padding-top:10px;
+}
+
+.detailedPolicy{
+border-bottom:1px solid #ccc;
+padding-top:10px;
+padding-bottom:10px;
+padding-left:10px;
+}
+
+.clear{
+clear:both;
+}
+
+.topPad{
+margin-top:10px;
+}
+
+.data-collected{
+background-color:#f4f4f4;
+margin-top:10px;
+}
+
+.btn{
+font-weight:bold;
+ display: inline-block !important;
+    vertical-align: middle !important;
+}
+
+.btn.disabled{
+background-color:#EEEEEE !important;
+opacity: 0.5 !important;
+font-weight:normal;
+}
+
+.appIntro{
+padding-left:10px;
+padding-right:10px;
+}
+
+.noPad{
+padding:0px !important;
+}
+
+.data-collected-body{
+padding-top:10px;
+padding-left:10px;
+padding-bottom:10px;
+}
+
+.security{
+padding:10px;
+}
+
+.data-collected-body .btn , .security .btn{
+width:125px;
+margin-top:5px;
+min-height:40px;
+}
+
+.sub-section{
+display:none;
+}
+
+.floatLeft{
+float:left;
+}
+
+.floatRight{
+float:right;
+}
+
+.rightPad{
+margin-right:10px;
+}
+
+.goBack{
+float:left;
+width:40px;;
+margin-top:10px;
+margin-left:10px;
+margin-bottom:10px
+
+}
+
+.pageTitle{
+float:left;
+width:80%;
+text-align:center;
+font-size:150%;
+font-weight:bold;
+margin-top:20px;
+}
+
+.thickBottom{
+border-bottom:2px solid #ccc;
+margin-bottom:20px;
+}
+
+.showMobile, showDesktop{
+display:none;
+}
+
+
+.itemRow{
+margin-bottom:10px;
+margin-left:10px;
+}
+
+.itemActive{
+width:20%;
+float:left;
+}
+
+.itemName{
+width:80%;
+font-weight:bold;
+margin-top:5px;
+float:left;
+}
+ 
+.itemName a{
+color:#000;
+}
+
+.itemName a:hover{
+text-decoration:none !important;
+}
+
+.itemDetails{
+display:none;
+font-weight:normal;
+}
+
+.padLeft{
+margin-left:10px;
+}
+
+.padRight{
+margin-left:10px;
+}
+
+.dm-icon{
+float:left;
+width:25%;
+}
+
+.dm-icon-box{
+float:left;
+width:65px;
+border:1px solid #ccc;
+height:65px;
+}
+
+.dm-icon-name{
+width:75px;
+text-align:center;
+margin-top:10px;
+}
+
+.dm-row{
+margin-top:10px;
+}
+
+
+.social-icon{
+float:left;
+width:20%;
+}
+
+.social-icon-box{
+float:left;
+width:50px;
+border:1px solid #ccc;
+height:51px;
+}
+
+.social-icon-name{
+width:55px;
+text-align:center;
+margin-top:10px;
+font-size:85%;
+line-height:1.3em;
+}
+
+.social-row{
+margin-top:10px;
+margin-bottom:10px;
+}
+
+
+
+.bottomPad{
+margin-bottom:15px;
+}
+
+.tick-list{
+margin-left:10px;
+margin-top:10px;
+}
+
+.tick-item{
+font-size:80%;
+}
+
+.tick-item img{
+vertical-align:middle;
+margin-right:5px;
+
+}
+
+.btnLink{
+border:1px solid #ccc;
+padding:5px;
+display:block;
+color:#000;
+width:90%;
+}
+
+.btnLink a{
+color:#000;
+}
+
+
+.appSummaryName a{
+color:#000;
+
+}
+
+.contactOption{
+border:1px solid #ccc;
+padding:5px;
+margin:5px;
+}
+
+.contactClose{
+font-weight: bold;
+    margin-left: 232px;
+    margin-top: 1px;
+    position: absolute;
+    z-index: 1;
+}
+
+.contactClose a{
+color:#000;
+}
+
+.contactOptions{
+    display:none;
+
+position:absolute;
+border:1px solid #ccc;
+padding:5px;
+z-index:1;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+-webkit-box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.75);
+-moz-box-shadow:    0px 0px 5px rgba(50, 50, 50, 0.75);
+box-shadow:         0px 0px 5px rgba(50, 50, 50, 0.75);
+background-color:#FFF;
+width:250px;
+margin-left:20px;
+margin-top:20px;
+}
+
+/* responsive */
+
+@media (max-width: 768px) { 
+.data-collected-body .btn , .security .btn{
+width:122px;
+}
+
+
+body {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+  }
+
+
+
