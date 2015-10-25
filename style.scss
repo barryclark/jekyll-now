@@ -19,21 +19,20 @@ html {
 
 body {
 	background: $lightGray;
-  font: 18px/1.4 $helvetica;
+  font-family: 'Roboto', sans-serif;
   color: $darkGray;
 }
 
 .container {
   margin: 0 auto;
-  max-width: 740px;
+  max-width: 900px;
   padding: 0 10px;
   width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
+  font-family: 'Roboto', sans-serif;
   color: $darkerGray;
-  font-weight: 600;
   
   line-height: 1.7;
   margin: 1em 0 15px;
@@ -45,7 +44,7 @@ h1, h2, h3, h4, h5, h6 {
 }
   
 h1 {  
-  font-weight: 500;
+  font-weight: 700;
   font-size: 32px;
   a {
     color: inherit;
@@ -149,11 +148,12 @@ img {
 
 .wrapper-masthead {
   margin-bottom: 50px;
+    background-color: $darkGray;
+  color: $white;
 }
 
 .masthead {
-  padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
+  padding:  10px;
   
   @include mobile {
     text-align: center;
@@ -189,7 +189,7 @@ img {
 
 .site-name {
   margin: 0;
-  color: $darkGray;
+  color: $lightGray;
   cursor: pointer;
   font-family: $helveticaNeue; 
   font-weight: 300;
