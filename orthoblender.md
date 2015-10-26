@@ -10,7 +10,7 @@ permalink: /orthoblender/
 
 <H5>Search for multispecies orthologs</H5>
 <p>
-Tables are organized by reference to individual protein coding genes.</p>
+Tables are organized by reference to individual protein coding genes. Note: Orthologs are defined at the phylogenetic level of Last Universal Common Ancestor</p>
 <p>
 <b></b>Enter a <a href="https://raw.githubusercontent.com/clairemcwhite/clairemcwhite.github.io/master/humanProteomeDetails.tsv"> Uniprot Accession </a> to pull a table of orthologs to that protein.<br> ex. P00395</b>
 </p>
