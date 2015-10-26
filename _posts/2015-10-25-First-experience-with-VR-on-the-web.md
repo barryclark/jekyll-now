@@ -28,7 +28,7 @@ Of course at this point, the environment is a little... bare. But the 3d effect 
 Surprisingly, the hardest part was handling fullscreen mode. I hadn't played with that API much before, and while I understand the security concerns behind its design, it just kind of sucks to use: you can only go into fullscreen from the exact event listener that is triggered when clicking an element. You can't use `CustomEvent` or some kind of pubsub. And then the API doesn't give you a way to tell whether you're in fullscreen or not. You end up writing crap like this:
 
 ```javascript
-// this.rendererEl is the DOM element <Three class="js"></Three> renders to.
+// this.rendererEl is the DOM element three.js renders to.
 var isFullScreen = (
 	window.innerHeight == this.rendererEl.clientHeight &&
     window.innerWidth == this.rendererEl.clientWidth
@@ -48,6 +48,7 @@ And then there's the bad:
 - As far as I can tell, there isn't a standard way to access controls through Carboard on the web (I'm thinking of the magnet). Some people claim conductive tape can be leveraged. Maybe I'll give that a shot!
 - The phone tends to shut the screen off pretty quickly as it doesn't know you're interacting with it, and there's no API for that.
 
+### The easier way with WebVR boilerplate
 To address that last point, I was thinking of hacking something with a `<video>` element. Turns out serendipity brought [Boris Smus's WebVR boilerplate](https://github.com/borismus/webvr-polyfill) project to my attention, and he's already addressed it.This was great news because I wasn't going to be able to find a solution to the iPhone version for a while I think. The [wakelock](https://github.com/borismus/webvr-boilerplate/blob/master/src/wakelock.js) code is pretty straightforward.
 
 ### Conclusion
