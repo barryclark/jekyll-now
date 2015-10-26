@@ -137,3 +137,12 @@ h2.postHeader {
     		color: inherit;
   	}
 }
+
+.pagination {
+	text-align: center;
+	font-size: 0.8em;
+	
+	a {
+		color: $darkGray;
+	}
+}
