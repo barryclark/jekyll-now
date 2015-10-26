@@ -51,6 +51,7 @@ And then there's the bad:
 - As far as I can tell, there isn't a standard way to access controls through Carboard on the web (I'm thinking of the magnet). Some people claim conductive tape can be leveraged. Maybe I'll give that a shot!
 - The phone tends to shut the screen off pretty quickly as it doesn't know you're interacting with it, and there's no API for that.
 
+### The easy way with WebVR boilerplate
 To address that last point, I was thinking of hacking something with a `<video>` element. Turns out serendipity brought [Boris Smus's WebVR boilerplate](https://github.com/borismus/webvr-polyfill) project to my attention, and he's already addressed it.This was great news because I wasn't going to be able to find a solution to the iPhone version for a while I think. The [wakelock](https://github.com/borismus/webvr-boilerplate/blob/master/src/wakelock.js) code is pretty straightforward.
 
 WebVR boilerplate also implements some kind of motion prediction that should also alleviate some of the lag, I look forward to digging into that.
