@@ -289,6 +289,7 @@ nav {
 footer {
   padding: 70px 0 0 0;
   text-align: center;
+  border-top: 1px solid $lightGray;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
