@@ -154,9 +154,13 @@ h2.postHeader {
 .pagination {
 	text-align: center;
 	font-size: 0.8em;
+	float: none;
+	margin: 0px;
 	
 	a {
 		color: $darkGray;
+		margin: 0;
+		letter-spacing: inherit;
 	}
 }
 
