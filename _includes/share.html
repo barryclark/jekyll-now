@@ -1,6 +1,8 @@
-{% capture page_url %}
+{% capture page_url | strip_newlines | remove: ' ' %}
   {% if page.facebook_post %}
     {{ page.facebook_post }}
+  {% elsif page.linkedin_post %}
+    {{ page.linkedin_post }}
   {% else %}
     {{ site.url }}{{ page.url }}
   {% endif %}
@@ -8,11 +10,11 @@
 
 <!-- LinkedIn Share -->
 <script src="https://platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
-<script type="IN/Share" data-url="{{ page_url | strip_newlines | remove: ' ' }}" data-counter="right"></script>
+<script type="IN/Share" data-url="{{ page_url }}" data-counter="right"></script>
 
 <!-- Facebook Like & Share -->
   <div class="fb-like" 
-    data-href="{{ page_url | strip_newlines | remove: ' ' }}" 
+    data-href="{{ page_url }}" 
     data-layout="standard" 
     data-action="like" 
     data-share="true"
