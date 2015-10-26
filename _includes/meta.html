@@ -5,6 +5,8 @@
 
 {% if page.url == "/index.html" %}
     <link rel="canonical" href="{{ site.url }}" />
+{% elsif page.facebook_post %}
+    <link rel="canonical" href="{{ page.facebook_post }}" />
 {% else %}
     <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
 {% endif %}
