@@ -1,8 +1,8 @@
 <!-- meta tags from meta.html -->
 <meta charset="utf-8" />
-<meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
-<meta http-equiv='X-UA-Compatible' content='IE=edge'>
-<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+<meta content='text/html; charset=utf-8' http-equiv='Content-Type' />
+<meta http-equiv='X-UA-Compatible' content='IE=edge' />
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
 
 {% if page.url == "/index.html" %}
     <link rel="canonical" href="{{ site.url }}" />
@@ -18,7 +18,7 @@
 {% if page.excerpt %}
     <meta name="description" content="{{ page.excerpt| strip_html | replace:'"','&quot;' }}" />
 {% else %}
-    <meta name="description" content="{{ site.description }}">
+    <meta name="description" content="{{ site.description }}" />
 {% endif %}
 
 <meta name="author" content="Joseph Hendrix" />
@@ -43,7 +43,7 @@
 </span>
 
 {% for tag in page.tags %}
-    <meta itemprop="keywords" content="{{ tag | replace:'_',' ' }}"/>
+    <meta itemprop="keywords" content="{{ tag | replace:'_',' ' }}" />
 {% endfor %}
 
 {% if page.image %}
