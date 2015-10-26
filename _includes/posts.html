@@ -11,7 +11,9 @@
       <h2 itemprop="headline" class="postHeader">
         <a href="{{ post.url }}" itemprop="url">
           {% if post.facebook_post %}
-            <i class="svg-icon facebook" style="margin-right: 9px; top: 9px; position: relative;"></i>
+            <i class="svg-icon facebook social_post"></i>
+          {% elsif post.linkedin_post %}
+            <i class="svg-icon linkedin social_post"></i>
           {% endif %}
           {{ post.title }}
         </a>
