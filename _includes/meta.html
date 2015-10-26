@@ -7,6 +7,8 @@
     <link rel="canonical" href="{{ site.url }}" />
 {% elsif page.facebook_post %}
     <link rel="canonical" href="{{ page.facebook_post }}" />
+{% elsif page.linkedin_post %}
+    <link rel="canonical" href="https://www.linkedin.com/{{ page.linkedin_post }}" />
 {% else %}
     <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
 {% endif %}
