@@ -13,7 +13,7 @@ layout: default
     
     {% for page in (1..paginator.total_pages) %}
       {% if page == paginator.page %}
-        <em>{{ page }}</em>
+        {{ page }}
       {% elsif page == 1 %}
         <a href="/">{{ page }}</a>
       {% else %}
