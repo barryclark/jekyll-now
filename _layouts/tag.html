@@ -9,7 +9,7 @@ layout: default
     {% for tag in tags %}
       {% capture page_name %}/tags/{{ tag[0] | replace: ' ', '_' }}/{% endcapture %}
       <a href="{{ page_name }}" 
-        {% if forloop.first or page.name == page_name %}
+        {% if forloop.first or page.title == tag[0] %}
           class="{% if page.title == tag[0] %}selected{% endif %} {% if forloop.first %}first{% endif %}"
         {% endif %}>
         {{ tag[0] }}
