@@ -5,10 +5,13 @@
 
 {% if page.url == "/index.html" %}
     <link rel="canonical" href="{{ site.url }}" />
+    <link rel="alternate" href="{{ site.url }}" hreflang="en-us" /> 
 {% elsif page.facebook_post %}
     <link rel="canonical" href="{{ page.facebook_post }}" />
+    <link rel="alternate" href="{{ page.facebook_post }}" hreflang="en-us" /> 
 {% else %}
     <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+    <link rel="alternate" href="{{ site.url }}{{ page.url }}" hreflang="en-us" /> 
 {% endif %}
 
 {% if page.excerpt %}
