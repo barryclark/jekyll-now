@@ -24,11 +24,12 @@
 
 	{% if page.isPost %}
 	<body itemscope itemtype="http://schema.org/BlogPosting">
-	{% elsif page.url == "/index.html" or page.url contains "/tags/" %}
+	{% elsif page.url == "/index.html" or page.url contains "/tags/" or page.url contains "/page" %}
 	<body itemscope itemtype="http://schema.org/Blog">
     {% else %}
 	<body>
     {% endif %}
+    	{% include meta.html %}
   
 	    {% include facebook.html %}
 	    
