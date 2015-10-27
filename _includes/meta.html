@@ -22,32 +22,3 @@
 {% endif %}
 
 <meta name="author" content="Joseph Hendrix" />
-
-{% if page.url == "/index.html" %}
-    <meta itemprop="url" content="{{ site.url }}" />
-{% else %}
-    <meta itemprop="url" content="{{ site.url }}{{ page.url }}" />
-{% endif %}
-
-<span itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="Joseph Hendrix" />
-    <span itemprop="alumniOf" itemscope itemtype="http://schema.org/CollegeOrUniversity">
-        <meta itemprop="name" content="Wright State University" />
-    </span>
-    <span itemprop="alumniOf" itemscope itemtype="http://schema.org/CollegeOrUniversity">
-        <meta itemprop="name" content="Sinclair Community College" />
-    </span>
-    <span itemprop="alumniOf" itemscope itemtype="http://schema.org/HighSchool">
-        <meta itemprop="name" content="Xenia High School" />
-    </span>
-</span>
-
-{% for tag in page.tags %}
-    <meta itemprop="keywords" content="{{ tag | replace:'_',' ' }}" />
-{% endfor %}
-
-{% if page.image %}
-    <meta itemprop="image" content="{{ site.url }}{{ page.image }}" />
-{% else %}
-    <meta itemprop="image" content="{{ site.avatar }}" />
-{% endif %}
