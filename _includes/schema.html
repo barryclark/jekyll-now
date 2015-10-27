@@ -24,7 +24,7 @@
 {% unless page.tags %}
 {% for tag in site.tags %}
 tag
-    <meta itemprop="keywords" content="{{ tag[0] | replace:'_',' ' }}" />
+    <meta itemprop="keywords" content="{{ tag[0] }}" />
 {% endfor %}
 {% endunless %}
 
