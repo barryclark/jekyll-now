@@ -21,6 +21,11 @@
 {% for tag in page.tags %}
     <meta itemprop="keywords" content="{{ tag | replace:'_',' ' }}" />
 {% endfor %}
+{% unless page.tags %}
+{% for tag in site.tags %}
+    <meta itemprop="keywords" content="{{ tag | replace:'_',' ' }}" />
+{% endfor %}
+{% endunless %}
 
 {% if page.image %}
     <meta itemprop="image" content="{{ site.url }}{{ page.image }}" />
