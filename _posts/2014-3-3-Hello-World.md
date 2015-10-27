@@ -1,9 +1,8 @@
 ---
 layout: page
-title: Enter a Uniprot Accession number, ex. P00395
+title: First post tester
 ---
-Testing
-is this a page now?
+Testing, testing
 
 Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
 
