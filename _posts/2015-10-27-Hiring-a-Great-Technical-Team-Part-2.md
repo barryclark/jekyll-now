@@ -93,16 +93,16 @@ A nice opportunity for the recruiter to earn their bread and butter! :-)
 Some examples 
 
 ```
-* (Java) If 2 objects' hashCode returns the same value, these objects are always equal?
+- (Java) If 2 objects' hashCode returns the same value, these objects are always equal?
   1) true
   2) *false*
 
-* (Linux) Which command allows us to find text patterns inside text files?
+- (Linux) Which command allows us to find text patterns inside text files?
   1) df
   2) *grep*
   3) find
 
-* (Hadoop) If you fire a map-reduce job over some data with the default settings, how many reducers will be invoked?
+- (Hadoop) If you fire a map-reduce job over some data with the default settings, how many reducers will be invoked?
   1) None
   2) *One*
   3) Depends on the number of InputSplits
@@ -157,7 +157,7 @@ For example, for a server-side dev position you could have something like the fo
 Implement a REST service which, given a number, returns a JSON message with the Fibonacci sequence up to and including that number.
 The service must be implemented in language XYZ, must contain tests and be able to run from the command-line.
 Bonus points given for additional formats, caching, ability to choose algorithm etc etc
-``
+```
 
 Here you will have a chance to gage a multitude of the candidate's skills.
 
@@ -214,12 +214,13 @@ For v.0.1 of the system we are going to keep information at a minimum, say field
 This exercise gives out some information but not all.
 Its focus is on 3 things
 
-* get the candidate to ask probing questions \( *What device(s) is _anyone_ going to use*, 
+* Get the candidate to ask probing questions \( *What device(s) is _anyone_ going to use*, 
  *How many instances of XYZ can we have*, *What about...* \)
-* see if she is aware and can follow industry best practices (in this case REST/Avro/whatever design) 
-* see how this information is used to make sound design decisions
+* See if she is aware and can follow industry best practices (in this case REST/Avro/whatever design) 
+* See how this information is used to make sound design decisions
 
-When it comes to the architecture bit, there is really no right or wrong in this type of exercise; every technology has its pros and cons.
+When it comes to the architecture bit, there is really no right or wrong answer in this type of exercise; 
+every technology has its pros and cons.
  If you are looking for the *right answer*, then what you are really looking for is for random person to validate your existing design 
  decisions. This is wasting everyone's time (not to mention of monoculturalism again...)!
  
@@ -327,8 +328,6 @@ More than anything you want candidates leaving your building with the best impre
 This candidate may not have been a good fit, but a friend of hers might be. 
 
 Word of mouth is invaluable!
-
-
 
 
    [1]: http://sgerogia.github.io/Hiring-a-Great-Technical-Team-Part-1/
