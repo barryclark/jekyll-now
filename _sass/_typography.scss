@@ -16,3 +16,9 @@ small,
 .small {
   font-size: 0.707rem;
 }
+
+sup {
+  position: relative;
+  vertical-align: middle;
+  top: -0.9ex;
+}
