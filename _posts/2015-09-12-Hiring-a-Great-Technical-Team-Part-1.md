@@ -80,7 +80,7 @@ critical transactions, etc
 
 ## Candidate search 
 
-So now that we have a killer job description, we can kick back and wait for CVs to poor in, right?
+So now that we have a killer job description, we can kick back and wait for CVs to pour in, right?
 
 Well,... not quite!
 
