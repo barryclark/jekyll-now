@@ -41,6 +41,6 @@ integer1 == autobox1 -> false
 integer1 == integer2 -> false
 ```
 
-As expected, the two ints are equal and the two Integers are not. I didn't know what to expect for the rest.
+As expected, the two `int`s are equal and the two `Integer`s are not. I didn't know what to expect for the rest.
 
 The moral of the story is to (almost) always use `.equals()` when available, since it will have consistent results.
