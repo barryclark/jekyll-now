@@ -102,6 +102,11 @@ of a <span class="red">post</span> <span class="mid-gray">with</span> <span clas
 
 I don't recommend using blue, though. It looks like a <span class="blue">link</span>.
 
+### Footnotes!
+
+Markdown footnotes are supported, and they look great! Simply put e.g. `[^1]` where you want the footnote to appear,[^1] and then add
+the reference at the end of your markdown.
+
 ### Stylish blockquotes included
 
 You can use the markdown quote syntax, `>` for simple quotes.
@@ -124,3 +129,7 @@ Checkout the [Github repository](https://github.com/johnotander/pixyll) to reque
 or add, features.
 
 Happy writing.
+
+---
+
+[^1]: Important information that may distract from the main text can go in footnotes.
