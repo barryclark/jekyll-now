@@ -50,6 +50,10 @@ layout: default
   <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 {% endif %}
 
+{% if site.facebook_comments %}
+  <div class="fb-comments" data-href="{{ site.url }}{{ page.url }}" data-width="100%" data-numposts="{{ site.facebook_comments_number }}"></div>
+{% endif %}
+
 {% if site.show_related_posts %}
   <h3 class="related-post-title">Related Posts</h3>
   {% for post in site.related_posts %}
