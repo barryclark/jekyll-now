@@ -23,12 +23,12 @@ body {
   color: $darkGray;
 }
 
-.container {
-  margin: 0 auto;
-  max-width: 1200px;
-  padding: 0 10px;
-  width: 100%;
-}
+//.container {
+//  margin: 0 auto;
+// max-width: 1200px;
+//  padding: 0 10px;
+//  width: 100%;
+//}
 
 
 
@@ -149,7 +149,7 @@ img {
 /* LAYOUT / SECTIONS */
 /*********************/
 
-/*
+/*From https://github.com/karloespiritu/BlackDoc/blob/master/public/css/blackdoc.css
  * Sidebar
  *
  * Flexible banner for housing site name, intro, and "footer" content. Starts
@@ -174,12 +174,12 @@ img {
   }
 }
 
-/* Sidebar links */
+/* Sidebar linkshttps://github.com/karloespiritu/BlackDoc/blob/master/public/css/blackdoc.css */
 .sidebar a {
   color: #caad00;
 }
 
-/* About section */
+/* About section https://github.com/karloespiritu/BlackDoc/blob/master/public/css/blackdoc.css*/
 .sidebar-about h1 {
   color: #caad00;
   margin-top: 0;
@@ -188,7 +188,7 @@ img {
 
 }
 
-/* Sidebar nav */
+/* Sidebar nav https://github.com/karloespiritu/BlackDoc/blob/master/public/css/blackdoc.css*/
 .sidebar-nav {
   margin-bottom: 1rem;
 }
@@ -205,7 +205,7 @@ a.sidebar-nav-item:focus {
 }
 
 /* Sticky sidebar
- *
+ *https://github.com/karloespiritu/BlackDoc/blob/master/public/css/blackdoc.css
  * Add the `sidebar-sticky` class to the sidebar's container to affix it the
  * contents to the bottom of the sidebar in tablets and up.
  */
@@ -220,6 +220,31 @@ a.sidebar-nav-item:focus {
 }
 
 
+/* Container
+ *https://github.com/karloespiritu/BlackDoc/blob/master/public/css/blackdoc.css
+ * Align the contents of the site above the proper threshold with some margin-fu
+ * with a 25%-wide `.sidebar`.
+ */
+
+.content {
+  padding-top:    4rem;
+  padding-bottom: 4rem;
+}
+
+@media (min-width: 48em) {
+  .content {
+    max-width: 38rem;
+    margin-left: 20rem;
+    margin-right: 2rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .content {
+    margin-left: 22rem;
+    margin-right: 4rem;
+  }
+}
 
 
 
