@@ -17,10 +17,10 @@
         `layout: page` in the front-matter. See readme for usage.
       {% endcomment %}
 
-      {% assign pages_list = site.posts %}
-      {% for node in pages_list %}
+      {% assign posts_list = site.posts %}
+      {% for node in posts_list %}
         {% if node.title != null %}
-          {% if node.layout == "post" %}
+          {% if node.layout == "page" %}
             <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ site.baseurl }}{{ node.url  | remove_first: '/' }}">{{ node.title }}</a>
           {% endif %}
         {% endif %}
