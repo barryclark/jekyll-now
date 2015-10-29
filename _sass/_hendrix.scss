@@ -169,6 +169,12 @@ h2.postHeader {
 	position: relative;
 }
 
+.fb-post-container {
+	position: relative;
+}
+
 .fb-post {
-	
+    	left: 50%;
+    	margin-right: -50%;
+    	transform: translate(-50%, 0);
 }
