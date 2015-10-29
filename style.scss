@@ -335,7 +335,7 @@ nav {
 
     @include mobile {
       margin: 0 10px;
-      color: $blue;
+      color: #43a16f;
     }
   }
 }
@@ -371,6 +371,7 @@ nav {
   .read-more {
     text-transform: uppercase;
     font-size: 15px;
+    color: $gray;
   }
 }
 
