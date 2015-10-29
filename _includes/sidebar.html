@@ -1,18 +1,37 @@
 
 
-<div class="intro">
-    <p>
+
+<div class="sidebar">
+  <div class="container sidebar-sticky">
+ 
+
      <h3>About Me</h3>
         I'm a Cell and Molecular Biology PhD student in the <a href="http://marcottelab.org/index.php/Main_Page">Marcotte Lab</a> at the University of Texas at Austin, with the Center for Systems and Synthetic Biology.
-    </p>
-    <p>
-        <H6>Projects</H6>
-      
-        <font size="3">Check out <a href="http://clairemcwhite.github.io/orthoblender"><b>OrthoBlender</b></a>, a tool which summarizes multispecies orthology predictions from a variety of algorithms in a convenient table format.<br>
-        Want to know the platypus, rat, and sea anenome orthologs to your gene of interest? <a href="http://clairemcwhite.github.io/orthoblender"><b>OrthoBlender</b></a> will get you those genes and tell you which algorithms predict them.
-        
-         </font>
-    
-    </p>
-    
+ 
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}">Home</a>
+
+      {% comment %}
+        The code below dynamically generates a sidebar nav of pages with
+        `layout: page` in the front-matter. See readme for usage.
+      {% endcomment %}
+
+      {% assign pages_list = site.pages %}
+      {% for node in pages_list %}
+        {% if node.title != null %}
+          {% if node.layout == "page" %}
+            <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ site.baseurl }}{{ node.url  | remove_first: '/' }}">{{ node.title }}</a>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+
+      <a class="sidebar-nav-item" href="{{ site.github.repo }}/archive/master.zip">Download</a>
+      <hr>
+      <a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub project</a>
+      <span class="sidebar-nav-item">Currently v{{ site.version }}</span>
+    </nav>
+
+    <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
+  </div>
 </div>
