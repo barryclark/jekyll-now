@@ -12,6 +12,6 @@ Kathy Serria, a great blogger, once posted a graph on her [Creating Passionate U
 When starting to learn something new I want to get above the "I suck" threshold as quickly as possible and then move towards the "I kick ass" threshold.
 Without feedback of a community of people I can end up on the dropout curve.
 
-For a number of months, I've been trying to learn functional programming by learning the Clojure language.  It has been slow going I feel like I am on the dropout curve.
-To that end I have created the [Glasgow Functional Programming Group](http://www.meetup.com/Glasgow-Functional-Programming-Group/) to find other people looking to avoid the dropout curve.
+For a number of months, I've been trying to learn functional programming by learning the Clojure language.  It has been slow going. I feel like I am on the dropout curve.
+To that end I have created the [Glasgow Functional Programming Group](http://www.meetup.com/Glasgow-Functional-Programming-Group/) to find other people looking to avoid the dropout curve and support each other towards being kick-ass.
 
