@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 
 ## Starting a community from scratch
