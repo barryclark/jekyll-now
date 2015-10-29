@@ -1,1 +1,6 @@
+type: CNAME
+host: www.coagutrack.com
+answer: Senil5.github.io
+TTL: 300
 
+50.63.202.41
