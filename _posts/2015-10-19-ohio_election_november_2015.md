@@ -67,5 +67,8 @@ A "[mill](https://en.wikipedia.org/wiki/Mill_%28currency%29)" is a thousandth of
   * [Dayton Daily News 2012 Article: Community activist announces run for Dayton Commission](http://www.daytondailynews.com/news/news/local-govt-politics/community-activist-announces-run-for-dayton-commis/nTcj2)
   * [Bellbrook UMC pdf on him](http://www.bellbrookumc.org/docs/church/darryl_fairchild.pdf)
 * Matt Joseph
+  * [Campaign website](http://www.mattjoseph.com)
+  * [My Store: Matt Joseph](http://www.welcomedayton.org/my-story-matt-joseph)
+  * [City of Dayton Web Page](http://www.cityofdayton.org/CCO/pages/commissionermattjoseph.aspx)
 * Chris Shaw
 * Scott Sliver            
