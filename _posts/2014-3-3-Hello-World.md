@@ -3,10 +3,16 @@ layout: post
 title: Up and running with Jekyll!
 ---
 
-Hooray! this is my first blog post using Jekyll.
+เย้~! โพสต์แรกของเรากับ Jekyll (เจอคิ้ล) ถือเป็นการเดินทางเขียนบล็อกครั้งใหม่ หลังจากี่ห่างหายไปนาน กลับมาคราวนี้ก็แตกต่างไปจากทุกๆครั้ง เพราะเราไม่ได้เขียนด้วย Wordpress อีกแล้ว 
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+หลังจากที่บล็อกเก่าๆที่ผ่านมา ได้ล้มหายตายจากกันไป เพราะใช้ตัว Wordpress ไปฝากไว้ตามฟรีโฮสต์ แชร์โฮสต์ทั่วไป แต่ครั้งนี้เราเลือกที่จะย้ายเว็บทั้งหมดมาอยู่บน Github ชุมชน Open Source ที่ทั้งให้เราฝากสคริป คัดลอกสคริปคนอื่น รวมไปถึงฝากเว็บ html อีกด้วย และนั่นจึงเป็นที่มาของเว็บไซต์ และบล็อกแห่งนี้
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
+เนื่องจากว่า Github มีบริการที่ชื่อว่า Github Pages สำหรับฝากเว็บไซต์ html โดยเฉพาะ ผนวกกับโปรเจค Jekyll ที่ช่วยทำให้ html ธรรมดาๆ กลายเป็นเว็บบล็อกได้อย่างสมบูรณ์แบบ เพียงเขียนไฟล์ .md (markdown) สำหรับแต่ละโพสต์ โพสต์ของเราก็จะถูกแปลงด้วย template กลายเป็นบล็อกโดยสมบูรณ์ 
 
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
+ถือเป็นการเปลี่ยนแปลงครั้งใหญ่ (มาก) สิ่งที่รู้สึกแตกต่างไปจากเดิมมากคือ "ความเร็ว" หลังจากที่ใช้โฮสต์ฟรีและแชร์โฮสต์มานาน การเปลี่ยนมาใช้ Github นี่เรียกว่าจากเต่ามาเป็นชีตาร์เลยทีเดียว เร็วและแรง แถมยังฟรี อะไรมันจะดีถึงเพียงนี้
+
+อ่านมาถึงตรงนี้ เพื่อนๆอาจจะคิดว่าเราคงมาอวย Github เป็นแน่แท้ ที่จริงก็อยากจะอวยนะ แต่สำหรับใครที่คิดจะฝากเว็บไว้กับ Github แบบฟรีๆ ก็ต้องระวังไว้อย่างนึงว่า Source code ทั้งหมดของเราจะต้องเป็น Public ทุกๆคนจะสามารถเข้าถึงไฟล์ของเราได้ (และยัง copy ไปได้ง่ายมากๆอีกด้วย) 
+
+โพสต์ต่อไป จะมาเขียนวิธีการสร้างบล็อกด้วย Jekyll แล้วพบกันค่ะ
+
+Happy Blogging :)
