@@ -27,7 +27,7 @@ One trip to the grocery store bulk section later, I had about two pounds of gumm
 I melted the groups of colored gummies in bowls in the microwave, since the stovetop gave my trial run a strange caramelized flavor. After a molten mass of sugar had cooled enough to handle, I pressed balls of gummy substance into each mold. Wetting my hands made the sticky melted gummy much easier to handle.
 ![candy in molds](/images/candyinmolds.jpg)
 
-Twenty minutes in the freezer solified the water bear gummies. At this point, the texture seemed all wrong, much too soft and gooey.  However, the signature gummy bear consistency returned after overnight in the refrigerator on an oiled baking tray. A spray of canola oil over all the bears in the morning reduced the stickiness. For the clear gummies, I also added green sprinkles to imitate the balls of digested algae which are visible in the translucent water bear body under a light microscope. 
+Twenty minutes in the freezer solified the water bear gummies. At this point, the texture seemed all wrong, much too soft and gooey.  However, the signature gummy bear consistency returned after overnight in the refrigerator on an oiled baking tray. A spray of canola oil over all the bears in the morning reduced the stickiness. For the clear gummies, I also added green sprinkles to imitate the balls of digested algae which are visible in the translucent water bear body under a light microscope. I made a few rounds of chocolate water bears, which came out a little messy, but still tasty.
 
 ![final product](/images/alltree.jpg)
 *algae-sprinkle, dark chocolate, and red water bear gummy bears*
