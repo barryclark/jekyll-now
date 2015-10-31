@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Making water bear gummy bears
+title: Eight legged treats:  Making water bear gummy bears
 ---
 ![Wikipedia tardigrade](/images/tardigrade.jpg)
 <br>*Bob Goldstein and Vicky Madden, http://tardigrades.bio.unc.edu/*
