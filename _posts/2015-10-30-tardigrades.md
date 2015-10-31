@@ -30,7 +30,7 @@ I melted the groups of colored gummies in bowls in the microwave, since the stov
 Twenty minutes in the freezer solified the water bear gummies. At this point, the texture seemed all wrong, much too soft and gooey.  However, the signature gummy bear consistency returned after overnight in the refrigerator on an oiled baking tray. A spray of canola oil over all the bears in the morning reduced the stickiness. For the clear gummies, I also added green sprinkles to imitate the balls of digested algae which are visible in the translucent water bear body under a light microscope. I finally made a few rounds of chocolate water bears, which came out a little messy, but still tasty.
 
 ![final product](/images/alltree.jpg)
-*algae-sprinkle, dark chocolate, and red gummy water bears*
+*Algae-sprinkle, dark chocolate, and red gummy water bears*
 
 It definitely wasn't a high throughput process but I ended up with a good number of gummy water bears, which were enjoyed at lab meeting. 
 ![candies](/images/allcandies.jpg)
