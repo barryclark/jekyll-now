@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Eight legged treats - Making water bear gummy bears
+title: Eight legged treats - Making gummy water bears
 ---
 <img src="https://raw.githubusercontent.com/clairemcwhite/clairemcwhite.github.io/master/images/closeup.jpg" width="600"/>
 <br>*SEM:Bob Goldstein and Vicky Madden, http://tardigrades.bio.unc.edu/*
@@ -9,7 +9,7 @@ Water bears (tardigrades) have become our unofficial lab pet, partly because UT 
 In the break room one day, Ophelia and I realized that water bears kind of look like living gummy bears.  Water bears. Gummy bears.  We needed make water bear gummy bears!  
 
 
-Following some false starts with clay models, I decided to 3D print a plastic positive mold, and then use it to make a silicone candy mold. Using openSCAD, I made a series of a water bears in the style of a gummy bears, seated in a tray to contain the silicone goo. 
+Following some white board sketching and clay models, I decided to 3D print a plastic positive mold, and then use it to make a silicone candy mold. Using openSCAD, I made 10 water bears in the style of a gummy bears, seated in a tray to contain the silicone goo. 
 
 ![Thingiverse preview](/images/waterbearthing.png)
 <br>*[Link](http://www.thingiverse.com/thing:1096026) to model on Thingiverse*
@@ -23,16 +23,16 @@ One trip to the grocery store bulk section later, I had a ton of gummy bears. We
 ![molds](/images/gummybears.jpg)
 *Too many gummy bears*
 
-I melted the groups of colored gummies in the microwave, since the stovetop gave my trial run a strange caramelized flavor. After the molten mass of sugar had cooled enough to handle, I pressed balls of gummy substance into each mold. Wetting my hands made the melted gummy much easier to handle.
+I melted the groups of colored gummies in the microwave, since the stovetop gave my trial run a strange caramelized flavor. After a molten mass of sugar had cooled enough to handle, I pressed balls of gummy substance into each mold. Wetting my hands made the melted gummy much easier to handle.
 ![candy in molds](/images/candyinmolds.jpg)
 
-For the clear gummies, I also added green sprinkles to simulate to balls of digested algae visible in the translucent water bear body under a light microscope. Twenty minutes in the freezer solified the water bear gummies enough for removal from the mold. At this point, the texture seemed all wrong, much too soft and gooey.  However, the signature gummy bear consistency returned after overnight in the refrigerator on an oiled baking tray. Also, a spray of canola oil over all the bears in the morning reduced the stickiness. 
+Twenty minutes in the freezer solified the water bear gummies. At this point, the texture seemed all wrong, much too soft and gooey.  However, the signature gummy bear consistency returned after overnight in the refrigerator on an oiled baking tray. Also, a spray of canola oil over all the bears in the morning reduced the stickiness. For the clear gummies, I also added green sprinkles to imitate the balls of digested algae which are visible in the translucent water bear body under a light microscope. 
 
 ![final product](/images/alltree.jpg)
 *algae-sprinkle, dark chocolate, and red water bear gummy bears*
 
-It wasn't a very high throughput process, but I ended up with a good number of gummy water bears, which were enjoyed at lab meeting. 
-![candy in trays](/images/allcandies.jpg)
+It definitely wasn't a high throughput process but I ended up with a good number of gummy water bears, which were enjoyed at lab meeting. 
+![candies](/images/allcandies.jpg)
 
 
 
