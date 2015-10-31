@@ -2,7 +2,7 @@
 layout: page
 title: Eight legged treats - Making water bear gummy bears
 ---
-![Wikipedia tardigrade](/images/tardigrade.jpg)
+![Wikipedia tardigrade](/images/closeup.jpg)
 <br>*Bob Goldstein and Vicky Madden, http://tardigrades.bio.unc.edu/*
 
 Tardigrades(water bears) have become the unofficial lab pet, partially because UT won't let us have vertebrates, but mainly because of how awesome and wierd they are. This [New York Times article](http://www.nytimes.com/2015/09/08/science/the-tardigrade-water-bear.html?_r=0) is a great introduction to this eight-legged, funny-faced animal.  Water bears fall phylogenetically somewhere between arthropods and nematodes, and spend most of their time hanging out on algae clumps and [ineffectively swimming](https://www.youtube.com/watch?v=xl-9bSv27WU) with their stubby little legs. While water bears are generally adorable, they are most notorious for their ability to survive complete dehydration, freezing, and the cold vacuum of space.  
@@ -29,7 +29,7 @@ I melted the groups of colored gummies in the microwave, since the stovetop gave
 
 For the clear gummies, I also added green sprinkles to simulate to balls of digested algae visible in the translucent water bear body under a light microscope. Twenty minutes in the freezer solified the water bear gummies enough for removal from the mold. At this point, the texture seemed all wrong, much too soft and gooey.  However, the signature gummy bear consistency returned after overnight in the refrigerator on an oiled baking tray. Also, a spray of canola oil over all the bears in the morning reduced the stickiness. 
 
-![closeup](/images/closeup.jpg)
+![closeup](/images/allthree.jpg)
 *Red, dark chocolate, and algae-sprinkle water bear gummy bears*
 
 It wasn't a very high throughput process, but I ended up with a good number of gummy water bears, which were enjoyed at lab meeting. 
