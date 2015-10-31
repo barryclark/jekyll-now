@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Water bear gummy bears
+title: Making water bear gummy bears
 ---
 ![Wikipedia tardigrade](/images/tardigrade.jpg)
 <br>*Bob Goldstein and Vicky Madden, http://tardigrades.bio.unc.edu/*
