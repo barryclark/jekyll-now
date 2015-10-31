@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Water bear gummy bear
+title: Water bear gummy bears
 ---
 ![Wikipedia tardigrade](/images/tardigrade.jpg)
 <br>*Bob Goldstein and Vicky Madden, http://tardigrades.bio.unc.edu/*
@@ -15,22 +15,22 @@ Following some false starts with clay models, I decided to 3D print a plastic po
 ![Thingiverse preview](/images/waterbearthing.png)
 <br>*[Link](http://www.thingiverse.com/thing:1096026) to model on Thingiverse*
 
-After the MakerBot printed first a too small and then a correctly sized mold, I mixed up some food grade silicone, and left it to set in the molds overnight.  
+After the MakerBot printed first a too small and then a just right sized mold, I mixed up some food grade silicone, and left it to set in the molds overnight.  
 
 ![molds](/images/siliconsetting.jpg)
-*Removing the silicone from plastic mold was not easy*
+*Removing the silicone from plastic mold in the morning was not easy*
 
 One trip to the grocery store bulk section later, I had a ton of gummy bears. Well, about two pounds of gummy bears.  
 ![molds](/images/gummybears.jpg)
 *Too many gummy bears*
 
-I melted groups of colored gummies in the microwave, since the stovetop gave my trial run a strange caramelized flavor. After the molten mass of sugar had cooled enough to handle, I pressed balls of gummy substance into each mold. Wetting my hands made the melted gummy much easier to handle.
+I melted the groups of colored gummies in the microwave, since the stovetop gave my trial run a strange caramelized flavor. After the molten mass of sugar had cooled enough to handle, I pressed balls of gummy substance into each mold. Wetting my hands made the melted gummy much easier to handle.
 ![candy in molds](/images/candyinmolds.jpg)
 
 For the clear gummies, I also added green sprinkles to simulate to balls of digested algae visible in the translucent water bear body under a light microscope. Twenty minutes in the freezer solified the water bear gummies enough for removal from the mold. At this point, the texture seemed all wrong, much too soft and gooey.  However, the signature gummy bear consistency returned after overnight in the refrigerator on an oiled baking tray. Also, a spray of canola oil over all the bears in the morning reduced the stickiness. 
 
 ![closeup](/images/closeup.jpg)
-*Red, dark chocolate, and algae-containing water bear gummy bears*
+*Red, dark chocolate, and algae-sprinkle water bear gummy bears*
 
 It wasn't a very high throughput process, but I ended up with a good number of gummy water bears, which were enjoyed at lab meeting. 
 ![candy in trays](/images/allcandies.jpg)
