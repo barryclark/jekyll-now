@@ -2,7 +2,7 @@
 layout: page
 title: Eight legged treats - Making gummy water bears
 ---
-<img src="https://raw.githubusercontent.com/clairemcwhite/clairemcwhite.github.io/master/images/closeup.jpg" width="600"/>
+<img src="https://raw.githubusercontent.com/clairemcwhite/clairemcwhite.github.io/master/images/closeup.jpg" width="500"/>
 <br>*SEM:Bob Goldstein and Vicky Madden, http://tardigrades.bio.unc.edu/*
 
 Water bears (tardigrades) have become our unofficial lab pet, partly because UT won't let us have vertebrates, but mainly because of how awesome they are. This [New York Times article](http://www.nytimes.com/2015/09/08/science/the-tardigrade-water-bear.html?_r=0) is a great introduction to this eight-legged, funny-faced animal.  <br>Water bears fall phylogenetically somewhere between arthropods and nematodes, and spend most of their time hanging out on algae clumps and [ineffectively swimming](https://www.youtube.com/watch?v=xl-9bSv27WU) with their stubby little legs. While water bears are generally adorable, they are most notorious for their ability to survive complete dehydration, freezing, and the cold vacuum of space.  
