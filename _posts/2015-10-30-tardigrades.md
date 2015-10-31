@@ -7,7 +7,8 @@ title: Eight legged treats - Making gummy water bears
 
 Water bears (tardigrades) have become our unofficial lab pet, partly because UT won't let us keep vertebrates, but mainly because of how awesome they are. This [New York Times article](http://www.nytimes.com/2015/09/08/science/the-tardigrade-water-bear.html?_r=0) is a great introduction to this eight-legged squishy micro-animal.  Also, [this short documentary](https://www.youtube.com/watch?v=o9kPQ0GY_W8) gives a more detailed look at tardigrades under the microscope, showing off their muscle structure and digestive system.
     
-Water bears sit somewhere between arthropods and nematodes on the tree of life, and spend most of their time hanging out on algae clumps and [ineffectively swimming](https://www.youtube.com/watch?v=xl-9bSv27WU) with their stubby little legs. While water bears are generally adorable, they are most notorious for their ability to survive complete dehydration, freezing, and the cold vacuum of space.  <br>
+Water bears sit somewhere between arthropods and nematodes on the tree of life, and spend most of their time hanging out on algae clumps and [ineffectively swimming](https://www.youtube.com/watch?v=xl-9bSv27WU) with their stubby little legs. While water bears are generally adorable, they are most notorious for their ability to survive complete dehydration, freezing, and the cold vacuum of space.  
+
 In the break room one day, Ophelia and I realized that water bears resemble living gummy bears.  Water bears. Gummy bears.  We needed make water bear gummy bears!  
 
 Following some white board sketching with Angela and Anna and a few clay models, I decided to 3D print a plastic positive mold, and then use it to make a silicone candy mold. Using openSCAD, I made 10 water bears in the style of a gummy bears, seated in a tray to contain the silicone goo. 
