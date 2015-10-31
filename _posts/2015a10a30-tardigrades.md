@@ -10,12 +10,12 @@ Tardigrades(water bears) have become the unofficial lab pet, partially because U
 In the break room one day, Ophelia and I realized that water bears kind of look like living gummy bears.  Water bears. Gummy bears.  We needed make water bear gummy bears!  
 
 
-Following some false starts with clay models, I decided to 3D print a plastic positive mold, and then use it to make a silicon candy mold. Using openSCAD, I made a series of a water bears in the style of a gummy bears, seated in a tray to contain the silicon. 
+Following some false starts with clay models, I decided to 3D print a plastic positive mold, and then use it to make a silicon candy mold. Using openSCAD, I made a series of a water bears in the style of a gummy bears, seated in a tray to contain the silicon goo. 
 
 ![Thingiverse preview](/images/waterbearthing.png)
-<br>*[link](http://www.thingiverse.com/thing:1096026) to model on Thingiverse*
+<br>*[Link](http://www.thingiverse.com/thing:1096026) to model on Thingiverse*
 
-After the MakerBot printed a too small and right sized mold, I mixed up some food grade silicon, and left it to set in the molds overnight.  
+After the MakerBot printed first a too small and then a correctly sized mold, I mixed up some food grade silicon, and left it to set in the molds overnight.  
 
 ![molds](/images/candyinmolds.jpg)
 *One down, one to go*
