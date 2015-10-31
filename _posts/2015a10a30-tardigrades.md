@@ -2,7 +2,7 @@
 layout: page
 title: Water bear gummy bear
 ---
-![Image description](/images/tardigrade.jpg)
+![Wikipedia tardigrade](/images/tardigrade.jpg)
 <br>*Bob Goldstein and Vicky Madden, http://tardigrades.bio.unc.edu/*
 
 Tardigrades(water bears) have become the unofficial lab pet, partially because UT won't let us have vertebrates, but mainly because of how awesome and wierd they are. This [New York Times article](http://www.nytimes.com/2015/09/08/science/the-tardigrade-water-bear.html?_r=0) is a great introduction to this eight-legged, funny-faced animal.  Water bears fall phylogenetically somewhere between arthropods and nematodes, and spend most of their time hanging out on algae clumps and [ineffectively swimming](https://www.youtube.com/watch?v=xl-9bSv27WU) with their stubby little legs. While water bears are generally adorable, they are most notorious for their ability to survive complete dehydration, freezing, and the cold vacuum of space.  
@@ -12,12 +12,12 @@ In the break room one day, Ophelia and I realized that water bears kind of look 
 
 Following some false starts with clay models, I decided to 3D print a plastic positive mold, and then use it to make a silicon candy mold. Using openSCAD, I made a series of a water bears in the style of a gummy bears, seated in a tray to contain the silicon. 
 
-![Thingiverse preview](/images/waterbearthing.jpg)
+![Thingiverse preview](/images/waterbearthing.png)
 <br>*[link](http://www.thingiverse.com/thing:1096026) to model on Thingiverse*
 
 After the MakerBot printed a too small and right sized mold, I mixed up some food grade silicon, and left it to set in the molds overnight.  
 
-![molds](/images/waterbearthing.jpg)
+![molds](/images/candyinmolds.jpg)
 *One down, one to go*
 
 One trip to the grocery store bulk section later, I had a ton of gummy bears. 
