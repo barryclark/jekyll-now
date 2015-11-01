@@ -9,7 +9,7 @@ There are some questions that come along with that statement such as the followi
 
 1. Did you finally realize Blackberries should die?
 
-No. I loved my Z10 and am already missing a couple features like the Hub and gesture navigation. I had just had my phone ever since the developer Z10 was released in the 2013 and it was in rough shape. Besides a broken lock button and headphone jack and scratched screen and poor battery life, I just wanted a change.
+No. I loved my Z10 and am already missing a couple features like the Hub and gesture navigation. I have had my phone ever since the developer Z10 was released in 2013 and by now it was in rough shape. Besides a broken lock button and headphone jack and scratched screen and poor battery life, I just wanted a change.
 
 Now that BlackBerry has mostly shifted to corporate users, getting another one wouldn't really make sense. I enjoyed their attempt at catching on with the average consumer with the release of BB10, but the momentum never really caught on and by this point is gone for developers.
 
@@ -24,3 +24,7 @@ It's a really simple process to write blog posts on the go with Android and GitH
 The app lets you create new posts and drafts after authenticating with GitHub and commit to the repo. There are currently a few bugs on marshmallow, for example my attempt at previewing posts failed and some of the dialogs currently have missing confirmation buttons. But given what I'm trying to do, an app like MrHyde is a breath of fresh air after coming from a BlackBerry world.
 
 Now once I catch my own I'll see if it really holds up as a viable tool for writing regular posts going forward.
+
+## Update
+
+I messaged the developers and they fixed the missing dialog buttons that same day. Really pleased with the app so far.
