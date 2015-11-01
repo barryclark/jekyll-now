@@ -9,7 +9,7 @@ The Manjaro community is proud to present another update to the Gnome Edition in
 
 This release keeps to the style of the 15.09 release being that it is highly vanilla, but of course is up-to-date at the time of build and includes the latest Manjaro back-end infrastructure. Note this means a very vanilla Gnome configuration, it doesn't mean 'minimal', the full set of Gnome software and other apps are provided out-of-the-box.
 
-This release is produced based on the [26th of October stable branch update](https://manjaro.github.io/Update-2015-10-26_(stable)/), a few highlights:
+This release is produced based on the [1st of November stable branch update](https://manjaro.github.io/Update-2015-11-01_(stable)/), a few highlights:
 
 * Gnome 3.18.1
 * Linux kernel 4.1.12 LTS
