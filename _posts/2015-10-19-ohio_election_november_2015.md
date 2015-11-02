@@ -79,6 +79,10 @@ A "[mill](https://en.wikipedia.org/wiki/Mill_%28currency%29)" is a thousandth of
 #### Dayton School Board (vote for 3)
 
 * Robert C. Walker
+  * [NCCJ of Greater Dayton bio](http://www.nccjgreaterdayton.org/dr-robert-c-walker-bio) 
+  * [Facebook page](https://www.facebook.com/WalkerForDaytonPublicSchools)
 * John McManus
+  * [Campaign website](http://www.johnmcmanusfordayton.com)
 * Nancy Nerny
+  * [Someone's blog post on her from 2007](https://leftofdayton.wordpress.com/2007/10/29/nancy-nerny-for-dayton-school-board)
 * Sheila Taylor
