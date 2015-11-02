@@ -29,7 +29,8 @@ I received a total of four (4) postcards for this issue.
 
 ###### Endorsed by
 
-<ol class="two-column"><li>Greater Dayton Area Hospital Association </li>(GDAHA)
+<div class="two-column">
+<ol><li>Greater Dayton Area Hospital Association </li>(GDAHA)
 <li>Dayton Area Chamber of Commerce</li>
 <li>Montgomery County Commissioners</li>
 <li>Montgomery County Democratic Party</li>
@@ -49,6 +50,7 @@ I received a total of four (4) postcards for this issue.
 <li>Sinclair Trustees, Faculty and Staff Leaders</li>
 <li>United Way of Greater Dayton</li>
 <li>University of Dayton</li></ol>
+</div>
  
 #### Dayton Municipal Court Judge
 
