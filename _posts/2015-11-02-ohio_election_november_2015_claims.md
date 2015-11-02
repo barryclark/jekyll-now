@@ -68,39 +68,40 @@ I received three (3) postcards and one (1) piece of paper stuffed in my door for
 ###### Endorsed by
 
 <div style="display: flex;"><div style="flex: 1;">
-
-1. Leaders
- 1. A.J. Wagner
- 2. Bootsie Neal
- 3. Abner & Judy Orick
- 4. Tom Webb
- 5. Rev Dr Daryl Ward
- 6. Rev Dr Rod Kennedy
- 7. Rabbi David Sofian
- 8. Rev David Fox
- 9. Rev Paul Mitchell
- 10. Rev William Harris
- 11. Rev Ella Mitchell
- 12. Rev Rocknew Carter
- 13. Rev Ril Beatty
- 14. Rabbi Bernard Barsky
- 15. Rev Gerald Cooper
- 16. Rev Stephen Matlock
- 17. Rev John Maze
- 18. Rev Mark Hunt
- 19. Rev Jason Alspaugh
- 20. Rev Jerome McCorry
- 21. Rev William Bailey
- 22. Rev John Paddock
+<ol><li>Leaders<ol>
+ <li>A.J. Wagner</li>
+ <li>Bootsie Neal</li>
+ <li>Abner & Judy Orick</li>
+ <li>Tom Webb</li>
+ <li>Rev Dr Daryl Ward</li>
+ <li>Rev Dr Rod Kennedy</li>
+ <li>Rabbi David Sofian</li>
+ <li>Rev David Fox</li>
+ <li>Rev Paul Mitchell</li>
+ <li>Rev William Harris</li>
+ <li>Rev Ella Mitchell</li>
+ <li>Rev Rocknew Carter</li>
+ <li>Rev Ril Beatty</li>
+ <li>Rabbi Bernard Barsky</li>
+ <li>Rev Gerald Cooper</li>
+ <li>Rev Stephen Matlock</li>
+ <li>Rev John Maze</li>
+ <li>Rev Mark Hunt</li>
+ <li>Rev Jason Alspaugh</li>
+ <li>Rev Jerome McCorry</li>
+ <li>Rev William Bailey</li>
+ <li>Rev John Paddock</li>
+</ol></li></ol>
 
 </div><div style="flex: 1;">
 
-2. Neighbors
-3. Labor
- 1. Dayton Fraternal Order of Police, Lodge 44
- 2. Teamsters Local Union No 957
- 3. United Brotherhood of Carpenters Local Union 136
- 4. Ohio Civil Service Employees Association, AFSCME Local 11
- 5. Ironworkers Local 290
+<ol start="2"><li>Neighbors<ol></ol>
+<li>Labor<ol>
+ <li>Dayton Fraternal Order of Police, Lodge 44</li>
+ <li>Teamsters Local Union No 957</li>
+ <li>United Brotherhood of Carpenters Local Union 136</li>
+ <li>Ohio Civil Service Employees Association, AFSCME Local 11</li>
+ <li>Ironworkers Local 290</li>
+</ol></li></ol>
 
 </div></div>
