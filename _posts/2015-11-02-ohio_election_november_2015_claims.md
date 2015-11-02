@@ -47,6 +47,23 @@ I received a total of four (4) postcards for this issue.
 18. Sinclair Trustees, Faculty and Staff Leaders
 19. United Way of Greater Dayton
 20. University of Dayton
+ 
+#### Dayton Municipal Court Judge
+
+##### Colette Moorman
+
+I received two (2) postcards for this candidate. One of the postcards has (what I assume to be) negative information about her opponent, **Mia Wortham Spells**. This "negative information" is that Mia Wortham Spells is endorsed by the Miami Valley Trial Lawyers Association ("Trial Lawyers" is highlighted in yellow) and she is / was Assistant Dayton City Prosecuter for 5 years (I'm assuming this is "negative" because it's less than Colette Moorman's 12 years).
+
+###### Claims
+
+1. Assistant Dayton City Prosecuter for 12 years
+2. Assistant Kettering City Prosecuter for 2 years
+3. Full-time Dayton Municipal Court Magistrate for 10 years
+
+###### Endorsed by
+
+1. Dayton Fraternal Order of Police Lodge 44
+2. Mat H Heck, Jr
 
 #### Dayton Commission (vote for 2)
 
