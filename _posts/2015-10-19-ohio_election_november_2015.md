@@ -72,6 +72,6 @@ A "[mill](https://en.wikipedia.org/wiki/Mill_%28currency%29)" is a thousandth of
   * [City of Dayton Web Page](http://www.cityofdayton.org/CCO/pages/commissionermattjoseph.aspx)
 * Chris Shaw
   * [Campaign website](http://chrisshawfordayton.com)
-* Scott Sliver 
+* Scott Sliver
   * [Campaign website](http://www.electscottsliver.com)
   * [Facebook page](https://www.facebook.com/Elect-Scott-Sliver-1540960152841459)
