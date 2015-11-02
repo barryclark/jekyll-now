@@ -4,7 +4,7 @@
   category_gr: <b>Κατηγορία</b>
   category_en: <b>Category</b>
   location_gr: <b>Τοποθεσία</b>
-  location_gr: <b>Location</b>
+  location_en: <b>Location</b>
 
 - company_gr: The Cube
   company_en: The Cube
@@ -27,5 +27,13 @@
   url: http://k33n.co.uk
   category_gr: Παιδικά ρούχα
   category_en: Children's apparel
+  location_gr: Athens, Greece
+  location_gr: Αθήνα, Ελλάδα
+
+- company_gr: GourmetGR
+  company_en: GourmetGR
+  url: http://www.gourmetgr.com
+  category_gr: Καφές, σοκολάτα, τσάι και άλλα τρόφιμα
+  category_en: Coffee, chocolate, tea and other Greek foods
   location_gr: Athens, Greece
   location_gr: Αθήνα, Ελλάδα
