@@ -190,3 +190,9 @@ h2.postHeader {
     		transform: translate(0, 0);
     	}
 }
+
+.two-column {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+}
