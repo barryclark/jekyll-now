@@ -16,6 +16,8 @@ I received a total of four (4) postcards for this issue.
 
 ###### Claims
 
+<span style="-webkit-columns: 50% 2; -moz-columns: 50% 2; columns: 50% 2;">
+
 1. Make sure our WORKFORCE is well prepared for good jobs
 2. UP-TO-DATE labs, technology and training for future careers
 3. Guarantee Sinclair stays AFFORDABLE for students, young and old
@@ -24,6 +26,8 @@ I received a total of four (4) postcards for this issue.
 6. TEACHES the skills that keep jobs in Montgomery County
 7. More county residents go to Sinclair than any other college
 8. Sinclair graduates stay in the area, earn much higher salaries after graduation, and help our economy and community succeed
+
+</span>
 
 ###### Endorsed by
 
