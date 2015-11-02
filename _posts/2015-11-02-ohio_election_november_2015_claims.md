@@ -54,7 +54,7 @@ I received a total of four (4) postcards for this issue.
 
 I received three (3) postcards and one (1) piece of paper stuffed in my door for this candidate.
 
-##### Claims
+###### Claims
 
 1. proven leader
 2. track record of accomplishments
@@ -138,7 +138,7 @@ I received three (3) postcards and one (1) piece of paper stuffed in my door for
 
 I received two (2) postcards for this candidate. One of those postcards also was for Chris Shaw.
 
-##### Claims
+###### Claims
 
 The postcards say "re-elect", so Matt Joseph is an incumbent. One postcard has a paragraph saying:
 
@@ -159,3 +159,19 @@ The postcards say he will continue to / is committed to
 ###### Endorsed by
 
 1. The Fraternal Order of Police
+
+##### Chris Shaw
+
+I received one (1) postcard for this candidate. That postcard was also for Matt Joseph.
+
+###### Claims
+
+The postcards say he is committed to
+
+6. Hire more police officers to increase the safety of neighborhoods and citizens
+7. Use community policing techniques to increase visibility of police and resolve issues
+8. Increase funding for street paving in neighborhoods
+9. Develop technology, like the Dayton Delivers App, to improve customer service
+
+##### Scott Sliver
+
