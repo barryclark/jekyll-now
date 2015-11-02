@@ -10,7 +10,7 @@ Some information about you!
 
 ### Personal Information
 
-Hello World! My name is Ziyi Han, programming enthusiast from China. 
+Hello World! My name is Ziyi Han, a programming enthusiast from China. 
 
 ### Contact me
 
