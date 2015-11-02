@@ -16,8 +16,7 @@ I received a total of four (4) postcards for this issue.
 
 ###### Claims
 
-<div class="two-column">
-<ol><li>Make sure our WORKFORCE is well prepared for good jobs</li>
+<div class="two-column"><ol><li>Make sure our WORKFORCE is well prepared for good jobs</li>
 <li>UP-TO-DATE labs, technology and training for future careers</li>
 <li>Guarantee Sinclair stays AFFORDABLE for students, young and old</li>
 <li>Every Issue 13 dollar will be used here in Montgomery County. Residents here pay much lower tuition than anyone else.</li>
@@ -29,8 +28,7 @@ I received a total of four (4) postcards for this issue.
 
 ###### Endorsed by
 
-<div class="two-column">
-<ol><li>Greater Dayton Area Hospital Association </li>(GDAHA)
+<div class="two-column"><ol><li>Greater Dayton Area Hospital Association </li>(GDAHA)
 <li>Dayton Area Chamber of Commerce</li>
 <li>Montgomery County Commissioners</li>
 <li>Montgomery County Democratic Party</li>
@@ -49,8 +47,7 @@ I received a total of four (4) postcards for this issue.
 <li>NAACP Dayton Unit</li>
 <li>Sinclair Trustees, Faculty and Staff Leaders</li>
 <li>United Way of Greater Dayton</li>
-<li>University of Dayton</li></ol>
-</div>
+<li>University of Dayton</li></ol></div>
  
 #### Dayton Municipal Court Judge
 
@@ -77,17 +74,17 @@ I received three (3) postcards and one (1) piece of paper stuffed in my door for
 
 ###### Claims
 
-1. proven leader
-2. track record of accomplishments
-3. decades of advocating for the people of Dayton
-4. unparralleled knowledge of Dayton neighborhoods
-5. long-time justice worker
-6. visionary and creative thinker
-7. known for integrity and fairness
-8. born in Belmont, lives in Dayton View
-9. history of bringing together disparate groups
-10. family man
-11. smart, energetic, dedicated, independent
+<div class="two-column"><ol><li>proven leader</li>
+<li>track record of accomplishments</li>
+<li>decades of advocating for the people of Dayton</li>
+<li>unparralleled knowledge of Dayton neighborhoods</li>
+<li>long-time justice worker</li>
+<li>visionary and creative thinker</li>
+<li>known for integrity and fairness</li>
+<li>born in Belmont, lives in Dayton View</li>
+<li>history of bringing together disparate groups</li>
+<li>family man</li>
+<li>smart, energetic, dedicated, independent</li></ol></div>
 
 ###### Endorsed by
 
@@ -120,9 +117,7 @@ I received three (3) postcards and one (1) piece of paper stuffed in my door for
  </ol>
  </li>
 </ol>
-
 </div><div style="flex: 1;">
-
 <ol type="1" start="2">
  <li>Neighbors
  <ol type="a">
@@ -151,9 +146,7 @@ I received three (3) postcards and one (1) piece of paper stuffed in my door for
   <li>Ironworkers Local 290</li>
  </ol>
  </li>
-</ol>
-
-</div></div>
+</ol></div></div>
 
 ##### Matt Joseph
 
@@ -167,15 +160,15 @@ The postcards say "re-elect", so Matt Joseph is an incumbent. One postcard has a
 
 The postcards say he will continue to / is committed to
 
-1. Strengthen the city's safety and emergency service departments
-2. Encourage business development opportunities for the city
-3. Promote strong, safe neighborhoods
-4. Improve customer service at city hall
-5. Make Dayton a welcoming place for business and residents
-6. Hire more police officers to increase the safety of neighborhoods and citizens
-7. Use community policing techniques to increase visibility of police and resolve issues
-8. Increase funding for street paving in neighborhoods
-9. Develop technology, like the Dayton Delivers App, to improve customer service
+<div class="two-column"><ol><li>Strengthen the city's safety and emergency service departments</li>
+<li>Encourage business development opportunities for the city</li>
+<li>Promote strong, safe neighborhoods</li>
+<li>Improve customer service at city hall</li>
+<li>Make Dayton a welcoming place for business and residents</li>
+<li>Hire more police officers to increase the safety of neighborhoods and citizens</li>
+<li>Use community policing techniques to increase visibility of police and resolve issues</li>
+<li>Increase funding for street paving in neighborhoods</li>
+<li>Develop technology, like the Dayton Delivers App, to improve customer service</li></ol></div>
 
 ###### Endorsed by
 
