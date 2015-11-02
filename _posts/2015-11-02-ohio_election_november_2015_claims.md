@@ -17,16 +17,14 @@ I received a total of four (4) postcards for this issue.
 ###### Claims
 
 <span style="-webkit-columns: 50% 2; -moz-columns: 50% 2; columns: 50% 2;">
-
-1. Make sure our WORKFORCE is well prepared for good jobs
-2. UP-TO-DATE labs, technology and training for future careers
-3. Guarantee Sinclair stays AFFORDABLE for students, young and old
-4. Every Issue 13 dollar will be used here in Montgomery County. Residents here pay much lower tuition than anyone else.
-5. KEEPS Sinclair working with employers and universities to prepare us for new, growing jobs
-6. TEACHES the skills that keep jobs in Montgomery County
-7. More county residents go to Sinclair than any other college
-8. Sinclair graduates stay in the area, earn much higher salaries after graduation, and help our economy and community succeed
-
+<ol><li>Make sure our WORKFORCE is well prepared for good jobs</li>
+<li>UP-TO-DATE labs, technology and training for future careers</li>
+<li>Guarantee Sinclair stays AFFORDABLE for students, young and old</li>
+<li>Every Issue 13 dollar will be used here in Montgomery County. Residents here pay much lower tuition than anyone else.</li>
+<li>KEEPS Sinclair working with employers and universities to prepare us for new, growing jobs</li>
+<li>TEACHES the skills that keep jobs in Montgomery County</li>
+<li>More county residents go to Sinclair than any other college</li>
+<li>Sinclair graduates stay in the area, earn much higher salaries after graduation, and help our economy and community succeed</li></ol>
 </span>
 
 ###### Endorsed by
