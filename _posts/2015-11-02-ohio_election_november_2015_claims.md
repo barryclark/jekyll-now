@@ -29,26 +29,26 @@ I received a total of four (4) postcards for this issue.
 
 ###### Endorsed by
 
-1. Greater Dayton Area Hospital Association (GDAHA)
-2. Dayton Area Chamber of Commerce
-3. Montgomery County Commissioners
-4. Montgomery County Democratic Party
-5. Montgomery County Republican Party
-6. City of Dayton
-7. Chaminade Julienne High School
-8. City of Brookville
-9. City of Clayton
-10. Dayton Development Coalition
-11. The Dayton Foundation
-12. Dayton Metro Library
-13. Downtown Dayton Partnership
-14. Greater Dayton RTA
-15. Kettering City Schools
-16. Learn to Earn Dayton
-17. NAACP Dayton Unit
-18. Sinclair Trustees, Faculty and Staff Leaders
-19. United Way of Greater Dayton
-20. University of Dayton
+<ol class="two-column"><li>Greater Dayton Area Hospital Association </li>(GDAHA)
+<li>Dayton Area Chamber of Commerce</li>
+<li>Montgomery County Commissioners</li>
+<li>Montgomery County Democratic Party</li>
+<li>Montgomery County Republican Party</li>
+<li>City of Dayton</li>
+<li>Chaminade Julienne High School</li>
+<li>City of Brookville</li>
+<li>City of Clayton</li>
+<li>Dayton Development Coalition</li>
+<li>The Dayton Foundation</li>
+<li>Dayton Metro Library</li>
+<li>Downtown Dayton Partnership</li>
+<li>Greater Dayton RTA</li>
+<li>Kettering City Schools</li>
+<li>Learn to Earn Dayton</li>
+<li>NAACP Dayton Unit</li>
+<li>Sinclair Trustees, Faculty and Staff Leaders</li>
+<li>United Way of Greater Dayton</li>
+<li>University of Dayton</li></ol>
  
 #### Dayton Municipal Court Judge
 
