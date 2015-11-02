@@ -2,7 +2,21 @@
 layout: default
 ---
 
-<div class="posts">
+<div class="home" id="home">
+
+<table>
+{% for company in site.data.data %}
+  <tr text-align: center;>
+		<td text-align: center;><a href="{{company.url}}">{{company.company_gr}}</a></td>
+		<td text-align: center;>{{company.category_gr}}</td>
+		<td text-align: center;>{{company.location_gr}}</td>
+  </tr>
+{% endfor %}
+</table>
+
+</div>
+
+<!-- <div class="posts">
   {% for post in site.posts %}
     <article class="post">
 
@@ -15,4 +29,4 @@ layout: default
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
     </article>
   {% endfor %}
-</div>
+</div> -->
