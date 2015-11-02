@@ -68,40 +68,65 @@ I received three (3) postcards and one (1) piece of paper stuffed in my door for
 ###### Endorsed by
 
 <div style="display: flex;"><div style="flex: 1;">
-<ol><li>Leaders<ol>
- <li>A.J. Wagner</li>
- <li>Bootsie Neal</li>
- <li>Abner & Judy Orick</li>
- <li>Tom Webb</li>
- <li>Rev Dr Daryl Ward</li>
- <li>Rev Dr Rod Kennedy</li>
- <li>Rabbi David Sofian</li>
- <li>Rev David Fox</li>
- <li>Rev Paul Mitchell</li>
- <li>Rev William Harris</li>
- <li>Rev Ella Mitchell</li>
- <li>Rev Rocknew Carter</li>
- <li>Rev Ril Beatty</li>
- <li>Rabbi Bernard Barsky</li>
- <li>Rev Gerald Cooper</li>
- <li>Rev Stephen Matlock</li>
- <li>Rev John Maze</li>
- <li>Rev Mark Hunt</li>
- <li>Rev Jason Alspaugh</li>
- <li>Rev Jerome McCorry</li>
- <li>Rev William Bailey</li>
- <li>Rev John Paddock</li>
-</ol></li></ol>
+<ol>
+ <li>Leaders
+ <ol type="A">
+  <li>A.J. Wagner</li>
+  <li>Bootsie Neal</li>
+  <li>Abner & Judy Orick</li>
+  <li>Tom Webb</li>
+  <li>Rev Dr Daryl Ward</li>
+  <li>Rev Dr Rod Kennedy</li>
+  <li>Rabbi David Sofian</li>
+  <li>Rev David Fox</li>
+  <li>Rev Paul Mitchell</li>
+  <li>Rev William Harris</li>
+  <li>Rev Ella Mitchell</li>
+  <li>Rev Rocknew Carter</li>
+  <li>Rev Ril Beatty</li>
+  <li>Rabbi Bernard Barsky</li>
+  <li>Rev Gerald Cooper</li>
+  <li>Rev Stephen Matlock</li>
+  <li>Rev John Maze</li>
+  <li>Rev Mark Hunt</li>
+  <li>Rev Jason Alspaugh</li>
+  <li>Rev Jerome McCorry</li>
+  <li>Rev William Bailey</li>
+  <li>Rev John Paddock</li>
+ </ol>
+ </li>
+</ol>
 
 </div><div style="flex: 1;">
 
-<ol start="2"><li>Neighbors<ol></ol>
-<li>Labor<ol>
- <li>Dayton Fraternal Order of Police, Lodge 44</li>
- <li>Teamsters Local Union No 957</li>
- <li>United Brotherhood of Carpenters Local Union 136</li>
- <li>Ohio Civil Service Employees Association, AFSCME Local 11</li>
- <li>Ironworkers Local 290</li>
-</ol></li></ol>
+<ol start="2">
+ <li>Neighbors
+ <ol type="A">
+  <li>Beverly & Tony Henderson</li>
+  <li>Mary & Lee Wolf</li>
+  <li>Rev Dr Carolyn & John Bohler</li>
+  <li>Rev Kathy & Dick Schaefer</li>
+  <li>Youssef & Tricia Elzein</li>
+  <li>Doug & Sandra Barnum</li>
+  <li>Dwayne Johnson</li>
+  <li>Lisa Helm</li>
+  <li>Monica Snow</li>
+  <li>Darren Boykin</li>
+  <li>Len Roberts</li>
+  <li>Creola Reese</li>
+  <li>Fred England</li>
+  <li>Pat Lynch</li>
+  <li>Daria Dillard Stone</li>
+ </ol>
+ <li>Labor
+ <ol type="A">
+  <li>Dayton Fraternal Order of Police, Lodge 44</li>
+  <li>Teamsters Local Union No 957</li>
+  <li>United Brotherhood of Carpenters Local Union 136</li>
+  <li>Ohio Civil Service Employees Association, AFSCME Local 11</li>
+  <li>Ironworkers Local 290</li>
+ </ol>
+ </li>
+</ol>
 
 </div></div>
