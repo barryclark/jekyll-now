@@ -13,11 +13,11 @@ No. I loved my Z10 and am already missing a couple features like the Hub and ges
 
 Now that BlackBerry has mostly shifted to corporate users, getting another one wouldn't really make sense. I enjoyed their attempt at catching on with the average consumer with the release of BB10, but the momentum never really caught on and by this point is gone for developers.
 
-2. What does this have to do with Android Blogging?
+2. Why does a new phone mean more blogging?
 
-Right.
+There weren't any apps available for me on my BlackBerry to hook up to the Jekyll blogs made available through GitHub Pages. I know I could still go to GitHub on my phone and switch to desktop mode to edit a post, but for creating new ones and getting a good interface it was a pretty poor solution.
 
-# The Setup
+# Android Jekyll Client
 
 It's a really simple process to write blog posts on the go with Android and GitHub Pages. My first step was to find an app. After some digging I tried [MrHyde](https://github.com/FauDroids/MrHyde) and so far am really enjoying it.
 
