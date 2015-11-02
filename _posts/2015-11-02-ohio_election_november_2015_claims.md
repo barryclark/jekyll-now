@@ -68,6 +68,7 @@ I received three (3) postcards and one (1) piece of paper stuffed in my door for
 ###### Endorsed by
 
 <div style="display: flex;"><div style="flex: 1;">
+
 1. Leaders
  1. A.J. Wagner
  2. Bootsie Neal
@@ -91,7 +92,9 @@ I received three (3) postcards and one (1) piece of paper stuffed in my door for
  20. Rev Jerome McCorry
  21. Rev William Bailey
  22. Rev John Paddock
+
 </div><div style="flex: 1;">
+
 2. Neighbors
 3. Labor
  1. Dayton Fraternal Order of Police, Lodge 44
@@ -99,4 +102,5 @@ I received three (3) postcards and one (1) piece of paper stuffed in my door for
  3. United Brotherhood of Carpenters Local Union 136
  4. Ohio Civil Service Employees Association, AFSCME Local 11
  5. Ironworkers Local 290
+
 </div></div>
