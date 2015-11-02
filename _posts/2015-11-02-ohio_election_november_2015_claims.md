@@ -68,9 +68,9 @@ I received three (3) postcards and one (1) piece of paper stuffed in my door for
 ###### Endorsed by
 
 <div style="display: flex;"><div style="flex: 1;">
-<ol>
+<ol type="1" >
  <li>Leaders
- <ol type="A">
+ <ol type="a">
   <li>A.J. Wagner</li>
   <li>Bootsie Neal</li>
   <li>Abner & Judy Orick</li>
@@ -99,9 +99,9 @@ I received three (3) postcards and one (1) piece of paper stuffed in my door for
 
 </div><div style="flex: 1;">
 
-<ol start="2">
+<ol type="1" start="2">
  <li>Neighbors
- <ol type="A">
+ <ol type="a">
   <li>Beverly & Tony Henderson</li>
   <li>Mary & Lee Wolf</li>
   <li>Rev Dr Carolyn & John Bohler</li>
