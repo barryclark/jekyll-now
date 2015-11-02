@@ -11,37 +11,45 @@
   url: http://thecube.gr
   category_gr: Coworking space
   category_en: Coworking space
-  location_gr: Athens, Greece
   location_gr: Αθήνα, Ελλάδα
+  location_en: Athens, Greece
   
 - company_gr: My Sunshine
   company_en: My Sunshine
   url: http://www.mysunshine.gr
   category_gr: Είδη εγκυμοσύνης και παιδικά προϊόντα
   category_en: Maternity and baby products
-  location_gr: Athens, Greece
   location_gr: Αθήνα, Ελλάδα
+  location_en: Athens, Greece
 
 - company_gr: KEEN Organic Living
   company_en: KEEN Organic Living
   url: http://k33n.co.uk
   category_gr: Παιδικά ρούχα
   category_en: Children's apparel
-  location_gr: Athens, Greece
   location_gr: Αθήνα, Ελλάδα
+  location_en: Athens, Greece
 
 - company_gr: GourmetGR
   company_en: GourmetGR
   url: http://www.gourmetgr.com
   category_gr: Καφές, σοκολάτα, τσάι και άλλα τρόφιμα
   category_en: Coffee, chocolate, tea and other Greek foods
-  location_gr: Athens, Greece
   location_gr: Αθήνα, Ελλάδα
+  location_en: Athens, Greece
 
 - company_gr: Ταβέρνα Άγγελος
   company_en: Aggelos Tavern
   url: https://www.facebook.com/tavernagelos
   category_gr: Ταβέρνα
   category_en: Tavern
-  location_gr: Athens, Greece
-  location_gr: Αθήνα, Ελλάδα
+  location_gr: Χαϊδάρι, Αττική, Ελλάδα
+  location_en: Haidari, Attica, Greece
+
+- company_gr: Cibo Matto
+  company_en: Cibo Matto
+  url: http://www.cibo.gr
+  category_gr: Ιταλικό εστιατόριο
+  category_en: Italian restaunt
+  location_gr: Κηφισιά, Αττική, Ελλάδα
+  location_en: Kifisia, Attica, Greece
