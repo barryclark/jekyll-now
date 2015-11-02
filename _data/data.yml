@@ -1,10 +1,10 @@
-- company_gr: Όνομα
-  company_en: Name
+- company_gr: <b>Όνομα</b>
+  company_en: <b>Name</b>
   url:
-  category_gr: Κατηγορία
-  category_en: Category
-  location_gr: Τοποθεσία
-  location_gr: Location
+  category_gr: <b>Κατηγορία</b>
+  category_en: <b>Category</b>
+  location_gr: <b>Τοποθεσία</b>
+  location_gr: <b>Location</b>
 
 - company_gr: The Cube
   company_en: The Cube
