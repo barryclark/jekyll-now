@@ -2,14 +2,16 @@
 layout: page
 title: About
 permalink: /about/
+published: true
 ---
+
 
 Some information about you!
 
-### More Information
+### Personal Information
 
-A place to include any other types of information that you'd like to include about yourself.
+Hello World! My name is Ziyi Han, programming enthusiast from China. 
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[laudy2012@gmail.com](mailto:laudy2012@gmail.com)
