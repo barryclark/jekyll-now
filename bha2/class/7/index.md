@@ -10,11 +10,12 @@ Now that you are gaining an understanding on how to manipulate life, it's about 
 
 ## Schedule
 
-* Bioethics
-* Centrifuge Design
+* [Bioethics](/bha2/class/7/pdf/1 Ethics in Biology and Art.pdf)
+* [Centrifuge Design](/bha/class/7/pdf/2 Centrifuge design.pdf)
 * Practicals
   * Field research
   * Peer 2 Peer reviewing
+  * [Chloroplast isolation](/bha2/class/7/chloroplast-isolation/)
 
 ## Devices
 
