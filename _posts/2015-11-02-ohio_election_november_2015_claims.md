@@ -175,3 +175,10 @@ The postcards say he is committed to
 
 ##### Scott Sliver
 
+I received one (1) postcard for this candidate.
+
+###### Claims
+
+The postcard has a paragraph saying:
+
+> Scott Sliver (sly-ver) is an independent candidate. He closed his business 25 years ago to do community service. He's responsible for feeding nearly 1,000 families in the Miami Valley every month. He listens, he's compassionate, he takes action. It's time to elect a creative problem solver who stays awake at night thinking how to stop hunger, fight addiction, and make our community a better place. He brings people together. He *grows* hope. He's what Dayton needs.
