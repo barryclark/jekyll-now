@@ -75,3 +75,10 @@ A "[mill](https://en.wikipedia.org/wiki/Mill_%28currency%29)" is a thousandth of
 * Scott Sliver
   * [Campaign website](http://www.electscottsliver.com)
   * [Facebook page](https://www.facebook.com/Elect-Scott-Sliver-1540960152841459)
+
+#### Dayton School Board (vote for 3)
+
+* Robert C. Walker
+* John McManus
+* Nancy Nerny
+* Sheila Taylor
