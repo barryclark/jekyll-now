@@ -1,3 +1,11 @@
+- company_gr: Όνομα
+  company_en: Name
+  url:
+  category_gr: Κατηγορία
+  category_en: Category
+  location_gr: Τοποθεσία
+  location_gr: Location
+
 - company_gr: The Cube
   company_en: The Cube
   url: http://thecube.gr
