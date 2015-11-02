@@ -16,7 +16,7 @@ I received a total of four (4) postcards for this issue.
 
 ###### Claims
 
-<div style="-webkit-columns: 50% 2; -moz-columns: 50% 2; columns: 50% 2;">
+<div class="two-column">
 <ol><li>Make sure our WORKFORCE is well prepared for good jobs</li>
 <li>UP-TO-DATE labs, technology and training for future careers</li>
 <li>Guarantee Sinclair stays AFFORDABLE for students, young and old</li>
