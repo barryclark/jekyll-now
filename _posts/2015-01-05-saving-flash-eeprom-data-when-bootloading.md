@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Saving FLASH (emulated EEPROM) data when bootloading on STM32
+title: Saving EEPROM data when bootloading on STM32
 categories: stm32
 ---
 

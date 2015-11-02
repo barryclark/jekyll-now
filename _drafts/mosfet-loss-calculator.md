@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: robots
-title: Motor Control MOSFET Thermal Calculator
+title: Motor control MOSFET thermal calculator
 ---
 
 At work I was tasked with creating an internal tool to track and display vital company stats. I knew that meant I would likely be displaying some data in charts and graphs. Thus began my search for an easily customizable data visualization library.
