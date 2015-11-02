@@ -14,7 +14,7 @@ Additional 1 mill for the purpose of capital improvements & essential educationa
 
 I received a total of four (4) postcards for this issue.
 
-#### Claims
+##### Claims
 
 1. Make sure our WORKFORCE is well prepared for good jobs
 2. UP-TO-DATE labs, technology and training for future careers
@@ -25,7 +25,7 @@ I received a total of four (4) postcards for this issue.
 7. More county residents go to Sinclair than any other college
 8. Sinclair graduates stay in the area, earn much higher salaries after graduation, and help our economy and community succeed
 
-##### Endorsed by:
+###### Endorsed by
 
 1. Greater Dayton Area Hospital Association (GDAHA)
 2. Dayton Area Chamber of Commerce
@@ -47,3 +47,56 @@ I received a total of four (4) postcards for this issue.
 18. Sinclair Trustees, Faculty and Staff Leaders
 19. United Way of Greater Dayton
 20. University of Dayton
+
+#### Dayton Commission (vote for 2)
+
+##### Darryl Fairchild
+
+I received three (3) postcards and one (1) piece of paper stuffed in my door for this candidate.
+
+##### Claims
+
+1. proven leader
+2. track record of accomplishments
+3. decades of advocating for the people of Dayton
+4. unparralleled knowledge of Dayton neighborhoods
+5. long-time justice worker
+6. visionary and creative thinker
+7. known for integrity and fairness
+8. born in Belmont, lives in Dayton View
+
+###### Endorsed by
+
+<div style="display: flex;"><div style="flex: 1;">
+1. Leaders
+ 1. A.J. Wagner
+ 2. Bootsie Neal
+ 3. Abner & Judy Orick
+ 4. Tom Webb
+ 5. Rev Dr Daryl Ward
+ 6. Rev Dr Rod Kennedy
+ 7. Rabbi David Sofian
+ 8. Rev David Fox
+ 9. Rev Paul Mitchell
+ 10. Rev William Harris
+ 11. Rev Ella Mitchell
+ 12. Rev Rocknew Carter
+ 13. Rev Ril Beatty
+ 14. Rabbi Bernard Barsky
+ 15. Rev Gerald Cooper
+ 16. Rev Stephen Matlock
+ 17. Rev John Maze
+ 18. Rev Mark Hunt
+ 19. Rev Jason Alspaugh
+ 20. Rev Jerome McCorry
+ 21. Rev William Bailey
+ 22. Rev John Paddock
+</div><div style="flex: 1;">
+2. Neighbors
+3. Labor
+ 1. Dayton Fraternal Order of Police, Lodge 44
+ 2. Teamsters Local Union No 957
+ 3. United Brotherhood of Carpenters Local Union 136
+ 4. Ohio Civil Service Employees Association, AFSCME Local 11
+ 5. Ironworkers Local 290
+</div></div>
