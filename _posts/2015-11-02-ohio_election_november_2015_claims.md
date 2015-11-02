@@ -14,7 +14,7 @@ Additional 1 mill for the purpose of capital improvements & essential educationa
 
 I received a total of four (4) postcards for this issue.
 
-##### Claims
+###### Claims
 
 1. Make sure our WORKFORCE is well prepared for good jobs
 2. UP-TO-DATE labs, technology and training for future careers
@@ -133,3 +133,29 @@ I received three (3) postcards and one (1) piece of paper stuffed in my door for
 </ol>
 
 </div></div>
+
+##### Matt Joseph
+
+I received two (2) postcards for this candidate. One of those postcards also was for Chris Shaw.
+
+##### Claims
+
+The postcards say "re-elect", so Matt Joseph is an incumbent. One postcard has a paragraph saying:
+
+> **City Commissioner Matt Joseph** understands that encouraging economic growth and protecting vital city services are essential to Dayton. In addition to serving as your city commissioner, Matt Joseph works for Dayton's largest employer, Wright-Patterson Air Force Base, where he helps keep members of our Air Force equipped and ready to defend our country.
+
+The postcards say he will continue to / is committed to
+
+1. Strengthen the city's safety and emergency service departments
+2. Encourage business development opportunities for the city
+3. Promote strong, safe neighborhoods
+4. Improve customer service at city hall
+5. Make Dayton a welcoming place for business and residents
+6. Hire more police officers to increase the safety of neighborhoods and citizens
+7. Use community policing techniques to increase visibility of police and resolve issues
+8. Increase funding for street paving in neighborhoods
+9. Develop technology, like the Dayton Delivers App, to improve customer service
+
+###### Endorsed by
+
+1. The Fraternal Order of Police
