@@ -25,6 +25,6 @@ The app lets you create new posts and drafts after authenticating with GitHub an
 
 Now once I catch my own I'll see if it really holds up as a viable tool for writing regular posts going forward.
 
-## Update
+# Update
 
 I messaged the developers and they fixed the missing dialog buttons that same day. Really pleased with the app so far.
