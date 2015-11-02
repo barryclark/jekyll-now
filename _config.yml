@@ -3,13 +3,13 @@
 #
 
 # Name of your site (displayed in the header)
-name: Ziyi Han
+name: "Ziyi Han"
 
 # Short bio or description (displayed in the header)
-description: Programming Enthusiast
+description: "Programming Enthusiast"
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://avatars1.githubusercontent.com/u/7992846?v=3&s=400
+avatar: "https://avatars1.githubusercontent.com/u/7992846?v=3&s=400"
 
 #
 # Flags below are optional
@@ -18,15 +18,15 @@ avatar: https://avatars1.githubusercontent.com/u/7992846?v=3&s=400
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email: laudy2012@gmail.com
+  email: "laudy2012@gmail.com"
   facebook: 
   flickr:
-  github: github.com/ethanhan2014
+  github: "github.com/ethanhan2014"
   instagram:
-  linkedin: https://www.linkedin.com/pub/ziyi-han/20/959/646
+  linkedin: "https://www.linkedin.com/pub/ziyi-han/20/959/646"
   pinterest:
   rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
-  twitter: laudyhan
+  twitter: "laudyhan"
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
@@ -34,14 +34,14 @@ footer-links:
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
-disqus:Ethan Han
+disqus:"Ethan Han"
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics: UA-67503504-2
+google_analytics: "UA-67503504-2"
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url: http://ethanhan2014.github.io
+url: "http://ethanhan2014.github.io"
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
