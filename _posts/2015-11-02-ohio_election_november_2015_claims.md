@@ -64,6 +64,9 @@ I received three (3) postcards and one (1) piece of paper stuffed in my door for
 6. visionary and creative thinker
 7. known for integrity and fairness
 8. born in Belmont, lives in Dayton View
+9. history of bringing together disparate groups
+10. family man
+11. smart, energetic, dedicated, independent
 
 ###### Endorsed by
 
