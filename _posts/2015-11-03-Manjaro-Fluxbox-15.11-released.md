@@ -7,9 +7,9 @@ title: Manjaro Fluxbox 15.11 released
 
 The Manjaro Community is happy to announce a fresh maintenance release of the successful **Fluxbox** edition.
 Thanks to the great amount of feedback we were able to include many little fixes, additions and improvements.
-The new install media include of course the latest version of the advanced **Fluxbox-menu** with **Regenerate menu** function and **dmenu-manjaro 4.5.1**.
+The new install media include the latest version of the advanced **Fluxbox-menu** with **Regenerate menu** function, and **dmenu-manjaro 4.5.1**.
 
-Packages of the Bellatrix 2015-11-01 update in **stable branch** were used to produce the ISOs.
+Packages of the Bellatrix 2015-11-01 update on the **stable branch** were used to produce the ISOs.
 The **OpenRC** version was adjusted to the latest package modifications and system updates.
 
 included software:
