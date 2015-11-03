@@ -5,7 +5,7 @@ title: Manjaro Fluxbox 15.11 released
 
 <img src="https://manjaro.github.io/images/manjaro-fluxbox-15.11.jpg">
 
-The Manjaro Community is happy to announce a fresh maintenance release of the successful Fluxbox edition.
+The Manjaro Community is happy to announce a fresh maintenance release of the successful **Fluxbox** edition.
 Thanks to the great amount of feedback we were able to include many little fixes, additions and improvements.
 The new install media include of course the latest version of the advanced **Fluxbox-menu** with **Regenerate menu** function and **dmenu-manjaro 4.5.1**.
 
@@ -35,6 +35,7 @@ included software:
 * Numix-Reborn icon- and gtk-themes, Manjaro-flux-theme, Compton compositor
 * Yaourt and building environment for AUR packages
 * Kernel 3.18 LTS
+* available with init systems Systemd or OpenRC in 32 and 64bit
 
 Bernhard Landauer, Maintainer Manjaro-Fluxbox
 
