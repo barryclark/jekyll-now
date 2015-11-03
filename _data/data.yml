@@ -89,7 +89,15 @@
 - company_gr: Hotwater
   company_en: Hotwater
   url: http://www.hotwater-shop.gr
-  category_gr: Υδραυλικά, θέρμανση, κλιματισμός, φυσικό αέριο.
+  category_gr: Υδραυλικά, θέρμανση, κλιματισμός, φυσικό αέριο
   category_en: Plumbing, heating, air conditioning, natural gas
   location_gr: Αιγάλεω, Αττική, Ελλάδα
   location_en: Aegaleo, Attica, Greece
+
+- company_gr: Digifort
+  company_en: Digifort
+  url: http://www.digitfort.gr
+  category_gr: Συναγερμοί και συστήματα ασφαλείας
+  category_en: Home security
+  location_gr: Αθήνα, Ελλάδα
+  location_en: Athens, Greece
