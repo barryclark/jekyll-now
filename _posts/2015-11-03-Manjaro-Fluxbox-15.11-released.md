@@ -32,7 +32,8 @@ included software:
 * Plank, advanced Fluxbox-menu with Fbmenugen and Dmenu-manjaro
 * Clipit clipboard-tool
 * Arandr for screen-configuration and multihead-support
-* Numix-Reborn icon- and gtk-themes, Manjaro-flux-theme, Compton compositor
+* Numix-Reborn icon-, gtk-, Oblogout- and Plymouth-themes
+* Compton compositor
 * Yaourt and building environment for AUR packages
 * Kernel 3.18 LTS
 * available with init systems Systemd or OpenRC in 32 and 64bit
