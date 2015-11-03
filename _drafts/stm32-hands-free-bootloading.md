@@ -1,8 +1,8 @@
 ---
 layout: post
-title: STM32 hands-free bootloading
-categories: embedded
+title: STM32 hands-free Serial bootloading
+categories: stm32
 ---
 
-FT230X
+FT231X
 Check reset source. software => 

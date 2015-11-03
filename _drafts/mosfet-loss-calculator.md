@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: robots
+categories: motors
 title: Motor control MOSFET thermal calculator
 ---
 
