@@ -13,6 +13,12 @@ permalink: /codereference/
 
     for file in *2col; do echo $file; done
 
+##### Add a .gitkeep statement recursively so that empty directories are kept in git structure 
+
+(http://stackoverflow.com/questions/14541253/commit-empty-folder-structure-with-git)
+
+    find . -type d -empty -not -path "./.git/*" -exec touch {}/.gitkeep \; 
+ 
 ##### Convert variable space separated table to tab separated table
 
         unexpand -a file.txt > newfile.tab
@@ -221,6 +227,7 @@ ex. ENS0000001ENS0000002 -> ENS0000001 ENS0000002
      cols = ['col1', 'col2']
      final = original[cols]
  
+
 ### <font color="red">BioPython</font>
 
 ##### get ORF from sequence
