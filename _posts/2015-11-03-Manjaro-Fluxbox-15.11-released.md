@@ -5,7 +5,7 @@ title: Manjaro Fluxbox 15.11 released
 
 <img src="https://manjaro.github.io/images/manjaro-fluxbox-15.11.jpg">
 
-The Manjaro Community is happy to announce a fresh maintenance release of the successful **Fluxbox** edition.
+The Manjaro community is happy to announce a fresh maintenance release of the successful **Fluxbox** edition.
 Thanks to the great amount of feedback we were able to include many little fixes, additions and improvements.
 The new install media include the latest version of the advanced **Fluxbox-menu** with **Regenerate menu** function, and **dmenu-manjaro 4.5.1**.
 
