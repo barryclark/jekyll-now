@@ -11,7 +11,7 @@ As I was working on a port of [my old Manikin project](https://github.com/mikael
 
 ## Now what?
 
-The reason why debugging canvas apps is hard is that there isn't much to inspect when things go wrong. You have your `canvas` element, but there isn't much to look at there. Then you have your `context`, which you get through `document.getElementById('my-canvas').getContext('2d')`, and that does have some properties, but not the interesting ones.
+The reason why debugging canvas apps is hard is that there isn't much to inspect when things go wrong. You have your `canvas` element, but there isn't much to look at there. Then you have your `context`, which you get through `document.getElementById('my-canvas').getContext('2d')`, and that does have some properties, but you can't see method calls.
 
 <figure class="content-image">
 	<img src="../images/debug-canvas/context-properties.png" alt="A screenshot showing properties on a context object." width="391" height="350" />
@@ -22,12 +22,12 @@ Wouldn't it be nice if you could get a log of all the method calls and property 
 
 ## First attempt at a solution
 
-Well it turns out that you can do those things through the use of a proxy object and some `apply` magic:
+Well it turns out that you can get those things through the use of a proxy object and some `apply` magic:
 
 ```javascript
 let instrumentContext = (ctx) => {
 	/*
-	  Substitute the original object with our proxy,
+	  Substitute our proxy for the original object.
 	  We'll return the proxy at the end of the function.
 	*/
 	let _ctx = ctx;
@@ -170,3 +170,5 @@ This allows us to capture things like the following:
 </figure>
 
 Pretty nice. I think I'll try to build a little library to help with this. Hopefully that'll be helpful to someone before the Chrome team re-releases the Canvas Inspector as an extension! :)
+
+Some nice features would be a possibility to convert rotation angles from radians into degrees on the fly, use a specific logger object, filter out the things that should be logged. I can also imagine replaying actions step by step, and visualizing canvas transforms.
