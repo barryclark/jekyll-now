@@ -4,23 +4,6 @@ title: Impressum
 permalink: /impressum/
 ---
 
-###Redaktion:
-
-Haufe-Lexware.com
-
-Franz Walch
-(verantwortlich i.S.d. § 55 Abs. 2 RStV)
-
-_
-
-Haufe-Lexware GmbH & Co. KG
-Munzinger Straße 9 
-79111 Freiburg
-
-Telefon: 0800 50 50 445 (kostenlos)
-Telefax: 0800 50 50 446
-E-Mail: info@haufe-lexware.com
-
 ###Anschrift:
 
 Haufe-Lexware GmbH & Co. KG
@@ -29,16 +12,14 @@ Ein Unternehmen der Haufe Gruppe
 
 Munzinger Straße 9 
 79111 Freiburg
-Telefon: 0761 898-0
-Telefax: 0761 898-3990
 
--
+**Telefon**: 0761 898-0
+**Telefax**: 0761 898-3990
 
 Kommanditgesellschaft, Sitz Freiburg
 Registergericht Freiburg, HRA 4408
 
 Komplementäre: Haufe-Lexware Verwaltungs GmbH, Sitz Freiburg, 
-
 Registergericht Freiburg, HRB 5557; Martin Laqua
 
 Geschäftsführung: Isabel Blank, Markus Dränert, Jörg Frey, Birte Hackenjos, Randolf Jessl, Markus Reithwiesner, Joachim Rotzinger, Dr. Carsten Thies
@@ -61,7 +42,7 @@ Munzinger Straße 9
 
 Telefon: 0761 898 3940
 Telefax: 0761 898 3900
-E-Mail: presse@haufe-lexware.com
+E-Mail: presse(at)haufe-lexware.com
 
 ###Bitte wenden Sie sich bei Fragen an:
 
@@ -73,7 +54,7 @@ Munzinger Straße 9
 
 Telefon: 0800 50 50 445 (kostenlos)
 Telefax: 0800 50 50 446
-E-Mail: service@haufe-lexware.com
+E-Mail: service(@)haufe-lexware.com
 
 -
 
