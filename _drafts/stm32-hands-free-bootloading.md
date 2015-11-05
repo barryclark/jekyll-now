@@ -1,6 +1,6 @@
 ---
 layout: post
-title: STM32 hands-free Serial bootloading
+title: STM32 hands-free bootloading using USB-Serial
 categories: stm32
 ---
 
