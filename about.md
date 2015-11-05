@@ -4,12 +4,9 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
-
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+###The Author
+@timbailey 
+ 
+###The Site
+* Built with the [Jekyll-Now](https://github.com/barryclark/jekyll-now) fork of [Jekyll](https://jekyllrb.com/) for simplicity and to satisfy my curiosity.
+* Hosted on Git Hub - though [this reflects my relationship with Git](http://www.explainxkcd.com/wiki/index.php/1597 "Mysterious Git").

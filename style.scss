@@ -18,7 +18,7 @@ html {
 }
 
 body {
-	background: $white;
+  background: $white;
   font: 18px/1.4 $helvetica;
   color: $darkGray;
 }
@@ -242,8 +242,8 @@ nav {
 //
 
 .posts > .post {
-  padding-bottom: 2em;
-  border-bottom: 1px solid $lightGray;
+  padding-bottom: 1em;
+  border-bottom: 3px solid $lightGray;  
 }
 
 .posts > .post:last-child {
@@ -266,16 +266,31 @@ nav {
   }
 
   .read-more {
-    text-transform: uppercase;
+//    text-transform: uppercase;
     font-size: 15px;
+	border-radius: 5px;
+    border: 1px solid $lightGray;
+    background-color: $lightGray;
+    padding-left: 3px;
+	padding-right: 3px;
+	padding-bottom: 2px;
+	padding-top: 3px;
+	
   }
 }
 
 .wrapper-footer {
-  margin-top: 50px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
+
+  border: 1px solid #ddd;
+//  border-bottom: 1px solid #ddd;
   background-color: $lightGray;
+  margin: 0 auto;
+  margin-top: 30px;
+  max-width: 740px;
+  padding: 0 10px;
+  width: 100%;
+  border-radius: 8px;
+  
 }
 
 footer {
