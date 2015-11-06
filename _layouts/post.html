@@ -3,22 +3,18 @@ layout: default
 ---
 
 <article class="post">
-  <p class='info'>
+  <h1><a href="{{page.url}}">{{page.title}}</a></h1>
+
+  <p>
     <span>{{page.date | date: "%B %d, %Y" }}</span>
     /
     <span>
       by {{page.author}}
     </span>
   </p>
-  
-  <h1><a href="{{page.url}}">{{page.title}}</a></h1>
 
   <div class="entry">
     {{ content }}
-  </div>
-
-  <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
   </div>
 
   {% include disqus.html %}
