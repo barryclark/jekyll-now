@@ -3,14 +3,14 @@ layout: default
 ---
 
 <article class="post">
-  <h1><a href="{{page.url}}">{{page.title}}</a></h1>
+  <h3>{{page.title}}</h3>
 
   <p>
-    <span>{{page.date | date: "%B %d, %Y" }}</span>
-    /
-    <span>
-      by {{page.author}}
-    </span>
+    <small>
+      <span>{{page.date | date: "%B %d, %Y" }}</span>
+      /
+      <span>by {{page.author}}</span>
+    </small>
   </p>
 
   <div class="entry">
