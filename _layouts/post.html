@@ -3,16 +3,16 @@ layout: default
 ---
 
 <article class="post">
-  <h3>{{page.title}}</h3>
+  <h1>{{page.title}}</h1>
 
-  <p>
-    <small>
-      <span>{{page.date | date: "%B %d, %Y" }}</span>
-      /
-      <span>by {{page.author}}</span>
-    </small>
+  <p>      
+    <span>{{page.date | date: "%B %d, %Y" }}</span>
+    /
+    <span>by {{page.author}}</span>
   </p>
 
+  <hr/>
+  
   <div class="entry">
     {{ content }}
   </div>
