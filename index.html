@@ -9,11 +9,9 @@ layout: default
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
       
       <p class='info'>
-        <span>{{page.date | date: "%B %d, %Y" }}</span>
+        <span>{{post.date | date: "%B %d, %Y" }}</span>
         /
-        <span>
-          by {{page.author}}
-        </span>
+        <span>by {{post.author}}</span>
       </p>
 
       <div class="entry">
