@@ -2,14 +2,9 @@
 layout: page
 title: About
 permalink: /about/
+published: true
 ---
 
-Some information about you!
 
-### More Information
+#rstats, public policy and data analysis
 
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
