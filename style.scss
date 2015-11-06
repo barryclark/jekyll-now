@@ -120,6 +120,11 @@ img {
   color: $gray;
 }
 
+.info {
+  font-size: smaller;
+  color: $lightGray;
+}
+
 // Specify the color of the selection
 ::-moz-selection {
   color: $black;
