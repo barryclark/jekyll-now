@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Vivaldi, Opera's Music Brother
+title: Vivaldi, Opera's Musical Brother
 ---
 
 Chrome is a great browser, and like many people I haven't often strayed from the warm, all-knowing embrace of Google. When I heard about Vivaldi I was excited by its promise of extensive customization and many additional features. Made by many of the people who worked on Opera, Vivaldi promises a similar goal of power and privacy.
