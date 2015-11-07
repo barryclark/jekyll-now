@@ -6,5 +6,5 @@ published: true
 ---
 
 
-#rstats, public policy and data analysis
 
+#**rstats**, public policy and data analysis
