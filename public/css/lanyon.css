@@ -31,15 +31,14 @@ body {
 }
 
 body {
-	font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: "Merriweather", Georgia, serif;
-	font-weight: 700;
-	color: #313131;
+	font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 400;
 	letter-spacing: -.025rem;
 }
 
@@ -156,7 +155,7 @@ h1, h2, h3, h4, h5, h6 {
 	width: 14rem;
 	visibility: hidden;
 	overflow-y: auto;
-	font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: .875rem; /* 15px */
 	color: #333;
 	border-right: 1px solid #eee;
@@ -384,7 +383,7 @@ a.sidebar-nav-item:focus {
 	overflow: hidden; /* clearfix */
 	margin-left: -1rem;
 	margin-right: -1rem;
-	font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color: #ccc;
 	text-align: center;
 }
@@ -582,7 +581,7 @@ a.pagination-item:hover {
 /* newsletter */
 .singup {}
 .singup input {
-	font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	outline: none;
 }
 .singup #tlemail {
