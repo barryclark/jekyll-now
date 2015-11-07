@@ -6,7 +6,7 @@ published: true
 ---
 
 
-![Placeholder]({{site.baseurl}}/https://placeholdit.imgix.net/~text?txtsize=100&bg=3498db&txtclr=2980b9&txt=1200%C3%97450&w=1200&h=450)
+![Placeholder]({{site.baseurl}}//IMG_20140526_083623.jpg)
 ### More Information
 
 Not too much to add
