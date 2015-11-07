@@ -50,7 +50,7 @@ html {
 }
 
 body {
-	color: #000;
+	color: rgba(0,0,0,.87);
 	background-color: #fff;
 	-webkit-text-size-adjust: 100%;
 			-ms-text-size-adjust: 100%;
@@ -58,7 +58,7 @@ body {
 
 /* No `:visited` state is required by default (browsers will use `a`) */
 a {
-	color: #0071bc;
+	color: #4184F3;
 	text-decoration: none;
 }
 a strong {
@@ -68,7 +68,7 @@ a strong {
 a:hover,
 a:focus {
 	text-decoration: underline;
-	color: #666;
+	color: #4184F3;
 }
 
 /* Headings */
@@ -76,7 +76,6 @@ h1, h2, h3, h4, h5, h6 {
 	margin-bottom: .5rem;
 	font-weight: bold;
 	line-height: 1.25;
-	color: #000;
 	text-rendering: optimizeLegibility;
 }
 h1 {
@@ -219,7 +218,6 @@ img {
 	display: block;
 	max-width: 100%;
 	margin: 0 0 1rem;
-	border-radius: 5px;
 }
 
 /* Tables */
@@ -333,6 +331,9 @@ tbody tr:nth-child(odd) th {
 .post-title a {
 	color: #303030;
 }
+.post-title a:hover {
+	color: #4184F3;
+}
 .page-title,
 .post-title {
 	margin-top: 0;
@@ -364,7 +365,7 @@ tbody tr:nth-child(odd) th {
 	color: #999;
 }
 .related-posts li a:hover {
-	color: #268bd2;
+	color: #4184F3;
 	text-decoration: none;
 }
 .related-posts li a:hover small {
