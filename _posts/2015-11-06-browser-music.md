@@ -3,7 +3,7 @@ layout: post
 title: Vivaldi, Opera's Musical Brother
 ---
 
-Chrome is a great browser, and like many people I haven't often strayed from the warm, all-knowing embrace of Google. When I heard about Vivaldi I was excited by its promise of extensive customization and many additional features. Made by many of the people who worked on Opera, Vivaldi promises a similar goal of power and privacy.
+Chrome is a great browser, and like many people I haven't often strayed from the warm, all-knowing embrace of Google. When I heard about Vivaldi I was excited by its promise of extensive customization and additional features. Made by many of the people who worked on Opera, Vivaldi promises a similar goal of power and privacy.
 
 I've been using it for a little while now and this is what I like so far:
 
@@ -45,6 +45,6 @@ Interface and features aside, a slow browser isn't going to attract many users, 
 
 # Conclusion
 
-Am I going to keep using it? For now at least, yeah! I've been using it for about a week now and there hasn't been any major problems that have me running back to Chrome. The browser has only just released its beta and while there are sure to be some hiccups, it's already pretty polished.
+Am I going to keep using it? For now at least, yeah! I've been using it for about a week now and I haven't encountered any problems that have me running back to Chrome. The browser has only just released its beta and while there are sure to be some hiccups, it's already pretty polished.
 
 If you want to give it a go, it's available [here](https://vivaldi.com) on Windows, Mac and Linux. I've been using it on Ubuntu and so far it has been running smoothly.
