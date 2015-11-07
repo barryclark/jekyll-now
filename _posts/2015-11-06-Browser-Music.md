@@ -23,7 +23,7 @@ Web panels are basically separate web pages that you can tell it to render in a 
 
 # Lots of Customization
 
-The settings let you setup lots of shortucts for tabbing and navigation. All of the UI components can be toggled on and off with shortcuts, such as the sidebar, address bar, and tabs. They can also all be positioned on whichever edges of the screen you prefer.
+The settings let you configure lots of shortcuts for tabbing and navigation. All of the UI components can be toggled on and off with shortcuts, such as the sidebar, address bar, and tabs. They can also all be positioned on whichever edges of the screen that you prefer.
 
 # Speed Dial
 
