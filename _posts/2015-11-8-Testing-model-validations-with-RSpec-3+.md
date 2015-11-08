@@ -65,4 +65,4 @@ end
 ```
 And that's it. The test will pass.
 
-Personally I like the `shoulda` gem, but considering it was created for Rails 3 and not updated in years, maybe the 2^(nd) option is the safest.
+Personally I like the `shoulda` gem, but considering it was created for Rails 3 and not updated in years, maybe the 2nd option is the safest.
