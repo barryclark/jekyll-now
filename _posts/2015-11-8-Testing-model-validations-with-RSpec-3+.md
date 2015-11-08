@@ -3,17 +3,16 @@ layout: post
 title: Testing model validations with RSpec 3+
 ---
 
-There are many ways of testing a Rails model validations. Let's explore a few of them. The RSpec version used for the following tests is 3.1.0.
-
-We will test a very simple `Books` model, that requires to have a title:
+There are many ways of testing a Rails model validations. Let's explore a few of them. We will test a very simple `Books` model, that requires to have a title:
 
 ```ruby
 class Book < ActiveRecord::Base
   validates :title, presence: true
 end
 ```
+Before we start testing, plese consider that the RSpec version used for the following tests is 3.1.0.
 
-First you'll want to make sure that we can create the Book, so in our `book_spec.rb` we can test with:
+Ok, now let's begin the tests. First you'll want to make sure that we can create the a book, and we have no errors in our code, so in our `book_spec.rb` we can test with:
 
 ```ruby
 describe "book" do
