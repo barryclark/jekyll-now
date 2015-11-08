@@ -67,6 +67,7 @@ sass:
 # Use the following plug-ins
 gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+  - jekyll-last-modified-at # Taken from https://github.com/gjtorikian/jekyll-last-modified-at
 
 # Exclude these files from your production _site
 exclude:
