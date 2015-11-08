@@ -6,7 +6,8 @@
 name: WeAcceptBitcoin.gr
 
 # Short bio or description (displayed in the header)
-description: Εταιρείες και επαγγελματίες που δέχονται Bitcoin στην Ελλάδα
+description_gr: Εταιρείες και επαγγελματίες που δέχονται Bitcoin στην Ελλάδα
+description_en: Companies and professionals accepting Bitcoin in Greece
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: /images/bitcoin-accepted-here_-_small-168px.png
