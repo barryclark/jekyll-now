@@ -5,9 +5,11 @@ permalink: /about/
 ---
 <h2>Um Brasileiro</h2>
 
+A Geek!
+
 <br />
 
-<a href="http://www.tsu.co/dgrej_" target=_blank><img src="http://daltonneely.com/includes/tsuLogo2.png" /></a> | <a href="http://www.twitter.com/dgrej" target=_blank><img src="http://www.shedfield.com/uploads/2/6/7/9/26793177/4382516.png" /> | <a href="mailto:dinogrejo@gmail.com"><img src="http://vignette1.wikia.nocookie.net/logopedia/images/8/86/Gmail.png/revision/latest?cb=20130103194730" /></a>
+<a href="http://www.tsu.co/dgrej_" target=_blank><img src="http://daltonneely.com/includes/tsuLogo2.png" /></a> | <a href="http://www.twitter.com/dgrej" target=_blank><img src="http://www.shedfield.com/uploads/2/6/7/9/26793177/4382516.png" /></a> | <a href="mailto:dinogrejo@gmail.com"><img src="http://vignette1.wikia.nocookie.net/logopedia/images/8/86/Gmail.png/revision/latest?cb=20130103194730" /></a>
 
 <br />
 
