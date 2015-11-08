@@ -5,11 +5,7 @@ permalink: /about/
 ---
 <h2>Um Brasileiro</h2>
 
-<a href="https://dgrej.github.io/music" target="_blank">Lista de bandas que ouço no bandcamp</a>
-
-<a href="https://open.spotify.com/user/dgrej/playlist/7v6GfxE7NxUI2mvBbxXMgj" target="_blank">Lista de rock no spotify</a>
-
-[meu e-mail](mailto:dgrej@wavesandbox.com)
+<a href="http://www.tsu.co/dgrej" target=_blank><img src="http://daltonneely.com/includes/tsuLogo2.png" /></a> | <a href="http://www.twitter.com/dgrej" target=_blank><img src="http://www.shedfield.com/uploads/2/6/7/9/26793177/4382516.png" /> | <a href="mailto:dinogrejo@gmail.com" target=_blank><img src="http://vignette1.wikia.nocookie.net/logopedia/images/8/86/Gmail.png/revision/latest?cb=20130103194730" />
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Praia_do_Cassange.jpg">
 <br><span style="font-size: small">Gosto de praia! De preferência vazia!</span>
