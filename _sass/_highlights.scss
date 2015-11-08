@@ -8,7 +8,7 @@
   box-shadow: 3px 3px rgba(0,0,0,0.1);
   margin: 20px 0 20px 0;
   overflow: scroll;
-}
+
 
 pre {
     counter-reset: line-numbering;
@@ -55,6 +55,7 @@ pre a:last-of-type::before {
 
 pre a:only-of-type::before {
   padding: 10px;
+}
 }
 
 code {
