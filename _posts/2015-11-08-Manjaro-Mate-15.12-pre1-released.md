@@ -5,7 +5,7 @@ title: Manjaro Mate 15.12 preview1 released
 
 <img src="https://manjaro.github.io/images/manjaro-mate-15.12-pre1.jpg">
 
-Here I present the first Manjaro Mate 15.12 preview. On a part I want to slow it down and follow more Manjaro development. This iso contains the Mate-Desktop 1.12. This desktop has a lot of improvements under the skin.
+Here I present the first Manjaro Mate 15.12 preview. On a part, I want to slow it down and follow more Manjaro development. This ISO contains the Mate-Desktop 1.12. This desktop has a lot of improvements under the skin.
 
 Hightlights:
 
