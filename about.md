@@ -2,14 +2,15 @@
 layout: page
 title: About
 permalink: /about/
+published: true
 ---
 
-Some information about you!
 
+![Placeholder]({{site.baseurl}}//IMG_20140526_083623.jpg)
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+Not too much to add
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[myemail@justtryi.ng](mailto:email@domain.com)
