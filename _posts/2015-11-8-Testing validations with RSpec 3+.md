@@ -3,8 +3,12 @@ layout: post
 title: Testing validations with RSpec 3+
 ---
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+There are many ways of testing a Rails Model validations. Let's explore a few of them.
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
+We will test a very simple `Books` Model, that requires to have a title:
 
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
+```ruby
+class Book < ActiveRecord::Base
+  validates :title, presence: true
+end
+```
