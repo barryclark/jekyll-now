@@ -33,7 +33,7 @@ describe "title" do
   it "is required" do
     book = Book.new(title: "")
     expect(book).to be_invalid
-    # alsow working with:
+    # also working with:
     # expect(book).not_to be_valid
   end
 end
