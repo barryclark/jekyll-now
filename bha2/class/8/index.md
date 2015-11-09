@@ -11,7 +11,7 @@ This week we'll welcome a guest speaker to our class. The exact topic remains to
 ## Schedule
 
 * Guest Speaker
-* Pump Design
+* [Pump Design](/bha2/class/8/pdf/3 Pumps design.pdf)
 * Practicals
   * Grown your own certificate
 
