@@ -25,7 +25,7 @@
 - company_gr: KEEN Organic Living
   company_en: KEEN Organic Living
   url: http://k33n.co.uk
-  category_gr: Παιδικά ρούχα
+  category_gr: Παιδικά ενδύματα
   category_en: Children's apparel
   location_gr: Αθήνα, Ελλάδα
   location_en: Athens, Greece
@@ -141,3 +141,11 @@
   category_en: Dentist
   location_gr: Αθήνα, Ελλάδα
   location_en: Athens, Greece
+
+- company_gr: Teddywear
+  company_en: Teddywear
+  url: https://www.facebook.com/teddywear.gr
+  category_gr: Παιδικά ενδύματα και υποδύματα
+  category_en: Children's apparel and shoes
+  location_gr: Θεσσαλονίκη, Ελλάδα
+  location_en: Thessaloniki, Greece
