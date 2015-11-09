@@ -126,3 +126,18 @@
   location_gr: Θεσσαλονίκη, Ελλάδα
   location_en: Thessaloniki, Greece
   
+- company_gr: Φαρμακείο Κιμιωνή
+  company_en: Kimioni Pharmacy
+  url: https://www.facebook.com/kimionipharmacy/
+  category_gr: Φαρμακείο
+  category_en: Pharmacy
+  location_gr: Ελληνικό, Αττική, Ελλάδα
+  location_en: Elliniko, Attica, Greece
+    
+- company_gr: Medical Dent
+  company_en: Medical Dent
+  url: http://medicaldent.gr/
+  category_gr: Οδοντιατρείο
+  category_en: Dentist
+  location_gr: Αθήνα, Ελλάδα
+  location_en: Athens, Greece
