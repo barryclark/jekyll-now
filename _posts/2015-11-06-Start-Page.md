@@ -19,6 +19,6 @@ The search engine is pretty customizable and looks reminiscent of Google with so
 
 I've been trying to use it as my go to search engine lately and I've been liking the results so far. The biggest thing I miss is Google's auto complete but that isn't a deal breaker.
 
-For anyone who wants to use it, it is available [here](https://startpage.com) and you can follow ita instructions for setting it as your default search engine.
+For anyone who wants to use it, it is available [here](https://startpage.com) and you can follow its instructions for setting it as your default search engine.
 
 Privacy is something that we often feel is out of our control if we want to get the the best results and I'm glad that there are services out there that are able to show us that this isn't always the case.
