@@ -1,6 +1,6 @@
 ---
 layout:post
-Title: What about November?
+Title:What about November?
 ---
 
 November is dull and gray. I used to watch the leaves wilt, fly through 
