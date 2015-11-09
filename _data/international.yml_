@@ -6,7 +6,7 @@
   location_gr: <b>Τοποθεσία</b>
   location_en: <b>Location</b>
   
-  - company_gr: <b>Expedia</b>
+- company_gr: <b>Expedia</b>
   company_en: <b>Expedia</b>
   url:
   category_gr: <b>Ξενοδοχεία και κρουαζιέρες (προσφέρει και άλλες υπηρεσίες για τις οποίες δεν δέχεται Bitcoin)</b>
