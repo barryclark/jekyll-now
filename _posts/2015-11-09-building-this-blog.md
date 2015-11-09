@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Building This Blog...
+title: Building This Blog... 09/11/2015
 ---
 
 I’ve decided to start from the very beginning. This post is going to be all about building the blog. First things first I didn’t know where or how to build one, with a little research I realised there was a lot of options.
