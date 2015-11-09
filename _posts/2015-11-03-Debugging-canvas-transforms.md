@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Debugging canvas transforms
-tag: misc
+tag: javascript,manikin
 published: true
 ---
 
