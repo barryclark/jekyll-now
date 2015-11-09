@@ -102,19 +102,20 @@ h1, h2, h3, h4, h5, h6 {
 	padding-top:		1rem;
 	padding-bottom: 1rem;
 	margin-bottom: 3rem;
-	border-bottom: 1px solid #eee;
 }
 .masthead-title {
 	margin-top: 0;
 	margin-bottom: 0;
 	color: #000;
+	font-size: 1.3em;
 	letter-spacing: 0px;
-	font-weight: 600;
+	font-weight: 400;
 }
 .masthead-title a {
 	color: #000;
 }
 .masthead-title small {
+	display: block;
 	font-size: 65%;
 	font-weight: 400;
 	color: #999;
@@ -223,8 +224,9 @@ a.sidebar-nav-item:focus {
 	display: block;
 	/*width: 2.2rem;*/
 	padding: .5rem .65rem;
-	font-size: 0.8rem;
+	font-size: 0.6rem;
 	font-weight: 600;
+	text-transform: uppercase;
 	color: #fff;
 	background-color: #0071bc;
 	border-radius: 4px;
@@ -337,6 +339,7 @@ a.sidebar-nav-item:focus {
 	display: block;
 	margin-top: -.5rem;
 	margin-bottom: 1rem;
+	font-size: .8em;
 	color: #9a9a9a;
 }
 
