@@ -1,8 +1,7 @@
 ---
 layout: post
-Title: What about November?
+title: What about November?
 ---
-
 November is dull and gray. I used to watch the leaves wilt, fly through 
 the air with the wind, dying hitting the moist ground. The cold air 
 started getting to my skin, but the beauty of the land kept me outside 
