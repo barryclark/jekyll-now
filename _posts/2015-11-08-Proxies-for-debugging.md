@@ -7,6 +7,8 @@ published: true
 
 After my last post on debugging canvas, I just kept digging a bit and came up with a general purpose class to debug third-party objects (like canvas contexts).
 
+Edit: Of course I only now found out about the [Proxy](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy) object in ES6. Could have saved me some time, but what's done is done!
+
 This is pretty straightforward. The idea is to replace an existing object with a proxy object which will be able to log method calls and property changes before routing those things to the original object. This is completely generic, so it'll work on more things than just canvas contexts.
 
 ```javascript
