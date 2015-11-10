@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Dino
+title: Dino Grej
 permalink: /about/
 ---
 <h2>Um Brasileiro</h2>
