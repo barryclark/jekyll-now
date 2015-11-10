@@ -46,7 +46,7 @@ By default, holding shift and moving the arrow keys around allows you to zip fro
 
 # But is it Fast?
 
-Interface and features aside, a slow browser isn't going to attract many users, no matter how many tools it has. Vivaldi isn't as quick as Chrome, but it is definitely usable. The develoeprs have also promised to dedicate more time to improving performance now that most of the core features are finished.
+Interface and features aside, a slow browser isn't going to attract many users, no matter how many tools it has. Vivaldi isn't as quick as Chrome, but it is definitely usable. The developers have also promised to dedicate more time to improving performance now that most of the core features are finished.
 
 # Conclusion
 
