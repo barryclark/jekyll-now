@@ -3,13 +3,10 @@ layout: page
 title: About
 permalink: /about/
 ---
+LinkedIn is the best place to find out about me, so here we go:
 
-Some information about you!
-
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
+https://www.linkedin.com/in/timurcatakli
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[timurcatakli@gmail.com](mailto:timurcatakli@gmail.com)
