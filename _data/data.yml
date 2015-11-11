@@ -165,7 +165,15 @@
   category_en: Computer eshop
   location_gr: Ιωάννινα, Ελλάδα
   location_en: Ioannina, Greece
-
+  
+- company_gr: Extravagant coiffure
+  company_en: Extravagant coiffure
+  url: http://www.extravagant.gr
+  category_gr: Κομμωτήριο
+  category_en: Coiffure
+  location_gr: Νέα Ερυθραία, Αττική, Ελλάδα
+  location_en: Nea Erythrea, Attica, Greece
+  
 - company_gr: Expedia
   company_en: Expedia
   url: https://www.expedia.com
