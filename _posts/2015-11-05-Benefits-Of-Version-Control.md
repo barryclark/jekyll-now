@@ -4,7 +4,9 @@ title: What are the benefits of version control?
 excerpt_separator: <!--more-->
 ---
 In your daily tasks you create, save, edit things. You can be a designer, editor or a developer. Version Control systems give you the ability to keep track of what you did to the file, what you changed and what the contents of those changes are.
+
 <!--more-->
+
 ### What is Version Control?
 
 ![Version Control](http://timurcatakli.github.io/images/151111-01.png)
