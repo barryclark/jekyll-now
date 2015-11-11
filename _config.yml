@@ -25,7 +25,7 @@ footer-links:
   instagram:
   linkedin: haufe-gruppe
   pinterest:
-  rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
+  rss: feed.xml
   twitter: HaufeDev
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: #user/HaufeTV
