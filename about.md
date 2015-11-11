@@ -5,7 +5,7 @@ permalink: /about/
 ---
 LinkedIn is the best place to find out about me, so here we go:
 
-https://www.linkedin.com/in/timurcatakli
+<a href="https://www.linkedin.com/in/timurcatakli">https://www.linkedin.com/in/timurcatakli</a>
 
 ### Contact me
 
