@@ -19,7 +19,7 @@ avatar: https://raw.githubusercontent.com/Haufe-Lexware/Haufe-Lexware.github.io/
 footer-links:
   dribbble:
   email:
-  facebook: haufeverlag
+  facebook: #haufeverlag
   flickr:
   github: Haufe-Lexware
   instagram:
@@ -28,7 +28,7 @@ footer-links:
   rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
   twitter: HaufeDev
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
-  youtube: user/HaufeTV
+  youtube: #user/HaufeTV
   googleplus: # anything in your profile username that comes after plus.google.com/
   slideshare: HaufeDev
 
