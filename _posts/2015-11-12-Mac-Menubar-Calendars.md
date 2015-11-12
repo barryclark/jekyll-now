@@ -12,18 +12,14 @@ I was recently in need of a Mac menu bar Calendar App... After some digging I ca
 
 
 ### iCultus - Free
-[http://djyde.github.io/iCultus/](http://djyde.github.io/iCultus/)
-
-<br/>
+##### [http://djyde.github.io/iCultus/](http://djyde.github.io/iCultus/)
 
 ![iCultus - Free](http://timurcatakli.github.io/images/cal01.png)
 
 <hr>
 
 ### Day-0 - Free
-[http://shauninman.com/archive/2011/10/20/day_o_mac_menu_bar_clock](http://shauninman.com/archive/2011/10/20/day_o_mac_menu_bar_clock)
-
-<br/>
+##### [http://shauninman.com/archive/2011/10/20/day_o_mac_menu_bar_clock](http://shauninman.com/archive/2011/10/20/day_o_mac_menu_bar_clock)
 
 ![Day-0 - Free](http://timurcatakli.github.io/images/cal02.png)
 
@@ -32,9 +28,7 @@ Day-O is a simple menu bar clock replacement with a simple calendar for your Mac
 <hr>
 
 ### Itsycal for Mac - Free
-[http://www.mowglii.com/itsycal/](http://www.mowglii.com/itsycal/)
-
-<br/>
+##### [http://www.mowglii.com/itsycal/](http://www.mowglii.com/itsycal/)
 
 ![Itsycal for Mac - Free](http://timurcatakli.github.io/images/cal03.png)
 
@@ -47,9 +41,7 @@ On OS X 10.10 Yosemite (but not 10.11 El Capitan*), you can move Itsycal in the 
 <hr>
 
 ### iStats Menu 5 - $18
-[https://bjango.com/mac/istatmenus/](https://bjango.com/mac/istatmenus/)
-
-<br/>
+##### [https://bjango.com/mac/istatmenus/](https://bjango.com/mac/istatmenus/)
 
 ![iStats Menu 5 - $18](http://timurcatakli.github.io/images/cal04.jpg)
 
@@ -58,9 +50,7 @@ iStat Menus 5 sports a completely new design &mdash; new menubar icons, new drop
 <hr>
 
 ### Bartender 2 - $15
-[http://sites.fastspring.com/macbartender/product/buybartender2](http://sites.fastspring.com/macbartender/product/buybartender2)
-
-<br/>
+##### [http://sites.fastspring.com/macbartender/product/buybartender2](http://sites.fastspring.com/macbartender/product/buybartender2)
 
 ![Bartender 2 - $15](http://timurcatakli.github.io/images/cal05.png)
 
