@@ -3,9 +3,9 @@ layout: post
 title: Short Review of Mac Menu Bar Calendar Apps
 excerpt_separator: <!--more-->
 ---
-![Version Control](http://timurcatakli.github.io/images/151111-01.png)
+![iCultus - Free](http://timurcatakli.github.io/images/cal01.png)
 <br/>
-In your daily tasks you create, save, edit things. You can be a designer, editor or a developer. Version Control systems give you the ability to keep track of what you did to the file, what you changed and what the contents of those changes are.
+I was recently in need of a Mac menu bar Calendar App... After some digging I came across the ones below. Here is a short review of my findings:
 
 <!--more-->
 I was recently in need of a Mac menu bar Calendar App... After some digging I came across the ones below. Here is a short review of my findings:
