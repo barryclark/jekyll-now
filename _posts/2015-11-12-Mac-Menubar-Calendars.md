@@ -8,9 +8,6 @@ excerpt_separator: <!--more-->
 I was recently in need of a Mac menu bar Calendar App... After some digging I came across the ones below. Here is a short review of my findings:
 
 <!--more-->
-I was recently in need of a Mac menu bar Calendar App... After some digging I came across the ones below. Here is a short review of my findings:
-
-
 ### iCultus - Free
 ##### [http://djyde.github.io/iCultus/](http://djyde.github.io/iCultus/)
 
