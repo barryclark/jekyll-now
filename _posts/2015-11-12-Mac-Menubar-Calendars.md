@@ -3,7 +3,7 @@ layout: post
 title: Short Review of Mac Menu Bar Calendar Apps
 excerpt_separator: <!--more-->
 ---
-![iCultus - Free](http://timurcatakli.github.io/images/cal01.png)
+![iCultus - Free](http://timurcatakli.github.io/images/cal03.png)
 
 I was recently in need of a Mac menu bar Calendar App... After some digging I came across the ones below. Here is a short review of my findings:
 
