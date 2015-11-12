@@ -11,9 +11,6 @@ In your daily tasks you create, save, edit things. You can be a designer, editor
 
 ### What is Version Control?
 
-![Version Control](http://timurcatakli.github.io/images/151111-01.png)
-
-
 In your daily tasks you create, save, edit things. You can be a designer, editor or a developer. Version Control systems give you the ability to keep track of what you did to the file, what you changed and what the contents of those changes are.
 
 For a single file and single individual this process could be relatively easy and managable. But for a team of designers or developers it gets extremely complicated. You need a central repository to keep track of all actions on the project files. That is where a Version Control Systems come in.
