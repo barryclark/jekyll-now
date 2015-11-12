@@ -21,13 +21,13 @@ footer-links:
   email: timurcatakli@gmail.com
   facebook:
   flickr:
-  github: barryclark/jekyll-now
+  github: timurcatakli
   instagram:
-  linkedin: www.linkedin.com/in/timurcatakli
+  linkedin: timurcatakli
   pinterest:
   rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
   twitter: timurcatakli
-  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
+  stackoverflow: users/5553018/timur-catakli # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
 
