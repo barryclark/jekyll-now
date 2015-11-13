@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Dino Grej
+title: dgrej
 permalink: /about/
 ---
 A Geek!
