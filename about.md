@@ -3,13 +3,11 @@ layout: page
 title: Dino Grej
 permalink: /about/
 ---
-<h2>Um Brasileiro</h2>
-
 A Geek!
 
 <br />
 
-<a href="http://www.twitter.com/dgrej_" target=_blank><img src="http://www.shedfield.com/uploads/2/6/7/9/26793177/4382516.png" /></a> | <a href="mailto:dgrej@wavesandbox.com"><img src="https://d3kjp0zrek7zit.cloudfront.net/uploads/product/image/357/thumb_1391172616.png" /></a>
+<a href="mailto:dgrej@wavesandbox.com"><img src="https://d3kjp0zrek7zit.cloudfront.net/uploads/product/image/357/thumb_1391172616.png" /></a>
 
 <br />
 
