@@ -10,6 +10,8 @@ My name is Ryan Ward, I am currently a kitchen manager from Hampshire, UK  and t
 
 This is going to be the platform I use to think aloud, talk to my readers and take sound advice from experienced members of the community. Please join me, share me and contact me. I am hoping to encourage people to start their own journey from a job that pays the bills to a job they love. i will be going back to college and university in september. So my posts will be based on the work i'm doing. Any research i have to do, or pieces i have to write. and i will convey them to you guys. 
 
+[Follow my blog with Bloglovin](http://www.bloglovin.com/blog/14549121/?claim=6kdp29rybe3)
+
 
 ### Contact me
 
