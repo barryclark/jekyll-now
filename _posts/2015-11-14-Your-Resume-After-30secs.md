@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Crowdsourced Code Refactoring Website
+title: A top recruiter on what anyone can see after 30 seconds with your resume
 excerpt_separator: <!--more-->
 ---
-![Version Control](http://timurcatakli.github.io/images/refac01.png)
+![Version Control](http://timurcatakli.github.io/images/res10.jpg)
 <br/>
 Refactor.io - a simple tool for developers to share code instantly for refactoring and code review. Give it a try and let me know what your impressions are...
 
@@ -44,11 +44,5 @@ Refactor.io - a simple tool for developers to share code instantly for refactori
 <li><b>Sending resumes addressed to the CEO that end up on some random recruiter’s desk unopened.</b> This is a gross generalization here and exceptions are made for smaller companies, but um, CEOs don’t often read resumes. We sometimes laugh at people who do this.</li>
 <li><b>Exaggerating titles and responsibilities.</b> The truth comes out.</li>
 </ul><p class="annotatable">If you take issue with anything I’ve said here, you’re well within your right. Recruiters are paid to be judgmental. I am nothing if not honest.<div class="anno-right"><button class="anno-button "></button></div></p>
-<div class="inline-ad" id="inline-ad-525496-0"><div id="google_ads_iframe_/56091333/inline-desktop_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/56091333/inline-desktop_0" name="google_ads_iframe_/56091333/inline-desktop_0" width="640" height="360" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:&quot;<html><body style='background:transparent'></body></html>&quot;" style="border: 0px; vertical-align: bottom;"></iframe></div><iframe id="google_ads_iframe_/56091333/inline-desktop_0__hidden__" name="google_ads_iframe_/56091333/inline-desktop_0__hidden__" width="0" height="0" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:&quot;<html><body style='background:transparent'></body></html>&quot;" style="border: 0px; vertical-align: bottom; visibility: hidden; display: none;"></iframe></div><p class="annotatable">Happy hunting.<div class="anno-right"><button class="anno-button "></button></div></p>
-<p class="annotatable"><em>You can follow Quora on <a href="https://twitter.com/Quora">Twitter</a>, <a href="https://www.facebook.com/quora">Facebook</a>, and <a href="https://plus.google.com/111127313006403749982/posts">Google+</a>. </em><div class="anno-right"><button class="anno-button "></button></div></p>
-<p class="annotatable">More from Quora:<div class="anno-right"><button class="anno-button "></button></div></p>
-<p class="annotatable"><a href="https://www.quora.com/Should-I-reveal-my-compensation-to-a-recruiter">Should I Reveal My Compensation To A Recruiter?</a><div class="anno-right"><button class="anno-button "></button></div></p>
-<p class="annotatable"><a href="https://www.quora.com/What-makes-a-great-r%C3%A9sum%C3%A9">What Makes A Great Resume?</a><div class="anno-right"><button class="anno-button "></button></div></p>
-<p class="annotatable"><a href="https://www.quora.com/What-are-the-worst-interview-mistakes-you%E2%80%99ve-seen-as-recruiter">What Are The Worst Interview Mistakes You’ve Seen As A Recruiter?</a><div class="anno-right"><button class="anno-button "></button></div></p>
-			<div class="article-aside"><aside class="popular-stories-module"><article><h4 class="module-title">Most Popular</h4><figure class="popular-module-featured-image"><a href="http://qz.com/547641/theres-an-awful-cost-to-getting-a-phd-that-no-one-talks-about/" title="There’s an awful cost to getting a PhD that no one talks about"><img src="https://qzprod.files.wordpress.com/2015/11/phdhats.jpg?quality=80&amp;strip=all&amp;w=320" alt=""></a></figure><h3><a href="http://qz.com/547641/theres-an-awful-cost-to-getting-a-phd-that-no-one-talks-about/" title="There’s an awful cost to getting a PhD that no one talks about">There’s an awful cost to getting a PhD that no one talks about</a></h3></article></aside></div>
+
 		</div>
