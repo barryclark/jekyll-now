@@ -5,7 +5,7 @@ excerpt_separator: <!--more-->
 ---
 ![Version Control](http://timurcatakli.github.io/images/res10.jpg)
 <br/>
-Refactor.io - a simple tool for developers to share code instantly for refactoring and code review. Give it a try and let me know what your impressions are...
+This article is copied word for word from <a href="http://qz.com/525496/done-what-a-recruiter-sees-on-your-resume-at-first-glance">this site</a>. I will definitely bookmark it for my own personal use but I thought it might be useful for others, too, so I am sharing it with you...
 
 <!--more-->
 
