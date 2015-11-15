@@ -9,7 +9,7 @@ Game developer in EA ,Popcap.
 
 ### More Information
 
-Welcome to talk about the topic of game,technique and music...
+A place to include any other types of information that you'd like to include about yourself.
 
 ### Contact me
 
