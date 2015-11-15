@@ -58,7 +58,7 @@ body {
 
 /* No `:visited` state is required by default (browsers will use `a`) */
 a {
-	color: #4184F3;
+	color: #6653FF;
 	text-decoration: none;
 }
 a strong {
@@ -68,7 +68,7 @@ a strong {
 a:hover,
 a:focus {
 	text-decoration: underline;
-	color: #4184F3;
+	color: #6653FF;
 }
 
 /* Headings */
@@ -332,7 +332,7 @@ tbody tr:nth-child(odd) th {
 	color: #303030;
 }
 .post-title a:hover {
-	color: #4184F3;
+	color: #6653FF;
 }
 .page-title,
 .post-title {
@@ -365,7 +365,7 @@ tbody tr:nth-child(odd) th {
 	color: #999;
 }
 .related-posts li a:hover {
-	color: #4184F3;
+	color: #6653FF;
 	text-decoration: none;
 }
 .related-posts li a:hover small {
