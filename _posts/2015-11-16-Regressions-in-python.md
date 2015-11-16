@@ -26,7 +26,7 @@ plt.axis([0,12,0,20])
 plt.grid(True)
 plt.show()
 ```
-![an image alt text]({{ site.baseurl }}/images/price-vs-diameter.png "price vs diameter")
+![]({{ site.baseurl }}/images/price-vs-diameter.png "price vs diameter")
 
 
 
