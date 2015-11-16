@@ -30,6 +30,4 @@ plt.show()
 
 
 
-Check out my linkedIn profile [here] (https://de.linkedin.com/in/sivagabbi)
 
-![an image alt text]({{ site.baseurl }}/images/me_2.png "an image title")
