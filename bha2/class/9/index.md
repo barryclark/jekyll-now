@@ -14,7 +14,7 @@ Microbes can generate a lot of data. Especially 3D data is beautiful and essenti
 * [Spectrometer Design](/bha2/class/9/pdf/2 Spectrometer design.pdf)
 * Practicals
   * PyMol
-  * [Iodine Clock Reaction](/bha2/class/9/iodine-clock-reaction/
+  * [Iodine Clock Reaction](/bha2/class/9/iodine-clock-reaction/)
 
 ## Devices
 
