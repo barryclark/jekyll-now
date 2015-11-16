@@ -13,7 +13,7 @@ With an affinity to numbers and programming I have graduated towards start-ups w
 
 Check out my linkedIn profile [here] (https://de.linkedin.com/in/sivagabbi)
 
-[https://github.com/SivaGabbi/sivagabbi.github.io/blob/master/images/me_2.png]
+![an image alt text]({{ site.baseurl }}/images/me_2.png "an image title")
 
 ### Contact me
 
