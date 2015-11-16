@@ -17,4 +17,4 @@ Check out my linkedIn profile [here] (https://de.linkedin.com/in/sivagabbi)
 
 ### Contact me
 
-[siva.gabbi@gmail.com](mailto:siva.gabbi@gmail.com)
+My Email: [siva.gabbi@gmail.com](mailto:siva.gabbi@gmail.com)
