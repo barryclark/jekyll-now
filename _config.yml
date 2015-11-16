@@ -9,7 +9,7 @@ name: My Blog
 description: Data Scientist
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: ![an image alt text]({{ site.baseurl }}/images/me_2.png "an image title")
+avatar: [https://github.com/SivaGabbi/sivagabbi.github.io/blob/master/images/me_2.png]
 
 #
 # Flags below are optional
