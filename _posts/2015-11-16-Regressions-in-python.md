@@ -2,7 +2,7 @@
 layout: post
 title: Regressions in python!
 ---
-![]({{ site.baseurl }}/images/IMG_0299.png "image")
+![]({{ site.baseurl }}/images/extrapolating.jpeg "image")
 
 
 It is more or less logical to think that a bigger pizza costs more. In other words the price of a pizza is directly proportional to the cost of the pizza. 
