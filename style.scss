@@ -36,7 +36,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 
   line-height: 1.7;
-  margin: 0 0 1em;
+  margin: .75em 0 .25em;
   padding: 0;
 
   @include mobile {
@@ -64,9 +64,12 @@ h4 {
   color: $gray;
 }
 
-p {
-  margin: 15px 0;
+p, li {
   font-family: $georgia;
+}
+
+p {
+    margin: 0 0 1em;
 }
 
 a {
@@ -331,6 +334,10 @@ footer {
 /*********************/
 /* CONTENT */
 /*********************/
+iframe.full-width {
+  width: 100%;
+}
+
 figcaption {
   display: box;
   font-size: .8em;
@@ -338,6 +345,14 @@ figcaption {
 
 .content-image {
   text-align: center;
+}
+
+.content-surge {
+  text-align: center;
+
+  iframe {
+    outline: 2px solid #ccc;
+  }
 }
 
 .content-youtube {
