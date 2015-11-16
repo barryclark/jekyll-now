@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Data Scientist@Gymondo.de
+Data Scientist @ Gymondo.de
 
 ### More Information
 
