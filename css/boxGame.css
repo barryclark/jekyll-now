@@ -1,13 +1,8 @@
 .canvasContainer {
-	position: relative;
 }
 
 canvas#canvas {
 	border: 4px double;
-	position: absolute;
-	left: 50%;
-	margin-right: -50%;
-	transform: translate(-50%, 0);
 }
 
 .score {
