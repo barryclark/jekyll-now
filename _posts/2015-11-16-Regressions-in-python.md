@@ -101,13 +101,35 @@ the r-square value of the model is 0.76
 
 ```
 
-As can be seen there is a significant improvement in the r square with the addition of an explanatory variable. Is there a possibility to increase our accuracy further ? 
+As can be seen there is a significant improvement in the r square with the addition of an explanatory variable. Is there a possibility to increase our accuracy further ? What if the relationship between the pizza price and diameter is not linear? It is highly likely that the price is a square or cube of the diameter. 
 
-YES! There is!
-
-In both of our earlier models we are assuming a linear relationship between the diameter of the pizza and its price. It is highly likely that the price is a square or cube of the diameter. Lets look into that: 
+Lets look into that: 
 
 ### Non-Linear Regression
+
+What if you were given the option to be able to draw a regression line that is not linear? obviously you would minimize the error value between the predicted and actual values to the least. 
+
+```
+
+import numpy as np
+import matplotlib.pyplot as plt
+from sklearn.linear_model import LinearRegression
+from sklearn.preprocessing import PolynomialFeatures
+
+diameter_pizza = [[6], [8], [10], [14], [18]]
+price_pizza = [[7], [9], [13], [17.5], [19]]
+diameter_pizza_test = [[7], [9], [11], [16]]
+price_pizza_test = [[8], [12], [15], [18]]
+
+model_lr = LinearRegression() 
+model_lr.fit(diameter_pizza, price_pizza) # linear regression model
+
+diameter_pizza_square = [i*i for i in diameter_pizza]
+
+
+
+
+
 
 
 
