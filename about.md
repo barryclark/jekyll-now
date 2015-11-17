@@ -27,8 +27,8 @@ Resume-type / professional information about me:
 
 ## Wikipedia
 
-<a href="https://en.wikipedia.org/wiki/User:{{ site.footer-links.wikipedia }}"><img src="https://upload.wikimedia.org/wikipedia/commons/8/80/Wikipedia-logo-v2.svg" class="svg-icon" alt="Wikipedia Globe" /></a> Biographical and historical information about me
+<a href="https://en.wikipedia.org/wiki/User:{{ site.footer-links.wikipedia }}"><img src="/images/wikipedia-logo.svg" class="svg-icon" alt="Wikipedia Globe" /></a> Biographical and historical information about me
 
 ## Wright State
 
-<a href="http://people.wright.edu/{{ site.footer-links.wrightstate }}"><img src="https://upload.wikimedia.org/wikipedia/en/2/26/WrightStateLogo.png" class="svg-icon" style="width: 84px;height: 40px;" alt="Wright State Logo" /></a> Academic infomation about me
+<a href="http://people.wright.edu/{{ site.footer-links.wrightstate }}"><img src="/images/WrightStateLogo.png" class="svg-icon" style="width: 84px;height: 40px;" alt="Wright State Logo" /></a> Academic infomation about me
