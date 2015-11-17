@@ -17,8 +17,8 @@
 		  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 		
-		{% if page.chart %}
-		<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/chart.css" />
+		{% if page.css %}
+		<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}{{ page.css }}" />
 		{% endif %}
 		<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
 		<link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
