@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Family Tree: Age Statistics
+title: Family Tree&#58; Age Statistics
 tags: [family tree, math]
 chart: true
 ---
