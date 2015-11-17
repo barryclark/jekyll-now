@@ -15,8 +15,16 @@
     stroke: #000;
 }
 
+.x-axis .main.label {
+    font-size: inherit;
+}
+
 .x-axis .label {
     text-anchor: middle;
+}
+
+.y-axis .labels {
+    font-size: small;
 }
 
 .y-axis .label {
