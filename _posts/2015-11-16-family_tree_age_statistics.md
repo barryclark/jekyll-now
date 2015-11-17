@@ -2,7 +2,7 @@
 layout: post
 title: Family Tree&#58; Age Statistics
 tags: [family tree, math]
-chart: true
+css: /chart.css
 ---
 
 Just a [bar chart](https://en.wikipedia.org/wiki/Bar_chart), the [five-number summary](https://en.wikipedia.org/wiki/Five-number_summary), and the [average](https://en.wikipedia.org/wiki/Average) of known ages in my family tree.
