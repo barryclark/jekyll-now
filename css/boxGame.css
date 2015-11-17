@@ -1,7 +1,15 @@
+.container {
+	position: relative;
+}
+
 canvas#canvas {
-	border-style: double;
+	border: 4px double;
+	position: absolute;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, 0);
 }
 
 .score {
-  text-align: center;
+	text-align: center;
 }
