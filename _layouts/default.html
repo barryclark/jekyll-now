@@ -12,6 +12,12 @@
 	  	</script>
 	  	<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 		{% endif %}
+		{% if page.jquery %}
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		{% endif %}
+		{% if page.javascript %}
+		<script src="{{ page.javascript }}"></script>
+		{% endif %}
 		
 		<!--[if lt IE 9]>
 		  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
