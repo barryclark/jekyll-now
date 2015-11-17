@@ -15,7 +15,7 @@
     stroke: #000;
 }
 
-.x-axis .main.label {
+.ageChart .x-axis .main.label {
     font-size: inherit;
 }
 
@@ -23,7 +23,7 @@
     text-anchor: middle;
 }
 
-.y-axis .labels {
+.ageChart .y-axis .labels {
     font-size: small;
 }
 
