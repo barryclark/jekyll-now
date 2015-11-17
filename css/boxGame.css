@@ -1,0 +1,7 @@
+canvas#canvas {
+	border-style: double;
+}
+
+.score {
+  text-align: center;
+}
