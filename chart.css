@@ -1,0 +1,36 @@
+.bar:hover {
+    fill: #A52A2A;
+}
+
+.bar, .legendBox {
+    fill: #4682B4;
+}
+
+.legendBox {
+    stroke-width: 1;
+    stroke: black;
+}
+
+.lines {
+    stroke: #000;
+}
+
+.x-axis .label {
+    text-anchor: middle;
+}
+
+.y-axis .label {
+    text-anchor: end;
+}
+
+.bar.births, .legendBox.births {
+    fill: yellow;
+}
+
+.bar.deaths, .legendBox.deaths {
+    fill: black;
+}
+
+.ageChart .x-axis .label {
+    font-size: 10px;
+}
