@@ -73,9 +73,7 @@ diameter_toppings_pizza = [[6, 0], [7, 1], [8, 1], [9, 2], [10, 2]]
 price_pizza = [[7], [10], [14], [17], [19]]
 
 from sklearn.linear_model import LinearRegression
-
 model = LinearRegression()
-
 model.fit(diameter_toppings_pizza, price_pizza)
 
 diameter_toppings_pizza_test = [[8, 2], [9, 0], [11, 2], [16, 2], [12, 0]]
