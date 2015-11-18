@@ -1,10 +1,8 @@
 ---
 layout: post
-title: You're up and running!
+title: Le revenant
 ---
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+After what can only be described as a sizable break, now is the time to return to some kind of more formal writing. A document of thoughts, that doesn't need to be necessairly shared but one that is nevertheless important.
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
-
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
+Today has been the first day after finishing school and aside from nursing a bad head, felt like a day full of opportunity. Over the next four months or so the clear aim ought to be to achieve something. What that is for now I'm unsure of, however this hopefully acts as a positive first step.
