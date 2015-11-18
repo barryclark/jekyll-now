@@ -4,6 +4,9 @@ title: Impressum
 permalink: /impressum/
 ---
 
+Holger Reinhardt
+(verantwortlich i.S.d. § 55 Abs. 2 RStV)
+
 ###Anschrift:
 
 Haufe-Lexware GmbH & Co. KG
