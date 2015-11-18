@@ -1,9 +1,8 @@
 ---
-layout: page
+layout: about
 title: About me
 permalink: /about/
 ---
-<p class="date">Oct 2015</p>
 
 Hello friend (I hope)!
 
@@ -41,6 +40,3 @@ Perhaps talking about how I like photography and have some interest in design wo
 ### Contact me
 
 Feel free to reach out on [Twitter](https://www.twitter.com/{{ site.footer-links.twitter }})!
-
-</div>
-</article>

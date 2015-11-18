@@ -7,6 +7,8 @@
 
 @import "reset";
 @import "variables";
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
 // Syntax highlighting @import is at the bottom of this file
 
 /**************/
@@ -19,7 +21,7 @@ html {
 
 body {
 	background: $white;
-  font: 18px/1.4 $helvetica;
+  font: 18px/1.4 $titleFontFamily;
   color: $darkGray;
 }
 
@@ -31,7 +33,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
+  font-family: $titleFontFamily;
   color: $darkerGray;
   font-weight: bold;
 
@@ -198,7 +200,7 @@ img {
   margin: 0;
   color: $darkGray;
   cursor: pointer;
-  font-family: $helveticaNeue;
+  font-family: $titleFontFamily;
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
@@ -207,6 +209,7 @@ img {
 .site-description {
   margin: -5px 0 0 0;
   color: $gray;
+  font-family: $titleFontFamily;
   font-size: 16px;
 
   @include mobile {
@@ -218,7 +221,7 @@ nav {
   display: table;
   float: right;
   margin-top: 10px;
-  font-family: $helveticaNeue;
+  font-family: $titleFontFamily;
   line-height: 20px;
   font-size: 18px;
 
@@ -268,30 +271,17 @@ nav {
   background: #fcfcfc;
 }
 
-.posts > .post:last-child {
-}
-
-.posts > .post:after {
-    -moz-transform-origin: 0 0;
-    -ms-transform-origin: 0 0;
-    -webkit-transform-origin: 0 0;
-    transform-origin: 0 0;
-    -moz-transform: rotate(-2deg);
-    -ms-transform: rotate(-2deg);
-    -webkit-transform: rotate(-2deg);
-    /* transform: rotate(-2deg); */
-    position: absolute;
-    left: -25%;
-    bottom: -135px;
-    content: '';
-    pointer-events: none;
-    z-index: -1;
-    width: 150%;
-    height: 200px;
-    background: inherit;  
-}
-
 .post {
+  h1 {
+    margin-top: 0;
+    line-height: 1.3em;
+
+    a {
+      vertical-align: middle;
+    }
+  }
+
+
   blockquote {
     margin: 1.8em .8em;
     border-left: 2px solid $gray;
@@ -311,7 +301,9 @@ nav {
   }
 
   .date {
-    font-size: .8em;
+    font-size: .5em;
+    font-style: normal;
+    color: $mediumGray;
   }
 }
 
@@ -386,6 +378,18 @@ figcaption {
 /*********************/
 /* ABOUT */
 /*********************/
+.about-splash {
+  margin: 0 auto;
+  width: 700px;
+  height: 265px;
+  background-image: url('./images/about/me.png');
+  background-size: 100% 100%;
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+      background-image: url('./images/about/me-2x.png');
+  }
+}
+
+
 .about-title {
   a {
     vertical-align: middle;

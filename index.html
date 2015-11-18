@@ -1,18 +1,20 @@
 ---
-layout: default
+layout: main
 ---
 
 <div class="posts">
   {% for post in site.posts %}
     <article class="post">
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+      <h1>
+        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+        <span class="date">- {{ post.date | date: '%B %d, %Y'}}</span>
+      </h1>
+      
 
       <div class="entry">
         {{ post.excerpt }}
       </div>
-
-      <p class="date"> {{ post.date | date: '%B %d, %Y'}}</p>
 
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
     </article>
