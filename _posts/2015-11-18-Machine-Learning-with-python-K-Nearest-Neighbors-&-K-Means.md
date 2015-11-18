@@ -1,3 +1,8 @@
+---
+layout: post
+title: Regressions in python!
+---
+
 ![](http://gerardnico.com/wiki/_media/data_mining/basket_analysis_joke.png)
 
 
