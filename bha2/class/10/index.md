@@ -10,7 +10,9 @@ It's time for a party! Let's celebrate the end of 10 weeks of biohacking. Invite
 
 ## Schedule
 
-* TBA
+* [Introduction](/bha2/class/10/pdf/1 Graduation Show.pdf)
+* Project presentations
+* Celebration!
 
 ## Assignment
 
