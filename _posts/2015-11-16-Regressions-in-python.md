@@ -131,7 +131,7 @@ let us plot this and see how our linear regression model looks like
 ```
 % matplotlib inline # makes the plot appear in the current window
 
-plt.axis([5, 25, 5, 25])
+plt.axis([5, 18, 5, 20])
 plt.grid(True)
 plt.scatter(diameter_pizza_test, price_pizza_test)
 plt.plot(diameter_pizza_test, model_lr.predict(diameter_pizza_test))
@@ -169,6 +169,10 @@ The simple linear regression has an r square of 0.8829
 The quadratic linear regression has an r square of 0.9756
 
 So a quadratic linear regression explains 97.5% of the variation the price in a pizza! 
+
+
+
+
 
 
 
