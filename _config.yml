@@ -6,7 +6,7 @@
 name: My Blog
 
 # Short bio or description (displayed in the header)
-description: Data Scientist
+description: Machine Learning & stuff
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: http://cdn.pieria.co.uk/new_live/dr/section_main/1044.jpg
@@ -19,7 +19,7 @@ avatar: http://cdn.pieria.co.uk/new_live/dr/section_main/1044.jpg
 footer-links:
   dribbble:
   email: siva.gabbi@gmail.com
-  facebook:
+  facebook: siva.r.reddy
   flickr:
   github: sivagabbi
   instagram:
