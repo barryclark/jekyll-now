@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Regressions in python!
+title: Machine Learning with Python - K-Nearest Neighbors & K-Means!
 ---
 
 ![](http://gerardnico.com/wiki/_media/data_mining/basket_analysis_joke.png)
