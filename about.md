@@ -4,16 +4,37 @@ title: About
 permalink: /about/
 ---
 
-Data Scientist @ Gymondo
+![an image alt text]({{ site.baseurl }}/images/me_2.png "an image title")
 
-### More Information
+### Profession 
 
-My name is Siva. I come from an engineering background with an MBA in finance. 
-With an affinity to numbers and programming I have graduated towards start-ups with specific focus on BI and Data Science. 
+- Data Scientist
+
+### Educational Background
+
+- Bachelors in electronics engineering
+- Masters in Business Administration (MBA) 
+
+### Professional Background
+
+- Investment Banking (M&A) (Cartagena Capital and SBI Capital Markets)
+- Credit Risk (GE Capital)
+- E-commerce (Epic Companies GmbH)
+- Data Science (Rocket Internet GmbH)
 
 Check out my linkedIn profile [here] (https://de.linkedin.com/in/sivagabbi)
 
-![an image alt text]({{ site.baseurl }}/images/me_2.png "an image title")
+
+
+
+### Interests & Hobbies
+
+- A passionate tennis fan 
+- An avid traveler
+- Loves the country side, animals and mountains
+- Cooks great food.
+
+
 
 ### Contact me
 
