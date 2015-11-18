@@ -124,7 +124,52 @@ price_pizza_test = [[8], [12], [15], [18]]
 model_lr = LinearRegression() 
 model_lr.fit(diameter_pizza, price_pizza) # linear regression model
 
-diameter_pizza_square = [i*i for i in diameter_pizza]
+```
+
+let us plot this and see how our linear regression model looks like 
+
+```
+% matplotlib inline # makes the plot appear in the current window
+
+plt.axis([5, 25, 5, 25])
+plt.grid(True)
+plt.scatter(diameter_pizza_test, price_pizza_test)
+plt.plot(diameter_pizza_test, model_lr.predict(diameter_pizza_test))
+
+```
+
+![]({{ site.baseurl }}/images/lr.png "linear regression visual")
+
+Now let us build a basic quadratic (degree regression) and see if it can predict the prices better than the linear regression by adding it to the existing plot of linear regression
+
+```
+build_polynomial_features = PolynomialFeatures(degree = 2)
+diameter_pizza_quadratic = build_polynomial_features.fit_transform(diameter_pizza)
+model_qr = LinearRegression()
+model_qr = model_qr.fit(diameter_pizza_quadratic,price_pizza)
+
+x = np.linspace(0,25,100)
+plt.plot(x, model_qr.predict(build_polynomial_features.transform(x.reshape(x.shape[0],1))),c='r',linestyle='--')
+
+```
+
+![]({{ site.baseurl }}/images/lrplusqr.png "joint visual")
+
+Let us now compare the r-squares of both models
+
+```
+diameter_pizza_quadratic_test = build_polynomial_features.fit_transform(diameter_pizza_test.reshape(diameter_pizza_test.shape[0],1))
+
+print 'Simple linear regression r-squared', model_lr.score(diameter_pizza_test, price_pizza_test)
+print 'Quadratic regression r-squared', model_qr.score(diameter_pizza_quadratic_test, price_pizza_test)
+
+```
+
+The simple linear regression has an r square of 0.8829
+The quadratic linear regression has an r square of 0.9756
+
+So a quadratic linear regression explains 97.5% of the variation the price in a pizza! 
+
 
 
 
