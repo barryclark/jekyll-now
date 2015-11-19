@@ -69,8 +69,6 @@ O'reilly publishes not just books but also video and audio guides. So let us eli
 
 thumbtext_ebook = []
 
-
-
 def is_video(thumbtext_):
     for i in range(0,1110): 
         if thumbtext_[i].find('span','pricelabel').text.split()[0].lower() == 'ebook:':
@@ -81,7 +79,6 @@ def is_video(thumbtext_):
     return thumbtext_ebook
 
 thumbtext_ebook = is_video(thumbtext) # extract html 
-
 print len(thumbtext_ebook)
 
 ```
@@ -89,7 +86,6 @@ print len(thumbtext_ebook)
 Now that we have all the tags of each title, let us extract the parts of the title we need. We can start with the most important stuff like title, author, price and date of publication. 
 
 ```
-
 data = {'title':[],'author':[], 'price':[], 'date':[]}
 
 def extract_data(thumbtext_ebook_):
@@ -109,7 +105,6 @@ data = extract_data(thumbtext_ebook)
 Pandas offer great flexibility in working with data. So let us fit the dictinary into a data frame and work on it. 
 
 ```
-
 from pandas import DataFrame as df
 dataframe = df.from_dict(data) 
 dataframe
