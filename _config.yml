@@ -3,7 +3,7 @@
 #
 
 # Name of your site (displayed in the header)
-name: JJ
+name: James Moffat
 
 # Short bio or description (displayed in the header)
 description: Professional Coffee Drinker.
@@ -19,10 +19,10 @@ avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/je
 footer-links:
   dribbble:
   email:
-  facebook:
+  facebook: jamesstephenmoffat
   flickr:
   github: barryclark/jekyll-now
-  instagram:
+  instagram: jamesmoff
   linkedin:
   pinterest:
   rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
