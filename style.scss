@@ -28,7 +28,7 @@ body {
 .container {
   margin: 0 auto;
   max-width: 740px;
-  padding: 0 10px;
+  padding: 0 $containerPadding;
   width: 100%;
 }
 
@@ -353,7 +353,7 @@ figcaption {
   width: 670px;
 
   @include mobile {
-    width: 390px;
+    width: 100%;
   }
 
   iframe {
@@ -376,12 +376,17 @@ figcaption {
 
 
 /*********************/
-/* ABOUT */
+/* SPLASH */
 /*********************/
-.about-splash {
+.splash-wrapper {
   margin: 0 auto;
-  width: 700px;
-  height: 265px;
+  @include mobile {
+  }
+}
+
+.splash {
+  margin: 0 $containerPadding;
+  padding-top: 100% * 530 / 1400;
   background-image: url('./images/about/me.png');
   background-size: 100% 100%;
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
@@ -389,6 +394,9 @@ figcaption {
   }
 }
 
+/*********************/
+/* ABOUT */
+/*********************/
 
 .about-title {
   a {
