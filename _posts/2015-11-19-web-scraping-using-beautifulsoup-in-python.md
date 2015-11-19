@@ -113,7 +113,7 @@ dataframe
 
 This is how the output looks like: 
 
-![]({{ site.baseurl }}/images/scraping.jpg "scraping")
+![]({{ site.baseurl }}/images/scraping.jpeg "scraping")
 
 
 
