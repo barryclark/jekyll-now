@@ -1,0 +1,69 @@
+---
+layout: post
+title: Web scraping using BeautifulSoup in Python!
+---
+
+### Scraping the books published by O'reilly on 'Data'
+
+The first part of any data scraping algorithm is to generate the right url. If we look at the url of the part holding books on data we see a pattern. It is 
+
+http://shop.oreilly.com/category/browse-subjects/data.do?sortby=publicationDate&page=
+
+with 'page' in the end sequencing the numbers. Once we have the url next step is to append all the available html script in an array:
+
+```
+import requests
+
+url = 'http://shop.oreilly.com/category/browse-subjects/data.do?sortby=publicationDate&page='
+
+html_url = [url + str(i) for i in range(1,38)] 
+
+html_text = []
+
+
+def get_html_text(html_url_):
+    for i in range(0,37): 
+        html_text.append(requests.get(html_url_[i]).text) # goes through every page of oreilly publications on 'Data' and saves the html script
+    return html_text
+
+html_text = get_html_text(html_url)
+
+```
+
+The html you just collected is raw unstructured html. This is where the BeautifulSoup package comes in handy. It structures the raw data into meaningful tags which we can later use to extract only the data we need. 
+
+```
+
+soup = []
+def format_html_text(html_text_): 
+    for i in range(0,37):
+        soup.append(BeautifulSoup(html_text_[i], 'html5lib')) # formats the html text
+    return soup   
+
+soup = format_html_text(html_text)
+
+```
+
+From the structured data you can see that the tags 'td' and 'thumbtext' contain details on every book. So let us extract that part. 
+
+```
+thumbtext = []
+
+def get_thumbtext(soup_):
+    for i in range(0, 37): 
+        thumbtext.extend(soup_[i].findAll('td', 'thumbtext'))
+    return thumbtext
+
+thumbtext = get_thumbtext(soup)
+
+print len(thumbtext) # of titles under 'data' published by o'reilly
+
+```
+
+
+
+
+
+
+
+
