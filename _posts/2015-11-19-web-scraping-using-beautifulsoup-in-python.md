@@ -3,6 +3,9 @@ layout: post
 title: Web scraping using BeautifulSoup in Python!
 ---
 
+![](https://s-media-cache-ak0.pinimg.com/736x/35/d6/d6/35d6d65a709e9b73f6795c02fbb203d0.jpg)
+
+
 ### Scraping the books published by O'reilly on 'Data'
 
 The first part of any data scraping algorithm is to generate the right url. If we look at the url of the part holding books on data we see a pattern. It is 
@@ -60,6 +63,60 @@ print len(thumbtext) # of titles under 'data' published by o'reilly
 
 ```
 
+O'reilly publishes not just books but also video and audio guides. So let us eliminate everything that is not a book. 
+
+```
+
+thumbtext_ebook = []
+
+
+
+def is_video(thumbtext_):
+    for i in range(0,1110): 
+        if thumbtext_[i].find('span','pricelabel').text.split()[0].lower() == 'ebook:':
+            #print thumbtext_[i].find('span','pricelabel').text.split()[0].lower()
+            thumbtext_ebook.append(thumbtext_[i])
+        else: 
+            continue
+    return thumbtext_ebook
+
+thumbtext_ebook = is_video(thumbtext) # extract html 
+
+print len(thumbtext_ebook)
+
+```
+
+Now that we have all the tags of each title, let us extract the parts of the title we need. We can start with the most important stuff like title, author, price and date of publication. 
+
+```
+
+data = {'title':[],'author':[], 'price':[], 'date':[]}
+
+def extract_data(thumbtext_ebook_):
+    for i in range(0,len(thumbtext_ebook_)):
+        #data['bookid'].append(i)
+        data['title'].append(thumbtext_ebook_[i].find('div','thumbheader').text.strip())
+        data['author'].append(thumbtext_ebook_[i].find('div','AuthorName').text.strip())
+        
+        data['price'].append(thumbtext_ebook_[i].find('span','price').text.strip())
+        data['date'].append(thumbtext_ebook_[i].find('span','directorydate').text.strip())
+    return  data
+
+data = extract_data(thumbtext_ebook)
+
+```
+
+Pandas offer great flexibility in working with data. So let us fit the dictinary into a data frame and work on it. 
+
+```
+
+from pandas import DataFrame as df
+dataframe = df.from_dict(data) 
+dataframe
+
+```
+
+This is how the output looks like: 
 
 
 
