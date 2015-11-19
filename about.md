@@ -4,12 +4,8 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
-
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
+I'm an Applied Mathematics major at the University of California, Berkeley who's currently falling in love with statistics. A lot of the content on this blog is going to be an expression of that love.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[dashiell@berkeley.edu](mailto:dashiell@berkeley.edu)
