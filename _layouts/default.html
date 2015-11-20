@@ -43,7 +43,10 @@
     <div id="main" role="main" class="container">
       {{ content }}
     </div>
-    {% include adsense_bottom.html %}
+
+    <div id="googleAd">
+       {% include adsense_bottom.html %}
+    </div>
 
     <div class="wrapper-footer">
       <div class="container">
@@ -52,7 +55,7 @@
         </footer>
       </div>
     </div>
-
+    
     {% include analytics.html %}
   </body>
 </html>
