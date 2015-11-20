@@ -2,9 +2,8 @@
 layout: post
 title: A top recruiter on what anyone can see after 30 seconds with your resume
 excerpt_separator: <!--more-->
+imgid: res10.jpg
 ---
-![Version Control](http://timurcatakli.github.io/images/res10.jpg)
-<br/>
 This article is copied word for word from <a href="http://qz.com/525496/done-what-a-recruiter-sees-on-your-resume-at-first-glance">this site</a>. I will definitely bookmark it for my own personal use but I thought it might be useful for others, too, so I am sharing it with you...
 
 <!--more-->
