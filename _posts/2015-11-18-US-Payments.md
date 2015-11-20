@@ -23,7 +23,7 @@ Wire Transfer（电汇）
 
 他们的占比大概是这样的（书上提供的数据），注意 subtotal card 不是一种卡，而是把贷记卡和借记卡合并的数据。
 分别从笔数和金额进行对比，还是很有意思的
-![/images/Payments-Systems-Statistics.png](/images/Payments-Systems-Statistics.png=250x) 
+![/images/Payments-Systems-Statistics.png](/images/Payments-Systems-Statistics.png =250x) 
 
 #支付系统的业务领域
 Point of Sale (POS) // POS机
