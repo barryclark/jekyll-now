@@ -68,11 +68,13 @@ title: Reading Notes for "Payments Systems In The U.S."
 后来发生了911恐怖袭击，很多航班都停运了，支票没法及时清算。这时候美国政府推了一把，将强化图片清算的合法化，这事儿就做成了。
 
 和Check相关的还有一种Service叫Lockbox (带锁的箱子)， 本质上像一个邮箱，消费者把该付的账单的Check放到指定的LockBox, 然后由第三方定期去取，然后结算。
-如果是大客户，那么这种Lockbox就叫做WholeSale lockbox
-批发零售的关系
+
+如果是大客户，那么这种Lockbox就叫做WholeSale lockbox, 类似于批发零售的关系
 
 ###关于风险
+
 支票的风险主要有两个：
+
 1. 支付时间和到账时间是有时差的，清算之前钱一直就还没到账；没到账之前什么事情都有可能发生 :) 有时候现金流断了，一家企业就挂了
 
 2. 账户里没那么多钱进行清算, 即所谓的NSF (No sufficent fund)。关于这个，全美每年的损失能到10 billion的级别
