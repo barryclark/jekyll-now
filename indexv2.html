@@ -7,7 +7,7 @@ layout: default
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
 <head>
-    <title>Timur Catakli - Developer</title>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -279,19 +279,11 @@ layout: default
 
 <div class="posts">
   {% for post in site.posts %}
-    <article class="post">
-
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-      <span style="color:#5cbf2a;font-size:80%">{{ post.date | date: "%B %e, %Y" }}</span>
-
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-<a href="{{ site.baseurl }}{{ post.url }}" class="myButton">Read More</a>
-    </article>
+      <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
   {% endfor %}
 </div>
-               
+
+{% include analytics.html %}
 </body>
 </html> 
 
