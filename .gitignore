@@ -1,9 +1,9 @@
+# project
 _site
-.DS_Store
-.jekyll
-.bundle
 .sass-cache
-Gemfile
-Gemfile.lock
-node_modules
-package.json
+.vagrant
+
+# general
+.DS_Store
+Thumbs.db
+ehthumbs.db
