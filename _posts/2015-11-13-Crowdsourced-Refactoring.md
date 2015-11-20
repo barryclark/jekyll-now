@@ -2,9 +2,8 @@
 layout: post
 title: Crowdsourced Code Refactoring Website
 excerpt_separator: <!--more-->
+imgid: refac01.png
 ---
-![Version Control](http://timurcatakli.github.io/images/refac01.png)
-<br/>
 Refactor.io - a simple tool for developers to share code instantly for refactoring and code review. Give it a try and let me know what your impressions are...
 
 <!--more-->
