@@ -2,11 +2,9 @@
 layout: post
 title: Feed one for a lifetime - Learn Bash '-man' Command
 excerpt_separator: <!--more-->
+imgid: man01.jpg
 ---
-![Bash vs Shell](http://timurcatakli.github.io/images/man01.jpg)
-
 The oldest English-language use of the proverb has been found in Anne Isabella Thackeray Ritchie's (1837–1919) novel, Mrs. Dymond (1885), in a slightly different form:
-
 <!--more-->
 
 > "I don't suppose even Caron could tell you the difference between material and spiritual," said Max, shrugging his shoulders. "He certainly doesn't practise his precepts, but I suppose the Patron meant that <strong>if you give a man a fish he is hungry again in an hour. If you teach him to catch a fish you do him a good turn.</strong> But these very elementary principles are apt to clash with the leisure of the cultivated classes. Will Mr. Bagginal now produce his ticket—the result of favour and the unjust sub-division of spiritual environments?" said Du Parc, with a smile.
