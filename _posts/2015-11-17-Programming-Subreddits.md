@@ -2,7 +2,7 @@
 layout: post
 title: Programming and Software Development Related Subreddits
 excerpt_separator: <!--more-->
-imgid: 4444444
+imgid: 151111-04.jpg
 ---
 11Like thousands of others, I personally love [Reddit](http://www.reddit.com), too. To the untrained eye, Reddit looks like a 90s site. A mess — text links, comment threads, points, upvotes, downvotes. At best, posts seem contextless — at worst, totally random.
 <!--more-->
