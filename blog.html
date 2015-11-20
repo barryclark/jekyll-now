@@ -4,10 +4,10 @@ layout: blog
 
 {% for post in site.posts %}
 	<div class="item row">
-		<a class="col-md-4 col-sm-6 col-xs-12" href="{{ site.baseurl }}{{ post.url }}" target="_blank"><img class="img-responsive project-image" src="images/{{ post.imgid }}" alt="project name" /></a>
+		<a class="col-md-4 col-sm-6 col-xs-12" href="{{ site.baseurl }}{{ post.url }}" target="_blank"><img class="img-responsive project-image" src="images/{{ post.imgid }}" alt="{{ post.title }}" /></a>
 		<div class="desc col-md-8 col-sm-6 col-xs-12">
 				<h2 class="post_title"><a href="{{ site.baseurl }}{{ post.url }}" target="_blank">{{ post.title }}</a></h2>
-				<span class="label label-theme">{{ post.date | date: "%B %e, %Y" }} - {{ post.imgid}}</span>
+				<span class="label label-theme">{{ post.date | date: "%B %e, %Y" }} - {{post.imgid}}</span>
 				<p style="clear: both;"></p>
 
 				<p class="blog">{{ post.excerpt }}</p>
