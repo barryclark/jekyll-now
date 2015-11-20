@@ -4,8 +4,7 @@ title: Programming and Software Development Related Subreddits
 excerpt_separator: <!--more-->
 imgid: 4444444
 ---
-Like thousands of others, I personally love [Reddit](http://www.reddit.com), too. To the untrained eye, Reddit looks like a 90s site. A mess — text links, comment threads, points, upvotes, downvotes. At best, posts seem contextless — at worst, totally random.
-
+11Like thousands of others, I personally love [Reddit](http://www.reddit.com), too. To the untrained eye, Reddit looks like a 90s site. A mess — text links, comment threads, points, upvotes, downvotes. At best, posts seem contextless — at worst, totally random.
 <!--more-->
 But spend some quality time with **"The Front Page of the Internet,"** and you'll find it's an essential resource, a self-correcting marketplace of ideas that's nearly impervious to marketers.
 
