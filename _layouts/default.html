@@ -15,7 +15,7 @@ layout: default
     <meta name="description" content="Timur Catakli's Personal Web Page">
     <meta name="author" content="Timur Catakli">    
 
-
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
     <!-- Global CSS -->
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
@@ -245,27 +245,12 @@ layout: default
                 <aside class="blog aside section">
                     <div class="section-inner">
                         <h2 class="heading">Latest Blog Posts</h2>
-
-
-
-<div class="posts">
-  {% for post in site.posts %}
-      <h3 class="title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
-  {% endfor %}
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
+                        <!-- Jekyll Blog Posts Code -->
+                        <div class="posts">
+                          {% for post in site.posts %}
+                              <h3 class="title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
+                          {% endfor %}
+                        </div>
                         <!--//content-->
                         <br />
                         <div style="clear:both"></div>
@@ -297,12 +282,6 @@ layout: default
     <script type="text/javascript" src="assets/plugins/github-activity/dist/github-activity-0.1.1.min.js"></script>
     <!-- custom js -->
     <script type="text/javascript" src="assets/js/main.js"></script> 
-
-<div class="posts">
-  {% for post in site.posts %}
-      <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
-  {% endfor %}
-</div>
 
 {% include analytics.html %}
 </body>
