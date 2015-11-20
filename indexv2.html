@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 <!DOCTYPE html>
 <!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
@@ -271,7 +275,23 @@
     <script type="text/javascript" src="assets/plugins/github-activity/dist/mustache/mustache.min.js"></script>
     <script type="text/javascript" src="assets/plugins/github-activity/dist/github-activity-0.1.1.min.js"></script>
     <!-- custom js -->
-    <script type="text/javascript" src="assets/js/main.js"></script>            
+    <script type="text/javascript" src="assets/js/main.js"></script> 
+
+<div class="posts">
+  {% for post in site.posts %}
+    <article class="post">
+
+      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+      <span style="color:#5cbf2a;font-size:80%">{{ post.date | date: "%B %e, %Y" }}</span>
+
+      <div class="entry">
+        {{ post.excerpt }}
+      </div>
+<a href="{{ site.baseurl }}{{ post.url }}" class="myButton">Read More</a>
+    </article>
+  {% endfor %}
+</div>
+               
 </body>
 </html> 
 
