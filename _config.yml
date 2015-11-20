@@ -22,12 +22,12 @@ footer-links:
   facebook:
   flickr:
   github: ambuc
-  instagram:
-  linkedin:
+  instagram: jbuckland
+  linkedin: jamesadambuckland
   pinterest:
-  rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
+  rss: anything # just type anything here for a working RSS icon, make sure you set the "url" above!
   twitter: 
-  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
+  stackoverflow: users/2382210/james-adam-buckland
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
 
