@@ -3,7 +3,7 @@
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
 <head>
-    <title>Timur Catakli - Developer</title>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -76,13 +76,30 @@
                         <h2 class="heading">Latest Blog Posts</h2>
                         <div class="content">    
                             
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+							{% for post in site.posts %}
+                        	<!-- Jekyll Blog Posts Code -->
+
                             <div class="item row">
                                 <a class="col-md-4 col-sm-6 col-xs-12" href="#" target="_blank">
                                 <img class="img-responsive project-image" src="assets/images/projects/project-5.jpg" alt="project name" />
                                 </a>
                                 <div class="desc col-md-8 col-sm-6 col-xs-12">
-                                    <h2 class="post_title"><a href="#" target="_blank">Project Title and Some Details Goes Here</a></h2>
-                                    <span class="label label-theme">November 03, 2015</span>
+                                    <h2 class="post_title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+                                    <span class="label label-theme">{{ post.date | date: "%B %e, %Y" }}</span>
                                     <p style="clear: both;"></p>
 
                                     <p class="blog">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare sem ut orci dignissim efficitur. Vestibulum sed nibh diam. Pellentesque elementum ac lacus non efficitur. Mauris dapibus facilisis odio quis tristique. Sed interdum ex quis imperdiet egestas.</p>
@@ -90,7 +107,30 @@
                                     <a class="btn btn-cta-secondary" style="font-size:10px" href="#">Full Post <i class="fa fa-chevron-right"></i></a>
                                     </p>
                                 </div><!--//desc-->                          
-                            </div><!--//item-->
+                            </div>
+                            <!--//item-->
+							{% endfor %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                             
                             <div class="item row">
                                 <a class="col-md-4 col-sm-6 col-xs-12" href="#" target="_blank">
@@ -150,7 +190,9 @@
     <script type="text/javascript" src="assets/plugins/github-activity/dist/mustache/mustache.min.js"></script>
     <script type="text/javascript" src="assets/plugins/github-activity/dist/github-activity-0.1.1.min.js"></script>
     <!-- custom js -->
-    <script type="text/javascript" src="assets/js/main.js"></script>            
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    {% include analytics.html %}
+         
 </body>
 </html> 
 
