@@ -16,6 +16,7 @@ title: Reading Notes for "Payments Systems In The U.S."
 ![/images/Def-Payments-Systems.png](/images/Def-Payments-Systems.jpg)
 
 #常见支付系统
+
 - Cash (现金)
 - Check (支票)
 - Credit Card or Charge Card (信用卡，贷记卡)
@@ -28,6 +29,7 @@ title: Reading Notes for "Payments Systems In The U.S."
 ![/images/Payments-Systems-Statistics.png](/images/Payments-Systems-Statistics.png) 
 
 #支付系统的业务领域
+
 - Point of Sale (POS) // POS机
 - Remote Commerce   // 电商
 - Bill Payment  // 账单，比如水电煤
@@ -36,6 +38,7 @@ title: Reading Notes for "Payments Systems In The U.S."
 - Income Payment  //薪金支付
 
 #评判、比较支付系统的“度量衡”
+
 - Open Loop OR Closed Loop // 开环 or 闭环
 - Push OR Pull   // Money movement 的方向是推还是拉
 - Settlement  // 结算时效，是每天结算(daily settlemnt)还是每笔结算(gross settlement)
@@ -61,6 +64,7 @@ title: Reading Notes for "Payments Systems In The U.S."
 一般金额巨大，所以单位成本较低
 
 支票支付系统的发展大致可以分为三个阶段
+
 - Phase 1: 十八世纪到十九世纪， clearing house的发展。此时还停留在人肉清算
 - Phase 2: 自动化，就是在支票上加上磁条等信息，用机器进行清算
 - Phase 3: 自动化更进一步，发图片就好了，然后进行图像识别。
@@ -106,9 +110,11 @@ ACH也在从境内向跨境方向发展
 
 ##卡支付
 Pull with Authorization, 方向是收款方拉钱，但是必须经过验证 //我们刷卡时总要输密码的
+
 卡组织一般都是私有的，或者说是有明确产权的
 
 ###卡支付发展的几个阶段:
+
 - Phase 1: 1960s~ 1970s 建立阶段，交易中的各种角色、费率等明确定义
 - Phase 2: 1980s 扩张阶段，开始被大众接受；欺诈管理开始形成等
 - Phase 3: 1990s 分化阶段，无年费开始出现；奖励机制；电商；EMV标准形成
