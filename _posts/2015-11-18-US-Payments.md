@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Reading Notes, Payments Systems in U.S.
+title: Reading Notes for "Payments Systems In The US"
 ---
 
 此篇是一篇读书笔记，书名是 Payments Systems in the U.S.
