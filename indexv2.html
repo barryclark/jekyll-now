@@ -245,7 +245,33 @@ layout: default
                 <aside class="blog aside section">
                     <div class="section-inner">
                         <h2 class="heading">Latest Blog Posts</h2>
-                        <div id="rss-feeds" class="content"></div><!--//content-->
+                        <!-- <div id="rss-feeds" class="content"></div> -->
+
+
+<div class="posts">
+  {% for post in site.posts %}
+      <h3 class="title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
+  {% endfor %}
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <!--//content-->
                         <br />
                         <div style="clear:both"></div>
                         <a class="btn btn-cta-primary pull-left" href="#" target="_blank"><i class="fa fa-heart"></i> Visit My Blog</a>
@@ -276,12 +302,6 @@ layout: default
     <script type="text/javascript" src="assets/plugins/github-activity/dist/github-activity-0.1.1.min.js"></script>
     <!-- custom js -->
     <script type="text/javascript" src="assets/js/main.js"></script> 
-
-<div class="posts">
-  {% for post in site.posts %}
-      <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
-  {% endfor %}
-</div>
 
 {% include analytics.html %}
 </body>
