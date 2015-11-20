@@ -11,7 +11,7 @@ title: Reading Notes: Payments Systems in U.S.
 
 #什么是支付系统（Payments Systems)
 简而言之，就是在不同Party间进行价值移动，可以更直观的理解为Money Movement
-![/images/Def-Payments-Systems.png](/images/Def-Payments-Systems.png)
+![/images/Def-Payments-Systems.png](/images/Def-Payments-Systems.jpg)
 
 #常见支付系统
 Cash (现金)
