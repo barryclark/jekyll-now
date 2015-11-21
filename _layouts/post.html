@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+<article class="post">
+  <h1>{{ page.title }}</h1>
+
+  <div class="entry">
+    {{ content }}
+  </div>
+
+
+  <ul class="share-buttons">
+  <li><a href="https://twitter.com/intent/tweet?source=http://timurcatakli.github.io&text={{ page.title }}" target="_blank" title="Tweet"><img src="../images/flat_web_icon_set/color/Twitter.png"></a></li>
+  <li><a href="https://plus.google.com/share?url=http%3A%2F%2Ftimurcatakli.github.io" target="_blank" title="Share on Google+"><img src="../images/flat_web_icon_set/color/Google+.png"></a></li>
+  <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Ftimurcatakli.github.io%2F&title={{ page.title }}&source=http%3A%2F%2Ftimurcatakli.github.io%2F" target="_blank" title="Share on LinkedIn"><img src="../images/flat_web_icon_set/color/LinkedIn.png"></a></li>
+  <li><a href="mailto:?subject={{ page.title }}&body=:%20http%3A%2F%2Ftimurcatakli.github.io%2F" target="_blank" title="Email"><img src="../images/flat_web_icon_set/color/Email.png"></a></li>
+</ul>
+
+
+
+
+
+
+  <div class="date">
+    Written on {{ page.date | date: "%B %e, %Y" }}
+  </div>
+
+  {% include disqus.html %}
+</article>
