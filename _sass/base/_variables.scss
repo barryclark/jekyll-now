@@ -1,5 +1,5 @@
 // Typography
-$base-font-family: 'Open Sans', sans-serif;
+$base-font-family: 'medium-content-serif-font', Georgia, Cambria, 'Times New Roman', Times, serif;
 $heading-font-family: $base-font-family;
 
 // Font Sizes
@@ -18,16 +18,15 @@ $base-z-index: 0;
 
 // Colors
 $blue: #477dca;
-$dark-gray: #333;
+$dark-gray: #2B2B2B;
 $medium-gray: #999;
-$light-gray: #ddd;
 
 // Font Colors
 $base-font-color: $dark-gray;
 $action-color: $blue;
 
 // Border
-$base-border-color: $light-gray;
+$base-border-color: $gray;
 $base-border: 1px solid $base-border-color;
 
 // Background Colors

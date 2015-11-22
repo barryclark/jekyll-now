@@ -9,7 +9,7 @@ defaults:
 name: Dan Reynolds
 
 # Short bio or description (displayed in the header)
-description: Waterloo dev and CS student at UW.
+description: Software Developer and Computer Science Student at UW.
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png

@@ -1,12 +1,14 @@
 
 .highlight {
-  background-color: $white;
-  padding: 7px 7px 7px 10px;
-  margin: 20px 0 20px 0;
+  background-color: #2B2B2B;
+  border-radius: 2px;
+  margin: 3rem 0;
+  padding: 0.5rem 2rem;
 }
 
 code {
   font-family:'hack';
+  font-size: 1.1rem;
 }
 
 .highlight .c { color: #586E75 } /* Comment */

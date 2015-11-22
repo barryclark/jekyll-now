@@ -6,15 +6,3 @@ a {
   position: relative;
   text-decoration: none;
 }
-
-a:hover:after {
-  $link-decoration-color: $gray;
-
-  border-bottom: 1px solid $link-decoration-color;
-  bottom: -3px;
-  content: '';
-  display: inline-block;
-  left: 0;
-  position: absolute;
-  width: 100%;
-}
