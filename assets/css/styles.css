@@ -15,6 +15,17 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.articleBody {
+  font-family: 'Open Sans', arial, sans-serif;
+  color: black;
+  font-weight: 300;
+  line-height: 34px;
+  font-size: 20px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 h1,
 h2,
 h3,
