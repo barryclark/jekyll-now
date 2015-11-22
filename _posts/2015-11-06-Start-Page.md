@@ -7,7 +7,9 @@ There's usually a pretty big tradeoff when choosing between our search results a
 
 When I'm looking for an answer to a specific programming question, I'm going to use Google. If I am concerned about privacy, I usually use DuckDuckGo. For anyone who doesn't know, DuckDuckGo is an alternative search engine that doesn't track your searches and is focused on maintaining user informational self-determination.
 
-I've used it before and while it keeps getting better, it's really hard to beat Google, even without your user-specific results.
+I've used it before and while it keeps getting better, it's really hard to beat Google.
+
+## StartPage
 
 I recently came across a neat search engine called StartPage, which has been around for a while and gets millions of searches per day. The search engine is privacy focused, but at the same time uses Google to fetch search results. It anonymizes the searches and doesn't give away the user's IP or store any data.
 

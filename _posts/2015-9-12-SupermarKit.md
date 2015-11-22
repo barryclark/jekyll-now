@@ -7,13 +7,13 @@ This is the first of a series of posts on the design of SupermarKit, a Rails web
 
 This post goes through the app's initial goals and setup. It examines many of the shared steps that are taken when building this sort of an application and starts to look at some of the application's core features. The project is open source and available on [GitHub](http://github.com/danReynolds/Supermarkit).
 
-# The initial idea
+## The initial idea
 
 SupermarKit is a grocery tracking and management application that tries to improve the grocery shopping process. I have four roommates where I live, and we often can't decide how to co-ordinate shopping for groceries and keeping track of what we like, what we need, and how much things have cost.  
 
 I was also at the time really itching for the opportunity to make a web application from the ground up, as the web projects I had at the time been working on were all using existing code bases.  
 
-# Finding a feature set
+## Finding a feature set
 
 After canvasing my roommates for features that they would like, we settled on some core functionality that would make for a good starting point:
 
@@ -31,7 +31,7 @@ It synchronizes with GitHub, so if you drag a card from the backlog to in progre
 
 Since I was the only one on the project, I used this mostly as a prioritized todo list, and I found it to be a great light-weight solution when something like PivotalTracker or Trello would seem like overkill.
 
-# Getting started
+## Getting started
 
 I chose Ruby on Rails as the framework for the project, as I knew it could handle all of the requirements I had for the app, such as a database of items and lists, a user model, and many different CRUD interactions.  
 
@@ -61,7 +61,7 @@ CodeClimate summaries the changes that new code has introduced to the project wi
 
 Both of these tools are free to use for public repositories, and offer more features with paid tiers that teams can explore.
 
-# More Setup
+## More Setup
 
 The next set of tools I needed were focused on the front-facing side of the app. I used HAML as my markup language because of its simplicity and readability. I've also used ERB and Slim on projects and tend to use Slim more today. For styling I like to use SASS for a number of its features including mixins, variables and imports.  
 
@@ -69,7 +69,7 @@ I wanted a responsive visual framework to get the app off the ground and went wi
 
 These frameworks are great for getting base styles and grids that you can build off of. I also really appreciated many of Foundation's JS components for navigations and modals. For anyone who wants to see what default Foundation looks like, you can look at Foundation's [kitchen sink](http://foundation.zurb.com/docs/components/kitchen_sink.html).
 
-# Time for some features
+## Time for some features
 
 Now that the base of the application is in place, we're going to go in to some of the features talked about earlier. A couple of them will be described in upcoming posts that will be listed below.  
 

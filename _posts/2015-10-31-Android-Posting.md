@@ -17,7 +17,7 @@ Now that BlackBerry has mostly shifted to corporate users, getting another one w
 
 There weren't any apps available for me on my BlackBerry to hook up to the Jekyll blogs made available through GitHub Pages. I know I could still go to GitHub on my phone and switch to desktop mode to edit a post, but for creating new ones and getting a good interface it was a pretty poor solution.
 
-# Android Jekyll Client
+## Android Jekyll Client
 
 It's a really simple process to write blog posts on the go with Android and GitHub Pages. My first step was to find an app. After some digging I tried [MrHyde](https://github.com/FauDroids/MrHyde) and so far am really enjoying it.
 
@@ -25,6 +25,6 @@ The app lets you create new posts and drafts after authenticating with GitHub an
 
 Now once I catch my own I'll see if it really holds up as a viable tool for writing regular posts going forward.
 
-# Update
+## Update
 
 I messaged the developers and they fixed the missing dialog buttons that same day. Really pleased with the app so far.
