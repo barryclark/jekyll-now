@@ -4,6 +4,8 @@ layout: default
 
 - [Ποιές εταιρείες και επαγγελματίες δέχονται Bitcoin στην Ελλάδα;](#merchant-table)
 - [Που μπορώ να μάθω περισσότερα για το Bitcoin;](#bitcoin.org)
+- [Πως μπορώ να αποκτήσω ένα πορτοφόλι Bitcoin;](#wallet)
+- [Είναι απαραίτητο να διαθέτω πορτοφόλι Bitcoin για να δέχομαι πληρωμές σε Bitcoin;](#processors)
 
 ### <a name="merchant-table"></a>Ποιές εταιρείες και επαγγελματίες δέχονται Bitcoin στην Ελλάδα;
 
@@ -26,6 +28,18 @@ layout: default
 ### <a name="bitcoin.org"></a>Που μπορώ να μάθω περισσότερα για το Bitcoin;
 
 Η επίσημη σελίδα ενημέρωσης για το Bitcoin είναι το [bitcoin.org](https://bitcoin.org).
+
+### <a name="wallet"></a>Πως μπορώ να αποκτήσω ένα πορτοφόλι Bitcoin;
+
+Μια λίστα με πορτοφόλια Bitcoin είναι αναρτημένη στο [bitcoin.org](https://bitcoin.org/en/choose-your-wallet).
+
+### <a name="processors"></a> Είναι απαραίτητο να διαθέτω πορτοφόλι Bitcoin για να δέχομαι πληρωμές σε Bitcoin;
+
+Όχι, μπορείτε να χρησιμοποιήσετε έναν πάροχο πληρωμών που θα δέχεται Bitcoin για εσάς και θα σας αποδίδει Ευρώ. Τέτοιοι πάροχοι είναι:
+
+- [Bitpay](https://bitpay.com)
+- [Coinbase](https://www.coinbase.com/merchants)
+- [Braintree](https://www.braintreepayments.com)
 
 Τελευταία ενημέρωση: 2015-11-22
 
