@@ -2,12 +2,12 @@
 layout: post
 title: Programming and Software Development Related Subreddits
 excerpt_separator: <!--more-->
+img_file: reddit.png
 ---
-![Version Control](http://4.bp.blogspot.com/-IGcEhKHAAII/UpU970lGuLI/AAAAAAAABBU/EkRF8fLimiU/s1600/in-truth-reddit-does-indeed-have-a-bigger-audience-than-places-like-the-new-york-times-web-site.jpg.png)
-<br/>
 Like thousands of others, I personally love [Reddit](http://www.reddit.com), too. To the untrained eye, Reddit looks like a 90s site. A mess — text links, comment threads, points, upvotes, downvotes. At best, posts seem contextless — at worst, totally random.
 
 <!--more-->
+
 But spend some quality time with **"The Front Page of the Internet,"** and you'll find it's an essential resource, a self-correcting marketplace of ideas that's nearly impervious to marketers.
 
 In Reddit there are tens of niche communities, called **Subreddits**.  You can subscribe to those subreddits, which will push popular posts from those channels to your homepage. You can always browse those individual subreddits directly, of course.

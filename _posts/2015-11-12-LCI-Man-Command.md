@@ -2,9 +2,8 @@
 layout: post
 title: Feed one for a lifetime - Learn Bash '-man' Command
 excerpt_separator: <!--more-->
+img_file: man01.jpg
 ---
-![Bash vs Shell](http://timurcatakli.github.io/images/man01.jpg)
-
 The oldest English-language use of the proverb has been found in Anne Isabella Thackeray Ritchie's (1837–1919) novel, Mrs. Dymond (1885), in a slightly different form:
 
 <!--more-->

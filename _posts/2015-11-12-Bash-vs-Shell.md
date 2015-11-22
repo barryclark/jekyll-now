@@ -2,9 +2,8 @@
 layout: post
 title: Bash vs Shell
 excerpt_separator: <!--more-->
+img_file: shell01.jpg
 ---
-![Bash vs Shell](http://timurcatakli.github.io/images/shell01.jpg)
-
 A "shell" is any software that provides an interface to an operating system. For instance, explorer.exe is the default shell in Windows (though alternatives exist), and on OS X Finder provides much of the same functionality. On Linux/*nix, the shell could be part of the desktop environment (like Gnome or KDE), or can be a separate software component sitting on top of it (like Unity or Cinnamon).
 
 <!--more-->
