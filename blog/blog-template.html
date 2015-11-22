@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<head>
+    <title>Installing Jekyll Blog Platform on Mac OS El Capitan</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WordPress is one of the most easily used blogging platforms by newbies. Not a whole lot of coding is required. Also it is the best CMS for small business. Mo...">
+    <meta name="author" content="Timur Catakli">    
+	<link rel="canonical" href="http://yourdomain.com/2015/11/22/Installing-Jekyll-El_Capitan.html">
+	<link rel="alternate" type="application/rss+xml" title="Your awesome title" href="http://yourdomain.com/feed.xml">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="/assets/plugins/bootstrap/css/bootstrap.min.css">   
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="/assets/plugins/font-awesome/css/font-awesome.css">
+    <!-- github acitivity css -->
+    <link rel="stylesheet" href="/assets/plugins/github-activity/dist/github-activity-0.1.1.min.css">
+    <link rel="stylesheet" href="/assets/plugins/github-activity/dist/octicons/octicons.min.css">
+    
+    
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="/assets/css/styles.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+</head>
+<body>
+    <!-- ******HEADER****** --> 
+<header class="header" style="background-image:url(/assets/images/background.png)">
+    <div class="container">
+        <div class="row">    
+            <div class="primary col-md-8 col-sm-12 col-xs-12">
+                <img class="profile-image img-responsive pull-left" src="/assets/images/profile.png" alt="Timur Catakli" />
+                <div class="profile-content pull-left">
+                    <h1 class="name">Timur Catakli</h1>
+                    <h2 class="desc">Web App Developer</h2>   
+                        <ul class="social list-inline">
+                            <li><a href="#"><i class="fa fa-github-alt"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-reddit"></i></a></li>
+                            <li class="last-item"><a href="#"><i class="fa fa-rss"></i></a></li>
+                        </ul> 
+                    </div><!--//profile-->
+            </div>
+            <div class="primary col-md-4 col-sm-12 col-xs-12">
+                <a class="btn btn-cta-primary pull-right" href="#" target="_blank"><i class="fa fa-paper-plane"></i> Contact Me</a>
+                <a class="btn btn-cta-primary pull-left" href="#" target="_blank"><i class="fa fa-heart"></i> Download My Resume</a>
+            </div>
+        </div>
+    </div><!--//container-->
+</header><!--//header-->
+
+    <div class="container sections-wrapper">
+        <div class="row">
+    
+               <section class="latest section">
+                    <div class="section-inner">
+                        <h2 class="heading">My Blog Posts</h2>
+                        <div class="content">    
+                            
+                            <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Installing Jekyll Blog Platform on Mac OS El Capitan</h1>
+    <p class="post-meta">
+
+		<span class="label label-theme"><time datetime="2015-11-22T00:00:00+00:00" itemprop="datePublished">Nov 22, 2015</time></span></p>
+  </header>
+
+  <div class="articleBody">
+    <p>WordPress is one of the most easily used blogging platforms by newbies. Not a whole lot of coding is required. Also it is the best CMS for small business. More than <strong>25 percent</strong> of the world’s websites are built and run on WordPress. And that percentage is increasing every day.
+<!--more--></p>
+
+<p>These are all valid points but what if you need something simple, something that gets the job done quickly with no pressure on memory, hard disk space and time for configuration. Then I would like to give you Jekyll.</p>
+
+<p><em>Here is how to run Jekyll on your Mac El Capitan…</em></p>
+
+<p> </p>
+
+<h3 id="download-and-install-sublime-text">1- Download and Install Sublime Text</h3>
+
+<p>You will need <a href="http://www.sublimetext.com/" target="_blank">Sublime Text</a> in order to write your posts and make changes to Jekyll templates and configuration files.</p>
+
+<p>Download and follow instructions from their site. Make sure to move it to your applications folder. You can choose to download either Sublime Text 2 or 3.</p>
+
+<p>You don’t have to purchase your license right away, you can “cancel” out of the dialog box as many times as you would like, but it is good practice to buy a license after you decide you like it.</p>
+
+<p> </p>
+
+<h3 id="install-xcode-from-the-app-store">2- Install XCode from the App Store.</h3>
+
+<p>Alternatively you can type the below in your bash terminal</p>
+
+<p><code>xcode-select --install</code></p>
+
+<p>Follow the prompts to complete the install. This is apple’s C compiler which will enable you to compile native apps from source. (i.e. Ruby). If you can’t find the terminal, simply search “terminal” in spotlight.</p>
+
+<p> </p>
+
+<h3 id="then-to-install-jekyll-simply-enter-following-command">3- Then, to install Jekyll, simply enter following command:</h3>
+
+<p><code>sudo gem install jekyll</code></p>
+
+<p>The above command will install all of Jekyll’s dependencies automatically, so just sit back and give it a few minutes. Once it’s finished, that’s it, you’ve installed Jekyll!</p>
+
+<p> </p>
+
+<h3 id="create-your-site">4- Create your site</h3>
+
+<p>On your terminal navigate to the folder where you want Jekyll to generate its file. Once you are there simply type.</p>
+
+<p><code>jekyll new ~/jekyll/my-site</code></p>
+
+<p>Assuming that ~/jekyll/my-site is the directory you want to set your site up.</p>
+
+<p> </p>
+
+<h3 id="start-the-server">5- Start the server</h3>
+
+<p>Simply type:</p>
+
+<p><code>jekyll serve --watch</code></p>
+
+<p>Success. Your new Jekyll site should be up and running at either http://localhost:4000/ or http://127.0.0.1:4000/ </p>
+
+
+  </div>
+
+</article>
+
+
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+                
+            </div><!--//primary-->
+             
+            </div><!--//secondary-->    
+        </div><!--//row-->
+    </div><!--//masonry-->
+    <!-- ******FOOTER****** --> 
+    <footer class="footer">
+        <div class="container text-center">
+                <small class="copyright">Timur <i class="fa fa-heart"></i> Catakli</small>
+        </div><!--//container-->
+    </footer><!--//footer-->
+ 
+    <!-- Javascript -->          
+    <script type="text/javascript" src="/assets/plugins/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="/assets/plugins/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="/assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
+    <script type="text/javascript" src="/assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script> 
+    <!-- github activity plugin -->
+    <script type="text/javascript" src="/assets/plugins/github-activity/dist/mustache/mustache.min.js"></script>
+    <script type="text/javascript" src="/assets/plugins/github-activity/dist/github-activity-0.1.1.min.js"></script>
+    <!-- custom js -->
+    <script type="text/javascript" src="/assets/js/main.js"></script>            
+</body>
+</html>
