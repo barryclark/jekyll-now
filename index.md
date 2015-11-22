@@ -7,9 +7,10 @@ layout: default
 - [Πως μπορώ να αποκτήσω ένα πορτοφόλι Bitcoin;](#wallet)
 - [Είναι απαραίτητο να διαθέτω πορτοφόλι Bitcoin για να δέχομαι πληρωμές σε Bitcoin;](#processors)
 
+
 ### <a name="merchant-table"></a>Ποιές εταιρείες και επαγγελματίες δέχονται Bitcoin στην Ελλάδα;
 
-[Γεωγραφική αναζήτηση](https://coinmap.org/#/world/38.81403111/24.63134766/6)
+[Αναζήτηση σε χάρτη](https://coinmap.org/#/world/38.81403111/24.63134766/6)
 
 <table>
 {% for company in site.data.data %}
@@ -31,7 +32,7 @@ layout: default
 
 ### <a name="wallet"></a>Πως μπορώ να αποκτήσω ένα πορτοφόλι Bitcoin;
 
-Μια λίστα με πορτοφόλια Bitcoin είναι αναρτημένη στο [bitcoin.org](https://bitcoin.org/en/choose-your-wallet).
+Μια λίστα με πορτοφόλια Bitcoin είναι αναρτημένη στο [bitcoin.org](https://bitcoin.org/en/choose-your-wallet), [εδώ](http://bitcoinx.io/wallets/) και [εδώ](https://en.bitcoin.it/wiki/Software). 
 
 ### <a name="processors"></a> Είναι απαραίτητο να διαθέτω πορτοφόλι Bitcoin για να δέχομαι πληρωμές σε Bitcoin;
 
