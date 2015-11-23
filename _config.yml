@@ -9,7 +9,7 @@ name: CodeShare
 description: O conhecimento que você precisa, do jeito que você quer!
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://github.com/CodeShareEducation/CodeShareEducation.github.io/blob/master/images/logo-codeshare.png
+avatar: https://raw.github.com/CodeShareEducation/CodeShareEducation.github.io/blob/master/images/logo-codeshare.png
 
 #
 # Flags below are optional
@@ -19,14 +19,14 @@ avatar: https://github.com/CodeShareEducation/CodeShareEducation.github.io/blob/
 footer-links:
   dribbble:
   email: contato@codeshare.com.br
-  facebook: https://www.facebook.com/codeshareeducation
+  facebook: codeshareeducation
   flickr:
-  github: https://github.com/CodeShareEducation
+  github: CodeShareEducation
   instagram:
-  linkedin: https://br.linkedin.com/in/wendelladrielti
+  linkedin: wendelladrielti
   pinterest:
   rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
-  twitter: jekyllrb
+  twitter:
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: channel/UCses0spCIjoKs_s0Z1DL6aw
   googleplus: +CodeshareBrEducation
@@ -34,7 +34,7 @@ footer-links:
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
-disqus: wendelladriel
+disqus: codeshareeducation
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 google_analytics:
