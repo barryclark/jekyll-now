@@ -2,7 +2,7 @@
 layout: post
 title: Controlling The Position of Elements in CSS
 excerpt_separator: <!--more-->
-img_file: 151111-01.png
+img_file: css.png
 ---
 In order to control the layout of your page, CSS gives you the following positioning options for your elements:
 1. Absolute
