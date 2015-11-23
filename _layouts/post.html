@@ -10,9 +10,9 @@ layout: default
   </div>
 
   <div class="date">
-    Postado em:
+    Postado em
     {% assign m = page.date | date: "%-m" %}
-      {{ page.date | date: "%d" }}
+      {{ page.date | date: "%d" }} de
         {% case m %}
             {% when '1' %}Janeiro
             {% when '2' %}Fevereiro
@@ -27,7 +27,7 @@ layout: default
             {% when '11' %}Novembro
             {% when '12' %}Dezembro
         {% endcase %}
-      {{ page.date | date: "%Y" }}
+       de {{ page.date | date: "%Y" }}
   </div>
 
   {% include disqus.html %}
