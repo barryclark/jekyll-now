@@ -9,7 +9,7 @@ name: CodeShare
 description: O conhecimento que você precisa, do jeito que você quer!
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.github.com/CodeShareEducation/CodeShareEducation.github.io/blob/master/images/logo-codeshare.png
+avatar: images/logo-codeshare.png
 
 #
 # Flags below are optional
