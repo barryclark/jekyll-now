@@ -27,10 +27,10 @@ Both 32 and 64 bit versions of Manjaro are available in the following flavours (
 
 #### Testbuilds
 
-  - [manjaro-xfce 15.12-pre2 (64 bit)](http://sourceforge.net/projects/manjarotest/files/15.12/xfce-minimal/15.12-pre2/manjaro-xfce-minimal-15.12-pre2-x86_64.iso)
-   `SHA1SUM: c63e95404c8fb246adbc419996e0e651ad751911`
-  - [manjaro-xfce 15.12-pre2 (32 bit)](http://sourceforge.net/projects/manjarotest/files/15.12/xfce-minimal/15.12-pre2/manjaro-xfce-minimal-15.12-pre2-i686.iso)
-   `SHA1SUM: c3b06da2eeb80e46c0916d07bab32828f351bad3`
+  - [manjaro-xfce 15.12-pre3 (64 bit)](http://sourceforge.net/projects/manjarotest/files/15.12/xfce-minimal/15.12-pre3/manjaro-xfce-minimal-15.12-pre3-x86_64.iso)
+   `SHA1SUM: 1ad670a1900ff610dc168796ada70586861085ba`
+  - [manjaro-xfce 15.12-pre3 (32 bit)](http://sourceforge.net/projects/manjarotest/files/15.12/xfce-minimal/15.12-pre3/manjaro-xfce-minimal-15.12-pre3-i686.iso)
+   `SHA1SUM: 478caff140f567b53656cf68ab590aee12e8b7a5`
 
 ## KDE
 
@@ -41,10 +41,10 @@ Both 32 and 64 bit versions of Manjaro are available in the following flavours (
 
 #### Testbuilds
 
-  - [manjaro-kde 15.12-pre2 (64 bit)](http://sourceforge.net/projects/manjarotest/files/15.12/kde-minimal/15.12-pre2/manjaro-kde-minimal-15.12-pre2-x86_64.iso)
-   `SHA1SUM: b7052f68e65b709a587ffef48c4791de9c3f3f0b`
-  - [manjaro-kde 15.12-pre2 (32 bit)](http://sourceforge.net/projects/manjarotest/files/15.12/kde-minimal/15.12-pre2/manjaro-kde-minimal-15.12-pre2-i686.iso)
-   `SHA1SUM: bdf6ed2d363cd70c9e61f0766b7a62a607cf4115`
+  - [manjaro-kde 15.12-pre3 (64 bit)](http://sourceforge.net/projects/manjarotest/files/15.12/kde-minimal/15.12-pre3/manjaro-kde-minimal-15.12-pre3-x86_64.iso)
+   `SHA1SUM: 9bd2d7e6d18f7ab30f5b9b1a4e04830b44cd256b`
+  - [manjaro-kde 15.12-pre3 (32 bit)](http://sourceforge.net/projects/manjarotest/files/15.12/kde-minimal/15.12-pre3/manjaro-kde-minimal-15.12-pre3-i686.iso)
+   `SHA1SUM: 6123869719e03cea13a622d8d04bfef83044e53d`
 
 ## Net-Edition
 
