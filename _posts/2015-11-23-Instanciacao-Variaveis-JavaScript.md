@@ -11,7 +11,7 @@ JS é uma linguagem que está em constante crescimento e amadurecimento atualmen
 Nesse artigo iremos ver um pouco sobre Hoisting, Clousure, Variáveis Globais, Variáveis
 por parâmetro e Instanciação usando uma IIFE. Veremos também exemplos práticos sobre
 cada tópico.
-
+<!--more-->
 ## Hoisting
 
 **Hoisting** é um comportamento padrão do JavaScript que faz com que quando uma variável é
