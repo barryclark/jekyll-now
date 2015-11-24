@@ -2,7 +2,7 @@
 layout: post
 title: Family Tree&#58; Age Statistics
 tags: [family tree, math]
-javascripts: [/js/d3.min.js, js/c3.min.js]
+javascripts: [/js/d3.min.js, /js/c3.min.js]
 css: /css/chart.css
 ---
 
