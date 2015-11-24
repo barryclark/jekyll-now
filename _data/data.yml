@@ -197,3 +197,35 @@
   category_en: Hotels
   location_gr: Διεθνές
   location_en: International
+
+- company_gr: Gyft
+  company_en: Gyft
+  url: https://gyft.com
+  category_gr: Δωροκάρτες Ηνωμένων Πολιτειών (iTunes US, Amazon.com, eBay, Hotels.com, ...)
+  category_en: US gift cards (iTunes US, Amazon.com, eBay, Hotels.com, ...)
+  location_gr: Διεθνές
+  location_en: International
+
+- company_gr: eGifter
+  company_en: eGifter
+  url: https://www.egifter.com
+  category_gr: Δωροκάρτες Ηνωμένων Πολιτειών (Skype, Amazon.com, eBay, Hotels.com, ...)
+  category_en: US gift cards (Skype, Amazon.com, eBay, Hotels.com, ...)
+  location_gr: Διεθνές
+  location_en: International
+    
+- company_gr: GiftOff
+  company_en: GiftOff
+  url: https://giftoff.com
+  category_gr: Ευρωπαϊκές δωροκάρτες (Amazon.co.uk, Skype, Spotify, Google Play, ...)
+  category_en: European gift cards (Amazon.co.uk, Skype, Spotify, Google Play, ...)
+  location_gr: Διεθνές
+  location_en: International
+  
+- company_gr: Bitphone
+  company_en: Bitphone
+  url: https://bitphone.net
+  category_gr: Online τηλέφωνο
+  category_en: Online phone
+  location_gr: Διεθνές
+  location_en: International
