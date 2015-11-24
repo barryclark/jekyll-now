@@ -16,8 +16,11 @@
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		{% endif %}
 		{% if page.javascript %}
-		<script src="{{ page.javascript }}"></script>
+		<script src="{{ page.javascript }}" />
 		{% endif %}
+		{% for javascript in page.javascript %}
+		<script src="{{ javascript }}" />
+		{% endfor %}
 		
 		<!--[if lt IE 9]>
 		  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
