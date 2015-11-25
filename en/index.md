@@ -18,7 +18,7 @@ layout: default_en
 {% endfor %}
 </table>
 
-Last update: 2015-11-19
+Last update: 2015-11-25
 
 <!-- <div class="posts">
   {% for post in site.posts %}
