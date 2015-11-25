@@ -4,6 +4,10 @@ layout: default
 
 <article class="post">
   <h1>{{ page.title }}</h1>
+  {% assign author = site.authors[page.author] %}
+  por 
+  <img src="http://www.gravatar.com/avatar/{{ author.gravatar }}?s=40">
+	<span class="author">{{ author.name }}</span>
 
   <div class="entry">
     {{ content }}
