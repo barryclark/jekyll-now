@@ -94,6 +94,14 @@
   location_gr: Αθήνα, Ελλάδα
   location_en: Athens, Greece
 
+- company_gr: allVoIP
+  company_en: allVoIP
+  url: https://allvoip.gr
+  category_gr: Τηλεφωνία VoIP και τηλεφωνικά κέντρα
+  category_en: VoIP Telephony
+  location_gr: Νέο Ηράκλειο, Αττική, Ελλάδα
+  location_en: Neo Iraklio, Attica, Greece
+
 - company_gr: Hotwater
   company_en: Hotwater
   url: http://www.hotwater-shop.gr
