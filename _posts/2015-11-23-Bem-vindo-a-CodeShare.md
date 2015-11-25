@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Bem Vindo À CodeShare
+author: wendell
 ---
 
 **De agora em diante a CodeShare usará um novo sistema de Blog para continuar trazendo a todos vocês conteúdo
