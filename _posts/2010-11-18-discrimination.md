@@ -2,7 +2,6 @@
 layout: post
 title: Discrimination
 tags: [politics, culture, old blog]
-excerpt_separator: <!--more-->
 ---
 
 From [Wikionary](http://en.wiktionary.org/wiki/discrimination):
