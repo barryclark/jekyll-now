@@ -6,16 +6,7 @@ Dessa forma você poderá conhecer novas tecnologias e metodologias e aperfeiço
 
 ### Contribua para o Projeto
 
-Para você que deseja contribuir nos ajudando com algum material, primeiramente crie uma nova **Issue** com os seguintes dados:
-- Nome completo;
-- Nome (para os posts);
-- Email;
-- Página Web (caso tenha);
-- Perfil do Linkedin (caso tenha);
-- Perfil do Gravatar (caso tenha);
-- Perfil do Facebook (caso tenha);
-
-Depois disso basta dar um **Fork** nesse repositório e enviar um **Pull Request** com seu material para que ele possa ser avaliado e postado.
+Para você que deseja contribuir nos ajudando com algum material, basta dar um **Fork** nesse repositório e enviar um **Pull Request** com seu material para que ele possa ser avaliado e postado.
 
 **A todos que estão aqui para aprender, seja bem vindo e que o nosso conteúdo possa ser de grande ajuda para você e para aqueles que estão aqui para contribuir, desde já agradeço pela ajuda em disseminar nosso conhecimento para aqueles que o buscam!!!**
 
