@@ -6,9 +6,9 @@ layout: default
   <h1>{{ page.title }}</h1>
   {% assign author = site.authors[page.author] %}
   por 
-  <img src="http://www.gravatar.com/avatar/{{ author.gravatar }}?s=40"> <span class="author">{{ author.name }}</span>
-  <div class="date">
-    Em
+  <img src="http://www.gravatar.com/avatar/{{ author.gravatar }}?s=40" />
+  <span class="author">
+    {{ author.name }}, em 
     {% assign m = page.date | date: "%-m" %}
       {{ page.date | date: "%d" }} de
         {% case m %}
@@ -26,7 +26,7 @@ layout: default
             {% when '12' %}Dezembro
         {% endcase %}
        de {{ page.date | date: "%Y" }}
-    </div>
+  </span>
 <hr>
   <div class="entry">
     {{ content }}
