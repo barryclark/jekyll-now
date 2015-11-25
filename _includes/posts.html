@@ -43,6 +43,8 @@
       <div class="entry" style="margin-top: 15px;">
         {% if post.facebook_post %}
           {% include facebook_post.html facebook_post=post.facebook_post %}
+        {% elsif post.content contains '<!--more-->' %}
+	        {{ post.content | split:'<!--more-->' | first }}
         {% else %}
           {{ post.excerpt }}
         {% endif %}
