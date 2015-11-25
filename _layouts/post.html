@@ -5,7 +5,7 @@ layout: default
 <article class="post">
   <h1>{{ page.title }}</h1>
   {% assign author = site.authors[page.author] %}
-  <span class="author">
+  <div class="author">
     por 
     <img src="http://www.gravatar.com/avatar/{{ author.gravatar }}?s=40" />
     {{ author.name }}, em 
@@ -26,9 +26,9 @@ layout: default
             {% when '12' %}Dezembro
         {% endcase %}
        de {{ page.date | date: "%Y" }}
-  </span>
-  <hr class="light-line">
+  </div>
   <div class="entry">
+    <hr class="light-line">
     {{ content }}
   </div>
 
