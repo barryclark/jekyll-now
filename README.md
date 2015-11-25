@@ -6,7 +6,7 @@ Dessa forma você poderá conhecer novas tecnologias e metodologias e aperfeiço
 
 ### Contribua para o Projeto
 
-Para você que deseja contribuir nos ajudando com algum material, primeiramente crie uma nova issue com os seguintes dados:
+Para você que deseja contribuir nos ajudando com algum material, primeiramente crie uma nova **Issue** com os seguintes dados:
 - Nome completo;
 - Nome (para os posts);
 - Email;
