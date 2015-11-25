@@ -8,4 +8,4 @@ css: /css/c3.css
 
 A line / spline chart of the average and median ages per birth year... Showing no corrolation :(.
 
-{% include meanMedianAge.html %}
+{% include meanMedianAges.html %}
