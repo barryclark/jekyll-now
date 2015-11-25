@@ -49,8 +49,18 @@ url:
 # then add in the baseurl here, like this: "/repository-name"
 baseurl: ""
 
-
 excerpt_separator: <!--more-->
+
+authors:
+  wendell:
+    name: Wendell Adriel
+    gravatar:
+    email: wendell@codeshare.com.br
+    web: http://codeshare.com.br
+    github: WendellAdriel
+    linkedin: wendelladrielti
+    facebook: wendell.adriel.7
+
 #
 # !! You don't need to change any of the configuration flags below !!
 #
