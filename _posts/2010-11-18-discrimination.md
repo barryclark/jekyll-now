@@ -2,7 +2,7 @@
 layout: post
 title: Discrimination
 tags: [politics, culture, old blog]
-excerpt: From Wikionary&#58; discrimination (plural discriminations) 1. a distinction; discernment, the act of discriminating, discerning, distinguishing, noting or perceiving differences between things.
+excerpt_separator: <!--more-->
 ---
 
 From [Wikionary](http://en.wiktionary.org/wiki/discrimination):
@@ -11,7 +11,7 @@ From [Wikionary](http://en.wiktionary.org/wiki/discrimination):
 <p>discrimination (plural discriminations)</p>
 <p>1. a distinction; discernment, the act of discriminating, discerning, distinguishing, noting or perceiving differences between things.</p>
 </blockquote>
-
+<!--more-->
 It seems today that people throw this word around. If someone is denied something for any reason, they scream “This is discrimination!” The thing is that they probably have no idea what this word means. They just know it had a negative connotation (essentially it’s “bad") and think that it is always illegal.
 
 So what is discrimination? Discrimination is choosing one thing over another thing for any reason. Yes, at times it can be immoral and illegal. You can see all the anti-discrimination laws on [Wikipedia](http://en.wikipedia.org/wiki/List_of_anti-discrimination_acts). You’ll notice, at least under the US laws, that discriminating for things such as race, age, disabilities, and even genetic information is illegal. But if someone gets hired instead of you because, say, there college GPA is higher than your, that’s discrimination too. The Workplace chose one thing (the other guy) over another thing (you) for a reason (college GPA). There’s nothing wrong with that. If there was, well, then the company would have to hire nobody or everybody.
