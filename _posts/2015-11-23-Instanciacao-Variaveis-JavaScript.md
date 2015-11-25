@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Instanciação de Variáveis no Javascript
+author: wendell
 ---
 
 Este artigo foi feito para o Curso BE MEAN da [Webschool](http://webschool.io).  
