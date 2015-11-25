@@ -34,6 +34,10 @@ pre {
     word-wrap: inherit;
 }
 
+pre a {
+    background-image: none;
+}
+
 pre a::before {
   content: counter(line-numbering);
   counter-increment: line-numbering;
