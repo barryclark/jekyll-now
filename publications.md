@@ -76,6 +76,7 @@ permalink: /publications/
 * Il Park, António R. C. Paiva, José C. Príncipe, Thomas B. DeMarse. An Efficient Computation of Continuous-time Correlogram of Spike Trains, COSYNE 2007, Salt Lake City, Utah, February 22-25, 2007
 
 ### ArXiv only (some are under review)
+* Evan Archer, Il Memming Park, Lars Büsing, John Cunningham, Liam Paninski. Black box variational inference for state space models. arXiv:1511.07367 (2015)
 * Il Memming Park, Sohan Seth, Steven Van Vaerenbergh. Bayesian Extensions of Kernel Least Mean Squares. arXiv:1310.5347 (2013)
 * Il Memming Park, Marcel Nassar, Mijung Park. Active Bayesian Optimization: Minimizing Minimizer Entropy. arXiv:1202.2143v1 (2012)
 
