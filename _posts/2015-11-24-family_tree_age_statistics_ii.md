@@ -6,6 +6,6 @@ javascripts: [/js/d3.min.js, /js/c3.min.js]
 css: /css/c3.css
 ---
 
-A line / spline chart of the average and median ages per birth year... Showing no corrolation :(.
+A line / spline chart of the average and median ages per birth year... Showing no corrolation :cry:.
 
 {% include meanMedianAges.html %}
