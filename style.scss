@@ -116,8 +116,9 @@ img {
 }
 
 .date {
-  font-style: italic;
   color: $gray;
+  text-align: right;
+  font-size: small;
 }
 
 // Specify the color of the selection

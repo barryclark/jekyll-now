@@ -5,7 +5,7 @@ layout: default
 <article class="post">
   <h1>{{ page.title }}</h1>
 
-  <p class="author">
+  <p class="date">
     {% assign m = page.date | date: "%-m" %}
       {{ page.date | date: "%d" }} de
         {% case m %}
@@ -37,6 +37,8 @@ layout: default
     {% assign author = site.authors[page.author] %}
     <p>
       <img src="http://www.gravatar.com/avatar/{{ author.gravatar }}?s=150" />
+    </p>
+    <p>
       {{ author.name }}
     </p>
     <p>
