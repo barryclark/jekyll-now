@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+
+    <meta name="author" content="{{ site.name }}" />
+    <meta name="description" content="{{ site.description }}">
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.baseurl }}/feed.xml" />
+
+    <!-- Based with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+    </head>
+
+    <body class="thepost">
+    <header class="single-header">
+            <span class="gradient"></span>
+            {% if page.image.feature %}
+                <img src="{{ page.image.feature }}" alt="" />
+            {% else %}
+            <!-- Put here a tv noise gif -->
+                <img src="http://i.giphy.com/FRmOsocKhM1xK.gif" />
+            {% endif %}
+            <h1 class="title">{{ page.title }}</h1>
+            <h4 class="desc">{{ page.titledesc }}</h4>
+    </header>
+<!--  Menu navigation -->
+    <div id="single-post" role="main" class="container">
+        
+        <div class="wrapper">
+          {{ content }}
+        </div>
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          Twitter feed
+        </footer>
+      </div>
+    </div>
+
+    {% include analytics.html %}
+  </body>
+</html>

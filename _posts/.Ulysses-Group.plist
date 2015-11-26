@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>createMarkedFile</key>
+	<false/>
+	<key>sheetClusters</key>
+	<array>
+		<array>
+			<string>2015-15-11-ghosts.md</string>
+		</array>
+		<array>
+			<string>2014-3-3-Hello-World.md</string>
+		</array>
+		<array>
+			<string>2015-11-7-Switching.md</string>
+		</array>
+		<array>
+			<string>2015-11-15-ghosts.md</string>
+		</array>
+		<array>
+			<string>2014-3-3-Hello-World 2.md</string>
+		</array>
+		<array>
+			<string>2014-3-3-Hello-World 3.md</string>
+		</array>
+		<array>
+			<string>2015-11-15-ghosts 2.md</string>
+		</array>
+		<array>
+			<string>2015-11-15-ghosts 3.md</string>
+		</array>
+		<array>
+			<string>2015-11-15-ghosts 4.md</string>
+		</array>
+		<array>
+			<string>2015-11-7-Switching 2.md</string>
+		</array>
+		<array>
+			<string>2015-11-26-Moving to Jekyll.md</string>
+		</array>
+	</array>
+	<key>userIconName</key>
+	<string>Document</string>
+</dict>
+</plist>

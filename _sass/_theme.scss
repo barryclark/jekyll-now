@@ -1,0 +1,323 @@
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,300,400italic,700,700italic,900,900italic,300italic);
+
+// Font variables
+$font-name: "akularegular";
+$font-path-file-name: /assets/fonts/Akula-webfont;
+
+// Akula - Regular
+@font-face {
+  font-family: $font-name;
+  src: url($font-path-file-name+'.eot'); /* IE9 Compat Modes */
+  src: url($font-path-file-name+'.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url($font-path-file-name+'.woff2') format('woff2'), /* Super Modern Browsers */
+       url($font-path-file-name+'.woff') format('woff'), /* Pretty Modern Browsers */
+       url($font-path-file-name+'.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url($font-path-file-name+'.svg#font_name') format('svg'); /* Legacy iOS */
+}
+
+/// Landing
+
+.container{
+    width: 100%;
+}
+.posts{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+}
+
+/// header main
+.main-header{
+    position: relative;
+    width: 100%;
+    height: 60%;
+    overflow: hidden;
+    background: url(../assets/blog.gif) no-repeat center center; //  Find a more sutile way to do this
+    background-size: cover;
+    
+}
+.header-inner{
+    width: 80%;
+    margin: 0 auto;
+}
+.logo-holder{
+    position:relative;
+    margin: 0 auto;
+    max-width: 710px;
+    height: 200px;
+    text-align: center;
+    margin-top: 12%;
+    
+}
+.logo{
+    width: 300px;
+    height: auto;
+    position: relative;
+    z-index: 3;
+}
+.main-header .img-header{
+    width:100%;
+    height: auto;
+    
+}
+ul.rs{
+    list-style: none;
+    bottom: 20px;
+    right: 50px;
+    position: absolute;
+    z-index: 3;
+}
+.rs li{
+    float: left;
+    margin: 5px;
+}
+.rs li a{
+    float: left;
+    list-style: none;
+    padding: 5px 6px 0px 6px;
+    border: 1px solid #fff;
+    overflow: hidden;
+    transition: all ease 0.3s;
+    text-decoration: none;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+}
+
+
+/// Posts
+#main article.post{
+    background: #000000;
+    height: 200px;
+    width: 25%;
+    align-self: auto;
+    overflow: hidden;
+    padding: 0px;
+}
+#main article.post a{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    transition: all ease-in  0.2s;
+    border: 0px solid rgba(0,0,0,0);
+}
+#main article.post a:hover{
+    border: 10px solid rgba(252,30,134,0.50);
+    transition: all ease-in 0.3s;
+    
+}
+#main article.post a:hover .title {
+    color:#e9194c;
+    margin-top:20%;
+    font-size:4.2rem;
+    transition: all ease-in  0.2s;
+}
+#main article.post a:hover .desc {
+    opacity: 0.5;
+}
+#main article.post a:hover .cover{
+    opacity: .4;
+    transition: all ease-in 0.3s;
+}
+.gradient{
+    background-image: linear-gradient(45deg, rgba(252,30,134,0.50) 0%, rgba(41,173,235,0.50) 100%);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+.gradient:before{
+    background: url(../images/coolpattern.png) repeat;
+    content: " ";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: .5;
+}
+.cover{
+    background: url(../images/coolpattern.png) repeat;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+article.post .data-post{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+
+}
+h1.title{
+    color: #fff;
+    font-family: akularegular, merriweather;
+    position: relative;
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 25%;
+    margin-bottom: 0px;
+    width: 100%;
+    float: left;
+    text-shadow:0px 2px 1px #242424;
+    transition: all ease-in  0.2s;
+    font-weight: normal;
+}
+h4.desc{
+    color:#cbcaca;
+    font-family: merriweather;
+    position: relative;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-top: -2px;
+    float: left;
+    margin-bottom: 0px;
+    width: 100%;
+    transition: all ease-in  0.2s;
+    font-weight: normal;
+}
+h3.date{
+    color:#fff;
+    font-family: merriweather;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: normal;
+}
+article.post a img.feat{
+    top:0px;
+    width: 150%;
+    margin-left: -30%;
+}
+
+/// pagination
+
+.pagination{
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 30px;
+}
+.pagination span{
+    width: 50%;
+    display:block;
+}
+.pagination .prev-c{
+    float:left;
+}
+.pagination .next-c{
+    float: right;
+}
+.prev-c a{
+    float: right;
+}
+.next-c a{
+    float: left;
+}
+.pagination a{
+    color:#fff;
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    padding-top: 4px;
+    border: 1px solid #fff;
+    text-align: center;
+}
+
+/// footer
+
+.wrapper-footer{
+    background: #a8a5a5;
+    width: 100%;
+}
+.footer{
+    font-family: Merriweather;
+    text-align: center;
+    font-size:0.8rem;
+    color: rgba(0,0,0,0.5);
+}
+/// Single - post
+.thepost{
+    background:#fff;
+    color: #3A4145;
+}
+header.single-header{
+    height: 65%;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    background: #fff;
+    -webkit-clip-path: polygon(100% 0, 100% 69%, 0 100%, 0 0);
+    clip-path: polygon(100% 0, 100% 69%, 0 100%, 0 0);
+}
+header.single-header img{
+    width: 100%;
+}
+header.single-header .title{
+    font-size: 7.5rem;
+    position: absolute;
+    top: 35%;
+    margin-top: 0px;
+    z-index: 3;
+}
+
+
+/* SINGLE POST (all this comes from my previous blog, keep DRY) */
+
+
+#single-post .entry{
+    font-family: "Merriweather", serif;
+    color: #3A4145;
+    padding-top: 50px;
+    }
+#single-post .wrapper{
+    width: 98%;
+    position: relative;
+    margin: auto;
+    background: #fff;
+    }
+#single-post article.post-content{
+    width: 720px;
+    padding: 0 10px 0 10px;
+    margin: auto;
+    position:relative;   
+    }
+#single-post article.post p {
+    font-family: "Merriweather", serif;
+    letter-spacing: 0.01rem;
+    font-size: 1.8rem;
+    line-height: 1.75em;
+    }
+#single-post a{
+    color:#e9194c;
+    font-weight:bold;
+    text-decoration:none;
+    }
+#single-post a:hover{}
+#single-post em{}
+#single-post strong{}
+#single-post blockquote p{
+        color:#fff;
+        font-size:2.5rem; 
+        margin: 0.8em 0;
+        font-style: italic;
+        text-align: center;
+    }
+#single-post blockquote + p{
+        color:#ccc;
+        text-align:right;
+        font-size:1.5rem;
+        padding-right: 5px;
+        border-right:1px solid #ccc;   
+    }
+
+#single-post img{
+    position: relative;
+    margin: auto;
+    
+}
+
+
+/// from my previous theme
