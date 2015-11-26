@@ -6,7 +6,6 @@ layout: default
   <h1>{{ page.title }}</h1>
   {% assign author = site.authors[page.author] %}
   <p class="author">
-    por
     <img src="http://www.gravatar.com/avatar/{{ author.gravatar }}?s=40" />
     {{ author.name }}, em
     {% assign m = page.date | date: "%-m" %}
@@ -29,7 +28,6 @@ layout: default
   </p>
 
   <hr class="separator">
-  <br>
 
   <div class="entry">
     {{ content }}
