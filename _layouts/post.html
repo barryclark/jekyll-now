@@ -52,3 +52,9 @@ layout: default
 
   {% include disqus.html %}
 </article>
+<script>
+  var links = document.getElementById('entry').getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    links[i].setAttribute('target', '_blank');
+  }
+</script>
