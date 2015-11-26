@@ -31,7 +31,7 @@ $font-path-file-name: /assets/fonts/Akula-webfont;
 .main-header{
     position: relative;
     width: 100%;
-    height: 60%;
+    height: 70%;
     overflow: hidden;
     background: url(../assets/blog.gif) no-repeat center center; //  Find a more sutile way to do this
     background-size: cover;
@@ -63,7 +63,7 @@ $font-path-file-name: /assets/fonts/Akula-webfont;
 }
 ul.rs{
     list-style: none;
-    bottom: 20px;
+    bottom: 0px;
     right: 50px;
     position: absolute;
     z-index: 3;
@@ -244,13 +244,16 @@ article.post a img.feat{
     color: #3A4145;
 }
 header.single-header{
-    height: 65%;
+    height: 70%;
     position: relative;
     overflow: hidden;
     width: 100%;
     background: #fff;
     -webkit-clip-path: polygon(100% 0, 100% 69%, 0 100%, 0 0);
     clip-path: polygon(100% 0, 100% 69%, 0 100%, 0 0);
+    @include mobile-small{
+        height:30%;
+    }
 }
 header.single-header img{
     width: 100%;
@@ -314,7 +317,7 @@ header.single-header .title{
     }
 
 #single-post img{
-    position: relative;
+    display: block;
     margin: auto;
     
 }

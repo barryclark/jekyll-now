@@ -176,7 +176,7 @@ code, tt {
 pre {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    margin: 0 0 1.75em 0;
+    margin: 0 0 0 0;
     border: #E3EDF3 1px solid;
     width: 100%;
     padding: 10px;
@@ -285,4 +285,4 @@ figcaption {
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
-@import "svg-icons";
+
