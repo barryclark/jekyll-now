@@ -4,7 +4,8 @@ title: Instanciação de Variáveis no Javascript
 author: wendell
 ---
 
-Este artigo foi feito para o Curso BE MEAN da [Webschool](http://webschool.io).  
+***Este artigo foi feito para o Curso BE MEAN da [Webschool](http://webschool.io).***
+
 Neste artigo iremos ver sobre alguns conceitos fundamentais para todos que utilizam JavaScript.
 JS é uma linguagem que está em constante crescimento e amadurecimento atualmente.
 Nesse artigo iremos ver um pouco sobre Hoisting, Clousure, Variáveis Globais, Variáveis
