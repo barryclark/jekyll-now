@@ -35,11 +35,11 @@ layout: default
 
   <div class="author">
     {% assign author = site.authors[page.author] %}
-    <h2>
-      <img src="http://www.gravatar.com/avatar/{{ author.gravatar }}?s=150" />
-      Conheça um pouco do autor: {{ author.name }}
-    </h2>
+    <h3>
+      {{ author.name }}
+    </h3>
     <p>
+      <img src="http://www.gravatar.com/avatar/{{ author.gravatar }}?s=150" />
       {{ author.bio }}
     </p>
     <p>
