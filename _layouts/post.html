@@ -5,10 +5,10 @@ layout: default
 <article class="post">
   <h1>{{ page.title }}</h1>
   {% assign author = site.authors[page.author] %}
-  <div class="author">
-    por 
+  <p class="author">
+    por
     <img src="http://www.gravatar.com/avatar/{{ author.gravatar }}?s=40" />
-    {{ author.name }}, em 
+    {{ author.name }}, em
     {% assign m = page.date | date: "%-m" %}
       {{ page.date | date: "%d" }} de
         {% case m %}
@@ -26,17 +26,17 @@ layout: default
             {% when '12' %}Dezembro
         {% endcase %}
        de {{ page.date | date: "%Y" }}
-  </div>
-  
+  </p>
+
   <hr class="separator">
   <br>
-  
+
   <div class="entry">
     {{ content }}
   </div>
-  
+
   <hr class="separator">
   <br>
-  
+
   {% include disqus.html %}
 </article>
