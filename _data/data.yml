@@ -205,7 +205,15 @@
   category_en: Lakonia business guide and photography services
   location_gr: Σπάρτη, Ελλάδα
   location_en: Sparta, Greece
-  
+
+- company_gr: DeltaHacker
+  company_en: DeltaHacker
+  url: http://deltahacker.gr
+  category_gr: Ελληνικό ηλεκτρονικό περιοδικό για υπολογιστές και hacking
+  category_en: Greek e-magazine for computers and hacking
+  location_gr: Online
+  location_en: Online
+ 
 - company_gr: Expedia
   company_en: Expedia
   url: https://www.expedia.com
