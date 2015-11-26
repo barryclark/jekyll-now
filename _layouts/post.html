@@ -7,7 +7,7 @@ layout: default
 
   <p class="date">
     {% assign m = page.date | date: "%-m" %}
-      {{ page.date | date: "%d" }} de
+      Postado em {{ page.date | date: "%d" }} de
         {% case m %}
             {% when '1' %}Janeiro
             {% when '2' %}Fevereiro
