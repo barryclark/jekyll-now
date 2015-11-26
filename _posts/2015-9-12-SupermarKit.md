@@ -3,7 +3,11 @@ layout: post
 title: Designing SupermarKit
 ---
 
+![SupermarKit Header]({{ site.baseurl }}/images/supermarkit/supermarkit.png)
+
 This is the first of a series of posts on the design of SupermarKit, a Rails web application I started last year. The goal of these posts is to show a very rough design of a user-facing web app from start to finish, for some definition of finish.
+
+<!--halt-->
 
 This post goes through the app's initial goals and setup. It examines many of the shared steps that are taken when building this sort of an application and starts to look at some of the application's core features. The project is open source and available on [GitHub](http://github.com/danReynolds/Supermarkit).
 

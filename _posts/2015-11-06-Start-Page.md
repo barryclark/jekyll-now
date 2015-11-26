@@ -3,7 +3,11 @@ layout: post
 title: Private and Powerful Search Results
 ---
 
+![StartPage Header]({{ site.baseurl }}/images/startpage.png)
+
 There's usually a pretty big tradeoff when choosing between our search results accuracy and privacy. I've recently come across a new favourite solution.
+
+<!--halt-->
 
 When I'm looking for an answer to a specific programming question, I'm going to use Google. If I am concerned about privacy, I usually use DuckDuckGo. For anyone who doesn't know, DuckDuckGo is an alternative search engine that doesn't track your searches and is focused on maintaining user informational self-determination.
 

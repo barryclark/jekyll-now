@@ -14,13 +14,17 @@
 
 .post {
   margin: 3rem 0;
-  h2, p, img { margin: 2.5rem 0; }
+  h2, p { margin: 2.5rem 0; }
 }
 
 .entry {
   margin-top: 1.3rem;
 }
 
-.excerpt p {
-  margin-bottom: 0.5rem;
+.excerpt {
+    margin: 0.6rem 0;
+  img {
+    width: 100%;
+  }
+  p { margin-bottom: 0.5rem; }
 }

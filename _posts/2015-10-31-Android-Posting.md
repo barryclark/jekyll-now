@@ -3,9 +3,11 @@ layout: post
 title: New Phone, More Blogging
 ---
 
-!["Test"](http://i1-news.softpedia-static.com/images/news2/BlackBerry-Prague-Low-End-Android-Smartphone-Launching-in-August-484706-2.jpg)
+!["Android Header"](http://i1-news.softpedia-static.com/images/news2/BlackBerry-Prague-Low-End-Android-Smartphone-Launching-in-August-484706-2.jpg)
 
 I was a Blackberry holdout for years and have finally caved in to purchase the Nexus 5x. Being a freshly ex-Blackberry user, I have had to answer certain questions repeatedly in the past couple of weeks, so for anyone wondering, here are my answers:
+
+<!--halt-->
 
 1. Did you finally realize Blackberries should die?
 
