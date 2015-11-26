@@ -23,3 +23,18 @@ a:active {
   );
   text-shadow: white 1px 0px 0px, white -1px 0px 0px;
 }
+
+// Correct issues with buttons
+button,
+.button {
+  text-shadow: none;
+  background-image: none;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+  color: white;
+  text-shadow: none;
+  background-image: none;
+}
