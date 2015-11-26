@@ -274,6 +274,10 @@ header.single-header .title{
     font-family: "Merriweather", serif;
     color: #3A4145;
     padding-top: 50px;
+    line-height: 1.5em;
+    margin-bottom:50px;
+    padding-bottom: 20px;
+    border-bottom:1px solid #ccc;
     }
 #single-post .wrapper{
     width: 98%;
@@ -297,10 +301,23 @@ header.single-header .title{
     color:#e9194c;
     font-weight:bold;
     text-decoration:none;
+    transition: all ease-in 0.2s;
+    padding: 2px;
     }
-#single-post a:hover{}
-#single-post em{}
-#single-post strong{}
+#single-post a:hover{
+    color: #fff;
+    transition: all ease-in 0.1s;
+    background: rgb(41, 173, 235);
+    padding: 2px;
+}
+#single-post em{
+    font-style: italic;
+    font-weight: 300;
+    color:#666;
+}
+#single-post strong{
+    font-weight: bolder;
+}
 #single-post blockquote p{
         color:#fff;
         font-size:2.5rem; 
@@ -314,6 +331,8 @@ header.single-header .title{
         font-size:1.5rem;
         padding-right: 5px;
         border-right:1px solid #ccc;   
+        margin-right: 10px;
+        margin-top:-75px;
     }
 
 #single-post img{

@@ -9,6 +9,9 @@ layout: default
             <span class="cover"></span>
             {% if post.image.feature %}
             <img src="{{ post.image.feature }}" alt="{{ post.title }}" class="feat">
+            {% else %}
+            <img src="http://i.giphy.com/FRmOsocKhM1xK.gif"/>
+
             {% endif %}
             <div class="data-post">
             <h1 class="title">{{ post.title }}</h1>
