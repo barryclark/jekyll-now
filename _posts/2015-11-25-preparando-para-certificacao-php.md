@@ -90,4 +90,4 @@ No dia do exame aconselho chegar pelo menos 30 minutos antes para você se acalm
 
 ***Espero que esse artigo possa ajudar a esclarecer algumas dúvidas!!!***
 
-***Um grande abraço a todos, uma boa sorte para aqueles que vão realizar a prova e nos vemos na Yellow Pages da Zend!!!! ;) ***
+***Um grande abraço a todos, uma boa sorte para aqueles que vão realizar a prova e nos vemos na Yellow Pages da Zend!!!!***
