@@ -580,3 +580,8 @@ p.blog {
   padding-bottom:10px;
   border-bottom: 1px solid #ededed;
 }
+
+p.rss-subscribe {
+    margin-top: 20px;
+    text-align: right;
+}
