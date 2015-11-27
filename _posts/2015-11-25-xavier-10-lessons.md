@@ -1,7 +1,7 @@
 ---
 published: false
 layout: post
-title:  "Quora带来的10个机器学习认识"
+title:  "Xavier带来的10个新机器学习认识"
 date:   2015-11-25 22:19
 categories: 实际问题 机器学习 特征工程 Quora Xavier
 ---
@@ -41,13 +41,26 @@ Netflix上的目标是为了让用户更容易找到满意的电影，用的爽�
 
 实际项目里通常是显式和隐式数据结合着使用，不会那么界限分明。具体怎么结合，主要依赖项目，有机会再细说。
 
+
+# 度量指标：模型只会朝着你指定的方向学习
+
+这个话题Xavier在他的两个slides[^lessons14] [^lessons15]里都说到，也是他认为最最重要的一点[^lessons14_detail]。模型的优化指标没选对，那模型优化得越好只会离正确的道路（改善业务）越远。
+
+这个话题在我之前的博文[^meituan_ml]里已经说过，就不再细说了。总结一句话，
+
+> 选对优化目标非常非常地重要，虽然非常非常地难！
+
+{:.center}
+![实际问题中的各个环节][modules]
+
+
 # 融合无处不在
 
 自从Netflix Prize后，**融合（Ensemble）**不仅是竞赛必备，在工业界也成标配了。最开始融合的概念主要指在最后一步融合多个模型的结果进一步提升效果，但现在这个概念的意义其实已经更广泛了。融合可以在多个层面进行：
 
 * 数据层面：半监督学习是把无监督数据融合进有监督数据，通常做法是在无监督数据上训练降维（PCA）或聚类（LDA、NMF）模型，然后把模型结果融合进有监督模型中（作为特征输入或者先验信息）；迁移学习（Transfer Learning）是把其他地方的数据融合到当前应用的数据中。
 * 特征层面：一个模型的预测结果作为特征输入进另一个模型，例如把MF的预测结果作为特征输入到LR。
-* 模型层面：利用新模型（如简单的LR，最流行的GBDT和RF）来融合多个模型的预测结果。比如在佳缘我们会融合发信、读信和回信模型的结果来为用户产生推荐。GBDT和RF的特点可以参见[Quora上的讨论](https://www.quora.com/When-would-one-use-Random-Forests-over-Gradient-Boosted-Machines-GBMs)和文献[^bb_rf]。
+* 模型层面：利用新模型（如简单的LR，最流行的GBDT和RF）来融合多个模型的预测结果。比如在佳缘我们会融合发信、读信和回信模型的结果来为用户产生推荐。GBDT和RF的特点可以参见[Quora上的讨论](https://www.quora.com/When-would-one-use-Random-Forests-over-Gradient-Boosted-Machines-GBMs)和我之前的博文[^bb_rf]。
 
 所以，泛了说，融合几乎是无处不在的。
 
@@ -55,16 +68,37 @@ Netflix上的目标是为了让用户更容易找到满意的电影，用的爽�
 ![融合无处不在][ensemble]
 
 
+# 特征和模型要对所有人透明
+
+这条是大部分人都容易忽略的，包括我自己。绝大多数时候机器学习模型对产品、运营，甚至是开发工程师自己，都是黑盒状态。为什么给当前用户展示这些结果？不知道，算法排完就是这样！理直气壮。
+
+对于特征，Xavier认为必须是**可解释**，以及**可靠的**。只有理解了某个特征的意义，我们才能适当地对它进行处理以适应当前的模型，才能在更多的模型中适当地使用它。可靠是说需要实时地监控这个特征在实时模型里的状态：这个特征的取值有没有超出正常范围，它的分布图是不是正常。有了可解释性和可靠性，这个特征对工程师和其他人就是透明的了。
+
+更进一步，由多个特征组合而成的模型也必须是**可调试的**。监控模型的实时状态，包括使用的各个特征以及对应的参数、模型的输出结果等。尤其是在更新模型后需要监控与旧模型的差异，这样才能保证新模型没有受到异常数据的影响。只有对模型进行了细致的监控，才能保证模型是可调试的，这也让模型变得透明。模型可调试意味着我们可以查看当前模型为什么在当前场景下给当前用户展示了这几个结果，它们都是因为什么特征表现出众而被排在最前面的。模型只有透明了，才能打消产品和运营同事对模型的顾虑（想象下美国为什么害怕朝鲜），工程师晚上睡觉也会少做噩梦。
+
+下图是Xavier给出的Quora内部查看模型的系统截图[^lessons15]。
+
+{:.center}
+![模型要可调试][model_debug]
+
+
+OK，这次就串讲到这，更详细的内容可以去看看Xavier的新老slides[^lessons15] [^lessons14]以及他的这篇博文[^lessons14_detail]。也欢迎大家留言交流。
+
+
 
 
 [relation]: /images/quora_data_relations.png "Quora中各种数据的关系网"
 [explict_data]: /images/explict_data.png "显式数据"
 [implict_data]: /images/implict_data.png "隐式数据"
+[modules]: /images/problem_modules.png "实际问题中的各个环节"
 [ensemble]: /images/master_ensemble.png "融合无处不在"
+[model_debug]: /images/quora_model_debug.png "模型要可调试"
 
 
 
 #References
-[^lessons14]: Xavier Amatriain, [10 Lessons Learned from building Machine Learning Systems](http://pan.baidu.com/s/1hqloae4), 2014。
-[^lessons15]: Xavier Amatriain, [10 More Lessons Learned from building real-life Machine Learning Systems](http://pan.baidu.com/s/1sjKh4k9), 2015。
+[^lessons14_detail]: Xavier Amatriain, [(Blog) 10 Lessons Learned from Building Machine Learning Systems](http://technocalifornia.blogspot.com/2014/12/ten-lessons-learned-from-building-real.html), 2014。
+[^lessons14]: Xavier Amatriain, [(Slides) 10 Lessons Learned from Building Machine Learning Systems](http://pan.baidu.com/s/1hqloae4), 2014。
+[^lessons15]: Xavier Amatriain, [(Slides) 10 More Lessons Learned from Building Real-life Machine Learning Systems](http://pan.baidu.com/s/1sjKh4k9), 2015。
+[^meituan_ml]: breezedeus，[实际问题中如何使用机器学习模型](../../../2015/07/29/breezedeus-meituan-ml.html), 2015。
 [^bb_rf]: breezedeus，[Bagging, Boosting & Random Forests](../../../2011/02/10/breezedeus-dt.html), 2011。
