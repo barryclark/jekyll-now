@@ -35,26 +35,39 @@ $font-path-file-name: /assets/fonts/Akula-webfont;
     overflow: hidden;
     background: url(../assets/blog.gif) no-repeat center center; //  Find a more sutile way to do this
     background-size: cover;
+    display: flex;
+    @include mobile-small{
+        height: 50%;
+    }
     
 }
 .header-inner{
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include mobile-small{
+        width:100%;
+    }
 }
 .logo-holder{
     position:relative;
     margin: 0 auto;
-    max-width: 710px;
     height: 200px;
     text-align: center;
-    margin-top: 12%;
-    
+    @include mobile-small{
+        margin-top:20%;
+    }
 }
 .logo{
     width: 300px;
     height: auto;
     position: relative;
     z-index: 3;
+    @include mobile-small{
+        width: 200px;
+    }
 }
 .main-header .img-header{
     width:100%;
@@ -67,6 +80,15 @@ ul.rs{
     right: 50px;
     position: absolute;
     z-index: 3;
+    @include mobile-small{
+        width: 100%;
+        padding:0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        right: 0;
+        margin-bottom: 10px;
+    }
 }
 .rs li{
     float: left;
@@ -83,6 +105,12 @@ ul.rs{
     color: #fff;
     width: 30px;
     height: 30px;
+    @include mobile-small{
+        font-size: 3rem;
+        overflow: visible;
+        border: none;
+        margin:10px;
+    }
 }
 
 
@@ -94,6 +122,9 @@ ul.rs{
     align-self: auto;
     overflow: hidden;
     padding: 0px;
+    @include mobile-small{
+        width: 100%;
+    }
 }
 #main article.post a{
     width: 100%;
@@ -103,6 +134,7 @@ ul.rs{
     overflow: hidden;
     transition: all ease-in  0.2s;
     border: 0px solid rgba(0,0,0,0);
+    
 }
 #main article.post a:hover{
     border: 10px solid rgba(252,30,134,0.50);
@@ -114,6 +146,9 @@ ul.rs{
     margin-top:20%;
     font-size:4.2rem;
     transition: all ease-in  0.2s;
+    @include mobile-small{
+        margin-top: 0;
+    }
 }
 #main article.post a:hover .desc {
     opacity: 0.5;
@@ -128,6 +163,7 @@ ul.rs{
     width: 100%;
     height: 100%;
     z-index: 2;
+    top: 0px;
 }
 .gradient:before{
     background: url(../images/coolpattern.png) repeat;
@@ -148,7 +184,12 @@ article.post .data-post{
     top: 0px;
     width: 100%;
     height: 100%;
-
+    @include mobile-small{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
 }
 h1.title{
     color: #fff;
@@ -163,6 +204,9 @@ h1.title{
     text-shadow:0px 2px 1px #242424;
     transition: all ease-in  0.2s;
     font-weight: normal;
+    @include mobile-small{
+        margin-top: 0;
+    }
 }
 h4.desc{
     color:#cbcaca;
@@ -188,8 +232,8 @@ h3.date{
 }
 article.post a img.feat{
     top:0px;
-    width: 150%;
-    margin-left: -30%;
+    width: 160%;
+    margin-left: -40%;
 }
 
 /// pagination
@@ -242,6 +286,9 @@ article.post a img.feat{
 .thepost{
     background:#fff;
     color: #3A4145;
+    @include mobile-small{
+        font-size: 16px;
+    }
 }
 header.single-header{
     height: 70%;
@@ -249,14 +296,24 @@ header.single-header{
     overflow: hidden;
     width: 100%;
     background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     -webkit-clip-path: polygon(100% 0, 100% 69%, 0 100%, 0 0);
     clip-path: polygon(100% 0, 100% 69%, 0 100%, 0 0);
     @include mobile-small{
-        height:30%;
+        height:40%;
     }
 }
 header.single-header img{
     width: 100%;
+    position: absolute;
+    top: 0px;
+    @include mobile-small{
+        width: 200%;
+        left:-50%;
+    }
 }
 header.single-header .title{
     font-size: 7.5rem;
@@ -264,8 +321,21 @@ header.single-header .title{
     top: 35%;
     margin-top: 0px;
     z-index: 3;
+    @include mobile-small{
+        font-size: 5.5rem;
+        margin-top: -15px;
+    }
 }
+header.single-header .desc{
+    position: absolute;
+    z-index: 3;
+    color: #fff;
+    text-shadow: 0px 1px 0px #000;
+    @include mobile-small{
+        margin-top: 15px;
 
+    }
+}
 
 /* SINGLE POST (all this comes from my previous blog, keep DRY) */
 
@@ -273,7 +343,7 @@ header.single-header .title{
 #single-post .entry{
     font-family: "Merriweather", serif;
     color: #3A4145;
-    padding-top: 50px;
+    padding-top: 10px;
     line-height: 1.5em;
     margin-bottom:50px;
     padding-bottom: 20px;
@@ -284,13 +354,27 @@ header.single-header .title{
     position: relative;
     margin: auto;
     background: #fff;
+    padding-top: 50px;
+        @include mobile-small{
+            width: 100%;
+        }
     }
 #single-post article.post-content{
     width: 720px;
     padding: 0 10px 0 10px;
     margin: auto;
-    position:relative;   
+    position:relative; 
+        @include mobile-small{
+            width: 100%;
+        }
     }
+#single-post article .date{
+    color: #6d6f71;
+    @include mobile-small{
+        font-size:1.2rem;
+        
+    }
+}
 #single-post article.post p {
     font-family: "Merriweather", serif;
     letter-spacing: 0.01rem;
@@ -324,6 +408,11 @@ header.single-header .title{
         margin: 0.8em 0;
         font-style: italic;
         text-align: center;
+        @include mobile-small{
+            font-size: 2.2rem;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
     }
 #single-post blockquote + p{
         color:#ccc;
@@ -333,6 +422,9 @@ header.single-header .title{
         border-right:1px solid #ccc;   
         margin-right: 10px;
         margin-top:-75px;
+        @include mobile-small{
+        margin-bottom: 50px;
+    }
     }
 
 #single-post img{

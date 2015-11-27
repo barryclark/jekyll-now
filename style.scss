@@ -147,6 +147,10 @@ blockquote {
     margin-bottom: 40px;
     padding-bottom: 30px;
     padding-top: 30px;
+    @include mobile-small{
+        margin-left:-20px;
+        width: 110%;
+    }
 }
 
 blockquote small {
@@ -280,6 +284,9 @@ figcaption {
     border-right: 1px solid #bbb;
     padding-bottom: 50px;
     line-height: 1.4rem;
+    @include mobile-small{
+        
+    }
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
