@@ -1,6 +1,6 @@
 ## Please Read Important
 
-Looking at <a href="http://timurcatakli.github.io/">my personal site</a>, you will notice that I used a Bootstrap Grid System. I understand that this is against the instructions which I read in week-3. If this was to communicated in week-1 I wouldn't have done.
+Looking at <a href="http://timurcatakli.github.io/">my personal site</a>, you will notice that I used a Bootstrap Grid System. I understand that this is against the instructions. If this was to communicated in week-1 I wouldn't have done.
 
 But here is my take on this:
 
@@ -12,6 +12,8 @@ My strong skills are HTML and CSS. Although I used bootstrap to cut some corners
 4. I also made changes to Bootstrap's CSS in order to fit my needs.
 5. In the mean time I finished 3 books and here they are: Head First Ruby - The Well Grounded Rubyist (At Chapter 13) - Duckett HTML & CSS
 6. I also wrote two small Ruby applications (lucky_numbers - ruby_state_tax_finder) which are available on my GitHub.
+
+
 
 ### What did you learn about CSS padding, borders, and margin by doing this challenge?
 
