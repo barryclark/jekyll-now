@@ -125,6 +125,9 @@ ul.rs{
     @include mobile-small{
         width: 100%;
     }
+    @include mobile-tablet{
+        width:50%;
+    }
 }
 #main article.post a{
     width: 100%;
@@ -220,6 +223,9 @@ h4.desc{
     width: 100%;
     transition: all ease-in  0.2s;
     font-weight: normal;
+    @include mobile-small{
+        
+    }
 }
 h3.date{
     color:#fff;
@@ -305,6 +311,9 @@ header.single-header{
     @include mobile-small{
         height:40%;
     }
+    @include mobile-small-land{
+        height: 55%;
+    }
 }
 header.single-header img{
     width: 100%;
@@ -360,7 +369,7 @@ header.single-header .desc{
         }
     }
 #single-post article.post-content{
-    width: 720px;
+    width: 640px;
     padding: 0 10px 0 10px;
     margin: auto;
     position:relative; 
@@ -381,6 +390,14 @@ header.single-header .desc{
     font-size: 1.8rem;
     line-height: 1.75em;
     }
+#single-post .figimg{
+    float:left;
+    background: #fff;
+    margin-bottom: 10px;
+}
+#single-post .figimg img{
+    border: 5px solid #eee;
+}
 #single-post a{
     color:#e9194c;
     font-weight:bold;

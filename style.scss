@@ -285,7 +285,40 @@ figcaption {
     padding-bottom: 50px;
     line-height: 1.4rem;
     @include mobile-small{
-        
+        left: 5%;
+        bottom: 0px;
+        border-right: none;
+        margin-bottom: 10px;
+        float: left;
+        position: relative;
+        width: 90%;
+        display: block;
+        border-top: 1px solid #bbb;
+        padding-bottom: 5px;
+        margin-top: 10px;
+        right: 5%;
+        padding-top: 6px;
+        font-size: 1.3rem;
+        line-height: 1.6rem;
+        float:left;
+    }
+     @include mobile-tablet{
+        left: 5%;
+        bottom: 0px;
+        border-right: none;
+        margin-bottom: 10px;
+        float: left;
+        position: relative;
+        width: 90%;
+        display: block;
+        border-top: 1px solid #bbb;
+        padding-bottom: 5px;
+        margin-top: 10px;
+        right: 5%;
+        padding-top: 6px;
+        font-size: 1.3rem;
+        line-height: 1.6rem;
+        float:left;
     }
 }
 
