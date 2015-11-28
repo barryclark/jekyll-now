@@ -33,7 +33,7 @@ $font-path-file-name: /assets/fonts/Akula-webfont;
     width: 100%;
     height: 70%;
     overflow: hidden;
-    background: url(../assets/blog.gif) no-repeat center center; //  Find a more sutile way to do this
+    background: url(http://i.imgur.com/8j7Dahn.jpg) no-repeat center center; //  Find a more sutile way to do this
     background-size: cover;
     display: flex;
     @include mobile-small{
@@ -93,6 +93,7 @@ ul.rs{
 .rs li{
     float: left;
     margin: 5px;
+    list-style: none;
 }
 .rs li a{
     float: left;
@@ -359,6 +360,13 @@ header.single-header .desc{
     padding-bottom: 20px;
     border-bottom:1px solid #ccc;
     }
+#single-post .entry h3{
+    margin-bottom: 30px;
+}
+#single-post .entry h2{
+        color: $pink;  
+}
+
 #single-post .wrapper{
     width: 98%;
     position: relative;
@@ -391,13 +399,22 @@ header.single-header .desc{
     font-size: 1.8rem;
     line-height: 1.75em;
     }
+#single-post iframe{
+    width: 100%;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    @include border;
+}
 #single-post .figimg{
     float:left;
     background: #fff;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
+    @include mobile-small{
+        margin-bottom: 10px;
+    }
 }
 #single-post .figimg img{
-    border: 5px solid #eee;
+    @include border;
 }
 #single-post a{
     color:#e9194c;

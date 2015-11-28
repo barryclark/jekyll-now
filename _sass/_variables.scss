@@ -5,6 +5,7 @@
 
 // Colors
 $blue: #4183C4;
+$pink: #e9194c;
 
 // Grays
 $black: #000;
@@ -20,6 +21,10 @@ $helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $georgia: Georgia, serif;
 
 // Mobile breakpoints
+@mixin border{
+    border-radius: 5px;
+    box-shadow: 0px 0px 7px rgba(8, 8, 8, 0.70);
+}
 @mixin mobile-small {
   @media screen and (max-width: 529px) {
     @content;

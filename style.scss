@@ -125,6 +125,7 @@ dl dd {
 
 li {
     margin: 0.4em 0;
+    list-style:disc;
 }
 
 li li {
@@ -324,6 +325,7 @@ figcaption {
 video{
     width: 100%;
     margin-bottom: 40px;
+    @include border;
 }
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
