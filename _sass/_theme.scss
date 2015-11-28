@@ -405,6 +405,10 @@ header.single-header .desc{
     margin-top: 20px;
     @include border;
 }
+#disqus_thread iframe{
+    border-radius: 0;
+    box-shadow: none;
+}
 #single-post .figimg{
     float:left;
     background: #fff;
