@@ -1,9 +1,9 @@
 ---
-published: false
+published: true
 layout: post
 title:  "Xavier带来的10个新机器学习认识"
 date:   2015-11-25 22:19
-categories: 实际问题 机器学习 特征工程 Quora Xavier
+categories: 实际问题 机器学习 推荐系统 特征工程 Quora Xavier
 ---
 
 [Xavier Amatriain](https://www.quora.com/profile/Xavier-Amatriain)今年年初从Netflix跑到Quora去当副总裁了，不过依旧发扬着他的分享精神。这篇文章我主要跟着他最近分享的slides[^lessons15]并结合自己的看法来简单说说。这个slides其实已经是Xavier这个系列的第二部分了，第一部分[^lessons14]是他2014年底给出的。
@@ -58,9 +58,9 @@ Netflix上的目标是为了让用户更容易找到满意的电影，用的爽�
 
 自从Netflix Prize后，**融合（Ensemble）**不仅是竞赛必备，在工业界也成标配了。最开始融合的概念主要指在最后一步融合多个模型的结果进一步提升效果，但现在这个概念的意义其实已经更广泛了。融合可以在多个层面进行：
 
-* 数据层面：半监督学习是把无监督数据融合进有监督数据，通常做法是在无监督数据上训练降维（PCA）或聚类（LDA、NMF）模型，然后把模型结果融合进有监督模型中（作为特征输入或者先验信息）；迁移学习（Transfer Learning）是把其他地方的数据融合到当前应用的数据中。
-* 特征层面：一个模型的预测结果作为特征输入进另一个模型，例如把MF的预测结果作为特征输入到LR。
-* 模型层面：利用新模型（如简单的LR，最流行的GBDT和RF）来融合多个模型的预测结果。比如在佳缘我们会融合发信、读信和回信模型的结果来为用户产生推荐。GBDT和RF的特点可以参见[Quora上的讨论](https://www.quora.com/When-would-one-use-Random-Forests-over-Gradient-Boosted-Machines-GBMs)和我之前的博文[^bb_rf]。
+* **数据层面**：半监督学习是把无监督数据融合进有监督数据，通常做法是在无监督数据上训练降维（PCA）或聚类（LDA、NMF）模型，然后把模型结果融合进有监督模型中（作为特征输入或者先验信息）；迁移学习（Transfer Learning）是把其他地方的数据融合到当前应用的数据中。
+* **特征层面**：一个模型的预测结果作为特征输入进另一个模型，例如把MF的预测结果作为特征输入到LR。
+* **模型层面**：利用新模型（如简单的LR，最流行的GBDT和RF）来融合多个模型的预测结果。比如在佳缘我们会融合发信、读信和回信模型的结果来为用户产生推荐。GBDT和RF的特点可以参见[Quora上的讨论](https://www.quora.com/When-would-one-use-Random-Forests-over-Gradient-Boosted-Machines-GBMs)和我之前的博文[^bb_rf]。
 
 所以，泛了说，融合几乎是无处不在的。
 
@@ -81,10 +81,22 @@ Netflix上的目标是为了让用户更容易找到满意的电影，用的爽�
 {:.center}
 ![模型要可调试][model_debug]
 
+# 题外话
 
-OK，这次就串讲到这，更详细的内容可以去看看Xavier的新老slides[^lessons15] [^lessons14]以及他的这篇博文[^lessons14_detail]。也欢迎大家留言交流。
+对于机器学习系统，我现在一般更关注模型和算法之外的东西，因为它们是技术和艺术，而模型和算法则是科学。
+
+建议大家关注下Quora上关于[机器学习中经常被忽略的主题](https://www.quora.com/Machine-Learning/What-are-the-most-common-topics-omitted-from-machine-learning-courses)这个问答，里面也有Xavier的经常回复，截图如下：
+
+{:.center}
+![机器学习中经常被忽略的主题][omitted]
 
 
+OK，这次就串讲到这，更详细的内容可以去看看Xavier的新老slides[^lessons15] [^lessons14]以及他的这篇博文[^lessons14_detail]。如果不知道怎么继续优化一个机器学习/推荐系统，可以看看下面Xavier建议的四个方向。
+
+{:.center}
+![机器学习系统][system]
+
+欢迎大家留言交流。
 
 
 [relation]: /images/quora_data_relations.png "Quora中各种数据的关系网"
@@ -93,6 +105,8 @@ OK，这次就串讲到这，更详细的内容可以去看看Xavier的新老sli
 [modules]: /images/problem_modules.png "实际问题中的各个环节"
 [ensemble]: /images/master_ensemble.png "融合无处不在"
 [model_debug]: /images/quora_model_debug.png "模型要可调试"
+[omitted]: /images/omitted_ml_topics.png "机器学习中经常被忽略的主题"
+[system]: /images/xavier_system.png "机器学习系统"
 
 
 
