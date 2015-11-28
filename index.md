@@ -42,7 +42,7 @@ layout: default
 - [Coinbase](https://www.coinbase.com/merchants)
 - [Braintree](https://www.braintreepayments.com)
 
-Τελευταία ενημέρωση: 2015-11-25
+Τελευταία ενημέρωση: 2015-11-28
 
 <!-- <div class="posts">
   {% for post in site.posts %}
