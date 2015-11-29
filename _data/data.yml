@@ -221,6 +221,14 @@
   category_en: Greek e-magazine for computers and hacking
   location_gr: Online
   location_en: Online
+
+- company_gr: Πανεπιστήμιο Λευκωσίας
+  company_en: University of Nicosia
+  url: http://www.unic.ac.cy
+  category_gr: Πανεπιστήμιο
+  category_en: University
+  location_gr: Λευκωσία, Κύπρος
+  location_en: Nicosia, Cyprus
  
 - company_gr: Expedia
   company_en: Expedia
