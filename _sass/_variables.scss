@@ -25,6 +25,9 @@ $georgia: Georgia, serif;
     border-radius: 5px;
     box-shadow: 0px 0px 7px rgba(8, 8, 8, 0.70);
 }
+@mixin ghost-btn{
+    border:none;
+}
 @mixin mobile-small {
   @media screen and (max-width: 529px) {
     @content;
