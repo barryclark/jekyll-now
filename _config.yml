@@ -19,7 +19,10 @@ paginate: 8
 #
 # Flags below are optional
 #
-
+collections:
+    projects:
+        output: true
+        
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble: 

@@ -23,6 +23,30 @@ layout: default
   {% endfor %}
 </div>
 
+<!--this is collections-->
+
+<!--
+ <div class="posts">
+  {% for album in site.projects %}
+    <article class="post">    
+        <a href="{{ album.url }}">
+            <span class="cover"></span>
+            {% if album.image.feature %}
+            <img src="{{ album.image.feature }}" alt="{{ album.title }}" class="feat">
+            {% else %}
+            <img src="http://i.giphy.com/FRmOsocKhM1xK.gif"/>
+
+            {% endif %}
+            <div class="data-post">
+            <h1 class="title">{{ album.title }}</h1>
+            <h4 class="desc">{{ album.titledesc }}</h4>
+            <h3 class="date">{{ album.date | date: "%B %e, %Y" }}</h3>
+            </div>
+        </a>
+    </article>
+  {% endfor %}
+</div>
+-->
 
 
 <!-- Pagination links -->
