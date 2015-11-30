@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Lista vídeos do CodeCast sobre PHP OO
+title: CodeCast sobre PHP OO
 author: wendell
 ---
 
