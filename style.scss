@@ -213,11 +213,10 @@ img {
 }
 
 nav {
-  float: right !important;
-  margin-top: 23px !important; // @TODO: Vertically middle align
-  font-family: $helveticaNeue !important;
-  font-size: 18px !important;
-  background-color: #FFF !important;
+  float: right;
+  margin-top: 23px; // @TODO: Vertically middle align
+  font-family: $helveticaNeue;
+  font-size: 18px;
 
   @include mobile {
     float: none;
@@ -304,6 +303,22 @@ footer {
   float: left;
   margin-right: 15px;
   margin-bottom: 15px;
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.embed-container iframe, .embed-container object, .embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
