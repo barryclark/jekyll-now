@@ -6,7 +6,7 @@ published: true
 ---
 
 
-#About this website:
+About this website:
 This is a blog where I post **my opinions** on few topics I'm interested in specially Reverse Engineering,Cryptography,CTF,Maths,InfoSec (in general).
 
 **~whoami:**
