@@ -2,14 +2,19 @@
 layout: page
 title: About
 permalink: /about/
+published: true
 ---
 
-Some information about you!
 
-### More Information
+About this website:
+This is a blog where I post **my opinions** on few topics I'm interested in specially Reverse Engineering,Cryptography,CTF,Maths,InfoSec (in general).
 
-A place to include any other types of information that you'd like to include about yourself.
+**~whoami:**
+Mathematics Undergrad,Experience in few programming languages mainly C,Assembly,Python (learning Haskell for maths sake) .
+I love coffee you can donate so I can buy more coffee.
 
+**~Hobbies:**
+Books,Retro Games,Teaching 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[flavia@tuta.io](mailto:flavia@tuta.io)
