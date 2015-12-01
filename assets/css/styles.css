@@ -45,6 +45,13 @@ h2
   border-bottom: 1px solid #ededed;
 }
 
+h3 {
+    font-weight: 800;
+    background-color: aliceblue;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
 a {
   color: #3aaa64;
   -webkit-transition: all 0.4s ease-in-out;
