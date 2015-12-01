@@ -3,6 +3,7 @@ layout: post
 title: Family Tree&#58; Name Analysis
 tags: [family tree]
 javascripts: [/js/d3.min.js, /js/d3.layout.cloud.js]
+css: /css/names.css
 excerpt: First name &amp; last name frequencies.
 ---
 
