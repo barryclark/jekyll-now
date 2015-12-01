@@ -68,8 +68,12 @@ layout: default
 
 Δοκιμάστε τα:
 
-- [Bitcoin Core](https://bitcoin.org/en/download), δουλεύει σε Windows, Mac, Linux. Είναι full client (πρέπει να κατεβάσετε τα 48GB του Blockchain).
-- [Coinomi](https://coinomi.com), δουλεύει σε Android. Είναι thin client.
+- [Bitcoin Core](https://bitcoin.org/en/download), τρέχει σε Windows, Mac, Linux. Είναι full client (πρέπει να κατεβάσετε τα 48GB του Blockchain).
+- [Coinomi](https://coinomi.com), τρέχει σε Android. Είναι thin client.
+- [Blockchain.info](https://blockchain.info), web site.
+- [Electrum](https://electrum.org) τρέχει σε Windows, Mac, Linux, Android. Είναι thin client.
+- [MultiBit HD](https://multibit.org) τρέχει σε Windows, Mac, Linux. Είναι thin client.
+
 
 Τελευταία ενημέρωση: 2015-12-01
 
