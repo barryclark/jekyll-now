@@ -25,7 +25,7 @@ There are multiple VCS on the market. Our topic is about Git and GitHub
 
 #### What is Git:
 
-![What is Git](http://timurcatakli.github.io/images/151111-05.png)
+![What is Git](http://timurcatakli.github.io/assets/images/151111-05.png)
 
 "Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency"
 
@@ -48,7 +48,7 @@ Github allows you to:
 
 ### How does git help you keep track of changes?
 
-![What is GitHub](http://timurcatakli.github.io/images/151111-03.png)
+![What is GitHub](http://timurcatakli.github.io/assets/images/151111-03.png)
 
 Tracking changes is done in a git branch. Master branch is automatically created. You may create others, then checkout to make it the active branch. Then hack away, edit files, delete them, add new ones, make symlinks and all that other fun stuff. A commit will then create a snapshot of your changes.
 
@@ -56,7 +56,7 @@ Once you are satisfied with your changes you can merge your branch with the Mast
 
 ### Why use GitHub to store your code?
 
-![Why use GitHub to store your code?](http://timurcatakli.github.io/images/151111-04.jpg)
+![Why use GitHub to store your code?](http://timurcatakli.github.io/assets/images/151111-04.jpg)
 
 GitHub.com makes git accessible to everyone with a neat GUI. It also provides extensive features for colloboration. 
 "Pull Request" is the most notable of all. Other features include:
