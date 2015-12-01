@@ -10,6 +10,7 @@ layout: default
 - [Ποια είναι η τρέχουσα ισοτιμία του Bitcoin σε Ευρώ;](#exchangerate)
 - [Διάβασα ότι στην Ευρωπαϊκή Ένωση οι συναλλαγές με Bitcoin εξαιρούνται από το ΦΠΑ, είναι αλήθεια;](#VAT)
 - [Πως μπορώ να δω μια πληρωμή με Bitcoin από κοντά;](#demo)
+- [Αναζητω ένα πορτοφόλι Bitcoin που να λειτουργεί στα Ελληνικά](#greekwallet)
 
 ### <a name="merchant-table"></a>Ποιές εταιρείες και επαγγελματίες δέχονται Bitcoin στην Ελλάδα;
 
@@ -62,6 +63,13 @@ layout: default
 ### <a name="demo"></a> Πως μπορώ να δω μια πληρωμή με Bitcoin από κοντά;
 
 Επισκευτείτε κάποιο από τα καταστήματα του πίνακα. Ελάτε σε κάποια [συνάντησή μας στην Αθήνα](http://www.meetup.com/BlockchainGreece/). Γράψτε στο [Ελληνικό τμήμα του Bitcoin Talk](https://bitcointalk.org/index.php?board=120.0). 
+
+### <a name="greekwallet"></a> Αναζητω ένα πορτοφόλι Bitcoin που να λειτουργεί στα Ελληνικά
+
+Δοκιμάστε τα:
+
+- [Bitcoin Core](https://bitcoin.org/en/download), δουλεύει σε Windows, Mac, Linux. Είναι full client (πρέπει να κατεβάσετε τα 48GB του Blockchain).
+- [Coinomi](https://coinomi.com), δουλεύει σε Android. Είναι thin client.
 
 Τελευταία ενημέρωση: 2015-12-01
 
