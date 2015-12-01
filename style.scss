@@ -108,6 +108,8 @@ strong, b {
 
 img {
   max-width: 100%;
+  border-radius: 15px;
+  margin: 0px 10px 0px 0px;
 }
 
 // Fixes images in popup boxes from Google Translate
@@ -177,6 +179,7 @@ img {
 
   img {
     border-radius: 5px;
+    padding: 0;
   }
 }
 
@@ -287,3 +290,4 @@ footer {
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
 @import "svg-icons";
+
