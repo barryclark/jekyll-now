@@ -20,6 +20,8 @@ paginate: 8
 # Flags below are optional
 #
 collections:
+    quotes:
+        output: true
     projects:
         output: true
         

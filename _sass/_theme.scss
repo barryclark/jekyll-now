@@ -41,6 +41,9 @@ $font-path-file-name: /assets/fonts/Akula-webfont;
     }
     
 }
+.portfolio{
+    position: absolute;
+}
 .header-inner{
     width: 100%;
     margin: 0 auto;
@@ -276,6 +279,167 @@ article.post a img.feat{
     text-align: center;
 }
 
+/// Projects/about
+.project{
+    .main-header{
+        @include mobile-small{
+            height: 90%;
+            flex-direction: column-reverse;
+        }
+    }
+}
+.about-inner{
+     width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    @include mobile-small{
+        width:100%;
+    }
+    ul.rs{
+        position: relative;
+        order:3;
+        flex-grow:1;
+        @include mobile-small{
+            width: 100%;
+        }
+    }
+}
+.bio{
+    color: #fff;
+    padding: 3px;
+    z-index: 4;
+    font-size: 1.2rem;
+    font-family: Merriweather;
+    font-weight: lighter;
+    width: 50%;
+    order:2;
+    flex-grow:2;
+    padding-right: 20px;
+    @include mobile-small{
+        width: 95%;
+        padding: 0px;
+        flex-grow: 1;
+    }
+    .desktop{
+        padding-right: 20px;
+        @include mobile-small{
+            display: none;
+        }
+    }
+    .mobile{
+        display: none;
+        @include mobile-small{
+            display: flex;
+        }
+    }
+}
+.dactrtr{
+    font-family: akularegular;
+    text-shadow:0px 1px 0px #000;
+    font-size:6rem;
+    margin-bottom: 20px;
+    z-index: 3;
+    color:#fff;
+    width: 50%;
+    text-align: center;
+    order:1;
+    flex-grow:1;
+    padding-top: 30px;
+    @include mobile-small{
+        width:100%;
+    }
+}
+// single-project
+
+.single-project{
+    background: linear-gradient(45deg, rgba(252,30,134,0.50) 0%, rgba(41,173,235,0.50) 100%), url(../images/coolpattern.png) repeat;
+    background-attachment: fixed;
+    display: flex;
+    .gradient{
+    }
+    .container-project{
+        width:100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include mobile-small{
+            margin-top: 80px;
+            margin-bottom: 80px;
+        }
+    }
+    h1{
+        order:1;
+        margin-top: 10px;
+        z-index: 2;
+        font-size: 6rem;
+        width: 50%;
+        margin-top: 40px;
+        margin-bottom:30px;
+    }
+    .wrapper{
+        background: #fff;
+        order: 2;
+        z-index: 2;
+        width: 50%;
+        border-radius: 4px;
+        box-shadow: 0px 0px 7px rgba(8, 8, 8, 0.7);
+        @include mobile-small{
+            width: 90%;
+        }
+    }
+    figure{
+        background: none;
+        padding: 0;
+        margin-bottom: 0px;
+    }
+    figcaption{
+        position: relative;
+        width:100%;
+        border:none;
+        margin-left: 10px;
+        left: 0;
+        top:0;
+        padding-bottom: 20px;
+    }
+    h3{
+        margin-left:10px;
+    }
+    p{
+        margin-left:10px;
+        font-size: 1.6rem;
+    }
+    a.back{
+        color: #fff;
+        position: absolute;
+        margin-left: 10px;
+        margin-top: 10px;
+        font-size: 4rem;
+        height: 50px;
+        @include mobile-small{
+            margin-left: 10px;
+            margin-top: 10px;
+            font-size: 3rem;
+            height: 0;
+        }
+    }
+    a{
+        color:#e9194c;
+        font-weight:bold;
+        text-decoration:none;
+        transition: all ease-in 0.2s;
+        padding: 2px;
+    }
+    a:hover{
+        color: #fff;
+        transition: all ease-in 0.1s;
+        background: rgb(41, 173, 235);
+        padding: 2px;
+    }
+}
 /// footer
 
 .wrapper-footer{
@@ -472,4 +636,4 @@ header.single-header .desc{
 }
 
 
-/// from my previous theme
+/// This is the end my friend...

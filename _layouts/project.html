@@ -5,7 +5,7 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
 
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+    <title>{% if page.title %}{{ page.title }}  {% endif %}{{ site.name }}</title>
 
     <meta name="author" content="{{ site.name }}" />
     <meta name="description" content="{{ site.description }}">
@@ -13,42 +13,46 @@
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <link rel="shortcut icon" href="../assets/favicon.ico">
+    <link rel="shortcut icon" href="{{ site.baseurl }}/assets/favicon.ico">
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.baseurl }}/feed.xml" />
 
-    <!-- Based with Jekyll Now - http://github.com/barryclark/jekyll-now -->
-    </head>
+    <!-- Based on Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
 
-    <body class="thepost">
-<!--
-    <header class="single-header">
-            <span class="gradient"></span>
-            {% if page.image.feature %}
-                <img src="{{ page.image.feature }}" alt="" />
-            {% else %}
-                <img src="http://i.giphy.com/FRmOsocKhM1xK.gif"/>
-            {% endif %}
-            <h1 class="title">{{ page.title }}</h1>
-            <h4 class="desc">{{ page.titledesc }}</h4>
+  <body class="project">
+    <header class="main-header">
+       <span class="gradient"></span>
+        <div class="about-inner">
+            <p class="dactrtr">
+                DACTRTR
+            </p>
+            <div class="bio">
+            <p class="desktop">So strongly and metaphysically did I conceive of my situation then, that while earnestly watching his motions, I seemed distinctly to perceive that my own individuality was now merged in a joint stock company of two; that my free will had received a mortal wound; and that another's mistake or misfortune might plunge innocent me into unmerited disaster and death. Therefore, I saw that here was a sort of interregnum in Providence; for its even-handed equity never could have so gross an injustice. And yet still further pondering—while I jerked him now and then from between the whale and ship, which would threaten to jam him—still further pondering, I say, I saw that this situation of mine was the precise situation of every mortal that breathes; only, in most cases.</p>
+            <p class="mobile">
+                So strongly and metaphysically did I conceive of my situation then, that while earnestly watching his motions, I seemed distinctly to perceive that my own individuality was now merged in a joint stock company of two; that my free will had received a mortal wound; and that another's mistake or misfortune might plunge innocent me into unmerited disaster and death.
+            </p>
+            </div>
+            <ul class="rs">
+                <li><a href="http://twitter.com/{{ site.footer-links.twitter }}" class="icons-twitter"></a></li>
+                <li><a href="http://instagram.com/{{ site.footer-links.instagram }}" class="icons-instagram"></a></li>
+                <li><a href="http://behance.com/dactrtr" class="icons-behance"></a></li>
+                <li><a href="https://www.linkedin.com/profile/view?id=AAMAAASYqvwBlU_PDUtnMaB8VRLsmnebD1R7VXQ&trk=hp-identity-name" class="icons-linkedin"></a></li>
+            </ul>
+       </div>
     </header>
--->
-<!--  Menu navigation -->
-    <div id="single-post" role="main" class="container">
-        
-        <div class="wrapper">
-          {{ content }}
-        </div>
-    </div>
-
+    <div id="main" role="main" class="container">
+      {{ content }}
+    </div>       
+   </div>
     <div class="wrapper-footer">
       <div class="container">
         <footer class="footer">
-          ~~@~~
+        Dactrtr @ 2015
         </footer>
       </div>
     </div>
-
     {% include analytics.html %}
   </body>
+   
 </html>

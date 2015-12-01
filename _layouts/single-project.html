@@ -13,37 +13,21 @@
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <link rel="shortcut icon" href="../assets/favicon.ico">
+    <link rel="shortcut icon" href="{{ site.baseurl }}/assets/favicon.ico">
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.baseurl }}/feed.xml" />
 
     <!-- Based on Jekyll Now - http://github.com/barryclark/jekyll-now -->
   </head>
 
-  <body>
-    <header class="main-header">
-       <span class="gradient"></span>
-        <div class="header-inner">
-            <div class="logo-holder">
-            <img class="logo" src="../assets/logo.png" alt="dactrtr"/>
-            </div>
-            <ul class="rs">
-                <li><a href="{{ site.baseurl }}/project" class="icons-about"></a></li>
-            </ul>
-       </div>
-    </header>
-    <div id="main" role="main" class="container">
-      {{ content }}
+  <body class="single-project">
+        <a href="/project" class="back icons-prev"></a>
+    <div id="main" role="main" class="container-project" >
+<!--       <h1 class="title">{{ page.title }}</h1>-->
+        <div class="wrapper">        
+          {{ content }}
+        </div>
     </div>       
-   </div>
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-        Dactrtr @ 2015
-        </footer>
-      </div>
-    </div>
-    {% include analytics.html %}
   </body>
    
 </html>
