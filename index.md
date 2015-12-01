@@ -6,7 +6,8 @@ layout: default
 - [Που μπορώ να μάθω περισσότερα για το Bitcoin;](#bitcoin.org)
 - [Πως μπορώ να αποκτήσω ένα πορτοφόλι Bitcoin;](#wallet)
 - [Είναι απαραίτητο να διαθέτω πορτοφόλι Bitcoin για να δέχομαι πληρωμές σε Bitcoin;](#processors)
-
+- [Τι έξοδα έχει μια πληρωμή σε Bitcoin;](#fees)
+- [Ποια είναι η τρέχουσα ισοτιμία του Bitcoin σε Ευρώ;](#exchangerate)
 
 ### <a name="merchant-table"></a>Ποιές εταιρείες και επαγγελματίες δέχονται Bitcoin στην Ελλάδα;
 
@@ -42,7 +43,15 @@ layout: default
 - [Coinbase](https://www.coinbase.com/merchants)
 - [Braintree](https://www.braintreepayments.com)
 
-Τελευταία ενημέρωση: 2015-11-29
+### <a name="fees"></a> Τι έξοδα έχει μια πληρωμή σε Bitcoin;
+
+Για τον παραλήπτη, τίποτα, εκτός αν κάνει χρήση κάποιου πάροχου πληρωμών. Στον αποστολέα κοστίζει περίπου €0,03 (3 λεπτά του Ευρώ) ανεξαρτήτως του ποσού.
+
+### <a name="exchangerate"></a> Ποια είναι η τρέχουσα ισοτιμία του Bitcoin σε Ευρώ;
+
+Μπορείτε να τη δείτε στη σελίδα της [Google](https://www.google.com/finance?q=BTCEUR).
+
+Τελευταία ενημέρωση: 2015-12-01
 
 <!-- <div class="posts">
   {% for post in site.posts %}
