@@ -1,0 +1,10 @@
+#canvas {
+	border-style: double;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.measure {
+  text-align: center;
+}
