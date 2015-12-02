@@ -4,6 +4,7 @@ title: HTML5 Spring Simulation
 tags: [javascript]
 jquery: true
 javascript: /js/spring.js
+css: /css/spring.css
 ---
 
 This is an interactive spring simulation using HTML5's canvas element.
