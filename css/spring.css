@@ -10,5 +10,11 @@
 }
 
 table {
-	width: 500px;
+	width: 500px !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
+}
+
+table td {
+	width: 50%;
 }
