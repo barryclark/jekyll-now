@@ -140,7 +140,10 @@ hr {
     margin: 3.2em 0;
     padding: 0;
 }
-
+strong{
+    font-weight: bold;
+    color: $pink;
+}
 blockquote {
     background: #3e3e3e;
     width: 100%;
