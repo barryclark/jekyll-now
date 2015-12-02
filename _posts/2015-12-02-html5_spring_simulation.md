@@ -1,7 +1,7 @@
 ---
 layout: post
 title: HTML5 Spring Simulation
-tags: [javascript]
+tags: [javascript, html5, canvas]
 jquery: true
 javascript: /js/spring.js
 css: /css/spring.css
