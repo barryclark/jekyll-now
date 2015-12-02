@@ -115,7 +115,22 @@ ul.rs{
         margin:10px;
     }
 }
-
+.rs li a:hover{
+    font-size: 1.5rem;
+    transition: all ease-in 0.3s;
+    margin-top: 2px;
+}
+.rs a.icons-about{
+    font-size: 2.5rem;
+    height: 36px;
+    transition:  all ease-out 0.2s;
+}
+.rs a.icons-about:hover{
+    color: rgb(41, 173, 235);
+    font-size: 2.3rem;
+    transition: all ease-in 0.3s;
+    margin-top: 2px;
+}
 
 /// Posts
 #main article.post{
