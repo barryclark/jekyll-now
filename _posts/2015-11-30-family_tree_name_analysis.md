@@ -5,7 +5,7 @@ tags: [family tree]
 javascripts: [/js/d3.min.js, /js/d3.layout.cloud.js]
 css: /css/names.css
 excerpt: First name &amp; last name frequencies.
-image: /images/Family-Tree-icon-200.png
+image: /images/names.jpg
 ---
 
 ## First-name frequency
