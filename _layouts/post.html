@@ -4,7 +4,7 @@ isPost: true
 ---
 
 <article class="post">
-  <h1 itemprop="headline">{{ page.title }}</h1>
+  <h1 itemprop="headline">{% if post.facebook_post %}<i class="svg-icon facebook social_post"></i>{% elsif post.linkedin_post %}<i class="svg-icon linkedin social_post"></i>{% elsif post.tags contains 'family tree' %}<img src="/images/Family-Tree-icon-40.png" class="social_post" />{% endif %}{{ page.title }}</h1>
   
   {% include share.html %} 
 
@@ -12,10 +12,7 @@ isPost: true
   <div>
     <span itemprop="datePublished" content="{{ page.date | date: "%Y-%m-%d" }}" class="date">{{ page.date | date: "%B %e, %Y" }}</span>
     <nav class="tags">
-      {% assign tags = page.tags | sort %}
-      {% for tag in tags %}
-        <a href="/tags/{{ tag | replace:' ','_' }}/">{{ tag }}</a>{% unless forloop.last %}|{% endunless %}
-      {% endfor %}
+      {% assign tags = page.tags | sort %}{% for tag in tags %}<a href="/tags/{{ tag | replace:' ','_' }}/">{{ tag }}</a>{% unless forloop.last %}|{% endunless %}{% endfor %}
     </nav>
   </div>
   <hr />
@@ -24,8 +21,6 @@ isPost: true
     {{ content }}
   </div>
 
-  {% unless page.facebook_post or page.linkedin_post %}
-    <div class="fb-comments" data-href="{{ site.url }}{{ page.url }}" data-width="100%" data-numposts="5"></div>
-  {% endunless %}
+  {% unless page.facebook_post or page.linkedin_post %}<div class="fb-comments" data-href="{{ site.url }}{{ page.url }}" data-width="100%" data-numposts="5"></div>{% endunless %}
   
 </article>
