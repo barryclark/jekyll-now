@@ -341,4 +341,31 @@ ex. ENS0000001ENS0000002 -> ENS0000001 ENS0000002
 
 </script>
 
+### <font color="red">MySQL</font>
 
+##### Selecting data
+
+        SELECT * FROM <tablename>
+    select all columns from a table
+        WHERE <columname> = "Texas" AND <columnname2> > 5 AND <columname3> in ("USA", "MEX")
+    conditions
+        ORDER BY <columname> desc;
+    order the rows descending
+    
+##### String functions (from https://wikis.utexas.edu/display/CcbbShortMySql/SQL+Functions+and+Data+Types)
+concat
+        select concat('a', '_', 'b');
+replace
+        select replace('a_b_c', '_', '.');
+trim
+        select trim(' 123 ');
+##### Numeric functions (from https://wikis.utexas.edu/display/CcbbShortMySql/SQL+Functions+and+Data+Types))
+round
+        select round(78421/100, 2);
+% (modulus) (If/Else conditional)
+        select if( 587 % 2 = 0, 'even', 'odd');
+##### Date functions  (from https://wikis.utexas.edu/display/CcbbShortMySql/SQL+Functions+and+Data+Types))
+now
+        select now();
+year, monthname
+       select year(now()) as year, monthname(now()) as month;
