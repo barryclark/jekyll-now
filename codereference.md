@@ -356,11 +356,11 @@ NOW()
 ##### Selecting data
 
         SELECT * FROM <tablename>
-    select all columns from a table
+select all columns from a table
         WHERE <columname> = "Texas" AND <columnname2> > 5 AND <columname3> in ("USA", "MEX")
-    conditions
+conditions
         ORDER BY <columname> desc;
-    order the rows descending
+order the rows descending
     
 ##### String functions (from https://wikis.utexas.edu/display/CcbbShortMySql/SQL+Functions+and+Data+Types)
 concat
