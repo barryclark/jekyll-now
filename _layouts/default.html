@@ -6,42 +6,28 @@
 		{% include meta.html %}
 		{% include opengraph.html %}
 		
-		{% if page.mathjax %}
-  		<script type="text/x-mathjax-config">
+		{% if page.mathjax %}<script type="text/x-mathjax-config">
 	    	MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
 	  	</script>
-	  	<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-		{% endif %}
-		{% if page.jquery %}
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-		{% endif %}
-		{% if page.javascript %}
-		<script src="{{ page.javascript }}"></script>
-		{% endif %}
-		{% for javascript in page.javascripts %}
-		<script src="{{ javascript }}"></script>{% endfor %}
+	  	<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>{% endif %}
+		{% if page.jquery %}<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>{% endif %}
+		{% if page.javascript %}<script src="{{ page.javascript }}"></script>{% endif %}
+		{% for javascript in page.javascripts %}<script src="{{ javascript }}"></script>{% endfor %}
 		
 		<!--[if lt IE 9]>
 		  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 		
 		{% if page.css %}<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}{{ page.css }}" />{% endif %}
+		{% for css in page.csses %}<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}{{ css }}" />{% endfor %}
 		<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
 		<link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 		<link href="/favicon.ico?" rel="shortcut icon" type="image/x-icon" />
 	</head>
 
-	{% if page.isPost %}
-	<body itemscope itemtype="http://schema.org/BlogPosting">
-	{% elsif page.url == "/index.html" or page.url contains "/tags/" or page.url contains "/page" %}
-	<body itemscope itemtype="http://schema.org/Blog">
-    {% else %}
-	<body>
-    {% endif %}
-    	{% include schema.html %}
-  
-	    {% include facebook.html %}
-	    
+	{% if page.isPost %}<body itemscope itemtype="http://schema.org/BlogPosting">{% elsif page.url == "/index.html" or page.url contains "/tags/" or page.url contains "/page" %}<body itemscope itemtype="http://schema.org/Blog">{% else %}<body>{% endif %}
+    	{% include schema.html %}  
+	    {% include facebook.html %}	    
 	    <div class="wrapper-masthead">
 	    
 	  		<div class="container">
@@ -54,9 +40,7 @@
 		          	</div>
 	
 	          		<nav>
-	            	{% for navlink in site.navlinks %}
-	              		<a href="{{ navlink.url }}">{{ navlink.text }}</a>{% if forloop.last %}{% else %}|{% endif %}
-	            	{% endfor %}
+	            	{% for navlink in site.navlinks %}<a href="{{ navlink.url }}">{{ navlink.text }}</a>{% if forloop.last %}{% else %}|{% endif %}{% endfor %}
 	          		</nav>
 	        	</header>
 	      	</div>
