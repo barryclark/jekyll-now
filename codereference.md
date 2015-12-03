@@ -343,6 +343,16 @@ ex. ENS0000001ENS0000002 -> ENS0000001 ENS0000002
 
 ### <font color="red">MySQL</font>
 
+##### Reminders
+Functions
+http://dev.mysql.com/doc/refman/5.7/en/functions.html
+
+Indexed from 1
+SELECT
+IFNULL("colname", "None")
+NOW()
+
+
 ##### Selecting data
 
         SELECT * FROM <tablename>
@@ -369,3 +379,9 @@ now
         select now();
 year, monthname
        select year(now()) as year, monthname(now()) as month;
+##### Get data from UCSC genome browser
+First, connect to remote https://wikis.utexas.edu/display/CcbbShortMySql/Connect+to+a+remote+DB
+      select name, chrom, strand,
+           cast(exonStarts as char(100)) as exon_starts_data,
+           convert(exonEnds, char(100)) as exon_ends_data
+        from sacCer3.sgdGene limit 200;
