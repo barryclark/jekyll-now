@@ -7,7 +7,7 @@ layout: project
 
   {% for album in site.projects %}
     <article class="post">    
-        <a href="{{ album.url }}">
+        <a href="{{ album.link }}">
             <span class="cover"></span>
             {% if album.image.feature %}
             <img src="{{ album.image.feature }}" alt="{{ album.title }}" class="feat">
