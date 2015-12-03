@@ -4,7 +4,7 @@ isPost: true
 ---
 
 <article class="post">
-  <h1 itemprop="headline">{% if post.facebook_post %}<i class="svg-icon facebook social_post"></i>{% elsif post.linkedin_post %}<i class="svg-icon linkedin social_post"></i>{% elsif post.tags contains 'family tree' %}<img src="/images/Family-Tree-icon-40.png" class="social_post" />{% endif %}{{ page.title }}</h1>
+  <h1 itemprop="headline">{% if page.facebook_post %}<i class="svg-icon facebook social_post"></i>{% elsif page.linkedin_post %}<i class="svg-icon linkedin social_post"></i>{% elsif page.tags contains 'family tree' %}<img src="/images/Family-Tree-icon-40.png" class="social_post" />{% endif %}{{ page.title }}</h1>
   
   {% include share.html %} 
 
