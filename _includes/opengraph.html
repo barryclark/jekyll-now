@@ -6,38 +6,14 @@
 
 <meta property="article:author" content="https://www.facebook.com/joseph.hendrix.5" />
 
-{% for tag in page.tags %}
-  <meta property="article:tag" content="{{ tag | replace:'_',' ' }}" />
-{% endfor %}
+{% for tag in page.tags %}<meta property="article:tag" content="{{ tag | replace:'_',' ' }}" />{% endfor %}
 
-{% if page.date %}
-  <meta property="article:published_time" content="{{ page.date | date: "%Y-%m-%d" }}" />
-{% else %}
-  <meta property="article:published_time" content="{{ site.time | date: "%Y-%m-%d" }}" />
-{% endif %}
+{% if page.date %}<meta property="article:published_time" content="{{ page.date | date: "%Y-%m-%d" }}" />{% else %}<meta property="article:published_time" content="{{ site.time | date: "%Y-%m-%d" }}" />{% endif %}
 
-{% if page.image %}
-  <meta property="og:image" content="{{ site.url }}{{ page.image }}" />
-{% else %}
-  <meta property="og:image" content="{{ site.avatar }}" />
-{% endif %}
+{% if page.image %}<meta property="og:image" content="{{ site.url }}{{ page.image }}" />{% else %}<meta property="og:image" content="{{ site.avatar }}" />{% endif %}
 
-{% if page.url == "/index.html" %}
-  <meta property="og:url" content="{{ site.url }}" />
-{% elsif page.facebook_post %}
-  <meta property="og:url" content="{{ page.facebook_post }}" />
-{% else %}
-  <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
-{% endif %}
+{% if page.url == "/index.html" %}<meta property="og:url" content="{{ site.url }}" />{% elsif page.facebook_post %}<meta property="og:url" content="{{ page.facebook_post }}" />{% else %}<meta property="og:url" content="{{ site.url }}{{ page.url }}" />{% endif %}
 
-{% if page.title %}
-  <meta property="og:title" content="{{ page.title }}" />
-{% else %}
-  <meta property="og:title" content="{{ site.name }}" />
-{% endif %}
+{% if page.title %}<meta property="og:title" content="{{ page.title }}" />{% else %}<meta property="og:title" content="{{ site.name }}" />{% endif %}
 
-{% if page.excerpt %}
-  <meta name="description" content="{{ page.excerpt| strip_html }}" />
-{% else %}
-  <meta property="og:description" content="{{ site.description }}" />
-{% endif %}
+{% if page.excerpt %} <meta name="description" content="{{ page.excerpt| strip_html }}" />{% else %}<meta property="og:description" content="{{ site.description }}" />{% endif %}
