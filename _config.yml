@@ -61,7 +61,7 @@ markdown: redcarpet
 highlighter: pygments
 permalink: /:title/
 
-paginate: 5
+paginate: 3
 paginate_path: "/page:num"
 
 redcarpet:
