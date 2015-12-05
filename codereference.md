@@ -385,3 +385,8 @@ First, connect to remote https://wikis.utexas.edu/display/CcbbShortMySql/Connect
            cast(exonStarts as char(100)) as exon_starts_data,
            convert(exonEnds, char(100)) as exon_ends_data
         from sacCer3.sgdGene limit 200;
+##### Make a view of the data
+        create or replace view my_saved_view as
+       select round(avg(GNP * 1000000 / Population), 0) as "Per capita GNP ($)",
+       round(std(GNP * 1000000 / Population), 0) as "Std deviation ($)"
+        from country;
