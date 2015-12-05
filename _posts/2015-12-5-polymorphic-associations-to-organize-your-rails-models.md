@@ -31,7 +31,9 @@ Let's assume our shop will sell computers and printers, and our goal is to add m
 
 The first thing we could do is to include all those details in the products table, and we will get something like this:
 
- Category | Name    | Price | Stock | Cpu | Memory | Type  | Ppm
- ---------|---------|-------|-------|-----|--------|-------|----
- computer | comPTR  | 1400  | 20    | i5  | 8GB    | nil   | nil
- printer  | iPrint  | 130   | 50    | nil | nil    | laser | 15  
+Category | Name    | Price | Stock | Cpu | Memory | Type  | Ppm
+---------|---------|-------|-------|-----|--------|-------|----
+computer | comPTR  | 1400  | 20    | i5  | 8GB    | nil   | nil
+printer  | iPrint  | 130   | 50    | nil | nil    | laser | 15  
+
+test
