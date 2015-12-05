@@ -37,3 +37,8 @@ computer | comPTR  | 1400  | 20    | i5  | 8GB    | nil   | nil
 printer  | iPrint  | 130   | 50    | nil | nil    | laser | 15  
 
 test
+
+First Header  | Second Header
+------------- | -------------
+Content Cell  | Content Cell
+Content Cell  | Content Cell
