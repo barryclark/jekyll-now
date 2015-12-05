@@ -18,14 +18,13 @@
 		  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 		
-		{% unless page.isPost %}{% for post in paginator.posts %}{% if post.css %}<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}{{ page.css }}" />{% endif %}{% endfor %}{% endunless %}
+		{% unless page.isPost == 'true' %}{% for post in paginator.posts %}{% if post.css %}<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}{{ page.css }}" />{% endif %}{% endfor %}{% endunless %}
 		{% if page.css %}<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}{{ page.css }}" />{% endif %}
 		{% for css in page.csses %}<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}{{ css }}" />{% endfor %}
 		<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
 		<link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 		<link href="/favicon.ico?" rel="shortcut icon" type="image/x-icon" />
 	</head>
-	{{ page.isPost }}
 	{% if page.isPost %}<body itemscope itemtype="http://schema.org/BlogPosting">{% elsif page.url == "/index.html" or page.url contains "/tags/" or page.url contains "/page" %}<body itemscope itemtype="http://schema.org/Blog">{% else %}<body>{% endif %}
     	{% include schema.html %}  
 	    {% include facebook.html %}	    
