@@ -18,6 +18,7 @@
 		  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 		
+		{% unless page.isPost %}{% for post in paginator.posts %}{% if post.css %}<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}{{ page.css }}" />{% endif %}{% endfor %}{% endunless %}
 		{% if page.css %}<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}{{ page.css }}" />{% endif %}
 		{% for css in page.csses %}<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}{{ css }}" />{% endfor %}
 		<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
