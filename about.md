@@ -4,12 +4,10 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Some information about me!
 
-### More Information
+### Other web profiles
 
-A place to include any other types of information that you'd like to include about yourself.
+[Xing](http://www.xing.com/profile/Nadege_Griesser)
 
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+[LinkedIn](http://www.linkedin.com/in/nadegegriesser)
