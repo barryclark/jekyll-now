@@ -12,12 +12,26 @@ In order to try the polymorphic associations we will use a very basic shopping c
 At this point the application has a Product model which stores all the products in the shop, with the following details:
 
 ```
-+-----------------+            +---------------+
-|  PRODUCT        |            |  Complex      |
-+-----------------+            +---------------+
-|  Category       |            |               |
-|  Name           +------------>               |
-|  Price          |            |               |
-|  Stock          |            |               |
-+-----------------+            +---------------+
++-----------------+
+|  PRODUCT        |
++-----------------+
+|  Category       |
+|  Name           |
+|  Price          |
+|  Stock          |
++-----------------+
 ```
+Let's assume our shop will sell computers and printers, and our goal is to add more details about both categories of products:
+- computer:
+  - cpu
+  - memory
+- printer:
+  - type
+  - pages_per_minute
+
+The first thing we could do is to include all those details in the products table, and we will get something like this:
+
+ Category | Name    | Price | Stock | Cpu | Memory | Type  | Ppm
+----------|---------|-------|-------|-----|--------|-------|----
+ computer | comPTR  | 1400  | 20    | i5  | 8GB    | nil   | nil
+ printer  | iPrint  | 130   | 50    | nil | nil    | laser | 15  
