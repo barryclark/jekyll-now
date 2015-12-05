@@ -53,10 +53,10 @@ describe "title" do
 end
 ```
 
-This way we are targeting the attribute `title` as well as the number of errors generated. Please mind that this test uses the `collection_matchers` module that is now separated of RSpec core. You will need to add the `gem 'rspec-collection_matchers'` in the `Gemfile` and `require 'rspec/collection_matchers'` in the `spec_helper.rb`.
+This way we are targeting the attribute `title` as well as the number of errors generated. Please mind that this test uses the `collection_matchers` module that is now separated of RSpec core. You will need to add the `gem 'rspec-collection_matchers'` in the **Gemfile** and `require 'rspec/collection_matchers'` in the **spec_helper.rb**.
 
 ### The `shoulda` gem
-Add `gem 'shoulda'` in the `Gemfile`, `require 'shoulda'` in the `spec_helper.rb`, and then write your `shoulda` test:
+Add `gem 'shoulda'` in the **Gemfile**, `require 'shoulda'` in the **spec_helper.rb**, and then write your shoulda test:
 
 ```ruby
 describe "title" do
@@ -65,4 +65,4 @@ end
 ```
 And that's it. The test will pass.
 
-Personally I like the `shoulda` gem, but considering it was created for Rails 3 and not updated in years, maybe the 2nd option is the safest.
+Personally I like the shoulda gem, but considering it was created for Rails 3 and not updated in years, maybe the 2nd option is safer.
