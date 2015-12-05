@@ -11,13 +11,13 @@ In order to try the polymorphic associations we will use a very basic shopping c
 
 At this point the application has a Product model which stores all the products in the shop, with the following details:
 
-```
+```ruby
 +-----------------+
 |  PRODUCT        |
 +-----------------+
-|  Category       |
-|  Name           |
-|  Price          |
-|  Stock          |
+|  category       |
+|  name           |
+|  price          |
+|  stock          |
 +-----------------+
 ```
