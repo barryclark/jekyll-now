@@ -80,7 +80,7 @@ layout: default
 Επισκευτείτε κάποιο από τα καταστήματα του πίνακα. Ελάτε σε κάποια [συνάντησή μας στην Αθήνα](http://www.meetup.com/BlockchainGreece/). Γράψτε στο [Ελληνικό τμήμα του Bitcoin Talk](https://bitcointalk.org/index.php?board=120.0). 
 
 
-Τελευταία ενημέρωση: 2015-12-01
+Τελευταία ενημέρωση: 2015-12-06
 
 <!-- <div class="posts">
   {% for post in site.posts %}
