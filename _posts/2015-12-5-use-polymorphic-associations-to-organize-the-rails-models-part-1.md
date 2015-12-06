@@ -128,10 +128,27 @@ Add the polymorphism information in the Product model.
 <u>app/models/product.rb</u>
 
 ```ruby
-...
-belongs_to :category, polymorphic: true
-...
+#...
+belongs_to :category, polymorphic: true, dependent: :destroy
+#...
 ```
+
+As a computer will be registered as a product, the association will be a one-to-one.
+
+```ruby
+class Computer < ActiveRecord::Base
+  has_one :product, as: :category, dependent: :destroy
+end
+```
+We use `dependent: :destroy` as it makes no sense to have a computer without a product, or the other way around.
+
+At this point our models should be fully functional, so we can test them in the console.
+
+```bash
+ irb(main):001:0> computer = Computer.new(name: "comp1", cpu: "i5", memory: "16 GB")
+=> #<Computer id: nil, name: "comp1", cpu: "i5", memory: "16 GB">
+```
+
 
 
 [6ef755a1]: https://github.com/iacobson/test-shop/tree/polymorphic-associations-initial "polymorphic-associations-initial"
