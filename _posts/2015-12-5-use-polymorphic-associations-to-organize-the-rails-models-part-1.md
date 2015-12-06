@@ -61,6 +61,7 @@ Before writing any code, let's think about the structure we want to build:
   |  memory         |         |  ppm            |
   +-----------------+         +-----------------+
 ```
+
 We chose the **category** to represent the polymorphic relations, and we need to define a foreign key: **category_id** and a **category_type** that will link with the Computer or Printer models.
 
 > In our example below we will detail just the Computer model, the Printer one being quite similar. However you can see the full code on this Github branch: [polymorphic-associations-final][2cc9496e]
@@ -68,10 +69,13 @@ We chose the **category** to represent the polymorphic relations, and we need to
 ## The Migrations
 First we will need to adapt the existing Product to accept polymorphic relations:
 - Generate a new migration:
+
 ```bash
 rails g migration AddPolymorphicRelationsToProduct
 ```
+
 - Edit the migration file:
+
 ```ruby
 class AddPolymorphicRelationsToProduct < ActiveRecord::Migration
   def up
@@ -91,11 +95,15 @@ class AddPolymorphicRelationsToProduct < ActiveRecord::Migration
   end
 end
 ```
+
 - Generate the Computer model and migration:
+
 ```bash
 rails g model Computer name:string cpu:string memory:string
 ```
-- Before running the migration, just delete any unneeded information, such as timestamps, as we will use the Product created_at and updated_at
+
+- Before running the migration, just delete any unneeded information, such as timestamps, as we will use the Product created_at and updated_at.
+
 ```ruby
 class CreateComputers < ActiveRecord::Migration
   def change
@@ -107,14 +115,18 @@ class CreateComputers < ActiveRecord::Migration
   end
 end
 ```
+
 - Migrate:
+
 ```bash
 rake db:migrate
 ```
+
 ## The Models
 Add the polymorphism information in the Product model.
 
 <u>app/models/product.rb</u>
+
 ```ruby
 ...
 belongs_to :category, polymorphic: true
