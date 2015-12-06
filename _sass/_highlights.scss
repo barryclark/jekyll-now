@@ -1,6 +1,6 @@
 .highlight {
   background-color: #272822;
-  padding: 10px 10px 10px 10px;
+  padding: 7px 7px 7px 10px;
   border: 1px solid #ddd;
   margin: 20px 0 20px 0;
   overflow: scroll;
@@ -11,8 +11,6 @@ code {
   color: darkGray;
 }
 
-.highlight pre { background-color: #272822; }
-.highlight .hll { background-color: #272822; }
 .highlight .c { color: #75715e } /* Comment */
 .highlight .err { color: #960050; background-color: #1e0010 } /* Error */
 .highlight .k { color: #66d9ef } /* Keyword */
