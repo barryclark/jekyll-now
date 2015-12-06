@@ -140,13 +140,64 @@ class Computer < ActiveRecord::Base
   has_one :product, as: :category, dependent: :destroy
 end
 ```
+
 We use `dependent: :destroy` as it makes no sense to have a computer without a product, or the other way around.
 
-At this point our models should be fully functional, so we can test them in the console.
+## Console Tests
+At this point our models should be fully functional, so we can test them in the rails console.
 
-```bash
- irb(main):001:0> computer = Computer.new(name: "comp1", cpu: "i5", memory: "16 GB")
+```
+computer = Computer.new(name: "comp1", cpu: "i5", memory: "16 GB")
 => #<Computer id: nil, name: "comp1", cpu: "i5", memory: "16 GB">
+```
+
+We pass **computer** as argument for the product category.
+
+```
+product = Product.new(category: computer, user_id: 1,
+        price: 2000, stock: 50)
+=> #<Product id: nil, user_id: 1, price: 2000, stock: 50,
+    created_at: nil, updated_at: nil,
+    category_type: "Computer", category_id: nil>
+```
+
+This way we will save both the product and computer in the same time.
+
+```
+product.save
+   (0.3ms)  BEGIN
+  SQL (0.6ms)  INSERT INTO "computers" ("name", "cpu", "memory") VALUES ($1, $2, $3) RETURNING "id"  [["name", "comp1"], ["cpu", "i5"], ["memory", "16 GB"]]
+  SQL (0.4ms)  INSERT INTO "products" ("category_type", "user_id", "price", "stock", "category_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["category_type", "Computer"], ["user_id", 1], ["price", 2000], ["stock", 50], ["category_id", 6], ["created_at", "2015-12-06 15:51:32.398415"], ["updated_at", "2015-12-06 15:51:32.398415"]]
+   (9.9ms)  COMMIT
+=> true
+```
+
+Now we can find the product category.
+
+```
+prod = Product.last
+  Product Load (10.4ms)  SELECT  "products".* FROM "products"  ORDER BY "products"."id" DESC LIMIT 1
+=> #<Product id: 8, user_id: 1, price: 2000, stock: 50, created_at: "2015-12-06 15:51:32", updated_at: "2015-12-06 15:51:32", category_type: "Computer", category_id: 6>
+```
+
+```
+prod.category
+  Computer Load (0.3ms)  SELECT  "computers".* FROM "computers" WHERE "computers"."id" = $1 LIMIT 1  [["id", 6]]
+=> #<Computer id: 6, name: "comp1", cpu: "i5", memory: "16 GB">
+```
+
+And the other way around, the computer product.
+
+```
+comp = Computer.last
+  Computer Load (7.8ms)  SELECT  "computers".* FROM "computers"  ORDER BY "computers"."id" DESC LIMIT 1
+=> #<Computer id: 6, name: "comp1", cpu: "i5", memory: "16 GB">
+```
+
+```
+comp.product
+  Product Load (0.2ms)  SELECT  "products".* FROM "products" WHERE "products"."category_id" = $1 AND "products"."category_type" = $2 LIMIT 1  [["category_id", 6], ["category_type", "Computer"]]
+=> #<Product id: 8, user_id: 1, price: 2000, stock: 50, created_at: "2015-12-06 15:51:32", updated_at: "2015-12-06 15:51:32", category_type: "Computer", category_id: 6>
 ```
 
 
