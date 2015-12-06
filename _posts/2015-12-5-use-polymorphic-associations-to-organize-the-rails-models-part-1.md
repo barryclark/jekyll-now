@@ -2,6 +2,7 @@
 layout: post
 title: Use Polymorphic Associations to organize the Rails models
 ---
+# Part 1: Migrations and Models
 
 Organizing the models is an essential part of application design, and will certainly have a serious impact on the way the application will evolve. A good model structure is the premise for a clean and readable application.
 
