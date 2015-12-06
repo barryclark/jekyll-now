@@ -1,13 +1,14 @@
 ---
 layout: post
-title: Use Polymorphic Associations to organize your Rails models
+title: Use Polymorphic Associations to organize the Rails models
+subhead: Part 1: Models and Migrations
 ---
 
 Organizing the models is an essential part of application design, and will certainly have a serious impact on the way the application will evolve. A good model structure is the premise for a clean and readable application.
 
 This one of the reasons why we will want to take a closer look to the Rails ActiveRecord Polymorphic Associations.
 
-In order to try the Polymorphic Associations we will use a very basic shopping cart application, created for testing reasons. The initial state of the application can be found on this branch: https://github.com/iacobson/test-shop/tree/polymorphic-associations-initial
+In order to try the Polymorphic Associations we will use a very basic shopping cart application, created for testing reasons. The initial state of the application can be found on this Github branch: https://github.com/iacobson/test-shop/tree/polymorphic-associations-initial
 
 At this point the application has a Product model which stores all the products in the shop, with the following details:
 
@@ -46,7 +47,6 @@ Before writing any code, let's think about the structure we want to build:
                 +-----------------+
                 |  category_id    |
                 |  category_type  |
-                |  name           |
                 |  price          |
                 |  stock          |
                 +-----------------+
@@ -60,4 +60,64 @@ Before writing any code, let's think about the structure we want to build:
   |  cpu            |         |  type           |
   |  memory         |         |  ppm            |
   +-----------------+         +-----------------+
+```
+We chose the **category** to represent the polymorphic relations, and we need to define a foreign key: **category_id** and a **category_type** that will link with the Computer or Printer models.
+
+> In our example below we will use detail the Computer model, the Printer one being quite similar. However you can see the full code on this Github branch:
+> https://github.com/iacobson/test-shop/tree/polymorphic-associations-final
+
+## The Migrations
+First we will need to adapt the existing Product to accept polymorphic relations:
+- Generate a new migration:
+```bash
+rails g migration AddPolymorphicRelationsToProduct
+```
+- Edit the migration file:
+```ruby
+class AddPolymorphicRelationsToProduct < ActiveRecord::Migration
+  def up
+    remove_column :products, :category
+    remove_column :products, :name
+    add_column :products, :category_type, :string
+    add_column :products, :category_id, :integer
+    add_index :products, [:category_type, :category_id]
+  end
+
+  def down
+    remove_index :products, column: [:category_type, :category_id]
+    remove_column :products, :category_id, :integer
+    remove_column :products, :category_type, :string
+    add_coumn :products, :category, :string
+    add_coumn :products, :name, :string
+  end
+end
+```
+- Generate the Computer model and migration:
+```bash
+rails g model Computer name:string cpu:string memory:string
+```
+- Before running the migration, just delete any unneeded information, such as timestamps, as we will use the Product created_at and updated_at
+```ruby
+class CreateComputers < ActiveRecord::Migration
+  def change
+    create_table :computers do |t|
+      t.string :name
+      t.string :cpu
+      t.string :memory
+    end
+  end
+end
+```
+- Migrate:
+```bash
+rake db:migrate
+```
+## The Models
+Add the polymorphism information in the Product model.
+
+<u>app/models/product.rb</u>
+```ruby
+...
+belongs_to :category, polymorphic: true
+...
 ```
