@@ -15,7 +15,7 @@ image:
  
  <iframe width="560" height="315" src="https://www.youtube.com/embed/NGF6Z4Z5jMA" frameborder="0" allowfullscreen></iframe>
  
- I have to confess that I have **no frickin idea** of which places we visit, I was only a picture-asian-monkey, and also I'm really *bad with names*. So I can't be specific saying *tinkukurapomimu" it's an amazing place, also because that place doesn't exist, I think.
+ I have to confess that I have **no frickin idea** of which places we visit, I was only a picture-asian-monkey, and also I'm really *bad with names*. So I can't be specific saying *tinkukurapomimu* it's an amazing place, also because that place doesn't exist, I think.
  
 ### The Raiders
  
