@@ -25,6 +25,10 @@ $georgia: Georgia, serif;
     border-radius: 5px;
     box-shadow: 0px 0px 7px rgba(8, 8, 8, 0.70);
 }
+@mixin cut-off{
+    -webkit-clip-path: polygon(0 100%, 0 100%, 0 0, 100% 0, 100% 81%);
+    clip-path: polygon(0 100%, 0 100%, 0 0, 100% 0, 100% 81%);
+}
 @mixin ghost-btn{
     border:none;
 }
