@@ -1,5 +1,5 @@
 {% if page.permalink contains '/tags/' %}{% assign posts=site.tags[page.title] %}{% else %}{% assign posts=paginator.posts %}{% endif %}
-{% if page.mathjax %}{% assign mathjax = true %}{% endif %}
+{% if page.mathjax %}{% assign mathjax = true %}{% endif %}{% if page.jquery %}{% assign jquery = true %}{% endif %}
 {% unless page.isPost %}{% for post in posts %}{% if post.mathjax %}{% assign mathjax = true %}{% endif %}{% if post.jquery %}{% assign jquery = true %}{% endif %}{% endfor %}{% endunless %}
 <!DOCTYPE html>
 <html lang="en-us">
