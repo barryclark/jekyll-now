@@ -39,7 +39,7 @@
       {% if post.image %}<meta itemprop="image" content="{{ site.url }}{{ post.image }}" />{% else %}<meta itemprop="image" content="{{ site.avatar }}" />{% endif %}
       <hr />
       <div class="entry" style="margin-top: 15px;">
-        {% if post.facebook_post %}{% include facebook_post.html facebook_post=post.facebook_post %}{% elsif post.content contains '<!--more-->' %}{{ post.content | split:'<!--more-->' | first }}{% else %}{{ post.excerpt }}{% endif %}
+        {% if post.facebook_post %}{% include facebook_post.html facebook_post=post.facebook_post %}{% else %}{{ post.content }}{% endif %}
       </div>
       
     </article>
