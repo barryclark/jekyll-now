@@ -154,7 +154,7 @@ ul.rs{
         height: 200px;
     }
     h1{
-        margin-top: 140px;
+        margin-top: 120px;
         font-size: 5rem;
         @include mobile-small{
             margin-top: 70px;
@@ -162,7 +162,7 @@ ul.rs{
         }
     }
     a:hover h1.title{
-        margin-top: 130px;
+        margin-top: 110px;
         font-size: 4.9rem;
     }
 }

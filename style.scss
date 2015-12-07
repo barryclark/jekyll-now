@@ -300,6 +300,8 @@ figcaption {
     border-right: 1px solid #bbb;
     padding-bottom: 50px;
     line-height: 1.4rem;
+    padding-right: 2px;
+    text-align: right;
     @include mobile-small{
         left: 5%;
         bottom: 0px;
