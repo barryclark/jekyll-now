@@ -2,6 +2,7 @@
 layout: default
 ---
 
+<!--
 <div class="posts">
   {% for post in paginator.posts %}
     <article class="post">    
@@ -13,6 +14,28 @@ layout: default
             <img src="http://i.giphy.com/FRmOsocKhM1xK.gif"/>
 
             {% endif %}
+            <div class="data-post">
+            <h1 class="title">{{ post.title }}</h1>
+            <h4 class="desc">{{ post.titledesc }}</h4>
+            <h3 class="date">{{ post.date | date: "%B %e, %Y" }}</h3>
+            </div>
+        </a>
+    </article>
+  {% endfor %}
+</div>
+-->
+
+
+
+<div class="posts">
+  {% for post in paginator.posts %}
+    <article class="post"> 
+       {% if post.image.feature %}
+        <a href="{{ site.baseurl }}{{ post.url }}" style="background:url({{ post.image.feature}});background-size:cover;">
+        {% else %}
+        <a href="{{ site.baseurl }}{{ post.url }}" style="background:url(http://i.giphy.com/FRmOsocKhM1xK.gif);background-size:cover;">
+           {% endif %}
+            <span class="cover"></span>
             <div class="data-post">
             <h1 class="title">{{ post.title }}</h1>
             <h4 class="desc">{{ post.titledesc }}</h4>
