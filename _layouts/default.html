@@ -1,4 +1,7 @@
-<!DOCTYPE html>{% if page.permalink contains '/tags/' %}{% assign posts=site.tags[page.title] %}{% else %}{% assign posts=paginator.posts %}{% endif %}
+{% if page.permalink contains '/tags/' %}{% assign posts=site.tags[page.title] %}{% else %}{% assign posts=paginator.posts %}{% endif %}
+{% if page.mathjax %}{% assign mathjax = true %}{% endif %}
+{% unless page.isPost %}{% for post in posts %}{% if post.mathjax %}{% assign mathjax = true %}{% endif %}{% if post.jquery %}{% assign jquery = true %}{% endif %}{% endfor %}{% endunless %}
+<!DOCTYPE html>
 <html lang="en-us">
 	<head>
 		<title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
@@ -6,20 +9,15 @@
 		{% include meta.html %}
 		{% include opengraph.html %}
 		
-		{% if page.mathjax %}<script type="text/x-mathjax-config">
+		{% if mathjax %}<script type="text/x-mathjax-config">
 	    	MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
 	  	</script>
 	  	<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>{% endif %}
-		{% if page.jquery %}<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>{% endif %}
+		{% if jquery %}<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>{% endif %}
 		{% if page.javascript %}<script src="{{ page.javascript }}"></script>{% endif %}
 		{% for javascript in page.javascripts %}<script src="{{ javascript }}"></script>{% endfor %}
 		
 		{% unless page.isPost %}{% for post in posts %}
-		{% if post.mathjax %}<script type="text/x-mathjax-config">
-	    	MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
-	  	</script>
-	  	<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>{% endif %}
-		{% if post.jquery %}<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>{% endif %}
 		{% if post.javascript %}<script src="{{ post.javascript }}"></script>{% endif %}
 		{% for javascript in post.javascripts %}<script src="{{ javascript }}"></script>{% endfor %}
 		{% endfor %}{% endunless %}
