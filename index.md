@@ -2,7 +2,8 @@
 layout: default
 ---
 
-- [Ποιές εταιρείες και επαγγελματίες δέχονται Bitcoin στην Ελλάδα;](#merchant-table)
+- [Ποιες εταιρείες και επαγγελματίες δέχονται Bitcoin στην Ελλάδα;](#merchant-table)
+- [Ποιες γνωστές εταιρείες του εξωτερικού δέχονται Bitcoin;](#bluechips)
 - [Που μπορώ να μάθω περισσότερα για το Bitcoin;](#bitcoin.org)
 - [Πως μπορώ να αποκτήσω ένα πορτοφόλι Bitcoin;](#wallet)
 - [Αναζητώ ένα πορτοφόλι Bitcoin που να λειτουργεί στα Ελληνικά](#greekwallet)
@@ -32,6 +33,15 @@ layout: default
   </tr>
 {% endfor %}
 </table>
+
+### <a name="bluechips"></a> Ποιες γνωστές εταιρείες του εξωτερικού δέχονται Bitcoin;
+
+Ενδεικτικά:
+
+- [Microsoft](https://commerce.microsoft.com/PaymentHub/Help/Right?helppagename=CSV_BitcoinHowTo.htm), για πελάτες στην Αμερική
+- [Dell](http://www.dell.com/learn/us/en/uscorp1/campaigns/bitcoin-marketing?c=us&l=en&s=corp), για χώρες στις οποίες διατηρεί ηλεκτρονικό κατάστημα
+- [Expedia](http://www.expedia.com/Checkout/BitcoinTermsAndConditions) και στην Ελλάδα
+- [Περιοδικό Fortune](https://subscription.timeinc.com/storefront/site/fo-20for1999ccar1214bc.html)
 
 ### <a name="bitcoin.org"></a>Που μπορώ να μάθω περισσότερα για το Bitcoin;
 
