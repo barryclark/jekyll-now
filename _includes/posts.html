@@ -1,25 +1,13 @@
-<div class="posts">
-  {% if include.onlytags %}
-    {% assign posts=site.tags[include.onlytags] %}
-  {% else %}
-    {% assign posts=paginator.posts %}
-  {% endif %}
+<div class="posts">{% if include.onlytags %}{% assign posts=site.tags[include.onlytags] %}{% else %}{% assign posts=paginator.posts %}{% endif %}
   
-  {% for post in posts %}
-    <article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting" content="{{ site.name }}" class="post">
+  {% for post in posts %}<article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting" content="{{ site.name }}" class="post">
 
-      <h2 itemprop="headline" class="postHeader">
-        <a href="{{ post.url }}" itemprop="url">
-          {% if post.facebook_post %}<i class="svg-icon facebook social_post"></i>{% elsif post.linkedin_post %}<i class="svg-icon linkedin social_post"></i>{% elsif post.tags contains 'family tree' %}<img src="/images/Family-Tree-icon-40.png" class="social_post" />{% elsif post.tags contains 'html5' %}<img src="/images/HTML5_Logo.svg" class="social_post" style="width: 40px; height: 40px;" />{% endif %}{{ post.title }}
-        </a>
-      </h2>
-      {% capture post_url | strip_newlines | remove: ' ' %}
-    	  {% if post.facebook_post %}
-      		{{ post.facebook_post }}
-    	  {% else %}
-      		{{ site.url }}{{ post.url }}
-    	  {% endif %}
-      {% endcapture %}
+    <h2 itemprop="headline" class="postHeader">
+        <a href="{{ post.url }}" itemprop="url">{% if post.facebook_post %}<i class="svg-icon facebook social_post"></i>{% elsif post.linkedin_post %}<i class="svg-icon linkedin social_post"></i>{% elsif post.tags contains 'family tree' %}<img src="/images/Family-Tree-icon-40.png" class="social_post" />{% elsif post.tags contains 'html5' %}<img src="/images/HTML5_Logo.svg" class="social_post" style="width: 40px; height: 40px;" />{% endif %}{{ post.title }}</a>
+    </h2>
+    {% capture post_url | strip_newlines | remove: ' ' %}
+        {% if post.facebook_post %}{{ post.facebook_post }}{% else %}{{ site.url }}{{ post.url }}{% endif %}
+    {% endcapture %}
       <!-- LinkedIn Share -->
       <div>
         <script src="https://platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
@@ -51,13 +39,7 @@
       {% if post.image %}<meta itemprop="image" content="{{ site.url }}{{ post.image }}" />{% else %}<meta itemprop="image" content="{{ site.avatar }}" />{% endif %}
       <hr />
       <div class="entry" style="margin-top: 15px;">
-        {% if post.facebook_post %}
-          {% include facebook_post.html facebook_post=post.facebook_post %}
-        {% elsif post.content contains '<!--more-->' %}
-	        {{ post.content | split:'<!--more-->' | first }}
-        {% else %}
-          {{ post.excerpt }}
-        {% endif %}
+        {% if post.facebook_post %}{% include facebook_post.html facebook_post=post.facebook_post %}{% elsif post.content contains '<!--more-->' %}{{ post.content | split:'<!--more-->' | first }}{% else %}{{ post.excerpt }}{% endif %}
       </div>
       
     </article>
