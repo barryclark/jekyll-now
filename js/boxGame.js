@@ -19,7 +19,7 @@ function boxGame_box(x,y,width,height) {
 	this.y = y;
 	this.width = width;
 	this.height = height;
-	this.color = getRandomColor();
+	this.color = boxGame_getRandomColor();
 	
 	this.drawBox = function(ctx) {
 		ctx.fillStyle=this.color;
