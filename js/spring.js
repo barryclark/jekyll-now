@@ -1,11 +1,11 @@
-var canvas;
+var spring_canvas;
 
-function clearScreen(ctx) { 
+function spring_clearScreen(ctx) { 
 	ctx.setTransform(1, 0, 0, 1, 0, 0);
 	ctx.clearRect(0,0,canvas.width,canvas.height);
 }
 
-function getMousePos(canvas, evt) {
+function spring_getMousePos(canvas, evt) {
     var rect = canvas.getBoundingClientRect();
     return {
         x: evt.clientX - rect.left, 
@@ -13,7 +13,7 @@ function getMousePos(canvas, evt) {
     };
 }
 
-function getRandomColor() {
+function spring_getRandomColor() {
 	var r = Math.round(Math.random() * 255);
     var g = Math.round(Math.random() * 255);
     var b = Math.round(Math.random() * 255);
@@ -21,7 +21,7 @@ function getRandomColor() {
     return 'rgb(' + r +',' + g + ',' + b + ')';
 }
 
-function box(x,y,width,height,mass) {
+function spring_box(x,y,width,height,mass) {
 	this.x = x;
 	this.y = y;
 	this.width = width;
@@ -32,7 +32,7 @@ function box(x,y,width,height,mass) {
 	else
 		this.mass = mass;
 	
-	this.color = getRandomColor();
+	this.color = spring_getRandomColor();
 	
 	this.draw = function(ctx) {
 		ctx.fillStyle=this.color;
@@ -53,13 +53,13 @@ function box(x,y,width,height,mass) {
 	};
 
 	this.overLapsBox = function(box) {
-		if(box.isPointInBox(this.x, this.y))
+		if(spring_box.isPointInBox(this.x, this.y))
 			return true;
-		if(box.isPointInBox(this.x + this.width, this.y))
+		if(spring_box.isPointInBox(this.x + this.width, this.y))
 			return true;
-		if(box.isPointInBox(this.x, this.y + this.height))
+		if(spring_box.isPointInBox(this.x, this.y + this.height))
 			return true;
-		if(box.isPointInBox(this.x + this.width, this.y + this.height))
+		if(spring_box.isPointInBox(this.x + this.width, this.y + this.height))
 			return true;
 		
 		return false;
@@ -172,7 +172,7 @@ function spring(fixedX,fixedY,startX,startY,k) {
 	};
 }
 
-function drawEverything(everything, ctx) {
+function spring_drawEverything(everything, ctx) {
 	for(var i = 0; i < everything.length; i++) {
 		everything[i].draw(ctx);
 	}
@@ -183,8 +183,8 @@ $(document).ready(function() {
 	
 	var everything = new Array();
 	
-	canvas = $("#spring").get(0);
-	var ctx = canvas.getContext('2d');
+	spring_canvas = $("#spring").get(0);
+	var ctx = spring_canvas.getContext('2d');
 	
 	var mouseDown = false;
 	
@@ -193,16 +193,16 @@ $(document).ready(function() {
 	var boxWidth = 50;
 	var boxHeight = 50;
 	
-	var topBoxX = canvas.width / 2 - boxWidth / 2;
-	var topBoxY = canvas.height / 4;
+	var topBoxX = spring_canvas.width / 2 - boxWidth / 2;
+	var topBoxY = spring_canvas.height / 4;
 	
-	var topBox = new box(topBoxX,topBoxY,boxWidth,boxHeight);
+	var topBox = new spring_box(topBoxX,topBoxY,boxWidth,boxHeight);
 	everything.push(topBox);
 	
 	var bottomBoxX = topBoxX;
 	var bottomBoxY = topBoxY + boxHeight * 2;
 	
-	var hangingBox = new box(bottomBoxX, bottomBoxY, boxWidth, boxHeight, 50);
+	var hangingBox = new spring_box(bottomBoxX, bottomBoxY, boxWidth, boxHeight, 50);
 	everything.push(hangingBox);
 	
 	var springTopX = topBoxX + boxWidth / 2;
@@ -286,8 +286,8 @@ $(document).ready(function() {
 			$("#acc").html(acceleration.toString());
 			$("#velocity").html(velocity.toString());
 			
-			clearScreen(ctx);
-			drawEverything(everything, ctx);
+			spring_clearScreen(ctx);
+			spring_drawEverything(everything, ctx);
 		},	
 		
 		time);
