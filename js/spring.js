@@ -172,9 +172,9 @@ function spring(fixedX,fixedY,startX,startY,k) {
 	};
 }
 
-function drawEverything(array, ctx) {
-	for(var i = 0; i < array.length; i++) {
-		array[i].draw(ctx);
+function drawEverything(everything, ctx) {
+	for(var i = 0; i < everything.length; i++) {
+		everything[i].draw(ctx);
 	}
 }
 
