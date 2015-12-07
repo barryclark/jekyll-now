@@ -214,7 +214,7 @@ $(document).ready(function() {
 	var theSpring = new spring(springTopX,springTopY,springBottomX,springBottomY,0.5);
 	everything.push(theSpring);
 	
-	drawEverything(everything, ctx);
+	spring_drawEverything(everything, ctx);
 	
 	$("#spring").mousedown(function(e) {		
 		var mousePos = getMousePos(canvas, e); 
@@ -244,8 +244,8 @@ $(document).ready(function() {
 			$("#length").html(theSpring.length().toString());
 			$("#force").html(springForce.toString());
 			
-			clearScreen(ctx);
-			drawEverything(everything, ctx);
+			spring_clearScreen(ctx);
+			spring_drawEverything(everything, ctx);
 		}
 	});
 	
