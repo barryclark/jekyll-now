@@ -81,7 +81,7 @@ function clearArray(array) {
 }
 
 $(document).ready(function() {
-	var canvas = $("#canvas").get(0);
+	var canvas = $("#boxGame").get(0);
 	var ctx = canvas.getContext('2d');
 	var boxes = new Array();
 	
