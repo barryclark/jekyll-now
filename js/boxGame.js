@@ -70,7 +70,8 @@ function boxGame_drawAllBoxes(boxes, ctx) {
 	}
 }
 
-function boxGame_clearScreen(ctx) {
+function boxGame_clearScreen(ctx, canvas) {
+	var canvas = $("#boxGame").get(0);
 	ctx.setTransform(1, 0, 0, 1, 0, 0);
 	ctx.clearRect(0,0,canvas.width,canvas.height);
 }
