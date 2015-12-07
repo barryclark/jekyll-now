@@ -207,7 +207,7 @@ $(document).ready(function()
 	
 	var everything = new Array();
 	
-	var canvas = $("#canvas").get(0);
+	var canvas = $("#spring").get(0);
 	var ctx = canvas.getContext('2d');
 	
 	var mouseDown = false;
@@ -240,7 +240,7 @@ $(document).ready(function()
 	
 	drawEverything(everything, ctx);
 	
-	$("#canvas").mousedown(function(e)
+	$("#spring").mousedown(function(e)
 			{		
 				var mousePos = getMousePos(canvas, e); 
 				
@@ -254,7 +254,7 @@ $(document).ready(function()
 				}
 			});
 	
-	$("#canvas").mousemove(function(e)
+	$("#spring").mousemove(function(e)
 	{
 		if(mouseDown)
 		{
