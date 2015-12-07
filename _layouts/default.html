@@ -4,13 +4,13 @@
 {% assign javascripts = "" | split: ""  %}
 {% if post.javascript %}{% assign javascripts = javascripts | push: post.javascript %}{% endif %}
 {% for javascript in page.javascripts %}
-{% unless array contains javascript %}{% assign javascripts = javascripts | push: javascript %}{% endunless %}
+{% unless javascripts contains javascript %}{% assign javascripts = javascripts | push: javascript %}{% endunless %}
 {% endfor %}
 {% unless page.isPost %}
 {% for post in posts %}
-{% unless array contains post.javascript %}{% assign javascripts = javascripts | push: post.javascript %}{% endunless %}
+{% unless javascripts contains post.javascript %}{% assign javascripts = javascripts | push: post.javascript %}{% endunless %}
 {% for javascript in post.javascripts %}
-{% unless array contains javascript %}{% assign javascripts = javascripts | push: javascript %}{% endunless %}
+{% unless javascripts contains javascript %}{% assign javascripts = javascripts | push: javascript %}{% endunless %}
 {% endfor %}
 {% endfor %}{% endunless %}
 <!DOCTYPE html>
