@@ -13,7 +13,7 @@ Check out the source [here](https://github.com/hendrixjoseph/hendrixjoseph.githu
 
 <canvas id="spring" width=500 height=500>Sorry, your browser does not support the canvas!</canvas>
 
-<table>
+<table id="springTable">
 <tr><td>length:</td><td id="length"></td></tr>
 <tr><td>force:</td><td id="force"></td></tr>
 <tr><td>acc:</td><td id="acc"></td></tr>
