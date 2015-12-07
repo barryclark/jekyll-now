@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 {% if page.permalink contains '/tags/' %}{% assign posts=site.tags[page.title] %}{% else %}{% assign posts=paginator.posts %}{% endif %}
 {% if page.mathjax %}{% assign mathjax = true %}{% endif %}{% if page.jquery %}{% assign jquery = true %}{% endif %}
 {% unless page.isPost %}{% for post in posts %}{% if post.mathjax %}{% assign mathjax = true %}{% endif %}{% if post.jquery %}{% assign jquery = true %}{% endif %}{% endfor %}{% endunless %}
@@ -13,7 +14,18 @@
 {% unless javascripts contains javascript %}{% assign javascripts = javascripts | push: javascript %}{% endunless %}
 {% endfor %}
 {% endfor %}{% endunless %}
-<!DOCTYPE html>
+{% assign csses = "" | split: ""  %}
+{% if post.css %}{% assign csses = csses | push: post.css %}{% endif %}
+{% for css in page.csses %}
+{% unless csses contains css %}{% assign csses = csses | push: css %}{% endunless %}
+{% endfor %}
+{% unless page.isPost %}
+{% for post in posts %}
+{% unless csses contains post.css %}{% assign csses = csses | push: post.css %}{% endunless %}
+{% for css in post.csses %}
+{% unless csses contains css %}{% assign csses = csses | push: css %}{% endunless %}
+{% endfor %}
+{% endfor %}{% endunless %}
 <html lang="en-us">
 	<head>
 		<title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
@@ -26,18 +38,13 @@
 	  	</script>
 	  	<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>{% endif %}
 		{% if jquery %}<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>{% endif %}
-		{% for javascript in javascripts %}<script src="{{ javascript }}"></script>{% endfor %}
+		{% for javascript in javascripts %}{% unless javascript == "" %}<script src="{{ javascript }}"></script>{% endunless %}{% endfor %}
 		
 		<!--[if lt IE 9]>
 		  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 		
-		{% unless page.isPost %}{% for post in posts %}
-		{% if post.css %}<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}{{ post.css }}" />{% endif %}
-		{% for css in post.csses %}<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}{{ css }}" />{% endfor %}
-		{% endfor %}{% endunless %}
-		{% if page.css %}<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}{{ page.css }}" />{% endif %}
-		{% for css in page.csses %}<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}{{ css }}" />{% endfor %}
+		{% for css in csses %}<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}{{ css }}" />{% endfor %}
 		<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
 		<link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 		<link href="/favicon.ico?" rel="shortcut icon" type="image/x-icon" />
