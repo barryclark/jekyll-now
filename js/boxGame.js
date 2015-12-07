@@ -90,7 +90,7 @@ $(document).ready(function() {
 	
 	var time = 1000;
 		
-	$("#canvas").click(function(e) {
+	$("#boxGame").click(function(e) {
 		var mousePos = getMousePos(canvas,e);
 	    
 	    for(var i = boxes.length - 1; i >= 0; i--) {
