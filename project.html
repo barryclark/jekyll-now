@@ -6,15 +6,13 @@ layout: project
  <div class="posts">
 
   {% for album in site.projects %}
-    <article class="post">    
-        <a href="{{ album.link }}">
+    <article class="post"> 
+       {% if album.image.feature %}
+        <a href="{{ album.link }}" style="background:url({{ album.image.feature}});background-size:cover;">
+        {% else %}
+        <a href="{{ album.link }}" style="background:url(http://i.giphy.com/FRmOsocKhM1xK.gif);background-size:cover;">
+        {% endif %}   
             <span class="cover"></span>
-            {% if album.image.feature %}
-            <img src="{{ album.image.feature }}" alt="{{ album.title }}" class="feat">
-            {% else %}
-            <img src="http://i.giphy.com/FRmOsocKhM1xK.gif"/>
-
-            {% endif %}
             <div class="data-post">
             <h1 class="title">{{ album.title }}</h1>
             <h4 class="desc">{{ album.titledesc }}</h4>
