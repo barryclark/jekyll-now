@@ -1,6 +1,6 @@
 // var spring_canvas;
 
-function spring_clearScreen(ctx) { 
+function spring_clearScreen(ctx, canvas) { 
 	ctx.setTransform(1, 0, 0, 1, 0, 0);
 	ctx.clearRect(0,0,spring_canvas.width,spring_canvas.height);
 }
@@ -244,7 +244,7 @@ $(document).ready(function() {
 			$("#length").html(theSpring.length().toString());
 			$("#force").html(springForce.toString());
 			
-			spring_clearScreen(ctx);
+			spring_clearScreen(ctx, spring_canvas);
 			spring_drawEverything(everything, ctx);
 		}
 	});
@@ -286,7 +286,7 @@ $(document).ready(function() {
 			$("#acc").html(acceleration.toString());
 			$("#velocity").html(velocity.toString());
 			
-			spring_clearScreen(ctx);
+			spring_clearScreen(ctx, spring_canvas);
 			spring_drawEverything(everything, ctx);
 		},	
 		
