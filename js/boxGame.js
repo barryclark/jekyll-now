@@ -40,13 +40,13 @@ function boxGame_box(x,y,width,height) {
 	};
 					
 	this.overLapsBox = function(box) {
-		if(box.isPointInBox(this.x, this.y))
+		if(boxGame_box.isPointInBox(this.x, this.y))
 			return true;
-		if(box.isPointInBox(this.x + this.width, this.y))
+		if(boxGame_box.isPointInBox(this.x + this.width, this.y))
 			return true;
-		if(box.isPointInBox(this.x, this.y + this.height))
+		if(boxGame_box.isPointInBox(this.x, this.y + this.height))
 			return true;
-		if(box.isPointInBox(this.x + this.width, this.y + this.height))
+		if(boxGame_box.isPointInBox(this.x + this.width, this.y + this.height))
 			return true;
 		
 		return false;
@@ -96,7 +96,7 @@ $(document).ready(function() {
 	    for(var i = boxes.length - 1; i >= 0; i--) {
 	    	if(boxes[i].isPointInBox(mousePos.x,mousePos.y)) {
 	    		boxes.splice(i, 1);
-	    		drawAllBoxes(boxes, ctx);
+	    		boxGame_drawAllBoxes(boxes, ctx);
 	    		score = score + 5;
 	    		
 	    		if(score > peak)
@@ -113,7 +113,7 @@ $(document).ready(function() {
     		}	    		
     	}
 	    
-	    var newBox = new box(mousePos.x - 25,mousePos.y - 25,50,50);
+	    var newBox = new boxGame_box(mousePos.x - 25,mousePos.y - 25,50,50);
 	    newBox.drawBox(ctx);
 	    
 	    if(newBox.overLapsBoxes(boxes))
@@ -125,8 +125,8 @@ $(document).ready(function() {
 	});
 	
 	$("#clearButton").click(function() {
-		clearScreen(ctx);
-		clearArray(boxes);
+		boxGame_clearScreen(ctx);
+		boxGame_clearArray(boxes);
 		score = 0;
 		$("#score").html(score.toString());
 		time = 1000;
@@ -136,7 +136,7 @@ $(document).ready(function() {
 		var x = Math.round(Math.random() * canvas.width);
 		var y = Math.round(Math.random() * canvas.height);
 		
-		var newBox = new box(x,y,50,50);
+		var newBox = new boxGame_box(x,y,50,50);
 		newBox.drawBox(ctx);
 		
 		if(newBox.overLapsBoxes(boxes))
