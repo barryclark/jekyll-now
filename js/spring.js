@@ -35,45 +35,44 @@ function box(x,y,width,height,mass) {
 	this.color = getRandomColor();
 	
 	this.draw = function(ctx) {
-						ctx.fillStyle=this.color;
-						ctx.fillRect(this.x,this.y,this.width,this.height);
-					};
-					
+		ctx.fillStyle=this.color;
+		ctx.fillRect(this.x,this.y,this.width,this.height);
+	};
+
 	this.isPointInBox = function(x,y) {
-						if(x < this.x)
-							return false;
-						if(y < this.y)
-							return false;
-						if(x > this.x + this.width)
-							return false;
-						if(y > this.y + this.height)
-							return false;
-						
-						return true;
-					};
+		if(x < this.x)
+			return false;
+		if(y < this.y)
+			return false;
+		if(x > this.x + this.width)
+			return false;
+		if(y > this.y + this.height)
+			return false;
+		
+		return true;
+	};
 
 	this.overLapsBox = function(box) {
-						if(box.isPointInBox(this.x, this.y))
-							return true;
-						if(box.isPointInBox(this.x + this.width, this.y))
-							return true;
-						if(box.isPointInBox(this.x, this.y + this.height))
-							return true;
-						if(box.isPointInBox(this.x + this.width, this.y + this.height))
-							return true;
-						
-						return false;
-					};
-					
-	this.overLapsBoxes = function(boxes) {
+		if(box.isPointInBox(this.x, this.y))
+			return true;
+		if(box.isPointInBox(this.x + this.width, this.y))
+			return true;
+		if(box.isPointInBox(this.x, this.y + this.height))
+			return true;
+		if(box.isPointInBox(this.x + this.width, this.y + this.height))
+			return true;
+		
+		return false;
+	};
 
-						for(var i = 0; i < boxes.length; i++) {
-							if(boxes[i].overLapsBox(this))
-								return true;
-						}
-						
-						return false;
-					};
+	this.overLapsBoxes = function(boxes) {
+		for(var i = 0; i < boxes.length; i++) {
+			if(boxes[i].overLapsBox(this))
+				return true;
+		}
+		
+		return false;
+	};
 }
 
 function spring(fixedX,fixedY,startX,startY,k) {
