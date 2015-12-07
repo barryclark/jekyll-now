@@ -164,11 +164,11 @@ ul.rs{
 }
 #main article.post a:hover .title {
     color:#e9194c;
-    margin-top:20%;
+    margin-top:65px;
     font-size:4.2rem;
     transition: all ease-in  0.2s;
     @include mobile-small{
-        margin-top: 0;
+        margin-top: 70px;
     }
 }
 #main article.post a:hover .desc {
@@ -203,8 +203,11 @@ ul.rs{
 article.post .data-post{
     position: absolute;
     top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 100%;
-    height: 100%;
     @include mobile-small{
         display: flex;
         justify-content: center;
@@ -218,7 +221,7 @@ h1.title{
     position: relative;
     font-size: 4rem;
     text-align: center;
-    margin-top: 25%;
+    margin-top: 70px;
     margin-bottom: 0px;
     width: 100%;
     float: left;
