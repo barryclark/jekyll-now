@@ -40,13 +40,13 @@ function boxGame_box(x,y,width,height) {
 	};
 					
 	this.overLapsBox = function(box) {
-		if(boxGame_box.isPointInBox(this.x, this.y))
+		if(box.isPointInBox(this.x, this.y))
 			return true;
-		if(boxGame_box.isPointInBox(this.x + this.width, this.y))
+		if(box.isPointInBox(this.x + this.width, this.y))
 			return true;
-		if(boxGame_box.isPointInBox(this.x, this.y + this.height))
+		if(box.isPointInBox(this.x, this.y + this.height))
 			return true;
-		if(boxGame_box.isPointInBox(this.x + this.width, this.y + this.height))
+		if(box.isPointInBox(this.x + this.width, this.y + this.height))
 			return true;
 		
 		return false;
@@ -91,7 +91,7 @@ $(document).ready(function() {
 	var time = 1000;
 		
 	$("#boxGame").click(function(e) {
-		var mousePos = getMousePos(canvas,e);
+		var mousePos = boxGame_getMousePos(canvas,e);
 	    
 	    for(var i = boxes.length - 1; i >= 0; i--) {
 	    	if(boxes[i].isPointInBox(mousePos.x,mousePos.y)) {
