@@ -26,13 +26,7 @@
 	  	</script>
 	  	<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>{% endif %}
 		{% if jquery %}<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>{% endif %}
-		{% if page.javascript %}<script src="{{ page.javascript }}"></script>{% endif %}
-		{% for javascript in page.javascripts %}<script src="{{ javascript }}"></script>{% endfor %}
-		
-		{% unless page.isPost %}{% for post in posts %}
-		{% if post.javascript %}<script src="{{ post.javascript }}"></script>{% endif %}
-		{% for javascript in post.javascripts %}<script src="{{ javascript }}"></script>{% endfor %}
-		{% endfor %}{% endunless %}
+		{% for javascript in javascripts %}<script src="{{ javascript }}"></script>{% endfor %}
 		
 		<!--[if lt IE 9]>
 		  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
