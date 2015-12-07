@@ -63,7 +63,7 @@ function boxGame_box(x,y,width,height) {
 }
 
 function boxGame_drawAllBoxes(boxes, ctx) {
-	clearScreen(ctx);
+	boxGame_clearScreen(ctx);
 	
 	for(var i = 0; i < boxes.length; i++) {
 		boxes[i].drawBox(ctx);
