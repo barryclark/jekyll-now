@@ -1,6 +1,18 @@
 {% if page.permalink contains '/tags/' %}{% assign posts=site.tags[page.title] %}{% else %}{% assign posts=paginator.posts %}{% endif %}
 {% if page.mathjax %}{% assign mathjax = true %}{% endif %}{% if page.jquery %}{% assign jquery = true %}{% endif %}
 {% unless page.isPost %}{% for post in posts %}{% if post.mathjax %}{% assign mathjax = true %}{% endif %}{% if post.jquery %}{% assign jquery = true %}{% endif %}{% endfor %}{% endunless %}
+{% assign javascripts = "" | split: ""  %}
+{% if post.javascript %}{% assign javascripts = javascripts | push: post.javascript %}{% endif %}
+{% for javascript in page.javascripts %}
+{% unless array contains javascript %}{% assign javascripts = javascripts | push: javascript %}{% endunless %}
+{% endfor %}
+{% unless page.isPost %}
+{% for post in posts %}
+{% unless array contains post.javascript %}{% assign javascripts = javascripts | push: post.javascript %}{% endunless %}
+{% for javascript in post.javascripts %}
+{% unless array contains javascript %}{% assign javascripts = javascripts | push: javascript %}{% endunless %}
+{% endfor %}
+{% endfor %}{% endunless %}
 <!DOCTYPE html>
 <html lang="en-us">
 	<head>
