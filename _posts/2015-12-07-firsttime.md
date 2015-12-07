@@ -55,7 +55,7 @@ Lol banter
   </tr>
   <tr>
     <td>l</td>
-    <td></td>
+    <td>o</td>
     <td></td>
     <td></td>
     <td></td>
