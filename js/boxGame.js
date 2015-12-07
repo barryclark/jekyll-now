@@ -1,4 +1,4 @@
-function getMousePos(canvas, evt) {
+function boxGame_getMousePos(canvas, evt) {
 	var rect = canvas.getBoundingClientRect();
     return {
         x: evt.clientX - rect.left, 
@@ -6,7 +6,7 @@ function getMousePos(canvas, evt) {
     };
 }
 
-function getRandomColor() {
+function boxGame_getRandomColor() {
 	var r = Math.round(Math.random() * 255);
     var g = Math.round(Math.random() * 255);
     var b = Math.round(Math.random() * 255);
@@ -14,7 +14,7 @@ function getRandomColor() {
     return 'rgb(' + r +',' + g + ',' + b + ')';
 }
 
-function box(x,y,width,height) {
+function boxGame_box(x,y,width,height) {
 	this.x = x;
 	this.y = y;
 	this.width = width;
@@ -62,7 +62,7 @@ function box(x,y,width,height) {
 	};
 }
 
-function drawAllBoxes(boxes, ctx) {
+function boxGame_drawAllBoxes(boxes, ctx) {
 	clearScreen(ctx);
 	
 	for(var i = 0; i < boxes.length; i++) {
@@ -70,12 +70,12 @@ function drawAllBoxes(boxes, ctx) {
 	}
 }
 
-function clearScreen(ctx) {
+function boxGame_clearScreen(ctx) {
 	ctx.setTransform(1, 0, 0, 1, 0, 0);
 	ctx.clearRect(0,0,canvas.width,canvas.height);
 }
 
-function clearArray(array) {
+function boxGame_clearArray(array) {
 	while(array.length)
 		array.pop();
 }
