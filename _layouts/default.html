@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html>{% if page.permalink contains '/tags/' %}{% assign posts=site.tags[page.title] %}{% else %}{% assign posts=paginator.posts %}{% endif %}
 <html lang="en-us">
 	<head>
 		<title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
@@ -14,7 +14,7 @@
 		{% if page.javascript %}<script src="{{ page.javascript }}"></script>{% endif %}
 		{% for javascript in page.javascripts %}<script src="{{ javascript }}"></script>{% endfor %}
 		
-		{% unless page.isPost %}{% for post in paginator.posts %}
+		{% unless page.isPost %}{% for post in posts %}
 		{% if post.mathjax %}<script type="text/x-mathjax-config">
 	    	MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
 	  	</script>
@@ -28,7 +28,7 @@
 		  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 		
-		{% unless page.isPost %}{% for post in paginator.posts %}
+		{% unless page.isPost %}{% for post in posts %}
 		{% if post.css %}<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}{{ post.css }}" />{% endif %}
 		{% for css in post.csses %}<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}{{ css }}" />{% endfor %}
 		{% endfor %}{% endunless %}
@@ -42,7 +42,6 @@
     	{% include schema.html %}  
 	    {% include facebook.html %}	    
 	    <div class="wrapper-masthead">
-	    {% if page.permalink contains '/tags/' %}true{% endif %}
 	  		<div class="container">
 	        	<header class="masthead clearfix">
 	          		<a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" alt="Joe's Facebook Profile Picture" /></a>
