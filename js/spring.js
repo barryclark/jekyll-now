@@ -1,8 +1,8 @@
-var spring_canvas;
+// var spring_canvas;
 
 function spring_clearScreen(ctx) { 
 	ctx.setTransform(1, 0, 0, 1, 0, 0);
-	ctx.clearRect(0,0,canvas.width,canvas.height);
+	ctx.clearRect(0,0,spring_canvas.width,spring_canvas.height);
 }
 
 function spring_getMousePos(canvas, evt) {
@@ -183,7 +183,7 @@ $(document).ready(function() {
 	
 	var everything = new Array();
 	
-	spring_canvas = $("#spring").get(0);
+	var spring_canvas = $("#spring").get(0);
 	var ctx = spring_canvas.getContext('2d');
 	
 	var mouseDown = false;
@@ -217,7 +217,7 @@ $(document).ready(function() {
 	spring_drawEverything(everything, ctx);
 	
 	$("#spring").mousedown(function(e) {		
-		var mousePos = getMousePos(canvas, e); 
+		var mousePos = spring_getMousePos(spring_canvas, e); 
 	
 		if(hangingBox.isPointInBox(mousePos.x, mousePos.y))	{
 			window.clearInterval(timer);
@@ -228,7 +228,7 @@ $(document).ready(function() {
 	
 	$("#spring").mousemove(function(e) {
 		if(mouseDown) {
-			var mousePos = getMousePos(canvas, e);
+			var mousePos = spring_getMousePos(spring_canvas, e);
 			var dx = mousePos.x - prevMousePos.x;
 			var dy = mousePos.y - prevMousePos.y;
 			prevMousePos = mousePos;
