@@ -1,8 +1,8 @@
 ---
 layout: post
-title: DevOpsCon Munich: Is it really about the tools?
-subtite: 
-description: 
+title: DevOpsCon Munich - Is it really about the tools?
+subtite: A opinionated commentary by Elias Weingaertner
+description:  My personal findings from DevOpsCon 2015 in Munich
 category: general
 author: Elias Weingaertner
 author_email: elias.weingaertner@haufe-lexware.com
