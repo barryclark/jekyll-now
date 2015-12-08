@@ -47,6 +47,6 @@ As already mentioned by Rainer in his blog post, I was really impressed how the 
 
 I took a lot from the conference - and I have constantly asked myself the question afterwards if we're ready yet for DevOps and MicroServices as a organization. Are we? Probably not yet, although we're certainly on the right track. And we're in good company: From many talks at the coffee table I got the feeling that many companies in the German IT industry are in the same phase of transition as we are. How do we get more agile? How do we do microservices? Should we have a central release engineering team? Or leave that to DevOps? I am excited which answers we will find at Haufe. We'll keep you updated. Promised.
 
-[1] Per Brinch Hansen. 1970. The nucleus of a multiprogramming system. Commun. ACM 13, 4 (April 1970), 238-241. DOI=http://dx.doi.org/10.1145/362258.362278 
+[1] Per Brinch Hansen. 1970. The nucleus of a multiprogramming system. Commun. ACM 13, 4 (April 1970), 238-241. DOI=[http://dx.doi.org/10.1145/362258.362278](http://dx.doi.org/10.1145/362258.362278)
 
-[2] http://www.opengroup.org/austin/papers/posix_faq.html
+[2] [http://www.opengroup.org/austin/papers/posix_faq.html]([http://www.opengroup.org/austin/papers/posix_faq.html)
