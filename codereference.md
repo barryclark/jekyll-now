@@ -95,6 +95,12 @@ gsub counts the number of substitutions made, as a proxy for number of matches. 
 
 ### <font color="red">vim</font>
 
+##### Indent block of text 4 spaces
+
+Esc Vj:le 4
+
+In Visual mode, each additional j selects another line
+
 ##### Delete a block of text
 in normal mode, type ma at beginning of block and d'a at end of block. 
 "mark a" then "delete to a"
