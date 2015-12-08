@@ -1,10 +1,10 @@
 ---
 layout: post
 title: DevOpsCon Munich: Is it really about the tools?
-subtitle: A opinionated comment by Elias Weingärtner
+subtite: 
 description: 
 category: general
-author: Elias Weingärtner
+author: Elias Weingaertner
 author_email: elias.weingaertner@haufe-lexware.com
 ---
 
