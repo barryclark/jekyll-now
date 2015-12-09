@@ -2,7 +2,7 @@
 layout: post
 title: Enumerable Methods in Ruby
 excerpt_separator: <!--more-->
-img_file: css.png
+img_file: numerable01.png
 ---
 Arrays, Hashes, Ranges in Ruby are called collection classes. If a class is a collection then you would expect them to do various things such as: `traverse`, `sort` etc.
 <!--more-->
