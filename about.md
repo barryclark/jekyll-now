@@ -11,14 +11,6 @@ Currently I am a CS student at the [Faculty of Mathematics and Physics](http://m
 Here is my [semi-updated CV](/about/cv.pdf).
 For an up-to-date version, see my [LinkedIn profile](https://www.linkedin.com/in/oskopek).
 
-### CarCV
-
-Read the paper (in Slovak) about
-["Recognition of cars and calculation of speed using computer vision and the OpenCV library"](/docs/carcv.pdf)
-("Rozpoznávanie áut a výpočet rýchlosti jazdy pomocou počítačového videnia a knižnice OpenCV")
-which won 4th place at the national round of the High School Scientific Activity contest in Nové Zámky
-in category 11 - Computer Science (Stredoškolská odborná činnosť).
-
 ### Contact me
 
 Personal address: [oskopek@oskopek.com](mailto:oskopek@oskopek.com)
