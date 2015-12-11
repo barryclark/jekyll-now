@@ -9,53 +9,30 @@ title: 面试必读
 
 目录
 
-[JS语法](#js-language)
-
-[ES5](#es5)
-
-[ES6](#es6)
-
-[CSS布局](#css-layout)
-
-[CSS动画](#css-animation)
-
-[CSS3特性](#css3)
-
-[H5特性](#h5)
-
-[浏览器兼容性](#compatibility)
-
-[移动Web](#mobile)
-
-[设计模式](#design-mode)
-
-[jQuery知识](#jquery)
-
-[jQuery插件](#jquery-plugin)
-
-[MVC](#mvc)
-
-[Node.js知识](#nodejs)
-
-[页面性能优化](#performance)
-
-[构建工具](#build)
-
-[HTTP知识](#http)
-
-[版本管理工具](#version)
-
-[调试工具](#debug)
-
-[标准规范](#standard)
-
-[前端单元测试](#unit-test)
-
-[SEO](#seo)
-
-[代码架构](#framework)
-
-[安全](#security)
+1. [JS语法](#js-language)
+1. [ES5](#es5)
+1. [ES6](#es6)
+1. [CSS布局](#css-layout)
+1. [CSS动画](#css-animation)
+1. [CSS3特性](#css3)
+1. [H5特性](#h5)
+1. [浏览器兼容性](#compatibility)
+1. [移动Web](#mobile)
+1. [设计模式](#design-mode)
+1. [jQuery知识](#jquery)
+1. [jQuery插件](#jquery-plugin)
+1. [MVC](#mvc)
+1. [Node.js知识](#nodejs)
+1. [页面性能优化](#performance)
+1. [构建工具](#build)
+1. [HTTP知识](#http)
+1. [版本管理工具](#version)
+1. [调试工具](#debug)
+1. [标准规范](#standard)
+1. [前端单元测试](#unit-test)
+1. [SEO](#seo)
+1. [代码架构](#framework)
+1. [安全](#security)
 
 
 <h3 id="js-language">JS语法</h3>
