@@ -11,7 +11,7 @@ author_email: martin.danielsson@haufe-lexware.com
 Having just recently come home again from the [APIdays](http://www.apidays.io) conference in Paris (Dec 8-9th 2015), memories are still quite fresh. It was a crowded event, the first day hosting a whopping 800 API enthusiasts, ranging from the geekiest of the geeks to a fair amount of suited business people, showing that talking about APIs is no longer something just the most avantgardist of companies, the most high tech of the tech companies, spend their time with. *Au contraire* (we were in Paris after all), APIs are mainstream, and they contribute to the advancing of collaboration and automatization of the (digital) world as such.
 
 <center>
-![Eiffel Tower - Paris](images/2015-12-11-paris-eiffeltower.jpg)
+![Eiffel Tower - Paris]({{ site.url }}/images/2015-12-11-paris-eiffeltower.jpg)
 <small>(Image by Martin Danielsson, [CC BY 4.0 License](https://creativecommons.org/licenses/by/4.0/))</small>
 </center>
 
@@ -52,7 +52,7 @@ Many of the more technical talks dealt with the usual suspects [Microservices an
 The return to more serious topics, *Hypermedia* was an astonishingly big topic at the conference. Not that it's not a seriously good idea, but now adoption seems to find its way into real world scenarios, with practical and working specifications popping up, which are being adopted at an increasing rate. As Hypermedia leaves the state of a research topic (see below picture on [HATEOAS](https://en.wikipedia.org/wiki/HATEOAS) - Bless you!) and is actually being used.
 
 <center>
-![HATEOAS - Bless you!](images/2015-12-11-hateoas.jpg)
+![HATEOAS - Bless you!]({{ site.url }}/images/2015-12-11-hateoas.jpg)
 <small>(Courtesy of [CommitStrip](http://www.commitstrip.com/en/2015/12/03/apiception/))</small>
 </center>
 
@@ -97,6 +97,6 @@ The results (and possibly also further proceedings with this) can be viewed on [
 I had a good time at the APIdays; the sessions had overall good quality, and the audience was fantastic. I had a lot of opportunities to meet people I knew, and even more important, people I did not yet know. I would definitely recommend going there again.
 
 <center>
-![APIdays](images/2015-12-11-apidays-logo.png)
+![APIdays]({{ site.url }}/images/2015-12-11-apidays-logo.png)
 <small>[APIdays](http://www.apidays.io)</small>
 </center>
