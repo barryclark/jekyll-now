@@ -55,6 +55,29 @@ title: 面试必读
 
 <h2 id="design-mode">设计模式</h2>
 
+### 创建型模式
+
+* 单例模式
+* 工厂方法
+* 抽象工厂
+* 建造模型
+
+### 结构型模式
+
+* 适配器模式
+* 桥接模式
+* 装饰模式
+* 组合模式
+* 外观模式
+* 享元模式
+* 代理模式
+
+### 行为型模式
+
+* 观察者模式
+* 中介者模式
+* 迭代器模式
+
 <h2 id="jquery">jQuery知识</h2>
 
 <h2 id="jquery-plugin">jQuery插件</h2>
@@ -112,7 +135,9 @@ title: 面试必读
 * Referer： 先前网页的地址，当前请求网页紧随其后,即来路
 * User-Agent： User-Agent的内容包含发出请求的用户信息
 
-*HTTP响应头属性*
+[更多参考](http://tools.jb51.net/table/http_header)
+
+*常用的HTTP响应头属性*
 
 * Age： 从原始服务器到代理缓存形成的估算时间（以秒计，非负）
 * Allow： 对某网络资源的有效的请求行为，不允许则返回405
@@ -130,6 +155,21 @@ title: 面试必读
 * Refresh： 应用于重定向或一个新的资源被创造，在5秒之后重定向（由网景提出，被大部分浏览器支持）
 * Server： Web服务器软件名称
 * Set-Cookie： 设置Http Cookie
+
+[更多参考](http://tools.jb51.net/table/http_header)
+
+*常用的HTTP请求方法*
+
+* GET：请求指定URI上的资源，服务器会返回实体
+* POST：请求指定URI，并发送实体
+* PUT：用客户端发送的数据取代服务器上指定位置的内容
+* DELETE：删除服务器上指定位置的内容
+* HEAD：类似GET，但不需返回实体，用于获取报头
+* OPTIONS：允许客户端查看服务器性能
+* CONNECT：HTTP/1.1协议中预留给能够将连接改为管道方式的代理服务器。
+
+
+[更多参考](http://tools.jb51.net/table/http_request_method)
 
 <h2 id="version">版本管理工具</h2>
 
