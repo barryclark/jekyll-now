@@ -96,37 +96,42 @@ title: 面试必读
 
 *HTTP请求头属性*
 
-| ------------- |:-------------:|
-| Accept | 指定客户端能够接收的内容类型 |
-| Accept-Charset | 浏览器可以接受的字符编码集。 |
-| Accept-Encoding | 指定浏览器可以支持的web服务器返回内容压缩编码类型。 |
-| Accept-Language | 浏览器可接受的语言 |
-| Accept-Ranges | 可以请求网页实体的一个或者多个子范围字段 |
-| Authorization | HTTP授权的授权证书 |
-| Cache-Control | 指定请求和响应遵循的缓存机制 |
-| Connection | 表示是否需要持久连接。（HTTP 1.1默认进行持久连接） |
-| Cookie | HTTP请求发送时，会把保存在该请求域名下的所有cookie值一起发送给web服务器。 |
-| Content-Length | 请求的内容长度 |
-| Content-Type | 请求的与实体对应的MIME信息 |
-| Date | 请求发送的日期和时间 |
-| Expect | 请求的特定的服务器行为 |
-| From | 发出请求的用户的Email |
-| Host | 指定请求的服务器的域名和端口号 |
-| If-Match | 只有请求内容与实体相匹配才有效 |
-| If-Modified-Since | 如果请求的部分在指定时间之后被修改则请求成功，未被修改则返回304代码 |
-| If-None-Match | 与服务器回应的Etag比较判断是否改变 |
-| If-Range | 如果实体未改变，服务器发送客户端丢失的部分，否则发送整个实体。参数也为Etag |
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
+* Accept： 指定客户端能够接收的内容类型
+* Accept-Charset： 浏览器可以接受的字符编码集。
+* Accept-Encoding： 指定浏览器可以支持的web服务器返回内容压缩编码类型。
+* Accept-Language： 浏览器可接受的语言
+* Accept-Ranges： 可以请求网页实体的一个或者多个子范围字段
+* Authorization： HTTP授权的授权证书
+* Cache-Control： 指定请求和响应遵循的缓存机制
+* Connection： 表示是否需要持久连接。（HTTP 1.1默认进行持久连接）
+* Cookie： HTTP请求发送时，会把保存在该请求域名下的所有cookie值一起发送给web服务器。
+* Content-Length： 请求的内容长度
+* Content-Type： 请求的与实体对应的MIME信息
+* Date： 请求发送的日期和时间
+* Expect： 请求的特定的服务器行为
+* From： 发出请求的用户的Email
+* Host： 指定请求的服务器的域名和端口号
+* If-Match： 只有请求内容与实体相匹配才有效
+* If-Modified-Since： 如果请求的部分在指定时间之后被修改则请求成功，未被修改则返回304代码
+* If-None-Match： 如果内容未改变返回304代码，参数为服务器先前发送的Etag，与服务器回应的Etag比较判断是否改变
+* If-Range： 如果实体未改变，服务器发送客户端丢失的部分，否则发送整个实体。参数也为Etag
 If-Unmodified-Since 只在实体在指定时间之后未被修改才请求成功
-| Max-Forwards | 限制信息通过代理和网关传送的时间 |
-| Pragma | 用来包含实现特定的指令 |
-| Proxy-Authorization | 连接到代理的授权证书 |
-| Range | 只请求实体的一部分，指定范围 |
-| Referer | 先前网页的地址，当前请求网页紧随其后,即来路 |
-| TE | 客户端愿意接受的传输编码，并通知服务器接受接受尾加头信息 |
-| Upgrade | 向服务器指定某种传输协议以便服务器进行转换（如果支持） |
-| User-Agent | User-Agent的内容包含发出请求的用户信息 |
-| Via | 通知中间网关或代理服务器地址，通信协议 |
-| Warning | 关于消息实体的警告信息 |
+* Max-Forwards： 限制信息通过代理和网关传送的时间
+* Pragma： 用来包含实现特定的指令
+* Proxy-Authorization： 连接到代理的授权证书
+* Range： 只请求实体的一部分，指定范围
+* Referer： 先前网页的地址，当前请求网页紧随其后,即来路
+* TE： 客户端愿意接受的传输编码，并通知服务器接受接受尾加头信息
+* Upgrade： 向服务器指定某种传输协议以便服务器进行转换（如果支持）
+* User-Agent： User-Agent的内容包含发出请求的用户信息
+* Via： 通知中间网关或代理服务器地址，通信协议
+* Warning： 关于消息实体的警告信息
 
 *HTTP响应头属性*
 
