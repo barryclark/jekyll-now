@@ -175,7 +175,7 @@ CSS3可以在2D或者3D的控件里操作盒容器的位置和形状，比如旋
 
 ###废弃的标签：
 
-```
+```html
 <acronym>
 <applet>
 <basefont>
@@ -195,7 +195,7 @@ CSS3可以在2D或者3D的控件里操作盒容器的位置和形状，比如旋
 
 ###更加语义化的新增标签：
 
-```
+```html
 <article>
 <section>
 <aside>
@@ -212,6 +212,96 @@ CSS3可以在2D或者3D的控件里操作盒容器的位置和形状，比如旋
 <h2 id="compatibility">浏览器兼容性</h2>
 
 <h2 id="mobile">移动Web</h2>
+
+* 知识点
+
+```
+* 布局视口
+* 视觉视口
+* 理想视口
+* 缩放
+* 物理分辨率
+* 设备像素比
+* meta视口
+* 媒体查询
+* orientationchange事件
+* resize事件
+* vm和vh
+* 过渡和动画
+* 触摸事件
+* 指针事件
+* 等价事件
+```
+
+
+* 布局视口
+
+移动设备中页面的宽高
+
+* 视觉视口
+
+移动设备屏幕的宽高
+
+* 理想视口
+
+当布局视口等于视觉视口时，即当`<head>`中加入以下代码时：
+
+```html
+<meat name="device" content="width=device-width">
+```
+
+就是理想视口。
+
+* 缩放
+
+禁止缩放
+
+```html
+<meta name="viewport" content="user-scalable=no">
+```
+
+
+* 物理分辨率
+
+
+
+* 设备像素比
+
+
+
+* meta视口
+
+
+
+* 媒体查询
+
+
+
+* orientationchange事件
+
+
+
+* resize事件
+
+
+
+* vm和vh
+
+
+
+* 过渡和动画
+
+
+
+* 触摸事件
+
+
+
+* 指针事件
+
+
+
+* 等价事件
 
 <h2 id="design-mode">设计模式</h2>
 
