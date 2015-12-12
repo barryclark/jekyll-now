@@ -221,24 +221,28 @@ Last-Modified: Sat, 01 Mar 2014 08:00:00 GMT
 *Cache-Control*
 
 请求头
+
 ```
 Cache-Control: no-cache
 ```
 表示：“不要返回缓存”
 
 响应头
+
 ```
 Cache-Control: no-cache
 ```
 表示：“不允许缓存这个资源”。
 
 响应头
+
 ```
 Cache-Control: max-age
 ```
 
 
 *Pragma*
+
 ```
 Pragma: no-cache
 ```
@@ -247,6 +251,7 @@ Pragma: no-cache
 *http-equiv*
 
 示例
+
 ```
 <meta http-equiv="Cache-Control" content="max-age=7200" />
 <meta http-equiv="Pragma" content="no-cache" />
