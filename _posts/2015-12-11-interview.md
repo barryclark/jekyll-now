@@ -31,15 +31,94 @@ title: 前端知识体系
 
 <h2 id="js-language">JS语法</h2>
 
+推荐阅读汤姆大叔的
+[深入理解Javascript系列](http://www.cnblogs.com/TomXu/archive/2011/12/15/2288411.html)
+
 <h2 id="es5">ES5</h2>
 
 <h2 id="es6">ES6</h2>
+
+推荐阅读阮一峰的
+[ES6入门](http://es6.ruanyifeng.com/)
 
 <h2 id="css-layout">CSS布局</h2>
 
 <h2 id="css-animation">CSS动画</h2>
 
 <h2 id="css3">CSS3特性</h2>
+
+CSS3新特性一览
+
+1. 不依赖图片的视觉效果
+2. 盒容器变形
+3. 独一无二的字体
+4. 更强大的选择器 
+5. 过渡与动画
+6. 媒体信息查询
+7. 多列布局
+
+###不依赖图片的视觉效果
+
+CSS3可以实现一些以前通过图片才能实现的视觉效果，例如：
+
+* 圆角
+
+```
+border-radius: 5px;
+```
+
+* 阴影
+
+```
+box-shadow: 1px 1px 5px #CCC; 
+text-shadow: 0 0 3px #000;
+```
+
+* 半透明背景
+
+```
+background: hsla(182, 44%, 76%, .5);
+```
+
+* 渐变
+
+```
+background-image: linear-gradient(
+    hsla(0, 0%, 100%, .6),
+    hsla(0, 0%, 100%, 0) 30px
+    )
+```
+
+* 图片边框
+
+```
+border-width: 30px 20px 30px 20px;
+border-image: url(clouds.png) 30 20 30 20 stretch;
+```
+
+
+###盒容器变形（Transforms）
+
+CSS3可以在2D或者3D的控件里操作盒容器的位置和形状，比如旋转、缩放、移动。
+
+我们把这些特效称为2D变形或者3D变形。
+
+
+
+###独一无二的字体
+
+
+###更强大的选择器 
+
+
+###过渡与动画
+
+
+###媒体信息查询
+
+
+###多列布局
+
 
 <h2 id="h5">H5特性</h2>
 
