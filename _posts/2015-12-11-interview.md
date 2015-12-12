@@ -267,11 +267,36 @@ CSS3可以在2D或者3D的控件里操作盒容器的位置和形状，比如旋
 
 * 设备像素比
 
+```js
+if(window.devicePixelRatio >= 2){
+    // 当设备像素比大于等于2时执行
+}
+```
+
+```css
+@media all and (-webkit-min-device-pixel-ratio: 2){
+    /* 当设备像素比大于2时生效 */
+}
+```
 
 
 * meta视口
 
+格式：
 
+```html
+<meta name="viewport" content="name=value, name2=value2">
+```
+
+name可以是：
+
+```
+1. width
+2. init-scale
+3. mininum-scale
+4. maxinum-scale
+5. user-scalable
+```
 
 * 媒体查询
 
