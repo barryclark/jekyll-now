@@ -328,28 +328,28 @@ name可以是：
 
 ###媒体查询
 
-    理解这个例子
+理解这个例子
 
-    ```css
-    @media all 
-        and (max-width: 400) 
-        and (orientation: portrait)
-        and (
-            (max-resolution: 144dpi),
-            (-webkit-max-device-pixel-ratio: 1.5)
-        )
-    {
-        /*
-        只有在布局视口不超过400px，设备处于竖屏模式，并且
-        设备像素比小于等于1.5时才会生效    
-        */
-    }
-    ```
+```css
+@media all 
+    and (max-width: 400) 
+    and (orientation: portrait)
+    and (
+        (max-resolution: 144dpi),
+        (-webkit-max-device-pixel-ratio: 1.5)
+    )
+{
+    /*
+    只有在布局视口不超过400px，设备处于竖屏模式，并且
+    设备像素比小于等于1.5时才会生效    
+    */
+}
+```
 
 ###屏幕方向
 
-    JS中的`window.orientation`和`orientationchange`事件；
-    媒体查询中的`orienttation`
+JS中的`window.orientation`和`orientationchange`事件；
+媒体查询中的`orienttation`
 
 
 
@@ -359,15 +359,15 @@ name可以是：
 
 ###vm和vh
 
-    在CSS中，vm和vh是代表视口百分比的单位。
+在CSS中，vm和vh是代表视口百分比的单位。
 
-    例如`50vm`表示视口宽度的50%，`20vh`表示视口高度的20%。
+例如`50vm`表示视口宽度的50%，`20vh`表示视口高度的20%。
 
-    注意，这个视口指的是布局视口。
+注意，这个视口指的是布局视口。
 
-    目前支持这个单位的浏览器不多，只有基于Blink渲染引擎的浏览器、IE和安卓上的Firefox支持。
+目前支持这个单位的浏览器不多，只有基于Blink渲染引擎的浏览器、IE和安卓上的Firefox支持。
 
-    所以很遗憾，现在（2015年）还暂时不能使用这两个单位。
+所以很遗憾，现在（2015年）还暂时不能使用这两个单位。
 
 ###过渡和动画
 
