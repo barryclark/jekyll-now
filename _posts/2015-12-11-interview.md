@@ -213,7 +213,7 @@ CSS3可以在2D或者3D的控件里操作盒容器的位置和形状，比如旋
 
 <h2 id="mobile">移动Web</h2>
 
-* 主要知识点
+###主要知识点
 
 ```
  布局视口
@@ -229,12 +229,11 @@ CSS3可以在2D或者3D的控件里操作盒容器的位置和形状，比如旋
  vm和vh
  过渡和动画
  触摸事件
- 指针事件
  等价事件
 ```
 
 
-* 布局视口
+###布局视口
 
 移动设备中页面的宽高
 
@@ -243,7 +242,7 @@ CSS3可以在2D或者3D的控件里操作盒容器的位置和形状，比如旋
 document.documentElement.clientWidth
 ```
 
-* 视觉视口
+###视觉视口
 
 移动设备屏幕的宽高
 
@@ -254,7 +253,7 @@ window.innerWidth
 
 大部分浏览器都支持该属性，但并不是所有浏览器都支持。另外，我们一般并不需要知道视觉视口的尺寸。
 
-* 理想视口
+###理想视口
 
 当布局视口等于视觉视口时，即当`<head>`中加入以下代码时：
 
@@ -269,7 +268,7 @@ window.innerWidth
 获取到的可能是理想视口的宽度，也可能是设备的像素尺寸。
 
 
-* 缩放
+###缩放
 
 禁止缩放（考虑到用户体验，不建议使用）
 
@@ -290,11 +289,11 @@ window.innerWidth
 ```
 
 
-* 物理分辨率
+###物理分辨率
 
 
 
-* 设备像素比
+###设备像素比
 
 ```js
 if(window.devicePixelRatio >= 2){
@@ -304,12 +303,12 @@ if(window.devicePixelRatio >= 2){
 
 ```css
 @media all and (-webkit-min-device-pixel-ratio: 2){
-    /* 当设备像素比大于2时生效 */
+    /*当设备像素比大于2时生效*/
 }
 ```
 
 
-* meta视口
+###meta视口
 
 格式：
 
@@ -327,7 +326,7 @@ name可以是：
 5. user-scalable
 ```
 
-* 媒体查询
+###媒体查询
 
     理解这个例子
 
@@ -340,25 +339,25 @@ name可以是：
             (-webkit-max-device-pixel-ratio: 1.5)
         )
     {
-        /* 
+        /*
         只有在布局视口不超过400px，设备处于竖屏模式，并且
         设备像素比小于等于1.5时才会生效    
         */
     }
     ```
 
-* 屏幕方向
+###屏幕方向
 
     JS中的`window.orientation`和`orientationchange`事件；
     媒体查询中的`orienttation`
 
 
 
-* resize事件
+###resize事件
 
 
 
-* vm和vh
+###vm和vh
 
     在CSS中，vm和vh是代表视口百分比的单位。
 
@@ -370,19 +369,35 @@ name可以是：
 
     所以很遗憾，现在（2015年）还暂时不能使用这两个单位。
 
-* 过渡和动画
+###过渡和动画
 
 
 
-* 触摸事件
+###触摸事件
 
+一共有4种触摸事件：
 
+* touchstart
+* touchmove
+* touchend
+* touchcancel
 
-* 指针事件
+和手势事件：
 
+* gesturestart
+* gesturechange
+* gestureend
 
+###等价事件
 
-* 等价事件
+```
+鼠标         触摸          键盘
+mousedown   touchstart   keydown
+mouseover   touchmove    keydown/keypress
+mouseup     touchen      keyup
+mouseover   -            focus
+mouseout    -            blur
+```
 
 <h2 id="design-mode">设计模式</h2>
 
