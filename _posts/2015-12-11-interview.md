@@ -7,8 +7,8 @@ title: 前端知识体系
 1. [ES5](#es5)
 1. [ES6](#es6)
 1. [CSS布局](#css-layout)
-1. [CSS动画](#css-animation)
 1. [CSS3特性](#css3)
+1. [CSS动画](#css-animation)
 1. [H5特性](#h5)
 1. [浏览器兼容性](#compatibility)
 1. [移动Web](#mobile)
@@ -34,6 +34,12 @@ title: 前端知识体系
 推荐阅读汤姆大叔的
 [深入理解Javascript系列](http://www.cnblogs.com/TomXu/archive/2011/12/15/2288411.html)
 
+知识点
+
+* 函数
+* 原型链
+* 继承
+
 <h2 id="es5">ES5</h2>
 
 <h2 id="es6">ES6</h2>
@@ -46,6 +52,8 @@ title: 前端知识体系
 <h2 id="css-animation">CSS动画</h2>
 
 <h2 id="css3">CSS3特性</h2>
+
+[CSS属性速查表](http://www.w3chtml.com/css3/properties/)
 
 CSS3新特性一览
 
@@ -63,26 +71,26 @@ CSS3可以实现一些以前通过图片才能实现的视觉效果，例如：
 
 * 圆角
 
-```
+```css
 border-radius: 5px;
 ```
 
 * 阴影
 
-```
+```css
 box-shadow: 1px 1px 5px #CCC; 
 text-shadow: 0 0 3px #000;
 ```
 
 * 半透明背景
 
-```
+```css
 background: hsla(182, 44%, 76%, .5);
 ```
 
 * 渐变
 
-```
+```css
 background-image: linear-gradient(
     hsla(0, 0%, 100%, .6),
     hsla(0, 0%, 100%, 0) 30px
@@ -91,7 +99,7 @@ background-image: linear-gradient(
 
 * 图片边框
 
-```
+```css
 border-width: 30px 20px 30px 20px;
 border-image: url(clouds.png) 30 20 30 20 stretch;
 ```
@@ -120,9 +128,13 @@ CSS3可以在2D或者3D的控件里操作盒容器的位置和形状，比如旋
 
 这些特性包括：
 
-* 横屏还是竖屏
-* 是否支持彩色显示
-* 页面宽度
+* orientation         (横屏还是竖屏)
+* min-width           (页面可见区域宽度)
+* max-width
+* min-device-width    (屏幕可见区域宽度)
+* max-device-width
+* color               (是否支持彩色显示)
+* resolution          (设备的分辨率，如96dpi、118dpcm)
 
 示例：
 
@@ -143,6 +155,59 @@ CSS3可以在2D或者3D的控件里操作盒容器的位置和形状，比如旋
 
 
 <h2 id="h5">H5特性</h2>
+
+[w3教程](http://www.w3chtml.com/html5/course/)
+
+###主要特性
+
+```
+* 视频、音频
+* 拖放
+* Canvas
+* SVG
+* 地理位置
+* 客户端存储
+* manifest缓存
+* Web Worker
+* Web Socket
+* Server Sent
+```
+
+###废弃的标签：
+
+```
+<acronym>
+<applet>
+<basefont>
+<big>
+<center>
+<dir>
+<font>
+<frame>
+<frameset>
+<noframes>
+<s>
+<strike>
+<tt>
+<u> 
+<xmp>
+```
+
+###更加语义化的新增标签：
+
+```
+<article>
+<section>
+<aside>
+<hgroup>
+<header>
+<footer>
+<nav>
+<time>
+<mark>
+<figure>
+<figcaption>
+```
 
 <h2 id="compatibility">浏览器兼容性</h2>
 
