@@ -86,28 +86,36 @@ title: 前端知识体系
 
 <h2 id="http">HTTP知识</h2>
 
-三次握手
+###三次握手
 
-* 首先Client端发送连接请求SYN报文
+```
+* Client端发送连接请求SYN报文
+
 * Server段接受连接后回复SYN+ACK报文，并为这次连接分配资源
+
 * Client端接收到ACK报文后也向Server段发生ACK报文，并分配资源，这样TCP连接就建立了。
+```
 
-四次挥手
+###四次挥手（以Client端发起中断连接请求为例）
 
-假设是Client端发起中断连接请求：
-
+```
 * Client端发送FIN报文。意思是说："我Client端没有数据要发给你了，如果你还有数据没有发送完成，你可以继续发"。
+
 * Server端确定数据发送完了，则向Client端发送FIN报文。意思是说：“我这边数据发完了，准备好关闭连接了"
+
 * Client端发送ACK，然后进入TIME_WAIT状态，如果Server端没有收到ACK则可以重传。
+
 * Server端收到ACK后就直接断开连接了。
+```
 
 Client端等待了2MSL后依然没有收到回复，则证明Server端已正常关闭，那好，我Client端也可以关闭连接了。
 
 TCP连接就这样关闭了！
 
 
-常用的HTTP状态码
+###常用的HTTP状态码
 
+```
 * 200：成功
 * 301：永久重定向
 * 302：临时重定向
@@ -118,6 +126,7 @@ TCP连接就这样关闭了！
 * 404：未找到资源
 * 500：服务器内部错误
 * 503: 服务器临时维护或者过载，请在一段时间后重试
+```
 
 不那么常用的HTTP状态码
 
@@ -219,7 +228,6 @@ Cache-Control: max-age=86400
 If-Modified-Since: Sat, 01 Mar 2014 08:00:00 GMT
 ```
 
-
 *Cache-Control*
 
 下例告诉服务器：“不要返回缓存，我要最新的内容”
@@ -254,13 +262,13 @@ Pragma: no-cache
 
 在HTML页面中设置请求头。
 
-仅对当前页面的请求有效，而对页面中引用的js、css、图片无效。
-
 ```
 <meta http-equiv="Cache-Control" content="max-age=7200" />
 <meta http-equiv="Pragma" content="no-cache" />
 <meta http-equiv="Expires" content="Mon, 20 Jul 2009 23:00:00 GMT" />
 ```
+
+http-equiv仅对当前页面的请求有效，而对页面中引用的js、css、图片无效。
 
 <h2 id="version">版本管理工具</h2>
 
