@@ -3,12 +3,6 @@ layout: post
 title: 前端知识体系
 ---
 
-<!-- 
-虽然面试是否成功常常跟运气有很大关系，但是技术水平仍然是起决定作用的。
-
-本文对我所了解的前端技术做一个总结，面试前梳理一次，以便在笔试和面试中发挥自己的最佳水平。
- -->
-
 1. [JS语法](#js-language)
 1. [ES5](#es5)
 1. [ES6](#es6)
@@ -192,56 +186,64 @@ TCP连接就这样关闭了！
 [更多参考](http://tools.jb51.net/table/http_request_method)
 
 
-###缓存处理
+###与缓存有关的HTTP头
 
 *Expires*
 
-响应头Expires
-
-```
-Expires: Thu, 15 Apr 2020 20:00:00 GMT
-```
-
-表示告诉客户端：“你拿着这个资源吧，2020年前都不要再请求了”。
+下例告诉客户端：“你拿着这个资源吧，2020年前都不要再请求了”。
 
 直到缓存被挤出或者手动清除，浏览器都不会再向服务器请求这个资源。
 
 对于确定永远不会发生更改的资源才用这个响应头。
 
+```
+Expires: Thu, 15 Apr 2020 20:00:00 GMT
+```
+
 *Last-Modified*
 
-响应头Last-Modified
+下例告诉客户端：这个资源是2014年3月1日修改的，86400秒（1天）内这个资源都不会发生改变。
+
+然后客户端在3月2日之前都不会再请求这个资源。
 
 ```
 Last-Modified: Sat, 01 Mar 2014 08:00:00 GMT
+Cache-Control: max-age=86400
 ```
 
-表示告诉客户端：这个资源是2014年3月1日修改的
+*If-Modified-Since*
+
+下例告诉服务器，如果请求的资源在2014年3月1日后发生了修改，就返回新的内容给我，否则不需要返回实体
+
+```
+If-Modified-Since: Sat, 01 Mar 2014 08:00:00 GMT
+```
+
 
 *Cache-Control*
 
-请求头
+下例告诉服务器：“不要返回缓存，我要最新的内容”
 
 ```
 Cache-Control: no-cache
 ```
-表示：“不要返回缓存”
 
-响应头
+下例告诉客户端：“你不要缓存这个资源，每次使用都应该向我请求最新的”
 
 ```
 Cache-Control: no-cache
 ```
-表示：“不允许缓存这个资源”。
 
-响应头
+下例告诉客户端：“从现在起，1天之内这个资源都不会发生改变，这段时间内你使用缓存中的版本就可以了”
 
 ```
-Cache-Control: max-age
+Cache-Control: max-age=86400
 ```
 
 
 *Pragma*
+
+服务端和客户端都可以使用这个头，表示禁止缓存
 
 ```
 Pragma: no-cache
@@ -250,7 +252,9 @@ Pragma: no-cache
 
 *http-equiv*
 
-示例
+在HTML页面中设置请求头。
+
+仅对当前页面的请求有效，而对页面中引用的js、css、图片无效。
 
 ```
 <meta http-equiv="Cache-Control" content="max-age=7200" />
