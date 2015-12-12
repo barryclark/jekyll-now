@@ -91,19 +91,25 @@ title: 前端知识体系
 ```
 * Client端发送连接请求SYN报文
 
-* Server段接受连接后回复SYN+ACK报文，并为这次连接分配资源
+* Server段接受连接后回复SYN+ACK报文，
+  并为这次连接分配资源
 
-* Client端接收到ACK报文后也向Server段发生ACK报文，并分配资源，这样TCP连接就建立了。
+* Client端接收到ACK报文后也向Server段发生ACK报文，
+  并分配资源，这样TCP连接就建立了。
 ```
 
 ###四次挥手（以Client端发起中断连接请求为例）
 
 ```
-* Client端发送FIN报文。意思是说："我Client端没有数据要发给你了，如果你还有数据没有发送完成，你可以继续发"。
+* Client端发送FIN报文。
+  意思是说："我没有数据要发给你了，
+  如果你还有数据没有发送完成，你可以继续发"。
 
-* Server端确定数据发送完了，则向Client端发送FIN报文。意思是说：“我这边数据发完了，准备好关闭连接了"
+* Server端确定数据发送完了，则向Client端发送FIN报文。
+  意思是说：“我这边数据发完了，准备好关闭连接了"
 
-* Client端发送ACK，然后进入TIME_WAIT状态，如果Server端没有收到ACK则可以重传。
+* Client端发送ACK，然后进入TIME_WAIT状态，
+  如果Server端没有收到ACK则可以重传。
 
 * Server端收到ACK后就直接断开连接了。
 ```
@@ -128,40 +134,48 @@ TCP连接就这样关闭了！
 * 503: 服务器临时维护或者过载，请在一段时间后重试
 ```
 
-不那么常用的HTTP状态码
+###不那么常用的HTTP状态码
 
+```
 * 202：服务器已接收请求，但还未执行
 * 204：服务器成功处理了请求，但无需返回任何实体，只返回HTTP头部
 * 303：用户请求的资源在另一个URI上
 * 304：被请求的资源必须通过Location指定代理才能访问
-* 405：请求的方法不能用于访问当前的资源，例如，PUT、DELETE方法会被大部分服务器返回405
+* 405：请求的方法不能用于访问当前的资源，
+       例如，PUT、DELETE方法会被大部分服务器返回405
 * 410：被请求的资源在服务器上已经不再可用
 * 413：服务器拒绝处理该请求，因为提交的实体内容过大
 * 503：服务器的HTTP版本与请求的版本不一致
 * 509：服务器达到贷款限制
+```
 
-常用的HTTP请求头属性
+###常用的HTTP请求头属性
 
+```
 * Accept： 指定客户端能够接收的内容类型
 * Accept-Charset： 浏览器可以接受的字符编码集。
 * Authorization： HTTP授权的授权证书
 * Cache-Control： 指定请求和响应遵循的缓存机制
 * Connection： 表示是否需要持久连接。（HTTP 1.1默认进行持久连接）
-* Cookie： HTTP请求发送时，会把保存在该请求域名下的所有cookie值一起发送给web服务器。
+* Cookie： HTTP请求发送时会把保存在该请求域名下的
+           所有cookie值一起发送给web服务器。
 * Content-Length： 请求的内容长度
 * Content-Type： 请求的与实体对应的MIME信息
 * Host： 指定请求的服务器的域名和端口号
 * If-Match： 只有请求内容与实体相匹配才有效
-* If-Modified-Since： 如果请求的部分在指定时间之后被修改则请求成功，未被修改则返回304代码
+* If-Modified-Since： 如果请求的部分在指定时间之后被修改则请求成功，
+                      未被修改则返回304代码
 * Pragma： 用来包含实现特定的指令
 * Range： 只请求实体的一部分，指定范围
 * Referer： 先前网页的地址，当前请求网页紧随其后,即来路
 * User-Agent： User-Agent的内容包含发出请求的用户信息
+```
 
 [更多参考](http://tools.jb51.net/table/http_header)
 
-常用的HTTP响应头属性
+###常用的HTTP响应头属性
 
+```
 * Age： 从原始服务器到代理缓存形成的估算时间（以秒计，非负）
 * Allow： 对某网络资源的有效的请求行为，不允许则返回405
 * Cache-Control： 告诉所有的缓存机制是否可以缓存及哪种类型
@@ -175,14 +189,17 @@ TCP连接就这样关闭了！
 * Last-Modified： 请求资源的最后修改时间
 * Location： 用来重定向接收方到非请求URL的位置来完成请求或标识新的资源
 * Pragma： 包括实现特定的指令，它可应用到响应链上的任何接收方
-* Refresh： 应用于重定向或一个新的资源被创造，在5秒之后重定向（由网景提出，被大部分浏览器支持）
+* Refresh： 应用于重定向或一个新的资源被创造，
+  在5秒之后重定向（由网景提出，被大部分浏览器支持）
 * Server： Web服务器软件名称
 * Set-Cookie： 设置Http Cookie
+```
 
 [更多参考](http://tools.jb51.net/table/http_header)
 
-常用的HTTP请求方法
+###常用的HTTP请求方法
 
+```
 * GET：请求指定URI上的资源，服务器会返回实体
 * POST：请求指定URI，并发送实体
 * PUT：用客户端发送的数据取代服务器上指定位置的内容
@@ -190,14 +207,14 @@ TCP连接就这样关闭了！
 * HEAD：类似GET，但不需返回实体，用于获取报头
 * OPTIONS：允许客户端查看服务器性能
 * CONNECT：HTTP/1.1协议中预留给能够将连接改为管道方式的代理服务器。
-
+```
 
 [更多参考](http://tools.jb51.net/table/http_request_method)
 
 
-###与缓存有关的HTTP头
+###下面是与缓存有关的HTTP头
 
-*Expires*
+###Expires
 
 下例告诉客户端：“你拿着这个资源吧，2020年前都不要再请求了”。
 
@@ -209,7 +226,7 @@ TCP连接就这样关闭了！
 Expires: Thu, 15 Apr 2020 20:00:00 GMT
 ```
 
-*Last-Modified*
+###Last-Modified
 
 下例告诉客户端：这个资源是2014年3月1日修改的，86400秒（1天）内这个资源都不会发生改变。
 
@@ -220,7 +237,7 @@ Last-Modified: Sat, 01 Mar 2014 08:00:00 GMT
 Cache-Control: max-age=86400
 ```
 
-*If-Modified-Since*
+###If-Modified-Since
 
 下例告诉服务器，如果请求的资源在2014年3月1日后发生了修改，就返回新的内容给我，否则不需要返回实体
 
@@ -228,7 +245,7 @@ Cache-Control: max-age=86400
 If-Modified-Since: Sat, 01 Mar 2014 08:00:00 GMT
 ```
 
-*Cache-Control*
+###Cache-Control
 
 下例告诉服务器：“不要返回缓存，我要最新的内容”
 
@@ -249,7 +266,7 @@ Cache-Control: max-age=86400
 ```
 
 
-*Pragma*
+###Pragma
 
 服务端和客户端都可以使用这个头，表示禁止缓存
 
@@ -258,7 +275,7 @@ Pragma: no-cache
 ```
 
 
-*http-equiv*
+###http-equiv
 
 在HTML页面中设置请求头。
 
