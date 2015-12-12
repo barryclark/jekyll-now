@@ -92,6 +92,26 @@ title: 面试必读
 
 <h2 id="http">HTTP知识</h2>
 
+三次握手
+
+* 首先Client端发送连接请求SYN报文
+* Server段接受连接后回复SYN+ACK报文，并为这次连接分配资源
+* Client端接收到ACK报文后也向Server段发生ACK报文，并分配资源，这样TCP连接就建立了。
+
+四次挥手
+
+假设是Client端发起中断连接请求：
+
+* Client端发送FIN报文。意思是说："我Client端没有数据要发给你了，如果你还有数据没有发送完成，你可以继续发"。
+* Server端确定数据发送完了，则向Client端发送FIN报文。意思是说：“我这边数据发完了，准备好关闭连接了"
+* Client端发送ACK，然后进入TIME_WAIT状态，如果Server端没有收到ACK则可以重传。
+* Server端收到ACK后就直接断开连接了。
+
+Client端等待了2MSL后依然没有收到回复，则证明Server端已正常关闭，那好，我Client端也可以关闭连接了。
+
+TCP连接就这样关闭了！
+
+
 常用的HTTP状态码
 
 * 200：成功
@@ -170,6 +190,68 @@ title: 面试必读
 
 
 [更多参考](http://tools.jb51.net/table/http_request_method)
+
+
+###缓存处理
+
+*Expires*
+
+响应头Expires
+
+```
+Expires: Thu, 15 Apr 2020 20:00:00 GMT
+```
+
+表示告诉客户端：“你拿着这个资源吧，2020年前都不要再请求了”。
+
+直到缓存被挤出或者手动清除，浏览器都不会再向服务器请求这个资源。
+
+对于确定永远不会发生更改的资源才用这个响应头。
+
+*Last-Modified*
+
+响应头Last-Modified
+
+```
+Last-Modified: Sat, 01 Mar 2014 08:00:00 GMT
+```
+
+表示告诉客户端：这个资源是2014年3月1日修改的
+
+*Cache-Control*
+
+请求头
+```
+Cache-Control: no-cache
+```
+表示：“不要返回缓存”
+
+响应头
+```
+Cache-Control: no-cache
+```
+表示：“不允许缓存这个资源”。
+
+响应头
+```
+Cache-Control: max-age
+```
+
+
+*Pragma*
+```
+Pragma: no-cache
+```
+
+
+*http-equiv*
+
+示例
+```
+<meta http-equiv="Cache-Control" content="max-age=7200" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="Mon, 20 Jul 2009 23:00:00 GMT" />
+```
 
 <h2 id="version">版本管理工具</h2>
 
