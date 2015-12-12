@@ -8,8 +8,15 @@ Some information about you!
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+history
+
+(2007 ~ 2014) Kookmin University student, Major : computer science
+(2012 ~ 2014) Samsung Software Membership
+(2014 ~     ) Samgsung Electronic, Software Engineer
+(2014 ~     ) Yonsei Universiry master's degree, Major : computer science
+
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[email@domain.com](bitboom9@gmail.com)
+[email@domain.com](sangwan.kwon@samsung.com)
