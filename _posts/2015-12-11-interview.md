@@ -213,24 +213,24 @@ CSS3可以在2D或者3D的控件里操作盒容器的位置和形状，比如旋
 
 <h2 id="mobile">移动Web</h2>
 
-* 知识点
+* 主要知识点
 
 ```
-* 布局视口
-* 视觉视口
-* 理想视口
-* 缩放
-* 物理分辨率
-* 设备像素比
-* meta视口
-* 媒体查询
-* orientationchange事件
-* resize事件
-* vm和vh
-* 过渡和动画
-* 触摸事件
-* 指针事件
-* 等价事件
+ 布局视口
+ 视觉视口
+ 理想视口
+ 缩放
+ 物理分辨率
+ 设备像素比
+ meta视口
+ 媒体查询
+ 屏幕方向
+ resize事件
+ vm和vh
+ 过渡和动画
+ 触摸事件
+ 指针事件
+ 等价事件
 ```
 
 
@@ -238,9 +238,21 @@ CSS3可以在2D或者3D的控件里操作盒容器的位置和形状，比如旋
 
 移动设备中页面的宽高
 
+```js
+// JS中获取布局视口的宽度
+document.documentElement.clientWidth
+```
+
 * 视觉视口
 
 移动设备屏幕的宽高
+
+```js
+// JS中获取视觉视口的宽度
+window.innerWidth
+```
+
+大部分浏览器都支持该属性，但并不是所有浏览器都支持。另外，我们一般并不需要知道视觉视口的尺寸。
 
 * 理想视口
 
@@ -252,12 +264,29 @@ CSS3可以在2D或者3D的控件里操作盒容器的位置和形状，比如旋
 
 就是理想视口。
 
+你无法准确地获取理想视口的尺寸，
+因为js中的`screen.width`和css媒体查询中的`device-width`一样，
+获取到的可能是理想视口的宽度，也可能是设备的像素尺寸。
+
+
 * 缩放
 
-禁止缩放
+禁止缩放（考虑到用户体验，不建议使用）
 
 ```html
 <meta name="viewport" content="user-scalable=no">
+```
+
+初始大小
+
+```html
+<meta name="viewport" content="init-scale=1">
+```
+
+最大和最小缩放范围
+
+```html
+<meta name="viewport" content="maxinum-scale=5">
 ```
 
 
@@ -300,9 +329,28 @@ name可以是：
 
 * 媒体查询
 
+理解这个例子
 
+```css
+@media all 
+    and (max-width: 400) 
+    and (orientation: portrait)
+    and (
+        (max-resolution: 144dpi),
+        (-webkit-max-device-pixel-ratio: 1.5)
+    )
+{
+    /* 
+    只有在布局视口不超过400px，设备处于竖屏模式，并且
+    设备像素比小于等于1.5时才会生效    
+    */
+}
+```
 
-* orientationchange事件
+* 屏幕方向
+
+JS中的`window.orientation`和`orientationchange`事件；
+媒体查询中的`orienttation`
 
 
 
@@ -312,7 +360,15 @@ name可以是：
 
 * vm和vh
 
+在CSS中，vm和vh是代表视口百分比的单位。
 
+例如`50vm`表示视口宽度的50%，`20vh`表示视口高度的20%。
+
+注意，这个视口指的是布局视口。
+
+目前支持这个单位的浏览器不多，只有基于Blink渲染引擎的浏览器、IE和安卓上的Firefox支持。
+
+所以很遗憾，现在（2015年）还暂时不能使用这两个单位。
 
 * 过渡和动画
 
