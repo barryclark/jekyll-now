@@ -18,5 +18,5 @@ history
   
 ### Contact me
 
-[email@domain.com](bitboom9@gmail.com)
-[email@domain.com](sangwan.kwon@samsung.com)
+[bitboom9@gmail.com](bitboom9@gmail.com)
+[sangwan.kwon@samsung.com](sangwan.kwon@samsung.com)
