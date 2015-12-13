@@ -12,7 +12,7 @@ In order to try the Polymorphic Associations we will use a very basic shopping c
 
 At this point the application has a Product model which stores all the products in the shop, with the following details:
 
-<pre>
+```html
 +-----------------+
 |  PRODUCT        |
 +-----------------+
@@ -21,7 +21,7 @@ At this point the application has a Product model which stores all the products 
 |  price          |
 |  stock          |
 +-----------------+
-</pre>
+```
 Let's assume our shop will sell computers and printers, and our goal is to add more details about both categories of products:
 - computer:
   - cpu
@@ -41,7 +41,7 @@ Using Polymorphic Associations one model can belong to more models. It is a way 
 
 Before writing any code, let's think about the structure we want to build:
 
-<pre>
+```html
                 +-----------------+
                 |  PRODUCT        |
                 +-----------------+
@@ -60,7 +60,7 @@ Before writing any code, let's think about the structure we want to build:
   |  cpu            |         |  type           |
   |  memory         |         |  ppm            |
   +-----------------+         +-----------------+
-</pre>
+```
 
 We chose the **category** to represent the polymorphic relations, and we need to define a foreign key: **category_id** and a **category_type** that will link with the Computer or Printer models.
 
