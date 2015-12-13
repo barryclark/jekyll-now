@@ -76,7 +76,7 @@ rails g migration AddPolymorphicRelationsToProduct
 
 - Edit the migration file:
 
-{% highlight ruby linenos %}
+```ruby
 class AddPolymorphicRelationsToProduct < ActiveRecord::Migration
   def up
     remove_column :products, :category
@@ -94,7 +94,7 @@ class AddPolymorphicRelationsToProduct < ActiveRecord::Migration
     add_coumn :products, :name, :string
   end
 end
-{% endhighlight %}
+```
 
 - Generate the Computer model and migration:
 
