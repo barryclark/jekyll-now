@@ -196,3 +196,10 @@ h2.postHeader {
     -moz-column-count: 2;
     column-count: 2;
 }
+
+canvas {
+	border: 4px double #000;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
