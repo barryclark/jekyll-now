@@ -10,7 +10,8 @@ description: Youtuber
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: http://media.tumblr.com/tumblr_m53wnl5BbT1rpq4ul.jpg
-#
+
+# Where to store images from posts
 post_assets: images
 general_assets: images
 
