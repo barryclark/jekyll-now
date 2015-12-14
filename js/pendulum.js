@@ -195,12 +195,6 @@ $(document).ready(function() {
 
 				theRod.addTheta(vtheta);
 
-				var ax = - Math.cos(theta) * Math.cos(theta);
-				var ay = - Math.cos(theta) * Math.sin(theta) + 1;
-
-				vx += ax;
-				vy += ay;
-
 				bob.x = theRod.moveX;
 				bob.y = theRod.moveY;
 
