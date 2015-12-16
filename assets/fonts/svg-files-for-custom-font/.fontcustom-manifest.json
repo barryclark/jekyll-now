@@ -1,0 +1,253 @@
+{
+  "checksum": {
+    "previous": "0eb06cd53c7fe783055fd11030c39772bfa6df061f0e164097dc672c3a31c36d",
+    "current": "0eb06cd53c7fe783055fd11030c39772bfa6df061f0e164097dc672c3a31c36d"
+  },
+  "fonts": [
+    "entypo-custom/entypo-custom.ttf",
+    "entypo-custom/entypo-custom.svg",
+    "entypo-custom/entypo-custom.woff",
+    "entypo-custom/entypo-custom.eot"
+  ],
+  "glyphs": {
+    "archive": {
+      "codepoint": 61707,
+      "source": "./archive.svg"
+    },
+    "browser": {
+      "codepoint": 61708,
+      "source": "./browser.svg"
+    },
+    "camera": {
+      "codepoint": 61709,
+      "source": "./camera.svg"
+    },
+    "chat": {
+      "codepoint": 61710,
+      "source": "./chat.svg"
+    },
+    "check": {
+      "codepoint": 61711,
+      "source": "./check.svg"
+    },
+    "chevron-down": {
+      "codepoint": 61745,
+      "source": "./chevron-down.svg"
+    },
+    "chevron-left": {
+      "codepoint": 61746,
+      "source": "./chevron-left.svg"
+    },
+    "chevron-right": {
+      "codepoint": 61712,
+      "source": "./chevron-right.svg"
+    },
+    "chevron-up": {
+      "codepoint": 61713,
+      "source": "./chevron-up.svg"
+    },
+    "circle-with-cross": {
+      "codepoint": 61742,
+      "source": "./circle-with-cross.svg"
+    },
+    "circle-with-minus": {
+      "codepoint": 61743,
+      "source": "./circle-with-minus.svg"
+    },
+    "circle-with-plus": {
+      "codepoint": 61744,
+      "source": "./circle-with-plus.svg"
+    },
+    "cloud": {
+      "codepoint": 61741,
+      "source": "./cloud.svg"
+    },
+    "code": {
+      "codepoint": 61714,
+      "source": "./code.svg"
+    },
+    "cog": {
+      "codepoint": 61715,
+      "source": "./cog.svg"
+    },
+    "dropbox": {
+      "codepoint": 61696,
+      "source": "./dropbox.svg"
+    },
+    "edit": {
+      "codepoint": 61740,
+      "source": "./edit.svg"
+    },
+    "export": {
+      "codepoint": 61739,
+      "source": "./export.svg"
+    },
+    "eye": {
+      "codepoint": 61716,
+      "source": "./eye.svg"
+    },
+    "facebook": {
+      "codepoint": 61697,
+      "source": "./facebook.svg"
+    },
+    "feather": {
+      "codepoint": 61717,
+      "source": "./feather.svg"
+    },
+    "github": {
+      "codepoint": 61698,
+      "source": "./github.svg"
+    },
+    "globe": {
+      "codepoint": 61718,
+      "source": "./globe.svg"
+    },
+    "heart": {
+      "codepoint": 61719,
+      "source": "./heart.svg"
+    },
+    "heart-outlined": {
+      "codepoint": 61720,
+      "source": "./heart-outlined.svg"
+    },
+    "home": {
+      "codepoint": 61738,
+      "source": "./home.svg"
+    },
+    "instagram": {
+      "codepoint": 61699,
+      "source": "./instagram.svg"
+    },
+    "lab-flask": {
+      "codepoint": 61737,
+      "source": "./lab-flask.svg"
+    },
+    "leaf": {
+      "codepoint": 61736,
+      "source": "./leaf.svg"
+    },
+    "linkedin": {
+      "codepoint": 61700,
+      "source": "./linkedin.svg"
+    },
+    "mail": {
+      "codepoint": 61735,
+      "source": "./mail.svg"
+    },
+    "message": {
+      "codepoint": 61721,
+      "source": "./message.svg"
+    },
+    "mic": {
+      "codepoint": 61722,
+      "source": "./mic.svg"
+    },
+    "network": {
+      "codepoint": 61723,
+      "source": "./network.svg"
+    },
+    "paper-plane": {
+      "codepoint": 61724,
+      "source": "./paper-plane.svg"
+    },
+    "pinterest": {
+      "codepoint": 61701,
+      "source": "./pinterest.svg"
+    },
+    "price-tag": {
+      "codepoint": 61734,
+      "source": "./price-tag.svg"
+    },
+    "rocket": {
+      "codepoint": 61725,
+      "source": "./rocket.svg"
+    },
+    "rss": {
+      "codepoint": 61733,
+      "source": "./rss.svg"
+    },
+    "soundcloud": {
+      "codepoint": 61702,
+      "source": "./soundcloud.svg"
+    },
+    "star": {
+      "codepoint": 61726,
+      "source": "./star.svg"
+    },
+    "star-outlined": {
+      "codepoint": 61727,
+      "source": "./star-outlined.svg"
+    },
+    "thumbs-down": {
+      "codepoint": 61728,
+      "source": "./thumbs-down.svg"
+    },
+    "thumbs-up": {
+      "codepoint": 61732,
+      "source": "./thumbs-up.svg"
+    },
+    "tumblr": {
+      "codepoint": 61703,
+      "source": "./tumblr.svg"
+    },
+    "twitter": {
+      "codepoint": 61704,
+      "source": "./twitter.svg"
+    },
+    "upload-to-cloud": {
+      "codepoint": 61731,
+      "source": "./upload-to-cloud.svg"
+    },
+    "video": {
+      "codepoint": 61729,
+      "source": "./video.svg"
+    },
+    "vimeo": {
+      "codepoint": 61705,
+      "source": "./vimeo.svg"
+    },
+    "warning": {
+      "codepoint": 61730,
+      "source": "./warning.svg"
+    },
+    "youtube": {
+      "codepoint": 61706,
+      "source": "./youtube.svg"
+    }
+  },
+  "options": {
+    "autowidth": false,
+    "config": "fontcustom.yml",
+    "css_selector": ".icon-{{glyph}}",
+    "debug": false,
+    "font_ascent": 448,
+    "font_descent": 64,
+    "font_design_size": 20,
+    "font_em": 512,
+    "font_name": "entypo-custom",
+    "fonts": "fonts",
+    "force": false,
+    "input": {
+      "templates": ".",
+      "vectors": "."
+    },
+    "no_hash": true,
+    "output": {
+      "css": "entypo-custom",
+      "fonts": "entypo-custom",
+      "preview": "entypo-custom"
+    },
+    "preprocessor_path": null,
+    "preview": "entypo-custom",
+    "quiet": false,
+    "skip_first": false,
+    "templates": [
+      "css",
+      "preview"
+    ]
+  },
+  "templates": [
+    "entypo-custom/entypo-custom.css",
+    "entypo-custom/entypo-custom-preview.html"
+  ]
+}

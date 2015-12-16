@@ -1,0 +1,52 @@
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>{% if page.meta_title %}{{ page.meta_title }}{% elsif page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+	<link rel="stylesheet" type="text/css" href="{{ site.url }}{{ site.baseurl }}/assets/css/styles_feeling_responsive.css" />
+	<script src="{{ site.url }}{{ site.baseurl }}/assets/js/modernizr.min.js"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
+	<script>
+		WebFont.load({
+			google: {
+				families: [ 'Lato:400,700,400italic:latin', 'Volkhov::latin' ]
+			}
+		});
+	</script>
+
+	<noscript>
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic|Volkhov' rel='stylesheet' type='text/css' />
+	</noscript>
+
+  	{% if site.google_site_verification %}<meta name="google-site-verification" content="{{ site.google_site_verification}}" />{% endif %}
+	{% if site.bing_webmastertools_id %}<meta name="msvalidate.01" content="{{ site.bing_webmastertools_id }}" />{% endif %}
+	{% if page.meta_description %}<meta name="description" content="{{ page.meta_description | strip_html | escape }}"/>{% elsif page.teaser %}<meta name="description" content="{{ page.teaser | strip_html | escape }}" />{% elsif site.description %}<meta name="description" content="{{ site.description | strip_html | escape }}" />{% endif %}
+
+	{% if site.google_author %}<link rel="author" href="{{ site.google_author }}"/>{% endif %}
+
+	{% include _favicon.html %}
+
+	<!-- Facebook Optimization -->
+	<meta property="og:locale" content="{% if site.og_locale == nil %}en_EN{% else %}{{ site.og_locale }}{% endif %}" />
+	{% if site.og_type %}<meta property="og:type" content="website" />{% endif %}
+	<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+	{% if page.meta_description %}<meta property="og:description" content="{{ page.meta_description | strip_html | escape }}" />{% elsif page.description %}<meta property="og:description" content="{{ page.description | strip_html | escape }}"/>{% elsif site.description %}<meta property="og:description" content="{{ site.description | strip_html | escape }}" />{% endif %}
+	<meta property="og:url" content="{{ site.url }}{{ site.baseurl }}/{{ page.url }}" />
+	{% if site.title %}<meta property="og:site_name" content="{{ site.title }}" />{% endif %}
+	{% if page.image.thumb %}<meta property="og:image" content="{{ site.urlimg }}{{ page.image.thumb }}" />{% endif %}
+
+	{% if site.alexa_verify_id %}<meta name="alexaVerifyID" content="{{ site.alexa_verify_id }}" />{% endif %}
+
+	<!-- Search Engine Optimization -->
+	{% if page.noindex == true %}<meta name="robots" content="noindex" />{% endif %}
+
+	<link type="text/plain" rel="author" href="{{ site.url }}{{ site.baseurl }}/humans.txt" />
+
+	{% if page.mediaplayer == true %}
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="{{ site.url }}{{ site.baseurl }}/assets/mediaelement_js/mediaelement-and-player.min.js"></script>
+		<link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/assets/mediaelement_js/mediaelementplayer.min.css" />
+	{% endif %}
+
+	{% unless page.style == NULL %}
+	<style type="text/css">{{ page.style }}</style>
+	{% endunless %}

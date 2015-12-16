@@ -1,0 +1,148 @@
+@charset "utf-8";
+/* TOC
+
+- Table of Contents (Index)
+- Panel
+- Shadows
+- Alerts
+- Breadcrumb
+- Button
+- Side-Nav
+- Accordion
+- Lazy Load XT
+- Frontpage Widget
+
+*/
+
+
+
+/* Table of Contents (Index)
+------------------------------------------------------------------- */
+
+#toc ul,
+#toc ul ul,
+#toc ul ul ul, {
+    list-style: none;
+    margin-left: 30px;
+}
+#toc ul {
+    margin-left: 0;
+    margin-top: $spacing-unit;
+}
+
+
+
+/* Panel
+------------------------------------------------------------------- */
+
+.border-dotted {
+  border: 1px dotted $grey-5;
+  padding: rem-calc(20);
+  border-radius: $global-radius;
+}
+
+
+
+/* Shadows
+------------------------------------------------------------------- */
+
+.shadow-no      {text-shadow: rgba(0, 0, 0, 0) 0 0 0;}
+.shadow-black   {text-shadow: rgba(0, 0, 0, 0.498039) 0px 1px 2px;}
+.shadow-white   {text-shadow: rgba(255, 255, 255, 0.498039) 0px 1px 2px;}
+
+
+
+/* Alerts
+------------------------------------------------------------------- */
+
+.alert-box {
+  font-family: $font-family-sans-serif;
+  text-shadow: 0px 1px 1px rgba(0,0,0,0.9);
+} 
+  .alert-box p {
+    margin-bottom: 0;
+  } 
+  .alert-box a {
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
+    color: #fff;
+    border-bottom: 1px dotted #fff;
+  }
+  .alert-box a:hover {
+    border-bottom: 1px solid #fff;
+  }
+  .alert-box.terminal {
+    background: $grey-12; 
+    color: #fff; 
+    border-color: scale-color($grey-12, $lightness: -14%);
+    font-family: $font-family-monospace;
+  }
+  .alert-box.terminal::before {
+    content: "$ ";
+    color: $ci-6;
+  }
+  .alert-box.text {
+    background-color: $grey-2;
+    text-shadow: 0px 0px 0px rgba(0,0,0,0.9);
+    border-color: scale-color($grey-2, $lightness: -14%);
+    color: $grey-12;
+  }
+
+
+
+/* Button
+------------------------------------------------------------------- */
+
+button, .button         { letter-spacing: 1px; }
+  button.grey, .button.grey { background: $grey-10; }
+  button.grey:hover,
+  button.grey:focus,
+  .button.grey:hover,
+  .button.grey:focus      { background-color: $grey-16; }
+
+
+
+/* Side-Nav
+------------------------------------------------------------------- */
+
+.side-nav li.title { text-transform: uppercase;}
+.side-nav li { border-top: 1px solid $grey-3;}
+.side-nav li a:not(.button) { border-bottom: 0; padding: 0.4375rem 0rem; }
+.side-nav li a:not(.button):hover, .side-nav li a:not(.button):focus { background: $grey-1; }
+
+.homepage p { margin: 0; padding: 0; color: $grey-10; }
+
+
+
+/* Accordion
+------------------------------------------------------------------- */
+
+dl.accordion  { border-top: 1px solid $grey-2;  }
+.accordion dd   { border-bottom: 1px solid $grey-2;  }
+dd.accordion-navigation span { padding-right: 12px; }
+dd.accordion-navigation span:before { content: "\F107" }
+dd.accordion-navigation.active span:before { content: "\F105" }
+dd.accordion-navigation.active span:before { content: "\F105" }
+
+
+
+/* Lazy Load XT
+------------------------------------------------------------------- */
+
+/*! Lazy Load XT v1.0.6 2014-11-19
+ * http://ressio.github.io/lazy-load-xt
+ * (C) 2014 RESS.io
+ * Licensed under MIT */
+img.lazy {
+  display: none;
+}
+.lazy-hidden {
+    opacity: 0;
+}
+.lazy-loaded {
+    -webkit-transition: opacity 0.7s;
+    -moz-transition: opacity 0.7s;
+    -ms-transition: opacity 0.7s;
+    -o-transition: opacity 0.7s;
+    transition: opacity 0.7s;
+    opacity: 1;
+}

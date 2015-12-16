@@ -1,0 +1,77 @@
+{% comment %}
+*   
+*   More Information › https://mathiasbynens.be/notes/touch-icons
+*   
+{% endcomment %}
+
+
+{% if site.favicon-32x32 %}
+	{% comment %} Regular Old-Skool Favicon: {% endcomment %}
+	<link rel="icon" sizes="32x32" href="{{ site.url }}/assets/img/{{ site.favicon-32x32 }}" />
+{% endif %}
+
+
+{% if site.touch-icon-192x192 %}
+	{% comment %} For Chrome for Android: {% endcomment %}
+	<link rel="icon" sizes="192x192" href="{{ site.url }}/assets/img/{{ site.touch-icon-192x192 }}" />
+{% endif %}
+
+
+{% if site.apple-touch-icon-180x180-precomposed %}
+	{% comment %} For iPhone 6 Plus with @3× display: {% endcomment %}
+	<link rel="apple-touch-icon-precomposed" sizes="180x180" href="{{ site.url }}/assets/img/{{ site.apple-touch-icon-180x180-precomposed }}" />
+{% endif %}
+
+
+{% if site.apple-touch-icon-152x152-precomposed %}
+	{% comment %} For iPad with @2× display running iOS ≥ 7: {% endcomment %}
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="{{ site.url }}/assets/img/{{ site.apple-touch-icon-152x152-precomposed }}" />
+{% endif %}
+
+
+{% if site.apple-touch-icon-144x144-precomposed %}
+	{% comment %} For iPad with @2× display running iOS ≤ 6: {% endcomment %}
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.url }}/assets/img/{{ site.apple-touch-icon-144x144-precomposed }}" />
+{% endif %}
+
+
+{% if site.apple-touch-icon-120x120-precomposed %}
+	{% comment %} For iPhone with @2× display running iOS ≥ 7: {% endcomment %}
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="{{ site.url }}/assets/img/{{ site.apple-touch-icon-120x120-precomposed }}" />
+{% endif %}
+
+
+{% if site.apple-touch-icon-114x114-precomposed %}
+	{% comment %} For iPhone with @2× display running iOS ≤ 6: {% endcomment %}
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ site.url }}/assets/img/{{ site.apple-touch-icon-114x114-precomposed }}" />
+{% endif %}
+
+
+{% if site.apple-touch-icon-76x76-precomposed %}
+	{% comment %} For the iPad mini and the first- and second-generation iPad (@1× display) on iOS ≥ 7: {% endcomment %}
+	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="{{ site.url }}/assets/img/{{ site.apple-touch-icon-76x76-precomposed }}" />
+{% endif %}
+
+
+{% if site.apple-touch-icon-72x72-precomposed %}
+	{% comment %} For the iPad mini and the first- and second-generation iPad (@1× display) on iOS ≤ 6: {% endcomment %}
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ site.url }}/assets/img/{{ site.apple-touch-icon-72x72-precomposed }}" />
+{% endif %}
+
+
+{% if site.apple-touch-icon-precomposed %}
+	{% comment %} For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: {% endcomment %}
+	<link rel="apple-touch-icon-precomposed" href="{{ site.url }}/assets/img/{{ site.apple-touch-icon-precomposed }}" />{% comment %} 57×57px {% endcomment %}	
+{% endif %}
+
+
+{% if site.msapplication_tileimage %}
+	{% comment %} Favicon for Windows 8  {% endcomment %}
+	<meta name="msapplication-TileImage" content="{{ site.url }}/assets/img/{{ site.msapplication_tileimage }}" />
+{% endif %}
+
+
+{% if site.msapplication_tilecolor %}
+	{% comment %} Background Color for Tile for Windows 8  {% endcomment %}
+	<meta name="msapplication-TileColor" content="{{ site.msapplication_tilecolor }}" />
+{% endif %}
