@@ -1,0 +1,89 @@
+---
+sitemap:
+  exclude: true
+---
+@charset "utf-8";
+
+@import "functions.scss";
+
+$include-html-classes: false;
+@import "01_settings_colors.scss";
+@import "02_settings_typography.scss";
+@import "03_settings_mixins_media_queries.scss";
+@import "04_settings_global.scss";
+
+* {
+	display: block;
+}
+
+:root {
+	margin: 3em;
+	background: $body-bg;
+	color: $body-font-color;
+	font-family: $body-font-family;
+}
+
+channel {
+	> title {
+		text-align: center;
+		color: lighten($primary-color, 25%);
+		font-family: $header-font-family;
+		font-size: $font-size-h1 * 1.5;
+		font-weight: bolder;
+		&::before {
+			content: 'RSS Feed for ';
+			font-weight: initial;
+		}
+		&::after {
+			content: "This RSS feed is meant to be used by RSS reader applications and websites.";
+			display: block;
+			padding: 1em;
+			background-color: $alert-color;
+			color: #fff;
+			font-family: initial;
+			font-size: initial;
+			letter-spacing: initial;
+		}
+	}
+	
+	> description,
+	> link {
+		display: none;
+	}
+}
+
+item {
+	padding: 1em 0;
+	border-bottom: 1px solid invert($body-bg);
+	&:last-child {
+		border-bottom: none;
+	}
+
+	> title {
+		color: $secondary-color;
+		font-family: $header-font-family;
+		font-size: $font-size-h1;
+		margin-bottom: 0.5em;
+	}
+
+	> link {
+		color: $primary-color;
+	}
+
+	> pubDate {
+		color: $grey-5;
+		font-size: small;
+	}
+
+	> description {
+		margin-top: 1em;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow:ellipsis;
+	}
+
+	> guid,
+	> category {
+		display: none;
+	}
+}

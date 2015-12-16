@@ -1,0 +1,31 @@
+{% comment %}
+*
+* This include lets you easily display an alert. To use this include no `.html` ending is necessary.
+*
+* You can use the following kinds of alerts:
+*
+*  - warning  (foundation built-in)
+*  - info     (foundation built-in)
+*  - success  (foundation built-in)
+*  - alert    (foundation built-in)
+*  - text     (foundation built-in)
+*  - terminal (custom, see Alerts in _sass/_09_elements.scss)
+*  - ...      (define your own: .alert-box.<alert-type> { @include alert-style(<bg-color>);)
+*
+* You can even use markdown and <html>-tags inside the alert, but beware to use " and ' properly; for example:
+*
+*     {% include alert info='Show an info alert with <b>outstanding</b> <a href="#info">information</a>.' %}
+*
+*     {% include alert info='Show an info alert with *outstanding* [information](#info).' %}
+*
+*     {% include alert info='Show an info alert with *outstanding* <a href="#info">information</a>.' %}
+*
+* You can also call for additional classes to be put on the alert div:
+*
+*     {% include alert success="Yay! you did it!" classes='round' %}
+*
+{% endcomment %}
+{% for entry in include %}
+{% if entry[0] == 'classes' %}{% continue %}{% endif %}
+<div class="alert-box {{ entry[0] }} radius {{ include.classes }}">{{ entry[1] | markdownify }}</div>
+{% endfor %}

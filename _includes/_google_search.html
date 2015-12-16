@@ -1,0 +1,16 @@
+{% comment %}TODO consider https://developers.google.com/custom-search/docs/element{% endcomment %}
+{% capture google_search_site %}{{ site.url }}{{ site.baseurl }}/{% endcapture %}
+<script language="Javascript" type="text/javascript">
+	function google_search() {
+		var query = document.getElementById("google-search").value;
+		window.open("https://www.google.com/search?q=" + query + "+site:" + "{{ google_search_site | cgi_escape }}");
+	}
+</script>
+
+<form id="search" onsubmit="google_search(); return false;">
+	<input type="text" id="google-search" placeholder="{{ site.data.language.enter_search_term }}">
+</form>
+<noscript>
+	Search <a href="https://www.google.com/search?q=site:{{ google_search_site | cgi_escape }}" target="_blank">Google</a> for:
+	<pre><code>search-term site:{{ google_search_site }}</code></pre>
+</noscript>

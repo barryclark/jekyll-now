@@ -1,0 +1,262 @@
+{
+  "checksum": {
+    "previous": "c5cdc0a58b7277d1f320a4ad50aa8ae2ad47fa6ed879c164db1cfb75439bd1d9",
+    "current": "c5cdc0a58b7277d1f320a4ad50aa8ae2ad47fa6ed879c164db1cfb75439bd1d9"
+  },
+  "fonts": [
+    "./iconfont.ttf",
+    "./iconfont.svg",
+    "./iconfont.woff",
+    "./iconfont.eot"
+  ],
+  "glyphs": {
+    "archive": {
+      "codepoint": 61696,
+      "source": "svg-files-for-custom-font/archive.svg"
+    },
+    "browser": {
+      "codepoint": 61697,
+      "source": "svg-files-for-custom-font/browser.svg"
+    },
+    "calendar": {
+      "codepoint": 61747,
+      "source": "svg-files-for-custom-font/calendar.svg"
+    },
+    "camera": {
+      "codepoint": 61698,
+      "source": "svg-files-for-custom-font/camera.svg"
+    },
+    "chat": {
+      "codepoint": 61699,
+      "source": "svg-files-for-custom-font/chat.svg"
+    },
+    "check": {
+      "codepoint": 61700,
+      "source": "svg-files-for-custom-font/check.svg"
+    },
+    "chevron-down": {
+      "codepoint": 61701,
+      "source": "svg-files-for-custom-font/chevron-down.svg"
+    },
+    "chevron-left": {
+      "codepoint": 61702,
+      "source": "svg-files-for-custom-font/chevron-left.svg"
+    },
+    "chevron-right": {
+      "codepoint": 61703,
+      "source": "svg-files-for-custom-font/chevron-right.svg"
+    },
+    "chevron-up": {
+      "codepoint": 61704,
+      "source": "svg-files-for-custom-font/chevron-up.svg"
+    },
+    "circle-with-cross": {
+      "codepoint": 61705,
+      "source": "svg-files-for-custom-font/circle-with-cross.svg"
+    },
+    "circle-with-minus": {
+      "codepoint": 61706,
+      "source": "svg-files-for-custom-font/circle-with-minus.svg"
+    },
+    "circle-with-plus": {
+      "codepoint": 61707,
+      "source": "svg-files-for-custom-font/circle-with-plus.svg"
+    },
+    "cloud": {
+      "codepoint": 61708,
+      "source": "svg-files-for-custom-font/cloud.svg"
+    },
+    "code": {
+      "codepoint": 61709,
+      "source": "svg-files-for-custom-font/code.svg"
+    },
+    "cog": {
+      "codepoint": 61710,
+      "source": "svg-files-for-custom-font/cog.svg"
+    },
+    "dropbox": {
+      "codepoint": 61711,
+      "source": "svg-files-for-custom-font/dropbox.svg"
+    },
+    "edit": {
+      "codepoint": 61712,
+      "source": "svg-files-for-custom-font/edit.svg"
+    },
+    "export": {
+      "codepoint": 61713,
+      "source": "svg-files-for-custom-font/export.svg"
+    },
+    "eye": {
+      "codepoint": 61714,
+      "source": "svg-files-for-custom-font/eye.svg"
+    },
+    "facebook": {
+      "codepoint": 61715,
+      "source": "svg-files-for-custom-font/facebook.svg"
+    },
+    "feather": {
+      "codepoint": 61716,
+      "source": "svg-files-for-custom-font/feather.svg"
+    },
+    "github": {
+      "codepoint": 61717,
+      "source": "svg-files-for-custom-font/github.svg"
+    },
+    "globe": {
+      "codepoint": 61718,
+      "source": "svg-files-for-custom-font/globe.svg"
+    },
+    "heart": {
+      "codepoint": 61719,
+      "source": "svg-files-for-custom-font/heart.svg"
+    },
+    "heart-outlined": {
+      "codepoint": 61720,
+      "source": "svg-files-for-custom-font/heart-outlined.svg"
+    },
+    "home": {
+      "codepoint": 61721,
+      "source": "svg-files-for-custom-font/home.svg"
+    },
+    "instagram": {
+      "codepoint": 61722,
+      "source": "svg-files-for-custom-font/instagram.svg"
+    },
+    "lab-flask": {
+      "codepoint": 61723,
+      "source": "svg-files-for-custom-font/lab-flask.svg"
+    },
+    "leaf": {
+      "codepoint": 61724,
+      "source": "svg-files-for-custom-font/leaf.svg"
+    },
+    "linkedin": {
+      "codepoint": 61725,
+      "source": "svg-files-for-custom-font/linkedin.svg"
+    },
+    "mail": {
+      "codepoint": 61726,
+      "source": "svg-files-for-custom-font/mail.svg"
+    },
+    "message": {
+      "codepoint": 61727,
+      "source": "svg-files-for-custom-font/message.svg"
+    },
+    "mic": {
+      "codepoint": 61728,
+      "source": "svg-files-for-custom-font/mic.svg"
+    },
+    "network": {
+      "codepoint": 61729,
+      "source": "svg-files-for-custom-font/network.svg"
+    },
+    "paper-plane": {
+      "codepoint": 61730,
+      "source": "svg-files-for-custom-font/paper-plane.svg"
+    },
+    "pinterest": {
+      "codepoint": 61731,
+      "source": "svg-files-for-custom-font/pinterest.svg"
+    },
+    "price-tag": {
+      "codepoint": 61732,
+      "source": "svg-files-for-custom-font/price-tag.svg"
+    },
+    "rocket": {
+      "codepoint": 61733,
+      "source": "svg-files-for-custom-font/rocket.svg"
+    },
+    "rss": {
+      "codepoint": 61734,
+      "source": "svg-files-for-custom-font/rss.svg"
+    },
+    "soundcloud": {
+      "codepoint": 61735,
+      "source": "svg-files-for-custom-font/soundcloud.svg"
+    },
+    "star": {
+      "codepoint": 61736,
+      "source": "svg-files-for-custom-font/star.svg"
+    },
+    "star-outlined": {
+      "codepoint": 61737,
+      "source": "svg-files-for-custom-font/star-outlined.svg"
+    },
+    "thumbs-down": {
+      "codepoint": 61738,
+      "source": "svg-files-for-custom-font/thumbs-down.svg"
+    },
+    "thumbs-up": {
+      "codepoint": 61739,
+      "source": "svg-files-for-custom-font/thumbs-up.svg"
+    },
+    "tree": {
+      "codepoint": 61748,
+      "source": "svg-files-for-custom-font/tree.svg"
+    },
+    "tumblr": {
+      "codepoint": 61740,
+      "source": "svg-files-for-custom-font/tumblr.svg"
+    },
+    "twitter": {
+      "codepoint": 61741,
+      "source": "svg-files-for-custom-font/twitter.svg"
+    },
+    "upload-to-cloud": {
+      "codepoint": 61742,
+      "source": "svg-files-for-custom-font/upload-to-cloud.svg"
+    },
+    "video": {
+      "codepoint": 61743,
+      "source": "svg-files-for-custom-font/video.svg"
+    },
+    "vimeo": {
+      "codepoint": 61744,
+      "source": "svg-files-for-custom-font/vimeo.svg"
+    },
+    "warning": {
+      "codepoint": 61745,
+      "source": "svg-files-for-custom-font/warning.svg"
+    },
+    "xing": {
+      "codepoint": 61749,
+      "source": "svg-files-for-custom-font/xing.svg"
+    },
+    "youtube": {
+      "codepoint": 61746,
+      "source": "svg-files-for-custom-font/youtube.svg"
+    }
+  },
+  "options": {
+    "autowidth": false,
+    "config": "fontcustom.yml",
+    "css_selector": ".icon-{{glyph}}",
+    "debug": false,
+    "font_ascent": 448,
+    "font_descent": 64,
+    "font_design_size": 20,
+    "font_em": 512,
+    "font_name": "iconfont",
+    "force": false,
+    "input": {
+      "templates": "svg-files-for-custom-font",
+      "vectors": "svg-files-for-custom-font"
+    },
+    "no_hash": true,
+    "output": {
+      "css": ".",
+      "fonts": ".",
+      "preview": "."
+    },
+    "preprocessor_path": null,
+    "quiet": false,
+    "templates": [
+      "css",
+      "preview"
+    ]
+  },
+  "templates": [
+    "./iconfont.css",
+    "./iconfont-preview.html"
+  ]
+}

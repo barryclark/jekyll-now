@@ -1,0 +1,39 @@
+{% comment %}
+*
+* This include creates a next/previous link to a post of the same category
+* using the categories-variable in front matter.
+*
+* Use ›  {% include next-previous-post-in-category %}
+*
+{% endcomment %}
+
+
+{% comment %}
+*
+* assign FIRST category from categories variable from front matter to cat
+* and make a string from the array by using › join: ''
+*
+{% endcomment %}
+
+{% assign cat = page.categories | first | join: '' %}
+{% for post in site.categories.[cat] %}
+{% if post.url == page.url %}
+{% assign post_index0 = forloop.index0 %}
+{% assign post_index1 = forloop.index %}
+{% endif %}
+{% endfor %}
+{% for post in site.categories.[cat] %}
+{% if post_index0 == forloop.index %}
+{% assign next_post = post.url %}
+{% endif %}
+{% if post_index1 == forloop.index0 %}
+{% assign prev_post = post.url %}
+{% endif %}
+{% endfor %}
+{% if next_post %}
+<a class="left button tiny radius icon-chevron-left r15" href="{{ next_post }}">{{ site.data.language.next_post_in }} {{ cat | upcase }}</a>
+{% endif %}
+{% if prev_post %}
+<a class="button tiny radius" href="{{ prev_post }}">{{ site.data.language.previous_post_in }} {{ cat | upcase }}<span class="icon-chevron-right"></span></a>
+{% endif %}
+

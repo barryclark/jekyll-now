@@ -1,0 +1,60 @@
+@charset "utf-8";
+/* TOC – Typography variables
+
+Modular Scale › http://www.modularscale.com//?16,36&px&1.25&web&table
+
+- Fonts
+- Font Weight
+- Font Size Variables
+
+*/
+
+@import "functions"; // Allows the use of rem-calc() or lower-bound() in your settings
+
+
+
+/* Fonts
+------------------------------------------------------------------- */
+
+$base-font-size: 16px;
+$rem-base: $base-font-size;
+// $base-line-height is 24px while $base-font-size is 16px
+$base-line-height: 1.5 !default;
+
+
+$font-family-sans-serif: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-serif: "Volkhov", Georgia, Times, serif;
+$font-family-monospace: "Lucida Console", Monaco, monospace;
+
+$body-font-family: $font-family-sans-serif;
+$body-font-weight: normal;
+$body-font-style: normal;
+
+$header-font-family: $font-family-serif;
+
+
+
+/* Font Weight
+------------------------------------------------------------------- */
+
+$font-weight-normal: normal;
+$font-weight-bold: bold;
+
+
+
+/* Font Size Variables
+------------------------------------------------------------------- */
+
+$font-size-p:    	$base-font-size;
+$font-size-h1:      2.441em;
+$font-size-h2:      1.953em;
+$font-size-h3:      1.563em;
+$font-size-h4:      1.25em;
+$font-size-h5:      1.152em;
+$font-size-small:   0.8em;
+
+.font-size-h1   { font-size: $font-size-h1; }
+.font-size-h2   { font-size: $font-size-h2; }
+.font-size-h3   { font-size: $font-size-h3; }
+.font-size-h4   { font-size: $font-size-h4; }
+.font-size-h5   { font-size: $font-size-h5; }

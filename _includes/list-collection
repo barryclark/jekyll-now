@@ -1,0 +1,20 @@
+{% comment %}
+*   
+*   This include lets you loop through a collection to list
+*   all entries in that collection.
+*   
+*   If you set »published: false« in front matter of a collection page 
+*   the page gots filtered out via unless
+*
+*   Example: {% include list-collection ollection='wordpress' %}
+*   
+{% endcomment %}
+
+<ul class="side-nav">
+  {% for page in site.[include.collection] %}
+    {% unless page.published == false %}
+    <li><a href="{{ site.url }}{{ page.url }}">{{ page.title }}</a></li>
+    {% endunless %}
+  {% endfor %}
+  <li>&nbsp;</li>
+</ul>
