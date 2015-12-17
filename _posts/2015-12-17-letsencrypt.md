@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How-to: Leverage Let's Encrypt on an Azure Ubuntu VM
+title: How-to - Leverage Let's Encrypt on an Azure Ubuntu VM
 subtitle: Create free valid SSL certificates in 20 minutes.
-description: How-to: Leverage Let's Encrypt on an Azure Ubuntu VM
+description: How-to - Leverage Let's Encrypt on an Azure Ubuntu VM
 category: how-to
 author: Martin
 author_email: martin.danielsson@haufe-lexware.com 
