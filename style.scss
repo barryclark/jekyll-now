@@ -411,6 +411,10 @@ nav {
     padding: 1.5rem;
   }
 
+  img {
+    width: 100%;
+  }
+
   .caption {
     font-weight: 400;
     font-size: 14px;
@@ -702,7 +706,7 @@ nav {
     }
   }
 
-  ol {
+  ol, ul {
     width: 700px;
     margin-left: auto;
     margin-right: auto;
@@ -732,6 +736,18 @@ nav {
   figure {
     width: 700px;
     margin: 40px auto;
+
+    img {
+      width: 100%;
+    }
+
+    .img-half {
+      width: 347px;
+    }
+
+    .img-third {
+      width: 229px;
+    }
 
     @include mobile {
       width: 100%;
