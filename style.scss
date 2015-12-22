@@ -286,8 +286,35 @@ figure.highlight{
     padding: 0;
 }
 figure img{
-    width: 100% !important;
+    width: 100% ;
     padding: 0px;
+}
+
+.gallery-slick{
+    figure{
+        padding:0px;
+        margin-bottom:0px;
+    }
+    .figimg{
+        margin-bottom:0!important;
+    }
+    .figimg img{
+        width:98%;
+        margin-top:5px;
+    }
+    figcaption{
+    left: 5%;
+    border-right: none;
+    position: relative;
+    width: 90%;
+    right: 5%;
+    padding-top: 6px;
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+    float:left;
+    text-align: center;
+    padding-bottom:10px;
+    }
 }
 figcaption {
     position: absolute;
