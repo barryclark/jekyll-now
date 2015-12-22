@@ -556,7 +556,29 @@ header.single-header .desc{
 }
 
 /* SINGLE POST (all this comes from my previous blog, keep DRY) */
-
+// scream
+.shout{
+    display: flex;
+    header{
+        width: 100%;
+    }
+    .imgscream{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+    }
+    .scream{
+        z-index: 4;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        font-size: 14rem;
+        @include mobile-small{
+            font-size: 7.5rem;
+        }
+    }
+}
 
 #single-post .entry{
     font-family: "Merriweather", serif;
