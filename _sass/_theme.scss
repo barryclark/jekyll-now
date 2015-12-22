@@ -558,7 +558,6 @@ header.single-header .desc{
 /* SINGLE POST (all this comes from my previous blog, keep DRY) */
 // scream
 .shout{
-    display: flex;
     header{
         width: 100%;
     }
@@ -568,14 +567,35 @@ header.single-header .desc{
         position: absolute;
         z-index: 1;
     }
-    .scream{
+    .scream {
+        height: 100%;
+        display: flex;
+  align-items: center;
+  justify-content: center;
+        flex-flow: column;
+        position: absolute;
+        p{
+            flex-grow: 1;
+            color: #fff;
+            z-index: 4;
+            margin-bottom: 0px;
+        }
+        h1{
+        flex-grow: 2;
         z-index: 4;
         padding: 10px;
-        justify-content: center;
-        align-items: center;
-        font-size: 14rem;
+        font-size: 9em;
+        color: #fff;
+        font-family: akularegular, merriweather;
+        position: relative;
+        text-align: center;
+        width: 100%;
+        text-shadow: 0px 2px 1px #242424;
+        margin-bottom: 10px;
+            padding-top: 10%;
         @include mobile-small{
             font-size: 7.5rem;
+        }
         }
     }
 }
