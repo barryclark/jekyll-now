@@ -1,4 +1,6 @@
-# My Github page is currently based on barryclark's Jekyll Now
+# A first stab at a github blog.
+
+Currently based on barryclark's Jekyll Now
 
 **Jekyll** is a static site generator that's perfect for GitHub hosted blogs ([Jekyll Repository](https://github.com/jekyll/jekyll))
 
