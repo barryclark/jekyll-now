@@ -20,40 +20,26 @@ Both 32 and 64 bit versions of Manjaro are available in the following flavours (
 
 ## XFCE
 
-  - **[manjaro-xfce 15.09 (64 bit)](http://sourceforge.net/projects/manjarolinux/files/release/15.09/xfce/manjaro-xfce-15.09-x86_64.iso)**
-   `SHA1SUM: 3f69de2a01bfff7ad187c3e13de6147c801663b7`
-  - **[manjaro-xfce 15.09 (32 bit)](http://sourceforge.net/projects/manjarolinux/files/release/15.09/xfce/manjaro-xfce-15.09-i686.iso)**
-   `SHA1SUM: 57d2591562dcf6ec260328cfbf4dd09dd59a6259`
-
-#### Testbuilds
-
-  - [manjaro-xfce 15.12-rc3 (64 bit)](http://sourceforge.net/projects/manjarotest/files/15.12/xfce/15.12-rc3/manjaro-xfce-15.12-rc3-x86_64.iso)
-   `SHA1SUM: a6ff359900292d07ffaf8e2f3af9346fb4921dab`
-  - [manjaro-xfce 15.12-rc3 (32 bit)](http://sourceforge.net/projects/manjarotest/files/15.12/xfce/15.12-rc3/manjaro-xfce-15.12-rc3-i686.iso)
-   `SHA1SUM: cd69903d60b13d69b20e00f5b8cce75a448ebe2a`
+  - **[manjaro-xfce 15.12 (64 bit)](http://sourceforge.net/projects/manjarolinux/files/release/15.12/xfce/manjaro-xfce-15.12-x86_64.iso)**
+   `SHA1SUM: ba3322bcd7a34855582913b581abecc6b81e256e`
+  - **[manjaro-xfce 15.12 (32 bit)](http://sourceforge.net/projects/manjarolinux/files/release/15.12/xfce/manjaro-xfce-15.12-i686.iso)**
+   `SHA1SUM: 47000216021d95a58456c7a3f85f895939963e14`
 
 ## KDE
 
-  - **[manjaro-kde 15.09 (64 bit)](http://sourceforge.net/projects/manjarolinux/files/release/15.09/kde/manjaro-kde-15.09-x86_64.iso)**
-  `SHA1SUM: 1c03a201b7ab69c834105809cba6d972638d294f`
-  - **[manjaro-kde 15.09 (32 bit)](http://sourceforge.net/projects/manjarolinux/files/release/15.09/kde/manjaro-kde-15.09-i686.iso)**
-  `SHA1SUM: 9784b3b1551d8c5aec73342a7973e7bfa6e1a0fc`
-
-#### Testbuilds
-
-  - [manjaro-kde 15.12-rc3 (64 bit)](http://sourceforge.net/projects/manjarotest/files/15.12/kde/15.12-rc3/manjaro-kde-15.12-rc3-x86_64.iso)
-   `SHA1SUM: a017422af866465f6678d5371951e7b850c401d1`
-  - [manjaro-kde 15.12-rc3 (32 bit)](http://sourceforge.net/projects/manjarotest/files/15.12/kde/15.12-rc3/manjaro-kde-15.12-rc3-i686.iso)
-   `SHA1SUM: dba01fd91e64e4e1092c723a1386694659096bff`
+  - **[manjaro-kde 15.12 (64 bit)](http://sourceforge.net/projects/manjarolinux/files/release/15.12/kde/manjaro-kde-15.12-x86_64.iso)**
+  `SHA1SUM: c25db8c82904f163f1148c4a7e0b843601c49c9d`
+  - **[manjaro-kde 15.12 (32 bit)](http://sourceforge.net/projects/manjarolinux/files/release/15.12/kde/manjaro-kde-15.12-i686.iso)**
+  `SHA1SUM: 3c8e9477af943cbfb15af73396e7a02f62b457df`
 
 ## Net-Edition
 
 The NET edition of Manjaro provides a base installation without a pre-installed display manager, desktop environment, or any desktop software applications. It allows you to build your own version of Manjaro from the ground up.
 
-  - **[manjaro-net 15.09 (64 bit)](http://sourceforge.net/projects/manjarolinux/files/release/15.09/netinstall/manjaro-net-15.09-x86_64.iso)**
-  `SHA1SUM: c54470171d9a935f3cd0dfca4c4bfe43af9ea434`
-  - **[manjaro-net 15.09 (32 bit)](http://sourceforge.net/projects/manjarolinux/files/release/15.09/netinstall/manjaro-net-15.09-i686.iso)**
-  `SHA1SUM: f4901a70077e3901d731b3bc69f744dba7195850`
+  - **[manjaro-net 15.12 (64 bit)](http://sourceforge.net/projects/manjarolinux/files/release/15.12/netinstall/manjaro-net-15.12-x86_64.iso)**
+  `SHA1SUM: a7560ba40fa0282459b46c9295a574aadd24275a`
+  - **[manjaro-net 15.12 (32 bit)](http://sourceforge.net/projects/manjarolinux/files/release/15.12/netinstall/manjaro-net-15.12-i686.iso)**
+  `SHA1SUM: 91d721f0325e62685a18447f9ebac4e37c32033c`
 
 
 ### Other flavours
