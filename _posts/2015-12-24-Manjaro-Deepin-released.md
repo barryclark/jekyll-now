@@ -5,8 +5,7 @@ title: Manjaro Deepin
 
 <img src="https://manjaro.github.io/images/manjaro-deepin-15.12.jpg">
 
-After several months of development we are excited and glad to announce the **first stable release of Manjaro Deepin**.  
-This Community Edition, based on **Manjaro 15.12 'Capella'** features the latest updated **Deepin Deskop Environment 2015 RC** and will be maintained as a rolling release like all other Manjaro editions.   
+After several months of development we are excited and glad to announce the **first stable release of Manjaro Deepin**. This Community Edition, based on **Manjaro 15.12 'Capella'** features the latest updated **Deepin Deskop Environment 2015 RC** and will be maintained as a rolling release like all other Manjaro editions.   
 
 ##Features:
 
