@@ -15,6 +15,8 @@ Welcome to the official Manjaro Linux ISO-image page. Here you will find the lat
  ![MATE]({{ site.baseurl }}/images/desktop-environment-mate.png "MATE edition")
 and more...
 
+<iframe width="640" height="360" src="https://www.youtube.com/embed/KNSfwgGbrTA" frameborder="0" allowfullscreen></iframe>
+
 Both 32 and 64 bit versions of Manjaro are available in the following flavours (i.e. with the following desktop environments pre-installed):
 
 
