@@ -7,7 +7,7 @@ title: Manjaro Mate Edition 15.12 released
 
 Manjaro Mate-Desktop 1.12 released! After a month of testing, stable release comes finaly true!
 
-Wat is changed in Mate-Desktop?
+What had changed in Mate-Desktop?
 
 * Fixes and improvements for GTK3 support across the entire MATE Desktop including GTK 3.18 support.
 * Touchpad support is significantly improved and now features multitouch and natural scrolling.
