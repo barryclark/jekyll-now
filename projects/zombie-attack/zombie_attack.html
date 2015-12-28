@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Battleship</title>
+	<style>
+		body {
+			background-color: black;
+		}
+		div#board {
+			position: relative;
+			width: 1024px;
+			height: 863px;
+			margin: auto;
+			background: url("images/board.jpg") no-repeat;
+		}
+		div#messageArea {
+			position: absolute;
+			top: 30px;
+			left: 170px;
+			color: rgb(83, 175, 19);
+			background-color: white;
+			padding: 10px;
+			font-family: sans-serif;
+			visibility: hidden;
+		}
+
+		table {
+			position: absolute;
+			left: 173px;
+			top: 98px;
+			border-spacing: 0px;
+		}
+		
+		td {
+			width: 94px;
+			height: 94px;
+		}
+ 		
+ 		form {
+			position: absolute;
+			top: 20px;
+			right: 170px;
+			padding: 15px;
+			background-color: rgb(83, 175, 19);
+		}
+
+		form input {
+			background-color: rgb(152, 207, 113);
+			border-color: rgb(83, 175, 19);
+			font-size: 1em;
+		}
+		.hit {
+			background: url("images/zombie.png") no-repeat center center;
+		}
+
+		.miss {
+			background: url("images/miss.png") no-repeat center center;
+		}
+	</style>
+
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <title>Yet Another Zombie Attack Javascript Game</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="author" content="Amin Diary - Aka: LeAmino">
+    <meta name="keywords" content="Creative,404,zombie,animated,animation,css3">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="all">
+
+    <link  href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+   	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/stylesheet.css">
+
+	<script type="text/javascript" src="js/pace.min.js"></script>
+</head>
+
+
+<body>
+
+<div id="preloader">
+  <div id="status">&nbsp;</div>
+  <noscript>JavaScript is off. Please enable to view full site.</noscript>
+</div>
+
+<div class="wrapper " >
+  <div id="big-text" class="wow bounceInDown" data-wow-delay="1s">
+    <h1 id="messageArea">Go ahead, fire!</h1>
+    <!-- <p>You Came to the Wrong Neighborhood!</p> -->
+    <a class="le-btn" href="index.html" >go back</a>
+  </div>
+
+  <div id="texture" class="bg-image"  data-bg-image="images/texture.png" ></div>
+  <div id="clouds" class="wow bounceInDown" data-wow-delay="1s" ></div>
+
+	<div id="board" style="z-index: 1990;">
+		<table>
+			<tr><td id="00"></td><td id="01"></td><td id="02"></td><td id="03"></td><td id="04"></td> <td id="05"></td><td id="06"></td></tr>
+			<tr><td id="10"></td><td id="11"></td><td id="12"></td><td id="13"></td> <td id="14"></td> <td id="15"></td><td id="16"></td></tr>
+			<tr><td id="20"></td><td id="21"></td><td id="22"></td><td id="23"></td> <td id="24"></td> <td id="25"></td><td id="26"></td></tr>
+			<tr><td id="30"></td><td id="31"></td><td id="32"></td><td id="33"></td> <td id="34"></td> <td id="35"></td><td id="36"></td></tr>
+			<tr><td id="40"></td><td id="41"></td><td id="42"></td><td id="43"></td> <td id="44"></td> <td id="45"></td><td id="46"></td></tr>
+			<tr><td id="50"></td><td id="51"></td><td id="52"></td><td id="53"></td> <td id="54"></td> <td id="55"></td><td id="56"></td></tr>
+			<tr><td id="60"></td><td id="61"></td><td id="62"></td><td id="63"></td> <td id="64"></td><td id="65"></td><td id="66"></td></tr>
+		</table>
+		<form>
+			<input type="text" id="guessInput" placeholder="A0"> <input type="button" id="fireButton" value="Fire!">
+		</form>
+	</div>
+  <div id="grass" class="wow bounceInUp" data-wow-delay="1s"></div>
+  <div id="grass2" class="wow bounceInUp" data-wow-delay="1.5s" ></div>
+
+</div>
+    
+
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="js/fontsmoothie.min.js"></script>
+<script type="text/javascript" src="js/plax.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/zombie-attack.js"></script>
+
+</body>
+</html>
