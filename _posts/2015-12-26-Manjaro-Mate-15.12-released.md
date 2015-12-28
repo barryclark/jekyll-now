@@ -64,4 +64,4 @@ Kind regards, Ringo de Kroon - Maintainer
 
 ##Links
 
-* [Download here](https://sourceforge.net/projects/manjarolinux/files/community/Cinnamon/2015.12/)
+* [Download here](https://sourceforge.net/projects/manjarolinux/files/community/MATE/2015.12/)
