@@ -20,9 +20,11 @@ Alguns itens que já estavão nessa condição por algum tempo foram removidos, 
 ainda utilizem algum desses itens.  
 
 Os itens removidos foram:  
-- As tags: <%, <%=, %>, < script language="php">;  
-- A extensão **ereg** e com isso todas as funções da mesma (devendo utilizar a partir de agora a extensão **PCRE**);  
-- A extensão **mysql** e com isso todas as funções da mesma (devendo utilizar a partir de agora a extensão **mysqli** ou **PDO**);
+<ul>
+  <li>As tags: <%, <%=, %>, < script language="php">;</li>
+  <li>A extensão **ereg** e com isso todas as funções da mesma (devendo utilizar a partir de agora a extensão **PCRE**);</li>
+  <li>A extensão **mysql** e com isso todas as funções da mesma (devendo utilizar a partir de agora a extensão **mysqli** ou **PDO**);</li>
+</ul>
 
 ## Uniform Variable Syntax
 
@@ -99,14 +101,28 @@ As novas **exceptions** foram introduzidas para facilitar o tratamento de erros 
 **Recoverable Fatal Errors**, fazendo com que agora possamos capturar essas exceções e tratá-las. As novas **exceptions** foram introduzidas nessa versão de uma
 forma para manter a compatibilidade com versões anteriores. Para incorporar as novas **exceptions** com um impacto mínimo em códigos de versões anteriores, a
 **Hierarquia das Exceptions** teve de sofrer algumas mudanças. Veja abaixo:  
-- Throwable interface  
-    - Exception implements Throwable  
-        - ErrorException extends Exception  
-        - RuntimeException extends Exception  
-    - Error implements Throwable  
-        - TypeError extends Error  
-        - ParseError extends Error  
-        - AssertionError extends Error  
+<ul>
+  <li>
+    Throwable interface
+    <ul>
+      <li>
+        Exception implements Throwable
+        <ul>
+          <li>ErrorException extends Exception</li>
+          <li>RuntimeException extends Exception</li>
+        </ul>
+      </li>
+      <li>
+        Error implements Throwable
+        <ul>
+          <li>TypeError extends Error</li>
+          <li>ParseError extends Error</li>
+          <li>AssertionError extends Error</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
 
 ## Operador de Comparação Combinada (Spacheship Operator)
 
@@ -117,9 +133,11 @@ O operador **spacheship( <=> )** foi introduzido para nos ajudar a fazer compara
 ```
 
 A expressão acima pode nos retornar três resultados diferentes, dependendo do valor das variáveis:  
-- Retorna **-1** se **$a** for menor que **$b**;  
-- Retorna **0** se **$a** e **$b** forem iguais;  
-- Retorna **1** se **$a** for maior que **$b**;  
+<ul>
+  <li>Retorna **-1** se **$a** for menor que **$b**;</li>
+  <li>Retorna **0** se **$a** e **$b** forem iguais;</li>
+  <li>Retorna **1** se **$a** for maior que **$b**;</li>
+</ul>
 
 ## Null Coalesce Operator (??)
 
