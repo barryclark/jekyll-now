@@ -18,9 +18,10 @@ o dobro de requisições por segundo em comparação à versão anterior.
 
 Alguns itens que já estavão nessa condição por algum tempo foram removidos, dessa maneira algumas aplicações podem parar de funcionar corretamente caso
 ainda utilizem algum desses itens.  
-Os itens removidos foram:
-- As tags: <%, <%=, %>, < script language="php">;
-- A extensão **ereg** e com isso todas as funções da mesma (devendo utilizar a partir de agora a extensão **PCRE**);
+
+Os itens removidos foram:  
+- As tags: <%, <%=, %>, < script language="php">;  
+- A extensão **ereg** e com isso todas as funções da mesma (devendo utilizar a partir de agora a extensão **PCRE**);  
 - A extensão **mysql** e com isso todas as funções da mesma (devendo utilizar a partir de agora a extensão **mysqli** ou **PDO**);
 
 ## Uniform Variable Syntax
@@ -97,15 +98,15 @@ quando utilizamos mais de uma cláusula **default** em um **switch** o PHP retor
 As novas **exceptions** foram introduzidas para facilitar o tratamento de erros nas aplicações. As **Engine Exceptions** substituem os **Fatal Errors** e os
 **Recoverable Fatal Errors**, fazendo com que agora possamos capturar essas exceções e tratá-las. As novas **exceptions** foram introduzidas nessa versão de uma
 forma para manter a compatibilidade com versões anteriores. Para incorporar as novas **exceptions** com um impacto mínimo em códigos de versões anteriores, a
-**Hierarquia das Exceptions** teve de sofrer algumas mudanças. Veja abaixo:
-- Throwable interface
-    - Exception implements Throwable
-        - ErrorException extends Exception
-        - RuntimeException extends Exception
-    - Error implements Throwable
-        - TypeError extends Error
-        - ParseError extends Error
-        - AssertionError extends Error
+**Hierarquia das Exceptions** teve de sofrer algumas mudanças. Veja abaixo:  
+- Throwable interface  
+    - Exception implements Throwable  
+        - ErrorException extends Exception  
+        - RuntimeException extends Exception  
+    - Error implements Throwable  
+        - TypeError extends Error  
+        - ParseError extends Error  
+        - AssertionError extends Error  
 
 ## Operador de Comparação Combinada (Spacheship Operator)
 
@@ -115,10 +116,10 @@ O operador **spacheship( <=> )** foi introduzido para nos ajudar a fazer compara
   $a <=> $b
 ```
 
-A expressão acima pode nos retornar três resultados diferentes, dependendo do valor das variáveis:
-- Retorna **-1** se **$a** for menor que **$b**;
-- Retorna **0** se **$a** e **$b** forem iguais;
-- Retorna **1** se **$a** for maior que **$b**;
+A expressão acima pode nos retornar três resultados diferentes, dependendo do valor das variáveis:  
+- Retorna **-1** se **$a** for menor que **$b**;  
+- Retorna **0** se **$a** e **$b** forem iguais;  
+- Retorna **1** se **$a** for maior que **$b**;  
 
 ## Null Coalesce Operator (??)
 
