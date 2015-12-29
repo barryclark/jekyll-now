@@ -9,7 +9,8 @@ name: Miriam Baumann
 description: Student at Quest University Canada
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: ![Alt text](images/me.jpg)
+avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/me.jpg
+
 # https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
 
 #
