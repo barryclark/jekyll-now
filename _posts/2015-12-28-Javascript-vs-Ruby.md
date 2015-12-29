@@ -6,6 +6,7 @@ img_file: ruby-vs-javascript.png
 ---
 I will try and compare Javascript and Ruby... I might not be correct or accurate in all my observations so please feel free to <a href="/contact.html">let me know</a> if there are any discrepancies.
 <!--more-->
+
 <h3>JavaScript is not a compiled language:</h3>
 
 With conventional programming languages like **C**, **C++** or **Java**, you compile the code before you execute it. Compiling takes your code and produces a machine efficient representation of it, usually optimized for runtime performance. Scripting languages are typically interpreted, which means that the browser runs each line of JavaScript code as it gets to it. Scripting languages place less importance on runtime performance, and are more geared towards tasks like prototyping, interactive coding and flexibility. Unlike other languages, JavaScript is delivered, as code, directly to your browser. That’s different!
