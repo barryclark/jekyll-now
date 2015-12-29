@@ -411,7 +411,7 @@ header {
 #big-text {
   position: absolute;
   left: 10%;
-  top: 10%;
+  top: 4%;
   width: 30%;
   z-index: 2000;
 }
