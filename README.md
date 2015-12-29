@@ -1,1 +1,1 @@
-my porfolio running using jekyll
+my porfolio site using jekyll and github pages
