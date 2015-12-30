@@ -1,3 +1,35 @@
+// IMPORTANT PLEASE READ
+
+// For this week's solo challenge, I coded two games...
+// 1- Zombie Attack
+// 2- Trivia
+
+// Currently you are looking at the Zombie Attack Game JS file.
+
+// ZOMBIE ATTACK GAME:
+// The game can be played at: 
+// http://timurcatakli.github.io/projects/zombie-attack/
+// GitHub Code is located at:
+// https://github.com/timurcatakli/timurcatakli.github.io/tree/master/projects/zombie-attack
+
+// When you visit the page you might be impressed with the animations and graphics but you shouldn't be as I used a template for the game.
+// Template could be seen at: http://amindiary.com/demo/zombie-404/
+
+// I customized the z-index of template's css and also made some other small customizations.
+// The board design and the JS code is completely mine which is located at: http://timurcatakli.github.io/projects/zombie-attack/zombie_attack.html
+
+
+
+// TRIVIA
+// The game can be played at: 
+// http://timurcatakli.github.io/projects/trivia/
+// GitHub Code is located at
+// https://github.com/timurcatakli/timurcatakli.github.io/tree/master/projects/trivia
+// It is a simple trivia game. I found a JSON Trivia dataset and utilized it with this game. I used Bootstrap for CSS
+
+
+
+
  // Design Basic Game Solo Challenge
 
 // This is a solo challenge
@@ -414,16 +446,18 @@ console.log(model.zombies);
 // Reflection
 //
 // What was the most difficult part of this challenge?
-// Hardest part of the project is to stick to MVP plan. You complete one feature and something else comes up to your mind and suddenly you have hundreds of lines of code which makes it very time consuming to refactor. Also I ended up writing lots more code in JS than compared to Ruby which made it hard to refactor.
+// 
+// Trying to stick to a MVP plan was the hardest. As the project is about a game, constantly new features comes to your mind which makes it hard to time-box the project. Also getting acustomed to JS way of creating objects, classes, functions was also challenging.
 
 // What did you learn about creating objects and functions that interact with one another?
-
-
+// I learnt about MVC model and created my objects under that umbrealla. Calling methods from different objects was not that hard actually. 
 
 // Did you learn about any new built-in methods you could use in your refactored solution? If so, what were they and how do they work?
-// I liked creating and invoking event handlers (call backs) in order to reflect the code to the page. That was fun. I also gained experience in creating objects and keeping track of the commas for each property.
+// Most of JS methods I used were based on my Ruby knowledge, but I learnt event handlers and methods to access DOM.
 
 // How can you access and manipulate properties of objects?
+// You can access them using dot notation: objectName.propertyName or bracket notation: objectName["propertyName"];
+
 //
 //
 //
