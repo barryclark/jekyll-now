@@ -4,6 +4,7 @@ published: false
 
 
 
+
 # Supercharging Android Applications with Machine Learning Using Tensorflow
 
 In November 2015, Google [announced](https://googleblog.blogspot.com/2015/11/tensorflow-smarter-machine-learning-for.html) and open sourced [TensorFlow](https://www.tensorflow.org/), its latest and greatest machine learning system. Needless to say, this was a huge deal for three simple reasons:
@@ -20,12 +21,12 @@ The Android example page give you an idea on how to build the app, and ultimatel
 ## A Look of Recognition
 The app glances out through your camera and tries to identify the objects it sees. Sometimes it does a good job, other times it can't quite pin down the object, and at times it leads to thought provoking guesses! Overall, it actually feels quite magical.
 
-XXX EXAMPLES
+![android_tensorflow_classifier_results.jpg]({{site.baseurl}}/_posts/android_tensorflow_classifier_results.jpg)
 
-The app accomplishes this feat using a bundled machine learning model running on the device in tensorflow. The model is presumably pre-trained against millions of images so that it can look at the photos the camera feeds it, and then classify the object into its best guess (from the 1001 object classifications it knows). Along with its best guess, it shows a confidence score to indicate how sure it is about its guess.
+
+The app accomplishes this feat using a bundled machine learning model running on the device in tensorflow. The model is pre-trained against millions of images so that it can look at the photos the camera feeds it and classify the object into its best guess (from the 1000 object classifications it knows). Along with its best guess, it shows a confidence score to indicate how sure it is about its guess.
 
 ## App Structure Walkthrough
-
 
 [![android-tensorflow-app-structure.png](https://raw.githubusercontent.com/jalammar/jalammar.github.io/master/_posts/android-tensorflow-app-structure.png)](https://raw.githubusercontent.com/jalammar/jalammar.github.io/master/_posts/android-tensorflow-app-structure.png)
 
@@ -48,8 +49,15 @@ The `native` keywords in these method signatures indicate that these methods are
 
 	JNIEXPORT jint JNICALL
 	TENSORFLOW_METHOD(initializeTensorflow)( ) {
-    // Implementation
+    ...
     }
 
-IMAGE
-The Android Java
+## The Model
+As you read the example's readme.md, you'll notice that it instructs you to download a zip file containing the TensorFlow model and add it to the `assets` directory. This zip file contains two files that are important for us:
+1. `tensorflow_inception_graph.pb`- At 54 MBs unzipped, this file consititutes the majority of the APK size (58 MBs). This is our pre-trained machine learning model and where the magic comes from. It's a pre-built TensorFlow GraphDef describing the structure and weights of the network. If you open the file with a text editor, you'll find 3.3 million lines of hex values looking like this: `0a36 0a05 696e 7075`. That's because this GraphDef is serialized and encoded with Google's [Protocol Buffers](https://developers.google.com/protocol-buffers/?hl=en). 
+2. `imagenet_comp_graph_label_strings.txt`- this contains the 1000 classifications that the output of the model corresponds to (e.g. "kit fox", "English setter", "Siberian husky"). These classifications are [defined](http://image-net.org/challenges/LSVRC/2014/browse-synsets) by the ImageNet Large Scale Visual Recognition Challenge which the model was built to compete in.
+
+The model here is what's known as a deep convolutional neural network. It is built in the Inception architecture described in [Going Deeper with Convolutions](http://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Szegedy_Going_Deeper_With_2015_CVPR_paper.pdf). [Convulutional neural networks](https://youtu.be/bEUX_56Lojc?t=2m53s) are some of the most popular models in deep learning. They have been very successful in image recognition (so much so, that most highly ranked teams in the competition used them).
+
+The model is read from the file and fed into tensorflow when the app starts up. This [code](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/android/jni/tensorflow_jni.cc#L50) is actually really interesting to read and see how to communicate with tensorflow (if you run the app with your device connected to your computer, you can see these helpful log messages printed in logcat).
+   
