@@ -4,5 +4,5 @@ title: New
 permalink: /new/
 ---
 
-about me
+new
 
