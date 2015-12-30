@@ -2,6 +2,7 @@
 published: false
 ---
 
+
 In November 2015, Google [announced](https://googleblog.blogspot.com/2015/11/tensorflow-smarter-machine-learning-for.html) and open sourced [TensorFlow](https://www.tensorflow.org/), its latest and greatest machine learning system. Needless to say, this was a huge deal for three simple reasons:
 1. Machine Learning expertise: Google is probably the dominant force in machine learning. Its prominence in search owes quite a bit to the strides they achieved in machine learning. It employees significant machine learning talents in research and engineering (including distinguished scientists like [Geoffrey Hinton](https://en.wikipedia.org/wiki/Geoffrey_Hinton)).
 2. Scalability: the announcement noted that tensorflow was initially designed for internal use and that it's already in production for some live product features.
@@ -39,7 +40,8 @@ The "native" keywords in these method signatures indicate that these methods are
 
 	JNIEXPORT jint JNICALL
 	TENSORFLOW_METHOD(initializeTensorflow)( <some arguments> ) {
-    
+    }
 
 IMAGE
 The Android Java
+
