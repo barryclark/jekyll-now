@@ -3,8 +3,8 @@ published: false
 ---
 
 
-#
-Supercharging Android Applications with Machine Learning Using Tensorflow
+
+# Supercharging Android Applications with Machine Learning Using Tensorflow
 
 In November 2015, Google [announced](https://googleblog.blogspot.com/2015/11/tensorflow-smarter-machine-learning-for.html) and open sourced [TensorFlow](https://www.tensorflow.org/), its latest and greatest machine learning system. Needless to say, this was a huge deal for three simple reasons:
 1. Machine Learning expertise: Google is probably the dominant force in machine learning. Its prominence in search owes quite a bit to the strides they achieved in machine learning. It employees significant machine learning talents in research and engineering (including distinguished scientists like [Geoffrey Hinton](https://en.wikipedia.org/wiki/Geoffrey_Hinton)).
@@ -15,6 +15,7 @@ This last reason is the operating reason for us here since this post addresses A
 
 The Android example page give you an idea on how to build the app, and ultimately culminates in producing this APK (I built and uploaded the APK to save you some time since the building process requires installing the Android NDK and Bazel, Google's build tool).
 
+
 ِ
 ## A Look of Recognition
 The app glances out through your camera and tries to identify the objects it sees. Sometimes it does a good job, other times it can't quite pin down the object, and at times it leads to thought provoking guesses! Overall, it actually feels quite magical.
@@ -24,6 +25,10 @@ XXX EXAMPLES
 The app accomplishes this feat using a bundled machine learning model running on the device in tensorflow. The model is presumably pre-trained against millions of images so that it can look at the photos the camera feeds it, and then classify the object into its best guess (from the 1001 object classifications it knows). Along with its best guess, it shows a confidence score to indicate how sure it is about its guess.
 
 ## App Structure Walkthrough
+
+
+[![android-tensorflow-app-structure.png](https://raw.githubusercontent.com/jalammar/jalammar.github.io/master/_posts/android-tensorflow-app-structure.png)](https://raw.githubusercontent.com/jalammar/jalammar.github.io/master/_posts/android-tensorflow-app-structure.png)
+
 The core TensorFlow engine is built with C++, but programmers can write their TensorFlow software in either C++ or Python. The Android TensorFlow example uses the C++ interface in the following manner:
 1. On startup, the app launches an Android activity ([CameraActivity.java](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/android/src/org/tensorflow/demo/CameraActivity.java)) which then starts a fragment ([CameraConnectionFragment.java](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/android/src/org/tensorflow/demo/CameraConnectionFragment.java))
 2. The fragment does some setup to basically start the camera and feed the incoming stream of images to an object it instantiates ([TensorflowImageListener.java](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/android/src/org/tensorflow/demo/TensorflowImageListener.java)
