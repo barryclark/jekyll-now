@@ -1,6 +1,8 @@
 ---
 layout: post
-title: First Post
+title: "My Very First Blog Post"
+date: 2014-04-18 13:19:07 -0700
+
 ---
 
-my first blog post
+My blog post
