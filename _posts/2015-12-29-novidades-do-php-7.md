@@ -203,7 +203,7 @@ Além de podermos declarar os tipos de nossos parâmetros, agora também podemos
   var_dump(testReturn());
 ```
 No código acima o valor do retorno será convertido automaticamente para um **boolean**. Caso o **Modo Restrito** esteja ativado o código acima iria produzir um **Fatal Error** com a
-seguinte mensagem: **Fatal error: Uncaught TypeError: Return value of a() must be of the type boolean, integer returned.**.
+seguinte mensagem: **Fatal error: Uncaught TypeError: Return value of testReturn() must be of the type boolean, integer returned.**.
 
 ### Observações importantes
 
