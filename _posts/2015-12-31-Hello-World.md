@@ -3,7 +3,7 @@ layout: post
 title: Hello World!
 ---
 
-This is my first Blog :)
+This is my first Blog on weizhoutang.com:)
 Good Bye to 2015 and Say Hello to 2016.
 
 
