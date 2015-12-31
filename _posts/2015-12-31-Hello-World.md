@@ -1,9 +1,8 @@
 ---
 layout: post
-title: Hello World!
+title: First Blog!
 ---
 
-This is my first Blog here:)
 Good Bye to 2015 and Say Hello to 2016.
 
 
