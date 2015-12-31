@@ -8,8 +8,6 @@ author: Eike Hirsch
 author_email: eike.hirsch@smartsteuer.de
 ---
 
-### Motivation ###
-
 As we at smartsteuer really enjoyed how this app was imagined and eventually created, I thought it might be fun to 
 write about it. This blog post is not that much technical but describes our journey to a product which (hopefully) 
 will create value for our customers. 
