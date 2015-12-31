@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Creating the smartsteuer 'snap' app
+title: Creating the Smartsteuer 'Snap' App
 subtitle: A backstage report
 description: A behind the scenes view of the birth of our youngest creation.
-category: smartsteuer
+category: Smartsteuer
 author: Eike Hirsch
 author_email: eike.hirsch@smartsteuer.de
 ---
