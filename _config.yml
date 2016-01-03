@@ -85,3 +85,4 @@ prose:
         field:
           element: "text"
           label: "title"
+  media: "images"
