@@ -5,7 +5,8 @@ published: false
 
 
 
-# Supercharging Android Applications with Machine Learning Using Tensorflow
+
+# Supercharging Android Apps Using TensorFlow (Google's Open Source Machine Learning Library)
 
 In November 2015, Google [announced](https://googleblog.blogspot.com/2015/11/tensorflow-smarter-machine-learning-for.html) and open sourced [TensorFlow](https://www.tensorflow.org/), its latest and greatest machine learning system. Needless to say, this was a huge deal for three simple reasons:
 1. Machine Learning expertise: Google is probably the dominant force in machine learning. Its prominence in search owes quite a bit to the strides they achieved in machine learning. It employees significant machine learning talents in research and engineering (including distinguished scientists like [Geoffrey Hinton](https://en.wikipedia.org/wiki/Geoffrey_Hinton)).
@@ -28,14 +29,19 @@ The app accomplishes this feat using a bundled machine learning model running on
 
 ## App Structure Walkthrough
 
-[![android-tensorflow-app-structure.png](https://raw.githubusercontent.com/jalammar/jalammar.github.io/master/_posts/android-tensorflow-app-structure.png)](https://raw.githubusercontent.com/jalammar/jalammar.github.io/master/_posts/android-tensorflow-app-structure.png)
+![android-tensorflow-app-structure_1.png]({{site.baseurl}}/_posts/android-tensorflow-app-structure_1.png)
 
 The core TensorFlow engine is built with C++, but programmers can write their TensorFlow software in either C++ or Python. The Android TensorFlow example uses the C++ interface in the following manner:
 1. On startup, the app launches an Android activity ([CameraActivity.java](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/android/src/org/tensorflow/demo/CameraActivity.java)) which then starts a fragment ([CameraConnectionFragment.java](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/android/src/org/tensorflow/demo/CameraConnectionFragment.java))
 2. The fragment does some setup to basically start the camera and feed the incoming stream of images to an object it instantiates ([TensorflowImageListener.java](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/android/src/org/tensorflow/demo/TensorflowImageListener.java)
 3. The listener consults the classifier ([TensorflowClassifier.java](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/android/src/org/tensorflow/demo/TensorflowClassifier.java)) about each image it gets, and returns the classification and confidence score for each image.
 
+
 The good thing is that most of this logic is in normal Android Java SDK territory. So this should be familiar to most Android devs. You may ask "So where is the C++?".
+
+
+![android-tensorflow-app-structure_2.png]({{site.baseurl}}/_posts/android-tensorflow-app-structure_2.png)
+
 
 If you look closely at TensorflowClassifier, you may notice the following three methods:
 
