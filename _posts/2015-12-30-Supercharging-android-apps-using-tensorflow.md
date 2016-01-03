@@ -22,7 +22,7 @@ In November 2015, Google [announced](https://googleblog.blogspot.com/2015/11/ten
 3. Ability to run on Mobile.
 
 This last reason is the operating reason for us here since this post is meant for Android devs. If you examine the [tensorflow repo on GitHub](https://github.com/tensorflow/tensorflow), you'll find a little  [tensorflow/examples/android](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/examples/android) directory. I'll try to shed some light on the Android tensorflow example and some of the things going on under the hood.
-
+<!--more-->
 
 ## A Look of Recognition
 The app glances out through your camera and tries to identify the objects it sees. Sometimes it does a good job, other times it can't quite pin down the object, and at times it leads to thought provoking guesses! Overall, it actually feels quite magical.
