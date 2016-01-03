@@ -12,7 +12,7 @@ published: true
 
 
 
-# Supercharging Android Apps Using TensorFlow (Google's Open Source Machine Learning Library)
+
 ![google-tensorflow-android.jpg]({{site.baseurl}}/_posts/google-tensorflow-android.jpg)
 
 
