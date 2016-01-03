@@ -76,3 +76,11 @@ exclude:
     - LICENSE
     - README.md
     - CNAME
+    
+    
+metadata:
+  _posts:
+    - name: "title"
+      field:
+        element: "text"
+        label: "title"
