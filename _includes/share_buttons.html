@@ -3,7 +3,7 @@
 
   <div class="share-links">
     {% if site.share_facebook %}
-      <a class = "fa fa-facebook" href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Facebook"></a>
+      <a class="fa fa-facebook" href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Facebook"></a>
     {% endif %}
 
     {% if site.share_twitter %}
@@ -35,9 +35,7 @@
     {% endif %}
 
     {% if site.share_hackernews %}
-      <a class = "fa fa-hacker-news" onclick="parent.postMessage('submit','*')" href="https://news.ycombinator.com/submitlink?u={{ site.url }}{{ page.url }}&t={{ page.title }}" rel="nofollow" target="_blank" title="Share on Hacker News"></a>
+      <a class="fa fa-hacker-news" onclick="parent.postMessage('submit','*')" href="https://news.ycombinator.com/submitlink?u={{ site.url }}{{ page.url }}&t={{ page.title }}" rel="nofollow" target="_blank" title="Share on Hacker News"></a>
     {% endif %}
-
-
   </div>
 </div>
