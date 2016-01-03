@@ -8,17 +8,17 @@ I share my background because I believe product management is an excellent path 
 
 Elearning, Instructional Design and higher ed program management roles provide valuable experience that's vital for success in product management. Here are a few things I learned in my prior career that prepared me for a smooth transition to product management:
 
-*Keeping up with emerging technologies, playing, testing and pushing limits.
-*Communicating with stakeholders and conducting needs analysis.
-*Analyzing the market, convening advisory boards, developing, marketing and launching new program offerings.
-*Software selection, procurement, implementation and migration.
-*Budgeting, forecasting and measuring ROI.
-*Creating user support documentation and training resources.
-*Managing a help desk.
-*Project management.
-*Functional and acceptance testing.
-*Design.
-*Diplomacy.
+* Keeping up with emerging technologies, playing, testing and pushing limits.
+* Communicating with stakeholders and conducting needs analysis.
+* Analyzing the market, convening advisory boards, developing, marketing and launching new program offerings.
+* Software selection, procurement, implementation and migration.
+* Budgeting, forecasting and measuring ROI.
+* Creating user support documentation and training resources.
+* Managing a help desk.
+* Project management.
+* Functional and acceptance testing.
+* Design.
+* Diplomacy.
 
 You may not have the title of Product Manager, but you might already be doing the work. When I look back on projects and software implementations I led as an eLearning Director, I can see how each of those might be considered a product. I was responsible for analyzing needs, identifying options, gaining buy-in, procuring solutions, supporting users and providing feedback for improvement to vendors.
 
