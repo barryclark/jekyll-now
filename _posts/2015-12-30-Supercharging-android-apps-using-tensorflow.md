@@ -27,7 +27,7 @@ This last reason is the operating reason for us here since this post is meant fo
 ## A Look of Recognition
 The app glances out through your camera and tries to identify the objects it sees. Sometimes it does a good job, other times it can't quite pin down the object, and at times it leads to thought provoking guesses! Overall, it actually feels quite magical.
 
-![android_tensorflow_classifier_results.jpg]({{site.baseurl}}/_posts/android_tensorflow_classifier_results.jpg)
+![android_tensorflow_classifier_results.jpg]({{site.baseurl}}/images/android_tensorflow_classifier_results.jpg)
 
 
 The app accomplishes this feat using a bundled machine learning model running in tensorflow on the device (no network calls to a backend service). The model is pre-trained against millions of images so that it can look at the photos the camera feeds it and classify the object into its best guess (from the 1000 object classifications it knows). Along with its best guess, it shows a confidence score to indicate how sure it is about its guess.
@@ -36,7 +36,8 @@ The Android example page give you an idea on how to build the app, and ultimatel
 
 ## App Structure Walkthrough
 
-![android-tensorflow-app-structure_1.png]({{site.baseurl}}/_posts/android-tensorflow-app-structure_1.png)
+![android-tensorflow-app-structure_1.png]({{site.baseurl}}/images/android-tensorflow-app-structure_1.png)
+
 
 The core TensorFlow engine is built with C++, but programmers can write their TensorFlow software in either C++ or Python. The Android TensorFlow example uses the C++ interface in the following manner:
 1. On startup, the app launches an Android activity ([CameraActivity.java](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/android/src/org/tensorflow/demo/CameraActivity.java)) which then starts a fragment ([CameraConnectionFragment.java](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/android/src/org/tensorflow/demo/CameraConnectionFragment.java))
@@ -47,7 +48,8 @@ The core TensorFlow engine is built with C++, but programmers can write their Te
 The good thing is that most of this logic is in normal Android Java SDK territory. So this should be familiar to most Android devs. You may ask "So where is the C++?".
 
 
-![android-tensorflow-app-structure_2.png]({{site.baseurl}}/_posts/android-tensorflow-app-structure_2.png)
+![android-tensorflow-app-structure_2.png]({{site.baseurl}}/images/android-tensorflow-app-structure_2.png)
+
 
 
 If you look closely at TensorflowClassifier, you may notice the following methods:
