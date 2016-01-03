@@ -4,11 +4,11 @@ title: Refactoring ListenableFutures to For-Comprehensions
 category: scala
 tags: refactoring, futures, syntax
 ---
-I recently worked through a refactoring from [Guava ```ListenableFuture```s](https://github.com/google/guava/wiki/ListenableFutureExplained) to Scala futures and [for-comprehensions](http://docs.scala-lang.org/tutorials/tour/sequence-comprehensions.html). This was an interesting example of how syntactic support in a language can drastically simplify code. Scala sometimes has a reputation of aiming for terseness over clarity, but there is a middle ground where boilerplate can be eliminated and essential logic can shine through.
+I recently worked through a refactoring from [Guava ```ListenableFuture```](https://github.com/google/guava/wiki/ListenableFutureExplained) to Scala futures and [for-comprehensions](http://docs.scala-lang.org/tutorials/tour/sequence-comprehensions.html). This was an interesting example of how syntactic support in a language can drastically simplify code. Scala sometimes has a reputation of aiming for terseness over clarity, but there is a middle ground where boilerplate can be eliminated and essential logic can shine through.
 
 #Context
 
-I have an application which makes heavy use of ```ListenableFuture```s to orchestrate calls to collaborating microservices. I'm using [finagle](http://twitter.github.io/finagle/), though instead of using [Twitter's future](https://twitter.github.io/util/docs/#com.twitter.util.Future) we wrapped these with Guava ```ListenableFuture``` for various legacy reasons. The app is primarily Java, though a few bits are being rewritten in Scala. A simplified version of this app is presented here.
+I have an application which makes heavy use of ```ListenableFuture``` to orchestrate calls to collaborating microservices. I'm using [finagle](http://twitter.github.io/finagle/), though instead of using [Twitter's future](https://twitter.github.io/util/docs/#com.twitter.util.Future) we wrapped these with Guava ```ListenableFuture``` for various legacy reasons. The app is primarily Java, though a few bits are being rewritten in Scala. A simplified version of this app is presented here.
 
 The app makes a call to a ```User``` service, and gets back a ```ListenableFuture<User>```. It then makes a call to an ```Item``` service to look up items for the user. This is accomplished by ```Futures.transform```, which takes a ```ListenableFuture``` and a function which will be called when the future succeeds.
 
@@ -18,7 +18,7 @@ The boilerplate for the transform is already getting significant. Out of 7 lines
 
 #Method
 
-The first step of taking advantage of Scala, is of course to use Scala. I used IntelliJ's automated refactoring to convert my Java class to Scala. This does a reasonable 70% job of conversion, though a little more work is necessary to complete the translation. At this point I had basic Scala syntax but not much more benefit - we still have ```ListenableFutures``` and are calling the same transform API, requiring the creation of the same anonymous ```AsyncFunction``` classes.
+The first step of taking advantage of Scala, is of course to use Scala. I used IntelliJ's automated refactoring to convert my Java class to Scala. This does a reasonable 70% job of conversion, though a little more work is necessary to complete the translation. At this point I had basic Scala syntax but not much more benefit - we still have ```ListenableFuture``` and are calling the same transform API, requiring the creation of the same anonymous ```AsyncFunction``` classes.
 
 To leverage Scala syntax we are going to need to use a class Scala can work with better than ```ListenableFuture```. The transform operations provided by Guava already seem to match pretty closely to the semantics of map and flatMap, so if we have a class which supplies those, we can use the for-comprehension syntax. Ideally we can just convert to using Scala (or Twitter) futures, but our supporting libraries are still returning ```ListenableFuture```.
 
@@ -28,7 +28,7 @@ In order to approach this in a top-down fashion, I used an implicit conversion. 
 
 This conversion uses the standard trick of setting up a [```Promise```](http://docs.scala-lang.org/overviews/core/futures.html#promises), and wiring up callbacks to resolve that ```Promise```. When the ```ListenableFuture``` resolves, its success or failure callback will execute, resolving the ```Promise``` either as a success or failure. Further future operations can be done on the ```Future``` generated from this promise.
 
-With this conversion in place, I can convert the ```ListenableFuture```s to Scala futures once needed. I did not make this a two-way conversion, so I can only convert to Scala, but this is acceptable as I can just use Scala idioms, including the final callbacks, instead of the ```ListenableFuture``` ones.
+With this conversion in place, I can convert the ```ListenableFuture``` to Scala futures once needed. I did not make this a two-way conversion, so I can only convert to Scala, but this is acceptable as I can just use Scala idioms, including the final callbacks, instead of the ```ListenableFuture``` ones.
 
 Finally comes the payoff: using for-comprehensions instead of transforms.
 
@@ -52,7 +52,7 @@ Due to the way Scala for-comprehensions [desugar](https://gist.github.com/loicde
 
 As another effect of the nested for-comprehension, several of these steps lost their "future-ness" and no longer needed to be separate transform steps. Guava ```ListenableFuture``` allow transformations which either introduce more future operations (equivalent to ```flatMap```) or transformations which are "immediate" without adding more future (equivalent to ```map```). For-comprehensions, on the other hand are intrinsically based around ```flatMap``` (apart from the yield). 
 
-As I did this refactoring, some steps simplified from returning ```ListenableFuture``` (because they were transforming on something like a ```ListenableFuture<Config>```) to just taking and returning plain values. These became map calls, rather than separate generators in the for-comprehension:
+As I did this refactoring, some steps simplified from returning ```ListenableFuture``` (because they were transforming on something like a ```ListenableFuture<Config>```) to just taking and returning plain values. These became ```map``` calls, rather than separate generators in the for-comprehension:
 
 <script src="https://gist.github.com/chrisphelps/98ecd5fe4fc6887d07e2.js"></script>
 
@@ -62,13 +62,13 @@ I had known this before the refactoring, but I would be remiss in not mentioning
 
 ## Testing
 
-For this refactoring, unit tests did not help me very much. Because I had helper functions spread about, highly dependent on ```ListenableFuture```s, there were few unit tests which exercised many of these helpers, and many of the ones that did used mocks to isolate steps. During this refactoring I had some units which helped make sure I didn't break the general flow, but not to give me confidence that the refactored logic still flowed correctly through all the steps.
+For this refactoring, unit tests did not help me very much. Because I had helper functions spread about, highly dependent on ```ListenableFuture```, there were few unit tests which exercised many of these helpers, and many of the ones that did used mocks to isolate steps. During this refactoring I had some units which helped make sure I didn't break the general flow, but not to give me confidence that the refactored logic still flowed correctly through all the steps.
 
 However, I did have extensive integration tests, based in [Cucumber/Gerkhin](https://cucumber.io/) BDD format, which were helpful to ensure continued functioning of the final service. These tests, while slow and more manual to run during development (more on that another time), exercise the assembled service calling to collaborating services in our development environment, and do a sufficient job of ensuring that the refactored logic is correct.
 
 # Final thoughts
 
-This refactoring was rewarding and well worth the effort. I've been wanting to do this refactoring for quite a while, and am pleased with the outcome. The syntax support Scala provides for dealing with ```Future```s is much easier to read, understand, and hopefully maintain. In total, the refactoring removed 25% more code than it added. This sets us up for subsequent rounds of refactoring and cleaning up a very involved aggregation service.
+This refactoring was rewarding and well worth the effort. I've been wanting to do this refactoring for quite a while, and am pleased with the outcome. The syntax support Scala provides for dealing with futures (and similar monadic types) is much easier to read, understand, and hopefully maintain. In total, the refactoring removed 25% more code than it added. This sets us up for subsequent rounds of refactoring and cleaning up a very involved aggregation service.
 
 
 
