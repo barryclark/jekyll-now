@@ -7,9 +7,12 @@ published: false
 
 
 
-# Supercharging Android Apps Using TensorFlow (Google's Open Source Machine Learning Library)
 
-In November 2015, Google [announced](https://googleblog.blogspot.com/2015/11/tensorflow-smarter-machine-learning-for.html) and open sourced [TensorFlow](https://www.tensorflow.org/), its latest and greatest machine learning system. Needless to say, this was a huge deal for three simple reasons:
+# Supercharging Android Apps Using TensorFlow (Google's Open Source Machine Learning Library)
+![google-tensorflow-android.jpg]({{site.baseurl}}/_posts/google-tensorflow-android.jpg)
+
+
+In November 2015, Google [announced](https://googleblog.blogspot.com/2015/11/tensorflow-smarter-machine-learning-for.html) and open sourced [TensorFlow](https://www.tensorflow.org/), its latest and greatest machine learning system. This was a huge deal for three simple reasons:
 1. Machine Learning expertise: Google is probably the dominant force in machine learning. Its prominence in search owes quite a bit to the strides they achieved in machine learning. It employees significant machine learning talents in research and engineering (including distinguished scientists like [Geoffrey Hinton](https://en.wikipedia.org/wiki/Geoffrey_Hinton)).
 2. Scalability: the announcement noted that tensorflow was initially designed for internal use and that it's already in production for some live product features.
 3. Ability to run on Mobile.
@@ -44,15 +47,13 @@ The good thing is that most of this logic is in normal Android Java SDK territor
 ![android-tensorflow-app-structure_2.png]({{site.baseurl}}/_posts/android-tensorflow-app-structure_2.png)
 
 
-If you look closely at TensorflowClassifier, you may notice the following three methods:
+If you look closely at TensorflowClassifier, you may notice the following methods:
 
 	public native int initializeTensorflow( );
 
 	private native String classifyImageBmp(Bitmap bitmap);
 
-	private native String classifyImageRgb(int[] output, int width, int height);
-
-The `native` keywords in these method signatures indicate that these methods are implemented in native C++ code. Look for them under the `android/jni` directory and true enough, you'll find [tensorflow_jni.cc](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/android/jni/tensorflow_jni.cc)
+The `native` keywords in these method signatures indicate that these methods are implemented in native C++ code. Look for them under the "android/jni" directory and true enough, you'll find [tensorflow_jni.cc](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/android/jni/tensorflow_jni.cc)
 
 	JNIEXPORT jint JNICALL
 	TENSORFLOW_METHOD(initializeTensorflow)( ) {
@@ -60,7 +61,7 @@ The `native` keywords in these method signatures indicate that these methods are
     }
 
 ## The Model
-As you read the example's readme.md, you'll notice that it instructs you to download a zip file containing the TensorFlow model and add it to the `assets` directory. This zip file contains two files that are important for us:
+As you read the example's [README.md](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/examples/android), you'll notice that it instructs you to download a zip file containing the TensorFlow model and add it to the `assets` directory. This zip file contains two files that are important for us:
 1. `tensorflow_inception_graph.pb`- At 54 MBs unzipped, this file consititutes the majority of the APK size (58 MBs). This is our pre-trained machine learning model and where the magic comes from. It's a pre-built TensorFlow GraphDef describing the structure and weights of the network. If you open the file with a text editor, you'll find 3.3 million lines of hex values looking like this: `0a36 0a05 696e 7075`. That's because this GraphDef is serialized and encoded with Google's [Protocol Buffers](https://developers.google.com/protocol-buffers/?hl=en) so it can be deserialized across different platforms (think of it as an encoded JSON file). 
 2. `imagenet_comp_graph_label_strings.txt`- this contains the 1000 classifications that the output of the model corresponds to (e.g. "kit fox", "English setter", "Siberian husky"). These classifications are [defined](http://image-net.org/challenges/LSVRC/2014/browse-synsets) by the ImageNet Large Scale Visual Recognition Challenge which the model was built to compete in.
 
@@ -68,5 +69,10 @@ The model here is what's known as a deep convolutional neural network. It is bui
 
 The model is read from the file and fed into tensorflow when the app starts up. This [code](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/android/jni/tensorflow_jni.cc#L50) is actually really interesting to read and see how to communicate with tensorflow (if you run the app with your device connected to your computer, you can see these helpful log messages printed in logcat).
 
+## Build System
+Android apps that utilize TensorFlow cannot be built the traditional Gradle way. Because the app has to contain NDK elements as well as TensorFlow itself, a more elaborate build system is required. The example is configured to be built with Google's [Bazel](http://bazel.io/) build system running from the TensorFlow root directory.
+
+The [WORKSPACE](https://github.com/tensorflow/tensorflow/blob/master/WORKSPACE) file in the root directory specifies the main parameters of the project. The [BUILD](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/android/BUILD) file in the Android directory instructs the build system to build the Java and C++ files of the app.
+
 ## The Possibilities
-Using a pre-trained model in your app seems to be the lowest hanging fruit for mobile TensorFlow apps at the moment.
+Using a pre-trained model in your app seems to be the lowest hanging fruit for mobile TensorFlow apps at the moment. While you can probably train a model on Android, mobile devices are not well suited for the intensive processing required by complex models with larger training sets. 
