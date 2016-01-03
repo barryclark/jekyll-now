@@ -35,6 +35,14 @@ $ jekyll -v
 # This should be jekyll 2.0.0 or later
 ```
 
+#### Install via Bundler
+
+```
+$ git clone git@github.com:johnotander/pixyll.git
+$ cd pixyll
+$ bundle install
+```
+
 ### Fork, then clone
 
 Fork the repo, and then clone it so you've got the code locally.
