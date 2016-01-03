@@ -3,8 +3,8 @@ layout: post
 title: Manjaro Fluxbox 15.12 released
 ---
 
-The Manjaro community is happy to announce a fresh release of the **Fluxbox** edition including the latest packages of the Manjaro 15.12 "Capella" stable branch.
-Both init systems Systemd and OpenRC are available in 64bit and 32bit.
+The Manjaro community is happy to announce a fresh release of the **Fluxbox** edition, including the latest packages of the **Manjaro 15.12 "Capella"** stable branch.
+Both init systems **Systemd** and **OpenRC** are available in 64bit and 32bit.
 
 <img src="https://manjaro.github.io/images/manjaro-fluxbox-15.12.jpg">
 
