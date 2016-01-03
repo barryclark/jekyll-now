@@ -6,6 +6,7 @@ published: false
 
 
 
+
 # Supercharging Android Apps Using TensorFlow (Google's Open Source Machine Learning Library)
 
 In November 2015, Google [announced](https://googleblog.blogspot.com/2015/11/tensorflow-smarter-machine-learning-for.html) and open sourced [TensorFlow](https://www.tensorflow.org/), its latest and greatest machine learning system. Needless to say, this was a huge deal for three simple reasons:
