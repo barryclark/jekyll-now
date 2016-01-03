@@ -77,7 +77,8 @@ exclude:
     - README.md
     - CNAME
     
-    
+excerpt_separator: "<!--more-->"
+
 prose:
   metadata:
     _posts:
