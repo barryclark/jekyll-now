@@ -17,6 +17,7 @@ title: "Supercharging Android Apps With TensorFlow (Google's Open Source Machine
 
 
 In November 2015, Google [announced](https://googleblog.blogspot.com/2015/11/tensorflow-smarter-machine-learning-for.html) and open sourced [TensorFlow](https://www.tensorflow.org/), its latest and greatest machine learning system. This is a big deal for three reasons:
+
 1. Machine Learning expertise: Google is a dominant force in machine learning. Its prominence in search owes a lot to the strides it achieved in machine learning. 
 2. Scalability: the announcement noted that tensorflow was initially designed for internal use and that it's already in production for some live product features.
 3. Ability to run on Mobile.
@@ -40,6 +41,7 @@ The Android example page give you an idea on how to build the app, and ultimatel
 
 
 The core TensorFlow engine is built with C++, but programmers can write their TensorFlow software in either C++ or Python. The Android TensorFlow example uses the C++ interface in the following manner:
+
 1. On startup, the app launches an Android activity ([CameraActivity.java](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/android/src/org/tensorflow/demo/CameraActivity.java)) which then starts a fragment ([CameraConnectionFragment.java](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/android/src/org/tensorflow/demo/CameraConnectionFragment.java))
 2. The fragment does some setup to basically start the camera and feed the incoming stream of images to an object it instantiates ([TensorflowImageListener.java](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/android/src/org/tensorflow/demo/TensorflowImageListener.java))
 3. The listener consults the classifier ([TensorflowClassifier.java](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/android/src/org/tensorflow/demo/TensorflowClassifier.java)) about each image it gets, and receives the classification and confidence score for each image.
@@ -72,6 +74,7 @@ The `native` keywords in these method signatures indicate that these methods are
     }
 
 A Bitmap file cannot be sent to TensorFlow as input. So it has be transformed into an input tensor that we'd send in step #2 in the flow above. A tensor is an n-dimensional array of values, and is the motif tensorflow uses to send data between all of its different parts. This model expect a 3-dimentional array that supplies the Red/Green/Blue value of each pixel in the image. The dimensions are:
+
 1. x-index of the pixel
 2. y-index of the pixel
 3. indication of which value this cell holds (0 for red, 1 for green, 2 for blue)
