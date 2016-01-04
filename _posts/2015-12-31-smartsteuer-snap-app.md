@@ -8,7 +8,7 @@ author: Eike Hirsch
 author_email: eike.hirsch@smartsteuer.de
 ---
 
-As we at smartsteuer really enjoyed how our [Smartsteuer App](https://www.smartsteuer.de/blog/2015/03/03/app-sofort-smartsteuer-als-app/) was imagined and eventually created, I thought it might be fun to write about it. This blog post is not that much technical but describes our journey to a product which (hopefully) will create value for our customers. 
+As we at [smartsteuer](https://www.smartsteuer.de) really enjoyed how our [Smartsteuer Smartphone App](https://www.smartsteuer.de/online/steuererklaerung-online/#smartphone) was imagined and eventually created, I thought it might be fun to write about it. This blog post is not that much technical but describes our journey to a product which (hopefully) will create value for our customers. 
 
 ### Background
 
@@ -18,7 +18,7 @@ At smartsteuer we create tools for people who want to do their tax filings onlin
   
 To answer this seriously you have to do a whole lot of calculations for which you need quite some information from the user. Which in turn would create a process which is _not_ fast and easy. So, some years ago we created this app which would do two things:
 
-1. Only asks for about five thinks every user knows of the top of their heads.
+1. Only asks for about five things every user knows of the top of their heads.
 2. Make some educated guesses to answer all the other questions with rough estimates.
 
 The result couldn't be exact but it was good enough to answer said question. It worked quite well even though you still had to provide those five figures.
