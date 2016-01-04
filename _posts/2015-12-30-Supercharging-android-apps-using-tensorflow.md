@@ -84,7 +84,9 @@ And the value of the cell would be the actual value of R or G or B channel for t
 
 ## The Model
 As you read the example's [README.md](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/examples/android), you'll notice that it instructs you to download a zip file containing the TensorFlow model and add it to the `assets` directory. This zip file contains two files that are important for us:
+
 1. `tensorflow_inception_graph.pb`- At 54 MBs unzipped, this file constitutes the majority of the APK size (58 MBs). This is our trained machine learning model and where the magic comes from. It's a pre-built TensorFlow [Graph](https://www.tensorflow.org/versions/master/api_docs/python/framework.html#Graph) describing the exact operations needed to compute a classification from input image data. This Graph is serialized and encoded into binary with Google's [Protocol Buffers](https://developers.google.com/protocol-buffers/?hl=en) so it can be deserialized across different platforms (think of it as a binary-encoded JSON file). 
+
 2. `imagenet_comp_graph_label_strings.txt`- this contains the 1000 classifications that the output of the model corresponds to (e.g. "kit fox", "English setter", "Siberian husky"). These classifications are [defined](http://image-net.org/challenges/LSVRC/2014/browse-synsets) by the ImageNet Large Scale Visual Recognition Challenge which the model was built to compete in.
 
 The model here is what's known as a deep convolutional neural network. It is built in the Inception architecture described in [Going Deeper with Convolutions](http://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Szegedy_Going_Deeper_With_2015_CVPR_paper.pdf). [Convulutional neural networks](https://youtu.be/bEUX_56Lojc?t=2m53s) are some of the most popular models in deep learning. They have been very successful in image recognition (so much so, that most highly ranked teams in the competition used them).
