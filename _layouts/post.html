@@ -8,10 +8,6 @@ layout: default
   <h1>{{page.title}}</h1>
 
   <p class='info'>      
-    <span>{{page.date | date: "%B %d, %Y" }}</span>
-    /
-    <span>by {{page.author}}</span>
-    
     {% if post.category %}
       {% for site_category in site.data.categories %}
         {% if site_category.slug == post.category %}
@@ -26,7 +22,7 @@ layout: default
     {% endif %}
 
     {% if post.tags.size > 0 %}
-      {% capture tags_content %} with {% if post.tags.size == 1 %}<i class="fa fa-tag"></i>{% else %}<i class="fa fa-tags"></i>{% endif %}: {% endcapture %}
+      {% capture tags_content %} with tags: {% endcapture %}
       {% for post_tag in post.tags %}
           {% for data_tag in site.data.tags %}
             {% if data_tag.slug == post_tag %}
@@ -42,7 +38,11 @@ layout: default
       {% assign tags_content = '' %}
     {% endif %}
 
-    <p id="post-meta">Posted {{ category_content }}{{ tags_content }}</p>
+    <span>{{page.date | date: "%B %d, %Y" }}</span>
+    /
+    <span>by {{page.author}}</span>    
+    /
+    <span>Posted {{ category_content }}{{ tags_content }}</span>
   </p>
 
   <hr/>
