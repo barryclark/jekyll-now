@@ -15,7 +15,7 @@ layout: default
         {% endif %}
       {% endfor %}
       {% if category %}
-        {% capture category_content %} in <span class="label" style="background-color:{{ category.color }}"><a href="/blog/category/{{ category.slug }}/">{{ category.name }}</a></span>{% endcapture %}
+        {% capture category_content %} in <span class="label" style="background-color:{{ category.color }}"><a href="/meta/category/{{ category.slug }}/">{{ category.name }}</a></span>{% endcapture %}
       {% endif %}
     {% else %}
       {% assign category_content = '' %}
@@ -30,7 +30,7 @@ layout: default
             {% endif %}
           {% endfor %}
           {% if tag %}
-            {% capture tags_content_temp %}{{ tags_content }}<a href="/blog/tag/{{ tag.slug }}/">{{ tag.name }}</a>{% if forloop.last == false %}, {% endif %}{% endcapture %}
+            {% capture tags_content_temp %}{{ tags_content }}<a href="/meta/tag/{{ tag.slug }}/">{{ tag.name }}</a>{% if forloop.last == false %}, {% endif %}{% endcapture %}
             {% assign tags_content = tags_content_temp %}
           {% endif %}
       {% endfor %}
