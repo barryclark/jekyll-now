@@ -1,7 +1,7 @@
 ---
 layout: post
 published: false
-title: "Supercharging Android Apps Using TensorFlow (Google's Open Source Machine Learning Library)"
+title: "Supercharging Android Apps With TensorFlow (Google's Open Source Machine Learning Library)"
 ---
 
 
@@ -70,6 +70,17 @@ The `native` keywords in these method signatures indicate that these methods are
 	TENSORFLOW_METHOD(classifyImageBmp)(...) {
     ...
     }
+
+A Bitmap file cannot be sent to TensorFlow as input. So it has be transformed into an input tensor that we'd send in step #2 in the flow above. A tensor is an n-dimensional array of values, and is the motif tensorflow uses to send data between all of its different parts. This model expect a 3-dimentional array that supplies the Red/Green/Blue value of each pixel in the image. The dimensions are:
+1. x-index of the pixel
+2. y-index of the pixel
+3. indication of which value this cell holds (0 for red, 1 for green, 2 for blue)
+And the value of the cell would be the actual value of R or G or B channel for that pixel.
+
+![input_tensor.png]({{site.baseurl}}/images/input_tensor.png)
+
+
+
 
 ## The Model
 As you read the example's [README.md](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/examples/android), you'll notice that it instructs you to download a zip file containing the TensorFlow model and add it to the `assets` directory. This zip file contains two files that are important for us:
