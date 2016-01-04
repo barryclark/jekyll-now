@@ -2,36 +2,43 @@
 layout: default
 ---
 
-<header id="post-header">
-    <h1 id="post-title">{{ page.tag }}</h1>
-    <h4 id="post-subtitle">Articles by tag</h4>
-</header>
+<article class="page">
+    <h1>{{page.title}}</h1>
 
-<div id="post-content">
-    {% if site.tags[page.tag] %}
-        {% for post in site.tags[page.tag] %}
-            {% capture post_year %}{{ post.date | date: '%Y' }}{% endcapture %}
-            {% if forloop.first %}
-                <h3>{{ post_year }}</h3><div class="list-group">
-            {% endif %}
-      
-            {% if forloop.first == false %}
-                {% assign previous_index = forloop.index0 | minus: 1 %}
-                {% capture previous_post_year %}{{ site.tags[page.tag][previous_index].date | date: '%Y' }}{% endcapture %}
-                {% if post_year != previous_post_year %}
-                    </div><h3>{{ post_year }}</h3><div class="list-group">
+    <p class='info'>
+        <span>Articles by tag</span>
+    </p>
+
+    <hr/>
+  
+    <div id="post-content">
+        {% if site.tags[page.tag] %}
+            {% for post in site.tags[page.tag] %}
+                {% capture post_year %}{{ post.date | date: '%Y' }}{% endcapture %}
+                {% if forloop.first %}
+                    <h3>{{ post_year }}</h3><ul>
                 {% endif %}
-            {% endif %}
-      
-            <a href="{{ post.url }}/" class="list-group-item">
-                <h4 class="list-group-item-heading">{{ post.title }}</h4>
-            </a>
+          
+                {% if forloop.first == false %}
+                    {% assign previous_index = forloop.index0 | minus: 1 %}
+                    {% capture previous_post_year %}{{ site.tags[page.tag][previous_index].date | date: '%Y' }}{% endcapture %}
+                    {% if post_year != previous_post_year %}
+                        </div><h3>{{ post_year }}</h3><div class="list-group">
+                    {% endif %}
+                {% endif %}
+          
+                <li>
+                    <a href="{{ post.url }}/" class="read-more">
+                        {{ post.title }}
+                    </a>
+                </li>
 
-            {% if forloop.last %}
-                </div>
-            {% endif %}
-        {% endfor %}
-    {% else %}
-        <p>There are no posts for this tag.</p>
-    {% endif %}
-</div>
+                {% if forloop.last %}
+                    </ul>
+                {% endif %}
+            {% endfor %}
+        {% else %}
+            <p>There are no posts for this tag.</p>
+        {% endif %}
+    </div>
+</article>
