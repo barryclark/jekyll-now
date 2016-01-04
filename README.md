@@ -2,7 +2,9 @@
 
 Pull Requests from our design, development and operations teams of [Haufe.Group](http://www.haufe-lexware.com) and its subsidiaries are greatly appreciated. If you've never contributed to an open source project before we are more than happy to walk you through how to create a pull request.
 
-If you want to find out more about or want to improve our blog the following links might be a good starting point
+Support for Categories and Tags was inspired by [this blog entry](http://www.minddust.com/post/tags-and-categories-on-github-pages/)). A list of the defined categories and tags can be found at `_data/categories.yml` and `_data\tags.yml` respectively. If you want to add new categories or tags, you need to add them to the corresponding `.yml` file and add the matching template into the `meta/category` or `meta/tag` directories.
+
+If you want to find out more about using `github-pages` for blogging or want to improve our blog the following links might be good starting points
 * [Jekyll documentation, i.e. how to include images](http://jekyllrb.com/docs/posts/)
 * [Github pages powered by Jekyll](https://github.com/jekyll/jekyll/wiki/sites)
 
