@@ -4,6 +4,7 @@ title: We are live or How to start a developer blog
 subtite: A short introduction
 description: How to start our developer blog
 category: general
+tags: [cto, communication]
 author: Holger
 author_email: holger.reinhardt@haufe-lexware.com 
 ---

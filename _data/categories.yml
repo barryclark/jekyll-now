@@ -1,0 +1,19 @@
+- slug: general
+  name: General
+  color: '#3498db'
+
+- slug: conference
+  name: Conference
+  color: '#1abc9c'
+
+- slug: howto
+  name: Howto
+  color: '#1abc9c'
+
+- slug: api
+  name: API
+  color: '#1abc9c'
+
+- slug: product
+  name: Product
+  color: '#1abc9c'
