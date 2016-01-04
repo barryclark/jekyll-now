@@ -83,7 +83,7 @@ And the value of the cell would be the actual value of R or G or B channel for t
 
 ![input_tensor.png]({{site.baseurl}}/images/input_tensor.png)
 
-
+(This is somewhat oversimplified. The model actually takes a 4-dimensional tensor, but these three are what we care about for now)
 
 
 ## The Model
