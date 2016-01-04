@@ -3,7 +3,6 @@ layout: post
 title: Markdown skeleton code for blogging
 ---
 
-# Markdown skeleton code for blogging
 - author : bitboom
 - SCOPE : MARKDOWN
 - version : 1.0.0
