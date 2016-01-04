@@ -1,6 +1,6 @@
 ---
 layout: post_by_category
-title: 'Articles by category: general'
+title: General
 category: general
 permalink: /meta/category/general/
 ---
