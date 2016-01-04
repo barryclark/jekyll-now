@@ -8,7 +8,7 @@ author: Eike Hirsch
 author_email: eike.hirsch@smartsteuer.de
 ---
 
-As we at [smartsteuer](https://www.smartsteuer.de) really enjoyed how our [Smartsteuer App](https://www.smartsteuer.de/blog/2015/03/03/app-sofort-smartsteuer-als-app/) was imagined and eventually created, I thought it might be fun to write about it. This blog post is not that much technical but describes our journey to a product which (hopefully) will create value for our customers. 
+As we at [smartsteuer](https://www.smartsteuer.de) really enjoyed how our [Smartsteuer Smartphone App](https://www.smartsteuer.de/online/steuererklaerung-online/#smartphone) was imagined and eventually created, I thought it might be fun to write about it. This blog post is not that much technical but describes our journey to a product which (hopefully) will create value for our customers. 
 
 ### Background
 
