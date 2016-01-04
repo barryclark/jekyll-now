@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: "Supercharging Android Apps With TensorFlow (Google's Open Source Machine Learning Library)"
 ---
 
