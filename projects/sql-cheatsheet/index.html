@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<title>List of Commonly Used SQL Commands</title>
+
+<style type="text/css">
+      header, section, footer, figure {
+        display: block;}
+      body {
+        color: #666666;
+        background-color: #ffdd2d;
+        background-position: center;
+        font-family: Georgia, times, serif;
+        line-height: 1.4em;
+        margin: 0px;}
+      .wrapper {
+        width: 1024px;
+        margin: 20px auto 20px auto;
+        /*border: 2px dashed rgba(255, 0, 0, 0.1);*/
+        background-color: #ffdd2d;}
+      header {
+        height: 330px;
+        background-image: url(/assets/images/cs-header.png);
+        background-position: center;}
+      h1 {
+        text-indent: -9999px;
+        width: 1024px;
+        height: 130px;
+        margin: 0px;}
+
+
+	.boxbox {
+		/* Rectangle 60: */
+		background: #FFFFFF;
+		border: 1px solid rgba(0,0,0,0.10);
+		box-shadow: 0px 5px 7px 0px rgba(0,0,0,0.20);
+		border-radius: 4px;
+		/* Line: */
+		border: 1px solid #DDDDDD;
+		/* ALTER TABLE: */
+		font-size: 26px;
+		color: #F8E71C;
+		line-height: 26px;
+		/* ALTER TABLE table_na: */
+		font-size: 16px;
+		color: #4A4A4A;
+		line-height: 22px;
+		width: 400px;
+		height: 200px;
+		padding: 40px;
+	}
+
+
+      nav, footer {
+        clear: both;
+        color: #ffffff;
+        background-color: #aeaca8;
+        height: 30px;
+    }
+
+		section.cheat {
+		  float: left;
+		  width: 512px;
+		  margin-bottom: 40px;}
+		article {
+		  clear: both;
+		  overflow: auto;
+		  width: 100%;}
+		hgroup {
+		  margin-top:40px;}
+		figure {
+		  float: left;
+		  width: 290px;
+		  height: 220px;
+		  padding: 5px;
+		  margin: 20px;
+		  border: 1px solid #eeeeee;}
+		figcaption {
+		  font-size: 90%;
+		  text-align: left;}
+		a{
+		color: #de6581; text-decoration: none;}
+		h1, h2, h3 {
+		  font-weight: normal;}
+		h2 {
+  margin: 10px 0px 5px 0px;
+        padding: 0px;}
+      h3 {
+        margin: 0px 0px 10px 0px;
+        color: #de6581;}
+      aside h2 {
+        padding: 30px 0px 10px 0px;
+        color: #de6581;}
+      footer {
+        font-size: 80%;
+        padding: 7px 0px 0px 20px;}
+    </style>
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<script type="text/javascript">
+		var json = 
+		[
+			{"title": "ALTER TABLE",
+			"cheat": "ALTER TABLE table_name ADD column datatype;<br><br>\
+			ALTER TABLE lets you add columns to a table in a database."},
+
+			{"title": "AND",
+			"cheat": "SELECT column_name(s)<br>\
+			FROM table_name<br>\
+			WHERE column_1 = value_1<br>\
+			AND column_2 = value_2;<br><br>\
+			AND is an operator that combines two conditions. Both conditions must be true for the row to be included in the result set."},
+
+			{"title": "AS",
+			"cheat": "SELECT column_name AS 'Alias'<br>\
+			FROM table_name;<br><br>\
+			AS is a keyword in SQL that allows you to rename a column or table using an alias."},
+
+			{"title": "AVG",
+			"cheat": "SELECT AVG(column_name)<br>\
+			FROM table_name;<br><br>\
+			AVG() is an aggregate function that returns the average value for a numeric column."},
+
+			{"title": "BETWEEN",
+			"cheat": "SELECT column_name(s)<br>\
+			FROM table_name<br>\
+			WHERE column_name BETWEEN value_1 AND value_2;<br><br>\
+			The BETWEEN operator is used to filter the result set within a certain range. The values can be numbers, text or dates."},
+
+			{"title": "COUNT",
+			"cheat": "SELECT COUNT(column_name)<br>\
+			FROM table_name;<br><br>\
+			COUNT() is a function that takes the name of a column as an argument and counts the number of rows where the column is not NULL."},
+
+			{"title": "CREATE TABLE",
+			"cheat": "CREATE TABLE table_name (column_1 datatype, column_2 datatype, column_3 datatype);<br><br>\
+			CREATE TABLE creates a new table in the database. It allows you to specify the name of the table and the name of each column in the table."},
+
+			{"title": "DELETE",
+			"cheat": "DELETE FROM table_name WHERE some_column = some_value;<br><br>\
+			DELETE statements are used to remove rows from a table."},
+
+			{"title": "GROUP BY",
+			"cheat": "SELECT COUNT(*)<br>\
+			FROM table_name<br>\
+			GROUP BY column_name;<br><br>\
+			GROUP BY is a clause in SQL that is only used with aggregate functions. It is used in collaboration with the SELECT statement to arrange identical data into groups."},
+
+			{"title": "INNER JOIN",
+			"cheat": "SELECT column_name(s) FROM table_1<br>\
+			JOIN table_2<br>\
+			ON table_1.column_name = table_2.column_name;<br><br>\
+			An inner join will combine rows from different tables if the join condition is true."},
+
+			{"title": "INSERT",
+			"cheat": "INSERT INTO table_name (column_1, column_2, column_3) VALUES (value_1, 'value_2', value_3);<br><br>\
+			INSERT statements are used to add a new row to a table."},
+
+			{"title": "LIKE",
+			"cheat": "SELECT column_name(s)<br>\
+			FROM table_name<br>\
+			WHERE column_name LIKE pattern;<br><br>\
+			LIKE is a special operator used with the WHERE clause to search for a specific pattern in a column."},
+
+			{"title": "LIMIT",
+			"cheat": "SELECT column_name(s)<br>\
+			FROM table_name<br>\
+			LIMIT number;<br><br>\
+			LIMIT is a clause that lets you specify the maximum number of rows the result set will have."},
+
+			{"title": "MAX",
+			"cheat": "SELECT MAX(column_name)<br>\
+			FROM table_name;<br><br>\
+			MAX() is a function that takes the name of a column as an argument and returns the largest value in that column."},
+
+			{"title": "MIN",
+			"cheat": "SELECT MIN(column_name)<br>\
+			FROM table_name;<br><br>\
+			MIN() is a function that takes the name of a column as an argument and returns the smallest value in that column."},
+
+			{"title": "OR",
+			"cheat": "SELECT column_name<br>\
+			FROM table_name<br>\
+			WHERE column_name = value_1<br>\
+			OR column_name = value_2;<br><br>\
+			OR is an operator that filters the result set to only include rows where either condition is true."},
+
+			{"title": "ORDER BY",
+			"cheat": "SELECT column_name<br>\
+			FROM table_name<br>\
+			ORDER BY column_name ASC|DESC;<br><br>\
+			ORDER BY is a clause that indicates you want to sort the result set by a particular column either alphabetically or numerically."},
+
+			{"title": "OUTER JOIN",
+			"cheat": "SELECT column_name(s) FROM table_1<br>\
+			LEFT JOIN table_2<br>\
+			ON table_1.column_name = table_2.column_name;<br><br>\
+			An outer join will combine rows from different tables even if the the join condition is not met. Every row in the left table is returned in the result set, and if the join condition is not met, then NULL values are used to fill in the columns from the right table."},
+
+			{"title": "ROUND",
+			"cheat": "SELECT ROUND(column_name, integer)<br>\
+			FROM table_name;<br><br>\
+			ROUND() is a function that takes a column name and an integer as an argument. It rounds the values in the column to the number of decimal places specified by the integer."},
+
+			{"title": "SELECT",
+			"cheat": "SELECT column_name FROM table_name;<br><br>\
+			SELECT statements are used to fetch data from a database. Every query will begin with SELECT."},
+
+			{"title": "SELECT DISTINCT",
+			"cheat": "SELECT DISTINCT column_name FROM table_name;<br><br>\
+			SELECT DISTINCT specifies that the statement is going to be a query that returns unique values in the specified column(s)."},
+
+			{"title": "SUM",
+			"cheat": "SELECT SUM(column_name)<br>\
+			FROM table_name;<br><br>\
+			SUM() is a function that takes the name of a column as an argument and returns the sum of all the values in that column."},
+
+			{"title": "UPDATE",
+			"cheat": "UPDATE table_name<br>\
+			SET some_column = some_value<br>\
+			WHERE some_column = some_value;<br><br>\
+			UPDATE statments allow you to edit rows in a table."},
+
+			{"title": "WHERE",
+			"cheat": "SELECT column_name(s)<br>\
+			FROM table_name<br>\
+			WHERE column_name operator value;<br><br>\
+			WHERE is a clause that indicates you want to filter the result set to include only rows where the following condition is true."}
+	  	];
+
+
+
+	  	function loopCheats(json){
+	  		var n = "";
+	  		for (var i = 0; i < json.length; i++) {
+	  			n = document.write("<section class=\"cheat\"> \r");
+	  			n += document.write("<article class=\"boxbox\"> \r");
+	  			n += document.write("<h3>" + json[i].title + "</h3> \r");
+	  			n += document.write("<hr> \r");
+	  			n += document.write("<p>" + json[i].cheat + "</p> \r");
+	  			n += document.write("</article> \r");
+	  			n += document.write("</section> \r");
+	  		};
+	  		
+	  	};
+	  	var d = new Date();
+		var n = " &copy; " + d.getFullYear();
+	</script>
+
+
+</head>
+
+
+<body>
+<div class="wrapper">
+	<header></header>
+	<script>loopCheats(json);</script>
+	<footer><script>document.write(n);</script> - Timur Catakli</footer>
+</div>
+</body>
+</html>
