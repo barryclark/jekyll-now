@@ -12,11 +12,12 @@ title: "Supercharging Android Apps With TensorFlow (Google's Open Source Machine
 
 
 
+
 ![google-tensorflow-android.jpg]({{site.baseurl}}/images/google-tensorflow-android.jpg)
 
 
 
-In November 2015, Google [announced](https://googleblog.blogspot.com/2015/11/tensorflow-smarter-machine-learning-for.html) and open sourced [TensorFlow](https://www.tensorflow.org/), its latest and greatest machine learning system. This is a big deal for three reasons:
+In November 2015, Google [announced](https://googleblog.blogspot.com/2015/11/tensorflow-smarter-machine-learning-for.html) and open sourced [TensorFlow](https://www.tensorflow.org/), its latest and greatest machine learning library. This is a big deal for three reasons:
 
 1. Machine Learning expertise: Google is a dominant force in machine learning. Its prominence in search owes a lot to the strides it achieved in machine learning. 
 2. Scalability: the announcement noted that tensorflow was initially designed for internal use and that it's already in production for some live product features.
@@ -27,14 +28,14 @@ This last reason is the operating reason for us here since this post is meant fo
 <!--more-->
 
 ## A Look of Recognition
-The app glances out through your camera and tries to identify the objects it sees. Sometimes it does a good job, other times it can't quite pin down the object, and at times it leads to thought provoking guesses! Overall, it actually feels quite magical.
+The app glances out through your camera and tries to identify the objects it sees. Sometimes it does a good job, other times it can't quite pin down the object, and at times it leads to thought provoking guesses! Overall, it feels pretty magical.
 
 ![android_tensorflow_classifier_results.jpg]({{site.baseurl}}/images/android_tensorflow_classifier_results.jpg)
 
 
 The app accomplishes this feat using a bundled machine learning model running in tensorflow on the device (no network calls to a backend service). The model is trained against millions of images so that it can look at the photos the camera feeds it and classify the object into its best guess (from the 1000 object classifications it knows). Along with its best guess, it shows a confidence score to indicate how sure it is about its guess.
 
-The Android example page give you an idea on how to build the app, and ultimately culminates in producing [this APK](https://s3.amazonaws.com/jalammar.github.io/tensorflow_demo.apk) (I built and uploaded the APK to save you some time since the building process requires installing the Android NDK and Bazel, Google's build tool. NOTE: Android 5.0 or later required since the example uses the [Camera2](android.hardware.camera2) package introduced in Android 5.0).
+The Android example page gives you an idea on how to build the app, and ultimately culminates in producing [this APK](https://s3.amazonaws.com/jalammar.github.io/tensorflow_demo.apk) (I built and uploaded the APK to save you some time since the building process requires installing the Android NDK and Bazel, Google's build tool. NOTE: Android 5.0 or later required since the example uses the [Camera2](android.hardware.camera2) package introduced in Android 5.0).
 
 ## App Structure Walkthrough
 
@@ -48,7 +49,7 @@ The core TensorFlow engine is built with C++, but programmers can write their Te
 3. The listener consults the classifier ([TensorflowClassifier.java](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/android/src/org/tensorflow/demo/TensorflowClassifier.java)) about each image it gets, and receives the classification and confidence score for each image.
 
 
-The good thing is that most of this logic is in normal Android Java SDK territory. So this should be familiar to most Android devs. You may ask "So where is the C++?".
+The good thing is that most of this logic is in normal Android Java SDK territory -- so this should be familiar to most Android devs. So where is the C++?
 
 
 ![android-tensorflow-app-structure_2.png]({{site.baseurl}}/images/android-tensorflow-app-structure_2.png)
@@ -74,16 +75,19 @@ The `native` keywords in these method signatures indicate that these methods are
     ...
     }
 
-A Bitmap file cannot be sent to TensorFlow as input. So it has be transformed into an input tensor that we'd send in step #2 in the flow above. A tensor is an n-dimensional array of values, and is the motif tensorflow uses to send data between all of its different parts. This model expect a 3-dimentional array that supplies the Red/Green/Blue value of each pixel in the image. The dimensions are:
+[JNI](https://developer.android.com/training/articles/perf-jni.html) (short for Java Native Interface) is a way in which the Java parts of an Android app can communicate with the native C++ parts. So when we call `classifyImageBmp(bitmap)` in our Java code, it will actually invoke the C++ function exported in tensorflow_jni.cc and return the value it returns.
 
-1. x-index of the pixel
-2. y-index of the pixel
+A Bitmap file cannot be sent to TensorFlow as input. So it has be transformed into an input tensor that we'd send in step #2 in the flow above. A tensor is an n-dimensional array of values, and is the motif tensorflow uses to send data between all of its different parts/operations. This model expect a 3-dimensional array that supplies the Red/Green/Blue value of each pixel in the image. The dimensions are:
+
+1. X-index of the pixel
+2. Y-index of the pixel
 3. indication of which value this cell holds (0 for red, 1 for green, 2 for blue)
+
 And the value of the cell would be the actual value of R or G or B channel for that pixel.
 
 ![input_tensor.png]({{site.baseurl}}/images/input_tensor.png)
 
-(This is somewhat oversimplified. The model actually takes a 4-dimensional tensor, but these three are what we care about for now)
+(This is somewhat oversimplified. I glanced over two things for simplicity's sake. First is the conversion from the YUV format that the Android camera exports to the RGB format the model expects. Second is that the model actually takes a 4-dimensional tensor, but these three are the ones we care about)
 
 
 ## The Model
@@ -91,9 +95,9 @@ As you read the example's [README.md](https://github.com/tensorflow/tensorflow/t
 
 1. `tensorflow_inception_graph.pb`- At 54 MBs unzipped, this file constitutes the majority of the APK size (58 MBs). This is our trained machine learning model and where the magic comes from. It's a pre-built TensorFlow [Graph](https://www.tensorflow.org/versions/master/api_docs/python/framework.html#Graph) describing the exact operations needed to compute a classification from input image data. This Graph is serialized and encoded into binary with Google's [Protocol Buffers](https://developers.google.com/protocol-buffers/?hl=en) so it can be deserialized across different platforms (think of it as a binary-encoded JSON file). 
 
-2. `imagenet_comp_graph_label_strings.txt`- this contains the 1000 classifications that the output of the model corresponds to (e.g. "kit fox", "English setter", "Siberian husky"). These classifications are [defined](http://image-net.org/challenges/LSVRC/2014/browse-synsets) by the ImageNet Large Scale Visual Recognition Challenge which the model was built to compete in.
+2. `imagenet_comp_graph_label_strings.txt`- this contains the 1000 classifications that the output of the model corresponds to (e.g. "vending machine", "water bottle", "coffee mug"). These classifications are [defined](http://image-net.org/challenges/LSVRC/2014/browse-synsets) by the ImageNet Large Scale Visual Recognition Challenge which the model was built to compete in.
 
-The model here is what's known as a deep convolutional neural network. It is built in the Inception architecture described in [Going Deeper with Convolutions](http://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Szegedy_Going_Deeper_With_2015_CVPR_paper.pdf). [Convulutional neural networks](https://youtu.be/bEUX_56Lojc?t=2m53s) are some of the most popular models in deep learning. They have been very successful in image recognition (so much so, that most highly ranked teams in the competition used them).
+The model here is what's known as a deep [convolutional neural network](https://youtu.be/bEUX_56Lojc?t=2m53s). It is built in the Inception architecture described in [Going Deeper with Convolutions](http://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Szegedy_Going_Deeper_With_2015_CVPR_paper.pdf). Convolutional neural networks are some of the most popular models in deep learning. They have been very successful in image recognition (so much so, that most highly ranked teams in the competition used them).
 
 The model is read from the file and fed into tensorflow when the app starts up. This [code](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/android/jni/tensorflow_jni.cc#L50)  is actually really interesting to read and see how to communicate with tensorflow (if you run the app with your device connected to your computer, you can see these helpful log messages printed in logcat).
 
@@ -105,4 +109,4 @@ The [WORKSPACE](https://github.com/tensorflow/tensorflow/blob/master/WORKSPACE) 
 ## The Possibilities
 Using a trained model in your app seems to be the lowest hanging fruit for mobile TensorFlow apps at the moment. While you can probably train a model on Android, mobile devices are not well suited for the intensive processing required by complex models with larger training sets.
 
-Want to learn more about machine learning? Consider checking out the [Machine Learning course on Coursera](https://www.coursera.org/learn/machine-learning/). There's also a good discussion in [/r/MachineLearning](https://www.reddit.com/r/MachineLearning/) here: [In your experience, which machine learning course on Coursera (or other MOOC web site) was the best?](https://www.reddit.com/r/MachineLearning/comments/3wno5e/in_your_experience_which_machine_learning_course/). 
+Want to learn more about machine learning? Consider checking out the [Machine Learning course on Coursera](https://www.coursera.org/learn/machine-learning/). There's also a good discussion in [/r/MachineLearning](https://www.reddit.com/r/MachineLearning/) here: [In your experience, which machine learning course on Coursera (or other MOOC web site) was the best?](https://www.reddit.com/r/MachineLearning/comments/3wno5e/in_your_experience_which_machine_learning_course/).
