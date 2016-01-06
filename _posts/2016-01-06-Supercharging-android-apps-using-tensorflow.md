@@ -14,6 +14,7 @@ title: "Supercharging Android Apps With TensorFlow (Google's Open Source Machine
 
 
 
+
 ![google-tensorflow-android.jpg]({{site.baseurl}}/images/google-tensorflow-android.jpg)
 
 
@@ -78,7 +79,7 @@ The `native` keywords in these method signatures indicate that these methods are
 
 [JNI](https://developer.android.com/training/articles/perf-jni.html) (short for Java Native Interface) is a way in which the Java parts of an Android app can communicate with the native C++ parts. So when we call `classifyImageBmp(bitmap)` in our Java code, it will actually invoke the C++ function exported in tensorflow_jni.cc and return the value it returns.
 
-A Bitmap file cannot be sent to TensorFlow as input. It has be transformed into an input tensor that we'd send in step #2 in the flow above. A tensor is an n-dimensional array of values, and is the motif TensorFlow uses to send data between all of its different parts/operations. This model expect a 3-dimensional array that supplies the Red/Green/Blue value of each pixel in the image. The dimensions are:
+A Bitmap file cannot directly be sent to TensorFlow as input. It has be transformed into an input tensor that we'd send in step #2 in the flow above. A tensor is an n-dimensional array of values, and is the motif TensorFlow uses to send data between all of its different parts/operations. This model expect a 3-dimensional array that supplies the Red/Green/Blue value of each pixel in the image. The dimensions are:
 
 1. X-index of the pixel
 2. Y-index of the pixel
