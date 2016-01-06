@@ -41,6 +41,7 @@ permalink: /people/
 
 * Thomas Jefferson High School for Science and Technology
 * Simons Summer Research Program (2015 summer)
+* Intel STS Semifinalist (2016)
 
 ## Michael Li
 ![Michael Li](/images/Michael_Li.jpg){: .profile-photo }
