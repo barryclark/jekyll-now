@@ -43,7 +43,6 @@ flattr_button:
 
 # Post sharing icons
 show_sharing_icons: false
-share_text: 'Share this post!'
 # Change to 'true' to enable individual icons
 share_facebook: false
 share_twitter: false
@@ -54,6 +53,29 @@ share_tumblr: false
 share_reddit: false
 share_stumbleupon: false
 share_hackernews: false
+
+text:
+  pagination:
+    newer: 'Newer'
+    older: 'Older'
+  share_buttons:
+    text:         'Share this post!'
+    facebook:     'Share on Facebook'
+    twitter:      'Share on Twitter'
+    googleplus:   'Share on Google+'
+    linkedin:     'Share on LinkedIn'
+    digg:         'Share on Digg'
+    tumblr:       'Share on Tumblr'
+    reddit:       'Share on Reddit'
+    stumbleupon:  'Share on StumbleUpon'
+    hackernews:   'Share on Hacker News'
+  post:
+    updated:        'Updated'
+    minute_read:    'minute read'
+    related_posts:  'Related Posts'
+  index:
+    coming_soon: 'Coming soon...'
+
 
 # Build settings
 markdown:     kramdown
