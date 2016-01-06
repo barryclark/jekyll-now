@@ -11,9 +11,9 @@ url: http://code.hòa.vn
 
 # Harmony theme configuration. Please change accordingly.
 harmony:
-  name: Harmony
+  name: Hòa
   # Little description about your site
-  description: Harmony is free responsive jekyll theme.
+  description: hơi # người
   # 'meta_description:' Write an awesome description for your new site here.
   # It will appear in your document head meta (for Google search results) and 
   # in your feed.xml site description.
@@ -23,20 +23,20 @@ harmony:
    https://github.com/gayanvirajith/harmony
   basetheme: theme-base-01 # pre defined thmes are darken, blue-water, redish.
   author: # Author details
-    name: Gayan Virajith
-    email: gayanvirajith@gmail.com
-    url: http://gayanvirajith.github.io
+    name: Trương Thế Hòa
+    email: thehoa89@gmail.com
+    url: http://code.hòa.vn
 
   # Google Analytics key, leave blank to ignore
-  google_analytics_key: UA-xxxx-x
+  google_analytics_key: #UA-xxxx-x
 
   # Profile links, leave blank to ignore
   social: 
-    github: gayanvirajith
-    twitter: gayanvirajith
-    facebook: gayanvirajith
-    gplus: +GayanVirajith
-    dribble: gayan
+    github: thehoa
+    twitter: thehoa
+    facebook: truongthehoa
+    gplus: +TheHoaWeb
+    dribble: 
     pinterest: 
   # Toggle disclaimer in footer
   show_disclaimer: true
