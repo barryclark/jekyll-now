@@ -1,10 +1,10 @@
 # Harmony Jekyll theme general configurations 
 
 # Base URL
-baseurl: /harmony
+baseurl: ""
 
 # Site live URL
-url: http://gayan.me
+url: http://code.hòa.vn
 
 # Localhost 
 # url: http://127.0.0.1:4000  
