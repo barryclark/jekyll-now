@@ -47,5 +47,6 @@ permalink: /people/
 
 * James M. Bennett High, Salisbury, Maryland
 * Simons Summer Research Program (2015 summer)
+* Intel STS Semifinalist (2016)
 
 [//]: # # Former members
