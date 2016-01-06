@@ -21,10 +21,10 @@ title: "Supercharging Android Apps With TensorFlow (Google's Open Source Machine
 In November 2015, Google [announced](https://googleblog.blogspot.com/2015/11/tensorflow-smarter-machine-learning-for.html) and open sourced [TensorFlow](https://www.tensorflow.org/), its latest and greatest machine learning library. This is a big deal for three reasons:
 
 1. Machine Learning expertise: Google is a dominant force in machine learning. Its prominence in search owes a lot to the strides it achieved in machine learning. 
-2. Scalability: the announcement noted that tensorflow was initially designed for internal use and that it's already in production for some live product features.
+2. Scalability: the announcement noted that TensorFlow was initially designed for internal use and that it's already in production for some live product features.
 3. Ability to run on Mobile.
 
-This last reason is the operating reason for this post since we'll be focusing on Android. If you examine the [tensorflow repo on GitHub](https://github.com/tensorflow/tensorflow), you'll find a little  [tensorflow/examples/android](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/examples/android) directory. I'll try to shed some light on the Android tensorflow example and some of the things going on under the hood.
+This last reason is the operating reason for this post since we'll be focusing on Android. If you examine the [tensorflow repo on GitHub](https://github.com/tensorflow/tensorflow), you'll find a little  [tensorflow/examples/android](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/examples/android) directory. I'll try to shed some light on the Android TensorFlow example and some of the things going on under the hood.
 
 <!--more-->
 
@@ -34,7 +34,7 @@ The app glances out through your camera and tries to identify the objects it see
 ![android_tensorflow_classifier_results.jpg]({{site.baseurl}}/images/android_tensorflow_classifier_results.jpg)
 
 
-The app accomplishes this feat using a bundled machine learning model running in tensorflow on the device (no network calls to a backend service). The model is trained against millions of images so that it can look at the photos the camera feeds it and classify the object into its best guess (from the 1000 object classifications it knows). Along with its best guess, it shows a confidence score to indicate how sure it is about its guess.
+The app accomplishes this feat using a bundled machine learning model running in TensorFlow on the device (no network calls to a backend service). The model is trained against millions of images so that it can look at the photos the camera feeds it and classify the object into its best guess (from the 1000 object classifications it knows). Along with its best guess, it shows a confidence score to indicate how sure it is about its guess.
 
 The Android example page gives you an idea on how to build the app, and ultimately culminates in producing [this APK](https://s3.amazonaws.com/jalammar.github.io/tensorflow_demo.apk) (I built and uploaded the APK to save you some time since the building process requires installing the Android NDK and Bazel, Google's build tool. NOTE: Android 5.0 or later required since the example uses the [Camera2](android.hardware.camera2) package introduced in Android 5.0).
 
@@ -78,7 +78,7 @@ The `native` keywords in these method signatures indicate that these methods are
 
 [JNI](https://developer.android.com/training/articles/perf-jni.html) (short for Java Native Interface) is a way in which the Java parts of an Android app can communicate with the native C++ parts. So when we call `classifyImageBmp(bitmap)` in our Java code, it will actually invoke the C++ function exported in tensorflow_jni.cc and return the value it returns.
 
-A Bitmap file cannot be sent to TensorFlow as input. It has be transformed into an input tensor that we'd send in step #2 in the flow above. A tensor is an n-dimensional array of values, and is the motif tensorflow uses to send data between all of its different parts/operations. This model expect a 3-dimensional array that supplies the Red/Green/Blue value of each pixel in the image. The dimensions are:
+A Bitmap file cannot be sent to TensorFlow as input. It has be transformed into an input tensor that we'd send in step #2 in the flow above. A tensor is an n-dimensional array of values, and is the motif TensorFlow uses to send data between all of its different parts/operations. This model expect a 3-dimensional array that supplies the Red/Green/Blue value of each pixel in the image. The dimensions are:
 
 1. X-index of the pixel
 2. Y-index of the pixel
@@ -100,7 +100,7 @@ As you read the example's [README.md](https://github.com/tensorflow/tensorflow/t
 
 The model here is what's known as a deep [convolutional neural network](https://youtu.be/bEUX_56Lojc?t=2m53s). It is built in the Inception architecture described in [Going Deeper with Convolutions](http://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Szegedy_Going_Deeper_With_2015_CVPR_paper.pdf). Convolutional neural networks are some of the most popular models in deep learning. They have been very successful in image recognition (so much so, that most highly ranked teams in the competition used them).
 
-The model is read from the file and fed into tensorflow when the app starts up. This [code](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/android/jni/tensorflow_jni.cc#L50)  is actually really interesting to read and see how to communicate with tensorflow (if you run the app with your device connected to your computer, you can see these helpful log messages printed in logcat).
+The model is read from the file and fed into TensorFlow when the app starts up. This [code](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/android/jni/tensorflow_jni.cc#L50)  is actually really interesting to read and see how to communicate with tensorflow (if you run the app with your device connected to your computer, you can see these helpful log messages printed in logcat).
 
 ## Build System
 Android apps that utilize TensorFlow cannot be built the traditional Gradle way. Because the app has to contain NDK elements as well as TensorFlow itself, a more elaborate build system is required. The example is configured to be built with Google's [Bazel](http://bazel.io/) build system running from the TensorFlow root directory.
