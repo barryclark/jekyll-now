@@ -27,24 +27,31 @@ published: true
 * **Aaditya Bagga** Documentation, Testing, ISOs
 
 ###Community and Support
-* **Ringo de Kroon** Community Support and IRC Manager
-* **dicktater** Community Global Moderator
-* **Esclapion** LXQt Community Edition Maintainer, Community Support
-* **excalibur1234** Community Support
-* **Jonathan** Community Global Moderator
+* **AJSlye** Maintainer Netrunner Edition
+* **Bernhard Landauer (oberon)** Maintainer Deepin, Fluxbox and i3 Editions, Packager
+* **Chrysostomus** Maintainer Bspwm Edition
+* **Esclapion** Maintainer LXQt Edition
+* **eugen-b** Community Support
+* **excalibur1234** Maintainer Net-Minimal Edition, Community Global Moderator
+* **Holmes** Maintainer JWM Edition
+* **Ringo de Kroon** Maintainer Cinnamon and Mate Editions, IRC Manager
 * **shariebeth** Community Global Moderator
+* **Stefano Capitani (Ste74)** Maintainer Pantheon, Budgie Editions, Wiki Contributor, Founder Italian Community 
+* **Strit** Torrent Maintainer
 
 ###Documentation
-* **Jonathon Fernyhough** Editor of the User Guide 0.8.9-0.8.13, Community Moderation
+* **Jonathon Fernyhough** Editor of the User Guide 0.8.9-15.12, Community Management
 * **Sabras** Wiki
 
 ###Alumni
 * **Carl Duff** Community, Documentation and Wiki Management, Scripting and Configuration
-* **Cumali** Cinnamon and Gnome Community Editions Maintainer
-* **Dan S.** Openbox Editions Maintainer
+* **Cumali** Cinnamon and Gnome Editions Maintainer
+* **Dan S.** Openbox Edition Maintainer
+* **dicktater** Community Global Moderator
 * **Handy** Global Moderator, Wiki Contributor, Community Support
+* **Jonathan** Community Global Moderator
 * **Joshua Strot** Developer, Graphics Developer
-* **Lane Wiscombe (anex)** Manjaro Artwork, KDE Team: KDE5 Edition Maintainer, MATE, and Openbox Community Editions Maintainer
+* **Lane Wiscombe (anex)** Manjaro Artwork, KDE Team: KDE5 Edition Maintainer, MATE and Openbox Editions Maintainer
 
 ###Acknowledgements
-The awesome community on our [forum](https://forum.manjaro.org) and **#manjaro**
+The awesome community on our [forum](https://forum.manjaro.org) and **#manjaro** IRC channel
