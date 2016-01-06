@@ -1,4 +1,0 @@
----
----
-
-{% include js/main.js %}

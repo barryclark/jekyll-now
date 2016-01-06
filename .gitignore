@@ -1,8 +1,0 @@
-_site/
-.DS_Store
-.*.swp
-.idea
-.sass-cache/
-*~
-bourbon/
-Gemfile.lock
