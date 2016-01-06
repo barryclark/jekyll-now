@@ -13,6 +13,7 @@ title: "Supercharging Android Apps With TensorFlow (Google's Open Source Machine
 
 
 
+
 ![google-tensorflow-android.jpg]({{site.baseurl}}/images/google-tensorflow-android.jpg)
 
 
@@ -110,3 +111,5 @@ The [WORKSPACE](https://github.com/tensorflow/tensorflow/blob/master/WORKSPACE) 
 Using a trained model in your app seems to be the lowest hanging fruit for mobile TensorFlow apps at the moment. While you can probably train a model on Android, mobile devices are not well suited for the intensive processing required by complex models with larger training sets.
 
 Want to learn more about machine learning? Consider checking out the [Machine Learning course on Coursera](https://www.coursera.org/learn/machine-learning/). There's also a good discussion in [/r/MachineLearning](https://www.reddit.com/r/MachineLearning/) here: [In your experience, which machine learning course on Coursera (or other MOOC web site) was the best?](https://www.reddit.com/r/MachineLearning/comments/3wno5e/in_your_experience_which_machine_learning_course/).
+
+Want to comment? [/r/androiddev](https://www.reddit.com/r/androiddev/comments/3zpkb6/supercharging_android_apps_with_tensorflow/).
