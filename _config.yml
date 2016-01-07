@@ -17,6 +17,7 @@ show_related_posts:   false
 show_post_footers:    false
 show_social_icons:    false
 ajaxify_contact_form: false
+enable_mathjax: false
 
 # Disqus post comments
 # (leave blank to disable Disqus)
