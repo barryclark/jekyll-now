@@ -76,6 +76,7 @@ If you look closely at TensorflowClassifier, you may notice the following method
 
 The `native` keywords in these method signatures indicate that these methods are implemented in native C++ code. Look for them under the "android/jni" directory and true enough, you'll find [tensorflow_jni.cc](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/android/jni/tensorflow_jni.cc)
 
+```c++
 	JNIEXPORT jint JNICALL
 	TENSORFLOW_METHOD(initializeTensorflow)(...) {
     ...
@@ -86,6 +87,7 @@ The `native` keywords in these method signatures indicate that these methods are
 	TENSORFLOW_METHOD(classifyImageBmp)(...) {
     ...
     }
+```
 
 [JNI](https://developer.android.com/training/articles/perf-jni.html) (short for Java Native Interface) is a way in which the Java parts of an Android app can communicate with the native C++ parts. So when we call `classifyImageBmp(bitmap)` in our Java code, it will actually invoke the C++ function exported in tensorflow_jni.cc and return the value it returns.
 
