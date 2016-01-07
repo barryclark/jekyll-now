@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Conceptualizing Map and FlatMap
+category: scala
+tags: learning, syntax
 ---
 
 I originally wrote this post for my friend Andrew's learning scala blog [Scala Eye for the Java Guy](http://scalaeyeforthejavaguy.blogspot.com/2013/12/conceptualising-map-and-flatmap.html). Reposting here to have it on my archives as well. A couple very minor edits only, and I've posted this with the same date as the original post.

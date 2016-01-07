@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Scala Options and Sudoku
+category: scala
+tags: learning
 ---
 
 Scala Options are a nice alternative to null values. They force us to consider the ```None``` case explicitly, rather than hiding in documentation, for example, the fact that a method can return ```null``` in some circumstances. They also tie in nicely to chained behavior, so that a sequence of operations that produce a ```None``` along the way can collapse to just the ```None```, similar to constructs such as Groovy’s elvis operator ```?:```.

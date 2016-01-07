@@ -1,6 +1,8 @@
 ---
 layout: post
 title: A Scala Functional Conway's Game of Life
+category: scala
+tags: fp, coderetreat
 ---
 
 A couple weekends ago, I participated in a Global Day of Coderetreat event in Boulder, CO. 
