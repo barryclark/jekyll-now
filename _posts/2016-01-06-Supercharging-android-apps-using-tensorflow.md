@@ -67,11 +67,13 @@ The good thing is that most of this logic is in normal Android Java SDK territor
 
 
 If you look closely at TensorflowClassifier, you may notice the following methods:
-```java
-public native int initializeTensorflow( );
 
-private native String classifyImageBmp(Bitmap bitmap);
+```java
+	public native int initializeTensorflow( );
+
+	private native String classifyImageBmp(Bitmap bitmap);
 ```
+
 The `native` keywords in these method signatures indicate that these methods are implemented in native C++ code. Look for them under the "android/jni" directory and true enough, you'll find [tensorflow_jni.cc](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/android/jni/tensorflow_jni.cc)
 
 	JNIEXPORT jint JNICALL
