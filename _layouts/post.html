@@ -5,7 +5,7 @@ layout: default
 <div class="post">
   <h1 class="post-title">{{ page.title }}</h1>
   <span class="post-date">{{ page.date | date_to_string }}
-    &nbsp;&nbsp;&nbsp;&nbsp;<a href="{{ page.url }}#disqus_thread"></a>
+    &nbsp;&nbsp;&nbsp;&nbsp;<a href="{{ page.url }}#disqus_thread" data-disqus-identifier="{{ page.url }}"></a>
   </span>
   {{ content }}
 </div>

@@ -13,7 +13,7 @@ title: Home
     </h1>
 
     <span class="post-date">{{ post.date | date_to_string }}
-      &nbsp;&nbsp;&nbsp;&nbsp;<a href="{{ post.url }}#disqus_thread"></a>
+      &nbsp;&nbsp;&nbsp;&nbsp;<a href="{{ post.url }}#disqus_thread" data-disqus-identifier="{{ post.url }}"></a>
     </span>
 
     {{ post.excerpt }}
