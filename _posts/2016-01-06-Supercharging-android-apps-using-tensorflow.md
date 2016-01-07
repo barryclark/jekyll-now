@@ -42,8 +42,9 @@ The Android example page gives you an idea on how to build the app, and ultimate
 NOTE: Android 5.0 or later required since the example uses the [Camera2](android.hardware.camera2) package introduced in Android 5.0.
 
 NOTE: if your device runs Android 6.0 or later, you have to install the app with the following command (It gives the app the appropriate permissions it needs to run): 
+
 ```
-adb install -r -g /path/to/apk.apk
+	adb install -r -g /path/to/apk.apk
 ```
 
 ## App Structure Walkthrough
