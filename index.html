@@ -12,7 +12,9 @@ title: Home
       </a>
     </h1>
 
-    <span class="post-date">{{ post.date | date_to_string }}</span>
+    <span class="post-date">{{ post.date | date_to_string }}
+      &nbsp;&nbsp;&nbsp;&nbsp;<a href="{{ post.url }}#disqus_thread"></a>
+    </span>
 
     {{ post.excerpt }}
 
@@ -37,3 +39,5 @@ title: Home
     <span class="pagination-item newer">Newer</span>
   {% endif %}
 </div>
+
+<script id="dsq-count-scr" src="//codingwithsutemi.disqus.com/count.js" async></script>

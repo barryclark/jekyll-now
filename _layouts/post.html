@@ -4,9 +4,13 @@ layout: default
 
 <div class="post">
   <h1 class="post-title">{{ page.title }}</h1>
-  <span class="post-date">{{ page.date | date_to_string }}</span>
+  <span class="post-date">{{ page.date | date_to_string }}
+    &nbsp;&nbsp;&nbsp;&nbsp;<a href="{{ page.url }}#disqus_thread"></a>
+  </span>
   {{ content }}
 </div>
+
+{% include disqus.html %}
 
 <div class="related">
   <h2>Related Posts</h2>
@@ -23,3 +27,5 @@ layout: default
     {% endfor %}
   </ul>
 </div>
+
+<script id="dsq-count-scr" src="//codingwithsutemi.disqus.com/count.js" async></script>
