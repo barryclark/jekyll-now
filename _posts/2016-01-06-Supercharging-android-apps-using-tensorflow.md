@@ -37,7 +37,14 @@ The app glances out through your camera and tries to identify the objects it see
 
 The app accomplishes this feat using a bundled machine learning model running in TensorFlow on the device (no network calls to a backend service). The model is trained against millions of images so that it can look at the photos the camera feeds it and classify the object into its best guess (from the 1000 object classifications it knows). Along with its best guess, it shows a confidence score to indicate how sure it is about its guess.
 
-The Android example page gives you an idea on how to build the app, and ultimately culminates in producing [this APK](https://s3.amazonaws.com/jalammar.github.io/tensorflow_demo.apk) (I built and uploaded the APK to save you some time since the building process requires installing the Android NDK and Bazel, Google's build tool. NOTE: Android 5.0 or later required since the example uses the [Camera2](android.hardware.camera2) package introduced in Android 5.0).
+The Android example page gives you an idea on how to build the app, and ultimately culminates in producing [this APK](https://s3.amazonaws.com/jalammar.github.io/tensorflow_demo.apk) (I built and uploaded the APK to save you some time since the building process requires installing the Android NDK and Bazel, Google's build tool).
+
+NOTE: Android 5.0 or later required since the example uses the [Camera2](android.hardware.camera2) package introduced in Android 5.0.
+
+NOTE: if your device runs Android 6.0 or later, you have to install the app with the following command (It gives the app the appropriate permissions it needs to run): 
+```
+adb install -r -g /path/to/apk.apk
+```
 
 ## App Structure Walkthrough
 
@@ -59,11 +66,11 @@ The good thing is that most of this logic is in normal Android Java SDK territor
 
 
 If you look closely at TensorflowClassifier, you may notice the following methods:
+```java
+public native int initializeTensorflow( );
 
-	public native int initializeTensorflow( );
-
-	private native String classifyImageBmp(Bitmap bitmap);
-
+private native String classifyImageBmp(Bitmap bitmap);
+```
 The `native` keywords in these method signatures indicate that these methods are implemented in native C++ code. Look for them under the "android/jni" directory and true enough, you'll find [tensorflow_jni.cc](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/android/jni/tensorflow_jni.cc)
 
 	JNIEXPORT jint JNICALL
