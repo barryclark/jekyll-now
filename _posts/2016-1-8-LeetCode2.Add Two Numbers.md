@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LeetCode 题解1：Add Two Numbers
+title: LeetCode 题解2：Add Two Numbers
 ---
 
 
