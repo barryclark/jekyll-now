@@ -1,31 +1,95 @@
 <!DOCTYPE html>
-<html>
+<html amp>
   <head>
-    <meta charset="utf-8" />
-    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
-
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
     <meta name="author" content="{{ site.name }}" />
     <meta name="description" content="{{ site.description }}">
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+    <link rel="canonical" href="./regular-html-version.html">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Droid+Serif' rel='stylesheet' type='text/css'>
+  <script src="https://cdn.ampproject.org/v0.js" async></script>
+  <style>body {opacity: 0}</style><noscript><style>body {opacity: 1}</style></noscript>
+   <style amp-custom>
 
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    body {
+	   background: #eee;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    }
 
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    .masthead {
+    padding: 10px 0;
+    }
 
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+   .container {
+   margin: 0 auto;
+   max-width: 900px;
+   padding: 0 10px;
+   width: 100%;
+   }
+   .wrapper-masthead {
+    margin-bottom: 50px;
+    background-color: #333;
+    color: white;
+   } 
+   .wrapper-masthead a {
+   	color:#eee;
+   	text-decoration: none;
+   }
+   .masthead {
+    padding: 10px;
+    }
+    .site-info {
+    float: left;
+}
+    .site-name {
+    margin: 0;
+    color: #eee;
+    cursor: pointer;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+.site-description {
+    margin: -5px 0 0 0;
+    color: #666;
+    font-size: 16px;
+}
+nav {
+    float: right;
+    margin-top: 23px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+}
+nav a {
+	color:#eee;
+}
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+   </style>      
+
+
+   
+
+   <!-- AMP -->
+      
+
+
   </head>
 
   <body>
     <div class="wrapper-masthead">
       <div class="container">
         <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
-          
           <div class="site-info">
             <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
             <p class="site-description">{{ site.description }}</p>
@@ -46,7 +110,7 @@
     <div class="wrapper-footer">
       <div class="container">
         <footer class="footer">
-          {% include svg-icons.html %}
+
         </footer>
       </div>
     </div>
