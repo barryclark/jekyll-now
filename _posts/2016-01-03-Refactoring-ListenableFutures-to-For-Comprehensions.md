@@ -44,7 +44,7 @@ Inside every transformation, a single ```ListenableFuture``` is operated on. In 
 
 <script src="https://gist.github.com/chrisphelps/c7051ceddea09b0f45b0.js"></script>
 
-This left us with a top-level algorithm specified in a sequence of non-nested transformations, with the details of nested transformations hidden away in functions. However, it had several downsides. First and most obviously, the creation of many functions to handle this chainging, and the corresponding loss of clarity. Secondly, the addition of boilerplate such as the final keyword. Third, and less obviously, is that we had many parts of the algorithm which relied on the same future value, like the ```Config``` in the example above. So we had many extra transformations as we continued to pass ```ListenableFuture<Config>``` instead of simply ```Config```.
+This left us with a top-level algorithm specified in a sequence of non-nested transformations, with the details of nested transformations hidden away in functions. However, it had several downsides. First and most obviously, the creation of many functions to handle this chaining, and the corresponding loss of clarity. Secondly, the addition of boilerplate such as the final keyword. Third, and less obviously, is that we had many parts of the algorithm which relied on the same future value, like the ```Config``` in the example above. So we had many extra transformations as we continued to pass ```ListenableFuture<Config>``` instead of simply ```Config```.
 
 Due to the way Scala for-comprehensions [desugar](https://gist.github.com/loicdescotte/4044169), all the steps in the comprehension are already nested. This allowed us to clean up a lot of these intermediate helper functions.
 
