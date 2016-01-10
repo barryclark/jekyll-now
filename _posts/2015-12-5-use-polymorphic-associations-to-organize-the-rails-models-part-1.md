@@ -72,6 +72,7 @@ First we will need to adapt the existing Product to accept polymorphic relations
 
 - Generate a new migration:
 
+<div class="file_path">Terminal</div>
 ```bash
 rails g migration AddPolymorphicRelationsToProduct
 ```
@@ -101,12 +102,14 @@ end
 
 - Generate the Computer model and migration:
 
+<div class="file_path">Terminal</div>
 ```bash
 rails g model Computer name:string cpu:string memory:string
 ```
 
 - Before running the migration, just delete any unneeded information, such as timestamps, as we will use the Product `created_at` and `updated_at`.
 
+<div class="file_path">./db/migrate/20151206120959_create_computers.rb</div>
 ```ruby
 class CreateComputers < ActiveRecord::Migration
   def change
@@ -121,6 +124,7 @@ end
 
 - Migrate:
 
+<div class="file_path">Terminal</div>
 ```bash
 rake db:migrate
 ```
@@ -128,8 +132,7 @@ rake db:migrate
 ## The Models
 Add the polymorphism information in the Product model.
 
-<u>app/models/product.rb</u>
-
+<div class="file_path">./app/models/product.rb</div>
 ```ruby
 #...
 belongs_to :category, polymorphic: true, dependent: :destroy
@@ -138,6 +141,7 @@ belongs_to :category, polymorphic: true, dependent: :destroy
 
 As a computer will be registered as a product, the association will be a one-to-one.
 
+<div class="file_path">./app/models/computer.rb</div>
 ```ruby
 class Computer < ActiveRecord::Base
   has_one :product, as: :category, dependent: :destroy
@@ -149,13 +153,15 @@ We use `dependent: :destroy` as it makes no sense to have a computer without a p
 ## Console Tests
 At this point our models should be fully functional, so we can test them in the rails console.
 
+<div class="file_path">Terminal</div>
 ```
 computer = Computer.new(name: "comp1", cpu: "i5", memory: "16 GB")
 => #<Computer id: nil, name: "comp1", cpu: "i5", memory: "16 GB">
 ```
 
-We pass **computer** as argument for the product category.
+We pass `computer` as argument for the product category.
 
+<div class="file_path">Terminal</div>
 ```
 product = Product.new(category: computer, user_id: 1,
         price: 2000, stock: 50)
@@ -166,6 +172,7 @@ product = Product.new(category: computer, user_id: 1,
 
 This way we will save both the product and computer in the same time.
 
+<div class="file_path">Terminal</div>
 ```
 product.save
    (0.3ms)  BEGIN
@@ -177,12 +184,14 @@ product.save
 
 Now we can find the product category.
 
+<div class="file_path">Terminal</div>
 ```
 prod = Product.last
   Product Load (10.4ms)  SELECT  "products".* FROM "products"  ORDER BY "products"."id" DESC LIMIT 1
 => #<Product id: 8, user_id: 1, price: 2000, stock: 50, created_at: "2015-12-06 15:51:32", updated_at: "2015-12-06 15:51:32", category_type: "Computer", category_id: 6>
 ```
 
+<div class="file_path">Terminal</div>
 ```
 prod.category
   Computer Load (0.3ms)  SELECT  "computers".* FROM "computers" WHERE "computers"."id" = $1 LIMIT 1  [["id", 6]]
@@ -191,12 +200,14 @@ prod.category
 
 And the other way around, the computer product.
 
+<div class="file_path">Terminal</div>
 ```
 comp = Computer.last
   Computer Load (7.8ms)  SELECT  "computers".* FROM "computers"  ORDER BY "computers"."id" DESC LIMIT 1
 => #<Computer id: 6, name: "comp1", cpu: "i5", memory: "16 GB">
 ```
 
+<div class="file_path">Terminal</div>
 ```
 comp.product
   Product Load (0.2ms)  SELECT  "products".* FROM "products" WHERE "products"."category_id" = $1 AND "products"."category_type" = $2 LIMIT 1  [["category_id", 6], ["category_type", "Computer"]]
