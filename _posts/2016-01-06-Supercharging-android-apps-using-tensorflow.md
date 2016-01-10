@@ -15,6 +15,7 @@ title: "Supercharging Android Apps With TensorFlow (Google's Open Source Machine
 
 
 
+
 ![google-tensorflow-android.jpg]({{site.baseurl}}/images/google-tensorflow-android.jpg)
 
 
@@ -116,7 +117,7 @@ The model here is what's known as a deep [convolutional neural network](https://
 The model is read from the file and fed into TensorFlow when the app starts up. This [code](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/android/jni/tensorflow_jni.cc#L50)  is actually really interesting to read and see how to communicate with tensorflow (if you run the app with your device connected to your computer, you can see these helpful log messages printed in logcat).
 
 ## Build System
-Android apps that utilize TensorFlow cannot be built the traditional Gradle way. Because the app has to contain NDK elements as well as TensorFlow itself, a more elaborate build system is required. The example is configured to be built with Google's [Bazel](http://bazel.io/) build system running from the TensorFlow root directory.
+The Android app example is not built the traditional Gradle way. Because the app has to contain NDK elements as well as TensorFlow itself, a more elaborate build system was utilized. The example is configured to be built with Google's [Bazel](http://bazel.io/) build system running from the TensorFlow root directory.
 
 The [WORKSPACE](https://github.com/tensorflow/tensorflow/blob/master/WORKSPACE) file in the root directory specifies the main parameters of the project. The [BUILD](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/android/BUILD) file in the Android directory instructs the build system to build the Java and C++ files of the app.
 
