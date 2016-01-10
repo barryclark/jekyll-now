@@ -253,13 +253,11 @@
 
 // Refactored Code
 
-window.addEventListener('load', focusFire, false);
-var fireButton = document.getElementById("fireButton");
-fireButton.addEventListener('click', handleFireButton, false)
-
-var guessInput = document.getElementById("guessInput");
-guessInput.addEventListener('keypress', handleKeyPress, false)
 function init() {
+	var fireButton = document.getElementById("fireButton");
+	fireButton.onclick = handleFireButton;
+ 	var guessInput = document.getElementById("guessInput");
+ 	guessInput.onkeypress = handleKeyPress;
  	model.generateZombieLocations();
 }
 
@@ -267,18 +265,9 @@ function handleKeyPress(e) {
 	var fireButton = document.getElementById("fireButton");
 	if (e.keyCode === 13) {
 		fireButton.click();
-		e.preventDefault();
 		return false;
 	}
-
 }
-
-
-function focusFire() {
-	var el = document.getElementById('guessInput');
-	el.focus();
-}
-
 
 function handleFireButton() {
 // code to get the value from the form
@@ -286,10 +275,9 @@ var guessInput = document.getElementById("guessInput");
 var guess = (guessInput.value).toUpperCase();
 controller.processGuess(guess);
 guessInput.value = "";
-focusFire();
 }
 
-// window.onload = init;
+window.onload = init;
 
 // start of controller object
 var controller = {
@@ -453,11 +441,6 @@ var model =  {
 // end of model object
 console.log(model.zombies);
 
-
-// Using Event Delegation
-
-//Setting up event listener on FIRE form
-var el = document.getElementById('guessInput');
 
 
 // Reflection
