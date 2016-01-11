@@ -161,7 +161,7 @@
 - company_gr: Κέντρο Γναθοπροσωπικής Παθολογίας & Χειρουργικής
   company_en: Oral & Maxillofacial Medicine & Surgery Center
   url: http://www.maxillofacial.gr
-  category_gr: Γναθοχειρουργική - Στοματολόγία - Οδοντική Εμφυτευματολογία
+  category_gr: Γναθοχειρουργική - Στοματολογία - Οδοντική Εμφυτευματολογία
   category_en: Oral & Maxillofacial Surgery - Oral Medicine - Oral Implantology
   location_gr: Αγία Παρασκευή, Αττική, Ελλάδα
   location_en: Agia Paraskevi, Attica, Greece
@@ -195,6 +195,14 @@
   url: http://www.directshop.gr/
   category_gr: Ηλεκτρονικό κατάστημα για υπολογιστές
   category_en: Computer eshop
+  location_gr: Ιωάννινα, Ελλάδα
+  location_en: Ioannina, Greece
+
+- company_gr: Break Away
+  company_en: Break Away
+  url: http://www.breakaway.gr
+  category_gr: Δωμάτια απόδρασης
+  category_en: Escape rooms
   location_gr: Ιωάννινα, Ελλάδα
   location_en: Ioannina, Greece
 
