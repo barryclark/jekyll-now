@@ -33,3 +33,6 @@
 
 - slug: smartsteuer
   name: Smartsteuer
+
+- slug: logging
+  name: Logging 

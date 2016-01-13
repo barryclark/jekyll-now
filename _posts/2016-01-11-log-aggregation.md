@@ -4,7 +4,7 @@ title: Log aggregation
 subtite: A short introduction
 description: Introduction to log aggregation using Fluentd, Elasticsearch and Kibana
 category: howto
-tags: [fluentd, log, ELK, EFK]
+tags: [devops, docker, logging]
 author: Doru Mihai
 author_email: doru.mihai@haufe-lexware.com
 ---

@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Fluentd log parsing
+title: Howto - Fluentd Log Parsing
 subtite: Approaches to log parsing
 description: Description of a couple of approaches to designing your fluentd configuration.
 category: howto
-tags: [fluentd, logs]
+tags: [devops, logging]
 author: Doru Mihai
 author_email: doru.mihai@haufe-lexware.com
 ---
