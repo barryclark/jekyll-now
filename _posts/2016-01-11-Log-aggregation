@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Log aggregation
 subtite: A short introduction
 description: Introduction to log aggregation using Fluentd, Elasticsearch and Kibana
