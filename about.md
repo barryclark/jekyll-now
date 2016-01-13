@@ -1,14 +1,23 @@
 ---
 layout: page
-title: About
+title:
 permalink: /about/
 ---
 
-Switfly learning Rails and Ruby, along with some Javascript (Ember) and anything else that tickles my fancy at the time.
+#### 2 Languages I can kick ass in
+* Rails and Ruby
+* Javascript and Ember
 
-### More Information
+#### 3 Things I consider important
+* Testing
+* Testing
+* Testing
 
-I also enjoy building high power rockets (not the small ones you buy at the hobby store).
+#### 4 Tools that work for me
+* PostgreSQL
+* Grunt
+* Broccoli
+* RSpec and QUnit
 
 ### Contact me
 
