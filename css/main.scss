@@ -1,0 +1,15 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+/* =Colors */
+$dorian: #F5F5F5;
+$iron: #333333;
+$cloudy: #828282;
+
+@import
+    "mixins",
+    "default",
+    "404"
+;

@@ -1,18 +1,16 @@
 ---
-layout: default
+layout: page
+title: Blog
+subtitle: Random Musings and Rants
 ---
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
-
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+<ul class="list-posts">
+    {% for post in site.posts %}
+        <li class="post-teaser">
+            <a href="{{ post.url | prepend: site.baseurl }}">
+                <span class="post-teaser__title">{{ post.title }}</span>
+                <span class="post-teaser__date">{{ post.date | date: "%d %B %Y" }}</span>
+            </a>
+        </li>
+    {% endfor %}
+</ul>

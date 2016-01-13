@@ -1,24 +1,21 @@
 ---
 layout: page
-title:
+title: Stats
+subtitle:
 permalink: /about/
 ---
 
-#### 2 Languages I can kick ass in
+### 2 languages and frameworks I kick ass in
 * Rails and Ruby
-* Javascript and Ember
+* JavaScript and Ember
 
-#### 3 Things I consider important
-* Testing
-* Testing
+### 3 things important to me
+* BDD
+* TDD
 * Testing
 
-#### 4 Tools that work for me
+### 4 tools I put to work
 * PostgreSQL
 * Grunt
 * Broccoli
 * RSpec and QUnit
-
-### Contact me
-
-[dan@getabetterpic.com](mailto:dan@getabetterpic.com)

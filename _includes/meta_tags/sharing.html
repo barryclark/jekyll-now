@@ -1,0 +1,22 @@
+{% if page.title %} {% assign title = page.title ~ ' - ' ~ page.subtitle %} {% else %} {% assign title = site.title %} {% endif %}
+{% if page.description %} {% assign description = page.description %} {% else %} {% assign description = site.description %} {% endif %}
+{% if page.keywords %} {% assign keywords = page.keywords %} {% else %} {% assign keywords = site.keywords %} {% endif %}
+{% if page.cover %} {% assign cover = page.cover %} {% else %} {% assign cover = site.cover %} {% endif %}
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="{{ title }}" />
+<meta name="twitter:description" content="{{ description }}" />
+<meta name="twitter:image" content="{{ site.url }}{{ cover }}" />
+
+<!-- Google plus -->
+<meta name="author" content="{{ site.author.googleplus }}">
+<link rel="author" href="{{ site.author.googleplus }}">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="{{ site.lang }}">
+<meta property="og:type" content="article">
+<meta property="og:title" content="{{ title }}">
+<meta property="og:description" content="{{ description }}">
+<meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}">
+<meta property="og:site_name" content="{{ site.title }}">
