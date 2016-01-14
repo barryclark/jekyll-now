@@ -12,7 +12,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Howtoguy knows everything. Howtoguy can teach you how to do anything. Need to know how to test and replace a condensor on a '77 Kawasaki 650 motorcycle or build a wordpress website? Howtoguy has you covered.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://howtoguy.tv" # the base hostname & protocol for your site
-twitter_username: howtoguy
+twitter_username: fotozfotoz
 github_username:  howtoguy
 
 # Build settings
