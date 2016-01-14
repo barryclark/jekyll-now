@@ -7,6 +7,8 @@ permalink: /how-to-install-jekyll/
 
 ---
 
+Do the following if you want to install Jekyll on your local machine.
+
 <-- [Previous](/about-jekyll-and-github/) --- [Next](/getting-started-with-jekyll/) -->
 
 <b>Install Jekyll for `Windows`:</b> don't know about it, j/k. Jekyll is really made for Mac, but <a href="http://jekyll-windows.juthilo.com/" target="_blank">Try this guy.
