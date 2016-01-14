@@ -61,7 +61,6 @@ layout: default
 
 - [Bitcoin Core](https://bitcoin.org/en/download), τρέχει σε Windows, Mac, Linux. Είναι full client (πρέπει να κατεβάσετε τα 48GB του Blockchain).
 - [Coinomi](https://coinomi.com), τρέχει σε Android. Είναι thin client.
-- [Blockchain.info](https://blockchain.info), web site.
 - [Electrum](https://electrum.org) τρέχει σε Windows, Mac, Linux, Android. Είναι thin client.
 - [MultiBit HD](https://multibit.org) τρέχει σε Windows, Mac, Linux. Είναι thin client.
 
@@ -122,7 +121,7 @@ layout: default
 - Προσθέστε κάποια σχετική [εικόνα](https://en.bitcoin.it/wiki/Promotional_graphics) (π.χ. Bitcoin Accepted Here) στο κατάστημά σας και στην ιστοσελίδα σας.
 - Στείλε μας email (αναγράφεται στο τέλος της σελίδας) ώστε να σας προσθέσουμε στη σελίδα αυτή. Ή κάνετε ένα Pull Request στο GitHub!
 
-Τελευταία ενημέρωση: 2016-01-10
+Τελευταία ενημέρωση: 2016-01-14
 
 <!-- <div class="posts">
   {% for post in site.posts %}
