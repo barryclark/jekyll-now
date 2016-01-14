@@ -34,7 +34,7 @@ published: true
 * **eugen-b** Community Support
 * **excalibur1234** Maintainer Net-Minimal Edition, Community Global Moderator
 * **Holmes** Maintainer JWM Edition
-* **Ringo de Kroon** Maintainer Cinnamon and Mate Editions, IRC Manager
+* **Ringo de Kroon** Community Support, IRC Manager
 * **shariebeth** Community Global Moderator
 * **Stefano Capitani (Ste74)** Maintainer Pantheon and Budgie Editions, Wiki Contributor, Founder Italian Community 
 * **Strit** Torrent Maintainer
