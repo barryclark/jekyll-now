@@ -49,3 +49,15 @@ tags: [common]
 5. **兴趣**
 	
     [创业必读的7本书](http://www.fortunechina.com/business/c/2015-09/02/content_246408.htm?source=yd)
+    
+    [大牛常访问论坛](http://www.oschina.net/question/2250952_2138973)
+    
+    [linux-网桥原理分析](http://blog.csdn.net/mrwangwang/article/details/8393973)
+    
+    [可执行文件及可连接文件的格式](http://www.360doc.com/content/14/0626/20/7377734_390077391.shtml)
+    
+    [可执行文件格式](http://blog.chinaunix.net/uid-27004952-id-3361448.html)
+    
+    [java 实战视频](http://www.ulewo.com/)
+    
+    [python 搭建微信公众平台](http://my.oschina.net/yangyanxing/blog/159215)
