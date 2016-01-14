@@ -7,3 +7,5 @@ permalink: /bio/
 Howtoguy has you covered!
 
 {% include icon-github.html username="glenuvolum" %}
+
+that's right....
