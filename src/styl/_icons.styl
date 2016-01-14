@@ -1,0 +1,35 @@
+size(width = 30, height = 30)
+    width width px
+    height height px
+
+.icons-home
+    text-align center
+    a
+        display inline-block
+        padding rem(15px)
+        margin rem(2px)
+        border-radius 50%
+        border rem(2px) solid sec
+        line-height 0
+        transition all .7s
+        .icon
+            fill sec
+            size(18,18)
+            +above(cut)
+                size()
+        &:hover
+            background sec
+            .icon
+                fill main
+
+.down
+    position absolute
+    bottom 50px
+    width 100%
+    display block
+    text-align center
+    .icon
+        align(both)
+        size(100,100)
+        fill sec
+        animation pulse 1.3s infinite

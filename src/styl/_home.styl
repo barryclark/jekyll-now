@@ -1,0 +1,44 @@
+.post-item
+    text-align left
+    padding rem(40px) 0
+    border-bottom 3px solid lightGray
+    center(rem(1000px))
+    +below(rem(1000px))
+        padding-left rem(20px)
+        padding-right rem(20px)
+    .datetime
+        col(1/6)
+        text-align center
+        text-decoration none
+        +below(cut)
+            stack()
+        .day
+            mainFont(800)
+            color main
+            font-size rem(80px)
+            line-height 1.6
+            +below(cut)
+                stack()
+        .month-year
+            color black
+            font-size rem(18px)
+    .content
+        col(5/6)
+        +below(cut)
+            stack()
+        a
+            text-decoration none
+        .date
+            color main
+        .post-title
+            color black
+            font-size rem(32px)
+            +below(cut)
+                text-align center
+        .description
+            color texts
+            mainFont(300)
+            font-size rem(20px)
+            a
+                color main
+                text-decoration underline

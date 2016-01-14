@@ -1,0 +1,49 @@
+.author
+    background lightGray
+    display table
+    width 100%
+    padding rem(40px) 0
+    margin rem(40px) 0
+    +above(cut)
+        padding rem(50px) 0
+    .details
+        margin auto
+        max-width rem(800px)
+        padding 0 rem(20px)
+        +below(cut)
+            text-align center
+    img
+        border-radius 50%
+        display block
+        margin auto
+        +above(cut)
+            float left
+            margin-right 3.125rem
+    .def
+        color gray
+        font-size 1.125rem
+        mainFont(300)
+        margin rem(10px)
+        +above(cut)
+            margin 0
+            padding-top rem(25px)
+    .name
+        margin 0
+        a
+            mainFont()
+            text-decoration none
+            color black
+            font-size rem(30px)
+            &:hover
+                color main
+            +above(cut)
+                font-size rem(45px)
+    .desc
+        mainFont(300)
+        margin rem(10px)
+        font-size rem(12px)
+        +above(cut)
+            font-size rem(16px)
+    .email
+        text-decoration none
+        color main

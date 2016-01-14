@@ -1,0 +1,107 @@
+pre
+    background #222
+    width 100%
+    padding rem(20px) 0
+    color sec
+    margin rem(30px) 0
+    font-size rem(14px)
+    +above(cut)
+        font-size rem(16px)
+        padding rem(40px) 0
+        margin rem(50px) 0
+    code
+        center(rem(800))
+        padding 0 rem(20px)
+        +below(cut)
+            overflow-x: scroll;
+    span
+        line-height 1.5rem
+        font-family 'Monaco','Consolas','Menlo',monospace
+
+.highlight
+    margin 0
+    +above(cut)
+        word-wrap break-word
+    .hll
+        background-color #333
+    .c,     // Comment
+    .cm,    // Comment.Multiline
+    .cp,    // Comment.Preproc
+    .c1,    // Comment.Single
+    .cs     // Comment.Special
+        color #75715e
+        
+    // Error 
+    .err      
+        color #960050
+        background-color #1e0010
+
+    .k,     // Keyword
+    .kc,    // Keyword.Constant
+    .kd,    // Keyword.Declaration
+    .kp,    // Keyword.Pseudo
+    .kr,    // Keyword.Reserved
+    .kt,    // Keyword.Type
+    .no     // Name.Constant
+        color #66d9ef
+
+    .l,     // Literal 
+    .mf,    // Literal.Number.Float
+    .mh,    // Literal.Number.Hex
+    .mi,    // Literal.Number.Integer
+    .mo,    // Literal.Number.Oct
+    .se,    // Literal.String.Escape
+    .il     // Literal.Number.Integer.Long
+        color #ae81ff
+        
+    .o,     // Operator
+    .p      // Punctuation
+        color #f7f7f2
+
+    .m,     // Literal.Number
+    .n,     // Name
+    .nb,    // Name.Builtin
+    .ni,    // Name.Entity
+    .nl,    // Name.Label
+    .nn,    // Name.Namespace
+    .py,    // Name.Property
+    .nv,    // Name.Variable
+    .w,     // Text.Whitespace
+    .bp,    // Name.Builtin.Pseudo
+    .vc,    // Name.Variable.Class
+    .vg,    // Name.Variable.Global
+    .vi     // Name.Variable.Instance
+        color #a4d043
+
+    .kn,    // Keyword.Namespace
+    .nt,    // Name.Tag
+    .ow     // Operator.Word
+        color #f92672
+
+    .ge     // Generic.Emph
+        font-style italic
+
+    .gs     // Generic.Strong
+        font-weight bold
+
+    .ld,    // Literal.Date
+    .s,     // Literal.String
+    .sb,    // Literal.String.Backtick
+    .sc,    // Literal.String.Char
+    .sd,    // Literal.String.Doc
+    .s2,    // Literal.String.Double
+    .sh,    // Literal.String.Heredoc
+    .si,    // Literal.String.Interpol
+    .sx,    // Literal.String.Other
+    .sr,    // Literal.String.Regex
+    .s1,    // Literal.String.Single
+    .ss     // Literal.String.Symbol
+        color #e6db74
+
+    .na,    // Name.Attribute
+    .nc,    // Name.Class
+    .nd,    // Name.Decorator
+    .ne,    // Name.Exception
+    .nf,    // Name.Function
+    .nx     // Name.Other
+        color #a6e22e

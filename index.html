@@ -1,0 +1,49 @@
+---
+layout: default
+---
+
+<main id="scroll" class="home" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
+    {% for post in site.posts %}
+        <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+                <a class="datetime" href="{{ post.url | prepend: site.baseurl }}">
+                    <meta itemprop="datePublished" content="{{post.date}}">
+                    <time datetime="{{ post.date | date_to_xmlschema }}">
+                        <span class="day">
+                            {{ post.date | date: "%d" }}
+                        </span>
+                        <span class="month-year">
+                            {% assign m = post.date | date: "%-m" %}
+                            {% case m %}
+                              {% when '1' %}Janeiro
+                              {% when '2' %}Fevereiro
+                              {% when '3' %}Março
+                              {% when '4' %}Abril
+                              {% when '5' %}Maio
+                              {% when '6' %}Junho
+                              {% when '7' %}Julho
+                              {% when '8' %}Agosto
+                              {% when '9' %}Setembro
+                              {% when '10' %}Outubro
+                              {% when '11' %}Novembro
+                              {% when '12' %}Dezembro
+                          {% endcase %}
+                          de {{ post.date | date: "%Y" }}
+                        </span>
+                    </time>
+                </a>
+                <div class="content">
+                    <a href="{{ post.url | prepend: site.baseurl }}"><h2 class="post-title" itemprop="name">{{ post.title }}</h2></a>
+                    <p class="description">
+                        {{ post.content | strip_html | truncatewords:40 }}
+                        <a href="{{ post.url | prepend: site.baseurl }}" class="link">Continue lendo esse artigo! :D</a>
+                    </p>
+
+                    <div class="tags">
+                        {% for tag in post.tags %}
+                            <a href="{{ baseurl }}/tags/#{{tag | slugify }}">{{ tag }}</a>
+                        {% endfor %}
+                    </div>
+                </div>
+        </article>
+    {% endfor %}
+</main>

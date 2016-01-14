@@ -1,0 +1,64 @@
+# Site settings
+description: "O conhecimento que você precisa, do jeito que você quer!"
+baseurl: ""
+url: "http://education.codeshare.com.br"
+icon: https://raw.githubusercontent.com/CodeShareEducation/CodeShareEducation.github.io/master/src/img/icons/favicon.ico
+
+# User settings
+username: CodeShare Education
+user_description: O conhecimento que você precisa, do jeito que você quer!
+user_title: O conhecimento que você precisa, do jeito que você quer!
+user_gravatar: d36a082aacb53b6f76869748fb4b81d4
+email: contato@codeshare.com.br
+github_username:  CodeShareEducation
+gplus_username: CodeshareBrEducation
+twitter_username: wendell_adriel
+disqus_username: codeshareeducation
+
+authors:
+  wendell:
+    name: Wendell Adriel
+    gravatar: d36a082aacb53b6f76869748fb4b81d4
+    email: wendell@codeshare.com.br
+    github: WendellAdriel
+    linkedin: wendelladrielti/en
+    facebook: wendell.adriel.7
+    site: http://wendelladriel.github.io
+    bio: "Tenho 23 anos, sou formado em Análise e Desenvolvimento de Sistemas, sou um Zend Certified PHP Engineer e
+    Scrum Fundamentals Certified. Atuo como Analista Desenvolvedor Web e também como Criador e Tutor da CodeShare.
+    Trabalho com desenvolvimento de sites e softwares há 7 anos e sempre procuro me manter atualizado nas melhores
+    tecnologias e metodologias no desenvolvimento de softwares. Há alguns anos estou focado no desenvolvimento para Web.
+    Já fiz (e continuo fazendo) diversos cursos na área de desenvolvimento e conheço diversas linguagens e tecnologias.
+    Gosto muito do desenvolvimento Front-End, porém prefiro o desenvolvimento Back-End e minhas linguagens preferidas são PHP,
+    Ruby, Python e Java. Recentemente também um grande fã de desenvolvimento utilizando a MEAN Stack."
+
+# Build settings
+markdown: kramdown
+highlighter: pygments
+permalink: /:title/
+
+
+# html minify
+compress_html:
+  clippings: all
+  comments: all
+  endings: []
+  profile: false
+
+# Links to include in menu navigation
+# For external links add external: true
+links:
+  - title: Home
+    url: /
+  - title: Categorias
+    url: /series
+  - title: Tags
+    url: /tags
+  - title: Sobre
+    url: /about
+  - title: Site CodeShare
+    url: "http://codeshare.com.br"
+    external: true
+
+# exclude my node related stuff
+exclude: ['package.json', 'src', 'node_modules']

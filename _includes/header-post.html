@@ -1,0 +1,29 @@
+<header class="header-post" role="banner">
+    <div class="content">
+        {% if page.date %}
+            <time itemprop="datePublished" datetime="{{ page.date }}" class="date">
+              {% assign m = page.date | date: "%-m" %}
+              {{ page.date | date: "%d" }} de
+              {% case m %}
+                {% when '1' %}Janeiro
+                {% when '2' %}Fevereiro
+                {% when '3' %}Março
+                {% when '4' %}Abril
+                {% when '5' %}Maio
+                {% when '6' %}Junho
+                {% when '7' %}Julho
+                {% when '8' %}Agosto
+                {% when '9' %}Setembro
+                {% when '10' %}Outubro
+                {% when '11' %}Novembro
+                {% when '12' %}Dezembro
+              {% endcase %}
+              de {{ page.date | date: "%Y" }}
+            </time>
+        {% endif %}
+        <h1 class="post-title" itemprop="name">{{ page.title }}</h1>
+        <p itemprop="description" class="subtitle">{{ page.description }}</p>
+    </div>
+     <a class="down" data-scroll href="#scroll"><svg class="icon icon-angle-down"><use xlink:href="#icon-angle-down"></use></svg></a>
+     {% include menu-search.html %}
+</header>

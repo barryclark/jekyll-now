@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    {% assign author = site.authors[page.author] %}
+    {% include head.html %}
+    <body>
+        {% include svg-icons.html %}
+        {% include header-post.html %}
+        <section class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+            <article role="article" id="scroll" class="post-content" itemprop="articleBody">
+                {{ content }}
+            </article>
+
+            {% include share.html %}
+            {% include author.html %}
+            {% include comments.html %}
+            {% include footer.html %}
+        </section>
+        <script>
+          var article = document.getElementsByTagName('article');
+          var links = article[0].getElementsByTagName('a');
+          for (var i = 0; i < links.length; i++) {
+            links[i].setAttribute('target', '_blank');
+          }
+        </script>
+    </body>
+</html>
