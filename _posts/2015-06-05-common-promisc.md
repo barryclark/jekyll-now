@@ -61,3 +61,5 @@ tags: [common]
     [java 实战视频](http://www.ulewo.com/)
     
     [python 搭建微信公众平台](http://my.oschina.net/yangyanxing/blog/159215)
+    
+    [红黑树动态图](http://www.cnblogs.com/yangecnu/p/Introduce-Red-Black-Tree.html)
