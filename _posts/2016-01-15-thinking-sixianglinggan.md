@@ -1,6 +1,6 @@
 ---
 layout: post
-title: thingking everyday
+title: 放飞思想
 tags: [thinking]
 ---
 
