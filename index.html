@@ -5,9 +5,9 @@ layout: default
   {% for post in paginator.posts %}
     <article class="post"> 
        {% if post.image.feature %}
-        <a href="{{ site.baseurl }}{{ post.url }}" style="background:url({{ post.image.feature}});background-size:cover;">
+        <a href="{{ site.baseurl }}{{ post.url }}" style="background:url({{ post.image.feature}});background-size:cover;background-position-y: center;">
         {% else %}
-        <a href="{{ site.baseurl }}{{ post.url }}" style="background:url(http://i.giphy.com/FRmOsocKhM1xK.gif);background-size:cover;">
+        <a href="{{ site.baseurl }}{{ post.url }}" style="background:url(http://i.giphy.com/FRmOsocKhM1xK.gif);background-size:cover;background-position-y: center;">
         {% endif %}
             <span class="cover"></span>
             <div class="data-post">

@@ -42,13 +42,20 @@
     </head>
 
     <body class="thepost">
-    <header class="single-header">
+    {% if page.image.feature %}
+    <header class="single-header" style="
+    background: url({{ page.image.feature }});
+    background-size: cover;
+    background-position-y: center;
+    ">
+    {% else %}
+    <header class="single-header" style="
+    background: url(http://i.giphy.com/FRmOsocKhM1xK.gif);
+    background-size: cover;
+    background-position-y: center;
+    ">
+    {% endif %}
             <span class="gradient"></span>
-            {% if page.image.feature %}
-                <img src="{{ page.image.feature }}" alt="" />
-            {% else %}
-                <img src="http://i.giphy.com/FRmOsocKhM1xK.gif"/>
-            {% endif %}
             <h1 class="title">{{ page.title }}</h1>
             <h4 class="desc">{{ page.titledesc }}</h4>
     </header>
