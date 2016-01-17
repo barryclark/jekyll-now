@@ -4,8 +4,8 @@ layout: blog
 
 
 
-{% for post in site.posts %}
-    <div class="item row">
+<!-- {% for post in site.posts %}
+
         <a class="col-md-4 col-sm-4 col-xs-12" href="{{ post.url | prepend: site.baseurl }}">
         <img class="img-responsive project-image" src="assets/images/{{post.img_file}}" alt="{{ post.title }}" />
         </a>
@@ -17,6 +17,18 @@ layout: blog
             <p align="right">
             <a class="btn btn-cta-secondary" style="font-size:10px" href="{{ post.url | prepend: site.baseurl }}">Full Article <i class="fa fa-chevron-right"></i></a>
             </p>
-        </div><!--//desc-->                          
-    </div><!--//item-->
-{% endfor %}
+        </div>
+    </div>
+{% endfor %} -->
+<h2 class="heading">My Blog</h2>
+<div class="item row">
+    {% for post in site.posts %}
+        <div class="desc col-md-4 col-sm-6 col-xs-12">
+            <div class="item row" style="margin: 20px;">
+                <a href="{{ post.url | prepend: site.baseurl }}"><img class="img-responsive project-image" src="assets/images/{{post.img_file}}" alt="{{ post.title }}"/></a>
+                <!-- <p style="clear: both;">{{ post.title | truncatewords:6}}</p> -->
+            </div>
+            <div class="item row" style="font-size: 14px; font-weight: bold; margin: 0px; height:60px; text-align: center;"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title}}</a></div>            
+        </div>
+    {% endfor %}
+</div>

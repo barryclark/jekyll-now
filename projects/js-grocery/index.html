@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Grocery List Bootstrap jQuery Demo</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body style="background-image: url('img/background.png');">
+<div class="col-sm-offset-3 col-sm-6" style="text-align: center;background-color: #cccccc; padding-bottom: 100px;">
+  <img src="img/grocery_list.png" class="img-responsive" style="width:200px;float: none;margin: 0 auto;" alt="Grocery List Bootstrap jQuery Demo">
+  <h2>Grocery List Bootstrap jQuery Demo</h2>
+  <br />
+  <ul class="list-group" style="text-align: left;"></ul>
+
+  <div class="form-group">
+    <div class="col-sm-12 col-md-6 col-lg-7">
+      <input id="main-input" type="text" class="form-control" placeholder="Grocery Item">
+    </div>
+
+  <div class="col-sm-12 col-md-3 col-lg-3">
+    <input id="main-quantity" type="text" class="form-control" placeholder="Quantity">
+  </div>
+
+  <div class="col-sm-12 col-md-3 col-lg-2">
+    <button type="button" class="btn btn-success" id="main-button">Add Item</button>
+  </div>
+</div>
+  
+</div>
+
+<div class="modal fade" id="editModal" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Edit</h4>
+      </div>
+      <div class="modal-body">
+        <div class="col-sm-12 col-md-6 col-lg-7"><input type="hidden" class="form-control" id="originalItem"><input type="text" class="form-control" id="editItem"></div>
+        <div class="col-sm-12 col-md-6 col-lg-5"><input type="text" class="form-control" id="editQuantity"></div>
+        <br><br>
+      </div>
+      <div class="modal-footer"><button type="button" class="btn btn-primary" id="edit-button" data-dismiss="modal">Save changes</button></div>
+    </div>
+  </div>
+</div>
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>

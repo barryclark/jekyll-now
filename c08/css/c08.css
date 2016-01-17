@@ -1,0 +1,176 @@
+/* The Maker Bus Stylesheet */
+
+@import url(http://fonts.googleapis.com/css?family=Oswald:700,400);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+  background-color: #fff;
+  color: #666;
+  font-family: 'Open Sans', arial, sans-serif;
+  width: 960px;
+  margin: 0 auto 0 auto;}
+
+header {
+  display: block;
+  height: 140px;
+  border-bottom: 5px solid #000;
+  margin-bottom: 30px;}
+
+h1 {
+  font-weight: normal;
+  margin: 28px 0 0 0;
+  float: left;
+  width: 225px;
+  height: 90px;
+  background-image: url('../img/maker-logo.png');
+  background-repeat: no-repeat;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;}
+
+h2 {
+  font-size: 2.4em;
+  margin: 0.7em 0 1.7em 0;
+  padding: 0;
+  color: #000;
+  line-height: 1em;
+  letter-spacing: -.06em;}
+
+h3 {
+  margin: 0;
+  font-size: 1.4em;
+  color: #3fbb8a; 
+  font-family: oswald, arial, sans-serif;}
+
+nav {
+  font-family: oswald, arial, sans-serif;
+  float: right; 
+  width: 600px;
+  padding-top: 30px;
+  font-size: 1.4em;
+  text-align: right;
+  text-transform: uppercase;}
+nav a {
+  padding-left: 30px;}
+nav a:hover, a.current {
+  color: #d71a00;}
+
+a {text-decoration: none; color: #000;}
+
+.third, .event {
+  width: 320px;
+  float: left;
+  text-align: center;}
+
+.event p {border-right: 1px solid #999; }
+#content .event:last-child p {border-right: none;}
+
+.third p {
+  padding: 0 20px 0 20px;
+  margin: 40px 0 20px 0;
+  text-align: left;
+  line-height: 1.4em;}
+
+.intro p {
+  margin: 0 0 0 0;
+  padding: 0 20px 20px 0;}
+
+
+.half {
+  padding-top: 60px;
+  width: 480px;
+  float: left;
+  text-align: center;}
+
+#vote {padding-top: 20px;}
+p#selector {margin-top: -40px;}
+
+form {
+  margin: 0 0 0 90px;
+  width: 300px;}
+label, input {
+  display: inline-block;}
+label {
+  display: block;
+  text-align: left;
+  padding-top: 10px;
+  text-transform: uppercase;}
+input {
+  border: none;
+  border-radius: 5px;
+  background-color: #dcdcdc;
+  font-size: 1em;
+  line-height: 1em;
+  width: 280px;
+  padding: 6px 10px 6px 10px;}
+input[type=submit] {
+  background-color: #1fb684;
+  color: #fff;
+  font-weight: bold;
+  clear:left;
+  float: right;
+  width: 8em;
+  padding: 8px 20px 8px 20px;
+  margin-top: 10px;
+  text-transform: uppercase;}
+input[type=submit]:hover {
+  background-color: #000;
+  cursor: pointer;}
+
+
+/* Exchange rates */
+#rates div {
+  background-repeat:   no-repeat;
+  background-position: left center;
+  padding-left: 20px;}
+#rates {padding: 50px 100px 50px 100px;}
+#reload {padding: 0 100px 0 100px;}
+#rates, #reload {text-align: left;}
+.AU {background-image: url('../img/au.png');}
+.UK {background-image: url('../img/gb.png');}
+.US {background-image: url('../img/us.png');}
+
+
+/* Example */
+#event a {
+  font-family: oswald, arial, sans-serif;
+  font-size: 120%;
+  text-transform: uppercase;
+  text-align: left;
+  line-height: 4.5em;
+  display: block; 
+  height: 120px; width: 100%;}
+#event img {
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin-right: 10px;}
+#event a:hover, #sessions a:hover {color: #1fb684;}
+#sessions a {
+  font-family: oswald, arial, sans-serif;
+  font-size: 120%;}
+#sessions p {
+  margin-top: 2em;}
+#sessions ul {
+  border-left: 1px solid #999;
+  border-right: 1px solid #999;
+  padding: 0 20px 0 20px;
+  margin: 0 0 40px 0;}
+#sessions li {
+  list-style-type: none; 
+  padding: 20px 0 20px 0; 
+  background-color: #fff; 
+  border-top: 1px solid #d6d6d6;
+  text-align: left;}
+#sessions li:first-child {
+  border-top: none;
+  padding-top: 1.8em;}
+#sessions li .time {
+  display: inline-block;
+  width: 60px;}
+#details div {
+  text-align: left;
+  padding: 1.8em 0 0em 1;}
+#details p {
+  padding: 0;
+  margin: 0.8em 0 0 0;}
