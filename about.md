@@ -4,12 +4,24 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Assistant Professor  
+[Quantitative Methods program](http://www.edb.utexas.edu/education/departments/edp/doctoral/qm/)  
+[Department of Educational Psychology](http://www.edb.utexas.edu/education/departments/edp/)  
+[College of Education](http://www.edb.utexas.edu/education/home/)  
+[The University of Texas at Austin](http://www.utexas.edu/)
 
-### More Information
+Curriculum Vitae
 
-A place to include any other types of information that you'd like to include about yourself.
+### Contact
 
-### Contact me
+pusto@austin.utexas.edu
 
-[email@domain.com](mailto:email@domain.com)
+### Mailing address:
+
+James E. Pustejovsky  
+The University of Texas at Austin  
+Educational Psychology Department  
+1912 Speedway, Stop D5800  
+Austin, TX 78712-1289
+
+
