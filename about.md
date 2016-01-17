@@ -10,6 +10,8 @@ Assistant Professor
 [College of Education](http://www.edb.utexas.edu/education/home/)  
 [The University of Texas at Austin](http://www.utexas.edu/)
 
+### Curriculum Vitae
+
 [Curriculum Vitae]({{ site.url }}/files/Pustejovsky_CV.pdf)
 
 ### Contact
