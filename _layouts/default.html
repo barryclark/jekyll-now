@@ -9,13 +9,36 @@
                     <div class="section-inner">
                         <h2 class="heading">About Me</h2>
                             <div class="content">
-                                <p>I’m a seasoned product manager with 12 years of experience in web, Saas, business applications and mobile technology projects. I carry passion for technology, intellect, a strong customer focus, and lots of energy.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint nemo, consectetur nisi eum labore natus quidem placeat porro eos quasi? Incidunt, explicabo quaerat sint. Cumque aperiam eligendi sequi aliquam, ullam.</p>
 
-                                <p>For a much more detailed information please visit <a href="https://www.linkedin.com/in/timurcatakli">https://www.linkedin.com/in/timurcatakli</a></p>
-
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut quis consequuntur laboriosam reiciendis nemo, quae. Ratione aliquam saepe autem dolores officiis, sunt libero delectus velit tenetur reiciendis amet, nemo reprehenderit?</a></p>
                         </div><!--//content-->
                     </div><!--//section-inner-->                 
                 </section><!--//section-->
+
+                <section class="blog section">
+                    <div class="section-inner">
+                        <h2 class="heading">Latest Posts from My Blog</h2>
+                            <div class="content">
+                                <div class="item row">
+                                    {% for post in site.posts limit:6 %}
+                                        <div class="desc col-md-4 col-sm-6 col-xs-12">
+                                            <div class="item row" style="margin: 20px;">
+                                                <a href="{{ post.url | prepend: site.baseurl }}"><img class="img-responsive project-image" src="assets/images/{{post.img_file}}" alt="{{ post.title }}"/></a>
+                                                <!-- <p style="clear: both;">{{ post.title | truncatewords:6}}</p> -->
+                                            </div>
+                                            <div class="item row" style="font-size: 14px; font-weight: bold; margin: 0px; height:60px; text-align: center;"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title}}</a></div>            
+                                        </div>
+                                    {% endfor %}
+                        
+                                    <hr style="border:1px solid #eee;">
+                                    <a class="btn btn-cta-primary pull-center" href="/blog.html"><i class="fa fa-heart"></i> Visit My Blog</a>
+                                    <div style="clear:both"></div>
+                                </div>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+
     
                <section class="latest section">
                     <div class="section-inner">
@@ -88,14 +111,6 @@
                         </div><!--//content-->  
                     </div><!--//section-inner-->                 
                 </section><!--//section-->
-                <section class="github section">
-                    <div class="section-inner">
-                        <h2 class="heading">My GitHub</h2>
-                        <div id="ghfeed" class="ghfeed">
-                        </div><!--//ghfeed-->
-                        
-                    </div><!--//secton-inner-->
-                </section><!--//section-->
             </div><!--//primary-->
             <div class="secondary col-md-4 col-sm-12 col-xs-12">
                  <aside class="info aside section">
@@ -120,7 +135,7 @@
                             <div class="skillset">
                                
                                 <div class="item">
-                                    <h3 class="level-title">Python &amp; Django<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="You can use the tooltip to add more info...">Expert</span></h3>
+                                    <h3 class="level-title">Ruby & Rails<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="You can use the tooltip to add more info...">Expert</span></h3>
                                     <div class="level-bar">
                                         <div class="level-bar-inner" data-level="96%">
                                         </div>                                      
@@ -128,7 +143,7 @@
                                 </div><!--//item-->
                                 
                                 <div class="item">
-                                    <h3 class="level-title">Javascript &amp; jQuery<span class="level-label">Expert</span></h3>
+                                    <h3 class="level-title">Javascript, Angular &amp; jQuery<span class="level-label">Expert</span></h3>
                                     <div class="level-bar">
                                         <div class="level-bar-inner" data-level="96%">
                                         </div>                                      
@@ -144,7 +159,7 @@
                                 </div><!--//item-->
                                 
                                 <div class="item">
-                                    <h3 class="level-title">Ruby on Rails<span class="level-label">Pro</span></h3>
+                                    <h3 class="level-title">SQL Server, SQLite 3, MongoDB<span class="level-label">Pro</span></h3>
                                     <div class="level-bar">
                                         <div class="level-bar-inner" data-level="85%">
                                         </div>                                      
@@ -182,17 +197,27 @@
                     </div><!--//section-inner-->
                 </aside><!--//section-->
                             
-                <aside class="blog aside section">
+
+
+                <aside class="education aside section">
                     <div class="section-inner">
-                        <h2 class="heading">Latest Blog Posts</h2>
-                        {{content}}<!--//content-->
-                        <br />
-                        <div style="clear:both"></div>
-                        <a class="btn btn-cta-primary pull-left" href="/blog.html"><i class="fa fa-heart"></i> Visit My Blog</a>
-                        <div style="clear:both"></div>
+                        <h2 class="heading">My GitHub Activity</h2>
+                        <div class="content">
+                            <div id="ghfeed" class="ghfeed">
+                        </div><!--//content-->
                     </div><!--//section-inner-->
                 </aside><!--//section-->
-                
+
+
+
+
+
+
+
+
+
+
+
 
               
             </div><!--//secondary-->    
