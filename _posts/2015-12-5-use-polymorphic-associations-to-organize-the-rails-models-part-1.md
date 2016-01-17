@@ -214,7 +214,7 @@ comp.product
 => #<Product id: 8, user_id: 1, price: 2000, stock: 50, created_at: "2015-12-06 15:51:32", updated_at: "2015-12-06 15:51:32", category_type: "Computer", category_id: 6>
 ```
 
-In the [second part]({% post_url 2015-12-5-use-polymorphic-associations-to-organize-the-rails-models-part-2 %}) of the article we will explore the Routes, Views and Controllers in the context of polymorphic associations.
+In the [second part]({% post_url 2016-01-10-use-polymorphic-associations-to-organize-rails-models-part-2 %}) of the article we will explore the Routes, Views and Controllers in the context of polymorphic associations.
 
 [6ef755a1]: https://github.com/iacobson/test-shop/tree/polymorphic-associations-initial "polymorphic-associations-initial"
 [2cc9496e]: https://github.com/iacobson/test-shop/tree/polymorphic-associations-final "polymorphic-associations-final"

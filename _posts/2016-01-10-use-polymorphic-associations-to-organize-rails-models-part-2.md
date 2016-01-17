@@ -4,7 +4,7 @@ title: Use Polymorphic Associations to organize the Rails models
 ---
 # Part 2: Views and Controllers
 
-At the end of the .... of this article we could already test the Polymorphic Associations in the rails console. This means our job is practically done. It is however a good exercise to continue our example by adapting the Views and Controller to the new Polymorphic setup.
+At the end of the [first part]({% post_url 2015-12-5-use-polymorphic-associations-to-organize-the-rails-models-part-1 %}) of this article we could already test the Polymorphic Associations in the rails console. This means our job is practically done. It is however a good exercise to continue our example by adapting the Views and Controller to the new Polymorphic setup.
 
 > This example is using Slim for views templates
 
