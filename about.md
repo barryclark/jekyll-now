@@ -14,7 +14,7 @@ Curriculum Vitae
 
 ### Contact
 
-pusto@austin.utexas.edu
+[pusto@austin.utexas.edu](mailto:pusto@austin.utexas.edu)
 
 ### Mailing address:
 
