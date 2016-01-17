@@ -1,25 +1,6 @@
 ---
 layout: blog
 ---
-
-
-
-<!-- {% for post in site.posts %}
-
-        <a class="col-md-4 col-sm-4 col-xs-12" href="{{ post.url | prepend: site.baseurl }}">
-        <img class="img-responsive project-image" src="assets/images/{{post.img_file}}" alt="{{ post.title }}" />
-        </a>
-        <div class="desc col-md-8 col-sm-8 col-xs-12">
-            <h2 class="title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-            <span class="label label-theme">{{ post.date | date: "%b %-d, %Y" }}</span>
-            <p style="clear: both;">{{post.excerpt}}</p>
-            
-            <p align="right">
-            <a class="btn btn-cta-secondary" style="font-size:10px" href="{{ post.url | prepend: site.baseurl }}">Full Article <i class="fa fa-chevron-right"></i></a>
-            </p>
-        </div>
-    </div>
-{% endfor %} -->
 <h2 class="heading">My Blog</h2>
 <div class="item row">
     {% for post in site.posts %}
