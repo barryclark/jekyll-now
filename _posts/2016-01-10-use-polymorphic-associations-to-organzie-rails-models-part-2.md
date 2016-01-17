@@ -161,6 +161,4 @@ All the actions related to creating and updating a category, will be moved to th
 
 
 
-
-
   [c054b877]: https://github.com/iacobson/test-shop/tree/polymorphic-associations-final "polymorphic-associations-final"
