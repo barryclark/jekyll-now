@@ -233,7 +233,21 @@ ex. ENS0000001ENS0000002 -> ENS0000001 ENS0000002
      cols = ['col1', 'col2']
      final = original[cols]
  
+### <font color="red">Git</font>
 
+##### Insufficient permissions error
+
+        cd <path to repo>
+        cd .git/objects
+        sudo chown -R username:username *
+
+##### Three main commands
+        git add .
+        git commit -m "commit message"
+        git push
+
+##### Clone a repository
+        git clone <address from github>
 ### <font color="red">BioPython</font>
 
 ##### get ORF from sequence
