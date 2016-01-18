@@ -23,5 +23,5 @@ permalink: /teaching/
 
 ### Statistical Analysis of Experimental Data
 
-* [2016 (Spring) Syllabus]
+* [2016 (Spring) Syllabus]({{ site.url }}/files/syllabi/EDP380C-6-Statistical-Analysis-of-Experimental-Data-2016S.pdf)
 * [2015 (Fall) Syllabus]({{ site.url }}/files/syllabi/EDP380C-6-Statistical-Analysis-of-Experimental-Data-2015F.pdf)
