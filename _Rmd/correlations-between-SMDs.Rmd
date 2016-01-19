@@ -20,19 +20,12 @@ $$y_{ijt} = \mu_{jt} + \epsilon_{ijt},$$
 
 where the errors are multi-variate normally distributed with mean zero, variance that can differ across outcome but not across treatment group, and correlation that is constant across treatment groups, i.e. $\text{Var}\left(\epsilon_{ijt}\right) = \sigma^2_j$, $\text{Cov}\left(\epsilon_{ijt}, \epsilon_{ikt} \right) = \rho_{jk}$.
 
-Denote the mean score on outcome $j$ in group $t$ as $\bar{y}_{jt}$ and the standard deviation of the scores on outcome $j$ in group $t$ as $s_{jt}$, both for $j = 1,...,J$ and $t = 0,...,T$ (with $t = 0$ corresponding to the control group). The structure of these summary statistics is depicted below.
+Denote the mean score on outcome $j$ in group $t$ as $\bar{y}_{jt}$ and the standard deviation of the scores on outcome $j$ in group $t$ as $s_{jt}$, both for $j = 1,...,J$ and $t = 0,...,T$ (with $t = 0$ corresponding to the control group). Also required are estimates of the correlations among outcome measures 1 through $J$, after partialling out differences between treatment groups. Let $r_{jk}$ denote the partial correlation between measure $j$ and measure $k$, for $j = 1,...,J - 1$ and $k = j + 1,...,J$.
 
-Outcome | Control | Treatment 1 | Treatment 2 | ... | Treatment $T$
---------|---------|-------------|-------------|-----|-------------
-Measure 1 | $\bar{y}_{10}$ ( $s_{10}$) | $\bar{y}_{11}$ ( $s_{11}$) | $\bar{y}_{12}$ ( $s_{12}$) | ... | $\bar{y}_{1T}$  ( $s_{1T}$)
-Measure 2 | $\bar{y}_{20}$ ( $s_{20}$) | $\bar{y}_{21}$ ( $s_{21}$) | $\bar{y}_{22}$ ( $s_{22}$) | ... | $\bar{y}_{2T}$  ( $s_{2T}$)
-$\vdots$ | $\vdots$ | $\vdots$ | $\vdots$ | | $\vdots$
-Measure $J$ | $\bar{y}_{J0}$ ( $s_{J0}$) | $\bar{y}_{J1}$ ( $s_{J1}$) | $\bar{y}_{J2}$ ( $s_{J2}$) | ... | $\bar{y}_{JT}$  ( $s_{JT}$)
+With multiple treatment groups, one might wonder how best to compute the standard deviation for purposes of scaling the treatment effect estimates. In their discussion of SMDs from multiple treatment studies, Gleser and Olkin (2009) assume (though they don't actually state outright) that the standard deviation will be pooled across all $T + 1$ groups. The pooled standard deviation for outcome $m$ is calculated as the square root of the pooled variance, 
 
-Also required are estimates of the correlations among outcome measures 1 through $J$, after partialling out differences between treatment groups. Let $r_{jk}$ denote the partial correlation between measure $j$ and measure $k$, for $j = 1,...,J - 1$ and $k = j + 1,...,J$.
-
-With multiple treatment groups, one might wonder how best to compute the standard deviation for purposes of scaling the treatment effect estimates. In their discussion of SMDs from multiple treatment studies, Gleser and Olkin (2009) assume (though they don't actually state outright) that the standard deviation will be pooled _across all $T + 1$ groups_. The pooled standard deviation for outcome $m$ is calculated as the square root of the pooled variance, 
 $$s_{jP}^2 = \frac{1}{N - T - 1} \sum_{t=0}^T (n_t - 1)s_{jt}^2,$$
+
 where $N = \sum_{t=0}^T n_t$. The standardized mean difference for treatment $t$ on outcome $j$ is then estimated as 
 
 $$d_{jt} = \frac{\bar{y}_{jt} - \bar{y}_{j0}}{s_{jP}}$$
