@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Howto - Configuring log parsing with fluentd
+title: Howto - Configuring Log Parsing with Fluentd
 subtite: Approaches to log parsing
 description: Description of a couple of approaches to designing your fluentd configuration.
 category: howto
