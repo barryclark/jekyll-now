@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Log Aggregation with Fluentd, Elasticsearch and Kibana
+title: Howto - Log Aggregation with Fluentd, Elasticsearch and Kibana
 subtite: A short introduction
 description: Introduction to log aggregation using Fluentd, Elasticsearch and Kibana
 category: howto
