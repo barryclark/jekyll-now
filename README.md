@@ -5,5 +5,3 @@ Assistant Professor
 [College of Education](http://www.edb.utexas.edu/education/home/)  
 [The University of Texas at Austin](http://www.utexas.edu/)  
 [pusto@austin.utexas.edu](mailto:pusto@austin.utexas.edu)
-
-$$n = \frac{1}{5}$$
