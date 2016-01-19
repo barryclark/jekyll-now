@@ -24,10 +24,10 @@ Denote the mean score on outcome $j$ in group $t$ as $\bar{y}_{jt}$ and the stan
 
 Outcome | Control | Treatment 1 | Treatment 2 | ... | Treatment $T$
 --------|---------|-------------|-------------|-----|-------------
-Measure 1 | $\bar{y}_{10}$ ($s_{10}$) | $\bar{y}_{11}$ ($s_{11}$) | $\bar{y}_{12}$ ($s_{12}$) | ... | $\bar{y}_{1T}$  ($s_{1T}$)
-Measure 2 | $\bar{y}_{20}$ ($s_{20}$) | $\bar{y}_{21}$ ($s_{21}$) | $\bar{y}_{22}$ ($s_{22}$) | ... | $\bar{y}_{2T}$  ($s_{2T}$)
+Measure 1 | $\bar{y}_{10}$ ( $s_{10}$) | $\bar{y}_{11}$ ( $s_{11}$) | $\bar{y}_{12}$ ( $s_{12}$) | ... | $\bar{y}_{1T}$  ( $s_{1T}$)
+Measure 2 | $\bar{y}_{20}$ ( $s_{20}$) | $\bar{y}_{21}$ ( $s_{21}$) | $\bar{y}_{22}$ ( $s_{22}$) | ... | $\bar{y}_{2T}$  ( $s_{2T}$)
 $\vdots$ | $\vdots$ | $\vdots$ | $\vdots$ | | $\vdots$
-Measure $J$ | $\bar{y}_{J0}$ ($s_{J0}$) | $\bar{y}_{J1}$ ($s_{J1}$) | $\bar{y}_{J2}$ ($s_{J2}$) | ... | $\bar{y}_{JT}$  ($s_{JT}$)
+Measure $J$ | $\bar{y}_{J0}$ ( $s_{J0}$) | $\bar{y}_{J1}$ ( $s_{J1}$) | $\bar{y}_{J2}$ ( $s_{J2}$) | ... | $\bar{y}_{JT}$  ( $s_{JT}$)
 
 Also required are estimates of the correlations among outcome measures 1 through $J$, after partialling out differences between treatment groups. Let $r_{jk}$ denote the partial correlation between measure $j$ and measure $k$, for $j = 1,...,J - 1$ and $k = j + 1,...,J$.
 
