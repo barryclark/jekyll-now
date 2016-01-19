@@ -9,8 +9,6 @@ author: Doru Mihai
 author_email: doru.mihai@haufe-lexware.com
 ---
 
-# Approaches to log parsing
-
 When you will start to deploy your log shippers to more and more systems you will encounter the issue of adapting your solution to be able to parse whatever log format and source each system is using. Luckily, fluentd has a lot of plugins and you can approach a problem of parsing a log file in different ways.
 
 
