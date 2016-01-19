@@ -15,9 +15,11 @@ For standardized mean difference (SMD) measures of effect size, formulas for the
 # Notation and Model
 
 Suppose that the experiment has a control group that includes $n_0$ units and $T$ treatment groups that include $n_1,...,n_T$ units, respectively. Also suppose that $J$ outcome measures are made on each unit in each group. The formulas below assume that the data follow a one-way MANOVA model. Let $y_{ijt}$ denote the score for unit $i$ on outcome $j$ in group $t$. Then I assume that
+
 $$
 y_{ijt} = \mu_{jt} + \epsilon_{ijt},
 $$
+
 where the errors are multi-variate normally distributed with mean zero, variance that can differ across outcome but not across treatment group, and correlation that is constant across treatment groups, i.e. $\text{Var}\left(\epsilon_{ijt}\right) = \sigma^2_j$, $\text{Cov}\left(\epsilon_{ijt}, \epsilon_{ikt} \right) = \rho_{jk}$.
 
 Denote the mean score on outcome $j$ in group $t$ as $\bar{y}_{jt}$ and the standard deviation of the scores on outcome $j$ in group $t$ as $s_{jt}$, both for $j = 1,...,J$ and $t = 0,...,T$ (with $t = 0$ corresponding to the control group). The structure of these summary statistics is depicted below.
@@ -32,10 +34,15 @@ Measure $J$ | $\bar{y}_{J0}$ ($s_{J0}$) | $\bar{y}_{J1}$ ($s_{J1}$) | $\bar{y}_{
 Also required are estimates of the correlations among outcome measures 1 through $J$, after partialling out differences between treatment groups. Let $r_{jk}$ denote the partial correlation between measure $j$ and measure $k$, for $j = 1,...,J - 1$ and $k = j + 1,...,J$.
 
 With multiple treatment groups, one might wonder how best to compute the standard deviation for purposes of scaling the treatment effect estimates. In their discussion of SMDs from multiple treatment studies, Gleser and Olkin (2009) assume (though they don't actually state outright) that the standard deviation will be pooled _across all $T + 1$ groups_. The pooled standard deviation for outcome $m$ is calculated as the square root of the pooled variance, 
+
 $$s_{jP}^2 = \frac{1}{N - T - 1} \sum_{t=0}^T (n_t - 1)s_{jt}^2,$$
+
 where $N = \sum_{t=0}^T n_t$. The standardized mean difference for treatment $t$ on outcome $j$ is then estimated as 
+
 $$d_{jt} = \frac{\bar{y}_{jt} - \bar{y}_{j0}}{s_{jP}}$$
+
 for $j = 1,...,J$ and $t = 1,...,T$. The conventional estimate of the large-sample variance of $d_{jt}$ is 
+
 $$\text{Var}(d_{jt}) \approx \frac{1}{n_0} + \frac{1}{n_t} + \frac{d_{jt}^2}{2 (N - T - 1)}.$$
 
 # Covariances
@@ -45,15 +52,21 @@ $$\text{Cov}(d_{jt},d_{ju}) \approx \frac{1}{n_0} + \frac{d_{jt} d_{ju}}{2 (N - 
 The above differs slightly from Gleser and Olkin (2009, Formula 19.19) because it uses the degrees of freedom $N - T - 1$ in the denominator of the second term, rather than the total sample size. If the total sample size is larger relative to the number of treatment groups, the discrepancy should be minor.
 
 SMDs based on a single treatment group but for different outcome measures follow a structure that is essentially equivalent to what Gleser and Olkin (2009) call a "multiple-endpoint" study. The large-sample covariance between the effect size estimates can be estimated as 
+
 $$\text{Cov}(d_{jt},d_{kt}) \approx r_{jk} \left(\frac{1}{n_0} + \frac{1}{n_t}\right) + \frac{r_{jk}^2 d_{jt} d_{kt}}{2 (N - T - 1)}$$
+
 (cf. Gleser \& Olkin, 2009, Formula 19.19). Note that if the degrees of freedom are large relative to $d_{jt}$ and $d_{kt}$, then the correlation between the effect sizes will be approximately equal to $\text{Cor}(d_{jt},d_{kt}) \approx r_{jk}$.
 
 Finally, the large-sample covariance between SMDs based on different treatment groups and different outcome measures can be estimated as 
+
 $$\text{Cov}(d_{jt},d_{ku}) \approx \frac{r_{jk}}{n_0} + \frac{r_{jk}^2 d_{jt} d_{ku}}{2 (N - T - 1)}.$$
+
 This is similar to the previous formula, but does not include the term corresponding to the covariance between different outcome measures in a common treatment group.
 
 If $r_{jj} = 1$ is used for the correlation of an outcome measure with itself, all of the above formulas (including the variance of $d_{jt}$) can be expressed compactly as
+
 $$\text{Cov}(d_{jt},d_{ku}) \approx r_{jk} \left(\frac{1}{n_0} + \frac{I(t = u)}{n_t}\right) + \frac{r_{jk}^2 d_{jt} d_{ku}}{2 (N - T - 1)},$$
+
 where $I(A)$ is equal to one if $A$ is true and equal to zero otherwise.
 
 # References
