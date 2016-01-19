@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+I am a PhD student in the Department of Cognitive Science at UCSD. I think about language and communication and how it is possible to use the former to do the latter despite uncertainty at every level. I have background in cognitive science, computer science, neuroscience, philosophy, lingusitics, mathematics, and artificial intelligence, and I try to bring all of these tools and perspectives to bear on this question.
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+I also spend time thinging about more traditional epistemological and metaphysical problems as well as what some might consider to be more practical issues.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[lmuhlstein@ucsd.edu](mailto:lmuhlstein@ucsd.edu)
