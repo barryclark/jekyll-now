@@ -2,6 +2,9 @@
 layout: post
 title: Fatal crashes by city
 date: August 23, 2015
+output: 
+  html_document:
+    fig.retina: null
 ---
 
 In [my last post](http://blogs.edb.utexas.edu/pusto/2015/08/20/fatal-crashes-in-austin-and-travis-county/) I looked at the number of fatal automobile crashes in Austin over the past decade or so, to get a sense of just how unusual this past year has been (with [69 fatalities so far](http://kxan.com/2015/08/19/southbound-i-35-closed-at-airport-blvd-after-fatal-crash/)). Since I now know where to get data, I thought it would be interesting to look at how Austin compares to other cities in Texas. Making comparisons to other large cities in Texas is useful for a couple of reasons. First, it provides additional context for interpreting the number of crashes in Austin. Second, looking at changes in a couple of cities over time provides a better sense of how much year-to-year variability exists. 

@@ -1,4 +1,4 @@
-r2jekyll <- function(filename) {
+r2jekyll <- function(filename, dpi = ) {
 
   require(knitr)
   require(stringr)
@@ -21,13 +21,13 @@ r2jekyll <- function(filename) {
   # knit to markdown
   outfile <- paste0("_posts/", date, "-", filename, ".md")
   render_jekyll()
-  opts_chunk$set(fig.path = fromdir)
+  opts_chunk$set(fig.path = fromdir, dpi = 192)
   knit(text = content_mathjaxed, output = outfile)
   
   # Copy .png files to the images directory.
   pics <- list.files(fromdir, full.name=TRUE)
   dir.create(todir)
-  file.copy(pics, todir)
+  file.copy(pics, todir, overwrite = TRUE)
   unlink("{{site.url}}", recursive=T)
 }
 
