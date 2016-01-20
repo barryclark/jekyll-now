@@ -3,8 +3,9 @@ layout: post
 title: Shared Access Signatures with Azure Storage
 subtitle: How to replace your more or less secure ftp server.
 description: Shared Access Signatures with Azure Storage
-category: general
-author: [Martin Danielsson](https://github.com/DonMartin76)
+category: howto
+tags: [security, cloud, api]
+author: [Martin Danielsson](https://twitter.com/donmartin76)
 author_email: martin.danielsson@haufe-lexware.com
 ---
 
