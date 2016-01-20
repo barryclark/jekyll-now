@@ -5,7 +5,7 @@ subtitle: Create free valid SSL certificates in 20 minutes.
 description: Howto - Leverage 'Let's Encrypt' on an Azure Ubuntu VM
 category: howto
 tags: [security, cloud]
-author: Martin
+author: [Martin Danielsson](https://twitter.com/donmartin76)
 author_email: martin.danielsson@haufe-lexware.com 
 ---
 
