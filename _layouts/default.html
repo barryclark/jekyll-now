@@ -8,10 +8,11 @@
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
+    <link rel="stylesheet" href="/assets/css/stevenrayesky.css">
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="assets/javascripts/stevenrayesky.js"></script> 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
   </head>
 
@@ -29,20 +30,37 @@
           <nav>
             <a href="{{ site.baseurl }}/">Blog</a>
             <a href="{{ site.baseurl }}/about">About</a>
+            <a href="{{ site.baseurl }}/portfolio">Portfolio</a>
           </nav>
         </header>
       </div>
     </div>
+    
+   <!--  <div class="content">
+      <div class="profile_layer">
+        <div id="profile_portrait_box">
+          <a href=""><img src="images/profile.png" alt=""></a>
+        </div>
+        <div class="profile_boxes" id="profile_resume_box">
+          <a href="#"><div id="profile_resume_inner"></div></a>
+        </div>
+        <div class="profile_boxes" id="profile_projects_box">
+          <a href="#"><div id="profile_projects_inner"></div></a>
+        </div>
+        <div class="profile_boxes" id="profile_contact_box">
+          <a href="#"><div id="profile_contact_inner"></div></a>
+        </div>
+      </div> -->
+      <div id="main" role="main" class="container">
+        {{ content }}
+      </div>
 
-    <div id="main" role="main" class="container">
-      {{ content }}
-    </div>
-
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          {% include svg-icons.html %}
-        </footer>
+      <div class="wrapper-footer">
+        <div class="container">
+          <footer class="footer">
+            {% include svg-icons.html %}
+          </footer>
+        </div>
       </div>
     </div>
 

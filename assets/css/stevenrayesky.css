@@ -1,0 +1,141 @@
+/*LAYERS*/
+.content {
+	opacity: 0.9;	
+	overflow: auto;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	margin: 0 50%;
+	transform: translateX(-50%);
+}
+
+.profile_layer {
+	position: absolute;
+	left: 5%;
+	top: 8%;
+}
+.profile_boxes {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+}
+
+#profile_portrait_box a{
+	border-radius: 50%;
+	display: block;
+	width: 300px;
+	height: 300px;
+}
+.profile_boxes a{
+	display: block;
+	width: 100px;
+	height: 100px;
+}
+/*This image starts as nothing and expands on the initial page load.*/
+#profile_portrait_box {
+	width: 300px;
+	height: 300px;
+}
+
+#profile_portrait_box img {
+	width: 100%;
+	border-radius: 50%;
+	/*border: black solid 2px;*/
+	position: relative;
+	width: 0px;
+	left: 50%;
+	top: 50%;
+	visibility: hidden;
+	background-color: blue;	
+}
+
+#profile_resume_box {
+	left: 280px;
+	top: -20px;
+
+}
+
+#profile_resume_inner {
+	background-color: blue;
+	width: 100%;
+	border-radius: 50%;
+	/*border: black solid 2px;*/
+	position: relative;
+	width: 0px;
+	left: 50%;
+	top: 50%;
+	visibility: hidden;
+}
+
+#profile_projects_box {
+	left: 330px;
+	top: 100px;
+}
+
+#profile_projects_inner {
+	background-color: yellow;
+	width: 100%;
+	border-radius: 50%;
+	/*border: black solid 2px;*/
+	position: relative;
+	width: 0px;
+	left: 50%;
+	top: 50%;
+	visibility: hidden;
+}
+
+#profile_contact_box {
+	left: 280px;
+	top: 220px;
+}
+
+#profile_contact_inner {
+	background-color: red;
+	width: 100%;
+	border-radius: 50%;
+	/*border: black solid 2px;*/
+	position: relative;
+	width: 0px;
+	left: 50%;
+	top: 50%;
+	visibility: hidden;
+}
+
+/*ABOUT LAYER*/
+
+.about_layer {
+	height: 100%;
+	overflow: auto;
+}
+.about_box {
+	margin: 5% 5% 0 0;
+	float: right;
+	width: 40%;
+}
+
+.about_paragraph {
+	font-family: helvetica, Serif;
+	width: 200px;
+	margin: 0 auto;
+}
+
+
+/*RESUME LAYER*/
+
+.resume_layer {
+	margin: 0 auto;
+	text-align: center;
+	overflow: auto;
+	display: none;
+	background-color: grey;
+}
+
+
+
+
+
+
+
+
+
+
