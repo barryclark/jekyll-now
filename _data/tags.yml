@@ -1,0 +1,38 @@
+- slug: security
+  name: Security
+
+- slug: cloud
+  name: Cloud
+
+- slug: cto
+  name: CTO
+
+- slug: culture
+  name: Culture
+  
+- slug: open-source
+  name: Open Source
+
+- slug: api
+  name: API
+
+- slug: microservice
+  name: Microservice
+
+- slug: devops
+  name: Devops
+
+- slug: docker
+  name: Docker
+
+- slug: mobile
+  name: Mobile
+
+- slug: custdev
+  name: Customer Development
+
+- slug: smartsteuer
+  name: Smartsteuer
+
+- slug: logging
+  name: Logging 

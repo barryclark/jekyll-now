@@ -4,6 +4,7 @@ title: The beginnings of our API Journey
 subtite: Intro to our API style guide
 description: Got API?
 category: api
+tags: [api]
 author: Holger
 author_email: holger.reinhardt@haufe-lexware.com 
 ---

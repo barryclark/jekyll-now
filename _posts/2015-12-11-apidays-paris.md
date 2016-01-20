@@ -3,7 +3,8 @@ layout: post
 title: APIdays Paris - From Philosophy to Technology and back again
 subtite: A biased report from APIdays global in Paris
 description: APIdays Paris - From Philosophy to Technology and back again
-category: general
+category: conference
+tags: [api]
 author: Martin
 author_email: martin.danielsson@haufe-lexware.com 
 ---

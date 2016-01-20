@@ -1,9 +1,10 @@
 ---
 layout: post
-title: DevOpsCon Munich - Is it really about the tools?
+title: DevOpsCon 2015 - Is it really about the tools?
 subtite: A opinionated commentary by Elias Weingaertner
 description:  My personal findings from DevOpsCon 2015 in Munich
-category: general
+category: conference
+tags: [devops, microservice]
 author: Elias Weingaertner
 author_email: elias.weingaertner@haufe-lexware.com
 ---
