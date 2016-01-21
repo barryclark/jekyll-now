@@ -1,6 +1,7 @@
 _site
 .DS_Store
 .jekyll
+.idea
 .bundle
 .sass-cache
 Gemfile
