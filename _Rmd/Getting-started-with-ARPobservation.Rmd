@@ -8,9 +8,9 @@ date: October 24, 2013
 
 Here are step-by-step instructions on how to download and install ARPobservation. For the time being, ARPobservation is available as a pre-compiled binary for Windows. For Mac/Linux, you'll have to download the source from Github. 
 
-1. [Download] (http://cran.us.r-project.org/) and install R. R is free, open-source software that is used by many data analysts and statisticians. ARPobservation is a contributed package that runs within R, so you'll need to get the base software first.
+1. [Download](http://cran.us.r-project.org/) and install R. R is free, open-source software that is used by many data analysts and statisticians. ARPobservation is a contributed package that runs within R, so you'll need to get the base software first.
 
-2. (Optional but recommended) [Download] (http://www.rstudio.com/) and install RStudio, which is a very nice front-end interface to R.
+2. (Optional but recommended) [Download](http://www.rstudio.com/) and install RStudio, which is a very nice front-end interface to R.
 
 3. Open R or RStudio and type the following sequence of commands in the console:
 
