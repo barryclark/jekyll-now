@@ -5,7 +5,7 @@ subtite: A biased report from APIdays global in Paris
 description: APIdays Paris - From Philosophy to Technology and back again
 category: conference
 tags: [api]
-author: [Martin Danielsson](https://twitter.com/donmartin76)
+author: Martin Danielsson
 author_email: martin.danielsson@haufe-lexware.com 
 ---
 
