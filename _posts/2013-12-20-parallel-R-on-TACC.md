@@ -65,7 +65,8 @@ Of course, developing a package involves a bit more work on the front end.
 
 Suppose that you've got your R code saved in a file called `Behrens_Fisher.R`. Here's an example of a SLURM script that runs the R script after configuring an Rmpi cluster:
 
-```
+
+{% highlight bash %}
 #!/bin/bash
 #SBATCH -J Behrens       	# Job name
 #SBATCH -o Behrens.o%j 		# Name of stdout output file (%j expands to jobId)
@@ -83,7 +84,7 @@ module load Rstats
 
 # call R code from RMPISNOW
 ibrun RMPISNOW < Behrens_Fisher.R 
-```
+{% endhighlight %}
 
 The file should be saved in a plain text file called something like `run_BF.slurm`. The file has to use ANSI encoding and Unix-type end-of-line encoding; [Notepad++](http://notepad-plus-plus.org/) is a text editor that can create files in this format. 
 
@@ -94,19 +95,21 @@ Note that for full efficiency, the `-n` option should be a multiple of 16 becaus
 
 [Follow these directions](https://portal.tacc.utexas.edu/user-guides/stampede#access) to log in to the Stampede server. Here's the [User Guide](https://portal.tacc.utexas.edu/user-guides/stampede) for Stampede. The first thing you'll need to do is ensure that you've got the proper version of MVAPICH loaded. To do that, type 
 
-```
+
+{% highlight bash %}
 module swap intel intel/14.0.1.106
 module setdefault
-```
+{% endhighlight %}
 
 The second line sets this as the default, so you won't need to do this step again.
 
 Second, you'll need to install whatever R packages you'll need to run your code. To do that, type the following at the `login4$` prompt:
 
-```
+
+{% highlight bash %}
 login4$module load Rstats
 login4$R
-```
+{% endhighlight %}
 
 This will start an interactive R session. From the R prompt, use `install.packages` to download and install, e.g.
 
@@ -119,18 +122,20 @@ The packages will be installed in a local library. Now type `q()` to quit R.
 
 Next, make a new directory for your project:
 
-```
+
+{% highlight bash %}
 login4$mkdir project_name
 login4$cd project_name
-```
+{% endhighlight %}
 
 Upload your files to the directory (using [psftp](http://the.earth.li/~sgtatham/putty/0.63/htmldoc/Chapter6.html), for instance). Check that your R script is properly configured by viewing it in Vim. 
 
 Finally, submit your job by typing 
 
-```
+
+{% highlight bash %}
 login4$sbatch run_BF.slurm
-```
+{% endhighlight %}
 
 or whatever your SLURM script is called. To check the status of the submitted job, type `showq -u` followed by your TACC user name (more details [here](https://portal.tacc.utexas.edu/user-guides/stampede#running-slurm-jobcontrol-squeue)).
 
