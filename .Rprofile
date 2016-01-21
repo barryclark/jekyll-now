@@ -42,3 +42,4 @@ r2jekyll <- function(filename, dpi = 192) {
 # r2jekyll("ARPobservation-basic-use")
 # r2jekyll("PIR-overestimates-prevalence")
 # r2jekyll("Shogren-reliability-analysis")
+# r2jekyll("parallel-R-on-TACC")
