@@ -4,8 +4,6 @@ title: A meta-sandwich
 date: April 21, 2014
 ---
 
-### Cluster-robust standard errors in R via metafor and sandwich 
-
 A common problem arising in many areas of meta-analysis is how to synthesize a set of effect sizes when the set includes multiple effect size estimates from the same study. It's often not possible to obtain all of the information you'd need in order to estimate the sampling covariances between those effect sizes, yet without that information, established approaches to modeling dependent effect sizes become inaccurate. [Hedges, Tipton, & Johnson](http://doi.org/10.1002/jrsm.5) (2010, HTJ hereafter) proposed the use of cluster-robust  standard errors for multi-variate meta-analysis. (These are also called "sandwich" standard errors, which is up there on the list of great and evocative names for statistical procedures.) The great advantage of the sandwich approach is that it permits valid inferences for average effect sizes and meta-regression coefficients even if you don't have correct covariance estimates (or variance estimates, for that matter).
 
 I recently heard from [Beth Tipton](http://blogs.cuit.columbia.edu/let2119/) (who's a graduate-school buddy) that she and her student have written an [R package](http://cran.r-project.org/web/packages/robumeta/index.html) implementing the HTJ methods, including moment estimators for the between-study variance components. I want to try out the cluster-robust standard errors for a project I'm working on, but I also need to use REML estimators rather than the moment estimators. It turns out, it's easy enough to do that by writing a couple of short functions. Here's how.

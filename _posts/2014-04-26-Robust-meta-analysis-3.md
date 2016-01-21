@@ -81,14 +81,14 @@ The estimated covariance matrices match:
 
 {% highlight r %}
 all.equal(sandwich(meta_hier, meat.=meatBRL), 
-          robu_hier$robust.varcov, 
+          robu_hier$VR.r, 
           check.attributes=FALSE)
 {% endhighlight %}
 
 
 
 {% highlight text %}
-## [1] "target is matrix, current is NULL"
+## [1] TRUE
 {% endhighlight %}
 
 It can also be verified that the p-values based on the Satterthwaite degrees of freedom agree.
@@ -174,14 +174,13 @@ coef(WOLS)
 
 
 {% highlight r %}
-all.equal(round(coef(WOLS),4), as.numeric(robu_hier$robust.coefficients),
-          check.attributes = FALSE)
+all.equal(coef(WOLS), as.numeric(robu_hier$b.r), check.attributes = FALSE)
 {% endhighlight %}
 
 
 
 {% highlight text %}
-## [1] "Numeric: lengths (3, 0) differ"
+## [1] TRUE
 {% endhighlight %}
 
 A subtler point is that `robumeta` uses the inverse weights for purposes of calculating the small sample-correction. The small sample correction involves choosing a "working" or "target" covariance matrix towards which to adjust the sandwich estimator. If the working covariance model is correct, then the BRL covariance estimator is exactly unbiased. The working matrix is also used to determine the Satterthwaite degrees of freedom. In `robumeta`, the working covariance matrix is taken to be inverse of the weights, which is also a diagonal matrix. Thus, the BRL correction amounts to assuming independence among all of the effect sizes. This may sound somewhat counter-intuitive, but  some simulation results (reported in Beth's paper, referenced above) suggest that the resulting estimators perform well even when the working independence assumption is not correct.
