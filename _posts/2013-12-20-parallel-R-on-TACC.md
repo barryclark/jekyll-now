@@ -4,7 +4,7 @@ title: Running R in parallel on the TACC
 date: December 20, 2013
 ---
 
-UPDATE (4/4/2014): I have learned from [Mr. Yaakoub El Khamra](https://www.tacc.utexas.edu/staff/yaakoub-el-khamra) that he and the good folks at TACC have made some modifications to TACC's custom MPI implementation and R build in order to correct bugs in Rmpi and snow that were causing crashes. This post [has been updated](http://blogs.edb.utexas.edu/pusto/2014/04/04/update-parallel-r-on-the-tacc/) to reflect the modifications.
+UPDATE (4/8/2014): I have learned from [Mr. Yaakoub El Khamra](https://www.tacc.utexas.edu/staff/yaakoub-el-khamra) that he and the good folks at TACC have made some modifications to TACC's custom MPI implementation and R build in order to correct bugs in Rmpi and snow that were causing crashes. This post [has been updated]({{site.url}}/parallel-R-on-TACC-update) to reflect the modifications.
 
 I've started to use the Texas Advanced Computing Cluster to run statistical simulations in R. It takes a little bit of time to get up and running, but once you do it is an amazing tool. To get started, you'll need
 

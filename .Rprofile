@@ -11,7 +11,7 @@ r2jekyll <- function(filename, dpi = 192) {
 
   # get post date from yaml
   frontMatter <- which(substr(content, 1, 3) == '---')
-  dateline <- str_subset(content[(frontMatter[1] + 1):(frontMatter[2] - 1)], "date:")
+  dateline <- str_subset(content[(frontMatter[1] + 1):(frontMatter[2] - 1)], "^date:")
   date <- as.character(parse_date_time(str_sub(dateline, 7), "mdy"))
   
   # figure directory
@@ -43,3 +43,4 @@ r2jekyll <- function(filename, dpi = 192) {
 # r2jekyll("PIR-overestimates-prevalence")
 # r2jekyll("Shogren-reliability-analysis")
 # r2jekyll("parallel-R-on-TACC")
+# r2jekyll("parallel-R-on-TACC-update")
