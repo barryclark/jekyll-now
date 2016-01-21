@@ -2,11 +2,11 @@ $(document).ready(function(){
 	$("#profile_portrait_box img").delay(500).queue(function (){
 		$(this).css("visibility", "visible").dequeue();
 	}).animate({
-			width: "300px",
+			width: "200px",
 			top: 0,
 			left: 0
 	})
-	$("#profile_resume_inner").delay(750).queue(function (){
+	$("#profile_blog_inner").delay(750).queue(function (){
 		$(this).css("visibility", "visible").dequeue();
 	}).animate({
 		height: "100px",
@@ -22,7 +22,7 @@ $(document).ready(function(){
 		top: 0,
 		left: 0
 	});
-	$("#profile_contact_inner").delay(1250).queue(function (){
+	$("#profile_about_inner").delay(1250).queue(function (){
 		$(this).css("visibility", "visible").dequeue();
 	}).animate({
 		height: "100px",
@@ -31,10 +31,10 @@ $(document).ready(function(){
 		left: 0
 	});
 
-	// Change view to Resume box.
-	$("#profile_resume_box").click(function(){
+	// Change view to blog box.
+	$("#profile_blog_box").click(function(){
 		shrink()
-		$(".resume_layer").delay(1800).queue(function(){
+		$(".blog_layer").delay(1800).queue(function(){
 			$(this).css("display", "block").dequeue()});
 		$(".about_layer").delay(1800).queue(function(){
 			$(this).css("display", "none").dequeue()});
@@ -52,7 +52,7 @@ $(document).ready(function(){
 	});
 
 	// Change view to Contact box.
-	$("#profile_contact_box").click(function(){
+	$("#profile_about_box").click(function(){
 		$(".contact_layer").delay(1800).queue(function(){
 			$(this).css("display", "block").dequeue()});
 		$(".about_layer").delay(1800).queue(function(){
@@ -70,7 +70,7 @@ $(document).ready(function(){
 			top: "50%",
 			left: "50%"
 		});
-		$("#profile_resume_inner").delay(750).queue(function (){
+		$("#profile_blog_inner").delay(750).queue(function (){
 			$(this).css("visibility", "visible").dequeue();
 		}).animate({
 			height: "0px",

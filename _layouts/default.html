@@ -8,49 +8,32 @@
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <link rel="stylesheet" href="/assets/css/stevenrayesky.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/stevenrayesky.css">
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="assets/javascripts/stevenrayesky.js"></script> 
+    <script src="{{ site.baseurl }}/assets/javascripts/stevenrayesky.js"></script> 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
   </head>
-
   <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
-
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
-          </div>
-
-          <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
-            <a href="{{ site.baseurl }}/portfolio">Portfolio</a>
-          </nav>
-        </header>
-      </div>
-    </div>
-    
-   <!--  <div class="content">
-      <div class="profile_layer">
+    <div class="profile_layer">
         <div id="profile_portrait_box">
-          <a href=""><img src="images/profile.png" alt=""></a>
+          <a href=""><img src="{{ site.baseurl }}/images/profile.png" alt=""></a>
         </div>
-        <div class="profile_boxes" id="profile_resume_box">
-          <a href="#"><div id="profile_resume_inner"></div></a>
+        <div class="profile_boxes" id="profile_blog_box">
+          <a href="{{ site.baseurl }}/"><div id="profile_blog_inner"></div>Blog</a>
         </div>
         <div class="profile_boxes" id="profile_projects_box">
-          <a href="#"><div id="profile_projects_inner"></div></a>
+          <a href="{{ site.baseurl }}/portfolio"><div id="profile_projects_inner"></div>Portfolio</a>
         </div>
-        <div class="profile_boxes" id="profile_contact_box">
-          <a href="#"><div id="profile_contact_inner"></div></a>
+        <div class="profile_boxes" id="profile_about_box">
+          <a href="{{ site.baseurl }}/about"><div id="profile_about_inner"></div>About
+          </a>
         </div>
-      </div> -->
+      </div>
+      <header>
+        
+      </header>
       <div id="main" role="main" class="container">
         {{ content }}
       </div>
