@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Project\: Adelphi Rate My Professors
+title: "Project: Adelphi Rate My Professors"
 ---
 
 Rate My Adelphi Professors is a Google Chrome extension adds ratemyprofessors.com ratings to the Adelphi CLASS system, which is what my school uses for course searches and registration.  My goal was to make it more convenient for students to look up the ratings for their professors. Here's what the course search system looks like with my extension loaded:
