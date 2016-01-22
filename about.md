@@ -3,6 +3,9 @@ layout: page
 title: About
 permalink: /about/
 ---
+<style>
+img[alt=headshot] { width: 200px; }
+</style>
 
 ![headshot]({{ site.url }}/images/James_headshot.jpg)
 
