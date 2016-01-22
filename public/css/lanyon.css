@@ -525,3 +525,14 @@ a.pagination-item:hover {
 .theme-base-0f .related-posts li a:hover {
   color: #8f5536;
 }
+
+/* Pusto */
+.theme-pusto .sidebar,
+.theme-pusto .sidebar-toggle:active,
+.theme-pusto #sidebar-checkbox:checked ~ .sidebar-toggle {
+  background-color: #d28445;
+}
+.theme-pusto .sidebar-toggle {
+  color: #d28445;
+}
+
