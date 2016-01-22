@@ -9,7 +9,7 @@ title:               James E. Pustejovsky
 tagline:             'University of Texas at Austin'
 description:         
 url:                 http://jepusto.github.io
-baseurl:             ''
+baseurl:             'http://jepusto.github.io'
 paginate:            5
 
 # About/contact
