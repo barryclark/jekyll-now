@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-![headshot](images/james_headshot.jpg)
+![headshot]({{ site.url }}/images/james_headshot.jpg)
 
 James E. Pustejovsky
 Assistant Professor  
