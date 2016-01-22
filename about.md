@@ -4,35 +4,9 @@ title: About
 permalink: /about/
 ---
 
-<style>
-.container {
-  width: 600px;
-  min-height: 280px;
-  padding: 10px;
-}
+  
+<img src="images/James_headshot.jpg" width="300" style="float:right; margin-bottom:-5px">
 
-.floated {
-  float: right;
-  margin: 5px;
-}
-
-p {
-  margin: 0;
-  text-align: left;
-  padding: 10px;
-}
-
-.bfc {
-  overflow: hidden;
-}
-
-</style>
-
-<div class="container">
-  <div class="floated">
-    <img src="{{site.url}}/images/James_headshot.jpg" width="200">
-  </div>
-  <p class="oh">
 ### James E. Pustejovsky
 
 Assistant Professor  
@@ -56,6 +30,3 @@ The University of Texas at Austin
 Educational Psychology Department  
 1912 Speedway, Stop D5800  
 Austin, TX 78712-1289
-</p>
-
-</div>
