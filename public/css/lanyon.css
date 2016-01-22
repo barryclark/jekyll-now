@@ -530,10 +530,11 @@ a.pagination-item:hover {
 .theme-pusto .sidebar,
 .theme-pusto .sidebar-toggle:active,
 .theme-pusto #sidebar-checkbox:checked ~ .sidebar-toggle {
-  background-color: #BF5700;
+  background-color: #005F86;
 }
 .theme-pusto .container a,
-.theme-pusto .sidebar-toggle {
-  color: #BF5700;
+.theme-pusto .sidebar-toggle,
+.theme-pusto .related-posts li a:hover  {
+  color: #005F86;
 }
 
