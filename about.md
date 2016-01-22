@@ -1,15 +1,15 @@
 ---
 layout: page
-title: About
+title: 关于我
 permalink: /about/
 ---
 
 Some information about you!
 
-### More Information
+### 更多
 
 A place to include any other types of information that you'd like to include about yourself.
 
-### Contact me
+### 联系我
 
-[email@domain.com](mailto:email@domain.com)
+[mailhap@qq.com](mailto:mailhap@qq.com)
