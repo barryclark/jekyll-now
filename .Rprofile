@@ -11,8 +11,15 @@ r2jekyll <- function(filename, dpi = 192) {
 
   # get post date from yaml
   frontMatter <- which(substr(content, 1, 3) == '---')
-  dateline <- str_subset(content[(frontMatter[1] + 1):(frontMatter[2] - 1)], "^date:")
+  content_frontMatter <- content_mathjaxed[(frontMatter[1] + 1):(frontMatter[2] - 1)]
+  dateline <- str_subset(content_frontMatter, "^date:")
   date <- as.character(parse_date_time(str_sub(dateline, 7), "mdy"))
+  
+  # add permalink to yaml
+  content_md <- c("---",
+                  content_frontMatter,
+                  paste("permalink:",filename),
+                  "---",content_mathjaxed[(frontMatter[2]+1):(length(content))])
   
   # figure directory
   todir <- paste0("figure/",date,"-",filename,"/")
@@ -22,7 +29,7 @@ r2jekyll <- function(filename, dpi = 192) {
   outfile <- paste0("_posts/", date, "-", filename, ".md")
   render_jekyll()
   opts_chunk$set(fig.path = fromdir, dpi = dpi)
-  knit(text = content_mathjaxed, output = outfile)
+  knit(text = content_md, output = outfile)
   
   # Copy .png files to the images directory.
   pics <- list.files(fromdir, full.name=TRUE)
