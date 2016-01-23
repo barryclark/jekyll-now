@@ -2,6 +2,7 @@
 layout: post
 title: Running R in parallel on the TACC
 date: December 20, 2013
+permalink: parallel-R-on-TACC
 ---
 
 UPDATE (4/8/2014): I have learned from [Mr. Yaakoub El Khamra](https://www.tacc.utexas.edu/staff/yaakoub-el-khamra) that he and the good folks at TACC have made some modifications to TACC's custom MPI implementation and R build in order to correct bugs in Rmpi and snow that were causing crashes. This post [has been updated]({{site.url}}/parallel-R-on-TACC-update) to reflect the modifications.

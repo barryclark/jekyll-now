@@ -2,6 +2,7 @@
 layout: post
 title: ARPobservation now on CRAN
 date: May 31, 2014
+permalink: ARPobservation-now-on-CRAN
 ---
 
 Version 1.0 of the [ARPobservation package](https://cran.r-project.org/web/packages/ARPobservation/) is now available on the Comprehensive R Archive Network. This makes it [even easier to install]({{site.url}}/getting-started-with-ARPobservation). Here's the package description:

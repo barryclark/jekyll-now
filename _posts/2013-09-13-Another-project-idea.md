@@ -2,6 +2,7 @@
 layout: post
 title: Another project: Meta-analytic methods for correlational data
 date: September 13, 2013
+permalink: Another-project-idea
 ---
 
 Several different approaches have been proposed for meta-analysis of correlation coefficients. One of the major differences between approaches is the choice of scale: whether effect sizes should be analyzed on the Pearson-r scale or first transformed to the Fisher-z scale. This project will study methods for modeling correlation coefficients on the r scale in the presence of between-study effect heterogeneity. Specific topics include:

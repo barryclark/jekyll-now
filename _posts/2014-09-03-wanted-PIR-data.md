@@ -2,6 +2,7 @@
 layout: post
 title: "Wanted: PIR data"
 date: September 3, 2014
+permalink: wanted-PIR-data
 ---
 
 Partial interval recording (PIR) is one method for recording data during systematic direct observation of a behavior. While a convenient method, PIR has the key drawback that it [systematically over-states]({{site.url}}/PIR-overestimates-prevalence) the prevalence of the behavior under observation. When used in single-case research to measure changes in behavior resulting from intervention, the systematic bias in PIR data can lead to deceptive results, such as inferring that an intervention reduces the prevalence of a problem behavior when in fact the opposite is true.

@@ -2,6 +2,7 @@
 layout: post
 title: Another meta-sandwich
 date: April 23, 2014
+permalink: Robust-meta-analysis-2
 ---
 
 In [a previous post]({{site.url}}/Robust-meta-analysis-1/), I provided some code to do robust variance estimation with `metafor` and `sandwich`. 

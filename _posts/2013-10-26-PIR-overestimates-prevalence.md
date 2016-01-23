@@ -2,6 +2,7 @@
 layout: post
 title: To what extent does partial interval recording over-estimate prevalence?
 date: October 26, 2013
+permalink: PIR-overestimates-prevalence
 ---
 
 It is well known that the partial interval recording procedure produces an over-estimate of the prevalence of a behavior. Here I will demonstrate how to use the ARPobservation package to study the extent of this bias. First though, I'll need to define the terms prevalence and incidence and also take a detour through continuous duration recording.

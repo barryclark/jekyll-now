@@ -2,6 +2,7 @@
 layout: post
 title: Getting started with ARPobservation
 date: October 24, 2013
+permalink: getting-started-with-ARPobservation
 ---
 
 **UPDATED 5/29/2014 after posting the package to CRAN**
