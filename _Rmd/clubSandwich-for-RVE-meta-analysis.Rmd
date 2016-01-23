@@ -44,7 +44,7 @@ table(dropoutPrevention$evaluator_independence)
 #### metafor model
 
 Our package also works with models fit using the `metafor` package. Here I re-fit the same regression specification, but use REML to estimate the variance components (`robumeta` uses a method-of-moments estimator) and use a somewhat different weighting scheme than that used in `robumeta`. 
-```{r}
+```{r, message = FALSE}
 library(metafor)
 m3_metafor <- rma.mv(LOR1 ~ study_design + attrition + group_equivalence + adjusted
                       + outcome + evaluator_independence
