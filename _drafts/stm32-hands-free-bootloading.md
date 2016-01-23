@@ -1,9 +1,9 @@
 ---
 layout: post
-title: STM32 hands-free bootloading
-categories: embedded
+title: STM32 hands-free bootloading using USB-Serial
+categories: stm32
 ---
 
-FT230X
-triple invert
-buffer?
+FT231X
+Check reset source. software => 
+

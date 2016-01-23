@@ -6,10 +6,14 @@ layout: default
   {% for post in site.posts %}
     <article class="post">    
       
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+      <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+      {% for category in post.categories %}
+      <a class="tag_box" href="/tags/#{{ category }}">#{{ category }}</a>
+      {% endfor %}</h3>
 
       <div class="entry">
-        {{ post.content | truncatewords:40 }}
+        <!-- {{ post.content | truncatewords:40 }} -->
+        {{ post.excerpt }}
       </div>
       
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>

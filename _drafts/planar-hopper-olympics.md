@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Delta hopper jumping around
+title: Planar hopper Olympics
 categories: robots
 ---
 

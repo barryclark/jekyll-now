@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Designing 3D-printable parallelogram joints - part 1
+title: Designing 3D-printable parallelogram joints&#58; part 1
 categories: robots mechanical
 ---
 
