@@ -18,7 +18,7 @@ I've started to use the Texas Advanced Computing Cluster to run statistical simu
 
 I've been running my simulations using a combination of several packages that provide very high-level functionality for parallel computing, namely `foreach`, `doSNOW`, and the `maply` function in `plyr`. All of this runs on top of an `Rmpi` implementation developed by the folks at TACC ([more details here](https://portal.tacc.utexas.edu/documents/13601/901835/Parallel_R_Final.pdf/)). 
 
-In [an earlier post]({{site.url}}/designing-simulation-studies-using-r/), I shared code for running a very simple simulation of the Behrens-Fisher problem. Here's [adapted code](https://gist.github.com/jepusto/8059893) for running the same simulation on Stampede. The main difference is that there are a few extra lines of code to set up a cluster, seed a random number generator, and pass necessary objects (saved in `source_func`) to the nodes of the cluster:
+In [an earlier post]({{site.url}}/Designing-simulation-studies-using-R/), I shared code for running a very simple simulation of the Behrens-Fisher problem. Here's [adapted code](https://gist.github.com/jepusto/8059893) for running the same simulation on Stampede. The main difference is that there are a few extra lines of code to set up a cluster, seed a random number generator, and pass necessary objects (saved in `source_func`) to the nodes of the cluster:
 
 
 {% highlight r %}
