@@ -5,4 +5,5 @@ categories: embedded
 ---
 
 FT230X
-Check reset source. software => 
+triple invert
+buffer?
