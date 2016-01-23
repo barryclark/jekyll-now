@@ -18,5 +18,9 @@ author:
   url:               
   email:             pusto@austin.utexas.edu
 
+
+# Disqus comments configuration (leave blank to disable comments)
+disqus_shortname: 'jepusto'
+
 # Custom vars
 version:             1.0.0
