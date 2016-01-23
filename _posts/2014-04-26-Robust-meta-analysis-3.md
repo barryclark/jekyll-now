@@ -2,6 +2,7 @@
 layout: post
 title: Meta-sandwich with extra mustard
 date: April 26, 2014
+tags: [meta-analysis, sandwiches]
 permalink: Robust-meta-analysis-3
 ---
 

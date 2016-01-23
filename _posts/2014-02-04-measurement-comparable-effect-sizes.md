@@ -2,6 +2,7 @@
 layout: post
 title: "New article: Measurement-comparable effect sizes for single-case studies of free-operant behavior"
 date: February 4, 2014
+tags: [behavioral-observation, single-case-research, effect-sizes]
 permalink: measurement-comparable-effect-sizes
 ---
 

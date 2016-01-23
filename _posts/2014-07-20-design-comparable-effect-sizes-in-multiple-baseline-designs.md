@@ -2,6 +2,7 @@
 layout: post
 title: "New article: Design-comparable effect sizes in multiple baseline designs: A general modeling framework"
 date: July 20, 2014
+tags: [single-case-research, effect-sizes]
 permalink: design-comparable-effect-sizes-in-multiple-baseline-designs
 ---
 

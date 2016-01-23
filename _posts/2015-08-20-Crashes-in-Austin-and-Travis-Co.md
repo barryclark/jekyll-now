@@ -2,6 +2,7 @@
 layout: post
 title: Fatal crashes in Austin/Travis County
 date: August 20, 2015
+tags: [transportation]
 permalink: Crashes-in-Austin-and-Travis-Co
 ---
 

@@ -2,6 +2,7 @@
 layout: post
 title: To what extent does partial interval recording over-estimate prevalence?
 date: October 26, 2013
+tags: [behavioral-observation]
 permalink: PIR-overestimates-prevalence
 ---
 

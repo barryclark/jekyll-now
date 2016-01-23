@@ -2,6 +2,7 @@
 layout: post
 title: Getting started with ARPobservation
 date: October 24, 2013
+tags: [behavioral-observation]
 permalink: getting-started-with-ARPobservation
 ---
 

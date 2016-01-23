@@ -2,6 +2,7 @@
 layout: post
 title: Fatal crashes by city
 date: August 23, 2015
+tags: [transportation]
 permalink: Crashes-by-city
 ---
 

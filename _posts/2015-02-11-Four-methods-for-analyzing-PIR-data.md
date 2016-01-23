@@ -2,6 +2,7 @@
 layout: post
 title: "New article: Four methods for analyzing PIR data"
 date: February 11, 2015
+tags: [behavioral-observation, single-case-research]
 permalink: Four-methods-for-analyzing-PIR-data
 ---
 

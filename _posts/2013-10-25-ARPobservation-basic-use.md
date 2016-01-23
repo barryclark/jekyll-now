@@ -2,6 +2,7 @@
 layout: post
 title: "ARPobservation: Basic use"
 date: October 25, 2013
+tags: [behavioral-observation]
 permalink: ARPobservation-basic-use
 ---
 

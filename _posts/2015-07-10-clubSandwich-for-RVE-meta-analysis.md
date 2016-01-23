@@ -2,6 +2,7 @@
 layout: post
 title: The clubSandwich package for meta-analysis with RVE
 date: July 10, 2015
+tags: [meta-analysis, sandwiches]
 permalink: clubSandwich-for-RVE-meta-analysis
 ---
 
@@ -18,6 +19,17 @@ I fit the model two ways, first using the `robumeta` package and then using `met
 {% highlight r %}
 options(width=150)
 library(robumeta)
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## Loading required package: grid
+{% endhighlight %}
+
+
+
+{% highlight r %}
 library(clubSandwich)
 data(dropoutPrevention)
 

@@ -2,6 +2,7 @@
 layout: post
 title: Another meta-sandwich
 date: April 23, 2014
+tags: [meta-analysis, sandwiches]
 permalink: Robust-meta-analysis-2
 ---
 

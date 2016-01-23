@@ -2,6 +2,7 @@
 layout: post
 title: Getting started with scdhlm
 date: October 19, 2014
+tags: [single-case-research]
 permalink: getting-started-with-scdhlm
 ---
 

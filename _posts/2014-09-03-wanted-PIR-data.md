@@ -2,6 +2,7 @@
 layout: post
 title: "Wanted: PIR data"
 date: September 3, 2014
+tags: [behavioral-observation]
 permalink: wanted-PIR-data
 ---
 

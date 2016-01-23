@@ -2,6 +2,7 @@
 layout: post
 title: "Reliability of UnGraphed single-case data: An example using the Shogren dataset"
 date: October 23, 2013
+tags: [single-case-research]
 ---
 
 In one example from my dissertation, I re-analyzed a systematic review by Shogren and colleagues, titled "The effect of choice-making as an intervention for problem behavior" (Shogren, et al., 2004). In order to do the analysis, I retrieved all of the original articles identified by the review, scanned in all of the graphs depicting the data, and used (actually, had an undergraduate use) a computer program called [UnGraph](http://www.biosoft.com/w/ungraph.htm) to capture the data-points off of the graphs (see Shadish, et al., 2009 for details on this procedure). 

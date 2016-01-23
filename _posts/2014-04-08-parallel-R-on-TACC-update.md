@@ -2,6 +2,7 @@
 layout: post
 title: "Update: parallel R on the TACC"
 date: April 8, 2014
+tags: [simulation]
 permalink: parallel-R-on-TACC-update
 ---
 

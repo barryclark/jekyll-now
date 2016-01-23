@@ -2,6 +2,7 @@
 layout: post
 title: "Another project idea: Meta-analytic methods for correlational data"
 date: September 13, 2013
+tags: [meta-analysis, projects]
 permalink: Another-project-idea
 ---
 

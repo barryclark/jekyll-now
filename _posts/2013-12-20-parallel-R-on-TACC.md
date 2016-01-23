@@ -2,6 +2,7 @@
 layout: post
 title: Running R in parallel on the TACC
 date: December 20, 2013
+tags: [simulation]
 permalink: parallel-R-on-TACC
 ---
 

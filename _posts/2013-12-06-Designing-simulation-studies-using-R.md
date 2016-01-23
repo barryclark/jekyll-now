@@ -2,6 +2,7 @@
 layout: post
 title: Designing simulation studies using R
 date: December 6, 2013
+tags: [simulation]
 permalink: Designing-simulation-studies-using-R
 ---
 

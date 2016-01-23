@@ -2,6 +2,7 @@
 layout: post
 title: Correlations between standardized mean differences
 date: September 17, 2015
+tags: [meta-analysis, effect-sizes]
 permalink: Correlations-between-SMDs
 ---
 

@@ -2,6 +2,7 @@
 layout: post
 title: Current projects
 date: August 20, 2013
+tags: [behavioral-observation, single-case-research, projects]
 ---
 
 Interested in working with me? See below for descriptions of several potential projects. If you have interest and abilities that line up with one of these, feel free to contact me.

@@ -2,6 +2,7 @@
 layout: post
 title: "Reliability of UnGraphed single-case data: An example using the Shogren dataset"
 date: October 23, 2013
+tags: [single-case-research]
 permalink: Shogren-reliability-analysis
 ---
 

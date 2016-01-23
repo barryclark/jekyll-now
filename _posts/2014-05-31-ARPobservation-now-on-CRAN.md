@@ -2,6 +2,7 @@
 layout: post
 title: ARPobservation now on CRAN
 date: May 31, 2014
+tags: [behavioral-observation]
 permalink: ARPobservation-now-on-CRAN
 ---
 

@@ -2,6 +2,7 @@
 layout: post
 title: "New article: Alternating renewal process models for behavioral observation"
 date: October 16, 2014
+tags: [behavioral-observation]
 permalink: Alternating-renewal-process-models-for-behavioral-observation
 ---
 

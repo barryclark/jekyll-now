@@ -2,6 +2,7 @@
 layout: post
 title: Current projects
 date: August 20, 2013
+tags: [behavioral-observation, single-case-research, projects]
 permalink: Current-Projects
 ---
 
