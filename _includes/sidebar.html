@@ -11,11 +11,16 @@
   <nav class="sidebar-nav">
     <a class="sidebar-nav-item{% if page.title == "Home" %} active{% endif %}" href="/">Home</a>
 
-    <a class="sidebar-nav-item{% if page.title == "About" %} active{% endif %}" href="/About">About</a>
+    <a class="sidebar-nav-item{% if page.title == "About" %} active{% endif %}" href="/about">About</a>
+    <a class="sidebar-nav-item{% if page.title == "Selected Publications" %} active{% endif %}" href="/publications">Publications</a>
+    <a class="sidebar-nav-item{% if page.title == "Presentations" %} active{% endif %}" href="/presentations">Presentations</a>
+    <a class="sidebar-nav-item{% if page.title == "Software" %} active{% endif %}" href="/software">Software</a>
+    <a class="sidebar-nav-item{% if page.title == "Teaching" %} active{% endif %}" href="/teaching">Teaching</a>
+    <a class="sidebar-nav-item{% if page.title == "Working papers" %} active{% endif %}" href="/working_papers">About</a>
+    <a class="sidebar-nav-item{% if page.title == "Archive" %} active{% endif %}" href="/archive">Archive</a>
     {% comment %}
       The code below dynamically generates a sidebar nav of pages with
       `layout: page` in the front-matter. See readme for usage.
-    {% endcomment %}
 
     {% assign pages_list = site.pages %}
     {% for node in pages_list %}
@@ -25,6 +30,7 @@
         {% endif %}
       {% endif %}
     {% endfor %}
+    {% endcomment %}
 
   </nav>
 
