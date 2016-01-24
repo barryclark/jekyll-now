@@ -3,14 +3,14 @@
 #
 
 # Name of your site (displayed in the header)
-name: Jena Cameron
+name: CS373 Spring 2016: Jena Cameron
 
 # Short bio or description (displayed in the header)
 description: UTCS student, soon to be blogger
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: http://40.media.tumblr.com/373e858c60cf1c2b39f862add4e26488/tumblr_o1ha6iKDCD1r3er6io1_1280.jpg
-
+ 
 #
 # Flags below are optional
 #
@@ -37,11 +37,11 @@ footer-links:
 disqus:
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics:
+google_analytics: UA-72765677-1
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url: http://jlciam.github.io
+url: http://wickedkitten.me
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
