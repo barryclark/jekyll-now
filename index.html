@@ -17,7 +17,7 @@ title: Home
       {% if post.tags != empty %}
         |
         {% for tag in post.tags %}
-        <a class="codinfox-tag-mark" href="/blog/tag/#{{ tag | slugify }}">{{ tag }}</a>
+        <a class="codinfox-tag-mark" href="/tags/#{{ tag | slugify }}">{{ tag }}</a>
         {% endfor %}
       {% endif %}
     </span>
