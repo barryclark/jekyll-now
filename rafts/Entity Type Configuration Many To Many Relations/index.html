@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    <title>Entity Type Configuration Fluent API for Many to many relations – Emir's Blog – Programming explorations, biking and other stuff!</title>
+
+    <meta name="author" content="Emir's Blog" />
+    <meta name="description" content="Programming explorations, biking and other stuff!">
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/bootstrap.min.css" />
+
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Emir's Blog - Programming explorations, biking and other stuff!" href="/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/" class="site-avatar"><img src="https://avatars.githubusercontent.com/u/1457756?v=3" /></a>
+           
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">Emir's Blog</a></h1>
+            <p class="site-description">Programming explorations, biking and other stuff!</p>
+          </div>
+          
+          <nav>
+            <a href="/">Blog</a>
+            <a href="/about">About</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      
+
+<article class="post">
+  <h1 class="post-main-title">
+    <span>Entity Type Configuration Fluent API for Many to many relations<span>
+      
+    
+  
+
+
+   <span class='post-category-mark'>
+    
+      (
+        <a rel="tag" href="#" onclick="return false;">programming </a>
+      )
+            
+  </span>
+
+  </h1>
+
+  <div class="entry">
+    <p>This is going to be a post regarding an “issue” I’ve encountered before with
+Entity Framework Code First and the configuration of the mapping and how the
+classes map to database tables, specifically many to many relations.</p>
+
+<p>A while ago I was involved in a project where the database and data access
+(with EF Code First) were implemented by another more experienced developer.
+At the time Entity Framework was at version 5 and Code First was not as mature
+as it is today with version 6. I remember us having discussions about certain
+issues he was facing, especially because he came from a NHibernate background
+and was more familiar and comfortable working with NHibernate as his ORM of
+choice.</p>
+
+<p>One of the issues, if I recall correctly, was not having the option to easily
+and cleanly define a Many to Many table relation without having double
+associations in the domain classes, meaning both classes had to have
+collection navigation properties. Now this was a long time ago and I may
+remember things wrongly but the point of this post stands as we will see two
+ways to define many to many relations.</p>
+
+<p>The example project we will look at consists of two simple domain classes.
+Product and User and the relation between them can be seen as the User
+bookmarking Products in an application for maybe later purchase or viewing.
+The most basic thing you can do in your domain classes to have a many to many
+relation is, as mentioned using two navigation properties:</p>
+
+<div class="highlight"><pre><code class="language-c#" data-lang="c#"><span class="k">public</span> <span class="k">class</span> <span class="nc">User</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="kt">int</span> <span class="n">Id</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+
+    <span class="k">public</span> <span class="kt">string</span> <span class="n">Username</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">virtual</span> <span class="n">List</span><span class="p">&lt;</span><span class="n">Product</span><span class="p">&gt;</span> <span class="n">Products</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">public</span> <span class="k">class</span> <span class="nc">Product</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="kt">int</span> <span class="n">Id</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+
+    <span class="k">public</span> <span class="kt">string</span> <span class="n">Name</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+
+    <span class="k">public</span> <span class="kt">double</span> <span class="n">Price</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">virtual</span> <span class="n">List</span><span class="p">&lt;</span><span class="n">User</span><span class="p">&gt;</span> <span class="n">Users</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+<span class="p">}</span></code></pre></div>
+
+<p>Both Product and User have collections of each other defined as virtual that
+enables lazy loading. What this means essentially is that we can read the
+basic information for a User from the database, for example the username, but
+the list of products will not be loaded until we actually need the Products,
+for example iterate over them to calculate the total price.</p>
+
+<p>The table structure created in the database with an initial migration for the
+given entities is shown in the following diagram:</p>
+
+<p><img src="/images/2014-12-23-EntityTypeConfigurations/01_InitialDiagram.png" alt="Initial Database Diagram" /></p>
+
+<p>The many to many relationship is inferred by entity framework and the naming
+for the table and fields are generated by EF out of the box conventions based
+on the names of the domain classes.</p>
+
+<p>Now this might be good enough and I will choose not go into a discussion about
+changing this many to many relation to a completely new entity that may
+contain something like DateSaved, or other Meta information about linking
+products to users and then have single association to Product and User
+entities as that is not the point of the post.</p>
+
+<p>But if we want to, for example, keep the Product entity clean, not have it
+contain a collection of Users, as we would never want to get all the Users
+that a given product has been associated with, which would even allow us to
+use the Product class as a view model (not actually a good approach) we will
+end up with a one to many association if we remove the collection of Users
+from the Product entity.</p>
+
+<p>Given the following code for the Product entity</p>
+
+<div class="highlight"><pre><code class="language-c#" data-lang="c#"><span class="k">public</span> <span class="k">class</span> <span class="nc">Product</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="kt">int</span> <span class="n">Id</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+
+    <span class="k">public</span> <span class="kt">string</span> <span class="n">Name</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+
+    <span class="k">public</span> <span class="kt">double</span> <span class="n">Price</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+<span class="p">}</span></code></pre></div>
+
+<p>The database diagram produced with adding a new migration and updating the
+database is drastically different from the first one which does not serve our needs.</p>
+
+<p><img src="/images/2014-12-23-EntityTypeConfigurations/02_DiagramWithRemovedUsersFromProduct.png" alt="Diagram with Removed User From Product" /></p>
+
+<p>After removing the User collection from the Product object, EF interprets this
+as a one to many relationship and creates a FK property on the Products table
+pointing to User, which is clearly not what we want. We will not look at a way
+to still keep out the Users collection from product, and still get a many to
+many relationship.</p>
+
+<h2 id="entity-type-configurations">Entity Type Configurations</h2>
+
+<p>The entire concept behind entity type configurations was introduced in EF6, if
+I recall correctly. This approach allows us to define EF Fluent API
+configurations for each entity and then load them up in the OnModelCreating
+event in the context.</p>
+
+<p>With this approach we are going to specifically configure the Many to Many
+relation on the Users entity. The entity type configuration class for the User
+entity is defined in the following snippet:</p>
+
+<div class="highlight"><pre><code class="language-c#" data-lang="c#"><span class="k">public</span> <span class="k">class</span> <span class="nc">UserEntityTypeConfiguration</span><span class="p">:</span><span class="n">BaseEntityTypeConfiguration</span><span class="p">&lt;</span><span class="n">User</span><span class="p">&gt;</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="nf">UserEntityTypeConfiguration</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="n">HasMany</span><span class="p">(</span><span class="n">user</span> <span class="p">=&gt;</span> <span class="n">user</span><span class="p">.</span><span class="n">Products</span><span class="p">)</span>
+            <span class="p">.</span><span class="n">WithMany</span><span class="p">();</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></div>
+
+<p><strong>UPDATE: There was a mistake in the above snippet. The WithMany call had a ‘product’ as a parameter which was wrong and probably left over from testing. Updated after the actual colleague that was mentioned in the beginning of the post pointed it out in the <a href="https://disqus.com/home/discussion/emir01githubio/entity_type_configuration_fluent_api_for_many_to_many_relations_emirs_blog_programming_explorations_/">discussion</a> on Disqus.</strong></p>
+
+<p>The configuration inherits from our own base abstract generic class. I found
+this convenient because I usually keep the configurations in a separate
+project from my entities and the migrations which leads to lesser folder
+hierarchies and better organization. The abstract generic class in turn allows
+for easier configuration loading in the OnModelCreating event which we will
+see shortly.</p>
+
+<p>The key point in the configuration is the specification that the User has many
+Products, and the Products in turn have many Users which is specified with the
+<em>WithMany()</em> call. The <em>WithMany()</em> method has an overload that would allow us to
+specify the navigation property (collection) on the Product that signifies
+this many to many relationship. If we went with our first example we could
+have called the method like so:</p>
+
+<div class="highlight"><pre><code class="language-c#" data-lang="c#"><span class="k">public</span> <span class="k">class</span> <span class="nc">UserEntityTypeConfiguration</span><span class="p">:</span><span class="n">BaseEntityTypeConfiguration</span><span class="p">&lt;</span><span class="n">User</span><span class="p">&gt;</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="nf">UserEntityTypeConfiguration</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="n">HasMany</span><span class="p">(</span><span class="n">user</span> <span class="p">=&gt;</span> <span class="n">user</span><span class="p">.</span><span class="n">Products</span><span class="p">)</span>
+            <span class="p">.</span><span class="n">WithMany</span><span class="p">(</span><span class="n">product</span><span class="p">=&gt;</span><span class="n">product</span><span class="p">.</span><span class="n">Users</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></div>
+
+<p>Using the method with no arguments still tells EF that there is a many to many
+association here which solves our initial problem of keeping the Product class
+clean. The database diagram generated is exactly the same as the one where
+both entities had navigation property collection to each other.</p>
+
+<p>Now there are other configurations and settings that can be done using the
+EntityTypeConfiguration approach. I’ve personally haven’t explored other
+significant usages, as I also just started using EntityTypeConfigurations on a
+recent project. One additional thing I’ve done, is if we want to modify the
+table and foreign key naming for the table that gets auto generated by EF by
+convention. The full configuration code will then be extended by a Map method
+that takes a map configuration callback provided here via a lambda expression.</p>
+
+<div class="highlight"><pre><code class="language-c#" data-lang="c#"><span class="k">public</span> <span class="k">class</span> <span class="nc">UserEntityTypeConfiguration</span><span class="p">:</span><span class="n">BaseEntityTypeConfiguration</span><span class="p">&lt;</span><span class="n">User</span><span class="p">&gt;</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="nf">UserEntityTypeConfiguration</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="n">HasMany</span><span class="p">(</span><span class="n">user</span> <span class="p">=&gt;</span> <span class="n">user</span><span class="p">.</span><span class="n">Products</span><span class="p">)</span>
+            <span class="p">.</span><span class="n">WithMany</span><span class="p">()</span>
+            <span class="p">.</span><span class="n">Map</span><span class="p">(</span><span class="n">map</span> <span class="p">=&gt;</span>
+            <span class="p">{</span>
+                <span class="n">map</span><span class="p">.</span><span class="n">ToTable</span><span class="p">(</span><span class="s">&quot;UserFavouriteProducts&quot;</span><span class="p">);</span>
+                <span class="n">map</span><span class="p">.</span><span class="n">MapLeftKey</span><span class="p">(</span><span class="s">&quot;UserId&quot;</span><span class="p">);</span>
+                <span class="n">map</span><span class="p">.</span><span class="n">MapRightKey</span><span class="p">(</span><span class="s">&quot;ProductId&quot;</span><span class="p">);</span>
+            <span class="p">});</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></div>
+
+<p>And the final database diagram based on the configuration:</p>
+
+<p><img src="/images/2014-12-23-EntityTypeConfigurations/03_FinalDiagramWithMap.png" alt="Final Database Diagram" /></p>
+
+<p>To wrap things up we are just going to see how the User
+EntityTypeConfiguration is loaded on the OnModelCreating overloaded method on
+the context.</p>
+
+<div class="highlight"><pre><code class="language-c#" data-lang="c#"><span class="k">public</span> <span class="k">class</span> <span class="nc">AppContext</span> <span class="p">:</span> <span class="n">DbContext</span>
+<span class="p">{</span>
+    <span class="cp">#region Ctor</span>
+
+    <span class="k">public</span> <span class="nf">AppContext</span><span class="p">()</span>
+        <span class="p">:</span> <span class="k">base</span><span class="p">(</span><span class="s">&quot;EntityTypeConfigConnection&quot;</span><span class="p">)</span>
+    <span class="p">{</span>
+
+    <span class="p">}</span>
+
+    <span class="cp">#endregion</span>
+
+    <span class="cp">#region Sets</span>
+
+    <span class="k">public</span> <span class="n">DbSet</span><span class="p">&lt;</span><span class="n">User</span><span class="p">&gt;</span> <span class="n">Users</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+
+    <span class="k">public</span> <span class="n">DbSet</span><span class="p">&lt;</span><span class="n">Product</span><span class="p">&gt;</span> <span class="n">Product</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+
+    <span class="cp">#endregion</span>
+    
+    <span class="cp">#region Overides</span>
+
+    <span class="k">protected</span> <span class="k">override</span> <span class="k">void</span> <span class="nf">OnModelCreating</span><span class="p">(</span><span class="n">DbModelBuilder</span> <span class="n">modelBuilder</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="c1">// add all the found entity type configurations that are in the same</span>
+        <span class="c1">// assembly as the base abstract generic config.</span>
+        <span class="n">modelBuilder</span><span class="p">.</span><span class="n">Configurations</span><span class="p">.</span><span class="n">AddFromAssembly</span><span class="p">(</span><span class="n">Assembly</span><span class="p">.</span><span class="n">GetAssembly</span><span class="p">(</span><span class="k">typeof</span><span class="p">(</span><span class="n">BaseEntityTypeConfiguration</span><span class="p">&lt;&gt;)));</span>
+    <span class="p">}</span>
+
+    <span class="cp">#endregion</span>
+<span class="p">}</span></code></pre></div>
+
+<p>Loading all configurations from a given assembly specified by the base
+abstract class allows us to both separate them, as mentioned, in another
+project and to add additional entity configurations for example for the
+Product entity without having to worry about modifying the DbContext.</p>
+
+<p>There was one other thing related to setting up EF code first that I’ve
+learned recently and that is the issue of naming conventions. EF by default
+generates FK’s using underscores which is not how I personally prefer the FK’s
+to be named. This can also be easily solved using a custom naming convention
+but that would have to wait for another post.</p>
+
+<p>The final example project can be found at <a href="https://github.com/emir01/EF-Entity-Type-Configuration-For-Many-To-Many-Relations">this repository</a> and I hope someone finds it useful!</p>
+
+
+  </div>
+  
+  <div class="date">
+    Written on December 23, 2014
+    
+  </div>
+
+  <!-- Output author details if some exist. -->
+
+    <span>
+        <!-- Personal Info. -->
+        Written by <a href="https://github.com/emir01" target="_blank">Emir Osmanoski</a>
+    </span>
+
+
+  
+<div class="comments">
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+    
+	    var disqus_shortname = 'emir01githubio'; 
+
+	    (function() {
+	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
+</article>
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+                    
+          <a href="mailto:emir.osmanoski@gmail.com"><svg width="40px" height="40px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <path d="M0.224580688,30 C0.224580688,13.4314567 13.454941,0 29.7754193,0 C46.0958976,0 59.3262579,13.4314567 59.3262579,30 C59.3262579,46.5685433 46.0958976,60 29.7754193,60 C13.454941,60 0.224580688,46.5685433 0.224580688,30 Z M0.224580688,30" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+    <path d="M35.0384324,31.6384006 L47.2131148,40.5764264 L47.2131148,20 L35.0384324,31.6384006 Z M13.7704918,20 L13.7704918,40.5764264 L25.9449129,31.6371491 L13.7704918,20 Z M30.4918033,35.9844891 L27.5851037,33.2065217 L13.7704918,42 L47.2131148,42 L33.3981762,33.2065217 L30.4918033,35.9844891 Z M46.2098361,20 L14.7737705,20 L30.4918033,32.4549304 L46.2098361,20 Z M46.2098361,20" id="Shape" fill="#333333" sketch:type="MSShapeGroup"></path>
+    <path d="M59.3262579,30 C59.3262579,46.5685433 46.0958976,60 29.7754193,60 C23.7225405,60 18.0947051,58.1525134 13.4093244,54.9827754 L47.2695458,5.81941103 C54.5814438,11.2806503 59.3262579,20.0777973 59.3262579,30 Z M59.3262579,30" id="reflec" fill-opacity="0.08" fill="#000000" sketch:type="MSShapeGroup"></path>
+</svg></a>
+          
+          
+          <a href="http://github.com/emir01"><svg width="40px" height="40px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <path d="M0.336871032,30 C0.336871032,13.4314567 13.5672313,0 29.8877097,0 C46.208188,0 59.4385483,13.4314567 59.4385483,30 C59.4385483,46.5685433 46.208188,60 29.8877097,60 C13.5672313,60 0.336871032,46.5685433 0.336871032,30 Z M0.336871032,30" id="Github" fill="#333333" sketch:type="MSShapeGroup"></path>
+    <path d="M18.2184245,31.9355566 C19.6068506,34.4507902 22.2845295,36.0156764 26.8007287,36.4485173 C26.1561023,36.9365335 25.3817877,37.8630984 25.2749857,38.9342607 C24.4644348,39.4574749 22.8347506,39.62966 21.5674303,39.2310659 C19.7918469,38.6717023 19.1119377,35.1642642 16.4533306,35.6636959 C15.8773626,35.772144 15.9917933,36.1507609 16.489567,36.4722998 C17.3001179,36.9955141 18.0629894,37.6500075 18.6513541,39.04366 C19.1033554,40.113871 20.0531304,42.0259813 23.0569369,42.0259813 C24.2489236,42.0259813 25.0842679,41.8832865 25.0842679,41.8832865 C25.0842679,41.8832865 25.107154,44.6144649 25.107154,45.6761142 C25.107154,46.9004355 23.4507693,47.2457569 23.4507693,47.8346108 C23.4507693,48.067679 23.9990832,48.0895588 24.4396415,48.0895588 C25.3102685,48.0895588 27.1220883,47.3646693 27.1220883,46.0918317 C27.1220883,45.0806012 27.1382993,41.6806599 27.1382993,41.0860982 C27.1382993,39.785673 27.8372803,39.3737607 27.8372803,39.3737607 C27.8372803,39.3737607 27.924057,46.3153869 27.6704022,47.2457569 C27.3728823,48.3397504 26.8360115,48.1846887 26.8360115,48.6727049 C26.8360115,49.3985458 29.0168704,48.8505978 29.7396911,47.2571725 C30.2984945,46.0166791 30.0543756,39.2072834 30.0543756,39.2072834 L30.650369,39.1949165 C30.650369,39.1949165 30.6837446,42.3123222 30.6637192,43.7373675 C30.6427402,45.2128317 30.5426134,47.0792797 31.4208692,47.9592309 C31.9977907,48.5376205 33.868733,49.5526562 33.868733,48.62514 C33.868733,48.0857536 32.8436245,47.6424485 32.8436245,46.1831564 L32.8436245,39.4688905 C33.6618042,39.4688905 33.5387911,41.6768547 33.5387911,41.6768547 L33.5988673,45.7788544 C33.5988673,45.7788544 33.4186389,47.2733446 35.2190156,47.8992991 C35.8541061,48.1209517 37.2139245,48.1808835 37.277815,47.8089257 C37.3417055,47.4360167 35.6405021,46.8814096 35.6252446,45.7236791 C35.6157088,45.0178155 35.6567131,44.6059032 35.6567131,41.5379651 C35.6567131,38.470027 35.2438089,37.336079 33.8048426,36.4323453 C38.2457082,35.9766732 40.9939527,34.880682 42.3337458,31.9450695 C42.4383619,31.9484966 42.8791491,30.5737742 42.8219835,30.5742482 C43.1223642,29.4659853 43.2844744,28.1550957 43.3168964,26.6025764 C43.3092677,22.3930799 41.2895654,20.9042975 40.9014546,20.205093 C41.4736082,17.0182425 40.8060956,15.5675121 40.4961791,15.0699829 C39.3518719,14.6637784 36.5149435,16.1145088 34.9653608,17.1371548 C32.438349,16.3998984 27.0982486,16.4712458 25.0957109,17.3274146 C21.4005522,14.6875608 19.445694,15.0918628 19.445694,15.0918628 C19.445694,15.0918628 18.1821881,17.351197 19.1119377,20.6569598 C17.8961113,22.2028201 16.9902014,23.2968136 16.9902014,26.1963718 C16.9902014,27.8297516 17.1828264,29.2918976 17.6176632,30.5685404 C17.5643577,30.5684093 18.2008493,31.9359777 18.2184245,31.9355566 Z M18.2184245,31.9355566" id="Path" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+    <path d="M59.4385483,30 C59.4385483,46.5685433 46.208188,60 29.8877097,60 C23.8348308,60 18.2069954,58.1525134 13.5216148,54.9827754 L47.3818361,5.81941103 C54.6937341,11.2806503 59.4385483,20.0777973 59.4385483,30 Z M59.4385483,30" id="reflec" fill-opacity="0.08" fill="#000000" sketch:type="MSShapeGroup"></path>
+</svg></a>
+          
+          <a href="http://linkedin.com/in/emirosmanoski"><svg width="40px" height="40px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <path d="M0.449161376,30 C0.449161376,13.4314567 13.6795217,0 30,0 C46.3204783,0 59.5508386,13.4314567 59.5508386,30 C59.5508386,46.5685433 46.3204783,60 30,60 C13.6795217,60 0.449161376,46.5685433 0.449161376,30 Z M0.449161376,30" fill="#007BB6" sketch:type="MSShapeGroup"></path>
+    <path d="M22.4680392,23.7098144 L15.7808366,23.7098144 L15.7808366,44.1369537 L22.4680392,44.1369537 L22.4680392,23.7098144 Z M22.4680392,23.7098144" id="Path" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+    <path d="M22.9084753,17.3908761 C22.8650727,15.3880081 21.4562917,13.862504 19.1686418,13.862504 C16.8809918,13.862504 15.3854057,15.3880081 15.3854057,17.3908761 C15.3854057,19.3522579 16.836788,20.9216886 19.0818366,20.9216886 L19.1245714,20.9216886 C21.4562917,20.9216886 22.9084753,19.3522579 22.9084753,17.3908761 Z M22.9084753,17.3908761" id="Path" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+    <path d="M46.5846502,32.4246563 C46.5846502,26.1503226 43.2856534,23.2301456 38.8851658,23.2301456 C35.3347011,23.2301456 33.7450983,25.2128128 32.8575489,26.6036896 L32.8575489,23.7103567 L26.1695449,23.7103567 C26.2576856,25.6271338 26.1695449,44.137496 26.1695449,44.137496 L32.8575489,44.137496 L32.8575489,32.7292961 C32.8575489,32.1187963 32.9009514,31.5097877 33.0777669,31.0726898 C33.5610713,29.8530458 34.6614937,28.5902885 36.5089747,28.5902885 C38.9297703,28.5902885 39.8974476,30.4634101 39.8974476,33.2084226 L39.8974476,44.1369537 L46.5843832,44.1369537 L46.5846502,32.4246563 Z M46.5846502,32.4246563" id="Path" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+    <path d="M59.5508386,30 C59.5508386,46.5685433 46.3204783,60 30,60 C23.9471212,60 18.3192858,58.1525134 13.6339051,54.9827754 L47.4941264,5.81941103 C54.8060245,11.2806503 59.5508386,20.0777973 59.5508386,30 Z M59.5508386,30" id="reflec" fill-opacity="0.08" fill="#000000" sketch:type="MSShapeGroup"></path>
+</svg></a>
+          
+          
+          
+          
+
+        </footer>
+      </div>
+    </div>
+
+    
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		
+		ga('create', 'UA-57810187-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<!-- End Google Analytics -->
+
+
+
+    <script type="text/javascript" src="/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript"  src="/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(function(){
+          
+          $("article.post table").addClass("table").addClass("table-striped");
+
+          $(".entry p img").parent("p").css("text-align","center");
+
+        });
+    </script>
+</body>
+</html>

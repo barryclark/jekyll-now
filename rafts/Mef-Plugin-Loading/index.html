@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    <title>MEF and Dynamic Module/Plugin Loading – Emir's Blog – Programming explorations, biking and other stuff!</title>
+
+    <meta name="author" content="Emir's Blog" />
+    <meta name="description" content="Programming explorations, biking and other stuff!">
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/bootstrap.min.css" />
+
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Emir's Blog - Programming explorations, biking and other stuff!" href="/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/" class="site-avatar"><img src="https://avatars.githubusercontent.com/u/1457756?v=3" /></a>
+           
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">Emir's Blog</a></h1>
+            <p class="site-description">Programming explorations, biking and other stuff!</p>
+          </div>
+          
+          <nav>
+            <a href="/">Blog</a>
+            <a href="/about">About</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      
+
+<article class="post">
+  <h1 class="post-main-title">
+    <span>MEF and Dynamic Module/Plugin Loading<span>
+      
+    
+  
+
+
+   <span class='post-category-mark'>
+    
+      (
+      
+        
+          <a rel="tag" href="#" onclick="return false;">mef, </a>
+        
+      
+        
+          <a rel="tag" href="#" onclick="return false;">plugins, </a>
+        
+      
+        
+          <a rel="tag" href="#" onclick="return false;">assembly, </a>
+        
+      
+        
+          <a rel="tag" href="#" onclick="return false;">loading, </a>
+        
+      
+        
+          <a rel="tag" href="#" onclick="return false;">architecture, </a>
+        
+      
+        
+          <a rel="tag" href="#" onclick="return false;">containers, </a>
+        
+      
+        
+          <a rel="tag" href="#" onclick="return false;">catalogue </a>
+        
+      
+      )
+
+            
+  </span>
+
+  </h1>
+
+  <div class="entry">
+    <p>Recently I came across a requirement for a project where the system was to be
+able to have and configure different plugins/modules that described certain
+functionality which was to be invoked depending on certain request parameters.</p>
+
+<p>The basic requirement was to be able to drop assemblies in a folder with some
+configuration and to have them loaded and executed by, at the very least,
+front facing ASP.NET Web API application.</p>
+
+<p>My initial thought was that this could be achieved easily enough by loading
+the assemblies, manually, and then using reflection to get to a class
+implementing a specific plugin contract interface. After the initial planning
+meetings I was eager to try my hands at a small demo project.</p>
+
+<p>At this point one of the more experienced colleagues involved in the
+discussion mentioned MEF (Managed Extensibility Framework) as a possible
+solution which can be used to implement the above requirements. I decided to
+give it a go, as I have had heard about it from other colleagues and wanted to
+start learning it and luck would have it, at the moment I had the perfect
+learning opportunity.</p>
+
+<h1 id="about-mef-and-my-aproach">About MEF and my aproach</h1>
+
+<p>One thing to mention here before getting into the actual architecture and
+implementation is that I had a very specific goal in regards to what I wanted
+to accomplish with MEF. I am still not very familiar, and in the process of
+learning, probably even the more basic concepts, even though some of what I
+know regarding DI and assembly architecture in .NET does help understand 
+the core concepts behind the MEF usage in this example.</p>
+
+<p>This post will not cover topics regarding MEF basics, its usage, or
+anything along those lines and will jump straight to a very specific use case
+for the framework.</p>
+
+<p>If you want to read up on MEF in more detail you can check out this
+<a href="https://msdn.microsoft.com/en-us/library/dd460648(v=vs.110).aspx">link!</a></p>
+
+<p>Before implementing this small demo, my impression about MEF,  was mainly that
+it was a framework similar to other dependency injection frameworks like
+StructureMap or NInject, and even though it can probably can be used as such,
+turned out it offered additional features, which may or may not be present in
+the mentioned DI frameworks. Either way, MEF made it very easy to implement
+the requirements specified above.</p>
+
+<h1 id="the-requirment-and-architecture">The Requirment and Architecture</h1>
+
+<p>The entire idea and requirements can be glanced from the bellow high level diagram. We would be using MEF to load plugins, that encapsulate some functionality. The plugins would take in some parameters, execute some internal code, and return results to the client invoking the plugin. The plugins would all implement a commonly known plugin contract which would be shared among the client code and plugin code.</p>
+
+<p>Once the plugins are build, by any party, we would store them in a common plugin repository, in our case here, a folder and we would want to use MEF and some custom plugin loading manager code to provide instance of the plugin entry points to calling code.</p>
+
+<p><img src="/images/2015-09-18-Mef-Plugin-Loading/02_PluginArchitecture.png" alt="High Level Plugin Architecture" /></p>
+
+<h1 id="plugin-contract">Plugin Contract</h1>
+
+<p>For the purposes of the demo project a library was defined that contained the
+contract interfaces and methods for the plugins. This project also contained a
+metadata interface used to identify the plugins. MEF has a concept of Metadata
+which can be used to do some interesting queries to retrieve instances of
+classes which we will take a look at a bit later on when looking at the code
+loading the plugins.</p>
+
+<p>The Plugin Contract library also defines the objects that are used in the
+communication between the client and the plugins, the <code>PluginExecutionEntry</code>
+and <code>PluginExecutionResult</code> classes.</p>
+
+<p>The two core interfaces in the contract project and their respective
+properties:</p>
+
+<div class="highlight"><pre><code class="language-c#" data-lang="c#"><span class="k">public</span> <span class="k">interface</span> <span class="n">IPluginContract</span>
+<span class="p">{</span>
+    <span class="n">PluginExecutionResult</span> <span class="nf">ExecutePlugin</span><span class="p">(</span><span class="n">PluginExecutionEntry</span> <span class="n">entry</span><span class="p">);</span>
+<span class="p">}</span></code></pre></div>
+
+<p>and </p>
+
+<div class="highlight"><pre><code class="language-c#" data-lang="c#"><span class="k">public</span> <span class="k">interface</span> <span class="n">IPluginMetadata</span>
+<span class="p">{</span>
+	<span class="kt">string</span> <span class="n">PluginName</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="p">}</span>
+<span class="p">}</span></code></pre></div>
+
+<p>One defines the contract for the entry points for each of the plugins, while
+the other describes the metadata which can be used to identify the entry
+points in MEF.</p>
+
+<p>The plugin contracts and objects are defined in a separate project. The
+project is build and the resulting .dll can then be referenced in all other
+projects including the Plugin Projects. This allows third party developers
+that only have access to the PluginContract .dll to build Plugins and give us
+the  Plugin libraries which we can then store in the repository. It comes down
+to third parties not having to know anything about our  plugin
+manager/architecture or the calling client code.</p>
+
+<h1 id="example-plugins">Example Plugins</h1>
+
+<p>For the purposes of the demo implementation we defined two plugins:</p>
+
+<ul>
+  <li>Plugin A</li>
+  <li>PLugin B</li>
+</ul>
+
+<p>The plugins are quite simple. They define classes that implement the interface
+defined in the Plugin Contracts.</p>
+
+<div class="highlight"><pre><code class="language-c#" data-lang="c#"><span class="na">[Export(typeof(IPluginContract))]</span>
+<span class="na">[ExportMetadata(&quot;PluginName&quot;, &quot;ApiAPlugin&quot;)]</span>
+<span class="k">public</span> <span class="k">class</span> <span class="nc">PluginA</span> <span class="p">:</span> <span class="n">IPluginContract</span> <span class="p">{</span> <span class="p">}</span></code></pre></div>
+
+<p>At the class definition we encounter two key MEF attributes:</p>
+
+<ul>
+  <li><code>Export</code>
+    <ul>
+      <li>which tells MEF which Interface/Type this particular class is exposing/implementing.</li>
+      <li>This tells MEF that the class is something that can be “plugged” in somewhere.</li>
+      <li>In our case we are going to query all “exports” of type IPluginContract</li>
+    </ul>
+  </li>
+  <li><code>ExportMetadata</code>
+    <ul>
+      <li>First attribute “PluginName” defines the Metadata attribute name</li>
+      <li>Second attribute “ApiAPlugin” defines the actual value of the Metadata attribute.</li>
+      <li>In other terms, we can use this to search for a specific “pluggable” component of type IPluginContract by querying the metadata attribute.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>We will see how all this is used a bit later on, but for now we can notice
+that the name of the metadata attribute is the same as defined in the
+IPluginMetadata interface.</p>
+
+<p>An implementation of the ExecutePlugin method can be seen here:</p>
+
+<div class="highlight"><pre><code class="language-c#" data-lang="c#"><span class="k">public</span> <span class="n">PluginExecutionResult</span> <span class="nf">ExecutePlugin</span><span class="p">(</span><span class="n">PluginExecutionEntry</span> <span class="n">entry</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="kt">var</span> <span class="n">url</span> <span class="p">=</span> <span class="n">GetInternalApiUrl</span><span class="p">();</span>
+
+    <span class="k">if</span> <span class="p">(!</span><span class="kt">string</span><span class="p">.</span><span class="n">IsNullOrWhiteSpace</span><span class="p">(</span><span class="n">url</span><span class="p">))</span>
+    <span class="p">{</span>
+        <span class="kt">var</span> <span class="n">apiResult</span> <span class="p">=</span> <span class="n">ExecuteApiCall</span><span class="p">(</span><span class="n">url</span><span class="p">);</span>
+
+        <span class="k">return</span> <span class="k">new</span> <span class="nf">PluginExecutionResult</span><span class="p">()</span> <span class="p">{</span> <span class="n">Output</span> <span class="p">=</span> <span class="n">apiResult</span> <span class="p">};</span>
+    <span class="p">}</span>
+
+    <span class="k">return</span> <span class="k">new</span> <span class="nf">PluginExecutionResult</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="n">Output</span> <span class="p">=</span> <span class="s">&quot;Failed Configuration URL Processing&quot;</span>
+    <span class="p">};</span>
+<span class="p">}</span></code></pre></div>
+
+<p>The code is reading some internal configuration defined in a config.xml. The
+plugin then makes an API call  using an <code>HttpClient</code> to another <em>internal</em>
+API, which will not be covered in this post.</p>
+
+<p>The API call just returns a string result (<em>apiresult</em>) which is then returned
+to the client code which calls the plugin.</p>
+
+<p>Plugin B is exactly the same calling a different API, so in a way there are
+also two <em>internal</em> APIs  which return string result identified by A and B.</p>
+
+<p>The two plugins are built and the outputs (.dll and config) moved to a folder
+structure on disk, what the above high level diagram defines as the plugin
+repository.</p>
+
+<h1 id="the-plugin-loader">The plugin loader</h1>
+
+<p>The idea was to create a “generic” plugin loader, which  could be re-used in
+multiple plugin clients for different plugin repositories. The current
+implementation of the loader takes in a loader configuration object which is
+used, currently, to pass the folder on disk where the plugin libraries are
+located.</p>
+
+<p>The plugin manager is also where we actually utilize MEF to load/index the
+plugin implementations/libraries from the plugin repository. The core of the
+initialization work happens in the plugin manager constructor:</p>
+
+<div class="highlight"><pre><code class="language-c#" data-lang="c#"><span class="k">public</span> <span class="nf">PluginLoadingManager</span><span class="p">(</span><span class="n">PluginLoaderConfiguration</span> <span class="n">pluginLoaderConfiguration</span><span class="p">)</span>
+<span class="p">{</span>
+	<span class="kt">var</span> <span class="n">catalogue</span> <span class="p">=</span> <span class="n">CreatePluginCatalog</span><span class="p">(</span><span class="n">pluginLoaderConfiguration</span><span class="p">);</span>
+	<span class="n">CreateCompositionContainer</span><span class="p">(</span><span class="n">catalogue</span><span class="p">);</span>
+<span class="p">}</span></code></pre></div>
+
+<p>We will look at each of the two steps individually in the next two sections.</p>
+
+<h2 id="creating-the-aggregate-catalogue">Creating the Aggregate Catalogue</h2>
+
+<p>A catalogue in MEF is an object/registry that can store all possible exports.
+It can store these exports from assemblies it can scan or even folders on disk
+that contain these assemblies. This of course sounds like the perfect
+functionality to utilize to scan our Plugin Repository.</p>
+
+<p>The plugin catalogue is created by getting all the directories in the
+specified root directory of the plugin repository and iterating over each one to scan any assemblies for any MEF Exports.</p>
+
+<p>This big aggregate catalogue will therefore contain multiple Directory Catalogues.</p>
+
+<div class="highlight"><pre><code class="language-c#" data-lang="c#"><span class="k">private</span> <span class="n">AggregateCatalog</span> <span class="nf">CreatePluginCatalog</span><span class="p">(</span><span class="n">PluginLoaderConfiguration</span> <span class="n">pluginLoaderConfiguration</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="kt">var</span> <span class="n">pluginsCatalog</span> <span class="p">=</span> <span class="k">new</span> <span class="n">AggregateCatalog</span><span class="p">();</span>
+
+    <span class="k">foreach</span> <span class="p">(</span><span class="kt">var</span> <span class="n">pluginDirectory</span> <span class="k">in</span> <span class="n">GetPluginDirectories</span><span class="p">(</span><span class="n">pluginLoaderConfiguration</span><span class="p">.</span><span class="n">PluginsRootLocation</span><span class="p">))</span>
+    <span class="p">{</span>
+        <span class="n">pluginsCatalog</span><span class="p">.</span><span class="n">Catalogs</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="k">new</span> <span class="n">DirectoryCatalog</span><span class="p">(</span><span class="n">pluginDirectory</span><span class="p">));</span>
+    <span class="p">}</span>
+
+    <span class="k">return</span> <span class="n">pluginsCatalog</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">private</span> <span class="kt">string</span><span class="p">[]</span> <span class="nf">GetPluginDirectories</span><span class="p">(</span><span class="kt">string</span> <span class="n">baseDirectory</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="kt">var</span> <span class="n">directories</span> <span class="p">=</span> <span class="n">Directory</span><span class="p">.</span><span class="n">EnumerateDirectories</span><span class="p">(</span><span class="n">baseDirectory</span><span class="p">,</span> <span class="s">&quot;*&quot;</span><span class="p">,</span> <span class="n">SearchOption</span><span class="p">.</span><span class="n">TopDirectoryOnly</span><span class="p">);</span>
+    <span class="k">return</span> <span class="n">directories</span><span class="p">.</span><span class="n">ToArray</span><span class="p">();</span>
+<span class="p">}</span></code></pre></div>
+
+<p>We are going to use this aggregate catalogue which knows about all the
+exports defined in the plugin subfolders to search for a specific export of the
+Plugin Contract interface using a MEF Composition Container.</p>
+
+<h2 id="creating-the-mef-composition-container">Creating the MEF Composition Container</h2>
+
+<p>A MEF container can be used to query the catalogues for the exports. Its populated with all the exports/parts/plugins found in the catalogues.</p>
+
+<p>In our case the MEF composition container is created over the previously built
+aggregate catalogue. We are going to use the container to ask the catalogues
+to give us exports of, in our case, our plugin contract interface.</p>
+
+<p>The simple creation of the Composition container can be seen in the following
+code:</p>
+
+<div class="highlight"><pre><code class="language-c#" data-lang="c#"><span class="k">private</span> <span class="k">void</span> <span class="nf">CreateCompositionContainer</span><span class="p">(</span><span class="n">AggregateCatalog</span> <span class="n">catalogue</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">_container</span> <span class="p">=</span> <span class="k">new</span> <span class="n">CompositionContainer</span><span class="p">(</span><span class="n">catalogue</span><span class="p">);</span>
+<span class="p">}</span></code></pre></div>
+
+<h1 id="loading-plugin-instances-with-the-plugin-manager">Loading Plugin Instances with the Plugin Manager</h1>
+
+<p>This final section will look into how the actual plugin entry point instances 
+are created and consumed from client code.</p>
+
+<p>We are going to take a look at an example containing a simple Action in a WEB
+API Controller which will create a Plugin Loading Manager for a folder
+containing our 2 plugins, PluginA and PluginB.</p>
+
+<p>The Web API corresponds to the Plugin Client in the high level architecture
+diagram.</p>
+
+<p>For the purposes of the demo note that the plugin manager is constructed in the Controller constructor:</p>
+
+<div class="highlight"><pre><code class="language-c#" data-lang="c#"><span class="k">private</span> <span class="k">readonly</span> <span class="kt">string</span> <span class="n">PluginRootLocation</span> <span class="p">=</span> <span class="s">&quot;C:/external_plugins&quot;</span><span class="p">;</span>
+
+<span class="k">public</span> <span class="nf">PublicController</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="n">_pluginManager</span> <span class="p">=</span> <span class="k">new</span> <span class="n">PluginLoadingManager</span><span class="p">(</span><span class="k">new</span> <span class="n">PluginLoaderConfiguration</span>
+    <span class="p">{</span>
+        <span class="n">PluginsRootLocation</span> <span class="p">=</span> <span class="n">PluginRootLocation</span>
+    <span class="p">});</span>
+<span class="p">}</span></code></pre></div>
+
+<p>Which plugin is going to be utilized depends on a parameter passed to the
+action via the HTTP call:</p>
+
+<div class="highlight"><pre><code class="language-c#" data-lang="c#"><span class="k">public</span> <span class="kt">string</span> <span class="nf">Get</span><span class="p">(</span><span class="kt">string</span> <span class="n">pluginIdentifier</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="c1">// create a plugin manager to decide which internal system is going to handle the request</span>
+    
+    <span class="kt">var</span> <span class="n">processPlugin</span> <span class="p">=</span> <span class="n">_pluginManager</span><span class="p">.</span><span class="n">GetPlugin</span><span class="p">(</span><span class="n">pluginIdentifier</span><span class="p">);</span>
+
+    <span class="c1">// this is going to execute a call to an internal api and return the results? </span>
+    <span class="kt">var</span> <span class="n">result</span> <span class="p">=</span> <span class="n">processPlugin</span><span class="p">.</span><span class="n">ExecutePlugin</span><span class="p">(</span><span class="k">null</span><span class="p">);</span>
+
+	<span class="k">return</span> <span class="n">result</span><span class="p">.</span><span class="n">Output</span><span class="p">;</span>
+<span class="p">}</span></code></pre></div>
+
+<h2 id="plugin-manager---get-plugin-code">Plugin Manager - Get Plugin Code</h2>
+
+<p>What remains to be seen is the actual code that utilizes the MEF composition
+container  to get an instance of the pluggable export for the specific plugin:</p>
+
+<div class="highlight"><pre><code class="language-c#" data-lang="c#"><span class="k">public</span> <span class="n">IPluginContract</span> <span class="nf">GetPlugin</span><span class="p">(</span><span class="kt">string</span> <span class="n">identifier</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="kt">var</span> <span class="n">pluginWrapper</span> <span class="p">=</span> <span class="n">_container</span>
+        <span class="p">.</span><span class="n">GetExports</span><span class="p">&lt;</span><span class="n">IPluginContract</span><span class="p">,</span> <span class="n">IPluginMetadata</span><span class="p">&gt;()</span>
+        <span class="p">.</span><span class="n">FirstOrDefault</span><span class="p">(</span><span class="n">pl</span> <span class="p">=&gt;</span> <span class="n">pl</span><span class="p">.</span><span class="n">Metadata</span><span class="p">.</span><span class="n">PluginName</span> <span class="p">==</span> <span class="n">identifier</span><span class="p">);</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="n">pluginWrapper</span> <span class="p">!=</span> <span class="k">null</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="k">return</span> <span class="n">pluginWrapper</span><span class="p">.</span><span class="n">Value</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">else</span>
+    <span class="p">{</span>
+        <span class="k">return</span> <span class="k">null</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></div>
+
+<p>What the GetPlugin Method does is search the defined MEF Container that
+contains all exports found in the aggregate catalogue. The <code>GetExports</code> method
+is told to search exports for IPluginContract. </p>
+
+<p>The second generic parameter defines the structure of the Metadata we are
+expecting these IPluginContracts to define. Using IPluginMetadata allows us to
+query the PluginName as and compare it to the identifier passed from the
+Plugin Client.</p>
+
+<p>We are in a sense telling MEF to get all exports defined in those assemblies,
+that we have loaded in the catalogues and find us the exports for type
+<code>IPluginContract</code>. After this, using the <code>IPluginMetadata</code> interface we are
+filtering based on the passed Plugin Identifier. If we remember we defined the
+metadata information in a non-strongly typed approach:</p>
+
+<div class="highlight"><pre><code class="language-c#" data-lang="c#"><span class="na">[ExportMetadata(&quot;PluginName&quot;, &quot;ApiAPlugin&quot;)]</span></code></pre></div>
+
+<p>where the PluginName attribute matches what we have defined on the
+IPluginMetadata interface.</p>
+
+<p>So if a for example the identifier is “ApiAPlugin” the plugin wrapper will
+return an object where the Value is set to an instance of the class:</p>
+
+<div class="highlight"><pre><code class="language-c#" data-lang="c#"><span class="na">[Export(typeof(IPluginContract))]</span>
+<span class="na">[ExportMetadata(&quot;PluginName&quot;, &quot;ApiAPlugin&quot;)]</span>
+<span class="k">public</span> <span class="k">class</span> <span class="nc">PluginA</span> <span class="p">:</span> <span class="n">IPluginContract</span></code></pre></div>
+
+<p>After the core GetExports line is executed, the plugin manager will either
+return an instance of the plugin or null. Note that we are calling
+FirstOrDefault in the case of having multiple Exports in the catalogue for the
+IPluginContract. Here we can of course add some logging/logic to make sure we
+are notified of plugins in the repository behaving unexpectedly.</p>
+
+<h2 id="utilizing-the-plugin-and-sample-plugin-functionality">Utilizing the Plugin and Sample Plugin Functionality</h2>
+
+<p>If all is well and the manager returns an actual instance, the client code as
+it can be seen in the snippet previously will <code>ExecutePlugin</code>, in the specific
+case with a <em>null</em> parameter. The client code then just returns the <code>Output</code>
+which is a simple string.</p>
+
+<p>As described above the Plugin (both A and B) make a call to other API services
+which return the strings that are then propagated back to the Plugin Client.</p>
+
+<p>The code executed in the plugins can be seen in the repository which is linked
+below. One important thing is that the execution is synchronous. The Plugin
+waits for the response from the internal API before returning to the Plugin
+Client Code.</p>
+
+<p>Looking at asynchronicity would be next on the list in regards to the entire
+plugin architecture and is something to be left for a following post.</p>
+
+<p>Finally note that the plugin configurations for Plugin A and Plugin B contain
+the addresses of the ‘Internal’ APIs the plugins call. The demo project and
+sample code configuration is for development purposes and points to localhost
+addresses. The ‘Internal’ APIs are defined in the Api folder in the sample solution.</p>
+
+<h1 id="summary">Summary</h1>
+
+<p>I feel/understand that the implementation and use case described above is
+quite simple and straightforward. It was done as a learning exercise and
+somewhat as a spike to see if what was required in regards to the plugin
+architecture could be achieved with MEF.</p>
+
+<p>This post is also an exercise in itself in a way. I had fun writing it even
+though it took me longer to finish than I initially expected. As always, I hope
+someone finds it useful. </p>
+
+<p>To wrap up all the example code can be found at <a href="https://github.com/emir01/spike.mef.plugins">this github repository</a>.</p>
+
+
+  </div>
+  
+  <div class="date">
+    Written on September 18, 2015
+    
+  </div>
+
+  <!-- Output author details if some exist. -->
+
+    <span>
+        <!-- Personal Info. -->
+        Written by <a href="https://github.com/emir01" target="_blank">Emir Osmanoski</a>
+    </span>
+
+
+  
+<div class="comments">
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+    
+	    var disqus_shortname = 'emir01githubio'; 
+
+	    (function() {
+	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
+</article>
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+                    
+          <a href="mailto:emir.osmanoski@gmail.com"><svg width="40px" height="40px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <path d="M0.224580688,30 C0.224580688,13.4314567 13.454941,0 29.7754193,0 C46.0958976,0 59.3262579,13.4314567 59.3262579,30 C59.3262579,46.5685433 46.0958976,60 29.7754193,60 C13.454941,60 0.224580688,46.5685433 0.224580688,30 Z M0.224580688,30" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+    <path d="M35.0384324,31.6384006 L47.2131148,40.5764264 L47.2131148,20 L35.0384324,31.6384006 Z M13.7704918,20 L13.7704918,40.5764264 L25.9449129,31.6371491 L13.7704918,20 Z M30.4918033,35.9844891 L27.5851037,33.2065217 L13.7704918,42 L47.2131148,42 L33.3981762,33.2065217 L30.4918033,35.9844891 Z M46.2098361,20 L14.7737705,20 L30.4918033,32.4549304 L46.2098361,20 Z M46.2098361,20" id="Shape" fill="#333333" sketch:type="MSShapeGroup"></path>
+    <path d="M59.3262579,30 C59.3262579,46.5685433 46.0958976,60 29.7754193,60 C23.7225405,60 18.0947051,58.1525134 13.4093244,54.9827754 L47.2695458,5.81941103 C54.5814438,11.2806503 59.3262579,20.0777973 59.3262579,30 Z M59.3262579,30" id="reflec" fill-opacity="0.08" fill="#000000" sketch:type="MSShapeGroup"></path>
+</svg></a>
+          
+          
+          <a href="http://github.com/emir01"><svg width="40px" height="40px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <path d="M0.336871032,30 C0.336871032,13.4314567 13.5672313,0 29.8877097,0 C46.208188,0 59.4385483,13.4314567 59.4385483,30 C59.4385483,46.5685433 46.208188,60 29.8877097,60 C13.5672313,60 0.336871032,46.5685433 0.336871032,30 Z M0.336871032,30" id="Github" fill="#333333" sketch:type="MSShapeGroup"></path>
+    <path d="M18.2184245,31.9355566 C19.6068506,34.4507902 22.2845295,36.0156764 26.8007287,36.4485173 C26.1561023,36.9365335 25.3817877,37.8630984 25.2749857,38.9342607 C24.4644348,39.4574749 22.8347506,39.62966 21.5674303,39.2310659 C19.7918469,38.6717023 19.1119377,35.1642642 16.4533306,35.6636959 C15.8773626,35.772144 15.9917933,36.1507609 16.489567,36.4722998 C17.3001179,36.9955141 18.0629894,37.6500075 18.6513541,39.04366 C19.1033554,40.113871 20.0531304,42.0259813 23.0569369,42.0259813 C24.2489236,42.0259813 25.0842679,41.8832865 25.0842679,41.8832865 C25.0842679,41.8832865 25.107154,44.6144649 25.107154,45.6761142 C25.107154,46.9004355 23.4507693,47.2457569 23.4507693,47.8346108 C23.4507693,48.067679 23.9990832,48.0895588 24.4396415,48.0895588 C25.3102685,48.0895588 27.1220883,47.3646693 27.1220883,46.0918317 C27.1220883,45.0806012 27.1382993,41.6806599 27.1382993,41.0860982 C27.1382993,39.785673 27.8372803,39.3737607 27.8372803,39.3737607 C27.8372803,39.3737607 27.924057,46.3153869 27.6704022,47.2457569 C27.3728823,48.3397504 26.8360115,48.1846887 26.8360115,48.6727049 C26.8360115,49.3985458 29.0168704,48.8505978 29.7396911,47.2571725 C30.2984945,46.0166791 30.0543756,39.2072834 30.0543756,39.2072834 L30.650369,39.1949165 C30.650369,39.1949165 30.6837446,42.3123222 30.6637192,43.7373675 C30.6427402,45.2128317 30.5426134,47.0792797 31.4208692,47.9592309 C31.9977907,48.5376205 33.868733,49.5526562 33.868733,48.62514 C33.868733,48.0857536 32.8436245,47.6424485 32.8436245,46.1831564 L32.8436245,39.4688905 C33.6618042,39.4688905 33.5387911,41.6768547 33.5387911,41.6768547 L33.5988673,45.7788544 C33.5988673,45.7788544 33.4186389,47.2733446 35.2190156,47.8992991 C35.8541061,48.1209517 37.2139245,48.1808835 37.277815,47.8089257 C37.3417055,47.4360167 35.6405021,46.8814096 35.6252446,45.7236791 C35.6157088,45.0178155 35.6567131,44.6059032 35.6567131,41.5379651 C35.6567131,38.470027 35.2438089,37.336079 33.8048426,36.4323453 C38.2457082,35.9766732 40.9939527,34.880682 42.3337458,31.9450695 C42.4383619,31.9484966 42.8791491,30.5737742 42.8219835,30.5742482 C43.1223642,29.4659853 43.2844744,28.1550957 43.3168964,26.6025764 C43.3092677,22.3930799 41.2895654,20.9042975 40.9014546,20.205093 C41.4736082,17.0182425 40.8060956,15.5675121 40.4961791,15.0699829 C39.3518719,14.6637784 36.5149435,16.1145088 34.9653608,17.1371548 C32.438349,16.3998984 27.0982486,16.4712458 25.0957109,17.3274146 C21.4005522,14.6875608 19.445694,15.0918628 19.445694,15.0918628 C19.445694,15.0918628 18.1821881,17.351197 19.1119377,20.6569598 C17.8961113,22.2028201 16.9902014,23.2968136 16.9902014,26.1963718 C16.9902014,27.8297516 17.1828264,29.2918976 17.6176632,30.5685404 C17.5643577,30.5684093 18.2008493,31.9359777 18.2184245,31.9355566 Z M18.2184245,31.9355566" id="Path" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+    <path d="M59.4385483,30 C59.4385483,46.5685433 46.208188,60 29.8877097,60 C23.8348308,60 18.2069954,58.1525134 13.5216148,54.9827754 L47.3818361,5.81941103 C54.6937341,11.2806503 59.4385483,20.0777973 59.4385483,30 Z M59.4385483,30" id="reflec" fill-opacity="0.08" fill="#000000" sketch:type="MSShapeGroup"></path>
+</svg></a>
+          
+          <a href="http://linkedin.com/in/emirosmanoski"><svg width="40px" height="40px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <path d="M0.449161376,30 C0.449161376,13.4314567 13.6795217,0 30,0 C46.3204783,0 59.5508386,13.4314567 59.5508386,30 C59.5508386,46.5685433 46.3204783,60 30,60 C13.6795217,60 0.449161376,46.5685433 0.449161376,30 Z M0.449161376,30" fill="#007BB6" sketch:type="MSShapeGroup"></path>
+    <path d="M22.4680392,23.7098144 L15.7808366,23.7098144 L15.7808366,44.1369537 L22.4680392,44.1369537 L22.4680392,23.7098144 Z M22.4680392,23.7098144" id="Path" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+    <path d="M22.9084753,17.3908761 C22.8650727,15.3880081 21.4562917,13.862504 19.1686418,13.862504 C16.8809918,13.862504 15.3854057,15.3880081 15.3854057,17.3908761 C15.3854057,19.3522579 16.836788,20.9216886 19.0818366,20.9216886 L19.1245714,20.9216886 C21.4562917,20.9216886 22.9084753,19.3522579 22.9084753,17.3908761 Z M22.9084753,17.3908761" id="Path" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+    <path d="M46.5846502,32.4246563 C46.5846502,26.1503226 43.2856534,23.2301456 38.8851658,23.2301456 C35.3347011,23.2301456 33.7450983,25.2128128 32.8575489,26.6036896 L32.8575489,23.7103567 L26.1695449,23.7103567 C26.2576856,25.6271338 26.1695449,44.137496 26.1695449,44.137496 L32.8575489,44.137496 L32.8575489,32.7292961 C32.8575489,32.1187963 32.9009514,31.5097877 33.0777669,31.0726898 C33.5610713,29.8530458 34.6614937,28.5902885 36.5089747,28.5902885 C38.9297703,28.5902885 39.8974476,30.4634101 39.8974476,33.2084226 L39.8974476,44.1369537 L46.5843832,44.1369537 L46.5846502,32.4246563 Z M46.5846502,32.4246563" id="Path" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+    <path d="M59.5508386,30 C59.5508386,46.5685433 46.3204783,60 30,60 C23.9471212,60 18.3192858,58.1525134 13.6339051,54.9827754 L47.4941264,5.81941103 C54.8060245,11.2806503 59.5508386,20.0777973 59.5508386,30 Z M59.5508386,30" id="reflec" fill-opacity="0.08" fill="#000000" sketch:type="MSShapeGroup"></path>
+</svg></a>
+          
+          
+          
+          
+
+        </footer>
+      </div>
+    </div>
+
+    
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		
+		ga('create', 'UA-57810187-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<!-- End Google Analytics -->
+
+
+
+    <script type="text/javascript" src="/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript"  src="/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(function(){
+          
+          $("article.post table").addClass("table").addClass("table-striped");
+
+          $(".entry p img").parent("p").css("text-align","center");
+
+        });
+    </script>
+</body>
+</html>

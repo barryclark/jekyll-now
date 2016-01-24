@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    <title>Unit Testing EF Code First Database Contexts – Emir's Blog – Programming explorations, biking and other stuff!</title>
+
+    <meta name="author" content="Emir's Blog" />
+    <meta name="description" content="Programming explorations, biking and other stuff!">
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/bootstrap.min.css" />
+
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Emir's Blog - Programming explorations, biking and other stuff!" href="/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/" class="site-avatar"><img src="https://avatars.githubusercontent.com/u/1457756?v=3" /></a>
+           
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">Emir's Blog</a></h1>
+            <p class="site-description">Programming explorations, biking and other stuff!</p>
+          </div>
+          
+          <nav>
+            <a href="/">Blog</a>
+            <a href="/about">About</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      
+
+<article class="post">
+  <h1 class="post-main-title">
+    <span>Unit Testing EF Code First Database Contexts<span>
+      
+    
+  
+
+
+   <span class='post-category-mark'>
+    
+      (
+        <a rel="tag" href="#" onclick="return false;">programming </a>
+      )
+            
+  </span>
+
+  </h1>
+
+  <div class="entry">
+    <p><img src="/images/2014-12-18-UnitTestDbContext/UnitTestSession.png" alt="Unit Testing" /></p>
+
+<p>I’ve recently started work on a new side project. We started with designing
+some mockup screens for most of the functionality and from there on moved on
+to defining the database structure. After initial diagrams, the decision was
+made to use Entity Framework code first.</p>
+
+<p>Now, the domain entities were defined, and I used clean classes (no attribute
+decorations) and an EntityTypeConfiguration approach to do some additional
+configuration, mostly related to many to many relations without double
+association. That, I think would make another interesting post, as it was
+something I did/discover specifically on this project.</p>
+
+<p>Anyway, I had an interesting trivial issue while developing and making changes
+to the collection of entities and the initially defined DbContext used during
+development testing. And it’s a problem that is expected to possibly occur
+again as we make additional changes to the domain. Namely an entity was added
+to the class pool, but not to the DbContext. Running the migrations this was
+will not register the new entity and the resulting database structure is,
+naturally, not as expected.</p>
+
+<p>So, this is a trivial non critical thing, but we had an interesting discussion
+with a coworker about how can we somehow prevent this from happening and have
+the framework tell us what is actually wrong. The plan was to use unit testing
+anyway during development as we would be building this from the ground up and
+wanted to test, for example data access functionality, ASAP. So the idea was
+born from there and the code that is to follow is one part of the solution.
+I’ll get back to the “other” part after the code is presented.</p>
+
+<p>The way we currently have things setup, each of our domain entities inherit a
+common Entity type that contains the key and some metadata properties. All of
+these are located in their own assembly with nothing else in there. Another
+project contains the DbContext, which defines the DbSets, and migrations to
+build the database.</p>
+
+<div class="highlight"><pre><code class="language-c#" data-lang="c#"><span class="k">public</span> <span class="k">class</span> <span class="nc">Product</span><span class="p">:</span><span class="n">Entity</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="kt">string</span> <span class="n">Name</span> <span class="p">{</span><span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;}</span>
+<span class="p">}</span>
+
+<span class="k">public</span> <span class="k">class</span> <span class="nc">Entity</span>
+<span class="p">{</span>
+	<span class="c1">/// &lt;summary&gt;</span>
+	<span class="c1">/// Is the pk by CodeFirst convention</span>
+	<span class="c1">/// &lt;/summary&gt;</span>
+	<span class="k">public</span> <span class="kt">int</span> <span class="n">Id</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+
+	<span class="k">public</span> <span class="n">DateTime</span><span class="p">?</span> <span class="n">DateCreated</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+
+	<span class="k">public</span> <span class="kt">string</span> <span class="n">CreatedBy</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+
+	<span class="k">public</span> <span class="kt">string</span> <span class="n">ModifiedBy</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+
+	<span class="k">public</span> <span class="n">DateTime</span><span class="p">?</span> <span class="n">DateModified</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+<span class="p">}</span></code></pre></div>
+
+<p>And the bare DbContext:</p>
+
+<div class="highlight"><pre><code class="language-c#" data-lang="c#"><span class="k">public</span> <span class="k">class</span> <span class="nc">ProjectContext</span> <span class="p">:</span> <span class="n">DbContext</span>
+<span class="p">{</span>
+        <span class="k">public</span> <span class="n">DbSet</span><span class="p">&lt;</span><span class="n">Product</span><span class="p">&gt;</span> <span class="n">Products</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span><span class="k">set</span> <span class="p">}</span>
+<span class="p">}</span></code></pre></div>
+
+<p>So the test in mind, should check if ProjectContext contains a DbSet<product>
+property. In a bigger project we would also have more entities that inherit
+from Entity. So what we basically want is to get all the Entities and check
+for each one if it is defined as a DbSet in the context. We want to do this
+dynamically and this is where .NET Reflection comes into play. It’s going to
+allow us to examine the assemblies, types and properties and make sure we get
+to an end decision if the DbContext is defined correctly. So let us examine
+how that was achieved.</product></p>
+
+<h3 id="getting-the-entity-types">Getting the Entity Types</h3>
+
+<div class="highlight"><pre><code class="language-c#" data-lang="c#"><span class="c1">// ARRANGE</span>
+<span class="kt">var</span> <span class="n">entityType</span> <span class="p">=</span> <span class="k">typeof</span><span class="p">(</span><span class="n">Entity</span><span class="p">);</span>
+
+<span class="c1">// get the assembly containing the entities</span>
+<span class="c1">// based on the base Entity Type</span>
+<span class="kt">var</span> <span class="n">domainAssembly</span> <span class="p">=</span> <span class="n">Assembly</span><span class="p">.</span><span class="n">GetAssembly</span><span class="p">(</span><span class="n">entityType</span><span class="p">);</span>
+
+<span class="c1">// get all the entities defined in the domain</span>
+<span class="c1">// that inherit from Entity (meaning they should be defined as dbSets) but not Entity itself</span>
+<span class="kt">var</span> <span class="n">allEntities</span> <span class="p">=</span> <span class="n">domainAssembly</span>
+    <span class="p">.</span><span class="n">GetTypes</span><span class="p">()</span>
+    <span class="p">.</span><span class="n">Where</span><span class="p">(</span><span class="n">type</span> <span class="p">=&gt;</span> <span class="n">entityType</span><span class="p">.</span><span class="n">IsAssignableFrom</span><span class="p">(</span><span class="n">type</span><span class="p">)</span> <span class="p">&amp;&amp;</span> <span class="n">type</span><span class="p">.</span><span class="n">Name</span> <span class="p">!=</span> <span class="n">entityType</span><span class="p">.</span><span class="n">Name</span><span class="p">).</span><span class="n">ToList</span><span class="p">();</span></code></pre></div>
+
+<p>From the domain assembly we get all the types where the type inherits from the
+Entity type but in the same time we don’t want to get the Entity class.</p>
+
+<h3 id="getting-the-context-and-all-the-generic-type-parameters-for-all-its-dbsets">Getting the Context and all the generic type parameters for all its DbSets</h3>
+
+<div class="highlight"><pre><code class="language-c#" data-lang="c#"><span class="c1">// Now we want to get all the generic type parameters defined for the</span>
+<span class="c1">// DbSets in the </span>
+<span class="kt">var</span> <span class="n">contextType</span> <span class="p">=</span> <span class="k">typeof</span><span class="p">(</span><span class="n">ProjectContext</span><span class="p">);</span>
+
+<span class="kt">var</span> <span class="n">allContextGenericParameterTypes</span> <span class="p">=</span> <span class="n">contextType</span><span class="p">.</span><span class="n">GetProperties</span><span class="p">()</span>
+    <span class="c1">// get db set only properties</span>
+    <span class="p">.</span><span class="n">Where</span><span class="p">(</span><span class="n">t</span> <span class="p">=&gt;</span> <span class="n">t</span><span class="p">.</span><span class="n">PropertyType</span><span class="p">.</span><span class="n">IsGenericType</span> <span class="p">&amp;&amp;</span> <span class="n">t</span><span class="p">.</span><span class="n">PropertyType</span><span class="p">.</span><span class="n">GetGenericTypeDefinition</span><span class="p">()</span> <span class="p">==</span> <span class="k">typeof</span><span class="p">(</span><span class="n">DbSet</span><span class="p">&lt;&gt;))</span>
+    <span class="c1">// get the all the names of the generic type parameters on db sets</span>
+    <span class="p">.</span><span class="n">Select</span><span class="p">(</span><span class="n">prop</span> <span class="p">=&gt;</span> <span class="n">prop</span><span class="p">.</span><span class="n">PropertyType</span><span class="p">.</span><span class="n">GenericTypeArguments</span><span class="p">.</span><span class="n">First</span><span class="p">()).</span><span class="n">ToList</span><span class="p">();</span></code></pre></div>
+
+<p>Basically we go over each property of the context type and get only the
+generic type properties based on DbSet. In the same query we map the
+collection to the first generic type argument, which in the case of DbSets is
+the actual wrapped entity. What remains is to assert that each entity is
+contained in the list of the generic parameter types, meaning it’s included as
+a DbSet.</p>
+
+<h3 id="assertion">Assertion</h3>
+
+<p>The assertion is based on iterating the list of entities and making sure the type name is present in the type names for the generic parameters in the DbSets. This is an approach that allows for writing out which entity is not included in the DbSets</p>
+
+<div class="highlight"><pre><code class="language-c#" data-lang="c#"><span class="k">foreach</span> <span class="p">(</span><span class="kt">var</span> <span class="n">entity</span> <span class="k">in</span> <span class="n">allEntities</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">Assert</span><span class="p">.</span><span class="n">IsTrue</span><span class="p">(</span><span class="n">allContextGenericParameterTypes</span><span class="p">.</span><span class="n">Any</span><span class="p">(</span><span class="n">gp</span> <span class="p">=&gt;</span> <span class="n">gp</span><span class="p">.</span><span class="n">Name</span> <span class="p">==</span> <span class="n">entity</span><span class="p">.</span><span class="n">Name</span><span class="p">),</span> 
+    			  <span class="kt">string</span><span class="p">.</span><span class="n">Format</span><span class="p">(</span><span class="s">&quot;Entity [{0}] not found in DbContext&quot;</span><span class="p">,</span> <span class="n">entity</span><span class="p">.</span><span class="n">Name</span><span class="p">));</span>
+<span class="p">}</span></code></pre></div>
+
+<h3 id="conclusion">Conclusion</h3>
+
+<p>If everything is defined correctly the test and assertions will pass. If an Entity is defined but not included in the DbSet properties in the context the test fails with the following message:</p>
+
+<p><img src="/images/2014-12-18-UnitTestDbContext/resultfailed.png" alt="Unit Testing" /></p>
+
+<p>I mentioned at the start this is just part of a “solution” and mostly meant as
+an exercise in .NET Reflection. Usually when there is something wrong with the
+generated database you would figure that maybe a DbSet is missing, and this
+sort of test would be the last option. What would make this perfect though,
+would be running the test and a bunch of other similar core tests on each
+build of the entire solution or maybe on projects builds, but again that would
+is something I have to look into.</p>
+
+<p>So that would be mostly it for this attempt. I don’t know how useful people
+will find it, but I thought the topic was interesting enough for a first post
+and I hope I’ll get to write many more. It might even lead to a discussion 
+on better, smarter aproaches to setting up projects and testing the data layer this early on. 
+That would actually be great.</p>
+
+<p>And to wrap things up the entire nUnit test method:</p>
+
+<div class="highlight"><pre><code class="language-c#" data-lang="c#"><span class="na">[Test]</span>
+<span class="k">public</span> <span class="k">void</span> <span class="nf">ContextShouldContainAllDomainEntities</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="c1">// ARRANGE</span>
+    <span class="kt">var</span> <span class="n">entityType</span> <span class="p">=</span> <span class="k">typeof</span><span class="p">(</span><span class="n">Entity</span><span class="p">);</span>
+
+    <span class="c1">// get the assembly containing the entities</span>
+    <span class="c1">// based on the base Entity Type</span>
+    <span class="kt">var</span> <span class="n">domainAssembly</span> <span class="p">=</span> <span class="n">Assembly</span><span class="p">.</span><span class="n">GetAssembly</span><span class="p">(</span><span class="n">entityType</span><span class="p">);</span>
+
+    <span class="c1">// get all the entities defined in the domain</span>
+    <span class="c1">// that inherit from Entity (meaning they should be defined as dbSets) but not Entity itself</span>
+    <span class="kt">var</span> <span class="n">allEntities</span> <span class="p">=</span> <span class="n">domainAssembly</span>
+        <span class="p">.</span><span class="n">GetTypes</span><span class="p">()</span>
+        <span class="p">.</span><span class="n">Where</span><span class="p">(</span><span class="n">type</span> <span class="p">=&gt;</span> <span class="n">entityType</span><span class="p">.</span><span class="n">IsAssignableFrom</span><span class="p">(</span><span class="n">type</span><span class="p">)</span> <span class="p">&amp;&amp;</span> <span class="n">type</span><span class="p">.</span><span class="n">Name</span> <span class="p">!=</span> <span class="n">entityType</span><span class="p">.</span><span class="n">Name</span><span class="p">).</span><span class="n">ToList</span><span class="p">();</span>
+
+    <span class="c1">// Now we want to get all the generic type parameters defined for the</span>
+    <span class="c1">// DbSets in the </span>
+    <span class="kt">var</span> <span class="n">contextType</span> <span class="p">=</span> <span class="k">typeof</span><span class="p">(</span><span class="n">WsContext</span><span class="p">);</span>
+
+    <span class="kt">var</span> <span class="n">allContextGenericParameterTypes</span> <span class="p">=</span> <span class="n">contextType</span><span class="p">.</span><span class="n">GetProperties</span><span class="p">()</span>
+        <span class="c1">// get db set only properties</span>
+        <span class="p">.</span><span class="n">Where</span><span class="p">(</span><span class="n">t</span> <span class="p">=&gt;</span> <span class="n">t</span><span class="p">.</span><span class="n">PropertyType</span><span class="p">.</span><span class="n">IsGenericType</span> <span class="p">&amp;&amp;</span> <span class="n">t</span><span class="p">.</span><span class="n">PropertyType</span><span class="p">.</span><span class="n">GetGenericTypeDefinition</span><span class="p">()</span> <span class="p">==</span> <span class="k">typeof</span><span class="p">(</span><span class="n">DbSet</span><span class="p">&lt;&gt;))</span>
+        <span class="c1">// get the all the names of the generic type parameters on db sets</span>
+        <span class="p">.</span><span class="n">Select</span><span class="p">(</span><span class="n">prop</span> <span class="p">=&gt;</span> <span class="n">prop</span><span class="p">.</span><span class="n">PropertyType</span><span class="p">.</span><span class="n">GenericTypeArguments</span><span class="p">.</span><span class="n">First</span><span class="p">()).</span><span class="n">ToList</span><span class="p">();</span>
+
+    <span class="c1">// ASSERT</span>
+
+    <span class="k">foreach</span> <span class="p">(</span><span class="kt">var</span> <span class="n">entity</span> <span class="k">in</span> <span class="n">allEntities</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">Assert</span><span class="p">.</span><span class="n">IsTrue</span><span class="p">(</span><span class="n">allContextGenericParameterTypes</span><span class="p">.</span><span class="n">Any</span><span class="p">(</span><span class="n">gp</span> <span class="p">=&gt;</span> <span class="n">gp</span><span class="p">.</span><span class="n">Name</span> <span class="p">==</span> <span class="n">entity</span><span class="p">.</span><span class="n">Name</span><span class="p">),</span> <span class="kt">string</span><span class="p">.</span><span class="n">Format</span><span class="p">(</span><span class="s">&quot;Entity [{0}] not found in DbContext&quot;</span><span class="p">,</span> <span class="n">entity</span><span class="p">.</span><span class="n">Name</span><span class="p">));</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></div>
+
+  </div>
+  
+  <div class="date">
+    Written on December 18, 2014
+    
+  </div>
+
+  <!-- Output author details if some exist. -->
+
+    <span>
+        <!-- Personal Info. -->
+        Written by <a href="https://github.com/emir01" target="_blank">Emir Osmanoski</a>
+    </span>
+
+
+  
+<div class="comments">
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+    
+	    var disqus_shortname = 'emir01githubio'; 
+
+	    (function() {
+	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
+</article>
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+                    
+          <a href="mailto:emir.osmanoski@gmail.com"><svg width="40px" height="40px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <path d="M0.224580688,30 C0.224580688,13.4314567 13.454941,0 29.7754193,0 C46.0958976,0 59.3262579,13.4314567 59.3262579,30 C59.3262579,46.5685433 46.0958976,60 29.7754193,60 C13.454941,60 0.224580688,46.5685433 0.224580688,30 Z M0.224580688,30" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+    <path d="M35.0384324,31.6384006 L47.2131148,40.5764264 L47.2131148,20 L35.0384324,31.6384006 Z M13.7704918,20 L13.7704918,40.5764264 L25.9449129,31.6371491 L13.7704918,20 Z M30.4918033,35.9844891 L27.5851037,33.2065217 L13.7704918,42 L47.2131148,42 L33.3981762,33.2065217 L30.4918033,35.9844891 Z M46.2098361,20 L14.7737705,20 L30.4918033,32.4549304 L46.2098361,20 Z M46.2098361,20" id="Shape" fill="#333333" sketch:type="MSShapeGroup"></path>
+    <path d="M59.3262579,30 C59.3262579,46.5685433 46.0958976,60 29.7754193,60 C23.7225405,60 18.0947051,58.1525134 13.4093244,54.9827754 L47.2695458,5.81941103 C54.5814438,11.2806503 59.3262579,20.0777973 59.3262579,30 Z M59.3262579,30" id="reflec" fill-opacity="0.08" fill="#000000" sketch:type="MSShapeGroup"></path>
+</svg></a>
+          
+          
+          <a href="http://github.com/emir01"><svg width="40px" height="40px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <path d="M0.336871032,30 C0.336871032,13.4314567 13.5672313,0 29.8877097,0 C46.208188,0 59.4385483,13.4314567 59.4385483,30 C59.4385483,46.5685433 46.208188,60 29.8877097,60 C13.5672313,60 0.336871032,46.5685433 0.336871032,30 Z M0.336871032,30" id="Github" fill="#333333" sketch:type="MSShapeGroup"></path>
+    <path d="M18.2184245,31.9355566 C19.6068506,34.4507902 22.2845295,36.0156764 26.8007287,36.4485173 C26.1561023,36.9365335 25.3817877,37.8630984 25.2749857,38.9342607 C24.4644348,39.4574749 22.8347506,39.62966 21.5674303,39.2310659 C19.7918469,38.6717023 19.1119377,35.1642642 16.4533306,35.6636959 C15.8773626,35.772144 15.9917933,36.1507609 16.489567,36.4722998 C17.3001179,36.9955141 18.0629894,37.6500075 18.6513541,39.04366 C19.1033554,40.113871 20.0531304,42.0259813 23.0569369,42.0259813 C24.2489236,42.0259813 25.0842679,41.8832865 25.0842679,41.8832865 C25.0842679,41.8832865 25.107154,44.6144649 25.107154,45.6761142 C25.107154,46.9004355 23.4507693,47.2457569 23.4507693,47.8346108 C23.4507693,48.067679 23.9990832,48.0895588 24.4396415,48.0895588 C25.3102685,48.0895588 27.1220883,47.3646693 27.1220883,46.0918317 C27.1220883,45.0806012 27.1382993,41.6806599 27.1382993,41.0860982 C27.1382993,39.785673 27.8372803,39.3737607 27.8372803,39.3737607 C27.8372803,39.3737607 27.924057,46.3153869 27.6704022,47.2457569 C27.3728823,48.3397504 26.8360115,48.1846887 26.8360115,48.6727049 C26.8360115,49.3985458 29.0168704,48.8505978 29.7396911,47.2571725 C30.2984945,46.0166791 30.0543756,39.2072834 30.0543756,39.2072834 L30.650369,39.1949165 C30.650369,39.1949165 30.6837446,42.3123222 30.6637192,43.7373675 C30.6427402,45.2128317 30.5426134,47.0792797 31.4208692,47.9592309 C31.9977907,48.5376205 33.868733,49.5526562 33.868733,48.62514 C33.868733,48.0857536 32.8436245,47.6424485 32.8436245,46.1831564 L32.8436245,39.4688905 C33.6618042,39.4688905 33.5387911,41.6768547 33.5387911,41.6768547 L33.5988673,45.7788544 C33.5988673,45.7788544 33.4186389,47.2733446 35.2190156,47.8992991 C35.8541061,48.1209517 37.2139245,48.1808835 37.277815,47.8089257 C37.3417055,47.4360167 35.6405021,46.8814096 35.6252446,45.7236791 C35.6157088,45.0178155 35.6567131,44.6059032 35.6567131,41.5379651 C35.6567131,38.470027 35.2438089,37.336079 33.8048426,36.4323453 C38.2457082,35.9766732 40.9939527,34.880682 42.3337458,31.9450695 C42.4383619,31.9484966 42.8791491,30.5737742 42.8219835,30.5742482 C43.1223642,29.4659853 43.2844744,28.1550957 43.3168964,26.6025764 C43.3092677,22.3930799 41.2895654,20.9042975 40.9014546,20.205093 C41.4736082,17.0182425 40.8060956,15.5675121 40.4961791,15.0699829 C39.3518719,14.6637784 36.5149435,16.1145088 34.9653608,17.1371548 C32.438349,16.3998984 27.0982486,16.4712458 25.0957109,17.3274146 C21.4005522,14.6875608 19.445694,15.0918628 19.445694,15.0918628 C19.445694,15.0918628 18.1821881,17.351197 19.1119377,20.6569598 C17.8961113,22.2028201 16.9902014,23.2968136 16.9902014,26.1963718 C16.9902014,27.8297516 17.1828264,29.2918976 17.6176632,30.5685404 C17.5643577,30.5684093 18.2008493,31.9359777 18.2184245,31.9355566 Z M18.2184245,31.9355566" id="Path" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+    <path d="M59.4385483,30 C59.4385483,46.5685433 46.208188,60 29.8877097,60 C23.8348308,60 18.2069954,58.1525134 13.5216148,54.9827754 L47.3818361,5.81941103 C54.6937341,11.2806503 59.4385483,20.0777973 59.4385483,30 Z M59.4385483,30" id="reflec" fill-opacity="0.08" fill="#000000" sketch:type="MSShapeGroup"></path>
+</svg></a>
+          
+          <a href="http://linkedin.com/in/emirosmanoski"><svg width="40px" height="40px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <path d="M0.449161376,30 C0.449161376,13.4314567 13.6795217,0 30,0 C46.3204783,0 59.5508386,13.4314567 59.5508386,30 C59.5508386,46.5685433 46.3204783,60 30,60 C13.6795217,60 0.449161376,46.5685433 0.449161376,30 Z M0.449161376,30" fill="#007BB6" sketch:type="MSShapeGroup"></path>
+    <path d="M22.4680392,23.7098144 L15.7808366,23.7098144 L15.7808366,44.1369537 L22.4680392,44.1369537 L22.4680392,23.7098144 Z M22.4680392,23.7098144" id="Path" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+    <path d="M22.9084753,17.3908761 C22.8650727,15.3880081 21.4562917,13.862504 19.1686418,13.862504 C16.8809918,13.862504 15.3854057,15.3880081 15.3854057,17.3908761 C15.3854057,19.3522579 16.836788,20.9216886 19.0818366,20.9216886 L19.1245714,20.9216886 C21.4562917,20.9216886 22.9084753,19.3522579 22.9084753,17.3908761 Z M22.9084753,17.3908761" id="Path" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+    <path d="M46.5846502,32.4246563 C46.5846502,26.1503226 43.2856534,23.2301456 38.8851658,23.2301456 C35.3347011,23.2301456 33.7450983,25.2128128 32.8575489,26.6036896 L32.8575489,23.7103567 L26.1695449,23.7103567 C26.2576856,25.6271338 26.1695449,44.137496 26.1695449,44.137496 L32.8575489,44.137496 L32.8575489,32.7292961 C32.8575489,32.1187963 32.9009514,31.5097877 33.0777669,31.0726898 C33.5610713,29.8530458 34.6614937,28.5902885 36.5089747,28.5902885 C38.9297703,28.5902885 39.8974476,30.4634101 39.8974476,33.2084226 L39.8974476,44.1369537 L46.5843832,44.1369537 L46.5846502,32.4246563 Z M46.5846502,32.4246563" id="Path" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+    <path d="M59.5508386,30 C59.5508386,46.5685433 46.3204783,60 30,60 C23.9471212,60 18.3192858,58.1525134 13.6339051,54.9827754 L47.4941264,5.81941103 C54.8060245,11.2806503 59.5508386,20.0777973 59.5508386,30 Z M59.5508386,30" id="reflec" fill-opacity="0.08" fill="#000000" sketch:type="MSShapeGroup"></path>
+</svg></a>
+          
+          
+          
+          
+
+        </footer>
+      </div>
+    </div>
+
+    
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		
+		ga('create', 'UA-57810187-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<!-- End Google Analytics -->
+
+
+
+    <script type="text/javascript" src="/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript"  src="/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(function(){
+          
+          $("article.post table").addClass("table").addClass("table-striped");
+
+          $(".entry p img").parent("p").css("text-align","center");
+
+        });
+    </script>
+</body>
+</html>
