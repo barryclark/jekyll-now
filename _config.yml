@@ -24,3 +24,11 @@ disqus_shortname: 'jepusto'
 
 # Custom vars
 version:             1.0.0
+
+defaults:
+  -
+    scope:
+      path: ""      # empty string for all files
+      type: pages   # limit to pages
+    values:
+      is_page: true # automatically set is_page=true for all pages
