@@ -30,9 +30,7 @@ Here we generate all the tags.
 {% endif %}
 {% endfor %}
 
-{% for tag in tags %}
-<a href="#{{ tag | slugify }}" class="codinfox-tag-mark"> {{ tag }} </a> &nbsp;&nbsp;
-{% endfor %}
+{% for tag in tags %}<a href="#{{ tag | slugify }}" class="codinfox-tag-mark"> {{ tag }}</a> &nbsp;&nbsp;{% endfor %}
 
 {% for tag in tags %}
 ### {{ tag }}
