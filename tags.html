@@ -45,7 +45,7 @@ Here we generate all the tags.
 {% for post in site.posts %}
   {% if post.tags contains tag %}
   <li>
-    <p>{{ post.date }} >> <a href="{{ post.url }}">{{ post.title }}</a></p>
+    <p>{{ post.date | date_to_string }} >> <a href="{{ post.url }}">{{ post.title }}</a></p>
   </li>
   {% endif %}
   {% endfor %}

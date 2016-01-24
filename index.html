@@ -12,7 +12,12 @@ title: Home
       </a>
     </h1>
 
-    <span class="post-date">{{ post.date | date_to_string }}</span>
+    <span>
+      <span class="post-date">{{ page.date | date_to_string }}</span> |
+      {% for tag in page.tags %}
+        <span class="codinfox-tag-mark">{{ tag }}</span>
+      {% endfor %}
+    </span>
 
     {{ post.excerpt }}
   </div>
