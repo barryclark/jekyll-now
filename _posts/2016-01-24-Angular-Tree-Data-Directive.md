@@ -48,6 +48,7 @@ We can go over all the parameters in the directive and describe what each of tho
 * **handler** - The function that will be called on the controller/view model when an internal selected object event happens.
 * **mark** - Indicate whether the objects in the hierarchy will be highlighted as selected.
 * **selected** - The object on the controller/view model that will set when internally a selection is made.
+
 # Directive HTML
 
 Lets now take a look at the HTML for the directive. It is mainly based on an
