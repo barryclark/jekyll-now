@@ -17,7 +17,7 @@ via attribute configuration.
 
 We can see an example of the widget in the next screenshot:
 
-![Category Hierarchy Data]({{ site.baseurl }}/images/2016-01-24-Tree-Data-Directive/01_CategoryTree.png)
+![Category Hierarchy Data]({{ site.baseurl }}/images/2016-01-24-Tree-Data-Directive/01_CategoryTree.PNG)
 
 # Directive Usage
 
@@ -280,11 +280,11 @@ given item.
 
 The difference can be seen in the next two following screenshots:
 
-![Open Category]({{ site.baseurl }}/images/2016-01-24-Tree-Data-Directive/02_MtBikes_Open.png)
+![Open Category]({{ site.baseurl }}/images/2016-01-24-Tree-Data-Directive/02_MtBikes_Open.PNG)
 
 and 
 
-![Closed Category]({{ site.baseurl }}/images/2016-01-24-Tree-Data-Directive/03_MtBikes_Closed.png)
+![Closed Category]({{ site.baseurl }}/images/2016-01-24-Tree-Data-Directive/03_MtBikes_Closed.PNG)
  
 The *setChildrenVisibleState* is used on the div marked with the class
 *item_collapse* to toggle between the two children visible states for the
