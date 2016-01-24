@@ -38,7 +38,7 @@ published: true
 * **shariebeth** Community Global Moderator
 * **Stefano Capitani (Ste74)** Maintainer Pantheon and Budgie Editions, Wiki Contributor, Founder Italian Community 
 * **Strit** Torrent Maintainer
-* **Tomasz** Przybył (FadeMind) Community Support
+* **Tomasz Przybył (FadeMind)** Community Support
 
 ###Documentation
 * **Jonathon Fernyhough** Editor of the User Guide 0.8.9-15.12, Community Management
