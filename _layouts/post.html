@@ -9,7 +9,7 @@ layout: default
   <h1 class="post-title">{{ page.title }}</h1>
   <span>
     <span class="post-date">{{ page.date | date_to_string }}</span> |
-    {% for tag in page.tags %}
+    {% for tag in post.tags %}
       <span class="codinfox-tag-mark">{{ tag }}</span>
     {% endfor %}
   </span>
