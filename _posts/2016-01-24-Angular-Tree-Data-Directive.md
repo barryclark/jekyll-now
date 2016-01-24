@@ -3,7 +3,7 @@ layout: post
 categories: [angular, front, end, directives, hierarchy]
 title: Angular Hierarchy Data Directive
 author: emir_osmanoski
-headerimage: /images//2016-01-24-Tree-Data-Directive//01_CategoryTree.png
+headerimage: /images//2016-01-24-Tree-Data-Directive//01_CategoryTree.PNG
 comments: true
 ---
 
