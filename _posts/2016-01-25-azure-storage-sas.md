@@ -17,7 +17,7 @@ In order to create new content, our API needs a means to upload content into the
 
 * Large http transfers need to be supported by all layers of the web application stack (chunked transfer), which potentially introduces additional complexity
 * Transferring large files is a rather difficult problem we do not want to solve on our own (again)
-* Most SaaS API gateways (such as [Azure API Management](https://azure.microsoft.com/en-us/services/api-management/)) have traffic limits on their API gateways
+* Most SaaS API gateways (such as [Azure API Management](https://azure.microsoft.com/en-us/services/api-management/)) have traffic limits and/or traffic costs on their API gateways
 
 ### First approach: Setting up an sftp server
 
@@ -43,7 +43,7 @@ Remains the question of securing the access to the storage, which was one of the
 
 Accessing an Azure Storage usually involves passing a storage identifier and an access key (the application secret), which in turn grants full access to the storage. Having an API client have access to these secrets is obviously a security risk, and as such not advisable. Similarly to the ftp server approach, it would in principle be possible to create multiple users/roles which have limited access to the storage, but this is also an additional administrational effort, and/or an extra implementation effort to make it automatic.
 
-### Azure Storage Shared Access Signatures
+#### Azure Storage Shared Access Signatures
 
 Luckily, Azure already provides a means of anonymous and restricted access to storages using a technique which is know e.g. from JWT tokens: Signed access tokens with a limited time span, a.k.a. "Shared Access Signatures" ("SAS"). These SAS tokens actually match our requirements:
 
@@ -51,7 +51,7 @@ Luckily, Azure already provides a means of anonymous and restricted access to st
 * The SAS only has a limited validity which you can define freely, e.g. from "now" to "now plus 30 minutes"; after the validity of the token has expired, the storage can no longer be accessed
 * Using an Azure Storage SDK, creating SAS URLs is extremely simple. Tokens are created without Storage API interaction, simply by *signing* the URL with the application secret key. This in turn can be validated by Azure Storage (which obviously also has the secret key).
 
-We leverage the SAS feature to explicitly grant **write** access to one single blob (file) on the storage for which we define the file name. The access is granted for 60 minutes (one hour), which is enough to transfer large scale files. Our Contant API exposes an end point which returns an URL containing the SAS token which can immediately be used to do a `PUT` to the storage.
+We leverage the SAS feature to explicitly grant **write** access to one single blob (file) on the storage for which we define the file name. The access is granted for 60 minutes (one hour), which is enough to transfer large scale files. Our Content API exposes an end point which returns an URL containing the SAS token which can immediately be used to do a `PUT` to the storage.
 
 <center>
 ![Azure Storage SAS - Diagram]({{ site.url }}/images/azure-storage-sas-1.png)
@@ -59,7 +59,7 @@ We leverage the SAS feature to explicitly grant **write** access to one single b
 
 The upload to the storage can either be done using any http library (using a `PUT`), or using an Azure Storage SDK ([available for multiple languages](https://github.com/Azure?utf8=%E2%9C%93&query=storage), it's on github), which in turn enables features like parallel uploading or block uploading (for more robust uploading).
 
-### How does this look in code?
+#### How does this look in code?
 
 The best part of all this is that it's not only simple in theory to use the Storage API, it's actually simple in practice, too. When I tried to do this, I chose [node.js](https://nodejs.org) to implement a service which issues SAS tokens. Azure Storage has an `npm` package for that: `azure-storage`, which can be installed just like any other `npm` package using `npm install azure-storage [--save]`.
 
@@ -110,7 +110,7 @@ So, what does this do?
 * Generates a shared access signature (this is serverless, in the SDK) and assembles this into a URL
 * Returns a JSON structure containing information on how to access the storage (hypermedia-like)
 
-For more information on how to actually try this out, see below.
+For more information on how to actually try this out, see the link to a github sample below.
 
 ### Can I haz the codez?
 
