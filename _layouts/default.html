@@ -1,76 +1,110 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
-  <link rel="shortcut icon" type="image/png" href="https://avatars3.githubusercontent.com/u/6856318">
+  <head>
+    {% include meta.html %}
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
-  {% include meta.html %}
+    <link rel="shortcut icon" type="image/png" href="https://avatars3.githubusercontent.com/u/6856318">
+    <!--[if lt IE 9]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
 
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-      <![endif]-->
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+    <link rel="stylesheet" href="//cdn.materialdesignicons.com/1.4.57/css/materialdesignicons.min.css">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
-      <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
 
-      <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-      <script type="text/javascript"src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script>
-      <script type="text/x-mathjax-config">
-        MathJax.Hub.Config({
-          tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
-          TeX: {
-            Macros: {
-              vaccent: "{\\v}",
-              v: ["{\\mathbf\{#1\}}", 1],
-              abs: ["{\\left| #1 \\right|}",1],
-              d: ["{\\frac\{d #1\}\{d #2\}}",2],
-              dd: ["{\\frac\{d^2 #1\}\{d #2^2\}}",2],
-              pd: ["\{\\frac\{\\partial #1\}\{\\partial #2\}\}",2],
-              pdd: ["\{\\frac\{\\partial^2 #1\}\{\\partial #2^2\}\}",2] ,
-              degrees: ["\{^\\circ\}"],
-              div: ["\{\\text\{div \}\}"],
-              grad: ["\{\\text\{grad \}\}"]
-            }
+    <script type="text/javascript"src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script>
+    <script type="text/javascript">
+      console.log('hi');
+    </script>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+        TeX: {
+          Macros: {
+            vaccent: "{\\v}",
+            v: ["{\\mathbf\{#1\}}", 1],
+            abs: ["{\\left| #1 \\right|}",1],
+            d: ["{\\frac\{d #1\}\{d #2\}}",2],
+            dd: ["{\\frac\{d^2 #1\}\{d #2^2\}}",2],
+            pd: ["\{\\frac\{\\partial #1\}\{\\partial #2\}\}",2],
+            pdd: ["\{\\frac\{\\partial^2 #1\}\{\\partial #2^2\}\}",2] ,
+            degrees: ["\{^\\circ\}"],
+            div: ["\{\\text\{div \}\}"],
+            grad: ["\{\\text\{grad \}\}"]
           }
-        });
+        }
+      });
+    </script>
 
-      </script>
+<!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
 
-      <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
-    </head>
+  <body>
 
-    <body>
-      <div class="wrapper-masthead">
-        <div class="container">
-          <header class="masthead clearfix">
-            <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+    <div class="container">
 
-            <div class="site-info">
-              <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-              <p class="site-description">{{ site.description }}</p>
-            </div>
-
-            <nav>
-              <a href="{{ site.baseurl }}/">Home</a>
-              <a href="{{ site.baseurl }}/blog">Blog</a>
-              <a href="mailto:james.adam.buckland@gmail.com">Email</a>
-              <a href="/resume.pdf">Resume</a>
-            </nav>
-          </header>
+      <br/>
+      <div class="row">
+        <div class="col col-sm-12 col-md-6 col-lg-6">
+          <h2>James Adam Buckland</h1>
+        </div>
+        <div class="col col-sm-12 col-md-6 col-lg-6">
+          <ul class="nav nav-pills pull-md-right">
+            <li class="nav-item">
+            <a class="nav-link" href="{{ site.baseurl }}/">Home</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="{{ site.baseurl }}/blog">Blog</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="mailto:james.adam.buckland@gmail.com">Email</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="{{ site.baseurl }}/resume.pdf">Resume</a>
+            </li>
+          </ul>
         </div>
       </div>
 
-      <div id="main" role="main" class="container">
-        {{ content }}
-      </div>
+      <hr/>
+      <div class="row">
+        <div class="col col-sm-12">
+          {% if page.url == "/" %}
+          <a href="{{ site.baseurl }}/norrbotten-doc">
+            <img src="{{ site.avatar }}" class="img-circle pull-xs-center pull-sm-right " alt="..." id='Avatar' > 
+          </a>
+          {% endif %}
 
-      <div class="wrapper-footer">
-        <div class="container">
+          <div id="main" role="main" class="">
+            {{ content }}
+          </div>
+
           <footer class="footer">
-            {% include svg-icons.html %}
+          <hr/>
+          <div class="btn-toolbar" role="toolbar" aria-label="">
+            <div class="btn-group" role="group" aria-label="">
+              <a class="btn btn-success-outline btn-sm" href="mailto:james.adam.buckland@gmail.com" role="button">james.adam.buckland@gmail.com</a>
+            </div>
+            <div class="btn-group" role="group" aria-label="">
+              <a class="btn btn-secondary btn-sm" href="https://github.com/ambuc" role="button">github</a>
+              <a class="btn btn-secondary btn-sm" href="https://www.linkedin.com/in/jamesadambuckland" role="button">linkedin</a>
+              <a class="btn btn-secondary btn-sm" href="{{ site.baseurl }}/feed.xml" role="button">rss</a>
+            </div>
+          </div>
+          <br/>
           </footer>
+
         </div>
       </div>
+    </div>
 
-      {% include analytics.html %}
-    </body>
-    </html>
+    <!-- <a class="btn btn-success-outline" href="mailto:bucklnd2@illinois.edu" role="button">bucklnd2@illinois.edu</a> -->
+    <!-- {% include svg-icons.html %} --!>
+    <!-- <p class="site-description">{{ site.description }}</p> -->
+
+    {% include analytics.html %}
+  </body>
+</html>

@@ -3,38 +3,53 @@ layout: default
 title: Blog
 ---
 
-<table>
-	{% for post in site.posts %}
-			<tr class="post">
-				<td nowrap style='font-size: medium; text-align: right;'> {{ post.date | date: "%b %y" }} </td>
-				<td style='text-align: right; color:#aaa; font-size: medium;'> 
-					post
-				</td>
-				<td> 
-					<a class='post-link' href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>  <br/>
-				</td>
-			</tr>
-		{% if post.project %} 
-			<tr class='post'>
-				<td>&nbsp;</td>
-				<td style='text-align: right; color:#aaa; font-size: medium;'>
-					demo
-				</td>
-				<td>
-					<a class='project-link' href="{{ post.projurl }}">{{post.project}}</a>
-				</td>
-			</tr>
-		{% endif %}
-		{% if post.paper %} 
-			<tr class='post'>
-				<td>&nbsp;</td>
-				<td style='text-align: right; color:#aaa; font-size: medium;'> 
-					paper
-				</td>
-				<td>
-					<a class='paper-link' href="{{ post.paperurl }}">{{post.paper}}</a>
-				</td>
-			</tr>
-		{% endif %}
-	{% endfor %}
+<table id='postTable'>
+  {% for post in site.posts %}
+  <tr>
+    <th>
+      <div class="btn-group" role="group" aria-label="Second group">
+        <a class="btn btn-link" href="#">
+          {{ post.date | date: "%b %y" }}
+        </a>
+      </div>
+    </th>
+    <td>
+      <div class="btn-group btn-group-lg" role="group" aria-label="Second group">
+        <a class="btn btn-secondary" href="{{ site.baseurl }}{{ post.url }}">
+          {{post.title}}
+        </a>
+      </div>
+      <br/>
+      <div class="btn-group" role="group" aria-label="Second group">
+        {% if post.project_title %}
+        <a class="btn btn-primary" href="{{post.project_url}}">{{ post.project_title }}</a>
+        {% endif %}
+
+        {% if post.paper_title %}
+        <a class="btn btn-primary-outline" href="{{post.paper_url}}">
+          <i class="mdi mdi-file-pdf"></i>
+          Paper
+        </a>
+        {% endif %}
+
+        {% if post.link_title %}
+        <a class="btn btn-primary-outline" href="{{post.link_url}}">
+          <i class="mdi mdi-link-variant"></i>
+          {{ post.link_title }}
+        </a>
+        {% endif %}
+
+        {% if post.github %}
+        <a class="btn btn-primary-outline" href="{{post.github}}">
+          <i class="mdi mdi-github-circle"></i>
+          Source
+        </a>
+        {% endif %}
+      </div>
+      <br/>
+      <br/>
+    </td>
+  </tr>
+
+  {% endfor %}
 </table>

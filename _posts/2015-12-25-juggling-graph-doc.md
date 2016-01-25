@@ -1,9 +1,12 @@
 ---
-title: Generating Fractals with Lindenmayer Systems
 title: Building a Siteswap Visualizer in d3.js
+description: This is a visualization engine for Siteswaps, a notation system used in juggling to represent patterns in space. 
 layout: post
-project: Siteswap Visualizer
-projurl: http://jbuckland.com/juggling-graph
+
+project_title: /juggling-graph
+project_url: http://jbuckland.com/juggling-graph
+
+github: http://github.com/ambuc/juggling-graph
 ---
 
 [<img src="https://github.com/ambuc/juggling-graph/raw/gh-pages/example.png">](/juggling-graph)

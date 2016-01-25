@@ -1,8 +1,12 @@
 ---
 title: Building a Zoomable JSON Visualizer
+description: Seesaw is a web-based tool for inspecting complex JSON structures built with d3.js.
 layout: post
-project: Seesaw
-projurl: http://jsrmath.github.io/seesaw/
+
+project_title: Seesaw
+project_url: http://jsrmath.github.io/seesaw/
+
+github: http://github.com/jsrmath/seesaw
 ---
 
 <!-- [<img src="/images/lindenmayer_thumbnail.png">](/lindenmayer) -->

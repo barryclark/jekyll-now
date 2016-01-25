@@ -3,16 +3,24 @@ layout: default
 ---
 
 <article class="post">
-	<h1>{{ page.title }}</h1>
-	<div class="date">
-	Published {{ page.date | date: "%e %B  %Y" }}
-	</div>
-  
-	<div class="entry">
+  <h1 class="">
+    {{ page.title }}
+    <small class="text-muted" style='display: inline-block;'>
+      {{ page.date | date: "%e %b '%y" }}
+    </small>
+  </h1>
+
+  {% if page.image %}
+    <a href="{{ page.imagelink }}">
+      <img src="{{ page.image }}" class="img-fluid" alt="...">
+    </a>
+    <br/>
+    <br/>
+  {% endif %}
+
+	<div class="postContent">
 		{{ content }}
 	</div>
-
-  
 
 	{% include disqus.html %}
 </article>
