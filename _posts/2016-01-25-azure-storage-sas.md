@@ -116,6 +116,6 @@ For more information on how to actually try this out, see the link to a github s
 
 My sample project can be found on github:
 
-https://github.com/DonMartin76/azure-storage-sas
+[https://github.com/DonMartin76/azure-storage-sas](https://github.com/DonMartin76/azure-storage-sas)
 
 Have fun!
