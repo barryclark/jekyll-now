@@ -18,7 +18,7 @@ avatar: https://40.media.tumblr.com/e04acc88f0ce971a351eb6af99312102/tumblr_o1hb
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email:
+  email: jlciam@utexas.edu
   facebook:
   flickr:
   github: jlciam
@@ -29,7 +29,7 @@ footer-links:
   twitter: jlciam
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
-  googleplus: # anything in your profile username that comes after plus.google.com/
+  googleplus: +JenaCameron # anything in your profile username that comes after plus.google.com/
 
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
