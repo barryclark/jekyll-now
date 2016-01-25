@@ -6,7 +6,7 @@
 name: CS373 Spring 2016 Jena Cameron
 
 # Short bio or description (displayed in the header)
-description: Follow me on the road to success 
+description: Follow me on the road to success :key:
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://40.media.tumblr.com/e04acc88f0ce971a351eb6af99312102/tumblr_o1hbwaxzBm1r3er6io1_1280.jpg
@@ -68,6 +68,7 @@ sass:
 gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
+  - jemoji # Use emojis 
 
 # Exclude these files from your production _site
 exclude:
