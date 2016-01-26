@@ -6,11 +6,11 @@ tags: [econometrics, R]
 permalink: rdd-interactions
 ---
 
-The [`rdd` package](https://cran.r-project.org/web/packages/rdd/) in R provides a set of methods for analysis of regression discontinuity designs (RDDs), including methods to estimate marginal average treatment effects by local linear regression. I was working with the package recently and was obtaining some rather counter-intuitive treatment effect estimates in a sharp RDD model. After digging around a bit, I found that my perplexing results were the result of a perhaps subtle issue of model specification. Namely, in models with additional covariates (beyond just the running variable, treatment indicator, and interaction), the main estimation function in `rdd` uses a specification in which covariates are always interacted with the treatment indicator. In this post, I'll demonstrate the issue and comment on potential work-arounds. 
+The [`rdd` package](https://cran.r-project.org/web/packages/rdd/) in R provides a set of methods for analysis of regression discontinuity designs (RDDs), including methods to estimate marginal average treatment effects by local linear regression. I was working with the package recently and obtained some rather counter-intuitive treatment effect estimates in a sharp RDD model. After digging around a bit, I found that my perplexing results were the result of a subtle issue of model specification. Namely, in models with additional covariates (beyond just the running variable, treatment indicator, and interaction), the main estimation function in `rdd` uses a specification in which covariates are always interacted with the treatment indicator. In this post, I'll demonstrate the issue and comment on potential work-arounds. 
 
 ### A simulated example
 
-To make things more concrete, here's a hypothetical RDD. I'll use $$R$$ to denote the running variable, with the threshold set at zero; $$T$$ for the treatment indicator; and $$Y$$ for the outcome. $$X_1$$ is a continuous covariate that is correlated with $$R$$. $$X_2$$ is a categorical covariate with four levels that is independent of $$X_1$$ and $$R$$. In order to demonstrate the issue with covariate-by-treatment interactions, I use a model in which the effect of the treatment varies with $$R$$, $$X_1$$, and $$X_2$$: 
+To make things more concrete, here's a hypothetical RDD. I'll use $$R$$ to denote the running variable, with the threshold set at zero; $$T$$ for the treatment indicator; and $$Y$$ for the outcome. $$X_1$$ is a continuous covariate that is correlated with $$R$$. $$X_2$$ is a categorical covariate with four levels that is independent of $$X_1$$ and $$R$$. In order to illustrate the issue with covariate-by-treatment interactions, I use a model in which the effect of the treatment varies with $$R$$, $$X_1$$, and $$X_2$$: 
 
 
 
@@ -33,11 +33,11 @@ RD_data <- simulate_RDD(n = 2000)
 
 ### Simple RDD analysis
 
-The main estimand in a sharp RDD is the marginal average treatment effect (MATE)---that is, the average effect of treatment assignment for units right at/near the threshold of eligibility. Even though I simulated a treatment response surface that depends on the covariates $$X_1,X_2$$, it is not necessary to control for them in order to identify the MATE. Rather, it is sufficient to regress the outcome on the running variable, treatment indicator, and their interaction:
+The main estimand in a sharp RDD is the marginal average treatment effect (MATE)---that is, the average effect of treatment assignment for units right at/near the threshold of eligibility. Even though I simulated a treatment response surface that depends on the covariates $$X_1,X_2$$, it is not necessary to control for them in order to identify the MATE. Rather, it is sufficient to use a local linear regression of the outcome on the running variable, treatment indicator, and their interaction:
 
 $$Y_i = \beta_0 + \beta_1 R_i + \beta_2 T_i + \beta_3 R_i T_i + \epsilon_i$$
 
-In practice, this regression is usually estimated locally, within a certain bandwidth of the threshold, and using weights defined on the basis of some kernel. The default in the `rdd` package is to use a triangular edge kernel, with bandwidth chosen using a formula proposed by Imbens and Kalyanaraman. The following code uses `rdd` to estimate the MATE without controlling for covariates:
+In practice, this regression is estimated using the observations within a certain bandwidth of the threshold, and using weights defined on the basis of some kernel. The default in the `rdd` package is to use a triangular edge kernel, with bandwidth chosen using a formula proposed by Imbens and Kalyanaraman. The following code uses `rdd` to estimate the MATE without controlling for covariates:
 
 
 {% highlight r %}
@@ -110,24 +110,7 @@ ldply(covariates, RD_est, mod = "Y ~ R", .id = "Specification")
 ## 4       X1 + X2 -1.2529313 0.7315106 0.086749345
 {% endhighlight %}
 
-Despite using identical bandwidths, the estimates are drastically different from each other, with standard errors that are much larger than for the simple estimate without covariates. Confusingly, if I instead use two-stage least squares estimation with $$T$$ instrumenting for itself, I get entirely different estimates when covariates are included:
-
-
-{% highlight r %}
-ldply(covariates, RD_est, mod = "Y ~ R + T", .id = "Specification")
-{% endhighlight %}
-
-
-
-{% highlight text %}
-##   Specification       est        se           p
-## 1 No covariates 0.3034839 0.1132266 0.007355079
-## 2       X1 only 0.2983827 0.1126502 0.008078904
-## 3       X2 only 0.2978799 0.1085218 0.006053178
-## 4       X1 + X2 0.2922839 0.1076887 0.006644469
-{% endhighlight %}
-
-Using 2SLS, the MATE estimate is entirely insensitive to the inclusion of one or both covariates. 
+Despite using identical bandwidths, the estimates are drastically different from each other, with standard errors that are much larger than for the simple estimate without covariates. 
 
 ### What's going on?
 
@@ -156,7 +139,7 @@ $$Y_i = \beta_0 + \beta_1 R_i + \beta_2 T_i + \beta_3 R_i T_i + \beta_4 X_i + \b
 
 while still taking $$\beta_2$$ to represent the MATE. This is problematic because, as soon as the $$X_i T_i$$ term is introduced into the model, $$\beta_2$$ represents the difference between treated and untreated units at the threshold (where $$R_i = 0$$) and where $$X_i = 0$$. Thus, including the $$X_1$$ interaction in the model means that $$\beta_2$$ is a difference extrapolated _way_ outside the support of the data, as in the following scatterplot of the outcome versus the covariate $$X_1$$:
 
-![plot of chunk unnamed-chunk-7]({{site.url}}/figure/2016-01-25-rdd-interactions/unnamed-chunk-7-1.png) 
+![plot of chunk unnamed-chunk-6]({{site.url}}/figure/2016-01-25-rdd-interactions/unnamed-chunk-6-1.png) 
 
 `RDestimate` returns as the MATE estimate the difference between the regression lines when $$X_1 = 0$$, which in this example is -0.69. Similarly, including the $$X_2$$ interaction in the model means that $$\beta_2$$ will represent the marginal average treatment effect for only one of the categories of $$X_2$$, rather than as some sort of average across all four categories. 
 
@@ -192,7 +175,6 @@ If you've been using the `rdd` package to analyze your data, I can think of a co
     ## ---
     ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
     {% endhighlight %}
-
     By default, `RDestimate` uses the HC1 variant of heteroskedasticity-robust standard errors. To exactly replicate its behavior, I used `coeftest` from the `lmtest` package, combined with `vcovHC` from the `sandwich` package. Note that it is also necessary to estimate the model based on the subset of observations with positive weight (otherwise the sandwich standard errors will misbehave).
 
 2. An alternative to the first approach is to "trick" `RDestimate` into using the desired model specification by using 2SLS estimation with $$T$$ instrumenting itself. Because the function does not use covariate-by-treatment interactions for "fuzzy" RDDs, you get the correct model specification:
@@ -229,7 +211,6 @@ If you've been using the `rdd` package to analyze your data, I can think of a co
     ## Half-BW    13.84  7          603        1.110e-16
     ## Double-BW  68.36  7         1824        7.919e-88
     {% endhighlight %}
-
     The results based on the first bandwidth agree with the results from `lm`.
 
 3. Now, suppose that you DO want to retain the covariate-by-treatment interactions in the model, while also estimating the MATE. To do this, you can use what I call "the centering trick," which entails centering each covariate at the sample average (in this case, the locally-weighted sample average). For a generic covariate $$X$$, let 
@@ -242,16 +223,15 @@ If you've been using the `rdd` package to analyze your data, I can think of a co
     
     The coefficient on $$T$$ now corresponds to the MATE. Here's R code that implements this approach:
     
-    
     {% highlight r %}
     covariate_mat <- model.matrix(~ X1 + X2, data = RD_data)[,-1]
     covariate_cent <- apply(covariate_mat, 2, function(x) x - weighted.mean(x, w = RD_data$wt))
     RD_data <- data.frame(subset(RD_data, select = c(R, Y, T)), covariate_cent)
     
     covariates_cent <- list("No covariates" = "",
-                    "X1 only" = "| X1",
-                    "X2 only" = "| X2B + X2C + X2D",
-                    "X1 + X2" = "| X1 + X2B + X2C + X2D")
+                "X1 only" = "| X1",
+                "X2 only" = "| X2B + X2C + X2D",
+                "X1 + X2" = "| X1 + X2B + X2C + X2D")
     
     ldply(covariates_cent, RD_est, mod = "Y ~ R", .id = "Specification")
     {% endhighlight %}
@@ -265,7 +245,6 @@ If you've been using the `rdd` package to analyze your data, I can think of a co
     ## 3       X2 only 0.3107688 0.1071302 0.003721488
     ## 4       X1 + X2 0.2981428 0.1065888 0.005155864
     {% endhighlight %}
-
     The estimates are now insensitive to the inclusion of the (properly centered) covariates, just as in the no-interactions model. In this example, the standard errors from the model that includes covariate-by-treatment interactions are just ever so slightly smaller than those from the model without interactions. 
     
 Why does this third approach work? I'll explain more in a later post...
