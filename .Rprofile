@@ -38,6 +38,8 @@ r2jekyll <- function(filename, dpi = 192) {
   unlink("{{site.url}}", recursive=T)
 }
 
+
+# r2jekyll("rdd-interactions")
 # r2jekyll("clubSandwich-for-CRVE-FE")
 # r2jekyll("SPED-Pro-Sem-again")
 # r2jekyll("Correlations-between-SMDs")
