@@ -3,7 +3,7 @@
 #
 
 # Name of your site (displayed in the header)
-name: 생각하기 특강
+name: 바나나스토어
 
 # Short bio or description (displayed in the header)
 description: Web Developer from Somewhere
@@ -41,7 +41,7 @@ google_analytics:
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url: http://gigwan.github.io
+url: http://bananastore.github.io
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
