@@ -2,7 +2,7 @@
 <html>
   <head>
     {% include meta.html %}
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+    <title>{% if page.title %}{{ page.title }} « {% endif %}jbuckland.com</title>
 
     <link rel="shortcut icon" type="image/png" href="https://avatars3.githubusercontent.com/u/6856318">
     <!--[if lt IE 9]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
@@ -48,11 +48,11 @@
 
       <br/>
       <div class="row">
-        <div class="col col-sm-12 col-md-6 col-lg-6">
+        <div class="col col-sm-12 col-md-6 col-lg-6 text-md-left text-sm-center text-xs-center">
           <h2>James Adam Buckland</h1>
         </div>
-        <div class="col col-sm-12 col-md-6 col-lg-6">
-          <ul class="nav nav-pills pull-md-right">
+        <div class="col col-sm-12 col-md-6 col-lg-6 text-md-right text-xs-center">
+          <ul class="nav nav-inline">
             <li class="nav-item">
             <a class="nav-link" href="{{ site.baseurl }}/">Home</a>
             </li>
@@ -88,10 +88,19 @@
             <div class="btn-group" role="group" aria-label="">
               <a class="btn btn-success-outline btn-sm" href="mailto:james.adam.buckland@gmail.com" role="button">james.adam.buckland@gmail.com</a>
             </div>
-            <div class="btn-group" role="group" aria-label="">
-              <a class="btn btn-secondary btn-sm" href="https://github.com/ambuc" role="button">github</a>
-              <a class="btn btn-secondary btn-sm" href="https://www.linkedin.com/in/jamesadambuckland" role="button">linkedin</a>
-              <a class="btn btn-secondary btn-sm" href="{{ site.baseurl }}/feed.xml" role="button">rss</a>
+            <div class="btn-group btn-group-sm" role="group" aria-label="">
+              <a class="btn btn-secondary" href="https://github.com/ambuc" role="button">
+                <i class="mdi mdi-github-box"></i>
+              </a>
+              <a class="btn btn-secondary" href="https://www.linkedin.com/in/jamesadambuckland" role="button">
+                <i class="mdi mdi-linkedin-box"></i>
+              </a>
+              <a class="btn btn-secondary" href="https://instagram.com/jbuckland" role="button">
+                <i class="mdi mdi-instagram"></i>
+              </a>
+              <a class="btn btn-secondary" href="{{ site.baseurl }}/feed.xml" role="button">
+                <i class="mdi mdi-rss-box"></i>
+              </a>
             </div>
           </div>
           <br/>

@@ -3,24 +3,56 @@ layout: default
 ---
 
 <article class="post">
-  <h1 class="">
+  <h2 class="">
     {{ page.title }}
     <small class="text-muted" style='display: inline-block;'>
       {{ page.date | date: "%e %b '%y" }}
     </small>
-  </h1>
+  </h2>
+
+  <div class="btn-group btn-group-md" role="group">
+    {% if page.project_title %}
+    <a class="btn btn-primary" href="{{page.project_url}}">
+      <i class="mdi mdi-{{page.icon}}"></i>
+      {{ page.project_title }}
+    </a>
+    {% endif %}
+
+    {% if page.paper_title %}
+    <a class="btn btn-primary-outline" href="{{page.paper_url}}">
+      <i class="mdi mdi-file-pdf"></i>
+      {{page.paper_title}}
+    </a>
+    {% endif %}
+
+    {% if page.link_title %}
+    <a class="btn btn-primary-outline" href="{{page.link_url}}">
+      <i class="mdi mdi-link-variant"></i>
+      {{ page.link_title }}
+    </a>
+    {% endif %}
+
+    {% if page.github %}
+    <a class="btn btn-primary-outline" href="{{page.github}}">
+      <i class="mdi mdi-github-circle"></i>
+      Source
+    </a>
+    {% endif %}
+  </div>
+  <br/>
+  <br/>
 
   {% if page.image %}
-    <a href="{{ page.imagelink }}">
-      <img src="{{ page.image }}" class="img-fluid" alt="...">
-    </a>
-    <br/>
-    <br/>
+  <a href="{{ page.imagelink }}">
+    <img src="{{ page.image }}" class="img-fluid" alt="...">
+  </a>
+  <br/>
+  <br/>
   {% endif %}
 
-	<div class="postContent">
-		{{ content }}
-	</div>
+  <div class="postContent">
+    {{ content }}
+  </div>
 
-	{% include disqus.html %}
+  {% include disqus.html %}
 </article>

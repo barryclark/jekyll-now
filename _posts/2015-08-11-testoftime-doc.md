@@ -3,6 +3,8 @@ title: Scraping Wikipedia to Build a Historical Trivia Game
 description: The Test Of Time is a historical trivia game where you order events chronologically, guessing which events came before and after each other. 
 layout: post
 
+icon: wikipedia
+
 project_title: The Test of Time
 project_url: http://the-test-of-ti.me
 

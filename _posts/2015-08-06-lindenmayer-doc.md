@@ -3,6 +3,8 @@ title: Generating Fractals with Lindenmayer Systems
 description: L-systems are formal grammar structures used in the study of both botany and mathematics, usually to simulate iterative or recursive structures, such as algae or fractals. In this case, we employ them to render fractals.
 layout: post
 
+icon: pine-tree
+
 project_title: /lindenmayer
 project_url: http://jbuckland.com/lindenmayer
 

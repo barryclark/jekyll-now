@@ -20,9 +20,15 @@ title: Blog
         </a>
       </div>
       <br/>
+
+      {% if post.project_title or post.paper_title or post.link_title or post.github %}
       <div class="btn-group" role="group" aria-label="Second group">
+
         {% if post.project_title %}
-        <a class="btn btn-primary" href="{{post.project_url}}">{{ post.project_title }}</a>
+        <a class="btn btn-primary" href="{{post.project_url}}">
+          <i class="mdi mdi-{{post.icon}}"></i>
+          {{ post.project_title }}
+        </a>
         {% endif %}
 
         {% if post.paper_title %}
@@ -47,6 +53,7 @@ title: Blog
         {% endif %}
       </div>
       <br/>
+      {% endif %}
       <br/>
     </td>
   </tr>

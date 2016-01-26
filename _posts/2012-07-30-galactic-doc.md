@@ -3,6 +3,8 @@ title: Simulating Galactic Chemical Evolution in Python
 description: This is a report Catherine Hong and I compiled during the 2010-2011 academic year under the direction of Colin McNally, as a part of the NASA Science Research Mentoring Program at the American Museum of Natural History in NYC.
 layout: post
 
+icon: star
+
 paper_title: On the Role of Viscous Transport in the Oxygen Abundance Gradient over Extended Galactic Disks
 paper_url: /papers/transport.pdf
 ---

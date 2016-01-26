@@ -2,6 +2,8 @@
 title: A Walkthrough of the Advection-Differencing Scheme
 description: This is something a little different. I'm going to step through solving a practice problem for the MJ2424 Numerical Methods final exam, partially as practice teaching (and understanding) the material, partially as practice writing scientifically, and partially for fun. 
 layout: post
+
+icon: math-compass
 ---
 
 $$ \def\phi{\varphi} $$

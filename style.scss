@@ -26,12 +26,6 @@ body {
   color: $darkGray;
 }
 
-p a{
-  color: inherit !important;
-  opacity: 0.6;
-  text-decoration: underline;
-}
-
 ul, ol {
   margin: 15px 0;
   padding-left: 30px;
@@ -53,15 +47,18 @@ ul ul, ol ul {
   list-style-type: circle;
 }
 
+
 img {
   max-width: 100%;
 }
 
 blockquote {
-  border-left: 2px solid $gray;
-  padding: 0.1em 1em;
-  color: $gray;
+  border-left: 1px solid $gray;
+  opacity: 0.8;
   font-style: italic;
+  margin-left:-10px !important;
+  padding-left:10px;
+  @inject
 }
 
 

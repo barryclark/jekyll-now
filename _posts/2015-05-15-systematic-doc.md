@@ -3,6 +3,8 @@ title: Energy Optimization of an HVAC System via Numerical Modeling
 description: This is a report Akshaya Kumar and I compiled in May 2015, as part of the MJ2437 Modelling of Energy Systems / Energy Utilization course at KTH, in Stockholm. 
 layout: post
 
+icon: flash
+
 paper_title: Systematic Energy Utilization Optimization in DesignBuilder
 paper_url: /papers/systematic.pdf
 ---

@@ -1,6 +1,8 @@
 ---
 title: Design and Manufacture of an Dodecahedral Planetarium Made of Laser-Cut Acrylic
 layout: post
+
+icon: projector
 ---
 
 When I first came to college, I had big plans to cover my room in glow-in-the-dark stars. It occurred to me upon arrival that my roommate might not be as crazy about the idea as I was.

@@ -1,6 +1,8 @@
 ---
 title: Partial Mechanical Design of a Pantograph
 layout: post
+
+icon: math-compass
 ---
 
 <br/>

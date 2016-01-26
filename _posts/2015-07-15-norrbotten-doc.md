@@ -3,6 +3,8 @@ title: Cultural and Ecological Analysis of Mining in Norrbotten, Sweden
 description: This is a report Jessica Malmberg and I compiled during the summer of 2015 under the direction of Dag Avango and Dr. Mark Safstrom as a part of the course AK1214 Environment and Society in a Changing Arctic, hosted jointly by KTH in Stockholm and the University of Illinois at Urbana-Champaign.
 layout: post
 
+icon: image-filter-hdr
+
 paper_title: The Norrbotten Technological Megasystem&#58; Impact on Society and Environment
 paper_url: /papers/norrbotten.pdf
 ---
