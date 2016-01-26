@@ -63,3 +63,5 @@ tags: [common]
     [python 搭建微信公众平台](http://my.oschina.net/yangyanxing/blog/159215)
     
     [红黑树动态图](http://www.cnblogs.com/yangecnu/p/Introduce-Red-Black-Tree.html)
+    
+    [octeon 资料](http://www.360doc.com/userhome/8887027)
