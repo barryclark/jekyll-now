@@ -147,104 +147,110 @@ while still taking $$\beta_2$$ to represent the MATE. This is problematic becaus
 
 If you've been using the `rdd` package to analyze your data, I can think of a couple of ways to handle this issue, depending on whether you want to use a model that interacts the covariates with the treatment indicator. Here are some options:
 
-1. First, suppose that you want to estimate a model that does NOT include covariate-by-treatment interactions. The most transparent (and thus probably safest) approach is to do the estimation "by hand," so to speak. Specifically, Use the `rdd` package to get kernel weights, but then estimate the outcome model using plain-old `lm`. Here's an example:
-    
-    {% highlight r %}
-    library(sandwich)
-    library(lmtest)
-    RD_data$wt <- kernelwts(RD_data$R, center = 0, bw = bw)
-    MATE_model <- lm(Y ~ R + T + R * T + X1 + X2, weights = wt, data = subset(RD_data, wt > 0))
-    coeftest(MATE_model, vcov. = vcovHC(MATE_model, type = "HC1"))
-    {% endhighlight %}
-    
-    
-    
-    {% highlight text %}
-    ## 
-    ## t test of coefficients:
-    ## 
-    ##              Estimate Std. Error t value  Pr(>|t|)    
-    ## (Intercept) -1.586191   0.374247 -4.2384 2.429e-05 ***
-    ## R            0.183542   0.136025  1.3493 0.1774938    
-    ## T            0.292284   0.107689  2.7142 0.0067422 ** 
-    ## X1           0.130973   0.034704  3.7739 0.0001688 ***
-    ## X2B          0.474403   0.091835  5.1658 2.813e-07 ***
-    ## X2C          0.549125   0.084991  6.4610 1.523e-10 ***
-    ## X2D          0.713331   0.096855  7.3649 3.338e-13 ***
-    ## R:T          0.283663   0.222801  1.2732 0.2032105    
-    ## ---
-    ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
-    {% endhighlight %}
-    By default, `RDestimate` uses the HC1 variant of heteroskedasticity-robust standard errors. To exactly replicate its behavior, I used `coeftest` from the `lmtest` package, combined with `vcovHC` from the `sandwich` package. Note that it is also necessary to estimate the model based on the subset of observations with positive weight (otherwise the sandwich standard errors will misbehave).
+First, suppose that you want to estimate a model that does NOT include covariate-by-treatment interactions. The most transparent (and thus probably safest) approach is to do the estimation "by hand," so to speak. Specifically, Use the `rdd` package to get kernel weights, but then estimate the outcome model using plain-old `lm`. Here's an example:
 
-2. An alternative to the first approach is to "trick" `RDestimate` into using the desired model specification by using 2SLS estimation with $$T$$ instrumenting itself. Because the function does not use covariate-by-treatment interactions for "fuzzy" RDDs, you get the correct model specification:
-    
-    {% highlight r %}
-    summary(RDestimate(Y ~ R + T| X1 + X2, data = RD_data, cutpoint = 0))
-    {% endhighlight %}
-    
-    
-    
-    {% highlight text %}
-    ## 
-    ## Call:
-    ## RDestimate(formula = Y ~ R + T | X1 + X2, data = RD_data, cutpoint = 0)
-    ## 
-    ## Type:
-    ## fuzzy 
-    ## 
-    ## Estimates:
-    ##            Bandwidth  Observations  Estimate  Std. Error  z value
-    ## LATE       1.0894     1177          0.2923    0.10769     2.714  
-    ## Half-BW    0.5447      611          0.2041    0.14911     1.369  
-    ## Double-BW  2.1787     1832          0.2703    0.08447     3.200  
-    ##            Pr(>|z|)    
-    ## LATE       0.006644  **
-    ## Half-BW    0.171103    
-    ## Double-BW  0.001374  **
-    ## ---
-    ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
-    ## 
-    ## F-statistics:
-    ##            F      Num. DoF  Denom. DoF  p        
-    ## LATE       31.24  7         1169        7.490e-40
-    ## Half-BW    13.84  7          603        1.110e-16
-    ## Double-BW  68.36  7         1824        7.919e-88
-    {% endhighlight %}
-    The results based on the first bandwidth agree with the results from `lm`.
 
-3. Now, suppose that you DO want to retain the covariate-by-treatment interactions in the model, while also estimating the MATE. To do this, you can use what I call "the centering trick," which entails centering each covariate at the sample average (in this case, the locally-weighted sample average). For a generic covariate $$X$$, let 
+{% highlight r %}
+library(sandwich)
+library(lmtest)
+RD_data$wt <- kernelwts(RD_data$R, center = 0, bw = bw)
+MATE_model <- lm(Y ~ R + T + R * T + X1 + X2, weights = wt, data = subset(RD_data, wt > 0))
+coeftest(MATE_model, vcov. = vcovHC(MATE_model, type = "HC1"))
+{% endhighlight %}
 
-    $$\bar{x} = \frac{\sum_{i=1}^n w_i X_i}{\sum_{i=1}^n w_i},$$
-    
-    where $$w_i$$ is the kernel weight for unit $$i$$. Then estimate the model
-    
-    $$Y_i = \beta_0 + \beta_1 R_i + \beta_2 T_i + \beta_3 R_i T_i + \beta_4 \left(X_i - \bar{x}\right) + \beta_5 \left(X_i - \bar{x}\right) T_i + \epsilon_i, $$
-    
-    The coefficient on $$T$$ now corresponds to the MATE. Here's R code that implements this approach:
-    
-    {% highlight r %}
-    covariate_mat <- model.matrix(~ X1 + X2, data = RD_data)[,-1]
-    covariate_cent <- apply(covariate_mat, 2, function(x) x - weighted.mean(x, w = RD_data$wt))
-    RD_data <- data.frame(subset(RD_data, select = c(R, Y, T)), covariate_cent)
-    
-    covariates_cent <- list("No covariates" = "",
+
+
+{% highlight text %}
+## 
+## t test of coefficients:
+## 
+##              Estimate Std. Error t value  Pr(>|t|)    
+## (Intercept) -1.586191   0.374247 -4.2384 2.429e-05 ***
+## R            0.183542   0.136025  1.3493 0.1774938    
+## T            0.292284   0.107689  2.7142 0.0067422 ** 
+## X1           0.130973   0.034704  3.7739 0.0001688 ***
+## X2B          0.474403   0.091835  5.1658 2.813e-07 ***
+## X2C          0.549125   0.084991  6.4610 1.523e-10 ***
+## X2D          0.713331   0.096855  7.3649 3.338e-13 ***
+## R:T          0.283663   0.222801  1.2732 0.2032105    
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+{% endhighlight %}
+
+By default, `RDestimate` uses the HC1 variant of heteroskedasticity-robust standard errors. To exactly replicate its behavior, I used `coeftest` from the `lmtest` package, combined with `vcovHC` from the `sandwich` package. Note that it is also necessary to estimate the model based on the subset of observations with positive weight (otherwise the sandwich standard errors will misbehave).
+
+An alternative to the first approach is to "trick" `RDestimate` into using the desired model specification by using 2SLS estimation with $$T$$ instrumenting itself. Because the function does not use covariate-by-treatment interactions for "fuzzy" RDDs, you get the correct model specification:
+
+
+{% highlight r %}
+summary(RDestimate(Y ~ R + T| X1 + X2, data = RD_data, cutpoint = 0))
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## 
+## Call:
+## RDestimate(formula = Y ~ R + T | X1 + X2, data = RD_data, cutpoint = 0)
+## 
+## Type:
+## fuzzy 
+## 
+## Estimates:
+##            Bandwidth  Observations  Estimate  Std. Error  z value
+## LATE       1.0894     1177          0.2923    0.10769     2.714  
+## Half-BW    0.5447      611          0.2041    0.14911     1.369  
+## Double-BW  2.1787     1832          0.2703    0.08447     3.200  
+##            Pr(>|z|)    
+## LATE       0.006644  **
+## Half-BW    0.171103    
+## Double-BW  0.001374  **
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## F-statistics:
+##            F      Num. DoF  Denom. DoF  p        
+## LATE       31.24  7         1169        7.490e-40
+## Half-BW    13.84  7          603        1.110e-16
+## Double-BW  68.36  7         1824        7.919e-88
+{% endhighlight %}
+
+The results based on the first bandwidth agree with the results from `lm`.
+
+Now, suppose that you DO want to retain the covariate-by-treatment interactions in the model, while also estimating the MATE. To do this, you can use what I call "the centering trick," which entails centering each covariate at the sample average (in this case, the locally-weighted sample average). For a generic covariate $$X$$, let 
+
+$$\bar{x} = \frac{\sum_{i=1}^n w_i X_i}{\sum_{i=1}^n w_i},$$
+
+where $$w_i$$ is the kernel weight for unit $$i$$. Then estimate the model
+
+$$Y_i = \beta_0 + \beta_1 R_i + \beta_2 T_i + \beta_3 R_i T_i + \beta_4 \left(X_i - \bar{x}\right) + \beta_5 \left(X_i - \bar{x}\right) T_i + \epsilon_i, $$
+
+The coefficient on $$T$$ now corresponds to the MATE. Here's R code that implements this approach:
+
+
+{% highlight r %}
+covariate_mat <- model.matrix(~ X1 + X2, data = RD_data)[,-1]
+covariate_cent <- apply(covariate_mat, 2, function(x) x - weighted.mean(x, w = RD_data$wt))
+RD_data <- data.frame(subset(RD_data, select = c(R, Y, T)), covariate_cent)
+
+covariates_cent <- list("No covariates" = "",
                 "X1 only" = "| X1",
                 "X2 only" = "| X2B + X2C + X2D",
                 "X1 + X2" = "| X1 + X2B + X2C + X2D")
-    
-    ldply(covariates_cent, RD_est, mod = "Y ~ R", .id = "Specification")
-    {% endhighlight %}
-    
-    
-    
-    {% highlight text %}
-    ##   Specification       est        se           p
-    ## 1 No covariates 0.3034839 0.1132266 0.007355079
-    ## 2       X1 only 0.2913246 0.1125398 0.009635680
-    ## 3       X2 only 0.3107688 0.1071302 0.003721488
-    ## 4       X1 + X2 0.2981428 0.1065888 0.005155864
-    {% endhighlight %}
-    The estimates are now insensitive to the inclusion of the (properly centered) covariates, just as in the no-interactions model. In this example, the standard errors from the model that includes covariate-by-treatment interactions are just ever so slightly smaller than those from the model without interactions. 
+
+ldply(covariates_cent, RD_est, mod = "Y ~ R", .id = "Specification")
+{% endhighlight %}
+
+
+
+{% highlight text %}
+##   Specification       est        se           p
+## 1 No covariates 0.3034839 0.1132266 0.007355079
+## 2       X1 only 0.2913246 0.1125398 0.009635680
+## 3       X2 only 0.3107688 0.1071302 0.003721488
+## 4       X1 + X2 0.2981428 0.1065888 0.005155864
+{% endhighlight %}
+
+The estimates are now insensitive to the inclusion of the (properly centered) covariates, just as in the no-interactions model. In this example, the standard errors from the model that includes covariate-by-treatment interactions are just ever so slightly smaller than those from the model without interactions. 
     
 Why does this third approach work? I'll explain more in a later post...
