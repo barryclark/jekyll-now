@@ -1,6 +1,6 @@
 ---
 title: A Walkthrough of the Advection-Differencing Scheme
-description: This is something a little different. I'm going to step through solving a practice problem for the MJ2424 Numerical Methods final exam, partially as practice teaching (and understanding) the material, partially as practice writing scientifically, and partially for fun. 
+description: This is something a little different. I am going to step through solving a practice problem for the MJ2424 Numerical Methods final exam, partially as practice teaching (and understanding) the material, partially as practice writing scientifically, and partially for fun. 
 layout: post
 
 icon: math-compass
@@ -10,11 +10,11 @@ $$ \def\phi{\varphi} $$
 
 *Disclaimer: This is something a little different. I'm going to step through solving a practice problem for the MJ2424 Numerical Methods final exam, partially as practice teaching (and understanding) the material, partially as practice writing scientifically, and partially for fun. I'll be working off my own derivation, but checking my answers, so I really hope the material is accurate.* — JB
 
-##What is Computational Fluid Dynamics?
+#####What is Computational Fluid Dynamics?
 CFD is the process of reducing problems in Fluid Dynamics to stepwise, iterative processes computers can solve. Specifically, it involves taking a real-life continuum and reducing it to a finite-volume calculation with a set number of cells, across each of which a very simple calculation will be performed. This allows us to turn a complex calculus problem, difficult for computational problem solving, into a linear algebra problem, which is much simpler.
 
 
-##The Problem
+#####The Problem
 As seen in Classroom Example 3 of Section 4.7 **Discretising Advection** of David D Apsley's [CFD Notes](http://personalpages.manchester.ac.uk/staff/david.d.apsley/lectures/comphydr/scalar.pdf):
 
 ![The Problem](https://photos-5.dropbox.com/t/2/AABz77XvSbD_xbKDjdQ-m3-6e4ehyYyPiTZuLFTY0W9UIw/12/7983802/png/32x32/1/_/1/2/Screenshot%202015-05-28%2018.53.20.png/CLql5wMgASACIAMgBCAFIAYoASgCKAM/8R67slaPk1cK_udgd72-dqARwJ0iz3BaOhLQlbLmAEE?size=1024x768&size_mode=2)
@@ -30,7 +30,7 @@ Assuming that the downstream boundary condition is $\d{\phi}{x}=0$, set up a fin
 
 differencing schemes for advection.
 
-##The Method
+#####The Method
 From the normal steady-state one-dimensional advection diffusion equation
 
 $$\pd{\rho\phi}{t} + \div(\rho\phi\v u) = div(\Gamma\grad\phi) + S_\phi $$
@@ -53,7 +53,7 @@ Such that the integrated convection-diffusion equation reads:
 
 $$F_e \phi_e - F_w \phi_w = D_e(\phi_E - \phi_P) - D_w(\phi_P - \phi_W)$$
 
-##The Central Differencing Scheme (CDS)
+#####The Central Differencing Scheme (CDS)
 Here we introduce a scheme for finding the values of a given property - in this problem, a chemical concentration - at a boundary between two cells, given its value at the centers of those two cells. We introduce:
 
 $$\phi_e = \frac{\phi_E + \phi_P}{2} \qquad \phi_w = \frac{\phi_P + \phi_W}{2} \qquad \text{(This is the CDS)}$$
@@ -76,7 +76,7 @@ Essentially, this allows us to define a set of variables, and use them repeatedl
  - $a_E = D_e - \tfrac{F_e}{2}$
  - $a_P = a_w + a_e + F_e - F_w$
 
-##Sources
+#####Sources
 Our problem has an additional complexity - the variable in question, $\phi$, the concentration of a given chemical, has both an internal (not boundary) source, and a constant rate of dissipation. Thus we must introduce a source term. Each cell is assigned a quantity $S_u$ corresponding to the rate of material addition, and a scaling quantity $S_P$, corresponding to the dissipation of the material over space.
 
 $$\Sigma S = S_u + S_p \phi_p$$
@@ -93,11 +93,11 @@ $$F_e \phi_e - F_w \phi_w = D_e (\phi_E - \phi_P) - D_w (\phi_P - \phi_w) + S_u 
 
 and the $S_P \phi_P$ term is often factored to the left-hand side, as above.
 
-##Solving the Problem
+#####Solving the Problem
 
 We solve this problem on four unique cases, where we simplify $D_e = D_w$, $F_e = F_w$, and $S_p = \gamma\Delta x$ always.
 
-###The Default Cell (Cells 2, 3, 5, 6)
+#####The Default Cell (Cells 2, 3, 5, 6)
 
 If the cell has no sources and no boundaries, the transport equation is unchanged. We write:
 
@@ -109,11 +109,11 @@ $$(2D - S_P)\phi_P = (D+\tfrac{F}{2})\phi_W + (D-\tfrac{F}{2})\phi_E$$
 
 And thus, $a_W = D+F/2$, $a_E = D-F/2$, $S_u = 0$, $a_p = a_E + a_W - S_P = 2D - S_P$.
 
-###The Injection Cell (Cell 4)
+#####The Injection Cell (Cell 4)
 
 The Injection Cell behaves in a very similar manner to the Default Cell, except that there is a source, so $S_u$ is nonzero. Thus: $a_W = D+F/2$, $a_E = D-F/2$, $S_u = 0.1$, $a_p = a_E + a_W - S_P = 2D - S_P$.
 
-###The Left Boundary (Cell 1)
+#####The Left Boundary (Cell 1)
 
 The boundary conditions are unique -- on the left-hand face, designated $A$, we know $\phi(A) = 0$. We expand the standard form more slowly:
 
@@ -129,10 +129,10 @@ $$(3D + \tfrac{F}{2} - S_p)\phi_P = (0)\phi_W + (D-\tfrac{F}{2})\phi_E + S_u$$
 
 Thus, $a_W = 0$, $a_E = D-F/2$, $S_u = 0$, $a_p = 3D + F/2 - S_P$.
 
-###The Right Boundary (Cell 7)
+#####The Right Boundary (Cell 7)
 The right boundary is the inverse of the left boundary. We know that $\pd{\phi}{x}(B) = 0$, so the $B$ terms similarly go to zero. Thus, $a_W = D+F/2$, $a_E = 0$, $S_u = 0$, $a_p = D + F/2 - S_P$
 
-##Numerically
+#####Numerically
 We know $D=\Gamma A / \Delta x = 0.007 kg/s$, $F = \rho A u = 1 kg/s$, and $S_P = \gamma\Delta x = -0.07 kg/s$. We can thus solve:
 
 | n | $a_w$ | $a_e$ | $a_p$ | $S_u$ |

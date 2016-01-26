@@ -5,7 +5,7 @@ layout: post
 icon: subway
 
 project_title: /subway
-proejct_url: http://jbuckland.com/subway
+project_url: http://jbuckland.com/subway
 
 github: http://github.com/ambuc/subway
 ---

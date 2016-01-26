@@ -3,14 +3,14 @@ layout: default
 ---
 
 <article class="post">
-  <h2 class="">
+  <h4 class="">
     {{ page.title }}
     <small class="text-muted" style='display: inline-block;'>
       {{ page.date | date: "%e %b '%y" }}
     </small>
-  </h2>
+  </h4>
 
-  <div class="btn-group btn-group-md" role="group">
+  <div class="btn-group btn-group-sm" role="group">
     {% if page.project_title %}
     <a class="btn btn-primary" href="{{page.project_url}}">
       <i class="mdi mdi-{{page.icon}}"></i>

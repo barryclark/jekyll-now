@@ -13,10 +13,7 @@ I began by designing a sky map spread across twelve pentagons, to be folded into
 
 I lasercut the patterns from a large piece of opaque blue acrylic, and cut the joiners from clear acrylic scrap. I discovered too late, as a planetarium, my project failed: I got too large of a lightbulb (I got a little excited at the Home Depot) and the focal length was totally wrong; the light shone out of the holes but would not project outwards onto the walls. With this in mind, I repurposed the planetarium into a hanging lamp.
 
-The plans are available here.
-
-##Images
-
+#####Images
 
 ![alt](http://36.media.tumblr.com/32c9274abc25ecfe9dfe9034c1c78626/tumblr_mxarxjHPBz1t5d2z2o2_1280.jpg)
 ![alt](http://41.media.tumblr.com/d2442628cba25dccb07709426af0d309/tumblr_mxarxjHPBz1t5d2z2o7_1280.jpg)
