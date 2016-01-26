@@ -2,6 +2,8 @@
 layout: post
 title: "New article: Measurement-comparable effect sizes for single-case studies of free-operant behavior"
 date: February 4, 2014
+tags: [behavioral-observation, single-case-research, effect-sizes]
+permalink: measurement-comparable-effect-sizes
 ---
 
 My article "Measurement-comparable effect sizes for single-case studies of free-operant behavior" has been accepted at _Psychological Methods_. [Postprint]({{ site.url }}/files/Measurement-comparable-ES.pdf) and  [supporting materials]({{ site.url }}/files/Measuerment-comparable-ES-Appendix.pdf) are available. Here's the abstract:

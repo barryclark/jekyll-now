@@ -2,6 +2,7 @@
 layout: post
 title: The clubSandwich package for meta-analysis with RVE
 date: July 10, 2015
+tags: [meta-analysis, sandwiches]
 ---
 
 I've recently been working on small-sample correction methods for hypothesis tests in linear regression models with cluster-robust variance estimation. My colleague (and grad-schoolmate) Beth Tipton has developed small-sample adjustments for t-tests (of single regression coefficients) in the context of meta-regression models with robust variance estimation, and together we have developed methods for multiple-contrast hypothesis tests. We have an R package (called `clubSandwich`) that implements all this stuff, not only for meta-regression models but also for other models and contexts where cluster-robust variance estimation is often used.
@@ -44,7 +45,7 @@ table(dropoutPrevention$evaluator_independence)
 #### metafor model
 
 Our package also works with models fit using the `metafor` package. Here I re-fit the same regression specification, but use REML to estimate the variance components (`robumeta` uses a method-of-moments estimator) and use a somewhat different weighting scheme than that used in `robumeta`. 
-```{r}
+```{r, message = FALSE}
 library(metafor)
 m3_metafor <- rma.mv(LOR1 ~ study_design + attrition + group_equivalence + adjusted
                       + outcome + evaluator_independence

@@ -2,6 +2,9 @@
 layout: default
 title: Home
 ---
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 
 <div class="posts">
   {% for post in paginator.posts %}
@@ -12,9 +15,17 @@ title: Home
       </a>
     </h1>
 
-    <span class="post-date">{{ post.date | date_to_string }}</span>
+    <span class="post-date">
+      {{ post.date | date_to_string }}
+      {% if post.tags != empty %}
+        |
+        {% for tag in post.tags %}
+        <a class="codinfox-tag-mark" href="/tags/#{{ tag | slugify }}">{{ tag }}</a>
+        {% endfor %}
+      {% endif %}
+    </span>
 
-    {{ post.content }}
+    {{ post.excerpt }}
   </div>
   {% endfor %}
 </div>

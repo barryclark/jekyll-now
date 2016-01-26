@@ -2,6 +2,8 @@
 layout: post
 title: Clustered standard errors and hypothesis tests in fixed effects models
 date: January 10, 2016
+tags: [sandwiches, econometrics]
+permalink: clubSandwich-for-CRVE-FE
 ---
 
 I've recently been working with my colleague [Beth Tipton](http://blogs.cuit.columbia.edu/let2119/) on methods for cluster-robust variance estimation in the context of some common econometric models, focusing in particular on fixed effects models for panel data---or what statisticians would call "longitudinal data" or "repeated measures." We have a new working paper, which you can [find here]({{site.url}}/files/Pustejovsky-Tipton-201601.pdf). 

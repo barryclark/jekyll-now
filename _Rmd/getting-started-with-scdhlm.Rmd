@@ -2,6 +2,7 @@
 layout: post
 title: Getting started with scdhlm
 date: October 19, 2014
+tags: [single-case-research]
 ---
 
 Here are step-by-step instructions on how to download and install the scdhlm package for R. You'll need to have a [copy of R installed](http://cran.us.r-project.org/). There are two ways to do the installation: from the pre-compiled Windows binary available on [my website]({{site.url}}/software) or from the source code on Github. I describe each approach in turn.

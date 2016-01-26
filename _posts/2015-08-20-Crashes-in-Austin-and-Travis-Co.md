@@ -1,7 +1,9 @@
 ---
 layout: post
 title: Fatal crashes in Austin/Travis County
-date: August 2, 2015
+date: August 20, 2015
+tags: [transportation]
+permalink: Crashes-in-Austin-and-Travis-Co
 ---
 
 I have been hearing quite a bit lately about how there have been an unusually large number of fatal automobile crashes in Austin this year, resulting in a total of [69 fatalities (as of August 19th)](http://kxan.com/2015/08/19/southbound-i-35-closed-at-airport-blvd-after-fatal-crash/). Terrence Henry (of KUT) recently [did a story](http://kut.org/post/what-can-austin-do-stop-road-deaths) on this problem, and the City of Austin has convened the [Vision Zero Task Force](http://austintexas.gov/department/vision-zero-task-force) to figure out what policies to implement in order to prevent these deaths. KUT published [an interactive map](http://kut.org/post/map-austins-traffic-fatalities-so-far-2015) showing the locations of the fatal crashes and the Vision Zero Task Force put together a [heat map](http://austintexas.gov/sites/default/files/files/Imagine_Austin/VisionZero/CRASHES_allmodes_revised8_6_15.pdf) showing the locations of crashes over the past five years.
@@ -10,11 +12,11 @@ I was curious to understand more about how fatalities have changed over time, bu
 
 The chart below plots the annual number of fatal crashes, fatalities, crashes in which incapacitating injuries occurred, incapacitating injuries, and total crashes, for both Austin and Travis County as a whole. For the current year data, I plotted both the actual numbers (through July 31, 2015) and very simple projections. (Details on how I put the figures together are at the end of this post.)
 
-![plot of chunk crash_graph]({{site.url}}/figure/2015-08-02-Crashes-in-Austin-and-Travis-Co/crash_graph-1.png) 
+![plot of chunk crash_graph]({{site.url}}/figure/2015-08-20-Crashes-in-Austin-and-Travis-Co/crash_graph-1.png) 
 
 The first thing you can see from these graphs is that the projected number of fatal crashes and total number of fatalities is substantially higher than in previous years. In contrast, the projected number of incapacitating crashes, number of incapacitating injuries, and total number of crashes all appear to be (very roughly) consistent with the linear trends from previous years. Taken together, these trends suggest that the proportion of crashes that are fatal is higher than would be expected. Here's a graph of the fatality rate over time:
 
-![plot of chunk fatality_rates]({{site.url}}/figure/2015-08-02-Crashes-in-Austin-and-Travis-Co/fatality_rates-1.png) 
+![plot of chunk fatality_rates]({{site.url}}/figure/2015-08-20-Crashes-in-Austin-and-Travis-Co/fatality_rates-1.png) 
 
 2015 is clearly an outlier, though not as high as the proportion of fatal crashes in Travis County during 2003 and 2004 (unfortunately the data for Austin don't go back that far). These years have higher proportions because there were fewer crashes overall in these initial years. Also note that Travis County as a whole has a higher fatality rate than the city of Austin, probably because the non-Austin roads in Travis county are larger and have higher speed limits.
 

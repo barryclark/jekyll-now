@@ -73,14 +73,14 @@ h1, h2, h3, h4, h5, h6 {
  */
 
 .container {
-  max-width: 48rem;
+  max-width: 28rem;
 }
-@media (min-width: 38rem) {
+@media (min-width: 38em) {
   .container {
     max-width: 32rem;
   }
 }
-@media (min-width: 56rem) {
+@media (min-width: 56em) {
   .container {
     max-width: 38rem;
   }
@@ -114,7 +114,7 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0;
 }
 
-@media (max-width: 48rem) {
+@media (max-width: 48em) {
   .masthead-title {
     text-align: center;
   }
@@ -155,7 +155,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-transition: all .3s ease-in-out;
           transition: all .3s ease-in-out;
 }
-@media (min-width: 30rem) {
+@media (min-width: 30em) {
   .sidebar {
     font-size: .75rem; /* 14px */
   }
@@ -190,7 +190,7 @@ a.sidebar-nav-item:focus {
   border-color: transparent;
 }
 
-@media (min-width: 48rem) {
+@media (min-width: 48em) {
   .sidebar-item {
     padding: 1.5rem;
   }
@@ -208,48 +208,54 @@ a.sidebar-nav-item:focus {
 /* Style the `label` that we use to target the `.sidebar-checkbox` */
 .sidebar-toggle {
   position: absolute;
-  top:  1rem;
+  top:  .8rem;
   left: 1rem;
   display: block;
-  width: 2.2rem;
-  padding: .5rem .65rem;
+  padding: .25rem .75rem;
   color: #505050;
   background-color: #fff;
-  border-radius: 4px;
+  border-radius: .25rem;
   cursor: pointer;
 }
-.sidebar-toggle:before {
-  display: block;
-  content: "";
-  width: 100%;
-  padding-bottom: .125rem;
-  border-top: .375rem double;
-  border-bottom: .125rem solid;
 
-  /* Make the border inside the box */
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+.sidebar-toggle:before {
+  display: inline-block;
+  width: 1rem;
+  height: .75rem;
+  content: "";
+  background-image: -webkit-linear-gradient(to bottom, #555, #555 20%, #fff 20%, #fff 40%, #555 40%, #555 60%, #fff 60%, #fff 80%, #555 80%, #555 100%);
+  background-image:    -moz-linear-gradient(to bottom, #555, #555 20%, #fff 20%, #fff 40%, #555 40%, #555 60%, #fff 60%, #fff 80%, #555 80%, #555 100%);
+  background-image:     -ms-linear-gradient(to bottom, #555, #555 20%, #fff 20%, #fff 40%, #555 40%, #555 60%, #fff 60%, #fff 80%, #555 80%, #555 100%);
+  background-image:         linear-gradient(to bottom, #555, #555 20%, #fff 20%, #fff 40%, #555 40%, #555 60%, #fff 60%, #fff 80%, #555 80%, #555 100%);
 }
 
 .sidebar-toggle:active,
+#sidebar-checkbox:focus ~ .sidebar-toggle,
 #sidebar-checkbox:checked ~ .sidebar-toggle {
   color: #fff;
-  background-color: #505050;
+  background-color: #555;
 }
 
-@media (min-width: 30.1rem) {
+.sidebar-toggle:active:before,
+#sidebar-checkbox:focus ~ .sidebar-toggle:before,
+#sidebar-checkbox:checked ~ .sidebar-toggle:before {
+  background-image: -webkit-linear-gradient(to bottom, #fff, #fff 20%, #555 20%, #555 40%, #fff 40%, #fff 60%, #555 60%, #555 80%, #fff 80%, #fff 100%);
+  background-image:    -moz-linear-gradient(to bottom, #fff, #fff 20%, #555 20%, #555 40%, #fff 40%, #fff 60%, #555 60%, #555 80%, #fff 80%, #fff 100%);
+  background-image:     -ms-linear-gradient(to bottom, #fff, #fff 20%, #555 20%, #555 40%, #fff 40%, #fff 60%, #555 60%, #555 80%, #fff 80%, #fff 100%);
+  background-image:         linear-gradient(to bottom, #fff, #fff 20%, #555 20%, #555 40%, #fff 40%, #fff 60%, #555 60%, #555 80%, #fff 80%, #fff 100%);
+}
+
+@media (min-width: 30.1em) {
   .sidebar-toggle {
     position: fixed;
-    width: 2.25rem;
-  }
-  .sidebar-toggle:before {
-    padding-bottom: .15rem;
-    border-top-width: .45rem;
-    border-bottom-width: .15rem;
   }
 }
 
+@media print {
+  .sidebar-toggle {
+    display: none;
+  }
+}
 
 /* Slide effect
  *
@@ -278,6 +284,7 @@ a.sidebar-nav-item:focus {
 }
 
 #sidebar-checkbox:checked + .sidebar {
+  z-index: 10;
   visibility: visible;
 }
 #sidebar-checkbox:checked ~ .sidebar,
@@ -377,7 +384,7 @@ a.pagination-item:hover {
   background-color: #f5f5f5;
 }
 
-@media (min-width: 30rem) {
+@media (min-width: 30em) {
   .pagination {
     margin: 3rem 0;
   }
@@ -536,4 +543,29 @@ a.pagination-item:hover {
 .theme-pusto .sidebar-toggle,
 .theme-pusto .related-posts li a:hover  {
   color: #005F86;
+}
+
+
+/*
+ * Overlay sidebar
+ *
+ * Make the sidebar content overlay the viewport content instead of pushing it
+ * aside when toggled.
+ */
+
+.sidebar-overlay #sidebar-checkbox:checked ~ .wrap {
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
+}
+.sidebar-overlay #sidebar-checkbox:checked ~ .sidebar-toggle {
+  box-shadow: 0 0 0 .25rem #fff;
+}
+.sidebar-overlay #sidebar-checkbox:checked ~ .sidebar {
+  box-shadow: .25rem 0 .5rem rgba(0,0,0,.1);
+}
+
+/* Only one tweak for a reverse layout */
+.layout-reverse.sidebar-overlay #sidebar-checkbox:checked ~ .sidebar {
+  box-shadow: -.25rem 0 .5rem rgba(0,0,0,.1);
 }

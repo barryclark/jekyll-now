@@ -2,6 +2,8 @@
 layout: post
 title: Designing simulation studies using R
 date: December 6, 2013
+tags: [simulation]
+permalink: Designing-simulation-studies-using-R
 ---
 
 [Here are the slides]({{site.url}}/files/Designing-simulation-studies-using-R.pdf) from my presentation at this afternoon's Quant. Methods brown bag. I gave a very quick introduction to using R for conducting simulation studies. I hope it was enough to get people intrigued about the possibilities of using R in their own work.

@@ -2,6 +2,8 @@
 layout: post
 title: Meta-sandwich with extra mustard
 date: April 26, 2014
+tags: [meta-analysis, sandwiches]
+permalink: Robust-meta-analysis-3
 ---
 
 In an earlier post about sandwich standard errors for multi-variate meta-analysis, I [mentioned]({{site.url}}/Robust-meta-analysis-1/) that Beth Tipton has recently proposed small-sample corrections for the covariance estimators and t-tests, based on the bias-reduced linearization approach of [McCaffrey, Bell, and Botts (2001)](http://www.amstat.org/sections/SRMS/Proceedings/y2001/Proceed/00264.pdf). 

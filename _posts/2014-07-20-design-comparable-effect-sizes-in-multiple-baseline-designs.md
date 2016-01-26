@@ -2,6 +2,8 @@
 layout: post
 title: "New article: Design-comparable effect sizes in multiple baseline designs: A general modeling framework"
 date: July 20, 2014
+tags: [single-case-research, effect-sizes]
+permalink: design-comparable-effect-sizes-in-multiple-baseline-designs
 ---
 
 My article with Larry Hedges and Will Shadish, titled "Design-comparable effect sizes in multiple baseline designs: A general modeling framework" has been accepted at Journal of Educational and Behavioral Statistics. The abstract is below. Here's the article at [the journal website](http://doi.org/10.3102/1076998614547577). [Postprint]({{ site.url }}/files/Effect-sizes-in-multiple-baseline-designs-JEBS.pdf) and [supporting materials]({{ site.url }}/files/Effect-sizes-in-multiple-baseline-designs-Simulation-results.pdf) are available. An R package that implements the proposed methods is [available here]({{site.url}}/getting-started-with-scdhlm/).
