@@ -32,4 +32,4 @@ The first [article](/images/2002_os_snapshots_for_backup.pdf) I wrote for NoCOUG
 
 I was [OCP](http://en.wikipedia.org/wiki/Oracle_Certification_Program) DBA in Oracle 8 a *long* time ago.
 
-My [MongoDB Masters](http://www.mongodb.org/about/community/masters/#kenny-gorman) page.
+I was previously a Mongodb Master.
