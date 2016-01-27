@@ -1,19 +1,19 @@
 # Site settings
-title: Zetsu
-email: zetsu@domain.com
+title: BananaStore
+email: bananastore.help@gmail.com
 description: Um lindo tema feito para jekyll e com o <3
-baseurl: "/zetsu"
-url: "http://nandomoreira.me"
+baseurl: ""
+url: "http://bananastore.github.io"
 
 author:
-  name     : 'Fernando Moreira'
-  email    : hi@nandomoreira.me
-  url      : http://nandomoreira.me
-  facebook : http://facebook.com/fernando.dev
-  twitter  : http://twitter.com/nandomoreirame
+  name     : 'Gigwan Lee'
+  email    : bananastore.help@gmail.com
+  url      : http://bananastore.github.io
+  facebook : 
+  twitter  : 
 
-github: https://github.com/nandomoreirame/zetsu
-disqus_shortname: "fernandomoreira"
+github: http://bananastore.github.io
+disqus_shortname: "BananaStore"
 google_analytics: UA-52446115-1
 
 paginate: 2
