@@ -23,7 +23,7 @@ He is an active member in the PostgreSQL community and scaled Hi5 from just a fe
 
 He has been an active MongoDB community member, speaker, MongoDB evangelist, and now Mongo Master. In 2011 he formed the MongoDB as a Service provider ObjectRocket with colleagues from eBaY. ObjectRocket was acquired by Rackspace in 2012.
 
-Currently, Kenny is Chief Technologist; Data in the Office of the CTO at Rackspace. Part evangelist part coder, he spends his time working to ensure Rackspace is always at the forefront of data technologies.
+Currently, Kenny is a Founder at Eventador Labs Inc.
 
 
 ### Links
