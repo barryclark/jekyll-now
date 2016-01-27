@@ -1,0 +1,38 @@
+{% include mode_switcher.html %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" type="text/css" href="{{crturl}}stylesheets/markdownreader_bare.css">
+    <link rel="stylesheet" type="text/css" href="{{crturl}}stylesheets/pygments_monokai.css">
+    <link rel="stylesheet" type="text/css" href="{{crturl}}stylesheets/code_block.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="{{crturl}}favicon.ico" type="image/icon">
+    <link rel="icon" href="{{crturl}}favicon.ico" type="image/icon">
+    <!-- 百度统计 -->
+    <script type="text/javascript" src="{{crturl}}javascripts/baidu_statistics.js"></script>
+
+    <style type="text/css">
+        #disqus_thread {
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+
+<div id="markdown-container">
+    {{ content }}
+
+    {% include disqus_load.html %}
+</div>
+
+<div id="markdown-outline">
+</div>
+
+<div id="markdown-backTop" onclick="window.scrollTo(0,0)"></div>
+
+
+<script type="text/javascript" src="{{crturl}}javascripts/markdownreader_bare.js"></script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+{% if site.mode == 'dev' %}
+{% assign crturl = site.devurl %}
+{% else %}
+{% assign crturl = site.url %}
+{% endif %}

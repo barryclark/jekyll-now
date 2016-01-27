@@ -1,1 +1,44 @@
-<span>&copy; {{ site.time | date: '%Y' }} {{ site.owner.name }}. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="https://mademistakes.com/work/hpstr-jekyll-theme/" rel="nofollow">HPSTR Theme</a>.</span>
+{% assign my = site.my %}
+<footer id="l-footer">
+    <div class="container">
+        <div class="row">
+            <div id="contact" class="col-lg-6 col-lg-offset-1 col-md-6 col-md-offset-1 col-sm-9">
+                <h3>CONTACT</h3>
+                <div class="row">
+                    <address id="address" class="col-lg-6 col-md-6 col-sm-6">
+                        {{ my.contact.address.country }} {{ my.contact.address.state }} {{ my.contact.address.city }}<br>
+                        {{ my.contact.address.distribute }}, {{ my.contact.address.postcode }}<br>
+                        {{ my.contact.address.cell }}<br>
+                        {{ my.realName }}<br>
+                    </address>
+
+                    <ul class="col-lg-6 col-md-6 col-sm-6">
+                        <li class="qq"><i class="fa fa-qq"></i> &nbsp;&nbsp;{{ my.contact.qq }}</li>
+                        <li class="email"><i class="fa fa-envelope"></i> <a href="mailto:{{ my.contact.email }}"> &nbsp;&nbsp;{{ my.contact.email }}</a></li>
+                        <li class="tel"><i class="fa fa-mobile"></i> <a href="tel:15671542698">&nbsp;&nbsp; {{ my.contact.tel }}</a></li>
+                        <li class="github"><i class="fa fa-github"></i> <a href="{{ my.contact.github }}"> &nbsp;&nbsp;{{ my.contact.github }}</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="rss" class="col-lg-2 col-md-2 col-sm-2">
+                    <h3>SUBSCRIBE<br>
+                    via</h3>
+                <a href="feed.xml">
+                    <i class="rss fa fa-rss-square"></i>
+                </a>
+            </div>
+        </div>
+
+        <p id="legal">
+            Copyright (c) 2015 {{ my.displayName }} | Powered by <a href="http://jekyllrb.com">Jekyll</a> &amp; <a href="http://github.com">GitHub</a> | designed &amp; build by <a href="http://unifreak.github.io">UniFreak</a>
+        </p>
+    </div>
+</footer>
+
+<script type="text/javascript" src="{{crturl}}javascripts/base.js"></script>
+
+{% if site.mode != 'dev' %}
+<!-- 百度统计 -->
+<script type="text/javascript" src="{{crturl}}javascripts/baidu_statistics.js"></script>
+{% endif %}

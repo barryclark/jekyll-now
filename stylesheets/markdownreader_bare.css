@@ -1,0 +1,102 @@
+*{margin:0;padding:0;}
+#markdown-container{
+    width: 748px;
+    margin:10px auto 10% auto;
+    background-color: #F8F8F8;
+    border:1px solid #ccc;
+    box-shadow:0 0 10px #999;
+    padding:2em;
+    line-height:1.4em;
+    font:13.34px helvetica,arial,freesans,clean,sans-serif;
+    color:black;
+}
+#markdown-container table{
+    font:13.34px helvetica,arial,freesans,clean,sans-serif;
+    color:black;
+}
+p {
+    margin:1em 0;
+    line-height:1.5em;
+}
+
+input[type=text],input[type=password],input[type=image],textarea{font:99% helvetica,arial,freesans,sans-serif;}
+select,option{padding:0 .25em;}
+optgroup{margin-top:.5em;}
+
+img{border:0;max-width:100%;}
+abbr{border-bottom:none;}
+a{color:#4183c4;text-decoration:none;}
+a:hover{text-decoration:underline;}
+a code,a:link code,a:visited code{color:#4183c4;}
+h2,h3{margin:1em 0;}
+h1,h2,h3,h4,h5,h6{border:0;}
+h1{font-size:170%;border-bottom:4px solid #aaa;padding-bottom:.5em;margin-top:1.5em;}
+h1:first-child{margin-top:0;padding-top:.25em;border-top:none;}
+h2{font-size:150%;margin-top:1.5em;border-bottom:4px solid #e0e0e0;padding-bottom:.5em;}
+h3{margin-top:1em;}
+hr{border:1px solid #ddd;}
+ul{margin:1em 0 1em 2em;}
+ol{margin:1em 0 1em 2em;}
+ul li,ol li{margin-top:.5em;margin-bottom:.5em;}
+ul ul,ul ol,ol ol,ol ul{margin-top:0;margin-bottom:0;}
+blockquote{margin:1em 0;border-left:5px solid #ddd;padding-left:.6em;color:#555;}
+dt{font-weight:bold;margin-left:1em;}
+dd{margin-left:2em;margin-bottom:1em;}
+
+#markdown-outline{
+    display:none;
+    position:fixed;
+    top:10px;
+    left:-999px;
+    border:1px solid #ccc;
+    box-shadow:5px 5px 2px #ccc;
+    padding: 5px 10px;
+    background-color: #fff;
+    overflow-y: auto;
+}
+#markdown-outline ul{
+    margin:5px 0 5px 0;
+    padding-left:30px;
+    font-size:12px;
+    border-left:1px dotted #ccc;
+}
+#markdown-outline ul:first-child{
+    border:none;
+}
+#markdown-outline li{
+    list-style-type:decimal;
+    margin:3px 0;
+}
+
+#markdown-backTop{
+    position: fixed;
+    right:5px;
+    bottom:5px;
+    padding:5px;
+    width:50px;
+    height:20px;
+    background:url(../images/mdreader_backTop.gif) no-repeat 5px 5px #fff;
+    border:1px solid #ccc;
+    cursor:pointer;
+}
+
+/*table style*/
+
+table {
+    border-collapse:collapse !important;
+}
+table th, table td{
+    border:1px solid #ddd !important;
+    padding: 5px;
+    line-height: 1.5;
+    vertical-align: top;
+    border-top: 1px solid #dddddd;
+
+}
+table th{
+    background: #EEE;
+}
+table p{
+    margin: 0;
+
+}

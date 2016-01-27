@@ -1,0 +1,44 @@
+{% include mode_switcher.html %}
+
+{% if paginator %}
+    {% for post in paginator.posts %}
+        {% include post_list_item.html %}
+    {% endfor %}
+{% else %}
+    {% for post in include.posts %}
+        {% if post.tags or post.category %}
+            {% include post_list_item.html %}
+            {% assign displayPagi = true %}
+        {% endif %}
+    {% endfor %}
+{% endif %}
+
+{% if displayPagi or paginator %}
+<div class="row" id="paginator">
+    {% if paginator.total_pages > 1 %}
+        {% if paginator.previous_page %}
+            <a href="{{ paginator.previous_page_path | prepend: crturl }}">«</a>
+        {% endif %}
+
+        {% for page in (1..paginator.total_pages) %}
+            {% if page == paginator.page %}
+                <span class="active">{{ page }}</span>
+            {% elsif page == 1 %}
+                <a href="{{ crturl }}">{{ page }}</a>
+            {% else %}
+                <a href="{{ site.paginate_path | prepend: crturl | replace: ':num', page }}">{{ page }}</a>
+            {% endif %}
+        {% endfor %}
+
+        {% if paginator.next_page %}
+            <a href="{{ paginator.next_page_path | prepend: crturl }}">»</a>
+        {% endif %}
+    {% elsif jsPagiLoaded != true %}
+        <script type="text/javascript" src="{{crturl}}javascripts/pagination.js"></script>
+        <script type="text/javascript" src="{{crturl}}javascripts/listAndPagi.js"></script>
+        {% assign jsPagiLoaded = true %}
+    {% endif %}
+
+</div>
+{% endif %}
+{% assign displayPagi = false %}

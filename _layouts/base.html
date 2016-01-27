@@ -1,0 +1,20 @@
+{% include mode_switcher.html %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    {% include head_base.html %}
+</head>
+
+<body>
+    {% include header.html %}
+
+    <section id="l-main">
+        <div class="container">
+            {{ content }}
+        </div>
+    </section>
+
+    {% include footer.html %}
+</body>
+</html>

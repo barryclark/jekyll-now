@@ -1,0 +1,44 @@
+/**
+ * ----------------------------------------------------------------------------------------
+ * Footer style
+ * ----------------------------------------------------------------------------------------
+ */
+#l-footer {
+    background-color: rgb(28, 51, 64);
+    color: white;
+    margin-top: 7rem;
+    padding: 1.5rem;
+
+    h3 {
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+
+    address {
+        text-align: right;
+        padding-right: 2rem;
+    }
+
+    #rss {
+        text-align: center;
+    }
+
+    .rss {
+        font-size: 6rem;
+    }
+
+    #legal {
+        text-align: center;
+        color: rgb(141, 141, 141);
+    }
+}
+
+@media (max-width: 768px) {
+    #l-footer {
+        address {
+            text-align: left;
+            margin-bottom: 2rem;
+        }
+
+    }
+}

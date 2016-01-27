@@ -1,79 +1,60 @@
-title:            Site Title
-description:      Describe your website here.
-disqus_shortname: 
-reading_time:     true
-words_per_minute: 200
-# Your site's domain goes here (eg: //mmistakes.github.io, http://mademistakes.com, etc)
-# When testing locally leave blank or use http://localhost:4000
-url: http://bananastore.github.io
-
-# Owner/author information
-owner:
-  name:           Gigwan Lee
-  avatar:         avatar.jpg
-  bio:            "Your bio goes here. It shouldn't be super long but a good two sentences or two should suffice."
-  email:          gigwan.lee@email.com
-  # Social networking links used in footer. Update and remove as you like.
-  twitter:        
-  facebook:       
-  github:         
-  stackexchange:  
-  linkedin:       
-  instagram:      
-  flickr:         
-  tumblr:         
-  # google plus id, include the '+', eg +mmistakes
-  google_plus:
-
-# Background image to be tiled on all pages
-background: 
-
-# Analytics and webmaster tools stuff goes here
-google_analytics:   
-google_verify:      
-# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:         
-
-# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    America/New_York
-future:      true
 highlighter: pygments
-markdown:    kramdown
-gems:
-  - jekyll-sitemap
-sass:
-  sass_dir: _sass
-  style: compressed
 
-# https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink:   /:categories/:title/
+markdown: redcarpet
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
 
-# Amount of post to show on home page
-paginate: 5
+gems: [jekyll-paginate]
+paginate: 7
+paginate_path: "page:num"
+layout: post
+permalink: /:categories/:title
+excerpt_separator: "[-----]"
 
-kramdown:
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  use_coderay: true
+# mode: dev
+mode: product
+url: https://unifreak.github.io/
+devurl: http://localhost:4000/
+name: UniFreak
+title: UniFreak | Another yet unique freak is showing a freakshow
+description: "Fanghao's personal weblog, on coding or such stuff"
 
-  coderay:
-    coderay_line_numbers: nil
-    coderay_line_numbers_start: 1
-    coderay_tab_width: 4
-    coderay_bold_every: 10
-    coderay_css: class
+my:
+    displayName: UniFreak
+    realName: FangHao
+    realName_cn: 方浩
+    jobTitle: "PHP Coder"
+    contact:
+        qq: 744910240
+        email: fanghao90s@gmail.com
+        github: http://www.github.com/UniFreak
+        qzone: http://744910240.qzone.qq.com
+        pinterest: https://www.pinterest.com/miblah/
+        tel: 15671542698
+        address:
+            country: China
+            state: Hubei
+            city: Wuhan
+            distribute: Hongshan
+            postcode: 450000
+            cell: "XuefuJiayuan"
+    skills:
+        frontend: ["HTML | Markdown", "CSS | SASS", "JS | jQuery", "Bootstrap"]
+        backend: ["PHP", "MySQL", "Redis", "Regex", "Laravel", "OSC"]
+        tools: ["Sublime Text", "Git | Github", "Linux", "Jekyll | Liquid"]
 
-# Octopress
-# Default extensions
-post_ext: md
-page_ext: md
-# Found in _templates/
-post_layout: post
-page_layout: page
-# Format titles with titlecase?
-titlecase: true
+collections:
+    qqGroupGuide:
+        output: true
 
-include: [".htaccess"]
-exclude: ["lib", "config.rb", "Capfile", "config", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
+defaults:
+  - scope:
+        path: ""
+        type: "posts"
+    values:
+        excerpt: "{{ page.content }} | slice: 0 300"
+  - scope:
+        path: ""
+        type: "qqGroupGuide"
+    values:
+        layout: markdownreader_bare

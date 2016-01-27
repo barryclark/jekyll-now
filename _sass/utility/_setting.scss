@@ -1,0 +1,21 @@
+/**
+ * ----------------------------------------------------------------------------------------
+ * Site settings
+ * ----------------------------------------------------------------------------------------
+ */
+
+/* Typography */
+$font-size: 16px;
+$font: 'Open Sans', Helvetica, Arial, sans-serif;
+$baseline: $base-font-size * 1.5;
+
+/* Color */
+$navbg: #eee;
+$articlebg: $navbg + 8;
+$headerbg: #1C3340;
+$searchbd: rgb(51, 122, 183);
+
+/* Positioning */
+$margin-multiplier: 2;
+
+$general-margin: $margin-multiplier * $baseline;

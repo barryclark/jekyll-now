@@ -1,0 +1,33 @@
+/**
+ * ----------------------------------------------------------------------------------------
+ * Utility
+ * ----------------------------------------------------------------------------------------
+ */
+ .text-left {
+    text-align: left;
+ }
+
+ .text-right {
+    text-align: right;
+ }
+
+ .text-center {
+    text-align: center;
+ }
+
+ .align-left {
+    @include float-left;
+ }
+
+ .align-right {
+    @include float-right;
+ }
+
+ .clearfix {
+    @include clearfix;
+ }
+
+ .col-equal {
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+ }

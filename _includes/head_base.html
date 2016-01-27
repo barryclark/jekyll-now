@@ -1,0 +1,18 @@
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+
+<!-- favicon -->
+<link rel="shortcut icon" href="{{crturl}}favicon.ico" type="image/icon">
+<link rel="icon" href="{{crturl}}favicon.ico" type="image/icon">
+<link rel="stylesheet" type="text/css" href="{{crturl}}stylesheets/base.css">
+<link rel="stylesheet" type="text/css" href="{{crturl}}stylesheets/simplePagination.css">
+
+<script type="text/javascript" src="{{crturl}}javascripts/jquery.js"></script>
+
+<!--[if lt IE 9]>
+<script src="{{crturl}}javascripts/html5shiv.js"></script>
+<![endif]-->

@@ -1,0 +1,298 @@
+#l-main {
+    article {
+        background: white;
+        padding-right: 3rem;
+        margin-top: 5rem;
+        box-shadow: 0 0 10px #999;
+        border-radius: 5px;
+
+        .date {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .day {
+            background-color: black;
+            color: white;
+            width: 5rem;
+            height: 5rem;
+            margin: 2rem auto 0.5rem auto;
+            font: normal normal bold 2.4rem/4.9rem "Verdana",sans-serif;
+            @include border-radius(50%);
+        }
+
+        .category {
+            font-style: italic;
+            font-family: comic sans ms, cursive;
+        }
+
+        .title {
+            font: normal bold 4rem Georgia, serif;
+            margin-bottom: 0.4rem;
+            text-shadow: 2px 3px 0px #C1C1C1;
+
+            a {
+                color: #333;
+            }
+        }
+
+        hr {
+            clear: both;
+        }
+
+        .excerpt {
+            font-size: 2rem;
+            letter-spacing: 0.2px;
+            font-family: Georgia;
+            text-align: justify;
+        }
+
+        .continue {
+            margin: 0 2rem 2rem;
+            float: right;
+            border-radius: 5px;
+        }
+    }
+
+    #about {
+        background-color: white;
+        margin-bottom: 2.5rem;
+
+        header, section {
+            padding-left: 7.5rem;
+            padding-right: 7.5rem;
+        }
+
+        section {
+            margin-bottom: 6rem;
+        }
+
+        header {
+            background-color: #1C3340;
+            color: white;
+            max-height: 18rem;
+
+            img {
+                max-width: 17rem;
+                position: relative;
+                top: 9rem;
+                border-radius: 50%;
+                border: 4px solid white;
+            }
+
+            h1 {
+                margin-left: 21.5rem;
+                padding-bottom: 1rem;
+                position: relative;
+                top: -5rem;
+            }
+        }
+
+        section h2 {
+            font-size: 4rem;
+            color: #1c3340;
+            margin: 0;
+            margin-bottom: 1rem;
+            border-bottom: 3px solid #1C3340;
+        }
+
+        section#intro {
+            h2 {
+                font-size: 7rem;
+                margin-left: 21.2rem;
+                margin-top: -2rem;
+                border-bottom: none;
+            }
+
+            p {
+                font-size: 2rem;
+            }
+        }
+
+
+        section#skillsets {
+            i {
+                font-weight: bold;
+                font-size: 3rem;
+            }
+
+            ul {
+                margin-top: 2rem;
+            }
+
+            ul li {
+                font-size: 2rem;
+                display: inline;
+                background-color: #000000;
+                color: white;
+                border: 1px solid #1C3340;
+                padding: 3px;
+                border-radius: 4px;
+                margin-left: 1rem;
+            }
+        }
+
+        section#findme li {
+            display: inline;
+            font-size: 6rem;
+            margin-right: 3rem;
+        }
+
+        section#action {
+            font-size: 2rem;
+        }
+    }
+
+    div#whoops {
+        text-align: center;
+        height: 300px;
+
+        h1 {
+            font-size: 6rem;
+        }
+    }
+
+    div#building {
+        text-align: center;
+        padding-top: 10rem;
+
+        i {
+            font-size: 15rem;
+            color: #1C3340;
+        }
+    }
+
+    div#paginator {
+        margin: 0 auto;
+        max-width: auto;
+        margin-top: 3rem;
+
+        a, span {
+            min-width: 2rem;
+            font-size: 2rem;
+            border-radius: 2px;
+            border: 1px solid #337AB7;
+            display: inline-block;
+            padding: 2px 11px;
+            box-shadow: 0 0 2px #337AB7;
+        }
+
+        ul li {
+            float: left;
+            margin-right: 1rem;
+        }
+
+        ul li.active {
+            background: #8BB3C1;;
+        }
+    }
+}
+
+ul.tags {
+    margin: 0 !important;
+}
+
+.tags li {
+    float: left;
+    margin-left: 1rem;
+    padding: 0rem 1rem;
+    background-color: #8BB3C1;
+    color: white;
+    @include border-radius(15px);
+}
+
+.tags li:first-child {
+    margin-left: 0;
+}
+
+#postTitle {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 0rem !important;
+}
+
+#postMeta {
+    font-style: italic;
+}
+
+#filterList {
+    background-color: #F6F6F6;
+    margin-top: 5rem;
+    padding: 0;
+    font-size: 2rem;
+    box-shadow: 0 0 10px #999;
+
+    li {
+        height: 5rem;
+        line-height: 5rem;
+        border-bottom: 2px solid #DDDDDD;
+        padding-left: 2rem;
+
+        &.current {
+            background-color: #1C3340;
+        }
+
+        &:hover:not(.current) {
+            background-color: white;
+            cursor: pointer;
+        }
+    }
+
+    a, a:visited, a:hover {
+        text-decoration: none;
+        color: #337ab7;
+    }
+}
+
+.tagCnt, .cateCnt {
+    float: right;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    background-color: #F6F6F6;
+    height: 50%;
+    height: 2rem;
+    width: 2rem;
+    margin-top: 1.5rem;
+    text-align: center;
+    line-height: 2rem;
+    box-shadow: 0 0 3px #1C3340;
+    border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+    #l-main {
+        article .title {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        #about {
+            header {
+                img {
+                    max-width: 10rem;
+                    position: static;
+                    display: block;
+                    margin: 0 auto;
+                }
+
+                h1 {
+                    margin: 0 auto;
+                    text-align: center;
+                    position: static;
+                }
+            }
+
+            section#intro h2 {
+                font-size: 4rem;
+                margin: 0;
+                border-bottom: 3px solid #1C3340;
+            }
+
+            section#skillsets ul li {
+                display: block;
+                margin: 1rem;
+            }
+
+        }
+    }
+}

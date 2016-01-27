@@ -1,0 +1,26 @@
+td.linenos {
+    color: #4a4a40;
+    background: #e7e7e1;
+    border-radius: 5px 0px 0px 10px;    
+    border: none !important; 
+}
+
+div.highlight {
+    width: 97%;
+    margin-left: 1px;
+    background: #49483e url('../images/monokaibg.jpg') top left;
+    color: white;
+    padding: 5px 5px 5px 15px;
+    border-radius: 5px;
+}
+
+td.code {
+    width: 100%;
+    background: #49483e url('../images/monokaibg.jpg') top left;
+    color: white;    
+    border-radius: 5px;
+}
+
+td.code .highlight {
+    padding: 0px;
+}

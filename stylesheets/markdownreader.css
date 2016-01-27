@@ -1,0 +1,138 @@
+*{margin:0;padding:0;}
+#markdown-container{
+    margin:5rem auto 2.5rem auto;
+    background-color: white;
+    border:1px solid #ccc;
+    box-shadow:0 0 10px #999;
+    padding:2em;
+    line-height:1.4em;
+    font:16px helvetica,arial,freesans,clean,sans-serif;
+    color:black;
+}
+#markdown-container table{
+    font:13.34px helvetica,arial,freesans,clean,sans-serif;
+    color:black;
+}
+#markdown-container p {
+    margin:1em 0;
+    line-height:1.5em;
+}
+
+#markdown-container input[type=text],
+#markdown-container input[type=password],
+#markdown-container input[type=image],
+#markdown-container textarea{font:99% helvetica,arial,freesans,sans-serif;}
+#markdown-container select,
+#markdown-container option{padding:0 .25em;}
+#markdown-container optgroup{margin-top:.5em;}
+
+#markdown-container img{border:0;max-width:100%;}
+#markdown-container abbr{border-bottom:none;}
+#markdown-container a{color:#4183c4;text-decoration:none;}
+#markdown-container a:hover{text-decoration:underline;}
+#markdown-container a code,a:link code,a:visited code{color:#4183c4;}
+#markdown-container code {
+    padding: 0.2em;
+    margin: 0;
+    font-size: 85%;
+    background-color: rgba(0,0,0,0.08);
+    border-radius: 3px;
+}
+#markdown-container pre code {
+    background-color: transparent;
+    font-size: 100%;
+}
+#markdown-container h2,h3{margin:1em 0;}
+#markdown-container h1,
+#markdown-container h2,
+#markdown-container h3,
+#markdown-container h4,
+#markdown-container h5,
+#markdown-container h6{border:0;}
+#markdown-container h1{font-size:170%;border-bottom:4px solid #aaa;padding-bottom:.5em;margin-top:1.5em;}
+#markdown-container h1:first-child{margin-top:0;padding-top:.25em;border-top:none;}
+#markdown-container h2{font-size:150%;margin-top:1.5em;border-bottom:4px solid #e0e0e0;padding-bottom:.5em;}
+#markdown-container h3{margin-top:1em;}
+#markdown-container hr{border:1px solid #ddd;}
+#markdown-container ul{margin:1em 0 1em 2em;}
+#markdown-container ol{margin:1em 0 1em 2em;}
+#markdown-container ul li,
+#markdown-container ol li{margin-top:.5em;margin-bottom:.5em;}
+#markdown-container ul li{list-style-type:disc;}
+#markdown-container ul ul li, #markdown-container ol ul li{list-style-type:circle;}
+#markdown-container ol li{list-style-type: decimal;}
+#markdown-container ul ul,
+#markdown-container ul ol,
+#markdown-container ol ol,
+#markdown-container ol ul{margin-top:0;margin-bottom:0;}
+#markdown-container blockquote{margin:1em 0;border-left:5px solid #ddd;padding-left:.6em;color:#555;}
+#markdown-container dt{font-weight:bold;margin-left:1em;}
+#markdown-container dd{margin-left:2em;margin-bottom:1em;}
+
+#markdown-outline{
+    margin-top: 5rem;
+    border:1px solid #ccc;
+    box-shadow:0 0 10px #999;
+    padding: 5px 10px;
+    max-width: 22%;
+    float: right;
+    background-color: #fff;
+    overflow-y: auto;
+}
+#markdown-outline ul{
+    margin:5px 0 5px 0;
+    padding-left:30px;
+    font-size:12px;
+    border-left:1px dotted #ccc;
+}
+#markdown-outline ul:first-child{
+    border:none;
+}
+#markdown-outline li{
+    list-style-type:decimal;
+    margin:3px 0;
+}
+
+#markdown-backTop{
+    position: fixed;
+    right:5px;
+    bottom:5px;
+    padding:5px;
+    width:50px;
+    height:20px;
+    background:url(../images/mdreader_backTop.gif) no-repeat 5px 5px #fff;
+    border:1px solid #ccc;
+    cursor:pointer;
+}
+
+/*table style*/
+
+#markdown-container table {
+    border-collapse:collapse !important;
+}
+#markdown-container table th,
+#markdown-container table td{
+    border:1px solid #ddd !important;
+    padding: 5px;
+    line-height: 1.5;
+    vertical-align: top;
+    border-top: 1px solid #dddddd;
+
+}
+#markdown-container table th{
+    background: #EEE;
+}
+#markdown-container table p{
+    margin: 0;
+
+}
+#markdown-container header {
+    border-bottom: 8px solid #AAAAAA;
+    padding-bottom: 1rem;
+}
+
+@media (max-width: 1200px) {
+    #markdown-outline {
+        display: none !important;
+    }
+}
