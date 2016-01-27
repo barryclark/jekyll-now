@@ -3,7 +3,7 @@ layout: page
 title: About
 ---
 
-Hello, my name is Kenny Gorman. I dig database systems, data, and development. I am Chief Technologist; Data - Office of the CTO at Rackspace and Co-Founder of [ObjectRocket](http://www.objectrocket.com); a MongoDB as a Service.
+ Hello, my name is Kenny Gorman. I dig database systems, data, and development. I am a Founder at Eventador Labs in Austin TX. I was previously Chief Technologist; Data - Office of the CTO at Rackspace and Co-Founder of [ObjectRocket](http://www.objectrocket.com); a MongoDB as a Service.
 
 In 2012, ObjectRocket was acquired by [Rackspace](http://www.rackspace.com).
 
