@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Shared Access Signatures with Azure Storage
+title: Howto - Providing Secure File Storage through Azure API Management
 subtitle: How to replace your more or less secure ftp server.
 description: Shared Access Signatures with Azure Storage
 category: howto
