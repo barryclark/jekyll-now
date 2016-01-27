@@ -2,14 +2,13 @@
 layout: page
 title: About
 permalink: /about/
+slug: about
 ---
 
-Some information about you!
+This is a Jekyll theme. You can find out more information about customizing your theme Jekyll, as well as basic documentation Jekyll use in [jekyllrb.com](http://jekyllrb.com/).
 
-### More Information
+You can find the source code for this theme: [github.com/nandomoreirame/zetsu]({{ site.github }})
 
-A place to include any other types of information that you'd like to include about yourself.
+You can find the source code in Jekyll [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
 
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+Theme developed by: [{{ site.author.name }}]({{ site.author.url }})

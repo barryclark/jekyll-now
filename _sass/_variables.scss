@@ -1,0 +1,38 @@
+
+// Google fonts api
+@import url("//fonts.googleapis.com/css?family=Lato:400,300,400italic,700");
+@import url("//fonts.googleapis.com/css?family=Lora:400,400italic,700italic,700");
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
+
+// Our variables
+$font-family-base  : "Lato", Helvetica, Arial, sans-serif !default;
+$font-family-serif : "Lora", serif !default;
+$font-size-base    : 16px !default;
+$line-height-base  : 1.6 !default;
+$small-font-size   : $font-size-base * 0.875 !default;
+
+$spacing-unit : 30px !default;
+$padding-unit : ($spacing-unit/2) !default;
+
+$font-weight-base  : 400 !default;
+$font-weight-bold  : 700 !default;
+
+$white-color      : #fff !default;
+$text-color       : #303030 !default;
+$brand-color      : #58c93a !default;
+$background-color : #f1f1f1 !default;
+$primary-color    : $brand-color !default;
+$bg-color         : #ebebeb !default;
+
+$link-color: #5679a3 !default;
+$link-hover-color: lighten($link-color, 5%) !default;
+
+$gray-color:       #828282 !default;
+$gray-color-light: lighten($gray-color, 40%) !default;
+$gray-color-dark:  darken($gray-color, 25%) !default;
+
+// Width of the content area
+$content-width:    800px !default;
+$on-laptop:        $content-width !default;
+$on-palm:          560px !default;
+$on-phone:         480px !default;

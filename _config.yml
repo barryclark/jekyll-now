@@ -1,60 +1,29 @@
-highlighter: pygments
+# Site settings
+title: Zetsu
+email: zetsu@domain.com
+description: Um lindo tema feito para jekyll e com o <3
+baseurl: "/zetsu"
+url: "http://nandomoreira.me"
 
-markdown: redcarpet
-redcarpet:
-  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
+author:
+  name     : 'Fernando Moreira'
+  email    : hi@nandomoreira.me
+  url      : http://nandomoreira.me
+  facebook : http://facebook.com/fernando.dev
+  twitter  : http://twitter.com/nandomoreirame
 
-gems: [jekyll-paginate]
-paginate: 7
-paginate_path: "page:num"
-layout: post
-permalink: /:categories/:title
-excerpt_separator: "[-----]"
+github: https://github.com/nandomoreirame/zetsu
+disqus_shortname: "fernandomoreira"
+google_analytics: UA-52446115-1
 
-# mode: dev
-mode: product
-url: https://unifreak.github.io/
-devurl: http://localhost:4000/
-name: UniFreak
-title: UniFreak | Another yet unique freak is showing a freakshow
-description: "Fanghao's personal weblog, on coding or such stuff"
+paginate: 2
+comments: true
+paginate_path: "/page/:num"
 
-my:
-    displayName: UniFreak
-    realName: FangHao
-    realName_cn: 方浩
-    jobTitle: "PHP Coder"
-    contact:
-        qq: 744910240
-        email: fanghao90s@gmail.com
-        github: http://www.github.com/UniFreak
-        qzone: http://744910240.qzone.qq.com
-        pinterest: https://www.pinterest.com/miblah/
-        tel: 15671542698
-        address:
-            country: China
-            state: Hubei
-            city: Wuhan
-            distribute: Hongshan
-            postcode: 450000
-            cell: "XuefuJiayuan"
-    skills:
-        frontend: ["HTML | Markdown", "CSS | SASS", "JS | jQuery", "Bootstrap"]
-        backend: ["PHP", "MySQL", "Redis", "Regex", "Laravel", "OSC"]
-        tools: ["Sublime Text", "Git | Github", "Linux", "Jekyll | Liquid"]
+sass:
+  style: :compressed
+  sass_dir: _sass
 
-collections:
-    qqGroupGuide:
-        output: true
-
-defaults:
-  - scope:
-        path: ""
-        type: "posts"
-    values:
-        excerpt: "{{ page.content }} | slice: 0 300"
-  - scope:
-        path: ""
-        type: "qqGroupGuide"
-    values:
-        layout: markdownreader_bare
+# Build settings
+markdown  : kramdown
+permalink : /:title/

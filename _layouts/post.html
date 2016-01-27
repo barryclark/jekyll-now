@@ -1,43 +1,37 @@
-{% include mode_switcher.html %}
+---
+layout: default
+slug: single
+---
+<article class="post container card">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <span class="post-meta">
+      <time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date: "%b %-d, %Y" }}</time>
+      <span class="post-author">by {{ site.author.name }}</span>
+    </span>
+  </header>
 
-<!DOCTYPE html>
-<html>
-<head>
-    {% include head_base.html %}
-    {% include head_post.html %}
-</head>
+  <div class="post-content">
 
-<body>
-    {% include header.html %}
+    {{ content }}
 
-    <div class="container">
-        <div class="row">
-            <div id="markdown-container" class="col-lg-9">
-                <header>
-                    <p id="postTitle">{{ page.title }}</p>
-                    {% if page.tags %}
-                    <ul class="tags clearfix">
-                        {% for tag in page.tags %}
-                        <li><i class="fa fa-tag"></i> {{ tag }}</li>
-                        {% endfor %}
-                    </ul>
-                    {% endif %}
-                    <p id="postMeta">posted on {{ page.date | date_to_string }} under category <a href="{{crturl}}category/">{{ page.categories[0] }}</a></p>
+    <aside class="share">
 
-                </header>
+      <span>Share this: </span>
 
-                {{ content }}
-            </div>
+      <a href="http://twitter.com/share?text={{page.title}}&amp;url={{site.url}}{{ page.url }}&amp;hashtags=web,dev,blog,soudev&amp;via=nandomoreirame"
+      onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+        <i class="fa fa-twitter-square"></i>
+      </a>
 
-            <div id="markdown-outline" class="col-lg-3">
-            </div>
+      <a href="https://www.facebook.com/sharer/sharer.php?u={{site.url}}{{page.url}}"
+      onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+        <i class="fa fa-facebook-square"></i>
+      </a>
 
-            {% include disqus_load.html %}
-        </div>
-    </div>
+    </aside>
 
-    {% include footer.html %}
+    {% include comments.html %}
 
-    <script type="text/javascript" src="{{crturl}}javascripts/markdownreader.js"></script>
-</body>
-</html>
+  </div>
+</article>

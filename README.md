@@ -1,15 +1,49 @@
-#Intro
+# Zetsu
 
-My personal blog, built with Jekyll and Github page.
+> **Zetsu** - is a clean theme for Jekyll :smirk:
 
-#If you want to use this theme
+> :warning:
+  This theme requires ruby and rubygems installed
 
-1. fork it
-2. **Important**: If you want to use [Baidu Statistics][baiduTongji] functionality, remember to replace the content of `/javascripts/baidu_statistics.js` with your own. If you don't want to use it or don't understand what I'm talking about, just comment out line 43 of `/_includes/footer.html`. 
-3. **Important**: If you want to use the [Disqus][disqus] (comment system) functionality, remember to replace the content of `/_includes/disqus_load.html` and `/_includes/disqus_count.html` with your own content. If you don't want to use it or don't understand what I'm talking about, just comment out line 27 in `/_layouts/markdownreader_bare.html` and line 35 in `/_layouts/post.html`.
-4. Modify `/_config.yml` with your own info, replace `/images/me.png` with your own.
+* [x] Clean layout
+* [x] Resposive layout
+* [x] Preprocessor SASS
+* [x] CSS minified
+* [x] HTML minified
+* [x] Pagination
+* [x] Syntax highlight
+* [x] Author config
+* [x] Social links
+* [x] Share posts
+* [x] Comments with Disqus
 
-That's it
+---
 
-[baiduTongji]: http://tongji.baidu.com/web/welcome/login
-[disqus]: https://disqus.com/
+### Start in 4 steps
+
+1. Download or clone repo `git clone git@github.com:nandomoreirame/zetsu.git`
+2. Enter the folder: `cd zetsu/`
+3. Install Ruby gems: `bundle install`
+4. Start Jekyll server: `jekyll serve`
+
+Access, [localhost:4000/zetsu](http://localhost:4000/zetsu/)
+
+### Deploy in Github pages in 2 steps
+
+1. Change the variables `GITHUB_REPONAME` and `GITHUB_REPO_BRANCH` in `Rakefile`
+2. Run `rake site:publish` for build and publish on Github
+
+[Demo](http://nandomoreira.me/zetsu/)
+
+![Zetsu - free Jekyll theme](/screenshot.png)
+
+---
+
+### Copyright and license
+
+It is under [the MIT license](/LICENSE).
+
+> :warning:
+  Please remove metas `<meta name="robots" content="noindex">` and `<meta name="googlebot" content="noindex">` in `_layouts/default.html`
+
+Enjoy :yum:
