@@ -51,8 +51,8 @@ permalink: /work/forecaster/
 <div id="prev">
   <div class="case-wrapper">
     <div class="prev-wrapper clearfix">
-      <a href="/work/spaceshooters" title="Previous Project">
-        <p>Space Shooters</p>
+      <a href="/work/ag-hackday" title="Previous Project">
+        <p>AG Intern Hack Day</p>
         <p class="change-case-txt">Previous Project</p>
       </a>
     </div>

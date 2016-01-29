@@ -58,8 +58,8 @@ permalink: /work/ag-hackday/
 	<div id="next">
 		<div class="case-wrapper">
 			<div class="next-wrapper clearfix">
-				<a href="/work/spaceshooters" title="Next Project">
-					<p>Space Shooters</p>
+				<a href="/work/forecaster" title="Next Project">
+					<p>Forecaster (iOS)</p>
 					<p class="change-case-txt">Next Project</p>
 				</a>
 			</div>
