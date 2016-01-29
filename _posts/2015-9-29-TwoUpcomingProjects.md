@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 2 Upcoming Projects
-permalink: /blog/2UpcomingProjects/
+title: Two Upcoming Projects
+permalink: /blog/TwoUpcomingProjects/
 ---
-Hey all, I've got 2 exciting projects planned for my portfolio! The first, a redesign of MyCourses, the primary online course management software used here at RIT. MyCourses, at least the RIT version is not fun to use. It's got a wealth of useless information, widgets and panels. I could write a 2,000 word paper on everything that's wrong with RIT's customized MyCourses. However, that would result in me bashing the site. I don't aim to vent, I aim to provide some solid constructive criticism that will hopefully make it to the people that manage the RIT MyCourses front end.
+Hey all, I've got two exciting projects planned for my portfolio! The first, a redesign of MyCourses, the primary online course management software used here at RIT. MyCourses, at least the RIT version is not fun to use. It's got a wealth of useless information, widgets and panels. I could write a 2,000 word paper on everything that's wrong with RIT's customized MyCourses. However, that would result in me bashing the site. I don't aim to vent, I aim to provide some solid constructive criticism that will hopefully make it to the people that manage the RIT MyCourses front end.
 
 Instead of doing a plain ol' redesign, I'm going to try and emulate industry practices in taking this from concept to full blown hi-fidelity prototype. Here are the steps I will be taking (tentative):
 
@@ -14,7 +14,7 @@ Instead of doing a plain ol' redesign, I'm going to try and emulate industry pra
   <li>Hi-fidelity prototype using Pixate or InVision</li>
 </ol>
 
-Once the initial hi-fidelity prototype is complete I would conduct more usertesting, perhaps this time with people that are more familiar with RIT MyCourses. Throughout this process I would document <strong>EVERYTHING</strong>. I am very excited and have already gotten started with step 1. I'll be posting more soon!
+Once the initial hi-fidelity prototype is complete I would conduct more usability tests, perhaps this time with people that are more familiar with RIT MyCourses. Throughout this process I would document <strong>EVERYTHING</strong>. I am very excited and have already gotten started with step 1. I'll be posting more soon!
 
 The second project idea I had is quite different. The idea of revamping the interface of an existing, tangible product enticed me. One day, I happened to notice my girlfriend playing with the settings on her iPV D2 e-cig or, vape. Her particular vape has a very small screen similar to the old SanDisk mp3 players that displays four different things: current power output, temperature control, atomizer resistance, and current battery level. It can also display temperature. That's a lot of information to display on a screen about an inch in diameter. Additionally there are three unlabeled buttons for interacting with settings.
 
