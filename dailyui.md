@@ -4,6 +4,14 @@ title: Daily UI
 ---
 <section class="card">
 
+  <h1>Daily UI 042: ToDo List</h1>
+
+  <figure>
+    <img class="dailyui" src="/images/todo_dailyui1x.png" alt="ToDo List Daily UI">
+  </figure>
+
+  <p class="readable">Decided to go with a material design-based theme.. mobile is just more fun! I usually create site/app designs that are lighter in color as dark sites tend to be a bit more difficult for me. I'll be working on dark designs a bit more now.</p>
+
   <h1>Daily UI 040: Recipe</h1>
 
   <figure>
