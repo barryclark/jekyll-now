@@ -34,25 +34,25 @@
 
   }
 
-  // else if (window.location.pathname.indexOf("/dailyui/") === 0) {
-  //   top_container.classList.remove("top-home", "top-blog", "top-work")
-  //   top_container.classList.add("top-dailyui")
-  //
-  //   for (i=0; i < nav_a.length; i++) {
-  //     node = nav_a[i];
-  //   }
-  // }
+  else if (window.location.pathname.indexOf("/dailyui/") === 0) {
+    top_container.classList.remove("top-home", "top-blog", "top-work")
+    top_container.classList.add("top-dailyui")
+
+    for (i=0; i < nav_a.length; i++) {
+      node = nav_a[i];
+    }
+  }
 
   else if (window.location.pathname == "/") {
     top_container.classList.remove("top-blog", "top-work", "top-dailyui");
     top_container.classList.add("top-home");
   }
 
-  // this is a dailyui
+  // this is a blog post
   else {
     console.log(window.location.pathname);
-    top_container.classList.remove("top-home", "top-work", "top-blog");
-    top_container.classList.add("top-dailyui");
+    top_container.classList.remove("top-home", "top-work", "top-dailyui");
+    top_container.classList.add("top-blog");
 
     for (i=0; i < nav_a.length; i++) {
       node = nav_a[i];

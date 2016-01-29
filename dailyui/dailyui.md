@@ -1,7 +1,9 @@
 ---
 layout: default
 title: Daily UI
+permalink: /dailyui/
 ---
+
 <section class="card">
 
   <h1>Daily UI 042: ToDo List</h1>
