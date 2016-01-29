@@ -17,7 +17,7 @@ I think it's helpful to start by thinking about the definition of the MATE in no
 
 $$\begin{aligned}\mu_0(x, r) &= \text{E}\left(\left.Y^0 \right|X = x, R = r\right) \\ \mu_1(x, r) &= \text{E}\left(\left.Y^1 \right|X = x, R = r\right).\end{aligned}$$
 
-In an RDD, the average treatment effect at a given point $(x, r)$ on the response surface is not generally identified by conditioning because one of the potential outcomes will _never_ be observed: if $r < 0$ then $\text{Pr}(\left. T = 0 \right| X = x, R = r) = 1$ and $\text{Pr}(\left. T = 1 \right| X = x, R = r) = 0$ (and vice versa for $r > 0$). However, the treatment effect for the subpopulation where $R = 0$ can be identified under the assumption that the potential response surfaces are continuous in a neighborhood of the threshold. Thus the MATE, which can be written as
+In an RDD, the average treatment effect at a given point $(x, r)$ on the response surface is not generally identified by conditioning because one of the potential outcomes will _never_ be observed: if $r < 0$ then $\text{Pr}( T = 0 \vert X = x, R = r) = 1$ and $\text{Pr}( T = 1 \vert X = x, R = r) = 0$ (and vice versa for $r > 0$). However, the treatment effect for the subpopulation where $R = 0$ can be identified under the assumption that the potential response surfaces are continuous in a neighborhood of the threshold. Thus the MATE, which can be written as
 
 $$\begin{aligned}
 \delta_M &= \text{E}\left(\left. Y^1 - Y^0 \right| R = 0\right) \\
@@ -26,7 +26,7 @@ $$\begin{aligned}
 
 ### Regression estimation
 
-Now assume that we have a simple random sample $\left(y_i,r_i,t_i, x_i\right)_{i=1}^n$ of units and that each unit has a weight $w_i$ defined based on some measure of distance from the threshold. (A common choice is to use weights defined by a triangular kernel with an "optimal" bandwidth estimated based on a formula proposed by [Imbens and Kalyanaraman , 2012](http://doi.org/10.1093/restud/rdr043).) We can use these data to estimate the response surfaces (somehow...more on that in a minute) on each side of the cut-off, with $\hat\mu_0(x, r)$ for $r < 0$ and $\hat\mu_1(x, r)$ for $r > 0$. If we then use the sample distribution of $X$ in the neighborhood of $R = 0$ in place of the conditional density $d\left(\left.X = x \right| R = 0\right)$, we can estimate the MATE as 
+Now assume that we have a simple random sample $\left(y_i,r_i,t_i, x_i\right)_{i=1}^n$ of units and that each unit has a weight $w_i$ defined based on some measure of distance from the threshold. (A common choice is to use weights defined by a triangular kernel with an "optimal" bandwidth estimated based on a formula proposed by [Imbens and Kalyanaraman , 2012](http://doi.org/10.1093/restud/rdr043).) We can use these data to estimate the response surfaces (somehow...more on that in a minute) on each side of the cut-off, with $\hat\mu_0(x, r)$ for $r < 0$ and $\hat\mu_1(x, r)$ for $r > 0$. If we then use the sample distribution of $X$ in the neighborhood of $R = 0$ in place of the conditional density $d\left(X = x \vert R = 0\right)$, we can estimate the MATE as 
 
 $$\hat\delta_M = \frac{1}{W} \sum_{i=1}^n w_i \left[\hat\mu_1(x_i, 0) - \hat\mu_0(x_i, 0)\right],$$
 
@@ -59,5 +59,5 @@ The same principle will also hold if you want to include higher-order interactio
 
 I've shown that the "centering trick" is just a way to express a certain regression estimator for the marginal average treatment effect in an RDD. Having suggested that this is a good idea, I should also note a few points that might bear further investigation. 
 
-1. My regression estimator uses the sample distribution of $X$ in the neighborhood of the threshold as an estimate of $d(X = x|R = 0)$. This seems reasonable, but I wonder whether there might be a better approach to estimating this conditional density.
+1. My regression estimator uses the sample distribution of $X$ in the neighborhood of the threshold as an estimate of $d(X = x \vert R = 0)$. This seems reasonable, but I wonder whether there might be a better approach to estimating this conditional density.
 2. So far I've considered the MATE identified by a sharp RDD, in which we examine the effects of treatment assignment, regardless of whether units assigned to treatment actually received/participated in it. In fuzzy RDDs, the target parameter is the average effect of treatment receipt for those on the threshold of eligibility and who comply with the assignment rule. The effect is estimated using two-stage least squares, taking treatment assignment as an instrument for treatment receipt. I'm not entirely sure how the regression estimator approach would work in this instrumental variables setting.
