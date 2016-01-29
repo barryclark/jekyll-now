@@ -18,7 +18,7 @@ I think it's helpful to start by thinking about the definition of the MATE in no
 
 $$\begin{aligned}\mu_0(x, r) &= \text{E}\left(\left.Y^0 \right|X = x, R = r\right) \\ \mu_1(x, r) &= \text{E}\left(\left.Y^1 \right|X = x, R = r\right).\end{aligned}$$
 
-In an RDD, the average treatment effect at a given point $$(x, r)$$ on the response surface is not generally identified by conditioning because one of the potential outcomes will _never_ be observed: if $$r < 0$$ then $$\text{Pr}(T = 0| X = x, R = r) = 1$$ and $$\text{Pr}(T = 1| X = x, R = r) = 0$$ (and vice versa for $$r > 0$$). However, the treatment effect for the subpopulation where $$R = 0$$ can be identified under the assumption that the potential response surfaces are continuous in a neighborhood of the threshold. Thus the MATE, which can be written as
+In an RDD, the average treatment effect at a given point $$(x, r)$$ on the response surface is not generally identified by conditioning because one of the potential outcomes will _never_ be observed: if $$r < 0$$ then $$\text{Pr}(\left. T = 0 \right| X = x, R = r) = 1$$ and $$\text{Pr}(\left. T = 1 \right| X = x, R = r) = 0$$ (and vice versa for $$r > 0$$). However, the treatment effect for the subpopulation where $$R = 0$$ can be identified under the assumption that the potential response surfaces are continuous in a neighborhood of the threshold. Thus the MATE, which can be written as
 
 $$\begin{aligned}
 \delta_M &= \text{E}\left(\left. Y^1 - Y^0 \right| R = 0\right) \\
