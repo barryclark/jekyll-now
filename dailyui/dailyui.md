@@ -29,6 +29,15 @@ permalink: /dailyui/
   </figure>
 
   <p class="readable">This calendar was created whilst I was trying to create a new calendar for my RIT MyCourses redesign. I figured the calendar was too colorful for an academic site so I played with the design a little more as Daily UI allows for any sort of creativity!</p>
+  
+  <h1>Daily UI 002: Login Page</h1>
+  
+  <figure>
+    <img class="dailyui" src="/images/login_dailyui.png" alt="Login Daily UI">
+  </figure>
+  
+  <p class="readable">I created this login page a while ago when it was the Daily UI (last year). I decided to use it as a prototype design for an event called Blind By Design. BBD is an annual [Code in the Dark](http://codeinthedark.com) inspired event hosted by the RIT web/app design & development club, Localhost. It was simple design with a few twists that could be a little tricky to code without any previewing in as little as 15 minutes!</p>
+  
 
 </section>
 
