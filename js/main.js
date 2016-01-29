@@ -6,12 +6,11 @@
   var blogEntries = document.querySelectorAll(".container.posts");
 
   if (window.location.pathname.indexOf("/blog/") === 0) {
-    top_container.classList.remove("top-home", "top-work");
+    top_container.classList.remove("top-home", "top-work", "top-dailyui");
     top_container.classList.add("top-blog");
 
     for (i=0; i < nav_a.length; i++) {
       node = nav_a[i];
-      // node.style.color = "rgba(0,0,0,0.5)";
     }
 
     for (i=0; i < blogEntries.length; i++) {
@@ -26,30 +25,37 @@
   }
 
   else if (window.location.pathname.indexOf("/work/") === 0) {
-    top_container.classList.remove("top-home", "top-blog");
+    top_container.classList.remove("top-home", "top-blog", "top-dailyui");
     top_container.classList.add("top-work");
 
     for (i=0; i < nav_a.length; i++) {
       node = nav_a[i];
-      // node.style.color = "rgba(0,0,0,0.5)";
     }
 
   }
 
+  else if (window.location.pathname.indexOf("/dailyui/") === 0) {
+    top_container.classList.remove("top-home", "top-blog", "top-work")
+    top_container.classList.add("top-dailyui")
+
+    for (i=0; i < nav_a.length; i++) {
+      node = nav_a[i];
+    }
+  }
+
   else if (window.location.pathname == "/") {
-    top_container.classList.remove("top-blog", "top-work");
+    top_container.classList.remove("top-blog", "top-work", "top-dailyui");
     top_container.classList.add("top-home");
   }
 
   // this this a blog post
   else {
     console.log(window.location.pathname);
-    top_container.classList.remove("top-home", "top-work");
+    top_container.classList.remove("top-home", "top-work", "top-dailyui");
     top_container.classList.add("top-blog");
 
     for (i=0; i < nav_a.length; i++) {
       node = nav_a[i];
-      // node.style.color = "rgba(0,0,0,0.5)";
     }
   }
 
