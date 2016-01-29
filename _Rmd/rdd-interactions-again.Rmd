@@ -26,7 +26,7 @@ $$\begin{aligned}
 
 ### Regression estimation
 
-Now assume that we have a simple random sample $\left(y_i,r_i,t_i, x_i\right)_{i=1}^n$ of units and that each unit has a weight $w_i$ defined based on some measure of distance from the threshold. (A common choice is to use weights defined by a triangular kernel with an "optimal" bandwidth estimated based on a formula proposed by [Imbens and Kalyanaraman , 2012](http://doi.org/10.1093/restud/rdr043).) We can use these data to estimate the response surfaces (somehow...more on that in a minute) on each side of the cut-off, with $\hat\mu_0(x, r)$ for $r < 0$ and $\hat\mu_1(x, r)$ for $r > 0$. If we then use the sample distribution of $X$ in the neighborhood of $R = 0$ in place of the conditional density $d\left(X = x \vert R = 0\right)$, we can estimate the MATE as 
+Now assume that we have a simple random sample $\left(y_i,r_i,t_i, x_i\right)_{i=1}^n$ of units and that each unit has a weight $w_i$ defined based on some measure of distance from the threshold. We can use these data to estimate the response surfaces (somehow...more on that in a minute) on each side of the cut-off, with $\hat\mu_0(x, r)$ for $r < 0$ and $\hat\mu_1(x, r)$ for $r > 0$. If we then use the sample distribution of $X$ in the neighborhood of $R = 0$ in place of the conditional density $d\left(X = x \vert R = 0\right)$, we can estimate the MATE as 
 
 $$\hat\delta_M = \frac{1}{W} \sum_{i=1}^n w_i \left[\hat\mu_1(x_i, 0) - \hat\mu_0(x_i, 0)\right],$$
 
@@ -55,9 +55,54 @@ $$\mu_{t_i}(x_i, r_i) = \beta_0 + \beta_1 r_i + \beta_2 t_i + \beta_3 r_i t_i + 
 
 The same principle will also hold if you want to include higher-order interactions between covariates and the treatment: calculate the interaction term first, then re-center it. There's one exception though. If you want to include an interaction between a covariate $x$, the _running variable_, and the treatment indicator (who knows...you might aspire to do this some day...), then all you need to do is center $x$. In particular, you should _not_ calculate the interaction $x_i r_i$ and then re-center it (doing so could pull the average away from the threshold of $R = 0$). 
 
+### R, MATEs!
+
+Here's some R code that implements the centering trick for the simulated example from my last post:
+
+```{r, message=FALSE}
+library(sandwich)
+library(lmtest)
+library(rdd)
+
+# simulate an RDD
+set.seed(20160124)
+simulate_RDD <- function(n = 2000, R = rnorm(n, mean = qnorm(.2))) {
+  n <- length(R)
+  T <- as.integer(R > 0)
+  X1 <- 10 + 0.6 * (R - qnorm(.2)) + rnorm(n, sd = sqrt(1 - 0.6^2))
+  X2 <- sample(LETTERS[1:4], n, replace = TRUE, prob = c(0.2, 0.3, 0.35, 0.15))
+  Y0 <- 0.4 * R + 0.1 * (X1 - 10) + c(A = 0, B = 0.30, C = 0.40, D = 0.55)[X2] + rnorm(n, sd = 0.9)
+  Y1 <- 0.35 + 0.3 * R + 0.18 * (X1 - 10) + c(A = -0.50, B = 0.30, C = 0.20, D = 0.60)[X2] + rnorm(n, sd = 0.9)
+  Y <- (1 - T) * Y0 + T * Y1
+  data.frame(R, T, X1, X2, Y0, Y1, Y)
+}
+RD_data <- simulate_RDD(n = 2000)
+
+# calculate kernel weights
+bw <- with(RD_data, IKbandwidth(R, Y, cutpoint = 0))
+RD_data$w <- kernelwts(RD_data$R, center = 0, bw = bw)
+
+# center the covariates
+X_mat <- model.matrix(~ 0 + X2 + X1, data = RD_data)
+X_cent <- as.data.frame(apply(X_mat, 2, function(x) x - weighted.mean(x, w = RD_data$w)))
+RD_data_aug <- cbind(X_cent, subset(RD_data, select = c(-X1, -X2)))
+cov_names <- paste(names(X_cent)[-1], collapse = " + ")
+
+# calculate the MATE using RDestimate
+RD_form <- paste("Y ~ R |", cov_names)
+summary(RDestimate(as.formula(RD_form), data = RD_data_aug))
+
+# or using lm
+lm_form <- paste("Y ~ R + T + R:T + T*(", cov_names,")")
+lm_fit <- lm(as.formula(lm_form), weights = w, data = subset(RD_data_aug, w > 0))
+coeftest(lm_fit, vcov. = vcovHC(lm_fit, type = "HC1"))["T",]
+```
+
+
 ### Comments
 
 I've shown that the "centering trick" is just a way to express a certain regression estimator for the marginal average treatment effect in an RDD. Having suggested that this is a good idea, I should also note a few points that might bear further investigation. 
 
 1. My regression estimator uses the sample distribution of $X$ in the neighborhood of the threshold as an estimate of $d(X = x \vert R = 0)$. This seems reasonable, but I wonder whether there might be a better approach to estimating this conditional density.
-2. So far I've considered the MATE identified by a sharp RDD, in which we examine the effects of treatment assignment, regardless of whether units assigned to treatment actually received/participated in it. In fuzzy RDDs, the target parameter is the average effect of treatment receipt for those on the threshold of eligibility and who comply with the assignment rule. The effect is estimated using two-stage least squares, taking treatment assignment as an instrument for treatment receipt. I'm not entirely sure how the regression estimator approach would work in this instrumental variables setting.
+2. As far as I understand, the current best practice for defining the "neighborhood" of the threshold is to use weights based on a triangular kernel and an "optimal" bandwidth proposed by [Imbens and Kalyanaraman (2012)](http://doi.org/10.1093/restud/rdr043). The optimal bandwidth is derived for the simple RDD model with no covariates, though the authors comment that inclusion of additional covariates should not greatly affect the result unless the covariates are strongly correlated with the outcome, conditional on the running variable. However, what if interest centers on the covariate-by-treatment interaction itself, rather than just the MATE? It is not clear that the bandwidth is optimal for estimation/inference on the interaction term. 
+3. So far I've considered the MATE identified by a sharp RDD, in which we examine the effects of treatment assignment, regardless of whether units assigned to treatment actually received/participated in it. In fuzzy RDDs, the target parameter is the average effect of treatment receipt for those on the threshold of eligibility and who comply with the assignment rule. The effect is estimated using two-stage least squares, taking treatment assignment as an instrument for treatment receipt. I'm not entirely sure how the regression estimator approach would work in this instrumental variables setting.
