@@ -1,24 +1,9 @@
-<div class="container">
-
-### ECS 289K HW1
-
-<div class="jumbotron">
 
 ## News Simarity between NewYork Times and Washington Post News
 
 We want to find the similar news between NewYork Times and Washington Post News. We went through the process from data collection, data munging, data analysis and presentation.
 
-
-
-</div>
-
 * * *
-
-</div>
-
-<div class="row marketing">
-
-<div class="col-md-6">()
 
 <table border="2" style="background-color:FFFFFF;border-collapse:collapse;border:2px solid 808080;color:#000000;width:100%" cellpadding="3" cellspacing="3" align="center">
 
