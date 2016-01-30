@@ -2,6 +2,7 @@
 layout: page
 title: Impressum
 permalink: /impressum/
+header-img: "images/about-bg.jpg"
 ---
 
 Holger Reinhardt

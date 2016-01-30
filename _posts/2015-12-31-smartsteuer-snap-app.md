@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Creating the Smartsteuer 'Snap' App
-subtitle: A backstage report
-description: A behind the scenes view of the birth of our youngest creation.
+subtitle: A behind the scenes view of the birth of our youngest creation.
 category: product
 tags: [smartsteuer, mobile, custdev]
 author: Eike Hirsch
 author_email: eike.hirsch@smartsteuer.de
+header-img: "images/bg-post.jpg"
 ---
 
 As we at [smartsteuer](https://www.smartsteuer.de) really enjoyed how our [Smartsteuer Smartphone App](https://www.smartsteuer.de/online/steuererklaerung-online/#smartphone) was imagined and eventually created, I thought it might be fun to write about it. This blog post is not that much technical but describes our journey to a product which (hopefully) will create value for our customers. 

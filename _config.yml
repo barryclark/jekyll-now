@@ -2,11 +2,12 @@
 # This file contains configuration flags to customize your site
 #
 
-# Name of your site (displayed in the header)
-name: Design + Dev + Ops at haufe-lexware.de
-
-# Short bio or description (displayed in the header)
+# Your site 
+title: Design + Dev + Ops at haufe-lexware.de
 description: The Development, Design and Ops blog from Haufe-Lexware
+header-img: images/bg-home.jpg
+email: your-email@yourdomain.com
+copyright_name: Haufe-Lexware GmbH &amp; Co.KG
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://raw.githubusercontent.com/Haufe-Lexware/Haufe-Lexware.github.io/master/images/haufe-logo.jpg
@@ -58,6 +59,9 @@ markdown: redcarpet
 highlighter: pygments
 permalink: /:title/
 
+# default pagination
+paginate: 5
+
 # do not publish future posts
 future: false
 
@@ -71,6 +75,8 @@ sass:
 # Use the following plug-ins
 gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+  - jekyll-paginate
+  - jekyll-feed
 
 # Exclude these files from your production _site
 exclude:

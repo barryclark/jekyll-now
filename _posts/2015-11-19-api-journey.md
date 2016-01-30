@@ -2,11 +2,11 @@
 layout: post
 title: The beginnings of our API Journey
 subtite: Intro to our API style guide
-description: Got API?
 category: api
 tags: [api]
 author: Holger
 author_email: holger.reinhardt@haufe-lexware.com 
+header-img: "images/bg-post.jpg"
 ---
 
 Before joining [HaufeDev](http://twitter.com/HaufeDev) I was fortunate to work in the [API Academy](http://apiacademy.co) consultancy with some of the smartest guys in the API field. So it was quite predictable that I would advocate for APIs as one of the cornerstones in our technology strategy.
