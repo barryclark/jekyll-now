@@ -6,9 +6,9 @@ layout: default
 <header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
 
     <!-- category link -->
-    {% if post.category %}
+    {% if page.category %}
       {% for site_category in site.data.categories %}
-        {% if site_category.slug == post.category %}
+        {% if site_category.slug == page.category %}
           {% assign category = site_category %}
         {% endif %}
       {% endfor %}
@@ -20,9 +20,9 @@ layout: default
     {% endif %}
 
     <!-- tag links -->
-    {% if post.tags.size > 0 %}
+    {% if page.tags.size > 0 %}
       {% capture tags_content %} with tags {% endcapture %}
-      {% for post_tag in post.tags %}
+      {% for post_tag in page.tags %}
           {% for data_tag in site.data.tags %}
             {% if data_tag.slug == post_tag %}
               {% assign tag = data_tag %}
@@ -74,6 +74,8 @@ layout: default
                     </li>
                     {% endif %}
                 </ul>
+
+                <hr>
 
                 {% include disqus.html %}
 
