@@ -4,7 +4,7 @@ title: Use Polymorphic Associations to organize the Rails models
 ---
 # Part 2: Views and Controllers
 
-At the end of the [first part]({% post_url 2015-12-5-use-polymorphic-associations-to-organize-the-rails-models-part-1 %}) of this article we could already test the Polymorphic Associations in the rails console. This means our job is practically done. It is however a good exercise to continue our example by adapting the Views and Controller to the new Polymorphic setup.
+At the end of the [first part]({% post_url 2015-12-5-use-polymorphic-associations-to-organize-the-rails-models-part-1 %}) of this article we could already test the Polymorphic Associations in the Rails console. This means our job is practically done. It is however a good exercise to continue our example by adapting the Views and Controller to the new Polymorphic setup.
 
 > This example is using Slim for views templates
 
@@ -134,6 +134,7 @@ resources :printers, only: [:new, :create, :edit, :update]
 
 ### Computers View  
 The views will need to be adapted accordingly, moving the **form**, **new** and **edit** templates from the products, into the computer folder. We are going to use nested forms to pass also the params for the product:
+
 <div class="file_path">.app/views/computers/_form.html.slim</div>
 ```haml
 ...
@@ -148,8 +149,10 @@ The views will need to be adapted accordingly, moving the **form**, **new** and 
   = f.button :submit, class: "btn btn-primary btn-block"
 ...
 ```
+
 For the `edit` action, the product fields will use the `value:` to get the existing data.
 The parameters passed on submit will have the following structure:
+
 ```bash
 {"name"=>"Test Computer", "cpu"=>"Core i5", "memory"=>"16GB", "product"=>{"price"=>"1300", "stock"=>"20"}}
 ```
