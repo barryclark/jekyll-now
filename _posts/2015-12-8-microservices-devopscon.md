@@ -1,12 +1,12 @@
 ---
 layout: post
 title: DevOpsCon 2015 - Is it really about the tools?
-subtite: A opinionated commentary by Elias Weingaertner
-description:  My personal findings from DevOpsCon 2015 in Munich
+subtitle: My opinionated findings from DevOpsCon 2015 in Munich
 category: conference
 tags: [devops, microservice]
 author: Elias Weingaertner
 author_email: elias.weingaertner@haufe-lexware.com
+header-img: "images/bg-post.jpg"
 ---
 
 Two weeks ago, I attended the DevOp Conference (DevOpsCon) in Munich. As expected, it turned out to be the Mecca for Docker fans and Microservice enthusiasts. While I really enjoyed the conference, I drew two somehow controversial conclusions that are open for debate:

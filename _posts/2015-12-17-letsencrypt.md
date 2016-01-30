@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Howto - Leverage 'Let's Encrypt' on Azure
+title: Using 'Let's Encrypt' Certificates with Azure
 subtitle: Create free valid SSL certificates in 20 minutes.
-description: Howto - Leverage 'Let's Encrypt' on an Azure Ubuntu VM
 category: howto
 tags: [security, cloud]
 author: Martin Danielsson
 author_email: martin.danielsson@haufe-lexware.com 
+header-img: "images/bg-post.jpg"
 ---
 
 [Let's Encrypt](https://letsencrypt.org/) is a new Certificate Authority which has a couple of benefits almost unheard of before: It's free, automated and open. This means you can actually use Let's Encrypt to create real SSL certificates which will be accepted as valid by web browsers and others.

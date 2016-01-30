@@ -2,43 +2,67 @@
 layout: default
 ---
 
+<!-- Post Header -->
+<header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>{{ page.title }}</h1>
+                    <h2 class="subheading">All articles posted in '{{ page.title }}'</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
 <article class="page">
-    <h1>{{page.title}}</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 
-    <p class='info'>
-        <span>Articles by category</span>
-    </p>
+                {% if site.categories[page.category] %}
+                    {% for post in site.categories[page.category] %}
 
-    <hr/>
-  
-    <div id="post-content">
-        {% if site.categories[page.category] %}
-            {% for post in site.categories[page.category] %}
-                {% capture post_year %}{{ post.date | date: '%Y' }}{% endcapture %}
-                {% if forloop.first %}
-                    <h3>{{ post_year }}</h3><ul>
-                {% endif %}
-          
-                {% if forloop.first == false %}
-                    {% assign previous_index = forloop.index0 | minus: 1 %}
-                    {% capture previous_post_year %}{{ site.categories[page.category][previous_index].date | date: '%Y' }}{% endcapture %}
-                    {% if post_year != previous_post_year %}
-                        </div><h3>{{ post_year }}</h3><ul>
-                    {% endif %}
-                {% endif %}
-          
-                <li>
-                    <a href="{{ post.url }}/" class="read-more">
-                        {{ post.title }}
-                    </a>
-                </li>
+                        <!-- Uncomment for listing by year
+                        {% capture post_year %}{{ post.date | date: '%Y' }}{% endcapture %}
+                        {% if forloop.first %}
+                            <h3>{{ post_year }}</h3>
+                        {% endif %}
+                  
+                        {% if forloop.first == false %}
+                            {% assign previous_index = forloop.index0 | minus: 1 %}
+                            {% capture previous_post_year %}{{ site.categories[page.category][previous_index].date | date: '%Y' }}{% endcapture %}
+                            {% if post_year != previous_post_year %}
+                                </div><h3>{{ post_year }}</h3>
+                            {% endif %}
+                        {% endif %}
+                        -->
 
-                {% if forloop.last %}
-                    </ul>
+                        <div class="post-preview">
+                            <a href="{{ post.url | prepend: site.baseurl }}">
+                                <h2 class="post-title">            {{ post.title }}
+                                </h2>
+                                {% if post.subtitle %}
+                                <h3 class="post-subtitle">
+                                    {{ post.subtitle }}
+                                </h3>
+                                {% endif %}
+                            </a>
+                            <p class="post-meta">Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}</p>
+                        </div>
+
+                        <hr>
+
+                    {% endfor %}
+                {% else %}
+                    <p>There are no posts in this category.</p>
                 {% endif %}
-            {% endfor %}
-        {% else %}
-            <p>There are no posts in this category.</p>
-        {% endif %}
+
+           </div>
+        </div>
     </div>
 </article>
+
+<hr>

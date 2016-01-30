@@ -1,12 +1,12 @@
 ---
 layout: post
 title: We are live or How to start a developer blog
-subtite: A short introduction
-description: How to start our developer blog
+subtitle: The 'Hello World' Post
 category: general
 tags: [cto, culture]
 author: Holger
 author_email: holger.reinhardt@haufe-lexware.com 
+header-img: "images/bg-post.jpg"
 ---
 
 So how does one start a developer blog? It is pretty intimidating to look at blank editor (BTW, I use [Mou](http://25.io/mou/) to write this post ;) and think about some witty content, some heading which would rope you in and make you want to read what we have to say. But why should you? And who are we anyhow?

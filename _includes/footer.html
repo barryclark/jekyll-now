@@ -1,0 +1,89 @@
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    <li>
+                        <a href="{{ "/feed.xml" | prepend: site.baseurl }}">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    {% if site.footer-links.twitter %}
+                    <li>
+                        <a href="https://twitter.com/{{ site.footer-links.twitter }}">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    {% endif %}
+                    {% if site.footer-links.facebook %}
+                    <li>
+                        <a href="https://www.facebook.com/{{ site.footer-links.facebook }}">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    {% endif %}
+                    {% if site.footer-links.github %}
+                    <li>
+                        <a href="https://github.com/{{ site.footer-links.github }}">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    {% endif %}
+                    {% if site.footer-links.email %}
+                    <li>
+                        <a href="mailto:{{ site.footer-links.email }}">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    {% endif %}
+                    {% if site.footer-links.linkedin %}
+                    <li>
+                        <a href="https://www.linkedin.com/company/{{ site.footer-links.linkedin }}">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    {% endif %}
+                    {% if site.footer-links.slideshare %}
+                    <li>
+                        <a href="http://www.slideshare.net/{{ site.footer-links.slideshare }}">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-slideshare fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    {% endif %}
+                </ul>
+                <p class="copyright text-muted">Copyright &copy; {{ site.copyright_name }} {{ site.time | date: '%Y' }}</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="{{ "/js/jquery.min.js " | prepend: site.baseurl }}"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="{{ "/js/bootstrap.min.js " | prepend: site.baseurl }}"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="{{ "/js/clean-blog.min.js " | prepend: site.baseurl }}"></script>
