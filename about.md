@@ -12,4 +12,5 @@ I'm a graduate student at UC Davis majoring Statistics. I am learning and practi
 (to be continued)
 
 ### Contact me
-[jpzhang@ucdavis.edu](mailto:jpzhang@ucdavis.edu)
+**Email**: [jpzhang@ucdavis.edu](mailto:jpzhang@ucdavis.edu)
+**Linkedin**: [https://www.linkedin.com/in/jpzhangv]
