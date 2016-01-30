@@ -2,7 +2,7 @@
 layout: post
 title: Web Developer Tips & Tricks...
 excerpt_separator: <!--more-->
-img_file: blog-adventure.png
+img_file: code-asif.png
 ---
 Here is a working copy of list of tips and tricks for web developers...
 <!--more-->
