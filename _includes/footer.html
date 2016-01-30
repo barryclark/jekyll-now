@@ -52,6 +52,26 @@
                         </a>
                     </li>
                     {% endif %}
+                    {% if site.footer-links.linkedin %}
+                    <li>
+                        <a href="https://www.linkedin.com/company/{{ site.footer-links.linkedin }}">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    {% endif %}
+                    {% if site.footer-links.slideshare %}
+                    <li>
+                        <a href="http://www.slideshare.net/{{ site.footer-links.slideshare }}">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-slideshare fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    {% endif %}
                 </ul>
                 <p class="copyright text-muted">Copyright &copy; {{ site.copyright_name }} {{ site.time | date: '%Y' }}</p>
             </div>
