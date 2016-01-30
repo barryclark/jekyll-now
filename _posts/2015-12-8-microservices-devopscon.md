@@ -1,7 +1,7 @@
 ---
 layout: post
 title: DevOpsCon 2015 - Is it really about the tools?
-subtite: My opinionated findings from DevOpsCon 2015 in Munich
+subtitle: My opinionated findings from DevOpsCon 2015 in Munich
 category: conference
 tags: [devops, microservice]
 author: Elias Weingaertner

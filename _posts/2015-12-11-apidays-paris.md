@@ -1,7 +1,7 @@
 ---
 layout: post
 title: APIdays Paris - From Philosophy to Technology and back again
-subtite: A biased report from APIdays Global in Paris
+subtitle: A biased report from APIdays Global in Paris
 category: conference
 tags: [api]
 author: Martin

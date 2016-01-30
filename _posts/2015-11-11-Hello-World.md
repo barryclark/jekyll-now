@@ -1,7 +1,7 @@
 ---
 layout: post
 title: We are live or How to start a developer blog
-subtite: A short introduction
+subtitle: The 'Hello World' Post
 category: general
 tags: [cto, culture]
 author: Holger

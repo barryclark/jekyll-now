@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The beginnings of our API Journey
-subtite: Intro to our API style guide
+subtitle: Intro to our API Style Guide
 category: api
 tags: [api]
 author: Holger
