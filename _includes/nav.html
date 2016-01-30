@@ -21,7 +21,7 @@
                 {% for page in site.pages %}
                 {% if page.title %}
                 <!-- suppress all category and tag meta pages -->
-                {% if page.url contains '/meta/'}
+                {% if page.url contains '/meta/' %}
                 {% else %}
 				{% if page.url != '/404.html' %}
                 <li>
