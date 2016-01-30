@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Howto - Fluentd Log Parsing
+title: Better Log Parsing with Fluentd
 subtitle: Description of a couple of approaches to designing your fluentd configuration.
 category: howto
 tags: [devops, logging]

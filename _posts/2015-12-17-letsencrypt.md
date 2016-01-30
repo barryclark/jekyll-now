@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Howto - Leverage 'Let's Encrypt' on Azure
+title: Using 'Let's Encrypt' Certificates with Azure
 subtitle: Create free valid SSL certificates in 20 minutes.
 category: howto
 tags: [security, cloud]

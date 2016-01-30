@@ -10,7 +10,7 @@ layout: default
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="post-heading">
                     <h1>{{ page.title }}</h1>
-                    <h2 class="subheading">Articles posted in {{ page.title }}</h2>
+                    <h2 class="subheading">Articles posted in '{{ page.title }}'</h2>
                 </div>
             </div>
         </div>
@@ -24,20 +24,38 @@ layout: default
 
                 {% if site.categories[page.category] %}
                     {% for post in site.categories[page.category] %}
+
+                        <!-- Uncomment for listing by year
                         {% capture post_year %}{{ post.date | date: '%Y' }}{% endcapture %}
                         {% if forloop.first %}
-                            <h3>{{ post_year }}</h3><ul>
+                            <h3>{{ post_year }}</h3>
                         {% endif %}
                   
                         {% if forloop.first == false %}
                             {% assign previous_index = forloop.index0 | minus: 1 %}
                             {% capture previous_post_year %}{{ site.categories[page.category][previous_index].date | date: '%Y' }}{% endcapture %}
                             {% if post_year != previous_post_year %}
-                                </div><h3>{{ post_year }}</h3><ul>
+                                </div><h3>{{ post_year }}</h3>
                             {% endif %}
                         {% endif %}
-                  
-                        <li>
+                        -->
+
+                        <div class="post-preview">
+                            <a href="{{ post.url | prepend: site.baseurl }}">
+                                <h2 class="post-title">            {{ post.title }}
+                                </h2>
+                                {% if post.subtitle %}
+                                <h3 class="post-subtitle">
+                                    {{ post.subtitle }}
+                                </h3>
+                                {% endif %}
+                            </a>
+                            <p class="post-meta">Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}</p>
+                        </div>
+
+                        <hr>
+
+                        <!-- <li>
                             <a href="{{ post.url }}/" class="read-more">
                                 {{ post.title }}
                             </a>
@@ -46,11 +64,12 @@ layout: default
                         {% if forloop.last %}
                             </ul>
                         {% endif %}
+                    -->
                     {% endfor %}
                 {% else %}
                     <p>There are no posts in this category.</p>
                 {% endif %}
-                
+
            </div>
         </div>
     </div>
