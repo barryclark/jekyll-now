@@ -13,7 +13,7 @@ layout: default
         {% endif %}
       {% endfor %}
       {% if category %}
-        {% capture category_content %} in <a href="/meta/category/{{ category.slug }}/">{{ category.name }}</a>{% endcapture %}
+        {% capture category_content %} in <b><a href="/meta/category/{{ category.slug }}/">{{ category.name }}</a></b>{% endcapture %}
       {% endif %}
     {% else %}
       {% assign category_content = '' %}
@@ -21,7 +21,7 @@ layout: default
 
     <!-- tag links -->
     {% if page.tags.size > 0 %}
-      {% capture tags_content %} with tags {% endcapture %}
+      {% capture tags_content %} tagged with {% endcapture %}
       {% for post_tag in page.tags %}
           {% for data_tag in site.data.tags %}
             {% if data_tag.slug == post_tag %}
@@ -29,7 +29,7 @@ layout: default
             {% endif %}
           {% endfor %}
           {% if tag %}
-            {% capture tags_content_temp %}{{ tags_content }}<a href="/meta/tag/{{ tag.slug }}/">{{ tag.name }}</a>{% if forloop.last == false %}, {% endif %}{% endcapture %}
+            {% capture tags_content_temp %}{{ tags_content }}<b><a href="/meta/tag/{{ tag.slug }}/">{{ tag.name }}</a></b>{% if forloop.last == false %}, {% endif %}{% endcapture %}
             {% assign tags_content = tags_content_temp %}
           {% endif %}
       {% endfor %}
