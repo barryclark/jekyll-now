@@ -59,7 +59,7 @@ Finished in 0.00155 seconds (files took 0.21525 seconds to load)
 2 examples, 0 failures
 ```
 
-We are so happy with our shop system and we want to make it even better. So we will add a Shop class, from which Fruits and Vegetables will inherit, which holds some useful methods in the future, not relevant for our exercise.
+We are so happy with our shop system and we want to make it even better. So we will add a Shop class, from which Fruit and Vegetable will inherit, which holds some useful methods in the future, not relevant for our exercise.
 
 <div class="file_path">./shop.rb</div>
 ```ruby
@@ -95,6 +95,7 @@ class Shop
 end
 end
 ```
+
 After this small change everything breaks apart. Let's have a look at the test results:
 
 <div class="file_path">Terminal</div>
@@ -114,21 +115,22 @@ Failures:
 
 It looks like our `@@class_variable` does not belong only to it's class, but to all the classes that have a common superclass.
 
-What happens in our example, is that as soon as our classes get connected in the inheritance tree, the `@@categories` will become more of a shared variable between those classes, and any of them can update the variable. 
+What happens in our example, is that as soon as our classes get connected in the inheritance tree, the `@@categories` will become more of a shared variable between those classes, and any of them can update the variable's value. 
 
-Practically, as we call Fruit.new('oranges'), `@@categories` will be set to 1, but perpetuated across all classes, and so on, until 5.
-Remember, we said we will not instantiate the Shop class at all. So inserting this piece of code in our test `puts "Shop product categories: #{Shop.categories}"` we are expecting to return 0. Well, surprise! Looks like we have 5 shop categories...
+Practically, as we call Fruit.new('oranges'), `@@categories` will be set to 1, but the change is perpetuated across all classes, and so on, until `@@categories` will become 5 for all three classes.
+Remember, we said we will not instantiate the Shop class at all? Well, inserting this piece of code in our test `puts "Shop product categories: #{Shop.categories}"` we are expecting to return 0. Well, surprise! Looks like we have 5 shop categories...
 
 You can find the full code with the failing test on this [branch](https://github.com/iacobson/ruby_class_variables/tree/class-variable).
 
 So, what's to be done?
 
 ## Introducing the Class Instance Variables
-Looks like in the Ruby world the class variables issues are very well known, this is why is recommended to be used with prudence. Even a static code analyzer like [Rubocop](https://github.com/bbatsov/rubocop) will imediatly "advise" you to replace the class variable with a class instance variable.
 
-At first the class instance variable may seem confusing, as it looks exactly like a normal `@instance_variable`, and in a way it is just that. The only "trick" is that this variable is set in a class method, so the variable will can be available at class level, not at instance level.
+Looks like in the Ruby world, the class variables issues are very well known, this is why it is recommended to be used with prudence. Even the static code analyzer [Rubocop](https://github.com/bbatsov/rubocop) will imediatly "advise" you to replace the class variable with a class instance variable.
 
-Let's refactor the previous code:
+At first, the class instance variable may seem confusing, as it looks exactly like a normal `@instance_variable`, and in a way it is just that. The only "trick" is that this variable is set in a class method, so the variable will be available at class level, not at instance level.
+
+Let's refactor the previous code, using the class instance variable:
 
 <div class="file_path">./shop.rb</div>
 ```ruby
@@ -153,7 +155,7 @@ end
 
 If we change all our 3 classes following this pattern, our tests will pass. Each class will have its own distinct `Class.categories` available.
 
-We can go one step further with the refactoring and eliminate completely the class methods, and make everything more clear:
+We can go one step further with the refactoring and eliminate completely the class methods, and make everything more clear and concise:
 
 <div class="file_path">./shop.rb</div>
 ```ruby
@@ -171,6 +173,8 @@ class Vegetable < Shop
 end
 ```
 This way we make the `categories` available at class level directly with the `attr_accessor`.
+
+The final code is available on this [branch](https://github.com/iacobson/ruby_class_variables/tree/class-instance-variable).
 
 ## Conclusion
 
