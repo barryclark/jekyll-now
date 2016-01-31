@@ -4,13 +4,8 @@ title: About
 permalink: /about/
 ---
 
-Hello & 
-
-
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
+Hello! Welcome to A MindMui Blog. 
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[me@mind.in.th](mailto:me@mind.in.th)
