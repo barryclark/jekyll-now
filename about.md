@@ -13,17 +13,17 @@ I live just outside of Portland, OR with my wife, Allison, and our two dogs. I w
 Content Writer, Marketing and Support Manager, Dice Services, Troutdale, OR 97060 October 2015 – Present   
 • Write articles for online publication   
 • Write webpage content for company website 
-• Manage online marketing   
-<space><space><space>• Email marketing campaigns
-<space><space><space>• Google AdWords   
-<space><space><space>• SEO and Keywords 
+     • Manage online marketing   
+     • Email marketing campaigns
+     • Google AdWords   
+     • SEO and Keywords 
 • Manage social media sites (i.e. LinkedIn, Facebook, Twitter)
 • Write and mange user knowledge base 
 
 Senior Help Desk Technician, Regent University IT Help Desk, Virginia Beach, VA 23464   
 October 2010 – September 2015   
 • Assist employees and customers in troubleshooting, resolving, and explaining technical issues via telephone, email, and face-to-face: 
-<space><space><space>• Network connectivity, Network drives, Avaya Softphone, VPN, Malware, Account login, etc.
+     • Network connectivity, Network drives, Avaya Softphone, VPN, Malware, Account login, etc.
 • Install and manage Apple OS X and Microsoft Windows 7 in a networked environment.   
 • Install and manage networked printers.   
 • Create online documentation containing tutorials for students, staff and faculty: https:// support.regent.edu   
