@@ -1,0 +1,32 @@
+---
+layout: post
+title: Animal Crossing: Turning Over A New Leaf
+---
+
+Nintendo released a new “Animal Crossing” game in Japan but still no release date for other regions. The game was released on November 8, 2012, for the Nintendo 3DS. Other regions, such as North America or Europe, are still waiting on a final release date. This time around, the game’s full title will be “Animal Crossing: New Leaf,” which signifies all the new features that have been added to this installment.
+
+The game was first announced at E3 2010, nine months before the North American release of the 3DS. Presenting players with only seven screenshots and a promise of a future release, no other information was given on the title.
+
+Fast-forward two and a half years. The Japanese version has been available for sale for over two months, while North America and Europe have yet to be given a release date. EuroGamer.net reported that “Animal Crossing: New Leaf” sold a whopping “721,786 sales during its opening week.” This did not include digital downloads from Nintendo’s eShop—an online marketplace where certain games can be downloaded directly to the player’s 3DS. They also mentioned that “New Leaf” greatly increased 3DS console sales in Japan, selling 168,662 units between the 5th and 11th of November; twice as many as the previous week.
+
+“New Leaf” peaked on Google Trends in mid-November when the Japanese version of the games was released. However, it has nearly doubled that number within the last 30 days, mostly likely due to the promise of a 2013 release and hopes that it will be sooner than later.
+
+“Animal Crossing: New Leaf” takes a slightly different approach to its gameplay when compared to its predecessors. In previous titles the player was a human who is just arriving in a new town and needs a place to live. The residents of the town are all humanoid animals.
+
+Upon arrival the player is told that if they are new to the town and need a place to stay, they should stop by Top Nook’s shop, the only shop in town, and see if he has any properties for sale. From here the player would take on odd jobs to pay off their newly acquired house from Nook. These range from planting flowers to delivering packages.
+
+“New Leaf” has taken non-traditional method of telling its. In the opening scene the player is greeted by a small group of townsfolk. They mistakenly assume the newly arrived player is the new mayor of the town. The group guides the player to City Hall where the player starts their new life as the town’s mayor.
+
+As mayor, the player gets to decide a number of things such as, where the townsfolk should build a new bridge, or where park benches should be placed. These may sound trivial, but the way they are incorporated into the game will leave the player entertained for hours. This is fine because “Animal Crossing” games don’t have an ending. Certain accomplishments might be completed or friends made, but there is no magnificent boss fight where the hero has to save the princess. In fact, when first starting the game, the player gets to choose whether they are male or female. From here they are asked a series of questions about why they are moving to this new town and depending on the answers given the player’s character will have different facial features or hair colors and styles.
+
+One of the most popular aspects of the “Animal Crossing” games is the social feature. Previously, two players could trade their “Friend Codes,” or FCs, and record them on the Friends List menu of their games. By doing this, each person could open their town’s gates and go and visit each other’s towns. While this was great, the player interaction was very limited. You had to know when your friend had their town’s gate open, but there was no way of telling when your friend was online via the game itself.
+
+That issue has been addressed in “New Leaf,” as you can now pull up your friends list and see who is online. Nintendo seems to have taken it a step further and also given the player the ability to send a message to their online friends. This feature was a great addition and just goes to show that if the fans scream loud enough even the great Nintendo might hear them. The message appears at the top of the other player’s screen, much like a text message notification on a cellphone.
+
+The increased amount of social features that Nintendo has added to “New Leaf” does nothing but help their sales. They have taken what the players have requested time and time again and finally gotten it right.
+
+“Animal Crossing: City Folk,” the “Animal Crossing” incarnation for the Nintendo Wii, added more shops into the game by allowing the player to ride a bus to the city. There, they were able to visit a department store, an auction house and a theater, just to name a few. “New Leaf” has taken a slightly different approach. A number of new stores have been added, but this time they are located within the town itself. This prevents the need for traveling to a city and makes the shops more readily accessible. From a social aspect, this allows for more friends to visit your town and buy from the player’s shops. This is beneficial for the player because using shops in other peoples’ towns gives an increased amount of purchase points that can be used for discounted items.
+
+Probably the most entertaining parts of the game are the in game events. A number of these events correspond with holidays, such as New Years, Thanksgiving and Christmas. There are also monthly fishing tournaments, bug catching contests and a number of other seasonal sport activities.
+
+If sales numbers in Japan have been any indication as to how other regions will receive “Animal Crossing: New Leaf,” then Nintendo shouldn’t have anything to worry about when it comes to sales. That is except for keeping the game and their 3DS systems in stock. All these new features, especially social features, but keep the player’s interest much longer than the previous versions. Nintendo has made a great game and only time will tell how many copies will actually be sold. They have done what so many game developers don’t do and that is listening to what the players want. There is no doubt that both Nintendo and “Animal Crossing” have turned over a “new leaf.”
