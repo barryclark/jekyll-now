@@ -8,7 +8,7 @@ comments: true
 
 ![Dapper!]({{ site.baseurl }}/images/2016-02-02-Dapper-Benchmarks/00_Dapper.PNG)
 
-Recently I've had the chance to work with Dapper. It's what is called a Micro
+Recently I've had the chance to work with Dapper. It's what's called a Micro
 ORM framework for .NET, developed by Stack Exchange, famous mainly for Stack
 Overflow. And if you are reading this you are probably 99% familiar with the
 website :)
@@ -20,6 +20,13 @@ One piece of the work I did with Dapper was inserting large amounts of data in
 a database. This post is going to look through 3 possible ways of doing the
 inserts with Dapper and present timed benchmarks for each of the approaches.
 
+The post will mimic the way I did things initially and arrive somewhere at the
+end result of what is being used now to insert the large quantities of data.
+
+**NOTE:** *I want to mention that I've just started using Dapper recently and in
+a limited use case. I still have a lot to learn and I hope this post will be
+a good starting point and maybe be useful for someone else along the way!*
+
 # The schema and objects used for testing
 
 We are using a very simple database schema for testing the inserts. We are
@@ -28,7 +35,7 @@ are generating the data in C# using the Faker library/nuget package
 
 ![The Schema]({{ site.baseurl }}/images/2016-02-02-Dapper-Benchmarks/01_Test_Schema_Table.PNG)
 
-The code used to generate the required collection for testing is also simple:
+The code used to generate the required collection for testing is quite simple:
 
 {% highlight C# %}
 using System;
@@ -72,9 +79,11 @@ namespace Dapper.BulkInserts.TestData
 }
 {% endhighlight %}
 
-Because Dapper still performs certain object mapping functionalities as we can
+Because Dapper still performs certain object mapping functionalities, we can
 see above in the code we have a **Product** DTO with properties that reflect
 the table in the database.
+
+This DTO will be used to perform all our inserts.
 
 {% highlight C# %}
 using System;
@@ -104,17 +113,21 @@ namespace Dapper.BulkInserts.Dtos
 
 # The benchmark aproach
 
-I'd like to mention how the benchmarking is structured: I've setup a small
-system that can  accept how much data to insert and how many times that data
+I'd like to mention something about how the benchmarking is structured: I've setup a small
+program that can  accept how much data to insert and how many times that data
 will be inserted using each of the approaches.
 
 The data, the collection of products, are generated only once, and then used
 for each set of inserts using the 3 different methods.
 
-After each insert, and at the end of the set run, the database is cleared. When
-the next set starts the database is empty. I will not go into how this is
-organized in the code, but it can be seen in the source which I've linked at
-the end of the post.
+After each insert, and at the end of the set run as well as the beginning, the
+database is cleared. When the next set starts the database is empty. I will
+not go into how this is organized in the code, but it can be seen in the
+source which I've linked at the end of the post.
+
+**NOTE:** The database is cleared using Dapper. I will not get into how it's done
+but you can see for yourselfs in the code located on Github, linked at the end
+of the post.
 
 # Dapper Functionality
 
@@ -138,13 +151,14 @@ public void WriteSingleProduct(Product product)
 {% endhighlight %}
 
 We see that we are using an Execute method that takes in a SQL Command and the
-Product object.  The *WriteOne* command is stored in a Resource file. It's a
+Product object.  The *WriteOne* command is stored in a resource file. It's a
 basic parameter insert query which is processed by Dapper, alongside with the
-product object and all the parameter on the query are populated by the object
-properties, based on matching property names with parameter names.
+product object and all the parameters on the query are populated by the object
+property values, based on matching property names with parameter names.
 
 We can see that the SQL Query Write One defines parameters using '@' which
-reflect the names of the product objects properties we are passing into the execute:
+reflect the names of the product objects properties we are passing into the
+Execute:
 
 {% highlight SQL %}
 INSERT INTO [dbo].[Products]
@@ -167,9 +181,13 @@ INSERT INTO [dbo].[Products]
            ,@Condition)
 {% endhighlight %}
 
+This is one extend of the ORM that is done by Dapper. Looking at the Names of
+the SQL Parameters and mapping them to the names of the properties on
+*Product*.
+
 ## Dapper Execute
 
-Above and in the rest of the post we are only looking at a single extension method by Dapper on the Sql Connection object. The Execute method has the following general signature as taken from the Dapper Docs on Github:
+Above and in the rest of the post we will be  looking at a single extension method by Dapper on the Sql Connection object. The Execute method has the following general signature as taken from the Dapper Docs on Github:
 
 {% highlight C# %}
 public static int Execute(this IDbConnection cnn, 
@@ -178,8 +196,10 @@ public static int Execute(this IDbConnection cnn,
 							   SqlTransaction transaction = null)
 {% endhighlight %}
 
-The version that used in the benchmark tests has some more parameters, which
-does not matter for the purposes of the test.
+The version used in the benchmark tests has some more parameters, which does
+not matter for the purposes of the test. I think the docs are a bit outdated
+there. Which is just one more reason to install Dapper with Nuget and go
+exploring yourself!
 
 Either way, the interesting part is the *param* parameter which we will see
 can be utilized in very different ways.
@@ -187,8 +207,8 @@ can be utilized in very different ways.
 # Three Aproaches for the Same Thing!
 
 After taking a look at the most basic way to insert a single record we are
-going to look at how  we can leverage the approach to insert data in 3
-different ways.
+going to look at how  we can leverage the approach to insert a collection of
+data in 3 different ways.
 
 All of these methods are implemented using a ProductWriter data access
 abstraction class and it can be explored in the code for the benchmark linked
@@ -196,7 +216,8 @@ at the bottom of this post.
 
 ## Using a single insert with a for loop.
 
-The most basic way is similar to what we already actually saw before. We can very easily
+The most basic way and the first thing that came to mind when I was met with
+the task is similar to what we already actually saw before. We can very easily
 repeat the above command using a for/foreach loop and insert each Product in
 that way. That is exactly what the first benchmark test does.
 
@@ -238,18 +259,19 @@ statement on the database using the sql connection.
 
 Right of the start this has the massive overhead of reseting a connection from
 the connection pool with the *sp_reset_connection* procedure before using it
-for each insert.
+for each insert. You can read a little bit more about *sp_reset_connection* in
+the Benchmark Summary section that is yet to come! Be patient!
 
-This can be seen by looking at the Profiling data for this approach:
+Although as a sneak peek we can see how this all looks in a SQL Profiler Trace:
 
 ![Profiling Inserts With Executes]({{ site.baseurl }}/images/2016-02-02-Dapper-Benchmarks/02_Profiler_Single_Insert_New_Connection_Loop.PNG)
 
 ## Using an Execute implementation with a collection
 
-This is where things get interesting. The beauty of the Execute extension
-method is that we can basically send everything as a *param*. This next
-benchmark run utilizes this and we are actually sending the entire collection
-of products as the parameter.
+This is where things start to get interesting. The beauty of the Execute
+extension method is that we can basically send everything as a *param*. This
+next insert method utilizes this and we are actually sending the entire
+collection of products as the parameter.
 
 {% highlight C# %}
 
@@ -266,21 +288,23 @@ At this point Dapper most probably runs some internal logic to figure out that
 it's actually a collection of objects. It then inserts those objects by
 performing the SQL Query Property/Parameter matching process for each one.
 
-The difference here with running the single Execute is that internally Dapper
-inserts all the products using a single *sp_reset_connection*  call. If we
-look at the profiling data we see that initial *sp_reset_connection*. We still
-see a collection of inserts which leads me to believe that the overhead is
-indeed incured from the way the connections are managed.
+The difference here with versus running the single Execute multiple times is
+that internally Dapper inserts all the products but with a single
+*sp_reset_connection* call. 
+
+If we look at the profiling data we see that initial *sp_reset_connection*. Though, we
+still see a collection of inserts but let's wait to see how this affects the
+results a bit later on
 
 ![Profiling Insert With Collection Execute]({{ site.baseurl }}/images/2016-02-02-Dapper-Benchmarks/03_Execute-Over-Collection.PNG)
 
 ## Using an Execute implementation and passing a data table parameter
 
 The final approach we are going to look at is inserting bulk amounts of data
-using a data table parameter.
+using a Data Table parameter.
 
-For this approach we need to define a Table Value Parameter in the database
-that reflects the properties we want to insert for the Product table:
+For this approach we need to define a Table Type in the database that reflects
+the properties we want to insert for the Product table:
 
 {% highlight SQL %}
 CREATE TYPE [dbo].[ProductType] AS TABLE(
@@ -296,8 +320,8 @@ CREATE TYPE [dbo].[ProductType] AS TABLE(
 {% endhighlight %}
 
 We can now use a different approach in writing the query that is executed to
-insert the data. We can define a parameter that using dapper will be set to a
-Data Table. 
+insert the data. We can define a parameter that using Dapper will be set to a
+Data Table. Waaait for it!
 
 {% highlight SQL %}
 INSERT INTO dbo.Products
@@ -322,7 +346,7 @@ public void WriteProductCollectionUsingDataTable(List<Product> products)
 {% endhighlight %}
 
 Here we can see that we are executing *Commands.BatchInsert* which is just the
-INSERT INTO SELECT Query we saw above. We set the *@data* parameter to a Table
+*INSERT INTO SELECT* Query we saw above. We set the *@data* parameter to a Table
 Value Parameter which is created from the DataTable we build using the
 *GetDataTableForProducts* method.
 
@@ -333,8 +357,7 @@ FastMember which provides some Reflection utilities used to build the Data Table
 {% highlight C# %}
 private DataTable GetDataTableForProducts(List<Product> products)
 {
-
-    DataTable table = new DataTable();
+	DataTable table = new DataTable();
     using (var reader = ObjectReader.Create(products))
     {
         table.Load(reader);
@@ -356,9 +379,9 @@ private DataTable GetDataTableForProducts(List<Product> products)
 {% endhighlight %}
 
 The *SetColumnsOrder* is an extension method for DataTable that orders how the
-columns are organized. The reason it is used is because it came up as an issue
-in the case of having the order of properties on the Product class different
-than the order of properties as defined in the table value parameter in SQL.
+columns are organized. The reason it is used is because I had  an issue in the
+case of having the order of properties on the Product class different than the
+order of properties as defined in the Table Type in SQL.
 
 {% highlight C# %}
 public static class DataTableExtensions
@@ -377,13 +400,14 @@ public static class DataTableExtensions
 }
 {% endhighlight %}
 
-Before looking at the results let's take a look how the final Data Table Param method 
-behaves when looking at a trace from a SQL Profiler.
+Before looking at the results let's take a look how the final Data Table
+Parameter method of inserts behaves when looking at a trace from SQL
+Profiler.
 
 ![Profiling Insert With Table Value Param Execute]({{ site.baseurl }}/images/2016-02-02-Dapper-Benchmarks/04_Execute-With-Table-Value-Param.PNG)
 
 The profiler trace above is from a single benchmark run inserting 5 products
-at a time. This is so we can clearly see that only one command is run against
+at a time. The reason is so we can clearly see that only one command is run against
 the server and all the products and their values are defined and set in this
 single SQL Command.
 
@@ -391,7 +415,7 @@ We can now move on to the benchmark results!
 
 # Benchmark Results
 
-The Benchmark we will be looking at is 10 runs each inserting a collection of
+The Benchmark Run we will be looking at is 10 runs each inserting a collection of
 50000 Products on each run with each of the 3 different approaches.
 
 Like it was mentioned previously the database is cleared between each run and
@@ -414,25 +438,29 @@ The results can be seen below in the screenshot as well as in the table (just in
 00:00:09.5982645         |      00:00:07.5694727        |      00:00:01.3110026 |
 00:00:09.5651928         |      00:00:08.8683540        |      00:00:01.4642292 |
 
-We can clearly see, although maybe expected that the fastest way in each of
-the runs is the 3rd approach, using Table Value Parameters. At that the
-difference is very high.  
+We can clearly see, although maybe expected, that the fastest way in each of
+the runs is the 3rd approach, using Table Value Parameters. Additionally the
+difference in times is quite high!
 
-Additionally the slowest way to do things is running an Execute for each of
-the objects which as we saw calls the *sp_reset_connection* procedure. More on
-why I think this is the culprit can be seen at this [Stack Overflow
-Answer](http://stackoverflow.com/a/2924456)
+The slowest way to do things is running an Execute for each of the objects
+which as we saw calls the *sp_reset_connection* procedure. We see that the
+middle aproach of using a single Execute is slightly faster, with the
+difference being the single *sp_reset_connection* call.
 
-Running a Collection Execute has the benefit of only one *sp_reset_connection*
-but still does as many Inserts as there is data in the collection.
+Doing a bit of research on *sp_reset_connection* I came across this [Stack
+Overflow Answer](http://stackoverflow.com/a/2924456) which lists all the sub
+tasks performed by the stored procedure which explains the time differences.
+
+At the end only one *sp_reset_connection* and a single Insert with all the
+necessary data to insert all the Products WINS!
 
 # Summary and Code
 
-To summarize, the fastest approach (Table Value Parameters) used to insert the
-products in this mocked case can be very easily refactored to be much more
-reusable. The only variable, besides the SQL script used to do the inserts is
-the method to create a Data Table from a collection. This can be refactored
-using a generic type parameter on the method.
+To summarize, the fastest approach (Table Type and Table Value Parameters)
+used to insert the products in this mocked case can be very easily refactored
+to be much more reusable. The only variable, besides the SQL script used to do
+the inserts is the method to create a Data Table from a collection. This can
+be refactored using a generic type parameter on the method.
 
 Additionally the approach can be used and combined with different SQL
 statements, for example it can be used in combination with the MERGE statement
