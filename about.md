@@ -10,24 +10,24 @@ I live just outside of Portland, OR with my wife, Allison, and our two dogs. I w
 
 #### Work Experience
 
-Content Writer, Marketing and Support Manager, Dice Services, Troutdale, OR 97060 October 2015 – Present   
-• Write articles for online publication   
-• Write webpage content for company website 
-     • Manage online marketing   
-     • Email marketing campaigns
-     • Google AdWords   
-     • SEO and Keywords 
+Content Writer, Marketing and Support Manager, Dice Services, Troutdale, OR 97060 October 2015 – Present  
+• Write articles for online publication  
+• Write webpage content for company website
+• Manage online marketing
+ • Email marketing campaigns
+ • Google AdWords
+ • SEO and Keywords 
 • Manage social media sites (i.e. LinkedIn, Facebook, Twitter)
 • Write and mange user knowledge base 
 
-Senior Help Desk Technician, Regent University IT Help Desk, Virginia Beach, VA 23464   
-October 2010 – September 2015   
+Senior Help Desk Technician, Regent University IT Help Desk, Virginia Beach, VA 23464  
+October 2010 – September 2015  
 • Assist employees and customers in troubleshooting, resolving, and explaining technical issues via telephone, email, and face-to-face: 
-     • Network connectivity, Network drives, Avaya Softphone, VPN, Malware, Account login, etc.
-• Install and manage Apple OS X and Microsoft Windows 7 in a networked environment.   
-• Install and manage networked printers.   
-• Create online documentation containing tutorials for students, staff and faculty: https:// support.regent.edu   
-• Create and present keynote presentations on the university’s systems (i.e. Google Apps, Blackboard, Adobe CC) and security to staff, faculty, students and parents.   
+ • Network connectivity, Network drives, Avaya Softphone, VPN, Malware, Account login, etc.
+• Install and manage Apple OS X and Microsoft Windows 7 in a networked environment.  
+• Install and manage networked printers.  
+• Create online documentation containing tutorials for students, staff and faculty: https:// support.regent.edu  
+• Create and present keynote presentations on the university’s systems (i.e. Google Apps, Blackboard, Adobe CC) and security to staff, faculty, students and parents.  
 • Work student orientations and university fairs. 
 
 #### Education
