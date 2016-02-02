@@ -4,6 +4,11 @@ title: Hiring a Great Technical Team (Part 1/3)
 tags: [hiring, team creation, job description, candidate search]
 ---
 
+*This is part 1 of a 3-part series of articles*
+
+* *[Part 2][10]*
+* *[Part 3][11]*
+
 ## Prologue 
 
 You know the 3 most important factors for success in any company, right? 
@@ -149,4 +154,6 @@ You may find yourself in some serious trouble!
    [7]: http://qje.oxfordjournals.org/content/early/2015/04/15/qje.qjv010.full
    [8]: http://blog.totaljobs.com/dos-and-donts-of-employee-referral-schemes
    [9]: http://blog.totaljobs.com/do-employee-referral-schemes-work
+   [10]: http://sgerogia.github.io/Hiring-a-Great-Technical-Team-Part-2/
+   [11]: http://sgerogia.github.io/Hiring-a-Great-Technical-Team-Part-3/
    

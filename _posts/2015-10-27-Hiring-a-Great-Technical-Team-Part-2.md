@@ -6,7 +6,8 @@ tags: [hiring, team creation, cv screening, candidate assessment]
 
 *This is part 2 of a 3-part series of articles*
 
-*[Part 1][1]*
+* *[Part 1][1]*
+* *[Part 3][7]*
 
 ## "Gathering" stage
 
@@ -336,3 +337,4 @@ Word of mouth is invaluable!
    [4]: https://en.wikipedia.org/wiki/Monoculturalism
    [5]: http://acronyms.thefreedictionary.com/JOATMON
    [6]: https://en.wikipedia.org/wiki/Eight_queens_puzzle
+   [7]: http://sgerogia.github.io/Hiring-a-Great-Technical-Team-Part-3/
