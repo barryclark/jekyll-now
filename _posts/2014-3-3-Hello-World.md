@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Reminders about C Pointers
+title: Hello world
 ---
 
-Pointers in C/C++ are used to store the address of one variable inside the memory.
+Hello world
