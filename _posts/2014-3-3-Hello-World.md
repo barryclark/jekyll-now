@@ -7,7 +7,7 @@ A pointer is a variable. This variable contains the address of another one. This
 
 A simple example of what a pointer is can be discovered using this simple code :
 
-```C++
+```cpp
 int variable = 5;
 printf("%d", variable);
 ```
