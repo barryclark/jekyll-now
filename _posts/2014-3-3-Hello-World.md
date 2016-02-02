@@ -22,3 +22,11 @@ printf("%p", (void*)&variable);
 ```
 
 This code will display the address of the variable. Here, the explicit cast is mandatory because &variable type is int\*, according to the specifications, the second argument type of the printf method must be void\* if the expected format is %p ( p for pointer ).
+
+Pointers can be declared. To declare a pointer, we can simply do :
+
+```c
+int* pVariable = NULL;
+int variable = 10;
+printf("%p", (void*)&variable);
+```
