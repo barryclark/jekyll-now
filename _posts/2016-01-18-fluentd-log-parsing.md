@@ -49,7 +49,7 @@ If more pieces are common to all messages, it can be included in the regex for s
 As the name would suggest, this approach suggests that you should try to create an internal routing that would allow you to precisely target log messages based on their content later on downstream.
 An example of this is shown in the configuration below:
 
-~~~ ruby
+~~~
 #Sample input:
 #2015-10-15 08:19:05,190 [testThread] INFO  testClass      - Queue: update.testEntity; method: updateTestEntity; Object: testEntity; Key: 154696614; MessageID: ID:test1-37782-1444827636952-1:1:2:25:1; CorrelationID: f583ed1c-5352-4916-8252-47298732516e; started processing
 #2015-10-15 06:44:01,727 [ ajp-apr-127.0.0.1-8009-exec-2] LogInterceptor                 INFO  user-agent: check_http/v2.1.1 (monitoring-plugins 2.1.1)
@@ -112,7 +112,7 @@ You can use *fluent-plugin-multi-format-parser* to try to match each line read f
 This approach probably comes with performance drawbacks because fluentd will try to match using each regex pattern sequentially until one matches.
 An example of this approach can be seen below:
 
-~~~ ruby
+~~~
 <source>
   type tail
   path /var/log/aka/test.log
@@ -181,7 +181,7 @@ Slowly but surely getting all your different syntaxes, for which you will have t
 Grok allows you to define a library of regexes that can be reused and referenced via identifiers. It is structured as a list of key-value pairs and can also contain named capture groups.
 An example of such a library can be seen below. (Note this is just a snippet and does not contain all the minor expressions that are referenced from within the ones enumerated below)
 
-~~~ ruby
+~~~
 ###
 #  AKA-I
 ###
