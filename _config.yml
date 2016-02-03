@@ -55,18 +55,11 @@ baseurl: ""
 
 markdown: kramdown
 kramdown:
-  extension:
-    - smart
-    - tables
-    - no_intra_emphasis
-    - fenced_code_blocks
-    - autolink
-    - with_toc_data
-    - strikethrough
-    - lax_spacing
-    - superscript
-    - footnotes
+  input: GFM
+  enable_coderay: false
+  syntax_highlighter: rouge
 highlighter: rouge
+
 permalink: /:title/
 
 # The release of Jekyll Now that you're using
