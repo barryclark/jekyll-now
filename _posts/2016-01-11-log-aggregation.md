@@ -29,7 +29,7 @@ Elasticsearch becomes the nexus for gathering and storing the log data and it is
 Another very good data collection solution on the market is Fluentd, and it also supports Elasticsearch (amongst others) as the destination for it’s gathered data. So using the same data repository and frontend solutions, this becomes the EFK stack and if you do a bit of searching you will discover many people have chosen to substitute Elastic's logstash with FluentD and we will talk about why that is in a minute.
 
 {:.center}
-![Log aggregation Efk]({{ site.url }}/images/logaggregation-efk.png){:style="margin:auto; width:50%"}
+![Log aggregation Efk]({{ site.url }}/images/logaggregation-efk.png){:style="margin:auto; width:40%"}
 
 # Logstash vs FluentD
 Both of them are very capable, have [hundreds](https://www.elastic.co/guide/en/logstash/current/input-plugins.html) and [hundreds](http://www.fluentd.org/plugins) of plugins available and are being maintained actively by corporation backed support.
