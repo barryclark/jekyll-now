@@ -26,7 +26,7 @@ The simplest approach is to just parse all messages using the common denominator
 
 In the case of a typical log file a configuration can be something like this (but not necessarily):
 
- ~~~ xml
+~~~ xml
 <source>
   type tail
   path /var/log/test.log
@@ -38,7 +38,7 @@ In the case of a typical log file a configuration can be something like this (bu
   #a timestamp in front of it, the rest is just stored in the field 'message'
   format1 /(?<time>\d{4}-\d{1,2}-\d{1,2} \d{1,2}:\d{1,2}:\d{1,2},\d{3}) (?<message>(.|\s)*)/
 </source>
- ~~~
+~~~
 
 You will notice we still do a bit of parsing, the minimal level would be to just have a multiline format to split the log contents into separate messages and then to push the contents on.
 
