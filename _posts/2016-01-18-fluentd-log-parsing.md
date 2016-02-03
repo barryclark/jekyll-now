@@ -49,7 +49,7 @@ If more pieces are common to all messages, it can be included in the regex for s
 As the name would suggest, this approach suggests that you should try to create an internal routing that would allow you to precisely target log messages based on their content later on downstream.
 An example of this is shown in the configuration below:
 
-~~~ruby
+~~~ ruby
 #Sample input:
 #2015-10-15 08:19:05,190 [testThread] INFO  testClass      - Queue: update.testEntity; method: updateTestEntity; Object: testEntity; Key: 154696614; MessageID: ID:test1-37782-1444827636952-1:1:2:25:1; CorrelationID: f583ed1c-5352-4916-8252-47298732516e; started processing
 #2015-10-15 06:44:01,727 [ ajp-apr-127.0.0.1-8009-exec-2] LogInterceptor                 INFO  user-agent: check_http/v2.1.1 (monitoring-plugins 2.1.1)
@@ -99,7 +99,7 @@ Fluentd will continue to read logfile lines and keep them in a buffer until a li
 
 
 Looking at the example, all our log messages (single or multiline) will take the form:
-~~~json
+~~~ json
 { "time":"2015-10-15 08:21:04,716", "message":"[ ttt-grp-127.0.0.1-8119-test-11] LogInterceptor                 INFO  HTTP/1.1 200 OK" }
 ~~~
 
@@ -112,7 +112,7 @@ You can use *fluent-plugin-multi-format-parser* to try to match each line read f
 This approach probably comes with performance drawbacks because fluentd will try to match using each regex pattern sequentially until one matches.
 An example of this approach can be seen below:
 
-~~~ruby
+~~~ ruby
 <source>
   type tail
   path /var/log/aka/test.log
@@ -169,13 +169,11 @@ When choosing this path there are multiple issues you need to be aware of:
 
 The biggest issue with this approach is that it is very very hard to handle multi-line log messages if there are significantly different log syntaxes in the log.
 
-
 __Warning:__ Be aware that the multiline parser continues to store log messages in a buffer until it matches another firstline token and when it does it then it packages and emits the multiline log it collected.
 This approach is useful when you have good control and know-how about the format of your log source.
 
 ## Order & Chaos
 Introducing Grok!
-
 
 Slowly but surely getting all your different syntaxes, for which you will have to define different regular expressions, will make your config file look very messy, filled with regex-es that are longer and longer, and just relying on the multiple format lines to split it up doesn't bring that much readability nor does it help with maintainability. Reusability is something that we cannot even discuss in the case of pure regex formatters.
 
@@ -183,7 +181,7 @@ Slowly but surely getting all your different syntaxes, for which you will have t
 Grok allows you to define a library of regexes that can be reused and referenced via identifiers. It is structured as a list of key-value pairs and can also contain named capture groups.
 An example of such a library can be seen below. (Note this is just a snippet and does not contain all the minor expressions that are referenced from within the ones enumerated below)
 
-~~~ruby
+~~~ ruby
 ###
 #  AKA-I
 ###
