@@ -259,6 +259,7 @@ hr.small {
 }
 .center {
   text-align: center;
+  margin: auto;
 }
 .caption {
   text-align: center;
