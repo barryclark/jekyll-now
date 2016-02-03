@@ -27,9 +27,7 @@ You will need the following things, which this how-to does not provide you with:
 
 To start things, open up the [Azure Portal](https://portal.azure.com) using your favorite web browser, and log in so that you have access to the Azure portal. Then click *Virtual machines (Classic)*, then *Add +*.
 
-<center>
-![New VM](/images/letsencrypt-1-new-vm.png)
-</center>
+<center>![New VM]({{ site.url }}/images/letsencrypt-1-new-vm.png)</center>
 
 Then, search for `ubuntu` and select *Ubuntu Server 14.04 LTS* (I think you can choose a regular Ubuntu, too, but this one definitely works).
 
