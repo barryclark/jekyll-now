@@ -51,10 +51,9 @@ Many of the more technical talks dealt with the usual suspects [Microservices an
 
 The return to more serious topics, *Hypermedia* was an astonishingly big topic at the conference. Not that it's not a seriously good idea, but now adoption seems to find its way into real world scenarios, with practical and working specifications popping up, which are being adopted at an increasing rate. As Hypermedia leaves the state of a research topic (see below picture on [HATEOAS](https://en.wikipedia.org/wiki/HATEOAS) - Bless you!) and is actually being used.
 
-<center>
-![HATEOAS - Bless you!]({{ site.url }}/images/2015-12-11-hateoas.jpg)
+{:.center}
+![HATEOAS - Bless you!]({{ site.url }}/images/2015-12-11-hateoas.jpg){:style="margin:auto"}
 <small>(Courtesy of [CommitStrip](http://www.commitstrip.com/en/2015/12/03/apiception/))</small>
-</center>
 
 Many people are perhaps scared of the seemingly intransparent topic, but there are a lot of really good use cases for hypermedia. Jason Harmon of PayPal/Braintree ([@jharmn](http://twitter.com/jharmn)) pointed to some of the most prominent ones in his talk:
 

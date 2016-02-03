@@ -19,17 +19,17 @@ The problems it tackles are:
 -          Support for a great number of event sources and outputs
 
 One of the most prolific open source solutions on the market is the [ELK stack](https://www.elastic.co/videos/introduction-to-the-elk-stack) created by Elastic.
-<center>
-	<img src="/images/logaggregation-elk.png" width=50% align="middle"/>
-</center>
+
+<{:.center}>
+<img src="/images/logaggregation-elk.png" width=50% align="middle"/>
+
 ELK stands for Elasticsearch – Logstash – Kibana and they are respectively their Search engine, Log Shipper and Visualization frontend solutions.
 Elasticsearch becomes the nexus for gathering and storing the log data and it is not exclusive to Logstash.
 
 Another very good data collection solution on the market is Fluentd, and it also supports Elasticsearch (amongst others) as the destination for it’s gathered data. So using the same data repository and frontend solutions, this becomes the EFK stack and if you do a bit of searching you will discover many people have chosen to substitute Elastic's logstash with FluentD and we will talk about why that is in a minute.
-<center>
-	<img src="/images/logaggregation-efk.png" width=20% align="middle"/>
-</center>
 
+{:.center}
+<img src="/images/logaggregation-efk.png" width=20% align="middle"/>
 
 # Logstash vs FluentD
 Both of them are very capable, have [hundreds](https://www.elastic.co/guide/en/logstash/current/input-plugins.html) and [hundreds](http://www.fluentd.org/plugins) of plugins available and are being maintained actively by corporation backed support.
@@ -156,9 +156,8 @@ Sample output from stdout:
 ~~~
 
 And here is the result of trying to use it in a visualization:
-<center>
-	<img src="/images/logaggregation-analyzed-field.png" width=35% align="middle"/>
-</center>
+{:.center}
+<img src="/images/logaggregation-analyzed-field.png" width=35% align="middle"/>
 
 I should mention, what you are seeing is the result of 6 messages that all have the field sourceProject set to the value "Test-Analyzed-Field".
 
