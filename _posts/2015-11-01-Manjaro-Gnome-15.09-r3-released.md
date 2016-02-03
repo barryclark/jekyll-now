@@ -23,7 +23,7 @@ Further updates for some of these components are already available in our respos
 
 ----
 
-##Links
+## Links
 
 * [Forum post](https://forum.manjaro.org/index.php?topic=27950.0)
 * [Download here](https://sourceforge.net/projects/manjarolinux/files/community/Gnome/2015.11/)

@@ -7,7 +7,7 @@ title: Manjaro Cinnamon 0.8.13 released
 
 The Manjaro Community is proud to present to you our Cinnamon 2.6 Edition.
 
-##New features and enhancements
+## New features and enhancements
 
 * Cinnamon 2.6
   * Latest cinnamon version
@@ -30,7 +30,7 @@ The Manjaro Community is proud to present to you our Cinnamon 2.6 Edition.
 * Accessibility improvements
   * Efforts were made to improve ATK/Orca support in visual Cinnamon components.
 
-##Changes in Thus
+## Changes in Thus
 
 We worked also hard to improve our graphical installer Thus and our system tools to make the installation and usage of Manjaro as easy and smooth as possible. With this install medias we now support Manjaro to be installed on MMC/SD-Cards aswell. This will some of you to install our distribution to smaller devices without hard drives. Also this install media fixes the issue we had with RAID0 and ext4.
 
@@ -113,7 +113,7 @@ We worked also hard to improve our graphical installer Thus and our system tools
 * Tweaked UI
 * Update translations
 
-##Changes in CLI-Installer
+## Changes in CLI-Installer
 * Adopt syslinux changes
 * Adopt initramfs/vmlinuz renaming
 * Try to fix pacman configuration
@@ -126,7 +126,7 @@ Ringo de Kroon, Community Support and IRC Manager
 
 ----
 
-##Links
+## Links
 
 * [Download here](http://sourceforge.net/projects/manjarolinux/files/community/Cinnamon/2015.06/)
 * [Forum post](https://forum.manjaro.org/index.php?topic=23666.0)

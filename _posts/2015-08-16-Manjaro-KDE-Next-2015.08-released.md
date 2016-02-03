@@ -27,7 +27,7 @@ We hope you enjoy this release.
 
 ----
 
-##Links
+## Links
 
 * [Forum post](https://forum.manjaro.org/index.php?topic=25219.0)
 * [Download here](https://sourceforge.net/projects/manjarotest/files/2015.08/kde-next/)

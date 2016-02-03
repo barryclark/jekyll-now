@@ -7,7 +7,7 @@ title: Manjaro Deepin
 
 After several months of development we are excited and glad to announce the **first stable release of Manjaro Deepin**. This Community Edition, based on **Manjaro 15.12 'Capella'** features the latest updated **Deepin Deskop Environment 2015 RC** and will be maintained as a rolling release like all other Manjaro editions.   
 
-##Features:
+## Features:
 
 * Kernel **Linux 4.1**
 * **Manjaro-Welcome**
@@ -42,7 +42,7 @@ After several months of development we are excited and glad to announce the **fi
 
 ----
 
-##Links
+## Links
 
 * [Forum post](https://forum.manjaro.org/index.php?topic=29385.msg244501#msg244501)
 * [Download here](https://sourceforge.net/projects/manjarolinux/files/community/Deepin/2015.12/)

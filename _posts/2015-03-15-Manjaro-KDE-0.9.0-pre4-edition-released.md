@@ -11,7 +11,7 @@ With this new release of Plasma 5 providing a visually updated core desktop expe
 
 We worked also hard to improve our graphical installer Calamares and our system tools to make the installation and usage of Manjaro as easy and smooth as possible.
 
-##New features and enhancements
+## New features and enhancements
 
 - **BlueDevil**: a range of desktop components to manage Bluetooth devices. It'll set up your mouse, keyboard, send & receive files and you can browse for devices.
 - **KSSHAskPass**: if you access computers with ssh keys but those keys have passwords this module will give you a graphical UI to enter those passwords.
@@ -20,7 +20,7 @@ We worked also hard to improve our graphical installer Calamares and our system 
 - **GTK Application Style**: this new module lets you configure themeing of applications from Gnome.
 - **KDecoration**: this new library makes it easier and more reliable to make themes for KWin, Plasma's window manager. It has impressive memory, performance and stability improvements.
 
-##Manjaro tools changes
+## Manjaro tools changes
 
 * [util-msg] try more color fixing #65 
 * [util-iso-calamares] make desktop file executable
@@ -40,14 +40,14 @@ We worked also hard to improve our graphical installer Calamares and our system 
 * [util-iso] set environment QT_STYLE_OVERRIDE in image
 * [conf] fix SyncFirst
 
-##Calamares changes
+## Calamares changes
 
 * [204] add cleartempmountsjob to partition module
 * [207] add debug window function
 * prevent crash when going back from EraseDiskPage and then next
 * merge transifex translations
 
-##Octopi changes
+## Octopi changes
 
 - Thanks to Michaël Lhomme, it brings a new tool called cachecleaner, a frontend to paccache
 - Honor plural forms in translations
@@ -62,7 +62,7 @@ Philip Müller, Manjaro Development Team
 
 ----
 
-##Links
+## Links
 
 **Notice**: This release is not supported by VMWare Player nor VirtualBox. Test it **only** on real hardware!
 

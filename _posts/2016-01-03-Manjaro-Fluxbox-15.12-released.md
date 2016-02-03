@@ -37,7 +37,7 @@ Bernhard Landauer, Maintainer
 
 ----
 
-##Links
+## Links
 
 * [Forum post](https://forum.manjaro.org/index.php?topic=29730.msg246926)
 * [Download here](https://sourceforge.net/projects/manjarolinux/files/community/Fluxbox/2015.12/)

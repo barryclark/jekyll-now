@@ -17,7 +17,7 @@ Kind regards, Philip Müller
 
 ----
 
-##Links
+## Links
 
 * [Download 0.9.x here](http://sourceforge.net/projects/manjarotest/files/0.9.0/xfce-minimal/0.9.0-dev/)
 * [Download 0.8.x here](https://sourceforge.net/projects/manjarotest/files/0.8.13/xfce-minimal/0.8.13-dev/)

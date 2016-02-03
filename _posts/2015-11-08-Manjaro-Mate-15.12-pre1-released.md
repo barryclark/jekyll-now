@@ -39,7 +39,7 @@ Ringo de Kroon, Manjaro Development Team
 
 ----
 
-##Links
+## Links
 
 * [Download here](https://sourceforge.net/projects/manjarodev/files/users/ringo32/preview/mate/15.12.pre-1/)
 * [Forum post](https://forum.manjaro.org/index.php?topic=28150.0)

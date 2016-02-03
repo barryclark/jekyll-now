@@ -24,7 +24,7 @@ Ringo de Kroon, Maintainer Manjaro-Cinnamon
 
 ----
 
-##Links
+## Links
 
 * [Forum post](https://forum.manjaro.org/index.php?topic=27071.0)
 * [Download here](http://sourceforge.net/projects/manjarolinux/files/community/Cinnamon/2015.10/)

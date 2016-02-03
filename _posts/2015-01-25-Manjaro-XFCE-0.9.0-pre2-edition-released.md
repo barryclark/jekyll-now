@@ -37,7 +37,7 @@ Manjaro Development Team
 
 ----
 
-##Links
+## Links
 
 * [Download here](http://sourceforge.net/projects/manjarotest/files/0.9.0/xfce/0.9.0-pre2/)
 * [Forum post](https://forum.manjaro.org/index.php?topic=19900.0)

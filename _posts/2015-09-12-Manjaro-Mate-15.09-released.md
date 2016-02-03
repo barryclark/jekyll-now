@@ -39,7 +39,7 @@ kind regards Ringo, Maintainer Manjaro-Mate
 
 ----
 
-##Links
+## Links
 
 * [Forum post](https://forum.manjaro.org/index.php?topic=26131.0)
 * [Download here](http://sourceforge.net/projects/manjarolinux/files/community/MATE/2015.09)

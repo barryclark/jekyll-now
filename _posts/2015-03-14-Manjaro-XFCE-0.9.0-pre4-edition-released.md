@@ -11,7 +11,7 @@ Thunar file manager finally supports tabs and other cool features like inverting
 
 We worked also hard to improve our graphical installer Calamares and our system tools to make the installation and usage of Manjaro as easy and smooth as possible. For more information please also take a look at the [changelog](http://sourceforge.net/projects/manjarotest/files/0.9.0/xfce/0.9.0-pre4/manjaro-xfce-0.9.0-pre4-change.log).
 
-##New features and enhancements
+## New features and enhancements
 
 * xfce4-power-manager now handles light-locker’s settings in its “Security” tab
 * xfce4-panel now has an intelligent hiding mode
@@ -20,7 +20,7 @@ We worked also hard to improve our graphical installer Calamares and our system 
 * the appearance dialog shows previews of themes’ palettes and icon-themes
 * Thunar now has improved keyboard navigation
 
-##Manjaro tools changes
+## Manjaro tools changes
 
 * [util-msg] try more color fixing #65 
 * [util-iso-calamares] make desktop file executable
@@ -40,14 +40,14 @@ We worked also hard to improve our graphical installer Calamares and our system 
 * [util-iso] set environment QT_STYLE_OVERRIDE in image
 * [conf] fix SyncFirst
 
-##Calamares changes
+## Calamares changes
 
 * [204] add cleartempmountsjob to partition module
 * [207] add debug window function
 * prevent crash when going back from EraseDiskPage and then next
 * merge transifex translations
 
-##Pamac changes
+## Pamac changes
 
 With this release we stabilized Pamac and made it more unified.
 v2.2 mainly contains internal changes not visible to the user.
@@ -65,7 +65,7 @@ Philip Müller, Manjaro Development Team
 
 ----
 
-##Links
+## Links
 
 * [Download here](http://sourceforge.net/projects/manjarotest/files/0.9.0/xfce/0.9.0-pre4/)
 * [Forum post](https://forum.manjaro.org/index.php?topic=21286.0)

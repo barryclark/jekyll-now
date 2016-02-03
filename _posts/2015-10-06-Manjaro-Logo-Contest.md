@@ -13,6 +13,6 @@ So get creative. You can either post your work in our forum or mail it to **supp
 
 ----
 
-##Links
+## Links
 
 * [Forum post](https://forum.manjaro.org/index.php?topic=27040.0)

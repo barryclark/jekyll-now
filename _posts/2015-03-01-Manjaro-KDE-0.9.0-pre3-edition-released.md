@@ -62,7 +62,7 @@ Philip Müller, Manjaro Development Team
 
 ----
 
-##Links
+## Links
 
 * [Download here](http://sourceforge.net/projects/manjarotest/files/0.9.0/kde/0.9.0-pre3/)
 * [Forum post](https://forum.manjaro.org/index.php?topic=20938.0)

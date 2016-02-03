@@ -9,7 +9,7 @@ We are happy to announce a new addition to our community editions, BspWM edition
 
 BspWM is a manual tiling window manager based on binary space partitioning that features intuitive mouse and keyboard controls. Compared with our i3 edition, it is more minimalistic and cli oriented, with 64bit edition booting at 105mb ram used (depending on hardware). It uses minimal ram and cpu, to be as light as possible without sacrificing functionality. This edition tries to make command line more accessible for beginners by including good cli tools, sane configurations and well commented setting files.
 
-##Features:
+## Features:
 
 * New 4.4 kernel
 * All gtk3 apps, with no gtk2 (gedit, spacefm, midori, gufw)
@@ -24,7 +24,7 @@ BspWM is a manual tiling window manager based on binary space partitioning that 
  - accessible to use with one hand
  - familiar from other places (games, other tiling window managers or browsers)
 
-##Terminal related features:
+## Terminal related features:
 
 * Urxvt configured in a beginner friendly way 
 * Easy switching between terminal colorschemes, featuring base16 colors
@@ -41,7 +41,7 @@ Kind regards, Chrysostomus - Maintainer
 
 ----
 
-##Links
+## Links
 
 * [Talk about this release](https://forum.manjaro.org/index.php?topic=16994.0)
 * [Download here](https://sourceforge.net/projects/manjarolinux/files/community/BspWM/2015.12/)

@@ -20,13 +20,13 @@ Manjaro KDE Development Team
 
 ----
 
-##Special thanks
+## Special thanks
 
 * KDE
 * Beta Testers
 * Spatry @ [cupoflinux.com](http://www.cupoflinux.com/) our Plasma 5 beta packages host provider.
 
-##Links
+## Links
 
 * [Download here](http://sourceforge.net/projects/manjarotest/files/0.9.0/kf5-plasma-dev/)
 * [Forum Release post](https://forum.manjaro.org/index.php?topic=19757.0)

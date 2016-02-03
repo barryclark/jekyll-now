@@ -16,7 +16,7 @@ Philip Müller and the Manjaro Development Team
 
 ----
 
-##Links
+## Links
 
 * [Talk about this in our english forum](https://forum.manjaro.org/index.php?topic=29139.0)
 * [Talk about this in our german forum](https://de.manjaro.org/index.php?topic=4806.0)

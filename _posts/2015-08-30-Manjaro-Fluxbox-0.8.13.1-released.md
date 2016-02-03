@@ -12,7 +12,7 @@ The applications are easily accessible from the native **right click menu** with
 This edition features the beautiful and extraordinarily versatile icon-theme **AwOken** (coloured, white and dark).
 Install media are available with both init systems **Systemd** or **OpenRC**.
 
-##New features and enhancements
+## New features and enhancements
 
 * kernel 4.1
 * Pamac
@@ -44,7 +44,7 @@ Bernhard Landauer, Maintainer Manjaro-Fluxbox
 
 ----
 
-##Links
+## Links
 
 * [Forum post](https://forum.manjaro.org/index.php?topic=25665.0)
 * [Download here](http://sourceforge.net/projects/manjarolinux/files/community/Fluxbox/2015.08/)

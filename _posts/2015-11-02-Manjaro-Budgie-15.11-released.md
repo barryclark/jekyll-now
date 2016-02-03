@@ -33,7 +33,7 @@ Stefano Capitani, Maintainer Manjaro-Budgie
 
 ----
 
-##Links
+## Links
 
 * [Forum post](https://forum.manjaro.org/index.php?topic=27960.msg234187#msg234187)
 * [Download here](https://sourceforge.net/projects/manjarolinux/files/community/Budgie/2015.11/)

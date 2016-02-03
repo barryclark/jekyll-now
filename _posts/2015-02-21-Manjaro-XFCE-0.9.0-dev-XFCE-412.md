@@ -23,7 +23,7 @@ Kind regards, The Manjaro Team.
 
 ----
 
-##Links
+## Links
 
 * [Download here](http://sourceforge.net/projects/manjarotest/files/0.9.0/xfce-minimal/0.9.0-dev/)
 * [Forum post](https://forum.manjaro.org/index.php?topic=16191.0)

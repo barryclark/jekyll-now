@@ -62,6 +62,6 @@ Kind regards, Ringo de Kroon - Maintainer
 
 ----
 
-##Links
+## Links
 
 * [Download here](https://sourceforge.net/projects/manjarolinux/files/community/MATE/2015.12/)

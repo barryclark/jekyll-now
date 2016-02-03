@@ -20,7 +20,7 @@ Some improvements summed-up:
 
 Further Team Manjaro & co improved Calamares and fixed some bugs to make it ready for this installation. Manjaro-tools get improved. And many more!
 
-##This  ISO contains further in a blink
+## This  ISO contains further in a blink
 
 * cinnamon 2.8.6-1
 * eog 3.18.1-1
@@ -55,7 +55,7 @@ Kind regards, Ringo de Kroon - Maintainer
 
 ----
 
-##Links
+## Links
 
 * [Forum post](https://forum.manjaro.org/index.php?topic=29009.0)
 * [Download here](https://sourceforge.net/projects/manjarolinux/files/community/Cinnamon/2015.12/)

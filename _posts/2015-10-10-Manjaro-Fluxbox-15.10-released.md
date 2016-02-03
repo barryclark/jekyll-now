@@ -23,7 +23,7 @@ Bernhard Landauer, Maintainer Manjaro-Fluxbox
   
 ----
   
-##Links  
+## Links  
   
 * [Forum post](https://forum.manjaro.org/index.php?topic=27152.0)  
 * [Download here](https://sourceforge.net/projects/manjaro-fluxbox/files/manjaro-fluxbox-15.10/)  
