@@ -7,11 +7,11 @@ A volume is a folder within a container that can be accessed ( read and write ) 
 
 A volume can be specified inside the Dockerfile :
 
-```docker
+```
 VOLUME /var/www
 ```
 
-Each time we "run" a container ( using the run command ) from this image, the content of the folder /var/www inside the container will be copied from the container to the host file system ( usually in /var/lib/docker/volumes ). You can use the following command to locate the volume on your host :
+Each time we a container ( using the "run" command ) from this image, the content of the container folder "/var/www" is copied to the host file system ( usually in "/var/lib/docker/volumes" ). You can use the following command to locate the volume on your host :
 
 ```
 docker inspect [container]
@@ -32,7 +32,7 @@ The location of the volumes on the host can be found in the section "Mounts" :
     ]
 ```
 
-Any modification on the host inside this folder will affect the docker container, and any modification inside the container folder will affect this shared folder on the host.
+Any modification in this host folder affects the docker container, and any modification in the container folder affects this host shared folder.
 
 It is possible to set the volumes when the "run" command is executed, directly for the current container only, using the -v option :
 
@@ -40,7 +40,7 @@ It is possible to set the volumes when the "run" command is executed, directly f
 docker run --name container -i -t -d -v /var/www image
 ```
 
-The container /var/www folder and the content will be available in the host at /var/lib/docker/volumes.
+The container folder "/var/www" is available on the host at /var/lib/docker/volumes.
 
 Then, we can also mount a host folder inside a container :
 
@@ -48,4 +48,4 @@ Then, we can also mount a host folder inside a container :
 docker run --name container -i -t -d -v /home/jean/site:/var/www image
 ```
 
-This mount the local folder /home/jean/site inside the folder /var/www of the Docker container.
+This command mounts the local folder "/home/jean/site" inside the folder "/var/www" of the Docker container.
