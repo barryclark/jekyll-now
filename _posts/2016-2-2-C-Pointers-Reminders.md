@@ -54,3 +54,20 @@ void main()
 ```
 
 By running this short code, the digit 5 will be displayed on the screen. 
+
+Now, we do not send the variable itself to the function, but the pointer. Once again, the pointer is copied for the new called function.
+
+```c
+void increment(int* var)
+{
+    *var =+ 1;
+}
+
+void main()
+{
+    int variable = 5;
+    increment(&variable);
+    printf("%d", variable);
+    return 0;
+}
+```
