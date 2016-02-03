@@ -28,5 +28,10 @@ Pointers can be declared. To declare a pointer, we can simply do :
 ```c
 int* pVariable = NULL;
 int variable = 10;
-printf("%p", (void*)&variable);
+pVariable = &variable;
+printf("%p", (void*)pVariable);
 ```
+
+In the previous example, we first declare a NULL pointer. That means the pointer points on nothing for now. NULL is a define set in stdio.h, and represents a null pointer ( we couldn't directly set a pointer to 0, as 0 is an integer ). At this moment, a new area in memory is allocated to contain an address.
+
+The second line is the declaration of an integer value. At the third line, the address of the variable is used as a value for the pointer.
