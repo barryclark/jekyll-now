@@ -144,8 +144,11 @@ hr.small {
   margin-bottom: 50px;
 }
 .intro-header .site-heading,
-.intro-header .post-heading,
 .intro-header .page-heading {
+  padding: 100px 0 50px;
+  color: black;
+}
+.intro-header .post-heading {
   padding: 100px 0 50px;
   color: white;
 }

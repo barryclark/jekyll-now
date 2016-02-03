@@ -23,7 +23,8 @@
                 <!-- suppress all category and tag meta pages -->
                 {% if page.url contains '/meta/' %}
                 {% else %}
-				{% if page.url != '/404.html' %}
+				{% if page.url contains '404' %}
+                {% else %}
                 <li>
                     <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
                 </li>
