@@ -35,3 +35,22 @@ printf("%p", (void*)pVariable);
 In the previous example, we first declare a NULL pointer. That means the pointer points on nothing for now. NULL is a define set in stdio.h, and represents a null pointer ( we couldn't directly set a pointer to 0, as 0 is an integer ). At this moment, a new area in memory is allocated to contain an address.
 
 The second line is the declaration of an integer value. At the third line, the address of the variable is used as a value for the pointer.
+
+As we already know, send a variable to a function in C makes a copy of the variable. The new copied variable is then accessible from the function only :
+
+```c
+void increment(int var)
+{
+    var++;
+}
+
+void main()
+{
+    int variable = 5;
+    increment(variable);
+    printf("%d", variable);
+    return 0;
+}
+```
+
+By running this short code, the digit 5 will be displayed on the screen. 
