@@ -7,7 +7,7 @@ permalink: /impressum/
 Holger Reinhardt
 (verantwortlich i.S.d. § 55 Abs. 2 RStV)
 
-###Anschrift:
+### Anschrift:
 
 Haufe-Lexware GmbH & Co. KG
 
@@ -33,7 +33,7 @@ Steuernummer: 06392/11008
 
 Umsatzsteuer-Identifikationsnummer: DE 812398835
 
-###Public Relations:
+### Public Relations:
 
 Haufe-Lexware GmbH & Co. KG 
 
@@ -47,7 +47,7 @@ Telefon: 0761 898 3940
 Telefax: 0761 898 3900
 E-Mail: presse(at)haufe-lexware.com
 
-###Bitte wenden Sie sich bei Fragen an:
+### Bitte wenden Sie sich bei Fragen an:
 
 Haufe Service Center GmbH
 
