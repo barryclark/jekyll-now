@@ -95,7 +95,6 @@ The results (and possibly also further proceedings with this) can be viewed on [
 
 I had a good time at the APIdays; the sessions had overall good quality, and the audience was fantastic. I had a lot of opportunities to meet people I knew, and even more important, people I did not yet know. I would definitely recommend going there again.
 
-<center>
-![APIdays]({{ site.url }}/images/2015-12-11-apidays-logo.png)
+{:.center}
+![APIdays]({{ site.url }}/images/2015-12-11-apidays-logo.png){:style="margin:auto"}
 <small>[APIdays](http://www.apidays.io)</small>
-</center>
