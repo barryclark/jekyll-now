@@ -26,7 +26,7 @@ The simplest approach is to just parse all messages using the common denominator
 
 In the case of a typical log file a configuration can be something like this (but not necessarily):
 
- ~~~xml
+ ~~~ xml
 <source>
   type tail
   path /var/log/test.log
