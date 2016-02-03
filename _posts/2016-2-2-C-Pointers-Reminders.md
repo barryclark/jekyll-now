@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Basic reminders about C pointers
+title: Basic reminders about C pointers ( in progress )
 ---
 
 A pointer is a variable. This variable contains the address of another one. This other one can be a primitive type, a structure, an object ( in C++ ) but also another pointer.
