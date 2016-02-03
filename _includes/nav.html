@@ -24,7 +24,7 @@
                 {% if page.url contains '/meta/' %}
                 {% else %}
 				{% if page.url contains '404.html' %}
-                <% else %>
+                {% else %}
                 <li>
                     <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
                 </li>
