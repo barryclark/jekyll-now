@@ -33,3 +33,19 @@ The location of the volumes on the host can be found in the section "Mounts" :
 ```
 
 Any modification on the host inside this folder will affect the docker container, and any modification inside the container folder will affect this shared folder on the host.
+
+It is possible to set the volumes when the "run" command is executed, directly for the current container only, using the -v option :
+
+```
+docker run --name container -i -t -d -v /var/www image
+```
+
+The container /var/www folder and the content will be available in the host at /var/lib/docker/volumes.
+
+Then, we can also mount a host folder inside a container :
+
+```
+docker run --name container -i -t -d -v /home/jean/site:/var/www image
+```
+
+This mount the local folder /home/jean/site inside the folder /var/www of the Docker container.
