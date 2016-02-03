@@ -19,17 +19,17 @@ The problems it tackles are:
 -          Support for a great number of event sources and outputs
 
 One of the most prolific open source solutions on the market is the [ELK stack](https://www.elastic.co/videos/introduction-to-the-elk-stack) created by Elastic.
-<center>
-	<img src="/images/logaggregation-elk.png" width=50% align="middle"/>
-</center>
+
+{:.center}
+![Log aggregation Elk]({{ site.url }}/images/logaggregation-elk.png){:style="margin:auto; width:70%"}
+
 ELK stands for Elasticsearch – Logstash – Kibana and they are respectively their Search engine, Log Shipper and Visualization frontend solutions.
 Elasticsearch becomes the nexus for gathering and storing the log data and it is not exclusive to Logstash.
 
 Another very good data collection solution on the market is Fluentd, and it also supports Elasticsearch (amongst others) as the destination for it’s gathered data. So using the same data repository and frontend solutions, this becomes the EFK stack and if you do a bit of searching you will discover many people have chosen to substitute Elastic's logstash with FluentD and we will talk about why that is in a minute.
-<center>
-	<img src="/images/logaggregation-efk.png" width=20% align="middle"/>
-</center>
 
+{:.center}
+![Log aggregation Efk]({{ site.url }}/images/logaggregation-efk.png){:style="margin:auto; width:40%"}
 
 # Logstash vs FluentD
 Both of them are very capable, have [hundreds](https://www.elastic.co/guide/en/logstash/current/input-plugins.html) and [hundreds](http://www.fluentd.org/plugins) of plugins available and are being maintained actively by corporation backed support.
@@ -82,8 +82,7 @@ A message sent to Elasticsearch from fluentd would contain these values:
 
 *-this isn't the exact message, this is the result of the stdout output plugin-*
 
-
-~~~ruby
+~~~
 2015-11-12 06:34:01 -0800 tag.common: {"message":"[ ajp-apr-127.0.0.1-8009-exec-3] LogInterceptor                 INFO  ==== Request ===","time_as_string":"2015-11-12 06:34:01 -0800"}
 
 2015-11-12 06:34:01 -0800 tag.common: {"message":"[ ajp-apr-127.0.0.1-8009-exec-3] LogInterceptor                 INFO  GET /monitor/broker/ HTTP/1.1\n","time_as_string":"2015-11-12 06:34:01 -0800"}
@@ -99,7 +98,7 @@ In order to build it yourself you only need the `record_transformer` filter that
 
 Next you need to parse the timestamp of your logs into separate date, time and millisecond components (which is basically what the better-timestamp plugin asks you to do, to some extent), and then to create a filter that would match all the messages you will send to Elasticsearch and to create the `@timestamp` value by appending the 3 components. This makes use of the fact that fluentd also allows you to run ruby code within your record_transformer filters to accommodate for more special log manipulation tasks.
 
-~~~xml
+~~~
 <filter tag.**>
 	type record_transformer
 	enable_ruby true
@@ -112,7 +111,7 @@ Next you need to parse the timestamp of your logs into separate date, time and m
 The result is that the above sample will come out like this:
 
 
-~~~ruby
+~~~
 2015-12-12 05:26:15 -0800 akai.common: {"date_string":"2015-11-12","time_string":"06:34:01","msec":"471","message":"[ ajp-apr-127.0.0.1-8009-exec-3] LogInterceptor                 INFO  ==== Request ===","@timestamp":"2015-11-12T06:34:01.471Z"}
 2015-12-12 05:26:15 -0800 akai.common: {"date_string":"2015-11-12","time_string":"06:34:01","msec":"473","message":"[ ajp-apr-127.0.0.1-8009-exec-3] LogInterceptor                 INFO  GET /monitor/broker/ HTTP/1.1\n","@timestamp":"2015-11-12T06:34:01.473Z"}
 ~~~
@@ -137,7 +136,7 @@ For instance, by using the record_transformer I would send the hostname and also
 
 Using this example configuration I tried to create a pie chart showing the number of messages per project for a dashboard. Here is what I got.
 
-~~~ruby
+~~~
 <filter tag.**>
 	type record_transformer
 	enable_ruby true
@@ -151,14 +150,14 @@ Using this example configuration I tried to create a pie chart showing the numbe
 Sample output from stdout:
 
 
-~~~ruby
+~~~
 2015-12-12 06:01:35 -0800 clear: {"date_string":"2015-10-15","time_string":"06:37:32","msec":"415","message":"[amelJettyClient(0xdc64419)-706] jetty:test/test   INFO  totallyAnonymousContent: http://whyAreYouReadingThis?:)/history/3374425?limit=1","@timestamp":"2015-10-15T06:37:32.415Z","sourceProject":"Test-Analyzed-Field"}
 ~~~
 
 And here is the result of trying to use it in a visualization:
-<center>
-	<img src="/images/logaggregation-analyzed-field.png" width=35% align="middle"/>
-</center>
+
+{:.center}
+![Log aggregation analyzed]({{ site.url }}/images/logaggregation-analyzed-field.png){:style="margin:auto; width:35%"}
 
 I should mention, what you are seeing is the result of 6 messages that all have the field sourceProject set to the value "Test-Analyzed-Field".
 
@@ -170,7 +169,7 @@ And the solution is: When Elasticsearch creates a new index, it will rely on the
 
 And what you basically need to do is to do a curl put with that json content to ES and then all the indices created that are prefixed with `logstash-*` will use that template. Be aware that with the fluent-plugin-elasticsearch you can specify your own index prefix so make sure to adjust the template to match your prefix:
 
-~~~bash
+~~~
 curl -XPUT localhost:9200/_template/template_doru -d '{
   "template" : "logstash-*",
   "settings" : {....
@@ -180,7 +179,7 @@ curl -XPUT localhost:9200/_template/template_doru -d '{
 The main thing to note in the whole template is this section:
 
 
-~~~json
+~~~ json
 "string_fields" : {
   "match" : "*",
   "match_mapping_type" : "string",

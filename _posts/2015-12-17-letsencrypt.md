@@ -27,15 +27,13 @@ You will need the following things, which this how-to does not provide you with:
 
 To start things, open up the [Azure Portal](https://portal.azure.com) using your favorite web browser, and log in so that you have access to the Azure portal. Then click *Virtual machines (Classic)*, then *Add +*.
 
-<center>
-![New VM]({{ site.url }}/images/letsencrypt-1-new-vm.png)
-</center>
+{:.center}
+![New VM]({{ site.url }}/images/letsencrypt-1-new-vm.png){:style="margin:auto"}
 
 Then, search for `ubuntu` and select *Ubuntu Server 14.04 LTS* (I think you can choose a regular Ubuntu, too, but this one definitely works).
 
-<center>
-![Select Ubuntu]({{ site.url }}/images/letsencrypt-2-select-ubuntu.png)
-</center>
+{:.center}
+![Select Ubuntu]({{ site.url }}/images/letsencrypt-2-select-ubuntu.png){:style="margin:auto"}
 
 Specify the correct settings for the VM. I chose the following specs for the VM:
 
@@ -46,9 +44,8 @@ Specify the correct settings for the VM. I chose the following specs for the VM:
 * Add two endpoints: http (tunnel port 80) and https (tunnel port 443). See image below.
 * Leave the rest of the setting to the defaults
 
-<center>
-![VM Settings]({{ site.url }}/images/letsencrypt-3-vm-settings.png)
-</center>
+{:.center}
+![VM Settings]({{ site.url }}/images/letsencrypt-3-vm-settings.png){:style="margin:auto"}
 
 When you're done and all your settings have been confirmed (*OK*), click the *Create* button to provision your VM. 
 
@@ -56,9 +53,8 @@ When you're done and all your settings have been confirmed (*OK*), click the *Cr
 
 This will take some time (around 5 minutes), but after that, you will find the information on your machine in the following way:
 
-<center>
-![Azure VM Provisioned]({{ site.url }}/images/letsencrypt-4-azure-name.png)
-</center>
+{:.center}
+![Azure VM Provisioned]({{ site.url }}/images/letsencrypt-4-azure-name.png){:style="margin:auto"}
 
 The automatically created DNS entry for your machine is displayed there, and this is the name you can use to connect to the machine using your favorite SSH tool (`ssh` if you're on Linux or Mac OS X, e.g PuTTY if you're on Windows).
 
@@ -101,15 +97,13 @@ In the first step, Let's Encrypt will ask for an administration email address; t
 
 After that, you will have to accept the license terms:
 
-<center>
-![License Terms]({{ site.url }}/images/letsencrypt-5-terms.png)
-</center>
+{:.center}
+![License Terms]({{ site.url }}/images/letsencrypt-5-terms.png){:style="margin:auto"}
 
 In the next step, enter the domain name(s) you want to create the certificate for:
 
-<center>
-![Domain Name]({{ site.url }}/images/letsencrypt-6-domain-name.png)
-</center>
+{:.center}
+![Domain Name]({{ site.url }}/images/letsencrypt-6-domain-name.png){:style="margin:auto"}
 
 Usually, you will create one certificate per domain you will use. Exceptions will be for example when creating a certificate which is both valid for `www.contoso.com` and `contoso.com`, if your web server answers to both. In this case, we will just provide `myserver.contoso.com` (this might be a web service or similar).
 

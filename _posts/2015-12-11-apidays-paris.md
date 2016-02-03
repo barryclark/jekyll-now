@@ -11,10 +11,9 @@ header-img: "images/bg-post.jpg"
 
 Having just recently come home again from the [APIdays](http://www.apidays.io) conference in Paris (Dec 8-9th 2015), memories are still quite fresh. It was a crowded event, the first day hosting a whopping 800 API enthusiasts, ranging from the geekiest of the geeks to a fair amount of suited business people, showing that talking about APIs is no longer something just the most avantgardist of companies, the most high tech of the tech companies, spend their time with. *Au contraire* (we were in Paris after all), APIs are mainstream, and they contribute to the advancing of collaboration and automatization of the (digital) world as such.
 
-<center>
-![Eiffel Tower - Paris]({{ site.url }}/images/2015-12-11-paris-eiffeltower.jpg)
+{:.center}
+![Eiffel Tower - Paris]({{ site.url }}/images/2015-12-11-paris-eiffeltower.jpg){:style="margin:auto"}
 <small>(Image by Martin Danielsson, [CC BY 4.0 License](https://creativecommons.org/licenses/by/4.0/))</small>
-</center>
 
 This was also one of the reasons the topic of APIdays was chosen as such: **Automating IT, Business and the whole society with APIs**. The partly non-techy twist of the subtitle to APIdays was also reflected in the sessions: Split into roughly three (or four) categories, you had a choice between real tech stuff, business related sessions and quite a few workshops. In addition to that, the opening and ending keynotes were more kept in a philosophical tone, featuring (in the opening keynote) [Christian Fauré](http://www.christian-faure.net/) and renowned french philosopher [Bernard Stiegler](https://en.wikipedia.org/wiki/Bernard_Stiegler) (in the ending keynote), presenting their takes on digital automation, collaboration and its effects on society, with respect to APIs. Even [Steven Willmott](http://twitter.com/njyx) pulled off a rather non-techy talk, and even non-businessy talk, rather unusual for a CEO of one of the big players in API space ([3scale](http://www.3scale.net)).
 
@@ -52,10 +51,9 @@ Many of the more technical talks dealt with the usual suspects [Microservices an
 
 The return to more serious topics, *Hypermedia* was an astonishingly big topic at the conference. Not that it's not a seriously good idea, but now adoption seems to find its way into real world scenarios, with practical and working specifications popping up, which are being adopted at an increasing rate. As Hypermedia leaves the state of a research topic (see below picture on [HATEOAS](https://en.wikipedia.org/wiki/HATEOAS) - Bless you!) and is actually being used.
 
-<center>
-![HATEOAS - Bless you!]({{ site.url }}/images/2015-12-11-hateoas.jpg)
+{:.center}
+![HATEOAS - Bless you!]({{ site.url }}/images/2015-12-11-hateoas.jpg){:style="margin:auto"}
 <small>(Courtesy of [CommitStrip](http://www.commitstrip.com/en/2015/12/03/apiception/))</small>
-</center>
 
 Many people are perhaps scared of the seemingly intransparent topic, but there are a lot of really good use cases for hypermedia. Jason Harmon of PayPal/Braintree ([@jharmn](http://twitter.com/jharmn)) pointed to some of the most prominent ones in his talk:
 
