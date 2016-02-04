@@ -1,6 +1,6 @@
 ---
 layout: post
-title: static_cast in C++
+title: static_cast on primitive data types in C++ ( in progress )
 ---
 
 ##Reminders about types conversions
@@ -23,3 +23,10 @@ By executing the code above, put the value 2000 inside a "char" variable succeed
 
 ##static_cast in C++
 
+There are four different types of conversions in C++ : static_cast, const_cast, dynamic_cast and reinterpret_cast. These four types conversions have been added as C++ also introduce inheritance and templates. These two last features make types conversions complex.
+
+static_cast is used for ordinary type conversions in C++. Actually, the code above could be written like this in C++ :
+
+```c
+myCharacter = static_cast<char>(myInteger);
+```
