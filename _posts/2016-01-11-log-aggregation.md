@@ -73,10 +73,11 @@ This is a pain because if you want to properly visualize a set of log messages g
 
 Let's take a look at what fluentd sends to Elasticsearch. Here is a sample log file with 2 log messages:
 
-~~~java
+~~~
 2015-11-12 06:34:01,471 [ ajp-apr-127.0.0.1-8009-exec-3] LogInterceptor                 INFO  ==== Request ===
 2015-11-12 06:34:01,473 [ ajp-apr-127.0.0.1-8009-exec-3] LogInterceptor                 INFO  GET /monitor/broker/ HTTP/1.1
 ~~~
+{: .language-java}
 
 A message sent to Elasticsearch from fluentd would contain these values:
 
@@ -87,6 +88,7 @@ A message sent to Elasticsearch from fluentd would contain these values:
 
 2015-11-12 06:34:01 -0800 tag.common: {"message":"[ ajp-apr-127.0.0.1-8009-exec-3] LogInterceptor                 INFO  GET /monitor/broker/ HTTP/1.1\n","time_as_string":"2015-11-12 06:34:01 -0800"}
 ~~~
+{: .language-java}
 
 I added the `time_as_string` field in there just so you can see the literal string that is sent as the time value.
 
@@ -107,7 +109,7 @@ Next you need to parse the timestamp of your logs into separate date, time and m
 	</record>
 </filter>
 ~~~
-
+{: .language-xml}
 The result is that the above sample will come out like this:
 
 
@@ -115,7 +117,7 @@ The result is that the above sample will come out like this:
 2015-12-12 05:26:15 -0800 akai.common: {"date_string":"2015-11-12","time_string":"06:34:01","msec":"471","message":"[ ajp-apr-127.0.0.1-8009-exec-3] LogInterceptor                 INFO  ==== Request ===","@timestamp":"2015-11-12T06:34:01.471Z"}
 2015-12-12 05:26:15 -0800 akai.common: {"date_string":"2015-11-12","time_string":"06:34:01","msec":"473","message":"[ ajp-apr-127.0.0.1-8009-exec-3] LogInterceptor                 INFO  GET /monitor/broker/ HTTP/1.1\n","@timestamp":"2015-11-12T06:34:01.473Z"}
 ~~~
-
+{: .language-java}
 *__Note__: you can use the same record_transformer filter to remove the 3 separate time components after creating the `@timestamp` field via the `remove_keys` option.*
 
 ### Do not analyse
@@ -146,14 +148,14 @@ Using this example configuration I tried to create a pie chart showing the numbe
 	</record>
 </filter>
 ~~~
-
+{: .language-xml}
 Sample output from stdout:
 
 
 ~~~
 2015-12-12 06:01:35 -0800 clear: {"date_string":"2015-10-15","time_string":"06:37:32","msec":"415","message":"[amelJettyClient(0xdc64419)-706] jetty:test/test   INFO  totallyAnonymousContent: http://whyAreYouReadingThis?:)/history/3374425?limit=1","@timestamp":"2015-10-15T06:37:32.415Z","sourceProject":"Test-Analyzed-Field"}
 ~~~
-
+{: .language-java}
 And here is the result of trying to use it in a visualization:
 
 {:.center}
@@ -175,11 +177,11 @@ curl -XPUT localhost:9200/_template/template_doru -d '{
   "settings" : {....
 }'
 ~~~
-
+{: .language-bash}
 The main thing to note in the whole template is this section:
 
 
-~~~ json
+~~~
 "string_fields" : {
   "match" : "*",
   "match_mapping_type" : "string",
@@ -192,7 +194,7 @@ The main thing to note in the whole template is this section:
   }
 }
 ~~~
-
+{: .language-json}
 This tells Elasticsearch that for any field of type string that it receives it should create a mapping of type string that is analyzed + another field that adds a `.raw` suffix that will not be analyzed.
 
 The `not_analyzed` suffixed field is the one you can safely use in visualizations, but do keep in mind that this creates the scenario mentioned before where you can have up to 40% inflation in storage requirements because you will have both analyzed and not_analyzed fields in store.
@@ -200,4 +202,4 @@ The `not_analyzed` suffixed field is the one you can safely use in visualization
 # Have fun
 So, now you know what we went through here at [HaufeDev](http://haufe-lexware.github.io/) and what problems we faced and how we can overcome them.
 
-If you want to give it a try you can take a look at [our docker templates on github](https://github.com/Haufe-Lexware/docker-templates), there you will find a [logaggregation template](https://github.com/Haufe-Lexware/docker-templates/tree/master/logaggregation) for an EFK setup + a shipper that can transfer messages securely to the EFK solution and you can have it up and running in a matter of minutes. 
+If you want to give it a try you can take a look at [our docker templates on github](https://github.com/Haufe-Lexware/docker-templates), there you will find a [logaggregation template](https://github.com/Haufe-Lexware/docker-templates/tree/master/logaggregation) for an EFK setup + a shipper that can transfer messages securely to the EFK solution and you can have it up and running in a matter of minutes.
