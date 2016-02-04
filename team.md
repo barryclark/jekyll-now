@@ -5,7 +5,7 @@ permalink: /team/
 published: true
 ---
 
-## Core Team
+## #Core Team
 
 * **Philip Müller** Project Leader, Project Management and Coordination, Mirrors Manager, Packager, Developer, Web Developer
 * **Roland Singer** Founder, Designer, Developer, Web Developer, Packager
@@ -19,14 +19,14 @@ published: true
 * **Demiray Muhterem** Developer, Turkish IRC and web support, Manjaro Artwork
 * **Alexandre A. Arnt** Developer
 
-## Artwork
+## #Artwork
 * **David Linares (mcder3)** Manjaro Artwork: Plasma5 Designer, Theme designer, Installer visual design
 
-## OpenRC Team
+## #OpenRC Team
 * **Artoo** Packaging, Porting, Infrastructure
 * **Aaditya Bagga** Documentation, Testing, ISOs
 
-## Community and Support
+## #Community and Support
 * **AJSlye** Maintainer Netrunner Edition
 * **Bernhard Landauer (oberon)** Maintainer Deepin, Fluxbox and i3 Editions, Packager
 * **Chrysostomus** Maintainer Bspwm Edition
@@ -40,11 +40,11 @@ published: true
 * **Strit** Torrent Maintainer
 * **Tomasz Przybył (FadeMind)** Community Support
 
-## Documentation
+## #Documentation
 * **Jonathon Fernyhough** Editor of the User Guide 0.8.9-15.12, Community Management
 * **Sabras** Wiki
 
-## Alumni
+## #Alumni
 * **Carl Duff** Community, Documentation and Wiki Management, Scripting and Configuration
 * **Cumali** Cinnamon and Gnome Editions Maintainer
 * **Dan S.** Openbox Edition Maintainer
@@ -54,5 +54,5 @@ published: true
 * **Joshua Strot** Developer, Graphics Developer
 * **Lane Wiscombe (anex)** Manjaro Artwork, KDE Team: KDE5 Edition Maintainer, MATE and Openbox Editions Maintainer
 
-## Acknowledgements
+## #Acknowledgements
 The awesome community on our [forum](https://forum.manjaro.org) and **#manjaro** IRC channel
