@@ -26,7 +26,7 @@ The simplest approach is to just parse all messages using the common denominator
 
 In the case of a typical log file a configuration can be something like this (but not necessarily):
 
-~~~ xml
+~~~
 <source>
   type tail
   path /var/log/test.log
@@ -39,7 +39,7 @@ In the case of a typical log file a configuration can be something like this (bu
   format1 /(?<time>\d{4}-\d{1,2}-\d{1,2} \d{1,2}:\d{1,2}:\d{1,2},\d{3}) (?<message>(.|\s)*)/
 </source>
 ~~~
-
+{: .language-xml}
 You will notice we still do a bit of parsing, the minimal level would be to just have a multiline format to split the log contents into separate messages and then to push the contents on.
 
 The reason we do not just put everything into a single field with a greedy regex pattern is to have the correct timestamp pushed showing the time of the log and not the time when the log message was read by the log shipper, along with the rest of the message.
@@ -90,6 +90,7 @@ An example of this is shown in the configuration below:
     type stdout
 </match>
 ~~~
+{: .language-ruby}
 
 This approach is useful when we have multiline log messages within our logfile and the messages themselves have different formats for the content. Still, the important thing to note is that all log messages are prefixed by a standard timestamp, this is key to succesfully splitting messages correctly.
 
@@ -99,10 +100,10 @@ Fluentd will continue to read logfile lines and keep them in a buffer until a li
 
 
 Looking at the example, all our log messages (single or multiline) will take the form:
-~~~ json
+~~~
 { "time":"2015-10-15 08:21:04,716", "message":"[ ttt-grp-127.0.0.1-8119-test-11] LogInterceptor                 INFO  HTTP/1.1 200 OK" }
 ~~~
-
+{: .language-json}
 Being tagged with log.unprocessed all the messages will be caught by the *rewrite_tag_filter* match tag and it is at this point that we can pinpoint what type of contents each message has and we can re-tag them for individual processing.
 
 This module is key to the whole mechanism as the *rewrite_tag_filter* takes the role of a router. You can use this module to redirect messages to different processing modules or even outputs depending on the rules you define in it.
@@ -159,7 +160,7 @@ An example of this approach can be seen below:
     </pattern>
 </source>
 ~~~
-
+{: .language-ruby}
 When choosing this path there are multiple issues you need to be aware of:
 * The pattern matching is done sequentially and the first pattern that matches the message is used to parse it and the message is passed along
 * You need to make sure the most specific patterns are higher in the list and the more generic ones lower
@@ -208,7 +209,7 @@ AKA_ARGO_LOG2 %{AKAIDATESTAMP2:time} %{WORD:argoComponent} *%{LOGLEVEL:logLevel}
 AKA_ARGO_SOURCE (GC|CMS)
 AKA_ARGO_GC \[%{AKA_ARGO_SOURCE:source} %{AKA_GREEDYMULTILINE:message}
 ~~~
-
+{: .language-bash}
 
 To use Grok you will need to install the *fluent-plugin-grok-parser* and then you can use grok patterns with any of the other techniques previously described with regex: Multiline, Multi-format.
 
