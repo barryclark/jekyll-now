@@ -73,16 +73,17 @@ This is a pain because if you want to properly visualize a set of log messages g
 
 Let's take a look at what fluentd sends to Elasticsearch. Here is a sample log file with 2 log messages:
 
-~~~java
+~~~
 2015-11-12 06:34:01,471 [ ajp-apr-127.0.0.1-8009-exec-3] LogInterceptor                 INFO  ==== Request ===
 2015-11-12 06:34:01,473 [ ajp-apr-127.0.0.1-8009-exec-3] LogInterceptor                 INFO  GET /monitor/broker/ HTTP/1.1
 ~~~
+{: .language-java}
 
 A message sent to Elasticsearch from fluentd would contain these values:
 
 *-this isn't the exact message, this is the result of the stdout output plugin-*
 
-~~~
+~~~ java
 2015-11-12 06:34:01 -0800 tag.common: {"message":"[ ajp-apr-127.0.0.1-8009-exec-3] LogInterceptor                 INFO  ==== Request ===","time_as_string":"2015-11-12 06:34:01 -0800"}
 
 2015-11-12 06:34:01 -0800 tag.common: {"message":"[ ajp-apr-127.0.0.1-8009-exec-3] LogInterceptor                 INFO  GET /monitor/broker/ HTTP/1.1\n","time_as_string":"2015-11-12 06:34:01 -0800"}
@@ -98,7 +99,7 @@ In order to build it yourself you only need the `record_transformer` filter that
 
 Next you need to parse the timestamp of your logs into separate date, time and millisecond components (which is basically what the better-timestamp plugin asks you to do, to some extent), and then to create a filter that would match all the messages you will send to Elasticsearch and to create the `@timestamp` value by appending the 3 components. This makes use of the fact that fluentd also allows you to run ruby code within your record_transformer filters to accommodate for more special log manipulation tasks.
 
-~~~
+~~~xml
 <filter tag.**>
 	type record_transformer
 	enable_ruby true
@@ -111,7 +112,7 @@ Next you need to parse the timestamp of your logs into separate date, time and m
 The result is that the above sample will come out like this:
 
 
-~~~
+~~~java
 2015-12-12 05:26:15 -0800 akai.common: {"date_string":"2015-11-12","time_string":"06:34:01","msec":"471","message":"[ ajp-apr-127.0.0.1-8009-exec-3] LogInterceptor                 INFO  ==== Request ===","@timestamp":"2015-11-12T06:34:01.471Z"}
 2015-12-12 05:26:15 -0800 akai.common: {"date_string":"2015-11-12","time_string":"06:34:01","msec":"473","message":"[ ajp-apr-127.0.0.1-8009-exec-3] LogInterceptor                 INFO  GET /monitor/broker/ HTTP/1.1\n","@timestamp":"2015-11-12T06:34:01.473Z"}
 ~~~
@@ -136,7 +137,7 @@ For instance, by using the record_transformer I would send the hostname and also
 
 Using this example configuration I tried to create a pie chart showing the number of messages per project for a dashboard. Here is what I got.
 
-~~~
+~~~ xml
 <filter tag.**>
 	type record_transformer
 	enable_ruby true
@@ -150,7 +151,7 @@ Using this example configuration I tried to create a pie chart showing the numbe
 Sample output from stdout:
 
 
-~~~
+~~~ java
 2015-12-12 06:01:35 -0800 clear: {"date_string":"2015-10-15","time_string":"06:37:32","msec":"415","message":"[amelJettyClient(0xdc64419)-706] jetty:test/test   INFO  totallyAnonymousContent: http://whyAreYouReadingThis?:)/history/3374425?limit=1","@timestamp":"2015-10-15T06:37:32.415Z","sourceProject":"Test-Analyzed-Field"}
 ~~~
 
@@ -169,7 +170,7 @@ And the solution is: When Elasticsearch creates a new index, it will rely on the
 
 And what you basically need to do is to do a curl put with that json content to ES and then all the indices created that are prefixed with `logstash-*` will use that template. Be aware that with the fluent-plugin-elasticsearch you can specify your own index prefix so make sure to adjust the template to match your prefix:
 
-~~~
+~~~ java
 curl -XPUT localhost:9200/_template/template_doru -d '{
   "template" : "logstash-*",
   "settings" : {....
@@ -200,4 +201,4 @@ The `not_analyzed` suffixed field is the one you can safely use in visualization
 # Have fun
 So, now you know what we went through here at [HaufeDev](http://haufe-lexware.github.io/) and what problems we faced and how we can overcome them.
 
-If you want to give it a try you can take a look at [our docker templates on github](https://github.com/Haufe-Lexware/docker-templates), there you will find a [logaggregation template](https://github.com/Haufe-Lexware/docker-templates/tree/master/logaggregation) for an EFK setup + a shipper that can transfer messages securely to the EFK solution and you can have it up and running in a matter of minutes. 
+If you want to give it a try you can take a look at [our docker templates on github](https://github.com/Haufe-Lexware/docker-templates), there you will find a [logaggregation template](https://github.com/Haufe-Lexware/docker-templates/tree/master/logaggregation) for an EFK setup + a shipper that can transfer messages securely to the EFK solution and you can have it up and running in a matter of minutes.
