@@ -28,14 +28,15 @@ As `características` são os `atributos` e os `comportamentos` são os `método
 
 Imagine se a `Terra` começasse a abrigar `alienígenas` e os governos quisessem manter o controle de
 todos que estivessem vivendo aqui e para cada `alienígena` tivéssemos de saber seu `nome`, `idade` e `planeta`.
-Criando um objeto teríamos:
-```js
+Criando um objeto teríamos:  
+{% highlight javascript %}
 var alien = {
   name : 'IOAS3356',
   age : 159,
   planet : 'Pluto'
 };
-```
+{% endhighlight %}  
+
 Mas isso seria inviável pois teríamos diversos `alienígenas` de diferentes planetas e teríamos que repetir
 esse código em todo nosso programa. Então poderíamos criar uma `classe` para esse fim.
 
@@ -45,8 +46,9 @@ Antes de sair o **ECMAScript 6**, o JavaScript apenas `simula` uma `classe` util
 é conhecida como `função construtora` e como o próprio nome indica, ela é responsável por criar novos `objetos`.
 A chamada para essa função se diferencia de funções comuns, pois deve ser feita através da palavra reservada `new`.  
 
-Vamos agora criar a nossa classe `Alien` para nosso **SRART - Sistema de Registro de Alienígenas Residentes na Terra:**
-```js
+Vamos agora criar a nossa classe `Alien` para nosso **SRART - Sistema de Registro de Alienígenas Residentes na Terra:**  
+
+{% highlight javascript %}
 // Função construtura responsável por criar objetos Alien
 function Alien(name, age, planet) {
   // Atributos da nossa classe
@@ -59,10 +61,11 @@ function Alien(name, age, planet) {
     console.log('#$#: ' + this.name + '! OADPL$%)@@#: ' + this.planet);
   };
 };
-```
+{% endhighlight %}  
 
-Agora que criamos a nossa classe, podemos criar diversos objetos utilizando ela:
-```js
+Agora que criamos a nossa classe, podemos criar diversos objetos utilizando ela:  
+
+{% highlight javascript %}
 // Criamos um objeto com os valores que passamos para a função construtura
 var alien_one = new Alien('IOAS3356', 159, 'Pluto');
 // Com nosso objeto criado, podemos acessar todos seus atributos e até mesmo fazer chamadas a seus métodos
@@ -71,7 +74,7 @@ alien_one.greeting();
 // Criando outro objeto Alien
 var alien_two = new Alien('ADVQ4490', 227, 'Mars');
 alien_two.greeting();
-```
+{% endhighlight %}  
 
 > Vocês podem ver que utilizei a palavra reservada `this` na hora de criar os `atributos` e o `método` de
 nossa classe. Fiz isso, pois essa palavra está referenciando o `objeto` que será criado. Como podem ver
@@ -94,8 +97,9 @@ orientadas a objetos, devemos utilizar algumas técnicas que veremos a seguir.
 Todas as `funções` no JavaScript contém a propriedade `prototype` que vem vazia, mas pode ser alterada. Essa
 propriedade é tratada como um `objeto` e nela podemos `anexar atributos e métodos`.  
 
-Alterando a nossa classe `Alien` criada anteriormente para utilizar o `prototype`, ficaria assim:
-```js
+Alterando a nossa classe `Alien` criada anteriormente para utilizar o `prototype`, ficaria assim:  
+
+{% highlight javascript %}
 // Função construtura responsável por criar objetos Alien
 function Alien(name, age, planet) {
   // Atributos da nossa classe (anexados diretamenta na função)
@@ -114,7 +118,7 @@ alien_one.greeting();
 
 var alien_two = new Alien('ADVQ4490', 227, 'Mars');
 alien_two.greeting();
-```
+{% endhighlight %}  
 
 Como vocês podem ver, a `instanciação` de nossos `objetos` e a chamada do método `greeting()` não foi alterada, mas
 então o que mudou? Antes teríamos dois objetos, cada um com seu método `greeting()` e agora utilizando o `prototype`,
@@ -125,8 +129,9 @@ podem ainda acessar os valores do `objeto` declarados dentro da `função constr
 
 Imagine agora que o nosso sistema **SRART** deve separar os `alienígenas` por `espécie` e que além dos dados gravados
 precisamos também de registrar dados específicos de cada `espécie`. Iremos fazer o uso do `prototype` para transformar a nossa classe
-`Alien` em uma `Classe Pai` e iremos criar duas `Classe Filhas`:
-```js
+`Alien` em uma `Classe Pai` e iremos criar duas `Classe Filhas`:  
+
+{% highlight javascript %}
 // Função construtura responsável por criar objetos Gray
 function Gray(name, age, planet, language) {
   Alien.call(this, name, age, planet);
@@ -142,7 +147,7 @@ function Reptilian(name, age, planet, skinColor) {
 };
 
 Reptilian.prototype = Object.create(Alien.prototype);
-```  
+{% endhighlight %}  
 
 A implementação da herança acontece nesses dois momentos:
 
@@ -158,8 +163,9 @@ Com isso fazemos com que o `prototype` de nossas `Classes Filhas` herdem todas a
 
 #### Utilizando as propriedades herdadas
 
-Agora vamos criar um novo `método` que vai puxar o relatório de um `alienígena` e anexar no `prototype` das nossas `Classes Filhas`:
-```js
+Agora vamos criar um novo `método` que vai puxar o relatório de um `alienígena` e anexar no `prototype` das nossas `Classes Filhas`:  
+
+{% highlight javascript %}
 // Método para imprimir relatório de um Gray
 Gray.prototype.showRegistry = function() {
   console.log('Name: ' + this.name);
@@ -175,11 +181,12 @@ Reptilian.prototype.showRegistry = function() {
   console.log('Planet: ' + this.planet);
   console.log('Skin Color: ' + this.skinColor);
 };
-```  
+{% endhighlight %}  
 
 Agora podemos cadastrar em nosso sistema **SRART** novos `alienígenas` utilizando nossas `Classes Filhas` ao invés de nossa
-`Classe Pai` e puxar o relatório das mesmas:
-```js
+`Classe Pai` e puxar o relatório das mesmas:  
+
+{% highlight javascript %}
 // Criando nosso primeiro Gray
 var gray_one = new Gray('IOAS3356', 159, 'Pluto', 'Graynian');
 gray_one.showRegistry();
@@ -187,7 +194,7 @@ gray_one.showRegistry();
 // Criando nosso primeiro Reptilian
 var reptilian_one = new Reptilian('ADVQ4490', 227, 'Mars', 'Red');
 reptilian_one.showRegistry();
-```  
-
+{% endhighlight %}  
+  
 > Há outras formas de se implementar a herança em JavaScript, até mesmo formas mais simples com o **ECMAScript 6**,
 mas deixarei para falar sobre essas formas em um próximo artigo! xD

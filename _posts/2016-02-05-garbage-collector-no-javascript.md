@@ -28,8 +28,9 @@ JavaScript por sua vez utiliza um processo automatizado, vamos entender um pouco
 Quando declaramos uma `variável`, seja ela um `objeto`, um `array`, uma `string`, etc. O JavaScript automaticamente
 aloca um espaço na memória para a `variável`. Essa alocação pode ser feita de diversas maneiras:
 
-- **Inicializaçã do valor:** Quando inicializamos uma variável com algum valor. Exemplos:
-```js
+- **Inicializaçã do valor:** Quando inicializamos uma variável com algum valor. Exemplos:  
+
+{% highlight javascript %}
 var name = 'Wendell';
 var age = 23;
 var person = {
@@ -37,10 +38,11 @@ var person = {
   age : 25,
   married : false
 };
-```
+{% endhighlight %}  
 
-- **Alocação por chamada de função:** Quando usamos funções, algumas podem resultar em uma alocação de objeto. Exemplos:
-```js
+- **Alocação por chamada de função:** Quando usamos funções, algumas podem resultar em uma alocação de objeto. Exemplos:  
+
+{% highlight javascript %}
 // Aloca um objeto de data
 var today = new Date();
 // Aloca um elemento DOM
@@ -48,16 +50,15 @@ var element = document.createElement('p');
 // Aloca uma nova string quando utilizado o método substr
 var greeting = 'Hello World!';
 var cut = greeting.substr(0, 5);
-```
-
+{% endhighlight %}
 
 ## Chamada de Funções
 
 Em JavaScript quando declaramos uma `função`, ela é armazenada/alocada como um `objeto` que podemos fazer chamadas. Ao
 definir uma função, apenas damos um nome a ela e especificamos o que será feito quando a mesma for chamada. Temos
-algumas maneiras de se definir uma função, por exemplo:
+algumas maneiras de se definir uma função, por exemplo:  
 
-```js
+{% highlight javascript %}
 function avg_value(value1, value2) {
   return (value1 + value2) / 2;
 }
@@ -65,18 +66,18 @@ function avg_value(value1, value2) {
 var avg_value = function(value1, value2) {
   return (value1 + value2) / 2;
 }
-```
+{% endhighlight %}  
 
 Quando fazemos uma chamada para a função criada, ele acessa o espaço alocado na memória e executa as ações especificadas
 quando a função foi definida. Para fazer uma chamada para uma função basta utilizar seu nome e passar os parâmetros (quando
-necessário). Também podemos fazer chamadas a funções dentro de outras funções. Exemplos:
+necessário). Também podemos fazer chamadas a funções dentro de outras funções. Exemplos:  
 
-```js
+{% highlight javascript %}
 // Chamando a função criada anteriormente
 avg_value(10, 8);
 // Chamando a função criada anteriormente dentro de outra função
 console.log(avg_value(10, 6));
-```
+{% endhighlight %}
 
 ## Garbage Collector no JavaScript
 
