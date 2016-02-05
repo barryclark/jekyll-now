@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Reisekosten App - Proof of Concept
-subtitle: Read/write Lexware on-premise data from a smartphone
+title: Modernizing on-premise application using Azure Service Bus Relay
+subtitle: Extending Lexware on-premise producte with mobile apps
 category: general
 tags: [mobile, custdev]
 author: Robert Fitch
