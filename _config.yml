@@ -53,8 +53,8 @@ baseurl: ""
 # !! You don't need to change any of the configuration flags below !!
 #
 
-markdown: pygments
-highlighter: rouge
+markdown: redcarpet
+highlighter: pigments
 permalink: /:title/
 
 # The release of Jekyll Now that you're using
