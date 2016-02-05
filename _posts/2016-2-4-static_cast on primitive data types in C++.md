@@ -1,6 +1,6 @@
 ---
 layout: post
-title: static_cast on primitive data types in C++ ( in progress )
+title: static_cast on primitive data types in C++
 ---
 
 ##Reminders about types conversions
