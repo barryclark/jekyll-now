@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Modernizing on-premise application using Azure Service Bus Relay
-subtitle: Extending Lexware on-premise producte with mobile apps
+subtitle: Extending on-premise producte with mobile apps
 category: general
 tags: [mobile, custdev]
 author: Robert Fitch
