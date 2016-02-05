@@ -61,4 +61,12 @@ std::cout << d->a;
 std::cout << d->b;
 ```
 
-This code compiles successfully and displays 3430 on the screen during the runtime. During the static_cast, the compiler will "assume" that the object B pointed by b is part of a D object ( as d is D* data type ). If yes, the address in the pointer will be updated and will now point to the D object. If no, the pointer value is not modified but the type is now D* and not B* anymore ( that's why d->b still works and return 0 ).
+This code compiles successfully and displays 3430 on the screen during the runtime. During the static_cast, the compiler "assumes" the object B pointed by b is part of a D object ( as d is D* data type ). If yes, the address in the pointer is updated and is pointing now to the D object. If no, the pointer value is not modified but the type is now D* and not B* anymore ( that's why d->b still works and return 0 ).
+
+If we now change the cast type :
+
+```c++
+d = dynamic_cast<D*>(b);
+```
+
+An error will occure during the compilation. In fact, there is no D object part of the B object pointed by b, so this pointer conversion cannot be handled.
