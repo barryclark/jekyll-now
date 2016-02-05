@@ -8,4 +8,4 @@ permalink: /games/
 [Elementalis](/games/elementalis)
 
 <h2>In Progress</h2>
-[Dragorhach](/games/dragorhach)
+Dragorhach
