@@ -1,3 +1,8 @@
+---
+layout: post
+title: 使用Fastlane快速部署
+---
+
 # 前言
 [Fastlane](https://github.com/fastlane/fastlane) 是一套提供給Mac & iOS Developer的整合部署工具，提供使用者藉由預先寫好lane script方便的進行完整部署流程。Fastlane內建了許多常見的tool以及封裝過的tool，大致上可分為以下幾類：
 
