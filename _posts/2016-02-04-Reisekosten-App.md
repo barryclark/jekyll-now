@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Reisekosten App: Proof of Concept
+title: Reisekosten App - Proof of Concept
 subtitle: Read/write Lexware on-premise data from a smartphone
 category: proof-of-concept
 tags: [azure, on-premise]
