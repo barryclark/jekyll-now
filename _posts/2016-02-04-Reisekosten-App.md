@@ -2,8 +2,8 @@
 layout: post
 title: Reisekosten App - Proof of Concept
 subtitle: Read/write Lexware on-premise data from a smartphone
-category: proof-of-concept
-tags: [azure, on-premise]
+category: general
+tags: [mobile, custdev]
 author: Robert Fitch
 author_email: robert.fitch@haufe-lexware.com
 header-img: "images/bg-post.jpg"
