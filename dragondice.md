@@ -37,4 +37,4 @@ Total number of dice: 112
 
 Total point value: 602
 
-Total value: $150.50
+Total value: $150.50 
