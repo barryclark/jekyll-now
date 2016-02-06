@@ -25,7 +25,15 @@ I didn't find the exercises for this section quite as engaging as the Lua sectio
 
 # Elm
 
+I liked [Elm](http://elm-lang.org/) a lot. Elm is a Haskell-style functional language that compiles to Javascript to run in a web browser. It has a very nice style of functional reactive programming to respond to events in the browser as signals. For example, mouse movement, used as a Signal, causes a function to fire, which potentially updates the state of the page. This allows for the functions to be very simple reponses to just a single state - for animations, each call just computes one frame. The structure of the language led to a big use of currying, almost to the extent that it isn't even something you need to think about as a technique - its just what you do.
+
+The exercises for this section were highly focused around animation and built up to a game. I lost some interest as it got to working more on the game, but I might come back to this at some point. I spent a lot of time on the animations though, and enjoyed these quite a bit.
+
 # Elixir
+
+I lost the plot on [Elixir](http://elixir-lang.org/). It seems that one of the key selling points is that Elixir is a better syntax around Erlang, but I didn't find the syntax particularly compelling. Several parts of it were irritating - I did not care for the comma that gets added in the one-line ```do``` syntax - and it just never flowed very naturally for me. I liked the way Elixir does macros, and the actor-model-like distribution seemed quite interesting and powerful (though I skipped these exercises for now).
+
+The examples and exercises in this section also didn't really work for me. The Elixir landing page doesn't specifically mention macros, only alluding to extensibility, but one of the days was oriented around macros. The last day was about distribution, which is interesting, but by this point I had already sortof given up on this section, and it felt like I was forcing myself to work through these, so I stopped. Maybe I'll revisit at some later point.
 
 # Julia
 
