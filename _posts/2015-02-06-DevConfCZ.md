@@ -3,8 +3,6 @@ layout: post
 title: DevConfCZ
 ---
 
-## Intro
-
 This weekend I got a chance to attend one of the leading open source developer conferences in the Czech Republic: [Developer Conference](http://www.devconf.cz/) 2015. It is organized by Red Hat every year in February in Brno. This year, the venue changed from FI MUNI to the very nice historical building of FIT VUT. I've visited this venue before, last summer, during the GUADEC (Gnome User And DEveloper Conference).
 
 ## Friday 6.
