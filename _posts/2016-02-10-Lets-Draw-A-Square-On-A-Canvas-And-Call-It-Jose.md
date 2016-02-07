@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: [javascript, game, development, canvas, story]
-title: Meet José ! The Javascript Polygon!
+title: Meet José! The Javascript Polygon!
 author: emir_osmanoski
 comments: true
 ---
