@@ -37,3 +37,14 @@ myArray.resize(2);
 for (MyClass myObject : myArray) {
 }
 ```
+
+## For loop with iterators
+
+```
+for (std::vector<int>::iterator i = tab.begin(); i != tab.end(); ++i) {
+    cout << "Current item : " << (*i);
+    cout << "Current iteration :" << std::distance(tab.begin(), i);
+}
+```
+
+In the above example, i is an iterator object pointing to the current item of the loop. The method begin() of the vector class returns an iterator to the first item of the given array, the method end() of the vector class returns an iterator to the past-the-end item of the array ( that means the iterator points on nothing, but is used in loops to know when the full list has been browsed ). The distance() function takes two iterators as parameters and returns the distance between them ( useful to know the current iteration ).
