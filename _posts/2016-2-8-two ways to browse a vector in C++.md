@@ -7,7 +7,7 @@ title: Two ways to browse vector in C++
 
 This is a new feature of C++ 11. It is now possible to browse an array using a short "for loop" as :
 
-```
+```c++
 int myArray[5] = {1,2,3,4,5};
 for (int value : myArray) {
     std::cout << value;
@@ -21,7 +21,7 @@ for (int value : myOtherArray) {
 
 You could want update the values of your array. It is possible to make the loop variable a reference :
 
-```
+```c++
 std::vector myArray {1,2,3};
 for (int& ref : myArray) {
     ref++;
@@ -30,7 +30,7 @@ for (int& ref : myArray) {
 
 It is also possible to browse objects lists :
 
-```
+```c++
 std::vector<MyClass> myArray;
 myArray.resize(2);
 
@@ -40,7 +40,7 @@ for (MyClass myObject : myArray) {
 
 ## For loop with iterators
 
-```
+```c++
 for (std::vector<int>::iterator i = tab.begin(); i != tab.end(); ++i) {
     cout << "Current item : " << (*i);
     cout << "Current iteration :" << std::distance(tab.begin(), i);
