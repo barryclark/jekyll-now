@@ -3,6 +3,11 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="{{ page.title }}" />
+    <meta property="og:image" content="url({{ page.image.feature }})" />
+    <meta property="og:site_name" content="Dactrtr" />
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
 
     <title>{% if page.title %}{{ page.title }} @ {% endif %}{{ site.name }} {{ site.description }}</title>
