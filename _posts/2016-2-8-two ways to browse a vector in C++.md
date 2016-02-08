@@ -27,3 +27,13 @@ for (int& ref : myArray) {
     ref++;
 }
 ```
+
+It is also possible to browse objects lists :
+
+```
+std::vector<MyClass> myArray;
+myArray.resize(2);
+
+for (MyClass myObject : myArray) {
+}
+```
