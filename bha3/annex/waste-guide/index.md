@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Waste Guide
-permalink: /bha2/annex/waste-guide/
+permalink: /bha3/annex/waste-guide/
 ---
 
 ## Waste Guide
@@ -26,7 +26,7 @@ When used for transfering just medium or other liquids: dispose in the trash bin
 
 ### Glass: Glass pipettes, Microscope slides, Broken material
 
-Collect in the glass wear box in the lab.
+Collect in the glass wear box in the lab. Wash with bleach first and soap second.
 
 ### Food, drinks
 
@@ -34,8 +34,8 @@ Aha! Got ya! Never ever eat or drink in the lab!
 
 ### Staining
 
-Use as little staining dye as possible in the first place. Absorp in paper towels or old news papers. Let it dry and dispose of it.
+Use as little staining dye as possible in the first place. Absorp in paper towels or old news papers. Let it dry and dispose of it in the trash.
 
 ### Liquid solutions
 
-Check with the lab manager whether you can poor it down the sink (depends on the content).
+Check with the lab manager whether you can poor it down the sink (depends on the content). To sterilize: add detergent or bleach.
