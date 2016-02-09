@@ -13,7 +13,7 @@ In order to hit the ground running, please make sure you have taken care of the 
   * We also welcome other kinds of MCUs like Raspberry, Particle, BeagleBone, Galileo, etc, but you'll have to write the code and do the wiring from scratch
   * Also check the [suppliers page](/suppliers/) for stores to purchase electronic components
 * For those of you that are planning to make things at home (otherwise provided in the lab): soldering iron, multimeter, helping hand, solder and heat shrink ([iPrototype](https://iprototype.nl/products/accessoires/tools/Heat-Shrink-Kit))
-* M3 [DIN84](http://www.bevestigingsmateriaal.nl/bevestigingsmateriaal/bouten-schroeven/zaagsnede-kop/cilinderkopschroef-din-84/106) or [DIN933](http://www.bevestigingsmateriaal.nl/bevestigingsmateriaal/bouten-schroeven/buitenzeskant-kop/tapbouten-din-933/61) (what ever you prefer) bolts and nuts [DIN934](http://www.bevestigingsmateriaal.nl/bevestigingsmateriaal/moeren/zeskantmoer-din-934/75) in several lengths, such as 10 mm (most used), 20 mm and 30 mm. 
+* We will need a lot of screws for making prototypes, let's start with 100 M3 [DIN84](http://www.bevestigingsmateriaal.nl/bevestigingsmateriaal/bouten-schroeven/zaagsnede-kop/cilinderkopschroef-din-84/106) or [DIN933](http://www.bevestigingsmateriaal.nl/bevestigingsmateriaal/bouten-schroeven/buitenzeskant-kop/tapbouten-din-933/61) (what ever you prefer) bolts and nuts [DIN934](http://www.bevestigingsmateriaal.nl/bevestigingsmateriaal/moeren/zeskantmoer-din-934/75) in several lengths, such as 10 mm (most used), 20 mm and 30 mm. 
 
 ## Software
 * Text or code editor such as Notepad, Notepad++, Xcode, gedit, etc
