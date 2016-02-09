@@ -1,13 +1,13 @@
 ---
 layout: default
 title: 3D printer
-permalink: /bha2/annex/machine-equipment-guide/3d-printer/
+permalink: /bha3/annex/machine-equipment-guide/3d-printer/
 categories: machine-equipment-guide
 ---
 
 ## 3D printer: Ultimaker 
 
-The Open Wetlab in Amsterdam uses [Ultimakers](http://fablab.waag.org/machine/3d-printer-1)
+The Open Wetlab in Amsterdam uses [Ultimakers](http://fablab.waag.org/machine/3d-printer-1) and Printrbot.
 
 1. Turn on the computer
 2. Make sure that you file is compatible with Cura.
@@ -29,4 +29,4 @@ The Open Wetlab in Amsterdam uses [Ultimakers](http://fablab.waag.org/machine/3d
 16. Turn off the printer
 17. Turn off the computer.
 
-[Back to Machine & Equipment Guide](/bha2/annex/machine-equipment-guide/)
+[Back to Machine & Equipment Guide](/bha3/annex/machine-equipment-guide/)

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Pipettors
-permalink: /bha2/annex/machine-equipment-guide/pipettors/
+permalink: /bha3/annex/machine-equipment-guide/pipettors/
 categories: machine-equipment-guide
 ---
 
@@ -9,7 +9,7 @@ categories: machine-equipment-guide
 
 The micropipette is used to transfer small amounts (<1 ml) of liquids. The scales on micropipettes are in microliters (1000µl = 1 ml). They come in several ranges of volumes as P20 = 0.5- 20 µl, P200 = 20-200 µl, and P1000 = 200-1000 µl. They are used in conjunction with disposable (often sterile) plastic tips; the smaller two micropipettors (P20 and P200) require the yellow tips and the P1000 pipettor uses the larger blue tips. The following is an illustration of a micropipettor: 
 
-![pipette]({{ site.baseurl }}/bha2/annex/machine-equipment-guide/pipette.png) 
+![pipette]({{ site.baseurl }}/bha3/annex/machine-equipment-guide/pipette.png) 
 
 Directions for use of the micropipette:
 
@@ -21,7 +21,7 @@ P1000: 200 to 1000 µl
 
 2. Set the desired volume by turning the centrally located rings clockwise to increase volume or counterclockwise to decrease volume. Some examples are provided below:
 
-![pipette]({{ site.baseurl }}/bha2/annex/machine-equipment-guide/pipette-indicator.png) 
+![pipette]({{ site.baseurl }}/bha3/annex/machine-equipment-guide/pipette-indicator.png) 
 
 3. Place a tip on the discharge end of the pipette. 
 
@@ -41,4 +41,4 @@ The second stopping point is used for the complete discharging of solutions from
 
 * These instructions are adapted from Dr. Malcom Campbell Department of Biology, Davidson College. http://www.bio.davidson.edu/Courses/Bio111/Bio111LabMan/Preface%20D.html
 
-[Back to Machine & Equipment Guide](/bha2/annex/machine-equipment-guide/)
+[Back to Machine & Equipment Guide](/bha3/annex/machine-equipment-guide/)

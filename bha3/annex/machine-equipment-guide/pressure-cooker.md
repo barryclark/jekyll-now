@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Pressure Cooker
-permalink: /bha2/annex/machine-equipment-guide/pressure-cooker/
+permalink: /bha3/annex/machine-equipment-guide/pressure-cooker/
 categories: machine-equipment-guide
 ---
 
@@ -20,4 +20,4 @@ CAUTION: Once pressurized this piece of equipment becomes dangerous. Make sure a
 9. Wait until the pressure indicator is gone
 10. Open the pressure cooker. Be careful, the content may still be very hot. Wear gloves if necessary.
 
-[Back to Machine & Equipment Guide](/bha2/annex/machine-equipment-guide/)
+[Back to Machine & Equipment Guide](/bha3/annex/machine-equipment-guide/)
