@@ -8,7 +8,7 @@ In order to hit the ground running, please make sure you have taken care of the 
 
 ## Hardware
 * Laptop computer running Linux, Mac OS X or Windows
-* [BioHack Academy prototyping kit](http://biotronics.nl/products/biohackacademy-prototyping-kit)
+* BioHack Academy board [make it yourself](https://github.com/BioHackAcademy/BioHackBoard) from scratch or [buy a kit](http://biotronics.nl/products/biohackacademy-prototyping-kit)
   * Or go for a seperate Arduino UNO microcontroller + USB cable or [a cheaper equivalent board](http://en.wikipedia.org/wiki/List_of_Arduino_boards_and_compatible_systems#Arduino_footprint-compatible_boards) such as Freeduino, Seeeduino or Sparkfun Redboard
   * We also welcome other kinds of MCUs like Raspberry, Particle, BeagleBone, Galileo, etc, but you'll have to write the code and do the wiring from scratch
   * Also check the [suppliers page](/suppliers/) for stores to purchase electronic components
