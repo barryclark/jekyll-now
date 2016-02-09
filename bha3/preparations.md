@@ -8,9 +8,10 @@ In order to hit the ground running, please make sure you have taken care of the 
 
 ## Hardware
 * Laptop computer running Linux, Mac OS X or Windows
-* Arduino UNO microcontroller + USB cable or [a cheaper equivalent board](http://en.wikipedia.org/wiki/List_of_Arduino_boards_and_compatible_systems#Arduino_footprint-compatible_boards) such as Freeduino, Seeeduino or Sparkfun Redboard
+* [BioHack Academy prototyping kit](http://biotronics.nl/products/biohackacademy-prototyping-kit)
+  * Or go for a seperate Arduino UNO microcontroller + USB cable or [a cheaper equivalent board](http://en.wikipedia.org/wiki/List_of_Arduino_boards_and_compatible_systems#Arduino_footprint-compatible_boards) such as Freeduino, Seeeduino or Sparkfun Redboard
   * We also welcome other kinds of MCUs like Raspberry, Particle, BeagleBone, Galileo, etc, but you'll have to write the code and do the wiring from scratch
-  * Also check the [suppliers page](/suppliers/)
+  * Also check the [suppliers page](/suppliers/) for stores to purchase electronic components
 * For those of you that are planning to make things at home (otherwise provided in the lab): soldering iron, multimeter, helping hand, solder and heat shrink ([iPrototype](https://iprototype.nl/products/accessoires/tools/Heat-Shrink-Kit))
 * M3 [DIN84](http://www.bevestigingsmateriaal.nl/bevestigingsmateriaal/bouten-schroeven/zaagsnede-kop/cilinderkopschroef-din-84/106) or [DIN933](http://www.bevestigingsmateriaal.nl/bevestigingsmateriaal/bouten-schroeven/buitenzeskant-kop/tapbouten-din-933/61) (what ever you prefer) bolts and nuts [DIN934](http://www.bevestigingsmateriaal.nl/bevestigingsmateriaal/moeren/zeskantmoer-din-934/75) in several lengths, such as 10 mm (most used), 20 mm and 30 mm. 
 
