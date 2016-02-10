@@ -1,0 +1,13 @@
+body{
+    margin: 0;
+    padding: 0;
+    
+}
+#photo{
+    height: 300px;
+    width: auto;
+    z-index: 1;
+}
+ul{
+    z-index: 2;
+}

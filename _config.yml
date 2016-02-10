@@ -61,8 +61,6 @@ baseurl: ""
 #
 # !! You don't need to change any of the configuration flags below !!
 #
-
-markdown: redcarpet
 highlighter: Pygments
 permalink: /:title/
 

@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="exif.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+<img src="qstn.jpg" id="photo" />
+<ul>
+    <li class="hour"></li>
+</ul>
+<ul>
+    <li class="exp"></li>
+    <li class="fn"></li>
+    <li class="shutter"></li>
+    <li class="apperture"></li>
+    <li class="focalLenght"></li>
+</ul>
+<ul>
+    <li class="lat"></li>
+    <li class="long"></li>
+</ul>
+<script>
+$(function(){
+    $("#photo").load(function(){
+        EXIF.getData(this, function(){
+              var 
+            hour = EXIF.getTag(this, "DateTimeOriginal"),
+            exp = EXIF.getTag(this, "ExposureTime"),
+            fn = EXIF.getTag(this, "FNumber"),
+            shutter = EXIF.getTag(this, "ShutterSpeedValue"),
+            apperture = EXIF.getTag(this, "ApertureValue"),
+            focal = EXIF.getTag(this, "FocalLength"),
+            long = EXIF.getTag(this, "GPSLatitude"),
+            lat = EXIF.getTag(this, "GPSLongitude");
+         
+        $(".hour").append(hour);
+        $(".exp").append(exp);
+        $(".fn").append(fn);
+        $(".shutter").append(shutter);
+        $(".apperture").append(apperture);
+        $(".focal").append(focal);
+        $(".lat").append(lat);
+        $(".long").append(long); 
+        })
+    })
+    
+    
+})
+</script>
+</body>
+</html>
