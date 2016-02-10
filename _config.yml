@@ -21,6 +21,7 @@ show_post_footers:    false
 show_social_icons:    false
 ajaxify_contact_form: false
 enable_mathjax: false
+extended_fonts: false
 
 # Disqus post comments
 # (leave blank to disable Disqus)
