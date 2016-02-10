@@ -7,7 +7,7 @@
 <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
-<img src="http://i.imgur.com/l4WHUup.jpg" id="photo" />
+<img src="{{ site.url }}/labs/photoproject/qstn.jpg" id="photo" />
 <ul>
     <li class="hour"></li>
 </ul>
@@ -27,7 +27,7 @@ $(function(){
     $("#photo").load(function(){
         EXIF.getData(this, function(){
               var 
-            hour = EXIF.getTag(this, "ImageWidth"),
+            hour = EXIF.getTag(this, "ExifVersion"),
             exp = EXIF.getTag(this, "ExposureTime"),
             fn = EXIF.getTag(this, "FNumber"),
             shutter = EXIF.getTag(this, "ShutterSpeedValue"),
