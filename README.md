@@ -153,7 +153,7 @@ You can measure visits to your website either by using simple [Google Analytics]
 * _Do not_ set both of above methods because this will cause conflicts and skew your reporting data.
 * Remember that you need to properly configure the GTM container in its admin panel if you want it to work. More info in [GTM's docs](https://www.google.com/analytics/tag-manager/resources/).
 
-Your website is by default set to be allowed for crawling and indexing for search engines. (Unless you made yourself some custom robots.txt file). You can use front matter settings on each page to control how search engines will treat react. Sometimes you may want to exclude just one particular page from indexing or forbid Google to store a copy of your page in its cache. It is up to you. Use `meta_robots` and assign values based on [this table](https://developers.google.com/webmasters/control-crawl-index/docs/robots_meta_tag?hl=en#valid-indexing--serving-directives). Some examples:
+Your website is by default set to be allowed for crawling and indexing by search engines. (Unless you made yourself some custom robots.txt file). You can use front matter settings on each page to control how search engines will treat react. Sometimes you may want to exclude just one particular page from indexing or forbid Google to store a copy of your page in its cache. It is up to you. Use `meta_robots` and assign values based on [this table](https://developers.google.com/webmasters/control-crawl-index/docs/robots_meta_tag?hl=en#valid-indexing--serving-directives). Some examples:
 
 ```yaml
 # exclude page from index
