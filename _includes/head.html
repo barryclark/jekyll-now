@@ -3,7 +3,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>{% if page.title %}{{ page.title | strip_html }} &#8211; {% endif %}{{ site.title | strip_html }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="{% if page.summary %}{{ page.summary | xml_escape }}{% else %}{{ site.description | xml_escape }}{% endif %}">
+    <meta name="description" content="{% if page.meta_description %}{{ page.meta_description | xml_escape }}{% elsif page.summary %}{{ page.summary | xml_escape }}{% else %}{{ site.description | xml_escape }}{% endif %}">
+    {% if page.meta_robots %}<meta name="robots" content="{{ page.meta_robots }}">
+    {% else %}<meta name="robots" content="all">{% endif %}
     <meta name="author" content="{{ site.author }}">
     {% if page.categories %}<meta name="keywords" content="{{ page.categories | join: ', ' }}">{% endif %}
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
@@ -34,10 +36,13 @@
     {% if site.google_verification %}
       <meta name="google-site-verification" content="{{ site.google_verification }}" />
     {% endif %}
+    {% if site.bing_verification %}
+      <meta name="msvalidate.01" content="{{ site.bing_verification }}" />
+    {% endif %}
 
     <!-- Open Graph -->
     <!-- From: https://github.com/mmistakes/hpstr-jekyll-theme/blob/master/_includes/head.html -->
-    <meta property="og:locale" content="en_US">
+    <meta property="og:locale" content="{{ site.text.og_locale }}">
     <meta property="og:type" content="article">
     <meta property="og:title" content="{% if page.title %}{{ page.title | xml_escape }}{% else %}{{ site.title | xml_escape }}{% endif %}">
     <meta property="og:description" content="{% if page.description %}{{ page.description | xml_escape }}{% else %}{{ site.description | xml_escape }}{% endif %}">
