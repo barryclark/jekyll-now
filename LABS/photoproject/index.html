@@ -3,7 +3,7 @@
 <head>
 <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
 <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="exif.js"></script>
+<script type="text/javascript" src="../photoproject/exif.js"></script>
 <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
@@ -27,7 +27,7 @@ $(function(){
     $("#photo").load(function(){
         EXIF.getData(this, function(){
               var 
-            hour = EXIF.getTag(this, "DateTimeOriginal"),
+            hour = EXIF.getTag(this, "ImageWidth"),
             exp = EXIF.getTag(this, "ExposureTime"),
             fn = EXIF.getTag(this, "FNumber"),
             shutter = EXIF.getTag(this, "ShutterSpeedValue"),
