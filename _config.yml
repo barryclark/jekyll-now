@@ -8,8 +8,11 @@ url:         "http://pixyll.com"
 date_format: "%b %-d, %Y"
 
 # Google services
-google_analytics:
 google_verification:
+# Use either direct GA implementation or set up GTM account
+# - using both will skew your data (leave blank to not use at all)
+google_analytics:
+google_tag_manager:
 
 # Optional features
 animated:             false
