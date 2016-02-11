@@ -13,6 +13,8 @@ google_verification:
 # - using both will skew your data (leave blank to not use at all)
 google_analytics:
 google_tag_manager:
+# Bing services
+bing_verification:
 
 # Optional features
 animated:             false
@@ -92,7 +94,7 @@ text:
       sent:     'Message sent!'
       error:    'Error!'
   thanks: 'Thanks for contacting us. We will reply as soon as possible.'
-
+  og_locale: 'en_US'
 
 # Build settings
 markdown:     kramdown
