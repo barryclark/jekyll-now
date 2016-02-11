@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Quick overview of constexpr in C++ with assembly
+title: constexpr in C++ with assembly
 ---
 
 In this tutorial, I explain the main purpose of "constexpr" in C++. In order to understand easily, I use assembly code, generated during the C++ program compilation.
