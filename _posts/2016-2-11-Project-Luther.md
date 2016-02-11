@@ -13,6 +13,8 @@ __Approach__: From information that is easily available about movies, we can inf
 From the data we have we can say that opening weekend gross of a movie is highly correlated with total gross of the movie. A model using opening weekend gross as predictor gives R^2 = 0.702. Below figure is a plot of the fit model with opening weekend gross as a predictor.  From the figure we can say that the model fits pretty well.
 
 __MODEL 1__:
+
+![](/images/Fit_model_openingweekend_pred .png)
  
 
 Adding critics reviews as features along with the opening weekend gross drove up the value of R^2 to 0.724. Critics reviews include critics positive reviews, critics negative reviews, critics neutral reviews and total critics reviews. In this model we take critics positive reviews, critics negative reviews and total critics reviews as features and exclude critics neutral reviews. This is because if we include critics positive, neutral and negative along with critics total then they will be collinear. We definitely want to include critics total reviews because some movies might have more reviews compared to others. Below is the summary of the regression model with opening weekend gross, critics positive percentage, critics negative percentage and critics total reviews as predictors.
@@ -52,8 +54,11 @@ From the above analysis, it is clear that R^2 goes up as number of features go u
 
 Plot of Model 4:
  
+ ![](/images/Actual_log_Lifetime_(openingWeekend_critics_openingTheatres)_vs_Residuals.png)
 
 Plot of Model 3:
+
+![](/images/Actual_log_Lifetime_(openingWeekend_and_critics)_vs_Residuals.png)
  
 Below are the results of train-test set model fitting, cross validation and ridge regression for the above model. 
 
