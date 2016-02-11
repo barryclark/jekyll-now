@@ -9,7 +9,7 @@ According to the C++ 11 specifications, the "constexpr" specifier means : declar
 
 To understand, let's create a simple program in C++ :
 
-```c++11
+```c++
 const int function(const int var)
 {
     return var*5;
@@ -48,7 +48,7 @@ Inside the assembly version of function(), we can see the operation that multipl
 
 Let's now modify the C++ code and compile again :
 
-```c++11
+```c++
 constexpr int function(const int var)
 {
     return var*5;
