@@ -1,0 +1,47 @@
+---
+---
+@import url(http://fonts.googleapis.com/css?family=Cambay:400,700|Roboto:400,500,700);
+@import "variables";
+
+
+html {
+  font-size: 100%;
+}
+
+body {
+	background: $white;
+  font: 16px/1.2 $bodyFont;
+  color: $iron;
+
+  a {
+    color: $theme;
+  }
+
+  a:hover {
+    color: $themeDark;
+  }
+}
+
+h1, h2, h3 {
+  font-family: $headingFont;
+  text-align: left;
+
+  a {
+    color: $iron;
+  }
+}
+
+.site-title a {
+  color: $theme;
+}
+
+.site-motto {
+  color: $ironLight;
+}
+
+.date {
+  color: $ironLight
+}
+
+@import "highlights";
+@import "custom_format";

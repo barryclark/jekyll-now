@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Beware of ruby @@class_variable
+tags: [ruby, veg]
+excerpt: "Sometimes they may not be exactly what you think they are."
 ---
 
 Ruby class variables (represended with `@@variable`) may seem a good solution to store class related data, and a natural companion to some class methods. However, they may be far more "dangerous" than anticipated, and behave in unexpected ways if not used properly. Let's see one of those cases.
@@ -115,7 +117,7 @@ Failures:
 
 It looks like our `@@class_variable` does not belong only to it's class, but to all the classes that have a common superclass.
 
-What happens in our example, is that as soon as our classes get connected in the inheritance tree, the `@@categories` will become more of a shared variable between those classes, and any of them can update the variable's value. 
+What happens in our example, is that as soon as our classes get connected in the inheritance tree, the `@@categories` will become more of a shared variable between those classes, and any of them can update the variable's value.
 
 Practically, as we call Fruit.new('oranges'), `@@categories` will be set to 1, but the change is perpetuated across all classes, and so on, until `@@categories` will become 5 for all three classes.
 Remember, we said we will not instantiate the Shop class at all? Well, inserting this piece of code in our test `puts "Shop product categories: #{Shop.categories}"` we are expecting to return 0. Well, surprise! Looks like we have 5 shop categories...

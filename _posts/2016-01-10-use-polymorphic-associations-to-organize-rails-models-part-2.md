@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Use Polymorphic Associations to organize the Rails models
+tags: rails
+excerpt: "To be modified."
 ---
 # Part 2: Views and Controllers
 

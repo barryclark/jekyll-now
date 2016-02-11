@@ -15,21 +15,23 @@ avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/je
 # Flags below are optional
 #
 
-# Includes an icon in the footer for each username you enter
-footer-links:
+# Social links
+social-links:
   dribbble:
-  email:
-  facebook:
+  email: dorian.iacobescu@gmail.com
+  facebook: https://www.facebook.com/dorian.iacobescu
   flickr:
-  github: barryclark/jekyll-now
+  github: https://github.com/iacobson
   instagram:
-  linkedin:
+  linkedin: https://www.linkedin.com/in/dorianiacobescu
   pinterest:
   rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
-  twitter: jekyllrb
+  twitter: https://twitter.com/IAC0BS0N
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
+
+# Tags
 
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
@@ -55,6 +57,9 @@ baseurl: ""
 
 markdown: kramdown
 kramdown:
+  auto_ids:       true
+  entity_output:  as_char
+  smart_quotes:   lsquo,rsquo,ldquo,rdquo
   input: GFM
   enable_coderay: false
   syntax_highlighter: rouge
@@ -67,11 +72,18 @@ version: v1.1.0
 
 # Set the Sass partials directory, as we're using @imports
 sass:
-  style: :expanded # You might prefer to minify using :compressed
+  style: :compressed
+  sass_dir: _custom_sass
+
+pages:
+  pages_dir: _pages
+
+
 
 # Use the following plug-ins
 gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+  - jekyll-redirect-from
 
 # Exclude these files from your production _site
 exclude:

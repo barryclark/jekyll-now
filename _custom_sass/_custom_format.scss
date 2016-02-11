@@ -1,0 +1,57 @@
+// File path
+.file_path {
+  border: 1px solid $paperDark;
+  font-size: 14px;
+  padding-left: 10px;
+  color: $ironDark;
+}
+
+// Close button
+.close-button {
+  margin-right: 25px ! important;
+  background: 0 0 ! important;
+}
+
+.close-icon {
+  color: #9E3D54 ! important;
+  opacity: 0.6 ! important;
+  filter: alpha(opacity=60) ! important;
+}
+
+.close-icon-hover {
+  color: #9E3D54 ! important;
+  opacity: 1 ! important;
+  filter: alpha(opacity=60) ! important;
+}
+
+// Tags
+.post-tag {
+  font-family: $bodyFont;
+  font-size: 12px !important;
+  font-weight: 400 !important;
+  color: white !important;
+  background-color: $iron !important;
+  padding: 4px 10px 2px 10px !important;
+  &:hover {
+    background-color: $ironDark !important;
+  }
+}
+
+.post-tag-selected {
+  font-family: $bodyFont;
+  font-size: 12px !important;
+  font-weight: 400 !important;
+  color: white !important;
+  background-color: $theme !important;
+  padding: 4px 10px 2px 10px !important;
+  &:hover {
+    background-color: $themeDark !important;
+  }
+}
+
+.icon-social {
+  color: $iron !important;
+  &:hover {
+    color: $ironDark !important;
+  }
+}

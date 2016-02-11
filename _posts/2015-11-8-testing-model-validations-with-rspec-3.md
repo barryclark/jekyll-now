@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Testing model validations with RSpec 3+
+excerpt: "There are certainly many ways that Rails model validations can be tested. You can find three of them in this article."
 ---
 
 There are many ways of testing a Rails model validations. Let's explore a few of them. We will test a very simple `Books` model, that requires to have a title:

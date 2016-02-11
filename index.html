@@ -2,17 +2,40 @@
 layout: default
 ---
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-      <div class="entry">
-        {{ post.excerpt }}
+<!-- computer design -->
+<div class="ui grid container large screen computer only">
+  <div class="ui section hidden divider"></div>
+  <div class="row">
+    <div class="six wide column">
+      <div class="ui section divider hidden"></div>
+      <div class="ui section divider hidden"></div>
+      <div class="home-sidebar ui sticky">
+        <h2 class="site-title"><a href="{{ site.baseurl }}"> iacobson.net </a></h2>
+        <p class="site-motto"> a journey on rails </p>
+        <div class="ui divider"></div>
+        {% include social_icons.html %}
+        <div class="ui divider"></div>
+        {% for tag in site.tags %}
+          <a class="ui tiny label post-tag {{ tag[0] }}" href="{{ site.baseurl }}/index?tag={{ tag[0] }}">
+            {{ tag[0] }}
+            <div class="detail"> {{ tag[1].size }} </div>
+          </a>
+        {% endfor %}
       </div>
+    </div>
+    <div class="ten wide column posts">
+      {% for post in site.posts %}
+        {% include post_list.html %}
+      {% endfor %}
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
+    </div>
+  </div>
 </div>
+
+
+<!-- mobile design -->
+
+
+
+<script src="{{ site.baseurl }}/js/tags.js"></script>

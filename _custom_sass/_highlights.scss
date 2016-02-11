@@ -1,7 +1,7 @@
 .highlight {
   background-color: #272822;
   padding: 7px 7px 7px 10px;
-  border: 1px solid #ddd;
+  border: 1px solid $paperDark;
   margin-bottom: 20px;
   overflow-x: scroll;
   font-size: 14px;
@@ -13,7 +13,8 @@ pre{
 
 code {
   font-family:'Bitstream Vera Sans Mono','Courier', monospace;
-  color: darkGray;
+  color: $ironLight;
+  background-color: $paperLight;
 }
 
 .highlight .c { color: #75715e } /* Comment */

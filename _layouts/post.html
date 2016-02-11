@@ -2,16 +2,38 @@
 layout: default
 ---
 
-<article class="post">
-  <h1>{{ page.title }}</h1>
 
-  <div class="entry">
-    {{ content }}
+<a class="ui sticky right floated icon button circular massive basic close-button" href="{{ site.url }}">
+  <i class="large remove icon close-icon"></i>
+</a>
+
+
+<div class="pusher" id="post-content">
+  <div class="ui justified container">
+    <div class="ui section hidden divider"></div>
+    <div class="row">
+      <h1>{{ page.title }}</h1>
+      <i class="date">
+        {{ page.date | date: "%B %e, %Y" }}
+      </i>
+      <div class="ui hidden divider"></div>
+      <div>
+        {% for tag in page.tags %}
+          <a class="ui tiny label post-tag" href="{{ site.baseurl }}/index?tag={{ tag }}">{{ tag }}
+            <div class="detail"> {{ site.tags[tag].size }} </div>
+          </a>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="ui section divider"></div>
+
+    <div class="row">
+      <div class="post-body">
+        {{ content }}
+      </div>
+    </div>
+      <div class="ui section divider"></div>  
+      {% include disqus.html %}
   </div>
-
-  <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
-  </div>
-
-  {% include disqus.html %}
-</article>
+</div>

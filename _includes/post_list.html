@@ -1,0 +1,13 @@
+<article class="post {{post.tags | join(' ')}}">
+
+  <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
+  <i class="date"> {{ post.date | date: "%B %e, %Y" }} </i>
+
+  <div class="excerpt">
+    {{ post.excerpt }}
+  </div>
+
+  <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+
+  <div class="ui section divider"></div>
+</article>
