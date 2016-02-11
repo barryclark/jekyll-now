@@ -1,10 +1,8 @@
-
-
-
 ---
 layout: post
 title: Predicting movie Gross immediately after release
 ---
+
 One of my first projects at Metis is to scrape data from the web and apply linear regression to build a model. And below is the report of my analysis. 
 
 __Client__: Movie Studios would like to predict the total gross a movie makes immediately after its release. This will let them change their marketing strategies accordingly and generate higher revenues by running longer in theatres. For example, studios might want to pump more money into the ongoing promotion campaign targeting a different audience than initial focus group.
