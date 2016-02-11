@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Microbiology Practical Materials
-permalink: /bha3/annex/cultivation-media/materials/
+permalink: /bha3/annex/cultivation-media/materials.md
 ---
 
 As a participant of the Biohack Academy, you don't need to worry about where to get all the materials. But in case you are planning to continue experimenting at home, here is a list for future reference.
@@ -49,6 +49,7 @@ As a participant of the Biohack Academy, you don't need to worry about where to 
 * 15mL Test tubes - Home brewing store
 * 100 mL Beaker glasses - Home brewing store or [Lab glass store](http://www.laboratoriumglas.eu)
 * Glass spatula - Also sometimes refered to as "Drigalski Spatula" [VWR](https://nl.vwr.com/store/catalog/product.jsp?catalog_number=231-2183)
+* Parafilm
 * Inoculation wire - just take a piece of metal wire
 * Aquarium pump, tube and diffuser - aquarium store obviously
 
