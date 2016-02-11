@@ -8,6 +8,7 @@ In this tutorial, I explain the main purpose of "constexpr" in C++. In order to 
 According to the C++ 11 specifications, the "constexpr" specifier means : declares that it's possible to evaluate the value of the function ( returned value ) or the value of the variable at the compilation time.
 
 To understand, let's create a simple program in C++ :
+
 ```c++
 const int function(const int var)
 {
