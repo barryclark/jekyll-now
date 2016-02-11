@@ -63,9 +63,7 @@ int main()
 
 In the code above, function() returns a constant expression. That means the result of the function "may" be calculated at the compilation time ( and not at the running time ), if the expected value during the call is also a constant expression. That's why we also declare otherConstant as a constant expression.
 
-After compilation, we can open again the generated assembly code :
-- the function() body disappeared,
-- the main() function directly set the otherConstant variable with the value 50
+After compilation, we can open again the generated assembly code : the function() body disappeared, the main() function directly set the otherConstant variable with the value 50 :
 
 ```asm
 mov dword ptr [rbp - 12], 50
