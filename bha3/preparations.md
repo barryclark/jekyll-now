@@ -19,9 +19,8 @@ In order to hit the ground running, please make sure you have taken care of the 
 * Text or code editor such as Notepad, Notepad++, Xcode, gedit, etc
 * [Arduino IDE 1.6.7](http://arduino.cc/en/Main/Software) for programming the Arduino microcontroller
 * [OpenSCAD](http://www.openscad.org/downloads.html) and [FreeCAD](http://www.freecadweb.org) for parametric 3D design
-* SketchUp version 8 [Mac](http://www.oldapps.com/mac/sketchup.php), [Win](http://filehippo.com/download_sketchup/download/2f2d0bce86e6554b6df98772ca7200a2/), [Linux (Needs Wine)](https://appdb.winehq.org/objectManager.php?sClass=version&iId=21290), for 3D drawing. Newer versions are not better, and not compatible.
-  * [SVG export plugin](https://code.google.com/p/sketchup-svg-outline-plugin/downloads/list) for exporting to lasercutter compatible file format. You will need version 0.99 for Sketchup 8, so choose "sketchup-svg-outlines-plugin-0.99.zip" from the list
-  * [STL export plugin](http://extensions.sketchup.com/en/content/sketchup-stl) for exporting to 3D printer compatible file format
+* SketchUp 2016
+  * [SVG export plugin](https://github.com/JoakimSoderberg/sketchup-svg-outline-plugin) 
 * [Fritzing](http://fritzing.org/download/) for documenting electronic circuits. You may use EagleCad or KiCad too, but the usage is not taught in the course
 * [InkScape](https://www.inkscape.org/en/) for editing vector drawings
 * [Cura](http://software.ultimaker.com/) for operating the 3D printer (Ultimakers and Printrbot)
