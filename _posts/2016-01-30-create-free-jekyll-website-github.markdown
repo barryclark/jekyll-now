@@ -79,7 +79,7 @@ run into some troubles: and def need_a_break(watchTV)
 
 -----------------------------
 
-If you're away from your local install and want to make changes, go to your github account, push edit on the file you want and save. Changes are reflected immediately. When you get back to your local machine open github desktop, open "username.github.io" and push sync. Changes you made on the web will reflect in your local directory. Now you can make changes there without any conflicts. 
+If you're away from your local install and want to make changes, go to your github account, push edit on the file you want and save. Changes are reflected immediately. When you get back to your local machine open github desktop, open "username.github.io" and push sync. Changes you made on the web will reflect in your local directory. Now you can make changes there without any conflicts. Go back to git desktop, commit changes, and sync.
 
 display posts in a category:
 
