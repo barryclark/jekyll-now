@@ -17,7 +17,7 @@ Do the following if you want to install Jekyll on your local machine.
 
 <b>Install Jekyll for `Windows`:</b> don't know about it, j/k. Jekyll is really made for Mac, but <a href="http://jekyll-windows.juthilo.com/" target="_blank">Try this guy.
 
-<b>Install Jekyll for `Mac`:</b> It's not as simple as Jekyll claims. It may work out on a perfect system, but who has that? I have an old (2013) `macbook pro` and I had to jump through some hoops to get it to work. Try this first: (hint - copy everything after a `$` and paste it into Terminal and press Return. You can find the Terminal app in Applications/utilities.)
+<b>1. Install Jekyll for `Mac`:</b> It's not as simple as Jekyll claims. It may work out on a perfect system, but who has that? I have an old (2013) `macbook pro` and I had to jump through some hoops to get it to work. Try this first: (hint - copy everything after a `$` and paste it into Terminal and press Return. You can find the Terminal app in Applications/utilities.)
 
 
 Quick-start Instructions:
@@ -62,10 +62,24 @@ run into some troubles: and def need_a_break(watchTV)
 
 -----------------------------
 
-1. Create github account
-2. Install Github for Desktop
+2. Create github account
+3. Install Github for Desktop
+4. Create “username.github.io” repo on github
+5. Fork howtoguy to your new repo
+6. clone repo to desktop (button on right)
+7. make sure you’re logged in (prefs/)
+8. open all your files in text or sublime
+9. make changes and save
+10. commit changes
+11. sync
+12. to work on it locally change config.ml (port: 4001 —> localhost:4001)
+13. drag folder into terminal
+14. $ jekyll serve
+15. localhost:4001
 
 -----------------------------
+
+If you're away from your local install and want to make changes, go to your github account, push edit on the file you want and save. Changes are reflected immediately. When you get back to your local machine open github desktop, open "username.github.io" and push sync. Changes you made on the web will reflect in your local directory. Now you can make changes there without any conflicts. 
 
 display posts in a category:
 
@@ -80,25 +94,4 @@ display posts in a category:
 </ul>
 
 
-create username.github.io
-in github.com click save to computer button
-replace local file with jekyll pages (don't replace .git or .gitignore)?
-commit
-sync
 
-Or....
-install jekyll
-create “username.github.io” repo on github
-fork howtoguy to your new repo
-
-clone repo to desktop (button on right)
-make sure you’re logged in (prefs/)
-open all your files in text or sublime
-make changes and save
-commit changes
-sync
-
-to work on it locally change config.ml (port: 4001 —> localhost:4001)
-drag folder into terminal
-$ jekyll serve
-localhost:4001
