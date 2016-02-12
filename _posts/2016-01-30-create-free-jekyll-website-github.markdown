@@ -62,10 +62,14 @@ run into some troubles: and def need_a_break(watchTV)
 
 -----------------------------
 
-2. Create github account
-3. Install Github for Desktop
-4. Create “username.github.io” repo on github
-5. Fork howtoguy to your new repo
+<b>2. Publish to Web using free Github Pages account:</b>
+
+
+a. Create github account (<a href="https://github.com">https://github.com</a>)<br>
+b. Fork howtoguy to your account. Click the fork button (upper right) and it will ask where. Click your github account.<br>
+c. navigage to "howtoguy", click "settings" and rename to "Yourusername.github.io"<br>
+c. Install Github for Desktop (<a href="https://desktop.github.com">https://desktop.github.com</a>)<br>
+
 6. clone repo to desktop (button on right)
 7. make sure you’re logged in (prefs/)
 8. open all your files in text or sublime
