@@ -85,3 +85,20 @@ in github.com click save to computer button
 replace local file with jekyll pages (don't replace .git or .gitignore)?
 commit
 sync
+
+Or....
+install jekyll
+create “username.github.io” repo on github
+fork howtoguy to your new repo
+
+clone repo to desktop (button on right)
+make sure you’re logged in (prefs/)
+open all your files in text or sublime
+make changes and save
+commit changes
+sync
+
+to work on it locally change config.ml (port: 4001 —> localhost:4001)
+drag folder into terminal
+$ jekyll serve
+localhost:4001
