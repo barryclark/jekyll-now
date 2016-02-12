@@ -23,7 +23,7 @@ Adding critics reviews as features along with the opening weekend gross drove up
 __MODEL 2__:
 
 |	Variable			|	Coefficient	|	P-Value		|
-|---------------------------------------|-----------------------|-----------------------|
+|:-------------------------------------:|:---------------------:|:---------------------:|
 |Intercept				|	1.043e06	|	0.792		|
 |Opening Weekend Gross			|	3.0839		|	0.000		|
 |Critics positive percentage		|	4.086e07	|	0.000		|
@@ -36,7 +36,7 @@ Lifetime gross and opening weekend gross in our data are in millions and it is a
 __MODEL 3__:
 
 |	Variable		|	Coefficient	|	P-Value	     |
-|-------------------------------|-----------------------|--------------------|
+|:-----------------------------:|:---------------------:|:------------------:|
 |Intercept			|	3.8881		|	0.000	     |
 |Log Opening Weekend gross	|	0.7640		|	0.000	     |
 |Critics positive percentage	|	1.8046		|	0.000	     |
@@ -49,7 +49,7 @@ Its interesting to see how adding more features to this model changed model valu
 __MODEL 4__:
 
 |	Variable		 |	Coefficient	|	P-Value	     |
-|--------------------------------|----------------------|--------------------|
+|:------------------------------:|:--------------------:|:------------------:|
 |Intercept			 |	1.6253		|	0.000	     |
 |Log Opening Weekend gross	 |	0.9823		|	0.000	     |
 |Critics positive percentage	 |	1.2680		|	0.000	     |
