@@ -11,14 +11,14 @@ There are many ways to help support Manjaro Linux. If technical development, doc
 Many thanks!
 
  
-##Use of Donations
+## Use of Donations
 
 In order to keep Manjaro.org independently, free from advertising and to be able to operate the webpage in normal speed, we would appreciate your financial support.
 
 The donations will mainly cover the operating costs of the webserver. Any surplus may be for special activities (such as attending conferences and trade shows) used by Manjaro.org
 
  
-##Conditions
+## Conditions
 
 - No rights or privileges are associated with a deposit.
 - All donations are anonymous. Any sender details are not published or shared.
@@ -27,7 +27,7 @@ The donations will mainly cover the operating costs of the webserver. Any surplu
 
 On the transfer form the word **donation** must be mentioned in the **purpose** area. Who also indicates his email address, receives on request a confirmation of receipt.
 
-##Bank Account
+## Bank Account
 
 <table>
 <tbody>
@@ -58,6 +58,6 @@ On the transfer form the word **donation** must be mentioned in the **purpose** 
 </tbody>
 </table>
 
-##Paypal
+## Paypal
 
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post"><input type="hidden" name="cmd" value="_s-xclick" /> <input type="hidden" name="hosted_button_id" value="CMZENCJDAF2TL" /> <input type="image" alt="PayPal - The safer, easier way to pay online!" name="submit" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" /> <img alt="" src="https://www.paypalobjects.com/de_DE/i/scr/pixel.gif" width="1" height="1" border="0" /></form>
