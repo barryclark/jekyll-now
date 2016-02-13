@@ -66,17 +66,36 @@ run into some troubles: and def need_a_break(watchTV)
 
 
 a. Create github account (<a href="https://github.com">https://github.com</a>)<br>
-b. Fork howtoguy to your account. Click the fork button (upper right) and it will ask where. Click your github account.<br>
+b. Fork <a href="https://github.com/howtoguy/howtoguy">howtoguy</a> to your account. Click the fork button (upper right) and it will ask where. Click your github account.<br>
 c. navigage to "howtoguy", click "settings" and rename to "Yourusername.github.io"<br>
-c. Install Github for Desktop (<a href="https://desktop.github.com">https://desktop.github.com</a>)<br>
+d. navigate to "yourusername.github.io" in a broswer. You should see "Hello World" in your new site.<br> 
+e. Install Github for Desktop (<a href="https://desktop.github.com">https://desktop.github.com</a>)<br>
+f. make sure you’re logged into github in github desktop (prefs/accounts) and clone repo to desktop (button on right in your github repo on github.com that looks like this: <img src="/junk/clone.png")
+g. open all your files in <a href="https://www.sublimetext.com">sublime</a>
+h. edit _config.yml - my settings:
 
-6. clone repo to desktop (button on right)
-7. make sure you’re logged in (prefs/)
-8. open all your files in text or sublime
-9. make changes and save
-10. commit changes
-11. sync
-12. to work on it locally change config.ml (port: 4001 —> localhost:4001)
+# Site settings
+title: howtoguy.tv
+email: glen@howtoguy.tv
+description: > # this means to ignore newlines until "baseurl:"
+  Howtoguy knows everything. Howtoguy can teach you how to do anything. Need to know how to test and replace a condensor on a '77 Kawasaki 650 motorcycle or build a wordpress website? Howtoguy has you covered.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://howtoguy.tv" # the base hostname & protocol for your site
+twitter_username: fotozfotoz
+github_username:  howtoguy
+port: 4001
+
+# Build settings
+markdown: kramdown
+
+Port: 4001 needs some explanation: the default when you installed Jekyll locally was port 4000 and you access it with localhost:4000. This is a new install. Change this to Port:4001 and access with localhost:4001. Now you have two separate sites.
+
+When you save _config.yml you must $ jekyll serve again because this file is the only one that doesn't get automatically updated when you save.
+
+h. make changes to other files and save 
+10. commit changes in github desktop adding any comments
+11. sync in github desktop to publish to "yourusername.gihub.io"
+12. to work on it locally change config.yml (port: 4001 —> localhost:4001)
 13. drag folder into terminal
 14. $ jekyll serve
 15. localhost:4001
@@ -96,6 +115,5 @@ display posts in a category:
     {% endif %}
   {% endfor %}
 </ul>
-
 
 
