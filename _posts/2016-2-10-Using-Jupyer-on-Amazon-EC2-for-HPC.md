@@ -5,6 +5,13 @@ title: Using Jupyter on Amazon EC2 for HPC
 
 I attempted to use random forests as a first pass for [The Winton Stock Market Challenge](https://www.kaggle.com/c/the-winton-stock-market-challenge) on Kaggle and found that for any reasonable number of trees in the forest, I was unable to train the data in a reasonable amount of time.  Even though the solution itself was extremely unsuccessful, here's a short guide on how to do set up an EC2 instance to do large computations using Jupyter.
 
+One of the great features about EC2 is you are able to resize your instance type at any time.  Find out that you need more RAM, more cores or speed?  Resizing the instance can be done with one command (full instance type listing [here](https://aws.amazon.com/ec2/instance-types/)):
+
+```
+$ ec2-modify-instance-attribute i-10a64379 --instance-type m1.small
+```
+
+
 I'll show you how to do it using the EC2 CLI so almost everything can be done from the terminal.  I've also made my AMI available so you can get going super quickly on using Jupyter/iPython on an EC2 instance.
 
 This procedure has been tested on Linux Mint 17.2 using Chromium 48.
