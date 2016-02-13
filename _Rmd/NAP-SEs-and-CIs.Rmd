@@ -1,0 +1,92 @@
+---
+layout: post
+title: Standard errors and confidence intervals for NAP
+date: February 7, 2016
+tags: [effect-sizes, single-case-research]
+---
+
+[Parker and Vannest (2009)](http://doi.org/10.1016/j.beth.2008.10.006) proposed non-overlap of all pairs (NAP) as an effect size index for use in single-case research. NAP is defined in terms of all pair-wise comparisons between the data points in two different phases for a given case (i.e., a treatment phase versus a baseline phase). Specifically, it is the proportion of all such pair-wise comparisons where the treatment phase observation exceeds the baseline phase observation, with pairs that are exactly tied getting a weight of 1/2. NAP belongs to the family of non-overlap measures, which also includes the percentage of non-overlapping data, the improvement rate difference, and several other indices. It is exactly equivalent to [Vargha and Delaney's (2000)](http://doi.org/10.2307/1165329) modified Common Language Effect Size and has been proposed as an effect size index in other contexts too (e.g., [Acion, Peterson, Temple, & Arndt, 2006](http://doi.org/10.1002/sim.2256)). 
+
+The developers of NAP have created a [web-based tool](http://singlecaseresearch.org/calculators) for calculating it (as well as several other non-overlap indices), and I have the impression that the tool is fairly widely used. For example, [Roth, Gillis, and DiGennaro Reed (2014)](http://doi.org/10.1007%2Fs10864-013-9189-x) and [Whalon, Conroy, Martinez, and Welch (2015)](http://doi.org/10.1007/s10803-015-2373-1) both used NAP in their meta-analyses of single-case research, and both noted that they used [singlecaseresearch.org](http://www.singlecaseresearch.org/calculators/nap) for calculating the effect size measure. Given that the web tool is being used, it is worth scrutinizing the methods behind the calculations it reports. __As of this writing, the standard error and confidence intervals reported along with the NAP statistic are incorrect, and should not be trusted.__ I'll explain how and why, but first I'll need to introduce a little bit of notation. 
+
+## Notation
+
+Suppose that we have data from the baseline phase and treatment phase for a single case. Let $m$ denote the number of baseline observations and $n$ denote the number of treatment phase observations. Let $y^A_1,...,y^A_m$ denote the baseline phase data and $y^B_1,...,y^B_n$ denote the treatment phase data. Then NAP is calculated as 
+$$
+\text{NAP} = \frac{1}{m n} \sum_{i=1}^m \sum_{j=1}^n \left[I\left(y^B_j > y^A_i\right) + 0.5 I\left(y^B_j = y^A_i\right)\right]
+$$
+Tau is a proportion and thus will fall in the range of [0, 1]. NAP is very closely related to another non-overlap index called Tau ([Parker, Vannest, Davis, & Sauber, 2011](http://doi.org/10.1016/j.beth.2010.08.006)). Tau is nothing more than a linear re-scaling of NAP to the range of [-1, 1]: 
+$$
+\text{Tau} = \frac{S}{m n} = 2 \times \text{NAP} - 1,
+$$
+where 
+$$
+S = \sum_{i=1}^m \sum_{j=1}^n \left[I\left(y^B_j > y^A_i\right) - I\left(y^B_j < y^A_i\right)\right].
+$$
+$S$ is Kendall's S statistic, which is closely related to the Mann-Whitney $U$ test. 
+
+Here are R functions for calculating NAP and Tau:
+```{r}
+NAP <- function(yA, yB) {
+  m <- length(yA)
+  n <- length(yB)
+  U <- sum(sapply(yA, function(i) sapply(yB, function(j) (j > i) + 0.5 * (j == i))))
+  U / (m * n)
+}
+```
+
+Using the data from the worked example in [Parker and Vannest (2009)](http://doi.org/10.1016/j.beth.2008.10.006), my calculations agree with their reported NAP of 0.96:
+```{r}
+yA <- c(4, 3, 4, 3, 4, 7, 5, 2, 3, 2)
+yB <- c(5, 9, 7, 9, 7, 5, 9, 11, 11, 10, 9)
+NAP(yA, yB)
+```
+
+## Standard error
+
+The webtool at [singlecaseresearch.org](http://www.singlecaseresearch.org/calculators/nap) reports a standard error for NAP (it is labelled as "SDnap"), which from what I can tell is based on the formula
+$$
+\text{SE}_{\text{Tau}} = 2 \sqrt{\frac{m + n + 1}{12 m n}}.
+$$
+This formula appears to actually be the standard error for Tau, rather than for NAP. Since $\text{NAP} = \left(\text{Tau} + 1\right) / 2$, the standard error for NAP should be half as large:
+$$
+\text{SE}_{\text{NAP}} = \sqrt{\frac{m + n + 1}{12 m n}}.
+$$
+However, even this formula is not always correct. It is valid only when the treatment phase data are drawn from the same distribution as the baseline phase data---that is, when the treatment has no effect on the outcome---and when the observations are all mutually independent. 
+
+Simulation methods can be used to examine just how far off the standard error can be. For simplicity, I'll simulate normally distributed data where
+$$
+Y^A \sim N(0, 1) \qquad \text{and} \qquad Y^B \sim N(\delta, 1)
+$$
+for varying values of the treatment effect $\delta$ and a couple of different sample sizes.
+
+```{r, message = FALSE, warning = FALSE, fig.width = 8, fig.height = 7.5}
+sample_NAP <- function(delta, m, n, iterations) {
+  NAPs <- replicate(iterations, {
+    yA <- rnorm(m)
+    yB <- rnorm(n, mean = delta)
+    NAP(yA, yB)
+  })
+  data.frame(sd = sd(NAPs))
+}
+
+library(dplyr)
+delta <- seq(0, 3, 0.5)
+m <- c(5, 10, 15, 20)
+n <- c(5, 10, 15, 20)
+expand.grid(delta = delta, m = m, n = n) %>%
+  group_by(delta, m, n) %>%
+  do(sample_NAP(.$delta, .$m, .$n, iterations = 1000)) %>%
+  mutate(se = sqrt((m + n + 1) / (12 * m * n))) ->
+  NAP_sim
+
+library(ggplot2)
+ggplot(NAP_sim) + 
+  facet_grid(n ~ m, labeller = "label_both") + 
+  geom_line(aes(delta, sd), color = "red") + 
+  geom_line(aes(delta, se), color = "purple") + 
+  theme_bw()
+```
+
+In the above figure, the actual sampling standard deviation of NAP (in red) and the value of $\text{SE}_{\text{NAP}}$ (in purple) are plotted against $\delta$, with separate plots for various combinations of $m$ and $n$. The value of $\text{SE}_{\text{NAP}}$ agrees with the actual standard error when $\delta = 0$, but the two diverge when there is a positive treatment effect. Since the shape of the discrepancy is very similar across sample sizes, one might wonder whether it would be possible to work out a better formula for the actual standard error of NAP. Unfortunately, this regularity is a consequence of having simulated normally distributed data---if I had used a different distribution, the standard error would have come out to be something else.  
+
