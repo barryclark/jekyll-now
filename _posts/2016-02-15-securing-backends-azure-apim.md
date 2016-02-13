@@ -9,7 +9,7 @@ author_email: martin.danielsson@haufe-lexware.com
 header-img: "images/bg-post.jpg"
 ---
 
-We are currently planning our first round of published APIs, and in the course of this process, we obviously had to ask ourselves how we can secure our backend services which we will surface using Azure API Management. This may sound like a trivial problem, but it turns out it actually isn't. This blog post will show the different options you have (or don't) using Azure API Management as a front end to your APIs.
+We are currently planning our first round of published APIs, and in the course of this process, we obviously had to ask ourselves how we can secure our backend services which we will surface using [Azure API Management](https://azure.microsoft.com/en-us/services/api-management/). This may sound like a trivial problem, but it turns out it actually isn't. This blog post will show the different options you have (or don't) using Azure API Management as a front end to your APIs.
 
 ### The problem
 
@@ -27,7 +27,7 @@ We will check out the following possibilities:
 
 ### Security by obscurity
 
-For some very non-critical backend services running in the same Azure region (and only in those cases), it may be enough to secure the backend via obscurity; some have suggested that it can be enough to check for the "Ocp-Apim-Subscription-Key" header which will by default be passed on from the client via the API gateway to the backend service (unless you filter it out via some policy).
+For some very non-critical backend services running in the same Azure region (and only in those cases), it may be enough to secure the backend via obscurity; some have suggested that it can be enough to check for the `Ocp-Apim-Subscription-Key` header which will by default be passed on from the client via the API gateway to the backend service (unless you filter it out via some policy).
 
 This is quite obviously not by any security standards actually secure, but it may rule out the occasional nosy port scan by returning a 401 or similar.
 Other variants of this could be to add a second header to the backend call, using an additional secret key which tells the backend service that it is actually Azure APIm calling the service. The drawbacks of this are quite obvious:
@@ -45,7 +45,7 @@ Once more, the very same drawbacks apply as for the above case:
 
 * You have to implement the Basic Auth in the backend (some backends do have explicit support for this, so it may be easy)
 * You have a shared secret between the APIm and the backend
-* If you are not using https (TLS), this is not by any means actually secure
+* If you are not using `https` (TLS), this is not by any means actually secure
 
 ###Mutual SSL
 
@@ -55,11 +55,11 @@ Checking the certificate in the backend can be simple or challenging, depending 
 
 * nginx: See above link to the tutorial on how to verify the client certificate; SSL termination with nginx is probably quite a good idea
 * Apache web server also directly supports Client Certificate verification
-* Spring Boot: Intended way of securing the service, see e.g. http://docs.spring.io/spring-security/site/docs/4.0.4.CI-SNAPSHOT/reference/htmlsingle/#x509
+* Spring Boot: Intended way of securing the service, see e.g. [http://docs.spring.io/spring-security/site/docs/4.0.4.CI-SNAPSHOT/reference/htmlsingle/#x509](http://docs.spring.io/spring-security/site/docs/4.0.4.CI-SNAPSHOT/reference/htmlsingle/#x509)
 * Web API/.NET: Funnily, in the case of .NET applications, verifying a client certificate is quite challenging. There are various tutorials on how to do this, but unfortunately I don't like any of them particularly:
-  * http://chimera.labs.oreilly.com/books/1234000001708/ch15.html#example_ch15_cert_handler
-  * https://azure.microsoft.com/en-us/documentation/articles/api-management-howto-mutual-certificates/
-  * https://azure.microsoft.com/en-us/documentation/articles/app-service-web-configure-tls-mutual-auth/
+  * [http://chimera.labs.oreilly.com/books/1234000001708/ch15.html#example_ch15_cert_handler](http://chimera.labs.oreilly.com/books/1234000001708/ch15.html#example_ch15_cert_handler)
+  * [https://azure.microsoft.com/en-us/documentation/articles/api-management-howto-mutual-certificates/](https://azure.microsoft.com/en-us/documentation/articles/api-management-howto-mutual-certificates/)
+  * [https://azure.microsoft.com/en-us/documentation/articles/app-service-web-configure-tls-mutual-auth/](https://azure.microsoft.com/en-us/documentation/articles/app-service-web-configure-tls-mutual-auth/)
 * For node.js and similiar, I would suggest using nginx for SSL termination (as a reverse proxy in front of node)
 
 All in all, using mutual SSL is a valid approach to securing your backend; it offers real security. It will still be possible to flood the network interface with requests (which will be rejected immediately due to the SSL certificate mismatch), and thus could and possibly should be combined with the below method additionally.
@@ -68,7 +68,7 @@ I am waiting for simpler solutions of doing this directly in Azure, but currentl
 
 ### Virtual Networks and Network Security Groups
 
-In case your backend service runs in an Azure VM (ARM, Azure Resource Manager), you can make use of the built in firewall, the Network Security Groups. As of the Standard Tier (which is the "cheapest" one you are allowed to use in production), the Azure APIm instance will get a static IP; this IP in turn you can use to define a NSG rule to only allow traffic from that specific IP address (the APIm Gateway) to go through the NSG. All other traffic will be silently discarded.
+In case your backend service runs in an Azure VM (deployed using ARM, Azure Resource Manager), you can make use of the built in firewall, the Network Security Groups. As of the Standard Tier (which is the "cheapest" one you are allowed to use in production),  your Azure APIm instance will get a static IP; this IP in turn you can use to define a NSG rule to only allow traffic from that specific IP address (the APIm Gateway) to go through the NSG. All other traffic will be silently discarded.
 
 As mentioned above, it's unfortunately not (yet) possible to add an Azure APIm instance to a virtual network (and thus put it inside an ARM NSG), but you can still restrict traffic into the NSG by doing IP address filtering.
 The following whitepaper suggests that Azure virtual networks are additionally safeguarded against IP spoofing: [http://download.microsoft.com/download/4/3/9/43902ec9-410e-4875-8800-0788be146a3d/windows%20azure%20network%20security%20whitepaper%20-%20final.docx](http://download.microsoft.com/download/4/3/9/43902ec9-410e-4875-8800-0788be146a3d/windows%20azure%20network%20security%20whitepaper%20-%20final.docx)
