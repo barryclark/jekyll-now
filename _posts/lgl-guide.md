@@ -7,8 +7,11 @@ title: LGL - the Large Graph Layout
 
 Water bears (tardigrades) have become our unofficial lab pet, partly because UT won't let us keep vertebrates, but mainly because of how awesome they are. This [New York Times article](http://www.nytimes.com/2015/09/08/science/the-tardigrade-water-bear.html?_r=0) 
 
-
+As there aren't many resources on using the Large Graph Layout, I 
 http://lgl.sourceforge.net/
+
+Aaron Swartz used LGL for his visualization of blogspace in 2006 http://www.aaronsw.com/weblog/blogviz
+
 
 paper
 LGL: Creating a Map of Protein Function with an Algorithm for Visualizing Very Large Biological Networks
