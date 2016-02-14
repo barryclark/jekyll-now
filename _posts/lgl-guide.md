@@ -57,6 +57,8 @@ protein2 protein5 hmmscan 60 3 human human
 Then take the first two columns (minus the header) to create an .ncol file.
 *homology.ncol*
 ```
+$ awk '{print $1, $2, $3} homology.txt  | awk '{if(NR>1)print}' 
+$ cat homology.ncol
 protein1 protein2
 protein3 protein4
 protein2 protein5
@@ -68,10 +70,7 @@ In this file, I want to color all connections predicted with the algorithm hmmsc
 $ awk '{print $1, $2, $3} homology.txt  | awk '{if(NR>1)print}' >  homology.ncol.tmp #get columns, remove header
 $ sed -i 's/hmmer/1 0 0/g' homology.ncol.tmp
 $ sed 's/blastp/0 0 1/g' homology.ncol.tmp > homology_algorithm.connection.colors
-```
-
-*homology_algorithm.connection.colors*
-```
+$ cat homology_algorithm.connection.colors
 protein1 protein2 1 0 0
 protein3 protein4 0 0 1
 protein2 protein5 0 0 1
@@ -82,10 +81,7 @@ I can also color each vertex by some trait. In this file format, each vertex mus
 $ awk '{print $1, $6} homology.txt  | awk '{if(NR>1)print}'`> vertex1_species.tmp
 $ awk '{print $2, $7} homology.txt  | awk '{if(NR>1)print}'`> vertex2_species.tmp
 $ cat vertex1_species.tmp vertex2_species.tmp | sort -u > homology_human.vertex.colors
-```
-
-*homology_human.vertex.colors*
-```
+$ cat homology_human.vertex.colors
 protein1 0 0 1
 protein2 1 0 0
 protein3 0 0 1
