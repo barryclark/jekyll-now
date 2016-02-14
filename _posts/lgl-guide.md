@@ -9,7 +9,7 @@ Last summer, I had a 500,000 node/million connection network, and no way to look
 
 As there aren't many resources on using the Large Graph Layout, I wanted to do a quick post on my tips for using the software. This post is meant to supplement the [main FAQ](http://www.opte.org/lgl/) and the [README](https://github.com/TheOpteProject/LGL/blob/master/README.txt). LGL is mainly maintained by the Opte Project to map the internet, and the most recent version of the software can be cloned from their [ Github](https://github.com/TheOpteProject/LGL), with git clone https://github.com/TheOpteProject/LGL.git . 
 
-##### LGL tips
+#### LGL tips
 
 The input format to LGL is called .ncol, which is just a space separated list of two connected verteces with an optional third column of weight. 
 ```
@@ -30,15 +30,28 @@ vertex1 vertex1 # Will cause error
 vertex2 vertex1 # Will cause error
                 # Will cause error
 vertex3         # Will cause error
+```
 
+##### Coloring
+
+In order to color an LGL, each pairwise connection must have an R G B value.  RGB values must be scaled to one 1, so just divide each number of an RGB value by 255. 
+```
+vertex1 vertex2 1.0 0.5 0 
+vertex3 vertex4 0.0 1.0 0.8 
+vertex5 vertex6 0.1 0.1 1.0
+``
+
+##### An LGL workflow
+
+```
+#node1 node2 source domain rank level
+vertex1 vertex2 blast bacteria 1 luca
+vertex1 vertex2 blast eukarya 2 luca
 ```
 
 
-
-
-
 ##### Examples 
-*  The Opte Project uses the minimal LGL to [map the internet](http://www.opte.org/) every few years.   
+*  The Opte Project uses a minimal spanning LGL to [map the internet](http://www.opte.org/) every few years.   
 *  Aaron Swartz used LGL for a neat [visualization of blogspace in 2006](http://www.aaronsw.com/weblog/blogviz). 
 *  The Museum of Modern Art in New York picked an LGL of protein homologies (top image) for their 2008 exhibit ["Design and the Elastic Mind"](http://www.moma.org/interactives/exhibitions/2008/elasticmind/#/211/)
 
