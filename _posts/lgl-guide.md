@@ -3,7 +3,7 @@ layout: page
 title: LGL - the Large Graph Layout
 ---
 <img src="http://www.visualcomplexity.com/vc/images/120_big01.jpg" width="500"/>
-<br>*Protein Homology Graph [MOMA](http://www.moma.org/interactives/exhibitions/2008/elasticmind/#/211/)*
+<br>*Protein Homology Graph, Edward Marcotte and Alex Adai [The Museum of Modern Art, New York ](http://www.moma.org/interactives/exhibitions/2008/elasticmind/#/211/)*
 
 [New York Times article](http://www.nytimes.com/2015/09/08/science/the-tardigrade-water-bear.html?_r=0) 
 
