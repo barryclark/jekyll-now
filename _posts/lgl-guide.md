@@ -14,8 +14,15 @@ As there aren't many resources on using the Large Graph Layout, I wanted to do a
 The input format to LGL is called .ncol, which is just a space separated list of two connected verteces with an optional third column of weight. 
 ```
 vertex1 vertex2 [optional weight]
+ ```
+Key points for formatting the input .ncol
+* Each line must be unique, and nonredundant.  If one line is B A, there cannot also be a line A B 
 ```
-The key points for formatting the .ncol file 
+vertex1 vertex2
+~~vertex1 vertex2~~
+~~vertex2 vertex1~~
+```
+
 
 
 
