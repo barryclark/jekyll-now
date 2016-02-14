@@ -4,7 +4,7 @@ title: Using 'Let's Encrypt' Certificates with Azure
 subtitle: Create free valid SSL certificates in 20 minutes.
 category: howto
 tags: [security, cloud]
-author: Martin Danielsson
+author: martin_danielsson
 author_email: martin.danielsson@haufe-lexware.com 
 header-img: "images/bg-post.jpg"
 ---

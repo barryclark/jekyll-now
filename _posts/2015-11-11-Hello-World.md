@@ -4,7 +4,7 @@ title: We are live or How to start a developer blog
 subtitle: The 'Hello World' Post
 category: general
 tags: [cto, culture]
-author: Holger
+author: holger_reinhardt
 author_email: holger.reinhardt@haufe-lexware.com 
 header-img: "images/bg-post.jpg"
 ---

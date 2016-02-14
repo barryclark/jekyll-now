@@ -36,6 +36,21 @@ layout: default
     {% else %}
       {% assign tags_content = '' %}
     {% endif %}
+    
+    <!-- author links -->
+    {% if page.author %}
+      {% assign author = site.data.authors[page.author] %}
+      {% if author %}
+        <!-- {% capture author_content_temp %}<a href="mailto:{{ author.email }}" target="_blank">{{ author.name }}</a>{% endcapture %} -->
+        <!-- This would be a great place to insert a link to all posts by an author. If I knew how. -->
+        {% capture author_content_temp %}{{ author.name }}{% endcapture %}
+        {% assign author_content = author_content_temp %}
+      {% else %}
+        {% assign author_content = page.author %}
+	  {% endif %}
+    {% else %}
+      {% assign author_content = page.author %}
+    {% endif %}
 
     <div class="container">
         <div class="row">
@@ -45,7 +60,29 @@ layout: default
                     {% if page.subtitle %}
                     <h2 class="subheading">{{ page.subtitle }}</h2>
                     {% endif %}
-                    <span class="meta">Posted by {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %} on {{ page.date | date: "%B %-d, %Y" }} {{ category_content }}{{ tags_content }}</span>
+                    <span class="meta">Posted by {{ author_content }} on {{ page.date | date: "%B %-d, %Y" }} {{ category_content }}{{ tags_content }}</span>
+					{% if author %}
+                      <ul class="list-inline text-center">
+                        {% if author.twitter %}
+                        <li><a style="color:#ffffff" href="https://twitter.com/{{ author.twitter }}" target="_blank"><span class="fa-stack fa-lg">
+                          <i class="fa fa-square-o fa-stack-2x"></i>
+                          <i class="fa fa-twitter fa-stack-1x"></i>
+                        </span></a></li>
+                        {% endif %}
+                        {% if author.linkedin %}
+                        <li><a style="color:#ffffff" href="https://www.linkedin.com/in/{{ author.linkedin }}" target="_blank"><span class="fa-stack fa-lg">
+                          <i class="fa fa-square-o fa-stack-2x"></i>
+                          <i class="fa fa-linkedin fa-stack-1x"></i>
+                        </span></a></li>
+                        {% endif %}
+                        {% if author.github %}
+                        <li><a style="color:#ffffff" href="https://github.com/{{ author.github }}" target="_blank"><span class="fa-stack fa-lg">
+                          <i class="fa fa-square-o fa-stack-2x"></i>
+                          <i class="fa fa-github fa-stack-1x"></i>
+                        </span></a></li>
+                        {% endif %}
+                     </ul>
+                   {% endif %}
                 </div>
             </div>
         </div>
