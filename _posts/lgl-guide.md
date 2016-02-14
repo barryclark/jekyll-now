@@ -17,6 +17,7 @@ vertex1 vertex2 [optional weight]
  ```
 Key points for formatting the input .ncol
 * Each line must be unique
+* A vertex may connect to many other verteces
 * A vertex cannot connect to itself
 * If a line is B-A, there cannot also be a line A-B 
 * There can't be blank lines
@@ -25,6 +26,7 @@ Key points for formatting the input .ncol
 
 ```
 vertex1 vertex2
+vertex1 vertex3 # OK
 vertex1 vertex2 # Will cause error
 vertex1 vertex1 # Will cause error
 vertex2 vertex1 # Will cause error
@@ -39,15 +41,19 @@ In order to color an LGL, each pairwise connection must have an R G B value.  RG
 vertex1 vertex2 1.0 0.5 0 
 vertex3 vertex4 0.0 1.0 0.8 
 vertex5 vertex6 0.1 0.1 1.0
-``
+```
 
 ##### An LGL workflow
 
+I would begin by making a file of all pairwise connections and their associated traits. It can be difficult to keep .ncol and .color files in sync, and so it will cause fewest headaches to begin with one file containing all the information to create both. 
+
+Startingfile.txt
 ```
-#node1 node2 source domain rank level
-vertex1 vertex2 blast bacteria 1 luca
-vertex1 vertex2 blast eukarya 2 luca
+#node1 node2 source score rank species1 species2
+vertex1 vertex2 blastp 150 1 mouse human
+vertex3 vertex4 blastp 50 2 wheat rat
 ```
+
 
 
 ##### Examples 
