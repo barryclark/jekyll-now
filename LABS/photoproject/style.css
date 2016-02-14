@@ -3,11 +3,51 @@ body{
     padding: 0;
     
 }
-#photo{
+.photo{
     height: 300px;
     width: auto;
     z-index: 1;
 }
 ul{
     z-index: 2;
+    list-style: none;
+    position: relative;
+    margin-bottom: 0;
 }
+li{
+    text-shadow: 1px 1px 2px #000;
+}
+.data:before{
+    content:" ";
+    width: 100%;
+    height: 100%;
+    background:#000;
+    position: absolute;
+    z-index: 1;
+    opacity: .2;
+    left: 0;
+}
+figure{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+}
+.data{
+    position: absolute;
+    top: 0px;
+    display: block;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-family: "Sant joan despi";
+    color:#fff;
+}
+.first{
+    font-size:2em;
+    line-height: 1em;
+    
+}
+.second{}
+.third{}

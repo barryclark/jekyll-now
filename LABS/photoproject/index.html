@@ -7,27 +7,31 @@
 <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
-<img src="https://raw.githubusercontent.com/dactrtr/dactrtr.github.io/master/LABS/photoproject/qstn.JPG" id="photo" />
-<ul>
-    <li class="hour"></li>
-</ul>
-<ul>
-    <li class="exp"></li>
-    <li class="fn"></li>
-    <li class="shutter"></li>
-    <li class="apperture"></li>
-    <li class="focalLenght"></li>
-</ul>
-<ul>
-    <li class="lat"></li>
-    <li class="long"></li>
-</ul>
+<figure class="exif">
+    <img src="https://raw.githubusercontent.com/dactrtr/dactrtr.github.io/master/LABS/photoproject/qstn.JPG" class="photo" />
+    <figcaption class="data">
+        <ul class="first">
+            <li class="hour"></li>
+        </ul>
+        <ul class="second">
+            <li class="exp"></li>
+            <li class="fn"></li>
+            <li class="shutter"></li>
+            <li class="apperture"></li>
+            <li class="focalLenght"></li>
+        </ul>
+        <ul class="third">
+            <li class="lat"></li>
+            <li class="long"></li>
+        </ul>
+    </figcaption>
+</figure>
 <script>
 $(document).ready(function(){
-    $("#photo").load(function(){
+    $(".photo").load(function(){
         EXIF.getData(this, function(){
               var 
-            hour = EXIF.getTag(this, "ExifVersion"),
+            hour = EXIF.getTag(this, "DateTimeOriginal"),
             exp = EXIF.getTag(this, "ExposureTime"),
             fn = EXIF.getTag(this, "FNumber"),
             shutter = EXIF.getTag(this, "ShutterSpeedValue"),
