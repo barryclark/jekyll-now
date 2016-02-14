@@ -80,7 +80,9 @@ I can also color each vertex by some trait. In this file format, each vertex mus
 ```
 $ awk '{print $1, $6} homology.txt  | awk '{if(NR>1)print}'`> vertex1_species.tmp
 $ awk '{print $2, $7} homology.txt  | awk '{if(NR>1)print}'`> vertex2_species.tmp
-$ cat vertex1_species.tmp vertex2_species.tmp | sort -u > homology_human.vertex.colors
+$ cat vertex1_species.tmp vertex2_species.tmp | sort -u > homology_human.vertex.colors.tmp
+$ sed -i 's/human/1 0 0/' homology_human.vertex.colors.tmp
+$ sed 's/mouse\|wheat\|rat/0 0 1/' homology_human.vertex.colors.tmp > homology_human.vertex.colors
 $ cat homology_human.vertex.colors
 protein1 0 0 1
 protein2 1 0 0
