@@ -45,6 +45,15 @@ layout: default
         <!-- This would be a great place to insert a link to all posts by an author. If I knew how. -->
         {% capture author_content_temp %}{{ author.name }}{% endcapture %}
         {% assign author_content = author_content_temp %}
+        {% if author.twitter %}
+          {% capture author_twitter %}<a href="https://twitter.com/{{ author.twitter }}" target="_blank"><i class="fa fa-twitter-square">&nbsp;</i></a>{% endcapture %}
+        {% endif %}
+        {% if author.linkedin %}
+          {% capture author_linkedin %}<a href="https://www.linkedin.com/in/{{ author.linkedin }}" target="_blank"><i class="fa fa-linkedin-square"> </i></a>{% endcapture %}
+        {% endif %}
+        {% if author.github %}
+          {% capture author_github %}<a href="https://github.com/{{ author.github }}" target="_blank"><i class="fa fa-github-square">&nbsp;</i></a>{% endcapture %}
+        {% endif %}
       {% else %}
         {% assign author_content = page.author %}
 	  {% endif %}
@@ -60,29 +69,7 @@ layout: default
                     {% if page.subtitle %}
                     <h2 class="subheading">{{ page.subtitle }}</h2>
                     {% endif %}
-                    <span class="meta">Posted by {{ author_content }} on {{ page.date | date: "%B %-d, %Y" }} {{ category_content }}{{ tags_content }}</span>
-					{% if author %}
-                      <ul class="list-inline text-center">
-                        {% if author.twitter %}
-                        <li><a style="color:#ffffff" href="https://twitter.com/{{ author.twitter }}" target="_blank"><span class="fa-stack fa-lg">
-                          <i class="fa fa-square-o fa-stack-2x"></i>
-                          <i class="fa fa-twitter fa-stack-1x"></i>
-                        </span></a></li>
-                        {% endif %}
-                        {% if author.linkedin %}
-                        <li><a style="color:#ffffff" href="https://www.linkedin.com/in/{{ author.linkedin }}" target="_blank"><span class="fa-stack fa-lg">
-                          <i class="fa fa-square-o fa-stack-2x"></i>
-                          <i class="fa fa-linkedin fa-stack-1x"></i>
-                        </span></a></li>
-                        {% endif %}
-                        {% if author.github %}
-                        <li><a style="color:#ffffff" href="https://github.com/{{ author.github }}" target="_blank"><span class="fa-stack fa-lg">
-                          <i class="fa fa-square-o fa-stack-2x"></i>
-                          <i class="fa fa-github fa-stack-1x"></i>
-                        </span></a></li>
-                        {% endif %}
-                     </ul>
-                   {% endif %}
+                    <span class="meta">Posted by {{ author_content }} {{ author_twitter }}{{ author_github }}{{ author_linkedin }} on {{ page.date | date: "%B %-d, %Y" }} {{ category_content }}{{ tags_content }}</span>
                 </div>
             </div>
         </div>
