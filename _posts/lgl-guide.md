@@ -17,17 +17,20 @@ vertex1 vertex2 [optional weight]
  ```
 Key points for formatting the input .ncol
 * Each line must be unique
-* Verteces cannot connect to themself
-* If one line is B A, there cannot also be a line A B 
-* There can be no blanks in any column
-* There can be no blank lines
+* A vertex cannot connect to itself
+* If a line is B-A, there cannot also be a line A-B 
+* There can't be blank lines
+* There can't be blanks in any column
+* No header line
+
 ```
 vertex1 vertex2
 vertex1 vertex2 # Will cause error
 vertex1 vertex1 # Will cause error
 vertex2 vertex1 # Will cause error
-vertex3         # Will cause error
                 # Will cause error
+vertex3         # Will cause error
+
 ```
 
 
