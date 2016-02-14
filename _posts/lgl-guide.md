@@ -9,7 +9,7 @@ title: LGL - the Large Graph Layout
 
 [New York Times article](http://www.nytimes.com/2015/09/08/science/the-tardigrade-water-bear.html?_r=0) 
 
-Last summer, I had a 500,000 node network, with a million connections, and no way to look at its structure.     
+Last summer, I had a 500,000 node network, with a million connections, and no way to look at its structure. Cytoscape maxes out at about 100,000 connections, and for some reason that I can't remember now,  I never got my network to load on the million node capable OpenOrd Layout for Gephi.      
 
 As there aren't many resources on using the Large Graph Layout, I wanted to do a quick post on my tips for using the software.    
 http://lgl.sourceforge.net/
