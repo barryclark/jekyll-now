@@ -5,17 +5,20 @@ title: LGL - the Large Graph Layout
 <img src="http://www.visualcomplexity.com/vc/images/120_big01.jpg" width="500"/>
 <br>*Protein Homology Graph*
 
-Water bears (tardigrades) have become our unofficial lab pet, partly because UT won't let us keep vertebrates, but mainly because of how awesome they are. This [New York Times article](http://www.nytimes.com/2015/09/08/science/the-tardigrade-water-bear.html?_r=0) 
+ 
 
-As there aren't many resources on using the Large Graph Layout, I 
+[New York Times article](http://www.nytimes.com/2015/09/08/science/the-tardigrade-water-bear.html?_r=0) 
+
+Last summer, I had a 500,000 node network, with a million connections, and no way to look at its structure.     
+
+As there aren't many resources on using the Large Graph Layout, I wanted to do a quick post on my tips for using the software.    
 http://lgl.sourceforge.net/
 
-Aaron Swartz used LGL for his visualization of blogspace in 2006 http://www.aaronsw.com/weblog/blogviz
+Aaron Swartz used LGL for a visualization of blogspace in 2006 http://www.aaronsw.com/weblog/blogviz
 
+Alex Adai 
 
-paper
-LGL: Creating a Map of Protein Function with an Algorithm for Visualizing Very Large Biological Networks
-http://www.marcottelab.org/paper-pdfs/jmb-lgl.pdf
+The original paper, ["LGL: Creating a Map of Protein Function with an Algorithm for Visualizing Very Large Biological Networks"](http://www.marcottelab.org/paper-pdfs/jmb-lgl.pdf)
 
 https://sourceforge.net/projects/lgl/
 
