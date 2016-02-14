@@ -5,16 +5,26 @@ title: LGL - the Large Graph Layout
 <img src="http://www.visualcomplexity.com/vc/images/120_big01.jpg" width="500"/>
 <br>*[Protein Homology Graph, Edward Marcotte and Alex Adai, MOMA](http://www.moma.org/interactives/exhibitions/2008/elasticmind/#/211/)*
 
+### The Large Graph Layout (LGL)
+
 Last summer, I had a 500,000 node/million connection network, and no way to look at its structure. Cytoscape maxed out at about 100,000 connections, and for some reason which I can't remember now,  I never got my network to load on the million node capable OpenOrd Layout for Gephi. 
 
 As nicely outlined by in Martin Krzywinski's  [Hive Plot pag](http://www.hiveplot.net/), even if a software is capable of laying out a giant network, it is more than likely to create an unintepretable hairball. The Large Graph Layout (LGL) was created by Alex Adai in [Edward Marcotte's lab](http://marcottelab.org/index.php/Main_Page) to visualize large networks while avoiding hairballs. The algorithm itself is described in the original paper, ["LGL: Creating a Map of Protein Function with an Algorithm for Visualizing Very Large Biological Networks"](http://www.marcottelab.org/paper-pdfs/jmb-lgl.pdf). Basically, the algorithm first discovers disconnected clusters in the data, and then lays them out indidually. LGL works radially, where each cluster begins with a seed node, and new connections are added on spheres which are force directed outwards from the existing cluster.          
 
-As there aren't many resources on using the Large Graph Layout, I wanted to do a quick post on my tips for using the software. This post is meant to supplement the [main FAQ](http://www.opte.org/lgl/) and the [README](https://github.com/TheOpteProject/LGL/blob/master/README.txt). LGL is mainly maintained by the Opte Project to map the internet, and the most recent version of the software can be cloned from their [ Github](https://github.com/TheOpteProject/LGL), with git clone https://github.com/TheOpteProject/LGL.git . 
+
+#### LGL Examples 
+*  The Opte Project uses a minimal spanning LGL to [map the internet](http://www.opte.org/) every few years.   
+*  Aaron Swartz used LGL for a neat [visualization of blogspace in 2006](http://www.aaronsw.com/weblog/blogviz). 
+*  The Museum of Modern Art in New York picked an LGL of protein homologies (top image) for their 2008 exhibit ["Design and the Elastic Mind"](http://www.moma.org/interactives/exhibitions/2008/elasticmind/#/211/)
+
 
 #### LGL tips
+As there aren't many resources on using the Large Graph Layout, I wanted to do a quick post on my tips for using the software. This post is meant to supplement the [main FAQ](http://www.opte.org/lgl/) and the [README](https://github.com/TheOpteProject/LGL/blob/master/README.txt). LGL is mainly maintained by the Opte Project to map the internet, and the most recent version of the software can be cloned from their [ Github](https://github.com/TheOpteProject/LGL), with git clone https://github.com/TheOpteProject/LGL.git . 
 
+##### Input format (.ncol)
 The input format to LGL is called .ncol, which is just a space separated list of two connected verteces with an optional third column of weight. 
 ```
+cat example.ncol
 vertex1 vertex2 [optional weight]
  ```
 Key points for formatting the input .ncol
@@ -36,27 +46,36 @@ vertex2 vertex1 # Will cause error
 vertex3         # Will cause error
 ```
 
-##### Coloring
+##### Coloring format (.colors)
 
-In order to color an LGL, each pairwise connection must have an R G B value.  RGB values must be scaled to one 1, so just divide each number of an RGB value by 255. The rules for formatting an .ncol file apply here too, i.e. no blanks, no empty lines, no redundancy , etc. 
+In order to color connections between nodes, each pairwise connection must have an R G B value. To color individual verteces, each vertex must have and R G B value. RGB values must be scaled to one 1, so just divide each number of an RGB value by 255. The rules for formatting an .ncol file apply here too, i.e. no blanks, no empty lines, no redundancy , etc. 
 ```
+$ cat example.connection.colors
 vertex1 vertex2 1.0 0.5 0.0 
 vertex3 vertex4 0.0 1.0 0.8 
 vertex5 vertex6 0.1 0.1 1.0
+
+$ cat example.vertex.colors
+vertex1 1.0 0.8 0.0 
+vertex2 1.0 0.5 0.0 
+vertex3 0.2 0.1 0.8
+vertex4 0.0 1.0 0.8 
+vertex5 0.6 0.5 0.5
+vertex6 0.1 0.1 1.0
 ```
 
-##### An LGL workflow
+#### An LGL workflow
 
 I would begin by making a file of all pairwise connections and their associated traits. It can be difficult to keep .ncol and .color files in sync, and so it will cause fewest headaches to begin with one file containing all the information to create both. 
 
-*homology.txt*
 ```
+$ cat homology.txt
 node1 node2 source score rank species1 species2
 protein1 protein2 blastp 150 1 mouse human
 protein3 protein4 blastp 50 2 wheat rat
 protein2 protein5 hmmscan 60 3 human human
 ```
-Then take the first two columns (minus the header) to create an .ncol file.
+Then take the first two columns (minus the header) to create an .ncol file. This is the file used to layout the graph
 
 ```
 $ awk '{print $1, $2, $3} homology.txt  | awk '{if(NR>1)print}' > homology.ncol  #get columns, remove header
@@ -65,19 +84,19 @@ protein1 protein2
 protein3 protein4
 protein2 protein5
 ```
-Then choose a trait, and create a connections.colors file. I generally select the first two columns, and a trait to color by, then use sed to replace the trait values with the RGB value I want to color a connection by.
+Then choose a trait, and create a connections.colors file. I generally select the first two columns, and a trait to color by, then just use sed to replace the trait values with the RGB value I want to color type connection by.
 
 In this file, I want to color all connections predicted with the algorithm hmmscan red, and all connections found with blastp blue. 
 ```
-$ awk '{print $1, $2, $3} homology.txt  | awk '{if(NR>1)print}' >  homology.ncol.tmp
-$ sed -i 's/hmmer/1 0 0/g' homology.ncol.tmp
-$ sed 's/blastp/0 0 1/g' homology.ncol.tmp > homology_algorithm.connection.colors
+$ awk '{print $1, $2, $3} homology.txt  | awk '{if(NR>1)print}' >  homology_alg.colors.tmp
+$ sed -i 's/hmmer/1 0 0/g' homology_algcolors.tmp
+$ sed 's/blastp/0 0 1/g' homology_alg.colors.tmp > homology_algorithm.connection.colors
 $ cat homology_algorithm.connection.colors
 protein1 protein2 1 0 0
 protein3 protein4 0 0 1
 protein2 protein5 0 0 1
 ```
-I can also color each vertex by some trait. In this file format, each vertex must have an associated RGB value. In this case, I want to color ever human protein red, and proteins from every other species blue. 
+I could also color each vertex by some trait. In this file format, each vertex must have an associated RGB value. In this case, I want to color ever human protein red, and proteins from every other species blue. 
 
 ```
 $ awk '{print $1, $6} homology.txt  | awk '{if(NR>1)print}'`> vertex1_species.tmp
@@ -93,15 +112,22 @@ protein4 0 0 1
 protein5 1 0 0
 ```
 
+##### Running LGL
+
+I put all these files in one folder. This folder will also be the destination for generated LGLs.
+Navigating to the lgl.x.x/ directory, modify the conf_file for a particular run.
+Change destination folder
+Change mst
+
+```
+lgl.pl
+```
 
 
 
 
+lgl.pl can take hours depending on the size of the network. 
 
-##### Examples 
-*  The Opte Project uses a minimal spanning LGL to [map the internet](http://www.opte.org/) every few years.   
-*  Aaron Swartz used LGL for a neat [visualization of blogspace in 2006](http://www.aaronsw.com/weblog/blogviz). 
-*  The Museum of Modern Art in New York picked an LGL of protein homologies (top image) for their 2008 exhibit ["Design and the Elastic Mind"](http://www.moma.org/interactives/exhibitions/2008/elasticmind/#/211/)
 
 ##### Conclusion
 
