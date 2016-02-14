@@ -16,11 +16,18 @@ The input format to LGL is called .ncol, which is just a space separated list of
 vertex1 vertex2 [optional weight]
  ```
 Key points for formatting the input .ncol
-* Each line must be unique, and nonredundant.  If one line is B A, there cannot also be a line A B 
+* Each line must be unique
+* Verteces cannot connect to themself
+* If one line is B A, there cannot also be a line A B 
+* There can be no blanks in any column
+* There can be no blank lines
 ```
 vertex1 vertex2
-~~vertex1 vertex2~~
-~~vertex2 vertex1~~
+vertex1 vertex2 # Will cause error
+vertex1 vertex1 # Will cause error
+vertex2 vertex1 # Will cause error
+vertex3         # Will cause error
+                # Will cause error
 ```
 
 
