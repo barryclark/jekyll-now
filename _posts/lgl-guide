@@ -2,8 +2,8 @@
 layout: page
 title: LGL - the Large Graph Layout
 ---
-<img src="https://raw.githubusercontent.com/clairemcwhite/clairemcwhite.github.io/master/images/closeup.jpg" width="500"/>
-<br>*SEM:Bob Goldstein and Vicky Madden, [http://tardigrades.bio.unc.edu/](http://tardigrades.bio.unc.edu/)*
+<img src="http://www.visualcomplexity.com/vc/images/120_big01.jpg" width="500"/>
+<br>*Protein Homology Graph*
 
 Water bears (tardigrades) have become our unofficial lab pet, partly because UT won't let us keep vertebrates, but mainly because of how awesome they are. This [New York Times article](http://www.nytimes.com/2015/09/08/science/the-tardigrade-water-bear.html?_r=0) 
 
@@ -11,6 +11,7 @@ Water bears (tardigrades) have become our unofficial lab pet, partly because UT 
 http://lgl.sourceforge.net/
 
 paper
+LGL: Creating a Map of Protein Function with an Algorithm for Visualizing Very Large Biological Networks
 http://www.marcottelab.org/paper-pdfs/jmb-lgl.pdf
 
 https://sourceforge.net/projects/lgl/
@@ -18,3 +19,9 @@ https://sourceforge.net/projects/lgl/
 http://www.opte.org/lgl/
 git clone https://github.com/TheOpteProject/LGL.git
 Most recent source https://github.com/TheOpteProject/LGL
+
+Moma book page
+Protein Homology Graph
+http://www.moma.org/interactives/exhibitions/2008/elasticmind/#/211/
+
+https://books.google.com/books?id=u1kxPGb2hrQC&pg=PA132&lpg=PA132&dq=moma+large+graph+layout+lgl&source=bl&ots=eMCdUF4aIL&sig=roj3hAKVCgwv-tni22CE0aBCedA&hl=en&sa=X&ved=0ahUKEwjos-TR_ffKAhUF4iYKHfu2Cl8Q6AEINTAD#v=onepage&q=moma%20large%20graph%20layout%20lgl&f=false
