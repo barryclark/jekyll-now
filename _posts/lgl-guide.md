@@ -7,7 +7,7 @@ title: LGL - the Large Graph Layout
 
 [New York Times article](http://www.nytimes.com/2015/09/08/science/the-tardigrade-water-bear.html?_r=0) 
 
-Last summer, I had a 500,000 node/million connection network, and no way to look at its structure. Cytoscape maxes out at about 100,000 connections, and for some reason which I can't remember now,  I never got my network to load on the million node capable OpenOrd Layout for Gephi.      
+Last summer, I had a 500,000 node/million connection network, and no way to look at its structure. Cytoscape maxes out at about 100,000 connections, and for some reason which I can't remember now,  I never got my network to load on the million node capable OpenOrd Layout for Gephi. As nicely outlined by in Martin Krzywinski's  [Hive Plot pag](http://www.hiveplot.net/), even if a software is capable of laying out a giant network, it is more than likely to create an unintepretable hairball. The Large Graph Layout (LGL) was created in [Edward Marcotte's lab](http://marcottelab.org/index.php/Main_Page) to visualize large networks while avoiding hairballs. The algorithm itself is described in the original paper, ["LGL: Creating a Map of Protein Function with an Algorithm for Visualizing Very Large Biological Networks"](http://www.marcottelab.org/paper-pdfs/jmb-lgl.pdf). Basically, the algorithm first discovers disconnected clusters in the data, and then lays them out indidually. LGL works radially, where each cluster begins with a seed node, and new connections are added on spheres which are force directed out from the existing cluster.          
 
     
 
@@ -17,7 +17,7 @@ Aaron Swartz used LGL for a visualization of blogspace in 2006 http://www.aarons
 
 As there aren't many resources on using the Large Graph Layout, I wanted to do a quick post on my tips for using the software. This post is meant to supplement the [main FAQ](http://www.opte.org/lgl/) and the 
 
-The algorithm itself is described in the original paper, ["LGL: Creating a Map of Protein Function with an Algorithm for Visualizing Very Large Biological Networks"](http://www.marcottelab.org/paper-pdfs/jmb-lgl.pdf). Briefly, the algorithm first discovers disconnected clusters, and lays them out indidually. LGL works radially, where each cluster begins with a seed node, and new connections are added on spheres which are force directed out from the existing cluster.  
+ 
 
 LGL is mainly maintained by Alex Adai, and the most recent version of the software can be cloned from the [Opte Project Github](https://github.com/TheOpteProject/LGL), with git clone https://github.com/TheOpteProject/LGL.git . 
 
