@@ -78,7 +78,7 @@ protein2 protein5 hmmscan 60 3 human human
 Then take the first two columns (minus the header) to create an .ncol file. This is the file used to layout the graph
 
 ```
-$ awk '{print $1, $2, $3} homology.txt  | awk '{if(NR>1)print}' > homology.ncol  #get columns, remove header
+$ awk '{print $1, $2}' homology.txt  | awk '{if(NR>1)print}' > homology.ncol  #get columns, remove header
 $ cat homology.ncol
 protein1 protein2
 protein3 protein4
