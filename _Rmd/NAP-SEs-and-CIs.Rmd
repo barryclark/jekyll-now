@@ -7,15 +7,21 @@ tags: [effect-sizes, single-case-research]
 
 [Parker and Vannest (2009)](http://doi.org/10.1016/j.beth.2008.10.006) proposed non-overlap of all pairs (NAP) as an effect size index for use in single-case research. NAP is defined in terms of all pair-wise comparisons between the data points in two different phases for a given case (i.e., a treatment phase versus a baseline phase). Specifically, it is the proportion of all such pair-wise comparisons where the treatment phase observation exceeds the baseline phase observation, with pairs that are exactly tied getting a weight of 1/2. NAP belongs to the family of non-overlap measures, which also includes the percentage of non-overlapping data, the improvement rate difference, and several other indices. It is exactly equivalent to [Vargha and Delaney's (2000)](http://doi.org/10.2307/1165329) modified Common Language Effect Size and has been proposed as an effect size index in other contexts too (e.g., [Acion, Peterson, Temple, & Arndt, 2006](http://doi.org/10.1002/sim.2256)). 
 
-The developers of NAP have created a [web-based tool](http://singlecaseresearch.org/calculators) for calculating it (as well as several other non-overlap indices), and I have the impression that the tool is fairly widely used. For example, [Roth, Gillis, and DiGennaro Reed (2014)](http://doi.org/10.1007%2Fs10864-013-9189-x) and [Whalon, Conroy, Martinez, and Welch (2015)](http://doi.org/10.1007/s10803-015-2373-1) both used NAP in their meta-analyses of single-case research, and both noted that they used [singlecaseresearch.org](http://www.singlecaseresearch.org/calculators/nap) for calculating the effect size measure. Given that the web tool is being used, it is worth scrutinizing the methods behind the calculations it reports. __As of this writing, the standard error and confidence intervals reported along with the NAP statistic are incorrect, and should not be trusted.__ I'll explain how and why, but first I'll need to introduce a little bit of notation. 
+The developers of NAP have created a [web-based tool](http://singlecaseresearch.org/calculators) for calculating it (as well as several other non-overlap indices), and I have the impression that the tool is fairly widely used. For example, [Roth, Gillis, and DiGennaro Reed (2014)](http://doi.org/10.1007%2Fs10864-013-9189-x) and [Whalon, Conroy, Martinez, and Welch (2015)](http://doi.org/10.1007/s10803-015-2373-1) both used NAP in their meta-analyses of single-case research, and both noted that they used [singlecaseresearch.org](http://www.singlecaseresearch.org/calculators/nap) for calculating the effect size measure. Given that the web tool is being used, it is worth scrutinizing the methods behind the calculations it reports. __As of this writing, the standard error and confidence intervals reported along with the NAP statistic are incorrect, and should not be trusted.__ After introducing a bit of notation, I'll demonstrate why the existing methods are deficient. I'll also suggest some methods for calculating standard errors and confidence intervals that are potentially more accurate. 
 
-## Notation
+## Preliminaries
 
 Suppose that we have data from the baseline phase and treatment phase for a single case. Let $m$ denote the number of baseline observations and $n$ denote the number of treatment phase observations. Let $y^A_1,...,y^A_m$ denote the baseline phase data and $y^B_1,...,y^B_n$ denote the treatment phase data. Then NAP is calculated as 
 $$
 \text{NAP} = \frac{1}{m n} \sum_{i=1}^m \sum_{j=1}^n \left[I\left(y^B_j > y^A_i\right) + 0.5 I\left(y^B_j = y^A_i\right)\right]
 $$
-Tau is a proportion and thus will fall in the range of [0, 1]. NAP is very closely related to another non-overlap index called Tau ([Parker, Vannest, Davis, & Sauber, 2011](http://doi.org/10.1016/j.beth.2010.08.006)). Tau is nothing more than a linear re-scaling of NAP to the range of [-1, 1]: 
+What is NAP an estimate of? The parameter of interest is the probability that a randomly selected treatment phase observation will exceed a randomly selected baseline phase observation (again, with an adjustment for ties):
+$$
+\theta = \text{Pr}(Y^B > Y^A) + 0.5 \text{Pr}(Y^B = Y^A).
+$$
+Vargha and Delaney call $\theta$ the _measure of stochastic superiority_. 
+
+NAP is very closely related to another non-overlap index called Tau ([Parker, Vannest, Davis, & Sauber, 2011](http://doi.org/10.1016/j.beth.2010.08.006)). Tau is nothing more than a linear re-scaling of NAP to the range of [-1, 1]: 
 $$
 \text{Tau} = \frac{S}{m n} = 2 \times \text{NAP} - 1,
 $$
@@ -25,8 +31,8 @@ S = \sum_{i=1}^m \sum_{j=1}^n \left[I\left(y^B_j > y^A_i\right) - I\left(y^B_j <
 $$
 $S$ is Kendall's S statistic, which is closely related to the Mann-Whitney $U$ test. 
 
-Here are R functions for calculating NAP and Tau:
-```{r}
+Here is an R function for calculating NAP:
+```{r NAP}
 NAP <- function(yA, yB) {
   m <- length(yA)
   n <- length(yB)
@@ -36,57 +42,143 @@ NAP <- function(yA, yB) {
 ```
 
 Using the data from the worked example in [Parker and Vannest (2009)](http://doi.org/10.1016/j.beth.2008.10.006), my calculations agree with their reported NAP of 0.96:
-```{r}
+```{r NAP_example}
 yA <- c(4, 3, 4, 3, 4, 7, 5, 2, 3, 2)
 yB <- c(5, 9, 7, 9, 7, 5, 9, 11, 11, 10, 9)
 NAP(yA, yB)
 ```
 
-## Standard error
+## Standard errors
 
 The webtool at [singlecaseresearch.org](http://www.singlecaseresearch.org/calculators/nap) reports a standard error for NAP (it is labelled as "SDnap"), which from what I can tell is based on the formula
 $$
-\text{SE}_{\text{Tau}} = 2 \sqrt{\frac{m + n + 1}{12 m n}}.
+\text{SE}_{\text{Tau}} = \sqrt{\frac{m + n + 1}{3 m n}}.
 $$
 This formula appears to actually be the standard error for Tau, rather than for NAP. Since $\text{NAP} = \left(\text{Tau} + 1\right) / 2$, the standard error for NAP should be half as large:
 $$
-\text{SE}_{\text{NAP}} = \sqrt{\frac{m + n + 1}{12 m n}}.
+\text{SE}_{null} = \sqrt{\frac{m + n + 1}{12 m n}}
 $$
-However, even this formula is not always correct. It is valid only when the treatment phase data are drawn from the same distribution as the baseline phase data---that is, when the treatment has no effect on the outcome---and when the observations are all mutually independent. 
+(cf. [Grissom & Kim, 2001, p. 141](http://dx.doi.org/10.1037/1082-989X.6.2.135)). However, even this formula is not always correct. It is valid only when the treatment phase data are drawn from the same distribution as the baseline phase data---that is, when the treatment has no effect on the outcome---and when the observations are all mutually independent. I've therefore denoted it as $\text{SE}_{null}$.
 
-Simulation methods can be used to examine just how far off the standard error can be. For simplicity, I'll simulate normally distributed data where
+### Other standard error estimators 
+
+Because an equivalent effect size measure is used in other contexts like clinical medicine, there has actually been a fair bit of research into better approaches for assessing the uncertainty in NAP. [Hanley and McNeil (1982)](http://dx.doi.org/10.1148/radiology.143.1.7063747) proposed to estimate the sampling variance of NAP as follows. Their method was designed for continuous outcome measures, where exact ties are impossible. Modifying it slightly (and in entirely ad hoc fashion), let 
+$$
+\begin{aligned}
+Q_1 &= \frac{1}{m n^2}\sum_{i=1}^m \left[\sum_{j=1}^n I\left(y^B_j > y^A_i\right) + 0.5 I\left(y^B_j = y^A_i\right)\right]^2 \\
+Q_2 &= \frac{1}{m^2 n}\sum_{j=1}^n \left[\sum_{i=1}^m I\left(y^B_j > y^A_i\right) + 0.5 I\left(y^B_j = y^A_i\right)\right]^2.
+\end{aligned}
+$$
+Then the Hanley-McNeil variance estimator is
+$$
+V_{HM} = \frac{1}{mn} \left[\text{NAP}\left(1 - \text{NAP}\right) + (n - 1)\left(Q_1 - \text{NAP}^2\right) + (m - 1)\left(Q_2 - \text{NAP}^2\right)\right],
+$$
+with $\text{SE}_{HM} = \sqrt{V_{HM}}$. 
+
+The same authors also propose a different estimator, which is based on the assumption that the outcome data are exponentially distributed. Even though this is a strong and probably often inappropriate assumption, there is nonetheless evidence that the other estimator works even for other distributions. [Newcombe (2006)](http://dx.doi.org/10.1002/sim.2324) suggested a further modification of their estimator, and I'll describe his version. Let $h = (m + n) / 2 - 1$. Then 
+$$
+V_{New} = \frac{h}{mn} \text{NAP}\left(1 - \text{NAP}\right)\left[\frac{1}{h} + \frac{1 - \text{NAP}}{2 - \text{NAP}} + \frac{\text{NAP}}{1 + \text{NAP}}\right],
+$$
+with $\text{SE}_{New} = \sqrt{V_{New}}$.
+
+Here are R functions to calculate each of these variance estimators.
+```{r SEs}
+V_HM <- function(yA, yB) {
+  m <- length(yA)
+  n <- length(yB)
+  U <- sapply(yB, function(j) (j > yA) + 0.5 * (j == yA))
+  t <- sum(U) / (m * n)
+  Q1 <- sum(rowSums(U)^2) / (m * n^2)
+  Q2 <- sum(colSums(U)^2) / (m^2 * n)
+  (t * (1 - t) + (n - 1) * (Q1 - t^2) + (m - 1) * (Q2 - t^2)) / (m * n)
+}
+
+V_New <- function(yA, yB) {
+  m <- length(yA)
+  n <- length(yB)
+  t <- NAP(yA, yB)
+  h <- (m + n) / 2 - 1
+  t * (1 - t) * (1 + h * (1 - t) / (2 - t) + h * t / (1 + t)) / (m * n)
+}
+
+sqrt(V_HM(yA, yB))
+sqrt(V_New(yA, yB))
+```
+
+For the example dataset, the Newcombe estimator yields a standard error that is about `r round(100 * sqrt(V_New(yA, yB)) / sqrt(V_HM(yA, yB)) - 100)`% larger than the Hanley-McNeil estimator.
+
+### A small simulation 
+
+Simulation methods can be used to examine how well these various standard error formulas estimate the actual sampling variation of NAP. For simplicity, I'll simulate normally distributed data where
 $$
 Y^A \sim N(0, 1) \qquad \text{and} \qquad Y^B \sim N(\delta, 1)
 $$
 for varying values of the treatment effect $\delta$ and a couple of different sample sizes.
 
-```{r, message = FALSE, warning = FALSE, fig.width = 8, fig.height = 7.5}
+```{r SE_simulation, cache = TRUE, message = FALSE, warning = FALSE, fig.width = 10, fig.height = 8}
+
 sample_NAP <- function(delta, m, n, iterations) {
   NAPs <- replicate(iterations, {
     yA <- rnorm(m)
     yB <- rnorm(n, mean = delta)
-    NAP(yA, yB)
+    c(NAP = NAP(yA, yB), V_HM = V_HM(yA, yB), V_New = V_New(yA, yB))
   })
-  data.frame(sd = sd(NAPs))
+  data.frame(sd = sd(NAPs["NAP",]), 
+             SE_HM = sqrt(mean(NAPs["V_HM",])), 
+             SE_New = sqrt(mean(NAPs["V_New",])))
 }
 
 library(dplyr)
+library(tidyr)
 delta <- seq(0, 3, 0.5)
 m <- c(5, 10, 15, 20)
 n <- c(5, 10, 15, 20)
+
 expand.grid(delta = delta, m = m, n = n) %>%
   group_by(delta, m, n) %>%
-  do(sample_NAP(.$delta, .$m, .$n, iterations = 1000)) %>%
-  mutate(se = sqrt((m + n + 1) / (12 * m * n))) ->
+  do(sample_NAP(.$delta, .$m, .$n, iterations = 2000)) %>%
+  mutate(theta = pnorm(delta / sqrt(2)),
+         se_null = sqrt((m + n + 1) / (12 * m * n))) %>%
+  gather("sd","val", sd, SE_HM, SE_New, se_null) ->
   NAP_sim
 
 library(ggplot2)
-ggplot(NAP_sim) + 
+ggplot(NAP_sim, aes(theta, val, color = sd)) + 
   facet_grid(n ~ m, labeller = "label_both") + 
-  geom_line(aes(delta, sd), color = "red") + 
-  geom_line(aes(delta, se), color = "purple") + 
+  geom_line() + 
   theme_bw()
 ```
 
-In the above figure, the actual sampling standard deviation of NAP (in red) and the value of $\text{SE}_{\text{NAP}}$ (in purple) are plotted against $\delta$, with separate plots for various combinations of $m$ and $n$. The value of $\text{SE}_{\text{NAP}}$ agrees with the actual standard error when $\delta = 0$, but the two diverge when there is a positive treatment effect. Since the shape of the discrepancy is very similar across sample sizes, one might wonder whether it would be possible to work out a better formula for the actual standard error of NAP. Unfortunately, this regularity is a consequence of having simulated normally distributed data---if I had used a different distribution, the standard error would have come out to be something else.  
+In the above figure, the actual sampling standard deviation of NAP (in red) and the value of $\text{SE}_{\text{NAP}}$ (in purple) are plotted against the true value of $\theta$, with separate plots for various combinations of $m$ and $n$. The expected value of the standard errors $\text{SE}_{HM}$ and $\text{SE}_{New}$ (actually the square root of the expectation of the variance estimators) are depicted in green and blue, respectively. The value of $\text{SE}_{\text{NAP}}$ agrees with the actual standard error when $\delta = 0$, but the two diverge when there is a positive treatment effect. It appears that $\text{SE}_{HM}$ and $\text{SE}_{New}$ both under-estimate the actual standard error when $m$ or $n$ is equal to 5, and over-estimate for the largest values of $\theta$. However, both of these estimators offer a marked improvement over $\text{SE}_{null}$. 
 
+```{r relative_bias, eval = FALSE, echo = FALSE, fig.width = 10, fig.height = 8}
+NAP_sim %>%
+  spread(sd, val) %>%
+  mutate(SE_HM = SE_HM / sd, SE_New = SE_New / sd) %>%
+  select(-sd, -se_null) %>%
+  gather("sd","rb", SE_HM, SE_New) %>%
+  ggplot(aes(theta, rb, color = sd)) + 
+    facet_grid(n ~ m, labeller = "label_both") + 
+    geom_line() + 
+    labs(y = "Relative bias") + 
+    theme_bw()
+```
+
+
+## Confidence intervals
+
+The webtool at [singlecaseresearch.org](http://www.singlecaseresearch.org/calculators/nap) also reports 85% and 90% confidence intervals for NAP. These confidence intervals appear to have the same two problems as the standard errors. First, they are constructed as CIs for Tau rather than for NAP. For the $100\% \times (1 - \alpha)$ CI, let $z(\alpha / 2)$ be the appropriate critical value from a standard normal distribution. The CIs reported by the webtool are given by 
+$$
+\text{Tau} \pm \text{SE}_{\text{Tau}} \times z(\alpha/2). 
+$$
+This is probably just an oversight in the programming, which would be corrected by instead using 
+$$
+\text{NAP} \pm \text{SE}_{null} \times z(\alpha / 2).
+$$
+I'll call this the SCR confidence interval. Funnily enough, the upper bound of the SCR CI is the same as the upper bound of the Tau CI. However, the lower bound is going to be quite a bit larger than the lower bound for the Tau CI. Even so, it seems likely that this CI has very poor coverage properties because it is based on $\text{SE}_{null}$, which can drastically over-estimate the standard error of NAP for non-null values. 
+
+### Other confidence intervals
+
+
+
+### Another small simulation
