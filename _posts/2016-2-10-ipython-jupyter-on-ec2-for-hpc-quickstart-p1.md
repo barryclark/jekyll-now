@@ -32,3 +32,5 @@ In my post [here]({{ site.baseurl }}/ipython-jupyter-on-ec2-for-hpc-p1/), I gave
 	![_config.yml]({{ site.baseurl }}/images/keypair.png)
 
 8. You're done!  Head back to the [EC2 Console](https://us-west-2.console.aws.amazon.com/ec2/v2) and select Instances on the sidebar. Once your instance state goes from 'pending' to 'running', select it and note the Public DNS.  You'll need this for [Part 2]({{ site.baseurl }}/ipython-jupyter-on-ec2-for-hpc-p2/).
+
+	![_config.yml]({{ site.baseurl }}/images/pubdns.png)
