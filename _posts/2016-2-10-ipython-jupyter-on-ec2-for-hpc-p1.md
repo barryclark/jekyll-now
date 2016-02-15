@@ -1,7 +1,8 @@
 ---
 layout: post
-title: Using Jupyter on Amazon EC2 for HPC
+title: IPython Jupyter on EC2 for HPC, Part 1
 ---
+**NOTE: I've made my AMI created using this procedure available publicly!  If you want to get going with IPython/Jupyter on EC2 super quickly and without the terminal see my guide [here]({{ site.baseurl }}/Jupyter-on-Amazon-EC2-Quick-Start/).**
 
 I attempted to use random forests as a first pass for [The Winton Stock Market Challenge](https://www.kaggle.com/c/the-winton-stock-market-challenge) on Kaggle and found that for any reasonable number of trees in the forest, I was unable to train the data in a reasonable amount of time.  Even though the solution itself was extremely unsuccessful, here's a short guide on how to do set up an EC2 instance to do large computations using Jupyter.
 
@@ -33,9 +34,10 @@ Copied from [here](http://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSGe
 
 5. To see your access key, choose Show User Security Credentials. Your credentials will look something like this:
 
-		Access Key ID: AKIAIOSFODNN7EXAMPLE
-
-		Secret Access Key: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+```
+Access Key ID: AKIAIOSFODNN7EXAMPLE
+Secret Access Key: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+```
 
 6. Choose Download Credentials, and store the keys in a secure location.
 
