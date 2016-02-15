@@ -50,7 +50,7 @@ Once more, the very same drawbacks apply as for the above case:
 * You have a shared secret between the APIm and the backend
 * If you are not using `https` (TLS), this is not by any means actually secure
 
-###Mutual SSL
+### Mutual SSL
 
 One step up from Basic Auth and Security by Obscurity is to use Mutual SSL between Azure APIm and the backend. This also is directly supported by Azure APIm, so that you "only" have to upload the client certificate to use for communication with the backend service, and then check the certificate in the backend. In this case, using a self-signed certificate will work. I tested it using [this blog post with nginx](https://pravka.net/nginx-mutual-auth). The only thing that had to be done additionally was to create PFX client certificate using `openssl`, as Azure APIm only will accept PFX certificates.
 
