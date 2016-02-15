@@ -156,7 +156,15 @@
   category_gr: Κέντρο φυσικοθεραπείας
   category_en: Physiotherapy center
   location_gr: Θεσσαλονίκη, Ελλάδα
-  location_en: Thessaloniki, Greece  
+  location_en: Thessaloniki, Greece
+
+- company_gr: Kopa3ka
+  company_en: Kopa3ka
+  url: http://www.kopa3ka.com/
+  category_gr: Αρχιτεκτονική Τοπίου
+  category_en: Landscape Architecture
+  location_gr: Δράμα, Ελλάδα
+  location_en: Drama, Greece
  
 - company_gr: Φαρμακείο Κιμιωνή
   company_en: Kimioni Pharmacy
