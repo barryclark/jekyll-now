@@ -23,7 +23,7 @@ If you find bugs or issues you can [open an issue](https://github.com/Haufe-Lexw
 
 If you happen to have Mac OS X device, it is a lot simpler to test your additions using the `jekyll` command line directly; you don't have to set up github pages, and you can still verify everything is fine.
 
-To install `jekyll`, issue the following command in Terminal:
+To install `jekyll`, issue the following command in Terminal (I here assume you have the Mac OS X developer command line tools installed, which include ruby/gem):
 
 ```
 $ sudo gem install jekyll
