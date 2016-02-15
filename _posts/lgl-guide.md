@@ -140,6 +140,22 @@ Then just run lgl
 ./bin/lgl.pl conf_file
 ```
 It took about 5 seconds to create my 3 line network, but it can take hours depending on the size of the network/speed of the computer. 
+In ~/homologyLGL/, a folder 1455579482/ now contains all individual discrete subnetworks of the LGL
+```
+ls | head -5
+0.lgl                #Network Layout
+0.coords             #Node coordinates
+0.coords.mst.lgl     #Minimal spanning tree network layout
+0.coords.log         #Subnetwork measurements
+0.coords.root        #Node used to root an individual subnetwork
+0.coords.edge_levels #Levels of the subnetwork
+```
+~/homologyLGL/ now also contains 
+```
+homology.lgl  #The complete network layout, created from the arrangement of the subnetworks
+final.coords  #Node coordinates
+final.mst.lgl #The minimal spanning tree version of the network layout
+```
 
 
 
