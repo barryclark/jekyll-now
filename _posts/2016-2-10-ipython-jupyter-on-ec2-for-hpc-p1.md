@@ -2,7 +2,7 @@
 layout: post
 title: IPython Jupyter on EC2 for HPC, Part 1
 ---
-**NOTE: I've made my AMI created using this procedure available publicly!  If you want to get going with IPython/Jupyter on EC2 super quickly and without the terminal see my guide [here]({{ site.baseurl }}/Jupyter-on-Amazon-EC2-Quick-Start/).**
+**NOTE: I've made my AMI created using this procedure available publicly!  If you want to get going with IPython/Jupyter on EC2 super quickly and with minimal terminal see my guide [here]({{ site.baseurl }}/Jupyter-on-Amazon-EC2-Quick-Start/).**
 
 I attempted to use random forests as a first pass for [The Winton Stock Market Challenge](https://www.kaggle.com/c/the-winton-stock-market-challenge) on Kaggle and found that for any reasonable number of trees in the forest, I was unable to train the data in a reasonable amount of time.  Even though the solution itself was extremely unsuccessful, here's a short guide on how to do set up an EC2 instance to do large computations using Jupyter.
 
@@ -41,9 +41,10 @@ Secret Access Key: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
 
 6. Choose Download Credentials, and store the keys in a secure location.
 
-	   Your secret key will no longer be available through the AWS Management Console; you will have the only copy. Keep it confidential in order to protect your account, and never email it. Do not share it outside your organization, even if an inquiry appears to come from AWS or Amazon.com. No one who legitimately represents Amazon will ever ask you for your secret key.
+Your secret key will no longer be available through the AWS Management Console; you will have the only copy. Keep it confidential in order to protect your account, and never email it. Do not share it outside your organization, even if an inquiry appears to come from AWS or Amazon.com. No one who legitimately represents Amazon will ever ask you for your secret key.
 
 ##Attach Managed Policies
+
 Copied from [here](http://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-using.html#attach-managed-policy-console)
 
 1. Sign in to the AWS Management Console and open the IAM console at https://console.aws.amazon.com/iam/.
@@ -273,20 +274,7 @@ Save and exit, then enter the following commands:
 $ cd ~
 $ mkdir Notebooks
 $ cd Notebooks
-$ jupyter notebook
 ```
 
-#Run Jupyter from the Browser
-Now you can fire up your browser and navigate to your instance:
-
-https://ec2-your-instance-details-from-above.compute.amazonaws.com:8888
-
-You will get a warning that the connection is not private, but this is because you created the certificate above.  Select Proceed.
-
-![_config.yml]({{ site.baseurl }}/images/privacyerror.png)
-
-
-Enter 'ec2jupyter' as the password to access Jupyter!
-
-
-![_config.yml]({{ site.baseurl }}/images/login.png)
+#What's Next?
+You've now finished setting up a (hopefully) fully functional EC2 instance.  Check out [Part 2]({{ site.baseurl }}/ipython-jupyter-on-ec2-for-hpc-p2/) to see how to get Jupyter running in your browser and upload your notebooks and datasets!
