@@ -6,6 +6,8 @@ The short version of it is to simply clone this repo into (a) a repo of your own
 
 Support for Categories and Tags were inspired by [this blog entry](http://www.minddust.com/post/tags-and-categories-on-github-pages/). A list of the defined categories and tags can be found at `_data/categories.yml` and `_data\tags.yml` respectively. If you want to add new categories or tags, you need to add them to the corresponding `.yml` file and add the matching template into the `meta/category` or `meta/tag` directories. Please do not go overboard with adding new categories and tags but try to stay within the ones we have. On the other hand - if you feel strongly about adding one, feel free to submit a pull request.
 
+Author support was inspired by [this blog entry](https://blog.sorryapp.com/blogging-with-jekyll/2014/02/06/adding-authors-to-your-jekyll-site.html). In order to add information on a new author, edit the `_data/authors.yml` file, then use the new key as `author` link in the posts. If an author cannot be found in `authors.yml`, the content of the `author` tag will be used verbose. In that case, no links to any social media (Twitter, Github and LinkedIn are currently supported) will be included.
+
 If you want to find out more about using `github-pages` for blogging or want to improve our blog the following links might be good starting points
 
 * [Jekyll documentation, i.e. how to include images](http://jekyllrb.com/docs/posts/)
