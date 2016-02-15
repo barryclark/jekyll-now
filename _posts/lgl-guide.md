@@ -19,7 +19,13 @@ As nicely outlined by in Martin Krzywinski's  [Hive Plot pag](http://www.hiveplo
 
 
 #### LGL tips
-As there aren't many resources on using the Large Graph Layout, I wanted to do a quick post on my tips for using the software. This post is meant to supplement the [main FAQ](http://www.opte.org/lgl/) and the [README](https://github.com/TheOpteProject/LGL/blob/master/README.txt). LGL is mainly maintained by the Opte Project to map the internet, and the most recent version of the software can be cloned from their [ Github](https://github.com/TheOpteProject/LGL), with git clone https://github.com/TheOpteProject/LGL.git . 
+As there aren't many resources on using the Large Graph Layout, I wanted to do a quick post on my tips for using the software. This post is meant to supplement the [main FAQ](http://www.opte.org/lgl/) and the [README](https://github.com/TheOpteProject/LGL/blob/master/README.txt). LGL is mainly maintained by the Opte Project to map the internet, and the most recent version of the software can be cloned from their [ Github](https://github.com/TheOpteProject/LGL), with git clone https://github.com/TheOpteProject/LGL.git.
+
+After installation, modify line 82 in lgl.1.d3/bin/lgl.pl to the location of the LGL perls directory
+```
+#For example
+use lib 'home/claire/lgl.1.D3/perls/';
+```
 
 ##### Input format (.ncol)
 The input format to LGL is called .ncol, which is just a space separated list of two connected verteces with an optional third column of weight. 
@@ -114,26 +120,27 @@ protein5 1 0 0
 
 ##### Running LGL
 
-I put all these files in one folder. This folder will also be the destination for generated LGLs.
+I put all the above files in one folder, /homologyLGL. This folder will also be the destination for generated LGLs. 
 Navigating to the lgl.x.x/ directory, modify the conf_file for a particular run.
-Open conf_file and make edits:
 ```
-tmpdir = '/path/to/outputdirectory'
-inputfile='homology.ncol'
+#Locations of the folder for this run, and the .ncol file
+tmpdir = 'home/claire/homologyLGL'
+inputfile='home/claire/homologyLGL/homology.ncol'
+
+#Generate a full LGL, not just the minimal spanning tree (MST)
+treelayout = '1'
+usemst = '1'
+
+#No edgeweight, so:
+useoriginalweights = '0'
 ```
 
-
-Change destination folder
-Change mst
-
+Then just run lgl
 ```
-lgl.pl
+./bin/lgl.pl conf_file
 ```
+It took about 5 seconds to create my 3 line network, but it can take hours depending on the size of the network/speed of the computer. 
 
-
-
-
-lgl.pl can take hours depending on the size of the network. 
 
 
 ##### Conclusion
