@@ -11,4 +11,8 @@ categories: culture-collection
 * Find out more on [Wikipedia](https://en.wikipedia.org/wiki/Slime_mold) and [MicrobeWiki](http://biowiki.kenyon.edu/index.php/Physarum_Polycephalum)
 * Bought on eBay
 
+## Fun
+
+* [Maze puzzle](https://www.youtube.com/watch?v=czk4xgdhdY4P)
+
 [Back to Culture Collection](/bha3/annex/culture-collection/)
