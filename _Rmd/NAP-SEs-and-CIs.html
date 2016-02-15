@@ -66,7 +66,7 @@ img {
 
 
 <p><a href="http://doi.org/10.1016/j.beth.2008.10.006">Parker and Vannest (2009)</a> proposed non-overlap of all pairs (NAP) as an effect size index for use in single-case research. NAP is defined in terms of all pair-wise comparisons between the data points in two different phases for a given case (i.e., a treatment phase versus a baseline phase). Specifically, it is the proportion of all such pair-wise comparisons where the treatment phase observation exceeds the baseline phase observation, with pairs that are exactly tied getting a weight of 1/2. NAP belongs to the family of non-overlap measures, which also includes the percentage of non-overlapping data, the improvement rate difference, and several other indices. It is exactly equivalent to <a href="http://doi.org/10.2307/1165329">Vargha and Delaney’s (2000)</a> modified Common Language Effect Size and has been proposed as an effect size index in other contexts too (e.g., <a href="http://doi.org/10.1002/sim.2256">Acion, Peterson, Temple, &amp; Arndt, 2006</a>).</p>
-<p>The developers of NAP have created a <a href="http://singlecaseresearch.org/calculators">web-based tool</a> for calculating it (as well as several other non-overlap indices), and I have the impression that the tool is fairly widely used. For example, <a href="http://doi.org/10.1007%2Fs10864-013-9189-x">Roth, Gillis, and DiGennaro Reed (2014)</a> and <a href="http://doi.org/10.1007/s10803-015-2373-1">Whalon, Conroy, Martinez, and Welch (2015)</a> both used NAP in their meta-analyses of single-case research, and both noted that they used <a href="http://www.singlecaseresearch.org/calculators/nap">singlecaseresearch.org</a> for calculating the effect size measure. Given that the web tool is being used, it is worth scrutinizing the methods behind the calculations it reports. <strong>As of this writing, the standard error and confidence intervals reported along with the NAP statistic are incorrect, and should not be trusted.</strong> After introducing a bit of notation, I’ll demonstrate why the existing methods are deficient. I’ll also suggest some methods for calculating standard errors and confidence intervals that are potentially more accurate.</p>
+<p>The developers of NAP have created a <a href="http://singlecaseresearch.org/calculators">web-based tool</a> for calculating it (as well as several other non-overlap indices), and I have the impression that the tool is fairly widely used. For example, <a href="http://doi.org/10.1007%2Fs10864-013-9189-x">Roth, Gillis, and DiGennaro Reed (2014)</a> and <a href="http://doi.org/10.1007/s10803-015-2373-1">Whalon, Conroy, Martinez, and Welch (2015)</a> both used NAP in their meta-analyses of single-case research, and both noted that they used <a href="http://www.singlecaseresearch.org/calculators/nap">singlecaseresearch.org</a> for calculating the effect size measure. Given that the web tool is being used, it is worth scrutinizing the methods behind the calculations it reports. As of this writing, the standard error and confidence intervals reported along with the NAP statistic are incorrect, and should not be trusted. After introducing a bit of notation, I’ll demonstrate why the existing methods are deficient. I’ll also suggest some methods for calculating standard errors and confidence intervals that are potentially more accurate.</p>
 <div id="preliminaries" class="section level2">
 <h2>Preliminaries</h2>
 <p>Suppose that we have data from the baseline phase and treatment phase for a single case. Let <span class="math">\(m\)</span> denote the number of baseline observations and <span class="math">\(n\)</span> denote the number of treatment phase observations. Let <span class="math">\(y^A_1,...,y^A_m\)</span> denote the baseline phase data and <span class="math">\(y^B_1,...,y^B_n\)</span> denote the treatment phase data. Then NAP is calculated as <span class="math">\[
@@ -98,10 +98,10 @@ NAP(yA, yB)</code></pre>
 \text{SE}_{\text{Tau}} = \sqrt{\frac{m + n + 1}{3 m n}}.
 \]</span> This formula appears to actually be the standard error for Tau, rather than for NAP. Since <span class="math">\(\text{NAP} = \left(\text{Tau} + 1\right) / 2\)</span>, the standard error for NAP should be half as large: <span class="math">\[
 \text{SE}_{null} = \sqrt{\frac{m + n + 1}{12 m n}}
-\]</span> (cf. <a href="http://dx.doi.org/10.1037/1082-989X.6.2.135">Grissom &amp; Kim, 2001, p. 141</a>). However, even this formula is not always correct. It is valid only when the treatment phase data are drawn from the same distribution as the baseline phase data—that is, when the treatment has no effect on the outcome—and when the observations are all mutually independent. I’ve therefore denoted it as <span class="math">\(\text{SE}_{null}\)</span>.</p>
+\]</span> (cf. <a href="http://dx.doi.org/10.1037/1082-989X.6.2.135">Grissom &amp; Kim, 2001, p. 141</a>). However, even the latter formula is not always correct. It is valid only when the treatment phase data are drawn from the same distribution as the baseline phase data—that is, when the treatment has no effect on the outcome—and when the observations are all mutually independent. I’ve therefore denoted it as <span class="math">\(\text{SE}_{null}\)</span>.</p>
 <div id="other-standard-error-estimators" class="section level3">
 <h3>Other standard error estimators</h3>
-<p>Because an equivalent effect size measure is used in other contexts like clinical medicine, there has actually been a fair bit of research into better approaches for assessing the uncertainty in NAP. <a href="http://dx.doi.org/10.1148/radiology.143.1.7063747">Hanley and McNeil (1982)</a> proposed to estimate the sampling variance of NAP as follows. Their method was designed for continuous outcome measures, where exact ties are impossible. Modifying it slightly (and in entirely ad hoc fashion), let <span class="math">\[
+<p>Because an equivalent effect size measure is used in other contexts like clinical medicine, there has actually been a fair bit of research into better approaches for assessing the uncertainty in NAP. <a href="http://dx.doi.org/10.1148/radiology.143.1.7063747">Hanley and McNeil (1982)</a> proposed an estimator for the sampling variance of NAP that is designed for continuous outcome measures, where exact ties are impossible. Modifying it slightly (and in entirely ad hoc fashion) to account for ties, let <span class="math">\[
 \begin{aligned}
 Q_1 &amp;= \frac{1}{m n^2}\sum_{i=1}^m \left[\sum_{j=1}^n I\left(y^B_j &gt; y^A_i\right) + 0.5 I\left(y^B_j = y^A_i\right)\right]^2 \\
 Q_2 &amp;= \frac{1}{m^2 n}\sum_{j=1}^n \left[\sum_{i=1}^m I\left(y^B_j &gt; y^A_i\right) + 0.5 I\left(y^B_j = y^A_i\right)\right]^2.
@@ -109,7 +109,7 @@ Q_2 &amp;= \frac{1}{m^2 n}\sum_{j=1}^n \left[\sum_{i=1}^m I\left(y^B_j &gt; y^A_
 \]</span> Then the Hanley-McNeil variance estimator is <span class="math">\[
 V_{HM} = \frac{1}{mn} \left[\text{NAP}\left(1 - \text{NAP}\right) + (n - 1)\left(Q_1 - \text{NAP}^2\right) + (m - 1)\left(Q_2 - \text{NAP}^2\right)\right],
 \]</span> with <span class="math">\(\text{SE}_{HM} = \sqrt{V_{HM}}\)</span>.</p>
-<p>The same authors also propose a different estimator, which is based on the assumption that the outcome data are exponentially distributed. Even though this is a strong and probably often inappropriate assumption, there is nonetheless evidence that the other estimator works even for other distributions. <a href="http://dx.doi.org/10.1002/sim.2324">Newcombe (2006)</a> suggested a further modification of their estimator, and I’ll describe his version. Let <span class="math">\(h = (m + n) / 2 - 1\)</span>. Then <span class="math">\[
+<p>The same authors also propose a different estimator, which is based on the assumption that the outcome data are exponentially distributed. Even though this is a strong and often inappropriate assumption, there is evidence that this estimator works even for other, non-exponential distributions. <a href="http://dx.doi.org/10.1002/sim.2324">Newcombe (2006)</a> suggested a further modification of their estimator, and I’ll describe his version. Let <span class="math">\(h = (m + n) / 2 - 1\)</span>. Then <span class="math">\[
 V_{New} = \frac{h}{mn} \text{NAP}\left(1 - \text{NAP}\right)\left[\frac{1}{h} + \frac{1 - \text{NAP}}{2 - \text{NAP}} + \frac{\text{NAP}}{1 + \text{NAP}}\right],
 \]</span> with <span class="math">\(\text{SE}_{New} = \sqrt{V_{New}}\)</span>.</p>
 <p>Here are R functions to calculate each of these variance estimators.</p>
@@ -135,7 +135,7 @@ sqrt(V_HM(yA, yB))</code></pre>
 <pre><code>## [1] 0.03483351</code></pre>
 <pre class="r"><code>sqrt(V_New(yA, yB))</code></pre>
 <pre><code>## [1] 0.04370206</code></pre>
-<p>For the example dataset, the Newcombe estimator yields a standard error that is about 25% larger than the Hanley-McNeil estimator.</p>
+<p>For the worked example dataset from Parker and Vannest, the Newcombe estimator yields a standard error that is about 25% larger than the Hanley-McNeil estimator. Both of these are substantially smaller than the null standard error, which in this example is <span class="math">\(\text{SE}_{null} = 0.129\)</span>.</p>
 </div>
 <div id="a-small-simulation" class="section level3">
 <h3>A small simulation</h3>
@@ -178,11 +178,25 @@ ggplot(NAP_sim, aes(theta, val, color = sd)) +
 </div>
 <div id="confidence-intervals" class="section level2">
 <h2>Confidence intervals</h2>
-<p>The webtool at <a href="http://www.singlecaseresearch.org/calculators/nap">singlecaseresearch.org</a> also reports 85% and 90% confidence intervals for NAP. These confidence intervals appear to have the same two problems as the standard errors. First, they are constructed as CIs for Tau rather than for NAP. For the <span class="math">\(100\% \times (1 - \alpha)\)</span> CI, let <span class="math">\(z(\alpha / 2)\)</span> be the appropriate critical value from a standard normal distribution. The CIs reported by the webtool are given by <span class="math">\[
+<p>The webtool at <a href="http://www.singlecaseresearch.org/calculators/nap">singlecaseresearch.org</a> also reports 85% and 90% confidence intervals for NAP. These confidence intervals appear to have the same two problems as the standard errors. First, they are constructed as CIs for Tau rather than for NAP. For the <span class="math">\(100\% \times (1 - \alpha)\)</span> CI, let <span class="math">\(z_{\alpha / 2}\)</span> be the appropriate critical value from a standard normal distribution. The CIs reported by the webtool are given by <span class="math">\[
 \text{Tau} \pm \text{SE}_{\text{Tau}} \times z(\alpha/2). 
-\]</span> This is probably just an oversight in the programming, which would be corrected by instead using <span class="math">\[
-\text{NAP} \pm \text{SE}_{null} \times z(\alpha / 2).
-\]</span> I’ll call this the SCR confidence interval. Funnily enough, the upper bound of the SCR CI is the same as the upper bound of the Tau CI. However, the lower bound is going to be quite a bit larger than the lower bound for the Tau CI. Even so, it seems likely that this CI has very poor coverage properties because it is based on <span class="math">\(\text{SE}_{null}\)</span>, which can drastically over-estimate the standard error of NAP for non-null values.</p>
+\]</span> This is probably just an oversight in the programming, which could be corrected by instead using <span class="math">\[
+\text{NAP} \pm \text{SE}_{null} \times z_{\alpha / 2}.
+\]</span> I’ll call this the null confidence interval. Funnily enough, the upper bound of the SCR CI is the same as the upper bound of the Tau CI. However, the lower bound is going to be quite a bit larger than the lower bound for the Tau CI.</p>
+<p>The second problem is that even the corrected CI has very poor coverage properties because it is based on <span class="math">\(\text{SE}_{null}\)</span>, which can drastically over-estimate the standard error of NAP for non-null values.</p>
+<div id="other-confidence-intervals" class="section level3">
+<h3>Other confidence intervals</h3>
+<p>As I noted above, there has been a fair amount of previous research into how to construct CIs for <span class="math">\(\theta\)</span>, the parameter estimated by NAP. As is often the case with these sorts of problems, there are many different methods available, scattered across the literature. Fortunately, there are (at least) two fairly comprehensive simulation studies that compare the performance of various methods under a wide range of conditions. <a href="http://dx.doi.org/10.1002/sim.2324">Newcombe (2006)</a> examined a range of methods based on inverting Wald-type test statistics (which give CIs of the form <span class="math">\(\text{estimate} \pm \text{SE} \times z_{\alpha / 2}\)</span>, where <span class="math">\(\text{SE}\)</span> is some standard error estimate) and score-based methods (in which the standard error is estimated using the candidate parameter value). Based on an extensive simulation, he suggested a score-based method in which the end-points of confidence interval are defined the values of <span class="math">\(\theta\)</span> that satisfy: <span class="math">\[
+(\text{NAP} - \theta)^2 = \frac{z^2_{\alpha / 2} h \theta (1 - \theta)}{mn}\left[\frac{1}{h} + \frac{1 - \theta}{2 - \theta} + \frac{\theta}{1 + \theta}\right],
+\]</span> where <span class="math">\(h = (m + n) / 2 - 1\)</span>. This equation is a fourth-degree polynomial in <span class="math">\(\theta\)</span>, which can be solved using numerical methods.</p>
+<p><a href="http://dx.doi.org/10.1080/00273171.2012.658329">Ruscio and Mullen (2012)</a></p>
+</div>
+<div id="another-small-simulation" class="section level3">
+<h3>Another small simulation</h3>
+</div>
+</div>
+<div id="further-thoughts" class="section level2">
+<h2>Further thoughts</h2>
 </div>
 
 
