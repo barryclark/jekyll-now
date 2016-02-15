@@ -3,7 +3,6 @@ layout: post
 title: 使用Fastlane快速部署
 ---
 
-# 前言
 [Fastlane](https://github.com/fastlane/fastlane) 是一套提供給Mac & iOS Developer的整合部署工具，提供使用者藉由預先寫好lane script方便的進行完整部署流程。Fastlane內建了許多常見的tool以及封裝過的tool，大致上可分為以下幾類：
 
 * Building
@@ -32,5 +31,5 @@ title: 使用Fastlane快速部署
 	* 在`fastlane init`過程中，fastlane會要求輸入AppleID和密碼，這個資訊會被儲存在本機的keychain中，並且在之後需要用到憑證時時自動下載相關的Certificates和Provisioning Profiles。
 
 # 使用
-## 測試
+## 編寫Script
 Fastlane將<b>xcodebuild test</b>封裝成[Scan](https://github.com/fastlane/scan)，Scan讓你可以用比較簡單的方式在command line進行測試。
