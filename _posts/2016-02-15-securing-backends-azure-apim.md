@@ -25,6 +25,9 @@ We will check out the following possibilities:
 * Virtual Networks and Network Security Groups
 * VPNs
 
+What is not part of this blog post is how you also can use OAuth related techniques to secure backend services. Focus of this article is how to technically secure the backends, not using means such as OAuth.
+
+
 ### Security by obscurity
 
 For some very non-critical backend services running in the same Azure region (and only in those cases), it may be enough to secure the backend via obscurity; some have suggested that it can be enough to check for the `Ocp-Apim-Subscription-Key` header which will by default be passed on from the client via the API gateway to the backend service (unless you filter it out via some policy).
