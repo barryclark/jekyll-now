@@ -116,6 +116,13 @@ protein5 1 0 0
 
 I put all these files in one folder. This folder will also be the destination for generated LGLs.
 Navigating to the lgl.x.x/ directory, modify the conf_file for a particular run.
+Open conf_file and make edits:
+```
+tmpdir = '/path/to/outputdirectory'
+inputfile='homology.ncol'
+```
+
+
 Change destination folder
 Change mst
 
