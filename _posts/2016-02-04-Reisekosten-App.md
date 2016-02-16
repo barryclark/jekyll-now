@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Extending On-Premise Producte With Mobile Apps
+title: Extending On-Premise Products With Mobile Apps
 subtitle: Modernizing on-premise application using Azure Service Bus Relay
 category: general
 tags: [mobile, custdev]
