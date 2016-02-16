@@ -7,9 +7,9 @@ title: LGL - the Large Graph Layout
 
 ### The Large Graph Layout (LGL)
 
-Last summer, I had a 500,000 node/million connection network, and no way to look at its structure. Cytoscape maxed out at about 100,000 connections, and for some reason which I can't remember now,  I never got my network to load on the million node capable OpenOrd Layout for Gephi. 
+Last summer, I had a 500,000 node/million edge network, and no way to look at its structure. Cytoscape maxed out at about 100,000 edges, and for some reason which I can't remember now,  I never got my network to load on the million node capable OpenOrd Layout for Gephi. 
 
-As nicely outlined by in Martin Krzywinski's  [Hive Plot pag](http://www.hiveplot.net/), even if a software is capable of laying out a giant network, it is more than likely to create an unintepretable hairball. The Large Graph Layout (LGL) was created by Alex Adai in [Edward Marcotte's lab](http://marcottelab.org/index.php/Main_Page) to visualize large networks while avoiding hairballs. The algorithm itself is described in the original paper, ["LGL: Creating a Map of Protein Function with an Algorithm for Visualizing Very Large Biological Networks"](http://www.marcottelab.org/paper-pdfs/jmb-lgl.pdf). Basically, the algorithm first discovers disconnected clusters in the data, and then lays them out indidually. LGL works radially, where each cluster begins with a seed node, and new connections are added on spheres which are force directed outwards from the existing cluster.          
+As nicely outlined by in Martin Krzywinski's  [Hive Plot pag](http://www.hiveplot.net/), even if a software is capable of laying out a giant network, it is more than likely to create an unintepretable hairball. The Large Graph Layout (LGL) was created by Alex Adai in [Edward Marcotte's lab](http://marcottelab.org/index.php/Main_Page) to visualize large networks while avoiding hairballs. The algorithm itself is described in the original paper, ["LGL: Creating a Map of Protein Function with an Algorithm for Visualizing Very Large Biological Networks"](http://www.marcottelab.org/paper-pdfs/jmb-lgl.pdf). Basically, the algorithm first discovers disconnected clusters in the data, and then lays them out indidually. LGL works radially, where each cluster begins with a seed node, and new edges are added on spheres which are force directed outwards from the existing cluster.          
 
 
 #### LGL Examples 
@@ -54,9 +54,9 @@ vertex3         # Will cause error
 
 ##### Coloring format (.colors)
 
-In order to color connections between nodes, each pairwise connection must have an R G B value. To color individual verteces, each vertex must have and R G B value. RGB values must be scaled to one 1, so just divide each number of an RGB value by 255. The rules for formatting an .ncol file apply here too, i.e. no blanks, no empty lines, no redundancy , etc. 
+In order to color edgess between nodes, each pairwise edge must have an R G B value. To color individual verteces, each vertex must have and R G B value. RGB values must be scaled to one 1, so just divide each number of an RGB value by 255. The rules for formatting an .ncol file apply here too, i.e. no blanks, no empty lines, no redundancy , etc. 
 ```
-$ cat example.connection.colors
+$ cat example.edge.colors
 vertex1 vertex2 1.0 0.5 0.0 
 vertex3 vertex4 0.0 1.0 0.8 
 vertex5 vertex6 0.1 0.1 1.0
@@ -72,7 +72,7 @@ vertex6 0.1 0.1 1.0
 
 #### An LGL workflow
 
-I would begin by making a file of all pairwise connections and their associated traits. It can be difficult to keep .ncol and .color files in sync, and so it will cause fewest headaches to begin with one file containing all the information to create both. 
+I would begin by making a file of all pairwise edges and their associated traits. It can be difficult to keep .ncol and .color files in sync, and so it will cause fewest headaches to begin with one file containing all the information to create both. 
 
 ```
 $ cat homology.txt
@@ -90,23 +90,23 @@ protein1 protein2
 protein3 protein4
 protein2 protein5
 ```
-Then choose a trait, and create a connections.colors file. I generally select the first two columns, and a trait to color by, then just use sed to replace the trait values with the RGB value I want to color type connection by.
+Then choose a trait, and create a edge.colors file. I generally select the first two columns, and a trait to color by, then just use sed to replace the trait values with the RGB value I want to color type of edge by.
 
-In this file, I want to color all connections predicted with the algorithm hmmscan red, and all connections found with blastp blue. 
+In this file, I want to color all edges predicted with the algorithm hmmscan red, and all edges found with blastp blue. 
 ```
-$ awk '{print $1, $2, $3} homology.txt  | awk '{if(NR>1)print}' >  homology_alg.colors.tmp
-$ sed -i 's/hmmer/1 0 0/g' homology_algcolors.tmp
-$ sed 's/blastp/0 0 1/g' homology_alg.colors.tmp > homology_algorithm.connection.colors
-$ cat homology_algorithm.connection.colors
-protein1 protein2 1 0 0
-protein3 protein4 0 0 1
-protein2 protein5 0 0 1
+$ awk '{print $1, $2, $3}' homology.txt  | awk '{if(NR>1)print}' >  homology_alg.colors.tmp
+$ sed -i 's/hmmscan/0 1 0/g' homology_alg.colors.tmp
+$ sed 's/blastp/0 0 0/g' homology_alg.colors.tmp > homology_algorithm.edge.colors
+$ cat homology_algorithm.edge.colors
+protein1 protein2 0 0 0
+protein3 protein4 0 0 0
+protein2 protein5 0 1 0
 ```
 I could also color each vertex by some trait. In this file format, each vertex must have an associated RGB value. In this case, I want to color ever human protein red, and proteins from every other species blue. 
 
 ```
-$ awk '{print $1, $6} homology.txt  | awk '{if(NR>1)print}'`> vertex1_species.tmp
-$ awk '{print $2, $7} homology.txt  | awk '{if(NR>1)print}'`> vertex2_species.tmp
+$ awk '{print $1, $6}' homology.txt  | awk '{if(NR>1)print}'> vertex1_species.tmp
+$ awk '{print $2, $7}' homology.txt  | awk '{if(NR>1)print}'> vertex2_species.tmp
 $ cat vertex1_species.tmp vertex2_species.tmp | sort -u > homology_human.vertex.colors.tmp
 $ sed -i 's/human/1 0 0/' homology_human.vertex.colors.tmp
 $ sed 's/mouse\|wheat\|rat/0 0 1/' homology_human.vertex.colors.tmp > homology_human.vertex.colors
@@ -161,11 +161,11 @@ In order to view the LGL, run the lglview.jar program
 ```
 java -jar ~/lgl.1.D3/lglview.jar
 ```
-And load the lgl, and the node coordinates (File > Open .lgl file, File > Open 2D coords file)
+And load the lgl, and the node coordinates (File > Open .lgl file > homology.lgl, File > Open 2D coords file > final.coords)
 
 here, lgl picture
 
-I also load my vertex colors to color all human proteins red, and all others blue (File > Open Vertex Color File) and my edge color file to color all the connections predicted with hmmer green, and with blastp black (File > Open Edge Color File). I change ther vertex size too, since the default is small. 
+I also load my vertex colors to color all human proteins red, and all others blue (File > Open Vertex Color File > homology_algorithm.edge.colors) and my edge color file to color all the edges predicted with hmmscan green, and with blastp black (File > Open Edge Color File > homology_human.vertex.colors). I change ther vertex size too, since the default is small. 
 
 here, colored lgl picture
 
