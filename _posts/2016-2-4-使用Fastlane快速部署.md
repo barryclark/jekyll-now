@@ -8,23 +8,21 @@ title: 使用Fastlane快速部署
 
 為了解決這個問題，我們希望將部署的流程自動化，並且讓PM也有辦法自行決定部署與測試。
 
-[Fastlane](https://github.com/fastlane/fastlane) 是一套提供給Mac & iOS Developer的整合部署工具，提供使用者藉由預先寫好lane script方便的進行完整部署流程。Fastlane內建了許多常見的tool以及封裝過的tool，大致上可分為以下幾類：
+[Fastlane](https://github.com/fastlane/fastlane) 是一套提供給Mac & iOS Developer的整合部署工具，提供使用者藉由預先寫好lane script方便的進行完整部署流程。Fastlane整合了許多常見的tool讓使我們可以導入部署流程，包含的工具大致上可分為以下幾類：
 
 * Building
 * Testing
-* Deploying
-* Modifying Project
-* Developer Portal
-* Using git
-* Using mercurial
-* Notifications
-* Misc
+* Deploying ...and more
 
-舉例來說，當我有一個新版本要發佈到App store上時，只要在command line輸入以下指令：<br>
+（更多詳見： [Fastlane Actions](https://github.com/fastlane/fastlane/blob/master/docs/Actions.md)）
+
+舉例來說，以前iCHEF有一個新版本要發佈到App store上時，我們的做法是先打開XCode，按下Archieve，然後選擇要上傳的封裝檔，選擇Submit to App store，選擇team ID等等等；而當我們安裝Fastlane並且撰寫好部署的Script，往後當需要發佈時只需要在command line輸入以下指令：<br>
 
 	$ fastlane appstore
 
-簡化後的指令讓即使不懂技術的人也可以簡單地完成測試與部屬的工作，減少
+便可以等待Fastlane自動幫我們完成部署的步驟。同時，簡化後的指令讓即使不懂技術的人也可以簡單地完成測試與部屬的工作，減少在部署這件事情上對工程師的依賴。
+
+接下來，我們就來介紹如何安裝及使用Fastlane。
 # 安裝
 fastlane是一套Ruby-base的framework，我們假設你已經安裝過`gem`這個插件管理系統，如果沒有你可以參考 [RubyGems](https://rubygems.org/)。
 
@@ -112,28 +110,27 @@ platform :ios do
   end
 end
 ```
-我們可以把這個檔案切成三個部分來看
+我們可以把這個檔案切成三個部分來看：
 ### before_all
 顧名思義，寫在`before_all`這個block內的指令在每一個lane script執行前都會先呼叫一次。
 
 以上面的程式碼為例，iCHEF使用CocoaPods來管理專案使用的第三方套件，在測試、包版或發佈前，我必須確保我的專案有建立好cocoapods相關的dependency，所以我就會在`before_all`內呼叫`cocoapods`來完成這個任務。
 
-當你在`before_all`內呼叫了`cocoapods`，其實代表的是你在所有動作前執行了`pod install`這件事。Fastlane支援許多流行的第三方插件，並且將它們封裝成方便使用的格式（更多詳見： [Fastlane Actions](https://github.com/fastlane/fastlane/blob/master/docs/Actions.md)）。
+當你在`before_all`內呼叫了`cocoapods`，其實代表的是你在所有動作前執行了`pod install`這件事。Fastlane支援許多流行的第三方插件（比如CocoaPods、XCTool、Appium、TestFlight、Slack等等），並且將它們封裝成方便使用的格式。
 ### lane :LANE_NAME
-在lane這個block內的指令就是我們要fastlane幫我們做的事情。我可以撰寫多個lane script，讓test、archieve、deploy執行不同的任務。
+在lane這個block內的指令就是我們要fastlane幫我們做的事情。我可以撰寫多個lane script，讓test、archieve、deploy執行不同的任務。以上面的程式碼為例，我寫了`lane :test`和`lane :build_RC`兩段lane script，它們負責：
 
-以上面的程式碼為例，我寫了`lane :test`和`lane :build_RC`兩個lane script。
-
-* `lane :test`幫我處理測試流程，並且在測試後輸出測試結果。
-* `lane :build_RC`幫我處理in-house distribution的流程，最後將包好的ipa輸出至指定的資料夾。
+* `lane :test`：幫我處理測試流程，並且在測試後輸出測試結果。
+* `lane :build_RC`：幫我處理in-house distribution的流程，最後將包好的ipa輸出至指定的資料夾。
 
 之後當我需要測試時，只需要開啟command line，前往專案資料夾並且呼叫`fastlane test`，它就會自動進行測試及發佈結果的工作。
 
 ### after_all
-跟before_all類似，寫在after_all裡代表在執行完任意的lane script後都要執行的動作。
+跟before\_all類似，寫在after\_all裡代表在執行完任意的lane script後都要執行的動作。
 
 # 執行
 1. `$ cd YOUR_PROJECT_PATH`
 2. `$ fastlane YOUR_LANE_NAME`
 
-It's all DONE! <b>AMAZING!!!</b>
+# 下一步
+接下來，你就可以依照需求編寫自己的部署流程，並且享受fastlane簡潔快速的部署方式！
