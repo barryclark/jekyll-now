@@ -75,15 +75,15 @@ g. open all your files in <a href="https://www.sublimetext.com">sublime</a>
 h. edit _config.yml - my settings:
 
 # Site settings
-title: howtoguy.tv
-email: glen@howtoguy.tv
+title: howtoguy.tv<br>
+email: glen@howtoguy.tv<br>
 description: > # this means to ignore newlines until "baseurl:"
-  Howtoguy knows everything. Howtoguy can teach you how to do anything. Need to know how to test and replace a condensor on a '77 Kawasaki 650 motorcycle or build a wordpress website? Howtoguy has you covered.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://howtoguy.tv" # the base hostname & protocol for your site
-twitter_username: fotozfotoz
-github_username:  howtoguy
-port: 4001
+  Howtoguy knows everything. Howtoguy can teach you how to do anything. Need to know how to test and replace a condensor on a '77 Kawasaki 650 motorcycle or build a wordpress website? Howtoguy has you covered.<br>
+baseurl: "" # the subpath of your site, e.g. /blog<br>
+url: "http://howtoguy.tv" # the base hostname & protocol for your site<br>
+twitter_username: fotozfotoz<br>
+github_username:  howtoguy<br>
+port: 4001<br>
 
 # Build settings
 markdown: kramdown
