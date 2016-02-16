@@ -9,4 +9,4 @@ I'm excited to start blogging again, now as a Data Scientist, on this blog: Alex
 
 Please comment away, as you see fit, when I post substantative posts in the future.
 
-Creating this blog was super easy, thanks to GitHub Pages and Jekyll.  If you're interested in following a similar path, I followed Barry Clarks' tutorial, [Build A Blow With Jekyll And GitHub Pages](https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/).
+Creating this blog was super easy, thanks to GitHub Pages and Jekyll.  If you're interested in following a similar path, I followed Barry Clarks' tutorial, [Build A Blog With Jekyll And GitHub Pages](https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/).
