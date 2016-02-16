@@ -157,6 +157,17 @@ final.coords  #Node coordinates
 final.mst.lgl #The minimal spanning tree version of the network layout
 ```
 
+In order to view the LGL, run the lglview.jar program
+```
+java -jar ~/lgl.1.D3/lglview.jar
+```
+And load the lgl, and the node coordinates (File > Open .lgl file, File > Open 2D coords file)
+
+here, lgl picture
+
+I also load my vertex colors to color all human proteins red, and all others blue (File > Open Vertex Color File) and my edge color file to color all the connections predicted with hmmer green, and with blastp black (File > Open Edge Color File). I change ther vertex size too, since the default is small. 
+
+here, colored lgl picture
 
 
 ##### Conclusion
