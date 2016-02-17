@@ -16,16 +16,29 @@ Here are some of my technical strengths:
 - Pandas
 - Numpy
 - SQL
+- ML basics (linear and logistic regression, k-means, knn, etc)
 
 These are some technologies and areas I've acquired some skill in, and I'm plan to continue learning about:
 
 - Bokeh
+- Plot.ly with Python
 - Flask
 - Heroku
 - Apache Spark
 - Scala
 - [Project Euler](https://projecteuler.net/){:target="_blank"}(currently I've solved 29 problems, both the Project Euler versions and the more computationally challenging versions on HackerRank)
 - MapReduce
+- more ML
+
+And here are some technologies and topics I aspire to learn about, but know very little!
+
+- C
+- [Spark + H2O (Sparkling Water!)](http://www.h2o.ai/product/sparkling-water/){:target="_blank"}
+- D3.js
+- TDD in Python
+- Formal mathematical formulations of ML
+- Deep Learning
+- and Mihai tells me I should learn **Node.js**
 
 I like to learn and learn and learn, so I expect to keep adding to this list!
 
@@ -35,6 +48,6 @@ I like to learn and learn and learn, so I expect to keep adding to this list!
 - [alexcthompson on LinkedIn](https://www.linkedin.com/in/alexcthompson){:target="_blank"}
 - [alexcthompson on HackerRank](hackerrank.com/alexcthompson){:target="_blank"}
 
-### Contact me
+## Contact me
 
 [alexcthompson@gmail.com](mailto:alexcthompson@gmail.com)
