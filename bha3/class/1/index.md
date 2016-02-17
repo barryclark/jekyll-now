@@ -23,9 +23,13 @@ Welcome to BHA 3. We will start with a short history of the Biohacking field. Ne
 
 ## Devices
 
-This week we will build our first Open Hardware lab device: the sterile hood. 
+This week we will build our first Open Hardware lab device: the sterile hood. The design files can be found here:
 
-## Bill of Materials - comming soon
+* [BHA_SterileHood repository](http://www.github.com/biohackacademy/BHA_SterileHood)
+
+![Magnetic Stirrer](/bha3/class/1/SterileHood.png)
+
+## Bill of Materials
 
 > PLEASE NOTE: as this is the first Bill of Materials of the Academy take note of the following:
 
