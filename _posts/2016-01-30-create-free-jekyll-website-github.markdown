@@ -71,10 +71,10 @@ c. navigage to "howtoguy", click "settings" and rename to "Yourusername.github.i
 d. navigate to "yourusername.github.io" in a broswer. You should see "Hello World" in your new site.<br> 
 e. Install Github for Desktop (<a href="https://desktop.github.com">https://desktop.github.com</a>)<br>
 f. make sure you’re logged into github in github desktop (prefs/accounts) and clone repo to desktop (button on right in your github repo on github.com that looks like this: <img src="/junk/clone.png")
-g. open all your files in <a href="https://www.sublimetext.com">sublime</a>
+g. open all your files in <a href="https://www.sublimetext.com">sublime</a><br>
 h. edit _config.yml - my settings:
 
-# Site settings
+# My Site settings (for example)
 title: howtoguy.tv<br>
 email: glen@howtoguy.tv<br>
 description: > # this means to ignore newlines until "baseurl:"
@@ -84,18 +84,16 @@ url: "http://howtoguy.tv" # the base hostname & protocol for your site<br>
 twitter_username: fotozfotoz<br>
 github_username:  howtoguy<br>
 port: 4001<br>
-
-# Build settings
-markdown: kramdown
+Build settings: markdown: kramdown<br>
 
 Port: 4001 needs some explanation: the default when you installed Jekyll locally was port 4000 and you access it with localhost:4000. This is a new install. Change this to Port:4001 and access with localhost:4001. Now you have two separate sites.
 
 When you save _config.yml you must $ jekyll serve again because this file is the only one that doesn't get automatically updated when you save.
 
-h. make changes to other files and save 
-10. commit changes in github desktop adding any comments
-11. sync in github desktop to publish to "yourusername.gihub.io"
-12. to work on it locally change config.yml (port: 4001 —> localhost:4001)
+i. make changes to other files and save
+j. commit changes in github desktop adding any comments
+k. sync in github desktop to publish to "yourusername.gihub.io"
+l. to work on it locally change config.yml (port: 4001 —> localhost:4001)
 13. drag folder into terminal
 14. $ jekyll serve
 15. localhost:4001
@@ -103,6 +101,8 @@ h. make changes to other files and save
 -----------------------------
 
 If you're away from your local install and want to make changes, go to your github account, push edit on the file you want and save. Changes are reflected immediately. When you get back to your local machine open github desktop, open "username.github.io" and push sync. Changes you made on the web will reflect in your local directory. Now you can make changes there without any conflicts. Go back to git desktop, commit changes, and sync.
+
+# Some Other Goodies
 
 display posts in a category:
 
