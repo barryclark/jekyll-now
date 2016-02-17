@@ -76,8 +76,8 @@ h. edit _config.yml - my settings:
 
 {% highlight ruby %}
 # My Site settings (for example)
-title: howtoguy.tv<br>
-email: glen@howtoguy.tv<br>
+title: howtoguy.tv
+email: glen@howtoguy.tv
 description: > # this means to ignore newlines until "baseurl:"
   Howtoguy knows everything. Howtoguy can teach you how to do anything. Need to know how to test and replace a condensor on a '77 Kawasaki 650 motorcycle or build a wordpress website? Howtoguy has you covered.<br>
 baseurl: "" # the subpath of your site, e.g. /blog<br>
