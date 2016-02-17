@@ -71,26 +71,26 @@ c. navigage to "howtoguy", click "settings" and rename to "Yourusername.github.i
 d. navigate to "yourusername.github.io" in a broswer. You should see "Hello World" in your new site.<br> 
 e. Install Github for Desktop (<a href="https://desktop.github.com">https://desktop.github.com</a>)<br>
 f. make sure you’re logged into github in github desktop (prefs/accounts) and clone repo to desktop (button on right in your github repo on github.com that looks like this: <img src="/junk/clone.png")
-g. open all your files in <a href="https://www.sublimetext.com">sublime</a><br>
-h. edit _config.yml - my settings:
+g. open all your files in <a href="https://www.sublimetext.com">Sublime Text</a><br>
+h. edit _config.yml: this tells your site what to do and how to be.
 
 {% highlight ruby %}
 # My Site settings (for example)
 title: howtoguy.tv
 email: glen@howtoguy.tv
 description: > # this means to ignore newlines until "baseurl:"
-  Howtoguy knows everything. Howtoguy can teach you how to do anything. Need to know how to test and replace a condensor on a '77 Kawasaki 650 motorcycle or build a wordpress website? Howtoguy has you covered.<br>
-baseurl: "" # the subpath of your site, e.g. /blog<br>
-url: "http://howtoguy.tv" # the base hostname & protocol for your site<br>
-twitter_username: fotozfotoz<br>
-github_username:  howtoguy<br>
-port: 4001<br>
-Build settings: markdown: kramdown<br>
+  Howtoguy knows everything. Howtoguy can teach you how to do anything. Need to know how to test and replace a condensor on a '77 Kawasaki 650 motorcycle or build a wordpress website? Howtoguy has you covered.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://howtoguy.tv" # the base hostname & protocol for your site
+twitter_username: fotozfotoz
+github_username:  howtoguy
+port: 4001
+Build settings: markdown: kramdown
 {% endhighlight %}
 
 Port: 4001 needs some explanation: the default when you installed Jekyll locally was port 4000 and you access it with localhost:4000. This is a new install. Change this to Port:4001 and access with localhost:4001. Now you have two separate sites.
 
-When you save _config.yml you must $ jekyll serve again because this file is the only one that doesn't get automatically updated when you save.
+When you save _config.yml you must '$ jekyll serve' again in terminal because this file is the only one that doesn't get automatically updated when you save.
 
 i. make changes to other files and save<br>
 j. commit changes in github desktop adding any comments<br>
