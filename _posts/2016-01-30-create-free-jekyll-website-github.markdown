@@ -74,6 +74,7 @@ f. make sure you’re logged into github in github desktop (prefs/accounts) and 
 g. open all your files in <a href="https://www.sublimetext.com">sublime</a><br>
 h. edit _config.yml - my settings:
 
+{% highlight ruby %}
 # My Site settings (for example)
 title: howtoguy.tv<br>
 email: glen@howtoguy.tv<br>
@@ -85,23 +86,25 @@ twitter_username: fotozfotoz<br>
 github_username:  howtoguy<br>
 port: 4001<br>
 Build settings: markdown: kramdown<br>
+{% endhighlight %}
 
 Port: 4001 needs some explanation: the default when you installed Jekyll locally was port 4000 and you access it with localhost:4000. This is a new install. Change this to Port:4001 and access with localhost:4001. Now you have two separate sites.
 
 When you save _config.yml you must $ jekyll serve again because this file is the only one that doesn't get automatically updated when you save.
 
-i. make changes to other files and save
-j. commit changes in github desktop adding any comments
-k. sync in github desktop to publish to "yourusername.gihub.io"
-l. to work on it locally change config.yml (port: 4001 —> localhost:4001)
-13. drag folder into terminal
-14. $ jekyll serve
-15. localhost:4001
+i. make changes to other files and save<br>
+j. commit changes in github desktop adding any comments<br>
+k. sync in github desktop to publish to "yourusername.gihub.io"<br>
+l. to work on it locally change config.yml (port: 4001 —> localhost:4001)<br>
+13. drag folder into terminal<br>
+14. $ jekyll serve<br>
+15. localhost:4001<br>
 
 -----------------------------
 
 If you're away from your local install and want to make changes, go to your github account, push edit on the file you want and save. Changes are reflected immediately. When you get back to your local machine open github desktop, open "username.github.io" and push sync. Changes you made on the web will reflect in your local directory. Now you can make changes there without any conflicts. Go back to git desktop, commit changes, and sync.
 
+{% highlight ruby %}
 # Some Other Goodies
 
 display posts in a category:
@@ -115,5 +118,5 @@ display posts in a category:
     {% endif %}
   {% endfor %}
 </ul>
-
+{% endhighlight %}
 
