@@ -90,15 +90,15 @@ Build settings: markdown: kramdown
 
 Port: 4001 needs some explanation: the default when you installed Jekyll locally was port 4000 and you access it with localhost:4000. This is a new install. Change this to Port:4001 and access with localhost:4001. Now you have two separate sites.
 
-When you save _config.yml you must '$ jekyll serve' again in terminal because this file is the only one that doesn't get automatically updated when you save.
+When you save _config.yml you must `$ jekyll serve` again in terminal because this file is the only one that doesn't get automatically updated when you save.
 
 i. make changes to other files and save<br>
 j. commit changes in github desktop adding any comments<br>
 k. sync in github desktop to publish to "yourusername.gihub.io"<br>
 l. to work on it locally change config.yml (port: 4001 —> localhost:4001)<br>
 13. drag folder into terminal<br>
-14. $ jekyll serve<br>
-15. localhost:4001<br>
+14. `$ jekyll serve`<br>
+15. open `localhost:4001` in your browser<br>
 
 -----------------------------
 
