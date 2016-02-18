@@ -175,6 +175,7 @@ ex. ENS0000001ENS0000002 -> ENS0000001 ENS0000002
         g1 = open("20112015%s" % infile, "w")
 
 ### <font color="red">Pandas</font>
+##### (Many useful pandas things)[https://gist.github.com/why-not/4582705]
 
 ##### Query a dataframe
 
