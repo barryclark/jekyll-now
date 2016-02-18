@@ -1,10 +1,16 @@
 ---
 layout: post
-title: You're up and running!
+title: ebay!
 ---
 
 Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
 
 ![_config.yml]({{ site.baseurl }}/images/config.png)
 
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
+		The eBay page or feature you are attempting to access is not responding.
+Please try the options below:
+Try to access the feature directly from the eBay Home Page, instead of using a bookmark.
+Wait a few minutes and try to access the feature again.
+If you have waited ten to fifteen minutes and you still can't access your page:
+Check our Announcement Board to see if the feature is currently unavailable.
+If what you are looking for is unavailable, you may still be able to access other parts of the site from the eBay Home page
