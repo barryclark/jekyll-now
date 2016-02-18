@@ -165,7 +165,7 @@ And load the lgl, and the node coordinates (File > Open .lgl file > homology.lgl
 
 here, lgl picture
 
-I also load my vertex colors to color all human proteins red, and all others blue (File > Open Vertex Color File > homology_algorithm.edge.colors) and my edge color file to color all the edges predicted with hmmscan green, and with blastp black (File > Open Edge Color File > homology_human.vertex.colors). I change ther vertex size too, since the default is small. 
+I also load my vertex colors to color all human proteins red, and all others blue (File > Open Vertex Color File > homology_algorithm.edge.colors) and my edge color file to color all the edges predicted with hmmscan green, and with blastp black (File > Open Edge Color File > homology_human.vertex.colors). I changed the vertex size too, since the default is small. 
 
 here, colored lgl picture
 
