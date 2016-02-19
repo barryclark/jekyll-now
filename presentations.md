@@ -4,6 +4,7 @@ title: Presentations
 permalink: /presentations/
 ---
 
+* [When large samples act small: Cluster-robust variance estimation and hypothesis testing with few clusters]({{ site.url}}/files/PRC_talk_20160219.pdf). Presentation at the Population Research Center colloquium, February 19, 2016.
 * [Small-sample adjustments for multiple-contrast hypothesis tests of meta-regressions using robust variance estimation]({{ site.url }}/files/Pustejovsky_SRSM_2015.pdf). Presentation at the Society for Research Synthesis Methods annual meeting, July 8, 2015 in Nashville, TN. ([Working paper]({{ site.url}}/files/Tipton-Pustejovsky-F-tests-with-RVE-May-2015.pdf))
 * [Operational sensitivities of non-overlap effect sizes for single-case experimental designs.]({{ site.url }}/files/AERA-2015-poster-Non-overlap-measures.pdf) Poster presented at the American Educational Research Association annual convention, April 19, 2015 in Chicago, IL. ([Conference paper]({{ site.url }}/files/Pustejovsky-Non-overlap-measures-AERA-2015.pdf))
 * [Small-sample adjustments for F-tests using robust variance estimation in meta-regression.]({{ site.url }}/files/AERA-2015-RVE-F-tests.html) Presentation (with Elizabeth Tipton) at the American Educational Research Association annual convention, April 18, 2015 in Chicago, IL. ([Conference paper]({{ site.url }}/files/Tipton-Pustejovsky-In-Review.pdf))
