@@ -6,7 +6,7 @@ permalink: /publications/
 
 ### Meta-analysis methods
 
-* Tipton, E. & Pustejovsky, J. E. (2015). [Small-sample adjustments for tests of moderators and model fit using robust variance estimation in meta-regression.](http://doi.org/10.3102/1076998615606099) _Journal of Educational and Behavioral Statistics, 40_(6), 604-634.
+* Tipton, E. & Pustejovsky, J. E. (2015). [Small-sample adjustments for tests of moderators and model fit using robust variance estimation in meta-regression.](http://doi.org/10.3102/1076998615606099) _Journal of Educational and Behavioral Statistics, 40_(6), 604-634. [Preprint]({{ site.url }}/files/Tipton-Pustejovsky-F-tests-with-RVE-May-2015.pdf).
 * Pustejovsky, J. E. (2014). [Converting from d to r to z when the design uses extreme groups, dichotomization, or experimental control.](http://psycnet.apa.org/doi/10.1037/a0033788) _Psychological Methods, 19_(1), 92-112. [Postprint]({{ site.url }}/files/Converting-from-d-to-r-to-z.pdf). [Supporting materials]({{ site.url }}/files/d-to-r-to-Z-conversion-examples.xlsx).
 
 ### Meta-analysis applications 
