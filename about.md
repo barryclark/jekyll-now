@@ -26,7 +26,7 @@ These are some technologies and areas I've acquired some skill in, and I'm plan 
 - Heroku
 - Apache Spark
 - Scala
-- [Project Euler](https://projecteuler.net/){:target="_blank"}(currently I've solved 29 problems, both the Project Euler versions and the more computationally challenging versions on HackerRank)
+- [Project Euler](https://projecteuler.net/){:target="_blank"} (currently I've solved 29 problems, both the Project Euler versions and the more computationally challenging versions on HackerRank)
 - MapReduce
 - more ML
 
