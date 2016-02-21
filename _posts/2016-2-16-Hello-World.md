@@ -5,7 +5,7 @@ title: Introducing AlexThompson.ai
 
 ¡Bienvenido!
 
-I'm excited to start blogging again, now as a Data Scientist, on this blog: AlexThompson.ai .  I've been transitioning to data science over the last 14 months, and it is time to get a bit more public about it.  I'm hoping that blogging about my projects will help me to get good feedback on my work, and add a little motivation to be that much more consistent.  Witing about a topic has often helped me to improve my understanding of that topic, and I hope that will be true here as well.
+I'm excited to start blogging again, now as a Data Scientist, on this blog: AlexThompson.ai .  I've been transitioning to data science over the last 14 months, and it is time to get a bit more public about it.  I hope that writing about my projects will help me to get good feedback, and add a little motivation to be that much more consistent.  Writing about a topic has often helped me to improve my understanding of it, and I hope that will be true here as well.
 
 Please comment away, as you see fit, when I post substantative posts in the future.
 
