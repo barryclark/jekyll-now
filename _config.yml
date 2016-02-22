@@ -54,7 +54,6 @@ baseurl: ""
 #
 
 markdown: redcarpet
-markdown_ext:  markdown,mkdown,mkdn,mkd,md
 highlighter: pygments
 permalink: /:title/
 
@@ -78,5 +77,7 @@ exclude:
     - README.md
     - CNAME
 
+# Build settings 
+markdown: redcarpet 
 redcarpet:
-  extensions: ["tables", "autolink", "strikethrough", "space_after_headers", "with_toc_data", "fenced_code_blocks"]
+extensions: ["tables", "autolink", "strikethrough", "space_after_headers", "with_toc_data", "fenced_code_blocks", "lax_spacing", "smart"]
