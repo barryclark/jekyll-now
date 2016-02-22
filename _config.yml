@@ -53,7 +53,8 @@ baseurl: ""
 # !! You don't need to change any of the configuration flags below !!
 #
 
-markdown: kramdown
+markdown: redcarpet
+markdown_ext:  markdown,mkdown,mkdn,mkd,md
 highlighter: pygments
 permalink: /:title/
 
@@ -77,5 +78,5 @@ exclude:
     - README.md
     - CNAME
 
-kramdown:
-  input: GFM
+redcarpet:
+  extensions: ["tables", "autolink", "strikethrough", "space_after_headers", "with_toc_data", "fenced_code_blocks"]
