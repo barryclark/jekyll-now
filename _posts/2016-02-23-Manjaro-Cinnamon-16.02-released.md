@@ -15,6 +15,7 @@ This edition comes with the new gtk-themes **Vertex Maia** and **Vertex Maia Squ
 
 **highlights**:  
 
+* Kernel Linux 4.1
 * Cinnamon 2.8.6
 * Nemo 2.8.6
 * Firefox 44
@@ -43,7 +44,7 @@ Please verify the downloaded ISO files with the provided **checksum** before ins
 key ID 663CA268 "Bernhard Landauer <oberon@manjaro.org>"  
 (for verification you can use for example 'gpa' (Linux), 'Gpg4win' (Windows), 'MacGPG' (OSx) )
 
-king regards, Bernhard Landauer, Maintainer Manjaro Cinnamon
+kind regards, Bernhard Landauer, Maintainer Manjaro Cinnamon
 
 ----
 
