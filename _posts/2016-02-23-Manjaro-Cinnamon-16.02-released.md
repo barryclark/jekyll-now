@@ -29,7 +29,7 @@ This edition comes with the new gtk-themes **Vertex Maia** and **Vertex Maia Squ
 
 **utilities**:
 
-* Wanjaro Welcome
+* Manjaro Welcome
 * Manjaro User Guide
 * Installers Calamares, Thus and CLI
 * Manjaro Settings Manager
