@@ -5,9 +5,12 @@ title: Manjaro Cinnamon 16.02 released
 
 <img src="https://manjaro.github.io/images/manjaro-cinnamon-16.02.jpg">
 
-The Manjaro community is proud to announce another stable update release of the **Cinnamon Edition**. 
-In addition to the **full edition** with office suite, graphics software and mailclient included, **Manjaro Cinnamon 16.02** is also available as a **minimal-edition** of 1GB download size, with users in mind who prefer to install their own preferred software.  
-Recent development at Manjaro Linux is taking the **rollling release** model a step further by now delivering all **desktop settings** via **packages**. Like that users will have the option to update to the latest stage of development, even in regards of styling and desktop configuration, at any time if they wish - a feature that has often been requested.  
+The Manjaro community is proud to announce another stable update release of the **Cinnamon Edition**.
+
+In addition to the **full edition** with office suite, graphics software and mailclient included, **Manjaro Cinnamon 16.02** is also available as a **minimal-edition** of 1GB download size, with users in mind who prefer to install their own preferred software.
+
+Recent development at Manjaro Linux is taking the **rolling release** model a step further by now delivering all **desktop settings** via **packages**. Like that users will have the option to update to the latest stage of development, even in regards of styling and desktop configuration, at any time if they wish - a feature that has often been requested.
+
 This edition comes with the new gtk-themes **Vertex Maia** and **Vertex Maia Square**, developed by the community to perfectly match the Maia icon theme.  
 
 **highlights**:  
