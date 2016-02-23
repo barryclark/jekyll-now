@@ -36,11 +36,13 @@ This edition comes with the new gtk-themes **Vertex Maia** and **Vertex Maia Squ
 * Gparted
 * Baobab Disk usage analyzer
 
-----
-
 Please verify the downloaded ISO files with the provided **checksum** before installation, or the encrypted **gpg signature**:  
 key ID 663CA268 "Bernhard Landauer <oberon@manjaro.org>"
 (for verification you can use for example 'gpa' (Linux), 'Gpg4win' (Windows), 'MacGPG' (OSx) )
+
+king regards, Bernhard Landauer, Maintainer Manjaro Cinnamon
+
+----
 
 ## Links
 
