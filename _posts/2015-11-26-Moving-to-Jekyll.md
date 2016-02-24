@@ -10,7 +10,7 @@ author: dactrtr
 
 This is actually *my first* post in the blog, at the beggining I was **thinking** about write about which *plugins* I used, or *how I migrate all the post* from [Ghost](http://ghost.org) to [Jekyll Now](https://github.com/barryclark/jekyll-now) but of course, not everything went out as I *expected*.
 <figure class="figimg">
-   <img src="http://i.giphy.com/adhuPKADfzrDG.gif" alt=“handle”>
+   <img src="http://i.giphy.com/adhuPKADfzrDG.gif" alt="handle">
 <figcaption>
 This is me trying to handle all this code.
 </figcaption>
@@ -19,7 +19,7 @@ I was like that picture, cuz I just jumped from the step of **FORK** the repo, t
 Usually I'm that kind of humans that the first thing they do is **read** the *fucking* manual, but not this time, so I ended learning how the plugins works (actually there's like 5 supported plugins) and also how sass works with the mixins in the *hard* way, Exploding everything, was really a pain in the *codeass* see the [many ways](https://css-tricks.com/approaches-media-queries-sass/) that you can put a simple `mediaqueries` in the **sass** files.
 
 <figure class="figimg">
-   <img src="http://i.giphy.com/jvu00LhbjzAJi.gif" alt=“EZ PZ”>
+   <img src="http://i.giphy.com/jvu00LhbjzAJi.gif" alt="EZ PZ">
 <figcaption>
 Me now, after 3 hours of trying to fix the things, 3 commit/merge mistakes, and after deleted the blog, re uploaded, and merged all the CSS by hand...
 </figcaption>
@@ -36,4 +36,4 @@ Later in a next *amazing* post maybe I will speak more about this wilderness tha
 
 yoda
 
-Now I need to piss, I have been in front of the computer like **centuries**
+Now I need to piss, I have been in front of the computer like **centuries**.

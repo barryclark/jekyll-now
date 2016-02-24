@@ -20,7 +20,7 @@ image:
 ### The Raiders
  
 <figure class="figimg">
-<img src="http://i.imgur.com/dqlbp7A.jpg" alt=“Jure-me-Jeremy”>
+<img src="http://i.imgur.com/dqlbp7A.jpg" alt="Jure-me-Jeremy">
 <figcaption>
 Jure - me - Jeremy
 </figcaption>
@@ -46,7 +46,7 @@ fair enough, also it's true.
 In **Nelson**, **Nelson** like the real **Nelson**, nothing happen so let's move to the important... the gold.
 
 <figure class="figimg">
-<img src="http://i.imgur.com/l4WHUup.jpg" alt=“The gold”>
+<img src="http://i.imgur.com/l4WHUup.jpg" alt="The gold">
 <figcaption>
 Forget about working, we will be RICH.
 </figcaption>
@@ -64,7 +64,7 @@ After **Nelson** we went to **Greymouth**, or this it's what the *gps data* of m
 
 
 <figure class="figimg">
-<img src="http://i.imgur.com/PmUBoov.jpg" alt=“The Tent”>
+<img src="http://i.imgur.com/PmUBoov.jpg" alt="The Tent">
 <figcaption>
 ohh all the luxuries.
 </figcaption>
