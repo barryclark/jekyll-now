@@ -10,16 +10,16 @@ Welcome to BHA 3. We will start with a short history of the Biohacking field. Ne
 
 ## Schedule
 
-* Introduction
-* History of BioHacking
-* Biosafety & Maker ethics
-* 3D Design
-* Sterile Hood Design
+* [Introduction](/bha3/class/1/pdf/0 - Introduction.pdf)
+* [History of BioHacking](/bha3/class/1/pdf/1 - History of Biohacking.pdf)
+* [Biosafety & Maker ethics](/bha3/class/1/pdf/2 - Biosafety & Maker ethics.pdf)
+* [3D Design](/bha3/class/1/pdf/3 - SketchUp & FreeCAD.pdf)
+* [Sterile Hood Design](/bha3/class/1/pdf/4 - Sterile hood design.pdf)
 * Practicals
   * Tour around your lab
   * Digital Fabrication
   * Principles of electronics
-  * Sterile Hood Assembly
+  * [Sterile Hood Assembly](https://github.com/BioHackAcademy/BHA_SterileHood/blob/master/SterileHood-Assembly.pdf)
 
 ## Devices
 
