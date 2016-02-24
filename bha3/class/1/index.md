@@ -17,7 +17,11 @@ Welcome to BHA 3. We will start with a short history of the Biohacking field. Ne
 * [Sterile Hood Design](/bha3/class/1/pdf/4 - Sterile hood design.pdf)
 * Practicals
   * Tour around your lab
-  * Digital Fabrication
+  * Digital Fabrication / 3D CAD Design
+    * [Sketchup Box Demo video](https://vimeo.com/156572816)
+    * [Sketchup Box Demo file](/bha3/class/1/files/DemoBox.skp)
+    * [Tube Rack Sketchup Demo file](/bha3/class/1/files/TubeRack.skp)
+    * [Tube Rack OpenSCAD Demo file](/bha3/class/1/files/TubeRack.scad)
   * Principles of electronics
   * [Sterile Hood Assembly](https://github.com/BioHackAcademy/BHA_SterileHood/blob/master/SterileHood-Assembly.pdf)
 
