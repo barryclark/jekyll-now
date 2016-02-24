@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Learning 7 More Languages
+title: Learning 7 More Languages - Part 1
 category: learning
-tags: learning, languages, lua, factor, elm, elixir, julia, minikanren, idris
+tags: learning, languages, lua, factor, elm, elixir
 ---
 
 This winter I worked through [Seven More Languages in Seven Weeks](https://pragprog.com/book/7lang/seven-more-languages-in-seven-weeks) by Bruce Tate, Fred Daoud, Jack Moffitt, and Ian Dees. As the name implies, this book introduced 7 recent programming languages and gave a quick introduction to each.
 
-I wrote these reactions as I worked through the sections. Now that I've finished the book I've added some final thoughts.
+I wrote these reactions as I worked through the sections.
 
 # Lua
 
@@ -35,10 +35,6 @@ I lost the plot on [Elixir](http://elixir-lang.org/). It seems that one of the k
 
 The examples and exercises in this section also didn't really work for me. The Elixir landing page doesn't specifically mention macros, only alluding to extensibility, but one of the days was oriented around macros. The last day was about distribution, which is interesting, but by this point I had already sortof given up on this section, and it felt like I was forcing myself to work through these, so I stopped. Maybe I'll revisit at some later point.
 
-# Julia
+# More to Come
 
-# MiniKanren
-
-# Idris
-
-# Final Thoughts
+This is an involved book, and 7 weeks is a good amount of time, even if I'm unblocked and on-schedule. I need to put this down for a bit, so let's stop here for now. I'll be back on this topic in a few weeks, to continue through Julia, miniKanren, and Idris.
