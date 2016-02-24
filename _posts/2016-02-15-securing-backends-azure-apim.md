@@ -58,11 +58,11 @@ Checking the certificate in the backend can be simple or challenging, depending 
 
 * nginx: See above link to the tutorial on how to verify the client certificate; SSL termination with nginx is probably quite a good idea
 * Apache web server also directly supports Client Certificate verification
-* Spring Boot: Intended way of securing the service, see e.g. [http://docs.spring.io/spring-security/site/docs/4.0.4.CI-SNAPSHOT/reference/htmlsingle/#x509](http://docs.spring.io/spring-security/site/docs/4.0.4.CI-SNAPSHOT/reference/htmlsingle/#x509)
+* Spring Boot: Intended way of securing the service, see e.g. [Spring Boot Security Reference (v4.0.4)](http://docs.spring.io/spring-security/site/docs/4.0.4.CI-SNAPSHOT/reference/htmlsingle/#x509).
 * Web API/.NET: Funnily, in the case of .NET applications, verifying a client certificate is quite challenging. There are various tutorials on how to do this, but unfortunately I don't like any of them particularly:
-  * [http://chimera.labs.oreilly.com/books/1234000001708/ch15.html#example_ch15_cert_handler](http://chimera.labs.oreilly.com/books/1234000001708/ch15.html#example_ch15_cert_handler)
-  * [https://azure.microsoft.com/en-us/documentation/articles/api-management-howto-mutual-certificates/](https://azure.microsoft.com/en-us/documentation/articles/api-management-howto-mutual-certificates/)
-  * [https://azure.microsoft.com/en-us/documentation/articles/app-service-web-configure-tls-mutual-auth/](https://azure.microsoft.com/en-us/documentation/articles/app-service-web-configure-tls-mutual-auth/)
+  * [Suggestion from 'Designing evolvable Web APIs using ASP.NET'](http://chimera.labs.oreilly.com/books/1234000001708/ch15.html#example_ch15_cert_handler)
+  * [How to use mutual certificates with Azure API Management](https://azure.microsoft.com/en-us/documentation/articles/api-management-howto-mutual-certificates/)
+  * [Azure App Services - How to configure TLS Mutual Authentication](https://azure.microsoft.com/en-us/documentation/articles/app-service-web-configure-tls-mutual-auth/)
 * For node.js and similiar, I would suggest using nginx for SSL termination (as a reverse proxy in front of node)
 
 All in all, using mutual SSL is a valid approach to securing your backend; it offers real security. It will still be possible to flood the network interface with requests (which will be rejected immediately due to the SSL certificate mismatch), and thus could and possibly should be combined with the below method additionally.
@@ -74,7 +74,7 @@ I am waiting for simpler solutions of doing this directly in Azure, but currentl
 In case your backend service runs in an Azure VM (deployed using ARM, Azure Resource Manager), you can make use of the built in firewall, the Network Security Groups. As of the Standard Tier (which is the "cheapest" one you are allowed to use in production),  your Azure APIm instance will get a static IP; this IP in turn you can use to define a NSG rule to only allow traffic from that specific IP address (the APIm Gateway) to go through the NSG. All other traffic will be silently discarded.
 
 As mentioned above, it's unfortunately not (yet) possible to add an Azure APIm instance to a virtual network (and thus put it inside an ARM NSG), but you can still restrict traffic into the NSG by doing IP address filtering.
-The following whitepaper suggests that Azure virtual networks are additionally safeguarded against IP spoofing: [http://download.microsoft.com/download/4/3/9/43902ec9-410e-4875-8800-0788be146a3d/windows%20azure%20network%20security%20whitepaper%20-%20final.docx](http://download.microsoft.com/download/4/3/9/43902ec9-410e-4875-8800-0788be146a3d/windows%20azure%20network%20security%20whitepaper%20-%20final.docx)
+The following whitepaper suggests that Azure virtual networks are additionally safeguarded against IP spoofing: [Azure Network Security Whitepaper](http://download.microsoft.com/download/4/3/9/43902ec9-410e-4875-8800-0788be146a3d/windows%20azure%20network%20security%20whitepaper%20-%20final.docx).
 
 This means that if you create an NSG rule which only allows the APIm gateway to enter the virtual network, most attack vectors are already eliminated by the firewall: Azure filters out IP spoofed packages coming from outside Azure when they enter the Azure network, and additionally they will inspect packages from inside Azure to validate they actually origin from the IP address they claim to do. Combined with Mutual SSL, this should render sufficient backend service protection,
 

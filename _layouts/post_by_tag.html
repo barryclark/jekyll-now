@@ -39,7 +39,17 @@ layout: default
                             {% endif %}
                         {% endif %}
                         -->
-                  
+                        {% if post.author %}
+                            {% assign author = site.data.authors[post.author] %}
+                            {% if author %}
+                                {% assign author_name = author.name %}
+                            {% else %}
+                                {% assign author_name = post.author %}
+                            {% endif %}
+                        {% else %}
+                            {% assign author_name = site.title %}
+                        {% endif %}
+                                          
                         <div class="post-preview">
                             <a href="{{ post.url | prepend: site.baseurl }}">
                                 <h2 class="post-title">            {{ post.title }}
@@ -50,7 +60,7 @@ layout: default
                                 </h3>
                                 {% endif %}
                             </a>
-                            <p class="post-meta">Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}</p>
+                            <p class="post-meta">Posted by {{ author_name }} on {{ post.date | date: "%B %-d, %Y" }}</p>
                         </div>
 
                         <hr>
