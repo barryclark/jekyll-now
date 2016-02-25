@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-"cosherube" というタイトルに特に意味はありません。
+"cosherube" というタイトルに特に意味はありません。br
 しかし
 
 ### More Information
