@@ -1,16 +1,12 @@
 ---
 layout: page
-title: About
+title: このサイトについて
 permalink: /about/
 ---
 
-"cosherube" というタイトルに特に意味はありません。  
-しかし
+"cosherube" は"こしぇるべ"と読みます。
 
-### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
+### お問い合わせ
 
 [cosherube@gmail.com](mailto:email@domain.com)
