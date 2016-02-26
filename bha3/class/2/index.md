@@ -18,6 +18,7 @@ This week we will start growing microbes under controlled conditions. During the
 * Practicals
   * Contamination test 
   * Cultivating microbes of the [Culture Collection](/bha3/annex/culture-collection/)
+  * [Setting up a Github page](https://github.com/BioHackAcademy/BHA_DocumentationSite)
 
 ## Devices
 
@@ -44,6 +45,8 @@ In order to take part in this class you will need the following materials:
 * Magnetic Stirrer
   * [TeklaLabs](http://www.teklalabs.org/magnetic-stirrer/)
   * [IORodeo](http://www.iorodeo.com/content/desktop-stir-plate-kit)
+* Licensing
+  * [Open Source Initiative](https://opensource.org/licenses/category)
 
 ## Feeling lazy?
 

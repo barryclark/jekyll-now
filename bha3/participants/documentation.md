@@ -17,4 +17,4 @@ Please send the link to your documentation site as soon as it is setup to [piete
   * [Isaiah Smith](https://github.com/DasMouse/unmBioArt/wiki/about)
   * [Sean Simmons](https://github.com/ssimmons16/Sean-S-BioArtDesign/wiki)
 
-* Tokyo - Japan
+* [BioClub](http://www.bioclub.org) Tokyo - Japan
