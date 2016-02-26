@@ -7,7 +7,7 @@ Well, technically, it's already the spring semester here in the Czech Republic..
 but so much stuff happened a few weeks back that I didn't have time to write about it then.
 
 First of all, I passed all 7 of my exams! Think I'm getting the hang of this slowly.
-Also, during that, I managed to attend [DevConfCZ 2016]({{site.url}}/DevConfCZ), which was just a blast.
+Also, during that, I managed to attend [DevConfCZ 2016]({{site.url}}/DevConfCZ2016), which was just a blast.
 
 As a reward, we went skiing to South Tyrol/Northern Dolomites/Northern Italy.
 Technically, it was a university course -- but (thankfully) only on paper.
