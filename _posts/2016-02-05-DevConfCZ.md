@@ -3,7 +3,7 @@ layout: post
 title: DevConfCZ 2016
 ---
 
-Whoah, this conference just keeps getting ~~bigger~~ better.
+Whoah, [this conference](http://devconf.cz) just keeps getting **bigger** and better.
 The organizers counted about 1200 people just **in the first day**.
 I remember attending about 5-6 years ago, there were about 120 people in total.
 
@@ -13,42 +13,46 @@ Twitter hashtag for proof. Also, the coffee from [Kofi Kofi](http://kofikofi.cz/
 Several *minor* problems occured to me during the weekend:
 
 * Lack of recycling trash bins
-* 8 parallel sessions, anyone? -- during some time slots, I've definitely been Hermione's TODO. How can you attend 3 talks at the same time? (Answer: YouTube live stream + archive!)
+* 8 parallel sessions, anyone? -- during some time slots, I've definitely been in need of [Hermione's time turning thing](http://harrypotter.wikia.com/wiki/Time-Turner).
+How can you attend 3 talks at the same time? (Answer: YouTube live stream + archive!)
+
+Here's a short summary of talks I attended. Most of them you can find in
+[Red Hat's YouTube channel](https://www.youtube.com/channel/UCmYAQDZIQGm_kPvemBc_qwg/playlists?sort=dd&shelf_id=0&view=1).
 
 ### Friday, February 5th
 
-JW: Keynote: Teach orgs open source methodology
-MS: msrves and kie
-MV: SilverWare
-SB: JB Forge + JBTools rocks!
-MF: CI/CD jenkins + openshoft
-JF: FeedHenry + Red Hat Mobile Platform
-AK: Arq Cube
-BG: Wildfly Swarm
-JC: Elytron
+* **JW: Keynote: Teach organizations open source methodology (The Open Source Way!)**
+* MS: Microservices and KIE (Knowledge is Everything)
+* MV: SilverWare intelligent house systems + handling IoT intelligently
+* **SB: JBoss Forge + JBoss Tools rock!**
+* MF: CI/CD on Jenkins + OpenShift
+* JF: FeedHenry + Red Hat Mobile Platform
+* AK: Arqullian Cube
+* **BG: Wildfly Swarm**
+* JC: Elytron
 
 ### Saturday, February 6th
 
-Docker4JEE: Fabric8!
-Jzb talks community
-MW: NET core, omnisharp vim c# code completion
-VJ: From big data to fast data: Apache spark (lazy eval); samza storm flink... Infinispan
-JK: RxProgramming: Principles of Reactive Prg @ Coursera
-OracleGuy: Graal + Truffle instead of ur own cplr
-LVH: JMH, valuetypes in java
-MS: Java->Go
-Everything is on fire
-.Net CORE
+* Docker4JEE: Fabric8!
+* **jzb talks community**
+* **MW: .NET Core workshop ([Omnisharp](http://www.omnisharp.net/), VIM c# code completion)**
+* VJ: From big data to fast data: Apache spark (lazy evaluation), Samza, Storm, Flink... Infinispan
+* JK: RxProgramming: Principles of Reactive Programming
+* OracleGuy: Graal + Truffle instead of your own compiler
+* **LVH: JMH, value types in Java (Valhalla project)**
+* **MS: Transitioning from Java to Go**
+* Security: Everything is on fire
+* .NET Core
 
 
 ### Sunday, February 7th
 
-kofi+ MH: Cython
-SELinux
-Quantum crypto
-New enc alg
-Devs, QEs of themselves
-Code Auditor
-TryStack
-Dev Evangelist
+* **MH: Cython**
+* SELinux
+* Quantum crypto
+* Devs, QEs of themselves
+* Code Auditor
+* **TryStack**
+* Dev Evangelist talk
 
+All of them were very good, some were indeed *great*. The best are **highlighted** in the list.
