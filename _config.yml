@@ -58,10 +58,10 @@ baseurl: ""
 # !! You don't need to change any of the configuration flags below !!
 #
 
-#markdown: redcarpet
+markdown: redcarpet
 #pygments: true
-#highlighter: pygments
-highlighter: rouge
+highlighter: pygments
+#highlighter: rouge
 permalink: /:title/
 safe: false
 paginate: 10
