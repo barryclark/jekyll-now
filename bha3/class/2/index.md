@@ -17,7 +17,7 @@ This week we will start growing microbes under controlled conditions. During the
 * Open source licensing
 * Practicals
   * Contamination test 
-  * Cultivating microbes of the [Culture Collection](/bha3/annex/culture-collection/)
+  * [Cultivating microbes](/bha3/class/2/Microbe Cultivation Manual.pdf) of the [Culture Collection](/bha3/annex/culture-collection/)
   * [Setting up a Github page](https://github.com/BioHackAcademy/BHA_DocumentationSite)
 
 ## Devices
