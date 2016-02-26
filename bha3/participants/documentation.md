@@ -13,6 +13,8 @@ Please send the link to your documentation site as soon as it is setup to [piete
 * SDU - Denmark
 
 * UNM - USA
-  * [Lani](https://github.com/lbrush/helloworld/wiki)
+  * [Lani Brush](https://github.com/lbrush/helloworld/wiki)
+  * [Isaiah Smith](https://github.com/DasMouse/unmBioArt/wiki/about)
+  * [Sean Simmons](https://github.com/ssimmons16/Sean-S-BioArtDesign/wiki)
 
 * Tokyo - Japan
