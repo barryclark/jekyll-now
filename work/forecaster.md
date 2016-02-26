@@ -64,8 +64,8 @@ permalink: /work/forecaster/
 	<div id="next">
 		<div class="case-wrapper">
 			<div class="next-wrapper clearfix">
-        <a href="/work/globalthinking">
-          <p>GT Site Refresh</p>
+        <a href="/work/splitwise">
+          <p>Splitwise Redesign</p>
 					<p class="change-case-txt">Next Project</p>
 				</a>
 			</div>

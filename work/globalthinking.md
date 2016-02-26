@@ -79,8 +79,8 @@ permalink: /work/globalthinking/
 	<div id="prev">
 		<div class="case-wrapper">
 			<div class="prev-wrapper">
-      <a href="/work/forecaster" title="Previous Project">
-        <p>Forecaster (iOS)</p>
+      <a href="/work/splitwise" title="Previous Project">
+        <p>Splitwise Redesign</p>
 					<p class="change-case-txt">Previous Project</p>
 				</a>
 			</div>
