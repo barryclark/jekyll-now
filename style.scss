@@ -517,12 +517,22 @@ nav {
   word-wrap: break-word;
   letter-spacing: 0.03rem;
   color: rgba(0,0,0,0.8);
-  // text-transform: uppercase;
-  padding: 40px 40px 20px;
-  // margin-top: 35px;
+  padding: 20px 40px 20px;
 
   @include mobile {
     font-size: 26px;
+  }
+}
+
+.container h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 22px;
+  word-wrap: break-word;
+  letter-spacing: 0.03rem;
+  color: rgba(0,0,0,0.8);
+
+  @include mobile {
+    font-size: 20px;
   }
 }
 
@@ -556,7 +566,6 @@ nav {
     text-transform: uppercase;
     color: $blue;
     display: inline-block;
-    padding-top: 20px;
 
     @include mobile {
       line-height: 2;
@@ -632,10 +641,10 @@ nav {
 
   .post {
     margin-bottom: auto;
-    padding: 0 5% 5%;
+    padding: 0 5%;
 
     p {
-      margin: 10px 0;
+      margin: 0 auto 30px auto;
     }
   }// post
 }
@@ -1091,4 +1100,3 @@ footer {
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
-@import "svg-icons";
