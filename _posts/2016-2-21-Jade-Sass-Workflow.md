@@ -12,7 +12,7 @@ Certainly influenced by <a href="">HAML</a>, Jade is a templating engine designe
 
 It can transform this:
 {% highlight html linenos %}
-<footer>
+ <footer>
   <div class="row footer-stuff">
     <div class="columns three"><strong>FIND US ON </strong>
       <ul>
@@ -21,13 +21,14 @@ It can transform this:
         <li><a href="">Pinterest</a></li>
         <li><a href="">Instagram</a></li>
       </ul>
+    </div>
   </div>
-</footer>    
+ </footer>
 {% endhighlight %}
 
 Into this:
 {% highlight jade linenos %}
-footer
+ footer
   .row.footer-stuff
     .columns.three
       strong FIND US ON
@@ -49,26 +50,26 @@ All this results in more whitespace which your eyes will thank you for, faster d
 
 SCSS:
 {% highlight scss linenos %}
-nav {
-  ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
+ nav {
+   ul {
+     margin: 0;
+     padding: 0;
+     list-style: none;
+   }
 
-  li { display: inline-block; }
+   li { display: inline-block; }
 
-  a {
-    display: block;
-    padding: 6px 12px;
-    text-decoration: none;
-  }
-}
+   a {
+     display: block;
+     padding: 6px 12px;
+     text-decoration: none;
+   }
+ }
 {% endhighlight %}
 
 Sass:
 {% highlight sass linenos %}
-nav
+ nav
   ul
     margin: 0
     padding: 0
