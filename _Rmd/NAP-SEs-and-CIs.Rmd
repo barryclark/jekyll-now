@@ -12,26 +12,35 @@ The developers of NAP have created a [web-based tool](http://singlecaseresearch.
 ## Preliminaries
 
 Suppose that we have data from the baseline phase and treatment phase for a single case. Let $m$ denote the number of baseline observations and $n$ denote the number of treatment phase observations. Let $y^A_1,...,y^A_m$ denote the baseline phase data and $y^B_1,...,y^B_n$ denote the treatment phase data. Then NAP is calculated as 
+
 $$
 \text{NAP} = \frac{1}{m n} \sum_{i=1}^m \sum_{j=1}^n \left[I\left(y^B_j > y^A_i\right) + 0.5 I\left(y^B_j = y^A_i\right)\right]
 $$
+
 What is NAP an estimate of? The parameter of interest is the probability that a randomly selected treatment phase observation will exceed a randomly selected baseline phase observation (again, with an adjustment for ties):
+
 $$
 \theta = \text{Pr}(Y^B > Y^A) + 0.5 \text{Pr}(Y^B = Y^A).
 $$
+
 Vargha and Delaney call $\theta$ the _measure of stochastic superiority_. 
 
 NAP is very closely related to another non-overlap index called Tau ([Parker, Vannest, Davis, & Sauber, 2011](http://doi.org/10.1016/j.beth.2010.08.006)). Tau is nothing more than a linear re-scaling of NAP to the range of [-1, 1]: 
+
 $$
 \text{Tau} = \frac{S}{m n} = 2 \times \text{NAP} - 1,
 $$
+
 where 
+
 $$
 S = \sum_{i=1}^m \sum_{j=1}^n \left[I\left(y^B_j > y^A_i\right) - I\left(y^B_j < y^A_i\right)\right].
 $$
+
 $S$ is Kendall's S statistic, which is closely related to the Mann-Whitney $U$ test. 
 
 Here is an R function for calculating NAP:
+
 ```{r NAP}
 NAP <- function(yA, yB) {
   m <- length(yA)
@@ -42,6 +51,7 @@ NAP <- function(yA, yB) {
 ```
 
 Using the data from the worked example in [Parker and Vannest (2009)](http://doi.org/10.1016/j.beth.2008.10.006), the function result agrees with their reported NAP of 0.96:
+
 ```{r NAP_example}
 yA <- c(4, 3, 4, 3, 4, 7, 5, 2, 3, 2)
 yB <- c(5, 9, 7, 9, 7, 5, 9, 11, 11, 10, 9)
@@ -51,34 +61,44 @@ NAP(yA, yB)
 ## Standard errors
 
 The webtool at [singlecaseresearch.org](http://www.singlecaseresearch.org/calculators/nap) reports a standard error for NAP (it is labelled as "SDnap"), which from what I can tell is based on the formula
+
 $$
 \text{SE}_{\text{Tau}} = \sqrt{\frac{m + n + 1}{3 m n}}.
 $$
+
 This formula appears to actually be the standard error for Tau, rather than for NAP. Since $\text{NAP} = \left(\text{Tau} + 1\right) / 2$, the standard error for NAP should be half as large:
+
 $$
 \text{SE}_{null} = \sqrt{\frac{m + n + 1}{12 m n}}
 $$
+
 (cf. [Grissom & Kim, 2001, p. 141](http://dx.doi.org/10.1037/1082-989X.6.2.135)). However, even the latter formula is not always correct. It is valid only when the observations are all mutually independent and when the treatment phase data are drawn from the same distribution as the baseline phase data---that is, when the treatment has no effect on the outcome. I've therefore denoted it as $\text{SE}_{null}$.
 
 ### Other standard error estimators 
 
 Because an equivalent effect size measure is used in other contexts like clinical medicine, there has actually been a fair bit of research into better approaches for assessing the uncertainty in NAP. [Hanley and McNeil (1982)](http://dx.doi.org/10.1148/radiology.143.1.7063747) proposed an estimator for the sampling variance of NAP that is designed for continuous outcome measures, where exact ties are impossible. Modifying it slightly (and in entirely ad hoc fashion) to account for ties, let 
+
 $$
 \begin{aligned}
 Q_1 &= \frac{1}{m n^2}\sum_{i=1}^m \left[\sum_{j=1}^n I\left(y^B_j > y^A_i\right) + 0.5 I\left(y^B_j = y^A_i\right)\right]^2 \\
 Q_2 &= \frac{1}{m^2 n}\sum_{j=1}^n \left[\sum_{i=1}^m I\left(y^B_j > y^A_i\right) + 0.5 I\left(y^B_j = y^A_i\right)\right]^2.
 \end{aligned}
 $$
+
 Then the Hanley-McNeil variance estimator is
+
 $$
 V_{HM} = \frac{1}{mn} \left[\text{NAP}\left(1 - \text{NAP}\right) + (n - 1)\left(Q_1 - \text{NAP}^2\right) + (m - 1)\left(Q_2 - \text{NAP}^2\right)\right],
 $$
+
 with $\text{SE}_{HM} = \sqrt{V_{HM}}$. 
 
 The same authors also propose a different estimator, which is based on the assumption that the outcome data are exponentially distributed. Even though this is a strong and often inappropriate assumption, there is evidence that this estimator works even for other, non-exponential distributions. [Newcombe (2006)](http://dx.doi.org/10.1002/sim.2324) suggested a further modification of their estimator, and I'll describe his version. Let $h = (m + n) / 2 - 1$. Then 
+
 $$
 V_{New} = \frac{h}{mn} \text{NAP}\left(1 - \text{NAP}\right)\left[\frac{1}{h} + \frac{1 - \text{NAP}}{2 - \text{NAP}} + \frac{\text{NAP}}{1 + \text{NAP}}\right],
 $$
+
 with $\text{SE}_{New} = \sqrt{V_{New}}$.
 
 Here are R functions to calculate each of these variance estimators.
@@ -115,9 +135,11 @@ For the worked example dataset from Parker and Vannest, the Newcombe estimator y
 ### A small simulation 
 
 Simulation methods can be used to examine how well these various standard error formulas estimate the actual sampling variation of NAP. For simplicity, I'll simulate normally distributed data where
+
 $$
 Y^A \sim N(0, 1) \qquad \text{and} \qquad Y^B \sim N\left(\sqrt{2}\Phi^{-1}(\theta), 1\right)
 $$
+
 for varying values of the effect size estimand ($\theta$) and a couple of different sample sizes. 
 ```{r SE_simulation, cache = TRUE, message = FALSE, warning = FALSE, fig.width = 10, fig.height = 8}
 
@@ -149,7 +171,7 @@ params %>%
   gather("sd","val", sd, SE_HM, SE_New, se_null) ->
   NAP_sim
 ```
-```{r, fig.width = 10, fig.height = 9}
+```{r, message = FALSE, fig.width = 10, fig.height = 9}
 library(ggplot2)
 ggplot(NAP_sim, aes(theta, val, color = sd)) + 
   facet_grid(n ~ m, labeller = "label_both") + 
@@ -176,13 +198,17 @@ NAP_sim %>%
 ## Confidence intervals
 
 The webtool at [singlecaseresearch.org](http://www.singlecaseresearch.org/calculators/nap) also reports 85% and 90% confidence intervals for NAP. These confidence intervals appear to have the same two problems as the standard errors. First, they are constructed as CIs for Tau rather than for NAP. For the $100\% \times (1 - \alpha)$ CI, let $z_{\alpha / 2}$ be the appropriate critical value from a standard normal distribution. The CIs reported by the webtool are given by 
+
 $$
 \text{Tau} \pm \text{SE}_{\text{Tau}} \times z_{\alpha / 2}. 
 $$
+
 This is probably just an oversight in the programming, which could be corrected by instead using 
+
 $$
 \text{NAP} \pm \text{SE}_{null} \times z_{\alpha / 2}.
 $$
+
 In parallel with the standard error formulas, I'll call this formula the null confidence interval. Funnily enough, the upper bound of the null CI is the same as the upper bound of the Tau CI. However, the lower bound is going to be quite a bit larger than the lower bound for the Tau CI, so that the null CI will be much narrower. 
 
 The second problem is that even the null CI has poor coverage properties because it is based on $\text{SE}_{null}$, which can drastically over-estimate the standard error of NAP for non-null values. 
@@ -190,9 +216,11 @@ The second problem is that even the null CI has poor coverage properties because
 ### Other confidence intervals
 
 As I noted above, there has been a fair amount of previous research into how to construct CIs for $\theta$, the parameter estimated by NAP. As is often the case with these sorts of problems, there are many different methods available, scattered across the literature. Fortunately, there are two (at least) fairly comprehensive simulation studies that compare the performance of various methods under a wide range of conditions. [Newcombe (2006)](http://dx.doi.org/10.1002/sim.2324) examined a range of methods based on inverting Wald-type test statistics (which give CIs of the form $\text{estimate} \pm \text{SE} \times z_{\alpha / 2}$, where $\text{SE}$ is some standard error estimate) and score-based methods (in which the standard error is estimated using the candidate parameter value). Based on an extensive simulation, he suggested a score-based method in which the end-points of the CI are defined the values of $\theta$ that satisfy: 
+
 $$
 (\text{NAP} - \theta)^2 = \frac{z^2_{\alpha / 2} h \theta (1 - \theta)}{mn}\left[\frac{1}{h} + \frac{1 - \theta}{2 - \theta} + \frac{\theta}{1 + \theta}\right],
 $$
+
 where $h = (m + n) / 2 - 1$. This equation is a fourth-degree polynomial in $\theta$, easily solved using a numerical root-finding algorithm. 
 
 In a different simulation study, [Ruscio and Mullen (2012)](http://dx.doi.org/10.1080/00273171.2012.658329) examined the performance of a selection of different confidence intervals for $\theta$, including several methods not considered by Newcombe. Among the methods that they examined, they find that the bias-corrected, accelerated (BCa) bootstrap CI performs particularly well (and seems to outperform the score-based CI recommended by Newcombe). 

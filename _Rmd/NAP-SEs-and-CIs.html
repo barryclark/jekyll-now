@@ -9,6 +9,7 @@
 <meta name="generator" content="pandoc" />
 
 
+<meta name="date" content="2016-02-28" />
 
 <title>Standard errors and confidence intervals for NAP</title>
 
@@ -61,7 +62,7 @@ img {
 
 <div id="header">
 <h1 class="title">Standard errors and confidence intervals for NAP</h1>
-<h4 class="date"><em>February 7, 2016</em></h4>
+<h4 class="date"><em>February 28, 2016</em></h4>
 </div>
 
 
@@ -69,16 +70,24 @@ img {
 <p>The developers of NAP have created a <a href="http://singlecaseresearch.org/calculators">web-based tool</a> for calculating it (as well as several other non-overlap indices), and I have the impression that the tool is fairly widely used. For example, <a href="http://doi.org/10.1007%2Fs10864-013-9189-x">Roth, Gillis, and DiGennaro Reed (2014)</a> and <a href="http://doi.org/10.1007/s10803-015-2373-1">Whalon, Conroy, Martinez, and Welch (2015)</a> both used NAP in their meta-analyses of single-case research, and both noted that they used <a href="http://www.singlecaseresearch.org/calculators/nap">singlecaseresearch.org</a> for calculating the effect size measure. Given that the web tool is being used, it is worth scrutinizing the methods behind the calculations it reports. As of this writing, the standard error and confidence intervals reported along with the NAP statistic are incorrect, and should not be used. After introducing a bit of notation, I’ll explain why the existing methods are deficient. I’ll also suggest some methods for calculating standard errors and confidence intervals that are potentially more accurate.</p>
 <div id="preliminaries" class="section level2">
 <h2>Preliminaries</h2>
-<p>Suppose that we have data from the baseline phase and treatment phase for a single case. Let <span class="math">\(m\)</span> denote the number of baseline observations and <span class="math">\(n\)</span> denote the number of treatment phase observations. Let <span class="math">\(y^A_1,...,y^A_m\)</span> denote the baseline phase data and <span class="math">\(y^B_1,...,y^B_n\)</span> denote the treatment phase data. Then NAP is calculated as <span class="math">\[
+<p>Suppose that we have data from the baseline phase and treatment phase for a single case. Let <span class="math">\(m\)</span> denote the number of baseline observations and <span class="math">\(n\)</span> denote the number of treatment phase observations. Let <span class="math">\(y^A_1,...,y^A_m\)</span> denote the baseline phase data and <span class="math">\(y^B_1,...,y^B_n\)</span> denote the treatment phase data. Then NAP is calculated as</p>
+<p><span class="math">\[
 \text{NAP} = \frac{1}{m n} \sum_{i=1}^m \sum_{j=1}^n \left[I\left(y^B_j &gt; y^A_i\right) + 0.5 I\left(y^B_j = y^A_i\right)\right]
-\]</span> What is NAP an estimate of? The parameter of interest is the probability that a randomly selected treatment phase observation will exceed a randomly selected baseline phase observation (again, with an adjustment for ties): <span class="math">\[
+\]</span></p>
+<p>What is NAP an estimate of? The parameter of interest is the probability that a randomly selected treatment phase observation will exceed a randomly selected baseline phase observation (again, with an adjustment for ties):</p>
+<p><span class="math">\[
 \theta = \text{Pr}(Y^B &gt; Y^A) + 0.5 \text{Pr}(Y^B = Y^A).
-\]</span> Vargha and Delaney call <span class="math">\(\theta\)</span> the <em>measure of stochastic superiority</em>.</p>
-<p>NAP is very closely related to another non-overlap index called Tau (<a href="http://doi.org/10.1016/j.beth.2010.08.006">Parker, Vannest, Davis, &amp; Sauber, 2011</a>). Tau is nothing more than a linear re-scaling of NAP to the range of [-1, 1]: <span class="math">\[
+\]</span></p>
+<p>Vargha and Delaney call <span class="math">\(\theta\)</span> the <em>measure of stochastic superiority</em>.</p>
+<p>NAP is very closely related to another non-overlap index called Tau (<a href="http://doi.org/10.1016/j.beth.2010.08.006">Parker, Vannest, Davis, &amp; Sauber, 2011</a>). Tau is nothing more than a linear re-scaling of NAP to the range of [-1, 1]:</p>
+<p><span class="math">\[
 \text{Tau} = \frac{S}{m n} = 2 \times \text{NAP} - 1,
-\]</span> where <span class="math">\[
+\]</span></p>
+<p>where</p>
+<p><span class="math">\[
 S = \sum_{i=1}^m \sum_{j=1}^n \left[I\left(y^B_j &gt; y^A_i\right) - I\left(y^B_j &lt; y^A_i\right)\right].
-\]</span> <span class="math">\(S\)</span> is Kendall’s S statistic, which is closely related to the Mann-Whitney <span class="math">\(U\)</span> test.</p>
+\]</span></p>
+<p><span class="math">\(S\)</span> is Kendall’s S statistic, which is closely related to the Mann-Whitney <span class="math">\(U\)</span> test.</p>
 <p>Here is an R function for calculating NAP:</p>
 <pre class="r"><code>NAP &lt;- function(yA, yB) {
   m &lt;- length(yA)
@@ -94,24 +103,34 @@ NAP(yA, yB)</code></pre>
 </div>
 <div id="standard-errors" class="section level2">
 <h2>Standard errors</h2>
-<p>The webtool at <a href="http://www.singlecaseresearch.org/calculators/nap">singlecaseresearch.org</a> reports a standard error for NAP (it is labelled as “SDnap”), which from what I can tell is based on the formula <span class="math">\[
+<p>The webtool at <a href="http://www.singlecaseresearch.org/calculators/nap">singlecaseresearch.org</a> reports a standard error for NAP (it is labelled as “SDnap”), which from what I can tell is based on the formula</p>
+<p><span class="math">\[
 \text{SE}_{\text{Tau}} = \sqrt{\frac{m + n + 1}{3 m n}}.
-\]</span> This formula appears to actually be the standard error for Tau, rather than for NAP. Since <span class="math">\(\text{NAP} = \left(\text{Tau} + 1\right) / 2\)</span>, the standard error for NAP should be half as large: <span class="math">\[
+\]</span></p>
+<p>This formula appears to actually be the standard error for Tau, rather than for NAP. Since <span class="math">\(\text{NAP} = \left(\text{Tau} + 1\right) / 2\)</span>, the standard error for NAP should be half as large:</p>
+<p><span class="math">\[
 \text{SE}_{null} = \sqrt{\frac{m + n + 1}{12 m n}}
-\]</span> (cf. <a href="http://dx.doi.org/10.1037/1082-989X.6.2.135">Grissom &amp; Kim, 2001, p. 141</a>). However, even the latter formula is not always correct. It is valid only when the observations are all mutually independent and when the treatment phase data are drawn from the same distribution as the baseline phase data—that is, when the treatment has no effect on the outcome. I’ve therefore denoted it as <span class="math">\(\text{SE}_{null}\)</span>.</p>
+\]</span></p>
+<p>(cf. <a href="http://dx.doi.org/10.1037/1082-989X.6.2.135">Grissom &amp; Kim, 2001, p. 141</a>). However, even the latter formula is not always correct. It is valid only when the observations are all mutually independent and when the treatment phase data are drawn from the same distribution as the baseline phase data—that is, when the treatment has no effect on the outcome. I’ve therefore denoted it as <span class="math">\(\text{SE}_{null}\)</span>.</p>
 <div id="other-standard-error-estimators" class="section level3">
 <h3>Other standard error estimators</h3>
-<p>Because an equivalent effect size measure is used in other contexts like clinical medicine, there has actually been a fair bit of research into better approaches for assessing the uncertainty in NAP. <a href="http://dx.doi.org/10.1148/radiology.143.1.7063747">Hanley and McNeil (1982)</a> proposed an estimator for the sampling variance of NAP that is designed for continuous outcome measures, where exact ties are impossible. Modifying it slightly (and in entirely ad hoc fashion) to account for ties, let <span class="math">\[
+<p>Because an equivalent effect size measure is used in other contexts like clinical medicine, there has actually been a fair bit of research into better approaches for assessing the uncertainty in NAP. <a href="http://dx.doi.org/10.1148/radiology.143.1.7063747">Hanley and McNeil (1982)</a> proposed an estimator for the sampling variance of NAP that is designed for continuous outcome measures, where exact ties are impossible. Modifying it slightly (and in entirely ad hoc fashion) to account for ties, let</p>
+<p><span class="math">\[
 \begin{aligned}
 Q_1 &amp;= \frac{1}{m n^2}\sum_{i=1}^m \left[\sum_{j=1}^n I\left(y^B_j &gt; y^A_i\right) + 0.5 I\left(y^B_j = y^A_i\right)\right]^2 \\
 Q_2 &amp;= \frac{1}{m^2 n}\sum_{j=1}^n \left[\sum_{i=1}^m I\left(y^B_j &gt; y^A_i\right) + 0.5 I\left(y^B_j = y^A_i\right)\right]^2.
 \end{aligned}
-\]</span> Then the Hanley-McNeil variance estimator is <span class="math">\[
+\]</span></p>
+<p>Then the Hanley-McNeil variance estimator is</p>
+<p><span class="math">\[
 V_{HM} = \frac{1}{mn} \left[\text{NAP}\left(1 - \text{NAP}\right) + (n - 1)\left(Q_1 - \text{NAP}^2\right) + (m - 1)\left(Q_2 - \text{NAP}^2\right)\right],
-\]</span> with <span class="math">\(\text{SE}_{HM} = \sqrt{V_{HM}}\)</span>.</p>
-<p>The same authors also propose a different estimator, which is based on the assumption that the outcome data are exponentially distributed. Even though this is a strong and often inappropriate assumption, there is evidence that this estimator works even for other, non-exponential distributions. <a href="http://dx.doi.org/10.1002/sim.2324">Newcombe (2006)</a> suggested a further modification of their estimator, and I’ll describe his version. Let <span class="math">\(h = (m + n) / 2 - 1\)</span>. Then <span class="math">\[
+\]</span></p>
+<p>with <span class="math">\(\text{SE}_{HM} = \sqrt{V_{HM}}\)</span>.</p>
+<p>The same authors also propose a different estimator, which is based on the assumption that the outcome data are exponentially distributed. Even though this is a strong and often inappropriate assumption, there is evidence that this estimator works even for other, non-exponential distributions. <a href="http://dx.doi.org/10.1002/sim.2324">Newcombe (2006)</a> suggested a further modification of their estimator, and I’ll describe his version. Let <span class="math">\(h = (m + n) / 2 - 1\)</span>. Then</p>
+<p><span class="math">\[
 V_{New} = \frac{h}{mn} \text{NAP}\left(1 - \text{NAP}\right)\left[\frac{1}{h} + \frac{1 - \text{NAP}}{2 - \text{NAP}} + \frac{\text{NAP}}{1 + \text{NAP}}\right],
-\]</span> with <span class="math">\(\text{SE}_{New} = \sqrt{V_{New}}\)</span>.</p>
+\]</span></p>
+<p>with <span class="math">\(\text{SE}_{New} = \sqrt{V_{New}}\)</span>.</p>
 <p>Here are R functions to calculate each of these variance estimators.</p>
 <pre class="r"><code>V_HM &lt;- function(yA, yB) {
   m &lt;- length(yA)
@@ -139,9 +158,11 @@ sqrt(V_HM(yA, yB))</code></pre>
 </div>
 <div id="a-small-simulation" class="section level3">
 <h3>A small simulation</h3>
-<p>Simulation methods can be used to examine how well these various standard error formulas estimate the actual sampling variation of NAP. For simplicity, I’ll simulate normally distributed data where <span class="math">\[
+<p>Simulation methods can be used to examine how well these various standard error formulas estimate the actual sampling variation of NAP. For simplicity, I’ll simulate normally distributed data where</p>
+<p><span class="math">\[
 Y^A \sim N(0, 1) \qquad \text{and} \qquad Y^B \sim N\left(\sqrt{2}\Phi^{-1}(\theta), 1\right)
-\]</span> for varying values of the effect size estimand (<span class="math">\(\theta\)</span>) and a couple of different sample sizes.</p>
+\]</span></p>
+<p>for varying values of the effect size estimand (<span class="math">\(\theta\)</span>) and a couple of different sample sizes.</p>
 <pre class="r"><code>sample_NAP &lt;- function(delta, m, n, iterations) {
   NAPs &lt;- replicate(iterations, {
     yA &lt;- rnorm(m)
@@ -180,17 +201,23 @@ ggplot(NAP_sim, aes(theta, val, color = sd)) +
 </div>
 <div id="confidence-intervals" class="section level2">
 <h2>Confidence intervals</h2>
-<p>The webtool at <a href="http://www.singlecaseresearch.org/calculators/nap">singlecaseresearch.org</a> also reports 85% and 90% confidence intervals for NAP. These confidence intervals appear to have the same two problems as the standard errors. First, they are constructed as CIs for Tau rather than for NAP. For the <span class="math">\(100\% \times (1 - \alpha)\)</span> CI, let <span class="math">\(z_{\alpha / 2}\)</span> be the appropriate critical value from a standard normal distribution. The CIs reported by the webtool are given by <span class="math">\[
+<p>The webtool at <a href="http://www.singlecaseresearch.org/calculators/nap">singlecaseresearch.org</a> also reports 85% and 90% confidence intervals for NAP. These confidence intervals appear to have the same two problems as the standard errors. First, they are constructed as CIs for Tau rather than for NAP. For the <span class="math">\(100\% \times (1 - \alpha)\)</span> CI, let <span class="math">\(z_{\alpha / 2}\)</span> be the appropriate critical value from a standard normal distribution. The CIs reported by the webtool are given by</p>
+<p><span class="math">\[
 \text{Tau} \pm \text{SE}_{\text{Tau}} \times z_{\alpha / 2}. 
-\]</span> This is probably just an oversight in the programming, which could be corrected by instead using <span class="math">\[
+\]</span></p>
+<p>This is probably just an oversight in the programming, which could be corrected by instead using</p>
+<p><span class="math">\[
 \text{NAP} \pm \text{SE}_{null} \times z_{\alpha / 2}.
-\]</span> In parallel with the standard error formulas, I’ll call this formula the null confidence interval. Funnily enough, the upper bound of the null CI is the same as the upper bound of the Tau CI. However, the lower bound is going to be quite a bit larger than the lower bound for the Tau CI, so that the null CI will be much narrower.</p>
+\]</span></p>
+<p>In parallel with the standard error formulas, I’ll call this formula the null confidence interval. Funnily enough, the upper bound of the null CI is the same as the upper bound of the Tau CI. However, the lower bound is going to be quite a bit larger than the lower bound for the Tau CI, so that the null CI will be much narrower.</p>
 <p>The second problem is that even the null CI has poor coverage properties because it is based on <span class="math">\(\text{SE}_{null}\)</span>, which can drastically over-estimate the standard error of NAP for non-null values.</p>
 <div id="other-confidence-intervals" class="section level3">
 <h3>Other confidence intervals</h3>
-<p>As I noted above, there has been a fair amount of previous research into how to construct CIs for <span class="math">\(\theta\)</span>, the parameter estimated by NAP. As is often the case with these sorts of problems, there are many different methods available, scattered across the literature. Fortunately, there are two (at least) fairly comprehensive simulation studies that compare the performance of various methods under a wide range of conditions. <a href="http://dx.doi.org/10.1002/sim.2324">Newcombe (2006)</a> examined a range of methods based on inverting Wald-type test statistics (which give CIs of the form <span class="math">\(\text{estimate} \pm \text{SE} \times z_{\alpha / 2}\)</span>, where <span class="math">\(\text{SE}\)</span> is some standard error estimate) and score-based methods (in which the standard error is estimated using the candidate parameter value). Based on an extensive simulation, he suggested a score-based method in which the end-points of the CI are defined the values of <span class="math">\(\theta\)</span> that satisfy: <span class="math">\[
+<p>As I noted above, there has been a fair amount of previous research into how to construct CIs for <span class="math">\(\theta\)</span>, the parameter estimated by NAP. As is often the case with these sorts of problems, there are many different methods available, scattered across the literature. Fortunately, there are two (at least) fairly comprehensive simulation studies that compare the performance of various methods under a wide range of conditions. <a href="http://dx.doi.org/10.1002/sim.2324">Newcombe (2006)</a> examined a range of methods based on inverting Wald-type test statistics (which give CIs of the form <span class="math">\(\text{estimate} \pm \text{SE} \times z_{\alpha / 2}\)</span>, where <span class="math">\(\text{SE}\)</span> is some standard error estimate) and score-based methods (in which the standard error is estimated using the candidate parameter value). Based on an extensive simulation, he suggested a score-based method in which the end-points of the CI are defined the values of <span class="math">\(\theta\)</span> that satisfy:</p>
+<p><span class="math">\[
 (\text{NAP} - \theta)^2 = \frac{z^2_{\alpha / 2} h \theta (1 - \theta)}{mn}\left[\frac{1}{h} + \frac{1 - \theta}{2 - \theta} + \frac{\theta}{1 + \theta}\right],
-\]</span> where <span class="math">\(h = (m + n) / 2 - 1\)</span>. This equation is a fourth-degree polynomial in <span class="math">\(\theta\)</span>, easily solved using a numerical root-finding algorithm.</p>
+\]</span></p>
+<p>where <span class="math">\(h = (m + n) / 2 - 1\)</span>. This equation is a fourth-degree polynomial in <span class="math">\(\theta\)</span>, easily solved using a numerical root-finding algorithm.</p>
 <p>In a different simulation study, <a href="http://dx.doi.org/10.1080/00273171.2012.658329">Ruscio and Mullen (2012)</a> examined the performance of a selection of different confidence intervals for <span class="math">\(\theta\)</span>, including several methods not considered by Newcombe. Among the methods that they examined, they find that the bias-corrected, accelerated (BCa) bootstrap CI performs particularly well (and seems to outperform the score-based CI recommended by Newcombe).</p>
 <p>Neither <a href="http://dx.doi.org/10.1002/sim.2324">Newcombe (2006)</a> nor <a href="http://dx.doi.org/10.1080/00273171.2012.658329">Ruscio and Mullen (2012)</a> considered constructing a confidence interval by directly pivoting the Mann-Whitney U test (the same technique used to construct confidence intervals for the Hodges-Lehmann estimator of location shift), although it seems to me that this would be possible and potentially an attractive approach in the context of SCDs. The main caveat is that such a CI would require stronger distributional assumptions than those studied in the simulations, such as that the distributions of <span class="math">\(Y^A\)</span> and <span class="math">\(Y^B\)</span> differ by an additive (or multiplicative) constant. In any case, it seems like it would be worth exploring this approach too.</p>
 </div>
