@@ -38,7 +38,7 @@ $$
 S = \sum_{i=1}^m \sum_{j=1}^n \left[I\left(y^B_j > y^A_i\right) - I\left(y^B_j < y^A_i\right)\right].
 $$
 
-$S$ is Kendall's S statistic, which is closely related to the Mann-Whitney $$U$$ test. 
+The $$S$$ is Kendall's S statistic, which is closely related to the Mann-Whitney $$U$$ test. 
 
 Here is an R function for calculating NAP:
 
