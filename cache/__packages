@@ -1,0 +1,7 @@
+base
+knitr
+stringr
+lubridate
+dplyr
+tidyr
+ggplot2

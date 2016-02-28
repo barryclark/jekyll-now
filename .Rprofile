@@ -39,6 +39,7 @@ r2jekyll <- function(filename, dpi = 192) {
 }
 
 
+# r2jekyll("NAP-SEs-and-CIs")
 # r2jekyll("rdd-interactions-again")
 # r2jekyll("rdd-interactions")
 # r2jekyll("clubSandwich-for-CRVE-FE")
