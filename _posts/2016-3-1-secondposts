@@ -1,10 +1,9 @@
 ---
 layout: post
 title: today
-author: hzn4
 ---
 
-{%highlight ruby%}
+{% highlight ruby %}
 #10桁のパスワードを発生させるプログラム
 
 def password_gen(size=8)
@@ -13,4 +12,4 @@ end
 
 puts 10.times.map { password_gen }
 
-{%endhighlight ruby%}
+{% endhighlight ruby %}
