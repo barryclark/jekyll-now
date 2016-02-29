@@ -1,0 +1,15 @@
+---
+layout: post
+title: today
+author: hzn4
+
+{%highlight ruby%}
+#10桁のパスワードを発生させるプログラム
+
+def password_gen(size=8)
+	[*0..9, *'a'..'z', *'A'..'Z'].sample(size).join
+end
+
+puts 10.times.map { password_gen }
+
+{%endhighlight ruby%}
