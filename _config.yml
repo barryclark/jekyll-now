@@ -56,6 +56,8 @@ markdown: kramdown #redcarpet
 highlighter: rouge
 permalink: /:title/
 
+quiet:  false
+
 # The release of Jekyll Now that you're using
 version: v1.1.0
 
