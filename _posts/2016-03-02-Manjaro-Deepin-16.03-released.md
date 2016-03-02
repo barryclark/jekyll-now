@@ -51,4 +51,5 @@ kind regards, Bernhard Landauer, Maintainer Manjaro Deepin
 ## Links
 
 * [Download here](https://sourceforge.net/projects/manjarolinux/files/community/Deepin/2016.03/)
++ [Screenshots / Video](https://sourceforge.net/projects/manjaro-deepin/)
 * [Manjaro Forum Deepin Board](https://forum.manjaro.org/index.php?board=59.0)
