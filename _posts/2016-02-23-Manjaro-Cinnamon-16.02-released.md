@@ -51,4 +51,5 @@ kind regards, Bernhard Landauer, Maintainer Manjaro Cinnamon
 ## Links
 
 * [Download here](https://sourceforge.net/projects/manjarolinux/files/community/Cinnamon/2016.02/)
+* [Screenshots / Video](https://sourceforge.net/projects/manjaro-cinnamon/)
 * [Manjaro Forum Cinnamon Board](https://forum.manjaro.org/index.php?board=54.0)
