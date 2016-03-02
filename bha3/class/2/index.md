@@ -17,7 +17,7 @@ This week we will start growing microbes under controlled conditions. During the
 * [Magnetic Stirrer design](/bha3/class/2/pdf/5 Magnetic Stirrer design.pdf)
 * [Open source licensing](/bha3/class/2/pdf/3 Open Source licensing & publishing.pdf)
 * Practicals
-  * Contamination test 
+  * [Contamination test](/bha3/class/2/contamination-test/)
   * [Cultivating microbes](/bha3/class/2/Microbe Cultivation Manual.pdf) of the [Culture Collection](/bha3/annex/culture-collection/)
   
 
