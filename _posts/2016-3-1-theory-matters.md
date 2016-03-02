@@ -35,7 +35,9 @@ Konard was the program chair for COSYNE 2015 and general chair for COSYNE 2016.
 Alex is one of the 3 founders of COSYNE meeting (he explains the history of COSYNE in the video).
 {% include youtubePlayer.html id="wZphn2IocwU" %}
 
-[//]: ## [Benjamin Scholl](http://www.maxplanckflorida.org/fitzpatricklab/ben-scholl.html) at Rockefeller
+## [Benjamin Scholl](http://www.maxplanckflorida.org/fitzpatricklab/ben-scholl.html) at Max Planck Florida Institute for Neuroscience
+Ben is an experimentalist (electrophysiology and imaging).
+{% include youtubePlayer.html id="V_sEo0VabLo" %}
 
 [//]: ## [Christoph Krist](http://www.rockefeller.edu/research/faculty/independentfellows/ChristophKirst/#content) at Rockefeller
 
