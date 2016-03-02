@@ -9,7 +9,7 @@ The Manjaro community is proud to announce a new stable release of the **Deepin 
 
 While the exciting modern China based project **Deepin** is still young and not yet completely bugfree, it has certainly evolved quite impressively during the last few months and become a reliable desktop environment to be used on an every day basis. For the Manjaro release many packages have been adjusted and customized in close cooperation with Arch-Deepin and Linuxdeepin to make the desktop experience as smooth and responsive as is expected from an Arch-based environment. **Manjaro Deepin 16.03** runs the latest state of development of the Deepin project, adding our well tried and tested in-house tools like **Manjaro Settings Manager** and of course package management with **Pamac** and **Pacman** for the best possible rolling release experience.
 
-For more experienced users an alternative **minimal-edition** with only the basic environment pre-installed.
+For more experienced users an alternative **minimal-edition** with only the basic environment pre-installed is also available for download.
 
 **highlights**:  
 
