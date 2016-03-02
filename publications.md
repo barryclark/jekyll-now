@@ -19,7 +19,7 @@ permalink: /publications/
 * Weifeng Liu, Il Park, José C. Príncipe. An Information Theoretic Approach of Designing Sparse Kernel Adaptive Filters, IEEE Transactions on Neural Network, Volume 20, Issue 12, Dec. 2009, 1950-1961.
 * António R. C. Paiva, Il Park, José C. Príncipe. A Comparison of Binless Spike Train Measures, Neural Computing & Applications. Volume 19, Issue 3 (2010), page 405.
 * Weifeng Liu, Il Park, Yiwen Wang, José C. Príncipe. Extended Kernel Recursive Least Squares Algorithm, IEEE Transactions on Signal Processing, Volume 57, Issue 10, Oct. 2009, 3801-3814
-* Karl Dockendorf, Il Park, Ping He, José C. Príncipe, Thomas B. DeMarse. Liquid state machine and Dissociated Cortical Networks: The Separability, Biosystems, Volume 95, Issue 2, February 2009, 90-97
+* Karl Dockendorf, Il Park, Ping He, José C. Príncipe, Thomas B. DeMarse. Liquid State Machine and Dissociated Cortical Networks: The Separability, Biosystems, Volume 95, Issue 2, February 2009, 90-97
 * Jian-Wu Xu, António R. C. Paiva, Il Park, José C. Príncipe. A Reproducing Kernel Hilbert Space Framework for Information-Theoretic Learning, IEEE Transactions on Signal Processing, Vol. 56, No. 12. pp. 5891-5902. 2008
 * António R. C. Paiva, Il Park, José C. Príncipe. A Reproducing Kernel Hilbert Space framework for Spike Trains, Neural Computation, Volume 21, Number 2, February 2009, 424-449
 * Il Park, António R. C. Paiva, José C. Príncipe, Thomas B. DeMarse. An Efficient Algorithm for Continuous-time Cross Correlogram of Spike Trains, Journal of Neuroscience Methods, Volume 168, Issue 2, 15 March 2008, 514-523
