@@ -6,12 +6,19 @@ title: #theoryMatters in neuroscience?
 To promote theoretical and computational neuroscience, I have interviewed a number of neuroscientists with diverse background.
 Most of these interviews took place at [COSYNE 2016](http://www.cosyne.org/c/index.php?title=Cosyne_16) main meeting (Salt lake city, Utah).
 
-The videos were promoted twitter with hashtag: **#theoryMatters**
+The videos were promoted on twitter with hashtag: **#theoryMatters**
 
 <a href="https://twitter.com/intent/tweet?button_hashtag=theoryMatters" class="twitter-hashtag-button" data-related="memming">Tweet #theoryMatters</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
 ![Computational neuroscience for my real friends, and real neuroscience for my computational friends! (xkcd style)](/images/toasts_compNeuro.png)
+
+(I drew this one morning inspired by this [xkcd](http://xkcd.com/1645/).)
+
+----
+1. TOC
+{:toc}
+----
 
 ## [Anne Churchland](http://churchlandlab.labsites.cshl.edu/) at Cold Spring Harbor Labs
 Anne newly joined the executive committee of COSYNE. This was the pilot interview that was sent out to recruit interviewees.
