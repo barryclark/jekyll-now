@@ -37,6 +37,7 @@ For more experienced users an alternative **minimal-edition** with only the basi
 * Yaourt
 * Isousb
 * Gparted
+* Gnome System Monitor
 * Baobab disk usage analyzer
 
 Please verify the downloaded ISO files with the provided **checksum** before installation, or check the encrypted **gpg signature**:  
