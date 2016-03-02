@@ -43,4 +43,4 @@ Alex is one of the 3 founders of COSYNE meeting (he explains the history of COSY
 
 
 ----
-Anne Churchland came up with the initial idea of making a promotional video, and I suggested interviewing COSYNE participants. I filmed all interviews at COSYNE, and edited all footage. This project is partially sponsored by COSYNE.
+Anne Churchland came up with the initial idea of making a promotional video, and I suggested interviewing COSYNE participants. CSHL has a related [blog post](http://labdish.cshl.edu/2016/02/25/if-you-thought-all-neuroscientists-work-with-neurons-youre-wrong/). I designed, filmed, and edited all interviews. This project is partially sponsored by COSYNE.
