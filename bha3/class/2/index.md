@@ -10,15 +10,16 @@ This week we will start growing microbes under controlled conditions. During the
 
 ## Schedule
 
-* Microbiology
-* Bio design / art
+* [Microbiology](/bha3/class/2/pdf/1 Intro Microbiology.pdf)
+* [Creative Bio Engineering](/bha3/class/2/pdf/2 Creative Bio Engineering.pdf)
 * Documentation
-* Magnetic Stirrer design
-* Open source licensing
+  * [Setting up a Github page](https://github.com/BioHackAcademy/BHA_DocumentationSite)
+* [Magnetic Stirrer design](/bha3/class/2/pdf/5 Magnetic Stirrer design.pdf)
+* [Open source licensing](/bha3/class/2/pdf/3 Open Source licensing & publishing.pdf)
 * Practicals
   * Contamination test 
   * [Cultivating microbes](/bha3/class/2/Microbe Cultivation Manual.pdf) of the [Culture Collection](/bha3/annex/culture-collection/)
-  * [Setting up a Github page](https://github.com/BioHackAcademy/BHA_DocumentationSite)
+  
 
 ## Devices
 
