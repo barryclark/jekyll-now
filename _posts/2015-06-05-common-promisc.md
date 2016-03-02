@@ -65,3 +65,35 @@ tags: [common]
     [红黑树动态图](http://www.cnblogs.com/yangecnu/p/Introduce-Red-Black-Tree.html)
     
     [octeon 资料](http://www.360doc.com/userhome/8887027)
+    
+6. **网页设计 微博**
+	
+    [什么叫做会设计](http://weibo.com/1773655610/DkhJm5ZUW)
+    
+    [什么叫做不会设计](http://weibo.com/1773655610/DkhxyqOuw)
+    
+    [动物Logo设计](http://weibo.com/1773655610/Dkh4huUTR)
+    
+    [画个大白兔奶糖](http://weibo.com/1773655610/DkgqljSsE)
+    
+    [爸！我想当设计师](http://weibo.com/1773655610/Dkg3a3KeW)
+    
+    [每日动图！可以看一天系列](http://weibo.com/1773655610/Dkf40gjiR)
+    
+    [“这设计，我不想做了…”为什么，因为](http://weibo.com/1773655610/DkeF2bost)
+    
+    [涨姿势！让视觉设计变得高效+有说服力的4个步骤](http://weibo.com/1773655610/Dkek4i6KQ)
+    
+    [和设计师做朋友,是怎样一种体验.](http://weibo.com/1773655610/DkdUyz6Yf)
+    
+    [这应该是设计界最难拿的最高奖项吧](http://weibo.com/1773655610/DkcVtd92x)
+    
+    [酷站两连发！人气爆棚的网页选色器+专业设计师严选的免费素材](http://weibo.com/1773655610/DkcBt13QS)
+    
+    [求职宝典！新人交互设计师的作品集制作方法（附优秀案例）](http://weibo.com/1773655610/Dkcpio1gX)
+    
+    [让你的LOGO被采纳！八个步骤帮你优化LOGO设计流程](http://weibo.com/1773655610/Dkcd7mvRC)
+    
+    [PS基础教程！教你创建合成火の女](http://weibo.com/1773655610/Dkc0WmdsN)
+    
+    [ps:优设电台入口](http://music.163.com/#/djradio?id=6871001)
