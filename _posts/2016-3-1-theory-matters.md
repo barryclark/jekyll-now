@@ -3,7 +3,7 @@ layout: post
 title: #theoryMatters in neuroscience?
 ---
 
-To promote theoretical and computational neuroscience, I have interviewed a number of neuroscientists with diverse background.
+To promote theoretical and computational neuroscience, I (Memming) have interviewed a number of neuroscientists with diverse background.
 Most of these interviews took place at [COSYNE 2016](http://www.cosyne.org/c/index.php?title=Cosyne_16) main meeting (Salt lake city, Utah).
 
 The videos were promoted on twitter with hashtag: **#theoryMatters**

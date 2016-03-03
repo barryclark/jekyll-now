@@ -29,6 +29,8 @@ permalink: /people/
 * This could be you!
 * We are [hiring]({% post_url 2015-4-21-Hiring %})!!
 
+----
+
 # Past members
 
 ## Tzvia Pinkhasov
