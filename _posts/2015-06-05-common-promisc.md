@@ -97,3 +97,7 @@ tags: [common]
     [PS基础教程！教你创建合成火の女](http://weibo.com/1773655610/Dkc0WmdsN)
     
     [ps:优设电台入口](http://music.163.com/#/djradio?id=6871001)
+    
+7. **swift 极客学院**
+	
+    [swift 极客学院](http://wiki.jikexueyuan.com/project/swift/)
