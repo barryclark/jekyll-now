@@ -156,7 +156,7 @@ One of my favorites! Floating elements can be done in a variety of ways. The com
 
 ...And that's it: three easy parallax techniques, done!
 
-####Some Important Things to Note
+#### Some Important Things to Note
 As previously mentioned, there are downsides to using parallax design (these downsides are completely situational and might not necessarily apply to what you're trying to achieve). <strong>First</strong>, many sites that use parallax design also sport a single page layout. This is not so good for SEO as there's only one set of meta information, one title, one header, etc. <strong>Second</strong>, page load time can be increased and scroll speed/smoothness decreased. It's important not to be heavy handed with large images and parallax-based animation. <strong>Third</strong>, there is a chance for some incompatibility when used with mobile and responsive design.
 
 Parallax is a fun way to make your site more interactive by telling a story, adding depth, and highlighting call to actions. Keep it simple!
