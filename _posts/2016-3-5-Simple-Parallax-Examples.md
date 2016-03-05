@@ -11,8 +11,11 @@ Parallax on the web is all the rage! Typically, items on the page move at variou
 #### Parallax Header
 You've seen it before. As the page is scrolled the header image appears as if it's being covered by the content below and the header text appears to be following your scroll. This is actually just a fixed background image and a translateY on the text node.
 
+<img class="blog-gif" src="/images/header_parallax.jpg" alt="Header Parallax Effect">
+<p class="caption">Hover over images to watch animation</p>
+
 <strong>Markup (Jade)</strong>
-{% highlight jade linenos %}
+{% highlight html linenos %}
  body
   header
     h2 <span>[&nbsp;</span>hooli<sup>XYZ</sup><span>&nbsp;]</span>
@@ -34,7 +37,7 @@ You've seen it before. As the page is scrolled the header image appears as if it
 {% endhighlight %}
 
 <strong>Code (jQuery)</strong>
-{% highlight jQuery linenos %}
+{% highlight javascript linenos %}
  var headerHeight = $('header').height();
 
  // listen to scroll of window to tell what's moving whenever the window scrolls
@@ -52,29 +55,32 @@ You've seen it before. As the page is scrolled the header image appears as if it
 #### Landing Elements
 Landing elements are things that sort of appear when you scroll into a new area. They're great attention grabbers! In this example, we are using our styles to do most of the work. The jQuery code only adds a class to each html element we want to reveal, in order, every 180 milliseconds.
 
+<img class="blog-gif" src="/images/landing_parallax.jpg" alt="Landing Parallax Effect">
+
 <strong>Markup (Jade)</strong>
-{% highlight jade linenos %}
-section.content
-    article
-      h2 Who Are We
-      
-      p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-      
-      .corporate-icons
-        .row.img-row
-          figure.four.columns
-            img(src="images/graphic_kanban.svg")
-            figcaption
-          figure.four.columns
-            img(src="images/graphic_playbook.svg")
-          figure.four.columns
-            img(src="images/graphic_kanban.svg")
+{% highlight html linenos %}
+ section.content
+  article
+    h2 Who Are We
+
+    p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do...
+
+    .corporate-icons
+      .row.img-row
+        figure.four.columns
+          img(src="images/graphic_kanban.svg")
+          figcaption
+        figure.four.columns
+          img(src="images/graphic_playbook.svg")
+        figure.four.columns
+          img(src="images/graphic_kanban.svg")
 {% endhighlight %}
 
 <strong>Style (Sass)</strong>
 {% highlight Sass linenos %}
  .corporate-icons
   margin-bottom: 100px
+
   figure
     opacity: 0
     transform: translateY(100px)
@@ -86,12 +92,14 @@ section.content
 {% endhighlight %}
 
 <strong>Code (jQuery)</strong>
-{% highlight jQuery linenos %}
+{% highlight javascript linenos %}
  $(window).scroll(function() {
   // how far you've scrolled from the top of the window (position: 0)
   var wScroll = $(this).scrollTop();
+
   // look at how far corporate-icons is from the top.
   // if the distance scrolled from the top is greater than when the corporate-icons div is within 20% of the window height, add a class to the figures
+
   if (wScroll > $('.corporate-icons').offset().top - ($(window).height() / 1.2)) {
     // if we changed the conditional to if (wScroll > $('.corporate-icons').offset().top), the function below would execute when the corporate-icons div was at the very top of the window (completely in view)
 
@@ -109,11 +117,13 @@ section.content
 #### Floating Elements
 One of my favorites! Floating elements can be done in a variety of ways. The commonality is that floating elements are controlled by your scroll. Things move around on the screen based on scroll speed and scroll position. In the code we simply translate the position of our spaceship with each pixel scrolled.
 
+<img class="blog-gif" src="/images/floating_parallax.jpg" alt="Floating Parallax Effect">
+
 <strong>Markup (Jade)</strong>
-{% highlight jade linenos %}
-  .corporate-icons
-    // previous code here....
-  .main-window
+{% highlight html linenos %}
+ .corporate-icons
+ // previous code here....
+ .main-window
 {% endhighlight %}
 
 <strong>Style (Sass)</strong>
@@ -132,11 +142,11 @@ One of my favorites! Floating elements can be done in a variety of ways. The com
 {% endhighlight %}
 
 <strong>Code (jQuery)</strong>
-{% highlight jQuery linenos %}
+{% highlight javascript linenos %}
  $(window).scroll(function() {
   // how far you've scrolled from the top of the window (position: 0)
   var wScroll = $(this).scrollTop();
-  
+
   // from the bottom of the window
   if (wScroll > $('.main-window').offset().top - ($(window).height())) {
     $('.main-window').css({'transform': 'translate('+wScroll / 0.8 +'%,-'+wScroll / 8 +'%)'});
@@ -147,4 +157,8 @@ One of my favorites! Floating elements can be done in a variety of ways. The com
 ...And that's it: three easy parallax techniques, done!
 
 ####Some Important Things to Note
-If you're following along with this example and wondering why your page might not look exactly like mine it's because the code snippets leave out some base styles/markup/code. <a href="https://drive.google.com/folderview?id=0B0y-J1kbjmP6bG9ESmZvLUkxMUk&usp=sharing">Click here to get the whole project</a>.
+As previously mentioned, there are downsides to using parallax design (these downsides are completely situational and might not necessarily apply to what you're trying to achieve). <strong>First</strong>, many sites that use parallax design also sport a single page layout. This is not so good for SEO as there's only one set of meta information, one title, one header, etc. <strong>Second</strong>, page load time can be increased and scroll speed/smoothness decreased. It's important not to be heavy handed with large images and parallax-based animation. <strong>Third</strong>, there is a chance for some incompatibility when used with mobile and responsive design.
+
+Parallax is a fun way to make your site more interactive by telling a story, adding depth, and highlighting call to actions. Keep it simple!
+
+ <span>*</span>If you're following along with this example and wondering why your page might not look exactly like mine it's because the code snippets leave out some base styles/markup/code. <a href="https://drive.google.com/folderview?id=0B0y-J1kbjmP6bG9ESmZvLUkxMUk&usp=sharing">Click here to get the whole project</a>.

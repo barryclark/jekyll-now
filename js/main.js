@@ -103,3 +103,23 @@ window.onload = function() {
   });
   elevator.elevate();
 };
+
+var blogGif = $('.blog-gif');
+
+// if hovering over image, swap file extension to from jpg to gif or vice versa
+$(blogGif).hover(
+  function() {
+    var blogGifSrc_gif = $(this).attr('src').substr(0,$(this).attr('src').indexOf('.')) + '.gif';
+    $(this).attr('src', blogGifSrc_gif);
+  },
+  function() {
+    var blogGifSrc_jpg = $(this).attr('src').substr(0,$(this).attr('src').indexOf('.')) + '.jpg';
+    $(this).attr('src', blogGifSrc_jpg);
+});
+
+$(window).scroll(function() {
+  var scroll = $(this).scrollTop();
+  if (scroll > ($(blogGif).offset().top -  $(window).height() / 1.3) ) {
+    $(blogGif).css({'opacity' : '1'});
+  }
+});

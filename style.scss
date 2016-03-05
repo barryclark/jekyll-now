@@ -240,6 +240,27 @@ ol.readable {
   @include mobile { font-size: 12px; }
 }
 
+// blog video gifs
+.blog-gif {
+  opacity: 0.2;
+  transition: all 1s ease-in-out;
+  min-width: 100%;
+
+  &:hover { cursor: pointer; }
+}
+
+.caption {
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  font-family: 'Pontano Sans', sans-serif;
+  font-style: italic;
+
+  @include mobile {
+    text-align: left;
+  }
+}
+
 .top.top-home {
   position: relative;
   -webkit-box-flex: 1;-webkit-flex: 1 0 auto;-ms-flex: 1 0 auto;flex: 1 0 auto;
@@ -739,17 +760,17 @@ nav {
     }
   }
 
-  .caption {
-    font-weight: 400;
-    font-size: 14px;
-    text-align: center;
-    font-family: 'Pontano Sans', sans-serif;
-    font-style: italic;
-
-    @include mobile {
-      text-align: left;
-    }
-  }
+  // .caption {
+  //   font-weight: 400;
+  //   font-size: 14px;
+  //   text-align: center;
+  //   font-family: 'Pontano Sans', sans-serif;
+  //   font-style: italic;
+  //
+  //   @include mobile {
+  //     text-align: left;
+  //   }
+  // }
 
   figure {
     width: 700px;

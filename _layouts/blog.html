@@ -10,7 +10,7 @@ layout: default
       <p class="post-date">{{ post.date | date: "%d %B %Y" }}</p>
 
       <article class="post">
-        {{ post.excerpt | truncatewords: 50 }}
+        {{ post.excerpt | truncatewords: 30 }}
         <p class="readable"><a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a></p>
       </article>
     </article>
