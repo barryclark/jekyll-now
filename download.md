@@ -72,8 +72,8 @@ Cinnamon, Enlightenment, Fluxbox, Gnome, i3, LXDE, LXQT, MATE, Netbook, Openbox 
 Razor-QT and other window-managers are also available for installation from the Official Manjaro repositories.
 
 [Manjaro Stable repository](http://sourceforge.net/projects/manjarolinux/files/) | 
-[Manjaro Pre-Release repository](http://sourceforge.net/projects/manjarolinux/files/)
-
+[Manjaro Testing repository](http://sourceforge.net/projects/manjarotest/files/) |
+[Sonar repository](https://sourceforge.net/projects/sonargnulinux/files/)
 
 ## Download Manjaro using torrents
 
