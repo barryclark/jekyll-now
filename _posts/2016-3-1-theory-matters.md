@@ -13,7 +13,7 @@ The videos were promoted on twitter with hashtag: **#theoryMatters**
 
 ![Computational neuroscience for my real friends, and real neuroscience for my computational friends! (xkcd style)](/images/toasts_compNeuro.png)
 
-(I drew this one morning inspired by this [xkcd](http://xkcd.com/1645/).)
+(I drew this one morning inspired by this [xkcd strip](http://xkcd.com/1645/).)
 
 ----
 1. TOC
@@ -39,10 +39,18 @@ Alex is one of the 3 founders of COSYNE meeting (he explains the history of COSY
 Ben is an experimentalist (electrophysiology and imaging).
 {% include youtubePlayer.html id="V_sEo0VabLo" %}
 
-[//]: ## [Christoph Krist](http://www.rockefeller.edu/research/faculty/independentfellows/ChristophKirst/#content) at Rockefeller
+## [Christoph Krist](http://www.rockefeller.edu/research/faculty/independentfellows/ChristophKirst/#content) at Rockefeller
+{% include youtubePlayer.html id="MD1gdn0XWac" %}
 
-[//]: {% include youtubePlayer.html id="" %}
+## [Eugene Izhikevich](http://www.izhikevich.org/) at Brain Corporation
+CEO of [Brain Corp](http://www.braincorporation.com/), and Editor-in-Chief of [Scholarpedia](http://www.scholarpedia.org/article/User:Eugene_M._Izhikevich).
+{% include youtubePlayer.html id="ViiwjyNgQvg" %}
 
+## [Niru Maheswaranathan]() at Stanford
+Niru is a grad student at Stanford. Both a theorist and experimentalist.
+{% include youtubePlayer.html id="1Xts8PPv5bs" %}
+
+[//]: {% include youtubePlayer.html id="Xr88QNlPW8Y" %}
 
 ----
 Anne Churchland came up with the initial idea of making a promotional video, and I suggested interviewing COSYNE participants. CSHL has a related [blog post](http://labdish.cshl.edu/2016/02/25/if-you-thought-all-neuroscientists-work-with-neurons-youre-wrong/). I designed, filmed, and edited all interviews. This project is partially sponsored by COSYNE.
