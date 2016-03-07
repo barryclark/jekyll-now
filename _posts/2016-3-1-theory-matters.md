@@ -40,7 +40,7 @@ Ben is an experimentalist (electrophysiology and imaging).
 {% include youtubePlayer.html id="V_sEo0VabLo" %}
 
 ## [Christoph Kirst](http://www.rockefeller.edu/research/faculty/independentfellows/ChristophKirst/#content) at Rockefeller
-{% include youtubePlayer.html id="MD1gdn0XWac" %}
+{% include youtubePlayer.html id="dWJXiX1YY3A" %}
 
 ## [Eugene Izhikevich](http://www.izhikevich.org/) at Brain Corporation
 CEO of [Brain Corp](http://www.braincorporation.com/), and Editor-in-Chief of [Scholarpedia](http://www.scholarpedia.org/article/User:Eugene_M._Izhikevich).
