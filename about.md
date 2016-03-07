@@ -4,12 +4,16 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Web Developer in Sheffield.
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+Excellent HTML and CSS knoweldge.
+
+Learning Meteor, GitHub and Jekyll
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+How does this look?
+
+[me@benjaminfell.com](mailto:me@benjaminfell.com)
