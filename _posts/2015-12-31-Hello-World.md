@@ -1,9 +1,10 @@
 ---
 layout: post
-title: You're up and running!
+title: First Blog!
 ---
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+Good Bye to 2015 and Say Hello to 2016.
+
 
 ![_config.yml]({{ site.baseurl }}/images/config.png)
 
