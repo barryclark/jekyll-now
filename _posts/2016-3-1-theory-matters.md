@@ -39,7 +39,7 @@ Alex is one of the 3 founders of COSYNE meeting (he explains the history of COSY
 Ben is an experimentalist (electrophysiology and imaging).
 {% include youtubePlayer.html id="V_sEo0VabLo" %}
 
-## [Christoph Krist](http://www.rockefeller.edu/research/faculty/independentfellows/ChristophKirst/#content) at Rockefeller
+## [Christoph Kirst](http://www.rockefeller.edu/research/faculty/independentfellows/ChristophKirst/#content) at Rockefeller
 {% include youtubePlayer.html id="MD1gdn0XWac" %}
 
 ## [Eugene Izhikevich](http://www.izhikevich.org/) at Brain Corporation
