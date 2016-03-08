@@ -1,3 +1,6 @@
+var homeUrl = "http://dawitelias.github.io/";
+var homeLinkElement = document.querySelectorAll("nav a")[0];
+
 (function swapTopSectionClass() {
   var top_container = document.querySelector(".top");
   var nav_a = document.querySelectorAll(".navbar a");
@@ -43,9 +46,10 @@
     }
   }
 
-  else if (window.location.pathname == "/") {
+  else if (window.location.href == homeUrl) {
     top_container.classList.remove("top-blog", "top-work", "top-dailyui");
     top_container.classList.add("top-home");
+    homeLinkElement.classList.add("current");
   }
 
   // this is a blog post
@@ -53,6 +57,7 @@
     console.log(window.location.pathname);
     top_container.classList.remove("top-home", "top-work", "top-dailyui");
     top_container.classList.add("top-blog");
+    homeLinkElement.classList.remove("current");
 
     for (i=0; i < nav_a.length; i++) {
       node = nav_a[i];
@@ -61,7 +66,6 @@
 
   if (window.location.pathname == "/") {
     $('body').css('display', 'block');
-    // $('nav').css("background", 'rgba(255,255,255,0.1)');
   } else {
     $('body').css({
       'display': '-webkit-flex'
