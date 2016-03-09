@@ -59,7 +59,7 @@ baseurl: ""
 #
 
 gems: [jekyll-paginate]
-markdown: redcarpet
+#markdown: redcarpet
 #pygments: true
 #highlighter: pygments
 #highlighter: rouge
