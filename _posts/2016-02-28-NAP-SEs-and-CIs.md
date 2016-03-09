@@ -3,6 +3,7 @@ layout: post
 title: Standard errors and confidence intervals for NAP
 date: February 28, 2016
 tags: [effect-sizes, single-case-research]
+permalink: NAP-SEs-and-CIs
 ---
 
 [Parker and Vannest (2009)](http://doi.org/10.1016/j.beth.2008.10.006) proposed non-overlap of all pairs (NAP) as an effect size index for use in single-case research. NAP is defined in terms of all pair-wise comparisons between the data points in two different phases for a given case (i.e., a treatment phase versus a baseline phase). For an outcome that is desirable to increase, NAP is the proportion of all such pair-wise comparisons where the treatment phase observation exceeds the baseline phase observation, with pairs that are exactly tied getting a weight of 1/2. NAP belongs to the family of non-overlap measures, which also includes the percentage of non-overlapping data, the improvement rate difference, and several other indices. It is exactly equivalent to [Vargha and Delaney's (2000)](http://doi.org/10.2307/1165329) modified Common Language Effect Size and has been proposed as an effect size index in other contexts too (e.g., [Acion, Peterson, Temple, & Arndt, 2006](http://doi.org/10.1002/sim.2256)). 
@@ -11,7 +12,7 @@ The developers of NAP have created a [web-based tool](http://singlecaseresearch.
 
 ## Preliminaries
 
-Suppose that we have data from the baseline phase and treatment phase for a single case. Let $m$ denote the number of baseline observations and $n$ denote the number of treatment phase observations. Let $y^A_1,...,y^A_m$ denote the baseline phase data and $y^B_1,...,y^B_n$ denote the treatment phase data. Then NAP is calculated as 
+Suppose that we have data from the baseline phase and treatment phase for a single case. Let $$m$$ denote the number of baseline observations and $$n$$ denote the number of treatment phase observations. Let $$y^A_1,...,y^A_m$$ denote the baseline phase data and $$y^B_1,...,y^B_n$$ denote the treatment phase data. Then NAP is calculated as 
 
 $$
 \text{NAP} = \frac{1}{m n} \sum_{i=1}^m \sum_{j=1}^n \left[I\left(y^B_j > y^A_i\right) + 0.5 I\left(y^B_j = y^A_i\right)\right]
@@ -23,7 +24,7 @@ $$
 \theta = \text{Pr}(Y^B > Y^A) + 0.5 \text{Pr}(Y^B = Y^A).
 $$
 
-Vargha and Delaney call $\theta$ the _measure of stochastic superiority_. 
+Vargha and Delaney call $$\theta$$ the _measure of stochastic superiority_. 
 
 NAP is very closely related to another non-overlap index called Tau ([Parker, Vannest, Davis, & Sauber, 2011](http://doi.org/10.1016/j.beth.2010.08.006)). Tau is nothing more than a linear re-scaling of NAP to the range of [-1, 1]: 
 
@@ -37,26 +38,34 @@ $$
 S = \sum_{i=1}^m \sum_{j=1}^n \left[I\left(y^B_j > y^A_i\right) - I\left(y^B_j < y^A_i\right)\right].
 $$
 
-The $S$ is Kendall's S statistic, which is closely related to the Mann-Whitney $U$ test. 
+The $$S$$ is Kendall's S statistic, which is closely related to the Mann-Whitney $$U$$ test. 
 
 Here is an R function for calculating NAP:
 
-```{r NAP}
+
+{% highlight r %}
 NAP <- function(yA, yB) {
   m <- length(yA)
   n <- length(yB)
   U <- sum(sapply(yA, function(i) sapply(yB, function(j) (j > i) + 0.5 * (j == i))))
   U / (m * n)
 }
-```
+{% endhighlight %}
 
 Using the data from the worked example in [Parker and Vannest (2009)](http://doi.org/10.1016/j.beth.2008.10.006), the function result agrees with their reported NAP of 0.96:
 
-```{r NAP_example}
+
+{% highlight r %}
 yA <- c(4, 3, 4, 3, 4, 7, 5, 2, 3, 2)
 yB <- c(5, 9, 7, 9, 7, 5, 9, 11, 11, 10, 9)
 NAP(yA, yB)
-```
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## [1] 0.9636364
+{% endhighlight %}
 
 ## Standard errors
 
@@ -66,13 +75,13 @@ $$
 \text{SE}_{\text{Tau}} = \sqrt{\frac{m + n + 1}{3 m n}}.
 $$
 
-This formula appears to actually be the standard error for Tau, rather than for NAP. Since $\text{NAP} = \left(\text{Tau} + 1\right) / 2$, the standard error for NAP should be half as large:
+This formula appears to actually be the standard error for Tau, rather than for NAP. Since $$\text{NAP} = \left(\text{Tau} + 1\right) / 2$$, the standard error for NAP should be half as large:
 
 $$
 \text{SE}_{null} = \sqrt{\frac{m + n + 1}{12 m n}}
 $$
 
-(cf. [Grissom & Kim, 2001, p. 141](http://dx.doi.org/10.1037/1082-989X.6.2.135)). However, even the latter formula is not always correct. It is valid only when the observations are all mutually independent and when the treatment phase data are drawn from the same distribution as the baseline phase data---that is, when the treatment has no effect on the outcome. I've therefore denoted it as $\text{SE}_{null}$.
+(cf. [Grissom & Kim, 2001, p. 141](http://dx.doi.org/10.1037/1082-989X.6.2.135)). However, even the latter formula is not always correct. It is valid only when the observations are all mutually independent and when the treatment phase data are drawn from the same distribution as the baseline phase data---that is, when the treatment has no effect on the outcome. I've therefore denoted it as $$\text{SE}_{null}$$.
 
 ### Other standard error estimators 
 
@@ -91,18 +100,19 @@ $$
 V_{HM} = \frac{1}{mn} \left[\text{NAP}\left(1 - \text{NAP}\right) + (n - 1)\left(Q_1 - \text{NAP}^2\right) + (m - 1)\left(Q_2 - \text{NAP}^2\right)\right],
 $$
 
-with $\text{SE}_{HM} = \sqrt{V_{HM}}$. 
+with $$\text{SE}_{HM} = \sqrt{V_{HM}}$$. 
 
-The same authors also propose a different estimator, which is based on the assumption that the outcome data are exponentially distributed. Even though this is a strong and often inappropriate assumption, there is evidence that this estimator works even for other, non-exponential distributions. [Newcombe (2006)](http://dx.doi.org/10.1002/sim.2324) suggested a further modification of their estimator, and I'll describe his version. Let $h = (m + n) / 2 - 1$. Then 
+The same authors also propose a different estimator, which is based on the assumption that the outcome data are exponentially distributed. Even though this is a strong and often inappropriate assumption, there is evidence that this estimator works even for other, non-exponential distributions. [Newcombe (2006)](http://dx.doi.org/10.1002/sim.2324) suggested a further modification of their estimator, and I'll describe his version. Let $$h = (m + n) / 2 - 1$$. Then 
 
 $$
 V_{New} = \frac{h}{mn} \text{NAP}\left(1 - \text{NAP}\right)\left[\frac{1}{h} + \frac{1 - \text{NAP}}{2 - \text{NAP}} + \frac{\text{NAP}}{1 + \text{NAP}}\right],
 $$
 
-with $\text{SE}_{New} = \sqrt{V_{New}}$.
+with $$\text{SE}_{New} = \sqrt{V_{New}}$$.
 
 Here are R functions to calculate each of these variance estimators.
-```{r SEs}
+
+{% highlight r %}
 V_HM <- function(yA, yB) {
   m <- length(yA)
   n <- length(yB)
@@ -122,15 +132,29 @@ V_New <- function(yA, yB) {
 }
 
 sqrt(V_HM(yA, yB))
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## [1] 0.03483351
+{% endhighlight %}
+
+
+
+{% highlight r %}
 sqrt(V_New(yA, yB))
-```
+{% endhighlight %}
 
-```{r, include = FALSE}
-m <- length(yA)
-n <- length(yB)
-```
 
-For the worked example dataset from Parker and Vannest, the Newcombe estimator yields a standard error that is about `r round(100 * sqrt(V_New(yA, yB)) / sqrt(V_HM(yA, yB)) - 100)`% larger than the Hanley-McNeil estimator. Both of these are substantially smaller than the null standard error, which in this example is $\text{SE}_{null} = `r round(sqrt((m + n + 1) / (12 * m * n)), 3)`$. 
+
+{% highlight text %}
+## [1] 0.04370206
+{% endhighlight %}
+
+
+
+For the worked example dataset from Parker and Vannest, the Newcombe estimator yields a standard error that is about 25% larger than the Hanley-McNeil estimator. Both of these are substantially smaller than the null standard error, which in this example is $$\text{SE}_{null} = 0.129$$. 
 
 ### A small simulation 
 
@@ -141,8 +165,8 @@ Y^A \sim N(0, 1) \qquad \text{and} \qquad Y^B \sim N\left(\sqrt{2}\Phi^{-1}(\the
 $$
 
 for varying values of the effect size estimand ($\theta$) and a couple of different sample sizes. 
-```{r SE_simulation, cache = TRUE, message = FALSE, warning = FALSE, fig.width = 10, fig.height = 8}
 
+{% highlight r %}
 sample_NAP <- function(delta, m, n, iterations) {
   NAPs <- replicate(iterations, {
     yA <- rnorm(m)
@@ -170,34 +194,26 @@ params %>%
   mutate(se_null = sqrt((m + n + 1) / (12 * m * n))) %>%
   gather("sd","val", sd, SE_HM, SE_New, se_null) ->
   NAP_sim
-```
-```{r, message = FALSE, fig.width = 10, fig.height = 9}
+{% endhighlight %}
+
+{% highlight r %}
 library(ggplot2)
 ggplot(NAP_sim, aes(theta, val, color = sd)) + 
   facet_grid(n ~ m, labeller = "label_both") + 
   geom_line() + 
   theme_bw() + theme(legend.position = "bottom")
-```
+{% endhighlight %}
 
-In the above figure, the actual sampling standard deviation of NAP (in red) and the value of $\text{SE}_{null}$ (in purple) are plotted against the true value of $\theta$, with separate plots for various combinations of $m$ and $n$. The expected value of the standard errors $\text{SE}_{HM}$ and $\text{SE}_{New}$ (actually the square root of the expectation of the variance estimators) are depicted in green and blue, respectively. The value of $\text{SE}_{null}$ agrees with the actual standard error when $\delta = 0$, but the two diverge when there is a positive treatment effect. It appears that $\text{SE}_{HM}$ and $\text{SE}_{New}$ both under-estimate the actual standard error when $m$ or $n$ is equal to 5, and over-estimate for the largest values of $\theta$. However, both of these estimators offer a marked improvement over $\text{SE}_{null}$. 
+![plot of chunk unnamed-chunk-2]({{site.url}}/figure/2016-02-28-NAP-SEs-and-CIs/unnamed-chunk-2-1.png) 
 
-```{r relative_bias, eval = FALSE, echo = FALSE, fig.width = 10, fig.height = 8}
-NAP_sim %>%
-  spread(sd, val) %>%
-  mutate(SE_HM = SE_HM / sd, SE_New = SE_New / sd) %>%
-  select(-sd, -se_null) %>%
-  gather("sd","rb", SE_HM, SE_New) %>%
-  ggplot(aes(theta, rb, color = sd)) + 
-    facet_grid(n ~ m, labeller = "label_both") + 
-    geom_line() + 
-    labs(y = "Relative bias") + 
-    theme_bw()
-```
+In the above figure, the actual sampling standard deviation of NAP (in red) and the value of $$\text{SE}_{null}$$ (in purple) are plotted against the true value of $$\theta$$, with separate plots for various combinations of $$m$$ and $$n$$. The expected value of the standard errors $$\text{SE}_{HM}$$ and $$\text{SE}_{New}$$ (actually the square root of the expectation of the variance estimators) are depicted in green and blue, respectively. The value of $$\text{SE}_{null}$$ agrees with the actual standard error when $$\delta = 0$$, but the two diverge when there is a positive treatment effect. It appears that $$\text{SE}_{HM}$$ and $$\text{SE}_{New}$$ both under-estimate the actual standard error when $$m$$ or $$n$$ is equal to 5, and over-estimate for the largest values of $$\theta$$. However, both of these estimators offer a marked improvement over $$\text{SE}_{null}$$. 
+
+
 
 
 ## Confidence intervals
 
-The webtool at [singlecaseresearch.org](http://www.singlecaseresearch.org/calculators/nap) also reports 85% and 90% confidence intervals for NAP. These confidence intervals appear to have the same two problems as the standard errors. First, they are constructed as CIs for Tau rather than for NAP. For the $100\% \times (1 - \alpha)$ CI, let $z_{\alpha / 2}$ be the appropriate critical value from a standard normal distribution. The CIs reported by the webtool are given by 
+The webtool at [singlecaseresearch.org](http://www.singlecaseresearch.org/calculators/nap) also reports 85% and 90% confidence intervals for NAP. These confidence intervals appear to have the same two problems as the standard errors. First, they are constructed as CIs for Tau rather than for NAP. For the $$100\% \times (1 - \alpha)$$ CI, let $$z_{\alpha / 2}$$ be the appropriate critical value from a standard normal distribution. The CIs reported by the webtool are given by 
 
 $$
 \text{Tau} \pm \text{SE}_{\text{Tau}} \times z_{\alpha / 2}. 
@@ -211,30 +227,30 @@ $$
 
 In parallel with the standard error formulas, I'll call this formula the null confidence interval. Funnily enough, the upper bound of the null CI is the same as the upper bound of the Tau CI. However, the lower bound is going to be quite a bit larger than the lower bound for the Tau CI, so that the null CI will be much narrower. 
 
-The second problem is that even the null CI has poor coverage properties because it is based on $\text{SE}_{null}$, which can drastically over-estimate the standard error of NAP for non-null values. 
+The second problem is that even the null CI has poor coverage properties because it is based on $$\text{SE}_{null}$$, which can drastically over-estimate the standard error of NAP for non-null values. 
 
 ### Other confidence intervals
 
-As I noted above, there has been a fair amount of previous research into how to construct CIs for $\theta$, the parameter estimated by NAP. As is often the case with these sorts of problems, there are many different methods available, scattered across the literature. Fortunately, there are two (at least) fairly comprehensive simulation studies that compare the performance of various methods under a wide range of conditions. [Newcombe (2006)](http://dx.doi.org/10.1002/sim.2324) examined a range of methods based on inverting Wald-type test statistics (which give CIs of the form $\text{estimate} \pm \text{SE} \times z_{\alpha / 2}$, where $\text{SE}$ is some standard error estimate) and score-based methods (in which the standard error is estimated using the candidate parameter value). Based on an extensive simulation, he suggested a score-based method in which the end-points of the CI are defined the values of $\theta$ that satisfy: 
+As I noted above, there has been a fair amount of previous research into how to construct CIs for $$\theta$$, the parameter estimated by NAP. As is often the case with these sorts of problems, there are many different methods available, scattered across the literature. Fortunately, there are two (at least) fairly comprehensive simulation studies that compare the performance of various methods under a wide range of conditions. [Newcombe (2006)](http://dx.doi.org/10.1002/sim.2324) examined a range of methods based on inverting Wald-type test statistics (which give CIs of the form $$\text{estimate} \pm \text{SE} \times z_{\alpha / 2}$$, where $$\text{SE}$$ is some standard error estimate) and score-based methods (in which the standard error is estimated using the candidate parameter value). Based on an extensive simulation, he suggested a score-based method in which the end-points of the CI are defined the values of $$\theta$$ that satisfy: 
 
 $$
 (\text{NAP} - \theta)^2 = \frac{z^2_{\alpha / 2} h \theta (1 - \theta)}{mn}\left[\frac{1}{h} + \frac{1 - \theta}{2 - \theta} + \frac{\theta}{1 + \theta}\right],
 $$
 
-where $h = (m + n) / 2 - 1$. This equation is a fourth-degree polynomial in $\theta$, easily solved using a numerical root-finding algorithm. 
+where $$h = (m + n) / 2 - 1$$. This equation is a fourth-degree polynomial in $$\theta$$, easily solved using a numerical root-finding algorithm. 
 
-In a different simulation study, [Ruscio and Mullen (2012)](http://dx.doi.org/10.1080/00273171.2012.658329) examined the performance of a selection of different confidence intervals for $\theta$, including several methods not considered by Newcombe. Among the methods that they examined, they find that the bias-corrected, accelerated (BCa) bootstrap CI performs particularly well (and seems to outperform the score-based CI recommended by Newcombe). 
+In a different simulation study, [Ruscio and Mullen (2012)](http://dx.doi.org/10.1080/00273171.2012.658329) examined the performance of a selection of different confidence intervals for $$\theta$$, including several methods not considered by Newcombe. Among the methods that they examined, they find that the bias-corrected, accelerated (BCa) bootstrap CI performs particularly well (and seems to outperform the score-based CI recommended by Newcombe). 
 
-Neither [Newcombe (2006)](http://dx.doi.org/10.1002/sim.2324) nor [Ruscio and Mullen (2012)](http://dx.doi.org/10.1080/00273171.2012.658329) considered constructing a confidence interval by directly pivoting the Mann-Whitney U test (the same technique used to construct confidence intervals for the Hodges-Lehmann estimator of location shift), although it seems to me that this would be possible and potentially an attractive approach in the context of SCDs. The main caveat is that such a CI would require stronger distributional assumptions than those studied in the simulations, such as that the distributions of $Y^A$ and $Y^B$ differ by an additive (or multiplicative) constant. In any case, it seems like it would be worth exploring this approach too.
+Neither [Newcombe (2006)](http://dx.doi.org/10.1002/sim.2324) nor [Ruscio and Mullen (2012)](http://dx.doi.org/10.1080/00273171.2012.658329) considered constructing a confidence interval by directly pivoting the Mann-Whitney U test (the same technique used to construct confidence intervals for the Hodges-Lehmann estimator of location shift), although it seems to me that this would be possible and potentially an attractive approach in the context of SCDs. The main caveat is that such a CI would require stronger distributional assumptions than those studied in the simulations, such as that the distributions of $$Y^A$$ and $$Y^B$$ differ by an additive (or multiplicative) constant. In any case, it seems like it would be worth exploring this approach too.
 
 ### Another small simulation
 
-Here is an R function for calculating several different CIs for $\theta$, including the null CI, Wald-type CIs based on $V_{HM}$ and $V_{New}$, and the score-type CI recommended by [Newcombe (2006)](http://dx.doi.org/10.1002/sim.2324). I haven't programmed the BCa bootstrap because it would take a bit more thought to figure out how to simulate it efficiently. 
+Here is an R function for calculating several different CIs for $$\theta$$, including the null CI, Wald-type CIs based on $$V_{HM}$$ and $$V_{New}$$, and the score-type CI recommended by [Newcombe (2006)](http://dx.doi.org/10.1002/sim.2324). I haven't programmed the BCa bootstrap because it would take a bit more thought to figure out how to simulate it efficiently. 
 
 The following code simulates the coverage rates of nominal 90% CIs based on each of these methods, following the same simulation set-up as above. 
 
-```{r}
 
+{% highlight r %}
 NAP_CIs <- function(yA, yB, alpha = .05) {
   m <- length(yA)
   n <- length(yB)
@@ -268,9 +284,24 @@ NAP_CIs <- function(yA, yB, alpha = .05) {
 }
 
 NAP_CIs(yA, yB)
-```
+{% endhighlight %}
 
-```{r CI_simulation, cache = TRUE, message = FALSE, warning = FALSE, fig.width = 10, fig.height = 8}
+
+
+{% highlight text %}
+## $NAP
+## [1] 0.9636364
+## 
+## $CI
+##              lower     upper
+## null     0.7106061 1.2166666
+## HM       0.8953639 1.0319088
+## Newcombe 0.8779819 1.0492908
+## score    0.7499741 0.9950729
+{% endhighlight %}
+
+
+{% highlight r %}
 sample_CIs <- function(delta, m, n, alpha = .05, iterations) {
   NAPs <- replicate(iterations, {
     yA <- rnorm(m)
@@ -285,20 +316,21 @@ sample_CIs <- function(delta, m, n, alpha = .05, iterations) {
 params %>% 
   do(sample_CIs(delta = .$delta, m = .$m, n = .$n, alpha = .10, iterations = 5000)) ->
   NAP_CI_sim
+{% endhighlight %}
 
-```
 
-```{r, fig.width = 10, fig.height = 9}
+{% highlight r %}
 ggplot(NAP_CI_sim, aes(theta, coverage, color = CI)) + 
   facet_grid(n ~ m, labeller = "label_both", scales = "free_y") + 
   geom_line() + 
   labs(y = "SE") + 
   geom_hline(yintercept=.90, linetype="dashed") +
   theme_bw() + theme(legend.position = "bottom")
+{% endhighlight %}
 
-```
+![plot of chunk unnamed-chunk-4]({{site.url}}/figure/2016-02-28-NAP-SEs-and-CIs/unnamed-chunk-4-1.png) 
 
-The figure above plots the coverage rates of several different confidence intervals for $\theta$: the naive CI (in blue), the HM Wald CI (red), the Newcombe Wald CI (green), and the Newcombe score CI (purple). The dashed horizontal line is the nominal coverage rate of 90%. It can be seen that the null CI has the correct coverage only when $\theta \leq .6$; for larger values of $\theta$, its coverage becomes too conservative (tending towards 100%). The Wald-type CIs have below-nominal coverage rates, which improve as the sample size in each phase increases but remain too liberal even at the largest sample size considered. Finally, Newcombe's score CI maintains close-to-nominal coverage over a wider range of $\theta$ values. Although these CIs have below-nominal coverage for the smallest sample sizes, they generally have good coverage for $\theta < .9$ and when the sample size in each phase is 10 or more. It is also notable that their coverage rates appear to become more accurate as the sample size in a given group increases, even if the sample size in the other group is fairly small and remains constant.
+The figure above plots the coverage rates of several different confidence intervals for $$\theta$$: the naive CI (in blue), the HM Wald CI (red), the Newcombe Wald CI (green), and the Newcombe score CI (purple). The dashed horizontal line is the nominal coverage rate of 90%. It can be seen that the null CI has the correct coverage only when $$\theta \leq .6$$; for larger values of $$\theta$$, its coverage becomes too conservative (tending towards 100%). The Wald-type CIs have below-nominal coverage rates, which improve as the sample size in each phase increases but remain too liberal even at the largest sample size considered. Finally, Newcombe's score CI maintains close-to-nominal coverage over a wider range of $$\theta$$ values. Although these CIs have below-nominal coverage for the smallest sample sizes, they generally have good coverage for $$\theta < .9$$ and when the sample size in each phase is 10 or more. It is also notable that their coverage rates appear to become more accurate as the sample size in a given group increases, even if the sample size in the other group is fairly small and remains constant.
 
 ## Caveats
 
