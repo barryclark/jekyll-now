@@ -25,7 +25,8 @@ title: Home
       {% endif %}
     </span>
 
-    {{ post.excerpt }}...
+    {{ post.excerpt }}
+    <a href="{{ site.baseurl }}/{{ post.url }}">Continued...</a>
   </div>
   {% endfor %}
 </div>
