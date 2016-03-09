@@ -21,6 +21,6 @@ As of this post, my setup is as follows:
 * 2 Anubias
 * 2 [LUFFY Giant Marimo Moss Balls](http://www.amazon.com/gp/product/B00LVRRROS?psc=1&redirect=true&ref_=oh_aui_detailpage_o01_s00)
 
-The end goal will be to get some Blue Velvet shrimp in the tank once it's [cycled](http://www.fishlore.com/NitrogenCycle.htm).
+The end goal will be to get some [Blue Velvet shrimp](http://www.aquaeden.co.uk/blue_velvet_shrimp.html) in the tank once it's [cycled](http://www.fishlore.com/NitrogenCycle.htm).
 
 <blockquote class="imgur-embed-pub" lang="en" data-id="a/8ScPd"><a href="//imgur.com/a/8ScPd">Office 3gal</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
