@@ -58,9 +58,10 @@ baseurl: ""
 # !! You don't need to change any of the configuration flags below !!
 #
 
+gems: [jekyll-paginate]
 markdown: redcarpet
 #pygments: true
-highlighter: pygments
+#highlighter: pygments
 #highlighter: rouge
 permalink: /:title/
 safe: false
