@@ -46,11 +46,12 @@ Ben is an experimentalist (electrophysiology and imaging).
 CEO of [Brain Corp](http://www.braincorporation.com/), and Editor-in-Chief of [Scholarpedia](http://www.scholarpedia.org/article/User:Eugene_M._Izhikevich).
 {% include youtubePlayer.html id="ViiwjyNgQvg" %}
 
-## [Niru Maheswaranathan]() at Stanford
+## [Niru Maheswaranathan](http://niru.org/) at Stanford
 Niru is a grad student at Stanford. Both a theorist and experimentalist.
 {% include youtubePlayer.html id="1Xts8PPv5bs" %}
 
-[//]: {% include youtubePlayer.html id="Xr88QNlPW8Y" %}
+## [Allie Fletcher](https://users.soe.ucsc.edu/~afletcher/) at UCLA
+{% include youtubePlayer.html id="uaN9qq7dfjE" %}
 
 ----
 Anne Churchland came up with the initial idea of making a promotional video, and I suggested interviewing COSYNE participants. CSHL has a related [blog post](http://labdish.cshl.edu/2016/02/25/if-you-thought-all-neuroscientists-work-with-neurons-youre-wrong/). I designed, filmed, and edited all interviews. This project is partially sponsored by COSYNE.
