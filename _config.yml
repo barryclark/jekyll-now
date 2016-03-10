@@ -58,10 +58,10 @@ baseurl: ""
 # !! You don't need to change any of the configuration flags below !!
 #
 
-gems: [jekyll-paginate]
+
 #markdown: redcarpet
 #pygments: true
-#highlighter: pygments
+highlighter: pygments
 #highlighter: rouge
 permalink: /:title/
 safe: false
@@ -69,15 +69,16 @@ paginate: 10
 paginate_path: "page:num"
 
 # The release of Jekyll Now that you're using
-version: v1.1.0
+version: v3.1.2
 
 # Set the Sass partials directory, as we're using @imports
 sass:
   style: :expanded # You might prefer to minify using :compressed
 
 # Use the following plug-ins
-gems:
-  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+gems: [jekyll-paginate]
+#gems:
+#  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
 
 # Exclude these files from your production _site
 exclude:
