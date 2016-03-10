@@ -66,6 +66,8 @@ tags: [common]
     
     [octeon 资料](http://www.360doc.com/userhome/8887027)
     
+    [阮一峰的博客资料](http://www.ruanyifeng.com/blog/2015/06/poisson-distribution.html)
+    
 6. **网页设计 微博**
 	
     [什么叫做会设计](http://weibo.com/1773655610/DkhJm5ZUW)
