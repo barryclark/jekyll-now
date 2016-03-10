@@ -16,7 +16,11 @@
   <h2>MENU</h2>
   <ul>
     {% for link in site.links %}
-      <li><a href="{{ site.url }}{{ link.url }}">{{ link.title }}</a></li>
+      {% if link.external %}
+        <li><a href="{{ link.url }}" target="_blank">{{ link.title }}</a></li>
+      {% else %}
+        <li><a href="{{ site.url }}{{ link.url }}">{{ link.title }}</a></li>
+      {% endif %}
     {% endfor %}
     <li><a class="feed" href="{{ site.url }}/feed.xml" title="Atom/RSS feed">Feed</a></li>
   </ul>

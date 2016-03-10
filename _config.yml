@@ -57,8 +57,9 @@ links:
   - title: Sobre
     url: /about
   - title: Site CodeShare
-    url: "http://codeshare.com.br"
+    url: http://codeshare.com.br
     external: true
+
 
 # exclude my node related stuff
 exclude: ['package.json', 'src', 'node_modules']
