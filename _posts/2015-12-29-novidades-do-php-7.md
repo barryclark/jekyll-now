@@ -27,11 +27,10 @@ Alguns itens que já estavão nessa condição por algum tempo foram removidos, 
 ainda utilizem algum desses itens.  
 
 Os itens removidos foram:  
-<ul>
-  <li>As tags: <%, <%=, %>, < script language="php">;</li>
-  <li>A extensão **ereg** e com isso todas as funções da mesma (devendo utilizar a partir de agora a extensão **PCRE**);</li>
-  <li>A extensão **mysql** e com isso todas as funções da mesma (devendo utilizar a partir de agora a extensão **mysqli** ou **PDO**);</li>
-</ul>
+
+- As tags: <%, <%=, %>, < script language="php">;
+- A extensão **ereg** e com isso todas as funções da mesma (devendo utilizar a partir de agora a extensão **PCRE**);
+- A extensão **mysql** e com isso todas as funções da mesma (devendo utilizar a partir de agora a extensão **mysqli** ou **PDO**);
 
 ## Uniform Variable Syntax
 
@@ -136,15 +135,15 @@ forma para manter a compatibilidade com versões anteriores. Para incorporar as 
 O operador **spacheship( <=> )** foi introduzido para nos ajudar a fazer comparações mais concisas. Veja a expressão abaixo:
 
 {% highlight php %}
+<?php
   $a <=> $b
 {% endhighlight %}
 
 A expressão acima pode nos retornar três resultados diferentes, dependendo do valor das variáveis:  
-<ul>
-  <li>Retorna **-1** se **$a** for menor que **$b**;</li>
-  <li>Retorna **0** se **$a** e **$b** forem iguais;</li>
-  <li>Retorna **1** se **$a** for maior que **$b**;</li>
-</ul>
+
+- Retorna **-1** se **$a** for menor que **$b**;
+- Retorna **0** se **$a** e **$b** forem iguais;
+- Retorna **1** se **$a** for maior que **$b**;
 
 ## Null Coalesce Operator (??)
 
@@ -152,12 +151,14 @@ Esse novo operador veio para diminuir o esforço que gastamos quando nos deparam
 Nas versões anteriores do PHP utilizamos a seguinte maneira:
 
 {% highlight php %}
+<?php
   $a = isset($b) ? $b : "default";
 {% endhighlight %}
 
 No **PHP 7** utilizando o novo operador, podemos fazer apenas assim:
 
 {% highlight php %}
+<?php
   $a = $b ?? "default";
 {% endhighlight %}
 

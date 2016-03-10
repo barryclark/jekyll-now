@@ -83,10 +83,11 @@ objeto que criarmos terá um método. Vamos ver a forma correta de se fazer mais
 
 ## Herança em JavaScript
 
-Primeiramente vamos entender o que é `herança`:
+Primeiramente vamos entender o que é `herança`:  
+
 > É um mecanismo onde uma classe pai (superclasse) passa suas características para classes filhas (subclasses).
 Uma classe que herda as características de outra pode ter características próprias além das herdadas.  
-
+  
 Como no JavaScript as `classes` são `simuladas`, não podemos implementar a `herança` como outras linguagens
 orientadas a objetos, devemos utilizar algumas técnicas que veremos a seguir.
 
@@ -195,6 +196,6 @@ gray_one.showRegistry();
 var reptilian_one = new Reptilian('ADVQ4490', 227, 'Mars', 'Red');
 reptilian_one.showRegistry();
 {% endhighlight %}  
-  
+
 > Há outras formas de se implementar a herança em JavaScript, até mesmo formas mais simples com o **ECMAScript 6**,
 mas deixarei para falar sobre essas formas em um próximo artigo! xD
