@@ -30,7 +30,7 @@ src/MyBundle/Resources/views/Login/login.html.twig:
 </form>
 ```
 
-Create the dedicated route.
+Create the dedicated action in the login controller.
 
 src/MyBundle/Controller/LoginController.php:
 ```php
@@ -38,4 +38,17 @@ public function loginAction()
 {
     return $this->render('MyBundle:Login:login.html.twig');
 }
+```
+
+Create the dedicated route.
+
+src/MyBundle/Resources/config/routing.yml:
+```yml
+admin_login:
+    path:   /admin/login
+    defaults: { _controller: MyBundle:Login:login }
+
+admin_login_check:
+    path:   /admin/login-check
+    defaults: { _controller: FOSUserBundle:Security:check }
 ```
