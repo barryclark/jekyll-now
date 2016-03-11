@@ -4,6 +4,7 @@ In this post, we create a secured area in Symfony 2. This area is only accessibl
 
 The first thing to do is to create a login page.
 
+src/MyBundle/Resources/views/Login/login.html.twig:
 ```html
 <form
     action="{{ path("admin_login_check") }}"
@@ -27,4 +28,14 @@ The first thing to do is to create a login page.
         Login
     </button>
 </form>
+```
+
+Create the dedicated route.
+
+src/MyBundle/Controller/LoginController.php:
+```php
+public function loginAction()
+{
+        return $this->render('MyBundle:Login:login.html.twig');
+}
 ```
