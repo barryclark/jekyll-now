@@ -36,6 +36,6 @@ src/MyBundle/Controller/LoginController.php:
 ```php
 public function loginAction()
 {
-        return $this->render('MyBundle:Login:login.html.twig');
+    return $this->render('MyBundle:Login:login.html.twig');
 }
 ```
