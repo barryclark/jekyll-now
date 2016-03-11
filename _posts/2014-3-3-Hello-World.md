@@ -1,9 +1,11 @@
 ---
 layout: post
-title: Salesforce Custom Lightning Component for Community Builder
+title: Salesforce Custom Lightning Component and Community Builder
 ---
 
-If you ever used Community Builder in Salesforce Communities you probably wonder, that list of components is very limited, what can I really do with it? How can I extend this to do more? Well I wondered that too and found building your own Lightniung Components to customize Community is one way to do that. Here lets see how we can add new component so that it is usable in Community builder. (shown below).
+If you ever used Community Builder and Salesforce Communities you probably noticed, the list of components is very limited. How can 
+I extend this to do more? Well I wondered that too and found building your own Lightniung Components to customize Community is one 
+way to do that. Here lets see how we can add new component so that it is usable in Community builder. (shown below).
 
 ![Community Builder]({{ site.baseurl }}/images/cbuilder.png)
 
