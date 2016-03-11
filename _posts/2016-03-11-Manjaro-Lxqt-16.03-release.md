@@ -3,10 +3,10 @@ layout: post
 title: Manjaro Lxqt 16.03 released
 ---
 
-<img src="https://manjaro.github.io/images/manjaro-lxqt-16.03.jpg">
-
 The Manjaro Community is proud to present our new **Lxqt Edition**.  
 Manjaro-Lxqt aims to be light, fast and resource friendly, yet at the same time complete and ready to use for all typical everyday office- and multimedia-needs.
+
+<img src="https://manjaro.github.io/images/manjaro-lxqt-16.03.jpg">
 
 **Main programs**:
 
