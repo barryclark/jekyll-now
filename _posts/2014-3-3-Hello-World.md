@@ -44,5 +44,3 @@ That is it save component and had over to Community Builder and now we can see o
 Drag this component to community page and we can now set its property URL to navigate to our web site. Redy, publish these changes and prview the community page. Now we have a reusable URL button to use with Community Builder.
 
 Now that give me some ideas how basic templates with Community Builder together with custom lightning components nad clever CSS can be used to deliver really powerful content based in Salesforce.com platform.
-
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
