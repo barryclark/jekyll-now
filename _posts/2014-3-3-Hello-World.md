@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Salesforce Lightning Component for Communities
+title: Salesforce Custom Lightning Component for Community Builder
 ---
 
 If you ever used Community Builder in Salesforce Communities you probably wonder, that list of components is very limited, what can I really do with it? How can I extend this to do more? Well I wondered that too and found building your own Lightniung Components to customize Community is one way to do that. Here lets see how we can add new component so that it is usable in Community builder. (shown below).
@@ -37,10 +37,10 @@ Save this component and try in Community Builder. hmm do not see my new componen
 ```
 
 Now if we want to go further we can add SVG icon represnting our new component, for now lets leave that default.
-That is it save component and had over to Community Builder and now we can see our new component under the Page Editor section Custom Components. MyLinkButton with default Lightning icon is available for use in the community. 
+That is it, save component and go to Community Builder and now we can see our new component under the Page Editor section Custom Components. MyLinkButton with default Lightning icon is available for use in the community. 
 
 ![Page Editor]({{ site.baseurl }}/images/pageeditor.png)
 
-Drag this component to community page and we can now set its property URL to navigate to our web site. Redy, publish these changes and prview the community page. Now we have a reusable URL button to use with Community Builder.
+Drag this component to community page and we can now set its property URL to navigate to our web site. Redy, publish these changes and preview this community page. Now we have a reusable URL button to use with Community Builder.
 
-Now that give me some ideas how basic templates with Community Builder together with custom lightning components nad clever CSS can be used to deliver really powerful content based in Salesforce.com platform.
+That gives us some ideas on how to use basic templates with Community Builder together with custom lightning components and clever CSS can be used to deliver really powerful content based in Salesforce.com platform.
