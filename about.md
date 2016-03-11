@@ -4,17 +4,13 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Technical Architect with 24 years of industry experience and still coding my way through the Cloud.
 
 ### More Information
 
-"7 years in Cloud" blog was inspired by an old film "7 Years in Tibet" like a film's character a remarkable adventure
+This blog name was inspired by an old film "7 Years in Tibet" like a film's character a remarkable adventure
 of a man transformed by his experiences. I traded my hardware centered programming life for the cloud 7 years ago, when I joined 
 a Cloud services company [Appirio](www.appirio.com), to work with Salesforce.com, AWS, Google and all things Mobile. 
 It is continue to be a transformational journey filled with learning experiences. On this Cloudy path I visited many places, 
 Salesforce, Force.com, Amazon Web Service, Google, Heroku and Mobile iOS apps and I hope that this will continue to be a 
 journey rather than a destination. And I humbly invite you to join as companions along the way.
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
