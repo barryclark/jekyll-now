@@ -28,7 +28,7 @@ Next add attribute so we can let user edit the URL for navigation and set anchor
 </aura:component>
 ```
 
-Save this component and try in Community Builder. hmm do not see my new component yet. Well it is not complete. We need to add a design time part to our component for Builder to know what to do in design time. Open Design section in Developer Console and add URL attribute same as our component, that way we can set this URL from Community Builder on property panel at design time.
+Save this component and try in Community Builder. Still do not see my new component because it is not complete. We need to add a design time part to our component for Builder to know what to do in design time. Open Design section in Developer Console and add URL attribute same as our component, that way we can set this URL from Community Builder on property panel at design time.
 
 ![Design Component]({{ site.baseurl }}/images/designcomponent.png)
 
@@ -38,11 +38,11 @@ Save this component and try in Community Builder. hmm do not see my new componen
 </design:component>
 ```
 
-Now if we want to go further we can add SVG icon represnting our new component, for now lets leave that default.
+Now if we want to go further we can add SVG icon representing our new component, for now lets leave that default.
 That is it, save component and go to Community Builder and now we can see our new component under the Page Editor section Custom Components. MyLinkButton with default Lightning icon is available for use in the community. 
 
 ![Page Editor]({{ site.baseurl }}/images/pageeditor.png)
 
-Drag this component to community page and we can now set its property URL to navigate to our web site. Redy, publish these changes and preview this community page. Now we have a reusable URL button to use with Community Builder.
+Drag this component to community page and we can now set its property URL to navigate to our web site. Ready to publish these changes and preview this community page. Now we have a reusable URL button to use with Community Builder.
 
 That gives us some ideas on how to use basic templates with Community Builder together with custom lightning components and clever CSS can be used to deliver really powerful content based in Salesforce.com platform.
