@@ -28,12 +28,12 @@ Both 32 and 64 bit versions of Manjaro are available in the following flavours (
    `SHA1SUM: 47000216021d95a58456c7a3f85f895939963e14`
 
 
-#### Testbuilds
+#### Pre-Release
 
-  - [manjaro-xfce 16.06-dev (64 bit)](http://sourceforge.net/projects/manjarotest/files/16.06-dev/xfce/minimal/manjaro-xfce-minimal-16.06-dev-x86_64.iso)
-   `SHA1SUM: 9a64ae33d0e48490674126d03c3cb4ce08287516`
-  - [manjaro-xfce 16.06-dev (32 bit)](http://sourceforge.net/projects/manjarotest/files/16.06-dev/xfce/minimal/manjaro-xfce-minimal-16.06-dev-i686.iso)
-   `SHA1SUM: 7f7221d31bf651411fa4306c48ef6eae630ff4f1`
+  - [manjaro-xfce 16.06-pre1 (64 bit)](http://sourceforge.net/projects/manjarolinux/files/release/16.06-pre1/xfce/manjaro-xfce-16.06-pre1-x86_64.iso)
+   `SHA1SUM: d7133c9072ec89cd75aa0ba068ff31fc8d86a00b`
+  - [manjaro-xfce 16.06-pre1 (32 bit)](http://sourceforge.net/projects/manjarolinux/files/release/16.06-pre1/xfce/manjaro-xfce-16.06-pre1-i686.iso)
+   `SHA1SUM: f4e3a09b55d264a6c62b3752744468d8457d7cd5`
 
 ## KDE
 
@@ -42,12 +42,12 @@ Both 32 and 64 bit versions of Manjaro are available in the following flavours (
   - **[manjaro-kde 15.12 (32 bit)](http://sourceforge.net/projects/manjarolinux/files/release/15.12/kde/manjaro-kde-15.12-i686.iso)**
   `SHA1SUM: 3c8e9477af943cbfb15af73396e7a02f62b457df`
 
-#### Testbuilds
+#### Pre-Release
 
-  - [manjaro-kde 16.06-dev (64 bit)](http://sourceforge.net/projects/manjarotest/files/16.06-dev/kde/minimal/manjaro-kde-minimal-16.06-dev-x86_64.iso)
-   `SHA1SUM: 247f7fd3fde5fe5fd4595f38ec87dea217de3b5f`
-  - [manjaro-kde 16.06-dev (32 bit)](http://sourceforge.net/projects/manjarotest/files/16.06-dev/kde/minimal/manjaro-kde-minimal-16.06-dev-i686.iso)
-   `SHA1SUM: 7f7221d31bf651411fa4306c48ef6eae630ff4f1`
+  - [manjaro-kde 16.06-pre1 (64 bit)](http://sourceforge.net/projects/manjarolinux/files/release/16.06-pre1/kde/manjaro-kde-16.06-pre1-x86_64.iso)
+   `SHA1SUM: a15c23d2a3f27369f1d31dbe573a9e4c5c33d921`
+  - [manjaro-kde 16.06-pre1 (32 bit)](http://sourceforge.net/projects/manjarolinux/files/release/16.06-pre1/kde/manjaro-kde-16.06-pre1-i686.iso)
+   `SHA1SUM: e667a18d828206cb53e2bade7a8dc4fdc51ba2b2`
 
 ## Net-Edition
 
@@ -58,6 +58,12 @@ The NET edition of Manjaro provides a base installation without a pre-installed 
   - **[manjaro-net 15.12 (32 bit)](http://sourceforge.net/projects/manjarolinux/files/release/15.12/netinstall/manjaro-net-15.12-i686.iso)**
   `SHA1SUM: 91d721f0325e62685a18447f9ebac4e37c32033c`
 
+#### Pre-Release
+
+  - [manjaro-net 16.06-pre1 (64 bit)](http://sourceforge.net/projects/manjarolinux/files/release/16.06-pre1/netinstall/manjaro-net-16.06-pre1-x86_64.iso)
+   `SHA1SUM: abbd3abf8b80e3704b1b2a16185047bd98a8cce9`
+  - [manjaro-net 16.06-pre1 (32 bit)](http://sourceforge.net/projects/manjarolinux/files/release/16.06-pre1/netinstall/manjaro-net-16.06-pre1-i686.iso)
+   `SHA1SUM: 371c3beea3b03990e2d946ada6c90b2e1e11f757`
 
 ### Other flavours
 
@@ -66,8 +72,8 @@ Cinnamon, Enlightenment, Fluxbox, Gnome, i3, LXDE, LXQT, MATE, Netbook, Openbox 
 Razor-QT and other window-managers are also available for installation from the Official Manjaro repositories.
 
 [Manjaro Stable repository](http://sourceforge.net/projects/manjarolinux/files/) | 
-[Manjaro Testbuilds repository](http://sourceforge.net/projects/manjarotest/files/)
-
+[Manjaro Testing repository](http://sourceforge.net/projects/manjarotest/files/) |
+[Sonar repository](https://sourceforge.net/projects/sonargnulinux/files/)
 
 ## Download Manjaro using torrents
 
