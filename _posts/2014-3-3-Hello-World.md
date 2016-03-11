@@ -5,6 +5,38 @@ title: Salesforce Lightning Component for Communities
 
 If you ever used Community Builder in Salesforce Communities you probably wonder, that list of components is very limited, what can I really do with it? How can I extend this to do more? Well I wondered that too and found building your own Lightniung Components to customize Community is one way to do that. Here lets see how we can add new component so that it is usable in Community builder. (shown below).
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
+![Community Builder]({{ site.baseurl }}/images/cbuilder.png)
+
+On one of my projects I needed to show a simple link burron to navigate to external web site, easy enough right. I could not find such a component on thstandard list. Only way I could do it with adding new menu item, ok but my design called for a button in front-center. I decided to build new component fpr builder to add this. First we need to build new component using Developer console its simple enough crated component MyLinkButton ok. Next component need to be visible to Community Builder need to add implements="forceCommunity:availableForAllPageTypes" and make it available global, here is code for that
+
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global">
+
+Next add attribute so we can let user edit the URL for navigation and set anchor tag, simple the full code look lie this
+
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global">
+    <aura:attribute name="url" type="String" default="http://www.google.com" access="global" />
+    
+    <a href="{!v.url}">
+        Start Something
+    </a>
+    
+</aura:component>
+
+Save this component and try in Community Builder... hmm do not see my new component yet. Well it is not complete. We need to add a design time part to our component for Builder to know what to do in design time. Open Design section in Developer Console and add URL attribute same as our component, that way we can set this URL from Community Builder property panel.
+
+![Design Component]({{ site.baseurl }}/images/designcomponent.png)
+
+<design:component>
+    <design:attribute name="url" label="URL" />
+</design:component>
+
+Now if we want to go further can add SVG icon represnting our new component, for now lets leave that default.
+That is it save component and had over to Community Builder and now we can see our new component unde Page Editor section Custom Components. MyLinkButton with default Lightning icon is available for use in the community. 
+
+![Page Editor]({{ site.baseurl }}/images/pageeditor.png)
+
+Drag this component to community page and we can now set its property URL to navigate to our web site.
+
+Now that give me some ideas how basic templates with Community Builder together with custom lightning components nad clever CSS can be used to deliver really powerful content based in Salesforce.com platform.
 
 The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
