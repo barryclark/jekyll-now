@@ -68,6 +68,8 @@ tags: [common]
     
     [阮一峰的博客资料](http://www.ruanyifeng.com/blog/2015/06/poisson-distribution.html)
     
+    [802.1x+RADIUS认证计费技术原理及设置](http://wenku.baidu.com/view/5d0c6beb5ef7ba0d4a733ba6.html?re=view)
+    
 6. **网页设计 微博**
 	
     [什么叫做会设计](http://weibo.com/1773655610/DkhJm5ZUW)
