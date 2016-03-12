@@ -4,11 +4,17 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+I'm Matt&hellip; a front-end web developer from Nova Scotia.
 
-### More Information
+I've been writing code in some capacity or another for nearly half of my life, and I take pride in building usable, efficient websites.
 
-A place to include any other types of information that you'd like to include about yourself.
+Primarily, I develop for [Wordpress](https://wordpress.org/), but I have enough experience with other content management systems that my knowledge is easily adapted.
+
+### Currently working with
+
+* [Atom](https://atom.io) editor
+* Rapid WordPress theming with [Underscores](http://underscores.me/)
+* This site is made with [Jekyll](https://jekyllrb.com/), and hosted with [GitHub Pages](https://pages.github.com/)
 
 ### Contact me
 

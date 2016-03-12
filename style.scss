@@ -7,6 +7,20 @@
 
 @import "reset";
 @import "variables";
+
+$pink:#EC0B8D;
+$darkpink:#9B0856;
+$blue:#2CA1FE;
+$navy:#1A178C;
+$offwhite:#FFEADA;
+
+
+$serif: 'Gentium Basic', serif;
+$sans: 'Open Sans', sans-serif;
+$titlea: 'Vibur', cursive;
+$titleb: 'Monoton', cursive;
+
+
 // Syntax highlighting @import is at the bottom of this file
 
 /**************/
@@ -15,12 +29,15 @@
 
 html {
   font-size: 100%;
+  position:relative;
+  min-height: 100%;
 }
 
 body {
-	background: $white;
-  font: 18px/1.4 $helvetica;
+	background: black;
+  font: 18px/1.4 $sans;
   color: $darkGray;
+  margin: 0 0 87px;
 }
 
 .container {
@@ -31,7 +48,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
+  font-family: $sans;
   color: $darkerGray;
   font-weight: bold;
 
@@ -152,14 +169,31 @@ img {
 
 .wrapper-masthead {
   margin-bottom: 50px;
+  background:$navy;
+  // box-shadow:0px 5px 40px $pink;
 }
 
 .masthead {
   padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
-
   @include mobile {
     text-align: center;
+  }
+  a {
+    &:hover {
+      color:white;
+    }
+  }
+  nav {
+    a {
+      color:white;
+      text-shadow: 0 0 3px $pink;
+      font-size:.8em;
+      font-weight:bold;
+      text-transform: uppercase;
+      &:hover {
+        color:$blue;
+      }
+    }
   }
 }
 
@@ -194,16 +228,23 @@ img {
   margin: 0;
   color: $darkGray;
   cursor: pointer;
-  font-family: $helveticaNeue;
+  font-family: $titleb;
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
+  a {
+    color:$pink;
+  }
 }
 
 .site-description {
   margin: -5px 0 0 0;
   color: $gray;
-  font-size: 16px;
+  font-size: 24px;
+  font-family:$titlea;
+  letter-spacing:-1px;
+  color:white;
+  text-shadow:0 0 5px $pink;
 
   @include mobile {
     margin: 3px 0;
@@ -225,7 +266,9 @@ nav {
 
   a {
     margin-left: 20px;
-    color: $darkGray;
+    color: white;
+    text-shadow:0 0 3px $pink;
+    font-family:$sans;
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
@@ -241,9 +284,11 @@ nav {
 // .main
 //
 
+#main {
+    padding-bottom:50px;
+}
 .posts > .post {
   padding-bottom: 2em;
-  border-bottom: 1px solid $lightGray;
 }
 
 .posts > .post:last-child {
@@ -251,7 +296,17 @@ nav {
   border-bottom: none;
 }
 
-.post {
+.post, .page {
+  h1, h2, h3, h4, h5, h6 {
+    color:$blue;
+    font-family:$sans;
+    letter-spacing:-1px;
+    a {
+        &:hover {
+            text-shadow: 0 0 20px $pink;
+        }
+    }
+  }
   blockquote {
     margin: 1.8em .8em;
     border-left: 2px solid $gray;
@@ -268,19 +323,58 @@ nav {
   .read-more {
     text-transform: uppercase;
     font-size: 15px;
+    &:hover {
+        text-shadow:0 0 8px $pink;
+    }
+  }
+  .date {
+    font-size:.7em;
+  }
+}
+.entry {
+  font-family:$serif;
+  font-weight:300;
+  color:white;
+  a {
+    color:$pink;
+    &:hover {
+      text-decoration:underline;
+    }
+  }
+  pre {
+    color:black;
   }
 }
 
 .wrapper-footer {
   margin-top: 50px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
+  background-color: $pink;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 87px;
+  width: 100%;
+  .container {
+      height:100%;
+      footer {
+          height:100%;
+          padding:0;
+          line-height:87px;
+      }
+  }
 }
 
 footer {
   padding: 20px 0;
   text-align: center;
+  a {
+    font-size:40px;
+    margin:0 .5em;
+    &:hover {
+      color:white;
+      text-shadow:0 0 3px $darkpink;
+    }
+  }
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS

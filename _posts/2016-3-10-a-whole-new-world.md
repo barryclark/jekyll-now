@@ -3,8 +3,10 @@ layout: post
 title: A whole new world...
 ---
 
-&hellip;a new fantastic point of view. <small>I'm lookin' at you, Universe.</small>
+&hellip;a new fantastic point of view.
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
+The time has come. My web presence is moving to GitHub Pages, and will be powered by Jekyll.
 
-I'm considering a scorched earth style policy for this blog. It may be time for a fresh start. [The old site](http://thinkontheclock.com) has built up a lot of cruft. Should I try to import the old stuff?
+While I still believe in the value of a CMS like WordPress for most end-users, I've been craving a minimalistic, text-oriented workflow like the one that Jekyll offers for my own site for a long time.
+
+Over the next few days, I'll cherry pick the best posts from my [other site](http://thinkontheclock.com) and migrate them here.
