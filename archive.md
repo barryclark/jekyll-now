@@ -3,8 +3,42 @@ layout: page
 title: Archive
 ---
 
-## Blog Posts
+Popular tags: <a href="#machinelearning">Machine Learning</a>, <a href="#python">Python</a>
+
+
+## Reverse Chronological
 
 {% for post in site.posts %}
   * {{ post.date | date_to_string }} &raquo; [ {{ post.title }} ]({{ post.url }})
+{% endfor %}
+
+## Machine Learning 
+
+<a name="machinelearning"></a>
+
+{% for post in site.posts %}
+  {% for tag in post.tags %}
+    {% if tag == "Machine Learning" %}
+  * {{ post.date | date_to_string }} &raquo; [ {{ post.title }} ]({{ site.baseurl }}{{ post.url }})
+
+     {{ post.summary }}
+    {% break %}
+    {% endif %}
+  {% endfor %}
+{% endfor %}
+
+## Python
+
+
+<a name="python"></a>
+
+{% for post in site.posts %}
+  {% for tag in post.tags %}
+    {% if tag == "Python" %}
+  * {{ post.date | date_to_string }} &raquo; [ {{ post.title }} ]({{ site.baseurl }}{{ post.url }})
+
+     {{ post.summary }}
+    {% break %}
+    {% endif %}
+  {% endfor %}
 {% endfor %}

@@ -1,6 +1,9 @@
 ---
 layout: page
 title: Jitter, Convolutional Neural Networks, and a Kaggle Framework
+tags:
+- Machine Learning
+summary: A recipe for approaching Kaggle competitions.
 ---
 
 In this post, we're going to look at the [Digit Recognizer](https://www.kaggle.com/c/digit-recognizer) challenge from Kaggle. This challenge uses the MNIST dataset of handwritten digits. We're going to train a Convolutional Neural Network with [Keras](http://keras.io) to recognize the digits. We will employ some preprocessing steps to improve the generalization of our model.
