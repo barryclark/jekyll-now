@@ -102,7 +102,7 @@ An important piece of this post is the preprocessing we will do to the images. W
 * Shifting the image
 * Rotating the image
 
-We will use NumPy for all of these effects. We will perform each action with probability $p=.7$. The probability that an image is perturbed is $1-(1-.7)^4 = .99$. With a training set of over 32000, we expect approximately 320 images to stay the same. We will repeat this process each epoch.
+We will use NumPy for all of these effects. We will perform each action with probability \\(p=.7\\). The probability that an image is perturbed is \\(1-(1-.7)^4 = .99\\). With a training set of over 32000, we expect approximately 320 images to stay the same. We will repeat this process each epoch.
 
 {% highlight python linenos %}
     def rand_jitter(temp):

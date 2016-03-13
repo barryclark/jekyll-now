@@ -18,7 +18,7 @@ avatar: https://avatars1.githubusercontent.com/u/9755689?v=3&u=90bf932979f6eea3e
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email:
+  email: romescott@gmail.com
   facebook:
   flickr:
   github: srome
@@ -37,7 +37,7 @@ footer-links:
 disqus:
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics:
+google_analytics: UA-75065205-1
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
