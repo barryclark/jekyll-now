@@ -58,6 +58,8 @@ permalink: /:title/
 # The release of Jekyll Now that you're using
 version: v1.2.0
 
+paginate: 5
+
 # Jekyll 3 now only supports Kramdown for Markdown
 kramdown:
   # Use GitHub flavored markdown, including triple backtick fenced code blocks
@@ -76,7 +78,8 @@ sass:
 gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
-
+  - jekyll-paginate
+  
 # Exclude these files from your production _site
 exclude:
   - Gemfile

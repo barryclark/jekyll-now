@@ -4,12 +4,5 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Hi, I'm a mathematics Ph.D. who works in Machine Learning. I code mostly in Python, but occasionally dabble in Java. I like to explore interesting problems and the tools to solve them, usually after I have had too much coffee. Enjoy!
 
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
