@@ -53,7 +53,7 @@ h1
 	color: #0982c1
 {% endhighlight %}
 
-**Observação Pessoal:** Essa sintaxe não é por causa de ser mais antiga e sim pois no início o **Sass** era parte de um outro pré-processador chamado **Haml** criado por desenvolvedores **Ruby**, e por causa disso as folhas de estilo escritas com **Sass** utilizavam uma sintaxe como a do **Ruby**, sem chaves, ponto e vírgula e controlado por identação.
+> **Observação Pessoal:** Essa sintaxe não é por causa de ser mais antiga e sim pois no início o **Sass** era parte de um outro pré-processador chamado **Haml** criado por desenvolvedores **Ruby**, e por causa disso as folhas de estilo escritas com **Sass** utilizavam uma sintaxe como a do **Ruby**, sem chaves, ponto e vírgula e controlado por identação.
 
 ### Stylus
 
