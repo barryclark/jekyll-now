@@ -53,5 +53,11 @@ Niru is a grad student at Stanford. Both a theorist and experimentalist.
 ## [Allie Fletcher](https://users.soe.ucsc.edu/~afletcher/) at UCLA
 {% include youtubePlayer.html id="uaN9qq7dfjE" %}
 
+## [Eero Simoncelli](http://www.cns.nyu.edu/~eero/) at NYU
+{% include youtubePlayer.html id="ZOS8la3ygHQ" %}
+
+## [Matthias Bethge](http://bethgelab.org/) at University of Tuebingen
+{% include youtubePlayer.html id="F3WGccFy1F8" %}
+
 ----
 Anne Churchland came up with the initial idea of making a promotional video, and I suggested interviewing COSYNE participants. CSHL has a related [blog post](http://labdish.cshl.edu/2016/02/25/if-you-thought-all-neuroscientists-work-with-neurons-youre-wrong/). I designed, filmed, and edited all interviews. This project is partially sponsored by COSYNE.
