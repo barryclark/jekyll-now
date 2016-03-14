@@ -24,7 +24,7 @@ Em parceria com o **[FEMUG ABC](http://femug-abc.github.io/)**, a **CodeShare Ed
 
 > Pré-processadores produzem CSS que funciona em todos os browsers  
 
-Ter em mãos o verdadeiro poder de um pré-processador CSS é uma aventura. Existem incontáveis linguagens, sintaxes e funcionalidades todas prontas para uso imediato. Nesse artigo iremos falar sobre diversas funcionalidades e benefícios de usar três pré-processadores diferentes: Sass, LESS e Stylus.  
+Ter em mãos o verdadeiro poder de um pré-processador CSS é uma aventura. Existem incontáveis linguagens, sintaxes e funcionalidades todas prontas para uso imediato. Nesse artigo iremos falar sobre diversas funcionalidades e benefícios de usar três pré-processadores diferentes: **Sass, LESS e Stylus**.  
 
 Pré-processadores CSS3 são linguagens criadas com um único propósito de adicionar funcionalidades legais e criativas para o CSS sem quebrar a compatibilidade entre browsers. Eles fazem isso compilando o código que escrevemos em CSS puro que pode ser usado em qualquer browser de agora até a era das pedras. Os pré-processadores disponibilizam milhares de funcionalidades, e nesse artigo iremos falar sobre as mais utilizadas e conhecidas e algumas nem tanto conhecidas. Vamos começar
 
@@ -34,7 +34,7 @@ A parte mais importante ao escrever códigos utilizando um pré-processador CSS 
 
 ### Sass e LESS
 
-Ambos utilizam o a sintaxe padrão do CSS. Isso faz com que seja extremamente fácil converter um arquivo CSS já existente para qualquer um deles. Sass utiliza arquivos com extensão .scss e LESS com extensão .less. Uma configuração básica de um arquivo Sass ou LESS pode ser como abaixo:  
+Ambos utilizam o a sintaxe padrão do CSS. Isso faz com que seja extremamente fácil converter um arquivo CSS já existente para qualquer um deles. Sass utiliza arquivos com extensão `.scss` e LESS com extensão `.less`. Uma configuração básica de um arquivo Sass ou LESS pode ser como abaixo:  
 
 {% highlight scss %}
 // style.scss ou style.less
@@ -45,18 +45,19 @@ h1 {
 
 Como você pode ter notado, isso é apenas CSS puro, que compila perfeitamente em ambos pré-processadores (Sass e LESS).  
 
-É importante notar que Sass também tem uma sintaxe mais antiga, que omite ponto e vírgula e as chaves. Ainda pode ser usado, mas como é uma sintaxe antiga, não iremos utilizá-la depois deste exemplo. A sintaxe utiliza arquivos com a extensão .sass e são da seguinte maneira:  
+É importante notar que Sass também tem uma sintaxe mais antiga, que omite ponto e vírgula e as chaves. Ainda pode ser usado, mas como é uma sintaxe antiga, não iremos utilizá-la depois deste exemplo. A sintaxe utiliza arquivos com a extensão `.sass` e são da seguinte maneira:  
 
 {% highlight scss %}
 // style.sass
-h1 {
-	color: #0982c1;
-}
+h1
+	color: #0982c1
 {% endhighlight %}
+
+**Observação Pessoal:** Essa sintaxe não é por causa de ser mais antiga e sim pois no início o **Sass** era parte de um outro pré-processador chamado **Haml** criado por desenvolvedores **Ruby**, e por causa disso as folhas de estilo escritas com **Sass** utilizavam uma sintaxe como a do **Ruby**, sem chaves, ponto e vírgula e controlado por identação.
 
 ### Stylus
 
-A sintaxe para o Stylus é muito mais adaptável. Utiliza arquivos com extensão .styl, aceita a sintaxe padrão do CSS, porém também aceita algumas variações onde chaves, dois-pontos e ponto e vírgula são todos opcionais. Por exemplo:
+A sintaxe para o Stylus é muito mais adaptável. Utiliza arquivos com extensão `.styl`, aceita a sintaxe padrão do CSS, porém também aceita algumas variações onde chaves, dois-pontos e ponto e vírgula são todos opcionais. Por exemplo:
 
 {% highlight scss %}
 // style.styl
@@ -88,7 +89,7 @@ Variáveis podem ser declaradas e usadas através das folhas de estilo. Elas pod
 
 ### Sass
 
-Variáveis em Sass tem seu nome começado o símbolo "$" e o nome e o seu valor são separados com dois-pontos, assim como uma propriedade CSS.
+Variáveis em Sass tem seu nome começado o símbolo `$` e o nome e o seu valor são separados com dois-pontos, assim como uma propriedade CSS.
 
 {% highlight scss %}
 $mainColor: #0982c1;
@@ -104,7 +105,7 @@ body {
 
 ### LESS
 
-Varíaves em LESS são praticamente iguais as variáveis no Sass, exceto por começarem seus nomes com o símbolo "@".
+Varíaves em LESS são praticamente iguais as variáveis no Sass, exceto por começarem seus nomes com o símbolo `@`.
 
 {% highlight scss %}
 @mainColor: #0982c1;
@@ -120,7 +121,7 @@ body {
 
 ### Stylus
 
-Variáveis em Stylus não precisam começar com nenhum símbolo, porém ele permite a utilização do símbolo "$". Como sempre, o ponto e vírgula para finalizar não é necessário, mas um sinal de igual entre o nome da variável e seu valor é. Uma coisa importante para se notar é que na versão 0.22.4 do Stylus variáveis com nome começados com o símbolo "@" são compiladas, porém não aplicam seu valor quando referenciadas. Em oturas palavras, não faça isso.
+Variáveis em Stylus não precisam começar com nenhum símbolo, porém ele permite a utilização do símbolo `$`. Como sempre, o ponto e vírgula para finalizar não é necessário, mas um sinal de igual entre o nome da variável e seu valor é. Uma coisa importante para se notar é que na versão 0.22.4 do Stylus variáveis com nome começados com o símbolo `@` são compiladas, porém não aplicam seu valor quando referenciadas. Em oturas palavras, não faça isso.
 
 {% highlight scss %}
 mainColor = #0982c1;
@@ -164,7 +165,7 @@ section nav a:hover {
 }
 {% endhighlight %}
 
-Ao invés disso, usando um pré-processador, podemos escrever os seletores filhos dentro das chaves do elemento pai. O símbolo "&" é usado para referenciar o seletor pai.
+Ao invés disso, usando um pré-processador, podemos escrever os seletores filhos dentro das chaves do elemento pai. O símbolo `&` é usado para referenciar o seletor pai.
 
 ### Sass, LESS e Stylus
 
@@ -209,7 +210,7 @@ section nav a:hover {
 
 ## Mixins
 
-Mixins são funções que permitem reusar propriedades através de nossas folhas de estilo. Ao invés de procurar por todas nossas folhas de estilo e mudar uma propriedade várias vezes, podemos apenas mudar dentro de nosso mixin. Isso pode ser realmente útil para estilização de elementos específicos e para "vendor prefixes" (moz-*, o-*, etc). Quando os mixins são chamados de dentro de um seletor CSS, os argumentos são reconhecidos e os estilos dentro do mixin são aplicados ao seletor.
+Mixins são funções que permitem reusar propriedades através de nossas folhas de estilo. Ao invés de procurar por todas nossas folhas de estilo e mudar uma propriedade várias vezes, podemos apenas mudar dentro de nosso mixin. Isso pode ser realmente útil para estilização de elementos específicos e para "vendor prefixes" (moz-, o-, etc). Quando os mixins são chamados de dentro de um seletor CSS, os argumentos são reconhecidos e os estilos dentro do mixin são aplicados ao seletor.
 
 ### Sass
 
@@ -388,11 +389,11 @@ ol {
 }
 {% endhighlight %}
 
-Como você pode ver, os estilos do seletor .block foram inseridas nos seletores que queríamos aplicar a herança. É importante notar que a prioridade das propriedades pode se tornar um problema, então devemos ter bastante cautela.
+Como você pode ver, os estilos do seletor `.block` foram inseridas nos seletores que queríamos aplicar a herança. É importante notar que a prioridade das propriedades pode se tornar um problema, então devemos ter bastante cautela.
 
 ## Importação
 
-Na comunidade CSs, importar CSS é visto com maus olhos por utilizar diversas chamadas HTTP. Importar com um pré-processador funciona de forma diferente no entanto. Se você importar um arquivo com qualquer um dos três pré-processadores, ele irá literalmente pegar todo o conteúdo do arquivo durante a importação e gerar apenas um arquivo. Lembre-se que arquivos .css comuns importados compilam com o código:
+Na comunidade CSS, importar CSS é visto com maus olhos por utilizar diversas chamadas HTTP. Importar com um pré-processador funciona de forma diferente no entanto. Se você importar um arquivo com qualquer um dos três pré-processadores, ele irá literalmente pegar todo o conteúdo do arquivo durante a importação e gerar apenas um arquivo. Lembre-se que arquivos `.css` comuns importados compilam com o código:
 
 {% highlight scss %}
 @import "file.css";
@@ -433,7 +434,7 @@ p {
 
 ## Funções de Cores
 
-Funções de cores são funções nativas que transformam uma cor por compilação. Podem ser extremamente úteis para criar gradientes, escurecer cores no "hover" de elementos e muito mais.
+Funções de cores são funções nativas que transformam uma cor por compilação. Podem ser extremamente úteis para criar gradientes, escurecer cores no `hover` de elementos e muito mais.
 
 ### Sass
 
