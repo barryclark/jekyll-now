@@ -1,10 +1,14 @@
 ---
 layout: post
 title: test
+published: true
 ---
 
 
+## header
+my post
 
-## test
+![Screenshot 2014-12-12 23.10.17.png]({{site.baseurl}}/_posts/Screenshot 2014-12-12 23.10.17.png)
 
-Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
+text goes here
+
