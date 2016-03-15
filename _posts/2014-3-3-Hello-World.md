@@ -1,7 +1,9 @@
 ---
 layout: post
-title: Markdown2 Style Guide
+title: Markdown24 Style Guide
+published: true
 ---
+
 
 This is a demo of all styled elements in Jekyll Now.
 
