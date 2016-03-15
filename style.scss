@@ -142,6 +142,20 @@ img {
     clear: both;
 }
 
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    border:1px solid #000000;
+}
+
+th{
+    border:1px solid #000000;
+}
+
+td{
+    border:1px solid #000000;
+}
+
 /*********************/
 /* LAYOUT / SECTIONS */
 /*********************/
