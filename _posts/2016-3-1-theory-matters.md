@@ -59,5 +59,8 @@ Niru is a grad student at Stanford. Both a theorist and experimentalist.
 ## [Matthias Bethge](http://bethgelab.org/) at University of Tuebingen
 {% include youtubePlayer.html id="F3WGccFy1F8" %}
 
+## [Arianna Maffei](https://medicine.stonybrookmedicine.edu/neurobiology/faculty/Maffei) at Stony Brook University
+{% include youtubePlayer.html id="EKnzzZDIdDI" %}
+
 ----
 Anne Churchland came up with the initial idea of making a promotional video, and I suggested interviewing COSYNE participants. CSHL has a related [blog post](http://labdish.cshl.edu/2016/02/25/if-you-thought-all-neuroscientists-work-with-neurons-youre-wrong/). I designed, filmed, and edited all interviews. This project is partially sponsored by COSYNE.
