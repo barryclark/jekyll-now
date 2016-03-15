@@ -1,6 +1,8 @@
 ---
 published: false
+layout: post
 ---
+
 
 ## My Test Post
 
@@ -18,4 +20,3 @@ Test content![Screenshot 2016-02-28 20.15.23.png]({{site.baseurl}}/_posts/Screen
 > We loved with a love that was more than love
 
 ### Header
-
