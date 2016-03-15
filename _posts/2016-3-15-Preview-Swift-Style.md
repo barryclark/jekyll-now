@@ -126,6 +126,7 @@ A single whitespace must be use between elements:
 - when declaring a function.
 
 **Preferred:**
+
 ```
 func dummyFunction(number: Int) -> Int {
     var result = 0
@@ -137,7 +138,8 @@ func dummyFunction(number: Int) -> Int {
 }
 ```
 
-**Not Preferred:**
+**Preferred:**
+
 ```
 func dummyFunction(number: Int)->Int {
     var result = 0
@@ -160,13 +162,15 @@ An object is sometimes an optional or not, it might be able to be checked agains
 For this very specific reason, one should always specify what's after the comparison operator: `==`, `!=`, etc.
 
 **Preferred:**
+
 ```
 if (finished == true) {
     // do something
 }
 ```
 
-**Not Preferred:**
+**Preferred:**
+
 ```
 if (finished) {
     // do something
@@ -180,6 +184,7 @@ if (finished) {
 * Braces for `if`/`else`/`switch`/`while` etc. always open and close on the same line as the statement.
 
 **Preferred:**
+
 ```
 if (user.isHappy == true) {
     // Do something
@@ -189,7 +194,8 @@ if (user.isHappy == true) {
 }
 ```
 
-**Not Preferred:**
+**Preferred:**
+
 ```
 if user.isHappy
 {
@@ -208,6 +214,7 @@ else {
 * Only use **alphabetic characters** in variable names. No digit allowed.
 
 **Preferred:**
+
 ```
 class WidgetContainer {
     var widgetButton                    : UIButton? = nil
@@ -217,7 +224,8 @@ class WidgetContainer {
 }
 ```
 
-**Not Preferred:**
+**Preferred:**
+
 ```
 class app_widgetContainer {
     var wBut: UIButton? = nil
@@ -248,6 +256,7 @@ class Guideline {
     func upvoteBy(amount: Int) { ... }
 }
 ```
+
 ### Structures
 
 Use UpperCamelCase for static values within structures:
@@ -321,6 +330,7 @@ It does warn you only if you do not set any `default` case.
 It can be annoying to write multiple times the same case. But, next time a developer adds a case to the enum, Xcode will tell him where he might misses something.
 
 **Preferred:**
+
 ```
 static func isUserRegistered(user: UserState) -> Bool {
     switch user {
@@ -330,7 +340,8 @@ static func isUserRegistered(user: UserState) -> Bool {
 }
 ```
 
-**Not Preferred:**
+**Preferred:**
+
 ```
 static func isUserRegistered(user: UserState) -> Bool {
     switch user {
@@ -352,6 +363,7 @@ The main point is to really structure the comparison and the returned/used value
 Here is a small example in Swift showing all cases:
 
 **Preferred:**
+
 ```
 Int i = 0
 var message : String? = nil
@@ -372,7 +384,8 @@ while (check == true) {
 return (message ?? "message does not exist") // ??
 ```
 
-**Not Preferred:**
+**Preferred:**
+
 ```
 Int i = 0
 var message : String? = nil
@@ -403,6 +416,7 @@ Try to think about rounded brackets like little blocks that should be executed w
 For example:
 
 **Preferred:**
+
 ```
 if (a == b) { ... }
 if (a == b && c == d) { ... }
@@ -411,7 +425,8 @@ if (a == b && (c == d || e == f)) { ... }
 
 This is too much:
 
-**Not Preferred:**
+**Preferred:**
+
 ```
 if ((a == b)) { ... }
 if ((a == b) && (c == d)) { ... }
@@ -425,7 +440,8 @@ The ternary operator is amazing handful and pretty, but it can also be badly use
 A developer should only use it with just one level of operation and with [rounded brackets](#rounded-brackets).
 Without those rules, a developer will code this:
 
-**Not Preferred:**
+**Preferred:**
+
 ```
 value = a == b ? b != c ? 4 : d == e ? 6 : 1 : 0
 ```
@@ -470,6 +486,7 @@ The mark should be use as much as possible to actually separate and structure yo
 The mark should be indented, capitalised and using a separator. It should describe what the next methods are about.
 
 **Preferred:**
+
 ```
 class MyViewController : UIViewController {
 
@@ -480,7 +497,8 @@ class MyViewController : UIViewController {
 }
 ```
 
-**Not Preferred:**
+**Preferred:**
+
 ```
 class MyViewController : UIViewController {
 // MARK: - Actions
@@ -495,6 +513,7 @@ Make sure the code is aligned to itself. This is just about structure and better
 It is also extremely appreciated to use comments to separate the [Class Attributes](#class-attributes) and mark between functions.
 
 **Preferred:**
+
 ```
 class MyViewController                           : UIViewController {
 
@@ -526,7 +545,8 @@ class MyViewController                           : UIViewController {
 
 Please note the differences between the `// MARK: - ` and the missing `weak` references for the IBOutlets.
 
-**Not Preferred:**
+**Preferred:**
+
 ```
 class MyViewController : UIViewController {
 
@@ -560,13 +580,15 @@ Meaning calling a function and giving the result directly to another without cre
 This is absolutely not a bad thing, if it is well done and well structured. 
 
 **Preferred:**
+
 ```
 let action = UIAlertAction(title:L("ALERTVIEW_BUTTON_CANCEL"), style:.Cancel, handler:nil)
 let subCrazy = UIMoreCrazyThing(string: "Crazy", action)
 UICrazyThing(subCrazieness: subCrazy)
 ```
 
-**Not Preferred:**
+**Preferred:**
+
 ```
 UICrazyThing(subCrazieness: UIMoreCrazyThing(string: "Crazy", UIAlertAction(title:L("ALERTVIEW_BUTTON_CANCEL"), style:.Cancel, handler:nil)))
 ```
@@ -593,6 +615,7 @@ The best thing to do is to use optionals whenever you can.
 In general, you can not be sure that all attributes will be correctly created, linked, instanciated, initialised, etc.
 
 **Preferred:**
+
 ```
 class Plane {
     var pilot                : Pilot?
@@ -603,7 +626,8 @@ class Plane {
 }
 ```
 
-**Not Preferred:**
+**Preferred:**
+
 ```
 class Plane {
     var pilot                : Pilot!
@@ -620,6 +644,7 @@ Even though Swift does not require the usage of `self`, a developer should force
 It is then easier for any other developer to understand where does a value come from or where is the current execution process going.
 
 **Preferred:**
+
 ```
 class MyViewController              : UIViewController {
 
@@ -636,7 +661,8 @@ class MyViewController              : UIViewController {
 }
 ```
 
-**Not Preferred:**
+**Preferred:**
+
 ```
 class MyViewController              : UIViewController {
 
@@ -742,6 +768,7 @@ You should create **one extension per protocol**.
 Also, do not forget the `// MARK: -` comment to keep things well-organized!
 
 **Preferred:**
+
 ```
 class MyViewcontroller: UIViewController {
     // class stuff here
@@ -758,7 +785,8 @@ extension MyViewcontroller: UIScrollViewDelegate {
 }
 ```
 
-**Not Preferred:**
+**Preferred:**
+
 ```
 class MyViewcontroller: UIViewController, UITableViewDataSource, UIScrollViewDelegate {
     // all methods
@@ -772,13 +800,15 @@ For conciseness, if a computed property is read-only, omit the get clause. The g
 Please note the [rounded brackets](#rounded-brackets).
 
 **Preferred:**
+
 ```
 var diameter: Double {
     return (self.radius * 2)
 }
 ```
 
-**Not Preferred:**
+**Preferred:**
+
 ```
 var diameter: Double {
     get {
@@ -806,6 +836,7 @@ Whenever you use such observers make sure to:
 - Avoid under-the-hood logics at all costs.
 
 **Preferred:**
+
 ```
 var diameter: Double {
     didSet {
@@ -816,7 +847,8 @@ var diameter: Double {
 }
 ```
 
-**Not Preferred:**
+**Preferred:**
+
 ```
 var diameter: Double {
     didSet {
@@ -861,6 +893,7 @@ That means providing default implementations for methods defined in the protocol
 The following example shows how to extend a protocol and implement default functions. This is a very good practice as it **reduces the amount of code** within the classes.
 
 **Preferred:**
+
 ```
 protocol Container {
     var items   : [String] { get set }
@@ -878,7 +911,8 @@ class Vowels    : Container {
 }
 ```
 
-**Not Preferred:**
+**Preferred:**
+
 ```
 protocol Container {
     var items   : [String] { get set }
@@ -932,6 +966,7 @@ By default, declare your functions and properties as `private`. Variables should
 Later on whenever you need to change them, let the compiler complain and then change it to `public` or `var`. This way you can be sure that you and other developers only have access to what is safe to access.
 
 **Preferred:**
+
 ```
 class MyViewcontroller: UIViewController {
     private var progress: Int?
@@ -947,7 +982,8 @@ class MyViewcontroller: UIViewController {
 }
 ```
 
-**Not Preferred:**
+**Preferred:**
+
 ```
 class MyViewcontroller: UIViewController {
     var progress: Int?
@@ -974,13 +1010,15 @@ Here are some very specific rules:
 * Never write the parameters of the closure if there is none.
 
 **Preferred:**
+
 ```
 UIView.animateWithDuration(1.0) {
     self.myView.alpha = 0
 }
 ```
 
-**Not Preferred:**
+**Preferred:**
+
 ```
 UIView.animateWithDuration(1.0, animations: { () -> Void in
     self.myView.alpha = 0
@@ -993,6 +1031,7 @@ UIView.animateWithDuration(1.0, animations: { () -> Void in
 * Always write the full names of the parameters of a closure.
 
 **Preferred:**
+
 ```
 UIView.animateWithDuration(1.0, animations: {
         self.myView.alpha = 0
@@ -1002,7 +1041,8 @@ UIView.animateWithDuration(1.0, animations: {
 )
 ```
 
-**Not Preferred:**
+**Preferred:**
+
 ```
 UIView.animateWithDuration(1.0, animations: {
     self.myView.alpha = 0
@@ -1018,6 +1058,7 @@ The code as to be as self explained as possible.
 Please also note the [rounded brackets](#rounded-brackets).
 
 **Preferred:**
+
 ```
 var list = [1, 4, 2, 3]
 list.sort { (a, b) -> Bool in
@@ -1025,7 +1066,8 @@ list.sort { (a, b) -> Bool in
 }
 ```
 
-**Not Preferred:**
+**Preferred:**
+
 ```
 var list = [1, 4, 2, 3]
 list.sort { a, b in
@@ -1042,11 +1084,12 @@ var list = [1, 4, 2, 3]
 list.sort { ($0 > $1) }
 ```
 
-###Closures as parameter
+### Closures as parameter
 
 * When declaring a function that takes a closure as parameter, **always declare the closure as optional**.
 
 **Preferred:**
+
 ```
 func myFunction(closure: (() -> Void)?) {
     if (something == true) {
@@ -1055,7 +1098,8 @@ func myFunction(closure: (() -> Void)?) {
 }
 ```
 
-**Not Preferred:**
+**Preferred:**
+
 ```
 func myFunction(closure: () -> Void) {
     if (something == true) {
@@ -1069,12 +1113,14 @@ func myFunction(closure: () -> Void) {
 Always use Swift's native types when available. Swift offers bridging to Objective-C so you can still use the full set of methods as needed.
 
 **Preferred:**
+
 ```
 let width = 120.0                                    // Double
 let widthString = (width as NSNumber).stringValue    // String
 ```
 
-**Not Preferred:**
+**Preferred:**
+
 ```
 let width: NSNumber = 120.0                          // NSNumber
 let widthString: NSString = width.stringValue        // NSString
@@ -1100,6 +1146,7 @@ Constants are used for database keys, API endpoints and response codes, user def
 Actually all values that should not change. But if they do, they are all created in one single file and the change will take mostly 5 seconds.
 
 **Preferred:**
+
 ```
 //
 // User Default
@@ -1162,7 +1209,8 @@ struct API {
 }
 ```
 
-**Not Preferred:**
+**Preferred:**
+
 ```
 // User Default
 let K_APP_ID = "AppId"
@@ -1197,6 +1245,7 @@ The more your constants are *structured* the better.
 PS: Note how everything is aligned.
 
 **Preferred:**
+
 ```
 // Constants.swift file
 
@@ -1224,7 +1273,8 @@ UIView.animateWithDuration(GameConstants.AnimationDuration.FadeIn) {
 }
 ```
 
-**Not Preferred:**
+**Preferred:**
+
 ```
 // ViewController.swift file
 
@@ -1244,6 +1294,7 @@ Big mistake! What about a typo in one key that cause a crash or random behavior 
 How many hours of debug will be needed to find and correct the error?
 
 **Preferred:**
+
 ```
 func predicateFromJSON(json: [String : AnyObject]) -> NSPredicate? {
     if let value = json[JSON.Key.Id] as? Int {
@@ -1253,7 +1304,8 @@ func predicateFromJSON(json: [String : AnyObject]) -> NSPredicate? {
 }
 ```
 
-**Not Preferred:**
+**Preferred:**
+
 ```
 func predicateFromJSON(json: [String : AnyObject]) -> NSPredicate? {
     if let id = json["id"] as? Int {
@@ -1277,11 +1329,13 @@ If you keep focusing on doing a nice code right in the begining you won't have a
 When accessing an optional value, use optional chaining if the value is only accessed once or if there are many optionals in the chain. This way no crash will occur if one of the objects is `nil`.
 
 **Preferred:**
+
 ```
 self.textContainer?.textLabel?.setNeedsDisplay()
 ```
 
-**Not Preferred:**
+**Preferred:**
+
 ```
 self.textContainer!.textLabel!.setNeedsDisplay()
 ```
@@ -1324,6 +1378,7 @@ let c = "3".toInt()
 ```
 
 **Preferred:**
+
 ```
 if let
     a = a,
@@ -1335,7 +1390,8 @@ if let
 }
 ```
 
-**Not Preferred:**
+**Preferred:**
+
 ```
 if let a = a, b = b, c = c where c != 0 {
     print("\((a + b) / c)")
@@ -1351,6 +1407,7 @@ With Swift you could even integrate this one in the same `if let`.
 Please note the indentation differences.
 
 **Preferred:**
+
 ```
 if (array.count == 0),
     let
@@ -1361,7 +1418,8 @@ if (array.count == 0),
 }
 ```
 
-**Not Preferred:**
+**Preferred:**
+
 ```
 if (array.count == 0) {
     if let
@@ -1387,6 +1445,7 @@ let max     : Int? = 5
 ```
 
 **Preferred:**
+
 ```
 if (indexes.count >= 0),
     let _users  = users where (_users.count > 0),
@@ -1395,7 +1454,8 @@ if (indexes.count >= 0),
 }
 ```
 
-**Not Preferred:**
+**Preferred:**
+
 ```
 if (indexes.count >= 0),
     let
@@ -1416,11 +1476,13 @@ Close to the [Ternary operator](#ternary-operator), this one returns the optiona
 Please note the [rounded brackets](#rounded-brackets).
 
 **Preferred:**
+
 ```
 let text = (self.generateSuperText() as? String ?? "default value")
 ```
 
-**Not Preferred:**
+**Preferred:**
+
 ```
 var text : String?
 if let _superText = self.generateSuperText() as? String {
@@ -1441,6 +1503,7 @@ Everything better than using names like `unwrappedView` or `actualLabel`. Usuall
 **Note:** Using the same name works and keeps the code in a good shape. Use underscores if you think it makes the code easier to understand.
 
 **Preferred:**
+
 ```
 var subview : UIView?
 var volume  : Double?
@@ -1452,7 +1515,8 @@ if let
 }
 ```
 
-**Not Preferred:**
+**Preferred:**
+
 ```
 var subview   : UIView?
 var volume    : Double?
@@ -1473,12 +1537,14 @@ Even though they might do the same now, the swift one has much future.
 Also it’s more readable in a swift environment and feels better integrated.
 
 **Preferred:**
+
 ```
 let bounds      = CGRect(x: 40, y: 20, width: 120, height: 80)
 let centerPoint = CGPoint(x: 96, y: 42)
 ```
 
-**Not Preferred:**
+**Preferred:**
+
 ```
 let bounds = CGRectMake(40, 20, 120, 80)
 let centerPoint = CGPointMake(96, 42)
@@ -1496,6 +1562,7 @@ Those actually normalize the result before returning it.
 > The height and width stored in a CGRect data structure can be negative. For example, a rectangle with an origin of [0.0, 0.0] and a size of [10.0,10.0] is exactly equivalent to a rectangle with an origin of [10.0, 10.0] and a size of [-10.0,-10.0]. Your application can standardize a rectangle—that is, ensure that the height and width are stored as positive values—by calling the CGRectStandardize function. All functions described in this reference that take CGRect data structures as inputs implicitly standardize those rectangles before calculating their results. **For this reason, your applications should avoid directly reading and writing the data stored in the CGRect data structure. Instead, use the functions described here to manipulate rectangles and to retrieve their characteristics.**
 
 **Preferred:**
+
 ```
 let bounds = CGRect(x: 40, y: 20, width: 120, height: 80)
 
@@ -1506,7 +1573,8 @@ let h = CGRectGetHeight(bounds)
 
 ```
 
-**Not Preferred:**
+**Preferred:**
+
 ```
 let bounds = CGRectMake(40, 20, 120, 80)
 
@@ -1521,6 +1589,7 @@ let h = bounds.size.heigth
 Prefer compact code and let the compiler infer the type for a constant or variable, unless you need a specific type other than the default such as `CGFloat` or `Int16`.
 
 **Preferred:**
+
 ```
 let message       = "Click the button"
 let currentBounds = computeViewBounds()
@@ -1528,7 +1597,8 @@ var names         = [String]()
 let maximumWidth  : CGFloat = 106.5
 ```
 
-**Not Preferred:**
+**Preferred:**
+
 ```
 let message: String = "Click the button"
 let currentBounds: CGRect = computeViewBounds()
@@ -1542,13 +1612,15 @@ var names: [String] = []
 Prefer the shortcut versions of type declarations over the full generics syntax.
 
 **Preferred:**
+
 ```
 var deviceModels  : [String]
 var employees     : [Int: String]
 var faxNumber     : Int?
 ```
 
-**Not Preferred:**
+**Preferred:**
+
 ```
 var deviceModels: Array<String>
 var employees: Dictionary<Int, String>
@@ -1564,6 +1636,7 @@ Prefer the `for-in` style of `for` loop over the `for-condition-increment` style
 Since Swift 2.0 you can also use the `for-in-where` style instead `for-in { if }`.
 
 **Preferred:**
+
 ```
 for _ in 0..<3 {
     print("Hello three times")
@@ -1579,7 +1652,8 @@ for number in numbers where (number > 100) {
 }
 ```
 
-**Not Preferred:**
+**Preferred:**
+
 ```
 for var i = 0; i < 3; i++ {
     print("Hello three times")
@@ -1607,6 +1681,7 @@ If the condition, defined in the guard statement is not met, the code inside the
 With guard, you focus on handling the condition you don't want. Furthermore, it forces you to handle one case at a time, avoiding nested conditions. Thus, the code is cleaner and easier to read.
 
 **Preferred:**
+
 ```
 func printInfo(webArticle: Article?) {
     guard let article = webArticle else {
@@ -1621,7 +1696,8 @@ func printInfo(webArticle: Article?) {
 }
 ```
 
-**Not Preferred:**
+**Preferred:**
+
 ```
 func printInfo(webArticle: Article?) {
     if let article = webArticle {
@@ -1639,6 +1715,7 @@ func printInfo(webArticle: Article?) {
 But, if you don't need to handle one case at a time (for example if you don't need to print a specific message for each error) then the [Multiple Optional Bindings](#multiple-optional-bindings) is still the **best solution**.
 
 **Preferred:**
+
 ```
 func printInfo(webArticle: Article?) {
     if let
@@ -1650,7 +1727,8 @@ func printInfo(webArticle: Article?) {
 }
 ```
 
-**Not Preferred:**
+**Preferred:**
+
 ```
 func printInfo(webArticle: Article?) {
     guard let article = webArticle else {
@@ -1849,11 +1927,13 @@ Just do not write multiple statements on a single line separated with semicolons
 The only exception to this rule is the `for-conditional-increment` construct, which requires semicolons. However, alternative `for-in` constructs should be used where possible.
 
 **Preferred:**
+
 ```
 let swift = "not a scripting language"
 ```
 
-**Not Preferred:**
+**Preferred:**
+
 ```
 let swift = "not a scripting language";
 ```
@@ -1865,12 +1945,14 @@ let swift = "not a scripting language";
 Use US English spelling to match Apple's API.
 
 **Preferred:**
+
 ```
 let color     = "red"
 let favorites = [1, 2, 3]
 ```
 
-**Not Preferred:**
+**Preferred:**
+
 ```
 let colour     = "red"
 let favourites = [1, 2, 3]
@@ -1882,6 +1964,7 @@ This style guide is a fork from the collaborative effort from the most stylish r
 Please see the full list on the [orginal page](https://github.com/raywenderlich/swift-style-guide#credits).
 
 The current fork has been mainly improved and maintained by:
+
 * [Kevin Delord](https://github.com/kevindelord)
 
 ## See Also
