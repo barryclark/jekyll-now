@@ -77,11 +77,11 @@ Of course, efficacity, readability, and simplicity are the most important points
 
 * Indent using tabs equivalent to 4 spaces, and indent by inserting tab characters. Be sure to set xcode like this:
 
-  ![Xcode indent settings](screens/indentation.png)
+![_config.yml]({{ site.baseurl }}/images/screens/indentation.png)
 
 * Also think about automatically trim the whitespaces:
 
-  ![Xcode trim whitespaces](screens/trim-whitespaces.png)
+![_config.yml]({{ site.baseurl }}/images/screens/trim-whitespaces.png)
 
 * Tip: You can re-indent by selecting some code (or ⌘A to select all) and then Control-I (or Editor\Structure\Re-Indent in the menu). Some of the Xcode template code will have 4-space tabs hard coded, so this is a good way to fix that.
 
