@@ -3,7 +3,10 @@ layout: post
 title: #theoryMatters in neuroscience?
 ---
 
-To promote theoretical and computational neuroscience, I (Memming) have interviewed a number of neuroscientists with diverse background.
+- *What is the role of theory in neuroscience?*
+- *How can theorists and experimentalists synergize better?*
+
+To promote theoretical and computational neuroscience to the neuroscience community, I (Memming Park) have interviewed a number of neuroscientists with diverse background.
 Most of these interviews took place at [COSYNE 2016](http://www.cosyne.org/c/index.php?title=Cosyne_16) main meeting (Salt lake city, Utah).
 
 The videos were promoted on twitter with hashtag: **#theoryMatters**
