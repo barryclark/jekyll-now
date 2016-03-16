@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Swift Style Guide
+category: ios
 ---
 
 This guide is a fork from the [Official raywenderlich.com Swift Style Guide](https://github.com/raywenderlich/swift-style-guide).
