@@ -1,0 +1,8 @@
+{% for page in site.pages %}
+    {% if page.tags contains "ios" %}
+    	<a href="{{ page.url }}">{{ page.title }}</a>
+    {% endif %}
+    {% if page.tags contains "worldtrip" %}
+    	<a href="{{ page.url }}">{{ page.title }}</a>
+    {% endif %}
+{% endfor %}

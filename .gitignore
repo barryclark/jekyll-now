@@ -8,3 +8,6 @@ Gemfile
 Gemfile.lock
 node_modules
 package.json
+
+# Ignore the config file that's used for gh-pages.
+_config.gh-pages.yml
