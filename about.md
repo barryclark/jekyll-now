@@ -2,14 +2,9 @@
 layout: page
 title: About
 permalink: /about/
+public: true
 ---
 
-Some information about you!
+Welcome to this website!
 
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+> This website is using [laobubu](http://laobubu.net)'s theme: [EasyBook](https://github.com/laobubu/jekyll-theme-EasyBook)
