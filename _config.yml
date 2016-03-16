@@ -69,7 +69,7 @@ paginate: 10
 paginate_path: "page:num"
 
 # The release of Jekyll Now that you're using
-version: v3.1.2
+version: v1.2.0
 
 # Set the Sass partials directory, as we're using @imports
 sass:
