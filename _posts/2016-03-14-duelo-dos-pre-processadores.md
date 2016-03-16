@@ -755,7 +755,7 @@ Existem algumas peculiaridades ao usar um pré-processador CSS. Irei falar de al
 
 Se você já escreveu CSS por uma boa quantia de tempo, tenho certeza que você já chegou a um ponto onde você tinha um erro em algum lugar e simplesmente não conseguia o encontrar. Se você é como eu, provavelmente passou a tarde toda arrancando os cabelos fora e comentando diversas coisas para caçar o erro.
 
-Pré-processadores CSS relatam os erros. Simples assim. Se tem alguma coisa errada em seu códigom ele te fala onde e, se você estiver com sorte até mesmo o porquê. Você pode dar uma olhada [nesse post](http://tjholowaychuk.com/post/5002088731/stylus-vs-sass-vs-less-error-reporting) caso esteja interessado em ver como os erros são relatados em diferentes pré-processadores.
+Pré-processadores CSS relatam os erros. Simples assim. Se tem alguma coisa errada em seu código ele te fala onde e, se você estiver com sorte até mesmo o porquê. Você pode dar uma olhada [nesse post](http://tjholowaychuk.com/post/5002088731/stylus-vs-sass-vs-less-error-reporting) caso esteja interessado em ver como os erros são relatados em diferentes pré-processadores.
 
 ### Comentários
 
