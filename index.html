@@ -1,28 +1,42 @@
 ---
 layout: default
 ---
-{% assign posts_count = (paginator.posts | size) %}
 
-<div class="home">
-  {% if posts_count > 0 %}
-    <div class="posts">
-      {% for post in paginator.posts %}
+<p>Latest <b>iOS</b> post:</p>
+
+{% assign post = site.categories.ios.first %}
+{% if post.url %}
+    <article class="post">
         <div class="post py3">
-          <p class="post-meta">{{ post.date | date: site.date_format }}</p>
-          <a href="{{ post.url | prepend: site.baseurl }}" class="post-link"><h3 class="h1 post-title">{{ post.title }}</h3></a>
-          <p class="post-summary">
-            {% if post.summary %}
-              {{ post.summary }}
-            {% else %}
-              {{ post.excerpt }}
-            {% endif %}
-          </p>
+            <p class="post-meta">{{ post.date | date: site.date_format }}</p>
+            <a href="{{ post.url | prepend: site.baseurl }}" class="post-link"><h3 class="h1 post-title">{{ post.title }}</h3></a>
+            <p class="post-summary">
+                {% if post.summary %}
+                    {{ post.summary }}
+                {% else %}
+                    {{ post.excerpt }}
+                {% endif %}
+            </p>
         </div>
-      {% endfor %}
-    </div>
+    </article>
+{% endif %}
 
-    {% include pagination.html %}
-  {% else %}
-    <h1 class='center'>{{ site.text.index.coming_soon }}</h3>
-  {% endif %}
-</div>
+<br/><br/><br/>
+<p>Latest <b>World Trip</b> post:</p>
+
+{% assign post = site.categories.worldtrip.first %}
+{% if post.url %}
+    <article class="post">
+        <div class="post py3">
+            <p class="post-meta">{{ post.date | date: site.date_format }}</p>
+            <a href="{{ post.url | prepend: site.baseurl }}" class="post-link"><h3 class="h1 post-title">{{ post.title }}</h3></a>
+            <p class="post-summary">
+                {% if post.summary %}
+                    {{ post.summary }}
+                {% else %}
+                    {{ post.excerpt }}
+                {% endif %}
+            </p>
+        </div>
+    </article>
+{% endif %}
