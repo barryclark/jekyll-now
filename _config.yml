@@ -4,7 +4,7 @@ email:       your_email@example.com
 author:      Kevin Delord
 description: "Club mate powered"
 baseurl:     ""
-url:         ""
+url:          "http://127.0.0.1:4000/"
 date_format: "%b %-d, %Y"
 
 # Google services
@@ -94,6 +94,7 @@ text:
       sent:     'Message sent!'
       error:    'Error!'
   thanks: 'Thanks for contacting us. We will reply as soon as possible.'
+  ios: 'iOS posts'
   og_locale: 'en_US'
 
 # Build settings

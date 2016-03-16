@@ -1,12 +1,16 @@
 ---
 layout:     post
-title:      Hello, Pixyll
+title:      Hello, Hello, Hello
 date:       2014-06-11 15:31:19
-summary:    Pixyll is a simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff.
-categories: jekyll pixyll
+summary:    World trip tour stuff cool
+categories: worldtrip
 ---
 
 Hello.
+
+C'est cool hein?
+
+:+1: :+1: :+1: :+1: :+1: 
 
 Pixyll is a simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff. It's mobile _first_, fluidly responsive, and delightfully lightweight.
 
@@ -21,6 +25,4 @@ It's pretty minimal, but leverages large type and drastic contrast to make a sta
 
 ## Where is it?
 
-Checkout the [Github repository](https://github.com/johnotander/pixyll) to download it, request a feature, or report a bug.
-
-It's free, and open source ([MIT](http://opensource.org/licenses/MIT)).
+lol. everywhere.
