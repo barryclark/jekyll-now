@@ -3,7 +3,7 @@ layout:     post
 title:      Pixyll in Action
 date:       2014-06-10 12:31:19
 summary:    See what the different elements looks like. Your markdown has never looked better. I promise.
-categories: jekyll pixyll
+categories: ios
 ---
 
 There is a significant amount of subtle, yet precisely calibrated, styling to ensure

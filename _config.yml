@@ -1,11 +1,11 @@
 # Site settings
-title:       Kevin Delord
-email:       your_email@example.com
-author:      Kevin Delord
-description: "Club mate powered"
-baseurl:     ""
-url:          "http://127.0.0.1:4000/"
-date_format: "%b %-d, %Y"
+title:                Kevin Delord
+email:                delord.kevin@gmail.com
+author:               Kevin Delord
+description:          "Club Mate powered"
+baseurl:
+url:                  "http://127.0.0.1:4000/"
+date_format:          "%b %-d, %Y"
 
 # Google services
 google_verification:
@@ -17,13 +17,13 @@ google_tag_manager:
 bing_verification:
 
 # Optional features
-animated:             false
+animated:             true
 show_related_posts:   false
 show_post_footers:    false
-show_social_icons:    false
+show_social_icons:    true
 ajaxify_contact_form: false
-enable_mathjax: false
-extended_fonts: false
+enable_mathjax:       false
+extended_fonts:       false
 
 # Disqus post comments
 # (leave blank to disable Disqus)
@@ -36,14 +36,16 @@ facebook_appid:
 facebook_comments_number: 10
 
 # Social icons
-github_username:
-bitbucket_username:
-stackoverflow_id:
-twitter_username:
-skype_username:
-steam_nickname:
+soundcloud_username:  mynameiskevinbeacon
+facebook_username:    delord.kevin
+github_username:      kevindelord
+linkedin_username:    kevindelord
+stackoverflow_id:     2790648
+spotify_id:           117028324
+skype_username:       delord.kevin
+twitter_username:     DKLogs
 google_plus_id:
-linkedin_username:
+bitbucket_username:
 angellist_username:
 medium_id:
 bitcoin_url:
@@ -53,60 +55,47 @@ flattr_button:
 # Post sharing icons
 show_sharing_icons: false
 # Change to 'true' to enable individual icons
-share_facebook: false
-share_twitter: false
-share_googleplus: false
-share_linkedin: false
-share_digg: false
-share_tumblr: false
-share_reddit: false
-share_stumbleupon: false
-share_hackernews: false
+share_facebook:     false
+share_twitter:      false
+share_googleplus:   false
+share_linkedin:     false
+share_digg:         false
+share_tumblr:       false
+share_reddit:       false
+share_stumbleupon:  false
+share_hackernews:   false
 
 text:
   pagination:
-    newer: 'Newer'
-    older: 'Older'
+    newer:          'Newer'
+    older:          'Older'
   share_buttons:
-    text:         'Share this post!'
-    facebook:     'Share on Facebook'
-    twitter:      'Share on Twitter'
-    googleplus:   'Share on Google+'
-    linkedin:     'Share on LinkedIn'
-    digg:         'Share on Digg'
-    tumblr:       'Share on Tumblr'
-    reddit:       'Share on Reddit'
-    stumbleupon:  'Share on StumbleUpon'
-    hackernews:   'Share on Hacker News'
+    text:           'Share this post!'
+    facebook:       'Share on Facebook'
+    twitter:        'Share on Twitter'
+    googleplus:     'Share on Google+'
+    linkedin:       'Share on LinkedIn'
+    digg:           'Share on Digg'
+    tumblr:         'Share on Tumblr'
+    reddit:         'Share on Reddit'
+    stumbleupon:    'Share on StumbleUpon'
+    hackernews:     'Share on Hacker News'
   post:
     updated:        'Updated'
     minute_read:    'minute read'
     related_posts:  'Related Posts'
   index:
-    coming_soon: 'Coming soon...'
-  contact:
-    email:    'Email Address'
-    content:  'What would you like to say?'
-    subject:  'New submission!'
-    submit:   'Say Hello'
-    ajax:
-      sending:  'sending..'
-      sent:     'Message sent!'
-      error:    'Error!'
-  thanks: 'Thanks for contacting us. We will reply as soon as possible.'
-  ios: 'iOS posts'
-  og_locale: 'en_US'
+    coming_soon:    'Coming soon...'
+  og_locale:        'en_US'
 
 # Build settings
 markdown:     kramdown
 redcarpet:
   extensions: ['smart', 'tables', 'with_toc_data']
 permalink:    pretty
-paginate:     4
 sass:
   compressed: true
 gems:
-  - jekyll-paginate
   - jekyll-sitemap
   - jemoji
 

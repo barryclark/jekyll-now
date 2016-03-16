@@ -1,5 +1,8 @@
 <div class="social-icons">
-  <div class="social-icons-right">
+  <div class="center">
+    {% if site.facebook_username %}
+      <a class="fa fa-facebook" href="https://www.facebook.com/{{ site.facebook_username }}"></a>
+    {% endif %}
     {% if site.github_username %}
       <a class="fa fa-github" href="https://github.com/{{ site.github_username }}"></a>
     {% endif %}
@@ -33,6 +36,12 @@
     {% endif %}
     {% if site.medium_id %}
       <a class="fa fa-medium" href="https://medium.com/@{{ site.medium_id }}"></a>
+    {% endif %}
+    {% if site.spotify_id %}
+      <a class="fa fa-spotify" href="spotify:user:{{ site.spotify_id }}"></a>
+    {% endif %}
+    {% if site.soundcloud_username %}
+      <a class="fa fa-soundcloud" href="https://soundcloud.com/{{ site.soundcloud_username }}"></a>
     {% endif %}
   </div>
   <div class="right">
