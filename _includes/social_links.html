@@ -1,0 +1,50 @@
+<div class="social-icons">
+  <div class="social-icons-right">
+    {% if site.github_username %}
+      <a class="fa fa-github" href="https://github.com/{{ site.github_username }}"></a>
+    {% endif %}
+    {% if site.bitbucket_username %}
+      <a class="fa fa-bitbucket" href="https://bitbucket.org/{{ site.bitbucket_username }}"></a>
+    {% endif %}
+    {% if site.stackoverflow_id %}
+      <a class="fa fa-stack-overflow" href="https://stackoverflow.com/users/{{ site.stackoverflow_id }}"></a>
+    {% endif %}
+    <a class="fa fa-rss" href="{{ "/feed.xml" | prepend: site.baseurl }}"></a>
+    {% if site.twitter_username %}
+      <a class="fa fa-twitter" href="https://twitter.com/{{ site.twitter_username }}"></a>
+    {% endif %}
+    {% if site.skype_username %}
+      <a class="fa fa-skype" href="skype:{{ site.skype_username }}?userinfo"></a>
+    {% endif %}
+    {% if site.steam_nickname %}
+      <a class="fa fa-steam-square" href="http://steamcommunity.com/id/{{ site.steam_nickname }}"></a>
+    {% endif %}
+    {% if site.google_plus_id %}
+      <a class="fa fa-google-plus" href="https://plus.google.com/{{ site.google_plus_id }}/posts"></a>
+    {% endif %}
+    {% if site.email %}
+      <a class="fa fa-envelope" href="mailto:{{ site.email }}"></a>
+    {% endif %}
+    {% if site.linkedin_username %}
+      <a class="fa fa-linkedin" href="https://www.linkedin.com/in/{{ site.linkedin_username }}"></a>
+    {% endif %}
+    {% if site.angellist_username %}
+      <a class="fa fa-angellist" href="https://angel.co/{{ site.angellist_username }}"></a>
+    {% endif %}
+    {% if site.medium_id %}
+      <a class="fa fa-medium" href="https://medium.com/@{{ site.medium_id }}"></a>
+    {% endif %}
+  </div>
+  <div class="right">
+    {% if site.bitcoin_url %}
+      <a class="fa fa-bitcoin" href="{{ site.bitcoin_url }}"></a>
+    {% endif %}
+    {% if site.paypal_url %}
+      <a class="fa fa-paypal" href="{{ site.paypal_url }}"></a>
+    {% endif %}
+    {% if site.flattr_button %}
+      {{ site.flattr_button }}
+    {% endif %}
+  </div>
+</div>
+<div class="clearfix"></div>

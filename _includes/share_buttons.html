@@ -1,0 +1,41 @@
+<div class="share-page">
+  {{ site.text.share_buttons.text }}
+
+  <div class="share-links">
+    {% if site.share_facebook %}
+      <a class="fa fa-facebook" href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="{{ site.text.share_buttons.facebook }}"></a>
+    {% endif %}
+
+    {% if site.share_twitter %}
+      <a class="fa fa-twitter" href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="{{ site.text.share_buttons.twitter }}"></a>
+    {% endif %}
+
+    {% if site.share_googleplus %}
+      <a class="fa fa-google-plus" href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="{{ site.text.share_buttons.googleplus }}"></a>
+    {% endif %}
+
+    {% if site.share_linkedin %}
+      <a class="fa fa-linkedin" href="http://www.linkedin.com/shareArticle?url={{ site.url }}{{ page.url }}&title={{ page.title }}" rel="nofollow" target="_blank" title="{{ site.text.share_buttons.linkedin }}"></a>
+    {% endif %}
+
+    {% if site.share_digg %}
+      <a class="fa fa-digg" href="http://digg.com/submit?url={{ site.url }}{{ page.url }}&title={{ page.title }}" rel="nofollow" target="_blank" title="{{ site.text.share_buttons.digg }}"></a>
+    {% endif %}
+
+    {% if site.share_tumblr %}
+      <a class="fa fa-tumblr" href="http://www.tumblr.com/share/link?url={{ site.url }}{{ page.url }}&name={{ page.title }}" rel="nofollow" target="_blank" title="{{ site.text.share_buttons.tumblr }}"></a>
+    {% endif %}
+
+    {% if site.share_reddit %}
+      <a class="fa fa-reddit" href="http://reddit.com/submit?url={{ site.url }}{{ page.url }}&title={{ page.title }}" rel="nofollow" target="_blank" title="{{ site.text.share_buttons.reddit }}"></a>
+    {% endif %}
+
+    {% if site.share_stumbleupon %}
+      <a class="fa fa-stumbleupon" href="http://www.stumbleupon.com/submit?url={{ site.url }}{{ page.url }}&title={{ page.title }}" rel="nofollow" target="_blank" title="{{ site.text.share_buttons.stumbleupon }}"></a>
+    {% endif %}
+
+    {% if site.share_hackernews %}
+      <a class="fa fa-hacker-news" onclick="parent.postMessage('submit','*')" href="https://news.ycombinator.com/submitlink?u={{ site.url }}{{ page.url }}&t={{ page.title }}" rel="nofollow" target="_blank" title="{{ site.text.share_buttons.hackernews }}"></a>
+    {% endif %}
+  </div>
+</div>

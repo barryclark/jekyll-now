@@ -1,0 +1,35 @@
+---
+# The scss file which include files from _sass/
+---
+@charset "UTF-8";
+
+/*!
+* Pixyll - A simple, beautiful Jekyll theme that's mobile first.
+* @author John Otander <johnotander@gmail.com> (http://johnotander.com/)
+* @link https://github.com/johnotander/pixyll
+* @license MIT
+*/
+
+@import 'variables';
+
+@import 'basscss';
+
+@import 'base';
+
+@import 'links';
+@import 'positions';
+@import 'clearfix';
+@import 'code';
+@import 'forms';
+@import 'typography';
+@import 'header';
+@import 'tables';
+@import 'animations';
+@import 'footer';
+@import 'social-icons';
+@import 'blockquotes';
+@import 'posts';
+@import 'media-queries';
+@import 'gists';
+@import 'measure';
+@import 'pagination';
