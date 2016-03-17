@@ -72,6 +72,8 @@ tags: [common]
     
     [Nat 原理与 Nat 穿越](http://www.cnblogs.com/bo083/articles/2170189.html)
     
+    [神器中的神器 —— org-mode 入门篇](http://www.cnblogs.com/qlwy/archive/2012/06/15/2551034.html)
+    
 6. **网页设计 微博**
 	
     [什么叫做会设计](http://weibo.com/1773655610/DkhJm5ZUW)
