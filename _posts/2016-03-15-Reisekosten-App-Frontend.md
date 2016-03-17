@@ -25,4 +25,4 @@ Maybe it is interesting to know that when I have started to work on this project
 Beside frontend development I mainly do my daily job using Microsoft technologies like C#. I do this using Visual Studio as IDE. That is why a good choice to set up this project was to use Visual Studio Tools for Apache Cordova. By the time I have started to work on the project the Update 2 of these tools were available, now after a couple of months Update 7 can be downloaded with a lot of improvements.
 
 {:.center}
-![Reisekosten App Fronten - Visual Studio Tools for Apache Cordova]( /images/reisekosten-app/visualstudioupdate7.jpg){:style="margin:auto"}
+![Reisekosten App Frontend - Visual Studio Tools for Apache Cordova]( /images/reisekosten-app/visualstudioupdate7.jpg){:style="margin:auto"}
