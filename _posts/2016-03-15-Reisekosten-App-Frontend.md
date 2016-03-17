@@ -144,3 +144,114 @@ The AngularJS application is organized using modules. We can think of modules as
 I have created a separate module for controllers(travelExpensesControllers) and one for services(travelExpensesApp.services). I have also used some libraries as modules like : ngRoute (from angular-route.js), mgCrea.ngStrap (from angular-strap.js) and ui.utils.masks (from angular-input-masks-standalone.min.js). The module declarations links everything together and creates the base of the app.
 
 Beside modules the above screenshot contains the configuration of routing. Using ngRoute lets us use routing which helps us a lot to define a nice and clear structure for the frontend app. AngularJS routing permits a good separation of concerns. GUI resides in html templates defined by the templateUrls and the logic behind is separated in the controller javascript files.
+
+To understand a bit better let's take a look on the trips page which is built up from trips.html as template and TripsControl as controller:
+
+```HTML5
+<div class="navbar navbar-inverse">
+    <div class="navbar-header pull-left">
+        <button type="button" class="btn-lx-hamburger navbar-toggle pull-left" data-toggle="collapse" data-target="#myNavbar" bs-aside="aside" data-template-url="partials/aside.html" data-placement="left" data-animation="am-slide-left" data-container="body">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand padding-rl10">
+            <span class="glyphicon glyphicon-user"></span> {{employeeData.first_name}} {{employeeData.last_name}}
+        </a>            
+    </div>
+    <div class="navbar-header pull-right">
+        <a class="navbar-brand" ng-disabled="true" ng-click="newTravel()"><span class="glyphicon glyphicon-plus"></span></a>
+    </div>
+</div>
+
+<div class="container">
+    <div waithttp ng-show="!waitingHttp">
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>Datum</th>
+                    <th>Von</th>
+                    <th>Nach</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr ng-repeat="trip in trips | orderBy : departure_date : reverse" ng-click="editTravel(trip.id)">
+                    <td>
+                        {{ trip.departure_date | date : 'dd.MM.yyyy'}}
+                    </td>
+                    <td>
+                        {{ trip.departure }}
+                    </td>
+                    <td>
+                        {{ trip.destination }}
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+```
+
+The above html contains a navbar and a simple list of trips. What we notice from the start are the double bracelets (e.g. '{{ trip.departure }}') and directives starting with "ng" prefix. These are the main ways how the template interacts with the controller :
+
+```javascript
+(function () {
+    "use strict";
+
+    angular.module("travelExpensesControllers").controller("TripsControl", ["$scope", "$http", "$routeParams", "$location","global", TripsControl]);
+
+    function TripsControl($scope, $http, $routeParams, $location, global) {
+        $scope.companyId = $routeParams.companyId;
+        $scope.employeeId = $routeParams.employeeId;
+        $scope.employeeData = global.user.employeeData;
+        $scope.aside = {
+            "title" : global.user.employeeData.first_name + " " + global.user.employeeData.last_name
+        };
+
+        var tripsRequest = {
+            method  : "GET",
+            url     : global.baseUrl + "companies/" + $scope.companyId + "/employees/" + $scope.employeeId + "/trips",
+            headers : {
+                "Content-Type": "application/hal+json",
+                "Session-Id": global.sessionId
+            }
+        };
+
+        $http(tripsRequest).then(
+            function (data) {
+                $scope.trips = data.data.ResourceList;
+            },
+            function (data) {
+                $scope.error = data;
+                // session probably bad, go back to login page
+                $location.path("/");
+            });
+
+
+        $scope.newTravel = function () {
+            delete global.tripDetails;
+            var url = "/companies/" + global.user.companyData.id + "/employees/" + global.user.employeeData.id + "/trips/0";
+            $location.url(url);
+        }
+
+
+        $scope.editTravel = function (travelId) {
+            var url = "/companies/" + global.user.companyData.id + "/employees/" + global.user.employeeData.id + "/trips/" + travelId;
+            $location.url(url);
+        }
+
+        $scope.doLogout = function () {
+            $location.path("/").search({invalidate: true});
+        }
+    }
+})();
+```
+
+Above  we can see how the TripsControl is defined . To expose something usable in the template we just exetend/add a new property or function to the $scope variable. For example we get the list of trips if we have a successfull answer for a $http request defined by js var tripsRequest.
+
+In a nutshell this is how angular works  and used in this POC.
+
+### What else ?
+Since the most of the time during this POC I have worked with AngularJS you might wondering if I had to implement something else which is worth mentioning.
