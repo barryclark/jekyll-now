@@ -72,7 +72,7 @@ tags: [common]
     
     [Nat 原理与 Nat 穿越](http://www.cnblogs.com/bo083/articles/2170189.html)
     
-    [神器中的神器 —— org-mode 入门篇](http://www.cnblogs.com/qlwy/archive/2012/06/15/2551034.html)
+    [用 Org-mode 实现GTD](http://www.cnblogs.com/holbrook/archive/2012/04/17/2454619.html)
     
 6. **网页设计 微博**
 	
