@@ -12,4 +12,4 @@ Graduate Student.
 
 ### Contact me
 
-[email@domain.com](mailto:jinneous@gmail.com)
+[jinneous@gmail.com](mailto:jinneous@gmail.com)
