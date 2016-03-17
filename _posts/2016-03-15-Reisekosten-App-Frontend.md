@@ -255,3 +255,75 @@ In a nutshell this is how angular works  and used in this POC.
 
 ### What else ?
 Since the most of the time during this POC I have worked with AngularJS you might wondering if I had to implement something else which is worth mentioning.
+
+Yes, for example implementing hardware backbutton support for Android devices was pretty interesting and challenging at the same time. In order to achieve this I needed to create an angular service where I had to use Cordova capabilities. The result looks like this :
+
+```javascript
+(function () {
+    "use strict";
+
+    angular.module("travelExpensesApp.services").factory("cordova", ["$q", "$window", "$timeout", cordova]);
+
+    /**
+	 * Service that allows access to Cordova when it is ready.
+	 *
+	 * @param {!angular.Service} $q
+	 * @param {!angular.Service} $window
+	 * @param {!angular.Service} $timeout
+	 */
+    function cordova($q, $window, $timeout) {
+        var deferred = $q.defer();
+        var resolved = false;
+
+        // Listen to the 'deviceready' event to resolve Cordova.
+        // This is when Cordova plugins can be used.
+        document.addEventListener("deviceready", function () {
+            resolved = true;
+            deferred.resolve($window.cordova);
+            console.log("deviceready fired");
+        }, false);
+
+        // If the 'deviceready' event didn't fire after a delay, continue.
+        $timeout(function () {
+            if (!resolved && $window.cordova) {
+                deferred.resolve($window.cordova);
+            }
+        }, 1000);
+
+        return {
+
+            ready: deferred.promise,
+            platformId: cordova.platformId,
+            eventHandlers:[],
+            backAction: function (callback) {
+                if (typeof (callback) === "function") {
+                    var callbackAction;
+                    var removeCallbackAction = function () {
+                        document.removeEventListener("backbutton", callbackAction);
+                    }
+                    callbackAction = function () {
+                        callback();
+                        removeCallbackAction();
+                    }
+                    // remove previously added event handler if it didn't removed itself already
+                    // this can happen when a navigating deeper than 1 level for example :
+                    // 1. trips - > tripDetails :: back action is added
+                    // 2. tripDetails -> receiptDetials :: back action from step 1 removed , current action is added
+                    if (this.eventHandlers.length > 0) {
+                        document.removeEventListener("backbutton", this.eventHandlers[0]);
+                        this.eventHandlers.splice(0,1);
+                    }
+                    document.addEventListener("backbutton", callbackAction, false);
+                    this.eventHandlers.push(callbackAction);
+                }
+            }
+        };
+    }
+})();
+```
+
+The above is not the simplest code, it migt be improved but for the POC it did the job.
+
+Other interesting thing worth to mention is that we have targeted to create some basic tests. In one day I have managed to set up the environment and write some unit tests for the receiptDetailsController.js using karma.js and one more day took to create some end to end tests using protractor.js.
+
+Overall I am satisfied with the result of POC , now I am anxious and can't wait to work on the real stuff.
