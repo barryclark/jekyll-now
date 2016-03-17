@@ -70,6 +70,8 @@ tags: [common]
     
     [802.1x+RADIUS认证计费技术原理及设置](http://wenku.baidu.com/view/5d0c6beb5ef7ba0d4a733ba6.html?re=view)
     
+    [Nat 原理与 Nat 穿越](http://www.cnblogs.com/bo083/articles/2170189.html)
+    
 6. **网页设计 微博**
 	
     [什么叫做会设计](http://weibo.com/1773655610/DkhJm5ZUW)
