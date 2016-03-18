@@ -148,7 +148,7 @@ Beside modules the above code snippet contains the configuration of routing. Usi
 
 To understand a bit better let's take a look on the trips page which is built up from trips.html as template and TripsControl as controller:
 
-```HTML5
+```html
 <div class="navbar navbar-inverse">
     <div class="navbar-header pull-left">
         <button type="button" class="btn-lx-hamburger navbar-toggle pull-left" data-toggle="collapse" data-target="#myNavbar" bs-aside="aside" data-template-url="partials/aside.html" data-placement="left" data-animation="am-slide-left" data-container="body">
