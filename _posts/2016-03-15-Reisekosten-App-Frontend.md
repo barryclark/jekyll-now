@@ -164,7 +164,6 @@ To understand a bit better let's take a look on the trips page which is built up
         <a class="navbar-brand" ng-disabled="true" ng-click="newTravel()"><span class="glyphicon glyphicon-plus"></span></a>
     </div>
 </div>
-
 <div class="container">
     <div waithttp ng-show="!waitingHttp">
         <div class="table-responsive">
