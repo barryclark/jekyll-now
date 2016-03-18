@@ -52,6 +52,7 @@ The **plugins** folder is nice too , here will reside the plugins which helps to
 The **res** folder contains OS specific icons (e.g. rounded icons for IOS and square icons for Android) and  screens. Finally in the upper part of the soulution there is a **test** folder where the unit and integration tests will reside.
 
 The next folder **www** contains the project itself, the common code base. We see here a bunch of files which are nicely and clearly organized, maybe not for you yet, but hopefully things become more clear with the next code snippet of the index.html which is the core of the SPA and where the whole app is running:  
+
 ```html
 <!doctype html>
 <html ng-app="travelExpensesApp" ng-csp>
@@ -103,6 +104,7 @@ The next folder **www** contains the project itself, the common code base. We se
 Being a SPA everything runs in one place. All the necessary files are included in the header : first the app specific css files, then the css override file which is replaced with OS specific one at build time. Next are included the AngularJS and AnfularJS specific libraries and then comes the platform specific javascript overrides. Until now we have included only libraries and overrides, what comes from now is the base of the app the index.js.
 
 A code snippet from here helps to understand the AngularJS application:
+
 ```javascript
 (function () {
     "use strict";
@@ -137,7 +139,6 @@ A code snippet from here helps to understand the AngularJS application:
         }
     ]);
 ```
-
 
 The AngularJS application is organized using modules. We can think of modules as containers for controllers , services, directives, etc. These modules are reusable and testable. What we can see above is that I have declared an application level module (travelExpensesApp) which depends on other modules .
 
