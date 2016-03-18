@@ -50,7 +50,7 @@ In the upper part of the solution we can see the some folders created by Visual 
 
 The **plugins** folder is nice too , here will reside the plugins which helps to extend the web application with native app abilities. For instance we can install here a plugin which will be able to access the device camera.
 
-The **res** folder contains OS specific icons (e.g. rounded icons for IOS and square icons for Android) and  screens. Finally in the upper part of the soulution there is a **test** folder where the unit and integration tests will reside.
+The **res** folder contains OS specific icons (e.g. rounded icons for IOS and square icons for Android) and  screens. Finally in the upper part of the solution there is a **test** folder where the unit and integration tests will reside.
 
 The next folder **www** contains the project itself, the common code base. We see here a bunch of files which are nicely and clearly organized, maybe not for you yet, but hopefully things become more clear with the next code snippet of the index.html which is the core of the SPA and where the whole app is running:  
 
@@ -250,14 +250,14 @@ The above html contains a navbar and a simple list of trips. What we notice from
 })();
 ```
 
-Above  we can see how the TripsControl is defined . To expose something usable in the template we just exetend/add a new property or function to the $scope variable. For example we get the list of trips if we have a successfull answer for a $http request defined by js var tripsRequest.
+Above  we can see how the TripsControl is defined . To expose something usable in the template we just exetend/add a new property or function to the $scope variable. For example we get the list of trips if we have a successful answer for a $http request defined by js var tripsRequest.
 
 In a nutshell the above should give you an idea how angular works  and used in this POC.
 
 ### What else ?
 Since the most of the time during this POC I have worked with AngularJS you might wondering if I had to implement something else which is worth mentioning?
 
-Yes, for example implementing hardware backbutton support for Android devices was pretty interesting and challenging . In order to achieve this I needed to create an angular service where I had to use Cordova capabilities. The result looks like this :
+Yes, for example implementing hardware back button support for Android devices was pretty interesting and challenging . In order to achieve this I needed to create an angular service where I had to use Cordova capabilities. The result looks like this :
 
 ```javascript
 (function () {
@@ -323,8 +323,8 @@ Yes, for example implementing hardware backbutton support for Android devices wa
 })();
 ```
 
-The above is not the simplest code, it migt be improved, but for the POC it did a great job.
+The above is not the simplest code, it might be improved, but for the POC it did a great job.
 
-Other interesting thing worth to mention is that testing is pretty easy and straightforward using this stack.I will not deail this but it is worth to know that in one day I have managed to set up the environment and write some unit tests for the receiptDetailsController.js using karma.js and one more day took to set up the environment and create some end to end tests using protractor.js.
+Other interesting thing worth to mention is that testing is pretty easy and straightforward using this stack.I will not detail this but it is worth to know that in one day I have managed to set up the environment and write some unit tests for the receiptDetailsController.js using karma.js and one more day took to set up the environment and create some end to end tests using protractor.js.
 
 Overall this stack of technologies allowed to put a healthy and solid base for a more complex mobile app. Development was quick and resulted a nice POC app out of it. Is this stack a good choice for future mobile apps? At this moment I think that it is. Let's see what the future will bring to us :).
