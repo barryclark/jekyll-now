@@ -32,6 +32,7 @@ This being installed you have what you need to start the work. It installs Andro
 
 ### Front-End requirements
 In a few words we needed:
+
 * a login page
 * a list of trips
 * the possibility to create/edit a trip
