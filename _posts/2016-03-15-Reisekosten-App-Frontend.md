@@ -41,6 +41,7 @@ In a few words we needed:
 ### The project
 
 Knowing the above here is a screenshot of how I ended up structuring the project:  
+
 {:.center}
 ![Reisekosten App Frontend - Visual Studio Tools for Apache Cordova]( /images/reisekosten-app/projectstructure.jpg){:style="margin:auto"}
 
@@ -142,7 +143,7 @@ The AngularJS application is organized using modules. We can think of modules as
 
 I have created a separate module for controllers(travelExpensesControllers) and one for services(travelExpensesApp.services). I have also used some libraries as modules like : ngRoute (from angular-route.js), mgCrea.ngStrap (from angular-strap.js) and ui.utils.masks (from angular-input-masks-standalone.min.js). The module declarations links everything together and creates the base of the app.
 
-Beside modules the above screenshot contains the configuration of routing. Using ngRoute lets us use routing which helps us a lot to define a nice and clear structure for the frontend app. AngularJS routing permits a good separation of concerns. GUI resides in html templates defined by the templateUrls and the logic behind is separated in the controller javascript files.
+Beside modules the above code snippet contains the configuration of routing. Using ngRoute lets us use routing which helps us a lot to define a nice and clear structure for the frontend app. AngularJS routing permits a good separation of concerns. GUI resides in html templates defined by the templateUrls and the logic behind is separated in the controller javascript files.
 
 To understand a bit better let's take a look on the trips page which is built up from trips.html as template and TripsControl as controller:
 
@@ -250,12 +251,12 @@ The above html contains a navbar and a simple list of trips. What we notice from
 
 Above  we can see how the TripsControl is defined . To expose something usable in the template we just exetend/add a new property or function to the $scope variable. For example we get the list of trips if we have a successfull answer for a $http request defined by js var tripsRequest.
 
-In a nutshell this is how angular works  and used in this POC.
+In a nutshell the above should give you an idea how angular works  and used in this POC.
 
 ### What else ?
-Since the most of the time during this POC I have worked with AngularJS you might wondering if I had to implement something else which is worth mentioning.
+Since the most of the time during this POC I have worked with AngularJS you might wondering if I had to implement something else which is worth mentioning?
 
-Yes, for example implementing hardware backbutton support for Android devices was pretty interesting and challenging at the same time. In order to achieve this I needed to create an angular service where I had to use Cordova capabilities. The result looks like this :
+Yes, for example implementing hardware backbutton support for Android devices was pretty interesting and challenging . In order to achieve this I needed to create an angular service where I had to use Cordova capabilities. The result looks like this :
 
 ```javascript
 (function () {
@@ -321,8 +322,8 @@ Yes, for example implementing hardware backbutton support for Android devices wa
 })();
 ```
 
-The above is not the simplest code, it migt be improved but for the POC it did the job.
+The above is not the simplest code, it migt be improved but for the POC it did a great job.
 
-Other interesting thing worth to mention is that we have targeted to create some basic tests. In one day I have managed to set up the environment and write some unit tests for the receiptDetailsController.js using karma.js and one more day took to create some end to end tests using protractor.js.
+Other interesting thing worth to mention is that testing is pretty easy and straightforward using this stack.I will not deail this but it is worth to know that in one day I have managed to set up the environment and write some unit tests for the receiptDetailsController.js using karma.js and one more day took to set up the environment and create some end to end tests using protractor.js.
 
-Overall I am satisfied with the result of POC , now I am anxious and can't wait to work on the real stuff.
+Overall this stack of technologies allowed to put a healthy and solid base for a more complex mobile app. Development was quick and resulted a nice POC app out of it. Is this stack a good choice for future mobile apps? At this moment I think that it is. Let's see what the future will bring to us :).
