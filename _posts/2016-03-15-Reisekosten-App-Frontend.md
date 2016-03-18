@@ -195,7 +195,7 @@ To understand a bit better let's take a look on the trips page which is built up
 </div>
 ```
 
-The above html contains a navbar and a simple list of trips. What we notice from the start are the double bracelets (e.g. '{{ trip.departure }}') and directives starting with "ng" prefix. These are the main ways how the template interacts with the controller :
+The above html contains a navbar and a simple list of trips. What we notice from the start are the double brackets (e.g. '\{\{ trip.departure \}\}') and directives starting with "ng" prefix. These are the main ways how the template interacts with the controller :
 
 ```javascript
 (function () {
