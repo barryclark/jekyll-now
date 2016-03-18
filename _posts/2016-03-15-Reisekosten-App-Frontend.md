@@ -27,16 +27,16 @@ In my day by day job I mostly use Microsoft technologies like C#. I do this usin
 {:.center}
 ![Reisekosten App Frontend - Visual Studio Tools for Apache Cordova]( /images/reisekosten-app/visualstudioupdate7.jpg){:style="margin:auto"}
 
-This being installed you have what you need to start the work. It installs Android SDK and a lot of other dependent stuff you might need when you start working. I will not detail  this since this has been done before by others. If you want to read about you have a lot of resources available like :
-http://taco.visualstudio.com/en-us/docs/get-started-first-mobile-app/
+This being installed you have what you need to start the work. It installs Android SDK and a lot of other dependent stuff you might need during development. I will not detail  this since this has been done before by others. If you want to read about you have a lot of resources available like :
+[http://taco.visualstudio.com/en-us/docs/get-started-first-mobile-app/](http://taco.visualstudio.com/en-us/docs/get-started-first-mobile-app/)
 
 ### Front-End requirements
 In a few words we needed:
-- a login page
-- a list of trips
-- the possibility to create/edit a trip
-- add/edit receipts assigned to a trip
-- the receipts form needed visibility rules of some fields(depending on a category)
+* a login page
+* a list of trips
+* the possibility to create/edit a trip
+* add/edit receipts assigned to a trip
+* the receipts form needed visibility rules of some fields(depending on a category)
 
 ### The project
 
