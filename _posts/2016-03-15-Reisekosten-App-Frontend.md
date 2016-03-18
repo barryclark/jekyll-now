@@ -36,7 +36,7 @@ In a few words we needed:
 * a login page
 * a list of trips
 * the possibility to create/edit a trip
-* add/edit receipts assigned to a trip
+* add/edit/delete receipts assigned to a trip
 * the receipts form needed visibility rules of some fields(depending on a category)
 
 ### The project
