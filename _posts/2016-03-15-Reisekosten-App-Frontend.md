@@ -327,4 +327,4 @@ The above is not the simplest code, it might be improved, but for the POC it did
 
 Other interesting thing worth to mention is that testing is pretty easy and straightforward using this stack.I will not detail this but it is worth to know that in one day I have managed to set up the environment and write some unit tests for the receiptDetailsController.js using karma.js and one more day took to set up the environment and create some end to end tests using protractor.js.
 
-Overall this stack of technologies allowed to put a healthy and solid base for a more complex mobile app. Development was quick and resulted a nice POC app out of it. Is this stack a good choice for future mobile apps? At this moment I think that it is. Let's see what the future will bring to us :).
+Overall this stack of technologies allowed to put a healthy and solid base for a prjoect which in the future can become a complex mobile app. Development was quick and resulted a nice POC app out of it. Is this stack a good choice for future mobile apps? At this moment I think that it is. Let's see what the future will bring to us :).
