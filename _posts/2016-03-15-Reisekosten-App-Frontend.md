@@ -44,14 +44,13 @@ Knowing the above here is a screenshot of how I ended up structuring the project
 {:.center}
 ![Reisekosten App Frontend - Visual Studio Tools for Apache Cordova]( /images/reisekosten-app/projectstructure.jpg){:style="margin:auto"}
 
-In the upper part of the solution we can see some folders where OS specific things are kept. For instance merges folder has android and ios subfolders each of them containing a css folder where resides a file called overrides.css. Of course these files have different content depending on the OS. What is cool with this is that at build time this Visual Studio project knows where to place automatically these files so that specific overrides actually happen in the apps.
+In the upper part of the solution we can see the some folders created by Visual Studio project structure where OS specific things are kept. For instance **merges** folder has android and ios subfolders each of them containing a css folder where resides a file called overrides.css. Of course these files have different content depending on the OS. What is cool with this, is that at build time Visual Studio places the corresponding override in each OS specific build(in the .apk or the .ipa in our case).
 
-The plugins folder is cool too , here will reside the plugins which helps to extend the web application with native app abilities. For instance we can install here a plugin which will be able to access the device camera.
+The **plugins** folder is nice too , here will reside the plugins which helps to extend the web application with native app abilities. For instance we can install here a plugin which will be able to access the device camera.
 
-The res folder contains OS specific icons (e.g. rounded icons for IOS and square icons for Android) and  screens. Finally in the upper part of the soulution there is a test folder where the unit and integration tests will reside.
+The **res** folder contains OS specific icons (e.g. rounded icons for IOS and square icons for Android) and  screens. Finally in the upper part of the soulution there is a **test** folder where the unit and integration tests will reside.
 
-The next folder www contains the project itself, the common code base. We see here a bunch of files which for me seems nicely and clearly organized, maybe not for you yet, but hopefully things become more clear with the next screenshot of the index.html where the whole app is running:  
-
+The next folder **www** contains the project itself, the common code base. We see here a bunch of files which are nicely and clearly organized, maybe not for you yet, but hopefully things become more clear with the next code snippet of the index.html which is the core of the SPA and where the whole app is running:  
 ```HTML5
 <!doctype html>
 <html ng-app="travelExpensesApp" ng-csp>
