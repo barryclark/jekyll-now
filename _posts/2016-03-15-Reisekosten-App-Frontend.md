@@ -322,7 +322,7 @@ Yes, for example implementing hardware backbutton support for Android devices wa
 })();
 ```
 
-The above is not the simplest code, it migt be improved but for the POC it did a great job.
+The above is not the simplest code, it migt be improved, but for the POC it did a great job.
 
 Other interesting thing worth to mention is that testing is pretty easy and straightforward using this stack.I will not deail this but it is worth to know that in one day I have managed to set up the environment and write some unit tests for the receiptDetailsController.js using karma.js and one more day took to set up the environment and create some end to end tests using protractor.js.
 
