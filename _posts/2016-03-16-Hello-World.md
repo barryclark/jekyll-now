@@ -4,9 +4,7 @@ title: Hello World!
 published: true
 ---
 
-Hello World!
-
-I've started publishing a website, something that I've toyed around with doing for quite a while now. With this, I'll be documenting projects that I work on for posterity and hopefully others will get some use out of it. I've had lots of little things that I've done over the years that I forget the steps for, so even though I've figured it out once I have to learn it all over again if I want to duplicate or improve it.
+Hello World! I've started publishing a website, something that I've toyed around with doing for quite a while now. With this, I'll be documenting projects that I work on for posterity and hopefully others will get some use out of it. I've had lots of little things that I've done over the years that I forget the steps for, so even though I've figured it out once I have to learn it all over again if I want to duplicate or improve it.
 
 Naturally, the first project that I document will be this site itself! I've split the site into two parts, projects and the blog.  I envision the projects section having polished, "timeless" documentation on how I did my project, while the blog section, in addition to regular bloggy things, can show the chronology and meandering paths and decisions that I took to accomplish it.
 
