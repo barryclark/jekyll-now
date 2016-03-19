@@ -43,16 +43,16 @@ That is it, save component and go to Community Builder and now we can see our ne
 
 ![Page Editor]({{ site.baseurl }}/images/pageeditor.png)
 
-Drag this component to community page and we can now set its property URL to navigate to our web site. Ready to publish these changes and preview this community page. Now we have a reusable URL button to use with Community Builder. That is good but we liely want to use our components across multiuple apps, make them reusable in S1 or AppBuilder not just Cmmunity Builder. Lightning provides a way to do that via interfaces that your custom component implements. To expose our link button component to AppBuilder we need to implement new interface like this code does.
+Drag this component to community page and we can now set its property URL to navigate to our web site. Ready to publish these changes and preview this community page. Now we have a reusable URL button to use with Community Builder. That is good but we likely want to use our components across multiuple apps, make them reusable in S1 or AppBuilder not just Community Builder. Lightning provides a way to do that via interfaces that your custom component implements. To expose our link button component to AppBuilder we need to implement new interface like this code does.
 
 ```
 <aura:component implements="forceCommunity:availableForAllPageTypes,flexipage:availableForAllPageTypes" access="global">
 ```
-And now lets open App Builder and we will see our custom MyLinkButto component.
+And now lets open App Builder and we will see our custom MyLinkButton component.
 
 ![App Builder]({{ site.baseurl }}/images/appbuilder.png)
 
-You can see now how the same component can be reused in Community Builder as well as App Builder by adding interface implementation tags. Lightning has several standard interafces to support different design time tools adn run time environments.
+You can see how the same component can be reused in Community Builder as well as App Builder by adding interface implementation tags. Lightning has several standard interafces to support different design time tools and run time environments.
 
 ```
 flexipage:availableForAllPageTypes      - support for App Builder
