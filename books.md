@@ -1,6 +1,6 @@
 ---
 layout: layout
-title: "About"
+title: "Books"
 ---
 
 ## Epic SpriteKit Tutorial with Swift
