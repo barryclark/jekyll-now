@@ -1,3 +1,8 @@
+---
+layout: layout
+title: "About"
+---
+
 ## Epic SpriteKit Tutorial with Swift
 
 Learn Apple's game engine called SpriteKit together with their brand new programming language Swift. Along the way I'll introduce you to some programming concepts that make your code easier to write, read, re-use and will make your game more robust. 
