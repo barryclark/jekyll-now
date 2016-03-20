@@ -1,6 +1,6 @@
 ---
 layout: post
-title: You're up and running!
+title: Yoga Mind, Body & Spirit: A Return to Wholeness
 ---
 
 
