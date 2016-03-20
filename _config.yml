@@ -3,30 +3,27 @@
 #
 
 # Name of your site (displayed in the header)
-name: Your Name
+name: Yvonne
 
 # Short bio or description (displayed in the header)
-description: Web Developer from Somewhere
-
+description: Big Data/ Data Science/ Yoga
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
-
+avatar: cwu22.github.io/images/IMG_3089.JPG
 #
 # Flags below are optional
 #
-
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
   email:
   facebook:
   flickr:
-  github: barryclark/jekyll-now
+  github: cwu22
   instagram:
   linkedin:
   pinterest:
   rss: # just type anything here for a working RSS icon
-  twitter: jekyllrb
+  twitter: cwu22
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
@@ -56,17 +53,8 @@ baseurl: ""
 permalink: /:title/
 
 # The release of Jekyll Now that you're using
-version: v1.2.0
-
-# Jekyll 3 now only supports Kramdown for Markdown
-kramdown:
-  # Use GitHub flavored markdown, including triple backtick fenced code blocks
-  input: GFM
-  # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
-  syntax_highlighter: rouge
-  syntax_highlighter_opts:
-    # Use existing pygments syntax highlighting css
-    css_class: 'highlight'
+version: v3.1.2
+markdown: kramdown
 
 # Set the Sass partials directory, as we're using @imports
 sass:
@@ -76,6 +64,7 @@ sass:
 gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
+
 
 # Exclude these files from your production _site
 exclude:
