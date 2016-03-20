@@ -3,8 +3,6 @@ layout: post
 title: Yoga Mind, Body & Spirit: A Return to Wholeness
 ---
 
-This book introduce Yoga from three part. Part I is groundwork, which introduce the Yogis philosophy and ethics.
-Part II is about different postures and Part III is about how to practice.
 
 What is yoga, it is a means of staying in intimate communication with the formative core matrix of yourself and those forces that serve to bind all living beings together. As we establish and sustain this intimate connection, this state of equanimity becomes the core of our experience rather than the rare exception.
 
