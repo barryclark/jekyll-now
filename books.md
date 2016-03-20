@@ -1,5 +1,11 @@
 ---
-title: "Books"
+title: Books
+published: true
+---
+
+---
+layout: page
+title: Books
 ---
 
 ## Epic SpriteKit Tutorial with Swift
