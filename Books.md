@@ -1,5 +1,7 @@
 ---
-title: Books
+layout: page
+title: About
+permalink: /books/
 published: true
 ---
 
