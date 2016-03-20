@@ -5,6 +5,10 @@ permalink: /about/
 published: true
 ---
 
+---
+layout: page
+title: About
+---
 
 Some information about you!
 
