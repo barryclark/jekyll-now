@@ -1,10 +1,13 @@
 ---
 layout: post
-title: You're up and running!
+title: Make a game like Flappy Bird with Swift
+published: true
 ---
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+Learn SpriteKit and get an introduction to Swfit by making a clone of Flappy Bird.
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
+SpriteKit is a great API for making 2D games for iOS, tvOS and the Mac. Together we'll build a game like Flappy Bird from the ground up. Along the way I'll introduce you to some concepts that will reduce bugs, make your games more robust, your code re-usable and readable.
 
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
+This simple game will introduce you to several game programming concepts that will get you off to a good start developing games with SpriteKit in the Swift programming language. 
+
+
