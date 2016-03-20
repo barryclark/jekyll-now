@@ -1,9 +1,9 @@
 ---
 layout: post
-title: You're up and running!
+title: 我的生活點
 ---
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+記錄閱讀，瑜伽，美食。 我的二十四歲
 
 ![_config.yml]({{ site.baseurl }}/images/config.png)
 
