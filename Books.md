@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: Books
 permalink: /books/
 published: true
 ---
