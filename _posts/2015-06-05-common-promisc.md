@@ -74,6 +74,8 @@ tags: [common]
     
     [用 Org-mode 实现GTD](http://www.cnblogs.com/holbrook/archive/2012/04/17/2454619.html)
     
+    [org-mode 简明手册](http://www.cnblogs.com/Open_Source/archive/2011/07/17/2108747.html#sec-9-1)
+    
     [capwap学习笔记——初识capwap](http://www.cnblogs.com/xmphoenix/p/3806844.html)
     
 6. **网页设计 微博**
