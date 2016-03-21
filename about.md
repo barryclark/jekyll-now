@@ -9,13 +9,13 @@ published: true
 	<img src="http://spritekitbook.github.io/images/about.png" width="50%">
 </p>
 
-Hey there!
+Howdy!
 
 My name is Jeremy Novak. I'm a Software Engineer and IT Professional from Texas. 
 
 
-I was a kid in the golden era of Arcade games. The Software Development and Game Design
-worlds have a lot of legends and heroes. I am inspired by what people like [Yuji Naka](https://en.wikipedia.org/wiki/Yuji_Naka) were able to accomplish with truly limited hardware. 
+My love of computers and games started in the [Golden age of Arcade Games](https://en.wikipedia.org/wiki/Golden_age_of_arcade_video_games).
+I am most inspired by what people like [Yuji Naka](https://en.wikipedia.org/wiki/Yuji_Naka) were able to accomplish with such limited hardware. 
 
 When not at the keyboard I enjoy spending time with my dogs, working on my horsemanship,
 playing [Disc Golf](https://en.wikipedia.org/wiki/Disc_golf), and attempt some outdoor cooking. 
