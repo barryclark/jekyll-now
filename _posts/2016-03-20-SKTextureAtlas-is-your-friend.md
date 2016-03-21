@@ -4,7 +4,7 @@ title: SKTextureAtlas is your friend
 published: true
 ---
 
-Have you been working with SpriteKit and gotten strange messages on the console like this one? 
+Have you been working with SpriteKit and had strange messages on the console like this one? 
 
 ```bash
 CUICatalog: Invalid Request: requesting subtype without specifying idiom
