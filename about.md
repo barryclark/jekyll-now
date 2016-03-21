@@ -6,7 +6,7 @@ published: true
 ---
 
 <p align="center">
-	<img src="http://spritekitbook.github.io/images/about.png" width="256">
+	<img src="http://spritekitbook.github.io/images/about.png" width="50%">
 </p>
 
 Hey there!
