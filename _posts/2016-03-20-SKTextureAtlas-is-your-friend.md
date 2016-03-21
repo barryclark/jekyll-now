@@ -5,6 +5,7 @@ published: true
 ---
 
 Have you been working with SpriteKit and gotten strange messages on the console like this one? 
+
 ```cmd
 CUICatalog: Invalid Request: requesting subtype without specifying idiom
 ```
@@ -24,6 +25,7 @@ This post assumes you are using two things.
 Here are some examples that will get you some odd results.
 
 **Creation by resource name**
+
 ```swift
 let texture = SKTexture(imageNamed: "CoolHero")
 ```
@@ -35,6 +37,7 @@ SKTexture *texture = [SKTexture textureWithImageNamed:@"CoolHero"];
 I recommend you try creating these from SKTextureAtlas.
 
 **Creation from the Atlas**
+
 ```swift
 let texture = SKTextureAtlas(named: "Sprites").textureNamed("CoolHero")
 ```
