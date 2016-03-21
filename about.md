@@ -11,7 +11,7 @@ published: true
 
 Howdy!
 
-My name is Jeremy Novak. I'm a Software Developer, IT Professional and Apple Enthusiast from Texas. 
+My name is Jeremy Novak. I'm a Software Developer and [Apple](http://apple.com) Enthusiast from Texas. 
 
 
 My love of computers and games started in the [Golden age of Arcade Games](https://en.wikipedia.org/wiki/Golden_age_of_arcade_video_games). 
