@@ -6,7 +6,7 @@ published: true
 ---
 
 
-<p align="left">
+<p>
 	<img src="http://spritekitbook.github.io/images/epic-spritekit-tutorial-swift.png" width="25%">
 </p>
 
@@ -28,21 +28,17 @@ Available as an eBook on these stores.
 </p>
 
 
-<br/>
-<br/>
 
-<p align="left">
+
+<p>
 	<img src="http://spritekitbook.github.io/images/flappybird-swift.png" width="25%">
 </p>
 
-
 ## Make a game like Flappy Bird with Swift
 
-Learn to make 2D Games for Apple Devices by building a clone of the infamous Flappy Bird with Swift.
+Learn to make a clone of the infamous Flappy Bird with SpriteKit and Swift in this step by step tutorial book.
 
-Together we’ll build a complete game step by step using SpriteKit and Swift.
-
-All you need is a Mac and a copy of [Xcode](https://itunes.apple.com/us/app/xcode/id497799835?mt=12){:target="_blank"} downloaded for free from the Mac App Store. I’ve provided everything else. Let’s get started!
+All you need is a Mac and a copy of [Xcode](https://itunes.apple.com/us/app/xcode/id497799835?mt=12){:target="_blank"} downloaded for free from the Mac App Store.
 
 The source for this project can be downloaded [here](https://github.com/spritekitbook/flappybird-swift.git)
 
@@ -54,3 +50,22 @@ Available as an eBook on these stores.
 </p>
 
 
+
+<p>
+	<img src="http://spritekitbook.github.io/images/timberman-swift.png" width="25%">
+</p>
+
+## Make a game like Timberman with Swift
+
+Learn to make a clone of the hit game Timberman with SpriteKit and Swift in this step by step tutorial book.
+
+All you need is a Mac and a copy of [Xcode](https://itunes.apple.com/us/app/xcode/id497799835?mt=12){:target="_blank"} downloaded for free from the Mac App Store.
+
+The source for this project can be downloaded [here](https://github.com/spritekitbook/timberman-swift.git)
+
+Available as an eBook on these stores.
+
+<p align="center">
+	<a href="http://www.amazon.com/gp/product/B01CUW63L0" target="_blank"><img src="http://spritekitbook.github.io/images/amazonbadge.png"></a>
+	<a href="https://itunes.apple.com/us/book/id1092729922" target="_blank"><img src="http://spritekitbook.github.io/images/itunesbadge.png"></a>
+</p>
