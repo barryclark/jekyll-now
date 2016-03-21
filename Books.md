@@ -6,7 +6,7 @@ published: true
 ---
 
 
-<p align="center">
+<p align="left">
 	<img src="http://spritekitbook.github.io/images/epic-spritekit-tutorial-swift.png" width="25%">
 </p>
 
@@ -29,8 +29,9 @@ Available as an eBook on these stores.
 
 
 <br/>
+<br/>
 
-<p align="center">
+<p align="left">
 	<img src="http://spritekitbook.github.io/images/flappybird-swift.png" width="25%">
 </p>
 
