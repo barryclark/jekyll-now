@@ -76,7 +76,7 @@ Available as an eBook on these stores.
 <br/><br/>
 
 <p>
-	<img src="http://spritekitbook.github.io/images/timberman-objc.png">
+	<img src="http://spritekitbook.github.io/images/timberman-objc.png" width="25%">
 </p>
 
 ## Make a game like Timberman
