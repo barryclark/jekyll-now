@@ -28,9 +28,12 @@ Available as an eBook on these stores.
 </p>
 
 
+<br/>
+
 <p align="center">
 	<img src="http://spritekitbook.github.io/images/flappybird-swift.png" width="50%">
 </p>
+
 
 ## Make a game like Flappy Bird with Swift
 
