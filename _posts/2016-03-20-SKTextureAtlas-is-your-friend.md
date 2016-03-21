@@ -6,7 +6,7 @@ published: true
 
 Have you been working with SpriteKit and gotten strange messages on the console like this one? 
 
-```cmd
+```bash
 CUICatalog: Invalid Request: requesting subtype without specifying idiom
 ```
 
@@ -26,11 +26,11 @@ Here are some examples that will get you some odd results.
 
 **Creation by resource name**
 
-```swift
+``` swift
 let texture = SKTexture(imageNamed: "CoolHero")
 ```
 
-```objective-c
+``` objective-c
 SKTexture *texture = [SKTexture textureWithImageNamed:@"CoolHero"];
 ```
 
@@ -38,11 +38,11 @@ I recommend you try creating these from SKTextureAtlas.
 
 **Creation from the Atlas**
 
-```swift
+``` swift
 let texture = SKTextureAtlas(named: "Sprites").textureNamed("CoolHero")
 ```
 
-```objective-c
+``` objective-c
 SKTexture *texture = [[SKTextureAtlas atlasNamed:@"Sprites"] textureNamed:@"CoolHero"];
 ```
 
