@@ -28,6 +28,7 @@ Available as an eBook on these stores.
 </p>
 
 
+<br/><br/>
 
 
 <p>
@@ -50,6 +51,7 @@ Available as an eBook on these stores.
 </p>
 
 
+<br/><br/>
 
 <p>
 	<img src="http://spritekitbook.github.io/images/timberman-swift.png" width="25%">
@@ -68,4 +70,28 @@ Available as an eBook on these stores.
 <p align="center">
 	<a href="http://www.amazon.com/gp/product/B01CUW63L0" target="_blank"><img src="http://spritekitbook.github.io/images/amazonbadge.png"></a>
 	<a href="https://itunes.apple.com/us/book/id1092729922" target="_blank"><img src="http://spritekitbook.github.io/images/itunesbadge.png"></a>
+</p>
+
+
+<br/><br/>
+
+<p>
+	<img src="http://spritekitbook.github.io/images/timberman-objc.png">
+</p>
+
+## Make a game like Timberman
+
+Learn to make a clone of the hit game Timberman with SpriteKit and **Objective-C** in this step by step tutorial book.
+
+Objective-C is still a very valuable language to know for those serious about developing for the Apple platform. 
+
+All you need is a Mac and a copy of [Xcode](https://itunes.apple.com/us/app/xcode/id497799835?mt=12){:target="_blank"} downloaded for free from the Mac App Store.
+
+The source for this project can be downloaded [here](https://github.com/spritekitbook/timberman-objc.git)
+
+Available as an eBook on these stores.
+
+<p align="center">
+	<a href="http://www.amazon.com/gp/product/B01D5EH39S" target="_blank"><img src="http://spritekitbook.github.io/images/amazonbadge.png"></a>
+	<a href="https://itunes.apple.com/book/id1094861740" target="_blank"><img src="http://spritekitbook.github.io/images/itunesbadge.png"></a>
 </p>
