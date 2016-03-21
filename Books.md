@@ -6,6 +6,10 @@ published: true
 ---
 
 
+<p align="center">
+	<img src="http://spritekitbook.github.io/images/epic-spritekit-tutorial-swift.png">
+</p>
+
 ## Epic SpriteKit Tutorial with Swift
 
 Learn Apple's game engine called SpriteKit together with their brand new programming language Swift. Along the way I'll introduce you to some programming concepts that make your code easier to write, read, re-use and will make your game more robust. 
@@ -13,3 +17,12 @@ Learn Apple's game engine called SpriteKit together with their brand new program
 Together we'll build an Endless Runner space themed game where the player must avoid meteors and pick up stars for bonus points. Fast paced games anyone can pick up and play are a great place to start your journey as a game developer. 
 
 All you need is a Mac and a copy of [Xcode](https://itunes.apple.com/us/app/xcode/id497799835?mt=12){:target="_blank"} downloaded for free from the Mac App Store. I have provided the rest. Let's get started.
+
+Available as an eBook on these stores.
+
+<p align="center">
+	<a href="http://www.amazon.com/gp/product/B01BB2U0PA" target="_blank"><img src="http://spritekitbook.github.io/images/amazonbadge.png"></a>
+	<a href="http://https://itunes.apple.com/book/epic-spritekit-tutorial-swift/id1080204614" target="_blank"><img src="http://spritekitbook.github.io/images/itunesbadge.png">
+</p>
+
+
