@@ -18,7 +18,7 @@ My love of computers and games started in the [Golden age of Arcade Games](https
 
 I am most inspired by what people like [Yuji Naka](https://en.wikipedia.org/wiki/Yuji_Naka) were able to accomplish with such limited hardware. 
 
-When not at the keyboard I enjoy spending time with my dogs, working on my horsemanship,
+When not working on my trusty Macbook; I enjoy spending time with my dogs, working on my horsemanship,
 playing [Disc Golf](https://en.wikipedia.org/wiki/Disc_golf), and attempt some [outdoor cooking](https://www.youtube.com/user/krollins57/videos). 
 
 
