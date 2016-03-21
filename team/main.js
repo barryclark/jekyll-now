@@ -1,6 +1,8 @@
 // jshint -W033
 // jshint -W119
 
+$('head').append('<link rel="stylesheet" type="text/css" href="./style.css" />')
+
 var url = 'https://api.github.com/orgs/BarlowProgramming/members';
 $.get(url, function(users) {
   displayUsers(users)
