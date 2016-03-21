@@ -30,7 +30,7 @@ Here are some examples that will get you some odd results.
 let texture = SKTexture(imageNamed: "CoolHero")
 ```
 
-``` objectivec
+``` objc
 SKTexture *texture = [SKTexture textureWithImageNamed:@"CoolHero"];
 ```
 
@@ -42,7 +42,7 @@ I recommend you try creating these from SKTextureAtlas.
 let texture = SKTextureAtlas(named: "Sprites").textureNamed("CoolHero")
 ```
 
-``` objectivec
+``` objc
 SKTexture *texture = [[SKTextureAtlas atlasNamed:@"Sprites"] textureNamed:@"CoolHero"];
 ```
 
