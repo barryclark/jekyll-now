@@ -7,7 +7,7 @@ published: true
 
 
 <p align="center">
-	<img src="http://spritekitbook.github.io/images/epic-spritekit-tutorial-swift.png">
+	<img src="http://spritekitbook.github.io/images/epic-spritekit-tutorial-swift.png" width="50%">
 </p>
 
 ## Epic SpriteKit Tutorial with Swift
@@ -18,11 +18,35 @@ Together we'll build an Endless Runner space themed game where the player must a
 
 All you need is a Mac and a copy of [Xcode](https://itunes.apple.com/us/app/xcode/id497799835?mt=12){:target="_blank"} downloaded for free from the Mac App Store. I have provided the rest. Let's get started.
 
+The source code for this project can be downloaded [here](https://github.com/spritekitbook/spritekitbook-swift.git).
+
 Available as an eBook on these stores.
 
 <p align="center">
 	<a href="http://www.amazon.com/gp/product/B01BB2U0PA" target="_blank"><img src="http://spritekitbook.github.io/images/amazonbadge.png"></a>
 	<a href="http://https://itunes.apple.com/book/epic-spritekit-tutorial-swift/id1080204614" target="_blank"><img src="http://spritekitbook.github.io/images/itunesbadge.png">
+</p>
+
+
+<p align="center">
+	<img src="http://spritekitbook.github.io/images/flappybird-swift.png" width="50%">
+</p>
+
+## Make a game like Flappy Bird with Swift
+
+Learn to make 2D Games for Apple Devices by building a clone of the infamous Flappy Bird with Swift.
+
+Together we’ll build a complete game step by step using SpriteKit and Swift.
+
+All you need is a Mac and a copy of [Xcode](https://itunes.apple.com/us/app/xcode/id497799835?mt=12){:target="_blank"} downloaded for free from the Mac App Store. I’ve provided everything else. Let’s get started!
+
+The source for this project can be downloaded [here](https://github.com/spritekitbook/flappybird-swift.git)
+
+Available as an eBook on these stores.
+
+<p align="center">
+	<a href="http://www.amazon.com/gp/product/B01C7Q7K48" target="_blank"><img src="http://spritekitbook.github.io/images/amazonbadge.png"></a>
+	<a href="http://itunes.apple.com/us/book/id1088000607" target="_blank"><img src="http://spritekitbook.github.io/images/itunesbadge.png"></a>
 </p>
 
 
