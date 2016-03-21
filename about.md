@@ -5,7 +5,7 @@ permalink: /about/
 published: true
 ---
 
-![mugshot](http://spritekitbook.github.io/images/about.png)
+![mugshot](http://spritekitbook.github.io/images/about.png =128x128)
 
 Hey there!
 
