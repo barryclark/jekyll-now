@@ -5,13 +5,18 @@ permalink: /about/
 published: true
 ---
 
+![mugshot](http://spritekitbook.github.io/images/about.png)
 
-Some information about you!
+Hey there!
 
-### More Information
+My name is Jeremy Novak. I'm a Software Engineer and IT Professional from Texas. 
 
-A place to include any other types of information that you'd like to include about yourself.
 
-### Contact me
+I was a kid in the golden era of Arcade games. The Software Development and Game Design
+worlds have a lot of legends and heroes. I am inspired by what people like [Yuji Naka](https://en.wikipedia.org/wiki/Yuji_Naka) were able to accomplish with truly limited hardware. 
 
-[spritekitbook@gmail.com](mailto:spritekitbook@gmail.com)
+When not at the keyboard I enjoy spending time with my dogs, working on my horsemanship,
+playing [Disc Golf](https://en.wikipedia.org/wiki/Disc_golf), and attempt some outdoor cooking. 
+
+
+Thanks for visiting my GitHub.
