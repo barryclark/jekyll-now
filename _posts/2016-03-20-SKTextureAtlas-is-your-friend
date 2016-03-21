@@ -32,7 +32,8 @@ let texture = SKTexture(imageNamed: "CoolHero")
 SKTexture *texture = [SKTexture textureWithImageNamed:@"CoolHero"];
 ```
 
-I recommend you try creating these from your SKTextureAtlas.
+I recommend you try creating these from SKTextureAtlas.
+
 **Creation from the Atlas**
 ```swift
 let texture = SKTextureAtlas(named: "Sprites").textureNamed("CoolHero")
