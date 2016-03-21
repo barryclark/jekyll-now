@@ -1,0 +1,32 @@
+
+a {
+  color: #3e3e3e
+}
+
+a:visited {
+  color: #3e3e3e
+}
+
+.user-container {
+  width: 100%;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  padding: 0.5em;
+}
+
+.user-picture {
+  max-width: 4em;
+  border-radius: 0.5em;
+  margin: 0.5em;
+  border: #3e3e3e .2em solid
+}
+
+.user-info {
+
+}
+
+.user-link {
+  font-family: monospace;
+  font-size: 3em;
+}
