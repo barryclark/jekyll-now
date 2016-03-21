@@ -7,7 +7,7 @@ published: true
 
 
 <p>
-	<img src="http://spritekitbook.github.io/images/epic-spritekit-tutorial-swift.png" width="25%">
+	<a href="http://www.amazon.com/gp/product/B01BB2U0PA" target="_blank"><img src="http://spritekitbook.github.io/images/epic-spritekit-tutorial-swift.png" width="25%"></a>
 </p>
 
 ## Epic SpriteKit Tutorial with Swift
@@ -32,7 +32,7 @@ Available as an eBook on these stores.
 
 
 <p>
-	<img src="http://spritekitbook.github.io/images/flappybird-swift.png" width="25%">
+	<a href="http://www.amazon.com/gp/product/B01C7Q7K48" target="_blank"><img src="http://spritekitbook.github.io/images/flappybird-swift.png" width="25%"></a>
 </p>
 
 ## Make a game like Flappy Bird with Swift
@@ -54,7 +54,7 @@ Available as an eBook on these stores.
 <br/><br/>
 
 <p>
-	<img src="http://spritekitbook.github.io/images/timberman-swift.png" width="25%">
+	<a href="http://www.amazon.com/gp/product/B01CUW63L0" target="_blank"><img src="http://spritekitbook.github.io/images/timberman-swift.png" width="25%"></a>
 </p>
 
 ## Make a game like Timberman with Swift
@@ -76,7 +76,7 @@ Available as an eBook on these stores.
 <br/><br/>
 
 <p>
-	<img src="http://spritekitbook.github.io/images/timberman-objc.png" width="25%">
+	<a href="http://www.amazon.com/gp/product/B01D5EH39S" target="_blank"><img src="http://spritekitbook.github.io/images/timberman-objc.png" width="25%"></a>
 </p>
 
 ## Make a game like Timberman
