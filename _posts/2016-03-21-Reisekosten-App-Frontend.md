@@ -179,13 +179,13 @@ To understand a bit better let's take a look on the trips page which is built up
                 <tbody>
                 <tr ng-repeat="trip in trips | orderBy : departure_date : reverse" ng-click="editTravel(trip.id)">
                     <td>
-                        \{\{ trip.departure_date | date : 'dd.MM.yyyy'\}\}
+                        &#123;&#123; trip.departure_date | date : 'dd.MM.yyyy' &#125;&#125;
                     </td>
                     <td>
-                        \{\{ trip.departure \}\}
+                        &#123;&#123; trip.departure  &#125;&#125
                     </td>
                     <td>
-                        \{\{ trip.destination \}\}
+                        &#123;&#123; trip.destination  &#125;&#125
                     </td>
                 </tr>
                 </tbody>
