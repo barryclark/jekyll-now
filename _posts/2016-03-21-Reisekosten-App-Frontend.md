@@ -182,7 +182,7 @@ To understand a bit better let's take a look on the trips page which is built up
                         \{{ trip.departure_date | date : 'dd.MM.yyyy' \}}
                     </td>
                     <td>
-                        {{ trip.departure  }}
+                        '{'{ trip.departure  '}'}
                     </td>
                     <td>
                         &#123;&#123; trip.destination  &#125;&#125
