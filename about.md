@@ -4,11 +4,9 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+### Tarek Khalfaoui
 
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
+Full-Stack Developer, grado en ingeneria informática especializado en tecnologías Web experiencia en desarrollo PHP Y Python. Las competencias incluyen frontend, backend y Frameworks.
 
 ### Contact me
 
