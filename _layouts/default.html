@@ -21,14 +21,21 @@
             <p class="site-description">{{ site.description }}</p>
           </div>
           <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
+            <a href="{{ site.baseurl }}/"><i class="fa fa-pencil"></i> Blog</a>
+            <a href="{{ site.baseurl }}/about"><i class="fa fa-user"></i> About</a>
           </nav>
         </header>
       </div>
     </div>
     <div id="main" role="main" class="container">
       {{ content }}
+
+        <div class="twitterFeed">
+            <h3>Twitter</h3>
+            <a class="twitter-timeline" href="https://twitter.com/thinkontheclock" data-widget-id="708567486329921536">Tweets by @thinkontheclock</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        </div>
+
     </div>
     <div class="wrapper-footer">
       <div class="container">

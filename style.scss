@@ -11,7 +11,8 @@
 $pink:#EC0B8D;
 $darkpink:#9B0856;
 $blue:#2CA1FE;
-$navy:#1A178C;
+$navy:#0E0C5F;
+// $navy:#1A178C;
 $offwhite:#FFEADA;
 
 
@@ -186,12 +187,13 @@ img {
   nav {
     a {
       color:white;
-      text-shadow: 0 0 3px $pink;
+    //   text-shadow: 0 0 3px $pink;
       font-size:.8em;
       font-weight:bold;
       text-transform: uppercase;
       &:hover {
-        color:$blue;
+        color:$pink;
+        // text-shadow:0 0 3px $blue;
       }
     }
   }
@@ -267,7 +269,7 @@ nav {
   a {
     margin-left: 20px;
     color: white;
-    text-shadow:0 0 3px $pink;
+    // text-shadow:0 0 3px $pink;
     font-family:$sans;
     text-align: right;
     font-weight: 300;
@@ -368,7 +370,10 @@ nav {
       }
   }
 }
-
+iframe.twitter-timeline {
+    width:100%!important;
+    height:400px!important;
+}
 footer {
   padding: 20px 0;
   text-align: center;
