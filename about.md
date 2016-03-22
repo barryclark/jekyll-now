@@ -6,6 +6,8 @@ permalink: /about/
 
 ### Tarek Khalfaoui
 
+![Tarek Khalfaoui]({{ site.baseurl }}/images/Khalfaoui.jpg "Tarek Khalfaoui")
+
 Full-Stack Developer, grado en ingeneria informática especializado en tecnologías Web experiencia en desarrollo PHP Y Python. Las competencias incluyen frontend, backend y Frameworks.
 
 ### Contact me
