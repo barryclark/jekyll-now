@@ -11,7 +11,7 @@ header-img: "images/bg-post.jpg"
 
 ### What is this about?
 
-This is a blog-post about a proof-of-concept project I have worked on together with my colleague Robert Fitch to find out what it takes to access on-premise data from an internet client. Robert have created the server side API and my role was to create a mobile app which consumes the methods exposed by this API. The technologies used in order to create the app were HTML5, AngularJS, Bootstrap css and Apache Cordova.
+This is a blog-post about a proof-of-concept project I have worked on together with my colleague Robert Fitch to find out what it takes to access on-premise data from an internet client. Robert has created the server side API (you can read about it in   [part 1](http://dev.haufe-lexware.com/Reisekosten-App/)) and my role was to create a mobile app which consumes the methods exposed by this API. The technologies used in order to create the app were HTML5, AngularJS, Bootstrap css and Apache Cordova.
 
 ### Why Apache Cordova?
 
