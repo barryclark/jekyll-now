@@ -4,7 +4,7 @@ title: Extending On-Premise Products With Mobile Apps
 subtitle: Creating a Single Page App using Apache Cordova and AngularJS
 category: general
 tags: [mobile, cloud]
-author: Biro Carol
+author: carol_biro
 author_email: carol.biro@haufe-lexware.com
 header-img: "images/bg-post.jpg"
 ---
