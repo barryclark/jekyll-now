@@ -158,7 +158,7 @@ To understand a bit better let's take a look on the trips page which is built up
             <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand padding-rl10">
-            <span class="glyphicon glyphicon-user"></span> \{\{employeeData.first_name\}\} \{\{employeeData.last_name\}\}
+            <span class="glyphicon glyphicon-user"></span> \{\{employeeData.first_name\}\} \\{\\{employeeData.last_name\\}\\}
         </a>            
     </div>
     <div class="navbar-header pull-right">
