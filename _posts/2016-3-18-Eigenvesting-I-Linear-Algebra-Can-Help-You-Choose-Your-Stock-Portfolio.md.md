@@ -33,11 +33,16 @@ This is an extremely important idea-- we have a way to quantify our risk for a g
 Let's switch gears and talk about the covariance matrix. For those familiar with Principal Component Analysis, some of this next section will look familiar. In fact, since the covariance matrix is similar by definition to the correlation matrix (in the sense of a linear transformation similarity), the eigenvalues will be the same and the eigenvectors (which we are interested in) have a 1-1 correspondence between them, assuming none of the variances for any of the stocks are equal to 0.
 
 The covariance matrix has some nice properties in the case of stock returns. First of all, it is a symmetric matrix, and so its eigenvalues are positive and its eigenvectors are orthogonal to each other. The typical interpretation of the eigenvalue decomposition of a covariance matrix is this:
-    1. The eigenvalues give the "variance" of each "factor" or eigenvector
-    2. The variance associated with each factor is "uncovariated" with the others (If we use the correlation matrix, this would be uncorrelated.)
-I put the words above in quotes because this is meaningless until you connect it to where the matrix came from. Here, we know loosely that each eigenvalue corresponds to the risk of a portfolio and that the eigenvectors can represent an allocation of weights. So in this context, we can interpret the eigenvalues and eigenvectors as
-    - Eigenvectors are the "eigenportfolios", strategy weight allocations which are uncorrolated to other eigenportfolios
-    - Eigenvalues are the "risk" of the given eigenportfolio
+
+
+* The eigenvalues give the "variance" of each "factor" or eigenvector
+* The variance associated with each factor is "uncovariated" with the others (If we use the correlation matrix, this would be uncorrelated.)
+
+I put the words above in quotes because this is meaningless until you connect it to where the matrix came from. Here, we know loosely that each eigenvalue corresponds to the risk of a portfolio and that the eigenvectors can represent an allocation of weights. So in this context, we can make the interpretations
+
+
+* Eigenvectors are the "eigenportfolios", strategy weight allocations which are uncorrolated to other eigenportfolios
+* Eigenvalues are the "risk" of the given eigenportfolio
 
 
 ## The Market Eigenvalue
