@@ -186,7 +186,21 @@ I also load my vertex colors to color all human proteins red, and all others blu
 
 <img src="https://raw.githubusercontent.com/clairemcwhite/clairemcwhite.github.io/master/images/lglexample.png" width="500"/>
 
+Here's a prettier image of protein families in different species linked by predictions of orthology. 
 
+<img src=https://raw.githubusercontent.com/clairemcwhite/clairemcwhite.github.io/master/images/Picture2.png" width="250"/>
+
+High quality images can be made using imageMaker.jar 
+
+```
+cd ~/homologyLGL/
+#imageMaker.jar arguments: ImageWidthInteger ImageHeightInteger edges.lgl coords1 coords2.
+#If you have a file named "color_file" in the current directory
+#It will read that in as an edge color file. By default edges are white.
+
+java -jar ~lgl.1.D3/Java imageMaker.jar 800 800 homology.lgl
+```
 ##### Conclusion
+
 
 Any type of pairwise data can be quickly formatted for LGL for a quick visual diagnostic of the data structure. Since  this layout has been so useful for me to look at my data, I hope these tips will encourage others to try it out for their giant network visualization issues! 
