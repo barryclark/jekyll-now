@@ -31,50 +31,50 @@ use lib 'home/claire/lgl.1.D3/perls/';
 ```
 
 ##### Input format (.ncol)
-The input format to LGL is called .ncol, which is just a space separated list of two connected verteces with an optional third column of weight. 
+The input format to LGL is called .ncol, which is just a space separated list of two connected nodes with an optional third column of weight. 
 
 ```
 $ cat example.ncol
-vertex1 vertex2 [optional weight]
+node1 node2 [optional weight]
  ```
 
 Key points for formatting the input .ncol
 
  *   Each line must be unique
- *   A vertex may connect to many other verteces
- *   A vertex cannot connect to itself
+ *   A node may connect to many other verteces
+ *   A node cannot connect to itself
  *   If a line is B-A, there cannot also be a line A-B 
  *   There can't be blank lines
  *   There can't be blanks in any column
  *   No header line
 
 ```
-vertex1 vertex2
-vertex1 vertex3 # OK
-vertex1 vertex2 # Will cause error
-vertex1 vertex1 # Will cause error
-vertex2 vertex1 # Will cause error
-                # Will cause error
-vertex3         # Will cause error
+node1 vnode2
+node1 node3 # OK
+node1 node2 # Will cause error
+node1 node1 # Will cause error
+node2 node1 # Will cause error
+node3         # Will cause error
+              # Trailing blank line will cause error
 ```
 
 ##### Coloring format (.colors)
 
-LGL allows you to color both nodes and edges. In order to color edges, each pairwise edge must have an R G B value. To color individual verteces, each vertex must have an R G B value. RGB values must be scaled to one 1, so just divide each number of an RGB value by 255. The rules for formatting an .ncol file apply here too, i.e. no blanks, no empty lines, no redundancy, etc. 
+LGL allows you to color both nodes and edges. In order to color edges, each pairwise edge must have an R G B value. To color individual nodes, each node must have an R G B value. RGB values must be scaled to one 1, so just divide each number of an RGB value by 255. The rules for formatting an .ncol file apply here too, i.e. no blanks, no empty lines, no redundancy, etc. 
 
 ```
 $ cat example.edge.colors
-vertex1 vertex2 1.0 0.5 0.0 
-vertex3 vertex4 0.0 1.0 0.8 
-vertex5 vertex6 0.1 0.1 1.0
+node1 node2 1.0 0.5 0.0 
+node3 node4 0.0 1.0 0.8 
+node5 node6 0.1 0.1 1.0
 
 $ cat example.vertex.colors
-vertex1 1.0 0.8 0.0 
-vertex2 1.0 0.5 0.0 
-vertex3 0.2 0.1 0.8
-vertex4 0.0 1.0 0.8 
-vertex5 0.6 0.5 0.5
-vertex6 0.1 0.1 1.0
+node1 1.0 0.8 0.0 
+node2 1.0 0.5 0.0 
+node3 0.2 0.1 0.8
+node4 0.0 1.0 0.8 
+node5 0.6 0.5 0.5
+node6 0.1 0.1 1.0
 ```
 
 ### An LGL workflow
@@ -82,6 +82,7 @@ vertex6 0.1 0.1 1.0
 I would begin by making a file of all pairwise edges and their associated traits. It can be difficult to keep .ncol and .color files in sync, and so it will cause fewest headaches to begin with one file containing all the information to create both. 
 
 ```
+$ echo "Nodes and traits"
 $ cat homology.txt
 node1 node2 source score rank species1 species2
 protein1 protein2 blastp 150 1 mouse human
@@ -92,7 +93,8 @@ protein2 protein5 hmmscan 60 3 human human
 Then take the first two columns (minus the header) to create an .ncol file. This is the file used to layout the graph
 
 ```
-$ awk '{print $1, $2}' homology.txt  | awk '{if(NR>1)print}' > homology.ncol  #get columns, remove header
+$ Get node columns, remove header
+$ awk '{print $1, $2}' homology.txt  | awk '{if(NR>1)print}' > homology.ncol
 $ cat homology.ncol
 protein1 protein2
 protein3 protein4
@@ -104,28 +106,39 @@ Then choose a trait, and create a edge.colors file. I generally select the first
 In this file, I want to color all edges predicted with the algorithm hmmscan red, and all edges found with blastp blue. 
 
 ```
+$ echo "Get node columns and trait column"
 $ awk '{print $1, $2, $3}' homology.txt  | awk '{if(NR>1)print}' >  homology_alg.colors.tmp
+
+$ echo "Replace hmmscan trait with RGB value
 $ sed -i 's/hmmscan/0 1 0/g' homology_alg.colors.tmp
+
+$ echo "Replace hmmscan trait with RGB value
 $ sed 's/blastp/0 0 0/g' homology_alg.colors.tmp > homology_algorithm.edge.colors
+
 $ cat homology_algorithm.edge.colors
 protein1 protein2 0 0 0
 protein3 protein4 0 0 0
 protein2 protein5 0 1 0
 ```
 
-I could also color each vertex by some trait. In this file format, each vertex must have an associated RGB value. In this case, I want to color every human protein red, and proteins from every other species blue. 
+I could also color each node by some trait. In this file format, each vertex must have an associated RGB value. In this case, I want to color every human protein red, and proteins from every other species blue. 
 
 ```
-#Get first column of verteces
+$ echo "Get first column of verteces"
 $ awk '{print $1, $6}' homology.txt  | awk '{if(NR>1)print}'> vertex1_species.tmp
-#Get second column of verteces
+
+$ Get second column of verteces"
 $ awk '{print $2, $7}' homology.txt  | awk '{if(NR>1)print}'> vertex2_species.tmp
-#Get unique verteces
+
+$ Get unique verteces"
 $ cat vertex1_species.tmp vertex2_species.tmp | sort -u > homology_human.vertex.colors.tmp
-#Color human verteces red
+
+$ Color human verteces red"
 $ sed -i 's/human/1 0 0/' homology_human.vertex.colors.tmp
-#Color any other vertex blue
+
+$ Color any other vertex blue"
 $ sed 's/mouse\|wheat\|rat/0 0 1/' homology_human.vertex.colors.tmp > homology_human.vertex.colors
+
 $ cat homology_human.vertex.colors
 protein1 0 0 1
 protein3 0 0 1
@@ -137,7 +150,7 @@ protein5 1 0 0
 ##### Running LGL
 
 I put all the above files in one folder, /homologyLGL. This folder will also be the destination for generated LGLs. 
-Navigating to the lgl.x.x/ directory, modify the conf_file for a particular run.
+Navigating to the lgl.x.x/ directory, modify the following options in the conf_file for a particular run.
 
 ```
 #Locations of the folder for this run, and the .ncol file
@@ -152,10 +165,10 @@ usemst = '1'
 useoriginalweights = '0'
 ```
 
-Then just run lgl
+Then just run lgl. The -c options signifies that you're using a config file
 
 ```
-./bin/lgl.pl conf_file
+$ ./bin/lgl.pl -c conf_file_homology
 ```
 
 It took about 5 seconds to create my 3 line network, but it can take hours depending on the size of the network/speed of the computer. 
@@ -187,7 +200,7 @@ java -jar ~/lgl.1.D3/lglview.jar
 
 Load the lgl, and the node coordinates (File > Open .lgl file > homology.lgl, File > Open 2D coords file > final.coords)
 
-I also load my vertex colors to color all human proteins red, and all others blue (File > Open Vertex Color File > homology_algorithm.edge.colors) and my edge color file to color all the edges predicted with hmmscan green, and with blastp black (File > Open Edge Color File > homology_human.vertex.colors). I changed the vertex size too, since the default is small. 
+Load the node colors to color all human proteins red and all others blue (File > Open Vertex Color File > homology_algorithm.vertex.colors) and my edge color file to color all the edges predicted with hmmscan green, and with blastp black (File > Open Edge Color File > homology_human.edge.colors). I changed the vertex size too, since the default is small. 
 
 <img src="https://raw.githubusercontent.com/clairemcwhite/clairemcwhite.github.io/master/images/lglexample.png" width="500"/>
 
