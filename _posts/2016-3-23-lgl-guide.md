@@ -23,9 +23,10 @@ As there aren't many resources on using the Large Graph Layout, I wanted to do a
 
 After installation, modify line 82 in lgl.1.d3/bin/lgl.pl to the location of the LGL perls directory
 
-For example
+
 
 ```
+#For example
 use lib 'home/claire/lgl.1.D3/perls/';
 ```
 
