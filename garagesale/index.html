@@ -3,7 +3,7 @@ layout: default
 ---
 
 <table>
-<theader><tr><th>Description</th><th>Price</th><th>Image</th></tr></theader>
+<thead><tr><th>Description</th><th>Price</th><th>Image</th></tr></thead>
 <tbody>
 {% for item in site.data.garagesale %}
 <tr><td>{{ item.name }}</td><td>${{ item.price }}</td><td>{{ item.image }}</td></tr>
