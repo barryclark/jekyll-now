@@ -22,7 +22,7 @@ Manjaro-Lxde aims to be light, fast and resource friendly, yet at the same time 
 This release comes with our advanced graphical installer **Calamares** as well as our CLI-installer. **Stable branch** was used to create the install media. The 32bit ISO has CD-size, the 64bit version has multilib enabled.
 **At least 300MB are needed for installation with Calamares.**
 
-kind regards, Esclapion, Maintainer Manjaro Lxqt
+kind regards, Esclapion, Maintainer Manjaro Lxde/Lxqt
 
 ----
 
