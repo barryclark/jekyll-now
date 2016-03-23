@@ -350,7 +350,7 @@ Again, to avoid issues around short sales, I am going to use the portfolio witho
 ![png](../images/eigenvesting1/output_10_1.png)
 
 
-As you can see, the black is our "in sample" performance and the red is our "out of sample". If we compare this to a stock during the same time period, you'll see that we in fact did much better and avoided some of the volativity of Apple. Of course, we're using what would be the "Market Mode" if we had more stocks included, and so it's also the riskiest eigenportfolio, as it related to the highest eigenvalue.
+As you can see, the black is our "in sample" performance and the red is our "out of sample". If we compare this to Apple during the same time period, you'll see that we, in fact, did much better and avoided some of the volatility of Apple. Of course, we're using what would be the "Market Mode" if we had more stocks included, and so it's also the riskiest eigenportfolio, as it related to the highest eigenvalue.
 
 # Extensions
 
