@@ -22,6 +22,7 @@ As nicely outlined by in Martin Krzywinski's  [Hive Plot pag](http://www.hiveplo
 As there aren't many resources on using the Large Graph Layout, I wanted to do a quick post on my tips for using the software. This post is meant to supplement the [main FAQ](http://www.opte.org/lgl/) and the [README](https://github.com/TheOpteProject/LGL/blob/master/README.txt). LGL is mainly maintained by the Opte Project to map the internet, and the most recent version of the software can be cloned from their [ Github](https://github.com/TheOpteProject/LGL), with git clone https://github.com/TheOpteProject/LGL.git.
 
 After installation, modify line 82 in lgl.1.d3/bin/lgl.pl to the location of the LGL perls directory
+
 ```
 #For example
 use lib 'home/claire/lgl.1.D3/perls/';
@@ -29,10 +30,12 @@ use lib 'home/claire/lgl.1.D3/perls/';
 
 ##### Input format (.ncol)
 The input format to LGL is called .ncol, which is just a space separated list of two connected verteces with an optional third column of weight. 
+
 ```
 cat example.ncol
 vertex1 vertex2 [optional weight]
  ```
+
 Key points for formatting the input .ncol
 * Each line must be unique
 * A vertex may connect to many other verteces
@@ -55,6 +58,7 @@ vertex3         # Will cause error
 ##### Coloring format (.colors)
 
 In order to color edgess between nodes, each pairwise edge must have an R G B value. To color individual verteces, each vertex must have and R G B value. RGB values must be scaled to one 1, so just divide each number of an RGB value by 255. The rules for formatting an .ncol file apply here too, i.e. no blanks, no empty lines, no redundancy , etc. 
+
 ```
 $ cat example.edge.colors
 vertex1 vertex2 1.0 0.5 0.0 
@@ -81,6 +85,7 @@ protein1 protein2 blastp 150 1 mouse human
 protein3 protein4 blastp 50 2 wheat rat
 protein2 protein5 hmmscan 60 3 human human
 ```
+
 Then take the first two columns (minus the header) to create an .ncol file. This is the file used to layout the graph
 
 ```
@@ -90,9 +95,11 @@ protein1 protein2
 protein3 protein4
 protein2 protein5
 ```
+
 Then choose a trait, and create a edge.colors file. I generally select the first two columns, and a trait to color by, then just use sed to replace the trait values with the RGB value I want to color type of edge by.
 
 In this file, I want to color all edges predicted with the algorithm hmmscan red, and all edges found with blastp blue. 
+
 ```
 $ awk '{print $1, $2, $3}' homology.txt  | awk '{if(NR>1)print}' >  homology_alg.colors.tmp
 $ sed -i 's/hmmscan/0 1 0/g' homology_alg.colors.tmp
@@ -102,6 +109,7 @@ protein1 protein2 0 0 0
 protein3 protein4 0 0 0
 protein2 protein5 0 1 0
 ```
+
 I could also color each vertex by some trait. In this file format, each vertex must have an associated RGB value. In this case, I want to color ever human protein red, and proteins from every other species blue. 
 
 ```
@@ -122,6 +130,7 @@ protein5 1 0 0
 
 I put all the above files in one folder, /homologyLGL. This folder will also be the destination for generated LGLs. 
 Navigating to the lgl.x.x/ directory, modify the conf_file for a particular run.
+
 ```
 #Locations of the folder for this run, and the .ncol file
 tmpdir = 'home/claire/homologyLGL'
@@ -136,11 +145,14 @@ useoriginalweights = '0'
 ```
 
 Then just run lgl
+
 ```
 ./bin/lgl.pl conf_file
 ```
+
 It took about 5 seconds to create my 3 line network, but it can take hours depending on the size of the network/speed of the computer. 
 In ~/homologyLGL/, a folder 1455579482/ now contains all individual discrete subnetworks of the LGL
+
 ```
 ls | head -5
 0.lgl                #Network Layout
@@ -150,7 +162,9 @@ ls | head -5
 0.coords.root        #Node used to root an individual subnetwork
 0.coords.edge_levels #Levels of the subnetwork
 ```
+
 ~/homologyLGL/ now also contains 
+
 ```
 homology.lgl  #The complete network layout, created from the arrangement of the subnetworks
 final.coords  #Node coordinates
@@ -158,9 +172,11 @@ final.mst.lgl #The minimal spanning tree version of the network layout
 ```
 
 In order to view the LGL, run the lglview.jar program
+
 ```
 java -jar ~/lgl.1.D3/lglview.jar
 ```
+
 And load the lgl, and the node coordinates (File > Open .lgl file > homology.lgl, File > Open 2D coords file > final.coords)
 
 here, lgl picture
