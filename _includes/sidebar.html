@@ -24,9 +24,7 @@
       {% for node in posts_list %}
         {% if node.title != null %}
           {% if node.layout == "page" %}
-            <li class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}">
-            <a href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a>
-            </li>
+               <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
           {% endif %}
         {% endif %}
       {% endfor %}
