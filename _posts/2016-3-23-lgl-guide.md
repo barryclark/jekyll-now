@@ -39,13 +39,13 @@ vertex1 vertex2 [optional weight]
  ```
 
 Key points for formatting the input .ncol
-* Each line must be unique
-* A vertex may connect to many other verteces
-* A vertex cannot connect to itself
-* If a line is B-A, there cannot also be a line A-B 
-* There can't be blank lines
-* There can't be blanks in any column
-* No header line
+*  Each line must be unique
+*  A vertex may connect to many other verteces
+*  A vertex cannot connect to itself
+*  If a line is B-A, there cannot also be a line A-B 
+*  There can't be blank lines
+*  There can't be blanks in any column
+*  No header line
 
 ```
 vertex1 vertex2
