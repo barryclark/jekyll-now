@@ -60,7 +60,7 @@ vertex3         # Will cause error
 
 ##### Coloring format (.colors)
 
-LGL allows you to color both nodes and edges. In order to color edges between, each pairwise edge must have an R G B value. To color individual verteces, each vertex must have an R G B value. RGB values must be scaled to one 1, so just divide each number of an RGB value by 255. The rules for formatting an .ncol file apply here too, i.e. no blanks, no empty lines, no redundancy, etc. 
+LGL allows you to color both nodes and edges. In order to color edges, each pairwise edge must have an R G B value. To color individual verteces, each vertex must have an R G B value. RGB values must be scaled to one 1, so just divide each number of an RGB value by 255. The rules for formatting an .ncol file apply here too, i.e. no blanks, no empty lines, no redundancy, etc. 
 
 ```
 $ cat example.edge.colors
@@ -199,6 +199,9 @@ cd ~/homologyLGL/
 #imageMaker.jar arguments: ImageWidthInteger ImageHeightInteger edges.lgl coords1 coords2.
 #If you have a file named "color_file" in the current directory
 #It will read that in as an edge color file. By default edges are white.
+
+#copy edge.colors file into filename color_file
+cp homology_algorithm.edge.colors color_file
 
 java -jar ~lgl.1.D3/Java imageMaker.jar 800 800 homology.lgl
 ```
