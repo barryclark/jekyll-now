@@ -18,4 +18,4 @@ Q3: | 80
 Maximum age: | 98
 Average age: | 61.27333333333333
 
-{% include ageChart.html %}
+{% include familyTree/ageChart.html %}
