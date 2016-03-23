@@ -2,7 +2,7 @@
 layout: page
 title: LGL - the Large Graph Layout
 ---
-<img src="http://www.visualcomplexity.com/vc/images/120_big01.jpg" width="500"/>
+<a href="http://clairemcwhite.github.io/lgl-guide/"><img src="http://www.visualcomplexity.com/vc/images/120_big01.jpg" width="500"/></a>
 <br>*[Protein Homology Graph, Edward Marcotte and Alex Adai, MOMA](http://www.moma.org/interactives/exhibitions/2008/elasticmind/#/211/)*
 
 ### The Large Graph Layout (LGL)
