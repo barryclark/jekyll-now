@@ -60,7 +60,7 @@ vertex3         # Will cause error
 
 ##### Coloring format (.colors)
 
-In order to color edgess between nodes, each pairwise edge must have an R G B value. To color individual verteces, each vertex must have and R G B value. RGB values must be scaled to one 1, so just divide each number of an RGB value by 255. The rules for formatting an .ncol file apply here too, i.e. no blanks, no empty lines, no redundancy , etc. 
+LGL allows you to color both nodes and edges. In order to color edges between, each pairwise edge must have an R G B value. To color individual verteces, each vertex must have an R G B value. RGB values must be scaled to one 1, so just divide each number of an RGB value by 255. The rules for formatting an .ncol file apply here too, i.e. no blanks, no empty lines, no redundancy, etc. 
 
 ```
 $ cat example.edge.colors
@@ -77,7 +77,7 @@ vertex5 0.6 0.5 0.5
 vertex6 0.1 0.1 1.0
 ```
 
-#### An LGL workflow
+### An LGL workflow
 
 I would begin by making a file of all pairwise edges and their associated traits. It can be difficult to keep .ncol and .color files in sync, and so it will cause fewest headaches to begin with one file containing all the information to create both. 
 
@@ -99,7 +99,7 @@ protein3 protein4
 protein2 protein5
 ```
 
-Then choose a trait, and create a edge.colors file. I generally select the first two columns, and a trait to color by, then just use sed to replace the trait values with the RGB value I want to color type of edge by.
+Then choose a trait, and create a edge.colors file. I generally select the first two columns, and a trait to color by, then just use sed to replace the trait values with the RGB value I want to color that type of edge by.
 
 In this file, I want to color all edges predicted with the algorithm hmmscan red, and all edges found with blastp blue. 
 
@@ -113,7 +113,7 @@ protein3 protein4 0 0 0
 protein2 protein5 0 1 0
 ```
 
-I could also color each vertex by some trait. In this file format, each vertex must have an associated RGB value. In this case, I want to color ever human protein red, and proteins from every other species blue. 
+I could also color each vertex by some trait. In this file format, each vertex must have an associated RGB value. In this case, I want to color every human protein red, and proteins from every other species blue. 
 
 ```
 $ awk '{print $1, $6}' homology.txt  | awk '{if(NR>1)print}'> vertex1_species.tmp
@@ -180,7 +180,7 @@ In order to view the LGL, run the lglview.jar program
 java -jar ~/lgl.1.D3/lglview.jar
 ```
 
-And load the lgl, and the node coordinates (File > Open .lgl file > homology.lgl, File > Open 2D coords file > final.coords)
+Load the lgl, and the node coordinates (File > Open .lgl file > homology.lgl, File > Open 2D coords file > final.coords)
 
 I also load my vertex colors to color all human proteins red, and all others blue (File > Open Vertex Color File > homology_algorithm.edge.colors) and my edge color file to color all the edges predicted with hmmscan green, and with blastp black (File > Open Edge Color File > homology_human.vertex.colors). I changed the vertex size too, since the default is small. 
 
