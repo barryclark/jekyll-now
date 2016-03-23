@@ -14,7 +14,7 @@ Social information about me.
   <img class="img" src="https://badge.facebook.com/badge/1274573288.3852.1218662383.png" style="border: 0px;" alt="" />
 </a>
 
-##GitHub
+## GitHub
 
 <a href="https://github.com/{{ site.footer-links.github }}"><i class="svg-icon github"></i></a> My projects
 
