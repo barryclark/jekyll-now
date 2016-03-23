@@ -1,0 +1,12 @@
+---
+layout: default
+---
+
+<table>
+<theader><tr><th>Description</th><th>Price</th><th>Image</th></tr></tbody>
+<tbody>
+{% for item in site.data.garagesale %}
+<tr><td>{{ item.name }}</td><td>${{ item.price }}</td><td>{{ item.image }}</td></tr>
+{% endfor %}
+</tbody>
+</table>
