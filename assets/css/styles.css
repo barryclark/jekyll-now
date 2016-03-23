@@ -599,3 +599,20 @@ p.rss-subscribe {
   display:inline-block;
   margin:4px;
 }
+
+.place a {
+  text-decoration: underline;
+  font-weight: 700;
+  color:blue;
+}
+
+ul {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  line-height: 20px;
+}
+
+li {
+  margin: 0 0 20px 0;
+
+}
