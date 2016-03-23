@@ -2,7 +2,7 @@
 layout: page
 title: Eight legged treats - Making gummy water bears
 ---
-<img src="https://raw.githubusercontent.com/clairemcwhite/clairemcwhite.github.io/master/images/closeup.jpg" width="500"/>
+<a href="clairemcwhite.github.io/tardigrades"><img src="https://raw.githubusercontent.com/clairemcwhite/clairemcwhite.github.io/master/images/closeup.jpg" width="500"/></a>
 <br>*SEM:Bob Goldstein and Vicky Madden, [http://tardigrades.bio.unc.edu/](http://tardigrades.bio.unc.edu/)*
 
 Water bears (tardigrades) have become our unofficial lab pet, partly because UT won't let us keep vertebrates, but mainly because of how awesome they are. This [New York Times article](http://www.nytimes.com/2015/09/08/science/the-tardigrade-water-bear.html?_r=0) is a great introduction to this eight-legged squishy micro-animal.  Also, [this short documentary](https://www.youtube.com/watch?v=o9kPQ0GY_W8) gives a more detailed look at tardigrades under the microscope, showing off their muscle structure and digestive system.
