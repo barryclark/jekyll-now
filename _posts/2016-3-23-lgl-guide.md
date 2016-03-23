@@ -39,6 +39,7 @@ vertex1 vertex2 [optional weight]
  ```
 
 Key points for formatting the input .ncol
+
  *   Each line must be unique
  *   A vertex may connect to many other verteces
  *   A vertex cannot connect to itself
