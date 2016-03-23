@@ -1,0 +1,329 @@
+    body {
+      background-image: url("img/background.png");
+      background-repeat: no-repeat;
+      background-color: black;
+      background-position:-500px 0px;
+    }
+
+    .background {
+      background-position:0px -20px;
+      width:861px;
+      margin:0 auto;
+      margin-top: 160px;
+      height: 757px;
+      background-repeat: no-repeat;
+      z-index:+3;
+      background-image: url(img/board_main.png);
+    }
+
+    .main {
+      position: relative;
+      margin: 0 auto;
+      margin-top: 100px;
+      height: 700px;
+      width: 820px;
+      z-index: -1;
+      }
+
+    .cell_red {
+      background-image: url(img/checker_red.png);
+    }
+
+    .cell_black {
+      background-image: url(img/checker_black.png);
+    }
+
+    #player{
+      position: relative;
+      margin: 0 auto;
+      padding: 10px;
+      font-family: Verdana;
+      color: white;
+      background-color: black;
+      text-align: center;
+    }
+    #time-div{
+      position: relative;
+      margin: 0 auto;
+      padding: 10px;
+      font-family: Verdana;
+      color: white;
+      background-color: black;
+      text-align: center;
+      height: 100px;
+    }
+    #resetGame{
+      float: right;
+      background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+
+    }
+
+    .checker {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      z-index: +1;
+      background-size: 98px 98px;
+      background-image: url(img/checker_default.png);
+    }
+
+    .checker0 {
+      top: -120px;
+      left: 0px;
+    }
+
+    .checker1 {
+      top: -120px;
+      left: 120px;
+    }
+
+    .checker2 {
+      top: -120px;
+      left: 240px;
+    }
+
+    .checker3 {
+      top: -120px;
+      left: 360px;
+    }
+
+    .checker4 {
+      top: -120px;
+      left: 480px;
+    }
+
+    .checker5 {
+      top: -120px;
+      left: 600px;
+    }
+
+    .checker6 {
+      top: -120px;
+      left: 720px;
+    }
+
+    .cell {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+    }
+
+    .cell00 {
+      top: 600px;
+      left: 0px;
+    }
+
+    .cell01 {
+      top: 480px;
+      left: 0px;
+    }
+
+    .cell02 {
+      top: 360px;
+      left: 0px;
+    }
+
+    .cell03 {
+      top: 240px;
+      left: 0px;
+    }
+
+    .cell04 {
+      top: 120px;
+      left: 0px;
+    }
+
+    .cell05 {
+      top: 0px;
+      left: 0px;
+    }
+
+    .cell10 {
+      top: 600px;
+      left: 120px;
+    }
+
+    .cell11 {
+      top: 480px;
+      left: 120px;
+    }
+
+    .cell12 {
+      top: 360px;
+      left: 120px;
+    }
+
+    .cell13 {
+      top: 240px;
+      left: 120px;
+    }
+
+    .cell14 {
+      top: 120px;
+      left: 120px;
+    }
+
+    .cell15 {
+      top: 0px;
+      left: 120px;
+    }
+
+    .cell20 {
+      top: 600px;
+      left: 240px;
+    }
+
+    .cell21 {
+      top: 480px;
+      left: 240px;
+    }
+
+    .cell22 {
+      top: 360px;
+      left: 240px;
+    }
+
+    .cell23 {
+      top: 240px;
+      left: 240px;
+    }
+
+    .cell24 {
+      top: 120px;
+      left: 240px;
+    }
+
+    .cell25 {
+      top: 0px;
+      left: 240px;
+    }
+
+    .cell30 {
+      top: 600px;
+      left: 360px;
+    }
+
+    .cell31 {
+      top: 480px;
+      left: 360px;
+    }
+
+    .cell32 {
+      top: 360px;
+      left: 360px;
+    }
+
+    .cell33 {
+      top: 240px;
+      left: 360px;
+    }
+
+    .cell34 {
+      top: 120px;
+      left: 360px;
+    }
+
+    .cell35 {
+      top: 0px;
+      left: 360px;
+    }
+
+    .cell40 {
+      top: 600px;
+      left: 480px;
+    }
+
+    .cell41 {
+      top: 480px;
+      left: 480px;
+    }
+
+    .cell42 {
+      top: 360px;
+      left: 480px;
+    }
+
+    .cell43 {
+      top: 240px;
+      left: 480px;
+    }
+
+    .cell44 {
+      top: 120px;
+      left: 480px;
+    }
+
+    .cell45 {
+      top: 0px;
+      left: 480px;
+    }
+
+    .cell50 {
+      top: 600px;
+      left: 600px;
+    }
+
+    .cell51 {
+      top: 480px;
+      left: 600px;
+    }
+
+    .cell52 {
+      top: 360px;
+      left: 600px;
+    }
+
+    .cell53 {
+      top: 240px;
+      left: 600px;
+    }
+
+    .cell54 {
+      top: 120px;
+      left: 600px;
+    }
+
+    .cell55 {
+      top: 0px;
+      left: 600px;
+    }
+
+    .cell60 {
+      top: 600px;
+      left: 720px;
+    }
+
+    .cell61 {
+      top: 480px;
+      left: 720px;
+    }
+
+    .cell62 {
+      top: 360px;
+      left: 720px;
+    }
+
+    .cell63 {
+      top: 240px;
+      left: 720px;
+    }
+
+    .cell64 {
+      top: 120px;
+      left: 720px;
+    }
+
+    .cell65 {
+      top: 0px;
+      left: 720px;
+    }
+
+
+

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Connect 4</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<div class="background">
+  <div class="main">
+    <div col='0' class="checker checker0"></div>
+    <div col='1' class="checker checker1"></div>
+    <div col='2' class="checker checker2"></div>
+    <div col='3' class="checker checker3"></div>
+    <div col='4' class="checker checker4"></div>
+    <div col='5' class="checker checker5"></div>
+    <div col='6' class="checker checker6"></div>
+
+    <div class="cell cell05"></div>
+    <div class="cell cell15"></div>
+    <div class="cell cell25"></div>
+    <div class="cell cell35"></div>
+    <div class="cell cell45"></div>
+    <div class="cell cell55"></div>
+    <div class="cell cell65"></div>
+
+    <div class="cell cell04"></div>
+    <div class="cell cell14"></div>
+    <div class="cell cell24"></div>
+    <div class="cell cell34"></div>
+    <div class="cell cell44"></div>
+    <div class="cell cell54"></div>
+    <div class="cell cell64"></div>
+
+    <div class="cell cell03"></div>
+    <div class="cell cell13"></div>
+    <div class="cell cell23"></div>
+    <div class="cell cell33"></div>
+    <div class="cell cell43"></div>
+    <div class="cell cell53"></div>
+    <div class="cell cell63"></div>
+
+    <div class="cell cell02"></div>
+    <div class="cell cell12"></div>
+    <div class="cell cell22"></div>
+    <div class="cell cell32"></div>
+    <div class="cell cell42"></div>
+    <div class="cell cell52"></div>
+    <div class="cell cell62"></div>
+
+    <div class="cell cell01"></div>
+    <div class="cell cell11"></div>
+    <div class="cell cell21"></div>
+    <div class="cell cell31"></div>
+    <div class="cell cell41"></div>
+    <div class="cell cell51"></div>
+    <div class="cell cell61"></div>
+
+    <div class="cell cell00"></div>
+    <div class="cell cell10"></div>
+    <div class="cell cell20"></div>
+    <div class="cell cell30"></div>
+    <div class="cell cell40"></div>
+    <div class="cell cell50"></div>
+    <div class="cell cell60"></div>
+
+
+  </div>
+
+<div id="player">Black's Turn</div>
+<div id="time-div">Switch player in <span id="time">0:10</span>
+  <button id="resetGame">New Game! </button>
+</div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="connect_four_model.js"></script>
+<script src="connect_four_player.js"></script>
+<script src="connect_four_view.js"></script>
+<script src="connect_four_controller.js"></script>
+<script src="timer/jquery.countdown.js"></script>
+</body>
+</html>

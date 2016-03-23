@@ -592,3 +592,10 @@ p.rss-subscribe {
     margin-top: 20px;
     text-align: right;
 }
+
+
+.skillset span.label {
+  font-size:inherit;
+  display:inline-block;
+  margin:4px;
+}
