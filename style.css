@@ -7,8 +7,12 @@
 body, html {
 	margin: 0;
 	padding: 0;
-	min-height: 500px;
-	min-width: 700px;
+	/* 
+	 * considering smallest common screen size is 1024x768
+	 * and that this is the desktop site
+	 */
+	min-height: 700px;
+	min-width: 1000px;
 }
 body {
 	padding-top: 150px;
@@ -22,6 +26,15 @@ body {
 	50%	{ color: transparent; }
 	51%	{ color: #eeeeee; }
 	100% { color: #eeeeee; }
+}
+@keyframes loadAnimationFirstHalf {
+  0% { transform: rotate(0deg); opacity: 1; }
+  50% { transform: rotate(180deg); opacity: 0.5; }
+  100% { transform: rotate(180deg); opacity: 0; }
+}
+@keyframes loadAnimationSecondHalf {
+  from { transform: rotate(0deg); opacity: 0.5; }
+  to { transform: rotate(180deg); opacity: 0; }
 }
 
 /* other general tag styles */
@@ -48,7 +61,7 @@ h5 {
 }
 h6 {
 	font-size: 0.5em;
-}
+} 
 hr {
 	height: 1px;
 	border: none;
@@ -75,14 +88,16 @@ p {
 }
 
 /* specific element styles */
+span#script {
+	display: none;
+}
 /* header styles */
-header {
+div#header {
 	height: 150px;
 	width: 100%;
 	background-color: #222222;
 	position: absolute;
 	top: 0;
-	/*z-index: 10;*/
 }
 div#title {
 	height: 100px;
@@ -165,6 +180,9 @@ div.ripple {
 div#container {
 	padding: 40px;
 }
+img#introductionImage {
+	position: absolute;
+}
 div#introduction {
 	position: relative;
 	width: calc(100% + 80px);
@@ -177,7 +195,7 @@ div#introductionText {
 	position: absolute;
 	bottom: 0;
 	text-align: center;
-	background-color: rgba(255, 255, 255, 0.5);
+	background-color: rgba(255, 255, 255, 0.75);
 	padding: 20px;
 }
 div#introductionText > h1 {
@@ -187,4 +205,65 @@ div#introductionText > h1 {
 div#introductionText > p {
 	margin: 0;
 	text-align: center;
+}
+div.carouselButton {
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
+	background-color: rgba(255, 255, 255, 0.5);
+	cursor: pointer;
+	position: absolute;
+	top: 25px;
+}
+div.carouselButton:hover {
+	opacity: 0.75;
+}
+div.carouselButton.currentImage {
+	background-color: transparent;
+}
+div.loadAnimation {
+  border-radius: 100%;
+}
+div.loadAnimationMask {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  clip: rect(0, 50px, 50px, 25px);
+}
+div.loadAnimationMask.left {
+  position: absolute;
+  clip: rect(0, 25px, 50px, 0);
+}
+div.loadAnimationFill {
+  width: 100%;
+  height: 100%;
+  background-color: darkgrey;
+  position: absolute;
+  clip: rect(0, 25px, 50px, 0);
+  animation: loadAnimationFirstHalf 5s linear 1 forwards;
+}
+div.loadAnimationFill.left {
+  position: absolute;
+  clip: rect(0, 50px, 50px, 25px);
+  animation: loadAnimationSecondHalf 2.5s linear 1 forwards;
+  animation-delay: 2.5s;
+}
+div.loadAnimationOuter {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: white;
+  transition: all .2s;
+  opacity: 0.5;
+}
+div.loadAnimationOuter:hover {
+  opacity: 0.9;
+}
+div.loadAnimationContent {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+
 }

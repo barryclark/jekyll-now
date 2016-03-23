@@ -57,7 +57,7 @@ $(function() {
 		var current = $("nav#links > a[href='" + window.location.pathname + "']");
 		setTimeout(function() {current.addClass("currentPage")}, 1);
 		current.removeAttr("href");
-		// Google-Material-ripple-effect-like animation
+		// Google-Material-ripple-effect-like animation 
 		var currentMouseY = mouseY, currentMouseX = mouseX;
 		var ripple = $("<div>");
 		var toRadius = current.width();
@@ -83,10 +83,16 @@ $(function() {
 
 	// change page contents without load if pointing to own website
 	$(document).on("click", "nav#links > a:not(.currentPage)", function(e) {
+		$(document).trigger("pageChange");
 		var href = $(this).attr("href");
 		$("div#container").load(href + " div#container > *", function() {
 			// call resizeFunction() just in case formatting needs to happen
-			resizeFunction();
+			resizeFunction();	
+			$("<div style='display:none' />").load(href + " span#script", function() {
+				if($(this).text() != "") {
+					$.get($(this).text());
+				}
+			});
 		});
 		// GET request for title because load() cannot do it (why?)
 		$.get(href, function(data) {
@@ -118,5 +124,68 @@ $(function() {
 			$navLinks.addClass("fixed") :
 			$navLinks.removeClass("fixed");
 	});
+
+});
+
+// carousel() function for introduction carousel
+var loadImage, moveCarousel;
+var carousel = function(data) {
+	var numImgs = data.length;
+	for(let i = 0; i < numImgs; i++) {
+		var carouselButton = $("<div>");
+		carouselButton.addClass("carouselButton").addClass("animate");
+		carouselButton.css({
+			left: "calc(50% - ((100px * " + numImgs + " - 50px) / 2) + 100px * " + i + ")"
+		});
+		carouselButton.click(function() {
+			loadImage(i);
+			clearInterval(carouselInterval);
+			carouselInterval = setInterval(moveCarousel, 5000);
+			currentImage = i;
+		});
+		$("div#introduction").append(carouselButton);
+		(new Image()).src = "/img/carousel/" + i + ".png";
+	}
+	loadImage = function(id) {
+		$("img#introductionImage:not(:first)").remove();
+		var newImage = $("img#introductionImage:first").clone();
+		newImage.attr("src", "img/carousel/" + id + ".png");
+		$("img#introductionImage").before(newImage).animate({ opacity: 0 }, 500, function() {
+			$(this).remove();
+		});
+		$("img#introductionImage").load(function() {
+			$(this).css({
+				top: ($("div#introduction").width()-$(this).width())/2,
+				left: ($("div#introduction").height()-$(this).height())/2
+			});
+		});
+		$("div#introductionText > h1").text(data[id].title);
+		$("div#introductionText > p").text(data[id].description);
+		$("div.carouselButton").removeClass("currentImage").empty();
+		// jQuery doesn't support :nth-of-type() selector, so use 0-based :eq() instead
+		$("div.carouselButton:eq(" + id + ")").addClass("currentImage");
+		$("div.carouselButton:eq(" + id + ")").html(`
+			<div class="loadAnimation loadAnimationOuter">
+				<div class="loadAnimation loadAnimationMask right">
+					<div class="loadAnimation loadAnimationFill"></div>
+				</div>
+				<div class="loadAnimation loadAnimationMask left">
+					<div class="loadAnimation loadAnimationFill left"></div>
+				</div>
+				<div class="loadAnimation loadAnimationContent"></div>
+			</div>
+		`);
+	};
+	var currentImage = 0;
+	moveCarousel = function() {
+		if(++currentImage >= numImgs)
+			currentImage = 0;
+		loadImage(currentImage);
+	};
+	$(document).on("pageChange", function() {
+		clearTimeout(carouselInterval);
+	});
+	var carouselInterval = setInterval(moveCarousel, 5000);
+	loadImage(0);
 
 });

@@ -1,25 +1,28 @@
-
 a {
-  color: #3e3e3e
-}
-
-a:visited {
-  color: #3e3e3e
+	color: #3e3e3e;
+	border-bottom: none !important;
 }
 
 .user-container {
-  width: 100%;
-  list-style-type: none;
-  display: flex;
-  align-items: center;
-  padding: 0.5em;
+  display: inline-block;
+  width: calc(100% / 3 - 20px);
+  margin: 10px;
+  flex-direction: column;
+  border-radius: 2px;
+  padding: 50px 20px;
+  box-shadow: 0 0 10px #aaaaaa;
+}
+.user-container:hover {
+  background-color: #eeeeee;
 }
 
 .user-picture {
-  max-width: 4em;
+  display: block;
+  width: 200px;
+  height: 200px;
   border-radius: 0.5em;
-  margin: 0.5em;
-  border: #3e3e3e .2em solid
+  margin: 0 auto;
+  border: #3e3e3e .2em solid;
 }
 
 .user-info {
@@ -28,5 +31,8 @@ a:visited {
 
 .user-link {
   font-family: monospace;
-  font-size: 3em;
+  font-size: 2em;
+  display: block;
+  text-align: center;
+  margin-top: 50px;
 }

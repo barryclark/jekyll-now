@@ -16,12 +16,12 @@ function displayUsers(users) {
     var user = users[i]
     // console.log(user.name);
     var $userLi = $(
-      `<li class="user-container">
+      `<a class="user-container animate" href="${user.html_url}">
         <img class="user-picture" src="${user.avatar_url}" alt="${user.login}'s profile picture"/>
         <div class="user-info">
-          <a class="user-link" href="${user.html_url}">${user.login}</a>
+          <span class="user-link" href="${user.html_url}">${user.login}</span>
         </div>
-      </li>`
+      </a>`
     )
     $userList.append($userLi)
   }
