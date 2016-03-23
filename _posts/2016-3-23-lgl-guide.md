@@ -116,15 +116,20 @@ protein2 protein5 0 1 0
 I could also color each vertex by some trait. In this file format, each vertex must have an associated RGB value. In this case, I want to color every human protein red, and proteins from every other species blue. 
 
 ```
+#Get first column of verteces
 $ awk '{print $1, $6}' homology.txt  | awk '{if(NR>1)print}'> vertex1_species.tmp
+#Get second column of verteces
 $ awk '{print $2, $7}' homology.txt  | awk '{if(NR>1)print}'> vertex2_species.tmp
+#Get unique verteces
 $ cat vertex1_species.tmp vertex2_species.tmp | sort -u > homology_human.vertex.colors.tmp
+#Color human verteces red
 $ sed -i 's/human/1 0 0/' homology_human.vertex.colors.tmp
+#Color any other vertex blue
 $ sed 's/mouse\|wheat\|rat/0 0 1/' homology_human.vertex.colors.tmp > homology_human.vertex.colors
 $ cat homology_human.vertex.colors
 protein1 0 0 1
-protein2 1 0 0
 protein3 0 0 1
+protein2 1 0 0
 protein4 0 0 1
 protein5 1 0 0
 ```
