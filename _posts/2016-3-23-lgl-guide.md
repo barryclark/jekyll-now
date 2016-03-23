@@ -13,9 +13,9 @@ As nicely outlined by in Martin Krzywinski's  [Hive Plot pag](http://www.hiveplo
 
 
 #### LGL Examples 
-*  The Opte Project uses a minimal spanning LGL to [map the internet](http://www.opte.org/) every few years.   
-*  Aaron Swartz used LGL for a neat [visualization of blogspace in 2006](http://www.aaronsw.com/weblog/blogviz). 
-*  The Museum of Modern Art in New York picked an LGL of protein homologies (top image) for their 2008 exhibit ["Design and the Elastic Mind"](http://www.moma.org/interactives/exhibitions/2008/elasticmind/#/211/)
+ *   The Opte Project uses a minimal spanning LGL to [map the internet](http://www.opte.org/) every few years.   
+ *   Aaron Swartz used LGL for a neat [visualization of blogspace in 2006](http://www.aaronsw.com/weblog/blogviz). 
+ *   The Museum of Modern Art in New York picked an LGL of protein homologies (top image) for their 2008 exhibit ["Design and the Elastic Mind"](http://www.moma.org/interactives/exhibitions/2008/elasticmind/#/211/)
 
 
 #### LGL tips
@@ -39,13 +39,13 @@ vertex1 vertex2 [optional weight]
  ```
 
 Key points for formatting the input .ncol
-*  Each line must be unique
-*  A vertex may connect to many other verteces
-*  A vertex cannot connect to itself
-*  If a line is B-A, there cannot also be a line A-B 
-*  There can't be blank lines
-*  There can't be blanks in any column
-*  No header line
+ *   Each line must be unique
+ *   A vertex may connect to many other verteces
+ *   A vertex cannot connect to itself
+ *   If a line is B-A, there cannot also be a line A-B 
+ *   There can't be blank lines
+ *   There can't be blanks in any column
+ *   No header line
 
 ```
 vertex1 vertex2
