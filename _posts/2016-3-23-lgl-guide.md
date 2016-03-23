@@ -186,9 +186,9 @@ I also load my vertex colors to color all human proteins red, and all others blu
 
 <img src="https://raw.githubusercontent.com/clairemcwhite/clairemcwhite.github.io/master/images/lglexample.png" width="500"/>
 
-Here's a prettier image of protein families in different species linked by predictions of orthology. 
+Here's a prettier image from lglview.jar of protein families in different species linked by predictions of orthology. This network shows good separation between the fairly densely connected submodules.
 
-<img src=https://raw.githubusercontent.com/clairemcwhite/clairemcwhite.github.io/master/images/Picture2.png" width="250"/>
+<img src="https://raw.githubusercontent.com/clairemcwhite/clairemcwhite.github.io/master/images/Picture2.png" width="250"/>
 
 High quality images can be made using imageMaker.jar 
 
