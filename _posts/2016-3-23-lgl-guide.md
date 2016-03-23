@@ -181,13 +181,11 @@ java -jar ~/lgl.1.D3/lglview.jar
 
 And load the lgl, and the node coordinates (File > Open .lgl file > homology.lgl, File > Open 2D coords file > final.coords)
 
-here, lgl picture
-
 I also load my vertex colors to color all human proteins red, and all others blue (File > Open Vertex Color File > homology_algorithm.edge.colors) and my edge color file to color all the edges predicted with hmmscan green, and with blastp black (File > Open Edge Color File > homology_human.vertex.colors). I changed the vertex size too, since the default is small. 
 
-here, colored lgl picture
+<img src="https://raw.githubusercontent.com/clairemcwhite/clairemcwhite.github.io/master/images/lglexample.png" width="500"/>
 
 
 ##### Conclusion
 
-In the Marcotte lab, LGL is having a renaissance. Any type of pairwise data can be quickly formatted for LGL for a quick visual diagnostic of the data structure. Since  this layout has been so useful for me to look at my data, I hope these tips will encourage others to try it out for their giant network visualization issues! 
+Any type of pairwise data can be quickly formatted for LGL for a quick visual diagnostic of the data structure. Since  this layout has been so useful for me to look at my data, I hope these tips will encourage others to try it out for their giant network visualization issues! 
