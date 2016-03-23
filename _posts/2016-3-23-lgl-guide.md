@@ -34,7 +34,7 @@ use lib 'home/claire/lgl.1.D3/perls/';
 The input format to LGL is called .ncol, which is just a space separated list of two connected verteces with an optional third column of weight. 
 
 ```
-cat example.ncol
+$ cat example.ncol
 vertex1 vertex2 [optional weight]
  ```
 
