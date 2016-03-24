@@ -2,11 +2,24 @@
 layout: default
 ---
 
+<h2 id="stuff">General Items</h2>
+
 <table>
 <thead><tr><th>Description</th><th>Price</th><th>Image</th></tr></thead>
 <tbody>
-{% for item in site.data.garagesale %}
+{% for item in site.data.garagesale.stuff %}
 <tr><td>{{ item.name }}</td><td>${{ item.price }}</td><td>{{ item.image }}</td></tr>
+{% endfor %}
+</tbody>
+</table>
+
+<h2 id="dvds">DVDs</h2>
+
+<table>
+<thead><tr><th>Title</th><th>Bar Code</th></tr></thead>
+<tbody>
+{% for dvd in site.data.garagesale.dvds %}
+<tr><td>{{ dvd.title }}</td><td>${{ dvd.barcode }}</td></tr>
 {% endfor %}
 </tbody>
 </table>
