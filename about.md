@@ -1,15 +1,20 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: Silence
+permalink: /song/
 ---
 
-Some information about you!
 
-### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+### 心里某个地方
 
-### Contact me
+那么亮
 
-[email@domain.com](mailto:email@domain.com)
+却那么冰凉
+
+### 每个人 都有一段悲伤
+
+想隐藏
+
+却欲盖弥彰
+[707930805@qq.com](mailto:707930805@qq.com)
