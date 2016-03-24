@@ -370,4 +370,6 @@ correlated to the market? You selected it to avoid market correlation! This is a
 
 In the coming posts, I hope to expand upon this foundation and add more tools to your investing arsenal. And as always, be wary of trying this with real money!
 
+The next post in the series can be found [here](../Eigenvesting-II-Optimize-Your-Portfolio-With-Optimization/).
+
 
