@@ -23,8 +23,6 @@ As there aren't many resources on using the Large Graph Layout, I wanted to do a
 
 After following the README instructions to install, modify line 82 in lgl.1.d3/bin/lgl.pl to the location of the LGL perls directory
 
-
-
 ```
 #For example
 use lib 'home/claire/lgl.1.D3/perls/';
@@ -41,7 +39,7 @@ node1 node2 [optional weight]
 Key points for formatting the input .ncol
 
  *   Each line must be unique
- *   A node may connect to many other verteces
+ *   A node may connect to many other nodes
  *   A node cannot connect to itself
  *   If a line is B-A, there cannot also be a line A-B 
  *   There can't be blank lines
@@ -79,7 +77,7 @@ node6 0.1 0.1 1.0
 
 ### An LGL workflow
 
-I would begin by making a file of all pairwise edges and their associated traits. It can be difficult to keep .ncol and .color files in sync, and so it will cause fewest headaches to begin with one file containing all the information to create both. 
+This is any example to make a network with colored nodes and edges. I would begin by making a file of all pairwise edges and their associated traits. It can be difficult to keep .ncol and .color files in sync, and so it will cause fewest headaches to begin with one file containing all the information to create both. 
 
 ```
 $ echo "Nodes and traits"
