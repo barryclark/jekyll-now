@@ -1,17 +1,24 @@
 ---
 layout: default
+title: Garage Sale
 ---
 
 <h2 id="stuff">General Items</h2>
 
 <table>
-<thead><tr><th>Description</th><th>Price</th><th>Image</th></tr></thead>
+<thead>
+<tr>
+	<th style="font-size: inherit;">Description</th>
+	<th style="font-size: inherit;">Price</th>
+	<th style="font-size: inherit;">Image</th>
+</tr>
+</thead>
 <tbody>
 {% for item in site.data.garagesale.stuff %}
 <tr>
-	<td>{{ item.name }}</td>
-	<td>${{ item.price }}</td>
-	<td>
+	<td style="font-size: inherit;">{{ item.name }}</td>
+	<td style="font-size: inherit;">${{ item.price }}</td>
+	<td style="font-size: inherit;" >
 		<a href="images/{{ item.image }}.jpg">
 		<img src="images/{{ item.image }}.jpg" style="width: 270px; height: 152px;" />
 		</a>
@@ -24,10 +31,20 @@ layout: default
 <h2 id="dvds">DVDs</h2>
 
 <table>
-<thead><tr><th>Title</th><th>Bar Code</th></tr></thead>
+<thead>
+<tr>
+	<th style="font-size: inherit;">Title</th>
+	<th style="font-size: inherit;">Bar Code</th>
+</tr>
+</thead>
 <tbody>
 {% for dvd in site.data.garagesale.dvds %}
-<tr><td>{{ dvd.title }}</td><td><a href="https://www.google.com/search?q={{ dvd.barcode }}">{{ dvd.barcode }}</a></td></tr>
+<tr>
+	<td style="font-size: inherit;">{{ dvd.title }}</td>
+	<td style="font-size: inherit;">
+		<a href="https://www.google.com/search?q={{ dvd.barcode }}">{{ dvd.barcode }}</a>
+	</td>
+</tr>
 {% endfor %}
 </tbody>
 </table>
