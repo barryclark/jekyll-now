@@ -50,15 +50,19 @@ The flow:
 ![go.cd Flow]( /images/automated-monolith/automated_monolith_flow.jpg){:style="margin:auto"}
 
  Let's first have a quick look on how go.cd works:  
-Within go.cd you model your worklows using pipelines. Those pipelines contain stages which you use to run your jobs which themselves contain tasks. Stages will run in order and if one fails, the pipeline will stop. Jobs will run in parallel, go.cd is taking care of that.  
+Within go.cd you model your worklows using pipelines. Those pipelines contain stages which you use to run your jobs which themselves contain tasks. Stages will run in order and if one fails, the pipeline will stop. Jobs will run in parallel, go.cd is taking care of that. 
+
 The trigger for a pipeline to run is called a material - so this can be a git repository where a commit will start the pipeline.  
+
 You can also define variables on multiple levels - we have used it on a pipeline level - where you can store things like host names and alike. There is also an option to store secure variables. 
 
 In our current setup we use three pipelines: The first on creates a docker image for every component in our infrastructure - database, message queue, application server. It builds images for the logging part - Elastic Search, Kibana and Fluentd - as well as for the monitoring and testing.  
+
 We also pull an EAR file out of our Team Foundation Server and deploy it onto the application server.
 
-Haufe has written and open sourced a [plugin](https://github.com/Haufe-Lexware/gocd-plugins/wiki/Docker-pipeline-plugin) to do exactly that job: Building a docker image.
+Haufe has written and open sourced a [plugin](https://github.com/Haufe-Lexware/gocd-plugins/wiki/Docker-pipeline-plugin) to help ease the task to create docker images.
 
+Here is how to use it:  
 Put in an image name and point to the dockerfile:
 
 ![go.cd Flow]( /images/automated-monolith/docker_plugin_1.jpg){:style="margin:auto"}  
@@ -73,3 +77,66 @@ Our docker images get stored in our internal Artifactory which we use as a docke
 
 
 Those images are based on our [docker guidelines](https://github.com/Haufe-Lexware/docker-style-guide).
+
+The next step is to deploy our environment onto Azure. For that purpose we use a second go.cd pipeline with these stages:
+
+![go.cd Flow]( /images/automated-monolith/deploy_stages.jpg){:style="margin:auto"}
+
+First step is to create an VM on Azure. In this case we create a custom command in go.cd and simple run a shell script:
+
+![go.cd Flow]( /images/automated-monolith/custom_command.jpg){:style="margin:auto"}
+
+Core of the script is a docker machine command which creates an Ubuntu based VM which will serve as a docker host:
+
+```
+docker-machine -s ${DOCKER_LOCAL} create -d azure --azure-location="West Europe" --azure-image=${AZURE_IMAGE} --azure-size="Standard_D3" --azure-ssh-port=22 --azure-username=<your_username> --azure-password=<password> --azure-publish-settings-file azure.settings  ${HOST}
+```
+
+Once the VM is up and running, we run docker compose commands to pull our images from Artifactory (in this case the setup of the logging infrastructure:
+
+```
+version: '2'
+
+services:
+  elasticsearch:
+    image: registry.haufe.io/atlantic_fs/elasticsearch:v1.0
+    hostname: elasticsearch
+    expose:
+      - "9200"
+      - "9300"
+    networks:
+        - hgsp
+
+  fluentd:
+    image: registry.haufe.io/atlantic_fs/fluentd:v1.0
+    hostname: fluentd
+    ports:
+      - "24224:24224"
+    networks:
+        - hgsp
+
+  kibana:
+    env_file: .env
+    image: registry.haufe.io/atlantic_fs/kibana:v1.0
+    hostname: kibana
+    expose:
+      - "5601"
+    links:
+      - elasticsearch:elasticsearch
+    networks:
+        - hgsp
+
+  nginx:
+    image: registry.haufe.io/atlantic_fs/nginx:v1.0
+    hostname: nginx
+    ports:
+      - "4443:4443"
+    restart:
+        always
+    networks:
+        - hgsp
+
+networks:
+   hgsp:
+     driver: bridge
+```
