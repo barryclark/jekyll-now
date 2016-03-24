@@ -140,3 +140,5 @@ networks:
    hgsp:
      driver: bridge
 ```
+
+As a last step we have one pipeline to simple delete everything we've just created.
