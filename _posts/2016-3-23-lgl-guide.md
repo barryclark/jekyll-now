@@ -49,7 +49,7 @@ Key points for formatting the input .ncol
  *   No header line
 
 ```
-node1 vnode2
+node1 node2
 node1 node3 # OK
 node1 node2 # Will cause error
 node1 node1 # Will cause error
@@ -112,7 +112,7 @@ $ awk '{print $1, $2, $3}' homology.txt  | awk '{if(NR>1)print}' >  homology_alg
 $ echo "Replace hmmscan trait with RGB value
 $ sed -i 's/hmmscan/0 1 0/g' homology_alg.colors.tmp
 
-$ echo "Replace hmmscan trait with RGB value
+$ echo "Replace blastp trait with RGB value
 $ sed 's/blastp/0 0 0/g' homology_alg.colors.tmp > homology_algorithm.edge.colors
 
 $ cat homology_algorithm.edge.colors
@@ -124,22 +124,22 @@ protein2 protein5 0 1 0
 I could also color each node by some trait. In this file format, each vertex must have an associated RGB value. In this case, I want to color every human protein red, and proteins from every other species blue. 
 
 ```
-$ echo "Get first column of verteces"
+$ echo "Get first column of nodes and species"
 $ awk '{print $1, $6}' homology.txt  | awk '{if(NR>1)print}'> vertex1_species.tmp
 
-$ Get second column of verteces"
+$ Get second column of nodes and species"
 $ awk '{print $2, $7}' homology.txt  | awk '{if(NR>1)print}'> vertex2_species.tmp
 
-$ Get unique verteces"
+$ Get unique nodes"
 $ cat vertex1_species.tmp vertex2_species.tmp | sort -u > homology_human.vertex.colors.tmp
 
-$ Color human verteces red"
+$ Color human nodes red"
 $ sed -i 's/human/1 0 0/' homology_human.vertex.colors.tmp
 
-$ Color any other vertex blue"
+$ Color any other node blue"
 $ sed 's/mouse\|wheat\|rat/0 0 1/' homology_human.vertex.colors.tmp > homology_human.vertex.colors
 
-$ cat homology_human.vertex.colors
+$ cat homology.human.vertex.colors
 protein1 0 0 1
 protein3 0 0 1
 protein2 1 0 0
@@ -201,7 +201,7 @@ java -jar ~/lgl.1.D3/lglview.jar
 
 Load the lgl, and the node coordinates (File > Open .lgl file > homology.lgl, File > Open 2D coords file > final.coords)
 
-Load the node colors to color all human proteins red and all others blue (File > Open Vertex Color File > homology_algorithm.vertex.colors) and my edge color file to color all the edges predicted with hmmscan green, and with blastp black (File > Open Edge Color File > homology_human.edge.colors). I changed the vertex size too, since the default is small. 
+Load the node colors to color all human proteins red and all others blue (File > Open Vertex Color File > homology.algorithm.vertex.colors) and thr edge color file to color all the edges predicted with hmmscan green, and with blastp black (File > Open Edge Color File > homology.human.edge.colors). I changed the node size too, since the default is small. 
 
 <img src="https://raw.githubusercontent.com/clairemcwhite/clairemcwhite.github.io/master/images/lglexample.png" width="500"/>
 
