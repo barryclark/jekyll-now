@@ -26,7 +26,7 @@
     	{% include schema.html %}  
 	    {% include facebook.html %}	    
 	    <div class="wrapper-masthead">
-	  		<div class="container">
+  		<div class="container">
 	        	<header class="masthead clearfix">
 	          		<a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" alt="Joe's Facebook Profile Picture" /></a>
 	
@@ -39,6 +39,7 @@
 	            	{% for navlink in site.navlinks %}<a href="{{ navlink.url }}">{{ navlink.text }}</a>{% if forloop.last %}{% else %}|{% endif %}{% endfor %}
 	          		</nav>
 	        	</header>
+	        	{% include adsense.html %}
 	      	</div>
 		</div>
 		
