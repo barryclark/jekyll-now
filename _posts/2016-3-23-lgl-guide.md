@@ -9,7 +9,7 @@ title: LGL - the Large Graph Layout
 
 Last summer, I had a 500,000 node/million edge network, and no way to look at its structure. Cytoscape maxed out at about 100,000 edges, and for some reason which I can't remember now,  I never got my network to load on the million node capable OpenOrd Layout for Gephi. 
 
-As nicely outlined by in Martin Krzywinski's  [Hive Plot pag](http://www.hiveplot.net/), even if a software is capable of laying out a giant network, it is more than likely to create an uninterpretable hairball. The Large Graph Layout (LGL) was created by Alex Adai in [Edward Marcotte's lab](http://marcottelab.org/index.php/Main_Page) to visualize large networks while avoiding hairballs. The algorithm itself is described in the original paper, ["LGL: Creating a Map of Protein Function with an Algorithm for Visualizing Very Large Biological Networks"](http://www.marcottelab.org/paper-pdfs/jmb-lgl.pdf). Basically, the algorithm first discovers disconnected clusters in the data, and then lays them out indidually. LGL works radially, where each cluster begins with a seed node, and new edges are added on spheres which are force directed outwards from the existing cluster.          
+As nicely outlined by in Martin Krzywinski's  [Hive Plot page](http://www.hiveplot.net/), even if a software is capable of laying out a giant network, it is more than likely to create an uninterpretable hairball. The Large Graph Layout (LGL) was created by Alex Adai in [Edward Marcotte's lab](http://marcottelab.org/index.php/Main_Page) to visualize large networks while avoiding hairballs. The algorithm itself is described in the original paper, ["LGL: Creating a Map of Protein Function with an Algorithm for Visualizing Very Large Biological Networks"](http://www.marcottelab.org/paper-pdfs/jmb-lgl.pdf). Basically, the algorithm first discovers disconnected clusters in the data, and then lays them out indidually. LGL works radially, where each cluster begins with a seed node, and new edges are added on spheres which are force directed outwards from the existing cluster.          
 
 
 #### LGL Examples 
@@ -198,6 +198,7 @@ In order to view the LGL, run the lglview.jar program
 java -jar ~/lgl.1.D3/lglview.jar
 ```
 
+
 Load the lgl, and the node coordinates (File > Open .lgl file > homology.lgl, File > Open 2D coords file > final.coords)
 
 Load the node colors to color all human proteins red and all others blue (File > Open Vertex Color File > homology_algorithm.vertex.colors) and my edge color file to color all the edges predicted with hmmscan green, and with blastp black (File > Open Edge Color File > homology_human.edge.colors). I changed the vertex size too, since the default is small. 
@@ -227,3 +228,6 @@ java -jar ~lgl.1.D3/Java imageMaker.jar 800 800 homology.lgl
 
 
 Any type of pairwise data can be quickly formatted for LGL for a quick visual diagnostic of the data structure. Since  this layout has been so useful for me to look at my data, I hope these tips will encourage others to try it out for their giant network visualization issues! 
+
+
+
