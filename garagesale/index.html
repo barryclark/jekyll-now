@@ -8,7 +8,15 @@ layout: default
 <thead><tr><th>Description</th><th>Price</th><th>Image</th></tr></thead>
 <tbody>
 {% for item in site.data.garagesale.stuff %}
-<tr><td>{{ item.name }}</td><td>${{ item.price }}</td><td>{{ item.image }}</td></tr>
+<tr>
+	<td>{{ item.name }}</td>
+	<td>${{ item.price }}</td>
+	<td>
+		<a href="images/{{ item.image }}.jpg">
+		<img src="images/{{ item.image }}.jpg" style="width: 270px; height: 152px;" />
+		</a>
+	</td>
+</tr>
 {% endfor %}
 </tbody>
 </table>
