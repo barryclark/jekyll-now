@@ -30,7 +30,7 @@ So time was an issue, we wanted to be fast to have something to work with. Meani
 ### How
 Our guiding principles:
 
-* **Infrastructure as code** - EVERYTHING. IN CONFIG FILES. CHECKED IN. No implicit head knowledge. 
+* **Infrastructure as code** - EVERYTHING. IN CONFIG FILES. CHECKED IN. No implicit knowledge in people's heads. 
 * **Immutable Servers** - We build from scratch, the whole lot. ALWAYS. NO UPDATES, HOT FIX, NOTHING.  
 * **Be independent of underlying infrastructure** - it shouldn't matter where we deploy to. So we picked Azure just for the fun of it.  
 
@@ -50,9 +50,9 @@ The flow:
 ![go.cd Flow]( /images/automated-monolith/automated_monolith_flow.jpg){:style="margin:auto"}
 
  Let's first have a quick look on how go.cd works:  
-Within go.cd you model your worklows using pipelines. Those pipelines contain stages which you use to run your jobs which themselves contain tasks. Stages will run in order and if one fails, the pipeline will stop. Jobs will run in parallel, go.cd is taking care of that. 
+Within go.cd you model your worklows using pipelines. Those pipelines contain stages which you use to run jobs which themselves contain tasks. Stages will run in order and if one fails, the pipeline will stop. Jobs will run in parallel, go.cd is taking care of that. 
 
-The trigger for a pipeline to run is called a material - so this can be a git repository where a commit will start the pipeline.  
+The trigger for a pipeline to run is called a material - so this can be a git repository where a commit will start the pipeline, but also a timer which will start the pipeline reguarly.  
 
 You can also define variables on multiple levels - we have used it on a pipeline level - where you can store things like host names and alike. There is also an option to store secure variables. 
 
@@ -82,19 +82,19 @@ The next step is to deploy our environment onto Azure. For that purpose we use a
 
 ![go.cd Flow]( /images/automated-monolith/deploy_stages.jpg){:style="margin:auto"}
 
-First step is to create an VM on Azure. In this case we create a custom command in go.cd and simple run a shell script:
+First step is to create an VM on Azure. In this case we create a custom command in go.cd and simply run a shell script:
 
 ![go.cd Flow]( /images/automated-monolith/custom_command.jpg){:style="margin:auto"}
 
 Core of the script is a docker machine command which creates an Ubuntu based VM which will serve as a docker host:
 
-```
+~~~bash
 docker-machine -s ${DOCKER_LOCAL} create -d azure --azure-location="West Europe" --azure-image=${AZURE_IMAGE} --azure-size="Standard_D3" --azure-ssh-port=22 --azure-username=<your_username> --azure-password=<password> --azure-publish-settings-file azure.settings  ${HOST}
-```
+~~~
 
-Once the VM is up and running, we run docker compose commands to pull our images from Artifactory (in this case the setup of the logging infrastructure:
+Once the VM is up and running, we run docker compose commands to pull our images from Artifactory (in this case the setup of the logging infrastructure):
 
-```
+~~~yml
 version: '2'
 
 services:
@@ -139,6 +139,16 @@ services:
 networks:
    hgsp:
      driver: bridge
-```
+~~~
 
 As a last step we have one pipeline to simple delete everything we've just created.
+
+### Outcome
+We kept our timeline, presented what we did and were super proud of it! We even got cake!!
+![go.cd Flow]( /images/automated-monolith/cake.jpg){:style="margin:auto"}
+
+Setting up a test environment now only takes 30 minutes, down from 5 days. And even that can be improved by running stuff in parallel. 
+
+We also have a solid base we can work with - and we have many ideas on how to take it further. More testing will be included soon, like more code- and security tests. We will include gates that only once the code has a certain quality or has improved in a certain way after the last test, the pipeline will proceed. We will not stop at automating the test environment, but look at our other environments as well. 
+
+All the steps necessary we have in code, which makes it repeatable and fast. There is no dependency to anything. This enables our internal clients to setup their personal environments in a fast and bulletproof way on their own. 
