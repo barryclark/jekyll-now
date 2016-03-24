@@ -21,7 +21,7 @@ layout: default
 <thead><tr><th>Title</th><th>Bar Code</th></tr></thead>
 <tbody>
 {% for dvd in site.data.garagesale.dvds %}
-<tr><td>{{ dvd.title }}</td><td><a href="https://www.google.com/?q={{ dvd.barcode }}">{{ dvd.barcode }}</a></td></tr>
+<tr><td>{{ dvd.title }}</td><td><a href="https://www.google.com/search?q={{ dvd.barcode }}">{{ dvd.barcode }}</a></td></tr>
 {% endfor %}
 </tbody>
 </table>
