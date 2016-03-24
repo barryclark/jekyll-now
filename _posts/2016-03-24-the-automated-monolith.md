@@ -9,7 +9,7 @@ author_email: marco.seifried@haufe-lexware.com
 header-img: "images/bg-post.old.jpg"
 ---
 
-Let's be honest, systems age and while we try hard **not to accumulate technical depth, sometimes you realize it's time for a bigger change. In this case, we looked at a Haufe owned platform providing services like user-, licence- and subscription management for internal and external customers. Written in Java, based on various open source components, somewhat automated, fairly monolithic.  
+Let's be honest, systems age and while we try hard not to accumulate technical depth, sometimes you realize it's time for a bigger change. In this case, we looked at a Haufe owned platform providing services like user-, licence- and subscription management for internal and external customers. Written in Java, based on various open source components, somewhat automated, fairly monolithic.  
 
 Backed by our technical strategy, we try to follow the microservices approach (a good read is [Sam Newman's book](http://shop.oreilly.com/product/0636920033158.do)). We treat infrastructure as code and automate wherever  possible. 
 So whenever we start from scratch, it's fairly straight forward to apply those principles. 
@@ -17,7 +17,7 @@ So whenever we start from scratch, it's fairly straight forward to apply those p
 But what if you already have your system, and it's grown over the years? How do you start? Keeping in mind we have a business critical system on a tight budget and a busy team. Try to convince business it's time for a technical face lift... 
 
 
-We decided to look at the current painpoints and start with something that shows *immidiate business results in a  reasonably short timeframe*. 
+We decided to look at the current painpoints and start with something that shows *immediate business results in a  reasonably short timeframe*. 
 
 ### Rough Idea
 The team responsible for this platform has to develop, maintain and run the system. A fair amount of their time went into deploying environments for internal clients and help them get up and running. This gets even trickier when different clients use an environment for testing simultanously. Setting up a test environment from scratch - build, deploy, test - takes 5 man days. That's the reality we tried to improve.
@@ -47,7 +47,7 @@ Main components we used:
 The flow:
 
 {:.center}
-![go.cd Flow]({{ site.url }}/images/automated-monolith/automated_monolith_flow.jpg){:style="margin:auto"}
+![go.cd Flow]( /images/automated-monolith/automated_monolith_flow.jpg){:style="margin:auto"}
 
  Let's first have a quick look on how go.cd works:  
 Within go.cd you model your worklows using pipelines. Those pipelines contain stages which you use to run your jobs which themselves contain tasks. Stages will run in order and if one fails, the pipeline will stop. Jobs will run in parallel, go.cd is taking care of that.  
@@ -55,17 +55,21 @@ The trigger for a pipeline to run is called a material - so this can be a git re
 You can also define variables on multiple levels - we have used it on a pipeline level - where you can store things like host names and alike. There is also an option to store secure variables. 
 
 In our current setup we use three pipelines: The first on creates a docker image for every component in our infrastructure - database, message queue, application server. It builds images for the logging part - Elastic Search, Kibana and Fluentd - as well as for the monitoring and testing.  
-We also pull an EAR file out of our Team Foundation Server and deploy it onto the application server.  
-Haufe has written and open sourced a [plugin](https://github.com/Haufe-Lexware/gocd-plugins/wiki/Docker-pipeline-plugin) to do exactly that job: Building a docker image.  
-Put in an image name and point to the dockerfile:  
-![go.cd Flow]({{ site.url }}/images/automated-monolith/docker_plugin_1.jpg){:style="margin:auto"}  
-You can also tag your image:  
-![go.cd Flow]({{ site.url }}/images/automated-monolith/docker_plugin_2.jpg){:style="margin:auto"}  
-Our docker images get stored in our internal Artifactory which we use as a docker hub. You can add your repository and the credentials for that as well:  
-![go.cd Flow]({{ site.url }}/images/automated-monolith/docker_plugin_3.jpg){:style="margin:auto"}  
+We also pull an EAR file out of our Team Foundation Server and deploy it onto the application server.
+
+Haufe has written and open sourced a [plugin](https://github.com/Haufe-Lexware/gocd-plugins/wiki/Docker-pipeline-plugin) to do exactly that job: Building a docker image.
+
+Put in an image name and point to the dockerfile:
+
+![go.cd Flow]( /images/automated-monolith/docker_plugin_1.jpg){:style="margin:auto"}  
+
+You can also tag your image:
+
+![go.cd Flow]( /images/automated-monolith/docker_plugin_2.jpg){:style="margin:auto"}
+  
+Our docker images get stored in our internal Artifactory which we use as a docker hub. You can add your repository and the credentials for that as well:
+
+![go.cd Flow]( /images/automated-monolith/docker_plugin_3.jpg){:style="margin:auto"}  
 
 
 Those images are based on our [docker guidelines](https://github.com/Haufe-Lexware/docker-style-guide).
-
- 
-
