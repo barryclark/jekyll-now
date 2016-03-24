@@ -18,7 +18,7 @@ As nicely outlined by in Martin Krzywinski's  [Hive Plot page](http://www.hivepl
  *   The Museum of Modern Art in New York picked an LGL of protein homologies (top image) for their 2008 exhibit ["Design and the Elastic Mind"](http://www.moma.org/interactives/exhibitions/2008/elasticmind/#/211/)
 
 
-#### LGL tips
+### LGL tips
 As there aren't many resources on using the Large Graph Layout, I wanted to do a quick post on my tips for using the software. This post is meant to supplement the [main FAQ](http://www.opte.org/lgl/) and the [README](https://github.com/TheOpteProject/LGL/blob/master/README.txt). LGL is mainly maintained by the Opte Project to map the internet, and the most recent version of the software can be cloned from their [ Github](https://github.com/TheOpteProject/LGL), with git clone https://github.com/TheOpteProject/LGL.git.
 
 #### Formatting and installation tips
@@ -201,13 +201,13 @@ java -jar ~/lgl.1.D3/lglview.jar
 
 Load the lgl, and the node coordinates (File > Open .lgl file > homology.lgl, File > Open 2D coords file > final.coords)
 
-Load the node colors to color all human proteins red and all others blue (File > Open Vertex Color File > homology.algorithm.vertex.colors) and thr edge color file to color all the edges predicted with hmmscan green, and with blastp black (File > Open Edge Color File > homology.human.edge.colors). I changed the node size too, since the default is small. 
+Load the node colors to color all human proteins red and all others blue (File > Open Vertex Color File > homology.algorithm.vertex.colors) and the edge color file to color all the edges predicted with hmmscan green, and with blastp black (File > Open Edge Color File > homology.human.edge.colors). I changed the node size too, since the default is small. 
 
 <img src="https://raw.githubusercontent.com/clairemcwhite/clairemcwhite.github.io/master/images/lglexample.png" width="500"/>
 
 Here's a prettier image from lglview.jar of protein families in different species linked by predictions of orthology. This network shows good separation between the fairly densely connected submodules.
 
-<img src="https://raw.githubusercontent.com/clairemcwhite/clairemcwhite.github.io/master/images/Picture2.png" width="250"/>
+<img src="https://raw.githubusercontent.com/clairemcwhite/clairemcwhite.github.io/master/images/Picture2.png" width="400"/>
 
 ### High quality images 
 
