@@ -145,6 +145,8 @@ As a last step we have one pipeline to simple delete everything we've just creat
 
 ### Outcome
 We kept our timeline, presented what we did and were super proud of it! We even got cake!!
+
+
 ![go.cd Flow]( /images/automated-monolith/cake.jpg){:style="margin:auto"}
 
 Setting up a test environment now only takes 30 minutes, down from 5 days. And even that can be improved by running stuff in parallel. 
