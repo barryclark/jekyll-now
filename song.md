@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Silence
+title: 东方月初
 permalink: /song/
 ---
 
