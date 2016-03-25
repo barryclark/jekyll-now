@@ -4,12 +4,10 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Awesome Full Stack developer.
 
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
+I started as Rails dev, but now my stack is bigger: I'm familiar with awesome frontend tools like Ember or Angular, but my choose is React.js. My backend skills also growing and know I can develop solid apps in Elixir & Haskell.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+Email: [kaburbundokel11g@gmail.com](mailto:kaburbundokel11g@gmail.com)
