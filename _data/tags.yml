@@ -36,3 +36,6 @@
 
 - slug: logging
   name: Logging 
+
+- slug: automation
+  name: Automation 
