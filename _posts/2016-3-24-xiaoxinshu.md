@@ -1,4 +1,4 @@
 ---
 layout: post
-title: 统帅三军，怎能不识变数
+title: No time to explain，get in the car
 ---
