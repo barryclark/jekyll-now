@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 没时间解释了，快上车
+title: NO TIME TO EXPLAIN,GET IN THE CAR.
 ---
 
 
