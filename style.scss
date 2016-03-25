@@ -129,7 +129,7 @@ img {
   background: $white;
 }
 ::selection {
-  color: $black;
+  color: $white;
   background: $white;
 }
 
@@ -205,7 +205,7 @@ img {
 
 .site-description {
   margin: -5px 0 0 0;
-  color: $red;
+  color: $white;
   font-size: 16px;
 
   @include mobile {
@@ -246,7 +246,7 @@ nav {
 
 .posts > .post {
   padding-bottom: 2em;
-  border-bottom: 1px solid $red;
+  border-bottom: 1px solid $white;
 }
 
 .posts > .post:last-child {
