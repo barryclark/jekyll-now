@@ -18,9 +18,11 @@ Given that we want (Italy) + (Capital) = (Rome), or (royal) + (daughter) = (prin
 
 Word2vec already manages to caputre some of these relations. But would a supervised model be better?
 
+In my opinion, we do this a lot. The 'supervision' that these nets get is more at a meta level where the researchers designing the learner supervise the sorts of relation they think is important
+
 ##### Unsupervised predictive learning
 
-This is really the ultimate goal. To have a system that we can just place in an environment, where it can gather data, and it eventually learns to predict 
+This is really the ultimate goal. To have a system that we can just place in an environment, where it can gather data, and it eventually learns to predict its environment
 
 *****
 
