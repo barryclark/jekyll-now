@@ -25,5 +25,3 @@ This is really the ultimate goal. To have a system that we can just place in an 
 *****
 
 Inspired by Roger Grosse's [post](https://hips.seas.harvard.edu/blog/2013/02/04/predictive-learning-vs-representation-learning/) on the HIPS blog.
-
-![_config.yml]
