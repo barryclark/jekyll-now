@@ -1,6 +1,3 @@
-#
-# This file contains configuration flags to customize your site
-#
 
 # Name of your site (displayed in the header)
 name: actingthepart
@@ -19,14 +16,14 @@ avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/je
 footer-links:
   dribbble:
   email: act65.com@gmail.com
-  facebook: Alex Telfar
+  facebook: 
   flickr:
-  github: act65
+  github: 
   instagram:
   linkedin:
   pinterest:
   rss: # just type anything here for a working RSS icon
-  twitter: jekyllrb
+  twitter: 
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
@@ -46,8 +43,7 @@ url: http://act65.github.io
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
 # and NOT your User repository (http://yourusername.github.io)
-# then add in the baseurl here, like this: "/repository-name"
-baseurl: “”
+# then add in the baseurl here, like this: "/repository-name" - baseurl: ""
 
 #
 # !! You don't need to change any of the configuration flags below !!
