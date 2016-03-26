@@ -5,12 +5,7 @@ permalink: /about/
 published: true
 ---
 
-
-Another blog.
-
-### More Information
-
-Wana-be smart person. 
+Hey. I am a wana-be smart person. I work by day, and by night I explore ideas I otherwise don’t have time for.
 
 ### Contact me
 
