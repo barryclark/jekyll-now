@@ -9,7 +9,7 @@ Firstly a quick intoduction an interesting [paper](http://arxiv.org/pdf/1602.026
 
 Given a typical 3x3 matrix of weights, also known as a kernel, we can rotate/flip it in 8 different ways. So for each rotation of our matrix we can convolve it with the image thus creating rotational invariance.
 
-In my opinion, and in hindsight, this idea makes data augmentation (at least rotating) seem quite silly. I have always liked the idea of weight tying and ... 
+In my opinion, and in hindsight, this idea makes data augmentation (at least rotating) seem quite silly. Reducing the amount of parameters required to learn each rotational orientation of a feature, seems to me, to be a big improvement. The idea of weight tying seems to be particularly powerful and the more you constrain your model the easier it is to learn.
 
 ##### Room for improvement
 
@@ -44,7 +44,7 @@ For example.
 	* We can easily see that this will get out of hand quickly.
 * Now take each of our 64 permutations, which is really the product of two permutations and map it back onto the original rotation space. 
 	* We know that two left rotations = two right rotations = a vertical and a horizontal flip.
-	* Thus we are not back with 8xNxdxwxw.
+	* Thus we are now back with 8xNxdxwxw.
 
 What are we really doing if we map back into the dihedral permutation space? So, we would be making the assumption that a feature map produced by two right rotations is somehow in the same space as a feature map produced by a vertical and horizontal flip. This makes sense to me.
 
