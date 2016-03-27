@@ -3,7 +3,7 @@ layout: post
 title: The N-D conv net
 ---
 
-Following on from my previous post on convolving over rotations (in the z axis), I want to expand on the idea of adding other dimensions to colvolve.
+Following on from my previous post on convolving over rotations (in the z axis), I want to expand on the idea of adding other dimensions to convolve.
 
 # Feature invatriance in new dimensions
 
