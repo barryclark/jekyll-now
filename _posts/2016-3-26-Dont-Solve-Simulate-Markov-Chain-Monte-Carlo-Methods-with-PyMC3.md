@@ -8,7 +8,7 @@ summary: A lightning tour of PyMC3 and Bayesian inference to solve (somtimes fru
 ---
 
 
-In today's post, we're going to introduce two problems and solve them using Markov Chain Monte Carlo methods, utilizing the PyMC3 library in Python. We aim to demonstrate the value of such methods by taking difficult analytical problems, and transforming them into a simpler Bayesian inference problem.  
+In today's post, we're going to introduce two problems and solve them using Markov Chain Monte Carlo methods, utilizing the PyMC3 library in Python. We aim to demonstrate the value of such methods by taking difficult analytical problems, and transforming each of them into a simpler Bayesian inference problem.  
 
 PyMC3 is still in beta but it's a great library with a slick syntax. It's still in active development so there are some kinks, but overall it's a great choice. It's also much easier to install than it's predecessor PyMC2.
 
