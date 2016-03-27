@@ -5,8 +5,11 @@ permalink: /about/
 published: true
 ---
 
-Hey. I am a wana-be smart person. I work by day, and by night I explore ideas I otherwise don’t have time for.
+# Me
 
-### Contact me
+Hey. I am a wana-be smart person.
 
-[email](mailto:act65.com@gmail.com)
+# This blog
+
+This is a selfish blog. I write here to organise my thoughts, to practice explanations and to explore ideas. If others happen to learn from these posts awesome!
+
