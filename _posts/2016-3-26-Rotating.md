@@ -3,11 +3,11 @@ layout: post
 title: Rotating convolutions
 ---
 
+Given a typical 3x3 matrix of weights, also known as a kernel, we can rotate/flip it in 8 different ways. So for each rotation of our matrix we can convolve it with the image thus creating rotational invariance.
+
 ### Exploiting Cyclic Symmetry in Convolutional Neural Networks
 
-Firstly a quick intoduction an interesting [paper](http://arxiv.org/pdf/1602.02660v1.pdf) by deepmind.
-
-Given a typical 3x3 matrix of weights, also known as a kernel, we can rotate/flip it in 8 different ways. So for each rotation of our matrix we can convolve it with the image thus creating rotational invariance.
+This post is mainly about the work done in this [paper](http://arxiv.org/pdf/1602.02660v1.pdf) by deepmind.
 
 In my opinion, and in hindsight, this idea makes data augmentation (at least rotating) seem quite silly. Reducing the amount of parameters required to learn each rotational orientation of a feature, seems to me, to be a big improvement. The idea of weight tying seems to be particularly powerful and the more you constrain your model the easier it is to learn.
 

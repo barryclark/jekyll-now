@@ -3,9 +3,9 @@ layout: post
 title: The N-D conv net
 ---
 
-# Feature invatriance in new dimensions
-
 Following on from my previous post on convolving over rotations (in the z axis), I want to expand on the idea of adding other dimensions to colvolve.
+
+# Feature invatriance in new dimensions
 
 The motivation for this is; if we can make our features invariant to more irrelevant variables then we can learn faster, or from less data (as there are less parameters). 
 
