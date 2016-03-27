@@ -135,9 +135,7 @@ We will use NumPy for all of these effects. We will perform each action with pro
             ax[k,j].imshow(rand_jitter(test_image()))
 
 {% endhighlight %}
-    <matplotlib.figure.Figure at 0x1969f278>
-
-
+ 
 
 ![png](../images/2016-03-12/output_15_1.png)
 
@@ -194,14 +192,6 @@ But it will not make a difference for our demonstration, so we'll make our predi
 {% endhighlight %}
     Predicted value: 0
   
-
-
-
-
-    <matplotlib.image.AxesImage at 0x1a717080>
-
-
-
 
 ![png](../images/2016-03-12/output_22_2.png)
 

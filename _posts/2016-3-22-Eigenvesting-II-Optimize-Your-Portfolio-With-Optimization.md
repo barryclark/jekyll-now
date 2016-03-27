@@ -185,11 +185,6 @@ Now let's test the algorithm on returns data and compare it to the eigenprofile 
 {% endhighlight %}
 
 
-    <matplotlib.text.Text at 0xa11df60>
-
-
-
-
 ![png](../images/eigenvesting2/output_7_1.png)
 
 

@@ -298,12 +298,6 @@ Let's extract an eigenportfolio! To avoid the dreaded Market-correlated portfoli
 {% endhighlight %}
 
 
-
-    <matplotlib.text.Text at 0xbed9b00>
-
-
-
-
 ![png](../images/eigenvesting1/output_7_1.png)
 
 
@@ -346,10 +340,6 @@ Again, to avoid issues around short sales, I am going to use the portfolio witho
     plt.title("AAPL")
 
 {% endhighlight %}
-
-
-    <matplotlib.text.Text at 0xbf9e198>
-
 
 
 ![png](../images/eigenvesting1/output_10_1.png)
