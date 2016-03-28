@@ -14,6 +14,7 @@
         <script type="IN/Share" data-url="{{ post_url }}" data-counter="right"></script>
       </div>
       
+      {% unless post.facebook_post %}
       <!-- Facebook Like & Share -->
       <div>
         <div class="fb-like" 
@@ -24,6 +25,7 @@
           data-show-faces="true">
         </div>
       </div>
+      {% endunless %}
       <hr />
       <div>
         <span itemprop="datePublished" content="{{ post.date | date: "%Y-%m-%d" }}" class="date">
