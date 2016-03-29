@@ -1,0 +1,3 @@
+[submodule "beercalcs"]
+	path = beercalcs
+	url = https://github.com/shawnnapora/beercalcs.git
