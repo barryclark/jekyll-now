@@ -18,7 +18,11 @@ The topics I will (probably) write about are machine learning and neural network
 
 * representation learning
 * unsupervised and hebbian learning
-* the complexity of neural networks and occams razor
-* hyper-parameter learning and adapting morphology of neural networks
+* analysis of neural networks, why is NN1 better than NN2?
+* learning hyper-parameters
+* adapting morphology of neural networks
 * convolution and signals
-* and other stuff?
+* explanations and occams razor
+* learning how to learn and meta cognition 
+
+So pretty much anything related to consciousness, learning and intelligence.
