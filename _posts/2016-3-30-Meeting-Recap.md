@@ -3,9 +3,7 @@ layout: post
 title: Get Excited About Drupal, Webforms, and Drush!
 ---
 
-We had three great presentations today!
-
-Thanks to Justin, Jim, and Matt for their great presentations.
+We had three great presentations today! Thanks to Justin, Jim, and Matt for their contributions.
 
 We have included the links to their sites and their presentations below:
 
