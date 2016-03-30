@@ -65,5 +65,6 @@ Recruiter มองหาอะไรใน Resume
 - Format ที่ดีควรเป็น PDF ถ้ามี cover letter ก็ควรรวมให้อยู่ในไฟล์เดียว ใส่ชื่อเราเป็นชื่อไฟล์ด้วย (เพราะ Recruiter จะได้รับ Resume มหาศาลมาก เพื่อให้ง่ายต่อการปริ้นท์ หรือคัดเลือก)
 - ระวังอย่าสะกดคำผิด หรือ Grammatical mistake ไม่ควรใช้ตัวย่อหากไม่ได้เป็นตัวย่อสากล
 
+----
 * __Noted by:__ @MindMui
 * __Workshop by:__ NTU Career & Attachment Office (CAO)
