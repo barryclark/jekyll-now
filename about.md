@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-### Notes and references for Japanese
+### Notes and references
 
 It's not much for now.
 
