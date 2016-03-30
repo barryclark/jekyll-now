@@ -35,6 +35,7 @@ title: Resume Tips by NTU Career & Attachment Office
 
 **ตัวอย่าง:**
 > Critically analysed telecoms industry data from 5 countries in APAC.uppedthe ante with ready-to-use data for future credit decisions which will impact the bottom-line
+
 แสดงให้เห็นว่าเรา
 
 1. Able to manage big data
