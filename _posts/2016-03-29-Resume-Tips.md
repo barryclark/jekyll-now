@@ -1,9 +1,6 @@
 ---
 layout: post
 title: Resume Tips by NTU Career & Attachment Office
-tags:
-- jekyll
-- example
 ---
 
 เนื่องจากว่าเราได้มีโอกาสเข้าไปฟัง workshop ของ Career & Attachment Office (CAO) เมื่อวันก่อนๆ บล็อกในวันนี้ก็อยากจะมาแชร์ tips การเขียน Resume ง่ายๆสั้นๆ ได้ใจความ เพราะถ้าใครกำลังจะเตรียมตัวสมัครงาน หา Internship หรือเปลี่ยนงาน สิ่งแรกที่จะเป็นใบเบิกทางให้เราสู่การคัดเลือกต่อๆไป ก็คือ Resume นี่เอง
