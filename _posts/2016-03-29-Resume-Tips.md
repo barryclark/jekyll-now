@@ -22,6 +22,7 @@ title: Resume Tips by NTU Career & Attachment Office
 วิธีขายตัวเอง
 -------------
 สิ่งสำคัญ คือเราต้องมี keyword สำหรับ Personality / Skills ที่เราต้องการสื่อสารให้อีกฝ่าย ยกตัวอย่างเช่นเราอาจจะแสดงให้อีกฝ่ายเห็นว่าเรา:
+
 - Reliable
 - Responsible
 - Planning & Organising Skills
@@ -32,8 +33,8 @@ title: Resume Tips by NTU Career & Attachment Office
 - Negotiation skills
 - Competency-based
 
-ตัวอย่าง:
-Critically analysed telecoms industry data from 5 countries in APAC.upped the ante with ready-to-use data for future credit decisions which will impact the bottom-line
+**ตัวอย่าง:**
+```Critically analysed telecoms industry data from 5 countries in APAC.upped the ante with ready-to-use data for future credit decisions which will impact the bottom-line```
 แสดงให้เห็นว่าเรา
 1. Able to manage big data
 2. มี Planning & Organising Skills
@@ -61,3 +62,5 @@ Recruiter มองหาอะไรใน Resume
 - Format ที่ดีควรเป็น PDF ถ้ามี cover letter ก็ควรรวมให้อยู่ในไฟล์เดียว ใส่ชื่อเราเป็นชื่อไฟล์ด้วย (เพราะ Recruiter จะได้รับ Resume มหาศาลมาก เพื่อให้ง่ายต่อการปริ้นท์ หรือคัดเลือก)
 - ระวังอย่าสะกดคำผิด หรือ Grammatical mistake ไม่ควรใช้ตัวย่อหากไม่ได้เป็นตัวย่อสากล
 
+Noted by: @MindMui
+Workshop by: NTU Career & Attachment Office (CAO)
