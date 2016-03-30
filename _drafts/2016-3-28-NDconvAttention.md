@@ -1,22 +1,20 @@
 ---
 layout: post
-title: Conv nets: Prediction the value of a convolution
+title: Prediction the value of a convolution
 ---
 
 Following on from the posts exploring more dimensions to convolve in CNNs. I wonder if it is reasonable to use a net to learn to select which dimensions should be convolved.
 
-To solve the problem that a N-D net would need more computations than the standard (2D conv) CNN, in forward propagating. I think a good solution would be to let the conv net learn which convolutions are important given the image and a kernel.
+To solve the problem that a N-D net would need more computations than the standard (2D conv) CNN, at least in forward propagation. I think a good solution would be to let the conv net learn which convolutions are important given the image and a kernel.
 
 
 ### Value estimation
 
-We want a network to learn to look at an input image and estimate the value of doing a convolution in certain dimensions. 
+I would want a network to learn to look at an input image , and the kernel to be convolvedm, and estimate the value, in relation to ???, of doing a convolution in certain dimensions. 
 
 ### Probable convolutions
 
-
-
-### 
+We could also use statistics from???
 
 
 *****

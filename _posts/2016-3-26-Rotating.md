@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Conv Nets: Rotating convolutions
+title: Rotating convolutions
 ---
 
 Given a typical 3x3 matrix of weights, also known as a kernel, we can rotate/flip it in 8 different ways. So for each rotation of our matrix we can convolve it with the image thus creating rotational invariance.
