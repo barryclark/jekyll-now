@@ -2,6 +2,7 @@
 layout: post
 title: The Elusive Custom GitHub 404 Page
 tags: [javascript, github]
+keywords: [programming, 404]
 ---
 
 So you want a custom 404 page for your project page, or just any subdirectory? Well, according the GitHub help page, ["you must use a custom domain."](https://help.github.com/articles/custom-404-pages/)

@@ -2,6 +2,7 @@
 layout: post
 title: Ohio Election November 2015 - Claims
 tags: [politics]
+keywords: [Ohio, election]
 ---
 
 In a [previous post](/ohio_election_november_2015/) I linked to all the various internet sites about the candidates I could find. In this post I am going to list the claims made by the political postcards I've received in the mail. Especially since the election is tomorrow, I'm probably not going to verify these claims, at least not here.

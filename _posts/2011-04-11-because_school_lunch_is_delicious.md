@@ -2,6 +2,7 @@
 layout: post
 title: Because School Lunch is Delicious
 tags: [culture, old blog]
+keywords: [school lunch]
 excerpt: From NewsChicago.com&#58; To encourage healthful eating, some Chicago schools don’t allow kids to bring lunches or certain snacks from home
 ---
 

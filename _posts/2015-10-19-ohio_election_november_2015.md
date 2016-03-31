@@ -2,6 +2,7 @@
 layout: post
 title: Ohio Election November 2015
 tags: [politics]
+keywords: [Ohio, election]
 ---
 
 This is just some general information and links about the issues in Ohio, or, more specifically, the issues I'll get to vote on, this November. I'm going to just put information here, and not say what should the vote be. The links I put might, however.

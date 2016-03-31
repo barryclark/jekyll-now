@@ -2,6 +2,7 @@
 layout: post
 title: The Trinity in the Bible
 tags: [religion]
+keywords: [trinity, christianity]
 ---
 
 One of the central doctrines common to almost all modern denominations of Christianity is that of the [Trinity](https://en.wikipedia.org/wiki/Trinity). The Trinity is the idea that God exists in three persons, yet is still one. [However, nowhere in the Bible does the word "Trinity" appear](https://www.biblegateway.com/quicksearch/?quicksearch=trinity&qs_version=NABRE). Does that mean - assuming the Bible is correct - that this doctrine is wrong? Perhaps, [but the Bible doesn't mention zebras](https://www.biblegateway.com/quicksearch/?quicksearch=zebra&qs_version=NABRE), either, and they most certainly exist.

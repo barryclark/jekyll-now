@@ -2,6 +2,7 @@
 layout: post
 title: Probability
 tags: [math]
+keywords: [statistics]
 mathjax: true
 excerpt: Say we have a hungry caterpillar that wants to eat a leaf off of a tree. There are ten trees it can choose from. So, as far as we know, the probability of it choosing a specific tree is
 ---
