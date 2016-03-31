@@ -43,7 +43,7 @@ $$
 \end{aligned}
 $$
 
-Now consider a positive a baseline trend, so that $\tau_B > 0$, and assume that $\tau_P$ is constant. A longer baseline phase will then lead to smaller values of Tau-U (on average), while a longer treatment phase will lead to larger values of Tau-U (on average). Again, that's really weird. This is not a good feature for an effect size measure because it means that Tau-U values from different cases are not really on the same scale unless the cases have identical baseline and treatment phase lengths. In a multiple baseline study, each case is necessarily observed for a different number of occasions in baseline (otherwise it wouldn't be a multiple baseline). Thus, it seems inadvisable to use Tau-U to quantify the magnitude of treatment effects in a multiple baseline study.
+Now consider a positive a baseline trend, so that $\tau_B > 0$, and assume that $\tau_P$ is constant. A longer baseline phase will then lead to smaller values of Tau-U (on average), while a longer treatment phase will lead to larger values of Tau-U (on average). Again, that's really weird. This is not a good feature for an effect size measure because it means that Tau-U values from different cases are only on the same scale if the cases have identical baseline and treatment phase lengths. In a multiple baseline study, each case is necessarily observed for a different number of occasions in baseline (otherwise it wouldn't be a multiple baseline). Thus, it seems inadvisable to use Tau-U to quantify the magnitude of treatment effects in a multiple baseline study.
 
 ## Sensitivity under a parametric model
 
@@ -62,7 +62,7 @@ $$
 \end{aligned}
 $$
 
-where $\Phi()$ is the standard normal cumulative distribution function. I can use the above formulas to calculate the average value of Tau-U for various degrees of baseline trend ($\beta_1$), level shift ($\beta_2$), and phase lengths ($m,n$). 
+where $\Phi()$ is the standard normal cumulative distribution function. I can use the above formulas to calculate the average value of Tau-U for various degrees of baseline trend ($$\beta_1$$), level shift ($$\beta_2$$), and phase lengths ($$m,n$$). 
 
 ```{r, message = FALSE, fig.width = 10, fig.height = 10}
 E_TauU <- function(b1, b2, m, n) {
@@ -95,11 +95,10 @@ ggplot(TauU_values, aes(n, TauU, color = factor(m))) +
   theme_bw() + theme(legend.position = "bottom")
 ```
 
-In the figure above, each plot corresponds to a different value of the baseline slope ($\beta_1$, ranging from -0.2 in the top row to 0.2 in the bottom row) and treatment shift ($\beta_2$, ranging from 0 in the first column to 2 in the last column). Within each plot, the x axis corresponds to treatment phase length and the different lines correspond to different baseline phase lengths. The thing to note is that, when the baseline slope is non-zero, the expected value of Tau-U ranges quite widely within each plot, depending on the values of $m$ and $n$. For example, when $\beta_2 = 0$ (in the first column), the data follow a simple linear trend with no shift. If the slope of the trend is equal to -0.2 (the first row), then the expected magnitude of Tau-U ranges from `r round(min(ex$TauU), 2)` to `r round(max(ex$TauU), 2)` depending on the phase lengths, which is quite a wide range. 
+In the figure above, each plot corresponds to a different value of the baseline slope ($$\beta_1$$, ranging from -0.2 in the top row to 0.2 in the bottom row) and treatment shift ($$\beta_2$$, ranging from 0 in the first column to 2 in the last column). Within each plot, the x axis corresponds to treatment phase length and the different lines correspond to different baseline phase lengths. The thing to note is that, when the baseline slope is non-zero, the expected value of Tau-U ranges quite widely within each plot, depending on the values of $m$ and $n$. For example, when $\beta_2 = 0$ (in the first column), the data follow a simple linear trend with no shift. If the slope of the trend is equal to -0.2 (the first row), then the expected magnitude of Tau-U ranges from `r round(min(ex$TauU), 2)` to `r round(max(ex$TauU), 2)` depending on the phase lengths, which is quite a wide range. 
 
 Generally, the degree of sample size sensitivity depends on the absolute magnitude of the baseline slope, with steeper slopes leading to increased sensitivity. For steeper values of slope, it appears that the degree to which the measure is affected by sample size even swamps the degree to which the measure is sensitive to the magnitude of the treatment effect. Very peculiar.
 
 ## A final thought
 
-Of course, these results are contingent on the particular model under which I derived the expected magnitude of Tau-U. If the data followed some other model, such as a log-linear model with Poisson-distributed outcomes, then the behavior described above might change. Still, I think all of this raises the reasonable question: under what model (i.e., what sort of patterns of baseline trend, what sort of patterns of response to the intervention) would Tau-U provide a meaningful, effect size measure that clearly quantifies the magnitude of treatment effects and is not strongly affected by phase lengths?
-Unless and until such a model can be identified, I would be wary of interpreting Tau-U as a measure of treatment effect magnitude.
+Of course, these results are contingent on the particular model under which I derived the expected magnitude of Tau-U. If the data followed some other model, such as a log-linear model with Poisson-distributed outcomes, then the behavior described above might change. Still, I think all of this raises the reasonable question: under what model (i.e., what sort of patterns of baseline trend, what sort of patterns of response to the intervention) does Tau-U provide a meaningful effect size measure that clearly quantifies the magnitude of treatment effects without being strongly affected by phase lengths? Unless and until such a model can be identified, I would be wary of interpreting Tau-U as a measure of treatment effect magnitude.
