@@ -10,3 +10,7 @@ So, in a similar style to dropout and/or insert. I am interested in dropping or 
 
 
 ### Cumulative error
+
+- What if we were training the net with backprop, but each node was also optimising for ???
+- Optimising for doing less work? Lazy neurons, where they are always trying to do less, but back prop is the task master telling the good ones to keep going??
+- 
