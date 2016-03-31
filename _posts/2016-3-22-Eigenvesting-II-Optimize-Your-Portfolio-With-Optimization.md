@@ -68,7 +68,7 @@ Now, we're going to calculate the inverse of the covariance matrix using a pseud
 {% highlight python linenos %}
     import numpy as np
     
-    covariance_matrix = returns.cov().values
+    covariance_matrix = in_sample.cov().values
     inv_cov_mat = np.linalg.pinv(covariance_matrix) # Use pseudo-inverse incase matrix is singular / ill-conditioned
     
     # Construct minimum variance weights

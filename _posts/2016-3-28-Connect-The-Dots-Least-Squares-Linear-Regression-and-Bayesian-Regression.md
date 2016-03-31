@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Connect The Dots. Least Squares, Linear Regression and Bayesian Regression
+title: Connect The Dots. Least Squares, Linear Regression, and Bayesian Regression
 tags:
 - Mathematics
 summary: Sometimes it helps to draw a line or two.
@@ -75,6 +75,8 @@ To think of why this works, remember that the setting is we have a collection of
     %matplotlib inline
     import matplotlib.pyplot as plt
     
+    np.random.seed(182) #Blink
+
     b = 2
     a = 1
     sig = .8
@@ -110,7 +112,7 @@ To think of why this works, remember that the setting is we have a collection of
     Estimated Data Model : Normal(2.215662x + 0.982888, 0.836160^2)
 {% endhighlight %}
 
-![png](../images/connectthedots/output_3_2.png)
+![png](../images/connectthedots/output_3_3.png)
 
 
 Notice, the residuals $$x_i \cdot \beta - y_i$$ are approximately normally distributed, which confirms the choice of the data model $$y_i \sim N(\mu(x),\sigma)$$.
@@ -177,9 +179,21 @@ In this example, we're going to use PyMC3 for a 1-d example of a Bayesian linear
 ![png](../images/connectthedots/output_7_1.png)
 
 
-Above are the probability distributions for $$a$$, $$b$$ and $$\sigma$$. Let's explore how they fit the data.
+Above are the probability distributions for $$a$$, $$b$$ and $$\sigma$$. Let's explore how they fit the data. The first thing we need to do is find the maximum a posteriori (MAP). This is the mode of the (joint) posterior distribution (approximately the parameters that give you the highest point for each variable in the images above). This will be used when we plot the data.
+
 
 {% highlight python linenos %}
+    # Find the MAP
+    with model:
+        map_ = pm.find_MAP()
+
+    def reverse_transform(x,a,b):
+        # Reverses pymc3's interval transform
+        return (b - a) * np.exp(x) / (1 + np.exp(x)) + a
+
+    map_a = reverse_transform(map_['a_interval'],-10,10) # Use the same range as on the original Uniform dist
+    map_b = reverse_transform(map_['b_interval'],-10,10)
+
     # Plot Linear Regression results
     plt.figure(figsize=(10,4))
     plt.subplot(121)
@@ -209,16 +223,16 @@ Above are the probability distributions for $$a$$, $$b$$ and $$\sigma$$. Let's e
         plt.plot(x,trace['a'][-k]+trace['b'][-k]*x, color='y', alpha=.05)
         
     # Plot a mean line
-    plt.plot(x,trace['a'][-100].mean() + trace['b'][-100:].mean()*x, color='r')
+    plt.plot(x,map_a + map_b*x, color='r')
     plt.xlim(-.02, 1.02)
     plt.ylim(-1, 5)
 
 {% endhighlight %}
 
-![png](../images/connectthedots/output_9_1.png)
+![png](../images/connectthedots/output_10_2.png)
 
 
-Here's how you would interpret what you see. The red line is the mean line given by the mean of each the coefficient, i.e. $$\overline{b} x + \overline{a}$$. The yellow lines are plots of individual realizations of $$a$$ and $$b$$ superimposed on each other, and the green lines are superimposed realizations of $$bx+a\pm \sigma$$. The green region gives you a 65% confidence region for the location of new values of $$y$$ where the yellow region gives you the distribution for the mean (the red line).
+Here's how you would interpret what you see. The red line is the MAP line. The yellow lines are plots of individual realizations of $$a$$ and $$b$$ superimposed on each other, and the green lines are superimposed realizations of $$bx+a\pm \sigma$$. The green region gives you a 65% confidence region for the location of new values of $$y$$ where the yellow region gives you the distribution for the mean (the red line).
 
 Without performing regression multiple times and doing additional statistical tests, you won't have a confidence interval for the red line, you'll only have an (incorrect) predictive interval using the red line and the green line (since it will not take into account changes in the coefficients which results in the yellow region).
 
@@ -237,7 +251,7 @@ The maximum likelihood estimator of $$\mu$$ is $$\mu_{MLE}$$ such that
 \mu_{MLE} = \text{argmax}_{\mu} f(x | \mu).
 \end{equation}
 
-From a Bayesian perspective, assume some prior $$p_0$$ for $$\mu$$. The maximum a-posteriori (MAP) estimator from a Bayesian perspective is defined via:
+From a Bayesian perspective, assume some prior $$p_0$$ for $$\mu$$. In our case, the MAP estimator is defined via:
 \begin{equation}
 \mu_{MAP} = \text{argmax}_{\mu} f(x | \mu) p_0(\mu).
 \end{equation}
