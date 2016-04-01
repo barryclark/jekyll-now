@@ -368,6 +368,14 @@ ul, ol {
 }
 {% endhighlight %}
 
+> **Observação Pessoal:** Como mencionado em um comentário no **[Tableless](http://tableless.com.br)**, o **LESS** tem suporte a herança e pode ser feita com a seguinte sintaxe:
+
+{% highlight scss %}
+p {
+	 &:extend(.block);
+}
+{% endhighlight %}
+
 ### CSS Compilado (LESS)
 
 {% highlight scss %}
