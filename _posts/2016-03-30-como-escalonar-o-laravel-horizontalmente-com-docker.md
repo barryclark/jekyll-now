@@ -139,7 +139,7 @@ No momento não conseguimos ver qual o `container` web está respondendo as noss
 {% highlight html %}
 <div class="content">
  <div class="title">Laravel 5</div>
- <h3>{{ gethostname() }}</h3> <!-- cole essa linha -->
+ <h3>{% raw %}{{ gethostname() }}{% endraw %}</h3> <!-- cole essa linha -->
 </div>
 {% endhighlight %}
 
