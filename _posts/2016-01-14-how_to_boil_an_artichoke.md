@@ -5,4 +5,4 @@ tags: [fitness, youtube]
 keywords: [artichoke, cooking]
 ---
 
-{{ include youtube.html param="X4jBvv1ROYs" }}
+{% include youtube.html param="X4jBvv1ROYs" %}
