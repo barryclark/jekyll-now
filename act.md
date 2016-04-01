@@ -3,7 +3,6 @@ layout: page
 title: 基于jsp和mysql的注册和登录
 permalink: /jsp/
 ---
-<bgsound　src="xxinshu.github.io/images/dope.mp3"　loop="-1">
 
 ### 一、首先要建一个如图所示数据库，方便起见我们用自动生成id的方式来避免重名检查这种反人类的东西
 
