@@ -60,10 +60,10 @@ The NET edition of Manjaro provides a base installation without a pre-installed 
 
 #### Pre-Release
 
-  - [manjaro-net 16.06-pre1 (64 bit)](http://sourceforge.net/projects/manjarolinux/files/release/16.06-pre1/netinstall/manjaro-net-16.06-pre1-x86_64.iso)
-   `SHA1SUM: abbd3abf8b80e3704b1b2a16185047bd98a8cce9`
-  - [manjaro-net 16.06-pre1 (32 bit)](http://sourceforge.net/projects/manjarolinux/files/release/16.06-pre1/netinstall/manjaro-net-16.06-pre1-i686.iso)
-   `SHA1SUM: 371c3beea3b03990e2d946ada6c90b2e1e11f757`
+  - [manjaro-net 16.06-pre2 (64 bit)](http://sourceforge.net/projects/manjarolinux/files/release/16.06-pre2/netinstall/manjaro-net-16.06-pre2-x86_64.iso)
+   `SHA1SUM: 22d30a61c4013394afcf541faeb914c7bf0afc59`
+  - [manjaro-net 16.06-pre2 (32 bit)](http://sourceforge.net/projects/manjarolinux/files/release/16.06-pre2/netinstall/manjaro-net-16.06-pre2-i686.iso)
+   `SHA1SUM: 86d5a277ff86c462b5e810d86872cf00665eceac`
 
 ### Other flavours
 
