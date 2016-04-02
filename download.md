@@ -30,10 +30,10 @@ Both 32 and 64 bit versions of Manjaro are available in the following flavours (
 
 #### Pre-Release
 
-  - [manjaro-xfce 16.06-pre1 (64 bit)](http://sourceforge.net/projects/manjarolinux/files/release/16.06-pre1/xfce/manjaro-xfce-16.06-pre1-x86_64.iso)
-   `SHA1SUM: d7133c9072ec89cd75aa0ba068ff31fc8d86a00b`
-  - [manjaro-xfce 16.06-pre1 (32 bit)](http://sourceforge.net/projects/manjarolinux/files/release/16.06-pre1/xfce/manjaro-xfce-16.06-pre1-i686.iso)
-   `SHA1SUM: f4e3a09b55d264a6c62b3752744468d8457d7cd5`
+  - [manjaro-xfce 16.06-pre2 (64 bit)](http://sourceforge.net/projects/manjarolinux/files/release/16.06-pre2/xfce/manjaro-xfce-16.06-pre2-x86_64.iso)
+   `SHA1SUM: 70b01b51ecb10584647fe1faa832cdd84cd41de6`
+  - [manjaro-xfce 16.06-pre2 (32 bit)](http://sourceforge.net/projects/manjarolinux/files/release/16.06-pre2/xfce/manjaro-xfce-16.06-pre2-i686.iso)
+   `SHA1SUM: c9cdab7c9af115562d06a237c5fa4f9913282760`
 
 ## KDE
 
@@ -44,10 +44,10 @@ Both 32 and 64 bit versions of Manjaro are available in the following flavours (
 
 #### Pre-Release
 
-  - [manjaro-kde 16.06-pre1 (64 bit)](http://sourceforge.net/projects/manjarolinux/files/release/16.06-pre1/kde/manjaro-kde-16.06-pre1-x86_64.iso)
-   `SHA1SUM: a15c23d2a3f27369f1d31dbe573a9e4c5c33d921`
-  - [manjaro-kde 16.06-pre1 (32 bit)](http://sourceforge.net/projects/manjarolinux/files/release/16.06-pre1/kde/manjaro-kde-16.06-pre1-i686.iso)
-   `SHA1SUM: e667a18d828206cb53e2bade7a8dc4fdc51ba2b2`
+  - [manjaro-kde 16.06-pre2 (64 bit)](http://sourceforge.net/projects/manjarolinux/files/release/16.06-pre2/kde/manjaro-kde-16.06-pre2-x86_64.iso)
+   `SHA1SUM: 07b6a0431608f4db070540e09e065f37793484ec`
+  - [manjaro-kde 16.06-pre2 (32 bit)](http://sourceforge.net/projects/manjarolinux/files/release/16.06-pre2/kde/manjaro-kde-16.06-pre2-i686.iso)
+   `SHA1SUM: 5fc4ecd72c968598c959357312db459995b3c9f8`
 
 ## Net-Edition
 
