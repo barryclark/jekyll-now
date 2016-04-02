@@ -18,9 +18,12 @@ html {
 }
 
 body {
-	background: $white;
+	background-image:url('https://github.com/xxinshu/xxinshu.github.io/blob/master/%5B%22images%22%5D/195353ulqhqes0ulz3uehh.jpg?raw=true');
+	background-position:fixed; 
+	background-repeat:repeat-y;
+	
   font: 18px/1.4 $helvetica;
-  color: $darkGray;
+  color: $white;
 }
 
 .container {
@@ -32,7 +35,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
-  color: $darkerGray;
+  color: $white;
   font-weight: bold;
 
   line-height: 1.7;
@@ -61,7 +64,7 @@ h3 {
 
 h4 {
   font-size: 18px;
-  color: $gray;
+  color: $white;
 }
 
 p {
@@ -117,17 +120,17 @@ img {
 
 .date {
   font-style: italic;
-  color: $gray;
+  color: $white;
 }
 
 // Specify the color of the selection
 ::-moz-selection {
-  color: $black;
-  background: $lightGray;
+  color: $white;
+  background: $white;
 }
 ::selection {
-  color: $black;
-  background: $lightGray;
+  color: $white;
+  background: $white;
 }
 
 // Nicolas Gallagher's micro clearfix hack
@@ -192,7 +195,7 @@ img {
 
 .site-name {
   margin: 0;
-  color: $darkGray;
+  color: $white;
   cursor: pointer;
   font-family: $helveticaNeue;
   font-weight: 300;
@@ -202,7 +205,7 @@ img {
 
 .site-description {
   margin: -5px 0 0 0;
-  color: $gray;
+  color: $white;
   font-size: 16px;
 
   @include mobile {
@@ -243,7 +246,7 @@ nav {
 
 .posts > .post {
   padding-bottom: 2em;
-  border-bottom: 1px solid $lightGray;
+  border-bottom: 1px solid $white;
 }
 
 .posts > .post:last-child {
@@ -282,6 +285,7 @@ footer {
   padding: 20px 0;
   text-align: center;
 }
+
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start

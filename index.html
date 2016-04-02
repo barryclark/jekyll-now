@@ -2,17 +2,296 @@
 layout: default
 ---
 
+<link href="http://xxinshu.github.io/example/stylesheets/jplayer.pink.flag.min.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://xxinshu.github.io/example/jquery.min.js"></script>
+<script type="text/javascript" src="http://xxinshu.github.io/example/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="http://xxinshu.github.io/example/jplayer.playlist.min.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+$(document).ready(function(){
+
+	new jPlayerPlaylist({
+		jPlayer: "#jquery_jplayer_1",
+		cssSelectorAncestor: "#jp_container_1"
+	}, [
+		{
+			title:"honey——黄致列",
+			mp3:"http://xxinshu.github.io/images/2.mp3"
+		},
+		{
+			title:"像中枪一样——白智英",
+			mp3:"http://sc1.111ttt.com/2014/1/07/27/272052434.mp3"
+		},
+		{
+			title:"焚情——张信哲",
+			mp3:"http://qzone.haoduoge.com/music2/2015-01-01/1420063702.mp3"
+		},
+		{
+			title:"东流——绯村河北",
+			mp3:"http://sc1.111ttt.com/2015/1/06/27/99271557583.mp3"
+		},
+		{
+			title:"信仰——张信哲",
+			mp3:"http://sc.111ttt.com/up/mp3/177200/B8342482C981DB254DD5BEE09E3E1A2B.mp3"
+		},
+		{
+			title:"丑八怪",
+			mp3:"http://sc.111ttt.com/up/mp3/224208/6B3FD2D9EF91D124DA2F9AC3434B78F9.mp3"
+		},
+		{
+		        title:"从开始到现在——张信哲",
+		        mp3:"http://sc.111ttt.com/up/mp3/6179/88CB2E9292507DAE2E26A80485896D50.mp3"
+		},
+		{
+		        title:"画沙",
+		        mp3:"http://sc.111ttt.com/up/mp3/62359/EC8414B663CCA01DF894F809DD31EE86.mp3"
+		}
+	], {
+		swfPath: "../../dist/jplayer",
+		supplied: "oga, mp3",
+		wmode: "window",
+		useStateClassSkin: true,
+		autoBlur: false,
+		smoothPlayBar: true,
+		keyEnabled: true
+	});
+});
+//]]>
+</script>
+
+<script type="text/javascript" language="javascript">
+(function() {
+function k(a, b, c) {
+if (a.addEventListener) a.addEventListener(b, c, false);
+else a.attachEvent && a.attachEvent("on" + b, c)
+}
+function g(a) {
+if (typeof window.onload != "function") window.onload = a;
+else {
+var b = window.onload;
+window.onload = function() {
+b();
+a()
+}
+}
+}
+function h() {
+var a = {};
+for (type in {
+Top: "",
+Left: ""
+}) {
+var b = type == "Top" ? "Y": "X";
+if (typeof window["page" + b + "Offset"] != "undefined")
+a[type.toLowerCase()] = window["page" + b + "Offset"];
+else {
+b = document.documentElement.clientHeight ? document.documentElement: document.body;
+a[type.toLowerCase()] = b["scroll" + type]
+}
+}
+return a
+}
+function l() {
+var a = document.body,
+b;
+if (window.innerHeight) b = window.innerHeight;
+else if (a.parentElement.clientHeight) b = a.parentElement.clientHeight;
+else if (a && a.clientHeight) b = a.clientHeight;
+return b
+}
+function i(a) {
+this.parent = document.body;
+this.createEl(this.parent, a);
+this.size = Math.random() * 5 + 15;
+this.el.style.width = Math.round(this.size) + "px";
+this.el.style.height = Math.round(this.size) + "px";
+this.maxLeft = document.body.offsetWidth - this.size;
+this.maxTop = document.body.offsetHeight - this.size;
+this.left = Math.random() * this.maxLeft;
+this.top = h().top + 1;
+this.angle = 1.4 + 0.2 * Math.random();
+this.minAngle = 1.4;
+this.maxAngle = 1.6;
+this.angleDelta = 0.01 * Math.random();
+this.speed = 2 + Math.random()
+}
+var j = false;
+g(function() {
+j = true
+});
+var f = true;
+window.createSnow = function(a, b) {
+if (j) {
+var c = [],
+m = setInterval(function() {
+f && b > c.length && Math.random()
+< b * 0.0025 && c.push(new i(a)); ! f && !c.length && clearInterval(m);
+for (var e = h().top, n = l(), d = c.length - 1; d >= 0; d--)
+if (c[d]) if (c[d].top < e || c[d].top + c[d].size + 1 > e + n) {
+c[d].remove();
+c[d] = null;
+c.splice(d, 1)
+} else {
+c[d].move();
+c[d].draw()
+}
+},
+40);
+k(window, "scroll",
+function() {
+for (var e = c.length - 1; e >= 0; e--) c[e].draw()
+})
+} else g(function() {
+createSnow(a, b)
+})
+};
+window.removeSnow = function() {
+f = false
+};
+i.prototype = {
+createEl: function(a, b) {
+this.el = document.createElement("img");
+this.el.setAttribute
+("src", b + "https://github.com/xxinshu/xxinshu.github.io/blob/master/images/xuehua.png?raw=true");
+this.el.style.position = "absolute";
+this.el.style.display = "block";
+this.el.style.zIndex = "99999";
+this.parent.appendChild(this.el)
+},
+move: function() {
+if (this.angle < this.minAngle || this.angle > this.maxAngle)
+this.angleDelta = -this.angleDelta;
+this.angle += this.angleDelta;
+this.left += this.speed * Math.cos(this.angle * Math.PI);
+this.top -= this.speed * Math.sin(this.angle * Math.PI);
+if (this.left < 0) this.left = this.maxLeft;
+else if (this.left > this.maxLeft) this.left = 0
+},
+draw: function() {
+this.el.style.top = Math.round(this.top) + "px";
+this.el.style.left = Math.round(this.left) + "px"
+},
+remove: function() {
+this.parent.removeChild(this.el);
+this.parent = this.el = null
+}
+}
+})();
+createSnow("", 40);
+</script>
+
+
+<link rel="shortcut icon" href="http://xxinshu.com/favicon.ico" />
+<div id="jquery_jplayer_1" class="jp-jplayer"></div>
+<div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
+	<div class="jp-type-playlist">
+		<div class="jp-gui jp-interface">
+			<div class="jp-volume-controls">
+				<button class="jp-mute" role="button" tabindex="0">mute</button>
+				<button class="jp-volume-max" role="button" tabindex="0">max volume</button>
+				<div class="jp-volume-bar">
+					<div class="jp-volume-bar-value"></div>
+				</div>
+			</div>
+			<div class="jp-controls-holder">
+				<div class="jp-controls">
+					<button class="jp-previous" role="button" tabindex="0">previous</button>
+					<button class="jp-play" role="button" tabindex="0">play</button>
+					<button class="jp-stop" role="button" tabindex="0">stop</button>
+					<button class="jp-next" role="button" tabindex="0">next</button>
+				</div>
+				<div class="jp-progress">
+					<div class="jp-seek-bar">
+						<div class="jp-play-bar"></div>
+					</div>
+				</div>
+				<div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
+				<div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
+				<div class="jp-toggles">
+					<button class="jp-repeat" role="button" tabindex="0">repeat</button>
+					<button class="jp-shuffle" role="button" tabindex="0">shuffle</button>
+				</div>
+			</div>
+		</div>
+		<div class="jp-playlist">
+			<ul>
+				<li>&nbsp;</li>
+			</ul>
+		</div>
+		<div class="jp-no-solution">
+			<span>Update Required</span>
+			To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+		</div>
+	</div>
+</div>
+
 <div class="posts">
   {% for post in site.posts %}
     <article class="post">
+      
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+      <h2>相思相见知何日？此时此夜难为情</h2>
+     
+      <h2>有美人兮，见之不忘，一日不见兮，思之如狂</h2>
+      
+      <h2>入我相思门，知我相思苦，长相思兮长相忆，短相思兮无穷极</h2>
+      
+      <h2>凄凉别后两应同，最是不胜情怨月明中</h2>
+      
+      <h2>相见争如不见，有情何似无情</h2>
+      
+      <h2>天不老，情难绝。心似双丝网，中有千千结</h2>
+      
+      <h2>直道相思了无益，未妨惆怅是清狂</h2>
+      
+      <h2>深知身在情长在，怅望江头江水声</h2>
+      
+      <h2>相思一夜情多少，地角天涯未是长</h2>
+      
+      <h2>平生不会相思，才会相思，便害相思</h2>
+      
+      <h2>今夕何夕，见此良人</h2>
+      
+      <h2>重叠泪痕缄锦字，人生只有情难死</h2>
+      
+      <h2>人生自是有情痴，此恨不关风与月</h2>
+      
+      <h2>此去经年，应是良城美景虚设。便纵有，千种风情，更与何人说</h2>
+      
+      <h2>玲珑骰子安红豆，入骨相思知不知？</h2>
+      
+      <h2>忍把千金酬一笑？毕竟相思，不似相逢好</h2>
+      
+      <h2>天涯地角有穷时，只有相思无尽处</h2>
+      
+      <h2>无情不似多情苦，一寸还成千万缕</h2>
+      
 
       <div class="entry">
         {{ post.excerpt }}
       </div>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Data</a>
     </article>
   {% endfor %}
 </div>
+
+<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="xiaoxinshu" data-title="No time to explain，get in the car" data-url="http://xxinshu.com/xiaoxinshu/"></div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"xxinshu"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.unstable.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- 多说公共JS代码 end -->
+
+
