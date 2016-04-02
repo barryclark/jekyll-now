@@ -5,7 +5,7 @@ title: The N-D conv net
 
 Following on from my previous post on convolving over rotations (in the z axis), I want to expand on the idea of adding other dimensions to convolve.
 
-# Feature invatriance in new dimensions
+# Feature invariance in new dimensions
 
 The motivation for this is; if we can make our features invariant to more irrelevant variables then we can learn faster, or from less data (as there are less parameters). 
 
@@ -15,7 +15,7 @@ A face is still a face, regardless of its size, position, rotation, position, co
 
 It is common practice to convolve over the two spatial dimensions of an image. The motivation being that the location of a feature in an image (e.g. face) does not effect whether or not it is that feature. 
 
-A car is still a car if it is shyly in the bottom corner of the image and if it is produly in the middle.
+A car is still a car if it is shyly in the bottom corner of the image and if it is proudly in the middle.
 
 ### Rotation (z)
 
@@ -40,15 +40,24 @@ Take kernel, K, of size 3x3 and map it onto a 6x6 weight space. Use the values o
 
 ### Occlusion
 
-Partial features? Would it be effective to block a part of the inputs to some kernels? In a way this is like dropout? Where we are droping some weights between every convolution. But really we would be doing it in a more systematic way, and pooling the results based on the origional permutation.
+Partial features? Would it be effective to block a part of the inputs to some kernels? In a way this is like dropout? Where we are dropping some weights between every convolution. But really we would be doing it in a more systematic way, and pooling the results based on the original permutation.
 
 So a set of permutation operations could be occluding half, a quarter, a diagonal, ???
+
+### Depth (Colour invariance)
+
+What would be a reason to keep the colours separated or to integrate them?
+
+* Do we want to detect colour specific features? Yes.
+* Does merging them effect the nets ability to do this? Kind of, the network could still learn features, but it may take longer?
+
+Keeping them seperate for the first layer will mean that we would have edge, hot spot, gradient, ... detectors specific to each colour. The net would not have to learn these.
 
 *****
 
 Other dimensions to consider;
 
-* Depth (z), in the first layer this would be colour
+* Depth (z), in the first layer this would be colour but after it becomes a little unclear.
 * Rotations in x and y
 
 
