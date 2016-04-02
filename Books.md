@@ -24,7 +24,7 @@ Available as an eBook on these stores.
 
 <p align="center">
 	<a href="http://www.amazon.com/gp/product/B01BB2U0PA" target="_blank"><img src="http://spritekitbook.github.io/images/amazonbadge.png"></a>
-	<a href="http://https://itunes.apple.com/book/epic-spritekit-tutorial-swift/id1080204614" target="_blank"><img src="http://spritekitbook.github.io/images/itunesbadge.png"></a>
+	<a href="https://itunes.apple.com/book/id1080204614" target="_blank"><img src="http://spritekitbook.github.io/images/itunesbadge.png"></a>
 </p>
 
 
