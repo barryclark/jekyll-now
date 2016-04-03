@@ -57,8 +57,6 @@ baseurl: "/blog"
 #
 
 <<<<<<< HEAD
-markdown: kramdown
-highlighter: rouge
 =======
 >>>>>>> upstream/master
 permalink: /:title/
