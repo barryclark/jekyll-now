@@ -1,0 +1,108 @@
+.sidebar {
+  background-color:           $color-dark;
+  color:                      $color-light;
+  transition:                 width 0.25s ease;
+
+  @include bp-small {
+    bottom:                   0;
+    left:                     0;
+    position:                 fixed;
+    text-align:               center;
+    top:                      0;
+    width:                    15rem;
+  }
+
+  @include bp-normal {
+    width:                    20rem;
+  }
+
+  @include bp-large {
+    width:                    30rem;
+  }
+}
+
+.sidebar-container {
+  align-items:                center;
+  display:                    flex;
+  justify-content:            space-between;
+  flex-wrap:                  wrap;
+
+  @include bp-small {
+    margin:                   0 auto;
+    min-height:               100vh;
+  }
+}
+
+.sidebar-container nav {
+  align-items:                center;
+  display:                    flex;
+  flex-direction:             column;
+  justify-content:            center;
+}
+
+nav a {
+  color:                      $color-light;
+  text-decoration:            none;
+}
+
+nav a.active {
+  color:                      #666;
+}
+
+nav ul {
+  font-size:                  $font-size-script;
+  font-weight:                700;
+  padding-left:               0;
+  text-transform:             uppercase;
+
+  @include bp-small {
+    margin-top:               0;
+  }
+}
+
+nav ul li {
+  display:                    inline-block;
+  list-style:                 none;
+  padding:                    0.8rem 0.6rem;
+
+  @include bp-small {
+    display:                  block;
+  }
+}
+
+.sidebar-item {
+  align-items:                center;
+  display:                    flex;
+  margin:                     0 auto;
+
+  @include bp-small {
+    display:                  block;
+    width:                    100%;
+  }
+}
+
+.sidebar-title {
+  display:                    inline-block;
+  font-family:                $font-family-serif;
+  font-size:                  $font-size-large;
+  font-weight:                500;
+  margin-top:                 1rem;
+
+  @include bp-small {
+    font-size:                $font-size-larger;
+    padding:                  0;
+  }
+
+  @include bp-normal {
+    font-size:                5rem;
+  }
+
+  @include bp-large {
+    font-size:                $font-size-huge;
+  }
+}
+
+.sidebar-title p {
+  margin-bottom:              1.5rem;
+  margin-top:                 0.5rem;
+}

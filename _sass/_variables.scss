@@ -1,27 +1,27 @@
+/*******************************************************************************
+ Colors
+*******************************************************************************/
+$color-dark:                  #333;
+$color-light:                 #f6f6f6;
 
-//
-// VARIABLES
-//
+/*******************************************************************************
+ Fonts
+*******************************************************************************/
+$font-size-huge:              6rem;
+$font-size-larger:            4rem;
+$font-size-large:             3rem;
+$font-size-normal:            2rem;
+$font-size-small:             1.8rem;
+$font-size-footnote:          1.6rem;
+$font-size-script:            1.4rem;
+$font-size-tiny:              1.2rem;
+$font-family-sans:            Roboto, Helvetica, Arial, sans-serif;
+$font-family-serif:           "Palatino Linotype", Palatino, Garamond, Georgia, serif;
+$font-family-mono:            Consolas, Menlo, Monaco, monospace;
 
-// Colors
-$blue: #4183C4;
-
-// Grays
-$black: #000;
-$darkerGray: #222;
-$darkGray: #333;
-$gray: #666;
-$lightGray: #eee;
-$white: #fff;
-
-// Font stacks
-$helvetica: Helvetica, Arial, sans-serif;
-$helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$georgia: Georgia, serif;
-
-// Mobile breakpoints
-@mixin mobile {
-  @media screen and (max-width: 640px) {
-    @content;
-  }
-}
+/*******************************************************************************
+ Breakpoints
+*******************************************************************************/
+$breakpoint-small:            50rem;
+$breakpoint-normal:           60rem;
+$breakpoint-large:            80rem;

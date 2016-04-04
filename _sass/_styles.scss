@@ -1,0 +1,235 @@
+html, body {
+  font-size:                  62.5%;
+  height:                     100%;
+}
+
+body {
+  background-color:           $color-light;
+  color:                      $color-dark;
+  font-family:                $font-family-sans;
+  font-size:                  $font-size-script;
+  font-weight:                300;
+
+  @include bp-small {
+    font-size:                $font-size-normal;
+  }
+}
+
+h1, h2, h3 {
+  font-weight:                500;
+  letter-spacing:             -0.05rem;
+}
+
+h1 {
+  border-bottom:              0.1rem solid $color-dark;
+  font-size:                  $font-size-large;
+}
+
+h2 {
+  font-size:                  2.4rem;
+}
+
+h3 {
+  font-size:                  2.2rem;
+}
+
+time {
+  font-size:                  90%;
+  font-style:                 italic;
+}
+
+small {
+  font-size:                  90%;
+}
+
+a {
+  color:                      #2980b9;
+}
+
+blockquote {
+  border-left:                0.25rem solid lighten($color-dark, 20%);
+  color:                      lighten($color-dark, 20%);
+  margin:                     1rem 0;
+  padding:                    0 3rem 0 3rem;
+}
+
+blockquote p:last-child {
+  margin-bottom:              0;
+}
+
+code, pre, kbd {
+  font-family:                $font-family-mono;
+  font-size:                  90%;
+}
+
+code {
+  background-color:           darken($color-light, 8%);
+  color:                      #2980b9;
+  padding:                    0.2rem 0.5rem;
+}
+
+pre {
+  padding:                    2rem;
+}
+
+pre code {
+  padding:                    0;
+}
+
+dt {
+  font-weight:                700;
+}
+
+dd {
+  margin-bottom:              1rem;
+  margin-left:                2rem;
+}
+
+img {
+  border-radius:              0.2rem;
+  display:                    block;
+  margin:                     0 0 1rem;
+}
+
+table {
+  border-collapse:            collapse;
+  border:                     0.1rem solid darken($color-light, 10%);
+  margin-bottom:              1rem;
+  width:                      100%;
+}
+
+td, th {
+  border:                     0.1rem solid darken($color-light, 10%);
+  padding:                    .25rem .5rem;
+}
+
+th, tfoot {
+  background-color:           darken($color-light, 10%);
+}
+
+tbody tr:nth-child(even) td {
+  background-color:           darken($color-light, 5%);
+}
+
+.container {
+  line-height:                1.5;
+  min-height:                 calc(100vh - 16rem);
+  overflow:                   hidden;
+  padding:                    0rem 0 0rem 0;
+  position:                   relative;
+
+  @include bp-small {
+    margin-left:              15rem;
+    min-height:               100vh;
+  }
+
+  @include bp-normal {
+    margin-left:              20rem;
+  }
+
+  @include bp-large {
+    margin-left:              30rem;
+  }
+}
+
+.content {
+  margin:                     0 auto;
+  min-height:                 100%;
+  margin-top:                 3rem;
+  padding:                    0 1.5rem;
+
+  @include bp-small {
+    font-size:                $font-size-footnote;
+    margin-top:               8rem;
+    max-width:                58rem;
+    padding:                  0 3rem;
+  }
+
+  @include bp-normal {
+    font-size:                $font-size-small;
+    max-width:                62rem;
+    padding:                  0 5rem;
+  }
+
+  @include bp-large {
+    max-width:                72rem;
+  }
+}
+
+.content:after {
+  content:                    "";
+  display:                    block;
+  height:                     15rem;
+}
+
+.content-post img {
+  max-width:                  100%;
+}
+
+footer {
+  bottom:                     0;
+  height:                     15rem;
+  position:                   absolute;
+  text-align:                 center;
+  width:                      100%;
+}
+
+.contact {
+  align-items:                center;
+  display:                    flex;
+  margin:                     0 auto;
+  max-width:                  24rem;
+}
+
+.site-info {
+  font-size:                  $font-size-footnote;
+}
+
+.summary-title {
+  text-decoration:            none;
+}
+
+.summary-title h2 {
+  border-bottom:              0.1rem solid $color-dark;
+  color:                      $color-dark;
+  margin-top:                 0;
+  text-decoration:            none;
+}
+
+.item {
+  margin-top:                 0.5rem;
+}
+
+.item::after {
+  @include bp-small {
+    clear:                    both;
+    content:                  "";
+    display:                  table;
+  }
+}
+
+.left {
+  @include bp-small {
+    float:                    left;
+  }
+}
+
+.right {
+  @include bp-small {
+    float:                    right;
+    text-align:               right;
+  }
+}
+
+.date {
+  font-size:                  90%;
+}
+
+.not-found {
+  text-align:                 center;
+}
+
+.not-found strong {
+  color:                      #444;
+  font-size:                  $font-size-huge;
+}

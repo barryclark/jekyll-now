@@ -1,0 +1,11 @@
+---
+layout: default
+permalink: /posts/
+title: Recent Posts
+---
+
+<div class="post-grid">
+{% for post in site.posts %}
+{% include post-preview.html %}
+{% endfor %}
+</div>

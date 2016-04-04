@@ -1,0 +1,22 @@
+/*******************************************************************************
+Relative units in media queries are based on the initial value, which means
+that units are never based on results of declarations. For example, in HTML,
+the ‘em’ unit is relative to the initial value of ‘font-size’. (16px)
+*******************************************************************************/
+@mixin bp-small {
+  @media (min-width: #{$breakpoint-small}) {
+    @content;
+  }
+}
+
+@mixin bp-normal {
+  @media (min-width: #{$breakpoint-normal}) {
+    @content;
+  }
+}
+
+@mixin bp-large {
+  @media (min-width: #{$breakpoint-large}) {
+    @content;
+  }
+}

@@ -1,0 +1,20 @@
+.pagination {
+  display:                    flex;
+  margin:                     5rem 0;
+}
+
+.pagination > * {
+  width:                      33%;
+}
+
+.paginate-left {
+  text-align:                 left;
+}
+
+.paginate-center {
+  text-align:                 center;
+}
+
+.paginate-right {
+  text-align:                 right;
+}

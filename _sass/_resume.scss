@@ -1,0 +1,82 @@
+.resume {
+  font-size:                  $font-size-footnote;
+  margin-bottom:              5rem;
+
+  @include bp-large {
+    font-size:                $font-size-small;
+  }
+}
+
+.resume header {
+  text-align:                 center;
+}
+
+.resume header a {
+  color:                      $color-dark;
+  text-decoration:            none;
+}
+
+.resume h1 {
+  border:                     none;
+  font-family:                $font-family-serif;
+  font-size:                  $font-size-larger;
+  font-weight:                700;
+  margin-bottom:              0;
+  margin-top:                 0;
+}
+
+.resume h2 {
+  border-bottom:              0.1rem solid $color-dark;
+  font-size:                  2.4rem;
+}
+
+.resume h2.title {
+  border:                     none;
+  color:                      #555;
+  font-family:                $font-family-serif;
+  font-size:                  2.5rem;
+  font-weight:                500;
+  letter-spacing:             0;
+  margin-top:                 0;
+}
+
+.resume .left-header {
+  text-align:                 left;
+}
+
+.resume .right-header {
+  text-align:                 left;
+
+  @include bp-small {
+    text-align:               right;
+  }
+}
+
+.resume .summary p {
+  text-align:                 justify;
+}
+
+.resume-contact {
+  font-size:                  $font-size-footnote;
+}
+
+.resume .contact-label {
+  display:                    inline-block;
+  font-weight:                500;
+
+  @include bp-small {
+    display:                  none;
+  }
+}
+
+.resume .right-detail {
+  font-weight:                300;
+
+  @include bp-small {
+    font-weight:                500;
+  }
+}
+
+.resume .download {
+  margin-top:                 5rem;
+}
