@@ -10,11 +10,11 @@ Manjaro-Lxqt aims to be light, fast and resource friendly, yet at the same time 
 
 **Main programs**
 
-* kernel 4.4.4 LTS, Manjaro settings manager, sddm, octopi, compton, redshift- pcmanfm-qt, gimp, lximage-qt
+* kernel **4.4.4 LTS**, Manjaro settings manager, sddm, octopi, compton, redshift- pcmanfm-qt, gimp, lximage-qt
 * chromium (64bit) or firefox (32bit), hexchat, transmission-qt
-* abiword, qpdfview, gnumeric (64bit)
+* **abiword**, qpdfview, gnumeric (64bit)
 * mpv, **smplayer** (mpv based) with all skins and themes. qastools (32bit), pulseaudio (64bit)
-* gparted, qisousb, lxtask, xsensors
+* **gparted**, qisousb, lxtask, xsensors
 * multilib enabled (64bit)
 * capture tool + key Print Screen configured for taking screenshots (also with Alt or Shift)
 
