@@ -18,7 +18,7 @@ It’s not the first time the Japanese mafia has helped people in a crisis eithe
 To those not familiar with the yakuza, it may come as a shock to hear of their philanthropy, but this is not the first time that they have displayed a humanitarian impulse. In 1995, after the Kobe earthquake, the Yamaguchi-gumi was one of the most responsive forces on the ground, quickly getting supplies to the affected areas and distributing them to the local people.
 </blockquote>
 
-The Japanese mafia aren’t the only criminals to do “good", either. [Al Capone](http://en.wikipedia.org/wiki/Al_capone) operated [soup kitchens](http://en.wikipedia.org/wiki/Soup_kitchen) during the Great Depression - in fact, their invention is often (probably erroneously) contributed to him. According to Wikipedia, he was considered a “modern-day Robin Hood.”
+The Japanese mafia aren’t the only criminals to do "good", either. [Al Capone](http://en.wikipedia.org/wiki/Al_capone) operated [soup kitchens](http://en.wikipedia.org/wiki/Soup_kitchen) during the Great Depression - in fact, their invention is often (probably erroneously) contributed to him. According to Wikipedia, he was considered a “modern-day Robin Hood.”
 
 <figure>
 <img src="/images/acoffee.jpg" alt="Al Capone's Soup Kitchen" title="Al Capone's Soup Kitchen">
