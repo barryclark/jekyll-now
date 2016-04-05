@@ -32,7 +32,7 @@ Note: please make sure to set the jar version to the latest one available, so th
 In order to hook up swagger-core in the application, there are multiple solutions, the easiest of which is to just use a custom `Application` subclass.
 
 
-```java
+``` java
 	public class SwaggerTestApplication extends Application {
 
 		public SwaggerTestApplication() {
@@ -67,7 +67,7 @@ In order for a resource to be documented, other than including it in the list of
 
 A special case, that might give you some head aches, is the use of subresources. The REST resource code usually goes something like this:
 
-```java
+``` java
 	@Api
 	@Path("resource")
 	public class Resource {
@@ -146,7 +146,7 @@ In the Subresource class, you might have a @PathParam for holding the value of t
 
 In order to fix this, use `@ApiParam(hidden=true)` for the subresource `@PathParam` in the `Subsubresource` class. See below.
 
-```java
+``` java
 	@Api
 	public class SubSubResource {
 		
