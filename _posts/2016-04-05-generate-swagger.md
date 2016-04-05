@@ -3,7 +3,7 @@ layout: post
 title: Generating Swagger from your API
 subtitle: How to quickly generate the swagger documentation from your existing API.
 category: howto
-tags: [dev]
+tags: [api]
 author: teodora_onaca
 author_email: teodora.onaca@haufe-lexware.com
 header-img: "images/bg-post.jpg"
