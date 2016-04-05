@@ -15,8 +15,11 @@ This isn't the one I got.
 
 I've never been impressed with Bob Evan's other burgers. But the one I got (the "Farmstand Burger") was really good. I blame it on the 100% black Angus. I'll definitely try the others (the "Smokehouse Burger" and the "Three-Cheese Burger") in the next few weeks.
 
-[McDonalds](http://www.mcdonalds.com) [Burger King](http://www.bk.com) [Wendys](http://www.wendys.com)
-The Big Three
+![McDonald's](/images/burgers/McDonalds.gif)
+![Burger Kings](/images/burgers/BurgerKing.gif)
+![Wendy's](/images/burgers/Wendys.gif)
+[McDonald's](http://www.mcdonalds.com) [Burger King](http://www.bk.com) [Wendy's](http://www.wendys.com)
+<br />The Big Three
 
 I've come not to like the fast food burgers. They always seem too dry. My friend says it's because they're using less fat in their burgers than they did before.
 
