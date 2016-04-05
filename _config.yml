@@ -76,6 +76,12 @@ gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
 
+twitter:
+  consumer_key: UAmiMlqFN9WGTHiTaBdg
+  consumer_secret: xxOLdGAVp6JM6240icRy61Eq5zF8MVAvht1HKlgjo
+  access_token: 21148692-FA8m7yGLFOEdNepDRDEWUrnp0pmfk0WSrVQmCao
+  access_token_secret: 	qizkLUVRkK3oKGzMvkW6Fh4Y7wSJLec5nr3KDgxCJRQ
+
 # Exclude these files from your production _site
 exclude:
   - Gemfile

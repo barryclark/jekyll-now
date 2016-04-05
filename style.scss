@@ -43,14 +43,14 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 740px;
+  max-width: 1000px;
   padding: 0 10px;
   width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $sans;
-  color: $darkerGray;
+  color: $blue;
   font-weight: bold;
 
   line-height: 1.7;
@@ -147,9 +147,6 @@ img {
   color: $black;
   background: $lightGray;
 }
-
-// Nicolas Gallagher's micro clearfix hack
-// http://nicolasgallagher.com/micro-clearfix-hack/
 .clearfix:before,
 .clearfix:after {
     content: " ";
@@ -160,15 +157,7 @@ img {
     clear: both;
 }
 
-/*********************/
-/* LAYOUT / SECTIONS */
-/*********************/
-
-//
-// .masthead
-//
-
-.wrapper-masthead {
+.site-header {
   margin-bottom: 50px;
   background:$navy;
   // box-shadow:0px 5px 40px $pink;
@@ -282,10 +271,6 @@ nav {
   }
 }
 
-//
-// .main
-//
-
 #main {
     padding-bottom:50px;
 }
@@ -298,7 +283,7 @@ nav {
   border-bottom: none;
 }
 
-.post, .page {
+.post, .page, .timeline {
   h1, h2, h3, h4, h5, h6 {
     color:$blue;
     font-family:$sans;
@@ -386,8 +371,5 @@ footer {
     }
   }
 }
-
-// Settled on moving the import of syntax highlighting to the bottom of the CSS
-// ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
 @import "svg-icons";
