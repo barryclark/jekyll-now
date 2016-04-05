@@ -40,8 +40,22 @@ I've never been impressed with Bob Evan's other burgers. But the one I got (the 
 
 I've come not to like the fast food burgers. They always seem too dry. My friend says it's because they're using less fat in their burgers than they did before.
 
-[JTM](http://www.jtmfoodgroup.com/) [Bubba](http://www.bubba-burger.com/)
-Frozen Meatiness
+<figure>
+  <table>
+    <tr><td>
+      <figure>
+        <img src="/images/burgers/jtm.gif" alt="JTM" />
+        <figcaption ><a href="http://www.jtmfoodgroup.com">JTM</a></figcaption>
+      </figure>
+    </td><td>
+      <figure>
+        <img src="/images/burgers/bubba.jpg" alt="Bubba" />
+        <figcaption><a href="http://www.bubba-burger.com">Bubba</a></figcaption>
+      </figure>
+    </td></tr>
+  </table>
+  <figcaption >Frozen Meatiness</figcaption>
+</figure>
 
 I really like the frozen burgers you make at home. It's really easy and really greasy. I just wonder if it's any healthier than fast food burgers.
 
