@@ -17,17 +17,17 @@ I've never been impressed with Bob Evan's other burgers. But the one I got (the 
 
 <figure>
   <table>
-    <tr><td>
+    <tr><td style="width: 33%;">
       <figure>
         <img src="/images/burgers/McDonalds.gif" alt="McDonald's" />
         <figcaption ><a href="http://www.mcdonalds.com">McDonald's</a></figcaption>
       </figure>
-    </td><td>
+    </td><td style="width: 33%;">
       <figure>
         <img src="/images/burgers/BurgerKing.gif" alt="Burger King" />
         <figcaption><a href="http://www.bk.com">Burger King</a></figcaption>
       </figure>
-    </td><td>
+    </td><td style="width: 33%;">
       <figure>
         <img src="/images/burgers/Wendys.gif" alt="Wendy's" />
         <figcaption><a href="http://www.wendys.com">Wendy's</a></figcaption>
@@ -42,12 +42,12 @@ I've come not to like the fast food burgers. They always seem too dry. My friend
 
 <figure>
   <table>
-    <tr><td>
+    <tr><td style="width: 50%;">
       <figure>
         <img src="/images/burgers/jtm.gif" alt="JTM" />
         <figcaption ><a href="http://www.jtmfoodgroup.com">JTM</a></figcaption>
       </figure>
-    </td><td>
+    </td><td style="width: 50%;">
       <figure>
         <img src="/images/burgers/bubba.jpg" alt="Bubba" />
         <figcaption><a href="http://www.bubba-burger.com">Bubba</a></figcaption>
