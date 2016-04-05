@@ -16,16 +16,16 @@ This isn't the one I got.
 I've never been impressed with Bob Evan's other burgers. But the one I got (the "Farmstand Burger") was really good. I blame it on the 100% black Angus. I'll definitely try the others (the "Smokehouse Burger" and the "Three-Cheese Burger") in the next few weeks.
 
 <div style="text-align: center;">
-<span>
+<figure>
 <img src="/images/burgers/McDonalds.gif" alt="McDonald's" style="display: initial;" />
-<br /><a href="http://www.mcdonalds.com">McDonald's</a>
-</span><span>
+<figcaption><a href="http://www.mcdonalds.com">McDonald's</a></figcaption>
+</figure><figure>
 <img src="/images/burgers/BurgerKing.gif" alt="Burger King" style="display: initial;" />
-<br /><a href="http://www.bk.com">Burger King</a>
-</span><span>
+<figcaption><a href="http://www.bk.com">Burger King</a></figcaption>
+</figure><figure>
 <img src="/images/burgers/Wendys.gif" alt="Wendy's" style="display: initial;" />
-<br /><a href="http://www.wendys.com">Wendy's</a>
-</span>
+<figcaption><a href="http://www.wendys.com">Wendy's</a></figcaption>
+</figure><figure>
 <br />The Big Three
 </div>
 
