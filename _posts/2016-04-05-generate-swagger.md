@@ -3,10 +3,10 @@ layout: post
 title: Generating Swagger from your API
 subtitle: How to quickly generate the swagger documentation from your existing API.
 category: howto
-tags: [devops]
+tags: [dev]
 author: teodora_onaca
 author_email: teodora.onaca@haufe-lexware.com
-header-img: "images/bg-post.old.jpg"
+header-img: "images/bg-post.jpg"
 --- 
 
 If you already have an existing API and you just want to generate the swagger documentation from it, there are a couple easy steps to make it work. First off, you should be familiar with Swagger and, in particular, with [swagger-core](https://github.com/swagger-api/swagger-core). Assuming that you coded your REST API using JAX-RS, based on which was your library of choice (Jersey or RESTEasy), there are several [guides](https://github.com/swagger-api/swagger-core/wiki/Swagger-Core-JAX-RS-Project-Setup-1.5.X) available to get you set up very fast.
