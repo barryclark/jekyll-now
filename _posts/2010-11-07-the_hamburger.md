@@ -9,9 +9,18 @@ Ah yes, the humble hamburger, also known as the burger. A special sandwich from 
 
 ...Ok enough fancy talk. As I do every Saturday evening I go to church with my Grandpa. Afterwords we always go to Bob Evans. It just so happens that Bob Evans has recently put a few more hamburgers on the menu, which they call "Farm Fresh Burgers." So I got one.
 
+<figure>
+  <table>
+    <tr><td>
+      <figure>
+        <img src="/images/burgers/bobevans.jpg" alt="Bob Evans Farm Fresh Burgers" />
+        <figcaption ><a href="https://www.bobevans.com/our-restaurants/menu/sandwiches-and-burgers/big-farm-burgers/">Bob Evans Farm Fresh Burgers</a></figcaption>
+      </figure>
+    </td></tr>
+  </table>
+  <figcaption >This isn't the one I got.</figcaption>
+</figure>
 
-[Bob Evans Farm Fresh Burgers](http://bobevans.com/menu/Big_Farm_Burgers.aspx)
-This isn't the one I got.
 
 I've never been impressed with Bob Evan's other burgers. But the one I got (the "Farmstand Burger") was really good. I blame it on the 100% black Angus. I'll definitely try the others (the "Smokehouse Burger" and the "Three-Cheese Burger") in the next few weeks.
 
