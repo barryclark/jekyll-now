@@ -58,3 +58,25 @@ $ export https_proxy=https://10.12.1.236:8083
 The short version of this is: It's complicated, and not actually advisable.
 
 The most promising path to doing this is most probably to set up a Linux VM and do it from there; that involves setting up ruby correctly, which may also be challenging, but it's still a lot simpler (and more supported) than directly on Windows.
+
+But you can try this:
+
+### Setting up jekyll using docker
+
+If you have a working `docker` setup on your machine, you can use the prepackaged docker image by the jekyll team to try out the blog generation using that image.
+
+Pull the `jekyll/jekyll:pages` image to get something which behaves almost exactly (or really close to) the github pages generation engine:
+
+```sh
+$ docker pull jekyll/jekyll:pages
+```
+
+Inside the docker Quickstart terminal, `cd` into your `Haufe-Lexware.github.io` fork containing your changes, and then issue the following command:
+
+```sh
+$ docker run --rm --label=jekyll --volume=$(pwd):/srv/jekyll \
+  -it -p $(docker-machine ip `docker-machine active`):4000:4000 \
+    jekyll/jekyll:pages
+```
+
+If everything works out, the jekyll server will serve the blog preview on `http://<ip of your docker machine>:4000`. More information on running jekyll inside docker can be found here: [github.com/jekyll/docker](https://github.com/jekyll/docker).
