@@ -15,27 +15,25 @@ This isn't the one I got.
 
 I've never been impressed with Bob Evan's other burgers. But the one I got (the "Farmstand Burger") was really good. I blame it on the 100% black Angus. I'll definitely try the others (the "Smokehouse Burger" and the "Three-Cheese Burger") in the next few weeks.
 
-<div style="text-align: center;">
-  <table style="border: none;">
-    <tr><td>
-      <figure>
-        <img src="/images/burgers/McDonalds.gif" alt="McDonald's" />
-        <figcaption ><a href="http://www.mcdonalds.com">McDonald's</a></figcaption>
-      </figure>
-    </td><td>
-      <figure>
-        <img src="/images/burgers/BurgerKing.gif" alt="Burger King" />
-        <figcaption><a href="http://www.bk.com">Burger King</a></figcaption>
-      </figure>
-    </td><td>
-      <figure>
-        <img src="/images/burgers/Wendys.gif" alt="Wendy's" />
-        <figcaption><a href="http://www.wendys.com">Wendy's</a></figcaption>
-      </figure>
-    </td></tr>
-  </table>
-  <br />The Big Three
-</div>
+<table>
+  <tr><td>
+    <figure>
+      <img src="/images/burgers/McDonalds.gif" alt="McDonald's" />
+      <figcaption ><a href="http://www.mcdonalds.com">McDonald's</a></figcaption>
+    </figure>
+  </td><td>
+    <figure>
+      <img src="/images/burgers/BurgerKing.gif" alt="Burger King" />
+      <figcaption><a href="http://www.bk.com">Burger King</a></figcaption>
+    </figure>
+  </td><td>
+    <figure>
+      <img src="/images/burgers/Wendys.gif" alt="Wendy's" />
+      <figcaption><a href="http://www.wendys.com">Wendy's</a></figcaption>
+    </figure>
+  </td></tr>
+  <tr><td>The Big Three</td></tr>
+</table>
 
 I've come not to like the fast food burgers. They always seem too dry. My friend says it's because they're using less fat in their burgers than they did before.
 
