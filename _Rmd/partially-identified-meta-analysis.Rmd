@@ -1,0 +1,47 @@
+---
+layout: post
+title: "Meta-analysis of partially identified parameters"
+date: April 6, 2016
+---
+
+Here is the simplest scenario I can think of that captures the idea of meta-analyzing partially identified parameters. 
+
+Suppose that we have a series of $K$ studies, each of which measures a binary outcome $Y_k$ (hit or miss), and each of which experiences some level of non-response. Let $R_k$ be a non-response indicator for an individual in study $k$. For context, we can imagine a series of polls, each of which as a response rate of less than 100%. 
+
+* Let $\rho_k = E(R_k)$ denote the proportion of the population that will respond if surveyed, so $1 - \rho_k$ is the population level of non-response.
+* Let $\pi_k = E(Y_k)$ denote the population proportion of hits in study $k$. 
+* Let $\pi^r_k = E(Y_k | R_k = r), \ r = 0, 1$ be the proportion of hits among the non-respondent and respondent sub-populations in study $k$. 
+* Let study $k$ have sample size $N_k$. 
+* Let $r_k$ denote the observed response rate in study $k$. 
+* Let $h_k$ denote the fraction of respondents in study whose outcome is a hit. 
+
+With this setup, the data for study $k$ would consist of $N_k (1 - r_k)$ non-respondents, $N_k r_k h_k$ respondents whose outcome is a hit, and $N_k r_k (1 - h_k)$ respondents whose outcome is a miss.
+
+The goal is to estimate parameters of the distribution of $\pi_k$ across studies. The conventional approach here is to make some assumption about the relationship between the hit rate among respondents $\pi^1_k$ (which is fully identified) and the hit rate among non-respondents $\pi^0_k$. But suppose we wanted to avoid such assumptions but still make inferences about $\pi_k$. We can consider either fixed-effects or random-effects versions of the model. 
+
+### Fixed effects
+
+In the fixed-effects model, we assume that $\pi_k = \pi$ for $k = 1,...,K$. The goal is then to estimate $\pi$ on the basis of data from the sample of $K$ studies. There are several different assumptions we could make about $\rho_k$:
+
+* $\rho_k = \rho$, i.e., a constant population response proportion. This seems pretty artificial but is the most straight-forward to solve. I think that we would find that $\pi$ remains partially identified even as the number of studies increases. 
+* $\rho_k$ follows some distribution in the population of studies, such as $\rho_k \sim \text{Beta}(\alpha_\rho, \beta_\rho)$. 
+
+### Random effects
+
+In the random-effects model, we assume that $\pi_k$ for study $k$ is sampled from some study population distribution, such as $\pi_k \sim \text{Beta}(\alpha_\pi, \beta_\pi)$. The goal is then to estimate the parameters of the population distribution on the basis of data from the sample of $K$ studies. Again, there are several different assumptions we could make about $\rho_k$:
+
+* $\rho_k = \rho$, i.e., a constant population response proportion. 
+* $\rho_k$ follows some distribution in the population, independent of $\pi_k$. This seems like quite a strong assumption. 
+* $(\pi_k, \rho_k)$ follows some joint population distribution, such as a bivariate beta distribution. 
+
+Now that I'm writing this down, it strikes me that it might be helpful to think in terms of a __tri-variate__ model, in which 
+
+$$
+\left(\pi^0_k, \pi^1_k, \rho_k \right) \sim f(\boldsymbol\theta) 
+$$
+
+for some multivariate distribution $f(\boldsymbol\theta)$.
+
+### More complicated models
+
+This is just a starting point. A more interesting case would be a series of two-arm clinical trials with binary outcomes, where the response rates could differ by arm. 
