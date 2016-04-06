@@ -52,6 +52,7 @@ We will look at the following components:
 * [API Gateway](#apigateway)
 * [API Identity Provider (IdP)](#apiidp)
 * [Configuration Database](#configdb)
+* [Cache](#cache)
 * [Administration UI](#adminui)
 * [Developer Portal](#devportal)
 * [Portal Identity Provider (IdP)](#portalidp)
@@ -91,6 +92,14 @@ The configuration database may contain the following things:
 * API Documentation, if not stored in separate [portal](#devportal) database
 
 The main point to understand regarding the configuration database is that in most cases, the API Gateway and/or its corresponding datastore is a stateful service which carries information which is not only coming from source code (policy definitions, API definitions and such things), but also potentially from users. Updating and deploying API management solutions must take this into account and provide for migration/upgrade processes.
+
+<a name="cache"></a>
+
+#### Cache
+
+When dealing with REST APIs, it is often useful to have a dedicated caching layer. Some (actually most) APIm provide such a component out of the box, while others do not. How caches are incorporated varies between the different solutions, but it ranges from pure `varnish` installations to key-value stores such as redis or similar. Different systems have different approaches to how and what is cached during API calls, and which kinds of calls are cacheable.
+
+It is worth paying attention to which degree of automation is offered, and to which extent you can customize the behaviour of the cache, e.g. depending on the value of headers or `GET` parameters. What you need is obviously highly depending on your requirements. In some situations you will not care about the caching layer being inside the APIm, but for high throughput, this is definitely worth considering, to be able to answer requests as high up in the chain as possible.
 
 <a name="adminui"></a>
 
