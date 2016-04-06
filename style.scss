@@ -252,6 +252,22 @@ nav {
 }
 
 .post {
+  width: 700px;
+  font-size: 20px;
+  line-height: 28px;
+
+  h1 {
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 300;
+    margin: 1.3em 0 30px;
+  }
+  
+  p {
+    font-family: Georgia, serif;
+    line-height: 28px;
+  }
+  
   blockquote {
     margin: 1.8em .8em;
     border-left: 2px solid $gray;
