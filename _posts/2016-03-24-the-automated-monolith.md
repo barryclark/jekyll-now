@@ -154,3 +154,7 @@ Setting up a test environment now only takes 30 minutes, down from 5 days. And e
 We also have a solid base we can work with - and we have many ideas on how to take it further. More testing will be included soon, like more code- and security tests. We will include gates that only once the code has a certain quality or has improved in a certain way after the last test, the pipeline will proceed. We will not stop at automating the test environment, but look at our other environments as well. 
 
 All the steps necessary we have in code, which makes it repeatable and fast. There is no dependency to anything. This enables our internal clients to setup their personal environments in a fast and bulletproof way on their own. 
+
+---
+
+Update: You can find slides of our talk [here](http://www.slideshare.net/HaufeDev/the-automated-monolith)
