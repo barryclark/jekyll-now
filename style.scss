@@ -5,9 +5,10 @@
 // IMPORTS
 //
 
-@import "_reset";
-@import "_variables";
+@import "reset";
+@import "variables";
 @import "_jekyll-pagination";
+
 // Syntax highlighting @import is at the bottom of this file
 
 /**************/
@@ -35,7 +36,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
   color: $darkerGray;
   font-weight: bold;
-  
+
   line-height: 1.7;
   margin: 1em 0 15px;
   padding: 0;
@@ -44,23 +45,23 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.4;
   }
 }
-  
-h1 {  
+
+h1 {
   font-size: 30px;
   a {
     color: inherit;
   }
 }
 
-h2 {  
+h2 {
   font-size: 24px;
 }
 
-h3 {  
+h3 {
   font-size: 20px;
 }
 
-h4 {  
+h4 {
   font-size: 18px;
   color: $gray;
 }
@@ -112,6 +113,11 @@ img {
   max-width: 100%;
 }
 
+// Fixes images in popup boxes from Google Translate
+.gmnoprint img {
+  max-width: none;
+}
+
 .date {
   font-style: italic;
   color: $gray;
@@ -153,6 +159,7 @@ img {
 }
 
 .masthead {
+
   padding: 40px 0 20px;
   border-bottom: 0px solid $lightGray;
   
@@ -192,9 +199,11 @@ img {
   margin: 0;
   color: $white;
   cursor: pointer;
+
   font-family: "Comfortaa", $helveticaNeue;
   font-weight: 700;
   font-size: 36px;
+
   letter-spacing: 1px;
   a {
     &:hover, &:active {
@@ -208,13 +217,14 @@ img {
   margin: -5px 0 0 0;
   color: $lightGray;
   font-size: 16px;
-  
+
   @include mobile {
     margin: 3px 0;
   }
 }
 
 nav {
+
   float: left;
   margin-top: 10px;
   font-family: $helveticaNeue; 
@@ -267,7 +277,7 @@ nav {
   border-bottom: none;
 }
 
-.post { 
+.post {
   blockquote {
     margin: 1.8em .8em;
     border-left: 2px solid $gray;
@@ -327,4 +337,6 @@ footer {
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
-@import "_highlights";
+
+@import "highlights";
+@import "svg-icons";
