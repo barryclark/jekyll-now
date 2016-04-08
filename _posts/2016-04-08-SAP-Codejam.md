@@ -12,7 +12,7 @@ Am Donnerstag, dem 12. Mai 2016, ist es wieder soweit: Wir werden bei uns im Hau
 Das Thema: ABAP in Eclipse.
  
 {:.center}
-![Eiffel Tower - Paris]({{ site.url }}/images/sap_codejam.jpg){:style="margin:auto"}
+![SAP JAM]({{ site.url }}/images/sap_codejam.jpg){:style="margin:auto"}
 
 Ein spannender Termin für alle ABAP Entwickler, die sich für die aktuellen Entwicklungswerkzeuge interessieren und verstehen 
 möchten wohin die Reise geht. Ein spannenden Event, um hands-on erste Erfahrungen mit Eclipse als IDE zu sammeln und einen 
