@@ -8,7 +8,7 @@ published: true
 
 As the old routine goes :)
 
-Then here goes the summary:
+Then here goes the flow:
 
 * 买域名
 - github fork [Jekyll Now](http://github.com/barryclark/jekyll-now/)
