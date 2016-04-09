@@ -4,12 +4,8 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
-
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
+I'm a Computer Science major at The University of Texas at Austin. This blog is written for my Software Engineering class taught by Glenn Downing in Spring 2016.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[jlciam@utexas.edu](mailto:jlciam@utexas.edu)
