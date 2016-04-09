@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-A blog for CS 373 Software Engineering extra credit
+I'm a Computer Science major at The University of Texas at Austin. This blog is written for my Software Engineering class taught by Glenn Downing in Spring 2016.
 
 ### Contact me
 
