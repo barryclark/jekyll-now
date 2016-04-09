@@ -3,7 +3,7 @@
 #
 
 # Name of your site (displayed in the header)
-name: Rida-N
+name: Rida-Nazo
 
 # Short bio or description (displayed in the header)
 description: You aren't here to struggle and suffer. You're here to express and share your creative gifts, to give and receive love, and to be happy.
@@ -19,17 +19,17 @@ avatar: https://avatars0.githubusercontent.com/u/11227825?v=3&s=400
 footer-links:
   dribbble:
   email:im@rida.site
-  facebook:https://www.facebook.com/nowthursday
+  facebook:nowthursday
   flickr:
   github: Rida-N
-  instagram:https://www.instagram.com/nowthursday/
+  instagram:nowthursday
   linkedin:
   pinterest:
   rss: (｡・`ω´･) 
   twitter: RidaNazo
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
-  youtube: https://www.youtube.com/user/nowthursday
-  googleplus: 103501369477422853593# anything in your profile username that comes after plus.google.com/
+  youtube: nowthursday
+  googleplus: 103501369477422853593
 
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
