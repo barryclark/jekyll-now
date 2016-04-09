@@ -9,6 +9,7 @@ published: true
 As the old routine goes :)
 
 Then here goes the summary:
+
 * 买域名
 - github fork [Jekyll Now](http://github.com/barryclark/jekyll-now/)
 - 改个人配置。评论用的DISQUS，网站流量分析用的Google Analytic，图床用的七牛。  
