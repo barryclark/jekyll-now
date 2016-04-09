@@ -1,4 +1,4 @@
----
+﻿---
 layout: page
 title: About
 permalink: /about/
@@ -8,8 +8,8 @@ Some information about you!
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+Tento blog možná bude někdy fungovat, a možná taky ne :)
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[449907@mail.muni.cz](mailto:449907@mail.muni.cz)
