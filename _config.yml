@@ -7,7 +7,11 @@ name: CS373 Spring 2016 Jena Cameron
 
 # Short bio or description (displayed in the header)
 description: Follow me on the road to success 
-
+		<select name="My favorite things">
+		    <option value="Raindrops on roses">Raindrops on roses</option>
+		    <option value="Whiskers on kittens">Whiskers on kittens</option>
+		</select>
+		
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://41.media.tumblr.com/5d339c8ea407d1509113b0f599b00547/tumblr_o27ru6QeRK1r3er6io1_400.png
  
