@@ -9,6 +9,10 @@ published: true
 As the old routine goes :)
 
 Then here goes the summary:  
+
+> Blockquote
+>> Nested Blockquote
+
  > * 1.买域名   
  - 2.github fork [Jekyll Now](http://github.com/barryclark/jekyll-now/)  
  - 3.改个人配置。评论用的DISQUS，网站流量分析用的Google Analytic，图床用的七牛。  
