@@ -198,10 +198,8 @@ img {
 
 .site-name {
   margin: 0;
-  color: $darkGray;
   cursor: pointer;
   font-family: $titleFontFamily;
-  font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
 }
@@ -230,7 +228,7 @@ nav {
     padding-left: 5px;
     display: table-cell;
     vertical-align: middle;
-    color: $darkGray;
+    color: $darkerGray;
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
@@ -269,6 +267,10 @@ nav {
   border: 1px solid #eee;
   margin: 1em 0;
   background: #fcfcfc;
+
+  .date {
+    font-size: .5em;
+  }
 }
 
 .post {
@@ -301,7 +303,6 @@ nav {
   }
 
   .date {
-    font-size: .5em;
     font-style: normal;
     color: $mediumGray;
   }
