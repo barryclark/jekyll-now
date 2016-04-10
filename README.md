@@ -1,6 +1,6 @@
 # maberger.com
 
-Personal website for [http://maberger.com/](http://maberger.com/) built with [Jekyll](http://jekyllrb.com/) and hosted on [GitHub Pages](https://pages.github.com/).
+Personal website for [http://mandikal.com/](http://mandikal.com/) built with [Jekyll](http://jekyllrb.com/) and hosted on [GitHub Pages](https://pages.github.com/).
 
 ## Requirements
 
