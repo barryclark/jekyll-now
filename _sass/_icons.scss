@@ -1,0 +1,41 @@
+.logo svg {
+  margin:                     1rem;
+  transition:                 width 0.25s ease;
+  width:                      7.5rem;
+
+  @include bp-small {
+    width:                    10rem;
+  }
+
+  @include bp-normal {
+    width:                    15rem;
+  }
+
+  @include bp-large {
+    width:                    17.5rem;
+  }
+}
+
+.contact svg {
+  height:                     5rem;
+  width:                      5rem;
+}
+
+.contact-icon {
+  color:                      $color-dark;
+  font-size:                  $font-size-tiny;
+  font-weight:                500;
+  text-decoration:            none;
+  width:                      6rem;
+}
+
+.mini-icon {
+  display:                    none;
+  height:                     2rem;
+  vertical-align:             middle;
+  width:                      2rem;
+
+  @include bp-small {
+    display:                  inline-block;
+  }
+}

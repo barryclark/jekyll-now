@@ -1,0 +1,23 @@
+<footer>
+  <div class="contact">
+    <a class="contact-icon" href="mailto:{{ site.author.email }}">
+      {% include svg-icon.html icon=site.data.icons.email %}
+      <div>Email</div>
+    </a>
+    <a class="contact-icon" href="https://github.com/{{ site.author.github }}">
+      {% include svg-icon.html icon=site.data.icons.github %}
+      <div>GitHub</div>
+    </a>
+    <a class="contact-icon" href="https://ca.linkedin.com/in/{{ site.author.linkedin }}">
+      {% include svg-icon.html icon=site.data.icons.linkedin %}
+      <div>LinkedIn</div>
+    </a>
+    <a class="contact-icon" href="{{ site.baseurl }}/feed.xml">
+      {% include svg-icon.html icon=site.data.icons.feed %}
+      <div>Feed</div>
+    </a>
+  </div>
+  <p class="site-info">
+    Built with <a href="http://jekyllrb.com/">Jekyll</a>, hosted on <a href="https://github.com/mark-berger/mark-berger.github.io">GitHub Pages</a>
+  </p>
+</footer>

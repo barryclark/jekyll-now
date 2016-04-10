@@ -1,0 +1,263 @@
+{
+  "basics": {
+    "name": "Mark Berger",
+    "label": "BASc Computer Engineering",
+    "picture": "http://maberger.com/images/maberger.png",
+    "email": "maberger6@gmail.com",
+    "website": "http://maberger.com",
+    "summary": "I'm a software developer from Ontario, Canada. I recently completed my BASc in Computer Engineering at the University of Waterloo and I'm looking for new opportunities. Working with both hardware and software on various platforms from embedded systems to mobile phones has broadened my experience, but you'll find me most at home developing for the web. I really enjoy building client-side web applications, and have a strong foundation in server-side development and working with databases. Consistency and clear communication have always been very important to me and I'm a quick learner who is always eager to pick up new technologies.",
+    "location": {
+      "city": "Toronto",
+      "countryCode": "CA",
+      "region": "Ontario"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "mark-berger",
+        "url": "https://github.com/mark-berger"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "maberger",
+        "url": "https://ca.linkedin.com/in/maberger"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "ShopLocket",
+      "position": "Software Developer, Co-op",
+      "website": "http://shoplocket.com/",
+      "startDate": "2014-09-02",
+      "endDate": "2014-12-19",
+      "summary": "Toronto, ON",
+      "highlights": [
+        "Created a powerful Jekyll build system using GruntJS, Bower, Haml, Sass",
+        "Added new features to a shopping cart built with AngularJS",
+        "Developed responsive, fluid, and interactive visualizations using D3.js",
+        "Designed a system to extract data from Facebook, Twitter, Google+ APIs",
+        "Individually built a dashboard for monitoring and visualizing community"
+      ]
+    },
+    {
+      "company": "BNOTIONS",
+      "position": "Senior Software Engineer, Co-op",
+      "website": "http://www.bnotions.com/",
+      "startDate": "2013-09-03",
+      "endDate": "2013-12-20",
+      "summary": "Toronto, ON",
+      "highlights": [
+        "Built a rich and dynamic single-page web application using AngularJS",
+        "Gained experience with Sass, Jade, GruntJS, Jasmine, npm",
+        "Developed a RESTful API with Django, interfacing with Facebook APIs",
+        "Managed pull requests and code reviews in an agile team using git-flow"
+      ]
+    },
+    {
+      "company": "Flipp",
+      "position": "Senior Web Developer, Co-op",
+      "website": "https://corp.flipp.com/",
+      "startDate": "2013-01-02",
+      "endDate": "2013-04-26",
+      "summary": "Toronto, ON",
+      "highlights": [
+        "Created ad modules in CSS, JS, HTML serving millions of views/day",
+        "Developed an authenticated API for returning JSON, RSS, and XML data",
+        "Automated reporting by creating a wrapper for the Google Analytics API",
+        "Feature development with Rails, including RSpec test cases and TDD",
+        "Gained experience in Unix with an agile team collaborating using Git"
+      ]
+    },
+    {
+      "company": "Orbit Group Partners Inc.",
+      "position": "Software Developer, Co-op",
+      "website": "http://orbitgroup.ca/",
+      "startDate": "2011-09-05",
+      "endDate": "2012-08-31",
+      "summary": "Markham, ON",
+      "highlights": [
+        "Rebuilt messaging/notification system using JSON web services",
+        "Developed scripts, architecture and optimized stored procedures",
+        "Designed UI elements to enhance usability and performance",
+        "Updated HTML and CSS throughout the app with a modern look and feel",
+        "Played an integral role in developing, testing, documenting a major release"
+      ]
+    },
+    {
+      "company": "Orbit Group Partners Inc.",
+      "position": "Business Systems Analyst, Co-op",
+      "website": "http://orbitgroup.ca/",
+      "startDate": "2011-01-03",
+      "endDate": "2011-04-29",
+      "summary": "Markham, ON",
+      "highlights": [
+        "Provided efficient resolution directly to clients, triaging technical issues",
+        "Demonstrated technical expertise finding solutions to unique problems",
+        "Developed SQL scripts and queries optimized for producing reports",
+        "Automated reporting with VBA macros; refined routine tasks"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Waterloo",
+      "area": "Waterloo, ON",
+      "studyType": "BASc Honours Computer Engineering",
+      "startDate": "2010-09-13",
+      "endDate": "2015-06-13",
+      "courses": [
+        "ECE 103 - Discrete Mathematics",
+        "ECE 105 - Physics of Electrical Engineering 1",
+        "ECE 106 - Physics of Electrical Engineering 2",
+        "ECE 124 - Digital Circuits and Systems",
+        "ECE 140 - Linear Circuits",
+        "ECE 150 - Fundamentals of Programming",
+        "ECE 155 - Engineering Design with Embedded Systems",
+        "ECE 222 - Digital Computers",
+        "ECE 240 - Electronic Circuits 1",
+        "ECE 250 - Algorithms and Data Structures",
+        "ECE 290 - Engineering Profession, Ethics, and Law",
+        "MATH 117 - Calculus 1 for Engineering",
+        "MATH 119 - Calculus 2 for Engineering",
+        "MATH 211 - Advanced Calculus 1 for Electrical and Computer Engineers",
+        "MATH 215 - Linear Algebra for Engineering",
+        "ECE 207 - Signals and Systems",
+        "ECE 224 - Embedded Microprocessor Systems",
+        "ECE 242 - Electronic Circuits 2",
+        "ECE 254 - Operating Systems and Systems Programming",
+        "SCI 238 - Introductory Astronomy",
+        "ECE 316 - Probability Theory and Random Processes",
+        "ECE 327 - Digital Hardware Systems",
+        "ECE 351 - Compilers",
+        "ECE 380 - Analog Control Systems",
+        "HIST 200 - History and Film",
+        "ECE 318 - Analog and Digital Communications",
+        "ECE 356 - Database Systems",
+        "ECE 358 - Computer Networks",
+        "ECE 390 - Engineering Design, Economics, and Impact on Society",
+        "STV 205 - Cybernetics and Society",
+        "CLAS 104 - Classical Mythology",
+        "ECE 454 - Distributed Systems",
+        "ECE 455 - Embedded Software",
+        "ECE 458 - Computer Security",
+        "ECE 498A - Engineering Design Project A",
+        "REC 100 - Introduction to the Study of Recreation and Leisure",
+        "ENVS 200 - Field Ecology",
+        "ECE 416 - Advanced Topics in Networking",
+        "ECE 457B - Computational Intelligence: Fuzzy Logic and Neural Networks Fundamentals",
+        "ECE 498B - Engineering Design Project B"
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "title": "Graduation with Distinction",
+      "date": "2015-06-13",
+      "awarder": "University of Waterloo",
+      "summary": "Attained a cumulative average of at least 80%"
+    },
+    {
+      "title": "Outstanding Co-op Evaluations",
+      "date": "2015-06-13",
+      "awarder": "University of Waterloo",
+      "summary": "Significantly exceeded all expectations for all 6 terms"
+    },
+    {
+      "title": "Nortel Networks & President’s Entrance Scholarship",
+      "date": "2010-11-11",
+      "awarder": "University of Waterloo",
+      "summary": "Awarded to top students entering Computer Engineering"
+    },
+    {
+      "title": "Best Presentation, U of T Space Design Contest",
+      "date": "2010-05-13",
+      "awarder": "University of Toronto",
+      "summary": "First place for international engineering competition"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Front-end tech/frameworks",
+      "keywords": [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "D3.js",
+        "AngularJS 1.x"
+      ]
+    },
+    {
+      "name": "Back-end web frameworks",
+      "keywords": [
+        "Django",
+        "Flask",
+        "Ruby on Rails",
+        "ASP.NET"
+      ]
+    },
+    {
+      "name": "Relational databases",
+      "keywords": [
+        "MySQL",
+        "SQL Server",
+        "PostgresSQL",
+        "SQLite"
+      ]
+    },
+    {
+      "name": "Object-oriented programming",
+      "keywords": [
+        "Python",
+        "Java",
+        "VB.NET",
+        "C#"
+      ]
+    },
+    {
+      "name": "Platforms",
+      "keywords": [
+        "Web",
+        "Android",
+        "Unix",
+        "Embedded Systems"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native speaker"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Design",
+      "keywords": [
+        "User interfaces",
+        "user experience",
+        "layouts and themes",
+        "LaTeX"
+      ]
+    },
+    {
+      "name": "Internet",
+      "keywords": [
+        "Latest web tech",
+        "open-source projects",
+        "software development blogs"
+      ]
+    },
+    {
+      "name": "Fun",
+      "keywords": [
+        "Film",
+        "photography",
+        "television",
+        "video games",
+        "hardware",
+        "biking/walking"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+<svg viewBox="{{ include.icon.viewbox }}">
+{% for path in include.icon.paths %}
+    <path fill="{{ path.fill }}" d="{{ path.d }}"/>
+{% endfor %}
+</svg>

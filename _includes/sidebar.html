@@ -1,0 +1,19 @@
+<div class="sidebar">
+  <div class="sidebar-container">
+    <div class="sidebar-item">
+      <a class="logo" href="{{ site.baseurl }}/">
+        {% include svg-icon.html icon=site.data.icons.logo %}
+      </a>
+    </div>
+    <div class="sidebar-item">
+      {% include nav.html %}
+    </div>
+    <div class="sidebar-item">
+      <div class="sidebar-title">
+        <p>
+          {{ site.title }}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

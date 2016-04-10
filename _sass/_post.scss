@@ -1,0 +1,34 @@
+.post-grid {
+  width:                      100%;
+}
+
+.post-griditem {
+  border-radius:              0.2rem;
+  box-shadow:                 0 0.1rem 0.3rem rgba(0, 0, 0, 0.1), 0px 0.3rem 0.3rem rgba(0, 0, 0, 0.2);
+  margin:                     2rem auto;
+  width:                      100%;
+}
+
+.post-griditem .item {
+  font-size:                  $font-size-footnote;
+}
+
+.post-griditem .excerpt {
+  font-size:                  $font-size-footnote;
+}
+
+.post-image {
+  border-radius:              0.2rem 0.2rem 0 0;
+  overflow:                   hidden;
+  text-align:                 center;
+}
+
+.post-image img {
+  left:                       50%;
+  position:                   relative;
+  transform:                  translate(-50%,0);
+}
+
+.post-details {
+  padding:                    1rem;
+}

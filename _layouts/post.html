@@ -1,17 +1,29 @@
----
-layout: default
----
-
-<article class="post">
-  <h1>{{ page.title }}</h1>
-
-  <div class="entry">
-    {{ content }}
-  </div>
-
-  <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
-  </div>
-
-  {% include disqus.html %}
-</article>
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body>
+    {% include sidebar.html %}
+    <main>
+      <div class="container">
+        <div class="content content-post">
+        {% if page.title %}
+          <h1>{{ page.title }}</h1>
+        {% endif %}
+        {% if page.date %}
+        {% include ordinalize.html date_param=page.date %}
+        <div class="item">
+          <div class="left">
+            <strong><small>{{ site.title }}</small></strong>
+          </div>
+          <div class="right">
+            <small><time datetime="{{ page.date }}">{{ page.date | date: "%B" }} {{ d }}{{ ordinal }}, {{ page.date | date: "%Y" }}</time></small>
+          </div>
+        </div>
+        {% endif %}
+        {{ content }}
+        </div>
+        {% include footer.html %}
+      </div>
+    </main>
+  </body>
+</html>
