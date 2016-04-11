@@ -63,6 +63,8 @@ But you can try this:
 
 ### Setting up jekyll using docker
 
+**Note**: This will work both on Windows and Mac OS X, in case you do not want to "pollute" your local machine with ruby packages.
+
 If you have a working `docker` setup on your machine, you can use the prepackaged docker image by the jekyll team to try out the blog generation using that image.
 
 Pull the `jekyll/jekyll:pages` image to get something which behaves almost exactly (or really close to) the github pages generation engine:
