@@ -4,7 +4,7 @@ title: Providing Secure File Storage through Azure API Management
 subtitle: Shared Access Signatures with Azure Storage
 category: howto
 tags: [security, cloud, api]
-author: Martin Danielsson
+author: martin_danielsson
 author_email: martin.danielsson@haufe-lexware.com
 header-img: "images/bg-post.jpg"
 ---
@@ -53,9 +53,8 @@ Luckily, Azure already provides a means of anonymous and restricted access to st
 
 We leverage the SAS feature to explicitly grant **write** access to one single blob (file) on the storage for which we define the file name. The access is granted for 60 minutes (one hour), which is enough to transfer large scale files. Our Content API exposes an end point which returns an URL containing the SAS token which can immediately be used to do a `PUT` to the storage.
 
-<center>
-![Azure Storage SAS - Diagram]({{ site.url }}/images/azure-storage-sas-1.png)
-</center>
+{:.center}
+![Azure Storage SAS - Diagram]({{ site.url }}/images/azure-storage-sas-1.png){:style="margin:auto"}
 
 The upload to the storage can either be done using any http library (using a `PUT`), or using an Azure Storage SDK ([available for multiple languages](https://github.com/Azure?utf8=%E2%9C%93&query=storage), it's on github), which in turn enables features like parallel uploading or block uploading (for more robust uploading).
 

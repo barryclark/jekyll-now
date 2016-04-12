@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Reisekosten App - Proof of Concept
-subtitle: Read/write Lexware on-premise data from a smartphone
+title: Extending On-Premise Products With Mobile Apps - Part 1
+subtitle: Modernizing on-premise application using Azure Service Bus Relay
 category: general
-tags: [mobile, custdev]
+tags: [mobile, cloud]
 author: Robert Fitch
 author_email: robert.fitch@haufe-lexware.com
 header-img: "images/bg-post.jpg"
 ---
 
-### What is this about? ###
+### What is this about?
 
 This was a proof-of-concept project to find out what it takes to access on-premise data (in the form of our Lexware pro product line) from an internet client, even though that data resides behind company firewalls, without forcing our customers to open an incoming port to the outside world. This would be a different approach than, say, "Lexware mobile", which synchronizes data into the cloud, from where it is accessed by client devices.
 
@@ -17,7 +17,7 @@ There was a fair amount of work already done in the past, which made the job eas
 
 These HTTP REST Api's are currently used by "Lexware myCenter".
 
-### Okay, what is Lexware myCenter? ###
+### Okay, what is Lexware myCenter?
 
 Typically, Lexware pro is installed in the HR department of our customer's company. This means that the other employees of this company have no access to the application. However, there are plenty of use-cases which would make some kind of communication attractive, for example:
 
@@ -38,7 +38,7 @@ With myCenter, every employee (and her boss) may be given a browser link and can
 ![myCenter - Apply for Vacation]({{ site.url }}/images/reisekosten-app/mycenter.jpg){:style="margin:auto"}
 
 
-### Enter Azure Service Bus Relay ###
+### Enter Azure Service Bus Relay
 
 Azure Service Bus Relay allows an on-premise service to open a WCF interface to servers running in the internet. Anyone who knows the correct url (and passes any security tests you may implement) has a proxy to the interface which can be called directly. Note that this does **not** relay HTTP requests, but uses the WCF protocol via TCP to call the methods directly. This works behind any company firewall. Depending on how restrictive the firewall is configured, the IT department may need to specifically allow outgoing access to the given Azure port. 
 
@@ -53,23 +53,23 @@ For the Reisekosten-App, we decided on the first method. Using a "smart" interne
 
 However, the other method also works well. I have used it during a test to make the complete myCenter web-site available over the internet.
 
-### Putting it all together ###
+### Putting it all together
 
 With the tools thus available, we started on the proof-of-concept and decided to implement the use-case "Business traveller wants to record her travel receipts". So while underway, she can enter the basic trip data (dates, from/to) and for that trip enter any number of receipts (taxi, hotel, etc.). All of this information should find its way in real-time into the on-premise database where it can be processed by the HR department.
 
-### Steps along the way ###
+### Steps along the way
 
-#### The on-premise service must have a unique ID ####
+#### The on-premise service must have a unique ID
 This requirement comes from the fact that the on-premise service must open a unique endpoint for the Azure Service Bus Relay. Since every Lexware pro database comes with a unique GUID (and this GUID will move with the system if it gets reinstalled on different hardware), we decided to use this ID as the unique connection ID.
  
-#### The travelling employee must be a "user" of the Lexware pro application ####
+#### The travelling employee must be a "user" of the Lexware pro application
 The Lexware pro application has the concept of users, each of whom has certain rights to use the application. Since the employee will be accessing the database, she must exist as a user in the system. She must have very limited rights, allowing access only to her own person and given the single permission to edit trip data. Because myCenter has similar requirements, the ability for HR to automatically add specific employees as new users, each having only this limited access, was already implemented. So, for example, the employee "Andrea Ackermann" has her own login and password to the system. This, however, is **not** the identity with which she will log in to the App. The App login has its own requirements regarding:
 
 - Global uniqueness of user name
 - Strength of password
 - The possibility to use, for example, a Facebook identity instead of username/password
  
-#### The user must do a one-time registration and bind the App identity to the unique on-premise ID and to the Lexware pro user identity ####
+#### The user must do a one-time registration and bind the App identity to the unique on-premise ID and to the Lexware pro user identity
 
 We developed a small web-site for this one-time registration. The App user specifies her own e-mail as user name and can decided on her own password (with password strength regulations enforced). Once registered, she makes the connection to her company's on-premise service:
 
@@ -103,11 +103,11 @@ And here is a screenshot of one of the views, entering actual receipt data:
 {:.center}
 ![Reisekosten App - Receipt input]({{ site.url }}/images/reisekosten-app/receipt.jpg){:style="margin:auto"}
 
-### Developing the Front-End ###
+### Developing the Front-End
 
 The front-end development (HTML5, AngularJS, Apache Cordova) was done by our Romanian colleague Carol, who is going to write a follow-up blog about that experience.
 
-### What about making a Real Product? ###
+### What about making a Real Product?
 
 This proof-of-concept goes a long way towards showing how we can connect to on-premise data, but it is not yet a "real product". Some aspects which need further investigation and which I will be looking into next:
 

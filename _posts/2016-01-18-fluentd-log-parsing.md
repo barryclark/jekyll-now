@@ -4,7 +4,7 @@ title: Better Log Parsing with Fluentd
 subtitle: Description of a couple of approaches to designing your fluentd configuration.
 category: howto
 tags: [devops, logging]
-author: Doru Mihai
+author: doru_mihai
 author_email: doru.mihai@haufe-lexware.com
 header-img: "images/bg-post.jpg"
 ---
