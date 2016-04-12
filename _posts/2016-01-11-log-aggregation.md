@@ -4,7 +4,7 @@ title: Log Aggregation with Fluentd, Elasticsearch and Kibana
 subtitle: Introduction to log aggregation using Fluentd, Elasticsearch and Kibana
 category: howto
 tags: [devops, docker, logging]
-author: Doru Mihai
+author: doru_mihai
 author_email: doru.mihai@haufe-lexware.com
 header-img: "images/bg-post.jpg"
 ---
