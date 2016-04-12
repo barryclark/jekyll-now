@@ -11,4 +11,4 @@ A List of rules, best practices, resources and our way of creating REST APIs in 
 A set of documents representing mandantory requirements, recommended best practices and informational resources for using Docker in official (public or internal) Haufe products, services or solutions.
 
 ### [Design Style Guide](http://do.haufe-group.com/goodlooking-haufe/)
-A set of design kits and style guides for the Haufe brands: [Haufe.de](http://do.haufe-group.com/goodlooking-haufe/), [Lexware](http://do.haufe-group.com/goodlooking-lexware/), and [Haufe Academy](http://do.haufe-group.com/goodlooking-haufe-akademie/)
+A set of design kits and style guides for the Haufe brands: [Haufe](http://do.haufe-group.com/goodlooking-haufe/), [Lexware](http://do.haufe-group.com/goodlooking-lexware/), and [Haufe Academy](http://do.haufe-group.com/goodlooking-haufe-akademie/)
