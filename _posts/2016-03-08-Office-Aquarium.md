@@ -13,6 +13,7 @@ As of this post, my setup is as follows:
 * [AZOO Mignon Filter 60 filter](http://www.amazon.com/AZOO-AZ13097-Mignon-Filter-60/dp/B005VEWCMO) (filter media discarded)
   * [Aquaclear 20-Gallon Biomax Bag](http://www.amazon.com/Aqua-Clear-A1370-Aquaclear-20-Gallon/dp/B0006JLO5K/ref=cm_cr_dp_asin_lnk)
   * [Aquaclear 20-Gallon Biomax Foam Insert](http://www.amazon.com/Aquaclear-20-Gallon-Foam-Inserts-3-Pack/dp/B0002AQK48/ref=cm_cr_dp_asin_lnk)
+* [Fluval Plant and Shrimp Stratum[(http://www.amazon.com/Fluval-Plant-Shrimp-Stratum-4-4-Pound/dp/B00JGQIY48/ref=sr_1_1?ie=UTF8&qid=1460579376&sr=8-1&keywords=Fluval+Shrimp+Stratum)
 * [Hydor Slim Heater](http://www.amazon.com/Hydor-7-5w-Heater-Bettas-Bowls/dp/B006JVQ67K/ref=cm_cr_dp_asin_lnk)
 * [HDE LCD Digital Fish Tank Aquarium Thermometer](http://www.amazon.com/gp/product/B00GR0LKN8?psc=1&redirect=true&ref_=oh_aui_detailpage_o02_s00)
 * Small [GEOsystem Mopani Driftwood](http://www.amazon.com/GEOsystem-11817-Mopani-Driftwood-Small/dp/B001URR3CA/ref=sr_1_8?ie=UTF8&qid=1457491033&sr=8-8&keywords=mopani+wood)
