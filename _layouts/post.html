@@ -1,28 +1,17 @@
-{% if page.image.feature %}
-<div class="entry-image backing-img" style="background-image: url('{{ site.url }}/images/{{ page.image.feature }}')">
-    <div class="image__container">
-        <div class="entry-header-heading">
-            <h1>{{ page.title }}</h1>
-                <p class="meta">
-                    {% if page.author %}
-                        <span class="author">by {{ page.author }} ·</span>
-                    {% endif %}
-                    <time class="pubdate updated" datetime="{{ page.date }}" itemprop="dateCreated">{{ page.date | date: "%-d %B, %Y" }}</time>
-                </p>
-        </div>
-    </div>
-{% if page.image.credit %}
-<div class="image-credit">Image source: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></div><!-- image-credit -->
-{% endif %}
-    </div><!-- entry-image -->
-{% else %}
-<div class="text__container">
-    <h1>{{ page.title }}</h1>
-    <p class="meta">
-        {% if page.author %}
-            <span class="author">by {{ page.author }} ·</span>
-        {% endif %}
-        <time class="pubdate updated" datetime="{{ page.date }}" itemprop="dateCreated">{{ page.date | date: "%-d %B, %Y" }}</time>
-    </p>
-</div>
-{% endif %}
+ ----
+-layout: default
+----
+-
+-<article class="post">
+-  <h1>{{ page.title }}</h1>
+-
+-  <div class="entry">
+-    {{ content }}
+-  </div>
+-
+-  <div class="date">
+-    Written on {{ page.date | date: "%B %e, %Y" }}
+-  </div>
+-
+-  {% include disqus.html %}
+-</article>
