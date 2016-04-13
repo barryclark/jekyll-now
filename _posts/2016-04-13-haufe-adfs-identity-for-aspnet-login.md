@@ -69,7 +69,7 @@ The App ID URI and the On-Premises Authority URL are stored in the <appSettings>
  
 And the OWIN-Code to specify the on-premise authentication is in Startup.Auth.cs:
 
-	``` csharp
+``` csharp
 	public partial class Startup
 	{
 	    private static string realm = ConfigurationManager.AppSettings["ida:Wtrealm"];
@@ -86,7 +86,8 @@ And the OWIN-Code to specify the on-premise authentication is in Startup.Auth.cs
 	                MetadataAddress = adfsMetadata
 	            });
 	    }
-	} 
+	}
+``` 
 
 # Configure the On-Premise Identity Server (Job for IT) #
 
@@ -146,12 +147,12 @@ Because we have configured the outgoing claims to include a role for every group
 
 You may create a controller with the Authorize attribute like this:
 
-	``` csharp
+``` csharp
     [Authorize]
     public class RoleController : Controller
     {
     } 
- 
+``` 
 
 The **Authorize** attribute forces the user to be logged in before any requests are routed to this controller. The log in dialog will be opened automatically if necessary.
 
@@ -159,7 +160,7 @@ It is also possible to use the **Authorize** attribute not on the entire control
 
 Once inside a controller (or method) requiring authorization, you have access to the security Information of the user. In particular, you can check membership in a given role (group) like this:
 
-	``` csharp
+``` csharp
 	if (User.IsInRole("_Architects")
 	{
 	    // do something
@@ -168,16 +169,17 @@ Once inside a controller (or method) requiring authorization, you have access to
 	{
 	    // do something else
 	} 
- 
+``` 
 
 Within a cshtml file, you may also want to react to user membership in a certain role. One way to do this is to bind the cshtml file to a model class which contains the necessary boolean flags. Set those flags in the controller, e.g.:
 
-	``` csharp
+``` csharp
 	model.IsArchitect = User.IsInRole("_Architects");
+```
  
 Pass the model instance to the view, then evaluate those flags in the cshtml file:
 
-	``` csharp
+``` csharp
 	@if (Model.IsArchitect)
 	{
 	    <div style="color:#00ff00">
@@ -190,5 +192,6 @@ Pass the model instance to the view, then evaluate those flags in the cshtml fil
 	         <text><b>No, you are not in the Architect group.</b></text>
 	     </div>
 	} 
+```
 
 Instead of using flags within the data binding model, it may be easier to have the controller just assign a property to the ViewBag and evaluate the ViewBag in the cshtml file.
