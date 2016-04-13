@@ -1,7 +1,7 @@
 ---
 layout: post
 title: I Am Elemental
-excerpt: "While at Toy Fair this year, the women over at the [Goldieblox](http://goldieblox.com) booth had told me I just *had* to go see the [I Am Elemental](http://iamelemental.com) booth. I'm really glad I did, because what they had to show off was amazing."
+excerpt: "While at Toy Fair this year, the women over at the Goldieblox booth had told me I just *had* to go see the I Am Elemental booth. I'm really glad I did, because what they had to show off was amazing."
 modified: 2015-03-9
 tags: [toy fair, iamelemental, toys]
 comments: true
