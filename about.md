@@ -4,8 +4,6 @@ title: About
 permalink: /about/
 ---
 
-### About Me
-
 I'm a father of 4 great kids, husband to the most amazing woman in the world, and overall geek. I'm a web developer by day, and freelance in the toy and game industry by night.
 
 ### About A Pawn's Perspective
