@@ -1,6 +1,6 @@
 ****---
 layout: post
-title: Using a Haufe AFDS identity in ASP.NET
+title: How to use an On-Premise Identity Server in ASP.NET
 subtitle: Log in to an ASP.NET application with AFDS identity and check membership in specific groups
 category: general
 tags: [cloud]
@@ -11,7 +11,7 @@ header-img: "images/bg-post.jpg"
 
 This article shows you how to develop an ASP.NET application to:
 
-- Log in with a Haufe ADFS Identity
+- Log in with an on-premise ADFS Identity
 - Check whether the user belongs to a given group (for example, a certain mailing list)
 
 
@@ -39,13 +39,13 @@ You will be sent to this dialog:
 
 - Select **Work and School Accounts**
 - Select **On-Premises**
-- For the **On-Premises Authority**, ask IT for the public URL of your FederationMetadata.xml on the identity server
+- For the **On-Premises Authority**, ask IT for the public URL of your FederationMetadata.xml on the identity server, e.g.
 
-    https://xxxxxxxxx.com/FederationMetadata/2007-06/FederationMetadata.xml
+    https://xxxxxxxxxx.com/FederationMetadata/2007-06/FederationMetadata.xml
  
-- For the **App ID URI**, you must enter an identifier for your app. This is not a real URL address, just a unique identifier.
-**
-Important:** The **App ID URI** identifies your app with the Haufe ADFS identity server. This same App ID must be registered on the ADFS identity server by IT as a **Relying Party Trust** identifier (sometimes known as **Realm**), so that the server will accept requests.
+- For the **App ID URI**, you must enter an identifier for your app. This is not a real URL address, just a unique identifier, for example http://haufe/mvcwithadfs.
+
+**Important:** The **App ID URI** identifies your app with the on-premise ADFS identity server. This same App ID must be registered on the ADFS identity server by IT as a **Relying Party Trust** identifier (sometimes known as **Realm**), so that the server will accept requests.
 
 Finish up the project creation process.
 
@@ -62,9 +62,9 @@ Compile the project.
 
 If you are wondering where all of the authentication code resides (or if you need to modify an existing project!), here are the details:
 
-The App ID URI and the  On-Premises Authority URL are stored in the <appSettings> node of web.config:
+The App ID URI and the On-Premises Authority URL are stored in the <appSettings> node of web.config:
 
-	<add key="ida:ADFSMetadata" value="https://xxxxxxxxxxx.com/FederationMetadata/2007-06/FederationMetadata.xml" />
+	<add key="ida:ADFSMetadata" value="https://xxxxxxxxxx.com/FederationMetadata/2007-06/FederationMetadata.xml" />
 	<add key="ida:Wtrealm" value="http://haufe/mvcwithadfs" />
  
 And the OWIN-Code to specify the on-premise authentication is in Startup.Auth.cs:
@@ -88,7 +88,7 @@ And the OWIN-Code to specify the on-premise authentication is in Startup.Auth.cs
 	    }
 	} 
 
-# Configure the Haufe Identity Server (Job for IT) #
+# Configure the On-Premise Identity Server (Job for IT) #
 
 
 On the identity server, these are the critical configuration pages for a new **Relying Party Trust**.
@@ -136,7 +136,7 @@ The last line is the special one (the others being fairly standard). The last li
 
 # Run #
 
-At this point, the app can be compiled and will run. You can log in (or you might be automatically logged in if you are running from a browser in the Haufe domain).
+At this point, the app can be compiled and will run. You can log in (or you might be automatically logged in if you are running from a browser in the your company's domain).
 
 # Check Membership in a certain Group #
 
