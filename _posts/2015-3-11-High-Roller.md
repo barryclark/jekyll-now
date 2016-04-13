@@ -5,9 +5,9 @@ excerpt: "OK, I really just need to start off my post with this image."
 modified: 2015-03-11
 tags: [toy fair, high roller, bike]
 comments: true
-category: etc
+categories: etc
 image:
-  feature: high-roller.jpg
+  feature: highroller.jpg
 ---
 
 OK, I really just need to start off my post with this image.
