@@ -106,7 +106,7 @@ On the identity server, these are the critical configuration pages for a new **R
 
 ## Endpoints ##
 
-This is the page which lists all browser source endpoints which are to be considered valid by the identity server. Here you see the entry which comes into play while we are debugging locally. Once your application has been uploaded to server, e.g. Azure, you must at the new endpoint e.g.:
+This is the page which lists all browser source endpoints which are to be considered valid by the identity server. Here you see the entry which comes into play while we are debugging locally. Once your application has been uploaded to server, e.g. Azure, you must add the new endpoint e.g.:
 
 https://xxxxxxxxxx.azurewebsites.net/
 
