@@ -1,0 +1,47 @@
+.archive {
+  #timeline {
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -2px;
+      height: 100%;
+      width: 4px;
+      background: $background-color;
+    }
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+
+  .archive-title {
+    position: relative;
+    margin: 2em auto 1em;
+    .archive-year {
+      margin-left: 1em;
+      &:before {
+        content: " ";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        margin-left: -4px;
+        margin-top: -4px;
+        width: 8px;
+        height: 8px;
+        background: #bbb;
+        border-radius: 50%;
+      }
+    }
+  }
+
+
+  ul {
+    list-style: none;
+    li {
+      margin: 1em auto;
+    }
+  }
+}

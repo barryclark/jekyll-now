@@ -1,0 +1,92 @@
+/* Buttons
+   ========================================================================== */
+
+// General
+.btn {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 8px 20px;
+  font-size: 0.875em;
+  font-family: $font-family-base;
+  font-weight: 700;
+  background-color: $primary;
+  color: $white;
+  border-width: 2px !important;
+  border-style: solid !important;
+  border-color: $primary;
+  text-decoration: none !important;
+  border-radius: 5px;
+  &:visited {
+    color: $white;
+    border-color: $primary;
+  }
+  &:hover {
+    background-color: $white;
+    color: $primary;
+    border-color: $primary;
+  }
+}
+
+// Success button
+.btn-success {
+  background-color: $success;
+  color: $white;
+  border-color: $success;
+  &:visited {
+    color: $white;
+    border-color: $success;
+  }
+  &:hover {
+    background-color: $white;
+    color: $success;
+    border-color: $success;
+  }
+}
+
+// Warning button
+.btn-warning {
+  background-color: $warning;
+  color: $white;
+  border-color: $warning;
+  &:visited {
+    color: $white;
+    border-color: $warning;
+  }
+  &:hover {
+    background-color: $white;
+    color: $warning;
+    border-color: $warning;
+  }
+}
+
+// Danger button
+.btn-danger {
+  background-color: $danger;
+  color: $white;
+  border-color: $danger;
+  &:visited {
+    color: $white;
+    border-color: $danger;
+  }
+  &:hover {
+    background-color: $white;
+    color: $danger;
+    border-color: $danger;
+  }
+}
+
+// Information button
+.btn-info {
+  background-color: $info;
+  color: $white;
+  border-color: $info;
+  &:visited {
+    border-color: $info;
+    color: $white;
+  }
+  &:hover {
+    background-color: $white;
+    color: $info;
+    border-color: $info;
+  }
+}
