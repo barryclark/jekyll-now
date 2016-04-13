@@ -108,6 +108,9 @@ On the identity server, these are the critical configuration pages for a new **R
 
 ## Endpoints ##
 
+{:.center}
+![]( /images/adfs-identity/pic32.jpg){:style="margin:auto"}
+
 This is the page which lists all browser source endpoints which are to be considered valid by the identity server. Here you see the entry which comes into play while we are debugging locally. Once your application has been uploaded to server, e.g. Azure, you must add the new endpoint e.g.:
 
 `https://xxxxxxxxxx.azurewebsites.net/`
@@ -119,7 +122,7 @@ This is the page which lists all browser source endpoints which are to be consid
 **Issuance Authorization Rules**
 
 {:.center}
-![]( /images/adfs-identity/pic32.jpg){:style="margin:auto"}
+![]( /images/adfs-identity/pic33.jpg){:style="margin:auto"}
 
 **Issuance Transform Rules**
 
@@ -128,12 +131,12 @@ This is where we define which identity claims will go out to the requesting appl
 Add a rule named e.g. **AD2OutgoingClaims**
 
 {:.center}
-![]( /images/adfs-identity/pic33.jpg){:style="margin:auto"}
+![]( /images/adfs-identity/pic34.jpg){:style="margin:auto"}
 
 and edit it like this:
 
 {:.center}
-![]( /images/adfs-identity/pic34.jpg){:style="margin:auto"}
+![]( /images/adfs-identity/pic35.jpg){:style="margin:auto"}
 
 The last line is the special one (the others being fairly standard). The last line causes AD to export every group that the user belongs to as a role, which can then be queried on the application side.
 
