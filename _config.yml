@@ -31,10 +31,10 @@ kramdown:
 ####################################
 #
 owner:
-  name: Robert C. Kalajian Jr.
-  avatar: https://en.gravatar.com/userimage/204666/aa4e860423a227456a9e2ce28ade8907.png?size=200
-  job: Senior Developer, Writer
-  bio: Father. Lover. Geek.
+  name: A Pawn's Perspective
+  avatar: avatar.png
+  job: Robert C. Kalajian Jr.
+  bio: A little depth into my tabletop hobby
   email: rkalajian@gmail.com
   disqus-shortname: rck2
   twitter: rkalajian
