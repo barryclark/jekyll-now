@@ -62,7 +62,7 @@ Compile the project.
 
 If you are wondering where all of the authentication code resides (or if you need to modify an existing project!), here are the details:
 
-The App ID URI and the On-Premises Authority URL are stored in the <appSettings> node of web.config:
+The App ID URI and the On-Premises Authority URL are stored in the `<appSettings>` node of web.config:
 
 ~~~xml
 <add key="ida:ADFSMetadata" value="https://xxxxxxxxxx.com/FederationMetadata/2007-06/FederationMetadata.xml" />
