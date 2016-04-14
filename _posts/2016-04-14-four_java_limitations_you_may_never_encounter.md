@@ -4,6 +4,7 @@ title: Four Java Limitations You May Never Encounter
 tags: [java]
 keywords: [programming, list, limit]
 image: /images/Java_logo.png
+excerpt: 1. Maximum and Minumum values 2. String Length 3. Constant String Length 4. Variable Name Length
 ---
 
 
@@ -84,7 +85,7 @@ Here is the complaint the compiler gives:
 error: constant string too long
 ```
 
-## 4. Variable Length
+## 4. Variable Name Length
 
 I hope you never encounter this restriction. Java variable names (and probably other Java-named constructs, however I didn't verify this) can have at most 65,536 characters. The following variable name has one more than that (65,536) and won't compile:
 
