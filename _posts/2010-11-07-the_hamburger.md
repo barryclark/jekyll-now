@@ -3,6 +3,7 @@ layout: post
 title: The Hamburger
 tags: [culture, old blog]
 keywords: [Bob Evans, McDonalds, Burger King, Wendys, hamburger]
+image: /images/burgers/bobevans.jpg
 ---
 
 Ah yes, the humble hamburger, also known as the burger. A special sandwich from the far away land of Hamburg.
