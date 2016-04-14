@@ -1,3 +1,4 @@
+{% capture cache %}
 {% if page.permalink contains '/tags/' %}
 	{% assign posts=site.tags[page.title] %}
 {% else %}
@@ -39,6 +40,7 @@
 		{% endfor %}
 	{% endfor %}
 {% endunless %}
+{% endcapture %}{% assign jbcache = nil %}
 <!DOCTYPE html>
 <html lang="en-us">
 	<head>
