@@ -1,42 +1,49 @@
 {% capture cache %}
+
+{% if page.mathjax %}{% assign mathjax = true %}{% endif %}
+{% if page.jquery %}{% assign jquery = true %}{% endif %}
+{% assign javascripts = "" | split: "" %}
+{% assign csses = "" | split: "" %}
+
 {% if page.permalink contains '/tags/' %}
 	{% assign posts=site.tags[page.title] %}
 {% else %}
 	{% assign posts=paginator.posts %}
 {% endif %}
-{% if page.mathjax %}{% assign mathjax = true %}{% endif %}
-{% if page.jquery %}{% assign jquery = true %}{% endif %}
-{% unless page.isPost %}
-	{% for post in posts %}
-		{% if post.mathjax %}{% assign mathjax = true %}{% endif %}
-		{% if post.jquery %}{% assign jquery = true %}{% endif %}
-	{% endfor %}
-{% endunless %}
-{% assign javascripts = "" | split: "" %}
+
 {% if page.javascript %}{% assign javascripts = javascripts | push: page.javascript %}{% endif %}
+
 {% for javascript in page.javascripts %}
 	{% unless javascripts contains javascript %}
 		{% assign javascripts = javascripts | push: javascript %}
 	{% endunless %}
 {% endfor %}
-{% unless page.isPost %}
-	{% for post in posts %}
-		{% unless javascripts contains post.javascript %}{% assign javascripts = javascripts | push: post.javascript %}{% endunless %}
-		{% for javascript in post.javascripts %}
-			{% unless javascripts contains javascript %}{% assign javascripts = javascripts | push: javascript %}{% endunless %}
-		{% endfor %}
-	{% endfor %}
-{% endunless %}
-{% assign csses = "" | split: "" %}
+
 {% if page.css %}{% assign csses = csses | push: page.css %}{% endif %}
+
 {% for css in page.csses %}
 	{% unless csses contains css %}{% assign csses = csses | push: css %}{% endunless %}
 {% endfor %}
+
 {% unless page.isPost %}
 	{% for post in posts %}
-		{% unless csses contains post.css %}{% assign csses = csses | push: post.css %}{% endunless %}
+		{% if post.mathjax %}{% assign mathjax = true %}{% endif %}
+		{% if post.jquery %}{% assign jquery = true %}{% endif %}
+	
+		{% unless csses contains post.css %}
+			{% assign csses = csses | push: post.css %}
+		{% endunless %}
+		
 		{% for css in post.csses %}
 			{% unless csses contains css %}{% assign csses = csses | push: css %}{% endunless %}
+		{% endfor %}
+		
+		{% unless javascripts contains post.javascript %}
+			{% assign javascripts = javascripts | push: post.javascript %}
+		{% endunless %}
+		
+		{% for javascript in post.javascripts %}
+			{% unless javascripts contains javascript %}{% assign javascripts = javascripts | push: javascript %}{% endunless %}
 		{% endfor %}
 	{% endfor %}
 {% endunless %}
