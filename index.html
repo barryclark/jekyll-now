@@ -5,7 +5,9 @@ layout: default
 <div class="posts">
   {% for post in site.posts %}
     <article class="post">
-
+      {% if post.feature %}
+        <img src="{{ site.url }}/images/{{ page.feature }}"
+      {% endif %}<br/>
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
       <div class="entry">
