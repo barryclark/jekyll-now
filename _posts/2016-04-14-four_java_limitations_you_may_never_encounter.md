@@ -4,11 +4,11 @@ title: Four Java Limitations You May Never Encounter
 tags: [java]
 keywords: [programming, list, limit]
 image: /images/Java_logo.png
-excerpt: 1. Maximum and Minumum values; 2. String Length; 3. Constant String Length; 4. Variable Name Length
+excerpt: 1. Maximum and Minimum values; 2. String Length; 3. Constant String Length; 4. Variable Name Length
 ---
 
 
-## 1. Maximum and Minumum values
+## 1. Maximum and Minimum values
 
 I'll start with one you *probably* have encountered... Or least covered in an introductory class. Computers can only count so high and so low. Java is no exception. Thankfully, Java keeps these values in conviently-named variables called `MAX_VALUE` and `MIN_VALUE`. Each of [the numerical wrapper classes for the Java primitives](https://docs.oracle.com/javase/tutorial/java/data/numberclasses.html) have one of each of these variables.
 
