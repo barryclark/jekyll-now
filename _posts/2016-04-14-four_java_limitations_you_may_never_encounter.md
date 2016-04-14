@@ -3,6 +3,7 @@ layout: post
 title: Four Java Limitations You May Never Encounter
 tags: [java]
 keywords: [programming, list, limit]
+image: /images/Java_logo.png
 ---
 
 
