@@ -9,14 +9,14 @@
 <!-- LinkedIn Share -->
 <div>
 <script src="https://platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
-<script type="IN/Share" data-url="{{ page_url }}" data-counter="right"></script>
+<script type="IN/Share" data-url="{{ page_url  | strip }}" data-counter="right"></script>
 </div>
 
 {% unless page.facebook_post %}
 <!-- Facebook Like & Share -->
 <div>
   <div class="fb-like" 
-    data-href="{{ page_url }}" 
+    data-href="{{ page_url | strip }}" 
     data-layout="standard" 
     data-action="like" 
     data-share="true"
