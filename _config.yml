@@ -15,6 +15,10 @@ avatar: https://en.gravatar.com/userimage/204666/aa4e860423a227456a9e2ce28ade890
 # Flags below are optional
 #
 
+#pagination
+
+paginate: 5
+
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
@@ -66,6 +70,7 @@ sass:
 # Use the following plug-ins
 gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+  - jekyll-paginate #pagination
 
 # Exclude these files from your production _site
 exclude:
