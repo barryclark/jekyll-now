@@ -1,6 +1,6 @@
 ---
 layout: post
-title: -Unboxing- Dragoon
+title: Unboxing Dragoon
 category: unboxing
 feature: dragoon-feature.jpg
 ---
@@ -9,12 +9,12 @@ Back in March of last year I did a [preview of Dragoon](http://www.purplepawn.co
 
 Eager to dig in, I decided to do an unboxing of the game in photo format.
 
-![Dragoon Box]({{ site.url }}/dragoon/dragoon-box.jpg)
-![Dragoon Box Opened]({{ site.url }}/dragoon/dragoon-box-open.jpg)
-![Dragoon Components]({{ site.url }}/dragoon/dragoon-components.jpg)
-![Dragoon Map]({{ site.url }}/dragoon/dragoon-map.jpg)
-![Dragoon Bag]({{ site.url }}/dragoon/dragoon-bag.jpg)
-![Dragoon Dragons]({{ site.url }}/dragoon/dragoon-dragons.jpg)
-![Dragoon Cards]({{ site.url }}/dragoon/dragoon-cards.jpg)
+![Dragoon Box]({{ site.url }}/images/dragoon/dragoon-box.jpg)
+![Dragoon Box Opened]({{ site.url }}/images/dragoon/dragoon-box-open.jpg)
+![Dragoon Components]({{ site.url }}/images/dragoon/dragoon-components.jpg)
+![Dragoon Map]({{ site.url }}/images/dragoon/dragoon-map.jpg)
+![Dragoon Bag]({{ site.url }}/images/dragoon/dragoon-bag.jpg)
+![Dragoon Dragons]({{ site.url }}/images/dragoon/dragoon-dragons.jpg)
+![Dragoon Cards]({{ site.url }}/images/dragoon/dragoon-cards.jpg)
 
 The game is excellent, and I can't recommend it enough. Lay Waste did an excellent job producing the game with all its excellent bits.
