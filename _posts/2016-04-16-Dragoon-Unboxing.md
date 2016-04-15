@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [Unboxing] Dragoon
+title: -Unboxing- Dragoon
 category: unboxing
 feature: dragoon-feature.jpg
 ---
