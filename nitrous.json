@@ -1,0 +1,10 @@
+{
+  "template": "jekyll",
+  "ports": [3000],
+  "name": "Jekyll Now",
+  "description": "Build a Jekyll blog in minutes, without touching the command line.",
+  "scripts": {
+    "post-create": "gem install jekyll-feed && gem install jekyll-sitemap",
+    "Start Jekyll Now": "cd ~/code/jekyll-now && jekyll serve --host 0.0.0.0 --port 3000"
+  }
+}
