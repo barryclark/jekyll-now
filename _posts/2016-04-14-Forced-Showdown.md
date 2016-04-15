@@ -9,4 +9,4 @@ I'm starting to see several video games use the deck-building mechanic now. [Han
 
 *UPDATE: I got a chance to play and stream! Check it out below.*
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/1Ow2i7acYQM" frameborder="0" allowfullscreen></iframe>
+<center><iframe width="640" height="360" src="https://www.youtube.com/embed/1Ow2i7acYQM" frameborder="0" allowfullscreen></iframe></center>
