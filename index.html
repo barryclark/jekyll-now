@@ -3,7 +3,7 @@ layout: main
 ---
 
 <div class="posts">
-  {% for post in site.posts %}
+  {% for post in site.posts limit:8 %}
     <article class="post">
 
       <h1>
@@ -20,3 +20,5 @@ layout: main
     </article>
   {% endfor %}
 </div>
+
+<a href="{{ site.baseurl }}/articles">Older articles</a>

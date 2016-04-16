@@ -1,0 +1,18 @@
+---
+layout: main
+---
+
+<p>All my blog posts are listed here.</p>
+
+<ul class="all-posts">
+  {% for post in site.posts %}
+    <li>
+      <article class="post">
+        <h2>
+          <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+          <span class="date">- {{ post.date | date: '%B %d, %Y'}}</span>
+        </h2>
+      </article>
+    </li>
+  {% endfor %}
+</ul>
