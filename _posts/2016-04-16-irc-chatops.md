@@ -45,7 +45,7 @@ I give full credit to Slack to reimagine what IRC can look like in the 21st cent
 Rocket.chat on the other hand is Open Source and we are hosting it in our infrastructure. We are keeping costs extremely low by having operations completely automated (which has the welcome side effect of giving our ops team a proving ground to support our Technology stratgy around Docker and CI/CD). And even more importantly – we got full approval by our legal department.
 
 ### How to use it?
-We don’t have many rules, and we hope we don’t have to. The language tends to be English in open channels and in #general (where everyone is by default). We strive to keep in mind that there might be colleagues that don’t speak German. Beyond that e ask everyone to be courtegeous, open, helpful, respectful and welcoming – the same way we would want to be treated. 
+We don’t have many rules, and we hope we don’t have to. The language tends to be English in open channels and in #general (where everyone is by default). We strive to keep in mind that there might be colleagues that don’t speak German. Beyond that we ask everyone to be courtegeous, open, helpful, respectful and welcoming – the same way we would want to be treated. 
 
 ### Beyond chat
 Chat and chat bots are very trendy this year – there is plenty of experimentation around leverging it as a new channel for commerce, marketing, products and customers. Rocket.chat is Microsoft, Facebook, Slack – they are all trying it out. We now have the platform to do so as well if we want to.
