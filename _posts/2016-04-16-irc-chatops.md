@@ -20,19 +20,19 @@ Rocket.chat is a group chat tool you can use to communicate internally in projec
 We know. But Slack has taken the software industry by storm over the last 3 years. We felt that IRC-style communication fits into a niche where social tools don’t. We experimented with Slack and many of us loved it so we used it daily. We got a lot of good feedback from our Slack pilot over the last year and already more than 100 colleagues registered in the first 24h after our Rocket.chat instance went live. 
 
 If you are curious why we felt the need to support this very distinct form of communication, you might find some interesting information and ideas in the following articles:
-•   [Modelling mediums of communication](http://techcrunch.com/2015/04/07/modeling-mediums-of-communication/)
-•   [IRC - The secret to success of Open Source](https://developer.ibm.com/opentech/2015/12/20/irc-the-secret-to-success-in-open-source/)
-•   [Is Slack the new LMS](https://medium.com/synapse/is-slack-the-new-lms-7d1c15ff964f#.m6r5c1b31)
+* [Modelling mediums of communication](http://techcrunch.com/2015/04/07/modeling-mediums-of-communication/)
+* [IRC - The secret to success of Open Source](https://developer.ibm.com/opentech/2015/12/20/irc-the-secret-to-success-in-open-source/)
+* [Is Slack the new LMS](https://medium.com/synapse/is-slack-the-new-lms-7d1c15ff964f#.m6r5c1b31)
 
 IRC-style communication has been around since the dawn of the Internet and continues to draw a large group of active users. As we strive to create an open and collaborative culture at Haufe, we felt that there was a need to complement the linear social-media style communication of somthing like Yammer with an active IRC-style chat model. As mentioned above, IRC style chat seems to encourage active exchange of knowledge 
 
 But there is more. Based on the phenomenal success of Slack in the Software industry, companies are starting to experiment with Chatops as a new take on devops:
-•   [What is Chatops](https://www.pagerduty.com/blog/what-is-chatops/)
-•   [Chatops Adaption Guide](http://blogs.atlassian.com/2016/01/what-is-chatops-adoption-guide/)
+* [What is Chatops](https://www.pagerduty.com/blog/what-is-chatops/)
+* [Chatops Adaption Guide](http://blogs.atlassian.com/2016/01/what-is-chatops-adoption-guide/)
 
 And last but not least, there is even a trend in the UX community to leverage chat (or so called `conversational interfaces`) as a new User Experience paradigm:
-•   [On Chat as an interface](https://medium.com/@acroll/on-chat-as-interface-92a68d2bf854#.vhtlcvkxj)
-•   [The next phase of UX is designing chatbots](http://www.fastcodesign.com/3054934/the-next-phase-of-ux-designing-chatbot-personalities)
+* [On Chat as an interface](https://medium.com/@acroll/on-chat-as-interface-92a68d2bf854#.vhtlcvkxj)
+* [The next phase of UX is designing chatbots](http://www.fastcodesign.com/3054934/the-next-phase-of-ux-designing-chatbot-personalities)
 
 Needless to say, we felt that there is not just a compelling need for a tool matching the communication needs of our developer community, but even more a chance to experience first hand through our daily work some of the trends shaping our industry.
 
@@ -48,9 +48,9 @@ We don’t have many rules, and we hope we don’t have to. The language tends t
 Chat and chat bots are very trendy this year – there is plenty of experimentation around leverging it as a new channel for commerce, marketing, products and customers. Rocket.chat is Microsoft, Facebook, Slack – they are all trying it out. We now have the platform to do so as well if we want to.
 
 But don’t take our word for it – check out the following links:
-•   [2016 will be the year of conversational commerce](https://medium.com/chris-messina/2016-will-be-the-year-of-conversational-commerce-1586e85e3991#.aathpymsh)
-•   [Conversational User Interfaces](http://www.wired.com/2013/03/conversational-user-interface/)
-•   [Microsoft to announce Chatbots](http://uk.businessinsider.com/microsoft-to-announce-chatbots-2016-3)
+* [2016 will be the year of conversational commerce](https://medium.com/chris-messina/2016-will-be-the-year-of-conversational-commerce-1586e85e3991#.aathpymsh)
+* [Conversational User Interfaces](http://www.wired.com/2013/03/conversational-user-interface/)
+* [Microsoft to announce Chatbots](http://uk.businessinsider.com/microsoft-to-announce-chatbots-2016-3)
 
 Rocket.chat comes with a simple but good API and [a framework for building bots](https://github.com/RocketChat/hubot-rocketchat). We are already looking at integrating with our internal tools like Git, Confluence, Jira, Jenkins and Go.CD.
 
