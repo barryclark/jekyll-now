@@ -20,12 +20,12 @@ My biggest thing is mountainboarding. Mountainboarding is a mashup of skateboard
 
 <figure class="content-youtube">
 	<iframe src="http://www.youtube.com/embed/9cTG0U6IMHU" frameborder="0" allowfullscreen></iframe>
-	<figcaption>Dirt jumps are fun</figcaption>
+	<figcaption>Dirt jumps are fun! Here some riding in Boulder, CO, with my friend Kody Stewart</figcaption>
 </figure>
 
 Mountainboarding has done a lot for me. It's the reason why I got into web development in the first place: I setup the [first mountainboard community website](http://www.amtbzone.com) in France around 2002. At the time I was a student in electrical engineering and all that database crap bore me pretty bad, but nobody else was going to do it, so I did.
 
-After a while I started enjoying it a whole lot more, and rebuild that site as [www.mountainboard.fr](http://www.mountainboard.fr) (a little outdated now, I'm hoping to respons-ify it soon). I learned so much! In the meantime, I spent a few years as a consultant in the automotive industry (not my thing, really), but thanks to my experience, managed to get a job as a web developer with a startup in Toulouse.
+After a while I started enjoying it a whole lot more, and rebuild that site as [www.mountainboard.fr](http://www.mountainboard.fr). I learned so much! In the meantime, I spent a few years as a consultant in the automotive industry (not my thing, really), but thanks to my experience, managed to get a job as a web developer with a startup in Toulouse.
 
 If not for mountainboarding, I have no idea what kind of job I'd have today.
 
@@ -33,7 +33,7 @@ If not for mountainboarding, I have no idea what kind of job I'd have today.
 
 I also like to snowboard, surf and skateboard a bit. People have told me that that's all the same thing. Is it? I don't see it that way :)
 
-Perhaps talking about how I like photography and have some interest in design would make me sound a little less one-sided, but I'm afraid to sound like a hipster now. I will say, though, that you will never find me in line at Starbucks!
+Perhaps talking about how I like photography and have some interest in design would make me sound a little less one-sided, but I'm afraid of sounding like a hipster now. I will say, though, that you will never find me in line at Starbucks!
 
 
 
