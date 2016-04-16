@@ -47,6 +47,7 @@ layout: default
         {% assign author_content = author_content_temp %}
         {% if author.twitter %}
           {% capture author_twitter %}<a href="https://twitter.com/{{ author.twitter }}" target="_blank"><i class="fa fa-twitter-square">&nbsp;</i></a>{% endcapture %}
+          {% capture tweet_link %} by @{{ author.twitter }}{% endcapture %}
         {% endif %}
         {% if author.linkedin %}
           {% capture author_linkedin %}<a href="https://www.linkedin.com/in/{{ author.linkedin }}" target="_blank"><i class="fa fa-linkedin-square"> </i></a>{% endcapture %}
@@ -79,6 +80,13 @@ layout: default
 <!-- Post Content -->
 <article>
     <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+          <a href="https://twitter.com/share" class="twitter-share-button" data-text='"{{ page.title }}" blog post{{ tweet_link }}' data-via="HaufeDev">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+          <script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
+<script type="IN/Share"></script>
+        </div>
+        </div>
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 
