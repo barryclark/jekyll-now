@@ -25,7 +25,7 @@ If you are curious why we felt the need to support this very distinct form of co
 * [IRC - The secret to success of Open Source](https://developer.ibm.com/opentech/2015/12/20/irc-the-secret-to-success-in-open-source/)
 * [Is Slack the new LMS](https://medium.com/synapse/is-slack-the-new-lms-7d1c15ff964f#.m6r5c1b31)
 
-IRC-style communication has been around since the dawn of the Internet and continues to draw a large group of active users. As we strive to create an open and collaborative culture at Haufe, we felt that there was a need to complement the linear social-media style communication of somthing like Yammer with an active IRC-style chat model. As mentioned above, IRC style chat seems to encourage active exchange of knowledge 
+IRC-style communication has been around since the dawn of the Internet and continues to draw a large group of active users. As we strive to create an open and collaborative culture at Haufe, we felt that there was a need to complement the linear social-media style communication of somthing like Yammer with an active IRC-style chat model. As mentioned above, IRC style chat seems to encourage active exchange of knowledge and helps us in creating a [learning organisation](https://en.wikipedia.org/wiki/Learning_organization).
 
 But there is more. Based on the phenomenal success of Slack in the Software industry, companies are starting to experiment with Chatops as a new take on devops:
 
