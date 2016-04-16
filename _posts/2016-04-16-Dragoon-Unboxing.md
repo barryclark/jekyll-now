@@ -11,7 +11,7 @@ Eager to dig in, I decided to do an unboxing of the game in photo format.
 
 ![Dragoon Box]({{ site.url }}/images/dragoon/dragoon-box.jpg)
 ![Dragoon Box Opened]({{ site.url }}/images/dragoon/dragoon-box-open.jpg)
-![Dragoon Components]({{ site.url }}/images/dragoon/dragoon-components.jpg)
+![Dragoon Contents]({{ site.url }}/images/dragoon/dragoon-contents.jpg)
 ![Dragoon Map]({{ site.url }}/images/dragoon/dragoon-map.jpg)
 ![Dragoon Bag]({{ site.url }}/images/dragoon/dragoon-bag.jpg)
 ![Dragoon Dragons]({{ site.url }}/images/dragoon/dragoon-dragons.jpg)
