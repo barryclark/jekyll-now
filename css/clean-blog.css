@@ -13,9 +13,6 @@ p {
   line-height: 1.5;
   margin: 30px 0;
 }
-p a {
-  text-decoration: underline;
-}
 h1,
 h2,
 h3,
@@ -26,6 +23,7 @@ h6 {
   font-weight: 800;
 }
 a {
+  text-decoration: underline;
   color: #404040;
 }
 a:hover,
