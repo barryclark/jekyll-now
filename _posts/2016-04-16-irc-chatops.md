@@ -18,16 +18,15 @@ Rocket.chat is a group chat tool you can use to communicate internally in projec
 … but we already have so many!
 
 We know. But Slack has taken the software industry by storm over the last 3 years. We felt that IRC-style communication fits into a niche where social tools don’t. We experimented with Slack and many of us loved it so we used it daily. We got a lot of good feedback from our Slack pilot over the last year and already more than 100 colleagues registered in the first 24h after our Rocket.chat instance went live. 
-
 If you are curious why we felt the need to support this very distinct form of communication, you might find some interesting information and ideas in the following articles:
 
 * [Modelling mediums of communication](http://techcrunch.com/2015/04/07/modeling-mediums-of-communication/)
 * [IRC - The secret to success of Open Source](https://developer.ibm.com/opentech/2015/12/20/irc-the-secret-to-success-in-open-source/)
 * [Is Slack the new LMS](https://medium.com/synapse/is-slack-the-new-lms-7d1c15ff964f#.m6r5c1b31)
 
-IRC-style communication has been around since the dawn of the Internet and continues to draw a large group of active users. As we strive to create an open and collaborative culture at Haufe, we felt that there was a need to complement the linear social-media style communication of somthing like Yammer with an active IRC-style chat model. As mentioned above, IRC style chat seems to encourage active exchange of knowledge and helps us in creating a [learning organisation](https://en.wikipedia.org/wiki/Learning_organization).
+IRC-style communication has been around since the dawn of the Internet and continues to draw a large group of active users. As we strive to create an open and collaborative culture at Haufe, we felt that there was a need to complement the linear social-media style form of communication of something like Yammer with an active IRC-style chat model. As mentioned above, IRC style chat seems to encourage the active exchange of knowledge and helps us in creating a [learning organisation](https://en.wikipedia.org/wiki/Learning_organization).
 
-But there is more. Based on the phenomenal success of Slack in the Software industry, companies are starting to experiment with Chatops as a new take on devops:
+But there is more. Based on the phenomenal success of Slack in the software industry, companies are starting to experiment with Chatops as a new take on devops:
 
 * [What is Chatops](https://www.pagerduty.com/blog/what-is-chatops/)
 * [Chatops Adaption Guide](http://blogs.atlassian.com/2016/01/what-is-chatops-adoption-guide/)
@@ -37,18 +36,18 @@ And last but not least, there is even a trend in the UX community to leverage ch
 * [On Chat as an interface](https://medium.com/@acroll/on-chat-as-interface-92a68d2bf854#.vhtlcvkxj)
 * [The next phase of UX is designing chatbots](http://www.fastcodesign.com/3054934/the-next-phase-of-ux-designing-chatbot-personalities)
 
-Needless to say, we felt that there is not just a compelling need for a tool matching the communication needs of our developer community, but even more a chance to experience first hand through our daily work some of the trends shaping our industry.
+Needless to say, we felt that there is not just a compelling case for a tool matching the communication needs of our developer community, but even more a chance to experience first hand through our daily work some of the trends shaping our industry.
 
 ### So why not Slack
-I give full credit to Slack to reimagine what IRC can look like in the 21st century. But for our needs as a medium across our developer community it has two major drawbacks. The price tag rises very quickly in an aross the company rollout. But even more importantly we could not get approval from our legal department due to Germany's strict data privacy rules. 
+I give full credit to Slack to reimagine what IRC can look like in the 21st century. But for our needs as a forum across our developer community it has two major drawbacks. The price tag rises very quickly if wanted to role it out aross our entire company. But even more importantly we could not get approval from our legal department due to Germany's strict data privacy rules. 
 
-Rocket.chat on the other hand is Open Source and we are hosting it in our infrastructure. We are keeping costs extremely low by having operations completely automated (which has the welcome side effect of giving our ops team a proving ground to support our Technology stratgy around Docker and CI/CD). And even more importantly – we got full approval by our legal department.
+Rocket.chat on the other hand is Open Source and we are hosting it in our infrastructure. We are keeping costs extremely low by having operations completely automated (which has the welcome side effect of giving our ops team a proving ground to support our Technology Stratgy around Docker and CI/CD). And we got full approval by our legal department on top.
 
 ### How to use it?
 We don’t have many rules, and we hope we don’t have to. The language tends to be English in open channels and in #general (where everyone is by default). We strive to keep in mind that there might be colleagues that don’t speak German. Beyond that we ask everyone to be courtegeous, open, helpful, respectful and welcoming – the same way we would want to be treated. 
 
 ### Beyond chat
-Chat and chat bots are very trendy this year – there is plenty of experimentation around leverging it as a new channel for commerce, marketing, products and customers. Rocket.chat is Microsoft, Facebook, Slack – they are all trying it out. We now have the platform to do so as well if we want to.
+Chat and chat bots are very trendy this year – there is plenty of experimentation around leveraging it as a new channel for commerce, marketing, products, customers and services. Microsoft, Facebook, Slack – they are all trying it out. We now have the platform to do so as well if we want to.
 
 But don’t take our word for it – check out the following links:
 
