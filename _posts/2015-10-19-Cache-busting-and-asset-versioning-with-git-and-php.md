@@ -8,7 +8,7 @@ published: true
 One of the most efficient ways to leverage client-side caching of asset files (JS, CSS, images, fonts and others) is to configure the server so it will serve files with an expiration date set far in the future (say a month) via the `ExpiresDefault` header. Once clients have loaded a file, they won't check for updates on the server at all for a full month. The consequence is faster subsequent page loads. Nice. However, if you need to deploy changes to that file, your users are likely to see some issues since the browser won't download the updated version. So what do you do?
 
 ## The solution
-A long-established practice to bust the browser cache is to make sure clients load assets with URLs they've never encountered before. We could just generate random names, but when will they change? Luckily, if you're using a versioning system (you are, right?), you can leverageto a file with each version. We'll just make that string part of the asset file names, and will be on our way to easy cache-busting.
+A long-established practice to bust the browser cache is to make sure clients load assets with URLs they've never encountered before. We could just generate random names, but when should they change? Luckily, if you're using a versioning system (you are, right?), you can leverage that to generate a unique string with each version. We'll just make that string part of the asset file names, and will be on our way to easy cache-busting.
 
 SVN has revision numbers, Git has commit hashes. We're going to look into Git, but [check out this script if you want a (slightly different) example in SVN](
 https://github.com/mikaelgramont/mountainboardfr/blob/master/bin/svnassets.php).
