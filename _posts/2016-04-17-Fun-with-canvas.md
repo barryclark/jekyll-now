@@ -18,7 +18,7 @@ What is it? Well hopefully you can see it below, it's a tiny thing that builds m
 Refreshing the page will result in totally different layout, give it a try!
 
 ### How it works
-The core idea is to use a fixed set of possible blocks, and [Markov chains](http://setosa.io/blog/2014/07/26/markov-chains/) to decide on what block comes next. Once we have a list of block types, we can map those to sprites and render through a canvas element.
+The core idea is to use a fixed set of possible blocks, and [Markov chains](http://setosa.io/blog/2014/07/26/markov-chains/) to decide what block type comes after the current one. Once we have a list of block types, we can map those to actual sprites and render through a canvas element.
 
 I could have stopped there but I tried to go one step further, and have some form of "section detection", so that I could use different sprites for the left and right edges of a platform.
 
