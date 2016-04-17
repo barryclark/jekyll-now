@@ -54,6 +54,7 @@ But don’t take our word for it – check out the following links:
 * [2016 will be the year of conversational commerce](https://medium.com/chris-messina/2016-will-be-the-year-of-conversational-commerce-1586e85e3991#.aathpymsh)
 * [Conversational User Interfaces](http://www.wired.com/2013/03/conversational-user-interface/)
 * [Microsoft to announce Chatbots](http://uk.businessinsider.com/microsoft-to-announce-chatbots-2016-3)
+* [Facebook's Future in Chatbots](http://www.platformnation.com/2016/04/15/a-future-of-chatbots/)
 
 Rocket.chat comes with a simple but good API and [a framework for building bots](https://github.com/RocketChat/hubot-rocketchat). We are already looking at integrating with our internal tools like Git, Confluence, Jira, Jenkins and Go.CD.
 
