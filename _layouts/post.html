@@ -16,7 +16,7 @@ layout: default
     Written on {{ page.date | date: "%B %e, %Y" }} {% if page.feature %}in {{ page.category }} {% endif %} <br/>
     Tags: 
     {% for tag in page.tags %}
-      <a href="#{{ tag | slugify }}"> {{ tag }} </a>
+      <a href="/tag/#{{ tag | slugify }}"> {{ tag }} </a>
     {% endfor %}
   </div>
 
