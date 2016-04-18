@@ -11,7 +11,11 @@ layout: default
     <img src="{{ site.url }}/images/{{ post.feature }}">
   {% endif %}
   <div class="entry">
-    {{ post.excerpt }}
+    {{ post.excerpt }}<br/>
+    Tags:
+    {% for tag in post.tags %}
+      <a href="#{{ tag | slugify }}"> {{ tag }} </a>
+    {% endfor %}
   </div>
 
   <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
