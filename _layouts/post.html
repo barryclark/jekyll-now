@@ -13,7 +13,11 @@ layout: default
   </div>
 
   <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }} {% if page.feature %}in {{ page.category }} {% endif %}
+    Written on {{ page.date | date: "%B %e, %Y" }} {% if page.feature %}in {{ page.category }} {% endif %} <br/>
+    Tags: 
+    {% for page in tags %}
+      <a href="#{{ tag | slugify }}"> {{ tag }} </a>
+    {% endfor %}
   </div>
 
   {% include disqus.html %}
