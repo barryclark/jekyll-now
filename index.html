@@ -12,12 +12,15 @@ layout: default
   {% endif %}
   <div class="entry">
     {{ post.excerpt }}<br/>
-    Tags:
-    {% for tag in post.tags %}
+  </div>
+
+  <div class="date">
+    Written on {{ page.date | date: "%B %e, %Y" }} {% if page.feature %}in {{ page.category }} {% endif %} <br/>
+    Tags: 
+    {% for tag in page.tags %}
       <a href="#{{ tag | slugify }}"> {{ tag }} </a>
     {% endfor %}
   </div>
-
   <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
 </article>
 {% endfor %}
