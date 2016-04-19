@@ -15,7 +15,7 @@ layout: default
   </div>
 
   <div class="date">
-    Written on {{ post.date | date: "%B %e, %Y" }} {% if post.feature %}in <a href="/category/#{{ cat | slugify }}">{{ post.category }}</a> {% endif %} <br/>
+    Written on {{ post.date | date: "%B %e, %Y" }} {% if post.feature %}in <a href="/category/#{{ post.category | slugify }}">{{ post.category }}</a> {% endif %} <br/>
     Tags: 
     {% for tag in post.tags %}
       <a href="/tag/#{{ tag | slugify }}"> {{ tag }} </a>
