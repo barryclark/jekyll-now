@@ -14,4 +14,3 @@ I enjoy reading books, running and hiking short distances, seeing if I can taste
 
 If any of this interests or infuriates you, feel free to follow me on Twitter or contact me at the email below.
 
-### [Contact me](mailto:dylan@dylanherts.com)
