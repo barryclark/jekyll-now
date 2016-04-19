@@ -24,6 +24,8 @@ title: [Ubuntu] Tizen 애플리케이션 개발환경 셋팅
 
 4. proxy 서버 사용 시 sdk 내 설정 (선택)  
    // preference -> General -> Network conncetion
+   
+   
 
 [oracle-jdk]: http://www.oracle.com/technetwork/java/javase/downloads/index.html
 [tizen-sdk]: https://developer.tizen.org/development/tools/download
