@@ -18,7 +18,7 @@ layout: default
     Written on {{ post.date | date: "%B %e, %Y" }} {% if post.feature %}in <a href="/category/#{{ post.category | slugify }}">{{ post.category }}</a> {% endif %} <br/>
     Tags: 
     {% for tag in post.tags %}
-      <a href="/tag/#{{ tag | slugify }}"> {{ tag }} </a>
+      <a class="tag" href="/tag/#{{ tag | slugify }}"> {{ tag }} </a>
     {% endfor %}
   </div>
   <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
