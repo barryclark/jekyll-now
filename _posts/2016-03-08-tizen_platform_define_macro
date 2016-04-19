@@ -48,7 +48,5 @@ c, cpp file과 같은 source file에서는 아직 macro를 사용 할 수 없는
 
 이제 source code 내에서 PKG_DB_FILE 를 사용할 수 있다.  
 
-   
-
 [macro]: http://www.rpm.org/wiki/PackagerDocs/Macros
 [configure_file]: https://cmake.org/cmake/help/v3.0/command/configure_file.html
