@@ -1,6 +1,8 @@
 ---
 layout: post
 title: High Roller
+category: misc
+tags: [high roller, toy fair, bikes]
 ---
 
 OK, I really just need to start off my post with this image.
