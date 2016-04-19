@@ -14,7 +14,7 @@ Tizen package는 rpm으로 build 되어 target 또는 emulator에 설치 할 수
 .spec file 에서 [macro]를 정의하는 방법은 아래와 같다.  
 
     %global bin_dir /usr/bin  
-    %define data_dir $_datadir  
+    %define data_dir $_datadir   
 
 위와 같은 방식으로 macro를 정의 할 수 있는데, 둘의 차이는 expanded 되는 시점이다.  
  - global : definition time  
