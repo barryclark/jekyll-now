@@ -12,5 +12,5 @@ I think a lot about how the internet and law are problematic for one another, bu
 
 I enjoy reading books, running and hiking short distances, seeing if I can taste differences between reasonably priced whiskies, and pretending to know more about jazz, men's style, computer science, antitrust law, and many other things than I actually do.
 
-If any of this interests or infuriates you, feel free to follow me on Twitter or contact me at the email below.
+If any of this interests or infuriates you, feel free to contact me at the email below.
 
