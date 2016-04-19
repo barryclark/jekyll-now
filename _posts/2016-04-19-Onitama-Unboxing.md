@@ -3,7 +3,7 @@ layout: post
 title: Unboxing Onitama
 category: unboxing
 feature: Onitama-Logo.png
-tags: [games, unboxing, onitama]
+tags: [games, unboxing, onitama, arcane wonders]
 ---
 
 I just wrote up a [review of Onitama](http://www.purplepawn.com/2015/03/kickstarter-previewdragoon/), by Arcane Wonders, for Purple Pawn.  It's an amazing little game with a ton of strategy, depth, and staying power.
