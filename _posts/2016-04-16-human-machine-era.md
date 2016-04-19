@@ -25,6 +25,7 @@ categories: 人工智能 机器学习 深度学习 人类与机器 大战史
 
 
 
+
 [eras]: /images/jinlong_eras.png "人类与机器的关系"
 [agenda]: /images/jinlong_agenda.png "提纲"
 [conclusion]: /images/jinlong_conclusion.png "总结"
