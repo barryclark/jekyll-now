@@ -2,7 +2,7 @@
 layout: default_en
 ---
 
-Come to one of our meetups in [Athens](http://www.meetup.com/BlockchainGreece-0/) or [Thessaloniki](http://www.meetup.com/BlockchainGreece-1/).
+Come to one of our meetups in [Athens](http://www.meetup.com/BlockchainGreece-0/) or [Thessaloniki](http://www.meetup.com/BlockchainGreece-1/). Join our [Slack](http://bitcoingreece.herokuapp.com) (online chat).
 
 [Map search](https://coinmap.org/#/world/38.81403111/24.63134766/6)
 
@@ -20,7 +20,7 @@ Come to one of our meetups in [Athens](http://www.meetup.com/BlockchainGreece-0/
 {% endfor %}
 </table>
 
-Last update: 2016-03-12
+Last update: 2016-03-22
 
 <!-- <div class="posts">
   {% for post in site.posts %}
