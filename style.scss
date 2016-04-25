@@ -334,6 +334,13 @@ nav {
       float:left!important;
       margin-right:2%!important;
   }
+  img.alignLeft {
+    float:left;
+    max-width:30%;
+    padding:1em;
+    background:#2a2c2b;
+    margin:0 1em 0 0;
+  }
 }
 
 .wrapper-footer {
@@ -368,6 +375,22 @@ footer {
       text-shadow:0 0 3px $darkpink;
     }
   }
+}
+
+.featherlight .featherlight-content {
+    border: 0;
+    padding: 0;
+}
+
+.featherlight .featherlight-image {
+    border: 20px solid #fff;
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 1024px) {
+    .featherlight .featherlight-image {
+        border: 10px solid #fff;
+    }
 }
 @import "highlights";
 @import "svg-icons";
