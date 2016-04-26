@@ -8,6 +8,6 @@ permalink: /about/
 
 It's not much for now.
 
-### Contact Us!
+### Contact me
 
 [Join us on Discord!](https://discord.me/ling_n_lang)
