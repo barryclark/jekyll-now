@@ -9,6 +9,6 @@ Thomas Deeny ([@DenaghDesign](https://twitter.com/DenaghDesign)), another [Purpl
 
 Anyway, he added a new image to this section of the Crowdfunding Highlights, and I'm in love with it.
 
-<center>![CAH]({{ site.url }}/images/PPCAH.png)</center>
+![CAH]({{ site.url }}/images/PPCAH.png)
 
 I probably laughed way more than I should have, but seriously, there are so many of these games hitting crowdfunding sites that it's almost a joke in itself. This card is just the icing on the cake.
