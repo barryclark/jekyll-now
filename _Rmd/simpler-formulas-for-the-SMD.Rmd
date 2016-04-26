@@ -1,0 +1,108 @@
+---
+layout: post
+title: Simpler formulas for the standardized mean difference
+date: April 26, 2016
+tags: [meta-analysis, effect-sizes, distribution-theory]
+---
+
+The standardized mean difference (SMD) is surely one of the best known and most widely used effect size metrics used in meta-analysis. In generic terms, the SMD parameter is defined as the difference in population means between two groups (often this difference represents the effect of some intervention), scaled by the population standard deviation of the outcome metric. Estimates of the SMD can be obtained from a wide variety of experimental designs, ranging from simple, completely randomized designs, to repeated measures designs, to cluster-randomized trials.
+
+There's some nuance involved in figuring out how to calculate estimates of the SMD from each design, mostly to do with exactly what sort of standard deviation to use in the denominator of the effect size. I'll leave that discussion for another day. Here, I'd like to look at the question of how to estimate the sampling variance of the SMD. An estimate of the sampling variance is needed in order to meta-analyze a collection of effect sizes, and so it's an important consideration for any research synthesis. However, I think the standard textbook treatments of effect size calculations are often a bit misleading about this question, and so I'd like to suggest a different, more general way of thinking about it, which provides a way to estimate the SMD and its variance in some non-standard cases. All of this will probably be old hat for seasoned synthesists, but I hope it might be useful for students and researchers just getting started with meta-analysis.
+
+To start, let me review (regurgitate?) the standard textbook presentation.
+
+### SMD from a simple, independent groups design
+
+The typical textbook presentation of the SMD estimator focuses on summary statistics from a __simple, independent groups design__. Call the groups T and C, the sample sizes $n_T$ and $n_C$, the sample means $\bar{y}_T$ and $\bar{y}_C$, and the sample variances $s_T^2$ and $s_C^2$. A basic moment estimator of the SMD is then 
+
+$$
+d = \frac{\bar{y}_T - \bar{y}_C}{s_p}
+$$
+
+where $s_p^2 = \frac{\left(n_T - 1\right)s_T^2 + \left(n_C - 1\right) s_C^2}{n_T + n_C - 2}$ is a pooled estimator of the population variance. The standard estimator for the sampling variance of $d$ is 
+
+$$
+V_d = \frac{n_T + n_C}{n_T n_C} + \frac{d^2}{2\left(n_T + n_C - 2\right)},
+$$
+
+or some slight variant thereof. This estimator is based on a delta-method approximation for the asymptotic variance of $d$. 
+
+It is well known that $d$ has a small sample bias that depends on sample sizes. Letting
+
+$$
+J(x) = 1 - \frac{3}{4x - 1},
+$$
+
+the corrected estimator is 
+
+$$
+g = J\left(n_T + n_C - 2\right) \times d,
+$$ 
+
+and is often referred to as Hedges' $g$ because it was proposed in [Hedges (1981)](http://doi.org/10.3102/10769986006002107). Some meta-analysts use $V_d$, but with $d^2$ replaced by $g^2$, as an estimator of the large-sample variance of $g$; others use 
+
+$$
+V_g = J^2\left(n_T + n_C - 2\right) \left(\frac{n_T + n_C}{n_T n_C} + \frac{g^2}{2\left(n_T + n_C - 2\right)}\right).
+$$
+
+[Viechtbauer (2007)](http://doi.org/10.3102/1076998606298034) provides further details on variance estimation and confidence intervals.
+
+### A general formula for $g$ and its sampling variance
+
+The above formulas are certainly useful, but in practice meta-analyses often include studies that use more complex designs. What many presentations do not make clear enough (in my opinion) is that __the variance estimator $V_d$ is only valid for the simple, independent groups design__. With other types of studies, $V_d$ can be a wildly biased estimator of the actual sampling variance of $d$, because it is derived under the assumption that the numerator of $d$ is estimated as the difference in means of two simple random samples. In some designs (e.g., ANCOVA designs, randomized block designs), the treatment effect estimate will be much more precise than this; in other designs (e.g., cluster-randomized trials), it will be less precise. 
+
+Here's a better way to think about the sampling variance of $d$. Let's suppose that we have an unbiased estimator for the difference in means that goes into the numerator of the SMD. Call this estimator $b$, its sampling variance $\text{Var}(b)$, and its standard error $se_{b}$. Also suppose that we have an unbiased (or reasonably close-to-unbiased) estimator of the population variance of the outcome, the square root of which goes into the denominator of the SMD. Call this estimator $S^2$, with expectation $\text{E}\left(S^2\right) = \sigma^2$ and sampling variance $\text{Var}(S^2)$. Finally, suppose that $b$ and $S^2$ are independent (which will usually be a pretty reasonable assumption). A delta-method approximation for the sampling variance of $d = b / S$ is then 
+
+$$
+\text{Var}\left(d\right) \approx \frac{\text{Var}(b)}{\sigma^2} + \frac{\delta^2}{2 \nu},
+$$
+
+where $\nu = 2 \left[\text{E}\left(S^2\right)\right]^2 / \text{Var}\left(S^2\right)$. Plugging in sample estimates of the relevant parameters provides a reasonable estimator for the sampling variance of $d$:
+
+$$
+V_d = \left(\frac{se_b}{S}\right)^2 + \frac{d^2}{2 \nu}.
+$$
+
+For some designs, the degrees of freedom $\nu$ depend only on sample sizes, and thus can be calculated exactly. For some other designs, $\nu$ must be estimated. Furthermore, a small-sample correction for the bias of $d$ is given by 
+
+$$
+g = J(\nu) \times d.
+$$
+
+This small-sample correction is based on a Satterthwaite-type approximation to the distribution of $d$. 
+
+Here's another way to express the variance estimator for $d$: 
+
+$$
+V_d = d^2 \left(\frac{1}{t^2} + \frac{1}{2 \nu}\right),
+$$
+
+where $t$ is the test statistic corresponding to the hypothesis test for no difference between groups. I've never seen that formula in print before, but it could be convenient if an article reports the $t$ statistic (or $F = t^2$ statistic).
+
+### Non-standard estimators of $d$
+
+The advantage of this formulation of $d$, $g$, and $V_d$ is that it can be applied in quite a wide variety of circumstances, including cases that aren't usually covered in textbook treatments. Rather than having to use separate formulas for every design under the sun, the same formulas apply throughout. All that changes are the components of the formulas: the scaled standard error $se_b / S$ and the degrees of freedom $\nu$. A bunch of examples:
+
+__Independent groups with different variances.__ Suppose that we're looking at two independent groups but do not want to assume that their variances are the same. In this case, it would make sense to standardize the difference in means by the control group standard deviation (without pooling), so that $d = \left(\bar{y}_T - \bar{y}_C\right) / s_C$. Since $s_C^2$ has $\nu = n_C - 1$ degrees of freedom, the small-sample bias correction will then need to be $J(n_C - 1)$. The scaled standard error will be
+
+$$
+\frac{se_b}{S} = \sqrt{\frac{s_T^2}{s_C^2 n_T} + \frac{1}{n_C}}.
+$$
+
+This is then everything that we need to calculate $V_d$, $g$, $V_g$, etc.
+
+__Multiple independent groups.__ Suppose that the study involves $K - 1$ treatment groups, 1 control group, and $N$ total participants. If the meta-analysis will include SMDs comparing _each_ treatment group to the control group, it would make sense to pool the sample variance across all $K$ groups rather than just the pair of groups, so that a common estimate of scale is used across all the effect sizes. The pooled standard deviation is then calculated as 
+
+$$
+s_p^2 = \frac{1}{N - K} \sum_{k=0}^K (n_k - 1) s_k^2.
+$$
+
+For a comparison between treatment group $k$ and the control group, we would then use 
+
+$$
+d = \frac{\bar{y}_k - \bar{y}_C}{s_p}, \qquad \nu = N - K, \qquad \frac{se_b}{S} = \sqrt{\frac{1}{n_C} + \frac{1}{n_k}},
+$$
+
+where $n_k$ is the sample size for treatment group $k$. 
+
+__
