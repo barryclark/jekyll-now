@@ -3,10 +3,10 @@
 #
 
 # Name of your site (displayed in the header)
-name: Salteferro
+name: Ling-n-lang Resources
 
 # Short bio or description (displayed in the header)
-description: Memos, etc.
+description: A location to add references and resources that may be useful.
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://avatars1.githubusercontent.com/u/18144160?v=3&s=460
@@ -19,17 +19,18 @@ avatar: https://avatars1.githubusercontent.com/u/18144160?v=3&s=460
 footer-links:
   dribbble:
   email:
-  facebook:
+  facebook: salteferro.github.io
   flickr:
-  github: 
+  github:
   instagram:
   linkedin:
   pinterest:
   rss: # just type anything here for a working RSS icon
-  twitter: 
+  twitter:
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
+  discord: 0p41dYo9HHpgBz4Z
 
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
