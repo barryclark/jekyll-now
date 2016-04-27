@@ -82,3 +82,37 @@ $ docker run --rm --label=jekyll --volume=$(pwd):/srv/jekyll \
 ```
 
 If everything works out, the jekyll server will serve the blog preview on `http://<ip of your docker machine>:4000`. More information on running jekyll inside docker can be found here: [github.com/jekyll/docker](https://github.com/jekyll/docker).
+
+### Setting up jekyll using Kitematic###
+
+If you are working with Kitematic (which has fewer proxy issues behind company firewalls than the Quickstart terminal), follow these steps:
+
+First make sure the local copy of your Haufe-Lexware.github.io clone is located somewhere under your documents folder, for example:
+
+`C:\Users\<username>\Documents\GitHub\Haufe-Lexware.github.io`
+
+In Kitematic, click on the "DOCKER CLI" button (lower left), opening a power shell window.
+
+Pull the `jekyll/jekyll:pages` image:
+
+`> docker pull jekyll/jekyll:pages`
+
+In this environment, you cannot use the mapping variables $(pwd) or $(docker-machine ...), so you need to enter two things explicitly:
+
+
+- The path to your local repository in the following format, for example:
+
+    `/c/Users/<username>/Documents/GitHub/Haufe-Lexware.github.io`
+
+- The ip of your docker VM. To get this, enter
+
+    `> docker-machine ip`
+
+Now enter the following to compile the project and start the web server:
+
+`> docker run --rm --label=jekyll --volume=/c/Users/<username>/Documents/GitHub/Haufe-Lexware.github.io:/srv/jekyll -it -p 192.168.99.100:4000:4000 jekyll/jekyll:pages` 
+
+(replacing the path and ip with your values)
+
+The web server should now be running, so start your browser at `http://<ip>:4000` to see the results. When finished, shut down the web server with `^C` in the power shell window.
+  
