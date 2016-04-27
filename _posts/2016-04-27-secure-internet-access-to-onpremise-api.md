@@ -11,7 +11,7 @@ header-img: "images/bg-post.jpg"
 
 This article shows you how to use the Microsoft Azure Service Bus to relay requests to an on-premise API through the internet in a secure manner.
 
-#Preparation#
+# Preparation
 
 You will need a Microsoft Azure account. Create a new "Service Bus Namespace" (in this example it is "HaufeMessageBroker"). Under the "Configure" tab, add a new shared access policy, e.g. "OnPremiseRelay":
 
@@ -22,7 +22,7 @@ You will need a Microsoft Azure account. Create a new "Service Bus Namespace" (i
 
 Use the namespace, the policy name, and the primary key in the code samples below.
 
-#The On-Premise API#
+# The On-Premise API
 
 We make some assumptions about the on-premise API. These are not prerequisites in the sense that otherwise no access would be possible, but they should apply to many standard situations. It should also be fairly clear which aspects of the solution would have to be adapted to other situations.
 
@@ -37,7 +37,7 @@ We make some assumptions about the on-premise API. These are not prerequisites i
 
 One easy way to create an on-premise API is using the self-host capabilities of ASP.NET with Owin. There are many how-tos available for doing this. However, this solution does not dictate how the on-premise API is to be implemented, and any one will do.
 
-#Microsoft Azure Service Bus#
+# Microsoft Azure Service Bus
 
 The Azure Service Bus provides an easy way to access an on-premise WCF (Windows Communications Foundation) interface from any cloud server. Of course, we do not want to rewrite our entire business API to become a WCF Interface, so part of the solution is to develop a small and generic WCF Interface, which resides in a new on-premise service and simply relays HTTP request/response information to and from the actual on-premise API. This is the "On-Premise Relay Service" below.
 
@@ -81,9 +81,9 @@ So there are actually two relays at work, neither of which has any business inte
 
 In addition, there is the Azure Service Bus itself, through which the "Cloud Relay Service" and the "On-Premise Relay Service" communicate with each other.
 
-#Sequence Diagrams#
+# Sequence Diagrams
 
-##On-Premise Solution##
+## On-Premise Solution
 
 Here we see a local client logging in to the on-premise API, thereby receiving a session-id, and using this session-id in a subsequent call to the API to get a list of the user's contacts.
 
@@ -92,7 +92,7 @@ Here we see a local client logging in to the on-premise API, thereby receiving a
 
  
 
-##One-Time Registration##
+## One-Time Registration
 
 This shows registration with the Identity Portal in two steps:
 
@@ -107,7 +107,7 @@ This shows registration with the Identity Portal in two steps:
 
 After this process, the identity database contains additional information linking the web identity to a specific on-premise API (the "OnPremiseHostId") and to a specific on-premise identity (the "OnPremiseUserId"). From now on, whenever a client logs in to the ASP.NET Cloud Relay with his/her web credentials, this information will be added to the bearer token in the form of claims.
 
-##Client now uses the Cloud Relay Service##
+## Client now uses the Cloud Relay Service
 
 Now the client activity shown in the first sequence diagram looks like this:
 
@@ -134,11 +134,11 @@ What has changed for the on-premise API?
 - The API provides a new method `accounts/v1/external_login`, which calls back to the ASP.NET WebApi to confirm the user id, then does whatever it used to do in the original `accounts/v1/login` method. In this sample, that means starting a session linked to this user id and returning the new session-id to the caller.
 - The other API methods do not change at all, though it should be noted that an authorization header is now always included, so that if, for example, the session-id should be deemed not secure enough, the on-premise API could always check the bearer token within every method.
 
-#Code#
+# Code
 
 The following sections show the actual code necessary to implement the above processes. Skip all of this if it's not interesting for you, but it is documented here to make the job easier for anyone actually wanting to implement such a relay. 
 
-##New Methods in the On-Premise API##
+## New Methods in the On-Premise API
 
 Here are the new methods in the accounts controller of the on-premise API which are necessary to work with the external relay.
 
@@ -251,9 +251,8 @@ Here are the new methods in the accounts controller of the on-premise API which 
 
 ~~~ 
 
- 
 
-##The On-Premise Relay Service##
+## The On-Premise Relay Service
 
 In `IRelay.cs`, define the WCF service (consisting of a single method "Request"). Also, define the WCF Request and Response classes.
 
@@ -504,11 +503,8 @@ Once the on-premise relay service is running, you will see it listed with its ho
 {:.center}
 ![]( /images/secure-internet-access/pic44.jpg){:style="margin:auto"}
 
- 
 
- 
-
-##ASP.NET Identity Portal##
+## ASP.NET Identity Portal 
 
 Create a new ASP.NET Project (named e.g. "IdentityPortal") and select "MVC". Before compiling and running the first time, change the class ApplicationUser (in `IdentityModels.cs`) as follows:
 
@@ -798,7 +794,7 @@ Once this registration is successful, any client can now communicate with the on
 
  
 
-##Cloud Relay Service##
+## Cloud Relay Service
 
 Create a new ASP.NET Project (named e.g. "CloudRelayService") and select "Web Api".
 
