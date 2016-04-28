@@ -5,7 +5,7 @@ date: April 25, 2016
 tags: [distribution-theory]
 ---
 
-A colleague and their students asked me the other day whether I knew of a citation that gives the covariance between the sample variances of two outcomes from a common sample. This sort of question comes up in meta-analysis problems occasionally. I didn't know of a convenient reference that directly answers the question, but I was able to suggest some references that would help (listed below). While the students work on deriving it, I'll provide the answer here so that they can check their work. 
+A colleague and her students asked me the other day whether I knew of a citation that gives the covariance between the sample variances of two outcomes from a common sample. This sort of question comes up in meta-analysis problems occasionally. I didn't know of a convenient reference that directly answers the question, but I was able to suggest some references that would help (listed below). While the students work on deriving it, I'll provide the answer here so that they can check their work. 
 
 Suppose that we have a sample of $n$ observations $\mathbf{y}_1,...,\mathbf{y}_n$ from a $p$-dimensional multivariate normal distribution with mean $\boldsymbol\mu$ and covariance $\boldsymbol\Sigma = \left[\sigma_{jk}\right]_{j,k=1,...,p}$. Let $\mathbf{\bar{y}}$ denote the (multivariate) sample mean, with entries $\bar{y}_1,...,\bar{y}_p$. Let $\mathbf{S}$ denote the sample covariance matrix, with entries $\left[s_{jk}\right]_{j,k=1,...,p}$ where 
 
