@@ -3,14 +3,14 @@ layout: post
 title: Salesforce APEX Expression Evaluation
 ---
 
-I was surprised to find out that APEX is missing eval() function. Like JavaScript Eval() ability to check compare string expression seem to be basic function. With all the Metadata support on Force.com platform Expression Evaluation may have seem too low level of a function? Well I searched around but could not find exqact examples on github or elswhere, found couple related articles,
+I was surprised to find out that APEX is missing eval() function. Like JavaScript Eval() ability to check compare string expression seem to be basic function. With all the Metadata support on Force.com platform Expression Evaluation may have seem too low level of a function? Well I searched around but could not find exact examples on github or elswhere, found couple of related articles,
 [Adding Eval() support to Apex](http://www.fishofprey.com/2014/11/adding-eval-support-to-apex.html),
 [EVAL() IN APEX](https://codefriar.wordpress.com/2014/10/30/eval-in-apex-secure-dynamic-code-evaluation-on-the-salesforce1-platform/).
 I decided to write a simple implementation of Eval function.
 
-This type of expression evaluation become needed when using metadata driven APEX code. In such development code needs to handle type fields that are presented as strings and evaluate their values given a text like this '10 - 5' such expression obviously equal 5, but how to evaluated this text in APEX and get Decimal Number type result in a variable we can use? This is where evaluation method similar to JavaScript Eval() comes in.
+This type of expression evaluation become needed when using metadata driven APEX code. In such a code there is a needs to handle type fields that are presented as strings and evaluate their values given a text like this '10 - 5' such expression obviously equal 5, but how to evaluated this text in APEX and get Decimal Number type result in a variable APEX runtime can use? This is where evaluation method similar to JavaScript Eval() comes in.
 	
-There are some examples solved this problem by using REST calls and Tooling API making a call from APEX to JScript, that is clevel and also complex. I think it is simpler to have APEX native eval method. I rememebred the good old reverse polish notation calculator and quick web search found one basic example of eval APEX method using RPN in this post [Salesforce Stack Exchange](http://salesforce.stackexchange.com/questions/20796/evaluate-expressions-conditions-in-apex-code-which-are-stored-in-string-text).
+There are some examples that solve this problem by using REST calls and Tooling API making a call from APEX to JScript, that is clever and also complex. It would be simpler to have APEX native eval method. Now rememebred the good old reverse polish notation calculator, quick web search found one basic example of eval APEX method using RPN in this post [Salesforce Stack Exchange](http://salesforce.stackexchange.com/questions/20796/evaluate-expressions-conditions-in-apex-code-which-are-stored-in-string-text).
 Decided to extended this to more complete implemetation.
 The APEX class demonstrates Text string evaluation method (shown below).
 
@@ -66,8 +66,8 @@ public static Decimal textEval(Object[] rpnExprStack) {
 }
 ```
 
-This method can compare strings for equality.
-The class and its methods will need a custom Exception class we can define it like this
+This method can compare strings for equality or containment.
+The class and its methods will also need a custom Exception class we can define it like this
 
 ```
 public class EXPException extends Exception {}
@@ -163,4 +163,4 @@ System.assertEquals(0.0,   EXP_Eval.textEval(new List<Object> {'Tee','Foset','==
 		
 ```
 
-Now we hav APEX expression evaluation native Eval() fuction. Complete code implementation for this post can be found in github repository [apex-eval](https://github.com/iandrosov/apex-eval).
+Now we have APEX expression evaluation calss native to Apex. It covers some basic evaluations thta I needed but it is not complete expression Eval(). This calss can be easily extended to add other operators. Complete code implementation for this post can be found in github repository [apex-eval](https://github.com/iandrosov/apex-eval).
