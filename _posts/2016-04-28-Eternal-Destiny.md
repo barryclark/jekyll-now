@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Eternal Destiny: Animation Card Battle
+title: Eternal Destiny - Animation Card Battle
 feature: eternaldestiny.png
 category: video-games
 tags: [video games, eternal destiny]
