@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Интернет-магазин: Барбершоп «Бородинский»</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="inner-body">
+  <header class="inner-header">
+    <div class="container">
+      <a class="inner-logo-box" href="index.html">
+        <img src="img/inner-logo.png" width="111" height="24" alt="Барбершоп «Бородинский»">
+      </a>
+      <nav class="inner-navigation">
+        <ul>
+          <li>
+            <a href="#">Информация</a>
+          </li>
+          <li>
+            <a href="#">Новости</a>
+          </li>
+          <li>
+            <a href="inner-price.html">Прайс-лист</a>
+          </li>
+          <li>
+            <a href="inner-shop.html" class="active">Магазин</a>
+          </li>
+          <li>
+            <a href="#contacts">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="inner-user-block">
+        <a class="login" href="#">Вход</a>
+      </div>
+    </div>
+  </header>
+  <main class="inner-main container">
+    <h1 class="inner-title">Средства для ухода</h1>
+    <div class="breadcrumbs-box">
+      <ul class="breadcrumbs-list">
+        <li class="breadcrumbs-item"><a href="index.html">Главная</a></li>
+        <li class="breadcrumbs-item"><a href="inner-shop.html">Магазин</a></li>
+        <li class="breadcrumbs-item">Средства для ухода</li>
+      </ul>
+    </div>
+    <aside class="catalog-filter">
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <div class="form-group">
+          <h2>Производители:</h2>
+          <input type="checkbox" id="ch1" name="group-checkbox" checked>
+          <label for="ch1">Baxter of California</label>
+          <input type="checkbox" id="ch2" name="group-checkbox">
+          <label for="ch2">Mr Natty</label>
+          <input type="checkbox" id="ch3" name="group-checkbox">
+          <label for="ch3">Suavecito</label>
+          <input type="checkbox" id="ch4" name="group-checkbox" disabled checked>
+          <label for="ch4">Malin+Goetz</label>
+          <input type="checkbox" id="ch5" name="group-checkbox" disabled>
+          <label for="ch5">Murray’s</label>
+          <input type="checkbox" id="ch6" name="group-checkbox">
+          <label for="ch6">American Crew</label>
+        </div>
+        <div class="form-group">
+          <h2>Группы товаров:</h2>
+          <input type="radio" id="rad1" name="group-radio" checked>
+          <label for="rad1">Бритвенные
+            <br> принадлежности</label>
+          <input type="radio" id="rad2" name="group-radio">
+          <label for="rad2">Средства для ухода</label>
+          <input type="radio" id="rad3" name="group-radio">
+          <label for="rad3">Аксессуары</label>
+        </div>
+        <a class="btn" href="#">Показать</a>
+      </form>
+    </aside>
+    <section class="result-catalog-box">
+      <article class="good">
+        <a href="inner-item.html">
+          <img src="img/img-good-1.jpg" width="220" height="165" alt="Baxter of California" />
+        </a>
+        <div class="good-description">
+          <a href="inner-item.html">
+            <p class="type-goods">Набор для путешествий</p>
+            <p class="brand-goods">«Baxter of California»</p>
+          </a>
+          <div class="price">2 900 <span class="currency">руб.</span></div>
+          <button type="button" name="button" class="btn btn-buy">Купить</button>
+        </div>
+      </article>
+      <article class="good">
+        <img src="img/img-good-2.jpg" width="220" height="165" alt="Baxter of California" />
+        <div class="good-description">
+          <p class="type-goods">Увлажняющий кондиционер</p>
+          <p class="brand-goods">«Baxter of California»</p>
+          <div class="price">750 <span class="currency">руб.</span></div>
+          <button type="button" name="button" class="btn btn-buy">Купить</button>
+        </div>
+      </article>
+      <article class="good">
+        <img src="img/img-good-3.jpg" width="220" height="165" alt="Baxter of California" />
+        <div class="good-description">
+          <p class="type-goods">Гель для волос</p>
+          <p class="brand-goods">«SUAVECITO»</p>
+          <div class="price">290 <span class="currency">руб.</span></div>
+          <button type="button" name="button" class="btn btn-buy">Купить</button>
+        </div>
+      </article>
+      <article class="good">
+        <img src="img/img-good-4.jpg" width="220" height="165" alt="Baxter of California" />
+        <div class="good-description">
+          <p class="type-goods">Глина для укладки волос</p>
+          <p class="brand-goods">«American crew»</p>
+          <div class="price">500 <span class="currency">руб.</span></div>
+          <button type="button" name="button" class="btn btn-buy">Купить</button>
+        </div>
+      </article>
+      <article class="good">
+        <img src="img/img-good-5.jpg" width="220" height="165" alt="Baxter of California" />
+        <div class="good-description">
+          <p class="type-goods">Гель для волос</p>
+          <p class="brand-goods">«AMERICAN CREW»</p>
+          <div class="price">300 <span class="currency">руб.</span></div>
+          <button type="button" name="button" class="btn btn-buy">Купить</button>
+        </div>
+      </article>
+      <article class="good">
+        <img src="img/img-good-6.jpg" width="220" height="165" alt="Baxter of California" />
+        <div class="good-description">
+          <p class="type-goods">Набор для бритья</p>
+          <p class="brand-goods">«Baxter of California»</p>
+          <div class="price">3 900 <span class="currency">руб.</span></div>
+          <button type="button" name="button" class="btn btn-buy">Купить</button>
+        </div>
+      </article>
+      <ul class="list-pages-catalog">
+        <li class="list-pages-item active-page">1</li>
+        <li class="list-pages-item"><a href="#">2</a></li>
+        <li class="list-pages-item"><a href="#">3</a></li>
+        <li class="list-pages-item"><a href="#">4</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer class="inner-footer">
+    <div class="container">
+      <section class="footer-contacts" id="contacts">
+        Барбершоп «Бородинский»
+        <br> Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8
+        <br>
+        <a class="js-open-map js-open-map-footer" href="#">Как нас найти?</a>
+        <br> Телефон: +7 (812) 666-02-66
+      </section>
+      <section class="footer-social">
+        <p>Давайте дружить!</p>
+        <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+        <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+        <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+      </section>
+      <section class="footer-copyright">
+        <p>Разработано:</p>
+        <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+      </section>
+    </div>
+  </footer>
+  <div class="modal-content">
+    <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+    <h2 class="modal-content-title">Личный кабинет</h2>
+    <p>Введите свой логин и пароль.</p>
+    <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+      <input class="icon-user" type="text" name="login" placeholder="Логин">
+      <input class="icon-password" type="password" name="password" placeholder="Пароль">
+      <label class="login-checkbox">
+        <input type="checkbox" name="remember">
+        <span class="checkbox-indicator"></span> Запомните меня
+      </label>
+      <a class="restore" href="#">Я забыл пароль!</a>
+      <button class="btn" type="submit">Войти</button>
+    </form>
+  </div>
+  <div class="modal-content-map">
+    <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+    <div id="google-map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
+        width="766" height="561" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+  </div>
+  <script src="js/common.min.js"></script>
+</body>
+
+</html>
