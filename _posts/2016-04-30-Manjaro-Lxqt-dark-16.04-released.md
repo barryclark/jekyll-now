@@ -13,7 +13,7 @@ This variation uses the new dark style **Kwantum** to reduce eyestrain and was b
 * pcmanfm-qt, gimp, lximage-qt
 * **firefox**, hexchat, transmission-qt
 * abiword, qpdfview, gnumeric(64), **juffed** (advanced text editor)
-* mpv, smplayer(mpv based), **clementine** qt5. 32bit -> qastools, 64bit -> pulseaudio and pavucontrol
+* mpv, smplayer(mpv based), **clementine** qt5. qastools (32bit), pulseaudio and pavucontrol (64bit)
 * gparted, qisousb, lxtask, xsensors
 * multilib enabled (64bit)
 * **ffmpegthumbnailer** (for video preview)
