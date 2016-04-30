@@ -9,16 +9,16 @@ The team **Manjaro LXQt** is pleased to announce the **Manjaro Lxqt Dark 16.04 E
 
 This variation uses the new dark style **Kwantum** to reduce eyestrain and was built with the latest **Manjaro-tools** and packages of the **stable Manjaro repositories**.
 
-* **kernel 4.4.8 LTS**, Manjaro-settings-manager, sddm, [b]plymouth[/b], octopi, compton, [b]plank[/b], redshift
+* **kernel 4.4.8 LTS**, Manjaro-settings-manager, sddm, **plymouth**, octopi, compton, **plank**, redshift
 * pcmanfm-qt, gimp, lximage-qt
-* [b]firefox[/b], hexchat, transmission-qt
-* abiword, qpdfview, gnumeric(64), [b]juffed[/b] (advanced text editor)
-* mpv, smplayer(mpv based), [b]clementine[/b] qt5. 32bit -> qastools, 64bit -> pulseaudio and pavucontrol
+* **firefox**, hexchat, transmission-qt
+* abiword, qpdfview, gnumeric(64), **juffed** (advanced text editor)
+* mpv, smplayer(mpv based), **clementine** qt5. 32bit -> qastools, 64bit -> pulseaudio and pavucontrol
 * gparted, qisousb, lxtask, xsensors
 * multilib enabled (64bit)
-* [b]ffmpegthumbnailer[/b] (for video preview)
+* **ffmpegthumbnailer** (for video preview)
 * capture tool + key Print Screen configured for taking screenshots (also with Alt or Shift)
-* [b]xscreensaver[/b] (64bit) or i3lock (32bit)
+* **xscreensaver** (64bit) or i3lock (32bit)
 * proprietary drivers (64bit)
 
 This release comes with our advanced graphical installer **Calamares** as well as our **CLI-installer**. 
