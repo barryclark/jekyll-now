@@ -5,7 +5,7 @@ title: Manjaro Lxqt Dark 16.04 released
 
 The team **Manjaro LXQt** is pleased to announce the **Manjaro Lxqt Dark 16.04 Edition** as a follow-up to the [Manjaro Lxqt Edition 16.04](http://manjaro.github.io/Manjaro-Lxqt-16.04-released/), complete and ready to use for all typical everyday office- and multimedia-needs.  
 
-<img src="https://manjaro.github.io/images/manjaro-lxqt-dark-16.04.jpg">
+<img src="https://manjaro.github.io/images/manjaro-lxqt-dark.jpg">
 
 This variation uses the new dark style **Kwantum** to reduce eyestrain and was built with the latest **Manjaro-tools** and packages of the **stable Manjaro repositories**.
 
