@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Technical Architect with 24 years of industry experience still coding my way through the Cloud.
+Technical Architect after quarter century in this industry still coding my way through the Cloud.
 
 ### More Information
 
