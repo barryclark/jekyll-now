@@ -1,0 +1,27 @@
+---
+layout: post
+title: A JSON C++ implementation
+date: 2014-07-24 02:01:21.000000000 -07:00
+type: post
+published: true
+status: publish
+categories:
+- C++
+- Programming
+tags: []
+meta:
+  _edit_last: '53481042'
+  _publicize_pending: '1'
+  geo_public: '0'
+author:
+  login: allenbo
+  email: linjianfengqrh@gmail.com
+  display_name: allenbo
+  first_name: ''
+  last_name: ''
+---
+<p>I wrote a C++ implementation for JSON. <a href="http://github.com/allenbo/JConer">Github</a></p>
+<p>This implementation only works for a tiny range of usage. It's an toy project that I did for fun and time killing while boring summer internship. You can't count on it to work for your other significant work. But if you are only interested in playing thing around or you want to write your own JSON implementation, you are welcome to fork JConer on github or star it.</p>
+<p>If you have anything new you want to add to JConer, please send me an pull request, I will be thrilled to have new ideas integrated into JConer.</p>
+<p>Back to the JConer, I also developed some interesting feature called serializer. You see, some times we tried to use JSON as a transferrable format to communicate with other machines. We probably need to write a serializer and deserializer to pack the object into JSON format and unpack from JSON format to create a new object. Well I cover it well in serializer. I got inspired by boost serialization idea. You should check out the test/test_serializer.cpp for more details.</p>
+<p>Have fun with JConer.</p>

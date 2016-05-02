@@ -1,0 +1,63 @@
+---
+layout: post
+title: One way to imitate Django Database Model definition
+date: 2014-07-29 19:18:38.000000000 -07:00
+type: post
+published: true
+status: publish
+categories:
+- Programming
+- Python
+tags: []
+meta:
+  _edit_last: '53481042'
+  geo_public: '0'
+  _publicize_pending: '1'
+author:
+  login: allenbo
+  email: linjianfengqrh@gmail.com
+  display_name: allenbo
+  first_name: ''
+  last_name: ''
+---
+<p>When I first used Django framework, I was shocked by it's database model design, which can give developers a strict way to define a table with so elegant syntax. There is how it looks like.</p>
+<p>[code language="python"]<br />
+class Person(models.Model):<br />
+    name = models.CharField(max_length=50)<br />
+    age = models.IntegerField(blank=true)<br />
+    married = models.BooleanField(default=False)<br />
+[/code]</p>
+<p>And there you go. You just defined a class with some easy interfaces to manipulate corresponding table content. The interesting about this definition is that it respects the semantics of database language by specifying the type of each variable in Person table as charfield or integerfield or booleanfield, while it still keeps Python semantics when developers are interacting with the Person class and Person instance. Take a look at this snippet.</p>
+<p>[code language="python"]<br />
+p = Person(name = &quot;Justin Lin&quot;, age = &quot;23&quot;, married = false);<br />
+print p.age<br />
+print type(p.age)<br />
+p.age = 24<br />
+[/code]</p>
+<p>The code above will print 23 and  out to console. To appreciate this design, you have to notice that p.age is an integer here and the modification of p.age will never change the definition of age field in Person class, aka Person table.</p>
+<p>This design totally isolates the definition of class's member's type from real instance. In some case, it's a lot of helpful. And it's actually not too hard to implement such design with some Python tricks. Here is how it goes.</p>
+<p>[code language="python"]<br />
+import sys<br />
+class Model(object):<br />
+    def __init__(self, **kw):<br />
+        for key, value in kw.iteritems():<br />
+            if key in self.__class__.__dict__:<br />
+                type_info = self.__class__.__dict__[key]<br />
+                if type_info == 'i':<br />
+                    self.__dict__[key] = int(value)<br />
+                elif type_info == 'f':<br />
+                    self.__dict__[key] = float(value)<br />
+                else:<br />
+                    self.__dict__[key] = value<br />
+            else:<br />
+                print 'Error'<br />
+                sys.exit(-1)</p>
+<p>class Person(Model):<br />
+    name = 's'<br />
+    age = 'i'</p>
+<p>p = Person(name = 'Justin lin', age = '23')<br />
+print p.age<br />
+print type(p.age)<br />
+p.age = 24<br />
+[/code]</p>
+<p>You see, by assigning the value in instance with instance's __dict__, we could easily isolate the members of class from the member of instance. By no means could Python trace to class member when it looks for instance member, like p.age.</p>

@@ -1,0 +1,66 @@
+---
+layout: post
+title: How Python Yields
+date: 2014-02-15 02:16:33.000000000 -08:00
+type: post
+published: true
+status: publish
+categories:
+- Programming
+- Python
+tags: []
+meta:
+  _edit_last: '53481042'
+  _publicize_pending: '1'
+author:
+  login: allenbo
+  email: linjianfengqrh@gmail.com
+  display_name: allenbo
+  first_name: ''
+  last_name: ''
+---
+<p>I use to wonder how Python yield expression works. It looks like a regular function call instead it creates a generator rather than really calls that function. I inspect into Python source and things become a little more clear. This is a small Python yield expression and it's corresponding bytecode.</p>
+<p><!--more--></p>
+<p>[code language="python"]<br />
+def test(x):<br />
+  a = 0<br />
+  while a &lt; x:<br />
+    yield a<br />
+    a += 1</p>
+<p>def wrapper():<br />
+  y = test(10)<br />
+  y.next()</p>
+<p>import dis<br />
+dis.dis(wrapper)</p>
+<p>  2           0 LOAD_GLOBAL              0 (test)<br />
+              3 LOAD_CONST               1 (10)<br />
+              6 CALL_FUNCTION            1<br />
+              9 STORE_FAST               0 (y)</p>
+<p>  3          12 LOAD_FAST                0 (y)<br />
+             15 LOAD_ATTR                1 (next)<br />
+             18 CALL_FUNCTION            0<br />
+             21 POP_TOP<br />
+             22 LOAD_CONST               0 (None)<br />
+             25 RETURN_VALUE</p>
+<p>[/code]</p>
+<p>Well, the bytecode shows a normal Python call function instruction after Python compiler comes to <span style="font-style:italic;">y = test(10)</span>. That means in Python execution, CALL_FUNCTION instruction not only call the function, as long as it knows this function definition actually has a yield expression, it returns a generator. It's worth noting that yield expression could only exist inside a function block. Otherwise, Python will complain about an syntax error. Let's look into Python source code and see how Python deals with yield expression. </p>
+<p>In Python package, the file <span style="font-style:italic;font-weight:bold;">Python/eval.c</span> owns the code which is gonna parse and execute those instructions. It's basically a huge while loop breaking into a amount of cases. In the case of CALL_FUNCTION, we could see Python just invokes another function <span style="font-style:italic;"> call_function </span>. For the sake of saving time and screen, I wouldn't post the whole function. But you still see the meaningful part of the code.</p>
+<p>[code language="c"]<br />
+case CALL_FUNCTION:<br />
+...<br />
+  x = call_function(&amp;sp, oparg);<br />
+...<br />
+[/code]</p>
+<p><span style="font-style:italic;">call_function</span> will fall into <span style="font-style:italic;">fast_function</span>, then fall into <span style="font-style:italic;">PyEval_EvalCodeEx</span>. The interesting thing is what happened inside the <span style="font-style:italic;">PyEval_EvalCodeEx</span>. This function will create a new frame object. (Frame is just a object in Python that can be managed by this system. Think of closure in Python. If a frame would be destroyed automatically after the function returns, Python would not be able to make closure work.) If the function call is a regular one, meaning not a yield function, it will push the frame to the runtime stack and execute the code associated with the frame. And that's the intuition of a function call in all languages and platforms. I don't want to spend a lot space to discuss about how Python implements closure, just keep in mind, it's all about how to preserve the information of a runtime frame. Here what Python really does is Python makes a empty frame and stores it in the generator object, which is PyGenObject.</p>
+<p>[code language="c"]<br />
+if ( co-&gt;co_flags &amp; CO_GENERATOR ) {<br />
+  Py_XDECREF(f-&gt;f_back);<br />
+  f-&gt;f_back = NULL;<br />
+  PCALL(PCALL_GENERATOR);<br />
+  return PyGen_New(f);<br />
+}<br />
+[/code]</p>
+<p>The CO_GENERATOR flag is assigned to co_flags when Python generates bytecode for functions. You could find source code in <span style="font-style:italic;">compiler.c</span>. There are so many things happening when Python activates the compiler and it's not the point of this post. So let's skip that part and jump to generator smoothly.</p>
+<p>As we could see, at the first beginning, the frame is empty, that is why Python doesn't call the function at all when it comes to <span style="font-style:italic;">y = test(10)</span>. But if we want to get any item from the generator, we have to execute the code inside yield function. Remember when do we get a value for the yield function? That's right, when we call <span style="font-style:italic;">y.next()</span>. So all the tricky stuff is in the <span style="font-style:italic;">y.next()</span> function call. </p>
+<p>Before we inspect into generator's next function, there are somethings we have to know. Frame object has a field that points to the last instruction it executed. Yes, that means, frame object itself will preserve the information that a yield function would need to move on at the next call. So it's not hard to infer that generator's next function simply invoke a PyEval_EvalCodeEx call to get the next value. And that's what Python actually does.</p>
+<p>I think I better stop here and left you to read the Python source code and see what's going on. It's not tough. Actually I enjoy reading Python source code pretty much. Regardless of some terrible design of Python language, the source code is elegant at some point.</p>

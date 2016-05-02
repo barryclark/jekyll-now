@@ -1,0 +1,24 @@
+---
+layout: post
+title: Boost coroutine, a library to mimic Python generator
+date: 2014-03-22 16:18:00.000000000 -07:00
+type: post
+published: true
+status: publish
+categories:
+- Programming
+tags: []
+meta:
+  _edit_last: '53481042'
+  _publicize_pending: '1'
+author:
+  login: allenbo
+  email: linjianfengqrh@gmail.com
+  display_name: allenbo
+  first_name: ''
+  last_name: ''
+---
+<p>I use to think C++ wouldn't be able to generate a list of numbers like the way Python generator does. And I wrote a post about how to imitate the behavior of Python generator as close as possible. Well it turns out I was wrong when I first learned there is a library in Boost, coroutine, which actually could perfectly fit this "generator" semantic.</p>
+<p>Thing is changing with boost while developers of the community are keeping adding new interesting feature the boost. So there maybe a little difference between what I am writing and the latest boost coroutine when you are reading my post. But you still can get the basic idea of coroutine.</p>
+<p>I was doing a project that needs some kind of functional logic that we are able to enter such function several times. And this is what actually coroutine was designed for. In that project, we were using boost 1.46. Now boost has already moved to 1.55. So I guess there is a quite huge difference.</p>
+<p>So basically, coroutine library is trying to provide such routine that allow multiple entry points to suspend and resume the execution. It preserves the local state, including local variables on stack, CPU registers, flags and instruction pointers. Once we go back to this routine, the coroutine will resume all the local information and move on executing. This is quite similar to Python generator. You see in Python, a generator will preserve the runtime funtion frame as a field, since the stack is just a object (frameobject), and resume it by pushing back the frameobject into runtime stack. Coroutine does the same thing. This implicates that coroutine needs a context operator that could preserve, switch and resume the underlying frame. That's actually what boost::context is providing. With all those components, boost's coroutine is semantically equivalent to Python generator.</p>

@@ -1,0 +1,128 @@
+---
+layout: post
+title: Some template tips in C++ for type
+date: 2014-03-28 23:32:03.000000000 -07:00
+type: post
+published: true
+status: publish
+categories:
+- C++
+- Programming
+tags: []
+meta:
+  _edit_last: '53481042'
+  _publicize_pending: '1'
+author:
+  login: allenbo
+  email: linjianfengqrh@gmail.com
+  display_name: allenbo
+  first_name: ''
+  last_name: ''
+---
+<p>C++ language provides us a powerful template syntax and semantic. Using template deliberately makes C++ able to behavior just like other higher level language, Python, Ruby and forth. You should see some tips on my previous posts showing how to use template to make C++ more like Python. I kind of mimic the generator and partial function in C++ and unveil some implementation details of how boost actually does it. Since I have tons of work I have to do this week, so here comes an easy and not that thrilling post about C++ and the way we could use template to perform some fun and interesting, and maybe useful feature.</p>
+<ol>
+<li><b>Stop compiling when some condition is not satisfied.</b><br />
+Let's say, we are trying to provide some classes that only allow some sort of types to initialize. Like a function wrapper, we don't want the user initialize this wrapper with an integer. You may think, it's not even a big issue, just trust users, trust that they are disciplined to maintain the sanity of the library just like the way you documented. And you see, trust is a kind of philosophy of C/C++ community. But a self-guarded system will always be more robust than a flawed system. So there is a tip for that.</p>
+<p>[code language="c"]<br />
+template&lt;bool B, typename C&gt;<br />
+struct enable_if_true {};</p>
+<p>template&lt;typename C&gt;<br />
+struct enable_if_true&lt;true, C&gt; {<br />
+    typedef C type;<br />
+};<br />
+[/code]</p>
+<p>I simply create one struct with template and specialize this struct with . The only difference between the struct itself and specialized struct, is that the specialized one has a type defined inside. Check this out.</p>
+<p>[code language="c"]<br />
+void test(enable_if_true&lt;flag, int&gt;::type = 0) {}<br />
+[/code]</p>
+<p>So when the flag is true, enable_if_true::type is int. So compiler will compile this function perfectly. Otherwise, when the flag is false, there is no type defined inside the enable_if_true struct. The compiler will fail. With such a struct, we should be able to prevent the users of the library doing something harmful.
+</li>
+<li><b>Get traits of function type</b><br />
+Back to function wrapper, assume we have a wrapper class that wraps function and collect some information about this function. You would probably say it's a piece of cake. See the snippet like this.</p>
+<p>[code language="c"]<br />
+template&lt;typename FuncType&gt;<br />
+class Wrapper{<br />
+public:<br />
+    template&lt;typename F&gt;<br />
+    Wrapper(FuncType f): __f(f) {}<br />
+private:<br />
+    FuncType __f;<br />
+};<br />
+[/code]</p>
+<p>The snippet above looks right. But we don't actually know the return type of the function, meaning we can't write a valid function to overload the operator(). Well, how about we add another typename to template and specify the return type with the new typename just like this.</p>
+<p>[code language="c"]<br />
+template&lt;typename R, typename FuncType&gt;<br />
+class Wrapper{...};<br />
+[/code]</p>
+<p>It looks better, except for it doesn't really solve the problem of overloading operator(), 'cause we still don't know what kind of types of those arguments are. But we are progressing. Check this out.</p>
+<p>[code language="c"]<br />
+template&lt;typename R,typename T1, typename T2&gt;<br />
+class Wrapper{<br />
+    typedef R(*FuncType)(T1, T2);<br />
+public:<br />
+    Wrapper(FuncType f) :__f(f){}<br />
+    R operator() (T1 a1, T2 a2) { return __f(a1, a2); }<br />
+private:<br />
+    FuncType __f;<br />
+};<br />
+[/code]</p>
+<p>That works fine after we add other Wrappers wrapping a function with 1 argument, 3, 4, 5, 6.... Well, let's say, we do this up to 9. But there is a big flaw in this design. The FuncType is a pointer to function, and we could use 0 to initialize the function. This is the problem that brings the "enable_if_true" up to table. Fortunately, it's only 0 that satisfies the requirement. And we could use enable_if_true to test it out. But we can't use the same design anymore.</p>
+<p>[code language="c"]<br />
+template&lt;typename FuncType&gt;<br />
+struct function_traits {<br />
+    static const int arity = -1;<br />
+};</p>
+<p>template&lt;typename R&gt;<br />
+struct function_traits&lt;R(*)()&gt; {<br />
+    typedef R return_type;<br />
+    static const int arity = 0;<br />
+};</p>
+<p>template&lt;typename R, typename T1&gt;<br />
+struct function_traits&lt;R(*)(T1)&gt; {<br />
+    typedef R return_type;<br />
+    static const int arity = 1;<br />
+};</p>
+<p>template&lt;typename R, typename T1, typename T2&gt;<br />
+struct function_traits&lt;R(*)(T1, T2)&gt; {<br />
+    typedef R return_type;<br />
+    static const int arity = 2;<br />
+};</p>
+<p>template&lt;typename FuncType&gt;<br />
+class Wrapper{<br />
+typedef typename function_traits&lt;FuncType*&gt;::return_type R;<br />
+public:<br />
+    template&lt;typename F&gt;<br />
+    Wrapper(F f, typename enable_if_true&lt;function_traits&lt;F&gt;::arity &gt;= 0, int&gt;::type = 0) {<br />
+        __f = reinterpret_cast&lt;FuncType*&gt;(f);<br />
+    }</p>
+<p>    template&lt;typename T1, typename T2&gt;<br />
+    R operator()(T1 a1, T2 a2) { return __f(a1, a2); }<br />
+private:<br />
+    FuncType* __f;<br />
+};<br />
+[/code]</p>
+<p>Now when we initialize the wrapper with some actual function or function pointer, the function_traits will be specialized by the function type and arity should be 0, 1 or 2. 2 is it in this case. And we got a true on enable_if_true, makes enable_if_true::type an int. The wrapper will be successfully initialized. Let's try with 0 and pass it to Wrapper. This time typename F will be int in Wrapper constructor. That brings function_traits::arity less than 0, and makes enable_if_true::int undefined. So the compiler fails.</p>
+<p>Pretty interesting though. You see we are not only able to prevent wrapper being initialized by wrong parameter, also we could get some traits from function type.
+</li>
+<li><b>Another bonus for such design</b>
+<p>For the first design without function_traits, we are using the same typename for private class member __f and parameter f. And the way we initialize the private function pointer is assigning the parameter directly to it. At the second design where we use function_traits and enable_if_true to decouple the private class member __f and parameter f in type. You see the types of __f and f are different, one is FuncType* and the other is F. Notice that when we pass a function variable as a parameter, the type of the variable will be changed to a function pointer. So typename F should be a function pointer rather than function. And in the constructor function we reinterpret_cast the f to FuncType*. You may see this is a bug, 'cause we could initialize a function wrapper with int(int, int) signature with a function whose signature is int(float, float). Check this out.</p>
+<p>[code language="c"]<br />
+int test_int(int, int){}<br />
+int test_float(float, float) {}<br />
+Wrapper&lt;int(int, int)&gt; wrapper_int(test_int);<br />
+Wrapper&lt;int(int, int)&gt; wrapper_float(test_float);<br />
+[/code]</p>
+<p>You see they both work. And that's something you can't do with first design. This is a little wired, but I take it as a feature. Using reinterpret_cast leaves the security checking to C++ underlying type deduction and coercion system. That makes our wrapper working just like C++ function, 'cause there is coercion happening when we invoke a not-perfectly-matched function. Check this out.</p>
+<p>[code language="c"]<br />
+class Integer{<br />
+public:<br />
+    Integer(int x): __x(x){}<br />
+    operator int() const { return __x;}<br />
+private:<br />
+    int __x;<br />
+};</p>
+<p>int test_integer(Integer, Integer) {}</p>
+<p>Wrapper&lt;int(int, int)&gt; wrapper_integer(test_integer);<br />
+[/code]
+</li>
+</ol>

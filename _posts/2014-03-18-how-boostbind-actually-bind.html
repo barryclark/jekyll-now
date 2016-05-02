@@ -1,0 +1,161 @@
+---
+layout: post
+title: How boost::bind actually "bind"
+date: 2014-03-18 02:47:56.000000000 -07:00
+type: post
+published: true
+status: publish
+categories:
+- C++
+- Programming
+- Python
+tags: []
+meta:
+  _edit_last: '53481042'
+  _publicize_pending: '1'
+author:
+  login: allenbo
+  email: linjianfengqrh@gmail.com
+  display_name: allenbo
+  first_name: ''
+  last_name: ''
+---
+<p>Usually I would appreciate the elegant syntax of Python but not C++. C++ suffers from its tedious and lengthy presentation of syntax, although it's better than Java. The thing is people don't like type such long string to just do something trivial all the time. Like you get to type <em>std::vector&lt; map&lt;string, int&gt; &gt;::iterator</em> to get a iterator for a vector whose elements are maps from string to integer. That's why c++ new standard assigns keyword auto with another meaning, to automatically deduce the type of variable when compiling.</p>
+<p><!--more--><br />
+You know there are a lot language features people don't know about Python normally. Like class decorator. I bet almost every one knows how to use function decorator in Python, cause that's something you could find in almost every Python tutorial at intro level. Not like function decorator, class decorator, just another type of decorator, rarely appears in a Python book. But here, class decorator is not today's topic. I want talk about another fancy Python feature and it's C++ alternative. That's partial function and bind in boost.</p>
+<p>I remember I watched a PyCon presentation, talking about the overwhelming usage of class among programmers. Actually it's pretty funny. The talker presented some stupid cases that people just define a module named "XXXCrypto" within which there is a class named "XXXCryptoDecoder". But there is only two functions in the class and one of them is __init__. At the end of the talk, the talker mentioned a Python module named functools. That's the feature of today.</p>
+<p>So we could easily write a Python function to show how partial function works. Let us say we have such a function:<br />
+[code language="python"]<br />
+def func(a, b, c):<br />
+  print 'a =', a,<br />
+  print 'b =', b,<br />
+  print 'c =', c,</p>
+<p>func(a = 1, b = 2, c = 3)<br />
+[/code]</p>
+<p>So we could get a string printed out as "a = 1 b = 2 c = 3". What if you don't know the value you want to pass to a when you call it. Or the value of b and c are always the same across some name scope and you try to avoid retype again and again. Well, you can try partial function.</p>
+<p>[code language="python"]<br />
+import functools<br />
+partial_func = functools.partial(func, b = 2, c = 3)<br />
+partial_func(a = 1)<br />
+[/code]</p>
+<p>With partial function you could bind some arguments before you call the function and don't have to pass the same parameters again and again. This is truly an elegant for a language in which functions are first class variable. The whole idea is isolation. Isolating the invocation of the function from the assignment of parameters to arguments. But this is just an tiny example of fucntools, just wanna bring up the concept of isolation.</p>
+<p>For C++, I believe we all know about the bind function in boost. It actually, is an amazing function for C++. I can't even believe people can really design such a function with pure C++ syntax. After I dive into the source code and figure out how bind function works, I have to say, it's an amazing design out of earth.</p>
+<p>So with bind function, we could, actually get the same property of Python partial. I will write some easy function to show that.</p>
+<p>[code language="c"]<br />
+void add(int a, int b) {<br />
+  return a + b;<br />
+}</p>
+<p>auto add1_2 = std::bind(add, 1, 2);<br />
+int rst = add1_2();<br />
+[/code]</p>
+<p>With the snippet above, function when we call add1_2, the value of this function returns is 3. You can see, bind function does isolate the invocation from assignment. And there is some even more interesting and fancy usage about bind.</p>
+<p>[code langauge="c"]<br />
+auto add10 = std::bind(add, 10, _1);<br />
+int rst = add10(2);<br />
+int rst2 = add10(4);<br />
+[/code]</p>
+<p>Cool, isn't it. Using the argument indicator _1, we reserve an argument for add10 function and adssign the value of 2(or 4) to this argument when we actually call the add10 function. Well, we could do even more with bind function.</p>
+<p>[code language="c"]<br />
+void print(int a, string b, float c) {<br />
+  std::cout &lt;&lt; &quot;a = &quot; &lt;&lt; a &lt;&lt; &quot; b = &quot; &lt;&lt; b &lt;&lt; &quot; c = &quot; &lt;&lt; c &lt;&lt; endl;<br />
+}</p>
+<p>auto f1 = std::bind(print, _2, _1, _3);<br />
+f1(&quot;hello&quot;, 12, 3.1415);<br />
+[/code]</p>
+<p>You see reordering the arguments could be easily achieved by assigning argument indicators to different location. The program should print out "a = 12 b = hello c = 3.1415" to the console.</p>
+<p>The functionality that bind function can provide us is fairly amazing. I was so curious how C++ could manage to do that. Here comes that adventure.</p>
+<p>Before we really look into the boost source code, let us ask ourselves what kind of things we have to do to develop our own bind function, or what kind of design we should use. Think about the easiest one that isolating the execution of the function from assignment of arguments, the way we have to do is find some storage to keep those parameters. Let start with binding function with one argument and no argument indicator.</p>
+<p>In order to assign the return value of bind function to a function object, we have to create a callable class and return one of the instance of that class. Let's try with class bind_t.</p>
+<p>[code language="c"]<br />
+template&lt;typename R, typename F, typename T&gt;<br />
+class bind_t {<br />
+  public:<br />
+    explicit bind_t(F func, T&amp; a1): __func(func), __a1(a1) {}<br />
+    R operator()() {<br />
+      return __func,(__a1);<br />
+    }<br />
+  private:<br />
+    F __func;<br />
+    T __a1;<br />
+};</p>
+<p>template&lt;typename R, typeename F, typename T&gt;<br />
+bind_t&lt;R, F, T&gt; bind(F f, T a1) {<br />
+  return bind_t&lt;R, F, T&gt;(f, a1);<br />
+}</p>
+<p>void print(int a) { cout &lt;&lt; a &lt;&lt; endl; }<br />
+int main() {<br />
+  auto f1 = bind(print , 1);<br />
+  f1();<br />
+}<br />
+[/code] </p>
+<p>Look, we did it. We got to bind 1 with the argument of print and call the f1 instead of print to print out "1". And using this way, we could easily get a all-set bind function without argument indicator. You see the most dummy way to do it is to define many more bind_t class with even more storage for other arguments. We could build a class bind_t2 to present the callable class for two arguments, and of course a bind_t3 for three arguments. But no matter how many bind_t class we add to the repository, there is no chance we could add argument indicator functionality to bind function. That means, we need another design for bind function.</p>
+<p>Even though the previous example can't solve the problem we have, but it gives us some illumination about how. So we could easily separate the invocation of a function from it's arguments' assignment with a bind_t class, we should stick to that. Even though we don't know the value of some arguments when we try to bind the function, we still have to keep those known parameters and argument indicators. So the rule for bind_t doesn't change. Just a little different this time. Some storage doesn't possess the actually value of argument, just a index of future parameters. When we call the new function coming from bind function, we have to provide the missing parameter. Since the function is actually a callable class, we have to look up for the arguments for the parameters. Like the print function and f1 above, inside we bind "hello" to b, 12 to a and 3.1415 to c. The list of arguments has a operation of lookup, so we better create a new class for them. Since the number of argument varies, several different list classes are needed. For simplicity of the post, we only consider functions with two parameters.  </p>
+<p>[code language="c"]<br />
+template&lt;int T&gt; class arg&lt;T&gt; {};<br />
+arg&lt;1&gt; _1;<br />
+arg&lt;2&gt; _2;</p>
+<p>class list0 {<br />
+};</p>
+<p>class list1 {<br />
+};</p>
+<p>class list2 {<br />
+};</p>
+<p>template&lt;typename R, typename F, typename L&gt;<br />
+class bind_t {<br />
+  public:<br />
+    bind_t(F f, L l): __f(f), __l(l) {}<br />
+    R operator()(){<br />
+      list0 l0;<br />
+      return l(__f, l0);<br />
+    }<br />
+    template&lt;typename T1&gt;R operator()(T1 a1) {<br />
+      list1 l1(a1);<br />
+      return __l(__f, l1);<br />
+    }<br />
+    template&lt;typename T1, typename T2&gt;R operator()(T1 a1, T2 a2) {<br />
+      list2 l2(a1, a2);<br />
+      return __l(__f, l2);<br />
+    }</p>
+<p> private:<br />
+    F __f;<br />
+    L __l;<br />
+};<br />
+[/code]</p>
+<p>You see I change the bind_t class to make it get a list of parameters, including the arguments indicators, and I move the function invocation to list class because we have some argument indicators to lookup. And that would be pretty easy if we move the function to the list class itself. Notice that, the original parameter we pass to bind function are stored at l field in the bind_t class, and the missing parameters indicating by argument indicators are stored in l0, l1 or l2 when we actually call the callable object. And we still have to finish the list class. List class should should provide such function to lookup for indicators and actual value, and make them as an uniformed way cause we don't actual know which one is the indicator. So the list1 should be like this.</p>
+<p>[code language="c"]<br />
+class list0 {};</p>
+<p>template&lt;typename A1&gt; class list1 {<br />
+  public:<br />
+    list1(A1 a1): __a1(a1) {}<br />
+    A1 operator[](arg&lt;1&gt; arg) { return __a1;}<br />
+  private:<br />
+    A1 __a1;<br />
+};</p>
+<p>template&lt;typanem A1, typename A2&gt; class list2 {<br />
+  public:<br />
+    list2(A1 a1, A2 a2) : __a1(a1), __a2(a2) {}<br />
+    template&lt;typename R, typename F, typename L&gt;R operator()(F f, L list) {<br />
+      return f(list[__a1], list[__a2]);<br />
+    }<br />
+  private:<br />
+    F __f;<br />
+    A1 __a1;<br />
+    A2 __a2;<br />
+};<br />
+void add(int a, int b) { return a+b; }</p>
+<p>auto f1 = bind(add, _1, 10);<br />
+f1(2);<br />
+[/code]</p>
+<p>You see, when we call bind function, we assign list   to some list2 instance and pass this instance to bind_t object, so that bind_t object has a list of parameters. When we use f1(2) to invoke the function, we assign  to some list1 instance and call l(f, l1) to execute the function. But before we call the function, we have to know all the actual parameters, that is what we got from looking up the list1. You see the list passed to list2 operator() is an instance of list1, and the __a1 is an argument indicator arg, according to the code, the result of list[__a1] is 2, which is what we pass to f1 at the last line of above snippet. But the list[__a2] is undefined and it should return the value of __a2 itself. So we should add such function to list1.</p>
+<p>[code language="c"]<br />
+  template&lt;typename T&gt; T operator[](T&amp; a) { return a};<br />
+[/code]</p>
+<p>And don't forget list2 class, we should do what we do to list1 to list2 and expand the classes with the number of parameters.</p>
+<p>Now we could go to the bind function eventually.</p>
+<p>[code language="c"]<br />
+template&lt;typename R, typeename F, typename T1, typename T2&gt;<br />
+bind_t&lt;R, F, list2&gt; bind(F f, T1 a1, T2 a2) {<br />
+  return bind_t&lt;R, F, list2&gt;(f, a1, list2(a1, a2));<br />
+}<br />
+[/code]</p>
+<p>There we go. For now we have our own version of bind function, it's a shabby one with limited parameters and it does not support reference and class member function. But you got the idea of how it works and should be easily to expand to those areas. And this is basically what bind function in boost does, I just cut some annoying and trivial things out the core part of bind.</p>
