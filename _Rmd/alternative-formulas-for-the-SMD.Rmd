@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Simpler formulas for the standardized mean difference
+title: Alternative formulas for the standardized mean difference
 date: April 26, 2016
 tags: [meta-analysis, effect-sizes, distribution-theory]
 ---
@@ -105,4 +105,3 @@ $$
 
 where $n_k$ is the sample size for treatment group $k$. 
 
-__

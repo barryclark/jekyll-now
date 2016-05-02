@@ -38,7 +38,7 @@ r2jekyll <- function(filename, dpi = 192) {
   unlink("{{site.url}}", recursive=T)
 }
 
-r2jekyll("distribution-of-sample-variances")
+# r2jekyll("distribution-of-sample-variances")
 # r2jekyll("Tau-U")
 # r2jekyll("NAP-SEs-and-CIs")
 # r2jekyll("rdd-interactions-again")
