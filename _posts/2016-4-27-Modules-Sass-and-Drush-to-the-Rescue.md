@@ -7,7 +7,7 @@ We had three great presentations today! Thanks to Chris, Courtney, and Eric for 
 
 We have included the links to their sites and their presentations below:
 
-**Chris VanWormer** - [What is a Module?](/presentations/What%20is%20a%20module.pdf)
+**Chris VanWormer** - [What is a Module?](http://nys-forum.github.io/drupal-user-group/presentations/What%20is%20a%20module.pdf)
 
 **Courtney Jordan** - [Sass-Tastic! A Beginners Guide to Understanding Sass](https://speakerdeck.com/courtneyjordan/sass-tastic-a-beginners-guide-to-understanding-sass)
 
