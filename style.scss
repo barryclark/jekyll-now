@@ -25,7 +25,6 @@ body {
   font: 18px/1.4 $titleFontFamily;
   color: $darkGray;
   min-height: 100%;
-  box-sizing: border-box;
   padding-bottom: 6em;
   position: relative;
 }
@@ -248,7 +247,7 @@ nav {
     }
   }
 
-  a.about {
+  a.portfolio {
     padding-right: 10px;      
   }
 
@@ -268,10 +267,36 @@ nav {
 }
 
 //
+// Home
+//
+.home {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.home-posts {
+  flex-basis: 640px;
+  flex-grow: 1;
+
+  .posts {
+    margin-right: 1em;
+  }
+}
+
+.home-aside {
+  flex-basis: 300px;
+
+  h1, h2 {
+    margin: 0;
+  }
+}
+
+//
 // .main
 //
 
-.posts > .post {
+.posts > .post,
+.home-aside-box {
   padding: 1em;
   border: 1px solid #eee;
   margin: 1em 0;

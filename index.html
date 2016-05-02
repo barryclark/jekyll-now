@@ -1,24 +1,50 @@
 ---
 layout: main
 ---
+<div class="home">
+  <section class="home-posts">
+    <div class="posts">
+      {% for post in site.posts limit:8 %}
+        <article class="post">
+          <h1>
+            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+            <span class="date">- {{ post.date | date: '%B %d, %Y'}}</span>
+          </h1>
+          
 
-<div class="posts">
-  {% for post in site.posts limit:8 %}
-    <article class="post">
+          <div class="entry">
+            {{ post.excerpt }}
+          </div>
 
-      <h1>
-        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-        <span class="date">- {{ post.date | date: '%B %d, %Y'}}</span>
-      </h1>
-      
+          <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+        </article>
+      {% endfor %}
+    </div>
 
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
+    <a href="{{ site.baseurl }}/articles">Older articles</a>
+  </section>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
+  <aside role="complementary" class="home-aside">
+    <div class="home-aside-box">
+      <h1>Tags</h1>
+      <ul>
+        <li>
+          <a href="{{ site.baseurl }}/tags/drawmeakicker">Draw Me a Kicker</a> - an exercice in Polymer and WebGL.
+        </li>
+        <li>
+          <a href="{{ site.baseurl }}/tags/javascript">Javascript</a> - things I learn about Javascript along the way.
+        </li>
+        <li>
+          <a href="{{ site.baseurl }}/tags/manikin">Manikin</a> - porting an old project to the web platform.
+        </li>
+        <li>
+          <a href="{{ site.baseurl }}/tags/misc">Misc</a> - other smaller things.
+        </li>
+        <li>
+          <a href="{{ site.baseurl }}/tags/performance">Performance</a> - how to make things load fast
+        </li>
+      </ul>
+      <h1>Links</h1>
+    </div>
+  </aside>
 </div>
-
-<a href="{{ site.baseurl }}/articles">Older articles</a>
