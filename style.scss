@@ -231,7 +231,8 @@ nav {
   line-height: 20px;
   font-size: 18px;
 
-  a {
+  > a,
+  .text-links {
     margin-top: 10px;
     padding-left: 5px;
     display: table-cell;
@@ -240,11 +241,25 @@ nav {
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
+  }
 
+  > a {
     @include mobile {
       display: inline-block;
       color: $blue;
     }
+  }
+
+  .text-links {
+    @include mobile {
+      display: block;
+      text-align: center;
+
+      > a {
+        display: inline-block;
+      }
+    }
+
   }
 
   a.portfolio {
@@ -256,12 +271,6 @@ nav {
     margin-top: 9px;
     display: block;
     font-size: 16px;
-
-    a.about {
-      display: block;
-      text-align: center;
-      padding-right: 0;      
-    }
   }
 
 }
