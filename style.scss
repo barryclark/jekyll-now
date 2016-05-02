@@ -16,6 +16,7 @@
 /**************/
 
 html {
+  height: 100%;
   font-size: 100%;
 }
 
@@ -23,13 +24,21 @@ body {
 	background: $white;
   font: 18px/1.4 $titleFontFamily;
   color: $darkGray;
+  min-height: 100%;
+  box-sizing: border-box;
+  padding-bottom: 6em;
+  position: relative;
 }
 
 .container {
   margin: 0 auto;
-  max-width: 740px;
+  max-width: 960px;
   padding: 0 $containerPadding;
   width: 100%;
+}
+
+#main {
+  margin-bottom: 50px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -315,7 +324,10 @@ nav {
 }
 
 .wrapper-footer {
-  margin-top: 50px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .wrapper-footer,
