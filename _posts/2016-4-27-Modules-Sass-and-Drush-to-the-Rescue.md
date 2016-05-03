@@ -11,4 +11,12 @@ We have included the links to their sites and their presentations below:
 
 **Courtney Jordan** - [Sass-Tastic! A Beginners Guide to Understanding Sass](https://speakerdeck.com/courtneyjordan/sass-tastic-a-beginners-guide-to-understanding-sass)
 
-**[Eric Steinborn](http://ericsteinborn.com)** - [Drush: A Real Lifesaver]( (video to be posted later)
+**[Eric Steinborn](http://ericsteinborn.com)** - Drush: A Real Lifesaver
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SVVKgOm1ms8" frameborder="0" allowfullscreen></iframe>
+
+**Time Stamps:**
+
+- 1:43 - Chris VanWormer
+- 19:44 - Courtney Jordan
+- 1:03:40 - Eric Steinborn
