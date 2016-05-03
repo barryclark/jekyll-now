@@ -251,6 +251,15 @@ nav {
   border-bottom: none;
 }
 
+.posts > .post .post-date {
+  margin-top: 1em;
+  margin-bottom: 0;
+}
+
+.posts h1 {
+  margin-top: 0;
+}
+
 .post {
   blockquote {
     margin: 1.8em .8em;

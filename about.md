@@ -1,15 +1,17 @@
 ---
 layout: page
-title: About
+title: About the NYS Forum Drupal User Group
 permalink: /about/
 ---
 
-Some information about you!
+The NYS Forum Drupal User Group is a sub-group of the [Web and Accessibility Workgroup](https://www.nysforum.org/committees/webmastersguild/) of the [NYS Forum](https://www.nysforum.org). We meet once a month to discuss Drupal. Whether we focus on fixing problems, or learning new skills, we cater to on all levels of experience.
 
-### More Information
+Let us know if you have a problem with a solution, or an FAQ you want to document. We've got a place for that right here: https://github.com/NYS-Forum/drupal-howto/issues
 
-A place to include any other types of information that you'd like to include about yourself.
+<!--### More Information-->
 
-### Contact me
+<!--Find out more about our group on our page-->
 
-[email@domain.com](mailto:email@domain.com)
+### Contact us!
+
+[esteinborn@gmail.com](mailto:esteinborn@gmail.com)
