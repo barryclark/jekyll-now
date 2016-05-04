@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+I'm a computer engineer from Montreal, Canada. I enjoy working with open source projects for all sorts of things.
 
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
+I'm also a hardcore GNU/Linux fan, competitive gamer, otaku and an outdoorsman.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+* email : [patrick.pollo.guilbert@gmail.com](mailto:patrick.pollo.guilbert@gmail.com)
+* irc : I can be joined on freenode, oftc, efnet and quakenet under the alias of epatpol
+

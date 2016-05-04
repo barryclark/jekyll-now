@@ -1,0 +1,21 @@
+---
+layout: post
+title: Basic Linux terminal tips!
+---
+
+So you're new to the Linux world, or you're simply new to the Linux shell, well here's some basic tips and tricks that should help you get started.
+
+# Repeating the last command entered
+
+You can type !! in the terminal to repeat the last command entered
+
+```
+➜  ~ apt-get update
+E: Could not open lock file /var/lib/apt/lists/lock - open (13: Permission denied)
+E: Unable to lock directory /var/lib/apt/lists/
+E: Could not open lock file /var/lib/dpkg/lock - open (13: Permission denied)
+E: Unable to lock the administration directory (/var/lib/dpkg/), are you root?
+➜  ~ sudo !!
+➜  ~ sudo apt-get update
+Get:1 http://security.ubuntu.com wily-security InRelease [65.9 kB]
+```
