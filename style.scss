@@ -47,7 +47,39 @@ body {
   padding: 0 10px;
   width: 100%;
 }
-
+.content {
+    // float:left;
+    width:100%;
+}
+.sidebar {
+    float:right;
+    width:32%;
+    nav {
+        float:none;
+        ul {
+            list-style:none;
+            margin:0;
+            padding:0;
+            li {
+                margin-top:.5em;
+                &:first-child {
+                    margin-top:0;
+                }
+            }
+            a {
+                font-size:.8em;
+                font-family:$sans;
+                font-weight:bold;
+                text-transform:uppercase;
+                color:$pink;
+                display:block;
+                text-align:left;
+                padding:.25em;
+                background:#2a2c2b;
+            }
+        }
+    }
+}
 h1, h2, h3, h4, h5, h6 {
   font-family: $sans;
   color: $blue;
@@ -327,7 +359,8 @@ nav {
     }
   }
   pre {
-    color:black;
+    color:$blue;
+    padding:1em;
   }
   .instagram-media {
       width:45%!important;
@@ -340,6 +373,10 @@ nav {
     padding:1em;
     background:#2a2c2b;
     margin:0 1em 0 0;
+  }
+  img.alignMiddle {
+    display:block;
+    margin:0 auto;
   }
 }
 
