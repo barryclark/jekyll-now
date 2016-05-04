@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Autorandr display profile manager on Ubuntu
+title: ARandR display profile manager on Ubuntu
 ---
 
 For a while now, I've been looking for a solution to seamlessly switch between having 1 and 2 monitors enabled on my home desktop, running Ubuntu 15.10.
@@ -18,35 +18,29 @@ So, the process for switching between using solely the primary display and using
 
 Four steps may seem insignificant, but if you switch even 2 or 3 times a day (8 steps to switch, then switch back), the time consumed adds up. I partly have [Rands](http://randsinrepose.com/archives/saving-seconds/) (I too have a love-hate relationship with the mouse) to thank for this mindset, though I'm sure he wasn't the first person to discuss it.
 
-## Enter Autorandr
+## Enter ARandR
 
-Originally by [wertarbyte](https://github.com/wertarbyte/autorandr) on github, autorandr is described as:
+ARandR is available from the official sources, and can be installed like this:
 
-> A tool to automatically select a display configuration based on connected devices
+    $ sudo apt-get install arandr
 
-It basically lets you set up your monitors the way you want them, then save that configuration as a profile for later use. Its original intent--I believe--was for people using laptops that docked to monitors throughout the day, but it suits my needs perfectly.
+This version of arandr is a GUI, so if you're cool with opening a small app to load and manage your profiles, this one has you covered as well. However, as we'll see shortly, it gives us a nice way to swap profiles via the command line as well, which is what I was ultimately after.
 
-## Installation and usage
+## Setting up
 
-When I installed wertarbyte's version, I encountered an x11 error that prevented profiles from being loaded after they were saved. YMMV. Thankfully, phillipberndt has forked the project and resolved that issue, [so I installed his](https://github.com/phillipberndt/autorandr/).
+As with the original method, we'll be working with two profiles, one for dual monitors, and one for a single monitor. So, open up arandr, configure your monitors and save the layouts. In my case, the layouts were saved in a folder called .screenlayout, and each profile is saved as your name of choice with an .sh extension.
 
-Once you've downloaded the zip, extract it and use make to install it. Open a terminal, navigate to the directory where you have the zip downloaded and issue the following commands:
+The result is a folder in the home directory with the following structure:
 
-    $ unzip autorandr-master.zip
-    $ cd autorandr-master
-    $ sudo make install
+    .screenlayout
+      single.sh
+      dual.sh
 
-After a few seconds, autorandr should be installed and you can start setting up your profiles. For me, I used two profile names which were pretty self-explanatory:
+You can probably see already where this is going. To invoke each layout, a simple terminal command is all you need, no sudo required:
 
-* main
-* dual
+    $ ~/.screenlayout/single.sh
+    $ ~/.screenlayout/dual.sh
 
-For each profile you want, use the display settings panel to set things up the way you want them and then use the following command (substituting 'main' for the name you want):
+If you want to take this a step further, you can add these scripts as launchers to your panel, and take care of the whole process in a single click. Just add a new launcher, browse to the scripts, and you're off to the races.
 
-    $ autorandr --save main
-
-And to load a profile:
-
-    $ autorandr -l main
-
-Nice and simple. Quicker than using a GUI, and flexible enough to handle all your display profile needs.
+Enjoy!
