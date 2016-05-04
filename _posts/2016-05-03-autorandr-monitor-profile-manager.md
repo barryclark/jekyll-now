@@ -24,11 +24,11 @@ ARandR is available from the official sources, and can be installed like this:
 
     $ sudo apt-get install arandr
 
-This version of arandr is a GUI, so if you're cool with opening a small app to load and manage your profiles, this one has you covered as well. However, as we'll see shortly, it gives us a nice way to swap profiles via the command line as well, which is what I was ultimately after.
+ARandR is a GUI, so if you're cool with opening a small app to load and manage your profiles, this one has you covered as well. However, as we'll see shortly, it gives us a nice way to swap profiles via the command line as well, which is what I was ultimately after.
 
 ## Setting up
 
-As with the original method, we'll be working with two profiles, one for dual monitors, and one for a single monitor. So, open up arandr, configure your monitors and save the layouts. In my case, the layouts were saved in a folder called .screenlayout, and each profile is saved as your name of choice with an .sh extension.
+In this example, we'll be working with two profiles, one for dual monitors, and one for a single monitor. So, open up arandr, configure your monitors and save the layouts. In my case, the layouts were saved in a folder called .screenlayout, and each profile is saved as your name of choice with an .sh extension.
 
 The result is a folder in the home directory with the following structure:
 
