@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Increasing the Wage, part 2
-tags: [politics, math]
+tags: [politics, math, money]
 ---
 
 An updated table from the [previous post](/increasing_the_wage/) plus two more scenerios.
