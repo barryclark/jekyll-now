@@ -1,20 +1,6 @@
 ---
-layout: default
+layout: post
+title: Customize Blog Theme
 ---
 
-<article class="post">
-
-  <h1>{{ page.title }}</h1>
-
-  <div class="entry">
-    {{ content }}
-  </div>
-
-  <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
-  </div>
-
-  <div class="comments">
-    {% include disqus.html disqus_identifier=page.disqus_identifier %}
-  </div>
-</article>
+After my blog is up and ready the very first thing I wanted to do with my blog is to trying out different themes. 
