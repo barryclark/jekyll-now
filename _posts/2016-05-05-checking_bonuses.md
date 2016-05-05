@@ -3,33 +3,30 @@ layout: post
 title: Checking Bonuses
 tags: [money]
 keywords: [checking, churning, bank, interest]
-excerpt: 1. Maximum and Minimum values; 2. String Length; 3. Constant String Length; 4. Variable Name Length
 ---
 
 <table>
 <thead>
 <tr>
 	<th>Bank</th>
-	<th></th>
-	<th></th>
-	<th></th>
-	<th></th>
+	<th>Start Date</th>
+	<th>Initial Deposit</th>
+	<th>Requirements</th>
+	<th>Completed Date</th>
+	<th>Bonus Received</th>
+	<th>Bonus</th>
 </tr>
 </thead>
 <tbody>
-{% for item in site.data.garagesale.stuff %}
+{% for row in site.data.churn %}
 <tr>
-	<td>{{ item.name }}</td>
-	<td>${{ item.price }}</td>
-	<td >
-		<a href="images/{{ item.image }}.jpg">
-		<img src="images/{{ item.image }}.jpg" style="width: 270px; height: 152px;" />
-		</a>
-		<div class="fb-share-button" 
-			 data-href="http://hendrixjoseph.github.io/garagesale/images/{{ item.image }}.jpg"
-			 data-layout="button_count">
-		</div>
-	</td>
+	<td>{{ row.who }}</td>
+	<td>{{ row.start_date }}</td>
+	<td>${{ row.initial_deposit }}</td>
+	<td>{{ row.requirements }}</td>
+	<td>{{ row.completed_date }}</td>
+	<td>{{ row.bonus_date }}</td>
+	<td>${{ row.bonus }}</td>
 </tr>
 {% endfor %}
 </tbody>
