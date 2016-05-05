@@ -7,7 +7,7 @@ tags: [meta-analysis, effect-sizes, distribution-theory]
 
 The standardized mean difference (SMD) is surely one of the best known and most widely used effect size metrics used in meta-analysis. In generic terms, the SMD parameter is defined as the difference in population means between two groups (often this difference represents the effect of some intervention), scaled by the population standard deviation of the outcome metric. Estimates of the SMD can be obtained from a wide variety of experimental designs, ranging from simple, completely randomized designs, to repeated measures designs, to cluster-randomized trials.
 
-There's some nuance involved in figuring out how to calculate estimates of the SMD from each design, mostly to do with exactly what sort of standard deviation to use in the denominator of the effect size. I'll leave that discussion for another day. Here, I'd like to look at the question of how to estimate the sampling variance of the SMD. An estimate of the sampling variance is needed in order to meta-analyze a collection of effect sizes, and so it's an important consideration for any research synthesis. However, the standard textbook treatments of effect size calculations cover this question only for a limited number of simple cases. I'd like to suggest a different, more general way of thinking about it, which provides a way to estimate the SMD and its variance in non-standard cases (and also leads to slight differences in the standard ones). All of this might be old hat for seasoned synthesists, but I hope it might be useful for students and researchers just getting started with meta-analysis.
+There's some nuance involved in figuring out how to calculate estimates of the SMD from each design, mostly to do with exactly what sort of standard deviation to use in the denominator of the effect size. I'll leave that discussion for another day. Here, I'd like to look at the question of how to estimate the sampling variance of the SMD. An estimate of the sampling variance is needed in order to meta-analyze a collection of effect sizes, and so getting the variance calculations right is an important (and sometimes time consuming) part of any meta-analysis project. However, the standard textbook treatments of effect size calculations cover this question only for a limited number of simple cases. I'd like to suggest a different, more general way of thinking about it, which provides a way to estimate the SMD and its variance in some non-standard cases (and also leads to slight differences from conventional formulas for the standard ones). All of this will be old hat for seasoned synthesists, but I hope it might be useful for students and researchers just getting started with meta-analysis.
 
 To start, let me review (regurgitate?) the standard textbook presentation.
 
@@ -33,7 +33,7 @@ $$
 J(x) = 1 - \frac{3}{4x - 1},
 $$
 
-the corrected estimator is 
+the bias-corrected estimator is 
 
 $$
 g = J\left(n_T + n_C - 2\right) \times d,
@@ -45,14 +45,14 @@ $$
 V_g = J^2\left(n_T + n_C - 2\right) \left(\frac{n_T + n_C}{n_T n_C} + \frac{g^2}{2\left(n_T + n_C - 2\right)}\right).
 $$
 
-[Viechtbauer (2007)](http://doi.org/10.3102/1076998606298034) provides further details on variance estimation and confidence intervals.
+[Viechtbauer (2007)](http://doi.org/10.3102/1076998606298034) provides further details on variance estimation and confidence intervals for the SMD in this case.
 
 ### A general formula for $g$ and its sampling variance
 
-The above formulas are certainly useful, but in practice meta-analyses often include studies that use other, sometimes more complex designs. 
-Good textbook presentations also cover computation of $g$ and its variance for some other cases (e.g., Borenstein, 2009, also covers one-group pre/post designs and analysis of covariance). Less careful presentations only cover the simple, independent groups design and thus may inadvertently leave the impression that the variance estimator $V_d$ works in general. With other types of studies, $V_d$ can be a wildly biased estimator of the actual sampling variance of $d$, because it is derived under the assumption that the numerator of $d$ is estimated as the difference in means of two simple random samples. In some designs (e.g., ANCOVA designs, randomized block designs, repeated measures designs), the treatment effect estimate will be much more precise than this; in other designs (e.g., cluster-randomized trials), it will be less precise. 
+The above formulas are certainly useful, but in practice meta-analyses often include studies that use other, more complex designs. 
+Good textbook presentations also cover computation of $g$ and its variance for some other cases (e.g., Borenstein, 2009, also covers one-group pre/post designs and analysis of covariance). Less careful presentations only cover the simple, independent groups design and thus may inadvertently leave the impression that the variance estimator $V_d$ given above applies in general. With other types of studies, $V_d$ can be a wildly biased estimator of the actual sampling variance of $d$, because it is derived under the assumption that the numerator of $d$ is estimated as the difference in means of two simple random samples. In some designs (e.g., ANCOVA designs, randomized block designs, repeated measures designs), the treatment effect estimate will be much more precise than this; in other designs (e.g., cluster-randomized trials), it will be less precise. 
 
-Here's (what I think is) a more useful way to think about the sampling variance of $d$. Let's suppose that we have an unbiased estimator for the difference in means that goes into the numerator of the SMD. Call this estimator $b$, its sampling variance $\text{Var}(b)$, and its standard error $se_{b}$. Also suppose that we have an unbiased (or reasonably close-to-unbiased) estimator of the population variance of the outcome, the square root of which goes into the denominator of the SMD. Call this estimator $S^2$, with expectation $\text{E}\left(S^2\right) = \sigma^2$ and sampling variance $\text{Var}(S^2)$. Finally, suppose that $b$ and $S^2$ are independent (which will often be a pretty reasonable assumption). A delta-method approximation for the sampling variance of $d = b / S$ is then 
+Here's what I think is a more useful way to think about the sampling variance of $d$. Let's suppose that we have an unbiased estimator for the difference in means that goes into the numerator of the SMD. Call this estimator $b$, its sampling variance $\text{Var}(b)$, and its standard error $se_{b}$. Also suppose that we have an unbiased (or reasonably close-to-unbiased) estimator of the population variance of the outcome, the square root of which goes into the denominator of the SMD. Call this estimator $S^2$, with expectation $\text{E}\left(S^2\right) = \sigma^2$ and sampling variance $\text{Var}(S^2)$. Finally, suppose that $b$ and $S^2$ are independent (which will often be a pretty reasonable assumption). A delta-method approximation for the sampling variance of $d = b / S$ is then 
 
 $$
 \text{Var}\left(d\right) \approx \frac{\text{Var}(b)}{\sigma^2} + \frac{\delta^2}{2 \nu},
@@ -64,7 +64,11 @@ $$
 V_d = \left(\frac{se_b}{S}\right)^2 + \frac{d^2}{2 \nu}.
 $$
 
-For some designs, the degrees of freedom $\nu$ depend only on sample sizes, and thus can be calculated exactly. For some other designs, $\nu$ must be estimated. Furthermore, a small-sample correction for the bias of $d$ is given by 
+This estimator has two parts. The first part involves $se_b / S$, which is just the standard error of $b$, but re-scaled into standard deviation units; this part captures the variability in $d$ from its numerator. This scaled standard error can be calculated directly if an article reports $se_b$. 
+
+The second part of $V_d$ is $d^2 / (2 \nu)$, which captures the variability in $d$ due to its denominator. More precise estimates of $\sigma$ will have larger degrees of freedom, so that the second part will be smaller. For some designs, the degrees of freedom $\nu$ depend only on sample sizes, and thus can be calculated exactly. For some other designs, $\nu$ must be estimated. 
+
+The same degrees of freedom can also be used in the small-sample correction for the bias of $d$, as given by 
 
 $$
 g = J(\nu) \times d.
@@ -82,14 +86,14 @@ where $t$ is the test statistic corresponding to the hypothesis test for no diff
 
 ### Non-standard estimators of $d$
 
-The advantage of this formulation of $d$, $g$, and $V_d$ is that it can be applied in quite a wide variety of circumstances, including cases that aren't usually covered in textbook treatments. Rather than having to use separate formulas for every design under the sun, the same formulas apply throughout. All that changes are the components of the formulas: the scaled standard error $se_b / S$ and the degrees of freedom $\nu$. A bunch of examples:
+The advantage of this formulation of $d$, $g$, and $V_d$ is that it can be applied in quite a wide variety of circumstances, including cases that aren't usually covered in textbook treatments. Rather than having to use separate formulas for every design under the sun, the same formulas apply throughout. All that changes are the components of the formulas: the scaled standard error $se_b / S$ and the degrees of freedom $\nu$. The general formulation also makes it a bit easier to swap in different estimates of $b$ or $S$---i.e., if you estimate the numerator a different way but keep the denominator the same, you'll need a new scaled standard error but can still use the same degrees of freedom. A bunch of examples:
 
 #### Independent groups with different variances
 
 Suppose that we're looking at two independent groups but do not want to assume that their variances are the same. In this case, it would make sense to standardize the difference in means by the control group standard deviation (without pooling), so that $d = \left(\bar{y}_T - \bar{y}_C\right) / s_C$. Since $s_C^2$ has $\nu = n_C - 1$ degrees of freedom, the small-sample bias correction will then need to be $J(n_C - 1)$. The scaled standard error will be
 
 $$
-\frac{se_b}{S} = \sqrt{\frac{s_T^2}{s_C^2 n_T} + \frac{1}{n_C}}.
+\frac{se_b}{s_C} = \sqrt{\frac{s_T^2}{s_C^2 n_T} + \frac{1}{n_C}}.
 $$
 
 This is then everything that we need to calculate $V_d$, $g$, $V_g$, etc.
@@ -105,7 +109,7 @@ $$
 For a comparison between treatment group $k$ and the control group, we would then use 
 
 $$
-d = \frac{\bar{y}_k - \bar{y}_C}{s_p}, \qquad \nu = N - K, \qquad \frac{se_b}{S} = \sqrt{\frac{1}{n_C} + \frac{1}{n_k}},
+d = \frac{\bar{y}_k - \bar{y}_C}{s_p}, \qquad \nu = N - K, \qquad \frac{se_b}{s_p} = \sqrt{\frac{1}{n_C} + \frac{1}{n_k}},
 $$
 
 where $n_k$ is the sample size for treatment group $k$ (cf. Gleser & Olkin, 2009). 
@@ -121,10 +125,10 @@ $$
 In this design,
 
 $$
-\frac{se_b}{S} = \frac{2(1 - r)}{n},
+\frac{se_b}{s_p} = \frac{2(1 - r)}{n},
 $$
 
-where $r$ is the sample correlation between the pre- and post-tests. The remaining question is what to use for $\nu$. Borenstein (2009) uses $\nu = n - 1$, which amounts to treating $r$ as constant. My previous post [on the sampling covariance of sample variances]({{site.url}}/distribution-of-sample-variances/) gave the result that $\text{Var}(s_p^2) = \sigma^4 (1 + \rho^2) / (n - 1)$, which would instead suggest using 
+where $r$ is the sample correlation between the pre- and post-tests. The remaining question is what to use for $\nu$. Borenstein (2009) uses $\nu = n - 1$. My previous post [on the sampling covariance of sample variances]({{site.url}}/distribution-of-sample-variances/) gave the result that $\text{Var}(s_p^2) = \sigma^4 (1 + \rho^2) / (n - 1)$, which would instead suggest using 
 
 $$
 \nu = \frac{2 (n - 1)}{1 + r^2}. 
@@ -140,19 +144,15 @@ $$
 \frac{se_b}{S} = \frac{(n_C + n_T)(1 - r^2)}{n_C n_T},
 $$
 
-where $r$ is the pooled, within-group sample correlation between the pre-test and the post-test measures. Alternately, if $se_b$ is provided then the scaled standard error could be calculated directly.
+where $r$ is the pooled, within-group sample correlation between the pre-test and the post-test measures (this is approximation that assumes that the pre-test SMD between groups is relatively small). Alternately, if $se_b$ is provided then the scaled standard error could be calculated directly.
 
-Borenstein (2009) suggests calculating $d$ as the difference in adjusted means, scaled by the pooled sample variances on the post-test measures. The post-test pooled sample variance will have the same degrees of freedom as in the two-sample t-test case: $\nu = n_C + n_T - 2$. (Borenstein instead uses $\nu = n_C + n_T - 2 - q$, where $q$ is the number of covariates in the analysis, but again this won't usually make much difference unless the total sample size is really small.)
+Borenstein (2009) suggests calculating $d$ as the difference in adjusted means, scaled by the pooled sample variances on the post-test measures. The post-test pooled sample variance will have the same degrees of freedom as in the two-sample t-test case: $\nu = n_C + n_T - 2$. (Borenstein instead uses $\nu = n_C + n_T - 2 - q$, where $q$ is the number of covariates in the analysis, but this won't usually make much difference unless the total sample size is quite small.)
 
-Scaling by the pooled post-test sample variance isn't the only reasonable way to estimate the SMD though. If the covariate is a true pre-test, then why not scale by the pooled pre-test sample variance instead? To do so, you would need to calculate $se_b / S$ directly and again use $\nu = n_C + n_T - 2$. If it's reasonable to assume that the pre- and post-test population variances are equal, then another alternative would be to pool across the pre-test _and_ post-test sample variances in each group. Using this approach, you would again need to calculate $se_b / S$ directly and then use
-
-$$
-\nu = \frac{2(n_C + n_T - 2)}{1 + r^2}.
-$$
+Scaling by the pooled post-test sample variance isn't the only reasonable way to estimate the SMD though. If the covariate is a true pre-test, then why not scale by the pooled pre-test sample variance instead? To do so, you would need to calculate $se_b / S$ directly and use $\nu = n_C + n_T - 2$. If it is reasonable to assume that the pre- and post-test population variances are equal, then another alternative would be to pool across the pre-test _and_ post-test sample variances in each group. Using this approach, you would again need to calculate $se_b / S$ directly and then use $\nu = 2(n_C + n_T - 2) / (1 + r^2)$.
 
 #### Two group, pre-test post-test design: repeated measures estimation
 
-Another way to analyze the data from the same type of study design is to use repeated measures ANOVA. This is not to say that it's a good idea, but I've recently encountered a number of studies that do it (here's a recent example from [a highly publicized study in PLOS ONE](http://dx.doi.org/10.1371/journal.pone.0154075)--see Table 2). The studies I've seen typically report the sample means and variances in each group and at each time point, from which the difference in change scores can be calculated. Let $\bar{y}_{gt}$ and $s_{gt}^2$ denote the sample mean and sample variance in group $g = T, C$ at time $t = 0, 1$. The numerator of $d$ would then be calculated as 
+Another way to analyze the data from the same type of study design is to use repeated measures ANOVA. I've recently encountered a number of studies that use this approach (here's a recent example from [a highly publicized study in PLOS ONE](http://dx.doi.org/10.1371/journal.pone.0154075)---see Table 2). The studies I've seen typically report the sample means and variances in each group and at each time point, from which the difference in change scores can be calculated. Let $\bar{y}_{gt}$ and $s_{gt}^2$ denote the sample mean and sample variance in group $g = T, C$ at time $t = 0, 1$. The numerator of $d$ would then be calculated as 
 
 $$
 b = \left(\bar{y}_{T1} - \bar{y}_{T0}\right) - \left(\bar{y}_{C1} - \bar{y}_{C0}\right),
@@ -176,10 +176,48 @@ As with ANCOVA, there are several potential options for calculating the denomina
     
     with $\nu = 2(n_C + n_T - 2) / (1 + r^2)$.
 
+#### Cluster-randomized trials
+
+[Hedges (2007)](http://doi.org/10.3102/1076998606298043) addresses estimation of standardized mean differences for cluster-randomized trials, in which the units of measurement are nested within higher-level clusters that comprise the units of randomization. Such designs involve two variance components (within- and between-cluster variance), and thus there are three potential approaches to scaling the treatment effect: standardize by the total variance (i.e., the sum of the within- and between-cluster components), standardize by the within-cluster variance, or standardize by the between-cluster variance. Furthermore, some of the effect sizes can be estimated in several different ways, each with a different sampling variance. [Hedges (2007)](http://doi.org/10.3102/1076998606298043) gives sampling variance estimates for each estimator of each effect size, but they all follow the same general formula as given above. (The appendix of the article actually gives the same formula as above, but using a more abstract formulation.) 
+
+For example, suppose the target SMD parameter uses the total variance and that we have data from a two-level, two-arm cluster randomized trial with $M$ clusters, $n$ observations per cluster, and total sample sizes in each arm of $N_T$ and $N_C$, respectively. Let $\tau^2$ be the between-cluster variance, $\sigma^2$ be the within-cluster variance, and $\rho = \tau^2 / (\tau^2 + \sigma^2)$. The target parameter is $\delta = \left(\mu_T - \mu_C\right) / \left(\tau^2 + \sigma^2\right)$. The article assumes that the treatment effect will be estimated by the difference in grand means, $\bar{\bar{y}}_T - \bar{\bar{y}}_C$. Letting $S_B^2$ be the pooled sample variance of the cluster means within each arm and $S_W^2$ be the pooled within-cluster sample variance, the total variance is estimated as 
+
+$$
+S_{total}^2 = S_B^2 + \frac{n - 1}{n} S_W^2. 
+$$
+
+An estimate of the SMD is then 
+
+$$
+d = \left(\bar{\bar{y}}_T - \bar{\bar{y}}_C \right) / \sqrt{S_{total}^2}. 
+$$
+
+The scaled standard error of $\bar{\bar{y}}_T - \bar{\bar{y}}_C$ is 
+
+$$
+se_b = \left(\frac{N_C + N_T}{N_C N_T}\right)\left[1 + (n - 1)\rho\right].
+$$
+
+The appendix of the article demonstrates that $\text{E}\left(S_{total}^2\right) = \tau^2 + \sigma^2$ and 
+
+$$
+\text{Var}\left( S_{total}^2 \right) = \frac{2}{n^2}\left(\frac{(n \tau^2 + \sigma^2)^2}{M - 2} + \frac{(n - 1)^2 \sigma^4}{N_C + N_T - M}\right),
+$$
+
+by which it follows that 
+
+$$
+\nu = \frac{n^2 M (M - 2)}{M[(n - 1)\rho + 1]^2 + (M - 2)(n - 1)(1 - \rho)^2}.
+$$
+
+Substituting $se_b / S_{total}$ and $\nu$ into the formula for $V_d$ gives the same as Expression (14) in the article. 
+
+A limitation of [Hedges (2007)](http://doi.org/10.3102/1076998606298043) is that it only covers the case where the treatment effect is estimated by the difference in grand means (although it does cover the case of unequal cluster sizes, which gets quite messy). In practice, every cluster-randomized trial I've ever seen uses baseline covariates to adjust the mean difference (often based on a hierarchical linear model) and improve the precision of the treatment effect estimate. The SMD estimate should also be based on this covariate-adjustment estimate, scaled by the total variance _without adjusting for the covariate_. An advantage of the general formulation given above is that its clear how to estimate the sampling variance of $d$. I would guess that it will often be possible to calculate the scaled standard error directly, given the standard error of the covariate-adjusted treatment effect estimate. And since $S_{total}$ would be estimated just as before, its degrees of freedom remain the same. 
+
+[Hedges (2011)](http://doi.org/10.3102/1076998610376617) discusses estimation of SMDs in three-level cluster-randomized trials---an even more complicated case. However, the general approach is the same; all that's needed are the scaled standard error and the degrees of freedom $\nu$ of whatever combination of variance components go into the denominator of the effect size. In both the two-level and three-level cases, the degrees of freedom get quite complicated in unbalanced samples and are probably not calculable from the information that is usually provided in an article. Hedges (2007, 2011) comments on a couple of cases where more tractable approximations can be used, although it seems like there might be room for further investigation here. 
+
 #### Randomized trial with longitudinal follow-up
 
-
-#### Cluster-randomized trials
 
 
 ### References
