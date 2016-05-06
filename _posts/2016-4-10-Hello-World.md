@@ -3,7 +3,7 @@ layout: post
 title: Hello World!
 ---
 
-Welcome to my blog! Hooray, my personal blog is up and running now. I have longed for having my own blog to share my projects. Lucky enough, we are living in the best era ever. Millions of open source are free and available for us to learn almost whenever wherever we want. We have alternatives other than paying ever increasing tuition fee at school to obtain quality education. I praise the TECHNOLOGY for making this possible. After reading "Blog Like a Hacker " by Tom Preston-Werner, I am totally inspired and told myself, "I gotto do it this time!". 
+Welcome to my blog! Hooray, my personal blog is up and running now. I have long wanted to have my own blog for sharing my projects. Luckily, we are living in the best era ever. Millions of open source are free and available for us to learn almost whenever wherever we want. We have alternatives other than paying ever increasing tuition fee at school to obtain quality education. I praise the TECHNOLOGY for making this possible. After reading "Blog Like a Hacker " by Tom Preston-Werner, I am totally inspired and told myself, "I gotto do it this time!". 
 
 Jekyll is the engine behind GitHub that host web site on GitHub based on their repositories. It generates static page by taking content, rendering Markdown and Liquid template. According to Jekyll "readme", 
 
