@@ -5,7 +5,7 @@ title: Calamares gains LUKS encryption support
 
 Hello community,
 
-out upcoming Calamares 2.3 installer now supports full hard drive encryption. Watch this video to get more information about it.
+our upcoming Calamares 2.3 installer now supports full hard drive encryption. Watch this video to get more information about it.
 
 <iframe src="https://player.vimeo.com/video/165639115" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
