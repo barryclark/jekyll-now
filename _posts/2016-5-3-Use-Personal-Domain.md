@@ -9,12 +9,12 @@ Next step, checked for availability of domain name. Tried with my first name and
 
 ![Image](../images/dns_registration.png?raw=true)
 
-After registered for a domain name and verified my contact information, the domain name is up and ready. Redirecting my GitHub site to my own domain name was quite straight forward. This [Using a custom domain with GitHub pages](https://help.github.com/articles/using-a-custom-domain-with-github-pages/) provides good documentation on how to accomplished this. 
+After registered for a domain name and verified my contact information, the domain name is up and ready. Redirecting my GitHub site to my own domain name was quite straight forward. [Using a custom domain with GitHub pages](https://help.github.com/articles/using-a-custom-domain-with-github-pages/) provides good documentation on how to accomplished this. 
 
 Here's the overview of the steps:
 <ol>
-<li>1. Add a ```CNAME``` file in GitHub pages site repository</li>
-<li>2.  </li>
+<li>Add a     CNAME file in GitHub pages site repository</li>
+<li>  </li>
 </ol>
 
 
