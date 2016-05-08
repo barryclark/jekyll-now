@@ -13,7 +13,7 @@ After registered for a domain name and verified my contact information, the doma
 
 Here's the overview of the steps:
 <ol>
-<li>Add a     CNAME file in GitHub pages site repository</li>
+<li>Add a   CNAME file in GitHub pages site repository</li>
 <li>  </li>
 </ol>
 
