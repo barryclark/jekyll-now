@@ -12,17 +12,12 @@ I followed Scrapy Developer Document - [Installation Guide](http://doc.scrapy.or
 Once installed, [this tutorial](http://doc.scrapy.org/en/master/intro/tutorial.html) to get myself familiar with Scrapy Framework. I got my first Scrapy project working by following the tutorial. So far so good, I was ready to scrape more interesting content from the web. I had several project ideas in mind . Trying not to against the terms of use of some web sites, I narrowed it down to a few. Finally I decided to do something interesting and I like very much which was scraping popular titles from IMDB over the Years (start from 1874).
 
 #### Create IMDB Project
-  ---
-    scrapy startproject ImdbProject
-  ---
-  
-<ol>
-<li>Run this command line to create scrapy project.
+
+Run this command line to create scrapy project.
   ---
     scrapy startproject ImdbProject
 
-</li>
-<li>Open items.py within ImdbProject directory. Edit this file by defining item for your scraped items. 
+Open items.py within ImdbProject directory. Edit this file by defining item for your scraped items. 
   ---
     class ImdbprojectItem(scrapy.Item):
       picture_title = scrapy.Field()
@@ -36,11 +31,9 @@ Once installed, [this tutorial](http://doc.scrapy.org/en/master/intro/tutorial.h
       title_image= scrapy.Field()
       pass
   ---
-  </li>
- <li>The Spider 
+  
+The Spider 
  
- </li>
-</ol>
 
 
 
