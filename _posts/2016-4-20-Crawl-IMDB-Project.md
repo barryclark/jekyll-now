@@ -22,7 +22,7 @@ $    scrapy startproject ImdbProject
 **Item Class:** Open *items.py* within *ImdbProject* directory. Edit this file by defining item for your scraped items. 
 
   ```sh
-  $ class ImdbprojectItem(scrapy.Item):
+  $   class ImdbprojectItem(scrapy.Item):
   $     picture_title = scrapy.Field()
   $     genre = scrapy.Field()
   $     TotalNumByGenre = scrapy.Field()
@@ -37,9 +37,11 @@ $    scrapy startproject ImdbProject
   
 **Spider**:  *Spider* is a class that you define how Scrapy scrape and parse information from a domain
 These attributes must be defined in *Spider*:
+
   - *name*: The *Spider* identifier. Must be unique
   - *start_urls*: A list of URLs where *Scrapy* starts crawling data from. The first page of scraping must be included in this list.
   - *parse()*: This method will be called with downloaded |respond| object of each item in *start_urls*
+  - 
   
   
   
