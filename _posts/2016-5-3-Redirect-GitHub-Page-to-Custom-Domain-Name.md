@@ -17,7 +17,7 @@ Here's the overview of the steps:
 <li>Create <code>CNAME</code> type record set and specify value with GitHub page site (make sure no www in front of GitHub page site)</li>
 </ol>
 
-For checking if domain name <code>CNAME</code> is succeessfully updated simply type <code>nslookup "domain name address with www in front"</code> in Terminal. <code>CNAME</code> was updated when returned result showed appropriate canonical name in Terminal. Enjoy seeing your GitHub site on your own domain name!
+For checking if domain name <code>CNAME</code> is succeessfully updated simply type <code><<nslookup "domain name address with www in front">></code> in Terminal. <code>CNAME</code> was updated when returned result showed appropriate canonical name in Terminal. Enjoy seeing your GitHub site on your own domain name!
 
 
 
