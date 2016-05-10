@@ -2,7 +2,7 @@
 layout: post
 title: Pokemon Sun and Pokemon Moon Launches November 18
 category: video-games
-tags: [video games, pokémon]
+tags: [video games, pokemon]
 ---
 
 The Pokémon Company International and Nintendo have finally announced the release date of the latest Pokémon titles, Pokémon Sun and Pokémon Moon. On November 18th Pokémon fans will enter a new region, choosing from 3 new starter Pokémon: Grass and Flying-type Pokémon Rowlet, Fire-type Litten, and Water-type Popplio.
