@@ -20,7 +20,7 @@ Once installed, [this tutorial](http://doc.scrapy.org/en/master/intro/tutorial.h
 <li>Run this command line to create scrapy project.
   ---
     scrapy startproject ImdbProject
-  ---
+
 </li>
 <li>Open items.py within ImdbProject directory. Edit this file by defining item for your scraped items. 
   ---
