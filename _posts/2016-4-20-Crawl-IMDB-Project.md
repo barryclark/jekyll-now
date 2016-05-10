@@ -14,10 +14,11 @@ Once installed, [this tutorial](http://doc.scrapy.org/en/master/intro/tutorial.h
 #### Create IMDB Project
 
 Run this command line to create scrapy project.
-  ---
+
     scrapy startproject ImdbProject
 
-Open items.py within ImdbProject directory. Edit this file by defining item for your scraped items. 
+
+<b>Item Class:</b> Open <i>items.py<i> within <i>ImdbProject</i> directory. Edit this file by defining item for your scraped items. 
   ---
     class ImdbprojectItem(scrapy.Item):
       picture_title = scrapy.Field()
@@ -32,7 +33,7 @@ Open items.py within ImdbProject directory. Edit this file by defining item for 
       pass
   ---
   
-The Spider 
+<b>Spider</b>:  Spider defines the initial 
  
 
 
