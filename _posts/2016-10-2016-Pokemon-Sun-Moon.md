@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Pokémon Sun and Pokémon Moon Launches November 18
+title: Pok&eacute;mon Sun and Pok&eacute;mon Moon Launches November 18
 category: video-games
 tags: [video games, pokémon]
 ---
