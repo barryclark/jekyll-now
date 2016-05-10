@@ -14,11 +14,13 @@ Once installed, [this tutorial](http://doc.scrapy.org/en/master/intro/tutorial.h
 #### Create IMDB Project
 
 Run this command line to create scrapy project.
+
 ```sh
 $    scrapy startproject ImdbProject
 ```
 
 **Item Class:** Open *items.py* within *ImdbProject* directory. Edit this file by defining item for your scraped items. 
+
   ```sh
   $ class ImdbprojectItem(scrapy.Item):
   $     picture_title = scrapy.Field()
@@ -30,17 +32,18 @@ $    scrapy startproject ImdbProject
   $     outline = scrapy.Field()
   $     credit = scrapy.Field()
   $     title_image= scrapy.Field()
-  $ pass
+  $     pass
   ```
   
 **Spider**:  *Spider* is a class that you define how Scrapy scrape and parse information from a domain
 These attributes must be defined in *Spider*:
-- *name*: The *Spider* identifier. Must be unique
-- *start_urls*: A list of URLs where *Scrapy* starts crawling data from. The first page of scraping must be included in this list.
-- *parse()*: This method will be called with downloaded |respond| object of each item in *start_urls*</li>
-    
-    
-    
+  - *name*: The *Spider* identifier. Must be unique
+  - *start_urls*: A list of URLs where *Scrapy* starts crawling data from. The first page of scraping must be included in this list.
+  - *parse()*: This method will be called with downloaded |respond| object of each item in *start_urls*
+  
+  
+  
+  
 
 
 
