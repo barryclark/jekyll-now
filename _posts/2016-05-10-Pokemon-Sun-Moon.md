@@ -12,9 +12,9 @@ Category: Grass Quill Pokémon\\
 Height: 1'00"\\
 Weight: 3.3 lbs.\\
 Type: Grass/Flying\\
-Starting Move: Leafage\\
+Starting Move: Leafage
 
-![Rowlet](/images/Rowlet.png)\\
+![Rowlet](/images/Rowlet.png)
 
 The first of the potential partners is the highly adaptable Grass Quill Pokémon, Rowlet. This Pokémon can fly silently through the skies, sneaking up on its opponent without being noticed. It can attack its opponents using powerful kicks, and it can also attack from a distance using the razor-sharp leaves that form part of its feathers. Rowlet can survey its environment and turn its neck nearly 180 degrees from front to back, so it can see directly behind itself. When in battle, Rowlet turns its head to face its Trainer when waiting for instructions.
 
@@ -23,7 +23,7 @@ Category: Fire Cat Pokémon\\
 Height: 1'04"\\
 Weight: 9.5 lbs.\\
 Type: Fire\\
-Starting Move: Ember\\
+Starting Move: Ember
 
 ![Litten](/images/Litten.png)
 
@@ -34,7 +34,7 @@ Category: Sea Lion Pokémon\\
 Height: 1'04"\\
 Weight: 16.5 lbs.\\
 Type: Water\\
-Starting Move: Water Gun\\
+Starting Move: Water Gun
 
 ![Popplio](/images/Popplio.png)
 
