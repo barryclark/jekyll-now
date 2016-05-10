@@ -9,21 +9,36 @@ I am learning scraping content on the web. There are a few open source web scrap
 
 I followed Scrapy Developer Document - [Installation Guide](http://doc.scrapy.org/en/master/intro/install.html) for Installing Scrapy. Checked for Prerequisties, installed Scrapy by run this: <<pip install scrapy >>.
 
-After installed, [this tutorial](http://doc.scrapy.org/en/master/intro/tutorial.html) to get myself familiar with Scrapy Framework. I got my first Scrapy project working by following the tutorial. So far so good, I was ready to scrape more interesting content from the web. I had several project ideas in mind . Trying not to against the terms of use of some web sites, I narrowed it down to a few. Finally I decided to do something interesting and I like very much which was scraping popular titles from IMDB over the Years (start from 1874).
+Once installed, [this tutorial](http://doc.scrapy.org/en/master/intro/tutorial.html) to get myself familiar with Scrapy Framework. I got my first Scrapy project working by following the tutorial. So far so good, I was ready to scrape more interesting content from the web. I had several project ideas in mind . Trying not to against the terms of use of some web sites, I narrowed it down to a few. Finally I decided to do something interesting and I like very much which was scraping popular titles from IMDB over the Years (start from 1874).
 
-  ---
-    layout: page
-    title: Categories
-    header: Posts By Category
-    group: navigation
-    ---
+####Create IMDB Project
 
-Overview tasks of creating a simple Scrapy project:
 <ol>
-<li>Run this command line at directory where you want to create this project
-  <<scrapy startproject "Project Name">></li>
-<li>
+<li>Run this command line to create scrapy project.</li>
+  ---
+    scrapy startproject ImdbProject
+  ---
+
+<li>Open items.py within ImdbProject directory. Edit this file by defining item for your scraped items. 
 </li>
+  ---
+    class ImdbprojectItem(scrapy.Item):
+      picture_title = scrapy.Field()
+      genre = scrapy.Field()
+      TotalNumByGenre = scrapy.Field()
+      title = scrapy.Field()
+      year = scrapy.Field()
+      user_rating = scrapy.Field()
+      outline = scrapy.Field()
+      credit = scrapy.Field()
+      title_image= scrapy.Field()
+      pass
+  ---
+  
+ <li>The Spider 
+ 
+ </li>
+</ol>
 
 
 
