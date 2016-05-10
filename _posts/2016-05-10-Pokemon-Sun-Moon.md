@@ -7,45 +7,34 @@ tags: [video games, pokemon]
 
 The Pokémon Company International and Nintendo have finally announced the release date of the latest Pokémon titles, Pokémon Sun and Pokémon Moon. On November 18th Pokémon fans will enter a new region, choosing from 3 new starter Pokémon: Grass and Flying-type Pokémon Rowlet, Fire-type Litten, and Water-type Popplio.
 
-**Name: Rowlet**
-Category: Grass Quill Pokémon
-Height: 1'00"
-Weight: 3.3 lbs.
-Type: Grass/Flying
-Starting Move: Leafage
+**Name: Rowlet**\\
+Category: Grass Quill Pokémon\\
+Height: 1'00"\\
+Weight: 3.3 lbs.\\
+Type: Grass/Flying\\
+Starting Move: Leafage\\
 
-![Rowlet](/images/Rowlet.png)
+![Rowlet](/images/Rowlet.png)\\
 
 The first of the potential partners is the highly adaptable Grass Quill Pokémon, Rowlet. This Pokémon can fly silently through the skies, sneaking up on its opponent without being noticed. It can attack its opponents using powerful kicks, and it can also attack from a distance using the razor-sharp leaves that form part of its feathers. Rowlet can survey its environment and turn its neck nearly 180 degrees from front to back, so it can see directly behind itself. When in battle, Rowlet turns its head to face its Trainer when waiting for instructions.
 
-**Name: Litten**
-
-Category: Fire Cat Pokémon
-
-Height: 1'04"
-
-Weight: 9.5 lbs.
-
-Type: Fire
-
-Starting Move: Ember
-
+**Name: Litten**\\
+Category: Fire Cat Pokémon\\
+Height: 1'04"\\
+Weight: 9.5 lbs.\\
+Type: Fire\\
+Starting Move: Ember\\
 
 ![Litten](/images/Litten.png)
 
 The cool-headed Fire Cat Pokémon, Litten, is the next choice for a first-partner Pokémon. Litten’s fur is rich in oils and is immensely flammable. It constantly grooms itself by licking its coat, collecting loose fur into balls. It then ignites these hairballs to create fireball attacks. When the time comes for Litten to molt, it burns off all of its fur in one glorious blaze.
 
-**Name: Popplio**
-
-Category: Sea Lion Pokémon
-
-Height: 1'04"
-
-Weight: 16.5 lbs.
-
-Type: Water
-
-Starting Move: Water Gun
+**Name: Popplio**\\
+Category: Sea Lion Pokémon\\
+Height: 1'04"\\
+Weight: 16.5 lbs.\\
+Type: Water\\
+Starting Move: Water Gun\\
 
 ![Popplio](/images/Popplio.png)
 
