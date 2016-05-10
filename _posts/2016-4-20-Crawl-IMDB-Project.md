@@ -17,13 +17,12 @@ Once installed, [this tutorial](http://doc.scrapy.org/en/master/intro/tutorial.h
   ---
   
 <ol>
-<li>Run this command line to create scrapy project.</li>
+<li>Run this command line to create scrapy project.
   ---
     scrapy startproject ImdbProject
   ---
-
-<li>Open items.py within ImdbProject directory. Edit this file by defining item for your scraped items. 
 </li>
+<li>Open items.py within ImdbProject directory. Edit this file by defining item for your scraped items. 
   ---
     class ImdbprojectItem(scrapy.Item):
       picture_title = scrapy.Field()
@@ -37,7 +36,7 @@ Once installed, [this tutorial](http://doc.scrapy.org/en/master/intro/tutorial.h
       title_image= scrapy.Field()
       pass
   ---
-  
+  </li>
  <li>The Spider 
  
  </li>
