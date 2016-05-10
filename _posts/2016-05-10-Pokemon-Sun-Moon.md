@@ -45,4 +45,4 @@ The third possibility is the acrobatic Sea Lion Pokémon, Popplio. Popplio can c
 
 As with any new Pokémon, I'm super excited for these to come out. Of course it may come with the bitter disappointment of terrible Pokémon designs, but with any new Pokémon game there's bound to be a handful of really cool ones. I can already say I'm not a fan of any of the three starters, or the new Legendaries, but I will hold out hope that there's something amazing in the new batch.
 
-<iframe width="640" height="360" src="https://www.youtube.com/embed/k8n_5qXWewU" frameborder="0" allowfullscreen></iframe>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/Kn25hijDL7c" frameborder="0" allowfullscreen></iframe>
