@@ -14,30 +14,30 @@ Once installed, [this tutorial](http://doc.scrapy.org/en/master/intro/tutorial.h
 #### Create IMDB Project
 
 Run this command line to create scrapy project.
-
-    scrapy startproject ImdbProject
-
+```
+$    scrapy startproject ImdbProject
+```
 
 **Item Class:** Open *items.py* within *ImdbProject* directory. Edit this file by defining item for your scraped items. 
-  ---
-        class ImdbprojectItem(scrapy.Item):
-            picture_title = scrapy.Field()
-            genre = scrapy.Field()
-            TotalNumByGenre = scrapy.Field()
-            title = scrapy.Field()
-            year = scrapy.Field()
-            user_rating = scrapy.Field()
-            outline = scrapy.Field()
-            credit = scrapy.Field()
-            title_image= scrapy.Field()
-            pass
-  ---
+  ```
+  $ class ImdbprojectItem(scrapy.Item):
+  $     picture_title = scrapy.Field()
+  $     genre = scrapy.Field()
+  $     TotalNumByGenre = scrapy.Field()
+  $     title = scrapy.Field()
+  $     year = scrapy.Field()
+  $     user_rating = scrapy.Field()
+  $     outline = scrapy.Field()
+  $     credit = scrapy.Field()
+  $     title_image= scrapy.Field()
+  $ pass
+  ```
   
-**Spider**:  *Spider* is a class that you define how Scrapy scrape and parse information from a domain.
+**Spider**:  *Spider* is a class that you define how Scrapy scrape and parse information from a domain
 These attributes must be defined in *Spider*:
-<ol><li>*name*: The *Spider* identifier. Must be unique.</li>
-    <li>*start_urls*: A list of URLs where *Scrapy* starts crawling data from. The first page of scraping must be included in this list.</li>
-    <li>*parse()*: This method will be called with downloaded |respond| object of each item in *start_urls*</li>
+- *name*: The *Spider* identifier. Must be unique
+- *start_urls*: A list of URLs where *Scrapy* starts crawling data from. The first page of scraping must be included in this list.
+- *parse()*: This method will be called with downloaded |respond| object of each item in *start_urls*</li>
     
     
     
