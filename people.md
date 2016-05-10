@@ -8,8 +8,8 @@ permalink: /people/
 ## Principal Investigator: Il Memming Park
 ![I. Memming Park's photo](/images/Park.jpg){: .profile-photo }
 
-* Assistant Professor, [Department of Neurobiology and Behavior](https://medicine.stonybrookmedicine.edu/neurobiology), Stony Brook University (2015-current)
-* Affliated with [Institute for Advanced Computing Sciences](http://www.iacs.stonybrook.edu/) and the [Department of Applied Mathematics and Statistics](http://www.stonybrook.edu/commcms/ams2/)
+* Assistant Professor, [Department of Neurobiology and Behavior (NBB)](https://medicine.stonybrookmedicine.edu/neurobiology), Stony Brook University (2015-current)
+* Affliated with the [Institute for Advanced Computing Science (IACS)](http://www.iacs.stonybrook.edu/) and the [Department of Applied Mathematics and Statistics (AMS)](http://www.stonybrook.edu/commcms/ams2/)
 * [Blog](http://memming.wordpress.com)
 * [Calendar](/memmingCal)
 * [Google scholar](http://scholar.google.com/citations?user=CsmltusAAAAJ), [DBLP](http://www.informatik.uni-trier.de/~ley/db/indices/a-tree/p/Park_0002:Il.html), [ORCID](http://orcid.org/0000-0002-4255-7750)
@@ -27,8 +27,7 @@ permalink: /people/
 
 ## Jon Beck
 
-* Department of Neurobiology and Behavior, Stony Brook University
-* Rotation student (2016 spring)
+* PhD student, Department of Neurobiology and Behavior, Stony Brook University
 
 ## Future lab member
 ![Cartoon MRI head](/images/MRI_brain_outline_memming.png){: .profile-photo }
