@@ -14,12 +14,12 @@ Once installed, [this tutorial](http://doc.scrapy.org/en/master/intro/tutorial.h
 #### Create IMDB Project
 
 Run this command line to create scrapy project.
-```
+```sh
 $    scrapy startproject ImdbProject
 ```
 
 **Item Class:** Open *items.py* within *ImdbProject* directory. Edit this file by defining item for your scraped items. 
-  ```
+  ```sh
   $ class ImdbprojectItem(scrapy.Item):
   $     picture_title = scrapy.Field()
   $     genre = scrapy.Field()
