@@ -22,9 +22,9 @@ scrapy startproject ImdbProject
 **Item Class:** Open *items.py* within *ImdbProject* directory. Edit this file by defining item for your scraped items. 
 
   ```sh
-  class ImdbprojectItem(scrapy.Item):
-    picture_title = scrapy.Field()
-    genre = scrapy.Field()
+    class ImdbprojectItem(scrapy.Item):
+      picture_title = scrapy.Field()
+      genre = scrapy.Field()
     TotalNumByGenre = scrapy.Field()
     title = scrapy.Field()
     year = scrapy.Field()
