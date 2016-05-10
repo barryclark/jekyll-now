@@ -22,17 +22,17 @@ Run this command line to create scrapy project.
 **Item Class:** Open *items.py* within *ImdbProject* directory. Edit this file by defining item for your scraped items. 
 
   ```sh
-    class ImdbprojectItem(scrapy.Item):
-      picture_title = scrapy.Field()
-      genre = scrapy.Field()
-      TotalNumByGenre = scrapy.Field()
-      title = scrapy.Field()
-      year = scrapy.Field()
-      user_rating = scrapy.Field()
-      outline = scrapy.Field()
-      credit = scrapy.Field()
-      title_image= scrapy.Field()
-      pass
+        class ImdbprojectItem(scrapy.Item):
+            picture_title = scrapy.Field()
+            genre = scrapy.Field()
+            TotalNumByGenre = scrapy.Field()
+            title = scrapy.Field()
+            year = scrapy.Field()
+            user_rating = scrapy.Field()
+            outline = scrapy.Field()
+            credit = scrapy.Field()
+            title_image= scrapy.Field()
+            pass
   ```
   
 **Spider**:  *Spider* is a class that you define how Scrapy scrape and parse information from a domain
