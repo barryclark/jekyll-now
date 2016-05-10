@@ -78,6 +78,7 @@ gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-paginate
   - jekyll-feed
+  - jekyll-seo-tag
 
 # Exclude these files from your production _site
 exclude:
