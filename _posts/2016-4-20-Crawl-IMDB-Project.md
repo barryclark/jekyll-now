@@ -15,6 +15,12 @@ After installed, [this tutorial](http://doc.scrapy.org/en/master/intro/tutorial.
 |khaof ourj fueyh
 |dfoup lopueg
 ---
+  ---
+    layout: page
+    title: Categories
+    header: Posts By Category
+    group: navigation
+    ---
 
 Overview tasks of creating a simple Scrapy project:
 <ol>
