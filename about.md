@@ -10,7 +10,7 @@ You can most often find me on [Twitter](https://twitter.com/_sawyerpaul), but I'
 
 Photos I take can be found on [Flickr](https://www.flickr.com/photos/ksp_me) and [Instagram](https://www.instagram.com/insta_sawyer_paul/). 
 
-#Novels
+# Novels
 
 I am currently working on Skypunch, a novel about two women who help each other through a troubled time in their lives.
 
@@ -18,11 +18,11 @@ My most recent finished work is **A Record Year for Rainfall**, a novel about a 
 
 My first novel, **No Chinook**, about a young man town between his current boyfriend and a girl from his past, is available as an ebook or in print. It was released in 2008. You can read it online (coming soon) or download it to your preferred reading device:  [Kobo](https://dl.dropboxusercontent.com/u/4105103/Books/No%20Chinook.epub), [iBooks](https://dl.dropboxusercontent.com/u/4105103/Books/No%20Chinook.epub), or [Kindle](https://dl.dropboxusercontent.com/u/4105103/Books/No%20Chinook.mobi). You can also [order a print copy](http://www.lulu.com/shop/k-sawyer-paul/no-chinook/paperback/product-18893971.html).
 
-#Layout Design
+# Layout Design
 
 I work with publishers and authors to make their work look great. I am currently full-time with JUMP Math, an amazing organization that helps teachers and students love math. I also work with the University of Toronto, The MUNK School of Global Affairs, York University, Lakehead University, and others on academic publications. I am currently taking on new work. [Shoot me an email](mailto:sp@sawyerpaul.com) to get started.
 
-#Podcasts
+# Podcasts
 
 **[You Chose Poorly](http://youchosepoorlypodcast.tumblr.com)** is a tech podcast about being wrong, co-hosted by [Mikey Llorin](https://twitter.com/mikeyllorin). Subscribe via [RSS](http://feeds.feedburner.com/YouChosePoorly), [iTunes](https://itunes.apple.com/ca/podcast/you-chose-poorly/id1102649486?mt=22), [Overcast](https://overcast.fm/itunes1102649486/you-chose-poorly), [Pocketcasts](http://pca.st/1BfX), and [Soundcloud](https://soundcloud.com/youchosepoorly). Listen to older episodes on [Mixcloud](https://www.mixcloud.com/youchosepoorly/).
 
