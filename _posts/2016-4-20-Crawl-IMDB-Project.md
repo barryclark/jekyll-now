@@ -22,17 +22,17 @@ Run this command line to create scrapy project.
 **Item Class:** Open *items.py* within *ImdbProject* directory. Edit this file by defining item for your scraped items. 
 
 ```sh
-class ImdbprojectItem(scrapy.Item):
-    picture_title = scrapy.Field()
-    genre = scrapy.Field()
-    TotalNumByGenre = scrapy.Field()
-    title = scrapy.Field()
-    year = scrapy.Field()
-    user_rating = scrapy.Field()
-    outline = scrapy.Field()
-    credit = scrapy.Field()
-    title_image= scrapy.Field()
-    pass
+     class ImdbprojectItem(scrapy.Item):
+       picture_title = scrapy.Field()
+       genre = scrapy.Field()
+       TotalNumByGenre = scrapy.Field()
+       title = scrapy.Field()
+       year = scrapy.Field()
+       user_rating = scrapy.Field()
+       outline = scrapy.Field()
+       credit = scrapy.Field()
+       title_image= scrapy.Field()
+       pass
   ```
   
 **Spider**:  *Spider* is a class that you define how Scrapy scrape and parse information from a domain
@@ -45,38 +45,38 @@ These attributes must be defined in *Spider*:
 This is the code of this project. 
 
   ```sh
-    from scrapy.spiders import CrawlSpider, Rule
-    from ImdbProject.items import ImdbprojectItem
-    from scrapy.selector import Selector
-    from scrapy.linkextractors import LinkExtractor
-    from lxml import html
+        from scrapy.spiders import CrawlSpider, Rule
+        from ImdbProject.items import ImdbprojectItem
+        from scrapy.selector import Selector
+        from scrapy.linkextractors import LinkExtractor
+        from lxml import html
     
-    class ImdbSpider(CrawlSpider):
-      name = "ImdbAllMovies"
-      allowed_domains = ["imdb.com"]
+        class ImdbSpider(CrawlSpider):
+            name = "ImdbAllMovies"
+            allowed_domains = ["imdb.com"]
       
-      start_urls = ["http://www.imdb.com/search/title?year=%d,%d&title_type=feature&sort=moviemeter,asc" %(n,n) for n in  
-      range(1874, 2027)]
-      
-      rules = Rule(LinkExtractor(allow=(), 
-      restrict_xpaths=('//div[@id="right"]/span[@class="pagination"]/a')),callback='parse_items',follow=True),
+            start_urls = ["http://www.imdb.com/search/title?year=%d,%d&title_type=feature&sort=moviemeter,asc" %(n,n) for n
+            in range(1874, 2027)]
+            
+            rules = Rule(LinkExtractor(allow=(), 
+            restrict_xpaths=('//div[@id="right"]/span[@class="pagination"]/a')),callback='parse_items',follow=True),
+            
+        def parse_items(self, response):
+            hxs = Selector(response)
+            items = []
+            item = ImdbprojectItem()
+            results = hxs.select('//td[@class="title"]')
     
-    def parse_items(self, response):
-      hxs = Selector(response)
-      items = []
-      item = ImdbprojectItem()
-      results = hxs.select('//td[@class="title"]')
-    
-      for result in results:
-        item['title'] = result.select('a/text()').extract()
-        item['year'] = result.select('span[@class="year_type"]/text()').extract()
-        user_rating_value = result.select('div[@class="user_rating"]/div[@class="rating 
-        rating-list"]/span[@class="rating-rating"]/span[@class="value"]/text()').extract()
-        item['user_rating'] = user_rating_value
-        credit = result.select('span[@class="credit"]').xpath('a[contains(@href,"name")]/text()').extract()
-        item['credit'] = credit
-        item['outline'] = result.select('span[@class="outline"]/text()').extract()
-        yield item
+            for result in results:
+                item['title'] = result.select('a/text()').extract()
+                item['year'] = result.select('span[@class="year_type"]/text()').extract()
+                user_rating_value = result.select('div[@class="user_rating"]/div[@class="rating 
+                rating-list"]/span[@class="rating-rating"]/span[@class="value"]/text()').extract()
+                item['user_rating'] = user_rating_value
+                credit = result.select('span[@class="credit"]').xpath('a[contains(@href,"name")]/text()').extract()
+                item['credit'] = credit
+                item['outline'] = result.select('span[@class="outline"]/text()').extract()
+                yield item
   ```
 
 
