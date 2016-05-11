@@ -3,9 +3,7 @@ layout: post
 title: ARandR display profile manager on Ubuntu
 ---
 
-For a while now, I've been looking for a solution to seamlessly switch between having 1 and 2 monitors enabled on my home desktop, running Ubuntu 15.10.
-
-![Cinnamon's display settings panel](/images/display-settings.png){: .alignMiddle}
+![Cinnamon's display settings panel](/images/display-settings.png){: .alignLeft}For a while now, I've been looking for a solution to seamlessly switch between having 1 and 2 monitors enabled on my home desktop, running Ubuntu 15.10.
 
 The basic gist of the situation is this: I have 2 monitors, but often only want to use one for the PC. The other has an xbox connected for mostly media purposes, and the occasional gaming. The secondary monitor is on the left, and the primary on the right.
 
