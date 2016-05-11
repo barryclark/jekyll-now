@@ -68,7 +68,7 @@ Import required classes from modules that bundled in Scrapy. ```shLinkExtractor`
         rules = Rule(LinkExtractor(allow=(), 
         restrict_xpaths=('//div[@id="right"]/span[@class="pagination"]/a')),callback='parse_items',follow=True),
 ```
-
+*Start_urls* defined the site which Scrapy start to crawl data from. The numeric variable %d in the urls string represented the range of year in which titles were released. *Rules* attribute define rule to follow next page until last page using *LinkExtractor*. When yield for *Response*, callback function *parse_items* is called to extract item from site.
 
 ```sh
         def parse_items(self, response):
@@ -88,7 +88,28 @@ Import required classes from modules that bundled in Scrapy. ```shLinkExtractor`
                 item['outline'] = result.select('span[@class="outline"]/text()').extract()
                 yield item
 ```
+In this callback function, items are scraped using xpath selector.
 
+
+**Item Pipeline**: Once an item has been scraped, item is sent to Item Pipeline class which processes and stores it. In this code stored all item into a single JSON file, containing each item per line serialize JSON format.
+
+```sh
+class ImdbprojectPipeline(object):
+    
+    def __init__(self):
+        self.file = open('items.jl', 'wb')
+    
+    def process_item(self, item, spider):
+        line = json.dumps(dict(item)) + "\n"
+        self.file.write(line)
+        return item
+```
+
+To execute the Scrapy project, type this in Terminal:
+```sh
+scrapy crawl ImdbAllMovies
+
+```
 
 
 
