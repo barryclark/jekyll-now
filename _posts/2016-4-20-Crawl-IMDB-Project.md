@@ -55,7 +55,7 @@ This is the code of this project.
     from lxml import html
     from scrapy.linkextractors import LinkExtractor
 ```
-Import required classes from modules that bundled in Scrapy. ```shLinkExtractor``` is an object whose purpose is to extract links from web sites.
+Import required classes from modules that bundled in Scrapy. *LinkExtractor* is an object whose purpose is to extract links from web sites.
 
 ```sh
     class ImdbSpider(CrawlSpider):
