@@ -7,7 +7,11 @@ I am learning scraping content on the web. There are a few open source web scrap
 
 #### Installation
 
-I followed Scrapy Developer Document - [Installation Guide](http://doc.scrapy.org/en/master/intro/install.html) for Installing Scrapy. Checked for Prerequisties, installed Scrapy by run this: <<pip install scrapy >>.
+I followed Scrapy Developer Document - [Installation Guide](http://doc.scrapy.org/en/master/intro/install.html) for Installing Scrapy. Checked for Prerequisties, installed Scrapy by run this: 
+
+```sh
+    pip install scrapy 
+```    
 
 Once installed, [this tutorial](http://doc.scrapy.org/en/master/intro/tutorial.html) to get myself familiar with Scrapy Framework. I got my first Scrapy project working by following the tutorial. So far so good, I was ready to scrape more interesting content from the web. I had several project ideas in mind . Trying not to against the terms of use of some web sites, I narrowed it down to a few. Finally I decided to do something interesting and I like very much which was scraping popular titles from IMDB over the Years (start from 1874).
 
@@ -48,9 +52,12 @@ This is the code of this project.
     from scrapy.spiders import CrawlSpider, Rule
     from ImdbProject.items import ImdbprojectItem
     from scrapy.selector import Selector
-    from scrapy.linkextractors import LinkExtractor
     from lxml import html
-    
+    from scrapy.linkextractors import LinkExtractor
+```
+Import required classes from modules that bundled in Scrapy. ```shLinkExtractor``` is an object whose purpose is to extract links from web sites.
+
+```sh
     class ImdbSpider(CrawlSpider):
         name = "ImdbAllMovies"
         allowed_domains = ["imdb.com"]
@@ -60,7 +67,10 @@ This is the code of this project.
         
         rules = Rule(LinkExtractor(allow=(), 
         restrict_xpaths=('//div[@id="right"]/span[@class="pagination"]/a')),callback='parse_items',follow=True),
-        
+```
+
+
+```sh
         def parse_items(self, response):
             hxs = Selector(response)
             items = []
@@ -78,6 +88,8 @@ This is the code of this project.
                 item['outline'] = result.select('span[@class="outline"]/text()').extract()
                 yield item
 ```
+
+
 
 
 
