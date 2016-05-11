@@ -23,7 +23,7 @@ Run this command line to create scrapy project.
 
 ```sh
     class ImdbprojectItem(scrapy.Item):
-    picture_title = scrapy.Field()
+        picture_title = scrapy.Field()
 ```
        genre = scrapy.Field()
        TotalNumByGenre = scrapy.Field()
