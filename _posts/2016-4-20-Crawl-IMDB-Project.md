@@ -106,10 +106,11 @@ class ImdbprojectPipeline(object):
 ```
 
 To execute the Scrapy project, type this in Terminal:
+
 ```sh
 scrapy crawl ImdbAllMovies
-
 ```
+That will generate a file, items.jl, containing all scraped item in serialize JSON format.
 
 
 
