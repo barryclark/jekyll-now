@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-I live in Northen California. I studied biological science at undergraduate and software engineering at graduate school. I enjoy the thrill of solving computer problem. It is a combination of imagination and harnass computing power to turn ideas into actions. My passion in coding drive me to pursue a career in software engineering. 
+I live in Northern California. I studied biological science at undergraduate and software engineering at graduate school. I enjoy the thrill of solving computer problem. It is a combination of imagination and harnass computing power to turn ideas into actions. My passion in coding drive me to pursue a career in software engineering. 
 
 Besides coding I enjoy cooking during my spare time particular cook "from scratch".
 
