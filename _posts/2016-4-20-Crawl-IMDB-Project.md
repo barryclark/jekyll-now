@@ -22,7 +22,7 @@ Run this command line to create scrapy project.
 **Item Class:** Open *items.py* within *ImdbProject* directory. Edit this file by defining item for your scraped items. 
 
 ```sh
-     class ImdbprojectItem(scrapy.Item):
+        class ImdbprojectItem(scrapy.Item):
        picture_title = scrapy.Field()
        genre = scrapy.Field()
        TotalNumByGenre = scrapy.Field()
@@ -50,7 +50,7 @@ This is the code of this project.
         from scrapy.selector import Selector
         from scrapy.linkextractors import LinkExtractor
         from lxml import html
-    
+        
         class ImdbSpider(CrawlSpider):
             name = "ImdbAllMovies"
             allowed_domains = ["imdb.com"]
