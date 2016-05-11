@@ -48,6 +48,7 @@ layout: default
 - [Expedia](http://www.expedia.com/Checkout/BitcoinTermsAndConditions) και στην Ελλάδα
 - [Περιοδικό Fortune](https://subscription.timeinc.com/storefront/site/fo-20for1999ccar1214bc.html)
 - [Wikipedia](https://wikimediafoundation.org/wiki/Ways_to_Give#bitcoin), για δωρεές
+- [Steam](http://store.steampowered.com)
 
 ### <a name="bitcoin.org"></a>Που μπορώ να μάθω περισσότερα για το Bitcoin;
 
