@@ -13,7 +13,7 @@ I followed Scrapy Developer Document - [Installation Guide](http://doc.scrapy.or
     pip install scrapy 
 ```    
 
-Once installed, [this tutorial](http://doc.scrapy.org/en/master/intro/tutorial.html) to get myself familiar with Scrapy Framework. I got my first Scrapy project working by following the tutorial. So far so good, I was ready to scrape more interesting content from the web. I had several project ideas in mind . Trying not to against the terms of use of some web sites, I narrowed it down to a few. Finally I decided to do something interesting and I like very much which was scraping popular titles from IMDB over the Years (start from 1874).
+Once installed, [this tutorial](http://doc.scrapy.org/en/master/intro/tutorial.html) to get myself familiar with Scrapy Framework. I got my first Scrapy project working by following the tutorial. So far so good, I was ready to scrape more interesting content from the web. I had several project ideas in mind . Trying not to against the terms of use of some web sites, I narrowed it down to a few. Finally I decided to do something interesting and I like very much which was scraping popular titles from IMDB over the years (starting from 1874).
 
 #### Create IMDB Project
 
@@ -44,7 +44,7 @@ These attributes must be defined in *Spider*:
 
   - *name*: The *Spider* identifier. Must be unique
   - *start_urls*: A list of URLs where *Scrapy* starts crawling data from. The first page of scraping must be included in this list.
-  - *parse()*: This method will be called with downloaded |respond| object of each item in *start_urls*
+  - *parse()*: This method will be called with downloaded *Response* object of each item in *start_urls*
   
 This is the code of this project. 
 
