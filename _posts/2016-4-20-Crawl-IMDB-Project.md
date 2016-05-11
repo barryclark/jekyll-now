@@ -91,7 +91,7 @@ Import required classes from modules that bundled in Scrapy. *LinkExtractor* is 
 In this callback function, items are scraped using xpath selector.
 
 
-**Item Pipeline**: Once an item has been scraped, item is sent to Item Pipeline class which processes and stores it. In this code stored all item into a single JSON file, containing each item per line serialize JSON format.
+**Item Pipeline**: Once an item has been scraped, item is sent to Item Pipeline class which processes and stores it. This code stored all items into a single JSON file, containing each item per line serialize JSON format.
 
 ```sh
 class ImdbprojectPipeline(object):
