@@ -69,11 +69,11 @@ p {
 }
 
 a {
-  color: $purple;
+  color: $steelblue;
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
-    color: $purple;
+    color: $steelblue;
   }
 }
 
@@ -143,7 +143,7 @@ img {
 }
 
 .tag {
-    background-color: lavender;
+    background-color: $steel;
     border: 1px dashed;
     margin-left: 2px;
     margin-right: 2px;
