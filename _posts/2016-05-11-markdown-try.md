@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Markdown Try
-permalink: new-page.html
+permalink: markdown-try.jsp
 description: 试一试
 date: 2016-05-11 07:49:36 +08:00
 tags: "markdown"

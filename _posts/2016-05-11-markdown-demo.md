@@ -1,15 +1,17 @@
 ---
 layout: post
 title: Markdown Demo
-permalink: new-page.html
+permalink: markdown-demo.aspx
 description: 试一试
 date: 2016-05-11 11:30:36 +08:00
 tags: "markdown"
 ---
+
 标题1
 =======================================
 标题2
 ----------
+
 ###标题3
 这是第一个段落
 
@@ -52,8 +54,8 @@ __十四是十四__,**四十是四十**
 
 标注： 
 `<blink>`
- `&mdash;`
- `&#8212;`
+`&mdash;`
+`&#8212;`
 
 ```javascript
   var ihubo = {
@@ -73,11 +75,11 @@ __十四是十四__,**四十是四十**
 * 预览区域`代码高亮`
 * 所有选项自动记忆
 
-###References
+### References
 
-* http://daringfireball.net/projects/markdown/basics
-* http://daringfireball.net/projects/markdown/
+* [http://daringfireball.net/projects/markdown/basics](http://daringfireball.net/projects/markdown/basics).
+* [http://daringfireball.net/projects/markdown/](http://daringfireball.net/projects/markdown/).
 
 推荐在线的Markdown编辑器：
-* https://stackedit.io/ 
-* http://mahua.jser.me/
+* [https://stackedit.io/](https://stackedit.io/)
+* [http://mahua.jser.me/](http://mahua.jser.me/)
