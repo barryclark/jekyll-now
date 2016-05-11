@@ -24,8 +24,6 @@ Run this command line to create scrapy project.
 ```sh
     class ImdbprojectItem(scrapy.Item):
         picture_title = scrapy.Field()
-```
-```sh
         genre = scrapy.Field()
         TotalNumByGenre = scrapy.Field()
         title = scrapy.Field()
@@ -35,7 +33,7 @@ Run this command line to create scrapy project.
         credit = scrapy.Field()
         title_image= scrapy.Field()
         pass
-  ```
+```
   
 **Spider**:  *Spider* is a class that you define how Scrapy scrape and parse information from a domain
 These attributes must be defined in *Spider*:
@@ -79,7 +77,7 @@ This is the code of this project.
                 item['credit'] = credit
                 item['outline'] = result.select('span[@class="outline"]/text()').extract()
                 yield item
-  ```
+```
 
 
 
