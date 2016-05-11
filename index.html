@@ -13,10 +13,10 @@ layout: default
   <div class="entry">
     {{ post.excerpt }}<br/>
   </div>
-
+  <div style="clear:both;">&nbsp;</div>
   <div class="date">
     Written on {{ post.date | date: "%B %e, %Y" }} {% if post.feature %}in <a href="/category/#{{ post.category | slugify }}">{{ post.category }}</a> {% endif %} <br/>
-    Tags: 
+    Tags:
     {% for tag in post.tags %}
       <a class="tag" href="/tag/#{{ tag | slugify }}"> {{ tag }} </a>
     {% endfor %}
