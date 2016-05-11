@@ -3,7 +3,7 @@ layout: post
 title: Crawl IMDB Most Popular Titles Over the Years
 ---
 
-I am learning scraping content on the web. There are a few open source web scraping tools like Scapy, Selenium, BeautifulSoap, Google Web Scraper etc. A guide to [web scraping tools](http://www.garethjames.net/a-guide-to-web-scrapping-tools/) gave nice comparasion between Web Scrapers. I am learning Python therefore I choose to use Scrapy, 100% written in Python and has a lot of built-in functionality.
+I am learning scraping content on the web. There are a few open source web scraping tools like Scapy, Selenium, BeautifulSoap, Google Web Scraper etc. A guide to [web scraping tools](http://www.garethjames.net/a-guide-to-web-scrapping-tools/) gave nice comparision between Web Scrapers. I am learning Python therefore I choose to use Scrapy, 100% written in Python and has a lot of built-in functionality.
 
 #### Installation
 
@@ -24,16 +24,15 @@ Run this command line to create scrapy project.
 ```sh
     class ImdbprojectItem(scrapy.Item):
         picture_title = scrapy.Field()
-```
-       genre = scrapy.Field()
-       TotalNumByGenre = scrapy.Field()
-       title = scrapy.Field()
-       year = scrapy.Field()
-       user_rating = scrapy.Field()
-       outline = scrapy.Field()
-       credit = scrapy.Field()
-       title_image= scrapy.Field()
-       pass
+        genre = scrapy.Field()
+        TotalNumByGenre = scrapy.Field()
+        title = scrapy.Field()
+        year = scrapy.Field()
+        user_rating = scrapy.Field()
+        outline = scrapy.Field()
+        credit = scrapy.Field()
+        title_image= scrapy.Field()
+        pass
   ```
   
 **Spider**:  *Spider* is a class that you define how Scrapy scrape and parse information from a domain
@@ -45,23 +44,23 @@ These attributes must be defined in *Spider*:
   
 This is the code of this project. 
 
-  ```sh
+```sh
     from scrapy.spiders import CrawlSpider, Rule
     from ImdbProject.items import ImdbprojectItem
     from scrapy.selector import Selector
     from scrapy.linkextractors import LinkExtractor
     from lxml import html
-        
-        class ImdbSpider(CrawlSpider):
-            name = "ImdbAllMovies"
-            allowed_domains = ["imdb.com"]
+    
+    class ImdbSpider(CrawlSpider):
+        name = "ImdbAllMovies"
+        allowed_domains = ["imdb.com"]
       
-            start_urls = ["http://www.imdb.com/search/title?year=%d,%d&title_type=feature&sort=moviemeter,asc" %(n,n) for n
-            in range(1874, 2027)]
-            
-            rules = Rule(LinkExtractor(allow=(), 
-            restrict_xpaths=('//div[@id="right"]/span[@class="pagination"]/a')),callback='parse_items',follow=True),
-            
+        start_urls = ["http://www.imdb.com/search/title?year=%d,%d&title_type=feature&sort=moviemeter,asc" %(n,n) for n
+        in range(1874, 2027)]
+        
+        rules = Rule(LinkExtractor(allow=(), 
+        restrict_xpaths=('//div[@id="right"]/span[@class="pagination"]/a')),callback='parse_items',follow=True),
+        
         def parse_items(self, response):
             hxs = Selector(response)
             items = []
