@@ -1,3 +1,11 @@
+---
+layout: post
+title: Markdown Demo
+permalink: new-page.html
+description: 试一试
+date: 2016-05-11 11:30:36 +08:00
+tags: "markdown"
+---
 标题1
 =======================================
 标题2
@@ -64,3 +72,12 @@ __十四是十四__,**四十是四十**
 * 完美兼容`Github`的markdown语法
 * 预览区域`代码高亮`
 * 所有选项自动记忆
+
+###References
+
+* http://daringfireball.net/projects/markdown/basics
+* http://daringfireball.net/projects/markdown/
+
+推荐在线的Markdown编辑器：
+* https://stackedit.io/ 
+* http://mahua.jser.me/
