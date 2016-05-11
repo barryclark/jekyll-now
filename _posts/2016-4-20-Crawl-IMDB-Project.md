@@ -24,6 +24,8 @@ Run this command line to create scrapy project.
 ```sh
     class ImdbprojectItem(scrapy.Item):
         picture_title = scrapy.Field()
+```
+```sh
         genre = scrapy.Field()
         TotalNumByGenre = scrapy.Field()
         title = scrapy.Field()
