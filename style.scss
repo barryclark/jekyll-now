@@ -338,6 +338,11 @@ nav {
     margin-top:0;
   }
 }
+.posts > .excerpt {
+  img {
+    display:none;
+  }
+}
 
 .posts > .post:last-child {
   padding-bottom: 1em;
