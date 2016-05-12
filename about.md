@@ -12,10 +12,4 @@ Guys I really have no more information for you.
 
 ### Contact me
 
-[Facebook](https://www.facebook.com/aram.ko4aryan)
-
-[LinkedIn](https://www.linkedin.com/in/aram-kocharyan-432042b3)
-
-[SO](http://stackoverflow.com/users/4810224/aram-kocharyan)
-
 [aram.koch@gmail.com](aram.koch@gmail.com)
