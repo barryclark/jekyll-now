@@ -42,12 +42,12 @@ module Jekyll
         maker.channel.link = site.config['url']
         maker.channel.description = site.config['description'] || "RSS feed for #{site.config['name']}"
         maker.channel.author = site.config["author"]
-        maker.channel.updated = site.posts.map { |p| p.date  }.max
+        maker.channel.updated = site.posts.docs.map { |p| p.date  }.max
         maker.channel.copyright = site.config['copyright']
 
-        post_limit = site.config['rss_post_limit'].nil? ? site.posts.count : site.config['rss_post_limit'] - 1
+        post_limit = site.config['rss_post_limit'].nil? ? site.posts.docs.count : site.config['rss_post_limit'] - 1
 
-        site.posts.reverse[0..post_limit].each do |post|
+        site.posts.docs.reverse[0..post_limit].each do |post|
           post = post.dup
           post.render(site.layouts, site.site_payload)
           maker.items.new_item do |item|

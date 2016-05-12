@@ -2,29 +2,20 @@
 layout: default
 ---
 
-<!-- This loops through the paginated posts -->
-{% for post in paginator.posts %}
-<article class="post">
+<div class="posts clearfix">
+  {% for post in site.posts %}
+    <article class="post">
+      <div class="eyebrow">{{ post.date | date: "%d %b %Y" }}</div>
+      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
-  <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-  {% if post.feature %}
-    <img src="{{ site.url }}/images/{{ post.feature }}">
-  {% endif %}
-  <div class="entry">
-    {{ post.excerpt }}<br/>
-  </div>
-
-  <div class="date">
-    Written on {{ post.date | date: "%B %e, %Y" }} {% if post.feature %}in <a href="/category/#{{ post.category | slugify }}">{{ post.category }}</a> {% endif %} <br/>
-    Tags:
-    {% for tag in post.tags %}
-      <a class="tag" href="/tag/#{{ tag | slugify }}"> {{ tag }} </a>
-    {% endfor %}
-  </div>
-  <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-  <br/><br/><center><img src="/images/dots.png"/></center>
-</article>
-{% endfor %}
+      <div class="entry">
+      	<p>{{ post.desc }}</p>
+<!--         {{ post.content | truncatewords:40}}
+ -->  </div>
+            <a href="{{ site.baseurl }}{{ post.url }}" class="small-link">Read details</a>
+    </article>
+  {% endfor %}
+</div>
 
 <!-- Pagination links -->
 <br/><br/>
