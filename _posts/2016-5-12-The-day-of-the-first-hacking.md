@@ -49,7 +49,7 @@ url:
 search/?1' or(select 1 from(select count(*),concat((select (select concat(0x7e,0x27,Hex(cast(database() as char)),0x27,0x7e)) from information_schema.tables limit 0,1),floor(rand(0)*2))x from information_schema.tables group by x)a) and '1'='1
 ```
 
-Not Acceptable, 406 ! This is bad, first thing that is coming to mind is that we have an active WAF inplace and it is blocking requests based on `max_get_size`. But simplifying the query doesn’t provide results. After a little research I found out that WAF (Web Application Firewall) is blocking `information_schema.tables` combinations in url….
+Not Acceptable, 406 ! This is bad, first thing that is coming to mind is that we have an active WAF (Web Application Firewall) inplace and it is blocking requests based on `max_get_size`. But simplifying the query doesn’t provide results. After a little research I found out that WAF is blocking `information_schema.tables` combinations in url….
 It was really sad, as the ammount of adrenalin in blood was already too high. After 1-2 hours of researching (googling really) I found out that there is a bypassing way for this restriction, here is it: we need to replace `information_schema.tables` to `information_schema 0.e.tables`
 
 ### After getting database name we need to get table names from `information_schema`.
