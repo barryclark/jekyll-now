@@ -138,7 +138,7 @@ a {
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
-    color: $darkRed;
+    color: $steel;
   }
 }
 
@@ -286,9 +286,8 @@ nav {
   a {
     margin-left: 20px;
     color: $gray;
-    width: 225px;
     display: block;
-    float: right;
+    float: left;
 
     @include mobile {
       display: inline-block;
