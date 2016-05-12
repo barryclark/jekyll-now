@@ -11,7 +11,7 @@ layout: default
       <div class="entry">
       	<!--<p>{{ post.desc }}</p>-->
 <!--         {{ post.content | truncatewords:40}} -->
-{% if post.category %}Posted in <a href="/category/#{{ post.category | slugify }}">{{ post.category }}
+{% if post.category %}Posted in <a href="/category/#{{ post.category | slugify }}">{{ post.category }}</a> {% endif %}
   </div>
             <a href="{{ site.baseurl }}{{ post.url }}" class="small-link">Read details</a>
     </article>
