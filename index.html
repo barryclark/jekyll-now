@@ -9,9 +9,10 @@ layout: default
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
       <div class="entry">
-      	<p>{{ post.desc }}</p>
-<!--         {{ post.content | truncatewords:40}}
- -->  </div>
+      	<!--<p>{{ post.desc }}</p>-->
+<!--         {{ post.content | truncatewords:40}} -->
+{% if post.category %}Posted in <a href="/category/#{{ post.category | slugify }}">{{ post.category }}
+  </div>
             <a href="{{ site.baseurl }}{{ post.url }}" class="small-link">Read details</a>
     </article>
   {% endfor %}
