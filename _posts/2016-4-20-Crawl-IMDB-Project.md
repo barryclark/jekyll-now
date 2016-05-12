@@ -3,7 +3,7 @@ layout: post
 title: Crawl IMDB Most Popular Titles Over the Years
 ---
 
-I am learning scraping content on the web. There are a quite a number of open-source web scraping tools like Scapy, Selenium, BeautifulSoap, Google Web Scraper etc. A guide to [web scraping tools](http://www.garethjames.net/a-guide-to-web-scrapping-tools/) gave nice comparision between Web Scrapers. I am learning Python therefore I choose to use Scrapy, 100% written in Python and has a lot of built-in functionality.
+I am learning scraping content on the web. There are quite a number of open-source web scraping tools like Scapy, Selenium, BeautifulSoap, Google Web Scraper etc. A guide to [web scraping tools](http://www.garethjames.net/a-guide-to-web-scrapping-tools/) gave nice comparision between Web Scrapers. I am learning Python therefore I choose to use Scrapy, 100% written in Python and has a lot of built-in functionality.
 
 #### Installation
 
