@@ -35,7 +35,6 @@ Run this command line to create scrapy project.
         user_rating = scrapy.Field()
         outline = scrapy.Field()
         credit = scrapy.Field()
-        title_image= scrapy.Field()
         pass
 ```
   
