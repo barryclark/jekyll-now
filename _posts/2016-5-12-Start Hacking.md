@@ -7,7 +7,7 @@ Today I woke up and smelt that today is the day of the first hacking experience.
 
 Find your target by smell. It usually stinks.
 
-### First I searched for input forms. e.g. a simple search fomr of a stincky website. And input the most dangereous symbol ever created by a human: the apostrophe.
+### First I searched for input forms. e.g. a simple search form of a stincky website. And input the most dangereous symbol ever created by a human: the apostrophe.
 
 url: `/search/?'`
 
@@ -25,7 +25,7 @@ We get bad result:
 
 > Subquery returns more than 1 row. 
 
-This means that our query is inside an another one, possibly in a where clause. Little example to demonstrate what I mean
+This means that our query is inside an another one, possibly in a where clause. Little example to demonstrate what I mean:
 
 ```sql
 Select * From Orders Where field = (Select field from order_fields)
@@ -50,7 +50,7 @@ search/?1' or(select 1 from(select count(*),concat((select (select concat(0x7e,0
 ```
 
 Not Acceptable, 406 ! This is bad, first thing that is coming to mind is that we have an active WAF inpalce and it is blocking requests based on `max_get_size`. But simplifying the query doesn’t provide results. After a little research I found out that WAF is blocking `information_schema.tables` combinations in url….
-It was really sad, as the ammount of adrenalin in blood was already too high. After 1-2 hours of researching (googling really) I found out that there is a bypassing way for this restriction, here is it: `information_schema 0.e.tables`
+It was really sad, as the ammount of adrenalin in blood was already too high. After 1-2 hours of researching (googling really) I found out that there is a bypassing way for this restriction, here is it: we need to replace `information_schema.tables` to `information_schema 0.e.tables`
 
 ### After getting database name we need to get table names from `information_schema`.
 
@@ -88,7 +88,7 @@ Column Names:
 
 `User, pass, type, name`
 
-And 5 users. (2 admins)
+And 5 users. (2 admins) with hashed passwords.
 
 ### HASH HACKING STEP
 
