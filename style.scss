@@ -236,18 +236,14 @@ img {
 
 .site-avatar {
   float: left;
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
   margin-right: 15px;
   margin-bottom: 15px;
   @include mobile {
     float: none;
     display: block;
     margin: 0 0 0 10px;
-  }
-
-  img {
-    border-radius: 26px;
   }
 }
 
