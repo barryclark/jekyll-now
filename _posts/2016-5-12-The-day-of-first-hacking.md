@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The day of first hacking
+title: The day of the first hacking
 ---
 
 Today I woke up and smelt that today is the day of the first hacking experience.
