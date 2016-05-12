@@ -29,6 +29,14 @@ body {
   max-width: 980px;
   padding: 0 10px;
   width: 100%;
+
+  .entry-title {
+    margin: 10px 0;
+  }
+
+  .entry-content {
+    margin: 10px 0;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
