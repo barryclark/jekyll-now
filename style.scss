@@ -25,6 +25,17 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+.center-image
+{
+    margin: 0 auto;
+    display: block;
+}
+
+.shrink-image {
+  width: 500px;
+  height: auto;
+}
+
 .container {
   margin: 0 auto;
   max-width: 980px;

@@ -14,7 +14,7 @@ Weight: 3.3 lbs.\\
 Type: Grass/Flying\\
 Starting Move: Leafage
 
-![Rowlet](/images/Rowlet.png)
+![Rowlet](/images/Rowlet.png){: .center-image .shrink-image}
 
 The first of the potential partners is the highly adaptable Grass Quill Pokémon, Rowlet. This Pokémon can fly silently through the skies, sneaking up on its opponent without being noticed. It can attack its opponents using powerful kicks, and it can also attack from a distance using the razor-sharp leaves that form part of its feathers. Rowlet can survey its environment and turn its neck nearly 180 degrees from front to back, so it can see directly behind itself. When in battle, Rowlet turns its head to face its Trainer when waiting for instructions.
 
@@ -25,7 +25,7 @@ Weight: 9.5 lbs.\\
 Type: Fire\\
 Starting Move: Ember
 
-![Litten](/images/Litten.png)
+![Litten](/images/Litten.png){: .center-image .shrink-image}
 
 The cool-headed Fire Cat Pokémon, Litten, is the next choice for a first-partner Pokémon. Litten’s fur is rich in oils and is immensely flammable. It constantly grooms itself by licking its coat, collecting loose fur into balls. It then ignites these hairballs to create fireball attacks. When the time comes for Litten to molt, it burns off all of its fur in one glorious blaze.
 
@@ -36,12 +36,12 @@ Weight: 16.5 lbs.\\
 Type: Water\\
 Starting Move: Water Gun
 
-![Popplio](/images/Popplio.png)
+![Popplio](/images/Popplio.png){: .center-image .shrink-image}
 
 The third possibility is the acrobatic Sea Lion Pokémon, Popplio. Popplio can create balloons made of water from its nose and utilize them to create a variety of different strategies and attacks in battle. This Pokémon is better at moving in the water than on land, and can swim at speeds over 25 mph. On land, it uses the elasticity of the balloons it creates to perform jumps and acrobatic stunts.
 
-![Pokémon Sun](/images/pokesun.png)
-![Pokémon Moon](/images/pokemoon.png)
+![Pokémon Sun](/images/pokesun.png){: .center-image .shrink-image}
+![Pokémon Moon](/images/pokemoon.png){: .center-image .shrink-image}
 
 As with any new Pokémon, I'm super excited for these to come out. Of course it may come with the bitter disappointment of terrible Pokémon designs, but with any new Pokémon game there's bound to be a handful of really cool ones. I can already say I'm not a fan of any of the three starters, or the new Legendaries, but I will hold out hope that there's something amazing in the new batch.
 
