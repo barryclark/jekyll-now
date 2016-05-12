@@ -2,7 +2,7 @@
 layout: post
 title: Unboxing Dragoon
 category: unboxing
-feature: dragoon.png
+featured: dragoon.png
 tags: [games, unboxing, dragoon, lay waste games]
 ---
 
