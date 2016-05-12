@@ -13,10 +13,8 @@ layout: home
 
       <div class="entry">
         {% if post.featured %}
-          <p>{{ post.desc }}</p>
           <a href="{{ site.baseurl }}{{ post.url }}" class="small-link">Read details</a>
         {% else %}
-          <p>{{ post.desc }}</p>
           <p>  {{ post.content | strip_html| truncatewords:20}}</p>
           <a href="{{ site.baseurl }}{{ post.url }}" class="small-link">Read details</a>
         {% endif %}
