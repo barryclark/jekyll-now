@@ -3,11 +3,11 @@ layout: post
 title: Crawl IMDB Most Popular Titles Over the Years
 ---
 
-I am learning scraping content on the web. There are quite a number of open-source web scraping tools like Scapy, Selenium, BeautifulSoap, Google Web Scraper etc. A guide to [web scraping tools](http://www.garethjames.net/a-guide-to-web-scrapping-tools/) gave nice comparision between Web Scrapers. I am learning Python therefore I choose to use Scrapy, 100% written in Python and has a lot of built-in functionality.
+I am learning scraping content on the web. There are quite a number of open-source web scraping tools like Scrapy, Selenium, BeautifulSoap, Google Web Scraper etc. A guide to [web scraping tools](http://www.garethjames.net/a-guide-to-web-scrapping-tools/) gave nice comparision between Web Scrapers. I am learning Python therefore I choose to use Scrapy, 100% written in Python and has a lot of built-in functionality.
 
 #### Installation
 
-I followed Scrapy Developer Document - [Installation Guide](http://doc.scrapy.org/en/master/intro/install.html) for Installing Scrapy. Checked for Prerequisties, installed Scrapy by run this: 
+I followed Scrapy Developer Document - [Installation Guide](http://doc.scrapy.org/en/master/intro/install.html) to install Scrapy. Before install Scrapy first check for prerequisties then run this command line in Terminal:
 
 ```sh
     pip install scrapy 
@@ -39,14 +39,14 @@ Run this command line to create scrapy project.
         pass
 ```
   
-**Spider**:  *Spider* is a class that you define how Scrapy scrape and parse information from a domain
+**Spider**:  *Spider* is a class that you define how Scrapy scrape and parse information from a domain.
 These attributes must be defined in *Spider*:
 
   - *name*: The *Spider* identifier. Must be unique
   - *start_urls*: A list of URLs where *Scrapy* starts crawling data from. The first page of scraping must be included in this list.
   - *parse()*: This method will be called with downloaded *Response* object of each item in *start_urls*
   
-This is the code of this project. 
+This is the code of this project:
 
 ```sh
     from scrapy.spiders import CrawlSpider, Rule
@@ -88,7 +88,7 @@ Import required classes from modules that bundled in Scrapy. *LinkExtractor* is 
                 item['outline'] = result.select('span[@class="outline"]/text()').extract()
                 yield item
 ```
-In this callback function, items are scraped using xpath selector.
+In this callback function, items are scraped using Xpath Selector.
 
 
 **Item Pipeline**: Once an item has been scraped, item is sent to Item Pipeline class which processes and stores it. This code stored all items into a single JSON file, containing each item per line serialize JSON format.
@@ -110,7 +110,7 @@ To execute the Scrapy project, type this in Terminal:
 ```sh
 scrapy crawl ImdbAllMovies
 ```
-That will generate a file, items.jl, containing all scraped item in serialize JSON format.
+That would generate a file, items.jl, containing all scraped item in serialize JSON format. There are 315,384 titles were scraped in this project. 
 
 
 
