@@ -6,8 +6,6 @@ categories:
 - eventador
 ---
 
-
-
 If I have learned nothing in the last 5 years it's play where you are at your best.
 Know what you are good at, and do that. Resist playing in areas where you don't add
 a lot of value, maximize your time and efforts around the things you do well. In essence
@@ -29,7 +27,7 @@ We formed Eventador Labs.
 ![pic]({{ site.baseurl }}images/eventador_logo.png)
 
 See, the data landscape is not what is was even 5 years ago. Back then, NoSQL was
-the buzzword de-jour. Customers where struggling to scale workloads and looking for
+the buzzword du jour. Customers where struggling to scale workloads and looking for
 new technologies to help them achieve better response times, lower latency, higher
 availability, etc. Today, many of those same challenges exist.
 
