@@ -3,6 +3,11 @@
     <a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a>
 </h1>
 <div class="eyebrow">{{ post.date | date: "%d %b %Y" }} {% if post.category %} in <a href="/category/#{{ post.category | slugify }}">{{ post.category }}</a> {% endif %}</div>
+{% if post.featured %}
+<div class="feature">
+    <img src="/images/featured/{{ post.featured }}"/>
+</div>
+{% endif %}
 <div class="entry-content">{{ post.content | strip_html | truncatewords: 500 }}<br/><br/>
 <a href="{{ site.baseurl }}{{ post.url }}" class="small-link">Read details</a><br/><br/></div>
 {% endif %}
