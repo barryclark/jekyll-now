@@ -2,7 +2,7 @@
 layout: post
 title: Unboxing Legend of Vyas
 category: unboxing
-feature: vyas.png
+featured: vyas.png
 tags: [games, unboxing, legend of vyas, vansh games]
 ---
 

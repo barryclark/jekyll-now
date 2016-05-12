@@ -2,7 +2,7 @@
 layout: post
 title: Card Hunter
 category: video-games
-feature: cardhunter.jpg
+feature: cardhunter.png
 tags: [video games, card hunter, blue manchu]
 ---
 

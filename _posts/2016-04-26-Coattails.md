@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Coattails
+featured: coattails.png
 category: news
 tags: [games, news, purple pawn]
 ---
