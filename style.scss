@@ -48,9 +48,9 @@ h1 {
   font-size: 60px;
   margin: 60px 0;
   a {
-    color: $red;
+    color: $steelblue;
     &:hover {
-      color: $darkRed;
+      color: $steel;
     }
   }
 }
@@ -138,7 +138,7 @@ a {
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
-    color: $steelblue;
+    color: $darkRed;
   }
 }
 
@@ -333,7 +333,7 @@ article {
     color: $medGray;
     display: block;
       &:hover {
-        color: $red;
+        color: $steelblue;
       }
   }
   .large-link {

@@ -3,15 +3,14 @@ layout: home
 ---
 
 <div class="posts clearfix">
-  {% for post in paginator.posts %}
+  {% for post in paginator.posts offset:1 %}
     <article class="post">
-      <div class="eyebrow">{{ post.date | date: "%d %b %Y" }}</div>
+      <div class="eyebrow">{{ post.date | date: "%d %b %Y" }} {% if post.category %} in <a href="/category/#{{ post.category | slugify }}">{{ post.category }}</a> {% endif %}</div>
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
       <div class="entry">
       	<p>{{ post.desc }}</p>
-        <!-- {{ post.content | truncatewords:40}} -->
-        {% if post.category %}Posted in <a href="/category/#{{ post.category | slugify }}">{{ post.category }}</a> {% endif %}
+    <p>  {{ post.content | strip_html| truncatewords:20}}</p>
       </div>
             <a href="{{ site.baseurl }}{{ post.url }}" class="small-link">Read details</a>
     </article>
