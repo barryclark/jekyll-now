@@ -2,11 +2,7 @@
 layout: home
 ---
 <div class="posts clearfix">
-  {% if page.url contains "page" %}
-    {% for post in paginator.posts %}
-  {% else %}
-    {% for post in paginator.posts offset:1 %}
-  {% endif %}
+  {% for post in paginator.posts offset:1 %}
     <article class="post">
       <div class="eyebrow">{{ post.date | date: "%d %b %Y" }} {% if post.category %} in <a href="/category/#{{ post.category | slugify }}">{{ post.category }}</a> {% endif %}</div>
       {% if post.featured %}
