@@ -40,7 +40,9 @@ Starting Move: Water Gun
 
 The third possibility is the acrobatic Sea Lion Pokémon, Popplio. Popplio can create balloons made of water from its nose and utilize them to create a variety of different strategies and attacks in battle. This Pokémon is better at moving in the water than on land, and can swim at speeds over 25 mph. On land, it uses the elasticity of the balloons it creates to perform jumps and acrobatic stunts.
 
-![Pokémon Sun](/images/pokesun.png){: .center-image .shrink-image} ![Pokémon Moon](/images/pokemoon.png){: .center-image .shrink-image}
+<div class="center">
+![Pokémon Sun](/images/pokesun.png){: .shrink-image} ![Pokémon Moon](/images/pokemoon.png){: .shrink-image}
+</div>
 
 As with any new Pokémon, I'm super excited for these to come out. Of course it may come with the bitter disappointment of terrible Pokémon designs, but with any new Pokémon game there's bound to be a handful of really cool ones. I can already say I'm not a fan of any of the three starters, or the new Legendaries, but I will hold out hope that there's something amazing in the new batch.
 
