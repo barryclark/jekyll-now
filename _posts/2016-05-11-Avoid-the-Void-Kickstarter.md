@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Kickstarter - Avoid the Void
+featured: avoidthevoid.png
 category: kickstarter
 tags: [games, kickstarter, avoid the void, geek fever games]
 ---
