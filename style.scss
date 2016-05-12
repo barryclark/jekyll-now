@@ -20,7 +20,7 @@ html {
 
 body {
 	background: $white;
-  font: 16px/23px $helveticaNeue;
+  font: 16px/23px $opensans;
   color: $gray;
   -webkit-font-smoothing: antialiased;
 }
@@ -41,7 +41,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
+  font-family: $opensans;
   color: $darkGray;
   font-weight: 700;
   line-height: 1.25;
@@ -185,7 +185,7 @@ blockquote {
   margin: 1.8em .8em;
   padding: 0.1em 1em;
   background-color: $xlightGray;
-  font-family: $helveticaNeue;
+  font-family: $opensans;
 }
 
 img {
@@ -261,7 +261,7 @@ img {
   margin-top: 7px;
   color: $darkGray;
   cursor: pointer;
-  font-family: $helveticaNeue;
+  font-family: $opensans;
   font-weight: 300;
   font-size: 28px;
 }
@@ -269,7 +269,7 @@ img {
 .site-description {
   margin: -5px 0 0 0;
   font-size: 14px;
-  font-family: $helveticaNeue;
+  font-family: $opensans;
 
   @include mobile {
     margin: 3px 0;
@@ -279,7 +279,7 @@ img {
 nav {
   float: right;
   margin-top: 59px;
-  font-family: $helveticaNeue;
+  font-family: $opensans;
   font-size: 12px;
 
   @include mobile {
