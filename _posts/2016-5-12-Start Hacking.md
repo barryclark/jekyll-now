@@ -5,7 +5,7 @@ title: The day of first hacking
 
 Today I woke up and smelt that today is the day of the first hacking experience.
 
-#### Find your target by smell. It usually stinks.
+Find your target by smell. It usually stinks.
 
 #### First I searched for input forms. e.g. a simple search fomr of a stincky website. And input the most dangereous symbol ever created by a human: the apostrophe.
 
