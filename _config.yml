@@ -17,7 +17,7 @@ avatar: https://en.gravatar.com/userimage/204666/aa4e860423a227456a9e2ce28ade890
 
 #pagination
 
-paginate: 10
+paginate: 8
 
 # Includes an icon in the footer for each username you enter
 footer-links:
