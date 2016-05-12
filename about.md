@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-I am just typical software developer that want to be hacker. Ah kidding, I want to be rock-star. Kidding again. I am just software developer and I am proud of it.
+I am just typical software developer that want to be a hacker. Ah kidding, I want to be a rock-star. Kidding again. I am just software developer and I am proud of it.
 
 ### More Information
 
