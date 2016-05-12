@@ -7,7 +7,7 @@ tags: [video games, pokemon]
 
 The Pokémon Company International and Nintendo have finally announced the release date of the latest Pokémon titles, Pokémon Sun and Pokémon Moon. On November 18th Pokémon fans will enter a new region, choosing from 3 new starter Pokémon: Grass and Flying-type Pokémon Rowlet, Fire-type Litten, and Water-type Popplio.
 
-![Rowlet](/images/Rowlet.png){: .center-image .shrink-image .float-left} ![Litten](/images/Litten.png){: .center-image .shrink-image .float-left}![Popplio](/images/Popplio.png){: .center-image .shrink-image .float-left}
+![Rowlet](/images/Rowlet.png){: .center-image .shrink-image .float-left} ![Litten](/images/Litten.png){: .center-image .shrink-image .float-left}![Popplio](/images/Popplio.png){: .center-image .shrink-image }
 
 **Name: Rowlet**\\
 Category: Grass Quill Pokémon\\
