@@ -13,3 +13,7 @@ A Pawn's Perspective came about because there's things I may want to post that d
 ### Contact me
 
 rkalajian [at] gmail.com
+
+### Attribution
+Logo designed by [DPH Studioz](http://dphstudioz.com/)
+Theme based off the [Jekyll Grid Theme](http://25x52.com/Jekyll-Grid/) by [femmebot](https://github.com/femmebot)
