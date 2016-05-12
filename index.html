@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="posts clearfix">
-  {% for post in site.posts %}
+  {% for post in paginator.posts %}
     <article class="post">
       <div class="eyebrow">{{ post.date | date: "%d %b %Y" }}</div>
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
