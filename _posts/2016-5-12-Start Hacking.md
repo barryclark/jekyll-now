@@ -39,7 +39,7 @@ url: `search/?1' OR (SELECT SLEEP(3)) or '1'='1`
 
 Please be quite our server is asleep.
 
-There are some well known tactics to work in this situation, googling will give us some of the that well-know samples. We just need to add some modifications so that the known tactics work for our case. 
+There are some well known tactics to work in this situation, googling will give us some of that well-know samples. We just need to add some modifications so that the known tactics work for our case. 
 
 ###  Let’s try to get current database name..
 
