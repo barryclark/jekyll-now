@@ -2,7 +2,7 @@
 layout: post
 title: Unboxing Onitama
 category: unboxing
-feature: Onitama-Logo.png
+featured: onitama.png
 tags: [games, unboxing, onitama, arcane wonders]
 ---
 

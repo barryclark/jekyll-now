@@ -2,7 +2,7 @@
 layout: post
 title: Forced Showdown
 category: video-games
-feature: forcedshowdown.png
+featured: forced-showdown.png
 tags: [stream, video games]
 ---
 
