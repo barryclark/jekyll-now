@@ -100,7 +100,7 @@ And 5 users. (2 admins) with hashed passwords.
 
 I don't know any hash hacking strategies and I ask my friend to get hacked my password hashes and after that admin panel was waiting for us.
 
-Holy cow I forget about hacking music...
+Holy cow I forgot about hacking music...
 
 [Hacking Music](https://www.youtube.com/watch?v=lN_MSyrq6-U)
 
