@@ -4,17 +4,12 @@ title: About
 permalink: /about/
 ---
 
+I'm a father of 4 great kids, husband to the most amazing woman in the world, and overall geek. I'm a web developer by day, and freelance in the toy and game industry by night.
 
+### About A Pawn's Perspective
 
-## Set up instructions
+A Pawn's Perspective came about because there's things I may want to post that don't necessarily fit with [Purple Pawn](http://purplepawn.com), the tabletop news site I write for. Things include short posts about what I'm playing, longer reviews, pics, and other thing not necessarily in the "news" realm.
 
-Fork this Jekyll-Grid on Github: [https://github.com/femmebot/jekyll-grid](https://github.com/femmebot/jekyll-grid)
+### Contact me
 
-Part of the [25x52](http://25x52.com) initiative, this theme is based on [Jekyll Now](https://github.com/barryclark/jekyll-now). Refer to the following original instructions for help with the setup:
-
-> Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below :point_down:).
-
-> ![_config.yml]({{ site.baseurl }}/images/config.png)
-
-> The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
-
+rkalajian [at] gmail.com
