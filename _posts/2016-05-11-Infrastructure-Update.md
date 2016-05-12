@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Manjaro is updating it's infrastructure
+title: Manjaro is updating its infrastructure
 ---
 
 Hello!
