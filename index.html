@@ -1,13 +1,12 @@
 ---
 layout: home
 ---
-{% if page.url contains "page" %}
-  {% assign count = 0 %}
-{% else %}
-  {% assign count = 0 %}
-{% endif %}
 <div class="posts clearfix">
-  {% for post in paginator.posts offset:count %}
+  {% if page.url contains "page" %}
+  {% for post in paginator.posts %}
+  {% else %}
+  {% for post in paginator.posts offset:1 %}
+  {% endif %}
     <article class="post">
       <div class="eyebrow">{{ post.date | date: "%d %b %Y" }} {% if post.category %} in <a href="/category/#{{ post.category | slugify }}">{{ post.category }}</a> {% endif %}</div>
       {% if post.featured %}
