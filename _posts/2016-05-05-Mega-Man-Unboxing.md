@@ -2,7 +2,7 @@
 layout: post
 title: Unboxing Mega Man
 category: unboxing
-feature: megaman.png
+featured: megaman.png
 tags: [games, unboxing, mega man, jasco games]
 ---
 

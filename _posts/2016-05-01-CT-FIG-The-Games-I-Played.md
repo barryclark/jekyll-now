@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CT FIG - The Games I Played
-feature: ct-fig.png
+featured: ctfig.png
 category: conventions
 tags: [ct fig, games, international tabletop day]
 ---
