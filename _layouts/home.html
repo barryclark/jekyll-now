@@ -21,14 +21,21 @@
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
   </head>
 
-  <body>
+  <body id="home">
     <div class="content-wrapper">
 
-      {% include masthead.html %}
+    {% include masthead.html %}
 
-      <div id="main" role="main" class="container">
-        {{ content }}
-      </div>
+
+    <div class="container">
+      {% assign post = site.posts.first %}
+      {% assign postcontent = post.content %}
+      {% include post_detail.html %}
+    </div>
+
+    <div id="main" role="main" class="container">
+      {{ content }}
+    </div>
 
     </div><!-- /content-wrapper -->
 
