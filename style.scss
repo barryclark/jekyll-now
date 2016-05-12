@@ -269,6 +269,10 @@ img {
 .site-info {
   float: left;
 
+  p {
+    margin-top: -11px;
+  }
+  
   @include mobile {
     float: none;
     display: block;
@@ -283,10 +287,6 @@ img {
   font-family: $opensans;
   font-weight: 300;
   font-size: 28px;
-
-  p {
-    margin-top: -11px;
-  }
 }
 
 .site-description {
