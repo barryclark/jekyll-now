@@ -1,35 +1,46 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
 
-<div class="posts clearfix">
-  {% for post in paginator.posts %}
-    <article class="post">
-      <div class="eyebrow">{{ post.date | date: "%d %b %Y" }}</div>
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
-      <div class="entry">
-      	<!--<p>{{ post.desc }}</p>-->
-        <!-- {{ post.content | truncatewords:40}} -->
-        {% if post.category %}Posted in <a href="/category/#{{ post.category | slugify }}">{{ post.category }}</a> {% endif %}
-      </div>
-            <a href="{{ site.baseurl }}{{ post.url }}" class="small-link">Read details</a>
-    </article>
-  {% endfor %}
-</div>
+    <meta name="author" content="{{ site.name }}" />
+    <meta name="description" content="{{ site.description }}">
 
-<!-- Pagination links -->
-<br/><br/>
-<div class="pagination" style="text-align:center;">
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
-  {% else %}
-    <span class="previous">Previous</span>
-  {% endif %}
-  <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
-  {% else %}
-    <span class="next ">Next</span>
-  {% endif %}
-</div>
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body id="home">
+    <div class="content-wrapper">
+
+    {% include masthead.html %}
+
+
+    <div class="container">
+      {% assign post = site.posts.first %}
+      {% assign postcontent = post.content %}
+      {% include post_detail.html %}
+    </div>
+
+    <div id="main" role="main" class="container">
+      {{ content }}
+    </div>
+
+    </div><!-- /content-wrapper -->
+
+    {% include footer.html %}
+
+    {% include analytics.html %}
+  </body>
+</html>
