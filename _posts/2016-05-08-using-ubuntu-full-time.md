@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Transitioning to Ubuntu full-time
-published: true
 ---
 
 > Switching from Windows or OSX to full-time Ubuntu usage is easier now than it ever has been. The OS has made great strides in the 11+ years since its initial release, and most software needs can be met or exceeded.

@@ -48,7 +48,7 @@ body {
   width: 100%;
 }
 .content {
-    // float:left;
+    box-sizing:border-box;
     width:100%;
 }
 .sidebar {
@@ -132,15 +132,24 @@ p {
     font-family:$sans;
     font-weight:bold;
     font-size:.8em;
-    text-shadow:0 0 3px $pink;
     line-height:20px;
+    box-shadow:0 0 0px $pink;
+    transition:.2s;
+  }
+  a.footNoteToggle.active {
+    transition:.2s;
+    box-shadow:0 0 10px $pink;
   }
   .footNote {
     display:none;
+    transition:1s;
+    padding:0;
+    background:black;
   }
   .footNote.active {
     display:block;
     background:lighten(black, 10%);
+    transition:1s;
     padding:1em;
     margin:1em 0;
   }
@@ -333,7 +342,6 @@ nav {
 }
 .posts > .post {
   padding-bottom: 2em;
-  overflow: auto;
   h1 {
     margin-top:0;
   }
