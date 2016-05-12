@@ -73,7 +73,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 32px;
   margin: 60px 0;
   a {
     color: $steelblue;
@@ -84,7 +84,7 @@ h1 {
 }
 
 .post h1 {
-  font-size: 40px;
+  font-size: 32px;
   letter-spacing: -.03em;
   line-height: 1.1;
 }
@@ -277,12 +277,16 @@ img {
 }
 
 .site-name {
-  margin-top: 7px;
+  margin-top: 21px;
   color: $darkGray;
   cursor: pointer;
   font-family: $opensans;
   font-weight: 300;
   font-size: 28px;
+
+  p {
+    margin-top: -11px;
+  }
 }
 
 .site-description {
