@@ -7,9 +7,9 @@ tags: [video games, pokemon]
 
 The Pokémon Company International and Nintendo have finally announced the release date of the latest Pokémon titles, Pokémon Sun and Pokémon Moon. On November 18th Pokémon fans will enter a new region, choosing from 3 new starter Pokémon: Grass and Flying-type Pokémon Rowlet, Fire-type Litten, and Water-type Popplio.
 
-![Rowlet](/images/Rowlet.png){: .center-image .shrink-image .float-left} ![Litten](/images/Litten.png){: .center-image .shrink-image .float-left}![Popplio](/images/Popplio.png){: .center-image .shrink-image }
+![Popplio](/images/Popplio.png){: .shrink-image .float-right}
 
-**Name: Rowlet**\\
+**Name: Rowlet**\\![Rowlet](/images/Rowlet.png)
 Category: Grass Quill Pokémon\\
 Height: 1'00"\\
 Weight: 3.3 lbs.\\
@@ -19,7 +19,7 @@ Starting Move: Leafage
 
 The first of the potential partners is the highly adaptable Grass Quill Pokémon, Rowlet. This Pokémon can fly silently through the skies, sneaking up on its opponent without being noticed. It can attack its opponents using powerful kicks, and it can also attack from a distance using the razor-sharp leaves that form part of its feathers. Rowlet can survey its environment and turn its neck nearly 180 degrees from front to back, so it can see directly behind itself. When in battle, Rowlet turns its head to face its Trainer when waiting for instructions.
 
-**Name: Litten**\\
+**Name: Litten**\\ ![Litten](/images/Litten.png){: .shrink-image .float-right}
 Category: Fire Cat Pokémon\\
 Height: 1'04"\\
 Weight: 9.5 lbs.\\
@@ -28,7 +28,7 @@ Starting Move: Ember
 
 The cool-headed Fire Cat Pokémon, Litten, is the next choice for a first-partner Pokémon. Litten’s fur is rich in oils and is immensely flammable. It constantly grooms itself by licking its coat, collecting loose fur into balls. It then ignites these hairballs to create fireball attacks. When the time comes for Litten to molt, it burns off all of its fur in one glorious blaze.
 
-**Name: Popplio**\\
+**Name: Popplio**\\{: .shrink-image .float-right}
 Category: Sea Lion Pokémon\\
 Height: 1'04"\\
 Weight: 16.5 lbs.\\
