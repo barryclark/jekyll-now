@@ -159,6 +159,10 @@ p {
 }
 #home .entry p {
   color: $gray;
+
+  .large {
+    font-size: 20px;
+  }
 }
 
 a {
@@ -272,7 +276,7 @@ img {
   p {
     margin-top: -11px;
   }
-  
+
   @include mobile {
     float: none;
     display: block;
