@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Bacterionomicon - The Creatures of the Healing Blade
+featured: bact.png
 category: books
 tags: [rpg, books, bacterionomicon, healing blade, nerdcore medical, ct fig, dunegon world, not thank you evil]
 ---
