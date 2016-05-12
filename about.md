@@ -16,6 +16,6 @@ rkalajian [at] gmail.com
 
 ### Attribution
 Logo designed by [DPH Studioz](http://dphstudioz.com/)\\
-Design assistance by [Denagh Design](http://denaghdesign.com/)\\
+Design advice by [Denagh Design](http://denaghdesign.com/)\\
 Powered by [jekyll](https://jekyllrb.com/), hosted on [GitHub Pages](https://pages.github.com/)\\
 Theme based off the [Jekyll Grid Theme](http://25x52.com/Jekyll-Grid/) by [femmebot](https://github.com/femmebot)
