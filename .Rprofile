@@ -38,6 +38,8 @@ r2jekyll <- function(filename, dpi = 192) {
   unlink("{{site.url}}", recursive=T)
 }
 
+# r2jekyll("alternative-formulas-for-the-SMD")
+# r2jekyll("unlucky-randomization")
 # r2jekyll("distribution-of-sample-variances")
 # r2jekyll("Tau-U")
 # r2jekyll("NAP-SEs-and-CIs")
