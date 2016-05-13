@@ -1,0 +1,75 @@
+---
+layout: post
+title: Assigning after dplyr
+date: May 12, 2016
+tags: [programming, R]
+---
+
+Like many other friends in data analysis, Hadley Wickham's [dplyr](https://github.com/hadley/dplyr) and [tidyr](https://github.com/hadley/tidyr) packages completely changed the way I do data manipulation/munging in R. These packages make it possible to write shorter, faster, more legible, easier-to-intepret code to accomplish the sorts of manipulations that you have to do with practically any real-world data analysis. The legibility and interpretability benefits come from
+
+* using functions that are simple verbs that do exactly what they say (e.g., `filter`, `summarize`, `group_by`)
+* chaining multiple operations together, through the pipe operator `%>%` from the [magrittr](https://cran.r-project.org/web/packages/magrittr/vignettes/magrittr.html) package. 
+
+Chaining is particularly nice because it makes the code read like a story. For example, here's the code to calculate sample means for the baseline covariates in little experimental dataset I've been working with recently:
+
+```{r, message = FALSE}
+library(dplyr)
+# Mineo <- read.csv("http://jepusto.github.io/data/Mineo_2009_data.csv")
+Mineo <- read.csv("../data/Mineo_2009_data.csv")
+
+Mineo %>%
+  group_by(Condition) %>%
+  select(Age, starts_with("Baseline")) %>%
+  summarise_each(funs(mean)) ->
+  baseline_means
+```
+
+Each line of the code is a different action: first group the data by `Condition`, then select the relevant variables, then summarise each of the variables with its sample mean in each group. The results are stored in a dataset called `baseline_means`.
+
+In writing code like this, I've adopted the style of using the backwards assignment operator `->` to store the results of a chain of manipulations. This is perhaps a little bit odd---in all the rest of my code I stick with the forward assignment operator (`<-`) with the object name on the left---but the alternative is to break the "flow" of the story, effectively putting the punchline before the end of the joke. Consider: 
+
+```{r}
+baseline_means <- Mineo %>%
+  group_by(Condition) %>%
+  select(Age, starts_with("Baseline")) %>%
+  summarise_each(funs(mean))
+```
+
+That's just ugly to me. So fine, backward assignment operator it is. The only problem with this convention is that, with complicated chains of manipulations, I often find that I need to tweak the order of the verbs in the chain. For example, I might want to summarize _all_ of the variables, and only then select which ones to store: 
+
+```{r}
+Mineo %>%
+  group_by(Condition) %>%
+  summarise_each(funs(mean)) %>%
+  select(Age, starts_with("Baseline")) ->
+  baseline_means
+```
+
+In revising the code, it's necessary to change the symbols at the end of the second and third steps, which is a minor hassle. It's possible to do it by very carefully cutting-and-pasting the end of the second step through everything but the `->` after the third step, but that's a delicate operation, prone to error if you're programming after hours or after a beer. Wouldn't it be nice if every step in the chain ended with `%>%` so that you could move around whole lines of code without worrying about the bit at the end?
+
+### Assigning as a verb
+
+Here's one crude way to end each line of manipulation with a pipe:
+
+```{r}
+Mineo %>%
+  group_by(Condition) %>%
+  select(Age, starts_with("Baseline")) %>%
+  summarise_each(funs(mean)) %>%
+  identity() -> baseline_means
+```
+
+But...bleh...this is pretty ugly too. It's got an extra function call that's not a verb, and the name of the resulting object is tucked away in the middle of a line. What I need is a verb to take the results of a chain of operations and assign to an object. Base R has a suitable candidate here: the `assign` function. How about the following? 
+
+```{r}
+
+Mineo %>%
+  group_by(Condition) %>%
+  select(Age, starts_with("Baseline")) %>%
+  summarise_each(funs(mean)) %>%
+  assign("baseline_means_new", .)
+
+ls()
+```
+
+This doesn't work because of some subtlety with the environment into which `baseline_means_new` is assigned. 
