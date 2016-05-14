@@ -190,6 +190,14 @@
   location_gr: Λάρισα, Ελλάδα
   location_en: Larisa, Greece
  
+- company_gr: ΕΛΤΑ Πρακτορείο Παγκρατίου
+  company_en: ELTA shop
+  url: https://www.facebook.com/eltapagrati/
+  category_gr: Ταχυδρομείο
+  category_en: Post Office
+  location_gr: Αθήνα, Αττική
+  location_en: Athens, Attica
+
 - company_gr: Φαρμακείο Χατζηδάκη Καλλιόπη – Χατζάκης Μιχαήλ
   company_en: Hersonissos Pharmacy
   url: http://hersonissospharmacy.com/
@@ -205,6 +213,14 @@
   category_en: Pharmacy
   location_gr: Ελληνικό, Αττική, Ελλάδα
   location_en: Elliniko, Attica, Greece
+
+- company_gr: Galinos.gr
+  company_en: Galinos.gr
+  url: http://www.galinos.gr/
+  category_gr: Φαρμακευτικός οδηγός
+  category_en: Pharmaceutical drug guide
+  location_gr: Θεσσαλονίκη, Μακεδονία, Ελλάδα
+  location_en: Thessaloniki, Macedonia, Greece
  
 - company_gr: Κέντρο Γναθοπροσωπικής Παθολογίας & Χειρουργικής
   company_en: Oral & Maxillofacial Medicine & Surgery Center
