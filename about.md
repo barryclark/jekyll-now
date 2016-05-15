@@ -10,17 +10,19 @@ I am a web developer lived in Bandung, Indonesia.
 ### More Information
 I am currently working on top of the Microsoft .NET Technologies, here are some of them:
 
-##### Microsoft .NET Stack (.NET Framework 4.5) 
+##### Microsoft .NET Technologies (.NET Framework 4.5) 
 - C# Programming Language (Version 5)
 - Microsoft Entity Framework (Version 6.2)
 - Microsoft SQL Server 2012
 - ASP.NET MVC 5
 - ASP.NET OWIN Middleware
+
 ##### Web Technologies
 - HTML5, Javascript, CSS (obviously)
 - AngularJs (Version 1.4)
 - JQuery (Version 1.9)
 - Bootstrap (Version 3.0) 
+
 ##### Other
 - PDF Generator Library-iTextSharp (Version 5.x.x)
 - IoC Container-Autofac (Version 3.x.x)
