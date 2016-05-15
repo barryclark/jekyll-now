@@ -48,5 +48,6 @@ And the last rule for your footer `<div>`
         bottom: 0;
         width: 100%;
     } 
-        
+
 Enjoy your "always on the bottom" footer!
+
