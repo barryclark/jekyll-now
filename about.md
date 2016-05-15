@@ -4,11 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Hi, My name is Khaerul Adzany!
+Hi, my name is Khaerul Adzany!
 I am a web developer lived in Bandung, Indonesia.
+Now I am focusing my work based on Microsoft .NET technologies.
 
 ### More Information
-I am currently working on top of the Microsoft .NET Technologies, here are some of them:
+Here are some the technologies that I use currently:
 
 ##### Microsoft .NET Technologies (.NET Framework 4.5) 
 - C# Programming Language (Version 5)
