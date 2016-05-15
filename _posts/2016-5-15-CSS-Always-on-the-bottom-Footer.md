@@ -11,9 +11,9 @@ After a few moment of googling, I found this [codepen](http://codepen.io/cbracco
 
 ### Here are some changes that I did based on the codepen:
 
-1. Open the main css file of your site (I use the file named: `style.scss`)
+Open the main css file of your site (I use the file named: `style.scss`)
 
-2. Make sure you have the html structure similar to this:
+Make sure you have the html structure similar to this:
 
     <html>
         <body>
@@ -23,7 +23,7 @@ After a few moment of googling, I found this [codepen](http://codepen.io/cbracco
         </body>
     </html>
     
-3. Add the following css rules:
+Add the following css rules:
 
     html {
         height: 100%;
@@ -41,7 +41,7 @@ After a few moment of googling, I found this [codepen](http://codepen.io/cbracco
         min-height: 100%;
     }
  
-4. And the last rule for your footer `<div>`
+And the last rule for your footer `<div>`
 
     .wrapper-footer{
         position: absolute;
@@ -49,4 +49,4 @@ After a few moment of googling, I found this [codepen](http://codepen.io/cbracco
         width: 100%;
     } 
         
-5. Enjoy your "always on the bottom" footer!
+Enjoy your "always on the bottom" footer!
