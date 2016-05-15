@@ -29,7 +29,7 @@ I am currently working on top of the Microsoft .NET Technologies, here are some 
 - Component Mapper Library-AutoMapper (Version 3.x.x)
 - JSON Serializer-Json.NET (Version 8.x.x)
 - Server-to-server Communication-RestSharp (Version 105.x.x)
-- Dapper dot net (Version 1.4)
+- Data Access Component-Dapper dot net (Version 1.4)
 
 ### Contact me
 
