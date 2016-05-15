@@ -15,7 +15,7 @@ Open the main css file of your site (I use the file named: `style.scss`)
 
 1. Make sure you have the html structure similar to this:
 
-    ```html
+    ```
     <html>
         <body>
         <div class="wrapper-header">
