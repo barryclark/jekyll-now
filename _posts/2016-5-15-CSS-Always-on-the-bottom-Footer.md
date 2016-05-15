@@ -13,8 +13,9 @@ After a few moment of googling, I found this [codepen](http://codepen.io/cbracco
 
 Open the main css file of your site (I use the file named: `style.scss`)
 
-Make sure you have the html structure similar to this:
+1. Make sure you have the html structure similar to this:
 
+    {% highlight html %}
     <html>
         <body>
         <div class="wrapper-header">
@@ -22,6 +23,7 @@ Make sure you have the html structure similar to this:
         <div class="wrapper-footer">
         </body>
     </html>
+    {% endhighlight %}
     
 Add the following css rules:
 
