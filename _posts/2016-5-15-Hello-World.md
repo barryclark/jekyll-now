@@ -7,7 +7,7 @@ I hope you enjoyed your visit to my blog.
 I will mostly write about things that are related to my work.
 I hope some of the things I posted here will be useful for you!
 
-###This blog is:
+### This blog is:
 
 - Powered by [GitHub Pages](https://pages.github.com/) 
 - Generated using [Jekyll](http://jekyllrb.com/)
