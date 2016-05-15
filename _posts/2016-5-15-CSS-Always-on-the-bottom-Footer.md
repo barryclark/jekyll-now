@@ -48,5 +48,5 @@ After a few moment of googling, I found this [codepen](http://codepen.io/cbracco
         bottom: 0;
         width: 100%;
     } 
-        
+
 5. Enjoy your "always on the bottom" footer!
