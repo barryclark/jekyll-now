@@ -13,8 +13,9 @@ After a few moment of googling, I found this [codepen](http://codepen.io/cbracco
 
 Open the main css file of your site (I use the file named: `style.scss`)
 
-Make sure you have the html structure similar to this:
+1. Make sure you have the html structure similar to this:
 
+    ```html
     <html>
         <body>
         <div class="wrapper-header">
@@ -22,9 +23,11 @@ Make sure you have the html structure similar to this:
         <div class="wrapper-footer">
         </body>
     </html>
+    ```
     
-Add the following css rules:
+2. Add the following css rules:
 
+    ```css
     html {
         height: 100%;
         box-sizing: border-box;
@@ -40,13 +43,16 @@ Add the following css rules:
         padding-bottom: 6rem;
         min-height: 100%;
     }
+    ```
  
-And the last rule for your footer `<div>`
+3. And the last rule for your footer `<div>`
 
+    ```css
     .wrapper-footer{
         position: absolute;
         bottom: 0;
         width: 100%;
     } 
+    ```
 
 Enjoy your "always on the bottom" footer!
