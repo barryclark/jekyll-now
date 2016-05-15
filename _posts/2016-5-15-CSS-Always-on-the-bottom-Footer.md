@@ -25,9 +25,9 @@ Open the main css file of your site (I use the file named: `style.scss`)
     </html>
     {% endhighlight %}
     
-Add the following css rules:
+2. Add the following css rules:
 
-    css
+    {% highlight css %}
     html {
         height: 100%;
         box-sizing: border-box;
@@ -43,13 +43,16 @@ Add the following css rules:
         padding-bottom: 6rem;
         min-height: 100%;
     }
+    {% endhighlight %}
  
-And the last rule for your footer `<div>`
+3. Add the other css rule for your footer `<div>`
 
+    {% highlight css %}
     .wrapper-footer{
         position: absolute;
         bottom: 0;
         width: 100%;
     } 
+    {% endhighlight %}
 
-Enjoy your "always on the bottom" footer!
+That's it! Enjoy your "always on the bottom" footer!
