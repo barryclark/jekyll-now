@@ -13,7 +13,7 @@ After a few moment of googling, I found this [codepen](http://codepen.io/cbracco
 
 Open the main css file of your site (I use the file named: `style.scss`)
 
-1. Make sure you have the html structure similar to this:
+Make sure you have the html structure similar to this:
     {% highlight html %}
     <html>
         <body>
@@ -23,7 +23,8 @@ Open the main css file of your site (I use the file named: `style.scss`)
         </body>
     </html>
     {% endhighlight %}
-2. Add the following css rules:
+    
+Add the following css rules:
     {% highlight css %}
     html {
         height: 100%;
@@ -41,7 +42,8 @@ Open the main css file of your site (I use the file named: `style.scss`)
         min-height: 100%;
     }
     {% endhighlight %} 
-3. Add the other css rule for your footer `<div>`
+
+And then, add the other css rule for your footer `<div>`
     {% highlight css %}
     .wrapper-footer{
         position: absolute;
