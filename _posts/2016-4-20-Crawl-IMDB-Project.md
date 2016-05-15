@@ -109,7 +109,8 @@ To execute the Scrapy project, type this in Terminal:
 ```sh
 scrapy crawl ImdbAllMovies
 ```
-That would generate a file, items.jl, containing all scraped item in serialize JSON format. There are 315,384 titles were scraped in this project. 
+That would generate a file, items.jl, containing all scraped item in serialize JSON format. There are 315,384 titles were scraped in this project.
+Source code is [here](https://github.com/maggie98choy/ImdbScrapy.git)
 
 
 
