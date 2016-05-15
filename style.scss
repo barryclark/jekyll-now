@@ -9,6 +9,28 @@
 @import "variables";
 // Syntax highlighting @import is at the bottom of this file
 
+
+/**/
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
 /**************/
 /* BASE RULES */
 /**************/
@@ -18,7 +40,7 @@ html {
 }
 
 body {
-	background: $white;
+  background: $white;
   font: 18px/1.4 $helvetica;
   color: $darkGray;
 }
@@ -276,7 +298,9 @@ nav {
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
   background-color: $lightBlue;
-  
+}
+
+.wrapper-footer{
   position: absolute;
   bottom: 0;
   width: 100%;
