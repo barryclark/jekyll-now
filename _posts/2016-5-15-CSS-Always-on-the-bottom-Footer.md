@@ -50,4 +50,3 @@ And the last rule for your footer `<div>`
     } 
 
 Enjoy your "always on the bottom" footer!
-
