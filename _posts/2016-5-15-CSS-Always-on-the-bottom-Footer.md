@@ -13,9 +13,8 @@ After a few moment of googling, I found this [codepen](http://codepen.io/cbracco
 
 Open the main css file of your site (I use the file named: `style.scss`)
 
-1. Make sure you have the html structure similar to this:
+Make sure you have the html structure similar to this:
 
-    ```
     <html>
         <body>
         <div class="wrapper-header">
@@ -23,7 +22,6 @@ Open the main css file of your site (I use the file named: `style.scss`)
         <div class="wrapper-footer">
         </body>
     </html>
-    ```
     
 2. Add the following css rules:
 
