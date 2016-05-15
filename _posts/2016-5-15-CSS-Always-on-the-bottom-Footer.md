@@ -23,9 +23,9 @@ Make sure you have the html structure similar to this:
         </body>
     </html>
     
-2. Add the following css rules:
+Add the following css rules:
 
-    ```css
+    css
     html {
         height: 100%;
         box-sizing: border-box;
@@ -41,16 +41,13 @@ Make sure you have the html structure similar to this:
         padding-bottom: 6rem;
         min-height: 100%;
     }
-    ```
  
-3. And the last rule for your footer `<div>`
+And the last rule for your footer `<div>`
 
-    ```css
     .wrapper-footer{
         position: absolute;
         bottom: 0;
         width: 100%;
     } 
-    ```
 
 Enjoy your "always on the bottom" footer!
