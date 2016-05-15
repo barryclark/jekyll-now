@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hello World! Welcome to my blog!
+title: Hello There! Welcome to my blog!
 ---
 
 I hope you enjoyed your visit to my blog.
