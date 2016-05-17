@@ -8,6 +8,6 @@
     <img src="/images/featured/{{ post.featured }}"/>
 </div>
 {% endif %}
-<div class="entry-content">{{ post.content | strip_html | truncatewords: 500 }}<br/><br/>
+<div class="entry-content">{{ post.content | strip_html | truncatewords: 200 }}<br/><br/>
 <a href="{{ site.baseurl }}{{ post.url }}" class="small-link">Read details</a><br/><br/></div>
 {% endif %}
