@@ -22,4 +22,4 @@ Really you can't go wrong with Spellweaver. Being free-to-play, the only thing y
 
 ![Spellweaver Screens](/images/spellweaver/spellweaver-screens.png)
 
-*Digital in-game currency was provided for review purposes by Dream Reactor
+*Digital in-game currency was provided for review purposes by Dream Reactor*
