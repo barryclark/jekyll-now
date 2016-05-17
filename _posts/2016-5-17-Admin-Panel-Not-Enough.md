@@ -26,6 +26,7 @@ I was very impressed that my way in the criminal is going to be so easy.
 But it was just 3-4 seconds after I opened shell URL in the browser, I got the worst error page: `FORBIDDEN`.
 
 There are 2 main reasons of that:
+
 * `.htaccess` is blocking `PHP` files execution in `"/uploads"` directory
 * `WAF` is somehow blocking all calls to `PHP` files in `"/uploads"` directory
 
