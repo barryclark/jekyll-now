@@ -3,7 +3,7 @@ layout: post
 title: Oh, oh, oh Data ? No, OData!
 ---
 
-It's hard to believe, but today I woke up. Just trust me, I am not lying, I really woke up. I mean the filling when you fell the you had a great sleep, and not just opened your eyes and went to work. 
+It's hard to believe, but today I woke up. Just trust me, I am not lying, I really woke up. I mean the filling when you fell that you had a great sleep, and not just opened your eyes and went to work. 
 
 Anyway..... 
 
