@@ -32,13 +32,10 @@ public abstract class ModelBase
         [Key]
         [Required]
         public int Id { get; set; }
-
         public DateTimeOffset? Created { get; set; }
         public string CreatedBy { get; set; }
-
         public DateTimeOffset? Modified { get; set; }
         public string ModifiedBy { get; set; }
-
         [Timestamp]
         public byte[] RowVersion { get; set; }
 }
@@ -58,6 +55,9 @@ What is workflow of developing `WebAPI OData` with this sample ?
 
 Now you have fully working `OData v4 WebAPI`. Have fun.
 
+If you missed, here is repository: [WebApi.OData.Sample](https://github.com/arkoc/WebApi.OData.Sample)
+
 Holy horse, I forget about coding music...
+
 [Coding Music](https://www.youtube.com/watch?v=-m7e7tCn7Bk)
 
