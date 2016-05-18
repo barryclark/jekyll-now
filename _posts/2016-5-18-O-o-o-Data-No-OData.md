@@ -5,7 +5,7 @@ title: O, o, o Data ? No, OData!
 
 It's hard to believe, but today I woke up. ( Just trust me, I am not lying. )
 
-Have you hear about `asp.net WEBApi` and new `OData` library for it? I hope you know, otherwise, you can find more interesting things to waste time on it. E.g. watch porn. There is bug-bounty program in Pornhub. ( I hear, there is SQL Injection when uploading homemade video. )
+Have you heard about `asp.net WEBApi` and new `OData` library for it? I hope you know, otherwise, you can find more interesting things to waste time on it. E.g. watch porn. There is bug-bounty program in Pornhub. ( I hear, there is SQL Injection when uploading homemade video. )
 
 Let's go back to the main thread. Blowjo... Ah, shit... WebApi OData is a very powerful library. But it has one main problem when working with multiple entities there are a lot of code duplicates. And because we are "good boys" we don't like duplicates. Where are duplicates?
 
@@ -17,7 +17,7 @@ Fuck, I can't concentrate. Let me have a rest 4-5 minutes.
 
 Ok, I am back. There is a great library developed by Microsoft. [RESTier](https://github.com/OData/RESTier). But it is now in the development stage and there are a lot of bugs. ( I hope that 0.5 version will be fixed to work in production. )
 
-Ok, but what for now? I just think there will be some workaround to avoid this duplicates. For it, I wrote Generic Controller with basic CRUD operations to avoid duplicating it in all controllers. 
+Ok, but what for now? I just think there will be some workaround to avoid these duplicates. For it, I wrote Generic Controller with basic CRUD operations to avoid duplicating it in all controllers. 
 
 ```c#
  public abstract class BaseODataController<TEntity> : ODataController where TEntity : ModelBase
