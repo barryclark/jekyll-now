@@ -77,7 +77,6 @@ What is workflow of developing `WebAPI OData` with this sample ?
 * Download Sample Solution and Open It
 * Define your models and inherit from `ModelBase`
 * Define your controllers {entity_name} + "s" + Controller and inherit them from BaseODataController<TEntity> with specifying entity type
-* You can override all CRUD operations in your controller
 * Define your `OData` `EntitySet`-s in `WebApiConfig` file.
 
 Now you have fully working `OData v4 WebAPI`. Have fun.
