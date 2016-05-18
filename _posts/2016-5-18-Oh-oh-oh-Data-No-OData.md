@@ -1,6 +1,6 @@
 ---
 layout: post
-title: O, o, o Data ? No, OData!
+title: Oh, oh, oh Data ? No, OData!
 ---
 
 It's hard to believe, but today I woke up. ( Just trust me, I am not lying. )
