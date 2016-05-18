@@ -16,6 +16,7 @@ Let's go back to the main thread. Blowjo... Ah, shit... sorry I meant ASP.NET's 
 #### Let us define what we mean when we say a duplicate?
 
 For the WebAPI OData example you need to do the following:
+
 * For each entity you must define a controller
 * For each controller you must define all CRUD operations
 * Not just define but also you must implement the CRUD functions
