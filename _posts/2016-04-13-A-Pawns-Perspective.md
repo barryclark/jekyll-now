@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A Pawn's Perspective
-category: site-news
+category: news
 tags: [news, purple pawn]
 ---
 
