@@ -3,13 +3,13 @@ layout: post
 title: Oh, oh, oh Data ? No, OData!
 ---
 
-It's hard to believe, but today I woke up. Just trust me, I am not lying, I really woke up. I mean the filling when you fell that you had a great sleep, and not just opened your eyes and went to work. 
+It's hard to believe, but today I woke up. Just trust me, I am not lying, I really woke up. I mean the feeling when you fell that you had a great sleep, and not just opened your eyes and went to work. 
 
 Anyway..... 
 
 #### Have you heard about `asp.net WEBApi` and new `OData` library for it? 
 
-I hope you know, otherwise, you I am sure you can find more interesting things to waste your precious time on it. Like watching porn. By the way there is a bug-bounty program at Pornhub. And I can swear that I think there is a SQL Injection when uploading your homemade videos :) 
+I hope you know, otherwise, I am sure you can find more interesting things to waste your precious time on it. Like watching porn. By the way there is a bug-bounty program at Pornhub. And I can swear that I think there is a SQL Injection when uploading your homemade videos :) 
 
 Let's go back to the main thread. Blowjo... Ah, shit... sorry I meant ASP.NET's WebApi OData seems to be a very powerful library, it works great. But when you start to model something more than a fancy simple sample you encounter the need to make a lot of code duplication to support multiple entities. And because we are "good boys" and "clean" programmers we don't like duplicated codes sections ghosting around in our codes. 
 
@@ -34,7 +34,7 @@ But there is a big problem with this frameworks. This mega-boom tools that do al
 
 #### `OData` isn't very complex to use a 3-rd party tool. 
 
-When we decide to use the 3-rd part tool we are binding us to it, if there is a bug, you should wait for a fix, or you can fix it and wait for merge. And remember that they release date isn't tomorrow or not even in this week.
+When we decide to use the 3-rd part tool we are binding us to it, if there is a bug, you should wait for a fix, or you can fix it and wait for merge. And remember that their release date isn't tomorrow or not even in this week.
 
 #### These complex tools have boundaries and when we decide to do something that isn't in that boundaries, we suck. 
 
