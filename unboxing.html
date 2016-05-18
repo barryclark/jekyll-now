@@ -2,7 +2,7 @@
 layout:   home
 title:    Unboxing Posts
 ---
-
+<div class="posts clearfix">
   {% for post in site.posts %}
     {% if post.category contains 'unboxing' %}
       <article class="post">
@@ -23,3 +23,4 @@ title:    Unboxing Posts
       </article>
     {% endif %}
   {% endfor %}
+</div>
