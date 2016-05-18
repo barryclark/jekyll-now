@@ -5,19 +5,39 @@ title: O, o, o Data ? No, OData!
 
 It's hard to believe, but today I woke up. ( Just trust me, I am not lying. )
 
-Have you heard about `asp.net WEBApi` and new `OData` library for it? I hope you know, otherwise, you can find more interesting things to waste time on it. E.g. watch porn. There is bug-bounty program in Pornhub. ( I hear, there is SQL Injection when uploading homemade video. )
+#### Have you heard about `asp.net WEBApi` and new `OData` library for it? 
 
-Let's go back to the main thread. Blowjo... Ah, shit... WebApi OData is a very powerful library. But it has one main problem when working with multiple entities there are a lot of code duplicates. And because we are "good boys" we don't like duplicates. Where are duplicates?
+I hope you heard, otherwise, you can find more interesting things to waste time on it. E.g. watch porn. There is bug-bounty program in Pornhub. ( I hear, there is SQL Injection when uploading homemade video. )
+
+Let's go back to the main thread. Blowjo... Ah, shit... WebApi OData is a very powerful library. 
+
+#### But it has one main problem when working with multiple entities there are a lot of code duplicates. 
+
+And because we are "good boys" we don't like duplicates. Where are duplicates?
 
 * For each entity you must define controller
 * For each controller you must define all CRUD operations
 * Not only define you must implement it
 
-Fuck, I can't concentrate. Let me have a rest 4-5 minutes.
+#### Fuck, I can't concentrate. Let me have a rest 4-5 minutes.
 
-Ok, I am back. There is a great library developed by Microsoft. [RESTier](https://github.com/OData/RESTier). But it is now in the development stage and there are a lot of bugs. ( I hope that 0.5 version will be fixed to work in production. )
+Ok, I am back. There is a library developed by Microsoft. [RESTier](https://github.com/OData/RESTier). But it is now in the development stage and there are a lot of bugs. ( I hope that 0.5 version will be fixed to work in production. )
 
-Ok, but what for now? I just think there will be some workaround to avoid these duplicates. For it, I wrote Generic Controller with basic CRUD operations to avoid duplicating it in all controllers. 
+But there is a big problem with this frameworks. This mega-boom tools that do all work instead of you are harassing our brain. Of course, there are many powerful tools that make our life easy, but some tools harm us. 
+
+#### `OData` isn't very complex to use a 3-rd party tool. 
+
+When we decide to use the 3-rd part tool we are binding us to it, if there is a bug, you should wait for a fix, or you can fix it and wait for merge. And remember that they release date isn't tomorrow or not even in this week.
+
+#### These complex tools have boundaries and when we decide to do something that isn't in that boundaries, we suck. 
+
+Think twice when choosing a framework. After that think again and only then write that fucking `Install-Package`. 
+
+Do you remember the story with left-pad...a library of 10 rows, stop here please, 10 rows KARL, a library of 10 rows. Ah, what I was going to say. It broke a big amount of solutions in `node.js`.  ( It was removed from node.js packages and all dependencies to it failed. )
+
+Don't miss understand me, I am not forcing you to not use frameworks. Frameworks are great. Just use them if you really need them. 
+
+#### Ok, but what for now? I wrote Generic Controller with basic CRUD operations to avoid duplicating it in all controllers. 
 
 ```c#
  public abstract class BaseODataController<TEntity> : ODataController where TEntity : ModelBase
@@ -43,7 +63,7 @@ public abstract class ModelBase
 
 For what is `RowVersion` ? It is for entity-framework to avoid concurrency problems. I believe you are smart enough to Google it.
 
-I combined all of these and created sample `WebApi` project to reuse it in multiple projects. Here it is: [WebApi.OData.Sample](https://github.com/arkoc/WebApi.OData.Sample)
+### I combined all of these and created sample `WebApi` project to reuse it in multiple projects. Here it is: [WebApi.OData.Sample](https://github.com/arkoc/WebApi.OData.Sample)
 
 What is workflow of developing `WebAPI OData` with this sample ?
 
@@ -60,4 +80,3 @@ If you missed, here is repository: [WebApi.OData.Sample](https://github.com/arko
 Holy horse, I forget about coding music...
 
 [Coding Music](https://www.youtube.com/watch?v=-m7e7tCn7Bk)
-
