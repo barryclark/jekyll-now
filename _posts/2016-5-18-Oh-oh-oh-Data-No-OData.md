@@ -11,7 +11,7 @@ Anyway.....
 
 I hope you know, otherwise, you I am sure you can find more interesting things to waste your precious time on it. Like watching porn. By the way there is a bug-bounty program at Pornhub. And I can swear that I think there is a SQL Injection when uploading your homemade videos :) 
 
-Let's go back to the main thread. Blowjo... Ah, shit... sorry I meant ASP.NET's WebApi OData seems to be a very powerful library, it works great. But when you start to model something then a fancy simple sample to encounter the need to make a lot of code duplication to support multiple entities. And because we are "good boys" and "clean" programmers we don't like duplicated codes sections ghosting around in our codes. Let's us define what we mean when we say a duplicate?
+Let's go back to the main thread. Blowjo... Ah, shit... sorry I meant ASP.NET's WebApi OData seems to be a very powerful library, it works great. But when you start to model something more than a fancy simple sample you encounter the need to make a lot of code duplication to support multiple entities. And because we are “good boys” and “clean” programmers we don’t like duplicated codes sections ghosting around in our source codes.
 
 #### But it has one main problem when working with multiple entities there are a lot of code duplicates. 
 
