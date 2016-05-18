@@ -11,11 +11,11 @@ Anyway.....
 
 I hope you know, otherwise, I am sure you can find more interesting things to waste your precious time on it. Like watching porn. By the way there is a bug-bounty program at Pornhub. And I can swear that I think there is a SQL Injection when uploading your homemade videos :) 
 
-Let's go back to the main thread. Blowjo... Ah, shit... sorry I meant ASP.NET's WebApi OData seems to be a very powerful library, it works great. But when you start to model something more than a fancy simple sample you encounter the need to make a lot of code duplication to support multiple entities. And because we are "good boys" and "clean" programmers we don't like duplicated codes sections ghosting around in our codes. 
+Let's go back to the main thread. Blowjo... Ah, shit... sorry I meant ASP.NET's WebApi OData seems to be a very powerful library, it works great. But when you start to model something more than a fancy simple sample you encounter the need to make a lot of code duplication to support multiple entities. And because we are "good boys" and "clean" programmers we don't like duplicated code sections ghosting around in our codes. 
 
-#### Let's us define what we mean when we say a duplicate?
+#### Let us define what we mean when we say a duplicate?
 
-For the WebAPI OData example we need to do the following:
+For the WebAPI OData example you need to do the following:
 * For each entity you must define a controller
 * For each controller you must define all CRUD operations
 * Not just define but also you must implement the CRUD functions
@@ -30,28 +30,27 @@ For the WebAPI OData example we need to do the following:
 
 Ok, I am back. Microsoft wouldn't be Microsoft if they haven't made a library for such cases. The library is called [RESTier](https://github.com/OData/RESTier). But as everything Microsoft it is now in the development stage and it's quite buggy. I hope that the version 0.5 will be more or less stable for production use.
 
-But there is a big problem with this frameworks. This mega-boom tools that do all work instead of you are harassing our brain. Of course, there are many powerful tools that make our life easy, but some tools harm us. 
+But there is a big problem with these frameworks. This mega-boom tools that do all work instead of you are harassing our brain. Of course, there are many powerful tools that make our life easy, but some tools harm us. 
 
 #### `OData` isn't very complex to use a 3-rd party tool. 
 
 When we decide to use the 3-rd part tool we are binding us to it, if there is a bug, you should wait for a fix, or you can fix it and wait for merge. And remember that their release date isn't tomorrow or not even in this week.
 
-#### These complex tools have boundaries and when we decide to do something that isn't in that boundaries, we suck. 
+#### These complex tools have boundaries and when we decide to do something that isn't in those boundaries, we suck. 
 
-Think twice when choosing a framework. After that think again and only then write that fucking `Install-Package`. 
+Think twice when choosing a framework. After that think again and only then write that f***ing `Install-Package`. 
 
 Do you remember the story with left-pad...a library of 10 rows, stop here please, 10 rows KARL, a library of 10 rows. Ah, what I was going to say. It broke a big amount of solutions in `node.js`.  ( It was removed from node.js packages and all dependencies to it failed. )
 
-Don't miss understand me, I am not forcing you to not use frameworks. Frameworks are great. Just use them if you really need them. 
+Don't missunderstand me, I am not forcing you to not use frameworks. Frameworks are great. Just use them if you really need them. 
 
-#### Ok, but what for now? I think there must a way or a some workaround to avoid these duplicates. To solve this problem I have wrote a mega generic controller with implemented basic CRUD operations in-order to avoid duplicating it in all controllers.
+#### Ok, but what for now? I think there must a way or a some workaround to avoid these duplicates. To solve this problem I have wrote a mega generic controller which implements basic CRUD operations in order to avoid duplicating it in all controllers.
 
 ```c#
  public abstract class BaseODataController<TEntity> : ODataController where TEntity : ModelBase
 ```
 
 Ok, what is `ModelBase` ? It is a base class to help determine Primary Key of the table in generic class. All your models must be inherited from it.
-
 
 ```c#
 public abstract class ModelBase
