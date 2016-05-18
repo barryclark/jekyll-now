@@ -1,4 +1,3 @@
-{% for post in paginator.posts limit:8 %}
 {% if post.categories contains 'unboxing' %}
   <article class="post">
     <div class="eyebrow">{{ post.date | date: "%d %b %Y" }} {% if post.category %} in <a href="/category/#{{ post.category | slugify }}">{{ post.category }}</a> {% endif %}</div>
@@ -17,4 +16,3 @@
     </div>
   </article>
 {% endif %}
-{% endfor %}
