@@ -14,6 +14,8 @@ A Pawn's Perspective came about because there's things I may want to post that d
 
 rkalajian [at] gmail.com
 
+### [My Game Collection](https://gamestockpile.com/stockpiles/user7d121f84b5fadf3b09be78adc625ef48)
+
 ### Attribution
 Logo designed by [DPH Studioz](http://dphstudioz.com/)\\
 Design advice by [DPH Studioz](http://dphstudioz.com/) and [Denagh Design](http://denaghdesign.com/)\\
