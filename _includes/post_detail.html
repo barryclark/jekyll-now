@@ -1,4 +1,4 @@
-{% if page.url contains "page" %}{% else %}
+{% if page.url != "/index.html" %}{% else %}
 <h1 class="entry-title">
     <a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a>
 </h1>
