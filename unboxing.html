@@ -3,7 +3,7 @@ layout:   default
 title:    Unboxing Posts
 ---
 <div class="posts clearfix">
-  {% if post.categories contains 'unboxing' %}
+  {% if post.category contains 'unboxing' %}
     <article class="post">
       <div class="eyebrow">{{ post.date | date: "%d %b %Y" }} {% if post.category %} in <a href="/category/#{{ post.category | slugify }}">{{ post.category }}</a> {% endif %}</div>
       {% if post.featured %}
