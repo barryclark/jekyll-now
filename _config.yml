@@ -6,9 +6,10 @@
 name: Maggie Choy Blog
 
 # Short bio or description (displayed in the header)
-description: 
+description: It's not as hard as you thought. Try it!!
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
+url: http://www.maggie98choy.com
+avatar: 
 
 #
 # Flags below are optional
@@ -22,7 +23,7 @@ footer-links:
   flickr:
   github: maggie98choy/
   instagram:
-  linkedin:
+  linkedin: https://www.linkedin.com/in/maggiechoy
   pinterest:
   rss: # just type anything here for a working RSS icon
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
