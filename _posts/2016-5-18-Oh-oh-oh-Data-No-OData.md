@@ -31,7 +31,7 @@ For the WebAPI OData example you need to do the following:
 
 Ok, I am back. Microsoft wouldn't be Microsoft if they haven't made a library for such cases. The library is called [RESTier](https://github.com/OData/RESTier). But as everything in Microsoft it is now in the development stage and it's quite buggy. I hope that the version 0.5 will be more or less stable for production use.
 
-But there is a big problem with these frameworks. This mega-boom tools that do all work instead of you are harassing our brain. Of course, there are many powerful tools that make our life easy, but some tools harm us. 
+But there is a big problem with these frameworks. This mega-boom tools that do all work instead of us are harassing our brain. Of course, there are many powerful tools that make our life easy, but some tools harm us. 
 
 #### `OData` isn't very complex to use a 3-rd party tool. 
 
