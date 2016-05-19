@@ -12,6 +12,7 @@ As for the latest additions to the list?
 
 |---
 | Game | Publisher/Designer
+|---
 | Battle for Zendikar	| Hasbro
 | Mega Man | Jasco Games
 | The Rose King | Kosmos
