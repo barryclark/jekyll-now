@@ -4,12 +4,13 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+I am an AHRC funded doctoral researcher at Cardiff University, studying Ancient Roman History.
 
-### More Information
+### Research Topic
 
-A place to include any other types of information that you'd like to include about yourself.
+My research more specifically involves the study of representations of Easterners in Roman literature, with particular reference to the gendered nature of these representations and the influence of military stereotyping on these literary constructions.
+
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[mcavoyim@cardiff.ac.uk](mailto:mcavoyim@cardiff.ac.uk)
