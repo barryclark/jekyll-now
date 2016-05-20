@@ -10,7 +10,7 @@ Today I was lucky enough to receive and early access copy of [Total War: WARHAMM
 
 I've exported the video to YouTube. It runs about 19 minutes long, and you can watch me play while having no idea what the hell I'm doing. The tutorial wasn't much help, but I think I just need to play the game a bit more. Once I do, I'll be sure to get a review up.
 
-<iframe width="640" height="360" src="https://www.youtube.com/embed/GHeQdCFJkHo" frameborder="0" allowfullscreen></iframe>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/GHeQdCFJkHo" frameborder="0" allowfullscreen></iframe>\
 
 <strike>Now for the fun part. Want a copy of the game with the DLC before it comes out? Comment on this post and I'll pick a winner by 5pm EST tomorrow!</strike>
 
