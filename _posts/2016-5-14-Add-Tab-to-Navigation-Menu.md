@@ -28,8 +28,8 @@ Here are the steps to add tag in every post and generate tag page:
 
 Get the tag name for every tag on the site and set them to the `site_tags` variable:
 ```html
-    {%<!-- capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}
-    {% endfor %}{% endcapture -->%}
+    {% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}
+    {% endfor %}{% endcapture %}
 ```
 
 `tag_words` is a sorted array of the tag names:
@@ -38,23 +38,23 @@ Get the tag name for every tag on the site and set them to the `site_tags` varia
 ```
 
 List of all tags:
-```sh
+```html
     <ul class="tags">
     
-    {%<!-- for item in (0..site.tags.size) %}{% unless forloop.last %}
+    {% for item in (0..site.tags.size) %}{% unless forloop.last %}
     {% capture this_word %}{{ tag_words[item] }}{% endcapture %}
     <li>
       <a href="#{{ this_word | cgi_escape }}" class="tag">{{ this_word }}
         <span>({{ site.tags[this_word].size }})</span>
       </a>
     </li>
-     {% endunless %}{% endfor -->%}
+     {% endunless %}{% endfor %}
     </ul>
     
 ```
 
 Posts by Tag:
-```sh
+```html
     <div>
     {%<!-- for item in (0..site.tags.size) %}{% unless forloop.last %}
     {% capture this_word %}{{ tag_words[item] }}{% endcapture %}
@@ -70,26 +70,25 @@ Posts by Tag:
       </div>
       <div style="clear: both;"></div>
     {% endif %}{% endfor %}
-     {% endunless %}{% endfor -->%}
+     {% endunless %}{% endfor %}
     </div>
-    -->
+    
 ```
 
 **Edit** *CSS*: I choose [Wouter Beeftink's CSS style](http://codepen.io/wbeeftink/pen/dIaDH).
 
 **Edit** *post.html* :
 
-```sh
+```html
     <ul class="tags">
     <!--
     {%<!-- for tag in page.tags %}
         <li><a href="/tags#{{ tag }}" class="tag">{{ tag }}</a></li>
-    {% endfor -->%}
-    -->
+    {% endfor %}
     </ul>
 ```
 
-**Add tag to post:** This tag variable inside each post's *YAML Front matter*.
+**Add tag to post:** This tag variable inside each post's YAML Front matter.
 
 ```html
     tags: 
