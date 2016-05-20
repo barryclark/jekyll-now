@@ -37,6 +37,7 @@ Get the tag name for every tag on the site and set them to the `site_tags` varia
 ```sh
 <!--
 {% assign tag_words = site_tags | split:',' | sort %}
+-->
 ```
 
 List of all tags:
