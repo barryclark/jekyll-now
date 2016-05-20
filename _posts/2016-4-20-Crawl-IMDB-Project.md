@@ -1,11 +1,7 @@
 ---
 layout: post
 title: Crawl IMDB Most Popular Titles Over the Years
-tags:
-- Web Scraping
-- Scrapy
-- Python
-- JSON
+tags:[Web Scraping,Scrapy,Python,JSON]
 published: true
 ---
 
