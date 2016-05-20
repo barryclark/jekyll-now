@@ -8,7 +8,7 @@ I am an AHRC funded doctoral researcher at Cardiff University, studying Ancient 
 
 ### Research Topic
 
-My research more specifically involves the study of representations of Easterners in Roman literature, with particular reference to the gendered nature of these representations and the influence of military stereotyping on these literary constructions.
+My research more specifically involves the study of representations of Easterners in Roman literature, with particular reference to the gendered nature of these representations. I additionally analyse the influence of military themes within these literary constructions.
 
 
 ### Contact me
