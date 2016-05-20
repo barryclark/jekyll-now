@@ -27,18 +27,18 @@ Here are the steps to add tag in every post and generate tag page:
 **Add** *tags.html* **page in root directory:** 
 
 Get the tag name for every tag on the site and set them to the `site_tags` variable:
-```html
+<pre><code>
     {% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}
     {% endfor %}{% endcapture %}
-```
+</pre></code>
 
 `tag_words` is a sorted array of the tag names:
-```html
+<pre><code>
     {% assign tag_words = site_tags | split:',' | sort %}
-```
+</pre></code>
 
 List of all tags:
-```html
+<pre><code>
     <ul class="tags">
     
     {% for item in (0..site.tags.size) %}{% unless forloop.last %}
@@ -50,13 +50,12 @@ List of all tags:
     </li>
      {% endunless %}{% endfor %}
     </ul>
-    
-```
+</pre></code>    
 
 Posts by Tag:
-```html
+<pre><code>
     <div>
-    {%<!-- for item in (0..site.tags.size) %}{% unless forloop.last %}
+    {% for item in (0..site.tags.size) %}{% unless forloop.last %}
     {% capture this_word %}{{ tag_words[item] }}{% endcapture %}
     <h2 id="{{ this_word | cgi_escape }}">{{ this_word }}</h2>
     {% for post in site.tags[this_word] %}{% if post.title != null %}
@@ -72,27 +71,25 @@ Posts by Tag:
     {% endif %}{% endfor %}
      {% endunless %}{% endfor %}
     </div>
-    
-```
+</pre></code>
 
 **Edit** *CSS*: I choose [Wouter Beeftink's CSS style](http://codepen.io/wbeeftink/pen/dIaDH).
 
 **Edit** *post.html* :
 
-```html
+<pre><code>
     <ul class="tags">
-    <!--
-    {%<!-- for tag in page.tags %}
+    {% for tag in page.tags %}
         <li><a href="/tags#{{ tag }}" class="tag">{{ tag }}</a></li>
     {% endfor %}
     </ul>
-```
+</pre></code>
 
 **Add tag to post:** This tag variable inside each post's YAML Front matter.
 
-```html
+<pre><code>
     tags: 
     - Jekyll with GitHub
-```
+</pre></code>
 
 
