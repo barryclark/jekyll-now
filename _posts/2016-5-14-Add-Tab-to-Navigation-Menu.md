@@ -27,13 +27,13 @@ Here are the steps to add tag in every post and generate tag page:
 **Add** *tags.html* **page in root directory:** 
 
 Get the tag name for every tag on the site and set them to the `site_tags` variable:
-```sh
-    {% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}
-    {% endfor %}{% endcapture %}
+```html
+    {%<!-- capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}
+    {% endfor %}{% endcapture -->%}
 ```
 
 `tag_words` is a sorted array of the tag names:
-```sh
+```html
     {% assign tag_words = site_tags | split:',' | sort %}
 ```
 
@@ -91,7 +91,7 @@ Posts by Tag:
 
 **Add tag to post:** This tag variable inside each post's *YAML Front matter*.
 
-```sh
+```html
     tags: 
     - Jekyll with GitHub
 ```
