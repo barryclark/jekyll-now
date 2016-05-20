@@ -13,4 +13,4 @@ My research more specifically involves the study of representations of Easterner
 
 ### Contact me
 
-[mcavoyim@cardiff.ac.uk](mailto:mcavoyim@cardiff.ac.uk)
+[Email](mailto:mcavoyim@cardiff.ac.uk)
