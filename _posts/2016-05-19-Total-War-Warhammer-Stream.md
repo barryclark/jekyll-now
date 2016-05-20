@@ -12,6 +12,6 @@ I've exported the video to YouTube. It runs about 19 minutes long, and you can w
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/GHeQdCFJkHo" frameborder="0" allowfullscreen></iframe>
 
-<strike>Now for the fun part. Want a copy of the game with the DLC before it comes out? Comment on this post and I'll pick a winner by 5pm EST tomorrow!</strike
+<strike>Now for the fun part. Want a copy of the game with the DLC before it comes out? Comment on this post and I'll pick a winner by 5pm EST tomorrow!</strike>
 
 *A winner has been chosen! Bryan Roos! Get me your email address and I'll shoot you the Steam keys. Congrats! Thanks everyone who participated.*
