@@ -23,7 +23,7 @@
     <meta name="viewport" content="width=device-width">
     
     
-    <title>ioang.github.io/about.md at master · ioang/ioang.github.io</title>
+    <title>ioang.github.io/2016-5-20-Hello-World.md at master · ioang/ioang.github.io</title>
     <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
     <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -43,7 +43,7 @@
       <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
     <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
     <link rel="assets" href="https://assets-cdn.github.com/">
-    <link rel="web-socket" href="wss://live.github.com/_sockets/ODg3OTg4MTo5MGU1ZWVmZDRlNWRkNGNlOTkzOTIwMWFhYWIwYmNlZDplNGNiOTUwYzIyNjk2YjQ1ZjI1MzJhZTM5N2UxYzM2NDRiNzZhNjAxMDA2NTA1YmI3ZDgzNmE1MzZkZGM3NGZh--1359472b91b62342237b115fd0ab19b72d5066c2">
+    <link rel="web-socket" href="wss://live.github.com/_sockets/ODg3OTg4MTo5MGU1ZWVmZDRlNWRkNGNlOTkzOTIwMWFhYWIwYmNlZDowYjE2NzUwYmQxMzdhNjcwZTg5NjYyNjc5ZmU2OWU1NDA4Mjc4ZGMxNzA4ZjMyNzNlMDg3OTg2MmFlZjFmM2Zh--d26776ae07744a2155b4f69e6747078c0cafa926">
     <meta name="pjax-timeout" content="1000">
     <link rel="sudo-modal" href="/sessions/sudo_modal">
 
@@ -55,7 +55,7 @@
 <meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
     <meta name="google-analytics" content="UA-3769691-2">
 
-<meta content="collector.githubapp.com" name="octolytics-host" /><meta content="github" name="octolytics-app-id" /><meta content="561FAAD9:18BE:1465570:573F2F3A" name="octolytics-dimension-request_id" /><meta content="8879881" name="octolytics-actor-id" /><meta content="ioang" name="octolytics-actor-login" /><meta content="60ff0155304156803af340bbc9a375ed267bb50eff008602c6cb85b34266cbe1" name="octolytics-actor-hash" />
+<meta content="collector.githubapp.com" name="octolytics-host" /><meta content="github" name="octolytics-app-id" /><meta content="561FAAD9:18C0:433E9C3:573F2F0B" name="octolytics-dimension-request_id" /><meta content="8879881" name="octolytics-actor-id" /><meta content="ioang" name="octolytics-actor-login" /><meta content="60ff0155304156803af340bbc9a375ed267bb50eff008602c6cb85b34266cbe1" name="octolytics-actor-hash" />
 <meta content="/&lt;user-name&gt;/&lt;repo-name&gt;/blob/show" data-pjax-transient="true" name="analytics-location" />
 
 
@@ -68,7 +68,7 @@
     <meta name="user-login" content="ioang">
 
         <meta name="expected-hostname" content="github.com">
-      <meta name="js-proxy-site-detection-payload" content="OWIxM2MzN2Y4MWRlZTIxYTI2OTU5YjlmNDEwMDBiODZiOGIxM2UzMWY0MmU3Yjk4MGEzZmM5MmQ5NzQ4NTc0YXx7InJlbW90ZV9hZGRyZXNzIjoiODYuMzEuMTcwLjIxNyIsInJlcXVlc3RfaWQiOiI1NjFGQUFEOToxOEJFOjE0NjU1NzA6NTczRjJGM0EiLCJ0aW1lc3RhbXAiOjE0NjM3NTg2NTd9">
+      <meta name="js-proxy-site-detection-payload" content="MGFhNjUzMzNmMzEzMGU5N2JlZjM4YTRiMTI4MzA2MTgyODc5NGUwZDhjMzRmMWI5NDc1MWY4ZTBhOWQ3YTI2Mnx7InJlbW90ZV9hZGRyZXNzIjoiODYuMzEuMTcwLjIxNyIsInJlcXVlc3RfaWQiOiI1NjFGQUFEOToxOEMwOjQzM0U5QzM6NTczRjJGMEIiLCJ0aW1lc3RhbXAiOjE0NjM3NTg2MDh9">
 
 
       <link rel="mask-icon" href="https://assets-cdn.github.com/pinned-octocat.svg" color="#4078c0">
@@ -88,7 +88,7 @@
   <link href="https://github.com/ioang/ioang.github.io/commits/master.atom" rel="alternate" title="Recent Commits to ioang.github.io:master" type="application/atom+xml">
 
 
-      <link rel="canonical" href="https://github.com/ioang/ioang.github.io/blob/master/about.md" data-pjax-transient>
+      <link rel="canonical" href="https://github.com/ioang/ioang.github.io/blob/master/_posts/2016-5-20-Hello-World.md" data-pjax-transient>
   </head>
 
 
@@ -231,7 +231,7 @@
             Settings
           </a>
 
-          <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/logout" class="logout-form" data-form-nonce="34b46d33760a04a9d2c3c1aab8e6413d8e83fcec" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="DceQ3BPlY2ZJr1epnuuQVg1hOLLYwGQcaJaTjerKqdPqiiR0H6hwZvfVir6rApakI5KlpX/RLbhnLm9KURVK/g==" /></div>
+          <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/logout" class="logout-form" data-form-nonce="34b46d33760a04a9d2c3c1aab8e6413d8e83fcec" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="ksE6qf/rY7sdN/mbs/zagWRbq6bECJBGC/xOgUZmmZp5POcmS4zPj9E/2UdkjlveeElz4bICwRjhG5Jby+KcXA==" /></div>
             <button class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout">
               Sign out
             </button>
@@ -268,7 +268,7 @@
 <ul class="pagehead-actions">
 
   <li>
-        <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/notifications/subscribe" class="js-social-container" data-autosubmit="true" data-form-nonce="34b46d33760a04a9d2c3c1aab8e6413d8e83fcec" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="/X708eeIkKUbKuvIAnAOnemHbrBHCowGYP5PHTgEc7EEiOFAHHvOJjaShT5Ur5xPcXj8NM8odgkKI8+/mmPdNw==" /></div>      <input class="form-control" id="repository_id" name="repository_id" type="hidden" value="59300820" />
+        <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/notifications/subscribe" class="js-social-container" data-autosubmit="true" data-form-nonce="34b46d33760a04a9d2c3c1aab8e6413d8e83fcec" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="eoVNxwL8vRQ9Gn9RiUgnLKi4aNA3bTwTYQC1fIrKseLMKdQq4tghjeULGcXx/m2mvLkDvw/we3kAL5ub5P2Qrw==" /></div>      <input class="form-control" id="repository_id" name="repository_id" type="hidden" value="59300820" />
 
         <div class="select-menu js-menu-container js-select-menu">
           <a href="/ioang/ioang.github.io/subscription"
@@ -343,7 +343,7 @@
     
   <div class="js-toggler-container js-social-container starring-container ">
 
-    <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/ioang/ioang.github.io/unstar" class="starred" data-form-nonce="34b46d33760a04a9d2c3c1aab8e6413d8e83fcec" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="s1A7VKHGFdszDKgvB/JCkFhbVAOUe6ozv+Ya2TOZh5e0Nh7yJcdVKuPOTiKrERu7OMjk9RGKBowTG1cn/HHA8w==" /></div>
+    <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/ioang/ioang.github.io/unstar" class="starred" data-form-nonce="34b46d33760a04a9d2c3c1aab8e6413d8e83fcec" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="sVJw/HS79i8+oevtvnrq9AGMOXqFusC9/hRBRpKzcweMpLNYVvA8G0zELLrtf44x7WJCAwN6J0y/DmhngmGyKA==" /></div>
       <button
         class="btn btn-sm btn-with-count js-toggler-target"
         aria-label="Unstar this repository" title="Unstar ioang/ioang.github.io"
@@ -355,7 +355,7 @@
           0
         </a>
 </form>
-    <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/ioang/ioang.github.io/star" class="unstarred" data-form-nonce="34b46d33760a04a9d2c3c1aab8e6413d8e83fcec" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="gh4Vg1HGDuNbLYlUDzHVrQ6eYA83X4U2vu3pLb9tFMOSQQNoeaMOvN/u4DcjzOFo09pdnvsrG/1OMGcDYXJkSQ==" /></div>
+    <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/ioang/ioang.github.io/star" class="unstarred" data-form-nonce="34b46d33760a04a9d2c3c1aab8e6413d8e83fcec" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="jrd48AanHjnwPevk+D3Hq0T96x7uUCb11S+jOK4+C4qfom3oJ7swlp9ri42TIoNcq1lfV/sAcGY7mOWc4FKCqg==" /></div>
       <button
         class="btn btn-sm btn-with-count js-toggler-target"
         aria-label="Star this repository" title="Star ioang/ioang.github.io"
@@ -371,7 +371,7 @@
   </li>
 
   <li>
-          <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/ioang/ioang.github.io/fork" class="btn-with-count" data-form-nonce="34b46d33760a04a9d2c3c1aab8e6413d8e83fcec" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="KBjCaivTXfJQ53pq/RI4rwxqUqlO58h31+r4Ke/YaUenFGyv/9hXzk2DAw8XgbrGNOSPXPkRxV6uy22He/VmYw==" /></div>
+          <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/ioang/ioang.github.io/fork" class="btn-with-count" data-form-nonce="34b46d33760a04a9d2c3c1aab8e6413d8e83fcec" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="imjHyqTjc2qj5K5uSME6Zz4oRSom3fkg1qIVuCXH8fgmmjRJfOtErDY3gigEwQZsrtD0DhsXYzfvEka7mETx9w==" /></div>
             <button
                 type="submit"
                 class="btn btn-sm btn-with-count"
@@ -451,9 +451,9 @@
 
     
 
-<a href="/ioang/ioang.github.io/blob/e3b5ca411df8f735d2251b22f4ca09278cf07a7c/about.md" class="hidden js-permalink-shortcut" data-hotkey="y">Permalink</a>
+<a href="/ioang/ioang.github.io/blob/e3b5ca411df8f735d2251b22f4ca09278cf07a7c/_posts/2016-5-20-Hello-World.md" class="hidden js-permalink-shortcut" data-hotkey="y">Permalink</a>
 
-<!-- blob contrib key: blob_contributors:v21:655dadbd9fc9b97699d007f069804a64 -->
+<!-- blob contrib key: blob_contributors:v21:7c3e95ff56c812fc584f0217884df070 -->
 
 <div class="file-navigation-new js-zeroclipboard-container">
   
@@ -495,7 +495,7 @@
 
 
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/ioang/ioang.github.io/blob/kramdown-and-rouge/about.md"
+               href="/ioang/ioang.github.io/blob/kramdown-and-rouge/_posts/2016-5-20-Hello-World.md"
                data-name="kramdown-and-rouge"
                data-skip-pjax="true"
                rel="nofollow">
@@ -505,7 +505,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open selected"
-               href="/ioang/ioang.github.io/blob/master/about.md"
+               href="/ioang/ioang.github.io/blob/master/_posts/2016-5-20-Hello-World.md"
                data-name="master"
                data-skip-pjax="true"
                rel="nofollow">
@@ -516,7 +516,7 @@
             </a>
         </div>
 
-          <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/ioang/ioang.github.io/branches" class="js-create-branch select-menu-item select-menu-new-item-form js-navigation-item js-new-item-form" data-form-nonce="34b46d33760a04a9d2c3c1aab8e6413d8e83fcec" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="jQH6cQVHDxt/54FTOFucNzWkEOyHd937hx+9sbIYirtJeAv6b/ClQ66xssBnckcGqV49yolHzWmrakMRkjxD7Q==" /></div>
+          <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/ioang/ioang.github.io/branches" class="js-create-branch select-menu-item select-menu-new-item-form js-navigation-item js-new-item-form" data-form-nonce="34b46d33760a04a9d2c3c1aab8e6413d8e83fcec" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="THDxLojyG+oV+C0xsNx8u7fTmGUCCjP5/Gj/9mxpcJcI9NirFr+mceWkPUHw4bY86fzl/qSI+l1TW6h1HFU3KA==" /></div>
           <svg aria-hidden="true" class="octicon octicon-git-branch select-menu-item-icon" height="16" version="1.1" viewBox="0 0 10 16" width="10"><path d="M10 5c0-1.11-0.89-2-2-2s-2 0.89-2 2c0 0.73 0.41 1.38 1 1.72v0.3c-0.02 0.52-0.23 0.98-0.63 1.38s-0.86 0.61-1.38 0.63c-0.83 0.02-1.48 0.16-2 0.45V4.72c0.59-0.34 1-0.98 1-1.72 0-1.11-0.89-2-2-2S0 1.89 0 3c0 0.73 0.41 1.38 1 1.72v6.56C0.41 11.63 0 12.27 0 13c0 1.11 0.89 2 2 2s2-0.89 2-2c0-0.53-0.2-1-0.53-1.36 0.09-0.06 0.48-0.41 0.59-0.47 0.25-0.11 0.56-0.17 0.94-0.17 1.05-0.05 1.95-0.45 2.75-1.25s1.2-1.98 1.25-3.02h-0.02c0.61-0.36 1.02-1 1.02-1.73zM2 1.8c0.66 0 1.2 0.55 1.2 1.2s-0.55 1.2-1.2 1.2-1.2-0.55-1.2-1.2 0.55-1.2 1.2-1.2z m0 12.41c-0.66 0-1.2-0.55-1.2-1.2s0.55-1.2 1.2-1.2 1.2 0.55 1.2 1.2-0.55 1.2-1.2 1.2z m6-8c-0.66 0-1.2-0.55-1.2-1.2s0.55-1.2 1.2-1.2 1.2 0.55 1.2 1.2-0.55 1.2-1.2 1.2z"></path></svg>
             <div class="select-menu-item-text">
               <span class="select-menu-item-heading">Create branch: <span class="js-new-item-name"></span></span>
@@ -524,7 +524,7 @@
             </div>
             <input type="hidden" name="name" id="name" class="js-new-item-value">
             <input type="hidden" name="branch" id="branch" value="master">
-            <input type="hidden" name="path" id="path" value="about.md">
+            <input type="hidden" name="path" id="path" value="_posts/2016-5-20-Hello-World.md">
 </form>
       </div>
 
@@ -533,7 +533,7 @@
 
 
             <a class="select-menu-item js-navigation-item js-navigation-open "
-              href="/ioang/ioang.github.io/tree/v1.2.0/about.md"
+              href="/ioang/ioang.github.io/tree/v1.2.0/_posts/2016-5-20-Hello-World.md"
               data-name="v1.2.0"
               data-skip-pjax="true"
               rel="nofollow">
@@ -543,7 +543,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open "
-              href="/ioang/ioang.github.io/tree/v1.1.0/about.md"
+              href="/ioang/ioang.github.io/tree/v1.1.0/_posts/2016-5-20-Hello-World.md"
               data-name="v1.1.0"
               data-skip-pjax="true"
               rel="nofollow">
@@ -553,7 +553,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open "
-              href="/ioang/ioang.github.io/tree/v1.0.0/about.md"
+              href="/ioang/ioang.github.io/tree/v1.0.0/_posts/2016-5-20-Hello-World.md"
               data-name="v1.0.0"
               data-skip-pjax="true"
               rel="nofollow">
@@ -581,42 +581,35 @@
     <button aria-label="Copy file path to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button">Copy path</button>
   </div>
   <div class="breadcrumb js-zeroclipboard-target">
-    <span class="repo-root js-repo-root"><span class="js-path-segment"><a href="/ioang/ioang.github.io"><span>ioang.github.io</span></a></span></span><span class="separator">/</span><strong class="final-path">about.md</strong>
+    <span class="repo-root js-repo-root"><span class="js-path-segment"><a href="/ioang/ioang.github.io"><span>ioang.github.io</span></a></span></span><span class="separator">/</span><span class="js-path-segment"><a href="/ioang/ioang.github.io/tree/master/_posts"><span>_posts</span></a></span><span class="separator">/</span><strong class="final-path">2016-5-20-Hello-World.md</strong>
   </div>
 </div>
 
 
   <div class="commit-tease">
       <span class="right">
-        <a class="commit-tease-sha" href="/ioang/ioang.github.io/commit/ffab6efc4793db73d179ced409511cd36af12807" data-pjax>
-          ffab6ef
+        <a class="commit-tease-sha" href="/ioang/ioang.github.io/commit/e3b5ca411df8f735d2251b22f4ca09278cf07a7c" data-pjax>
+          e3b5ca4
         </a>
-        <relative-time datetime="2016-05-20T14:48:53Z">May 20, 2016</relative-time>
+        <relative-time datetime="2016-05-20T14:49:35Z">May 20, 2016</relative-time>
       </span>
       <div>
         <img alt="@ioang" class="avatar" height="20" src="https://avatars2.githubusercontent.com/u/8879881?v=3&amp;s=40" width="20" />
         <a href="/ioang" class="user-mention" rel="author">ioang</a>
-          <a href="/ioang/ioang.github.io/commit/ffab6efc4793db73d179ced409511cd36af12807" class="message" data-pjax="true" title="Update about.md">Update about.md</a>
+          <a href="/ioang/ioang.github.io/commit/e3b5ca411df8f735d2251b22f4ca09278cf07a7c" class="message" data-pjax="true" title="Update 2016-5-20-Hello-World.md">Update 2016-5-20-Hello-World.md</a>
       </div>
 
     <div class="commit-tease-contributors">
       <button type="button" class="btn-link muted-link contributors-toggle" data-facebox="#blob_contributors_box">
-        <strong>2</strong>
-         contributors
+        <strong>1</strong>
+         contributor
       </button>
-          <a class="avatar-link tooltipped tooltipped-s" aria-label="barryclark" href="/ioang/ioang.github.io/commits/master/about.md?author=barryclark"><img alt="@barryclark" class="avatar" height="20" src="https://avatars0.githubusercontent.com/u/692762?v=3&amp;s=40" width="20" /> </a>
-    <a class="avatar-link tooltipped tooltipped-s" aria-label="ioang" href="/ioang/ioang.github.io/commits/master/about.md?author=ioang"><img alt="@ioang" class="avatar" height="20" src="https://avatars2.githubusercontent.com/u/8879881?v=3&amp;s=40" width="20" /> </a>
-
-
+      
     </div>
 
     <div id="blob_contributors_box" style="display:none">
       <h2 class="facebox-header" data-facebox-id="facebox-header">Users who have contributed to this file</h2>
       <ul class="facebox-user-list" data-facebox-id="facebox-description">
-          <li class="facebox-user-list-item">
-            <img alt="@barryclark" height="24" src="https://avatars2.githubusercontent.com/u/692762?v=3&amp;s=48" width="24" />
-            <a href="/barryclark">barryclark</a>
-          </li>
           <li class="facebox-user-list-item">
             <img alt="@ioang" height="24" src="https://avatars0.githubusercontent.com/u/8879881?v=3&amp;s=48" width="24" />
             <a href="/ioang">ioang</a>
@@ -630,9 +623,9 @@
   <div class="file-actions">
 
     <div class="btn-group">
-      <a href="/ioang/ioang.github.io/raw/master/about.md" class="btn btn-sm " id="raw-url">Raw</a>
-        <a href="/ioang/ioang.github.io/blame/master/about.md" class="btn btn-sm js-update-url-with-hash">Blame</a>
-      <a href="/ioang/ioang.github.io/commits/master/about.md" class="btn btn-sm " rel="nofollow">History</a>
+      <a href="/ioang/ioang.github.io/raw/master/_posts/2016-5-20-Hello-World.md" class="btn btn-sm " id="raw-url">Raw</a>
+        <a href="/ioang/ioang.github.io/blame/master/_posts/2016-5-20-Hello-World.md" class="btn btn-sm js-update-url-with-hash">Blame</a>
+      <a href="/ioang/ioang.github.io/commits/master/_posts/2016-5-20-Hello-World.md" class="btn btn-sm " rel="nofollow">History</a>
     </div>
 
         <a class="btn-octicon tooltipped tooltipped-nw"
@@ -642,12 +635,12 @@
             <svg aria-hidden="true" class="octicon octicon-device-desktop" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M15 2H1c-0.55 0-1 0.45-1 1v9c0 0.55 0.45 1 1 1h5.34c-0.25 0.61-0.86 1.39-2.34 2h8c-1.48-0.61-2.09-1.39-2.34-2h5.34c0.55 0 1-0.45 1-1V3c0-0.55-0.45-1-1-1z m0 9H1V3h14v8z"></path></svg>
         </a>
 
-        <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/ioang/ioang.github.io/edit/master/about.md" class="inline-form js-update-url-with-hash" data-form-nonce="34b46d33760a04a9d2c3c1aab8e6413d8e83fcec" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="6HNJgieyevyh1Kk7yBiv5Ly+9oUSDvvswPrv7YIysA8CRILNLx5syiuEZwc7ZVqr4N+ytPpR0H7ekMdljPUF8g==" /></div>
+        <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/ioang/ioang.github.io/edit/master/_posts/2016-5-20-Hello-World.md" class="inline-form js-update-url-with-hash" data-form-nonce="34b46d33760a04a9d2c3c1aab8e6413d8e83fcec" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="w5grZ4g5aJWC4466ptKskwH6rV4F+auxZ817eqaxNNAXYkh4qOESUGMUFRAwfvLjZc4a+x4o15+KzqI5IOpvyw==" /></div>
           <button class="btn-octicon tooltipped tooltipped-nw" type="submit"
             aria-label="Edit this file" data-hotkey="e" data-disable-with>
             <svg aria-hidden="true" class="octicon octicon-pencil" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M0 12v3h3l8-8-3-3L0 12z m3 2H1V12h1v1h1v1z m10.3-9.3l-1.3 1.3-3-3 1.3-1.3c0.39-0.39 1.02-0.39 1.41 0l1.59 1.59c0.39 0.39 0.39 1.02 0 1.41z"></path></svg>
           </button>
-</form>        <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/ioang/ioang.github.io/delete/master/about.md" class="inline-form" data-form-nonce="34b46d33760a04a9d2c3c1aab8e6413d8e83fcec" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="io+HM0ZzNTIWsjAoFE3joUPZD2Q2XBnaR3Mc0yNM8e/4euAbKx41ag73fTTnKb0+PuGegY/nSwTHvJbQU9CKag==" /></div>
+</form>        <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/ioang/ioang.github.io/delete/master/_posts/2016-5-20-Hello-World.md" class="inline-form" data-form-nonce="34b46d33760a04a9d2c3c1aab8e6413d8e83fcec" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="W7buuUwRBqKaNWnB4JFRvgvhIXz9Ao+w33JBZXq+cfada1Rvgpcl8syMe8edMwkwK7OaEJz6Dk4HqqwObfb7MQ==" /></div>
           <button class="btn-octicon btn-octicon-danger tooltipped tooltipped-nw" type="submit"
             aria-label="Delete this file" data-disable-with>
             <svg aria-hidden="true" class="octicon octicon-trashcan" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M10 2H8c0-0.55-0.45-1-1-1H4c-0.55 0-1 0.45-1 1H1c-0.55 0-1 0.45-1 1v1c0 0.55 0.45 1 1 1v9c0 0.55 0.45 1 1 1h7c0.55 0 1-0.45 1-1V5c0.55 0 1-0.45 1-1v-1c0-0.55-0.45-1-1-1z m-1 12H2V5h1v8h1V5h1v8h1V5h1v8h1V5h1v9z m1-10H1v-1h9v1z"></path></svg>
@@ -655,9 +648,9 @@
 </form>  </div>
 
   <div class="file-info">
-      17 lines (10 sloc)
+      7 lines (5 sloc)
       <span class="file-info-divider"></span>
-    498 Bytes
+    461 Bytes
   </div>
 </div>
 
@@ -669,30 +662,18 @@
   <th>layout</th>
 
   <th>title</th>
-
-  <th>permalink</th>
   </tr>
   </thead>
   <tbody>
   <tr>
-  <td><div>page</div></td>
+  <td><div>post</div></td>
 
-  <td><div>About</div></td>
-
-  <td><div>/about/</div></td>
+  <td><div>New site!</div></td>
   </tr>
   </tbody>
 </table>
 
-<p>I am an AHRC funded doctoral researcher at Cardiff University, studying Ancient Roman History.</p>
-
-<h3><a id="user-content-research-topic" class="anchor" href="#research-topic" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Research Topic</h3>
-
-<p>My research more specifically involves the study of representations of Easterners in Roman literature, with particular reference to the gendered nature of these representations. I additionally analyse the influence of military themes within these literary constructions.</p>
-
-<h3><a id="user-content-contact-me" class="anchor" href="#contact-me" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Contact me</h3>
-
-<p><a href="mailto:mcavoyim@cardiff.ac.uk">Email</a></p>
+<p>This site represents a newfound, twofold and quite procrastinory interest in learning some more technical skills and trying to sell myself as an Ancient Historian about to finish his PhD at the same time. I've therefore built this in <a href="https://jekyllrb.com/">Jekyll,</a> a way to build static sites in command line. Or rather, I forked an already working version called <a href="https://github.com/barryclark/jekyll-now">Jekyll Now</a>.</p>
 </article>
   </div>
 
@@ -731,7 +712,7 @@
       <svg aria-hidden="true" class="octicon octicon-mark-github" height="24" version="1.1" viewBox="0 0 16 16" width="24"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59 0.4 0.07 0.55-0.17 0.55-0.38 0-0.19-0.01-0.82-0.01-1.49-2.01 0.37-2.53-0.49-2.69-0.94-0.09-0.23-0.48-0.94-0.82-1.13-0.28-0.15-0.68-0.52-0.01-0.53 0.63-0.01 1.08 0.58 1.23 0.82 0.72 1.21 1.87 0.87 2.33 0.66 0.07-0.52 0.28-0.87 0.51-1.07-1.78-0.2-3.64-0.89-3.64-3.95 0-0.87 0.31-1.59 0.82-2.15-0.08-0.2-0.36-1.02 0.08-2.12 0 0 0.67-0.21 2.2 0.82 0.64-0.18 1.32-0.27 2-0.27 0.68 0 1.36 0.09 2 0.27 1.53-1.04 2.2-0.82 2.2-0.82 0.44 1.1 0.16 1.92 0.08 2.12 0.51 0.56 0.82 1.27 0.82 2.15 0 3.07-1.87 3.75-3.65 3.95 0.29 0.25 0.54 0.73 0.54 1.48 0 1.07-0.01 1.93-0.01 2.2 0 0.21 0.15 0.46 0.55 0.38C13.71 14.53 16 11.53 16 8 16 3.58 12.42 0 8 0z"></path></svg>
 </a>
     <ul class="site-footer-links">
-      <li>&copy; 2016 <span title="0.07765s from github-fe129-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+      <li>&copy; 2016 <span title="0.08116s from github-fe116-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
         <li><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
         <li><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
         <li><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>

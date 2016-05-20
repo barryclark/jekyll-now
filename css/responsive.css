@@ -1,0 +1,93 @@
+@media (max-width:1309px) {
+  #cover-photo {
+    max-width: 95%;
+  }
+
+  .header {
+    padding-top: 3.45em;
+  }
+
+  .posts {
+    font-size: 0.9em;
+  }
+
+  .footer {
+    font-size: 0.85em;
+  }
+}
+
+@media (max-width:1090px) {
+  #logo {
+    max-width: 100px;
+  }
+
+  #title {
+    font-size: 2.75em;
+    line-height: 35px;
+  }
+
+  .header {
+    padding-top: 3.85em;
+  }
+
+  .posts {
+    font-size: 0.85em;
+  }
+
+  .sidebar {
+    padding-left: 4em;
+  }
+
+  .content {
+    padding-right: 3em;
+  }
+
+  .footer {
+    font-size: 0.85em;
+  }
+}
+
+/**
+ * iPhone width
+ **/
+@media (max-width:640px) {
+  #logo {
+    max-width: 75px;
+  }
+
+  #cover-photo-container {
+    text-align: center;
+  }
+
+  #title {
+    font-size: 2.5em;
+  }
+
+  .sidebar {
+    transition: 1s;
+    margin-left: -100%;
+    z-index: 3;
+    width: 35%;
+    padding-left: 1.75em;
+  }
+
+  .content {
+    z-index: 1;
+    padding-right: 2em;
+  }
+
+  #sidebar-button {
+    display: block;
+    z-index: 2;
+  }
+}
+
+/*****************************************************************************/
+/*
+/* Sidebar responsive animations
+/*
+/*****************************************************************************/
+
+.slideIn {
+  margin-left: 0%;
+}
