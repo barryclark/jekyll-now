@@ -20,7 +20,7 @@ It's common to have a tag or archive page on a blog that display all tags and as
 reason this page is not automatically generated in Jekyll. 
 
 ### Solution
-I looked into several blogs, GitHub source codea poked into Stackflow for the solution.  Fortunately there is a work around.
+I looked into several blogs, GitHub source code and poked into Stackflow for the solution.  Fortunately there is a work around.
 Here are the steps to add tag in every post and generate tag page:
 
 Add *tags.html* page in root directory: This page displays tag names for every tag on the site in sorted order. Every tag name is hyperlinked to the site which contains of the tag name. 
