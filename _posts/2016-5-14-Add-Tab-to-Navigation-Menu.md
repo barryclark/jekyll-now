@@ -27,9 +27,12 @@ Here are the steps to add tag in every post and generate tag page:
 
 Get the tag name for every tag on the site and set them to the `site_tags` variable:
 
-```sh
+    {% raw %}    
     {% capture site_tags %}{% for tag in site.tags %}
-```
+    {{ tag | first }}{% unless forloop.last %},{% endunless %}
+    {% endfor %}{% endcapture %}
+    {% endraw %}
+    
 
 *tag_words* is a sorted array of the tag names:
 
