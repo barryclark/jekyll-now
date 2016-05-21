@@ -21,17 +21,16 @@ reason this page is not automatically generated in Jekyll.
 
 ### Solution
 I looked into several blogs, GitHub source code, Stackflow for the solution.  Fortunately there is a work around.
-
 Here are the steps to add tag in every post and generate tag page:
 
 **Add** *tags.html* **page in root directory:** 
 
 Get the tag name for every tag on the site and set them to the `site_tags` variable:
-```
-    {% capture site_tags %}{% for tag in site.tags %}
-    {{ tag | first }}{% unless forloop.last %},{% endunless %}
-    {% endfor %}{% endcapture %}
-```
+```````
+{% capture site_tags %}{% for tag in site.tags %}
+{{ tag | first }}{% unless forloop.last %},{% endunless %}
+{% endfor %}{% endcapture %}
+``````
 
 *tag_words* is a sorted array of the tag names:
 
