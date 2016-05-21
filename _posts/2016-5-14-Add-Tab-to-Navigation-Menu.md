@@ -102,9 +102,7 @@ to the `site_tags` variable. -->
 {% endraw %}
 ```
 
-5. Build the project. Jekyll in Github does not require explicitly build. One push commit changes would trigger page build. 
-You should be able to see newly added tag.html page at: *http://www.your_site.com/tags*
-
+5. Build the project. Jekyll in Github does not require explicitly build. One push commit changes would trigger page build. You should be able to see newly added tag.html page at: *http://www.your_site.com/tags*
 Tags page of my blog is here [http://www.maggie98choy.com/tags/](http://www.maggie98choy.com/tags/)
 
 
