@@ -26,10 +26,10 @@ Examining files in *_layout* folder, I found *default.html* contains of `<nav>` 
 
 ```
 {% raw %}
-<nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
-          </nav>
+  <nav>
+    <a href="{{ site.baseurl }}/">Blog</a>
+    <a href="{{ site.baseurl }}/about">About</a>
+  </nav>
 {% endraw %}
 ```
 
@@ -37,7 +37,7 @@ Examining files in *_layout* folder, I found *default.html* contains of `<nav>` 
 as simple as adding an extra line in `<navi>` section in *default.html*.
 
 ```
-<a href="{{ site.baseurl }}/tags">Tags</a>
+    <a href="{{ site.baseurl }}/tags">Tags</a>
 ```
 
 After recompiling, you can see *Tags* is put on navigation menu.
