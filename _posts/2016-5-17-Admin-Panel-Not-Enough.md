@@ -12,8 +12,9 @@ Oh yeah sure you are right. But just please stop for a second and think are you 
 
 Yes, thank you, I know that I am very smart indeed.
 
-After some research of the admin panel, I have found a file manager plugin that allowed file upload to a media folder of the website. 
+<!--break-->
 
+After some research of the admin panel, I have found a file manager plugin that allowed file upload to a media folder of the website. 
 
 The root path used for all of the uploads is `"/uploads"` and I have no chance to upload file in another path. But as it usually happens I realized that the file upload root is just hard coded in the `PHP` configuration file.
 
