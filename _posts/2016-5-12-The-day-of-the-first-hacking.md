@@ -17,6 +17,8 @@ We get the following result:
 
 Whoozay!!! Seems like this query is vulnerable to SQL Injection attack. Now we must determine type of attack we can use for injection.
 
+<!--more-->
+
 ###  Adding the 'always true statement'
 
 url: `search/?' or '1'='1`
