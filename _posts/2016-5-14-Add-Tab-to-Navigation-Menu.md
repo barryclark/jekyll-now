@@ -20,10 +20,10 @@ It's common to have a tag or archive page on a blog that display all tags and as
 reason this page is not automatically generated in Jekyll. 
 
 ### Solution
-I looked into several blogs, GitHub source code, Stackflow for the solution.  Fortunately there is a work around.
+I looked into several blogs, GitHub source codea poked into Stackflow for the solution.  Fortunately there is a work around.
 Here are the steps to add tag in every post and generate tag page:
 
-**Add** *tags.html* **page in root directory:** 
+1. Add *tags.html* page in root directory: This page displays tag names for every tag on the site in sorted order. Every tag name is hyperlinked to the site which contains of the tag name. 
 
 ```
 {% raw %}
@@ -76,12 +76,35 @@ to the `site_tags` variable. -->
 
 ```
 
-**Edit** *CSS*: I choose [Wouter Beeftink's CSS style](http://codepen.io/wbeeftink/pen/dIaDH).
+2. Edit *CSS*: I choose [Wouter Beeftink's CSS style](http://codepen.io/wbeeftink/pen/dIaDH).
 
-**Edit** *post.html* :
+3. Edit *post.html* : Add this code to *post.html*. This piece of code lists tags name in every tag on the site and hyperlinks tags name on the site to tags page.
 
+```
+  {% raw %}
+    <ul class="tags">
+      {% for tag in page.tags %}
+    <li><a href="/tags#{{ tag }}" class="tag">{{ tag }}</a></li>
+  {% endfor %}
+</ul>
+  {% endraw %}
+```
 
-**Add tag to post:** This tag variable inside each post's YAML Front matter.
+4. Add tag to post: This tag variable inside each post's *YAML Front matter*.
+
+```
+{% raw %}
+  tags:
+  - Web Scraping
+  - Scrapy
+  - Python
+  - JSON
+{% endraw %}
+```
+
+5. Build the project. Jekyll in Github does not require explicitly build. One push commit changes would trigger page build. 
+You should be able to see newly added tag.html page at:
+(http://www.maggie98choy.com/tags/)
 
 
 
