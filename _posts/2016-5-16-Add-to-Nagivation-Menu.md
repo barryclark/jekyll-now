@@ -9,7 +9,6 @@ tags:
 
 Previously, I have added [Tags page](http://www.maggie98choy.com/tags/) in my blog which is powered by Jekyll in GitHub. You 
 can find how I added Tags page in this [blog](http://www.maggie98choy.com/Add-Tab-to-Navigation-Menu/). Next thing I wanted to do was to put it on navigation menu.
-put this on navigation menu.
 
 Before adding the new item, my blog had two items in navigation menu:
 
