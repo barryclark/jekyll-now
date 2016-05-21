@@ -1,7 +1,7 @@
 ---
 layout: post
-title:
-tags:How to Add to Nagivation Menu
+title: How to Add to Nagivation Menu
+tags:
 - Jekyll
 - Navigation menu
 - YAML
