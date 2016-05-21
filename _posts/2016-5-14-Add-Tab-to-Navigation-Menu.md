@@ -24,6 +24,7 @@ I looked into several blogs, GitHub source code and poked into Stackflow for the
 Here are the steps to add tag in every post and generate tag page:
 
 Add *tags.html* page in root directory: This page displays tag names for every tag on the site in sorted order. Every tag name is hyperlinked to the site which contains of the tag name. 
+
 ```
 {% raw %}
 ---
@@ -78,6 +79,7 @@ to the `site_tags` variable. -->
 Edit *CSS*: I choose [Wouter Beeftink's CSS style](http://codepen.io/wbeeftink/pen/dIaDH).
 
 Edit *post.html* : Add this code to *post.html*. This piece of code lists tags name in every tag on the site and hyperlinks tags name on the site to tags page.
+
 ```
   {% raw %}
     <ul class="tags">
@@ -89,6 +91,7 @@ Edit *post.html* : Add this code to *post.html*. This piece of code lists tags n
 ```
 
 Add tag to post: Add tag variable inside each post's *YAML Front matter*.
+
 ```
 {% raw %}
   tags:
