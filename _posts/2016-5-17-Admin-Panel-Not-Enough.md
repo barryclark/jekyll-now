@@ -12,7 +12,7 @@ Oh yeah sure you are right. But just please stop for a second and think are you 
 
 Yes, thank you, I know that I am very smart indeed.
 
-<!--break-->
+<!--more-->
 
 After some research of the admin panel, I have found a file manager plugin that allowed file upload to a media folder of the website. 
 
