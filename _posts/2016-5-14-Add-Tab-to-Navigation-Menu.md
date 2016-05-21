@@ -24,6 +24,7 @@ I looked into several blogs, GitHub source code, Stackflow for the solution.  Fo
 Here are the steps to add tag in every post and generate tag page:
 
 **Add** *tags.html* **page in root directory:** 
+
 ```
 {% raw %}
 ---
@@ -72,6 +73,7 @@ to the `site_tags` variable. -->
   {% endunless %}{% endfor %}
 </div>
 {% endraw %}
+
 ```
 
 **Edit** *CSS*: I choose [Wouter Beeftink's CSS style](http://codepen.io/wbeeftink/pen/dIaDH).
