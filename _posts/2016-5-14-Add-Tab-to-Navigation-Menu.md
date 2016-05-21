@@ -10,8 +10,8 @@ tags:
 - GitHub
 published: true
 ---
-123
-I start to blog using Jekyll that hosted in GitHub. I immediately love Jekyll as soon as I created my first blog with it.
+
+I am using Jekyll that hosted in GitHub for blogging. I immediately love Jekyll as soon as I created my first blog with it.
 It is so simple yet provide pretty much most of the features I need for technical project blogging. But as I moved further I 
 found that GitHub disable plugin when creating blog with Jekyll.
 
@@ -37,41 +37,6 @@ Get the tag name for every tag on the site and set them to the `site_tags` varia
     {% assign tag_words = site_tags | split:',' | sort %}
 </pre></code>
 
-List of all tags:
-<pre><code>
-    <ul class="tags">
-    
-    {% for item in (0..site.tags.size) %}{% unless forloop.last %}
-    {% capture this_word %}{{ tag_words[item] }}{% endcapture %}
-    <li>
-      <a href="#{{ this_word | cgi_escape }}" class="tag">{{ this_word }}
-        <span>({{ site.tags[this_word].size }})</span>
-      </a>
-    </li>
-     {% endunless %}{% endfor %}
-    </ul>
-</pre></code>    
-
-Posts by Tag:
-<pre><code>
-    <div>
-    {% for item in (0..site.tags.size) %}{% unless forloop.last %}
-    {% capture this_word %}{{ tag_words[item] }}{% endcapture %}
-    <h2 id="{{ this_word | cgi_escape }}">{{ this_word }}</h2>
-    {% for post in site.tags[this_word] %}{% if post.title != null %}
-      <div>
-        <span style="float: left;">
-          <a href="{{ post.url }}">{{ post.title }}</a>
-        </span>
-        <span style="float: right;">
-          {{ post.date | date_to_string }}
-        </span>
-      </div>
-      <div style="clear: both;"></div>
-    {% endif %}{% endfor %}
-     {% endunless %}{% endfor %}
-    </div>
-</pre></code>
 
 **Edit** *CSS*: I choose [Wouter Beeftink's CSS style](http://codepen.io/wbeeftink/pen/dIaDH).
 
