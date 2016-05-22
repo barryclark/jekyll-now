@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Review - New BCS Products
+title: Review - New BCW Products
 category: review
 featured: commanderlt.png
 tags: [ccg, review, games, accessories, BCW]
