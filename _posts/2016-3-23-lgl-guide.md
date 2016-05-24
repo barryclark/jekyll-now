@@ -222,7 +222,7 @@ cd ~/homologyLGL/
 #copy edge.colors file into filename color_file
 cp homology_algorithm.edge.colors color_file
 
-java -jar ~lgl.1.D3/Java imageMaker.jar 800 800 homology.lgl
+java -jar ~/lgl.1.D3/Java/imageMaker.jar 800 800 homology.lgl
 ```
 ##### Conclusion
 
