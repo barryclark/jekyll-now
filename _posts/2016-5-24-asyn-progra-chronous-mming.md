@@ -7,7 +7,7 @@ title: Asyn program chronous mming
 You can leave this post alone and don't bother. 
 
 Still here? OK, let's dive in. To explain my understanding of asynchronous programming, I have decided to write a whole post in an asynchronous manner (like the title).  
-OK, I know what you think an another blog post about asynchronous bla-bla-bla. OK, you got me, this isn't that kind of <s>movie<s> blog post, I am not going to waste your time and explain asynchronous programming, there are dozens of good materials you can find on the net.
+OK, I know what you think an another blog post about asynchronous bla-bla-bla. OK, you got me, this isn't that kind of <s>movie</s> blog post, I am not going to waste your time and explain asynchronous programming, there are dozens of good materials you can find on the net.
 
 You know me. Today I woke up and felt that today will be the day of asynchronous programming. Then I got notified about the "Your coffee is ready, my lord" event and scheduled the event handler to the thread pool. After a few context switches I finally drank my coffee, went to work and woke up all in one OS time slice and started  writing this post.
 
