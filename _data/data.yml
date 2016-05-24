@@ -11,32 +11,32 @@
   url: http://thecube.gr
   category_gr: Coworking space
   category_en: Coworking space
-  location_gr: Αθήνα, Ελλάδα
-  location_en: Athens, Greece
+  location_gr: Αθήνα, Αττική, Ελλάδα
+  location_en: Athens, Attica, Greece
   
 - company_gr: My Sunshine
   company_en: My Sunshine
   url: http://www.mysunshine.gr
   category_gr: Είδη εγκυμοσύνης και παιδικά προϊόντα
   category_en: Maternity and baby products
-  location_gr: Αθήνα, Ελλάδα
-  location_en: Athens, Greece
+  location_gr: Αθήνα, Αττική, Ελλάδα
+  location_en: Athens, Attica, Greece
 
 - company_gr: KEEN Organic Living
   company_en: KEEN Organic Living
   url: http://k33n.gr
   category_gr: Παιδικά ενδύματα
   category_en: Children's apparel
-  location_gr: Αθήνα, Ελλάδα
-  location_en: Athens, Greece
+  location_gr: Αθήνα, Αττική, Ελλάδα
+  location_en: Athens, Attica, Greece
 
 - company_gr: GourmetGR
   company_en: GourmetGR
   url: http://www.gourmetgr.com
   category_gr: Καφές, σοκολάτα, τσάι και άλλα τρόφιμα
   category_en: Coffee, chocolate, tea and other Greek foods
-  location_gr: Αθήνα, Ελλάδα
-  location_en: Athens, Greece
+  location_gr: Αθήνα, Αττική, Ελλάδα
+  location_en: Athens, Attica, Greece
 
 - company_gr: Ταβέρνα Άγγελος
   company_en: Aggelos Tavern
@@ -67,24 +67,24 @@
   url: http://www.tsourapa.com.gr
   category_gr: Έπιπλα
   category_en: Furniture
-  location_gr: Αθήνα, Ελλάδα
-  location_en: Athens, Greece
+  location_gr: Αθήνα, Αττική, Ελλάδα
+  location_en: Athens, Attica, Greece
 
 - company_gr: Order Optix
   company_en: Order Optix
   url: http://orderoptix.gr
   category_gr: Φακοί επαφής
   category_en: Contact lenses
-  location_gr: Πάτρα, Ελλάδα
-  location_en: Patras, Greece
+  location_gr: Πάτρα, Αχαΐα, Ελλάδα
+  location_en: Patras, Achaia, Greece
   
 - company_gr: Pointer.gr
   company_en: Pointer.gr
   url: https://www.pointer.gr
   category_gr: Φιλοξενία ιστοσελίδων, ονόματα χώρου
   category_en: Web hosting and domain name provider
-  location_gr: Θεσσαλονίκη, Ελλάδα
-  location_en: Thessaloniki, Greece
+  location_gr: Θεσσαλονίκη, Μακεδονία, Ελλάδα
+  location_en: Thessaloniki, Macedonia, Greece
 
 - company_gr: Papaki.gr
   company_en: Papaki.gr
@@ -99,8 +99,8 @@
   url: https://easy.gr
   category_gr: Τηλεφωνία, Internet domains και φιλοξενία ιστοσελίδων
   category_en: Telephony, Web hosting and domain provider
-  location_gr: Αθήνα, Ελλάδα
-  location_en: Athens, Greece
+  location_gr: Αθήνα, Αττική, Ελλάδα
+  location_en: Athens, Attica, Greece
 
 - company_gr: allVoIP
   company_en: allVoIP
@@ -123,56 +123,64 @@
   url: http://www.digitfort.gr
   category_gr: Συναγερμοί και συστήματα ασφαλείας
   category_en: Home security
-  location_gr: Αθήνα, Ελλάδα
-  location_en: Athens, Greece
+  location_gr: Αθήνα, Αττική, Ελλάδα
+  location_en: Athens, Attica, Greece
 
 - company_gr: Fit.gr
   company_en: Fit.gr
   url: http://www.fit.gr
   category_gr: Συμπληρώματα διατροφής
   category_en: Food supplements
-  location_gr: Αθήνα, Ελλάδα
-  location_en: Athens, Greece
+  location_gr: Αθήνα, Αττική, Ελλάδα
+  location_en: Athens, Attica, Greece
   
 - company_gr: Buy.gr
   company_en: Buy.gr
   url: https://www.buy.gr
   category_gr: Οικιακές συσκευές
   category_en: Home appliances
-  location_gr: Θεσσαλονίκη, Ελλάδα
-  location_en: Thessaloniki, Greece
+  location_gr: Θεσσαλονίκη, Μακεδονία, Ελλάδα
+  location_en: Thessaloniki, Macedonia, Greece
 
 - company_gr: Athera
   company_en: Athera
   url: http://atheragi.com
   category_gr: Geospatial Information
   category_en: Geospatial Information
-  location_gr: Θεσσαλονίκη, Ελλάδα
-  location_en: Thessaloniki, Greece
+  location_gr: Θεσσαλονίκη, Μακεδονία, Ελλάδα
+  location_en: Thessaloniki, Macedonia, Greece
 
 - company_gr: Carner
   company_en: Carnet
   url: http://carner.gr
   category_gr: Αξεσουάρ αυτοκινήτου
   category_en: Car accessories
-  location_gr: Θεσσαλονίκη, Ελλάδα
-  location_en: Thessaloniki, Greece
+  location_gr: Θεσσαλονίκη, Μακεδονία, Ελλάδα
+  location_en: Thessaloniki, Macedonia, Greece
+
+- company_gr: Πέτρος Κασαπίδης
+  company_en: Petros Kasapides
+  url: 
+  category_gr: Οδηγός ταξί, 6946591591, petroskasapidis@gmail.com
+  category_en: Taxi cab driver, 6946591591, petroskasapidis@gmail.com
+  location_gr: Θεσσαλονίκη, Μακεδονία, Ελλάδα
+  location_en: Thessaloniki, Macedonia, Greece
   
 - company_gr: Κίνηση και Λειτουργία
   company_en: Movement and Function
   url: http://www.movementandfunction.gr
   category_gr: Κέντρο φυσικοθεραπείας
   category_en: Physiotherapy center
-  location_gr: Θεσσαλονίκη, Ελλάδα
-  location_en: Thessaloniki, Greece
+  location_gr: Θεσσαλονίκη, Μακεδονία, Ελλάδα
+  location_en: Thessaloniki, Macedonia, Greece
 
 - company_gr: Οδοντογλυφίδα
   company_en: Odontoglyfida
   url: https://www.facebook.com/Odontoglyfida/
   category_gr: Ταχυφαγείο
   category_en: Greek fast food
-  location_gr: Θεσσαλονίκη, Ελλάδα
-  location_en: Thessaloniki, Greece
+  location_gr: Θεσσαλονίκη, Μακεδονία, Ελλάδα
+  location_en: Thessaloniki, Macedonia, Greece
 
 - company_gr: Kopa3ka
   company_en: Kopa3ka
@@ -191,12 +199,12 @@
   location_en: Larisa, Greece
  
 - company_gr: ΕΛΤΑ Πρακτορείο Παγκρατίου
-  company_en: ELTA shop
+  company_en: ELTA shop at Pagkrati
   url: https://www.facebook.com/eltapagrati/
   category_gr: Ταχυδρομείο
   category_en: Post Office
-  location_gr: Αθήνα, Αττική
-  location_en: Athens, Attica
+  location_gr: Αθήνα, Αττική, Ελλάδα
+  location_en: Athens, Attica, Greece
 
 - company_gr: Φαρμακείο Χατζηδάκη Καλλιόπη – Χατζάκης Μιχαήλ
   company_en: Hersonissos Pharmacy
@@ -235,24 +243,24 @@
   url: http://www.e-orl.gr
   category_gr: ΩτοΡινοΛαρυγγολόγος
   category_en: Ear Nose Throat doctor
-  location_gr: Αθήνα, Ελλάδα
-  location_en: Athens, Greece
+  location_gr: Αθήνα, Αττική, Ελλάδα
+  location_en: Athens, Attica, Greece
 
 - company_gr: Medical Dent
   company_en: Medical Dent
   url: http://medicaldent.gr/
   category_gr: Οδοντιατρείο
   category_en: Dentist
-  location_gr: Αθήνα, Ελλάδα
-  location_en: Athens, Greece
+  location_gr: Αθήνα, Αττική, Ελλάδα
+  location_en: Athens, Attica, Greece
 
 - company_gr: Teddywear
   company_en: Teddywear
   url: https://www.facebook.com/teddywear.gr
   category_gr: Παιδικά ενδύματα και υποδύματα
   category_en: Children's apparel and shoes
-  location_gr: Θεσσαλονίκη, Ελλάδα
-  location_en: Thessaloniki, Greece
+  location_gr: Θεσσαλονίκη, Μακεδονία, Ελλάδα
+  location_en: Thessaloniki, Macedonia, Greece
 
 - company_gr: Directshop
   company_en: Directshop
@@ -323,8 +331,8 @@
   url: http://deltahacker.gr
   category_gr: Ελληνικό ηλεκτρονικό περιοδικό για υπολογιστές και hacking
   category_en: Greek e-magazine for computers and hacking
-  location_gr: Θεσσαλονίκη, Ελλάδα
-  location_en: Thessaloniki, Greece
+  location_gr: Θεσσαλονίκη, Μακεδονία, Ελλάδα
+  location_en: Thessaloniki, Macedonia, Greece
   
 - company_gr: Pistacia Natura
   company_en: Pistacia Natura
