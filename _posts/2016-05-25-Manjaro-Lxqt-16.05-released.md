@@ -11,7 +11,7 @@ LXQt is one of the lighter desktops (written in QT5 and based on Openbox) for th
 Latest Manjaro-Tools (0.11.6) and stable repositories were used to create the ISO files.
 The 32 bit version is CD-sized and needs 300 MB for installation with Calamares.
 
-# Main programs
+## Main programs
 
 * kernel 4.4.10 LTS, Manjaro settings manager, sddm, plymouth, octopi, compton, plank (64bit)
 * pcmanfm-qt, gimp, lximage-qt
@@ -26,7 +26,7 @@ The 32 bit version is CD-sized and needs 300 MB for installation with Calamares.
 
 This release comes with our advanced graphical installer Calamares as well as our CLI-installer.
 
-##Notes
+## Notes
 
 Great effort has been made to avoid:
 
@@ -46,10 +46,3 @@ Other tools, themes and icons are available in the **manjaro-lxqt repository** (
 
 * [Download](https://sourceforge.net/projects/manjarolinux/files/community/LXQT/2016.05/)
 * [Forum Post](https://forum.manjaro.org/t/stable-manjaro-lxqt-ice-16-05-released/1804)
-
-
-
-
-
-
-
