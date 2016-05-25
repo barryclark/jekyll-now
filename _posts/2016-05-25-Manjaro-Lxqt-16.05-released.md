@@ -5,7 +5,7 @@ title: Manjaro Lxqt "Ice" 16.05 released
 
 We are happy to announce a maintenance release of the latest Manjaro-Lxqt Community edition
 
-<img src="https://manjaro.github.io/images/manjaro-lxqt-ice.jpg">
+<img src="https://manjaro.github.io/images/manjaro-lxqt-16.05.jpg">
 
 LXQt is one of the lighter desktops (written in QT5 and based on Openbox) for those who seek speed or have older computers with limited resources, but is still very complete.
 Latest Manjaro-Tools (0.11.6) and stable repositories were used to create the ISO files.
