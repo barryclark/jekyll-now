@@ -42,30 +42,25 @@ After trying to clear the things out, I would like to share a code that will hel
 ```c#
 public static async void Run<T>(Func<T> work, Action<T> uiUpdate) where T : class
 {
-    AggregateException workExceptions = null;
-
-    await Task.Run(() =>
+    // Here you can show loading screen
+    try
     {
-        return work();
-
-    }).ContinueWith((r) =>
+        var result = await Task.Run(work);
+        if(result != null)
+        {
+            uiUpdate?.Invoke(result);
+        }
+    } catch(Exception exc)
     {
-        if(r.Exception == null)
-        {
-            if(r.Result != null)
-            {
-                uiUpdate?.Invoke(r.Result);
-            }
-        }
-        else
-        {
-            workExceptions = r.Exception;
-        }
-    }, TaskScheduler.FromCurrentSynchronizationContext());
+        // Here you can show error message screen
+    }
+    // Here you can hid loading screen
 }
 ```
 
-If you have a close look at the code above, you'll notice that in my assumption your service call will return a result that will be used in UI thread for rendering. Also I have used the `TaskScheduler.FromCurrentSynchronizationContext()` construct in-order to properly update the UI (as you know you may only update UI controls from the foreground thread that has created the control).
+If you have a close look at the code above, you'll notice that in my assumption your service call will return a result that will be used in UI thread for rendering.
+
+P.S. As you know you may only update UI controls from the foreground thread that has created the control.
 
 That’s all folks. 
 
