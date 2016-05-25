@@ -7,9 +7,9 @@ tags: [video-games, deck-building, star realms, cthulu realms, white wizard game
 ---
 <img class="floatimageleft" src="/images/cthulurealms/realms1.png" alt="Cthulu Realms"/>A few days ago [White Wizard Games](http://www.whitewizardgames.com) provided me with a review code for the Android version of [Cthulu Realms](https://play.google.com/store/apps/details?id=com.whitewizardgames.cthulhurealms), the Lovecraftian re-theme of [Star Realms](https://play.google.com/store/apps/details?id=com.starrealms.starrealmsapp). Eager to give the game a shot, I immediately downloaded the game and dug in. If you've played Star Realms, there's nothing really new here gameplay wise, yet the amount of detail put into Cthulu Realms is truly impressive.
 
-![Cthulu Realms Screenshot](/images/cthulurealms/realms2.png)
-
 The app boasts the game features as the Star Realms app. Single player campaign, online play, vs AI, and pass-and-play. The level of polish is top notch, the music eerie and unsettling, the art a mix of comedy/horror. The interface is tight and smooth, never getting in the way of gameplay, and provides an overall satisfying experience.
+
+![Cthulu Realms Screenshot](/images/cthulurealms/realms2.png)
 
 For fans of Star Realms who are also into Lovecraft, Cthulu Realms is a no brainer. While I'm more partial to the Sci-Fi theme, I'll be keeping Cthulu Realms around for my kids, who really get a kick out of it.
 
