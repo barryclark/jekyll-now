@@ -60,7 +60,7 @@ public static async void Run<T>(Func<T> work, Action<T> uiUpdate) where T : clas
 
 If you have a close look at the code above, you'll notice that in my assumption your service call will return a result that will be used in UI thread for rendering.
 
-P.S. As you know you may only update UI controls from the foreground thread that has created the control.
+P.S. As you know you may only update UI controls from the foreground thread that has created the control, it means that you should call this helper function from that thread.
 
 That’s all folks. 
 
