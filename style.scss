@@ -158,10 +158,6 @@ img {
   padding: 20px 0;
   border-bottom: 1px solid $lightGray;
   
-  //background: url(images/sakura.jpg) no-repeat center center;
-  //background-size: cover;
-  //color: #fff;
-
   @include mobile {
     text-align: center;
   }
