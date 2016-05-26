@@ -160,7 +160,8 @@ img {
   
   background: url(images/sakura.jpg) no-repeat center center;
   background-size: cover;
-
+  color: #fff;
+  
   @include mobile {
     text-align: center;
   }
