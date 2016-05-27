@@ -23,6 +23,27 @@ Gmail和Allo里的smart reply针对的场景是泛聊，也就是唠嗑，而wit
 
 下面我介绍如何利用wit.ai来构建天气预报chatbot。里面会细讲wit.ai的整体思路以及里面的各种关键概念。
 
+# stories
+可以使用不同的story来生成新的story
+
+# entities
+# actions
+# understanding
+
+
+
+# api.ai的特别之处
+和wit.ai一样，在意图构建时可以触发action。此action可以要求一些输入参数。api.ai为每个输入参数丢失时设定触发一个新的action，利用此action来获取此输入参数。在多个参数丢失时，也可以定义各参数对应的actions的触发顺序。微软的LUIS也是这么做的。
+
+> 只有在所有输入参数都获取到时此意图绑定的那个action才会被触发。
+
+
+# LUIS的特别之处
+* Entity可以定义最多10个子entities。
+* 最多支持10个entities。
+* 利用active learning来产生一些需要用户手动标注的语句，使得把标注后的语句加入到原始训练预料里可以最大限度地优化现有模型。
+* 对中文的支持较好
+> When you "train" a model, LUIS generalizes from the examples you have labeled, and develops code to recognize the relevant intents and entities in the future. Internally, LUIS uses logistic regression classifiers to determine intents, and conditional random fields (CRFs) to determine the entities. 
 
 #专家系统相对于半个世纪前有什么变化？
 
