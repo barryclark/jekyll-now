@@ -85,7 +85,7 @@ He called them [Self Contained Systems](http://scs-architecture.org/vs-ms.html) 
 
 It was a lot of content to take in, and due to the fact that he presented content from several whole-day workshops he has in his portfolio, none of the topics were presented into too much depth. If you want to get an idea of what was presented feel free to watch the presentations below.
 
-- https://www.infoq.com/presentations/web-development-techniques
-- https://www.infoq.com/presentations/rest-misconceptions
-- https://www.infoq.com/presentations/Breaking-the-Monolith
-- https://www.infoq.com/presentations/Nodejs-Asynchronous-IO-for-Fun-and-Profit
+- [Web development Techniques](https://www.infoq.com/presentations/web-development-techniques)
+- [Rest Misconceptions](https://www.infoq.com/presentations/rest-misconceptions)
+- [Breaking the Monolith](https://www.infoq.com/presentations/Breaking-the-Monolith)
+- [NodeJS Async I/O](https://www.infoq.com/presentations/Nodejs-Asynchronous-IO-for-Fun-and-Profit)
