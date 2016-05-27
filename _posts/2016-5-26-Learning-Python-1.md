@@ -56,6 +56,7 @@ object. Let's see how the code look like to do this.
 ```
 
 Output:
+
 ```
   one
   2
