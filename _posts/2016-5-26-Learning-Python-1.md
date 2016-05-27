@@ -10,7 +10,7 @@ tags:
 published: true
 ---
 
-In this post I am going to talk about *pickle*. *pickle* is to be eaten, in Python *pickle* is for data serializing and 
+In this post I am going to talk about *pickle*. *Pickle* is to be eaten, in Python *pickle* is for data serializing and 
 deserializing Python's data object. Object in this case could be a variable, instance of a class, dictionaries, tuple and etc.
 Pickling is the process to convert data object into character streams. Before writing object into file, *pickle* serialize the 
 object before writing it to a file. For deserializing data stream from file, *unpickle* can be used to convert data steam to 
