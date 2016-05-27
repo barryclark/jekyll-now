@@ -55,6 +55,17 @@ object. Let's see how the code look like to do this.
     print item
 ```
 
+Output:
+```
+  one
+  2
+  3
+  four
+  5
+```
+
+
+
 One thing worth to note is that *pickle* has an optimized cousin, *cpickle*. *Cpickle* is writen in C, it is speed is 1000 times faster than *pickle*. *Cpickle* does not support subclassing of *pickler()* and *unpickler()*. Other than these, interfaces of the 2 modules are nearly the same. 
 
 
