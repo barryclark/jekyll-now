@@ -39,12 +39,12 @@ Note that Port will not show if device is not connected. Also if you do not see 
 
 Now lets try loading this sketch on our device.
 
-![IDE Load Blink]({{ site.baseurl }}/images/iot/loadblink.png)
+![IDE Load Blink]({{ site.baseurl }}/images/iot/p2/loadblink.png)
 
 After this code loaded, NodeMCU blue LED will start blinking with delay that we set in the code.
 While this is successful test we can agree blinking LED is not very exciting. 
 
-![MCU Blink]({{ site.baseurl }}/images/iot/mcublink.jpg)
+![MCU Blink]({{ site.baseurl }}/images/iot/p2/mcublink.jpg)
 
 Lets try something more interesting like connect NodeMCU to WiFi and send remote commands to this device. Will make 2 endpoints to turn our LED On/Off on URL command. We can use one of examples provided with ESP8266 extensions, open `File > Eamples > ESP8266WebServer` select `HelloServer`. This is a simple HTTP sever example code to setup our commands. Here is a full source code:
 
@@ -162,7 +162,7 @@ void ledOff() {
 
 Open serial monitor window `Tools > Serial Monitor` and upload this code to NodeMCU, you will see load progress. If you doing this first time after this load we need ot restart NodeMCU device by disconnect power/unplug MCU. After upload the server will start on device. The Monitor window will print a welcome message along with IP address that we can use to send command to our new IoT device.
 
-![IDE Serial monitor]({{ site.baseurl }}/images/iot/mculog.png)
+![IDE Serial monitor]({{ site.baseurl }}/images/iot/p2/mculog.png)
 
 Open browser and type URL `http://192.168.1.12/on` will turn LED light up with blue light. Similar URL `http://192.168.1.12/off` will switch LED off.
 
