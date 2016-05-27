@@ -5,7 +5,7 @@ title: Journey into IoT Cloud With NodeMCU & Heroku - Part 2 - Setup for develop
 
 In Part 1 of this article we looked at preparation and IoT tool selection, getting all tools ready. In this post will set up our development environment and make NodeMCU alive with some code.
 
-I will use ready NodeMCU unit with mini USB connector to link this to my MAC. But before that we need to do osme configuration.
+I will use ready NodeMCU unit with mini USB connector to link this to my MAC. But before that we need to do some configuration.
 
 1. Install and configure Arduino IDE
 2. Add Arduino ESP8266 extension to IDE
@@ -54,8 +54,8 @@ Lets try something more interesting like connect NodeMCU to WiFi and send remote
 #include <ESP8266WebServer.h>
 #include <ESP8266mDNS.h>
 
-const char* ssid = "pr400m-7b3c59-1";
-const char* password = "dc97e31a00188";
+const char* ssid = "...<WiFi SSID Here>..";
+const char* password = "...<Password>";
 
 ESP8266WebServer server(80);
 
