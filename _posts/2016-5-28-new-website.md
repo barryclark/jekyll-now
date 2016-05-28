@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "New website "
+title: "New website"
 published: true
 ---
 
