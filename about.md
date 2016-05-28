@@ -2,14 +2,18 @@
 layout: page
 title: About
 permalink: /about/
+published: true
 ---
 
-Some information about you!
+I'm UX Designer living in Madrid. Currently working at The-cocktail, a consultancy with focus in digital products and services.
 
-### More Information
+### Experience
 
-A place to include any other types of information that you'd like to include about yourself.
+- The Cocktail (current)
+- People Who Global
+- Publicis Group
+- Chrysler Group
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[info@ardilamorin.com](mailto:info@ardilamorin.com)
