@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 ## UX Mad on Linkedin
 
@@ -26,5 +26,3 @@ That doesn't mean I gave up. I looked for other ways to stay in the loop and I d
 The more the merrier, so please join, introduce yourself, ask questions and make some friends (thats why i created it int he first place)
 If you want to join here is the link:
 [UX | MAD](https://www.linkedin.com/groups/4816589 "A group for User Experience Professionals")
-
-
