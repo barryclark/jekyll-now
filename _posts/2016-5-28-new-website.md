@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "New website"
+title: New website
 published: true
 ---
 
-It's live! and no, it's not done, it's perfect but it's live, and as any website it is a living thing that will continue to evolve and change in time.
+It's live! and no, it's not done, it's not perfect but it's live, and as any website it is a living thing that will continue to evolve and change in time.
 
 **Technology**
 
