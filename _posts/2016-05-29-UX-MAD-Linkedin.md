@@ -1,4 +1,6 @@
 ---
+layout: post
+title: UX Mad on Linkedin
 published: true
 ---
 ## UX Mad on Linkedin
