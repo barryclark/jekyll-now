@@ -1,10 +1,20 @@
 ---
 layout: post
-title: You're up and running!
+title: "New website "
+published: true
 ---
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+It's live! and no, it's not done, it's perfect but it's live, and as any website it is a living thing that will continue to evolve and change in time.
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
+**Technology**
+The first thing to stand out in this website is that it works using github pages, powered by Jekyll, a flat file website generator. You probalby have heard about flat file cms, and sttaic website generators and their advantages (simple, fast and easy to deploy).
 
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
+**What is different**
+- The first thing i wanted was an easy way to publish content (a blog!), and Jekyll Now offers just that.
+- A simple decoupled theming system that allows me to change the website design without affecting the content
+- Simple hosting, since i dont need much space, database or dynamc content I didnt wanted to deal with web hosting services and the monthly cost.
+
+**Whats next**
+I hope to publish blog posts about UX design, what i will explore and any resources I found could be useful for the rest of the community.
+
+So if you are reading this, let me know your thoughts.
