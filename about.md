@@ -9,9 +9,9 @@ I'm UX Designer living in Madrid. Currently working at The-cocktail, a consultan
 
 ### Experience
 
-- The Cocktail (current)
-- People Who Global
-- Publicis Group
+- [The-cocktail](https://the-cocktail.com/en "The-cocktail") (current)
+- [People Who Global](https://www.peoplewhoglobal.com)
+- [Publicis group](http://www.publicis.es)
 - Chrysler Group
 
 ### Contact me
