@@ -14,10 +14,10 @@ The first thing to stand out in this website is that it works using github pages
 
 - A simple way to publish content (a blog!), and Jekyll Now offers just that.
 - Decoupled theming system that allows me to change the website design without affecting the content
-- Simple hosting, since i dont need much space, database or dynamc content I didnt wanted to deal with web hosting services and the monthly cost.
+- Simple hosting, since I dont need much space, database or dynamc content I didnt want to deal with web hosting services and the monthly cost.
 
 **Whats next**
 
-I hope to publish blog posts about UX design, what i will explore and any resources I found could be useful for the rest of the community.
+I hope to publish blog posts about UX design, side projects and any resources I found could be useful for the rest of the community.
 
 So if you are reading this, let me know your thoughts.
