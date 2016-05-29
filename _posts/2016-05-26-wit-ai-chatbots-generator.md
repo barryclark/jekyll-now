@@ -117,10 +117,3 @@ Wit.ai会记录所有的调用日志，bot开发者可以查看log数据，然�
 [flow]: /images/bot_retrieval_flow.png
 
 [allo]: ../../../2016/05/19/breezedeus-google-allo-chat-smarter.html
-
-
-# References
-[^gpaper]: Oriol Vinyals, Quoc Le, [A Neural Conversational Model](http://arxiv.org/abs/1506.05869)，2015.
-[^lstm]: Colah, [Understanding LSTM Networks](http://colah.github.io/posts/2015-08-Understanding-LSTMs/)，2015.
-[^gmail]: Greg Corrado, [Computer, respond to this email](http://googleresearch.blogspot.jp/2015/11/computer-respond-to-this-email.html)，2015.
-[^allo]: Pranav Khaitan, [Chat Smarter with Allo](http://googleresearch.blogspot.jp/2016/05/chat-smarter-with-allo.html)，2016.
