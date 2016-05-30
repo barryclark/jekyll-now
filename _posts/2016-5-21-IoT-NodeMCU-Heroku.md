@@ -47,4 +47,4 @@ This toolkit cost approximate 5000JPY - $50 in [Akihabara](https://en.wikipedia.
 
 ![Engineer Toolkit]({{ site.baseurl }}/images/iot/toolkit2.png)
 
-At this point we have everything ready to build our Internet of Things device. In the next post will explore how to set up and connect NodeMCU with Mac and work on Aduino IDE, Part 2 - Connecting NodeMCU with IDE tools for development.
+At this point we have everything ready to build our Internet of Things device. In the next post will explore how to set up and connect NodeMCU with Mac and work on Aduino IDE, [Part 2](http://iandrosov.github.io/IoT-NodeMCU-Heroku-Part2/) - Connecting NodeMCU with IDE tools for development.

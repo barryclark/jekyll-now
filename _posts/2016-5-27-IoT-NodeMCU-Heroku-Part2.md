@@ -3,7 +3,7 @@ layout: post
 title: Journey into IoT Cloud With NodeMCU & Heroku - Part 2 - Setup for development!
 ---
 
-In Part 1 of this article we looked at preparation and IoT tool selection, getting all tools ready. In this post will set up our development environment and make NodeMCU alive with some code.
+In [Part 1](http://iandrosov.github.io/IoT-NodeMCU-Heroku/) of this article we looked at preparation and IoT tool selection, getting all tools ready. In this post will set up our development environment and make NodeMCU alive with some code.
 
 I will use ready NodeMCU unit with mini USB connector to link this to my MAC. But before that we need to do some configuration.
 
@@ -166,4 +166,4 @@ Open serial monitor window `Tools > Serial Monitor` and upload this code to Node
 
 Open browser and type URL `http://192.168.1.12/on` will turn LED light up with blue light. Similar URL `http://192.168.1.12/off` will switch LED off.
 
-Now lets summ our acomplishments, so far we set up our development system with Arduino IDE for NodeMCU, connected our IoT device and tested it, made connection to our WiFi notwork and started to control NodeMCU from our browser. Very good starting point for IoT development. In the next post will explore how to collect some data and send this to our Cloud API server  Part 3 - Sensors with NodeMCU.
+Now lets summ our acomplishments, so far we set up our development system with Arduino IDE for NodeMCU, connected our IoT device and tested it, made connection to our WiFi notwork and started to control NodeMCU from our browser. Very good starting point for IoT development. In the next post will explore how to collect some data and send this to our Cloud API server  [Part 3]() - Sensors with NodeMCU.
