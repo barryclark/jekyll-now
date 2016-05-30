@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Why Blurring an Image is Similar to Warming Your Coffee.
+title: Why Blurring an Image is Similar to Warming Your Coffee
 tags:
 - Mathematics
 - Python
