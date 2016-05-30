@@ -20,6 +20,7 @@ Another major change is the list of included applications. The Bspwm edition now
 <img src="https://manjaro.github.io/images/manjaro-bspwm-16.05-2.jpg">
 
 Other highlights of this release include:
+
 * interactive command line tool to configure bspwm
 * categorized applications menu based on dmenu and bash (**morc_menu**)
 * roxterm replacing urxvt as terminal
