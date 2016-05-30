@@ -35,6 +35,6 @@ Other highlights of this release include:
 
 ## Links
 
-* [Download](https://sourceforge.net/projects/manjarobspwmrespin/files/16.05/)
+* [Download](https://sourceforge.net/projects/manjarolinux/files/community/BspWM/2016.05/)
 * Videos: [mouse actions](https://www.youtube.com/watch?v=XRenP2xSBxE), [keyboard cotrols](https://www.youtube.com/watch?v=AUhhHrwbbrw), [euclid scripts](https://www.youtube.com/watch?v=WM1ZD5EC1pI)
 * [Manjaro Forums](https://forum.manjaro.org)
