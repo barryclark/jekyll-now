@@ -28,7 +28,7 @@ published: true
 
 ## Community and Support
 * **AJSlye** Maintainer Netrunner Edition
-* **Bernhard Landauer (oberon)** Maintainer Deepin, Fluxbox and i3 Editions, Packager
+* **Bernhard Landauer (oberon)** Maintainer Cinnamon, Deepin and i3 Editions, Packager
 * **Chrysostomus** Maintainer Bspwm Edition
 * **Esclapion** Maintainer LXQt Edition
 * **eugen-b** Community Support
@@ -36,7 +36,7 @@ published: true
 * **Holmes** Maintainer JWM Edition
 * **Ringo de Kroon** Community Support, IRC Manager
 * **shariebeth** Community Global Moderator
-* **Stefano Capitani (Ste74)** Maintainer Pantheon and Budgie Editions, Wiki Contributor, Founder Italian Community 
+* **Stefano Capitani (Ste74)** Maintainer Gnome, Budgie and Pantheon Editions, Wiki Contributor, Founder Italian Community 
 * **Strit** Torrent Maintainer
 * **Tomasz Przybył (FadeMind)** Community Support
 
