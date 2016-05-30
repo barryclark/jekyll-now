@@ -18,6 +18,8 @@ Another major change is the list of included applications. The Bspwm edition now
 
 **Thus** is included as a graphical installer, but we recommend using the **Command Line Installer** for the best experience.  
 
+<img src="https://manjaro.github.io/images/manjaro-bspwm-16.05-2.jpg">
+
 Other highlights of this release include:
 * interactive command line tool to configure bspwm
 * categorized applications menu based on dmenu and bash (**morc_menu**)
