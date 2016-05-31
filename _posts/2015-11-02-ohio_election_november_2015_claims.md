@@ -90,7 +90,7 @@ I received three (3) postcards and one (1) piece of paper stuffed in my door for
 ###### Endorsed by
 
 <div class="two-column">
-<ol type="1" >
+<ol type="1">
  <li>Leaders
  <ol type="a">
   <li>A.J. Wagner</li>
@@ -135,7 +135,7 @@ I received three (3) postcards and one (1) piece of paper stuffed in my door for
   <li>Pat Lynch</li>
   <li>Daria Dillard Stone</li>
  </ol>
- <li>Labor
+ </li><li>Labor
  <ol type="a">
   <li>Dayton Fraternal Order of Police, Lodge 44</li>
   <li>Teamsters Local Union No 957</li>
@@ -193,4 +193,4 @@ I received one (1) postcard for this candidate.
 
 The postcard has a paragraph saying:
 
-> Scott Sliver (sly-ver) is an independent candidate. He closed his business 25 years ago to do community service. He's responsible for feeding nearly 1,000 families in the Miami Valley every month. He listens, he's compassionate, he takes action. It's time to elect a creative problem solver who stays awake at night thinking how to stop hunger, fight addiction, and make our community a better place. He brings people together. He *grows* hope. He's what Dayton needs
+> Scott Sliver (sly-ver) is an independent candidate. He closed his business 25 years ago to do community service. He's responsible for feeding nearly 1,000 families in the Miami Valley every month. He listens, he's compassionate, he takes action. It's time to elect a creative problem solver who stays awake at night thinking how to stop hunger, fight addiction, and make our community a better place. He brings people together. He *grows* hope. He's what Dayton needs.
