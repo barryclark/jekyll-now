@@ -7,6 +7,7 @@ tags:
 - Python
 - JSON
 published: true
+category: Code
 ---
 
 I am learning scraping content on the web. There are quite a number of open-source web scraping tools like Scrapy, Selenium, BeautifulSoap, Google Web Scraper etc. A guide to [web scraping tools](http://www.garethjames.net/a-guide-to-web-scrapping-tools/) gave nice comparision between Web Scrapers. I am learning Python therefore I choose to use Scrapy, 100% written in Python and has a lot of built-in functionality.
