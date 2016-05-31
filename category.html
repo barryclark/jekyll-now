@@ -1,13 +1,64 @@
+
+Skip to content
+This repository
+
+    Pull requests
+    Issues
+    Gist
+
+    @maggie98choy
+
+2
+3
+
+    1
+
+bradonomics/bradonomics.github.io
+Code
+Issues 0
+Pull requests 0
+Wiki
+Pulse
+Graphs
+bradonomics.github.io/_layouts/category.html
+5b17eec on Dec 12, 2015
+@bradonomics bradonomics Added "archive" to category archive titles
+33 lines (31 sloc) 931 Bytes
 ---
 layout: default
+type: archive
 ---
-<h1>Categories</h1>
 
-{% unless page.content == '' %}
-  <p>{{ page.content }}</p>
-{% endunless %}
+<div class="archive-description">
+  <h1 class="archive-title">{{ page.category }} Archive</h1>
+  {{ content }}
+</div>
 
-{% for post in site.categories.[page.category] %}
-  <h2><a href=""></a></h2>
-  <p></p>
-{% endfor %}
+<div class="wrap">
+{% if site.categories[page.category] %}
+  <div class="group-year">
+    {% for post in site.categories[page.category] %}
+      {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+      {% unless year == this_year %}
+        {% assign year = this_year %}
+        <p>{{ year }}</p>
+      {% endunless %}
+      <article>
+        <h3><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h3>
+        <time>
+          <span class="month">{{ post.date | date: "%b" }}</span>
+          <span class="day">{{ post.date | date: "%d" }}</span>
+          <span class="year">{{ post.date | date: "%Y" }}</span>
+        </time>
+      </article>
+    {% endfor %}
+  </div>
+{% else %}
+  <p>There are no posts in this category.</p>
+{% endif %}
+</div>
+
+    Status API Training Shop Blog About 
+
+    © 2016 GitHub, Inc. Terms Privacy Security Contact Help 
+
