@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Increasing the Wage
-tags: [politics, math, money
+tags: [politics, math, money]
 ---
 
 Just a table on what the effect of increasing a wage would be. It is assuming that it takes one hour to make one loaf of bread.
