@@ -81,6 +81,10 @@ body {
    border-left-color: crimson; 
 }
 
+.archive-title {
+  text-transform: capitalize;
+}
+
 .container {
   margin: 0 auto;
   max-width: 740px;
