@@ -1,0 +1,13 @@
+---
+layout: default
+---
+<h1>Simple Category Pages with vanilla Jekyll</h1>
+
+{% unless page.content == '' %}
+  <p>{{ page.content }}</p>
+{% endunless %}
+
+{% for post in site.categories.[page.category] %}
+  <h2><a href=""></a></h2>
+  <p></p>
+{% endfor %}
