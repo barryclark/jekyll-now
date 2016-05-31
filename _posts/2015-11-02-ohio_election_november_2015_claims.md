@@ -89,7 +89,7 @@ I received three (3) postcards and one (1) piece of paper stuffed in my door for
 
 ###### Endorsed by
 
-<div style="display: flex;"><div style="flex: 1;">
+<div class="two-column">
 <ol type="1" >
  <li>Leaders
  <ol type="a">
@@ -117,9 +117,6 @@ I received three (3) postcards and one (1) piece of paper stuffed in my door for
   <li>Rev John Paddock</li>
  </ol>
  </li>
-</ol>
-</div><div style="flex: 1;">
-<ol type="1" start="2">
  <li>Neighbors
  <ol type="a">
   <li>Beverly & Tony Henderson</li>
@@ -139,7 +136,7 @@ I received three (3) postcards and one (1) piece of paper stuffed in my door for
   <li>Daria Dillard Stone</li>
  </ol>
  <li>Labor
- <ol type="A">
+ <ol type="a">
   <li>Dayton Fraternal Order of Police, Lodge 44</li>
   <li>Teamsters Local Union No 957</li>
   <li>United Brotherhood of Carpenters Local Union 136</li>
@@ -147,7 +144,7 @@ I received three (3) postcards and one (1) piece of paper stuffed in my door for
   <li>Ironworkers Local 290</li>
  </ol>
  </li>
-</ol></div></div>
+</ol></div>
 
 ##### Matt Joseph
 
