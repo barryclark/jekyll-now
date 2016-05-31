@@ -7,6 +7,7 @@ tags:
 - CNAME
 - DNS
 - WHOIS
+category: Technical
 ---
 
 I'm trying to use my own domain for this blog. I researched into pricing and server availability of different DNS service providers. Considering company reputation and customer service I choosed AWS Route 53. Besides, AWS Route 53 connects user request to other AWS infrastructure like EC2 instances (which I am using now), Elastics Load Balancer, AWS S3 bucket. AWS Route 53 partnered with Gandi. So don't get surprised when you see Gandi's information showing in your WHOIS site. 
