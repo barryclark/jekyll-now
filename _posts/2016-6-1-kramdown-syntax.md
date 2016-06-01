@@ -107,6 +107,7 @@ that continues here
 // 这里仍然是 codeblock    
 
 > Fenced Code Blocks,可以指定语言类型,支持语法高亮
+
 ~~~c
 void test(void)
 {
