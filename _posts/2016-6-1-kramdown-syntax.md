@@ -168,3 +168,21 @@ recommended.
   following blank line and the EOB marker.
 
 ^
+*   First item
+
+    A second paragraph
+
+    * nested list
+
+    > blockquote
+
+*   Second item
+*   This is a list item.
+
+    The second para of the list item.
+^
+    A code block following the list item.
+    
+*
+        This⋅is⋅a⋅code⋅block⋅(indentation⋅needs⋅to⋅be⋅4(1)+4(1)
+        spaces⋅(tabs)).
