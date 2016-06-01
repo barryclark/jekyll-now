@@ -5,5 +5,6 @@ This⋅para⋅line⋅starts⋅at⋅the⋅first⋅column.⋅However,
 ⋅⋅⋅The⋅para⋅continues⋅here.
 
 ⋅⋅This⋅is⋅second⋅paragraph,⋅not⋅connected⋅to⋅the⋅above⋅one.⋅But⋅⋅
-with⋅a⋅hard⋅line⋅break.⋅\\
+with⋅a⋅hard⋅line⋅break.⋅    \\
+And⋅third⋅one.<br />
 And⋅third⋅one.
