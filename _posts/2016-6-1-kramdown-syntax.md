@@ -57,7 +57,8 @@ And A Header
 
 块引用
 ---
-
+注意换行的情况
+===
 
 > This is a blockquote.
 > what about this?
@@ -87,3 +88,18 @@ a blockquote.
 that continues here
 > and here
 > > and here.
+
+代码块
+---
+    #this is a block of code
+    int main(void)
+    {
+        exit(0);
+    }
+    
+    #these are two blocks
+    #include <stdio.h>
+    ^
+    #include <stdlib.h>
+    
+    
