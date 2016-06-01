@@ -91,15 +91,22 @@ that continues here
 
 代码块
 ---
-    #this is a block of code
+    // this is a block of code
+    #include <stdio.h>
+    #include <stdlib.h>
+^
+    // another block
     int main(void)
     {
         exit(0);
     }
     
-    #these are two blocks
-    #include <stdio.h>
-    ^
-    #include <stdlib.h>
+~~~c
+void test(void)
+{
+    prrintf("hello world\n");
+}
+~~~
+
     
     
