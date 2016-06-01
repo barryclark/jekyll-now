@@ -117,6 +117,8 @@ void test(void)
 
 列表 list
 ---
+有序列表指明的数字是无意义的,自动从1开始
+
 
 * kram
 + down
@@ -129,3 +131,40 @@ void test(void)
 2. down
 3. now
     
+* This is the first line. Since the first non-space characters appears in
+  column 3, all other indented lines have to be indented 2 spaces.
+However, one could be lazy and not indent a line but this is not
+recommended.
+*       This is the another item of the list. It uses a different number
+   of spaces for indentation which is okay but should generally be avoided.
+   * The list item marker is indented 3 spaces which is allowed but should
+     also be avoided and starts the third list item. Note that the lazy
+     line in the second list item may make you believe that this is a
+     sub-list which it isn't! So avoid being lazy!
+
+* This is the first list item bla blabla blabla blabla blabla blabla
+  blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla
+  blabla blabla blabla bla
+* This is the another item of the list. bla blabla blabla blabla blabla
+  blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla
+
+*   Using a tab to indent this line, the tab only counts as three spaces
+    and therefore the overall indentation is four spaces.
+
+   1.   The tab after the marker counts here as three spaces. Since the
+        indentation of the marker is three spaces and the marker itself
+        takes two characters, the overall indentation needed for the
+        following lines is eight spaces or two tabs.
+
+* kram
+
+* down
+* now
+
+* Not wrapped in a paragraph
+* Wrapped in a paragraph due to the following blank line.
+
+* Also wrapped in a paragraph due to the
+  following blank line and the EOB marker.
+
+^
