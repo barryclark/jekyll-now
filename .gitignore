@@ -8,3 +8,7 @@ Gemfile
 Gemfile.lock
 node_modules
 package.json
+*.tags
+.tags_sorted_by_file
+*.sublime-project
+github_pages.sublime-workspace
