@@ -183,6 +183,6 @@ recommended.
 ^
     A code block following the list item.
     
-*
+* 
         This⋅is⋅a⋅code⋅block⋅(indentation⋅needs⋅to⋅be⋅4(1)+4(1)
         spaces⋅(tabs)).
