@@ -3,7 +3,7 @@ layout: post
 title: Fewer Tamagotchis
 ---
 
-During the first episode of [Lady Dynamite](https://en.wikipedia.org/wiki/Lady_Dynamite), Maria Bamford suggests to her agent that she'd like to do for her next project is...less. She doesn't want to do movies or TV or even commercials. She'd like to, maybe, just sit on a park bench in her neighbourhood. That seems like less stress and pressure to her character. 
+During the first episode of [Lady Dynamite](https://en.wikipedia.org/wiki/Lady_Dynamite), Maria Bamford suggests to her agent that the thing she'd like to do for her next project is...less. She doesn't want to do movies or TV or even commercials. She'd like to, maybe, just sit on a park bench in her neighbourhood. That seems like less stress and pressure to her character. 
 
 This is how I feel about social media, chatting, apps, and connectivity lately. 
 
