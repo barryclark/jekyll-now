@@ -94,6 +94,7 @@ that continues here
 > 标准代码块, 需要缩进4个空格或1个tab
 
 > 顶格的^可以分割2块代码
+
     // this is a block of code
     #include <stdio.h>
     #include <stdlib.h>
@@ -103,7 +104,7 @@ that continues here
     {
         exit(0);
     }
-这里不是 codeblock    
+// 这里仍然是 codeblock    
 
 > Fenced Code Blocks,可以指定语言类型,支持语法高亮
 ~~~c
