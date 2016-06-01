@@ -6,10 +6,10 @@
 name: Code Cola
 
 # Short bio or description (displayed in the header)
-description: be a coder
+description:
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://avatars2.githubusercontent.com/u/13135891?v=3&s=460
+avatar: {{ site.baseurl }}/images/apeman.jpg
 
 #
 # Flags below are optional
