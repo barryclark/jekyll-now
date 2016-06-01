@@ -189,6 +189,7 @@ recommended.
 
 表格
 ---
+^
 
 |---
 | Default aligned | Left aligned | Center aligned | Right aligned
@@ -202,6 +203,7 @@ recommended.
 |===
 | Footer row
 
+^
 
 |-----------------+------------+-----------------+----------------|
 | Default aligned |Left aligned| Center aligned  | Right aligned  |
