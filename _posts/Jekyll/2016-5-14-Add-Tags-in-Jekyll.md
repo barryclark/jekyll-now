@@ -9,8 +9,6 @@ tags:
 - YAML
 - GitHub
 published: true
-categories: Jekyll
-resource: true
 ---
 
 I am using Jekyll that hosted in GitHub for blogging. I immediately love Jekyll as soon as I created my first blog with it.
