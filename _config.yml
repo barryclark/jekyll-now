@@ -54,6 +54,9 @@ baseurl: ""
 
 permalink: /:title/
 
+# Categorize posts
+category-list: [Code, Technical, Jekyll]
+
 # The release of Jekyll Now that you're using
 version: v1.2.0
 
