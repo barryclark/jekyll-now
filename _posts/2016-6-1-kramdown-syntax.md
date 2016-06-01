@@ -186,3 +186,32 @@ recommended.
 * 
         This⋅is⋅a⋅code⋅block⋅(indentation⋅needs⋅to⋅be⋅4(1)+4(1)
         spaces⋅(tabs)).
+
+表格
+---
+
+|---
+| Default aligned | Left aligned | Center aligned | Right aligned
+|-|:-|:-:|-:
+| First body part | Second cell | Third cell | fourth cell
+| Second line |foo | **strong** | baz
+| Third line |quux | baz | bar
+|---
+| Second body
+| 2 line
+|===
+| Footer row
+
+
+|-----------------+------------+-----------------+----------------|
+| Default aligned |Left aligned| Center aligned  | Right aligned  |
+|-----------------|:-----------|:---------------:|---------------:|
+| First body part |Second cell | Third cell      | fourth cell    |
+| Second line     |foo         | **strong**      | baz            |
+| Third line      |quux        | baz             | bar            |
+|-----------------+------------+-----------------+----------------|
+| Second body     |            |                 |                |
+| 2 line          |            |                 |                |
+|=================+============+=================+================|
+| Footer row      |            |                 |                |
+|-----------------+------------+-----------------+----------------|
