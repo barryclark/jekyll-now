@@ -13,7 +13,7 @@ Maybe I'm just getting old. Maybe everyone is having fun without me. Maybe my pa
 
 This is not me turning into someone who doesn't like computers or technology anymore. I don't wish to go back to any sort of previous version of things. Online communication has always kind of sucked. If anything, I'd just like some streamlining. I think I just want one feed. I want one place to chat. I want one place to see new things. 
 
-Recently on You Chose Poorly, a podcast I do with Mikey Llorin, I talked about the proliferation of chat apps in my life. Here was the list of apps I have used to chat with people in the last month:   
+Recently on [You Chose Poorly](http://sawyerpaul.com/Fewer-Tamagotchis/), a podcast I do with Mikey Llorin, I talked about the proliferation of chat apps in my life. Here was the list of apps I have used to chat with people in the last month:   
 
 * iMessage/SMS
 * Facebook Messenger
