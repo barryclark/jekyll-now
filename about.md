@@ -8,7 +8,7 @@ I’m Sawyer Paul, and I’m a novel writer, layout designer, and podcaster livi
 
 You can most often find me on [Twitter](https://twitter.com/_sawyerpaul), but I'll occassionally check in at [Facebook](https://www.facebook.com/ksawyerpaul). 
 
-Photos I take can be found on [Flickr](https://www.flickr.com/photos/ksp_me) and [Instagram](https://www.instagram.com/insta_sawyer_paul/). 
+Photos I take can be found on [Flickr](https://www.flickr.com/photos/ksp_me). 
 
 # Novels
 
@@ -20,7 +20,7 @@ My first novel, **No Chinook**, about a young man town between his current boyfr
 
 # Layout Design
 
-I work with publishers and authors to make their work look great. I am currently full-time with JUMP Math, an amazing organization that helps teachers and students love math. I also work with the University of Toronto, The MUNK School of Global Affairs, York University, Lakehead University, and others on academic publications. I am currently taking on new work. [Shoot me an email](mailto:sp@sawyerpaul.com) to get started.
+I work with publishers and authors to make their work look great. I am currently full-time with JUMP Math, an amazing organization that helps teachers and students love math. I also work with the University of Toronto, The MUNK School of Global Affairs, York University, Lakehead University, and others on academic publications. I am currently taking on new work. Take a peek at [my Behance page](https://www.behance.net/ksp_me) for a few samples, then [shoot me an email](mailto:sp@sawyerpaul.com) to get started.
 
 # Podcasts
 
