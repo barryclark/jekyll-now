@@ -18,6 +18,18 @@ This⋅para⋅line⋅starts⋅at⋅the⋅first⋅column.⋅However,
 with⋅a⋅hard⋅line⋅break.⋅    
   And⋅third⋅one.<br />And⋅forth⋅one.\\The last.
 
+主题的两种表达方法:
+1.Setext header. 
+
+First level header
+==================
+
+Second level header
+------
+
+   Other first level header
+=
+
 This is a normal
 paragraph.
 
@@ -29,13 +41,14 @@ And a paragraph
 
 And A Header
 ------------
-
+2.atx style 
 # First level header
 
 ### Third level header    ###
 
 ## Second level header ######
 
+\#必须顶格,主题字符和最后一个# 之间要有空格,下面都是错误的
     # First level header
 
 ###Third level header    ###
