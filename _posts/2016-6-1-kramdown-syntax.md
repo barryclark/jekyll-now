@@ -54,3 +54,32 @@ And A Header
 ###Third level header    ###
 
     ## Second level header ######
+
+
+> This is a blockquote.
+>     on multiple lines
+that may be lazy.
+>
+> This is the second paragraph.
+
+> This is a paragraph.
+>
+> > A nested blockquote.
+>
+> ## Headers work
+>
+> * lists too
+>
+> and all other block-level elements
+
+> A code block:
+>
+>     ruby -e 'puts :works'
+
+> This is a paragraph inside
+a blockquote.
+>
+> > This is a nested paragraph
+that continues here
+> and here
+> > and here
