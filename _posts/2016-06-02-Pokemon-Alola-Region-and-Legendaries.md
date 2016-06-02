@@ -14,7 +14,7 @@ Pokémon Sun and Pokémon Moon take place in the Alola region, which centers aro
 
 There's more information on the new Legendary Pokémon, Solgaleo and Rowlet
 
-**Name: Solgaleo**
+**Name: Solgaleo**\\
 Category: Sunne Pokémon\\
 Height: 11′02″\\
 Weight: 507.1 lbs.\\
@@ -26,7 +26,7 @@ Honored as an emissary of the sun since ancient times, Solgaleo is referred to w
 <br/>
 <br/>
 
-**Name: Rowlet**
+**Name: Rowlet**\\
 Category: Moone Pokémon\\
 Height: 13′01″\\
 Weight: 264.6 lbs.\\
