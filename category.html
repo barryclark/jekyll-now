@@ -24,3 +24,23 @@ to the `site_tags` variable. -->
     </li>
   {% endunless %}{% endfor %}
 </ul>
+
+<!-- Posts by Category -->
+<div>
+  {% for item in (0..site.categories.size) %}{% unless forloop.last %}
+    {% capture this_word %}{{ category_words[item] }}{% endcapture %}
+    <h2 id="{{ this_word | cgi_escape }}">{{ this_word }}</h2>
+    {% for post in site.categories[this_word] %}{% if post.title != null %}
+      <div>
+        <span style="float: left;">
+          <a href="{{ post.url }}">{{ post.title }}</a>
+        </span>
+        <span style="float: right;">
+          {{ post.date | date_to_string }}
+        </span>
+      </div>
+      <div style="clear: both;"></div>
+    {% endif %}{% endfor %}
+  {% endunless %}{% endfor %}
+</div>
+
