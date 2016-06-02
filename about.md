@@ -15,7 +15,6 @@ This sites record the progress of my goal of becoming a Software Engineer.
 [maggie98choy@yahoo.com](mailto:maggie98choy@yahoo.com)
 
 You can also find me at:
-
 [GitHub:](https://github.com/{{ site.footer-links.github }})
 
 [LinkedIn:](https://www.linkedin.com/in/{{ site.footer-links.linkedin }})
