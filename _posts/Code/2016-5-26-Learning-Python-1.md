@@ -8,6 +8,8 @@ tags:
 - Pickle
 - UnPickle
 published: true
+categories:
+- Code
 ---
 
 In this post I am going to share what I learned about *pickle*. *Pickle* is to be eaten, in Python *pickle* is for data serializing and 

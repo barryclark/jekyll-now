@@ -5,6 +5,8 @@ tags:
 - Jekyll
 - Navigation menu
 - YAML
+categories:
+- Jekyll
 ---
 
 Previously, I have added [Tags page](http://www.maggie98choy.com/tags/) in my blog which is powered by Jekyll in GitHub. You 
