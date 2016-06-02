@@ -24,7 +24,6 @@ Ability: Full Metal Body
 Honored as an emissary of the sun since ancient times, Solgaleo is referred to with reverence as “the beast that devours the sun.” Solgaleo’s body holds a vast amount of energy, and it shines with light when it is active. It has a flowing mane with a remarkable resemblance to the sun. Its signature move is Sunsteel Strike, an attack that charges at an opponent with the force of a meteor, disregarding the target’s Ability. Solgaleo’s Ability is Full Metal Body, a new Ability that no previous Pokémon has had. With the Full Metal Body Ability, a Pokémon’s stats will not be lowered by the effects of an opponent’s moves or Ability.
 <br/>
 <br/>
-<br/>
 
 **Name: Rowlet**\\
 Category: Moone Pokémon\\
