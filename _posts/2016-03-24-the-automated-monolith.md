@@ -20,12 +20,12 @@ But what if you already have your system, and it's grown over the years? How do 
 We decided to look at the current painpoints and start with something that shows *immediate business results in a  reasonably short timeframe*. 
 
 ### Rough Idea
-The team responsible for this platform has to develop, maintain and run the system. A fair amount of their time went into deploying environments for internal clients and help them get up and running. This gets even trickier when different clients use an environment for testing simultanously. Setting up a test environment from scratch - build, deploy, test - takes 5 man days. That's the reality we tried to improve.
+The team responsible for this platform has to develop, maintain and run the system. A fair amount of their time went into deploying environments for internal clients and help them get up and running. This gets even trickier when different clients use an environment for testing simultaneously. Setting up a test environment from scratch - build, deploy, test - takes 5 man days. That's the reality we tried to improve.
 
-We wanted to have a one click deployment of our system per internal client directly onto Azure. Everything should be build from scratch, all the time and we wanted some automated testing in there as well. 
+We wanted to have a one click deployment of our system per internal client directly onto Azure. Everything should be built from scratch, all the time and we wanted some automated testing in there as well. 
 To make it more fun, we decided to fix our first go live date to 8 working weeks later by hosting a public [meetup](http://www.meetup.com/de-DE/Timisoara-Java-User-Group/events/228106103/) in Timisoara and present what we did! The pressure (or fun, depending on your viewpoint) was on...
 
-So time was an issue, we wanted to be fast to have something to work with. Meaning that we didn't spend much time in evaluating every little component we used but made sure we are flexible enough to change it easily - evolutionary refinement instead of initial perfection. 
+So time was an issue, we wanted to be fast to have something to work with. Meaning that we didn't spend much time in evaluating every little component we used but made sure we were flexible enough to change it easily - evolutionary refinement instead of initial perfection. 
 
 ### How
 Our guiding principles:
@@ -47,7 +47,7 @@ Main components we used:
 The flow:
 
 {:.center}
-![go.cd Flow]( /images/automated-monolith/automated_monolith_flow.jpg){:style="margin:auto"}
+[![go.cd Flow]( /images/automated-monolith/automated_monolith_flow.jpg)](http://dev.haufe.com/images/automated-monolith/automated_monolith_flow.jpg){:style="margin:auto"}
 
  Let's first have a quick look on how go.cd works:  
 Within go.cd you model your worklows using pipelines. Those pipelines contain stages which you use to run jobs which themselves contain tasks. Stages will run in order and if one fails, the pipeline will stop. Jobs will run in parallel, go.cd is taking care of that. 
@@ -154,3 +154,7 @@ Setting up a test environment now only takes 30 minutes, down from 5 days. And e
 We also have a solid base we can work with - and we have many ideas on how to take it further. More testing will be included soon, like more code- and security tests. We will include gates that only once the code has a certain quality or has improved in a certain way after the last test, the pipeline will proceed. We will not stop at automating the test environment, but look at our other environments as well. 
 
 All the steps necessary we have in code, which makes it repeatable and fast. There is no dependency to anything. This enables our internal clients to setup their personal environments in a fast and bulletproof way on their own. 
+
+---
+
+Update: You can find slides of our talk [here](http://www.slideshare.net/HaufeDev/the-automated-monolith)
