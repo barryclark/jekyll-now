@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: object oriented programming
 permalink: /about/
 ---
 
