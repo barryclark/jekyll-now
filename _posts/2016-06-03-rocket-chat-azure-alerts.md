@@ -23,6 +23,8 @@ I did a pull request with this guide on the rocket.chat official documentation a
 
 In order to do the necessary configuration in Rocket.Chat you need administrative rights.
 
+Just follow these steps:
+
 1. In Rocket.Chat go to "Administration"->"Integrations" and create "New Integration"
 2. Choose Incoming WebHook.
 3. Follow all instructions like Enable, give it a name, link to channel etc.
@@ -31,8 +33,10 @@ In order to do the necessary configuration in Rocket.Chat you need administrativ
 5. Go to the azure portal and on the specific resource you want to enable Alerts for follow the steps for enabling Alerts and set the previously copied URL as the webhook URL for the Azure Alert. You can follow the steps shown here: https://azure.microsoft.com/en-us/documentation/articles/insights-webhooks-alerts/
 
 
-Paste this in javascript in the "Script" textarea on Rocket.Chat webhook settings
+Paste this in javascript in the "Script" textarea on Rocket.Chat webhook settings:
+
 ```javascript
+
 class Script {
   process_incoming_request({ request }) {
     // console is a global helper to improve debug
