@@ -14,6 +14,7 @@ Object oriented programming is designed using object that interact with each oth
 #Methods and Variables#
 A _method_ is a procedure associated with a class. It defines the  behavior of objects created and are designed to handle actual values supplied to the object.
 A _variable_ is the data field containing the information used to define objects.They are accessible from any function in the class file. It is not constant and changes depending on the need.
-
+#polymorphism#
+Its the ability to process _objects_ diffrently depending on _data types or class_. This allows for creation of one function that can apply to all _subclasses_ of the _super class_.
 
  
