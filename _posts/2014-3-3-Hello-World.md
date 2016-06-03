@@ -5,8 +5,8 @@ published: true
 ---
 
 #Object oriented programming#
-It is programming pattern that is based on the concept of **"objects"** which may contain data in form of attributes and _code_ in form of _procedures_ mostly known as **methods**.It is widely used in some programming languages like _Java,C++ and C#_ because it make programs more understandable and flexible.
-Unlike procedural programs,an **OOP** program considers the _object_ in the program, the _functions_  the object has to perfom and the _variables_ that should be associated with it.
+<p>It is programming pattern that is based on the concept of **"objects"** which may contain data in form of attributes and _code_ in form of _procedures_ mostly known as **methods**.It is widely used in some programming languages like _Java,C++ and C#_ because it make programs more understandable and flexible.</p>
+<p>Unlike procedural programs,an **OOP** program considers the _object_ in the program, the _functions_  the object has to perfom and the _variables_ that should be associated with it.</p>
 #classess and objects#
 A _class_ is procedure of building an object and hence an _object_ is an instance of a class. This objects sometimes correspond to things found in the real world.
 #Inheritance#
