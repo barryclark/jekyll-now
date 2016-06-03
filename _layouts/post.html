@@ -16,7 +16,7 @@ layout: default
     <meta itemprop="keywords" content="{{ page.tags | join: ',' }}" />
     <p class="post-meta">
     {% if page.tags != empty %}
-    Tagi:
+    Tags:
     {% for tag in page.tags %}
     <a href="{{ site.baseurl }}/tags/#{{ tag }}" title="{{ tag }}">{{ tag }}</a>{% unless page.tags.last == tag %}; {% endunless %}
     {% endfor %}
