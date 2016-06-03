@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Alternative formulas for the standardized mean difference
-date: May 5, 2016
+date: June 3, 2016
 tags: [meta-analysis, effect-sizes, distribution-theory]
 ---
 
