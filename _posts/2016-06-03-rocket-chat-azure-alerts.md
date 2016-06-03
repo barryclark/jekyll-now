@@ -128,7 +128,7 @@ The schema of the incoming message as of the official [Azure Alert Webhook Docs]
 The result is that you will see messages in your specified channel or direct message looking something like this:
 
 {:.center}
-![Rocket.Chat Azure Alert]({{ site.url }}/images/rocket-chat-integrations/rocket_azure_alerts.jpg){:style="margin:auto"}
+![Rocket.Chat Azure Alert]({{ site.url }}/images/rocket-chat-integrations/rocket_azure_alerts.JPG){:style="margin:auto"}
 
 You see Azure and a cloud icon there because when configuring the Rocket.Chat incoming webhook I specified Azure as the Alias and i set :cloud: as the Emoji. Both of these settings are optional.
 
