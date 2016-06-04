@@ -10,13 +10,13 @@ Delaware's Government Information Center put together this extremely helpful lis
 
 Project presentations will be held at the end of the hackathon. All teams should submit their presentations to rharrington@1313innovation.com by 4:30. The presentation order is as follows:
 
-| Team | Challenge |
-|------|-----------|
-| Will Code for Food | Rolling Revolution |
-| HEP Cats | Horn Program in Entrepreneurship |
-| Team Downtown Visions | Downtown Visions |
-| Enterprise INC. | Delaware Small Business Development Center |
-| Food Truck Findr| Rolling Revolution | 
-| Visionaries | Downtown Visions |
-| Team Crusaders | Delaware GOP |
-| Team Toaster | Delaware GOP |
+| Team | | Challenge |
+|------|-|-----------|
+| Will Code for Food | | Rolling Revolution |
+| HEP Cats | | Horn Program in Entrepreneurship |
+| Team Downtown Visions | | Downtown Visions |
+| Enterprise INC. | | Delaware Small Business Development Center |
+| Food Truck Findr| | Rolling Revolution | 
+| Visionaries | | Downtown Visions |
+| Team Crusaders | | Delaware GOP |
+| Team Toaster | | Delaware GOP |
