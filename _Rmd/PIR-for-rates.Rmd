@@ -1,0 +1,63 @@
+---
+layout: post
+title: PIR and transformed PIR estimates of incidence
+date: June 3, 2016
+tags: [behavioral-observation]
+---
+
+```{r}
+library(ARPobservation)
+set.seed(20160603) 
+
+sim_PIR <- function(interval_length, incidence, session_length, shape, samples, seed = NULL) {
+  if (!is.null(seed)) set.seed(seed)
+  PIR_dat <- r_PIR(n = samples, mu = 0, lambda = 60 / incidence,
+                   stream_length = session_length * 60,
+                   F_event = F_const(),
+                   F_interim = F_gam(shape = shape),
+                   interval_length = interval_length,
+                   summarize = TRUE)
+  pct_error_raw <- 1 - PIR_dat * 60 / interval_length / incidence
+  pct_error_trans <- 1 + log(pmax(interval_length / 60 / session_length, 1 - PIR_dat)) * 60 / interval_length / incidence
+  100 * c(raw = mean(pct_error_raw), poisson = mean(pct_error_trans))
+}
+
+interval_length <- c(5, 10, 30)
+incidence <- seq(1, 5, 0.25)
+session_length <- 15
+shape <- c(0.25, 0.5, 1, 1.5, 2)
+
+params <- expand.grid(interval_length = interval_length, 
+                      incidence = incidence, 
+                      session_length = session_length, 
+                      shape = shape)
+params$samples <- 5000
+nrow(params)
+head(params)
+
+source_obj <- ls()
+
+library(plyr)
+library(Pusto)
+cluster <- start_parallel(source_obj = source_obj, libraries = "ARPobservation")
+
+system.time(results <- mdply(params, .fun = sim_PIR, .parallel = TRUE))
+
+stopCluster(cluster)
+
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+
+results %>% 
+  gather("transformation","pct_error", raw, poisson) %>%
+  mutate(shape = factor(shape)) %>%
+  ggplot(aes(incidence, pct_error, color = shape)) + 
+  geom_line() + 
+  facet_grid(transformation ~ interval_length, labeller = "label_both") + 
+  labs(x = "True rate per minute", y = "Percent error",
+       color = "Inter-response dispersion") + 
+  theme_bw()
+
+```
+
