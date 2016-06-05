@@ -18,7 +18,7 @@ Overall, there are eight main groups of tools available view Developer Tools: <b
 **Inspecting the DOM and styles**<br />
 The **Elements** panel lets you see everything in one DOM tree, and allows inspection and on-the-fly editing of DOM elements. You will often visit the Elements tabs when you need to identify the HTML snippet for some aspect of the page. For example, you may be curious if an image has an HTML id attribute and what the value is.<br />
 **Working with the Console**<br />
-The JavaScript Console provides two primary functions for developers testing web pages and applications. It is a place to:<br />
+The **JavaScript Console** provides two primary functions for developers testing web pages and applications. It is a place to:<br />
 
 1.Log diagnostic information in the development process.<br />
 2.A shell prompt which can be used to interact with the document and DevTools.<br />
