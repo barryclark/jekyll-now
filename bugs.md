@@ -5,4 +5,4 @@ permalink: /bugs/
 published: true
 ---
 
-<iframe width="420" height="315" src="https://waffle.io/manjaro/general-issues" frameborder="0" allowfullscreen></iframe>
+<iframe src="https://waffle.io/manjaro/general-issues" width="640" height="480" style="display:block; margin: 0 auto;">&nbsp;</iframe>
