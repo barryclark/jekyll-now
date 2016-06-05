@@ -22,26 +22,26 @@ Both 32 and 64 bit versions of Manjaro are available in the following flavours (
 
 ## XFCE
 
-  - [manjaro-xfce 16.06 (64 bit)](http://sourceforge.net/projects/manjarolinux/files/release/16.06-rc2/xfce/manjaro-xfce-16.06-rc2-x86_64.iso) [SIG](http://sourceforge.net/projects/manjarolinux/files/release/16.06-rc2/xfce/manjaro-xfce-16.06-rc2-x86_64.iso.sig)
-   `SHA1SUM: 8f90d118e58f57ecfe9cb33fb8efa5f30364c53d`
-  - [manjaro-xfce 16.06 (32 bit)](http://sourceforge.net/projects/manjarolinux/files/release/16.06-rc2/xfce/manjaro-xfce-16.06-rc2-i686.iso) [SIG](http://sourceforge.net/projects/manjarolinux/files/release/16.06-rc2/xfce/manjaro-xfce-16.06-rc2-i686.iso.sig)
-   `SHA1SUM: 84b9831f360a7dfb02f26d744e82cba3fdee16a2`
+  - [manjaro-xfce 16.06 (64 bit)](http://sourceforge.net/projects/manjarolinux/files/release/16.06/xfce/manjaro-xfce-16.06-x86_64.iso) [SIG](http://sourceforge.net/projects/manjarolinux/files/release/16.06/xfce/manjaro-xfce-16.06-x86_64.iso.sig)
+   `SHA1SUM: d2d93c99a51736afbf62971d07c65f8dfb03e7e7`
+  - [manjaro-xfce 16.06 (32 bit)](http://sourceforge.net/projects/manjarolinux/files/release/16.06/xfce/manjaro-xfce-16.06-i686.iso) [SIG](http://sourceforge.net/projects/manjarolinux/files/release/16.06/xfce/manjaro-xfce-16.06-i686.iso.sig)
+   `SHA1SUM: 2a70e08f943d9ecaf8d5bbe078bfa00fc6747595`
 
 ## KDE
 
-  - [manjaro-kde 16.06 (64 bit)](http://sourceforge.net/projects/manjarolinux/files/release/16.06-rc2/kde/manjaro-kde-16.06-rc2-x86_64.iso) [SIG](http://sourceforge.net/projects/manjarolinux/files/release/16.06-rc2/kde/manjaro-kde-16.06-rc2-x86_64.iso.sig)
-   `SHA1SUM: 7b0fd99598d3f858d5c96ae38c09be81c6c0b81c`
-  - [manjaro-kde 16.06 (32 bit)](http://sourceforge.net/projects/manjarolinux/files/release/16.06-rc2/kde/manjaro-kde-16.06-rc2-i686.iso) [SIG](http://sourceforge.net/projects/manjarolinux/files/release/16.06-rc2/kde/manjaro-kde-16.06-rc2-i686.iso.sig)
-   `SHA1SUM: faff4aa1d082ef7768394072de960c7fb4468cac`
+  - [manjaro-kde 16.06 (64 bit)](http://sourceforge.net/projects/manjarolinux/files/release/16.06/kde/manjaro-kde-16.06-x86_64.iso) [SIG](http://sourceforge.net/projects/manjarolinux/files/release/16.06/kde/manjaro-kde-16.06-x86_64.iso.sig)
+   `SHA1SUM: 1eeb9327ebca784d91cfb3bfa4f3e90449671354`
+  - [manjaro-kde 16.06 (32 bit)](http://sourceforge.net/projects/manjarolinux/files/release/16.06/kde/manjaro-kde-16.06-i686.iso) [SIG](http://sourceforge.net/projects/manjarolinux/files/release/16.06/kde/manjaro-kde-16.06-i686.iso.sig)
+   `SHA1SUM: 8750b1f5d8ea313be729eeb911ebcfc1e05829f0`
 
 ## Net-Edition
 
 The NET edition of Manjaro provides a base installation without a pre-installed display manager, desktop environment, or any desktop software applications. It allows you to build your own version of Manjaro from the ground up.
 
- - [manjaro-net 16.06 (64 bit)](http://sourceforge.net/projects/manjarolinux/files/release/16.06-rc2/netinstall/manjaro-net-16.06-rc2-x86_64.iso) [SIG](http://sourceforge.net/projects/manjarolinux/files/release/16.06-rc2/netinstall/manjaro-net-16.06-rc2-x86_64.iso.sig)
-   `SHA1SUM: 7671c6ffd86a9fce8c513a7b1d437582a946e68f`
- - [manjaro-net 16.06 (32 bit)](http://sourceforge.net/projects/manjarolinux/files/release/16.06-rc2/netinstall/manjaro-net-16.06-rc2-i686.iso) [SIG](http://sourceforge.net/projects/manjarolinux/files/release/16.06-rc2/netinstall/manjaro-net-16.06-rc2-i686.iso.sig)
-   `SHA1SUM: 39ce01c716843984b759f588b35602ee1c05b53a`
+ - [manjaro-net 16.06 (64 bit)](http://sourceforge.net/projects/manjarolinux/files/release/16.06/netinstall/manjaro-net-16.06-x86_64.iso) [SIG](http://sourceforge.net/projects/manjarolinux/files/release/16.06/netinstall/manjaro-net-16.06-x86_64.iso.sig)
+   `SHA1SUM: 919a452c416b4d8806cff1c5d0701d2407e653e1`
+ - [manjaro-net 16.06 (32 bit)](http://sourceforge.net/projects/manjarolinux/files/release/16.06/netinstall/manjaro-net-16.06-i686.iso) [SIG](http://sourceforge.net/projects/manjarolinux/files/release/16.06/netinstall/manjaro-net-16.06-i686.iso.sig)
+   `SHA1SUM: e6a70b745a3290c482131c9cf5b0ec148f0379aa`
 
 ### Other flavours
 
@@ -68,5 +68,5 @@ Please read the according chapter (from page 19 onwards) in our [Manjaro Beginne
 ```
 wget https://github.com/manjaro/packages-core/raw/master/manjaro-keyring/manjaro.gpg
 gpg --import manjaro.gpg
-gpg --verify manjaro-xfce-16.06-rc2-x86_64.iso.sig
+gpg --verify manjaro-xfce-16.06-x86_64.iso.sig
 ```
