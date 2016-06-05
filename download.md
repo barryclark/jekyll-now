@@ -61,7 +61,7 @@ Razor-QT and other window-managers are also available for installation from the 
 
 ## How to verify our install medias
 
-Please read the according chapter (from page 19 onwards) in our [Manjaro Beginners Guide](https://sourceforge.net/projects/manjarolinux/files/release/15.12/manjaro-15.12-documentation.pdf) on how to verify your downloaded install media. Beginning with our 16.06 release, we also provide gpg verifcation. Therefore you need to get the [developer signatures](https://github.com/manjaro/packages-core/raw/master/manjaro-keyring/manjaro.gpg) from Manjaro.
+Please read the according chapter (from page 19 onwards) in our [Manjaro Beginners Guide](https://sourceforge.net/projects/manjarolinux/files/release/16.06/manjaro-16.06-documentation.pdf) on how to verify your downloaded install media. Beginning with our 16.06 release, we also provide gpg verifcation. Therefore you need to get the [developer signatures](https://github.com/manjaro/packages-core/raw/master/manjaro-keyring/manjaro.gpg) from Manjaro.
 
 **Example:**
 
