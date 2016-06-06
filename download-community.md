@@ -32,9 +32,9 @@ Both 32 and 64 bit versions of Manjaro are available in the following flavours (
 
 ## Cinnamon
 
-  - **[manjaro-cinnamon 16.06 (64 bit)](hhttp://sourceforge.net/projects/manjarolinux/files/community/Cinnamon/16.06/x86_64/manjaro-cinnamon-16.06-x86_64.iso)**
+  - **[manjaro-cinnamon 16.06 (64 bit)](http://sourceforge.net/projects/manjarolinux/files/community/Cinnamon/16.06/x86_64/manjaro-cinnamon-16.06-x86_64.iso)**
    `SHA1SUM: 1f189e725adeebf7e90a0130922e06457b7e20aa`
-  - **[manjaro-cinnamon 16.06 (32 bit)](hhttp://sourceforge.net/projects/manjarolinux/files/community/Cinnamon/16.06/i686/manjaro-cinnamon-16.06-i686.iso)**
+  - **[manjaro-cinnamon 16.06 (32 bit)](http://sourceforge.net/projects/manjarolinux/files/community/Cinnamon/16.06/i686/manjaro-cinnamon-16.06-i686.iso)**
    `SHA1SUM: 1e04c6eab9f1c0cd3919557b4054302284b96064`
 
 ## Deepin
@@ -60,21 +60,21 @@ Both 32 and 64 bit versions of Manjaro are available in the following flavours (
 
 ## i3
 
-  - **[manjaro-i3 16.06 (64 bit)](hhttp://sourceforge.net/projects/manjarolinux/files/community/i3/16.06/manjaro-i3-16.06-x86_64.iso)**
+  - **[manjaro-i3 16.06 (64 bit)](http://sourceforge.net/projects/manjarolinux/files/community/i3/16.06/manjaro-i3-16.06-x86_64.iso)**
    `SHA1SUM: 89574b19ede8206313686f9f882623c857afde17`
   - **[manjaro-i3 16.06 (32 bit)](http://sourceforge.net/projects/manjarolinux/files/community/i3/16.06/manjaro-i3-16.06-i686.iso)**
    `SHA1SUM: e7c22693e70caad4303252d78c4ae96d37c1e4ee`
 
 ## JWM
 
-  - **[manjaro-jwm 16.04 (64 bit)](hhttp://sourceforge.net/projects/manjarolinux/files/community/JWM/2016.04/manjaro-jwm-community-16.04-x86_64-3416.iso)**
+  - **[manjaro-jwm 16.04 (64 bit)](http://sourceforge.net/projects/manjarolinux/files/community/JWM/2016.04/manjaro-jwm-community-16.04-x86_64-3416.iso)**
    `SHA1SUM: b6e31728dc49a9832436fe9b9631dc07188db112`
   - **[manjaro-i3 16.06 (32 bit)](http://sourceforge.net/projects/manjarolinux/files/community/JWM/2016.04/manjaro-jwm-community-16.04-i686-3416.iso)**
    `SHA1SUM: 2dbb1ba73d09052da2363d4d7ef5236e81bb3d58`
 
 ## Lxqt
 
-  - **[manjaro-lxqt 16.05 (64 bit)](hhttp://sourceforge.net/projects/manjarolinux/files/community/LXQT/2016.05/manjaro-lxqt-community-16.05-x86_64.iso)**
+  - **[manjaro-lxqt 16.05 (64 bit)](http://sourceforge.net/projects/manjarolinux/files/community/LXQT/2016.05/manjaro-lxqt-community-16.05-x86_64.iso)**
    `SHA1SUM: adddb57a7f32eebf6b179934712971f624a06059`
   - **[manjaro-lxqt 16.05 (32 bit)](http://sourceforge.net/projects/manjarolinux/files/community/LXQT/2016.05/manjaro-lxqt-community-16.05-i686.iso)**
    `SHA1SUM: 9fd7bb396cfb5884aa2a48175b3b2b55471108b3`
