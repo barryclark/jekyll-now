@@ -29,6 +29,11 @@ permalink: /people/
 
 * PhD student, Department of Neurobiology and Behavior, Stony Brook University
 
+{: .person-name }
+## David Hocker
+
+* Postdoctoral researcher, [Department of Neurobiology and Behavior (NBB)](https://medicine.stonybrookmedicine.edu/neurobiology), Stony Brook University (2016-current)
+
 ## Future lab member
 ![Cartoon MRI head](/images/MRI_brain_outline_memming.png){: .profile-photo }
 
