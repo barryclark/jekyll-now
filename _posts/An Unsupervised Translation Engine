@@ -1,0 +1,36 @@
+There are plenty of language translators available in the market these days. But I wanted to build an algorithm to translate text from any language to any other language. It is interesting that there are around 3000 spoken languages in the world and a few hundred written languages. There are still hundreds of languages that do not have an online translator yet. For example, there is a language called 'Dogri' which is spoken by about 3 million people in northern India. And not having an online translator should not be a hindrance to accessing content online. This inspired me to build an algorithm that can translate text between any two languages.
+
+For this project I used English and Spanish languages but this model applies to any language. The data I used for this project is translations of UN documents. My input data consisted of English UN documents with their exact Spanish translations. The first step to build this algorithm is to clean the data and by cleaning data I mean converting the text to lowercase, making sure there are no special characters, accents ect. One very important thing that every data scientist should know and something I learnt through this project is to have very clean data. Even one punctuation mark or an apostrophe could mess up your results. 
+
+Once the data was clean, I tagged all the Spanish words because I want to compare all the English words with only Spanish words and not with other English words. Now that the data is clean and tagged, give English and Spanish text as one document to my model. Giving English text with its corresponding Spanish translation in the same document helps the algorithm identify words that coexist.
+
+##### Example of input document:
+![](/images/Example_of_input_doc.png)
+
+The above mentioned multilingual corpus is given as input to the LSI(Latent Semantic Index) model which is a vector space model. In the vector space model, terms form dimensions of an indexing space. Documents and queries are represented by vectors in this space. An LSI model consists of 4 main steps 
+. Term-Document Matrix
+. Transformed Term-Document Matrix
+. Dimension Reduction (Singular Value Decomposition SVD)
+. Retrieval in Reduced Space
+Thus, the output of the LSI model is a reduced space multilingual term document matrix. Now that I have the vectors for every English and Spanish word in the corpus, they can be compared using a measure of similarity such as cosine or inner product. The terms from the reduced multilingual term matrix are compared using similarity to get similar words based on score. 
+
+##### Technical procedure:
+![](/images/LSI_Model_Procedure.png)
+
+Below are the three highest score Spanish translations for some English words according to the above algorithm. 
+
+|facilitating	 					|	facilitando       | facilitar         | aprovechando      |
+|imported	 					    |	importadas        | importaciones     | exportada         |
+|often	 					      |	menudo            | frecuencia        | frecuentemente    |
+|language	 					    |	idioma            | dialecto          | lengua            |
+|communication	 				|	comunicaci\u00f3n | fundo             | fongum            |
+|began	 					      |	inicia            | comienza          | prosigue          |
+|documentation	 				|	documentaci\u00f3n| yuki              | basse             |
+|helped	 					      |	ayudado           | contribuido       | permitido         |
+|written	 					    |	escrito           | conciliar\u00e1n  | escritas          |
+|translators	 					|	traductores       | revisores         | auxiliares        |
+|between	 					    |	entre             | interparlamentaria| mutuo             |
+|substantially	 				|	sustancialmente   | considerablemente | significativamente|
+|which	 					      |	cual              | claramente        | literalmente      |
+
+We can observe that this algorithm not only captures the regular words but also captures verb forms and plurals right. To make these translations available to everyone, I built a chrome extension which needs more work before it can be available on the chrome store. The code for this chrome extension is available [here](https://github.com/shivaniRe/seekna-chrome-extension) if anyone is interested. I think it is worth trying n-gram translations and implementing text translation using word2vec neural network. It will also be interesting to see if it would be possible to translate idioms. You can find my code for unigram translations [here](https://github.com/shivaniRe/Text_translator).
