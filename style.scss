@@ -223,7 +223,8 @@ img {
   }
 }
 
-ol.readable {
+ol.readable,
+ul.readable {
   font-size: 18px;
 
   @include mobile {
@@ -803,7 +804,20 @@ nav {
 
     @include mobile { display: block; }
 
+    a { margin: auto; width: auto; }
+
     img { margin: auto; width: auto; }
+  }
+
+  .large-cap {
+    float: left;
+    font-size: 80px;
+    line-height: 75px;
+    font-weight: 400;
+    color: #FF674D;
+    padding-right: 10px;
+    margin-top: 0;
+    margin-bottom: -1px;
   }
 } // card
 
@@ -904,16 +918,17 @@ nav {
 }
 
 .to-top-container {
+  display: none;
   position: fixed;
-  bottom: 40px;
-  right: 20px;
+  bottom: 20px;
+  right: 10px;
   z-index: 0;
   // background-color: #3f51b5;
   background: rgba(128,0,0,0.35);
   opacity: 0.8;
-  height: 55px;
+  height: 40px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.26);
-  width: 55px;
+  width: 40px;
   border-radius: 100%;
   cursor: pointer;
 
@@ -922,8 +937,8 @@ nav {
     @include vertical-align;
 
     img {
-      width: 15px;
-      height: 15px;
+      width: 10px;
+      height: 10px;
     }
   }
 }

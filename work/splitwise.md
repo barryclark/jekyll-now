@@ -93,8 +93,8 @@ permalink: /work/splitwise/
 	<div id="next">
 		<div class="case-wrapper">
 			<div class="next-wrapper clearfix">
-        <a href="/work/globalthinking">
-          <p>GT Site Refresh</p>
+        <a href="/work/chefsteps">
+          <p>ChefSteps Redesign</p>
 					<p class="change-case-txt">Next Project</p>
 				</a>
 			</div>

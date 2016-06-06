@@ -35,6 +35,15 @@ var homeLinkElement = document.querySelectorAll("nav a")[0];
       node = nav_a[i];
     }
 
+    $(window).scroll(function() {
+      var scroll = $(this).scrollTop();
+      if (scroll > $(window).height() ) {
+        $('.elevator').show(300);
+      } else {
+        $('.elevator').hide(300);
+      }
+    });
+
   }
 
   else if (window.location.pathname.indexOf("/dailyui/") === 0) {
@@ -121,9 +130,11 @@ $(blogGif).hover(
     $(this).attr('src', blogGifSrc_jpg);
 });
 
-$(window).scroll(function() {
-  var scroll = $(this).scrollTop();
-  if (scroll > ($(blogGif).offset().top -  $(window).height() / 1.3) ) {
-    $(blogGif).css({'opacity' : '1'});
-  }
-});
+if (blogGif) {
+  $(window).scroll(function() {
+    var scroll = $(this).scrollTop();
+      if (scroll > ($(blogGif).offset().top -  $(window).height() / 1.3) ) {
+        $(blogGif).css({'opacity' : '1'});
+      }
+  });
+}
