@@ -1,3 +1,8 @@
+---
+layout: post
+title: An unsupervised translation engine
+---
+
 There are plenty of language translators available in the market these days. But I wanted to build an algorithm to translate text from any language to any other language. It is interesting that there are around 3000 spoken languages in the world and a few hundred written languages. There are still hundreds of languages that do not have an online translator yet. For example, there is a language called 'Dogri' which is spoken by about 3 million people in northern India. And not having an online translator should not be a hindrance to accessing content online. This inspired me to build an algorithm that can translate text between any two languages.
 
 For this project I used English and Spanish languages but this model applies to any language. The data I used for this project is translations of UN documents. My input data consisted of English UN documents with their exact Spanish translations. The first step to build this algorithm is to clean the data and by cleaning data I mean converting the text to lowercase, making sure there are no special characters, accents ect. One very important thing that every data scientist should know and something I learnt through this project is to have very clean data. Even one punctuation mark or an apostrophe could mess up your results. 
