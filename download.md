@@ -45,9 +45,9 @@ The NET edition of Manjaro provides a base installation without a pre-installed 
 
 ### Other flavours
 
-Cinnamon, Enlightenment, Fluxbox, Gnome, i3, LXDE, LXQT, MATE, Netbook, Openbox and PekWM can be installed from our Community Editions released when ready.
+BspWM, Budgie, Cinnamon, Deepin, Enlightenment, Fluxbox, Gnome, i3, JWM, LXDE, LXQT, MATE, Netbook, Openbox and PekWM can be installed from our [Community Editions](http://manjaro.github.io/download-community/) released when ready.
 
-Razor-QT and other window-managers are also available for installation from the Official Manjaro repositories.
+Other window-managers are also available for installation from the Official Manjaro repositories.
 
 [Manjaro Stable repository](http://sourceforge.net/projects/manjarolinux/files/) | 
 [Manjaro Testing repository](http://sourceforge.net/projects/manjarotest/files/) |
