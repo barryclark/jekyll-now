@@ -2,7 +2,7 @@
 layout: post
 title: The Chinese Trump Tie
 tags: [culture, politics]
-keywords: [Donald Trump, tie, libertarian, Gary Johnson, Jill Stein]
+keywords: [Donald Trump, tie, libertarian, Gary Johnson, Jill Stein, china, chinese]
 image: /images/trump_tie.jpg
 ---
 
