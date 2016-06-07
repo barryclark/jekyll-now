@@ -6,11 +6,11 @@ keywords: [Donald Trump, tie, libertarian, Gary Johnson, Jill Stein]
 image: /images/trump_tie.jpg
 ---
 
-Jumping on the never Trump bandwagon:
+Jumping on the never Trump bandwagon.
 
 A couple years ago I needed some business attire, so I went to a chain anchor store at the local mall. While I was browsing the clothing, a sales lady asked me if I needed any help. I said, yeah, I'm going on a business trip and need something professional to wear! Well, the tie she chose for me just happened to be a Donald J. Trump branded tie:
 
-![The Chinese Trump Tie](/images/trump_tie_small.jpg "The Chinese Trump Tie")
+<a href="/images/trump_tie.jpg"><img src="/images/trump_tie_small.jpg" alt="The Chinese Trump Tie" title="The Chinese Trump Tie"></a>
 
 Then, I really could care less whose name was on the back of the tie. Honestly, I don't really care now.
 
