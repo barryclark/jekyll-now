@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Review - Hex: Shards of Fate
+title: Review - Hex Shards of Fate
 category: review
 featured: hex.png
 tags: [video-games, ccg, review, hex, hex entertainment]
