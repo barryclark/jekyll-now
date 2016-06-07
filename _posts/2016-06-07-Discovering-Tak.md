@@ -12,7 +12,7 @@ I'm eagerly awaiting my copy of the game, but until then I decided to 3D print m
 
 Here's a few pics of my process so far. I'll be sure to post the finished product once I'm done.
 
-![Tak Model](/images/tax/takmodel.jpg)
-![Tak Printer](/images/tax/takprinter.jpg)
-![Tak Printing](/images/tax/takprinting.jpg)
-![Tak Pieces](/images/tax/takpieces.jpg)
+![Tak Model](/images/tak/takmodel.jpg)
+![Tak Printer](/images/tak/takprinter.jpg)
+![Tak Printing](/images/tak/takprinting.jpg)
+![Tak Pieces](/images/tak/takpieces.jpg)
