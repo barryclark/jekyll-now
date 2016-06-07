@@ -46,9 +46,9 @@ Both 32 and 64 bit versions of Manjaro are available in the following flavours (
 
 ## Enlightenment
 
-  - **[manjaro-deepin 16.04 (64 bit)](http://sourceforge.net/projects/manjarolinux/files/community//Enlightenment/2016.04/manjaro-e20-community-16.04-x86_64.iso)**
+  - **[manjaro-enlightenment 16.04 (64 bit)](http://sourceforge.net/projects/manjarolinux/files/community//Enlightenment/2016.04/manjaro-e20-community-16.04-x86_64.iso)**
    `SHA1SUM: 5b35188725f0f4ecb722278ae4c1052b0d90c65b`
-  - **[manjaro-deepin 16.04 (32 bit)](http://sourceforge.net/projects/manjarolinux/files/community//Enlightenment/2016.04/manjaro-e20-community-16.04-i686.iso)**
+  - **[manjaro-enlightenment 16.04 (32 bit)](http://sourceforge.net/projects/manjarolinux/files/community//Enlightenment/2016.04/manjaro-e20-community-16.04-i686.iso)**
    `SHA1SUM: e68e1e73d99f560919a9bbeae285caa7025a7e34`
 
 ## Gnome
