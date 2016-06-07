@@ -1,3 +1,9 @@
+---
+layout: post
+title: Principles Object Oriented Programming
+published: true
+---
+
 #Principles Of Object Oriented Programming
 
 The four major principles that make the language object oriented are _Encapsulation, Data Abstraction,
