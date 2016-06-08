@@ -45,7 +45,7 @@ The NET edition of Manjaro provides a base installation without a pre-installed 
 
 ### Other flavours
 
-BspWM, Budgie, Cinnamon, Deepin, Enlightenment, Fluxbox, Gnome, i3, JWM, LXDE, LXQT, MATE, Netbook, Openbox and PekWM can be installed from our [Community Editions](http://manjaro.github.io/download-community/) released when ready.
+BspWM, Budgie, Cinnamon, Deepin, Enlightenment, Fluxbox, Gnome, i3, JWM, LXDE, LXQT, MATE, Netbook, Openbox and PekWM can be installed from our [Community Editions]({{ site.baseurl }}/download-community/) released when ready.
 
 Other window-managers are also available for installation from the Official Manjaro repositories.
 
