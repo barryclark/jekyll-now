@@ -24,10 +24,9 @@ Both 32 and 64 bit versions of Manjaro are available in the following flavours (
    `SHA1SUM: 8da60c2742b7b1f4ac5fe1d21b8b0bf6095ac92b`
 
 ## BspWM
-
-  - **[manjaro-bspwm 16.05 (64 bit)](http://sourceforge.net/projects/manjarolinux/files/community/BspWM/2016.05/x86_64/manjaro-bspwm-community-16.06-x86_64.iso)**
+  - **[manjaro-bspwm 16.05 (64 bit)](http://sourceforge.net/projects/manjarolinux/files/community/BspWM/2016.05/x86_64/manjaro-bspwm-community-16.05-x86_64.iso)**
    `SHA1SUM: 54ab73b6f7b0883e26d4d554c1a34527303bb992`
-  - **[manjaro-bspwm 16.05 (32 bit)](http://sourceforge.net/projects/manjarolinux/files/community/BspWM/2016.05/i686/manjaro-bspwm-community-16.06-i686.iso)**
+  - **[manjaro-bspwm 16.05 (32 bit)](http://sourceforge.net/projects/manjarolinux/files/community/BspWM/2016.05/i686/manjaro-bspwm-community-16.05-i686.iso)**
    `SHA1SUM: 890bacbf906cd9110a164856614d260265e99187`
 
 ## Cinnamon
