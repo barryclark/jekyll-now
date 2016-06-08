@@ -11,6 +11,8 @@
 
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+    
+    <link href='//fonts.googleapis.com/css?family=Lato:400,700|Raleway:400,700|Comfortaa:700' rel='stylesheet' type='text/css'>
 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
   </head>
@@ -27,12 +29,20 @@
           </div>
 
           <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
+            <a href="{{ site.baseurl }}/">News</a>
+            <!--<a href="https://wiki.manjaro.org">Wiki</a>-->
+            <a href="https://forum.manjaro.org">Forum</a>
+            <a href="{{ site.baseurl }}/download">Download</a>
+            <a href="http://repo.manjaro.org">Mirrors</a>
+            <!--<a href="https://lists.manjaro.org">Mailing-Lists</a>-->
+            <a href="{{ site.baseurl }}/team">Team</a>
             <a href="{{ site.baseurl }}/about">About</a>
+            <a href="{{ site.baseurl }}/archive">Archive</a>
           </nav>
         </header>
       </div>
     </div>
+    <div class="green-stripe"></div> <!-- Add green stripe bellow the header area -->
 
     <div id="main" role="main" class="container">
       {{ content }}
@@ -41,7 +51,8 @@
     <div class="wrapper-footer">
       <div class="container">
         <footer class="footer">
-          {% include svg-icons.html %}
+          {% include svg-icons.html %} <a href="{{ site.baseurl }}/donate"><img alt="" src="{{ site.baseurl }}/images/paypal.png" /></a>
+          <p>All trademarks and registered trademarks are the property of their respective owners.</p>
         </footer>
       </div>
     </div>
