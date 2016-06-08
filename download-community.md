@@ -39,10 +39,10 @@ Both 32 and 64 bit versions of Manjaro are available in the following flavours (
 
 ## Deepin
 
-  - **[manjaro-deepin 16.06-rc (64 bit)](http://sourceforge.net/projects/manjarolinux/files/community/Deepin/2016.06/manjaro-deepin-16.06-rc-x86_64.iso)**
-   `SHA1SUM: 60a5ed4be005845c28ff845c0a0a914c6fdf9761`
-  - **[manjaro-deepin 16.06-rc (32 bit)](http://sourceforge.net/projects/manjarolinux/files/community/Deepin/2016.06/manjaro-deepin-16.06-rc-i686.iso)**
-   `SHA1SUM: 79bc27a43f499ae2cd690e97b8ba15f46a23bcad`
+  - **[manjaro-deepin 16.06 (64 bit)](http://sourceforge.net/projects/manjarolinux/files/community/Deepin/16.06/x86_64/manjaro-deepin-16.06-x86_64.iso)**
+   `SHA1SUM: 6892fc58d12e3fe17008e1798ac958b92265c1ec`
+  - **[manjaro-deepin 16.06 (32 bit)](http://sourceforge.net/projects/manjarolinux/files/community/Deepin/16.06/i686/manjaro-deepin-16.06-i686.iso)**
+   `SHA1SUM: 4dc631ad45526b85581f7d7bb86b3d69150715ed`
 
 ## Enlightenment
 
