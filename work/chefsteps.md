@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Work - ChefSteps Redesign
+title: Work - ChefSteps Concept
 permalink: /work/chefsteps/
 ---
 <section class="card">
 
-  <h1>ChefSteps Redesign</h1>
+  <h1>ChefSteps Concept</h1>
 
   <figure>
     <a href="/images/chefsteps-cover.jpg" title="ChefSteps Cover Photo" target="_blank">
