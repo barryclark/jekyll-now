@@ -12,7 +12,9 @@ layout: default
         {{ post.excerpt }}
       </div>
 
+      {% if post.content contains site.excerpt_separator %}
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+      {% endif %}
     </article>
   {% endfor %}
 </div>
