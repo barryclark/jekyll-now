@@ -13,9 +13,9 @@ permalink: /work/chefsteps/
     </a>
   </figure>
 
-  <p class="readable"><span class="large-cap">C</span>hefSteps is fantastic. They're a food and technology company that aims to make people better cooks by cooking smarter. They don't tell you what to do, they show you via online classes and beautiful videos made available to the public. ChefSteps is also in the mobile apps business supporting both iOS and Android. I've tried the Android app for some time and noticed a few hiccups in the experience. I decided to try and cure those hiccups as a design exercise!</p>
+  <p class="readable"><span class="large-cap">C</span>hefSteps is fantastic. They're a food and technology company that aims to make people better cooks by cooking smarter. They don't tell you what to do, they show you via online classes and beautiful videos made available to the public. ChefSteps is also in the mobile apps business supporting both iOS and Android. I've tried the Android app for some time and noticed a usability issues. I decided to try resolve those issues and propose a new direction for the app!</p>
 
-  <p class="readable"><strong>The Problem: </strong>The ChefSteps Android app has some flaws in the user experience that need ironing out: specifically the navigation, the use of iOS-like UI elements, and the lack of general direction and purpose behind the app.</p>
+  <p class="readable"><strong>The Problem: </strong>The ChefSteps Android app has some issues in the user experience that need ironing out: specifically the navigation, the use of iOS-like UI elements, and the lack of general direction and purpose behind the app.</p>
 
   <p class="readable"><strong>The Solution: </strong>Defining and understanding the purpose of the ChefSteps app will help guide all major UX and UI design decisions.</p>
 
