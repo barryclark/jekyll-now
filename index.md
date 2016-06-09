@@ -23,7 +23,7 @@ layout: default
 
 ### <a name="merchant-table"></a>Ποιές εταιρείες και επαγγελματίες δέχονται Bitcoin στην Ελλάδα;
 
-[Αναζήτηση σε χάρτη](https://coinmap.org/#/world/38.81403111/24.63134766/6)
+[Αναζήτηση σε χάρτη](https://coinmap.org/#/world/38.81403111/24.63134766/6). Ενημερωθείτε για νέες καταχωρήσεις [εδώ](https://twitter.com/hashtag/coinmap_gr?f=tweets&vertical=default&src=hash).
 
 <table>
 {% for company in site.data.data %}

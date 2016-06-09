@@ -4,7 +4,7 @@ layout: default_en
 
 Come to one of our meetups in [Athens](http://www.meetup.com/BlockchainGreece-0/) or [Thessaloniki](http://www.meetup.com/BlockchainGreece-1/). Join our [Slack](http://bitcoingreece.herokuapp.com) (online chat).
 
-[Map search](https://coinmap.org/#/world/38.81403111/24.63134766/6)
+[Map search](https://coinmap.org/#/world/38.81403111/24.63134766/6). New map entries show up [here](https://twitter.com/hashtag/coinmap_gr?f=tweets&vertical=default&src=hash).
 
 <table>
 {% for company in site.data.data %}
