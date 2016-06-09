@@ -158,6 +158,22 @@
   location_gr: Θεσσαλονίκη, Μακεδονία, Ελλάδα
   location_en: Thessaloniki, Macedonia, Greece
 
+- company_gr: Νοικοκυρέματα
+  company_en: Noikokyremata
+  url: https://www.facebook.com/noikokyrematathes
+  category_gr: Κατάστημα Δώρων
+  category_en: Gift Shop
+  location_gr: Θεσσαλονίκη, Μακεδονία, Ελλάδα
+  location_en: Thessaloniki, Macedonia, Greece
+
+- company_gr: Ergobyte
+  company_en: Ergobyte
+  url: http://www.ergobyte.gr/
+  category_gr: Ανάπτυξη Λογισμικού και Διαδικτυακών Εφαρμογών
+  category_en: Software and Website Development
+  location_gr: Θεσσαλονίκη, Μακεδονία, Ελλάδα
+  location_en: Thessaloniki, Macedonia, Greece
+
 - company_gr: Athera
   company_en: Athera
   url: http://atheragi.com
