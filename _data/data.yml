@@ -149,6 +149,22 @@
   category_en: Outdoor Advertising, Signs and Brochures, 2107718181, sign.maketes@gmail.com
   location_gr: Αθήνα, Αττική, Ελλάδα
   location_en: Athens, Attica, Greece
+
+- company_gr: Mybrand Shoes
+  company_en: Mybrand Shoes
+  url: http://mybrand.shoes/en/
+  category_gr: Κατάστημα Παπουτσιών
+  category_en: Shoe Shop
+  location_gr: Πετρούπολη, Αττική, Ελλάδα
+  location_en: Petroupoli, Attica, Greece
+
+- company_gr: 3DMagic
+  company_en: 3DMagic
+  url: http://www.3dmagic.gr/
+  category_gr: Τρισδιάστατες Εκτυπώσεις
+  category_en: 3D Printing
+  location_gr: Ίλιον, Αττική, Ελλάδα
+  location_en: Ilion, Attica, Greece
   
 - company_gr: Buy.gr
   company_en: Buy.gr
