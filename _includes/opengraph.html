@@ -17,4 +17,4 @@
 
 {% if page.title %}<meta property="og:title" content="{{ page.title }}" />{% else %}<meta property="og:title" content="{{ site.name }}" />{% endif %}
 
-{% if page.excerpt %}<meta name="og:description" content="{{ page.excerpt | strip_html }}" />{% else %}<meta property="og:description" content="{{ site.description }}" />{% endif %}
+<meta name="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html }}{% else %}{{ site.description }}{% endif %}" />
