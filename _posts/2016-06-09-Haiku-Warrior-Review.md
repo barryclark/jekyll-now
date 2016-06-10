@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Review - Hex Shards of Fate
+title: Review - Haiku Warrior
 category: review
 featured: haikuwarrior.png
 tags: [games, review, haiku warrior, jason anarchy]
