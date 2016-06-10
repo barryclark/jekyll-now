@@ -20,8 +20,8 @@ I've only played the game solo, and I really enjoyed it. It's light, easy to pla
 
 If Haiku Warrior sounds interesting to you, it's available for $25 from [Jason's website](http://www.drinkingquest.com/games/haiku-warrior).
 
-"Haiku Warrior
-A jovial RPG
+"Haiku Warrior\\
+A jovial RPG\\
 Worth its price in fruit"
 
 *A copy of Haiku Warrior was provided free for review by Jason Anarchy*
