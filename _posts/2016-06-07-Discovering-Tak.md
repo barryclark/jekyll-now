@@ -16,3 +16,7 @@ Here's a few pics of my process so far. I'll be sure to post the finished produc
 ![Tak Printer](/images/tak/takprinter.jpg)
 ![Tak Printing](/images/tak/takprinting.jpg)
 ![Tak Pieces](/images/tak/takpieces.jpg)
+
+**UPDATE: I've finished! Just a paper board for now, but it's enough to play at 5x5 game!**
+
+![Tak Printed](/images/tak/tak-printed.jpg)
