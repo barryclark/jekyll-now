@@ -1,7 +1,8 @@
 blog:
-  image: 'grahamc/jekyll'
+  # image: 'grahamc/jekyll'
+  build: "."
   volumes:
     - ./:/src
   ports:
     - "4000:4000"
-  command: ["serve", "-H", "0.0.0.0", "--incremental"]
+  command: ["serve", "--config", "_config.yml,_config_dev.yml", "-H", "0.0.0.0", "--incremental", "--drafts", "--force_polling"]
