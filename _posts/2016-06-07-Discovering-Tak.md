@@ -19,4 +19,4 @@ Here's a few pics of my process so far. I'll be sure to post the finished produc
 
 **UPDATE: I've finished! Just a paper board for now, but it's enough to play at 5x5 game!**
 
-![Tak Printed](/images/tak/tak-printed.jpg)
+![Tak Printed](/images/tak/tak-printed.jpeg)
