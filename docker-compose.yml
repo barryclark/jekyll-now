@@ -1,7 +1,7 @@
 blog:
   image: 'grahamc/jekyll'
   volumes:
-    - ./dionjwa.github.io:/src
+    - ./:/src
   ports:
     - "4000:4000"
   command: ["serve", "-H", "0.0.0.0", "--incremental"]
