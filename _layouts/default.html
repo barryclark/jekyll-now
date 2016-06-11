@@ -3,7 +3,7 @@
   <head>
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
-    {% include meta.html %}
+    {% include meta.html %} 
 
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -29,6 +29,8 @@
           <nav>
             <a href="{{ site.baseurl }}/">Blog</a>
             <a href="{{ site.baseurl }}/about">About</a>
+            <a href="{{ site.baseurl }}/tags">Tag</a>
+            <a href="{{ site.baseurl }}/category">Categories</a>
           </nav>
         </header>
       </div>
@@ -41,7 +43,7 @@
     <div class="wrapper-footer">
       <div class="container">
         <footer class="footer">
-          {% include svg-icons.html %}
+          The source code of this blog is powered by Jekyll.
         </footer>
       </div>
     </div>
