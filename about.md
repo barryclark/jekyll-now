@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+I live in Northern California. I studied biological science at undergraduate and software engineering at graduate school. I enjoy the thrill of solving computer problem. It is a combination of imagination and harnass computing power to turn ideas into actions. My passion in coding drive me to pursue a career in software engineering. 
 
-### More Information
+Besides coding I enjoy cooking during my spare time particular cook "from scratch".
 
-A place to include any other types of information that you'd like to include about yourself.
+This sites record the progress of my goal of becoming a Software Engineer.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[maggie98choy@yahoo.com](mailto:maggie98choy@yahoo.com)
