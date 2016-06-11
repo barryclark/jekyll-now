@@ -3,7 +3,7 @@ layout: post
 title: Manjaro Gnome Edition 16.06
 ---
 
-![manjaro-gnome 16.06({{ site.baseurl }}/images/manjaro-gnome-16.06.jpg)
+![manjaro-gnome 16.06]({{ site.baseurl }}/images/manjaro-gnome-16.06.jpg "Gnome 16.06")
 
 The Manjaro Community is proud to announce the release of **Manjaro Gnome 16.06**, following the new official theming **Vertex-Maia**.
 A variety of software for everyday use is included aswell as all the typical manjaro utilities. Additionally some useful extension have been pre-installed and enabled.  
