@@ -10,23 +10,23 @@ A variety of software for everyday use is included aswell as all the typical man
 
 ## Features
 
-* **Openweather**
-* **Dashtodock**
-* **Gnomenu**
-* **Mediaplayer**
-* **User Theme**
-* **Drive-menu**
-* **Lollypop**
-* **Totem**
-* **Firefox**
-* **Thunderbird**
-* **Hexchat**
-* **Libreoffice**
-* **Steam**
-* **Isousb**
-* **Gdm3setup**
-* **Manjaro Printer, Manjaro Settings Manager and Pamac**
-* **Tap to click and two finger scrolling enable** 
+* Openweather
+* Dashtodock
+* Gnomenu
+* Mediaplayer
+* User Theme
+* Drive-menu
+* Lollypop
+* Totem
+* Firefox
+* Thunderbird
+* Hexchat
+* Libreoffice
+* Steam
+* Isousb
+* Gdm3setup
+* Manjaro Printer, Manjaro Settings Manager and Pamac
+* Tap to click and two finger scrolling enable
 
 ## Links
 

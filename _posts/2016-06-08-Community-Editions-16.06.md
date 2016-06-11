@@ -14,12 +14,12 @@ Relative to Manjaro's official **16.06** release, the Manjaro Community is proud
 
 More Community editions will follow shortly.  
 
-## Details:
+## Details
 
 * [Manjaro-Cinnamon 16.06](https://forum.manjaro.org/t/manjaro-cinnamon-16-06)  
 * [Manjaro-Deepin 16.06](https://forum.manjaro.org/t/manjaro-deepin-16-06)  
 * [Manjaro-i3 16.06](https://forum.manjaro.org/t/manjaro-i3-16-06)  
 
-## Download:
+## Download
 
 * [Manjarolinux Community Editions](https://sourceforge.net/projects/manjarolinux/files/community/)
