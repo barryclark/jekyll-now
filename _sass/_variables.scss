@@ -15,9 +15,9 @@ $lightGray: #eee;
 $white: #fff;
 
 // Font stacks
-$helvetica: Helvetica, Arial, sans-serif;
-$helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$georgia: Georgia, serif;
+$helvetica: Helvetica, Roboto, "맑은 고딕", Arial, sans-serif;
+$helveticaNeue: "Helvetica Neue", Helvetica, Roboto, "맑은 고딕", Arial, sans-serif;
+$georgia: "나눔명조", Georgia, serif;
 
 // Mobile breakpoints
 @mixin mobile {
