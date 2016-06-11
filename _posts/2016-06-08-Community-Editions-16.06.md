@@ -1,36 +1,25 @@
 ---
 layout: post
-title: Manjaro Gnome Edition 16.06
+title: Manjaro Community Editions 16.06
 ---
 
-![manjaro-gnome 16.06({{ site.baseurl }}/images/manjaro-gnome-16.06.jpg)
+<img src="https://manjaro.github.io/images/manjaro-cinnamon-16.06.jpg">
 
-The Manjaro Community is proud to announce the release of **Manjaro Gnome 16.06**, following the new official theming **Vertex-Maia**.
-A variety of software for everyday use is included aswell as all the typical manjaro utilities. Additionally some useful extension have been pre-installed and enabled.  
+Relative to Manjaro's official **16.06** release, the Manjaro Community is proud to present the first updated Community Editions:  
+**Manjaro-Cinnamon**, **Manjaro-Deepin** and **Manjaro-i3** have been continuously tended and cared for over the last few months and are now available for download sporting the very latest versions of their respective desktops, **Cinnamon 3.0.5**, **Deepin 15.2** and **i3-gaps 4.12**.  
 
-## Features:
+<img src="https://manjaro.github.io/images/manjaro-deepin-16.06.jpg">
 
-**Openweather**
-**Dashtodock**
-**Gnomenu**
-**Mediaplayer**
-**User Theme**
-**Drive-menu**
-**Lollypop**
-**Totem**
-**Firefox**
-**Thunderbird**
-**Hexchat**
-**Libreoffice**
-**Steam**
-**Isousb**
-**Gdm3setup**
-**Manjaro Printer, Manjaro Settings Manager and Pamac**
-**Tap to click and two finger scrolling enable** 
+<img src="https://manjaro.github.io/images/manjaro-i3-16.06.jpg">  
 
-## Links:
+More Community editions will follow shortly.  
 
-* [Forum post](https://forum.manjaro.org/t/manjaro-gnome-16-06/)
-* [Download](https://sourceforge.net/projects/manjarolinux/files/community/Gnome/2016.06/)
+## Details:
 
-The ISOs are signed with gpg key ID **8DF53602** **Stefano Capitani <stefano_at_manjaro_dot_org>**
+* [Manjaro-Cinnamon 16.06](https://forum.manjaro.org/t/manjaro-cinnamon-16-06)  
+* [Manjaro-Deepin 16.06](https://forum.manjaro.org/t/manjaro-deepin-16-06)  
+* [Manjaro-i3 16.06](https://forum.manjaro.org/t/manjaro-i3-16-06)  
+
+## Download:
+
+* [Manjarolinux Community Editions](https://sourceforge.net/projects/manjarolinux/files/community/)
