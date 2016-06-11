@@ -2,7 +2,7 @@
 layout: post
 title: Unboxing Oh My Gods
 category: unboxing
-featured: ohmygods.png
+featured: ohmygods.jpg
 tags: [games, unboxing, oh my gods, gameworthy labs, ct fig]
 ---
 
