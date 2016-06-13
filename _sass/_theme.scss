@@ -651,8 +651,8 @@ header.single-header .desc{
     }
 #single-post iframe{
     width: 100%;
-    margin-bottom: 30px;
-    margin-top: 20px;
+    margin-bottom: 30px!important;
+    margin-top: 20px!important;
     @include border;
 }
 #disqus_thread iframe{
