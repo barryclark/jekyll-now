@@ -59,4 +59,4 @@ Sometimes, those 10 USD can make the diffence of being eating pizza with your *m
 
 ### Medium
 
-Was thinking of "mirroring" all my posts into [Medium](https://medium.com/@dactrtr), cuz has better tools for writing than [Brackets](https://brackets.io) but has a better *sharing* and *commenting* (that word even exist?) but it make no sense cuz I dont write so often and not about really important things, well now I want to document every step of my little "Orlando Project: Packer's Life" a kinda of game about the packhouse, probably I will mirror those.. nahhhh, *kiss kiss good bye medium*
+Was thinking of "mirroring" all my posts into [Medium](https://medium.com/@dactrtr), cuz has better tools for writing than [Brackets](https://brackets.io) and also a better *sharing* and *commenting* (that word even exist?) features, but it make no sense cuz I dont write so often and not about really important things, well now I want to document every step of my little "Orlando Project: Packer's Life" a kinda of game about the packhouse, probably I will mirror those.. nahhhh, *kiss kiss good bye medium*
