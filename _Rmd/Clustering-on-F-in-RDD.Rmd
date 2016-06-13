@@ -1,0 +1,60 @@
+---
+layout: post
+title: Clustering on the forcing variable in regression discontinuity designs
+author: James E. Pustejovsky
+date: June 13, 2016
+tags: [econometrics, sandwiches]
+---
+
+# Model and notation
+
+Consider a regression discontinuity design in which the forcing variable $Z$ takes on integer values from $1,...,J$. Treatment is determined on the basis of a cut-score $c$, so that units with $Z \leq c$ receive treatment and those with $z > c$ do not receive treatment.  Let $t_j = 1$ if $z_j \leq c$ and $t_j = 0$ otherwise. Suppose that the sample include $n_j$ observations with $Z = j$. 
+
+Consider a model in which the mean specification is exactly linear within a certain bandwidth of the cut-score and the errors are independent and homoskedastic. The model can be written as
+
+$$
+y_{ij} = \beta_1 (1 - t_j) + \beta_2 (1 - t_j) (z_j - c) + \beta_3 t_j + \beta_4 t_j (z_j - c) + e_{ij}, 
+$$
+
+where $\text{E}\left(e_{ij}\right) = 0$ and $\text{Var}\left(e_{ij}\right) = \sigma^2$. In this specification, the local average treatment effect is $\beta_3 - \beta_1$. Following standard practice, this treatment effect will be estimated using local linear regression within a bandwidth $b$ of the cut-score, using weights determined by a kernel $k()$. Let $w_j = k(j - c)$. Let 
+
+$$
+\mathbf{x}_j = \left[(1 - t_j), \quad (1 - t_j)(z_j - c), \quad t_j, \quad t_j (z_j - c)\right]
+$$
+
+denote a $4 \times 1$ row vector of predictors for each value of the forcing variable, and let $\boldsymbol\beta$ denote the $4 \times 1$ vector of regression coefficients. Let $\mathbf{X}_j = \mathbf{1}_j \mathbf{x}_j$, where $\mathbf{1}_j$ is an $n_j \times 1$ vector with all entries equal to 1. Let $\mathbf{W}_j = w_j \mathbf{I}_j$, where $\mathbf{I}_j$ is an $n_j \times n_j$ identity matrix. Let $\mathbf{y}_j = \left(y_{1j},...y_{n_j j}\right)'$.
+
+The weighted least squares estimator of $\boldsymbol\beta$ is 
+
+$$
+\begin{aligned}
+\boldsymbol{\hat\beta} &= \left(\sum_{j=1}^J \mathbf{X}_j' \mathbf{W}_j \mathbf{X}_j\right)^{-1} \sum_{j=1}^J \mathbf{X}_j' \mathbf{W}_j \mathbf{y}_j \\
+&= \mathbf{M} \sum_{j=1}^J n_j w_j \mathbf{x}_j' \bar{y}_j,
+\end{aligned}*
+$$
+
+where $\mathbf{M} = \left(\sum_{j=1}^J n_j w_j \mathbf{x}_j' \mathbf{x}_j\right)^{-1}$ and $\bar{y}_j = \sum_{i=1}^{n_j} y_{ij} / n_j$. Thus, $\boldsymbol{\hat\beta}$ is equivalent to the weighted least squares estimator for a regression of the sample mean outcomes $\bar{y}_{1},...,\bar{y}_J$ on the corresponding covariate vectors, with weights equal to $n_j w_j$. 
+
+Consider the usual sandwich estimator of $\text{Var}\left(\boldsymbol{\hat\beta}\right)$, clustering on the unique values of the forcing variable. Letting $\mathbf{e}_j = \mathbf{y}_j - \mathbf{X}_j \boldsymbol{\hat\beta}$ and $\mathbf{\bar{e}}_j = \bar{y} - \mathbf{x}_j \boldsymbol{\hat\beta}$,
+
+$$
+\begin{aligned}
+\mathbf{V}^{CR0} &= \mathbf{M} \left(\sum_{j=1}^J \mathbf{X}_j' \mathbf{W}_j \mathbf{e}_j \mathbf{e}_j' \mathbf{W}_j \mathbf{X}_j\right) \mathbf{M} \\
+&= \mathbf{M} \left(\sum_{j=1}^J \left(n_j w_j\right)^2 \bar{e}_j^2 \mathbf{x}_j'\mathbf{x}_j \right) \mathbf{M}.
+\end{aligned}
+$$
+
+Thus, $\mathbf{V}^{CR0}$ is equivalent to the HC0 heteroskedasticity-robust variance estimator for the regression of the sample mean outcomes. 
+
+```{r}
+n <- 10
+a <- 0.04
+A <- diag(n) - a
+A_eig <- eigen(A)
+A_sisr <- A_eig$vectors %*% (A_eig$values^(-1/2) * t(A_eig$vectors))
+all.equal(diag(n), A_sisr %*% A %*% A_sisr)
+chol2inv(chol(A))
+diag(n) - a / (a * n - 1)
+B <- diag(n) - (1 - sqrt(1 / (1 - n * a))) / n
+```
+
