@@ -6,10 +6,10 @@
 name: Steve Chen
 
 # Short bio or description (displayed in the header)
-description: Things I've learned through the journey of coding
+description: The coolest
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: http://animalia-life.com/data_images/koala/koala3.jpg
+avatar:
 
 #
 # Flags below are optional
@@ -54,7 +54,7 @@ baseurl: ""
 #
 
 markdown: kramdown
-highlighter: pygments
+highlighter: rogue
 permalink: /:title/
 
 # The release of Jekyll Now that you're using
