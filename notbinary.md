@@ -1,9 +1,11 @@
 ---
 layout: default
+permalink: /thoughts/
+title: The Search for Light
 ---
 
 <div class="posts">
-  {% for post in site.thoughts %}
+  {% for post in site.categories.notbinary %}
     <article class="post">
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
