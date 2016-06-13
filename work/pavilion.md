@@ -15,7 +15,7 @@ permalink: /work/pavilion/
     </a>
   </figure>
 
-  <p class="caption">Pavilion potential home page</p>
+  <p class="caption">Pavilion potential home page (sample content and images)</p>
 
   <figure>
     <a href="/images/pavilion-cart-desktop.png" target="_blank" title="Pavilion potential shopping cart page (cart not empty)">
