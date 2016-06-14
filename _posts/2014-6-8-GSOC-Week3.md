@@ -1,6 +1,7 @@
 ---
 layout: post
 title: MLPack - Improvement of Automatic Benchmarking System - Week-3
+category: binary
 ---
 
 And another week has gone! It seems that the time is moving really fast and we too are moving at a good pace with the GSoC project!

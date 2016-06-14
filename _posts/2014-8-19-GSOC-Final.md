@@ -1,6 +1,7 @@
 ---
 layout: post
 title: MLPack - Improvement of Automatic Benchmarking System - Wrap up!
+category: binary
 ---
 
 And its done! We have crossed the pencils down date and final evaluations are on roll!  
