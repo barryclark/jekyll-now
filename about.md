@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Hi, I'm Steve. A Web developer tentatively living in the DC area.
 
-### More Information
+### HIRE ME
 
-A place to include any other types of information that you'd like to include about yourself.
+I'm write decent code when paid to. Can work for low pay but cool projects. Or high pay for cool projects.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[stevechenweb@gmail.com](mailto:stevechenweb@gmail.com)
