@@ -62,10 +62,9 @@ Both 32 and 64 bit versions of Manjaro are available in the following flavours (
 [**Details**](https://forum.manjaro.org/t/manjaro-gnome-16-06)
 
 ## i3
-
-  - [manjaro-i3 16.06.1 (64 bit)](http://sourceforge.net/projects/manjarolinux/files/community/i3/16.06.1/manjaro-i3-16.06.1-x86_64.iso)
+  - [manjaro-i3 16.06.1 (64 bit)](http://sourceforge.net/projects/manjarolinux/files/community/i3/16.06.1/x86_64/manjaro-i3-16.06.1-x86_64.iso)
    `SHA1SUM: be35af52cbb043c8d834a6e6c5e180b21026838f`
-  - [manjaro-i3 16.06.1 (32 bit)](http://sourceforge.net/projects/manjarolinux/files/community/i3/16.06.1/manjaro-i3-16.06.1-i686.iso)
+  - [manjaro-i3 16.06.1 (32 bit)](http://sourceforge.net/projects/manjarolinux/files/community/i3/16.06.1/i686/manjaro-i3-16.06.1-i686.iso)
    `SHA1SUM: 36e081fc82485272b4714181aef4fd49fd2e3e10`  
 [**Details**](https://forum.manjaro.org/t/manjaro-i3-16-06)
 
