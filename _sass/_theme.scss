@@ -570,8 +570,8 @@ header.single-header .desc{
     .scream {
         height: 100%;
         display: flex;
-  align-items: center;
-  justify-content: center;
+        align-items: center;
+        justify-content: center;
         flex-flow: column;
         position: absolute;
         p{
@@ -580,6 +580,9 @@ header.single-header .desc{
             z-index: 4;
             margin-bottom: 0px;
             font-family: merriweather;
+            @include mobile-small{
+                text-align: center;
+            }
         }
         h1{
         flex-grow: 2;
@@ -595,7 +598,7 @@ header.single-header .desc{
         margin-bottom: 10px;
             padding-top: 10%;
         @include mobile-small{
-            font-size: 7.5rem;
+            font-size: 7rem;
         }
         }
     }
