@@ -17,7 +17,7 @@ If you have been lucky enough you don’t have any idea of what this means, let 
 
 ### What?
 
-This happen kinda **3 weeks ago**, lucky me, I just bought a external **HDD** a month ago, so I had a Time Machine backup, so all my pictures and videos of my trip were safe, *kinda safe* cuz now my computer is working only with a **SSD** of 128 gb, and only my videos are 300 gb, after a couple of test, and **spits and kicks** I found the problem, fixed for a couple of minutes, really just a couple of minutes, I spent more time re-installing **El Capitan** than open the computer and trying to re attach the loose drive.
+This happen kinda **3 weeks ago**, lucky me, I just bought a external **HDD** a month ago, so I had a Time Machine backup, so all my pictures and videos of my trip were safe, *kinda safe* cuz now my computer is working only with a **SSD** of 128 gb, and only my videos folder is 300 gb, after a couple of tests, and **spits and kicks**, I found the problem, fixed for a couple of minutes, really just a couple of minutes, I spent more time re-installing **El Capitan** than open the computer and trying to re attach the loose drive.
 
 <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-version="7" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/BFQhi8NPT4U/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">Problem found/ problem fixed #longlivetotape #aguanteelescotch</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A photo posted by Page not found (@dactrtrs) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2016-05-11T07:14:12+00:00">May 11, 2016 at 12:14am PDT</time></p></div></blockquote> <script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
 
@@ -26,19 +26,19 @@ Not the most fancy way of fixit but work for… like 20 minutes.
 
 ### Da Problem
 
-For some strange reason when I replace the Superdrive (optical drive, the dvd reader), and put a *caddie* for another **HDD** I bought a really cheap chinese without any finesse one, cuz the **HDD** it's getting loose, and if you know, probably not, a **FusionDrive** it's a *logical fusion*, DUH!, of two drives, so the **OS** believe that's only one Disk instead of two...
+For some strange reason when I replace the Superdrive (optical drive), and put a *caddie* for another **HDD**, I bought a really cheap chinese product without any finesse, cuz the **HDD** it's getting loose randomnly, and if you know, probably not, a **FusionDrive** it's a *logical fusion*, DUH!, of two drives, so the **OS** believe that's only one Disk instead of two, so when one get disconected... well pretty much is the end of your OS. But *Why is such a good deal do this?*:
 
 **PROS**
 
-- The space of a **HDD**
-- The speed of a **SSD**
+- The space of a **HDD**.
+- The speed of a **SSD**.
 
 **Contra**
 
-- A really good old *NES* game
+- A really good old *NES* game.
 - Sometimes you have this kind of problems, really stupid anyway.
 
-Well now I’m in orlando so I have more time and better conditions to fix this little problem in a proper way, but, **kids** let’s see what we learn:
+Well now I’m in Orlando so I have more time and better conditions to fix this little problem in a proper way, but, **kids** let’s see what we learn:
 
 ### Time Machine
 
