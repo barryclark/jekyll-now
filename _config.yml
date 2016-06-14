@@ -6,7 +6,7 @@
 name: Steve Chen
 
 # Short bio or description (displayed in the header)
-description: Blog with quick reads
+description: Blog with quick readable tidbits for Web Developers
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://avatars3.githubusercontent.com/u/10738004?v=3&s=460
@@ -54,7 +54,7 @@ baseurl: ""
 #
 
 markdown: kramdown
-highlighter: rogue
+highlighter: rouge
 permalink: /:title/
 
 # The release of Jekyll Now that you're using
