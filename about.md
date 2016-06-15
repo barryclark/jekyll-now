@@ -1,15 +1,11 @@
 ---
 layout: page
-title: About
+title:
 permalink: /about/
 ---
 
-Hi, I'm Steve. A Web developer tentatively living in the DC area.
+A Web developer tentatively living in the DC area and working as a Software Engineering Intern at KaBOOM!
 
-### HIRE ME
-
-I write decent code when paid to. Can work for low pay but cool projects. Or high pay for cool projects.
-
-### Contact me
+### Contact me at
 
 [stevechenweb@gmail.com](mailto:stevechenweb@gmail.com)
