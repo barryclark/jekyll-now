@@ -1,5 +1,8 @@
-# First Post
+---
+layout: post
+title: First Post
+---
 
-テストのと投稿です。
+テストの投稿です。
 
 [KDL](http://www.kdl.co.jp/)
