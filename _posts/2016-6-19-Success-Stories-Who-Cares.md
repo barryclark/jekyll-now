@@ -61,7 +61,7 @@ Tell them where you fail and why you fail.
 You think that no one cares about a loser who fails? 
 If you think so, you will not achieve success ever. 
 
-### If you think, that failing is for losers, forget about you and go to the nearby bridge and feel 9.80665 m/s2.
+### If you think, that failing is for losers, forget about yourself and go to the nearby bridge and feel 9.80665 m/s2.
 
 Believe me, many people need to know how is about to fail, **why people fail and how to avoid that**, share it and be happy when you fail. 
 
