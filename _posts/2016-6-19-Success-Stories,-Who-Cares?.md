@@ -13,6 +13,8 @@ title: Success Stories, Who Cares?
 
 #### Who cares guys? No really...
 
+<!--more-->
+
 I don't remember exactly where I have read this quote, but it is excellent:
 
 > There are only three things that always tell the truth: small children, drunk people, and yoga pants.
