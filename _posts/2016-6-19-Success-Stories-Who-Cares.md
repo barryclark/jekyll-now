@@ -67,6 +67,7 @@ Believe me, many people need to know how is about to fail, **why people fail and
 
 ### It is something new to learn.
 
-[And some good music to keep you up, after this shitty post.]
-(https://www.youtube.com/watch?v=SDiJiGuUeBo)
+And some good music to keep you up, after this shitty post.
+
+[Just Music](https://www.youtube.com/watch?v=SDiJiGuUeBo)
 
