@@ -29,7 +29,9 @@ Who will tell the **truth**?
 
 Who will say that I am very lucky, and I succeeded at this step because of just luck? 
 
-Who will say that I used people and didn't give pay for it? Who will say that they stole something? 
+Who will say that I used people and didn't give pay for it? 
+
+Who will say that they stole something? 
 
 
 ### None. Just fuckin none. 
@@ -41,7 +43,11 @@ Maybe I am wrong, but my life experience tells me **to believe people who are st
 Yes, now you are thinking about motivation, that "success stories" give a big amount of motivation and inspiration. 
 Maybe you are right, but if you aren't sharp enough to get motivated by your idea, by your team, by your friends, 
 by them who believe in you, what the fuck can that stories do to you?
-Nothing. **"Success stories" give you a false motivation**, like do like that, and you will become a millionaire.
+
+Nothing.
+
+**"Success stories" give you a false motivation**, like do like that, and you will become a millionaire.
+
 **It is just an illusion of motivation.** 
 
 ### The real motivation is you, and people who believe in you.
