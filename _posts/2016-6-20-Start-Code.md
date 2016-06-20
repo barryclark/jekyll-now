@@ -19,4 +19,5 @@ I will be looking at FreeCodeCamp.com's development certifications to start in t
   1. Front End Development Certification
   2. Back End Development Certification
   3. Data Visualization Certification
+
 I would love to partner with another developer starting around the 60 day mark to start a project or assist on completion of an existing project.
