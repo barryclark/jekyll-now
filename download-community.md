@@ -74,6 +74,7 @@ Both 32 and 64 bit versions of Manjaro are available in the following flavours (
    `SHA1SUM: a17a1373af07fe2195d4ff1e2a54f176c7345dd5`
   - [manjaro-jwm 16.06.1 (32 bit)](http://sourceforge.net/projects/manjarolinux/files/community/JWM/2016.06/manjaro-jwm-community-16.06.1-i686-19616.iso)
    `SHA1SUM: e0d60afef761765c3fdbaab4428c96658adc5223`
+[**Details**](https://forum.manjaro.org/t/manjaro-jwm-16-06-1-released)
 
 ## Lxqt
 
