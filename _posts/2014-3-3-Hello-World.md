@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post from Aruzhan
 title: You're up and running!
 ---
 
