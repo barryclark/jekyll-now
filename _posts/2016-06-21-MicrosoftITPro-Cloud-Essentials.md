@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Microsoft IT Pro Cloud Essentials
-subtitle: Great offering from Microsft helps devs and ops-professionals get cloud-savvy
+subtitle: Great offering from Microsoft helps devs and ops-professionals get cloud-savvy
 category: general
 tags: [devops, cloud, culture]
 author: Scott Speights
