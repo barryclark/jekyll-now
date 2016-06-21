@@ -18,10 +18,11 @@ Both 32 and 64 bit versions of Manjaro are available in the following flavours (
 
 ## Budgie
 
-  - [manjaro-budgie 15.11 (64 bit)](http://sourceforge.net/projects/manjarolinux/files/community/Budgie/2015.11/manjaro-budgie-2015.11-x86_64.iso)
-   `SHA1SUM: 22f4ad1f3ef382653fd01dd88d3d6c1b69312468`
-  - [manjaro-budgie 15.11 (32 bit)](http://sourceforge.net/projects/manjarolinux/files/community/Budgie/2015.11/manjaro-budgie-2015.11-i686.iso)
-   `SHA1SUM: 8da60c2742b7b1f4ac5fe1d21b8b0bf6095ac92b`
+  - [manjaro-budgie 16.06.1 (64 bit)](https://sourceforge.net/projects/manjarolinux/files/community/Budgie/2016.06/16.06.1/x86_64/manjaro-budgie-community-16.06.1-x86_64.iso)
+   `SHA1SUM: 36282fb1ac925c8c0fd468aa39e9a3e045f0abb4`
+  - [manjaro-budgie 16.06.1 (32 bit)](https://sourceforge.net/projects/manjarolinux/files/community/Budgie/2016.06/16.06.1/i686/manjaro-budgie-community-16.06.1-i686.iso)
+   `SHA1SUM: 4363bc1c23ea20f39b5b24e3dce975493956138b`
+[**Details**](https://forum.manjaro.org/t/manjaro-budgie-16-06-1)
 
 ## BspWM
   - [manjaro-bspwm 16.05 (64 bit)](http://sourceforge.net/projects/manjarolinux/files/community/BspWM/2016.05/x86_64/manjaro-bspwm-community-16.05-x86_64.iso)
