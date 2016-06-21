@@ -16,6 +16,7 @@ I am starting #100DaysOfCode officially on 6/20/2016.  This will be based losely
 
 ## Starting Items
 I will be looking at FreeCodeCamp.com's development certifications to start in the order below.
+
   1. Front End Development Certification
   2. Back End Development Certification
   3. Data Visualization Certification
