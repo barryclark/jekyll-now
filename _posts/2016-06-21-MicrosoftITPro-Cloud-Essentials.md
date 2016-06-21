@@ -3,10 +3,10 @@ layout: post
 title: Microsoft IT Pro Cloud Essentials
 subtitle: Great offering from Microsoft helps devs and ops-professionals get cloud-savvy
 category: general
-tags: [Cloud Services, Software Development, Ops Automation, Continuing Education]
+tags: [devops, cloud, culture]
 author: Scott Speights
 author_email: scott.speights@haufe-lexware.com
-header-img: "images/MS-Learning-Progs/CloudLearnings.jpg"
+header-img: "images/MS-Learning-Progs/CloudLearning.JPG"
 ---
 
 To support software development and IT-operations in the cloud, Microsoft has now launched two very interesting programs worldwide. The objective is to help software developers and IT-professionals learn how to use cloud services for their everyday computing needs and to do so with Microsoft products like Microsoft Azure. Even if you're not the biggest fan of Microsoft technologies, you may want to take advantage of these programs to learn how to perform your Dev and your Ops with cloud technologies: it's a very generous offer. 
