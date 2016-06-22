@@ -24,5 +24,7 @@ Dare means a funny or hard to do task. It may be sport exercise, eating not deli
 There is actually no winner because it is not a competition.
 Also I know that there are movie and a book (movie isn't based on a book) about truth or dare (actually they are called "Truth or dare")
 
+http://all4desktop.com/data_images/original/4242193-game.jpg
+
 
 
