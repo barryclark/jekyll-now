@@ -4,12 +4,10 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+I'm from Taraz, I have studied in NIS PM Almaty, used to like dancing
 
-### More Information
+Now I'm studying in NIS CB Almaty, I like programming and designing
 
-A place to include any other types of information that you'd like to include about yourself.
+In the future I want to travel in space and be an austronaut
 
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+contact me: sana.chinaliyeva@gmail.com
