@@ -16,3 +16,5 @@ Scientist is a kind of tester. Testers are often hired as a temporary staff, and
 Artists are creators of visual look of the game. They make make rough sketches of the characters, setting, objects, etc. After all of these are made and game is going to move forward artists bring those sketches to life through graphic design.
 
 Probably that's it, in general, developers seem to be like that. By the way I defined roles how I understand so your opinion can be different. If you have any question contact me (link in a bio) :)
+
+![_config.yml](http://stewart21.weebly.com/uploads/3/9/0/1/39017849/4329333_orig.jpg)
