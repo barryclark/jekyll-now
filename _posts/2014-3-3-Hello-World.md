@@ -10,8 +10,7 @@ Game should consist of: 1) rules of play
                         3)story
  
  ---
-layout: post
-title: My favourite game!
+ My favourite game!
 ---
 I don't play video games so my fav game is truth or dare. When we go out with friends we really like playing that game. Rules of this game can be changed, it's up to people who play. Our playing rules: you need more than one players. The minimum is two players, but we recommend you to have at least 4 players.
 
