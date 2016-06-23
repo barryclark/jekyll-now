@@ -10,4 +10,10 @@ Now I'm studying in NIS CB Almaty, I like programming and designing
 
 In the future I want to travel in space and be an austronaut
 
-contact me: sana.chinaliyeva@gmail.com
+ 
+---
+title: Contact me!
+---
+e-mail address: sana.chinaliyeva@gmail.com
+social networks: vk.com/sanabanana2016
+mobile number: +77017143852
