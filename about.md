@@ -13,6 +13,7 @@ In the future I want to travel in space and be an austronaut
  
 ---
 title: Contact me!
+permalink: /about/
 ---
 e-mail address: sana.chinaliyeva@gmail.com
 social networks: vk.com/sanabanana2016
