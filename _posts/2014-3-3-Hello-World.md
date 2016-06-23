@@ -1,10 +1,15 @@
 ---
 layout: post
-title: You're up and running!
+title: my favorite game is ...
 ---
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+[_config.yml]({{ site.baseurl }}/images/w.i.t.c.h..jpeg)
+In my first post i'd like to write about my favorite game which I played in my childhood. Because the game get me amazing memories and imression. I still like this gsme and sometimes play it. may be you know this old but cool game. 
+"WITCH" - is my favorite game, comic strip and cartoon. This game i play on gameboy. i think you remember what is this. The gameboy was bought eight years ago but it still work.
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
+rules of the game:
+My game is platformer and go only right;
+the characters have got a power of magic or can hit and kick. So they can attack their enemies;
+some characters can fly and every characters can jump and creep.
 
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
+[_config.yml]({{ site.baseurl }}/bd/imgbiggba/5536.jpg)
