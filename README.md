@@ -83,7 +83,18 @@ $ docker run --rm --label=jekyll --volume=$(pwd):/srv/jekyll \
 
 If everything works out, the jekyll server will serve the blog preview on `http://<ip of your docker machine>:4000`. More information on running jekyll inside docker can be found here: [github.com/jekyll/docker](https://github.com/jekyll/docker).
 
-### Setting up jekyll using Kitematic###
+#### Using docker for Mac and Windows beta
+
+Using docker for Mac and Windows beta, the command looks a little simpler, as `docker-machine` is not involved:
+
+```sh
+$ docker run --rm --label=jekyll --volume=$(pwd):/src/jekyll \
+   -it -p 4000:4000 jekyll/jekyll:pages
+```
+
+Jekyll will then be served from [localhost](http://localhost:4000), just like from Linux.
+
+### Setting up jekyll using Kitematic
 
 If you are working with Kitematic (which has fewer proxy issues behind company firewalls than the Quickstart terminal), follow these steps:
 
