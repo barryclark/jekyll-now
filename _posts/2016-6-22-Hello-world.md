@@ -11,6 +11,7 @@ Game should consist of: 1) rules of play
  
  ---
  My favourite game!
+ ![_config.yml](http://all4desktop.com/data_images/original/4242193-game.jpg) 
 ---
 I don't play video games so my fav game is truth or dare. When we go out with friends we really like playing that game. Rules of this game can be changed, it's up to people who play. Our playing rules: you need more than one players. The minimum is two players, but we recommend you to have at least 4 players.
 
@@ -24,7 +25,7 @@ Dare means a funny or hard to do task. It may be sport exercise, eating not deli
 There is actually no winner because it is not a competition.
 Also I know that there are movie and a book (movie isn't based on a book) about truth or dare (actually they are called "Truth or dare")
 
-![_config.yml](http://all4desktop.com/data_images/original/4242193-game.jpg) 
+
 
 
 
