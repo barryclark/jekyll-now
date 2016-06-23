@@ -14,6 +14,9 @@ In the future I want to travel in space and be an austronaut
 ---
  Contact me!
 ---
+
 e-mail address: sana.chinaliyeva@gmail.com
+
 social networks: vk.com/sanabanana2016
+
 mobile number: +77017143852
