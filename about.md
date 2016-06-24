@@ -4,12 +4,9 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
-
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
+Hello! My name is Thiago Montovaneli and I live in ES, Brazil.
+I have developed web systems since 2007. During these years, I have worked with Java language and all frameworks in its world: JavaEE, Hibernate, JSF, JBoss Seam, Eclipse IDE, etc. Since I have developed web systems, I have coded with JavaScript, JQuery, JqueryUI as well a little CSS3.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[thiagomontovaneli@gmail.com](mailto:thiagomontovaneli@gmail.com)
