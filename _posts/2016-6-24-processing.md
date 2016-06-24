@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Incredible world of processing!
+title: Inspired by LOVE!
 ---
  ![_config.yml](https://qzprod.files.wordpress.com/2015/09/ap_938211103727.jpg?quality=80&strip=all&w=1600)
  
