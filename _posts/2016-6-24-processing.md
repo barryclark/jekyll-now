@@ -2,7 +2,8 @@
 layout: post
 title: Incredible world of processing!
 ---
- ![_config.yml](https://qzprod.files.wordpress.com/2015/09/ap_938211103727.jpg?quality=80&strip=all&w=1600
+ ![_config.yml](https://qzprod.files.wordpress.com/2015/09/ap_938211103727.jpg?quality=80&strip=all&w=1600)
+ 
  Last 2 days we did processing. I have already written a post about my first animations. After the lunch we tried something new - working with images.
 
  I expected being bored but when I saw how pretty it can be I was shocked, pleasently shocked. I took a picture of the love of my life - Jesse Eisenberg :D
