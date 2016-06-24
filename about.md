@@ -11,7 +11,7 @@ Right now, I'm working as a software developer in [Quintly](https://www.quintly.
 is to apply the skills I have acquired in developing interesting features.
 
 
-The main intention behind this blog is to deepen my understanding of the subject, improve my writing skills and 
+The main intention of this blog is to deepen my understanding of the subject, improve my writing skills and 
 also to share my knowledge with people in my circle.
 
 ---
