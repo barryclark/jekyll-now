@@ -20,8 +20,3 @@ also to share my knowledge with people in my circle.
 - _Yogi Bhajan_
 
 ---
-
-
-### Contact me
-
-[raj1514@gmail.com](mailto:raj1514@gmail.com)
