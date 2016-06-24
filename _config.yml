@@ -6,7 +6,7 @@
 name: World 2.0
 
 # Short bio or description (displayed in the header)
-description: A beginner's guide to machine learning
+description: A Beginner's Guide to Machine Learning
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: http://www.theveox.com/wp-content/uploads/2016/05/machine-learning-ai-artificial-intelligence-e1462471461626-840x487.jpg
@@ -19,7 +19,7 @@ avatar: http://www.theveox.com/wp-content/uploads/2016/05/machine-learning-ai-ar
 footer-links:
   dribbble:
   email: mailto:raj1514@gmail.com
-  facebook:
+  facebook: profile.php?id=100000210350579
   flickr:
   github: rajcscw
   instagram: rajkumar_rrk
