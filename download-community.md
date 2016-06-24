@@ -21,7 +21,7 @@ Both 32 and 64 bit versions of Manjaro are available in the following flavours (
   - [manjaro-budgie 16.06.1 (64 bit)](https://sourceforge.net/projects/manjarolinux/files/community/Budgie/2016.06/16.06.1/x86_64/manjaro-budgie-community-16.06.1-x86_64.iso)
    `SHA1SUM: 36282fb1ac925c8c0fd468aa39e9a3e045f0abb4`
   - [manjaro-budgie 16.06.1 (32 bit)](https://sourceforge.net/projects/manjarolinux/files/community/Budgie/2016.06/16.06.1/i686/manjaro-budgie-community-16.06.1-i686.iso)
-   `SHA1SUM: 4363bc1c23ea20f39b5b24e3dce975493956138b`
+   `SHA1SUM: 4363bc1c23ea20f39b5b24e3dce975493956138b`  
 [**Details**](https://forum.manjaro.org/t/manjaro-budgie-16-06-1)
 
 ## BspWM
@@ -75,7 +75,7 @@ Both 32 and 64 bit versions of Manjaro are available in the following flavours (
   - [manjaro-jwm 16.06.1 (64 bit)](https://sourceforge.net/projects/manjarolinux/files/community/JWM/2016.06/manjaro-jwm-community-16.06.1-x86_64-19616.iso)
    `SHA1SUM: a17a1373af07fe2195d4ff1e2a54f176c7345dd5`
   - [manjaro-jwm 16.06.1 (32 bit)](https://sourceforge.net/projects/manjarolinux/files/community/JWM/2016.06/manjaro-jwm-community-16.06.1-i686-19616.iso)
-   `SHA1SUM: e0d60afef761765c3fdbaab4428c96658adc5223`
+   `SHA1SUM: e0d60afef761765c3fdbaab4428c96658adc5223`  
 [**Details**](https://forum.manjaro.org/t/manjaro-jwm-16-06-1-released)
 
 ## Lxqt
