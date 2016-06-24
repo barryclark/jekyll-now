@@ -9,6 +9,8 @@ title: Incredible world of processing!
 
  Firstly I did just normally then changed my code by combinig code of my previous scetch (animation) with a new one. You MUST see it! I really fell in love with that.
  
- Here are some links on my mini-projects: external_url: sanachinaliyeva.github.io/jesse
-external_url: sanachinaliyeva.github.io/jesseanimation
-external_url: https://sanachinaliyeva.github.io/animation/
+ Here are some links on my mini-projects: [ https://sanachinaliyeva.github.io/jesse/]({% post_url 2016-6-24-animation.md %})
+ 
+ [ https://sanachinaliyeva.github.io/jesseanimation/]({% post_url 2016-6-24-animation.md %})
+ 
+ [ https://sanachinaliyeva.github.io/animation/]({% post_url 2016-6-24-animation.md %})
