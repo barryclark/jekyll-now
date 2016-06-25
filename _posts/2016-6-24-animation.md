@@ -9,4 +9,4 @@ title: Amazing processing!
  ![_config.yml](https://pp.vk.me/c626321/v626321291/15b10/Mg_mirDYBxM.jpg)
 
 
- Look how it moves here:[ https://sanachinaliyeva.github.io/animation/]({% post_url 2016-6-24-animation.md %})
+ Look how it moves [here]( https://sanachinaliyeva.github.io/animation/)
