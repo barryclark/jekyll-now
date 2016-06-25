@@ -10,8 +10,4 @@ title: Inspired by LOVE!
 
  Firstly I did just normally then changed my code by combinig code of my previous scetch (animation) with a new one. You MUST see it! I really fell in love with that.
  
- Here are some links on my mini-projects: [link](https://sanachinaliyeva.github.io/jesse/)
- 
- [link](https://sanachinaliyeva.github.io/jesseanimation/)
- 
- [link](https://sanachinaliyeva.github.io/animation/)
+ Here are some links on my mini-projects: [link](https://sanachinaliyeva.github.io/jesse/),  [link](https://sanachinaliyeva.github.io/jesseanimation/), [link](https://sanachinaliyeva.github.io/animation/)
