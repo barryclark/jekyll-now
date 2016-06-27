@@ -4,12 +4,8 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
-
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
+I am an application support analyst that is looking to branch out into a bit more development.  
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[Message Me on Twitter](https://twitter.com/Izulien "Izulien's Twitter")
