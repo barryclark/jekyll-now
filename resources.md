@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Learning and Reference Resources
+title: Resources
 permalink: /Resources/
 ---
 
