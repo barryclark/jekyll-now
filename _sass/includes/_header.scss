@@ -1,0 +1,53 @@
+.site-header {
+  @extend %padding-small;
+  background: $brand-color;
+  border-bottom: 1px solid $border-color;
+  display: inline-block;
+  float: left;
+  width: 100%;
+
+  a {
+    color: $header-link-color;
+  }
+
+  .avatar {
+    height: 2em;
+    width: 2em;
+    float: left;
+    margin-top: -3px;
+    border-radius: 0.2em;
+    margin-right: 1em;
+  }
+
+  .site-title {
+    float: left;
+    font-weight: bold;
+    font-size: 1em;
+    line-height: 1.5;
+  }
+
+  .site-nav {
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      line-height: 1.5;
+      float: right;
+      text-align: right;
+    }
+    li {
+      display: inline;
+      float: left;
+      margin-right: 0.4em;
+    }
+    @media (max-width: 1100px) {
+      ul {
+        display: inline-block;
+        float: left;
+        padding-top: $padding-small;
+        text-align: left;
+        width: 100%;
+      }
+    }
+  }
+}

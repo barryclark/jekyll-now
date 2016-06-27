@@ -2,14 +2,12 @@
 layout: page
 title: About
 permalink: /about/
+feature-img: "img/sample_feature_img_2.png"
 ---
 
-Some information about you!
+A deep thinker, loves to code, read and pen down his thoughts. An IIT Bombay alumnus. Software developer at Intuit India.   
 
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[Anand's Mailbox](mailto:anand.92.soni@gmail.com)
