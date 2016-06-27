@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+figure {
+  margin: 0;
+}
+// For correct line number width in Github Gists
+.gist table tbody tr td {
+  box-sizing: content-box;
+}
+html {
+  background: $background-color;
+}
+
+// Typography
+::selection {
+  background: $selection-color;
+}
+::-moz-selection {
+  background: $selection-color;
+}
+body {
+  color: $text-color;
+  font-family: $font-family-main;
+  font-size: $font-size;
+  word-wrap: break-word;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family-headings;
+  line-height: 1.3;
+  margin: 0.67em 0;
+  a {
+    color: $text-color;
+  }
+}
+h1 {
+  font-size: 2.5em;
+}
+h2 {
+  font-size: 2em;
+}
+h3 {
+  font-size: 1.5em;
+}
+h4 {
+  font-size: 1.15em;
+}
+blockquote {
+    border-left: 2px solid;
+    padding: 1em 1em;
+}
+blockquote p:last-child,
+footer p:last-child {
+  margin-bottom: 0;
+}
+table {
+  table-layout:fixed;
+  width:100%;
+  word-wrap:break-word;
+  @media (max-width: 1100px) {
+    overflow-x: scroll;
+    display: inline-block;
+  }
+}
+td,
+th {
+  padding: 0.5em 1em;
+  border: 1px solid $border-color;
+  text-align: left;
+}
+table,
+dl,
+blockquote,
+code,
+kbd,
+pre,
+samp {
+  margin: 1em 0;
+}
+dt {
+  font-weight: bold;
+}
+dd {
+    margin-left: 2em;
+}
+p, ol, ul, dl, .math-display {
+  line-height: 1.5;
+  margin-bottom: 1em;
+}
+// KaTeX math display
+.math-display {
+  display: inline-block;
+  width: 100%;
+}
+// Lists within lists
+li > ul, li > ol {
+    margin-bottom: 0;
+    margin-left: 1em;
+}
+ol, ul {
+  list-style-position: inside;
+}
+hr {
+  border: 0;
+  border-top: 1px solid $border-color;
+  border-bottom: 1px solid #fff;
+  margin: 1em 0;
+}
+a {
+  color: $link-color;
+  text-decoration: none;
+}
+.nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+// Responsive media
+iframe, img, embed, object, video {
+  max-width: 100%;
+}
+img[align=left] {
+  margin-right: 3%;
+}
+img[align=right] {
+  margin-left: 3%;
+}
