@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Learning References and Resources
-permalink: /Resources/
+permalink: /resources/
 ---
 
 Here is a list of potiential learning or reference resources that I've either used or think look interesting and may investigate at a future date.
