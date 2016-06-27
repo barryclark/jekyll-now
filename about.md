@@ -4,12 +4,19 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Hi! I'm Raj, originally from India. I just finished M.Sc. in Media Informatics from RWTH Aachen University, Germany.
+My field of interest during my course of study is Machine Learning. 
 
-### More Information
+Right now, I'm working as a software developer in [Quintly](https://www.quintly.com/). The primary focus of my work
+is to apply the skills I have acquired in developing interesting features.
 
-A place to include any other types of information that you'd like to include about yourself.
 
-### Contact me
+The main intention of this blog is to deepen my understanding of the subject, improve my writing skills and 
+also to share my knowledge with people in my circle.
 
-[email@domain.com](mailto:email@domain.com)
+---
+
+"_If you want to learn something, read about it. If you want to understand something, write about it. If you want to master something, teach it_"
+- _Yogi Bhajan_
+
+---
