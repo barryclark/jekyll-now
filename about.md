@@ -4,12 +4,6 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+B.K is an aspiring software engineer and a data believer. Passionate about software development, economical issues, statistics and finance. Fascinated by what can be derived from processed user data.
 
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[baronkwan@outlook.com](mailto:baronkwan@outlook.com)
+As a developer, I love having the power to build meaningful and interesting applications. I consider ways to automate any repetitive task when I encounter one. Currently messing with React.Js to build awesome web/mobile applications.
