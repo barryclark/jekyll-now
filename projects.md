@@ -4,28 +4,39 @@ title: Projects
 permalink: /projects/
 ---
 
-### Projects
+### PROJECTS
 
-[Where-is-it-from?](https://whereisitfrom.herokuapp.com/)
+[Where-is-it-from?](https://whereisitfrom.herokuapp.com/) | [GitHub Repo](https://github.com/BerniceChua/where-is-it-from)
+---
+<em>A mobile web app that built for AThackathon to fight against human trafficking</em>
+```
+- Built with Ruby on Rails
 
-[GitHub Repo](https://github.com/BerniceChua/where-is-it-from) – A mobile web app that built for AThackathon to fight against human trafficking
+- Utilizes Google Vision API to recognize logo/text from the image taken by user
 
-• Built with Rails
-• Utilizes Google Vision API to recognize logo/text from the image taken by user
-• Deploy application to heroku
+- Deploy application to heroku
+```
 
-[Bromazon](https://bromazon.herokuapp.com/)
 
-[GitHub Repo](https://github.com/baronkwan/Bromazon) – Ecommerce Store that with both frontend and backend functionality
+[Bromazon](https://bromazon.herokuapp.com/) | [GitHub Repo](https://github.com/baronkwan/Bromazon)
+---
+<em>Ecommerce Store that with both frontend and backend functionality</em>
+```
+- Built with Ruby on Rails and open source gem Solidus
 
-• Built with Rails and open source gem Solidus
-• Reconstruct layouts with bootstrap
-• Deploy application to heroku
+- Reconstruct layouts with bootstrap
 
-[Github Battle](http://baronkwan.github.io/assets/projects/github_battle/)
+- Deploy application to heroku
+```
 
-[GitHub Repo](https://github.com/baronkwan/github-battle) – Web application that compares two GitHub users based on their activities on GitHub
 
-• Built with React. Renders JSX files using Babel complier
-• Managed modules by using npm and Webpack
-• Utilizes Axios to connect with GitHub’s API
+[Github Battle](http://baronkwan.github.io/assets/projects/github_battle/) | [GitHub Repo](https://github.com/baronkwan/github-battle)
+---
+<em>Web application that compares two GitHub users based on their activities on GitHub</em>
+```
+- Built with React. Renders JSX files using Babel complier
+
+- Managed modules by using npm and Webpack
+
+- Utilizes Axios to connect with GitHub’s API
+```
