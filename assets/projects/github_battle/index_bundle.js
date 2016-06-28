@@ -15328,7 +15328,7 @@
 	      MainContainer,
 	      null,
 	      React.createElement('img', {
-	        src: '../fist_image.png',
+	        src: './fist_image.png',
 	        style: { height: 150, weight: 150 } }),
 	      React.createElement(
 	        'h1',
