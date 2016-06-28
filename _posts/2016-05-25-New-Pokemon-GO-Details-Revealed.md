@@ -2,7 +2,7 @@
 layout: post
 title: New Pokemon GO Details Revealed
 featured: pokemongo.png
-category: video-games
+category: video games
 tags: [video games, pokemon, pokemon go]
 ---
 

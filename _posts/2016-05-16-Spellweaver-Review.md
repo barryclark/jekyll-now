@@ -3,7 +3,7 @@ layout: post
 title: Review - Spellweaver
 category: review
 featured: spellweaver.png
-tags: [video-games, ccg, review, spellweaver, dream reactor]
+tags: [video games, ccg, review, spellweaver, dream reactor]
 ---
 
 Having just [written](http://www.purplepawn.com/2016/05/spell-weaver-dlcs-now-available-on-steam/) about the release of the two new Spellweaver DLC packs, I realized I had never gotten around to actually reviewing the game.

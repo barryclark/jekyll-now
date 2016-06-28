@@ -2,7 +2,7 @@
 layout: post
 title: Eternal Destiny - Animation Card Battle
 featured: eternal-destiny.png
-category: video-games
+category: video games
 tags: [video games, eternal destiny]
 ---
 
