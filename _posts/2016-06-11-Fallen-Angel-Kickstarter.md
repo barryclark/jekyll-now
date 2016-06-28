@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Kickstarter - Fallen Angel
+description: My June Kickstarter pick is Fallen Angel, a sci-fi / fantasy game revolving around rolling and placing dice.
 featured: fallenangel.png
 category: kickstarter
 tags: [games, kickstarter, fallen angel, asteria board game creation]

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Review - VA-11 Hall-A
+description: To be honest, I almost passed on the opportunity to review VA-11 Hall-A. I'm really glad I didn't.
 category: review
 featured: va-llhall-a.png
 tags: [video-games, review, va-11 hall-a, sukeban games]

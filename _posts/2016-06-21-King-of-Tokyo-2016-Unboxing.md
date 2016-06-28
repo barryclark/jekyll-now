@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Unboxing King of Tokyo 2016
+description: To celebrate the 5th anniversary of King of Tokyo there's a new version. Let's unbox it and see what's inside.
 category: unboxing
 featured: kot.jpg
 tags: [games, unboxing, king of tokyo, iello]

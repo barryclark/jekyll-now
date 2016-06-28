@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Discovering Tak - Part 2
+description: Continuing my Tak post, I figured I'd give my initial thoughts on the game.
 category: games
 featured: tak2.jpg
 tags: [games, tak, cheapass games, a wise man's fear, patrick rothfuss]
