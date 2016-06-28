@@ -1,9 +1,4 @@
-{% if page.url == "/" %}
-  {% assign page_offset = 1 %}
-{% else %}
-  {{% assign page_offset = 0 %}
-{% endif %}
-  {% for post in paginator.posts offset:page_offset %}
+  {% for post in paginator.posts %}
   <article class="post">
     <div class="eyebrow">{{ post.date | date: "%d %b %Y" }} {% if post.category %} in <a href="/category/#{{ post.category | slugify }}">{{ post.category }}</a> {% endif %}</div>
     {% if post.featured %}
