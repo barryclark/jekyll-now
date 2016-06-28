@@ -1,5 +1,5 @@
 {% for post in paginator.posts %}
-  {% if post != site.posts.first}
+  {% if post != site.posts.first %}
     <article class="post">
       <div class="eyebrow">{{ post.date | date: "%d %b %Y" }} {% if post.category %} in <a href="/category/#{{ post.category | slugify }}">{{ post.category }}</a> {% endif %}</div>
       {% if post.featured %}
