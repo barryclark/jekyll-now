@@ -1,5 +1,5 @@
-{% for post in paginator.posts %}
-  {% if post != site.posts.first %}
+{% if page.url == "/" %}{% assign poffset = 1 %}{% else poffset = 0%} {% endif %}
+  {% for post in paginator.posts offset:poffset%}
     <article class="post">
       <div class="eyebrow">{{ post.date | date: "%d %b %Y" }} {% if post.category %} in <a href="/category/#{{ post.category | slugify }}">{{ post.category }}</a> {% endif %}</div>
       {% if post.featured %}
@@ -16,5 +16,4 @@
         {% endif %}
       </div>
     </article>
-  {% endif %}
-{% endfor %}
+    {% endfor %}
