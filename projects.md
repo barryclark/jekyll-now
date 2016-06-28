@@ -4,8 +4,6 @@ title: Projects
 permalink: /projects/
 ---
 
-### PROJECTS
-
 [Where-is-it-from?](https://whereisitfrom.herokuapp.com/) | [GitHub Repo](https://github.com/BerniceChua/where-is-it-from)
 ---
 <em>A mobile web app that built for AThackathon to fight against human trafficking</em>
@@ -20,6 +18,13 @@ permalink: /projects/
 
 [Bromazon](https://bromazon.herokuapp.com/) | [GitHub Repo](https://github.com/baronkwan/Bromazon)
 ---
+
+<img src="http://baronkwan.github.io/assets/images/projects/screenshots/myStore-1.png" width="180" />
+<img src="http://baronkwan.github.io/assets/images/projects/screenshots/myStore-3.png" width="180" />
+
+<img src="http://baronkwan.github.io/assets/images/projects/screenshots/myStore-5.png" width="180" />
+<img src="http://baronkwan.github.io/assets/images/projects/screenshots/myStore-6.png" width="180" />
+
 <em>Ecommerce Store that with both frontend and backend functionality</em>
 
 - Built with Ruby on Rails and open source gem Solidus
@@ -32,6 +37,13 @@ permalink: /projects/
 
 [Github Battle](http://baronkwan.github.io/assets/projects/github_battle/) | [GitHub Repo](https://github.com/baronkwan/github-battle)
 ---
+
+<img src="http://baronkwan.github.io/assets/images/projects/screenshots/github_battle-1.png" width="180" />
+<img src="http://baronkwan.github.io/assets/images/projects/screenshots/github_battle-2.png" width="180" />
+
+<img src="http://baronkwan.github.io/assets/images/projects/screenshots/github_battle-4.png" width="180" />
+<img src="http://baronkwan.github.io/assets/images/projects/screenshots/github_battle-5.png" width="180" />
+
 <em>Web application that compares two GitHub users based on their activities on GitHub</em>
 
 - Built with React. Renders JSX files using Babel complier
