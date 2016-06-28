@@ -1,3 +1,5 @@
+> March, 2016: If you're on an old version of Jekyll Now and run into a) build warnings or b) syntax highlighting issues caused by [Jekyll 3 and GitHub Pages updates](https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0), just :sparkles:[update your _config.yml](https://github.com/barryclark/jekyll-now/pull/445/files):sparkles: and you'll be set!
+
 # Jekyll Now
 
 **Jekyll** is a static site generator that's perfect for GitHub hosted blogs ([Jekyll Repository](https://github.com/jekyll/jekyll))
@@ -6,7 +8,7 @@
 
 - You don't need to touch the command line
 - You don't need to install/configure ruby, rvm/rbenv, ruby gems :relaxed:
-- You don't need to install runtime dependancies like markdown processors, Pygments, etc
+- You don't need to install runtime dependencies like markdown processors, Pygments, etc
 - If you're on Windows, this will make setting up Jekyll a lot easier
 - It's easy to try out, you can just delete your forked repository if you don't like it
 
@@ -49,7 +51,7 @@ Edit `/_posts/2014-3-3-Hello-World.md` to publish your first blog post. This [Ma
 ## Local Development
 
 1. Install Jekyll and plug-ins in one fell swoop. `gem install github-pages` This mirrors the plug-ins used by GitHub Pages on your local machine including Jekyll, Sass, etc.
-2. Clone down your fork `git clone git@github.com:yourusername/yourusername.github.io.git`
+2. Clone down your fork `git clone https://github.com/yourusername/yourusername.github.io.git`
 3. Serve the site and watch for markup/sass changes `jekyll serve`
 4. View your website at http://127.0.0.1:4000/
 5. Commit any changes and push everything to the master branch of your GitHub user repository. GitHub Pages will then rebuild and serve your website.
@@ -79,7 +81,7 @@ It covers:
 ✓ SVG social icons for your footer  
 ✓ 3 http requests, including your avatar  
 
-✘ No installing dependancies  
+✘ No installing dependencies
 ✘ No need to set up local development  
 ✘ No configuring plugins  
 ✘ No need to spend time on theming  
