@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Unboxing Storyline Fairy Tales
+description: Storyline: Fairy Tales contains only cards and tokens, but the production value is excellent. Let's unbox it and see what's inside.
 category: unboxing
 featured: storyline.png
 tags: [games, unboxing, storyline, asmodee]
