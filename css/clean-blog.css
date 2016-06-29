@@ -193,6 +193,12 @@ hr.small {
 @media only screen and (min-width: 768px) {
   .intro-header .site-heading h1,
   .intro-header .page-heading h1 {
+    font-size: 65px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .intro-header .site-heading h1,
+  .intro-header .page-heading h1 {
     font-size: 80px;
   }
 }
