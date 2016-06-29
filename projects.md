@@ -4,7 +4,8 @@ title: Projects
 permalink: /projects/
 ---
 
----
+<div>
+
 Links: [Where-is-it-from? on Heroku](https://whereisitfrom.herokuapp.com/) | [GitHubRepo](https://github.com/BerniceChua/where-is-it-from)
 
 <em>A mobile web app that built for AThackathon to fight against human trafficking</em>
@@ -15,7 +16,9 @@ Links: [Where-is-it-from? on Heroku](https://whereisitfrom.herokuapp.com/) | [Gi
 
 - Deploy application to heroku
 
+</div>
 
+<div>
 
 Links: [Bromazon on Heroku](https://bromazon.herokuapp.com/) | [GitHub Repo](https://github.com/baronkwan/Bromazon)
 
@@ -34,7 +37,9 @@ Links: [Bromazon on Heroku](https://bromazon.herokuapp.com/) | [GitHub Repo](htt
 
 - Deploy application to heroku
 
+</div>
 
+<div>
 
 Links: [Github Battle](http://baronkwan.github.io/assets/projects/github_battle/) | [GitHub Repo](https://github.com/baronkwan/github-battle)
 
@@ -53,4 +58,4 @@ Links: [Github Battle](http://baronkwan.github.io/assets/projects/github_battle/
 
 - Utilizes Axios to connect with GitHub’s API
 
----
+</div>
