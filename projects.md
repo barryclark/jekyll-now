@@ -3,7 +3,7 @@ layout: page
 title: Projects
 permalink: /projects/
 ---
-
+```
 [[Where-is-it-from? on Heroku]](https://whereisitfrom.herokuapp.com/) | [[GitHubRepo]](https://github.com/BerniceChua/where-is-it-from)
 ---
 <em>A mobile web app that built for AThackathon to fight against human trafficking</em>
@@ -13,8 +13,9 @@ permalink: /projects/
 - Utilizes Google Vision API to recognize logo/text from the image taken by user
 
 - Deploy application to heroku
+```
 
-
+```
 [[Bromazon on Heroku]](https://bromazon.herokuapp.com/) | [[GitHub Repo]](https://github.com/baronkwan/Bromazon)
 ---
 
@@ -28,8 +29,9 @@ permalink: /projects/
 - Reconstruct layouts with bootstrap
 
 - Deploy application to heroku
+```
 
-
+```
 [[Github Battle]](http://baronkwan.github.io/assets/projects/github_battle/) | [[GitHub Repo]](https://github.com/baronkwan/github-battle)
 ---
 
@@ -43,4 +45,4 @@ permalink: /projects/
 - Managed modules by using npm and Webpack
 
 - Utilizes Axios to connect with GitHub’s API
-
+```
