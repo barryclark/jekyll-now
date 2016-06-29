@@ -48,7 +48,8 @@ hr.small {
   border-color: white;
 }
 .navbar-custom {
-  background: white;
+  background: transparent;
+  border: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -61,10 +62,26 @@ hr.small {
 }
 .navbar-custom .nav li a {
   text-transform: uppercase;
+  text-decoration: none;
   font-size: 12px;
   font-weight: 800;
   letter-spacing: 1px;
 }
+
+.navbar-default .navbar-toggle {
+  border: none;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+    height: 3px;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  background: #fff;
+  border: none;
+}
+
 @media only screen and (min-width: 768px) {
   .navbar-custom {
     background: transparent;
@@ -377,6 +394,7 @@ form .row:first-child .floating-label-form-group {
 .pager li > span {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-transform: uppercase;
+  text-decoration: none;
   font-size: 14px;
   font-weight: 800;
   letter-spacing: 1px;
