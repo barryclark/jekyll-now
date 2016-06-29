@@ -167,7 +167,7 @@ hr.small {
 .intro-header .site-heading h1,
 .intro-header .page-heading h1 {
   margin-top: 0;
-  font-size: 50px;
+  font-size: 40px;
 }
 .intro-header .site-heading .subheading,
 .intro-header .page-heading .subheading {
@@ -177,6 +177,12 @@ hr.small {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 300;
   margin: 10px 0 0;
+}
+@media only screen and (min-width: 600px) {
+  .intro-header .site-heading h1,
+  .intro-header .page-heading h1 {
+    font-size: 50px;
+  }
 }
 @media only screen and (min-width: 768px) {
   .intro-header .site-heading h1,
