@@ -8,7 +8,7 @@ PhD student at Gent university Belgium. Interested in a whole lot of topics in s
 
 ### More Information
 
-Presently working on a European project (http://www.requite.eu/). 
+Presently working on a European project (<http://www.requite.eu/>). 
 
 Validating Predictive Models and Biomarkers of Radiotherapy Toxicity to Reduce Side-Effects and Improve Quality of Life in Cancer Survivors
 
