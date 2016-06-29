@@ -19,10 +19,7 @@ permalink: /projects/
 ---
 
 <img src="http://baronkwan.github.io/assets/images/projects/screenshots/myStore-1.png" width="180" />
-<img src="http://baronkwan.github.io/assets/images/projects/screenshots/myStore-3.png" width="180" />
-
 <img src="http://baronkwan.github.io/assets/images/projects/screenshots/myStore-5.png" width="180" />
-<img src="http://baronkwan.github.io/assets/images/projects/screenshots/myStore-6.png" width="180" />
 
 <em>Ecommerce Store that with both frontend and backend functionality</em>
 
@@ -37,9 +34,6 @@ permalink: /projects/
 ---
 
 <img src="http://baronkwan.github.io/assets/images/projects/screenshots/github_battle-1.png" width="180" />
-<img src="http://baronkwan.github.io/assets/images/projects/screenshots/github_battle-2.png" width="180" />
-
-<img src="http://baronkwan.github.io/assets/images/projects/screenshots/github_battle-4.png" width="180" />
 <img src="http://baronkwan.github.io/assets/images/projects/screenshots/github_battle-5.png" width="180" />
 
 <em>Web application that compares two GitHub users based on their activities on GitHub</em>
