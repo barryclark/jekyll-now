@@ -1,6 +1,7 @@
 ---
 layout: post
 title: The Long Road Ahead
+description: I decided to sit down and take inventory of everything that's come in recently. In line with my estimates, I've got 50 games on the dot that need to get played and reviewed.
 category: news
 featured: longroad.png
 tags: [games, news]

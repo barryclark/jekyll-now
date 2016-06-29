@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Unboxing Mega Man
+description: Mega Man is a game I've been waiting to get my hands on for a while now. Let's unbox it and see what's inside.
 category: unboxing
 featured: megaman.png
 tags: [games, unboxing, mega man, jasco games]

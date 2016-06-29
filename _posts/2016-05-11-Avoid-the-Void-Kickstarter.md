@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Kickstarter - Avoid the Void
+description: One of the things I don't regularly do is back Kickstarter projects. I'd like to change that a bit here on A Pawn's Perspective.
 featured: avoidthevoid.png
 category: kickstarter
 tags: [games, kickstarter, avoid the void, geek fever games]

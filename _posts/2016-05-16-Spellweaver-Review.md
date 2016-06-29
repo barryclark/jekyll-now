@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Review - Spellweaver
+description: Having just written about the release of the two new Spellweaver DLC packs, I realized I had never gotten around to actually reviewing the game.
 category: review
 featured: spellweaver.png
 tags: [video games, ccg, review, spellweaver, dream reactor]

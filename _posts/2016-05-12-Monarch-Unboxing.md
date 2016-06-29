@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Unboxing Monarch
+description: Monarch gameplay is simple, fast, and tight. Let's unbox it and see what's inside.
 category: unboxing
 featured: monarch.png
 tags: [games, unboxing, monarch, Mary Flanagan]
