@@ -52,4 +52,5 @@ Links: [Github Battle](http://baronkwan.github.io/assets/projects/github_battle/
 - Managed modules by using npm and Webpack
 
 - Utilizes Axios to connect with GitHub’s API
+
 ---
