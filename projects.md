@@ -5,7 +5,7 @@ permalink: /projects/
 ---
 
 [[Where-is-it-from? on Heroku]](https://whereisitfrom.herokuapp.com/) | [[GitHubRepo]](https://github.com/BerniceChua/where-is-it-from)
-
+---
 <em>A mobile web app that built for AThackathon to fight against human trafficking</em>
 
 - Built with Ruby on Rails
@@ -16,7 +16,7 @@ permalink: /projects/
 
 
 [[Bromazon on Heroku]](https://bromazon.herokuapp.com/) | [[GitHub Repo]](https://github.com/baronkwan/Bromazon)
-
+---
 
 <img src="http://baronkwan.github.io/assets/images/projects/screenshots/myStore-1.png" width="180" />
 <img src="http://baronkwan.github.io/assets/images/projects/screenshots/myStore-3.png" width="180" />
@@ -34,7 +34,7 @@ permalink: /projects/
 
 
 [[Github Battle]](http://baronkwan.github.io/assets/projects/github_battle/) | [[GitHub Repo]](https://github.com/baronkwan/github-battle)
-
+---
 
 <img src="http://baronkwan.github.io/assets/images/projects/screenshots/github_battle-1.png" width="180" />
 <img src="http://baronkwan.github.io/assets/images/projects/screenshots/github_battle-2.png" width="180" />
