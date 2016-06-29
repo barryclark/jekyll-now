@@ -1,10 +1,10 @@
 ---
 layout: page
-title: About
+title: About Chamberlain  Mbah
 permalink: /about/
 ---
 
-Some information about you!
+PhD student at Gent university Belgium. Interesting in a whole lot of topics in statistics. From applied to methodological work. 
 
 ### More Information
 
