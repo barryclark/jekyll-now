@@ -5,8 +5,7 @@ permalink: /projects/
 ---
 
 ---
-
-Links: [Where-is-it-from? on Heroku](https://whereisitfrom.herokuapp.com/), [GitHubRepo](https://github.com/BerniceChua/where-is-it-from)
+Links: [Where-is-it-from? on Heroku](https://whereisitfrom.herokuapp.com/) | [GitHubRepo](https://github.com/BerniceChua/where-is-it-from)
 
 <em>A mobile web app that built for AThackathon to fight against human trafficking</em>
 
@@ -18,7 +17,7 @@ Links: [Where-is-it-from? on Heroku](https://whereisitfrom.herokuapp.com/), [Git
 
 
 
-Links: [Bromazon on Heroku](https://bromazon.herokuapp.com/), [GitHub Repo](https://github.com/baronkwan/Bromazon)
+Links: [Bromazon on Heroku](https://bromazon.herokuapp.com/) | [GitHub Repo](https://github.com/baronkwan/Bromazon)
 
 
 <img src="http://baronkwan.github.io/assets/images/projects/screenshots/myStore-1.png" width="180" />
@@ -37,7 +36,7 @@ Links: [Bromazon on Heroku](https://bromazon.herokuapp.com/), [GitHub Repo](http
 
 
 
-Links: [Github Battle](http://baronkwan.github.io/assets/projects/github_battle/), [GitHub Repo](https://github.com/baronkwan/github-battle)
+Links: [Github Battle](http://baronkwan.github.io/assets/projects/github_battle/) | [GitHub Repo](https://github.com/baronkwan/github-battle)
 
 
 <img src="http://baronkwan.github.io/assets/images/projects/screenshots/github_battle-1.png" width="180" />
@@ -53,3 +52,4 @@ Links: [Github Battle](http://baronkwan.github.io/assets/projects/github_battle/
 - Managed modules by using npm and Webpack
 
 - Utilizes Axios to connect with GitHub’s API
+---
