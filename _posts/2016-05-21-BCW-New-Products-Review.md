@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Review - New BCW Products
+description: Every once and a while BCW shoots me some samples of their new products to take a look at. It's nice, seeing as I'm a huge fan of their line of stuff.
 category: review
 featured: commanderlt.png
 tags: [ccg, review, games, accessories, BCW]

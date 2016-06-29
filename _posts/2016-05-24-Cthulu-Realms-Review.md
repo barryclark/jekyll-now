@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Review - Cthulhu Realms
+description: For fans of Star Realms who are also into Lovecraft, Cthulhu Realms is a no brainer.
 category: review
 featured: cthulhurealms.png
 tags: [video games, deck-building, star realms, cthulhu realms, white wizard games]

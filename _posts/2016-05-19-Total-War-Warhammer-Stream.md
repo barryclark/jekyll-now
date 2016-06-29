@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Total War - WARHAMMER Stream
+description: I did a quick stream of the Total War - WARHAMMER Stream's Campaign Mode using the Empire and running through the tutorial.
 category: streaming
 featured: totalwar.png
 tags: [video games, streaming, sega, games workshop, total war, warhammer]
