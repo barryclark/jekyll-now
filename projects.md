@@ -5,7 +5,7 @@ permalink: /projects/
 ---
 
 ---
-[Where-is-it-from?](https://whereisitfrom.herokuapp.com/)
+Link to project: [Where-is-it-from?](https://whereisitfrom.herokuapp.com/)
 
 [GitHub Repo](https://github.com/BerniceChua/where-is-it-from)
 
@@ -19,7 +19,8 @@ permalink: /projects/
 
 
 
-[Bromazon](https://bromazon.herokuapp.com/)
+Link to project: [Bromazon](https://bromazon.herokuapp.com/)
+
 [GitHub Repo](https://github.com/baronkwan/Bromazon)
 
 
@@ -39,7 +40,8 @@ permalink: /projects/
 
 
 
-[Github Battle](http://baronkwan.github.io/assets/projects/github_battle/)
+Link to project: [Github Battle](http://baronkwan.github.io/assets/projects/github_battle/)
+
 [GitHub Repo](https://github.com/baronkwan/github-battle)
 
 
