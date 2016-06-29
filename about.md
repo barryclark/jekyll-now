@@ -4,12 +4,17 @@ title: About Chamberlain  Mbah
 permalink: /about/
 ---
 
-PhD student at Gent university Belgium. Interesting in a whole lot of topics in statistics. From applied to methodological work. 
+PhD student at Gent university Belgium. Interested in a whole lot of topics in statistics. From applied to methodological work. 
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+Presently working on a European project (http://www.requite.eu/). 
+
+Validating Predictive Models and Biomarkers of Radiotherapy Toxicity to Reduce Side-Effects and Improve Quality of Life in Cancer Survivors
+
+The purpose of this international study is to try to predict which patients are more likely to have side effects from radiotherapy, based on their characteristics. 
+  
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[chamberlain.mbah@ugent.be](mailto:chamberlain.mbah@ugent.be)
