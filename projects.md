@@ -6,6 +6,10 @@ permalink: /projects/
 
 [[Where-is-it-from? on Heroku]](https://whereisitfrom.herokuapp.com/) | [[GitHubRepo]](https://github.com/BerniceChua/where-is-it-from)
 ---
+
+<img src="http://baronkwan.github.io/assets/images/projects/screenshots/whereisitfrom_01.png" width="180" />
+<img src="http://baronkwan.github.io/assets/images/projects/screenshots/whereisitfrom_02.png" width="180" />
+
 <em>A mobile web app that built for AThackathon to fight against human trafficking</em>
 
 - Built with Ruby on Rails
