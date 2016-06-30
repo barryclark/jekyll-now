@@ -17,6 +17,8 @@ Part of the fun of the original Triple Triad was having control over your deck. 
 
 <img src="/images/cardmaster/cards.jpg" class="float-right" alt="Card Master Cards"/>All in all I'm already having fun with the cards. The prototype deck I got is crude, but gets the job done. The final decks will look the same, but me professionally manufactured. Also, if people pony up the money when the Kickstarter hits, other monsters my be included on the cards. Right now only the standard Card Master blue and red monsters will be featured on every card. It almost makes me want to design my own custom deck with more designs, but I have absolutely no skill in doing such things.
 
-Will Card Master be worth it? Depends on the final cost of the game. I believe the Kickstarter can be successful when it launches, but the price needs to be right. I couldn't see paying more than, say, $10-$12 for the game.
+Will Card Master be worth it? Depends on the final cost of the game. I believe the Kickstarter can be successful when it launches, but the price needs to be right. I couldn't see paying more than, say, $10-$12 for the game. If designer Jeff Hurcomb can make that happen, it'd be a great thing.
+
+The Kickstarter campaign should be starting soon, so keep your eyes peeled.
 
 *A prototype Card Master deck was sent over free for preview purposes*
