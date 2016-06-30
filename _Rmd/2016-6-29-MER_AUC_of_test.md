@@ -40,7 +40,7 @@ hist(D_pos,breaks=50,xlim=c(-8,8),col=rgb(1,0,0,0.5),xlab=" ",main="Postive and 
 hist(D_neg,breaks=50,add=T,col=rgb(0,0,1,0.5))
 ```
 
-![](2016-6-29-MER_AUC_of_test_files/figure-markdown_github/unnamed-chunk-1-1.png)<!-- -->
+![](2016-6-29-MER_AUC_of_test_files/figure-markdown_github/unnamed-chunk-1-1.png)
 
 The misclassification error rate (MER) of *D* is given by:
 $$
@@ -92,7 +92,7 @@ hist(AUC_emp,breaks=50,main="",xlab = "Empirical auc error")
 abline(v=AUC_theo,lwd=2,col="red")
 ```
 
-![](2016-6-29-MER_AUC_of_test_files/figure-markdown_github/unnamed-chunk-2-1.png)<!-- -->
+![](2016-6-29-MER_AUC_of_test_files/figure-markdown_github/unnamed-chunk-2-1.png)
 
 ``` r
 #Biases
