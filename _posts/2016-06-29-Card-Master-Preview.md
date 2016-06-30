@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Card Master Preview
-description: Continuing my Tak post, I figured I'd give my initial thoughts on the game.
+description: Card Master is a Triple Triad clone by Jeff Hurcomb, but does it live up to the classic Final Fantasy 8 mini-game?
 category: preview
 featured: cardmaster.png
 tags: [games, preview, card master, triple triad]
