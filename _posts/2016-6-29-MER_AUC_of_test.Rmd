@@ -1,8 +1,8 @@
 ---
 title: Misclassification error rate, ROC and AUC of a normally distributed prognostic
   test
-author: John Doe
-date: March 22, 2005
+author: Chamberlain
+date: June 30, 2016
 output: github_document
 ---
 

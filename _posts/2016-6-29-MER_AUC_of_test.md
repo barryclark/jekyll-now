@@ -1,7 +1,7 @@
 Misclassification error rate, ROC and AUC of a normally distributed prognostic test
 ================
-John Doe
-March 22, 2005
+Chamberlain
+June 30, 2016
 
 A test can be a medical test for the presence of a given disease, a test of strength of a material in an industrial setting, or in an educational setting a test to determine the level of understanding of students.
 
