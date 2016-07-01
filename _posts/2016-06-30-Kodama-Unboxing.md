@@ -7,7 +7,7 @@ featured: kodama.jpg
 tags: [games, unboxing, kodama, daniel solis, action phase games]
 ---
 
-Daniel Solis is an amazing game designer. I haven't played a game of his that I didn't like. A while Daniel had created a card game called [Kigi](http://www.drivethrucards.com/product/139066/Kigi), a beautiful game about painting the most lovely trees. It was self-published and sold through DriveThruCards. A while later Action Phase Games picked up the game, rethemed it, and had Daniel flesh it out and refine it bit more. Thus Kodama was born.
+Daniel Solis is an amazing game designer. I haven't played a game of his that I didn't like. A while Daniel had created a card game called [Kigi](http://www.drivethrucards.com/product/139066/Kigi), a beautiful game about painting the most lovely trees. It was self-published and sold through DriveThruCards. A while later Action Phase Games picked up the game, rethemed it, and had Daniel flesh it out and refine it bit more. Thus [Kodama](http://www.actionphasegames.com/pages/kodama-the-tree-spirits) was born.
 
 I picked the game up at PAX East this year, and absolutely love it.
 
