@@ -1,9 +1,9 @@
 ---
 title: Misclassification error rate, ROC and AUC of a normally distributed prognostic
   test
-author: John Doe
-date: March 22, 2005
-output: github_document
+author: Chamberlain
+date: June 30, 2016
+output: html_document
 ---
 
 A test can be a medical test for the presence of a given disease, a test of strength of a material in an industrial setting, or in an educational setting a test to determine the level of understanding of students.  
@@ -25,7 +25,7 @@ Let $D$ be a discriminant function/test and let $Y$ be the true binary test resu
   \end{array}
 \right.
 \]
-and that dicision making with $D$  is as follows:
+and that decision making with $D$  is as follows:
 \[\text{output} = \left\{
   \begin{array}{lr}
     1 & : D > \kappa\\
@@ -47,6 +47,36 @@ hist(D_neg,breaks=50,add=T,col=rgb(0,0,1,0.5))
 ```
 
 
+Lets look at other extreme cases of complete overlap and complete seperation between the positive and negative group. For complete overlap we set $a=0$ and for complete separation we might either reduce $b^2$ or set $a=4$.
+
+Complete overlap
+
+```{r,warning=FALSE}
+#Complete overlap
+N=1000
+set.seed(18)
+a=0;b=1
+D_pos=rnorm(N,a,b)
+D_neg=rnorm(N,-a,b)
+hist(D_pos,breaks=50,xlim=c(-8,8),col=rgb(1,0,0,0.5),xlab=" ",main="Postive and negative")
+hist(D_neg,breaks=50,add=T,col=rgb(0,0,1,0.5))
+
+```
+
+Complete seperation
+
+```{r,warning=FALSE}
+#Complete overlap
+N=1000
+set.seed(18)
+a=4;b=1
+D_pos=rnorm(N,a,b)
+D_neg=rnorm(N,-a,b)
+hist(D_pos,breaks=50,xlim=c(-8,8),col=rgb(1,0,0,0.5),xlab=" ",main="Postive and negative")
+hist(D_neg,breaks=50,add=T,col=rgb(0,0,1,0.5))
+
+```
+
 
 The misclassification error rate (MER) of $D$ is given by:
 \[
@@ -67,13 +97,17 @@ There MER($\kappa$) is given by:
 \text{MER($\kappa$)}=1-\Phi(\frac{\kappa+a}{b})+\Phi(\frac{\kappa-a}{b})
 \]
 
-The AUC is also defined as follows (wlog assumme that positive results are less than negative results)
+The AUC is also defined as follows (we will assume that positive results are less than negative results)
 \[
-AUC(\kappa)=\Pr(\{D|Y=1\}>\{D|Y=0\})=\Phi\left(\frac{2a}{\sqrt{2}b}\right)
+AUC=\Pr(\{D|Y=1\}>\{D|Y=0\})=\Phi\left(\frac{2a}{\sqrt{2}b}\right)
 \]
+Where $\Phi$ is the cummulative standard normal function.
 
-For the simulated data above, let $\kappa=0$ (note this is an abitrary choice of $\kappa$). 
+For the simulated data above, let $\kappa=0$ (note this is an arbitrary choice of $\kappa$). 
+
+We start with case $a=2$ and $b=1$
 ```{r,warning=FALSE}
+a=2
 kappa=0
 #theoritical/truth
 MER_theo=1-pnorm((kappa+a)/b)+pnorm((kappa-a)/b)
@@ -82,13 +116,81 @@ AUC_theo=pnorm((2*a)/(sqrt(2)*b))
 #empirical
 MER_emp=c()
 AUC_emp=c()
-for(i in 1:(10*N)){
+for(i in 1:N){
+D_pos=rnorm(N,a,b)
+D_neg=rnorm(N,-a,b)
+MER_emp[i]=min(sum(D_pos<kappa)/N,0.5)+min(sum(D_neg>kappa)/N,0.5)
+#Note that MER_emp can't be bigger than 1 or less than 0
+r = rank(c(D_pos,D_neg))  
+AUC_emp[i] = (sum(r[1:N]) - N*(N+1)/2) / (N*N)
+}
+par(mfrow=c(1,2))
+hist(MER_emp,breaks=50,main="",xlab = "Empirical misclassification error")
+abline(v=MER_theo,lwd=2,col="red")
+hist(AUC_emp,breaks=50,main="",xlab = "Empirical auc error")
+abline(v=AUC_theo,lwd=2,col="red")
+```
+
+```{r}
+#Biases
+mean(AUC_emp-AUC_theo)
+mean(MER_emp-MER_theo)
+
+
+```
+
+Then $a=0$ and $b=1$
+```{r,warning=FALSE}
+a=0
+kappa=0
+#theoritical/truth
+MER_theo=1-pnorm((kappa+a)/b)+pnorm((kappa-a)/b)
+AUC_theo=pnorm((2*a)/(sqrt(2)*b))
+
+#empirical
+MER_emp=c()
+AUC_emp=c()
+for(i in 1:N){
 D_pos=rnorm(N,a,b)
 D_neg=rnorm(N,-a,b)
 MER_emp[i]=sum(D_pos<kappa)/N+sum(D_neg>kappa)/N
-
+#Note that MER_emp can't be bigger than 1 or less than 0
 r = rank(c(D_pos,D_neg))  
-AUC_emp[i] = (sum(r[1:N]) - N*(N+1)/2) / (N*N) 
+AUC_emp[i] = (sum(r[1:N]) - N*(N+1)/2) / (N*N)
+}
+par(mfrow=c(1,2))
+hist(MER_emp,breaks=50,main="",xlab = "Empirical misclassification error")
+abline(v=MER_theo,lwd=2,col="red")
+hist(AUC_emp,breaks=50,main="",xlab = "Empirical auc error")
+abline(v=AUC_theo,lwd=2,col="red")
+```
+
+```{r}
+#Biases
+mean(AUC_emp-AUC_theo)
+mean(MER_emp-MER_theo)
+
+
+```
+
+And finally  $a=3$ and $b=1$
+```{r,warning=FALSE}
+a=3
+kappa=0
+#theoritical/truth
+MER_theo=1-pnorm((kappa+a)/b)+pnorm((kappa-a)/b)
+AUC_theo=pnorm((2*a)/(sqrt(2)*b))
+
+#empirical
+MER_emp=c()
+AUC_emp=c()
+for(i in 1:N){
+D_pos=rnorm(N,a,b)
+D_neg=rnorm(N,-a,b)
+MER_emp[i]=min(sum(D_pos<kappa)/N,0.5)+min(sum(D_neg>kappa)/N,0.5)
+#Note that MER_emp can't be bigger than 1 or less than 0
+r = rank(c(D_pos,D_neg))  
+AUC_emp[i] = (sum(r[1:N]) - N*(N+1)/2) / (N*N)
 }
 par(mfrow=c(1,2))
 hist(MER_emp,breaks=50,main="",xlab = "Empirical misclassification error")
@@ -98,8 +200,6 @@ abline(v=AUC_theo,lwd=2,col="red")
 ```
 
 
-
-
 ```{r}
 #Biases
 mean(AUC_emp-AUC_theo)
@@ -107,4 +207,24 @@ mean(MER_emp-MER_theo)
 
 
 ```
+We will now verify two situations
+
+What is the relationship between the AUC and MER as functions of $a$
+
+What is the relationship between the AUC and MER as functions of $b$
+
+
+Note that this questions can not be answered directly since the MER also depends on $\kappa$ while the AUC does not. For the moment we leave $\kappa=0$ so that both functions are independent of $\kappa$. We will come to this choice latter. 
+
+Fix $b=1$ and rememeber that we are still assuming that $D|Y=0\leq D|Y=$ on average without loss of generality. 
+
+```{r}
+b=1
+kappa=0
+a=seq(0,4,length.out = 100)
+MER_theo=1-pnorm((kappa+a)/b)+pnorm((kappa-a)/b)
+AUC_theo=pnorm((2*a)/(sqrt(2)*b))
+plot(MER_theo,AUC_theo,type="b")
+```
+
 
