@@ -42,7 +42,7 @@ Here is my quick summary of my highlights of QCon New York from June 13th to Jun
 * Infrastructure-as-Code: 
 	* Applying software engineering tools to managing the infrastructure
 	* Unattended automation (enforces discipline, discourages ‘out-of-band’ changes
-	* Changes need to be tested as well, before doing a DevOoops
+	* Changes need to be tested as well, before doing a **DevOoops**
 		* See [http://serverspec.org]()
 	* The process for applying changes is auditable (the responsible part)
 		* Changes are tracked by commit
@@ -112,7 +112,6 @@ Here is my quick summary of my highlights of QCon New York from June 13th to Jun
 	* Best teams carefully manage culture
 * At buffer culture is as important as the product
 	* The result are our [buffer values](https://open.buffer.com/buffer-values/)
-	* Principles over prices through shared culture
 	* Crafting culture is hard: you hire for culture, you should be firing for culture		
 	* Build the core team which aligns on culture
 		* Interviews/hiring around culture fit
@@ -120,9 +119,11 @@ Here is my quick summary of my highlights of QCon New York from June 13th to Jun
 	* In order to hire for cultural fit, the team has to be on the same page
 	* Lessons learnt from experimenting with culture
 		* Transparency breeds trust (for team and customers)
-			* Buffer transparency salary calculator
-			* Term sheet and valuation public of round A
 			* See [buffer.com/transparency]()
+			* Buffer transparency salary calculator
+				* See [https://buffer.com/salary?r=1&l=10&e=2&q=0]()
+			* Term sheet and valuation of round A are public
+				* See [https://open.buffer.com/raising-3-5m-funding-valuation-term-sheet/]()
 			* It is even more important to be transparent when things don’t go well
 			* Culture is truly tested and defined during hard times
 		* Implementing culture for a globally distributed team
@@ -132,7 +133,7 @@ Here is my quick summary of my highlights of QCon New York from June 13th to Jun
 			* Hard to disengage from work when working through Timezones
 		* Cultivate culture for remote work
 			* Need to be self-motivated and genuinely passionate about your work
-			* Need tobe resourceful, can get through roadblocks
+			* Need to be resourceful, can get through roadblocks
 			* But hard time to hire juniors/interns
 			* Written communication is our main medium
 				- But can’t replace in-person interactions: We have retreats
