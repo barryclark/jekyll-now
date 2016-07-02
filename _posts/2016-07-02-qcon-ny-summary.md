@@ -30,8 +30,8 @@ Here is my quick summary of my highlights of QCon New York from June 13th to Jun
 
 ## Sessions
 
-### [Implementing Infrastructure as Code](https://qconnewyork.com/ny2016/presentation/implementing-infrastructure-code)
-* Slides are available [here](https://qconnewyork.com/system/files/presentation-slides/implementing_iac_-_qcon_nyc_2016.pdf)
+### Implementing Infrastructure as Code
+* [Description](https://qconnewyork.com/ny2016/presentation/implementing-infrastructure-code) and [slides](https://qconnewyork.com/system/files/presentation-slides/implementing_iac_-_qcon_nyc_2016.pdf)
 * Website at [http://infrastructure-as-code.com]()
 * Motivations:
 	* speed: get something to market fast, iterate, continuously improve it
@@ -52,12 +52,13 @@ Here is my quick summary of my highlights of QCon New York from June 13th to Jun
 	* Re-use by forking: divergence vs decoupling
 	* Sharing elements avoid monoliths - optimize to simplify changes
 	
-### [Think before you tool](https://qconnewyork.com/ny2016/presentation/think-before-you-tool-opinionated-journey)
+### Think before you tool
+* [Description](https://qconnewyork.com/ny2016/presentation/think-before-you-tool-opinionated-journey)
 * Centralized Log Analysis: [https://prometheus.io]()
 * Microservice dependency graphing and monitoring: [http://zipkin.io]()
 
-### [Security in cloud environments](https://qconnewyork.com/ny2016/presentation/access-secret-management-cloud-services)
-* Slides are available [here](https://qconnewyork.com/system/files/presentation-slides/identity_access_and_secret_management_-_ryan_lane_-_qcon.pdf)
+### Security in cloud environments
+* [Description](https://qconnewyork.com/ny2016/presentation/access-secret-management-cloud-services) and [Slides](https://qconnewyork.com/system/files/presentation-slides/identity_access_and_secret_management_-_ryan_lane_-_qcon.pdf)
 * Additional links for password and secret managers
 	* [http://docs.ansible.com/ansible/playbooks_vault.html]()
 		* [https://gist.github.com/tristanfisher/e5a306144a637dc739e7]()
@@ -67,7 +68,8 @@ Here is my quick summary of my highlights of QCon New York from June 13th to Jun
 	* [https://lyft.github.io/confidant/]() 
 * Detecting secrets in source code: [https://eng.lyft.com/finding-a-needle-in-a-haystack-b7e0627b01f6#.f0lazahyo]()
 
-### [How to optimize your culture for learning](https://qconnewyork.com/ny2016/presentation/optimize-your-culture-learning)
+### How to optimize your culture for learning
+* [Description](https://qconnewyork.com/ny2016/presentation/optimize-your-culture-learning)
 * About creating high learning environments in [Recurse](https://www.recurse.com)
 * Company mantra 'You are doing your thing at your time, and we bring the place and the community'
 * RC is partnering with companies: 
@@ -92,8 +94,9 @@ Here is my quick summary of my highlights of QCon New York from June 13th to Jun
 	* Hire attitude over skill
 	* You can learn any skill, but you can’t learn curiosity
 	
-### [Learnings from a culture first startup](https://qconnewyork.com/ny2016/presentation/learnings-culture-first-startup)
-* Creating the right culture at [Buffer](http://buffer.com)
+### Learnings from a culture first startup
+* [Description](https://qconnewyork.com/ny2016/presentation/learnings-culture-first-startup)
+* About creating the right culture at [Buffer](http://buffer.com)
 * How do we know how to build a good culture
 * What is culture
 	* In every team: the explicit and implicit behaviors which are valued by the team	
@@ -139,8 +142,8 @@ Here is my quick summary of my highlights of QCon New York from June 13th to Jun
 		* Can’t copy other cultures
 		* Culture as differentiator (from 300 to 4000 job applicants)
 		
-### [Container mgmt at Netflix](https://qconnewyork.com/ny2016/presentation/scheduling-fuller-house)
-* Slides are available [here](https://qconnewyork.com/system/files/presentation-slides/schedulingfullerhouse_nflx.pdf)
+### Container mgmt at Netflix
+* [Description](https://qconnewyork.com/ny2016/presentation/scheduling-fuller-house) and [Slides](https://qconnewyork.com/system/files/presentation-slides/schedulingfullerhouse_nflx.pdf)
 * Running container on AWS results in loosing EC2 metadata and IAM control
 * Lesson: making container act like VMs
 	* Implemented EC2 Metadata Proxy to bridge EC2 metadata into container
@@ -151,7 +154,8 @@ Here is my quick summary of my highlights of QCon New York from June 13th to Jun
 	* Engineering tool team generates base images (blessed, secured) for app envs (i.e. node.js)
 	* Application images are derived from base image
 
-### [Cryptocurrency key storage](https://qconnewyork.com/ny2016/presentation/banking-future-cryptocurrency-key-storage)
+### Cryptocurrency key storage
+* [Description](https://qconnewyork.com/ny2016/presentation/banking-future-cryptocurrency-key-storage)
 * How cryptocurrency is stored at [Coinbase](https://www.coinbase.com)
 * Sharding of crypto keys using [shamir secret sharing](https://en.wikipedia.org/wiki/Shamir%27s_Secret_Sharing)
 * Using cold and hot storage (consensus access)
@@ -173,8 +177,8 @@ Here is my quick summary of my highlights of QCon New York from June 13th to Jun
 		* User needs paper and passphrase
 		* m-of-n sharding of key is possible
 
-### [What they do not tell you about microservices](https://qconnewyork.com/ny2016/presentation/what-they-dont-tell-you-about-micro-services)
-* Slides are available [here](https://qconnewyork.com/system/files/presentation-slides/qcon-microservices_talk_v7_for_web_upload.pdf)
+### What they do not tell you about microservices
+* [Description](https://qconnewyork.com/ny2016/presentation/what-they-dont-tell-you-about-micro-services) and [Slides](https://qconnewyork.com/system/files/presentation-slides/qcon-microservices_talk_v7_for_web_upload.pdf)
 * See also
 	* [http://www.slideshare.net/DanielRolnick/microservices-and-devops-at-yodle]()
     * [http://www.yodletechblog.com/2016/04/25/yodle-hackathon-april-2016-edition/]()
@@ -209,13 +213,13 @@ Here is my quick summary of my highlights of QCon New York from June 13th to Jun
 	* Human service discovery
 		* Using [Sentinel](http://www.yodletechblog.com/2015/12/14/yodles-continuous-improvement-of-continuous-delivery/) for developer finding services
 
-### [Lessons learned on Ubers journey into microservices](https://qconnewyork.com/ny2016/presentation/project-darwin-uber-jourbey-microservices)
-* Slides are available [here](https://qconnewyork.com/system/files/presentation-slides/uber-journey_to_microservices_public.pdf)
+### Lessons learned on Ubers journey into microservices
+* [Description](https://qconnewyork.com/ny2016/presentation/project-darwin-uber-jourbey-microservices) and [Slides](https://qconnewyork.com/system/files/presentation-slides/uber-journey_to_microservices_public.pdf)
 * See also [https://eng.uber.com/building-tincup/]()
 * Very good presentation on the motivators to break apart the monolith
 
-### [The deadly sins of microservices](https://qconnewyork.com/ny2016/presentation/seven-deadly-sins-microservices)
-* Slides are available [here](https://qconnewyork.com/system/files/presentation-slides/qcon_nyc_2016_-_seven_more_deadly_sins_final.pdf)
+### The deadly sins of microservices
+* [Description](https://qconnewyork.com/ny2016/presentation/seven-deadly-sins-microservices) and [Slides](https://qconnewyork.com/system/files/presentation-slides/qcon_nyc_2016_-_seven_more_deadly_sins_final.pdf)
 * See also
 	* [https://speakerdeck.com/acolyer/making-sense-of-it-all]()
 	* [http://philcalcado.com/2015/09/08/how_we_ended_up_with_microservices.html]()
