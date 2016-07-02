@@ -12,7 +12,7 @@ Here is my quick summary of my highlights of QCon New York from June 13th to Jun
 
 ##### Culture
 * [How to optimize your culture for learning](#how-to-optimize-your-culture-for-learning)
-* [Learnings from a culture first startup](#leanings-from-a-culture-first-startup)
+* [Learnings from a culture first startup](#learnings-from-a-culture-first-startup)
 
 ##### Devops
 * [Implementing Infrastructure as Code](#implementing-infrastructure-as-code)
@@ -27,8 +27,8 @@ Here is my quick summary of my highlights of QCon New York from June 13th to Jun
 ##### Security
 * [Security in cloud environments](#security-in-cloud-environments)
 * [Cryptocurrency key storage](#cryptocurrency-key-storage)
-
-## Sessions
+ 
+---
 
 ### Implementing Infrastructure as Code
 * [Description](https://qconnewyork.com/ny2016/presentation/implementing-infrastructure-code) and [slides](https://qconnewyork.com/system/files/presentation-slides/implementing_iac_-_qcon_nyc_2016.pdf)
@@ -52,10 +52,14 @@ Here is my quick summary of my highlights of QCon New York from June 13th to Jun
 	* Re-use by forking: divergence vs decoupling
 	* Sharing elements avoid monoliths - optimize to simplify changes
 	
+---
+	
 ### Think before you tool
 * [Description](https://qconnewyork.com/ny2016/presentation/think-before-you-tool-opinionated-journey)
 * Centralized Log Analysis: [https://prometheus.io]()
 * Microservice dependency graphing and monitoring: [http://zipkin.io]()
+
+---
 
 ### Security in cloud environments
 * [Description](https://qconnewyork.com/ny2016/presentation/access-secret-management-cloud-services) and [Slides](https://qconnewyork.com/system/files/presentation-slides/identity_access_and_secret_management_-_ryan_lane_-_qcon.pdf)
@@ -67,6 +71,8 @@ Here is my quick summary of my highlights of QCon New York from June 13th to Jun
 	* [https://passwork.me/info/enterprise/]()
 	* [https://lyft.github.io/confidant/]() 
 * Detecting secrets in source code: [https://eng.lyft.com/finding-a-needle-in-a-haystack-b7e0627b01f6#.f0lazahyo]()
+
+---
 
 ### How to optimize your culture for learning
 * [Description](https://qconnewyork.com/ny2016/presentation/optimize-your-culture-learning)
@@ -93,6 +99,8 @@ Here is my quick summary of my highlights of QCon New York from June 13th to Jun
 * Key message
 	* Hire attitude over skill
 	* You can learn any skill, but you can’t learn curiosity
+
+---
 	
 ### Learnings from a culture first startup
 * [Description](https://qconnewyork.com/ny2016/presentation/learnings-culture-first-startup)
@@ -141,6 +149,8 @@ Here is my quick summary of my highlights of QCon New York from June 13th to Jun
 						* Everyone is hired for a 45 day work bootcamp (full-time contracting period)
 		* Can’t copy other cultures
 		* Culture as differentiator (from 300 to 4000 job applicants)
+
+---
 		
 ### Container mgmt at Netflix
 * [Description](https://qconnewyork.com/ny2016/presentation/scheduling-fuller-house) and [Slides](https://qconnewyork.com/system/files/presentation-slides/schedulingfullerhouse_nflx.pdf)
@@ -153,6 +163,8 @@ Here is my quick summary of my highlights of QCon New York from June 13th to Jun
 * Lesson: Image Layering
 	* Engineering tool team generates base images (blessed, secured) for app envs (i.e. node.js)
 	* Application images are derived from base image
+
+---
 
 ### Cryptocurrency key storage
 * [Description](https://qconnewyork.com/ny2016/presentation/banking-future-cryptocurrency-key-storage)
@@ -176,6 +188,8 @@ Here is my quick summary of my highlights of QCon New York from June 13th to Jun
 	* Cold Storage as-a-Service (User Key, Shared Key, Coinbase Key)
 		* User needs paper and passphrase
 		* m-of-n sharding of key is possible
+
+---
 
 ### What they do not tell you about microservices
 * [Description](https://qconnewyork.com/ny2016/presentation/what-they-dont-tell-you-about-micro-services) and [Slides](https://qconnewyork.com/system/files/presentation-slides/qcon-microservices_talk_v7_for_web_upload.pdf)
@@ -213,10 +227,14 @@ Here is my quick summary of my highlights of QCon New York from June 13th to Jun
 	* Human service discovery
 		* Using [Sentinel](http://www.yodletechblog.com/2015/12/14/yodles-continuous-improvement-of-continuous-delivery/) for developer finding services
 
+---
+
 ### Lessons learned on Ubers journey into microservices
 * [Description](https://qconnewyork.com/ny2016/presentation/project-darwin-uber-jourbey-microservices) and [Slides](https://qconnewyork.com/system/files/presentation-slides/uber-journey_to_microservices_public.pdf)
 * See also [https://eng.uber.com/building-tincup/]()
 * Very good presentation on the motivators to break apart the monolith
+
+---
 
 ### The deadly sins of microservices
 * [Description](https://qconnewyork.com/ny2016/presentation/seven-deadly-sins-microservices) and [Slides](https://qconnewyork.com/system/files/presentation-slides/qcon_nyc_2016_-_seven_more_deadly_sins_final.pdf)
