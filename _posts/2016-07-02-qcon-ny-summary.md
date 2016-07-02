@@ -8,7 +8,7 @@ author: holger_reinhardt
 author_email: holger.reinhardt@haufe-lexware.com 
 header-img: "images/bg-post.jpg"
 ---
-Here is my quick summary of my highlights of QCon New York from June 13th to June 15th, 2016. The following are the notes froms sessions I attended. To make it easier to pick the right ones, I grouped them according to topics. Slides from other presentations can be downloaded directly from the [QCon Schedule](https://qconnewyork.com/ny2016/schedule/tabular) 
+Here is a quick summary of my highlights of QCon New York from June 13th to June 15th, 2016. The following are the notes from sessions I attended. To make it easy to pick the most interesting ones, I grouped them according to topics. Slides from other presentations can be downloaded directly from the [QCon Schedule](https://qconnewyork.com/ny2016/schedule/tabular) 
 
 ##### Culture
 * [How to optimize your culture for learning](#how-to-optimize-your-culture-for-learning)
