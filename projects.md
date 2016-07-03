@@ -14,6 +14,7 @@ permalink: /projects/
 * [Blue Star Veterans Network](http://bluestarvets.us) - Web design work for a Veterans' Tech Startup eCommerce platform specialized in selling PERS devices
 * [Koi Asian Cuisine](http://koisilverspring.com) - Web Design work for an Asian Fusion Cuisine restaurant
 
+
 ## Books I'm Reading
 * Principles of Object-Orientated Design in Ruby
 * Grokking Algorithms
@@ -21,4 +22,7 @@ permalink: /projects/
 * Rails 4 Test Perscriptions
 
 ## Books completed
-* Michael Hartl's Rails Tutorial
+* Michael Hartl's Rails Tutorial  
+
+
+<div style="text-align:center"><a href="https://docs.google.com/uc?authuser=0&id=0B8J-yVnqtGGzblh1VkdyUmlPNGs&export=download">Resume</a></div>
