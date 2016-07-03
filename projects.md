@@ -25,4 +25,4 @@ permalink: /projects/
 * Michael Hartl's Rails Tutorial  
 
 
-<div style="text-align:center"><a href="https://docs.google.com/uc?authuser=0&id=0B8J-yVnqtGGzblh1VkdyUmlPNGs&export=download">Resume</a></div>
+<div style="text-align:center"><a href="https://docs.google.com/uc?authuser=0&id=0ByoQKwbdZdr8RjluVzVvRHY3enc&export=download">Resume</a></div>
