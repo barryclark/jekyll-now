@@ -19,7 +19,7 @@
     <div class="wrapper-masthead">
       <div class="container">
         <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+          <!-- <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a> -->
 
           <div class="site-info">
             <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
@@ -27,10 +27,10 @@
           </div>
 
           <nav>
-            <!-- <a href="{{ site.baseurl }}/">Blog</a> -->
+            <a href="{{ site.baseurl }}/">Blog</a>
             <a href="{{ site.baseurl }}/about">About</a>
-            <a href="{{ site.baseurl }}/projects">Projects</a>
-            <a href="https://docs.google.com/uc?authuser=0&id=0B8J-yVnqtGGzblh1VkdyUmlPNGs&export=download">Resume</a>
+            <a href="{{ site.baseurl }}/projects">Work</a>
+            <!-- <a href="https://docs.google.com/uc?authuser=0&id=0B8J-yVnqtGGzblh1VkdyUmlPNGs&export=download">Resume</a> -->
           </nav>
         </header>
       </div>
@@ -42,9 +42,11 @@
 
     <div class="wrapper-footer">
       <div class="container">
-        <footer class="footer">
+        <!-- <div style="text-align:center"><span><a href="https://docs.google.com/uc?authuser=0&id=0B8J-yVnqtGGzblh1VkdyUmlPNGs&export=download" style="color:black">Resume</a></span></div> -->
+        <footer class="footer" style="padding:5px">
           {% include svg-icons.html %}
         </footer>
+        <div style="text-align:center"><span>stevechen.me © 2016</span></div>
       </div>
     </div>
 
