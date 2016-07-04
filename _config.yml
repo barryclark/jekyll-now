@@ -84,3 +84,12 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+
+repository: pronoy-barua/pronoy-barua.github.io
+
+gems:
+- jekyll-github-metadata
+- jekyll-mentions
+- jekyll-redirect-from
+- jekyll-sitemap
+- jemoji
