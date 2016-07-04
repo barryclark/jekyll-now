@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Fewer Tamagotchis
+title: Fewer Tamagotchis, update 1
 ---
 
 During the first episode of [Lady Dynamite](https://en.wikipedia.org/wiki/Lady_Dynamite), Maria Bamford suggests to her agent that the thing she'd like to do for her next project is...less. She doesn't want to do movies or TV or even commercials. She'd like to, maybe, just sit on a park bench in her neighbourhood. That seems like less stress and pressure to her character. 
@@ -13,7 +13,7 @@ Maybe I'm just getting old. Maybe everyone is having fun without me. Maybe my pa
 
 This is not me turning into someone who doesn't like computers or technology anymore. I don't wish to go back to any sort of previous version of things. Online communication has always kind of sucked. If anything, I'd just like some streamlining. I think I just want one feed. I want one place to chat. I want one place to see new things. 
 
-Recently on [You Chose Poorly](http://sawyerpaul.com/Fewer-Tamagotchis/), a podcast I do with Mikey Llorin, I talked about the proliferation of chat apps in my life. Here was the list of apps I have used to chat with people in the last month:   
+Recently on You Chose Poorly, a podcast I do with Mikey Llorin, I talked about the proliferation of chat apps in my life. If you'd like to listen, here's [part 1](http://youchosepoorlypodcast.tumblr.com/post/145183489118/you-chose-poorly-7-messaging-apps) and here's [part 2](http://youchosepoorlypodcast.tumblr.com/post/145604958413/you-chose-poorly-8-messaging-apps-2) of the conversation. Here was the list of apps I have used to chat with people in the last month:   
 
 * iMessage/SMS
 * Facebook Messenger
@@ -44,12 +44,6 @@ So now there's:
 * Facebook & Messenger
 * Twitter
 
-It's not perfect, but it's progress. 
+This was the goal, and for the most part I've kept to it. What I've learned by trying to go without certain apps for periods of time is how I used different ones for different reasons (this is *very* Marshall McLuhan). Instagram makes me feel a certain way that Tumblr does not, I have different kinds of conversations on Messenger than I do on Whatsapp, even with the same people. 
 
-There's also one more thing I'm going to cut out for a little while: Fitbit. 
-
-For the last year, Fitbit has been my Tamogotchi. It's a dingus I feed with health metadata. I've logged my food. I've slept with it on. I've taken care of my side of things. In return, I've gotten a great deal of data about myself. Some of it is helpful! But a lot of it is just confirming assumed knowledge. I sleep better when I exercise. I eat poorly on days when I walk less. I walk between 10,000 and 13,000 steps every day, and I more often than not hit Fitbit's targets for daily activity. I'm not great about making sure I walk 250 steps every hour during the work day (it's newest feature), but Fitbit is also lousy about reminding me. 
-
-What I'm trying to say is that this data is valuable, but it's also predictable. I know when I've had a healthy and an unhealthy day. And to extend this, Fitbit has not motivated me to the point of any physical change. I'm the same weight and at the same approximate fitness level I was last summer. 
-
-I'm not getting rid of my Fitbit. I'll still wear it every few days, and during isolated exercises (the whole reason I got the thing was to track bike rides with GPS). But it's not going to be something I worry about every day. Fitbit's numbers will say I'm doing less, but that's okay. Less is kind of what I'm into right now. 
+I don't have a solution for this. It's obviously the kind of thing that doesn't bother enough people to have anything happen, so I'm stuck with a handful of messaging apps. It's not the worst thing in the world, but it's been interesting taking a critical look at how I'm using these things to see if I can change my behaviour. But that's just the thing with messaging apps. You can change your behaviour all you like, but you can't change anyone else's, and being with other people is the entire reason we have these things in the first place. 
