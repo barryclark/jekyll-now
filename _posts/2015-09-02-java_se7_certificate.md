@@ -17,6 +17,6 @@ I take the test. When I'm done, I didn't get the results immediately, but was em
 
 Now, I got this image to put places: 
 
-<div class="certificate">![Oracle Certified Associate, Java SE 7 Programmer logo](/images/hendrix_oracle_certified_associate_java_se_7_programmer_logo.gif)</div>
+<div class="certificate"><img src="/images/hendrix_oracle_certified_associate_java_se_7_programmer_logo.gif" alt="Oracle Certified Associate, Java SE 7 Programmer logo" /></div>
 
 Oh, and [here's the actual certificate, in beautiful PDF form](/pdfs/hendrix_oracle_certified_associate_java_se_7_programmer_ecertificate.pdf).
