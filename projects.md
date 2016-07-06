@@ -3,12 +3,12 @@ layout: page
 title:
 permalink: /projects/
 ---
-## Projects contributed to
-* [KaBOOM! Map of Play](http://mapofplay.kaboom.org) - Largest playground locator in the world with 50,000 visits monthly and an API
+## Open source Contributions
 * [Clean Slate DC](https://github.com/duaimei/tech_for_justice) - Website for making expunged records and forms easer to file for former criminals. Built during HackForGood DC hackathon
 * [RubyforGood](http://rubyforgood.org) - 4-day un-hackathon at the GMU Smithsonian Conservatory focused on making the world gooder
  
-## Projects founded
+## Full scale development project
+* [KaBOOM! Map of Play v3](http://mapofplay.kaboom.org) - Largest playground locator in the world with 50,000 visits monthly and an API
 * [SteamFriend.me](http://steamfriend.me) - Social networking service for users on the STEAM gaming platform. [Video](https://www.youtube.com/watch?v=kqdriDLjU5E)
 * [Muralr](http://muralr.herokuapp.com/) - Crowdsourced website for murals within the FATVillage arts district in Ft. Lauderdale, FL
 
