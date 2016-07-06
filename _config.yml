@@ -9,7 +9,7 @@ name: Baron Kwan
 description: Software Engineer
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://avatars0.githubusercontent.com/u/15119515?v=3&s=460
+avatar: ""
 
 #
 # Flags below are optional
@@ -26,7 +26,7 @@ footer-links:
   linkedin: baronkwan
   pinterest:
   rss: # just type anything here for a working RSS icon
-  twitter: baronk0401
+  twitter:
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
