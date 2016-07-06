@@ -16,4 +16,4 @@ permalink: /projects/
 * [Blue Star Veterans Network](http://bluestarvets.us) - Web design work for a Veterans' Tech Startup eCommerce platform specialized in selling PERS devices
 * [Koi Asian Cuisine](http://koisilverspring.com) - Web Design work for an Asian Fusion Cuisine restaurant
 
-<div style="text-align:center"><a href="https://docs.google.com/uc?authuser=0&id=0ByoQKwbdZdr8RjluVzVvRHY3enc&export=download">Resume</a></div>
+<!--<div style="text-align:center"><a href="https://docs.google.com/uc?authuser=0&id=0ByoQKwbdZdr8RjluVzVvRHY3enc&export=download">Resume</a></div>-->
