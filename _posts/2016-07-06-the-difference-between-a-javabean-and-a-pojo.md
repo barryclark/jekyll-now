@@ -10,7 +10,11 @@ If you've programmed in Java for any amount of time, you'll inevitably come acro
 
 ## JavaBean
 
-According to [Wikipedia](https://en.wikipedia.org/wiki/JavaBeans), "JavaBeans are classes that encapsulate many objects into a single object (the bean)." Essentially, it’s a class with three characteristics: it’s serializable (i.e. implements [java.io.Serializable](https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html)), has a no-argument constructor, and allows access to its properties through the standard getters and setters.
+According to [Wikipedia](https://en.wikipedia.org/wiki/JavaBeans), "JavaBeans are classes that encapsulate many objects into a single object (the bean)." Essentially, it’s a class with three characteristics:
+
+1. it’s serializable (i.e. implements [java.io.Serializable](https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html))
+2. it has a no-argument constructor
+3. it allows access to its properties through the standard getters and setters.
 
 ## Bean
 
