@@ -24,4 +24,4 @@ Currently looking for a Junior level role in Web Development, preferably with Ra
 
 [stevechenweb@gmail.com](mailto:stevechenweb@gmail.com)
 
-I'd love to talk
+I'd love to talk! :D
