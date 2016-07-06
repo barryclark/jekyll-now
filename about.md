@@ -13,6 +13,7 @@ Currently looking for a Junior level role in Web Development, preferably with Ra
 * Grokking Algorithms
 * Agile Web Development with Rails 4
 * Rails 4 Test Perscriptions
+* The Well Grounded Rubyist
 
 ## Books completed
 * Michael Hartl's Rails Tutorial  
