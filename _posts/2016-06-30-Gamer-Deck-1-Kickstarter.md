@@ -2,7 +2,7 @@
 layout: post
 title: Kickstarter - Gamer Deck 1
 description: Gamer Deck 1 is a card system/poker deck highlighting different game mechanics. It's my 2nd June Kickstarter pick.
-category: preview
+category: kickstarter
 featured: gamerdeck.jpg
 tags: [games, kickstarter, gamer deck 1, odd hackwelder]
 ---
