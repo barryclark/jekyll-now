@@ -4,12 +4,9 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+I'm fascinated by science and engineering. Currently, I'm a computer science grad student looking to build intelligent systems.
 
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[pronoy.barua25@gmail.com](mailto:pronoy.barua25@gmail.com)
