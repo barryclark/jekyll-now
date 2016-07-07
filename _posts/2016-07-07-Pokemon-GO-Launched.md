@@ -2,7 +2,7 @@
 layout: post
 title: Pokemon GO Launched
 description: Pokemon GO, the eagerly awaited mobile game that let's you capture Pokemon in real-world location, launched in the US.
-category: unboxing
+category: video-games
 featured: pokemongo2.png
 tags: [video-games, pokemon, pokemon go, gamefreak]
 ---
