@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Discovering Tak - Part 2
-description: Continuing my Tak post, I figured I'd give my initial thoughts on the game.
+title: Discovering Tak - Part 3
+description: Continuing my Tak posts, I'm checking out Tak bots.
 category: games
-featured: tak2.jpg
+featured: playtak.jpg
 tags: [games, tak, cheapass games, a wise man's fear, patrick rothfuss]
 ---
 
-Continuing my [earlier Tak post](http://pawnsperspective.com/Discovering-Tak/), I figured I'd give my initial thoughts on the game. I finished my set, and have played more than a handful of the game, teaching 3 of my kids to play over our recent vacation.
+Continuing my earlier [Tak](http://pawnsperspective.com/Discovering-Tak/) [posts](http://pawnsperspective.com/Discovering-Tak-Part-2/), I figured I'd look into some Tak bots. Sometimes it's nice to practice against an AI, and i've played with 3 pretty good ones.
 
-Also, I've created my own box/board combo to store and play the game. Based off the beautiful Devi's board, one of the most expensive tier rewards from the Tak kickstarter, I created the Tarbean Waterside Board, also known as Pike's board. If you've read The Name of the Wind, you'll get the joke.
+The first one I tried, and it's actually a newer AI, is [Takkerus](https://github.com/cdbfoster/takkerus) by cdbfoster. It needs to be compiled in Rust of OSX and Linux, but there's also Windows binary available to play. It's text based, and you need to know [Portable Tak Notation](https://www.reddit.com/r/Tak/wiki/portable_tak_notation) to play. I really like it, and it provides an excellent challenge. I have yet to beat the bot on Takkerus' default setting.
 
-![Tak Printed](/images/tak/pikesboard.jpg)
+Next is [Taktician](https://github.com/nelhage/taktician), a bot written in Go by nelhage. It's another text-based bot that's a bit faster than Takkerus, has been around much longer, and is *way* too good a bot for me to play against with its default settings. I like it, but I like Takkerus better. It may just be because I tried Takkerus first.
 
-We played using the latest Beta Rules from the [Cheapass Games](http://cheapass.com/node/215) site, which are well written, and contain lots of interesting tidbits on vocabulary and the traditions of Tak. It's a wonderfully simple game to learn with more depth than you'd initially guess. In no time the kids and I were testing our newly found Tak skills and figuring out new and clever ways to win the game. I'm proud to say that each of my kids were able to best me at one point or another, and all in different ways. Each of them have their own play style, and I'm excited to see how they evolve over more play, and possibly moving to bigger boards (we play 5x5, but 6x6 and 8x8 supposedly provide much different gameplay and strategy).
+The last, and my current overall favorite, is [playtak.com](http://playtak.com). It's a web-based, graphical implementation of Tak that allows you to play against several bots of varying skill and difficulty. Being graphical, it's a bit easier to visualize without exporting PTN files and using something like [PTN Viewer](https://jsfiddle.net/bwochinski/043hpzwu/embedded/result/). Even though I've logged more games with Takkerus, I can say with certainty that this will be my default for solo play from now on.
 
-I'm looking on making a better set for myself in the future, possibly 3D printing new pieces using wood filament. I'd really love to make a nice board, or at least find a nice Chess board and create overlays and add diamonds to the intersections to be more like the Cheapass hybrid board. Of course I can't wait to get my hands on an official set in November, too.
+I continue to love Tak. I love playing with my kids. I love playing against bots. I love discovering the layered complexity of play. I look forward to November when the official sets come out, though I'm still working on creating better and better sets on my own before then. I'm currently testing a [new set](http://www.thingiverse.com/thing:1546860) of 3D printed pieces by Ingo Dellwig. Instead of printing piece-by-piece, each players' set is done all at once. It's taking about 7 hours, but my first 31 tiles came out great, with the second set currently printing now.
 
-My kids and I are still very new to the game, but we're all excited to play. Tak is an excellent game so far!
+My next step is to create a nicer board on the lid of a wooden box I picked up at the craft store. I'm thinking of stenciling gears and dots on top. Gears for the 5x5 board, and the dots in between for 6x6 play. After that I think I'm going to try some wood and metal filaments for my printer to create better looking/feeling tiles.
