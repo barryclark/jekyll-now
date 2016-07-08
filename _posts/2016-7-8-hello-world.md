@@ -1,6 +1,6 @@
 ---
 layout: post
-title: You're up and running!
+title: Placeholder
 published: true
 ---
 This page intentionally left blank.
