@@ -10,8 +10,8 @@ Slasm is a random word, don't give it any meaning, it deserves none. Back in Sep
 
 I chose to generate random words based on something like C + C + V + C + C, or L + L + V + L + L, or some combination thereof where C = consonant, V = vowel and L = letter.
 
-So, that’s slasm, no more, no less.
+That’s slasm, no more, no less.
 
-### About Me
+### About The Blog
 
-Working.
+Work in progress.
