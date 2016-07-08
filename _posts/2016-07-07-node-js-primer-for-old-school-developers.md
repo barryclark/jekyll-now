@@ -121,7 +121,7 @@ app.get('/users/statistics', function (req, res, next) {
                 }, function (err, apiRes, apiBody) {
                     if (err)
                         return callback(err);
-                    callback(null, JSON.parse(body));
+                    callback(null, JSON.parse(apiBody));
                 });
             },
             function (err, results) {
@@ -200,6 +200,8 @@ async.series([
 The really interesting bit here is the `execHandler`. It's defining a function which in turn returns a function which has the correct signature which is needed for the callback of the `exec()` calls (`function (err, stdin, stdout)`). The "currying" takes place where we pass in the `desc` and `callback` parameters into the function calls (this is again closures), so we end up with a parameterized function we can pass in to `exec`. This makes the code a lot more readable (if you do it right) and compact, and it can help to pull out recurring code you couldn't pull out otherwise, due to minimal differences (like here the description and callback). Misuse this concept, and everybody will hate your code because they don't understand what it's doing.
 
 On a side note, we're once more using `async` here, this time the `series()` functionality, which calls the async functions one after the other and returns the results after the last one has finished, or stops immediately if one fails.
+
+**Footnote 2**: If you're in nitpicking mode, what I describe above is not the classical "currying" you might know from real functional languages such as Haskell or SML, where currying means automatic partial parameter evaluation. This is something you may also do in JavaScript, but you don't get it as a language construct as in Haskell. Perhaps I should just call it "parameterized function definition" or something similar, as that's more to the point.
 
 ### On `callback` and `err` parameters, exceptions
 
