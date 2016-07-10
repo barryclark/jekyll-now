@@ -1,4 +1,0 @@
----
-published: true
----
-test
