@@ -23,4 +23,6 @@ jekyll serve
 <h2> Making posts and configuration</h2>
 To make posts create a new file in the _posts folder and use this funky format `YYYY-MM-DD-Hella-Cool-title.md` for each post. Your `_config.yml` file will contain all the text you need to change so it doesn't look like you just generated a brand new jekyll blog.
 <h2>Hosting to Github Pages</h2>
-Fortunately this is the most tedious part of getting setup. Depending on if you choose to use a custom domain or the github subdomain. Check out the [documentation](https://jekyllrb.com/docs/github-pages/). For a much more comprehensive experience checkout the [official docs](https://jekyllrb.com/docs/home/).  
+Fortunately this is the most tedious part of getting setup. Check out the [documentation](https://jekyllrb.com/docs/github-pages/).
+  
+For a much more comprehensive experience checkout the [official docs](https://jekyllrb.com/docs/home/).  
