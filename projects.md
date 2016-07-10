@@ -1,3 +1,8 @@
+---
+layout: page
+title:
+permalink: /projects/
+---
 
 <div style="text-align:center">
   <h2>Previous projects</h2>
