@@ -1,0 +1,185 @@
+---
+layout: page
+permalink: /subscribe/
+---
+<style type="text/css">/* Layout */
+  .ck_form.ck_minimal {
+  /* divider image */
+ background: #f9f9f9;
+ line-height: 1.5em;
+ overflow: hidden;
+ color: #3d3d3d;
+ font-size: 16px;
+ border: solid 1px #d1d1d1;
+ -webkit-box-shadow: none;
+ -moz-box-shadow: none;
+ box-shadow: none;
+ clear: both;
+ margin: 20px 0px;
+ text-align: center;
+}
+
+
+.ck_form.ck_minimal h3.ck_form_title {
+ text-align: center;
+ margin: 0px 0px 10px;
+ font-size: 28px;
+}
+
+.ck_form.ck_minimal h4 {
+ text-align: center;
+ font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+ text-transform: uppercase;
+ font-size: 18px;
+ font-weight: normal;
+ padding-top: 0px;
+ margin-top: 0px;
+}
+
+.ck_form.ck_minimal p {
+ padding: 0px;
+}
+
+.ck_form, .ck_form * {
+ -webkit-box-sizing: border-box;
+ -moz-box-sizing: border-box;
+ box-sizing: border-box;
+}
+
+.ck_form.ck_minimal .ck_form_fields {
+ width: 100%;
+ float: left;
+ padding: 5%;
+}
+/* Form fields */
+
+.ck_errorArea {
+ display: none; /* temporary */
+}
+
+#ck_success_msg {
+ padding: 10px 10px 0px;
+ border: solid 1px #ddd;
+ background: #eee;
+}
+
+.ck_form.ck_minimal input[type="text"], .ck_form.ck_minimal input[type="email"] {
+ font-size: 18px;
+ padding: 10px 8px;
+ width: 68%;
+ border: 1px solid #d6d6d6; /* stroke */
+ -moz-border-radius: 3px;
+ -webkit-border-radius: 3px;
+ border-radius: 3px; /* border radius */
+ background-color: #fff; /* layer fill content */
+ margin-bottom: 5px;
+ height: auto;
+ float: left;
+ margin: 0px;
+ margin-right: 2%;
+ height: 42px;
+}
+
+.ck_form input[type="text"]:focus, .ck_form input[type="email"]:focus {
+ outline: none;
+ border-color: #aaa;
+}
+
+.ck_form.ck_minimal .ck_subscribe_button {
+    width: 100%;
+    color: #fff;
+    margin: 0px;
+    padding:  11px 0px;
+    font-size: 18px;
+    background: #2b2b2b;
+    background: #600;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px; /* border radius */
+    cursor: pointer;
+    border: none;
+    text-shadow: none;
+    width: 30%;
+    float: left;
+    height: 42px;
+  }
+
+
+.ck_form.ck_minimal .ck_guarantee {
+ color: #626262;
+ color: #000;
+ font-size: 14px;
+ text-align: center;
+ padding: 15px 0px 0px;
+ display: block;
+ clear: both;
+}
+.ck_form .ck_powered_by {
+ display: block;
+ color: #aaa;
+ font-size: 12px;
+}
+
+.ck_form .ck_powered_by:hover {
+ display: block;
+ color: #444;
+}
+
+.ck_converted_content {
+  display: none;
+ padding: 5%;
+ background: #fff;
+}
+
+@media all and (max-width: 399px) {
+
+ .ck_form.ck_minimal .ck_subscribe_button, .ck_form.ck_minimal input[type="email"] {
+  width: 100%;
+  float: none;
+  margin-top: 5px;
+ }
+
+}
+
+.ck_slide_up, .ck_modal, .ck_slide_up .ck_minimal, .ck_modal .ck_minimal  {
+ min-width: 400px;
+}
+
+.page .ck_form.ck_minimal {
+ margin: 50px auto;
+ max-width: 600px;
+}
+
+
+
+</style>
+
+<div class="ck_form ck_minimal">
+
+  <div class="ck_form_fields">
+      
+      <div class="ck_description">
+          <p></p>
+      </div>
+    
+    <!--  Form starts here  -->
+    <form id="ck_subscribe_form" class="ck_subscribe_form" action='https://feedburner.google.com/fb/a/mailverify' method='post' onsubmit='window.open("https://feedburner.google.com/fb/a/mailverify?uri=Slasm", "popupwindow", "scrollbars=yes,width=600,height=600"); return true' target='popupwindow'>
+     <input name='uri' type='hidden' value='Slasm'/>
+ <input name='loc' type='hidden' value='en_US'/>
+      <div class="ck_errorArea">
+      </div>
+      <div class="ck_control_group ck_email_field_group">
+        <label class="ck_label" for="ck_emailField" style="display: none">Email Address</label>
+          <input type="email" name="email" class="ck_email_address" id="ck_emailField" placeholder="Email Address" required></input>
+    </div>
+
+      <button class="subscribe_button ck_subscribe_button btn fields" id='ck_subscribe_button'>
+        Subscribe
+      </button>
+      <span class="ck_guarantee">
+        I won't send you spam. Unsubscribe at any time.
+      </span>
+    </form>
+  </div>
+
+ </div>
