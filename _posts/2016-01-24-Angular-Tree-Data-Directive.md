@@ -24,7 +24,7 @@ We can see an example of the widget in the next screenshot:
 Let's take a look at one example of usage of the directive that uses  all the
 configuration attributes.
 
-{% highlight HTML %}
+``` html
 <ws-tree-data 
       data="vm.categories"
       children-property-name="ChildCategories"
@@ -36,7 +36,7 @@ configuration attributes.
       selected="vm.selectedCategory"
       >
 </ws-tree-data>
-{% endhighlight %}
+```
 
 We can go over all the parameters in the directive and describe what each of those means:
 
@@ -57,7 +57,7 @@ array of each object.
 
 In a way it is using a sort of recursion to render the hierarchy:
 
-{% highlight HTML %}
+``` html
 <ul class="treeDataComponent">
     <li data-ng-repeat="item in vm.data | stateNotDeleted" ng-include="'itemTree'">
     </li>
@@ -82,7 +82,7 @@ In a way it is using a sort of recursion to render the hierarchy:
         	</li>
     </ul>
 </script>
-{% endhighlight %}
+```
 
 What this will do is basically start with at the level of the unordered list
 and repeat list items for each element. The example we are going to see
@@ -114,7 +114,7 @@ options one by one.
 Let's take a look at the directive declaration and the controller syntax used
 to define the functionality and logic of the hierarchy tree.
 
-{% highlight Javascript %}
+``` javascript
 (function () {
     "use stirct";
 
@@ -257,7 +257,7 @@ to define the functionality and logic of the hierarchy tree.
         }
     }
 })();
-{% endhighlight %}
+```
 
 The directive definition defines the internal isolate scope of the directive.
 We are using the directive controller as syntax to define a controller as a
@@ -336,7 +336,7 @@ entities on the project.
 
 The simple filter implementation can be seen here:
 
-{% highlight Javascript %}
+``` javascript
 (function () {
     "use strict";
     
@@ -361,7 +361,7 @@ The simple filter implementation can be seen here:
         };
     }
 })();
-{% endhighlight %}
+```
 
 It's easy to see how this can be extended and made more generic.
 
@@ -371,7 +371,7 @@ We are going to be looking at a very simple usage example for the directive.
 
 The HTML where this is called can be seen in the following block of code:
 
-{% highlight HTML %}
+``` html
 <div class="container">
 <div>
 	<acme-navbar ></acme-navbar>
@@ -416,12 +416,12 @@ The HTML where this is called can be seen in the following block of code:
 	  	</div>
 	</div>
 </div>
-{% endhighlight %}
+```
 
 The JavaScript code for the MainController running on the above view can be
 seen below:
 
-{% highlight Javascript %}
+``` javascript
 (function() {
   'use strict';
 
@@ -507,7 +507,7 @@ seen below:
     }
 }
 })();
-{% endhighlight %}
+```
 
 The implementation of the Main Controller used is shortened. Some of the data
 has been cut out from the categories array. The full controller can be seen in

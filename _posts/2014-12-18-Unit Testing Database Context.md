@@ -41,7 +41,7 @@ these are located in their own assembly with nothing else in there. Another
 project contains the DbContext, which defines the DbSets, and migrations to
 build the database.
 
-{% highlight C# %}
+``` csharp
 public class Product:Entity
 {
     public string Name {get; set;}
@@ -62,16 +62,17 @@ public class Entity
 
 	public DateTime? DateModified { get; set; }
 }
-{% endhighlight %}
+
+```
 
 And the bare DbContext:
 
-{% highlight C# %}
+``` csharp
 public class ProjectContext : DbContext
 {
         public DbSet<Product> Products { get;set }
 }
-{% endhighlight %}
+```
 
 So the test in mind, should check if ProjectContext contains a DbSet<Product>
 property. In a bigger project we would also have more entities that inherit
@@ -84,7 +85,7 @@ how that was achieved.
 
 ###Getting the Entity Types
 
-{% highlight C# %}
+``` csharp
 // ARRANGE
 var entityType = typeof(Entity);
 
@@ -97,14 +98,14 @@ var domainAssembly = Assembly.GetAssembly(entityType);
 var allEntities = domainAssembly
     .GetTypes()
     .Where(type => entityType.IsAssignableFrom(type) && type.Name != entityType.Name).ToList();
-{% endhighlight %}
+```
 
 From the domain assembly we get all the types where the type inherits from the
 Entity type but in the same time we don’t want to get the Entity class.
 
 ###Getting the Context and all the generic type parameters for all its DbSets
 
-{% highlight C# %}
+``` csharp
 // Now we want to get all the generic type parameters defined for the
 // DbSets in the 
 var contextType = typeof(ProjectContext);
@@ -114,7 +115,7 @@ var allContextGenericParameterTypes = contextType.GetProperties()
     .Where(t => t.PropertyType.IsGenericType && t.PropertyType.GetGenericTypeDefinition() == typeof(DbSet<>))
     // get the all the names of the generic type parameters on db sets
     .Select(prop => prop.PropertyType.GenericTypeArguments.First()).ToList();
-{% endhighlight %}
+```
 
 Basically we go over each property of the context type and get only the
 generic type properties based on DbSet. In the same query we map the
@@ -127,14 +128,13 @@ a DbSet.
 
 The assertion is based on iterating the list of entities and making sure the type name is present in the type names for the generic parameters in the DbSets. This is an approach that allows for writing out which entity is not included in the DbSets
 
-{% highlight C# %}
+``` csharp
 foreach (var entity in allEntities)
 {
     Assert.IsTrue(allContextGenericParameterTypes.Any(gp => gp.Name == entity.Name), 
     			  string.Format("Entity [{0}] not found in DbContext", entity.Name));
 }
-{% endhighlight %}
-
+```
 
 ###Conclusion
 
@@ -158,7 +158,7 @@ That would actually be great.
 
 And to wrap things up the entire nUnit test method:
 
-{% highlight C# %}
+``` csharp
 [Test]
 public void ContextShouldContainAllDomainEntities()
 {
@@ -192,4 +192,4 @@ public void ContextShouldContainAllDomainEntities()
         Assert.IsTrue(allContextGenericParameterTypes.Any(gp => gp.Name == entity.Name), string.Format("Entity [{0}] not found in DbContext", entity.Name));
     }
 }
-{% endhighlight %}
+```

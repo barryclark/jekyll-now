@@ -3,11 +3,8 @@ layout: post
 categories: [programming, extension, methods, unit, test, generics, reflection]
 title: Generic Extension Methods and usage for Entity metadata information.
 author: emir_osmanoski
-headerimage: /images//2015-01-04-Generic Extension Methods//01_HeadShot.png
 comments: true
 ---
-
-{% include hidden_header_image.html %}
 
 While working on this new project I implemented a convenient (for now at
 least) way to work with the metadata information we store for our domain
@@ -35,13 +32,13 @@ Currently the Seeding API is still a work in progress, but from start it was
 meant to be as fluid as possible. Adding an entity to the database as test
 data currently looks something like:
 
-{% highlight C# %}
+``` csharp
 seedContext.Add(seedContext.BuildWrappedObject<User>(SeedingStrings.SystemUser).ExtendWith(new User()
 {
     Username = "admin",
     Password = "admin"
 }).TimeStampNew().SetSystemFlag().SetClientFlag().TimeStampTenant(seedContext.Tenant()));
-{% endhighlight %}
+```
 
 Though it might look like a handful, I find it, using the excellent
 intellisense and autocomplete features in visual studio, easy and fast to
@@ -90,7 +87,7 @@ the extension methods used for those properties. So let us say the base Entity
 class from which all our domain entities inherit contains the following
 metadata properties:
 
-{% highlight C# %}
+``` csharp
 public abstract class Entity
 {
 	public DateTime? DateCreated { get; set; }
@@ -101,7 +98,7 @@ public abstract class Entity
 
 	public string ModifiedBy { get; set; }
 }
-{% endhighlight %}
+```
 
 Now, we might have multiple classes that will inherit from Entity: Users,
 Products, Categories and so on which will require us setting this metadata
@@ -120,7 +117,7 @@ before or thought possible so it was an interesting learning experience.
 So these are the following two methods that manage the Time Stamped
 information:
 
-{% highlight C# %}
+``` csharp
 public static T TimeStampNew<T>(this T entity, string createdBy = null) where T : Entity
 {
     entity.DateCreated = DateTime.Now;
@@ -144,7 +141,7 @@ public static T TimeStampUpdate<T>(this T entity, string updatedBy = null) where
 
     return entity;
 }	
-{% endhighlight %}
+```
 
 By using the [base class generic type parameter constraint](http://msdn.microsoft.com/en-us/library/d5x73970.aspx) and setting it to
 Entity for T we have access to the metadata information on the T entity
@@ -164,7 +161,7 @@ functionalities, by combining additional interface based generic type
 parameter constraints. Just for example we can also set a Tenant reference
 like this:
 
-{% highlight C# %}
+``` csharp
 public static T TimeStampTenant<T>(this T entity, Tenant tenant = null) where T : Entity, ITenantEntity
 {
     if (tenant == null)
@@ -176,25 +173,25 @@ public static T TimeStampTenant<T>(this T entity, Tenant tenant = null) where T 
 
     return entity;
 }
-{% endhighlight %}
+```
 
 As not all entities in the system have Tenant we use an additional interface
 based generic type parameter constraint to have access to the Tenant property.
 
 The interface looks like:
 
-{% highlight C# %}
+``` csharp
 public interface ITenantEntity
 {
     Tenant Tenant { get; set; }
 }
-{% endhighlight %}
+```
 
 And its then implemented on the User entity:
 
-{% highlight C# %}
+``` csharp
 public class User : Entity, ITenantEntity
-{% endhighlight %}
+```
 
 This way, User, and any other entity implementing ITenantEntity is extended
 with the *TimeStampTenant* method. And it just now occurs to me that it would be
@@ -207,9 +204,9 @@ All extension methods defined and seen here always return the same object that
 the method runs on. We do this so we can chain the extension methods as it can
 be seen in the following trivial code snippet:
 
-{% highlight C# %}
+``` csharp
 var user = new User().TimeStampNew().TimeStampUpdate();
-{% endhighlight %}
+```
 
 ## SeededEntityWrapper Extensions Implementation
 
@@ -225,7 +222,7 @@ are defined for T which is wrapped. So the approach I came up with was to
 extension methods for Time Stamping but now for the *SeededEntityWrapper*:
 
 
-{% highlight C# %}
+``` csharp
 public static SeededEntityWrapper<T> TimeStampNew<T>(this SeededEntityWrapper<T> wrappedEntity,
     string createdBy = null) where T : Entity, new()
 {
@@ -239,7 +236,7 @@ public static SeededEntityWrapper<T> TimeStampUpdate<T>(this SeededEntityWrapper
     wrappedEntity.Data.TimeStampUpdate(updatedBy);
     return wrappedEntity;
 }
-{% endhighlight %}
+```
 
 We can see that the signatures and names of the extension methods for entities
 and wrapped entities (via *SeededEntityWrapper*) are almost the same with the
@@ -282,7 +279,7 @@ and easy to work with.
 
 The test (**There are some issues here with wrapping and the Jekyll highlight engine so it would be best to copy/paste in your favorite editor**):
 
-{% highlight C# %}
+``` csharp
 [Test]
 public void SeededEntityWrapper_MetaMethods_ShouldMatch_EntityMetaManagerMethods()
 {
@@ -359,7 +356,7 @@ public void SeededEntityWrapper_MetaMethods_ShouldMatch_EntityMetaManagerMethods
         Assert.IsNotNull(extAttribute, string.Format("Meta Manager Wrapped Method {0} in the {1} method set does not contain {2} attribute", wrappedMethod.Name, metaManagerWrapperType.Name, extensionAttributeType.Name));
     }
 }
-{% endhighlight %}
+```
 
 If the test fails it means the wrapped extensions are not matching the Entity
 metadata extensions and the message will pinpoint where the issue is. Good
@@ -376,19 +373,19 @@ They are now in the current codebase heavily used to replace a property
 assignment in initialization code to a simple chainable method call. Just to
 clarify, I personally find it easier to write:
 
-{% highlight C# %}
+``` csharp
 var user = new User().TimeStampNew("sys_admin");
-{% endhighlight %}
+```
 
 instead of 
 
-{% highlight C# %}
+``` csharp
 var user = new User()
 {
     DateCreated = DateTime.Now,
     CreatedBy = "sys_admin"
 };
-{% endhighlight %}
+```
 
 I find the first approach much cleaner. The generic Extension methods allow
 for the code to be separate from the actual entity code, the User class
