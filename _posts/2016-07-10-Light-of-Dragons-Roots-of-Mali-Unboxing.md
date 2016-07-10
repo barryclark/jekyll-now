@@ -13,9 +13,9 @@ Keep in mind that my copy of Roots of Mali is a preview prototype, so things can
 
 I'm really impressed with the artwork, and the quality/feel of the dice with these two.
 
-![LoD/RoM Box]({{ site.url }}/lodrom/grimslingers/lodrom-box.jpg)
-![LoD/RoM Box]({{ site.url }}/lodrom/grimslingers/lodrom-box2.jpg)
-![LoD/RoM Box]({{ site.url }}/lodrom/grimslingers/lodrom-rules.jpg)
-![LoD/RoM Box]({{ site.url }}/lodrom/grimslingers/lodrom-sheets.jpg)
-![LoD/RoM Box]({{ site.url }}/lodrom/grimslingers/lodrom-board.jpg)
-![LoD/RoM Box]({{ site.url }}/lodrom/grimslingers/lodrom-dice.jpg)
+![LoD/RoM Box]({{ site.url }}/lodrom/lodrom-box.jpg)
+![LoD/RoM Box]({{ site.url }}/lodrom/lodrom-box2.jpg)
+![LoD/RoM Box]({{ site.url }}/lodrom/lodrom-rules.jpg)
+![LoD/RoM Box]({{ site.url }}/lodrom/lodrom-sheets.jpg)
+![LoD/RoM Box]({{ site.url }}/lodrom/lodrom-board.jpg)
+![LoD/RoM Box]({{ site.url }}/lodrom/lodrom-dice.jpg)
