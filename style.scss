@@ -306,3 +306,54 @@ footer {
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "_highlights";
+
+// Code highlighting classess
+
+.codehilite {
+  overflow: scroll;
+  font-size: 0.9em;
+}
+    .codehilite table {
+        margin-bottom: 0 !important;
+    }
+
+code, kbd, pre, samp {
+    font-family: monospace,monospace;
+    font-size: 1em;
+}
+
+// because of bootstrap
+td.code{
+  padding:0 !important;
+  background-color:#fff;
+}
+
+pre {
+    padding: 10px;
+    margin: 0;
+    line-height: 23px;
+    white-space: pre;
+    overflow-x: auto;
+    word-break: inherit;
+    word-wrap: inherit;
+}
+    pre.lineno {
+        padding-left:0px !important;
+        padding-right:0px !important;
+    }
+
+.codehilite td {
+    border: 1px solid #dee;
+}
+
+.codehilite .gl {
+    background: #fafafa;
+    border-right: 1px solid #ddd;
+    color: #ccc;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding: 0 5px;
+    overflow: hidden;
+}

@@ -36,7 +36,7 @@ variable under window.
 
 Let's take a look at how the world.js file will look after we apply the small change:
 
-{% highlight Javascript %}
+``` javascript
 (function(g){
 	g.Game = function(){
 		var jose = {
@@ -72,7 +72,7 @@ Let's take a look at how the world.js file will look after we apply the small ch
 		}
 	}();
 })(window.g = window.g || {});
-{% endhighlight %}
+```
 
 We see that as before we have enclosed the definition of the functions and
 objects inside a function definition which calls itself, but now we are also
@@ -80,9 +80,9 @@ sending the parameter *g* to the function.
 
 The way the parameter is sent is seen at the bottom of the file
 
-{% highlight Javascript %}
+``` javascript
 })(window.g = window.g || {});
-{% endhighlight %}
+```
 
 This is a small trick that independent of which script was loaded first will
 either use the g object from the window object or set the g object on window
@@ -96,7 +96,7 @@ the Input module we are going to use to initialize and setup user input.
 We will start of with a very simple skeleton of the Input module and see how
 we can use it in the main Game Module:
 
-{% highlight Javascript %}
+``` javascript
 (function(g){
 	var keys = {
 		37:"left",
@@ -114,18 +114,18 @@ we can use it in the main Game Module:
 		};
 	})();
 })(window.g = window.g || {});
-{% endhighlight %}
+```
 
 If we load up the script in the index.html file before the main Game Module we
 can then access is and call it on startStory:
 
-{% highlight Javascript %}
+``` javascript
 function startStory(){
 	drawWorld();
 	drawJose();
 	g.Input.init(jose);
 }
-{% endhighlight %}
+```
 
 We do not have to do any additional loading in the Game Module or anything. We
 are also passing the *jose* object because based on the input we will be
@@ -147,7 +147,7 @@ the document object. Initially we are only going to be outputing to the
 console the key that was pressed. Let's look at how the Input module has now
 changed.
 
-{% highlight Javascript %}
+``` javascript
 g.Input = (function(){
 	var player;
 
@@ -168,7 +168,7 @@ g.Input = (function(){
 		init:init
 	};
 })();
-{% endhighlight %}
+```
 
 It's also noticable that we have also added a internal player reference so
 that we can use it beyond the initialization method.
@@ -182,7 +182,7 @@ speed or velocity when a key is pressed. We are going to be defining the speed
 variable in the function and then probably move it out to a State or a Config
 module:
 
-{% highlight Javascript %}
+``` javascript
 function processKeyDown(e){
 	console.log(e.keyCode);
 	var playerSpeed = 5;
@@ -204,7 +204,7 @@ function processKeyDown(e){
 
 	console.log(player);
 }
-{% endhighlight %}
+```
 
 Just to make sure we are doing everyting properly after changing the properties on the palyer we are logging the player object.
 
@@ -235,11 +235,11 @@ times per second. Or at least that is what it will try to do. And we will get
 back to why it is probably going to fail a bit later on. For now we can add
 the interval call in the startStory method:
 
-{% highlight Javascript %}
+``` javascript
 function startStory(){
 	setupInput();
 	var fps = 1000/60;
 	setInterval(draw, fps);
 }
-{% endhighlight %}
+```
 
