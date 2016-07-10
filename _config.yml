@@ -6,10 +6,10 @@
 name: Slasm
 
 # Short bio or description (displayed in the header)
-description: 
+description:
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar:
+avatar: https://raw.githubusercontent.com/slasm/slasm.github.io/master/images/jekyll-logo.png
 
 #
 # Flags below are optional
