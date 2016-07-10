@@ -42,7 +42,7 @@ Let us start by looking at the world!
 Our characters will live inside something called a Canvas, and this Canvas lives in a
 plain old HTML page:
 
-{% highlight HTML %}
+``` html
 <!DOCTYPE html>
 <html>
 	<head>
@@ -54,7 +54,7 @@ plain old HTML page:
 	</body>
 	<script type="text/javascript" src="world.js"></script>
 </html>
-{% endhighlight %}
+```
 
 We can see that in this simple HTML page we have defined several basic things.
 The main thing though is the canvas element, which is actually the world
@@ -70,7 +70,7 @@ those separately.
 
 # Ordering the Wrorld (world.css)
 
-{% highlight CSS %}
+``` css
 #world {
 	position: absolute;
 	top: 50%;
@@ -85,7 +85,7 @@ those separately.
 	border: 2px solid #333;	
 	border-radius: 5px;
 }
-{% endhighlight %}
+```
 
 The world.css file initially will just center the 800x600 Canvas on the HTML
 page giving it a very basic border.
@@ -95,7 +95,7 @@ page giving it a very basic border.
 The main part of this story is the world.js file.  It is where the world and
 our character are first created:
 
-{% highlight JavaScript %}
+``` javascript
 (function(){
 	var jose = {
 		x: 350,
@@ -129,7 +129,7 @@ our character are first created:
 		ctx.fillRect(jose.x, jose.y, jose.width, jose.height);
 	}
 })();
-{% endhighlight %}
+```
 
 ## Defining the Character
 
@@ -141,7 +141,7 @@ that we will see used a bit later on.
 Speaking of coordinates maybe we can make José a pirate searching for some
 treasure! There's an idea!
 
-{% highlight JavaScript %}
+``` javascript
 var jose = {
 	x: 350,
 	y: 250,
@@ -149,7 +149,7 @@ var jose = {
 	height: 100,
 	color: "#F38F1D"
 };
-{% endhighlight %}
+```
 
 ## Our Canvas! 
 
@@ -157,10 +157,10 @@ After we have defined José, we need to get access to the world, or in this
 case the Canvas, we have defined in the HTML. The next two lines get both the
 canvas element and then from that the 2d context we can use for drawing 2d Shapes:
 
-{% highlight JavaScript %}
+``` javascript
 var canvas = document.getElementById('world');
 var ctx =  canvas.getContext('2d');
-{% endhighlight %}
+```
 
 The context object, *ctx*, is what we will use to do most of the world
 rendering and character creation in the series. What we see above is a very
@@ -173,11 +173,11 @@ Story!
 
 In the same fashion we defined our main character we are going to define the world:
 
-{% highlight JavaScript %}
+``` javascript
 var world = {
 	color:"#F4F4F4"
 }
-{% endhighlight %}
+```
 
 For start we have defined only the color of the world. Later on we might
 add/generate some additional properties. It is always good to have our
@@ -188,16 +188,16 @@ Drawing the world is very simple! We just tell the context object (*ctx*) what c
 to use when drawing anything, in this case *world.color* . After setting the color we
 are telling the context to draw a rectangle with some parameters:
 
-{% highlight JavaScript %}
+``` javascript
 ctx.fillStyle = world.color;
 ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
-{% endhighlight %}
+```
 
 We are probably going to be using fillRect a lot so let's take a look at the definition of the function:
 
-{% highlight JavaScript %}
+``` javascript
 void ctx.fillRect(x, y, width, height);
-{% endhighlight %}
+```
 
 The fillRect Method expects the coordinates of the top left point of the
 rectangle we want to draw and the width and height of that rectangle starting
@@ -218,12 +218,12 @@ dimensions as well as some marginal points and dimensions:
 
 Following the above example and what we know about the coordinate system we can draw the character onto the world.
 
-{% highlight JavaScript %}
+``` javascript
 function drawJose(){
 	ctx.fillStyle = jose.color;
 	ctx.fillRect(jose.x, jose.y, jose.width, jose.height);
 }
-{% endhighlight %}
+```
 
 Again we are using the Context object to set the color with which we will be
 drawing, in this case a nice orange color! The difference with the previous
@@ -245,7 +245,7 @@ And just to make sure everything is working we can change how we define the
 character just to see how it affects the world. So if we set the character
 object to:
 
-{% highlight JavaScript %}
+``` javascript
 var jose = {
 	x: 20,
 	y: 400,
@@ -253,7 +253,7 @@ var jose = {
 	height: 80,
 	color: "#692428"
 };
-{% endhighlight %}
+```
 
 This will result to the world in the following state:
 

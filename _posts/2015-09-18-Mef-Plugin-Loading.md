@@ -74,21 +74,21 @@ and `PluginExecutionResult` classes.
 The two core interfaces in the contract project and their respective
 properties:
 
-{% highlight C# %}
+``` csharp
 public interface IPluginContract
 {
     PluginExecutionResult ExecutePlugin(PluginExecutionEntry entry);
 }
-{% endhighlight %}
+```
 
 and 
 
-{% highlight C# %}
+``` csharp
 public interface IPluginMetadata
 {
 	string PluginName { get; }
 }
-{% endhighlight %}
+```
 
 One defines the contract for the entry points for each of the plugins, while
 the other describes the metadata which can be used to identify the entry
@@ -112,11 +112,11 @@ For the purposes of the demo implementation we defined two plugins:
 The plugins are quite simple. They define classes that implement the interface
 defined in the Plugin Contracts.
 
-{% highlight C# %}
+``` csharp
 [Export(typeof(IPluginContract))]
 [ExportMetadata("PluginName", "ApiAPlugin")]
 public class PluginA : IPluginContract { }
-{% endhighlight %}
+```
 
 At the class definition we encounter two key MEF attributes:
 
@@ -135,7 +135,7 @@ IPluginMetadata interface.
 
 An implementation of the ExecutePlugin method can be seen here:
 
-{% highlight C# %}
+``` csharp
 public PluginExecutionResult ExecutePlugin(PluginExecutionEntry entry)
 {
     var url = GetInternalApiUrl();
@@ -152,7 +152,7 @@ public PluginExecutionResult ExecutePlugin(PluginExecutionEntry entry)
         Output = "Failed Configuration URL Processing"
     };
 }
-{% endhighlight %}
+```
 
 The code is reading some internal configuration defined in a config.xml. The
 plugin then makes an API call  using an `HttpClient` to another *internal*
@@ -180,13 +180,13 @@ The plugin manager is also where we actually utilize MEF to load/index the
 plugin implementations/libraries from the plugin repository. The core of the
 initialization work happens in the plugin manager constructor:
 
-{% highlight C# %}
+``` csharp
 public PluginLoadingManager(PluginLoaderConfiguration pluginLoaderConfiguration)
 {
 	var catalogue = CreatePluginCatalog(pluginLoaderConfiguration);
 	CreateCompositionContainer(catalogue);
 }
-{% endhighlight %}
+```
 
 We will look at each of the two steps individually in the next two sections.
 
@@ -202,7 +202,7 @@ specified root directory of the plugin repository and iterating over each one to
 
 This big aggregate catalogue will therefore contain multiple Directory Catalogues.
 
-{% highlight C# %}
+``` csharp
 private AggregateCatalog CreatePluginCatalog(PluginLoaderConfiguration pluginLoaderConfiguration)
 {
     var pluginsCatalog = new AggregateCatalog();
@@ -220,7 +220,7 @@ private string[] GetPluginDirectories(string baseDirectory)
     var directories = Directory.EnumerateDirectories(baseDirectory, "*", SearchOption.TopDirectoryOnly);
     return directories.ToArray();
 }
-{% endhighlight %}
+```
 
 We are going to use this aggregate catalogue which knows about all the
 exports defined in the plugin subfolders to search for a specific export of the
@@ -237,12 +237,12 @@ to give us exports of, in our case, our plugin contract interface.
 The simple creation of the Composition container can be seen in the following
 code:
 
-{% highlight C# %}
+``` csharp
 private void CreateCompositionContainer(AggregateCatalog catalogue)
 {
     _container = new CompositionContainer(catalogue);
 }
-{% endhighlight %}
+```
 
 # Loading Plugin Instances with the Plugin Manager
 
@@ -258,7 +258,7 @@ diagram.
 
 For the purposes of the demo note that the plugin manager is constructed in the Controller constructor:
 
-{% highlight C# %}
+``` csharp
 private readonly string PluginRootLocation = "C:/external_plugins";
 
 public PublicController()
@@ -268,12 +268,12 @@ public PublicController()
         PluginsRootLocation = PluginRootLocation
     });
 }
-{% endhighlight %}
+```
 
 Which plugin is going to be utilized depends on a parameter passed to the
 action via the HTTP call:
 
-{% highlight C# %}
+``` csharp
 public string Get(string pluginIdentifier)
 {
     // create a plugin manager to decide which internal system is going to handle the request
@@ -285,14 +285,14 @@ public string Get(string pluginIdentifier)
 
 	return result.Output;
 }
-{% endhighlight %}
+```
 
 ## Plugin Manager - Get Plugin Code
 
 What remains to be seen is the actual code that utilizes the MEF composition
 container  to get an instance of the pluggable export for the specific plugin:
 
-{% highlight C# %}
+``` csharp
 public IPluginContract GetPlugin(string identifier)
 {
     var pluginWrapper = _container
@@ -308,7 +308,7 @@ public IPluginContract GetPlugin(string identifier)
         return null;
     }
 }
-{% endhighlight %}
+```
 
 What the GetPlugin Method does is search the defined MEF Container that
 contains all exports found in the aggregate catalogue. The `GetExports` method
@@ -325,9 +325,9 @@ that we have loaded in the catalogues and find us the exports for type
 filtering based on the passed Plugin Identifier. If we remember we defined the
 metadata information in a non-strongly typed approach:
 
-{% highlight C# %}
+``` csharp
 [ExportMetadata("PluginName", "ApiAPlugin")]
-{% endhighlight %}
+```
 
 where the PluginName attribute matches what we have defined on the
 IPluginMetadata interface.
@@ -335,11 +335,11 @@ IPluginMetadata interface.
 So if a for example the identifier is "ApiAPlugin" the plugin wrapper will
 return an object where the Value is set to an instance of the class:
 
-{% highlight C# %}
+``` csharp
 [Export(typeof(IPluginContract))]
 [ExportMetadata("PluginName", "ApiAPlugin")]
 public class PluginA : IPluginContract
-{% endhighlight %}
+```
 
 After the core GetExports line is executed, the plugin manager will either
 return an instance of the plugin or null. Note that we are calling

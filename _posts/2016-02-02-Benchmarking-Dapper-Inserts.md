@@ -37,7 +37,7 @@ are generating the data in C# using the Faker library/nuget package
 
 The code used to generate the required collection for testing is quite simple:
 
-{% highlight C# %}
+``` csharp
 using System;
 using System.Collections.Generic;
 using Dapper.BulkInserts.Dtos;
@@ -77,7 +77,7 @@ namespace Dapper.BulkInserts.TestData
         }
     }
 }
-{% endhighlight %}
+```
 
 Because Dapper still performs certain object mapping functionalities, we can
 see above in the code we have a **Product** DTO with properties that reflect
@@ -85,7 +85,7 @@ the table in the database.
 
 This DTO will be used to perform all our inserts.
 
-{% highlight C# %}
+``` csharp
 using System;
 
 namespace Dapper.BulkInserts.Dtos
@@ -109,7 +109,7 @@ namespace Dapper.BulkInserts.Dtos
         public string Condition { get; set; }
     }
 }
-{% endhighlight %}
+```
 
 # The benchmark aproach
 
@@ -137,7 +137,7 @@ but in a typed sort of way, by using objects/DTOs (hence the simple/micro ORM
 descriptor). The best way to maybe explain this is take a look at the very
 simple command used to insert a single record in the database table:
 
-{% highlight C# %}
+``` csharp
 public void WriteSingleProduct(Product product)
 {
     using (var connection = 
@@ -148,7 +148,7 @@ public void WriteSingleProduct(Product product)
         connection.Execute(Commands.WriteOne, product);
     }
 }
-{% endhighlight %}
+```
 
 We see that we are using an Execute method that takes in a SQL Command and the
 Product object.  The *WriteOne* command is stored in a resource file. It's a
@@ -160,7 +160,7 @@ We can see that the SQL Query Write One defines parameters using '@' which
 reflect the names of the product objects properties we are passing into the
 Execute:
 
-{% highlight SQL %}
+``` sql
 INSERT INTO [dbo].[Products]
            ([Id]
            ,[Name]
@@ -179,7 +179,7 @@ INSERT INTO [dbo].[Products]
            ,@Category
            ,@Manufacturer
            ,@Condition)
-{% endhighlight %}
+```
 
 This is one extend of the ORM that is done by Dapper. Looking at the Names of
 the SQL Parameters and mapping them to the names of the properties on
@@ -189,12 +189,12 @@ the SQL Parameters and mapping them to the names of the properties on
 
 Above and in the rest of the post we will be  looking at a single extension method by Dapper on the Sql Connection object. The Execute method has the following general signature as taken from the Dapper Docs on Github:
 
-{% highlight C# %}
+``` csharp
 public static int Execute(this IDbConnection cnn, 
 							   string sql, 
 							   object param = null,
 							   SqlTransaction transaction = null)
-{% endhighlight %}
+```
 
 The version used in the benchmark tests has some more parameters, which does
 not matter for the purposes of the test. I think the docs are a bit outdated
@@ -221,7 +221,7 @@ the task is similar to what we already actually saw before. We can very easily
 repeat the above command using a for/foreach loop and insert each Product in
 that way. That is exactly what the first benchmark test does.
 
-{% highlight C# %}
+``` csharp
 private TimeSpan InsertUsingForLoop()
 {
     var stopwatch = Stopwatch.StartNew();
@@ -232,12 +232,12 @@ private TimeSpan InsertUsingForLoop()
     stopwatch.Stop();
     return stopwatch.Elapsed;
 }
-{% endhighlight %}
+```
 
 We basically call an Execute for each of the products. That is done in the
 *WriteProductsWithExecuteForEach* method.
 
-{% highlight C# %}
+``` csharp
 public void WriteProductsWithExecuteForEach(List<Product> products)
     {
         using (var connection = new SqlConnection(ConfigurationManager.ConnectionStrings["ProductDapperDb"].ConnectionString))
@@ -248,7 +248,7 @@ public void WriteProductsWithExecuteForEach(List<Product> products)
             }
         }
     }
-{% endhighlight %}
+```
 
 Here we are only utilizing the *sql* and *param* parameters on the execute
 method, setting param to a single product object.
@@ -273,7 +273,7 @@ extension method is that we can basically send everything as a *param*. This
 next insert method utilizes this and we are actually sending the entire
 collection of products as the parameter.
 
-{% highlight C# %}
+``` csharp
 
 public void WriteProductCollection(List<Product> products)
 {
@@ -282,7 +282,7 @@ public void WriteProductCollection(List<Product> products)
         connection.Execute(Commands.WriteOne, products);
     }
 }
-{% endhighlight %}
+```
 
 At this point Dapper most probably runs some internal logic to figure out that
 it's actually a collection of objects. It then inserts those objects by
@@ -306,7 +306,7 @@ using a Data Table parameter.
 For this approach we need to define a Table Type in the database that reflects
 the properties we want to insert for the Product table:
 
-{% highlight SQL %}
+``` sql
 CREATE TYPE [dbo].[ProductType] AS TABLE(
 	[Id] [uniqueidentifier] NOT NULL,
 	[Name] [nvarchar](150) NOT NULL,
@@ -317,22 +317,22 @@ CREATE TYPE [dbo].[ProductType] AS TABLE(
 	[Manufacturer] [nvarchar](500) NOT NULL,
 	[Condition] [nvarchar](2000) NULL
 )
-{% endhighlight %}
+```
 
 We can now use a different approach in writing the query that is executed to
 insert the data. We can define a parameter that using Dapper will be set to a
 Data Table. Waaait for it!
 
-{% highlight SQL %}
+``` sql
 INSERT INTO dbo.Products
 SELECT * FROM @data;
-{% endhighlight %}
+```
 
 We see that this query is very simple. It is using the *INSERT INTO SELECT* SQL
 Syntax. What is important is how the @data parameter is built and provided
 using Dapper. Let's take a look at that next:
 
-{% highlight C# %}
+``` csharp
 public void WriteProductCollectionUsingDataTable(List<Product> products)
 {
     using (var connection = new SqlConnection(ConfigurationManager.ConnectionStrings["ProductDapperDb"].ConnectionString))
@@ -343,7 +343,7 @@ public void WriteProductCollectionUsingDataTable(List<Product> products)
         new { @data = dataTable.AsTableValuedParameter("dbo.ProductType")});
     }
 }
-{% endhighlight %}
+```
 
 Here we can see that we are executing *Commands.BatchInsert* which is just the
 *INSERT INTO SELECT* Query we saw above. We set the *@data* parameter to a Table
@@ -354,7 +354,7 @@ The *GetDataTableForProducts* method uses a simple approach to build the
 DataTable. The implementation we are going to see uses a Nuget Library called
 FastMember which provides some Reflection utilities used to build the Data Table.
 
-{% highlight C# %}
+``` csharp
 private DataTable GetDataTableForProducts(List<Product> products)
 {
 	DataTable table = new DataTable();
@@ -376,14 +376,14 @@ private DataTable GetDataTableForProducts(List<Product> products)
 
     return table;
 }
-{% endhighlight %}
+```
 
 The *SetColumnsOrder* is an extension method for DataTable that orders how the
 columns are organized. The reason it is used is because I had  an issue in the
 case of having the order of properties on the Product class different than the
 order of properties as defined in the Table Type in SQL.
 
-{% highlight C# %}
+``` csharp
 public static class DataTableExtensions
 {
     public static void SetColumnsOrder(
@@ -398,7 +398,7 @@ public static class DataTableExtensions
         }
     }
 }
-{% endhighlight %}
+```
 
 Before looking at the results let's take a look how the final Data Table
 Parameter method of inserts behaves when looking at a trace from SQL

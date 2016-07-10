@@ -168,7 +168,7 @@ occurrences of each letter and the total letters.
 
 The code for the method is given bellow:
 
-{% highlight C# %}
+``` csharp
 public FrequencyResult GetPercentageEachLetter()
 {
     var result = new FrequencyResult();
@@ -236,7 +236,7 @@ public FrequencyResult GetPercentageEachLetter()
     result.ResultDictionary = frequencyDictionary;
     return result;
 }
-{% endhighlight %}
+```
 
 The frequencies for each letter, calculated only from the words, can be seen
 in the following table:
