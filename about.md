@@ -1,3 +1,8 @@
+---
+layout: page
+permalink: /about/
+title: About
+---
 ### About Slasm
 
 Slasm is a random word, don't look for any meaning behind it. Back in September of 2012 I found a domain name generator that generated a random word based on individual letters. I would link to it now, but it's not working as intended. It still generates strings, but it does not check to see if the domain is available.
