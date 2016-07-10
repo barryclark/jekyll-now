@@ -3,7 +3,6 @@ layout: page
 permalink: /all/
 title: All Posts
 ---
-<h1>Blog Archive</h1>
 {% for post in site.posts %}
   {% capture month %}{{ post.date | date: '%m%Y' }}{% endcapture %}
   {% capture nmonth %}{{ post.next.date | date: '%m%Y' }}{% endcapture %}
