@@ -1,6 +1,0 @@
----
-layout: page
-permalink: /copyright/
----
-
-&copy; <strong>slasm.com</strong>, 2016. Unauthorized use and/or duplication of this material without express and written permission from me is strictly prohibited. Excerpts and links may be used, provided that full and clear credit is given to <strong>slasm.com</strong> with appropriate and specific direction to the original content.
