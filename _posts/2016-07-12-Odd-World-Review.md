@@ -7,7 +7,7 @@ featured: odd-world.png
 tags: [games, review, odd world, foxmind]
 ---
 
-<img src="/images/features/odd-world.png" style="float:right;margin-left:10px;margin-bottom:10px;" alt="Odd World"/>[Odd World](http://www.foxmind.com/games/1625-odd-world) is a new release from FoxMind, developed by Jack Degnan. It's a small, inexpensive card game with easy-to-learn rules, but with a little bit more than you'd expect from a kids' title like this.
+<img src="/images/featured/odd-world.png" style="float:right;margin-left:10px;margin-bottom:10px;" alt="Odd World"/>[Odd World](http://www.foxmind.com/games/1625-odd-world) is a new release from FoxMind, developed by Jack Degnan. It's a small, inexpensive card game with easy-to-learn rules, but with a little bit more than you'd expect from a kids' title like this.
 
 The goal of the game is simple: have the most points when the cards run out. Look a little deeper and you'll see there's a bit more to it. To earn points you need to have sets of matching planets. Not only that, but your sets have to have an odd number of cards to actually score. Have four planet Earth cards? That's worth zero points. Have three, or five? You're good to go.
 
