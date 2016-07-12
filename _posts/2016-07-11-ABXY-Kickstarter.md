@@ -10,4 +10,4 @@ tags: [games, kickstarter, abxy, broken games]
 
 ABXY is all about out maneuvering your opponent. You've got 4 actions available to you, 2 of which you'll play during a round. Some actions are changed my the monster you currently have out on the table. The end goal? Defeat the other player's monsters. You can checkout the full rules [here](http://static1.squarespace.com/static/576d4c6715d5db6720905902/576e93a785c5bdef44e51ead/576e93a985c5bdef44e51eec/1466864553498/rules-image.png?format=original).
 
-$15 gets you a copy of the game when the project ends, if it funds. There's still a long way to go, but I'm really hoping this one sees the light of day. 
+$15 gets you a copy of the game when the project ends, if it funds. There's still a long way to go, but I'm really hoping this one sees the light of day.
