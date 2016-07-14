@@ -18,5 +18,6 @@ I've seen a lot of good things said about Yashima, and I'm excited to dig in and
 ![Yashima Back]({{ site.url }}/images/yashima/back.jpg)
 ![Yashima Rules]({{ site.url }}/images/yashima/rules.jpg)
 ![Yashima Cards]({{ site.url }}/images/yashima/cards.jpg)
-![Yashima Tiles]({{ site.url }}/images/yashima/tiles.jpg)
+![Yashima Tiles]({{ site.url }}/images/yashima/tiles1.jpg)
+![Yashima Tiles]({{ site.url }}/images/yashima/tiles2.jpg)
 ![Yashima Minis]({{ site.url }}/images/yashima/minis.jpg)
