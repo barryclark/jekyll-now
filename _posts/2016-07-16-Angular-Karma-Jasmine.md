@@ -6,7 +6,7 @@ author: emir_osmanoski
 comments: true
 ---
 
-![Karma/Jasmine!]({{ site.baseurl }}/images/2016-07-16-Jasmine-Karma/00_Header.PNG)
+![Karma/Jasmine!]({{ site.baseurl }}/images/2016-07-16-Jasmine-Karma/00_Header.png)
 
 This post is going to tackle some basics of unit testing Angular 1.x
 applications usings Karma and Jasmine. Very recently I started working on
@@ -465,7 +465,7 @@ folder with our karma.config.js file.
 
 The output of the test using the mocha reporter will look like this:
 
-![Test Results!]({{ site.baseurl }}/images/2016-07-16-Jasmine-Karma/01_Test_Output.PNG)
+![Test Results!]({{ site.baseurl }}/images/2016-07-16-Jasmine-Karma/01_Test_Output.png)
 
 We can see how the mocha reporter organized the *describe* statements and the *it*
 statement in a nice hierarchical flow. Using the natural language we were
@@ -529,7 +529,7 @@ describe('When clicking the greet me button', function() {
 we can see that the test output shows an appropriate error message letting us
 know that a test is failing and giving us some details about the reason:
 
-![Failed Results!]({{ site.baseurl }}/images/2016-07-16-Jasmine-Karma/02_Error_Output.PNG)
+![Failed Results!]({{ site.baseurl }}/images/2016-07-16-Jasmine-Karma/02_Error_Output.png)
 
 Again the output depends and can be different based on the used reporter.
 
