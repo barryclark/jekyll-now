@@ -6,7 +6,7 @@ author: emir_osmanoski
 comments: true
 ---
 
-![Karma/Jasmine!]({{ site.baseurl }}/images/2016-07-16-Jasmine-Karma/00_Header.png)
+![Test Results!]({{ site.baseurl }}/images/2016-07-16-Jasmine-Karma/frontHeader.png)
 
 This post is going to tackle some basics of unit testing Angular 1.x
 applications usings Karma and Jasmine. Very recently I started working on
