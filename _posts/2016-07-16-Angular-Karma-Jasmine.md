@@ -59,7 +59,7 @@ difference is most notable in the way the tests are written and the
 components and their functionality are described.
 
 With Jasmine you get very neatly organized and if you want, natural language
-test output. This is very neat and especially so if you combine the output via
+test output. This is very neat especially if you combine the output via
 Karma with some interesting reporters integrated into your CI solution.
 
 Read more about Jasmine and all the different features it provides
