@@ -12,8 +12,7 @@
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
-  </head>
+    </head>
 
   <body>
     <div class="wrapper-masthead">
@@ -27,8 +26,11 @@
           </div>
 
           <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
             <a href="{{ site.baseurl }}/about">About</a>
+            <a href="{{ site.baseurl }}/all">All Posts</a>
+            <a href="{{ site.baseurl }}/updates">E-mail Updates</a>
+            <a href="{{ site.baseurl }}/feed.xml">RSS</a>
+            <a href="http://twitter.com/slasm">Twitter</a>
           </nav>
         </header>
       </div>
@@ -40,8 +42,13 @@
 
     <div class="wrapper-footer">
       <div class="container">
-        <footer class="footer">
-          {% include svg-icons.html %}
+        <footer class="footer" style="text-align: left;">
+          
+            <a href="{{ site.baseurl }}/disclaimer">Disclaimer</a> | 
+            <a href="{{ site.baseurl }}/copyright">Copyright</a>
+          <strong>&copy</strong> 2016 <a href="{{ site.baseurl }}">slasm.com</a>
+            {% include svg-icons.html %}
+         
         </footer>
       </div>
     </div>

@@ -1,15 +1,8 @@
 ---
 layout: page
-title: About
 permalink: /about/
+title: About
 ---
+Slasm is a random word, don't look for any meaning behind it. I used a random domain name generator to create it.
 
-Some information about you!
-
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+I will write about anything and everything I can think of, things that happen to me, strange ideas that pop into my brain, my thoughts on things, etc.
