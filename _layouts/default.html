@@ -15,15 +15,7 @@
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
   </head>
   
-  <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v2.7&appId=185107328331620";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
+  
   <body>
     <div class="wrapper-masthead">
       <div class="container">
@@ -37,7 +29,9 @@
 
           <nav>
             <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
+            <!--<a href="{{ site.baseurl }}/about">About</a>-->
+            <a href="{{ site.baseurl }}/blog/category/">Category</a>
+            <a href="{{ site.baseurl }}/blog/tag/">Tag</a>
           </nav>
         </header>
       </div>
@@ -51,6 +45,7 @@
       <div class="container">
         <footer class="footer">
           {% include svg-icons.html %}
+          Copyright © ZUM internet Corp. All Rights Reserved. powered by jekyll, github.com.
         </footer>
       </div>
     </div>
