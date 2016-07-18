@@ -3,7 +3,7 @@ layout: post
 title: Four Java Limitations You May Never Encounter
 tags: [java]
 keywords: [programming, list, limit]
-image: /images/Java_logo.png
+image: /images/Java_logo.jpg
 excerpt: 1. Maximum and Minimum values; 2. String Length; 3. Constant String Length; 4. Variable Name Length
 ---
 
