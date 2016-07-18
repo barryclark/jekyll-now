@@ -97,4 +97,4 @@ Recently I moved from Frankfurt to Amsterdam, having to leave my job there as a 
 
 Starting to code was just the beginning of a long journey. As a developer you need to keep learning new things constantly. **Online resources are still the best option for me, along with the awesome web community and people you work with**.
 
-> This post was first published on the [Springest Devblog](http://devblog.springest.com/).
+> This post was first published on the [Springest Devblog](http://devblog.springest.com/how-i-taught-myself-to-code).
