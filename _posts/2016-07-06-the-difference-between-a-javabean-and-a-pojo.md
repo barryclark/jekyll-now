@@ -3,7 +3,7 @@ layout: post
 title: The Difference Between a JavaBean and a POJO
 tags: [java]
 keywords: [programming, javabean, bean, pojo, definition]
-image: /images/Java_logo.png
+image: /images/Java_logo.jpg
 ---
 
 If you've programmed in Java for any amount of time, you'll inevitably come across the terms bean, JavaBean, and POJO. What are they and how do they differ? Let's start with some definitions:
