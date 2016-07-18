@@ -68,8 +68,8 @@ classes which we will take a look at a bit later on when looking at the code
 loading the plugins.
 
 The Plugin Contract library also defines the objects that are used in the
-communication between the client and the plugins, the `PluginExecutionEntry`
-and `PluginExecutionResult` classes.
+communication between the client and the plugins, the "PluginExecutionEntry"
+and "PluginExecutionResult" classes.
 
 The two core interfaces in the contract project and their respective
 properties:
@@ -120,11 +120,11 @@ public class PluginA : IPluginContract { }
 
 At the class definition we encounter two key MEF attributes:
 
-- `Export`
+- "Export"
 	- which tells MEF which Interface/Type this particular class is exposing/implementing.
 	- This tells MEF that the class is something that can be "plugged" in somewhere.
 	- In our case we are going to query all "exports" of type IPluginContract
-- `ExportMetadata`
+- "ExportMetadata"
 	- First attribute "PluginName" defines the Metadata attribute name
 	- Second attribute "ApiAPlugin" defines the actual value of the Metadata attribute.
 	- In other terms, we can use this to search for a specific "pluggable" component of type IPluginContract by querying the metadata attribute.
@@ -155,7 +155,7 @@ public PluginExecutionResult ExecutePlugin(PluginExecutionEntry entry)
 ```
 
 The code is reading some internal configuration defined in a config.xml. The
-plugin then makes an API call  using an `HttpClient` to another *internal*
+plugin then makes an API call  using an "HttpClient" to another *internal*
 API, which will not be covered in this post.
 
 The API call just returns a string result (*apiresult*) which is then returned
@@ -311,7 +311,7 @@ public IPluginContract GetPlugin(string identifier)
 ```
 
 What the GetPlugin Method does is search the defined MEF Container that
-contains all exports found in the aggregate catalogue. The `GetExports` method
+contains all exports found in the aggregate catalogue. The "GetExports" method
 is told to search exports for IPluginContract. 
 
 The second generic parameter defines the structure of the Metadata we are
@@ -321,7 +321,7 @@ Plugin Client.
 
 We are in a sense telling MEF to get all exports defined in those assemblies,
 that we have loaded in the catalogues and find us the exports for type
-`IPluginContract`. After this, using the `IPluginMetadata` interface we are
+"IPluginContract". After this, using the "IPluginMetadata" interface we are
 filtering based on the passed Plugin Identifier. If we remember we defined the
 metadata information in a non-strongly typed approach:
 
@@ -350,8 +350,8 @@ are notified of plugins in the repository behaving unexpectedly.
 ## Utilizing the Plugin and Sample Plugin Functionality
 
 If all is well and the manager returns an actual instance, the client code as
-it can be seen in the snippet previously will `ExecutePlugin`, in the specific
-case with a *null* parameter. The client code then just returns the `Output`
+it can be seen in the snippet previously will "ExecutePlugin", in the specific
+case with a *null* parameter. The client code then just returns the "Output"
 which is a simple string.
 
 As described above the Plugin (both A and B) make a call to other API services
