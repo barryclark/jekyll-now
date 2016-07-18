@@ -2,6 +2,7 @@
 layout: post
 title: Review - Light of Dragons
 description: SunCoreGames
+category: review
 featured: lightofdragons.jpg
 tags: [games, review, light of dragons, roots of mali, suncoregames]
 ---
