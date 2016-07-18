@@ -3,6 +3,7 @@ layout: linkedin_post
 title: Autoboxing & Equality
 tags: [java, linkedin]
 keywords: [programming, autoboxing, equality]
+image: /images/Java_logo.jpg
 linkedin_post: groups/70526/70526-6065138086264786948
 ---
 
