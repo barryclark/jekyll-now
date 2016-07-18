@@ -38,3 +38,6 @@ navigation:
    url: /bookshelf.html
  - title: Archive
    url: /archive.html
+
+# Gems
+gems: [jekyll-paginate]
