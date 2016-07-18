@@ -786,11 +786,15 @@ nav {
     }
 
     .img-half {
-      width: 347px;
+      max-width: 347px;
     }
 
     .img-third {
-      width: 229px;
+      max-width: 229px;
+    }
+
+    .img-fourth {
+      max-width: 171px;
     }
 
     @include mobile {
@@ -806,7 +810,7 @@ nav {
 
     a { margin: auto; width: auto; }
 
-    img { margin: auto; width: auto; }
+    img { margin: auto; }
   }
 
   .large-cap {
