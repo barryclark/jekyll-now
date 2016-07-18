@@ -144,15 +144,29 @@ ex. ENS0000001ENS0000002 -> ENS0000001 ENS0000002
         rejectstring = r.read().replace("\n","")
 
 
+##### When python setup.py register doesn't work...do sudo python.py register 
+
+     claire2@cLAIRE-pc:~/test$ python setup.py register 
+     running register 
+     running egg_info 
+     deleting test.egg-info/requires.txt
+     error: [Errno 13] Permission denied: 'test.egg-info/requires.txt'
+     claire2@cLAIRE-pc:~/test$ sudo python setup.py register   
+     now it works
 ##### Get current working directory
 
         import os
         currentwd = os.getcwd()
 
-##### Command line arguments
+##### argparse Command line args
+
+
+
+##### sys.argv Command line arguments
 
     import sys
     infile = sys.argv[1]
+
 
 ##### Skip first argv
 
@@ -278,6 +292,7 @@ ex. ENS0000001ENS0000002 -> ENS0000001 ENS0000002
     
 
 ### <font color="red">R</font>
+
 
 ##### Command line arguments 
   
