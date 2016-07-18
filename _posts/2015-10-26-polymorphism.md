@@ -3,6 +3,7 @@ layout: linkedin_post
 title: Polymorphism
 tags: [java, linkedin]
 keywords: [programming, polymorphism]
+image: /images/Java_logo.jpg
 linkedin_post: groups/70526/70526-6064416840703111169
 ---
 
