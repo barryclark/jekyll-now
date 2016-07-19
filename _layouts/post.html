@@ -5,27 +5,28 @@ layout: default
 {% assign author = site.data.authors[page.author] %}
 
 <article class="post">
-  <h1 class="post-main-title">
-    <span>{{ page.title }}<span>
-    {% include post-category-subtitle.html post=page %}
-  </h1>
-
-  <div class="entry">
-    {{ content }}
-  </div>
+    <h1 class="post-main-title">
+        <span>{{ page.title }}<span>
+        {% include post-category-subtitle.html post=page %}
+    </h1>
   
-  <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
-    
-  </div>
+    <div class="entry">
+        {{ content }}
+    </div>
 
-  <!-- Output author details if some exist. -->
-{% if author %}
-    <span>
-        <!-- Personal Info. -->
-        Written by <a href="{{ author.web }}" target="_blank">{{ author.name }}</a>
-    </span>
-{% endif %}
+    <hr>  
 
-  {% include disqus.html disqus_identifier=page.disqus_identifier %}
-</article>
+    <div class="date">
+        Written on {{ page.date | date: "%B %e, %Y" }}
+    </div>
+
+    <!-- Output author details if some exist. -->
+    {% if author %}
+        <span>
+            <!-- Personal Info. -->
+            Written by <a href="{{ author.web }}" target="_blank">{{ author.name }}</a>
+        </span>
+    {% endif %}
+
+    {% include disqus.html disqus_identifier=page.disqus_identifier %}
+  </article>
