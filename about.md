@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Hi, I'm Rohan Varma, a Computer Science student at UCLA!
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+I'm a rising second year, and I'm working with an awesome team at Hudl, a sports tech startup. My interests include application design and scalability, algorithms, and machine learning. 
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[rvarm1@ucla.edu](mailto:rvarm1@ucla.edu)
