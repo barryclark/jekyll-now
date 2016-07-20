@@ -15,4 +15,4 @@ The Silver Case is an interactive novel which progresses as the player solves va
 
 Grasshopper Manufacture has already opened store pages for the game on [Steam](http://store.steampowered.com/app/476650) and [PLAYISM](http://playism-games.com/game/285/the-silver-case). It should hit this fall for $14.99. I'll post an in-depth review once I get my hands on it.
 
-<img src="/images/silvercase/silver1.jpg"/> <img src="/images/silvercase/silver2.jpg"/>
+<img src="/images/silvercase/silver1.jpg" width="475"/> <img src="/images/silvercase/silver2.jpg" width="475"/>
