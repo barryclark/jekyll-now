@@ -7,7 +7,7 @@ Diagnosing medical conditions such as sickle cell disease can become much, much 
 
 During my past year at UCLA, I had the opportunity to work as an undergraduate researcher in a biotechnology related lab. The project I was working on with a couple of other undergrads under a postdoc aimed to streamline the process of identifying sickle cell disease through image processing and machine learning. 
 
-### Some background on Sickle Cell Disease
+### Some background on  Cell Disease
 Talk about the background of sickle cell disease here.
 
 # The Current State of Sickle Cell Disease Diagnosis
