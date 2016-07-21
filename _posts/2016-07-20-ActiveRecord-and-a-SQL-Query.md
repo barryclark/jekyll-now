@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ActiveRecord ORM and some SQL querying
+title: ActiveRecord ORM and SQL querying
 ---
 So today I got an email for an open Technical Support Engineer role at a company requiring specifically SQL. Their schtick was: Take take this test involving some programming questions, basic math, and general people questions then we talk to you. That's fine I guess, I wasn't too bad at math and people seem to be moderately simple. But wait, they only mention SQL in the ad. So I'm thinking to myself, how much SQL do I actually know? Turns out, almost none. Although I've quite literally written thousands of ActiveRecord statements for my PostgreSQL and SQLite Rails apps. It doesn't mean diddly squat.
 
@@ -11,7 +11,7 @@ So today I got an email for an open Technical Support Engineer role at a company
 {% endhighlight %}
  which uses the ActiveRecord Library to execute this hidden SQL code into the database:
  {% highlight SQL %}
- SELECT * FROM users WHERE id = 1 LIMIT 1  
+ SELECT * FROM users WHERE id = 1 LIMIT 1;
  {% endhighlight %}
 This outputs an ActiveRecord hash containing a user found by the query in the database.
 {% highlight ruby %}
