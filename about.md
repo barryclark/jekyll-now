@@ -25,4 +25,4 @@ Currently looking for a Junior level role in Web Development, preferably with Ra
 
 [stevechenweb@gmail.com](mailto:stevechenweb@gmail.com)  
 [linkedIn.com/in/stevechendc](https://www.linkedin.com/in/stevechendc)  
-[twitter.com/stevechendc](twitter.com/stevechendc)
+
