@@ -112,6 +112,7 @@ img {
 
 pre {
   white-space: pre-wrap;
+  font-size: 85%;
 }
 
 // Fixes images in popup boxes from Google Translate
@@ -124,7 +125,7 @@ pre {
   color: $gray;
 }
 
-// Specify the color of the selection
+/*// Specify the color of the selection
 ::-moz-selection {
   color: $black;
   background: $lightGray;
@@ -132,7 +133,7 @@ pre {
 ::selection {
   color: $black;
   background: $lightGray;
-}
+}*/
 
 // Nicolas Gallagher's micro clearfix hack
 // http://nicolasgallagher.com/micro-clearfix-hack/

@@ -101,7 +101,11 @@ So now we can download and add data that will contain interesting boundaries. Th
 
 With all of those datasets installed we're set to start joining on subdivisions to get interesting data out. Given the name of a neighborhood (I picked Westchester as an example), you can select all of the properties within it:
 
-     SELECT sale_date, totsalpric, siteaddr FROM properties JOIN subdivisions ON ST_Within(properties.geom, subdivisions.geom) WHERE subdivisions.name = 'WESTCHESTER' ORDER BY sale_date DESC;
+     SELECT sale_date, totsalpric, siteaddr
+     FROM properties
+     JOIN subdivisions ON ST_Within(properties.geom, subdivisions.geom)
+     WHERE subdivisions.name = 'WESTCHESTER'
+     ORDER BY sale_date DESC;
 
 ### Visualizing with QGIS
 
@@ -113,7 +117,11 @@ Add a password to your Postgres user (`ALTER USER shawn WITH PASSWORD 'password'
 
 Next create a view of the properties table that will be only the properties that we want to plot:
 
-    CREATE VIEW westchester AS SELECT properties.gid, properties.geom FROM properties JOIN subdivisions ON ST_Within(properties.geom, subdivisions.geom) WHERE subdivisions.name = 'WESTCHESTER';
+    CREATE VIEW westchester
+    AS SELECT properties.gid, properties.geom
+       FROM properties
+       JOIN subdivisions ON ST_Within(properties.geom, subdivisions.geom)
+       WHERE subdivisions.name = 'WESTCHESTER';
 
 Now add the layer for the Westfield neighborhood itself. Since it's only one data point without a join, we'll use the QGIS query functionality to select it:
 
@@ -148,7 +156,12 @@ We will clean this up by using the ST_Centroid function to compute the center of
 
 But we can limit the data that it checks by checking the bounding box first using `geom1 && geom2`:
 
-    CREATE VIEW westchester_centroid AS SELECT prop.gid, prop.geom FROM properties AS prop JOIN subdivisions ON prop.geom && subdivisions.geom AND ST_Within(ST_Centroid(prop.geom), subdivisions.geom) WHERE subdivisions.name = 'WESTCHESTER';
+    CREATE VIEW westchester_centroid
+    AS SELECT prop.gid, prop.geom
+       FROM properties AS prop
+       JOIN subdivisions ON prop.geom && subdivisions.geom
+                        AND ST_Within(ST_Centroid(prop.geom), subdivisions.geom)
+       WHERE subdivisions.name = 'WESTCHESTER';
 
 ![ST_Centroid](/images/SquareMile/rgis5.png)
 
