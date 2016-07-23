@@ -38,10 +38,11 @@ Since these data did not have any labels associated with them yet (we sent off t
 
 One way to do this is by using the `kmeans` algorithm. This algorithm takes in a set of data and assigns each data point to a cluster of other similar data points. This is done through computing a `centroid`, or mean vector, for each cluster. Each time a new data point is added to a cluster, its centroid is recomputed. Here's a visualization of the kmeans algorithm: 
 
-Markdown | Less | Pretty
---- | --- | ---
-*Still* | `renders` | **nicely**
-1 | 2 | 3
+dog | bird | cat
+:-- | :--: | --:
+foo | foo  | foo
+bar | bar  | bar
+baz | baz  | baz
 
 
 ### Bootstrap Aggregation
