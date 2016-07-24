@@ -7,5 +7,3 @@ published: true
 El agua es china y YA TE EXPLICARÉ MÁS
 
 Y ahora edito porque puedo
-
-{% include index-default-world.html %}
