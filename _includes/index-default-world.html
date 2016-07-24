@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jVectorMap demo</title>
+  <link rel="stylesheet" href="jquery-jvectormap-2.0.3/jquery-jvectormap-2.0.3.css" type="text/css" media="screen"/>
+  <script src="jquery-jvectormap-2.0.3/jquery.min.js"></script>
+  <script src="jquery-jvectormap-2.0.3/jquery-jvectormap-2.0.3.min.js"></script>
+  <script src="jquery-jvectormap-2.0.3/jquery-jvectormap-world-mill.js"></script>
+</head>
+<body>
+  <div id="world-map" style="width: 600px; height: 400px"></div>
+  <script>
+    $(function(){
+      $('#world-map').vectorMap({map: 'world_mill'});
+    });
+  </script>
+</body>
+</html>
+
