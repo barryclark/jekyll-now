@@ -1,0 +1,71 @@
+/*
+Error: Undefined variable: "$thumbnail-padding".
+        on line 9 of sass/bootstrap/thumbnails.scss
+
+4: 
+5: 
+6: // Mixin and adjust the regular image class
+7: .thumbnail {
+8:   display: block;
+9:   padding: $thumbnail-padding;
+10:   margin-bottom: $line-height-computed;
+11:   line-height: $line-height-base;
+12:   background-color: $thumbnail-bg;
+13:   border: 1px solid $thumbnail-border;
+14:   border-radius: $thumbnail-border-radius;
+
+Backtrace:
+sass/bootstrap/thumbnails.scss:9
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/script/tree/variable.rb:49:in `_perform'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/script/tree/node.rb:50:in `perform'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/tree/visitors/perform.rb:384:in `visit_prop'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/stack.rb:115:in `with_frame'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/tree/visitors/perform.rb:420:in `block (2 levels) in visit_rule'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/tree/visitors/perform.rb:420:in `map'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/tree/visitors/perform.rb:420:in `block in visit_rule'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/tree/visitors/perform.rb:418:in `visit_rule'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/stack.rb:115:in `with_frame'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/tree/visitors/base.rb:52:in `map'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/engine.rb:285:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/plugin/compiler.rb:489:in `update_stylesheet'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/plugin/compiler.rb:209:in `each'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/plugin/compiler.rb:293:in `watch'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/plugin.rb:108:in `method_missing'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/exec/sass_scss.rb:370:in `watch_or_update'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/exec/sass_scss.rb:50:in `process_result'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/exec/base.rb:52:in `parse'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/exec/base.rb:19:in `parse!'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/bin/sass:13:in `<top (required)>'
+/usr/bin/sass:23:in `load'
+/usr/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$thumbnail-padding\".\A         on line 9 of sass/bootstrap/thumbnails.scss\A \A 4: \A 5: \A 6: // Mixin and adjust the regular image class\A 7: .thumbnail {\A 8:   display: block;\A 9:   padding: $thumbnail-padding;\A 10:   margin-bottom: $line-height-computed;\A 11:   line-height: $line-height-base;\A 12:   background-color: $thumbnail-bg;\A 13:   border: 1px solid $thumbnail-border;\A 14:   border-radius: $thumbnail-border-radius;"; }

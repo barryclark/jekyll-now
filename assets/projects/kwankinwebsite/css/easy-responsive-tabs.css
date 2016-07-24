@@ -1,0 +1,234 @@
+.resp-tabs-list, .resp-tabs-list p {
+    margin: 0px;
+    padding: 0px;
+}
+.resp-tabs-list {
+    display: inline-block;
+}
+.resp-tabs-list li {
+    font-weight: 600;
+    font-size: 16px;
+    display: inline-block;
+    padding: 18px 15px;
+    margin: 0 4px 0 0;
+    list-style: none;
+    cursor: pointer;
+}
+
+.resp-tabs-container {
+    padding: 0px;
+    background-color: #fff;
+    clear: left;
+}
+
+h2.resp-accordion {
+    cursor: pointer;
+    padding: 5px;
+    display: none;
+    
+}
+.resp-tab-content {
+    display: none;
+    padding: 15px;
+    padding-top: 30px;
+    text-align: left;
+    box-shadow: none;
+}
+.text-center .resp-tab-content,
+.text-center .resp-accordion {
+    text-align: left;
+}
+
+.resp-tab-active {
+	border: 1px solid #ebebeb !important;
+	border-bottom: none;
+	margin-bottom: -1px !important;
+	padding: 17px 14px 19px 14px !important;
+	border-top: 1px solid #ebebeb !important;
+	border-bottom: 0px #fff solid !important;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.resp-tab-active {
+    border-bottom: none;
+    background-color: #fff;
+}
+
+.resp-content-active, .resp-accordion-active {
+    display: block;
+}
+
+.resp-tab-content {
+    border: none;
+    border-top: 1px solid #ebebeb;
+    /*border-left-color: transparent;
+    border-left-color: transparent;*/
+	/*border-top-color: #ebebeb;*/
+}
+
+h2.resp-accordion {
+    font-size: 13px;
+    border: 1px solid #ebebeb;
+    border-top: 0px solid #ebebeb;
+    margin: 0px;
+    padding: 10px 15px;
+}
+
+h2.resp-tab-active {
+    border-bottom: 0px solid #ebebeb !important;
+    margin-bottom: 0px !important;
+    padding: 10px 15px !important;
+}
+
+h2.resp-tab-title:last-child {
+    border-bottom: 12px solid #ebebeb !important;
+    background: blue;
+}
+
+/*-----------Vertical tabs-----------*/
+.resp-vtabs ul.resp-tabs-list {
+    float: left;
+    width: 30%;
+}
+
+.resp-vtabs .resp-tabs-list li {
+    display: block;
+    padding: 19px 15px !important;
+    margin: 0 0 4px;
+    cursor: pointer;
+    float: none;
+}
+
+.resp-vtabs .resp-tabs-container {
+    padding: 0px;
+    background-color: #fff;
+    /*border: 1px solid #ebebeb;*/
+    border-left: 1px solid #ebebeb;
+    float: left;
+    width: 68%;
+    min-height: 250px;
+    border-radius: 4px;
+    clear: none;
+}
+
+.resp-vtabs .resp-tab-content {
+    border: none;
+    word-wrap: break-word;
+    padding-left: 30px;
+}
+
+.resp-vtabs li.resp-tab-active { 
+    position: relative;
+    z-index: 1;
+    margin-right: -1px !important;
+    padding: 18px 15px 19px 14px !important;
+    /*border-top: 1px solid;*/
+    border: 1px solid #ebebeb !important;
+    border-left: 1px solid #ebebeb !important;
+    border-left: none !important;
+    margin-bottom: 4px !important;
+    border-right: 1px #FFF solid !important;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.resp-arrow {
+    float: right;
+    margin-top: 10px;
+    -moz-transition:    all .2s ease;
+    -o-transition:      all .2s ease;
+    -webkit-transition: all .2s ease;
+    transition:         all .2s ease;
+}
+
+h2.resp-tab-active span.resp-arrow {
+    -ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
+}
+
+/*-----------Accordion styles-----------*/
+h2.resp-tab-active {
+    background: #DBDBDB;/* !important;*/
+}
+
+.resp-easy-accordion h2.resp-accordion {
+    display: block;
+}
+
+
+.resp-easy-accordion .resp-tab-content:last-child {
+    border-bottom: 1px solid #ebebeb;/* !important;*/
+}
+
+.resp-jfit {
+    width: 100%;
+    margin: 0px;
+}
+
+.resp-tab-content-active {
+    display: block;
+}
+
+h2.resp-accordion:first-child {
+    border-top: 1px solid #ebebeb;/* !important;*/
+}
+.resp-accordion.resp-tab-active {
+    border-top: none;
+}
+
+/*Here your can change the breakpoint to set the accordion, when screen resolution changed*/
+@media only screen and (max-width: 768px) {
+    ul.resp-tabs-list {
+        display: none;
+    }
+
+    h2.resp-accordion {
+        display: block;
+    }
+    .resp-tab-content {
+        border: 1px solid #ebebeb;
+    }
+    .resp-vtabs .resp-tab-content {
+        border: 1px solid #ebebeb;
+    }
+    
+    .resp-tabs-container .resp-accordion.resp-tab-active {
+        border-top: none!important;   
+        border-bottom: none!important;    
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+    .resp-tabs-container .resp-accordion.resp-tab-active:nth-of-type(1) {
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-top: 1px solid #ebebeb !important;
+        border-bototm: none!important;
+    }
+    
+
+    .resp-tab-content {
+        -webkit-box-shadow: inset 0px 4px 5px -3px rgba(0,0,0,0.05);
+        -moz-box-shadow: inset 0px 4px 5px -3px rgba(0,0,0,0.05);
+        -ms-box-shadow: inset 0px 4px 5px -3px rgba(0,0,0,0.05);
+        box-shadow: inset 0px 4px 5px -3px rgba(0,0,0,0.05);
+    }
+    
+
+    .resp-vtabs .resp-tabs-container {
+        border: none;
+        float: none;
+        width: 100%;
+        min-height: 100px;
+        clear: none;
+    }
+
+    .resp-accordion-closed {
+        display: none !important;
+    }
+
+    .resp-vtabs .resp-tab-content:last-child {
+        border-bottom: 1px solid #ebebeb !important;
+    }
+}
