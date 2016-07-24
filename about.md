@@ -5,7 +5,7 @@ permalink: /about/
 ---
 
   
-<img src="{{site.url}}/images/James_grey.jpg" width="400" style="float:right; margin-bottom:-5px">
+<img src="{{site.url}}/images/James_headshot.jpg" width="350" style="float:right; margin-bottom:-5px">
 
 ### James E. Pustejovsky
 
