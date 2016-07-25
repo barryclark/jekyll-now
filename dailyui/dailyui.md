@@ -6,6 +6,14 @@ permalink: /dailyui/
 
 <section class="card">
 
+  <h1>Travel App</h1>
+
+  <figure>
+    <img class="dailyui" src="/images/travel-app_dailyui.png" alt="Travel App Daily UI">
+  </figure>
+
+  <p class="readable">Single screen of a travel app – destination: Copenhagen, Denmark. Travel apps should convince you to travel to whatever destination you're looking for. If I search for trips to Copenhagen, I would like to see big, beautiful imagery, a brief summary or description of the location, and potential trip logistics (flight date & time, price, etc).</p>
+
   <h1>Blog Post</h1>
 
   <figure>
