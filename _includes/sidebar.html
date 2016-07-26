@@ -1,0 +1,63 @@
+<!-- main-header -->
+<div class="sidebar">
+
+    <!-- avatar -->
+    <div class="avatar">
+      <img src="../images/me.jpg">
+    </div>
+    <!-- /avatar -->
+
+    <!-- logo -->
+    <div class="logo">
+      <h1>
+        <a href="{{ site.url }}">
+          Miriam<span>Tocino</span></br>
+          <small>Coding & Teaching</small>
+        </a>
+      </h1>
+    </div>
+    <!-- /logo -->
+
+    <!-- mod-widget about-me -->
+    <div class="about-me">
+      <p>I turned my former professional life down to become a web developer. Now I spend my days coding and teaching other people who want to follow the same path.</p>
+
+      <p><a href="http://www.miriamtocino.com/articles/how-i-taught-myself-to-code" target="_blank">Read more about my story.</a></p>
+
+      <!-- mod-social-media-list -->
+      {% include social-media-list.html %}
+      <!-- /mod-social-media-list -->
+    </div>
+    <!-- /mod-widget about-me -->
+
+    <hr>
+
+    <!-- main-nav -->
+    <nav role="navigation">
+        <ul>
+        {% for link in site.navigation %}
+            {% assign current = nil %}
+            {% if page.url contains link.url %}
+                {% assign current = 'current' %}
+            {% endif %}
+
+            <li class="nav__item">
+                <a href="{{ link.url }}" class="{{ current }}">{{ link.title }}</a>
+            </li>
+        {% endfor %}
+        </ul>
+    </nav>
+    <!-- /main-nav -->
+
+    <!-- footer-desktop -->
+    <footer class="footer">
+        <div class="copyright">
+          <p>&copy; {{ site.time | date: '%Y' }}
+            <a href="{{ site.url }}" target="_blank">miriamtocino.com</a>
+          </p>
+        </div>
+    </footer>
+    <!-- /footer-desktop -->
+
+</div>
+<!-- /main-sidebar -->

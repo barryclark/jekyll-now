@@ -32,6 +32,14 @@
     {% endif %}
     <!-- /github -->
 
+    <!-- instagram -->
+    {% if site.instagram_username %}
+    <li>
+        <a href="http://instagram.com/{{ site.instagram_username }}" alt="Instagram" title="Instagram" target="_blank"><span>{% include svg-icons/instagram.html %}</span></a>
+    </li>
+    {% endif %}
+    <!-- /instagram -->
+
     <!-- pinterest
     {% if site.pinterest_username %}
     <li>

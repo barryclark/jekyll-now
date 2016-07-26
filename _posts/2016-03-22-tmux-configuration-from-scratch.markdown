@@ -181,6 +181,4 @@ I find it also very useful to focus on the contents of a single pane temporarily
 
 Now it's your turn! After these notes, I think you are ready to start playing around with tmux, which might be hard at first. My best advice is to not think about it too much - just go for it and stick with it!
 
-> This post was first published on the [Springest Devblog](http://devblog.springest.com/tmux-configuration-from-scratch).
-
 [tmux-logo]: http://miriamtocino.github.io/images/posts/tmux-logo.svg

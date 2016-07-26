@@ -1,43 +1,36 @@
-# Site settings
 title: Miriam Tocino
 email: miriam.tocino@gmail.com
-description: "Turning into Web Developer"
+description: "Teaching & Coding"
+
 author :
   name : Miriam Tocino
   email : miriam.tocino@gmail.com
   github : miriamtocino
   twitter : miriamtocino
   feedburner : feedname
-baseurl: "" # the subpath of your site, e.g. /blog/
-# url: "http://miriamtocino.com" # the base hostname & protocol for your site
-url: "http://www.miriamtocino.com" # the base hostname & protocol for your site
-twitter_username: miriamtocino
-github_username:  miriamtocino
-pinterest_username:  miriamtocino
-bitbucket_username:  miriamtocino
-linkedin_username:  miriamtocino
 
-# Build settings
-# markdown: redcarpet
-# redcarpet:
-  # extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "with_toc_data", "tables"]
+url: "http://www.miriamtocino.com"
+
+twitter_username:   miriamtocino
+github_username:    miriamtocino
+pinterest_username: miriamtocino
+bitbucket_username: miriamtocino
+linkedin_username:  miriamtocino
+instagram_username: miriamtocino
+
 permalink: /articles/:title
 paginate: 30
 
-# Navigation
 navigation:
- - title: Blog
-   url: /index.html
- - title: Projects
-   url: /projects.html
- - title: About
-   url: /about.html
- - title: Elearning
-   url: /elearning.html
- - title: Bookshelf
-   url: /bookshelf.html
- - title: Archive
-   url: /archive.html
+  # - title: Resources
+  #   url: /resources.html
+  - title: Elearning
+    url: /elearning.html
+  - title: Bookshelf
+    url: /bookshelf.html
+  # - title: Projects
+  #   url: /projects.html
+  - title: Archive
+    url: /archive.html
 
-# Gems
 gems: [jekyll-paginate]

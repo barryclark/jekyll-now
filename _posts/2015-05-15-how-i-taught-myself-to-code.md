@@ -96,5 +96,3 @@ That's the story about how I landed a job in tech.
 Recently I moved from Frankfurt to Amsterdam, having to leave my job there as a PHP Developer. During my first month in the city I was actively attending Meetups, where I met an experienced developer who convinced me to learn Ruby on Rails. My approach to learn it was quite similar and some weeks later I was having my first interview at [Springest](https://www.springest.nl/). I have been working with them for one month already and **I am impressed about their way to encourage people to develop themselves both personal and professionally**, not only through their site but also within the company.
 
 Starting to code was just the beginning of a long journey. As a developer you need to keep learning new things constantly. **Online resources are still the best option for me, along with the awesome web community and people you work with**.
-
-> This post was first published on the [Springest Devblog](http://devblog.springest.com/how-i-taught-myself-to-code).

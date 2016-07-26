@@ -3,37 +3,16 @@
 \*------------------------------------*/
 
 .mod-social-media-list {
+  li {
+    display: inline-block;
+    margin-right: 8px;
 
-	// S
-    @include breakpoint($breakpoint-s) {
-        @include layout($s-layout);
+    a span svg:hover #social-media-logo {
+      fill: $color-primary;
+    }
 
-        @include transition(150ms);
-		li {
-			display: inline-block;
-			margin-right: 8px;
-
-			svg {
-
-			}
-
-			a span svg:hover #social-media-logo {
-				fill: $color-primary;
-			}
-
-			&:before {
-				content: none !important;
-			}
-		}
-    };
-
-	// M
-    @include breakpoint($breakpoint-m) {
-        @include layout($m-layout);
-    };
-
-    // L
-    @include breakpoint($breakpoint-l) {
-        @include layout($l-layout);
-    };
+    &:before {
+      content: none !important;
+    }
+  }
 }

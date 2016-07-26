@@ -3,12 +3,11 @@ layout: blank-layout
 title: "Archive"
 ---
 
-<!-- Posts -->
+<!-- posts -->
 {% for post in site.posts %}
 <article class="mod-post archive">
-    <p class="date">{{ post.date | date_to_long_string }}</p>
-    <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
-    <h4 class="tagline">{{ post.tagline }}</h4>
+  <p class="date">{{ post.date | date_to_long_string }}</p>
+  <h4><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
 </article>
-{% endfor %} <!-- End Posts -->
-
+{% endfor %}
+<!-- /posts -->

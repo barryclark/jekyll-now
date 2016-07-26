@@ -6,8 +6,8 @@
 .mod-post--archive {
 
     // S
-    @include breakpoint($breakpoint-s) {
-        @include layout($s-layout);
+    @media (min-width: 569px) {
+        // @include layout($s-layout);
         background-color: $white;
 
         &:hover {
@@ -92,12 +92,12 @@
     }
 
     // M
-    @include breakpoint($breakpoint-m) {
-        @include layout($m-layout);
+    @media (min-width: 769px) {
+        // @include layout($m-layout);
     };
 
     // L
-    @include breakpoint($breakpoint-l) {
-        @include layout($l-layout);
+    @media (min-width: 1025px) {
+        // @include layout($l-layout);
     };
 }

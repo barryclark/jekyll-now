@@ -3,64 +3,24 @@ layout: default-related-writings
 comments: true
 ---
 
-    <!-- mod-post -->
-    <article class="mod-post">
-        <!-- comments-number
-        <a href="#disqus_thread"></a> -->
-        <p class="date">{{ page.date | date_to_long_string }}</p>
-        <h3>{{ page.title }}</h3>
-        <h4 class="tagline">{{ page.tagline }}</h4>
-        <p>{{ content }}</p>
-    </article>
-    <!-- /mod-post -->
+<!-- mod-post -->
+<article class="mod-post">
+    <!-- comments-number
+    <a href="#disqus_thread"></a> -->
+    <p class="date">{{ page.date | date_to_long_string }}</p>
+    <h3>{{ page.title }}</h3>
+    <h4 class="tagline">{{ page.tagline }}</h4>
+    <p>{{ content }}</p>
 
     <!-- mod-share-post -->
-    <div class="alert--warning">
-        <p>
-            ♥ If you liked this article, you can
-            <a href="https://twitter.com/intent/tweet?url={{ site.url }}{{ page.url }}&text={{ page.title }}&via=miriamtocino"
-            target="_blank">
-            share it with your followers</a>
-            or
-            <a href="https://twitter.com/miriamtocino" target="_blank">
-                follow me on Twitter</a> ♥
-        </p>
+    <div class="alert">
+      <p>
+        If you liked this article,
+        <a href="https://twitter.com/intent/tweet?url={{ site.url }}{{ page.url }}&text={{ page.title }}&via=miriamtocino"
+        target="_blank">
+        share it with your followers</a> ♥
+      </p>
     </div>
     <!-- /mod-share-post -->
-
-    <!-- mod-disqus -->
-    <div class="mod-disqus">
-        {% if page.comments %}
-        <div id="disqus_thread"></div>
-
-        <script type="text/javascript">
-            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-            var disqus_shortname = 'miriamtocino'; // required: replace example with your forum shortname
-
-            /* * * DON'T EDIT BELOW THIS LINE * * */
-            (function() {
-                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-            })();
-        </script>
-        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
-        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-        {% endif %}
-    </div>
-    <!-- mod-disqus -->
-
-    <!-- DISQUS - Calculate Number of Comments
-    <script type="text/javascript">
-        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-        var disqus_shortname = 'miriamtocino'; // required: replace example with your forum shortname
-
-        /* * * DON'T EDIT BELOW THIS LINE * * */
-        (function () {
-            var s = document.createElement('script'); s.async = true;
-            s.type = 'text/javascript';
-            s.src = '//' + disqus_shortname + '.disqus.com/count.js';
-            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-        }());
-    </script> -->
+</article>
+<!-- /mod-post -->

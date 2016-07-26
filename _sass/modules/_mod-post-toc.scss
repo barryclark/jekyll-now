@@ -5,9 +5,7 @@
 .mod-post-toc {
 
     // S
-    @include breakpoint($breakpoint-s) {
-        @include layout($s-layout);
-
+    @media (min-width: 569px) {
         display: none;
 
         padding-bottom: 20px;
@@ -42,13 +40,11 @@
     };
 
     // M
-    @include breakpoint($breakpoint-m) {
-        @include layout($m-layout);
+    @media (min-width: 769px) {
     };
 
     // L
-    @include breakpoint($breakpoint-l) {
-        @include layout($l-layout);
+    @media (min-width: 1025px) {
         display: block;
     };
 }

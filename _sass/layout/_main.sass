@@ -1,0 +1,32 @@
+// CONTENT & ASIDE
+
+main
+  padding: 3em 1.8em 0
+
+  .content
+    max-width: 700px
+
+    h3, h3 a
+      color: $color-primary
+      font-weight: 500
+
+    h3, h4
+      font-weight: 500
+
+    h3
+      margin: em(5px) 0
+
+  aside
+    display: none
+
+  @media (min-width: 769px)
+    display: flex
+    padding-left: 300px
+
+    .content
+      padding-left: 2em
+
+    aside
+      display: block
+      padding-top: 2em
+      padding-left: 2em

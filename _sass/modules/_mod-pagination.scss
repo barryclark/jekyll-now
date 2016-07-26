@@ -6,9 +6,7 @@
 .mod-pagination {
 
 	// S
-	@include breakpoint($breakpoint-s) {
-		@include layout($s-layout);
-
+	@media (min-width: 569px) {
 		margin-bottom: 40px;
 
 		ul {
@@ -44,7 +42,6 @@
 	};
 
 	// L
-	@include breakpoint($breakpoint-l) {
-
+	@media (min-width: 1025px) {
 	};
 }

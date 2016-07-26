@@ -3,7 +3,6 @@
 
 <!-- main -->
 <main>
-
     <!-- content -->
     <section class="content">
         {{content}}
@@ -12,24 +11,10 @@
 
     <!-- sidebar -->
     <aside>
-
         <!-- mod-widget toc -->
         <div class="mod-post-toc">
         </div>
         <!-- /mod-widget toc -->
-
-        <!-- mod-widget related-articles -->
-        <div class="mod-widget related-articles">
-            <h4>Related Articles</h4>
-            <ul>
-                {% for post in site.related_posts limit: 2 %}
-                <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-                <p class="date">{{ post.date | date_to_long_string }}</p>
-                {% endfor %}
-            </ul>
-        </div>
-        <!-- /mod-widget related-articles -->
-
     </aside>
     <!-- /sidebar -->
 

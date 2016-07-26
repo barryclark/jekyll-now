@@ -52,6 +52,4 @@ There will be moments in which you need to ask for help. In this case, you have 
 
 Last but not least, you need to make a commitment to yourself - _keep going when the landscape gets dark_. Normally it takes **about a week** to feel productive again. From there on you can only continue getting more and more efficient, which is something that definitely helps you grow as a developer. Enjoy the journey!
 
-> This post was first published on the [Springest Devblog](http://devblog.springest.com/vim-5-tips-to-survive-your-first-week).
-
 [vim-logo]: http://miriamtocino.github.io/images/posts/vim-logo.svg

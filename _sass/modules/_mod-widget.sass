@@ -1,0 +1,24 @@
+// MODULE WIDGET
+
+.mod-widget
+  &.recent-articles,
+  &.related-articles
+    display: none
+
+    padding-bottom: 20px
+    margin-bottom: 20px
+
+    h4
+      font-weight: 500
+      border-bottom: 1px solid $gray
+      padding-bottom: .5em
+
+    ul
+      li
+        list-style: none
+
+      p.date
+        margin-bottom: 20px
+
+    @media (min-width: 769px)
+      display: block

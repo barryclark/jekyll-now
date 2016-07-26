@@ -1,0 +1,86 @@
+// MAIN-SIDEBAR
+
+.sidebar
+  background-color: $gray-lighter
+  padding: 3em 1.8em 1.8em
+  text-align: center
+
+  .avatar
+    width: 100px
+    height: 100px
+    border-radius: 100%
+    overflow: hidden
+    margin: 0 auto
+
+    img
+      height: 100%
+
+  .logo
+    h1
+      font-size: em(27px)
+
+  nav
+    .nav__item
+      list-style: none
+
+      a
+        margin-left: em(5px)
+        margin-right: em(5px)
+        text-transform: uppercase
+        font-weight: 500
+
+        &:hover, &.current
+          border-bottom: 2px solid $color-primary
+          color: $color-primary
+
+  .about-me
+    max-width: 410px
+    margin: 0 auto
+
+  .logo
+    text-align: center
+
+  nav .nav__item
+    display: inline-block
+
+  .footer
+    display: none
+
+  @media (min-width: 769px)
+    height: 100%
+    position: fixed
+    min-width: 300px
+    max-width: 300px
+    text-align: left
+
+    .avatar
+      margin: 0
+
+    .logo
+      text-align: left
+
+      h1
+        font-size: em(27px)
+        padding-bottom: 1em
+
+    .about-me
+      padding-right: 1.5em
+
+    nav
+      padding-top: 0
+      .nav__item
+        display: block
+        text-align: left
+        margin-left: 0
+        margin-bottom: .25em
+
+        a
+          margin-left: 0
+
+    .footer
+      position: absolute
+      display: block
+      font-size: .9em
+      text-align: left
+      bottom: 1.2em
+      padding-right: 1.8em

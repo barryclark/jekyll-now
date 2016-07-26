@@ -1,34 +1,34 @@
 {% include head.html %}
-{% include main-sidebar.html %}
+{% include sidebar.html %}
 
 <!-- main -->
 <main>
 
-    <!-- content -->
-    <section class="content">
+  <!-- content -->
+  <section class="content">
     {{content}}
-    </section>
-    <!-- /content -->
+  </section>
+  <!-- /content -->
 
-    <!-- sidebar -->
-    <aside class="sidebar">
+  <!-- sidebar -->
+  <aside>
 
-        <!-- mod-widget recent-articles -->
-        <div class="mod-widget recent-articles">
-            <h4>Recent Articles</h4>
-            <ul>
-                {% for post in site.posts limit: 5 %}
-                <li>
-                    <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-                </li>
-                <p class="date">{{ post.date | date_to_long_string }}</p>
-                {% endfor %}
-            </ul>
-        </div>
-        <!-- /mod-widget recent-articles -->
+    <!-- mod-widget recent-articles -->
+    <div class="mod-widget recent-articles">
+        <h4>Recent Articles</h4>
+        <ul>
+            {% for post in site.posts limit: 5 %}
+            <li>
+                <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+            </li>
+            <p class="date">{{ post.date | date_to_long_string }}</p>
+            {% endfor %}
+        </ul>
+    </div>
+    <!-- /mod-widget recent-articles -->
 
-    </aside>
-    <!-- /sidebar -->
+  </aside>
+  <!-- /sidebar -->
 
 </main>
 <!-- /main -->
