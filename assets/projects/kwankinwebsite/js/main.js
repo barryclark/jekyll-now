@@ -181,7 +181,7 @@
 
 		    $('html, body').animate({
 	        scrollTop: $("#contactFormMargin").offset().top
-		    }, 2000);
+		    }, 500);
 
 		    event.preventDefault();
 		    return false;
@@ -195,12 +195,17 @@
 
 		    $('html, body').animate({
 	        scrollTop: $("#officeInfoMargin").offset().top
-		    }, 2000);
+		    }, 500);
 
 		    event.preventDefault();
 		    return false;
 		});
 	};
+
+	var imagesAdder = function () {
+		$()
+	};
+
 
 	$(function(){
 		burgerMenu();

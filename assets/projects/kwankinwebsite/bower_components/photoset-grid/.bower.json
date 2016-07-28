@@ -1,0 +1,20 @@
+{
+  "name": "photoset-grid",
+  "version": "1.0.1",
+  "description": "jQuery plugin to arrange images into a flexible grid",
+  "main": "jquery.photoset-grid.min.js",
+  "dependencies": {
+    "jquery": ">=1.5"
+  },
+  "homepage": "https://github.com/stylehatch/photoset-grid",
+  "_release": "1.0.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.0.1",
+    "commit": "e362a38a31c05ba86e9bb466a58ab0f2aa522e0d"
+  },
+  "_source": "https://github.com/stylehatch/photoset-grid.git",
+  "_target": "^1.0.1",
+  "_originalSource": "photoset-grid",
+  "_direct": true
+}

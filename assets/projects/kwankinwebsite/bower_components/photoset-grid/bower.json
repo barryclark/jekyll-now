@@ -1,0 +1,9 @@
+{
+  "name": "photoset-grid",
+  "version": "1.0.0",
+  "description": "jQuery plugin to arrange images into a flexible grid",
+  "main": "jquery.photoset-grid.min.js",
+  "dependencies": {
+    "jquery": ">=1.5"
+  }
+}

@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>jQuery Photoset Grid - Style Hatch</title>
+  <meta name="description" content="Arrange images into a flexible grid, based on Tumblr's photoset feature.">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script type="text/javascript" src="//use.typekit.net/tnk3ktt.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+  <link rel="stylesheet" href="http://yandex.st/highlightjs/7.3/styles/default.min.css">
+  <script src="http://yandex.st/highlightjs/7.3/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/colorbox.css" />
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="_/js/libs/jquery-1.9.1.min.js"><\/script>')</script>
+
+  <script type="text/javascript">
+  var StyleHatch = window.StyleHatch || {};
+  </script>
+
+</head>
+<body>
+  <header class="page-head">
+    <a href="http://stylehatch.co"><img src="img/sh-logo.png"></a>
+  </header>
+  <div id="container">
+    <header>
+      <h1>Photoset Grid</h1>
+      <h5>jQuery plugin to arrange images into a flexible grid</h5>
+    </header>
+    <div class="share">
+      <iframe src="http://jonathanmoore.github.com/github-buttons/github-stylehatch-btn.html?user=stylehatch&amp;repo=photoset-grid&amp;type=watch&amp;count=true" allowtransparency="true" frameborder="0" scrolling="0" width="90px" height="20px"></iframe>
+      <iframe src="http://jonathanmoore.github.com/github-buttons/github-stylehatch-btn.html?user=stylehatch&amp;repo=photoset-grid&amp;type=fork&amp;count=true" allowtransparency="true" frameborder="0" scrolling="0" width="90px" height="20px"></iframe>
+      <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://stylehatch.github.com/photoset-grid" data-text="Photoset Grid - jQuery plugin to arrange images into a flexible grid" data-via="stylehatch" data-related="Moore">Tweet</a>
+      <a href="https://twitter.com/stylehatch" class="twitter-follow-button" data-show-count="true" data-align="right" data-lang="en">Follow @twitterapi</a>
+    </div>
+
+    <div id="main" role="main">
+      <p>A simple jQuery plugin to arrange images into a flexible grid, based on Tumblr's photoset feature. Originally the plugin was created for our <a href="http://stylehatch.co">Style Hatch</a> Tumblr themes as a way to use the photoset grid in responsive layouts, but we have since expanded it for use outside of the themes.</p>
+
+      <h2>Demos &amp; Usage</h2>
+
+      <!-- Basic -->
+      <h3 id="demo-basic-usage">Basic Photoset Grid</h3>
+      <div class="photoset-grid-basic" data-layout="12" style="visibility: hidden;">
+        <img src="img/demo/nyc1-500px.jpg" width="1280" height="960" data-highres="img/demo/nyc1-highres.jpg">
+        <img src="img/demo/nyc2-500px.jpg" width="500" height="375" data-highres="img/demo/nyc2-highres.jpg">
+        <img src="img/demo/nyc3-500px.jpg" width="500" height="667" data-highres="img/demo/nyc3-highres.jpg">
+      </div>
+      <p>Simply call <code>photosetGrid();</code> on a div with the <code>data-layout</code> specified and a number of images inside.</p>
+
+      <h5>HTML:</h5>
+
+<pre><code class="html">&lt;div class="photoset-grid-basic" data-layout="12"&gt;
+  &lt;img src="img/demo/nyc1-500px.jpg" width="1280" height="960" data-highres="img/demo/nyc1-highres.jpg"&gt;
+  &lt;img src="img/demo/nyc2-500px.jpg" width="500" height="375" data-highres="img/demo/nyc2-highres.jpg"&gt;
+  &lt;img src="img/demo/nyc3-500px.jpg" width="500" height="667" data-highres="img/demo/nyc3-highres.jpg"&gt;
+&lt;/div&gt;</code></pre>
+
+      <h5>Javascript:</h5>
+
+<pre><code class="javascript">$('.photoset-grid-basic').photosetGrid();
+</code></pre>
+
+      <hr />
+
+      <!-- Custom -->
+      <h3 id="demo-custom-options">Custom Options</h3>
+      <div class="photoset-grid-custom" style="visibility: hidden;">
+        <img src="img/demo/print1-500px.jpg" data-highres="img/demo/print1-highres.jpg">
+        <img src="img/demo/print2-500px.jpg" data-highres="img/demo/print2-highres.jpg">
+        <img src="img/demo/print3-500px.jpg" data-highres="img/demo/print3-highres.jpg">
+      </div>
+
+      <p>Beyond the basic usage, you can set a number of optional arguments including callback functions that are useful for adding a lightbox for high resolution images. Additionally the images in this example do not specify height and width, so the plugin waits for all the images to load before laying out the grid.</p>
+      <h5>HTML:</h5>
+
+<pre><code class="html">&lt;div class="photoset-grid-custom" style="visibility: hidden;"&gt;
+  &lt;img src="img/demo/print1-500px.jpg" data-highres="img/demo/print1-highres.jpg"&gt;
+  &lt;img src="img/demo/print2-500px.jpg" data-highres="img/demo/print2-highres.jpg"&gt;
+  &lt;img src="img/demo/print3-500px.jpg" data-highres="img/demo/print3-highres.jpg"&gt;
+&lt;/div&gt;</code></pre>
+
+      <h5>Javascript:</h5>
+
+<pre><code class="javascript">$('.photoset-grid-custom').photosetGrid({
+  // Set the gutter between columns and rows
+  gutter: '5px',
+  // Manually set the grid layout
+  layout: '21',
+  // Wrap the images in links
+  highresLinks: true,
+  // Asign a common rel attribute
+  rel: 'print-gallery',
+
+  onInit: function(){},
+  onComplete: function(){
+    // Show the grid after it renders
+    $('.photoset-grid-custom').attr('style', '');
+  }
+});
+</code></pre>
+
+      <hr />
+
+      <!-- Ligthbox -->
+      <h3 id="demo-lightbox">Adding A Lightbox</h3>
+      <div class="photoset-grid-lightbox" data-layout="131" style="visibility: hidden;">
+        <img src="img/demo/withhearts1-500px.jpg" width="1280" height="1707" data-highres="img/demo/withhearts1-highres.jpg">
+        <img src="img/demo/withhearts2-500px.jpg" width="500" height="663" data-highres="img/demo/withhearts2-highres.jpg">
+        <img src="img/demo/withhearts3-500px.jpg" width="500" height="500" data-highres="img/demo/withhearts3-highres.jpg">
+        <img src="img/demo/withhearts4-500px.jpg" width="500" height="500" data-highres="img/demo/withhearts4-highres.jpg">
+        <img src="img/demo/withhearts5-500px.jpg" width="1280" height="1280" data-highres="img/demo/withhearts5-highres.jpg">
+      </div>
+
+      <p>This demonstration of the photoset grid uses the <code>onComplete</code> event to assign a lightbox plugin to view the high resolution images. The code below is specific to <a href="https://github.com/jackmoore/colorbox">jquery.colorbox.js</a>, but it should work virtually the same for other plugins.</p>
+
+      <h5>HTML:</h5>
+
+<pre><code class="html">&lt;div class="photoset-grid-lightbox" data-layout="131" style="visibility: hidden;"&gt;
+  &lt;img src="img/demo/withhearts1-500px.jpg" width="1280" height="1707" data-highres="img/demo/withhearts1-highres.jpg"&gt;
+  &lt;img src="img/demo/withhearts2-500px.jpg" width="500" height="663" data-highres="img/demo/withhearts2-highres.jpg"&gt;
+  &lt;img src="img/demo/withhearts3-500px.jpg" width="500" height="500" data-highres="img/demo/withhearts3-highres.jpg"&gt;
+  &lt;img src="img/demo/withhearts4-500px.jpg" width="500" height="500" data-highres="img/demo/withhearts4-highres.jpg"&gt;
+  &lt;img src="img/demo/withhearts5-500px.jpg" width="1280" height="1280" data-highres="img/demo/withhearts5-highres.jpg"&gt;
+&lt;/div&gt;</code></pre>
+
+      <h5>Javascript:</h5>
+
+<pre><code class="javascript">$('.photoset-grid-lightbox').photosetGrid({
+  highresLinks: true,
+  rel: 'withhearts-gallery',
+  gutter: '2px',
+
+  onComplete: function(){
+    $('.photoset-grid-lightbox').attr('style', '');
+    $('.photoset-grid-lightbox a').colorbox({
+      photo: true,
+      scalePhotos: true,
+      maxHeight:'90%',
+      maxWidth:'90%'
+    });
+  }
+});
+</code></pre>
+
+
+      <hr />
+
+      <!-- Tumblr -->
+      <h3 id="demo-tumblr">Adding Photoset Grid to Tumblr Themes</h3>
+
+      <h5>HTML:</h5>
+
+<pre><code class="html">{block:Photoset}
+  &lt;div class="photoset-grid" data-layout="{PhotosetLayout}" data-id="photoset{PostID}"&gt;
+    {block:Photos}
+      &lt;img src="{PhotoURL-500}"
+        {block:HighRes}data-highres="{PhotoURL-HighRes}"{/block:HighRes}
+        width="{PhotoWidth-500}" height="{PhotoHeight-500}"
+        {block:Caption}alt="{Caption}"{/block:caption} /&gt;
+    {/block:Photos}
+  &lt;/div&gt;
+
+  {block:Caption}
+    {Caption}
+  {/block:caption}
+{/block:Photoset}</code></pre>
+
+      <h5>Javascript:</h5>
+
+<pre><code class="javascript">$('.photoset-grid').photosetGrid({
+  highresLinks: true,
+  rel: $('.photoset-grid').attr('data-id'),
+  gutter: '5px',
+
+  onComplete: function(){});
+  }
+});
+</code></pre>
+
+
+      <h2>Usage</h2>
+      <p>Apply the photo set grid layout to a selected <code>div</code> containing images for the grid.</p>
+
+      <p>The only markup requirement is a <code>data-layout</code> attribute on the selected <code>div</code>. <code>data-layout</code> should contain a string of numbers representing the number of columns for each row.</p>
+      <p>As an option you can set the <code>height</code> and <code>width</code> attributes on all the images to instantly layout the grid, otherwise the plugin will wait for all images to load.</p>
+
+      <h5>Understanding data-layout:</h5>
+
+      <ul>
+      <li><code>data-layout="2331"</code> 1st row has 2 images, 2nd row has 3 images, 3rd row has 3 images, and 4th row has 1 image. Total of 9 images.</li>
+      <li><code>data-layout="13"</code> 1st row has 1 image and 2nd row has 3 images.</li>
+      </ul>
+
+      <h4>Arguments:</h4>
+
+      <ul>
+      <li><code>width</code> - <code>string</code> Change the width that the photo set grid will be rendered at. Default: <code>100%</code> <em>automatically fits its container for responsive layouts</em></li>
+      <li><code>layout</code> - <code>string</code> Manually set a string of numbers to specify the number of images each row contains. Default: <code>null</code> <em>generates a stacked layout of one image per row</em></li>
+      <li><code>gutter</code> - <code>string</code> Set the pixel width between the columns and rows. Default: <code>0px</code></li>
+      <li><code>highresLinks</code> - <code>boolean</code> Set to <code>true</code> to automatically swap out the default image <code>src</code> with the <code>data-highres</code> attribute once the image is wider than <code>lowresWidth</code>. This will also wrap each image with an <code>a</code> vs. <code>div</code> element. Default: <code>false</code></li>
+      <li><code>lowresWidth</code> - <code>number</code> Sets the width where the default image is swapped out for the high resolution image. Default: <code>500</code></li>
+      <li><code>rel</code> - <code>string</code> This optional setting useful for lightbox viewers applies a common `rel` attribute to the anchor tags wrapping the images. Default: <code>''</code></li>
+      <li><code>onInit</code> - <code>function</code> Define a function to be called when the plugin is initialized.</li>
+      <li><code>onComplete</code> - <code>function</code> Define a function to be called when the plugin has completed the grid layout.</li>
+      </ul>
+
+      <h2>Installation</h2>
+
+      <p><strong>Bower package manager</strong></p>
+
+      <p>You can easily install photoset-grid as a <a href="https://github.com/twitter/bower">Bower</a> package by running:</p>
+
+      <pre><code class="no-highlight">$ bower install photoset-grid</code></pre>
+
+      <h2>Credits</h2>
+
+      <ul>
+      <li><a href="http://github.com/jonathanmoore">Jonathan Moore</a> - <em><a href="http://twitter.com/moore">@moore</a> | <a href="http://jonathanmoore.com">jonathanmoore.com</a></em></li>
+      <li><a href="http://muke.me">Mikey Wills</a> - <em><a href="https://twitter.com/mukealicious">@mukealicious</a> | <a href="http://muke.me">muke.me</a></em></li>
+
+      <li><em>Additional</em>
+        <ul>
+          <li><a href="https://github.com/Darsain">Thomas Sardyha</a> &amp; <a href="https://github.com/desandro/">David DeSandro</a> - <a href="https://github.com/desandro/imagesloaded">desandro/imagesloaded</a></li>
+          <li><a href="https://github.com/louisremi/">Louis-Rémi Babé</a> - <a href="https://github.com/louisremi/jquery-smartresize">louisremi/jquery-smartresize</a></li>
+        </ul>
+      </li>
+      </ul>
+      </div>
+
+
+    <footer>
+      <div class="browse-themes">
+        <a href="http://stylehatch.co" class="button">Browse Our Themes</a>
+        <p><i>We are a digital shop creating unique premium Tumblr themes.</i></p>
+      </div>
+      <div class="question">
+        <h5>Have a question?</h5>
+        <a href="https://twitter.com/intent/tweet?screen_name=stylehatch" class="twitter-mention-button" data-lang="en">Tweet to @stylehatch</a>
+      </div>
+    </footer>
+  </div>
+
+
+  <script src="jquery.photoset-grid.js"></script>
+  <script src="js/jquery.colorbox.js"></script>
+  <script type="text/javascript">
+
+  // Photoset Grid Basic
+  $('.photoset-grid-basic').photosetGrid({
+    onComplete: function(){
+      $('.photoset-grid-basic').attr('style', '');
+    }
+  });
+
+  // Photoset Grid Custom
+  $('.photoset-grid-custom').photosetGrid({
+    gutter: '5px',
+    layout: '21',
+    highresLinks: true,
+    rel: 'print-gallery',
+
+    onComplete: function(){
+      $('.photoset-grid-custom').attr('style', '');
+    }
+  });
+
+  //$('.photoset-grid-alt').photosetGrid();
+  $('.photoset-grid-lightbox').photosetGrid({
+    highresLinks: true,
+    rel: 'withhearts-gallery',
+    gutter: '2px',
+
+    onComplete: function(){
+      $('.photoset-grid-lightbox').attr('style', '');
+      $('.photoset-grid-lightbox a').colorbox({
+        photo: true,
+        scalePhotos: true,
+                maxHeight:'90%',
+                maxWidth:'90%'
+      });
+    }
+  });
+  </script>
+
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-39055361-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+  </script>
+
+  <script src="//static.getclicky.com/js" type="text/javascript"></script>
+  <script type="text/javascript">try{ clicky.init(100587882); }catch(e){}</script>
+  <noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/100587882ns.gif" /></p></noscript>
+
+
+</body>
+</html>

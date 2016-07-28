@@ -1,0 +1,315 @@
+// =============================================================================
+// Variables
+// =============================================================================
+
+// COLORS
+$darkBlue: #293037;
+$medBlue: #71767d;
+$popBlue: #0fb9e6;
+$popBlueShadow: #0e7792;
+$white: #ffffff;
+$grey: #f1f2f3;
+$black: #252b31;
+
+// FONTS
+$bodyFont: "locator-web", sans-serif;
+$altFont: "bryant-web", sans-serif;
+
+// =============================================================================
+// Layout
+// =============================================================================
+
+/* apply a natural box layout model to all elements */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+html {
+  line-height: 1.5;
+}
+
+p {
+  margin-top: 0;
+}
+
+body {
+  background: $darkBlue url(../img/bg-wood-texture.jpg) 0 0 repeat;
+  font-family: $bodyFont;
+  color: $black;
+  margin: 0 1em;
+}
+
+h1, h2, h3, h4, h5 {
+  line-height: 1.2;
+  color: $darkBlue;
+  margin-bottom: 0.33em;
+}
+
+h1 {
+  font-weight: 300;
+}
+
+h2, h3, h4 {
+  font-weight: 700;
+}
+
+h2 {
+  border-bottom: 1px solid $grey;
+  margin: 2em 0 1em;
+  padding-bottom: 0.2em;
+}
+
+h3 {
+  font-family: $altFont;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $medBlue;
+}
+
+h5 {
+  font-family: $altFont;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $medBlue;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid $grey;
+  margin: 3em 0 2em;
+  padding: 0;
+}
+
+ul ul {
+  margin: 0;
+}
+
+a {
+  color: $popBlue;
+  &:hover, &:active {
+    color: darken($popBlue, 15%);
+  }
+  &:visited {
+    color: darken($popBlue, 15%);
+  }
+}
+
+a.button {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  float: left;
+  font-family: $altFont;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $white;
+  background: $popBlue;
+  padding:1em 0.75em 0.75em 0.75em;
+  text-decoration: none;
+  text-shadow: $popBlueShadow 1px 1px 1px;
+  border-radius: 0.3em;
+  box-shadow: 0 3px $popBlueShadow, 0 5px 2px rgba(0, 0, 0, 0.25);
+  &:active {
+    box-shadow: 0 1px $popBlueShadow, 0 2px 1px rgba(0, 0, 0, 0.25);
+    top: 2px;
+  }
+}
+
+// Page Header
+header.page-head {
+  text-align: center;
+  margin-top: 2.5em;
+  img {
+    max-width: 10.95em;
+  }
+}
+
+// Main Page Container
+#container {
+  max-width: 52em;        // 830px
+  margin: 1em auto 2.5em auto;       // 40px
+  padding: 1.25em 2.5em;    // 20px, 40px
+  background-color: $white;
+  border-radius: 0.6em;
+  @media (max-width: 525px) {
+    padding: 1.25em;
+  }
+  header {
+    background: url(../img/header-div.png) bottom left repeat-x;
+    padding: 0 2.5em 1.875em;  // 40px, 30px
+    margin: 0 -2.5em;
+    @media (max-width: 525px) {
+      padding: 0 1.25em 1.875em 1.25em;
+      margin: 0 -1.25em;
+    }
+    h1 {
+      margin: .4em 0 0;
+    }
+    h5 {
+      margin-top: 0;
+    }
+  }
+
+  div.share {
+    margin-top: -.4em;
+    margin: -.4em 0 1.25em;
+    @include clearfix;
+    a.twitter-share-button, a.twitter-follow-button {
+      visibility: hidden;
+    }
+    iframe.twitter-follow-button {
+      float: right;
+    }
+  }
+
+  footer {
+    @include clearfix;
+    background-color: $grey;
+    // reset footer margin & padding so that bg color reaches edge of container
+    margin: 2em -2.5em -1.25em -2.5em;
+    padding: 1.25em 2.5em;
+    border-bottom-left-radius: 0.6em;
+    border-bottom-right-radius: 0.6em;
+    @media (max-width: 525px) {
+      padding: 1.25em;
+      margin: 1em -1.25em -1.25em -1.25em;
+    }
+    p, h5 {
+      margin: 0;
+      color: $darkBlue;
+    }
+    div.browse-themes {
+      float: left;
+      width: 70%;
+      padding-right: 1em;
+      // align paragraph to center of button
+      p {
+        padding-top: 0.2em;
+      }
+      a.button {
+        margin-right: 1.5em;
+      }
+      // full width now that the questions div is hidden
+      @media (max-width: 720px) {
+        width: 100%;
+        padding-right: 0;
+      }
+      // split button and paragraph onto two separate lines at 100%
+      @media (max-width: 525px) {
+        a.button {
+          display: block;
+          width: 100%;
+          margin-bottom: 1.25em;
+        }
+      }
+    }
+    div.question {
+      float: left;
+      width: 30%;
+      text-align: right;
+      // align div to center of button
+      padding-top: 0.5em;
+      // hide question section at smaller viewport
+      @media (max-width: 720px) {
+        display: none;
+      }
+    }
+  }
+}
+
+// Photoset Grid Demos
+div.photoset-grid-basic,
+div.photoset-grid-custom,
+div.photoset-grid-lightbox {
+  margin: 0 0 2em 0;
+
+  a:focus {
+    outline: none;
+  }
+
+  img {
+    max-width: 100%;
+  }
+}
+
+// Code Snippets
+code {
+  display: inline-block;
+  padding: 0 0.35em;
+  color: $darkBlue;
+  background: $grey;
+  font-size: 0.9em;
+}
+
+pre {
+  display: block;
+  margin: 0 0 1.5em 0;
+  background: $darkBlue;
+  color: $grey;
+  font-size: 0.9em;
+  code {
+    background: inherit;
+    color: inherit;
+  }
+}
+
+@media (max-width: 660px) {
+  iframe.twitter-tweet-button {
+    width: 104px !important;
+  }
+  #container div.share iframe.twitter-follow-button {
+    float: none;
+    width: 214px !important;
+  }
+}
+
+/* Tomorrow Night Blue Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+
+.tomorrow-comment, pre .comment, pre .title {
+  color: #7285b7;
+}
+
+.tomorrow-red, pre .variable, pre .attribute, pre .tag, pre .regexp, pre .ruby .constant, pre .xml .tag .title, pre .xml .pi, pre .xml .doctype, pre .html .doctype, pre .css .id, pre .css .class, pre .css .pseudo {
+  color: #ff9da4;
+}
+
+.tomorrow-orange, pre .number, pre .preprocessor, pre .built_in, pre .literal, pre .params, pre .constant {
+  color: #ffc58f;
+}
+
+.tomorrow-yellow, pre .class, pre .ruby .class .title, pre .css .rules .attribute {
+  color: #ffeead;
+}
+
+.tomorrow-green, pre .string, pre .value, pre .tag .value, pre .inheritance, pre .header, pre .ruby .symbol, pre .xml .cdata {
+  color: #d1f1a9;
+}
+
+.tomorrow-aqua, pre .css .hexcolor {
+  color: #99ffff;
+}
+
+.tomorrow-blue, pre .function, pre .python .decorator, pre .python .title, pre .ruby .function .title, pre .ruby .title .keyword, pre .perl .sub, pre .javascript .title, pre .coffeescript .title {
+  color: #bbdaff;
+}
+
+.tomorrow-purple, pre .keyword, pre .javascript .function {
+  color: #ebbbff;
+}
+
+
+/*
+  Bryant-Web
+  bold: 700 normal
+
+  Locator-Web
+  light: 300
+  regular: 400 normal
+  italic: 400 italic
+  bold: 700 normal
+  bold italic: 700 italic
+
+*/

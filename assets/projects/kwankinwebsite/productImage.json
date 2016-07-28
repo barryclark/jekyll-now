@@ -1,0 +1,12 @@
+{
+  "productImages": {
+    "product_line_01": ["images/product_1/File1.png", "images/product_1/File2.png", "images/product_1/File3.png", "images/product_1/File4.png", "images/product_1/File5.png"],
+    "product_line_02": ["images/product_2/A-EY-565.jpg", "images/product_2/A-EY-568.jpg", "images/product_2/A-EY-604.jpg", "images/product_2/A-NK-359.jpg", "images/product_2/A-NK-370.jpg", "images/product_2/A-NK-374.jpg",
+      "images/product_2/A-EY-566.jpg", "images/product_2/A-EY-569.jpg", "images/product_2/A-EY-605.jpg", "images/product_2/A-NK-367.jpg", "images/product_2/A-NK-372.jpg",
+      "images/product_2/A-EY-567.jpg", "images/product_2/A-EY-603.jpg", "images/product_2/A-NK-357.jpg", "images/product_2/A-NK-368.jpg", "images/product_2/A-NK-373.jpg"
+    ],
+    "product_line_03": ["images/product_3/DF-1906.jpg", "images/product_3/DF-1909.jpg", "images/product_3/DF-1912.jpg", "images/product_3/DQ-1295.jpg", "images/product_3/K-705A.jpg", "images/product_3/K-T9443.jpg",
+      "images/product_3/DF-1907.jpg", "images/product_3/DF-1911.jpg", "images/product_3/DF-1913.jpg", "images/product_3/K-359A.jpg", "images/product_3/K-T9442.jpg"
+    ]
+  }
+}
