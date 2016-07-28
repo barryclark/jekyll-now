@@ -1,16 +1,13 @@
----
----
-
-//
-// IMPORTS
-//
+/**/
+/* IMPORTS*/
+/**/
 
 @import "reset";
 @import "variables";
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,700,500italic,900,700italic,900italic);
 
 
-// Syntax highlighting @import is at the bottom of this file
+/* Syntax highlighting @import is at the bottom of this file*/
 
 /**************/
 /* BASE RULES */
@@ -129,7 +126,7 @@ img {
   max-width: 100%;
 }
 
-// Fixes images in popup boxes from Google Translate
+/* Fixes images in popup boxes from Google Translate*/
 .gmnoprint img {
   max-width: none;
 }
@@ -139,7 +136,7 @@ img {
   color: $gray;
 }
 
-// Specify the color of the selection
+/* Specify the color of the selection*/
 ::-moz-selection {
   color: $black;
   background: $lightGray;
@@ -149,8 +146,8 @@ img {
   background: $lightGray;
 }
 
-// Nicolas Gallagher's micro clearfix hack
-// http://nicolasgallagher.com/micro-clearfix-hack/
+/* Nicolas Gallagher's micro clearfix hack*/
+/* http://nicolasgallagher.com/micro-clearfix-hack/*/
 .clearfix:before,
 .clearfix:after {
     content: " ";
@@ -228,6 +225,8 @@ ul.readable {
   font-size: 18px;
 
   @include mobile {
+
+
     font-size: 16px;
   }
 }
@@ -241,9 +240,10 @@ ul.readable {
   @include mobile { font-size: 12px; }
 }
 
-// blog video gifs
+/* blog video gifs*/
 .blog-gif {
   opacity: 0.2;
+  -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
   min-width: 100%;
 
@@ -274,8 +274,8 @@ ul.readable {
     height: 100%;
     background: #fff;
     /* box-gradient: */
-    // background: #7990AB;
-    // background-image: -webkit-linear-gradient(225deg, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%);background-image: linear-gradient(-135deg, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%);
+    /* background: #7990AB;*/
+    /* background-image: -webkit-linear-gradient(225deg, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%);background-image: linear-gradient(-135deg, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%);*/
   }
 }
 
@@ -289,7 +289,7 @@ ul.readable {
     z-index: -1;
     width: 100%;
     height: 100%;
-    // background: #fff;
+    /* background: #fff;*/
   }
 }
 
@@ -346,7 +346,7 @@ nav {
 
   @include mobile { padding-top: 50px; }
 
-  // introduction paragraph
+  /* introduction paragraph*/
   .intro {
     font-family: 'Pontano Sans', sans-serif;
     font-size: 21px;
@@ -357,10 +357,25 @@ nav {
     margin: 50px 0 0 0;
     color: rgba(0,0,0,0.5);
 
+    a{
+      color: #7AA5D5;
+      &:hover {
+        border-bottom: 1px solid #7AA5D5;
+      }
+    }
+
     @include mobile {
       font-size: 18px;
       line-height: 2;
       margin: 50px auto 0 auto;
+    }
+  }
+
+  .intro + .intro {
+    margin-top: 30px;
+
+    @include mobile {
+      margin-top: 30px;
     }
   }
 
@@ -375,7 +390,7 @@ nav {
 
     /* Button Background: */
     border: 1px solid rgba(0,0,0,0.05);
-    // box-shadow: 0px 1px 2px 0px rgba(128,0,0,0.3);
+    /* box-shadow: 0px 1px 2px 0px rgba(128,0,0,0.3);*/
     box-shadow: 0 1px 1px 0 rgba(128,0,0,0.15);
     border-radius: 4px;
 
@@ -384,6 +399,7 @@ nav {
     font-weight: 400;
     color: rgba(0,0,0,0.4);
     letter-spacing: 1.66px;
+    -webkit-transition: all .4s;
     transition: all .4s;
 
     @include mobile {
@@ -397,7 +413,7 @@ nav {
       border: 1px solid rgba(0,0,0,0.2);
       color: rgba(0,0,0,0.6);
     }
-  } // btn-work
+  } /* btn-work*/
 }
 
 .block-featured-work {
@@ -473,10 +489,10 @@ nav {
 }
 
 
-//
-// .main
-//
-// front page recent post container
+/**/
+/* .main*/
+/**/
+/* front page recent post container*/
 .container.posts {
   padding: 0;
   margin: 40px auto;
@@ -595,11 +611,11 @@ nav {
   }
 }
 
-//
-//
-// blog
-//
-//
+/**/
+/**/
+/* blog*/
+/**/
+/**/
 
 .blog-page-wrapper {
   display: -webkit-box;
@@ -619,7 +635,7 @@ nav {
 }
 
 .container.blog {
-  max-width: initial; // cancel default
+  max-width: initial; /* cancel default*/
   width: 48%;
   margin: 0 auto 2%;
   min-width: 0;
@@ -668,14 +684,14 @@ nav {
     p {
       margin: 0 auto 30px auto;
     }
-  }// post
+  }/* post*/
 }
 
-//
-//
-// work page
-//
-//
+/**/
+/**/
+/* work page*/
+/**/
+/**/
 
 .card {
   padding: 1.5rem;
@@ -685,7 +701,6 @@ nav {
   -webkit-animation:fly-in-from-left .5s 1s ease both;
           animation:fly-in-from-left .5s 1s ease both;
   -webkit-transform-origin:top left;
-      -ms-transform-origin:top left;
           transform-origin:top left;
 
   h1 {
@@ -710,10 +725,10 @@ nav {
     }
   }
 
-  // strong {
-  //   font-weight: 300;
-  //   // color: #539D00;
-  // }
+  /* strong {*/
+  /*   font-weight: 300;*/
+  /*   // color: #539D00;*/
+  /* }*/
 
   h3 {
     font-family: 'Open Sans', sans-serif;
@@ -761,17 +776,17 @@ nav {
     }
   }
 
-  // .caption {
-  //   font-weight: 400;
-  //   font-size: 14px;
-  //   text-align: center;
-  //   font-family: 'Pontano Sans', sans-serif;
-  //   font-style: italic;
-  //
-  //   @include mobile {
-  //     text-align: left;
-  //   }
-  // }
+  /* .caption {*/
+  /*   font-weight: 400;*/
+  /*   font-size: 14px;*/
+  /*   text-align: center;*/
+  /*   font-family: 'Pontano Sans', sans-serif;*/
+  /*   font-style: italic;*/
+  /**/
+  /*   @include mobile {*/
+  /*     text-align: left;*/
+  /*   }*/
+  /* }*/
 
   figure {
     width: 700px;
@@ -800,6 +815,7 @@ nav {
       &:hover {
         -webkit-transform: scale(1.2, 1.2);
         transform: scale(1.2, 1.2);
+        cursor: -webkit-zoom-in;
         cursor: zoom-in;
       }
 
@@ -827,6 +843,9 @@ nav {
 
   figure.full {
     width: auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
 
     @include mobile { display: block; }
@@ -846,7 +865,7 @@ nav {
     margin-top: 0;
     margin-bottom: -1px;
   }
-} // card
+} /* card*/
 
 .change-case {
   margin-top: 40px;
@@ -950,7 +969,7 @@ nav {
   bottom: 20px;
   right: 10px;
   z-index: 0;
-  // background-color: #3f51b5;
+  /* background-color: #3f51b5;*/
   background: rgba(128,0,0,0.35);
   opacity: 0.8;
   height: 40px;
@@ -970,18 +989,18 @@ nav {
   }
 }
 
-//
-//
-// 404 page
-//
-//
+/**/
+/**/
+/* 404 page*/
+/**/
+/**/
 
 .error-container {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  height: calc(100vh - 42px); // viewport height - navbar height
+  height: calc(100vh - 42px); /* viewport height - navbar height*/
 
   .error-container-inner {
     @include vertical-align;
@@ -1019,11 +1038,11 @@ nav {
   }
 }
 
-//
-//
-// footer
-//
-//
+/**/
+/**/
+/* footer*/
+/**/
+/**/
 
 .wrapper-footer {
   margin-top: 40px;
@@ -1131,8 +1150,8 @@ footer {
     	fill: currentColor;
       font-size: 32px;
     }
-  } // contact container
-} // footer
+  } /* contact container*/
+} /* footer*/
 
 @media screen and (max-width: 746px) {
   footer {
@@ -1151,15 +1170,15 @@ footer {
     }
 
     .contact-container {
-      // margin-bottom: 2.8%;
+      /* margin-bottom: 2.8%;*/
       text-align: center;
       -webkit-align-self: center;
           -ms-flex-item-align: center;
               align-self: center;
     }
   }
-} // media query
+} /* media query*/
 
-// Settled on moving the import of syntax highlighting to the bottom of the CSS
-// ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
+/* Settled on moving the import of syntax highlighting to the bottom of the CSS*/
+/* ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start*/
 @import "highlights";
