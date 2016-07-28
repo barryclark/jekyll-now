@@ -110,7 +110,7 @@ OK，这次就串讲到这，更详细的内容可以去看看Xavier的新老sli
 
 
 
-#References
+# References
 [^lessons14_detail]: Xavier Amatriain, [(Blog) 10 Lessons Learned from Building Machine Learning Systems](http://technocalifornia.blogspot.com/2014/12/ten-lessons-learned-from-building-real.html), 2014。
 [^lessons14]: Xavier Amatriain, [(Slides) 10 Lessons Learned from Building Machine Learning Systems](http://pan.baidu.com/s/1hqloae4), 2014。
 [^lessons15]: Xavier Amatriain, [(Slides) 10 More Lessons Learned from Building Real-life Machine Learning Systems](http://pan.baidu.com/s/1sjKh4k9), 2015。
