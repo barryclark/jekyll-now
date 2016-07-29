@@ -22,3 +22,9 @@ permalink: /tags/
 {% for tag in tags %}
 {{ tag[0] }} {{ tag | size }} {{ site.tags[tag[0]] | size }}
 {% endfor %}
+
+{% for tag in site.tags %}
+  {% assign t = tag | first %}
+  {% assign posts = tag | last %}
+  <li>{{t | downcase | replace:" ","-" }} has {{ posts | size }} posts</li>
+{% endfor %}
