@@ -23,15 +23,11 @@ javascripts: [/js/d3.min.js, /js/d3.layout.cloud.js]
 <script type="text/javascript">
     var fill = d3.scale.category20();
     var layout = d3.layout.cloud().size([700, 500]).words([
-      {% for tag in site.tags %}
-        {% assign t = tag | first %}
-        {% assign posts = tag | last %}
-        ['{{ t }}', {{ posts | size }}]{% unless forloop.last %},{% endunless %}
-      {% endfor %}
+      {% for tag in site.tags %}{% assign t = tag | first %}{% assign posts = tag | last %}['{{ t }}', {{ posts | size }}]{% unless forloop.last %},{% endunless %}{% endfor %}
     ].map(function(d) {
         return {
             text: d[0],
-            size: d[1]
+            size: (d[1] + 10)
         }
     })).rotate(function() {
         return ~~(Math.random() * 2) * 90;
@@ -51,9 +47,3 @@ javascripts: [/js/d3.min.js, /js/d3.layout.cloud.js]
         });
     }
 </script>
-
-{% for tag in site.tags %}
-  {% assign t = tag | first %}
-  {% assign posts = tag | last %}
-  <li>{{t | downcase | replace:" ","-" }} has {{ posts | size }} posts</li>
-{% endfor %}
