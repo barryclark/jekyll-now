@@ -8,7 +8,7 @@ image: /images/aol.jpg
 
 If hacking is mysterious to you and something only the most elite hackers can do, this blog post might disappoint you.
 
-Yesterday, my AOL email was hacked into. I realized almost right away when it happened, so I changed my password before too much damage could be done. How could my AOL get hacked into, especially me, who has enough technical knowedge to have a GitHub blog, work as a software engineer, and am going to school for my master's in computer science? It involved a bit of [social engineering](https://en.wikipedia.org/wiki/Social_engineering_%28security%29).
+Yesterday, my AOL email was hacked into. I realized almost right away when it happened, so I changed my password before too much damage could be done. How could my AOL get hacked into, especially me, who has enough technical knowedge to have a GitHub blog, work as a software engineer, and am going to school for my master's in computer science? It involved a bit of [social engineering](https://en.wikipedia.org/wiki/Social_engineering_%28security%29). Here's how it happened:
 
 I recevied the following email from a colleague:
 
