@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Spellweaver: Valiant Dawn
+title: Spellweaver - Valiant Dawn
 description: The first new set for Spellweaver, Valiant Dawn, has been released.
 category: video-games
 featured: vdawn.png
