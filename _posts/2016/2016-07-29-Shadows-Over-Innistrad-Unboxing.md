@@ -25,4 +25,4 @@ We'll most likely be playing this over the weekend, so thoughts will go up short
 ![Shadows over Innistrad Cards]({{ site.url }}/images/aopsoi/cards.jpg)
 ![Shadows over Innistrad Tokens]({{ site.url }}/images/aopsoi/tokens.jpg)
 ![Shadows over Innistrad Rules]({{ site.url }}/images/aopsoi/rules.jpg)
-![Shadows over Innistrad Terrain]({{ site.url }}/images/aopsoi/terrian.jpg)
+![Shadows over Innistrad Terrain]({{ site.url }}/images/aopsoi/terrain.jpg)
