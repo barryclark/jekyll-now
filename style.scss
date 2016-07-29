@@ -76,12 +76,19 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 32px;
-  margin: 60px 0;
+  margin-top: 60px;
   a {
     color: $steelblue;
     &:hover {
       color: $steel;
     }
+  }
+}
+
+.postedby {
+  margin: 20px 0;
+  em {
+    font-weight: 700;
   }
 }
 
