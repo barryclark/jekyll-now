@@ -18,6 +18,7 @@ permalink: /tags/
   </nav>
 <hr />
 
+{{ tags | size }}
 {% for tag in tags %}
-{{ tag[0] }} {{ tag | size }}
+{{ tag[0] }} {{ tag | size }} {{ site.tags[tag[0]] | size }}
 {% endfor %}
