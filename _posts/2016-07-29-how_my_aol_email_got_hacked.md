@@ -28,4 +28,4 @@ Looks completely legit, right? If I was paying more attention, I would've notice
 
 I immediately changed my AOL password. Thankfully, my AOL password was different than any other password I use. A couple emails identical to the one I received were sent from my AOL to other AOL email addressed in my address book, but other than that, little damage was done.
 
-Oh, and yes, I still use AOL. That email address is old enough not only to vote, but also to drink. I don't pay for it, though.=
+Oh, and yes, I still use AOL. That email address is old enough not only to vote, but also to drink. I don't pay for it, though.
