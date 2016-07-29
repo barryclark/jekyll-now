@@ -2,6 +2,7 @@
 layout: default
 permalink: /tags/
 javascripts: [/js/d3.min.js, /js/d3.layout.cloud.js]
+css: /css/tags.css
 ---
 
 <hr />
@@ -19,7 +20,7 @@ javascripts: [/js/d3.min.js, /js/d3.layout.cloud.js]
   </nav>
 <hr />
 
-<div id="tagCloud" class="tagCloud"></div>
+<div id="tagCloud" class="tagCloud" style=""></div>
 <script type="text/javascript">
     var fill = d3.scale.category20();
     var layout = d3.layout.cloud().size([700, 500]).words([
