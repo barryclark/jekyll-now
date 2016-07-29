@@ -17,24 +17,25 @@ description: Software Engineering student from University of southampton
 
 # Includes an icon in the footer for each username you enter
 footer-links:
+  twitter: VictorM228
+  github: victormarcu
+  linkedin: victor-marcu-a51087a6
   dribbble:
   email: victormarcu74@gmail.com
   facebook:
   flickr:
-  github: victormarcu
   instagram: victorsomename
-  linkedin: in/victor-marcu-a51087a6
+  
   pinterest:
   rss: myRSSIcon
-  twitter: VictorM228
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
-  youtube: # channel/UCvnEHDbe39Wf6ww00jp0p3g
+  youtube: channel/UCvnEHDbe39Wf6ww00jp0p3g
   googleplus: # anything in your profile username that comes after plus.google.com/
 
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
-disqus:
+disqus:disqus_OfHcQUVw3j
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 google_analytics: UA-81623631-1
