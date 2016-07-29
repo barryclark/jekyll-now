@@ -9,7 +9,7 @@
 <!-- LinkedIn Share -->
 <div>
 <script src="https://platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
-<script type="IN/Share" data-url="{{ page_url  | strip }}" data-counter="right"></script>
+<script type="IN/Share" data-url="{{ page_url  | strip_newlines | strip }}" data-counter="right"></script>
 </div>
 
 {% unless page.facebook_post %}
