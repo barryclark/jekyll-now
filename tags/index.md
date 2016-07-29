@@ -19,5 +19,5 @@ permalink: /tags/
 <hr />
 
 {% for tag in tags %}
-{{ tag | size }}
+{{ tag[0] }} {{ tag | size }}
 {% endfor %}
