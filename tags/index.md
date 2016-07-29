@@ -40,7 +40,7 @@ javascripts: [/js/d3.min.js, /js/d3.layout.cloud.js]
     }).on('end', draw);
     layout.start();
     function draw(w) {
-        d3.select('#firstNamesCloud').append('svg').attr('width', layout.size()[0]).attr('height', layout.size()[1]).append('g').attr('transform', 'translate(' + layout.size()[0] / 2 + ',' + layout.size()[1] / 2 + ')').selectAll('text').data(w).enter().append('text').style('font-size', function(d) {
+        d3.select('#tagCloud').append('svg').attr('width', layout.size()[0]).attr('height', layout.size()[1]).append('g').attr('transform', 'translate(' + layout.size()[0] / 2 + ',' + layout.size()[1] / 2 + ')').selectAll('text').data(w).enter().append('text').style('font-size', function(d) {
             return d.size + 'px';
         }).style('font-family', 'Impact').style('fill', function(d, i) {
             return fill(i);
