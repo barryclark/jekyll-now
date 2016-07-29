@@ -17,3 +17,7 @@ permalink: /tags/
     {% endfor %}
   </nav>
 <hr />
+
+{% for tag in tags %}
+    {{ tag[0] }} {{ tag }}
+{% endfor %}
