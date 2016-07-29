@@ -5,6 +5,7 @@ description: The Pokémon Company has released more Pokémon Sun and Moon inform
 category: video-games
 featured: alola.png
 tags: [video games, pokemon]
+author: Rob Kalajian
 ---
 
 The Pokémon Company has released more Pokémon Sun and Moon information today, including information on the Alola Region, Legendaries, and more.

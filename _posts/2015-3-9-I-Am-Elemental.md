@@ -3,6 +3,7 @@ layout: post
 title: I Am Elemental
 category: toys
 tags: [i am elemental, toy fair]
+author: Rob Kalajian
 ---
 
 While at Toy Fair this year, the women over at the [Goldieblox](http://goldieblox.com) booth had told me I just *had* to go see the [I Am Elemental](http://iamelemental.com) booth. I'm really glad I did, because what they had to show off was amazing.

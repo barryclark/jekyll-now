@@ -5,6 +5,7 @@ description: The Pokémon Company has released more Pokémon Sun and Moon inform
 category: video-games
 featured: mimikyu.png
 tags: [video games, pokemon]
+author: Rob Kalajian
 ---
 
 The Pokémon Company International announced six new Pokémon today, along with a bunch of new features for Pokémon Sun and Moon.

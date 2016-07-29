@@ -2,6 +2,7 @@
 layout: post
 title: Office Aquarium
 category: misc
+author: Rob Kalajian
 ---
 
 Recently I started a new job where I'm working in an office again. I've got a great cubicle, and the OK from my boss to put a small aquarium in it.

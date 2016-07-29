@@ -4,6 +4,7 @@ title: Card Hunter
 category: video-games
 featured: cardhunter.png
 tags: [video games, card hunter, blue manchu]
+author: Rob Kalajian
 ---
 
 I guess I've been living under a rock, because I hadn't heard of [Card Hunter](http://cardhunter.com) until I wrote up the release of the [Penny Arcade Acquisitions Incorporated](http://www.purplepawn.com/2016/04/penny-arcades-acquisitions-incorporated-comes-to-card-hunter/) addon that was just released. Figuring I'd see what it's about, I signed up for an account.

@@ -4,6 +4,7 @@ title: Unboxing Onitama
 category: unboxing
 featured: onitama.png
 tags: [games, unboxing, onitama, arcane wonders]
+author: Rob Kalajian
 ---
 
 I just wrote up a [review of Onitama](http://www.purplepawn.com/2016/04/second-lookonitama/), by Arcane Wonders, for Purple Pawn.  It's an amazing little game with a ton of strategy, depth, and staying power.

@@ -5,6 +5,7 @@ description: The Pokémon Company International and Nintendo have finally announ
 featured: pokemoon.png
 category: video-games
 tags: [video games, pokemon]
+author: Rob Kalajian
 ---
 
 The Pokémon Company International and Nintendo have finally announced the release date of the latest Pokémon titles, Pokémon Sun and Pokémon Moon. On November 18th Pokémon fans will enter a new region, choosing from 3 new starter Pokémon: Grass and Flying-type Pokémon Rowlet, Fire-type Litten, and Water-type Popplio.
