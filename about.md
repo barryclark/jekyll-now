@@ -25,13 +25,8 @@ This project started as a way for me to get a functioning website *without* havi
 
 
 ### Contact me:
-[VictorMarcu74@gmail.com](mailto:victormarcu74@google.com)
+You can e-mail me [VictorMarcu74@gmail.com](mailto:victormarcu74@google.com)
 
+You can have a look at my [github](https://github.com/victormarcu)
 
-You can have a look at my github at 
-{% include icon-github.html username="victormarcu" %} /
-[Victor](https://github.com/victormarcu)
-
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+And you can find the source code for Jekyll [here](https://github.com/jekyll/jekyll)
