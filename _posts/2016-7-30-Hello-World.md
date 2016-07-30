@@ -3,7 +3,7 @@ layout: post
 title: Welcome to my first blog post
 ---
 
-##Just having some FUN
+## Just having some FUN
 
 ### with it 
 
