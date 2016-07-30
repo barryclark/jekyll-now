@@ -6,6 +6,8 @@ tags: jekyll, markdown, github
 
 ## Customizing the blog
 
+Setting the website up was relatively easy more so once I found out about the [Jekyll Now](https://github.com/barryclark/jekyll-now) project which I simply forked to create my version of the website.  
+
 Now that I've got the site up and running the next step is customizing it. Jekyll takes my content written in Markdown and creates completly static HTML pages. I am already familliar with the _**Markdown**_ markup language so editing my blog posts will be an easy thing to do.  
 
 Adding a picture is as easy...
