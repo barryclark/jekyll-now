@@ -10,7 +10,9 @@ Now that I've got the site up and running the next step is customizing it. Jekyl
 
 Adding a picture is as easy...
 ![example image]({{ site.baseurl }}/images/ocV1u5R.jpg "portable TV from the '50s")  
-Or..  
+Or.. 
+
+
 ```javascript
 /*Demonstrating a piece of javascript code*/
 var message = "hello world";
