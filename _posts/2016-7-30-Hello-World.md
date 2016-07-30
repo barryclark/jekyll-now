@@ -14,8 +14,8 @@ Or..
 
 
 ```javascript
-/*Demonstrating a piece of javascript code*/
-var message = "hello world";
+/*Demonstrating a piece of javascript code*/  
+var message = "hello world";  
 alret(message);
 ```
 
