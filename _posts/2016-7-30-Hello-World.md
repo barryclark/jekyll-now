@@ -26,5 +26,5 @@ As you probably guessed, the most important advantage I have by running this sit
 I feel satisfied with the end result and I will keep updating the blog as frequently as possible.
 
 
-----
+
 ****
