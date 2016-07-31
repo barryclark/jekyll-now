@@ -4,9 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Still a graduate student majored in Pattern Recongnition and Machine Learning in UESTC.
+Some information about you!
 
+### More Information
+
+A place to include any other types of information that you'd like to include about yourself.
 
 ### Contact me
 
-[ksnzher@gmail.com](mailto:ksnzher@gmail.com)
+[email@domain.com](mailto:email@domain.com)
