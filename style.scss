@@ -130,6 +130,7 @@ img {
   background: $lightGray;
 }
 
+
 // Nicolas Gallagher's micro clearfix hack
 // http://nicolasgallagher.com/micro-clearfix-hack/
 .clearfix:before,
@@ -162,7 +163,15 @@ img {
     text-align: center;
   }
 }
-
+.twitter-timeline{
+	float: right;
+	
+	@include mobile{
+		float: none;
+		display: block;
+		margin: 0 auto;
+	}
+}
 .site-avatar {
   float: left;
   width: 80px;
