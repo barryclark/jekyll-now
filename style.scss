@@ -164,8 +164,10 @@ img {
   }
 }
 .twitter-timeline{
-	float: right;
-	
+	//float: right;
+	position: absolute; /*or fixed*/
+    	right: 0px;
+    	
 	@include mobile{
 		float: none;
 		display: block;
