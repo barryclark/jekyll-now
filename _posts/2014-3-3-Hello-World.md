@@ -13,6 +13,7 @@ The easiest way to make your first post is to edit this one. Go into /_posts/ an
 
 ### inline math
 This is Pythagorean theorem, \\(c^2=a^2+b^2\\).
+
 ### displayed equations
 Pythagorean theorem:
 \\[c^2=a^2+b^2\\]
