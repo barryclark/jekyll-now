@@ -4,7 +4,7 @@ title: Welcome to my first blog post
 tags: jekyll, markdown, github
 ---
 
-## Customizing the blog
+### Customizing the blog
 
 Setting the website up was relatively easy more so once I found out about the [Jekyll Now](https://github.com/barryclark/jekyll-now) project which I simply forked to create my version of the website.  
 
