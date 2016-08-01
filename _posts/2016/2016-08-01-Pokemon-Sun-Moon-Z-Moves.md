@@ -38,12 +38,12 @@ Type: Ghost/Flying
 
 The Sensu Style Oricorio is quiet and collected. By means of its dance, it gathers the spirits drifting about in an area and borrows their power to fight.
 
-** Minior**\\
+**Minior**\\
 Type: Rock/Flying
 
 Minior are formed in the stratosphere and live by absorbing the detritus around them. When they’ve consumed a large quantity of particles, their bodies become heavy, and they fall toward the planet’s surface. Minior has a hard and heavy outer shell with a core within.
 
-** Gumshoos**\\
+**Gumshoos**\\
 Type: Normal
 
 Gumshoos is the Evolution of Yungoos. It will call on Yungoos allies and stand in the way of trial-goers.
