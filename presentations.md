@@ -4,6 +4,8 @@ title: Presentations
 permalink: /presentations/
 ---
 
+* [Small-sample methods for cluster-robust variance estimation and hypothesis testing in fixed effects models]({{ site.url}}/files/CRVE-JSM-20160731.pdf). Presentation at the Joint Statistical Meetings, July 31, 2016 in Chicago, IL.
+* [When large samples act small: The importance of small-sample adjustments for cluster-robust inference in impact evaluations]({{ site.url}}/files/CRVE-AIR-20160715.pdf). Presentation at the American Institutes for Research Impact Working Group Lecture Series, July 18, 2016.
 * [When large samples act small: Cluster-robust variance estimation and hypothesis testing with few clusters]({{ site.url}}/files/PRC_talk_20160219.pdf). Presentation at the Population Research Center colloquium, February 19, 2016.
 * [Small-sample adjustments for multiple-contrast hypothesis tests of meta-regressions using robust variance estimation]({{ site.url }}/files/Pustejovsky_SRSM_2015.pdf). Presentation at the Society for Research Synthesis Methods annual meeting, July 8, 2015 in Nashville, TN. ([Working paper]({{ site.url}}/files/Tipton-Pustejovsky-F-tests-with-RVE-May-2015.pdf))
 * [Operational sensitivities of non-overlap effect sizes for single-case experimental designs.]({{ site.url }}/files/AERA-2015-poster-Non-overlap-measures.pdf) Poster presented at the American Educational Research Association annual convention, April 19, 2015 in Chicago, IL. ([Conference paper]({{ site.url }}/files/Pustejovsky-Non-overlap-measures-AERA-2015.pdf))
