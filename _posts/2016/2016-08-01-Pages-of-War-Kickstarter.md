@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Kickstarter - Pages of War
-description: ABXY is a speedy 2-player game inspired by the legendary battles from our favorite monster training RPGs. It's my July Kickstarter pick.
+description: Pages of War is a game of epic combat in a small package. It's up on Kickstarter, and is my first pic of August.
 category: kickstarter
 featured: pagesofwar.jpg
 tags: [games, kickstarter, pages of war, j kloud entertainment]
