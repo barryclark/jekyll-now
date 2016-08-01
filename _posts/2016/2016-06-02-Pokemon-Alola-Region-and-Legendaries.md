@@ -4,7 +4,7 @@ title: Pokemon Alola Region and Legendaries
 description: The Pokémon Company has released more Pokémon Sun and Moon information, including information on the Alola Region, Legendaries, and more.
 category: video-games
 featured: alola.png
-tags: [video games, pokemon]
+tags: [video games, pokemon, pokemon sun, pokemon moon, the pokemon company, gamefreak, nintendo]
 author: Rob Kalajian
 ---
 
