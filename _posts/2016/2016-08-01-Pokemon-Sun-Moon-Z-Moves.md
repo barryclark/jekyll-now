@@ -33,7 +33,7 @@ Type: Psychic/Flying
 
 The Pa'u Style Oricorio acts at its own pace, which sometimes makes it difficult to deal with. It sharpens its spirited moves through dance, which increases its psychic power.
 
-*Sensu Style*
+*Sensu Style*\\
 Type: Ghost/Flying
 
 The Sensu Style Oricorio is quiet and collected. By means of its dance, it gathers the spirits drifting about in an area and borrows their power to fight.
