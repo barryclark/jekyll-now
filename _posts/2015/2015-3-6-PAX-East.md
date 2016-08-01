@@ -1,6 +1,7 @@
 ---
 layout: post
 title: PAX East
+description: A note about PAX East 2015
 category: conventions
 tags: [pax]
 author: Rob Kalajian

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 2014 Five and Dime List
+description: A list of my Five and Dimes from 2014.
 category: plays
 tags: [five and dime, boardgamegeek, magic the gathering, pokemon, eleminis, golem arcana, knee jerk, tsuro]
 author: Rob Kalajian

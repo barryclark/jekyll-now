@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Dragon Dice
+description: A great game, Dragon Dice becomes a new obsession.
 category: games
 tags: [games, dragon dice]
 author: Rob Kalajian

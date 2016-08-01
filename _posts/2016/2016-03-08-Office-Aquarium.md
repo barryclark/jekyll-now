@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Office Aquarium
+description: My new job let me setup an aquarium in my cubicle. Here's the lowdown.
 category: misc
 author: Rob Kalajian
 ---

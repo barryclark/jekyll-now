@@ -1,6 +1,7 @@
 ---
 layout: post
 title: I Am Elemental
+description: I Am Elemental has shown off some amazing actions figures that don't suffer from female sterotypes.
 category: toys
 tags: [i am elemental, toy fair]
 author: Rob Kalajian
