@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Unboxing Legend of Vyas
+description: Legend of Vyas is a new CCG by Vansh Games, and it looks great. Let's see what's inside!
 category: unboxing
 featured: vyas.png
 tags: [games, unboxing, legend of vyas, vansh games]

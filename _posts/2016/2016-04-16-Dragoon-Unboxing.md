@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Unboxing Dragoon
+description: Dragoon is an amazing game by Lay Waste Games. Let's see what's inside!
 category: unboxing
 featured: dragoon.png
 tags: [games, unboxing, dragoon, lay waste games]

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Coattails
+description: So many people are making Cards Against Humanity clones...
 featured: coattails.png
 category: news
 tags: [games, news, purple pawn]

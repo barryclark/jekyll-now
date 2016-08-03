@@ -1,6 +1,7 @@
 ---
 layout: post
 title: A Pawn's Perspective
+description: Site name change, perspective change.
 category: news
 tags: [news, purple pawn]
 author: Rob Kalajian

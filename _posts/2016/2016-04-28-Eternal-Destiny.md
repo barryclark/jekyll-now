@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Eternal Destiny - Animation Card Battle
+description: Eternal Destiny is more about boobs than gameplay, and it's completely unsatisfying.
 featured: eternal-destiny.png
 category: video-games
 tags: [video games, eternal destiny]
