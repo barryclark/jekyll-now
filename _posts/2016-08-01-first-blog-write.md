@@ -1,8 +1,7 @@
 ---
 layout: post
+title: You're up and running!
 ---
-{layout,	title, post}
-{You're up and running!}
 
 blog written !
 
