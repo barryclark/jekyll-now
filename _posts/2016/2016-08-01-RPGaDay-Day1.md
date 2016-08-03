@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "#RPGaDay - Day 1"
-description: #RPGaDay asks people to answer write about a specific RPG-related topic for every day in August. Here's my Day 1.
+title: "#RPGaDay 2016 - Day 1"
+description: "#RPGaDay asks people to answer write about a specific RPG-related topic for every day in August. Here's my Day 1."
 category: games
 featured: rpgaday.png
 tags: [games, rpgs, rpgaday]

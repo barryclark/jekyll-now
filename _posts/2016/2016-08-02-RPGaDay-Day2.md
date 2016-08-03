@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "#RPGaDay - Day 2"
+title: "#RPGaDay 2016 - Day 2"
 description: "Best game session since August 2015? Day 2 of #RPGaDay."
 category: games
 featured: rpgaday.png
@@ -18,4 +18,4 @@ I played a quick scenario with the designer, and really loved the give-and-take 
 
 It was smooth, fun, sometimes humorous, and had me making choices that I wouldn't normally make in an RPG. I wish I had bought the little book, or at least remembered something more about the name or designer so I could contact him and get a copy.
 
-Hopefully he's there next year, and I can snag one for myself if there's any left. 
+Hopefully he's there next year, and I can snag one for myself if there's any left.
