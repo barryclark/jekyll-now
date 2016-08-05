@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Welcome to my first blog post
+title: Hello world!
 tags: jekyll, markdown, github
 ---
 
