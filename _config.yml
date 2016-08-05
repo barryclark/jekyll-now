@@ -9,8 +9,7 @@ name: Joe's GitHub Blog
 description: Programming, Politics, and Ponderings
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://avatars.githubusercontent.com/u/12754677?v=3
-
+avatar: /images/ache.jpg
 
 navlinks:
   - text: Home
