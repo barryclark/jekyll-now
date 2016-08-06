@@ -141,7 +141,7 @@ The javascript and CSS is simple and there is no frameworks other than
 [Bootstrap](http://v4-alpha.getbootstrap.com/).
 
 But it is important that when we make changes to these files, we automatically
-reload the browser so we can see the changes imideatly.
+reload the browser so we can see the changes immediately.
 
 # Serving the application via Gulp!
 
@@ -203,7 +203,8 @@ npm install --save-dev gulp-live-server
 ```
 
 This installs and allows us to use the gulp-live-server module which will
-allow us to use a livereload feature.
+allow us to use a livereload feature and at the same time allow us to server
+the app from gulp.
 
 Next we define the only task called *serve* and the few initial steps that
 start our app using the express.js configuration in server.js
@@ -217,6 +218,9 @@ gulp.task('serve', function () {
     // ...
 });
 ```
+
+The main thing here is the **server.start()** call which just starts up a
+server and has nothing to do with livereload.
 
 We then define a gulp watch on a set of front-end files. If gulp registers any
 of those files changing it calls the callback function:
@@ -234,12 +238,16 @@ function (file) {
 ```
 
 The callback function is passed the changed file as the parameter, and here
-we just pass the file object to the notify function on the gulp-live server. This
+we just pass the file object to the **notify** function on the gulp-live server. This
 will then cause gulp-live-server to reload the page or just reload
 the file if possible.
 
 > There is an important difference as livereload will not refresh the page for
 > CSS files and will just apply the new styles dynamically.
+
+The notify function provided by gulp-live-server is what will trigger the
+livereload functionality. Calling that is going to cause the browser to reload
+and it is the hook and the key method of the entire livereload functionality.
 
 Finally the second and last watch is attached to the only server side file
 which actually starts up the express server:
@@ -251,8 +259,9 @@ gulp.watch("./lib/server.js", function (file) {
 });
 ```
 
-And the callback function is pretty much the same with the exception  of
-starting/restarting the server so that server side changes can be in effect.
+And the callback function is pretty much the same with the exception of
+starting/restarting the server with the **.start()** method, so that server
+side changes can be in effect.
 
 # Starting the application
 To start the app we navigate in a command line to the root (where the gulpfile
@@ -264,7 +273,12 @@ gulp serve
 
 This is going to start a server listening to *localhost:3000* and we can
 navigate there and see our app. But if we try to make changes, for example in
-the CSS we will see that the app won't get reloaded or refreshed.
+the CSS, **we will see that the app won't get reloaded or refreshed**.
+
+> Even though we have configured live-server and live-reload using the gulp
+> component we are still missing a key feature. To somehow notify the browser
+> that the files we are watching have changed. What we need actually is
+> provide a way for the **.notify** method to let the client side know to refresh.
 
 # The final component
 
@@ -273,9 +287,12 @@ notify the live server that something has changed.
 
 To resolve this we can take a look at the gulp-live-server documentation
 [here](https://www.npmjs.com/package/gulp-live-server#livereloadjs) we see
-that we need to add the livereload.js script to the page. As the document
-states it can be done in 3 possible ways. I've opted out for the livereload
-Chrome plugin which can be installed from [here](https://chrome.google.com/web
+that we need to add the [livereload.js](http://livereload.com/) script to the
+page. 
+
+As the document states it can be done in 3 possible ways. I've opted out for
+the livereload Chrome plugin which can be installed from
+[here](https://chrome.google.com/web
 store/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei?hl=en)
 
 # Summary
@@ -294,6 +311,6 @@ The source code for the app is available [here](https://github.com/emir01
 /socket-io-node-chat), and is something that I tend to contribute as I work on
 the tutorial. 
 
-**Note** that I am doing it a bit differently and not strictly
-following the tutorial. For example I've added and styled the app using
-Bootstrap.
+> **Note** that I am doing it a bit differently and not strictly
+> following the tutorial. For example I've added and styled the app using
+> Bootstrap.
