@@ -70,6 +70,46 @@
   location_gr: Αθήνα, Αττική, Ελλάδα
   location_en: Athens, Attica, Greece
 
+- company_gr: Biofire
+  company_en: Biofire
+  url: http://www.biofire.gr
+  category_gr: Βιολογικά τζάκια βιοαιθανόλης
+  category_en: Bioethanol fireplaces
+  location_gr: Αθήνα, Αττική, Ελλάδα
+  location_en: Athens, Attica, Greece
+
+- company_gr: Casa del Bambino
+  company_en: Casa del Bambino
+  url: https://www.facebook.com/casa.delbambino.7
+  category_gr: Παιδικά προϊόντα
+  category_en: Children's Clothing Store
+  location_gr: Αθήνα, Αττική, Ελλάδα
+  location_en: Athens, Attica, Greece
+
+- company_gr: Sousourades
+  company_en: Sousourades
+  url: https://www.facebook.com/Sousourades
+  category_gr: Γυναικεία ενδύματα
+  category_en: Women's clothes
+  location_gr: Αθήνα, Αττική, Ελλάδα
+  location_en: Athens, Attica, Greece
+
+- company_gr: Βίλα Πέργολα
+  company_en: Villa Pergola
+  url: https://coinmap.org/venue/8336
+  category_gr: Ενοικίαση Εξοχικών Κατοικιών
+  category_en: Villas to rent
+  location_gr: Άνδρος, Κυκλάδες, Ελλάδα
+  location_en: Andros, Cyclades, Greece
+
+- company_gr: Σανδάλια Σάββας
+  company_en: Savvas Sandals
+  url: http://savvas-sandals.com
+  category_gr: Δερμάτινα σανδάλια
+  category_en: Leather sandals worthshop
+  location_gr: Ρόδος, Ελλάδα
+  location_en: Rhodes, Greece
+
 - company_gr: Order Optix
   company_en: Order Optix
   url: http://orderoptix.gr
@@ -259,8 +299,16 @@
   url: http://hersonissospharmacy.com/
   category_gr: Φαρμακείο
   category_en: Pharmacy
-  location_gr: Χερσόνησος, Ηράκλειο, Ελλάδα
-  location_en: Hersonissos, Heraklion, Greece
+  location_gr: Χερσόνησος, Ηράκλειο, Κρήτη, Ελλάδα
+  location_en: Hersonissos, Heraklion, Crete, Greece
+
+- company_gr: Νόστος
+  company_en: Nostos
+  url: https://coinmap.org/venue/8370
+  category_gr: Εστιατόριο
+  category_en: Restaurant
+  location_gr: Αγία Μαρίνα, Χανιά, Κρήτη, Ηράκλειο, Ελλάδα
+  location_en: Agia Marina, Chania, Crete, Greece
 
 - company_gr: Φαρμακείο Κιμιωνή
   company_en: Kimioni Pharmacy
