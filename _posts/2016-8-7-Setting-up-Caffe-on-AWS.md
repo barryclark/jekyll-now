@@ -5,6 +5,8 @@ title: Setting Up Caffe On AWS For Dummies
 
 This is short tutorial on setting up Caffe to run on Amazon Web Services (AWS).  If you're hacker who lives on the command line, this is not for you.  If instead, you are a recovering pure mathematician who is uncomfortable with the messy innards of your laptop, and even more uncomfortable with the cloud, this might be for you.  You can find other tutorials with similar content, for example in [Stanford's CS231 course on Neural Networks](http://cs231n.github.io/aws-tutorial/).  This might be more of a meta-tutorial, in that, for some cases, I plan to point you to resources and say "do this".
 
+![Image to brighten up the place](/images/Caffe_AWS_header_image.jpg)
+
 If this tutorial proves to be useful, then I'll add to it as needed.  If you see a gap, or run into a thorny problem I haven't documented, email me or comment and I'll address it here.
 
 Caffe is one of the top frameworks for Deep Learning.  It abstracts away the details of implementing systems of neural network layers in a very nice way, and it's well supported.  The [steps for installing and running Caffe are routine](http://caffe.berkeleyvision.org/installation.html) and well documented.
