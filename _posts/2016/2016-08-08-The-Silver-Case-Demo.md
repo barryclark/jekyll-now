@@ -12,7 +12,7 @@ I recently posted about the upcoming visual novel, [The Silver Case](http://pawn
 
 For those interested in getting their hands on the demo, it can be found on the following sites:
 
-Steam: [http://store.steampowered.com/app/476650](http://store.steampowered.com/app/476650)
-PLAYISM: [http://playism.jp/game/454/the-silver-case](http://playism.jp/game/454/the-silver-case)
+**Steam:** [http://store.steampowered.com/app/476650](http://store.steampowered.com/app/476650)\\
+**PLAYISM:** [http://playism.jp/game/454/the-silver-case](http://playism.jp/game/454/the-silver-case)
 
 There still hasn't been any word of what the full game will cost when it comes out.
