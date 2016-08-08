@@ -9,6 +9,8 @@ title: Reading Notes for "Payments Systems In The U.S."
 
 这本书的标题很大，差不多是“纵览”、“概论”的意思，所以本质上是给读者建立起一个框架，对于具体的支付方法当然是要另外深入研究的。
 
+<!--more-->
+
 #什么是支付系统（Payments Systems)
 简而言之，就是在不同Party间进行价值移动，可以更直观的理解为Money Movement
 
