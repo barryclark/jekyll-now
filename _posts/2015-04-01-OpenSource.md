@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Something you may not know about Open Source
+excerpt_separator: <!--more-->
 ---
 
 此篇由内部分享Session整理所得

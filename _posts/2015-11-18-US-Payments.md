@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Reading Notes for "Payments Systems In The U.S."
+excerpt_separator: <!--more-->
 ---
 
 ![/images/Payments-Systems-In-The-US.png](/images/Payments-Systems-In-The-US.png)
