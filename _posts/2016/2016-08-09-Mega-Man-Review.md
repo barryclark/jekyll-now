@@ -8,7 +8,7 @@ tags: [games, review, mega man, jasco games]
 author: Rob Kalajian
 ---
 
-![Mega Man Board Game](/images/megaman/promo.jpg)
+![Mega Man Board Game](/images/megaman/promo.png)
 
 I love Mega Man. I grew up with Mega Man games, starting on the NES and playing them in all their sequels, spin-offs, and remakes throughout the years on various systems. As a kid I would put on my dad's motorcycle helmet and run around pretending to be the Blue Bomber, stopping evil Robot Masters from helping Dr. Wily take over the world.
 
