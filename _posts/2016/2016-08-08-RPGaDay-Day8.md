@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "#RPGaDay 2016 - Day 8"
-description: "What aspect of RPGs has had the most effect on you? Day 8 of #RPGaDay."
+description: "Do you prefer hardcover, softcover, or electronic books? What are the benefits of your preference? Day 8 of #RPGaDay."
 category: games
 featured: rpgaday.png
 tags: [games, rpgs, rpgaday]
