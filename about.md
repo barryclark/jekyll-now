@@ -6,4 +6,4 @@ permalink: /about/
 
 简历
 
-[email@domain.com](163邮箱:zhangst0720@163.com)
+[zhangst0720@163.com](163邮箱:zhangst0720@163.com)
