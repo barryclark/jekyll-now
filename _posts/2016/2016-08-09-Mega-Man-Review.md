@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Review - Mega Man: The Board Game
-description: The beloved Blue Bomber comes to the table in Mega Man: The Board Game. Maybe he should have stayed in the digital realm.
+title: "Review - Mega Man: The Board Game"
+description: "The beloved Blue Bomber comes to the table in Mega Man: The Board Game. Maybe he should have stayed in the digital realm."
 category: review
 featured: megaman1.jpg
 tags: [games, review, mega man, jasco games]
