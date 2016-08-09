@@ -3,7 +3,7 @@ layout: post
 title: How we're using Machine Learning to change the current state of disease detection
 ---
 
-Diagnosaaing medical conditions such as sickle cell disease can become much, much faster. 
+Diagnosing medical conditions such as sickle cell disease can become much, much faster. 
 ![test text](https://raw.githubusercontent.com/rohan-varma/rohan-blog/master/images/propic.jpg "Logo Title Text 1")
 
 
