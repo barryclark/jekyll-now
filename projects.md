@@ -9,8 +9,17 @@ permalink: /projects/
 </div>
 <section id="four" class="wrapper alt style1" style="margin-bottom: 0;">
   <div class="inner">
-    <p>Here are a few of my professional projects that are currently being used (and worked on) in the real world. Many more smaller recent projects are available on my Github expressing my active interest in learning new technologies. </p>
+    <p>Here are a few of my professional & personal Web projects that are currently being used (and worked on) in the real world. Many more smaller recent projects are available on my <a href="http:///www.github.com/stevechendc">Github</a> expressing my active interest in learning new technologies. </p>
     <section class="features" style="text-align:center">
+      <h3 class="major">KaBOOM! Map of Play v2</h3>
+
+      <article style="text-align:center">
+        <a href="http://mapofplay.kaboom.org" class="image" target="blank_"><img src="http://i.imgur.com/z6gDZw0.png?2" alt="" /></a>
+        <p> KaBOOM's Map of Play is the largest playground locator in the world with 50,000+ unique visitors monthly, a RESTful API and mobile apps that use it. KaBOOM! a national non-profit that builds playgrounds for kids and promote plays in low-income adverse communities.</p>
+        <p style="text-align:left"> My role in this project was to spearhead the rewrite of the backend implementing new features, testing, database design, integration with multiple libraries and gems. The entire goal of this project was to move away from their unopen legacy app riddled with incompatible technologies, unsolvable bugs, lack of tests, and general code smell due to 3rd party developers. All work was done during my Software Engineering internship at KaBOOM! within an agile team with daily pair programming and code reviews with the software engineering manager to ensure ideal specs were met. Key skills used included Test driven development, Continuous integration,  Job processing, and git workflow. </p>
+
+      </article>
+
       <h3 class="major">SteamFriend.me</h3>
 
       <article style="text-align:center">
