@@ -52,7 +52,8 @@ The hope was that clustering the data would produce three distinct regions: a si
 
 In reality, the actual clusters would look a little more complicated - each cluster is a subspace of 18 (our number of features) dimensional space. To classify a cell, we'd specify it's feature vector and compute its distance to each of the centroids. As an example, we might end up with an unlabeled cell being a distance d away. If d is within our maximum distance threshold (given by the distance the furthest correctly labelled cell is away from its centroid), we'd assign it to that cluster and recompute the centroid accordingly. So our algorithm might look something like this: 
 
-<script src="https://gist.github.com/rohan-varma/d8b4f3fd4fa93a45c4b4048f0c5df6d6.js"></script>
+<script src="https://gist.github.com/nisrulz/11c0d63428b108f10c83.js"></script>
+
   
   
   
