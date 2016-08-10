@@ -47,6 +47,7 @@ One way to do this is by using the `kmeans` algorithm. This algorithm takes in a
 
 The hope was that clustering the data would produce three distinct regions: a sickle cell region, a red blood cell region, and a white blood cell region. Sure enough, our cells (represented here as points) clustered into three regions: 
 
+```insert image here```
 
 
 
@@ -62,9 +63,10 @@ In reality, the actual clusters would look a little more complicated - each clus
 
 ### Bootstrap Aggregation
 A machine learning classifier.
+\mu = 5
 
-### A stateful Recurrent Neural Network 
-How we're going to solve this problem
+### A Small Tweak To Improve Accuracy
+Random forests Ensemble
 
 
 This post will outline the technical details, benefits, and challenges of using machine learning - specifically, neural networks - to detect sickle cells. We'll cover the preprocessing step of applying various filters to extract features of the image, using clustering to detect images of cells clumped together, and then detail how a classifier can be built through the use of these features. Stay tuned!
