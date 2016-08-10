@@ -9,6 +9,8 @@ author_email: melania.andrisan@haufe-lexware.com
 header-img: "images/bg-post.old.jpg"
 ---
 
+[Here is our Open Source][github] project on Github after some digging into Eloqua documentation and building some docker files. Take a couple of minutes and read the entire story. 
+
 Some time ago... the story of building an [Eloqua App][eloqua app] begins. First, [Bogdan][bogdan] (one of my colleagues) starts to investigate what can be done and after digging and digging in the old and new documentation he realizes what it’s possible. After 2 weeks of building and debugging the first version of our Eloqua App appears.
 
 Our Eloqua App is a service meant to provide a small box in a campaign which can receive a list of contacts from the campaign and deliver emails with a form with their data. We are using Eloqua to create different Marketing Campaigns and in case you are not familiar with it you can have a look at the [official Oracle Page][Oracle].  
@@ -30,7 +32,7 @@ Here I enter into the story and start investigating; it looks like Eloqua does n
 
 I built also some Docker scripts to have the app containerized and made everything opened source.  
 
-On Github you can find the Server, the docker containers and a Readme file which explains everything we learned from building this App.
+[On Github][github] you can find the Server, the docker containers and a Readme file which explains everything we learned from building this App.
 
 Enjoy! and Happy cloning!  
 
@@ -39,3 +41,4 @@ Enjoy! and Happy cloning!
 [Mongodb]:https://www.mongodb.com/
 [Mongoose]:http://mongoosejs.com/
 [Oracle]:https://www.oracle.com/marketingcloud/products/marketing-automation/index.html
+[github]:https://github.com/Haufe-Lexware/eloqua-contract-to-form-action-service
