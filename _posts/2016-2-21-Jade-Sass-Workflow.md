@@ -4,11 +4,11 @@ title: Jade + Sass Workflow
 permalink: /blog/Jade+Sass-Workflow/
 ---
 
-Every few months some amazing tool or software comes out that makes the lives of devs easier. I know I'm late to the party but I just discovered <a href="http://jade-lang.com">Jade</a> &ndash; and I'm excited to share how it improves my workflow!
+<span class="large-cap">E</span>very few months some amazing tool or software comes out that makes the lives of devs easier. I know I'm late to the party but I just discovered <a href="http://jade-lang.com">Jade</a> &ndash; and I'm excited to share how it improves my workflow!
 
-Certainly influenced by <a href="">HAML</a>, Jade is a templating engine designed (though not required) to be used with Node.js.
+Certainly influenced by [HAML](http://haml.info/), Jade is a templating engine designed (though not required) to be used with Node.js.
 
-#### So What Can it Do?
+## So What Can it Do?
 
 It can transform this:
 {% highlight html linenos %}
@@ -45,7 +45,7 @@ This is just a small example of the the things made possible with Jade. You can 
 
 All this results in more whitespace which your eyes will thank you for, faster development, and ultimately, time saved.
 
-#### Sass over SCSS
+## Sass over SCSS
 <a href="http://sass-lang.com">Sass</a> is incredible. Though SCSS is newer, the syntax of Sass is similar to Jade in the sense that it is minimalist. Let me show you:
 
 SCSS:
@@ -84,7 +84,7 @@ Sass:
     text-decoration: none
 {% endhighlight %}
 
-#### I've been sold.
+## I've been sold.
 
 To leverage both of these technologies I use either GruntJS or CodeKit to minify and/or compile. CodeKit is new for me but it might beat out GruntJS for most applications. Grunt might have flexibility and customizability but CodeKit has simplicity and speed; for me, the latter wins.
 

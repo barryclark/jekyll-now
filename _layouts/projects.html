@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<section class="projects container">
+  {{ content }}
+</section>
+
+<section class="projects-more container">
+  <h3>Projects</h3>
+  <ul>
+    {% for page in site.pages %}
+      {% if page.layout == 'projects' %}
+        {% if page.id != 'ignore' %}
+        <li><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></li>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  </ul>
+</section>

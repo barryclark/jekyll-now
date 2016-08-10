@@ -9,44 +9,43 @@
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link href='http://fonts.googleapis.com/css?family=Pontano+Sans' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800,600,700,300' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Average' rel='stylesheet' type='text/css'>
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
     <script src="/js/{{ site.baseurl }}/cssua.min.js"></script>
   </head>
 
   <body>
-    <section class="top top-home">
-      <div class="gradient">&nbsp;</div>
+    <div class="wrapper">
+      <header>
+        <a href="{{ site.baseurl }}/" {% if current[1] == 'index.html'%}class='current'{% endif %}><strong>Dawit Elias</strong></a>
+        {% assign current = page.url | downcase | split: '/' %}
+        <nav class="navbar">
+          <a href="{{ site.baseurl }}/blog" {% if current[1] == 'blog'%}class='current'{% endif %}>Blog</a>
+          <a href="{{ site.baseurl }}/projects/chefsteps" {% if current[1] == 'projects'%}class='current'{% endif %}>Projects</a>
+          <a target="_blank" href="https://www.behance.net/maroonvans" title="A collection of quick visual designs on Behance">Shots</a>
+        </nav>
+      </header>
 
-      {% assign current = page.url | downcase | split: '/' %}
-      <nav class="navbar">
-        <a href="{{ site.baseurl }}/" {% if current[1] == 'index.html'%}class='current'{% endif %}>Home</a>
-        <a href="{{ site.baseurl }}/blog" {% if current[1] == 'blog'%}class='current'{% endif %}>Blog</a>
-        <a href="{{ site.baseurl }}/work/chefsteps" {% if current[1] == 'work'%}class='current'{% endif %}>Work</a>
-        <a target="_blank" href="https://www.behance.net/maroonvans" title="A collection of quick visual designs on Behance">Shots</a>
-      </nav>
+      <main>
+        {{ content }}
+      </main>
 
-      {{ content }}
-    </section>
-
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          <div class="contact-container">
-            <a href="mailto:dawitelias14@gmail.com">email</a>
+      <footer class="footer">
+        <div class="footer-inner">
+          <div>
+            <a href="https://www.behance.net/maroonvans">behance</a>
+            <a href="http://codepen.io/dawitelias/">codepen</a>
+            <a href="https://twitter.com/maroonvans">twitter</a>
             <a href="https://www.linkedin.com/in/dawitelias">linkedin</a>
-            <a href="https://github.com/dawitelias">github</a>
             <a href="{{ site.baseurl }}/DawitElias-Resume.pdf">resume</a>
           </div>
-        </footer>
-      </div>
+        </div>
+      </footer>
     </div>
 
   <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-  <script>var posts=document.querySelectorAll(".post p");var i=0;while(i<posts.length){posts[i].classList.add("readable");i++;}</script>
   <script src="/js/{{ site.baseurl }}/main.js"></script>
   <script src="/js/{{ site.baseurl }}/elevator.min.js"></script>
   {% include analytics.html %}

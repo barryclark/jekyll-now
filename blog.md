@@ -1,5 +1,7 @@
 ---
 layout: blog
-title: Some Thoughts
+title: Writing
 permalink: /blog/
 ---
+
+{::options auto_ids="false" /}

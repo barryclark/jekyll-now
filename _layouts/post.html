@@ -1,27 +1,11 @@
 ---
 layout: default
 ---
-<!-- <h2 class="content">{{page.title}}</h2>
-<article class="post">
-  <h1>{{ page.title }}</h1>
 
-  <div class="entry">
+<section class="blog-post container">
+  <h1 class="post-title">{{ page.title }}</h1>
+  <p class="post-date">{{ page.date | date: "%d %B %Y" }}</p>
+  <article class="post">
     {{ content }}
-  </div>
-
-  <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
-  </div>
-
-</article> -->
-
-<div class="content-posts">
-  <article class="container posts">
-    <h3 class="latest-post-title"><strong>{{ page.title }}</strong></h3>
-    <p class="latest-post-date">{{ page.date | date: "%d %B %Y" }}</p>
-    <article class="post">
-      {{ content }}
-    </article>
-
   </article>
-</div>
+</section>

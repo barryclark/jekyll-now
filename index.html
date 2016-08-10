@@ -2,43 +2,39 @@
 layout: default
 ---
 
-  <div class="hero clearfix">
-    <div class="container">
-       <h1 class="site-name">{{ site.name }}</h1>
-       <h2 class="site-description"><span>developer</span> <span>•</span> designer</h2>
-       <p class="intro">Hi, Dawit here. I'm designer and developer looking to create simple solutions to complex problems that positively impact our everyday lives. If you like long form, you can read up on some of <a href="{{ site.baseurl }}/work/chefsteps">my interesting projects</a> or <a href="{{ site.baseurl }}/blog/">my blog</a>.</p>
-       <p class="intro">Too long? Have a go at <a href="https://www.behance.net/maroonvans">my slowly improving visual designs</a>, <a href="http://codepen.io/dawitelias/">code playground</a>, or <a href="https://twitter.com/maroonvans">random thoughts</a>.
-       </p>
-    </div>
+<section class="home container">
+
+  <h2>Designer and developer creating simple solutions to complex problems.</h2>
+
+  <div>
+    <h3><em>Present</em></h3>
+    <ul>
+      <li>UX Design / Web Development, <span>Pavilion</span></li>
+      <li>Freelance Design / Development</li>
+    </ul>
   </div>
+
+  <div>
+    <h3>Former</h3>
+    <ul>
+      <li>B.S. Information Technology, <span>RIT</span></li>
+      <li>Front End Developer Intern, <span>Global Thinking</span></li>
+      <li>Web Operations Intern, <span>American Greetings</span></li>
+    </ul>
+  </div>
+
+  <div>
+    <h3>Projects</h3>
+  
+    <ul>
+      {% for page in site.pages %}
+        {% if page.layout == 'projects' %}
+          {% if page.id != 'ignore' %}
+          <li><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></li>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+
 </section>
-
-<section class="block-featured-work">
-  <div class="container main">
-    <h3><strong>featured work:</strong> ChefSteps Redesign</h3>
-      <div class="featured-work-inner">
-        <p class="readable">ChefSteps is fantastic. They're a food and technology company that aims to make people better cooks by cooking smarter.</p>
-        <p class="readable"><a href="{{ site.baseurl }}/work/chefsteps" class="read-more">Read More</a></p>
-
-        <figure>
-          <img src="/images/chefsteps-cover.jpg" alt="Featured Image">
-        </figure>
-      </div>
-
-  </div>
-</section>
-
-<div class="content-posts">
-  <div class="container posts">
-    {% for post in site.posts limit:1 %}
-    <h3 class="latest-post-title"><strong>{{ post.title }}</strong></h3>
-    <p class="latest-post-date">{{ post.date | date: "%d %B %Y" }} <span>(Latest Post)</span></p>
-
-      <article class="post">
-        {{ post.excerpt | truncatewords: 50 }}
-
-        <p class="readable"><a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a></p>
-      </article>
-    {% endfor %}
-  </div>
-</div>

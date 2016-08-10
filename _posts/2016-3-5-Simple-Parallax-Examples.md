@@ -4,14 +4,18 @@ title: Simple Parallax Examples
 permalink: /blog/Simple-Parallax-Examples/
 ---
 
-Parallax (noun): the apparent displacement of an observed object due to a change in the position of the observer.
+<span class="large-cap">P</span>arallax (noun): the apparent displacement of an observed object due to a change in the position of the observer.
 
 Parallax on the web is all the rage! Typically, items on the page move at various speeds as the page is scrolled. I'm only going to cover a few types (NOTE: these techniques are unofficially named): parallax header, landing elements, and floating elements.
 
-#### Parallax Header
+## Parallax Header
+
 You've seen it before. As the page is scrolled the header image appears as if it's being covered by the content below and the header text appears to be following your scroll. This is actually just a fixed background image and a translateY on the text node.
 
-<img class="blog-gif" src="/images/header_parallax.jpg" alt="Header Parallax Effect">
+<figure>
+  <img class="blog-gif" src="/images/header_parallax.jpg" alt="Header Parallax Effect">
+</figure>
+
 <p class="caption">Hover over images to watch animation</p>
 
 <strong>Markup (Jade)</strong>
@@ -52,10 +56,15 @@ You've seen it before. As the page is scrolled the header image appears as if it
  });
 {% endhighlight %}
 
-#### Landing Elements
+## Landing Elements
+
 Landing elements are things that sort of appear when you scroll into a new area. They're great attention grabbers! In this example, we are using our styles to do most of the work. The jQuery code only adds a class to each html element we want to reveal, in order, every 180 milliseconds.
 
-<img class="blog-gif" src="/images/landing_parallax.jpg" alt="Landing Parallax Effect">
+<figure>
+  <img class="blog-gif" src="/images/landing_parallax.jpg" alt="Landing Parallax Effect">
+</figure>
+
+<p class="caption">Hover over images to watch animation</p>
 
 <strong>Markup (Jade)</strong>
 {% highlight html linenos %}
@@ -114,10 +123,15 @@ Landing elements are things that sort of appear when you scroll into a new area.
 });
 {% endhighlight %}
 
-#### Floating Elements
+## Floating Elements
+
 One of my favorites! Floating elements can be done in a variety of ways. The commonality is that floating elements are controlled by your scroll. Things move around on the screen based on scroll speed and scroll position. In the code we simply translate the position of our spaceship with each pixel scrolled.
 
-<img class="blog-gif" src="/images/floating_parallax.jpg" alt="Floating Parallax Effect">
+<figure>
+  <img class="blog-gif" src="/images/floating_parallax.jpg" alt="Floating Parallax Effect">
+</figure>
+
+<p class="caption">Hover over images to watch animation</p>
 
 <strong>Markup (Jade)</strong>
 {% highlight html linenos %}
@@ -156,9 +170,10 @@ One of my favorites! Floating elements can be done in a variety of ways. The com
 
 ...And that's it: three easy parallax techniques, done!
 
-#### Some Important Things to Note
+## Some Important Things to Note
+
 As previously mentioned, there are downsides to using parallax design (these downsides are completely situational and might not necessarily apply to what you're trying to achieve). <strong>First</strong>, many sites that use parallax design also sport a single page layout. This is not so good for SEO as there's only one set of meta information, one title, one header, etc. <strong>Second</strong>, page load time can be increased and scroll speed/smoothness decreased. It's important not to be heavy handed with large images and parallax-based animation. <strong>Third</strong>, there is a chance for some incompatibility when used with mobile and responsive design.
 
 Parallax is a fun way to make your site more interactive by telling a story, adding depth, and highlighting call to actions. Keep it simple!
 
- <span>*</span>If you're following along with this example and wondering why your page might not look exactly like mine it's because the code snippets leave out some base styles/markup/code. <a href="https://drive.google.com/folderview?id=0B0y-J1kbjmP6bG9ESmZvLUkxMUk&usp=sharing">Click here to get the whole project</a>.
+<p class"annotation">\* If you're following along with this example and wondering why your page might not look exactly like mine it's because the code snippets leave out some base styles/markup/code. [Click here to get the whole project](https://drive.google.com/folderview?id=0B0y-J1kbjmP6bG9ESmZvLUkxMUk&usp=sharing).</p>

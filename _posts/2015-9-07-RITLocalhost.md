@@ -4,7 +4,7 @@ title: RIT Localhost
 permalink: /blog/RITLocalhost/
 ---
 
-[RIT Localhost](http://www.ritlocalhost.com/) is an extracurricular club founded by fellow friends and classmates Josh Vickerson and Ryan Hoffmann. The purpose of the club is to "keep students informed about trending mobile, web, and ux technologies." A few days before our first meeting of the year, I sat in on Localhost's E-Board meeting. The goal of the meeting was to plan the first few club meetings and to figure out how to increase club attendance. Every tech major at RIT has a club and a loyal following. For example, computing security students have [RC3](http://rc3.club/) and the Software Engineering students have [SSE](https://sse.se.rit.edu/).
+[<span class="large-cap">R</span>IT Localhost](http://www.ritlocalhost.com/) is an extracurricular club founded by fellow friends and classmates Josh Vickerson and Ryan Hoffmann. The purpose of the club is to "keep students informed about trending mobile, web, and ux technologies." A few days before our first meeting of the year, I sat in on Localhost's E-Board meeting. The goal of the meeting was to plan the first few club meetings and to figure out how to increase club attendance. Every tech major at RIT has a club and a loyal following. For example, computing security students have [RC3](http://rc3.club/) and the Software Engineering students have [SSE](https://sse.se.rit.edu/).
 
 Localhost caters more towards IT majors but isn't specific to any one major. We encourage everyone of all skill levels and majors interested in web/mobile design and development to come.
 
@@ -19,9 +19,3 @@ While brainstorming, we thought how could we possibly incorporate some of that i
 If you couldn't tell, we had great fun brainstorming and trying to incorporate this into our competition ideas.
 
 I'll keep posting about our ideas as the semester progresses. In the meantime, please feel free to contact me with more ideas and suggestions!
-
-<div class="to-top-container elevator">
-  <div class="to-top-btn">
-    <img src="/images/cd-top-arrow.svg" alt="" />
-  </div>
-</div>

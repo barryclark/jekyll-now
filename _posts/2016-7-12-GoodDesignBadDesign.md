@@ -4,7 +4,7 @@ title: Good Design Bad Design
 permalink: /blog/good-design-bad-design/
 ---
 
-There are two design questions I love to answer.
+<span class="large-cap">T</span>here are two design questions I love to answer.
 
 **1. What is an app that you think exhibits good visual design, but has a poor user experience and why?**
 
@@ -14,11 +14,20 @@ I play video games casually, but, also use my PS4 for many other functions: Netf
 
 **Navigation.** The primary form of navigation on the PS4 is a long, horizontally scrolling list. There is a system-level menu you can access by moving the directional pad up one level and related sub menus for most items can be found by moving down a level.
 
-![alt text](http://www.thesixthaxis.com/wp-content/uploads/2014/04/share2.jpg "PS4 Menu/Navigation System")
+
+<figure>
+  <a href="http://www.thesixthaxis.com/wp-content/uploads/2014/04/share2.jpg" target="\_blank" title="PS4 Menu/Navigation System">
+    <img src="http://www.thesixthaxis.com/wp-content/uploads/2014/04/share2.jpg" alt="PS4 Menu/Navigation System">
+  </a>
+</figure>
 
 Pictured above, you can see this user has lots of games and apps and has to scroll horizontally to find what he's looking for. Navigating this interface becomes increasingly difficult the more you use it because the list only grows longer. There is no way to jump to the end/beginning of a list, no way to quickly search for an app, and no way to reorder the list (unless you uninstall and reinstall a bunch of apps in a certain order).
 
-![alt text](https://farm1.staticflickr.com/577/21803948501_59e89be377_b.jpg "PS4 System-level Menu/Navigation")
+<figure>
+  <a href="https://farm1.staticflickr.com/577/21803948501_59e89be377_b.jpg" target="\_blank" title="PS4 System-level Menu/Navigation">
+    <img src="https://farm1.staticflickr.com/577/21803948501_59e89be377_b.jpg " alt="PS4 System-level Menu/Navigation">
+  </a>
+</figure>
 
 Pictured above is the system-level menu. It's conveniently located but there are no signifiers that tell the user they can move up one level to access this menu – quite confusing for new users.
 
@@ -36,6 +45,6 @@ Visual design will always be important. It invokes emotion. A beautiful site est
 
 Craigslist is no-fluff. They want users to be able to buy and sell on the site quickly with no unneeded complexity. Steven Krug wrote a fantastic book on usability, *Don't Make Me Think*. An author at UX Booth extracted [10 Key Lessons from the book](http://www.uxbooth.com/articles/10-usability-lessons-from-steve-krugs-dont-make-me-think/). Though they all apply to Craigslist, I found Lesson 1 particularly relevant:
 
-<blockquote>Usability means making sure something works well, and that a person of average ability or experience can use it for its intended purpose without getting hopelessly frustrated.</blockquote>
+> Usability means making sure something works well, and that a person of average ability or experience can use it for its intended purpose without getting hopelessly frustrated.
 
 By this very definition, Craigslist is a model of good user experience. The visual design.. eh.
