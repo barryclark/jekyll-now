@@ -1,19 +1,3 @@
----
-layout: post
-title: "Bug in nlme::getVarCov"
-date: August 10, 2016
-tags: [programming]
----
-
-I have recently been working to ensure that [my `clubSandwich` package](https://github.com/jepusto/clubSandwich) works correctly on fitted `lme` and `gls` models from the `nlme` package, which is one of the main R packages for fitting hierarchical linear models. In the course of digging around in the guts of `nlme`, I noticed a bug in the `getVarCov` function. The purpose of the function is to extract the estimated variance-covariance matrix of the errors from a fitted `lme` or `gls` model. 
-
-It seems that this function is sensitive to the order in which the input data are sorted. [This bug report](https://bugs.r-project.org/bugzilla3/show_bug.cgi?id=16744) noted the problem, but unfortunately their proposed fix doesn't seem to solve the problem. In this post I'll demonstrate the bug and a solution. (I'm posting this here because the R project's bug reporting system is currently closed to people who were not registered as of early July, evidently due to some sort of spamming problem.)
-
-# The issue
-
-Here's a simple demonstration of the problem. I'll first fit a `gls` model with a heteroskedastic variance function and an AR(1) auto-correlation structure (no need to worry about the substance of the specification---we're just worried about computation here) and then extract the variances for each of the units.
-
-```{r}
 
 # Demonstrate the problem with gls model
 
@@ -27,49 +11,16 @@ gls_raw <- gls(follicles ~ sin(2*pi*Time) + cos(2*pi*Time), data = Ovary,
 Mares <- levels(gls_raw$groups)
 V_raw <- lapply(Mares, function(g) getVarCov(gls_raw, individual = g))
 
-```
-
-Now I'll repeat the process using the same data, but sorted in a different order
-```{r}
 Ovary_sorted <- Ovary[with(Ovary, order(Mare, Time)),]
 gls_sorted <- update(gls_raw, data = Ovary_sorted)
 
 V_sorted <- lapply(Mares, function(g) getVarCov(gls_sorted, individual = g))
-```
-
-The variance component estimates are essentially equal:
-```{r}
 all.equal(gls_raw$modelStruct, gls_sorted$modelStruct)
-```
-
-However, the extracted variance-covariance matrices are not:
-
-```{r}
 all.equal(V_raw, V_sorted)
-```
-
-Here's the code of the relevant function:
-```{r}
 nlme:::getVarCov.gls
-```
-
-The issue is in the 4th line of the body. `getVarCov.gls` assumes that `varWeights(obj$modelStruct$varStruct)` is sorted in the same order as `obj$groups`, which is not necessarily true. Instead, `varWeights` seem to return the weights sorted according to the grouping variable. For this example, that means that the `varWeights` will not depend on the order in which the groups are sorted.
-```{r}
 identical(gls_raw$groups, gls_sorted$groups)
 identical(varWeights(gls_raw$modelStruct$varStruct), 
           varWeights(gls_sorted$modelStruct$varStruct))
-```
-
-# Fix for `nlme:::getVarCov.gls`
-
-I think this can be solved by either 
-
-* putting the `varWeights` back into the same order as the raw data or
-* sorting `obj$groups` before identifying the rows corresponding to the specified `individual`. 
-
-Here's a revised function that takes the second approach:
-
-```{r}
 
 # proposed patch for getVarCov.gls
 
@@ -87,19 +38,9 @@ getVarCov_revised_gls <- function (obj, individual = 1, ...) {
     result
 }
 
-```
-
-Testing that it works correctly:
-```{r}
 V_raw <- lapply(Mares, function(g) getVarCov_revised_gls(gls_raw, individual = g))
 V_sorted <- lapply(Mares, function(g) getVarCov_revised_gls(gls_sorted, individual = g))
 all.equal(V_raw, V_sorted)
-```
-
-# Fix for `nlme:::getVarCov.lme`
-
-The same issue comes up in `getVarCov.lme`. Here's the fix and verification:
-```{r}
 
 # proposed patch for getVarCov.lme
 
@@ -176,15 +117,5 @@ V_raw <- lapply(Mares, function(g) getVarCov_revised_lme(lme_raw, individual = g
 V_sorted <- lapply(Mares, function(g) getVarCov_revised_lme(lme_sorted, individual = g, type = "marginal"))
 all.equal(V_raw, V_sorted)
 
-```
-
-# Session info
-
-```{r}
 sessionInfo()
-```
-
-```{r, include=FALSE}
 knitr::purl("Bug-in-nlme-getVarCov.Rmd", documentation=0L)
-```
-
