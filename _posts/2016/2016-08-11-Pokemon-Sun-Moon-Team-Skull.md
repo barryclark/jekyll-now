@@ -12,7 +12,7 @@ The Pokémon Company International announced Pokémon Sun and Moon info today, i
 
 The new creatures announced today include: Wishiwashi, Pyukumuku, Morelull, and Alolan classics Alolan Meowth, Alolan Marowak, and Alolan Raichu (who surfs on his tail!)
 
-<img src="/images/sunmoon/morenew.jpg2" alt="More new pokemon" style="float-left;"/>
+<img src="/images/sunmoon/morenew2.jpg" alt="More new pokemon" style="float-left;"/>
 **Wishiwashi**\\
 Type: Water
 
@@ -72,5 +72,3 @@ Plumeria is considered the big sister of Team Skull. She’s a tough lady who ke
 *Team Skull Grunts*
 
 Both male and female Team Skull Grunts wear matching black Skull Tanks. And these uniforms aren’t even provided for them—all Grunts have to buy their own!
-
-![Kahunas and More](/images/sunmoon/leaders.jpg)
