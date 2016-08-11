@@ -101,8 +101,11 @@ gsub counts the number of substitutions made, as a proxy for number of matches. 
 
 Matches and removes the pattern:
 @Illumina_header
+
 [blankline]
+
 +
+
 [blankline]
 
 
@@ -118,18 +121,29 @@ in normal mode, type ma at beginning of block and d'a at end of block.
 "mark a" then "delete to a"
 ##### Visual mode things
 esc v gets into visual mode
+
 y copies
+
 d cuts
+
 p pastes
 
 ##### Navigating things
 in command mode:
+
 $ goes to end of the line
+
+
 shift-g to bottom of document
+
 gg to top of document
+
 e moves cursor forward faster
+
 ctrl-f forward a page
+
 ctrl-g back a page
+
 
 ##### replacing
 Add /g to the end of the :s/a/b statement to replace multiple occurences of pattern in line
