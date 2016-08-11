@@ -12,7 +12,7 @@ The Pokémon Company International announced Pokémon Sun and Moon info today, i
 
 The new creatures announced today include: Wishiwashi, Pyukumuku, Morelull, and Alolan classics Alolan Meowth, Alolan Marowak, and Alolan Raichu (who surfs on his tail!)
 
-<img src="/images/sunmoon/morenew2.jpg" alt="More new pokemon" style="float-left;"/>
+<img width="350" src="/images/sunmoon/morenew2.jpg" alt="More new pokemon" style="float-left;"/>
 **Wishiwashi**\\
 Type: Water
 
