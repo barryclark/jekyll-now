@@ -95,6 +95,18 @@ gsub counts the number of substitutions made, as a proxy for number of matches. 
 
 ### <font color="red">vim</font>
 
+#### Remove empty fastq entries 
+
+:%s/@.*\n\n+\n\n//
+
+Matches and removes the pattern:
+@Illumina_header
+[blankline]
++
+[blankline]
+
+
+
 ##### Indent block of text 4 spaces
 
 Esc Vj:le 4
