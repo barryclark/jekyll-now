@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Summer Internship @Haufe
-subtitle: A month of summer practice @Haufe - A beggining for me in web app development
+subtitle: The experience that changed my way of thinking
 category: conference
 tags: [devops, docker, automation]
 author: bogdanbledea
