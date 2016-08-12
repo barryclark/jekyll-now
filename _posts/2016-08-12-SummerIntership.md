@@ -9,7 +9,7 @@ author_email: bogdan.b19c@gmail.com
 header-img: "images/summerInternship2016.jpg"
 ---
 
-Today is the last day spent @Haufe. And I must admit, this summer internship was simply awesome. My work colleagues were so friendly, the helped me when I was in trouble. 
+Today is the last day spent @Haufe. And I must admit, this summer internship was simply awesome. My work colleagues were so friendly, they helped me when I was in trouble. 
 
 {:.center}
 ![DevOps Day 2016]({{ site.url }}/images/devopsday2016/audience.jpg){:style="margin:auto"}
