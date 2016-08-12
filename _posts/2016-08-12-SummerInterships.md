@@ -9,7 +9,7 @@ author_email: bogdan.b19c@gmail.com
 header-img: "images/summerInternship2016.jpg"
 ---
 
-I'm Bledea Bogdan and alongside with Patricia Atieyeh, both second year students at Polytechnic University of Timisoara, we built a feedback box app for Haufe-Lexware.
+I'm Bledea Bogdan and together with Patricia Atieyeh, both second year students at Polytechnic University of Timisoara, we built a feedback box app for Haufe-Lexware.
 
 Today is the last day spent @Haufe. And I must admit, this summer internship was simply awesome. My work colleagues were so friendly, they helped me when I was in trouble. And I didn't thought it's so fun to go to work.
 
