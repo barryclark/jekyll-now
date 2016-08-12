@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Summer Practice @Haufe
+title: Summer Internship @Haufe
 subtitle: A month of summer practice @Haufe - A beggining for me in web app development
 category: conference
 tags: [devops, docker, automation]
