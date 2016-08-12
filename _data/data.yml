@@ -110,6 +110,14 @@
   location_gr: Ρόδος, Ελλάδα
   location_en: Rhodes, Greece
 
+- company_gr: Anik Snacks
+  company_en: Anik Snacks
+  url: http://www.aniksnacks.com
+  category_gr: Τρόφιμα Ζακύνθου
+  category_en: Zante foodstuff
+  location_gr: Αγία Παρασκευή, Αττική, Ελλάδα
+  location_en: Agia Paraskevi, Attica, Greece
+
 - company_gr: Order Optix
   company_en: Order Optix
   url: http://orderoptix.gr
