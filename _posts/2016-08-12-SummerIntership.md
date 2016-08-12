@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Summer practice @Haufe
+title: Summer Practice @Haufe
 subtitle: A month of summer practice @Haufe - A beggining for me in web app development
 category: conference
 tags: [devops, docker, automation]
 author: bogdanbledea
 author_email: bogdan.b19c@gmail.com
-header-img: "images/bg-post.old.jpg"
+header-img: "images/summerpractice2016.jpg"
 ---
 
 What started as a little get together in one of our locations last year, grew a little bit bigger - last week 150 Haufe colleagues met in Freiburg for our internal DevOps Day 2016. Taking the opportunity of so many tech people in town, we also set up a public [DevOps meetup](http://www.meetup.com/de-DE/DevOps-Freiburg/events/231185858/) in the evening.
