@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Summer practice @Haufe
+title: Summer practice @Haufe | Personal review
 subtitle: A full day of talks on continuous delivery, test automation, Docker, cloud and much more
 category: conference
 tags: [devops, docker, automation]
