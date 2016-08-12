@@ -6,7 +6,7 @@ category: general
 tags: [culture, docker]
 author: Bogdan Bledea
 author_email: bogdan.b19c@gmail.com
-header-img: "images/summerInternship2016.jpg"
+header-img: "images/summerInternships1.jpg"
 ---
 
 I'm Bledea Bogdan and together with Patricia Atieyeh, both second year students at Polytechnic University of Timisoara, we built a feedback box app for Haufe-Lexware.
@@ -16,7 +16,7 @@ Today is the last day spent @Haufe. And I must admit, this summer internship was
 Below, is a screenshot of the application we built during this intership, built with the Meteor framework. Meteor is a brand new framework, both front-end and back-end, which makes Meteor a great framework.
 
 {:.center}
-![Screenshot of the app](/images/screenshot1.jpg){:style="margin:auto"}
+![Screenshot of the app](/images/summerInternships2.jpg){:style="margin:auto"}
 
 This application is for internal company use and it takes a feedback from a user, post it on the site, and sort the feedbacks by the number of votes. Users can  delete only their feedbacks, and the feedback can be modified only if there is no reply or vote.
 
