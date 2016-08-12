@@ -18,7 +18,7 @@ Below, is a screenshot of the application we built during this intership, built 
 {:.center}
 ![Screenshot of the app](/images/screenshot1.jpg){:style="margin:auto"}
 
-This application takes the feedback from the user, post it on the index page, and sort the feedbacks by the number of votes. Users can  delete only their feedbacks, and the feedback cand be modified only if there is no reply or vote.
+This application is for internal company use and it takes a feedback from a user, post it on the site, and sort the feedbacks by the number of votes. Users can  delete only their feedbacks, and the feedback can be modified only if there is no reply or vote.
 
 The development process was a little bit tricky for us, and, furthermore, it was the first time we used Meteor to develop web apps. But, in the end, we proved that nothing is impossible, and if you truly want, you can learn new things anytime.
 
