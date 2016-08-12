@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Summer Internship @Haufe
-subtitle: The experience that changed my way of thinking
-category: conference
-tags: [devops, docker, automation]
+subtitle: An experience that greatly helped me to improve myself
+category: general
+tags: [culture, docker]
 author: bogdanbledea
 author_email: bogdan.b19c@gmail.com
 header-img: "images/summerInternship2016.jpg"
