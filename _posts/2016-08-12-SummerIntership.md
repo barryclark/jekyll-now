@@ -9,7 +9,7 @@ author_email: bogdan.b19c@gmail.com
 header-img: "images/summerInternship2016.jpg"
 ---
 
-What started as a little get together in one of our locations last year, grew a little bit bigger - last week 150 Haufe colleagues met in Freiburg for our internal DevOps Day 2016. Taking the opportunity of so many tech people in town, we also set up a public [DevOps meetup](http://www.meetup.com/de-DE/DevOps-Freiburg/events/231185858/) in the evening.
+Today is the last day spent @Haufe. And I must admit that the summer internship was simply awesome. My colleagues were so friendly, helped me when I was in trouble.
 
 {:.center}
 ![DevOps Day 2016]({{ site.url }}/images/devopsday2016/audience.jpg){:style="margin:auto"}
