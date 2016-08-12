@@ -11,5 +11,7 @@ header-img: "images/summerInternship2016.jpg"
 
 Today is the last day spent @Haufe. And I must admit, this summer internship was simply awesome. My work colleagues were so friendly, they helped me when I was in trouble. And I didn't thought it's so fun to go to work.
 
+Below, is a screenshot of the application we built during this intership at Haufe. It's a feedback box app, built with the Meteor framework.
+
 {:.center}
 ![Screenshot of the app](/images/screenshot1.jpg){:style="margin:auto"}
