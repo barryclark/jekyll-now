@@ -16,6 +16,6 @@ Below, is a screenshot of the application we built during this intership at Hauf
 {:.center}
 ![Screenshot of the app](/images/screenshot1.jpg){:style="margin:auto"}
 
-The development process whas a little bit tricky for us, because it was the first time we used Meteor to develop web apps. But, in the end, we proved that nothing is impossible, and if you truly want, you can learn new things anytime.
+The development process was a little bit tricky for us, because it was the first time we used Meteor to develop web apps. But, in the end, we proved that nothing is impossible, and if you truly want, you can learn new things anytime.
 
 As you can see, this feedback box app has an user login&registration form, but, we restricted the account creation to the company email domain, haufe-lexware.com. After the user logs in, he can post and reply to the other feedbacks.
