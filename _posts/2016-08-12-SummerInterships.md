@@ -15,3 +15,5 @@ Below, is a screenshot of the application we built during this intership at Hauf
 
 {:.center}
 ![Screenshot of the app](/images/screenshot1.jpg){:style="margin:auto"}
+
+The developing process whas a little bit tricky for us, because it was the first time we used Meteor to develop web apps.
