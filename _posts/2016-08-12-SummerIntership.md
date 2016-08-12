@@ -4,8 +4,8 @@ title: DevOps Day and Meetup @Haufe on June 1st, 2016
 subtitle: A full day of talks on continuous delivery, test automation, Docker, cloud and much more
 category: conference
 tags: [devops, docker, automation]
-author: marco_seifried
-author_email: marco.seifried@haufe-lexware.com
+author: bogdanbledea
+author_email: bogdan.b19c@gmail.com
 header-img: "images/bg-post.old.jpg"
 ---
 
