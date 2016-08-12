@@ -1,6 +1,6 @@
 ---
 layout: post
-title: DevOps Day and Meetup @Haufe on June 1st, 2016
+title: Summer practice @Haufe
 subtitle: A full day of talks on continuous delivery, test automation, Docker, cloud and much more
 category: conference
 tags: [devops, docker, automation]
