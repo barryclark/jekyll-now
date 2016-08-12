@@ -18,6 +18,8 @@ Below, is a screenshot of the application we built during this intership, built 
 {:.center}
 ![Screenshot of the app](/images/screenshot1.jpg){:style="margin:auto"}
 
+This application takes the feedback from the user, post it on the index page, and sort the feedbacks by the number of votes. Users can  delete only their feedbacks, and the feedback cand be modified only if there is no reply or vote.
+
 The development process was a little bit tricky for us, and, furthermore, it was the first time we used Meteor to develop web apps. But, in the end, we proved that nothing is impossible, and if you truly want, you can learn new things anytime.
 
 As you can see, this feedback box app has an user login&registration form, but, we restricted the account creation to the company email domain, haufe-lexware.com. After the user logs in, he can post and reply to the other feedbacks.
