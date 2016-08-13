@@ -8,7 +8,7 @@ tags: [games, review, three cheers for master, atlas games]
 author: Rob Kalajian
 ---
 
-<img src="/images/threecheers/3cheers.jpg" alt="Three Cheers for Master box" class="float-left" />
+<img src="/images/threecheers/3cheers.jpg" alt="Three Cheers for Master box" class="float-right" />
 
 Atlas Games had a mountain of [Three Cheers for Master](http://atlas-games.com/product_tables/AG1360.php) boxes at their PAX East booth this year. It was pretty hard not to notice as you walked by. Everytime I walked by the booth there were demos of the game being run with people crowded around the table. I never really got near the table, but I was able to bring a copy home to play.
 
