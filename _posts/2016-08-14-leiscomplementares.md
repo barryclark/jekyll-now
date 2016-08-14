@@ -1,3 +1,8 @@
+---
+layout: post
+title: You're up and running!
+---
+
 http://cotel.casacivil.ro.gov.br/COTEL/Livros/Files/LC1.doc
 http://cotel.casacivil.ro.gov.br/COTEL/Livros/Files/LC2.doc
 http://cotel.casacivil.ro.gov.br/COTEL/Livros/Files/LC3.doc
