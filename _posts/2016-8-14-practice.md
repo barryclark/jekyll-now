@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Let's do it!
+published: true
 ---
 They must find it difficult,
 Those who have taken authority as the truth,
