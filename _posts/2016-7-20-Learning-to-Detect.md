@@ -4,7 +4,7 @@ title: How we're using Machine Learning to change the current state of disease d
 ---
 
 Diagnosing medical conditions such as sickle cell disease can become much, much faster. 
-![test text](https://raw.githubusercontent.com/rohan-varma/rohan-blog/master/images/propic.jpg "Logo Title Text 1")
+![A sickle cell next to a healthy cell.](https://raw.githubusercontent.com/rohan-varma/rohan-blog/master/images/sickle2.png "A sickled cell next to a healthy cell.")
 
 
 During my past year at UCLA, I had the opportunity to work as an undergraduate researcher in a biotechnology related lab. The project I was working on with a couple of other undergrads under a postdoc aimed to streamline the process of identifying sickle cell disease **through** image processing and machine learning. My work involved leveraging machine learning algorithms and creating heuristic methods to operate on high-dimensional data and classify different cells quickly.
@@ -15,6 +15,8 @@ Sickle cell disease is a disease in which the patient’s red blood cells take o
 ### The Current State of Sickle Cell Disease Diagnosis
 In the United States, newborn children are required to undergo tests that detect this disease, so it is diagnosed and treated rather quickly. Typically, the test data – a blood sample the size of a drop, for example = is sent out to an external lab and in a day or two, results of the diagnosis are returned. However, only a small portion of sickle cell disease cases occur in the United States and the rest of the developed world – the vast majority of cases occur in the region of Sub-Saharan Africa, where access to clean water is extremely difficult, let alone having the opportunity for a new born child to be screened for this deadly disease. What we have then is a grim situation: a region where sickle cell disease is much more commonly inherited, and medical technology that is insufficient to rapidly diagnose this disease, causing many children to unnecessarily decease. 
 
+![A map of regions with sickle cell disease.](https://raw.githubusercontent.com/rohan-varma/rohan-blog/master/images/map1.png "A map of regions with sickle cell disease.")
+
 ### Why we need to improve it 
 As discussed, these unnecessary deaths – on average, about 200,000 per year – are due to lacking technology in the diagnosis of sickle cell disease. A current method in detecting this deadly disease is blood cell analysis. This is called cell morphology, the medical practice of analyzing a patient’s blood cells in order to diagnose a condition. For over 150 years, this has been a primary approach to medicine in general – malaria, chronic disease, and pathogens along with sickle cell disease are just some of the conditions detected through this method. 
 
@@ -22,6 +24,8 @@ However, despite the importance of blood cell analysis in the medical industry, 
 
 ### Automated Detection Via Blood Image Analysis
 Our solution relies on a portable cell phone with a microscope lens attachment as well as associated software that allows the detection and labelling of sickle cells. Together, the hardware and software components work together to provide a rapid and efficient diagnosis without the need of a pathologist.
+
+![Phone and sickle cell slide.](https://raw.githubusercontent.com/rohan-varma/rohan-blog/master/images/phone3.png "Phone and sickle cell slide.")
 
 
 ### First step: Preprocessing the Data and Feature Selection 
@@ -32,7 +36,8 @@ Next, we wanted some way to describe each cell present in an image. Given an ima
 
 Locating a cell in an image of several hundred cells wasn't exactly trivial. We decided to use a hough transform, a transformation that is designed to detect lines in images. This transformation allowed us to detect rough boundaries of circular regions in the image. We ended up with 665 detected cells in our smartphone-captured image. Next, we created a linear mapping algorithm to map cell regions in this image to our gold standard image, the microscope-captured image. This allowed us to extract 665 regions that contain a single cell in our microscope-captured image. 
 
-[Insert link to image here]
+![Successfully identified cells.](https://raw.githubusercontent.com/rohan-varma/rohan-blog/master/images/sickletrialexample.jpg "Successfully identified cells.")
+
 Now, we sought to quantify this data - represent it in a way so that we can easily do some calculations and computations on it. This brings in the idea of a _feature_ - a single property of the object under analysis. For houses, this could be the number of bedrooms in the house or the lot size of the house. For images, features can include the RGB values for each pixel, the intensity and shade for each pixel, or the saturation of a pixel. They tend to be numerical or boolean qualities, but really can be anything. 
 
 Several features allow us to accurately represent an object - I could represent a house with the following vector of features - ```{numBedrooms, numBathrooms, lotSize, isNearSchool] = {4, 3, 3000, 1}```. Similarly, each detected cell can be represented by a vector of features we can extract from it - we used Matlab's regionprops (http://www.mathworks.com/help/images/ref/regionprops.html) to extract several features of the cell, such as its area, eccentricity, Euler number, mean intensity, and weighted centroid. We ended up with a total of 28 features for each of the 665 cells. 
@@ -63,15 +68,9 @@ In reality, the actual clusters would look a little more complicated - each clus
 
 ### Bootstrap Aggregation
 A machine learning classifier.
-\mu = 5
 
 ### A Small Tweak To Improve Accuracy
 Random forests Ensemble
 
 
-This post will outline the technical details, benefits, and challenges of using machine learning - specifically, neural networks - to detect sickle cells. We'll cover the preprocessing step of applying various filters to extract features of the image, using clustering to detect images of cells clumped together, and then detail how a classifier can be built through the use of these features. Stay tuned!
-
-- Kmeans algorithm to cluster the data 
-- Locality sensitive hashing of data
-- neural network to classify data 
-- 
+And that's it! We presented our work at several research days and seminar, including UCLA's annual undegraduate research day and the 2016 UC Bioengineering Symposium. If you have any questions, feel free to contact me!
