@@ -10,12 +10,30 @@ As the tools in experiments neuroscience are rapidly developing, this is an impo
 *novel analysis tools for understanding neural recordings
 *recent advances in theoretical neuroscience
 *popular theories in neuroscience
-
+/Users/dhocker/websites/catniplab.github.io/_jclubposts/post1_rich_natneuro_2016.md
 Journal club meetings take place on Tuesdays at 1pm in the Life Sciences Building, room LSB 575
+
+## Join the club!
+
+[david.hocker@stonybrook.edu](mailto:david.hocker@stonybrook.edu)
 
 ## Upcoming Paper
 
 
 ## Past Papers
+<div class="posts">
+  {% for post in site.jclubposts %}
+    <article class="post">
+
+      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+
+      <div class="entry">
+        {{ post.excerpt }}
+      </div>
+
+    </article>
+  {% endfor %}
+</div>
+
 
 
