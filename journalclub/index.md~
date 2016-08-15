@@ -15,16 +15,13 @@ Journal club meetings take place on Tuesdays at 1pm in the Life Sciences Buildin
 
 ## Join the club [here](mailto:david.hocker@stonybrook.edu)!
 
-# Upcoming Paper
-
-
-# Past Papers
+# Papers
 
 <div class="posts">
   {% for post in site.posts %}
 	{% if post.categories contains 'journalclub' %}
     <article class="post">
-	<h3> {{post.date  | date: '%B %d, %Y'}} </h3>
+	<h3> {{post.olddate}} </h3>
       <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
 
 
