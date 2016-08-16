@@ -798,8 +798,11 @@ Start-Process -FilePath $str
 ## 0x08 小结
 ---
 本文详细介绍分析了PNG文件的格式，编写程序实现以下功能：
+
 - 自动解析PNG文件格式，辅助查找其中的隐藏内容
+
 - 添加Payload
+
 - 下载PNG图片解析并执行payload
 
 
