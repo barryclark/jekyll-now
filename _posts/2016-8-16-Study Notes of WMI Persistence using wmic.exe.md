@@ -7,7 +7,7 @@ title: Study Notes of WMI Persistence using wmic.exe
 ---
 最近学习了Matt Graeber@mattifestation分享的方法《WMI Persistence using wmic.exe》，让我对WMI的攻击技巧有了新的认识，本文将结合之前的研究心得，分享利用wmic的一些技巧。
 
-**参考资料： **
+** 参考资料： **
 
 http://www.exploit-monday.com/2016/08/wmi-persistence-using-wmic.html
 
