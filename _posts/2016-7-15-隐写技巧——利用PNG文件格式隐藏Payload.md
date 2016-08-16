@@ -42,6 +42,7 @@ https://github.com/3gstudent/PNG-Steganography
 
 
 **数据块类型：**
+
 **1. 关键数据块(critical chunk)**
 (1) 文件头数据块IHDR(header chunk)
 - 包含PNG文件的基本信息
@@ -63,18 +64,31 @@ https://github.com/3gstudent/PNG-Steganography
 - **必须在PNG文件最尾部**
 
 **2. 辅助数据块(ancillary chunk)**
+
 用于辅助指示PNG图像中的层、文字等信息
+
 **可删除，不影响图片浏览，但图像将失去原来的可编辑性**
-(1) 背景颜色数据块bKGD(background color)。
+
+(1) 背景颜色数据块bKGD(background color)
+
 (2) 基色和白色度数据块cHRM(primary chromaticities and white point)
+
 (3) 图像γ数据块gAMA(image gamma)
+
 (4) 图像直方图数据块hIST(image histogram)
+
 (5) 物理像素尺寸数据块pHYs(physical pixel dimensions)
+
 (6) 样本有效位数据块sBIT(significant bits)
+
 (7) 文本信息数据块tEXt(textual data)
+
 (8) 图像最后修改时间数据块tIME (image last-modification time)
+
 (9) 图像透明数据块tRNS (transparency)
+
 (10) 压缩文本数据块zTXt (compressed textual data)
+
 
 
 
@@ -83,14 +97,17 @@ https://github.com/3gstudent/PNG-Steganography
 
 工具：`Hex Editor`
 **优点：**
+
 可对16进制字符串进行标记，设置颜色，方便格式分析
 
 **测试文件：**
+
 如图
 
 ![Alt text](https://raw.githubusercontent.com/3gstudent/3gstudent.github.io/master/_posts/2016-7-15/test.png)
 
 **源下载地址：**
+
 http://www.easyicon.net/language.en/1172671-png_icon.html
 
 标记好的文件格式如图
@@ -101,7 +118,9 @@ http://www.easyicon.net/language.en/1172671-png_icon.html
 
 
 ###(1) PNG文件署名域
+
 固定格式：
+
 `89 50 4e 47 0d 0a 1a 0a `
 ###(2) IHDR
 
