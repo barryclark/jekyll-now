@@ -78,20 +78,20 @@ https://github.com/3gstudent/PNG-Steganography
 ##0x03 实例格式分析
 ---
 
-工具：`Hex Editor Neo`
+工具：`Hex Editor`
 **优点：**
 可对16进制字符串进行标记，设置颜色，方便格式分析
 
 **测试文件：**
 如图
-![Alt text](./2016-7-15/test.png)
+![Alt text](https://raw.githubusercontent.com/3gstudent/3gstudent.github.io/master/_posts/test.png)
 
 **源下载地址：**
 http://www.easyicon.net/language.en/1172671-png_icon.html
 
 标记好的文件格式如图
-![Alt text](./2016-7-15/2-1.PNG)
-![Alt text](./2016-7-15/2-2.PNG)
+![Alt text](https://raw.githubusercontent.com/3gstudent/3gstudent.github.io/master/_posts/2016-7-15/2-1.PNG)
+![Alt text](https://raw.githubusercontent.com/3gstudent/3gstudent.github.io/master/_posts/2016-7-15/2-2.PNG)
 
 
 ###(1) PNG文件署名域
