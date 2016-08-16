@@ -143,6 +143,7 @@ powershell代码如下：
 
 
 **注：**
+
 以上参数说明参考自https://msdn.microsoft.com/en-us/library/aa393664(VS.85).aspx
 
 特殊字符`^&H80000002`含义如下：
@@ -287,7 +288,9 @@ Matt Nelson @enigma0x3
 
 在进程eventvwr.exe启动的时候，首先查找注册表位置`HKCU\Software\Classes\mscfile\shell\open\command`,如果该处为空，接着查找注册表位置`HKCR\mscfile\shell\open\command`(此处默认值为`%SystemRoot%\system32\mmc.exe "%1" %*`),以高权限启动mmc.exe,最后打开eventvwr.msc。
 
-如图3-3
+如图
+
+![Alt text](https://raw.githubusercontent.com/3gstudent/3gstudent.github.io/master/_posts/2016-8-16/3-3.png)
 
 
 接下来，如果在注册表`HKCU\Software\Classes\mscfile\shell\open\command`中添加payload，就可以在启动mmc.exe之前执行预设的payload
