@@ -35,7 +35,7 @@ poweshell代码如下：
 
 ![Alt text](https://raw.githubusercontent.com/3gstudent/3gstudent.github.io/master/_posts/2016-8-16/2-2.PNG)
 
-**注： **
+**注：**
 
 回显内容的格式没有对齐，需要添加参数指定输出格式
 
@@ -118,7 +118,7 @@ powershell代码如下：
 
 ![Alt text](https://raw.githubusercontent.com/3gstudent/3gstudent.github.io/master/_posts/2016-8-16/2-9.png)
 
-**注： **
+**注：**
 
 需要注意权限问题，此处需要管理员权限
 
@@ -130,7 +130,7 @@ powershell代码如下：
 
 ![Alt text](https://raw.githubusercontent.com/3gstudent/3gstudent.github.io/master/_posts/2016-8-16/3-1.png)
 
-**注： **
+**注：**
 如果一个命名值不存在，则新建；如果存在，则为修改
 
 删除子项：
@@ -142,7 +142,7 @@ powershell代码如下：
 `wmic /NAMESPACE:"\\root\DEFAULT" path stdregprov call DeleteValue ^&H80000002,"SOFTWARE\Microsoft\Windows\CurrentVersion\RenameFiles\test","Name"`
 
 
-**注： **
+**注：**
 以上参数说明参考自https://msdn.microsoft.com/en-us/library/aa393664(VS.85).aspx
 
 特殊字符`^&H80000002`含义如下：
