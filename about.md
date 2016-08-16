@@ -9,10 +9,6 @@ Security Research
 
 ### Contact me
 
-**drops:**
+**drops:**    三好学生
 
-三好学生
-
-**Twitter:**
-
-3gstudent@3gstudent
+**Twitter:**  3gstudent@3gstudent
