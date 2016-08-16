@@ -3,7 +3,7 @@ layout: post
 title: "Review - Tally Ho!"
 description: "A new edition of Tally Ho! has been released in Kosmos' 2-player line. How does it hold up?"
 category: review
-featured: tallyho.png
+featured: tallyho.jpg
 tags: [games, review, tally ho, thames, kosmos]
 author: Rob Kalajian
 ---
