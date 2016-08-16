@@ -587,7 +587,7 @@ CRC：				fa c4 08 76
 
 ### 1、工具实现
 
-使用`HexEditor`插入数据，如图
+使用`Hex Editor`插入数据，如图
 
 ![Alt text](https://raw.githubusercontent.com/3gstudent/3gstudent.github.io/master/_posts/2016-7-15/2-11.PNG)
 
