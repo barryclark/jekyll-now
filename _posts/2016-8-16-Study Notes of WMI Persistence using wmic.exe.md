@@ -19,7 +19,7 @@ http://www.exploit-monday.com/2016/08/wmi-persistence-using-wmic.html
 
 ## 0x02 搜集信息
 ---
-### 1、获取操作系统相关信息
+###  1、获取操作系统相关信息
 
 poweshell代码如下：
 
@@ -89,7 +89,7 @@ powershell代码如下：
 
 ![Alt text](https://raw.githubusercontent.com/3gstudent/3gstudent.github.io/master/_posts/2016-8-16/2-5.png)
 
-**注： **
+**注：**
 
 `Method execution successful`不代表一定能够获得正确的返回结果，此处需要注意参数的正确填写,如图2-6，故意漏掉",仍然提示`Method execution successful`，但返回结果错误
 
@@ -208,63 +208,63 @@ Set-WmiInstance -Class __FilterToConsumerBinding -Namespace "root\subscription" 
 
 ### 4、List the __EventFilter and __EventConsumer instances
 
-**Filters： **
+**Filters：**
 
 `wmic /NAMESPACE:"\\root\subscription" PATH __EventFilter GET __RELPATH /FORMAT:list`
 
-**Event Consumers： **
+**Event Consumers：**
 
 `wmic /NAMESPACE:"\\root\subscription" PATH CommandLineEventConsumer GET __RELPATH /FORMAT:list`
 
-**Event Bindings： **
+**Event Bindings：**
 
 `wmic /NAMESPACE:"\\root\subscription" PATH __FilterToConsumerBinding GET __RELPATH /FORMAT:list`
 
 通过powershell下查看的代码：
 
-**Filters： **
+**Filters：**
 
 `Get-WMIObject -Namespace root\Subscription -Class __EventFilter`
  
-**Event Consumers： **
+**Event Consumers：**
 
 `Get-WMIObject -Namespace root\Subscription -Class __EventConsumer`
  
-**Event Bindings： **
+**Event Bindings：**
 
 `Get-WMIObject -Namespace root\Subscription -Class __FilterToConsumerBinding`
 
 
 
 ### 5、Remove all instances
-**Filters： **
+**Filters：**
 
 `wmic /NAMESPACE:"\\root\subscription" PATH __EventFilter WHERE Name="BotFilter82" DELETE`
 
-**Event Consumers： **
+**Event Consumers：**
 
 `wmic /NAMESPACE:"\\root\subscription" PATH CommandLineEventConsumer WHERE Name="BotConsumer23" DELETE`
 
 
-**Event Bindings： **
+**Event Bindings：**
 
 `wmic /NAMESPACE:"\\root\subscription" PATH __FilterToConsumerBinding WHERE Filter="__EventFilter.Name='BotFilter82'" DELETE`
 
-**注： **
+**注：**
 
 wmic中Binding的Filter判断参数"BotFilter82"中"要变成'
 
 通过powershell清楚的实现代码：
 
-**Filters： **
+**Filters：**
 
 `Get-WMIObject -Namespace root\Subscription -Class __EventFilter -Filter "Name='BotFilter82'" | Remove-WmiObject -Verbose`
  
-**Event Consumers： **
+**Event Consumers：**
 
 `Get-WMIObject -Namespace root\Subscription -Class CommandLineEventConsumer -Filter "Name='BotConsumer23'" | Remove-WmiObject -Verbose`
  
-**Event Bindings： **
+**Event Bindings：**
 
 `Get-WMIObject -Namespace root\Subscription -Class __FilterToConsumerBinding -Filter "__Path LIKE '%BotFilter82%'" | Remove-WmiObject -Verbose`
 
@@ -275,11 +275,11 @@ wmic的部分操作需要管理员权限，在这里补充一个刚学到的UACb
 
 **fileless-uac-bypass-using-eventvwr-exe-and-registry-hijacking**
 
-**学习链接： **
+**学习链接：**
 
 https://enigma0x3.net/2016/08/15/fileless-uac-bypass-using-eventvwr-exe-and-registry-hijacking/
 
-**作者： **
+**作者：**
 
 Matt Nelson @enigma0x3
 
@@ -292,7 +292,7 @@ Matt Nelson @enigma0x3
 
 接下来，如果在注册表`HKCU\Software\Classes\mscfile\shell\open\command`中添加payload，就可以在启动mmc.exe之前执行预设的payload
 
-**最重要的一点： **
+**最重要的一点：**
 
 修改注册表`HKCU\Software\Classes\mscfile\shell\open\command`的键值只需要普通用户权限即可
 
@@ -305,7 +305,7 @@ https://github.com/enigma0x3/Misc-PowerShell-Stuff/blob/master/Invoke-EventVwrBy
 
 如果poc成功执行，会在C:\UACBypassTest下写入"Is Elevated: True"
 
-**注： **
+**注：**
 
 默认操作c:\目录下的文件会被uac拦截
 
