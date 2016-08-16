@@ -20,7 +20,7 @@ Let's start with those.
 
 My main complaints about the game were:
 
-*1)* The rulebook isn't very clear on a few issues. Mainly what to do with you roll a Hawk and a Crow. There were a few other bits the rules are clear on, but this was a big one.
+*1)* The rulebook isn't very clear on a few issues. Mainly what to do with you roll a Hawk and a Crow. There were a few other bits the rules aren't clear on, but this was a big one.
 
 *2)* There's little asterix tokens that come with the game that aren't mentioned *at all* in the rules.
 
