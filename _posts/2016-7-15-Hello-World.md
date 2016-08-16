@@ -1,6 +1,6 @@
 ---
 layout: post
-title: You're up and running!
+title: 隐写技巧——利用PNG文件格式隐藏Payload
 ---
 
 Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
