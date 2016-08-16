@@ -7,7 +7,8 @@ title: 隐写技巧——利用PNG文件格式隐藏Payload
 ##0x00 前言
 ---
 隐写术(Steganography)由来已久，其中有很多好玩儿的细节，所以打算系统的研究一下，这次先从PNG的文件格式开始。
-![Alt text](./2016-7-15/0.jpg)
+![Alt text](
+https://raw.githubusercontent.com/3gstudent/3gstudent.github.io/master/_posts/2016-7-15/0.jpg)
 
 > 图片来自于http://null-byte.wonderhowto.com/how-to/guide-steganography-part-1-hide-secret-messages-images-0130797/
 
