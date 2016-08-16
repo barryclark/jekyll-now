@@ -48,7 +48,7 @@ Since these data did not have any labels associated with them yet (we sent off t
 
 One way to do this is by using the `kmeans` algorithm. This algorithm takes in a set of data and assigns each data point to a cluster of other similar data points. This is done through computing a `centroid`, or mean vector, for each cluster. Each time a new data point is added to a cluster, its centroid is recomputed. Here's a visualization of the kmeans algorithm: 
 
-```insert k means blob here```
+![K-means visualization.](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/EM-Gaussian-data.svg/2000px-EM-Gaussian-data.svg.png "K-means visualization.")
 
 The hope was that clustering the data would produce three distinct regions: a sickle cell region, a red blood cell region, and a white blood cell region. Sure enough, our cells (represented here as points) clustered into three regions: 
 
