@@ -133,7 +133,7 @@ New Size = Old Size + Payload Size
 
 使用`CFF Explorer`查看dll结构，选择Nt Headers-Optional Header-Data Directories [x],找到Security Directory Size项，如图
 
-![Alt text](./3-4.png)
+![Alt text](https://raw.githubusercontent.com/3gstudent/3gstudent.github.io/master/_posts/2016-8-12/3-4.png)
 
 
 ### 4、修改Certificate Size in Optional Header
@@ -146,7 +146,7 @@ New Size = Old Size + Payload Size
 
 如图
 
-![Alt text](https://raw.githubusercontent.com/3gstudent/3gstudent.github.io/master/_posts/2016-8-123-6.png)
+![Alt text](https://raw.githubusercontent.com/3gstudent/3gstudent.github.io/master/_posts/2016-8-12/3-6.png)
 
 
 ### 5、添加payload
