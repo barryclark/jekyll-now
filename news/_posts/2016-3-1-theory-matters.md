@@ -1,7 +1,7 @@
 ---
 layout: post
 title: #theoryMatters in neuroscience?
-category: other
+category: news
 ---
 
 - *What is the role of theory in neuroscience?*
