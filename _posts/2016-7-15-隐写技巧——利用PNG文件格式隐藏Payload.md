@@ -18,6 +18,7 @@ https://raw.githubusercontent.com/3gstudent/3gstudent.github.io/master/_posts/20
 隐写术可以理解为信息隐藏，在渗透测试中最主要的应用是对Payload的隐藏。本文会对PNG的文件格式进行分析，编写c程序实现自动解析文件格式，并按照其文件格式添加自定义的payload，不仅不会影响图片的正常浏览，同时可将图片上传到网络，使用时将图片下载再以特定格式解密，最终执行payload。
 
 **注：**
+
 所有程序源码已上传github，地址为：
 https://github.com/3gstudent/PNG-Steganography
 
@@ -26,6 +27,7 @@ https://github.com/3gstudent/PNG-Steganography
  
 ### 1、PNG文件署名域
 前8字节
+
 固定格式，16进制为：
 `89 50 4e 47 0d 0a 1a 0a `
 
