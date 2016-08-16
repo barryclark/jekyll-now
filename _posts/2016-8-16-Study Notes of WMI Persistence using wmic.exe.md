@@ -19,7 +19,7 @@ http://www.exploit-monday.com/2016/08/wmi-persistence-using-wmic.html
 
 ## 0x02 搜集信息
 ---
-###  1、获取操作系统相关信息
+### 获取操作系统相关信息
 
 poweshell代码如下：
 
