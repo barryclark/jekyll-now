@@ -16,6 +16,30 @@ Journal club meetings take place on Tuesdays at 1pm in the Life Sciences Buildin
 
 ## Join the club [here](mailto:david.hocker@stonybrook.edu)!
 
+# Schedule
+August 23: David Hocker
+
+August 30: Luca Mazzucato
+
+September 6: Gregory Kirschen
+
+September 13: Luisa Le Donne
+
+September 20: Jonathan Beck
+
+September 27: Giancarlo La Camera
+
+October 4: Yuan Zhao
+
+October 11: Naz
+
+October 18: Sriram Ganeshan
+
+October 25: Jin Wang
+
+November 1: Shaohua Wang
+
+
 # Papers
 
 <div class="posts">
