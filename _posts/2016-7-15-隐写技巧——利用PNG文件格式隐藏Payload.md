@@ -418,7 +418,7 @@ int main(int argc, char* argv[])
 上面提到，去除辅助数据块的内容对PNG图像的浏览没有影响，下面就尝试去除PNG文件的所有辅助数据块
 ### 1、工具实现
 
-如图，使用`HexEditor Neo`去除辅助数据块gAMA、cHRM和bKGD
+如图，使用`HexEditor`去除辅助数据块gAMA、cHRM和bKGD
 
 ![Alt text](https://raw.githubusercontent.com/3gstudent/3gstudent.github.io/master/_posts/2016-7-15/2-8.PNG)
 
@@ -587,7 +587,7 @@ CRC：				fa c4 08 76
 
 ### 1、工具实现
 
-使用HexEditor Neo插入数据，如图
+使用`HexEditor`插入数据，如图
 
 ![Alt text](https://raw.githubusercontent.com/3gstudent/3gstudent.github.io/master/_posts/2016-7-15/2-11.PNG)
 
