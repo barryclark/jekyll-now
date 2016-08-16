@@ -1,0 +1,23 @@
+{% assign post_description = page.excerpt | strip_html | strip_newlines | truncate: 150 | xml_escape %}
+<meta property="og:type" content="blog">
+<meta property="og:title" content="{{ page.title }}">
+<meta property="og:description" content="{{ post_description }}">
+<meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
+{% if page.image %}
+{% assign post_image_first_char = page.image | split: '' | first %}
+{% if post_image_first_char == '/' %}
+<meta property="og:image" content="{{ site.url }}{{ site.baseurl }}{{ page.image }}">
+{% else %}
+<meta property="og:image" content="{{ page.image }}">
+{% endif %}
+{% endif %}
+<meta property="og:site_name" content="{{ site.name }}">
+{% if site.lang %}
+<meta property="og:locale" content="{{ site.lang }}">
+{% endif %}
+{% if site.twitter %}
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@{{ site.twitter }}">
+<meta name="twitter:creator" content="@{{ site.twitter }}">
+{% endif %}
+<meta name="description" content="{{ post_description }}">

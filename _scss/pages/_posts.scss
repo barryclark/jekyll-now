@@ -1,0 +1,240 @@
+.single-wrap {
+  width: 100%;
+  max-width: 740px;
+  margin: $spacing-s auto;
+  font-family: $variant-family;
+  background: white;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  z-index: 1;
+
+  .single-content {
+    padding: 0 $spacing-m $spacing-l;
+  }
+
+  .feat {
+    text-align: center;
+    border-bottom: 1px solid $border-color;
+    margin: 0 auto $spacing-l;
+    a.popup {
+      display: inline-block;
+      position: relative;
+      top: .7em;
+      background: #fff;
+      font-size: 130%;
+      text-align: center;
+      text-decoration: none;
+      padding: 0 $spacing-s;
+      transition: all .2s ease;
+      -webkit-transition: all .2s ease;
+      @media (max-width: 642px) {
+        font-size: 150%;
+      }
+    }
+  }
+
+  .page-date {
+    display: inline-block;
+    position: relative;
+    top: 1.1em;
+    background: white;
+    font-family: $variant-family;
+    font-size: 85%;
+    text-align: center;
+    font-weight: normal;
+    font-style: italic;
+    color: $text-hint;
+    padding: 0 $spacing-s;
+    text-transform: none;
+    letter-spacing: 1px;
+  }
+
+  .share {
+    margin: $spacing-l auto;
+  }
+
+  h1 {
+    font-weight: normal;
+  }
+
+  h1.page-title {
+    line-height: 135%;
+    font-family: $font-family;
+    font-size: 180%;
+    font-weight: bold;;
+    color: $primary-dark;
+    text-align: center;
+    margin: 0 0 $spacing-m;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
+  h2 {
+    padding-bottom: $spacing-xs * 0.5;
+    border-bottom: 2px solid $primary-light;
+  }
+
+  h3 {
+    font-style: normal;
+    font-weight: bold;
+    @media (min-width: 643px) {
+      font-style: normal;
+      border-left: $spacing-xs solid $primary-light;
+      padding-left: $spacing-xs;
+    }
+  }
+
+  h4 {
+    font-weight: bold;
+    text-transform: none;
+  }
+
+  ul,
+  ol {
+    margin: 0 0 0 2em;
+    padding: 0;
+
+    li {
+      color: $text-secondary;
+      margin-bottom: $spacing-xs;
+    }
+  }
+
+  blockquote {
+    font-size: 120%;
+    font-family: $font-family;
+    font-weight: lighter;
+    color: $text-secondary;
+    border-left: 4px solid $accent;
+    padding-left: $spacing-s;
+    margin-top: $spacing-m;
+    margin-bottom: $spacing-m;
+    margin-left: 0;
+    margin-right: 0;
+    line-height: 165%;
+    p {
+      padding-left: 0!important;
+      padding-right: 0!important;
+    }
+  } // end blockquote
+
+  img {
+    width: 100%;
+    height: 100%;
+    background: $accent;
+  }
+
+  img.fixed {
+    width: auto;
+    height: auto;
+    background: none;
+  }
+
+  .page-tags {
+    padding: $spacing-m 0 $spacing-sm;
+
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      display: inline-block;
+    }
+
+    a {
+      padding: $spacing-s $spacing-s;
+      color: $primary;
+      border: 1px solid $primary;
+      border-radius: 2px;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      text-decoration: none;
+
+      &:hover {
+        color: $primary-dark;
+        border: 1px solid $primary-dark;
+      }
+    }
+
+    a.disabled {
+      color: $primary-light;
+      border: 1px solid $primary-light;
+    }
+
+  } // end .post-tags
+
+  .back-to-top {
+    margin: 0 0 $spacing-l;
+
+    a {
+      color: $text-secondary;
+
+      &:hover {
+        color: $text-primary;
+      }
+    }
+
+  } // end .back-to-top
+
+} // end #single-wrap
+
+// Pagination
+
+#prev,
+#next {
+  position: fixed;
+  text-decoration: none;
+  border: 1px solid $border-color;
+  padding: $spacing-xs;
+  line-height: 1;
+  border-radius: 100px;
+  bottom: $spacing-m;
+  color: $text-secondary;
+  @media (max-width: 942px) {
+    position: static;
+    padding: .8em $spacing-s .7em;
+  }
+}
+
+#prev {
+  left: 40px;
+  @media (max-width: 942px) {
+    float: left;
+  }
+}
+
+#next {
+  right: 40px;
+  @media (max-width: 942px) {
+    float: right;
+  }
+}
+
+#prev:active,
+#next:active {
+  border-color: $border-color;
+}
+
+.nav-title {
+  display: none;
+  @media (max-width: 942px) {
+    display: inline;
+  }
+}
+
+.nav-title-prev {
+  margin-left: $spacing-xs;
+  margin-right: $spacing-xs;
+}
+
+.nav-title-next {
+  margin-right: $spacing-xs;
+  margin-left: $spacing-xs;
+}
+
+#prev:hover .nav-title,
+#next:hover .nav-title {
+  display: inline;
+}

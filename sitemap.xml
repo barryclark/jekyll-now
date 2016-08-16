@@ -1,0 +1,40 @@
+---
+layout: null
+title : Sitemaps
+---
+
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+	<url>
+	 	<loc>{{ site.url }}{{ site.baseurl }}/</loc>
+	 	<lastmod>{{ site.time | date:'%Y-%m-%d' }}</lastmod>
+	 	<changefreq>weekly</changefreq>
+	</url>
+
+	{% for post in site.posts %}
+	<url>
+	 	<loc>{{ site.url }}{{ site.baseurl }}{{ post.url }}</loc>
+	 	<lastmod>{% if post.modified %}{{ post.modified }}{% else %}{{ post.date | date:'%Y-%m-%d' }}{% endif %}</lastmod>
+	 	<changefreq>never</changefreq>
+	</url>
+	{% endfor %}
+
+	<url>
+		<loc>{{ site.url }}{{ site.baseurl }}/tags/</loc>
+		<lastmod>{{ site.time | date:'%Y-%m-%d' }}</lastmod>
+		<changefreq>weekly</changefreq>
+	</url>
+
+	{% for tag in site.tags %}
+	{% assign tag_id = tag[0] %}
+	{% if site.data.tags[tag_id] %}
+	<url>
+		<loc>{{ site.url }}{{ site.baseurl }}/tags/{{ tag_id }}/</loc>
+		<lastmod>{{ site.time | date:'%Y-%m-%d' }}</lastmod>
+		<changefreq>weekly</changefreq>
+	</url>
+	{% endif %}
+	{% endfor %}
+
+</urlset>

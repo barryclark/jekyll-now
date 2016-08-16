@@ -1,17 +1,46 @@
 ---
 layout: default
+is_blog: true
 ---
 
-<article class="post">
-  <h1>{{ page.title }}</h1>
-
-  <div class="entry">
-    {{ content }}
-  </div>
-
-  <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
-  </div>
-
-  {% include disqus.html %}
-</article>
+<section class="single-wrap">
+  <article class="single-content" itemscope itemtype="http://schema.org/BlogPosting">
+    <div class="feat">
+      <h5 class="page-date">
+        <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+          {{ page.date | date_to_long_string }}
+        </time>
+      </h5>
+    </div>
+    <h1 class="page-title" itemprop="name headline">{{ page.title }}</h1>
+    <div itemprop="articleBody">
+      {{ content }}
+    </div>
+    {% if page.tags.size > 0 %}
+    <div class="page-tags">
+      <ul>
+        {% for tag in page.tags %}
+        <li>
+          {% if site.data.tags[tag] %}
+          <a href="{{ site.baseurl }}/tags/{{ tag }}">{{ site.data.tags[tag].name }}</a>
+          {% else %}
+          <a href="javascript:void(0);" class="disabled">{{ tag }}</a>
+          {% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+    <h6 class="back-to-top"><a href="#top">Back to Top</a></h6>
+    {% if page.next %}
+      <a rel="next" href="{{ site.baseurl }}{{ page.next.url }}" id="next">
+        <span class="nav-title nav-title-next">newer</span> &rarr;
+      </a>
+    {% endif %}
+    {% if page.previous %}
+      <a rel="prev" href="{{ site.baseurl }}{{ page.previous.url }}" id="prev">
+        &larr; <span class="nav-title nav-title-prev">older</span>
+      </a>
+    {% endif %}
+  </article>
+</section>

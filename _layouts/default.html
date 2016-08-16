@@ -1,51 +1,112 @@
 <!DOCTYPE html>
-<html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="{{ site.lang }}" class="no-js" prefix="og: http://ogp.me/ns#"> <!--<![endif]-->
   <head>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta http-equiv="content-language" content="{{ site.lang }}" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    {% include meta.html %}
+      {% if page.is_blog %}
+        {% include meta_post.html %}
+      {% else %}
+        {% include meta_default.html %}
+      {% endif %}
 
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+      <title>{% if page.title %} {{ page.title }} | {% endif %}{{ site.name }}</title>
+      <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+      {% include link_your_font.html %}
 
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+      <link rel="stylesheet" type="text/css" href="{{ site.baseurl| split: '/' | join:'/' }}/css/main.css" />
+      <link href="{{ site.url }}{{ site.baseurl }}/feed.xml" type="application/rss+xml" rel="alternate" title="RSS2.0">
+      <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico">
+
+      {% if page.is_blog %}
+        {% include link_post.html %}
+      {% else %}
+        {% include link_default.html %}
+      {% endif %}
+
   </head>
 
   <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+    <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
 
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
-          </div>
-
-          <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
-          </nav>
-        </header>
+    <div class="off-canvas">
+      <figure class="avatar">
+        <img src="{{ site.baseurl }}/assets/img/avatar.jpg" alt="Picture" title="That's me, {{ site.author }}.">
+      </figure>
+      <div class="bio">
+          <h1>Hi, I'm {{ site.author }}.</h1>
+          <p>{{ site.author-bio }}</p>
       </div>
+      <nav>
+        <h6>Follow me on</h6>
+        <ul>
+          {% if site.twitter %}
+          <li><a target="_blank" href="http://twitter.com/{{ site.twitter }}">Twitter</a></li>
+          {% endif %}
+          {% if site.github %}
+          <li><a target="_blank" href="https://github.com/{{ site.github }}">Github</a></li>
+          {% endif %}
+          {% if site.dribbble %}
+          <li><a target="_blank" href="{{ site.dribbble }}">Dribbble</a></li>
+          {% endif %}
+          {% if site.instagram %}
+          <li><a target="_blank" href="{{ site.instagram }}">Instagram</a></li>
+          {% endif %}
+          {% if site.googleplus %}
+          <li><a target="_blank" href="https://plus.google.com/{{ site.googleplus }}">Google+</a></li>
+          {% endif %}
+        </ul>
+      </nav>
+      <nav>
+        <h6>Link</h6>
+        <ul>
+          <li><a href="{{ site.baseurl }}/">Home</a></li>
+          <li><a href="{{ site.baseurl }}/tags/">Tags</a></li>
+        </ul>
+      </nav>
     </div>
 
-    <div id="main" role="main" class="container">
-      {{ content }}
-    </div>
+    <div class="site-wrapper">
 
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          {% include svg-icons.html %}
-        </footer>
-      </div>
-    </div>
+      <header>
+        <div class="h-wrap">
+          <h1 class="title"><a href="{{ site.baseurl | split:'/' | join:'/' | append:'/'  }}" title="Back to Homepage">{{ site.name }}</a></h1>
+          <a class="menu-icon" title="Open Bio"><span class="lines"></span></a>
+        </div>
+      </header>
 
-    {% include analytics.html %}
+      <main>
+        {{ content }}
+      </main>
+
+      <footer>
+        <small>Powered by Jekyll - Theme: <a href="https://github.com/ogaclejapan/materi-for-jekyll">materi</a> - &copy; {{ site.author }}</small>
+      </footer>
+
+    </div>
+    {% comment %} site-wrapper {% endcomment %}
+
+    <script src="{{ site.baseurl }}/js/main.js"></script>
+    {% comment %} Google Analytics {% endcomment %}
+    {% if site.ga_tracking_id %}
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', '{{ site.ga_tracking_id }}', 'auto');
+        ga('send', 'pageview');
+      </script>
+    {% endif %}
+
   </body>
 </html>

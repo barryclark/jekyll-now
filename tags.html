@@ -1,0 +1,30 @@
+---
+layout: default
+title: Tags
+---
+
+<div id="home">
+  {% if site.tags.size > 0 %}
+  <div class="label">{{ page.title }}</div>
+  <ul class="posts">
+    {% assign sorted_tags = (site.tags | sort:0) %}
+    {% for tag in sorted_tags %}
+    {% assign tag_id = tag[0] %}
+    {% if site.data.tags[tag_id] %}
+    <li>
+      <a href="{{ site.baseurl }}/tags/{{ tag_id }}/">
+        <div class="p-wrap">
+          <p>
+            {{ site.data.tags[tag_id].name }}
+            <span class="badge">{{ tag[1] | size }}</span>
+          </p>
+        </div>
+      </a>
+    </li>
+    {% endif %}
+    {% endfor %}
+  </ul>
+  {% else %}
+  <p>There are no tags.</p>
+  {% endif %}
+</div>

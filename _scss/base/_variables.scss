@@ -1,0 +1,33 @@
+// Colors
+
+$primary:           #00bcd4; //Cyan 500
+$primary-dark:      #0097a7; //Cyan 700
+$primary-light:     #b2ebf2; //Cyan 100
+$accent:            #eeff41; //Lime A200
+$accent-light:      #f4ff81; //Lime A100
+
+$text-primary:      rgba(black, 0.87); //Black 87%
+$text-secondary:    rgba(black, 0.54); //Black 54%
+$text-hint:         rgba(black, 0.26); //Black 26%
+
+$bg-color:          #f9f9f9;
+$border-color:      rgba(black, 0.12);
+$smoke-color:       #fafafa;
+
+
+// Typography
+
+$font-size-l:       1.25em; // font-size on desktop type screens
+$font-size-m:       $font-size-l * 0.9; // font-size under 942px wide screens
+$font-size-s:       $font-size-l * 0.7; // font-size under 642px wide screens
+
+
+// Spacings
+
+$spacing-xs:        .5em;
+$spacing-s:         $spacing-xs * 2;
+$spacing-sm:        $spacing-s + $spacing-xs;
+$spacing-m:         $spacing-sm + $spacing-xs;
+$spacing-ml:        $spacing-m + $spacing-xs;
+$spacing-l:         $spacing-ml + $spacing-s;
+$spacing-xl:        $spacing-l + $spacing-s;

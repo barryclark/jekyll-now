@@ -1,0 +1,7 @@
+# To generate the tag page will need to be defined here
+
+jekyll:
+  name: Jekyll
+material:
+  name: Material Design
+  

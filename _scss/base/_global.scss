@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  &::after,
+  &::before {
+    box-sizing: border-box;
+  }
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font: $font-size-l $font-family;
+  text-rendering: optimizeLegibility;
+  color: $text-primary;
+  -webkit-font-smoothing: antialiased;
+  background-color: $bg-color;
+  @media (max-width: 942px) {
+    font-size: $font-size-m;
+  }
+  @media (max-width: 642px) {
+    font-size: $font-size-s;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-family;
+  color: $primary;
+}
+
+h1 {
+  font-size: 180%;
+  margin: $spacing-xs 0;
+}
+
+h2 {
+  font-size: 140%;
+  font-style: italic;
+  margin: $spacing-s 0 $spacing-xs;
+}
+
+h3 {
+  font-size: 120%;
+  font-weight: lighter;
+  margin: $spacing-sm 0 $spacing-xs;
+}
+
+h4 {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin: $spacing-l 0 $spacing-xs;
+}
+
+h5 {
+  @extend h4;
+  text-align: center;
+}
+
+h6 {
+  @extend h4;
+  text-align: right;
+}
+
+p {
+  margin: 1.3em 0;
+  line-height: 1.6;
+}
+
+small {
+  font-size: 60%;
+}
+
+ul li { list-style-type: circle; }
+ol li { list-style-type: decimal; }
+
+a {
+  color: $primary;
+  &:hover {
+    color: $primary-dark;
+  }
+}
+
+hr {
+  margin: $spacing-xs 0;
+  border: 1px solid $accent;
+}
+
+table {
+  margin: $spacing-xs 0;
+  padding: 0;
+
+  thead {
+    border-bottom: 1px solid $border-color;
+  }
+
+  tr {
+    margin: 0;
+    padding: 0;
+  }
+
+  tr th {
+    color: $text-secondary;
+    text-align: left;
+    padding: $spacing-xs $spacing-s;
+  }
+
+  tr td {
+    color: $text-secondary;
+    margin: 0;
+    padding: $spacing-xs $spacing-s;
+  }
+
+}
