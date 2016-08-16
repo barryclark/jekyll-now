@@ -4,6 +4,7 @@ title: 隐写技巧——利用PNG文件格式隐藏Payload
 ---
 
 Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+![Alt text](./1.PNG)
 
 ![_config.yml]({{ site.baseurl }}/images/config.png)
 
