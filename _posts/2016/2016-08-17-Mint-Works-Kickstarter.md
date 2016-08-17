@@ -15,10 +15,10 @@ My next pick for the month of August is Mint Works, by Five24 Labs. It's a pocke
 
 A brief overview of the game from the [Kickstarter](https://www.kickstarter.com/projects/five24labs/mint-works-the-pocket-sized-worker-placement-game?ref=user_menu) page:
 
-> &bull; During the game each player will have a limited number of Mint Tokens, which represent their workers.
-> &bull; Players will use these mint tokens to earn more tokens, take first player or buy and build plans.
-> &bull; Plans are how players earn points. Some plans will only give points, others will give extra powers to the owner.
-> &bull; Once a player has at least 7 points, play continues until the end of the the round, at which point the game ends.
+> &bull; During the game each player will have a limited number of Mint Tokens, which represent their workers.\\
+> &bull; Players will use these mint tokens to earn more tokens, take first player or buy and build plans.\\
+> &bull; Plans are how players earn points. Some plans will only give points, others will give extra powers to the owner.\\
+> &bull; Once a player has at least 7 points, play continues until the end of the the round, at which point the game ends.\\
 > &bull; Whoever has the most points provided by plans they have built wins!
 
 The game looks pretty sweet, with a minimal design and pleasing color-palette. A $10 pledge gets you the game, which is also a bonus. Since the game is funded already you're guaranteed that copy, too, as well as all the stretch goals that have already been unlocked.
