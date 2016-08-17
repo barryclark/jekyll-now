@@ -31,7 +31,7 @@ September 27: Giancarlo La Camera
 
 October 4: Yuan Zhao
 
-October 11: Naz
+October 11: Gulce Nazli Dikecligil 
 
 October 18: Sriram Ganeshan
 
