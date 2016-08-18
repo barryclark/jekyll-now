@@ -78,7 +78,8 @@ This process can be generalized to estimate any kind of quantity or feature used
 
 Using the Bootstrap idea, we can enhance such algorithms by training several different decision trees (we trained 1000 such trees) with a different sub-sample of our data. As a result, each tree will be trained on a slightly different set of data and will thus classify cells differently. When we input a new feature vector representing an unclassified cell, these decision trees will "vote" on its label and the most-picked label will be the classification of this new cell. This method reduces variance and the impact of the specific training data we used, and thus yields a more reliable classifier. Here's a visualization of the bagging algorithm: 
 
-```image here```
+![Bagging visualization.]https://raw.githubusercontent.com/rohan-varma/rohan-blog/master/images/bagging.png
+ "Bagging visualization.")
 
 Using Matlab's TreeBagger (http://www.mathworks.com/help/stats/treebagger.html), we trained a bootstrap aggregating classifier to operate on our dataset of cells. Using a 90/10 training to test data ratio, we managed to achieve an **82.3%** accuracy in classifying sickle cells. 
 
@@ -86,6 +87,14 @@ Using Matlab's TreeBagger (http://www.mathworks.com/help/stats/treebagger.html),
 
 After having some success with our Bootstrap Aggregation techniques, we did some additional research to see whether there were any simple tweaks we could make to our learning algorithm in order to improve our accuracy. Looking at decision trees further, we realized that even though we are creating many decision trees that train on different sub-samples, these trees still ended up with **high correlation in their predictions**. Why was this? 
 
-The answer lies in the details of the implementation of decision trees: they
+The answer lies in the details of the implementation of decision trees, and involves diving into the nitty-gritty of CS theory. It turns out that the problem of making a decision tree "learn" is **NP complete**, meaning, in simple terms, that there's no efficient solution to the problem (but a potential solution can be quickly verified). Instead of using the inefficient solution, a **heuristic**, such as the **greedy algorithm** is used. A heuristic is essentially a problem solving technique that is used to get an efficient but approximate solution when the exact solution either does not exist or is highly inefficient. Decision trees use a **greedy algorithm** that minimizes error in each stage, hoping that this will also minimize the overall error. 
+
+With that background out of the way, we can now proceed to improve our bootstrap aggregation method. The decision tree's greedy algorithm works by iterating over all the features and feature values we input to it to find a local error minimization. As each of the many trees we trained had access to all of the features from our dataset, the classification models outputted turned out to be highly correlated, even though they came from different subsamples of our original sample. A fix to this issue was then clear: we had to apply the same bootstrapping techniques to our number of features as we did to our original dataset. 
+
+We tweaked our decision trees so that each tree only knows about a random subset of features (say, 10 of our 18 features) from our original list of features. Now, since each of our 1000 decision trees were training on a different set of features entirely, they were weakly correlated (as opposed to strongly correlated) classifiers. With this small tweak, and some adjustment of our number of random features we'd allow each decision tree to know about (we ended up using 12), we achieved an accuracy of **86.8%**!
+
+### Conclusions and Future Work
+
+Our final results are encouraging of further work into this field, but they aren't optimal - use in the medical field definitely requires diagnosis accuracy of over 99.9%, and an essential gaurantee of no type II errors, or false negatives (a case where a sickle cell diseased individual is told they don't have the disease). Future work involves additional adjustments to our preprocessing pipelines and machine learning algorithms. One exciting thing we're looking into is using Artifical Neural Networks to aid in our detection, a method that has previously been [researched in cancer detection](http://www.ncbi.nlm.nih.gov/pubmed/1748845).
 
 And that's it! We presented our work at several research days and seminar, including UCLA's annual undegraduate research day and the 2016 UC Bioengineering Symposium. If you have any questions, feel free to contact me!
