@@ -809,6 +809,6 @@ Start-Process -FilePath $str
 
 ---
 
-[LEAVE A REPLY](https://github.com/3gstudent/3gstudent.github.io/issues/new)
+[LEAVE A REPLY](https://github.com/3gstudent/feedback/issues/new)
 
 
