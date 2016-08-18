@@ -292,4 +292,6 @@ http://reboot.pro/files/file/85-digitalsignaturetweaker/
 ---
 本文介绍了如何利用工具实现在保证数字签名有效的前提下，向PE文件中隐藏Payload。在掌握了修改方法后，编写程序实现自动修改不会很难。对于带有数字签名的PE文件，建议不要盲目相信。
 
+
 ---
+[LEAVE A REPLY](https://github.com/3gstudent/3gstudent.github.io/issues/new)
