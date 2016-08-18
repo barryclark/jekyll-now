@@ -34,6 +34,7 @@ Next, we wanted some way to describe each cell present in an image. Given an ima
 
        1. Locate each cell
        2. Run an algorithm on this region to extract several key features to describe this cell. 
+       
 Locating a cell in an image of several hundred cells wasn't exactly trivial. We decided to use a **hough transform**, a transformation that is designed to detect lines in images. This transformation allowed us to detect rough boundaries of circular regions in the image. We ended up with 665 detected cells in our smartphone-captured image. 
 
 ![Successfully identified cells.](https://raw.githubusercontent.com/rohan-varma/rohan-blog/master/images/sickletrialexample.jpg "Successfully identified cells.")
@@ -74,7 +75,7 @@ Concretely, we could use the Bootstrap method to predict the average pixel inten
        1. Choosing a random sub-sample of the set. 
        2. Computing the mean of this sub-sample. 
        3. With replacement, repeat the two above steps until many (we used 100) means are computed. 
-       4. Take the average of these means as an estiamte for the population's mean. 
+       4. Take the average of these means as an estimate for the population's mean. 
        
 This process can be generalized to estimate any kind of quantity or feature used in machine learning. Bagging, or Bootstrap Aggregation, is the generalization of this bootstrapping concept to machine learning algorithms that are sensitive to the data they are trained on, meaning that even a slight variation in training data can cause such an algorithm to classify future input differently. An example of such algorithms are decision trees, and they are known as "high-variance classifiers". 
 
