@@ -66,10 +66,26 @@ In reality, the actual clusters would look a little more complicated - each clus
 
 
 ### Bootstrap Aggregation
-A machine learning classifier.
+Finally, we sought to use the Bootstrap Aggregation (also known as Bagging) machine learning technique in order to build a reliable classifier to accurately predict labels of new cells. This required the use of the **Bootstrap Method**, a statistical method that produces an estimate of a statistic (for example, the mean of a population) using parameters (for example, the mean of a sample from the population) from various samples. 
+
+Concretely, we could use the Bootstrap method to predict the average pixel intensity for red, white, and sickle cells, given the intensities of our training data set. For any set of cells, this would involve: 
+1) Choosing a random sub-sample of the set. 
+2) Computing the mean of this sub-sample. 
+3) With replacement, repeat the two above steps until many (we used 1000) means are computed. 
+4) Take the average of these means as an estiamte for the population's mean. 
+
+This process can be generalized to estimate any kind of quantity or feature used in machine learning. Bagging, or Bootstrap Aggregation, is the generalization of this bootstrapping concept to machine learning algorithms that are sensitive to the data they are trained on, meaning that even a slight variation in training data can cause such an algorithm to classify future input differently. An example of such algorithms are decision trees, and they are known as "high-variance classifiers". 
+
+Using the Bootstrap idea, we can enhance such algorithms by training several different decision trees (we trained 1000 such trees) with a different sub-sample of our data. As a result, each tree will be trained on a slightly different set of data and will thus classify cells differently. When we input a new feature vector representing an unclassified cell, these decision trees will "vote" on its label and the most-picked label will be the classification of this new cell. This method reduces variance and the impact of the specific training data we used, and thus yields a more reliable classifier. Here's a visualization of the bagging algorithm: 
+
+```image here```
+
+Using Matlab's TreeBagger (http://www.mathworks.com/help/stats/treebagger.html), we trained a bootstrap aggregating classifier to operate on our dataset of cells. Using a 90/10 training to test data ratio, we managed to achieve an **82.3%** accuracy in classifying sickle cells. 
 
 ### A Small Tweak To Improve Accuracy
-Random forests Ensemble
 
+After having some success with our Bootstrap Aggregation techniques, we did some additional research to see whether there were any simple tweaks we could make to our learning algorithm in order to improve our accuracy. Looking at decision trees further, we realized that even though we are creating many decision trees that train on different sub-samples, these trees still ended up with **high correlation in their predictions**. Why was this? 
+
+The answer lies in the details of the implementation of decision trees: they
 
 And that's it! We presented our work at several research days and seminar, including UCLA's annual undegraduate research day and the 2016 UC Bioengineering Symposium. If you have any questions, feel free to contact me!
