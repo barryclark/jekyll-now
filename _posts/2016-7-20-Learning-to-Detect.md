@@ -13,7 +13,7 @@ During my past year at UCLA, I had the opportunity to work as an undergraduate r
 Sickle cell disease is a disease in which the patient’s red blood cells take on a slim and pointed shape as opposed to a wholesome, cylindrical red blood cell. This is an inherited red blood cell disorder, and those with the disease have an abnormal hemoglobin, hemoglobin S, in their red blood cells1. This in turn results in cells that are not flexible and tend to stick around to vessel walls, which results in reduced oxygen flow to nearby tissues. This causes chronic pain, as well as sudden bursts of extreme pain that requires hospitalization. This disease currently has no complete cure; however, the symptoms of this disease can be managed and a normal life can be led through the use of medication. A caveat, however, is that this disease must be quickly diagnosed, and treatment must begin quickly if the patient is to survive and lead a healthy life.
 
 ### The Current State of Sickle Cell Disease Diagnosis
-In the United States, newborn children are required to undergo tests that detect this disease, so it is diagnosed and treated rather quickly. Typically, the test data – a blood sample the size of a drop, for example = is sent out to an external lab and in a day or two, results of the diagnosis are returned. However, only a small portion of sickle cell disease cases occur in the United States and the rest of the developed world – the vast majority of cases occur in the region of Sub-Saharan Africa, where access to clean water is extremely difficult, let alone having the opportunity for a new born child to be screened for this deadly disease. What we have then is a grim situation: a region where sickle cell disease is much more commonly inherited, and medical technology that is insufficient to rapidly diagnose this disease, causing many children to unnecessarily decease. 
+In the United States, newborn children are required to undergo tests that detect this disease, so it is diagnosed and treated rather quickly. Typically, the test data – a blood sample the size of a drop, for example - is sent out to an external lab and in a day or two, results of the diagnosis are returned. However, only a small portion of sickle cell disease cases occur in the United States and the rest of the developed world – the vast majority of cases occur in the region of Sub-Saharan Africa, where access to clean water is extremely difficult, let alone having the opportunity for a new born child to be screened for this deadly disease. What we have then is a grim situation: a region where sickle cell disease is much more commonly inherited, and medical technology that is insufficient to rapidly diagnose this disease.
 
 ![A map of regions with sickle cell disease.](https://raw.githubusercontent.com/rohan-varma/rohan-blog/master/images/map1.png "A map of regions with sickle cell disease.")
 
@@ -31,8 +31,8 @@ Our solution relies on a portable cell phone with a microscope lens attachment a
 ### First step: Preprocessing the Data and Feature Selection 
 We're now at the computation intensive portion of the project - the problem of classifying images of cells. First, we determined the labels we wanted to predict. These were simply the three types of cells we wanted to detect - red blood cells, white blood cells, and sickle cells. 
 Next, we wanted some way to describe each cell present in an image. Given an image with hundreds of cells, we wanted to: 
-- Locate each cell
-- Run an algorithm on this region to extract several key features to describe this cell. 
+1. Locate each cell
+2. Run an algorithm on this region to extract several key features to describe this cell. 
 
 Locating a cell in an image of several hundred cells wasn't exactly trivial. We decided to use a hough transform, a transformation that is designed to detect lines in images. This transformation allowed us to detect rough boundaries of circular regions in the image. We ended up with 665 detected cells in our smartphone-captured image. Next, we created a linear mapping algorithm to map cell regions in this image to our gold standard image, the microscope-captured image. This allowed us to extract 665 regions that contain a single cell in our microscope-captured image. 
 
@@ -41,7 +41,6 @@ Locating a cell in an image of several hundred cells wasn't exactly trivial. We 
 Now, we sought to quantify this data - represent it in a way so that we can easily do some calculations and computations on it. This brings in the idea of a _feature_ - a single property of the object under analysis. For houses, this could be the number of bedrooms in the house or the lot size of the house. For images, features can include the RGB values for each pixel, the intensity and shade for each pixel, or the saturation of a pixel. They tend to be numerical or boolean qualities, but really can be anything. 
 
 Several features allow us to accurately represent an object - I could represent a house with the following vector of features - ```{numBedrooms, numBathrooms, lotSize, isNearSchool] = {4, 3, 3000, 1}```. Similarly, each detected cell can be represented by a vector of features we can extract from it - we used Matlab's regionprops (http://www.mathworks.com/help/images/ref/regionprops.html) to extract several features of the cell, such as its area, eccentricity, Euler number, mean intensity, and weighted centroid. We ended up with a total of 28 features for each of the 665 cells. 
-
 
 ### Unsupervised Machine Learning Using K-means
 Since these data did not have any labels associated with them yet (we sent off the images to a pathologist who'd manually label the cells to provide a training dataset), I decided to see if I could find any patterns or similarities in the data. 
@@ -69,10 +68,10 @@ In reality, the actual clusters would look a little more complicated - each clus
 Finally, we sought to use the Bootstrap Aggregation (also known as Bagging) machine learning technique in order to build a reliable classifier to accurately predict labels of new cells. This required the use of the **Bootstrap Method**, a statistical method that produces an estimate of a statistic (for example, the mean of a population) using parameters (for example, the mean of a sample from the population) from various samples. 
 
 Concretely, we could use the Bootstrap method to predict the average pixel intensity for red, white, and sickle cells, given the intensities of our training data set. For any set of cells, this would involve: 
-1) Choosing a random sub-sample of the set. 
-2) Computing the mean of this sub-sample. 
-3) With replacement, repeat the two above steps until many (we used 1000) means are computed. 
-4) Take the average of these means as an estiamte for the population's mean. 
+1. Choosing a random sub-sample of the set. 
+2. Computing the mean of this sub-sample. 
+3. With replacement, repeat the two above steps until many (we used 1000) means are computed. 
+4. Take the average of these means as an estiamte for the population's mean. 
 
 This process can be generalized to estimate any kind of quantity or feature used in machine learning. Bagging, or Bootstrap Aggregation, is the generalization of this bootstrapping concept to machine learning algorithms that are sensitive to the data they are trained on, meaning that even a slight variation in training data can cause such an algorithm to classify future input differently. An example of such algorithms are decision trees, and they are known as "high-variance classifiers". 
 
