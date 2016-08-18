@@ -52,9 +52,8 @@ One way to do this is by using the `kmeans` algorithm. This algorithm takes in a
 
 The hope was that clustering the data would produce three distinct regions: a sickle cell region, a red blood cell region, and a white blood cell region. Sure enough, our cells (represented here as points) clustered into three regions: 
 
-```insert image here```
-
-
+![Three clusters.](https://raw.githubusercontent.com/rohan-varma/rohan-blog/8adec4c1cafdf272117ed143382bfd1825b74e7c/images/kmeans.jpg
+ "Three clusters.")
 
 In reality, the actual clusters would look a little more complicated - each cluster is a subspace of 18 (our number of features) dimensional space. To classify a cell, we'd specify it's feature vector and compute its distance to each of the centroids. As an example, we might end up with an unlabeled cell being a distance d away. If d is within our maximum distance threshold (given by the distance the furthest correctly labelled cell is away from its centroid), we'd assign it to that cluster and recompute the centroid accordingly. So our algorithm might look something like this: 
 
