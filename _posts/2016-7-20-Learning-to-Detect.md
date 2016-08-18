@@ -6,8 +6,8 @@ title: How we're using Machine Learning to change the current state of disease d
 Diagnosing medical conditions such as sickle cell disease can become much, much faster. 
 ![A sickle cell next to a healthy cell.](https://raw.githubusercontent.com/rohan-varma/rohan-blog/master/images/sickle2.png "A sickled cell next to a healthy cell.")
 
-###### 1. Do this
-###### 2. Do this next. 
+       1. Do this
+       2. Do this next. 
 During my past year at UCLA, I had the opportunity to work as an undergraduate researcher in a biotechnology related lab. The project I was working on with a couple of other undergrads under a postdoc aimed to streamline the process of identifying sickle cell disease **through** image processing and machine learning. My work involved leveraging machine learning algorithms and creating heuristic methods to operate on high-dimensional data and classify different cells quickly.
 
 ### Some background on Sickle Cell Disease
