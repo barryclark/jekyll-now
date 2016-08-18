@@ -294,4 +294,5 @@ http://reboot.pro/files/file/85-digitalsignaturetweaker/
 
 
 ---
-[LEAVE A REPLY](https://github.com/3gstudent/3gstudent.github.io/issues/new)
+
+[LEAVE A REPLY](https://github.com/3gstudent/feedback/issues/new)
