@@ -255,7 +255,7 @@ Set-WmiInstance -Class __FilterToConsumerBinding -Namespace "root\subscription" 
 
 wmic中Binding的Filter判断参数"BotFilter82"中"要变成'
 
-通过powershell清楚的实现代码：
+通过powershell清除的实现代码：
 
 **Filters：**
 
