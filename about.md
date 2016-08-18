@@ -1,14 +1,13 @@
 ---
 layout: page
-title: About
+title: About Me
 permalink: /about/
 ---
 
-Some information about you!
+I am current a senior research scientist at Leidos. This is a place for my notebook to share with you. 
 
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
 
 ### Contact me
+
+![Email](https://www.umiacs.umd.edu/~yangcj/email.jpg)
 
