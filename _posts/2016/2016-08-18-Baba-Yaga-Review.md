@@ -22,20 +22,20 @@ Each turn players can take one of three different actions:
 
 1. Exchange a card.
 
-  First discard a card into one of the two discard piles. A card can then be drawn from the main deck or the top of the other discard pile. The only exception is if the top card was a spell played the by the previous player.
+First discard a card into one of the two discard piles. A card can then be drawn from the main deck or the top of the other discard pile. The only exception is if the top card was a spell played the by the previous player.
 
 2. Cast a spell.
 
-  Discard potion cards that equal the cost of the spell you wish to cast, then discard the spell card on top of them and resolve it. Once you're done, draw back up to 5 cards. Spells are as follows:
+Discard potion cards that equal the cost of the spell you wish to cast, then discard the spell card on top of them and resolve it. Once you're done, draw back up to 5 cards. Spells are as follows:
 
-    a. Pelicans: Draw a Baba Yaga or Owl card.
-    b. Owls: Draw two Baba Yaga Cards.
-    c. Cats: Steal a Baba Yaga or Own from another player.
-    d. Lost Wands: Each player (except the caster) must discard one Baba Yaga or Owl card.
+  a. Pelicans: Draw a Baba Yaga or Owl card.
+  b. Owls: Draw two Baba Yaga Cards.
+  c. Cats: Steal a Baba Yaga or Own from another player.
+  d. Lost Wands: Each player (except the caster) must discard one Baba Yaga or Owl card.
 
 3. Call "Baba Yaga."
 
-  If the total value of cards in a player's hand is 4 or less they can call "Baba Yaga" to end the game. All players lay their hands face up and total all cards. The player with the lowest total wins. "Baba Yaga" is an action in its own right. A player cannot call it any time they have a value of 4 or less in their hand, only as their turn action.
+If the total value of cards in a player's hand is 4 or less they can call "Baba Yaga" to end the game. All players lay their hands face up and total all cards. The player with the lowest total wins. "Baba Yaga" is an action in its own right. A player cannot call it any time they have a value of 4 or less in their hand, only as their turn action.
 
 A few notes. Wild cards can be played as any number, and are worth 10 points if in a player's hand at the end of the game. Garlic can be discarded to protect a player from a Cat or Lost Wand. It is also worth 10 points at the end of the game. Players must always draw up to 5 cards after playing cards. This includes when cards are stolen, when discards are forced, and when garlic is played.
 
@@ -53,6 +53,6 @@ At $11.99, Baba Yaga is a great deal. This is a must-have card game for families
 
 <h3>Supporting Links</h3>
 
-[Gamewright's Baba Yaga Page](http://gamewright.com/gamewright/index.php?section=games&page=game&show=319)
-[Baba Yaga on BGG](https://boardgamegeek.com/boardgame/192730/baba-yaga)
+[Gamewright's Baba Yaga Page](http://gamewright.com/gamewright/index.php?section=games&page=game&show=319)\\
+[Baba Yaga on BGG](https://boardgamegeek.com/boardgame/192730/baba-yaga)\\
 [Purchase Baba Yaga](http://gamewright.shptron.com/p/baba-yaga?s=part_number&part_number_d=ASC&part_number_c=part_number&t=1&i=all)
