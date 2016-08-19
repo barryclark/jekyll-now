@@ -20,11 +20,11 @@ Baba Yaga consists of 3 draw decks, and two discard piles. The main deck is wher
 
 Each turn players can take one of three different actions:
 
-1. Exchange a card.
+***1. Exchange a card.***
 
 First discard a card into one of the two discard piles. A card can then be drawn from the main deck or the top of the other discard pile. The only exception is if the top card was a spell played the by the previous player.
 
-2. Cast a spell.
+***2. Cast a spell.***
 
 Discard potion cards that equal the cost of the spell you wish to cast, then discard the spell card on top of them and resolve it. Once you're done, draw back up to 5 cards. Spells are as follows:
 
@@ -33,7 +33,7 @@ Discard potion cards that equal the cost of the spell you wish to cast, then dis
   c. Cats: Steal a Baba Yaga or Own from another player.
   d. Lost Wands: Each player (except the caster) must discard one Baba Yaga or Owl card.
 
-3. Call "Baba Yaga."
+***3. Call "Baba Yaga."***
 
 If the total value of cards in a player's hand is 4 or less they can call "Baba Yaga" to end the game. All players lay their hands face up and total all cards. The player with the lowest total wins. "Baba Yaga" is an action in its own right. A player cannot call it any time they have a value of 4 or less in their hand, only as their turn action.
 
