@@ -28,10 +28,10 @@ First discard a card into one of the two discard piles. A card can then be drawn
 
 Discard potion cards that equal the cost of the spell you wish to cast, then discard the spell card on top of them and resolve it. Once you're done, draw back up to 5 cards. Spells are as follows:
 
-  a. Pelicans: Draw a Baba Yaga or Owl card.
-  b. Owls: Draw two Baba Yaga Cards.
-  c. Cats: Steal a Baba Yaga or Own from another player.
-  d. Lost Wands: Each player (except the caster) must discard one Baba Yaga or Owl card.
+*Pelicans:* Draw a Baba Yaga or Owl card.\\
+*Owls:* Draw two Baba Yaga Cards.\\
+*Cats:* Steal a Baba Yaga or Own from another player.\\
+*Lost Wands:* Each player (except the caster) must discard one Baba Yaga or Owl card.
 
 ***3. Call "Baba Yaga."***
 
