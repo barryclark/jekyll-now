@@ -4,5 +4,5 @@ title: You're up and running!
 published: true
 ---
 
-<blockquote>TO BE OR NOT TO BE</blockquote>
+<q>TO BE OR NOT TO BE</q>
 
