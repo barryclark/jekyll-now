@@ -2,9 +2,15 @@
 layout: default
 ---
 
-<article class="page">
+<article class="page {{page.class}}">
 
   <h1>{{ page.title }}</h1>
+
+  {% if page.pic %}
+  <figure class="profile">
+    <img class="profile__img" src="{{site.url}}/images/{{page.pic}}" alt="{{site.title}}">
+  </figure>
+  {% endif %}
 
   <div class="entry">
     {{ content }}

@@ -19,7 +19,8 @@ html {
 
 body {
 	background: $white;
-  font: 18px/1.4 $helvetica;
+  font: 18px/1.4 $bodyFont;
+  font-weight: 400;
   color: $darkGray;
 }
 
@@ -31,9 +32,9 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
+  font-family: $titleFont;
   color: $darkerGray;
-  font-weight: bold;
+  font-weight: 700;
 
   line-height: 1.7;
   margin: 1em 0 15px;
@@ -66,6 +67,7 @@ h4 {
 
 p {
   margin: 15px 0;
+  line-height: 1.8;
 }
 
 a {
@@ -241,6 +243,11 @@ nav {
 // .main
 //
 
+
+.profile__img {
+  float: right;
+}
+
 .posts > .post {
   padding-bottom: 2em;
   border-bottom: 1px solid $lightGray;
@@ -259,6 +266,8 @@ nav {
     color: $gray;
     font-size: 22px;
     font-style: italic;
+    font-weight: 400;
+    font-family: $bodyFont;
   }
 
   .comments {
@@ -270,6 +279,7 @@ nav {
     font-size: 15px;
   }
 }
+ 
 
 .wrapper-footer {
   margin-top: 50px;
