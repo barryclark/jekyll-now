@@ -180,6 +180,7 @@ powershell代码如下：
 
 ## 0x05 WMI Persistence
 Powershell完整的实现代码如下：
+
 ```
 $filterName = 'BotFilter82'
 $consumerName = 'BotConsumer23'
