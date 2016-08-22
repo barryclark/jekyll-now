@@ -10,7 +10,7 @@ header-img: "images/bg-post.jpg"
 
 ---
 
-This is a (slightly adapted) version of a response I wrote in response to a sales enquiry of an API Management vendor. We had contacted them a year ago but the sales lead back than felt that our focus on 'just enough API management' was too narrow and not addressing the larger needs (and bigger deal) of the 'Digital Transformation' of the Haufe Group.
+This is a (slightly adapted) version of a response to a sales enquiry of an API Management vendor. We had contacted them a year ago but the sales lead back then felt that our focus on 'just enough API management' was too narrow and not addressing the larger needs (and bigger deal) of the 'Digital Transformation' of the Haufe Group.
 
 I am sure that sales person would have been more than happy to help us find out exactly what transformational impact his entire product portfolio would have been on our enterprise architecture if we had just let him (which we did not).
 
@@ -43,6 +43,9 @@ I am still looking for contributors for that last piece of our API strategy to f
 I hope this gives you a good overview over the current status of the API piece in our Technology Strategy. You can follow us at [@HaufeDev](https://twitter.com/haufedev) or find up to date information on our [Developer Blog](http://dev.haufe-lexware.com). We are tentatively planning to make an announcement of our API portal in the September time frame. 
 
 BTW our API Portal is written such that it can be placed on top of other API Gateways. So if you (or another vendor) are interested in trying it out to make it work for your API gateway, ping us.
+
+Cheers, 
+Holger (CTO – Haufe.Group)
 
 ---
 
