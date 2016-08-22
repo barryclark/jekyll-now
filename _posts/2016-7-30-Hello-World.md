@@ -19,7 +19,7 @@ Or..
 ```javascript
 /*Demonstrating a piece of javascript code*/  
 var message = "hello world";  
-alret(message);
+alert(message);
 ```
 
 ## Advantages of static pages
