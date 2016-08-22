@@ -33,10 +33,10 @@ I have decided to further optimize the project and to do this, I first need to g
 Using [SiteBeam](http://sitebeam.net/) I can analyse my website and easily find and solve some of its minor problems.  
 
 Running the test..
-![example image2]({{ site.baseurl }}/images/websiteTest.jpg "The result of my first, full website scan")  
+![example image2]({{ site.baseurl }}/images/websiteTest.JPG "The result of my first, full website scan")  
 
 As you can see from the results, besides failing to meet some W3C compliance standards, my website is ranking very high in terms of speed, mobile/tablet optimization, good use of analytics and some other less important factors. 
-![example image3]({{ site.baseurl }}/images/responseTime.jpg "Output for the speed test")  
+![example image3]({{ site.baseurl }}/images/responseTime.JPG "Output for the speed test")  
 
 
 This is mainly due to the advantages Jekyll offers, making it my preferred choice for developing a quick and efficient website.
