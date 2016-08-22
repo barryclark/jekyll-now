@@ -185,8 +185,7 @@ Powershell完整的实现代码如下：
 $filterName = 'BotFilter82'
 $consumerName = 'BotConsumer23'
 $exePath = 'C:\Windows\System32\notepad.exe'
-$Query = "SELECT * FROM __InstanceModificationEvent WITHIN 60 WHERE
-TargetInstance ISA 'Win32_PerfFormattedData_PerfOS_System'"
+$Query = "SELECT * FROM __InstanceModificationEvent WITHIN 60 WHERE TargetInstance ISA 'Win32_PerfFormattedData_PerfOS_System'"
 $WMIEventFilter = Set-WmiInstance -Class __EventFilter -NameSpace "root\subscription" -Arguments @{Name=$filterName;EventNameSpace="root\cimv2";QueryLanguage="WQL";Query=$Query} -ErrorAction Stop
 $WMIEventConsumer = Set-WmiInstance -Class CommandLineEventConsumer -Namespace "root\subscription" -Arguments @{Name=$consumerName;ExecutablePath=$exePath;CommandLineTemplate=$exePath}
 Set-WmiInstance -Class __FilterToConsumerBinding -Namespace "root\subscription" -Arguments @{Filter=$WMIEventFilter;Consumer=$WMIEventConsumer}
