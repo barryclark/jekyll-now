@@ -35,14 +35,15 @@ Using [SiteBeam](http://sitebeam.net/) I can analyse my website and easily find 
 Running the test..
 ![Scan results]({{ site.baseurl }}/images/websiteTest.JPG "The result of my first, full website scan")  
 
-As you can see from the results, besides failing to meet some W3C compliance standards, my website is ranking very high in terms of speed, mobile/tablet optimization, good use of analytics and some other less important factors. 
+As you can see from the results, besides failing to meet some W3C compliance standards, my website is ranking very high in terms of speed, mobile/tablet optimization, good use of analytics and some other less important factors.  
+
 ![website speed]({{ site.baseurl }}/images/responseTime.JPG "Output for the speed test")  
 
 This is mainly due to the advantages Jekyll offers, making it my preferred choice for developing a quick and efficient website.
 
 The biggest problem the website faces is its low social interest and user engagement. I hope I can solve this problem in time by continuing to add more blog entries or some tutorials/information about things that interest me.
 
-## Cookies :cookie:
+## Cookies:cookie:
 Although unrelated to optimization, I have decided to add a message notifying users of my use of cookies. European laws require that digital publishers give visitors to their sites and apps information about their use of cookies and other forms of local storage.
 
 ### All in all..
