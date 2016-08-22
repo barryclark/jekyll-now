@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hello world!
-tags: jekyll, markdown, github, optimization, sitebeam
+tags: jekyll, markdown, github, optimization, sitebeam, speed, cookies
 ---
 
 ### Customizing the blog using Jekyll and testing its speed.
@@ -36,11 +36,14 @@ Running the test..
 ![example image2]({{ site.baseurl }}/images/websiteTest.jpg "The result of my first, full website scan")  
 
 As you can see from the results, besides failing to meet some W3C compliance standards, my website is ranking very high in terms of speed, mobile/tablet optimization, good use of analytics and some other less important factors. 
-![example image3]({{ site.baseurl }}/images/responseTime.jpg "Output for the speed test")    
+![example image3]({{ site.baseurl }}/images/responseTime.jpg "Output for the speed test")  
+
+
 This is mainly due to the advantages Jekyll offers, making it my preferred choice for developing a quick and efficient website.
 
 The biggest problem the website faces is its low social interest and user engagement. I hope I can solve this problem in time by continuing to add more blog entries or some tutorials/information about things that interest me.
 
+## Cookies
 Although unrelated to optimization, I have decided to add a message notifying users of my use of cookies. European laws require that digital publishers give visitors to their sites and apps information about their use of cookies and other forms of local storage.
 
 ### All in all..
