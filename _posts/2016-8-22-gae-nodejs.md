@@ -124,7 +124,7 @@ $
 
 `Installation directory (this will create a google-cloud-sdk subdirectory) (/Users/user):` のところで指定したディレクトリに google-cloud-sdkがインストールされます。
 
-`Enter a path to an rc file to update, or leave blank to use ` のときのリソースファイルは `~/.profile` を指定。Macの場合。
+`Enter a path to an rc file to update, or leave blank to use ` のときのリソースファイルはMacなので `~/.profile` を指定。
 
 ## シェルを再起動してPATHを反映させる
 
@@ -216,12 +216,31 @@ gcloud init 時`To continue, you must log in. Would you like to log in (Y/n)?  Y
 
 ## Google Cloud PlatformにあるソースコードをCloneする
 
+
 ```
 $ cd ./src
-$ gcloud source repos clone default   # defaultは最初に gcloud init した際自動的に付与される configuration名の模様
+$ gcloud source repos clone default
 ```
+`$ gcloud source repos clone default` の`default`というのは最初に`gcloud init`した際自動的に付与される configuration名のことのようです。今回のinitではGAE ID`optimum-sound-128005`を指定したので`default`でcloneされるソースコードはoptimum-sound-128005プロジェクトのソースコードということになるようです。
 
 ## サンプルをローカルで実行する
+
+簡単なhttpサーバーのサンプルを書いてとりあえずローカルで実行してみます
+
+```
+$ vi app.js
+```
+
+```
+// [START hello_world]
+// Say hello!
+app.get('/', function (req, res) {
+  //res.status(200).send('Hello, world!');
+  var version = process.versions.node;  // node.jsのバージョン
+  res.status(200).send('Welcome GoogleAppEngine node v' + version);
+});
+// [END hello_world]
+```
 
 ```
 $ cd default/1-hello-world/
@@ -238,22 +257,9 @@ Webブラウザで http://localhost:8080 にアクセスすると表示されま
 
 ## コードを編集してデプロイする
 
-簡単なhttpサーバーのサンプルを書いてGAEにデプロイしてみます。
+GAEにデプロイしてみます。
 
 ```
-$ vi app.js
-=====
-...
-// [START hello_world]
-// Say hello!
-app.get('/', function (req, res) {
-  //res.status(200).send('Hello, world!');
-  var version = process.versions.node;  // node.jsのバージョン
-  res.status(200).send('Welcome GoogleAppEngine node v' + version);
-});
-// [END hello_world]
-...
-=====
 $ gcloud preview app deploy 
 You are about to deploy the following modules:
  - optimum-sound-128005/default (from [/Users/hoge/src/google-cloud-platform/gae/default/1-hello-world/app.yaml])
@@ -391,9 +397,8 @@ To https://source.developers.google.com/p/optimum-sound-128005/r/default
 
 pushが完了したら[Google Cloud Platformダッシュボード](https://console.cloud.google.com/home/dashboard)左上ハンバーガーメニューから[開発] -> [ソースコード] にレポジトリがあるので、反映されてるか確認します。
 
-`$ gcloud source repos clone default` の`default`というのは最初に`gcloud init`した際自動的に付与される configuration名のことのようです。今回のinitではGAE ID`optimum-sound-128005`を指定したので`default`でcloneされるソースコードはoptimum-sound-128005プロジェクトのソースコードということになるようです。
 
 # 感想
 
 herokuを長く使っているのでgcloudコマンドには少し違和感がありますが、まあherokuコマンドと同じようなもんなので問題なく使えそうです。  
-node.js的にはどっち使っても遜色なくやれそうです。GAEとherokuではレギュレーションが異なるのでケース・バイ・ケースで使っていきたいです。
+node.js的にはどっち使っても遜色なくやれそうです。GAEとherokuではレギュレーションが異なるのでケース・バイ・ケースで使いたいですね。
