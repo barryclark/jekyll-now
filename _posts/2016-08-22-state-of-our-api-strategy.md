@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The state of our API Strategy
-subtitle: From a response to a sales call of a API Management vendor.
+subtitle: From a response to a sales call by a API Management vendor.
 category: api
 tags: [api, cto]
 author: holger_reinhardt
