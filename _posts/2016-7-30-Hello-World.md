@@ -38,6 +38,9 @@ Running the test..
 As you can see from the results, besides failing to meet some W3C compliance standards, my website is ranking very high in terms of speed, mobile/tablet optimization, good use of analytics and some other less important factors.  
 
 ![website speed]({{ site.baseurl }}/images/responseTime.JPG "Output for the speed test")  
+_As you can see the website takes **less than** 0.2 seconds to load._      
+
+ 
 
 This is mainly due to the advantages Jekyll offers, making it my preferred choice for developing a quick and efficient website.
 
