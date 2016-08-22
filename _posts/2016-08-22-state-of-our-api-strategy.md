@@ -20,7 +20,7 @@ I am sure that sales person would have been more than happy to help us find out 
 
 Dear XXX
 
-Yes, indeed a year has passed. Well, back then you guys kind of blew it when your sales lead (?) insisted on discussing an entire enterprise transformation strategy and our distributed API-first architecture and planned budget wasn’t quite in your general ()deal) ballpark. Since our technology Strategy for the Haufe Group calls for being [like the web and not behind the web](http://martinfowler.com/articles/microservices.html) your commercial model apparently made it quite a bit difficult to engage on such a small scale.
+Yes, indeed a year has passed. Well, back then you guys kind of blew it when your sales lead insisted on discussing an entire enterprise transformation strategy and our distributed API-first architecture and planned budget wasn’t quite in your general (deal) ballpark. Since our technology Strategy for the Haufe Group calls for being [like the web and not behind the web](http://martinfowler.com/articles/microservices.html) your commercial model apparently made it quite a bit difficult to engage on such a small scale.
 
 But I was delighted to see your most recent white papers which closely track our Technology Strategy. I think it fully validates our approach to provide decentralized API management based on the basis of a bounded (business) context (Conway's law applies to API Management too).
 
