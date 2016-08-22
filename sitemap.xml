@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <url>
+    <loc>https://victormarcu.github.io/</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://victormarcu.github.io/feed.xml</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://victormarcu.github.io/Hello-World/</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+</urlset>
+<!--<guid value="f8a178f5-c52b-456e-8ac8-e74121719506" />-->
+<!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
