@@ -6,7 +6,8 @@ tags: jekyll, markdown, github, optimization, sitebeam, speed, cookies
 
 ### Customizing the blog using Jekyll and testing its speed.
 
-Setting the website up was relatively easy more so once I found out about the [Jekyll Now](https://github.com/barryclark/jekyll-now) project which I simply forked to create my version of the website.  
+Setting the website up was relatively easy more so once I found out about the [Jekyll Now](https://github.com/barryclark/jekyll-now) project which I simply forked to create my version of the website. You can read more about this at the [About](https://victormarcu.github.io/about/) section.    
+
 
 Now that I've got the site up and running the next step is customizing it. Jekyll takes my content written in Markdown and creates completely static HTML pages. I am already familiar with the _**Markdown**_ markup language so editing my blog posts will be an easy thing to do.  
 
