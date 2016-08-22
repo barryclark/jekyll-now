@@ -327,3 +327,5 @@ https://enigma0x3.net/2016/05/25/userland-persistence-with-scheduled-tasks-and-c
 https://blog.gdatasoftware.com/2014/10/23941-com-object-hijacking-the-discreet-way-of-persistence
 
 ---
+
+[LEAVE A REPLY](https://github.com/3gstudent/feedback/issues/new)
