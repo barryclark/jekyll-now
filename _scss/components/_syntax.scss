@@ -1,17 +1,20 @@
+// Solarized Light Pygments CSS / Jekyll
+// https://gist.github.com/edwardhotchkiss/2005058
 
 .highlight {
-  background-color: #efefef;
-  padding: 7px 7px 7px 10px;
-  border: 1px solid #ddd;
-  -moz-box-shadow: 3px 3px rgba(0,0,0,0.1);
-  -webkit-box-shadow: 3px 3px rgba(0,0,0,0.1);
-  box-shadow: 3px 3px rgba(0,0,0,0.1);
-  margin: 20px 0 20px 0;
-  overflow: scroll;
+  border: 1px solid $border-color;
+  border-radius: 3px;
+  padding: $spacing-s $spacing-s;
+  background-color: white;
+  margin: $spacing-m auto;
+  //overflow: scroll;
+  color: $text-secondary;
 }
 
 code {
-  font-family:'Bitstream Vera Sans Mono','Courier', monospace;
+  font-family: $code-family;
+  font-size: 100%;
+  line-height: 1.5;
 }
 
 .highlight .c { color: #586E75 } /* Comment */

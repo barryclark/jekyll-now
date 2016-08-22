@@ -1,0 +1,6 @@
+{% if paginator.previous_page_path %}
+<link ref="prev" href="{{ site.url }}{{ site.baseurl }}{{ paginator.previous_page_path }}" />
+{% endif %}
+{% if paginator.next_page_path %}
+<link ref="next" href="{{ site.url }}{{ site.baseurl }}{{ paginator.next_page_path }}" />
+{% endif %}

@@ -1,0 +1,6 @@
+{% if page.previous %}
+<link ref="prev" href="{{ site.url }}{{ site.baseurl }}{{ page.previous.url }}" />
+{% endif %}
+{% if page.next %}
+<link ref="next" href="{{ site.url }}{{ site.baseurl }}{{ page.next.url }}" />
+{% endif %}

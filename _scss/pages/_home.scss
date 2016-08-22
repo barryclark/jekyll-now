@@ -1,0 +1,103 @@
+.label {
+    padding: $spacing-s $spacing-m;
+    background: white;
+    color: $text-secondary;
+
+    a {
+      text-decoration: none;
+    }
+} // end .label
+
+.posts {
+  overflow: hidden;
+  li {
+    display: inline-block;
+    width: 100%;
+    border-bottom: 1px solid $border-color;
+
+    &:first-child {
+      border-top: 1px solid $border-color;
+    }
+
+    .p-wrap {
+      padding: $spacing-ml $spacing-m;
+      background: white;
+      transition: all .15s ease-in;
+
+      &:active {
+        background: $accent;
+      }
+
+      &:hover {
+        background: $accent-light;
+
+        @media (min-width: 943px) {
+          padding-left: $spacing-m + $spacing-s;
+        }
+
+        &::after {
+          content:'\2192';
+          margin-left: $spacing-xs;
+          @media (max-width: 942px) {
+            content: none;
+            margin: 0;
+          }
+        }
+
+      }
+      p {
+        display: inline;
+        margin: $spacing-xs 0 0;
+      }
+    } // end .p-wrap
+
+    time {
+      color: $text-secondary;
+      padding-right: $spacing-s;
+      @media (max-width: 942px) {
+        display: block;
+      }
+    }
+
+    a {
+      color: $primary-dark;
+      text-decoration: none;
+    }
+
+    .badge {
+      margin-left: $spacing-xs;
+      padding: $spacing-xs $spacing-xs;
+      border: 1px solid $primary;
+      border-radius: 2px;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+    }
+
+  } // end li
+} // end .posts
+
+.pagination {
+  overflow: hidden;
+  margin-top: 40px;
+  color: $text-secondary;
+  text-align: center;
+  border: 1px solid $border-color;
+
+  a, span {
+    box-sizing: border-box;
+    float: left;
+    width: 50%;
+    padding: 20px;
+    text-decoration: none;
+
+    &:first-child {
+      text-decoration: none;
+      border-right: 1px solid $border-color;
+    }
+  }
+
+  a:hover {
+      text-decoration: none;
+      background-color: $accent-light;
+  }
+} // end .pagination

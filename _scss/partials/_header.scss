@@ -1,0 +1,192 @@
+header {
+  width: 100%;
+  background: $primary;
+}
+
+.h-wrap {
+  @extend %padding-large;
+
+  h1.title {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    font-size: 150%;
+    font-weight: bold;
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  } // end h1.title
+
+  .close {
+    .lines {
+      -webkit-transition: background .3s 0s ease;
+      transition:         background .3s 0s ease;
+      background: transparent;
+
+      &::before,
+      &::after {
+        top:0;
+        width: 30px;
+        -webkit-transition: top .3s ease,
+                            transform .3s .5s ease;
+        transition:         top .3s ease,
+                            transform .3s .5s ease;
+      }
+
+      &::before {
+        transform:         rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        margin: 0;
+      }
+
+      &::after {
+        transform:         rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        margin: 0;
+      }
+
+    } // end .lines
+  } // end .close
+} // end .h-wrap
+
+.menu-icon {
+  @extend %padding-large;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  z-index: 200;
+  &:hover {
+    opacity: 1;
+  }
+
+  .lines {
+    display: inline-block;
+    position: relative;
+    width: 25px;
+    height: 2px;
+    background: $text-primary;
+    border-radius: 20px;
+
+    &::before,
+    &::after {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      left: 0;
+      width: 25px;
+      height: 2px;
+      background: $text-primary;
+      border-radius: 20px;
+
+      transition: all .3s ease;
+      -webkit-transition: all .3s ease;
+    }
+
+    &::before { top: 8px; }
+    &::after { top: -8px; }
+
+    &.toggled {
+      background: transparent;
+      &::before {
+        top: 0;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+      }
+      &::after {
+        top: 0;
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+      }
+    }
+  } // .lines
+
+} // end .menu-icon
+
+
+
+// Off-canvas
+
+.site-wrapper {
+  @extend %transition;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  &.open {
+    .menu-icon {
+      position: fixed;
+    }
+  }
+}
+
+.off-canvas {
+  @extend %transition;
+  @extend %padding-large;
+  position: fixed;
+  top: 0;
+  right: -25em;
+  width: 25em;
+  height: 100%;
+  background: $smoke-color;
+  z-index: 100;
+  overflow: scroll;
+
+  // insuring that off-canvas doesn't take more than the average iPhone portrait width under 400px
+  @media (max-width: 399px) {
+    max-width: 320px;
+  }
+
+  &.toggled {
+    right: 0;
+    border-left: 1px solid $border-color;
+  }
+
+  .avatar {
+    display: block;
+    margin-bottom: $spacing-s;
+    img {
+      width: 6em;
+      height: 6em;
+      border-radius: 50%;
+    }
+  } // end .avatar
+
+
+  .bio {
+    display: block;
+    h1 {
+      @extend h3;
+      margin: 0;
+      color: $text-primary;
+    }
+    p {
+      font-size: 90%;
+      color: $text-secondary;
+      margin-bottom: 0;
+    }
+  }
+
+
+  nav {
+
+    h6 {
+      font-size: 80%;
+      text-align: left;
+      margin-top: $spacing-m;
+      margin-bottom: $spacing-s;
+      color: $text-hint;
+      padding-bottom: $spacing-xs;
+      border-bottom: 1px solid $border-color;
+    }
+    ul li {
+      list-style-type: none;
+      margin-bottom: $spacing-xs;
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+
+} // end .off-canvas

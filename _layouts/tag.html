@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<div id="home">
+  {% if site.tags[page.tag] %}
+  <div class="label">
+    <a href="{{ site.baseurl }}/tags/">Tags</a> > {{ site.data.tags[page.tag].name }}
+  </div>
+  <ul class="posts">
+    {% for post in site.tags[page.tag] %}
+    <li itemscope itemtype="http://schema.org/BlogPosting">
+      <a href="{{ site.baseurl }}{{ post.url }}" itemprop="url">
+        <div class="p-wrap">
+          <time datetime="{{ post.date | date_to_xmlschema }}"
+              itemprop="datePublished">
+            {{ post.date | date_to_string }}
+          </time>
+          <p itemprop="name headline">{{ post.title }}</p>
+        </div>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  <p>There are no posts for this tag.</p>
+  {% endif %}
+</div>

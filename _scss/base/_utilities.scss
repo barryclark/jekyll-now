@@ -1,0 +1,11 @@
+%transition {
+  transition: all .3s ease;
+}
+
+%padding-regular {
+  padding: $spacing-s;
+}
+
+%padding-large {
+  padding: $spacing-m;
+}
