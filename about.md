@@ -25,7 +25,7 @@ This project started as a way for me to get a functioning website *without* havi
 
 
 #### Contact me:
-You can e-mail me at [VictorMarcu74@gmail.com](mailto:victormarcu74@google.com)
+You can e-mail me at [VictorMarcu74@gmail.com](mailto:victormarcu74@gmail.com)
 
 You can have a look at my [github](https://github.com/victormarcu)
 
