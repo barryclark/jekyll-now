@@ -39,7 +39,7 @@ Running the test..
 As you can see from the results, besides failing to meet some W3C compliance standards, my website is ranking very high in terms of speed, mobile/tablet optimization, good use of analytics and some other less important factors.  
 
 ![website speed]({{ site.baseurl }}/images/responseTime.JPG "Output for the speed test")  
-_As you can see the website takes **less than** 0.2 seconds to load._      
+<sub>_As you can see the website takes **less than** 0.2 seconds to load._</sub>      
 
  
 
@@ -47,7 +47,7 @@ This is mainly due to the advantages Jekyll offers, making it my preferred choic
 
 The biggest problem the website faces is its low social interest and user engagement. I hope I can solve this problem in time by continuing to add more blog entries or some tutorials/information about things that interest me.
 
-## Cookies:cookie:
+## Cookies
 Although unrelated to optimization, I have decided to add a message notifying users of my use of cookies. European laws require that digital publishers give visitors to their sites and apps information about their use of cookies and other forms of local storage.
 
 ### All in all..
