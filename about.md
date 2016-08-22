@@ -16,7 +16,7 @@ Tom Preston-Werner created Jekyll to enable people to blog using a simple static
 and version-controlled on GitHub. The goal was to eliminate the complexity of other blogging platforms by creating a workflow
 that allows you to blog like a hacker.
 
-Conviniently, github serves this website directly from my github repo, making editing easy with a couple of well-known commands.
+Conveniently, github serves this website directly from my github repo, making editing easy with a couple of well-known commands.
 This also means that I don't have to deal with any hosting costs for my site.
 
 ### Plans for the website:
