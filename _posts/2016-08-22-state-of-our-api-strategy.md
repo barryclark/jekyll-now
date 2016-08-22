@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The state of our API Strategy
-subtitle: From a response to a sales call by a API Management vendor.
+subtitle: From a response to a sales call by an API Management vendor.
 category: api
 tags: [api, cto]
 author: holger_reinhardt
@@ -10,7 +10,7 @@ header-img: "images/bg-post.jpg"
 
 ---
 
-This is an (slightly adapted) version of a response I wrote in response to a sales enquiry of an API Management vendor. We had contacted them a year ago but the sales lead back than felt that our focus on 'just enough API management' was too narrow and not addressing the larger needs (and bigger deal) of the 'Digital Transformation' of the Haufe Group.
+This is a (slightly adapted) version of a response I wrote in response to a sales enquiry of an API Management vendor. We had contacted them a year ago but the sales lead back than felt that our focus on 'just enough API management' was too narrow and not addressing the larger needs (and bigger deal) of the 'Digital Transformation' of the Haufe Group.
 
 I am sure that sales person would have been more than happy to help us find out exactly what transformational impact his entire product portfolio would have been on our enterprise architecture if we had just let him (which we did not).
 
@@ -30,7 +30,7 @@ You can find more details at [http://wicked.haufe.io]().
 
 On the design governance side we also progressed rather nicely.  You might find our [API Styleguide](https://github.com/Haufe-Lexware/api-style-guide) of interest - I think it represents some of the best best practices from the industry. We are planning to use [Gitbook](https://www.gitbook.com) or [ReadTheDocs](https://readthedocs.org) to publish it in a better e-book style format. We took a lot of inspiration from the [Zalando API Styleguide](http://zalando.github.io/restful-api-guidelines/).
 
-The one remaining missing piece in our API story is an API registry. But again I am not looking for a repeat of the fallacy of a centralized UDDI or WSRR registry, but taking the Web as example and working something along [http://apis.io]() (Source code available at [https://github.com/apisio/apis.io]()). Central registries never worked, but Google does. Hence an API search engine with a choice or combinate of
+The one remaining missing piece in our API story is an API registry. But again I am not looking for a repeat of the fallacy of a centralized UDDI or WSRR registry, but taking the Web as example and working something along [http://apis.io]() (Source code available at [https://github.com/apisio/apis.io]()). Central registries never worked, but Google does. Hence an API search engine with a choice or combination of
 
  * a single git repo (containing API definitions) supporting pull requests and/or
  * the ability to register commit web hooks to many git repo’s (each representing one or more API definitions) and/or 
