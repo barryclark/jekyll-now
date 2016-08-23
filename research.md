@@ -6,6 +6,8 @@ permalink: /research/
 
 We design __statistical models__ and __machine learning methods__ specialized for analyzing __neural data__.
 
+[//]: # Novel computational tools for analysis of large-scale recordings will enable us to ask biological questions not approachable by traditional neural data analysis methods. 
+
 ## Neural Coding
 
 How is information represented in the *noisy* spatio-temporal pattern of neural activity?
