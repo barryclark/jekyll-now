@@ -17,6 +17,7 @@ title: Userland registry hijacking
 
 ## 0x02 Userland registry hijacking原理
 ---
+
 ### 1、键值同步
 
 修改HKCU:\Software\Classes\下的键值中默认名称的数据，可以同时修改HKCR:\下对应键值默认名称的数据(前提是HKCR:\已存在此注册表项)
