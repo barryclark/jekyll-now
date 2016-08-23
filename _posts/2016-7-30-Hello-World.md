@@ -31,7 +31,8 @@ As you probably guessed, the most important advantage I have by running this sit
 ## _later edit:_ Optimizing the website:
 
 I have decided to further optimize the project and to do this, I first need to get a quick analysis of my website.  
-Using [SiteBeam](http://sitebeam.net/) I can analyse my website and easily find and solve some of its minor problems.  
+Using [SiteBeam](http://sitebeam.net/) (I recommend the [free trial](http://trial.sitebeam.net/))  I can analyse my website and easily find and solve some of its minor problems.
+
 
 Running the test..
 ![Scan results]({{ site.baseurl }}/images/websiteTest.JPG "The result of my first, full website scan")  
