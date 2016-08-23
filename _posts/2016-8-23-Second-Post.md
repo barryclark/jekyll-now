@@ -7,7 +7,8 @@ tags: no tags yet
 
 ### Second Post
 
-### I should start writing soon <sup><sup>well</sup></sup> learn to code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code read even more
+### I should start writing soon <sup><sup>well</sup></sup> learn to code pls
 
+**CODECODECODE**
 
 ****
