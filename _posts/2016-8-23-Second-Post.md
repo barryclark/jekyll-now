@@ -7,8 +7,6 @@ tags: no tags yet
 
 ### Second Post
 
-### I should start writing soon <sup><sup>well</sup></sup> learn to code pls
-
-**CODECODECODE**
+### Second blog post comming shortly (hopefully).
 
 ****
