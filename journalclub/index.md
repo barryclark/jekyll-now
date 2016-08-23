@@ -14,7 +14,7 @@ As the tools in experiments neuroscience are rapidly developing, this is an impo
 
 Journal club meetings take place on Tuesdays at 1pm in the Life Sciences Building, room LSB 575
 
-**Join the club** by emailing [David Hocker](mailto:david.hocker@stonybrook.edu)!
+**Join the club** by emailing [David Hocker](mailto:david.hocker@stonybrook.edu?subject=computational journal club)!
 
 # 2016 Fall Schedule
 
@@ -34,7 +34,7 @@ Journal club meetings take place on Tuesdays at 1pm in the Life Sciences Buildin
 
 
 # Suggested Papers
-<iframe src="https://docs.google.com/document/d/17SuoVIIDbCae5GnxSHGO5BW2zbVP6wBCbaGGfgFLAOQ/pub?embedded=true" width = "800" height = "150" style="border:1px solid lightgrey;"></iframe>
+<iframe src="https://docs.google.com/document/d/17SuoVIIDbCae5GnxSHGO5BW2zbVP6wBCbaGGfgFLAOQ/pub?embedded=true" width = "800" height = "300" style="border:1px solid lightgrey;"></iframe>
 
 # Past/Current Papers
 
