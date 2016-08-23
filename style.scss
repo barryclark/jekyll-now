@@ -32,7 +32,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
-  color: $darkerGray;
+  color: $lighterBlue;
   font-weight: bold;
 
   line-height: 1.7;
@@ -53,16 +53,10 @@ h1 {
 
 h2 {
   font-size: 24px;
-  c {
-    color: #123752;
-  }
 }
 
 h3 {
   font-size: 20px;
-  d {
-    color #23445D;
-  }
 }
 
 h4 {
@@ -75,29 +69,11 @@ p {
 }
 
 a {
-  color: $blue;
+  color: $darkBlue;
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
-    color: $blue;
-  }
-}
-
-c {
-  color: $blue;
-  text-decoration: none;
-	cursor: pointer;
-  &:hover, &:active {
-    color: $blue;
-  }
-}
-
-d {
-  color: $blue;
-  text-decoration: none;
-	cursor: pointer;
-  &:hover, &:active {
-    color: $blue;
+    color: $darkBlue;
   }
 }
 
@@ -226,7 +202,7 @@ img {
 
 .site-name {
   margin: 0;
-  color: $darkGray;
+  color: $darkBlue;
   cursor: pointer;
   font-family: $helveticaNeue;
   font-weight: 300;
@@ -236,7 +212,7 @@ img {
 
 .site-description {
   margin: -5px 0 0 0;
-  color: $gray;
+  color: $lightestBlue;
   font-size: 16px;
 
   @include mobile {
@@ -259,7 +235,7 @@ nav {
 
   a {
     margin-left: 20px;
-    color: $darkGray;
+    color: $darkBlue;
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
