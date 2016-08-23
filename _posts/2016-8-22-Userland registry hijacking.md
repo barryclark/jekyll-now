@@ -59,7 +59,7 @@ title: Userland registry hijacking
 
 根据以上介绍的原理，可具体应用在Userland Persistence和BypassUAC两方面：
 
-##0x03 Userland Persistence With Scheduled Tasks
+## 0x03 Userland Persistence With Scheduled Tasks
 ---
 
 如果劫持系统某个计划任务对应的注册表键值，修改其中要启动的dll绝对路径，那么仅需普通用户权限就能实现一个后门，具体操作如下：
