@@ -51,7 +51,7 @@ Holger (CTO – Haufe.Group)
 
 While this blog post was largely sponteneous, our offer to provide the API Management Portal as Open Source to API Gateway vendors is serious. 
 
-Our industry has benefited greatly from the openness and sharing of knowledge not just within the API community but also through the commercial sponsorship of API Management vendors like [Mulesoft](https://www.mulesoft.com), [Layer7](http://www.ca.com/us/products/api-management.html), [Apigee](http://apigee.com) and many others. (Disclosure: I am a former member of the Layer7 sponsored [API Academy](http://www.apiacademy.co))
+Our industry has benefited greatly from the openness and sharing of knowledge not just within the API community but also through the commercial sponsorship of API Management vendors like [Mulesoft](https://www.mulesoft.com), [Layer7](http://www.ca.com/us/products/api-management.html), [Apigee](http://apigee.com), [3Scale](https://www.3scale.net) and many others. (Disclosure: I am a former member of the Layer7 sponsored [API Academy](http://www.apiacademy.co))
 
 ---
 
