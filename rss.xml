@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
+<rss version="2.0">
+  <channel>
+    <title>Victor Marcu</title>
+    <link>https://victormarcu.github.io</link>
+    <description />
+    <item>
+      <guid>https://victormarcu.github.io/</guid>
+      <title>Victor Marcu</title>
+      <link>https://victormarcu.github.io/</link>
+      <description>Just another blog about programming</description>
+    </item>
+    <item>
+      <guid>https://victormarcu.github.io/feed.xml</guid>
+      <title>feed.xml</title>
+      <link>https://victormarcu.github.io/feed.xml</link>
+      <description />
+    </item>
+    <item>
+      <guid>https://victormarcu.github.io/Hello-World/</guid>
+      <title>Victor Marcu</title>
+      <link>https://victormarcu.github.io/Hello-World/</link>
+      <description>Customizing the blog
+
+</description>
+    </item>
+  </channel>
+</rss>
+<!--<guid value="f8a178f5-c52b-456e-8ac8-e74121719506" />-->
+<!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->

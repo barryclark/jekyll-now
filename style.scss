@@ -32,7 +32,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
-  color: $darkerGray;
+  color: $lighterBlue;
   font-weight: bold;
 
   line-height: 1.7;
@@ -46,6 +46,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 30px;
+  color: #03031a;
   a {
     color: inherit;
   }
@@ -130,6 +131,7 @@ img {
   background: $lightGray;
 }
 
+
 // Nicolas Gallagher's micro clearfix hack
 // http://nicolasgallagher.com/micro-clearfix-hack/
 .clearfix:before,
@@ -162,11 +164,20 @@ img {
     text-align: center;
   }
 }
+.twitter-timeline{
+	float: right;
 
+    	
+	@include mobile{
+		float: none;
+		display: block;
+		margin: 0 auto;
+	}
+}
 .site-avatar {
   float: left;
-  width: 70px;
-  height: 70px;
+  width: 80px;
+  height: 80px;
   margin-right: 15px;
 
   @include mobile {
@@ -225,7 +236,7 @@ nav {
 
   a {
     margin-left: 20px;
-    color: $darkGray;
+    color: $darkBlue;
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
