@@ -12,10 +12,36 @@
         enable_page_level_ads: true
       });
     </script>
+    <!--endOfPhoneAds-->
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Blog",
+  "inLanguage": "EN",
+  "about": "programming, jekyll, tech, tutorials, guides, computer science, software, engineering, technology",
+  "description": "The blog of Victor Marcu, a Software Engineering student at the University of Southampton",
+  "dateCreated": "2016-07-15",
+  "isFamilyFriendly": true,
+  "keywords": "programming, learn, jekyll, ruby, create, gem, optimization, tech, tutorials, guides, computer science, software, engineering, technology",
+  
+  "creator": [(
+    "@type": "Person",
+    "name": "Victor Marcu",
+    "jobTitle": "Student",
+    "url": "https://victormarcu.github.io/about"
+    )],
+  "contactPoint": [{
+    "@type": "ContactPoint",
+    "email": "mailto:victormarcu74@gmail.com"
+  }]
+}
+</script>
 
     
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
+    <!--metadata-->
     {% include meta.html %}
 
     <!--[if lt IE 9]>
