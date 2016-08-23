@@ -46,6 +46,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 30px;
+  color: $darkBlue;
   a {
     color: #032236;
   }
@@ -212,7 +213,7 @@ img {
 
 .site-description {
   margin: -5px 0 0 0;
-  color: $lightestBlue;
+  color: $gray;
   font-size: 16px;
 
   @include mobile {
