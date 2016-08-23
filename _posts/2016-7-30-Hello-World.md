@@ -5,7 +5,7 @@ description: My first blog post where I talk about the process of creating and u
 tags: jekyll, markdown, github, optimization, sitebeam, speed, cookies
 ---
 
-## Customizing the blog using Jekyll and testing its speed.
+### Customizing the blog using Jekyll and testing its speed.
 
 Setting the website up was relatively easy more so once I found out about the [Jekyll Now](https://github.com/barryclark/jekyll-now) project which I simply forked to create my version of the website. You can read more about this at the [About](https://victormarcu.github.io/about/) section.    
 
