@@ -32,6 +32,7 @@ permalink: /people/
 {: .person-name }
 ## David Hocker
 ![David Hocker](/images/Hocker.jpg){: .profile-photo }
+
 * Postdoctoral researcher, [Department of Neurobiology and Behavior (NBB)](https://medicine.stonybrookmedicine.edu/neurobiology), Stony Brook University (2016-current)
 
 ## Future lab member
