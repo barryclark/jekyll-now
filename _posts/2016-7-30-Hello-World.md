@@ -2,6 +2,7 @@
 layout: post
 title: Hello world!
 tags: jekyll, markdown, github, optimization, sitebeam, speed, cookies
+description: My first blog post where I talk about the process of creating and using a Jekyll based website.
 ---
 
 ### Customizing the blog using Jekyll and testing its speed.
