@@ -47,16 +47,22 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 30px;
   a {
-    color: inherit;
+    color: #032236;
   }
 }
 
 h2 {
   font-size: 24px;
+  c {
+    color: #123752;
+  }
 }
 
 h3 {
   font-size: 20px;
+  d {
+    color #23445D;
+  }
 }
 
 h4 {
@@ -69,6 +75,24 @@ p {
 }
 
 a {
+  color: $blue;
+  text-decoration: none;
+	cursor: pointer;
+  &:hover, &:active {
+    color: $blue;
+  }
+}
+
+c {
+  color: $blue;
+  text-decoration: none;
+	cursor: pointer;
+  &:hover, &:active {
+    color: $blue;
+  }
+}
+
+d {
   color: $blue;
   text-decoration: none;
 	cursor: pointer;
