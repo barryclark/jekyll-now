@@ -39,8 +39,9 @@ October 25: Jin Wang
 
 November 1: Shaohua Wang
 
-
-# Papers
+# Suggested Papers
+<iframe src="https://docs.google.com/document/d/17SuoVIIDbCae5GnxSHGO5BW2zbVP6wBCbaGGfgFLAOQ/pub?embedded=true" width = "800" height = "150" style="border:1px solid lightgrey;"></iframe>
+# Past/Current Papers
 
 <div class="posts">
   {% for post in site.posts %}
