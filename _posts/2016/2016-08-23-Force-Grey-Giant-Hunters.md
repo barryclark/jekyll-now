@@ -1,17 +1,21 @@
 ---
 layout: post
-title: Goldieblox Releases Invention Mansion
-description: Goldieblox releases its take on the dollhouse, the Invention Mansion.
-category: toys
-featured: inventionmansion.jpg
-tags: [toys, goldieblox, invention mansion, stem]
+title: "Force Grey: Giant Hunters"
+description: "A new weekly Dungeon & Dragons series, Force Grey: Giant Hunters, airs on the Nerdist YouTube channel"
+category: games
+featured: forcegrey.jpg
+tags: [games, D&D, nerdist, rpgs, matthew mercer, video, forgotten realms, storm king's thunder]
 author: Rob Kalajian
 ---
 
-We're huge fans of [Goldieblox](http://www.goldieblox.com) in our house. For those who don't know, Goldieblox puts out STEM-related products focused at girls in the form of building and invention sets. We've got a few sets ranging from a simple zipline to a zoetrope animation studio. Everything they do has been thought of from the ground up. Building manuals are written in the form of stories, or as build diaries written by the various Goldieblox characters. Pieces are sturdy and colorful, never straying far from anything but their functional use.
+I never thought I'd enjoy watching people play RPGs. I couldn't quite get into [Critical Role](http://geekandsundry.com/shows/critical-role/), though I love Matthew Mercer and crew. It's just too long. Too raw. Then came Wil Wheaton's [Titansgrave](http://geekandsundry.com/shows/titansgrave/). It was edited into one hour chunks, had some cool art to go with it, and was a joy to watch. I also really enjoyed the one-off [D&Diesel](http://geekandsundry.com/vin-diesel-nerdist-and-geek-and-sundrys-critical-roll-battle-in-ddiesel/) video that Geek & Sundry and The Nerdist put together with Vin Diesel.
 
-![Invention Mansion](/images/goldieblox/mansion.jpg)
+Now I've discovered the Nerdist is putting out [Force Grey: Giant Hunters](http://dnd.wizards.com/articles/features/force-grey-giant-hunters), an edited D&D show with Matthew Mercer as the DM and a bunch of geek celebrities as the players. Episodes are around 30 minutes long, and follow the adventures of Whil Wee-Tawn (Chris Hardwick), Dagny Halvor (Ashley Johnson), Brawlwin Chainminer (Shelby Fero), Joppa (Jonah Ray), Hitch (Utkarsh Ambudkar), and eventually Calliope (Brian Posehn). It's a bit more combat focused than Titansgrave was, but that's not a bad thing. It's also much shorter. 7 30-minute episodes as opposed to 10 1-hour episodes.
 
-Now Goldieblox is releasing their version of the dollhouse. Called the [Invention Mansion](http://www.goldieblox.com/products/invention-mansion), it's over 350 pieces that will give kids the power to build the house however they please. An included manual is filled with ideas to get them started, and there's tons of fun features to add into the mansion like a trap door, zipline, balcony, bridges, levers, linkages, climbing wall, and more.
+The show was put together with the help of Legendary Digital to promote the new Forgotten Realms Storm King’s Thunder adventure releasing in the fall.
 
-The Invention Mansion is up for a [limited pre-sale](http://www.goldieblox.com/products/invention-mansion) for $60 right now. It looks amazing, and I'm sure out kids will be digging into this set at soon as it arrives.
+I've been enjoying the hell out of this one, and am really hoping for more. Matt is a great DM, and the players are hilarious and a blast to watch as they stumble over each other and overcome the obstacles thrown at them.
+
+Checkout Episode 1 below, then watch the rest on [The Nerdist's YouTube channel](https://www.youtube.com/playlist?list=PLl4T6p7km9daNfMrrEpm9mFzuP-TSmDMe).
+
+<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/PayUbNeSHbU' frameborder='0' allowfullscreen></iframe></div>
