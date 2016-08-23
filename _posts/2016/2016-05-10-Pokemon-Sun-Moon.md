@@ -3,7 +3,7 @@ layout: post
 title: Pokemon Sun and Pokemon Moon Launches November 18
 description: The Pokémon Company International and Nintendo have finally announced the release date of the latest Pokémon titles, Pokémon Sun and Pokémon Moon.
 featured: pokemoon.png
-category: video-games
+category: video games
 tags: [video games, pokemon, pokemon sun, pokemon moon, the pokemon company, gamefreak, nintendo]
 author: Rob Kalajian
 ---

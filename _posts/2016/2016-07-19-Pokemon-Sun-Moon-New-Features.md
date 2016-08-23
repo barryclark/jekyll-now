@@ -2,7 +2,7 @@
 layout: post
 title: New Pokemon and Features Announced for Pokemon Sun and Moon
 description: The Pokémon Company has released more Pokémon Sun and Moon information, including information on the Hyper Training and Pokémon.
-category: video-games
+category: video games
 featured: mimikyu.png
 tags: [video games, pokemon, pokemon sun, pokemon moon, the pokemon company, gamefreak, nintendo]
 author: Rob Kalajian

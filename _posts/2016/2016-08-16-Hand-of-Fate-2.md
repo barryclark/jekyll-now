@@ -4,7 +4,7 @@ title: "Hand of Fate 2 - New Companion"
 description: "An interesting game gets a sequel, and a new companion"
 category: video games
 featured: handfate2.jpg
-tags: [video-games, hand of fate 2, defiant development]
+tags: [video games, hand of fate 2, defiant development]
 author: Rob Kalajian
 ---
 

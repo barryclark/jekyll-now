@@ -3,7 +3,7 @@ layout: post
 title: Triple Triad on Mobile
 description: I've been a fan of Triple Triad ever since I first played it in Final Fantasy 8. Now it hits mobile phones.
 featured: tripletriad.png
-category: video-games
+category: video games
 tags: [video games, triple triad, final fantasy]
 author: Rob Kalajian
 ---

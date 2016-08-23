@@ -2,7 +2,7 @@
 layout: post
 title: Pokemon Sun and Moon Z-Moves and More
 description: The Pokémon Company has released more Pokémon Sun and Moon information, including information on the Z-Moves and Pokémon.
-category: video-games
+category: video games
 featured: alolapop.jpg
 tags: [video games, pokemon, pokemon sun, pokemon moon, the pokemon company, gamefreak, nintendo]
 author: Rob Kalajian

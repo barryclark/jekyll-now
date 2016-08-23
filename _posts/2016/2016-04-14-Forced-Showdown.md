@@ -2,7 +2,7 @@
 layout: post
 title: Forced Showdown
 description: Forced showdown is an action game with a deck-building mechanic. Checkout the stream of my initial play.
-category: video-games
+category: video games
 featured: forced-showdown.png
 tags: [stream, video games]
 author: Rob Kalajian

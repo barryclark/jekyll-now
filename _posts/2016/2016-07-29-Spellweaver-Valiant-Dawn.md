@@ -2,7 +2,7 @@
 layout: post
 title: Spellweaver - Valiant Dawn
 description: The first new set for Spellweaver, Valiant Dawn, has been released.
-category: video-games
+category: video games
 featured: vdawn.png
 tags: [video games, spellweaver, ccg, valiant dawn, dream reactor]
 author: Rob Kalajian

@@ -2,7 +2,7 @@
 layout: post
 title: The Silver Case HD Remaster Demo Released
 description: The Silver Case HD remaster now has demo containing the first chapter of the game.
-category: video-games
+category: video games
 featured: silvercase.png
 tags: [video games, suda51, the silver case, grasshopper manufacture]
 author: Rob Kalajian
