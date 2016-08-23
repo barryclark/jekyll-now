@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hello world!
-description: My first blog post where I talk about the process of creating and using a Jekyll based website.
+description: The process of creating and using a Jekyll based website.
 tags: jekyll, markdown, github, optimization, sitebeam, speed, cookies, github, ruby, gem
 ---
 
