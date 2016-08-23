@@ -5,7 +5,7 @@ description: My first blog post where I talk about the process of creating and u
 tags: jekyll, markdown, github, optimization, sitebeam, speed, cookies
 ---
 
-# Customizing the blog using Jekyll and testing its speed.
+## Customizing the blog using Jekyll and testing its speed.
 
 Setting the website up was relatively easy more so once I found out about the [Jekyll Now](https://github.com/barryclark/jekyll-now) project which I simply forked to create my version of the website. You can read more about this at the [About](https://victormarcu.github.io/about/) section.    
 
@@ -23,13 +23,13 @@ var message = "hello world";
 alert(message);
 ```
 
-## Advantages of static pages
+### Advantages of static pages
 
 As you probably guessed, the most important advantage I have by running this site is _**simplicity**_. My Jekyll website is minimal and fast, making only 3 HTTP requests (including my profile picture) and no calls to any sort of database. Besides that, the design is simple and mobile-friendly.
 
 
 
-## _later edit:_ Optimizing the website:
+### _later edit:_ Optimizing the website:
 
 I have decided to further optimize the project and to do this, I first need to get a quick analysis of my website.  
 Using [SiteBeam](http://sitebeam.net/) (I recommend the [free trial](http://trial.sitebeam.net/))  I can analyse my website and easily find and solve some of its minor problems.
@@ -49,7 +49,7 @@ This is mainly due to the advantages Jekyll offers, making it my preferred choic
 
 The biggest problem the website faces is its low social interest and user engagement. I hope I can solve this problem in time by continuing to add more blog entries or some tutorials/information about things that interest me.
 
-## Cookies
+### Cookies
 Although unrelated to optimization, I have decided to add a message notifying users of my use of cookies. European laws require that digital publishers give visitors to their sites and apps information about their use of cookies and other forms of local storage.
 
 ### All in all..
