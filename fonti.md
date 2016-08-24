@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Fonti Utili
+title: Fonti
 permalink: /fonti/
 ---
 
