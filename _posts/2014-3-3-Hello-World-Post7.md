@@ -69,3 +69,7 @@ Test another gif (under images) - manually add (/images/)
 
 Finally, it works. Supposedly only /images folder works for "gasp" images. Why would prose.io's standard output be the same folder as my posts. It doesn't work. I need to be able to change it
 
+-------------
+Okay. Anotehr test.
+
+![2016-08-24_14-57-21.gif]({{site.baseurl}}/images/2016-08-24_14-57-21.gif)
