@@ -6,7 +6,7 @@
 name: Enes Ozturk
 
 # Short bio or description (displayed in the header)
-description: software and paragliding lover.
+description: Software and paragliding lover.
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
@@ -18,15 +18,15 @@ avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/je
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email:oztrkeness@gmail.com
+  email: oztrkeness@gmail.com
   facebook:
   flickr:
-  github: oztrkeness
+  github: https://github.com/oztrkeness
   instagram:
   linkedin:
   pinterest:
   rss: # just type anything here for a working RSS icon
-  twitter: 
+  twitter:
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
@@ -82,5 +82,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - LICENSE
+  - README.md
+  - CNAME
   - README.md
   - CNAME
