@@ -3,8 +3,6 @@ layout: post
 title: How we're using Machine Learning to change the current state of disease detection
 ---
 
-Diagnosing medical conditions such as sickle cell disease can become much, much faster. 
-![A sickle cell next to a healthy cell.](https://raw.githubusercontent.com/rohan-varma/rohan-blog/master/images/sickle2.png "A sickled cell next to a healthy cell.")
 ### Bringing Deep Learning into the field of NLP
 
 Recently, there’s been a lot of advancement in using neural networks and other deep learning algorithms to obtain high performance on a variety of NLP tasks. Traditionally, the bag of words model along with classifiers that use this model, such as the Maximum Entropy Classifier, have been successfully leveraged to make very accurate predictions in NLP tasks such as sentiment analysis. However, with the advent of deep learning research and its applications to NLP, discoveries have been made that improve the accuracy of these methods in primarily two ways: a supervised neural network to run your input through several classifications, and an unsupervised neural network optimize feature selection as a pre-training step.
