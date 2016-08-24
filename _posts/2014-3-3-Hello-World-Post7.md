@@ -35,3 +35,7 @@ again.....
 Again..why doesn't it work?!
 ![testaa.gif]({{site.baseurl}}/_posts/testaa.gif)
 
+WHY DOESN"T IT WORK 
+![testaa.gif]({{site.baseurl}}/_images/testaa.gif)
+
+( I added image manually this time ^)
