@@ -2,10 +2,11 @@
 layout: post
 title: Applying Neural Networks to Natural Language Processing Tasks
 ---
+![Inputs into a neuron and its output.](http://deeplearning.stanford.edu/wiki/images/thumb/8/85/STL_Logistic_Classifier.png/380px-STL_Logistic_Classifier.png "Inputs into a neuron and its output.")
 
 ### Bringing Deep Learning into the field of NLP
 
-Recently, there’s been a lot of advancement in using neural networks and other deep learning algorithms to obtain high performance on a variety of NLP tasks. Traditionally, the bag of words model along with classifiers that use this model, such as the Maximum Entropy Classifier, have been successfully leveraged to make very accurate predictions in NLP tasks such as sentiment analysis. However, with the advent of deep learning research and its applications to NLP, discoveries have been made that improve the accuracy of these methods in primarily two ways: a supervised neural network to run your input through several classifications, and an unsupervised neural network optimize feature selection as a pre-training step.
+Recently, there’s been a lot of advancement in using neural networks and other deep learning algorithms to obtain high performance on a variety of NLP tasks. Traditionally, the bag of words model along with classifiers that use this model, such as the Maximum Entropy Classifier, have been successfully leveraged to make very accurate predictions in NLP tasks such as sentiment analysis. However, with the advent of deep learning research and its applications to NLP, discoveries have been made that improve the accuracy of these methods in primarily two ways: a supervised neural network to run your input through several layers of classification functions, and an unsupervised neural network to optimize feature selection as a pre-training step.
 
 ### How can Neural Networks and other Deep Learning algorithms help? 
 
