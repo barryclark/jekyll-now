@@ -14,3 +14,6 @@ It looks like Jerkyll runs by uhm alphabetical order of the name of post name
 wasn't saving eralier because name the same
 
 i wonder if my gif setup works nsow![]({{site.baseurl}}/)![2016-08-24_12-46-36.gif]({{site.baseurl}}/_posts/2016-08-24_12-46-36.gif)
+
+does it work again ![ONENOTE_2016-08-23_10-22-33.png]({{site.baseurl}}/_posts/ONENOTE_2016-08-23_10-22-33.png)
+(dog pic)
