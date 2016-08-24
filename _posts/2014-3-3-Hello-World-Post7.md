@@ -40,5 +40,5 @@ WHY DOESN"T IT WORK
 
 ( I added image manually this time ^)
 
-({{ site.baseurl }}/images/testaa.png)
+({{ site.baseurl }}/images/testaa.gif)
 Now I added it manually.. sigh prose.io isn't working
