@@ -1,4 +1,6 @@
 ---
+layout: post
+title: Title of Post!
 published: true
 ---
 ## 4th post
