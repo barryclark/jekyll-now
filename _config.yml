@@ -3,10 +3,10 @@
 #
 
 # Name of your site (displayed in the header)
-name: Your Name
+name: Enes Ozturk
 
 # Short bio or description (displayed in the header)
-description: Web Developer from Somewhere
+description: Software and paragliding lover.
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
@@ -18,6 +18,10 @@ avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/je
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
+  email: oztrkeness@gmail.com
+  facebook:
+  flickr:
+  github: https://github.com/oztrkeness
   email:
   facebook:
   flickr:
@@ -26,6 +30,7 @@ footer-links:
   linkedin:
   pinterest:
   rss: # just type anything here for a working RSS icon
+  twitter:
   twitter: jekyllrb
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
@@ -83,4 +88,7 @@ exclude:
   - Gemfile.lock
   - LICENSE
   - README.md
+  - CNAME
+  - README.md
+  - CNAME
   - CNAME
