@@ -16,4 +16,6 @@ See here![]({{site.baseurl}}/http://i.imgur.com/6gOnmtD.png)
 
 with ShareX
 
+(2nd commit) why hasnt it finished working on my site?
+http://i.imgur.com/UhOZ2qO.png
 
