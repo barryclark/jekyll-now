@@ -56,4 +56,4 @@ AGAIN OMG
 
 test again, sitebase URL
 
-![Step 1]({{ site.baseurl }}/images/testaa.gif "test")
+![_config.yml]({{ site.baseurl }}/images/testaa.gif "test")
