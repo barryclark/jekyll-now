@@ -120,12 +120,12 @@ http://www.easyicon.net/language.en/1172671-png_icon.html
 ![Alt text](https://raw.githubusercontent.com/3gstudent/3gstudent.github.io/master/_posts/2016-7-15/2-2.PNG)
 
 
-###(1) PNG文件署名域
+### (1) PNG文件署名域
 
 固定格式：
 
 `89 50 4e 47 0d 0a 1a 0a `
-###(2) IHDR
+### (2) IHDR
 
 
 00000008h: 00 00 00 0D 49 48 44 52 00 00 00 1A 00 00 00 1A ; ....IHDR........
