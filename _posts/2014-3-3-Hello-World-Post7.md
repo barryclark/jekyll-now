@@ -73,3 +73,11 @@ Finally, it works. Supposedly only /images folder works for "gasp" images. Why w
 Okay. Anotehr test. All I did here was drag and drop, but changed it to "images" instead of "_posts"
 
 ![2016-08-24_14-57-21.gif]({{site.baseurl}}/images/2016-08-24_14-57-21.gif)
+
+WELL, NOW IT WORKS JUST FINE. Its pretty fast and efficient, however **why the heck does default to _posts_ instead of "images"** . Tad inconvenient
+
+![chrome_2016-08-24_14-59-36.png]({{site.baseurl}}/images/chrome_2016-08-24_14-59-36.png)
+
+that's what it looks like on my jerkyll
+
+What I'm doing is dragging and dropping files, after Using ShareX under my clover program (similar to adobe bridge)
