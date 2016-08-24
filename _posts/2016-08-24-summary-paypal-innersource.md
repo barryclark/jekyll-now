@@ -19,7 +19,7 @@ Before I dive more into the topic, let me first summarize what InnerSource stand
 
 What made us excited about the InnerSource concept was the premise to unwind or at least greatly reduce those external dependencies, and thereby freeing up the core team to focus on evolving the platform itself. It does so by offering dependent projects the ability to add their required enhancements to the platform code base vs. having to wait for the platform team do it for them.
 
-While it appears to be counter-intuitve at first, remember that (a) this is how Open Source works (and you can hardly argue that it does not scale) and (b) the external team regains control over their own project schedule in exchange for  extra work. The latter is an extremely powerful motivator, especially if you consider that the change might be small or incremental, but keeps being deprioritzed by the platform team due to some other feature from some other projects.
+While it appears to be counter-intuitive at first, remember that (a) this is how Open Source works (and you can hardly argue that it does not scale) and (b) the external team regains control over their own project schedule in exchange for  extra work. The latter is an extremely powerful motivator, especially if you consider that the change might be small or incremental, but keeps being deprioritzed by the platform team due to some other feature from some other projects.
 
 To me there are two macro patterns at work here, which seem to point into the same direction:
 
@@ -67,7 +67,7 @@ Here are my notes from the various sessions under the [Chatham House Rule](https
 ### Workshop
 
 * Existing model: variations of 'big cheese gets stuff done'
-  * *I could not find a good explanation for it, but the expression means that some inidvidual's idenity and self-worth are tied to 'being the one which get stuff done'.*
+  * *I could not find a good explanation for it, but the expression means that some inidvidual's identity and self-worth are tied to 'being the one which get stuff done'.*
 * OSS Apache Model: 
   * ratio of users/contributors/trusted committers/lead is 1000/100/10/1
 * How can we make trusted committer to not be the chokepoint
@@ -99,7 +99,7 @@ Here are my notes from the various sessions under the [Chatham House Rule](https
 * Training of trusted committers 
   * keeper of the flame
   * not everybody will be good at this (rotating)
-  * its all about mentorship (legacy? do you have kids? did you come here alone?)
+  * its all about mentorship (did you get that far by yourself?)
     * what mentor do you want to be
     * growing a new culture
 	* do it a sprint at the time
