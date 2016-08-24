@@ -19,3 +19,5 @@ This is the edit I made thus far
 let's try adding a random gif. Like the one of me typing
 
 ![2016-08-24_13-57-04.gif]({{site.baseurl}}/_posts/2016-08-24_13-57-04.gif)
+
+let's try again, this time using an imgur link instead.
