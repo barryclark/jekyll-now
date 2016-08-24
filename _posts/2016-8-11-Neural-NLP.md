@@ -15,7 +15,7 @@ At its core, deep learning (and neural networks) are all about giving the comput
 
 The Max Entropy classifier, commonly abbreviated to a Maxent classifier, is a common probabilistic model used in NLP. Given some contextual information in a document (in the form of multisets, unigrams, bigrams, etc), this classifier attempts to predict the class label (positive, negative, neutral) for it. This classifier is also used in neural networks, and it’s known as the softmax layer - the final layer (and sometimes only) in the network used for classification. So, we can model a single neuron in a neural network as computing the same function as a max entropy classifier:
 
-```insert image here```
+![Inputs into a neuron and its output.](https://raw.githubusercontent.com/rohan-varma/rohan-blog/gh-pages/images/NLPfirst.png "Inputs into a neuron and its output.")
 
 Here, x is our vector of inputs, the neuron computes the function with parameters w and b and outputs a single result in h.
 
