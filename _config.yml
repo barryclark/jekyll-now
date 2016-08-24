@@ -3,13 +3,13 @@
 #
 
 # Name of your site (displayed in the header)
-name: Libby Hemphill
+name: Research Methods in Digital Humanities Fall 2016
 
 # Short bio or description (displayed in the header)
-description: instructor for HUM 380-COM 601
+description: class blog for HUM 380-COM 601. photo credit Worcester Polytechnic Institute.
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://avatars3.githubusercontent.com/u/182478?v=3&s=460
+avatar: http://digitalcommons.wpi.edu/assets/md5images/b4c617958499eb7e0ccfed03fd5999cb.gif
 
 #
 # Flags below are optional
@@ -21,12 +21,12 @@ footer-links:
   email:
   facebook:
   flickr:
-  github: libbyh
+  github: 
   instagram:
   linkedin:
   pinterest:
   rss: # just type anything here for a working RSS icon
-  twitter: libbyh
+  twitter: 
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
@@ -47,7 +47,7 @@ url:
 # (http://yourusername.github.io/repository-name)
 # and NOT your User repository (http://yourusername.github.io)
 # then add in the baseurl here, like this: "/repository-name"
-baseurl: "/jekyll-now-demo"
+baseurl: "/methods-f16"
 
 #
 # !! You don't need to change any of the configuration flags below !!
