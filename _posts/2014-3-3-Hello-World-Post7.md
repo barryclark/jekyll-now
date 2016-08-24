@@ -57,3 +57,9 @@ AGAIN OMG
 test again, sitebase URL
 
 ![_config.yml]({{ site.baseurl }}/images/testaa.gif "test")
+
+---------------
+Test a better gif 
+
+![2016-08-24_14-45-26.gif]({{site.baseurl}}/_posts/2016-08-24_14-45-26.gif)
+
