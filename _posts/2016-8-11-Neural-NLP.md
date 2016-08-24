@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How we're using Machine Learning to change the current state of disease detection
+title: Applying Neural Networks to Natural Language Processing Tasks
 ---
 
 ### Bringing Deep Learning into the field of NLP
