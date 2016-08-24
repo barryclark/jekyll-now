@@ -53,3 +53,7 @@ modified
 AGAIN OMG
 
 ![Step 1](/images/_testaa.gif "Step 1")
+
+test again, sitebase URL
+
+![tag here]({{ site.baseurl }}/images/testaa.gif)
