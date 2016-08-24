@@ -42,3 +42,6 @@ WHY DOESN"T IT WORK
 
 ![_config.yml]({{ site.baseurl }}/images/testaa.gif)
 Now I added it manually.. sigh prose.io isn't working
+
+![Step 1](/images/step1.gif "Step 1")
+copyp asted
