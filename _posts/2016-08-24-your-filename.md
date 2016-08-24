@@ -19,3 +19,4 @@ with ShareX
 (2nd commit) why hasnt it finished working on my site?
 http://i.imgur.com/UhOZ2qO.png
 
+ah I see why its not published. Its right here![]({{site.baseurl}}/http://i.imgur.com/Fsk6Bl0.png)
