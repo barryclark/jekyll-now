@@ -17,14 +17,14 @@ We first got exposed to the InnerSource concept through a talk by PayPal at the 
 Before I dive more into the topic, let me first summarize what InnerSource stands for: To apply the concepts of Open Source to the closed internal software inside of your company. You can read more about it at the [InnerSource Commons](http://paypal.github.io/InnerSourceCommons/) and/or download a free copy of the [InnerSource eBook](http://www.oreilly.com/programming/free/getting-started-with-innersource.csp). If you google it you will also find some articles, for instance [here](http://thenewstack.io/github-bloomberg-talk-using-innersource-build-open-source-project-development-behind-company-firewalls/) and [here](https://www.infoq.com/news/2015/10/innersource-at-paypal). 
 
 
-What made us excited about the InnerSource concept was the premise to unwind or at least greatly reduce those external dependencies, and thereby freeing up the core team to focus on evolving the platform itself. It does so by offering dependent projects the ability to add their required enhancements to the platform code basis vs. having to wait for the platform team do it for them.
+What made us excited about the InnerSource concept was the premise to unwind or at least greatly reduce those external dependencies, and thereby freeing up the core team to focus on evolving the platform itself. It does so by offering dependent projects the ability to add their required enhancements to the platform code base vs. having to wait for the platform team do it for them.
 
 While it appears to be counter-intuitve at first, remember that (a) this is how Open Source works (and you can hardly argue that it does not scale) and (b) the external team regains control over their own project schedule in exchange for  extra work. The latter is an extremely powerful motivator, especially if you consider that the change might be small or incremental, but keeps being deprioritzed by the platform team due to some other feature from some other projects.
 
 To me there are two macro patterns at work here, which seem to point into the same direction:
 
-* Change the perspective from a point solution (add more developer) to changing the system (enable external teams to take care of itself). The same can be said about the [Netflix approach of 'Chaos Engineering'](http://readwrite.com/2014/09/17/netflix-chaos-engineering-for-everyone/). Instead of pretending that QA can catch every bug (and thereby contributing to an illusion of bug-free systems), deliberatly introduce failure into the system to force engineers to design software anticipating the presence of failure.
-* Efficiency and Speed are goals at opposite ends (I owe that insight to the folks from Thoughtworks). You can not have both of them at the same time. Microservices (MSA) embrace speed over efficiency through its `shared nothing` architectural approach. In effect MSA is saying that databases and app servers are commodity by now and that you do not gain significant business value by using them efficiently. MSA emphasizes duplication and the reduction of cross dependencies over having a central instance which will become the bottleneck. 
+* Change the perspective from a point solution (add more developer) to changing the motivators in the system (enable external teams to take care of itself). The same can be said about the [Netflix approach of 'Chaos Engineering'](http://readwrite.com/2014/09/17/netflix-chaos-engineering-for-everyone/). Instead of pretending that QA can catch every bug (and thereby contributing to an illusion of bug-free systems), Netflix deliberatly introduces failure into the system to force engineers to design software anticipating the presence of failure.
+* Efficiency and Speed are goals at opposite ends (I owe that insight to the folks from Thoughtworks). You can not have both of them at the same time. Microservices (MSA) embrace speed over efficiency through its emphasize on a `shared nothing` approach. In effect MSA is saying that databases and app servers are commodity by now and that you do not gain significant business value by using them efficiently. MSA emphasizes duplication and the reduction of cross dependencies over having a central instance which will become the bottleneck. 
 
 Las but not least I would like to thank Danese Cooper and her team for so openly sharing their lessons and knowledge.
 
@@ -62,12 +62,12 @@ Here are my notes from the various sessions under the [Chatham House Rule](https
   * developer does not have production access
   * legal information is isolated  
   * production access nur ueber audited tool 
-    * *[Holger]: Example for such an audting framework on AWS from Zalando: [https://stups.io]()*
+    * [Holger]: Example for such an audting framework on AWS from Zalando: https://stups.io
 
 #### Workshop
 
 * Existing model: variations of 'big cheese gets stuff done'
-  * *[Holger]: I could not find a good explanation for it, but the expression means that some inidvidual's idenity and self-worth are tied to 'being the one which get stuff done'.*   
+  * [Holger]: I could not find a good explanation for it, but the expression means that some inidvidual's idenity and self-worth are tied to 'being the one which get stuff done'.  
 * OSS Apache Model: 
   * ratio of users/contributors/trusted committers/lead is 1000/100/10/1
 * How can we make trusted committer to not be the chokepoint
@@ -80,12 +80,12 @@ Here are my notes from the various sessions under the [Chatham House Rule](https
       * refactoring clues for core team
       * lazy documentation through discussion threads
       * also extrinsic rewards
-        * i.e. I give you a beer for that, badges
+        * i.e. I give you a beer for that, or Badges
         * Could there be rewards for archiving committer status on external projects?
 * Tooling for inner source
-  * [http://innersourcecommons.org]()
-  * [https://www.youtube.com/watch?v=r4QU1WJn9f8]()
-  * [http://www.inner-sourcing.com]()
+  * <http://innersourcecommons.org>
+  * <https://www.youtube.com/watch?v=r4QU1WJn9f8>
+  * <http://www.inner-sourcing.com>
 * KPI’s to measure the success of the ‘openness’ 
   * To change culture, you can not just do it from the inside, but also create pressure from the outside
   * Create transparency by making all code repos by default visible/public within the company
@@ -106,8 +106,8 @@ Here are my notes from the various sessions under the [Chatham House Rule](https
     * have rules of engagement
     * why - because it is leadership (it is about mentoring)
 	* visible rewards
-	  * [http://openbadges.org]()
-	  * [https://en.wikipedia.org/wiki/Mozilla_Open_Badges]()
+	  * <http://openbadges.org>
+	  * <https://en.wikipedia.org/wiki/Mozilla_Open_Badges>
 
 
 #### Interviews and Lessons Learnt
