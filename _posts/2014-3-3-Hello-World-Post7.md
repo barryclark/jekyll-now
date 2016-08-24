@@ -22,3 +22,9 @@ let's try adding a random gif. Like the one of me typing
 
 let's try again, this time using an imgur link instead.
 ![]({{site.baseurl}}/http://i.imgur.com/p0mCxaJ.gif)
+
+Let's try one more time. I found out you need to default the location. Its
+![]({{site.baseurl}}/http://i.imgur.com/n395ruD.gif)
+
+Again,,,
+![https://github.com/AnacondaPython/anacondapython.github.io/tree/master/images]({{site.baseurl}}/_posts/2016-08-24_14-06-09.gif)
