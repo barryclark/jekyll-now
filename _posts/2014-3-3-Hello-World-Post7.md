@@ -39,3 +39,6 @@ WHY DOESN"T IT WORK
 ![testaa.gif]({{site.baseurl}}/_images/testaa.gif)
 
 ( I added image manually this time ^)
+
+({{ site.baseurl }}/images/testaa.png)
+Now I added it manually.. sigh prose.io isn't working
