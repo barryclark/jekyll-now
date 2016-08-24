@@ -33,8 +33,7 @@ Journal club meetings take place on Tuesdays at 1pm in the Life Sciences Buildin
 
 
 
-# Suggested Papers
-<iframe src="https://docs.google.com/document/d/17SuoVIIDbCae5GnxSHGO5BW2zbVP6wBCbaGGfgFLAOQ/pub?embedded=true" width = "800" height = "300" style="border:1px solid lightgrey;"></iframe>
+# [Suggested Papers](https://www.google.com/url?q=https://docs.google.com/document/d/17SuoVIIDbCae5GnxSHGO5BW2zbVP6wBCbaGGfgFLAOQ/edit?usp%3Dsharing&sa=D&ust=1472068897083000&usg=AFQjCNF5f_dZMloe4l3jWOm_mhxe7utbqw)
 
 # Past/Current Papers
 
