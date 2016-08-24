@@ -45,3 +45,7 @@ Now I added it manually.. sigh prose.io isn't working
 
 ![Step 1](/images/step1.gif "Step 1")
 copyp asted
+
+modified 
+
+![Step 1](/images/testaa.gif "Step 1")
