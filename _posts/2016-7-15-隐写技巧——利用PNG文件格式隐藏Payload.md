@@ -120,6 +120,7 @@ http://www.easyicon.net/language.en/1172671-png_icon.html
 ![Alt text](https://raw.githubusercontent.com/3gstudent/3gstudent.github.io/master/_posts/2016-7-15/2-2.PNG)
 
 
+
 ### (1) PNG文件署名域
 
 固定格式：
