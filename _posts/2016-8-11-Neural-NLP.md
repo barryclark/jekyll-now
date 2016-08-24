@@ -45,15 +45,15 @@ This unsupervised neural network is powerful, especially when considered in the 
 
 Current researchers are investigated the use of recursive neural networks to learn how sentences are broken down into tree structures. This recursive deep learning network can then successfully learn how to map similar sentences into the same vector space, even though they may be composed of words that mean entirely different things.
 
-If you want to learn about deep learning and neural networks for NLP in detail, I’d high recommend Stanford’s course on it: LINK TO IT HERE CS224d: Deep Learning for Natural Language Processing.
+If you want to learn about deep learning and neural networks for NLP in detail, I’d high recommend Stanford’s course on it: [Deep Learning for Natural Language Processing](http://cs224d.stanford.edu/).
 
 ### Sources
 
-Hidden Layer Neural Networks: Deep Learning, NLP, and Representations
+[Hidden Layer Neural Networks: Deep Learning, NLP, and Representations](http://colah.github.io/posts/2014-07-NLP-RNNs-Representations/)
 
-Machine Learning Tutorial: The Max Entropy Text Classifier
+[Machine Learning Tutorial: The Max Entropy Text Classifier](http://blog.datumbox.com/machine-learning-tutorial-the-max-entropy-text-classifier/)
 
-Stanford’s Deep Learning Tutorial
+[Stanford’s Deep Learning Tutorial](http://1.%20http//nlp.stanford.edu/courses/NAACL2013/NAACL2013-Socher-Manning-DeepLearning.pdf%20(http://nlp.stanford.edu/courses/NAACL2013/NAACL2013-Socher-Manning-DeepLearning.pdf))
 
-CS224d: Deep Learning for Natural Language Processing
+[CS224d: Deep Learning for Natural Language Processing](http://cs224d.stanford.edu/index.html)
 
