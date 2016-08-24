@@ -32,7 +32,7 @@ Here is a quick summary of my highlights of QCon New York from June 13th to June
 
 ### Implementing Infrastructure as Code
 * [Description](https://qconnewyork.com/ny2016/presentation/implementing-infrastructure-code) and [slides](https://qconnewyork.com/system/files/presentation-slides/implementing_iac_-_qcon_nyc_2016.pdf)
-* Website at [http://infrastructure-as-code.com]()
+* Website at <http://infrastructure-as-code.com>
 * Motivations:
 	* speed: get something to market fast, iterate, continuously improve it
 		* heavy process to reduce danger vs everything goes
@@ -43,11 +43,11 @@ Here is a quick summary of my highlights of QCon New York from June 13th to June
 	* Applying software engineering tools to managing the infrastructure
 	* Unattended automation (enforces discipline, discourages ‘out-of-band’ changes
 	* Changes need to be tested as well, before doing a **DevOoops**
-		* See [http://serverspec.org]()
+		* See <http://serverspec.org>
 	* The process for applying changes is auditable (the responsible part)
 		* Changes are tracked by commit
 		* Automation enforces that processes are executed
-		* See [http://47ron.in/blog/2015/01/16/terraform-dot-io-all-hail-infrastructure-as-code.html]()
+		* See <http://47ron.in/blog/2015/01/16/terraform-dot-io-all-hail-infrastructure-as-code.html>
 * Think about duplication
 	* Re-use by forking: divergence vs decoupling
 	* Sharing elements avoid monoliths - optimize to simplify changes
@@ -56,21 +56,21 @@ Here is a quick summary of my highlights of QCon New York from June 13th to June
 	
 ### Think before you tool
 * [Description](https://qconnewyork.com/ny2016/presentation/think-before-you-tool-opinionated-journey)
-* Centralized Log Analysis: [https://prometheus.io]()
-* Microservice dependency graphing and monitoring: [http://zipkin.io]()
+* Centralized Log Analysis: <https://prometheus.io>
+* Microservice dependency graphing and monitoring: <http://zipkin.io>
 
 ---
 
 ### Security in cloud environments
 * [Description](https://qconnewyork.com/ny2016/presentation/access-secret-management-cloud-services) and [Slides](https://qconnewyork.com/system/files/presentation-slides/identity_access_and_secret_management_-_ryan_lane_-_qcon.pdf)
 * Additional links for password and secret managers
-	* [http://docs.ansible.com/ansible/playbooks_vault.html]()
-		* [https://gist.github.com/tristanfisher/e5a306144a637dc739e7]()
-		* [http://cheat.readthedocs.io/en/latest/ansible/secrets.html]()
-	* [https://github.com/DavidAnson/PassWeb]()
-	* [https://passwork.me/info/enterprise/]()
-	* [https://lyft.github.io/confidant/]() 
-* Detecting secrets in source code: [https://eng.lyft.com/finding-a-needle-in-a-haystack-b7e0627b01f6#.f0lazahyo]()
+	* <http://docs.ansible.com/ansible/playbooks_vault.html>
+		* <https://gist.github.com/tristanfisher/e5a306144a637dc739e7>
+		* <http://cheat.readthedocs.io/en/latest/ansible/secrets.html>
+	* <https://github.com/DavidAnson/PassWeb>
+	* <https://passwork.me/info/enterprise/>
+	* <https://lyft.github.io/confidant/> 
+* Detecting secrets in source code: <https://eng.lyft.com/finding-a-needle-in-a-haystack-b7e0627b01f6#.f0lazahyo>
 
 ---
 
@@ -119,11 +119,11 @@ Here is a quick summary of my highlights of QCon New York from June 13th to June
 	* In order to hire for cultural fit, the team has to be on the same page
 	* Lessons learnt from experimenting with culture
 		* Transparency breeds trust (for team and customers)
-			* See [buffer.com/transparency]()
+			* See <hhtps://buffer.com/transparency>
 			* Buffer transparency salary calculator
-				* See [https://buffer.com/salary?r=1&l=10&e=2&q=0]()
+				* See <https://buffer.com/salary?r=1&l=10&e=2&q=0>
 			* Term sheet and valuation of round A are public
-				* See [https://open.buffer.com/raising-3-5m-funding-valuation-term-sheet/]()
+				* See <https://open.buffer.com/raising-3-5m-funding-valuation-term-sheet/>
 			* It is even more important to be transparent when things don’t go well
 			* Culture is truly tested and defined during hard times
 		* Implementing culture for a globally distributed team
@@ -144,7 +144,7 @@ Here is a quick summary of my highlights of QCon New York from June 13th to June
 				* Culture fit -> culture contribution
 				* Its the leaders job to hire for balance
 				* Hiring for culture fit assumes that culture is perfect and static
-				* See [http://diversity.buffer.com]()
+				* See <http://diversity.buffer.com>
 					* A/B testing to attract different demographics
 					* Taking hiring risks consciously (instead of reducing it)
 						* Everyone is hired for a 45 day work bootcamp (full-time contracting period)
@@ -185,7 +185,7 @@ Here is a quick summary of my highlights of QCon New York from June 13th to June
 		* Fully insured
 		* Ssingle server requiring a quorum of senior engineers to unlock/unscramble
 * Multisig Vault
-	* [https://www.coinbase.com/multisig]()
+	* <https://www.coinbase.com/multisig>
 	* Cold Storage as-a-Service (User Key, Shared Key, Coinbase Key)
 		* User needs paper and passphrase
 		* m-of-n sharding of key is possible
@@ -195,10 +195,10 @@ Here is a quick summary of my highlights of QCon New York from June 13th to June
 ### What they do not tell you about microservices
 * [Description](https://qconnewyork.com/ny2016/presentation/what-they-dont-tell-you-about-micro-services) and [Slides](https://qconnewyork.com/system/files/presentation-slides/qcon-microservices_talk_v7_for_web_upload.pdf)
 * See also
-	* [http://www.slideshare.net/DanielRolnick/microservices-and-devops-at-yodle]()
-    * [http://www.yodletechblog.com/2016/04/25/yodle-hackathon-april-2016-edition/]()
+	* <http://www.slideshare.net/DanielRolnick/microservices-and-devops-at-yodle>
+    * <http://www.yodletechblog.com/2016/04/25/yodle-hackathon-april-2016-edition/>
 * Good pragmatic steps for evolving from monolith to microservice architecture
-	* After split Postgres started to break down with connection pooling, used an external connection pooler like [https://pgbouncer.github.io]()
+	* After split Postgres started to break down with connection pooling, used an external connection pooler like <https://pgbouncer.github.io>
     * Choose mesos/marathon
     * Thrift-based macro services
     * Smart pipes vs context-aware apps
@@ -232,7 +232,7 @@ Here is a quick summary of my highlights of QCon New York from June 13th to June
 
 ### Lessons learned on Ubers journey into microservices
 * [Description](https://qconnewyork.com/ny2016/presentation/project-darwin-uber-jourbey-microservices) and [Slides](https://qconnewyork.com/system/files/presentation-slides/uber-journey_to_microservices_public.pdf)
-* See also [https://eng.uber.com/building-tincup/]()
+* See also <https://eng.uber.com/building-tincup/>
 * Very good presentation on the motivators to break apart the monolith
 
 ---
@@ -240,10 +240,10 @@ Here is a quick summary of my highlights of QCon New York from June 13th to June
 ### The deadly sins of microservices
 * [Description](https://qconnewyork.com/ny2016/presentation/seven-deadly-sins-microservices) and [Slides](https://qconnewyork.com/system/files/presentation-slides/qcon_nyc_2016_-_seven_more_deadly_sins_final.pdf)
 * See also
-	* [https://speakerdeck.com/acolyer/making-sense-of-it-all]()
-	* [http://philcalcado.com/2015/09/08/how_we_ended_up_with_microservices.html]()
-	* [http://www.slideshare.net/dbryant_uk/craftconf-preview-empathy-the-hidden-ingredient-of-good-software-development]()
-	* [https://acaseyblog.wordpress.com/2015/11/18/guiding-principles-for-an-evolutionary-architecture/]()
+	* <https://speakerdeck.com/acolyer/making-sense-of-it-all>
+	* <http://philcalcado.com/2015/09/08/how_we_ended_up_with_microservices.html>
+	* <http://www.slideshare.net/dbryant_uk/craftconf-preview-empathy-the-hidden-ingredient-of-good-software-development>
+	* <https://acaseyblog.wordpress.com/2015/11/18/guiding-principles-for-an-evolutionary-architecture/>
 * Strategic goals <-> architecture principles <-> design and delivery practices
 * Neal Ford: MSA as evolutionary architecture
 	* Architecture is hard to change, so make architecture itself evolvable
@@ -255,14 +255,14 @@ Here is a quick summary of my highlights of QCon New York from June 13th to June
 * But getting lazy with non-functional requirements
 * Just Enough Software Architecture
 	* Recommended book [Just enough software architecture](https://www.amazon.com/Just-Enough-Software-Architecture-Risk-Driven/dp/0984618104/)
-	* Ebook format available through [http://georgefairbanks.com/e-book/]()
+	* Ebook format available through <http://georgefairbanks.com/e-book/>
 * Embrace BDD-Security framework for BDD-style security testing
-	* [https://www.continuumsecurity.net/bdd-intro.html]()
+	* <https://www.continuumsecurity.net/bdd-intro.html>
 * Devops
-	* Topologies: [http://web.devopstopologies.com]()
+	* Topologies: <http://web.devopstopologies.com>
 * Testing
-	* Continues Delivery: [https://dzone.com/articles/continuously-delivering-soa]()
-	* Service virtualization: [https://github.com/SpectoLabs/hoverfly]()
+	* Continues Delivery: <https://dzone.com/articles/continuously-delivering-soa>
+	* Service virtualization: <https://github.com/SpectoLabs/hoverfly>
 		* Hoverfly is a proxy written in Go. It can capture HTTP(s) traffic between an application under test and external services, and then replace the external services. It can also generate synthetic responses on the fly.
 		
 

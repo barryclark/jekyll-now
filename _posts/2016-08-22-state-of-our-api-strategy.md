@@ -26,11 +26,11 @@ But I was delighted to see your most recent enterprise architecture white papers
 
 In the meantime we have settled on [Mashape's Kong](https://github.com/Mashape/kong) and our [own API Mgmt Portal](http://wicked.haufe.io) (one developer fulltime for 3 months) for our internal API deployments. I think you will find our portal to approach API Management from quite a different perspective than most traditional API Mgmt vendors - it fully embraces `infrastructure as code` and `immutable servers`. In our opinion it simply doesn’t make any sense to (re)introduce long running API gateway and portal servers to manage and service API’s from Microservices, which are deployed fully automated through our CI/CD pipeline. We like to think that this brings us closer to the concept of [APIOps](http://www.slideshare.net/jmusser/why-api-ops-is-the-next-wave-of-devops-62440606) - applying the same basic concepts of DevOps but to API operations.
 
-You can find more details at [http://wicked.haufe.io]().
+You can find more details at <http://wicked.haufe.io>.
 
 On the design governance side we also progressed rather nicely.  You might find our [API Styleguide](https://github.com/Haufe-Lexware/api-style-guide) of interest - I think it represents some of the best best practices from the industry. We are planning to use [Gitbook](https://www.gitbook.com) or [ReadTheDocs](https://readthedocs.org) to publish it in a better e-book style format. We took a lot of inspiration from the [Zalando API Styleguide](http://zalando.github.io/restful-api-guidelines/).
 
-The one remaining missing piece in our API story is an API registry. But again I am not looking for a repeat of the fallacy of a centralized UDDI or WSRR registry, but taking the Web as example and working something along [http://apis.io]() (Source code available at [https://github.com/apisio/apis.io]()). Central registries never worked, but Google does. Hence an API search engine with a choice or combination of
+The one remaining missing piece in our API story is an API registry. But again I am not looking for a repeat of the fallacy of a centralized UDDI or WSRR registry, but taking the Web as example and working something along <http://apis.io> (Source code available at <https://github.com/apisio/apis.io>). Central registries never worked, but Google does. Hence an API search engine with a choice or combination of
 
  * a single git repo (containing API definitions) supporting pull requests and/or
  * the ability to register commit web hooks to many git repo’s (each representing one or more API definitions) and/or 
@@ -38,7 +38,7 @@ The one remaining missing piece in our API story is an API registry. But again I
 
 will do. I found [Zalando's API Discovery](http://zalando.github.io/restful-api-guidelines/api-discovery/ApiDiscovery.html) strategy to be very inspiring, but we might start with a Repo-based approach to learn and iterate.
 
-I am still looking for contributors for that last piece of our API strategy to fall in place. But based on the already existing work in [http://apis.io]() from [3Scale](https://www.3scale.net) and the [API Evangelist](http://apievangelist.com) I think we are not that far off from where we need to be .. and if necessary we will develop the missing functionality and provide it as open source to the community.
+I am still looking for contributors for that last piece of our API strategy to fall in place. But based on the already existing work in <http://apis.io> from [3Scale](https://www.3scale.net) and the [API Evangelist](http://apievangelist.com) I think we are not that far off from where we need to be .. and if necessary we will develop the missing functionality and provide it as open source to the community.
 
 I hope this gives you a good overview over the current status of the API piece in our Technology Strategy. You can follow us at [@HaufeDev](https://twitter.com/haufedev) or find up to date information on our [Developer Blog](http://dev.haufe-lexware.com). We are tentatively planning to make an announcement of our API portal in the September time frame. 
 
