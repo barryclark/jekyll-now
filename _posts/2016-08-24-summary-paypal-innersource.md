@@ -32,7 +32,7 @@ Here are my notes from the various sessions under the [Chatham House Rule](https
 
 ---
 
-#### How does InnerSource work at Paypal
+### How does InnerSource work at Paypal
 
 * concept of a trusted [committer](https://en.wikipedia.org/wiki/Committer) (TC) within core team 
 * define a formal contributor document
@@ -62,12 +62,12 @@ Here are my notes from the various sessions under the [Chatham House Rule](https
   * developer does not have production access
   * legal information is isolated  
   * production access nur ueber audited tool 
-    * [Holger]: Example for such an audting framework on AWS from Zalando: https://stups.io
+    * *Example for such an audting framework on AWS from Zalando at <https://stups.io>*
 
-#### Workshop
+### Workshop
 
 * Existing model: variations of 'big cheese gets stuff done'
-  * [Holger]: I could not find a good explanation for it, but the expression means that some inidvidual's idenity and self-worth are tied to 'being the one which get stuff done'.  
+  * *I could not find a good explanation for it, but the expression means that some inidvidual's idenity and self-worth are tied to 'being the one which get stuff done'.*
 * OSS Apache Model: 
   * ratio of users/contributors/trusted committers/lead is 1000/100/10/1
 * How can we make trusted committer to not be the chokepoint
@@ -110,16 +110,16 @@ Here are my notes from the various sessions under the [Chatham House Rule](https
 	  * <https://en.wikipedia.org/wiki/Mozilla_Open_Badges>
 
 
-#### Interviews and Lessons Learnt
+### Interviews and Lessons Learnt
 
-##### Company 1
+#### Company 1
 * from central dev to separate dev per business units
 * resulting in a lot of redundancy over the years
 * challenge: 
   * how can we speed up product development
   * AND keep the place interesting for engineers to join the company
  
-##### Company 2
+#### Company 2
 * optimize developer productivity
   * low friction, high adaption
   * ease of use, ease of contribution
