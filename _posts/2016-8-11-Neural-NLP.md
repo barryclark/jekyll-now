@@ -21,11 +21,11 @@ Here, x is our vector of inputs, the neuron computes the function with parameter
 
 Then, a neural network with multiple neurons can simply be thought of feeding the same input to several different classification functions at the same time. The neural network is nothing more than running a given vector of inputs (x in our above picture) through many (as opposed to a single) functions, where each neuron represents a different regression function. As a result, we obtain a vector of outputs:
 
-```next image here```
+![Feeding output vectors to the next layer. ](https://raw.githubusercontent.com/rohan-varma/rohan-blog/gh-pages/images/NLP2nd.png "Feeding output vectors to the next layer.")
 
 …And you can feed this vector of outputs to another layer of logistic regression functions (or a single function), until you obtain your output, which is the probability that your vector belongs to a certain class:
 
-```next image here```
+![Output layer of the neural net. ](https://raw.githubusercontent.com/rohan-varma/rohan-blog/gh-pages/images/NLP3rd.png "Output layer of the neural net.")
 
 ### Applying Neural Networks to Unsupervised Problems in NLP
 
@@ -35,7 +35,7 @@ A valuable pre-training step for any supervised learning task in NLP (such as cl
 
 The input to such a neural network would be a matrix defined by , for example, a sentence’s word vectors. For example, consider the following phrase and its associated matrix:
 
-```catchill image here```
+![Each word has a corresponding word vector, resulting in a unique sentence matrix. ](https://raw.githubusercontent.com/rohan-varma/rohan-blog/gh-pages/images/NLP4th.png "Each word has a corresponding word vector, resulting in a unique sentence matrix.")
 
 Our neural network can then be composed of several layers, where each layer sends the previous layer’s output to a function. Training is achieved through back propagation: taking derivates using the chain rule with respect to the weights to optimize these weights. From this, the ideal weights that define our function (which is a composition of many functions) are learned. After training, we now have a method of extracting ideal feature vectors that a given word is mapped to.
 
