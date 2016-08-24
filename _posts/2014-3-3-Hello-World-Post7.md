@@ -28,3 +28,6 @@ Let's try one more time. I found out you need to default the location. Its
 
 Again,,,
 ![https://github.com/AnacondaPython/anacondapython.github.io/tree/master/images]({{site.baseurl}}/_posts/2016-08-24_14-06-09.gif)
+
+again.....
+![2016-08-24_14-06-09.gif]({{site.baseurl}}/_posts/2016-08-24_14-06-09.gif)
