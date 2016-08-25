@@ -12,7 +12,7 @@ author: Rob Kalajian
 
 <h2>Prelude</h2>
 
-Gamewright](http://gamewright.com) has released a new edition of their classic kid's game, Go Away Monster. Originally printed in 1997, and again in 2003, 2005, and 2008, the game had previously looked pretty much the same up until this new release. The 2016 edition features a new box footprint, and brand new art to bring a bit more of a modern look to the game. Gameplay remains the same, and it's still a game I'd recommend to any family looking to introduce games to kids age 2+.
+[Gamewright](http://gamewright.com) has released a new edition of their classic kid's game, Go Away Monster. Originally printed in 1997, and again in 2003, 2005, and 2008, the game had previously looked pretty much the same up until this new release. The 2016 edition features a new box footprint, and brand new art to bring a bit more of a modern look to the game. Gameplay remains the same, and it's still a game I'd recommend to any family looking to introduce games to kids age 2+.
 
 <h2>Play</h2>
 
@@ -26,7 +26,7 @@ It's a very simple game that helps kids learn how to take turns and share. It al
 
 <h2>Perspective</h2>
 
-This game is must-have for families with really young children. My 2-year-old loves the game, and his older siblings (and my wife and I) love playing with him. He gets excited when pulling a piece that he needs, and loves to share pieces that he already has on his board. His reactions to the monsters are different each time we play. Sometimes the monsters get tossed into the box, but like I said earlier, sometimes he makes space on his board for them. He really seems to like the oval, orange monster, calling it the "Owl Monster." It's not a game that older kids will really take out and play on their own, but it's not intended for that. 
+This game is must-have for families with really young children. My 2-year-old loves the game, and his older siblings (and my wife and I) love playing with him. He gets excited when pulling a piece that he needs, and loves to share pieces that he already has on his board. His reactions to the monsters are different each time we play. Sometimes the monsters get tossed into the box, but like I said earlier, sometimes he makes space on his board for them. He really seems to like the oval, orange monster, calling it the "Owl Monster." It's not a game that older kids will really take out and play on their own, but it's not intended for that.
 
 The new edition of Go Away Monster is $14.99, and I'm glad it's back in print. It was getting hard to find for a while, and my wife and I love to give this as a gift for new parents.
 
