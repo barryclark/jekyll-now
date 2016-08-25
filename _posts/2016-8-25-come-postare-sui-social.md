@@ -19,7 +19,8 @@ Dove
   - **#donazione** per le offerte di denaro/materiale etc., 
   - **#richieste** per le richieste di alloggio/denaro/materiale etc. Se il post è di tipo generico (una notizia) inserite 
   - **#notizia**. 
-  Questo campo aiuta a suddividere i post e trovarli in seguito.
+  
+Questo campo aiuta a suddividere i post e trovarli in seguito.
 
 Quindi ad esempio se volete postare un avviso di un alloggio disponibile a Cosenza potete farlo con
 
