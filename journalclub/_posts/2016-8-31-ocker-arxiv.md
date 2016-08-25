@@ -2,7 +2,7 @@
 layout: post
 title: Training and spontaneous reinforcement of neuronal assemblies by spike timing, Arxiv (2016)
 category: journalclub
-olddate: August 30, 2016
+olddate: September 6, 2016
 ---
 
 * [Paper](https://arxiv.org/pdf/1608.00064v1.pdf) Gabriel Koch Ocker, Brent Doiron, Training and spontaneous reinforcement of neuronal assemblies by spike timing, arXiv:1608.00064 (2016), 1-43
