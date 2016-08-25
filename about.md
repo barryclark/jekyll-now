@@ -8,7 +8,9 @@ Questo progetto è nato per condividere info utili e possibilmente verificate su
 
 Il progetto non vuole in alcun modo sostituirsi a fonti istituzionali di informazione a cui rimandiamo caldamente per l'attendibilità. Il progetto si pone come scopo quello di aggregare e non disperdere contenuti utili a tutti provenienti da fonti di varia natura (ufficiali e non) al fine creare valore in un momento di crisi per il paese.
 
-L'idea è di Matteo Tempestini e Matteo Fortini, ma il sostegno è di chi vuole darlo. Adesso non c'è tempo ma promettiamo che al termine dell'emergenza citeremo tutti quelli che hanno sostenuto il progetto. Uno per uno.
+L'idea è di Matteo Tempestini e Matteo Fortini e nasce a seguito di maturata esperienza di hacking civico, ma il sostegno è di chiunque vuole darlo (privati, associazioni, imprese, istituzioni) purchè l'iniziativa non sia strumentalizzata per secondi fini.
+
+Adesso non c'è tempo ma promettiamo che al termine dell'emergenza citeremo tutti quelli che hanno sostenuto il progetto. Uno per uno.
 Intanto grazie mille a tutti.
 
 ### Contatti
