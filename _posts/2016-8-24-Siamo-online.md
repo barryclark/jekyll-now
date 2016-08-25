@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Siamo online!
+categories: map
 ---
 
 Questo è il primo post di un sito informativo sul terremoto del 24 Agosto 2016 avvenuto in Italia. Sotto la mappa delle zone principalmente colpite.

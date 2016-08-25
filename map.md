@@ -4,8 +4,18 @@ title: Mappe
 permalink: /mappe/
 ---
 
-## Zone principalmente colpite
+<div class="posts">
+  {% for post in site.posts %}
+    {% if post.categories contains 'mappe' %}
+      <article class="post">
+        <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
-<iframe src="https://www.google.com/maps/d/embed?mid=1LPTzLQ2AlK3pXpoLISq1xh0vk5c" width="640" height="480"></iframe>
+        <div class="entry">
+          {{ post.excerpt }}
+        </div>
 
-[Post originale](/terremotocentro/Siamo-online/)
+        <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+      </article>
+    {% endif %}
+  {% endfor %}
+</div>
