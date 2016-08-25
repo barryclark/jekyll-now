@@ -13,7 +13,7 @@ More to learn
 
 **drops:**    三好学生
 
-**Twitter:**  3gstudent@3gstudent
+**Twitter:**  3gstudent
 
 **Github:**  https://github.com/3gstudent/
 
