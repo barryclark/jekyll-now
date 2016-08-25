@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Una mappa partecipativa dei luoghi di raccolta di beni di prima necessità
+categories: blog mappe
 ---
 
 Grazie a [@dontyna](https://twitter.com/dontyna) ho scoperto la mappa "**[Centri Raccolta Beni per terremoto Centro Italia](http://umap.openstreetmap.fr/en/map/centri-raccolta-beni-per-terremoto-centro-italia_99556)**". Donata mi ha proposto (grazie) di integrarne l'alimentazione anche tramite un **foglio elettronico condiviso**.
@@ -26,6 +27,5 @@ Le coordinate, se le conoscete, le potete anche scrivere senza inserire nulla ne
 **NOTATE BENE**: verificate sempre che le coordinate corrispondano su mappa all'indirizzo che avete inserito:
 
 - fate click su "Apri";
-- si aprirà una mappa centrate su quelle coordinate; 
+- si aprirà una mappa centrate su quelle coordinate;
 - se vi sembra la posizione corretta aggiungete una "x" nella colonna "IndirizzoValidato".
-
