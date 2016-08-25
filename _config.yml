@@ -25,7 +25,7 @@ navbar-links:
   Alloggi: "alloggi"
   Vuoi donare?: "donazioni"
   Hai bisogno?: "aiuto"
-  Crea un post: "https://github.com/emergenzeHack/terremotocentro/wiki/Creare-un-post-da-inserire-nel-sito"
+  WIKI: "https://github.com/emergenzeHack/terremotocentro/wiki"
   About: "about"
 
 # Image to show in the navigation bar - image must be a square (width = height)
@@ -49,7 +49,7 @@ author:
   stackoverflow:   # eg. "3943160/daattali"
   instagram: yourname # eg. daattali
   youtube: yourlink # eg. user/daattali or channel/daattali
-  rss: https://script.googleusercontent.com/macros/echo?user_content_key=8A9trJymEqqgaZeneAXsFEMsIfhokJdg2KSMD6VuttCRpt2ekRI_Tb1iK8df1PfxQA0UTHUhOSKG5eQVm02SHL8QYWTG6oOTm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnNEUEbJV1q2qpuLLdUp01ulQjRhQsOczJFNuFYetZXGa7OPL6k4ZOUBLPsfd8vtj5uIqWsDnSrEd&lib=MrhRbXuMyxTPmH4TcJxedWzcqYDhQuE81
+  rss: https://emergenzehack.github.io/terremotocentro/feed.xml
 
 # Select which links to show in the footer
 footer-links-active:
