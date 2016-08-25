@@ -12,8 +12,8 @@ Per questa iniziativa è definito che. I post sui social siano taggati (cioè do
 **#terremoto #nomeccomune #categoria** 
 
 Dove
-- #nomecomune è il nome del comune per cui volete fare una segnalazione
-- #categoria è la categoria del vostro post (non è obbligatoria ma se la inserite aiuta) che può essere #alloggi #donazione #richieste. Se il post è di tipo generico (una notizia) inserite #notizie. Questo campo aiuta a suddividere i post e trovarli in seguito.
+- #nomecomune è il nome del comune per cui volete fare una segnalazione se è relativa ad un comune specifico, altrimenti non è obbligatorio inserire questo hashtag.
+- #categoria è la categoria del vostro post (non è obbligatoria ma se la inserite aiuta) che può essere #alloggi #donazione #richieste. Se il post è di tipo generico (una notizia) inserite #notizia. Questo campo aiuta a suddividere i post e trovarli in seguito.
 
 Quindi ad esempio se volete postare un avviso di un alloggio disponibile a Cosenza potete farlo con
 
