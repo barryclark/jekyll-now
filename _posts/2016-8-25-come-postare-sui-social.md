@@ -18,8 +18,7 @@ Dove
 - **#categoria** è la categoria del vostro post (non è obbligatoria ma se la inserite aiuta) che può essere:
   - **#alloggi** per le offerte di alloggio,
   - **#donazione** per le offerte di denaro/materiale etc.,
-  - **#richieste** per le richieste di alloggio/denaro/materiale etc. Se il post è di tipo generico (una notizia) inserite
-  - **#notizia**.
+  - **#richieste** per le richieste di alloggio/denaro/materiale etc. Se il post è di tipo generico (una notizia) inserite **#notizia**.
 
 Questo campo aiuta a suddividere i post e trovarli in seguito.
 
