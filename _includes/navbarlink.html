@@ -1,0 +1,16 @@
+{% capture before %}{{ include.link[1] | split: "://" | first }}{% endcapture %}
+{% capture after %}{{ include.link[1] | split: "://" | last }}{% endcapture %}            
+{% assign internal = true %}
+{% if before != after %}
+  {% if before == "http" or before == "https" %}
+    {% assign internal = false %}
+  {% endif %}  
+{% endif %}
+
+{% if internal %}
+  {% capture linkurl %}{{ site.baseurl }}/{{ include.link[1] }}{% endcapture %}
+{% else %}
+  {% capture linkurl %}{{ include.link[1] }}{% endcapture %}
+{% endif %}
+
+<a href="{{ linkurl }}">{{ include.link[0] }}</a>
