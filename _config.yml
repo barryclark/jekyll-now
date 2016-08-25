@@ -47,7 +47,7 @@ author:
   linkedin:   # eg. daattali
   xing:       # eg. daattali
   stackoverflow:   # eg. "3943160/daattali"
-  instagram: yourname # eg. daattali
+  instagram: terremotocentro # eg. daattali
   youtube: yourlink # eg. user/daattali or channel/daattali
   rss: https://emergenzehack.github.io/terremotocentro/feed.xml
 
@@ -61,7 +61,7 @@ footer-links-active:
   linkedin: false
   xing: false
   stackoverflow: false
-  instagram: false
+  instagram: true
   youtube: false
 
 # Select which share links to show in posts
