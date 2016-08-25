@@ -24,6 +24,8 @@ La colonna "2geocode" può essere diversa da "Indirizzo", perché in "Indirizzo"
 
 Le coordinate, se le conoscete, le potete anche scrivere senza inserire nulla nella colonna "2geocode".
 
+**La mappa è da usarsi come strumento di coordinamento per invio dei generi alimentari nel caso siano richiesti e necessari nelle zone terremotate. Per questo si rimanda ai canali istituzionali**
+
 **NOTATE BENE**: verificate sempre che le coordinate corrispondano su mappa all'indirizzo che avete inserito:
 
 - fate click su "Apri";
