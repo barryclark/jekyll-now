@@ -1,3 +1,8 @@
+---
+layout: post
+title: Usare i Social in modo Utile
+---
+
 In caso di emergenza se volete postare sui social network conviene darsi delle semplici regole per recuperare le informazioni.
 
 Un modo semplice per cercare nei social network è usare bene gli hashtag. 
