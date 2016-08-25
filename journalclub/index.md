@@ -20,8 +20,8 @@ Journal club meetings take place on Tuesdays at 1pm in the Life Sciences Buildin
 
 - August 16: Il Memming Park
 - August 23: David Hocker
-- August 30: Luca Mazzucato
-- September 6: Gregory Kirschen
+- August 30: Gregory Kirschen
+- September 6: Luca Mazzucato
 - September 13: Luisa Le Donne
 - September 20: Jonathan Beck
 - September 27: Giancarlo La Camera
