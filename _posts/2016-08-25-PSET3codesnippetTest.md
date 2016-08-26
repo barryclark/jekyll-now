@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 title: 'Jekyll, code snippet for CS50 pset3'
 tags: Herp derp
