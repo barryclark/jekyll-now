@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: post
 title: Sei uno sviluppatore? Se vuoi aiutaci!
 categories: blog
 ---
