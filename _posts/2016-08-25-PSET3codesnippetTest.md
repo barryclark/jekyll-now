@@ -31,7 +31,20 @@ int main (void){
 
 {% endhighlight %}
 
+For reference:
+![2016-08-25_21-17-32.png]({{site.baseurl}}/images/2016-08-25_21-17-32.png)
+
+Trying the same code snippet in "C" using the "ruby"
+see reference:
+
+![2016-08-25_21-19-26.png]({{site.baseurl}}/images/2016-08-25_21-19-26.png)
 
 
+{% highlight ruby linenos %}
+#include <stdio.h>
 
+int main (void){
+  printf("hello world");
+}
 
+{% endhighlight %}
