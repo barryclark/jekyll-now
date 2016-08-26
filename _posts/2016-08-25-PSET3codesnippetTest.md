@@ -20,5 +20,18 @@ end
 {% endhighlight %}
 
 
+another test "C"
+
+{% highlight c linenos %}
+#include <stdio.h>
+
+int main (void){
+  printf("hello world");
+}
+
+{% endhighlight %}
+
+
+
 
 
