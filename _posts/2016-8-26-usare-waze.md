@@ -33,3 +33,5 @@ Per visualizzare le segnalazioni in modalità di navigazione:
 
 - Tocca la Barra di navigazione nella parte superiore dello schermo.
 - Tocca Prossime segnalazioni.
+
+Una mappa waze delle zone terremotate potete vederla anche [qui](https://emergenzehack.github.io/terremotocentro/2016-08-25-mappa-traffico/)
