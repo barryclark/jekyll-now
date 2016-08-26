@@ -4,6 +4,54 @@ title: Vuoi Donare?
 permalink: /donazioni/
 ---
 
+* [Raccolte fondi](#raccolte-fondi)
+* [Donazioni](#donazioni)
+
+# Raccolte fondi
+
+{% for member in site.data.raccolte %}
+<div class="panel panel-info">
+<div class="panel-heading">
+{{member.Chi}}
+</div>
+<div class="panel-body">
+{% if member.Descrizione %}
+<div class="row">
+<div class="col-md-12">
+{{member.Descrizione}}
+</div>
+</div>
+{% endif %}
+{% if member.Intestazione %}
+<div class="row">
+<div class="col-md-2"><b>Intestazione:</b></div><div class="col-md-10">{{member.Intestazione}}</div>
+</div>
+{% endif %}
+
+{% if member.IBAN %}
+<div class="row">
+<div class="col-md-2"><b>IBAN:</b></div><div class="col-md-10">{{member.IBAN}}</div>
+</div>
+{% endif %}
+
+{% if member.BICSWIFT %}
+<div class="row">
+<div class="col-md-2"><b>BIC/SWIFT:</b></div><div class="col-md-10">{{member.BICSWIFT}}</div>
+</div>
+{% endif %}
+{% if member.Link %}
+<div class="row">
+<div class="col-md-2"><b>Link:</b></div><div class="col-md-10"><a href="{{member.Link}}">{{member.Link}}</a></div>
+</div>
+{% endif %}
+</div>
+</div>
+{% endfor %}
+
+---
+
+# Donazioni
+
 {% for member in site.data.donazioni %}
 <div class="panel panel-info">
 <div class="panel-heading">
@@ -31,6 +79,11 @@ permalink: /donazioni/
 {% if member.Contatti %}
 <div class="row">
 <div class="col-md-2"><b>Contatti:</b></div><div class="col-md-10">{{member.Contatti}}</div>
+</div>
+{% endif %}
+{% if member.Link %}
+<div class="row">
+<div class="col-md-2"><b>Link:</b></div><div class="col-md-10"><a href="{{member.Link}}">{{member.Link}}</a></div>
 </div>
 {% endif %}
 </div>
