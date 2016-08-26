@@ -626,3 +626,12 @@ td.gutter {
 #social-share-section {
   margin-bottom: 30px;
 }
+
+/* --- Fix anchor hidden by navbar --- */
+*[id]:before { 
+  display: block; 
+  content: " "; 
+  margin-top: -75px; 
+  height: 75px; 
+  visibility: hidden; 
+}
