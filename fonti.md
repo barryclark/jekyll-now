@@ -6,6 +6,8 @@ permalink: /fonti/
 
 Di seguito alcuni link utili per ricevere informazioni sull'evento.
 
+**Fonti Ufficali**
+
 - [Osservatorio Terremoti INGVterremoti](http://cnt.rm.ingv.it/)
 
 - [Protezione Civile](http://www.protezionecivile.gov.it/jcms/it/home.wp)
@@ -17,3 +19,7 @@ Di seguito alcuni link utili per ricevere informazioni sull'evento.
 - [Protezione Civile Lazio](http://www.regione.lazio.it/rl_protezione_civile/)
 
 - [Volontariato Lazio](http://www.volontariato.lazio.it/)
+
+**Progetti Web** 
+
+- [Emergenza24](www,emergenza24.org)
