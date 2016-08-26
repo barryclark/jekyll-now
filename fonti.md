@@ -6,7 +6,7 @@ permalink: /fonti/
 
 Di seguito alcuni link utili per ricevere informazioni sull'evento.
 
-**Fonti Ufficali**
+**Fonti Ufficiali**
 
 - [Osservatorio Terremoti INGVterremoti](http://cnt.rm.ingv.it/)
 
