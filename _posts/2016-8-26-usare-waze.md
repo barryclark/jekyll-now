@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Come usare Waze per segnalazioni sulla viabilità in emergenza
-categories: blog mappe
+categories: blog
 ---
 
 Consigliamo a tutti in caso si situazioni in cui la viabilità possa essere interrotta o modificata rispetto alle normali condizioni di scaricare sul proprio smartphone l'app [WAZE](https://www.waze.com/it/) che vi consente di iscrivervi gratuitamente e guidare restando informati su eventuali modifiche o interruzionio alla viabilità attorno a voi. L'applicazione consente inoltre di segnalare le situazioni critiche di viabilità in modo che gli utenti nei dintorni possano vederle.
