@@ -9,18 +9,28 @@ permalink: /alloggi/
 {{member.Descrizione}}
 </div>
 <div class="panel-body">
+{% if member.Dove %}
 <div class="row">
-{{member.Dove}}
+<div class="col-md-2"><b>Indirizzo:</b></div> {{member.Dove}}
 </div>
+{% endif %}
+{% if member.Numero %}
 <div class="row">
-{{member.Numero}}
+<div class="col-md-2"><b>Numero:</b></div> {{member.Numero}}
 </div>
+{% endif %}
+
+{% if member.Email and member.Email contains '@' %}
 <div class="row">
-{{member.Email}}
+<div class="col-md-2"><b>Email:</b></div> <a href="mailto:{{member.Email}}">{{member.Email}}</a>
 </div>
+{% endif %}
+
+{% if member.Link %}
 <div class="row">
-{{member.Link}}
+<div class="col-md-2"><b>Link:</b></div><a href="{{member.Link}}">{{member.Link}}</a>
 </div>
+{% endif %}
 <div class="row">
 </div>
 </div>

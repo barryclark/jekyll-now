@@ -22,7 +22,7 @@ navbar-links:
   Blog: "post"
   Contatti: "fonti"
   Mappe: "mappe"
-#  Alloggi: "alloggi"
+  Alloggi: "alloggi"
 #  Vuoi donare?: "donazioni"
   Hai bisogno?: "aiuto"
   WIKI: "https://github.com/emergenzeHack/terremotocentro/wiki"
