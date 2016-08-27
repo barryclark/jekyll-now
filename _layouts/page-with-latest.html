@@ -16,7 +16,7 @@ layout: default
   <h2>Latest Posts</h2>
   <hr>
   <div class="posts alternate-page-template__posts">
-    {% for post in site.posts limit:5%}
+    {% for post in site.posts limit:10%}
     <div class="post">
       <h3 class="post-title">
         <a href="{{ site.baseurl }}/{{ post.url }}">

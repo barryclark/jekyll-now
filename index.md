@@ -5,7 +5,8 @@ feature_image: /images/James_headshot.jpg
 contact_email: pusto@austin.utexas.edu
 ---
 
-Assistant Professor  
+### Assistant Professor  
+
 [Quantitative Methods program](http://www.edb.utexas.edu/education/departments/edp/doctoral/qm/)  
 [Department of Educational Psychology](http://www.edb.utexas.edu/education/departments/edp/)  
 [College of Education](http://www.edb.utexas.edu/education/home/)  
