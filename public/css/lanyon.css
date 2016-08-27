@@ -605,3 +605,48 @@ a.pagination-item:hover {
    overflow-x: scroll;
    white-space: pre;
  }
+
+ /*
+  * Style Alternate page template - used for About page
+  *
+  * Standard content blog allows text to be added via the markdown page.
+  * Image, contact email controled via front-matter and floated to the right
+  * on larger screen sizes
+  *
+  */
+
+.alternate-page-template__aside {
+  margin-bottom: 20px;
+
+}
+@media (min-width: 40em) {
+  .alternate-page-template__aside {
+    max-width: 50%;
+    float: right;
+    margin-left: 10px;
+    margin-bottom: 0;
+
+  }
+}
+
+@media (min-width: 50em) {
+  .alternate-page-template__aside  {
+    max-width: 40%;
+  }
+}
+
+.alternate-page-template__feature-image {
+  max-width: 60%;
+}
+@media (min-width: 40em) {
+  .alternate-page-template__feature-image {
+    max-width: 100%;
+  }
+}
+
+.alternate-page-template__posts {
+  font-size: 0.9em;
+}
+.alternate-page-template__posts .post {
+  margin-bottom: 2em;
+}
