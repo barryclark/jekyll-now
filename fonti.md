@@ -20,6 +20,6 @@ Di seguito alcuni link utili per ricevere informazioni sull'evento.
 
 - [Volontariato Lazio](http://www.volontariato.lazio.it/)
 
-**Progetti Web** 
+**Progetti Web**
 
-- [Emergenza24](www,emergenza24.org)
+- [Emergenza24](http://www.emergenza24.org/)
