@@ -591,3 +591,17 @@ a.pagination-item:hover {
 .layout-reverse.sidebar-overlay #sidebar-checkbox:checked ~ .sidebar {
   box-shadow: -.25rem 0 .5rem rgba(0,0,0,.1);
 }
+
+
+/*
+ * Pre Code overflow
+ *
+ * Code should never be broken onto multiple lines unless excplicity written
+ * as such. Code will scroll left/right as required to improve readability
+ *
+ */
+
+ pre {
+   overflow-x: scroll;
+   white-space: pre;
+ }
