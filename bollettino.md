@@ -31,6 +31,11 @@ permalink: /bollettino/
 <div class="col-md-2"><b>Link:</b></div><a href="{{member.Link}}">{{member.Link}}</a>
 </div>
 {% endif %}
+{% if member.Data %}
+<div class="row">
+<div class="col-md-2"><b>Data:</b></div>{{member.Data}} {{member.Ora}}
+</div>
+{% endif %}
 <div class="row">
 </div>
 </div>
