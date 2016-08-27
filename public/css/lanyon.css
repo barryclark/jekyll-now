@@ -64,6 +64,13 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   width: 100%;
 }
+/*  Allow sidebar space to remain fixed in place on desktop screen sizes */
+@media (min-width: 50em) {
+  .wrap {
+    width: 80%;
+    margin-left: 20%;
+  }
+}
 
 
 /*
@@ -160,6 +167,14 @@ h1, h2, h3, h4, h5, h6 {
     font-size: .75rem; /* 14px */
   }
 }
+/* Fix sidebar on lefthand side of screen above 50em(800px) */
+@media (min-width: 50em) {
+  .sidebar {
+    width: 20%;
+    visibility: visible;
+    left: 0;
+  }
+}
 
 /* Sidebar content */
 .sidebar a {
@@ -216,6 +231,13 @@ a.sidebar-nav-item:focus {
   background-color: #fff;
   border-radius: .25rem;
   cursor: pointer;
+}
+/*  Fixing the sidebar in place no longer requires the toggle on desktop screen sizes, hide above 50em */
+@media (min-width: 50em) {
+  .sidebar-toggle {
+    display: none;
+    visibility: hidden;
+  }
 }
 
 .sidebar-toggle:before {
