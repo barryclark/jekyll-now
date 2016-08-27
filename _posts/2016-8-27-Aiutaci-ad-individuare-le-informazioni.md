@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: post
 title: Aiutaci ad individuare le informazioni!
 categories: blog
 ---
