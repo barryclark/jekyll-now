@@ -1,0 +1,83 @@
+---
+layout: post
+title: You're up and running!
+published: true
+---
+
+Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+
+![_config.yml]({{ site.baseurl }}/images/config.png)
+
+The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
+
+So I'm writing this blog to myself here!
+
+http://i.imgur.com/PIGWtdt.png
+
+This is the edit I made thus far
+
+let's try adding a random gif. Like the one of me typing
+
+![2016-08-24_13-57-04.gif]({{site.baseurl}}/_posts/2016-08-24_13-57-04.gif)
+
+let's try again, this time using an imgur link instead.
+![]({{site.baseurl}}/http://i.imgur.com/p0mCxaJ.gif)
+
+Let's try one more time. I found out you need to default the location. Its
+![]({{site.baseurl}}/http://i.imgur.com/n395ruD.gif)
+
+Again,,,
+![https://github.com/AnacondaPython/anacondapython.github.io/tree/master/images]({{site.baseurl}}/_posts/2016-08-24_14-06-09.gif)
+
+again.....
+![2016-08-24_14-06-09.gif]({{site.baseurl}}/_posts/2016-08-24_14-06-09.gif)
+
+Again..why doesn't it work?!
+![testaa.gif]({{site.baseurl}}/_posts/testaa.gif)
+
+WHY DOESN"T IT WORK 
+![testaa.gif]({{site.baseurl}}/_images/testaa.gif)
+
+( I added image manually this time ^)
+
+![_config.yml]({{ site.baseurl }}/images/testaa.gif)
+Now I added it manually.. sigh prose.io isn't working
+
+![Step 1](/images/step1.gif "Step 1")
+copyp asted
+
+modified 
+
+![Step 1](/images/testaa.gif "Step 1")
+
+AGAIN OMG
+
+![Step 1](/images/_testaa.gif "Step 1")
+
+test again, sitebase URL
+
+![_config.yml]({{ site.baseurl }}/images/testaa.gif "test")
+
+---------------
+Test a better gif (_Posts)
+
+![2016-08-24_14-45-26.gif]({{site.baseurl}}/_posts/2016-08-24_14-45-26.gif)
+
+Test another gif (under images) - manually add (/images/)
+
+![2016-08-24_14-45-26.gif]({{site.baseurl}}/images/2016-08-24_14-45-26.gif)
+
+Finally, it works. Supposedly only /images folder works for "gasp" images. Why would prose.io's standard output be the same folder as my posts. It doesn't work. I need to be able to change it
+
+-------------
+Okay. Anotehr test. All I did here was drag and drop, but changed it to "images" instead of "_posts"
+
+![2016-08-24_14-57-21.gif]({{site.baseurl}}/images/2016-08-24_14-57-21.gif)
+
+WELL, NOW IT WORKS JUST FINE. Its pretty fast and efficient, however **why the heck does default to _posts_ instead of "images"** . Tad inconvenient
+
+![chrome_2016-08-24_14-59-36.png]({{site.baseurl}}/images/chrome_2016-08-24_14-59-36.png)
+
+that's what it looks like on my jerkyll
+
+What I'm doing is dragging and dropping files, after Using ShareX under my clover program (similar to adobe bridge)
