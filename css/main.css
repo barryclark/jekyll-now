@@ -635,3 +635,8 @@ td.gutter {
   height: 75px; 
   visibility: hidden; 
 }
+
+/* --- Fix https://github.com/emergenzeHack/terremotocentro/issues/58 --- */
+.panel {
+  overflow: hidden;
+}
