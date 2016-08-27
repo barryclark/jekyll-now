@@ -140,6 +140,7 @@ prose:
     - /css
     - /img
     - /js
+    - /scripts
   metadata:
     _posts:
       - name: "layout"
