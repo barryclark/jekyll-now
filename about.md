@@ -26,7 +26,7 @@ Un grazie sentito a :
 
 
 ### Contatti
-
+- [Mail](mailto:terremotocentroita@gmail.com): da usare per condividere informazioni utili
 - [Gruppo Facebook](https://www.facebook.com/groups/1758670357733881/) : da usare per condividere informazioni utili
 - [Twitter](https://twitter.com/terremotocentro): da usare per indirizzare twitter da rilanciare
 - [Gruppo Telegram](https://telegram.me/joinchat/BgW6eEBsI3rLKsJk9L7FJg) da usare per chattare sul tema
