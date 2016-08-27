@@ -1,13 +1,10 @@
 ---
-layout: page
+layout: page-with-latest
 title: About
 permalink: /about/
+feature_image: /images/James_headshot.jpg
+contact_email: pusto@austin.utexas.edu
 ---
-
-  
-<img src="{{site.url}}/images/James_headshot.jpg" width="350" style="float:right; margin-bottom:-5px">
-
-### James E. Pustejovsky
 
 Assistant Professor  
 [Quantitative Methods program](http://www.edb.utexas.edu/education/departments/edp/doctoral/qm/)  
@@ -18,10 +15,6 @@ Assistant Professor
 ### Curriculum Vitae
 
 [Curriculum Vitae]({{ site.url }}/files/Pustejovsky_CV.pdf)
-
-### Contact
-
-[pusto@austin.utexas.edu](mailto:pusto@austin.utexas.edu)
 
 ### Mailing address:
 
