@@ -13,3 +13,6 @@ git commit -m "auto CSV update $(date -Iseconds)"
 git pull --rebase
 git push
 
+git clean -fxd
+git reset --hard HEAD
+
