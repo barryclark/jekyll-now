@@ -7,3 +7,9 @@ CSV_RACCOLTE='https://docs.google.com/spreadsheets/d/1WL5BuoKQRM560VNctYOeDeineL
 wget -O _data/alloggi.csv $CSV_ALLOGGI 
 wget -O _data/donazioni.csv $CSV_DONAZIONI
 wget -O _data/raccolte.csv $CSV_RACCOLTE
+
+git add _data
+git commit -m "auto CSV update $(date -Iseconds)"
+git pull --rebase
+git push
+
