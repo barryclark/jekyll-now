@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Contatti
-permalink: /contatti/
+title: Fonti
+permalink: /fonti/
 ---
 {% for member in site.data.contatti %}
   <div class="row">
