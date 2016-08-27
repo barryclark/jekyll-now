@@ -604,6 +604,7 @@ a.pagination-item:hover {
  pre {
    overflow-x: scroll;
    white-space: pre;
+   word-wrap: normal;
  }
 
  /*
