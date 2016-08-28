@@ -23,7 +23,7 @@ description: Un progetto per informare sul terremoto del 24 Agosto 2016
 navbar-links:
   Blog: "post"
   Bollettino: "bollettino"
-  Fonti: "fonti"
+  Link utili: "link_utili"
   Mappe: "mappe"
   Alloggi: "alloggi"
   Vuoi donare?: "donazioni"
