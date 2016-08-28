@@ -21,13 +21,14 @@ description: Un progetto per informare sul terremoto del 24 Agosto 2016
 
 # List of links in the navigation bar
 navbar-links:
-  Blog: "post"
+  Aggiornamenti: "post"
   Bollettino: "bollettino"
   Link utili: "link_utili"
   Mappe: "mappe"
   Alloggi: "alloggi"
   Vuoi donare?: "donazioni"
   Hai bisogno?: "aiuto"
+  Vittime: "vittime"
   WIKI: 'https://github.com/emergenzeHack/terremotocentro/wiki" target="_blank'
   About: "about"
 
