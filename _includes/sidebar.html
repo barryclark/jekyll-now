@@ -35,36 +35,28 @@
   </nav>
 
   <div class="sidebar-item">
-    <ul class="list-inline text-center">
+    <p>
           {% if site.author.github %}
-          <li>
             <a href="https://github.com/{{ site.author.github }}" title="GitHub">
               <i class="fa fa-github" aria-hidden="true"></i>
             </a>
-          </li>
           {% endif %}
 		  {% if site.author.twitter %}
-          <li>
             <a href="https://twitter.com/{{ site.author.twitter }}" title="Twitter">
               <i class="fa fa-twitter" aria-hidden="true"></i>
             </a>
-          </li>
           {% endif %}
 		  {% if site.author.email %}
-          <li>
             <a href="mailto:{{ site.author.email }}" title="Email me">
               <i class="fa fa-envelope" aria-hidden="true"></i>
             </a>
-          </li>
           {% endif %}
 		  {% if site.author.stackoverflow %}
-          <li>
             <a href="https://stackoverflow.com/users/{{ site.author.stackoverflow }}" title="StackOverflow">
               <i class="fa fa-stack-overflow" aria-hidden="true"></i>
             </a>
-          </li>
           {% endif %}
-    </ul>
+    </p>
   </div>
         
   <div class="sidebar-item">
