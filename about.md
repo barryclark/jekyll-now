@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+I do cybersecurity. I am part of blue team during the day and become red team member at night. 
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+Contact me if you need cyber security consulting.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[thedarkcoder@protonmail.com](mailto:thedarkcoder@protonmail.com)
