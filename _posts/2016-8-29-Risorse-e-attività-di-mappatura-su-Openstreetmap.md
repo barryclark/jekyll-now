@@ -15,7 +15,7 @@ Il coordinamento dei volontari avviene tramite la piattaforma [OSM Tasking Manag
 
 Quest'ultimo in questo momento è quello probabilmente più attuale, in quanto i [dati pubblicati da Copernicus EMS sul terremoto](http://emergency.copernicus.eu/mapping/list-of-components/EMSR177) sono separati per mappa di rilevazione e quindi fortemente frammentati.
 
-I dati sono stati uniti in un unico shapefile ed è stato creato un servizio WMS da usare come [riferimento]: (http://osmit3.wmflabs.org/cgi-bin/qgis_mapserv.fcgi?map=/srv/Copernicus/settlements_grading.qgs&SERVICE=WMS&REQUEST=GetCapabilities&VERSION=1.3). La legenda è [questa](http://imgur.com/a/cfOfA).
+I dati sono stati uniti in un unico shapefile ed è stato creato un servizio WMS da usare come [riferimento](http://osmit3.wmflabs.org/cgi-bin/qgis_mapserv.fcgi?map=/srv/Copernicus/settlements_grading.qgs&SERVICE=WMS&REQUEST=GetCapabilities&VERSION=1.3). La legenda è [questa](http://imgur.com/a/cfOfA).
 
 ##  Dati Openstreetmap aggiornati
 
