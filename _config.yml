@@ -28,9 +28,9 @@ navbar-links:
   Alloggi: "alloggi"
   Vuoi donare?: "donazioni"
   Hai bisogno?: "aiuto"
-  Vittime: "vittime"
+  #Vittime: "vittime"
   WIKI: 'https://github.com/emergenzeHack/terremotocentro/wiki" target="_blank'
-  #About: "about"
+  About: "about"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
