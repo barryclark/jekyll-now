@@ -4,8 +4,6 @@ title: Josh's first blog post
 author: Josh
 ---
 
-# Josh's First HUM 380 Blog post
-
 This post answers questions posed to students in [a blog post by Professor Hemphill,](https://libbyh.github.io/methods-f16/first-things-first/).
 
 ## 1. Which research methods do you most want to learn?
