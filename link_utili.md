@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Fonti
-permalink: /fonti/
+title: Link utili
+permalink: /link_utili/
 ---
 
 Di seguito alcuni link utili per ricevere informazioni sull'evento.
