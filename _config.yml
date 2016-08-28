@@ -28,7 +28,7 @@ navbar-links:
   Alloggi: "alloggi"
   Vuoi donare?: "donazioni"
   Hai bisogno?: "aiuto"
-  WIKI: "https://github.com/emergenzeHack/terremotocentro/wiki"
+  WIKI: 'https://github.com/emergenzeHack/terremotocentro/wiki" target="_blank'
   About: "about"
 
 # Image to show in the navigation bar - image must be a square (width = height)
