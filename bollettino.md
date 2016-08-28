@@ -3,7 +3,8 @@ layout: page
 title: Bollettino
 permalink: /bollettino/
 ---
-{% for member in site.data.bollettino %}
+{% assign bollettino = (site.data.bollettino | sort: 'Data') %}
+{% for member in bollettino reversed %}
 <div class="panel panel-info">
 <div class="panel-heading">
 {{member.Descrizione}}
