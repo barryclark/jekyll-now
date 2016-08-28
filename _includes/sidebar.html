@@ -46,30 +46,21 @@
 		  {% if site.author.twitter %}
           <li>
             <a href="https://twitter.com/{{ site.author.twitter }}" title="Twitter">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-              </span>
+              <i class="fa fa-twitter" aria-hidden="true"></i>
             </a>
           </li>
           {% endif %}
 		  {% if site.author.email %}
           <li>
             <a href="mailto:{{ site.author.email }}" title="Email me">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
-              </span>
+              <i class="fa fa-envelope" aria-hidden="true"></i>
             </a>
           </li>
           {% endif %}
 		  {% if site.author.stackoverflow %}
           <li>
             <a href="https://stackoverflow.com/users/{{ site.author.stackoverflow }}" title="StackOverflow">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-stack-overflow fa-stack-1x fa-inverse"></i>
-              </span>
+              <i class="fa fa-stack-overflow" aria-hidden="true"></i>
             </a>
           </li>
           {% endif %}
