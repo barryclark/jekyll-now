@@ -1,6 +1,9 @@
 ---
 layout: default
 ---
+{% if page.image %}
+<div class="feature-image" style="background-image: url(../images/feature_images/{{ page.image }});"></div>
+{% endif %}
 
 <article class="post">
   <h1>{{ page.title }}</h1>
