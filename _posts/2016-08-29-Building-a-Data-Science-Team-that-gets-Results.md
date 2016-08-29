@@ -27,4 +27,5 @@ Other interesting and important questions that were raised but we didn't get tim
 
 - What different data science roles exist out there?
 
+Many thanks to all participants in the session for sharing their insights!
  
