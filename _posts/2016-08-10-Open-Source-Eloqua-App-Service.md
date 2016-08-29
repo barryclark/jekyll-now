@@ -6,7 +6,7 @@ category: general
 tags: [cto, open-source, culture]
 author: melania_andrisan
 author_email: melania.andrisan@haufe-lexware.com
-header-img: "images/bg-post.old.jpg"
+header-img: "images/bg-post.alt.jpg"
 ---
 
 [Here is our Open Source][github] project on Github after some digging into Eloqua documentation and building some docker files. Take a couple of minutes and read the entire story. 
