@@ -1,6 +1,6 @@
 ---
 layout: post
-title: My First Blog
+title: Red's First Blog
 author: Carlos Lopez
 ---
 
