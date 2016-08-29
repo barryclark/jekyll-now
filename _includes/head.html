@@ -71,17 +71,23 @@
   <meta property="og:image" content="" />
   {% endif %}
   
-  <!-- Twitter summary cards -->
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:site" content="@{{ site.author.twitter }}" />
-  <meta name="twitter:creator" content="@{{ site.author.twitter }}" />
-  <meta name="twitter:title" content="{% if page.titolo %}{{ page.titolo }}{% else %}{{ site.title }}{% endif %}" />
-  <meta name="twitter:description" content="{{ page.excerpt | strip_html | xml_escape | truncatewords: 50 }}" />
-  {% if page.share-img %}
-  <meta name="twitter:image" content="{{ page.share-img }}" />
-  {% elsif site.avatar %}
-  <meta name="twitter:image" content="{{ site.url }}{{ site.avatar }}" />
-  {% endif %}
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@terremotocentro">
+<meta name="twitter:creator" content="@terremotocentro">
+{% if page.titolo %}
+  <meta name="twitter:title" content="{{ page.titolo }}">
+{% else %}
+  <meta name="twitter:title" content="{{ site.title }}">
+{% endif %}
+{% if page.url %}
+  <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
+{% endif %}
+{% if page.description %}
+  <meta name="twitter:description" content="{{ page.description }}">
+{% else %}
+  <meta name="twitter:description" content="{{ site.description }}">
+{% endif %}
+  <meta name="twitter:image:src" content="http://terremotocentroitalia.info/images/noun_8681.png">
   
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
