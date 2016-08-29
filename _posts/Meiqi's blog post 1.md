@@ -4,7 +4,7 @@ title: Meiqi's blog post 1
 author: Meiqi
 ---
 
-This post is the first blog of Meiqi, aim at answering [the question from Dr. Hemphill,] 
+This post is the first blog of Meiqi, aim at answering [the question from Dr. Hemphill] 
 (https://libbyh.github.io/methods-f16/first-things-first/).
 
 ## 1. Which research methods do you most want to learn?
