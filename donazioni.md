@@ -42,9 +42,9 @@ permalink: /donazioni/
 </div>
 {% endif %}
 
-{% if member.CCP %}
+{% if member.CCPostale %}
 <div class="row">
-<div class="col-md-2"><b>Cc postale:</b></div><div class="col-md-10">{{member.CCP}}</div>
+<div class="col-md-2"><b>Cc postale:</b></div><div class="col-md-10">{{member.CCPostale}}</div>
 </div>
 {% endif %}
 
