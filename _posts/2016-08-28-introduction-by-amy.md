@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Introduction by Amy
-author: Amy
+author: kaminalu
 published: true
 ---
 
