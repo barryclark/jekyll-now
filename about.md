@@ -6,8 +6,8 @@ permalink: /about/
 
 * [Il Progetto](#il-progetto)
 * [Credits](#credits)
-* [Contatti](#Contatti)
-* [Press](#Press)
+* [Contatti](#contatti)
+* [Press](#press)
 
 ### Il Progetto
 
