@@ -50,6 +50,5 @@ Un grazie sentito a :
 
 |Data         | Dove    | Titolo |
 |:------------|:--------|:------|
-{% for member in site.data.press %} 
-|{{member.data}} | {{member.dove}} | [{{member.titolo}}]({{member.link}})|
-{% endfor %}
+|{% for member in site.data.press %}{{member.data}} | {{member.dove}} | [{{member.titolo}}]({{member.link}})|{% endfor %}
+
