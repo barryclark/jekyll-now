@@ -41,6 +41,19 @@ permalink: /donazioni/
 <div class="col-md-2"><b>BIC/SWIFT:</b></div><div class="col-md-10">{{member.BICSWIFT}}</div>
 </div>
 {% endif %}
+
+{% if member.CCP %}
+<div class="row">
+<div class="col-md-2"><b>Cc postale:</b></div><div class="col-md-10">{{member.CCP}}</div>
+</div>
+{% endif %}
+
+{% if member.Causale %}
+<div class="row">
+<div class="col-md-2"><b>Causale:</b></div><div class="col-md-10">{{member.Causale}}</div>
+</div>
+{% endif %}
+
 {% if member.Link %}
 <div class="row">
 <div class="col-md-2"><b>Link:</b></div><div class="col-md-10"><a href="{{member.Link}}">{{member.Link}}</a></div>
