@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Fonti
+titolo: Fonti | Terremoto Centro Italia
 permalink: /fonti/
 ---
 {% for member in site.data.contatti %}
