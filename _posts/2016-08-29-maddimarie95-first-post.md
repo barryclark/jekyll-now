@@ -1,3 +1,8 @@
+---
+layout: post
+title: Maddi's First Post
+author: maddiburrell95
+---
 Which research methods do you most want to learn?
   I'd like to learn about descriptive research 
 What Topics in digital humanities research interest you?
