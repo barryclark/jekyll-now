@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Elissa's First Blog Post
-author: Elissa Nunez
+author: enunez2
 ---
 
 1.) Which research methods do you most want to learn?
