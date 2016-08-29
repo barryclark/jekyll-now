@@ -32,7 +32,7 @@ individual and sometimes makes no sense; networking puts them in order and makin
 idea what the puzzle looks like when you were looking at a single piece of it, but after you organize it and put them in a whole picture,
 you will get what it is, and how it works. I think Networking really helps in doing the research.  
 
-References:
+## References:
 
 Examples of Spatial Humanities Projects. (2011, July 26). Retrieved August 28, 2016, from http://www.nytimes.com/interactive/2011/07/27/arts/spatial-maps.html?_r=0
 
