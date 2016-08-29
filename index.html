@@ -5,11 +5,13 @@ layout: default
 <div class="posts">
   {% for post in site.posts %}
 
+    {% assign author = site.data.authors[post.author] %}
+
     <article class="post">
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
-      <h3>{{ site.data.authors[post.author] }}</h3>
+      {% if author.name %}<span class="post-list-author-name">by {{ author.name }}</span>{% endif %}
 
       <div class="entry">
         {{ post.excerpt }}
