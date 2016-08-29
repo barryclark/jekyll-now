@@ -12,6 +12,8 @@ CSV_NOTIZIE='https://docs.google.com/spreadsheets/d/1WL5BuoKQRM560VNctYOeDeineLe
 CSV_BOLLETTINO='https://docs.google.com/spreadsheets/d/1WL5BuoKQRM560VNctYOeDeineLeBwP7vtFlwltasASM/pub?gid=814315&single=true&output=csv'
 CSV_FABBISOGNI='https://docs.google.com/spreadsheets/d/1WL5BuoKQRM560VNctYOeDeineLeBwP7vtFlwltasASM/pub?gid=66190431&single=true&output=csv'
 
+MD_vittime='http://blog.spaziogis.it/static/projs/terremotocentroitalia/vittime.md'
+
 wget -O _data/contatti.csv $CSV_CONTATTI
 wget -O _data/alloggi.csv $CSV_ALLOGGI 
 wget -O _data/donazioni.csv $CSV_DONAZIONI
@@ -19,9 +21,10 @@ wget -O _data/raccolte.csv $CSV_RACCOLTE
 wget -O _data/notizie.csv $CSV_NOTIZIE
 wget -O _data/bollettino.csv $CSV_BOLLETTINO
 wget -O _data/fabbisogni.csv $CSV_FABBISOGNI
+wget -O vittime.md $MD_vittime
 
 git add _data
-git commit -m "auto CSV update $(date -Iseconds)"
+git commit -m "auto CSV and Vittime update $(date -Iseconds)"
 git pull --rebase
 git push
 
