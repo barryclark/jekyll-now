@@ -5,7 +5,7 @@ title: Building Data Science Teams That Get Results
 
 Last Emily Wiegand and I hosted a discussion session with the topic "Building Data Science Teams That Get Results" at the [Data Science for Social Good Conference](https://dssg.uchicago.edu/data-science-for-social-good-conference/). Below are some of the key insights that came out of the session:
 
-- Data scientist requiere a healthy sense of humility
+- Data scientist requiere a healthy sense of humility and bias-for-action. Members of a data science team function much better going in with the attitude of "I'm not an expert but will learn what it takes to get this done together with the rest of my team". Furthermore, it is key to not hold on too a specific identity "I'm a [insert: statistician, economist, machine-learning expert, computer scientist, etc.] and therefore I don't do [insert: .. work with databases, .. do visualiztion, .. don't work with Python, .. don't do statistics, .. etc]". Holding on too much on a specific identity to stay in one's comfort zone make it hard to be a good team member.  
 
 - As a data science community we need to think about the tools that we're using to do our work. In particular:
   1. data science teams need to make sure they adopt the collaboration tools software developers have been using
@@ -15,9 +15,9 @@ Last Emily Wiegand and I hosted a discussion session with the topic "Building Da
 
 - We need to think about 'who' the team is. While the core team may be composed of the data scientists, we cannot exclude the end-user and the partners we work with implement our work, and have the real impact
 
-- The job market for data scientist is still immature, which means:
-  - employers don't know how to recruit for data scientist and will often create job postings that will look something like "We're looking for a data scientist. Skills required: Excel and Visual Basic". If you're trying to recruit data scientists, it is much easier to 
-  - 
+- The job market for data scientist is still immature. Employers don't know how to recruit for data scientist and will often create job postings that will look something like "We're looking for a data scientist. Skills required: Excel and Visual Basic". If you're trying to recruit data scientists, it is much easier to describe the actual task that you'd like the person to do. That way the people considering applying can make their own judgement of whether are capable of doing the job, as opposed to making it a tool-specific request
+
+- Data science skills 
 
 Other interesting and important questions that were raised but we didn't get time to answer
 - What is the difference between a data science team that does something for the first time vs. a data science team that needs to make some thing reproducible and of production-ready quality?
