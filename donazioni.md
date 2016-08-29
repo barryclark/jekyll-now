@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Vuoi Donare?
+titolo: Vuoi Donare? | Terremoto Centro Italia
 permalink: /donazioni/
 ---
 
