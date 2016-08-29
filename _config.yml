@@ -21,14 +21,15 @@ description: Un progetto per informare sul terremoto del 24 Agosto 2016
 
 # List of links in the navigation bar
 navbar-links:
-  Blog: "post"
+  Aggiornamenti: "post"
   Bollettino: "bollettino"
   Link utili: "link_utili"
   Mappe: "mappe"
   Alloggi: "alloggi"
   Vuoi donare?: "donazioni"
   Hai bisogno?: "aiuto"
-  WIKI: "https://github.com/emergenzeHack/terremotocentro/wiki"
+  #Vittime: "vittime"
+  WIKI: 'https://github.com/emergenzeHack/terremotocentro/wiki" target="_blank'
   About: "about"
 
 # Image to show in the navigation bar - image must be a square (width = height)
@@ -53,7 +54,7 @@ author:
   instagram: terremotocentro # eg. daattali
   youtube: yourlink # eg. user/daattali or channel/daattali
   rss: https://emergenzehack.github.io/terremotocentro/feed.xml
-  telegram: https://telegram.me/joinchat/BgW6eEBsI3rLKsJk9L7FJg
+  telegram: https://telegram.me/terremotocentroitalia
 
 # Select which links to show in the footer
 footer-links-active:
