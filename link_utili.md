@@ -6,7 +6,11 @@ permalink: /link_utili/
 
 Di seguito alcuni link utili per ricevere informazioni sull'evento.
 
-**Fonti Ufficiali**
+* [Fonti Ufficiali](#fonti-ufficiali)
+* [Progetti Web](#progetti-web)
+* [Contatti](#contatti)
+
+# Fonti Ufficiali
 
 - [Osservatorio Terremoti INGVterremoti](http://cnt.rm.ingv.it/)
 
@@ -20,6 +24,29 @@ Di seguito alcuni link utili per ricevere informazioni sull'evento.
 
 - [Volontariato Lazio](http://www.volontariato.lazio.it/)
 
-**Progetti Web**
+# Progetti Web
 
 - [Emergenza24](http://www.emergenza24.org/)
+
+# Contatti
+
+{% for member in site.data.contatti %}
+  <div class="panel panel-info">
+  <div class="panel-heading">
+  {{member.Nome}}
+  </div>
+  <div class="panel-body">
+  {% if member.Numero %}
+  <div class="row">
+  <div class="col-md-2"><b>Contatti:</b></div><div class="col-md-10">{{member.Numero}}</div>
+  </div>
+  {% endif %}
+  {% if member.Note %}
+  <div class="row">
+  <div class="col-md-12">{{member.Note}}</div>
+  </div>
+  {% endif %}
+  </div>
+  </div>
+{% endfor %}
+
