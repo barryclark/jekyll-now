@@ -20,7 +20,11 @@ Last week Emily Wiegand and I hosted a discussion session with the topic "Buildi
 - **Data science skills are not binary**. Instead of saying "I know [insert: Python, SQL, etc.]" we should look at the team members and say "this team member is a beginner/intermediate/expert in [insert: Python, SQL, etc.]"	
 
 Other interesting and important questions that were raised but we didn't get time to answer:
+
 - What is the difference between a data science team that does something for the first time vs. a data science team that needs to make some thing reproducible and of production-ready quality?
+
 - Where is the boundary between IT and the Data Science team?
+
 - What different data science roles exist out there?
+
  
