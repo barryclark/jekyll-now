@@ -11,6 +11,7 @@ permalink: /aiuto/
 - [Twitter](https://www.twitter.com/terremotocentro): da usare per indirizzare twitter da rilanciare
 - [Canale Telegram](https://telegram.me/terremotocentroitalia): ricezione in tempo reale sulle scosse e news
 - [Gruppo Telegram](https://telegram.me/joinchat/BgW6eEBsI3rLKsJk9L7FJg): da usare per chattare sul tema
+- [Medium](https://medium.com/terremotocentroitalia): reperire informazioni utili, storie, tutorial
 - [Segnalazione Rimozione Contenuti](mailto:terremotocentroita+rimozione@gmail.com): contatto email per segnalare un contenuto da rimuovere
 
 <div class="posts">
