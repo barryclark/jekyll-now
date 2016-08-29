@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Kickstarter - Lords of Rock
+title: Kickstarter - The Lords of Rock
 description: The Gods, all of them, are rocking out for your belief. The Lords of Rock looks amazing.
 category: kickstarter
 featured: lordsofrock.jpg
