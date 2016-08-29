@@ -24,6 +24,7 @@ wget -O _data/fabbisogni.csv $CSV_FABBISOGNI
 wget -O vittime.md $MD_vittime
 
 git add _data
+git add vittime.md
 git commit -m "auto CSV and Vittime update $(date -Iseconds)"
 git pull --rebase
 git push
