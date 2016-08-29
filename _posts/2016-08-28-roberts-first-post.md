@@ -1,4 +1,10 @@
-This is the first ever blog-sentence I have written....
+---
+layout: post
+title: Robert's First Blog Post
+author: rsjudka
+---
+
+# This is the first ever blog-sentence I have written....
 
 ...now that that's out of the way, time to get real!
   Before actually Googling about the different types of research methods I never really though research
