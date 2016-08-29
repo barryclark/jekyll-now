@@ -1,3 +1,9 @@
+---
+layout: post
+title: Bear's intro blog post 
+author: bcarlson8582
+---
+
 1. As an aerospace engineer major, I'm interested in theoretical physics. I really enjoy hearing about ongoing theories proposed by
   NASA and how they could be implemented to benefit the global community. Therefore, I'm interested in scientific research and current theories
   relating to space and air travel.
