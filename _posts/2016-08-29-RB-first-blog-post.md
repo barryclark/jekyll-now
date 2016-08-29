@@ -23,6 +23,8 @@ This can make the completion of many tasks difficult and can hinder my progress.
 If I were able to successfully master the digial literacy of multitasking, I would likely find that I could get a variety of things done in a day.
 
 
+
+
 Booth, Wayne C., Gregory G. Colomb, and Joseph M. Williams. 2008. *The Craft of Research*. 3rd ed. Chicago Guides to Writing, Editing, and Publishing. Chicago: University of Chicago Press.
 
 Burdick, Anne, Johanna Drucker, Peter Lunenfeld, Todd Presner, and Jeffrey Schnapp. 2012. *Digital Humanities*. Cambridge, MA: MIT Press.
