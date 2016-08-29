@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Alloggi
+titolo: Alloggi | Terremoto Centro Italia
 permalink: /alloggi/
 ---
 {% for member in site.data.alloggi %}

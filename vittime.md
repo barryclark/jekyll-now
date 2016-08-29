@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Vittime
+titolo: Vittime | Terremoto Centro Italia
 permalink: /vittime/
 ---
 
