@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Blog
-titolo: Blog | Terremoto Centro Italia
+title: Aggiornamenti
+titolo: Aggiornamenti | Terremoto Centro Italia
 permalink: /post/
 ---
 
