@@ -18,7 +18,7 @@ avatar: https://www.facebook.com/photo.php?fbid=10208389078740344&l=d1598882f9
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email:mikejzajac@gmail.com
+  email:
   facebook:
   flickr:
   github: barryclark/jekyll-now
