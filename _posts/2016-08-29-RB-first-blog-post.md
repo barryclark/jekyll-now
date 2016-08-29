@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Rachael 1st Blog Post
-author: Rachael Brooks
+author: rbrooks6
 ---
 
 **1. Which research methods do you most want to learn?**
