@@ -55,6 +55,7 @@ author:
   youtube: yourlink # eg. user/daattali or channel/daattali
   rss: https://emergenzehack.github.io/terremotocentro/feed.xml
   telegram: https://telegram.me/terremotocentroitalia
+  medium: https://medium.com/terremotocentroitalia
 
 # Select which links to show in the footer
 footer-links-active:
@@ -69,6 +70,7 @@ footer-links-active:
   instagram: true
   youtube: false
   telegram: true
+  medium: true
 
 # Select which share links to show in posts
 share-links-active:
