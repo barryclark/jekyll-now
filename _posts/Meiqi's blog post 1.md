@@ -28,6 +28,15 @@ I'm interested in it, and also I wish I could learn more about other topics in d
 ## 3. Which [digital literacies](https://libbyh.github.io/research-methods-in-digital-humanities/#cultural-competencies) do you most want to master?
 Networking. By organizing, integrating, combining and the resources and make it easy to search for, synthesize, and disseminate 
 information is very useful and powerful. Sometimes what we found are in pieces - fragmentary and unilateral - they are like dots we found,
-individual and sometimes makes no sense; networking puts them in order and making them in sense - I think it's like puzzles - you have no 
-idea what the puzzle looks like when you were looking at a single piece of it, but after you organize it and put them in a whole picture, 
+individual and sometimes makes no sense; networking puts them in order and making them in sense - I think it's like puzzles - you have no
+idea what the puzzle looks like when you were looking at a single piece of it, but after you organize it and put them in a whole picture,
 you will get what it is, and how it works. I think Networking really helps in doing the research.  
+
+References:
+
+Examples of Spatial Humanities Projects. (2011, July 26). Retrieved August 28, 2016, from http://www.nytimes.com/interactive/2011/07/27/arts/spatial-maps.html?_r=0
+
+Research Methods in Digital Humanities. (n.d.). Retrieved August 28, 2016, from http://www.library.illinois.edu/sc/services/Digital_Humanities/Research_Methods.html
+
+What is Digital Humanities? (n.d.). Retrieved August 28, 2016, from http://www.library.illinois.edu/sc/services/Digital_Humanities/
+
