@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Emma's 1st Blog Post
-author: Emma Zachocki
+author: ezachock
 ---
 1. Which research methods do you most want to learn?
   According to Wikipedia, the four main types of research methods are quantitative, qualitative, correlation/regression analysis, and meta-analysis. Out of those four, my favorite method of research is qualitative. It can be the most difficult approach to research because not only do you need to gather data, but also understand the why. I think in today's society, we are not ignortant to mass media and persuasive advertisements that worked in decades past. It is our responsibility to understand the consumer and the best way to do that is through qualitative research.
