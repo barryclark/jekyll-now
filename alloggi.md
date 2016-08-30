@@ -7,8 +7,10 @@ permalink: /alloggi/
 <div class="panel-group">
 {% for member in site.data.alloggi %}
 
-{% assign memberId = member.Descrizione|strip_newlines|handleize|escape|strip_html|replace:' ','_'|truncate:20 %}
+{% assign memberId = member.Descrizione|slugify|truncate:20,"" %}
 {% capture memberUrl %}{{site.url}}{{page.url}}#{{memberId}}{% endcapture %}
+{% capture twittershareUrl %}https://twitter.com/intent/tweet?text={{member.Descrizione|truncate:50|uri_escape}}&hashtags=terremotocentroitalia,alloggio&url={{memberUrl|uri_escape}}{% endcapture %}
+{% capture fbshareUrl %}http://www.facebook.com/share.php?u={{memberUrl|uri_escape}}&title=member.Descrizione{% endcapture %}
 
 <div class="panel panel-info">
 <div class="panel-heading" id="{{memberId}}">
@@ -34,7 +36,7 @@ permalink: /alloggi/
 
 {% if member.Link %}
 <div class="row">
-<div class="col-md-2"><b>Link:</b></div><div class="col-md-10"><a href="{{member.Link}}">{{member.Link}}</a></div>
+<div class="col-md-2"><b>Link:</b></div><div class="col-md-10"><a href="{{member.Link}}">Twitter</a></div>
 </div>
 {% endif %}
 <div class="row">
@@ -42,9 +44,23 @@ permalink: /alloggi/
 </div>
 <div class="panel-footer">
 <div class="row">
-<div class="col-md-2"><a href="{{memberUrl}}">Permalink</a></div>
-<div class="col-md-2"><div class="fb-share-button" data-href="{{memberUrl}}" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fterremotocentroitalia.info%2F&amp;src=sdkpreparse">Share</a></div></div>
-<div class="col-md-2"><a class="twitter-share-button"  href="https://twitter.com/intent/tweet?hashtags=terremotocentroitalia,alloggio&url={{memberUrl}}">Tweet</a></div>
+<div class="col-md-1"><a href="{{memberUrl}}">Link</a></div>
+<div class="col-md-1">
+            <a href="{{fbshareUrl}}" title="Twitter">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+</div>
+<div class="col-md-1">
+            <a href="{{twittershareUrl}}" title="Twitter">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+
 </div>
 </div>
 </div>
