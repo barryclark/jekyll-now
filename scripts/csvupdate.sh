@@ -27,6 +27,8 @@ wget -O _data/vittime.csv $CSV_VITTIME
 wget -O _data/press.csv $CSV_PRESS
 #wget -O vittime.md $MD_vittime
 
+sed -i 's/\r$//g' _data/*.csv
+
 git add _data
 #git add vittime.md
 git commit -m "auto CSV update $(date -Iseconds)"
