@@ -12,3 +12,6 @@
 
 - slug: product
   name: Product
+
+- slug: opinion
+  name: Opinion

@@ -1,5 +1,5 @@
-- slug: security
-  name: Security
+- slug: api
+  name: API
 
 - slug: cloud
   name: Cloud
@@ -9,33 +9,33 @@
 
 - slug: culture
   name: Culture
+
+- slug: custdev
+  name: Customer Development
   
-- slug: open-source
-  name: Open Source
-
-- slug: api
-  name: API
-
-- slug: microservice
-  name: Microservice
-
 - slug: devops
   name: Devops
 
 - slug: docker
   name: Docker
 
+- slug: logging
+  name: Logging
+
+- slug: microservice
+  name: Microservice
+
 - slug: mobile
   name: Mobile
 
-- slug: custdev
-  name: Customer Development
+- slug: open-source
+  name: Open Source
+
+- slug: security
+  name: Security
 
 - slug: smartsteuer
   name: Smartsteuer
 
-- slug: logging
-  name: Logging 
-
 - slug: automation
-  name: Automation 
+  name: Automation
