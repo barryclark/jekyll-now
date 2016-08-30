@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Bollettino
-titolo: Bollettino | Terremoto Centro Italia
 permalink: /bollettino/
 ---
 {% assign bollettino = (site.data.bollettino | sort: 'Data') %}
