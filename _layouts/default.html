@@ -34,6 +34,8 @@
       </div>
     </div>
 
+    <div id="my-github-projects"/>; 
+
     <div id="main" role="main" class="container">
       {{ content }}
     </div>
@@ -47,5 +49,13 @@
     </div>
 
     {% include analytics.html %}
+
+    <script src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.2.min.js" type="text/javascript"></script>
+    <script src="/javascripts/git.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function() {
+            $("#my-github-projects").loadRepositories("junshern");
+        });
+    </script>
   </body>
 </html>
