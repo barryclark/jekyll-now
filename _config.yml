@@ -22,18 +22,18 @@ description: Un progetto per informare sul terremoto del 24 Agosto 2016
 # List of links in the navigation bar
 navbar-links:
   Aggiornamenti: 
-  - Bollettino: "bollettino"
-  - Blog: "post"
+    - Bollettino: "bollettino"
+    - Blog: "post"
   Hai bisogno?: 
-  - Aiuto: "aiuto"  
-  - Vittime: "vittime"
-  -  Alloggi: "alloggi"
+    - Aiuto: "aiuto"  
+    - Vittime: "vittime"
+   -  Alloggi: "alloggi"
   Link utili: "link_utili"
   Mappe: "mappe"
   Vuoi donare?: "donazioni"
   Il Progetto: 
-  - About: "about"
-  - WIKI: 'https://github.com/emergenzeHack/terremotocentro/wiki" target="_blank'
+   - About: "about"
+   - WIKI: 'https://github.com/emergenzeHack/terremotocentro/wiki" target="_blank'
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
