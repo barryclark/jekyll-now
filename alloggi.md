@@ -34,7 +34,7 @@ permalink: /alloggi/
 
 {% if member.Link %}
 <div class="row">
-<div class="col-md-2"><b>Link:</b></div><a href="{{member.Link}}">{{member.Link}}</a>
+<div class="col-md-2"><b>Link:</b></div><div class="col-md-10"><a href="{{member.Link}}">{{member.Link}}</a></div>
 </div>
 {% endif %}
 <div class="row">
