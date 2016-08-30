@@ -13,6 +13,15 @@ layout: default
       </div>
 
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+
+      {% if post.author %}{% assign author = site.authors[post.author] %}
+	  {% else %}{% assign author = site.authors["default"] %}{% endif %}
+      <div class="small-author">
+        <span class="name">{{author.display_name}}</span>
+        {% if author.gravatar %}<img src="http://www.gravatar.com/avatar/{{ author.gravatar }}?s=28">
+        {% elsif author.avatar %}<img height="25" src="{{ author.avatar }}">
+        {% else %}<img height="25" src="{{ site.avatar }}">{% endif %}
+      </div>
     </article>
   {% endfor %}
 </div>
