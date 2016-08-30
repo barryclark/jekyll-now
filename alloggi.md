@@ -36,7 +36,7 @@ permalink: /alloggi/
 
 {% if member.Link %}
 <div class="row">
-<div class="col-md-2"><b>Link:</b></div><div class="col-md-10"><a href="{{member.Link}}">Twitter</a></div>
+<div class="col-md-2"><b>Link:</b></div><a href="{{member.Link}}">{{member.Link}}</a>
 </div>
 {% endif %}
 <div class="row">
@@ -44,23 +44,9 @@ permalink: /alloggi/
 </div>
 <div class="panel-footer">
 <div class="row">
-<div class="col-md-1"><a href="{{memberUrl}}">Link</a></div>
-<div class="col-md-1">
-            <a href="{{fbshareUrl}}" title="Twitter">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
-</div>
-<div class="col-md-1">
-            <a href="{{twittershareUrl}}" title="Twitter">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
-
+<div class="col-md-2"><a href="{{memberUrl}}">Permalink</a></div>
+<div class="col-md-2"><div class="fb-share-button" data-href="{{memberUrl}}" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fterremotocentroitalia.info%2F&amp;src=sdkpreparse">Share</a></div></div>
+<div class="col-md-2"><a class="twitter-share-button"  href="https://twitter.com/intent/tweet?hashtags=terremotocentroitalia,alloggio&url={{memberUrl}}">Tweet</a></div>
 </div>
 </div>
 </div>
