@@ -140,7 +140,7 @@ img {
   -webkit-transition: opacity 0.5s ease-in-out;
   -moz-transition: opacity 0.5s ease-in-out;
   transition: opacity 0.5s ease-in-out;
-  left: 30%;
+  left: 44px;
   width: 50px;
   margin-top: -12px;
 }
@@ -169,8 +169,7 @@ img {
 
 @media only screen and (min-width: 768px) {
   .navbar-custom .avatar-container {
-    width: 100px;
-    margin-top: -50px;
+    width: 77px;
   }
   
   .navbar-custom .avatar-container  .avatar-img-border {
