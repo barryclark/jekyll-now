@@ -48,7 +48,8 @@ Un grazie sentito a :
 
 ### Press
 
-Data         |Dove                    |Titolo
-:---------------|:-----------------------|:------------
-{% for member in site.data.press %}{{member.data}} | {{member.dove}} | [{{member.titolo}}]({{member.link}})
+|Data         | Dove    | Titolo |
+|:------------|:--------|:------|
+|{% for member in site.data.press %}{{member.data}} | {{member.dove}} | [{{member.titolo}}]({{member.link}})|
 {% endfor %}
+
