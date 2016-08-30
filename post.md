@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Aggiornamenti
+title: Blog
 permalink: /post/
 ---
 <ul>
