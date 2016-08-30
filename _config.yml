@@ -25,9 +25,9 @@ navbar-links:
     - Bollettino: "bollettino"
     - Blog: "post"
   Hai bisogno?: 
+    -  Alloggi: "alloggi"
     - Aiuto: "aiuto"  
     - Vittime: "vittime"
-   -  Alloggi: "alloggi"
   Link utili: "link_utili"
   Mappe: "mappe"
   Vuoi donare?: "donazioni"
