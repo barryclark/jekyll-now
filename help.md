@@ -12,6 +12,8 @@ Se hai una necessità o vuoi comunicare aggiornamenti, ci sono numerosi modi di 
 - [Gruppo Flickr](https://www.flickr.com/groups/3003557@N20/), per caricare foto e media
 - [Email per segnalare contenuti da rimuovere](mailto:terremotocentroita+rimozione@gmail.com)
 
+Tutto ciò che ci mandi sarà gestito dal nostro team, che provvederà alla pubblicazione sul sito appena possibile.
+
 <div class="posts">
   {% for post in site.posts %}
     {% if post.categories contains 'aiuto' %}
