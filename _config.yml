@@ -27,8 +27,8 @@ navbar-links:
   Mappe: "mappe"
   Alloggi: "alloggi"
   Vuoi donare?: "donazioni"
-  Hai bisogno?: "aiuto"
-  Vittime: "vittime"
+  Hai bisogno?: "aiuto" > Vittime: "vittime"
+  
   WIKI: 'https://github.com/emergenzeHack/terremotocentro/wiki" target="_blank'
   About: "about"
 
