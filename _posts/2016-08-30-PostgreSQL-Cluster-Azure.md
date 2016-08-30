@@ -3,7 +3,7 @@ layout: post
 title: Building a Highly-Available PostgreSQL Cluster on Azure 
 subtitle:
 category: howto
-tags: [cto, cloud, automation]
+tags: [cloud, automation]
 author: esmaeil_sarabadani
 author_email: esmaeil.sarabadani@haufe-lexware.com
 header-img: "images/bg-post.jpg"
