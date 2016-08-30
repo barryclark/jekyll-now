@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Aggiornamenti
-titolo: Aggiornamenti | Terremoto Centro Italia
 permalink: /post/
 ---
 <ul>

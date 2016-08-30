@@ -1,7 +1,6 @@
 ---
 layout: page
 title: About
-titolo: About | Terremoto Centro Italia
 permalink: /about/
 ---
 
