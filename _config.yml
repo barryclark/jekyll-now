@@ -24,10 +24,10 @@ navbar-links:
   Aggiornamenti: 
     - Bollettino: "bollettino"
     - Blog: "post"
-    - Segnala: "aiuto"
+    - Link utili: "link_utili"
   Hai bisogno?: 
     - Alloggi: "alloggi"
-    - Link utili: "link_utili"
+    - Aiuto: "aiuto"
     - Vittime: "vittime"
   Mappe: "mappe"
   Vuoi donare?: "donazioni"
