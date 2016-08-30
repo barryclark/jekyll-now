@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Assault Suit Leynos
-description: The Gods, all of them, are rocking out for your belief. The Lords of Rock looks amazing.
+description: Assault Suit Leynos is a side-scrolling-bullet-hell-mech game that's reminiscent of Target Earth.
 category: video games
 featured: leynos.jpg
 tags: [video games, assault suit leynos, rising star games]
