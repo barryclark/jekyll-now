@@ -8,7 +8,7 @@ If you want to install [Caffe](http://caffe.berkeleyvision.org/) on Ubuntu 16.04
 
 # Install Nvidia driver and Cuda (Optional)
 
-Follow instructions [here](http://yangcha.github.io/GTX-1080/) to install Nvidia drivers, CUDA 8RC and cuDNN 5.
+If you want to use GPU to accelerate, follow instructions [here](http://yangcha.github.io/GTX-1080/) to install Nvidia drivers, CUDA 8RC and cuDNN 5.
 
 # Install Anaconda
 
