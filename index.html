@@ -6,13 +6,20 @@ layout: default
   {% for post in site.posts %}
     <article class="post">
 
+      {% if post.external_url %}
+      <h1><a href="{{ site.baseurl }}{{ post.external_url }}">{{ post.title }}</a></h1>
+      {% else %}
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
+      {% endif %}
       <div class="entry">
         {{ post.excerpt }}
       </div>
 
+      {% if post.external_url %}
+      <a href="{{ site.baseurl }}{{ post.external_url }}" class="read-more">Read More</a>
+      {% else %}
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+      {% endif %}
 
       {% if post.author %}{% assign author = site.authors[post.author] %}
 	  {% else %}{% assign author = site.authors["default"] %}{% endif %}
