@@ -1,0 +1,12 @@
+---
+layout: default
+title: Reading Notes
+---
+
+<div class="posts">
+  <ul>
+    {% for note in site.reading-notes %}
+        <li /><a href="{{ site.baseurl }}{{ note.url}}">{{ note.title }}</a> by {{ note.author }}
+    {% endfor %}
+  </ul>
+</div>
