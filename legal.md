@@ -64,7 +64,7 @@ L’Utente può scegliere di abilitare o disabilitare i cookies, anche dopo aver
 
 Fatto salvo quanto precede, si ricorda che la disattivazione dei cookie potrebbe condizionare il corretto funzionamento del Sito.
 
-### Modalità del trattamento
+### Modalità del trattamento
 
 La raccolta e il trattamento dei suddetti dati potrà essere svolto direttamente dal Titolare o dalle persone fisiche facenti parte dello staff del sito.
 
