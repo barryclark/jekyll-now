@@ -9,7 +9,7 @@ permalink: /bollettino/
 {% assign memberId = memberName|slugify|truncate:20,"" %}
 {% capture memberUrl %}{{site.url}}{{page.url}}#{{memberId}}{% endcapture %}
 <div class="panel panel-info">
-<div class="panel-heading">
+<div class="panel-heading"><span class="anchor" id="{{memberId}}"></span>
 {{member.Descrizione}}
 </div>
 <div class="panel-body">
