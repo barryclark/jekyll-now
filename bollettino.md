@@ -15,29 +15,29 @@ permalink: /bollettino/
 <div class="panel-body">
 {% if member.Comune %}
 <div class="row">
-<div class="col-md-2"><b>Comune:</b></div> {{member.Comune}}
+<div class="col-md-2"><b>Comune:</b></div><div class="col-md-10">{{member.Comune}}</div>
 </div>
 {% endif %}
 {% if member.Indirizzo %}
 <div class="row">
-<div class="col-md-2"><b>Indirizzo:</b></div> {{member.Indirizzo}}
+<div class="col-md-2"><b>Indirizzo:</b></div><div class="col-md-10">{{member.Indirizzo}}</div>
 </div>
 {% endif %}
 
 {% if member.Fonte %}
 <div class="row">
-<div class="col-md-2"><b>Fonte:</b></div> {{member.Fonte}}
+<div class="col-md-2"><b>Fonte:</b></div><div class="col-md-10">{{member.Fonte}}</div>
 </div>
 {% endif %}
 
 {% if member.Link %}
 <div class="row">
-<div class="col-md-2"><b>Link:</b></div><a href="{{member.Link}}">{{member.Link}}</a>
+<div class="col-md-2"><b>Link:</b></div><div class="col-md-10"><a href="{{member.Link}}">{{member.Link}}</a></div>
 </div>
 {% endif %}
 {% if member.Data %}
 <div class="row">
-<div class="col-md-2"><b>Data:</b></div>{{member.Data}} {{member.Ora}}
+<div class="col-md-2"><b>Data:</b></div><div class="col-md-10">{{member.Data}} {{member.Ora}}</div>
 </div>
 {% endif %}
 <div class="row">
