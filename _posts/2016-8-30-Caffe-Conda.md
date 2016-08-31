@@ -58,4 +58,20 @@ make install
 make runtest
 ```
 
+Add the module directory to your `$PYTHONPATH` by `export PYTHONPATH=/path/to/caffe/python:$PYTHONPATH`.
+
+# Test Run
+
+First install protobuf as follows:
+
+```
+conda install protobuf
+```
+
+Then execute command: `python` on caffe-master directory:
+
+```
+import caffe
+```
+
 
