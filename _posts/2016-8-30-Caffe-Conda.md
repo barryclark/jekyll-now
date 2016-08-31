@@ -68,10 +68,19 @@ First install protobuf as follows:
 conda install protobuf
 ```
 
-Then execute command: `python` on caffe-master directory:
+Then execute command: `python` from caffe-master directory:
 
 ```
 import caffe
 ```
+
+Go to folder `examples`, execute command:
+
+```
+jupyter notebook
+```
+
+Choose one of the notebook examples to test the Caffe installation.
+
 
 
