@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Mappa delle immagini inviate dal bot Telegram
-categories: blog
+categories: blog mappe
 ---
 
 Il nostro [bot Telegram](http://telegram.me/TerremotoCentroItalia_bot) registra immagini inviate come segnalazione.
