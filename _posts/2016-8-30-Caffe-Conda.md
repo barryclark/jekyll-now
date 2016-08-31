@@ -3,7 +3,7 @@ layout: post
 title: Install Caffe With Anaconda
 ---
 
-If you want to install [Caffe](http://caffe.berkeleyvision.org/) on Ubuntu 16.04along with Anaconda, here is an installation instructions:
+If you want to install [Caffe](http://caffe.berkeleyvision.org/) on Ubuntu 16.04 along with Anaconda, here is an installation guide:
 
 
 # Install Nvidia driver and Cuda (Optional)
