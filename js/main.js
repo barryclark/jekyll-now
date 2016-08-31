@@ -134,17 +134,6 @@ var main = {
   },
 
   getImgInfo : function() {
-    var randNum = Math.floor((Math.random() * main.numImgs) + 1);
-    var src = main.bigImgEl.attr("data-img-src-" + randNum);
-  var desc = main.bigImgEl.attr("data-img-desc-" + randNum);
-  
-  return {
-    src : src,
-    desc : desc
-  }
-  },
-
-  getImgInfo : function() {
   	var randNum = Math.floor((Math.random() * main.numImgs) + 1);
     var src = main.bigImgEl.attr("data-img-src-" + randNum);
 	var desc = main.bigImgEl.attr("data-img-desc-" + randNum);
