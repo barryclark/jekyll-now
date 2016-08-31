@@ -4,9 +4,7 @@ title: Note Legali
 permalink: /legal/
 ---
 
-## Note Legali
-
-TerremotoCentroItalia è un progetto promosso da ActionAid International Italia Onlus (di seguito “ActionAid”) e da Fondazione Realizza il Cambiamento, realizzato da un team di volontari e supportato da staff e volontari di ActionAid. 
+Terremoto Centro Italia è un progetto promosso da ActionAid International Italia Onlus (di seguito “ActionAid”) e da Fondazione Realizza il Cambiamento, realizzato da un team di volontari e supportato da staff e volontari di ActionAid. 
 Terremoto Centro Italia non costituisce testata giornalistica e non è un prodotto editoriale, non ha carattere periodico ed è aggiornato in base alle scelte totalmente discrezionali dello staff, al fine di condividere informazioni utili e verificate sul terremoto del 24 agosto 2016 in Italia.
 
 Copyright
