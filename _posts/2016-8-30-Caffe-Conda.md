@@ -19,3 +19,11 @@ conda update conda
 conda update anaconda
 ```
 
+If you want to create an environment, run:
+
+```
+conda create -n testcaffe python
+source activate testcaffe
+```
+
+
