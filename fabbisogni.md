@@ -4,9 +4,6 @@ title: Fabbisogni
 permalink: /fabbisogni/
 ---
 
-# Fabbisogni
-
-Data	Ora	Breve descrizione delle necessità	Elenco completo dei fabbisogni	Indirizzo	Località	Comune	Fonte 	Link	Latitudine	Longitudine
 {% for member in site.data.fabbisogni %}
 <div class="panel panel-info">
 <div class="panel-heading">
