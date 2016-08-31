@@ -23,7 +23,7 @@
 	};
 
 	var menuAnimate = function(o, mleft, duration, mul) {
-		var navLi = $('#fh5co-nav > ul > li');
+		var navLi = $('#kkwp-nav > ul > li');
 		navLi.each( function(k){
 			var el = $(this);
 			setTimeout(function() {
@@ -37,11 +37,11 @@
 	};
 
 	var burgerMenu = function() {
-		$('body').on('click', '.js-fh5co-nav-toggle', function(){
-			$('#fh5co-nav > ul > li').css({ marginLeft: -50, opacity: 0 });
+		$('body').on('click', '.js-kkwp-nav-toggle', function(){
+			$('#kkwp-nav > ul > li').css({ marginLeft: -50, opacity: 0 });
 			$(this).toggleClass('active');
 			
-			var mainNav = $('#fh5co-main-nav');
+			var mainNav = $('#kkwp-main-nav');
 			mainNav.slideToggle(400).toggleClass('active');
 			
 
@@ -56,14 +56,14 @@
 
 	var mobileMenuState = function() {
 		if ( $(window).width() > 768 ) {
-			$('#fh5co-main-nav').removeClass('active').show();
-			$('#fh5co-nav > ul > li').css({
+			$('#kkwp-main-nav').removeClass('active').show();
+			$('#kkwp-nav > ul > li').css({
 				opacity: 1,
 				marginLeft: 0
 			})
 		} else {
-			$('.js-fh5co-nav-toggle').removeClass('active');
-			$('#fh5co-main-nav').hide();
+			$('.js-kkwp-nav-toggle').removeClass('active');
+			$('#kkwp-main-nav').hide();
 		}
 	};
 
@@ -77,7 +77,7 @@
 
 	// Easy Repsonsive Tabs
 	var responsiveTabs = function(){
-		$('#fh5co-tab-feature').easyResponsiveTabs({
+		$('#kkwp-tab-feature').easyResponsiveTabs({
 	      type: 'default',
 	      width: 'auto', 
 	      fit: true, 
@@ -88,7 +88,7 @@
 	      tabidentify: 'hor_1'
 	            
 	    });
-	    $('#fh5co-tab-feature-center').easyResponsiveTabs({
+	    $('#kkwp-tab-feature-center').easyResponsiveTabs({
 	      type: 'default',
 	      width: 'auto',
 	      fit: true, 
@@ -99,7 +99,7 @@
 	      tabidentify: 'hor_1' 
 	      
 	    });
-	    $('#fh5co-tab-feature-vertical').easyResponsiveTabs({
+	    $('#kkwp-tab-feature-vertical').easyResponsiveTabs({
 	      type: 'vertical',
 	      width: 'auto',
 	      fit: true,
@@ -132,6 +132,7 @@
 	var testimonialCarousel = function(){
 		var owl = $('.owl-carousel-fullwidth');
 		owl.owlCarousel({
+			autoPlay: 3000,
 			items: 5,
 		    loop: false,
 		    margin: 0,
@@ -158,12 +159,12 @@
 
 		$(window).scroll(function(){
 			if ($(window).scrollTop() > 100 ) {
-				$('.fh5co-gotop').show();
+				$('.kkwp-gotop').show();
 			} else {
-				$('.fh5co-gotop').hide();
+				$('.kkwp-gotop').hide();
 			}
 		});
-		$('.fh5co-gotop').click(function(event){
+		$('.kkwp-gotop').click(function(event){
 
 		    $('html, body').animate({
 		        scrollTop: 0
@@ -202,8 +203,51 @@
 		});
 	};
 
-	var imagesAdder = function () {
-		$()
+
+
+	var emailContactForm = function () { 
+		
+	  $('#contact-form').on('submit', function(event) {
+			event.preventDefault();
+			var $form = $('#contact-form')
+			var $formMessages = $('#form-messages')
+			var url = $form.attr('action')
+			console.log(url)
+			var formData = $form.serialize()
+			console.log(formData)
+
+			// Submit the form using AJAX.
+			$.ajax({
+				type: 'POST',
+				beforeSend: function (request) {
+	        request.setRequestHeader("Access-Control-Allow-Origin", "*");
+	        request.setRequestHeader("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
+
+        },
+				url: url,
+				data: formData
+			}).done(function(response) {
+				$formMessages.removeClass('error')
+				$formMessages.addClass('success')
+
+				$formMessages.text(response)
+
+				// Clear the form
+				$('#name').val('')
+				$('#email').val('')
+				$('#message').val('')
+				// $('#questionType').val('')
+			}).fail(function(data) {
+				$formMessages.removeClass('success')
+				$formMessages.addClass('error')
+
+				if (data.responseText !== '') {
+					$formMessages.text(data.responseText)
+				} else {
+					$formMessages.text("Failed! Message cannot be sent")
+				}
+			})
+		})
 	};
 
 
@@ -218,7 +262,7 @@
 		wResize();
 		scrollToContactStart();
 		scrollToOfficeInfo();
-	});
+		emailContactForm();
 
-
+	})
 }());

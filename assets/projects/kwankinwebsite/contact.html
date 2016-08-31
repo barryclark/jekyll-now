@@ -55,10 +55,10 @@
   <body>
     
     <!-- Header -->
-    <header id="fh5co-header" role="banner">
+    <header id="kkwp-header" role="banner">
       
       <!-- Logo -->
-      <div id="fh5co-logo" class="text-center">
+      <div id="kkwp-logo" class="text-center">
         <a href="index.html">
           <div>
             <img class="" src="images/logo100.png" alt="Image"><br/>
@@ -70,11 +70,11 @@
       <!-- Logo -->
       
       <!-- Mobile Toggle Menu Button -->
-      <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
+      <a href="#" class="js-kkwp-nav-toggle kkwp-nav-toggle"><i></i></a>
       
       <!-- Main Nav -->
-      <div id="fh5co-main-nav">
-      <nav id="fh5co-nav" role="navigation">
+      <div id="kkwp-main-nav">
+      <nav id="kkwp-nav" role="navigation">
         <ul>
           <li>
             <a href="index.html">Home 主頁</a>
@@ -97,18 +97,18 @@
     
     <!-- Main -->
     <main role="main">
-        <!-- <div class="fh5co-spacer fh5co-spacer-md"></div> -->
-        <!-- <h2 class="fh5co-uppercase-heading-sm text-center">Call To Action Section</h2> -->
-        <div class="fh5co-spacer fh5co-spacer-xs"></div>
+        <!-- <div class="kkwp-spacer kkwp-spacer-md"></div> -->
+        <!-- <h2 class="kkwp-uppercase-heading-sm text-center">Call To Action Section</h2> -->
+        <div class="kkwp-spacer kkwp-spacer-xs"></div>
 
         <!-- Call to action -->
-        <div class="fh5co-call-to-action text-center">
+        <div class="kkwp-call-to-action text-center">
           <div class="container">
-            <div class="fh5co-call-to-action-wrap">
-              <div class="fh5co-call-to-action-inner text-center">
-                <h3 class="fh5co-call-to-action-text">Have questions for us? Let's talk.</h3>
-                <h3 class="fh5co-call-to-action-text">有疑問? 請跟我們聯絡。</h3>
-                <a href="#" id="contactStartButton" class="btn btn-outline btn-sm">Get Started 開始聯絡</a>
+            <div class="kkwp-call-to-action-wrap">
+              <div class="kkwp-call-to-action-inner text-center">
+                <h3 class="kkwp-call-to-action-text">Have questions for us? Let's talk.</h3>
+                <h3 class="kkwp-call-to-action-text">有疑問? 請跟我們聯絡。</h3>
+                <!-- <a href="#" id="contactStartButton" class="btn btn-outline btn-sm">Get Started 開始聯絡</a> -->
                 <a href="#" id="officeInfoButton" class="btn btn-outline btn-sm">Office Info. 辦公信息</a>
               </div>
             </div>
@@ -116,43 +116,67 @@
         </div>
         <!-- Call to action -->
 
-        <div id="contactFormMargin" class="fh5co-spacer fh5co-spacer-md"></div>          
+        <!-- <div id="contactFormMargin" class="kkwp-spacer kkwp-spacer-md"></div>           -->
 
         <!-- Form -->
-        <div class="container">
+        <!-- <div class="container">
           <div class="row">
             <div class="col-md-12">
-              <h2 class="fh5co-uppercase-heading-sm text-center">Form</h2>
-              <div class="fh5co-spacer fh5co-spacer-xs"></div>
+              <h2 class="kkwp-uppercase-heading-sm text-center">Form</h2> -->
+              <!-- Form Messages -->
+              <!-- <div id="form-messages"></div>
+              <div class="kkwp-spacer kkwp-spacer-xs"></div>
             </div>
             <div class="col-md-8 col-md-offset-2">
-              <form action="#" method="post">
+              <form id="contact-form" action="./mailer.php" method="post">
                 <div class="col-md-6">
                   <div class="form-group">
-                    <label for="name" class="sr-only">Email</label>
-                    <input placeholder="Name" id="name" type="text" class="form-control input-lg">
+                    <label for="name" class="sr-only">Name</label>
+                    <input
+                    placeholder="Name"
+                    id="name"
+                    name="name"
+                    type="text"
+                    class="form-control input-lg"
+                    title="letters only"
+                    pattern="[A-Za-z]+"
+                    required>
                   </div>  
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
                     <label for="email" class="sr-only">Email</label>
-                    <input placeholder="Email" id="email" type="text" class="form-control input-lg">
+                    <input
+                      placeholder="Email"
+                      id="email"
+                      name="email"
+                      type="email"
+                      class="form-control input-lg"
+                      title="Not a valid email"
+                      pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                      required>
                   </div>  
-                </div>
-                <div class="col-md-12">
+                </div> -->
+                <!-- <div class="col-md-12">
                   <div class="form-group">
                     <label for="gender" class="sr-only">Question Type</label>
-                    <select class="form-control input-lg" id="type">
+                    <select class="form-control input-lg" id="type" name="QuestionType">
                       <option>--Type--</option>
                       <option>Product Quotes</option>
                       <option>Product Request</option>
                     </select>
                   </div>  
-                </div>
-                <div class="col-md-12">
+                </div> -->
+                <!-- <div class="col-md-12">
                   <div class="form-group">
                     <label for="message" class="sr-only">Message</label>
-                    <textarea placeholder="Message" id="message" class="form-control input-lg" rows="3"></textarea>
+                    <textarea
+                      placeholder="Message"
+                      id="message"
+                      name="message"
+                      class="form-control input-lg"
+                      rows="3"
+                      required></textarea>
                   </div>  
                 </div>
                 <div class="col-md-6">
@@ -165,28 +189,28 @@
                 
                 
               </form> 
-              <div class="fh5co-spacer fh5co-spacer-sm"></div>
+              <div class="kkwp-spacer kkwp-spacer-sm"></div>
             </div>
             
           </div>
 
-        </div>
+        </div> -->
         <!-- Form -->
 
-        <div id="officeInfoMargin" class="fh5co-spacer fh5co-spacer-md"></div>
+        <div id="officeInfoMargin" class="kkwp-spacer kkwp-spacer-md"></div>
 
         <!-- Office Info Tabs -->
         <div class="row">
           <div class="col-md-12">
-            <div id="fh5co-tab-feature-center" class="fh5co-tab text-center">
+            <div id="kkwp-tab-feature-center" class="kkwp-tab text-center">
               <ul class="resp-tabs-list hor_1">
-                <li><i class="fh5co-tab-menu-icon ti-ruler-pencil"></i>Hong Kong Office 香港辦公室</li>
-                <li><i class="fh5co-tab-menu-icon ti-package"></i> China Factory 中國工廠</li>
+                <li><i class="kkwp-tab-menu-icon ti-ruler-pencil"></i>Hong Kong Office 香港辦公室</li>
+                <li><i class="kkwp-tab-menu-icon ti-package"></i> China Factory 中國工廠</li>
               </ul>
               <div class="resp-tabs-container hor_1">
                 <div class="row">
-                  <h2 class="fh5co-uppercase-heading-sm text-center">Hong Kong Office</h2>
-                  <div class="fh5co-spacer fh5co-spacer-xs"></div>
+                  <h2 class="kkwp-uppercase-heading-sm text-center">Hong Kong Office</h2>
+                  <div class="kkwp-spacer kkwp-spacer-xs"></div>
                   <div class="text-center">
                     <p>Unit 4, 14/F., Kin Wing Industrial Building, No. 33 Kin Wing Street, Tuen Mun, N. T. Hong Kong</p>
                     <!-- <p>關健手袋廠有限公司</p> -->
@@ -199,8 +223,8 @@
                 </div>
                 
                 <div class="row">
-                  <h2 class="fh5co-uppercase-heading-sm text-center">China Factory</h2>
-                  <div class="fh5co-spacer fh5co-spacer-xs"></div>
+                  <h2 class="kkwp-uppercase-heading-sm text-center">China Factory</h2>
+                  <div class="kkwp-spacer kkwp-spacer-xs"></div>
                   <div class="text-center">
                     <p>35 Qi Long Road, Sha Bian Cun, Xia Bian Guan Li District, Chang An Zhen, Dong Guan, Guang Dong, China</p>
                     <!-- <p>關健手袋廠有限公司</p> -->
@@ -216,13 +240,13 @@
         </div>
         <!-- Office Info Tabs -->
 
-        <div class="fh5co-spacer fh5co-spacer-md"></div>
+        <div class="kkwp-spacer kkwp-spacer-md"></div>
 
         <!-- Map -->
         <div class="container">
           <div class="col-md-12">
-            <h2 class="fh5co-uppercase-heading-sm text-center">Google Map</h2>
-            <div class="fh5co-spacer fh5co-spacer-xs"></div>
+            <h2 class="kkwp-uppercase-heading-sm text-center">Google Map</h2>
+            <div class="kkwp-spacer kkwp-spacer-xs"></div>
           </div>
         </div>  
         <div id="map"></div>
@@ -233,14 +257,14 @@
     <!-- Main -->
     
     <!-- Footer -->
-    <footer id="fh5co-footer" role="contentinfo">
+    <footer id="kkwp-footer" role="contentinfo">
       <div class="container">
         <div class="row">
-          <div class="col-md-3 col-md-offset-2 col-xs-12 fh5co-footer-widget ">
+          <div class="col-md-3 col-md-offset-2 col-xs-12 kkwp-footer-widget ">
             <!-- <b style="color: #f62222">KWANKIN HANDBAG</b> -->
             <img src="images/logo100.png" alt="Image" class="img-responsive">
           </div>
-          <div class="col-md-3 col-xs-6 fh5co-footer-widget">
+          <div class="col-md-3 col-xs-6 kkwp-footer-widget">
             <ul>
               <li><a href="#">Our Team</a></li>
               <li><a href="#">Contact Us</a></li>
@@ -248,7 +272,7 @@
               <li><a href="#">Our Culture</a></li>
             </ul>
           </div>
-          <div class="col-md-3 col-xs-6 fh5co-footer-widget">
+          <div class="col-md-3 col-xs-6 kkwp-footer-widget">
             <ul>
               <li><a href="#">Our Clients</a></li>
               <li><a href="#">Our Culture</a></li>
@@ -257,13 +281,13 @@
             </ul>
           </div>
         </div>
-        <div class="fh5co-spacer fh5co-spacer-md"></div>
+        <div class="kkwp-spacer kkwp-spacer-md"></div>
         <div class="row">
           <div class="col-md-6">
-            <p class="fh5co-copyright">&copy; Kwan Kin Handbag Mfg. Ltd. 2016. All Rights Reserved. </p>
+            <p class="kkwp-copyright">&copy; Kwan Kin Handbag Mfg. Ltd. 2016. All Rights Reserved. </p>
           </div>
           <div class="col-md-6">
-            <ul class="fh5co-social">
+            <ul class="kkwp-social">
               <li><a href="#"><i class="icon-facebook"></i></a></li>
               <li><a href="#"><i class="icon-twitter"></i></a></li>
               <li><a href="#"><i class="icon-instagram"></i></a></li>
@@ -277,7 +301,7 @@
     <!-- Footer -->
     
     <!-- Go To Top -->
-    <a href="#" class="fh5co-gotop"><i class="ti-shift-left"></i></a>
+    <a href="#" class="kkwp-gotop"><i class="ti-shift-left"></i></a>
     
       
     <!-- jQuery -->
@@ -304,6 +328,8 @@
     <script src="js/velocity.min.js"></script>
     <!-- Main JS -->
     <script src="js/main.js"></script>
+
+    <?php include 'includes/email.php';?>
 
   </body>
 </html>
