@@ -33,7 +33,7 @@ Un grazie sentito a :
 - Donata Columbo, Rosy Battaglia, Fabio Manfrin, Marieva Favonio per la gestione della comunicazione
 - Chiara Spinelli per il supporto nella verifica del crowdfounding
 - Valeria Villan per la sua esperienza in crisi management
-- Marco Milesi per il bot Telegram
+- Marco Milesi e Francesco Piersoft Paulicelli per il bot Telegram
 - [Ernesto Belisario](https://twitter.com/diritto2punto0?lang=it) per gli aspetti legali
 
 ..... 
