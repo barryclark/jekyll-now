@@ -11,6 +11,9 @@ description: class blog for HUM 380-COM 601. photo credit Worcester Polytechnic 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: http://digitalcommons.wpi.edu/assets/md5images/b4c617958499eb7e0ccfed03fd5999cb.gif
 
+collections:
+  reading-notes:
+    output: true
 #
 # Flags below are optional
 #
