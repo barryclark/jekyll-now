@@ -3,7 +3,7 @@
 #
 
 # Name of your site (displayed in the header)
-name: Infinity Works Consulting
+name: Infinity Works
 
 # Short bio or description (displayed in the header)
 description: Engineering Blog
@@ -28,6 +28,15 @@ authors:
     linkedin: jameshall93
     twitter: thatsmejamesh
     github: jam-pot
+  ed_marshall:
+    display_name: Ed Marshall
+    gravatar: d9498b999415a2c54293061acc24637e
+    email: ed.marshall@infinityworks.com
+    web: https://www.infinityworks.com
+    web_short_name: infinityworks.com
+    linkedin: edward-marshall-9567b28
+    twitter: rucknar
+    github: rucknar
 
 #
 # Flags below are optional
