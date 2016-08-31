@@ -649,3 +649,38 @@ td.gutter {
 .panel {
   overflow: hidden;
 }
+
+/* Pulsanti condivisione social */
+
+ul.share-buttons{
+  list-style: none;
+  padding: 0;
+  margin: 1% 2px;
+}
+
+ul.share-buttons li{
+  display: inline;
+}
+
+ul.share-buttons .sr-only {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+div.panel-info > div.panel-heading > span.anchor {
+	display: block; 
+	position: relative; 
+	top: -250px; 
+	visibility: hidden;
+}
+  @media only screen and (max-width: 900px) {
+  	div.panel-info > div.panel-heading > span.anchor {
+	top: -20px; 
+}
+}

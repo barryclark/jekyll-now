@@ -9,11 +9,9 @@ permalink: /alloggi/
 
 {% assign memberId = member.Descrizione|slugify|truncate:20,"" %}
 {% capture memberUrl %}{{site.url}}{{page.url}}#{{memberId}}{% endcapture %}
-{% capture twittershareUrl %}https://twitter.com/intent/tweet?text={{member.Descrizione|truncate:50|uri_escape}}&hashtags=terremotocentroitalia,alloggio&url={{memberUrl|uri_escape}}{% endcapture %}
-{% capture fbshareUrl %}http://www.facebook.com/share.php?u={{memberUrl|uri_escape}}&title=member.Descrizione{% endcapture %}
 
 <div class="panel panel-info">
-<div class="panel-heading" id="{{memberId}}">
+<div class="panel-heading"><span class="anchor" id="{{memberId}}"></span>
 {{member.Descrizione|strip_newlines}}
 </div>
 <div class="panel-body">
@@ -43,11 +41,12 @@ permalink: /alloggi/
 </div>
 </div>
 <div class="panel-footer">
-<div class="row">
-<div class="col-md-2"><a href="{{memberUrl}}">Permalink</a></div>
-<div class="col-md-2"><div class="fb-share-button" data-href="{{memberUrl}}" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fterremotocentroitalia.info%2F&amp;src=sdkpreparse">Share</a></div></div>
-<div class="col-md-2"><a class="twitter-share-button"  href="https://twitter.com/intent/tweet?hashtags=terremotocentroitalia,alloggio&url={{memberUrl}}">Tweet</a></div>
-</div>
+<ul class="share-buttons">
+  <li>Condividi:</li>
+  <li><a href="{{memberUrl}}" title="Copia link"><img alt="Copia link" src="/img/icone/link.png"></a></li>
+  <li><a href="https://www.facebook.com/sharer/sharer.php?u={{memberUrl | uri_escape}}&title={{member.Descrizione|truncate:70|uri_escape}} | {{ site.title }}" title="Condividi su Facebook" target="_blank"><img alt="Condividi su Facebook" src="/img/icone/Facebook.png"></a></li>
+  <li><a href="https://twitter.com/intent/tweet?url={{memberUrl |uri_escape}}&text={{member.Descrizione|truncate:50|uri_escape}}&via=terremotocentro&hashtags=terremotocentro" target="_blank" title="Tweet"><img alt="Tweet" src="/img/icone/Twitter.png"></a></li>
+</ul>
 </div>
 </div>
 {% endfor %}
