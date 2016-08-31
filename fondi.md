@@ -4,8 +4,6 @@ title: Raccolte Fondi
 permalink: /fondi/
 ---
 
-# Raccolte fondi
-
 {% for member in site.data.raccolte %}
 <div class="panel panel-info">
 <div class="panel-heading">
