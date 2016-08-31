@@ -1,4 +1,4 @@
---
+---
 layout: reading-notes
 title: Estranged Free Labor
 reading-url: https://books.google.com/books?id=clv6PyVI5tQC&printsec=frontcover&source=gbs_ge_summary_r&cad=0#v=onepage&q&f=false
