@@ -6,7 +6,7 @@ permalink: /donazioni/
 
 {% for member in site.data.donazioni %}
 
-{% assign memberId = member.Cosa|slugify|truncate:20,"" %}
+{% assign memberId = member.Cosa|slugify|truncate:30,"" %}
 {% capture memberUrl %}{{site.url}}{{page.url}}#{{memberId}}{% endcapture %}
 {% capture memberName %}{{member.Cosa}}{% endcapture %}
 
