@@ -3,8 +3,8 @@ layout: page
 title: Fabbisogni
 permalink: /fabbisogni/
 ---
-
-{% for member in site.data.fabbisogni %}
+{% assign fabbisogni = (site.data.fabbisogni | sort: 'Data') %}
+{% for member in fabbisogni reversed %}
 <div class="panel panel-info">
 <div class="panel-heading">
 {{member.Data}} {{member.Ora}} {{member.['Breve descrizione delle necessità']}}
