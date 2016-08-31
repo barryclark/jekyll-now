@@ -1,13 +1,18 @@
 ---
 layout: page
 title: Alloggi
-titolo: Alloggi | Terremoto Centro Italia
 permalink: /alloggi/
 ---
+
+<div class="panel-group">
 {% for member in site.data.alloggi %}
+
+{% assign memberId = member.Descrizione|slugify|truncate:20,"" %}
+{% capture memberUrl %}{{site.url}}{{page.url}}#{{memberId}}{% endcapture %}
+
 <div class="panel panel-info">
-<div class="panel-heading">
-{{member.Descrizione}}
+<div class="panel-heading"><span class="anchor" id="{{memberId}}"></span>
+{{member.Descrizione|strip_newlines}}
 </div>
 <div class="panel-body">
 {% if member.Dove %}
@@ -35,8 +40,17 @@ permalink: /alloggi/
 <div class="row">
 </div>
 </div>
+<div class="panel-footer">
+<ul class="share-buttons">
+  <li>Condividi:</li>
+  <li><a href="{{memberUrl}}" title="Copia link"><img alt="Copia link" src="/img/icone/link.png"></a></li>
+  <li><a href="https://www.facebook.com/sharer/sharer.php?u={{memberUrl | uri_escape}}&title={{member.Descrizione|truncate:70|uri_escape}} | {{ site.title }}" title="Condividi su Facebook" target="_blank"><img alt="Condividi su Facebook" src="/img/icone/Facebook.png"></a></li>
+  <li><a href="https://twitter.com/intent/tweet?url={{memberUrl |uri_escape}}&text={{member.Descrizione|truncate:50|uri_escape}}&via=terremotocentro&hashtags=terremotocentro" target="_blank" title="Tweet"><img alt="Tweet" src="/img/icone/Twitter.png"></a></li>
+</ul>
+</div>
 </div>
 {% endfor %}
+</div>
 
 <div class="posts">
   {% for post in site.posts %}

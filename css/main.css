@@ -140,7 +140,7 @@ img {
   -webkit-transition: opacity 0.5s ease-in-out;
   -moz-transition: opacity 0.5s ease-in-out;
   transition: opacity 0.5s ease-in-out;
-  left: 30%;
+  left: 44px;
   width: 50px;
   margin-top: -12px;
 }
@@ -169,8 +169,7 @@ img {
 
 @media only screen and (min-width: 768px) {
   .navbar-custom .avatar-container {
-    width: 100px;
-    margin-top: -50px;
+    width: 77px;
   }
   
   .navbar-custom .avatar-container  .avatar-img-border {
@@ -562,7 +561,7 @@ input.gsc-input,
 
 table {
   padding: 0;
-  font-size: 50%;
+  font-size: 75%;
 }
 table tr {
   border-top: 1px solid #cccccc;
@@ -649,4 +648,75 @@ td.gutter {
 /* --- Fix https://github.com/emergenzeHack/terremotocentro/issues/58 --- */
 .panel {
   overflow: hidden;
+}
+
+/* Pulsanti condivisione social */
+
+ul.share-buttons{
+  list-style: none;
+  padding: 0;
+  margin: 1% 2px;
+}
+
+ul.share-buttons li{
+  display: inline;
+}
+
+ul.share-buttons .sr-only {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+div.panel-info > div.panel-heading > span.anchor {
+	display: block; 
+	position: relative; 
+	top: -250px; 
+	visibility: hidden;
+}
+  @media only screen and (max-width: 900px) {
+  	div.panel-info > div.panel-heading > span.anchor {
+	top: -20px; 
+}
+}
+.scroll-top-wrapper {
+    position: fixed;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+  text-align: center;
+  z-index: 99999999;
+    background-color: #777777;
+  color: #eeeeee;
+  width: 50px;
+  height: 48px;
+  line-height: 48px;
+  right: 30px;
+  bottom: 30px;
+  padding-top: 2px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.scroll-top-wrapper:hover {
+  background-color: #888888;
+}
+.scroll-top-wrapper.show {
+    visibility:visible;
+    cursor:pointer;
+  opacity: 1.0;
+}
+.scroll-top-wrapper i.fa {
+  line-height: inherit;
 }

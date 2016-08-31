@@ -7,6 +7,15 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
+      {% if site.avatar and (layout.show-avatar or page.show-avatar) %}
+      <div class="avatar-container visible-lg visible-md">
+        <div class="avatar-img-border">
+          <a href="http://terremotocentroitalia.info">
+            <img class="avatar-img" src="{{ site.avatar | prepend: site.baseurl | replace: '//', '/' }}" alt="{{ site.title }}" />
+        </a>
+        </div>
+      </div>
+      {% endif %}
       <a class="navbar-brand" href="http://terremotocentroitalia.info">{{ site.title }}</a>
     </div>
 
@@ -33,15 +42,9 @@
       </ul>
     </div>
 
-	{% if site.avatar and (layout.show-avatar or page.show-avatar) %}
-	<div class="avatar-container">
-	  <div class="avatar-img-border">
-	    <a href="http://terremotocentroitalia.info">
-	      <img class="avatar-img" src="{{ site.avatar | prepend: site.baseurl | replace: '//', '/' }}" />
-		</a>
-	  </div>
-	</div>
-	{% endif %}
+
+
+	
 
   </div>
 </nav>

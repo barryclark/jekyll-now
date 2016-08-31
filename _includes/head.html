@@ -3,7 +3,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>{% if page.titolo %}{{ page.titolo }}{% else %}{{ site.title }}{% endif %}</title>
+  <title>{% if page.url == '/' %}{{ page.title }}{% else %}{{ page.title }} | {{ site.title }}{% endif %}</title>
 
   <meta name="author" content="{{ site.author.name }}" />
   
@@ -56,7 +56,7 @@
   {% endif %}
 
   <!-- Facebook OpenGraph tags -->
-  <meta property="og:title" content="{% if page.titolo %}{{ page.titolo }}{% else %}{{ site.title }}{% endif %}" />
+  <meta property="og:title" content="{% if page.url == '/' %}{{ page.title }}{% else %}{{ page.title }} | {{ site.title }}{% endif %}" />
   <meta property="og:type" content="website" />
   {% if page.id %}
   <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
@@ -67,6 +67,8 @@
   <meta property="og:image" content="{{ page.share-img }}" />
   {% elsif site.avatar %}
   <meta property="og:image" content="{{ site.url }}{{ site.avatar }}" />
+  <meta property="og:image:width" content="310" />
+  <meta property="og:image:height" content="310" />
   {% else %}
   <meta property="og:image" content="" />
   {% endif %}
@@ -74,10 +76,10 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@terremotocentro">
 <meta name="twitter:creator" content="@terremotocentro">
-{% if page.titolo %}
-  <meta name="twitter:title" content="{{ page.titolo }}">
+{% if page.url == '/' %}
+  <meta name="twitter:title" content="{{ page.title }}">
 {% else %}
-  <meta name="twitter:title" content="{{ site.title }}">
+  <meta name="twitter:title" content="{{ page.title }} | {{ site.title }}">
 {% endif %}
 {% if page.url %}
   <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
@@ -93,9 +95,9 @@
 <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
 <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
 <link rel="manifest" href="/manifest.json">
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+<link rel="mask-icon" href="/safari-pinned-tab.svg">
 <meta name="apple-mobile-web-app-title" content="Terremoto Centro Italia">
 <meta name="application-name" content="Terremoto Centro Italia">
 <meta name="theme-color" content="#ffffff">
-  
+
 </head>

@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Mappe
-titolo: Mappe | Terremoto Centro Italia
 permalink: /mappe/
 ---
 

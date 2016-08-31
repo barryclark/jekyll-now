@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Aggiornamenti
-titolo: Aggiornamenti | Terremoto Centro Italia
+title: Blog
 permalink: /post/
 ---
-
+<ul>
 {% for posts in site.posts %}
-  <li><a href="{{ posts.baseurl }}{{ posts.url }}">{{ posts.title }}</a></li>
+  	<li><a href="{{ posts.baseurl }}{{ posts.url }}">{{ posts.title }}</a></li>
 {% endfor %}
+</ul>
