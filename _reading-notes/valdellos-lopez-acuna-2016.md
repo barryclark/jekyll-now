@@ -1,6 +1,6 @@
 ---
 layout: reading-notes
-reading-url: 
+reading-url: https://ezproxy.gl.iit.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=a9h&AN=116368267&site=ehost-live
 title: "The post-television music video. A methodological proposal and aesthetic analysis"
 author: Ana Sedeno Valdellos, Jennifer Rodriguez Lopez, and Santiago Roger Acuna
 topic: Understanding the features of a modern, post-television, digital music video
