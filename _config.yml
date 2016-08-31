@@ -32,7 +32,7 @@ navbar-links:
   Mappe: "mappe/"
   Vuoi donare?:
     - Donazioni: "donazioni/" 
-    - Raccolta Fondi: "raccolte_fondi/"
+    - Raccolta Fondi: "fondi/"
     - Fabbisogni: "fabbisogni/"
   Il Progetto:
    - About: "about/"

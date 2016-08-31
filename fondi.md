@@ -1,10 +1,8 @@
 ---
 layout: page
 title: Raccolte Fondi
-permalink: /raccolte-fondi/
+permalink: /fondi/
 ---
-
-# Raccolte fondi
 
 {% for member in site.data.raccolte %}
 <div class="panel panel-info">
