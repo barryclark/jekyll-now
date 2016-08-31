@@ -11,7 +11,7 @@ Terremoto Centro Italia non costituisce testata giornalistica e non è un prodot
 
 Copyright
 Fatta eccezione per i materiali inviati dagli utenti, i contenuti del sito – codice di script, grafica, testi, tabelle, immagini, video, e ogni altra informazione disponibile in qualunque forma – sono protetti ai sensi della normativa in materia di diritto d’autore (Legge n. 633/1941 s.m.i.).
-Se non diversamente indicato, è garantito il permesso di copiare e distribuire i contenuti pubblicati da Terremoto Centro Italia secondo le condizioni della licenza Creative Commons Attribuzione 3.0 (CC BY) il cui testo è disponibile a questo indirizzo https://creativecommons.org/licenses/by/3.0/it/
+Se non diversamente indicato, è garantito il permesso di copiare e distribuire i contenuti pubblicati da Terremoto Centro Italia secondo le condizioni della licenza Creative Commons Attribuzione 3.0 (CC BY) il cui testo è disponibile a questo indirizzo [](https://creativecommons.org/licenses/by/3.0/it/)
 
 Utilizzo del sito
 In nessun caso ActionAid potrà essere ritenuta responsabile dei danni di qualsivoglia natura causati direttamente o indirettamente dall’accesso al sito, dall’incapacità o impossibilità di accedervi o dall’utilizzo delle notizie in esso contenute.
