@@ -74,7 +74,7 @@ Then execute command: `python` from caffe-master directory:
 import caffe
 ```
 
-Go to folder `examples`, execute command:
+Change directory to `examples`, execute command:
 
 ```
 jupyter notebook
