@@ -26,11 +26,11 @@ ActionAid si riserva il diritto di modificare i contenuti del sito e delle note 
 
 ## Informativa agli utenti sul trattamento dei dati personali
 
-Ai sensi dell’art. 13 D.Lgs. n. 196/2003 (“Codice in materia di protezione dei dati personali”), informiamo gli Utenti del sito [](www.terremotocentroitalia.info) il trattamento dei loro dati personali sarà improntato ai principi di correttezza, liceità e trasparenza e di tutela della loro riservatezza e dei loro diritti.
+Ai sensi dell’art. 13 D.Lgs. n. 196/2003 (“Codice in materia di protezione dei dati personali”), informiamo gli Utenti del sito www.terremotocentroitalia.info il trattamento dei loro dati personali sarà improntato ai principi di correttezza, liceità e trasparenza e di tutela della loro riservatezza e dei loro diritti.
 
 Tipologia dei dati trattati e finalità del trattamento
 I dati personali forniti dagli Utenti o acquisiti attraverso l’uso del sito Terremoto Centro Italia verranno trattati per le finalità di seguito indicate:
-a) finalità strettamente connesse e/o strumentali alla fruizione dei contenuti resi disponibili sul sito [](www.terremotocentroitalia.info) nonché all’evasione delle richieste formulate, di volta in volta, dagli utenti attraverso il Sito, anche a mezzo e-mail (come le richieste di pubblicazione di immagini e testi);
+a) finalità strettamente connesse e/o strumentali alla fruizione dei contenuti resi disponibili sul sito www.terremotocentroitalia.info nonché all’evasione delle richieste formulate, di volta in volta, dagli utenti attraverso il Sito, anche a mezzo e-mail (come le richieste di pubblicazione di immagini e testi);
 b) finalità connesse all’adempimento degli obblighi previsti dalle norme di legge, dai regolamenti e dalla normativa comunitaria.
 
 Durante la consultazione del Sito potranno essere acquisite automaticamente informazioni utili per migliorare e personalizzare la fruizione del sito da parte degli utenti e garantire la sicurezza del servizio.
