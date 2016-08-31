@@ -4,7 +4,7 @@ title: Condividiamo foto e video.
 categories: blog
 ---
 
-Buongiorno abbiamo attivato il **Profilo Flickr** [Emergenze Hack](https://www.flickr.com/photos/144881851@N07/) in cui pubblicheremo le foto relative all'evento, abbiamo attivato anche un **Gruppo Flickr**  [Terremoto centro Italia](https://www.flickr.com/groups/3003557@N20/) che permette a qualsiasi utente Flickr di inviare le proprie foto.
+Abbiamo attivato il **Profilo Flickr** [Emergenze Hack](https://www.flickr.com/photos/144881851@N07/) in cui pubblicheremo le foto relative all'evento, abbiamo attivato anche un **Gruppo Flickr**  [Terremoto centro Italia](https://www.flickr.com/groups/3003557@N20/) che permette a qualsiasi utente Flickr di inviare le proprie foto.
 
 Il gruppo al momento non è moderato e speriamo di poter continuare a non farlo, non abbiamo ancora definito regole stringenti per la pubblicazione sul gruppo e vorremo poterci affidare al buon senso ed alla sensibilità di chi vuole condividere con noi le sue immagini ed i suoi (brevi) video.
 
