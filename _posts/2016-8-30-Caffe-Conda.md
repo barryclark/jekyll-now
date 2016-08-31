@@ -68,7 +68,7 @@ First install protobuf as follows:
 conda install protobuf
 ```
 
-Then execute command: `python` from caffe-master directory:
+Then execute command: `python` from caffe-master directory, make sure the python is from Anaconda package:
 
 ```
 import caffe
