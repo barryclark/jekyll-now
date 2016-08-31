@@ -19,7 +19,7 @@ conda update conda
 conda update anaconda
 ```
 
-If you want to create an environment and install OpenCV, execute commands:
+If you want to create an environment such as `testcaffe` and install OpenCV, execute commands:
 
 ```
 conda create -n testcaffe python
