@@ -1,0 +1,3 @@
+[submodule "external/terremotocentroitalia-bot-telegram"]
+	path = external/terremotocentroitalia-bot-telegram
+	url = https://github.com/milesimarco/terremotocentroitalia-bot-telegram.git

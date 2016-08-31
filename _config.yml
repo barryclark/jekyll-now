@@ -154,6 +154,7 @@ prose:
     - /img
     - /js
     - /scripts
+    - /external
   metadata:
     _posts:
       - name: "layout"
