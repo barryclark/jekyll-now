@@ -19,11 +19,12 @@ conda update conda
 conda update anaconda
 ```
 
-If you want to create an environment, run:
+If you want to create an environment and install OpenCV, run:
 
 ```
 conda create -n testcaffe python
 source activate testcaffe
+conda install -c menpo opencv3
 ```
 
 # Install Dependencies
@@ -42,6 +43,19 @@ sudo apt-get install -y libatlas-base-dev
 sudo apt-get install -y --no-install-recommends libboost-all-dev
 
 sudo apt-get install -y libgflags-dev libgoogle-glog-dev liblmdb-dev
+```
+
+# Build Caffe
+
+Go to the [https://github.com/BVLC/caffe](https://github.com/BVLC/caffe) and download zip archive. Unpack it and enter the caffe-master directory in the terminal window.
+
+```
+mkdir build
+cd build
+cmake ..
+make all
+make install
+make runtest
 ```
 
 
