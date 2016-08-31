@@ -1,6 +1,6 @@
 ---
 layout: reading-notes
-reading-url: http://web.b.ebscohost.com/ehost/pdfviewer/pdfviewer?sid=f67ed69a-fa09-4762-aa50-ec4891707315%40sessionmgr105&vid=34&hid=124
+reading-url: https://ezproxy.gl.iit.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=a9h&AN=90135397&site=ehost-live
 title: "Does Audience Participation on Facebook Influence the News Agenda? A Case Study of the Rachel Maddow Show"
 author: Susan Jacobson
 topic: Social Media Influence on News Coverage
