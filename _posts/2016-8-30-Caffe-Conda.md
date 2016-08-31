@@ -13,6 +13,7 @@ Follow instructions [here](http://yangcha.github.io/GTX-1080/) to install Nvidia
 # Install Anaconda
 
 Download Anaconda from [here](https://www.continuum.io/downloads). Choose Python 2.7 version 64-BIT INSTALLER to install it. Then update it:
+
 ```
 conda update conda
 conda update anaconda
