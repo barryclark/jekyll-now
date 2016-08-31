@@ -52,7 +52,7 @@ sudo apt-get install -y libgflags-dev libgoogle-glog-dev liblmdb-dev
 
 # Build Caffe
 
-Go to [https://github.com/BVLC/caffe](https://github.com/BVLC/caffe), download zip archive and unpack it. Or clone the source code. Enter the caffe-home directory in the terminal window.
+Go to [https://github.com/BVLC/caffe](https://github.com/BVLC/caffe), download zip archive and unpack it. Or clone the source code. Enter the caffe-home directory in the terminal window:
 
 ```
 mkdir build
@@ -71,7 +71,7 @@ export PYTHONPATH=<caffe-home>/python:$PYTHONPATH
 
 # Test Run
 
-First install protobuf as follows:
+First install protobuf:
 
 ```
 conda install protobuf
