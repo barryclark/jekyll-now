@@ -1,3 +1,9 @@
+---
+layout: page
+title: Donazioni?
+permalink: /donazioni/
+---
+
 # Donazioni
 
 {% for member in site.data.donazioni %}
