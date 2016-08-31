@@ -58,7 +58,11 @@ make install
 make runtest
 ```
 
-Add the module directory to your `$PYTHONPATH` by `export PYTHONPATH=/path/to/caffe/python:$PYTHONPATH`.
+Add the module directory to your `$PYTHONPATH` by 
+
+```
+export PYTHONPATH=/path/to/caffe/python:$PYTHONPATH`.
+```
 
 # Test Run
 
