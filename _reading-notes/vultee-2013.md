@@ -5,7 +5,7 @@ reading-url: https://www.amazon.com/Fan-Phenomena-Doctor-Paul-Booth/dp/178320020
 title: The Language(s) of Gallifrey
 author: Denise Vultee
 topic: Created versions of the langauge of Gallifrey
-question: "What is/are the language(s) of Gallifrey really like?"
+question: What is/are the language(s) of Gallifrey really like?
 significance: helps readers to understand the various incarnations of the the language of Gallifrey
 application: now you can converse in Gallifrey and express yourself artistically
 ---
