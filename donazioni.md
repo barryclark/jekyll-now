@@ -11,7 +11,7 @@ permalink: /donazioni/
 {% capture memberName %}{{member.Cosa}}{% endcapture %}
 
 <div class="panel panel-info">
-<div class="panel-heading">
+<div class="panel-heading"><span class="anchor" id="{{memberId}}"></span>
 {{member.Dove}}
 </div>
 <div class="panel-body">
