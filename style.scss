@@ -290,6 +290,45 @@ footer {
   border-radius: 5px;
 }
 
+/*********************/
+/*       AUTHOR      */
+/*********************/
+
+.author {
+	margin-top: 15px;
+}
+
+.author-img {
+  display: inline-block;
+}
+
+  .author-img img {
+    border-radius: 5px;
+  }
+
+.author-detail {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+  .author-detail .name {
+    font-size: 1.1em;
+	font-weight: bold;
+  }
+
+.small-author {
+  float: right;
+}
+
+  .small-author name {
+    vertical-align: middle;
+  }
+
+  .small-author img {
+    vertical-align: middle;
+	border-radius: 5px;
+  }
+
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
