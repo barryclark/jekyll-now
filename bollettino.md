@@ -5,6 +5,9 @@ permalink: /bollettino/
 ---
 {% assign bollettino = (site.data.bollettino | sort: 'Data') %}
 {% for member in bollettino reversed %}
+{% capture memberName %}{{member.Data}} {{member.Ora}} {{member.Descrizione}}{% endcapture %}
+{% assign memberId = memberName|slugify|truncate:20,"" %}
+{% capture memberUrl %}{{site.url}}{{page.url}}#{{memberId}}{% endcapture %}
 <div class="panel panel-info">
 <div class="panel-heading">
 {{member.Descrizione}}
@@ -39,6 +42,14 @@ permalink: /bollettino/
 {% endif %}
 <div class="row">
 </div>
+</div>
+<div class="panel-footer">
+<ul class="share-buttons">
+  <li>Condividi:</li>
+  <li><a href="{{memberUrl}}" title="Copia link"><img alt="Copia link" src="/img/icone/link.png"></a></li>
+  <li><a href="https://www.facebook.com/sharer/sharer.php?u={{memberUrl | uri_escape}}&title={{memberName|truncate:70|uri_escape}} | {{ site.title }}" title="Condividi su Facebook" target="_blank"><img alt="Condividi su Facebook" src="/img/icone/Facebook.png"></a></li>
+  <li><a href="https://twitter.com/intent/tweet?url={{memberUrl |uri_escape}}&text={{memberName|truncate:50|uri_escape}}&via=terremotocentro&hashtags=terremotocentro" target="_blank" title="Tweet"><img alt="Tweet" src="/img/icone/Twitter.png"></a></li>
+</ul>
 </div>
 </div>
 {% endfor %}
