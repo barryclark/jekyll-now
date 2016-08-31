@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Raccolte Fondi
-permalink: /raccolte-fondi/
+permalink: /fondi/
 ---
 
 # Raccolte fondi
