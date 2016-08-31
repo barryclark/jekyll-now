@@ -1,10 +1,8 @@
 ---
 layout: page
-title: Donazioni?
+title: Donazioni
 permalink: /donazioni/
 ---
-
-# Donazioni
 
 {% for member in site.data.donazioni %}
 <div class="panel panel-info">
