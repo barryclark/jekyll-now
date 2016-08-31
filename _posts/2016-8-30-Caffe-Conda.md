@@ -47,7 +47,7 @@ sudo apt-get install -y libgflags-dev libgoogle-glog-dev liblmdb-dev
 
 # Build Caffe
 
-Go to [https://github.com/BVLC/caffe](https://github.com/BVLC/caffe), download zip archive and unpack it. Or clone the source code. Enter the caffe-master directory in the terminal window.
+Go to [https://github.com/BVLC/caffe](https://github.com/BVLC/caffe), download zip archive and unpack it. Or clone the source code. Enter the caffe-home directory in the terminal window.
 
 ```
 mkdir build
@@ -61,7 +61,7 @@ make runtest
 Add the module directory to your `$PYTHONPATH` by 
 
 ```
-export PYTHONPATH=/path/to/caffe/python:$PYTHONPATH
+export PYTHONPATH=<caffe-home>/python:$PYTHONPATH
 ```
 
 # Test Run
@@ -72,10 +72,19 @@ First install protobuf as follows:
 conda install protobuf
 ```
 
-Then execute command: `python` from caffe-master directory, make sure the python is from Anaconda package:
+Import caffe in the python interpreter:
 
 ```
-import caffe
+cd <caffe-home>
+python
+Python 2.7.12 |Continuum Analytics, Inc.| (default, Jul  2 2016, 17:42:40) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-1)] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+Anaconda is brought to you by Continuum Analytics.
+Please check out: http://continuum.io/thanks and https://anaconda.org
+>>> import caffe
+>>> caffe.__version__
+'1.0.0-rc3'
 ```
 
 Change directory to `examples`, execute command:
