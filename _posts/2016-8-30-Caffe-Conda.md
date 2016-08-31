@@ -26,4 +26,22 @@ conda create -n testcaffe python
 source activate testcaffe
 ```
 
+# Install Dependencies
+
+```
+sudo apt-get update
+
+sudo apt-get upgrade
+
+sudo apt-get install -y build-essential cmake git pkg-config
+
+sudo apt-get install -y libprotobuf-dev libleveldb-dev libsnappy-dev protobuf-compiler
+
+sudo apt-get install -y libatlas-base-dev 
+
+sudo apt-get install -y --no-install-recommends libboost-all-dev
+
+sudo apt-get install -y libgflags-dev libgoogle-glog-dev liblmdb-dev
+```
+
 
