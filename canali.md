@@ -3,7 +3,13 @@ layout: page
 title: Canali di comunicazione
 permalink: /canali/
 ---
-<div class="canali">
+
+<style>
+li {
+display:inline;
+}
+</style>
+<div>
 Ecco i nostri account ufficiali: <br /><br />
  {% if site.author.facebook and site.footer-links-active.facebook %}
           <li>
