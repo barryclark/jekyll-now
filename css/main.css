@@ -746,3 +746,20 @@ div.canali  {
 }
 
 /* FINE Pagina canali di comunicazione */
+
+/* Pagina canali di comunicazione */
+div.segnala  {
+	margin-left: 20%;
+}
+@media only screen and (max-width: 700px) {
+  div.segnala  {
+    margin-left:5%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  div.segnala  {
+    margin-left:2%;
+  }
+}
+
+/* FINE Pagina canali di comunicazione */
