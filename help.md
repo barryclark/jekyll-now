@@ -28,25 +28,25 @@ Se hai una necessità o vuoi comunicare aggiornamenti, ci sono numerosi modi di 
               <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-car fa-stack-1x fa-inverse"></i>
-              </span>&nbsp;&nbsp;Waze, per tutto ciò che riguarda la viabilità
-            </a>
+              </span>&nbsp;&nbsp;Waze
+            </a>Per tutto ciò che riguarda la viabilità
           </li>
            <li>
             <a href="https://www.flickr.com/groups/3003557@N20/" title="Flickr">
               <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-flickr fa-stack-1x fa-inverse"></i>
-              </span>&nbsp;&nbsp;Gruppo Flickr, per caricare foto e media
-            </a>
+              </span>&nbsp;&nbsp;Gruppo Flickr
+            </a>Per caricare foto e media
           </li>
           <li>
             <a itemprop="sameAs" href="mailto:terremotocentroita+rimozione@gmail.com" title="Email">
               <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
-              </span>&nbsp;&nbsp;Email per segnalare contenuti da rimuovere
-            </a>
-          </li><br /> <br />
+              </span>&nbsp;&nbsp;Email 
+            </a>Per segnalare contenuti da rimuovere
+          </li>
           
 Tutto ciò che ci mandi sarà gestito dal nostro team, che provvederà alla pubblicazione sul sito appena possibile.
 
