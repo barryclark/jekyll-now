@@ -757,10 +757,6 @@ div.segnala > li {
 	margin:2%;
 }
 
-div.segnala > p {
-	margin:2;
-}
-
 @media only screen and (max-width: 700px) {
   div.segnala  {
     margin-left:4%;
@@ -771,7 +767,7 @@ div.segnala > p {
     margin-left:2%;
   }
   div.segnala > li {
-  	margin:4;
+  	margin:4%;
   }
 }
 
