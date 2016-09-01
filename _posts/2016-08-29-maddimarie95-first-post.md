@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Maddi's First Post
-author: maddiburrell95
+author: maddimarie95
 ---
 1. Which research methods do you most want to learn?
     I'd like to learn about descriptive research because, it deals with more common day to day explanations of today's society which has changed drastically with the introduction and evolution of technology and social media

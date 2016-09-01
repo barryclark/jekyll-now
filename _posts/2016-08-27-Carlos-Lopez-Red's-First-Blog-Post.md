@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Red's First Blog
-author: Carlos Lopez
+author: redLopez
 ---
 
 Note: I do apologize if my post mirrors Rachel's.

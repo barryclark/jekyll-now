@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Bear's intro blog post 
-author: bcarlson8582
+author: bear
 ---
 
 1. As an aerospace engineer major, I'm interested in theoretical physics. I really enjoy hearing about ongoing theories proposed by

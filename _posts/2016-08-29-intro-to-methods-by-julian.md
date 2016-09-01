@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Intro to Methods by Julian
-author: Julian Escasa
+author: jescasa1
 published: true
 ---
 

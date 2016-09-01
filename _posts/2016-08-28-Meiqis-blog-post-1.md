@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Meiqi's blog post 1
-author: Meiqi
+author: meiqi
 ---
 
 This post is the first blog of Meiqi, aim at answering [the question from Dr. Hemphill] 
