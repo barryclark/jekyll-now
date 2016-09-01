@@ -11,6 +11,7 @@ display:inline;
 </style>
 <div>
 Ecco i nostri account ufficiali: <br /><br />
+<div class="canali">
  {% if site.author.facebook and site.footer-links-active.facebook %}
           <li>
             <a href="https://www.facebook.com/{{ site.author.facebook }}" title="Facebook">
@@ -31,6 +32,7 @@ Ecco i nostri account ufficiali: <br /><br />
             </a>
           </li>
           {% endif %}
+        </div>
           {% if site.author.twitter and site.footer-links-active.twitter %}
           <li>
             <a href="https://twitter.com/{{ site.author.twitter }}" title="Twitter">
