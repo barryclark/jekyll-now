@@ -3,17 +3,54 @@ layout: page
 title: Segnala
 permalink: /aiuto/
 ---
+<div class="segnala">
+<p>Se hai una necessità o vuoi comunicare aggiornamenti, ci sono numerosi modi di contattarci: </p>
+ {% if site.author.facebook and site.footer-links-active.facebook %}
+          <li>
+            <a href="https://www.facebook.com/{{ site.author.facebook }}" title="Facebook">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+              </span>&nbsp;&nbsp;Facebook
+            </a>da usare per informazioni generiche
+          </li>
+          {% endif %}
+          <li>
+            <a href="http://telegram.me/terremotocentroitalia_bot" title="Bot Telegram">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-paper-plane fa-stack-1x fa-inverse"></i>
+              </span>&nbsp;&nbsp;BOT Telegram
+            </a>per segnalazioni da smartphone
+          </li>
+           <li>
+            <a href="/2016-08-26-usare-waze/" title="Waze">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-car fa-stack-1x fa-inverse"></i>
+              </span>&nbsp;&nbsp;Waze
+            </a>per tutto ciò che riguarda la viabilità
+          </li>
+           <li>
+            <a href="https://www.flickr.com/groups/3003557@N20/" title="Flickr">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-flickr fa-stack-1x fa-inverse"></i>
+              </span>&nbsp;&nbsp;Gruppo Flickr
+            </a>per caricare foto e media
+          </li>
+          <li>
+            <a itemprop="sameAs" href="mailto:terremotocentroita+rimozione@gmail.com" title="Email">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+              </span>&nbsp;&nbsp;Email 
+            </a>per segnalare contenuti da rimuovere
+          </li>
+          
+<p>Tutto ciò che ci mandi sarà gestito dal nostro team, che provvederà alla pubblicazione sul sito appena possibile.</p>
 
-Se hai una necessità o vuoi comunicare aggiornamenti, ci sono numerosi modi di contattarci:
-
-- [Gruppo Facebook](https://www.facebook.com/groups/1758670357733881/), da usare per informazioni generiche
-- [Bot Telegram](http://telegram.me/terremotocentroitalia_bot), per segnalazioni da smartphone
-- [Waze](/2016-08-26-usare-waze/), per tutto ciò che riguarda la viabilità
-- [Gruppo Flickr](https://www.flickr.com/groups/3003557@N20/), per caricare foto e media
-- [Email per segnalare contenuti da rimuovere](mailto:terremotocentroita+rimozione@gmail.com)
-
-Tutto ciò che ci mandi sarà gestito dal nostro team, che provvederà alla pubblicazione sul sito appena possibile.
-
+</div>
 <div class="posts">
   {% for post in site.posts %}
     {% if post.categories contains 'aiuto' %}
