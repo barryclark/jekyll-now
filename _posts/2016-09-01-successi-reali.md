@@ -1,4 +1,4 @@
-—
+---
 layout: post
 title: I successi reali della condivisione social
 categories: storie
