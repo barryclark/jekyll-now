@@ -4,21 +4,87 @@ title: Canali di comunicazione
 permalink: /canali/
 ---
 <div>
-Ecco i nostri account ufficiali:
-
+Ecco i nostri account ufficiali: <br />
+ {% if site.author.facebook and site.footer-links-active.facebook %}
           <li>
-            <a href="https://github.com/{{ site.author.github }}" title="GitHub">
+            <a itemprop="sameAs" href="https://www.facebook.com/{{ site.author.facebook }}" title="Facebook">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %}
+         {% if site.author.github and site.footer-links-active.github %}
+          <li>
+            <a itemprop="sameAs" href="https://github.com/{{ site.author.github }}" title="GitHub">
               <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-github fa-stack-1x fa-inverse"></i>
               </span>
             </a>
           </li>
+          {% endif %}
+          {% if site.author.twitter and site.footer-links-active.twitter %}
+          <li>
+            <a itemprop="sameAs" href="https://twitter.com/{{ site.author.twitter }}" title="Twitter">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %}
+           {% if site.author.instagram and site.footer-links-active.instagram %}
+          <li>
+            <a itemprop="sameAs" href="https://www.instagram.com/{{ site.author.instagram }}" title="Instagram">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %}
+          {% if site.author.telegram and site.footer-links-active.telegram %}
+          <li>
+            <a itemprop="sameAs" href="{{ site.author.telegram }}" title="telegram">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-paper-plane fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %}
+          {% if site.author.telegram and site.footer-links-active.telegram %}
+          <li>
+            <a itemprop="sameAs" href="{{ site.author.telegram }}" title="telegram">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-paper-plane fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %}
+          {% if site.author.medium and site.footer-links-active.medium %}
+          <li>
+            <a itemprop="sameAs" href="{{ site.author.medium }}" title="medium">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-medium fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %}
+           {% if site.footer-links-active.rss %}
+		  <li>
+			<a href="{{ '/feed.xml' | prepend: site.baseurl }}" title="RSS">
+			  <span class="fa-stack fa-lg">
+				<i class="fa fa-circle fa-stack-2x"></i>
+				<i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+			  </span>
+			</a>
+		  </li>
+          {% endif %}
 </div>
-- [Gruppo Facebook](https://www.facebook.com/groups/1758670357733881/), da usare per informazioni generiche
-- [Bot Telegram](http://telegram.me/terremotocentroitalia_bot), per segnalazioni da smartphone
-- [Waze](/2016-08-26-usare-waze/), per tutto ciò che riguarda la viabilità
-- [Gruppo Flickr](https://www.flickr.com/groups/3003557@N20/), per caricare foto e media
-- [Email per segnalare contenuti da rimuovere](mailto:terremotocentroita+rimozione@gmail.com)
 
-Tutto ciò che ci mandi sarà gestito dal nostro team, che provvederà alla pubblicazione sul sito appena possibile.
+
