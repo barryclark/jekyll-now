@@ -725,9 +725,14 @@ div.panel-info > div.panel-heading > span.anchor {
 div.canali  {
 	margin-left: 35%;
 }
+@media only screen and (max-width: 768px) {
+  div.canali  {
+    margin-left:10%;
+  }
+}
 @media only screen and (max-width: 500px) {
   div.canali  {
-    margin-left:1%;
+    margin-left:5%;
   }
 }
 
