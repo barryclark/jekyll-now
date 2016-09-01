@@ -304,6 +304,7 @@ footer .theme-by {
 .post-preview .post-title {
   font-size: 30px;
   margin-top: 0;
+  word-break: break-word;
 }
 .post-preview .post-subtitle {
   margin: 0;
@@ -562,6 +563,8 @@ input.gsc-input,
 table {
   padding: 0;
   font-size: 75%;
+  display: block;
+  overflow: auto;
 }
 table tr {
   border-top: 1px solid #cccccc;
@@ -592,6 +595,12 @@ table tr td :first-child {
 table tr th :last-child,
 table tr td :last-child {
   margin-bottom: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  table  {
+    font-size: 60%;
+  }
 }
 
 /* --- Code blocks --- */
