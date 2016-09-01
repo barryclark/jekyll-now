@@ -1,20 +1,20 @@
 ---
 layout: page
-title: Cancali di comunicazione
+title: Canali di comunicazione
 permalink: /canali/
 ---
-
+<div>
 Ecco i nostri account ufficiali:
-          {% if site.author.github and site.footer-links-active.github %}
+
           <li>
-            <a itemprop="sameAs" href="https://github.com/{{ site.author.github }}" title="GitHub">
+            <a href="https://github.com/{{ site.author.github }}" title="GitHub">
               <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-github fa-stack-1x fa-inverse"></i>
               </span>
             </a>
           </li>
-          {% endif %}
+</div>
 - [Gruppo Facebook](https://www.facebook.com/groups/1758670357733881/), da usare per informazioni generiche
 - [Bot Telegram](http://telegram.me/terremotocentroitalia_bot), per segnalazioni da smartphone
 - [Waze](/2016-08-26-usare-waze/), per tutto ciò che riguarda la viabilità
