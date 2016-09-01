@@ -188,6 +188,10 @@ prose:
           label: "Publish"
           help: "Check to publish post, uncheck to hide."
 
+collections:
+  storie:
+    output: true
+
 gems:
   - jekyll-paginate
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
