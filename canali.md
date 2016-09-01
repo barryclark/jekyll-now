@@ -4,11 +4,6 @@ title: Canali di comunicazione
 permalink: /canali/
 ---
 
-<style>
-li {
-display:inline;
-}
-</style>
 <div>
 Ecco i nostri account ufficiali: <br /><br />
 <div class="canali">
@@ -33,6 +28,7 @@ Ecco i nostri account ufficiali: <br /><br />
           </li>
           {% endif %}
         </div>
+        <div class="canali">
           {% if site.author.twitter and site.footer-links-active.twitter %}
           <li>
             <a href="https://twitter.com/{{ site.author.twitter }}" title="Twitter">
@@ -53,6 +49,8 @@ Ecco i nostri account ufficiali: <br /><br />
             </a>
           </li>
           {% endif %}
+          </div>
+          <div class="canali">
           {% if site.author.telegram and site.footer-links-active.telegram %}
           <li>
             <a href="{{ site.author.telegram }}" title="telegram">
@@ -81,6 +79,8 @@ Ecco i nostri account ufficiali: <br /><br />
             </a>
           </li>
           {% endif %}
+          </div>
+           <div class="canali">
            {% if site.footer-links-active.rss %}
 		  <li>
 			<a href="{{ '/feed.xml' | prepend: site.baseurl }}" title="RSS">
@@ -99,4 +99,5 @@ Ecco i nostri account ufficiali: <br /><br />
               </span>&nbsp;&nbsp;Gruppo Flickr
             </a>
           </li>
+          </div>
 </div>
