@@ -48,7 +48,7 @@ permalink: /aiuto/
             </a>per segnalare contenuti da rimuovere
           </li>
           
-Tutto ciò che ci mandi sarà gestito dal nostro team, che provvederà alla pubblicazione sul sito appena possibile.
+<p>Tutto ciò che ci mandi sarà gestito dal nostro team, che provvederà alla pubblicazione sul sito appena possibile.</p>
 
 </div>
 <div class="posts">
