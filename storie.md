@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Mappe
-permalink: /mappe/
+title: Storie
+permalink: /storie/
 ---
 
 <div class="posts">
   {% for post in site.posts %}
-    {% if post.categories contains 'mappe' %}
+    {% if post.categories contains 'storie' %}
       <article class="post">
         <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
