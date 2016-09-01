@@ -3,7 +3,7 @@ layout: page
 title: Segnala
 permalink: /aiuto/
 ---
-<div class="canali">
+<div class="segnala">
 Se hai una necessità o vuoi comunicare aggiornamenti, ci sono numerosi modi di contattarci: <br /> <br />
  {% if site.author.facebook and site.footer-links-active.facebook %}
           <li>
@@ -27,7 +27,7 @@ Se hai una necessità o vuoi comunicare aggiornamenti, ci sono numerosi modi di 
             <a href="/2016-08-26-usare-waze/" title="Waze">
               <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-paper-waze fa-stack-1x fa-inverse"></i>
+                <i class="fa fa-paper-car fa-stack-1x fa-inverse"></i>
               </span>&nbsp;&nbsp;Waze, per tutto ciò che riguarda la viabilità
             </a>
           </li>
