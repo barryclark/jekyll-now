@@ -8,21 +8,41 @@ jQuery.fn.loadRepositories = function(username) {
     var target = this;
     $.githubUser(username, function(data) {
         var repos = data.data; // JSON Parsing
-        sortByName(repos);    
+        //sortByName(repos);    
      
         var list = $('<dl/>');
         target.empty().append(list);
+        var colours = ["red", "orange", "yellow", "olive", "green", "teal", "blue"];
+        var colourCount = 0;
         $(repos).each(function() {
-            if (this.name != (username.toLowerCase()+'.github.com')) {
-                list.append('<dt><a href="'+ (this.homepage?this.homepage:this.html_url) +'">' + this.name + '</a> <em>'+(this.language?('('+this.language+')'):'')+'</em></dt>');
-                list.append('<dd>' + this.description +'</dd>');
-            }
-        });      
+            var colour = colours[colourCount];
+            colourCount = (colourCount+1) % colours.length; // Cycle through the available colours
+
+            $('#cardsContainer').append("<div class='"+ colour + " card'><div class='content'>"
+                + '<i class="right floated like icon"></i><i class="right floated star icon"></i>'
+                + "<div><b><a href='"+(this.homepage?this.homepage:this.html_url) + "''>" + this.name + "</a></b></div>"
+                + "</div>"
+                + '<div class="extra content">'
+                + "<div class='description'><p>" + this.description + "</p></div>"
+                + "</div>"
+                + '<div class="extra content">'
+                + "<div class='description'><em>" + this.language + "</em></div>"
+                + "</div>"
+                + '<div class="extra content">'
+                + '<span class="left floated like"><i class="like icon"></i>Like</span>'
+                + '<span class="right floated star"><i class="star icon"></i>Favorite</span>'
+                + '</div>'
+                + "</div>");
+        });
       });
       
     function sortByName(repos) {
         repos.sort(function(a,b) {
         return a.name - b.name;
        });
+    }
+
+    function createCard(title, url, language, description) {
+
     }
 };
