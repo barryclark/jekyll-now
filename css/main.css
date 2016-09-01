@@ -722,16 +722,16 @@ div.panel-info > div.panel-heading > span.anchor {
 }
 
 /* Pagina canali di comunicazione */
-div.canali {
+div.canali > div {
 	margin-left:20%;
 }
 @media only screen and (max-width: 450px) {
-  div.canali  {
+  div.canali > div  {
     margin-left:1%;
   }
 }
 
-div.canali li {
+div.canali > div > li {
 	display:inline;
 	margin-left:3%;
 }
