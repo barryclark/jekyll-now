@@ -22,19 +22,3 @@ Ecco i nostri account ufficiali:
 - [Email per segnalare contenuti da rimuovere](mailto:terremotocentroita+rimozione@gmail.com)
 
 Tutto ciò che ci mandi sarà gestito dal nostro team, che provvederà alla pubblicazione sul sito appena possibile.
-
-<div class="posts">
-  {% for post in site.posts %}
-    {% if post.categories contains 'aiuto' %}
-      <article class="post">
-        <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-        <div class="entry">
-          {{ post.excerpt }}
-        </div>
-
-        <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Leggi Tutto</a>
-      </article>
-    {% endif %}
-  {% endfor %}
-</div>
