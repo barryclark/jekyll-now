@@ -24,6 +24,7 @@ navbar-links:
   Aggiornamenti:
     - Bollettino: "bollettino/"
     - Blog: "post/"
+    - Storie: "storie/"
   Hai bisogno?:
     - Segnala: "aiuto/"
     - Alloggi: "alloggi/"
