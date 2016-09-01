@@ -11,8 +11,8 @@ Se hai una necessità o vuoi comunicare aggiornamenti, ci sono numerosi modi di 
               <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-              </span>&nbsp;&nbsp;Facebook, da usare per informazioni generiche
-            </a>
+              </span>&nbsp;&nbsp;Facebook
+            </a>Da usare per informazioni generiche
           </li>
           {% endif %}
           <li>
@@ -20,8 +20,8 @@ Se hai una necessità o vuoi comunicare aggiornamenti, ci sono numerosi modi di 
               <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-paper-plane fa-stack-1x fa-inverse"></i>
-              </span>&nbsp;&nbsp;BOT Telegram, per segnalazioni da smartphone
-            </a>
+              </span>&nbsp;&nbsp;BOT Telegram
+            </a>Per segnalazioni da smartphone
           </li>
            <li>
             <a href="/2016-08-26-usare-waze/" title="Waze">
