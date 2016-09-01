@@ -720,3 +720,15 @@ div.panel-info > div.panel-heading > span.anchor {
 .scroll-top-wrapper i.fa {
   line-height: inherit;
 }
+
+/* Pagina canali di comunicazione */
+.canali {
+	margin-left:30%;
+}
+@media only screen and (min-width: 768px) {
+  .canali  {
+    margin-left:0;
+  }
+}
+
+/* FINE Pagina canali di comunicazione */
