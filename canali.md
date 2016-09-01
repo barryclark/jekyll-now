@@ -8,10 +8,10 @@ Ecco i nostri account ufficiali: <br /><br />
  {% if site.author.facebook and site.footer-links-active.facebook %}
           <li>
             <a href="https://www.facebook.com/{{ site.author.facebook }}" title="Facebook">
-              <span class="fa-stack fa-lg">Gruppo Facebook
+              <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-              </span>
+              </span>Gruppo Facebook
             </a>
           </li>
           {% endif %}
