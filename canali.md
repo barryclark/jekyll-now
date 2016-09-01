@@ -94,7 +94,7 @@ Ecco i nostri account ufficiali:
 		  </li>
           {% endif %}
           </div>
-          </div>
+          <div>
            <li>
             <a href="https://www.flickr.com/photos/144881851@N07/" title="Flickr">
               <span class="fa-stack fa-lg">
