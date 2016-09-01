@@ -4,7 +4,7 @@ title: Donazioni
 permalink: /donazioni/
 ---
 
-{% for member in site.data.donazioni %}
+{% for member in site.data.donazioni reversed %}
 {% if member.Descrizione %}
 {% if member.Cosa %}
 {% assign memberId = member.Descrizione|slugify|truncate:20,"" %}
