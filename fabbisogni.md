@@ -6,7 +6,8 @@ permalink: /fabbisogni/
 {% assign fabbisogni = (site.data.fabbisogni | sort: 'Data') %}
 {% for member in fabbisogni reversed %}
 
-{% assign memberId =member.['Breve descrizione delle necessità']|slugify|truncate:20,"" %}
+{% capture memberlnk %}{{member.Data}} {{member.Ora}} {{member.['Breve descrizione delle necessità']}}{% endcapture %}
+{% assign memberId = memberlnk|slugify|truncate:20,"" %}
 {% capture memberUrl %}{{site.url}}{{page.url}}#{{memberId}}{% endcapture %}
 {% capture memberName %}{{member.['Breve descrizione delle necessità']}}{% endcapture %}
 
