@@ -749,7 +749,8 @@ div.canali  {
 
 /* Pagina canali di comunicazione */
 div.segnala  {
-	margin-left: 14%;
+	margin-left: 13%;
+	margin-bottom:3%;
 }
 @media only screen and (max-width: 700px) {
   div.segnala  {
@@ -760,6 +761,9 @@ div.segnala  {
   div.segnala  {
     margin-left:2%;
   }
+}
+div.segnala > li {
+	margin:2%;
 }
 
 /* FINE Pagina canali di comunicazione */
