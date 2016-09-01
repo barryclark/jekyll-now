@@ -723,7 +723,7 @@ div.panel-info > div.panel-heading > span.anchor {
 
 /* Pagina canali di comunicazione */
 div.canali > div {
-	margin-left:20%;
+	margin-left:17%;
 }
 @media only screen and (max-width: 450px) {
   div.canali > div  {
@@ -733,7 +733,7 @@ div.canali > div {
 
 div.canali > div > li {
 	display:inline;
-	margin-left:3%;
+	margin-left:7%;
 }
 
 /* FINE Pagina canali di comunicazione */
