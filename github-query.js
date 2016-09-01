@@ -12,15 +12,16 @@ jQuery.fn.loadRepositories = function(username) {
      
         var list = $('<dl/>');
         target.empty().append(list);
-        var colours = ["red", "orange", "yellow", "olive", "green", "teal", "blue"];
+        var colours = ["yellow", "teal", "grey"];
         var colourCount = 0;
         $(repos).each(function() {
             var colour = colours[colourCount];
             colourCount = (colourCount+1) % colours.length; // Cycle through the available colours
 
-            $('#cardsContainer').append("<div class='"+ colour + " card'><div class='content'>"
-                + '<i class="right floated like icon"></i><i class="right floated star icon"></i>'
-                + "<div><b><a href='"+(this.homepage?this.homepage:this.html_url) + "''>" + this.name + "</a></b></div>"
+            $('#cardsContainer').append("<div class='"+ /*colour +*/ " card'>"
+                + "<div class='content' style='background-color:aliceblue'>"
+                //+ '<i class="right floated like icon"></i><i class="right floated star icon"></i>'
+                + "<div style='text-align:center'><a style='' href='"+(this.homepage?this.homepage:this.html_url) + "''>" + this.name + "</a></div>"
                 + "</div>"
                 + '<div class="extra content">'
                 + "<div class='description'><p>" + this.description + "</p></div>"
