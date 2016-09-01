@@ -13,7 +13,7 @@ Se hai una necessità o vuoi comunicare aggiornamenti, ci sono numerosi modi di 
                 <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
               </span>&nbsp;&nbsp;Facebook
             </a>
-            <p>Da usare per informazioni generiche</p>
+            <span>Da usare per informazioni generiche</span>
           </li>
           {% endif %}
           <li>
