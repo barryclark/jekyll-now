@@ -14,7 +14,8 @@ permalink: /bollettino/
 
 {% for member in bollettinoG[0].items reversed %}
 {% capture memberName %}{{member.Descrizione}}{% endcapture %}
-{% assign memberId = memberName|slugify|truncate:20,"" %}
+{% capture memberlnk %}{{member.Data}} {{member.Ora}} {{member.Descrizione}}{% endcapture %}
+{% assign memberId = memberlnk|slugify|truncate:20,"" %}
 {% capture memberUrl %}{{site.url}}{{page.url}}#{{memberId}}{% endcapture %}
 <div class="panel panel-info">
 <div class="panel-heading"><span class="anchor" id="{{memberId}}"></span>
