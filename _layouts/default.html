@@ -13,6 +13,9 @@
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+
+    <!-- GitHub.js CDN -->
+    <script src="https://unpkg.com/github-api/dist/GitHub.bundle.min.js"></script>
   </head>
 
   <body>
@@ -50,12 +53,7 @@
 
     {% include analytics.html %}
 
-    <script src="https://ajax.microsoft.com/ajax/jquery/jquery-1.4.2.min.js" type="text/javascript"></script>
-    <script src="/javascripts/git.js" type="text/javascript"></script>
-    <script type="text/javascript">
-        $(function() {
-            $("#my-github-projects").loadRepositories("junshern");
-        });
-    </script>
+    <!-- Access GitHub API -->
+    <script src="github-api-handler.js"></script>
   </body>
 </html>
