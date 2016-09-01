@@ -11,7 +11,7 @@ Ecco i nostri account ufficiali: <br /><br />
               <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-              </span>&nbsp;Gruppo Facebook
+              </span>&nbsp;&nbsp;Gruppo Facebook
             </a>
           </li>
           {% endif %}
@@ -21,7 +21,7 @@ Ecco i nostri account ufficiali: <br /><br />
               <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-              </span>&nbsp;Repository GitHub
+              </span>&nbsp;&nbsp;Repository GitHub
             </a>
           </li>
           {% endif %}
@@ -31,7 +31,7 @@ Ecco i nostri account ufficiali: <br /><br />
               <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-              </span>&nbsp;Pagina Twitter
+              </span>&nbsp;&nbsp;Pagina Twitter
             </a>
           </li>
           {% endif %}
@@ -41,7 +41,7 @@ Ecco i nostri account ufficiali: <br /><br />
               <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
-              </span>&nbsp;Pagina Instagram
+              </span>&nbsp;&nbsp;Pagina Instagram
             </a>
           </li>
           {% endif %}
@@ -51,16 +51,16 @@ Ecco i nostri account ufficiali: <br /><br />
               <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-paper-plane fa-stack-1x fa-inverse"></i>
-              </span>&nbsp;Canale Telegram
+              </span>&nbsp;&nbsp;Canale Telegram
             </a>
           </li>
           {% endif %}
           <li>
-            <a href="http://telegram.me/terremotocentroitalia_bot" title="telegram">
+            <a href="http://telegram.me/terremotocentroitalia_bot" title="Bot Telegram">
               <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-paper-plane fa-stack-1x fa-inverse"></i>
-              </span>&nbsp;BOT Telegram
+              </span>&nbsp;&nbsp;BOT Telegram
             </a>
           </li>
           {% if site.author.medium and site.footer-links-active.medium %}
@@ -69,7 +69,7 @@ Ecco i nostri account ufficiali: <br /><br />
               <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-medium fa-stack-1x fa-inverse"></i>
-              </span>&nbsp;Canale Medium
+              </span>&nbsp;&nbsp;Canale Medium
             </a>
           </li>
           {% endif %}
@@ -79,10 +79,16 @@ Ecco i nostri account ufficiali: <br /><br />
 			  <span class="fa-stack fa-lg">
 				<i class="fa fa-circle fa-stack-2x"></i>
 				<i class="fa fa-rss fa-stack-1x fa-inverse"></i>
-			  </span>&nbsp;Feed RSS
+			  </span>&nbsp;&nbsp;Feed RSS
 			</a>
 		  </li>
           {% endif %}
+           <li>
+            <a href="https://www.flickr.com/photos/144881851@N07/" title="Flickr">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+              </span>&nbsp;&nbsp;Gruppo Flickr
+            </a>
+          </li>
 </div>
-
-
