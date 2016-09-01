@@ -4,9 +4,11 @@ title: Canali di comunicazione
 permalink: /canali/
 ---
 
-<div>
-Ecco i nostri account ufficiali: <br /><br />
 <div class="canali">
+<div>
+Ecco i nostri account ufficiali:
+</div><br /><br />
+<div>
  {% if site.author.facebook and site.footer-links-active.facebook %}
           <li>
             <a href="https://www.facebook.com/{{ site.author.facebook }}" title="Facebook">
@@ -28,7 +30,7 @@ Ecco i nostri account ufficiali: <br /><br />
           </li>
           {% endif %}
         </div>
-        <div class="canali">
+        <div>
           {% if site.author.twitter and site.footer-links-active.twitter %}
           <li>
             <a href="https://twitter.com/{{ site.author.twitter }}" title="Twitter">
@@ -50,7 +52,7 @@ Ecco i nostri account ufficiali: <br /><br />
           </li>
           {% endif %}
           </div>
-          <div class="canali">
+          <div>
           {% if site.author.telegram and site.footer-links-active.telegram %}
           <li>
             <a href="{{ site.author.telegram }}" title="telegram">
@@ -69,6 +71,8 @@ Ecco i nostri account ufficiali: <br /><br />
               </span>&nbsp;&nbsp;BOT Telegram
             </a>
           </li>
+           </div>
+           <div>
           {% if site.author.medium and site.footer-links-active.medium %}
           <li>
             <a itemprop="sameAs" href="{{ site.author.medium }}" title="medium">
@@ -79,8 +83,6 @@ Ecco i nostri account ufficiali: <br /><br />
             </a>
           </li>
           {% endif %}
-          </div>
-           <div class="canali">
            {% if site.footer-links-active.rss %}
 		  <li>
 			<a href="{{ '/feed.xml' | prepend: site.baseurl }}" title="RSS">
@@ -91,6 +93,8 @@ Ecco i nostri account ufficiali: <br /><br />
 			</a>
 		  </li>
           {% endif %}
+          </div>
+          </div>
            <li>
             <a href="https://www.flickr.com/photos/144881851@N07/" title="Flickr">
               <span class="fa-stack fa-lg">
