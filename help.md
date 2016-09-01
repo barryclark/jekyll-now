@@ -12,8 +12,7 @@ Se hai una necessità o vuoi comunicare aggiornamenti, ci sono numerosi modi di 
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
               </span>&nbsp;&nbsp;Facebook
-            </a>
-            <span>Da usare per informazioni generiche</span>
+            </a>Da usare per informazioni generiche
           </li>
           {% endif %}
           <li>
