@@ -3,7 +3,7 @@ layout: page
 title: Canali di comunicazione
 permalink: /canali/
 ---
-<div>
+<div style="margin:auto;">
 Ecco i nostri account ufficiali: <br /><br />
  {% if site.author.facebook and site.footer-links-active.facebook %}
           <li>
@@ -87,7 +87,7 @@ Ecco i nostri account ufficiali: <br /><br />
             <a href="https://www.flickr.com/photos/144881851@N07/" title="Flickr">
               <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                <i class="fa fa-flickr fa-stack-1x fa-inverse"></i>
               </span>&nbsp;&nbsp;Gruppo Flickr
             </a>
           </li>
