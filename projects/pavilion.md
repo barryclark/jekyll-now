@@ -23,6 +23,14 @@ All content, images, and designs in these screenshots are not final. Additionall
 <p class="caption">Pavilion home page</p>
 
 <figure>
+  <a href="/images/pavilion-desktop-events.png" target="\_blank" title="Pavilion events page">
+    <img src="/images/pavilion-desktop-events-small.png" alt="Pavilion events page">
+  </a>
+</figure>
+
+<p class="caption">Pavilion events page</p>
+
+<figure>
   <a href="/images/pavilion-desktop-product-search.png" target="\_blank" title="Pavilion product search">
     <img src="/images/pavilion-desktop-product-search-small.png" alt="Pavilion product search">
   </a>
