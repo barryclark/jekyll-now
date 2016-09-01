@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Review - Armadora"
-description: "Pixel Glory is all about beefing up your 8-bit wizard and killing some monsters."
+description: "Similar to the old pen-and-paper game boxes, Armadora is fun game for families."
 category: review
 featured: armadora.jpg
 tags: [games, review, armadora, blue orange games]
