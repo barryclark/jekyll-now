@@ -727,7 +727,7 @@ div.canali {
 }
 @media only screen and (max-width: 450px) {
   div.canali  {
-    margin-left:0;
+    margin-left:1%;
   }
 }
 
