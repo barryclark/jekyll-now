@@ -169,6 +169,7 @@ import caffe
 Some extra credit options that you may want to try:
 
 - Learn and use the AWS command line tools.  This is probably a fabulous way to start and stop instances, etc.  Haven't tried it yet.
-- Set up remote access for your favorite local text editor.  I like Sublime Text 3, and I usually set up remote access when I start to get heavy into engineering.  For now, since I'm putzing around with tutorials, I'm not there yet.
+- Set up remote access for your favorite local text editor.  I like Sublime Text 3, and I usually set up [remote access using Sublime SFTP](https://wbond.net/sublime_packages/sftp/usage) when I start to get heavy into engineering.  For now, since I'm putzing around with tutorials, I'm not there yet.
+  + One difficulty here is that each time you stop and restart the instance, you are changing the Public DNS and IP, so you will have to update any such values in your remote setup for your text editor.
 - Boot up Git; it's always good to version control running.
 - Persist Jupyter Notebook even if your connection goes down by running Jupyter Notebook in a tmux session.
