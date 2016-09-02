@@ -18,7 +18,7 @@ jQuery.fn.loadRepositories = function(username) {
             var colour = colours[colourCount];
             colourCount = (colourCount+1) % colours.length; // Cycle through the available colours
 
-            $('#cardsContainer').append("<div class='"+ /*colour +*/ " card'>"
+            target.append("<div class='"+ /*colour +*/ " card'>"
                 + "<div class='content' style='background-color:aliceblue'>"
                 //+ '<i class="right floated like icon"></i><i class="right floated star icon"></i>'
                 + "<div style='text-align:center'><a style='' href='"+(this.homepage?this.homepage:this.html_url) + "''>" + this.name + "</a></div>"

@@ -31,22 +31,16 @@
           </div>
 
           <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
+            <a href="{{ site.baseurl }}/">Home</a>
+            <a href="{{ site.baseurl }}/about">CV</a>
+            <a href="{{ site.baseurl }}/blog">Blog</a>
           </nav>
         </header>
       </div>
     </div>
 
-    
 
     <div id="main" role="main" class="container">
-      
-      <!-- GitHub repos info will go in here -->
-      <div id="cardsContainer" class='ui three stackable cards'></div> 
-
-      <br><br><br>
-
       {{ content }}
     </div>
 
@@ -59,13 +53,5 @@
     </div>
 
     {% include analytics.html %}
-
-    <!-- Access GitHub API -->
-    <script src="{{ site.baseurl }}/github-query.js" type="text/javascript"></script>
-    <script type="text/javascript">
-        $(function() {
-            $("#my-github-projects").loadRepositories('junshern');
-        });
-    </script>
   </body>
 </html>
