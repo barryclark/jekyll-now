@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Donazioni
-permalink: /donazioni/
+title: Risorse disponibili
+permalink: /risorse-disponibili/
 ---
 
 {% for member in site.data.donazioni reversed %}
