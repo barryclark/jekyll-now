@@ -19,7 +19,7 @@ Il terremoto ha interessato le province di Rieti, Ascoli Piceno e Perugia, causa
 
 Il progetto non vuole in alcun modo sostituirsi a fonti istituzionali di informazione a cui rimandiamo caldamente per l'attendibilità. Il progetto si pone come scopo quello di aggregare e non disperdere contenuti utili a tutti provenienti da fonti di varia natura (ufficiali e non) al fine creare valore in un momento di crisi per il paese.
 
-L'idea è di [Matteo Tempestini](https://twitter.com/il_tempe) e [Matteo Fortini](https://twitter.com/matt_fortini) e nasce a seguito di maturata esperienza di hacking civico, ma il sostegno è di chiunque vuole darlo (privati, associazioni, imprese, istituzioni) purchè l'iniziativa non sia strumentalizzata per secondi fini e di questo chi ha ideato il progetto cerca di farsi garante. Sotto riportiamo chi sta già collaborando, ti aspettiamo!
+L'idea è di [Matteo Tempestini](https://twitter.com/il_tempe) e [Matteo Fortini](https://twitter.com/matt_fortini) e nasce a seguito di maturata esperienza di hacking civico, ma il sostegno è di chiunque vuole darlo (privati, associazioni, imprese, istituzioni) purché l'iniziativa non sia strumentalizzata per secondi fini e di questo chi ha ideato il progetto cerca di farsi garante. Sotto riportiamo chi sta già collaborando, ti aspettiamo!
 
 
 ### Credits
@@ -30,11 +30,11 @@ Un grazie sentito a :
 - [Emergenza24](http://www.emergenza24.org) per il supporto sul web
 - [Openstreetmap Italia](https://openstreetmap.it/) per il lavoro di mappatura nelle zone del terremoto
 - [Andrea Borruso](https://twitter.com/aborruso); [Nino Galante](https://twitter.com/picomiles); [Maurizio de Magnis](https://twitter.com/olistik); [Sabas](https://twitter.com/__sabas);[Alberto Cottica](https://twitter.com/alberto_cottica): [Piersoft](https://twitter.com/piersoft?lang=it) [Andrea Nelson Mauro](https://twitter.com/nelsonmau) per il loro importante contributo da civic hackers
-- Donata Columbo, Rosy Battaglia, Fabio Manfrin, Marieva Favonio per la gestione della comunicazione
-- Chiara Spinelli per il supporto nella verifica del crowdfounding
-- Valeria Villan per la sua esperienza in crisi management
+- [Rosy Battaglia](https://twitter.com/rosybattaglia), [Donata Columbro](https://twitter.com/dontyna), [Marieva Favoino](https://twitter.com/marievafavoino), [Cristina Galasso](https://twitter.com/cristigalas), [Fabio Manfrin](https://twitter.com/FManfri), [Gloria Schiavi](https://twitter.com/gloria_schiavi) per la gestione della comunicazione
+- [Chiara Spinelli](https://twitter.com/ChiaraPeggy) per il supporto nella verifica del crowdfounding
+- [Valeria Villan](https://twitter.com/Tersillina) per la sua esperienza in crisi management
 - Il team della [standbytaskforce](http://www.standbytaskforce.org/) per il supporto
-- Marco Milesi e Piersoft per il bot Telegram
+- Marco Milesi e [Piersoft](https://twitter.com/Piersoft) per il bot Telegram
 - [Ernesto Belisario](https://twitter.com/diritto2punto0?lang=it) per gli aspetti legali
 
 ..... 
@@ -43,10 +43,11 @@ Un grazie sentito a :
 
 
 ### Contatti
-- [Mail](mailto:terremotocentroita@gmail.com): da usare per segnalare informazioni utili
-- [Gruppo Facebook](https://www.facebook.com/groups/1758670357733881/) : da usare per condividere informazioni utili
-- [Twitter](https://twitter.com/terremotocentro);
-- [Gruppo Telegram](https://telegram.me/joinchat/BgW6eEBsI3rLKsJk9L7FJg) da usare per contribuire alla discussione sul progetto
+- [Mail](mailto:terremotocentroita@gmail.com): per segnalare informazioni utili;
+- [Gruppo Facebook](https://www.facebook.com/groups/1758670357733881/): per condividere informazioni utili;
+- [Twitter](https://twitter.com/terremotocentro): dove trovi informazioni già verificate dal team;
+- [Gruppo Telegram](https://telegram.me/joinchat/BgW6eEBsI3rLKsJk9L7FJg) per contribuire alla discussione sul progetto;
+- [Tutti i canali ufficiali](http://terremotocentroitalia.info/canali/) dove trovi tutte le modalità per partecipare e comunicare con noi.
 
 ### Press
 
