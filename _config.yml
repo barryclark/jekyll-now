@@ -10,7 +10,8 @@ description: Web Developer from Somewhere
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
-
+# URL of your a favicon for your site
+favicon: ""
 #
 # Flags below are optional
 #
