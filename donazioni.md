@@ -20,30 +20,28 @@ permalink: /risorse-disponibili/
 <div class="panel-body">
 {% if member.Cosa %}
 <div class="row">
-<div class="col-md-2"><b>Cosa:</b></div><div>{{member.Cosa}}
-</div></div>
+<div style="margin-left:15px"><b>Cosa: </b>{{member.Cosa}}</div>
+</div>
 {% endif %}
 {% if member.Descrizione %}
 <div class="row">
-<div class="col-md-12">
-{{member.Descrizione}}
-</div>
+<div style="margin-left:15px">{{member.Descrizione}}</div>
 </div>
 {% endif %}
 {% if member.Indirizzo %}
 <div class="row">
-<div class="col-md-2"><b>Indirizzo:</b></div><div class="col-md-10">{{member.Indirizzo}}</div>
+<div style="margin-left:15px"><b>Indirizzo: </b>{{member.Indirizzo}}</div>
 </div>
 {% endif %}
 
 {% if member.Contatti %}
 <div class="row">
-<div class="col-md-2"><b>Contatti:</b></div><div class="col-md-10">{{member.Contatti}}</div>
+<div style="margin-left:15px"><b>Contatti: </b>{{member.Contatti}}</div>
 </div>
 {% endif %}
 {% if member.Link %}
 <div class="row">
-<div class="col-md-2"><b>Link:</b></div><div class="col-md-10"><a href="{{member.Link}}">{{member.Link}}</a></div>
+<div style="margin-left:15px"><b>Link: </b><a style="word-break: break-all" href="{{member.Link}}">{{member.Link}}</a></div>
 </div>
 {% endif %}
 </div>
