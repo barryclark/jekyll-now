@@ -24,37 +24,37 @@ permalink: /fondi/
 {% endif %}
 {% if member.Intestazione %}
 <div class="row">
-<div style="margin-left:15px"><b>Intestazione:</b>{{member.Intestazione}}</div>
+<div style="margin-left:15px"><b>Intestazione: </b>{{member.Intestazione}}</div>
 </div>
 {% endif %}
 
 {% if member.IBAN %}
 <div class="row">
-<div style="margin-left:15px"><b>IBAN:</b>{{member.IBAN}}</div>
+<div style="margin-left:15px"><b>IBAN: </b>{{member.IBAN}}</div>
 </div>
 {% endif %}
 
 {% if member.BICSWIFT %}
 <div class="row">
-<div style="margin-left:15px"><b>BIC/SWIFT:</b>{{member.BICSWIFT}}</div>
+<div style="margin-left:15px"><b>BIC/SWIFT: </b>{{member.BICSWIFT}}</div>
 </div>
 {% endif %}
 
 {% if member.CCPostale %}
 <div class="row">
-<div style="margin-left:15px"><b>Cc postale:</b>{{member.CCPostale}}</div>
+<div style="margin-left:15px"><b>Cc postale: </b>{{member.CCPostale}}</div>
 </div>
 {% endif %}
 
 {% if member.Causale %}
 <div class="row">
-<div style="margin-left:15px"><b>Causale:</b>{{member.Causale}}</div>
+<div style="margin-left:15px"><b>Causale: </b>{{member.Causale}}</div>
 </div>
 {% endif %}
 
 {% if member.Link %}
 <div class="row">
-<div style="margin-left:15px"><b>Link:</b><a style="word-break: break-all" href="{{member.Link}}">{{member.Link}}</a></div>
+<div style="margin-left:15px"><b>Link: </b><a style="word-break: break-all" href="{{member.Link}}">{{member.Link}}</a></div>
 </div>
 {% endif %}
 </div>
