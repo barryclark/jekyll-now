@@ -23,6 +23,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 a {
   color: #008AFF;
+  word-break:break-word;
 }
 a:hover,
 a:focus {
@@ -404,6 +405,7 @@ footer .theme-by {
 .intro-header .page-heading h1 {
   margin-top: 0;
   font-size: 50px;
+  word-break: break-word;
 }
 .intro-header .post-heading h1 {
   margin-top: 0;

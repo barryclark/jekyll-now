@@ -24,34 +24,34 @@ permalink: /bollettino/
 <div class="panel-body">
 {% if member.Comune %}
 <div class="row">
-<div class="col-md-2"><b>Comune:</b></div><div class="col-md-10">{{member.Comune}}</div>
+<div style="margin-left: 15px"><b>Comune: </b>{{member.Comune}}</div>
 </div>
 {% endif %}
 {% if member.Indirizzo %}
 <div class="row">
-<div class="col-md-2"><b>Indirizzo:</b></div><div class="col-md-10">{{member.Indirizzo}}</div>
+<div style="margin-left: 15px"><b>Indirizzo: </b>{{member.Indirizzo}}</div>
 </div>
 {% endif %}
 
 {% if member.Fonte %}
 <div class="row">
-<div class="col-md-2"><b>Fonte:</b></div><div class="col-md-10">{{member.Fonte}}</div>
+<div style="margin-left: 15px"><b>Fonte: </b>{{member.Fonte}}</div>
 </div>
 {% endif %}
 
 {% if member.Link %}
 <div class="row">
-<div class="col-md-2"><b>Link:</b></div><div class="col-md-10"><a href="{{member.Link}}">{{member.Link}}</a></div>
+<div style="margin-left: 15px"><b>Link: </b><a style="word-break: break-all" href="{{member.Link}}">{{member.Link}}</a></div>
 </div>
 {% endif %}
 {% if member.Data %}
 <div class="row">
-<div class="col-md-2"><b>Data:</b></div><div class="col-md-10">{{member.Data}} {{member.Ora}}</div>
+<div style="margin-left: 15px"><b>Data: </b>{{member.Data}} {{member.Ora}}</div>
 </div>
 {% endif %}
 {% if member.Note %}
 <div class="row">
-<div class="col-md-2"><b>Note:</b></div><div class="col-md-10">{{member.Note}}</div>
+<div style="margin-left: 15px; word-break: break-all"><b>Note: </b>{{member.Note}}</div>
 </div>
 {% endif %}
 <div class="row">

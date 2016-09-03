@@ -7,7 +7,7 @@
 #url: "http://username.github.io/projectname"
 #baseurl: "http://terremotocentroitalia.info"
 
-url: "http://terremotocentroitalia.info"
+baseurl: "https://github.com/riccardonuzz/terremotocentro"
 
 # Of course don't forget to change the username and projectname to YOUR username and project
 

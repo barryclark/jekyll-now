@@ -23,38 +23,38 @@ permalink: /fabbisogni/
 </div>
 {% if member.Indirizzo %}
 <div class="row">
-<div class="col-md-2"><b>Indirizzo:</b></div><div class="col-md-10">{{member.Indirizzo}}</div>
+<div style="margin-left:15px"><b>Indirizzo: </b>{{member.Indirizzo}}</div>
 </div>
 {% endif %}
 {% if member.Località %}
 <div class="row">
-<div class="col-md-2"><b>Localita:</b></div><div class="col-md-10">{{member.Località}}</div>
+<div style="margin-left:15px"><b>Localita: </b>{{member.Località}}</div>
 </div>
 {% endif %}
 
 {% if member.Comune %}
 <div class="row">
-<div class="col-md-2"><b>Comune:</b></div><div class="col-md-10">{{member.Comune}}</div>
+<div style="margin-left:15px"><b>Comune: </b>{{member.Comune}}</div>
 </div>
 {% endif %}
 {% if member.Fonte %}
 <div class="row">
-<div class="col-md-2"><b>Fonte:</b></div><div class="col-md-10">{{member.Fonte}}</div>
+<div style="margin-left:15px"><b>Fonte: </b>{{member.Fonte}}</div>
 </div>
 {% endif %}
 {% if member.Link %}
 <div class="row">
-<div class="col-md-2"><b>Link:</b></div><div class="col-md-10"><a href="{{member.Link}}">{{member.Link}}</a></div>
+<div style="margin-left:15px"><b>Link: </b><a style="word-break: break-all" href="{{member.Link}}" data-proofer-ignore>{{member.Link}}</a></div>
 </div>
 {% endif %}
 {% if member.Latitudine %}
 <div class="row">
-<div class="col-md-2"><b>Lat:</b></div><div class="col-md-10">{{member.Latitudine}}</div>
+<div style="margin-left:15px"><b>Lat: </b>{{member.Latitudine}}</div>
 </div>
 {% endif %}
 {% if member.Longitudine %}
 <div class="row">
-<div class="col-md-2"><b>Lon:</b></div><div class="col-md-10">{{member.Longitudine}}</div>
+<div style="margin-left:15px"><b>Lon: </b>{{member.Longitudine}}</div>
 </div>
 {% endif %}
 </div>

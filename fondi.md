@@ -17,51 +17,51 @@ permalink: /fondi/
 <div class="panel-body">
 {% if member.Descrizione %}
 <div class="row">
-<div class="col-md-12">
+<div style="margin-left:15px">
 {{member.Descrizione}}
 </div>
 </div>
 {% endif %}
 {% if member.Intestazione %}
 <div class="row">
-<div class="col-md-2"><b>Intestazione:</b></div><div class="col-md-10">{{member.Intestazione}}</div>
+<div style="margin-left:15px"><b>Intestazione: </b>{{member.Intestazione}}</div>
 </div>
 {% endif %}
 
 {% if member.IBAN %}
 <div class="row">
-<div class="col-md-2"><b>IBAN:</b></div><div class="col-md-10">{{member.IBAN}}</div>
+<div style="margin-left:15px"><b>IBAN: </b>{{member.IBAN}}</div>
 </div>
 {% endif %}
 
 {% if member.BICSWIFT %}
 <div class="row">
-<div class="col-md-2"><b>BIC/SWIFT:</b></div><div class="col-md-10">{{member.BICSWIFT}}</div>
+<div style="margin-left:15px"><b>BIC/SWIFT: </b>{{member.BICSWIFT}}</div>
 </div>
 {% endif %}
 
 {% if member.CCPostale %}
 <div class="row">
-<div class="col-md-2"><b>Cc postale:</b></div><div class="col-md-10">{{member.CCPostale}}</div>
+<div style="margin-left:15px"><b>Cc postale: </b>{{member.CCPostale}}</div>
 </div>
 {% endif %}
 
 {% if member.Causale %}
 <div class="row">
-<div class="col-md-2"><b>Causale:</b></div><div class="col-md-10">{{member.Causale}}</div>
+<div style="margin-left:15px"><b>Causale: </b>{{member.Causale}}</div>
 </div>
 {% endif %}
 
 {% if member.Link %}
 <div class="row">
-<div class="col-md-2"><b>Link:</b></div><div class="col-md-10"><a href="{{member.Link}}">{{member.Link}}</a></div>
+<div style="margin-left:15px"><b>Link: </b><a style="word-break: break-all" href="{{member.Link}}">{{member.Link}}</a></div>
 </div>
 {% endif %}
 </div>
 <div class="panel-footer">
 <ul class="share-buttons">
   <li>Condividi:</li>
-  <li><a href="{{memberUrl}}" title="Copia link"><img alt="Copia link" src="/img/icone/link.png"></a></li>
+  <li><a href="{{memberUrl}}" title="Copia link" data-proofer-ignore><img alt="Copia link" src="/img/icone/link.png"></a></li>
   <li><a href="https://www.facebook.com/sharer/sharer.php?u={{memberUrl | uri_escape}}&title={{memberName|truncate:70|uri_escape}} | {{ site.title }}" title="Condividi su Facebook" target="_blank"><img alt="Condividi su Facebook" src="/img/icone/Facebook.png"></a></li>
   <li><a href="https://twitter.com/intent/tweet?url={{memberUrl |uri_escape}}&text={{memberName|truncate:50|uri_escape}}&via=terremotocentro&hashtags=terremoto,terremotoinfo" target="_blank" title="Tweet"><img alt="Tweet" src="/img/icone/Twitter.png"></a></li>
   <li><a href="https://plus.google.com/share?url={{memberUrl |uri_escape}}" target="_blank" title="Condividi su Google+"><img alt="Condividi su Google+" src="/img/icone/Google+.png"></a></li>

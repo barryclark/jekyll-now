@@ -17,24 +17,24 @@ permalink: /alloggi/
 <div class="panel-body">
 {% if member.Dove %}
 <div class="row">
-<div class="col-md-2"><b>Indirizzo:</b></div> {{member.Dove}}
+<div style="margin-left:15px; word-break: break-all;"><b>Indirizzo: </b>{{member.Dove}}</div>
 </div>
 {% endif %}
 {% if member.Numero %}
 <div class="row">
-<div class="col-md-2"><b>Numero:</b></div> {{member.Numero}}
+<div style="margin-left:15px"><b>Numero: </b>{{member.Numero}}</div> 
 </div>
 {% endif %}
 
 {% if member.Email and member.Email contains '@' %}
 <div class="row">
-<div class="col-md-2"><b>Email:</b></div> <a href="mailto:{{member.Email}}">{{member.Email}}</a>
+<div style="margin-left:15px"><b>Email: </b> <a href="mailto:{{member.Email}}">{{member.Email}}</a></div>
 </div>
 {% endif %}
 
 {% if member.Link %}
 <div class="row">
-<div class="col-md-2"><b>Link:</b></div><a href="{{member.Link}}">{{member.Link}}</a>
+<div style="margin-left: 15px"><b>Link: </b><a style="word-break: break-all;" href="{{member.Link}}">{{member.Link}}</a></div>
 </div>
 {% endif %}
 <div class="row">
