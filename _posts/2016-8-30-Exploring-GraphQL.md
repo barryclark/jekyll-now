@@ -2,8 +2,7 @@
 layout: post
 title: Exploring GraphQL 
 ---
-By being tailored to the client's data needs, GraphQL offers several benefits over the REST paradigm.
-
+Taking a look at how GraphQL can improve upon the REST paradigm.
 ![GraphQL](https://raw.githubusercontent.com/rohan-varma/rohan-blog/gh-pages/images/graphql.png "GraphQL")
 
 In this post, we'll take a look at [GraphQL]( https://facebook.github.io/graphql/), a querying langauge created by Facebook which was recently open-sourced. We'll learn about the querying powers that come with it, the benefits of using it, and compare it to traditional methods of querying RESTful APIs. 
