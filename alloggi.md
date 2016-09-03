@@ -17,7 +17,7 @@ permalink: /alloggi/
 <div class="panel-body">
 {% if member.Dove %}
 <div class="row">
-<div style="margin-left:15px"><b>Indirizzo: </b>{{member.Dove}}</div>
+<div style="margin-left:15px; word-break: break-word;"><b>Indirizzo: </b>{{member.Dove}}</div>
 </div>
 {% endif %}
 {% if member.Numero %}
