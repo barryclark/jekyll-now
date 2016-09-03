@@ -51,7 +51,7 @@ permalink: /bollettino/
 {% endif %}
 {% if member.Note %}
 <div class="row">
-<div style="margin-left: 15px"><b>Note: </b>{{member.Note}}</div>
+<div style="margin-left: 15px; word-break: break-all"><b>Note: </b>{{member.Note}}</div>
 </div>
 {% endif %}
 <div class="row">
