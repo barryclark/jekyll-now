@@ -58,6 +58,7 @@ Alternatively, if you had implemented a GraphQL Scehma for your server data, you
 Both requests would give you back the name of the pokemon, its id, and its thumbnail. In our case, the thumbnail is just a string that actually represents the thumbnail URL, but what if the thumbnail was an image that had to be created on the server, which is a typically expensive, CPU-bound process? If we don't actually need the thumbnail on our front-end for a certain view, we certainly shouldn't take time to ask our server for it. In our RESTful paradigm, we'd have to define another API endpoint to send a request to, something like: `GET http://website.com/api/v1/pokemonlightweight/1`. You can see how in a large application with a lot of (potentially expensive to ask for) data available on the server, we could end up creating a bunch of different API endpoints, which we would need to maintain, version, and write documentation for. 
 
 Fortunately, the GraphQL solution is much simpler: simply change your query:
+
 ```javascript
 {
   pokemon(id: "1") {
@@ -66,6 +67,7 @@ Fortunately, the GraphQL solution is much simpler: simply change your query:
   }
 } 
 ```
+
 There. Now we're not asking for the thumbnail, so our server doesn't have to spend time creating it. This is the beauty of GraphQL: the client can define exactly what data it needs, and receive exactly that from a single point of access to your data.
 
 ### "Graph" Query Language
