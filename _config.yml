@@ -8,6 +8,7 @@
 baseurl: "http://terremotocentroitalia.info"
 
 #baseurl: "https://github.com/emergenzeha/terremotocentro"
+url: "http://terremotocentroitalia.info"
 
 # Of course don't forget to change the username and projectname to YOUR username and project
 
