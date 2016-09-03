@@ -405,6 +405,7 @@ footer .theme-by {
 .intro-header .page-heading h1 {
   margin-top: 0;
   font-size: 50px;
+  word-break: break-word;
 }
 .intro-header .post-heading h1 {
   margin-top: 0;
