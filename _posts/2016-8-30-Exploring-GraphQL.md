@@ -4,17 +4,17 @@ title: Exploring GraphQL
 ---
 In this post, we'll take a look at GraphQL: https://facebook.github.io/graphql/, a querying langauge created by Facebook which was recently open-sourced. We'll learn about the querying powers that come with it, the benefits of using it, and compare it to traditional methods of querying RESTful APIs. 
 
-## What is GraphQL? 
+### What is GraphQL? 
 GraphQL is a data querying langauge that contains a type system, static validation, and type introspection. It's designed to provide the client side of an application with the data it needs to render its views to a user. It presents an alternative paradigm to REST, and we'll look at the differences between GraphQL and the REST paradigm throughout this post. GraphQL, at its core, consists of a type system that describes what data is available on the server-side, as well as a query language for the client to ask for the data it needs. 
 
-## Exploring GraphQL 
+### Exploring GraphQL 
 The best way to learn about GraphQL is to get our hands dirty with it. In this post, we'll implement a basic GraphQL Schema for Pokemon Go, consisting of two types: Pokemon and Moves. We'll simply store our data in JSON files to simulate our database (normally, the data being queried for would lie in a database, a layer in your backend, or in another service of your application). At the end, we should be able to query for some Pokemon and their moves. In addition, we'll have learned how to define GraphQL types, queries, and schemas, as well as its advantages over a traditional REST approach. 
 
-## Why should you use GraphQL? A quick overview
+### Why should you use GraphQL? A quick overview
 - GraphQL is client-centric: GraphQL queries are created on the client and sent to the server, whereas the majority of RESTful applications has the server determine the data returned by its endpoints.
 - Strong-typing and introspection: With GraphQL, it's really easy to make sure a query is syntactically correct. Better yet, you can query the GraphQL type system itself, meaning that GraphQL is self-documenting: no need to write pages and pages of documentation for your API endpoints. We'll see this in action with the schema we are about to create. 
 
-## Getting Started
+### Getting Started
 Note: The full code for this tutorial is available here: https://github.com/rohan-varma/pokemongo-graphQL. If you want to be able to create and execute queries to see them in action, I recommend you to take a moment and set it up. It uses Facebook's JS implementation of GraphQL, as well as a GraphQL express server, available as an npm package. Alternatively, you could use this link: https://pokemongo-graphql-senopusxhk.now.sh/graphql to view the code running in action (hosted by now.sh, which by the way, is excellent for deploying your Node.js projects). 
 
 First, let's create our types. Using GraphQL's type system, we can describe the types of objects that can be returned by our server. Our first type will be a `moveType`, and it will be responsible for resolving all of our queries for moves. We'll use the JS implementation: https://github.com/graphql/graphql-js of GraphQL to describe our types: 
@@ -35,7 +35,7 @@ We've now got a `Query` that defines the two fields available on the server, and
 
 That's it! A basic schema is now set up that describes the data available on the server, how to query for it, and how these queries are fulfilled. Let's take it a bit further, and explore some of the advantages of GraphQL. 
 
-## Comparison to the RESTful Paradigm
+### Comparison to the RESTful Paradigm
 
 The `pokemonType` on our server is defined to have an `id`, a `name`, and a `thumbnail`. If you were a developer who needed this data on your front-end, you could make this example `GET` request using the REST paradigm: 
 `GET http://website.com/api/v1/pokemon/1`. 
@@ -64,7 +64,7 @@ Fortunately, the GraphQL solution is much simpler: simply change your query:
 ```
 There. Now we're not asking for the thumbnail, so our server doesn't have to spend time creating it. This is the beauty of GraphQL: the client can define exactly what data it needs, and receive exactly that from a single point of access to your data.
 
-## "Graph" Query Language
+### "Graph" Query Language
 
 Let's take a look at another advantage GraphQL offers: graph-based querying. As an example, let's define our `pokemonType` to also have a field called `bestFriend`, which is another pokemon. In other words, we want a connection to exist from one pokemon to another. In addition, let's add some information about our pokemon's favorite move to our server - a connection from a `pokemonType` to a `moveType`. To do this, we can modify our `pokemonType` object created earlier to have a `favoriteMove` and `bestFriend` field: 
 
@@ -111,7 +111,7 @@ As you can see, such parsing can get pretty complicated very quickly if your con
 
 Essentially, GraphQL enhances the seperation of concerns between the front-end and backend. Developers on the front-end no longer need to worry about parsing server responses to get the specific set of data they need, and developers on the back-end no longer need to worry about creating different API endpoints for their application that retrieve very similar data. 
 
-## One last cool thing: Type Introspection
+### One last cool thing: Type Introspection
 
 Using GraphQL's query syntax itself, we can ask our server what queries it supports. For example, to see what types are defiend on our server, we can use the following query: 
 
