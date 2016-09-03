@@ -170,12 +170,12 @@ The introspection system also allows you to query for additional information suc
 
 And that's it! There's definitely a lot more to learn about GraphQL (such as posting new data via a [mutation](https://medium.com/@HurricaneJames/graphql-mutations-fb3ad5ae73c4#.5378parnj)), but hopefully this post has covered the basics. The [GraphQL specification](https://facebook.github.io/graphql/) is an excellent place to learn more, and so is the reference JS implementation.  
 
-Sources: 
-1. [GraphQL docs](http://graphql.org/docs/getting-started/)
-2. [JS implementation of GraphQL](https://github.com/graphql/graphql-js)
-3. [GraphQL Spec](https://facebook.github.io/graphql/)
-4. [Learning GraphQL for Mobile, by John Shelley](https://speakerdeck.com/jpshelley/learning-graphql-for-mobile)
-5. [An Introduction to GraphQL, by Guido Schmitz](https://medium.freecodecamp.com/introduction-to-graphql-1d8011b80159#.guh55srwp)
+### Sources: 
+- [GraphQL docs](http://graphql.org/docs/getting-started/)
+- [JS implementation of GraphQL](https://github.com/graphql/graphql-js)
+- [GraphQL Spec](https://facebook.github.io/graphql/)
+- [Learning GraphQL for Mobile, by John Shelley](https://speakerdeck.com/jpshelley/learning-graphql-for-mobile)
+- [An Introduction to GraphQL, by Guido Schmitz](https://medium.freecodecamp.com/introduction-to-graphql-1d8011b80159#.guh55srwp)
 
 
 
