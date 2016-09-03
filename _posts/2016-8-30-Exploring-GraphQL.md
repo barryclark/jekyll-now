@@ -40,7 +40,7 @@ That's it! A basic schema is now set up that describes the data available on the
 The `pokemonType` on our server is defined to have an `id`, a `name`, and a `thumbnail`. If you were a developer who needed this data on your front-end, you could make this example `GET` request using the REST paradigm: 
 `GET http://website.com/api/v1/pokemon/1`. 
 
-Alternatively, if you had implemented a GraphQL Scehma for your server data, you could make a GraphQL request, in the form of a query, to your backend: 
+Alternatively, if you had implemented a GraphQL Scehma for your server data, you could make a GraphQL request, in the form of a query, to your backend. A query is just a string sent to the server, and the returned JSON mirrors the shape of the query, making it easy to predict the shape of the data returned. Here's an example query to get some pokemon data:
 
 ```javascript
 {
@@ -85,6 +85,7 @@ Now that we've added connections from one pokemon to another and from a pokemon 
   }
 }
 ```
+
 And a response to the above query:
 
 ```javascript
