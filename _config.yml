@@ -5,7 +5,7 @@
 
 # If you are building a GitHub project page then use these settings:
 #url: "http://username.github.io/projectname"
-baseurl: "http://terremotocentroitalia.info"
+#baseurl: "http://terremotocentroitalia.info"
 
 #baseurl: "https://github.com/emergenzeha/terremotocentro"
 url: "http://terremotocentroitalia.info"
