@@ -32,7 +32,7 @@ jQuery.fn.loadRepositories = function(username) {
                 var contributors =  data;
                 var commitCount = 0;
                 for (var i=0; i<contributors.length; i++) {
-                    console.log(contributors[i].login + ': ' + contributors[i].contributions);
+                    //console.log(contributors[i].login + ': ' + contributors[i].contributions);
                     commitCount = commitCount + contributors[i].contributions; // Add up the contributions (# of commits) of each contributor
                 }
                 target.append("<div class='"+ /*colour +*/ " card'>"
