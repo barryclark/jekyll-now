@@ -14,4 +14,4 @@ Grazie
 
 Sotto un esempio di documento archiviato.
 
-<iframe src='https://archive.org/stream/DELIBERAGIUNTAN179?ui=embed#mode/2up' width='100%' height='430px' frameborder='0' ></iframe>
+<iframe src='https://archive.org/stream/DELIBERAGIUNTAN179/DELIBERA_GIUNTA_n_179?ui=embed#mode/1up' width='480px' height='430px' frameborder='0' ></iframe>
