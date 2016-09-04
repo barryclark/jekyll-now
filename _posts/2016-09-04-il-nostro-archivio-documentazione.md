@@ -11,3 +11,7 @@ Abbiamo scelto per documentare quello che ci sembra rilevante per l'accaduto la 
 Sperando di aver fatto cosa gradita vi invitiamo a segnalarci documenti utili (anche storici) sull'avvenuto terremoto.
 
 Grazie
+
+Sotto un esempio di documento archiviato.
+
+<iframe src='https://archive.org/stream/DELIBERAGIUNTAN179?ui=embed#mode/2up' width='100%' height='430px' frameborder='0' ></iframe>
