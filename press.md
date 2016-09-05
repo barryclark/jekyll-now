@@ -4,7 +4,7 @@ title: Press
 permalink: /press/
 ---
 
-Data            |Fonte                   |Titolo       |Link
+Data            |Fonte                   |Titolo       |Fonte
 :---------------|:-----------------------|:------------|:--------------
 {% for member in site.data.press %} {{member.data}} | {{member.dove}} | {{member.titolo}} | [Fonte]({{member.link}})
 {% endfor %}
