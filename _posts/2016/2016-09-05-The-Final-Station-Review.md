@@ -12,7 +12,7 @@ author: Rob Kalajian
 
 <h2>Prelude</h2>
 
-[Zafty Games](http://zaftygames.com/index.html) had a small booth setup at PAX East 2016 with tons of copies of Pixel Glory stacked all over their table. The minimalist black box and game's 8-bit art immediately drew me to the game, and I was lucky enough to get a copy for review not too long after the show. It's a super simple game that plays in two phases: a deckbuiling phase and a dungeon phase. It's quick, easy to play, and overall light fare. The art is mostly 8-bit, with a bit of 16-bit mixed in when it comes to the monsters.
+A train game taking place during the end of the world? That's just what The Final Station is. The game starts off during a beautiful morning, and by the end of your first day the world has ended and everyone is struggling to survive. Through traveling to multiple stations you'll unravel exactly what's going on, and hopefully save some people along the way.
 
 <h2>Play</h2>
 
@@ -42,7 +42,7 @@ The game progresses from train phase to station phase over and over again until 
 
 The Final Station is a beautiful game with some amazing pixel art. While the characters and enemies are fairly simple, the beauty lies in the environments and amazing backdrops. There were several times where I was caught up in what was *behind* my train that I neglected conversation, passenger well-being, and train maintenance. Combined with a wonderful OST, the game oozes theme.
 
-<img src="/images/finalstation/final.png" alt="Final Station Screens" />
+<img src="/images/finalstation/final.jpg" alt="Final Station Screens" />
 
 <h2>Perspective</h2>
 
