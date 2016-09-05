@@ -103,12 +103,22 @@
             </a>
           </li>
           {% endif %}
-      {% if site.author.medium and site.footer-links-active.medium %}
+          {% if site.author.medium and site.footer-links-active.medium %}
           <li>
             <a itemprop="sameAs" href="{{ site.author.medium }}" title="medium">
               <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-medium fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %}
+		  {% if site.author.archiveorg and site.footer-links-active.archiveorg %}
+          <li>
+            <a itemprop="sameAs" href="{{ site.author.archiveorg }}" title="archive.org">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-archive fa-stack-1x fa-inverse"></i>
               </span>
             </a>
           </li>

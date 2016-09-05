@@ -66,6 +66,7 @@ author:
   rss: https://emergenzehack.github.io/terremotocentro/feed.xml
   telegram: https://telegram.me/terremotocentroitalia
   medium: https://medium.com/terremotocentroitalia
+  archiveorg: https://archive.org/details/@terremotocentroita
 
 # Select which links to show in the footer
 footer-links-active:
@@ -81,6 +82,7 @@ footer-links-active:
   youtube: false
   telegram: true
   medium: true
+  archiveorg: true
 
 # Select which share links to show in posts
 share-links-active:
