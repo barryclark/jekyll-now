@@ -66,8 +66,8 @@ jQuery.fn.loadRepositories = function(username) {
                 $.get(readmeUrl, function(data){
                     var imgUrl = parseForImage(data);
                     console.log(repo.name + ' : ' + imgUrl);
-                    $("#"+repo.name).css("background-size", contain);
-                    $("#"+repo.name).css("background-image", imgUrl);
+                    $("#"+repo.name).css("background-size", 'cover');
+                    $("#"+repo.name).css("background-image", 'url(\''+imgUrl+'\')');
                 });
             });
 
