@@ -40,7 +40,7 @@ jQuery.fn.loadRepositories = function(username) {
                     commitCount = commitCount + contributors[i].contributions; // Add up the contributions (# of commits) of each contributor
                 }
                 target.append("<div class='"+ /*colour +*/ " card'>"
-                    + "<div class='content' style='background-color:aliceblue'>"
+                    + "<div id=" + repo.name + " class='content' style='background-color:aliceblue'>"
                     //+ '<i class="right floated like icon"></i><i class="right floated star icon"></i>'
                     + "<div style='text-align:center'><a style='' href='"+ repo.html_url + "''>" + repo.name + "</a></div>"
                     + "</div>"
@@ -64,7 +64,10 @@ jQuery.fn.loadRepositories = function(username) {
             $.githubReadme(repo.url, function(data) {
                 var readmeUrl = data.download_url;
                 $.get(readmeUrl, function(data){
-                    console.log(repo.name + ' : ' + parseForImage(data));
+                    var imgUrl = parseForImage(data);
+                    console.log(repo.name + ' : ' + imgUrl);
+                    $("#"+repo.name).css("background-size", contain);
+                    $("#"+repo.name).css("background-image", imgUrl);
                 });
             });
 
