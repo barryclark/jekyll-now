@@ -68,6 +68,7 @@ jQuery.fn.loadRepositories = function(username) {
                     console.log(repo.name + ' : ' + imgUrl);
                     $("#"+repo.name).css("background-size", 'cover');
                     $("#"+repo.name).css("background-image", 'url(\''+imgUrl+'\')');
+                    $("#"+repo.name).css("background-position", 'center');
                     $("#"+repo.name).css("min-height", '150px');
                 });
             });
