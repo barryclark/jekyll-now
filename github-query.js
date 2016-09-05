@@ -5,6 +5,10 @@ jQuery.githubUser = function(username, callback) {
 jQuery.githubContrib = function(contrib_url, callback) {
    jQuery.getJSON(contrib_url,callback)
 }
+
+jQuery.githubReadme = function(repo_url, callback) {
+    jQuery.getJSON(repo_url+'/readme', callback)
+}
  
 jQuery.fn.loadRepositories = function(username) {
     this.html("<span>Querying GitHub for " + username +"'s repositories...</span>");
@@ -57,16 +61,51 @@ jQuery.fn.loadRepositories = function(username) {
                     + "</div>");
             });
 
+            $.githubReadme(repo.url, function(data) {
+                var readmeUrl = data.download_url;
+                $.get(readmeUrl, function(data){
+                    console.log(repo.name + ' : ' + parseForImage(data));
+                });
+            });
+
         });
-      });
+    });
       
     function sortByName(repos) {
         repos.sort(function(a,b) {
-        return b.stargazers_count - a.stargazers_count; 
-       });
+            return b.stargazers_count - a.stargazers_count; 
+        });
     }
 
-    function createCard(title, url, language, description) {
+    function parseForImage(text) {
+        // console.log(text.substring(0,8));
+        var foundImage = false;
+        var startIndex = null;
+        var endIndex = null;
+        for (var i=0; i<text.length; i++) {
+            if (foundImage == true) {
+            // Looking for the image link, starts after a '(' and ends at the first space
+                //console.log("README has an image!");
+                if (startIndex && endIndex) {
+                    var url = text.substring(startIndex, endIndex);
+                    // console.log(url);
+                    return(url);
+                } else if (startIndex) {
+                    if (text[i]==' ') {
+                        endIndex = i;
+                    }
+                } else {
+                    if (text[i]=='(') {
+                        startIndex = i+1;
+                    } 
+                }
 
+            // Looking for Markdown's opening image tag '!['
+            } else if (text[i]=='!' && text[i+1]=='[') { 
+                foundImage = true;
+            }
+        }
+        // If no image found
+        return(null);
     }
 };
