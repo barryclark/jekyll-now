@@ -6,7 +6,7 @@ Taking a look at how GraphQL can improve upon the REST paradigm.
 
 ![GraphQL](https://raw.githubusercontent.com/rohan-varma/rohan-blog/gh-pages/images/graphql.png "GraphQL")
 
-In this post, we'll take a look at [GraphQL]( https://facebook.github.io/graphql/), a querying langauge created by Facebook which was recently open-sourced. We'll learn about the querying powers that come with it, the benefits of using it, and compare it to traditional methods of querying RESTful APIs. 
+In this post, we'll take a look at [GraphQL]( https://facebook.github.io/graphql/), a querying langauge created by Facebook which was open-sourced in July 2015. We'll learn about the querying powers that come with it, the benefits of using it, and compare it to traditional methods of querying RESTful APIs. 
 
 ### What is GraphQL? 
 GraphQL is a data querying langauge that's designed with the data needs of the client-side in mind. It presents an alternative paradigm to REST, and we'll look at the differences between GraphQL and the REST paradigm throughout this post. GraphQL, at its core, consists of a type system that describes what data is available on the server-side, as well as a query language for the client to ask for the data it needs. 
