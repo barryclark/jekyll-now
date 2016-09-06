@@ -46,11 +46,11 @@ The Final Station is a beautiful game with some amazing pixel art. While the cha
 
 <h2>Perspective</h2>
 
-I had a lot of fun with The Final Station, but like I said earlier, I had a better time uncovering the story that through the actual gameplay. Don't get me wrong, the gameplay was solid, but a bit repetitive. It was the visuals, music, and writing that kept me playing through the game. I had almost stopped playing the early beta I had of the game due to the lack of much of the story, and am glad I came back to play the final release. Is it worth the $14.99? Yeah, it is.
+I had a lot of fun with The Final Station, but like I said earlier, I had a better time uncovering the story than through the actual gameplay. Don't get me wrong, the gameplay was solid, but a bit repetitive. It was the visuals, music, and writing that kept me playing through the game. I had almost stopped playing the early beta I had of the game due to the lack of much of the story, and am glad I came back to play the final release. Is it worth the $14.99? Yeah, it is.
 
 *A copy of The Final Station was provided free for review by tinyBuild.*
 
 <h3>Supporting Links</h3>
 
 [tinyBuild's The Final Station page](http://thefinalstation.com)\\
-[The Final Station on Steam](http://store.steampowered.com/app/435530/)\\
+[The Final Station on Steam](http://store.steampowered.com/app/435530/)
