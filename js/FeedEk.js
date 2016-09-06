@@ -1,14 +1,14 @@
 /*
 * FeedEk jQuery RSS/ATOM Feed Plugin v2.0
 * http://jquery-plugins.net/FeedEk/FeedEk.html  https://github.com/enginkizil/FeedEk
-* Author : Engin KIZIL http://www.enginkizil.com   
+* Author : Engin KIZIL http://www.enginkizil.com
 */
 
 (function ($) {
     $.fn.FeedEk = function (opt) {
         var def = $.extend({
             FeedUrl: "http://rss.cnn.com/rss/edition.rss",
-            MaxCount: 5,
+            MaxCount: 25,
             ShowDesc: true,
             ShowPubDate: true,
             CharacterLimit: 0,
@@ -28,7 +28,7 @@
 				$("#" + id).append('<h4>'+data.responseData.feed.title+'</h4>');
                 $.each(data.responseData.feed.entries, function (e, item) {
                     s += '<li><div class="itemTitle"><a href="' + item.link + '" target="' + def.TitleLinkTarget + '" >' + item.title + "</a></div>";
-                    
+
                     if (def.ShowPubDate){
                         dt= new Date(item.publishedDate);
                         if ($.trim(def.DateFormat).length > 0) {
@@ -36,11 +36,11 @@
                                 moment.lang(def.DateFormatLang);
                                 s += '<div class="itemDate">' + moment(dt).format(def.DateFormat) + "</div>";
                             }
-                            catch (e){s += '<div class="itemDate">' + dt.toLocaleDateString() + "</div>";}                            
+                            catch (e){s += '<div class="itemDate">' + dt.toLocaleDateString() + "</div>";}
                         }
                         else {
                             s += '<div class="itemDate">' + dt.toLocaleDateString() + "</div>";
-                        }                        
+                        }
                     }
                     if (def.ShowDesc) {
                         if (def.DescCharacterLimit > 0 && item.content.length > def.DescCharacterLimit) {
