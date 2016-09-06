@@ -26,7 +26,7 @@ Aether Foundation are researching Ultra Beasts, creatures that possess mighty po
 
 Here's a list of some of the new Pokémon announced:
 
-![Null and Jangmo-o](/image/sunmoon/sonew.jpg)
+![Null and Jangmo-o](/images/sunmoon/sonew.jpg)
 
 **Type: Null**\\
 **Type: Normal**
