@@ -46,7 +46,7 @@ This unsupervised neural network is powerful, especially when considered in the 
 
 Current researchers are investigated the use of recursive neural networks to learn how sentences are broken down into tree structures. This recursive deep learning network can then successfully learn how to map similar sentences into the same vector space, even though they may be composed of words that mean entirely different things.
 
-If you want to learn about deep learning and neural networks for NLP in detail, I’d high recommend Stanford’s course on it: [Deep Learning for Natural Language Processing](http://cs224d.stanford.edu/).
+If you want to learn about deep learning and neural networks for NLP in detail, I’d highly recommend Stanford’s course on it: [Deep Learning for Natural Language Processing](http://cs224d.stanford.edu/).
 
 ### Sources
 
