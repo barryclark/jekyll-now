@@ -39,7 +39,7 @@ Type: Null is a Synthetic Pokémon which was constructed to synthesize the stren
 
 The Scaly Pokémon Jangmo-o has the pride of a warrior and never neglects its training in its pursuit of becoming stronger. This Pokémon uses the scales on its head as a weapon both offensively and defensively. It lives in harsh locales, like canyons, where it can train.
 
-<img src="/images/sunmoon/raticate.png" alt="Alolan Raticate" class="float-right" width="150"/>
+<img src="/images/sunmoon/raticate.png" alt="Alolan Raticate" class="float-right" width="200"/>
 **Alolan Raticate**\\
 **Type: Dark/Normal**
 
