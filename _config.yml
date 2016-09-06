@@ -103,6 +103,13 @@ disqus: "terremotocentroitalia"
 # Fill in your Google Analytics ID to track your website using GA
 google_analytics: "UA-47474515-3"
 
+jekyll-crosspost_to_medium:
+  enabled: true
+  cache: .jekyll-crosspost_to_medium
+  status: draft
+
+
+
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
 # Output options (more information on Jekyll's site)
