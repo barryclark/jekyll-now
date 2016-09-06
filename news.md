@@ -13,7 +13,7 @@ permalink: /news/
     <script type="text/javascript" src="src/FeedEk_news.js"></script>
 
     <div class="panel-group" id="feed_display"></div>
-        <div style="clear:both;"></div>
-    	    <div class="footer">
-    		    <center><p>&copy; 2014</p></center>
-    	    </div>
+    <div style="clear:both;"></div>
+    <div class="footer">
+      <center><p>&copy; 2014</p></center>
+    </div>
