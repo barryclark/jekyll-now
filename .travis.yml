@@ -9,5 +9,8 @@ script: ./scripts/cibuild
 env:
   global:
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+    - MEDIUM_USER_ID=test
+    - MEDIUM_INTEGRATION_TOKEN=test
+    - MEDIUM_ENTITY=test
 
 sudo: false
