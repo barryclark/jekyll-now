@@ -4,7 +4,7 @@ title: La staffetta social
 categories: storie
 ---
 
-*di Giorgia Brugnerotto*
+**di Giorgia Brugnerotto**
 
 La rete è fatta di persone, persone che si aiutano e si alternano come in una staffetta, dove a correre è una squadra formatasi spontaneamente e all'improvviso, dovendo affrontare una sfida difficile in un contesto di emergenza e disperazione, una squadra in cui però il quarto anello non conosce il primo, non lo ha mai visto in vita sua e probabilmente vive a centinaia di chilometri da lui. Questo è il team dietro a terremotocentroitalia.info, un luogo dove si incontra chi vive i luoghi colpiti dal sisma e chi vuole aiutare anche se lontano.
 
