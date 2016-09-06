@@ -8,7 +8,7 @@
     $.fn.FeedEk = function (opt) {
         var def = $.extend({
             FeedUrl: "http://rss.cnn.com/rss/edition.rss",
-            MaxCount: 25,
+            MaxCount: 100,
             ShowDesc: true,
             ShowPubDate: true,
             CharacterLimit: 0,

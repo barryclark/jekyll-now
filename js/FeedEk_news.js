@@ -7,10 +7,10 @@ $(function() {
 
   for	(index = 0; index < feeds.length; index++) {
     var div_id = 'feed_'+index;
-    $("#feed_display").append('<div class="post" id="'+div_id+'" style=""></div>');
+    $("#feed_display").append('<div class="post sieve" id="'+div_id+'" style=""></div>');
     $("#"+div_id).FeedEk({
       FeedUrl:feeds[index],
-      MaxCount : 25,
+      MaxCount : 100,
         ShowDesc : false,
         ShowPubDate:true,
       TitleLinkTarget:'_blank'
