@@ -6,7 +6,7 @@ categories: mappe
 
 Dal sito [Il Camoscio dei sibillini](http://www.camosciosibillini.it/) ci viene segnalata la mappa che definisce le zone praticabili dei Monti Sibillini dopo il sisma.
 
-![](http://www.camosciosibillini.it/wp-content/uploads/2016/09/Mappe-aree-critiche-Sibillini-agg-2016-09-01-rit.png)
+![Mappe aree critiche monti Sibillini](http://www.camosciosibillini.it/wp-content/uploads/2016/09/Mappe-aree-critiche-Sibillini-agg-2016-09-01-rit.png)
 
 Per chi volesse altre informazioni si prega di consultare [questo post](http://www.camosciosibillini.it/post-sisma-sui-sentieri-dei-sibillini-il-punto-della-situazione/).
 
