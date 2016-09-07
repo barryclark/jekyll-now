@@ -22,7 +22,7 @@ CSVFILE=sys.argv[1]
 wr=file(CSVFILE,"w+")
 csvwriter=csv.writer(wr)
 
-csvwriter.writerow(("id","updated_at","lat","lon","data"))
+csvwriter.writerow(("id","updated_at","title","lat","lon","data"))
 
 conn=sql.connect(DBNAME)
 cur=conn.cursor()
@@ -30,6 +30,7 @@ cur=conn.cursor()
 cur.execute("""CREATE TABLE IF NOT EXISTS issues
        (id INTEGER NOT NULL PRIMARY KEY,
        updated_at TIMESTAMP,
+       title TEXT,
        body TEXT);
        """)
 
@@ -56,10 +57,10 @@ for issue in issues:
     count=res.fetchone()[0]
     if count == 0:
         print ("INSERT id %d" % (issue.id))
-        cur.execute("INSERT INTO issues (id, updated_at, body) VALUES(?,?,?)", (issue.id, issue.updated_at, issue.body))
+        cur.execute("INSERT INTO issues (id, updated_at, title, body) VALUES(?,?,?,?)", (issue.id, issue.updated_at, issue.title, issue.body))
     else:
         print ("UPDATE id %d" % (issue.id))
-        cur.execute("UPDATE issues SET updated_at = ?, body = ? WHERE id = ?", (issue.updated_at, issue.body, issue.id))
+        cur.execute("UPDATE issues SET updated_at = ?, title = ?, body = ? WHERE id = ?", (issue.updated_at, issue.title, issue.body, issue.id))
 
 conn.commit()
 
@@ -68,10 +69,16 @@ cur.execute("SELECT * FROM ISSUES ORDER BY updated_at;")
 print "ISSUES IN DB"
 
 for row in cur.fetchall():
-        print row
-        tree=html.fromstring(row[2])
+        tree=html.fromstring(row[3])
         dataRaw=tree.xpath("//data/text()")
         dataStr=dataRaw[0] if len(dataRaw) > 0 else None
+
+        title=row[2]
+        if title is not None:
+            title=title.encode('utf-8')
+
+        if dataStr is not None:
+            dataStr=dataStr.encode('utf-8')
 
         try:
             data=json.loads(dataStr)
@@ -81,7 +88,7 @@ for row in cur.fetchall():
             data=None
             lat=None
             lon=None
-            
-        csvwriter.writerow((row[0],row[1],lat,lon,dataStr))
+
+        csvwriter.writerow((row[0],row[1],title,lat,lon,dataStr))
 
 
