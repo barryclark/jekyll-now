@@ -1,15 +1,12 @@
 ---
 layout: page
 title: About
-permalink: /about/
 ---
 
-Some information about you!
+Hello.
 
-### More Information
+The main purpose of this theme is to be as simple as it could be, so you can focus on writing your stuffs. This is your About page. You may describe about yourself here; who you are, what are you currently doing, share some of your projects, your social links and how people can contact you, etc.
 
-A place to include any other types of information that you'd like to include about yourself.
+**Just write thing that matters..**
 
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+Enjoy!
