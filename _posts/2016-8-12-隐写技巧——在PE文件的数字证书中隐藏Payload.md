@@ -184,6 +184,10 @@ New Size = Old Size + Payload Size
 
 至此，在保证PE文件数字证书有效的前提下，成功在PE文件尾部添加Payload
 
+**注：**
+
+添加的payload长度需要满足为8的整数倍，否则会显示数字签名状态无效
+
 ## 0x04 演示二
 ---
 测试文件：aliide.sys
@@ -237,7 +241,9 @@ Certificate Size为00001c50H
 
 添加成功
 
+**注：**
 
+添加的payload长度需要满足为8的整数倍，否则会显示数字签名状态无效
 
 
 ## 0x05 程序实现
@@ -263,11 +269,11 @@ payload.txt：存储待添加的payload
 
 newntdll.dll：新生成的文件
 
-测试Payload添加成功，新生成文件的数字签名成功识别，但是程序有**如下不足：**
+测试Payload添加成功，新生成文件的数字签名成功识别，程序有**如下特点：**
 
-1. payload尾部包含多余数据
+1. payload在尾部自动填0补齐payload长度为8的倍数
 
-如图，多了6个'00'
+如图，多了6个'00'，补齐长度
 
 ![Alt text](https://raw.githubusercontent.com/3gstudent/3gstudent.github.io/master/_posts/2016-8-12/4-1.png)
 
