@@ -2,7 +2,6 @@
 layout: post
 title: Introduction to Digital Humanities
 author: enunez2
-published: true
 ---
 
 
