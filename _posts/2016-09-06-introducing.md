@@ -10,7 +10,7 @@ published: true
 
 I love quotes. I feel like for me to fully understand something; I need to hear it in the perspective of a bunch of different people. Trying to find a quote about what digital humanities, however, was a lot harder than finding quotes about the meaning of life (crazy, right?!). That, however lead me to question what the root of that phrase is, humanities. As said in [*The Heart of the Matter*] (http://www.humanitiescommission.org/_pdf/hss_report.pdf): 
 <blockquote>
- *<p>“the humanities—including the study of languages, literature, history, jurisprudence, philosophy, comparative religion, ethics, and the arts—are disciplines of memory and imagination, telling us where we have been and helping us envision where we are going.”</p>*
+ <p>__“the humanities—including the study of languages, literature, history, jurisprudence, philosophy, comparative religion, ethics, and the arts—are disciplines of memory and imagination, telling us where we have been and helping us envision where we are going.”__</p>
 </blockquote>
 Humanities, while such a broad topic, has a focus on something that is most central to us all, which is us. Our langauges, our writings, our history, our thoughts and our beliefs have so much more to tell us than what they describe. Whether we are trying to understand our past or trying to predict our futures, we want to have a deep understand of it all so we can try to better piece together the world we have created. 
 
