@@ -2,7 +2,7 @@
 layout: post
 title: Shout out to Digital Humanities
 author: enunez2
-published: false
+published: true
 ---
 
 
