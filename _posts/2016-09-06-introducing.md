@@ -2,6 +2,7 @@
 layout: post
 title: introducing
 author: rsjudka
+published: true
 ---
 
 ##DIGITAL HUMANITIES!
