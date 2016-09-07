@@ -13,3 +13,5 @@ a major role in its construction.
 DH provides new keys for unlocking the gates of discovery. Though a young scholarly field, it is constantly developing its roots in 
 modern tradition. Throughout this century, one cannot doubt its growing significance. Because the future demands new skillsets for not
 only competition, but for the learning and prosperity of humanity itself.
+
+Denis Komarov, HUM 380-01
