@@ -14,6 +14,7 @@ Another effect that digital humanities has is on scholars. In *Digital_Humanitie
 Digital humanities is the crossroad between humanity and computing. It encompasses quite a lot,including humanity and the creation of content and scholars seeking to understand and research.The many innovations that have come with the digital age have been revolutionary in increasing productivity and changing the way content is created, as well as offering an abundance of resources for scholars to use. 
 
 *Sources*
+
 Burdick, Anne, Johanna Drucker, Peter Lunenfeld, Todd Presner, and Jeffrey Schnapp. 2012. Digital Humanities. Cambridge, MA: MIT Press.
 
 Kirschenbaum, Matthew. 2012. “What Is Digital Humanities and What’s It Doing in English Departments?” In Debates in the Digital Humanities. http://dhdebates.gc.cuny.edu/debates/text/38.
