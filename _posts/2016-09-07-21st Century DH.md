@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Intro
+title: 21st Century DH
 author: dslezak
 published: true
 ---
