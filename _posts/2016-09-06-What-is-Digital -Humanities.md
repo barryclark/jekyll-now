@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Short and Sweet Introduction to Digital Humanities
+title: Introduction to Digital Humanities
 author: enunez2
 published: true
 ---
