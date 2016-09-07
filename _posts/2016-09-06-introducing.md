@@ -10,8 +10,7 @@ published: true
 
 I love quotes. I feel like for me to fully understand something; I need to hear it in the perspective of a bunch of different
 people. Trying to find a quote about what digital humanities, however, was a lot harder than finding quotes about the meaning 
-of life (crazy, right?!). That, however lead me to question what the root of that phrase is, humanities. As said in [*The Heart of the Matter*](http://www.humanitiescommission.org/_pdf/hss_report.pdf)
-
+of life (crazy, right?!). That, however lead me to question what the root of that phrase is, humanities. As said in [*The Heart of the Matter*](http://www.humanitiescommission.org/_pdf/hss_report.pdf):
 > “the humanities—including the study of languages, literature, history, jurisprudence, philosophy, comparative religion, ethics, 
 and the arts—are disciplines of memory and imagination, telling us where we have been and helping us envision where we are going.”
 
