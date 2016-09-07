@@ -5,6 +5,7 @@ import csv
 import sys
 from lxml import html
 import json
+import yaml
 import ConfigParser 
 
 config=ConfigParser.RawConfigParser()
@@ -69,9 +70,17 @@ cur.execute("SELECT * FROM ISSUES ORDER BY updated_at;")
 print "ISSUES IN DB"
 
 for row in cur.fetchall():
-        tree=html.fromstring(row[3])
-        dataRaw=tree.xpath("//data/text()")
-        dataStr=dataRaw[0] if len(dataRaw) > 0 else None
+        try:
+            tree=html.fromstring(row[3])
+            dataRaw=tree.xpath("//data/text()")
+            dataStr=dataRaw[0] if len(dataRaw) > 0 else None
+
+            yamldataRaw=tree.xpath("//yamldata/text()")
+            yamldataStr=yamldataRaw[0] if len(yamldataRaw) > 0 else None
+        except:
+            dataStr = None
+            yamldataStr = None
+
 
         title=row[2]
         if title is not None:
@@ -80,15 +89,27 @@ for row in cur.fetchall():
         if dataStr is not None:
             dataStr=dataStr.encode('utf-8')
 
-        try:
-            data=json.loads(dataStr)
-            lat=data['latitude']
-            lon=data['longitude']
-        except:
-            data=None
-            lat=None
-            lon=None
+        data=None
+        lat=None
+        lon=None
 
-        csvwriter.writerow((row[0],row[1],title,lat,lon,dataStr))
+        if dataStr:
+            try:
+                data=json.loads(dataStr)
+                lat=data['latitude']
+                lon=data['longitude']
+            except:
+                pass
+
+
+        if yamldataStr:
+            try:
+                data=yaml.load(yamldataStr)
+                lat=data['latitude']
+                lon=data['longitude']
+            except:
+                pass
+
+        csvwriter.writerow((row[0],row[1],title,lat,lon,json.dumps(data)))
 
 
