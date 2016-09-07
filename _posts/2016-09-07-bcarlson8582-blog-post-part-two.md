@@ -22,3 +22,4 @@ can be manipulated to achieve a highlighted purpose of the author. Often times, 
 an accurate depiction and organization of it to get the facts straight. Therefore, the implications of digital humanities
 are very important in defining modern research.
 
+1)  "Data Visualization." Tooling Up for the Digital Humanities. Stanford, n.d. Web. 7 Sept. 2016.
