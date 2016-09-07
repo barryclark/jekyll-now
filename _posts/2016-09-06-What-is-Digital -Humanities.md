@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Shout out to Digital Humanities
+title: Short and Sweet Introduction to Digital Humanities
 author: enunez2
 published: true
 ---
