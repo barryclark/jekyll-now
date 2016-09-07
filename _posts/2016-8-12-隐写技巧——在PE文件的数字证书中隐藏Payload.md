@@ -271,14 +271,14 @@ newntdll.dll：新生成的文件
 
 测试Payload添加成功，新生成文件的数字签名成功识别，程序有**如下特点：**
 
-1. payload在尾部自动填0补齐payload长度为8的倍数
+1.payload在尾部自动填0补齐payload长度为8的倍数
 
 如图，多了6个'00'，补齐长度
 
 ![Alt text](https://raw.githubusercontent.com/3gstudent/3gstudent.github.io/master/_posts/2016-8-12/4-1.png)
 
 
-2. 未修改PE文件校验和
+2.未修改PE文件校验和
 
 如图，PE文件校验和实际应该为00142684
 
