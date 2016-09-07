@@ -4,18 +4,7 @@ title: Vittime
 permalink: /vittime/
 ---
 
-<script src="//code.jquery.com/jquery-1.12.3.js"></script>
-<script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
-<script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
 
-</script>
-$(document).ready(function() {
-  $('#example').dataTable();
-});
-</script>
-
-
-{: .table .table-striped}
 Cognome         |Nome                    |Prefettura   |Data di nascita|Luogo di nascita    |Fonte
 :---------------|:-----------------------|:------------|:--------------|:-------------------|:----------------------------------------------------------------
 {% for member in site.data.vittime %} {{member.Cognome}} | {{member.Nome}} | {{member.Prefettura}} | {{member.Data}} | {{member.Luogo}} | [Fonte]({{member.Fonte}})
