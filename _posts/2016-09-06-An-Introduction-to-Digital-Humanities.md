@@ -1,6 +1,6 @@
 ---
 layout: post
-title: An Introduction To Digital Humanities: Content and Scholars
+title: An Introduction To Digital Humanities
 author: rbrooks6
 published: true
 ---
