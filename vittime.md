@@ -4,6 +4,7 @@ title: Vittime
 permalink: /vittime/
 ---
 
+Test
 
 Cognome         |Nome                    |Prefettura   |Data di nascita|Luogo di nascita    |Fonte
 :---------------|:-----------------------|:------------|:--------------|:-------------------|:----------------------------------------------------------------
