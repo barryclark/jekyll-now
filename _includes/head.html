@@ -1,0 +1,41 @@
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+{% if page.title %}
+	<title>{{ page.title }}</title>
+{% else %}
+	<title>{{ site.title }}</title>
+{% endif %}
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@{{ site.twitter_username }}" />
+<meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+<meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 200 }}{% else %}{{ site.description }}{% endif %}">
+
+<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+{% if site.google_verify %}
+	<meta name="google-site-verification" content="{{ site.google_verify }}">
+{% endif %}
+
+<link rel="icon" href="{{ site.baseurl }}/assets/favicon.png">
+<link rel="apple-touch-icon" href="{{ site.baseurl }}/assets/touch-icon.png">
+<link rel="stylesheet" href="//code.cdn.mozilla.net/fonts/fira.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/core.css">
+<link rel="canonical" href="{{ page.url | prepend: site.baseurl }}">
+<link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ site.baseurl }}/feed.xml" />
+
+{% if jekyll.environment == 'production' %}
+
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga( 'create', '{{ site.google_analytics }}', 'auto' );
+		ga( 'send', 'pageview' );
+	</script>
+
+{% endif %}
