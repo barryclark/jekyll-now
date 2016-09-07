@@ -277,6 +277,7 @@ newntdll.dll：新生成的文件
 
 ![Alt text](https://raw.githubusercontent.com/3gstudent/3gstudent.github.io/master/_posts/2016-8-12/4-1.png)
 
+
 2. 未修改PE文件校验和
 
 如图，PE文件校验和实际应该为00142684
