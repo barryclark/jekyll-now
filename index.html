@@ -24,20 +24,38 @@ layout: default
 
   {% endfor %}
 
+  <!-- Pager -->
+  <ul class="pager">
+      <li class="previous">
+          <a href="#">&larr; Older</a>
+      </li>
+      <li class="next">
+          <a href="#">Newer &rarr;</a>
+      </li>
+  </ul>
+
   {% if paginator.total_pages > 1 %}
-  <div class="pagination">
+  <ul class="pager">
     {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+      <li class="previous">
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Older</a>
+      </li>
     {% else %}
-      <span>&laquo; Prev</span>
+      <li class="previous">
+        <span>&laquo; Older</span>
+      </li>
     {% endif %}
 
 
     {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+      <li class="next">
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+      </li>
     {% else %}
-      <span>Next &raquo;</span>
+      <li class="next">
+        <span>Next &raquo;</span>
+      </li>
     {% endif %}
-  </div>
+  </ul>
   {% endif %}
 </div>
