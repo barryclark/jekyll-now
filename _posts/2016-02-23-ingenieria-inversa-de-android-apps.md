@@ -34,7 +34,7 @@ Volviendo al tema original, hay un punto importante, la Ingeniería Inversa o la
 
 Entonces el proceso es simple, abrimos APK Pure y pegamos el enlace completo en la barra de búsqueda, y le hacemos click al icono de búsqueda. Luego, nos aparecera la opcion de &#8220;Download APK&#8221;.
 
-<img class="alignnone size-full wp-image-694" src="http://www.ovalenzuela.com/wp-content/uploads/2016/02/captura-de-pantalla-2016-02-23-a-las-10-17-50-p-m.png" alt="Captura de pantalla 2016-02-23 a las 10.17.50 p.m." width="774" height="193" srcset="http://www.ovalenzuela.com/wp-content/uploads/2016/02/captura-de-pantalla-2016-02-23-a-las-10-17-50-p-m.png 774w, http://www.ovalenzuela.com/wp-content/uploads/2016/02/captura-de-pantalla-2016-02-23-a-las-10-17-50-p-m-300x75.png 300w, http://www.ovalenzuela.com/wp-content/uploads/2016/02/captura-de-pantalla-2016-02-23-a-las-10-17-50-p-m-768x192.png 768w" sizes="(max-width: 774px) 100vw, 774px" />
+<img class="alignnone size-full wp-image-694" src="http://www.ovalenzuela.com/wp-content/uploads/2016/02/captura-de-pantalla-2016-02-23-a-las-10-17-50-p-m.png" alt="Captura de pantalla 2016-02-23 a las 10.17.50 p.m." width="774" height="193" sizes="(max-width: 774px) 100vw, 774px" />
 
 Luego de descargar la APK viene la magia: usaremos otro <a href="http://www.javadecompilers.com/" target="_blank">servicio en línea </a>para desempaquetar la APK y convertir los binarios de vuelta al código fuente, y así leer y aprender sobre cómo el desarrollador ha programado esta App.
 

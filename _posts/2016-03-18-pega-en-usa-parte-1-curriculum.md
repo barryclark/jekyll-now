@@ -31,7 +31,7 @@ tags:
 </p>
 
 <p style="text-align: justify;">
-  <img class="size-medium wp-image-747 alignleft" src="http://www.ovalenzuela.com/wp-content/uploads/2016/03/experiencias-300x214.png" alt="experiencias" width="300" height="214" srcset="http://www.ovalenzuela.com/wp-content/uploads/2016/03/experiencias-300x214.png 300w, http://www.ovalenzuela.com/wp-content/uploads/2016/03/experiencias-624x446.png 624w, http://www.ovalenzuela.com/wp-content/uploads/2016/03/experiencias.png 700w" sizes="(max-width: 300px) 100vw, 300px" />En esta serie de publicaciones voy a explicar lo que he aprendido respecto a los procesos laborales fuera de Chile, como funcionan los procesos de selección &#8220;técnica&#8221; y que es lo que buscan los reclutadores antes, durante y después de la entrevista. Este no sera el post final, pero será un inicio.
+  <img class="size-medium wp-image-747 alignleft" src="http://www.ovalenzuela.com/wp-content/uploads/2016/03/experiencias-300x214.png" alt="experiencias" width="300" height="214" sizes="(max-width: 300px) 100vw, 300px" />En esta serie de publicaciones voy a explicar lo que he aprendido respecto a los procesos laborales fuera de Chile, como funcionan los procesos de selección &#8220;técnica&#8221; y que es lo que buscan los reclutadores antes, durante y después de la entrevista. Este no sera el post final, pero será un inicio.
 </p>
 
 <p style="text-align: justify;">
@@ -69,7 +69,7 @@ tags:
 </p>
 
 <p style="text-align: justify;">
-  <img class="size-medium wp-image-744 alignleft" src="http://www.ovalenzuela.com/wp-content/uploads/2016/03/resume-sample-300x204.jpg" alt="resume-sample" width="300" height="204" srcset="http://www.ovalenzuela.com/wp-content/uploads/2016/03/resume-sample-300x204.jpg 300w, http://www.ovalenzuela.com/wp-content/uploads/2016/03/resume-sample-624x424.jpg 624w, http://www.ovalenzuela.com/wp-content/uploads/2016/03/resume-sample.jpg 693w" sizes="(max-width: 300px) 100vw, 300px" />Listo, ahora que tenemos claro que tenemos que poner estudios y experiencia primero, entonces ahora viene el cómo:
+  <img class="size-medium wp-image-744 alignleft" src="http://www.ovalenzuela.com/wp-content/uploads/2016/03/resume-sample-300x204.jpg" alt="resume-sample" width="300" height="204" sizes="(max-width: 300px) 100vw, 300px" />Listo, ahora que tenemos claro que tenemos que poner estudios y experiencia primero, entonces ahora viene el cómo:
 </p>
 
 <p style="text-align: justify;">
@@ -89,7 +89,7 @@ tags:
 </p>
 
 <p style="text-align: justify;">
-  En general, para llenar esta descripción debes seguir esta pauta:<img class="size-medium wp-image-742 alignright" src="http://www.ovalenzuela.com/wp-content/uploads/2016/03/star-300x284.jpg" alt="Metodología Star" width="300" height="284" srcset="http://www.ovalenzuela.com/wp-content/uploads/2016/03/star-300x284.jpg 300w, http://www.ovalenzuela.com/wp-content/uploads/2016/03/star.jpg 600w" sizes="(max-width: 300px) 100vw, 300px" />
+  En general, para llenar esta descripción debes seguir esta pauta:<img class="size-medium wp-image-742 alignright" src="http://www.ovalenzuela.com/wp-content/uploads/2016/03/star-300x284.jpg" alt="Metodología Star" width="300" height="284" sizes="(max-width: 300px) 100vw, 300px" />
 </p>
 
   * Situación: Contexto general, donde, cuando, quien participaba, cual era el problema,etc.
