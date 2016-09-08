@@ -22,4 +22,4 @@ permalink: /news/
   var searchTemplate = "<div class='form-inline text-center'><label><input type='text' class='form-control' placeholder='(cerca qui...)'></label></div>"
   $("section.sieve").sieve({ itemSelector: "li" });
 </script>
-<style> div.form-inline.text-center {padding-bottom: 8rem;} </style>
+<style> div.form-inline.text-center {padding-bottom: 8rem;} .itemTitle a {font-weight: bold; color: #337ab7 !important; text-decoration: none;} </style>
