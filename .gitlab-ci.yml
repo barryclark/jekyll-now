@@ -3,7 +3,7 @@ image: ruby:2.3
 before_script:
   - apt-get update -qq && apt-get -y -qq install nodejs
   - gem install bundler --no-ri --no-rdoc
-  - bundle install --jobs $(nproc)
+  - bundle install --jobs $(nproc) --path vendor/bundle
 
 test:
   stage: test
@@ -14,6 +14,9 @@ test:
     - test
   except:
   - master
+  cache:
+    paths:
+      - vendor/bundle
 
 pages:
   stage: deploy
@@ -24,3 +27,6 @@ pages:
     - public
   only:
   - master
+  cache:
+    paths:
+      - vendor/bundle
