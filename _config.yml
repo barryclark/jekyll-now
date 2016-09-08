@@ -52,7 +52,7 @@ permalink: /:title/
 version: v1.2.0
 
 #Pagination
-paginate: 5
+paginate: 10
 paginate_path: "/blog/page:num/"
 
 # Jekyll 3 now only supports Kramdown for Markdown
