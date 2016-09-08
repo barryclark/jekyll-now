@@ -49,38 +49,38 @@ tags:
       <strong>Curso Normal</strong>
     </td>
   </tr>
-  
+
   <tr>
     <td>
       1. El USUARIO visita la página web que contiene el formulario
     </td>
-    
+
     <td>
     </td>
   </tr>
-  
+
   <tr>
     <td>
     </td>
-    
+
     <td>
       2. El SISTEMA despliega el formulario
     </td>
   </tr>
-  
+
   <tr>
     <td>
       3. El USUARIO llena los datos<br /> 4. El USUARIO presiona el botón “Enviar&#8221;
     </td>
-    
+
     <td>
     </td>
   </tr>
-  
+
   <tr>
     <td>
     </td>
-    
+
     <td>
       5. El SISTEMA valida los datos ingresados.<br /> 6. El SISTEMA almacena los datos en la Base de Datos.<br /> 7. El SISTEMA despliega el mensaje de confirmación que los datos fueron almacenados.<br /> 8. Fin
     </td>
@@ -97,29 +97,29 @@ tags:
       <strong>Curso Alternativo (Paso 5)</strong>
     </td>
   </tr>
-  
+
   <tr>
     <td>
     </td>
-    
+
     <td>
       5. El SISTEMA valida los datos y estos están incorrectos<br /> 6. El SISTEMA despliega el formulario<br /> 7. El SISTEMA despliega mensaje: “Datos ingresados no son válidos&#8221;
     </td>
   </tr>
-  
+
   <tr>
     <td>
       8. El USUARIO llena los datos<br /> 9. El USUARIO presiona el botón “Enviar&#8221;.
     </td>
-    
+
     <td>
     </td>
   </tr>
-  
+
   <tr>
     <td>
     </td>
-    
+
     <td>
       10. El SISTEMA valida los datos ingresados.<br /> 11. El SISTEMA almacena los datos en la Base de Datos.<br /> 12. El SISTEMA despliega el mensaje: “Datos enviados exitosamente&#8221;.<br /> 13. Fin
     </td>
@@ -164,7 +164,7 @@ tags:
 </p>
 
 <p align="justify">
-  <img class="aligncenter wp-image-772 size-full" src="http://www.ovalenzuela.com/wp-content/uploads/2016/05/factor_tecnico.png" alt="factor_tecnico" width="332" height="215" srcset="http://www.ovalenzuela.com/wp-content/uploads/2016/05/factor_tecnico.png 332w, http://www.ovalenzuela.com/wp-content/uploads/2016/05/factor_tecnico-300x194.png 300w" sizes="(max-width: 332px) 100vw, 332px" />
+  <img class="aligncenter wp-image-772 size-full" src="http://www.ovalenzuela.com/wp-content/uploads/2016/05/factor_tecnico.png" alt="factor_tecnico" width="332" height="215" sizes="(max-width: 332px) 100vw, 332px" />
 </p>
 
 <p align="justify">
@@ -201,33 +201,33 @@ tags:
         Tipo
       </p>
     </td>
-    
+
     <td>
       <p align="justify">
         Descripción
       </p>
     </td>
-    
+
     <td>
       <p align="justify">
         Valor
       </p>
     </td>
   </tr>
-  
+
   <tr>
     <td>
       <p align="justify">
         Simple
       </p>
     </td>
-    
+
     <td>
       <p align="justify">
         Una interfaz de usuario simple que probablemente interviene en solo una entidad de base de datos. El escenario exitoso tiene 3 o menos pasos. Su implementación requiere menos de 5 clases.
       </p>
     </td>
-    
+
     <td>
       <div style="text-align: center;">
         <p>
@@ -236,20 +236,20 @@ tags:
       </div>
     </td>
   </tr>
-  
+
   <tr>
     <td>
       <p align="justify">
         Mediano
       </p>
     </td>
-    
+
     <td>
       <p align="justify">
         Más de una interfaz e interactúa con 2 o más llamadas a una base de datos. Contiene entre 4 a 7 pasos. Su implementación requiere programar de 5 a 10 clases.
       </p>
     </td>
-    
+
     <td>
       <div style="text-align: center;">
         <p>
@@ -258,20 +258,20 @@ tags:
       </div>
     </td>
   </tr>
-  
+
   <tr>
     <td>
       <p align="justify">
         Complejo
       </p>
     </td>
-    
+
     <td>
       <p align="justify">
         Involucra más de 3 interacciones con una base de datos. Contiene sobre 7 pasos. Su implementación requiere más de 10 pasos
       </p>
     </td>
-    
+
     <td>
       <div style="text-align: center;">
         <p>
@@ -297,33 +297,33 @@ tags:
         Tipo
       </p>
     </td>
-    
+
     <td>
       <p align="justify">
         Descripción
       </p>
     </td>
-    
+
     <td>
       <p align="justify">
         Valor
       </p>
     </td>
   </tr>
-  
+
   <tr>
     <td>
       <p align="justify">
         Simple
       </p>
     </td>
-    
+
     <td>
       <p align="justify">
         El actor representa otro sistema con una API bien definida.
       </p>
     </td>
-    
+
     <td>
       <div style="text-align: center;">
         <p>
@@ -332,20 +332,20 @@ tags:
       </div>
     </td>
   </tr>
-  
+
   <tr>
     <td>
       <p align="justify">
         Medio
       </p>
     </td>
-    
+
     <td>
       <p align="justify">
         El actor representa otro sistema interactuando mediante una conexión de red.
       </p>
     </td>
-    
+
     <td>
       <div style="text-align: center;">
         <p>
@@ -354,20 +354,20 @@ tags:
       </div>
     </td>
   </tr>
-  
+
   <tr>
     <td>
       <p align="justify">
         Complejo
       </p>
     </td>
-    
+
     <td>
       <p align="justify">
         El actor es una persona interactuando mediante una interfaz.
       </p>
     </td>
-    
+
     <td>
       <div style="text-align: center;">
         <p>
@@ -383,7 +383,7 @@ tags:
 </p>
 
 <p align="justify">
-  <img class="aligncenter wp-image-774 size-full" src="http://www.ovalenzuela.com/wp-content/uploads/2016/05/casos_uso.png" alt="casos_uso" width="304" height="129" srcset="http://www.ovalenzuela.com/wp-content/uploads/2016/05/casos_uso.png 304w, http://www.ovalenzuela.com/wp-content/uploads/2016/05/casos_uso-300x127.png 300w" sizes="(max-width: 304px) 100vw, 304px" />
+  <img class="aligncenter wp-image-774 size-full" src="http://www.ovalenzuela.com/wp-content/uploads/2016/05/casos_uso.png" alt="casos_uso" width="304" height="129" sizes="(max-width: 304px) 100vw, 304px" />
 </p>
 
 <p align="justify">
@@ -403,7 +403,7 @@ tags:
 </p>
 
 <p align="justify">
-  <img class="aligncenter wp-image-775 size-full" src="http://www.ovalenzuela.com/wp-content/uploads/2016/05/resultados_final.png" alt="resultados_final" width="594" height="184" srcset="http://www.ovalenzuela.com/wp-content/uploads/2016/05/resultados_final.png 594w, http://www.ovalenzuela.com/wp-content/uploads/2016/05/resultados_final-300x93.png 300w" sizes="(max-width: 594px) 100vw, 594px" />
+  <img class="aligncenter wp-image-775 size-full" src="http://www.ovalenzuela.com/wp-content/uploads/2016/05/resultados_final.png" alt="resultados_final" width="594" height="184" sizes="(max-width: 594px) 100vw, 594px" />
 </p>
 
 <p align="justify">
