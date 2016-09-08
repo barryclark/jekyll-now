@@ -16,7 +16,7 @@ categories:
 tags:
   - apps
   - desarrollador
-  - ingeniera
+  - ingenieria
   - profesional
 ---
 <p align="justify">

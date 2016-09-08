@@ -18,9 +18,8 @@ tags:
   - Android
   - apps
   - decode
-  - decompilar
   - hack
-  - ingeniera
+  - ingenieria
   - inversa
   - reversa
 ---

@@ -14,12 +14,9 @@ categories:
   - Opinión
 tags:
   - amazon
-  - chile
   - curriculum
   - desarrollador
   - google
-  - h1b
-  - h1b1
   - linkedin
   - profesional
   - trabajo
