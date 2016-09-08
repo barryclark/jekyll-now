@@ -4,13 +4,21 @@ title: About
 permalink: /about/
 ---
 
+<img class="size-full wp-image-634 alignnone" src="http://www.ovalenzuela.com/wp-content/uploads/2016/02/avatar.jpg" alt="avatar" width="100" height="100" />
+
+● 8+ years of experience in software development, software engineering and Linux.
+
+● Specialist in Linux, Java, Android, PHP, and passionate by learning new technologies.
+
+● Project management using Agile methodologies.
+
+● Agile methodology practitioner with SCRUM Manager Certification.
+
+More information:
+
 Some information about you!
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
-Testing this blog
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+* LinkedIn: <a href="https://www.linkedin.com/in/oscarvalenzuela" target="_blank">https://www.linkedin.com/in/oscarvalenzuela</a>
+* GitHub: <a href="https://github.com/oscarvalenzuelab" target="_blank">https://github.com/oscarvalenzuelab</a>
