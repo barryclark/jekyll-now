@@ -54,7 +54,6 @@ version: v1.2.0
 #Pagination
 paginate: 5
 paginate_path: "/blog/page:num/"
-limit: 10
 
 # Jekyll 3 now only supports Kramdown for Markdown
 kramdown:
