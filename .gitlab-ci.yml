@@ -1,9 +1,10 @@
 image: ruby:2.3
 
 before_script:
-  - apt-get update -qq && apt-get -y -qq install nodejs
-  - gem install bundler --no-ri --no-rdoc
-  - bundle install --jobs $(nproc) --path vendor/bundle
+  - bundle install --clean --jobs $(nproc) --path vendor/bundle
+
+variables:
+  BUNDLE_GEMFILE: Gemfile.gitlab
 
 cache:
   paths:

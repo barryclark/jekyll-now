@@ -5,6 +5,7 @@ _site
 .bundle
 .sass-cache
 Gemfile.lock
+Gemfile.gitlab.lock
 node_modules
 package.json
 vendor
