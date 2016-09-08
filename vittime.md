@@ -13,7 +13,8 @@ $(document).ready(function() {
   $('#vittime').dataTable({
     "pageLength": 300,
     "language": {
-    "search": "Cerca: "
+    "search": "Cerca: ",
+	"info":           "da _START_ a _END_ di un totale di _TOTAL_"
 	},
     "bPaginate": false,
     "bLengthChange": false
