@@ -2,6 +2,7 @@
 layout: default
 ---
 
+
 <article class="post">
   <h1>{{ page.title }}</h1>
 
@@ -9,11 +10,7 @@ layout: default
     Written on {{ page.date | date: "%B %e, %Y" }}
   </div>
 
-  <ul class="tags">
-  {% for tag in post.tags %}
-    <li><a href="/tags#{{ tag }}" class="tag">{{ tag }}</a></li>
-  {% endfor %}
-  </ul>
+<!-- Tags --> <ul class="tags"> {% for tag in page.tags %} <li><a href="/tags#{{ tag }}" class="tag">{{ tag }}</a></li> {% endfor %} </ul>
 
   <div class="entry">
     {{ content }}
