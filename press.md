@@ -20,7 +20,8 @@ $(document).ready(function() {
 	"infoEmpty":      "Nessun risultato"
 	},
     "bPaginate": false,
-    "bLengthChange": false
+    "bLengthChange": false,
+	"order": [[ 0, "desc" ]]
   });
 });
 </script>
