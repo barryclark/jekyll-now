@@ -1,0 +1,26 @@
+image: ruby:2.3
+
+before_script:
+  - apt-get update -qq && apt-get -y -qq install nodejs
+  - gem install bundler --no-ri --no-rdoc
+  - bundle install --jobs $(nproc)
+
+test:
+  stage: test
+  script:
+  - bundle exec jekyll build -d test
+  artifacts:
+    paths:
+    - test
+  except:
+  - master
+
+pages:
+  stage: deploy
+  script:
+  - bundle exec jekyll build -d public
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
