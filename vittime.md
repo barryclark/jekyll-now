@@ -14,7 +14,8 @@ $(document).ready(function() {
     "pageLength": 300,
     "language": {
     "search": "Cerca: ",
-	"info":           "da _START_ a _END_ di un totale di _TOTAL_"
+	"info":           "da _START_ a _END_ di un totale di _TOTAL_",
+	"infoFiltered":   "(filtrati su un totale di _MAX_)"
 	},
     "bPaginate": false,
     "bLengthChange": false
