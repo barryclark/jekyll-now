@@ -12,7 +12,7 @@ permalink: /about/
 ### Il Progetto
 
 
-Questo è un progetto non profit, organizzato interamente da volontari. È nato per condividere informazioni utili e 
+Questo è un progetto non profit, organizzato interamente da volontari. È nato per condividere informazioni utili e
 verificate sul Terremoto del 24 Agosto 2016 in Italia.
 
 Il terremoto ha interessato le province di Rieti, Ascoli Piceno e Perugia, causando numerose vittime e notevoli danni. Al momento in cui viene scritta questa pagina (27 agosto) le notizie che provengono dalle fonti ufficiali sono ancora in divenire e verranno aggiornate con informazioni dettagliate e puntuali non appena possibile. Al momento il consiglio per avere informazioni di dettaglio sull'evento è di fare riferimento alla [pagina di Wikipedia dedicata all'evento e disponibile a questo link](https://it.wikipedia.org/wiki/Terremoto_del_Centro_Italia_del_2016).
@@ -26,7 +26,7 @@ L'idea è di [Matteo Tempestini](https://twitter.com/il_tempe) e [Matteo Fortini
 
 Un grazie sentito a :
 
-- Tutto lo staff di [ActionAid Italia](https://www.actionaid.it/) per il supporto, la gestione delle informazioni web, la produzione di contenuti e il dominio.
+- Lo staff di [ActionAid Italia](https://www.actionaid.it/) per il supporto, la gestione delle informazioni web, la produzione di contenuti e il dominio.
 - [Emergenza24](http://www.emergenza24.org) per il supporto sul web
 - [Openstreetmap Italia](https://openstreetmap.it/) per il lavoro di mappatura nelle zone del terremoto
 - [Andrea Borruso](https://twitter.com/aborruso); [Nino Galante](https://twitter.com/picomiles); [Maurizio de Magnis](https://twitter.com/olistik); [Sabas](https://twitter.com/__sabas);[Alberto Cottica](https://twitter.com/alberto_cottica): [Piersoft](https://twitter.com/piersoft?lang=it) [Andrea Nelson Mauro](https://twitter.com/nelsonmau) per il loro importante contributo da civic hackers
@@ -37,7 +37,7 @@ Un grazie sentito a :
 - Marco Milesi e [Piersoft](https://twitter.com/Piersoft) per il bot Telegram
 - [Ernesto Belisario](https://twitter.com/diritto2punto0?lang=it) per gli aspetti legali
 
-..... 
+.....
 (i ringraziamenti sono in progress ogni giorno....Non avertene a male se non compari ancora, grazie lo stesso!)
 
 
@@ -55,4 +55,3 @@ Un grazie sentito a :
 |:------------|:--------|:------|
 |{% for member in site.data.press %}{{member.data}} | {{member.dove}} | [{{member.titolo}}]({{member.link}})|
 {% endfor %}
-
