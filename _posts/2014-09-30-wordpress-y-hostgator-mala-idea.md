@@ -19,7 +19,6 @@ categories:
 ---
 <div class="separator" style="clear:both;text-align:center;">
   <a href="http://www.ovalenzuela.com/wp-content/uploads/2016/02/ab080-hostgatorx.jpg" style="clear:left;float:left;margin-bottom:1em;margin-right:1em;"><img border="0" src="http://www.ovalenzuela.com/wp-content/uploads/2016/02/ab080-hostgatorx.jpg" /></a>
-  <span style="font-family:Verdana, sans-serif;">Si estas pensando en publicar/crear un blog o sitio, y esperas tener un alto trafico, por favor alejate de Hostgator.</span><br /><span style="font-family:Verdana, sans-serif;"><br /></span><span style="font-family:Verdana, sans-serif;">Por tercera vez fui bloqueado debido a &#8220;alto consumo de CPU&#8221; en mi blog, pero el asunto es que este blog ha sido instalado por las herramientas del mismo Hostgator!! Asi que, ha sido completamente instalado, configurado y optimizado por Hostgator, y ellos han bloqueado mi sitio alegando sobre consumo de CPU, pidiendo que yo lo repare, elimine los plugins o instale un gestor de Cache para WordPress, pero ellos ha instalaron los plugins y el gestor al inicio.</span>
 </div>
 
 <div style="text-align:justify;">

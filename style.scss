@@ -378,3 +378,8 @@ Alignments
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
 @import "svg-icons";
+
+$font-size-base: 17px;
+$headings-font-weight: 600;
+$blockquote-font-size: $font-size-base;
+@import "bootstrap";
