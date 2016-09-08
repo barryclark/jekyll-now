@@ -52,8 +52,11 @@ permalink: /:title/
 version: v1.2.0
 
 #Pagination
-paginate: 5
-paginate_path: "/blog/page:num/"
+paginate:
+  collection:   posts
+  per_page:     5   # maximum number of items per page
+  limit:        10  # Maximum number of pages to paginate (false for unlimited)
+  permalink:    /page:num/     # pagination path (relative to template page)
 
 # Jekyll 3 now only supports Kramdown for Markdown
 kramdown:
