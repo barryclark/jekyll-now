@@ -34,7 +34,7 @@ ssh -L 8080:localhost:8888 username@server_address
 
 If the client machine OS is Windows, you may install [mobaxterm](http://mobaxterm.mobatek.net/) first, then run the above command in mobaxterm.
 
-Once SSH tunneling is estavblished, you can connect to the remote Jupyter Notebook by openning `http://localhost:8080` in a web browser on your client machine.
+Once SSH tunneling is established, you can connect to the remote Jupyter Notebook by openning `http://localhost:8080` in a web browser on your client machine.
 
 
 
