@@ -5,6 +5,10 @@ before_script:
   - gem install bundler --no-ri --no-rdoc
   - bundle install --jobs $(nproc) --path vendor/bundle
 
+cache:
+  paths:
+    - vendor/bundle
+
 test:
   stage: test
   script:
@@ -14,9 +18,6 @@ test:
     - test
   except:
   - master
-  cache:
-    paths:
-      - vendor/bundle
 
 pages:
   stage: deploy
@@ -27,6 +28,3 @@ pages:
     - public
   only:
   - master
-  cache:
-    paths:
-      - vendor/bundle
