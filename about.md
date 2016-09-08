@@ -14,11 +14,8 @@ permalink: /about/
 
 ● Agile methodology practitioner with SCRUM Manager Certification.
 
-More information:
 
-Some information about you!
-
-### More Information
+### More Information:
 
 * LinkedIn: <a href="https://www.linkedin.com/in/oscarvalenzuela" target="_blank">https://www.linkedin.com/in/oscarvalenzuela</a>
 * GitHub: <a href="https://github.com/oscarvalenzuelab" target="_blank">https://github.com/oscarvalenzuelab</a>
