@@ -8,7 +8,7 @@ layout: default
   <h1>
       <a href="{{ page.url }}">{{ page.title }}</a>
   </h1>
-  <p><span class="glyphicon glyphicon-time"></span> {{ page.date | date: "%B %e, %Y" }}</p>
+  <p><span class="glyphicon glyphicon-time"></span> {{ page.date | date_to_string }}</p>
   <ul class="tags">
   {% for tag in page.tags %}
     <li><a href="/tags#{{ tag }}" class="tag">{{ tag }}</a></li>
