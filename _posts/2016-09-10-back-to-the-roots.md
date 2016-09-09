@@ -15,7 +15,7 @@ tags:
   - software
   - amazon
 ---
-<img class="alignleft" src="http://www.ovalenzuela.com/images/opensource_small.png" /> Es muy raro como ocurren las cosas y la vida va cambiando, en ocasiones en formas ciclíca. No hace mucho, quiz;as algo así como una semana, me moví a un nuevo equipo en mi trabajo. La decisión fue orientada más que todo por las ganas de volver a las cosas que más me gustan: Programar y el Software Libre.
+<img class="alignleft" src="http://www.ovalenzuela.com/images/opensource_small.png" width="75%" height="75%"/> Es muy raro como ocurren las cosas y la vida va cambiando, en ocasiones en formas ciclíca. No hace mucho, quizás algo así como una semana, me moví a un nuevo equipo en mi trabajo. La decisión fue orientada más que todo por las ganas de volver a las cosas que más me gustan: Programar y el Software Libre.
 
 Trabajar en mi antiguo equipo fue expectacular, osea con momentos feos como en todos los trabajos, pero al final del día puedo decir que aprendí mucho, más de lo que pensaba. De alguna extraña forma, el trabajo cambió mi forma de pensar y llevar, es divertido lo que ciertos conceptos como &#8220;Be always right&#8221; y &#8220;Dive deep&#8221; pueden ser incorporados en cada aspecto del día a día y aprovechados en excelente forma.
 
