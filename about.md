@@ -29,13 +29,15 @@ Un grazie sentito a :
 - Lo staff di [ActionAid Italia](https://www.actionaid.it/) per il supporto, la gestione delle informazioni web, la produzione di contenuti e il dominio.
 - [Emergenza24](http://www.emergenza24.org) per il supporto sul web
 - [Openstreetmap Italia](https://openstreetmap.it/) per il lavoro di mappatura nelle zone del terremoto
-- [Andrea Borruso](https://twitter.com/aborruso); [Nino Galante](https://twitter.com/picomiles); [Maurizio de Magnis](https://twitter.com/olistik); [Sabas](https://twitter.com/__sabas);[Alberto Cottica](https://twitter.com/alberto_cottica): [Piersoft](https://twitter.com/piersoft?lang=it) [Andrea Nelson Mauro](https://twitter.com/nelsonmau) per il loro importante contributo da civic hackers
+- [Andrea Borruso](https://twitter.com/aborruso); [Nino Galante](https://twitter.com/picomiles); [Maurizio de Magnis](https://twitter.com/olistik); [Sabas](https://twitter.com/__sabas);[Alberto Cottica](https://twitter.com/alberto_cottica): [Piersoft](https://twitter.com/piersoft?lang=it) [Andrea Nelson Mauro](https://twitter.com/nelsonmau) per il loro contributo da civic hackers
+- [Francesco Pinzauti](https://twitter.com/pinzauti7);[Timothy Radaelli](https://twitter.com/drizztbsd);[Vincenzo Tilotta](https://twitter.com/SprayLinux) per il loro contributo nello sviluppo software
 - [Rosy Battaglia](https://twitter.com/rosybattaglia), [Donata Columbro](https://twitter.com/dontyna), [Marieva Favoino](https://twitter.com/marievafavoino), [Cristina Galasso](https://twitter.com/cristigalas), [Fabio Manfrin](https://twitter.com/FManfri), [Gloria Schiavi](https://twitter.com/gloria_schiavi) per la gestione della comunicazione
 - [Chiara Spinelli](https://twitter.com/ChiaraPeggy) per il supporto nella verifica del crowdfounding
 - [Valeria Villan](https://twitter.com/Tersillina) per la sua esperienza in crisi management
 - Il team della [standbytaskforce](http://www.standbytaskforce.org/) per il supporto
 - Marco Milesi e [Piersoft](https://twitter.com/Piersoft) per il bot Telegram
 - [Ernesto Belisario](https://twitter.com/diritto2punto0?lang=it) per gli aspetti legali
+- Il gruppo di ricerca [geoSDI](www.geosdi.org) del CNR IMAA per il supporto ai test della piattaforma e la generazione del servizio WMS
 
 .....
 (i ringraziamenti sono in progress ogni giorno....Non avertene a male se non compari ancora, grazie lo stesso!)
