@@ -2,11 +2,13 @@
 layout: post
 title: Products of Array Elements 
 ---
-This is my take on the problem posed [here](https://www.interviewcake.com/question/java/product-of-other-numbers). The problem asks you to write a function `getProductsOfAllIntsExceptAtIndex()` that takes in an array and returns an array where each element of the returned array contains the product of all the elements of the array, except the element at that particular index. For example, given an input `{1, 7, 3, 4}` we want to return `{84, 12, 28, 21}`. A constraint given is that we are not allowed to use division in our solution (this would trivialize the problem as we'd only need to compute the entire array's product and divide by the value at our particular index). 
+This is my take on the problem posed [here](https://www.interviewcake.com/question/java/product-of-other-numbers). The problem asks you to write a function `getProductsOfAllIntsExceptAtIndex()` that takes in an array and returns an array where each element of the returned array contains the product of all the elements of the array, except the element at that particular index. 
+
+For example, given an input `{1, 7, 3, 4}` we want to return `{84, 12, 28, 21}`. A constraint given is that we are not allowed to use division in our solution (this would trivialize the problem as we'd only need to compute the entire array's product and divide by the value at our particular index). 
 
 ## Brute-Force Solution
 
-The brute-force solution here is not too hard, we just iterate through our indexes and calculate the product each time, discounting the value at that particular index. We store our elements in a new array and return that. Here's a C++ implementation of the brute-force solution: 
+The brute-force solution here is not too hard, we just iterate through our indices and calculate the product each time, discounting the value at that particular index. We store our elements in a new array and return that. Here's a C++ implementation of the brute-force solution: 
 
 <script src="https://gist.github.com/rohan-varma/e7240fb0a85432a7cca49d420677a869.js"></script>
 
