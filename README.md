@@ -1,6 +1,6 @@
 # ovalenzuela personal blog
 
-This is just my personal blog using **Jekyll** is a static site generator for GitHub ([Jekyll Repository](https://github.com/jekyll/jekyll))
+This is just my personal blog using **Jekyll** as static site generator for GitHub ([Jekyll](https://github.com/jekyll/jekyll))
 
 ## Licenses
 
