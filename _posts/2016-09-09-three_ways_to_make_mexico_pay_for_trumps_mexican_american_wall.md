@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Three Ways to Pay for Trump's Mexican American Wall
+title: Three Ways to Make Mexico Pay for Trump's Mexican American Wall
 tags: [politics]
 keywords: [trump, wall, mexico, war]
 ---
