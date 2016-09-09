@@ -3,7 +3,7 @@ layout: post
 title: "Review - Castle Combat"
 description: "Castle Combat is a great CCG for younger kids that's self published, and not widely known."
 category: review
-featured: castlecombat.jpg
+featured: castlecombat.png
 tags: [games, review, castle combat, kid realms]
 author: Rob Kalajian
 ---
@@ -51,6 +51,6 @@ I highly recommend Castle Combat, especially for families with kids aged 4+. You
 <h3>Supporting Links</h3>
 
 [Castle Combat Homepage](http://www.castlecombat.com)\\
-[KidRealm Homepage](http://kidrealm.com)]]
+[KidRealm Homepage](http://kidrealm.com)\\
 [Castle Combat on BGG](https://boardgamegeek.com/boardgame/175296/castle-combat)\\
 [Purchase Castle Combat](http://kidrealm.com/index.cfm?scn=ws&dsp=pageread&vw=shopcatalog&shopid=7195)
