@@ -37,7 +37,7 @@ Un grazie sentito a :
 - Il team della [standbytaskforce](http://www.standbytaskforce.org/) per il supporto
 - Marco Milesi e [Piersoft](https://twitter.com/Piersoft) per il bot Telegram
 - [Ernesto Belisario](https://twitter.com/diritto2punto0?lang=it) per gli aspetti legali
-- Il gruppo di ricerca [geoSDI](www.geosdi.org) del CNR IMAA per il supporto ai test della piattaforma e la generazione del servizio WMS
+- Il gruppo di ricerca [geoSDI](https://www.geosdi.org) del CNR IMAA per il supporto ai test della piattaforma e la generazione del servizio WMS
 
 .....
 (i ringraziamenti sono in progress ogni giorno....Non avertene a male se non compari ancora, grazie lo stesso!)
