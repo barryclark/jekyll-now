@@ -2,7 +2,7 @@
 layout: post
 title: Products of Array Elements 
 ---
-This is my take on the problem posed [here](https://www.interviewcake.com/question/java/product-of-other-numbers). The problem asks you to write a function `getProductsOfAllIntsExceptAtIndex()` that takes in an array and returns an array where each element of the returned array contains the product of all the elements of the array, except the element at that particular index. 
+This is my take on the problem posed [on InterviewCake](https://www.interviewcake.com/question/java/product-of-other-numbers). The problem asks you to write a function `getProductsOfAllIntsExceptAtIndex()` that takes in an array and returns an array where each element of the returned array contains the product of all the elements of the array, except the element at that particular index. 
 
 For example, given an input `{1, 7, 3, 4}` we want to return `{84, 12, 28, 21}`. A constraint given is that we are not allowed to use division in our solution. This would trivialize the problem as we'd only need to compute the entire array's product and divide by the value at our particular index. 
 
