@@ -1,3 +1,8 @@
+---
+layout: post
+title: GitHub MyList HowTo
+---
+
 # GitHubリポジトリの一覧を取得する
 
 ## 目的
