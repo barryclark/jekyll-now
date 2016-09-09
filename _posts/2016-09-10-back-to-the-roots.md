@@ -21,9 +21,9 @@ Trabajar en mi antiguo equipo fue expectacular, osea con momentos feos como en t
 
 Con todo lo aprendido, más mis ganas por volver a lo mío y la necesidad de bajar la cantidad de horas al día que estaba trabajando habitualmente, moverme al nuevo rol claramente fue una buena decisión, al menos hasta ahora.
 
-Ahora en mi equipo dedicado full al Open Source, he vuelto a tener la oportunidad de desarrollar, estudiar y terminar mi certificación de Arquitecto en la Nube. Y bueno, como no podía ser, migré mi blog a Github + Jekyll con la idea de practicar nuevamente mis habilidades de programación y aprender un nuevo lenguaje.
+Ahora en mi equipo dedicado full al Open Source, he vuelto a tener la oportunidad de desarrollar, estudiar y terminar mi certificación de Arquitecto en la Nube. Y bueno, como no podía ser, migré mi blog a <a href="https://github.com" alt="Github Homepage">Github</a> + <a href="https://jekyllrb.com/" alt="Jekyll Homepage">Jekyll</a> con la idea de practicar nuevamente mis habilidades de programación y aprender un nuevo lenguaje.
 
-Quizás la próxima semana haga un tutorial, aunque tengo varios temas pendientes sobre los que publicar, pero es la idea y al menos tengo la intención.
+Quizás la próxima semana escribiré un tutorial, aunque tengo varios temas pendientes sobre los que publicar, pero es la idea y al menos tengo la intención.
 
 
 _**Happy Coding!**_
