@@ -1,12 +1,12 @@
 ---
 published: true
-id: 800
+id: 160908
 title: Back to the roots
-date: 2016-09-10T00:00:00+00:00
+date: 2016-09-08T00:00:00+00:00
 author: ovalenzuela
 layout: post
-guid: http://ovalenzuela.com/?p=800
-permalink: /2016/09/back-to-the-roots.html
+guid: http://ovalenzuela.com/?p=160908
+permalink: /2016/08/back-to-the-roots.html
 categories:
   - General
   - Personal
