@@ -4,7 +4,7 @@ title: Products of Array Elements
 ---
 This is my take on the problem posed [here](https://www.interviewcake.com/question/java/product-of-other-numbers). The problem asks you to write a function `getProductsOfAllIntsExceptAtIndex()` that takes in an array and returns an array where each element of the returned array contains the product of all the elements of the array, except the element at that particular index. 
 
-For example, given an input `{1, 7, 3, 4}` we want to return `{84, 12, 28, 21}`. A constraint given is that we are not allowed to use division in our solution (this would trivialize the problem as we'd only need to compute the entire array's product and divide by the value at our particular index). 
+For example, given an input `{1, 7, 3, 4}` we want to return `{84, 12, 28, 21}`. A constraint given is that we are not allowed to use division in our solution. This would trivialize the problem as we'd only need to compute the entire array's product and divide by the value at our particular index. 
 
 ## Brute-Force Solution
 
@@ -20,7 +20,7 @@ This solution has quadratic time complexity and linear space complexity with res
 
 ## A Faster Approach
 
-Consider the ith element in our array that contains the products we desire. The ith element is the product of all elements in our input array, besides the element at index i. Equivalently, we can think of the ith element being the product of all elements *before* the element at index i, and all elements *after* the element at index i. Do you see a way to use this alternate approach to avoid having a nested loop approach that computes the adjusted product each time?
+Consider the *ith* element in our array that contains the products we desire. The *ith* element is the product of all elements in our input array, besides the element at index *i*. Equivalently, we can think of the ith element being the product of all elements *before* the element at index *i*, and all elements *after* the element at index *i*. Do you see a way to use this alternate approach to avoid having a nested loop approach that computes the adjusted product each time?
 
 ## The Linear Time Solution
 
