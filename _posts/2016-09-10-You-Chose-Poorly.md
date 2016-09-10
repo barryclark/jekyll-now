@@ -34,7 +34,7 @@ In episode 5 we talked video games, namely, my first video game system: [The Tur
 
 [It took us a while but we finally got around to talking about Photos in episode 11](http://youchosepoorlypodcast.tumblr.com/post/147352160703/you-chose-poorly-11-photos). In it, I tell a story about recommending a service that recently shut down, and this opens the lens for a larger discussion: Photos. What do you do with them? How do you trust they’ll still be there if you want to see them later? How much money do you have to throw at this problem? And can there just be one place where they live (tldr: no).
 
-In what I consider a sister episode to the Photos episode, [episode 12 is about reading digitally](http://youchosepoorlypodcast.tumblr.com/post/147777908238/you-chose-poorly-12-ebook-readers). In this day and age, what’s the best way to read a book? Mikey and I try to figure out why “use an ebook reader” isn’t automatically the answer. We also talk about the ebook readers they’ve owned, and if any of them were wrong.
+In what I consider a sister episode to the Photos episode, [episode 12 is about reading digitally](http://youchosepoorlypodcast.tumblr.com/post/147777908238/you-chose-poorly-12-ebook-readers). In this day and age, what’s the best way to read a book? Mikey and I try to figure out why “use an ebook reader” isn’t automatically the answer. We also talk about the ebook readers we've owned, and if any of them were wrong.
 
 [Episode 13 returns us to gaming with the big craze of summer 2016: Pokemon Go](http://youchosepoorlypodcast.tumblr.com/post/148749957083/you-chose-poorly-13-pokemon-go). Discussed: the wisdom of avoiding never-ending video games, and how good the game might be for society. Also, a little bit of iOS 10 Beta chat.
 
