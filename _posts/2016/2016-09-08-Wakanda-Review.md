@@ -26,7 +26,7 @@ The game continues until all 6 poles are claimed. Points are scored by the villa
 You can read the actual rule booklet by clicking the link in the Supporting Links at the bottom of this post.
 
 <h2>Pieces</h2>
-<img src="/images/wakanda/pieces.jpg" alt="Wakanda" class="float-left" />
+<img src="/images/wakanda/pieces.jpg" height="100" alt="Wakanda" class="float-left" />
 Blue Orange makes really nice games, and the wooden totem pieces and headdresses in Wakanda are really nice. The tiles are solid, and the pieces stand on them without any issues. The bag that holds the totem pieces is well made, and does't fell like it'll break any time soon.
 
 Really, I don't expect any less from Blue Orange.
