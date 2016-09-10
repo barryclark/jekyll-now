@@ -25,11 +25,13 @@ csvwriter=csv.writer(wr)
 
 
 conn=sql.connect(DBNAME)
+conn.row_factory = sql.Row 
 cur=conn.cursor()
 
 cur.execute("""CREATE TABLE IF NOT EXISTS issues
        (id INTEGER NOT NULL PRIMARY KEY,
        updated_at TIMESTAMP,
+       created_at TIMESTAMP,
        title TEXT,
        labels TEXT,
        body TEXT,
@@ -60,19 +62,19 @@ for issue in issues:
     count=res.fetchone()[0]
     if count == 0:
         print ("INSERT id %d" % (issue.id))
-        cur.execute("INSERT INTO issues (id, updated_at, title, labels, body, url) VALUES(?,?,?,?,?,?)", (issue.id, issue.updated_at, issue.title, labels, issue.body,issue.html_url))
+        cur.execute("INSERT INTO issues (id, updated_at, created_at, title, labels, body, url) VALUES(?,?,?,?,?,?,?)", (issue.id, issue.updated_at, issue.created_at, issue.title, labels, issue.body,issue.html_url))
     else:
         print ("UPDATE id %d" % (issue.id))
-        cur.execute("UPDATE issues SET updated_at = ?, title = ?, labels = ?, body = ?, url = ? WHERE id = ?", (issue.updated_at, issue.title, labels, issue.body, issue.html_url, issue.id))
+        cur.execute("UPDATE issues SET updated_at = ?, created_at = ?, title = ?, labels = ?, body = ?, url = ? WHERE id = ?", (issue.updated_at, issue.created_at, issue.title, labels, issue.body, issue.html_url, issue.id))
 
 conn.commit()
 
-cur.execute("SELECT id, updated_at, title, labels, body, url FROM ISSUES ORDER BY updated_at;")
-csvwriter.writerow(("url","id","updated_at","title","labels","lat","lon","data","body"))
+cur.execute("SELECT id, updated_at, created_at, title, labels, body, url FROM ISSUES ORDER BY updated_at;")
+csvwriter.writerow(("url","id","updated_at","created_at","title","labels","image","lat","lon","data","body"))
 
 for row in cur.fetchall():
         try:
-            tree=html.fromstring(row[4])
+            tree=html.fromstring(row['body'])
             dataRaw=tree.xpath("//data/text()")
             dataStr=dataRaw[0] if len(dataRaw) > 0 else None
 
@@ -83,11 +85,11 @@ for row in cur.fetchall():
             yamldataStr = None
 
 
-        title=row[2]
+        title=row['title']
         if title is not None:
             title=title.encode('utf-8')
 
-        labels=row[3]
+        labels=row['labels']
         if labels is not None:
             labels=labels.encode('utf-8')
 
@@ -97,6 +99,7 @@ for row in cur.fetchall():
         data=None
         lat=None
         lon=None
+        image=None
 
         if dataStr:
             try:
@@ -110,6 +113,8 @@ for row in cur.fetchall():
                     lon=data['longitude']
                 elif data.has_key("lon"):
                     lon=data['lon']
+
+                image=data['immagine']
             except:
                 pass
 
@@ -126,8 +131,10 @@ for row in cur.fetchall():
                     lon=data['longitude']
                 elif data.has_key("lon"):
                     lon=data['lon']
+
+                image=data['immagine']
             except:
                 pass
 
-        csvwriter.writerow((row[5],row[0],row[1],title,lat,lon,labels,json.dumps(data),row[4].encode('utf-8')))
+        csvwriter.writerow((row['url'],row['id'],row['updated_at'],row['created_at'],title,lat,lon,labels,image,json.dumps(data),row['body'].encode('utf-8')))
 
