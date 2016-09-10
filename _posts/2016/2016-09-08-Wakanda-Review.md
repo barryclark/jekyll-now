@@ -22,7 +22,7 @@ Learning to play Wakanda was a breeze. The rules are two pages long and are perf
 1. Place a totem piece on any available space on the board.
 2. Finish a pole by capping it with one of your Headdress pieces. Once you do this you can turn activate a village tile that’s not currently available, and it can be used on future turns.
 
-The game continues until all 6 poles are claimed. Points are scored by the village tiles your poles are on, and if they’re any Sun icons on your pole (unless it’s on the Sun village tile.) Keep in mind that the villages you’ve built on score for *all* your poles, not just the one built in that village.
+The game continues until all 6 poles are claimed. Points are scored by the village tiles your poles are on, and if there are any Sun icons on your pole (unless it’s on the Sun village tile.) Keep in mind that the villages you’ve built on score for *all* your poles, not just the one built in that village.
 
 You can read the actual rule booklet by clicking the link in the Supporting Links at the bottom of this post.
 Pieces
