@@ -12,11 +12,11 @@ author: Rob Kalajian
 
 <h2>Prelude</h2>
 
-Wakanda is a game about building totem poles. Being a Blue Orange game, I expected it to be fun, easy to learn, and great with the kids. It was all three. The goal of the game is to claim 3 totes poles and have the highest value of poles at the end of the game, but the rules clear, and only take a moment to learn. Scoring is based on how your build your totem poles, and what village tiles they're built on.
+Wakanda is a game about building totem poles. Being a Blue Orange game I expected it to be fun, easy to learn, and great with the kids. It was all three. The goal of the game is to claim 3 totem poles and have the highest value of poles at the end of the game. The rules clear, and the game only take a moment to learn. Scoring is based on how your build your totem poles, and what village tiles they're built on.
 
 <h2>Play</h2>
 
-To be perfectly honest, I have no idea why we had trouble the first time we played Wakanda. The rules are two pages long, and are perfectly clear (giving them a second read). There's 6 village tiles, 3 of which are unavailable to build on at first. On your turn your draw a totem piece, then take one of the following two actions:
+Learning to play Wakanda was a breeze. The rules are two pages long, and are perfectly clear on how things are supposed to go. There's 6 village tiles, 3 of which are unavailable to build on at first. On your turn your draw a totem piece, then take one of the following two actions:
 
 1. Place a totem piece on any available space on the board.
 2. Finish a pole by capping it with one of your Headdress pieces. Once you do this you can turn activate a village tile that's not currently available, and it can be used on future turns.
@@ -27,7 +27,7 @@ You can read the actual rule booklet by clicking the link in the Supporting Link
 
 <h2>Pieces</h2>
 <img src="/images/wakanda/pieces.jpg" height="100" alt="Wakanda" class="float-left" />
-Blue Orange makes really nice games, and the wooden totem pieces and headdresses in Wakanda are really nice. The tiles are solid, and the pieces stand on them without any issues. The bag that holds the totem pieces is well made, and does't fell like it'll break any time soon.
+Blue Orange makes really nice games, and the wooden totem pieces and headdresses in Wakanda are really nice. The tiles are solid, and the pieces stand on them without any issues. The bag that holds the totem pieces is well made, and doesn't feel like it'll break any time soon.
 
 Really, I don't expect any less from Blue Orange.
 
