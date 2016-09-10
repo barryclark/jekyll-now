@@ -28,7 +28,7 @@ Abbiamo diffuso il loro appello e le iniziative a sostegno di alcune produzioni 
 
 Consorzio di tutela dei pastori dei Monti della Laga: [TransumanzaAmatrice](http://www.transumanzaamatrice.it)
 
-[Cooperativa Rinascita 78] (http://www.rinascitacoop78.it)
+[Cooperativa Rinascita 78](http://www.rinascitacoop78.it)
 
 [Caseificio Petrucci](http://www.caseificiostoricoamatrice.com)
 
