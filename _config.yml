@@ -11,7 +11,7 @@ author_gravatar:    93f5a0437a23b911591a44e88839d94a # Gravatar md5 hash
 twitter_username:   huntingmalware
 
 # Site Settings
-baseurl:            "mlwre.github.io" # Base URL must end WITHOUT a slash, default: ""
+baseurl:            "/" # Base URL must end WITHOUT a slash, default: ""
 permalink:          /notes/:title # Post permalink
 timezone:           Europe/Madrid # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
