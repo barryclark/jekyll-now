@@ -2,16 +2,29 @@
 layout: default
 ---
 
-<article class="post">
-  <h1>{{ page.title }}</h1>
+<noscript>
+	<style>
 
-  <div class="entry">
-    {{ content }}
-  </div>
+		article .footnotes {
+			display: block;
+		}
 
-  <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
-  </div>
+	</style>
+</noscript>
 
-  {% include disqus.html %}
+<article>
+
+	<div class="center">
+		<h1>{{ page.title }}</h1>
+		<time>{{ page.date | date: '%B %-d, %Y' }}</time>
+	</div>
+
+	<div class="divider"></div>
+
+	{{ content }}
+
 </article>
+
+<div class="back">
+	<a href="{{site.baseurl}}/">Back</a>
+</div>

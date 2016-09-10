@@ -1,0 +1,5 @@
+{% assign url = '/assets/static/' | append: include.file %}
+
+<a href="{{ url | prepend: site.baseurl }}" target="_blank" class="image">
+	<img src="{{ url | prepend: site.baseurl }}" alt="{% if include.alt %}{{ include.alt }}{% else %}Image{% endif %}">
+</a>
