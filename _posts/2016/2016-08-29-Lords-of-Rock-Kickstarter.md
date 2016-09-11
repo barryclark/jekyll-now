@@ -10,7 +10,7 @@ author: Rob Kalajian
 <iframe style="float:left;margin-right:10px;margin-bottom:10px;" frameborder="0" height="420" scrolling="no" src="https://www.kickstarter.com/projects/bravefrontierstudios/the-lords-of-rock/widget/card.html?v=2" width="220"></iframe>
 
 >After ruling the universe for millennia, the gods have found their power diminishing and some have faded away completely. Those remaining are forced into a battle for their very survival: War would only lead to annihilation.
-> 
+>
 > They have agreed that their battle for souls and power must be played out on the cosmic stage...
 >
 >**... and that stage only allows Rock and Roll.**
