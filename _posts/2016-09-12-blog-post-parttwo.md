@@ -4,7 +4,7 @@ title: Bear's Algorithmic Criticism
 author: bear
 ---
 
-Digital humanities is a reltively unknown profession, despite it's relatively to everyday activities. It was invented in the late 1940s by Roberto Busa who produced an automic grant into a church using a computer program. Since then, digital humanities has spread all across the world, including applications such as google and yahoo. One question that might arise, however, is how to do it.
+Digital humanities is a relatively unknown profession, despite it's relatively to everyday activities. It was invented in the late 1940s by Roberto Busa who produced an automic grant into a church using a computer program. Since then, digital humanities has spread all across the world, including applications such as google and yahoo. One question that might arise, however, is how to do it.
 
 One method is using algorithmic criticism, or using patterns in words repeated, words emphasized, and structure of sentences. 
 A reader can determine a lot from how an author uses and emphasizes certain words. For example, a person who emphasizes the word
