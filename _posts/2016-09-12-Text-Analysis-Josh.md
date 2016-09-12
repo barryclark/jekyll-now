@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Computational Text Analysis
+title: "Computational Text Analysis"
 author: Josh
 ---
 A blog post about computational text analysis
