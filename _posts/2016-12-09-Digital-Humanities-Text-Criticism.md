@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Digital Humanities?
+title: Digital Humanities Text Criticism
 author: tbusch15
 published: true
 ---
