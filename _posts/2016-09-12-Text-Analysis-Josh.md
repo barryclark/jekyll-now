@@ -8,7 +8,7 @@ author: Josh
 
 As we learned in class last week, text analyses allow people to focus on and gain insights into specific features of texts. We looked at features of several sonnets, focusing on, amongst other things, the sonnets' themes, cadence rhyme schemes, and line length. We were able to investigate and visualize these features without the aide of computers. But, there are limits to humans' capacity to analyze text. While we may be able to delve into sonnets on our own, analyzing an entire body or works without the aid of computers would be a serious undertaking.
 
-### Algorithmic Text analysis
+### Algorithmic Text Analysis
 
 Prior to the advent of the computer, analyses of text were limited by the capacities of the individuals conducting said analyses. The shift toward computational text analysis began with Roberto Busa who, in partnership with the founder of IBM, set out to index the entire body of St. Thomas Aquinas' works. The project, which took 30 years to complete, opened the door for computational text analysis within the humanities (Bonzio, 2011; Schreibman & Siemens, 2008).
 
