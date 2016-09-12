@@ -55,7 +55,7 @@ filter_labels=[r.get_label(l) for l in FILTER_LABELS]
 
 issues=r.get_issues(since=lastTime,labels=filter_labels)
 
-csvwriter.writerow(("url","id","updated_at","created_at","title","labels","milestone","image","lat","lon","data","body"))
+csvwriter.writerow(("url","id","updated_at","created_at","title","lat","lon","labels","milestone","image","data","body"))
 
 for issue in issues:
     labels = json.dumps([l.name for l in issue.labels])
