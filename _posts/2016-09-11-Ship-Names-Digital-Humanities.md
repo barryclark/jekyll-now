@@ -2,7 +2,7 @@
 layout: post
 title: Ship Names: Digital Humanitites?
 author: enunez2
-publish: false
+publish: true
 ---
 
 This post like a lucky three leaf clover comes to you in three parts.
@@ -18,11 +18,14 @@ This post like a lucky three leaf clover comes to you in three parts.
   Overlap: Occurs when names have an overlapping common sound, but one of the sounds overrides the other.
   Examples:  Grindelwald and Dumbledore becomes Grindeldore (or Dumblewald) with the over lapping "I" sound. Rumbelle is a near overlap with the "bl-" from Belle evoking the "pl-" from Rumplestiltskin. Ruffy or Briley comes from Riley and Buffy which uses the same ending sound to overlap the names.
  
-  Stress Match:
+  Stress Match: Occurs syllables in the ship name keep their original stress, in order to make the link between the original name and the ship name as obvious as possible.
+  Examples: In Johnlock, John is a monosyllable so it is automatically stressed it can automatically be substituted for the stressed Sher- in Sherlock. Teh same logic applies to Merther from  Merlin and Arthur.
   
-  Onset Conservation: 
+  Onset Conservation: Decides which name comes first. The first set of consonants are usually chosen to mash with the second contender of the ship name.
+  Examples: Draco ship names are Drarry, Dramione, and Drapple. Snape ship names are Snarry, Snamione, Snumbledore, and Snack.
 
-  Orthographic Transparency:
+  Orthographic Transparency: Occurs when one split up of the names works better than the other becsude it follows the original name pronunciation.
+  Examples: The difference between Garry, and Hinny, (Harry/Ginny) is that Garry makes the "g" sounf in Ginny to a hard "g" whereas Hinny keeps teh soft sound.
 
   Lexical Neighbourhood Evaluation: Occurs when other words sound close to the ship name.
   Examples: Pepper's and Tony's ship name is Pepperony which sounds like pepperoni.
@@ -31,6 +34,8 @@ This post like a lucky three leaf clover comes to you in three parts.
   Examples: SwanQueen is Emma and Evil Queen Regina Mills ship name. Tony Stark, Steve Rogers, and Bruce Banner become Star-Spangled Banner.
 
 ##Part 3: This is digital Humanitites?
+
+Yes this is digital humanities. It was discussed earlier that digital humanities is how we inact with another through technology. By studying how fan culture uses ship names, we are studying how this specific sec of humanity commucates their emotional feelings with one another about characters. And if you want to fight me on the digital aspect of said communication then I suggest you take a look at Tumblr. 
 
 Source
 
