@@ -21,4 +21,4 @@ If you hadn't noticed already humans are ever evolving. We are constantly coming
 
 Sources:
 
-https://en.wikipedia.org/wiki/Digital_humanities
+"Digital Humanities." Wikipedia. Wikimedia Foundation, n.d. Web. 06 Sept. 2016. <https://en.wikipedia.org/wiki/Digital_humanities>.
