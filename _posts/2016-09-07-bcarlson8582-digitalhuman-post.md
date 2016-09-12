@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Defining digital humanities"
-author: Bear Carlson
+author: bear
 ---
 
 History and research methods have been changing drastically, especially since the start of the industrial revolution when data
