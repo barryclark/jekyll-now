@@ -1,3 +1,9 @@
+---
+layout: post
+title: "Denis's Introduction to the Digital Humanities"
+author: dkomarovo
+---
+
 In the attempt to introduce oneself to the subject of Digital Humanities, it is essential to understand that DH is the fusion of the 
 collective human culture, and computing technologies. Examples of this combination are found in the study of infographics, data analysis, 
 pure research, applied research, etc. Why are the digital humanities important? Because being fluent and skilled in computer technologies 
