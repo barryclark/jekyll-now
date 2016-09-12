@@ -2,7 +2,6 @@
 layout: post
 title: Digital Humanities Text Criticism
 author: tbusch15
-published: true
 ---
 
 Digital Humanities can point both to a founder and to a moment of creation. The founding moment of creation for Roberto Busa was the radically transformation, reordered, disassembled and reassembled version of one of the world's most influential philosophies. 
