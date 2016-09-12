@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>accent - Articles</title>
+    <description>accent is, as Trump would put it, the best
+</description>
+    <link>
+    http://ankitsultana.me/blog</link>
+    
+      
+      <item>
+        <title>Features</title>
+        
+          <description>&lt;p&gt;This is &lt;span class=&quot;capsule&quot;&gt;accent&lt;/span&gt; a minimal, mobile friendly theme for &lt;span class=&quot;capsule&quot;&gt;Jekyll&lt;/span&gt;&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Thu, 11 Feb 2016 00:00:00 +0530</pubDate>
+        <link>
+        http://ankitsultana.me/blog/features.html</link>
+        <guid isPermaLink="true">http://ankitsultana.me/blog/features.html</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Documentation</title>
+        
+          <description>&lt;h3 id=&quot;installation&quot;&gt;Installation&lt;/h3&gt;
+
+</description>
+        
+        <pubDate>Thu, 11 Feb 2016 00:00:00 +0530</pubDate>
+        <link>
+        http://ankitsultana.me/blog/documentation.html</link>
+        <guid isPermaLink="true">http://ankitsultana.me/blog/documentation.html</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Welcome To Jekyll</title>
+        
+          <description>&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Wed, 10 Feb 2016 00:00:00 +0530</pubDate>
+        <link>
+        http://ankitsultana.me/blog/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">http://ankitsultana.me/blog/welcome-to-jekyll.html</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Testing</title>
+        
+          <description>&lt;h1 id=&quot;header-1&quot;&gt;Header 1&lt;/h1&gt;
+
+</description>
+        
+        <pubDate>Wed, 10 Feb 2016 00:00:00 +0530</pubDate>
+        <link>
+        http://ankitsultana.me/blog/testing.html</link>
+        <guid isPermaLink="true">http://ankitsultana.me/blog/testing.html</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Guest Posts</title>
+        
+          <description>&lt;p&gt;Chaplin has support for guest posts. That means that if you were to have another blogger write on your blog, just edit the &lt;code class=&quot;highlighter-rouge&quot;&gt;YAML&lt;/code&gt; front matter like so:&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Wed, 10 Feb 2016 00:00:00 +0530</pubDate>
+        <link>
+        http://ankitsultana.me/blog/guest-posts.html</link>
+        <guid isPermaLink="true">http://ankitsultana.me/blog/guest-posts.html</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Example Content</title>
+        
+          <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ullamcorper est in imperdiet molestie. Curabitur aliquet sem in ante venenatis.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Wed, 10 Feb 2016 00:00:00 +0530</pubDate>
+        <link>
+        http://ankitsultana.me/blog/example-content.html</link>
+        <guid isPermaLink="true">http://ankitsultana.me/blog/example-content.html</guid>
+      </item>
+      
+    
+  </channel>
+</rss>
