@@ -19,10 +19,10 @@ try:
     REPO_NAME=config.get('GitHub','REPO_NAME')
     ORG=config.get('GitHub','ORG')
 except:
-    TOKEN=os.environ.get('GH_TOKEN')
-    USER=os.environ.get('GitHub','GH_USER')
-    REPO_NAME=os.environ.get('GitHub','GH_REPO_NAME')
-    ORG=os.environ.get('GitHub','GH_ORG')
+    TOKEN=os.environ.get('GITHUB_PASSWORD')
+    USER=os.environ.get('GITHUB_USERNAME')
+    REPO_NAME='terremotocentro_segnalazioni'
+    ORG='emergenzeHack'
 
 if not TOKEN:
     print "Need a TOKEN"
