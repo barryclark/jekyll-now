@@ -6,22 +6,44 @@ from lxml import html
 import json
 import yaml
 import ConfigParser 
+import os
 
-config=ConfigParser.RawConfigParser()
-config.read('.github.cfg')
+FILTER_LABELS=("Accettato",)
 
-TOKEN=config.get('GitHub','TOKEN')
-USER=config.get('GitHub','USER')
-REPO_NAME=config.get('GitHub','REPO_NAME')
-ORG=config.get('GitHub','ORG')
+try:
+    config=ConfigParser.RawConfigParser()
+    config.read('.github.cfg')
 
-DBNAME="issuesDB.db"
+    TOKEN=config.get('GitHub','TOKEN')
+    USER=config.get('GitHub','USER')
+    REPO_NAME=config.get('GitHub','REPO_NAME')
+    ORG=config.get('GitHub','ORG')
+except:
+    TOKEN=os.environ.get('GH_TOKEN')
+    USER=os.environ.get('GitHub','GH_USER')
+    REPO_NAME=os.environ.get('GitHub','GH_REPO_NAME')
+    ORG=os.environ.get('GitHub','GH_ORG')
+
+if not TOKEN:
+    print "Need a TOKEN"
+    sys.exit(1)
+
+if not USER:
+    print "Need a USER"
+    sys.exit(1)
+
+if not REPO_NAME:
+    print "Need a REPO_NAME"
+    sys.exit(1)
+
+if not ORG:
+    print "Need a ORG"
+    sys.exit(1)
 
 CSVFILE=sys.argv[1]
 
 wr=file(CSVFILE,"w+")
 csvwriter=csv.writer(wr)
-
 
 lastTime = datetime.datetime(2000,1,1)
 
@@ -29,9 +51,11 @@ g = Github(USER, TOKEN)
 org=g.get_organization(ORG)
 r = org.get_repo(REPO_NAME)
 
-issues=r.get_issues(since=lastTime)
+filter_labels=[r.get_label(l) for l in FILTER_LABELS]
 
-csvwriter.writerow(("url","id","updated_at","created_at","title","labels","image","lat","lon","data","body"))
+issues=r.get_issues(since=lastTime,labels=filter_labels)
+
+csvwriter.writerow(("url","id","updated_at","created_at","title","labels","milestone","image","lat","lon","data","body"))
 
 for issue in issues:
     labels = json.dumps([l.name for l in issue.labels])
@@ -78,5 +102,5 @@ for issue in issues:
 
     labels=labels.encode('utf-8')
 
-    csvwriter.writerow((issue.html_url,issue.id,issue.updated_at,issue.created_at,title,lat,lon,labels,image,json.dumps(data),issue.body.encode('utf-8')))
+    csvwriter.writerow((issue.html_url,issue.id,issue.updated_at,issue.created_at,title,lat,lon,labels,issue.milestone,image,json.dumps(data),issue.body.encode('utf-8')))
 
