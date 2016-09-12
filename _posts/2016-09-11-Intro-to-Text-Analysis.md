@@ -2,7 +2,6 @@
 layout: post
 title: Intro to Text Analysis
 author: jescasa1
-published: true
 ---
 
 “What do you do with a million books?” –Gregory Crane, 2006
