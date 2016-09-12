@@ -6,7 +6,7 @@
   <title>{% if page.url == '/' %}{{ page.title }}{% else %}{{ page.title }} | {{ site.title }}{% endif %}</title>
 
   <meta name="author" content="{{ site.author.name }}" />
-  
+
   {% if page.subtitle %}
   <meta name="description" content="{{ page.subtitle }}">
   {% endif %}
@@ -18,19 +18,19 @@
   {% else %}
   <link rel="canonical" href="{{ site.url }}{{ page.url | remove: '/index.html' | remove: '.html' }}"/>
   {% endif %}
-  
+
   {% if layout.common-ext-css %}
     {% for css in layout.common-ext-css %}
       <link rel="stylesheet" href="{{ css }}" />
     {% endfor %}
-  {% endif %}    
-  
+  {% endif %}
+
   {% if layout.common-css %}
     {% for css in layout.common-css %}
       <link rel="stylesheet" href="{{ css | prepend: site.baseurl | replace: '//', '/' }}" />
     {% endfor %}
-  {% endif %}  
-  
+  {% endif %}
+
   {% if layout.common-googlefonts %}
     {% for font in layout.common-googlefonts %}
       <link rel="stylesheet" href="//fonts.googleapis.com/css?family={{ font }}" />
@@ -41,8 +41,8 @@
     {% for css in page.ext-css %}
       <link rel="stylesheet" href="{{ css }}" />
     {% endfor %}
-  {% endif %}  
-  
+  {% endif %}
+
   {% if page.css %}
     {% for css in page.css %}
       <link rel="stylesheet" href="{{ css | prepend: site.baseurl | replace: '//', '/' }}" />
@@ -72,7 +72,7 @@
   {% else %}
   <meta property="og:image" content="" />
   {% endif %}
-  
+
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@terremotocentro">
 <meta name="twitter:creator" content="@terremotocentro">
@@ -90,7 +90,7 @@
   <meta name="twitter:description" content="{{ site.description }}">
 {% endif %}
   <meta name="twitter:image:src" content="http://terremotocentroitalia.info/images/noun_8681.png">
-  
+
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
 <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
@@ -101,4 +101,5 @@
 <meta name="theme-color" content="#ffffff">
 <script type="text/javascript"
         src="/js/cookie.js"></script>
+
 </head>

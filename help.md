@@ -3,9 +3,18 @@ layout: page
 title: Segnala
 permalink: /aiuto/
 ---
+
 <div class="segnala">
 <p>Se hai una necessità o vuoi comunicare aggiornamenti, ci sono numerosi modi di contattarci: </p>
- {% if site.author.facebook and site.footer-links-active.facebook %}
+        <li>
+          <a href="https://terremotocentroitalia.herokuapp.com/segnalazioni/" title="Form di segnalazione">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-external-link fa-stack-1x fa-inverse"></i>
+            </span>&nbsp;&nbsp;Form
+          </a>per inviare una segnalazione da monitorare ai nostri sistemi.
+        </li>
+        {% if site.author.facebook and site.footer-links-active.facebook %}
           <li>
             <a href="https://www.facebook.com/{{ site.author.facebook }}" title="Facebook">
               <span class="fa-stack fa-lg">
@@ -44,10 +53,10 @@ permalink: /aiuto/
               <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
-              </span>&nbsp;&nbsp;Email 
+              </span>&nbsp;&nbsp;Email
             </a>per segnalare contenuti da rimuovere
           </li>
-          
+
 <p>Tutto ciò che ci mandi sarà gestito dal nostro team, che provvederà alla pubblicazione sul sito appena possibile.</p>
 
 </div>
