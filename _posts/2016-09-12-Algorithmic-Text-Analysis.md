@@ -1,3 +1,8 @@
+---
+layout: post
+title: "Algorithmic text analysis"
+author: dkomarovo
+---
 Digital Humanities collaborates with mathematics to conduct the process of algorithmic text analysis. It does so in order to
 be capable of understanding the hidden elements of a given text. This is achieved via the implementation of mathematics, to obtain 
 new evidence for sophisticated argumentation. Using algorithms, literature can be observed through an entirely different lens.
