@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/225,176776130,2016-09-13 23:24:36,2016-09-13 23:23:59,Associazione L'Aquila in Comune,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": ""CCRTIT2T84A"", ""causale"": ""Terremoto Centro Italia"", ""chi"": ""Associazione L'Aquila in Comune"", ""data"": ""13/09/2016"", ""descrizione"": """", ""email"": """", ""iban"": ""IT22Y0501803200000000141992"", ""intestazione"": """", ""link"": ""http://www.3e32.org/?p=8978"", ""postale"": """"}","<pre><yamldata>chi: 'Associazione L''Aquila in Comune'
+descrizione: ''
+intestazione: ''
+iban: IT22Y0501803200000000141992
+bic: CCRTIT2T84A
+postale: ''
+causale: 'Terremoto Centro Italia'
+link: 'http://www.3e32.org/?p=8978'
+email: ''
+data: 13/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/194,176764828,2016-09-13 22:17:31,2016-09-13 22:17:00,Caritas di Parma,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Terremoto Centro Italia"", ""chi"": ""Caritas di Parma"", ""data"": ""13/09/2016"", ""descrizione"": ""Le offerte potranno essere portate direttamente negli uffici della sede della Caritas diocesana (Pazza Duomo 3) (fonte: Gazzetta di Parma, 25/08/2016, pag. 7)"", ""email"": """", ""iban"": ""IT88G 06230 12700 000037249796"", ""intestazione"": """", ""link"": """", ""postale"": """"}","<pre><yamldata>chi: 'Caritas di Parma'
 descrizione: 'Le offerte potranno essere portate direttamente negli uffici della sede della Caritas diocesana (Pazza Duomo 3) (fonte: Gazzetta di Parma, 25/08/2016, pag. 7)'
 intestazione: ''
