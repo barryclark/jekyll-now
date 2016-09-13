@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/193,176764273,2016-09-13 22:14:33,2016-09-13 22:13:57,Caritas Bergamo,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Terremoto Centro Italia"", ""chi"": ""Caritas Bergamo"", ""data"": ""13/09/2016"", ""descrizione"": ""Il contributo \u00e8 possibile anche mediante offerte consegnate direttamente alla sede della Caritas diocesana bergamasca in via del Conventino 8 a Bergamo (da luned\u00ec a venerd\u00ec dalle 9 alle 12,30 e dalle 14,30 alle 18). (fonte: Eco di Bergamo, 25/08/2016, pag. 10)"", ""email"": """", ""iban"": ""IT69E 05034 11105 000000006330"", ""intestazione"": ""\""Caritas diocesana bergamasca - Via Conventino, 8 - 24125 Bergamo , presso Credito Bergamasco - Filiale Bergamo Malpensata \"""", ""link"": """", ""postale"": ""11662244""}","<pre><yamldata>chi: 'Caritas Bergamo'
+descrizione: 'Il contributo è possibile anche mediante offerte consegnate direttamente alla sede della Caritas diocesana bergamasca in via del Conventino 8 a Bergamo (da lunedì a venerdì dalle 9 alle 12,30 e dalle 14,30 alle 18). (fonte: Eco di Bergamo, 25/08/2016, pag. 10)'
+intestazione: '""Caritas diocesana bergamasca - Via Conventino, 8 - 24125 Bergamo , presso Credito Bergamasco - Filiale Bergamo Malpensata ""'
+iban: 'IT69E 05034 11105 000000006330'
+bic: ''
+postale: '11662244'
+causale: 'Terremoto Centro Italia'
+link: ''
+email: ''
+data: 13/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/192,176763246,2016-09-13 22:08:46,2016-09-13 22:08:22,Avviso Pubblico - Enti locali e Regioni per la formazione civile contro le mafie,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Avviso Pubblico - Enti locali e Regioni per la formazione civile contro le mafie"", ""data"": ""13/09/2016"", ""descrizione"": """", ""email"": """", ""iban"": ""IT73H 05018 02800 000000131720, presso Banca Etica - Filiale di Firenze"", ""intestazione"": """", ""link"": ""http://www.avvisopubblico.it/home/terremoto-in-centro-italia-avviso-pubblico-lancia-campagna-di-raccolta-fondi-e-altre-forme-di-sostegno/"", ""postale"": """"}","<pre><yamldata>chi: 'Avviso Pubblico - Enti locali e Regioni per la formazione civile contro le mafie'
 descrizione: ''
 intestazione: ''
