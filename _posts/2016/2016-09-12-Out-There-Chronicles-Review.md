@@ -24,7 +24,8 @@ Out There Chronicles, while sometimes a bit linear, doesn't hold your hand. Ther
 
 It's a laid back experience where the story is first and foremost a part of the game. Different choices will lead to different outcomes and will always have a great bit of fiction to go along with them. Watching events unfold around you is satisfying.
 
-<img src="/images/outtherechronicles/screen.png" width="300" alt="Cover" class="float-right" /><h2>Pixels</h2>
+<img src="/images/outtherechronicles/screen.png" width="300" alt="Cover" class="float-right" />
+<h2>Pixels</h2>
 
 The artwork in Out There Chronicles is fantastic. All the illustrations are done by renowned artist Benjamin Carré, a man known for his work in science fiction. Siddhartha Barnhoorn provides the haunting music that accompanies the story and helps give emotion to the various scenes in the game.
 
