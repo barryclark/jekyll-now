@@ -54,7 +54,7 @@ The most compelling "feature" of wicked though is not what the software can do, 
 
 The rest of the things Wicked "solves" are the normal use cases solved by most any API Gateway, and, as already pointed out, this is done by leveraging the already existing Kong API Gateway (we mentioned we really like Kong, right?).
 
-By really enforcing everything to be in code (no long running processes are needed), it is possible to completely adapt the deployment model of your API Management system to the way you work, and not the other way around. You deploy from code only, and this means you are free to version your code as you like it, or, as it suits your needs best.
+By really enforcing everything to be in "code", e.g. in a git repository, it is possible to completely adapt the deployment model of your API Management system to the way you work, and not the other way around. You deploy from configuration-as-code (from your code repository), and this means you are free to version your code as you like it, or, as it suits your needs best.
 
 The documentation of Wicked contains a more thorough discussion of possible [configuration versioning strategies](https://github.com/Haufe-Lexware/wicked.haufe.io/blob/master/doc/versioning-strategies.md).
 
@@ -90,7 +90,7 @@ Each box in this diagram depicts (at least) one Docker container, so this is the
 The other components are built as follows:
 
 * **HAProxy**: In front of both the Portal and the Gateway sits a Docker HAProxy container which distributes and load balances the incoming requests; this component is using the official `docker-haproxy` implementation which also Docker Swarm is using.
-* **Portal Components**: All Portal components (the UI/the actual portal parts) are implemented using node.js, more specifically using the following standard frameworks:
+* **Portal Components**: All Portal components (the UI/the actual portal parts) are implemented using node.js, more specifically using (among others) the following standard frameworks:
     * Express
     * Jade/Pug for HTML templating
 * **Kong**: The API Gateway is a plain vanilla Mashape Kong docker image. We did not have to make any changes at all to the Kong source code; we are really using Kong "as-is", which was what we had hoped for, to make upgrading scenarios as simple as possible
@@ -121,10 +121,16 @@ There are many other major and minor ideas flying around, and in the course of t
 
 ### How can you get involved?
 
-As already stated: Wicked is totally open source, and you are perfectly free to participate in developing it, or even just in giving feedback on what you would like to see in it.
+As already stated: Wicked is totally open source, and you are perfectly free to participate in developing it, or even just in giving feedback on what you would like to see in it. We have published the source code under the very permissive Apache 2.0 license.
 
 We are currently building/finishing the first version of the documentation, which includes instructions on how to build the API Portal on your local machine, so that you can get started quickly. A good starting point for reading up on technical details is the main Github page: [github.com/Haufe-Lexware/wicked.haufe.io](https://github.com/Haufe-Lexware/wicked.haufe.io) or the [documentation index page](https://github.com/Haufe-Lexware/wicked.haufe.io/blob/master/doc/index.md). There you will also find further information on how to get involved.
 
 We do hope you like what we have to offer and consider having a peek and test drive of [wicked.haufe.io](http_//wicked.haufe.io).
 
 Cheers, Martin 
+
+### Links
+
+* [wicked.haufe.io](http://wicked.haufe.io) - The wicked.haufe.io micro site
+* [github/wicked.haufe.io](https://github.com/Haufe-Lexware/wicked.haufe.io) - The main GitHub repository for Wicked, containing all the documentation and further links to the other components
+* [github/wicked.haufe.io/doc](https://github.com/Haufe-Lexware/wicked.haufe.io/blob/master/doc/index.md) - The documentation index for Wicked.
