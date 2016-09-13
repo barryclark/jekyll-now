@@ -24,7 +24,7 @@ So, why did we (in parts) roll our own? This blog post will try to shed some add
 
 * **API Gateway**: Leveraging Mashape Kong, Wicked delivers a powerful API Gateway you can use to secure your APIs behind
 * **API Self Service**: Using the Portal, Developers can sign up for using your APIs themselves; they will be provisioned API Keys/OAuth Credentials they can use to access the APIs via the API Gateway (i.e., Kong)
-* **API Documentation**: Inside the API Portal, you may document your APIs using OpenAPI Spec (aka "Swagger"), and this documemtation is automatically served using a hosted Swagger UI distribution inside the API Portal
+* **API Documentation**: Inside the API Portal, you may document your APIs using OpenAPI Spec (aka "Swagger"), and this documentation is automatically served using a hosted Swagger UI distribution inside the API Portal
 * **Additional Documentation**: In addition to OpenAPI Specs, you may add additional markdown or HTML content to the portal which is automatically served and secured (if desired)
 
 A more extensive list of features can be found here: [wicked.haufe.io/features](http://wicked.haufe.io/features.html).
