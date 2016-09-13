@@ -164,6 +164,17 @@ link: 'http://www.acli.it/le-notizie/news-nazionali/11048-terremoto-centro-itali
 email: ''
 data: 13/09/2016
 </yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/208,176773784,2016-09-13 23:27:27,2016-09-13 23:09:38,Comune di Livorno,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Terremotati Centro Italia"", ""chi"": ""Comune di Livorno"", ""data"": ""13/09/2016"", ""descrizione"": """", ""email"": """", ""iban"": ""IT94Y 05034 13917 000000000774"", ""intestazione"": ""Comune di Livorno"", ""link"": ""http://www.comune.livorno.it/_nuovo_notiziario/it/default/26445/Terremoto-raccolta-fondi-a-favore-delle-comunit-colpite.html"", ""postale"": """"}","<pre><yamldata>chi: 'Comune di Livorno'
+descrizione: ''
+intestazione: 'Comune di Livorno'
+iban: 'IT94Y 05034 13917 000000000774'
+bic: ''
+postale: ''
+causale: 'Terremotati Centro Italia'
+link: 'http://www.comune.livorno.it/_nuovo_notiziario/it/default/26445/Terremoto-raccolta-fondi-a-favore-delle-comunit-colpite.html'
+email: ''
+data: 13/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/203,176772941,2016-09-13 23:27:06,2016-09-13 23:03:57,Roma Capitale,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": ""UNCRITMM"", ""causale"": ""Roma adotta Amatrice"", ""chi"": ""Roma Capitale"", ""data"": ""13/09/2016"", ""descrizione"": """", ""email"": """", ""iban"": ""IT 94 F 02008 05117 000104430239"", ""intestazione"": """", ""link"": ""http://www.comune.roma.it/pcr/it/newsview.page?contentId=NEW1169363"", ""postale"": """"}","<pre><yamldata>chi: 'Roma Capitale'
 descrizione: ''
 intestazione: ''
