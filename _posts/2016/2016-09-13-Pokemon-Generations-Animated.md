@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Pokémon Generations Series Comig to  YouTube"
+title: "Pokémon Generations Series Coming to YouTube"
 description: "Pokémon Generations will be 18 episodes each running between 3 and 5 minutes in length, with the first two episodes launching September 16."
 category: other
 featured: generations.jpg
