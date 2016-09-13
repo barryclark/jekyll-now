@@ -175,6 +175,17 @@ link: 'http://www.comune.livorno.it/_nuovo_notiziario/it/default/26445/Terremoto
 email: ''
 data: 13/09/2016
 </yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/207,176773622,2016-09-13 23:27:36,2016-09-13 23:08:40,evangelici.net,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""evangelici.net"", ""data"": ""13/09/2016"", ""descrizione"": """", ""email"": """", ""iban"": ""\""IT70W 07601 14100 000019729508 e IT31M 02008 05212 000103472647\"""", ""intestazione"": ""Fondo Emergenze Umanitarie \u2013 Ente Morale (Opera delle Chiese Cristiane dei Fratelli) - Emergenza Terremoto Centro\u2013Italia (2016)"", ""link"": ""http://www.evangelici.net/notizie/1472230681.html"", ""postale"": """"}","<pre><yamldata>chi: evangelici.net
+descrizione: ''
+intestazione: 'Fondo Emergenze Umanitarie – Ente Morale (Opera delle Chiese Cristiane dei Fratelli) - Emergenza Terremoto Centro–Italia (2016)'
+iban: '""IT70W 07601 14100 000019729508 e IT31M 02008 05212 000103472647""'
+bic: ''
+postale: ''
+causale: ''
+link: 'http://www.evangelici.net/notizie/1472230681.html'
+email: ''
+data: 13/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/203,176772941,2016-09-13 23:27:06,2016-09-13 23:03:57,Roma Capitale,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": ""UNCRITMM"", ""causale"": ""Roma adotta Amatrice"", ""chi"": ""Roma Capitale"", ""data"": ""13/09/2016"", ""descrizione"": """", ""email"": """", ""iban"": ""IT 94 F 02008 05117 000104430239"", ""intestazione"": """", ""link"": ""http://www.comune.roma.it/pcr/it/newsview.page?contentId=NEW1169363"", ""postale"": """"}","<pre><yamldata>chi: 'Roma Capitale'
 descrizione: ''
 intestazione: ''
