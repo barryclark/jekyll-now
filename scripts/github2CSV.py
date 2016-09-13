@@ -102,5 +102,5 @@ for issue in issues:
 
     labels=labels.encode('utf-8')
 
-    csvwriter.writerow((issue.html_url,issue.id,issue.updated_at,issue.created_at,title,lat,lon,labels,issue.milestone,image,json.dumps(data),issue.body.encode('utf-8')))
+    csvwriter.writerow((issue.html_url,issue.id,issue.updated_at,issue.created_at,title,lat,lon,labels,issue.milestone,image,json.dumps(data,sort_keys=True),issue.body.encode('utf-8')))
 
