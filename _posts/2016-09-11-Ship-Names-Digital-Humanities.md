@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ship Names: Digital Humanitites?
+title: "Ship Names: Digital Humanitites?"
 author: enunez2
 publish: true
 ---
