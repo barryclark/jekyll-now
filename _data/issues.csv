@@ -153,6 +153,17 @@ link: 'http://italianamericanrelief.org'
 email: ''
 data: 13/09/2016
 </yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/209,176773867,2016-09-13 23:27:13,2016-09-13 23:10:08,ACLI,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Emergenza terremoto centro Italia"", ""chi"": ""ACLI"", ""data"": ""13/09/2016"", ""descrizione"": """", ""email"": """", ""iban"": ""IT91F 03359 01600 1000001455522"", ""intestazione"": """", ""link"": ""http://www.acli.it/le-notizie/news-nazionali/11048-terremoto-centro-italia-casacli-offre-ospitalita-alle-vittime-del-sisma#ixzz4ISSo4gdn"", ""postale"": """"}","<pre><yamldata>chi: ACLI
+descrizione: ''
+intestazione: ''
+iban: 'IT91F 03359 01600 1000001455522'
+bic: ''
+postale: ''
+causale: 'Emergenza terremoto centro Italia'
+link: 'http://www.acli.it/le-notizie/news-nazionali/11048-terremoto-centro-italia-casacli-offre-ospitalita-alle-vittime-del-sisma#ixzz4ISSo4gdn'
+email: ''
+data: 13/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/203,176772941,2016-09-13 23:27:06,2016-09-13 23:03:57,Roma Capitale,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": ""UNCRITMM"", ""causale"": ""Roma adotta Amatrice"", ""chi"": ""Roma Capitale"", ""data"": ""13/09/2016"", ""descrizione"": """", ""email"": """", ""iban"": ""IT 94 F 02008 05117 000104430239"", ""intestazione"": """", ""link"": ""http://www.comune.roma.it/pcr/it/newsview.page?contentId=NEW1169363"", ""postale"": """"}","<pre><yamldata>chi: 'Roma Capitale'
 descrizione: ''
 intestazione: ''
