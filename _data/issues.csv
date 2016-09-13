@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/185,176758797,2016-09-13 21:59:30,2016-09-13 21:46:12,Tende e sacchi a pelo per frazioni intorno ad Amatrice,42.64204079304426,13.216552734375,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Tende e sacchi a pelo per frazioni intorno ad Amatrice"", ""data"": ""13/09/2016"", ""descrizione"": ""URGENTE - Occorrono tende e sacchi a pelo per le frazioni intorno ad Amatrice. Chi ne ha me li pu\u00f2 portare tra oggi e domani per quanto riguarda Roma, senn\u00f2 a Citt\u00e0 Reale dal militare che si sta occupando della distribuzione."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Strada Statale 4 Via Salaria, Amatrice, RI, LAZ, Italia"", ""lat"": ""42.64204079304426"", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1760332610900989/"", ""lon"": ""13.216552734375"", ""tel"": """"}","<pre><yamldata>tel: ''
+email: ''
+cosa: 'Tende e sacchi a pelo per frazioni intorno ad Amatrice'
+descrizione: 'URGENTE - Occorrono tende e sacchi a pelo per le frazioni intorno ad Amatrice. Chi ne ha me li può portare tra oggi e domani per quanto riguarda Roma, sennò a Città Reale dal militare che si sta occupando della distribuzione.'
+indirizzo: 'Strada Statale 4 Via Salaria, Amatrice, RI, LAZ, Italia'
+lat: '42.64204079304426'
+lon: '13.216552734375'
+link: 'https://www.facebook.com/groups/1758670357733881/permalink/1760332610900989/'
+immagine: ''
+data: 13/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/184,176757123,2016-09-13 21:39:32,2016-09-13 21:39:04,Caritas Ambrosiana Onlus - Via S.Bernardino 4 - 20122 Milano,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Caritas Ambrosiana Onlus - Via S.Bernardino 4 - 20122 Milano"", ""data"": ""13/09/2016"", ""descrizione"": """", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""http://caritasambrosiana.it/area-per-la-stampa/approfondimenti-area-per-la-stampa/terremoto-centro-italia-dona-ora"", ""postale"": ""13576228""}","<pre><yamldata>chi: 'Caritas Ambrosiana Onlus - Via S.Bernardino 4 - 20122 Milano'
 descrizione: ''
 intestazione: ''
