@@ -1,3 +1,8 @@
+---
+layout: page
+title: Note Legali
+permalink: /legal_segnalazioni/
+---
  
 Informativa art. 13, d. lgs 196/2003
 I dati personali (ivi compresi quelli di eventuali soggetti minorenni) saranno trattati, con modalità manuali ed elettroniche e senza particolari criteri di elaborazione, al fine di evadere la richiesta avanzata e/o la segnalazione riportata.
