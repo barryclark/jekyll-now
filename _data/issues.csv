@@ -1,5 +1,16 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/158,176706305,2016-09-13 18:29:42,2016-09-13 17:51:34,Libri per bambini e ragazzi,,,"[""Accettato"", ""Donazioni"", ""Form""]",,,"{""descrizione"": ""Il Centro per il libro e la lettura di Roma raccoglie libri da regalare a bambini e ragazzi (fino a 14 anni) colpiti dal sisma. I libri possono essere donati a mano o spediti al Centro. Sulla busta busta scrivere \""Dono di libri \u2013 Terremoto 2016\"". Via Pasquale Stanislao Mancini 20, 00196 Roma"", ""lon"": """", ""indirizzo"": """", ""data"": ""13/09/2016"", ""email"": ""c-ll@beniculturali.it"", ""lat"": """", ""link"": ""http://www.comunicareilsociale.it/raccolta-libri-bambini-ragazzi-0-14/"", ""cosa"": ""Libri per bambini e ragazzi"", ""immagine"": """", ""tel"": ""06.68408936""}","<pre><yamldata>tel: '06.68408936'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/159,176716445,2016-09-13 18:38:17,2016-09-13 18:37:18,Protezione Civile,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""postale"": """", ""email"": ""manfrin1997@gmail.com"", ""causale"": ""Emergenza Terremoto Centro Italia"", ""link"": ""http://www.protezionecivile.gov.it/jcms/it/donazioni_denaro_sisma_2016.wp"", ""intestazione"": ""PRES.CONS.MINISTRI DIP.PROT.CIVILE - VIA ULPIANO 11 - 00193 - ROMA RM"", ""bic"": ""PASCITMMROM"", ""chi"": ""Protezione Civile"", ""iban"": ""IT 44 P 01030 03200 000006366341"", ""descrizione"": ""Tramite SMS o chiamata al 45500 (2\u20ac) o tramite il c/c aperto presso \""Monte dei Paschi di Siena - Filiale di Roma Via del Corso 232\"""", ""data"": ""13/09/2016""}","<pre><yamldata>chi: 'Protezione Civile'
+descrizione: 'Tramite SMS o chiamata al 45500 (2€) o tramite il c/c aperto presso ""Monte dei Paschi di Siena - Filiale di Roma Via del Corso 232""'
+intestazione: 'PRES.CONS.MINISTRI DIP.PROT.CIVILE - VIA ULPIANO 11 - 00193 - ROMA RM'
+iban: 'IT 44 P 01030 03200 000006366341'
+bic: PASCITMMROM
+postale: ''
+causale: 'Emergenza Terremoto Centro Italia'
+link: 'http://www.protezionecivile.gov.it/jcms/it/donazioni_denaro_sisma_2016.wp'
+email: manfrin1997@gmail.com
+data: 13/09/2016
+</yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/158,176706305,2016-09-13 18:29:42,2016-09-13 17:51:34,Libri per bambini e ragazzi,,,"[""Accettato"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""Libri per bambini e ragazzi"", ""email"": ""c-ll@beniculturali.it"", ""tel"": ""06.68408936"", ""link"": ""http://www.comunicareilsociale.it/raccolta-libri-bambini-ragazzi-0-14/"", ""lat"": """", ""data"": ""13/09/2016"", ""immagine"": """", ""descrizione"": ""Il Centro per il libro e la lettura di Roma raccoglie libri da regalare a bambini e ragazzi (fino a 14 anni) colpiti dal sisma. I libri possono essere donati a mano o spediti al Centro. Sulla busta busta scrivere \""Dono di libri \u2013 Terremoto 2016\"". Via Pasquale Stanislao Mancini 20, 00196 Roma"", ""lon"": """", ""indirizzo"": """"}","<pre><yamldata>tel: '06.68408936'
 email: c-ll@beniculturali.it
 cosa: 'Libri per bambini e ragazzi'
 descrizione: 'Il Centro per il libro e la lettura di Roma raccoglie libri da regalare a bambini e ragazzi (fino a 14 anni) colpiti dal sisma. I libri possono essere donati a mano o spediti al Centro. Sulla busta busta scrivere ""Dono di libri – Terremoto 2016"". Via Pasquale Stanislao Mancini 20, 00196 Roma'
@@ -15,21 +26,21 @@ descrizione: 'Mercoledì 14 settembre, alle 11, al campo san Cipriano (Protezion
 link: 'http://agensir.it/quotidiano/2016/9/12/terremoto-unitalsi-e-anp-consegnano-i-fondi-raccolti-con-scuola-solidale-allistituto-di-amatrice/'
 data: 13/09/2016
 </yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/153,176676426,2016-09-13 18:28:48,2016-09-13 15:44:10,++URGENTE++ Occorre una roulot,42.749867,13.269536,"[""Accettato"", ""Telegram""]",Milestone(number=1),,"{""data"": ""13/09/2016"", ""lon"": ""13.269536"", ""descrizione"": ""++URGENTE++ Occorre una roulotte attrezzata per Enzo, unico rimasto nel borgo di Pescara del Tronto."", ""immagine"": """", ""lat"": ""42.749867"", ""telegram_user"": """"}","<pre><yamldata>telegram_user: ''
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/153,176676426,2016-09-13 18:28:48,2016-09-13 15:44:10,++URGENTE++ Occorre una roulot,42.749867,13.269536,"[""Accettato"", ""Telegram""]",Milestone(number=1),,"{""data"": ""13/09/2016"", ""telegram_user"": """", ""immagine"": """", ""descrizione"": ""++URGENTE++ Occorre una roulotte attrezzata per Enzo, unico rimasto nel borgo di Pescara del Tronto."", ""lon"": ""13.269536"", ""lat"": ""42.749867""}","<pre><yamldata>telegram_user: ''
 descrizione: '++URGENTE++ Occorre una roulotte attrezzata per Enzo, unico rimasto nel borgo di Pescara del Tronto.'
 immagine: ''
 lat: '42.749867'
 lon: '13.269536'
 data: 13/09/2016
 </yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/152,176674007,2016-09-13 15:35:56,2016-09-13 15:34:48,PROVA campo scossa solidale,42.621783,13.30634,"[""Accettato"", ""Telegram""]",,http://i.imgur.com/ifNB7qI.jpg,"{""data"": ""13/09/2016"", ""lon"": ""13.30634"", ""descrizione"": ""PROVA campo scossa solidale"", ""immagine"": ""http://i.imgur.com/ifNB7qI.jpg"", ""lat"": ""42.621783"", ""telegram_user"": """"}","<pre><yamldata>telegram_user: ''
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/152,176674007,2016-09-13 15:35:56,2016-09-13 15:34:48,PROVA campo scossa solidale,42.621783,13.30634,"[""Accettato"", ""Telegram""]",,http://i.imgur.com/ifNB7qI.jpg,"{""data"": ""13/09/2016"", ""telegram_user"": """", ""immagine"": ""http://i.imgur.com/ifNB7qI.jpg"", ""descrizione"": ""PROVA campo scossa solidale"", ""lon"": ""13.30634"", ""lat"": ""42.621783""}","<pre><yamldata>telegram_user: ''
 descrizione: 'PROVA campo scossa solidale'
 immagine: 'http://i.imgur.com/ifNB7qI.jpg'
 lat: '42.621783'
 lon: '13.30634'
 data: 13/09/2016
 </yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/148,176622336,2016-09-13 12:18:39,2016-09-13 12:03:24,Arci Nazionale,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",Milestone(number=2),,"{""descrizione"": ""BIBLIOBUS ARCI \u2013 La Cultura per la Ricostruzione L'Arci sta cercando fondi per riempire di libri (e carburante) un autobus che porter\u00e0 cultura e momenti di distensione alle persone colpite nelle zone del terremoto del 24 Agosto scorso."", ""bic"": null, ""iban"": ""IT 36 A 0501803200 000000000041"", ""email"": null, ""causale"": ""Terremoto centro italia"", ""link"": ""https://www.produzionidalbasso.com/project/bibliobus-arci-la-cultura-per-la-ricostruzione/"", ""chi"": ""Arci Nazionale"", ""data"": ""13/09/2016"", ""postale"": null, ""intestazione"": ""Arci""}","<pre><yamldata>chi: Arci Nazionale
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/148,176622336,2016-09-13 12:18:39,2016-09-13 12:03:24,Arci Nazionale,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",Milestone(number=2),,"{""postale"": null, ""email"": null, ""causale"": ""Terremoto centro italia"", ""link"": ""https://www.produzionidalbasso.com/project/bibliobus-arci-la-cultura-per-la-ricostruzione/"", ""intestazione"": ""Arci"", ""bic"": null, ""chi"": ""Arci Nazionale"", ""iban"": ""IT 36 A 0501803200 000000000041"", ""descrizione"": ""BIBLIOBUS ARCI \u2013 La Cultura per la Ricostruzione L'Arci sta cercando fondi per riempire di libri (e carburante) un autobus che porter\u00e0 cultura e momenti di distensione alle persone colpite nelle zone del terremoto del 24 Agosto scorso."", ""data"": ""13/09/2016""}","<pre><yamldata>chi: Arci Nazionale
 descrizione: BIBLIOBUS ARCI – La Cultura per la Ricostruzione L'Arci sta cercando fondi per riempire di libri (e carburante) un autobus che porterà cultura e momenti di distensione alle persone colpite nelle zone del terremoto del 24 Agosto scorso.
 intestazione: Arci
 iban: IT 36 A 0501803200 000000000041
@@ -39,7 +50,7 @@ causale: Terremoto centro italia
 link: https://www.produzionidalbasso.com/project/bibliobus-arci-la-cultura-per-la-ricostruzione/
 email: 
 data: 13/09/2016</yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/147,176613430,2016-09-13 12:43:29,2016-09-13 11:15:37,Tenda scuola temporanea di Campogallo. 13 bambine/i della primaria,42.839213,13.331344,"[""Accettato"", ""Telegram""]",,http://i.imgur.com/EyxDLIg.jpg,"{""data"": ""13/09/2016"", ""lon"": 13.331344, ""Telegram_user"": null, ""descrizione"": ""Tenda scuola temporanea di Campogallo. 13 bambine/i della primaria"", ""immagine"": ""http://i.imgur.com/EyxDLIg.jpg"", ""lat"": 42.839213}","<pre><yamldata>Telegram_user: 
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/147,176613430,2016-09-13 12:43:29,2016-09-13 11:15:37,Tenda scuola temporanea di Campogallo. 13 bambine/i della primaria,42.839213,13.331344,"[""Accettato"", ""Telegram""]",,http://i.imgur.com/EyxDLIg.jpg,"{""data"": ""13/09/2016"", ""Telegram_user"": null, ""immagine"": ""http://i.imgur.com/EyxDLIg.jpg"", ""descrizione"": ""Tenda scuola temporanea di Campogallo. 13 bambine/i della primaria"", ""lon"": 13.331344, ""lat"": 42.839213}","<pre><yamldata>Telegram_user: 
 descrizione: Tenda scuola temporanea di Campogallo. 13 bambine/i della primaria
 immagine: http://i.imgur.com/EyxDLIg.jpg
 lat: 42.839213
