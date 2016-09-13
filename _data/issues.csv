@@ -1,15 +1,4 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/187,176759732,2016-09-13 21:52:02,2016-09-13 21:50:56,Le creative di Natale al Poggio,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Le creative di Natale al Poggio"", ""data"": ""13/09/2016"", ""descrizione"": ""Pagina Facebook dove vengono pubblicati oggetti messi in vendita con la modalit\u00e0 dell'asta dalle creative. Chi compra non paga la creativa ma dona all'ente / associazione indicata"", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""https://www.facebook.com/Creare-per-Ricostruire-1745760672344729/"", ""postale"": """"}","<pre><yamldata>chi: 'Le creative di Natale al Poggio'
-descrizione: 'Pagina Facebook dove vengono pubblicati oggetti messi in vendita con la modalità dell''asta dalle creative. Chi compra non paga la creativa ma dona all''ente / associazione indicata'
-intestazione: ''
-iban: ''
-bic: ''
-postale: ''
-causale: ''
-link: 'https://www.facebook.com/Creare-per-Ricostruire-1745760672344729/'
-email: ''
-data: 13/09/2016
-</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/184,176757123,2016-09-13 21:39:32,2016-09-13 21:39:04,Caritas Ambrosiana Onlus - Via S.Bernardino 4 - 20122 Milano,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Caritas Ambrosiana Onlus - Via S.Bernardino 4 - 20122 Milano"", ""data"": ""13/09/2016"", ""descrizione"": """", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""http://caritasambrosiana.it/area-per-la-stampa/approfondimenti-area-per-la-stampa/terremoto-centro-italia-dona-ora"", ""postale"": ""13576228""}","<pre><yamldata>chi: 'Caritas Ambrosiana Onlus - Via S.Bernardino 4 - 20122 Milano'
 descrizione: ''
 intestazione: ''
