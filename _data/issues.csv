@@ -186,6 +186,17 @@ link: 'http://www.evangelici.net/notizie/1472230681.html'
 email: ''
 data: 13/09/2016
 </yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/206,176773506,2016-09-13 23:27:44,2016-09-13 23:07:51,AVIS,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": ""BCITITMX"", ""causale"": ""Terremoto Centro Italia"", ""chi"": ""AVIS"", ""data"": ""13/09/2016"", ""descrizione"": ""Attivato c/c presso Banca Prossima - Filiale di Milano"", ""email"": """", ""iban"": ""IT21V0335901600100000065611"", ""intestazione"": ""Associazione Volontari Italiani del Sangue"", ""link"": ""http://www.avislazio.it/rientrata-lemergenza-sangue-nelle-zone-terremotate-istituita-raccolta-fondi/"", ""postale"": """"}","<pre><yamldata>chi: AVIS
+descrizione: 'Attivato c/c presso Banca Prossima - Filiale di Milano'
+intestazione: 'Associazione Volontari Italiani del Sangue'
+iban: IT21V0335901600100000065611
+bic: BCITITMX
+postale: ''
+causale: 'Terremoto Centro Italia'
+link: 'http://www.avislazio.it/rientrata-lemergenza-sangue-nelle-zone-terremotate-istituita-raccolta-fondi/'
+email: ''
+data: 13/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/203,176772941,2016-09-13 23:27:06,2016-09-13 23:03:57,Roma Capitale,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": ""UNCRITMM"", ""causale"": ""Roma adotta Amatrice"", ""chi"": ""Roma Capitale"", ""data"": ""13/09/2016"", ""descrizione"": """", ""email"": """", ""iban"": ""IT 94 F 02008 05117 000104430239"", ""intestazione"": """", ""link"": ""http://www.comune.roma.it/pcr/it/newsview.page?contentId=NEW1169363"", ""postale"": """"}","<pre><yamldata>chi: 'Roma Capitale'
 descrizione: ''
 intestazione: ''
