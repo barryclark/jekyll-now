@@ -54,6 +54,28 @@ link: 'http://www.sanminiatoalmonte.it/node/535'
 email: ''
 data: 13/09/2016
 </yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/218,176775017,2016-09-13 23:25:50,2016-09-13 23:17:30,UNITALSI Progetto Bambini,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""UNITALSI Progetto Bambini"", ""data"": ""13/09/2016"", ""descrizione"": ""\""Unitalsi Progetto Bambini presso Monte dei Paschi di Siena \"""", ""email"": """", ""iban"": ""IT08F 01030 03298 000001152663"", ""intestazione"": ""Unitalsi Progetto Bambini"", ""link"": ""http://www.corriere.it/scuola/primaria/16_agosto_26/terremoto-al-via-scuola-solidale-raccolta-fondi-bambini-amatrice-c0196278-6b66-11e6-8bdd-2a860cc068c8.shtml?refresh_ce-cp"", ""postale"": ""48019863""}","<pre><yamldata>chi: 'UNITALSI Progetto Bambini'
+descrizione: '""Unitalsi Progetto Bambini presso Monte dei Paschi di Siena ""'
+intestazione: 'Unitalsi Progetto Bambini'
+iban: 'IT08F 01030 03298 000001152663'
+bic: ''
+postale: '48019863'
+causale: ''
+link: 'http://www.corriere.it/scuola/primaria/16_agosto_26/terremoto-al-via-scuola-solidale-raccolta-fondi-bambini-amatrice-c0196278-6b66-11e6-8bdd-2a860cc068c8.shtml?refresh_ce-cp'
+email: ''
+data: 13/09/2016
+</yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/217,176774905,2016-09-13 23:25:57,2016-09-13 23:16:54,Regione Veneto,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Emergenza sisma centro Italia"", ""chi"": ""Regione Veneto"", ""data"": ""13/09/2016"", ""descrizione"": """", ""email"": """", ""iban"": ""IT33L0200802017000104429532"", ""intestazione"": """", ""link"": ""http://www.regione.veneto.it/web/guest/dettaglio-giunta-news?_spp_detailId=3049515"", ""postale"": """"}","<pre><yamldata>chi: 'Regione Veneto'
+descrizione: ''
+intestazione: ''
+iban: IT33L0200802017000104429532
+bic: ''
+postale: ''
+causale: 'Emergenza sisma centro Italia'
+link: 'http://www.regione.veneto.it/web/guest/dettaglio-giunta-news?_spp_detailId=3049515'
+email: ''
+data: 13/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/201,176772645,2016-09-13 23:25:17,2016-09-13 23:01:57,Misericordia Firenze,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Misericordia Firenze"", ""data"": ""13/09/2016"", ""descrizione"": ""Chi desidera contribuire pu\u00f2 rivolgersi direttamente presso la sede di piazza Duomo oppure nelle Sezioni di via del Sansovino, Ponte di Mezzo, Viale dei Mille e via Faentina. Attivato c/c presso ChiantiBanca - Filiale Campo di Marte"", ""email"": """", ""iban"": ""IT83C 08673 02804 035000351546"", ""intestazione"": ""Venerabile Arciconfraternita della Misericordia di Firenze"", ""link"": ""http://www.misericordia.firenze.it/News/Dettaglio/1854/Sottoscrizione-vittime-terremoto"", ""postale"": """"}","<pre><yamldata>chi: 'Misericordia Firenze'
 descrizione: 'Chi desidera contribuire può rivolgersi direttamente presso la sede di piazza Duomo oppure nelle Sezioni di via del Sansovino, Ponte di Mezzo, Viale dei Mille e via Faentina. Attivato c/c presso ChiantiBanca - Filiale Campo di Marte'
 intestazione: 'Venerabile Arciconfraternita della Misericordia di Firenze'
