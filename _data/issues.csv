@@ -54,6 +54,17 @@ link: ''
 email: ''
 data: 13/09/2016
 </yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/199,176772303,2016-09-13 23:25:28,2016-09-13 22:59:51,Caritas di Modena,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Colletta terremoto centro Italia"", ""chi"": ""Caritas di Modena"", ""data"": ""13/09/2016"", ""descrizione"": ""Conti correnti attivati presso diverse banche."", ""email"": """", ""iban"": ""\""IT25X 05034 12900 000000004682, presso Banco S. Geminiano IT89B 05387 12900 000000030436, presso Banca popolare dell'Emilia romagna IT35Z 02008 12930 000003106219, presso Unicredit IT72X 05018 024000 00000503060, presso Banca Etica \"""", ""intestazione"": """", ""link"": """", ""postale"": """"}","<pre><yamldata>chi: 'Caritas di Modena'
+descrizione: 'Conti correnti attivati presso diverse banche.'
+intestazione: ''
+iban: '""IT25X 05034 12900 000000004682, presso Banco S. Geminiano IT89B 05387 12900 000000030436, presso Banca popolare dell''Emilia romagna IT35Z 02008 12930 000003106219, presso Unicredit IT72X 05018 024000 00000503060, presso Banca Etica ""'
+bic: ''
+postale: ''
+causale: 'Colletta terremoto centro Italia'
+link: ''
+email: ''
+data: 13/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/194,176764828,2016-09-13 22:17:31,2016-09-13 22:17:00,Caritas di Parma,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Terremoto Centro Italia"", ""chi"": ""Caritas di Parma"", ""data"": ""13/09/2016"", ""descrizione"": ""Le offerte potranno essere portate direttamente negli uffici della sede della Caritas diocesana (Pazza Duomo 3) (fonte: Gazzetta di Parma, 25/08/2016, pag. 7)"", ""email"": """", ""iban"": ""IT88G 06230 12700 000037249796"", ""intestazione"": """", ""link"": """", ""postale"": """"}","<pre><yamldata>chi: 'Caritas di Parma'
 descrizione: 'Le offerte potranno essere portate direttamente negli uffici della sede della Caritas diocesana (Pazza Duomo 3) (fonte: Gazzetta di Parma, 25/08/2016, pag. 7)'
 intestazione: ''
