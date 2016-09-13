@@ -109,6 +109,28 @@ link: 'http://www.presidente.regione.umbria.it/news/-/asset_publisher/epXtRtYVn9
 email: ''
 data: 13/09/2016
 </yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/213,176774413,2016-09-13 23:26:27,2016-09-13 23:13:40,Regione Marche,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": ""BPPIITRRXXX"", ""causale"": """", ""chi"": ""Regione Marche"", ""data"": ""13/09/2016"", ""descrizione"": """", ""email"": """", ""iban"": ""IT17Y 07601 02600 001034116044"", ""intestazione"": ""Reg. Marche donaz. favore territori Marche colpiti sisma 24 agosto 2016"", ""link"": ""http://www.regione.marche.it/"", ""postale"": ""1034116044""}","<pre><yamldata>chi: 'Regione Marche'
+descrizione: ''
+intestazione: 'Reg. Marche donaz. favore territori Marche colpiti sisma 24 agosto 2016'
+iban: 'IT17Y 07601 02600 001034116044'
+bic: BPPIITRRXXX
+postale: '1034116044'
+causale: ''
+link: 'http://www.regione.marche.it/'
+email: ''
+data: 13/09/2016
+</yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/212,176774256,2016-09-13 23:26:35,2016-09-13 23:12:45,Croce Rossa di Lucca,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Croce Rossa di Lucca"", ""data"": ""13/09/2016"", ""descrizione"": ""Il cuore dell\u2019Italia scosso dall\u2019ennesimo terremoto. A cavallo tra il giorno e la notte un sisma di magnitudo 6,0 ha colpito l'area fra Lazio, Marche, Umbria e Abruzzo, con epicentro nei pressi di Accumoli e Amatrice, con le terribili conseguenze che tutti stiamo vedendo in queste ore. Eppela, in collaborazione con la Croce Rossa Italiana - Comitato di Lucca, si attiva per raccogliere fondi destinati ad aiutare le popolazioni colpite dal sisma. Tutti i fondi raccolti tramite carta di credito VISA, Mastercard e ricaricabile POSTEPAY verranno gestiti dalla CRI per il supporto alle attivit\u00e0 di soccorso presenti nelle zone colpite. Un piccolo aiuto, il nostro, destinato a chi sta vivendo ancora adesso momenti di terrore e incertezza. Un gesto di solidariet\u00e0 al quale non si pu\u00f2 rimanere indifferenti."", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""https://www.eppela.com/it/projects/9956-un-aiuto-al-centro"", ""postale"": """"}","<pre><yamldata>chi: 'Croce Rossa di Lucca'
+descrizione: 'Il cuore dell’Italia scosso dall’ennesimo terremoto. A cavallo tra il giorno e la notte un sisma di magnitudo 6,0 ha colpito l''area fra Lazio, Marche, Umbria e Abruzzo, con epicentro nei pressi di Accumoli e Amatrice, con le terribili conseguenze che tutti stiamo vedendo in queste ore. Eppela, in collaborazione con la Croce Rossa Italiana - Comitato di Lucca, si attiva per raccogliere fondi destinati ad aiutare le popolazioni colpite dal sisma. Tutti i fondi raccolti tramite carta di credito VISA, Mastercard e ricaricabile POSTEPAY verranno gestiti dalla CRI per il supporto alle attività di soccorso presenti nelle zone colpite. Un piccolo aiuto, il nostro, destinato a chi sta vivendo ancora adesso momenti di terrore e incertezza. Un gesto di solidarietà al quale non si può rimanere indifferenti.'
+intestazione: ''
+iban: ''
+bic: ''
+postale: ''
+causale: ''
+link: 'https://www.eppela.com/it/projects/9956-un-aiuto-al-centro'
+email: ''
+data: 13/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/201,176772645,2016-09-13 23:25:17,2016-09-13 23:01:57,Misericordia Firenze,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Misericordia Firenze"", ""data"": ""13/09/2016"", ""descrizione"": ""Chi desidera contribuire pu\u00f2 rivolgersi direttamente presso la sede di piazza Duomo oppure nelle Sezioni di via del Sansovino, Ponte di Mezzo, Viale dei Mille e via Faentina. Attivato c/c presso ChiantiBanca - Filiale Campo di Marte"", ""email"": """", ""iban"": ""IT83C 08673 02804 035000351546"", ""intestazione"": ""Venerabile Arciconfraternita della Misericordia di Firenze"", ""link"": ""http://www.misericordia.firenze.it/News/Dettaglio/1854/Sottoscrizione-vittime-terremoto"", ""postale"": """"}","<pre><yamldata>chi: 'Misericordia Firenze'
 descrizione: 'Chi desidera contribuire può rivolgersi direttamente presso la sede di piazza Duomo oppure nelle Sezioni di via del Sansovino, Ponte di Mezzo, Viale dei Mille e via Faentina. Attivato c/c presso ChiantiBanca - Filiale Campo di Marte'
 intestazione: 'Venerabile Arciconfraternita della Misericordia di Firenze'
@@ -315,17 +337,6 @@ bic: ''
 postale: ''
 causale: ''
 link: 'http://www.caritasitaliana.it/pls/caritasitaliana/V3_S2EW_CONSULTAZIONE.mostra_pagina?id_pagina=6558'
-email: ''
-data: 13/09/2016
-</yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/171,176722743,2016-09-13 19:01:50,2016-09-13 19:00:55,Regione Toscana e Anci Toscana,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": ""PASCITM1F17"", ""causale"": """", ""chi"": ""Regione Toscana e Anci Toscana"", ""data"": ""13/09/2016"", ""descrizione"": ""Attivo c/c presso \""Banca Mps ag.17 in via Novoli a Firenze\"""", ""email"": """", ""iban"": ""IT43Q 01030 02818 000000888832"", ""intestazione"": ""Toscana per l'emergenza terremoto centro Italia"", ""link"": ""http://www.toscana-notizie.it/-/terremoto-centro-italia-un-conto-corrente-per-le-donazioni-di-tutta-la-toscana"", ""postale"": """"}","<pre><yamldata>chi: 'Regione Toscana e Anci Toscana'
-descrizione: 'Attivo c/c presso ""Banca Mps ag.17 in via Novoli a Firenze""'
-intestazione: 'Toscana per l''emergenza terremoto centro Italia'
-iban: 'IT43Q 01030 02818 000000888832'
-bic: PASCITM1F17
-postale: ''
-causale: ''
-link: 'http://www.toscana-notizie.it/-/terremoto-centro-italia-un-conto-corrente-per-le-donazioni-di-tutta-la-toscana'
 email: ''
 data: 13/09/2016
 </yamldata></pre>"
