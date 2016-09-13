@@ -274,6 +274,28 @@ link: ''
 email: ''
 data: 13/09/2016
 </yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/198,176772168,2016-09-13 23:28:47,2016-09-13 22:59:00,Regione Lazio,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": ""UNCRITMM"", ""causale"": """", ""chi"": ""Regione Lazio"", ""data"": ""13/09/2016"", ""descrizione"": """", ""email"": """", ""iban"": ""IT60P 02008 05255 000104428939 e IT42H 07601 03200 001034116671"", ""intestazione"": ""Regione Lazio per Amatrice e Accumoli"", ""link"": ""http://www.regione.lazio.it/rl_main/?vw=newsDettaglio&id=3551"", ""postale"": """"}","<pre><yamldata>chi: 'Regione Lazio'
+descrizione: ''
+intestazione: 'Regione Lazio per Amatrice e Accumoli'
+iban: 'IT60P 02008 05255 000104428939 e IT42H 07601 03200 001034116671'
+bic: UNCRITMM
+postale: ''
+causale: ''
+link: 'http://www.regione.lazio.it/rl_main/?vw=newsDettaglio&id=3551'
+email: ''
+data: 13/09/2016
+</yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/197,176771902,2016-09-13 23:28:42,2016-09-13 22:57:37,Regione Emilia Romagna,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": ""UNCRITM1BA2"", ""causale"": """", ""chi"": ""Regione Emilia Romagna"", ""data"": ""13/09/2016"", ""descrizione"": """", ""email"": """", ""iban"": ""IT69G 02008 02435 000104428964"", ""intestazione"": ""Emilia-Romagna per sisma Centro Italia"", ""link"": ""http://www.regione.emilia-romagna.it/notizie/primo-piano/sisma-in-italia-centrale-dalla-regione-un-milione"", ""postale"": """"}","<pre><yamldata>chi: 'Regione Emilia Romagna'
+descrizione: ''
+intestazione: 'Emilia-Romagna per sisma Centro Italia'
+iban: 'IT69G 02008 02435 000104428964'
+bic: UNCRITM1BA2
+postale: ''
+causale: ''
+link: 'http://www.regione.emilia-romagna.it/notizie/primo-piano/sisma-in-italia-centrale-dalla-regione-un-milione'
+email: ''
+data: 13/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/196,176771777,2016-09-13 23:28:36,2016-09-13 22:56:53,Provincia di Modena,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Azioni di solidariet\u00e0 terremoto centro Italia del 24 agosto"", ""chi"": ""Provincia di Modena"", ""data"": ""13/09/2016"", ""descrizione"": """", ""email"": """", ""iban"": ""IT52M 02008 12930 000003398693"", ""intestazione"": """", ""link"": ""http://www.provincia.modena.it/page.asp?IDCategoria=6&IDSezione=343&ID=127039"", ""postale"": """"}","<pre><yamldata>chi: 'Provincia di Modena'
 descrizione: ''
 intestazione: ''
