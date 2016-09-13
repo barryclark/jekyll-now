@@ -43,4 +43,4 @@ This is just the first episode of a longer storyline, and I'm eagerly awaiting t
 
 [Mi-Clos Studio's Out There Chronicles page](http://chronicles.outtheregame.com)\\
 [Out There Chronicles on Google Play](https://play.google.com/store/apps/details?id=com.miclos.outtherechronicles)\\
-[Out There Chronicles on iTunes](https://itunes.apple.com/app/id1119644926)\\
+[Out There Chronicles on iTunes](https://itunes.apple.com/app/id1119644926)
