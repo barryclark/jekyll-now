@@ -1,5 +1,5 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/176,176751208,2016-09-13 21:14:26,2016-09-13 21:12:54,Action Aid,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""causale"": """", ""data"": ""13/09/2016"", ""postale"": """", ""descrizione"": ""donazioni effettuabili direttamente dal sito"", ""email"": """", ""intestazione"": """", ""bic"": """", ""link"": ""https://www.actionaid.it/terremoto-in-centro-italia"", ""chi"": ""Action Aid"", ""iban"": """"}","<pre><yamldata>chi: 'Action Aid'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/176,176751208,2016-09-13 21:14:26,2016-09-13 21:12:54,Action Aid,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""chi"": ""Action Aid"", ""intestazione"": """", ""iban"": """", ""postale"": """", ""descrizione"": ""donazioni effettuabili direttamente dal sito"", ""bic"": """", ""link"": ""https://www.actionaid.it/terremoto-in-centro-italia"", ""data"": ""13/09/2016"", ""causale"": """", ""email"": """"}","<pre><yamldata>chi: 'Action Aid'
 descrizione: 'donazioni effettuabili direttamente dal sito'
 intestazione: ''
 iban: ''
@@ -10,7 +10,7 @@ link: 'https://www.actionaid.it/terremoto-in-centro-italia'
 email: ''
 data: 13/09/2016
 </yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/175,176750696,2016-09-13 21:14:18,2016-09-13 21:10:36,UniCoopFirenze,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""causale"": """", ""data"": ""13/09/2016"", ""postale"": """", ""descrizione"": ""Soci e clienti possono versare quote di danaro direttamente alle casse oppure, solo nel caso dei soci, scaricare punti dalla tessera devolvendoli alle popolazioni colpite."", ""email"": """", ""intestazione"": """", ""bic"": """", ""link"": ""https://www.facebook.com/SezioneSociCoopFirenzeSudOvest/posts/1094597260625093"", ""chi"": ""UniCoopFirenze"", ""iban"": """"}","<pre><yamldata>chi: UniCoopFirenze
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/175,176750696,2016-09-13 21:14:18,2016-09-13 21:10:36,UniCoopFirenze,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""chi"": ""UniCoopFirenze"", ""intestazione"": """", ""iban"": """", ""postale"": """", ""descrizione"": ""Soci e clienti possono versare quote di danaro direttamente alle casse oppure, solo nel caso dei soci, scaricare punti dalla tessera devolvendoli alle popolazioni colpite."", ""bic"": """", ""link"": ""https://www.facebook.com/SezioneSociCoopFirenzeSudOvest/posts/1094597260625093"", ""data"": ""13/09/2016"", ""causale"": """", ""email"": """"}","<pre><yamldata>chi: UniCoopFirenze
 descrizione: 'Soci e clienti possono versare quote di danaro direttamente alle casse oppure, solo nel caso dei soci, scaricare punti dalla tessera devolvendoli alle popolazioni colpite.'
 intestazione: ''
 iban: ''
@@ -21,7 +21,7 @@ link: 'https://www.facebook.com/SezioneSociCoopFirenzeSudOvest/posts/10945972606
 email: ''
 data: 13/09/2016
 </yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/174,176749759,2016-09-13 21:09:01,2016-09-13 21:06:26,Comune di Arquata del Tronto,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""causale"": ""Solidariet\u00e0 Terremoto Arquata del Tronto"", ""data"": ""13/09/2016"", ""postale"": """", ""descrizione"": """", ""email"": """", ""intestazione"": """", ""bic"": """", ""link"": ""https://www.facebook.com/ascolipiceno/photos/a.334802869887682.85935.131745913526713/1253222841379009/?type=3"", ""chi"": ""Comune di Arquata del Tronto"", ""iban"": ""IT33W 03069 693701 00000000246""}","<pre><yamldata>chi: 'Comune di Arquata del Tronto'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/174,176749759,2016-09-13 21:09:01,2016-09-13 21:06:26,Comune di Arquata del Tronto,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""chi"": ""Comune di Arquata del Tronto"", ""intestazione"": """", ""iban"": ""IT33W 03069 693701 00000000246"", ""postale"": """", ""descrizione"": """", ""bic"": """", ""link"": ""https://www.facebook.com/ascolipiceno/photos/a.334802869887682.85935.131745913526713/1253222841379009/?type=3"", ""data"": ""13/09/2016"", ""causale"": ""Solidariet\u00e0 Terremoto Arquata del Tronto"", ""email"": """"}","<pre><yamldata>chi: 'Comune di Arquata del Tronto'
 descrizione: ''
 intestazione: ''
 iban: 'IT33W 03069 693701 00000000246'
@@ -32,7 +32,7 @@ link: 'https://www.facebook.com/ascolipiceno/photos/a.334802869887682.85935.1317
 email: ''
 data: 13/09/2016
 </yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/173,176749451,2016-09-13 21:05:53,2016-09-13 21:05:11,Associazione Enea Grilli,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""causale"": ""Sisma Centro Italia"", ""data"": ""13/09/2016"", ""postale"": """", ""descrizione"": """", ""email"": """", ""intestazione"": """", ""bic"": """", ""link"": ""http://www.associazioneeneagrilli.org/index.php/news"", ""chi"": ""Associazione Enea Grilli"", ""iban"": ""IT74H 05387 66850 000002064231""}","<pre><yamldata>chi: 'Associazione Enea Grilli'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/173,176749451,2016-09-13 21:05:53,2016-09-13 21:05:11,Associazione Enea Grilli,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""chi"": ""Associazione Enea Grilli"", ""intestazione"": """", ""iban"": ""IT74H 05387 66850 000002064231"", ""postale"": """", ""descrizione"": """", ""bic"": """", ""link"": ""http://www.associazioneeneagrilli.org/index.php/news"", ""data"": ""13/09/2016"", ""causale"": ""Sisma Centro Italia"", ""email"": """"}","<pre><yamldata>chi: 'Associazione Enea Grilli'
 descrizione: ''
 intestazione: ''
 iban: 'IT74H 05387 66850 000002064231'
@@ -43,7 +43,7 @@ link: 'http://www.associazioneeneagrilli.org/index.php/news'
 email: ''
 data: 13/09/2016
 </yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/172,176741481,2016-09-13 20:34:01,2016-09-13 20:30:03,Caritas - Cei,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""causale"": """", ""data"": ""13/09/2016"", ""postale"": """", ""descrizione"": ""Domenica 18 settembre colletta nazionale in tutte le parrocchie d'Italia per sostenere la ricostruzione nelle zone colpite dal sisma."", ""email"": """", ""intestazione"": """", ""bic"": """", ""link"": ""http://www.caritasitaliana.it/pls/caritasitaliana/V3_S2EW_CONSULTAZIONE.mostra_pagina?id_pagina=6558"", ""chi"": ""Caritas - Cei"", ""iban"": """"}","<pre><yamldata>chi: 'Caritas - Cei'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/172,176741481,2016-09-13 20:34:01,2016-09-13 20:30:03,Caritas - Cei,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""chi"": ""Caritas - Cei"", ""intestazione"": """", ""iban"": """", ""postale"": """", ""descrizione"": ""Domenica 18 settembre colletta nazionale in tutte le parrocchie d'Italia per sostenere la ricostruzione nelle zone colpite dal sisma."", ""bic"": """", ""link"": ""http://www.caritasitaliana.it/pls/caritasitaliana/V3_S2EW_CONSULTAZIONE.mostra_pagina?id_pagina=6558"", ""data"": ""13/09/2016"", ""causale"": """", ""email"": """"}","<pre><yamldata>chi: 'Caritas - Cei'
 descrizione: 'Domenica 18 settembre colletta nazionale in tutte le parrocchie d''Italia per sostenere la ricostruzione nelle zone colpite dal sisma.'
 intestazione: ''
 iban: ''
@@ -54,7 +54,7 @@ link: 'http://www.caritasitaliana.it/pls/caritasitaliana/V3_S2EW_CONSULTAZIONE.m
 email: ''
 data: 13/09/2016
 </yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/171,176722743,2016-09-13 19:01:50,2016-09-13 19:00:55,Regione Toscana e Anci Toscana,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""causale"": """", ""data"": ""13/09/2016"", ""postale"": """", ""descrizione"": ""Attivo c/c presso \""Banca Mps ag.17 in via Novoli a Firenze\"""", ""email"": """", ""intestazione"": ""Toscana per l'emergenza terremoto centro Italia"", ""bic"": ""PASCITM1F17"", ""link"": ""http://www.toscana-notizie.it/-/terremoto-centro-italia-un-conto-corrente-per-le-donazioni-di-tutta-la-toscana"", ""chi"": ""Regione Toscana e Anci Toscana"", ""iban"": ""IT43Q 01030 02818 000000888832""}","<pre><yamldata>chi: 'Regione Toscana e Anci Toscana'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/171,176722743,2016-09-13 19:01:50,2016-09-13 19:00:55,Regione Toscana e Anci Toscana,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""chi"": ""Regione Toscana e Anci Toscana"", ""intestazione"": ""Toscana per l'emergenza terremoto centro Italia"", ""iban"": ""IT43Q 01030 02818 000000888832"", ""postale"": """", ""descrizione"": ""Attivo c/c presso \""Banca Mps ag.17 in via Novoli a Firenze\"""", ""bic"": ""PASCITM1F17"", ""link"": ""http://www.toscana-notizie.it/-/terremoto-centro-italia-un-conto-corrente-per-le-donazioni-di-tutta-la-toscana"", ""data"": ""13/09/2016"", ""causale"": """", ""email"": """"}","<pre><yamldata>chi: 'Regione Toscana e Anci Toscana'
 descrizione: 'Attivo c/c presso ""Banca Mps ag.17 in via Novoli a Firenze""'
 intestazione: 'Toscana per l''emergenza terremoto centro Italia'
 iban: 'IT43Q 01030 02818 000000888832'
@@ -65,7 +65,7 @@ link: 'http://www.toscana-notizie.it/-/terremoto-centro-italia-un-conto-corrente
 email: ''
 data: 13/09/2016
 </yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/170,176722394,2016-09-13 19:01:42,2016-09-13 18:59:24,PD nazionale,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""causale"": ""Partito Democratico - Raccolta fondi per terremoto"", ""data"": ""13/09/2016"", ""postale"": """", ""descrizione"": """", ""email"": """", ""intestazione"": ""Partito Democratico - Via S. Andrea delle Fratte 16 - 00187 Roma"", ""bic"": ""PASCITMMROM"", ""link"": ""http://www.partitodemocratico.it/partito/terremoto-pd-avvia-raccolta-fondi/"", ""chi"": ""PD nazionale"", ""iban"": ""IT96H0103003200000006365314""}","<pre><yamldata>chi: 'PD nazionale'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/170,176722394,2016-09-13 19:01:42,2016-09-13 18:59:24,PD nazionale,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""chi"": ""PD nazionale"", ""intestazione"": ""Partito Democratico - Via S. Andrea delle Fratte 16 - 00187 Roma"", ""iban"": ""IT96H0103003200000006365314"", ""postale"": """", ""descrizione"": """", ""bic"": ""PASCITMMROM"", ""link"": ""http://www.partitodemocratico.it/partito/terremoto-pd-avvia-raccolta-fondi/"", ""data"": ""13/09/2016"", ""causale"": ""Partito Democratico - Raccolta fondi per terremoto"", ""email"": """"}","<pre><yamldata>chi: 'PD nazionale'
 descrizione: ''
 intestazione: 'Partito Democratico - Via S. Andrea delle Fratte 16 - 00187 Roma'
 iban: IT96H0103003200000006365314
@@ -76,7 +76,7 @@ link: 'http://www.partitodemocratico.it/partito/terremoto-pd-avvia-raccolta-fond
 email: ''
 data: 13/09/2016
 </yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/169,176722264,2016-09-13 19:01:36,2016-09-13 18:58:49,AUSER nazionale,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""causale"": ""Raccolta fondi terremoto 2016 Centro Italia"", ""data"": ""13/09/2016"", ""postale"": """", ""descrizione"": """", ""email"": """", ""intestazione"": ""AUSER"", ""bic"": """", ""link"": ""http://www1.auser.it/primo-piano/terremoto-centro-italia-scatta-la-solidarieta-di-auser/"", ""chi"": ""AUSER nazionale"", ""iban"": ""IT89L 05018 03200 000000105900""}","<pre><yamldata>chi: 'AUSER nazionale'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/169,176722264,2016-09-13 19:01:36,2016-09-13 18:58:49,AUSER nazionale,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""chi"": ""AUSER nazionale"", ""intestazione"": ""AUSER"", ""iban"": ""IT89L 05018 03200 000000105900"", ""postale"": """", ""descrizione"": """", ""bic"": """", ""link"": ""http://www1.auser.it/primo-piano/terremoto-centro-italia-scatta-la-solidarieta-di-auser/"", ""data"": ""13/09/2016"", ""causale"": ""Raccolta fondi terremoto 2016 Centro Italia"", ""email"": """"}","<pre><yamldata>chi: 'AUSER nazionale'
 descrizione: ''
 intestazione: AUSER
 iban: 'IT89L 05018 03200 000000105900'
@@ -87,7 +87,7 @@ link: 'http://www1.auser.it/primo-piano/terremoto-centro-italia-scatta-la-solida
 email: ''
 data: 13/09/2016
 </yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/168,176722098,2016-09-13 19:01:29,2016-09-13 18:58:16,Rotaract Rieti,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""causale"": ""Sisma Amatrice Accumoli Rieti + Indirizzo email + Club di appartenenza e/o nominativo del donatore"", ""data"": ""13/09/2016"", ""postale"": """", ""descrizione"": """", ""email"": """", ""intestazione"": ""Rotaract Club Rieti"", ""bic"": """", ""link"": ""https://www.facebook.com/rotaract.rieti/posts/1783447371896395"", ""chi"": ""Rotaract Rieti"", ""iban"": ""IT98U 08327 14600 000000003217""}","<pre><yamldata>chi: 'Rotaract Rieti'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/168,176722098,2016-09-13 19:01:29,2016-09-13 18:58:16,Rotaract Rieti,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""chi"": ""Rotaract Rieti"", ""intestazione"": ""Rotaract Club Rieti"", ""iban"": ""IT98U 08327 14600 000000003217"", ""postale"": """", ""descrizione"": """", ""bic"": """", ""link"": ""https://www.facebook.com/rotaract.rieti/posts/1783447371896395"", ""data"": ""13/09/2016"", ""causale"": ""Sisma Amatrice Accumoli Rieti + Indirizzo email + Club di appartenenza e/o nominativo del donatore"", ""email"": """"}","<pre><yamldata>chi: 'Rotaract Rieti'
 descrizione: ''
 intestazione: 'Rotaract Club Rieti'
 iban: 'IT98U 08327 14600 000000003217'
@@ -98,7 +98,7 @@ link: 'https://www.facebook.com/rotaract.rieti/posts/1783447371896395'
 email: ''
 data: 13/09/2016
 </yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/167,176721664,2016-09-13 18:58:03,2016-09-13 18:57:11,Caritas nazionale,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""causale"": """", ""data"": ""13/09/2016"", ""postale"": """", ""descrizione"": ""Sono attivi tre conti correnti."", ""email"": """", ""intestazione"": ""Caritas Italiana, Via Aurelia 796 \u2013 00165 Roma"", ""bic"": """", ""link"": ""http://www.caritas.it/pls/caritasitaliana/V3_S2EW_CONSULTAZIONE.mostra_pagina?id_pagina=6544&rifi=guest&rifp=guest"", ""chi"": ""Caritas nazionale"", ""iban"": ""IT06A 03359 01600 100000012474 presso Banca Prossima, Piazza della Libert\u00e0 13, Roma IT91P 07601 03200 000000347013 presso Banco Posta, Viale Europa 175, Roma IT88U 02008 05206 000011063119 presso UniCredit, Via Taranto 49, Roma""}","<pre><yamldata>chi: 'Caritas nazionale'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/167,176721664,2016-09-13 18:58:03,2016-09-13 18:57:11,Caritas nazionale,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""chi"": ""Caritas nazionale"", ""intestazione"": ""Caritas Italiana, Via Aurelia 796 \u2013 00165 Roma"", ""iban"": ""IT06A 03359 01600 100000012474 presso Banca Prossima, Piazza della Libert\u00e0 13, Roma IT91P 07601 03200 000000347013 presso Banco Posta, Viale Europa 175, Roma IT88U 02008 05206 000011063119 presso UniCredit, Via Taranto 49, Roma"", ""postale"": """", ""descrizione"": ""Sono attivi tre conti correnti."", ""bic"": """", ""link"": ""http://www.caritas.it/pls/caritasitaliana/V3_S2EW_CONSULTAZIONE.mostra_pagina?id_pagina=6544&rifi=guest&rifp=guest"", ""data"": ""13/09/2016"", ""causale"": """", ""email"": """"}","<pre><yamldata>chi: 'Caritas nazionale'
 descrizione: 'Sono attivi tre conti correnti.'
 intestazione: 'Caritas Italiana, Via Aurelia 796 – 00165 Roma'
 iban: 'IT06A 03359 01600 100000012474 presso Banca Prossima, Piazza della Libertà 13, Roma IT91P 07601 03200 000000347013 presso Banco Posta, Viale Europa 175, Roma IT88U 02008 05206 000011063119 presso UniCredit, Via Taranto 49, Roma'
@@ -109,7 +109,7 @@ link: 'http://www.caritas.it/pls/caritasitaliana/V3_S2EW_CONSULTAZIONE.mostra_pa
 email: ''
 data: 13/09/2016
 </yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/166,176721128,2016-09-13 18:55:31,2016-09-13 18:54:53,Regione Emilia-Romagna,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""causale"": ""Emilia-Romagna per sisma Centro Italia"", ""data"": ""13/09/2016"", ""postale"": """", ""descrizione"": """", ""email"": """", ""intestazione"": ""Agenzia Protezione civile Emilia-Romagna"", ""bic"": """", ""link"": ""http://www.regione.emilia-romagna.it/notizie/primo-piano/sisma-nell-italia-centrale-il-presidente-bonaccini-nelle-prossime-ore-sui-luoghi-colpiti"", ""chi"": ""Regione Emilia-Romagna"", ""iban"": ""IT69G 02008 02435 000104428964""}","<pre><yamldata>chi: 'Regione Emilia-Romagna'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/166,176721128,2016-09-13 18:55:31,2016-09-13 18:54:53,Regione Emilia-Romagna,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""chi"": ""Regione Emilia-Romagna"", ""intestazione"": ""Agenzia Protezione civile Emilia-Romagna"", ""iban"": ""IT69G 02008 02435 000104428964"", ""postale"": """", ""descrizione"": """", ""bic"": """", ""link"": ""http://www.regione.emilia-romagna.it/notizie/primo-piano/sisma-nell-italia-centrale-il-presidente-bonaccini-nelle-prossime-ore-sui-luoghi-colpiti"", ""data"": ""13/09/2016"", ""causale"": ""Emilia-Romagna per sisma Centro Italia"", ""email"": """"}","<pre><yamldata>chi: 'Regione Emilia-Romagna'
 descrizione: ''
 intestazione: 'Agenzia Protezione civile Emilia-Romagna'
 iban: 'IT69G 02008 02435 000104428964'
@@ -120,7 +120,7 @@ link: 'http://www.regione.emilia-romagna.it/notizie/primo-piano/sisma-nell-itali
 email: ''
 data: 13/09/2016
 </yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/165,176721021,2016-09-13 18:55:21,2016-09-13 18:54:26,GUS - Gruppo Umana Solidarietà,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""causale"": """", ""data"": ""13/09/2016"", ""postale"": """", ""descrizione"": ""Donazione tramite Paypal o carta di credito"", ""email"": """", ""intestazione"": """", ""bic"": """", ""link"": ""http://gusitalia.it/"", ""chi"": ""GUS - Gruppo Umana Solidariet\u00e0"", ""iban"": """"}","<pre><yamldata>chi: 'GUS - Gruppo Umana Solidarietà'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/165,176721021,2016-09-13 18:55:21,2016-09-13 18:54:26,GUS - Gruppo Umana Solidarietà,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""chi"": ""GUS - Gruppo Umana Solidariet\u00e0"", ""intestazione"": """", ""iban"": """", ""postale"": """", ""descrizione"": ""Donazione tramite Paypal o carta di credito"", ""bic"": """", ""link"": ""http://gusitalia.it/"", ""data"": ""13/09/2016"", ""causale"": """", ""email"": """"}","<pre><yamldata>chi: 'GUS - Gruppo Umana Solidarietà'
 descrizione: 'Donazione tramite Paypal o carta di credito'
 intestazione: ''
 iban: ''
@@ -131,7 +131,7 @@ link: 'http://gusitalia.it/'
 email: ''
 data: 13/09/2016
 </yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/164,176720862,2016-09-13 18:54:16,2016-09-13 18:53:48,Provincia di Modena,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""causale"": ""Azioni di solidariet\u00e0 terremoto centro Italia del 24 agosto"", ""data"": ""13/09/2016"", ""postale"": """", ""descrizione"": ""Le somme verranno destinate a progetti di assistenza"", ""email"": """", ""intestazione"": """", ""bic"": """", ""link"": """", ""chi"": ""Provincia di Modena"", ""iban"": ""IT 52 M 02008 12930 000003398693""}","<pre><yamldata>chi: 'Provincia di Modena'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/164,176720862,2016-09-13 18:54:16,2016-09-13 18:53:48,Provincia di Modena,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""chi"": ""Provincia di Modena"", ""intestazione"": """", ""iban"": ""IT 52 M 02008 12930 000003398693"", ""postale"": """", ""descrizione"": ""Le somme verranno destinate a progetti di assistenza"", ""bic"": """", ""link"": """", ""data"": ""13/09/2016"", ""causale"": ""Azioni di solidariet\u00e0 terremoto centro Italia del 24 agosto"", ""email"": """"}","<pre><yamldata>chi: 'Provincia di Modena'
 descrizione: 'Le somme verranno destinate a progetti di assistenza'
 intestazione: ''
 iban: 'IT 52 M 02008 12930 000003398693'
@@ -142,7 +142,7 @@ link: ''
 email: ''
 data: 13/09/2016
 </yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/163,176720596,2016-09-13 18:53:09,2016-09-13 18:52:38,Croce Rossa Italiana,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""causale"": ""Sisma Centro Italia"", ""data"": ""13/09/2016"", ""postale"": """", ""descrizione"": ""Tel: 06 5510"", ""email"": ""aiuti@cri.it"", ""intestazione"": """", ""bic"": ""CRPPIT2P086"", ""link"": ""http://www.cri.it/terremoto-centro-italia"", ""chi"": ""Croce Rossa Italiana"", ""iban"": ""IT40F 06230 03204 000030631681""}","<pre><yamldata>chi: 'Croce Rossa Italiana'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/163,176720596,2016-09-13 18:53:09,2016-09-13 18:52:38,Croce Rossa Italiana,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""chi"": ""Croce Rossa Italiana"", ""intestazione"": """", ""iban"": ""IT40F 06230 03204 000030631681"", ""postale"": """", ""descrizione"": ""Tel: 06 5510"", ""bic"": ""CRPPIT2P086"", ""link"": ""http://www.cri.it/terremoto-centro-italia"", ""data"": ""13/09/2016"", ""causale"": ""Sisma Centro Italia"", ""email"": ""aiuti@cri.it""}","<pre><yamldata>chi: 'Croce Rossa Italiana'
 descrizione: 'Tel: 06 5510'
 intestazione: ''
 iban: 'IT40F 06230 03204 000030631681'
@@ -153,7 +153,7 @@ link: 'http://www.cri.it/terremoto-centro-italia'
 email: aiuti@cri.it
 data: 13/09/2016
 </yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/162,176719966,2016-09-13 18:50:41,2016-09-13 18:50:05,Corriere della Sera e TG La7,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""causale"": """", ""data"": ""13/09/2016"", ""postale"": """", ""descrizione"": ""Attivato c/c presso \""Banca Prossima\"""", ""email"": """", ""intestazione"": ""Un aiuto subito - Terremoto in Centro Italia 6.0"", ""bic"": """", ""link"": """", ""chi"": ""Corriere della Sera e TG La7"", ""iban"": ""IT17E 03359 01600 100000145551""}","<pre><yamldata>chi: 'Corriere della Sera e TG La7'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/162,176719966,2016-09-13 18:50:41,2016-09-13 18:50:05,Corriere della Sera e TG La7,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""chi"": ""Corriere della Sera e TG La7"", ""intestazione"": ""Un aiuto subito - Terremoto in Centro Italia 6.0"", ""iban"": ""IT17E 03359 01600 100000145551"", ""postale"": """", ""descrizione"": ""Attivato c/c presso \""Banca Prossima\"""", ""bic"": """", ""link"": """", ""data"": ""13/09/2016"", ""causale"": """", ""email"": """"}","<pre><yamldata>chi: 'Corriere della Sera e TG La7'
 descrizione: 'Attivato c/c presso ""Banca Prossima""'
 intestazione: 'Un aiuto subito - Terremoto in Centro Italia 6.0'
 iban: 'IT17E 03359 01600 100000145551'
@@ -164,7 +164,7 @@ link: ''
 email: ''
 data: 13/09/2016
 </yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/161,176719155,2016-09-13 18:52:18,2016-09-13 18:48:01,Provincia di Reggio Emilia,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""causale"": ""Terremoto Centro Italia 2016"", ""data"": ""13/09/2016"", ""postale"": """", ""descrizione"": ""Le somme versate saranno destinate a progetti di assistenza e ricostruzione seguiti direttamente dalla Provincia di Reggio Emilia. Attivato c/c presso \""Unicredit\"""", ""email"": null, ""intestazione"": ""La Provincia di Reggio Emilia per le emergenze e la solidariet\u00e0"", ""bic"": """", ""link"": """", ""chi"": ""Provincia di Reggio Emilia"", ""iban"": ""IT12I 02008 12800 000100658213""}","<pre><yamldata>chi: 'Provincia di Reggio Emilia'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/161,176719155,2016-09-13 18:52:18,2016-09-13 18:48:01,Provincia di Reggio Emilia,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""chi"": ""Provincia di Reggio Emilia"", ""intestazione"": ""La Provincia di Reggio Emilia per le emergenze e la solidariet\u00e0"", ""iban"": ""IT12I 02008 12800 000100658213"", ""postale"": """", ""descrizione"": ""Le somme versate saranno destinate a progetti di assistenza e ricostruzione seguiti direttamente dalla Provincia di Reggio Emilia. Attivato c/c presso \""Unicredit\"""", ""bic"": """", ""link"": """", ""data"": ""13/09/2016"", ""causale"": ""Terremoto Centro Italia 2016"", ""email"": null}","<pre><yamldata>chi: 'Provincia di Reggio Emilia'
 descrizione: 'Le somme versate saranno destinate a progetti di assistenza e ricostruzione seguiti direttamente dalla Provincia di Reggio Emilia. Attivato c/c presso ""Unicredit""'
 intestazione: 'La Provincia di Reggio Emilia per le emergenze e la solidarietà'
 iban: 'IT12I 02008 12800 000100658213'
@@ -175,7 +175,7 @@ link: ''
 email: 
 data: 13/09/2016
 </yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/160,176718573,2016-09-13 18:50:54,2016-09-13 18:45:16,CAI,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""causale"": ""IL CAI PER IL SISMA DELL\u2019ITALIA CENTRALE (LAZIO, MARCHE E UMBRIA)"", ""data"": ""13/09/2016"", ""postale"": """", ""descrizione"": ""Attivato il c/c presso \""Banca Popolare di Sondrio \u2013 Agenzia Milano 21\"""", ""email"": """", ""intestazione"": """", ""bic"": """", ""link"": """", ""chi"": ""CAI"", ""iban"": ""IT06 D056 9601 6200 0001 0373 X15""}","<pre><yamldata>chi: CAI
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/160,176718573,2016-09-13 18:50:54,2016-09-13 18:45:16,CAI,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""chi"": ""CAI"", ""intestazione"": """", ""iban"": ""IT06 D056 9601 6200 0001 0373 X15"", ""postale"": """", ""descrizione"": ""Attivato il c/c presso \""Banca Popolare di Sondrio \u2013 Agenzia Milano 21\"""", ""bic"": """", ""link"": """", ""data"": ""13/09/2016"", ""causale"": ""IL CAI PER IL SISMA DELL\u2019ITALIA CENTRALE (LAZIO, MARCHE E UMBRIA)"", ""email"": """"}","<pre><yamldata>chi: CAI
 descrizione: 'Attivato il c/c presso ""Banca Popolare di Sondrio – Agenzia Milano 21""'
 intestazione: ''
 iban: 'IT06 D056 9601 6200 0001 0373 X15'
@@ -186,7 +186,7 @@ link: ''
 email: ''
 data: 13/09/2016
 </yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/159,176716445,2016-09-13 18:51:17,2016-09-13 18:37:18,Protezione Civile,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""causale"": ""Emergenza Terremoto Centro Italia"", ""data"": ""13/09/2016"", ""postale"": """", ""descrizione"": ""Tramite SMS o chiamata al 45500 (2\u20ac) o tramite il c/c aperto presso \""Monte dei Paschi di Siena - Filiale di Roma Via del Corso 232\"""", ""email"": """", ""intestazione"": ""PRES.CONS.MINISTRI DIP.PROT.CIVILE - VIA ULPIANO 11 - 00193 - ROMA RM"", ""bic"": ""PASCITMMROM"", ""link"": ""http://www.protezionecivile.gov.it/jcms/it/donazioni_denaro_sisma_2016.wp"", ""chi"": ""Protezione Civile"", ""iban"": ""IT 44 P 01030 03200 000006366341""}","<pre><yamldata>chi: 'Protezione Civile'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/159,176716445,2016-09-13 18:51:17,2016-09-13 18:37:18,Protezione Civile,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""chi"": ""Protezione Civile"", ""intestazione"": ""PRES.CONS.MINISTRI DIP.PROT.CIVILE - VIA ULPIANO 11 - 00193 - ROMA RM"", ""iban"": ""IT 44 P 01030 03200 000006366341"", ""postale"": """", ""descrizione"": ""Tramite SMS o chiamata al 45500 (2\u20ac) o tramite il c/c aperto presso \""Monte dei Paschi di Siena - Filiale di Roma Via del Corso 232\"""", ""bic"": ""PASCITMMROM"", ""link"": ""http://www.protezionecivile.gov.it/jcms/it/donazioni_denaro_sisma_2016.wp"", ""data"": ""13/09/2016"", ""causale"": ""Emergenza Terremoto Centro Italia"", ""email"": """"}","<pre><yamldata>chi: 'Protezione Civile'
 descrizione: 'Tramite SMS o chiamata al 45500 (2€) o tramite il c/c aperto presso ""Monte dei Paschi di Siena - Filiale di Roma Via del Corso 232""'
 intestazione: 'PRES.CONS.MINISTRI DIP.PROT.CIVILE - VIA ULPIANO 11 - 00193 - ROMA RM'
 iban: 'IT 44 P 01030 03200 000006366341'
@@ -197,7 +197,7 @@ link: 'http://www.protezionecivile.gov.it/jcms/it/donazioni_denaro_sisma_2016.wp
 email: ''
 data: 13/09/2016
 </yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/158,176706305,2016-09-13 18:29:42,2016-09-13 17:51:34,Libri per bambini e ragazzi,,,"[""Accettato"", ""Donazioni"", ""Form""]",,,"{""indirizzo"": """", ""data"": ""13/09/2016"", ""descrizione"": ""Il Centro per il libro e la lettura di Roma raccoglie libri da regalare a bambini e ragazzi (fino a 14 anni) colpiti dal sisma. I libri possono essere donati a mano o spediti al Centro. Sulla busta busta scrivere \""Dono di libri \u2013 Terremoto 2016\"". Via Pasquale Stanislao Mancini 20, 00196 Roma"", ""email"": ""c-ll@beniculturali.it"", ""lon"": """", ""tel"": ""06.68408936"", ""cosa"": ""Libri per bambini e ragazzi"", ""link"": ""http://www.comunicareilsociale.it/raccolta-libri-bambini-ragazzi-0-14/"", ""immagine"": """", ""lat"": """"}","<pre><yamldata>tel: '06.68408936'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/158,176706305,2016-09-13 18:29:42,2016-09-13 17:51:34,Libri per bambini e ragazzi,,,"[""Accettato"", ""Donazioni"", ""Form""]",,,"{""lon"": """", ""cosa"": ""Libri per bambini e ragazzi"", ""tel"": ""06.68408936"", ""indirizzo"": """", ""descrizione"": ""Il Centro per il libro e la lettura di Roma raccoglie libri da regalare a bambini e ragazzi (fino a 14 anni) colpiti dal sisma. I libri possono essere donati a mano o spediti al Centro. Sulla busta busta scrivere \""Dono di libri \u2013 Terremoto 2016\"". Via Pasquale Stanislao Mancini 20, 00196 Roma"", ""link"": ""http://www.comunicareilsociale.it/raccolta-libri-bambini-ragazzi-0-14/"", ""lat"": """", ""immagine"": """", ""data"": ""13/09/2016"", ""email"": ""c-ll@beniculturali.it""}","<pre><yamldata>tel: '06.68408936'
 email: c-ll@beniculturali.it
 cosa: 'Libri per bambini e ragazzi'
 descrizione: 'Il Centro per il libro e la lettura di Roma raccoglie libri da regalare a bambini e ragazzi (fino a 14 anni) colpiti dal sisma. I libri possono essere donati a mano o spediti al Centro. Sulla busta busta scrivere ""Dono di libri – Terremoto 2016"". Via Pasquale Stanislao Mancini 20, 00196 Roma'
@@ -213,21 +213,21 @@ descrizione: 'Mercoledì 14 settembre, alle 11, al campo san Cipriano (Protezion
 link: 'http://agensir.it/quotidiano/2016/9/12/terremoto-unitalsi-e-anp-consegnano-i-fondi-raccolti-con-scuola-solidale-allistituto-di-amatrice/'
 data: 13/09/2016
 </yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/153,176676426,2016-09-13 18:28:48,2016-09-13 15:44:10,++URGENTE++ Occorre una roulot,42.749867,13.269536,"[""Accettato"", ""Telegram""]",Milestone(number=1),,"{""data"": ""13/09/2016"", ""descrizione"": ""++URGENTE++ Occorre una roulotte attrezzata per Enzo, unico rimasto nel borgo di Pescara del Tronto."", ""lat"": ""42.749867"", ""lon"": ""13.269536"", ""immagine"": """", ""telegram_user"": """"}","<pre><yamldata>telegram_user: ''
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/153,176676426,2016-09-13 18:28:48,2016-09-13 15:44:10,++URGENTE++ Occorre una roulot,42.749867,13.269536,"[""Accettato"", ""Telegram""]",Milestone(number=1),,"{""lon"": ""13.269536"", ""lat"": ""42.749867"", ""immagine"": """", ""data"": ""13/09/2016"", ""telegram_user"": """", ""descrizione"": ""++URGENTE++ Occorre una roulotte attrezzata per Enzo, unico rimasto nel borgo di Pescara del Tronto.""}","<pre><yamldata>telegram_user: ''
 descrizione: '++URGENTE++ Occorre una roulotte attrezzata per Enzo, unico rimasto nel borgo di Pescara del Tronto.'
 immagine: ''
 lat: '42.749867'
 lon: '13.269536'
 data: 13/09/2016
 </yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/152,176674007,2016-09-13 15:35:56,2016-09-13 15:34:48,PROVA campo scossa solidale,42.621783,13.30634,"[""Accettato"", ""Telegram""]",,http://i.imgur.com/ifNB7qI.jpg,"{""data"": ""13/09/2016"", ""descrizione"": ""PROVA campo scossa solidale"", ""lat"": ""42.621783"", ""lon"": ""13.30634"", ""immagine"": ""http://i.imgur.com/ifNB7qI.jpg"", ""telegram_user"": """"}","<pre><yamldata>telegram_user: ''
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/152,176674007,2016-09-13 15:35:56,2016-09-13 15:34:48,PROVA campo scossa solidale,42.621783,13.30634,"[""Accettato"", ""Telegram""]",,http://i.imgur.com/ifNB7qI.jpg,"{""lon"": ""13.30634"", ""lat"": ""42.621783"", ""immagine"": ""http://i.imgur.com/ifNB7qI.jpg"", ""data"": ""13/09/2016"", ""telegram_user"": """", ""descrizione"": ""PROVA campo scossa solidale""}","<pre><yamldata>telegram_user: ''
 descrizione: 'PROVA campo scossa solidale'
 immagine: 'http://i.imgur.com/ifNB7qI.jpg'
 lat: '42.621783'
 lon: '13.30634'
 data: 13/09/2016
 </yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/148,176622336,2016-09-13 12:18:39,2016-09-13 12:03:24,Arci Nazionale,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",Milestone(number=2),,"{""causale"": ""Terremoto centro italia"", ""data"": ""13/09/2016"", ""postale"": null, ""descrizione"": ""BIBLIOBUS ARCI \u2013 La Cultura per la Ricostruzione L'Arci sta cercando fondi per riempire di libri (e carburante) un autobus che porter\u00e0 cultura e momenti di distensione alle persone colpite nelle zone del terremoto del 24 Agosto scorso."", ""email"": null, ""intestazione"": ""Arci"", ""bic"": null, ""link"": ""https://www.produzionidalbasso.com/project/bibliobus-arci-la-cultura-per-la-ricostruzione/"", ""chi"": ""Arci Nazionale"", ""iban"": ""IT 36 A 0501803200 000000000041""}","<pre><yamldata>chi: Arci Nazionale
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/148,176622336,2016-09-13 12:18:39,2016-09-13 12:03:24,Arci Nazionale,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",Milestone(number=2),,"{""chi"": ""Arci Nazionale"", ""intestazione"": ""Arci"", ""iban"": ""IT 36 A 0501803200 000000000041"", ""postale"": null, ""descrizione"": ""BIBLIOBUS ARCI \u2013 La Cultura per la Ricostruzione L'Arci sta cercando fondi per riempire di libri (e carburante) un autobus che porter\u00e0 cultura e momenti di distensione alle persone colpite nelle zone del terremoto del 24 Agosto scorso."", ""bic"": null, ""link"": ""https://www.produzionidalbasso.com/project/bibliobus-arci-la-cultura-per-la-ricostruzione/"", ""data"": ""13/09/2016"", ""causale"": ""Terremoto centro italia"", ""email"": null}","<pre><yamldata>chi: Arci Nazionale
 descrizione: BIBLIOBUS ARCI – La Cultura per la Ricostruzione L'Arci sta cercando fondi per riempire di libri (e carburante) un autobus che porterà cultura e momenti di distensione alle persone colpite nelle zone del terremoto del 24 Agosto scorso.
 intestazione: Arci
 iban: IT 36 A 0501803200 000000000041
@@ -237,7 +237,7 @@ causale: Terremoto centro italia
 link: https://www.produzionidalbasso.com/project/bibliobus-arci-la-cultura-per-la-ricostruzione/
 email: 
 data: 13/09/2016</yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/147,176613430,2016-09-13 12:43:29,2016-09-13 11:15:37,Tenda scuola temporanea di Campogallo. 13 bambine/i della primaria,42.839213,13.331344,"[""Accettato"", ""Telegram""]",,http://i.imgur.com/EyxDLIg.jpg,"{""data"": ""13/09/2016"", ""descrizione"": ""Tenda scuola temporanea di Campogallo. 13 bambine/i della primaria"", ""lat"": 42.839213, ""lon"": 13.331344, ""immagine"": ""http://i.imgur.com/EyxDLIg.jpg"", ""Telegram_user"": null}","<pre><yamldata>Telegram_user: 
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/147,176613430,2016-09-13 12:43:29,2016-09-13 11:15:37,Tenda scuola temporanea di Campogallo. 13 bambine/i della primaria,42.839213,13.331344,"[""Accettato"", ""Telegram""]",,http://i.imgur.com/EyxDLIg.jpg,"{""Telegram_user"": null, ""lon"": 13.331344, ""lat"": 42.839213, ""immagine"": ""http://i.imgur.com/EyxDLIg.jpg"", ""data"": ""13/09/2016"", ""descrizione"": ""Tenda scuola temporanea di Campogallo. 13 bambine/i della primaria""}","<pre><yamldata>Telegram_user: 
 descrizione: Tenda scuola temporanea di Campogallo. 13 bambine/i della primaria
 immagine: http://i.imgur.com/EyxDLIg.jpg
 lat: 42.839213
