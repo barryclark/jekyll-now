@@ -274,6 +274,17 @@ link: ''
 email: ''
 data: 13/09/2016
 </yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/196,176771777,2016-09-13 23:28:36,2016-09-13 22:56:53,Provincia di Modena,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Azioni di solidariet\u00e0 terremoto centro Italia del 24 agosto"", ""chi"": ""Provincia di Modena"", ""data"": ""13/09/2016"", ""descrizione"": """", ""email"": """", ""iban"": ""IT52M 02008 12930 000003398693"", ""intestazione"": """", ""link"": ""http://www.provincia.modena.it/page.asp?IDCategoria=6&IDSezione=343&ID=127039"", ""postale"": """"}","<pre><yamldata>chi: 'Provincia di Modena'
+descrizione: ''
+intestazione: ''
+iban: 'IT52M 02008 12930 000003398693'
+bic: ''
+postale: ''
+causale: 'Azioni di solidarietà terremoto centro Italia del 24 agosto'
+link: 'http://www.provincia.modena.it/page.asp?IDCategoria=6&IDSezione=343&ID=127039'
+email: ''
+data: 13/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/195,176771688,2016-09-13 23:28:23,2016-09-13 22:56:21,Caritas di Parma,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Terremoto Centro Italia"", ""chi"": ""Caritas di Parma"", ""data"": ""13/09/2016"", ""descrizione"": ""Le offerte potranno essere portate direttamente negli uffici della sede della Caritas diocesana (Pazza Duomo 3)"", ""email"": """", ""iban"": ""IT88G 06230 12700 000037249796"", ""intestazione"": """", ""link"": """", ""postale"": """"}","<pre><yamldata>chi: 'Caritas di Parma'
 descrizione: 'Le offerte potranno essere portate direttamente negli uffici della sede della Caritas diocesana (Pazza Duomo 3)'
 intestazione: ''
