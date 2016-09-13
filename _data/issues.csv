@@ -1,17 +1,17 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/146,176590672,2016-09-13 09:20:09,2016-09-13 09:19:52,Prova 2,41.57342,12.584849,"[""Accettato"", ""Telegram""]",,http://i.imgur.com/zKTIrlp.jpg,"{""immagine"": ""http://i.imgur.com/zKTIrlp.jpg"", ""lat"": 41.57342, ""data"": ""13/09/2016"", ""lon"": 12.584849, ""descrizione"": ""Prova 2"", ""Telegram_user"": ""matteotempestini""}","<pre><yamldata>Telegram_user: matteotempestini
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/146,176590672,2016-09-13 09:20:09,2016-09-13 09:19:52,Prova 2,41.57342,12.584849,"[""Accettato"", ""Telegram""]",,http://i.imgur.com/zKTIrlp.jpg,"{""data"": ""13/09/2016"", ""descrizione"": ""Prova 2"", ""lon"": 12.584849, ""lat"": 41.57342, ""Telegram_user"": ""matteotempestini"", ""immagine"": ""http://i.imgur.com/zKTIrlp.jpg""}","<pre><yamldata>Telegram_user: matteotempestini
 descrizione: Prova 2
 immagine: http://i.imgur.com/zKTIrlp.jpg
 lat: 41.57342
 lon: 12.584849
 data: 13/09/2016</yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/143,176579027,2016-09-13 09:02:04,2016-09-13 08:20:16,Test,41.452078,12.584819,"[""Accettato"", ""Telegram""]",,https://terremotocentroitalia.herokuapp.com/wordpress/wp-content/uploads/telegram-bot/84/1473754815.jpg,"{""immagine"": ""https://terremotocentroitalia.herokuapp.com/wordpress/wp-content/uploads/telegram-bot/84/1473754815.jpg"", ""lat"": 41.452078, ""data"": ""13/09/2016"", ""lon"": 12.584819, ""descrizione"": ""Test"", ""Telegram_user"": ""matteotempestini""}","<pre><yamldata>Telegram_user: matteotempestini
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/143,176579027,2016-09-13 09:02:04,2016-09-13 08:20:16,Test,41.452078,12.584819,"[""Accettato"", ""Telegram""]",,https://terremotocentroitalia.herokuapp.com/wordpress/wp-content/uploads/telegram-bot/84/1473754815.jpg,"{""data"": ""13/09/2016"", ""descrizione"": ""Test"", ""lon"": 12.584819, ""lat"": 41.452078, ""Telegram_user"": ""matteotempestini"", ""immagine"": ""https://terremotocentroitalia.herokuapp.com/wordpress/wp-content/uploads/telegram-bot/84/1473754815.jpg""}","<pre><yamldata>Telegram_user: matteotempestini
 descrizione: Test
 immagine: https://terremotocentroitalia.herokuapp.com/wordpress/wp-content/uploads/telegram-bot/84/1473754815.jpg
 lat: 41.452078
 lon: 12.584819
 data: 13/09/2016</yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/135,176240530,2016-09-13 09:21:01,2016-09-11 12:01:37,Prova con heroku,42.62810172281644,13.292555809020996,"[""Accettato"", ""Fabbisogni"", ""Form""]",,http://i.imgur.com/NsaBzs0.png,"{""lat"": 42.62810172281644, ""email"": null, ""descrizione"": ""Prova"", ""tel"": null, ""indirizzo"": ""Via del Castagneto, Casale Zocchi, Amatrice, RI, Lazio, Italia"", ""immagine"": ""http://i.imgur.com/NsaBzs0.png"", ""lon"": 13.292555809020996, ""data"": ""11/09/2016"", ""link"": null, ""cosa"": ""Prova con heroku""}","<pre><yamldata>tel: 
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/135,176240530,2016-09-13 09:21:01,2016-09-11 12:01:37,Prova con heroku,42.62810172281644,13.292555809020996,"[""Accettato"", ""Fabbisogni"", ""Form""]",,http://i.imgur.com/NsaBzs0.png,"{""tel"": null, ""indirizzo"": ""Via del Castagneto, Casale Zocchi, Amatrice, RI, Lazio, Italia"", ""descrizione"": ""Prova"", ""lon"": 13.292555809020996, ""cosa"": ""Prova con heroku"", ""data"": ""11/09/2016"", ""email"": null, ""link"": null, ""lat"": 42.62810172281644, ""immagine"": ""http://i.imgur.com/NsaBzs0.png""}","<pre><yamldata>tel: 
 email: 
 cosa: Prova con heroku
 descrizione: Prova
@@ -21,7 +21,7 @@ lon: 13.292555809020996
 link: 
 immagine: http://i.imgur.com/NsaBzs0.png
 data: 11/09/2016</yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/132,176198289,2016-09-10 19:35:44,2016-09-10 19:35:11,Test,42.63665812464417,13.298821449279785,"[""Accettato"", ""Fabbisogni"", ""Form""]",,https://terremoto.francescopinzauti.com/img/14-35-11Screenshot%20%289%29.png,"{""lat"": 42.63665812464417, ""email"": ""gfdgfdg@gmail.com"", ""descrizione"": ""Una descrizione di prova"", ""tel"": 393272032790, ""indirizzo"": ""SP20, Casale Zocchi, Amatrice, RI, Lazio, Italia"", ""immagine"": ""https://terremoto.francescopinzauti.com/img/14-35-11Screenshot%20%289%29.png"", ""lon"": 13.298821449279785, ""data"": ""10/09/2016"", ""link"": ""https://www.facebook.com"", ""cosa"": ""Test""}","<pre><yamldata>tel: +393272032790
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/132,176198289,2016-09-10 19:35:44,2016-09-10 19:35:11,Test,42.63665812464417,13.298821449279785,"[""Accettato"", ""Fabbisogni"", ""Form""]",,https://terremoto.francescopinzauti.com/img/14-35-11Screenshot%20%289%29.png,"{""tel"": 393272032790, ""indirizzo"": ""SP20, Casale Zocchi, Amatrice, RI, Lazio, Italia"", ""descrizione"": ""Una descrizione di prova"", ""lon"": 13.298821449279785, ""cosa"": ""Test"", ""data"": ""10/09/2016"", ""email"": ""gfdgfdg@gmail.com"", ""link"": ""https://www.facebook.com"", ""lat"": 42.63665812464417, ""immagine"": ""https://terremoto.francescopinzauti.com/img/14-35-11Screenshot%20%289%29.png""}","<pre><yamldata>tel: +393272032790
 email: gfdgfdg@gmail.com
 cosa: Test
 descrizione: Una descrizione di prova
@@ -31,7 +31,7 @@ lon: 13.298821449279785
 link: https://www.facebook.com
 immagine: https://terremoto.francescopinzauti.com/img/14-35-11Screenshot%20%289%29.png
 data: 10/09/2016</yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/131,176197968,2016-09-10 19:29:34,2016-09-10 19:29:07,Prova,42.658454266731226,13.22479248046875,"[""Accettato"", ""Alloggi"", ""Form""]",,https://terremoto.francescopinzauti.com/img/14-29-07Screenshot%20%286%29.png,"{""lat"": 42.658454266731226, ""email"": ""francescopinzauti@gmail.com"", ""descrizione"": ""Prova"", ""tel"": 393272032790, ""indirizzo"": ""Collemoresco, Amatrice, RI, Lazio, Italia"", ""immagine"": ""https://terremoto.francescopinzauti.com/img/14-29-07Screenshot%20%286%29.png"", ""lon"": 13.22479248046875, ""data"": ""10/09/2016"", ""link"": ""http://www.ansa.it/sito/notizie/cronaca/2016/09/09/ateneo-cagliari-no-tasse-terremotati_ffe4ee7d-ebc2-4d8c-9d34-f99d0d1eaa7b.html""}","<pre><yamldata>tel: +393272032790
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/131,176197968,2016-09-10 19:29:34,2016-09-10 19:29:07,Prova,42.658454266731226,13.22479248046875,"[""Accettato"", ""Alloggi"", ""Form""]",,https://terremoto.francescopinzauti.com/img/14-29-07Screenshot%20%286%29.png,"{""tel"": 393272032790, ""indirizzo"": ""Collemoresco, Amatrice, RI, Lazio, Italia"", ""descrizione"": ""Prova"", ""lon"": 13.22479248046875, ""data"": ""10/09/2016"", ""email"": ""francescopinzauti@gmail.com"", ""link"": ""http://www.ansa.it/sito/notizie/cronaca/2016/09/09/ateneo-cagliari-no-tasse-terremotati_ffe4ee7d-ebc2-4d8c-9d34-f99d0d1eaa7b.html"", ""lat"": 42.658454266731226, ""immagine"": ""https://terremoto.francescopinzauti.com/img/14-29-07Screenshot%20%286%29.png""}","<pre><yamldata>tel: +393272032790
 email: francescopinzauti@gmail.com
 descrizione: Prova
 indirizzo: Collemoresco, Amatrice, RI, Lazio, Italia
