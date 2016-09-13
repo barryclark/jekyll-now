@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/184,176757123,2016-09-13 21:39:32,2016-09-13 21:39:04,Caritas Ambrosiana Onlus - Via S.Bernardino 4 - 20122 Milano,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Caritas Ambrosiana Onlus - Via S.Bernardino 4 - 20122 Milano"", ""data"": ""13/09/2016"", ""descrizione"": """", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""http://caritasambrosiana.it/area-per-la-stampa/approfondimenti-area-per-la-stampa/terremoto-centro-italia-dona-ora"", ""postale"": ""13576228""}","<pre><yamldata>chi: 'Caritas Ambrosiana Onlus - Via S.Bernardino 4 - 20122 Milano'
+descrizione: ''
+intestazione: ''
+iban: ''
+bic: ''
+postale: '13576228'
+causale: ''
+link: 'http://caritasambrosiana.it/area-per-la-stampa/approfondimenti-area-per-la-stampa/terremoto-centro-italia-dona-ora'
+email: ''
+data: 13/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/182,176756583,2016-09-13 21:38:14,2016-09-13 21:36:24,Monte dei Paschi di Siena,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Monte dei Paschi di Siena"", ""data"": ""13/09/2016"", ""descrizione"": ""Versamenti sono possibili anche chiamando il numero verde 800 41 41 41."", ""email"": """", ""iban"": ""IT 77 H 01030 14200 000008605376"", ""intestazione"": ""Terremoto Italia centrale agosto 2016"", ""link"": ""http://www.bancaforte.it/notizie/2016/08/mps-un-aiuto-per-la-popolazione-colpita-dal-sisma"", ""postale"": """"}","<pre><yamldata>chi: 'Monte dei Paschi di Siena'
 descrizione: 'Versamenti sono possibili anche chiamando il numero verde 800 41 41 41.'
 intestazione: 'Terremoto Italia centrale agosto 2016'
