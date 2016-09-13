@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/194,176764828,2016-09-13 22:17:31,2016-09-13 22:17:00,Caritas di Parma,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Terremoto Centro Italia"", ""chi"": ""Caritas di Parma"", ""data"": ""13/09/2016"", ""descrizione"": ""Le offerte potranno essere portate direttamente negli uffici della sede della Caritas diocesana (Pazza Duomo 3) (fonte: Gazzetta di Parma, 25/08/2016, pag. 7)"", ""email"": """", ""iban"": ""IT88G 06230 12700 000037249796"", ""intestazione"": """", ""link"": """", ""postale"": """"}","<pre><yamldata>chi: 'Caritas di Parma'
+descrizione: 'Le offerte potranno essere portate direttamente negli uffici della sede della Caritas diocesana (Pazza Duomo 3) (fonte: Gazzetta di Parma, 25/08/2016, pag. 7)'
+intestazione: ''
+iban: 'IT88G 06230 12700 000037249796'
+bic: ''
+postale: ''
+causale: 'Terremoto Centro Italia'
+link: ''
+email: ''
+data: 13/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/193,176764273,2016-09-13 22:14:33,2016-09-13 22:13:57,Caritas Bergamo,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Terremoto Centro Italia"", ""chi"": ""Caritas Bergamo"", ""data"": ""13/09/2016"", ""descrizione"": ""Il contributo \u00e8 possibile anche mediante offerte consegnate direttamente alla sede della Caritas diocesana bergamasca in via del Conventino 8 a Bergamo (da luned\u00ec a venerd\u00ec dalle 9 alle 12,30 e dalle 14,30 alle 18). (fonte: Eco di Bergamo, 25/08/2016, pag. 10)"", ""email"": """", ""iban"": ""IT69E 05034 11105 000000006330"", ""intestazione"": ""\""Caritas diocesana bergamasca - Via Conventino, 8 - 24125 Bergamo , presso Credito Bergamasco - Filiale Bergamo Malpensata \"""", ""link"": """", ""postale"": ""11662244""}","<pre><yamldata>chi: 'Caritas Bergamo'
 descrizione: 'Il contributo è possibile anche mediante offerte consegnate direttamente alla sede della Caritas diocesana bergamasca in via del Conventino 8 a Bergamo (da lunedì a venerdì dalle 9 alle 12,30 e dalle 14,30 alle 18). (fonte: Eco di Bergamo, 25/08/2016, pag. 10)'
 intestazione: '""Caritas diocesana bergamasca - Via Conventino, 8 - 24125 Bergamo , presso Credito Bergamasco - Filiale Bergamo Malpensata ""'
