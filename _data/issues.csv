@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/312,176955947,2016-09-14 16:35:30,2016-09-14 16:30:42,Donazioni deducibili per i terremotati. Individuati gli enti nell'ascolano,,,"[""Accettato"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""Il prefetto di Ascoli Piceno ha firmato il decreto che individua gli organismi attraverso i quali \u00e8 possibile fare donazioni esentasse a favore della popolazione della provincia, duramente colpita dal terremoto del 24 agosto scorso."", ""link"": ""http://www.interno.gov.it/it/notizie/donazioni-deducibili-i-terremotati-individuati-enti-nellascolano"", ""titolo"": ""Donazioni deducibili per i terremotati. Individuati gli enti nell'ascolano""}","<pre><yamldata>titolo: 'Donazioni deducibili per i terremotati. Individuati gli enti nell''ascolano'
+descrizione: 'Il prefetto di Ascoli Piceno ha firmato il decreto che individua gli organismi attraverso i quali è possibile fare donazioni esentasse a favore della popolazione della provincia, duramente colpita dal terremoto del 24 agosto scorso.'
+link: 'http://www.interno.gov.it/it/notizie/donazioni-deducibili-i-terremotati-individuati-enti-nellascolano'
+data: 14/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/304,176950065,2016-09-14 16:11:07,2016-09-14 16:08:01,Hotel Mario - Cesenatico,44.180454,12.423208,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""Giacomo Pantani: Hotel Mario di Cesenatico metto a disposizione dai prossimi giorni la mia struttura alberghiera per ospitare le persone che sono state costrette a lasciare le proprie abitazioni a causa del sisma del centro Italia. Mi sto informando per cercare anche altre strutture disponibili."", ""email"": """", ""immagine"": """", ""lat"": ""44.180454"", ""link"": ""https://www.facebook.com/romagnafamilyhotel.it/"", ""lon"": ""12.423208"", ""tel"": ""054787423""}","<pre><yamldata>tel: '054787423'
 email: ''
 descrizione: 'Giacomo Pantani: Hotel Mario di Cesenatico metto a disposizione dai prossimi giorni la mia struttura alberghiera per ospitare le persone che sono state costrette a lasciare le proprie abitazioni a causa del sisma del centro Italia. Mi sto informando per cercare anche altre strutture disponibili.'
@@ -966,17 +971,6 @@ link: ''
 email: ''
 data: 13/09/2016
 </yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/191,176762355,2016-09-13 22:04:37,2016-09-13 22:03:50,Caritas Belluno-Feltre,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Colletta terremoto Centro Italia"", ""chi"": ""Caritas Belluno-Feltre"", ""data"": ""13/09/2016"", ""descrizione"": ""l contributi possono essere fatti pervenire anche nelle parrocchie o nella sede Caritas, al terzo piano del Centro diocesano Giovanni XXIII in piazza Piloni 11 a Belluno, aperta dal luned\u00ec al venerd\u00ec dalle 9 alle 12. (fonte: Corriere delle Alpi, 25/08/2016, pag. 13)"", ""email"": """", ""iban"": ""IT57K 07601 11900 000037921327 - IT10C 02008 11910 000003490760 (presso Unicredit banca);  IT33T 03359 01600 100000143821 ( presso Banca Prossima)"", ""intestazione"": ""Diocesi Belluno-Feltre, Caritas diocesana"", ""link"": """", ""postale"": """"}","<pre><yamldata>chi: 'Caritas Belluno-Feltre'
-descrizione: 'l contributi possono essere fatti pervenire anche nelle parrocchie o nella sede Caritas, al terzo piano del Centro diocesano Giovanni XXIII in piazza Piloni 11 a Belluno, aperta dal lunedì al venerdì dalle 9 alle 12. (fonte: Corriere delle Alpi, 25/08/2016, pag. 13)'
-intestazione: 'Diocesi Belluno-Feltre, Caritas diocesana'
-iban: 'IT57K 07601 11900 000037921327 - IT10C 02008 11910 000003490760 (presso Unicredit banca);  IT33T 03359 01600 100000143821 ( presso Banca Prossima)'
-bic: ''
-postale: ''
-causale: 'Colletta terremoto Centro Italia'
-link: ''
-email: ''
-data: 13/09/2016
-</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/186,176759097,2016-09-14 11:31:02,2016-09-13 21:47:40,Tende e Roulottes,42.63289,13.28937,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Tende e Roulottes"", ""data"": ""13/09/2016"", ""descrizione"": ""In questo momento alle famiglie colpite nella zona del sisma, agli allevatori e alla gente di cavalli servono tende e roulottes: vi preghiamo, se ne aveste una che potete mettere a disposizione, di farcelo sapere."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": 42.63289, ""link"": ""http://www.cavallomagazine.it/amatrice-servono-roulottes-per-stare-vicino-a-case-e-cavalli-1.2460099"", ""lon"": 13.28937, ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 cosa: 'Tende e Roulottes'
@@ -1273,6 +1267,13 @@ descrizione: '++URGENTE++ Occorre una roulotte attrezzata per Enzo, unico rimast
 immagine: ''
 lat: '42.749867'
 lon: '13.269536'
+data: 13/09/2016
+</yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/152,176674007,2016-09-13 15:35:56,2016-09-13 15:34:48,PROVA campo scossa solidale,42.621783,13.30634,"[""Accettato"", ""Telegram""]",,http://i.imgur.com/ifNB7qI.jpg,"{""data"": ""13/09/2016"", ""descrizione"": ""PROVA campo scossa solidale"", ""immagine"": ""http://i.imgur.com/ifNB7qI.jpg"", ""lat"": ""42.621783"", ""lon"": ""13.30634"", ""telegram_user"": """"}","<pre><yamldata>telegram_user: ''
+descrizione: 'PROVA campo scossa solidale'
+immagine: 'http://i.imgur.com/ifNB7qI.jpg'
+lat: '42.621783'
+lon: '13.30634'
 data: 13/09/2016
 </yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/152,176674007,2016-09-13 15:35:56,2016-09-13 15:34:48,PROVA campo scossa solidale,42.621783,13.30634,"[""Accettato"", ""Telegram""]",,http://i.imgur.com/ifNB7qI.jpg,"{""data"": ""13/09/2016"", ""descrizione"": ""PROVA campo scossa solidale"", ""immagine"": ""http://i.imgur.com/ifNB7qI.jpg"", ""lat"": ""42.621783"", ""lon"": ""13.30634"", ""telegram_user"": """"}","<pre><yamldata>telegram_user: ''
