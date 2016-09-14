@@ -434,14 +434,14 @@ link: 'https://www.facebook.com/groups/1758670357733881/permalink/17603037509038
 immagine: ''
 data: 14/09/2016
 </yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/298,176945135,2016-09-14 18:03:32,2016-09-14 15:50:04,"PC, computer, stampanti e materiale informatico",,,"[""Accettato"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""PC, computer, stampanti e materiale informatico"", ""data"": ""14/09/2016"", ""descrizione"": ""A nome di Informatici Senza Frontiere, possiamo fornire supporto con materiale informatico vario per ripristinare uffici pubblici, scuole, etc. Abbiamo gi\u00e0 fatto cose simili per il terremoto in Emilia. Abbiamo anche gi\u00e0 scritto un SMS al sindaco di Amatrice dopo il suo appello pubblico ma senza aver ottenuto risposta - IN TUTTA ITALIA"", ""email"": ""claudio.rosazza@informaticisenzafrontiere.org"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""www.informaticisenzafrontiere.org"", ""lon"": """", ""tel"": ""348 263 97 23""}","<pre><yamldata>tel: '348 263 97 23'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/298,176945135,2016-09-14 21:57:27,2016-09-14 15:50:04,"PC, computer, stampanti e materiale informatico",,,"[""Accettato"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""PC, computer, stampanti e materiale informatico"", ""data"": ""14/09/2016"", ""descrizione"": ""A nome di Informatici Senza Frontiere, possiamo fornire supporto con materiale informatico vario per ripristinare uffici pubblici, scuole, etc. Abbiamo gi\u00e0 fatto cose simili per il terremoto in Emilia. Abbiamo anche gi\u00e0 scritto un SMS al sindaco di Amatrice dopo il suo appello pubblico ma senza aver ottenuto risposta - IN TUTTA ITALIA"", ""email"": ""claudio.rosazza@informaticisenzafrontiere.org"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""http://www.informaticisenzafrontiere.org"", ""lon"": """", ""tel"": ""348 263 97 23""}","<pre><yamldata>tel: '348 263 97 23'
 email: claudio.rosazza@informaticisenzafrontiere.org
 cosa: 'PC, computer, stampanti e materiale informatico'
 descrizione: 'A nome di Informatici Senza Frontiere, possiamo fornire supporto con materiale informatico vario per ripristinare uffici pubblici, scuole, etc. Abbiamo già fatto cose simili per il terremoto in Emilia. Abbiamo anche già scritto un SMS al sindaco di Amatrice dopo il suo appello pubblico ma senza aver ottenuto risposta - IN TUTTA ITALIA'
 indirizzo: ''
 lat: ''
 lon: ''
-link: www.informaticisenzafrontiere.org
+link: 'http://www.informaticisenzafrontiere.org'
 immagine: ''
 data: 14/09/2016
 </yamldata></pre>"
