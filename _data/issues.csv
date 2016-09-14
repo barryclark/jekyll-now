@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/332,176995781,2016-09-14 19:20:06,2016-09-14 19:18:46,"B&B ""LA TERRAZZA D'ABRUZZO"" ",42.221929,14.245735,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""B&B \""LA TERRAZZA D'ABRUZZO\"" per 12 persone"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": ""42.221929"", ""link"": """", ""lon"": ""14.245735"", ""tel"": ""3473805566""}","<pre><yamldata>tel: '3473805566'
+email: ''
+descrizione: 'B&B ""LA TERRAZZA D''ABRUZZO"" per 12 persone'
+indirizzo: ''
+lat: '42.221929'
+lon: '14.245735'
+link: ''
+immagine: ''
+data: 14/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/327,176993224,2016-09-14 19:08:41,2016-09-14 19:07:36,"HOTEL ""VETTA D'ABRUZZO"" ROCCAR",41.850455,14.079666,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""HOTEL \""VETTA D'ABRUZZO\"" ROCCARASO AQ (per 2 famiglie)"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": ""41.850455"", ""link"": """", ""lon"": ""14.079666"", ""tel"": ""086462695""}","<pre><yamldata>tel: '086462695'
 email: ''
 descrizione: 'HOTEL ""VETTA D''ABRUZZO"" ROCCARASO AQ (per 2 famiglie)'
@@ -923,17 +933,6 @@ bic: ''
 postale: ''
 causale: 'Contributo sisma agosto 2016'
 link: 'http://www.comune.accumoli.ri.it/sisma-centro-italia-2016/'
-email: ''
-data: 13/09/2016
-</yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/220,176775260,2016-09-13 23:25:36,2016-09-13 23:19:10,Associazione Culturale Illica (Amatrice),,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Pro terremoto Illica"", ""chi"": ""Associazione Culturale Illica (Amatrice)"", ""data"": ""13/09/2016"", ""descrizione"": """", ""email"": """", ""iban"": ""IT32N 07601 03200 000071446603"", ""intestazione"": """", ""link"": ""https://www.facebook.com/AssociazioneCulturaleIllica/?fref=ts"", ""postale"": """"}","<pre><yamldata>chi: 'Associazione Culturale Illica (Amatrice)'
-descrizione: ''
-intestazione: ''
-iban: 'IT32N 07601 03200 000071446603'
-bic: ''
-postale: ''
-causale: 'Pro terremoto Illica'
-link: 'https://www.facebook.com/AssociazioneCulturaleIllica/?fref=ts'
 email: ''
 data: 13/09/2016
 </yamldata></pre>"
