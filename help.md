@@ -57,7 +57,7 @@ permalink: /aiuto/
             </a>per segnalare contenuti da rimuovere
           </li>
 
-<p>Tutto ciò che ci mandi sarà gestito dal nostro team, che provvederà alla pubblicazione sul sito appena possibile. Ricordati che usando i nostri canali accetti auomaticamente di sottoscrivere l'[informativa legale per segnalare](http://terremotocentroitalia.info/legal_segnalazioni/) informazioni a questo progetto.</p>
+<p>Tutto ciò che ci mandi sarà gestito dal nostro team, che provvederà alla pubblicazione sul sito appena possibile. Ricordati che usando i nostri canali accetti auomaticamente di sottoscrivere l'<a href="http://terremotocentroitalia.info/legal_segnalazioni/">informativa legale</a> per segnalare informazioni a questo progetto.</p>
 
 </div>
 <div class="posts">
