@@ -1,4 +1,26 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/266,176855382,2016-09-14 09:14:39,2016-09-14 09:14:15,Roma per Amatrice,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Roma per Amatrice"", ""data"": ""14/09/2016"", ""descrizione"": ""L'Associazione guide turistiche di Roma e \""Una domenica al museo\"" raccolgono fondi per Amatrice: domenica 4 settembre, 2 ottobre, 6 novembre e 4 dicembre gli incassi dei musei romani saranno devoluti alla popolazione di Amatrice"", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""https://twitter.com/astridrome/status/772335845873487872"", ""postale"": """"}","<pre><yamldata>chi: 'Roma per Amatrice'
+descrizione: 'L''Associazione guide turistiche di Roma e ""Una domenica al museo"" raccolgono fondi per Amatrice: domenica 4 settembre, 2 ottobre, 6 novembre e 4 dicembre gli incassi dei musei romani saranno devoluti alla popolazione di Amatrice'
+intestazione: ''
+iban: ''
+bic: ''
+postale: ''
+causale: ''
+link: 'https://twitter.com/astridrome/status/772335845873487872'
+email: ''
+data: 14/09/2016
+</yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/265,176855261,2016-09-14 09:14:45,2016-09-14 09:13:43,Un racconto in aiuto,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Un racconto in aiuto"", ""data"": ""14/09/2016"", ""descrizione"": ""Ho deciso di pubblicare il racconto \u201cIl matrimonio di Alice\u201d, che sancisce il ritorno dei protagonisti di \""Non volare via\"", per raccogliere una piccola parte di fondi utili alla ricostruzione dei paesi colpiti dal sisma."", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""http://www.sara4you.it/"", ""postale"": """"}","<pre><yamldata>chi: 'Un racconto in aiuto'
+descrizione: 'Ho deciso di pubblicare il racconto “Il matrimonio di Alice”, che sancisce il ritorno dei protagonisti di ""Non volare via"", per raccogliere una piccola parte di fondi utili alla ricostruzione dei paesi colpiti dal sisma.'
+intestazione: ''
+iban: ''
+bic: ''
+postale: ''
+causale: ''
+link: 'http://www.sara4you.it/'
+email: ''
+data: 14/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/252,176851806,2016-09-14 09:00:31,2016-09-14 08:57:23,Comune di Pordenone,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Donazione pro terremotati centro Italia"", ""chi"": ""Comune di Pordenone"", ""data"": ""14/09/2016"", ""descrizione"": ""Il conto \u00e8 attivato presso l\u2019agenzia 3 della Bcc di Pordenone"", ""email"": """", ""iban"": ""IT 20 Z 08356 12503 000000050917"", ""intestazione"": ""Circolo ricreativo culturale dipendenti Comune Pn \u2013 Pro terremotati"", ""link"": ""http://www.comune.pordenone.it/it/comunichiamo/comune-informa/notizie/conto-pro-terremotati-e-serate-di-beneficienza"", ""postale"": """"}","<pre><yamldata>chi: 'Comune di Pordenone'
 descrizione: 'Il conto è attivato presso l’agenzia 3 della Bcc di Pordenone'
 intestazione: 'Circolo ricreativo culturale dipendenti Comune Pn – Pro terremotati'
@@ -309,17 +331,6 @@ bic: ''
 postale: ''
 causale: ''
 link: 'https://www.retedeldono.it/it/siamoconvoi'
-email: ''
-data: 13/09/2016
-</yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/210,176773917,2016-09-13 23:26:48,2016-09-13 23:10:34,National Italian American Fondation,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""National Italian American Fondation"", ""data"": ""13/09/2016"", ""descrizione"": """", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""http://italianamericanrelief.org"", ""postale"": """"}","<pre><yamldata>chi: 'National Italian American Fondation'
-descrizione: ''
-intestazione: ''
-iban: ''
-bic: ''
-postale: ''
-causale: ''
-link: 'http://italianamericanrelief.org'
 email: ''
 data: 13/09/2016
 </yamldata></pre>"
