@@ -1,14 +1,18 @@
 table.gsc-above-wrapper-area-container,
+table.gsc-resultsHeader,
 table.gsc-search-box {
+    border: 0;
     box-shadow: none;
 }
 
 table.gsc-above-wrapper-area-container tr,
+table.gsc-resultsHeader tr,
 table.gsc-search-box tr {
     background-color: transparent;
 }
 
 table.gsc-above-wrapper-area-container td,
+table.gsc-resultsHeader td,
 table.gsc-search-box td {
     border: 0;
     border-width: 0;
