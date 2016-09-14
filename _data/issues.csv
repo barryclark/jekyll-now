@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/325,176990863,2016-09-14 18:59:11,2016-09-14 18:57:40,MARISTELLA UDINE ospitalità,,,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""MARISTELLA di UDINE pu\u00f2 ospitare a casa propria"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3475363244""}","<pre><yamldata>tel: '3475363244'
+email: ''
+descrizione: 'MARISTELLA di UDINE può ospitare a casa propria'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 14/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/324,176988880,2016-09-14 18:50:26,2016-09-14 18:49:21,"Isabella e Edoardo, Firenze",,,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""Isabella e Edoardo, offrono camera matrimoniale a FIRENZE"", ""email"": ""isyradio@yahoo.it"", ""immagine"": """", ""indirizzo"": ""Firenze centro"", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3204961225""}","<pre><yamldata>tel: '3204961225'
 email: isyradio@yahoo.it
 descrizione: 'Isabella e Edoardo, offrono camera matrimoniale a FIRENZE'
@@ -281,13 +291,6 @@ data: 27/08/2016
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/295,176887436,2016-09-14 16:33:03,2016-09-14 11:54:18,Domani al via le trasmissioni di Radio Amatrice (99.100),,,"[""Accettato"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""Da domani alle 17, dagli studi di via Farchioni 8 a Rieti, inizieranno le trasmissioni di Radio Amatrice sui 99.100, stazione radiofonica dedicata all'informazione da e per Amatrice. L'iniziativa \u00e8 stata realizzata grazie al contributo della emittente Radio Dolce Musica. Ad Amatrice e Accumoli sar\u00e0 possibile ascoltare le comunicazioni utili in questa fase di emergenza. "", ""link"": ""http://www.ilmessaggero.it/rieti/rieti_terremoto_amatrice_radio-1964542.html"", ""titolo"": ""Domani al via le trasmissioni di Radio Amatrice (99.100)""}","<pre><yamldata>titolo: 'Domani al via le trasmissioni di Radio Amatrice (99.100)'
 descrizione: 'Da domani alle 17, dagli studi di via Farchioni 8 a Rieti, inizieranno le trasmissioni di Radio Amatrice sui 99.100, stazione radiofonica dedicata all''informazione da e per Amatrice. L''iniziativa è stata realizzata grazie al contributo della emittente Radio Dolce Musica. Ad Amatrice e Accumoli sarà possibile ascoltare le comunicazioni utili in questa fase di emergenza. '
 link: 'http://www.ilmessaggero.it/rieti/rieti_terremoto_amatrice_radio-1964542.html'
-data: 14/09/2016
-</yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/293,176867458,2016-09-14 11:01:32,2016-09-14 10:09:09,Scuola media di Arquata danneg,42.776289,13.29453,"[""Accettato"", ""Telegram""]",,http://i.imgur.com/ieYxjf9.jpg,"{""data"": ""14/09/2016"", ""descrizione"": ""Scuola media di Arquata danneggiata"", ""immagine"": ""http://i.imgur.com/ieYxjf9.jpg"", ""lat"": ""42.776289"", ""lon"": ""13.29453"", ""telegram_user"": """"}","<pre><yamldata>telegram_user: ''
-descrizione: 'Scuola media di Arquata danneggiata'
-immagine: 'http://i.imgur.com/ieYxjf9.jpg'
-lat: '42.776289'
-lon: '13.29453'
 data: 14/09/2016
 </yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/293,176867458,2016-09-14 11:01:32,2016-09-14 10:09:09,Scuola media di Arquata danneg,42.776289,13.29453,"[""Accettato"", ""Telegram""]",,http://i.imgur.com/ieYxjf9.jpg,"{""data"": ""14/09/2016"", ""descrizione"": ""Scuola media di Arquata danneggiata"", ""immagine"": ""http://i.imgur.com/ieYxjf9.jpg"", ""lat"": ""42.776289"", ""lon"": ""13.29453"", ""telegram_user"": """"}","<pre><yamldata>telegram_user: ''
