@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/315,176959632,2016-09-14 16:45:48,2016-09-14 16:45:11,Contributo fino a 600 Euro per ogni famiglia,,,"[""Accettato"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""Ordinanza della Protezione Civile n.388 articolo 3."", ""link"": ""https://twitter.com/cypherinfo/status/769874038244122625"", ""titolo"": ""Contributo fino a 600 Euro per ogni famiglia""}","<pre><yamldata>titolo: 'Contributo fino a 600 Euro per ogni famiglia'
+descrizione: 'Ordinanza della Protezione Civile n.388 articolo 3.'
+link: 'https://twitter.com/cypherinfo/status/769874038244122625'
+data: 14/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/313,176957007,2016-09-14 16:35:41,2016-09-14 16:35:01,Mariella Rosati,,,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""Mariella Rosati Se qualche amico/amica di fb e tw terremotati hanno bisogno di alloggiare a 100 km dal sisma Sulla E , do la mia casa vacanza di 8 posti letto gratuitamente"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3911712562""}","<pre><yamldata>tel: '3911712562'
 email: ''
 descrizione: 'Mariella Rosati Se qualche amico/amica di fb e tw terremotati hanno bisogno di alloggiare a 100 km dal sisma Sulla E , do la mia casa vacanza di 8 posti letto gratuitamente'
