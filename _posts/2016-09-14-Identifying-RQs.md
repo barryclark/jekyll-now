@@ -1,6 +1,6 @@
 ---
 layout: post
-title: “Identifying Research Questions"
+title: Identifying Research Questions
 author: dkomarovo
 ---
 
