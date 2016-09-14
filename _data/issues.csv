@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/234,176843774,2016-09-14 08:32:13,2016-09-14 08:18:48,Pecorino solidale,42.63067508173938,13.292770385742188,"[""Accettato"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""Pecorino solidale"", ""data"": ""14/09/2016"", ""descrizione"": ""Sostegno (nel lungo termine) dei pastori amatriciani, riuniti nel Consorzio di tutela \u201cL\u2019Amatriciano: il Pecorino dei Monti della Laga\u201d - si possono acquistare o prenotare i formaggi amatriciani (spedizioni in tutta italia) contattando direttamente il Consorzio"", ""email"": ""info@pecorinoamatriciano.it"", ""immagine"": """", ""indirizzo"": ""Via Guglielmo Farchioni, Casale Zocchi, Amatrice, RI, LAZ, Italia"", ""lat"": ""42.63067508173938"", ""link"": ""https://postribu.net/2016/09/05/sos-pecorino-di-amatrice-acquisto-solidale/"", ""lon"": ""13.292770385742188"", ""tel"": ""340 233 4530 / tel. 0862 904774 - 3393933950""}","<pre><yamldata>tel: '340 233 4530 / tel. 0862 904774 - 3393933950'
+email: info@pecorinoamatriciano.it
+cosa: 'Pecorino solidale'
+descrizione: 'Sostegno (nel lungo termine) dei pastori amatriciani, riuniti nel Consorzio di tutela “L’Amatriciano: il Pecorino dei Monti della Laga” - si possono acquistare o prenotare i formaggi amatriciani (spedizioni in tutta italia) contattando direttamente il Consorzio'
+indirizzo: 'Via Guglielmo Farchioni, Casale Zocchi, Amatrice, RI, LAZ, Italia'
+lat: '42.63067508173938'
+lon: '13.292770385742188'
+link: 'https://postribu.net/2016/09/05/sos-pecorino-di-amatrice-acquisto-solidale/'
+immagine: ''
+data: 14/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/230,176836945,2016-09-14 08:15:50,2016-09-14 07:41:12,Cibo per cani e gatti,42.63028040169539,13.294529914855957,"[""Accettato"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""Cibo per cani e gatti"", ""data"": ""14/09/2016"", ""descrizione"": ""Disponibilit\u00e0 di cibo per cani e gatti"", ""email"": ""licetta@gmail.com"", ""immagine"": """", ""indirizzo"": ""Via Guglielmo Farchioni, Casale Zocchi, Amatrice, RI, LAZ, Italia"", ""lat"": ""42.63028040169539"", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1763708240563426/"", ""lon"": ""13.294529914855957"", ""tel"": ""3776858498""}","<pre><yamldata>tel: '3776858498'
 email: licetta@gmail.com
 cosa: 'Cibo per cani e gatti'
