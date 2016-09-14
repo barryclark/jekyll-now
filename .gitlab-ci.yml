@@ -5,7 +5,7 @@ before_script:
 
 variables:
   BUNDLE_GEMFILE: Gemfile.gitlab
-  DISABLE_WHITELIST: true
+  DISABLE_WHITELIST: 'true'
 
 cache:
   paths:
