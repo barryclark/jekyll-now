@@ -1,10 +1,10 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/322,176973642,2016-09-14 17:46:38,2016-09-14 17:45:06,Albergo Villa Rosa di Nusco,,,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""24/08/2016"", ""descrizione"": ""Albergo Villa Rosa di Nusco mette a disposizione sin da domani 25 agosto 2016 VITTO E ALLOGGIO GRATUITI PER FAMIGLIE COLPITE DAL TERREMOTO. Nell'impossibilit\u00e0 di contattare la Protezione Civile di Rieti, della quale il numero \u00e8 perennemente occupato, chiediamo di condividere il post affinch\u00e9 giunga alle persone interessate."", ""email"": ""info@albergovillarosa.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.facebook.com/albergo.villarosa"", ""lon"": """", ""tel"": ""082764046 - 3289537991""}","<pre><yamldata>tel: '082764046 - 3289537991'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/322,176973642,2016-09-14 17:47:51,2016-09-14 17:45:06,Albergo Villa Rosa di Nusco,40.901245,15.084004,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""24/08/2016"", ""descrizione"": ""Albergo Villa Rosa di Nusco mette a disposizione sin da domani 25 agosto 2016 VITTO E ALLOGGIO GRATUITI PER FAMIGLIE COLPITE DAL TERREMOTO. Nell'impossibilit\u00e0 di contattare la Protezione Civile di Rieti, della quale il numero \u00e8 perennemente occupato, chiediamo di condividere il post affinch\u00e9 giunga alle persone interessate."", ""email"": ""info@albergovillarosa.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": ""40.901245"", ""link"": ""https://www.facebook.com/albergo.villarosa"", ""lon"": ""15.084004"", ""tel"": ""082764046 - 3289537991""}","<pre><yamldata>tel: '082764046 - 3289537991'
 email: info@albergovillarosa.it
 descrizione: 'Albergo Villa Rosa di Nusco mette a disposizione sin da domani 25 agosto 2016 VITTO E ALLOGGIO GRATUITI PER FAMIGLIE COLPITE DAL TERREMOTO. Nell''impossibilità di contattare la Protezione Civile di Rieti, della quale il numero è perennemente occupato, chiediamo di condividere il post affinché giunga alle persone interessate.'
 indirizzo: ''
-lat: ''
-lon: ''
+lat: '40.901245'
+lon: '15.084004'
 link: 'https://www.facebook.com/albergo.villarosa'
 immagine: ''
 data: 24/08/2016
