@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/291,176860838,2016-09-14 09:40:03,2016-09-14 09:39:04,Pro Loco Magliano Sabina,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Pro Loco Magliano Sabina"", ""data"": ""14/09/2016"", ""descrizione"": ""Il Comune di Magliano Sabina e la Pro Loco in collaborazione con tutti i ristoratori del luogo organizza una cena di beneficenza per raccogliere i fondi a favore delle popolazioni colpite dal terremoto. Vi aspettiamo tutti venerd\u00ec 23 settembre 2016 dalle ore 20,00 in piazza Garibaldi"", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1768126863454897/"", ""postale"": """"}","<pre><yamldata>chi: 'Pro Loco Magliano Sabina'
+descrizione: 'Il Comune di Magliano Sabina e la Pro Loco in collaborazione con tutti i ristoratori del luogo organizza una cena di beneficenza per raccogliere i fondi a favore delle popolazioni colpite dal terremoto. Vi aspettiamo tutti venerdì 23 settembre 2016 dalle ore 20,00 in piazza Garibaldi'
+intestazione: ''
+iban: ''
+bic: ''
+postale: ''
+causale: ''
+link: 'https://www.facebook.com/groups/1758670357733881/permalink/1768126863454897/'
+email: ''
+data: 14/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/290,176860744,2016-09-14 09:39:57,2016-09-14 09:38:37,Rock per amatrice,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Rock per amatrice"", ""data"": ""14/09/2016"", ""descrizione"": ""Una serata a favore delle popolazioni colpite dal sisma del 23 Agosto ad Amatrice e Comuni vicini . L'incasso della biglietteria, escluse le spese di diritti siae, verr\u00e0 TOTALMENTE devoluto in beneficenza. Stiamo organizzando tante serate per poter inviare pi\u00f9 possibile. Tutti gli artisti si esibiranno gratuitamente, senza nessun tipo di compenso neanche a titolo di rimborso spese. Tutti gli incassi verranno pubblicati subito dopo l'evento con certificazione di quanto raccolto. Verranno pubblicati alla fine delle serate le ricevute della donazione che verr\u00e0 fatta in modo diretto ai beneficiari. prezzo biglietto 12 \u20ac orari apertura 20 orari show 21 www.lasalumeriadellamusica.com http://www.comune.amatrice.rieti.it/ #salumatiperamatrice"", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""https://www.facebook.com/events/328193884190927/"", ""postale"": """"}","<pre><yamldata>chi: 'Rock per amatrice'
 descrizione: 'Una serata a favore delle popolazioni colpite dal sisma del 23 Agosto ad Amatrice e Comuni vicini . L''incasso della biglietteria, escluse le spese di diritti siae, verrà TOTALMENTE devoluto in beneficenza. Stiamo organizzando tante serate per poter inviare più possibile. Tutti gli artisti si esibiranno gratuitamente, senza nessun tipo di compenso neanche a titolo di rimborso spese. Tutti gli incassi verranno pubblicati subito dopo l''evento con certificazione di quanto raccolto. Verranno pubblicati alla fine delle serate le ricevute della donazione che verrà fatta in modo diretto ai beneficiari. prezzo biglietto 12 € orari apertura 20 orari show 21 www.lasalumeriadellamusica.com http://www.comune.amatrice.rieti.it/ #salumatiperamatrice'
 intestazione: ''
@@ -639,17 +650,6 @@ bic: ''
 postale: ''
 causale: ''
 link: 'http://www.presidente.regione.umbria.it/news/-/asset_publisher/epXtRtYVn9JP/content/sisma-umbria-aperto-conto-corrente-bancario-per-raccolta-fondi'
-email: ''
-data: 13/09/2016
-</yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/213,176774413,2016-09-13 23:26:27,2016-09-13 23:13:40,Regione Marche,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": ""BPPIITRRXXX"", ""causale"": """", ""chi"": ""Regione Marche"", ""data"": ""13/09/2016"", ""descrizione"": """", ""email"": """", ""iban"": ""IT17Y 07601 02600 001034116044"", ""intestazione"": ""Reg. Marche donaz. favore territori Marche colpiti sisma 24 agosto 2016"", ""link"": ""http://www.regione.marche.it/"", ""postale"": ""1034116044""}","<pre><yamldata>chi: 'Regione Marche'
-descrizione: ''
-intestazione: 'Reg. Marche donaz. favore territori Marche colpiti sisma 24 agosto 2016'
-iban: 'IT17Y 07601 02600 001034116044'
-bic: BPPIITRRXXX
-postale: '1034116044'
-causale: ''
-link: 'http://www.regione.marche.it/'
 email: ''
 data: 13/09/2016
 </yamldata></pre>"
