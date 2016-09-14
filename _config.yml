@@ -196,6 +196,13 @@ collections:
   storie:
     output: true
 
+page_gen-dirs: true # uncomment, if you prefer to generate named folders
+page_gen:
+  - data: issues
+    template: issue
+    name: title
+    dir: issues
+
 gems:
   - jekyll-paginate
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
