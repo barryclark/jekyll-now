@@ -20,8 +20,12 @@ layout: base
   <div class="row"> <div class="col-md-4">Mappina:</div><div class="col-md-4"> <div id="map"></div> </div> </div>
   <div class="row"> <div class="col-md-4">label:</div> <div class="col-md-8"> {{page.issue.labels}} </div> </div>
   <div class="row"> <div class="col-md-4">milestone:</div> <div class="col-md-8"> {{page.issue.milestone}} </div> </div>
-  <div class="row"> <div class="col-md-4">image:</div> <div class="col-md-8"> <img src="{{page.issue.image}}"></img> </div> </div>
+  {% if page.issue.image %}
+  <div class="row"> <div class="col-md-4">image:</div> <div class="col-md-8"> <img alt="immagine" src="{{page.issue.image}}"></img> </div> </div>
+  {% endif %}
+  {% if page.issue.data.link %}
   <div class="row"> <div class="col-md-4">link:</div> <div class="col-md-8"> <a href="{{page.issue.data.link}}">{{page.issue.data.link}}</a></div> </div>
+  {% endif %}
   <div class="row"> <div class="col-md-12">{{page.issue.data}}</div></div>
 
 </div>
