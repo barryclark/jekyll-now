@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/334,176996434,2016-09-14 19:21:50,2016-09-14 19:21:34,"'ALBERGO ""PALAZZO RANUCCI"" di ",,,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""'ALBERGO \""PALAZZO RANUCCI\"" di TUSCANIA (2 camere matrimoniali e vitto). Disposti ad andare a prendere le persone in difficolt\u00e0."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""0761434394 - 3202631361""}","<pre><yamldata>tel: '0761434394 - 3202631361'
+email: ''
+descrizione: '''ALBERGO ""PALAZZO RANUCCI"" di TUSCANIA (2 camere matrimoniali e vitto). Disposti ad andare a prendere le persone in difficoltà.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 14/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/332,176995781,2016-09-14 19:20:06,2016-09-14 19:18:46,"B&B ""LA TERRAZZA D'ABRUZZO"" ",42.221929,14.245735,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""B&B \""LA TERRAZZA D'ABRUZZO\"" per 12 persone"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": ""42.221929"", ""link"": """", ""lon"": ""14.245735"", ""tel"": ""3473805566""}","<pre><yamldata>tel: '3473805566'
 email: ''
 descrizione: 'B&B ""LA TERRAZZA D''ABRUZZO"" per 12 persone'
