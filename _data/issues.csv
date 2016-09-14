@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/324,176988880,2016-09-14 18:50:26,2016-09-14 18:49:21,"Isabella e Edoardo, Firenze",,,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""Isabella e Edoardo, offrono camera matrimoniale a FIRENZE"", ""email"": ""isyradio@yahoo.it"", ""immagine"": """", ""indirizzo"": ""Firenze centro"", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3204961225""}","<pre><yamldata>tel: '3204961225'
+email: isyradio@yahoo.it
+descrizione: 'Isabella e Edoardo, offrono camera matrimoniale a FIRENZE'
+indirizzo: 'Firenze centro'
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 14/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/323,176988054,2016-09-14 18:47:37,2016-09-14 18:45:46,Resort Hotel Marinella Gabicce,43.967460,12.755939,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""Resort Hotel Marinella, Gabicce: mette a disposizione i suoi appartamenti a Gabicce per le famiglie colpite dal sisma"", ""email"": ""info@hotel-marinella.it"", ""immagine"": """", ""indirizzo"": ""Via Vittorio Veneto, 127 - 61011 Gabicce Mare PU"", ""lat"": ""43.967460"", ""link"": ""https://www.facebook.com/hotelmarinellagabicce/"", ""lon"": ""12.755939"", ""tel"": ""0541954571""}","<pre><yamldata>tel: '0541954571'
 email: info@hotel-marinella.it
 descrizione: 'Resort Hotel Marinella, Gabicce: mette a disposizione i suoi appartamenti a Gabicce per le famiglie colpite dal sisma'
