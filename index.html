@@ -53,7 +53,7 @@ layout: home
           function(data) {
               var results;
               $.each( data.items, function( i, item ) {
-                  results = '<article class="post"><a href="https://www.youtube.com/watch?v='+item.snippet.resourceId.videoId+'"><img src="'+item.snippet.thumbnails.high.url+'"/></a><h1><a href="https://www.youtube.com/watch?v='+item.snippet.resourceId.videoId+'">'+item.snippet.title+'</a></h1></article>';
+                  results = '<article class="post"><a target="_blank" href="https://www.youtube.com/watch?v='+item.snippet.resourceId.videoId+'"><img src="'+item.snippet.thumbnails.high.url+'"/></a><h1><a href="https://www.youtube.com/watch?v='+item.snippet.resourceId.videoId+'">'+item.snippet.title+'</a></h1></article>';
                   $('#youtube').append(results);
               });
           }
@@ -62,7 +62,7 @@ layout: home
   </script>
 
   <!--In your HTML -->
-  <div id="youtube" class="posts clearfix"></div>
+  <div id="youtube" class="posts"></div>
 
   <h2>Latest Instagram Photos</h2>
   <!-- LightWidget WIDGET --><script src="//lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/526ef3bcbc3b56dea102c7a56956ee96.html" id="lightwidget_526ef3bcbc" name="lightwidget_526ef3bcbc"  scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
