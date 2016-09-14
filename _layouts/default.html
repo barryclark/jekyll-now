@@ -90,9 +90,10 @@
 	          		<nav>
 	            	{% for navlink in site.navlinks %}<a href="{{ navlink.url }}">{{ navlink.text }}</a>{% if forloop.last %}{% else %}|{% endif %}{% endfor %}
 	          		</nav>
+	          		{% include google/search.html %}
 	        	</header>
 	        	{% include google/adsense.html %}
-	        	{% include google/search.html %}
+	        	
 	      	</div>
 		</div>
 		
