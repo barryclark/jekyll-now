@@ -1,4 +1,26 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/289,176860636,2016-09-14 09:39:52,2016-09-14 09:38:07,Amatrice nel cuore - Magliette Anpas,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Amatrice nel cuore - Magliette Anpas"", ""data"": ""14/09/2016"", ""descrizione"": ""Anpas lancia raccolta fondi per la ricostruzione con vendita di speciali magliette (10 euro)"", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""http://www.anpas.org/anpas-informa/com-stamp/2429-amatricenelcuore-ricostruzione.html"", ""postale"": """"}","<pre><yamldata>chi: 'Amatrice nel cuore - Magliette Anpas'
+descrizione: 'Anpas lancia raccolta fondi per la ricostruzione con vendita di speciali magliette (10 euro)'
+intestazione: ''
+iban: ''
+bic: ''
+postale: ''
+causale: ''
+link: 'http://www.anpas.org/anpas-informa/com-stamp/2429-amatricenelcuore-ricostruzione.html'
+email: ''
+data: 14/09/2016
+</yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/288,176860541,2016-09-14 09:39:45,2016-09-14 09:37:40,Conservatorio L'Aquila,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Una fisarmonica per ricominciare"", ""chi"": ""Conservatorio L'Aquila"", ""data"": ""14/09/2016"", ""descrizione"": ""Raccolta fondi per comprare fisarmonica a studente che nel sisma ha perso la sua fisarmonica Bajan (costo: 8000 euro)"", ""email"": """", ""iban"": ""IT47B0760105138241508841512"", ""intestazione"": """", ""link"": ""https://www.facebook.com/permalink.php?story_fbid=617397508419944&id=617346548425040"", ""postale"": """"}","<pre><yamldata>chi: 'Conservatorio L''Aquila'
+descrizione: 'Raccolta fondi per comprare fisarmonica a studente che nel sisma ha perso la sua fisarmonica Bajan (costo: 8000 euro)'
+intestazione: ''
+iban: IT47B0760105138241508841512
+bic: ''
+postale: ''
+causale: 'Una fisarmonica per ricominciare'
+link: 'https://www.facebook.com/permalink.php?story_fbid=617397508419944&id=617346548425040'
+email: ''
+data: 14/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/287,176860442,2016-09-14 09:39:38,2016-09-14 09:37:10,Cia-Agricoltori Italiani,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Cia-Agricoltori Italiani"", ""data"": ""14/09/2016"", ""descrizione"": ""Arriva il 'kit solidale' per vera amatriciana: un cofanetto per cucinare gricia e amatricana per 5 persone. Si pu\u00f2 acquistare a Torino durante il Salone del Gusto oppure nelle piazze italiane grazie al circuito della \""Spesa in Campagna\""."", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""http://www.ansa.it/canale_terraegusto/notizie/mondo_agricolo/2016/09/12/sisma-cia-arriva-il-kit-solidale-per-vera-amatriciana_6407dec4-7adf-4a6f-8c25-f5073a228f6d.html"", ""postale"": """"}","<pre><yamldata>chi: 'Cia-Agricoltori Italiani'
 descrizione: 'Arriva il ''kit solidale'' per vera amatriciana: un cofanetto per cucinare gricia e amatricana per 5 persone. Si può acquistare a Torino durante il Salone del Gusto oppure nelle piazze italiane grazie al circuito della ""Spesa in Campagna"".'
 intestazione: ''
@@ -969,17 +991,6 @@ bic: ''
 postale: ''
 causale: 'Solidarietà Terremoto Arquata del Tronto'
 link: 'https://www.facebook.com/ascolipiceno/photos/a.334802869887682.85935.131745913526713/1253222841379009/?type=3'
-email: ''
-data: 13/09/2016
-</yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/173,176749451,2016-09-13 21:05:53,2016-09-13 21:05:11,Associazione Enea Grilli,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Sisma Centro Italia"", ""chi"": ""Associazione Enea Grilli"", ""data"": ""13/09/2016"", ""descrizione"": """", ""email"": """", ""iban"": ""IT74H 05387 66850 000002064231"", ""intestazione"": """", ""link"": ""http://www.associazioneeneagrilli.org/index.php/news"", ""postale"": """"}","<pre><yamldata>chi: 'Associazione Enea Grilli'
-descrizione: ''
-intestazione: ''
-iban: 'IT74H 05387 66850 000002064231'
-bic: ''
-postale: ''
-causale: 'Sisma Centro Italia'
-link: 'http://www.associazioneeneagrilli.org/index.php/news'
 email: ''
 data: 13/09/2016
 </yamldata></pre>"
