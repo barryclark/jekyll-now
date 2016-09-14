@@ -1,4 +1,26 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/285,176859756,2016-09-14 09:35:19,2016-09-14 09:34:06,Comune di Amandola,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Comune di Amandola"", ""data"": ""14/09/2016"", ""descrizione"": ""In Amandola (FM), our hospital was badly hit and devestated. The hospital provides a vital role in our rural community and the surrounding villages where our next nearest hospital is an hour away. It must remain open and we will raise money and fight for this in spite of the region removing vital equipment the following day after the quake. Elderly residents rely on the hospital, some for daily treatment and it would be almost impossible to travel to the next nearest. The staff provide a wonderful service, including accident and emergency, radiology, physiotherapy, eye care, diabetes treatment and so much more. The mayor Adolfo Marinanigli is passionate about the hospital and is fighting alongside the people of Amandola to ensure our hospital is kept running. Just days after the earthquake, reconstruction work began and slowly some of the departments are being opened. We will continue to raise money for repairs as the service provided is essential in our community. La raccolta fondi \u00e8 aperta su Crowdfunder a questo link: http://www.crowdfunder.co.uk/rebuilding-amandola-hospital?tk=440b588b368fed76acd9aa70d31c0a0fbfffd361"", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""https://www.facebook.com/amandolacomuneofficial/posts/1794913634063302"", ""postale"": """"}","<pre><yamldata>chi: 'Comune di Amandola'
+descrizione: 'In Amandola (FM), our hospital was badly hit and devestated. The hospital provides a vital role in our rural community and the surrounding villages where our next nearest hospital is an hour away. It must remain open and we will raise money and fight for this in spite of the region removing vital equipment the following day after the quake. Elderly residents rely on the hospital, some for daily treatment and it would be almost impossible to travel to the next nearest. The staff provide a wonderful service, including accident and emergency, radiology, physiotherapy, eye care, diabetes treatment and so much more. The mayor Adolfo Marinanigli is passionate about the hospital and is fighting alongside the people of Amandola to ensure our hospital is kept running. Just days after the earthquake, reconstruction work began and slowly some of the departments are being opened. We will continue to raise money for repairs as the service provided is essential in our community. La raccolta fondi è aperta su Crowdfunder a questo link: http://www.crowdfunder.co.uk/rebuilding-amandola-hospital?tk=440b588b368fed76acd9aa70d31c0a0fbfffd361'
+intestazione: ''
+iban: ''
+bic: ''
+postale: ''
+causale: ''
+link: 'https://www.facebook.com/amandolacomuneofficial/posts/1794913634063302'
+email: ''
+data: 14/09/2016
+</yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/284,176859651,2016-09-14 09:35:14,2016-09-14 09:33:35,Comune di Sellano,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Comune di Sellano"", ""data"": ""14/09/2016"", ""descrizione"": ""\""Il Comune di Sellano ha attivato un Conto Corrente per la raccolta di donazioni.\"""", ""email"": """", ""iban"": ""IT83 D057 0438 6700 0000 0118 600"", ""intestazione"": ""Comune di Sellano"", ""link"": ""https://www.facebook.com/LaPiaggia/photos/a.433791210050472.1073741828.433770123385914/1070603943035859/?type=3&theater"", ""postale"": """"}","<pre><yamldata>chi: 'Comune di Sellano'
+descrizione: '""Il Comune di Sellano ha attivato un Conto Corrente per la raccolta di donazioni.""'
+intestazione: 'Comune di Sellano'
+iban: 'IT83 D057 0438 6700 0000 0118 600'
+bic: ''
+postale: ''
+causale: ''
+link: 'https://www.facebook.com/LaPiaggia/photos/a.433791210050472.1073741828.433770123385914/1070603943035859/?type=3&theater'
+email: ''
+data: 14/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/283,176859554,2016-09-14 09:35:08,2016-09-14 09:33:07,Rinascita Villanova di Accumoli onlus,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Rinascita Villanova di Accumoli onlus"", ""data"": ""14/09/2016"", ""descrizione"": ""Iniziativa per beni comuni (chiesa, cimitero, piazze, fontane etc) che il terremoto ha gravemente danneggiato, iniziative sociali aggregative che puntano a riportare i non-residenti nel loro paese di origine e possibilmente anche aiutare i residenti a vivere una vita pi\u00f9 serena."", ""email"": """", ""iban"": ""IT59G0200805323000104439944"", ""intestazione"": ""Rinascita Villanova di Accumoli onlus"", ""link"": ""http://www.villanovadiaccumolionlus.it/"", ""postale"": """"}","<pre><yamldata>chi: 'Rinascita Villanova di Accumoli onlus'
 descrizione: 'Iniziativa per beni comuni (chiesa, cimitero, piazze, fontane etc) che il terremoto ha gravemente danneggiato, iniziative sociali aggregative che puntano a riportare i non-residenti nel loro paese di origine e possibilmente anche aiutare i residenti a vivere una vita più serena.'
 intestazione: 'Rinascita Villanova di Accumoli onlus'
@@ -315,17 +337,6 @@ bic: ''
 postale: ''
 causale: 'Donazione Terremoto'
 link: 'https://www.facebook.com/automobileclub.ascolipicenofermo/photos/a.943656578986817.1073741826.943656545653487/1278764215476050/?type=3'
-email: ''
-data: 14/09/2016
-</yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/249,176851390,2016-09-14 09:00:53,2016-09-14 08:55:20,"Confindustria, Cgil, Cisl, Uil",,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": ""PASCITMMRM"", ""causale"": ""Fondo di solidariet\u00e0 per le popolazioni centro Italia"", ""chi"": ""Confindustria, Cgil, Cisl, Uil"", ""data"": ""14/09/2016"", ""descrizione"": ""\u201cFondo di intervento a favore delle popolazioni del Centro Italia\u201d nel quale confluiranno contributi volontari da parte dei lavoratori di tutto il territorio nazionale, pari a un\u2019ora di lavoro e un contributo equivalente, per ogni lavoratore, da parte delle imprese. La raccolta fondi terminer\u00e0 il 31 gennaio 2017"", ""email"": """", ""iban"": ""IT94V0103003201 000002589031"", ""intestazione"": """", ""link"": ""http://www.rassegna.it/articoli/terremoto-attivato-fondo-cgil-cisl-uil-e-confindustria"", ""postale"": """"}","<pre><yamldata>chi: 'Confindustria, Cgil, Cisl, Uil'
-descrizione: '“Fondo di intervento a favore delle popolazioni del Centro Italia” nel quale confluiranno contributi volontari da parte dei lavoratori di tutto il territorio nazionale, pari a un’ora di lavoro e un contributo equivalente, per ogni lavoratore, da parte delle imprese. La raccolta fondi terminerà il 31 gennaio 2017'
-intestazione: ''
-iban: 'IT94V0103003201 000002589031'
-bic: PASCITMMRM
-postale: ''
-causale: 'Fondo di solidarietà per le popolazioni centro Italia'
-link: 'http://www.rassegna.it/articoli/terremoto-attivato-fondo-cgil-cisl-uil-e-confindustria'
 email: ''
 data: 14/09/2016
 </yamldata></pre>"
