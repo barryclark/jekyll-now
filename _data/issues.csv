@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/327,176993224,2016-09-14 19:08:41,2016-09-14 19:07:36,"HOTEL ""VETTA D'ABRUZZO"" ROCCAR",41.850455,14.079666,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""HOTEL \""VETTA D'ABRUZZO\"" ROCCARASO AQ (per 2 famiglie)"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": ""41.850455"", ""link"": """", ""lon"": ""14.079666"", ""tel"": ""086462695""}","<pre><yamldata>tel: '086462695'
+email: ''
+descrizione: 'HOTEL ""VETTA D''ABRUZZO"" ROCCARASO AQ (per 2 famiglie)'
+indirizzo: ''
+lat: '41.850455'
+lon: '14.079666'
+link: ''
+immagine: ''
+data: 14/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/326,176991736,2016-09-14 19:01:58,2016-09-14 19:01:21,Fam. Paolini SENIGALLIA (AN),,,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""Fam. Paolini SENIGALLIA (AN) mette a disposizione appartamento con ascensore per 4/5 persone (3 camere)."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3661083315""}","<pre><yamldata>tel: '3661083315'
 email: ''
 descrizione: 'Fam. Paolini SENIGALLIA (AN) mette a disposizione appartamento con ascensore per 4/5 persone (3 camere).'
@@ -600,17 +610,6 @@ bic: ''
 postale: ''
 causale: ''
 link: 'http://www.agi.it/economia/2016/09/02/news/terremoto_arrivano_le_prime_caciotte_solidali_salva_mucche-1048380/'
-email: ''
-data: 14/09/2016
-</yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/261,176854612,2016-09-14 09:15:15,2016-09-14 09:10:40,Ristoranti navi Moby e Tirrenia,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Ristoranti navi Moby e Tirrenia"", ""data"": ""14/09/2016"", ""descrizione"": ""Adesione a campagna #AmatricianaSolidale di Milano byte Tirrenia a favore dei campi della Croce Rossa nelle zone terremotate"", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""https://twitter.com/tirreniait/status/771414877004976128"", ""postale"": """"}","<pre><yamldata>chi: 'Ristoranti navi Moby e Tirrenia'
-descrizione: 'Adesione a campagna #AmatricianaSolidale di Milano byte Tirrenia a favore dei campi della Croce Rossa nelle zone terremotate'
-intestazione: ''
-iban: ''
-bic: ''
-postale: ''
-causale: ''
-link: 'https://twitter.com/tirreniait/status/771414877004976128'
 email: ''
 data: 14/09/2016
 </yamldata></pre>"
