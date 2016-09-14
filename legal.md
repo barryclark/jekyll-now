@@ -70,7 +70,7 @@ La raccolta e il trattamento dei suddetti dati potrà essere svolto direttamente
 
 Nel caso in cui gli utenti si registrino per accedere a specifici servizi o funzionalità (come l’iscrizione al canale Telegram), i dati forniti saranno anch’essi trattati secondo la normativa in vigore.
 
-Tutti i dati sopracitati saranno trattati anche con l’ausilio di strumenti informatici e saranno conservati negli archivi del titolare del trattamento, ActionAid International Italia Onlus, con sede a Milano in Via Alserio 22”  va sostituita con: “Tutti i dati sopracitati saranno trattati anche con l’ausilio di strumenti informatici e saranno conservati negli archivi dei titolari del trattamento, ActionAid International Italia Onlus, con sede a Milano in Via Alserio 22 e Fondazione Realizza il Cambiamento, con sede a Milano in Via Alserio 22
+Tutti i dati sopracitati saranno trattati anche con l’ausilio di strumenti informatici e saranno conservati negli archivi dei titolari del trattamento, ActionAid International Italia Onlus, con sede a Milano in Via Alserio 22 e Fondazione Realizza il Cambiamento, con sede a Milano in Via Alserio 22.
  
 ### Diritti degli utenti
 
