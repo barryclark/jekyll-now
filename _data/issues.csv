@@ -10,6 +10,17 @@ link: 'http://www.docentisenzafrontiere.org/it/sostienici/speciale-emergenze/ter
 email: ''
 data: 14/09/2016
 </yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/242,176848897,2016-09-14 08:47:53,2016-09-14 08:43:34,Comune di Acquasanta Terme,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": ""BLOPIT22"", ""causale"": ""Solidariet\u00e0 Terremoto"", ""chi"": ""Comune di Acquasanta Terme"", ""data"": ""14/09/2016"", ""descrizione"": ""\u00c8 attivo il conto corrente per effettuare le donazioni al comune di Acquasanta gravemente colpito dal terremoto."", ""email"": """", ""iban"": ""IT 89 E 05308 13500 000000003848"", ""intestazione"": ""COMUNE DI ACQUASANTA TERME \u2013 SOLIDARIETA\u2019 TERREMOTO BANCA POPOLA DI ANCONA"", ""link"": ""http://www.comune.acquasantaterme.ap.it/po/mostra_news.php?id=137&area=H"", ""postale"": """"}","<pre><yamldata>chi: 'Comune di Acquasanta Terme'
+descrizione: 'È attivo il conto corrente per effettuare le donazioni al comune di Acquasanta gravemente colpito dal terremoto.'
+intestazione: 'COMUNE DI ACQUASANTA TERME – SOLIDARIETA’ TERREMOTO BANCA POPOLA DI ANCONA'
+iban: 'IT 89 E 05308 13500 000000003848'
+bic: BLOPIT22
+postale: ''
+causale: 'Solidarietà Terremoto'
+link: 'http://www.comune.acquasantaterme.ap.it/po/mostra_news.php?id=137&area=H'
+email: ''
+data: 14/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/240,176847679,2016-09-14 08:40:47,2016-09-14 08:37:58,Caritas Frosinone - Veroli - Ferentino,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Terremoto Centro Italia"", ""chi"": ""Caritas Frosinone - Veroli - Ferentino"", ""data"": ""14/09/2016"", ""descrizione"": ""Al momento si procede solo a raccolta di offerte in denaro tramite versamento sui conti correnti indicati. Tranne le Parrocchie, nessuno \u00e8 incaricato di raccogliere offerte in contanti a nome della Caritas."", ""email"": """", ""iban"": ""IT93 C052 9714 801C C103 0008 343"", ""intestazione"": ""Caritas diocesana di Frosinone-Veroli-Ferentino"", ""link"": ""http://caritas.diocesifrosinone.it/18-/-sp-930/149-terremoto-centro-italia-domenica-18-settembre-2016-colletta-in-tutte-le-chiese.html"", ""postale"": """"}","<pre><yamldata>chi: 'Caritas Frosinone - Veroli - Ferentino'
 descrizione: 'Al momento si procede solo a raccolta di offerte in denaro tramite versamento sui conti correnti indicati. Tranne le Parrocchie, nessuno è incaricato di raccogliere offerte in contanti a nome della Caritas.'
 intestazione: 'Caritas diocesana di Frosinone-Veroli-Ferentino'
