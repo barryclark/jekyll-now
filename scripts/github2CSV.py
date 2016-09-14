@@ -43,7 +43,7 @@ if not ORG:
 CSVFILE=sys.argv[1]
 
 wr=file(CSVFILE,"w+")
-csvwriter=csv.writer(wr)
+csvwriter=csv.writer(wr,quotechar='"')
 
 lastTime = datetime.datetime(2000,1,1)
 
