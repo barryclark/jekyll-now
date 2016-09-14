@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/290,176860744,2016-09-14 09:39:57,2016-09-14 09:38:37,Rock per amatrice,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Rock per amatrice"", ""data"": ""14/09/2016"", ""descrizione"": ""Una serata a favore delle popolazioni colpite dal sisma del 23 Agosto ad Amatrice e Comuni vicini . L'incasso della biglietteria, escluse le spese di diritti siae, verr\u00e0 TOTALMENTE devoluto in beneficenza. Stiamo organizzando tante serate per poter inviare pi\u00f9 possibile. Tutti gli artisti si esibiranno gratuitamente, senza nessun tipo di compenso neanche a titolo di rimborso spese. Tutti gli incassi verranno pubblicati subito dopo l'evento con certificazione di quanto raccolto. Verranno pubblicati alla fine delle serate le ricevute della donazione che verr\u00e0 fatta in modo diretto ai beneficiari. prezzo biglietto 12 \u20ac orari apertura 20 orari show 21 www.lasalumeriadellamusica.com http://www.comune.amatrice.rieti.it/ #salumatiperamatrice"", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""https://www.facebook.com/events/328193884190927/"", ""postale"": """"}","<pre><yamldata>chi: 'Rock per amatrice'
+descrizione: 'Una serata a favore delle popolazioni colpite dal sisma del 23 Agosto ad Amatrice e Comuni vicini . L''incasso della biglietteria, escluse le spese di diritti siae, verrà TOTALMENTE devoluto in beneficenza. Stiamo organizzando tante serate per poter inviare più possibile. Tutti gli artisti si esibiranno gratuitamente, senza nessun tipo di compenso neanche a titolo di rimborso spese. Tutti gli incassi verranno pubblicati subito dopo l''evento con certificazione di quanto raccolto. Verranno pubblicati alla fine delle serate le ricevute della donazione che verrà fatta in modo diretto ai beneficiari. prezzo biglietto 12 € orari apertura 20 orari show 21 www.lasalumeriadellamusica.com http://www.comune.amatrice.rieti.it/ #salumatiperamatrice'
+intestazione: ''
+iban: ''
+bic: ''
+postale: ''
+causale: ''
+link: 'https://www.facebook.com/events/328193884190927/'
+email: ''
+data: 14/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/289,176860636,2016-09-14 09:39:52,2016-09-14 09:38:07,Amatrice nel cuore - Magliette Anpas,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Amatrice nel cuore - Magliette Anpas"", ""data"": ""14/09/2016"", ""descrizione"": ""Anpas lancia raccolta fondi per la ricostruzione con vendita di speciali magliette (10 euro)"", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""http://www.anpas.org/anpas-informa/com-stamp/2429-amatricenelcuore-ricostruzione.html"", ""postale"": """"}","<pre><yamldata>chi: 'Amatrice nel cuore - Magliette Anpas'
 descrizione: 'Anpas lancia raccolta fondi per la ricostruzione con vendita di speciali magliette (10 euro)'
 intestazione: ''
@@ -628,6 +639,17 @@ bic: ''
 postale: ''
 causale: ''
 link: 'http://www.presidente.regione.umbria.it/news/-/asset_publisher/epXtRtYVn9JP/content/sisma-umbria-aperto-conto-corrente-bancario-per-raccolta-fondi'
+email: ''
+data: 13/09/2016
+</yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/213,176774413,2016-09-13 23:26:27,2016-09-13 23:13:40,Regione Marche,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": ""BPPIITRRXXX"", ""causale"": """", ""chi"": ""Regione Marche"", ""data"": ""13/09/2016"", ""descrizione"": """", ""email"": """", ""iban"": ""IT17Y 07601 02600 001034116044"", ""intestazione"": ""Reg. Marche donaz. favore territori Marche colpiti sisma 24 agosto 2016"", ""link"": ""http://www.regione.marche.it/"", ""postale"": ""1034116044""}","<pre><yamldata>chi: 'Regione Marche'
+descrizione: ''
+intestazione: 'Reg. Marche donaz. favore territori Marche colpiti sisma 24 agosto 2016'
+iban: 'IT17Y 07601 02600 001034116044'
+bic: BPPIITRRXXX
+postale: '1034116044'
+causale: ''
+link: 'http://www.regione.marche.it/'
 email: ''
 data: 13/09/2016
 </yamldata></pre>"
