@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/274,176858109,2016-09-14 09:29:48,2016-09-14 09:26:39,Assipan Concommercio Pisa,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Assipan Concommercio Pisa"", ""data"": ""14/09/2016"", ""descrizione"": ""Panificatori, panettieri e pasticceri pisani potranno scegliere un tipo di pane dal proprio listino \u00e8 devolverne il ricavato ai panifici colpiti dal sisma. L'iniziativa si svolger\u00e0 per tutto il mese di settembre."", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""http://www.pisainformaflash.it/notizie/dettaglio.html?nId=28205"", ""postale"": """"}","<pre><yamldata>chi: 'Assipan Concommercio Pisa'
+descrizione: 'Panificatori, panettieri e pasticceri pisani potranno scegliere un tipo di pane dal proprio listino è devolverne il ricavato ai panifici colpiti dal sisma. L''iniziativa si svolgerà per tutto il mese di settembre.'
+intestazione: ''
+iban: ''
+bic: ''
+postale: ''
+causale: ''
+link: 'http://www.pisainformaflash.it/notizie/dettaglio.html?nId=28205'
+email: ''
+data: 14/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/272,176857515,2016-09-14 09:25:32,2016-09-14 09:24:01,Comune di Amandola,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": ""BCITITMM"", ""causale"": ""Chiese Amandola e Beni Culturali Amandola"", ""chi"": ""Comune di Amandola"", ""data"": ""14/09/2016"", ""descrizione"": ""Conto per ricevere le donazioni per la ricostruzione dei beni culturali"", ""email"": """", ""iban"": ""IT 61X03069 69360100000046001"", ""intestazione"": """", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1764952897105627/"", ""postale"": ""15204639""}","<pre><yamldata>chi: 'Comune di Amandola'
 descrizione: 'Conto per ricevere le donazioni per la ricostruzione dei beni culturali'
 intestazione: ''
@@ -959,6 +970,17 @@ postale: ''
 causale: ''
 link: ''
 email: ''
+data: 13/09/2016
+</yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/161,176719155,2016-09-13 18:52:18,2016-09-13 18:48:01,Provincia di Reggio Emilia,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Terremoto Centro Italia 2016"", ""chi"": ""Provincia di Reggio Emilia"", ""data"": ""13/09/2016"", ""descrizione"": ""Le somme versate saranno destinate a progetti di assistenza e ricostruzione seguiti direttamente dalla Provincia di Reggio Emilia. Attivato c/c presso \""Unicredit\"""", ""email"": null, ""iban"": ""IT12I 02008 12800 000100658213"", ""intestazione"": ""La Provincia di Reggio Emilia per le emergenze e la solidariet\u00e0"", ""link"": """", ""postale"": """"}","<pre><yamldata>chi: 'Provincia di Reggio Emilia'
+descrizione: 'Le somme versate saranno destinate a progetti di assistenza e ricostruzione seguiti direttamente dalla Provincia di Reggio Emilia. Attivato c/c presso ""Unicredit""'
+intestazione: 'La Provincia di Reggio Emilia per le emergenze e la solidarietà'
+iban: 'IT12I 02008 12800 000100658213'
+bic: ''
+postale: ''
+causale: 'Terremoto Centro Italia 2016'
+link: ''
+email: 
 data: 13/09/2016
 </yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/161,176719155,2016-09-13 18:52:18,2016-09-13 18:48:01,Provincia di Reggio Emilia,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Terremoto Centro Italia 2016"", ""chi"": ""Provincia di Reggio Emilia"", ""data"": ""13/09/2016"", ""descrizione"": ""Le somme versate saranno destinate a progetti di assistenza e ricostruzione seguiti direttamente dalla Provincia di Reggio Emilia. Attivato c/c presso \""Unicredit\"""", ""email"": null, ""iban"": ""IT12I 02008 12800 000100658213"", ""intestazione"": ""La Provincia di Reggio Emilia per le emergenze e la solidariet\u00e0"", ""link"": """", ""postale"": """"}","<pre><yamldata>chi: 'Provincia di Reggio Emilia'
