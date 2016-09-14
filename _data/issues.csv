@@ -966,6 +966,17 @@ link: ''
 email: ''
 data: 13/09/2016
 </yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/191,176762355,2016-09-13 22:04:37,2016-09-13 22:03:50,Caritas Belluno-Feltre,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Colletta terremoto Centro Italia"", ""chi"": ""Caritas Belluno-Feltre"", ""data"": ""13/09/2016"", ""descrizione"": ""l contributi possono essere fatti pervenire anche nelle parrocchie o nella sede Caritas, al terzo piano del Centro diocesano Giovanni XXIII in piazza Piloni 11 a Belluno, aperta dal luned\u00ec al venerd\u00ec dalle 9 alle 12. (fonte: Corriere delle Alpi, 25/08/2016, pag. 13)"", ""email"": """", ""iban"": ""IT57K 07601 11900 000037921327 - IT10C 02008 11910 000003490760 (presso Unicredit banca);  IT33T 03359 01600 100000143821 ( presso Banca Prossima)"", ""intestazione"": ""Diocesi Belluno-Feltre, Caritas diocesana"", ""link"": """", ""postale"": """"}","<pre><yamldata>chi: 'Caritas Belluno-Feltre'
+descrizione: 'l contributi possono essere fatti pervenire anche nelle parrocchie o nella sede Caritas, al terzo piano del Centro diocesano Giovanni XXIII in piazza Piloni 11 a Belluno, aperta dal lunedì al venerdì dalle 9 alle 12. (fonte: Corriere delle Alpi, 25/08/2016, pag. 13)'
+intestazione: 'Diocesi Belluno-Feltre, Caritas diocesana'
+iban: 'IT57K 07601 11900 000037921327 - IT10C 02008 11910 000003490760 (presso Unicredit banca);  IT33T 03359 01600 100000143821 ( presso Banca Prossima)'
+bic: ''
+postale: ''
+causale: 'Colletta terremoto Centro Italia'
+link: ''
+email: ''
+data: 13/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/186,176759097,2016-09-14 11:31:02,2016-09-13 21:47:40,Tende e Roulottes,42.63289,13.28937,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Tende e Roulottes"", ""data"": ""13/09/2016"", ""descrizione"": ""In questo momento alle famiglie colpite nella zona del sisma, agli allevatori e alla gente di cavalli servono tende e roulottes: vi preghiamo, se ne aveste una che potete mettere a disposizione, di farcelo sapere."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": 42.63289, ""link"": ""http://www.cavallomagazine.it/amatrice-servono-roulottes-per-stare-vicino-a-case-e-cavalli-1.2460099"", ""lon"": 13.28937, ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 cosa: 'Tende e Roulottes'
