@@ -323,6 +323,17 @@ link: 'http://italianamericanrelief.org'
 email: ''
 data: 13/09/2016
 </yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/210,176773917,2016-09-13 23:26:48,2016-09-13 23:10:34,National Italian American Fondation,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""National Italian American Fondation"", ""data"": ""13/09/2016"", ""descrizione"": """", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""http://italianamericanrelief.org"", ""postale"": """"}","<pre><yamldata>chi: 'National Italian American Fondation'
+descrizione: ''
+intestazione: ''
+iban: ''
+bic: ''
+postale: ''
+causale: ''
+link: 'http://italianamericanrelief.org'
+email: ''
+data: 13/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/209,176773867,2016-09-13 23:27:13,2016-09-13 23:10:08,ACLI,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Emergenza terremoto centro Italia"", ""chi"": ""ACLI"", ""data"": ""13/09/2016"", ""descrizione"": """", ""email"": """", ""iban"": ""IT91F 03359 01600 1000001455522"", ""intestazione"": """", ""link"": ""http://www.acli.it/le-notizie/news-nazionali/11048-terremoto-centro-italia-casacli-offre-ospitalita-alle-vittime-del-sisma#ixzz4ISSo4gdn"", ""postale"": """"}","<pre><yamldata>chi: ACLI
 descrizione: ''
 intestazione: ''
