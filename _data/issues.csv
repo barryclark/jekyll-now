@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/342,177005649,2016-09-14 20:04:39,2016-09-14 20:01:18,Tasking Manager - Open Street Map,,,"[""Accettato"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""Mappatura foto aeree aggiornate."", ""link"": ""http://osmit-tm.wmflabs.org/project/13"", ""titolo"": ""Tasking Manager - Open Street Map""}","<pre><yamldata>titolo: 'Tasking Manager - Open Street Map'
+descrizione: 'Mappatura foto aeree aggiornate.'
+link: 'http://osmit-tm.wmflabs.org/project/13'
+data: 14/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/336,176997140,2016-09-14 19:25:17,2016-09-14 19:24:32,Materiale di Prima necessità,41.50003,12.62595,"[""Accettato"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""Materiale di Prima necessit\u00e0"", ""data"": ""14/09/2016"", ""descrizione"": ""- pasta; - pomodori; - cibo in scatola - latte a lunga conservazione; - biscotti confezionati; - farina; - merendine; - acqua; - succhi di frutta; - posate (soprattutto forchette) di plastica; - tovaglioli; - rotoli di carta; PER BAMBINI - latte in polvere; - omogenizzati; - pastina; - pannolini; - salviettine; - creme. PER ANZIANI - pannoloni; ALTRO - assorbenti; - dentifrici; - saponi; - spazzolini; - bagno schiuma"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": 41.50003, ""link"": """", ""lon"": 12.62595, ""tel"": ""Roberta Bianchi 3339788758  Silvio Marsili 3396403704""}","<pre><yamldata>tel: 'Roberta Bianchi 3339788758  Silvio Marsili 3396403704'
 email: ''
 cosa: 'Materiale di Prima necessità'
