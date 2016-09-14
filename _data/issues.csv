@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/279,176859035,2016-09-14 09:34:19,2016-09-14 09:30:51,Associazione culturale Illica,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Pro Terremoto Illica"", ""chi"": ""Associazione culturale Illica"", ""data"": ""14/09/2016"", ""descrizione"": ""Tutto il ricavato della raccolta dei fondi, della quale sar\u00e0 possibile avere visione e dettaglio nei prossimi giorni sul sito www.illica.org, sar\u00e0 utilizzato in pieno accordo e nel rispetto degli interventi previsti dagli Enti preposti alla ricostruzione."", ""email"": """", ""iban"": ""IT32N0760103200000071446603"", ""intestazione"": ""Associazione Culturale Illica"", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1765128903754693/"", ""postale"": """"}","<pre><yamldata>chi: 'Associazione culturale Illica'
+descrizione: 'Tutto il ricavato della raccolta dei fondi, della quale sarà possibile avere visione e dettaglio nei prossimi giorni sul sito www.illica.org, sarà utilizzato in pieno accordo e nel rispetto degli interventi previsti dagli Enti preposti alla ricostruzione.'
+intestazione: 'Associazione Culturale Illica'
+iban: IT32N0760103200000071446603
+bic: ''
+postale: ''
+causale: 'Pro Terremoto Illica'
+link: 'https://www.facebook.com/groups/1758670357733881/permalink/1765128903754693/'
+email: ''
+data: 14/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/277,176858561,2016-09-14 09:30:05,2016-09-14 09:28:45,Teatro Eliseo di Roma,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Teatro Eliseo di Roma"", ""data"": ""14/09/2016"", ""descrizione"": ""Il 26 e 27 settembre il Teatro Eliseo di Roma metter\u00e0 in scena le preview straordinarie di Americani e American Buffalo a sostegno delle popolazioni del Centro Italia colpite dal sisma nella notte del 24 agosto. L'incasso delle due serate fuori cartellone sar\u00e0 interamente devoluto a progetti di carattere educativo-culturale rivolti alle giovani generazioni delle zone terremotate."", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""https://www.facebook.com/events/1795723097317338/"", ""postale"": """"}","<pre><yamldata>chi: 'Teatro Eliseo di Roma'
 descrizione: 'Il 26 e 27 settembre il Teatro Eliseo di Roma metterà in scena le preview straordinarie di Americani e American Buffalo a sostegno delle popolazioni del Centro Italia colpite dal sisma nella notte del 24 agosto. L''incasso delle due serate fuori cartellone sarà interamente devoluto a progetti di carattere educativo-culturale rivolti alle giovani generazioni delle zone terremotate.'
 intestazione: ''
