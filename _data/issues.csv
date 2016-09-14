@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/313,176957007,2016-09-14 16:35:41,2016-09-14 16:35:01,Mariella Rosati,,,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""Mariella Rosati Se qualche amico/amica di fb e tw terremotati hanno bisogno di alloggiare a 100 km dal sisma Sulla E , do la mia casa vacanza di 8 posti letto gratuitamente"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3911712562""}","<pre><yamldata>tel: '3911712562'
+email: ''
+descrizione: 'Mariella Rosati Se qualche amico/amica di fb e tw terremotati hanno bisogno di alloggiare a 100 km dal sisma Sulla E , do la mia casa vacanza di 8 posti letto gratuitamente'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 14/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/312,176955947,2016-09-14 16:35:30,2016-09-14 16:30:42,Donazioni deducibili per i terremotati. Individuati gli enti nell'ascolano,,,"[""Accettato"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""Il prefetto di Ascoli Piceno ha firmato il decreto che individua gli organismi attraverso i quali \u00e8 possibile fare donazioni esentasse a favore della popolazione della provincia, duramente colpita dal terremoto del 24 agosto scorso."", ""link"": ""http://www.interno.gov.it/it/notizie/donazioni-deducibili-i-terremotati-individuati-enti-nellascolano"", ""titolo"": ""Donazioni deducibili per i terremotati. Individuati gli enti nell'ascolano""}","<pre><yamldata>titolo: 'Donazioni deducibili per i terremotati. Individuati gli enti nell''ascolano'
 descrizione: 'Il prefetto di Ascoli Piceno ha firmato il decreto che individua gli organismi attraverso i quali è possibile fare donazioni esentasse a favore della popolazione della provincia, duramente colpita dal terremoto del 24 agosto scorso.'
 link: 'http://www.interno.gov.it/it/notizie/donazioni-deducibili-i-terremotati-individuati-enti-nellascolano'
@@ -1267,13 +1277,6 @@ descrizione: '++URGENTE++ Occorre una roulotte attrezzata per Enzo, unico rimast
 immagine: ''
 lat: '42.749867'
 lon: '13.269536'
-data: 13/09/2016
-</yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/152,176674007,2016-09-13 15:35:56,2016-09-13 15:34:48,PROVA campo scossa solidale,42.621783,13.30634,"[""Accettato"", ""Telegram""]",,http://i.imgur.com/ifNB7qI.jpg,"{""data"": ""13/09/2016"", ""descrizione"": ""PROVA campo scossa solidale"", ""immagine"": ""http://i.imgur.com/ifNB7qI.jpg"", ""lat"": ""42.621783"", ""lon"": ""13.30634"", ""telegram_user"": """"}","<pre><yamldata>telegram_user: ''
-descrizione: 'PROVA campo scossa solidale'
-immagine: 'http://i.imgur.com/ifNB7qI.jpg'
-lat: '42.621783'
-lon: '13.30634'
 data: 13/09/2016
 </yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/152,176674007,2016-09-13 15:35:56,2016-09-13 15:34:48,PROVA campo scossa solidale,42.621783,13.30634,"[""Accettato"", ""Telegram""]",,http://i.imgur.com/ifNB7qI.jpg,"{""data"": ""13/09/2016"", ""descrizione"": ""PROVA campo scossa solidale"", ""immagine"": ""http://i.imgur.com/ifNB7qI.jpg"", ""lat"": ""42.621783"", ""lon"": ""13.30634"", ""telegram_user"": """"}","<pre><yamldata>telegram_user: ''
