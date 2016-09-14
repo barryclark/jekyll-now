@@ -1,11 +1,11 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/253,176852361,2016-09-14 09:00:17,2016-09-14 08:59:58,Comune di Pordenone,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Comune di Pordenone"", ""data"": ""14/09/2016"", ""descrizione"": ""Quando la solidariet\u00e0 chiama, la cultura risponde. L\u2019assessorato presieduto da Pietro Tropeano affianca \u201cArte per Ricostruire\u201d: una intera giornata, il 4 settembre dalle 10.30 alle 19.30 nel chiostro della biblioteca civica, durante la quale gli artisti pordenonesi, e non solo, metteranno a disposizione la loro arte. Il ricavato verr\u00e0 consegnato al Comune di Pordenone."", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""http://www.comune.pordenone.it/it/comunichiamo/comune-informa/notizie/conto-pro-terremotati-e-serate-di-beneficienza"", ""postale"": """"}","<pre><yamldata>chi: 'Comune di Pordenone'
-descrizione: 'Quando la solidarietà chiama, la cultura risponde. L’assessorato presieduto da Pietro Tropeano affianca “Arte per Ricostruire”: una intera giornata, il 4 settembre dalle 10.30 alle 19.30 nel chiostro della biblioteca civica, durante la quale gli artisti pordenonesi, e non solo, metteranno a disposizione la loro arte. Il ricavato verrà consegnato al Comune di Pordenone.'
-intestazione: ''
-iban: ''
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/252,176851806,2016-09-14 09:00:31,2016-09-14 08:57:23,Comune di Pordenone,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Donazione pro terremotati centro Italia"", ""chi"": ""Comune di Pordenone"", ""data"": ""14/09/2016"", ""descrizione"": ""Il conto \u00e8 attivato presso l\u2019agenzia 3 della Bcc di Pordenone"", ""email"": """", ""iban"": ""IT 20 Z 08356 12503 000000050917"", ""intestazione"": ""Circolo ricreativo culturale dipendenti Comune Pn \u2013 Pro terremotati"", ""link"": ""http://www.comune.pordenone.it/it/comunichiamo/comune-informa/notizie/conto-pro-terremotati-e-serate-di-beneficienza"", ""postale"": """"}","<pre><yamldata>chi: 'Comune di Pordenone'
+descrizione: 'Il conto è attivato presso l’agenzia 3 della Bcc di Pordenone'
+intestazione: 'Circolo ricreativo culturale dipendenti Comune Pn – Pro terremotati'
+iban: 'IT 20 Z 08356 12503 000000050917'
 bic: ''
 postale: ''
-causale: ''
+causale: 'Donazione pro terremotati centro Italia'
 link: 'http://www.comune.pordenone.it/it/comunichiamo/comune-informa/notizie/conto-pro-terremotati-e-serate-di-beneficienza'
 email: ''
 data: 14/09/2016
@@ -650,6 +650,17 @@ bic: PASCITMMROM
 postale: ''
 causale: 'Partito Democratico - Raccolta fondi per terremoto'
 link: 'http://www.partitodemocratico.it/partito/terremoto-pd-avvia-raccolta-fondi/'
+email: ''
+data: 13/09/2016
+</yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/169,176722264,2016-09-13 19:01:36,2016-09-13 18:58:49,AUSER nazionale,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Raccolta fondi terremoto 2016 Centro Italia"", ""chi"": ""AUSER nazionale"", ""data"": ""13/09/2016"", ""descrizione"": """", ""email"": """", ""iban"": ""IT89L 05018 03200 000000105900"", ""intestazione"": ""AUSER"", ""link"": ""http://www1.auser.it/primo-piano/terremoto-centro-italia-scatta-la-solidarieta-di-auser/"", ""postale"": """"}","<pre><yamldata>chi: 'AUSER nazionale'
+descrizione: ''
+intestazione: AUSER
+iban: 'IT89L 05018 03200 000000105900'
+bic: ''
+postale: ''
+causale: 'Raccolta fondi terremoto 2016 Centro Italia'
+link: 'http://www1.auser.it/primo-piano/terremoto-centro-italia-scatta-la-solidarieta-di-auser/'
 email: ''
 data: 13/09/2016
 </yamldata></pre>"
