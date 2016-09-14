@@ -6,7 +6,7 @@ layout: base
   <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"/>
   <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
     <style>
-    #map{ height: 100px }
+    #map{ height: 150px }
   </style>
 
 <div class="container" role="main">
@@ -17,7 +17,7 @@ layout: base
   <div class="row"> <div class="col-md-4">updated:</div> <div class="col-md-8"> {{page.issue.updated_at}} </div> </div>
   <div class="row"> <div class="col-md-4">lat:</div> <div class="col-md-8"> {{page.issue.lat}} </div> </div>
   <div class="row"> <div class="col-md-4">lon:</div> <div class="col-md-8"> {{page.issue.lon}} </div> </div>
-  <div class="row"> <div class="col-md-4"> <div id="map"></div> </div> </div>
+  <div class="row"> <div class="col-md-4">Mappina:</div><div class="col-md-4"> <div id="map"></div> </div> </div>
   <div class="row"> <div class="col-md-4">label:</div> <div class="col-md-8"> {{page.issue.labels}} </div> </div>
   <div class="row"> <div class="col-md-4">milestone:</div> <div class="col-md-8"> {{page.issue.milestone}} </div> </div>
   <div class="row"> <div class="col-md-4">image:</div> <div class="col-md-8"> <img src="{{page.issue.image}}"></img> </div> </div>
