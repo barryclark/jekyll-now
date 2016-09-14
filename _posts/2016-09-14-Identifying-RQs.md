@@ -4,8 +4,7 @@ title: Identifying Research Questions
 author: dkomarovo
 ---
 
-Stephen Ramsay’s discussion of Virginia Woolf's The Waves addresses the topic of subjectivity in her novel. He does this to understand 
-an alternative method of criticism, in rooting out Woolf’s subjective elements from her objective discourse. In this approach, Ramsay 
+Stephen Ramsay’s discussion of Virginia Woolf's The Waves addresses the topic of subjectivity in her novel. He does this to understand an alternative method of criticism, in rooting out Woolf’s subjective elements from her objective discourse. In this approach, Ramsay 
 utilizes algorithmic text analysis to conduct this separation.
 
 Heilman and Donaldson’s “From Sexist to (sort-Of) Feminist: Representations of Gender in the Harry Potter Series” addresses gender 
@@ -19,6 +18,9 @@ media, as the Harry Potter book-series, with dominant political issues. By doing
 portrayed by the author in the stories they knew for so long. Through unravelling these topics, new frontiers are explored and discovered.
 
 SOURCES
+
 Ramsay, S. (2003). "Toward an Algorithmic Criticism." Literary and Linguistic Computing 18: 167–74.
+
 Heilman, Elizabeth E., and Trevor Donaldson. n.d. “From Sexist to (sort-Of) Feminist: Representations of Gender in the Harry Potter Series.” 
+
 Hunt, Sally. 2015. “Representations of Gender and Agency in the Harry Potter Series.”
