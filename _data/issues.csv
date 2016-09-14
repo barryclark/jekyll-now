@@ -1,4 +1,253 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/322,176973642,2016-09-14 18:03:33,2016-09-14 17:45:06,Albergo Villa Rosa di Nusco,40.901245,15.084004,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""24/08/2016"", ""descrizione"": ""Albergo Villa Rosa di Nusco mette a disposizione sin da domani 25 agosto 2016 VITTO E ALLOGGIO GRATUITI PER FAMIGLIE COLPITE DAL TERREMOTO. Nell'impossibilit\u00e0 di contattare la Protezione Civile di Rieti, della quale il numero \u00e8 perennemente occupato, chiediamo di condividere il post affinch\u00e9 giunga alle persone interessate."", ""email"": ""info@albergovillarosa.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": ""40.901245"", ""link"": ""https://www.facebook.com/albergo.villarosa"", ""lon"": ""15.084004"", ""tel"": ""082764046 - 3289537991""}","<pre><yamldata>tel: '082764046 - 3289537991'
+email: info@albergovillarosa.it
+descrizione: 'Albergo Villa Rosa di Nusco mette a disposizione sin da domani 25 agosto 2016 VITTO E ALLOGGIO GRATUITI PER FAMIGLIE COLPITE DAL TERREMOTO. Nell''impossibilità di contattare la Protezione Civile di Rieti, della quale il numero è perennemente occupato, chiediamo di condividere il post affinché giunga alle persone interessate.'
+indirizzo: ''
+lat: '40.901245'
+lon: '15.084004'
+link: 'https://www.facebook.com/albergo.villarosa'
+immagine: ''
+data: 24/08/2016
+</yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/321,176967673,2016-09-14 18:03:33,2016-09-14 17:20:20,"HOTEL ""GELSO"" di RIMINI",44.124856,12.492507,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""L'HOTEL \""GELSO\"" di RIMINI attraverso il suo gestore Gianfranco, mette a disposizione la propria struttura per ospitare fino a 40 persone tra coloro che sono state costrette a lasciare le proprie abitazioni."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": ""44.124856"", ""link"": """", ""lon"": ""12.492507"", ""tel"": ""0541331152""}","<pre><yamldata>tel: '0541331152'
+email: ''
+descrizione: 'L''HOTEL ""GELSO"" di RIMINI attraverso il suo gestore Gianfranco, mette a disposizione la propria struttura per ospitare fino a 40 persone tra coloro che sono state costrette a lasciare le proprie abitazioni.'
+indirizzo: ''
+lat: '44.124856'
+lon: '12.492507'
+link: ''
+immagine: ''
+data: 14/09/2016
+</yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/320,176966453,2016-09-14 18:03:33,2016-09-14 17:15:16,Materiale,,,"[""Accettato"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""Materiale"", ""data"": ""14/09/2016"", ""descrizione"": ""> Scai (Amatrice, 80 pp): reti e materassi; > Verrico (Montereale, 30 pp): reti e materassi; > frazioni di Montereale (in foto): acqua, perch\u00e9 l\u2019ordinanza del divieto dell\u2019utilizzo di acqua potabile \u00e8 ancora attiva; > Capricchia (Amatrice, 20 pp): legno per chiudere le strutture pre-esistenti della pro loco; > Pescara del Tronto (Arquata del Tronto, ca. 100 pp): ferri, lana, uncinetto, riviste; > Campo Scossa Solidale (SR577, Amatrice): pentolame misura grande, fornelli; > Campo tra Colle e Spelonga (Arquata del Tronto): televisione per anziani. - Asilo Occupato in viale Duca degli Abruzzi, all\u2019Aquila"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""http://www.3e32.org/?p=8993"", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
+email: ''
+cosa: Materiale
+descrizione: '> Scai (Amatrice, 80 pp): reti e materassi; > Verrico (Montereale, 30 pp): reti e materassi; > frazioni di Montereale (in foto): acqua, perché l’ordinanza del divieto dell’utilizzo di acqua potabile è ancora attiva; > Capricchia (Amatrice, 20 pp): legno per chiudere le strutture pre-esistenti della pro loco; > Pescara del Tronto (Arquata del Tronto, ca. 100 pp): ferri, lana, uncinetto, riviste; > Campo Scossa Solidale (SR577, Amatrice): pentolame misura grande, fornelli; > Campo tra Colle e Spelonga (Arquata del Tronto): televisione per anziani. - Asilo Occupato in viale Duca degli Abruzzi, all’Aquila'
+indirizzo: ''
+lat: ''
+lon: ''
+link: 'http://www.3e32.org/?p=8993'
+immagine: ''
+data: 14/09/2016
+</yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/319,176965345,2016-09-14 18:03:33,2016-09-14 17:10:14,"Onlus ""Music for Peace - creativi della notte"" ha disponibilità immediata di alimenti su specifica richiesta da parte di chi gestisce campi o istituzioni locali",44.457309801319305,8.931884765625,"[""Accettato"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""Onlus \""Music for Peace - creativi della notte\"" ha disponibilit\u00e0 immediata di alimenti su specifica richiesta da parte di chi gestisce campi o istituzioni locali"", ""data"": ""14/09/2016"", ""descrizione"": ""Se qualcuno che legge ha contatti diretti con coloro che gestiscono i campi per sfollati e / o istituzioni locali le quali hanno avanzato richieste di specifici materiali non esiti a contattarci direttamente: abbiamo immediata disponibilit\u00e0 di 2 tonnellate di alimenti, le quali potrebbero aumentare esponenzialmente nell\u2019arco di 48 ore qualora si lanciasse una raccolta di emergenza. E\u2019 indispensabile comprendere prima le esigenze; gli eventuali materiali richiesti; bisogna assolutamente conoscere gli interlocutori e i luoghi presso cui consegnare i materiali - Via Balleydier 60 (area elicoidale zona San Benigno), 16149 Genova"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via San Lorenzo di Casanova, Sant'Olcese, GE, LIG, 16162, Italia"", ""lat"": ""44.457309801319305"", ""link"": ""https://www.facebook.com/notes/music-for-peace-creativi-della-notte/music-for-peace-comunicato-ufficiale-con-preghiera-di-lettura-in-risposta-alle-c/10153594265106991"", ""lon"": ""8.931884765625"", ""tel"": ""010 857 2540""}","<pre><yamldata>tel: '010 857 2540'
+email: ''
+cosa: 'Onlus ""Music for Peace - creativi della notte"" ha disponibilità immediata di alimenti su specifica richiesta da parte di chi gestisce campi o istituzioni locali'
+descrizione: 'Se qualcuno che legge ha contatti diretti con coloro che gestiscono i campi per sfollati e / o istituzioni locali le quali hanno avanzato richieste di specifici materiali non esiti a contattarci direttamente: abbiamo immediata disponibilità di 2 tonnellate di alimenti, le quali potrebbero aumentare esponenzialmente nell’arco di 48 ore qualora si lanciasse una raccolta di emergenza. E’ indispensabile comprendere prima le esigenze; gli eventuali materiali richiesti; bisogna assolutamente conoscere gli interlocutori e i luoghi presso cui consegnare i materiali - Via Balleydier 60 (area elicoidale zona San Benigno), 16149 Genova'
+indirizzo: 'Via San Lorenzo di Casanova, Sant''Olcese, GE, LIG, 16162, Italia'
+lat: '44.457309801319305'
+lon: '8.931884765625'
+link: 'https://www.facebook.com/notes/music-for-peace-creativi-della-notte/music-for-peace-comunicato-ufficiale-con-preghiera-di-lettura-in-risposta-alle-c/10153594265106991'
+immagine: ''
+data: 14/09/2016
+</yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/318,176964426,2016-09-14 18:03:33,2016-09-14 17:05:49,Infermiere area critica,42.414332240033445,12.864990234375,"[""Accettato"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""Infermiere area critica"", ""data"": ""14/09/2016"", ""descrizione"": ""Mariano De Persio, infermiere di area critica all'Ospedale di Terni, con esperienza in vari terremoti, offre la sua disponibilit\u00e0 ed esperienza."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via Giulio de Iuliis, Micioccoli, Rieti, RI, LAZ, 02100, Italia"", ""lat"": ""42.414332240033445"", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1762438200690430/"", ""lon"": ""12.864990234375"", ""tel"": """"}","<pre><yamldata>tel: ''
+email: ''
+cosa: 'Infermiere area critica'
+descrizione: 'Mariano De Persio, infermiere di area critica all''Ospedale di Terni, con esperienza in vari terremoti, offre la sua disponibilità ed esperienza.'
+indirizzo: 'Via Giulio de Iuliis, Micioccoli, Rieti, RI, LAZ, 02100, Italia'
+lat: '42.414332240033445'
+lon: '12.864990234375'
+link: 'https://www.facebook.com/groups/1758670357733881/permalink/1762438200690430/'
+immagine: ''
+data: 14/09/2016
+</yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/317,176962194,2016-09-14 18:03:33,2016-09-14 16:56:07,Comune di Amatrice - persone scomparse,,,"[""Accettato"", ""Form"", ""Notizie Utili""]",Milestone(number=1),,"{""data"": ""14/09/2016"", ""descrizione"": ""CHIUNQUE ABBIA NOTIZIE DI PERSONE SCOMPARSE DEVE SEGNALARLO PRESSO L'ATTUALE SEDE PROVVISORIA DEL COMUNE (liceo scientifico)"", ""link"": ""https://www.facebook.com/ComunediAmatrice/posts/1091653897580611"", ""titolo"": ""Comune di Amatrice - persone scomparse""}","<pre><yamldata>titolo: 'Comune di Amatrice - persone scomparse'
+descrizione: 'CHIUNQUE ABBIA NOTIZIE DI PERSONE SCOMPARSE DEVE SEGNALARLO PRESSO L''ATTUALE SEDE PROVVISORIA DEL COMUNE (liceo scientifico)'
+link: 'https://www.facebook.com/ComunediAmatrice/posts/1091653897580611'
+data: 14/09/2016
+</yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/316,176960957,2016-09-14 18:03:33,2016-09-14 16:51:02,La famiglia Molinari mette a d,41.4939,13.04892,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""La famiglia Molinari mette a disposizione un appartamento arredato per una famiglia di 4 persone"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Sezze (LT)"", ""lat"": 41.4939, ""link"": """", ""lon"": 13.04892, ""tel"": ""3400678842 (Giorgio Molinari)""}","<pre><yamldata>tel: '3400678842 (Giorgio Molinari)'
+email: ''
+descrizione: 'La famiglia Molinari mette a disposizione un appartamento arredato per una famiglia di 4 persone'
+indirizzo: 'Sezze (LT)'
+lat: 41.49390
+lon: 13.04892
+link: ''
+immagine: ''
+data: 14/09/2016
+</yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/315,176959632,2016-09-14 18:03:33,2016-09-14 16:45:11,Contributo fino a 600 Euro per ogni famiglia,,,"[""Accettato"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""Ordinanza della Protezione Civile n.388 articolo 3."", ""link"": ""https://twitter.com/cypherinfo/status/769874038244122625"", ""titolo"": ""Contributo fino a 600 Euro per ogni famiglia""}","<pre><yamldata>titolo: 'Contributo fino a 600 Euro per ogni famiglia'
+descrizione: 'Ordinanza della Protezione Civile n.388 articolo 3.'
+link: 'https://twitter.com/cypherinfo/status/769874038244122625'
+data: 14/09/2016
+</yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/314,176958532,2016-09-14 18:03:33,2016-09-14 16:40:49,Luigi Rei Ho 2 roulotte e due ,,,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""Luigi Rei Ho 2 roulotte e due stanze libere, vivo ad Arcevia (An), se ci sono famiglie che a causa del terremoto hanno bisogno di un rifugio provvisorio, la porta \u00e8 aperta"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3472397478""}","<pre><yamldata>tel: '3472397478'
+email: ''
+descrizione: 'Luigi Rei Ho 2 roulotte e due stanze libere, vivo ad Arcevia (An), se ci sono famiglie che a causa del terremoto hanno bisogno di un rifugio provvisorio, la porta è aperta'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 14/09/2016
+</yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/313,176957007,2016-09-14 18:03:33,2016-09-14 16:35:01,Mariella Rosati,,,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""Mariella Rosati Se qualche amico/amica di fb e tw terremotati hanno bisogno di alloggiare a 100 km dal sisma Sulla E , do la mia casa vacanza di 8 posti letto gratuitamente"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3911712562""}","<pre><yamldata>tel: '3911712562'
+email: ''
+descrizione: 'Mariella Rosati Se qualche amico/amica di fb e tw terremotati hanno bisogno di alloggiare a 100 km dal sisma Sulla E , do la mia casa vacanza di 8 posti letto gratuitamente'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 14/09/2016
+</yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/312,176955947,2016-09-14 18:03:32,2016-09-14 16:30:42,Donazioni deducibili per i terremotati. Individuati gli enti nell'ascolano,,,"[""Accettato"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""Il prefetto di Ascoli Piceno ha firmato il decreto che individua gli organismi attraverso i quali \u00e8 possibile fare donazioni esentasse a favore della popolazione della provincia, duramente colpita dal terremoto del 24 agosto scorso."", ""link"": ""http://www.interno.gov.it/it/notizie/donazioni-deducibili-i-terremotati-individuati-enti-nellascolano"", ""titolo"": ""Donazioni deducibili per i terremotati. Individuati gli enti nell'ascolano""}","<pre><yamldata>titolo: 'Donazioni deducibili per i terremotati. Individuati gli enti nell''ascolano'
+descrizione: 'Il prefetto di Ascoli Piceno ha firmato il decreto che individua gli organismi attraverso i quali è possibile fare donazioni esentasse a favore della popolazione della provincia, duramente colpita dal terremoto del 24 agosto scorso.'
+link: 'http://www.interno.gov.it/it/notizie/donazioni-deducibili-i-terremotati-individuati-enti-nellascolano'
+data: 14/09/2016
+</yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/311,176952586,2016-09-14 18:03:32,2016-09-14 16:17:22,Sangue,,,"[""Accettato"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""Sangue"", ""data"": ""14/09/2016"", ""descrizione"": ""A causa dell\u2019emergenza, \u00e8 necessario molto sangue. Chi volesse donare, ricordi che comunque di norma vengono accettati solo persone gi\u00e0 donatori/trici e che siano nelle condizioni di donare. Informarsi dalle AVIS/ADVS locali. In particolare, chi ha dormito in alcune zone d\u2019Italia non pu\u00f2 donare per i 28 giorni successivi a causa del rischio di alcune malattie trasmesse dalle zanzare."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""http://www.centronazionalesangue.it/notizie/comunicato-stampa-013"", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
+email: ''
+cosa: Sangue
+descrizione: 'A causa dell’emergenza, è necessario molto sangue. Chi volesse donare, ricordi che comunque di norma vengono accettati solo persone già donatori/trici e che siano nelle condizioni di donare. Informarsi dalle AVIS/ADVS locali. In particolare, chi ha dormito in alcune zone d’Italia non può donare per i 28 giorni successivi a causa del rischio di alcune malattie trasmesse dalle zanzare.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: 'http://www.centronazionalesangue.it/notizie/comunicato-stampa-013'
+immagine: ''
+data: 14/09/2016
+</yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/310,176952365,2016-09-14 18:03:32,2016-09-14 16:16:35,Volontari per iniziative a sostegno dei bambini e dei ragazzi coinvolti dal sisma (associazioni e professionisti),42.406727660927984,12.869110107421875,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Volontari per iniziative a sostegno dei bambini e dei ragazzi coinvolti dal sisma (associazioni e professionisti)"", ""data"": ""14/09/2016"", ""descrizione"": ""L'Assessorato alle politiche socio sanitarie del Comune di Rieti, attraverso l\u2019equipe di Rieti citt\u00e0 amica dei bambini sta attivando un coordinamento, mediante il quale verranno programmati e gestiti in accordo con i referenti territoriali,in collaborazione con esperti in pedagogia dell\u2019emergenza dell\u2019Universit\u00e0 dell\u2019aquila, coordinati dal prof. Alessandro Vaccarelli. Al fine di evitare interventi non appropriati e disomogenei si chiede di non attivarsi in maniera autonoma. Tutte le associazioni e i professionisti interessati, possono manifestare la propria disponibilit\u00e0 al seguente indirizzo mail cittadeibambini@comune.rieti.it indicando il proprio nome, tipologia delle attivit\u00e0 svolte, profili professionali, recapiti telefonici e mail, nominativo referente.rivolgersi a 0746 287874 oppure 3356605125."", ""email"": ""cittadeibambini@comune.rieti.it"", ""immagine"": """", ""indirizzo"": ""Via F. Ferroni, Centro storico, Rieti, RI, Lazio, 02100, Italia"", ""lat"": ""42.406727660927984"", ""link"": ""http://www.comune.rieti.it/article/16/08/costituzione-coordinamento-iniziative-sostegno-dei-bambini"", ""lon"": ""12.869110107421875"", ""tel"": ""3356605125""}","<pre><yamldata>tel: '3356605125'
+email: cittadeibambini@comune.rieti.it
+cosa: 'Volontari per iniziative a sostegno dei bambini e dei ragazzi coinvolti dal sisma (associazioni e professionisti)'
+descrizione: 'L''Assessorato alle politiche socio sanitarie del Comune di Rieti, attraverso l’equipe di Rieti città amica dei bambini sta attivando un coordinamento, mediante il quale verranno programmati e gestiti in accordo con i referenti territoriali,in collaborazione con esperti in pedagogia dell’emergenza dell’Università dell’aquila, coordinati dal prof. Alessandro Vaccarelli. Al fine di evitare interventi non appropriati e disomogenei si chiede di non attivarsi in maniera autonoma. Tutte le associazioni e i professionisti interessati, possono manifestare la propria disponibilità al seguente indirizzo mail cittadeibambini@comune.rieti.it indicando il proprio nome, tipologia delle attività svolte, profili professionali, recapiti telefonici e mail, nominativo referente.rivolgersi a 0746 287874 oppure 3356605125.'
+indirizzo: 'Via F. Ferroni, Centro storico, Rieti, RI, Lazio, 02100, Italia'
+lat: '42.406727660927984'
+lon: '12.869110107421875'
+link: 'http://www.comune.rieti.it/article/16/08/costituzione-coordinamento-iniziative-sostegno-dei-bambini'
+immagine: ''
+data: 14/09/2016
+</yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/309,176952264,2016-09-14 18:03:32,2016-09-14 16:16:15,Materiale didattico,43.77902662160831,10.4150390625,"[""Accettato"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""Materiale didattico"", ""data"": ""14/09/2016"", ""descrizione"": ""Scuola primaria Sanminiatelli di Perignano (Pisa) - Offerta di materiale didattico per scuole primarie nelle zone colpite dal sisma (quadernoni, album, pennarelli, matite e altra cancelleria)"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via Maria Montessori, San Giuliano Terme, PI, TOS, 56017, Italia"", ""lat"": ""43.77902662160831"", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1765730697027847/"", ""lon"": ""10.4150390625"", ""tel"": """"}","<pre><yamldata>tel: ''
+email: ''
+cosa: 'Materiale didattico'
+descrizione: 'Scuola primaria Sanminiatelli di Perignano (Pisa) - Offerta di materiale didattico per scuole primarie nelle zone colpite dal sisma (quadernoni, album, pennarelli, matite e altra cancelleria)'
+indirizzo: 'Via Maria Montessori, San Giuliano Terme, PI, TOS, 56017, Italia'
+lat: '43.77902662160831'
+lon: '10.4150390625'
+link: 'https://www.facebook.com/groups/1758670357733881/permalink/1765730697027847/'
+immagine: ''
+data: 14/09/2016
+</yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/308,176951571,2016-09-14 18:03:32,2016-09-14 16:13:45,Carburante,42.62865429351794,13.289680480957031,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Carburante"", ""data"": ""14/09/2016"", ""descrizione"": ""Necessit\u00e0 di carburante"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Palazzo Comunale, Piazza Orsini, Casale Zocchi, Amatrice, RI, Lazio, Italia"", ""lat"": ""42.62865429351794"", ""link"": """", ""lon"": ""13.289680480957031"", ""tel"": """"}","<pre><yamldata>tel: ''
+email: ''
+cosa: Carburante
+descrizione: 'Necessità di carburante'
+indirizzo: 'Palazzo Comunale, Piazza Orsini, Casale Zocchi, Amatrice, RI, Lazio, Italia'
+lat: '42.62865429351794'
+lon: '13.289680480957031'
+link: ''
+immagine: ''
+data: 14/09/2016
+</yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/307,176951458,2016-09-14 18:03:32,2016-09-14 16:13:17,ARCI Nazionale,,,"[""Accettato"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""ARCI Nazionale"", ""data"": ""14/09/2016"", ""descrizione"": ""Arci nazionale ha attivato un progetto di crowdfunding specifico per il Bibliobus, \""\""BIBLIOBUS ARCI \u2013 La Cultura per la Ricostruzione\""\"". Cosa finanzieremo con i fondi raccolti - Assicurazione autobus e volontari - Revisione autobus - Combustibile - Spese di gestione - Attivit\u00e0 itineranti (presentazioni con autori, iniziative pubbliche, etc.) - Acquisto nuovi libri - Abbonamenti a riviste e quotidiani - Acquisto di attrezzatura minuta (sedie, tavolino, ombrellone etc..)"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.produzionidalbasso.com/project/bibliobus-arci-la-cultura-per-la-ricostruzione/"", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
+email: ''
+cosa: 'ARCI Nazionale'
+descrizione: 'Arci nazionale ha attivato un progetto di crowdfunding specifico per il Bibliobus, """"BIBLIOBUS ARCI – La Cultura per la Ricostruzione"""". Cosa finanzieremo con i fondi raccolti - Assicurazione autobus e volontari - Revisione autobus - Combustibile - Spese di gestione - Attività itineranti (presentazioni con autori, iniziative pubbliche, etc.) - Acquisto nuovi libri - Abbonamenti a riviste e quotidiani - Acquisto di attrezzatura minuta (sedie, tavolino, ombrellone etc..)'
+indirizzo: ''
+lat: ''
+lon: ''
+link: 'https://www.produzionidalbasso.com/project/bibliobus-arci-la-cultura-per-la-ricostruzione/'
+immagine: ''
+data: 14/09/2016
+</yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/306,176951262,2016-09-14 18:03:32,2016-09-14 16:12:30,Fondazione Triulza,45.483243508682186,9.129638671875,"[""Accettato"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""Fondazione Triulza"", ""data"": ""14/09/2016"", ""descrizione"": ""Bandi per il riutilizzo di alcuni beni mobili di Expo Milano 2015 Potranno fare richiesta enti pubblici e organizzazioni del terzo settore (scadenza 20 settembre 2016)."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via Diomede, Municipio 7, Milano, MI, Lombardia, 20148, Italia"", ""lat"": ""45.483243508682186"", ""link"": ""http://www.fondazionetriulza.org/it/news/2016/07/22/bandi-per-il-riutilizzo-di-alcuni-beni-mobili-di-expo-milano-2015/3674/"", ""lon"": ""9.129638671875"", ""tel"": """"}","<pre><yamldata>tel: ''
+email: ''
+cosa: 'Fondazione Triulza'
+descrizione: 'Bandi per il riutilizzo di alcuni beni mobili di Expo Milano 2015 Potranno fare richiesta enti pubblici e organizzazioni del terzo settore (scadenza 20 settembre 2016).'
+indirizzo: 'Via Diomede, Municipio 7, Milano, MI, Lombardia, 20148, Italia'
+lat: '45.483243508682186'
+lon: '9.129638671875'
+link: 'http://www.fondazionetriulza.org/it/news/2016/07/22/bandi-per-il-riutilizzo-di-alcuni-beni-mobili-di-expo-milano-2015/3674/'
+immagine: ''
+data: 14/09/2016
+</yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/305,176950068,2016-09-14 18:03:32,2016-09-14 16:08:01,Mangime per animali,42.020732852644294,12.6397705078125,"[""Accettato"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""Mangime per animali"", ""data"": ""14/09/2016"", ""descrizione"": ""Agrigest presso il punto vendita sulla via Appia Nuova a Roma raccoglie donazioni di mangime per gli allevatori di Amatrice (mangime per conigli, polli, mucche, cavalli, ecc)."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via Nomentana, Fonte Nuova, RM, LAZ, 00013, Italia"", ""lat"": ""42.020732852644294"", ""link"": ""https://www.facebook.com/emanuela.bignami.9/posts/10154454074854449"", ""lon"": ""12.6397705078125"", ""tel"": """"}","<pre><yamldata>tel: ''
+email: ''
+cosa: 'Mangime per animali'
+descrizione: 'Agrigest presso il punto vendita sulla via Appia Nuova a Roma raccoglie donazioni di mangime per gli allevatori di Amatrice (mangime per conigli, polli, mucche, cavalli, ecc).'
+indirizzo: 'Via Nomentana, Fonte Nuova, RM, LAZ, 00013, Italia'
+lat: '42.020732852644294'
+lon: '12.6397705078125'
+link: 'https://www.facebook.com/emanuela.bignami.9/posts/10154454074854449'
+immagine: ''
+data: 14/09/2016
+</yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/304,176950065,2016-09-14 18:03:32,2016-09-14 16:08:01,Hotel Mario - Cesenatico,44.180454,12.423208,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""Giacomo Pantani: Hotel Mario di Cesenatico metto a disposizione dai prossimi giorni la mia struttura alberghiera per ospitare le persone che sono state costrette a lasciare le proprie abitazioni a causa del sisma del centro Italia. Mi sto informando per cercare anche altre strutture disponibili."", ""email"": """", ""immagine"": """", ""lat"": ""44.180454"", ""link"": ""https://www.facebook.com/romagnafamilyhotel.it/"", ""lon"": ""12.423208"", ""tel"": ""054787423""}","<pre><yamldata>tel: '054787423'
+email: ''
+descrizione: 'Giacomo Pantani: Hotel Mario di Cesenatico metto a disposizione dai prossimi giorni la mia struttura alberghiera per ospitare le persone che sono state costrette a lasciare le proprie abitazioni a causa del sisma del centro Italia. Mi sto informando per cercare anche altre strutture disponibili.'
+lat: '44.180454'
+lon: '12.423208'
+link: 'https://www.facebook.com/romagnafamilyhotel.it/'
+immagine: ''
+data: 14/09/2016
+</yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/303,176949381,2016-09-14 18:03:32,2016-09-14 16:05:31,Materiale per animali,,,"[""Accettato"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""Materiale per animali"", ""data"": ""14/09/2016"", ""descrizione"": ""LAV - Materiale per animali. Elenco aggiornato al link, con indicati anche i punti di raccolta sulla mappa dell'Italia (cliccare sulla regione)."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""http://www.lav.it/lav-in-piazza/"", ""lon"": """", ""tel"": ""06.4461325""}","<pre><yamldata>tel: '06.4461325'
+email: ''
+cosa: 'Materiale per animali'
+descrizione: 'LAV - Materiale per animali. Elenco aggiornato al link, con indicati anche i punti di raccolta sulla mappa dell''Italia (cliccare sulla regione).'
+indirizzo: ''
+lat: ''
+lon: ''
+link: 'http://www.lav.it/lav-in-piazza/'
+immagine: ''
+data: 14/09/2016
+</yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/302,176948944,2016-09-14 18:03:32,2016-09-14 16:03:46,Parrucchieri aquilani associazione Napa,42.62928579688466,13.290367126464842,"[""Accettato"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""Parrucchieri aquilani associazione Napa"", ""data"": ""14/09/2016"", ""descrizione"": ""I parrucchieri aquilani hanno attrezzato un salone nella terrazza del ristorante Lo Scoiattolo di Amatrice, vicino al Campo Friuli Venezia Giulia. Sono 15 i parrucchieri Napa e con loro c\u2019\u00e8 anche una podologa. Rimarranno ad Amatrice per tre giorni a settimana (da domenica a marted\u00ec) per un mese organizzandosi in turni di lavoro, durante la settimana, poi, lo spazio del salone sar\u00e0 a disposizione dei colleghi di Amatrice, Arquata del Tronto e Pescara del Tronto che hanno perso lo studio, oltre che la casa, nel terremoto."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via Francesco Grifoni, Casale Zocchi, Amatrice, RI, LAZ, Italia"", ""lat"": ""42.62928579688466"", ""link"": ""http://www.ilcapoluogo.it/2016/09/05/parrucchieri-aquilani-ad-amatrice-noi-per-voi/"", ""lon"": ""13.290367126464842"", ""tel"": """"}","<pre><yamldata>tel: ''
+email: ''
+cosa: 'Parrucchieri aquilani associazione Napa'
+descrizione: 'I parrucchieri aquilani hanno attrezzato un salone nella terrazza del ristorante Lo Scoiattolo di Amatrice, vicino al Campo Friuli Venezia Giulia. Sono 15 i parrucchieri Napa e con loro c’è anche una podologa. Rimarranno ad Amatrice per tre giorni a settimana (da domenica a martedì) per un mese organizzandosi in turni di lavoro, durante la settimana, poi, lo spazio del salone sarà a disposizione dei colleghi di Amatrice, Arquata del Tronto e Pescara del Tronto che hanno perso lo studio, oltre che la casa, nel terremoto.'
+indirizzo: 'Via Francesco Grifoni, Casale Zocchi, Amatrice, RI, LAZ, Italia'
+lat: '42.62928579688466'
+lon: '13.290367126464842'
+link: 'http://www.ilcapoluogo.it/2016/09/05/parrucchieri-aquilani-ad-amatrice-noi-per-voi/'
+immagine: ''
+data: 14/09/2016
+</yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/301,176948539,2016-09-14 18:03:32,2016-09-14 16:02:15,famiglia Rossi - Rimini,,,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""La famiglia Rossi mette a disposizione 3 camere da letto per i terremotati, per ospitare eventualmente anche una intera famiglia.Rimini Via Santa Cristina"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3341591662""}","<pre><yamldata>tel: '3341591662'
+email: ''
+descrizione: 'La famiglia Rossi mette a disposizione 3 camere da letto per i terremotati, per ospitare eventualmente anche una intera famiglia.Rimini Via Santa Cristina'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 14/09/2016
+</yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/300,176948051,2016-09-14 18:03:32,2016-09-14 16:00:27,Libri e cancelleria,,,"[""Accettato"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""Libri e cancelleria"", ""data"": ""14/09/2016"", ""descrizione"": ""L\u2019Associazione Nazionale Presidi del Lazio e il Progetto Bambini dell\u2019U.N.I.T.A.L.S.I. (Unione Nazionale Italiana Trasporto Ammalati a Lourdes e Santuari Internazionali) hanno lanciato l\u2019iniziativa \u201cScuola solidale\u201d grazie alla quale verranno raccolti fondi a favore dell\u2019Istituto omnicomprensivo di Amatrice che \u00e8 andato completamente distrutto a causa del sisma - IN TUTTA ITALIA"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""http://www.corriere.it/scuola/primaria/16_agosto_26/terremoto-al-via-scuola-solidale-raccolta-fondi-bambini-amatrice-c0196278-6b66-11e6-8bdd-2a860cc068c8.shtml?refresh_ce-cp"", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
+email: ''
+cosa: 'Libri e cancelleria'
+descrizione: 'L’Associazione Nazionale Presidi del Lazio e il Progetto Bambini dell’U.N.I.T.A.L.S.I. (Unione Nazionale Italiana Trasporto Ammalati a Lourdes e Santuari Internazionali) hanno lanciato l’iniziativa “Scuola solidale” grazie alla quale verranno raccolti fondi a favore dell’Istituto omnicomprensivo di Amatrice che è andato completamente distrutto a causa del sisma - IN TUTTA ITALIA'
+indirizzo: ''
+lat: ''
+lon: ''
+link: 'http://www.corriere.it/scuola/primaria/16_agosto_26/terremoto-al-via-scuola-solidale-raccolta-fondi-bambini-amatrice-c0196278-6b66-11e6-8bdd-2a860cc068c8.shtml?refresh_ce-cp'
+immagine: ''
+data: 14/09/2016
+</yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/299,176947451,2016-09-14 18:03:32,2016-09-14 15:58:29,Tenda Maggiolina,,,"[""Accettato"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""Tenda Maggiolina"", ""data"": ""14/09/2016"", ""descrizione"": ""Offerta di una tenda \""\""Maggiolina\""\"" (si monta sopra un'auto o pu\u00f2 essere usata a terra con dei piccoli rialzi in legno e una volta aperta diventa una sorta di casetta). Ha dentro un materasso da una piazza e mezza, si dorme comodi in due. Offre anche un sacco a pelo e delle coperte, in ottimo stato e puliti - Rif: Giampiero Gai"", ""email"": ""gian@genikdisegno.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1760303750903875/"", ""lon"": """", ""tel"": ""347 0403911""}","<pre><yamldata>tel: '347 0403911'
+email: gian@genikdisegno.it
+cosa: 'Tenda Maggiolina'
+descrizione: 'Offerta di una tenda """"Maggiolina"""" (si monta sopra un''auto o può essere usata a terra con dei piccoli rialzi in legno e una volta aperta diventa una sorta di casetta). Ha dentro un materasso da una piazza e mezza, si dorme comodi in due. Offre anche un sacco a pelo e delle coperte, in ottimo stato e puliti - Rif: Giampiero Gai'
+indirizzo: ''
+lat: ''
+lon: ''
+link: 'https://www.facebook.com/groups/1758670357733881/permalink/1760303750903875/'
+immagine: ''
+data: 14/09/2016
+</yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/298,176945135,2016-09-14 18:03:32,2016-09-14 15:50:04,"PC, computer, stampanti e materiale informatico",,,"[""Accettato"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""PC, computer, stampanti e materiale informatico"", ""data"": ""14/09/2016"", ""descrizione"": ""A nome di Informatici Senza Frontiere, possiamo fornire supporto con materiale informatico vario per ripristinare uffici pubblici, scuole, etc. Abbiamo gi\u00e0 fatto cose simili per il terremoto in Emilia. Abbiamo anche gi\u00e0 scritto un SMS al sindaco di Amatrice dopo il suo appello pubblico ma senza aver ottenuto risposta - IN TUTTA ITALIA"", ""email"": ""claudio.rosazza@informaticisenzafrontiere.org"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""www.informaticisenzafrontiere.org"", ""lon"": """", ""tel"": ""348 263 97 23""}","<pre><yamldata>tel: '348 263 97 23'
+email: claudio.rosazza@informaticisenzafrontiere.org
+cosa: 'PC, computer, stampanti e materiale informatico'
+descrizione: 'A nome di Informatici Senza Frontiere, possiamo fornire supporto con materiale informatico vario per ripristinare uffici pubblici, scuole, etc. Abbiamo già fatto cose simili per il terremoto in Emilia. Abbiamo anche già scritto un SMS al sindaco di Amatrice dopo il suo appello pubblico ma senza aver ottenuto risposta - IN TUTTA ITALIA'
+indirizzo: ''
+lat: ''
+lon: ''
+link: www.informaticisenzafrontiere.org
+immagine: ''
+data: 14/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/296,176940161,2016-09-14 16:13:06,2016-09-14 15:32:25,Conventello House - Ravenna,,,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""27/08/2016"", ""descrizione"": ""Conventello House apre le porte. C'\u00e8 un campeggio con servizi e delle tende, il tempo \u00e8 buono possiamo ospitare tranquillamente chi ha bisogno. Passate parola."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 descrizione: 'Conventello House apre le porte. C''è un campeggio con servizi e delle tende, il tempo è buono possiamo ospitare tranquillamente chi ha bisogno. Passate parola.'
