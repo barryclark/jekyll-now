@@ -5,26 +5,16 @@ layout: base
 {% include header.html type="page" %}
 
 <div class="container" role="main">
-  <div class="row">
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        {{page.title}}
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        {{page.id}}
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <img src="{{page.image}}"></img>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-{{page.data}}
-    </div>
-  </div>
-
+  <div class="row"> <div class="col-md-4">Titolo:</div> <div class="col-md-8"> {{page.title}} </div> </div>
+  <div class="row"> <div class="col-md-4">Url:</div> <div class="col-md-8"> <a href="{{page.issue.url}}">{{page.issue.url}}</a></div> </div>
+  <div class="row"> <div class="col-md-4">id:</div> <div class="col-md-8"> {{page.issue.id}} </div> </div>
+  <div class="row"> <div class="col-md-4">created:</div> <div class="col-md-8"> {{page.issue.created_at}} </div> </div>
+  <div class="row"> <div class="col-md-4">updated:</div> <div class="col-md-8"> {{page.issue.updated_at}} </div> </div>
+  <div class="row"> <div class="col-md-4">lat:</div> <div class="col-md-8"> {{page.issue.lat}} </div> </div>
+  <div class="row"> <div class="col-md-4">lon:</div> <div class="col-md-8"> {{page.issue.lon}} </div> </div>
+  <div class="row"> <div class="col-md-4">label:</div> <div class="col-md-8"> {{page.issue.labels}} </div> </div>
+  <div class="row"> <div class="col-md-4">milestone:</div> <div class="col-md-8"> {{page.issue.milestone}} </div> </div>
+  <div class="row"> <div class="col-md-4">image:</div> <div class="col-md-8"> <img src="{{page.issue.image}}"></img> </div> </div>
+  <div class="row"> <div class="col-md-4">link:</div> <div class="col-md-8"> <a href="{{page.issue.data.link}}">{{page.issue.data.link}}</a></div> </div>
+  <div class="row"> <div class="col-md-12">{{page.issue.data}}</div></div>
 </div>

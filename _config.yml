@@ -198,7 +198,7 @@ collections:
 
 page_gen-dirs: true # uncomment, if you prefer to generate named folders
 page_gen:
-  - data: issues
+  - data: issuesjson
     template: issue
     name: title
     dir: issues
