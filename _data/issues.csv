@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/356,177013230,2016-09-14 20:41:48,2016-09-14 20:33:49,Ordine degli architetti di Roma cerca volontari,,,"[""Accettato"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""Si cercano architetti volontari da inviare nelle aree colpite dal terremoto. E\u2019 necessario specificare se si ha gi\u00e0 operato in altri terremoti e quali, con numero di squadra e periodo. Scrivere a: presidente.roma@archiworld.it oppure p.zaffina@awn.it"", ""link"": ""https://www.facebook.com/ordinearchitettiroma"", ""titolo"": ""Ordine degli architetti di Roma cerca volontari""}","<pre><yamldata>titolo: 'Ordine degli architetti di Roma cerca volontari'
+descrizione: 'Si cercano architetti volontari da inviare nelle aree colpite dal terremoto. E’ necessario specificare se si ha già operato in altri terremoti e quali, con numero di squadra e periodo. Scrivere a: presidente.roma@archiworld.it oppure p.zaffina@awn.it'
+link: 'https://www.facebook.com/ordinearchitettiroma'
+data: 14/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/355,177012893,2016-09-14 20:41:40,2016-09-14 20:32:35,Comune di Rieti - Modulo per offrire la propria disponibiltà ad ospitare le famiglie coinvolte nel sisma,,,"[""Accettato"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""Inviare la propria disponibilit\u00e0 al seguente indirizzo mail: urs@comune.rieti.it allegando il modulo scaricabile al link indicato."", ""link"": ""http://www.comune.rieti.it/article/16/08/modulo-offrire-la-propria-disponibilt-ad-ospitare-le-famiglie-coinvolte-nel-sisma"", ""titolo"": ""Comune di Rieti - Modulo per offrire la propria disponibilt\u00e0 ad ospitare le famiglie coinvolte nel sisma""}","<pre><yamldata>titolo: 'Comune di Rieti - Modulo per offrire la propria disponibiltà ad ospitare le famiglie coinvolte nel sisma'
 descrizione: 'Inviare la propria disponibilità al seguente indirizzo mail: urs@comune.rieti.it allegando il modulo scaricabile al link indicato.'
 link: 'http://www.comune.rieti.it/article/16/08/modulo-offrire-la-propria-disponibilt-ad-ospitare-le-famiglie-coinvolte-nel-sisma'
@@ -199,6 +204,17 @@ indirizzo: ''
 lat: ''
 lon: ''
 link: 'http://www.3e32.org/?p=8993'
+immagine: ''
+data: 14/09/2016
+</yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/319,176965345,2016-09-14 18:03:33,2016-09-14 17:10:14,"Onlus ""Music for Peace - creativi della notte"" ha disponibilità immediata di alimenti su specifica richiesta da parte di chi gestisce campi o istituzioni locali",44.457309801319305,8.931884765625,"[""Accettato"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""Onlus \""Music for Peace - creativi della notte\"" ha disponibilit\u00e0 immediata di alimenti su specifica richiesta da parte di chi gestisce campi o istituzioni locali"", ""data"": ""14/09/2016"", ""descrizione"": ""Se qualcuno che legge ha contatti diretti con coloro che gestiscono i campi per sfollati e / o istituzioni locali le quali hanno avanzato richieste di specifici materiali non esiti a contattarci direttamente: abbiamo immediata disponibilit\u00e0 di 2 tonnellate di alimenti, le quali potrebbero aumentare esponenzialmente nell\u2019arco di 48 ore qualora si lanciasse una raccolta di emergenza. E\u2019 indispensabile comprendere prima le esigenze; gli eventuali materiali richiesti; bisogna assolutamente conoscere gli interlocutori e i luoghi presso cui consegnare i materiali - Via Balleydier 60 (area elicoidale zona San Benigno), 16149 Genova"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via San Lorenzo di Casanova, Sant'Olcese, GE, LIG, 16162, Italia"", ""lat"": ""44.457309801319305"", ""link"": ""https://www.facebook.com/notes/music-for-peace-creativi-della-notte/music-for-peace-comunicato-ufficiale-con-preghiera-di-lettura-in-risposta-alle-c/10153594265106991"", ""lon"": ""8.931884765625"", ""tel"": ""010 857 2540""}","<pre><yamldata>tel: '010 857 2540'
+email: ''
+cosa: 'Onlus ""Music for Peace - creativi della notte"" ha disponibilità immediata di alimenti su specifica richiesta da parte di chi gestisce campi o istituzioni locali'
+descrizione: 'Se qualcuno che legge ha contatti diretti con coloro che gestiscono i campi per sfollati e / o istituzioni locali le quali hanno avanzato richieste di specifici materiali non esiti a contattarci direttamente: abbiamo immediata disponibilità di 2 tonnellate di alimenti, le quali potrebbero aumentare esponenzialmente nell’arco di 48 ore qualora si lanciasse una raccolta di emergenza. E’ indispensabile comprendere prima le esigenze; gli eventuali materiali richiesti; bisogna assolutamente conoscere gli interlocutori e i luoghi presso cui consegnare i materiali - Via Balleydier 60 (area elicoidale zona San Benigno), 16149 Genova'
+indirizzo: 'Via San Lorenzo di Casanova, Sant''Olcese, GE, LIG, 16162, Italia'
+lat: '44.457309801319305'
+lon: '8.931884765625'
+link: 'https://www.facebook.com/notes/music-for-peace-creativi-della-notte/music-for-peace-comunicato-ufficiale-con-preghiera-di-lettura-in-risposta-alle-c/10153594265106991'
 immagine: ''
 data: 14/09/2016
 </yamldata></pre>"
@@ -1485,17 +1501,6 @@ bic: ''
 postale: ''
 causale: 'Solidarietà Terremoto Arquata del Tronto'
 link: 'https://www.facebook.com/ascolipiceno/photos/a.334802869887682.85935.131745913526713/1253222841379009/?type=3'
-email: ''
-data: 13/09/2016
-</yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/173,176749451,2016-09-13 21:05:53,2016-09-13 21:05:11,Associazione Enea Grilli,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Sisma Centro Italia"", ""chi"": ""Associazione Enea Grilli"", ""data"": ""13/09/2016"", ""descrizione"": """", ""email"": """", ""iban"": ""IT74H 05387 66850 000002064231"", ""intestazione"": """", ""link"": ""http://www.associazioneeneagrilli.org/index.php/news"", ""postale"": """"}","<pre><yamldata>chi: 'Associazione Enea Grilli'
-descrizione: ''
-intestazione: ''
-iban: 'IT74H 05387 66850 000002064231'
-bic: ''
-postale: ''
-causale: 'Sisma Centro Italia'
-link: 'http://www.associazioneeneagrilli.org/index.php/news'
 email: ''
 data: 13/09/2016
 </yamldata></pre>"
