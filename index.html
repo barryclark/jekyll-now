@@ -53,7 +53,7 @@ layout: home
           function(data) {
               var results;
               $.each( data.items, function( i, item ) {
-                  results = '<a href="https://www.youtube.com/watch?v='+item.videoId+'"><img src="'+item.snippet.thumbnails.high.url+'"/></a><article class="post"><h1><a href="https://www.youtube.com/watch?v='+item.id.videoId+'">'+item.snippet.title+'</a></h1>';
+                  results = '<a href="https://www.youtube.com/watch?v='+item.snippet.resourceId.videoId+'"><img src="'+item.snippet.thumbnails.high.url+'"/></a><article class="post"><h1><a href="https://www.youtube.com/watch?v='+item.snippet.resourceId.videoId+'">'+item.snippet.title+'</a></h1>';
                   $('#youtube').append(results);
               });
           }
