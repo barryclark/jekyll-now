@@ -80,6 +80,7 @@
 	    <div class="wrapper-masthead">
   		<div class="container">
 	        	<header class="masthead clearfix">
+	        		<div>
 	          		<a href="{{ site.baseurl }}/" class="site-avatar"><img src="https://avatars.githubusercontent.com/u/12754677?v=3" alt="Joe's GitHub Profile Picture" /></a>
 	
 		          	<div class="site-info">
@@ -90,8 +91,9 @@
 	          		<nav>
 	            	{% for navlink in site.navlinks %}<a href="{{ navlink.url }}">{{ navlink.text }}</a>{% if forloop.last %}{% else %}|{% endif %}{% endfor %}
 	          		</nav>
-	          		<br />
+	          		</div><div>
 	          		{% include google/search.html %}
+	          		</div>
 	        	</header>
 	        	{% include google/adsense.html %}
 	        	
