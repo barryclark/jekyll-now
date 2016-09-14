@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/227,176832280,2016-09-14 07:25:42,2016-09-14 07:13:45,Disaster Tech Lab cerca volontari Ict per intervento a Amatrice,,,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Disaster Tech Lab cerca volontari Ict per intervento a Amatrice"", ""data"": ""14/09/2016"", ""descrizione"": ""Cercasi con urgenza volontari con competenze informatiche per intervento su Amatrice."", ""email"": ""volunteer@disastertechlab.org"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://twitter.com/disastertechlab/status/775692848591151104"", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
+email: volunteer@disastertechlab.org
+cosa: 'Disaster Tech Lab cerca volontari Ict per intervento a Amatrice'
+descrizione: 'Cercasi con urgenza volontari con competenze informatiche per intervento su Amatrice.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: 'https://twitter.com/disastertechlab/status/775692848591151104'
+immagine: ''
+data: 14/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/226,176823067,2016-09-14 06:10:03,2016-09-14 06:08:34,Sindacati: Entro un mese il decreto per sostegno a zone terremotate,,,"[""Accettato"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""Entro un mese il decreto con le misure a sostegno delle aree colpite dal terremoto, a partire dalle agevolazioni fiscali. A riferirlo i sindacati, ieri a Palazzo Chigi per un incontro con il sottosegretario Claudio De Vincenti, il commissario per la ricostruzione Vasco Errani e il capo della Protezione Civile Fabrizio Curcio."", ""link"": ""http://mobile.ilsole24ore.com/solemobile/main/art/notizie/2016-09-14/entro-mese-decreto-post-sisma-063804.shtml"", ""titolo"": ""Sindacati: Entro un mese il decreto per sostegno a zone terremotate""}","<pre><yamldata>titolo: 'Sindacati: Entro un mese il decreto per sostegno a zone terremotate'
 descrizione: 'Entro un mese il decreto con le misure a sostegno delle aree colpite dal terremoto, a partire dalle agevolazioni fiscali. A riferirlo i sindacati, ieri a Palazzo Chigi per un incontro con il sottosegretario Claudio De Vincenti, il commissario per la ricostruzione Vasco Errani e il capo della Protezione Civile Fabrizio Curcio.'
 link: 'http://mobile.ilsole24ore.com/solemobile/main/art/notizie/2016-09-14/entro-mese-decreto-post-sisma-063804.shtml'
