@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/353,177011387,2016-09-14 20:28:03,2016-09-14 20:26:10,"Strutture, Villaggi, Agriturismi Umbria",,,"[""Accettato"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""Le strutture (Ecovillaggi, RIVE Rete Italiana Villaggi Ecologici e non, Agriturismi e simili) che vogliono mettersi a disposizione possono inviare una mail a: prociv@regione.umbria.it e sour@regione.umbria.it con breve descrizione struttura, servizi a disposizione e numeri posti letto disponibili."", ""link"": """", ""titolo"": ""Strutture, Villaggi, Agriturismi Umbria""}","<pre><yamldata>titolo: 'Strutture, Villaggi, Agriturismi Umbria'
+descrizione: 'Le strutture (Ecovillaggi, RIVE Rete Italiana Villaggi Ecologici e non, Agriturismi e simili) che vogliono mettersi a disposizione possono inviare una mail a: prociv@regione.umbria.it e sour@regione.umbria.it con breve descrizione struttura, servizi a disposizione e numeri posti letto disponibili.'
+link: ''
+data: 14/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/342,177005649,2016-09-14 20:04:39,2016-09-14 20:01:18,Tasking Manager - Open Street Map,,,"[""Accettato"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""Mappatura foto aeree aggiornate."", ""link"": ""http://osmit-tm.wmflabs.org/project/13"", ""titolo"": ""Tasking Manager - Open Street Map""}","<pre><yamldata>titolo: 'Tasking Manager - Open Street Map'
 descrizione: 'Mappatura foto aeree aggiornate.'
 link: 'http://osmit-tm.wmflabs.org/project/13'
