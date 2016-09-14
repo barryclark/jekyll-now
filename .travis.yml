@@ -9,7 +9,6 @@ script: ./scripts/cibuild
 env:
   global:
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
-    - DISABLE_WHITELIST=true
     - MEDIUM_USER_ID=test
     - MEDIUM_INTEGRATION_TOKEN=test
     - MEDIUM_ENTITY=test
