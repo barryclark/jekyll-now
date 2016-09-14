@@ -26,6 +26,44 @@ layout: home
 </div>
 <div id="insta">
   <br/>
+  <h2>Latest YouTube Videos</h2>
+  <script>
+  // Get Uploads Playlist
+  $.get(
+     "https://www.googleapis.com/youtube/v3/channels",{
+     part : 'contentDetails',
+     forUsername : 'rkalajian',
+     key: 'AIzaSyDqNCEJDMVp-7l_eiWJLjFq6dMueGDe4y8'},
+     function(data) {
+        $.each( data.items, function( i, item ) {
+            pid = item.contentDetails.relatedPlaylists.uploads;
+            getVids(pid);
+        });
+    }
+  );
+
+  //Get Videos
+  function getVids(pid){
+      $.get(
+          "https://www.googleapis.com/youtube/v3/playlistItems",{
+          part : 'snippet',
+          maxResults : 4,
+          playlistId : pid,
+          key: 'AIzaSyDqNCEJDMVp-7l_eiWJLjFq6dMueGDe4y8'},
+          function(data) {
+              var results;
+              $.each( data.items, function( i, item ) {
+                  results = '<a href="https://www.youtube.com/watch?v='+item.videoId+'"><img src="'+item.snippet.thumbnails.high.url+'"/></a><article class="post"><h1><a href="https://www.youtube.com/watch?v='+item.id.videoId+'">'+item.snippet.title+'</a></h1>';
+                  $('#youtube').append(results);
+              });
+          }
+      );
+  }
+  </script>
+
+  <!--In your HTML -->
+  <div id="youtube"></div>
+
   <h2>Latest Instagram Photos</h2>
   <!-- LightWidget WIDGET --><script src="//lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/526ef3bcbc3b56dea102c7a56956ee96.html" id="lightwidget_526ef3bcbc" name="lightwidget_526ef3bcbc"  scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
 </div>
