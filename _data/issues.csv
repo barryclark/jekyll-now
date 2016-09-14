@@ -109,6 +109,17 @@ link: 'https://www.gofundme.com/internet4amatrice'
 email: ''
 data: 14/09/2016
 </yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/256,176853603,2016-09-14 09:16:16,2016-09-14 09:05:47,Consorzio Parmigiano Reggiano,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Consorzio Parmigiano Reggiano"", ""data"": ""14/09/2016"", ""descrizione"": ""1\u20ac PER RINASCERE: SOLIDARIET\u00c0 PER LE POPOLAZIONI COLPITE DEL CENTRO ITALIA COLPITE DAL SISMA Per ogni kg venduto i caseifici aderenti verseranno 1\u20ac ad un fondo destinato ad aiutare le popolazioni colpite. sul sito del consorzio l'elenco dei caseifici aderenti."", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""http://www.parmigianoreggiano.it/comunicazione/rinascere_solidarieta_popolazioni_colpite_centro_italia.aspx"", ""postale"": """"}","<pre><yamldata>chi: 'Consorzio Parmigiano Reggiano'
+descrizione: '1€ PER RINASCERE: SOLIDARIETÀ PER LE POPOLAZIONI COLPITE DEL CENTRO ITALIA COLPITE DAL SISMA Per ogni kg venduto i caseifici aderenti verseranno 1€ ad un fondo destinato ad aiutare le popolazioni colpite. sul sito del consorzio l''elenco dei caseifici aderenti.'
+intestazione: ''
+iban: ''
+bic: ''
+postale: ''
+causale: ''
+link: 'http://www.parmigianoreggiano.it/comunicazione/rinascere_solidarieta_popolazioni_colpite_centro_italia.aspx'
+email: ''
+data: 14/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/255,176853376,2016-09-14 09:15:57,2016-09-14 09:04:42,Consiglio regionale del Piemonte,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Pro sisma Italia centrale"", ""chi"": ""Consiglio regionale del Piemonte"", ""data"": ""14/09/2016"", ""descrizione"": ""L\u2019Assemblea legislativa piemontese ha attivato un conto corrente postale per rendere possibile un gesto concreto di solidariet\u00e0 a favore della popolazione dell\u2019Italia centrale colpita dal forte sisma dei giorni scorsi."", ""email"": """", ""iban"": ""IT 47 Z07601 01000 001034162014"", ""intestazione"": ""Consiglio regionale del Piemonte - pro sisma Italia centrale servizio tesoreria."", ""link"": ""http://www.cr.piemonte.it/web/comunicati-stampa/comunicati-stampa-2016/419-agosto-2016/5805-un-conto-corrente-pro-terremotati"", ""postale"": """"}","<pre><yamldata>chi: 'Consiglio regionale del Piemonte'
 descrizione: 'L’Assemblea legislativa piemontese ha attivato un conto corrente postale per rendere possibile un gesto concreto di solidarietà a favore della popolazione dell’Italia centrale colpita dal forte sisma dei giorni scorsi.'
 intestazione: 'Consiglio regionale del Piemonte - pro sisma Italia centrale servizio tesoreria.'
@@ -639,17 +650,6 @@ bic: ''
 postale: '11662244'
 causale: 'Terremoto Centro Italia'
 link: ''
-email: ''
-data: 13/09/2016
-</yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/192,176763246,2016-09-13 22:08:46,2016-09-13 22:08:22,Avviso Pubblico - Enti locali e Regioni per la formazione civile contro le mafie,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Avviso Pubblico - Enti locali e Regioni per la formazione civile contro le mafie"", ""data"": ""13/09/2016"", ""descrizione"": """", ""email"": """", ""iban"": ""IT73H 05018 02800 000000131720, presso Banca Etica - Filiale di Firenze"", ""intestazione"": """", ""link"": ""http://www.avvisopubblico.it/home/terremoto-in-centro-italia-avviso-pubblico-lancia-campagna-di-raccolta-fondi-e-altre-forme-di-sostegno/"", ""postale"": """"}","<pre><yamldata>chi: 'Avviso Pubblico - Enti locali e Regioni per la formazione civile contro le mafie'
-descrizione: ''
-intestazione: ''
-iban: 'IT73H 05018 02800 000000131720, presso Banca Etica - Filiale di Firenze'
-bic: ''
-postale: ''
-causale: ''
-link: 'http://www.avvisopubblico.it/home/terremoto-in-centro-italia-avviso-pubblico-lancia-campagna-di-raccolta-fondi-e-altre-forme-di-sostegno/'
 email: ''
 data: 13/09/2016
 </yamldata></pre>"
