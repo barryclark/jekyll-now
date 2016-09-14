@@ -42,6 +42,12 @@ if not ORG:
 
 CSVFILE=sys.argv[1]
 
+try:
+    JSONFILE=sys.argv[2]
+    jwr=file(JSONFILE,"w+")
+except:
+    jwr=None
+
 wr=file(CSVFILE,"w+")
 csvwriter=csv.writer(wr,quotechar='"')
 
@@ -56,6 +62,8 @@ filter_labels=[r.get_label(l) for l in FILTER_LABELS]
 issues=r.get_issues(since=lastTime,labels=filter_labels)
 
 csvwriter.writerow(("url","id","updated_at","created_at","title","lat","lon","labels","milestone","image","data","body"))
+if jwr:
+    jwr.write("[")
 
 for issue in issues:
     labels = json.dumps([l.name for l in issue.labels])
@@ -103,4 +111,10 @@ for issue in issues:
     labels=labels.encode('utf-8')
 
     csvwriter.writerow((issue.html_url,issue.id,issue.updated_at,issue.created_at,title,lat,lon,labels,issue.milestone,image,json.dumps(data,sort_keys=True),issue.body.encode('utf-8')))
+    
+    if jwr:
+        jwr.write(json.dumps({"url":issue.html_url,"id":issue.id,"updated_at":issue.updated_at.isoformat(),"created_at":issue.created_at.isoformat(),"title":title,"lat":lat,"lon":lon,"labels":eval(labels) if labels else None,"milestone":issue.milestone.title if issue.milestone else None,"image":image,"data":data,"body":issue.body.encode('utf-8')})+",\n")
 
+
+if jwr:
+    jwr.write("]")
