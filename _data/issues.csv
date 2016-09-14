@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/359,177014972,2016-09-14 20:42:08,2016-09-14 20:40:46,GUS Gruppo Umana Solidarietà - Sostegno psicologico,,,"[""Accettato"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""Attivati centri d\u2019ascolto con equipe di psicologi nelle localit\u00e0 di Arquata del Tronto e nelle zone di Castelsantangelo sul Nera, Visso e Ussita."", ""link"": ""https://www.facebook.com/gruppoumanasolidarieta/posts/901632876608318"", ""titolo"": ""GUS Gruppo Umana Solidariet\u00e0 - Sostegno psicologico""}","<pre><yamldata>titolo: 'GUS Gruppo Umana Solidarietà - Sostegno psicologico'
+descrizione: 'Attivati centri d’ascolto con equipe di psicologi nelle località di Arquata del Tronto e nelle zone di Castelsantangelo sul Nera, Visso e Ussita.'
+link: 'https://www.facebook.com/gruppoumanasolidarieta/posts/901632876608318'
+data: 14/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/358,177014438,2016-09-14 20:42:01,2016-09-14 20:38:37,Comune di Amatrice - Elenco tendopoli,,,"[""Accettato"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""ZONA AMATRICE campo sportivo Paride Tilesi, campo sportivo in pozzolana, area adiacente Elisuperfice, Molino San Bartolomeo - Lo Scoiattolo ZONA SANT'ANGELO S. Angelo, le frazioni da Saletta a Sommati ZONA TORRITA Torrita - la Valle, le frazioni che vanno da Casali della Meta a Poggio Vitellino ZONA MUSICCHIO Musicchio, le frazioni da San Lorenzo a Pinaco a Roccapassa"", ""link"": ""https://www.facebook.com/ComunediAmatrice/posts/1089282701151064"", ""titolo"": ""Comune di Amatrice - Elenco tendopoli""}","<pre><yamldata>titolo: 'Comune di Amatrice - Elenco tendopoli'
 descrizione: 'ZONA AMATRICE campo sportivo Paride Tilesi, campo sportivo in pozzolana, area adiacente Elisuperfice, Molino San Bartolomeo - Lo Scoiattolo ZONA SANT''ANGELO S. Angelo, le frazioni da Saletta a Sommati ZONA TORRITA Torrita - la Valle, le frazioni che vanno da Casali della Meta a Poggio Vitellino ZONA MUSICCHIO Musicchio, le frazioni da San Lorenzo a Pinaco a Roccapassa'
 link: 'https://www.facebook.com/ComunediAmatrice/posts/1089282701151064'
@@ -813,17 +818,6 @@ bic: ''
 postale: ''
 causale: ''
 link: 'http://www.parmigianoreggiano.it/comunicazione/rinascere_solidarieta_popolazioni_colpite_centro_italia.aspx'
-email: ''
-data: 14/09/2016
-</yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/255,176853376,2016-09-14 09:15:57,2016-09-14 09:04:42,Consiglio regionale del Piemonte,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Pro sisma Italia centrale"", ""chi"": ""Consiglio regionale del Piemonte"", ""data"": ""14/09/2016"", ""descrizione"": ""L\u2019Assemblea legislativa piemontese ha attivato un conto corrente postale per rendere possibile un gesto concreto di solidariet\u00e0 a favore della popolazione dell\u2019Italia centrale colpita dal forte sisma dei giorni scorsi."", ""email"": """", ""iban"": ""IT 47 Z07601 01000 001034162014"", ""intestazione"": ""Consiglio regionale del Piemonte - pro sisma Italia centrale servizio tesoreria."", ""link"": ""http://www.cr.piemonte.it/web/comunicati-stampa/comunicati-stampa-2016/419-agosto-2016/5805-un-conto-corrente-pro-terremotati"", ""postale"": """"}","<pre><yamldata>chi: 'Consiglio regionale del Piemonte'
-descrizione: 'L’Assemblea legislativa piemontese ha attivato un conto corrente postale per rendere possibile un gesto concreto di solidarietà a favore della popolazione dell’Italia centrale colpita dal forte sisma dei giorni scorsi.'
-intestazione: 'Consiglio regionale del Piemonte - pro sisma Italia centrale servizio tesoreria.'
-iban: 'IT 47 Z07601 01000 001034162014'
-bic: ''
-postale: ''
-causale: 'Pro sisma Italia centrale'
-link: 'http://www.cr.piemonte.it/web/comunicati-stampa/comunicati-stampa-2016/419-agosto-2016/5805-un-conto-corrente-pro-terremotati'
 email: ''
 data: 14/09/2016
 </yamldata></pre>"
