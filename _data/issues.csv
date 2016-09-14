@@ -10,6 +10,28 @@ link: 'http://www.comune.pordenone.it/it/comunichiamo/comune-informa/notizie/con
 email: ''
 data: 14/09/2016
 </yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/251,176851691,2016-09-14 09:00:38,2016-09-14 08:56:47,PayPal,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""PayPal"", ""data"": ""14/09/2016"", ""descrizione"": ""Fai una donazione con PayPal alla Croce Rossa Italiana."", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""https://www.paypal.it/acquisti/Croce_Rossa/"", ""postale"": """"}","<pre><yamldata>chi: PayPal
+descrizione: 'Fai una donazione con PayPal alla Croce Rossa Italiana.'
+intestazione: ''
+iban: ''
+bic: ''
+postale: ''
+causale: ''
+link: 'https://www.paypal.it/acquisti/Croce_Rossa/'
+email: ''
+data: 14/09/2016
+</yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/250,176851544,2016-09-14 09:00:45,2016-09-14 08:56:09,Aci Ascoli Piceno,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Donazione Terremoto"", ""chi"": ""Aci Ascoli Piceno"", ""data"": ""14/09/2016"", ""descrizione"": ""Coloro che vorranno dare il proprio contributo potranno effettuare il versamento in contanti presso gli sportelli Aci di Ascoli Piceno oppure tramite bonifico bancario."", ""email"": """", ""iban"": ""IT 31 W 08474 13502 000150102890"", ""intestazione"": ""Aci Ascoli Piceno  BCC Picena \u2013 Ag. Ascoli Piceno \u2013 Viale Vellei"", ""link"": ""https://www.facebook.com/automobileclub.ascolipicenofermo/photos/a.943656578986817.1073741826.943656545653487/1278764215476050/?type=3"", ""postale"": """"}","<pre><yamldata>chi: 'Aci Ascoli Piceno'
+descrizione: 'Coloro che vorranno dare il proprio contributo potranno effettuare il versamento in contanti presso gli sportelli Aci di Ascoli Piceno oppure tramite bonifico bancario.'
+intestazione: 'Aci Ascoli Piceno  BCC Picena – Ag. Ascoli Piceno – Viale Vellei'
+iban: 'IT 31 W 08474 13502 000150102890'
+bic: ''
+postale: ''
+causale: 'Donazione Terremoto'
+link: 'https://www.facebook.com/automobileclub.ascolipicenofermo/photos/a.943656578986817.1073741826.943656545653487/1278764215476050/?type=3'
+email: ''
+data: 14/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/247,176850766,2016-09-14 08:53:09,2016-09-14 08:52:31,AMAtriciana solidale - mappa,,,"[""Accettato"", ""Form"", ""Notizie Utili"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""AMAtriciana solidale - mappa"", ""data"": ""14/09/2016"", ""descrizione"": ""La mappa di tutti i ristoranti che aderiscono all'iniziativa \""AMAtriciana\"", per aiutare i le popolazioni colpite dal terremoto, devolvendo 2 euro per ogni piatto di pasta"", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""http://bit.ly/2bM1Nqs"", ""postale"": """"}","<pre><yamldata>chi: 'AMAtriciana solidale - mappa'
 descrizione: 'La mappa di tutti i ristoranti che aderiscono all''iniziativa ""AMAtriciana"", per aiutare i le popolazioni colpite dal terremoto, devolvendo 2 euro per ogni piatto di pasta'
 intestazione: ''
