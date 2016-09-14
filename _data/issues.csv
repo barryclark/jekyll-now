@@ -39,6 +39,11 @@ descrizione: 'Decalogo di informazioni utili per assistenza ai bambini in caso d
 link: 'http://www.vita.it/it/article/2016/08/24/10-cose-da-fare-per-proteggere-i-bambini-dopo-un-evento-drammatico/140471/'
 data: 14/09/2016
 </yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/345,177008012,2016-09-14 20:29:38,2016-09-14 20:11:39,Twitter - Account utili,,,"[""Accettato"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""Lista pubblica di CrisisLab su Twitter, gli account che forniscono informazioni utili per seguire l'evoluzione degli eventi sul terremoto."", ""link"": ""https://twitter.com/crisislabtweet/status/768397208873996288"", ""titolo"": ""Twitter - Account utili""}","<pre><yamldata>titolo: 'Twitter - Account utili'
+descrizione: 'Lista pubblica di CrisisLab su Twitter, gli account che forniscono informazioni utili per seguire l''evoluzione degli eventi sul terremoto.'
+link: 'https://twitter.com/crisislabtweet/status/768397208873996288'
+data: 14/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/342,177005649,2016-09-14 20:04:39,2016-09-14 20:01:18,Tasking Manager - Open Street Map,,,"[""Accettato"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""Mappatura foto aeree aggiornate."", ""link"": ""http://osmit-tm.wmflabs.org/project/13"", ""titolo"": ""Tasking Manager - Open Street Map""}","<pre><yamldata>titolo: 'Tasking Manager - Open Street Map'
 descrizione: 'Mappatura foto aeree aggiornate.'
 link: 'http://osmit-tm.wmflabs.org/project/13'
@@ -864,6 +869,17 @@ link: 'http://www.docentisenzafrontiere.org/it/sostienici/speciale-emergenze/ter
 email: ''
 data: 14/09/2016
 </yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/243,176848996,2016-09-14 08:47:45,2016-09-14 08:44:03,Associazione Docenti Senza Frontiere,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Contributo Terremoto Italia"", ""chi"": ""Associazione Docenti Senza Frontiere"", ""data"": ""14/09/2016"", ""descrizione"": ""E' attivo conto corrente per una raccolta fondi immediata destinata alla ricostruzione di edifici scolastici, per aiutare, gli alunni, i Dirigenti Scolastici e gli insegnanti nella ricostruzione della comunit\u00e0 scolastica e al ripristino veloce delle condizioni di normalit\u00e0."", ""email"": """", ""iban"": ""IT46T0501812101000000175233"", ""intestazione"": ""Docenti Senza Frontiere"", ""link"": ""http://www.docentisenzafrontiere.org/it/sostienici/speciale-emergenze/terremoto.html"", ""postale"": """"}","<pre><yamldata>chi: 'Associazione Docenti Senza Frontiere'
+descrizione: 'E'' attivo conto corrente per una raccolta fondi immediata destinata alla ricostruzione di edifici scolastici, per aiutare, gli alunni, i Dirigenti Scolastici e gli insegnanti nella ricostruzione della comunità scolastica e al ripristino veloce delle condizioni di normalità.'
+intestazione: 'Docenti Senza Frontiere'
+iban: IT46T0501812101000000175233
+bic: ''
+postale: ''
+causale: 'Contributo Terremoto Italia'
+link: 'http://www.docentisenzafrontiere.org/it/sostienici/speciale-emergenze/terremoto.html'
+email: ''
+data: 14/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/242,176848897,2016-09-14 08:47:53,2016-09-14 08:43:34,Comune di Acquasanta Terme,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": ""BLOPIT22"", ""causale"": ""Solidariet\u00e0 Terremoto"", ""chi"": ""Comune di Acquasanta Terme"", ""data"": ""14/09/2016"", ""descrizione"": ""\u00c8 attivo il conto corrente per effettuare le donazioni al comune di Acquasanta gravemente colpito dal terremoto."", ""email"": """", ""iban"": ""IT 89 E 05308 13500 000000003848"", ""intestazione"": ""COMUNE DI ACQUASANTA TERME \u2013 SOLIDARIETA\u2019 TERREMOTO BANCA POPOLA DI ANCONA"", ""link"": ""http://www.comune.acquasantaterme.ap.it/po/mostra_news.php?id=137&area=H"", ""postale"": """"}","<pre><yamldata>chi: 'Comune di Acquasanta Terme'
 descrizione: 'È attivo il conto corrente per effettuare le donazioni al comune di Acquasanta gravemente colpito dal terremoto.'
 intestazione: 'COMUNE DI ACQUASANTA TERME – SOLIDARIETA’ TERREMOTO BANCA POPOLA DI ANCONA'
@@ -1515,17 +1531,6 @@ bic: ''
 postale: ''
 causale: 'Raccolta fondi terremoto 2016 Centro Italia'
 link: 'http://www1.auser.it/primo-piano/terremoto-centro-italia-scatta-la-solidarieta-di-auser/'
-email: ''
-data: 13/09/2016
-</yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/168,176722098,2016-09-13 19:01:29,2016-09-13 18:58:16,Rotaract Rieti,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Sisma Amatrice Accumoli Rieti + Indirizzo email + Club di appartenenza e/o nominativo del donatore"", ""chi"": ""Rotaract Rieti"", ""data"": ""13/09/2016"", ""descrizione"": """", ""email"": """", ""iban"": ""IT98U 08327 14600 000000003217"", ""intestazione"": ""Rotaract Club Rieti"", ""link"": ""https://www.facebook.com/rotaract.rieti/posts/1783447371896395"", ""postale"": """"}","<pre><yamldata>chi: 'Rotaract Rieti'
-descrizione: ''
-intestazione: 'Rotaract Club Rieti'
-iban: 'IT98U 08327 14600 000000003217'
-bic: ''
-postale: ''
-causale: 'Sisma Amatrice Accumoli Rieti + Indirizzo email + Club di appartenenza e/o nominativo del donatore'
-link: 'https://www.facebook.com/rotaract.rieti/posts/1783447371896395'
 email: ''
 data: 13/09/2016
 </yamldata></pre>"
