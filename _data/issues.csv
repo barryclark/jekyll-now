@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/247,176850766,2016-09-14 08:53:09,2016-09-14 08:52:31,AMAtriciana solidale - mappa,,,"[""Accettato"", ""Form"", ""Notizie Utili"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""AMAtriciana solidale - mappa"", ""data"": ""14/09/2016"", ""descrizione"": ""La mappa di tutti i ristoranti che aderiscono all'iniziativa \""AMAtriciana\"", per aiutare i le popolazioni colpite dal terremoto, devolvendo 2 euro per ogni piatto di pasta"", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""http://bit.ly/2bM1Nqs"", ""postale"": """"}","<pre><yamldata>chi: 'AMAtriciana solidale - mappa'
+descrizione: 'La mappa di tutti i ristoranti che aderiscono all''iniziativa ""AMAtriciana"", per aiutare i le popolazioni colpite dal terremoto, devolvendo 2 euro per ogni piatto di pasta'
+intestazione: ''
+iban: ''
+bic: ''
+postale: ''
+causale: ''
+link: 'http://bit.ly/2bM1Nqs'
+email: ''
+data: 14/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/243,176848996,2016-09-14 08:47:45,2016-09-14 08:44:03,Associazione Docenti Senza Frontiere,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Contributo Terremoto Italia"", ""chi"": ""Associazione Docenti Senza Frontiere"", ""data"": ""14/09/2016"", ""descrizione"": ""E' attivo conto corrente per una raccolta fondi immediata destinata alla ricostruzione di edifici scolastici, per aiutare, gli alunni, i Dirigenti Scolastici e gli insegnanti nella ricostruzione della comunit\u00e0 scolastica e al ripristino veloce delle condizioni di normalit\u00e0."", ""email"": """", ""iban"": ""IT46T0501812101000000175233"", ""intestazione"": ""Docenti Senza Frontiere"", ""link"": ""http://www.docentisenzafrontiere.org/it/sostienici/speciale-emergenze/terremoto.html"", ""postale"": """"}","<pre><yamldata>chi: 'Associazione Docenti Senza Frontiere'
 descrizione: 'E'' attivo conto corrente per una raccolta fondi immediata destinata alla ricostruzione di edifici scolastici, per aiutare, gli alunni, i Dirigenti Scolastici e gli insegnanti nella ricostruzione della comunità scolastica e al ripristino veloce delle condizioni di normalità.'
 intestazione: 'Docenti Senza Frontiere'
