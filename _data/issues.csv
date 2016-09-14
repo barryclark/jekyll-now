@@ -1,4 +1,11 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/293,176867458,2016-09-14 10:10:09,2016-09-14 10:09:09,Scuola media di Arquata danneg,42.776289,13.29453,"[""Accettato"", ""Telegram""]",,http://i.imgur.com/ieYxjf9.jpg,"{""data"": ""14/09/2016"", ""descrizione"": ""Scuola media di Arquata danneggiata"", ""immagine"": ""http://i.imgur.com/ieYxjf9.jpg"", ""lat"": ""42.776289"", ""lon"": ""13.29453"", ""telegram_user"": """"}","<pre><yamldata>telegram_user: ''
+descrizione: 'Scuola media di Arquata danneggiata'
+immagine: 'http://i.imgur.com/ieYxjf9.jpg'
+lat: '42.776289'
+lon: '13.29453'
+data: 14/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/292,176867155,2016-09-14 10:08:50,2016-09-14 10:07:40,Scuola danneggiata,42.776289,13.29453,"[""Accettato"", ""Telegram""]",,http://i.imgur.com/zTCZhMk.jpg,"{""data"": ""14/09/2016"", ""descrizione"": ""Scuola danneggiata"", ""immagine"": ""http://i.imgur.com/zTCZhMk.jpg"", ""lat"": ""42.776289"", ""lon"": ""13.29453"", ""telegram_user"": """"}","<pre><yamldata>telegram_user: ''
 descrizione: 'Scuola danneggiata'
 immagine: 'http://i.imgur.com/zTCZhMk.jpg'
@@ -534,7 +541,7 @@ link: 'https://www.facebook.com/terremotocentroitalia/posts/1365045246858821'
 immagine: ''
 data: 14/09/2016
 </yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/231,176837511,2016-09-14 10:09:42,2016-09-14 07:44:17,"Associazione Toponomastica femminile, IC Mar dei Caraibi di Ostia e Società Gedshop",,,"[""Accettato"", ""Donazioni"", ""Form""]",,,{},"<pre><yamldata>tel: ''
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/231,176837511,2016-09-14 10:09:55,2016-09-14 07:44:17,"Associazione Toponomastica femminile, IC Mar dei Caraibi di Ostia e Società Gedshop",,,"[""Accettato"", ""Donazioni"", ""Form""]",,,{},"<pre><yamldata>tel: ''
 email: ''
 cosa: 'Associazione Toponomastica femminile, IC Mar dei Caraibi di Ostia e Società Gedshop'
 descrizione: 'Materiale didattico e borse per studenti e alunni scuole - Accumoli e Amatrice'
