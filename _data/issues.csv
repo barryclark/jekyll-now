@@ -87,6 +87,39 @@ link: 'http://www.aise.it/rete-diplomatica/terremoto-in-giappone-la-raccolta-del
 email: segreteriaamb.tokyo@esteri.it
 data: 14/09/2016
 </yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/258,176853889,2016-09-14 09:16:06,2016-09-14 09:07:06,Croce Rossa per l'estero,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": ""BPPIITRRXXX"", ""causale"": """", ""chi"": ""Croce Rossa per l'estero"", ""data"": ""14/09/2016"", ""descrizione"": ""Puoi donare dall\u2019estero per sostenere le persone colpite dal #terremoto attraverso iban Croce Rossa"", ""email"": """", ""iban"": ""IT38R0760103000000000900050"", ""intestazione"": ""Poste Italiane con Croce Rossa Italiana - Sisma del 24 agosto 2016"", ""link"": ""https://twitter.com/ItalyMFA/status/769155609547735040"", ""postale"": ""900050""}","<pre><yamldata>chi: 'Croce Rossa per l''estero'
+descrizione: 'Puoi donare dall’estero per sostenere le persone colpite dal #terremoto attraverso iban Croce Rossa'
+intestazione: 'Poste Italiane con Croce Rossa Italiana - Sisma del 24 agosto 2016'
+iban: IT38R0760103000000000900050
+bic: BPPIITRRXXX
+postale: '900050'
+causale: ''
+link: 'https://twitter.com/ItalyMFA/status/769155609547735040'
+email: ''
+data: 14/09/2016
+</yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/257,176853743,2016-09-14 09:15:49,2016-09-14 09:06:25,Disaster Tech Lab,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Disaster Tech Lab"", ""data"": ""14/09/2016"", ""descrizione"": ""Una rete internet per Amatrice, crowdfunding avviato da Disaster Tech Lab."", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""https://www.gofundme.com/internet4amatrice"", ""postale"": """"}","<pre><yamldata>chi: 'Disaster Tech Lab'
+descrizione: 'Una rete internet per Amatrice, crowdfunding avviato da Disaster Tech Lab.'
+intestazione: ''
+iban: ''
+bic: ''
+postale: ''
+causale: ''
+link: 'https://www.gofundme.com/internet4amatrice'
+email: ''
+data: 14/09/2016
+</yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/255,176853376,2016-09-14 09:15:57,2016-09-14 09:04:42,Consiglio regionale del Piemonte,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Pro sisma Italia centrale"", ""chi"": ""Consiglio regionale del Piemonte"", ""data"": ""14/09/2016"", ""descrizione"": ""L\u2019Assemblea legislativa piemontese ha attivato un conto corrente postale per rendere possibile un gesto concreto di solidariet\u00e0 a favore della popolazione dell\u2019Italia centrale colpita dal forte sisma dei giorni scorsi."", ""email"": """", ""iban"": ""IT 47 Z07601 01000 001034162014"", ""intestazione"": ""Consiglio regionale del Piemonte - pro sisma Italia centrale servizio tesoreria."", ""link"": ""http://www.cr.piemonte.it/web/comunicati-stampa/comunicati-stampa-2016/419-agosto-2016/5805-un-conto-corrente-pro-terremotati"", ""postale"": """"}","<pre><yamldata>chi: 'Consiglio regionale del Piemonte'
+descrizione: 'L’Assemblea legislativa piemontese ha attivato un conto corrente postale per rendere possibile un gesto concreto di solidarietà a favore della popolazione dell’Italia centrale colpita dal forte sisma dei giorni scorsi.'
+intestazione: 'Consiglio regionale del Piemonte - pro sisma Italia centrale servizio tesoreria.'
+iban: 'IT 47 Z07601 01000 001034162014'
+bic: ''
+postale: ''
+causale: 'Pro sisma Italia centrale'
+link: 'http://www.cr.piemonte.it/web/comunicati-stampa/comunicati-stampa-2016/419-agosto-2016/5805-un-conto-corrente-pro-terremotati'
+email: ''
+data: 14/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/254,176853140,2016-09-14 09:15:33,2016-09-14 09:03:41,Cesvi,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": ""BLOPIT22"", ""causale"": ""Cesvi Onlus Emergenza"", ""chi"": ""Cesvi"", ""data"": ""14/09/2016"", ""descrizione"": ""Cesvi vuole impiegare i fondi raccolti soprattutto nella fase di post-emergenza, che spesso soffre di carenza di finanziamenti anche nel nostro Paese, per realizzare attivit\u00e0 di protection e di supporto psicosociale mirate al superamento del trauma (PSTD), in particolare a favore dei bambini e delle altre categorie vulnerabili."", ""email"": """", ""iban"": ""IT 14 T054 2811 1010 0000 0001 000"", ""intestazione"": ""Cesvi - Banca Popolare di Bergamo - UBI"", ""link"": ""http://www.cesvi.org/news/sisma-centro-italia-come-ci-stiamo-muovendo"", ""postale"": ""882233""}","<pre><yamldata>chi: Cesvi
 descrizione: 'Cesvi vuole impiegare i fondi raccolti soprattutto nella fase di post-emergenza, che spesso soffre di carenza di finanziamenti anche nel nostro Paese, per realizzare attività di protection e di supporto psicosociale mirate al superamento del trauma (PSTD), in particolare a favore dei bambini e delle altre categorie vulnerabili.'
 intestazione: 'Cesvi - Banca Popolare di Bergamo - UBI'
@@ -606,6 +639,17 @@ bic: ''
 postale: '11662244'
 causale: 'Terremoto Centro Italia'
 link: ''
+email: ''
+data: 13/09/2016
+</yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/192,176763246,2016-09-13 22:08:46,2016-09-13 22:08:22,Avviso Pubblico - Enti locali e Regioni per la formazione civile contro le mafie,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Avviso Pubblico - Enti locali e Regioni per la formazione civile contro le mafie"", ""data"": ""13/09/2016"", ""descrizione"": """", ""email"": """", ""iban"": ""IT73H 05018 02800 000000131720, presso Banca Etica - Filiale di Firenze"", ""intestazione"": """", ""link"": ""http://www.avvisopubblico.it/home/terremoto-in-centro-italia-avviso-pubblico-lancia-campagna-di-raccolta-fondi-e-altre-forme-di-sostegno/"", ""postale"": """"}","<pre><yamldata>chi: 'Avviso Pubblico - Enti locali e Regioni per la formazione civile contro le mafie'
+descrizione: ''
+intestazione: ''
+iban: 'IT73H 05018 02800 000000131720, presso Banca Etica - Filiale di Firenze'
+bic: ''
+postale: ''
+causale: ''
+link: 'http://www.avvisopubblico.it/home/terremoto-in-centro-italia-avviso-pubblico-lancia-campagna-di-raccolta-fondi-e-altre-forme-di-sostegno/'
 email: ''
 data: 13/09/2016
 </yamldata></pre>"
