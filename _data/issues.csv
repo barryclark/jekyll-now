@@ -1,4 +1,26 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/239,176847545,2016-09-14 08:40:41,2016-09-14 08:37:13,Unione dei comuni Empolese Valdelsa,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": ""BAPPIT21T63"", ""causale"": ""Emergenza Terremoto Centro Italia 2016"", ""chi"": ""Unione dei comuni Empolese Valdelsa"", ""data"": ""14/09/2016"", ""descrizione"": """", ""email"": """", ""iban"": ""IT97 V 05034 37831 000000000135"", ""intestazione"": ""Unione dei Comuni Circondario dell'Empolese Valdelsa"", ""link"": ""http://www.empolese-valdelsa.it/"", ""postale"": """"}","<pre><yamldata>chi: 'Unione dei comuni Empolese Valdelsa'
+descrizione: ''
+intestazione: 'Unione dei Comuni Circondario dell''Empolese Valdelsa'
+iban: 'IT97 V 05034 37831 000000000135'
+bic: BAPPIT21T63
+postale: ''
+causale: 'Emergenza Terremoto Centro Italia 2016'
+link: 'http://www.empolese-valdelsa.it/'
+email: ''
+data: 14/09/2016
+</yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/238,176847421,2016-09-14 08:40:33,2016-09-14 08:36:42,Arci,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Terremoto Centro Italia"", ""chi"": ""Arci"", ""data"": ""14/09/2016"", ""descrizione"": ""Donazioni raccolte da Arci presso Banca Popolare Etica"", ""email"": """", ""iban"": ""IT 36 A 0501803200 000000000041"", ""intestazione"": ""Arci"", ""link"": ""http://www.arci.it/blog/ambiente/archivio/ambiente/emergenza-terremoto-centro-italia/"", ""postale"": """"}","<pre><yamldata>chi: Arci
+descrizione: 'Donazioni raccolte da Arci presso Banca Popolare Etica'
+intestazione: Arci
+iban: 'IT 36 A 0501803200 000000000041'
+bic: ''
+postale: ''
+causale: 'Terremoto Centro Italia'
+link: 'http://www.arci.it/blog/ambiente/archivio/ambiente/emergenza-terremoto-centro-italia/'
+email: ''
+data: 14/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/237,176847247,2016-09-14 08:40:26,2016-09-14 08:35:46,3e32 / CaseMatte - Appello per L'Aquila - Asilo Occupato,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": ""CCRTIT2T84A"", ""causale"": """", ""chi"": ""3e32 / CaseMatte - Appello per L'Aquila - Asilo Occupato"", ""data"": ""14/09/2016"", ""descrizione"": ""AIUTI IN BASE ALLE ESIGENZE E COINVOLGIMENTO DIRETTO E IMMEDIATO DEGLI SFOLLATI In questa primissima fase a chi ci ha chiesto come aiutare rispondiamo che le richieste che riceviamo al momento dai territori colpiti cambiano di giorno in giorno e riusciamo a soddisfarle entro le 24 ore successive. Per questo riteniamo utile per ora raccogliere donazioni in denaro con cui far fronte a tali necessit\u00e0. Per velocizzare la raccolta fondi abbiamo optato per utilizzare il conto gi\u00e0 esistente dell'associazione"", ""email"": """", ""iban"": ""IT22Y0501803200000000141992"", ""intestazione"": ""L'Aquila in Comune"", ""link"": ""https://www.facebook.com/3e32LAquila/photos/a.291424847645.190035.275377592645/10155093265087646/?type=3&theater"", ""postale"": """"}","<pre><yamldata>chi: '3e32 / CaseMatte - Appello per L''Aquila - Asilo Occupato'
 descrizione: 'AIUTI IN BASE ALLE ESIGENZE E COINVOLGIMENTO DIRETTO E IMMEDIATO DEGLI SFOLLATI In questa primissima fase a chi ci ha chiesto come aiutare rispondiamo che le richieste che riceviamo al momento dai territori colpiti cambiano di giorno in giorno e riusciamo a soddisfarle entro le 24 ore successive. Per questo riteniamo utile per ora raccogliere donazioni in denaro con cui far fronte a tali necessità. Per velocizzare la raccolta fondi abbiamo optato per utilizzare il conto già esistente dell''associazione'
 intestazione: 'L''Aquila in Comune'
@@ -640,17 +662,6 @@ postale: ''
 causale: 'Sisma Centro Italia'
 link: 'http://www.cri.it/terremoto-centro-italia'
 email: aiuti@cri.it
-data: 13/09/2016
-</yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/162,176719966,2016-09-13 18:50:41,2016-09-13 18:50:05,Corriere della Sera e TG La7,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Corriere della Sera e TG La7"", ""data"": ""13/09/2016"", ""descrizione"": ""Attivato c/c presso \""Banca Prossima\"""", ""email"": """", ""iban"": ""IT17E 03359 01600 100000145551"", ""intestazione"": ""Un aiuto subito - Terremoto in Centro Italia 6.0"", ""link"": """", ""postale"": """"}","<pre><yamldata>chi: 'Corriere della Sera e TG La7'
-descrizione: 'Attivato c/c presso ""Banca Prossima""'
-intestazione: 'Un aiuto subito - Terremoto in Centro Italia 6.0'
-iban: 'IT17E 03359 01600 100000145551'
-bic: ''
-postale: ''
-causale: ''
-link: ''
-email: ''
 data: 13/09/2016
 </yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/162,176719966,2016-09-13 18:50:41,2016-09-13 18:50:05,Corriere della Sera e TG La7,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Corriere della Sera e TG La7"", ""data"": ""13/09/2016"", ""descrizione"": ""Attivato c/c presso \""Banca Prossima\"""", ""email"": """", ""iban"": ""IT17E 03359 01600 100000145551"", ""intestazione"": ""Un aiuto subito - Terremoto in Centro Italia 6.0"", ""link"": """", ""postale"": """"}","<pre><yamldata>chi: 'Corriere della Sera e TG La7'
