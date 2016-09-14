@@ -1,4 +1,13 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/304,176950065,2016-09-14 16:10:30,2016-09-14 16:08:01,Giacomo Pantani: Ciao a tutti ,44.180454,12.423208,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""Giacomo Pantani: Hotel Mario di Cesenatico metto a disposizione dai prossimi giorni la mia struttura alberghiera per ospitare le persone che sono state costrette a lasciare le proprie abitazioni a causa del sisma del centro Italia. Mi sto informando per cercare anche altre strutture disponibili."", ""email"": """", ""immagine"": """", ""lat"": ""44.180454"", ""link"": ""https://www.facebook.com/romagnafamilyhotel.it/"", ""lon"": ""12.423208"", ""tel"": ""054787423""}","<pre><yamldata>tel: '054787423'
+email: ''
+descrizione: 'Giacomo Pantani: Hotel Mario di Cesenatico metto a disposizione dai prossimi giorni la mia struttura alberghiera per ospitare le persone che sono state costrette a lasciare le proprie abitazioni a causa del sisma del centro Italia. Mi sto informando per cercare anche altre strutture disponibili.'
+lat: '44.180454'
+lon: '12.423208'
+link: 'https://www.facebook.com/romagnafamilyhotel.it/'
+immagine: ''
+data: 14/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/296,176940161,2016-09-14 15:33:27,2016-09-14 15:32:25,Conventello House apre le port,,,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""Conventello House apre le porte. C'\u00e8 un campeggio con servizi e delle tende, il tempo \u00e8 buono possiamo ospitare tranquillamente chi ha bisogno. Passate parola."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.google.it/maps/place/Conventello,+48123+Ravenna+RA/@44.5035501,12.0721974,14z/data=!4m5!3m4!1s0x477e07d4422e2517:0x188e38f3e7c31ddb!8m2!3d44.503552!4d12.089707"", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 descrizione: 'Conventello House apre le porte. C''è un campeggio con servizi e delle tende, il tempo è buono possiamo ospitare tranquillamente chi ha bisogno. Passate parola.'
