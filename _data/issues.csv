@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/326,176991736,2016-09-14 19:01:58,2016-09-14 19:01:21,Fam. Paolini SENIGALLIA (AN),,,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""Fam. Paolini SENIGALLIA (AN) mette a disposizione appartamento con ascensore per 4/5 persone (3 camere)."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3661083315""}","<pre><yamldata>tel: '3661083315'
+email: ''
+descrizione: 'Fam. Paolini SENIGALLIA (AN) mette a disposizione appartamento con ascensore per 4/5 persone (3 camere).'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 14/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/325,176990863,2016-09-14 18:59:11,2016-09-14 18:57:40,MARISTELLA UDINE ospitalità,,,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""MARISTELLA di UDINE pu\u00f2 ospitare a casa propria"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3475363244""}","<pre><yamldata>tel: '3475363244'
 email: ''
 descrizione: 'MARISTELLA di UDINE può ospitare a casa propria'
