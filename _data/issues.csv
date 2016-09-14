@@ -44,6 +44,11 @@ descrizione: 'Lista pubblica di CrisisLab su Twitter, gli account che forniscono
 link: 'https://twitter.com/crisislabtweet/status/768397208873996288'
 data: 14/09/2016
 </yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/344,177007682,2016-09-14 20:29:48,2016-09-14 20:10:13,Supporto Psicologico Associazione 180amici,,,"[""Accettato"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""Supporto psicologico offerto dall'associazione 180amici gestito da psicologi aquilani attivi nei 9 mesi post-terremoto aquilano e nei 3 mesi post terremoto emiliano. Tel: +393661990081."", ""link"": """", ""titolo"": ""Supporto Psicologico Associazione 180amici""}","<pre><yamldata>titolo: 'Supporto Psicologico Associazione 180amici'
+descrizione: 'Supporto psicologico offerto dall''associazione 180amici gestito da psicologi aquilani attivi nei 9 mesi post-terremoto aquilano e nei 3 mesi post terremoto emiliano. Tel: +393661990081.'
+link: ''
+data: 14/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/342,177005649,2016-09-14 20:04:39,2016-09-14 20:01:18,Tasking Manager - Open Street Map,,,"[""Accettato"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""Mappatura foto aeree aggiornate."", ""link"": ""http://osmit-tm.wmflabs.org/project/13"", ""titolo"": ""Tasking Manager - Open Street Map""}","<pre><yamldata>titolo: 'Tasking Manager - Open Street Map'
 descrizione: 'Mappatura foto aeree aggiornate.'
 link: 'http://osmit-tm.wmflabs.org/project/13'
@@ -217,6 +222,11 @@ lat: 41.49390
 lon: 13.04892
 link: ''
 immagine: ''
+data: 14/09/2016
+</yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/315,176959632,2016-09-14 18:03:33,2016-09-14 16:45:11,Contributo fino a 600 Euro per ogni famiglia,,,"[""Accettato"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""Ordinanza della Protezione Civile n.388 articolo 3."", ""link"": ""https://twitter.com/cypherinfo/status/769874038244122625"", ""titolo"": ""Contributo fino a 600 Euro per ogni famiglia""}","<pre><yamldata>titolo: 'Contributo fino a 600 Euro per ogni famiglia'
+descrizione: 'Ordinanza della Protezione Civile n.388 articolo 3.'
+link: 'https://twitter.com/cypherinfo/status/769874038244122625'
 data: 14/09/2016
 </yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/315,176959632,2016-09-14 18:03:33,2016-09-14 16:45:11,Contributo fino a 600 Euro per ogni famiglia,,,"[""Accettato"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""Ordinanza della Protezione Civile n.388 articolo 3."", ""link"": ""https://twitter.com/cypherinfo/status/769874038244122625"", ""titolo"": ""Contributo fino a 600 Euro per ogni famiglia""}","<pre><yamldata>titolo: 'Contributo fino a 600 Euro per ogni famiglia'
@@ -855,17 +865,6 @@ bic: ''
 postale: ''
 causale: ''
 link: 'http://bit.ly/2bM1Nqs'
-email: ''
-data: 14/09/2016
-</yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/243,176848996,2016-09-14 08:47:45,2016-09-14 08:44:03,Associazione Docenti Senza Frontiere,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Contributo Terremoto Italia"", ""chi"": ""Associazione Docenti Senza Frontiere"", ""data"": ""14/09/2016"", ""descrizione"": ""E' attivo conto corrente per una raccolta fondi immediata destinata alla ricostruzione di edifici scolastici, per aiutare, gli alunni, i Dirigenti Scolastici e gli insegnanti nella ricostruzione della comunit\u00e0 scolastica e al ripristino veloce delle condizioni di normalit\u00e0."", ""email"": """", ""iban"": ""IT46T0501812101000000175233"", ""intestazione"": ""Docenti Senza Frontiere"", ""link"": ""http://www.docentisenzafrontiere.org/it/sostienici/speciale-emergenze/terremoto.html"", ""postale"": """"}","<pre><yamldata>chi: 'Associazione Docenti Senza Frontiere'
-descrizione: 'E'' attivo conto corrente per una raccolta fondi immediata destinata alla ricostruzione di edifici scolastici, per aiutare, gli alunni, i Dirigenti Scolastici e gli insegnanti nella ricostruzione della comunità scolastica e al ripristino veloce delle condizioni di normalità.'
-intestazione: 'Docenti Senza Frontiere'
-iban: IT46T0501812101000000175233
-bic: ''
-postale: ''
-causale: 'Contributo Terremoto Italia'
-link: 'http://www.docentisenzafrontiere.org/it/sostienici/speciale-emergenze/terremoto.html'
 email: ''
 data: 14/09/2016
 </yamldata></pre>"
