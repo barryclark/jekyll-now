@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/271,176857171,2016-09-14 09:22:58,2016-09-14 09:22:27,ANCI Toscana,,,"[""Accettato"", ""Form"", ""Notizie Utili"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""ANCI Toscana"", ""data"": ""14/09/2016"", ""descrizione"": ""#ToscanaperlaRicostruzione pagina sul sito di ANCI Toscana dove vengono raccolte tutte le iniziative dei Comuni toscani in sostegno delle popolazioni colpite dal terremoto"", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""http://www.ancitoscana.it/component/k2/603-terremoto-una-pagina-ad-hoc-per-le-iniziative-dei-comuni-toscani.html"", ""postale"": """"}","<pre><yamldata>chi: 'ANCI Toscana'
+descrizione: '#ToscanaperlaRicostruzione pagina sul sito di ANCI Toscana dove vengono raccolte tutte le iniziative dei Comuni toscani in sostegno delle popolazioni colpite dal terremoto'
+intestazione: ''
+iban: ''
+bic: ''
+postale: ''
+causale: ''
+link: 'http://www.ancitoscana.it/component/k2/603-terremoto-una-pagina-ad-hoc-per-le-iniziative-dei-comuni-toscani.html'
+email: ''
+data: 14/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/268,176856590,2016-09-14 09:20:53,2016-09-14 09:19:58,Asd Arieti Rugby Rieti 2014,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Asd Arieti Rugby Rieti 2014"", ""data"": ""14/09/2016"", ""descrizione"": ""Il rugby reatino ha aperto un conto per la raccolta di fondi finalizzati alla ricostruzione dei campi sportivi amatriciani, il tutto in continuo contatto con i consiglieri comunali di amatrice Filippo Palombini e Patrizia Catenacci, delegati al progetto, e con il sostegno della Federazione Italiana Rugby, che ha coinvolto tutte le societ\u00e0 italiane. Il conto \u00e8 stato aperto presso la Banca di Credito Cooperativo del Velino, Filiale di Rieticon."", ""email"": """", ""iban"": ""IT07L0874314600000020302818"", ""intestazione"": """", ""link"": ""http://www.rietilife.com/2016/09/04/anche-il-rugby-adotta-unopera-limpegno-di-arieti-e-azzurri-a-ricostruire-impianti-sportivi/"", ""postale"": """"}","<pre><yamldata>chi: 'Asd Arieti Rugby Rieti 2014'
 descrizione: 'Il rugby reatino ha aperto un conto per la raccolta di fondi finalizzati alla ricostruzione dei campi sportivi amatriciani, il tutto in continuo contatto con i consiglieri comunali di amatrice Filippo Palombini e Patrizia Catenacci, delegati al progetto, e con il sostegno della Federazione Italiana Rugby, che ha coinvolto tutte le società italiane. Il conto è stato aperto presso la Banca di Credito Cooperativo del Velino, Filiale di Rieticon.'
 intestazione: ''
