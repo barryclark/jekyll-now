@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/413,177157510,2016-09-15 12:00:22,2016-09-15 11:58:50,Consigli e info utili - persone sorde,,,"[""Accettato"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""In questa pagina ci sono consigli ed informazioni utili per persone sorde e su come comportarsi con queste persone."", ""link"": ""https://www.facebook.com/Emergenza-Terremoto-Sordi-Deaf-Earthquake-Safety-Check-291307381261451/?pnref=story"", ""titolo"": ""Consigli e info utili - persone sorde""}","<pre><yamldata>titolo: 'Consigli e info utili - persone sorde'
+descrizione: 'In questa pagina ci sono consigli ed informazioni utili per persone sorde e su come comportarsi con queste persone.'
+link: 'https://www.facebook.com/Emergenza-Terremoto-Sordi-Deaf-Earthquake-Safety-Check-291307381261451/?pnref=story'
+data: 15/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/412,177157299,2016-09-15 11:57:59,2016-09-15 11:57:45,Farmacia ASM - Rieti,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Emergenza Terremoto - dona un farmaco"", ""chi"": ""Farmacia ASM - Rieti"", ""data"": ""15/09/2016"", ""descrizione"": ""Iniziativa Dona un Farmaco. Potete DONARE UN FARMACO recandovi nelle 3 farmacie municipali di ASM RIETI in costante collegamento con i territori colpiti dal terremoto. Chiedi al farmacista come puoi contribuire: sar\u00e0 applicato uno sconto del 10% sulle donazioni. \""Viale Matteucci, 10 - 0746251703 P.zza Angelucci, 21 - 0746497019 Via Martiri delle Fosse Reatine, 7 - 0746491383\"""", ""email"": """", ""iban"": ""IT49S0832714600000000001821"", ""intestazione"": ""A.S.M. Rieti S.p.A"", ""link"": """", ""postale"": """"}","<pre><yamldata>chi: 'Farmacia ASM - Rieti'
 descrizione: 'Iniziativa Dona un Farmaco. Potete DONARE UN FARMACO recandovi nelle 3 farmacie municipali di ASM RIETI in costante collegamento con i territori colpiti dal terremoto. Chiedi al farmacista come puoi contribuire: sarà applicato uno sconto del 10% sulle donazioni. ""Viale Matteucci, 10 - 0746251703 P.zza Angelucci, 21 - 0746497019 Via Martiri delle Fosse Reatine, 7 - 0746491383""'
 intestazione: 'A.S.M. Rieti S.p.A'
@@ -755,6 +760,17 @@ indirizzo: 'Via F. Ferroni, Centro storico, Rieti, RI, Lazio, 02100, Italia'
 lat: '42.406727660927984'
 lon: '12.869110107421875'
 link: 'http://www.comune.rieti.it/article/16/08/costituzione-coordinamento-iniziative-sostegno-dei-bambini'
+immagine: ''
+data: 14/09/2016
+</yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/309,176952264,2016-09-14 18:03:32,2016-09-14 16:16:15,Materiale didattico,43.77902662160831,10.4150390625,"[""Accettato"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""Materiale didattico"", ""data"": ""14/09/2016"", ""descrizione"": ""Scuola primaria Sanminiatelli di Perignano (Pisa) - Offerta di materiale didattico per scuole primarie nelle zone colpite dal sisma (quadernoni, album, pennarelli, matite e altra cancelleria)"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via Maria Montessori, San Giuliano Terme, PI, TOS, 56017, Italia"", ""lat"": ""43.77902662160831"", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1765730697027847/"", ""lon"": ""10.4150390625"", ""tel"": """"}","<pre><yamldata>tel: ''
+email: ''
+cosa: 'Materiale didattico'
+descrizione: 'Scuola primaria Sanminiatelli di Perignano (Pisa) - Offerta di materiale didattico per scuole primarie nelle zone colpite dal sisma (quadernoni, album, pennarelli, matite e altra cancelleria)'
+indirizzo: 'Via Maria Montessori, San Giuliano Terme, PI, TOS, 56017, Italia'
+lat: '43.77902662160831'
+lon: '10.4150390625'
+link: 'https://www.facebook.com/groups/1758670357733881/permalink/1765730697027847/'
 immagine: ''
 data: 14/09/2016
 </yamldata></pre>"
