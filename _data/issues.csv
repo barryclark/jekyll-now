@@ -1,6 +1,6 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/401,177152949,2016-09-15 11:33:24,2016-09-15 11:33:00,Miur - email per donazioni materiali didattici e iniziative di solidarietà,,,"[""Accettato"", ""Contatti"", ""Form""]",,,"{""data"": ""15/09/2016"", ""descrizione"": """", ""email"": ""ripartiamodallascuola@istruzione.it"", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""nome"": ""Miur - email per donazioni materiali didattici e iniziative di solidariet\u00e0"", ""tel"": ""5""}","<pre><yamldata>nome: 'Miur - email per donazioni materiali didattici e iniziative di solidarietà'
-tel: '5'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/401,177152949,2016-09-15 11:33:30,2016-09-15 11:33:00,Miur - email per donazioni materiali didattici e iniziative di solidarietà,,,"[""Accettato"", ""Contatti"", ""Form""]",,,"{""data"": ""15/09/2016"", ""descrizione"": """", ""email"": ""ripartiamodallascuola@istruzione.it"", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""nome"": ""Miur - email per donazioni materiali didattici e iniziative di solidariet\u00e0"", ""tel"": """"}","<pre><yamldata>nome: 'Miur - email per donazioni materiali didattici e iniziative di solidarietà'
+tel: ''
 email: ripartiamodallascuola@istruzione.it
 descrizione: ''
 indirizzo: ''
