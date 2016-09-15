@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/471,177284962,2016-09-15 20:51:09,2016-09-15 20:43:48,LUIGI offre 2 roulotte e 2 sta,"43.43622,12.82482","43.61048,13.07476","[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""LUIGI offre 2 roulotte e 2 stanze ad ARCEVIA (AN)."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via Vallone, Offagna, AN, Marche, Italia"", ""lat"": ""43.43622,12.82482"", ""link"": """", ""lon"": ""43.61048,13.07476"", ""tel"": ""3472397478""}","<pre><yamldata>tel: '3472397478'
+email: ''
+descrizione: 'LUIGI offre 2 roulotte e 2 stanze ad ARCEVIA (AN).'
+indirizzo: 'Via Vallone, Offagna, AN, Marche, Italia'
+lat: '43.43622,12.82482'
+lon: '43.61048,13.07476'
+link: ''
+immagine: ''
+data: 15/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/470,177275800,2016-09-15 20:10:23,2016-09-15 20:07:40,Cercasi CUOCO di AMATRICE per evento/mercato biologico il 5-6-novembre a RIVA del GARDA,,,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Cercasi CUOCO di AMATRICE per evento/mercato biologico il 5-6-novembre a RIVA del GARDA"", ""data"": ""15/09/2016"", ""descrizione"": ""durante l'evento ci sar\u00e0 l'iniziativa di raccolta fondi \""L'Amatriciana per Amatrice\"". Vitto e alloggio (credo anche il viaggio) offerti. Info e contatti: Bertoni Angiolino"", ""email"": ""bertoni.angiolino@virgilio.it-"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1769637063303877/"", ""lon"": """", ""tel"": ""3334365401""}","<pre><yamldata>tel: '3334365401'
 email: bertoni.angiolino@virgilio.it-
 cosa: 'Cercasi CUOCO di AMATRICE per evento/mercato biologico il 5-6-novembre a RIVA del GARDA'
@@ -2134,17 +2144,6 @@ bic: ''
 postale: ''
 causale: ''
 link: 'http://www.comune.amatrice.rieti.it/codice-iban-del-comune-di-amatrice/'
-email: ''
-data: 13/09/2016
-</yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/178,176753997,2016-09-13 21:25:30,2016-09-13 21:25:00,Cisom - Corpo Italiano Soccorso Ordine di Malta,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": ""UNCRITMM"", ""causale"": """", ""chi"": ""Cisom - Corpo Italiano Soccorso Ordine di Malta"", ""data"": ""13/09/2016"", ""descrizione"": """", ""email"": """", ""iban"": ""IT50E 02008 05074 000103744409"", ""intestazione"": ""Fondazione Corpo italiano di soccorso dell'Ordine di Malta"", ""link"": ""http://www.cisom.org/le-nostre-news-da/direzione-nazionale/297-terremoto-in-italia.html"", ""postale"": """"}","<pre><yamldata>chi: 'Cisom - Corpo Italiano Soccorso Ordine di Malta'
-descrizione: ''
-intestazione: 'Fondazione Corpo italiano di soccorso dell''Ordine di Malta'
-iban: 'IT50E 02008 05074 000103744409'
-bic: UNCRITMM
-postale: ''
-causale: ''
-link: 'http://www.cisom.org/le-nostre-news-da/direzione-nazionale/297-terremoto-in-italia.html'
 email: ''
 data: 13/09/2016
 </yamldata></pre>"
