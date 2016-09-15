@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/404,177153649,2016-09-15 11:40:16,2016-09-15 11:36:54,UILDM unione italiana lotta alla distrofia muscolare,,,"[""Accettato"", ""Contatti"", ""Form""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""l'unione \u00e8 a disposizione per segnalazioni ed interventi."", ""email"": ""direzionenazionale@uildm.it"", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""nome"": ""UILDM unione italiana lotta alla distrofia muscolare"", ""tel"": ""049 8021001""}","<pre><yamldata>nome: 'UILDM unione italiana lotta alla distrofia muscolare'
+tel: '049 8021001'
+email: direzionenazionale@uildm.it
+descrizione: 'l''unione è a disposizione per segnalazioni ed interventi.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+data: 15/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/403,177153368,2016-09-15 11:36:01,2016-09-15 11:35:12,Comune di Amatrice - email a cui inviare segnalazioni su iniziative di solidarietà,42.6299,13.28795,"[""Accettato"", ""Contatti"", ""Form""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""Il Comune di Amatrice sul sito comunica che per le singole iniziative di solidariet\u00e0 \u00e8 possibile inviare una mail all\u2019indirizzo segreteria@comune.amatrice.rieti.it, specificando il tipo di iniziativa, il referente e il contatto a cui rivolgersi."", ""email"": ""segreteria@comune.amatrice.rieti.it"", ""indirizzo"": """", ""lat"": 42.6299, ""link"": """", ""lon"": 13.28795, ""nome"": ""Comune di Amatrice - email a cui inviare segnalazioni su iniziative di solidariet\u00e0"", ""tel"": """"}","<pre><yamldata>nome: 'Comune di Amatrice - email a cui inviare segnalazioni su iniziative di solidarietà'
 tel: ''
 email: segreteria@comune.amatrice.rieti.it
@@ -784,6 +794,17 @@ indirizzo: ''
 lat: ''
 lon: ''
 link: ''
+immagine: ''
+data: 14/09/2016
+</yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/300,176948051,2016-09-14 18:03:32,2016-09-14 16:00:27,Libri e cancelleria,,,"[""Accettato"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""Libri e cancelleria"", ""data"": ""14/09/2016"", ""descrizione"": ""L\u2019Associazione Nazionale Presidi del Lazio e il Progetto Bambini dell\u2019U.N.I.T.A.L.S.I. (Unione Nazionale Italiana Trasporto Ammalati a Lourdes e Santuari Internazionali) hanno lanciato l\u2019iniziativa \u201cScuola solidale\u201d grazie alla quale verranno raccolti fondi a favore dell\u2019Istituto omnicomprensivo di Amatrice che \u00e8 andato completamente distrutto a causa del sisma - IN TUTTA ITALIA"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""http://www.corriere.it/scuola/primaria/16_agosto_26/terremoto-al-via-scuola-solidale-raccolta-fondi-bambini-amatrice-c0196278-6b66-11e6-8bdd-2a860cc068c8.shtml?refresh_ce-cp"", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
+email: ''
+cosa: 'Libri e cancelleria'
+descrizione: 'L’Associazione Nazionale Presidi del Lazio e il Progetto Bambini dell’U.N.I.T.A.L.S.I. (Unione Nazionale Italiana Trasporto Ammalati a Lourdes e Santuari Internazionali) hanno lanciato l’iniziativa “Scuola solidale” grazie alla quale verranno raccolti fondi a favore dell’Istituto omnicomprensivo di Amatrice che è andato completamente distrutto a causa del sisma - IN TUTTA ITALIA'
+indirizzo: ''
+lat: ''
+lon: ''
+link: 'http://www.corriere.it/scuola/primaria/16_agosto_26/terremoto-al-via-scuola-solidale-raccolta-fondi-bambini-amatrice-c0196278-6b66-11e6-8bdd-2a860cc068c8.shtml?refresh_ce-cp'
 immagine: ''
 data: 14/09/2016
 </yamldata></pre>"
