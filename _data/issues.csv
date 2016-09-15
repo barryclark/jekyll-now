@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/459,177188706,2016-09-15 14:14:59,2016-09-15 14:14:23,Centro Servizi Volontariato di Perugia torna operativo a Norcia,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""Il Centro servizi volontariato ripristina la sua sede a Norcia, dopo i danni subiti dal terremoto. Adesso la sede \u00e8 presso il centro operativo del Comune nel campo di Boario. Il centro servizi \u00e8 a disposizione delle associazioni al numero: 349 7929843 e indirizzo mail: valnerina@pgcesvol.net"", ""link"": ""http://www.pgcesvol.net/ristabilita-la-presenza-del-cesvol-in-valnerina/"", ""titolo"": ""Centro Servizi Volontariato di Perugia torna operativo a Norcia""}","<pre><yamldata>titolo: 'Centro Servizi Volontariato di Perugia torna operativo a Norcia'
+descrizione: 'Il Centro servizi volontariato ripristina la sua sede a Norcia, dopo i danni subiti dal terremoto. Adesso la sede è presso il centro operativo del Comune nel campo di Boario. Il centro servizi è a disposizione delle associazioni al numero: 349 7929843 e indirizzo mail: valnerina@pgcesvol.net'
+link: 'http://www.pgcesvol.net/ristabilita-la-presenza-del-cesvol-in-valnerina/'
+data: 15/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/458,177188287,2016-09-15 14:13:12,2016-09-15 14:12:43,Approvato decreto Ministero Economia e Finanze per sospensione versamenti e adempimenti tributari,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""A partire dal 24 agosto 2016 sono sospesi i versamenti delle imposte e gli adempimenti tributari per tutti i contribuenti (persone fisiche, imprenditori, persone giuridiche) che sono residenti o operano nei comuni colpiti dal terremoto che ha interessato il Centro Italia. La sospensione riguarda anche i versamenti e gli adempimenti derivanti da cartelle di pagamento emesse dagli agenti della riscossione e quelli conseguenti ad accertamenti esecutivi.I decreto indica l\u2019elenco dei Comuni delle Marche, dell\u2019Abruzzo, del Lazio e dell\u2019Umbria in cui si applica la misura ed \u00e8 in corso di pubblicazione sulla Gazzetta Ufficiale. Come prassi, il decreto prevede anche un termine per la ripresa dei versamenti (20 dicembre 2016)."", ""link"": ""http://www.mef.gov.it/ufficio-stampa/comunicati/2016/comunicato_0153.html"", ""titolo"": ""Approvato decreto Ministero Economia e Finanze per sospensione versamenti e adempimenti tributari""}","<pre><yamldata>titolo: 'Approvato decreto Ministero Economia e Finanze per sospensione versamenti e adempimenti tributari'
 descrizione: 'A partire dal 24 agosto 2016 sono sospesi i versamenti delle imposte e gli adempimenti tributari per tutti i contribuenti (persone fisiche, imprenditori, persone giuridiche) che sono residenti o operano nei comuni colpiti dal terremoto che ha interessato il Centro Italia. La sospensione riguarda anche i versamenti e gli adempimenti derivanti da cartelle di pagamento emesse dagli agenti della riscossione e quelli conseguenti ad accertamenti esecutivi.I decreto indica l’elenco dei Comuni delle Marche, dell’Abruzzo, del Lazio e dell’Umbria in cui si applica la misura ed è in corso di pubblicazione sulla Gazzetta Ufficiale. Come prassi, il decreto prevede anche un termine per la ripresa dei versamenti (20 dicembre 2016).'
 link: 'http://www.mef.gov.it/ufficio-stampa/comunicati/2016/comunicato_0153.html'
@@ -1510,17 +1515,6 @@ bic: ''
 postale: ''
 causale: 'Donazione Terremoto'
 link: 'https://www.facebook.com/automobileclub.ascolipicenofermo/photos/a.943656578986817.1073741826.943656545653487/1278764215476050/?type=3'
-email: ''
-data: 14/09/2016
-</yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/249,176851390,2016-09-14 09:00:53,2016-09-14 08:55:20,"Confindustria, Cgil, Cisl, Uil",,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": ""PASCITMMRM"", ""causale"": ""Fondo di solidariet\u00e0 per le popolazioni centro Italia"", ""chi"": ""Confindustria, Cgil, Cisl, Uil"", ""data"": ""14/09/2016"", ""descrizione"": ""\u201cFondo di intervento a favore delle popolazioni del Centro Italia\u201d nel quale confluiranno contributi volontari da parte dei lavoratori di tutto il territorio nazionale, pari a un\u2019ora di lavoro e un contributo equivalente, per ogni lavoratore, da parte delle imprese. La raccolta fondi terminer\u00e0 il 31 gennaio 2017"", ""email"": """", ""iban"": ""IT94V0103003201 000002589031"", ""intestazione"": """", ""link"": ""http://www.rassegna.it/articoli/terremoto-attivato-fondo-cgil-cisl-uil-e-confindustria"", ""postale"": """"}","<pre><yamldata>chi: 'Confindustria, Cgil, Cisl, Uil'
-descrizione: '“Fondo di intervento a favore delle popolazioni del Centro Italia” nel quale confluiranno contributi volontari da parte dei lavoratori di tutto il territorio nazionale, pari a un’ora di lavoro e un contributo equivalente, per ogni lavoratore, da parte delle imprese. La raccolta fondi terminerà il 31 gennaio 2017'
-intestazione: ''
-iban: 'IT94V0103003201 000002589031'
-bic: PASCITMMRM
-postale: ''
-causale: 'Fondo di solidarietà per le popolazioni centro Italia'
-link: 'http://www.rassegna.it/articoli/terremoto-attivato-fondo-cgil-cisl-uil-e-confindustria'
 email: ''
 data: 14/09/2016
 </yamldata></pre>"
