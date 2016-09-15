@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/367,177122374,2016-09-15 08:52:33,2016-09-15 08:52:01,Materiale di Prima necessità,,,"[""Accettato"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""Materiale di Prima necessit\u00e0"", ""data"": ""15/09/2016"", ""descrizione"": ""- acqua minerale; - cibo a lunga conservazione; - coperte e vestiti; - pannolini e materiale per bambini; - Materiale per igiene intima."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""Andrea 3287535300""}","<pre><yamldata>tel: 'Andrea 3287535300'
+email: ''
+cosa: 'Materiale di Prima necessità'
+descrizione: '- acqua minerale; - cibo a lunga conservazione; - coperte e vestiti; - pannolini e materiale per bambini; - Materiale per igiene intima.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 15/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/363,177119718,2016-09-15 08:37:42,2016-09-15 08:37:05,Beni prima necessità,42.07653,12.27201,"[""Accettato"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""Beni prima necessit\u00e0"", ""data"": ""15/09/2016"", ""descrizione"": ""Beni alimentari inscatolati, necessario per bambini e neonati, come pannolini, abbigliamento nuovo e coperte confezionate. Tutti i supermercati di Anguillara Sabazia e l\u2019Ex Consorzio, in via Anguillarese, 145"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": 42.07653, ""link"": """", ""lon"": 12.27201, ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 cosa: 'Beni prima necessità'
