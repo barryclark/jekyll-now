@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/388,177139078,2016-09-15 10:15:01,2016-09-15 10:14:40,Farnesina,,,"[""Accettato"", ""Contatti"", ""Form""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""Numero emergenza dall'estero"", ""email"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""nome"": ""Farnesina"", ""tel"": ""0682888850""}","<pre><yamldata>nome: Farnesina
+tel: 0682888850
+email: ''
+descrizione: 'Numero emergenza dall''estero'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+data: 15/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/387,177138687,2016-09-15 10:13:46,2016-09-15 10:12:41,Comune di Ascoli Piceno,42.85358,13.57753,"[""Accettato"", ""Contatti"", ""Form""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""In relazione all'emergenza terremoto, il Comune di Ascoli Piceno ha attivato un indirizzo di posta elettronica al quale inviare le proposte di attivit\u00e0 di volontariato. Chiunque volesse, in forma individuale o associata, prestare la propria opera di volontariato, conferire materiale di prima necessit\u00e0 (indumenti, coperte, alimenti, acqua ecc.), mettere a disposizione autovetture o alloggi, pu\u00f2 inviare una e-mail. Le domande verranno poi coordinate dalla Centrale Operativa."", ""email"": ""emergenzaterremoto@comune.ascolipiceno.it"", ""indirizzo"": ""P.zza Arringo, 7 (AP)"", ""lat"": 42.85358, ""link"": ""http://www.comuneap.gov.it/home"", ""lon"": 13.57753, ""nome"": ""Comune di Ascoli Piceno"", ""tel"": """"}","<pre><yamldata>nome: 'Comune di Ascoli Piceno'
 tel: ''
 email: emergenzaterremoto@comune.ascolipiceno.it
