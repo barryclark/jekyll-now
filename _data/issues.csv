@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/472,177288141,2016-09-15 20:59:39,2016-09-15 20:58:02,NOEMI mette a disposizione cas,"41.59965,12.98018","41.68945,13.10514","[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""NOEMI mette a disposizione casa in campagna per 4/6 persone a Montelanico (Roma)."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": ""41.59965,12.98018"", ""link"": """", ""lon"": ""41.68945,13.10514"", ""tel"": ""327 369 2383""}","<pre><yamldata>tel: '327 369 2383'
+email: ''
+descrizione: 'NOEMI mette a disposizione casa in campagna per 4/6 persone a Montelanico (Roma).'
+indirizzo: ''
+lat: '41.59965,12.98018'
+lon: '41.68945,13.10514'
+link: ''
+immagine: ''
+data: 15/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/471,177284962,2016-09-15 20:51:56,2016-09-15 20:43:48,LUIGI offre 2 roulotte e 2 sta,"43.43622,12.82482","43.61048,13.07476","[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""LUIGI offre 2 roulotte e 2 stanze ad ARCEVIA (AN)."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Arcevia, AN, Marche, Italia"", ""lat"": ""43.43622,12.82482"", ""link"": """", ""lon"": ""43.61048,13.07476"", ""tel"": ""3472397478""}","<pre><yamldata>tel: '3472397478'
 email: ''
 descrizione: 'LUIGI offre 2 roulotte e 2 stanze ad ARCEVIA (AN).'
@@ -1479,17 +1489,6 @@ bic: BPPIITRRXXX
 postale: '900050'
 causale: ''
 link: 'https://twitter.com/ItalyMFA/status/769155609547735040'
-email: ''
-data: 14/09/2016
-</yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/257,176853743,2016-09-14 09:15:49,2016-09-14 09:06:25,Disaster Tech Lab,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Disaster Tech Lab"", ""data"": ""14/09/2016"", ""descrizione"": ""Una rete internet per Amatrice, crowdfunding avviato da Disaster Tech Lab."", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""https://www.gofundme.com/internet4amatrice"", ""postale"": """"}","<pre><yamldata>chi: 'Disaster Tech Lab'
-descrizione: 'Una rete internet per Amatrice, crowdfunding avviato da Disaster Tech Lab.'
-intestazione: ''
-iban: ''
-bic: ''
-postale: ''
-causale: ''
-link: 'https://www.gofundme.com/internet4amatrice'
 email: ''
 data: 14/09/2016
 </yamldata></pre>"
