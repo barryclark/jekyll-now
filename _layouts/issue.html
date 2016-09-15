@@ -11,24 +11,30 @@ layout: base
 
 <div class="container" role="main">
   <div class="row"> <div class="col-md-12"><h2>{{page.title}}</h2> </div> </div>
-  <div class="row"> <div class="col-md-4">Url:</div> <div class="col-md-8"> <a href="{{page.issue.url}}">{{page.issue.url}}</a></div> </div>
-  <div class="row"> <div class="col-md-4">id:</div> <div class="col-md-8"> {{page.issue.id}} </div> </div>
-  <div class="row"> <div class="col-md-4">created:</div> <div class="col-md-8"> {{page.issue.created_at}} </div> </div>
-  <div class="row"> <div class="col-md-4">updated:</div> <div class="col-md-8"> {{page.issue.updated_at}} </div> </div>
-  <div class="row"> <div class="col-md-4">lat:</div> <div class="col-md-8"> {{page.issue.lat}} </div> </div>
-  <div class="row"> <div class="col-md-4">lon:</div> <div class="col-md-8"> {{page.issue.lon}} </div> </div>
-  <div class="row"> <div class="col-md-4">Mappina:</div><div class="col-md-4"> <div id="map"></div> </div> </div>
-  <div class="row"> <div class="col-md-4">label:</div> <div class="col-md-8"> {{page.issue.labels}} </div> </div>
-  <div class="row"> <div class="col-md-4">milestone:</div> <div class="col-md-8"> {{page.issue.milestone}} </div> </div>
+  <div class="row"> <div class="col-md-4">Link:</div> <div class="col-md-8"> <a href="{{page.issue.url}}">{{page.issue.url}}</a></div> </div>
+  <div class="row"> <div class="col-md-4">Identificativo:</div> <div class="col-md-8"> {{page.issue.id}} </div> </div>
+  <div class="row"> <div class="col-md-4">Creato:</div> <div class="col-md-8"> {{page.issue.created_at}} </div> </div>
+  <div class="row"> <div class="col-md-4">Aggiornato:</div> <div class="col-md-8"> {{page.issue.updated_at}} </div> </div>
+
+  {% if page.issue.lat != blank %}
+  <div class="row"> <div class="col-md-4">latitudine:</div> <div class="col-md-8"> {{page.issue.lat}} </div> </div>
+  <div class="row"> <div class="col-md-4">longitudine:</div> <div class="col-md-8"> {{page.issue.lon}} </div> </div>
+  <div class="row"> <div class="col-md-4">Mappa:</div><div class="col-md-4"> <div id="map"></div> </div> </div>
+  {% endif %}
+
+  <div class="row"> <div class="col-md-4">Tags:</div> <div class="col-md-8"> {{page.issue.labels}} </div> </div>
+  <div class="row"> <div class="col-md-4">Urgenza:</div> <div class="col-md-8"> {{page.issue.milestone}} </div> </div>
   {% if page.issue.image != blank %}
-  <div class="row"> <div class="col-md-4">image:</div> <div class="col-md-8"> <img alt="immagine" src="{{page.issue.image}}"></img> </div> </div>
+  <div class="row"> <div class="col-md-4">Immagine:</div> <div class="col-md-8"> <img alt="immagine" src="{{page.issue.image}}"></img> </div> </div>
   {% endif %}
   {% if page.issue.data.link != blank %}
   <div class="row"> <div class="col-md-4">link:</div> <div class="col-md-8"> <a href="{{page.issue.data.link}}">{{page.issue.data.link}}</a></div> </div>
   {% endif %}
-  <div class="row"> <div class="col-md-12">{{page.issue.data}}</div></div>
 
+  <div class="row"> <div class="col-md-12">{{page.issue.data}}</div></div>
 </div>
+
+
 <script>
 
 // initialize the map
@@ -37,7 +43,7 @@ var map = L.map('map').setView([{{page.issue.lat}}, {{page.issue.lon}}], 16);
 // create the tile layer with correct attribution
 var osmUrl='http://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png';
 var osmAttrib='&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, Tiles courtesy of <a href="http://hot.openstreetmap.org/" target="_blank">Humanitarian OpenStreetMap Team</a>';
-var osm = new L.TileLayer(osmUrl, {minZoom: 8, maxZoom: 19, attribution: osmAttrib});		
+var osm = new L.TileLayer(osmUrl, {minZoom: 8, maxZoom: 19, attribution: osmAttrib});
 
 map.addLayer(osm);
 
