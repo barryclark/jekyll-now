@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/377,177127210,2016-09-15 09:16:58,2016-09-15 09:16:49,Casetta Rossa Roma,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Casetta Rossa Roma"", ""data"": ""15/09/2016"", ""descrizione"": ""dal 26 dalle 11,00 e nei giorni seguenti a partire dalle 16,00: -acqua in bottiglia -cibo in scatola (fagioli, tonno, ecc..) -riso, pasta -biscotti, fette biscottate -materiale di primo soccorso (cerotti, acqua ossigenata, ecc) -pannolini -coperte. Casetta Rossa via Giovanni Battista Magnaghi, 14"", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": """", ""postale"": """"}","<pre><yamldata>chi: 'Casetta Rossa Roma'
+descrizione: 'dal 26 dalle 11,00 e nei giorni seguenti a partire dalle 16,00: -acqua in bottiglia -cibo in scatola (fagioli, tonno, ecc..) -riso, pasta -biscotti, fette biscottate -materiale di primo soccorso (cerotti, acqua ossigenata, ecc) -pannolini -coperte. Casetta Rossa via Giovanni Battista Magnaghi, 14'
+intestazione: ''
+iban: ''
+bic: ''
+postale: ''
+causale: ''
+link: ''
+email: ''
+data: 15/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/375,177126531,2016-09-15 09:13:57,2016-09-15 09:13:29,Guardie Zoofile Prato (OIPA Prato),,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Guardie Zoofile Prato (OIPA Prato)"", ""data"": ""15/09/2016"", ""descrizione"": ""Raccolta di cibo per cani e gatti, guinzagli, antiparassitari, trasportini. Via Argine del Calice, 4/A (Localit\u00e0 Casale, accanto al depuratore) - 59100 Prato PO. 3475568834 - 3394706867 - 3453220066"", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""https://www.facebook.com/guardie.zoofileprato"", ""postale"": """"}","<pre><yamldata>chi: 'Guardie Zoofile Prato (OIPA Prato)'
 descrizione: 'Raccolta di cibo per cani e gatti, guinzagli, antiparassitari, trasportini. Via Argine del Calice, 4/A (Località Casale, accanto al depuratore) - 59100 Prato PO. 3475568834 - 3394706867 - 3453220066'
 intestazione: ''
