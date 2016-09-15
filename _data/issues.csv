@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/408,177156338,2016-09-15 11:52:42,2016-09-15 11:52:21,Università di Camerino,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""Rettore Flavio Corradini; Rita Ortenzi : Hanno attivato geologi e architetti sulla zona del disastro - Corso di laurea in Geologia, coordinati dal prof. Emanuele Tondi,"", ""link"": """", ""titolo"": ""Universit\u00e0 di Camerino""}","<pre><yamldata>titolo: 'Università di Camerino'
+descrizione: 'Rettore Flavio Corradini; Rita Ortenzi : Hanno attivato geologi e architetti sulla zona del disastro - Corso di laurea in Geologia, coordinati dal prof. Emanuele Tondi,'
+link: ''
+data: 15/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/407,177155912,2016-09-15 11:51:48,2016-09-15 11:49:52,Gus - Gruppo Umana Solidarietà,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""http://gusitalia.it/emergenza-terremoto-centro-italia/ - Servizio di supporto psicologico"", ""link"": ""http://gusitalia.it/emergenza-terremoto-centro-italia/"", ""titolo"": ""Gus - Gruppo Umana Solidariet\u00e0""}","<pre><yamldata>titolo: 'Gus - Gruppo Umana Solidarietà'
 descrizione: 'http://gusitalia.it/emergenza-terremoto-centro-italia/ - Servizio di supporto psicologico'
 link: 'http://gusitalia.it/emergenza-terremoto-centro-italia/'
