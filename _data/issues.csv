@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/412,177157299,2016-09-15 11:57:59,2016-09-15 11:57:45,Farmacia ASM - Rieti,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Emergenza Terremoto - dona un farmaco"", ""chi"": ""Farmacia ASM - Rieti"", ""data"": ""15/09/2016"", ""descrizione"": ""Iniziativa Dona un Farmaco. Potete DONARE UN FARMACO recandovi nelle 3 farmacie municipali di ASM RIETI in costante collegamento con i territori colpiti dal terremoto. Chiedi al farmacista come puoi contribuire: sar\u00e0 applicato uno sconto del 10% sulle donazioni. \""Viale Matteucci, 10 - 0746251703 P.zza Angelucci, 21 - 0746497019 Via Martiri delle Fosse Reatine, 7 - 0746491383\"""", ""email"": """", ""iban"": ""IT49S0832714600000000001821"", ""intestazione"": ""A.S.M. Rieti S.p.A"", ""link"": """", ""postale"": """"}","<pre><yamldata>chi: 'Farmacia ASM - Rieti'
+descrizione: 'Iniziativa Dona un Farmaco. Potete DONARE UN FARMACO recandovi nelle 3 farmacie municipali di ASM RIETI in costante collegamento con i territori colpiti dal terremoto. Chiedi al farmacista come puoi contribuire: sarà applicato uno sconto del 10% sulle donazioni. ""Viale Matteucci, 10 - 0746251703 P.zza Angelucci, 21 - 0746497019 Via Martiri delle Fosse Reatine, 7 - 0746491383""'
+intestazione: 'A.S.M. Rieti S.p.A'
+iban: IT49S0832714600000000001821
+bic: ''
+postale: ''
+causale: 'Emergenza Terremoto - dona un farmaco'
+link: ''
+email: ''
+data: 15/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/411,177157001,2016-09-15 11:56:24,2016-09-15 11:56:02,"Cercasi animatori, animatrici",,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""Urgono animatori ed animatrici per bambini, artisti di ogni genere ed intrattenitori. Maggiori info sulla pagina Facebook \""Terremoto centro Italia, chiamata alle arti artisti e animazione\"" Emanuela Carocca 3934137960"", ""link"": """", ""titolo"": ""Cercasi animatori, animatrici""}","<pre><yamldata>titolo: 'Cercasi animatori, animatrici'
 descrizione: 'Urgono animatori ed animatrici per bambini, artisti di ogni genere ed intrattenitori. Maggiori info sulla pagina Facebook ""Terremoto centro Italia, chiamata alle arti artisti e animazione"" Emanuela Carocca 3934137960'
 link: ''
@@ -766,17 +777,6 @@ indirizzo: 'Palazzo Comunale, Piazza Orsini, Casale Zocchi, Amatrice, RI, Lazio,
 lat: '42.62865429351794'
 lon: '13.289680480957031'
 link: ''
-immagine: ''
-data: 14/09/2016
-</yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/307,176951458,2016-09-14 18:03:32,2016-09-14 16:13:17,ARCI Nazionale,,,"[""Accettato"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""ARCI Nazionale"", ""data"": ""14/09/2016"", ""descrizione"": ""Arci nazionale ha attivato un progetto di crowdfunding specifico per il Bibliobus, \""\""BIBLIOBUS ARCI \u2013 La Cultura per la Ricostruzione\""\"". Cosa finanzieremo con i fondi raccolti - Assicurazione autobus e volontari - Revisione autobus - Combustibile - Spese di gestione - Attivit\u00e0 itineranti (presentazioni con autori, iniziative pubbliche, etc.) - Acquisto nuovi libri - Abbonamenti a riviste e quotidiani - Acquisto di attrezzatura minuta (sedie, tavolino, ombrellone etc..)"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.produzionidalbasso.com/project/bibliobus-arci-la-cultura-per-la-ricostruzione/"", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
-email: ''
-cosa: 'ARCI Nazionale'
-descrizione: 'Arci nazionale ha attivato un progetto di crowdfunding specifico per il Bibliobus, """"BIBLIOBUS ARCI – La Cultura per la Ricostruzione"""". Cosa finanzieremo con i fondi raccolti - Assicurazione autobus e volontari - Revisione autobus - Combustibile - Spese di gestione - Attività itineranti (presentazioni con autori, iniziative pubbliche, etc.) - Acquisto nuovi libri - Abbonamenti a riviste e quotidiani - Acquisto di attrezzatura minuta (sedie, tavolino, ombrellone etc..)'
-indirizzo: ''
-lat: ''
-lon: ''
-link: 'https://www.produzionidalbasso.com/project/bibliobus-arci-la-cultura-per-la-ricostruzione/'
 immagine: ''
 data: 14/09/2016
 </yamldata></pre>"
