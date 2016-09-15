@@ -489,13 +489,6 @@ lat: '42.776289'
 lon: '13.29453'
 data: 14/09/2016
 </yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/293,176867458,2016-09-14 11:01:32,2016-09-14 10:09:09,Scuola media di Arquata danneg,42.776289,13.29453,"[""Accettato"", ""Telegram""]",,http://i.imgur.com/ieYxjf9.jpg,"{""data"": ""14/09/2016"", ""descrizione"": ""Scuola media di Arquata danneggiata"", ""immagine"": ""http://i.imgur.com/ieYxjf9.jpg"", ""lat"": ""42.776289"", ""lon"": ""13.29453"", ""telegram_user"": """"}","<pre><yamldata>telegram_user: ''
-descrizione: 'Scuola media di Arquata danneggiata'
-immagine: 'http://i.imgur.com/ieYxjf9.jpg'
-lat: '42.776289'
-lon: '13.29453'
-data: 14/09/2016
-</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/292,176867155,2016-09-14 10:08:50,2016-09-14 10:07:40,Scuola danneggiata,42.776289,13.29453,"[""Accettato"", ""Telegram""]",,http://i.imgur.com/zTCZhMk.jpg,"{""data"": ""14/09/2016"", ""descrizione"": ""Scuola danneggiata"", ""immagine"": ""http://i.imgur.com/zTCZhMk.jpg"", ""lat"": ""42.776289"", ""lon"": ""13.29453"", ""telegram_user"": """"}","<pre><yamldata>telegram_user: ''
 descrizione: 'Scuola danneggiata'
 immagine: 'http://i.imgur.com/zTCZhMk.jpg'
@@ -1463,6 +1456,17 @@ lat: '41.828642001860544'
 lon: '12.403564453125'
 link: ''
 immagine: ''
+data: 13/09/2016
+</yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/182,176756583,2016-09-13 21:38:14,2016-09-13 21:36:24,Monte dei Paschi di Siena,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Monte dei Paschi di Siena"", ""data"": ""13/09/2016"", ""descrizione"": ""Versamenti sono possibili anche chiamando il numero verde 800 41 41 41."", ""email"": """", ""iban"": ""IT 77 H 01030 14200 000008605376"", ""intestazione"": ""Terremoto Italia centrale agosto 2016"", ""link"": ""http://www.bancaforte.it/notizie/2016/08/mps-un-aiuto-per-la-popolazione-colpita-dal-sisma"", ""postale"": """"}","<pre><yamldata>chi: 'Monte dei Paschi di Siena'
+descrizione: 'Versamenti sono possibili anche chiamando il numero verde 800 41 41 41.'
+intestazione: 'Terremoto Italia centrale agosto 2016'
+iban: 'IT 77 H 01030 14200 000008605376'
+bic: ''
+postale: ''
+causale: ''
+link: 'http://www.bancaforte.it/notizie/2016/08/mps-un-aiuto-per-la-popolazione-colpita-dal-sisma'
+email: ''
 data: 13/09/2016
 </yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/180,176755035,2016-09-13 21:48:58,2016-09-13 21:29:40,Gruppo Corriere srl,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,{},"<pre><yamldata>chi: 'Corriere dell'Umbria'
