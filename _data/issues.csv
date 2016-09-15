@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/384,177135294,2016-09-15 09:58:10,2016-09-15 09:55:47,Protezione Civile Marche,43.60982,13.50866,"[""Accettato"", ""Contatti"", ""Form""]",,,"{""data"": ""15/09/2016"", ""descrizione"": """", ""email"": """", ""indirizzo"": ""Via Gentile da Fabriano \u2013 60125 ANCONA (AN)"", ""lat"": 43.60982, ""link"": ""http://protezionecivile.regione.marche.it/"", ""lon"": 13.50866, ""nome"": ""Protezione Civile Marche"", ""tel"": ""840 001111""}","<pre><yamldata>nome: 'Protezione Civile Marche'
+tel: '840 001111'
+email: ''
+descrizione: ''
+indirizzo: 'Via Gentile da Fabriano – 60125 ANCONA (AN)'
+lat: 43.60982
+lon: 13.50866 
+link: http://protezionecivile.regione.marche.it/
+data: 15/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/381,177128901,2016-09-15 09:25:59,2016-09-15 09:24:53,Materiale di prima necessità,42.85161,13.68729,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Materiale di prima necessit\u00e0"", ""data"": ""15/09/2016"", ""descrizione"": ""Servono i seguenti beni: - stoviglie di carta (bicchieri, piatti, posate e tovaglioli) - tantissima acqua in vari formati - cibo a lunga scadenza preconfezionato e facilmente divisibile - materiale igiene intima - pannolini e materiale bambini - coperte e vestiario. Orari di apertura capannone: 8,30 - 12,30 14,00 - 18,30"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": 42.85161, ""link"": """", ""lon"": 13.68729, ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 cosa: 'Materiale di prima necessità'
@@ -489,17 +499,6 @@ indirizzo: 'Palazzo Comunale, Piazza Orsini, Casale Zocchi, Amatrice, RI, Lazio,
 lat: '42.62865429351794'
 lon: '13.289680480957031'
 link: ''
-immagine: ''
-data: 14/09/2016
-</yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/307,176951458,2016-09-14 18:03:32,2016-09-14 16:13:17,ARCI Nazionale,,,"[""Accettato"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""ARCI Nazionale"", ""data"": ""14/09/2016"", ""descrizione"": ""Arci nazionale ha attivato un progetto di crowdfunding specifico per il Bibliobus, \""\""BIBLIOBUS ARCI \u2013 La Cultura per la Ricostruzione\""\"". Cosa finanzieremo con i fondi raccolti - Assicurazione autobus e volontari - Revisione autobus - Combustibile - Spese di gestione - Attivit\u00e0 itineranti (presentazioni con autori, iniziative pubbliche, etc.) - Acquisto nuovi libri - Abbonamenti a riviste e quotidiani - Acquisto di attrezzatura minuta (sedie, tavolino, ombrellone etc..)"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.produzionidalbasso.com/project/bibliobus-arci-la-cultura-per-la-ricostruzione/"", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
-email: ''
-cosa: 'ARCI Nazionale'
-descrizione: 'Arci nazionale ha attivato un progetto di crowdfunding specifico per il Bibliobus, """"BIBLIOBUS ARCI – La Cultura per la Ricostruzione"""". Cosa finanzieremo con i fondi raccolti - Assicurazione autobus e volontari - Revisione autobus - Combustibile - Spese di gestione - Attività itineranti (presentazioni con autori, iniziative pubbliche, etc.) - Acquisto nuovi libri - Abbonamenti a riviste e quotidiani - Acquisto di attrezzatura minuta (sedie, tavolino, ombrellone etc..)'
-indirizzo: ''
-lat: ''
-lon: ''
-link: 'https://www.produzionidalbasso.com/project/bibliobus-arci-la-cultura-per-la-ricostruzione/'
 immagine: ''
 data: 14/09/2016
 </yamldata></pre>"
