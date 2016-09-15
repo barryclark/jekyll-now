@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/372,177125095,2016-09-15 09:06:31,2016-09-15 09:06:07,Materiale di Prima necessità,,,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Materiale di Prima necessit\u00e0"", ""data"": ""15/09/2016"", ""descrizione"": ""Servono urgentemente soprattutto: - scatoloni di cartone e buste rigide -acqua -materiale di primo soccorso (cerotti, acqua ossigenata, ecc) -pannolini -carta igienica -rotoloni carta assorbente -bagnoschiuma -shampoo -prodotti ipoallergenici -assorbenti -salviette igieniche -spazzolini -dentifrici -coperte -vestiti uomo, donna, bambin*"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
+email: ''
+cosa: 'Materiale di Prima necessità'
+descrizione: 'Servono urgentemente soprattutto: - scatoloni di cartone e buste rigide -acqua -materiale di primo soccorso (cerotti, acqua ossigenata, ecc) -pannolini -carta igienica -rotoloni carta assorbente -bagnoschiuma -shampoo -prodotti ipoallergenici -assorbenti -salviette igieniche -spazzolini -dentifrici -coperte -vestiti uomo, donna, bambin*'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 15/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/371,177124660,2016-09-15 09:06:20,2016-09-15 09:03:45,Centro di raccolta di beni di prima necessità Firenze,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Centro di raccolta di beni di prima necessit\u00e0 Firenze"", ""data"": ""15/09/2016"", ""descrizione"": ""Acqua, prodotti per igiene personale, vestiti, abiti per bambini, scarpe da ginnastica, calzini e biancheria, coperte e pannolini. Impianto Sportivo Padovani Viale P. Paoli, 23 \u2013 Zona Campo di Marte"", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": """", ""postale"": """"}","<pre><yamldata>chi: 'Centro di raccolta di beni di prima necessità Firenze'
 descrizione: 'Acqua, prodotti per igiene personale, vestiti, abiti per bambini, scarpe da ginnastica, calzini e biancheria, coperte e pannolini. Impianto Sportivo Padovani Viale P. Paoli, 23 – Zona Campo di Marte'
 intestazione: ''
@@ -1455,17 +1466,6 @@ bic: ''
 postale: '11662244'
 causale: 'Terremoto Centro Italia'
 link: ''
-email: ''
-data: 13/09/2016
-</yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/192,176763246,2016-09-13 22:08:46,2016-09-13 22:08:22,Avviso Pubblico - Enti locali e Regioni per la formazione civile contro le mafie,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Avviso Pubblico - Enti locali e Regioni per la formazione civile contro le mafie"", ""data"": ""13/09/2016"", ""descrizione"": """", ""email"": """", ""iban"": ""IT73H 05018 02800 000000131720, presso Banca Etica - Filiale di Firenze"", ""intestazione"": """", ""link"": ""http://www.avvisopubblico.it/home/terremoto-in-centro-italia-avviso-pubblico-lancia-campagna-di-raccolta-fondi-e-altre-forme-di-sostegno/"", ""postale"": """"}","<pre><yamldata>chi: 'Avviso Pubblico - Enti locali e Regioni per la formazione civile contro le mafie'
-descrizione: ''
-intestazione: ''
-iban: 'IT73H 05018 02800 000000131720, presso Banca Etica - Filiale di Firenze'
-bic: ''
-postale: ''
-causale: ''
-link: 'http://www.avvisopubblico.it/home/terremoto-in-centro-italia-avviso-pubblico-lancia-campagna-di-raccolta-fondi-e-altre-forme-di-sostegno/'
 email: ''
 data: 13/09/2016
 </yamldata></pre>"
