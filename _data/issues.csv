@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/380,177128048,2016-09-15 09:21:07,2016-09-15 09:20:41,Materiale di prima necessità,,,"[""Accettato"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""Materiale di prima necessit\u00e0"", ""data"": ""15/09/2016"", ""descrizione"": ""piena disponibilit\u00e0 a collaborare nel fornire tutto ci\u00f2 di cui si necessita per prima emergenza: - Pannolini per bambini - Pannoloni per anziani - Prodotti per detergenza e igiene intima. 9.00-12.30 | 17.00 - 20.00 pagina Facebook @asciuttissimi.terni."", ""email"": ""terni@asciuttissimi.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""07441981283""}","<pre><yamldata>tel: '07441981283'
+email: terni@asciuttissimi.it
+cosa: 'Materiale di prima necessità'
+descrizione: 'piena disponibilità a collaborare nel fornire tutto ciò di cui si necessita per prima emergenza: - Pannolini per bambini - Pannoloni per anziani - Prodotti per detergenza e igiene intima. 9.00-12.30 | 17.00 - 20.00 pagina Facebook @asciuttissimi.terni.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 15/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/379,177127549,2016-09-15 09:18:32,2016-09-15 09:18:23,Comitato C.da Rocchi di Rende (CS),,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Comitato C.da Rocchi di Rende (CS)"", ""data"": ""15/09/2016"", ""descrizione"": ""Raccolta di vestiario NUOVO (uomo, donna, bambino) e alimenti a lunga conservazione presso la sede del Comitato C.da Rocchi di Rende (CS) tutti i giorni dalle ore 16.00 alle ore 18.00 a partire dal giorno 25 agosto 2016"", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": """", ""postale"": """"}","<pre><yamldata>chi: 'Comitato C.da Rocchi di Rende (CS)'
 descrizione: 'Raccolta di vestiario NUOVO (uomo, donna, bambino) e alimenti a lunga conservazione presso la sede del Comitato C.da Rocchi di Rende (CS) tutti i giorni dalle ore 16.00 alle ore 18.00 a partire dal giorno 25 agosto 2016'
 intestazione: ''
@@ -1455,17 +1466,6 @@ bic: UNCRITMM
 postale: ''
 causale: ''
 link: 'http://www.regione.lazio.it/rl_main/?vw=newsDettaglio&id=3551'
-email: ''
-data: 13/09/2016
-</yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/197,176771902,2016-09-13 23:28:42,2016-09-13 22:57:37,Regione Emilia Romagna,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": ""UNCRITM1BA2"", ""causale"": """", ""chi"": ""Regione Emilia Romagna"", ""data"": ""13/09/2016"", ""descrizione"": """", ""email"": """", ""iban"": ""IT69G 02008 02435 000104428964"", ""intestazione"": ""Emilia-Romagna per sisma Centro Italia"", ""link"": ""http://www.regione.emilia-romagna.it/notizie/primo-piano/sisma-in-italia-centrale-dalla-regione-un-milione"", ""postale"": """"}","<pre><yamldata>chi: 'Regione Emilia Romagna'
-descrizione: ''
-intestazione: 'Emilia-Romagna per sisma Centro Italia'
-iban: 'IT69G 02008 02435 000104428964'
-bic: UNCRITM1BA2
-postale: ''
-causale: ''
-link: 'http://www.regione.emilia-romagna.it/notizie/primo-piano/sisma-in-italia-centrale-dalla-regione-un-milione'
 email: ''
 data: 13/09/2016
 </yamldata></pre>"
