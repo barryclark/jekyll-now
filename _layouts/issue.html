@@ -2,7 +2,7 @@
 layout: base
 ---
 
-{% include header.html type="page" %}
+{% include header.html type="issue" %}
   <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"/>
   <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
     <style>
@@ -10,7 +10,7 @@ layout: base
   </style>
 
 <div class="container" role="main">
-  <div class="row"> <div class="col-md-4">Titolo:</div> <div class="col-md-8"> {{page.title}} </div> </div>
+  <div class="row"> <div class="col-md-12"><h2>{{page.title}}</h2> </div> </div>
   <div class="row"> <div class="col-md-4">Url:</div> <div class="col-md-8"> <a href="{{page.issue.url}}">{{page.issue.url}}</a></div> </div>
   <div class="row"> <div class="col-md-4">id:</div> <div class="col-md-8"> {{page.issue.id}} </div> </div>
   <div class="row"> <div class="col-md-4">created:</div> <div class="col-md-8"> {{page.issue.created_at}} </div> </div>
