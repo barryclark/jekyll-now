@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/448,177180933,2016-09-15 13:45:00,2016-09-15 13:44:52,Richieste di agibilità Amatrice,,,"[""Accettato"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""Informazione dal comune di Amatrice"", ""link"": ""http://www.comune.amatrice.rieti.it/richieste-di-agibilita/"", ""titolo"": ""Richieste di agibilit\u00e0 Amatrice""}","<pre><yamldata>titolo: 'Richieste di agibilità Amatrice'
+descrizione: 'Informazione dal comune di Amatrice'
+link: 'http://www.comune.amatrice.rieti.it/richieste-di-agibilita/'
+data: 15/09/2016
+</yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/447,177180609,2016-09-15 13:44:51,2016-09-15 13:43:42,Protezione Civile,,,"[""Accettato"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""Indicazioni operative per censimento danni e verifiche di agibilit\u00e0"", ""link"": ""http://www.protezionecivile.gov.it/jcms/it/view_new.wp?contentId=NEW59033"", ""titolo"": ""Protezione Civile""}","<pre><yamldata>titolo: 'Protezione Civile'
+descrizione: 'Indicazioni operative per censimento danni e verifiche di agibilità'
+link: 'http://www.protezionecivile.gov.it/jcms/it/view_new.wp?contentId=NEW59033'
+data: 15/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/446,177180428,2016-09-15 13:43:43,2016-09-15 13:43:04,Apre ad Amatrice sportello mobile Cna,,,"[""Accettato"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""Uno sportello mobile di Cna Rieti \u00e8 presente ad Amatrice nel parco comunale Minozzi per offrire supporto alle imprese colpite dal sisma."", ""link"": ""http://www.rietilife.com/2016/09/06/amatrice-la-cna-al-fianco-di-cittadini-e-imprese-con-una-postazione-mobile/"", ""titolo"": ""Apre ad Amatrice sportello mobile Cna""}","<pre><yamldata>titolo: 'Apre ad Amatrice sportello mobile Cna'
 descrizione: 'Uno sportello mobile di Cna Rieti è presente ad Amatrice nel parco comunale Minozzi per offrire supporto alle imprese colpite dal sisma.'
 link: 'http://www.rietilife.com/2016/09/06/amatrice-la-cna-al-fianco-di-cittadini-e-imprese-con-una-postazione-mobile/'
@@ -429,17 +439,6 @@ descrizione: 'Servono i seguenti beni: - stoviglie di carta (bicchieri, piatti, 
 indirizzo: ''
 lat: 42.85161
 lon: 13.68729
-link: ''
-immagine: ''
-data: 15/09/2016
-</yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/380,177128048,2016-09-15 09:22:48,2016-09-15 09:20:41,Materiale di prima necessità,,,"[""Accettato"", ""Donazioni"", ""Form""]",,,{},"<pre><yamldata>tel: '07441981283'
-email: terni@asciuttissimi.it
-cosa: 'Materiale di prima necessità'
-descrizione: 'piena disponibilità a collaborare nel fornire tutto ciò di cui si necessita per prima emergenza: - Pannolini per bambini - Pannoloni per anziani - Prodotti per detergenza e igiene intima. 9.00-12.30 | 17.00 - 20.00 pagina Facebook @asciuttissimi.terni.'
-indirizzo: 'Viale Porta Sant'Angelo 1/c 05100 Terni (TE)'
-lat: 42.57070
-lon: 12.65123
 link: ''
 immagine: ''
 data: 15/09/2016
