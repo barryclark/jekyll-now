@@ -1786,6 +1786,17 @@ link: 'https://www.actionaid.it/terremoto-in-centro-italia'
 email: ''
 data: 13/09/2016
 </yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/176,176751208,2016-09-13 21:14:26,2016-09-13 21:12:54,Action Aid,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Action Aid"", ""data"": ""13/09/2016"", ""descrizione"": ""donazioni effettuabili direttamente dal sito"", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""https://www.actionaid.it/terremoto-in-centro-italia"", ""postale"": """"}","<pre><yamldata>chi: 'Action Aid'
+descrizione: 'donazioni effettuabili direttamente dal sito'
+intestazione: ''
+iban: ''
+bic: ''
+postale: ''
+causale: ''
+link: 'https://www.actionaid.it/terremoto-in-centro-italia'
+email: ''
+data: 13/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/175,176750696,2016-09-13 21:14:18,2016-09-13 21:10:36,UniCoopFirenze,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""UniCoopFirenze"", ""data"": ""13/09/2016"", ""descrizione"": ""Soci e clienti possono versare quote di danaro direttamente alle casse oppure, solo nel caso dei soci, scaricare punti dalla tessera devolvendoli alle popolazioni colpite."", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""https://www.facebook.com/SezioneSociCoopFirenzeSudOvest/posts/1094597260625093"", ""postale"": """"}","<pre><yamldata>chi: UniCoopFirenze
 descrizione: 'Soci e clienti possono versare quote di danaro direttamente alle casse oppure, solo nel caso dei soci, scaricare punti dalla tessera devolvendoli alle popolazioni colpite.'
 intestazione: ''
