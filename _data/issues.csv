@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/423,177171700,2016-09-15 13:10:01,2016-09-15 13:08:44,Iniziative operatori delle telecomunicazioni,,,"[""Accettato"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""Mappa delle iniziative messe in atto dagli operatori TLC in Italia, da sms solidali a ricariche gratuite."", ""link"": ""http://www.ilsole24ore.com/pdf2010/Editrice/ILSOLE24ORE/ILSOLE24ORE/Online/_Oggetti_Embedded/Documenti/2016/08/31/agcom-mappa-solidarieta.pdf"", ""titolo"": ""Iniziative operatori delle telecomunicazioni""}","<pre><yamldata>titolo: 'Iniziative operatori delle telecomunicazioni'
+descrizione: 'Mappa delle iniziative messe in atto dagli operatori TLC in Italia, da sms solidali a ricariche gratuite.'
+link: 'http://www.ilsole24ore.com/pdf2010/Editrice/ILSOLE24ORE/ILSOLE24ORE/Online/_Oggetti_Embedded/Documenti/2016/08/31/agcom-mappa-solidarieta.pdf'
+data: 15/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/419,177170488,2016-09-15 13:05:51,2016-09-15 13:03:21,Università degli Studi dell'Aquila,,,"[""Accettato"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""Tutti gli studenti iscritti o che si immatricoleranno, residenti nel cratere sismico sono esenti dal pagamento di tasse e contributi universitari. Nel link tutte le info"", ""link"": ""http://www.univaq.it/include/utilities/blob.php?table=avviso&id=10041&item=allegato"", ""titolo"": ""Universit\u00e0 degli Studi dell'Aquila""}","<pre><yamldata>titolo: 'Università degli Studi dell''Aquila'
 descrizione: 'Tutti gli studenti iscritti o che si immatricoleranno, residenti nel cratere sismico sono esenti dal pagamento di tasse e contributi universitari. Nel link tutte le info'
 link: 'http://www.univaq.it/include/utilities/blob.php?table=avviso&id=10041&item=allegato'
