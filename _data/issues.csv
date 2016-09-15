@@ -1,15 +1,4 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/378,177127355,2016-09-15 09:17:40,2016-09-15 09:17:31,Gruppo Imprenditori della Vallesina,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Gruppo Imprenditori della Vallesina"", ""data"": ""15/09/2016"", ""descrizione"": ""Raccolta di PANNOLINI,ACQUA,ASSORBENTI PER ANZIANI E DONNE,CIBO IN SCATOLA, PIGIAMI,TUTE DA GINNASTICA, BAMBOLOTTI, POSATE CARTA E\u00a0TOVAGLIOLI da portare presso Giardini Pubblici di Jesi OGGI dalle 16 alle 20"", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": """", ""postale"": """"}","<pre><yamldata>chi: 'Gruppo Imprenditori della Vallesina'
-descrizione: ""Raccolta di PANNOLINI,ACQUA,ASSORBENTI PER ANZIANI E DONNE,CIBO IN SCATOLA, PIGIAMI,TUTE DA GINNASTICA, BAMBOLOTTI, POSATE CARTA E\_TOVAGLIOLI da portare presso Giardini Pubblici di Jesi OGGI dalle 16 alle 20""
-intestazione: ''
-iban: ''
-bic: ''
-postale: ''
-causale: ''
-link: ''
-email: ''
-data: 15/09/2016
-</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/377,177127210,2016-09-15 09:16:58,2016-09-15 09:16:49,Casetta Rossa Roma,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Casetta Rossa Roma"", ""data"": ""15/09/2016"", ""descrizione"": ""dal 26 dalle 11,00 e nei giorni seguenti a partire dalle 16,00: -acqua in bottiglia -cibo in scatola (fagioli, tonno, ecc..) -riso, pasta -biscotti, fette biscottate -materiale di primo soccorso (cerotti, acqua ossigenata, ecc) -pannolini -coperte. Casetta Rossa via Giovanni Battista Magnaghi, 14"", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": """", ""postale"": """"}","<pre><yamldata>chi: 'Casetta Rossa Roma'
 descrizione: 'dal 26 dalle 11,00 e nei giorni seguenti a partire dalle 16,00: -acqua in bottiglia -cibo in scatola (fagioli, tonno, ecc..) -riso, pasta -biscotti, fette biscottate -materiale di primo soccorso (cerotti, acqua ossigenata, ecc) -pannolini -coperte. Casetta Rossa via Giovanni Battista Magnaghi, 14'
 intestazione: ''
@@ -219,6 +208,11 @@ data: 14/09/2016
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/343,177007240,2016-09-14 20:29:56,2016-09-14 20:08:11,Mappa Italia dei Centri Raccolta Beni per terremoto,,,"[""Accettato"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""Su Open Treet Map i luoghi dove sono stati predisposti punti di raccolta per beni di prima necessit\u00e0."", ""link"": ""http://umap.openstreetmap.fr/en/map/centri-raccolta-beni-per-terremoto-centro-italia_99556"", ""titolo"": ""Mappa Italia dei Centri Raccolta Beni per terremoto""}","<pre><yamldata>titolo: 'Mappa Italia dei Centri Raccolta Beni per terremoto'
 descrizione: 'Su Open Treet Map i luoghi dove sono stati predisposti punti di raccolta per beni di prima necessità.'
 link: 'http://umap.openstreetmap.fr/en/map/centri-raccolta-beni-per-terremoto-centro-italia_99556'
+data: 14/09/2016
+</yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/342,177005649,2016-09-14 20:04:39,2016-09-14 20:01:18,Tasking Manager - Open Street Map,,,"[""Accettato"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""Mappatura foto aeree aggiornate."", ""link"": ""http://osmit-tm.wmflabs.org/project/13"", ""titolo"": ""Tasking Manager - Open Street Map""}","<pre><yamldata>titolo: 'Tasking Manager - Open Street Map'
+descrizione: 'Mappatura foto aeree aggiornate.'
+link: 'http://osmit-tm.wmflabs.org/project/13'
 data: 14/09/2016
 </yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/339,177004323,2016-09-14 20:06:10,2016-09-14 19:55:36,Risarcimenti a tutti i danneggiati dal sisma,,,"[""Accettato"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""Sottosegretario alla Presidenza del consiglio Claudio De Vincenti assicura che tutti quelli che hanno avuto danni saranno risarciti."", ""link"": ""https://www.facebook.com/photo.php?fbid=10154122952182886&set=a.10153788132322886.1073741826.513172885&type=3&theater"", ""titolo"": ""Risarcimenti a tutti i danneggiati dal sisma""}","<pre><yamldata>titolo: 'Risarcimenti a tutti i danneggiati dal sisma'
