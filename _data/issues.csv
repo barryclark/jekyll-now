@@ -1524,6 +1524,17 @@ link: 'http://www.rassegna.it/articoli/terremoto-attivato-fondo-cgil-cisl-uil-e-
 email: ''
 data: 14/09/2016
 </yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/249,176851390,2016-09-14 09:00:53,2016-09-14 08:55:20,"Confindustria, Cgil, Cisl, Uil",,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": ""PASCITMMRM"", ""causale"": ""Fondo di solidariet\u00e0 per le popolazioni centro Italia"", ""chi"": ""Confindustria, Cgil, Cisl, Uil"", ""data"": ""14/09/2016"", ""descrizione"": ""\u201cFondo di intervento a favore delle popolazioni del Centro Italia\u201d nel quale confluiranno contributi volontari da parte dei lavoratori di tutto il territorio nazionale, pari a un\u2019ora di lavoro e un contributo equivalente, per ogni lavoratore, da parte delle imprese. La raccolta fondi terminer\u00e0 il 31 gennaio 2017"", ""email"": """", ""iban"": ""IT94V0103003201 000002589031"", ""intestazione"": """", ""link"": ""http://www.rassegna.it/articoli/terremoto-attivato-fondo-cgil-cisl-uil-e-confindustria"", ""postale"": """"}","<pre><yamldata>chi: 'Confindustria, Cgil, Cisl, Uil'
+descrizione: '“Fondo di intervento a favore delle popolazioni del Centro Italia” nel quale confluiranno contributi volontari da parte dei lavoratori di tutto il territorio nazionale, pari a un’ora di lavoro e un contributo equivalente, per ogni lavoratore, da parte delle imprese. La raccolta fondi terminerà il 31 gennaio 2017'
+intestazione: ''
+iban: 'IT94V0103003201 000002589031'
+bic: PASCITMMRM
+postale: ''
+causale: 'Fondo di solidarietà per le popolazioni centro Italia'
+link: 'http://www.rassegna.it/articoli/terremoto-attivato-fondo-cgil-cisl-uil-e-confindustria'
+email: ''
+data: 14/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/247,176850766,2016-09-14 08:53:09,2016-09-14 08:52:31,AMAtriciana solidale - mappa,,,"[""Accettato"", ""Form"", ""Notizie Utili"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""AMAtriciana solidale - mappa"", ""data"": ""14/09/2016"", ""descrizione"": ""La mappa di tutti i ristoranti che aderiscono all'iniziativa \""AMAtriciana\"", per aiutare i le popolazioni colpite dal terremoto, devolvendo 2 euro per ogni piatto di pasta"", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""http://bit.ly/2bM1Nqs"", ""postale"": """"}","<pre><yamldata>chi: 'AMAtriciana solidale - mappa'
 descrizione: 'La mappa di tutti i ristoranti che aderiscono all''iniziativa ""AMAtriciana"", per aiutare i le popolazioni colpite dal terremoto, devolvendo 2 euro per ogni piatto di pasta'
 intestazione: ''
