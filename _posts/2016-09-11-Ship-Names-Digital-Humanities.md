@@ -7,11 +7,11 @@ publish: true
 
 This post like a lucky three leaf clover comes to you in three parts.
 
-##Part 1: We're shipping what, where now?
+## Part 1: We're shipping what, where now?
 
   To ship is to support a romantic relationship. It's when you pair two people together that you want to be in a relationship. The term ship is commonly thought to be the shorthand for the word relationship. This is especially popularized in fan culture. It is rare now a tv show or movie without multiple ships, and ship names.
   
-##Part 2: What's in a name?
+## Part 2: What's in a name?
 
   Believe it or not there is an actual science behind all the shipping names. It's not just someone making up the names of the top of their head. I mean there someone doing that but there are specific reasons why some ship names stick over their alternative madeup name.
   
@@ -33,7 +33,7 @@ This post like a lucky three leaf clover comes to you in three parts.
   When it doesn't work: Last names or other descriptive words about the characters are used to create the ship name.
   Examples: SwanQueen is Emma and Evil Queen Regina Mills ship name. Tony Stark, Steve Rogers, and Bruce Banner become Star-Spangled Banner.
 
-##Part 3: This is digital Humanitites?
+## Part 3: This is digital Humanitites?
 
 Yes this is digital humanities. It was discussed earlier that digital humanities is how we inact with another through technology. By studying how fan culture uses ship names, we are studying how this specific sec of humanity commucates their emotional feelings with one another about characters. And if you want to fight me on the digital aspect of said communication then I suggest you take a look at Tumblr. 
 
