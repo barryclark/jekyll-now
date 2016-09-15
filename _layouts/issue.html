@@ -23,7 +23,6 @@ layout: base
   {% endif %}
 
   <div class="row"> <div class="col-md-4">Tags:</div> <div class="col-md-8"> {{page.issue.labels}} </div> </div>
-  <div class="row"> <div class="col-md-4">Urgenza:</div> <div class="col-md-8"> {{page.issue.milestone}} </div> </div>
   {% if page.issue.image != blank %}
   <div class="row"> <div class="col-md-4">Immagine:</div> <div class="col-md-8"> <img alt="immagine" src="{{page.issue.image}}"></img> </div> </div>
   {% endif %}
