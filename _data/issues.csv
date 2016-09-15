@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/470,177275800,2016-09-15 20:10:23,2016-09-15 20:07:40,Cercasi CUOCO di AMATRICE per evento/mercato biologico il 5-6-novembre a RIVA del GARDA,,,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Cercasi CUOCO di AMATRICE per evento/mercato biologico il 5-6-novembre a RIVA del GARDA"", ""data"": ""15/09/2016"", ""descrizione"": ""durante l'evento ci sar\u00e0 l'iniziativa di raccolta fondi \""L'Amatriciana per Amatrice\"". Vitto e alloggio (credo anche il viaggio) offerti. Info e contatti: Bertoni Angiolino"", ""email"": ""bertoni.angiolino@virgilio.it-"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1769637063303877/"", ""lon"": """", ""tel"": ""3334365401""}","<pre><yamldata>tel: '3334365401'
+email: bertoni.angiolino@virgilio.it-
+cosa: 'Cercasi CUOCO di AMATRICE per evento/mercato biologico il 5-6-novembre a RIVA del GARDA'
+descrizione: 'durante l''evento ci sarà l''iniziativa di raccolta fondi ""L''Amatriciana per Amatrice"". Vitto e alloggio (credo anche il viaggio) offerti. Info e contatti: Bertoni Angiolino'
+indirizzo: ''
+lat: ''
+lon: ''
+link: 'https://www.facebook.com/groups/1758670357733881/permalink/1769637063303877/'
+immagine: ''
+data: 15/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/463,177190526,2016-09-15 14:21:14,2016-09-15 14:20:46,Fondi per prevenzione rischio sismico,,,"[""Accettato"", ""Acqua"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""Il Decreto della Presidenza del Consiglio dei Ministri del 21 giugno 2016 assegna all'Abruzzo la somma di 10 milioni e 90 mila euro per interventi di prevenzione del rischio sismico, di cui circa 1 ML per approfondire gli studi di microzonazione sismica e 8,9 ML per finanziare interventi antisismici su edifici ritenuti \""strategici\"" pubblici e su edifici privati."", ""link"": ""http://www.regione.abruzzo.it/portale/index.asp?modello=articolo&servizio=xList&stileDiv=mono&msv=articolo114250&tom=14250"", ""titolo"": ""Fondi per prevenzione rischio sismico""}","<pre><yamldata>titolo: 'Fondi per prevenzione rischio sismico'
 descrizione: 'Il Decreto della Presidenza del Consiglio dei Ministri del 21 giugno 2016 assegna all''Abruzzo la somma di 10 milioni e 90 mila euro per interventi di prevenzione del rischio sismico, di cui circa 1 ML per approfondire gli studi di microzonazione sismica e 8,9 ML per finanziare interventi antisismici su edifici ritenuti ""strategici"" pubblici e su edifici privati.'
 link: 'http://www.regione.abruzzo.it/portale/index.asp?modello=articolo&servizio=xList&stileDiv=mono&msv=articolo114250&tom=14250'
