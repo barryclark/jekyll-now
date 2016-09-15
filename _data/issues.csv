@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/397,177150982,2016-09-15 11:21:59,2016-09-15 11:21:32,Centro di ascolto post sisma Neuropsichiatria infantile Umberto I,,,"[""Accettato"", ""Contatti"", ""Form""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""Dal luned\u00ec al venerd\u00ec, via dei Sabelli, Roma, Umberto I."", ""email"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""nome"": ""Centro di ascolto post sisma Neuropsichiatria infantile Umberto I"", ""tel"": ""0649972969""}","<pre><yamldata>nome: 'Centro di ascolto post sisma Neuropsichiatria infantile Umberto I'
+tel: '0649972969'
+email: ''
+descrizione: 'Dal lunedì al venerdì, via dei Sabelli, Roma, Umberto I.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+data: 15/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/396,177150909,2016-09-15 11:21:51,2016-09-15 11:21:02,Segnalazione disponibilità seconde case Amatrice,,,"[""Accettato"", ""Contatti"", ""Form""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""Numero del Comune di Amatrice al quale possono chiamare i proprietari di seconde case che intendano metterle a disposizione di chi \u00e8 rimasto senza. Dal luned\u00ec al venerd\u00ec dalle 9 alle 12 e dalle 15 alle 17."", ""email"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""nome"": ""Segnalazione disponibilit\u00e0 seconde case Amatrice"", ""tel"": ""3384996173""}","<pre><yamldata>nome: 'Segnalazione disponibilità seconde case Amatrice'
 tel: '3384996173'
 email: ''
@@ -500,16 +510,6 @@ lon: '12.755939'
 link: 'https://www.facebook.com/hotelmarinellagabicce/'
 immagine: ''
 data: 14/09/2016
-</yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/322,176973642,2016-09-14 18:03:33,2016-09-14 17:45:06,Albergo Villa Rosa di Nusco,40.901245,15.084004,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""24/08/2016"", ""descrizione"": ""Albergo Villa Rosa di Nusco mette a disposizione sin da domani 25 agosto 2016 VITTO E ALLOGGIO GRATUITI PER FAMIGLIE COLPITE DAL TERREMOTO. Nell'impossibilit\u00e0 di contattare la Protezione Civile di Rieti, della quale il numero \u00e8 perennemente occupato, chiediamo di condividere il post affinch\u00e9 giunga alle persone interessate."", ""email"": ""info@albergovillarosa.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": ""40.901245"", ""link"": ""https://www.facebook.com/albergo.villarosa"", ""lon"": ""15.084004"", ""tel"": ""082764046 - 3289537991""}","<pre><yamldata>tel: '082764046 - 3289537991'
-email: info@albergovillarosa.it
-descrizione: 'Albergo Villa Rosa di Nusco mette a disposizione sin da domani 25 agosto 2016 VITTO E ALLOGGIO GRATUITI PER FAMIGLIE COLPITE DAL TERREMOTO. Nell''impossibilità di contattare la Protezione Civile di Rieti, della quale il numero è perennemente occupato, chiediamo di condividere il post affinché giunga alle persone interessate.'
-indirizzo: ''
-lat: '40.901245'
-lon: '15.084004'
-link: 'https://www.facebook.com/albergo.villarosa'
-immagine: ''
-data: 24/08/2016
 </yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/322,176973642,2016-09-14 18:03:33,2016-09-14 17:45:06,Albergo Villa Rosa di Nusco,40.901245,15.084004,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""24/08/2016"", ""descrizione"": ""Albergo Villa Rosa di Nusco mette a disposizione sin da domani 25 agosto 2016 VITTO E ALLOGGIO GRATUITI PER FAMIGLIE COLPITE DAL TERREMOTO. Nell'impossibilit\u00e0 di contattare la Protezione Civile di Rieti, della quale il numero \u00e8 perennemente occupato, chiediamo di condividere il post affinch\u00e9 giunga alle persone interessate."", ""email"": ""info@albergovillarosa.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": ""40.901245"", ""link"": ""https://www.facebook.com/albergo.villarosa"", ""lon"": ""15.084004"", ""tel"": ""082764046 - 3289537991""}","<pre><yamldata>tel: '082764046 - 3289537991'
 email: info@albergovillarosa.it
