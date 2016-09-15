@@ -32,12 +32,12 @@ layout: base
 <script>
 
 // initialize the map
-var map = L.map('map').setView([{{page.issue.lat}}, {{page.issue.lon}}], 12);
+var map = L.map('map').setView([{{page.issue.lat}}, {{page.issue.lon}}], 16);
 
 // create the tile layer with correct attribution
 var osmUrl='http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
 var osmAttrib='Map data © <a href="http://openstreetmap.org">OpenStreetMap</a> contributors';
-var osm = new L.TileLayer(osmUrl, {minZoom: 8, maxZoom: 12, attribution: osmAttrib});		
+var osm = new L.TileLayer(osmUrl, {minZoom: 8, maxZoom: 19, attribution: osmAttrib});		
 
 map.addLayer(osm);
 
