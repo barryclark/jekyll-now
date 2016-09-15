@@ -1,6 +1,6 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/474,177291595,2016-09-15 21:17:41,2016-09-15 21:13:30,Acri - Associazione Casse di Risparmio,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Acri - Associazione Casse di Risparmio"", ""data"": ""15/09/2016"", ""descrizione"": ""Raccolta fondi Acri tra sue associate per iniziative post emergenza"", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""http://ow.ly/MeLe304f4fz"", ""postale"": """"}","<pre><yamldata>chi: 'Acri - Associazione Casse di Risparmio'
-descrizione: 'Raccolta fondi Acri tra sue associate per iniziative post emergenza'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/474,177291595,2016-09-15 21:17:55,2016-09-15 21:13:30,Acri - Associazione Casse di Risparmio,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Acri - Associazione Casse di Risparmio"", ""data"": ""15/09/2016"", ""descrizione"": ""Raccolta fondi Acri tra associate per iniziative post emergenza"", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""http://ow.ly/MeLe304f4fz"", ""postale"": """"}","<pre><yamldata>chi: 'Acri - Associazione Casse di Risparmio'
+descrizione: 'Raccolta fondi Acri tra associate per iniziative post emergenza'
 intestazione: ''
 iban: ''
 bic: ''
