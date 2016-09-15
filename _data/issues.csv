@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/414,177157747,2016-09-15 12:00:39,2016-09-15 12:00:06,Internet Gratis per chi è stato colpito dal terremoto,,,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form"", ""Notizie Utili"", ""Wi-Fi""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""Giuseppe CALAMITA volontario informatico Nazioni Unite: Su mio invito l'ISP LTE wireless Linkem si \u00e8 resa gentilmente disponibile nel dotare di connessione internet gratis le persone delle zone colpite dal #terremoto Gli interessati mi contattino (anche con un messaggio privato) fornendo: Nome, cognome, data di nascita, sesso, Comune di nascita, nazionalit\u00e0, eventuale email, numero di cellulare, via, numero civico, comune di residenza che verranno passati a Linkem per l'attivazione."", ""link"": ""https://www.facebook.com/giuseppe.calamita.7"", ""titolo"": ""Internet Gratis per chi \u00e8 stato colpito dal terremoto""}","<pre><yamldata>titolo: 'Internet Gratis per chi è stato colpito dal terremoto'
+descrizione: 'Giuseppe CALAMITA volontario informatico Nazioni Unite: Su mio invito l''ISP LTE wireless Linkem si è resa gentilmente disponibile nel dotare di connessione internet gratis le persone delle zone colpite dal #terremoto Gli interessati mi contattino (anche con un messaggio privato) fornendo: Nome, cognome, data di nascita, sesso, Comune di nascita, nazionalità, eventuale email, numero di cellulare, via, numero civico, comune di residenza che verranno passati a Linkem per l''attivazione.'
+link: 'https://www.facebook.com/giuseppe.calamita.7'
+data: 15/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/413,177157510,2016-09-15 12:00:22,2016-09-15 11:58:50,Consigli e info utili - persone sorde,,,"[""Accettato"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""In questa pagina ci sono consigli ed informazioni utili per persone sorde e su come comportarsi con queste persone."", ""link"": ""https://www.facebook.com/Emergenza-Terremoto-Sordi-Deaf-Earthquake-Safety-Check-291307381261451/?pnref=story"", ""titolo"": ""Consigli e info utili - persone sorde""}","<pre><yamldata>titolo: 'Consigli e info utili - persone sorde'
 descrizione: 'In questa pagina ci sono consigli ed informazioni utili per persone sorde e su come comportarsi con queste persone.'
 link: 'https://www.facebook.com/Emergenza-Terremoto-Sordi-Deaf-Earthquake-Safety-Check-291307381261451/?pnref=story'
@@ -760,17 +765,6 @@ indirizzo: 'Via F. Ferroni, Centro storico, Rieti, RI, Lazio, 02100, Italia'
 lat: '42.406727660927984'
 lon: '12.869110107421875'
 link: 'http://www.comune.rieti.it/article/16/08/costituzione-coordinamento-iniziative-sostegno-dei-bambini'
-immagine: ''
-data: 14/09/2016
-</yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/309,176952264,2016-09-14 18:03:32,2016-09-14 16:16:15,Materiale didattico,43.77902662160831,10.4150390625,"[""Accettato"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""Materiale didattico"", ""data"": ""14/09/2016"", ""descrizione"": ""Scuola primaria Sanminiatelli di Perignano (Pisa) - Offerta di materiale didattico per scuole primarie nelle zone colpite dal sisma (quadernoni, album, pennarelli, matite e altra cancelleria)"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via Maria Montessori, San Giuliano Terme, PI, TOS, 56017, Italia"", ""lat"": ""43.77902662160831"", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1765730697027847/"", ""lon"": ""10.4150390625"", ""tel"": """"}","<pre><yamldata>tel: ''
-email: ''
-cosa: 'Materiale didattico'
-descrizione: 'Scuola primaria Sanminiatelli di Perignano (Pisa) - Offerta di materiale didattico per scuole primarie nelle zone colpite dal sisma (quadernoni, album, pennarelli, matite e altra cancelleria)'
-indirizzo: 'Via Maria Montessori, San Giuliano Terme, PI, TOS, 56017, Italia'
-lat: '43.77902662160831'
-lon: '10.4150390625'
-link: 'https://www.facebook.com/groups/1758670357733881/permalink/1765730697027847/'
 immagine: ''
 data: 14/09/2016
 </yamldata></pre>"
