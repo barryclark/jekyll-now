@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/363,177119718,2016-09-15 08:37:42,2016-09-15 08:37:05,Beni prima necessità,42.07653,12.27201,"[""Accettato"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""Beni prima necessit\u00e0"", ""data"": ""15/09/2016"", ""descrizione"": ""Beni alimentari inscatolati, necessario per bambini e neonati, come pannolini, abbigliamento nuovo e coperte confezionate. Tutti i supermercati di Anguillara Sabazia e l\u2019Ex Consorzio, in via Anguillarese, 145"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": 42.07653, ""link"": """", ""lon"": 12.27201, ""tel"": """"}","<pre><yamldata>tel: ''
+email: ''
+cosa: 'Beni prima necessità'
+descrizione: 'Beni alimentari inscatolati, necessario per bambini e neonati, come pannolini, abbigliamento nuovo e coperte confezionate. Tutti i supermercati di Anguillara Sabazia e l’Ex Consorzio, in via Anguillarese, 145'
+indirizzo: ''
+lat: 42.07653
+lon: 12.27201
+link: ''
+immagine: ''
+data: 15/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/361,177117800,2016-09-15 08:27:37,2016-09-15 08:26:46,Materiale di Prima necessità,41.86352,12.45121,"[""Accettato"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""Materiale di Prima necessit\u00e0"", ""data"": ""15/09/2016"", ""descrizione"": ""Croce Rossa Italiana di Roma da Lun-Ven dalle 8:00 alle 20:00 - acqua minerale; - Piatti, tovaglioli, bicchieri, posate (in prevalenza forchette) di plastica - cibo a lunga conservazione; - coperte e vestiti; - pannolini e materiale per bambini; - Materiale per igiene intima;"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": 41.86352, ""link"": """", ""lon"": 12.45121, ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 cosa: 'Materiale di Prima necessità'
@@ -474,13 +485,6 @@ data: 14/09/2016
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/293,176867458,2016-09-14 11:01:32,2016-09-14 10:09:09,Scuola media di Arquata danneg,42.776289,13.29453,"[""Accettato"", ""Telegram""]",,http://i.imgur.com/ieYxjf9.jpg,"{""data"": ""14/09/2016"", ""descrizione"": ""Scuola media di Arquata danneggiata"", ""immagine"": ""http://i.imgur.com/ieYxjf9.jpg"", ""lat"": ""42.776289"", ""lon"": ""13.29453"", ""telegram_user"": """"}","<pre><yamldata>telegram_user: ''
 descrizione: 'Scuola media di Arquata danneggiata'
 immagine: 'http://i.imgur.com/ieYxjf9.jpg'
-lat: '42.776289'
-lon: '13.29453'
-data: 14/09/2016
-</yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/292,176867155,2016-09-14 10:08:50,2016-09-14 10:07:40,Scuola danneggiata,42.776289,13.29453,"[""Accettato"", ""Telegram""]",,http://i.imgur.com/zTCZhMk.jpg,"{""data"": ""14/09/2016"", ""descrizione"": ""Scuola danneggiata"", ""immagine"": ""http://i.imgur.com/zTCZhMk.jpg"", ""lat"": ""42.776289"", ""lon"": ""13.29453"", ""telegram_user"": """"}","<pre><yamldata>telegram_user: ''
-descrizione: 'Scuola danneggiata'
-immagine: 'http://i.imgur.com/zTCZhMk.jpg'
 lat: '42.776289'
 lon: '13.29453'
 data: 14/09/2016
