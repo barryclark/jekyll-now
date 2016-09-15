@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/407,177155912,2016-09-15 11:51:48,2016-09-15 11:49:52,Gus - Gruppo Umana Solidarietà,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""http://gusitalia.it/emergenza-terremoto-centro-italia/ - Servizio di supporto psicologico"", ""link"": ""http://gusitalia.it/emergenza-terremoto-centro-italia/"", ""titolo"": ""Gus - Gruppo Umana Solidariet\u00e0""}","<pre><yamldata>titolo: 'Gus - Gruppo Umana Solidarietà'
+descrizione: 'http://gusitalia.it/emergenza-terremoto-centro-italia/ - Servizio di supporto psicologico'
+link: 'http://gusitalia.it/emergenza-terremoto-centro-italia/'
+data: 15/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/406,177155819,2016-09-15 11:50:55,2016-09-15 11:49:18,Univpm - Facoltà Ingegneria Civile e Ambientale,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""Rettore Sauro Longhi. Mettono a disposizione Ingegneri e Architetti per le zone colpite"", ""link"": """", ""titolo"": ""Univpm - Facolt\u00e0 Ingegneria Civile e Ambientale""}","<pre><yamldata>titolo: 'Univpm - Facoltà Ingegneria Civile e Ambientale'
 descrizione: 'Rettore Sauro Longhi. Mettono a disposizione Ingegneri e Architetti per le zone colpite'
 link: ''
