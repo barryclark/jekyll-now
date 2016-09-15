@@ -1,11 +1,11 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/370,177124045,2016-09-15 09:01:09,2016-09-15 09:00:42,Beni di prima necessità,,,"[""Accettato"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""Beni di prima necessit\u00e0"", ""data"": ""15/09/2016"", ""descrizione"": ""Cibo in scatola , secco , acqua e latte UHT. Ogni giorno verr\u00e0 effettuato un viaggio"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/370,177124045,2016-09-15 09:01:50,2016-09-15 09:00:42,Beni di prima necessità,41.5633,12.53864,"[""Accettato"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""Beni di prima necessit\u00e0"", ""data"": ""15/09/2016"", ""descrizione"": ""Cibo in scatola , secco , acqua e latte UHT. Ogni giorno verr\u00e0 effettuato un viaggio"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Sede di via dei Fenicotteri 6 a Tor San Lorenzo"", ""lat"": 41.5633, ""link"": """", ""lon"": 12.53864, ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 cosa: 'Beni di prima necessità'
 descrizione: 'Cibo in scatola , secco , acqua e latte UHT. Ogni giorno verrà effettuato un viaggio'
-indirizzo: ''
-lat: ''
-lon: ''
+indirizzo: 'Sede di via dei Fenicotteri 6 a Tor San Lorenzo'
+lat: 41.56330
+lon: 12.53864
 link: ''
 immagine: ''
 data: 15/09/2016
