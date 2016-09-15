@@ -1,4 +1,26 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/374,177126206,2016-09-15 09:13:51,2016-09-15 09:11:46,Protezione Civile San Benedetto dei Tronto,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Protezione Civile San Benedetto dei Tronto"", ""data"": ""15/09/2016"", ""descrizione"": ""Scatolame, pasta, prodotti per l\u2019infanzia. Sede del Gruppo Comunale di Protezione civile, ubicata sul lato sud del Palazzetto dello Sport in viale dello Sport, che resta aperta ininterrottamente dalle 8 alle 20. Tel. 0735781486 indirizzo di posta elettronica info@protezionecivilesbt.it"", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": """", ""postale"": """"}","<pre><yamldata>chi: 'Protezione Civile San Benedetto dei Tronto'
+descrizione: 'Scatolame, pasta, prodotti per l’infanzia. Sede del Gruppo Comunale di Protezione civile, ubicata sul lato sud del Palazzetto dello Sport in viale dello Sport, che resta aperta ininterrottamente dalle 8 alle 20. Tel. 0735781486 indirizzo di posta elettronica info@protezionecivilesbt.it'
+intestazione: ''
+iban: ''
+bic: ''
+postale: ''
+causale: ''
+link: ''
+email: ''
+data: 15/09/2016
+</yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/373,177125867,2016-09-15 09:13:44,2016-09-15 09:09:59,Protezione Civile Firenze e dintorni,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Protezione Civile Firenze e dintorni"", ""data"": ""15/09/2016"", ""descrizione"": ""Le Protezioni civili del Comune e della Citt\u00e0 metropolitana si sono mobilitate anche per raccogliere i beni di prima necessit\u00e0 (cibo e prodotti per l'igiene personale) che servono ai terremotati. Saranno loro poi ad occuparsi di farli arrivare a destinazione. Chi \u00e8 interessato a fare una donazione dovr\u00e0 contattare la Protezione civile comunale e della Metrocitt\u00e1 per telefono o via mail. - Per comune di Firenze Tel. 0557890 Indirizzo EMail. protezionecivile@comune.fi.it - Per citt\u00e0 metropolitana Tel. 0552761370 Indirizzo Email protezionecivile@cittametropolitana.fi.it Telefonate dalle 09.00 alle 19.00"", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""https://www.facebook.com/permalink.php?story_fbid=1201170246571777&id=304732699548874"", ""postale"": """"}","<pre><yamldata>chi: 'Protezione Civile Firenze e dintorni'
+descrizione: 'Le Protezioni civili del Comune e della Città metropolitana si sono mobilitate anche per raccogliere i beni di prima necessità (cibo e prodotti per l''igiene personale) che servono ai terremotati. Saranno loro poi ad occuparsi di farli arrivare a destinazione. Chi è interessato a fare una donazione dovrà contattare la Protezione civile comunale e della Metrocittá per telefono o via mail. - Per comune di Firenze Tel. 0557890 Indirizzo EMail. protezionecivile@comune.fi.it - Per città metropolitana Tel. 0552761370 Indirizzo Email protezionecivile@cittametropolitana.fi.it Telefonate dalle 09.00 alle 19.00'
+intestazione: ''
+iban: ''
+bic: ''
+postale: ''
+causale: ''
+link: 'https://www.facebook.com/permalink.php?story_fbid=1201170246571777&id=304732699548874'
+email: ''
+data: 15/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/371,177124660,2016-09-15 09:06:20,2016-09-15 09:03:45,Centro di raccolta di beni di prima necessità Firenze,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Centro di raccolta di beni di prima necessit\u00e0 Firenze"", ""data"": ""15/09/2016"", ""descrizione"": ""Acqua, prodotti per igiene personale, vestiti, abiti per bambini, scarpe da ginnastica, calzini e biancheria, coperte e pannolini. Impianto Sportivo Padovani Viale P. Paoli, 23 \u2013 Zona Campo di Marte"", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": """", ""postale"": """"}","<pre><yamldata>chi: 'Centro di raccolta di beni di prima necessità Firenze'
 descrizione: 'Acqua, prodotti per igiene personale, vestiti, abiti per bambini, scarpe da ginnastica, calzini e biancheria, coperte e pannolini. Impianto Sportivo Padovani Viale P. Paoli, 23 – Zona Campo di Marte'
 intestazione: ''
@@ -1126,17 +1148,6 @@ postale: ''
 causale: 'Terremoto Centro Italia'
 link: 'http://www.3e32.org/?p=8978'
 email: ''
-data: 13/09/2016
-</yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/222,176775607,2016-09-13 23:24:47,2016-09-13 23:20:50,Slowfood,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": ""ROMAITRR"", ""causale"": """", ""chi"": ""Slowfood"", ""data"": ""13/09/2016"", ""descrizione"": ""Partito ufficialmente il progetto Slowfood #unfuturoperamatrice sul sito www.slowfood.it un primo elenco (parziale e in aggiornamento) dei ristoranti che partecipano, e le modalit\u00e0 per aderire."", ""email"": ""unfuturoperamatrice@slowfood.it"", ""iban"": ""IT 28 M 08327 73470 000000006000"", ""intestazione"": """", ""link"": ""http://www.slowfood.it/un-futuro-amatrice-locali-aderenti/"", ""postale"": """"}","<pre><yamldata>chi: Slowfood
-descrizione: 'Partito ufficialmente il progetto Slowfood #unfuturoperamatrice sul sito www.slowfood.it un primo elenco (parziale e in aggiornamento) dei ristoranti che partecipano, e le modalità per aderire.'
-intestazione: ''
-iban: 'IT 28 M 08327 73470 000000006000'
-bic: ROMAITRR
-postale: ''
-causale: ''
-link: 'http://www.slowfood.it/un-futuro-amatrice-locali-aderenti/'
-email: unfuturoperamatrice@slowfood.it
 data: 13/09/2016
 </yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/222,176775607,2016-09-13 23:24:47,2016-09-13 23:20:50,Slowfood,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": ""ROMAITRR"", ""causale"": """", ""chi"": ""Slowfood"", ""data"": ""13/09/2016"", ""descrizione"": ""Partito ufficialmente il progetto Slowfood #unfuturoperamatrice sul sito www.slowfood.it un primo elenco (parziale e in aggiornamento) dei ristoranti che partecipano, e le modalit\u00e0 per aderire."", ""email"": ""unfuturoperamatrice@slowfood.it"", ""iban"": ""IT 28 M 08327 73470 000000006000"", ""intestazione"": """", ""link"": ""http://www.slowfood.it/un-futuro-amatrice-locali-aderenti/"", ""postale"": """"}","<pre><yamldata>chi: Slowfood
