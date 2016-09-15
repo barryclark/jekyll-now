@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/409,177156582,2016-09-15 11:53:55,2016-09-15 11:53:40,Reclutamento Ordini territoriali,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""Gli Ordini territoriali delle regioni interessate hanno attivato il reclutamento di colleghi con esperienza nel campo delle emergenze. Coord. del GdL Mariano Pizzo, tel. 328-9321254 della Regione Umbria o a mandare una mail alla task force a ordpsiabsismacentroitalia@gmail.com"", ""link"": """", ""titolo"": ""Reclutamento Ordini territoriali""}","<pre><yamldata>titolo: 'Reclutamento Ordini territoriali'
+descrizione: 'Gli Ordini territoriali delle regioni interessate hanno attivato il reclutamento di colleghi con esperienza nel campo delle emergenze. Coord. del GdL Mariano Pizzo, tel. 328-9321254 della Regione Umbria o a mandare una mail alla task force a ordpsiabsismacentroitalia@gmail.com'
+link: ''
+data: 15/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/408,177156338,2016-09-15 11:52:42,2016-09-15 11:52:21,Università di Camerino,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""Rettore Flavio Corradini; Rita Ortenzi : Hanno attivato geologi e architetti sulla zona del disastro - Corso di laurea in Geologia, coordinati dal prof. Emanuele Tondi,"", ""link"": """", ""titolo"": ""Universit\u00e0 di Camerino""}","<pre><yamldata>titolo: 'Università di Camerino'
 descrizione: 'Rettore Flavio Corradini; Rita Ortenzi : Hanno attivato geologi e architetti sulla zona del disastro - Corso di laurea in Geologia, coordinati dal prof. Emanuele Tondi,'
 link: ''
@@ -1090,17 +1095,6 @@ bic: ''
 postale: ''
 causale: ''
 link: 'http://www.ancitoscana.it/component/k2/603-terremoto-una-pagina-ad-hoc-per-le-iniziative-dei-comuni-toscani.html'
-email: ''
-data: 14/09/2016
-</yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/270,176857070,2016-09-14 09:23:08,2016-09-14 09:21:55,Comune di Bagno a Ripoli,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Raccolta Fondi Terremoto"", ""chi"": ""Comune di Bagno a Ripoli"", ""data"": ""14/09/2016"", ""descrizione"": ""\""Eventi: tre cene di solidariet\u00e0 Mercoled\u00ec 7 settembre 2016, alle 20, in Piazza Peruzzi, ad Antella, si svolger\u00e0 la 'Cena di Solidariet\u00e0 in Piazza', prima delle tre cene organizzate dal Comune di Bagno a Ripoli. Le cene costano 10 euro per gli adulti e 5 euro per i bambini fino a 12 anni di et\u00e0. I biglietti per partecipare alla prima sono acquistabili presso i seguenti negozi di Antella: Tutti Fiori di Meri e Antonella, Macelleria Paoletti, Farmacia Bischi, Forno Caldini. Si ringrazia Siaf, eChianti, Sogegross, Sezione Soci Coop Bagno a Ripoli, Azienda Agricola Malenchini di Diletta Malenchini e Dr. Vranjes per il contributo organizzativo e i premi per la lotteria di solidariet\u00e0. In caso di pioggia, la cena si svolger\u00e0 alla Misericordia di Antella. Si inizia il 7 ad Antella, ma sono gi\u00e0 fissate anche le date di Bagno a Ripoli (il 14, in Via Roma) e Grassina (il 22, nei pressi del Circolo Acli). Inoltre \u00e8 stato attivato un conto corrente.\"""", ""email"": """", ""iban"": ""IT03 Z087 3637 7200 0000 0402 041"", ""intestazione"": """", ""link"": ""https://www.facebook.com/315609228549383/photos/a.398406703602968.1073741827.315609228549383/973288642781435/?type=3&theater"", ""postale"": """"}","<pre><yamldata>chi: 'Comune di Bagno a Ripoli'
-descrizione: '""Eventi: tre cene di solidarietà Mercoledì 7 settembre 2016, alle 20, in Piazza Peruzzi, ad Antella, si svolgerà la ''Cena di Solidarietà in Piazza'', prima delle tre cene organizzate dal Comune di Bagno a Ripoli. Le cene costano 10 euro per gli adulti e 5 euro per i bambini fino a 12 anni di età. I biglietti per partecipare alla prima sono acquistabili presso i seguenti negozi di Antella: Tutti Fiori di Meri e Antonella, Macelleria Paoletti, Farmacia Bischi, Forno Caldini. Si ringrazia Siaf, eChianti, Sogegross, Sezione Soci Coop Bagno a Ripoli, Azienda Agricola Malenchini di Diletta Malenchini e Dr. Vranjes per il contributo organizzativo e i premi per la lotteria di solidarietà. In caso di pioggia, la cena si svolgerà alla Misericordia di Antella. Si inizia il 7 ad Antella, ma sono già fissate anche le date di Bagno a Ripoli (il 14, in Via Roma) e Grassina (il 22, nei pressi del Circolo Acli). Inoltre è stato attivato un conto corrente.""'
-intestazione: ''
-iban: 'IT03 Z087 3637 7200 0000 0402 041'
-bic: ''
-postale: ''
-causale: 'Raccolta Fondi Terremoto'
-link: 'https://www.facebook.com/315609228549383/photos/a.398406703602968.1073741827.315609228549383/973288642781435/?type=3&theater'
 email: ''
 data: 14/09/2016
 </yamldata></pre>"
