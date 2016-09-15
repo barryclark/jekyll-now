@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/371,177124660,2016-09-15 09:06:20,2016-09-15 09:03:45,Centro di raccolta di beni di prima necessità Firenze,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Centro di raccolta di beni di prima necessit\u00e0 Firenze"", ""data"": ""15/09/2016"", ""descrizione"": ""Acqua, prodotti per igiene personale, vestiti, abiti per bambini, scarpe da ginnastica, calzini e biancheria, coperte e pannolini. Impianto Sportivo Padovani Viale P. Paoli, 23 \u2013 Zona Campo di Marte"", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": """", ""postale"": """"}","<pre><yamldata>chi: 'Centro di raccolta di beni di prima necessità Firenze'
+descrizione: 'Acqua, prodotti per igiene personale, vestiti, abiti per bambini, scarpe da ginnastica, calzini e biancheria, coperte e pannolini. Impianto Sportivo Padovani Viale P. Paoli, 23 – Zona Campo di Marte'
+intestazione: ''
+iban: ''
+bic: ''
+postale: ''
+causale: ''
+link: ''
+email: ''
+data: 15/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/370,177124045,2016-09-15 09:01:50,2016-09-15 09:00:42,Beni di prima necessità,41.5633,12.53864,"[""Accettato"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""Beni di prima necessit\u00e0"", ""data"": ""15/09/2016"", ""descrizione"": ""Cibo in scatola , secco , acqua e latte UHT. Ogni giorno verr\u00e0 effettuato un viaggio"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Sede di via dei Fenicotteri 6 a Tor San Lorenzo"", ""lat"": 41.5633, ""link"": """", ""lon"": 12.53864, ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 cosa: 'Beni di prima necessità'
@@ -1458,14 +1469,14 @@ link: 'http://www.avvisopubblico.it/home/terremoto-in-centro-italia-avviso-pubbl
 email: ''
 data: 13/09/2016
 </yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/191,176762355,2016-09-13 22:04:37,2016-09-13 22:03:50,Caritas Belluno-Feltre,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Colletta terremoto Centro Italia"", ""chi"": ""Caritas Belluno-Feltre"", ""data"": ""13/09/2016"", ""descrizione"": ""l contributi possono essere fatti pervenire anche nelle parrocchie o nella sede Caritas, al terzo piano del Centro diocesano Giovanni XXIII in piazza Piloni 11 a Belluno, aperta dal luned\u00ec al venerd\u00ec dalle 9 alle 12. (fonte: Corriere delle Alpi, 25/08/2016, pag. 13)"", ""email"": """", ""iban"": ""IT57K 07601 11900 000037921327 - IT10C 02008 11910 000003490760 (presso Unicredit banca);  IT33T 03359 01600 100000143821 ( presso Banca Prossima)"", ""intestazione"": ""Diocesi Belluno-Feltre, Caritas diocesana"", ""link"": """", ""postale"": """"}","<pre><yamldata>chi: 'Caritas Belluno-Feltre'
-descrizione: 'l contributi possono essere fatti pervenire anche nelle parrocchie o nella sede Caritas, al terzo piano del Centro diocesano Giovanni XXIII in piazza Piloni 11 a Belluno, aperta dal lunedì al venerdì dalle 9 alle 12. (fonte: Corriere delle Alpi, 25/08/2016, pag. 13)'
-intestazione: 'Diocesi Belluno-Feltre, Caritas diocesana'
-iban: 'IT57K 07601 11900 000037921327 - IT10C 02008 11910 000003490760 (presso Unicredit banca);  IT33T 03359 01600 100000143821 ( presso Banca Prossima)'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/192,176763246,2016-09-13 22:08:46,2016-09-13 22:08:22,Avviso Pubblico - Enti locali e Regioni per la formazione civile contro le mafie,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Avviso Pubblico - Enti locali e Regioni per la formazione civile contro le mafie"", ""data"": ""13/09/2016"", ""descrizione"": """", ""email"": """", ""iban"": ""IT73H 05018 02800 000000131720, presso Banca Etica - Filiale di Firenze"", ""intestazione"": """", ""link"": ""http://www.avvisopubblico.it/home/terremoto-in-centro-italia-avviso-pubblico-lancia-campagna-di-raccolta-fondi-e-altre-forme-di-sostegno/"", ""postale"": """"}","<pre><yamldata>chi: 'Avviso Pubblico - Enti locali e Regioni per la formazione civile contro le mafie'
+descrizione: ''
+intestazione: ''
+iban: 'IT73H 05018 02800 000000131720, presso Banca Etica - Filiale di Firenze'
 bic: ''
 postale: ''
-causale: 'Colletta terremoto Centro Italia'
-link: ''
+causale: ''
+link: 'http://www.avvisopubblico.it/home/terremoto-in-centro-italia-avviso-pubblico-lancia-campagna-di-raccolta-fondi-e-altre-forme-di-sostegno/'
 email: ''
 data: 13/09/2016
 </yamldata></pre>"
