@@ -13,10 +13,3 @@ permalink: /alloggi/
 {% endif %}
 {% endfor %}
 </div>
-
-
-  
-    
-    
-  
-
