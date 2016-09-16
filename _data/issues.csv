@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/490,177434924,2016-09-16 14:10:53,2016-09-16 14:08:52,Serve qualcuno che sappia occuparsi delle cure di Un cane ferito,42.623096787629635,13.319077491760254,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Serve qualcuno che sappia occuparsi delle cure di Un cane ferito"", ""data"": ""16/09/2016"", ""descrizione"": ""Un cane ferito sta girando tra Retrosi e Cossara, non si lascia avvicinare. Contattare Euklid 3245630953"", ""email"": """", ""immagine"": """", ""indirizzo"": ""SP20, Casale Zocchi, Amatrice, RI, Lazio, Italy"", ""lat"": ""42.623096787629635"", ""link"": """", ""lon"": ""13.319077491760254"", ""tel"": ""3245630953""}","<pre><yamldata>tel: '3245630953'
+email: ''
+cosa: 'Serve qualcuno che sappia occuparsi delle cure di Un cane ferito'
+descrizione: 'Un cane ferito sta girando tra Retrosi e Cossara, non si lascia avvicinare. Contattare Euklid 3245630953'
+indirizzo: 'SP20, Casale Zocchi, Amatrice, RI, Lazio, Italy'
+lat: '42.623096787629635'
+lon: '13.319077491760254'
+link: ''
+immagine: ''
+data: 16/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/488,177431768,2016-09-16 13:56:41,2016-09-16 13:55:56,"CONTAINER,ROULOTTE/CAMPER/MODULI ABITATIVI(anche in prestito), MANGIMI PER(mucche da latte,maiali,galline,conigli)",42.64280,13.31046,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""CONTAINER,ROULOTTE/CAMPER/MODULI ABITATIVI(anche in prestito), MANGIMI PER(mucche da latte,maiali,galline,conigli)"", ""data"": ""16/09/2016"", ""descrizione"": ""Fra non molto a Sommati sar\u00e0 difficilissimo vivere in tenda a causa del freddo/acqua/vento e neve;altrettanto impossibile \u00e8 accettare la proposta avanzata di dover andare in albergo lasciando il bestiame e le propriet\u00e0 abbandonate;"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": ""42.64280"", ""link"": """", ""lon"": ""13.31046"", ""tel"": ""3489169956""}","<pre><yamldata>tel: '3489169956'
 email: ''
 cosa: 'CONTAINER,ROULOTTE/CAMPER/MODULI ABITATIVI(anche in prestito), MANGIMI PER(mucche da latte,maiali,galline,conigli)'
@@ -2449,17 +2460,6 @@ bic: ''
 postale: ''
 causale: ''
 link: 'http://gusitalia.it/'
-email: ''
-data: 13/09/2016
-</yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/164,176720862,2016-09-13 18:54:16,2016-09-13 18:53:48,Provincia di Modena,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Azioni di solidariet\u00e0 terremoto centro Italia del 24 agosto"", ""chi"": ""Provincia di Modena"", ""data"": ""13/09/2016"", ""descrizione"": ""Le somme verranno destinate a progetti di assistenza"", ""email"": """", ""iban"": ""IT 52 M 02008 12930 000003398693"", ""intestazione"": """", ""link"": """", ""postale"": """"}","<pre><yamldata>chi: 'Provincia di Modena'
-descrizione: 'Le somme verranno destinate a progetti di assistenza'
-intestazione: ''
-iban: 'IT 52 M 02008 12930 000003398693'
-bic: ''
-postale: ''
-causale: 'Azioni di solidarietà terremoto centro Italia del 24 agosto'
-link: ''
 email: ''
 data: 13/09/2016
 </yamldata></pre>"
