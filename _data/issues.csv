@@ -1,11 +1,11 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/493,177435675,2016-09-16 14:12:24,2016-09-16 14:12:14,Roulotte e Camper,,,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Roulotte e Camper"", ""data"": ""16/09/2016"", ""descrizione"": ""La pioggia rende impossibile la permanenza sotto le tende della protezione civile. Chi volesse mettere a disposizione roulotte o camper per alcuni mesi a favore di chi non ha pi\u00f9 la casa agibile pu\u00f2 contattare il numero 0736840731."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""0736840731""}","<pre><yamldata>tel: '0736840731'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/493,177435675,2016-09-16 14:12:43,2016-09-16 14:12:14,Roulotte e Camper,42.99726,13.33343,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Roulotte e Camper"", ""data"": ""16/09/2016"", ""descrizione"": ""La pioggia rende impossibile la permanenza sotto le tende della protezione civile. Chi volesse mettere a disposizione roulotte o camper per alcuni mesi a favore di chi non ha pi\u00f9 la casa agibile pu\u00f2 contattare il numero 0736840731."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": ""42.99726"", ""link"": """", ""lon"": ""13.33343"", ""tel"": ""0736840731""}","<pre><yamldata>tel: '0736840731'
 email: ''
 cosa: 'Roulotte e Camper'
 descrizione: 'La pioggia rende impossibile la permanenza sotto le tende della protezione civile. Chi volesse mettere a disposizione roulotte o camper per alcuni mesi a favore di chi non ha più la casa agibile può contattare il numero 0736840731.'
 indirizzo: ''
-lat: ''
-lon: ''
+lat: '42.99726'
+lon: '13.33343'
 link: ''
 immagine: ''
 data: 16/09/2016
