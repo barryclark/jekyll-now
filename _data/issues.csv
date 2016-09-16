@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/536,177475028,2016-09-16 17:26:06,2016-09-16 17:09:24,"AGRITURISMO ""CASA DEIMAR"" 2 ca",43.0711952,12.6146669,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""AGRITURISMO \""CASA DEIMAR\"" 2 camere (tra Assisi e Loreto)"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Piazza del Comune, San Damiano, Assisi, PG, UMB, 06081, Italia"", ""lat"": ""43.0711952"", ""link"": """", ""lon"": ""12.6146669"", ""tel"": ""3357265070""}","<pre><yamldata>tel: '3357265070'
+email: ''
+descrizione: 'AGRITURISMO ""CASA DEIMAR"" 2 camere (tra Assisi e Loreto)'
+indirizzo: 'Piazza del Comune, San Damiano, Assisi, PG, UMB, 06081, Italia'
+lat: '43.0711952'
+lon: '12.6146669'
+link: ''
+immagine: ''
+data: 16/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/535,177474652,2016-09-16 17:07:54,2016-09-16 17:07:22,"HOTEL ""GAN"" Marco e M.Grazia",42.7157111,13.0247721,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""HOTEL \""GAN\"" (Marco e Maria Grazia) Indirizzo: via Tranquillo Graziani 10/a, Cascia (PG)"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via Tranquillo Graziani, Cascia, PG, UMB, 06043, Italia"", ""lat"": ""42.7157111"", ""link"": """", ""lon"": ""13.0247721"", ""tel"": ""3398856382 - 0743795006""}","<pre><yamldata>tel: '3398856382 - 0743795006'
 email: ''
 descrizione: 'HOTEL ""GAN"" (Marco e Maria Grazia) Indirizzo: via Tranquillo Graziani 10/a, Cascia (PG)'
