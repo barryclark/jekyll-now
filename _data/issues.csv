@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/493,177435675,2016-09-16 14:12:24,2016-09-16 14:12:14,Roulotte e Camper,,,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Roulotte e Camper"", ""data"": ""16/09/2016"", ""descrizione"": ""La pioggia rende impossibile la permanenza sotto le tende della protezione civile. Chi volesse mettere a disposizione roulotte o camper per alcuni mesi a favore di chi non ha pi\u00f9 la casa agibile pu\u00f2 contattare il numero 0736840731."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""0736840731""}","<pre><yamldata>tel: '0736840731'
+email: ''
+cosa: 'Roulotte e Camper'
+descrizione: 'La pioggia rende impossibile la permanenza sotto le tende della protezione civile. Chi volesse mettere a disposizione roulotte o camper per alcuni mesi a favore di chi non ha più la casa agibile può contattare il numero 0736840731.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 16/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/491,177435262,2016-09-16 14:12:16,2016-09-16 14:10:26,Cercasi cuochi,,,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Cercasi cuochi"", ""data"": ""16/09/2016"", ""descrizione"": ""Federazione Cuochi Marche cerca 3 cuochi volontari per campo terremotati da affiancare ad altri cuochi gi\u00e0 in loco. Si offre vitto, alloggio e assicurazione."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.facebook.com/ascom.rieti/photos/a.1421929414799607.1073741826.1421929318132950/1683799888612557/?type=3"", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 cosa: 'Cercasi cuochi'
@@ -1160,11 +1171,6 @@ lat: ''
 lon: ''
 link: ''
 immagine: ''
-data: 14/09/2016
-</yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/312,176955947,2016-09-14 18:03:32,2016-09-14 16:30:42,Donazioni deducibili per i terremotati. Individuati gli enti nell'ascolano,,,"[""Accettato"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""Il prefetto di Ascoli Piceno ha firmato il decreto che individua gli organismi attraverso i quali \u00e8 possibile fare donazioni esentasse a favore della popolazione della provincia, duramente colpita dal terremoto del 24 agosto scorso."", ""link"": ""http://www.interno.gov.it/it/notizie/donazioni-deducibili-i-terremotati-individuati-enti-nellascolano"", ""titolo"": ""Donazioni deducibili per i terremotati. Individuati gli enti nell'ascolano""}","<pre><yamldata>titolo: 'Donazioni deducibili per i terremotati. Individuati gli enti nell''ascolano'
-descrizione: 'Il prefetto di Ascoli Piceno ha firmato il decreto che individua gli organismi attraverso i quali è possibile fare donazioni esentasse a favore della popolazione della provincia, duramente colpita dal terremoto del 24 agosto scorso.'
-link: 'http://www.interno.gov.it/it/notizie/donazioni-deducibili-i-terremotati-individuati-enti-nellascolano'
 data: 14/09/2016
 </yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/312,176955947,2016-09-14 18:03:32,2016-09-14 16:30:42,Donazioni deducibili per i terremotati. Individuati gli enti nell'ascolano,,,"[""Accettato"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""Il prefetto di Ascoli Piceno ha firmato il decreto che individua gli organismi attraverso i quali \u00e8 possibile fare donazioni esentasse a favore della popolazione della provincia, duramente colpita dal terremoto del 24 agosto scorso."", ""link"": ""http://www.interno.gov.it/it/notizie/donazioni-deducibili-i-terremotati-individuati-enti-nellascolano"", ""titolo"": ""Donazioni deducibili per i terremotati. Individuati gli enti nell'ascolano""}","<pre><yamldata>titolo: 'Donazioni deducibili per i terremotati. Individuati gli enti nell''ascolano'
