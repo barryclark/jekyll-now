@@ -25,6 +25,8 @@ permalink: /issues/
 <script src="{{ site.url }}/js/Control.Geocoder.js"></script>
 
 <div class="row"><div class="col-md-12"> <div id="map"></div> </div> </div>
+<div class="row"><div class="col-md-4">Latitudine</div><div class="col-md-4" id="lat"></div></div>
+<div class="row"><div class="col-md-4">Longitudine</div><div class="col-md-4" id="lng"></div></div>
 
 ---
 
@@ -151,6 +153,16 @@ for (var i=0; i<markerList.length; i++) {
 }
 
 map.addLayer(osm).setView([sumLat / markerList.length, sumLon / markerList.length], 6);
-L.Control.geocoder({collapsed:false,placeholder:"Cerca..."}).addTo(map);
+var geocoder = L.Control.geocoder({collapsed:false,placeholder:"Cerca...",
+        defaultMarkGeocode: false, geocodingQueryParams: { countrycodes: "it" },
+    })
+    .on('markgeocode', function(e) {
+        var latlon=e.geocode.center;
+        $("#lat").html(latlon.lat);
+        $("#lng").html(latlon.lng);
+        var marker = new L.Marker(markerLocation);
+        map.addLayer(marker);
+    })
+    .addTo(map);
 
 </script>
