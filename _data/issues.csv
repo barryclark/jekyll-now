@@ -59,10 +59,10 @@ link: ''
 immagine: ''
 data: 16/09/2016
 </yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/527,177471621,2016-09-16 17:01:24,2016-09-16 16:51:28,"HOTEL ""DE LA VILLE"" AVELLINO",40.9141958,14.7888764,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""HOTEL \""DE LA VILLE\"" di AVELLINO (vitto e alloggio per una famiglia) via Palatucci 20, Avellino"", ""email"": ""info@hoteldelavilleavellino.it"", ""immagine"": """", ""indirizzo"": ""Corso Vittorio Emanuele II, Pianodardine, Avellino, AV, Campania, 83100, Italia"", ""lat"": ""40.9141958"", ""link"": """", ""lon"": ""14.7888764"", ""tel"": ""Telefono: 0825 780911 Cellulare e Whatsapp: 3939586362""}","<pre><yamldata>tel: 'Telefono: 0825 780911 Cellulare e Whatsapp: 3939586362'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/527,177471621,2016-09-16 17:01:41,2016-09-16 16:51:28,"HOTEL ""DE LA VILLE"" AVELLINO",40.9141958,14.7888764,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""HOTEL \""DE LA VILLE\"" di AVELLINO (vitto e alloggio per una famiglia) via Palatucci 20, Avellino"", ""email"": ""info@hoteldelavilleavellino.it"", ""immagine"": """", ""indirizzo"": ""Avellino, AV, Campania, 83100, Italia"", ""lat"": ""40.9141958"", ""link"": """", ""lon"": ""14.7888764"", ""tel"": ""Telefono: 0825 780911 Cellulare e Whatsapp: 3939586362""}","<pre><yamldata>tel: 'Telefono: 0825 780911 Cellulare e Whatsapp: 3939586362'
 email: info@hoteldelavilleavellino.it
 descrizione: 'HOTEL ""DE LA VILLE"" di AVELLINO (vitto e alloggio per una famiglia) via Palatucci 20, Avellino'
-indirizzo: 'Corso Vittorio Emanuele II, Pianodardine, Avellino, AV, Campania, 83100, Italia'
+indirizzo: 'Avellino, AV, Campania, 83100, Italia'
 lat: '40.9141958'
 lon: '14.7888764'
 link: ''
@@ -2095,6 +2095,17 @@ postale: ''
 causale: ''
 link: 'http://www.slowfood.it/un-futuro-amatrice-locali-aderenti/'
 email: unfuturoperamatrice@slowfood.it
+data: 13/09/2016
+</yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/221,176775392,2016-09-13 23:24:53,2016-09-13 23:19:44,Comune di Accumoli,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Contributo sisma agosto 2016"", ""chi"": ""Comune di Accumoli"", ""data"": ""13/09/2016"", ""descrizione"": """", ""email"": """", ""iban"": ""IT83 E030 6914 6011 0000 0046 108"", ""intestazione"": """", ""link"": ""http://www.comune.accumoli.ri.it/sisma-centro-italia-2016/"", ""postale"": """"}","<pre><yamldata>chi: 'Comune di Accumoli'
+descrizione: ''
+intestazione: ''
+iban: 'IT83 E030 6914 6011 0000 0046 108'
+bic: ''
+postale: ''
+causale: 'Contributo sisma agosto 2016'
+link: 'http://www.comune.accumoli.ri.it/sisma-centro-italia-2016/'
+email: ''
 data: 13/09/2016
 </yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/221,176775392,2016-09-13 23:24:53,2016-09-13 23:19:44,Comune di Accumoli,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Contributo sisma agosto 2016"", ""chi"": ""Comune di Accumoli"", ""data"": ""13/09/2016"", ""descrizione"": """", ""email"": """", ""iban"": ""IT83 E030 6914 6011 0000 0046 108"", ""intestazione"": """", ""link"": ""http://www.comune.accumoli.ri.it/sisma-centro-italia-2016/"", ""postale"": """"}","<pre><yamldata>chi: 'Comune di Accumoli'
