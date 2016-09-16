@@ -16,7 +16,7 @@ subtitle: Un progetto per informare sul terremoto del 24 Agosto 2016
 
 <p class="lead">Di seguito l'elenco delle segnalazioni raccolte ora per ora online dai volontari del progetto TerremotoCentroItalia.info. Usa il box per la ricerca per filtrarle, potrebbe essercene qualcuna di tuo interesse.
 
-<div class="panel-group-sieve">
+<div class="panel-group sieve">
 {% for member in site.data.issuesjson %}
 {% if member.issue.labels contains "Bollettino" %}
 {% capture memberName %}{{member.issue.data.descrizione}}{% endcapture %}
