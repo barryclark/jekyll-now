@@ -20,6 +20,10 @@ permalink: /issues/
 #map{ height: 400px }
 </style>
 
+
+<link rel="stylesheet" href="/css/Control.Geocoder.css" />
+<script src="/js/Control.Geocoder.js"></script>
+
 <div class="row"><div class="col-md-12"> <div id="map"></div> </div> </div>
 
 ---
@@ -147,5 +151,6 @@ for (var i=0; i<markerList.length; i++) {
 }
 
 map.addLayer(osm).setView([sumLat / markerList.length, sumLon / markerList.length], 6);
+L.Control.geocoder({collapsed:false,placeholder:"Cerca..."}).addTo(map);
 
 </script>
