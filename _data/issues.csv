@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/503,177444593,2016-09-16 14:51:18,2016-09-16 14:49:52,"Musicchio: servono nell'immediato ciabatte no infradito e antiscivolo per fare la doccia, e un accappatoio nuovo da ragazza (xs)",42.623587,13.279079,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Musicchio: servono nell'immediato ciabatte no infradito e antiscivolo per fare la doccia, e un accappatoio nuovo da ragazza (xs)"", ""data"": ""30/08/2016"", ""descrizione"": ""servono nell'immediato ciabatte no infradito e antiscivolo per fare la doccia, e un accappatoio nuovo da ragazza (xs)"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Strada Regionale 260 Picente, Amatrice, RI, Lazio, Italy"", ""lat"": ""42.623587"", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1761961677404749/"", ""lon"": ""13.279079"", ""tel"": """"}","<pre><yamldata>tel: ''
+email: ''
+cosa: 'Musicchio: servono nell''immediato ciabatte no infradito e antiscivolo per fare la doccia, e un accappatoio nuovo da ragazza (xs)'
+descrizione: 'servono nell''immediato ciabatte no infradito e antiscivolo per fare la doccia, e un accappatoio nuovo da ragazza (xs)'
+indirizzo: 'Strada Regionale 260 Picente, Amatrice, RI, Lazio, Italy'
+lat: '42.623587'
+lon: '13.279079'
+link: 'https://www.facebook.com/groups/1758670357733881/permalink/1761961677404749/'
+immagine: ''
+data: 30/08/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/501,177441385,2016-09-16 14:37:27,2016-09-16 14:36:56,15 Settembre 2016 Camera dei Deputati: audizione del Ministro delle Infrastrutture e dei Trasporti nell’ambito dell’indagine conoscitiva sulle politiche di prevenzione antisismica e sui modelli di ricostruzione a seguito di eventi sismici.,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""Commissione Ambiente della Camera dei Deputati: audizione del Ministro delle Infrastrutture e dei Trasporti, Graziano Delrio, nell\u2019ambito dell\u2019indagine conoscitiva sulle politiche di prevenzione antisismica e sui modelli di ricostruzione a seguito di eventi sismici. (VIDEO INTEGRALE)"", ""link"": ""http://webtv.camera.it/evento/9933"", ""titolo"": ""15 Settembre 2016 Camera dei Deputati: audizione del Ministro delle Infrastrutture e dei Trasporti nell\u2019ambito dell\u2019indagine conoscitiva sulle politiche di prevenzione antisismica e sui modelli di ricostruzione a seguito di eventi sismici.""}","<pre><yamldata>titolo: '15 Settembre 2016 Camera dei Deputati: audizione del Ministro delle Infrastrutture e dei Trasporti nell’ambito dell’indagine conoscitiva sulle politiche di prevenzione antisismica e sui modelli di ricostruzione a seguito di eventi sismici.'
 descrizione: 'Commissione Ambiente della Camera dei Deputati: audizione del Ministro delle Infrastrutture e dei Trasporti, Graziano Delrio, nell’ambito dell’indagine conoscitiva sulle politiche di prevenzione antisismica e sui modelli di ricostruzione a seguito di eventi sismici. (VIDEO INTEGRALE)'
 link: 'http://webtv.camera.it/evento/9933'
@@ -2442,17 +2453,6 @@ bic: ''
 postale: ''
 causale: 'Sisma Centro Italia'
 link: 'http://www.associazioneeneagrilli.org/index.php/news'
-email: ''
-data: 13/09/2016
-</yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/172,176741481,2016-09-13 20:34:01,2016-09-13 20:30:03,Caritas - Cei,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Caritas - Cei"", ""data"": ""13/09/2016"", ""descrizione"": ""Domenica 18 settembre colletta nazionale in tutte le parrocchie d'Italia per sostenere la ricostruzione nelle zone colpite dal sisma."", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""http://www.caritasitaliana.it/pls/caritasitaliana/V3_S2EW_CONSULTAZIONE.mostra_pagina?id_pagina=6558"", ""postale"": """"}","<pre><yamldata>chi: 'Caritas - Cei'
-descrizione: 'Domenica 18 settembre colletta nazionale in tutte le parrocchie d''Italia per sostenere la ricostruzione nelle zone colpite dal sisma.'
-intestazione: ''
-iban: ''
-bic: ''
-postale: ''
-causale: ''
-link: 'http://www.caritasitaliana.it/pls/caritasitaliana/V3_S2EW_CONSULTAZIONE.mostra_pagina?id_pagina=6558'
 email: ''
 data: 13/09/2016
 </yamldata></pre>"
