@@ -59,6 +59,16 @@ link: ''
 immagine: ''
 data: 16/09/2016
 </yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/527,177471621,2016-09-16 17:01:24,2016-09-16 16:51:28,"HOTEL ""DE LA VILLE"" AVELLINO",40.9141958,14.7888764,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""HOTEL \""DE LA VILLE\"" di AVELLINO (vitto e alloggio per una famiglia) via Palatucci 20, Avellino"", ""email"": ""info@hoteldelavilleavellino.it"", ""immagine"": """", ""indirizzo"": ""Corso Vittorio Emanuele II, Pianodardine, Avellino, AV, Campania, 83100, Italia"", ""lat"": ""40.9141958"", ""link"": """", ""lon"": ""14.7888764"", ""tel"": ""Telefono: 0825 780911 Cellulare e Whatsapp: 3939586362""}","<pre><yamldata>tel: 'Telefono: 0825 780911 Cellulare e Whatsapp: 3939586362'
+email: info@hoteldelavilleavellino.it
+descrizione: 'HOTEL ""DE LA VILLE"" di AVELLINO (vitto e alloggio per una famiglia) via Palatucci 20, Avellino'
+indirizzo: 'Corso Vittorio Emanuele II, Pianodardine, Avellino, AV, Campania, 83100, Italia'
+lat: '40.9141958'
+lon: '14.7888764'
+link: ''
+immagine: ''
+data: 16/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/524,177470708,2016-09-16 16:47:01,2016-09-16 16:46:29,EX CONVENTO DELLE CLARISSE a C,42.1573944,14.0026376,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""EX CONVENTO DELLE CLARISSE a CARAMANICO TERME (PESCARA) offre alloggio per almeno 20/30 persone, animali ammessi (\u00e8 composto da almeno 6 stanze con circa 20/30 posti letto, comodi bagni con doccia, una grande cucina e stanza refettorio per almeno 30/40 persone)."", ""email"": ""enzodimichele@gmail.com"", ""immagine"": """", ""indirizzo"": ""Galleria Caramanico, Caramanico Terme, PE, ABR, Italia"", ""lat"": ""42.1573944"", ""link"": """", ""lon"": ""14.0026376"", ""tel"": ""3495219369""}","<pre><yamldata>tel: '3495219369'
 email: enzodimichele@gmail.com
 descrizione: 'EX CONVENTO DELLE CLARISSE a CARAMANICO TERME (PESCARA) offre alloggio per almeno 20/30 persone, animali ammessi (è composto da almeno 6 stanze con circa 20/30 posti letto, comodi bagni con doccia, una grande cucina e stanza refettorio per almeno 30/40 persone).'
@@ -646,16 +656,6 @@ descrizione: 'l''unione è a disposizione per segnalazioni ed interventi.'
 indirizzo: ''
 lat: ''
 lon: ''
-link: ''
-data: 15/09/2016
-</yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/403,177153368,2016-09-15 11:36:01,2016-09-15 11:35:12,Comune di Amatrice - email a cui inviare segnalazioni su iniziative di solidarietà,42.6299,13.28795,"[""Accettato"", ""Contatti"", ""Form""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""Il Comune di Amatrice sul sito comunica che per le singole iniziative di solidariet\u00e0 \u00e8 possibile inviare una mail all\u2019indirizzo segreteria@comune.amatrice.rieti.it, specificando il tipo di iniziativa, il referente e il contatto a cui rivolgersi."", ""email"": ""segreteria@comune.amatrice.rieti.it"", ""indirizzo"": """", ""lat"": 42.6299, ""link"": """", ""lon"": 13.28795, ""nome"": ""Comune di Amatrice - email a cui inviare segnalazioni su iniziative di solidariet\u00e0"", ""tel"": """"}","<pre><yamldata>nome: 'Comune di Amatrice - email a cui inviare segnalazioni su iniziative di solidarietà'
-tel: ''
-email: segreteria@comune.amatrice.rieti.it
-descrizione: 'Il Comune di Amatrice sul sito comunica che per le singole iniziative di solidarietà è possibile inviare una mail all’indirizzo segreteria@comune.amatrice.rieti.it, specificando il tipo di iniziativa, il referente e il contatto a cui rivolgersi.'
-indirizzo: ''
-lat: 42.62990
-lon: 13.28795
 link: ''
 data: 15/09/2016
 </yamldata></pre>"
