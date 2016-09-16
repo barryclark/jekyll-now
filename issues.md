@@ -21,8 +21,8 @@ permalink: /issues/
 </style>
 
 
-<link rel="stylesheet" href="/css/Control.Geocoder.css" />
-<script src="/js/Control.Geocoder.js"></script>
+<link rel="stylesheet" href="{{ site.url }}/css/Control.Geocoder.css" />
+<script src="{{ site.url }}/js/Control.Geocoder.js"></script>
 
 <div class="row"><div class="col-md-12"> <div id="map"></div> </div> </div>
 
