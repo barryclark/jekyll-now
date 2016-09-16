@@ -39,6 +39,16 @@ link: ''
 immagine: ''
 data: 16/09/2016
 </yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/529,177471994,2016-09-16 17:00:38,2016-09-16 16:53:39,Agriturismo,43.436659,13.354474,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""Agriturismo"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via Italia, Filottrano, AN, Marche, 62021, Italia"", ""lat"": ""43.436659"", ""link"": """", ""lon"": ""13.354474"", ""tel"": ""3316570503""}","<pre><yamldata>tel: '3316570503'
+email: ''
+descrizione: Agriturismo
+indirizzo: 'Via Italia, Filottrano, AN, Marche, 62021, Italia'
+lat: '43.436659'
+lon: '13.354474'
+link: ''
+immagine: ''
+data: 16/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/524,177470708,2016-09-16 16:47:01,2016-09-16 16:46:29,EX CONVENTO DELLE CLARISSE a C,42.1573944,14.0026376,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""EX CONVENTO DELLE CLARISSE a CARAMANICO TERME (PESCARA) offre alloggio per almeno 20/30 persone, animali ammessi (\u00e8 composto da almeno 6 stanze con circa 20/30 posti letto, comodi bagni con doccia, una grande cucina e stanza refettorio per almeno 30/40 persone)."", ""email"": ""enzodimichele@gmail.com"", ""immagine"": """", ""indirizzo"": ""Galleria Caramanico, Caramanico Terme, PE, ABR, Italia"", ""lat"": ""42.1573944"", ""link"": """", ""lon"": ""14.0026376"", ""tel"": ""3495219369""}","<pre><yamldata>tel: '3495219369'
 email: enzodimichele@gmail.com
 descrizione: 'EX CONVENTO DELLE CLARISSE a CARAMANICO TERME (PESCARA) offre alloggio per almeno 20/30 persone, animali ammessi (è composto da almeno 6 stanze con circa 20/30 posti letto, comodi bagni con doccia, una grande cucina e stanza refettorio per almeno 30/40 persone).'
@@ -2086,6 +2096,17 @@ bic: ''
 postale: ''
 causale: 'Pro terremoto Illica'
 link: 'https://www.facebook.com/AssociazioneCulturaleIllica/?fref=ts'
+email: ''
+data: 13/09/2016
+</yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/219,176775126,2016-09-13 23:25:43,2016-09-13 23:18:19,Caritas Diocesana di Rieti,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Emergenza terremoto Amatrice-Accumoli"", ""chi"": ""Caritas Diocesana di Rieti"", ""data"": ""13/09/2016"", ""descrizione"": """", ""email"": """", ""iban"": ""IT43P 02008 14606 000005208129"", ""intestazione"": ""Caritas diocesana Rieti Unicredit Banca di Roma"", ""link"": ""http://www.sanminiatoalmonte.it/node/535"", ""postale"": """"}","<pre><yamldata>chi: 'Caritas Diocesana di Rieti'
+descrizione: ''
+intestazione: 'Caritas diocesana Rieti Unicredit Banca di Roma'
+iban: 'IT43P 02008 14606 000005208129'
+bic: ''
+postale: ''
+causale: 'Emergenza terremoto Amatrice-Accumoli'
+link: 'http://www.sanminiatoalmonte.it/node/535'
 email: ''
 data: 13/09/2016
 </yamldata></pre>"
