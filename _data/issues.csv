@@ -1,11 +1,11 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/487,177431346,2016-09-16 13:54:30,2016-09-16 13:54:08,Tenda per due persone,,,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Tenda per due persone"", ""data"": ""16/09/2016"", ""descrizione"": ""All'interno devono entrare due lettini. La famiglia si trova a Cittareale: l'abitazione ha subito importanti lesioni. Fate riferimento come sempre alla sede dell'Acli."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.associazione alcli onlus http://www.alcli.it/"", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/487,177431346,2016-09-16 13:54:48,2016-09-16 13:54:08,Tenda per due persone,42.60025,13.14813,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Tenda per due persone"", ""data"": ""16/09/2016"", ""descrizione"": ""All'interno devono entrare due lettini. La famiglia si trova a Cittareale: l'abitazione ha subito importanti lesioni. Fate riferimento come sempre alla sede dell'Acli."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": ""42.60025"", ""link"": ""https://www.associazione alcli onlus http://www.alcli.it/"", ""lon"": ""13.14813"", ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 cosa: 'Tenda per due persone'
 descrizione: 'All''interno devono entrare due lettini. La famiglia si trova a Cittareale: l''abitazione ha subito importanti lesioni. Fate riferimento come sempre alla sede dell''Acli.'
 indirizzo: ''
-lat: ''
-lon: ''
+lat: '42.60025'
+lon: '13.14813'
 link: 'https://www.associazione alcli onlus http://www.alcli.it/'
 immagine: ''
 data: 16/09/2016
