@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Stellar Armada - $1 board game"
+title: "Stellar Armada - $1 Board Game"
 description: "A full game for a buck? Stellar Armanda looks like it's got the goods for not a lot of cash"
 category: kickstarter
 featured: stellararmada.png
