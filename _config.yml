@@ -19,11 +19,7 @@ avatar: http://i2.mirror.co.uk/incoming/article8075004.ece/ALTERNATES/s615b/Hara
 footer-links:
   dribbble:
 
-  rss: # just type anything here for a working RSS icon
-  twitter: jekyllrb
-  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
-  youtube: # channel/<your_long_string> or user/<user-name>
-  googleplus: # anything in your profile username that comes after plus.google.com/
+
 
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
