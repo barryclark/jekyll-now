@@ -16,7 +16,7 @@ permalink: /issues/
 
 {% for member in site.data.issuesjson %}
 {% if member.issue.labels contains "Notizie Utili" %}
-* <a href="{{ member.title | datapage_url: '.' }}">{{member.title}}</a>
+* <a href="{{ member.number | datapage_url: '.' }}">{{member.title}}</a>
 {% endif %}
 {% endfor %}
 
@@ -26,7 +26,7 @@ permalink: /issues/
 
 {% for member in site.data.issuesjson %}
 {% if member.issue.labels contains "Alloggi" %}
-* <a href="{{ member.title | datapage_url: '.' }}">{{member.title}}</a>
+* <a href="{{ member.number | datapage_url: '.' }}">{{member.title}}</a>
 {% endif %}
 {% endfor %}
 
@@ -36,7 +36,7 @@ permalink: /issues/
 
 {% for member in site.data.issuesjson %}
 {% if member.issue.labels contains "Donazioni" %}
-* <a href="{{ member.title | datapage_url: '.' }}">{{member.title}}</a>
+* <a href="{{ member.number | datapage_url: '.' }}">{{member.title}}</a>
 {% endif %}
 {% endfor %}
 
@@ -46,7 +46,7 @@ permalink: /issues/
 
 {% for member in site.data.issuesjson %}
 {% if member.issue.labels contains "Fabbisogni" %}
-* <a href="{{ member.title | datapage_url: '.' }}">{{member.title}}</a>
+* <a href="{{ member.number | datapage_url: '.' }}">{{member.title}}</a>
 {% endif %}
 {% endfor %}
 
@@ -56,6 +56,6 @@ permalink: /issues/
 
 {% for member in site.data.issuesjson %}
 {% if member.issue.labels contains "Raccolte Fondi" %}
-* <a href="{{ member.title | datapage_url: '.' }}">{{member.title}}</a>
+* <a href="{{ member.number | datapage_url: '.' }}">{{member.title}}</a>
 {% endif %}
 {% endfor %}

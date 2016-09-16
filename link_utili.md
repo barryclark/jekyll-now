@@ -32,6 +32,6 @@ Di seguito alcuni link utili per ricevere informazioni sull'evento.
 
 {% for member in site.data.issuesjson %}
 {% if member.issue.labels contains "Contatti" %}
-* <a href="/issues/{{ member.title | datapage_url: '.' }}">{{member.title}}</a>
+* <a href="/issues/{{ member.number | datapage_url: '.' }}">{{member.title}}</a>
 {% endif %}
 {% endfor %}

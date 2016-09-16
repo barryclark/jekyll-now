@@ -200,7 +200,7 @@ page_gen-dirs: true # uncomment, if you prefer to generate named folders
 page_gen:
   - data: issuesjson
     template: issue
-    name: title
+    name: number
     dir: issues
 
 gems:

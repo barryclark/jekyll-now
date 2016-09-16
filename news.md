@@ -7,7 +7,7 @@ permalink: /news/
 
 {% for member in site.data.issuesjson %}
 {% if member.issue.labels contains "Notizie Utili" %}
-* <a href="/issues/{{ member.title | datapage_url: '.' }}">{{member.title}}</a>
+* <a href="/issues/{{ member.number | datapage_url: '.' }}">{{member.title}}</a>
 {% endif %}
 {% endfor %}
 
