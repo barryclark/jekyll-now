@@ -10,6 +10,17 @@ link: ''
 immagine: ''
 data: 16/09/2016
 </yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/489,177433223,2016-09-16 14:11:25,2016-09-16 14:01:52,Materiali,42.6292226468363,13.289036750793457,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""> Scai (Amatrice, 80 pp): reti e materassi; > Verrico (Montereale, 30 pp): reti e materassi; > frazioni di Montereale (in foto): acqua, perch\u00e9 l\u2019ordinanza del divieto dell\u2019utilizzo di acqua potabile \u00e8 ancora attiva; > Capricchia (Amatrice, 20 pp): legno per chiudere le strutture pre-esistenti della pro loco; > Pescara del Tronto (Arquata del Tronto, ca. 100 pp): ferri, lana, uncinetto, riviste; > Campo Scossa Solidale (SR577, Amatrice): pentolame misura grande, fornelli; > Campo tra Colle e Spelonga (Arquata del Tronto): televisione per anziani.\"""", ""data"": ""29/08/2016"", ""descrizione"": ""MATERIALE DA REPERIRE: Il punto di raccolta, esclusivamente per questo tipo di materiale,\u00e8 presso l\u2019Asilo Occupato in viale Duca degli Abruzzi, L\u2019Aquila"", ""email"": ""info.3e32@gmail.com"", ""immagine"": """", ""indirizzo"": ""Barbiere Giuseppe, Via Roma, Casale Zocchi, Amatrice, RI, Lazio, Italy"", ""lat"": ""42.6292226468363"", ""link"": ""http://www.3e32.org/?p=8993"", ""lon"": ""13.289036750793457"", ""tel"": """"}","<pre><yamldata>tel: ''
+email: info.3e32@gmail.com
+cosa: '> Scai (Amatrice, 80 pp): reti e materassi; > Verrico (Montereale, 30 pp): reti e materassi; > frazioni di Montereale (in foto): acqua, perché l’ordinanza del divieto dell’utilizzo di acqua potabile è ancora attiva; > Capricchia (Amatrice, 20 pp): legno per chiudere le strutture pre-esistenti della pro loco; > Pescara del Tronto (Arquata del Tronto, ca. 100 pp): ferri, lana, uncinetto, riviste; > Campo Scossa Solidale (SR577, Amatrice): pentolame misura grande, fornelli; > Campo tra Colle e Spelonga (Arquata del Tronto): televisione per anziani.""'
+descrizione: 'MATERIALE DA REPERIRE: Il punto di raccolta, esclusivamente per questo tipo di materiale,è presso l’Asilo Occupato in viale Duca degli Abruzzi, L’Aquila'
+indirizzo: 'Barbiere Giuseppe, Via Roma, Casale Zocchi, Amatrice, RI, Lazio, Italy'
+lat: '42.6292226468363'
+lon: '13.289036750793457'
+link: 'http://www.3e32.org/?p=8993'
+immagine: ''
+data: 29/08/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/488,177431768,2016-09-16 13:56:41,2016-09-16 13:55:56,"CONTAINER,ROULOTTE/CAMPER/MODULI ABITATIVI(anche in prestito), MANGIMI PER(mucche da latte,maiali,galline,conigli)",42.64280,13.31046,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""CONTAINER,ROULOTTE/CAMPER/MODULI ABITATIVI(anche in prestito), MANGIMI PER(mucche da latte,maiali,galline,conigli)"", ""data"": ""16/09/2016"", ""descrizione"": ""Fra non molto a Sommati sar\u00e0 difficilissimo vivere in tenda a causa del freddo/acqua/vento e neve;altrettanto impossibile \u00e8 accettare la proposta avanzata di dover andare in albergo lasciando il bestiame e le propriet\u00e0 abbandonate;"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": ""42.64280"", ""link"": """", ""lon"": ""13.31046"", ""tel"": ""3489169956""}","<pre><yamldata>tel: '3489169956'
 email: ''
 cosa: 'CONTAINER,ROULOTTE/CAMPER/MODULI ABITATIVI(anche in prestito), MANGIMI PER(mucche da latte,maiali,galline,conigli)'
@@ -241,11 +252,6 @@ data: 15/09/2016
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/454,177186753,2016-09-15 14:07:18,2016-09-15 14:06:37,Architetti per la Protezione Civile,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""Come contribuire alle fasi post-terremoto"", ""link"": ""http://www.professionearchitetto.it/news/notizie/22900/Architetti-per-la-Protezione-civile-come-contribuire-alle-fasi-post-terremoto"", ""titolo"": ""Architetti per la Protezione Civile""}","<pre><yamldata>titolo: 'Architetti per la Protezione Civile'
 descrizione: 'Come contribuire alle fasi post-terremoto'
 link: 'http://www.professionearchitetto.it/news/notizie/22900/Architetti-per-la-Protezione-civile-come-contribuire-alle-fasi-post-terremoto'
-data: 15/09/2016
-</yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/453,177185936,2016-09-15 14:05:53,2016-09-15 14:03:26,Mappa campi e tende,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""Fabio Refrigeri ha reso disponibile una mappa aggiornata a 2 settembre dei campi e delle tende"", ""link"": ""https://www.google.com/maps/d/viewer?mid=1-wdTR-Z51PvWTFMYVL7kHSbL9Wk"", ""titolo"": ""Mappa campi e tende""}","<pre><yamldata>titolo: 'Mappa campi e tende'
-descrizione: 'Fabio Refrigeri ha reso disponibile una mappa aggiornata a 2 settembre dei campi e delle tende'
-link: 'https://www.google.com/maps/d/viewer?mid=1-wdTR-Z51PvWTFMYVL7kHSbL9Wk'
 data: 15/09/2016
 </yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/453,177185936,2016-09-15 14:05:53,2016-09-15 14:03:26,Mappa campi e tende,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""Fabio Refrigeri ha reso disponibile una mappa aggiornata a 2 settembre dei campi e delle tende"", ""link"": ""https://www.google.com/maps/d/viewer?mid=1-wdTR-Z51PvWTFMYVL7kHSbL9Wk"", ""titolo"": ""Mappa campi e tende""}","<pre><yamldata>titolo: 'Mappa campi e tende'
