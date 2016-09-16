@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/499,177438223,2016-09-16 14:23:38,2016-09-16 14:23:17,A Sommati a causa della diminuzione delle temperature si cerca vestiario invernale,,,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""A Sommati a causa della diminuzione delle temperature si cerca vestiario invernale"", ""data"": ""16/09/2016"", ""descrizione"": ""SCARPONI 3 paia nr.35 3 paia nr.38 3 paia nr.40 3 paia nr.41 3 paia nr.42 6 paia nr.43 3 paia nr.44 4 paia nr.45 CALOSCE 2 paia nr.35 2 paia nr.38 4 paia nr.43 2 paia nr.44 3 paia nr.45 VESTITI Calzettoni pesanti (senza limite) Maglioni in pile (senza limite) Cappelli di lana Guanti di lana Il resto \u00e8 tutto gradito ( camicia in lana, lupetti, giacconi etc)"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1765547770379473/"", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
+email: ''
+cosa: 'A Sommati a causa della diminuzione delle temperature si cerca vestiario invernale'
+descrizione: 'SCARPONI 3 paia nr.35 3 paia nr.38 3 paia nr.40 3 paia nr.41 3 paia nr.42 6 paia nr.43 3 paia nr.44 4 paia nr.45 CALOSCE 2 paia nr.35 2 paia nr.38 4 paia nr.43 2 paia nr.44 3 paia nr.45 VESTITI Calzettoni pesanti (senza limite) Maglioni in pile (senza limite) Cappelli di lana Guanti di lana Il resto è tutto gradito ( camicia in lana, lupetti, giacconi etc)'
+indirizzo: ''
+lat: ''
+lon: ''
+link: 'https://www.facebook.com/groups/1758670357733881/permalink/1765547770379473/'
+immagine: ''
+data: 16/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/497,177437479,2016-09-16 14:20:43,2016-09-16 14:20:08,Laboratorio per zafferano,,,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Laboratorio per zafferano"", ""data"": ""16/09/2016"", ""descrizione"": ""Azienda agricola Bosco Torto San pellegrino (Val nerina) sta cercando un laboratorio agibile dove estrarre i pistilli di zafferano dai fiori"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1765674217033495/"", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 cosa: 'Laboratorio per zafferano'
@@ -659,16 +670,6 @@ postale: ''
 causale: 'Emergenza terremoto'
 link: 'http://www.bancaetica.it/git/lazio-sud/articolo/adottiamo-lo-spaccio-di-elvis'
 email: ''
-data: 15/09/2016
-</yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/390,177148234,2016-09-15 11:05:52,2016-09-15 11:05:30,Aiutiamo Amatrice,,,"[""Accettato"", ""Contatti"", ""Form""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""Pagina Facebook per segnalare tutti i centri di raccolta di prima necessit\u00e0 esistenti nella propria citt\u00e0in tutta Italia"", ""email"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.facebook.com/Aiutiamo-Amatrice-1574932246143457"", ""lon"": """", ""nome"": ""Aiutiamo Amatrice"", ""tel"": """"}","<pre><yamldata>nome: 'Aiutiamo Amatrice'
-tel: ''
-email: ''
-descrizione: 'Pagina Facebook per segnalare tutti i centri di raccolta di prima necessità esistenti nella propria cittàin tutta Italia'
-indirizzo: ''
-lat: ''
-lon: ''
-link: 'https://www.facebook.com/Aiutiamo-Amatrice-1574932246143457'
 data: 15/09/2016
 </yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/390,177148234,2016-09-15 11:05:52,2016-09-15 11:05:30,Aiutiamo Amatrice,,,"[""Accettato"", ""Contatti"", ""Form""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""Pagina Facebook per segnalare tutti i centri di raccolta di prima necessit\u00e0 esistenti nella propria citt\u00e0in tutta Italia"", ""email"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.facebook.com/Aiutiamo-Amatrice-1574932246143457"", ""lon"": """", ""nome"": ""Aiutiamo Amatrice"", ""tel"": """"}","<pre><yamldata>nome: 'Aiutiamo Amatrice'
