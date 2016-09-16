@@ -1,15 +1,4 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/499,177438223,2016-09-16 14:23:57,2016-09-16 14:23:17,A Sommati a causa della diminuzione delle temperature si cerca vestiario invernale,42.64280,13.31046,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""A Sommati a causa della diminuzione delle temperature si cerca vestiario invernale"", ""data"": ""16/09/2016"", ""descrizione"": ""SCARPONI 3 paia nr.35 3 paia nr.38 3 paia nr.40 3 paia nr.41 3 paia nr.42 6 paia nr.43 3 paia nr.44 4 paia nr.45 CALOSCE 2 paia nr.35 2 paia nr.38 4 paia nr.43 2 paia nr.44 3 paia nr.45 VESTITI Calzettoni pesanti (senza limite) Maglioni in pile (senza limite) Cappelli di lana Guanti di lana Il resto \u00e8 tutto gradito ( camicia in lana, lupetti, giacconi etc)"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": ""42.64280"", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1765547770379473/"", ""lon"": ""13.31046"", ""tel"": """"}","<pre><yamldata>tel: ''
-email: ''
-cosa: 'A Sommati a causa della diminuzione delle temperature si cerca vestiario invernale'
-descrizione: 'SCARPONI 3 paia nr.35 3 paia nr.38 3 paia nr.40 3 paia nr.41 3 paia nr.42 6 paia nr.43 3 paia nr.44 4 paia nr.45 CALOSCE 2 paia nr.35 2 paia nr.38 4 paia nr.43 2 paia nr.44 3 paia nr.45 VESTITI Calzettoni pesanti (senza limite) Maglioni in pile (senza limite) Cappelli di lana Guanti di lana Il resto è tutto gradito ( camicia in lana, lupetti, giacconi etc)'
-indirizzo: ''
-lat: '42.64280'
-lon: '13.31046'
-link: 'https://www.facebook.com/groups/1758670357733881/permalink/1765547770379473/'
-immagine: ''
-data: 16/09/2016
-</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/498,177437994,2016-09-16 14:24:02,2016-09-16 14:22:26,"CAMPING VILLAGE ""FONTANA MARIN",42.562265,12.644217,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""CAMPING VILLAGE \""FONTANA MARINA\"" di TERNI (dal 3 settembre offre alloggi)"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": ""42.562265"", ""link"": """", ""lon"": ""12.644217"", ""tel"": ""URP Comune di Terni: 0744 432201""}","<pre><yamldata>tel: 'URP Comune di Terni: 0744 432201'
 email: ''
 descrizione: 'CAMPING VILLAGE ""FONTANA MARINA"" di TERNI (dal 3 settembre offre alloggi)'
