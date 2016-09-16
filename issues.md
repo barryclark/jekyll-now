@@ -70,6 +70,15 @@ permalink: /issues/
 {% endif %}
 {% endfor %}
 
+---
+
+# Bollettino
+
+{% for member in site.data.issuesjson %}
+{% if member.issue.labels contains "Bollettino" %}
+* <a href="{{ member.number }}">{{member.title}}</a>
+{% endif %}
+{% endfor %}
 
 <script>
 var markerList=[];

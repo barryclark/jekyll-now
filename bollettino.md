@@ -4,58 +4,41 @@ title: Bollettino
 permalink: /bollettino/
 ---
 
-* [Aperte](#Aperte)
-* [Chiuse](#Chiuse)
-
-<h1 id="Aperte">Aperte</h1>
-
 <div class="panel-group">
-{% assign bollettinoG = (site.data.bollettino | group_by: "Chiuso") %}
-
-{% for member in bollettinoG[0].items reversed %}
-{% capture memberName %}{{member.Descrizione}}{% endcapture %}
-{% capture memberlnk %}{{member.Data}} {{member.Ora}} {{member.Descrizione}}{% endcapture %}
-{% assign memberId = memberlnk|slugify|truncate:20,"" %}
-{% capture memberUrl %}{{site.url}}{{page.url}}#{{memberId}}{% endcapture %}
+{% for member in site.data.issuesjson %}
+{% if member.issue.labels contains "Bollettino" %}
+{% capture memberName %}{{member.issue.data.descrizione}}{% endcapture %}
+{% assign memberId = member.number %}
+{% capture memberUrl %}{{site.url}}/issues/{{member.number}}{% endcapture %}
 <div class="panel panel-info">
 <div class="panel-heading"><span class="anchor" id="{{memberId}}"></span>
-{{member.Descrizione}}
+{% if member.issue.data.cosa %}
+<a href="/issues/{{member.number}}">{{member.issue.data.cosa}}</a>
+{% else %}
+<a href="/issues/{{member.number}}">{{member.issue.data.descrizione|truncatewords: 10}}</a>
+{% endif %}
 </div>
 <div class="panel-body">
-{% if member.Comune %}
+{% if member.issue.data.descrizione %}
 <div class="row">
-<div style="margin-left: 15px"><b>Comune: </b>{{member.Comune}}</div>
+<div class="col-md-12">{{member.issue.data.descrizione}}</div>
 </div>
 {% endif %}
-{% if member.Indirizzo %}
+{% if member.issue.data.data %}
 <div class="row">
-<div style="margin-left: 15px"><b>Indirizzo: </b>{{member.Indirizzo}}</div>
+<div class="col-md-4"><b>Data: </b></div><div class="col-md-8">{{member.issue.data.data}}</div>
 </div>
 {% endif %}
-
-{% if member.Fonte %}
+{% if member.issue.data.indirizzo %}
 <div class="row">
-<div style="margin-left: 15px"><b>Fonte: </b>{{member.Fonte}}</div>
+<div class="col-md-4"><b>Indirizzo: </b></div><div class="col-md-8">{{member.issue.data.indirizzo}}</div>
 </div>
 {% endif %}
-
-{% if member.Link %}
+{% if member.issue.data.link %}
 <div class="row">
-<div style="margin-left: 15px"><b>Link: </b><a style="word-break: break-all" href="{{member.Link}}">{{member.Link}}</a></div>
+<div class="col-md-4"><b>Link: </b></div><div class="col-md-8"><a href="{{member.issue.data.link}}">{{member.issue.data.link}}</a></div>
 </div>
 {% endif %}
-{% if member.Data %}
-<div class="row">
-<div style="margin-left: 15px"><b>Data: </b>{{member.Data}} {{member.Ora}}</div>
-</div>
-{% endif %}
-{% if member.Note %}
-<div class="row">
-<div style="margin-left: 15px; word-break: break-all"><b>Note: </b>{{member.Note}}</div>
-</div>
-{% endif %}
-<div class="row">
-</div>
 </div>
 <div class="panel-footer">
 <ul class="share-buttons">
@@ -68,61 +51,10 @@ permalink: /bollettino/
 </ul>
 </div>
 </div>
+{% endif %}
 {% endfor %}
 </div>
 
-<h1 id="Chiuse">Chiuse</h1>
-
-<div class="panel-group">
-{% for member in bollettinoG[1].items reversed %}
-<div class="panel panel-info">
-<div class="panel-heading"><span class="anchor" id="{{memberId}}"></span>
-<strike>{{member.Descrizione}}</strike>
-</div>
-<div class="panel-body">
-{% if member.Comune %}
-<div class="row">
-<div class="col-md-2"><b>Comune:</b></div><div class="col-md-10">{{member.Comune}}</div>
-</div>
-{% endif %}
-{% if member.Indirizzo %}
-<div class="row">
-<div class="col-md-2"><b>Indirizzo:</b></div><div class="col-md-10">{{member.Indirizzo}}</div>
-</div>
-{% endif %}
-
-{% if member.Fonte %}
-<div class="row">
-<div class="col-md-2"><b>Fonte:</b></div><div class="col-md-10">{{member.Fonte}}</div>
-</div>
-{% endif %}
-
-{% if member.Link %}
-<div class="row">
-<div class="col-md-2"><b>Link:</b></div><div class="col-md-10"><a href="{{member.Link}}">{{member.Link}}</a></div>
-</div>
-{% endif %}
-{% if member.Data %}
-<div class="row">
-<div class="col-md-2"><b>Data:</b></div><div class="col-md-10">{{member.Data}} {{member.Ora}}</div>
-</div>
-{% endif %}
-{% if member.Note %}
-<div class="row">
-<div class="col-md-2"><b>Note:</b></div><div class="col-md-10">{{member.Note}}</div>
-</div>
-{% endif %}
-{% if member.Chiuso %}
-<div class="row">
-<div class="col-md-2"><b>Chiuso:</b></div><div class="col-md-10">{{member.Chiuso}}</div>
-</div>
-{% endif %}
-<div class="row">
-</div>
-</div>
-</div>
-{% endfor %}
-</div>
 
 <div class="posts">
   {% for post in site.posts %}
