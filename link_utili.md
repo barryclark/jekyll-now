@@ -30,23 +30,8 @@ Di seguito alcuni link utili per ricevere informazioni sull'evento.
 
 # Contatti
 
-{% for member in site.data.contatti %}
-  <div class="panel panel-info">
-  <div class="panel-heading">
-  {{member.Nome}}
-  </div>
-  <div class="panel-body">
-  {% if member.Numero %}
-  <div class="row">
-  <div class="col-md-2"><b>Contatti:</b></div><div class="col-md-10">{{member.Numero}}</div>
-  </div>
-  {% endif %}
-  {% if member.Note %}
-  <div class="row">
-  <div class="col-md-12">{{member.Note}}</div>
-  </div>
-  {% endif %}
-  </div>
-  </div>
+{% for member in site.data.issuesjson %}
+{% if member.issue.labels contains "Contatti" %}
+* <a href="/issues/{{ member.number | datapage_url: '.' }}">{{member.title}}</a>
+{% endif %}
 {% endfor %}
-

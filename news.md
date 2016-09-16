@@ -4,6 +4,13 @@ title: News
 permalink: /news/
 ---
 
+
+{% for member in site.data.issuesjson %}
+{% if member.issue.labels contains "Notizie Utili" %}
+* <a href="/issues/{{ member.number | datapage_url: '.' }}">{{member.title}}</a>
+{% endif %}
+{% endfor %}
+
 <section class="sieve">
         <div class="panel-group" id="feed_display"></div>
           <div style="clear:both;"></div>
