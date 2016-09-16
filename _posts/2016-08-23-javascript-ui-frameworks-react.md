@@ -1,4 +1,7 @@
-# Javascript UI Frameworks - React
+---
+layout: post
+title: Javascript UI Frameworks - React
+---
 
 ## Overview
 Javascript UI frameworks like React and Angular have changed the way that development teams approach Web application development.
