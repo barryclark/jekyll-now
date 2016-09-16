@@ -20,7 +20,7 @@ permalink: /bollettino/
 {% capture memberUrl %}{{site.url}}/issues/{{member.number}}{% endcapture %}
 <div class="panel panel-info">
 <div class="panel-heading"><span class="anchor" id="{{memberId}}"></span>
-{{member.title}}
+<a href="{{memberUrl}}">{{member.title}}</a>
 </div>
 <div class="panel-body">
 {% if member.issue.data.descrizione %}
