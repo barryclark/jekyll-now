@@ -2463,6 +2463,17 @@ link: ''
 email: ''
 data: 13/09/2016
 </yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/164,176720862,2016-09-13 18:54:16,2016-09-13 18:53:48,Provincia di Modena,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Azioni di solidariet\u00e0 terremoto centro Italia del 24 agosto"", ""chi"": ""Provincia di Modena"", ""data"": ""13/09/2016"", ""descrizione"": ""Le somme verranno destinate a progetti di assistenza"", ""email"": """", ""iban"": ""IT 52 M 02008 12930 000003398693"", ""intestazione"": """", ""link"": """", ""postale"": """"}","<pre><yamldata>chi: 'Provincia di Modena'
+descrizione: 'Le somme verranno destinate a progetti di assistenza'
+intestazione: ''
+iban: 'IT 52 M 02008 12930 000003398693'
+bic: ''
+postale: ''
+causale: 'Azioni di solidarietà terremoto centro Italia del 24 agosto'
+link: ''
+email: ''
+data: 13/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/163,176720596,2016-09-13 18:53:09,2016-09-13 18:52:38,Croce Rossa Italiana,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": ""CRPPIT2P086"", ""causale"": ""Sisma Centro Italia"", ""chi"": ""Croce Rossa Italiana"", ""data"": ""13/09/2016"", ""descrizione"": ""Tel: 06 5510"", ""email"": ""aiuti@cri.it"", ""iban"": ""IT40F 06230 03204 000030631681"", ""intestazione"": """", ""link"": ""http://www.cri.it/terremoto-centro-italia"", ""postale"": """"}","<pre><yamldata>chi: 'Croce Rossa Italiana'
 descrizione: 'Tel: 06 5510'
 intestazione: ''
