@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/497,177437479,2016-09-16 14:20:43,2016-09-16 14:20:08,Laboratorio per zafferano,,,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Laboratorio per zafferano"", ""data"": ""16/09/2016"", ""descrizione"": ""Azienda agricola Bosco Torto San pellegrino (Val nerina) sta cercando un laboratorio agibile dove estrarre i pistilli di zafferano dai fiori"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1765674217033495/"", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
+email: ''
+cosa: 'Laboratorio per zafferano'
+descrizione: 'Azienda agricola Bosco Torto San pellegrino (Val nerina) sta cercando un laboratorio agibile dove estrarre i pistilli di zafferano dai fiori'
+indirizzo: ''
+lat: ''
+lon: ''
+link: 'https://www.facebook.com/groups/1758670357733881/permalink/1765674217033495/'
+immagine: ''
+data: 16/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/496,177436758,2016-09-16 14:17:24,2016-09-16 14:17:01,Si ricerca stufa a pellet da inserire nella nuova struttura in legno per affrontare il freddo,42.62225,13.33966,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Si ricerca stufa a pellet da inserire nella nuova struttura in legno per affrontare il freddo"", ""data"": ""16/09/2016"", ""descrizione"": """", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": ""42.62225"", ""link"": """", ""lon"": ""13.33966"", ""tel"": ""3661990081""}","<pre><yamldata>tel: '3661990081'
 email: ''
 cosa: 'Si ricerca stufa a pellet da inserire nella nuova struttura in legno per affrontare il freddo'
