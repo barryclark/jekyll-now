@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/486,177430253,2016-09-16 13:50:19,2016-09-16 13:49:07,Cercasi Roulotte,42.55002,13.36260,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Cercasi Roulotte"", ""data"": ""16/09/2016"", ""descrizione"": ""Si cerca urgentemente 1 roulotte con due posti per portare avanti l'attivit\u00e0 locanda che in questi giorni \u00e8 frenetica."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": ""42.55002"", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1760699620864288/"", ""lon"": ""13.36260"", ""tel"": ""3451629957""}","<pre><yamldata>tel: '3451629957'
+email: ''
+cosa: 'Cercasi Roulotte'
+descrizione: 'Si cerca urgentemente 1 roulotte con due posti per portare avanti l''attività locanda che in questi giorni è frenetica.'
+indirizzo: ''
+lat: '42.55002'
+lon: '13.36260'
+link: 'https://www.facebook.com/groups/1758670357733881/permalink/1760699620864288/'
+immagine: ''
+data: 16/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/485,177429432,2016-09-16 13:46:17,2016-09-16 13:45:36,SERVONO: INGEGNERI ELETTRICISTI IDRAULICI FABBRI TECNICI E ARTIGIANI,,,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""SERVONO: INGEGNERI ELETTRICISTI IDRAULICI FABBRI TECNICI E ARTIGIANI"", ""data"": ""16/09/2016"", ""descrizione"": ""LA REGIONE LAZIO per l'emergenza Sisma, raccoglie disponibilit\u00e0 di collaborazione volontaria di persone specializzate che siano disponibili ad andare sui luoghi del disastro per dare una mano nel ristabilire il prima possibile la vita in quei paesi. Non c'\u00e8 stato un appello preciso ma le candidature via email possono essere comunque inviate."", ""email"": ""sismarieti@regione.lazio.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1760475310886719/"", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
 email: sismarieti@regione.lazio.it
 cosa: 'SERVONO: INGEGNERI ELETTRICISTI IDRAULICI FABBRI TECNICI E ARTIGIANI'
