@@ -169,6 +169,16 @@ link: ''
 immagine: ''
 data: 16/09/2016
 </yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/539,177477511,2016-09-16 19:47:11,2016-09-16 17:22:43,Elena Bianchi AQ,42.3488992,13.3981375,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""Elena Bianchi, mette a disposizione una camera con letto matrimoniale per parenti di persone ricoverate all'ospedale dell'Aquila."", ""email"": ""sguardoltre@yahoo.it"", ""immagine"": """", ""indirizzo"": ""Piazza Duomo, L'Aquila, AQ, Abruzzo, 67100, Italia"", ""lat"": ""42.3488992"", ""link"": """", ""lon"": ""13.3981375"", ""tel"": """"}","<pre><yamldata>tel: ''
+email: sguardoltre@yahoo.it
+descrizione: 'Elena Bianchi, mette a disposizione una camera con letto matrimoniale per parenti di persone ricoverate all''ospedale dell''Aquila.'
+indirizzo: 'Piazza Duomo, L''Aquila, AQ, Abruzzo, 67100, Italia'
+lat: '42.3488992'
+lon: '13.3981375'
+link: ''
+immagine: ''
+data: 16/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/536,177475028,2016-09-16 17:26:06,2016-09-16 17:09:24,"AGRITURISMO ""CASA DEIMAR"" 2 ca",43.0711952,12.6146669,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""AGRITURISMO \""CASA DEIMAR\"" 2 camere (tra Assisi e Loreto)"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Piazza del Comune, San Damiano, Assisi, PG, UMB, 06081, Italia"", ""lat"": ""43.0711952"", ""link"": """", ""lon"": ""12.6146669"", ""tel"": ""3357265070""}","<pre><yamldata>tel: '3357265070'
 email: ''
 descrizione: 'AGRITURISMO ""CASA DEIMAR"" 2 camere (tra Assisi e Loreto)'
@@ -590,11 +600,6 @@ lat: ''
 lon: ''
 link: ''
 immagine: ''
-data: 15/09/2016
-</yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/467,177216173,2016-09-16 06:49:04,2016-09-15 15:55:11,"Amatrice e Accumoli, nascono due comitati di cittadini",,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""Si chiamer\u00e0 \u201cComitato civico 3.36\u201d e secondo i suoi promotori dovr\u00e0 contribuire a dare voce alle popolazioni di Amatrice e Accumoli colpite dal sisma del 24 agosto scorso. Il comitato, che informalmente si \u00e8 gi\u00e0 riunito diverse volte, sar\u00e0 costituito sabato, durante un incontro che si terr\u00e0 alle 16 presso la tenda-chiesa allestita all\u2019esterno dell\u2019istituto Don Minozzi di Amatrice. Nel corso della prima riunione sar\u00e0 approvato lo statuto, il regolamento interno e saranno individuate le figure che dovranno coordinare le attivit\u00e0 del comitato. [continua nel link]"", ""link"": ""http://www.rietilife.com/2016/09/15/amatrice-accumoli-nascono-due-comitati-cittadini/"", ""titolo"": ""Amatrice e Accumoli, nascono due comitati di cittadini""}","<pre><yamldata>titolo: 'Amatrice e Accumoli, nascono due comitati di cittadini'
-descrizione: 'Si chiamerà “Comitato civico 3.36” e secondo i suoi promotori dovrà contribuire a dare voce alle popolazioni di Amatrice e Accumoli colpite dal sisma del 24 agosto scorso. Il comitato, che informalmente si è già riunito diverse volte, sarà costituito sabato, durante un incontro che si terrà alle 16 presso la tenda-chiesa allestita all’esterno dell’istituto Don Minozzi di Amatrice. Nel corso della prima riunione sarà approvato lo statuto, il regolamento interno e saranno individuate le figure che dovranno coordinare le attività del comitato. [continua nel link]'
-link: 'http://www.rietilife.com/2016/09/15/amatrice-accumoli-nascono-due-comitati-cittadini/'
 data: 15/09/2016
 </yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/467,177216173,2016-09-16 06:49:04,2016-09-15 15:55:11,"Amatrice e Accumoli, nascono due comitati di cittadini",,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""Si chiamer\u00e0 \u201cComitato civico 3.36\u201d e secondo i suoi promotori dovr\u00e0 contribuire a dare voce alle popolazioni di Amatrice e Accumoli colpite dal sisma del 24 agosto scorso. Il comitato, che informalmente si \u00e8 gi\u00e0 riunito diverse volte, sar\u00e0 costituito sabato, durante un incontro che si terr\u00e0 alle 16 presso la tenda-chiesa allestita all\u2019esterno dell\u2019istituto Don Minozzi di Amatrice. Nel corso della prima riunione sar\u00e0 approvato lo statuto, il regolamento interno e saranno individuate le figure che dovranno coordinare le attivit\u00e0 del comitato. [continua nel link]"", ""link"": ""http://www.rietilife.com/2016/09/15/amatrice-accumoli-nascono-due-comitati-cittadini/"", ""titolo"": ""Amatrice e Accumoli, nascono due comitati di cittadini""}","<pre><yamldata>titolo: 'Amatrice e Accumoli, nascono due comitati di cittadini'
@@ -2072,6 +2077,17 @@ bic: ''
 postale: ''
 causale: ''
 link: 'https://www.gofundme.com/internet4amatrice'
+email: ''
+data: 14/09/2016
+</yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/256,176853603,2016-09-14 09:16:16,2016-09-14 09:05:47,Consorzio Parmigiano Reggiano,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Consorzio Parmigiano Reggiano"", ""data"": ""14/09/2016"", ""descrizione"": ""1\u20ac PER RINASCERE: SOLIDARIET\u00c0 PER LE POPOLAZIONI COLPITE DEL CENTRO ITALIA COLPITE DAL SISMA Per ogni kg venduto i caseifici aderenti verseranno 1\u20ac ad un fondo destinato ad aiutare le popolazioni colpite. sul sito del consorzio l'elenco dei caseifici aderenti."", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""http://www.parmigianoreggiano.it/comunicazione/rinascere_solidarieta_popolazioni_colpite_centro_italia.aspx"", ""postale"": """"}","<pre><yamldata>chi: 'Consorzio Parmigiano Reggiano'
+descrizione: '1€ PER RINASCERE: SOLIDARIETÀ PER LE POPOLAZIONI COLPITE DEL CENTRO ITALIA COLPITE DAL SISMA Per ogni kg venduto i caseifici aderenti verseranno 1€ ad un fondo destinato ad aiutare le popolazioni colpite. sul sito del consorzio l''elenco dei caseifici aderenti.'
+intestazione: ''
+iban: ''
+bic: ''
+postale: ''
+causale: ''
+link: 'http://www.parmigianoreggiano.it/comunicazione/rinascere_solidarieta_popolazioni_colpite_centro_italia.aspx'
 email: ''
 data: 14/09/2016
 </yamldata></pre>"
