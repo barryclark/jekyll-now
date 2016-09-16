@@ -4,11 +4,13 @@ title: Issues
 permalink: /issues/
 ---
 
-* [Notizie Utili](#notizie-utili)
-* [Alloggi](#alloggi)
-* [Donazioni](#donazioni)
-* [Fabbisogni](#fabbisogni)
-* [Raccolte Fondi](#raccolte-fondi)
+<div class="text-center">
+	<a href="#notizie-utili" class="btn btn-primary btn-lg" role="button">Notizie Utili</a>
+	<a href="#alloggi" class="btn btn-primary btn-lg" role="button">Alloggi</a>
+	<a href="#donazioni" class="btn btn-primary btn-lg" role="button">Donazioni</a>
+	<a href="#fabbisogni" class="btn btn-primary btn-lg" role="button">Fabbisogni</a>
+	<a href="#raccolte-fondi" class="btn btn-primary btn-lg" role="button">Raccolte Fondi</a>
+</div>
 
 ---
 
@@ -23,62 +25,87 @@ permalink: /issues/
 ---
 
 # Notizie Utili
-
+<div class="list-group">
 {% for member in site.data.issuesjson %}
 {% if member.issue.labels contains "Notizie Utili" %}
-* <a href="{{ member.number  }}">{{member.title}}</a>
+<a href="{{ member.title | datapage_url: '.' }}" class="list-group-item">
+	<h4 class="list-group-item-heading">{{member.title}}</h4>
+	<p class="list-group-item-text">{{member.issue.data.descrizione}}</p>
+</a>
 {% endif %}
 {% endfor %}
+
+</div>
 
 ---
 
 # Alloggi
-
+<div class="list-group">
 {% for member in site.data.issuesjson %}
 {% if member.issue.labels contains "Alloggi" %}
-* <a href="{{ member.number }}">{{member.title}}</a>
+<a href="{{ member.title | datapage_url: '.' }}" class="list-group-item">
+	<h4 class="list-group-item-heading">{{member.title}}</h4>
+	<p class="list-group-item-text">{{member.issue.data.descrizione}}</p>
+</a>
 {% endif %}
 {% endfor %}
+</div>
 
 ---
 
 # Donazioni
-
+<div class="list-group">
 {% for member in site.data.issuesjson %}
 {% if member.issue.labels contains "Donazioni" %}
-* <a href="{{ member.number }}">{{member.title}}</a>
+<a href="{{ member.title | datapage_url: '.' }}" class="list-group-item">
+	<h4 class="list-group-item-heading">{{member.title}}</h4>
+	<p class="list-group-item-text">{{member.issue.data.descrizione}}</p>
+</a>
 {% endif %}
 {% endfor %}
+</div>
 
 ---
 
 # Fabbisogni
-
+<div class="list-group">
 {% for member in site.data.issuesjson %}
 {% if member.issue.labels contains "Fabbisogni" %}
-* <a href="{{ member.number }}">{{member.title}}</a>
+<a href="{{ member.title | datapage_url: '.' }}" class="list-group-item">
+	<h4 class="list-group-item-heading">{{member.title}}</h4>
+	<p class="list-group-item-text">{{member.issue.data.descrizione}}</p>
+</a>
 {% endif %}
 {% endfor %}
+</div>
 
 ---
 
 # Raccolte Fondi
-
+<div class="list-group">
 {% for member in site.data.issuesjson %}
 {% if member.issue.labels contains "Raccolte Fondi" %}
-* <a href="{{ member.number }}">{{member.title}}</a>
+<a href="{{ member.title | datapage_url: '.' }}" class="list-group-item">
+	<h4 class="list-group-item-heading">{{member.title}}</h4>
+	<p class="list-group-item-text">{{member.issue.data.descrizione}}</p>
+</a>
 {% endif %}
 {% endfor %}
+</div>
 
 ---
 
 # Bollettino
-
+<div class="list-group">
 {% for member in site.data.issuesjson %}
 {% if member.issue.labels contains "Bollettino" %}
-* <a href="{{ member.number }}">{{member.title}}</a>
+<a href="{{ member.title | datapage_url: '.' }}" class="list-group-item">
+	<h4 class="list-group-item-heading">{{member.title}}</h4>
+	<p class="list-group-item-text">{{member.issue.data.descrizione}}</p>
+</a>
 {% endif %}
 {% endfor %}
+</div>
 
 <script>
 var markerList=[];
