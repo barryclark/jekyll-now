@@ -5,7 +5,7 @@ author: kaminalu
 published: true
 ---
 
-Linguistics has always been a fascinating subject to me. From the sounds of old words to the formation of new words, the English language in particular and Latin languages in general are both challenging and interesting. One of our readings this week, [A Linguist Explains the Grammar of Shipping](http://the-toast.net/2015/09/30/a-linguist-explains-the-grammar-of-shipping/) discusses a published paper by Cara DiGirolamo that explains her research on what it means when we “ship” names, and what it tells us about grammar and linguistics.
+Linguistics has always been a fascinating subject to me. From the sounds of old words to the formation of new words, the English language in particular and Germanic and Latin languages in general are both challenging and interesting. One of our readings this week, [A Linguist Explains the Grammar of Shipping](http://the-toast.net/2015/09/30/a-linguist-explains-the-grammar-of-shipping/) discusses a published paper by Cara DiGirolamo that explains her research on what it means when we “ship” names, and what it tells us about grammar and linguistics.
 
 The author of the article, Gretchen McCulloch, uses a number of examples of two or more persons, real and fictional, who have successfully shipped names. Shipping means to combine two or more names into one using a number of grammar rules that have been established over time. The grammar rules and some examples of shipped names include: 
 
