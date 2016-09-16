@@ -69,6 +69,16 @@ link: ''
 immagine: ''
 data: 16/09/2016
 </yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/526,177471111,2016-09-16 17:02:10,2016-09-16 16:48:39,casa di proprietà 10 posti,43.0188204,13.49572,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""casa di propriet\u00e0 con 10 posti letto."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": ""43.0188204"", ""link"": """", ""lon"": ""13.49572"", ""tel"": ""3929987433""}","<pre><yamldata>tel: '3929987433'
+email: ''
+descrizione: 'casa di proprietà con 10 posti letto.'
+indirizzo: ''
+lat: '43.0188204'
+lon: '13.49572'
+link: ''
+immagine: ''
+data: 16/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/524,177470708,2016-09-16 16:47:01,2016-09-16 16:46:29,EX CONVENTO DELLE CLARISSE a C,42.1573944,14.0026376,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""EX CONVENTO DELLE CLARISSE a CARAMANICO TERME (PESCARA) offre alloggio per almeno 20/30 persone, animali ammessi (\u00e8 composto da almeno 6 stanze con circa 20/30 posti letto, comodi bagni con doccia, una grande cucina e stanza refettorio per almeno 30/40 persone)."", ""email"": ""enzodimichele@gmail.com"", ""immagine"": """", ""indirizzo"": ""Galleria Caramanico, Caramanico Terme, PE, ABR, Italia"", ""lat"": ""42.1573944"", ""link"": """", ""lon"": ""14.0026376"", ""tel"": ""3495219369""}","<pre><yamldata>tel: '3495219369'
 email: enzodimichele@gmail.com
 descrizione: 'EX CONVENTO DELLE CLARISSE a CARAMANICO TERME (PESCARA) offre alloggio per almeno 20/30 persone, animali ammessi (è composto da almeno 6 stanze con circa 20/30 posti letto, comodi bagni con doccia, una grande cucina e stanza refettorio per almeno 30/40 persone).'
@@ -2095,17 +2105,6 @@ postale: ''
 causale: ''
 link: 'http://www.slowfood.it/un-futuro-amatrice-locali-aderenti/'
 email: unfuturoperamatrice@slowfood.it
-data: 13/09/2016
-</yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/221,176775392,2016-09-13 23:24:53,2016-09-13 23:19:44,Comune di Accumoli,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Contributo sisma agosto 2016"", ""chi"": ""Comune di Accumoli"", ""data"": ""13/09/2016"", ""descrizione"": """", ""email"": """", ""iban"": ""IT83 E030 6914 6011 0000 0046 108"", ""intestazione"": """", ""link"": ""http://www.comune.accumoli.ri.it/sisma-centro-italia-2016/"", ""postale"": """"}","<pre><yamldata>chi: 'Comune di Accumoli'
-descrizione: ''
-intestazione: ''
-iban: 'IT83 E030 6914 6011 0000 0046 108'
-bic: ''
-postale: ''
-causale: 'Contributo sisma agosto 2016'
-link: 'http://www.comune.accumoli.ri.it/sisma-centro-italia-2016/'
-email: ''
 data: 13/09/2016
 </yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/221,176775392,2016-09-13 23:24:53,2016-09-13 23:19:44,Comune di Accumoli,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Contributo sisma agosto 2016"", ""chi"": ""Comune di Accumoli"", ""data"": ""13/09/2016"", ""descrizione"": """", ""email"": """", ""iban"": ""IT83 E030 6914 6011 0000 0046 108"", ""intestazione"": """", ""link"": ""http://www.comune.accumoli.ri.it/sisma-centro-italia-2016/"", ""postale"": """"}","<pre><yamldata>chi: 'Comune di Accumoli'
