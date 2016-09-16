@@ -659,6 +659,16 @@ lon: 13.28795
 link: ''
 data: 15/09/2016
 </yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/403,177153368,2016-09-15 11:36:01,2016-09-15 11:35:12,Comune di Amatrice - email a cui inviare segnalazioni su iniziative di solidarietà,42.6299,13.28795,"[""Accettato"", ""Contatti"", ""Form""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""Il Comune di Amatrice sul sito comunica che per le singole iniziative di solidariet\u00e0 \u00e8 possibile inviare una mail all\u2019indirizzo segreteria@comune.amatrice.rieti.it, specificando il tipo di iniziativa, il referente e il contatto a cui rivolgersi."", ""email"": ""segreteria@comune.amatrice.rieti.it"", ""indirizzo"": """", ""lat"": 42.6299, ""link"": """", ""lon"": 13.28795, ""nome"": ""Comune di Amatrice - email a cui inviare segnalazioni su iniziative di solidariet\u00e0"", ""tel"": """"}","<pre><yamldata>nome: 'Comune di Amatrice - email a cui inviare segnalazioni su iniziative di solidarietà'
+tel: ''
+email: segreteria@comune.amatrice.rieti.it
+descrizione: 'Il Comune di Amatrice sul sito comunica che per le singole iniziative di solidarietà è possibile inviare una mail all’indirizzo segreteria@comune.amatrice.rieti.it, specificando il tipo di iniziativa, il referente e il contatto a cui rivolgersi.'
+indirizzo: ''
+lat: 42.62990
+lon: 13.28795
+link: ''
+data: 15/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/402,177153138,2016-09-15 11:34:30,2016-09-15 11:34:00,Per segnalare disponibilità di mezzi e materiali - Regione Lazio,,,"[""Accettato"", ""Contatti"", ""Form""]",,,"{""data"": ""15/09/2016"", ""descrizione"": """", ""email"": ""sismarieti@regione.lazio.it"", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""nome"": ""Per segnalare disponibilit\u00e0 di mezzi e materiali - Regione Lazio"", ""tel"": """"}","<pre><yamldata>nome: 'Per segnalare disponibilità di mezzi e materiali - Regione Lazio'
 tel: ''
 email: sismarieti@regione.lazio.it
