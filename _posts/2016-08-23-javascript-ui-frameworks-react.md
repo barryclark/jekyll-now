@@ -230,6 +230,17 @@ DC: Using Webpack, you can split your javascript file out into separate chunks b
 
 CA: When teams are used to it, it's fast, but to start with you're going to be copying and pasting from StackOverflow a lot. [laughter]
 
+## People
+DC: Denis Craig
+CA: Craig Andrews
+AH: Adrian Hesketh
+ND: Neil Dunlop
+BB: Ben Brunton
+CA: Craig Andrews
+DR: Dan Rathbone
+BH: Ben Houghton
+TW: Tom Walton
+
 ## Summary
 
 Adopting React can provide many benefits, from reduced infrastructure costs for high scale deployments, perceptable improvements in user experience and a structured approach to UI construction, but comes to many at a retraining cost, and a cost of tooling complexity which can take the shine off the new technology.
