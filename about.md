@@ -4,10 +4,12 @@ title: About
 permalink: /about/
 ---
 
-* [Il Progetto](#il-progetto)
-* [Credits](#credits)
-* [Contatti](#contatti)
-* [Press](#press)
+<div class="text-center">
+	<a href="#il-progetto" class="btn btn-primary btn-lg" role="button">Il Progetto</a>
+	<a href="#credits" class="btn btn-primary btn-lg" role="button">Credits</a>
+	<a href="#contatti" class="btn btn-primary btn-lg" role="button">Contatti</a>
+	<a href="#press" class="btn btn-primary btn-lg" role="button">Press</a>
+</div>
 
 ### Il Progetto
 
