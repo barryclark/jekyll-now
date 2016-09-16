@@ -11,7 +11,7 @@ I should also quickly note before going further that I consider myself to be a p
 
 However, as I was reading this piece, I was frequently frustrated and defensive with the authors and their claims. I am not exactly even sure I can pinpoint 100% why. Despite their critique of a favorite literary work, it is unlikely a result of protective fandom as I am not as rabid a fan as some. In fact, I didn’t read the series until after all of the movies had been released to screen even though I lived during a time when my teenage friends would go to book release parties for Rowling’s latest installments.  
 
-Perhaps it is just my own idea of what it means to be critical of what amounts to a children’s book. Yes, it is frequently read and enjoyed by persons of all ages. However, it was originally written with the simple entertainment of young adults in mind, and thus should hardly be subject to an onslaught of ideological analysis afforded the likes of the intentional political allegory found in Animal Farm.  
+Perhaps it is just my own idea of what it means to be critical of what amounts to a children’s book. Yes, it is frequently read and enjoyed by persons of all ages. However, it was originally written with the simple entertainment of young adults in mind, and thus should hardly be subject to an onslaught of ideological analysis afforded the likes of the intentional political allegory found in <i>Animal Farm</i>.  
 
 And not just that, but I also felt irritated by the gratuitous attachment of meaning assigned to the sacrifices in character development and reliance on stereotype that a new author had to make in order to get her book published. In fact, J.K. Rowling is a female author that had to use a genderless pseudonym in order to be considered for publishing at all. To me, that inspires at least a token of sympathy (not to mention understanding when it comes to gender norms in her books).
 
@@ -22,7 +22,7 @@ Anyway, I took some notes as I was reading and instead of presenting them one-by
 NOTES ON: Representations of Gender in the Harry Potter Series by Heilman and Donaldson
 
 - Only talks about female actions... Doesn’t value Hermione’s “cleverness” or intelligence (later describes it as a purely feminine trait)
-- Speaks of the book as if these characters are real people, but analyses them in a way that implies they are not (real women are more action-oriented?? Maybe not.  These authors only think they should be.  Perhaps they are blaming the book on this fact)
+- Speaks of the book as if these characters are real people, but analyzes them in a way that implies they are not (real women are more action-oriented?? Maybe not.  These authors only think they should be.  Perhaps they are blaming the book on this fact)
 - p.147 mentions Hermione helping Harry through her knowledge but never participating in adventures of her own (NO DUH!  IT’S NOT CALLED HARRY POTTER AND HERMIONE GRANGER AND THE SOCERER’S STONE!)
 - The author JK Rowling is a person reflecting the values of the society she lives in.  It is not her responsibility to change those very real attributes in a fictional story merely to serve some kind of idealistic purpose.  The world of Harry Potter is not a utopia in many senses, including gender and stereotypes.
 - There is little way to know if these were conscious or unconscious decisions made by Rowling – her characters reflect society perhaps making them more relatable -> a quality that sells books to publishers (as does the pseudonym JK Rowling!)
