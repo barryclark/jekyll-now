@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/531,177472364,2016-09-16 16:59:19,2016-09-16 16:55:44,"GRICAMPEGGIO ""PUNTO VERDE"" di ",42.8509874,13.9215523,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""AGRICAMPEGGIO \""PUNTO VERDE\"" di MARTINSICURO (se avete una tenda, un camper o altro per campeggio)  Via F. de Pinedo 39, Villa Rosa di Martinsicuro (TE)"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Martinsicuro, TE, Abruzzo, 64014, Italia"", ""lat"": ""42.8509874"", ""link"": """", ""lon"": ""13.9215523"", ""tel"": """"}","<pre><yamldata>tel: ''
+email: ''
+descrizione: 'AGRICAMPEGGIO ""PUNTO VERDE"" di MARTINSICURO (se avete una tenda, un camper o altro per campeggio)  Via F. de Pinedo 39, Villa Rosa di Martinsicuro (TE)'
+indirizzo: 'Martinsicuro, TE, Abruzzo, 64014, Italia'
+lat: '42.8509874'
+lon: '13.9215523'
+link: ''
+immagine: ''
+data: 16/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/524,177470708,2016-09-16 16:47:01,2016-09-16 16:46:29,EX CONVENTO DELLE CLARISSE a C,42.1573944,14.0026376,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""EX CONVENTO DELLE CLARISSE a CARAMANICO TERME (PESCARA) offre alloggio per almeno 20/30 persone, animali ammessi (\u00e8 composto da almeno 6 stanze con circa 20/30 posti letto, comodi bagni con doccia, una grande cucina e stanza refettorio per almeno 30/40 persone)."", ""email"": ""enzodimichele@gmail.com"", ""immagine"": """", ""indirizzo"": ""Galleria Caramanico, Caramanico Terme, PE, ABR, Italia"", ""lat"": ""42.1573944"", ""link"": """", ""lon"": ""14.0026376"", ""tel"": ""3495219369""}","<pre><yamldata>tel: '3495219369'
 email: enzodimichele@gmail.com
 descrizione: 'EX CONVENTO DELLE CLARISSE a CARAMANICO TERME (PESCARA) offre alloggio per almeno 20/30 persone, animali ammessi (è composto da almeno 6 stanze con circa 20/30 posti letto, comodi bagni con doccia, una grande cucina e stanza refettorio per almeno 30/40 persone).'
@@ -2115,17 +2125,6 @@ link: 'http://www.presidente.regione.umbria.it/news/-/asset_publisher/epXtRtYVn9
 email: ''
 data: 13/09/2016
 </yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/214,176774502,2016-09-13 23:26:20,2016-09-13 23:14:17,Regione Umbria,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Regione Umbria"", ""data"": ""13/09/2016"", ""descrizione"": ""Donazioni anche online sul sito della Regione - https://pagoumbria.regione.umbria.it/pagoumbria/addon/bollettino_bianco/edit.jsf?cdTrbEnte=TERREMOTO2016&idEnte=33ED3E1B55346CBB0001"", ""email"": """", ""iban"": ""IT32R 02008 03033 000104429137"", ""intestazione"": ""Regione Umbria_Sisma agosto 2016"", ""link"": ""http://www.presidente.regione.umbria.it/news/-/asset_publisher/epXtRtYVn9JP/content/sisma-umbria-aperto-conto-corrente-bancario-per-raccolta-fondi"", ""postale"": """"}","<pre><yamldata>chi: 'Regione Umbria'
-descrizione: 'Donazioni anche online sul sito della Regione - https://pagoumbria.regione.umbria.it/pagoumbria/addon/bollettino_bianco/edit.jsf?cdTrbEnte=TERREMOTO2016&idEnte=33ED3E1B55346CBB0001'
-intestazione: 'Regione Umbria_Sisma agosto 2016'
-iban: 'IT32R 02008 03033 000104429137'
-bic: ''
-postale: ''
-causale: ''
-link: 'http://www.presidente.regione.umbria.it/news/-/asset_publisher/epXtRtYVn9JP/content/sisma-umbria-aperto-conto-corrente-bancario-per-raccolta-fondi'
-email: ''
-data: 13/09/2016
-</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/213,176774413,2016-09-13 23:26:27,2016-09-13 23:13:40,Regione Marche,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": ""BPPIITRRXXX"", ""causale"": """", ""chi"": ""Regione Marche"", ""data"": ""13/09/2016"", ""descrizione"": """", ""email"": """", ""iban"": ""IT17Y 07601 02600 001034116044"", ""intestazione"": ""Reg. Marche donaz. favore territori Marche colpiti sisma 24 agosto 2016"", ""link"": ""http://www.regione.marche.it/"", ""postale"": ""1034116044""}","<pre><yamldata>chi: 'Regione Marche'
 descrizione: ''
 intestazione: 'Reg. Marche donaz. favore territori Marche colpiti sisma 24 agosto 2016'
@@ -2431,6 +2430,17 @@ bic: PASCITMMGUB
 postale: ''
 causale: ''
 link: 'http://corrieredellumbria.corr.it/news/attualita/230889/solidarieta-ai-terremotati-la-raccolta-fondi-del-corriere.html'
+email: ''
+data: 13/09/2016
+</yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/179,176754539,2016-09-13 21:28:19,2016-09-13 21:27:24,Comune di Amatrice,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Comune di Amatrice"", ""data"": ""13/09/2016"", ""descrizione"": """", ""email"": """", ""iban"": ""IT13W 08327 73470 000000005050"", ""intestazione"": """", ""link"": ""http://www.comune.amatrice.rieti.it/codice-iban-del-comune-di-amatrice/"", ""postale"": """"}","<pre><yamldata>chi: 'Comune di Amatrice'
+descrizione: ''
+intestazione: ''
+iban: 'IT13W 08327 73470 000000005050'
+bic: ''
+postale: ''
+causale: ''
+link: 'http://www.comune.amatrice.rieti.it/codice-iban-del-comune-di-amatrice/'
 email: ''
 data: 13/09/2016
 </yamldata></pre>"
