@@ -129,6 +129,16 @@ link: ''
 immagine: ''
 data: 16/09/2016
 </yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/543,177478708,2016-09-16 19:42:09,2016-09-16 17:29:03,Agriturismi della Cia ,,,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""Agriturismi della Cia aderenti all\u2019associazione Turismo Verde disponibili ad ospitare gli sfollati delle aree terremotate"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""http://goo.gl/fN7K4D"", ""lon"": """", ""tel"": ""06 326871 e 06 3240111""}","<pre><yamldata>tel: '06 326871 e 06 3240111'
+email: ''
+descrizione: 'Agriturismi della Cia aderenti all’associazione Turismo Verde disponibili ad ospitare gli sfollati delle aree terremotate'
+indirizzo: ''
+lat: ''
+lon: ''
+link: 'http://goo.gl/fN7K4D'
+immagine: ''
+data: 16/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/541,177477938,2016-09-16 17:26:33,2016-09-16 17:24:58,Hotel Aristeo Familglia Zaghin,44.0500605,12.5994302,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""Hotel Aristeo Familglia Zaghini"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Viale Regina Elena, Bellariva, Rimini, RN, Emilia-Romagna, 47920, Italia"", ""lat"": ""44.0500605"", ""link"": """", ""lon"": ""12.5994302"", ""tel"": ""0541 381150""}","<pre><yamldata>tel: '0541 381150'
 email: ''
 descrizione: 'Hotel Aristeo Familglia Zaghini'
@@ -2735,17 +2745,6 @@ bic: ''
 postale: ''
 causale: 'Solidarietà Terremoto Arquata del Tronto'
 link: 'https://www.facebook.com/ascolipiceno/photos/a.334802869887682.85935.131745913526713/1253222841379009/?type=3'
-email: ''
-data: 13/09/2016
-</yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/173,176749451,2016-09-13 21:05:53,2016-09-13 21:05:11,Associazione Enea Grilli,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Sisma Centro Italia"", ""chi"": ""Associazione Enea Grilli"", ""data"": ""13/09/2016"", ""descrizione"": """", ""email"": """", ""iban"": ""IT74H 05387 66850 000002064231"", ""intestazione"": """", ""link"": ""http://www.associazioneeneagrilli.org/index.php/news"", ""postale"": """"}","<pre><yamldata>chi: 'Associazione Enea Grilli'
-descrizione: ''
-intestazione: ''
-iban: 'IT74H 05387 66850 000002064231'
-bic: ''
-postale: ''
-causale: 'Sisma Centro Italia'
-link: 'http://www.associazioneeneagrilli.org/index.php/news'
 email: ''
 data: 13/09/2016
 </yamldata></pre>"
