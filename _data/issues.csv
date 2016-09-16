@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/541,177477938,2016-09-16 17:26:33,2016-09-16 17:24:58,Hotel Aristeo Familglia Zaghin,44.0500605,12.5994302,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""Hotel Aristeo Familglia Zaghini"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Viale Regina Elena, Bellariva, Rimini, RN, Emilia-Romagna, 47920, Italia"", ""lat"": ""44.0500605"", ""link"": """", ""lon"": ""12.5994302"", ""tel"": ""0541 381150""}","<pre><yamldata>tel: '0541 381150'
+email: ''
+descrizione: 'Hotel Aristeo Familglia Zaghini'
+indirizzo: 'Viale Regina Elena, Bellariva, Rimini, RN, Emilia-Romagna, 47920, Italia'
+lat: '44.0500605'
+lon: '12.5994302'
+link: ''
+immagine: ''
+data: 16/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/536,177475028,2016-09-16 17:26:06,2016-09-16 17:09:24,"AGRITURISMO ""CASA DEIMAR"" 2 ca",43.0711952,12.6146669,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""AGRITURISMO \""CASA DEIMAR\"" 2 camere (tra Assisi e Loreto)"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Piazza del Comune, San Damiano, Assisi, PG, UMB, 06081, Italia"", ""lat"": ""43.0711952"", ""link"": """", ""lon"": ""12.6146669"", ""tel"": ""3357265070""}","<pre><yamldata>tel: '3357265070'
 email: ''
 descrizione: 'AGRITURISMO ""CASA DEIMAR"" 2 camere (tra Assisi e Loreto)'
