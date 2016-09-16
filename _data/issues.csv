@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/535,177474652,2016-09-16 17:07:54,2016-09-16 17:07:22,"HOTEL ""GAN"" Marco e M.Grazia",42.7157111,13.0247721,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""HOTEL \""GAN\"" (Marco e Maria Grazia) Indirizzo: via Tranquillo Graziani 10/a, Cascia (PG)"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via Tranquillo Graziani, Cascia, PG, UMB, 06043, Italia"", ""lat"": ""42.7157111"", ""link"": """", ""lon"": ""13.0247721"", ""tel"": ""3398856382 - 0743795006""}","<pre><yamldata>tel: '3398856382 - 0743795006'
+email: ''
+descrizione: 'HOTEL ""GAN"" (Marco e Maria Grazia) Indirizzo: via Tranquillo Graziani 10/a, Cascia (PG)'
+indirizzo: 'Via Tranquillo Graziani, Cascia, PG, UMB, 06043, Italia'
+lat: '42.7157111'
+lon: '13.0247721'
+link: ''
+immagine: ''
+data: 16/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/533,177473029,2016-09-16 16:59:54,2016-09-16 16:59:09,FABIO abita tra Firenze/Siena,43.7698712,11.2555757,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""FABIO abita tra Firenze e Siena, ma mette a disposizione 3/4 posti letto (animali ammessi) a casa sua"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Piazza della Signoria, Quartiere 1, Firenze, Metropolitan City of Florence, Tuscany, 50122, Italia"", ""lat"": ""43.7698712"", ""link"": """", ""lon"": ""11.2555757"", ""tel"": ""3931839574""}","<pre><yamldata>tel: '3931839574'
 email: ''
 descrizione: 'FABIO abita tra Firenze e Siena, ma mette a disposizione 3/4 posti letto (animali ammessi) a casa sua'
@@ -490,11 +500,6 @@ data: 15/09/2016
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/444,177179514,2016-09-15 13:53:16,2016-09-15 13:39:59,Esonero tasse Università di Perugia,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""L\u2019Universit\u00e0 di Perugia ha decretato di esonerare dal pagamento delle tasse e dei contributi per l\u2019Anno Accademico 2016-2017 gli studenti iscritti od immatricolati residenti nei Comuni terremotati. Tali studenti dovranno pagare solo una prima rata di importo ridotto, comprensiva unicamente della tassa regionale per il diritto allo studio e dell\u2019imposta di bollo, ove prevista."", ""link"": ""http://www.regione.umbria.it/notizie/-/asset_publisher/54m7RxsCDsHr/content/sisma-esonero-totale-tasse-universitarie-2016-2017-per-studenti-dei-comuni-terremotati-iscritti-a-universita-perugia?read_more=true"", ""titolo"": ""Esonero tasse Universit\u00e0 di Perugia""}","<pre><yamldata>titolo: 'Esonero tasse Università di Perugia'
 descrizione: 'L’Università di Perugia ha decretato di esonerare dal pagamento delle tasse e dei contributi per l’Anno Accademico 2016-2017 gli studenti iscritti od immatricolati residenti nei Comuni terremotati. Tali studenti dovranno pagare solo una prima rata di importo ridotto, comprensiva unicamente della tassa regionale per il diritto allo studio e dell’imposta di bollo, ove prevista.'
 link: 'http://www.regione.umbria.it/notizie/-/asset_publisher/54m7RxsCDsHr/content/sisma-esonero-totale-tasse-universitarie-2016-2017-per-studenti-dei-comuni-terremotati-iscritti-a-universita-perugia?read_more=true'
-data: 15/09/2016
-</yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/443,177179337,2016-09-15 13:53:16,2016-09-15 13:39:25,Disponibilità seconde case in zone colpite dal sisma - Regione Lazio,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""Chi ha seconde cose nelle zone colpite dal sisma, non danneggiate, pu\u00f2 metterle a disposizione degli sfollati. Comunicazione della Regione Lazio"", ""link"": ""https://twitter.com/RegioneLazio/status/773146123728986112"", ""titolo"": ""Disponibilit\u00e0 seconde case in zone colpite dal sisma - Regione Lazio""}","<pre><yamldata>titolo: 'Disponibilità seconde case in zone colpite dal sisma - Regione Lazio'
-descrizione: 'Chi ha seconde cose nelle zone colpite dal sisma, non danneggiate, può metterle a disposizione degli sfollati. Comunicazione della Regione Lazio'
-link: 'https://twitter.com/RegioneLazio/status/773146123728986112'
 data: 15/09/2016
 </yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/443,177179337,2016-09-15 13:53:16,2016-09-15 13:39:25,Disponibilità seconde case in zone colpite dal sisma - Regione Lazio,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""Chi ha seconde cose nelle zone colpite dal sisma, non danneggiate, pu\u00f2 metterle a disposizione degli sfollati. Comunicazione della Regione Lazio"", ""link"": ""https://twitter.com/RegioneLazio/status/773146123728986112"", ""titolo"": ""Disponibilit\u00e0 seconde case in zone colpite dal sisma - Regione Lazio""}","<pre><yamldata>titolo: 'Disponibilità seconde case in zone colpite dal sisma - Regione Lazio'
