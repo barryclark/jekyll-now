@@ -1,11 +1,11 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/483,177428181,2016-09-16 13:40:02,2016-09-16 13:39:53,GRUPPO ELETTROGENO,,,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""GRUPPO ELETTROGENO"", ""data"": ""16/09/2016"", ""descrizione"": ""Campo autogestito di Capricchia segnalano la necessit\u00e0 di un gruppo elettrogeno, in quanto \u00e8 stata staccata la corrente."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/483,177428181,2016-09-16 13:40:22,2016-09-16 13:39:53,GRUPPO ELETTROGENO,42.622598,13.340167,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""GRUPPO ELETTROGENO"", ""data"": ""16/09/2016"", ""descrizione"": ""Campo autogestito di Capricchia segnalano la necessit\u00e0 di un gruppo elettrogeno, in quanto \u00e8 stata staccata la corrente."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": ""42.622598"", ""link"": """", ""lon"": ""13.340167"", ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 cosa: 'GRUPPO ELETTROGENO'
 descrizione: 'Campo autogestito di Capricchia segnalano la necessità di un gruppo elettrogeno, in quanto è stata staccata la corrente.'
 indirizzo: ''
-lat: ''
-lon: ''
+lat: '42.622598'
+lon: '13.340167'
 link: ''
 immagine: ''
 data: 16/09/2016
