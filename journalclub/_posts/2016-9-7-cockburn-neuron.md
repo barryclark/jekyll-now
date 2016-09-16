@@ -1,8 +1,8 @@
 ---
 layout: post
-title: <s>A Reinforcement Learning Mechanism Responsible for the Valuation of Free Choice, Neuron (2014)</s>
+title: A Reinforcement Learning Mechanism Responsible for the Valuation of Free Choice, Neuron (2014)
 category: journalclub
-olddate: (Rescheduled)
+olddate: September 13, 2016
 ---
 
 * [Paper](http://www.cell.com/neuron/abstract/S0896-6273(14)00581-9) Cockburn, Jeffrey and Collins, Anne G. E. and Frank, Michael J., A Reinforcement Learning Mechanism Responsible for the Valuation of Free Choice, Neuron, 83(3) 551-557, 2014
