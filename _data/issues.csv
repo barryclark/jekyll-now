@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/533,177473029,2016-09-16 16:59:37,2016-09-16 16:59:09,FABIO abita tra Firenze e Sien,43.7698712,11.2555757,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""FABIO abita tra Firenze e Siena, ma mette a disposizione 3/4 posti letto (animali ammessi) a casa sua"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Piazza della Signoria, Quartiere 1, Firenze, Metropolitan City of Florence, Tuscany, 50122, Italia"", ""lat"": ""43.7698712"", ""link"": """", ""lon"": ""11.2555757"", ""tel"": ""3931839574""}","<pre><yamldata>tel: '3931839574'
+email: ''
+descrizione: 'FABIO abita tra Firenze e Siena, ma mette a disposizione 3/4 posti letto (animali ammessi) a casa sua'
+indirizzo: 'Piazza della Signoria, Quartiere 1, Firenze, Metropolitan City of Florence, Tuscany, 50122, Italia'
+lat: '43.7698712'
+lon: '11.2555757'
+link: ''
+immagine: ''
+data: 16/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/531,177472364,2016-09-16 16:59:19,2016-09-16 16:55:44,"GRICAMPEGGIO ""PUNTO VERDE"" di ",42.8509874,13.9215523,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""AGRICAMPEGGIO \""PUNTO VERDE\"" di MARTINSICURO (se avete una tenda, un camper o altro per campeggio)  Via F. de Pinedo 39, Villa Rosa di Martinsicuro (TE)"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Martinsicuro, TE, Abruzzo, 64014, Italia"", ""lat"": ""42.8509874"", ""link"": """", ""lon"": ""13.9215523"", ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 descrizione: 'AGRICAMPEGGIO ""PUNTO VERDE"" di MARTINSICURO (se avete una tenda, un camper o altro per campeggio)  Via F. de Pinedo 39, Villa Rosa di Martinsicuro (TE)'
@@ -2430,17 +2440,6 @@ bic: PASCITMMGUB
 postale: ''
 causale: ''
 link: 'http://corrieredellumbria.corr.it/news/attualita/230889/solidarieta-ai-terremotati-la-raccolta-fondi-del-corriere.html'
-email: ''
-data: 13/09/2016
-</yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/179,176754539,2016-09-13 21:28:19,2016-09-13 21:27:24,Comune di Amatrice,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Comune di Amatrice"", ""data"": ""13/09/2016"", ""descrizione"": """", ""email"": """", ""iban"": ""IT13W 08327 73470 000000005050"", ""intestazione"": """", ""link"": ""http://www.comune.amatrice.rieti.it/codice-iban-del-comune-di-amatrice/"", ""postale"": """"}","<pre><yamldata>chi: 'Comune di Amatrice'
-descrizione: ''
-intestazione: ''
-iban: 'IT13W 08327 73470 000000005050'
-bic: ''
-postale: ''
-causale: ''
-link: 'http://www.comune.amatrice.rieti.it/codice-iban-del-comune-di-amatrice/'
 email: ''
 data: 13/09/2016
 </yamldata></pre>"
