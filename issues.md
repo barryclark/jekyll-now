@@ -28,7 +28,7 @@ permalink: /issues/
 <div class="list-group">
 {% for member in site.data.issuesjson %}
 {% if member.issue.labels contains "Notizie Utili" %}
-<a href="{{ member.title | datapage_url: '.' }}" class="list-group-item">
+<a href="{{ member.title | datapage_url: '/issues' }}" class="list-group-item">
 	<h4 class="list-group-item-heading">{{member.title}}</h4>
 	<p class="list-group-item-text">{{member.issue.data.descrizione}}</p>
 </a>
@@ -43,7 +43,7 @@ permalink: /issues/
 <div class="list-group">
 {% for member in site.data.issuesjson %}
 {% if member.issue.labels contains "Alloggi" %}
-<a href="{{ member.title | datapage_url: '.' }}" class="list-group-item">
+<a href="{{ member.title | datapage_url: '/issues' }}" class="list-group-item">
 	<h4 class="list-group-item-heading">{{member.title}}</h4>
 	<p class="list-group-item-text">{{member.issue.data.descrizione}}</p>
 </a>
@@ -57,7 +57,7 @@ permalink: /issues/
 <div class="list-group">
 {% for member in site.data.issuesjson %}
 {% if member.issue.labels contains "Donazioni" %}
-<a href="{{ member.title | datapage_url: '.' }}" class="list-group-item">
+<a href="{{ member.title | datapage_url: '/issues' }}" class="list-group-item">
 	<h4 class="list-group-item-heading">{{member.title}}</h4>
 	<p class="list-group-item-text">{{member.issue.data.descrizione}}</p>
 </a>
@@ -71,7 +71,7 @@ permalink: /issues/
 <div class="list-group">
 {% for member in site.data.issuesjson %}
 {% if member.issue.labels contains "Fabbisogni" %}
-<a href="{{ member.title | datapage_url: '.' }}" class="list-group-item">
+<a href="{{ member.title | datapage_url: '/issues' }}" class="list-group-item">
 	<h4 class="list-group-item-heading">{{member.title}}</h4>
 	<p class="list-group-item-text">{{member.issue.data.descrizione}}</p>
 </a>
@@ -85,7 +85,7 @@ permalink: /issues/
 <div class="list-group">
 {% for member in site.data.issuesjson %}
 {% if member.issue.labels contains "Raccolte Fondi" %}
-<a href="{{ member.title | datapage_url: '.' }}" class="list-group-item">
+<a href="{{ member.title | datapage_url: '/issues' }}" class="list-group-item">
 	<h4 class="list-group-item-heading">{{member.title}}</h4>
 	<p class="list-group-item-text">{{member.issue.data.descrizione}}</p>
 </a>
@@ -99,7 +99,7 @@ permalink: /issues/
 <div class="list-group">
 {% for member in site.data.issuesjson %}
 {% if member.issue.labels contains "Bollettino" %}
-<a href="{{ member.title | datapage_url: '.' }}" class="list-group-item">
+<a href="{{ member.title | datapage_url: '/issues' }}" class="list-group-item">
 	<h4 class="list-group-item-heading">{{member.title}}</h4>
 	<p class="list-group-item-text">{{member.issue.data.descrizione}}</p>
 </a>
