@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/483,177428181,2016-09-16 13:40:02,2016-09-16 13:39:53,GRUPPO ELETTROGENO,,,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""GRUPPO ELETTROGENO"", ""data"": ""16/09/2016"", ""descrizione"": ""Campo autogestito di Capricchia segnalano la necessit\u00e0 di un gruppo elettrogeno, in quanto \u00e8 stata staccata la corrente."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
+email: ''
+cosa: 'GRUPPO ELETTROGENO'
+descrizione: 'Campo autogestito di Capricchia segnalano la necessità di un gruppo elettrogeno, in quanto è stata staccata la corrente.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 16/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/482,177427657,2016-09-16 13:38:32,2016-09-16 13:37:33,Richiesta di indumenti intimi,42.63289,13.28937,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Richiesta di indumenti intimi"", ""data"": ""16/09/2016"", ""descrizione"": ""Oggi sono URGENTI gli indumenti meno pensabili e cio\u00e8 MUTANDE, CALZINI, REGGISENI e MAGLIETTE/CANOTTIERE INTIME. Il tutto di varie taglie, soprattutto medio grandi per uomini, donne e bambini di ambo i sessi. Ovviamente l'intimo va rigorosamente consegnato nuovo per una questione di igiene."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": ""42.63289"", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1760343367566580/"", ""lon"": ""13.28937"", ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 cosa: 'Richiesta di indumenti intimi'
@@ -1795,17 +1806,6 @@ indirizzo: ''
 lat: '41.73055'
 lon: '12.30268'
 link: 'https://www.facebook.com/mpercolini/posts/10208058376356845?pnref=story
-immagine: ''
-data: 14/09/2016
-</yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/230,176836945,2016-09-14 08:15:50,2016-09-14 07:41:12,Cibo per cani e gatti,42.63028040169539,13.294529914855957,"[""Accettato"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""Cibo per cani e gatti"", ""data"": ""14/09/2016"", ""descrizione"": ""Disponibilit\u00e0 di cibo per cani e gatti"", ""email"": ""licetta@gmail.com"", ""immagine"": """", ""indirizzo"": ""Via Guglielmo Farchioni, Casale Zocchi, Amatrice, RI, LAZ, Italia"", ""lat"": ""42.63028040169539"", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1763708240563426/"", ""lon"": ""13.294529914855957"", ""tel"": ""3776858498""}","<pre><yamldata>tel: '3776858498'
-email: licetta@gmail.com
-cosa: 'Cibo per cani e gatti'
-descrizione: 'Disponibilità di cibo per cani e gatti'
-indirizzo: 'Via Guglielmo Farchioni, Casale Zocchi, Amatrice, RI, LAZ, Italia'
-lat: '42.63028040169539'
-lon: '13.294529914855957'
-link: 'https://www.facebook.com/groups/1758670357733881/permalink/1763708240563426/'
 immagine: ''
 data: 14/09/2016
 </yamldata></pre>"
