@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/544,177479031,2016-09-16 17:33:49,2016-09-16 17:30:45,Bluwago tour operator,,,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""A seguito dei tragici fatti di questa notte Bluewago, tour operator specializzato nelle vacanze in barca, ha deciso di interrompere momentaneamente le partenze delle crociere in Adriatico Centrale per mettersi a disposizione delle popolazioni colpite dal terribile terremoto e offrire ospitalit\u00e0 a bordo di imbarcazioni a vela ormeggiate nei porti e nei marina lungo la costa da San Benedetto del Tronto a Pescara. \u00c8 attivo da oggi pomeriggio presso la nostra sede di Trieste un centro di ricerca disponibilit\u00e0 all\u2019interno della rete dei partner nautici affiliati ed amici per ampliare il parco imbarcazioni a sostegno immediato di tutti gli sfollati."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""393 8622020""}","<pre><yamldata>tel: '393 8622020'
+email: ''
+descrizione: 'A seguito dei tragici fatti di questa notte Bluewago, tour operator specializzato nelle vacanze in barca, ha deciso di interrompere momentaneamente le partenze delle crociere in Adriatico Centrale per mettersi a disposizione delle popolazioni colpite dal terribile terremoto e offrire ospitalità a bordo di imbarcazioni a vela ormeggiate nei porti e nei marina lungo la costa da San Benedetto del Tronto a Pescara. È attivo da oggi pomeriggio presso la nostra sede di Trieste un centro di ricerca disponibilità all’interno della rete dei partner nautici affiliati ed amici per ampliare il parco imbarcazioni a sostegno immediato di tutti gli sfollati.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 16/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/541,177477938,2016-09-16 17:26:33,2016-09-16 17:24:58,Hotel Aristeo Familglia Zaghin,44.0500605,12.5994302,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""Hotel Aristeo Familglia Zaghini"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Viale Regina Elena, Bellariva, Rimini, RN, Emilia-Romagna, 47920, Italia"", ""lat"": ""44.0500605"", ""link"": """", ""lon"": ""12.5994302"", ""tel"": ""0541 381150""}","<pre><yamldata>tel: '0541 381150'
 email: ''
 descrizione: 'Hotel Aristeo Familglia Zaghini'
@@ -1177,11 +1187,6 @@ data: 14/09/2016
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/344,177007682,2016-09-14 20:29:48,2016-09-14 20:10:13,Supporto Psicologico Associazione 180amici,,,"[""Accettato"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""Supporto psicologico offerto dall'associazione 180amici gestito da psicologi aquilani attivi nei 9 mesi post-terremoto aquilano e nei 3 mesi post terremoto emiliano. Tel: +393661990081."", ""link"": """", ""titolo"": ""Supporto Psicologico Associazione 180amici""}","<pre><yamldata>titolo: 'Supporto Psicologico Associazione 180amici'
 descrizione: 'Supporto psicologico offerto dall''associazione 180amici gestito da psicologi aquilani attivi nei 9 mesi post-terremoto aquilano e nei 3 mesi post terremoto emiliano. Tel: +393661990081.'
 link: ''
-data: 14/09/2016
-</yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/343,177007240,2016-09-14 20:29:56,2016-09-14 20:08:11,Mappa Italia dei Centri Raccolta Beni per terremoto,,,"[""Accettato"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""Su Open Treet Map i luoghi dove sono stati predisposti punti di raccolta per beni di prima necessit\u00e0."", ""link"": ""http://umap.openstreetmap.fr/en/map/centri-raccolta-beni-per-terremoto-centro-italia_99556"", ""titolo"": ""Mappa Italia dei Centri Raccolta Beni per terremoto""}","<pre><yamldata>titolo: 'Mappa Italia dei Centri Raccolta Beni per terremoto'
-descrizione: 'Su Open Treet Map i luoghi dove sono stati predisposti punti di raccolta per beni di prima necessità.'
-link: 'http://umap.openstreetmap.fr/en/map/centri-raccolta-beni-per-terremoto-centro-italia_99556'
 data: 14/09/2016
 </yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/343,177007240,2016-09-14 20:29:56,2016-09-14 20:08:11,Mappa Italia dei Centri Raccolta Beni per terremoto,,,"[""Accettato"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""Su Open Treet Map i luoghi dove sono stati predisposti punti di raccolta per beni di prima necessit\u00e0."", ""link"": ""http://umap.openstreetmap.fr/en/map/centri-raccolta-beni-per-terremoto-centro-italia_99556"", ""titolo"": ""Mappa Italia dei Centri Raccolta Beni per terremoto""}","<pre><yamldata>titolo: 'Mappa Italia dei Centri Raccolta Beni per terremoto'
