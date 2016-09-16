@@ -933,6 +933,11 @@ descrizione: 'Fino al 30 settembre i cittadini sfollati, i residenti dei comuni 
 link: 'http://www.adnkronos.com/fatti/cronaca/2016/08/26/terremoto-ferrovie-viaggi-gratuiti-per-sfollati-residenti-protezione-civile_jg2LNLkF1mZBknGycbHRNJ.html'
 data: 14/09/2016
 </yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/351,177010219,2016-09-14 20:28:27,2016-09-14 20:21:23,Ferrovie dello Stato,,,"[""Accettato"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""Fino al 30 settembre i cittadini sfollati, i residenti dei comuni colpiti dal sisma e gli operatori della Protezione Civile possono usufruire di un viaggio gratuito di andata e ritorno su tutti i treni e per qualsiasi destinazione in Italia."", ""link"": ""http://www.adnkronos.com/fatti/cronaca/2016/08/26/terremoto-ferrovie-viaggi-gratuiti-per-sfollati-residenti-protezione-civile_jg2LNLkF1mZBknGycbHRNJ.html"", ""titolo"": ""Ferrovie dello Stato""}","<pre><yamldata>titolo: 'Ferrovie dello Stato'
+descrizione: 'Fino al 30 settembre i cittadini sfollati, i residenti dei comuni colpiti dal sisma e gli operatori della Protezione Civile possono usufruire di un viaggio gratuito di andata e ritorno su tutti i treni e per qualsiasi destinazione in Italia.'
+link: 'http://www.adnkronos.com/fatti/cronaca/2016/08/26/terremoto-ferrovie-viaggi-gratuiti-per-sfollati-residenti-protezione-civile_jg2LNLkF1mZBknGycbHRNJ.html'
+data: 14/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/350,177010011,2016-09-14 20:43:04,2016-09-14 20:20:22,Supporto mamme di neonati,,,"[""Accettato"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""Centro Alma Mater Rieti offre supporto telefonico per le mamme con bimbi piccoli che sono allattati al seno o che comunque sono ancora lattanti. Sul sito consigli utili per le formulazioni di latte artificiale, come e cosa fare. Utile anche per chi vuole donare latte. Sul sito il cell. diretto da chiamare per assistenza."", ""link"": ""http://www.centroalmamater.com/index.php/news/55-terremoto-centro-italia"", ""titolo"": ""Supporto mamme di neonati""}","<pre><yamldata>titolo: 'Supporto mamme di neonati'
 descrizione: 'Centro Alma Mater Rieti offre supporto telefonico per le mamme con bimbi piccoli che sono allattati al seno o che comunque sono ancora lattanti. Sul sito consigli utili per le formulazioni di latte artificiale, come e cosa fare. Utile anche per chi vuole donare latte. Sul sito il cell. diretto da chiamare per assistenza.'
 link: 'http://www.centroalmamater.com/index.php/news/55-terremoto-centro-italia'
@@ -2119,17 +2124,6 @@ bic: BCITITMX
 postale: ''
 causale: 'Terremoto Centro Italia'
 link: 'http://www.avislazio.it/rientrata-lemergenza-sangue-nelle-zone-terremotate-istituita-raccolta-fondi/'
-email: ''
-data: 13/09/2016
-</yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/205,176773316,2016-09-13 23:27:53,2016-09-13 23:06:30,Federazione delle Chiese Evangeliche in Italia,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": ""UNCRITM1704"", ""causale"": ""Terremoto Centro Italia"", ""chi"": ""Federazione delle Chiese Evangeliche in Italia"", ""data"": ""13/09/2016"", ""descrizione"": """", ""email"": """", ""iban"": ""IT26X 02008 05203 000104203419"", ""intestazione"": """", ""link"": ""http://www.fedevangelica.it/index.php?option=com_content&view=article&id=297:terremoto-la-federazione-delle-chiese-evangeliche-in-italia-lancia-una-sottoscrizione&catid=18&Itemid=133&lang=it"", ""postale"": ""38016002""}","<pre><yamldata>chi: 'Federazione delle Chiese Evangeliche in Italia'
-descrizione: ''
-intestazione: ''
-iban: 'IT26X 02008 05203 000104203419'
-bic: UNCRITM1704
-postale: '38016002'
-causale: 'Terremoto Centro Italia'
-link: 'http://www.fedevangelica.it/index.php?option=com_content&view=article&id=297:terremoto-la-federazione-delle-chiese-evangeliche-in-italia-lancia-una-sottoscrizione&catid=18&Itemid=133&lang=it'
 email: ''
 data: 13/09/2016
 </yamldata></pre>"
