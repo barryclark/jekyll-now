@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A Reinforcement Learning Mechanism Responsible for the Valuation of Free Choice, Neuron (2014)
+title:  A Reinforcement Learning Mechanism Responsible for the Valuation of Free Choice, Neuron (2014)
 category: journalclub
 olddate: September 13, 2016
 ---
