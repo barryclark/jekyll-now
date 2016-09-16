@@ -89,10 +89,10 @@ link: ''
 immagine: ''
 data: 16/09/2016
 </yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/523,177470126,2016-09-16 17:02:52,2016-09-16 16:43:17,"LUCIA, CALABRIA due case",39.0806223,17.127196,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""LUCIA, in CALABRIA due case completamente arredate per due famiglie."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Piazza Pitagora, Passovecchio, Crotone, KR, Calabria, 88048, Italia"", ""lat"": ""39.0806223"", ""link"": """", ""lon"": ""17.127196"", ""tel"": ""0962835453""}","<pre><yamldata>tel: '0962835453'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/523,177470126,2016-09-16 17:03:04,2016-09-16 16:43:17,"LUCIA, CALABRIA due case",39.0806223,17.127196,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""LUCIA, in CALABRIA due case completamente arredate per due famiglie."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Crotone, KR, Calabria, 88048, Italia"", ""lat"": ""39.0806223"", ""link"": """", ""lon"": ""17.127196"", ""tel"": ""0962835453""}","<pre><yamldata>tel: '0962835453'
 email: ''
 descrizione: 'LUCIA, in CALABRIA due case completamente arredate per due famiglie.'
-indirizzo: 'Piazza Pitagora, Passovecchio, Crotone, KR, Calabria, 88048, Italia'
+indirizzo: 'Crotone, KR, Calabria, 88048, Italia'
 lat: '39.0806223'
 lon: '17.127196'
 link: ''
