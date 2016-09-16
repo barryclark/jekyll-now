@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/482,177427657,2016-09-16 13:38:32,2016-09-16 13:37:33,Richiesta di indumenti intimi,42.63289,13.28937,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Richiesta di indumenti intimi"", ""data"": ""16/09/2016"", ""descrizione"": ""Oggi sono URGENTI gli indumenti meno pensabili e cio\u00e8 MUTANDE, CALZINI, REGGISENI e MAGLIETTE/CANOTTIERE INTIME. Il tutto di varie taglie, soprattutto medio grandi per uomini, donne e bambini di ambo i sessi. Ovviamente l'intimo va rigorosamente consegnato nuovo per una questione di igiene."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": ""42.63289"", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1760343367566580/"", ""lon"": ""13.28937"", ""tel"": """"}","<pre><yamldata>tel: ''
+email: ''
+cosa: 'Richiesta di indumenti intimi'
+descrizione: 'Oggi sono URGENTI gli indumenti meno pensabili e cioè MUTANDE, CALZINI, REGGISENI e MAGLIETTE/CANOTTIERE INTIME. Il tutto di varie taglie, soprattutto medio grandi per uomini, donne e bambini di ambo i sessi. Ovviamente l''intimo va rigorosamente consegnato nuovo per una questione di igiene.'
+indirizzo: ''
+lat: '42.63289'
+lon: '13.28937'
+link: 'https://www.facebook.com/groups/1758670357733881/permalink/1760343367566580/'
+immagine: ''
+data: 16/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/481,177427042,2016-09-16 13:35:58,2016-09-16 13:34:50,Richiesta di specifici oggetti di conforto e di prima necessità dal Campo di Arquata,43.60469,13.50891,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Richiesta di specifici oggetti di conforto e di prima necessit\u00e0 dal Campo di Arquata"", ""data"": ""16/09/2016"", ""descrizione"": ""Una delegazione di ORA (Organizzazione Ragazzi di Ancona) in visita al campo di Arquata ha ricevuto dagli operatori le seguenti richieste specifiche: detersivi, cuscini, protezione solare, creme idratanti, coperte in ottimo stato, giochi da tavola, carte, guanti in lattice e vinile, stufette elettriche, asciugacapelli, torce elettriche, batterie, sacchi a pelo, borse di acqua calda (anche elettriche), mollette da bucato, stendino, bacinella. Il punto di raccolta aprir\u00e0 alle 17 allo Spazio comune Heval, in via Macerata 22, Ancona."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": ""43.60469"", ""link"": ""https://www.facebook.com/orasiriparte/"", ""lon"": ""13.50891"", ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 cosa: 'Richiesta di specifici oggetti di conforto e di prima necessità dal Campo di Arquata'
@@ -360,11 +371,6 @@ data: 15/09/2016
 </yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/409,177156582,2016-09-15 11:53:55,2016-09-15 11:53:40,Reclutamento Ordini territoriali,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""Gli Ordini territoriali delle regioni interessate hanno attivato il reclutamento di colleghi con esperienza nel campo delle emergenze. Coord. del GdL Mariano Pizzo, tel. 328-9321254 della Regione Umbria o a mandare una mail alla task force a ordpsiabsismacentroitalia@gmail.com"", ""link"": """", ""titolo"": ""Reclutamento Ordini territoriali""}","<pre><yamldata>titolo: 'Reclutamento Ordini territoriali'
 descrizione: 'Gli Ordini territoriali delle regioni interessate hanno attivato il reclutamento di colleghi con esperienza nel campo delle emergenze. Coord. del GdL Mariano Pizzo, tel. 328-9321254 della Regione Umbria o a mandare una mail alla task force a ordpsiabsismacentroitalia@gmail.com'
-link: ''
-data: 15/09/2016
-</yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/408,177156338,2016-09-15 11:52:42,2016-09-15 11:52:21,Università di Camerino,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""Rettore Flavio Corradini; Rita Ortenzi : Hanno attivato geologi e architetti sulla zona del disastro - Corso di laurea in Geologia, coordinati dal prof. Emanuele Tondi,"", ""link"": """", ""titolo"": ""Universit\u00e0 di Camerino""}","<pre><yamldata>titolo: 'Università di Camerino'
-descrizione: 'Rettore Flavio Corradini; Rita Ortenzi : Hanno attivato geologi e architetti sulla zona del disastro - Corso di laurea in Geologia, coordinati dal prof. Emanuele Tondi,'
 link: ''
 data: 15/09/2016
 </yamldata></pre>"
