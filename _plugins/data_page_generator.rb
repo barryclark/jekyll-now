@@ -113,7 +113,7 @@ module Jekyll
     # Thus, if you use the `extension` feature of this plugin, you
     # need to generate the links by hand
     def datapage_url(input, dir)
-      @gen_dir = Jekyll.configuration({})['page_gen-dirs']
+      @gen_dir = @context.registers[:site].config['page_gen-dirs']
       if @gen_dir then
         dir + "/" + sanitize_filename(input) + "/index.html"
       else
