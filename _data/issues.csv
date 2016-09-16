@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/485,177429432,2016-09-16 13:46:17,2016-09-16 13:45:36,SERVONO: INGEGNERI ELETTRICISTI IDRAULICI FABBRI TECNICI E ARTIGIANI,,,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""SERVONO: INGEGNERI ELETTRICISTI IDRAULICI FABBRI TECNICI E ARTIGIANI"", ""data"": ""16/09/2016"", ""descrizione"": ""LA REGIONE LAZIO per l'emergenza Sisma, raccoglie disponibilit\u00e0 di collaborazione volontaria di persone specializzate che siano disponibili ad andare sui luoghi del disastro per dare una mano nel ristabilire il prima possibile la vita in quei paesi. Non c'\u00e8 stato un appello preciso ma le candidature via email possono essere comunque inviate."", ""email"": ""sismarieti@regione.lazio.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1760475310886719/"", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
+email: sismarieti@regione.lazio.it
+cosa: 'SERVONO: INGEGNERI ELETTRICISTI IDRAULICI FABBRI TECNICI E ARTIGIANI'
+descrizione: 'LA REGIONE LAZIO per l''emergenza Sisma, raccoglie disponibilità di collaborazione volontaria di persone specializzate che siano disponibili ad andare sui luoghi del disastro per dare una mano nel ristabilire il prima possibile la vita in quei paesi. Non c''è stato un appello preciso ma le candidature via email possono essere comunque inviate.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: 'https://www.facebook.com/groups/1758670357733881/permalink/1760475310886719/'
+immagine: ''
+data: 16/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/483,177428181,2016-09-16 13:40:22,2016-09-16 13:39:53,GRUPPO ELETTROGENO,42.622598,13.340167,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""GRUPPO ELETTROGENO"", ""data"": ""16/09/2016"", ""descrizione"": ""Campo autogestito di Capricchia segnalano la necessit\u00e0 di un gruppo elettrogeno, in quanto \u00e8 stata staccata la corrente."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": ""42.622598"", ""link"": """", ""lon"": ""13.340167"", ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 cosa: 'GRUPPO ELETTROGENO'
