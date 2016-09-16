@@ -9,6 +9,16 @@ link: ''
 immagine: ''
 data: 16/09/2016
 </yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/534,177474377,2016-09-16 17:25:40,2016-09-16 17:05:54,"HOTEL ""MILETTO"" - fino a 40 pe",41.4618523,14.3934605,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""HOTEL \""MILETTO\"" - fino a 40 persone"", ""email"": ""info@hotelmiletto.it"", ""immagine"": """", ""indirizzo"": ""Sella del Perrone-Campitello Matese, Grondari, San Massimo, CB, Molise, Italia"", ""lat"": ""41.4618523"", ""link"": """", ""lon"": ""14.3934605"", ""tel"": ""0874 784130""}","<pre><yamldata>tel: '0874 784130'
+email: info@hotelmiletto.it
+descrizione: 'HOTEL ""MILETTO"" - fino a 40 persone'
+indirizzo: 'Sella del Perrone-Campitello Matese, Grondari, San Massimo, CB, Molise, Italia'
+lat: '41.4618523'
+lon: '14.3934605'
+link: ''
+immagine: ''
+data: 16/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/533,177473029,2016-09-16 16:59:54,2016-09-16 16:59:09,FABIO abita tra Firenze/Siena,43.7698712,11.2555757,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""FABIO abita tra Firenze e Siena, ma mette a disposizione 3/4 posti letto (animali ammessi) a casa sua"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Piazza della Signoria, Quartiere 1, Firenze, Metropolitan City of Florence, Tuscany, 50122, Italia"", ""lat"": ""43.7698712"", ""link"": """", ""lon"": ""11.2555757"", ""tel"": ""3931839574""}","<pre><yamldata>tel: '3931839574'
 email: ''
 descrizione: 'FABIO abita tra Firenze e Siena, ma mette a disposizione 3/4 posti letto (animali ammessi) a casa sua'
@@ -2752,11 +2762,6 @@ lat: 41.91439
 lon: 12.47433
 link: 'http://www.comunicareilsociale.it/raccolta-libri-bambini-ragazzi-0-14/'
 immagine: ''
-data: 13/09/2016
-</yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/155,176685322,2016-09-13 16:17:17,2016-09-13 16:16:58,"“Scuola solidale”, Unitalsi e Anp consegnano i primi fondi all'istituto di Amatrice",,,"[""Accettato"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""13/09/2016"", ""descrizione"": ""Mercoled\u00ec 14 settembre, alle 11, al campo san Cipriano (Protezione Civile di Trento) ad Amatrice, il presidente Associazione Nazionale Presidi Lazio Mario Rusconi e Emanuele Trancalini, responsabile nazionale Progetto Bambini dell\u2019Unitalsi, consegnano a Maria Rita Pitoni, preside dell\u2019istituto di Amatrice la prima somma raccolta con \u201cScuola solidale\u201d."", ""link"": ""http://agensir.it/quotidiano/2016/9/12/terremoto-unitalsi-e-anp-consegnano-i-fondi-raccolti-con-scuola-solidale-allistituto-di-amatrice/"", ""titolo"": ""\u201cScuola solidale\u201d, Unitalsi e Anp consegnano i primi fondi all'istituto di Amatrice""}","<pre><yamldata>titolo: '“Scuola solidale”, Unitalsi e Anp consegnano i primi fondi all''istituto di Amatrice'
-descrizione: 'Mercoledì 14 settembre, alle 11, al campo san Cipriano (Protezione Civile di Trento) ad Amatrice, il presidente Associazione Nazionale Presidi Lazio Mario Rusconi e Emanuele Trancalini, responsabile nazionale Progetto Bambini dell’Unitalsi, consegnano a Maria Rita Pitoni, preside dell’istituto di Amatrice la prima somma raccolta con “Scuola solidale”.'
-link: 'http://agensir.it/quotidiano/2016/9/12/terremoto-unitalsi-e-anp-consegnano-i-fondi-raccolti-con-scuola-solidale-allistituto-di-amatrice/'
 data: 13/09/2016
 </yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/155,176685322,2016-09-13 16:17:17,2016-09-13 16:16:58,"“Scuola solidale”, Unitalsi e Anp consegnano i primi fondi all'istituto di Amatrice",,,"[""Accettato"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""13/09/2016"", ""descrizione"": ""Mercoled\u00ec 14 settembre, alle 11, al campo san Cipriano (Protezione Civile di Trento) ad Amatrice, il presidente Associazione Nazionale Presidi Lazio Mario Rusconi e Emanuele Trancalini, responsabile nazionale Progetto Bambini dell\u2019Unitalsi, consegnano a Maria Rita Pitoni, preside dell\u2019istituto di Amatrice la prima somma raccolta con \u201cScuola solidale\u201d."", ""link"": ""http://agensir.it/quotidiano/2016/9/12/terremoto-unitalsi-e-anp-consegnano-i-fondi-raccolti-con-scuola-solidale-allistituto-di-amatrice/"", ""titolo"": ""\u201cScuola solidale\u201d, Unitalsi e Anp consegnano i primi fondi all'istituto di Amatrice""}","<pre><yamldata>titolo: '“Scuola solidale”, Unitalsi e Anp consegnano i primi fondi all''istituto di Amatrice'
