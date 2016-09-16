@@ -125,7 +125,7 @@ As already stated: Wicked is totally open source, and you are perfectly free to 
 
 We are currently building/finishing the first version of the documentation, which includes instructions on how to build the API Portal on your local machine, so that you can get started quickly. A good starting point for reading up on technical details is the main Github page: [github.com/Haufe-Lexware/wicked.haufe.io](https://github.com/Haufe-Lexware/wicked.haufe.io) or the [documentation index page](https://github.com/Haufe-Lexware/wicked.haufe.io/blob/master/doc/index.md). There you will also find further information on how to get involved.
 
-We do hope you like what we have to offer and consider having a peek and test drive of [wicked.haufe.io](http_//wicked.haufe.io).
+We do hope you like what we have to offer and consider having a peek and test drive of [wicked.haufe.io](http://wicked.haufe.io).
 
 Cheers, Martin 
 
