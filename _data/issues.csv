@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/566,177563547,2016-09-17 08:19:18,2016-09-17 08:17:39,UNIPR esonero tasse x studenti zone terremoto,,,"[""Accettato"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""17/09/2016"", ""descrizione"": ""L universit\u00e0 di Parma eonera dal pagamento tasse gli studenti delle zone terremoto."", ""link"": ""http://www.unipr.it/notizie/terremoto-luniversita-di-parma-esonerera-delle-tasse-gli-studenti-delle-zone-colpite"", ""titolo"": ""UNIPR esonero tasse x studenti zone terremoto""}","<pre><yamldata>titolo: 'UNIPR esonero tasse x studenti zone terremoto'
+descrizione: 'L università di Parma eonera dal pagamento tasse gli studenti delle zone terremoto.'
+link: 'http://www.unipr.it/notizie/terremoto-luniversita-di-parma-esonerera-delle-tasse-gli-studenti-delle-zone-colpite'
+data: 17/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/564,177484206,2016-09-16 18:50:47,2016-09-16 17:57:24,Comune di Torrita di Siena,43.1667601,11.7716466,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""Comune di Torrita di Siena offre appartamenti sfitti a terremotati. Gi\u00e0 4 le famiglie che saranno ospitate."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Torrita di Siena, SI, Tuscany, Italia"", ""lat"": ""43.1667601"", ""link"": ""https://t.co/OFWc5xtgnI"", ""lon"": ""11.7716466"", ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 descrizione: 'Comune di Torrita di Siena offre appartamenti sfitti a terremotati. Già 4 le famiglie che saranno ospitate.'
