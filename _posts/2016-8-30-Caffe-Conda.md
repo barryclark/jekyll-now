@@ -63,7 +63,7 @@ make install
 make runtest
 ```
 
-If the building is successful, then enter `<caffe-home>/python` directory to install Python packages:
+If there is no error, then enter `<caffe-home>/python` directory to install Python packages:
 
 ```bash
 for req in $(cat requirements.txt); do pip install $req; done
