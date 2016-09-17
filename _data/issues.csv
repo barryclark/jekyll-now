@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/567,177564923,2016-09-17 08:55:39,2016-09-17 08:55:12,"FERMO: 14 settembre pressing per la rimozione delle tende, ora si cerca un tetto per tutti gli sfollati",,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie"", ""Notizie Utili""]",,,"{""data"": ""17/09/2016"", ""descrizione"": ""Cronoprogramma per i servizi all'ospedale di Amandola. Summit dei Sindaci in Prefettura."", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1770418396559077/"", ""titolo"": ""FERMO: 14 settembre pressing per la rimozione delle tende, ora si cerca un tetto per tutti gli sfollati""}","<pre><yamldata>titolo: 'FERMO: 14 settembre pressing per la rimozione delle tende, ora si cerca un tetto per tutti gli sfollati'
+descrizione: 'Cronoprogramma per i servizi all''ospedale di Amandola. Summit dei Sindaci in Prefettura.'
+link: 'https://www.facebook.com/groups/1758670357733881/permalink/1770418396559077/'
+data: 17/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/566,177563547,2016-09-17 08:19:18,2016-09-17 08:17:39,UNIPR esonero tasse x studenti zone terremoto,,,"[""Accettato"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""17/09/2016"", ""descrizione"": ""L universit\u00e0 di Parma eonera dal pagamento tasse gli studenti delle zone terremoto."", ""link"": ""http://www.unipr.it/notizie/terremoto-luniversita-di-parma-esonerera-delle-tasse-gli-studenti-delle-zone-colpite"", ""titolo"": ""UNIPR esonero tasse x studenti zone terremoto""}","<pre><yamldata>titolo: 'UNIPR esonero tasse x studenti zone terremoto'
 descrizione: 'L università di Parma eonera dal pagamento tasse gli studenti delle zone terremoto.'
 link: 'http://www.unipr.it/notizie/terremoto-luniversita-di-parma-esonerera-delle-tasse-gli-studenti-delle-zone-colpite'
@@ -2385,17 +2390,6 @@ bic: ''
 postale: ''
 causale: 'Emergenza terremoto Amatrice-Accumoli'
 link: 'http://www.sanminiatoalmonte.it/node/535'
-email: ''
-data: 13/09/2016
-</yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/218,176775017,2016-09-13 23:25:50,2016-09-13 23:17:30,UNITALSI Progetto Bambini,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""UNITALSI Progetto Bambini"", ""data"": ""13/09/2016"", ""descrizione"": ""\""Unitalsi Progetto Bambini presso Monte dei Paschi di Siena \"""", ""email"": """", ""iban"": ""IT08F 01030 03298 000001152663"", ""intestazione"": ""Unitalsi Progetto Bambini"", ""link"": ""http://www.corriere.it/scuola/primaria/16_agosto_26/terremoto-al-via-scuola-solidale-raccolta-fondi-bambini-amatrice-c0196278-6b66-11e6-8bdd-2a860cc068c8.shtml?refresh_ce-cp"", ""postale"": ""48019863""}","<pre><yamldata>chi: 'UNITALSI Progetto Bambini'
-descrizione: '""Unitalsi Progetto Bambini presso Monte dei Paschi di Siena ""'
-intestazione: 'Unitalsi Progetto Bambini'
-iban: 'IT08F 01030 03298 000001152663'
-bic: ''
-postale: '48019863'
-causale: ''
-link: 'http://www.corriere.it/scuola/primaria/16_agosto_26/terremoto-al-via-scuola-solidale-raccolta-fondi-bambini-amatrice-c0196278-6b66-11e6-8bdd-2a860cc068c8.shtml?refresh_ce-cp'
 email: ''
 data: 13/09/2016
 </yamldata></pre>"
