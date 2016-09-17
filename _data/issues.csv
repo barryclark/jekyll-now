@@ -33,8 +33,8 @@ lat: '42.774328'
 lon: '13.29605'
 data: 17/09/2016
 </yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/570,177567773,2016-09-17 12:47:01,2016-09-17 10:10:44,Sportello servizi del GUS,42.941673,13.88581,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Notizie Utili"", ""Telegram""]",,,"{""data"": ""17/09/2016"", ""descrizione"": ""Sportello del GUS-Gruppo Umana Solidariet\u00e0 per servizi alla persona. Numero di telefono: 3661990081"", ""immagine"": """", ""lat"": ""42.941673"", ""lon"": ""13.88581"", ""telegram_user"": """"}","<pre><yamldata>telegram_user: ''
-descrizione: 'Sportello del GUS-Gruppo Umana Solidarietà per servizi alla persona. Numero di telefono: 3661990081'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/570,177567773,2016-09-17 13:47:01,2016-09-17 10:10:44,Sportello servizi del GUS,42.941673,13.88581,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Notizie Utili"", ""Telegram""]",,,"{""data"": ""17/09/2016"", ""descrizione"": ""GUS-Gruppo Umana Solidariet\u00e0 ha aperto a S. Benedetto del Tronto sportello di ascolto e di servizi alla persona per chi \u00e8 stato colpito dal sisma. Si trova vicino agli alberghi dove vivono gli sfollati. Numero di telefono: 3661990081"", ""immagine"": """", ""lat"": ""42.941673"", ""lon"": ""13.88581"", ""telegram_user"": """"}","<pre><yamldata>telegram_user: ''
+descrizione: 'GUS-Gruppo Umana Solidarietà ha aperto a S. Benedetto del Tronto sportello di ascolto e di servizi alla persona per chi è stato colpito dal sisma. Si trova vicino agli alberghi dove vivono gli sfollati. Numero di telefono: 3661990081'
 immagine: ''
 lat: '42.941673'
 lon: '13.88581'
