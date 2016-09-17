@@ -3021,6 +3021,17 @@ link: 'http://www.cri.it/terremoto-centro-italia'
 email: aiuti@cri.it
 data: 13/09/2016
 </yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/163,176720596,2016-09-13 18:53:09,2016-09-13 18:52:38,Croce Rossa Italiana,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": ""CRPPIT2P086"", ""causale"": ""Sisma Centro Italia"", ""chi"": ""Croce Rossa Italiana"", ""data"": ""13/09/2016"", ""descrizione"": ""Tel: 06 5510"", ""email"": ""aiuti@cri.it"", ""iban"": ""IT40F 06230 03204 000030631681"", ""intestazione"": """", ""link"": ""http://www.cri.it/terremoto-centro-italia"", ""postale"": """"}","<pre><yamldata>chi: 'Croce Rossa Italiana'
+descrizione: 'Tel: 06 5510'
+intestazione: ''
+iban: 'IT40F 06230 03204 000030631681'
+bic: CRPPIT2P086
+postale: ''
+causale: 'Sisma Centro Italia'
+link: 'http://www.cri.it/terremoto-centro-italia'
+email: aiuti@cri.it
+data: 13/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/162,176719966,2016-09-13 18:50:41,2016-09-13 18:50:05,Corriere della Sera e TG La7,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Corriere della Sera e TG La7"", ""data"": ""13/09/2016"", ""descrizione"": ""Attivato c/c presso \""Banca Prossima\"""", ""email"": """", ""iban"": ""IT17E 03359 01600 100000145551"", ""intestazione"": ""Un aiuto subito - Terremoto in Centro Italia 6.0"", ""link"": """", ""postale"": """"}","<pre><yamldata>chi: 'Corriere della Sera e TG La7'
 descrizione: 'Attivato c/c presso ""Banca Prossima""'
 intestazione: 'Un aiuto subito - Terremoto in Centro Italia 6.0'
