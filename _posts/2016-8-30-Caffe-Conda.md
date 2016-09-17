@@ -52,9 +52,9 @@ sudo apt-get install -y libgflags-dev libgoogle-glog-dev liblmdb-dev
 
 # Build Caffe
 
-Go to [https://github.com/BVLC/caffe](https://github.com/BVLC/caffe), download zip archive and unpack it. Or clone the source code. Enter the caffe-home directory in the terminal window:
+Go to [https://github.com/BVLC/caffe](https://github.com/BVLC/caffe), download zip archive and unpack it. Or clone the source code. Enter the `<caffe-home>` directory in the terminal window:
 
-```
+```bash
 mkdir build
 cd build
 cmake ..
@@ -63,36 +63,27 @@ make install
 make runtest
 ```
 
+If the building is successful, then enter `<caffe-home>/python` directory to install Python packages:
+
+```bash
+for req in $(cat requirements.txt); do pip install $req; done
+```
+
 Add the module directory to your `$PYTHONPATH` by 
 
-```
+```bash
 export PYTHONPATH=<caffe-home>/python:$PYTHONPATH
 ```
 
 # Test Run
 
-First install protobuf:
+First run the following commands:
 
-```
-conda install protobuf
-```
-
-Import caffe in the python interpreter:
-
-```
-cd <caffe-home>
-python
-Python 2.7.12 |Continuum Analytics, Inc.| (default, Jul  2 2016, 17:42:40) 
-[GCC 4.4.7 20120313 (Red Hat 4.4.7-1)] on linux2
-Type "help", "copyright", "credits" or "license" for more information.
-Anaconda is brought to you by Continuum Analytics.
-Please check out: http://continuum.io/thanks and https://anaconda.org
->>> import caffe
->>> caffe.__version__
-'1.0.0-rc3'
+```bash
+python -c "import caffe;print caffe.__version__"
 ```
 
-Change directory to `examples`, execute command:
+If the Caffe version number is shown, then change directory to `examples`, execute command:
 
 ```
 jupyter notebook
