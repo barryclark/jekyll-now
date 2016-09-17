@@ -77,7 +77,7 @@ export PYTHONPATH=<caffe-home>/python:$PYTHONPATH
 
 # Test Run
 
-First run the following commands:
+First verify the installation:
 
 ```bash
 python -c "import caffe;print caffe.__version__"
