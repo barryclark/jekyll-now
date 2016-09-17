@@ -14,27 +14,27 @@ If you want to use GPU to accelerate, follow instructions [here](http://yangcha.
 
 Download Anaconda from [here](https://www.continuum.io/downloads). Choose Python 2.7 version 64-BIT INSTALLER to install it. Then update it:
 
-```
+```bash
 conda update conda
 conda update anaconda
 ```
 
 If you want to create an environment such as `testcaffe`, execute commands:
 
-```
+```bash
 conda create -n testcaffe python
 source activate testcaffe
 ```
 
 Install OpenCV:
 
-```
+```bash
 conda install -c menpo opencv3
 ```
 
 # Install Dependencies
 
-```
+```bash
 sudo apt-get update
 
 sudo apt-get upgrade
@@ -85,7 +85,7 @@ python -c "import caffe;print caffe.__version__"
 
 If the Caffe version number is shown, then change directory to `examples`, execute command:
 
-```
+```bash
 jupyter notebook
 ```
 
