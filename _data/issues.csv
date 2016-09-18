@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/586,177641734,2016-09-18 09:34:44,2016-09-18 09:33:58,Milano: disponibilità attrezzature bar per attività colpita dal sisma,,,"[""Accettato"", ""Donazioni"", ""Form"", ""Pubblicare su TW""]",,,"{""cosa"": ""Milano: disponibilit\u00e0 attrezzature bar per attivit\u00e0 colpita dal sisma"", ""data"": ""18/09/2016"", ""descrizione"": ""Tramite amici mi hanno offerto a regalo mobilio classico di un bar con annesse macchina caff\u00e8 e ghiaccio, lavastoviglie, macina caff\u00e8. Attualmente si trova smontato a Milano ma la proprietaria \u00e8 disposta a portarlo nelle zone terremotate con i propri mezzi a patto che le vengano pagati carburante ed autostrada necessari per il trasporto. \u00c8 stata chiara nel volerlo donare a chi vuole ripartire e che con il tempo, una volta sistemati, potr\u00e0 invitarla a prendere un caff\u00e8 nel bar rimontato. \u00c8 disposta a tenerlo in magazzino per il tempo necessario che l interessato trovi ed allestisca lo spazio necessario per riaprire. Chi \u00e8 interessato mi contatti in privato."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1770919426508974/"", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
+email: ''
+cosa: 'Milano: disponibilità attrezzature bar per attività colpita dal sisma'
+descrizione: 'Tramite amici mi hanno offerto a regalo mobilio classico di un bar con annesse macchina caffè e ghiaccio, lavastoviglie, macina caffè. Attualmente si trova smontato a Milano ma la proprietaria è disposta a portarlo nelle zone terremotate con i propri mezzi a patto che le vengano pagati carburante ed autostrada necessari per il trasporto. È stata chiara nel volerlo donare a chi vuole ripartire e che con il tempo, una volta sistemati, potrà invitarla a prendere un caffè nel bar rimontato. È disposta a tenerlo in magazzino per il tempo necessario che l interessato trovi ed allestisca lo spazio necessario per riaprire. Chi è interessato mi contatti in privato.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: 'https://www.facebook.com/groups/1758670357733881/permalink/1770919426508974/'
+immagine: ''
+data: 18/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/585,177614958,2016-09-17 22:42:20,2016-09-17 22:41:20,Associazione Pescara del Tronto 24/08/2016,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Pubblicare su TW"", ""Raccolte Fondi""]",,,"{""bic"": ""BNLIITRRXXX"", ""causale"": """", ""chi"": ""Associazione Pescara del Tronto 24/08/2016"", ""data"": ""17/09/2016"", ""descrizione"": ""Associazione Pescara del Tronto ha aperto un conto corrente per le donazioni, affinch\u00e9 il denaro arrivi realmente agli abitanti di Pescara del Tronto."", ""email"": """", ""iban"": ""IBAN: IT71J0100513500000000003728"", ""intestazione"": ""PESCARA DEL TRONTO 24/08/2016"", ""link"": ""https://www.facebook.com/pescaradeltronto/posts/1360616290632749"", ""postale"": """"}","<pre><yamldata>chi: 'Associazione Pescara del Tronto 24/08/2016'
 descrizione: 'Associazione Pescara del Tronto ha aperto un conto corrente per le donazioni, affinché il denaro arrivi realmente agli abitanti di Pescara del Tronto.'
 intestazione: 'PESCARA DEL TRONTO 24/08/2016'
@@ -2329,17 +2340,6 @@ bic: ''
 postale: ''
 causale: ''
 link: 'http://bit.ly/2bM1Nqs'
-email: ''
-data: 14/09/2016
-</yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/243,176848996,2016-09-14 08:47:45,2016-09-14 08:44:03,Associazione Docenti Senza Frontiere,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Contributo Terremoto Italia"", ""chi"": ""Associazione Docenti Senza Frontiere"", ""data"": ""14/09/2016"", ""descrizione"": ""E' attivo conto corrente per una raccolta fondi immediata destinata alla ricostruzione di edifici scolastici, per aiutare, gli alunni, i Dirigenti Scolastici e gli insegnanti nella ricostruzione della comunit\u00e0 scolastica e al ripristino veloce delle condizioni di normalit\u00e0."", ""email"": """", ""iban"": ""IT46T0501812101000000175233"", ""intestazione"": ""Docenti Senza Frontiere"", ""link"": ""http://www.docentisenzafrontiere.org/it/sostienici/speciale-emergenze/terremoto.html"", ""postale"": """"}","<pre><yamldata>chi: 'Associazione Docenti Senza Frontiere'
-descrizione: 'E'' attivo conto corrente per una raccolta fondi immediata destinata alla ricostruzione di edifici scolastici, per aiutare, gli alunni, i Dirigenti Scolastici e gli insegnanti nella ricostruzione della comunità scolastica e al ripristino veloce delle condizioni di normalità.'
-intestazione: 'Docenti Senza Frontiere'
-iban: IT46T0501812101000000175233
-bic: ''
-postale: ''
-causale: 'Contributo Terremoto Italia'
-link: 'http://www.docentisenzafrontiere.org/it/sostienici/speciale-emergenze/terremoto.html'
 email: ''
 data: 14/09/2016
 </yamldata></pre>"
