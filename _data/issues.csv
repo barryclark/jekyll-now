@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/587,177641956,2016-09-18 09:39:40,2016-09-18 09:39:17,Viglili del Fuoco: interventi realizzati e situazione impegno strumenti e mezzi nelle zone colpite dal sisma,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""18/09/2016"", ""descrizione"": ""mappatura al 17 settembre 2016"", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1770896543177929/"", ""titolo"": ""Viglili del Fuoco: interventi realizzati e situazione impegno strumenti e mezzi nelle zone colpite dal sisma""}","<pre><yamldata>titolo: 'Viglili del Fuoco: interventi realizzati e situazione impegno strumenti e mezzi nelle zone colpite dal sisma'
+descrizione: 'mappatura al 17 settembre 2016'
+link: 'https://www.facebook.com/groups/1758670357733881/permalink/1770896543177929/'
+data: 18/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/586,177641734,2016-09-18 09:35:41,2016-09-18 09:33:58,Milano: disponibilità attrezzature bar per attività colpita dal sisma,,,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form"", ""Pubblicare su TW""]",,,"{""cosa"": ""Milano: disponibilit\u00e0 attrezzature bar per attivit\u00e0 colpita dal sisma"", ""data"": ""18/09/2016"", ""descrizione"": ""Tramite amici mi hanno offerto a regalo mobilio classico di un bar con annesse macchina caff\u00e8 e ghiaccio, lavastoviglie, macina caff\u00e8. Attualmente si trova smontato a Milano ma la proprietaria \u00e8 disposta a portarlo nelle zone terremotate con i propri mezzi a patto che le vengano pagati carburante ed autostrada necessari per il trasporto. \u00c8 stata chiara nel volerlo donare a chi vuole ripartire e che con il tempo, una volta sistemati, potr\u00e0 invitarla a prendere un caff\u00e8 nel bar rimontato. \u00c8 disposta a tenerlo in magazzino per il tempo necessario che l interessato trovi ed allestisca lo spazio necessario per riaprire. Chi \u00e8 interessato mi contatti in privato."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1770919426508974/"", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 cosa: 'Milano: disponibilità attrezzature bar per attività colpita dal sisma'
@@ -1193,16 +1198,6 @@ postale: ''
 causale: 'Emergenza terremoto'
 link: 'http://www.bancaetica.it/git/lazio-sud/articolo/adottiamo-lo-spaccio-di-elvis'
 email: ''
-data: 15/09/2016
-</yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/390,177148234,2016-09-15 11:05:52,2016-09-15 11:05:30,Aiutiamo Amatrice,,,"[""Accettato"", ""Contatti"", ""Form""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""Pagina Facebook per segnalare tutti i centri di raccolta di prima necessit\u00e0 esistenti nella propria citt\u00e0in tutta Italia"", ""email"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.facebook.com/Aiutiamo-Amatrice-1574932246143457"", ""lon"": """", ""nome"": ""Aiutiamo Amatrice"", ""tel"": """"}","<pre><yamldata>nome: 'Aiutiamo Amatrice'
-tel: ''
-email: ''
-descrizione: 'Pagina Facebook per segnalare tutti i centri di raccolta di prima necessità esistenti nella propria cittàin tutta Italia'
-indirizzo: ''
-lat: ''
-lon: ''
-link: 'https://www.facebook.com/Aiutiamo-Amatrice-1574932246143457'
 data: 15/09/2016
 </yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/390,177148234,2016-09-15 11:05:52,2016-09-15 11:05:30,Aiutiamo Amatrice,,,"[""Accettato"", ""Contatti"", ""Form""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""Pagina Facebook per segnalare tutti i centri di raccolta di prima necessit\u00e0 esistenti nella propria citt\u00e0in tutta Italia"", ""email"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.facebook.com/Aiutiamo-Amatrice-1574932246143457"", ""lon"": """", ""nome"": ""Aiutiamo Amatrice"", ""tel"": """"}","<pre><yamldata>nome: 'Aiutiamo Amatrice'
