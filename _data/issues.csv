@@ -1205,6 +1205,16 @@ lon: ''
 link: 'https://www.facebook.com/Aiutiamo-Amatrice-1574932246143457'
 data: 15/09/2016
 </yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/390,177148234,2016-09-15 11:05:52,2016-09-15 11:05:30,Aiutiamo Amatrice,,,"[""Accettato"", ""Contatti"", ""Form""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""Pagina Facebook per segnalare tutti i centri di raccolta di prima necessit\u00e0 esistenti nella propria citt\u00e0in tutta Italia"", ""email"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.facebook.com/Aiutiamo-Amatrice-1574932246143457"", ""lon"": """", ""nome"": ""Aiutiamo Amatrice"", ""tel"": """"}","<pre><yamldata>nome: 'Aiutiamo Amatrice'
+tel: ''
+email: ''
+descrizione: 'Pagina Facebook per segnalare tutti i centri di raccolta di prima necessità esistenti nella propria cittàin tutta Italia'
+indirizzo: ''
+lat: ''
+lon: ''
+link: 'https://www.facebook.com/Aiutiamo-Amatrice-1574932246143457'
+data: 15/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/389,177139671,2016-09-15 10:19:32,2016-09-15 10:17:57,Protezione Civile Foligno,42.95639,12.71759,"[""Accettato"", ""Contatti"", ""Form""]",,,"{""data"": ""15/09/2016"", ""descrizione"": """", ""email"": """", ""indirizzo"": ""Via Fiume Trebbia, Foligno PG"", ""lat"": 42.95639, ""link"": ""http://www.procivfoligno.it/"", ""lon"": 12.71759, ""nome"": ""Protezione Civile Foligno"", ""tel"": ""0742691207, 3204469349, 347 6302625""}","<pre><yamldata>nome: 'Protezione Civile Foligno'
 tel: '0742691207, 3204469349, 347 6302625'
 email: ''
