@@ -27,9 +27,9 @@ The Lion King – William Shakespeare's Hamlet as an animal fable
 
 '* For the full list refer to the wikipedia link in the works cited
 
-With about 99.99% certainty I can say that anyone who reads this will either recognize or know the majority of the modern versions I have listed.  However, I cannot say the same for their classical counterparts.  I feel that the reson for this discrepancy is a result of the method in which each is conveyed to the viewer.  For instance The Lion King, parrallels William Shakespeare's Hamlet almost perfectly when regarding plot points.  So why is it that people would rather watch The Lion King than read Hamlet?  The answer, visual representation.  The method that the story is delivered in is much easier to understand and 
+With about 99.99% certainty I can say that anyone who reads this will either recognize or know the majority of the modern versions I have listed.  However, I cannot say the same for their classical counterparts.  I feel that the reson for this discrepancy is a result of the method in which each is conveyed to the viewer.  For instance The Lion King, parrallels William Shakespeare's Hamlet almost perfectly when regarding plot points.  So why is it that people would rather watch The Lion King than read Hamlet?  The answer, visual representation.  The method in which the story is delivered is much easier to understand
 
 
 Works Cited:
 
-https://en.wikipedia.org/wiki/List_of_modernized_adaptations_of_old_works
+"List of modernized adaptations of old works" Wikipedia, 17 Sept. 2016, https://en.wikipedia.org/wiki/List_of_modernized_adaptations_of_old_works
