@@ -28,12 +28,12 @@ navbar-links:
     - Storie: "storie/"
   Hai bisogno?:
     - Segnala: "aiuto/"
+    - Risorse disponibili: "risorse-disponibili/"
     - Alloggi: "alloggi/"
     - Vittime: "vittime/"
     - Link utili: "link_utili/"
   Mappe: "mappe/"
   Vuoi donare?:
-    - Risorse disponibili: "risorse-disponibili/"
     - Raccolta Fondi: "fondi/"
     - Fabbisogni: "fabbisogni/"
   Il Progetto:
