@@ -2973,6 +2973,17 @@ link: 'http://www.comune.amatrice.rieti.it/codice-iban-del-comune-di-amatrice/'
 email: ''
 data: 13/09/2016
 </yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/179,176754539,2016-09-13 21:28:19,2016-09-13 21:27:24,Comune di Amatrice,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Comune di Amatrice"", ""data"": ""13/09/2016"", ""descrizione"": """", ""email"": """", ""iban"": ""IT13W 08327 73470 000000005050"", ""intestazione"": """", ""link"": ""http://www.comune.amatrice.rieti.it/codice-iban-del-comune-di-amatrice/"", ""postale"": """"}","<pre><yamldata>chi: 'Comune di Amatrice'
+descrizione: ''
+intestazione: ''
+iban: 'IT13W 08327 73470 000000005050'
+bic: ''
+postale: ''
+causale: ''
+link: 'http://www.comune.amatrice.rieti.it/codice-iban-del-comune-di-amatrice/'
+email: ''
+data: 13/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/178,176753997,2016-09-13 21:25:30,2016-09-13 21:25:00,Cisom - Corpo Italiano Soccorso Ordine di Malta,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": ""UNCRITMM"", ""causale"": """", ""chi"": ""Cisom - Corpo Italiano Soccorso Ordine di Malta"", ""data"": ""13/09/2016"", ""descrizione"": """", ""email"": """", ""iban"": ""IT50E 02008 05074 000103744409"", ""intestazione"": ""Fondazione Corpo italiano di soccorso dell'Ordine di Malta"", ""link"": ""http://www.cisom.org/le-nostre-news-da/direzione-nazionale/297-terremoto-in-italia.html"", ""postale"": """"}","<pre><yamldata>chi: 'Cisom - Corpo Italiano Soccorso Ordine di Malta'
 descrizione: ''
 intestazione: 'Fondazione Corpo italiano di soccorso dell''Ordine di Malta'
