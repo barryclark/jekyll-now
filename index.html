@@ -27,24 +27,24 @@ subtitle: Un progetto per informare sul terremoto del 24 Agosto 2016
 <a href="{{memberUrl}}">{{member.title}}</a>
 </div>
 <div class="panel-body">
-{% if member.issue.data.descrizione %}
+{% if member.issue.data.descrizione != blank %}
 <div class="row">
 <div class="col-md-12">{{member.issue.data.descrizione}}</div>
 </div>
 {% endif %}
-{% if member.issue.data.data %}
+{% if member.issue.data.data != blank %}
 <div class="row">
-<div class="col-md-4"><b>Data: </b></div><div class="col-md-8">{{member.issue.data.data}}</div>
+<div class="col-md-2"><b>Data: </b></div><div class="col-md-10">{{member.issue.data.data}}</div>
 </div>
 {% endif %}
-{% if member.issue.data.indirizzo %}
+{% if member.issue.data.indirizzo != blank %}
 <div class="row">
-<div class="col-md-4"><b>Indirizzo: </b></div><div class="col-md-8">{{member.issue.data.indirizzo}}</div>
+<div class="col-md-2"><b>Indirizzo: </b></div><div class="col-md-10">{{member.issue.data.indirizzo}}</div>
 </div>
 {% endif %}
-{% if member.issue.data.link %}
+{% if member.issue.data.link != blank %}
 <div class="row">
-<div class="col-md-4"><b>Link: </b></div><div class="col-md-8"><a href="{{member.issue.data.link}}">{{member.issue.data.link}}</a></div>
+<div class="col-md-2"><b>Link: </b></div><div class="col-md-10"><a href="{{member.issue.data.link}}">{{member.issue.data.link}}</a></div>
 </div>
 {% endif %}
 </div>
