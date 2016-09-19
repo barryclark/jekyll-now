@@ -12,6 +12,17 @@ permalink: /codereference/
 ##### Run a script on multiple files in a directory 
 
     for file in *2col; do echo $file; done
+    
+##### Copy terminal output to clipboard
+http://jetpackweb.com/blog/2009/09/23/pbcopy-in-ubuntu-command-line-clipboard/
+
+     alias pbcopy='xclip -selection clipboard'
+     alias pbpaste='xclip -selection clipboard -o'
+     whatever | pbcopy
+     
+ 
+
+http://jetpackweb.com/blog/2009/09/23/pbcopy-in-ubuntu-command-line-clipboard/
 
 ##### Add a .gitkeep statement recursively so that empty directories are kept in git structure 
 
