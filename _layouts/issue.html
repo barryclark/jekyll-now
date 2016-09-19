@@ -17,7 +17,7 @@ layout: base
   <div class="row"> <div class="col-md-4">Telefono:</div> <div class="col-md-8"> {{page.issue.data.tel}}</div> </div>
   {% endif %}
   {% if page.issue.data.email != blank %}
-  <div class="row"> <div class="col-md-4">Email:</div> <div class="col-md-8"> <a href=mailto:{{page.issue.data.email}}</a></div> </div>
+  <div class="row"> <div class="col-md-4">Email:</div> <div class="col-md-8"> <a href="mailto:{{page.issue.data.email}}">{{page.issue.data.email}}</a></div> </div>
   {% endif %}
 
   {% if page.issue.image != blank %}
