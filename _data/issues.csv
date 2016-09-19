@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/595,177718162,2016-09-19 07:23:42,2016-09-19 07:20:42,Associazione Amatrice - L'alba dei piccoli passi,,,"[""Accettato"", ""Facebook"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Associazione Amatrice - L'alba dei piccoli passi"", ""data"": ""19/09/2016"", ""descrizione"": ""Raccolta fondi per promuovere indiziative a sostegno dei bambini e ragazzi di Amatrice che permettano loro di recuperare la serenit\u00e0 e la routine quotidiana. Raccolta online via PayPal."", ""email"": ""lalbadeipiccolipassi@libero.it"", ""iban"": """", ""intestazione"": """", ""link"": ""https://mobile.paypal.com/it/cgi-bin/webscr?cmd=_express-checkout-mobile&useraction=commit&token=EC-7SH13097E32300022#m"", ""postale"": """"}","<pre><yamldata>chi: 'Associazione Amatrice - L''alba dei piccoli passi'
+descrizione: 'Raccolta fondi per promuovere indiziative a sostegno dei bambini e ragazzi di Amatrice che permettano loro di recuperare la serenità e la routine quotidiana. Raccolta online via PayPal.'
+intestazione: ''
+iban: ''
+bic: ''
+postale: ''
+causale: ''
+link: 'https://mobile.paypal.com/it/cgi-bin/webscr?cmd=_express-checkout-mobile&useraction=commit&token=EC-7SH13097E32300022#m'
+email: lalbadeipiccolipassi@libero.it
+data: 19/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/594,177716817,2016-09-19 07:23:02,2016-09-19 07:10:26,Nasce l'associazione Amatrice - L'alba dei piccoli passi,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""19/09/2016"", ""descrizione"": ""Ad Amatrice, grazie ad un gruppo di genitori, \u00e8 nata l'associazione Amatrice - L'alba dei piccoli passi, il cui scopo \u00e8 offrire attivit\u00e0 e strutture finalizzate al recupero della routine quotidiana a scopo ricreativo e di sostegno scolastico e psicologico per i piccoli e gli adolescenti di Amatrice. Per contatti e per associarsi: lalbadeipiccolipassi@libero.it o 3665076919 (Arianna)."", ""link"": ""https://www.facebook.com/AAPP-Amatrice-lAlba-dei-Piccoli-Passi-1646974798948724/"", ""titolo"": ""Nasce l'associazione Amatrice - L'alba dei piccoli passi""}","<pre><yamldata>titolo: 'Nasce l''associazione Amatrice - L''alba dei piccoli passi'
 descrizione: 'Ad Amatrice, grazie ad un gruppo di genitori, è nata l''associazione Amatrice - L''alba dei piccoli passi, il cui scopo è offrire attività e strutture finalizzate al recupero della routine quotidiana a scopo ricreativo e di sostegno scolastico e psicologico per i piccoli e gli adolescenti di Amatrice. Per contatti e per associarsi: lalbadeipiccolipassi@libero.it o 3665076919 (Arianna).'
 link: 'https://www.facebook.com/AAPP-Amatrice-lAlba-dei-Piccoli-Passi-1646974798948724/'
