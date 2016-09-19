@@ -239,7 +239,6 @@ CA: Craig Andrews
 AH: Adrian Hesketh
 ND: Neil Dunlop
 BB: Ben Brunton
-CA: Craig Andrews
 DR: Dan Rathbone
 BH: Ben Houghton
 TW: Tom Walton
