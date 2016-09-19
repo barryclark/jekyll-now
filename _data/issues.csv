@@ -24,6 +24,16 @@ lat: '41.836563'
 lon: '12.598515'
 data: 19/09/2016
 </yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/603,177813861,2016-09-19 19:18:26,2016-09-19 15:17:23,Reseda scsi onlus,,,"[""Accettato"", ""Contatti"", ""Donazioni"", ""Form""]",,,"{""data"": ""19/09/2016"", ""descrizione"": ""Referente del progetto Amatrice 2.0 - Consulenza gratuita su bioedilizia ed energia rinniovabili, progetti sociali, permacultura e agricoltura naturale"", ""email"": ""ecoistituto@resedaweb.org"", ""indirizzo"": """", ""lat"": """", ""link"": ""https://amatriceduepuntozero.wordpress.com/"", ""lon"": """", ""nome"": ""Reseda scsi onlus"", ""tel"": ""069364170""}","<pre><yamldata>nome: 'Reseda scsi onlus'
+tel: '069364170'
+email: ecoistituto@resedaweb.org
+descrizione: 'Referente del progetto Amatrice 2.0 - Consulenza gratuita su bioedilizia ed energia rinniovabili, progetti sociali, permacultura e agricoltura naturale'
+indirizzo: ''
+lat: ''
+lon: ''
+link: 'https://amatriceduepuntozero.wordpress.com/'
+data: 19/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/598,177799880,2016-09-19 14:28:58,2016-09-19 14:27:39,"Uisp Rieti - Crowdfunding ""Siamo con voi""",,,"[""Accettato"", ""Bollettino"", ""Form"", ""Raccolte Fondi"", ""Twitter""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Uisp Rieti - Crowdfunding \""Siamo con voi\"""", ""data"": ""19/09/2016"", ""descrizione"": ""UISP Rieti, insieme a RCS, Running Motivator e il magazine Correre, promue la campagna di crowdfunding \""Siamo con voi\"" per iniziative a carattere sociale e sportivo, dall'adeguamento alla realizzazione di impianti per lo svolgimento di attivit\u00e0 sportive o ricreative, oltre che per lo sviluppo di progetti necessari a favorire l\u2019aggregazione sociale, soprattutto di giovani e anziani."", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""https://www.retedeldono.it/it/siamoconvoi"", ""postale"": """"}","<pre><yamldata>chi: 'Uisp Rieti - Crowdfunding ""Siamo con voi""'
 descrizione: 'UISP Rieti, insieme a RCS, Running Motivator e il magazine Correre, promue la campagna di crowdfunding ""Siamo con voi"" per iniziative a carattere sociale e sportivo, dall''adeguamento alla realizzazione di impianti per lo svolgimento di attività sportive o ricreative, oltre che per lo sviluppo di progetti necessari a favorire l’aggregazione sociale, soprattutto di giovani e anziani.'
 intestazione: ''
