@@ -92,4 +92,20 @@ Ecco i nostri account ufficiali:<br /><br />
               </span>&nbsp;&nbsp;Gruppo Flickr
             </a>
           </li>
+              <li>
+            <a href="/2016-08-26-usare-waze/" title="Waze">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-car fa-stack-1x fa-inverse"></i>
+              </span>&nbsp;&nbsp;Waze
+            </a>per tutto ciò che riguarda la viabilità
+          </li>
+                 <li>
+            <a itemprop="sameAs" href="mailto:terremotocentroita+rimozione@gmail.com" title="Email">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+              </span>&nbsp;&nbsp;Email
+            </a>per segnalare contenuti da rimuovere
+          </li>
 </div>
