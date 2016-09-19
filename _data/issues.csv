@@ -10,6 +10,13 @@ link: 'http://permaculturaitalia.net/task-force-permacultura-le-zone-terremotate
 email: ''
 data: 19/09/2016
 </yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/606,177830762,2016-09-19 19:13:35,2016-09-19 16:23:55,Bar Ciccio punto ristoro campo,42.77466,13.296992,"[""Accettato"", ""Telegram""]",,http://i.imgur.com/2aUk4Cb.jpg,"{""data"": ""19/09/2016"", ""descrizione"": ""Bar Ciccio punto ristoro campo di Borgo ad Arquata del Tronto"", ""immagine"": ""http://i.imgur.com/2aUk4Cb.jpg"", ""lat"": ""42.77466"", ""lon"": ""13.296992"", ""telegram_user"": ""Sfreggio2s""}","<pre><yamldata>telegram_user: Sfreggio2s
+descrizione: 'Bar Ciccio punto ristoro campo di Borgo ad Arquata del Tronto'
+immagine: 'http://i.imgur.com/2aUk4Cb.jpg'
+lat: '42.77466'
+lon: '13.296992'
+data: 19/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/598,177799880,2016-09-19 14:28:58,2016-09-19 14:27:39,"Uisp Rieti - Crowdfunding ""Siamo con voi""",,,"[""Accettato"", ""Bollettino"", ""Form"", ""Raccolte Fondi"", ""Twitter""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Uisp Rieti - Crowdfunding \""Siamo con voi\"""", ""data"": ""19/09/2016"", ""descrizione"": ""UISP Rieti, insieme a RCS, Running Motivator e il magazine Correre, promue la campagna di crowdfunding \""Siamo con voi\"" per iniziative a carattere sociale e sportivo, dall'adeguamento alla realizzazione di impianti per lo svolgimento di attivit\u00e0 sportive o ricreative, oltre che per lo sviluppo di progetti necessari a favorire l\u2019aggregazione sociale, soprattutto di giovani e anziani."", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""https://www.retedeldono.it/it/siamoconvoi"", ""postale"": """"}","<pre><yamldata>chi: 'Uisp Rieti - Crowdfunding ""Siamo con voi""'
 descrizione: 'UISP Rieti, insieme a RCS, Running Motivator e il magazine Correre, promue la campagna di crowdfunding ""Siamo con voi"" per iniziative a carattere sociale e sportivo, dall''adeguamento alla realizzazione di impianti per lo svolgimento di attività sportive o ricreative, oltre che per lo sviluppo di progetti necessari a favorire l’aggregazione sociale, soprattutto di giovani e anziani.'
 intestazione: ''
