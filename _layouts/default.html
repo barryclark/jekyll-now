@@ -52,7 +52,7 @@
 <html lang="en-us">
 	<head>
 		<title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
-		{% if page.noindex %}<meta name="robots" content="noindex" />{% endif %}
+		{% if page.noindex %}<meta name="robots" content="noindex" />{% endif %}{{ page.noindex }}
 		
 		{% include meta.html %}
 		{% include opengraph.html %}
