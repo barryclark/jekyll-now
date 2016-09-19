@@ -1,7 +1,7 @@
 ---
 published: true
 layout: post
-title:  "利用LSTM构建半检索式Chatbots"
+title:  "Chatbot 3: 利用LSTM构建半检索式Chatbots"
 date:   2016-06-15 11:15
 categories: LSTM chatbot 聊天机器人 人工智能
 ---
