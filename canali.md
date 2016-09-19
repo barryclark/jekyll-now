@@ -4,8 +4,8 @@ title: Canali di comunicazione
 permalink: /canali/
 ---
 
-<div class="canali">
-Ecco i nostri account ufficiali:<br /><br />
+<div class="segnala">
+<p>Se hai una necessità o vuoi comunicare aggiornamenti, ci sono numerosi modi di contattarci: </p>
  {% if site.author.facebook and site.footer-links-active.facebook %}
           <li>
             <a href="https://www.facebook.com/{{ site.author.facebook }}" title="Facebook">
@@ -13,7 +13,7 @@ Ecco i nostri account ufficiali:<br /><br />
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
               </span>&nbsp;&nbsp;Gruppo Facebook
-            </a>
+            </a><span>da usare per informazioni generiche</span>
           </li>
           {% endif %}
          {% if site.author.github and site.footer-links-active.github %}
@@ -23,7 +23,7 @@ Ecco i nostri account ufficiali:<br /><br />
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-github fa-stack-1x fa-inverse"></i>
               </span>&nbsp;&nbsp;Repository GitHub
-            </a>
+            </a><span>vuoi collaborare?</span>
           </li>
           {% endif %}
           {% if site.author.twitter and site.footer-links-active.twitter %}
@@ -33,7 +33,7 @@ Ecco i nostri account ufficiali:<br /><br />
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
               </span>&nbsp;&nbsp;Pagina Twitter
-            </a>
+            </a><span>da usare per informazioni generiche</span>
           </li>
           {% endif %}
            {% if site.author.instagram and site.footer-links-active.instagram %}
@@ -43,7 +43,7 @@ Ecco i nostri account ufficiali:<br /><br />
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
               </span>&nbsp;&nbsp;Pagina Instagram
-            </a>
+            </a><span>per rimanere aggiornato</span>
           </li>
           {% endif %}
           {% if site.author.telegram and site.footer-links-active.telegram %}
@@ -53,7 +53,7 @@ Ecco i nostri account ufficiali:<br /><br />
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-paper-plane fa-stack-1x fa-inverse"></i>
               </span>&nbsp;&nbsp;Canale Telegram
-            </a>
+            </a><span>per rimanere aggiornato</span>
           </li>
           {% endif %}
           <li>
@@ -62,7 +62,7 @@ Ecco i nostri account ufficiali:<br /><br />
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-paper-plane fa-stack-1x fa-inverse"></i>
               </span>&nbsp;&nbsp;BOT Telegram
-            </a>
+            </a><span>per segnalazioni da smartphone</span>
           </li>
           {% if site.author.medium and site.footer-links-active.medium %}
           <li>
@@ -71,7 +71,7 @@ Ecco i nostri account ufficiali:<br /><br />
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-medium fa-stack-1x fa-inverse"></i>
               </span>&nbsp;&nbsp;Canale Medium
-            </a>
+            </a><span>per rimanere aggiornato</span>
           </li>
           {% endif %}
            {% if site.footer-links-active.rss %}
@@ -81,7 +81,7 @@ Ecco i nostri account ufficiali:<br /><br />
 				<i class="fa fa-circle fa-stack-2x"></i>
 				<i class="fa fa-rss fa-stack-1x fa-inverse"></i>
 			  </span>&nbsp;&nbsp;Feed RSS
-			</a>
+			</a><span>per rimanere aggiornato</span>
 		  </li>
           {% endif %}
            <li>
@@ -90,7 +90,7 @@ Ecco i nostri account ufficiali:<br /><br />
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-flickr fa-stack-1x fa-inverse"></i>
               </span>&nbsp;&nbsp;Gruppo Flickr
-            </a>
+            </a><span>per caricare foto e media</span>
           </li>
               <li>
             <a href="/2016-08-26-usare-waze/" title="Waze">
@@ -108,4 +108,5 @@ Ecco i nostri account ufficiali:<br /><br />
               </span>&nbsp;&nbsp;Email
             </a>per segnalare contenuti da rimuovere
           </li>
+          <p>Tutto ciò che ci mandi sarà gestito dal nostro team, che provvederà alla pubblicazione sul sito appena possibile. Ricordati che usando i nostri canali accetti auomaticamente di sottoscrivere l'<a href="http://terremotocentroitalia.info/legal_segnalazioni/">informativa legale</a> per segnalare informazioni a questo progetto.</p>
 </div>
