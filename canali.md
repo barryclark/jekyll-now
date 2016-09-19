@@ -13,7 +13,7 @@ permalink: /canali/
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
               </span>&nbsp;&nbsp;Gruppo Facebook
-            </a><span>da usare per informazioni generiche</span>
+            </a><span>da usare per comunicare con noi su Facebook</span>
           </li>
           {% endif %}
          {% if site.author.github and site.footer-links-active.github %}
@@ -23,7 +23,7 @@ permalink: /canali/
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-github fa-stack-1x fa-inverse"></i>
               </span>&nbsp;&nbsp;Repository GitHub
-            </a><span>vuoi collaborare?</span>
+            </a><span>per collaborare agli sviluppi</span>
           </li>
           {% endif %}
           {% if site.author.twitter and site.footer-links-active.twitter %}
@@ -33,7 +33,7 @@ permalink: /canali/
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
               </span>&nbsp;&nbsp;Pagina Twitter
-            </a><span>da usare per informazioni generiche</span>
+            </a><span>da usare per comunicare con noi su Twitter</span>
           </li>
           {% endif %}
            {% if site.author.instagram and site.footer-links-active.instagram %}
@@ -43,7 +43,7 @@ permalink: /canali/
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
               </span>&nbsp;&nbsp;Pagina Instagram
-            </a><span>per rimanere aggiornato</span>
+            </a><span>per vedere le foto su Instagram</span>
           </li>
           {% endif %}
           {% if site.author.telegram and site.footer-links-active.telegram %}
@@ -53,7 +53,7 @@ permalink: /canali/
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-paper-plane fa-stack-1x fa-inverse"></i>
               </span>&nbsp;&nbsp;Canale Telegram
-            </a><span>per rimanere aggiornato</span>
+            </a><span>per restare aggiornato con le nostre notizie</span>
           </li>
           {% endif %}
           <li>
@@ -62,7 +62,7 @@ permalink: /canali/
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-paper-plane fa-stack-1x fa-inverse"></i>
               </span>&nbsp;&nbsp;BOT Telegram
-            </a><span>per segnalazioni da smartphone</span>
+            </a><span>per inviare segnalazioni con smartphone dal "campo"</span>
           </li>
           {% if site.author.medium and site.footer-links-active.medium %}
           <li>
@@ -71,7 +71,7 @@ permalink: /canali/
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-medium fa-stack-1x fa-inverse"></i>
               </span>&nbsp;&nbsp;Canale Medium
-            </a><span>per rimanere aggiornato</span>
+            </a><span>per leggere le nostre storie</span>
           </li>
           {% endif %}
            {% if site.footer-links-active.rss %}
@@ -81,7 +81,7 @@ permalink: /canali/
 				<i class="fa fa-circle fa-stack-2x"></i>
 				<i class="fa fa-rss fa-stack-1x fa-inverse"></i>
 			  </span>&nbsp;&nbsp;Feed RSS
-			</a><span>per rimanere aggiornato</span>
+			</a><span>per rimanere aggiornato sui nostri post</span>
 		  </li>
           {% endif %}
            <li>
@@ -98,7 +98,7 @@ permalink: /canali/
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-car fa-stack-1x fa-inverse"></i>
               </span>&nbsp;&nbsp;Waze
-            </a>per tutto ciò che riguarda la viabilità
+            </a>per informazioni su tutto ciò che riguarda la viabilità
           </li>
                  <li>
             <a itemprop="sameAs" href="mailto:terremotocentroita+rimozione@gmail.com" title="Email">
@@ -106,7 +106,7 @@ permalink: /canali/
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
               </span>&nbsp;&nbsp;Email
-            </a>per segnalare contenuti da rimuovere
+            </a>per segnalare contenuti da rimuovere o scriverci
           </li>
-          <p>Tutto ciò che ci mandi sarà gestito dal nostro team, che provvederà alla pubblicazione sul sito appena possibile. Ricordati che usando i nostri canali accetti auomaticamente di sottoscrivere l'<a href="http://terremotocentroitalia.info/legal_segnalazioni/">informativa legale</a> per segnalare informazioni a questo progetto.</p>
+          <p>Tutto ciò che ci invii sarà gestito dal nostro team, che potrà provvedere alla pubblicazione delle informazioni sul sito appena possibile. Ricordati che usando i nostri canali accetti automaticamente di sottoscrivere l'<a href="http://terremotocentroitalia.info/legal_segnalazioni/">informativa legale</a> per le informazioni di questo progetto.</p>
 </div>
