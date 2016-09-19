@@ -11,35 +11,35 @@ layout: base
 
 <div class="container" role="main">
   <div class="row"> <div class="col-md-12"><h2>{{page.issue.title}}</h2> </div> </div>
-  <div class="row"> <div class="col-md-4">Descrizione:</div> <div class="col-md-8"> {{page.issue.data.descrizione}}</div> </div>
+  <div class="row"> <div class="col-md-2">Descrizione:</div> <div class="col-md-10"> {{page.issue.data.descrizione}}</div> </div>
 
   {% if page.issue.data.tel != blank %}
-  <div class="row"> <div class="col-md-4">Telefono:</div> <div class="col-md-8"> {{page.issue.data.tel}}</div> </div>
+  <div class="row"> <div class="col-md-2">Telefono:</div> <div class="col-md-10"> {{page.issue.data.tel}}</div> </div>
   {% endif %}
   {% if page.issue.data.email != blank %}
-  <div class="row"> <div class="col-md-4">Email:</div> <div class="col-md-8"> <a href="mailto:{{page.issue.data.email}}">{{page.issue.data.email}}</a></div> </div>
+  <div class="row"> <div class="col-md-2">Email:</div> <div class="col-md-10"> <a href="mailto:{{page.issue.data.email}}">{{page.issue.data.email}}</a></div> </div>
   {% endif %}
 
   {% if page.issue.image != blank %}
-  <div class="row"> <div class="col-md-4">Immagine:</div> <div class="col-md-8"> <img alt="immagine" src="{{page.issue.image}}"></img> </div> </div>
+  <div class="row"> <div class="col-md-2">Immagine:</div> <div class="col-md-10"> <img alt="immagine" src="{{page.issue.image}}"></img> </div> </div>
   {% endif %}
   {% if page.issue.data.link != blank %}
-  <div class="row"> <div class="col-md-4">Link Fonte:</div> <div class="col-md-8"> <a href="{{page.issue.data.link}}">{{page.issue.data.link}}</a></div> </div>
+  <div class="row"> <div class="col-md-2">Link Fonte:</div> <div class="col-md-10"> <a href="{{page.issue.data.link}}">{{page.issue.data.link}}</a></div> </div>
   {% endif %}
 
   {% if page.issue.data.indirizzo != blank %}
-  <div class="row"> <div class="col-md-4">Indirizzo:</div> <div class="col-md-8"> {{page.issue.data.indirizzo}}</div> </div>
+  <div class="row"> <div class="col-md-2">Indirizzo:</div> <div class="col-md-10"> {{page.issue.data.indirizzo}}</div> </div>
   {% endif %}
 
   {% if page.issue.lat != blank %}
-  <div class="row"> <div class="col-md-4">latitudine:</div> <div class="col-md-8"> {{page.issue.lat}} </div> </div>
-  <div class="row"> <div class="col-md-4">longitudine:</div> <div class="col-md-8"> {{page.issue.lon}} </div> </div>
-  <div class="row"> <div class="col-md-4">Mappa:</div><div class="col-md-4"> <div id="map"></div> </div> </div>
+  <div class="row"> <div class="col-md-2">latitudine:</div> <div class="col-md-10"> {{page.issue.lat}} </div> </div>
+  <div class="row"> <div class="col-md-2">longitudine:</div> <div class="col-md-10"> {{page.issue.lon}} </div> </div>
+  <div class="row"> <div class="col-md-2">Mappa:</div><div class="col-md-4"> <div id="map"></div> </div> </div>
   {% endif %}
 
-  <div class="row"> <div class="col-md-4">Link Segnalazione:</div> <div class="col-md-8"> <a href="{{page.issue.url}}">{{page.issue.url}}</a></div> </div>
-  <div class="row"> <div class="col-md-4">Creato:</div> <div class="col-md-8"> {{page.issue.created_at | italianDate}} </div> </div>
-  <div class="row"> <div class="col-md-4">Aggiornato:</div> <div class="col-md-8"> {{page.issue.updated_at | italianDate}} </div> </div>
+  <div class="row"> <div class="col-md-2">Link Segnalazione:</div> <div class="col-md-10"> <a href="{{page.issue.url}}">{{page.issue.url}}</a></div> </div>
+  <div class="row"> <div class="col-md-2">Creato:</div> <div class="col-md-10"> {{page.issue.created_at | italianDate}} </div> </div>
+  <div class="row"> <div class="col-md-2">Aggiornato:</div> <div class="col-md-10"> {{page.issue.updated_at | italianDate}} </div> </div>
 
   {% include social-share.html %}
 
