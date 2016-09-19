@@ -60,7 +60,7 @@ layout: default
 - Από κάποιον ιδιώτη στην Ελλάδα που θα τον εντοπίσετε στο [Localbitcoins](https://localbitcoins.com/) ή στο [BuyBitcoin.gr](https://www.facebook.com/BuyBitcoin.gr).
 - Από το ανταλλακτήριο [Chip-Chap](https://chip-chap.com/) με κατάθεση μετρητών στα μηχανήματα EasyPay της Τράπεζας Πειραιώς ή με κατάθεση/έμβασμα σε λογαριασμό της Τράπεζας Πειραιώς. Χρεώνει 5% πάνω στην ισοτιμία του ανταλλακτηρίου [Kraken](https://www.kraken.com) τη στιγμή της αγοράς Bitcoin, η οποία είναι μερικές ώρες αφού τα χρήματα πιστωθούν στον λογαριασμό της Πειραιώς.
 
-    Χρησιμοποιούμε την εφαρμογή Chip-Chap σε Android ή επισκεπτόμαστε τη σελίδα [https://web.chip-chap.com](https://web.chip-chap.com/) (δεν λειτουργεί σε κάποιους browsers π.χ. Safari σε Mac) και επιλέγουμε EasyPay.
+    Χρησιμοποιούμε την εφαρμογή Chip-Chap σε Android ή επισκεπτόμαστε τη σελίδα [https://web.chip-chap.com](https://web.chip-chap.com/) και επιλέγουμε EasyPay.
 
 	![](images/Page 1.png)
 
@@ -165,7 +165,7 @@ layout: default
 - Προσθέστε κάποια σχετική [εικόνα](https://en.bitcoin.it/wiki/Promotional_graphics) (π.χ. Bitcoin Accepted Here) στο κατάστημά σας και στην ιστοσελίδα σας.
 - Στείλε μας email (αναγράφεται στο τέλος της σελίδας) ώστε να σας προσθέσουμε στη σελίδα αυτή. Ή κάνετε ένα Pull Request στο GitHub!
 
-Τελευταία ενημέρωση: 2016-08-12
+Τελευταία ενημέρωση: 2016-09-19
 
 <!-- <div class="posts">
   {% for post in site.posts %}
