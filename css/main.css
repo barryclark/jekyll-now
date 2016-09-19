@@ -733,25 +733,8 @@ div.panel-info > div.panel-heading > span.anchor {
 }
 
 /* Pagina canali di comunicazione */
-div.canali  {
-	margin-left: 35%;
-}
-@media only screen and (max-width: 700px) {
-  div.canali  {
-    margin-left:20%;
-  }
-}
-@media only screen and (max-width: 500px) {
-  div.canali  {
-    margin-left:5%;
-  }
-}
-
-/* FINE Pagina canali di comunicazione */
-
-/* Pagina segnala */
 div.segnala  {
-	margin-left: 12%;
+	margin-left: 10%;
 	margin-bottom:3%;
 }
 
@@ -774,4 +757,4 @@ div.segnala > li {
 }
 }
 
-/* FINE Pagina segnala */
+/* FINE Pagina canali di comunicazione */
