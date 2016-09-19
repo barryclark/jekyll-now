@@ -17,8 +17,8 @@ lat: '42.77466'
 lon: '13.296992'
 data: 19/09/2016
 </yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/604,177816786,2016-09-19 19:15:18,2016-09-19 15:28:33,CiAo sono tommaso la mia segna,41.836563,12.598515,"[""Accettato"", ""Fabbisogni"", ""Telegram""]",,,"{""data"": ""19/09/2016"", ""descrizione"": ""CiAo sono tommaso la mia segnalazione \u00e8 per Capricchia frazione di Amatrice in questo paese servirebbero 16metri cubi di sabbia lavata grossolana, per qualsiasi segnalazione utile potete contattare il num 3408131341 grazie della disponibilit\u00e0 buonaserata"", ""immagine"": """", ""lat"": ""41.836563"", ""lon"": ""12.598515"", ""telegram_user"": """"}","<pre><yamldata>telegram_user: ''
-descrizione: 'CiAo sono tommaso la mia segnalazione è per Capricchia frazione di Amatrice in questo paese servirebbero 16metri cubi di sabbia lavata grossolana, per qualsiasi segnalazione utile potete contattare il num 3408131341 grazie della disponibilità buonaserata'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/604,177816786,2016-09-19 19:17:25,2016-09-19 15:28:33,CiAo sono tommaso la mia segna,41.836563,12.598515,"[""Accettato"", ""Fabbisogni"", ""Telegram""]",,,"{""data"": ""19/09/2016"", ""immagine"": """", ""lat"": ""41.836563"", ""lon"": ""12.598515"", ""telegram_user"": """", ""tommaso \u00e8 a Capricchia frazione di Amatrice"": ""in questo paese servirebbero 16 metri cubi di sabbia lavata grossolana, per qualsiasi segnalazione utile potete contattare il num 3408131341'""}","<pre><yamldata>telegram_user: ''
+tommaso è a Capricchia frazione di Amatrice: in questo paese servirebbero 16 metri cubi di sabbia lavata grossolana, per qualsiasi segnalazione utile potete contattare il num 3408131341'
 immagine: ''
 lat: '41.836563'
 lon: '12.598515'
