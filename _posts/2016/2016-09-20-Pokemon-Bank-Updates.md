@@ -3,7 +3,7 @@ layout: post
 title: "Pokémon Bank Updates and new Sun and Moon Pokémon."
 description: "The Pokémon bank is getting some updates to support Sun and Moon, but also to transfer from Red, Blue and Yellow."
 category: video games
-featured: pokebank.jpg
+featured: pokebank.png
 tags: [video games, pokemon, pokemon sun, pokemon moon, the pokemon company, gamefreak, nintendo, pokemon bank]
 author: Rob Kalajian
 ---
@@ -16,7 +16,7 @@ The Poké Transporter will also be updated in January allowing players of the Vi
 
 Also announced today were some new Pokémon from Sun and Moon:
 
-<img src="/images/sunmoon/evenmorenew.jpg" class="float-right"/>
+<img src="/images/sunmoon/evenmorenew.jpg" width="300" class="float-right"/>
 **Passimian**\\
 **Type: Fighting**
 
