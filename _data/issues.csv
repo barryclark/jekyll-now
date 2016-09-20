@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/614,177982434,2016-09-20 07:28:06,2016-09-20 07:10:42,Bando della Regione Lazio per fornitura di stalle provvisorie,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""Pubblicare su FB""]",,,"{""data"": ""20/09/2016"", ""descrizione"": ""Annunciata dall'assessore all'Agricoltura della Regione Lazio, Carlo Hausmann, l'apertura del bando per reperire il fornitore dei primi ricoveri provvisori per il bestiame nelle zone terremotate. Dovranno ospitare, a seconda degli animali, da 20 a 90 capi. Le strutture, cosiddetti tunnel, sostituiranno provvisoriamente le stalle rese inagibili dal terremoto. Saranno messe a disposizione in comodato d'uso gratuito. Inoltre sar\u00e0 attivata la misura del Psr che consente di finanziare al 100% tutte le spese affrontate dagli imprenditori agricoli per ricostituire il patrimonio aziendale."", ""link"": ""http://www.regioni.it/news/2016/09/19/terremoto-prima-casetta-agricola-martina-cosi-si-riparte-476600/"", ""titolo"": ""Bando della Regione Lazio per fornitura di stalle provvisorie""}","<pre><yamldata>titolo: 'Bando della Regione Lazio per fornitura di stalle provvisorie'
+descrizione: 'Annunciata dall''assessore all''Agricoltura della Regione Lazio, Carlo Hausmann, l''apertura del bando per reperire il fornitore dei primi ricoveri provvisori per il bestiame nelle zone terremotate. Dovranno ospitare, a seconda degli animali, da 20 a 90 capi. Le strutture, cosiddetti tunnel, sostituiranno provvisoriamente le stalle rese inagibili dal terremoto. Saranno messe a disposizione in comodato d''uso gratuito. Inoltre sarà attivata la misura del Psr che consente di finanziare al 100% tutte le spese affrontate dagli imprenditori agricoli per ricostituire il patrimonio aziendale.'
+link: 'http://www.regioni.it/news/2016/09/19/terremoto-prima-casetta-agricola-martina-cosi-si-riparte-476600/'
+data: 20/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/612,177978104,2016-09-20 07:26:20,2016-09-20 06:43:42,Cassa integrazione per le imprese edili colpite dal terremoto,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""20/09/2016"", ""descrizione"": ""Mercoled\u00ec 21 settembre alle ore 10.30 sar\u00e0 sottoscritto, presso l\u2019ufficio di Amatrice della Confartigianato in piazza del Donatore, l\u2019Accordo per la Cassa Integrazione Guadagni Ordinaria per evento sismico, a favore delle imprese del comparto delle costruzioni. Saranno interessate tutte le imprese dell\u2019edilizia e affini colpite dal terremoto."", ""link"": ""http://www.confartigianatorieti.com/19/09/2016/cigo-per-imprese-edili-colpite-dal-terremoto/"", ""titolo"": ""Cassa integrazione per le imprese edili colpite dal terremoto""}","<pre><yamldata>titolo: 'Cassa integrazione per le imprese edili colpite dal terremoto'
 descrizione: 'Mercoledì 21 settembre alle ore 10.30 sarà sottoscritto, presso l’ufficio di Amatrice della Confartigianato in piazza del Donatore, l’Accordo per la Cassa Integrazione Guadagni Ordinaria per evento sismico, a favore delle imprese del comparto delle costruzioni. Saranno interessate tutte le imprese dell’edilizia e affini colpite dal terremoto.'
 link: 'http://www.confartigianatorieti.com/19/09/2016/cigo-per-imprese-edili-colpite-dal-terremoto/'
@@ -2272,17 +2277,6 @@ bic: ''
 postale: ''
 causale: 'Raccolta Fondi Terremoto'
 link: 'https://www.facebook.com/315609228549383/photos/a.398406703602968.1073741827.315609228549383/973288642781435/?type=3&theater'
-email: ''
-data: 14/09/2016
-</yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/268,176856590,2016-09-14 09:20:53,2016-09-14 09:19:58,Asd Arieti Rugby Rieti 2014,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Asd Arieti Rugby Rieti 2014"", ""data"": ""14/09/2016"", ""descrizione"": ""Il rugby reatino ha aperto un conto per la raccolta di fondi finalizzati alla ricostruzione dei campi sportivi amatriciani, il tutto in continuo contatto con i consiglieri comunali di amatrice Filippo Palombini e Patrizia Catenacci, delegati al progetto, e con il sostegno della Federazione Italiana Rugby, che ha coinvolto tutte le societ\u00e0 italiane. Il conto \u00e8 stato aperto presso la Banca di Credito Cooperativo del Velino, Filiale di Rieticon."", ""email"": """", ""iban"": ""IT07L0874314600000020302818"", ""intestazione"": """", ""link"": ""http://www.rietilife.com/2016/09/04/anche-il-rugby-adotta-unopera-limpegno-di-arieti-e-azzurri-a-ricostruire-impianti-sportivi/"", ""postale"": """"}","<pre><yamldata>chi: 'Asd Arieti Rugby Rieti 2014'
-descrizione: 'Il rugby reatino ha aperto un conto per la raccolta di fondi finalizzati alla ricostruzione dei campi sportivi amatriciani, il tutto in continuo contatto con i consiglieri comunali di amatrice Filippo Palombini e Patrizia Catenacci, delegati al progetto, e con il sostegno della Federazione Italiana Rugby, che ha coinvolto tutte le società italiane. Il conto è stato aperto presso la Banca di Credito Cooperativo del Velino, Filiale di Rieticon.'
-intestazione: ''
-iban: IT07L0874314600000020302818
-bic: ''
-postale: ''
-causale: ''
-link: 'http://www.rietilife.com/2016/09/04/anche-il-rugby-adotta-unopera-limpegno-di-arieti-e-azzurri-a-ricostruire-impianti-sportivi/'
 email: ''
 data: 14/09/2016
 </yamldata></pre>"
