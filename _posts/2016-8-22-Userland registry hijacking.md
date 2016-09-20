@@ -64,7 +64,9 @@ title: Userland registry hijacking
 ---
 
 如果劫持系统某个计划任务对应的注册表键值，修改其中要启动的dll绝对路径，那么仅需普通用户权限就能实现一个后门，具体操作如下：
+
 ### 1、查看计划任务同注册表的对应关系
+
 系统中的计划任务同注册表HKCU:\Software\Classes\CLSID\下的键值存在对应关系，可借助`Matt Nelson@enigma0x3`分享的脚本直接查看
 
 **下载地址：**
