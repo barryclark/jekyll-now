@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/611,177977630,2016-09-20 07:25:47,2016-09-20 06:40:33,Gendarmeria vaticana,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Gendarmeria vaticana"", ""data"": ""20/09/2016"", ""descrizione"": ""Il 17 dicembre Claudio Baglioni al concerto di beneficenza \""Avrai\"" nell'aula Paolo Vi in Vaticano. I proventi saranno destinati in parte ai bambini terremotati della Valle del Tronto e in parte al progetto del Bambino Ges\u00f9 per un ospedale a Bangui, capitale del Centrafrica."", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""http://www.ilmessaggero.it/rieti/rieti_terremoto_baglioni_vaticano-1974383.html"", ""postale"": """"}","<pre><yamldata>chi: 'Gendarmeria vaticana'
+descrizione: 'Il 17 dicembre Claudio Baglioni al concerto di beneficenza ""Avrai"" nell''aula Paolo Vi in Vaticano. I proventi saranno destinati in parte ai bambini terremotati della Valle del Tronto e in parte al progetto del Bambino Gesù per un ospedale a Bangui, capitale del Centrafrica.'
+intestazione: ''
+iban: ''
+bic: ''
+postale: ''
+causale: ''
+link: 'http://www.ilmessaggero.it/rieti/rieti_terremoto_baglioni_vaticano-1974383.html'
+email: ''
+data: 20/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/610,177976928,2016-09-20 07:24:59,2016-09-20 06:36:10,Moduli abitativi dal Friuli Venezia Giulia per agricoltori e allevatori,,,"[""Accettato"", ""Alloggi"", ""Donazioni"", ""Form"", ""Notizie Utili"", ""Pubblicare su FB""]",,,"{""data"": ""20/09/2016"", ""descrizione"": ""I moduli saranno in tutto 70, ciascuno di 16 metri quadri dotati di bagno e servizi. Donati dall'impresa Danieli di Buttrio sono arrivati il 19 settembre 2016 grazie alla Protezione civile regionale del Friuli Venezia Giulia."", ""link"": ""http://www.ilmessaggero.it/rieti/rieti_terremoto_friuli_case-1974875.html"", ""titolo"": ""Moduli abitativi dal Friuli Venezia Giulia per agricoltori e allevatori""}","<pre><yamldata>titolo: 'Moduli abitativi dal Friuli Venezia Giulia per agricoltori e allevatori'
 descrizione: 'I moduli saranno in tutto 70, ciascuno di 16 metri quadri dotati di bagno e servizi. Donati dall''impresa Danieli di Buttrio sono arrivati il 19 settembre 2016 grazie alla Protezione civile regionale del Friuli Venezia Giulia.'
 link: 'http://www.ilmessaggero.it/rieti/rieti_terremoto_friuli_case-1974875.html'
