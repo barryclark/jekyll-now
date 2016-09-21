@@ -1,6 +1,6 @@
 ---
 layout: post
-title: First Blog Post by Denis K.
+title: "First Blog Post"
 author: dkomarovo
 ---
 
