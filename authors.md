@@ -16,7 +16,7 @@ subtitle: Posts By Author
   {% for post in posts %}
   <ul>
     {% assign parts = post | split:'*' %}
-    <li><a href="{{ BASE_PATH }}{{ parts[1] }}">{{ parts[0] }}</a></li>
+    <li><a href="{{ BASE_PATH }}{{site.baseurl}}{{ parts[1] }}">{{ parts[0] }}</a></li>
   </ul>
   {% endfor %}
 {% endfor %}
