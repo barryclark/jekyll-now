@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Red's Opinion: Harry Potter and Sexism
+title: "Red's Opinion: Harry Potter and Sexism"
 author: Red
 published: true
 ---
