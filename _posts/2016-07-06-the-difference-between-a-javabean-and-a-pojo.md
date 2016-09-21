@@ -2,7 +2,7 @@
 layout: post
 title: The Difference Between a JavaBean and a POJO
 tags: [java]
-keywords: [programming, javabean, bean, pojo, definition]
+keywords: [programming, javabean, bean, pojo, definition, plain old java object, javabean vs pojo, pojo vs javabean]
 image: /images/Java_logo.jpg
 ---
 
