@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Elissa's First Blog Post
+title: "Elissa's First Blog Post"
 author: enunez2
 ---
 
