@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Denis' Research Project Ideas
+title: Research Project Ideas by Denis K.
 author: dkomarovo
 ---
 
