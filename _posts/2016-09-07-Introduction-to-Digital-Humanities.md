@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Denis' Introduction to the Digital Humanities"
+title: Introduction to the Digital Humanities by Denis K.
 author: dkomarovo
 ---
 
