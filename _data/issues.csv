@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/623,178265991,2016-09-21 07:18:10,2016-09-21 07:17:44,Avis Rieti per acquisto autoemoteca ad Amatrice,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Terremoto Amatrice"", ""chi"": ""Avis Rieti per acquisto autoemoteca ad Amatrice"", ""data"": ""21/09/2016"", ""descrizione"": ""La raccolta dei contributi sar\u00e0 indirizzata all'acquisto di un'autoemoteca per la sezione Avis di Amatrice."", ""email"": """", ""iban"": ""IT66C0306914605100000001159"", ""intestazione"": ""AVIS- SEZIONE PROVINCIALE DI RIETI"", ""link"": ""http://www.avisamatrice.it/avis-provinciale-rieti-attiva-conto-corrente-raccolta-fondi/"", ""postale"": """"}","<pre><yamldata>chi: 'Avis Rieti per acquisto autoemoteca ad Amatrice'
+descrizione: 'La raccolta dei contributi sarà indirizzata all''acquisto di un''autoemoteca per la sezione Avis di Amatrice.'
+intestazione: 'AVIS- SEZIONE PROVINCIALE DI RIETI'
+iban: IT66C0306914605100000001159
+bic: ''
+postale: ''
+causale: 'Terremoto Amatrice'
+link: 'http://www.avisamatrice.it/avis-provinciale-rieti-attiva-conto-corrente-raccolta-fondi/'
+email: ''
+data: 21/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/622,178263031,2016-09-21 07:01:40,2016-09-21 07:00:19,Online report giornalieri tecnici Ispra nelle zone del sisma,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""21/09/2016"", ""descrizione"": ""Disponibili sul sito di Ispra i report giornalieri elaborati dai tecnici operativi, sotto il coordinamento della Protezione civile nazionale, che sin dal 25 agosto stanno monitorando i rischi ambientali prodotti dal sisma."", ""link"": ""http://www.isprambiente.gov.it/it/evidenza/sisma-italia-centrale/terremoto-nellitalia-centrale-2"", ""titolo"": ""Online report giornalieri tecnici Ispra nelle zone del sisma""}","<pre><yamldata>titolo: 'Online report giornalieri tecnici Ispra nelle zone del sisma'
 descrizione: 'Disponibili sul sito di Ispra i report giornalieri elaborati dai tecnici operativi, sotto il coordinamento della Protezione civile nazionale, che sin dal 25 agosto stanno monitorando i rischi ambientali prodotti dal sisma.'
 link: 'http://www.isprambiente.gov.it/it/evidenza/sisma-italia-centrale/terremoto-nellitalia-centrale-2'
@@ -2242,17 +2253,6 @@ bic: ''
 postale: ''
 causale: ''
 link: 'https://www.produzionidalbasso.com/project/rinascita-per-illica/'
-email: ''
-data: 14/09/2016
-</yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/280,176859116,2016-09-14 09:34:27,2016-09-14 09:31:13,La Montecarlo,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""La Montecarlo"", ""data"": ""14/09/2016"", ""descrizione"": ""Il 19 settembre dodici artisti italiani vi serviranno, a partire dalle ore 19 presso la pizzeria La Montecarlo , un piatto di amatriciana e una bibita a scelta , al prezzo di \u20ac 15. L'incasso della serata sar\u00e0 interamente devoluto, a sostegno dei terremotati, all'associazione \""Vico Badio\"" di Fonte del Campo di Accumoli, epicentro del sisma del 24 agosto. NON SI PRENOTA, l'evento sar\u00e0 organizzato come \""sagra\"", con il solo fine di raccogliere fondi e aiutare le persone colpite dal sisma. La Montecarlo I, Vicolo Savelli, 12, 00186 Roma"", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1765529567047960/"", ""postale"": """"}","<pre><yamldata>chi: 'La Montecarlo'
-descrizione: 'Il 19 settembre dodici artisti italiani vi serviranno, a partire dalle ore 19 presso la pizzeria La Montecarlo , un piatto di amatriciana e una bibita a scelta , al prezzo di € 15. L''incasso della serata sarà interamente devoluto, a sostegno dei terremotati, all''associazione ""Vico Badio"" di Fonte del Campo di Accumoli, epicentro del sisma del 24 agosto. NON SI PRENOTA, l''evento sarà organizzato come ""sagra"", con il solo fine di raccogliere fondi e aiutare le persone colpite dal sisma. La Montecarlo I, Vicolo Savelli, 12, 00186 Roma'
-intestazione: ''
-iban: ''
-bic: ''
-postale: ''
-causale: ''
-link: 'https://www.facebook.com/groups/1758670357733881/permalink/1765529567047960/'
 email: ''
 data: 14/09/2016
 </yamldata></pre>"
