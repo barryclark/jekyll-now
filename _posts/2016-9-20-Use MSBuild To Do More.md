@@ -3,7 +3,7 @@ layout: post
 title: Use MSBuild To Do More
 ---
 
-##0x00 前言
+## 0x00 前言
 ---
 
 最近Casey Smith@subTee更新了一系列关于"MSBuild"的研究进展，对我有很大启发。
@@ -31,7 +31,7 @@ MSBuild可编译特定格式的xml文件
 https://msdn.microsoft.com/en-us/library/dd393574.aspx
 
 
-##0x02 常规用法
+## 0x02 常规用法
 ---
 ### 1. 编译xml文件并执行代码
 
@@ -57,7 +57,7 @@ C:\Windows\Microsoft.Net\Framework\v4.0.30319\msbuild.exe test.csproj
 
 
 
-###2. 编译xml文件生成exe
+### 2. 编译xml文件生成exe
 
 ```
 using System;
@@ -110,7 +110,7 @@ C:\Windows\Microsoft.Net\Framework\v4.0.30319\msbuild.exe hello.csproj
 
 https://msdn.microsoft.com/en-us/library/dd722601.aspx?f=255&MSPPError=-2147217396
 
-###1. HelloWorld示例
+### 1. HelloWorld示例
 
 以下代码保存为helloworld:
 
@@ -154,7 +154,7 @@ cmd输出helloworld
 
 
 
-###2. 执行powershell命令
+### 2. 执行powershell命令
 
 可参照Casey分享的POC，地址如下：
 
@@ -197,7 +197,7 @@ https://gist.github.com/subTee/6b236083da2fd6ddff216e434f257614
 
 
 
-###3. 执行PE文件
+### 3. 执行PE文件
 Casey分享的POC地址如下：
 
 https://gist.github.com/subTee/ca477b4d19c885bec05ce238cbad6371
@@ -244,7 +244,7 @@ C:\Windows\Microsoft.NET\Framework64\v4.0.30319\msbuild.exe aa
 
 
 
-###4. 执行shellcode
+### 4. 执行shellcode
  
 
 参考自https://gist.github.com/subTee/a06d4ae23e2517566c52
@@ -288,7 +288,7 @@ https://github.com/3gstudent/msbuild-inline-task/blob/master/executes%20x64%20sh
 
 
 
-###5. VisualStudio Persistence
+### 5. VisualStudio Persistence
 
 在《Pay close attention to your download code——Visual Studio trick to run code when building》中介绍过利用VisualStudio的.csproj文件实现的代码执行，同样Inline Tasks也可用到此处，实现代码已上传，地址为：
 
