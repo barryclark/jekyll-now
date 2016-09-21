@@ -26,9 +26,9 @@ Journal club meetings take place on Tuesdays at 12:30 pm in the Life Sciences Bu
 - September 6: Luca Mazzucato
 - September 13: Luisa Le Donne
 - September 20: Jonathan Beck
-- September 27: Giancarlo La Camera
+- September 27: Gulce Nazli Dikecligil
 - October 4: Yuan Zhao
-- October 11: Gulce Nazli Dikecligil 
+- October 11: Giancarlo La Camera
 - October 18: Sriram Ganeshan
 - October 25: Jin Wang
 - November 1: Shaohua Wang
