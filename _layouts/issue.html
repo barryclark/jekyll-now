@@ -15,7 +15,7 @@ layout: base
   <div class="row"> <div class="col-md-2">Descrizione:</div> <div class="col-md-10"> {{page.issue.data.descrizione}}</div> </div>
 
   {% if page.issue.data.tel != blank %}
-  <div class="row"> <div class="col-md-2">Telefono:</div> <div class="col-md-10"> {{page.issue.data.tel}}</div> </div>
+  <div class="row"> <div class="col-md-2">Telefono:</div> <div class="col-md-10"> <a href="tel:{{page.issue.data.tel}}">{{page.issue.data.tel}}</a></div> </div>
   {% endif %}
   {% if page.issue.data.email != blank %}
   <div class="row"> <div class="col-md-2">Email:</div> <div class="col-md-10"> <a href="mailto:{{page.issue.data.email}}">{{page.issue.data.email}}</a></div> </div>
