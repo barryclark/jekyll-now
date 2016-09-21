@@ -30,7 +30,8 @@ Di seguito alcuni link utili per ricevere informazioni sull'evento.
 
 # Contatti
 
-{% for member in site.data.issuesjson %}
+{% assign filteredissues = site.data.issuesjson | where: "state","open" %}
+{% for member in filteredissues %}
 {% if member.issue.labels contains "Contatti" %}
 * <a href="/issues/{{ member.number | datapage_url: '.' }}">{{member.title}}</a>
 {% endif %}

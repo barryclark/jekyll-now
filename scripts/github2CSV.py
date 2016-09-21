@@ -59,9 +59,9 @@ r = org.get_repo(REPO_NAME)
 
 filter_labels=[r.get_label(l) for l in FILTER_LABELS]
 
-issues=r.get_issues(since=lastTime,labels=filter_labels)
+issues=r.get_issues(since=lastTime,labels=filter_labels,state='all')
 
-csvwriter.writerow(("url","id","updated_at","created_at","title","lat","lon","labels","milestone","image","data","body"))
+csvwriter.writerow(("url","id","updated_at","created_at","title","lat","lon","labels","milestone","image","data","body","state"))
 if jwr:
     jwr.write("[")
 
@@ -110,10 +110,10 @@ for issue in issues:
 
     labels=labels.encode('utf-8')
 
-    csvwriter.writerow((issue.html_url,issue.id,issue.updated_at,issue.created_at,title,lat,lon,labels,issue.milestone,image,json.dumps(data,sort_keys=True),issue.body.encode('utf-8')))
+    csvwriter.writerow((issue.html_url,issue.id,issue.updated_at,issue.created_at,title,lat,lon,labels,issue.milestone,image,json.dumps(data,sort_keys=True),issue.body.encode('utf-8'), issue.state))
     
     if jwr:
-        jwr.write(json.dumps({"title":issue.title,"number":issue.number,"issue":{"url":issue.html_url,"id":issue.id,"updated_at":issue.updated_at.isoformat()+"+00:00","created_at":issue.created_at.isoformat()+"+00:00","title":title,"lat":lat,"lon":lon,"labels":eval(labels) if labels else None,"milestone":issue.milestone.title if issue.milestone else None,"image":image,"data":data,"body":issue.body.encode('utf-8')}}, sort_keys=True)+",\n")
+        jwr.write(json.dumps({"title":issue.title,"number":issue.number,"state":issue.state,"issue":{"url":issue.html_url,"id":issue.id,"updated_at":issue.updated_at.isoformat()+"+00:00","created_at":issue.created_at.isoformat()+"+00:00","title":title,"lat":lat,"lon":lon,"labels":eval(labels) if labels else None,"milestone":issue.milestone.title if issue.milestone else None,"image":image,"data":data,"body":issue.body.encode('utf-8')}}, sort_keys=True)+",\n")
 
 
 if jwr:

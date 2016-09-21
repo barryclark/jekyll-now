@@ -6,7 +6,8 @@ permalink: /fabbisogni/
 <div class="row">
 <div class="col-md-12">
 <div class="list-group">
-	{% for member in site.data.issuesjson %}
+        {% assign filteredissues = site.data.issuesjson | where: "state","open" %}
+	{% for member in filteredissues %}
 	{% if member.issue.labels contains "Fabbisogni" %}
 	<a href="/issues/{{ member.number | datapage_url: '.' }}" class="list-group-item">
 		<h4 class="list-group-item-heading">{{member.title}}</h4>

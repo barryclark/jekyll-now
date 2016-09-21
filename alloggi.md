@@ -13,7 +13,8 @@ permalink: /alloggi/
 <div class="row"><div class="col-md-12"> <div id="map"></div> </div> </div>
 <div class="row"><div class="col-md-12">
 <div class="list-group">
-{% for member in site.data.issuesjson %}
+{% assign filteredissues = site.data.issuesjson | where: "state","open" %}
+{% for member in filteredissues %}
 {% if member.issue.labels contains "Alloggi" %}
 <a href="/issues/{{ member.number }}" class="list-group-item">
 	<h4 class="list-group-item-heading">{{member.title}}</h4>
@@ -27,7 +28,7 @@ permalink: /alloggi/
 
 <script>
 var markerList=[];
-{% for member in site.data.issuesjson %}
+{% for member in filteredissues %}
 {% if member.issue.labels contains "Alloggi" %}
 {% if member.issue.lat != blank and member.issue.lon != blank %}
 markerList.push([{{member.issue.lat}}, {{member.issue.lon}}, "{{member.title|uri_escape}}", "/issues/{{ member.number }}"]);
