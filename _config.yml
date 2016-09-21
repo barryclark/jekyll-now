@@ -38,7 +38,7 @@ navbar-links:
     - Fabbisogni: "fabbisogni/"
   Il Progetto:
    - About: "about/"
-   - WIKI: 'https://github.com/emergenzeHack/terremotocentro/wiki" target="_blank'
+   - Contribuisci: 'https://github.com/emergenzeHack/terremotocentro/wiki" target="_blank'
    - Press: "press/"
    - Canali di Comunicazione: "canali/"
 
