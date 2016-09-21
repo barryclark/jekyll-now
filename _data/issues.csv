@@ -15,6 +15,16 @@ descrizione: 'Disponibili sul sito di Ispra i report giornalieri elaborati dai t
 link: 'http://www.isprambiente.gov.it/it/evidenza/sisma-italia-centrale/terremoto-nellitalia-centrale-2'
 data: 21/09/2016
 </yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/620,178192035,2016-09-21 07:40:27,2016-09-20 22:01:36,Amatrice Scoiattolo Infopoint,,,"[""Accettato"", ""Contatti"", ""Form""]",,,"{""data"": ""20/09/2016"", ""descrizione"": ""Numero Verde 800 608 535 dedicato a tutti i piccoli imprenditori: agricoltori, allevatori, artigiani e commercianti che hanno subito danni alla loro attivit\u00e0 nei comuni colpiti dal terremoto. L'iniziativa \u00e8 collaterale al punto di ascolto \""Amatrice Scoiattolo Infopoint\"" promosso dal Rotary Club di Ascoli Piceno."", ""email"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.facebook.com/Amatricescoiattoloinfopoint/photos/a.1844858829062796.1073741828.1844846815730664/1846750778873601/?type=3&theater"", ""lon"": """", ""nome"": ""Amatrice Scoiattolo Infopoint"", ""tel"": ""800 608 535""}","<pre><yamldata>nome: 'Amatrice Scoiattolo Infopoint'
+tel: '800 608 535'
+email: ''
+descrizione: 'Numero Verde 800 608 535 dedicato a tutti i piccoli imprenditori: agricoltori, allevatori, artigiani e commercianti che hanno subito danni alla loro attività nei comuni colpiti dal terremoto. L''iniziativa è collaterale al punto di ascolto ""Amatrice Scoiattolo Infopoint"" promosso dal Rotary Club di Ascoli Piceno.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: 'https://www.facebook.com/Amatricescoiattoloinfopoint/photos/a.1844858829062796.1073741828.1844846815730664/1846750778873601/?type=3&theater'
+data: 20/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/619,178175523,2016-09-21 07:22:26,2016-09-20 20:45:33,Aperto a Sommati punto di raccolta e distribuzione mangimi,42.6410621,13.3056988110206,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form"", ""Notizie Utili"", ""Pubblicare su FB"", ""Twitter""]",,,"{""cosa"": ""Aperto a Sommati un punto di raccolta e distribuzione mangimi"", ""data"": ""20/09/2016"", ""descrizione"": ""Presso la localit\u00e0 di Sommati (frazione di Amatrice) \u00e8 stato aperto il punto di raccolta/distribuzione di alimenti per animali (foraggi e mangimi) a cui fare riferimento per le necessit\u00e0 e/o offerte."", ""email"": ""carmignani.l@aralazio.itmartellucci.a@aralazio.it"", ""immagine"": """", ""indirizzo"": ""SP20, Casale Zocchi, Amatrice, RI, LAZ, Italia"", ""lat"": ""42.6410621"", ""link"": ""http://www.veterinariaalimenti.marche.it/Veterinaria/tabid/82/novusact/viewarticle/articleid/7940/Default.aspx"", ""lon"": ""13.3056988110206"", ""tel"": ""335/1232834; 339/3334298; 366/6935217""}","<pre><yamldata>tel: '335/1232834; 339/3334298; 366/6935217'
 email: carmignani.l@aralazio.itmartellucci.a@aralazio.it
 cosa: 'Aperto a Sommati un punto di raccolta e distribuzione mangimi'
