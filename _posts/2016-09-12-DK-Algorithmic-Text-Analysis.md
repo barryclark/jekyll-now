@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Algorithmic Text Analysis"
+title: Denis K. - Algorithmic Text Analysis
 author: dkomarovo
 ---
 Digital Humanities collaborates with mathematics to conduct the process of algorithmic text analysis. It does so in order to
