@@ -1,7 +1,7 @@
 ---
 layout: post
 title: What does "+" mean in Java?
-tags: [java]
+tags: [java, quora]
 keywords: [programming, plus, concatenate, string]
 image: /images/Java_logo.jpg
 ---
