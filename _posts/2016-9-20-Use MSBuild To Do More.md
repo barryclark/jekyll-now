@@ -7,6 +7,7 @@ title: Use MSBuild To Do More
 ---
 最近Casey Smith@subTee更新了一系列关于"MSBuild"的研究进展，对我有很大启发。
 本文将基于他公开的POC，并结合我的研究心得，介绍以下`MSBuild`的应用技巧：
+
 - Execute PowerShell Commands
 - Execute PE file
 - Execute Shellcode
