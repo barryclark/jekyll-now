@@ -3,6 +3,8 @@ layout: post
 title: You're up and running!
 ---
 
+<script src="https://gist.github.com/yikl1004/0cfbca547285e30e47be84f184d8528f.js"></script>
+
 Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
 
 ![_config.yml]({{ site.baseurl }}/images/config.png)
