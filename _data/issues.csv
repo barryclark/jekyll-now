@@ -15,6 +15,16 @@ descrizione: 'Disponibili sul sito di Ispra i report giornalieri elaborati dai t
 link: 'http://www.isprambiente.gov.it/it/evidenza/sisma-italia-centrale/terremoto-nellitalia-centrale-2'
 data: 21/09/2016
 </yamldata></pre>"
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/621,178194425,2016-09-21 07:53:15,2016-09-20 22:14:31,Associazione Pescara del Tronto 24/08/2016,,,"[""Accettato"", ""Contatti"", ""Form""]",,,"{""data"": ""20/09/2016"", ""descrizione"": ""Associazione creata dai cittadini di Pescara del Tronto dopo il terremoto."", ""email"": ""pescaradeltronto@hotmail.com"", ""indirizzo"": """", ""lat"": """", ""link"": ""http://facebook.com/pescaradeltronto"", ""lon"": """", ""nome"": ""Associazione Pescara del Tronto 24/08/2016"", ""tel"": """"}","<pre><yamldata>nome: 'Associazione Pescara del Tronto 24/08/2016'
+tel: ''
+email: pescaradeltronto@hotmail.com
+descrizione: 'Associazione creata dai cittadini di Pescara del Tronto dopo il terremoto.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: 'http://facebook.com/pescaradeltronto'
+data: 20/09/2016
+</yamldata></pre>"
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/620,178192035,2016-09-21 07:47:39,2016-09-20 22:01:36,Amatrice Scoiattolo Infopoint,,,"[""Accettato"", ""Contatti"", ""Form""]",,,"{""data"": ""20/09/2016"", ""descrizione"": ""Numero Verde 800 608 535 dedicato a tutti i piccoli imprenditori: agricoltori, allevatori, artigiani e commercianti che hanno subito danni alla loro attivit\u00e0 nei comuni colpiti dal terremoto. L'iniziativa \u00e8 collaterale al punto di ascolto \""Amatrice Scoiattolo Infopoint\"" promosso dal Rotary Club di Ascoli Piceno."", ""email"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.facebook.com/Amatricescoiattoloinfopoint/photos/a.1844858829062796.1073741828.1844846815730664/1846750778873601/?type=3&theater"", ""lon"": """", ""nome"": ""Amatrice Scoiattolo Infopoint - Numero Verde"", ""tel"": ""800 608 535""}","<pre><yamldata>nome: 'Amatrice Scoiattolo Infopoint - Numero Verde'
 tel: '800 608 535'
 email: ''
@@ -2241,17 +2251,6 @@ bic: ''
 postale: ''
 causale: ''
 link: 'http://www.villanovadiaccumolionlus.it/'
-email: ''
-data: 14/09/2016
-</yamldata></pre>"
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/282,176859380,2016-09-14 09:34:48,2016-09-14 09:32:26,Arci,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Terremoto Centro Italia"", ""chi"": ""Arci"", ""data"": ""14/09/2016"", ""descrizione"": ""La cultura per la ricostruzione, crowdfunding per il Bibliobus. Inoltre si pu\u00f2 donare su c/c Banca Etica"", ""email"": """", ""iban"": ""IT 36 A 0501803200 000000000041"", ""intestazione"": """", ""link"": ""https://www.produzionidalbasso.com/project/bibliobus-arci-la-cultura-per-la-ricostruzione/"", ""postale"": """"}","<pre><yamldata>chi: Arci
-descrizione: 'La cultura per la ricostruzione, crowdfunding per il Bibliobus. Inoltre si può donare su c/c Banca Etica'
-intestazione: ''
-iban: 'IT 36 A 0501803200 000000000041'
-bic: ''
-postale: ''
-causale: 'Terremoto Centro Italia'
-link: 'https://www.produzionidalbasso.com/project/bibliobus-arci-la-cultura-per-la-ricostruzione/'
 email: ''
 data: 14/09/2016
 </yamldata></pre>"
