@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
     {% include meta.html %}
@@ -27,7 +28,8 @@
           </div>
 
           <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
+            <!-- <a href="{{ site.baseurl }}/">Blog</a> -->
+            <a href="{{ site.baseurl }}/projects">Projects</a>
             <a href="{{ site.baseurl }}/about">About</a>
           </nav>
         </header>
