@@ -2407,12 +2407,12 @@ link: ''
 immagine: ''
 data: 14/09/2016
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/324,176988880,2016-09-22 16:11:59,2016-09-14 18:49:21,"Firenze, FI - Camera matrimoniale",,,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""Isabella e Edoardo, offrono camera matrimoniale a FIRENZE"", ""email"": ""isyradio@yahoo.it"", ""immagine"": """", ""indirizzo"": ""Firenze centro"", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3204961225""}","<pre><yamldata>tel: '3204961225'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/324,176988880,2016-09-22 16:12:34,2016-09-14 18:49:21,"Firenze, FI - Camera matrimoniale",43.78069,11.24487,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""Isabella e Edoardo, offrono camera matrimoniale a FIRENZE"", ""email"": ""isyradio@yahoo.it"", ""immagine"": """", ""indirizzo"": ""Firenze centro"", ""lat"": ""43.78069"", ""link"": """", ""lon"": ""11.24487"", ""tel"": ""3204961225""}","<pre><yamldata>tel: '3204961225'
 email: isyradio@yahoo.it
 descrizione: 'Isabella e Edoardo, offrono camera matrimoniale a FIRENZE'
 indirizzo: 'Firenze centro'
-lat: ''
-lon: ''
+lat: '43.78069'
+lon: '11.24487'
 link: ''
 immagine: ''
 data: 14/09/2016
