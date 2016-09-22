@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/648,178609367,2016-09-22 13:26:35,2016-09-22 13:26:09,Abbiamo spazio sufficiente per,38.7214578,16.498972,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""22/09/2016"", ""descrizione"": ""Abbiamo spazio sufficiente per una famiglia con due/tre figli. Massimo Iiritano"", ""email"": ""massimo.iiritano@gmail.com"", ""immagine"": """", ""indirizzo"": ""Via Gregorio De Siena, Montepaone, CZ, Calabria, 88060, Italia"", ""lat"": ""38.7214578"", ""link"": """", ""lon"": ""16.498972"", ""tel"": ""3396847318""}","<pre><yamldata>tel: '3396847318'
+email: massimo.iiritano@gmail.com
+descrizione: 'Abbiamo spazio sufficiente per una famiglia con due/tre figli. Massimo Iiritano'
+indirizzo: 'Via Gregorio De Siena, Montepaone, CZ, Calabria, 88060, Italia'
+lat: '38.7214578'
+lon: '16.498972'
+link: ''
+immagine: ''
+data: 22/09/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/647,178606391,2016-09-22 13:26:12,2016-09-22 13:13:13,Si accettano anche famiglie co,45.3784373,11.3886298,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""22/09/2016"", ""descrizione"": ""Si accettano anche famiglie con animali domestici. Fabrizio Laguaragnella"", ""email"": ""fabriziolaguaragnella@yahoo.it"", ""immagine"": """", ""indirizzo"": ""Via Antonio Gramsci, Palazzo, Lonigo, VI, Veneto, 36045, Italia"", ""lat"": ""45.3784373"", ""link"": """", ""lon"": ""11.3886298"", ""tel"": ""3476465171""}","<pre><yamldata>tel: '3476465171'
 email: fabriziolaguaragnella@yahoo.it
 descrizione: 'Si accettano anche famiglie con animali domestici. Fabrizio Laguaragnella'
@@ -1017,17 +1027,6 @@ link: ''
 immagine: ''
 data: 16/09/2016
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/494,177436185,2016-09-16 14:16:09,2016-09-16 14:14:31,Per nucleo familiare sito a Capricchia occorre una lavatrice,42.62225,13.33966,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Per nucleo familiare sito a Capricchia occorre una lavatrice"", ""data"": ""16/09/2016"", ""descrizione"": """", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": ""42.62225"", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1766909393576644/"", ""lon"": ""13.33966"", ""tel"": ""3661990081""}","<pre><yamldata>tel: '3661990081'
-email: ''
-cosa: 'Per nucleo familiare sito a Capricchia occorre una lavatrice'
-descrizione: ''
-indirizzo: ''
-lat: '42.62225'
-lon: '13.33966'
-link: 'https://www.facebook.com/groups/1758670357733881/permalink/1766909393576644/'
-immagine: ''
-data: 16/09/2016
-</yamldata></pre>",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/494,177436185,2016-09-16 14:16:09,2016-09-16 14:14:31,Per nucleo familiare sito a Capricchia occorre una lavatrice,42.62225,13.33966,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Per nucleo familiare sito a Capricchia occorre una lavatrice"", ""data"": ""16/09/2016"", ""descrizione"": """", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": ""42.62225"", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1766909393576644/"", ""lon"": ""13.33966"", ""tel"": ""3661990081""}","<pre><yamldata>tel: '3661990081'
 email: ''
 cosa: 'Per nucleo familiare sito a Capricchia occorre una lavatrice'
