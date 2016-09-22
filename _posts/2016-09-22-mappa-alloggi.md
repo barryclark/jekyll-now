@@ -3,6 +3,7 @@ layout: post
 title: Mappa degli Alloggi
 categories: mappe
 ---
+
 Qui di seguito la mappa degli alloggi disponibili registrati ad oggi nei nostri sistemi.
 
 <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"/>
