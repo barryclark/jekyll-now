@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Mappa delle immagini inviate dal bot Telegram con Tile gestito Humanitarian OpenStreetMap Team
+title: Mappa delle segnalazioni inviate
 categories: blog mappe
 ---
 
