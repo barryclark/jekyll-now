@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/641,178564427,2016-09-22 09:46:39,2016-09-22 09:42:43,Pro loco Magliano Sabina,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Pro loco Magliano Sabina"", ""data"": ""22/09/2016"", ""descrizione"": ""Il 23 settembre 2016 alle ore 20 in piazza Garibaldi i cuochi dei 16 ristoranti di Magliano Sabina cucineranno tutti insieme per preparare la pasta alla Amatriciana che verr\u00e0 servita insieme ad una bibita per un contributo minimo di 6 \u20ac."", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""https://www.facebook.com/groups/213932928740408/permalink/930156883784672/"", ""postale"": """"}","<pre><yamldata>chi: 'Pro loco Magliano Sabina'
+descrizione: 'Il 23 settembre 2016 alle ore 20 in piazza Garibaldi i cuochi dei 16 ristoranti di Magliano Sabina cucineranno tutti insieme per preparare la pasta alla Amatriciana che verrà servita insieme ad una bibita per un contributo minimo di 6 €.'
+intestazione: ''
+iban: ''
+bic: ''
+postale: ''
+causale: ''
+link: 'https://www.facebook.com/groups/213932928740408/permalink/930156883784672/'
+email: ''
+data: 22/09/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/640,178563427,2016-09-22 09:46:21,2016-09-22 09:37:40,"Amatrice, assistenza agli animali senza padroni",,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""22/09/2016"", ""descrizione"": ""Servizi veterinari Asl Rieti nelle zone colpite dal Sisma: Istituito il Coordinamento Tecnico Interregionale. Coinvolti Enti, Istituti Zooprofilattici sperimentali Lazio-Toscana e Umbria-Marche e il Centro referenza nazionale per le emergenze non epidemiche. Coordinamento del Ministero della Salute"", ""link"": ""http://www.rietilife.com/2016/09/21/ad-amatrice-arriva-lassistenza-agli-animali-perso-padroni/"", ""titolo"": ""Amatrice, assistenza agli animali senza padroni""}","<pre><yamldata>titolo: 'Amatrice, assistenza agli animali senza padroni'
 descrizione: 'Servizi veterinari Asl Rieti nelle zone colpite dal Sisma: Istituito il Coordinamento Tecnico Interregionale. Coinvolti Enti, Istituti Zooprofilattici sperimentali Lazio-Toscana e Umbria-Marche e il Centro referenza nazionale per le emergenze non epidemiche. Coordinamento del Ministero della Salute'
 link: 'http://www.rietilife.com/2016/09/21/ad-amatrice-arriva-lassistenza-agli-animali-perso-padroni/'
