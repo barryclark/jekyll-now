@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/654,178618714,2016-09-22 14:03:53,2016-09-22 14:02:47,"Villorba, TV - abitazione per famiglia",45.7395269,12.2327902,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""22/09/2016"", ""descrizione"": ""Villorba - Veneto Mi rendo disponibile ad offrire una abitazione con terreno a famiglia (anche con bambini). Ben servita da mezzi e scuole sicuro inserimento sociale nella zona. Anche se lontano dal paese natale potrebbe aiutare a far passare l'inverno."", ""email"": ""ritabortoletto66@gmail.com"", ""immagine"": """", ""indirizzo"": ""Via Chiesa Villorba, Villorba, TV, Veneto, 31040, Italia"", ""lat"": ""45.7395269"", ""link"": """", ""lon"": ""12.2327902"", ""tel"": """"}","<pre><yamldata>tel: ''
+email: ritabortoletto66@gmail.com
+descrizione: 'Villorba - Veneto Mi rendo disponibile ad offrire una abitazione con terreno a famiglia (anche con bambini). Ben servita da mezzi e scuole sicuro inserimento sociale nella zona. Anche se lontano dal paese natale potrebbe aiutare a far passare l''inverno.'
+indirizzo: 'Via Chiesa Villorba, Villorba, TV, Veneto, 31040, Italia'
+lat: '45.7395269'
+lon: '12.2327902'
+link: ''
+immagine: ''
+data: 22/09/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/653,178618273,2016-09-22 14:03:22,2016-09-22 14:01:06,"Cesiomaggiore, BL - ospitalità per coppia di anziani",46.0621578,11.9867656,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""22/09/2016"", ""descrizione"": ""Cesiomaggiore - Veneto Siamo disponibili ad ospitare una coppia di anziani autosufficienti per il periodo ottobre - aprile 2017 Alberto e Graziella Riva"", ""email"": ""eletoda@libero.it"", ""immagine"": """", ""indirizzo"": ""Via Galoper, Cesiomaggiore, BL, Veneto, Italia"", ""lat"": ""46.0621578"", ""link"": """", ""lon"": ""11.9867656"", ""tel"": ""3421932763""}","<pre><yamldata>tel: '3421932763'
 email: eletoda@libero.it
 descrizione: 'Cesiomaggiore - Veneto Siamo disponibili ad ospitare una coppia di anziani autosufficienti per il periodo ottobre - aprile 2017 Alberto e Graziella Riva'
@@ -3787,17 +3797,6 @@ link: 'https://www.facebook.com/daniela.tassinari.3/posts/10210515585996963?pnre
 immagine: ''
 data: 13/09/2016
 </yamldata></pre>",closed
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/180,176755035,2016-09-13 21:48:58,2016-09-13 21:29:40,Gruppo Corriere srl,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,{},"<pre><yamldata>chi: 'Corriere dell'Umbria'
-descrizione: ''
-intestazione: 'Gruppo Corriere srl - Raccolta fondi per le zone terremotate presso Monte dei Paschi di Siena - Via della Repubblica 6 - Gubbio (PG)'
-iban: 'IT26O 01030 38480 000001825774'
-bic: PASCITMMGUB
-postale: ''
-causale: ''
-link: 'http://corrieredellumbria.corr.it/news/attualita/230889/solidarieta-ai-terremotati-la-raccolta-fondi-del-corriere.html'
-email: ''
-data: 13/09/2016
-</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/180,176755035,2016-09-13 21:48:58,2016-09-13 21:29:40,Gruppo Corriere srl,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,{},"<pre><yamldata>chi: 'Corriere dell'Umbria'
 descrizione: ''
 intestazione: 'Gruppo Corriere srl - Raccolta fondi per le zone terremotate presso Monte dei Paschi di Siena - Via della Repubblica 6 - Gubbio (PG)'
