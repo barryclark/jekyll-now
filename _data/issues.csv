@@ -796,7 +796,7 @@ link: ''
 immagine: ''
 data: 16/09/2016
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/545,177480001,2016-09-16 19:41:32,2016-09-16 17:35:52,B&B Fra Di Noi ,42.137031,13.516097,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""B&B Fra Di Noi mette a disposizione le proprie camere Via Baracche, 23, 67046 Santa Jona di Ovindoli AQ"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Ovindoli, AQ, Abruzzo, Italia"", ""lat"": ""42.137031"", ""link"": """", ""lon"": ""13.516097"", ""tel"": ""328 673 9499 Michela""}","<pre><yamldata>tel: '328 673 9499 Michela'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/545,177480001,2016-09-22 15:27:40,2016-09-16 17:35:52,"Santa Jona di Ovindoli, AQ - B&B Fra Di Noi ",42.137031,13.516097,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""B&B Fra Di Noi mette a disposizione le proprie camere Via Baracche, 23, 67046 Santa Jona di Ovindoli AQ"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Ovindoli, AQ, Abruzzo, Italia"", ""lat"": ""42.137031"", ""link"": """", ""lon"": ""13.516097"", ""tel"": ""328 673 9499 Michela""}","<pre><yamldata>tel: '328 673 9499 Michela'
 email: ''
 descrizione: 'B&B Fra Di Noi mette a disposizione le proprie camere Via Baracche, 23, 67046 Santa Jona di Ovindoli AQ'
 indirizzo: 'Ovindoli, AQ, Abruzzo, Italia'
