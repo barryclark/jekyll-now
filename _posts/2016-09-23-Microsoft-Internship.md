@@ -3,7 +3,7 @@ layout: post
 title: Microsoft Summer Internship in Oslo
 ---
 
-Today was the last day of my summer internship at Microsoft.
+Today is the last day of my summer internship at Microsoft.
 During the last 12 weeks, I met an insane amount of very interesting and intriguing people
 from all parts of the world.
 
@@ -104,10 +104,6 @@ For the rest of my internship, I tried to finish up and hand over any remaining 
 and hand over what I built, explore the remaining coffee places I wanted to and
 worked on my school project.
 
-![Working nights on my school project]({{site.url}}/images/msdn_blog/20160904_221408.jpg)
-
-*Photo: Working nights on my school project.*
-
 ![Coffee at Tim Wendelboe's with Karolina and Matei]({{site.url}}/images/msdn_blog/20160919_160000.jpg)
 
 *Photo: Coffee at Tim Wendelboe's with Karolina and Matei.*
@@ -118,7 +114,7 @@ worked on my school project.
 
 One of the things I regret is that I didn't have enough time and/or will power to finish
 my individual software project at school, so I'll probably have to finish it next semester.
-My third year at [Matfyz](http://mff.cuni.cz) starts in less than two weeks now.
+My third year at [Matfyz](http://mff.cuni.cz) starts in bit more than a week.
 
 I really enjoyed this summer - it was a wonderful new experience, at Microsoft and outside it.
 The best part were definitely my wonderful colleagues - the culture and coherency at FAST
