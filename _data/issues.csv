@@ -896,7 +896,7 @@ link: ''
 immagine: ''
 data: 16/09/2016
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/535,177474652,2016-09-16 17:07:54,2016-09-16 17:07:22,"HOTEL ""GAN"" Marco e M.Grazia",42.7157111,13.0247721,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""HOTEL \""GAN\"" (Marco e Maria Grazia) Indirizzo: via Tranquillo Graziani 10/a, Cascia (PG)"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via Tranquillo Graziani, Cascia, PG, UMB, 06043, Italia"", ""lat"": ""42.7157111"", ""link"": """", ""lon"": ""13.0247721"", ""tel"": ""3398856382 - 0743795006""}","<pre><yamldata>tel: '3398856382 - 0743795006'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/535,177474652,2016-09-22 15:43:21,2016-09-16 17:07:22,"Cascia, PG - HOTEL ""GAN"" Marco e M.Grazia",42.7157111,13.0247721,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""HOTEL \""GAN\"" (Marco e Maria Grazia) Indirizzo: via Tranquillo Graziani 10/a, Cascia (PG)"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via Tranquillo Graziani, Cascia, PG, UMB, 06043, Italia"", ""lat"": ""42.7157111"", ""link"": """", ""lon"": ""13.0247721"", ""tel"": ""3398856382 - 0743795006""}","<pre><yamldata>tel: '3398856382 - 0743795006'
 email: ''
 descrizione: 'HOTEL ""GAN"" (Marco e Maria Grazia) Indirizzo: via Tranquillo Graziani 10/a, Cascia (PG)'
 indirizzo: 'Via Tranquillo Graziani, Cascia, PG, UMB, 06043, Italia'
