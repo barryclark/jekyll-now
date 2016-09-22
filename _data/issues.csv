@@ -2633,12 +2633,12 @@ link: 'http://www.ilcapoluogo.it/2016/09/05/parrucchieri-aquilani-ad-amatrice-no
 immagine: ''
 data: 14/09/2016
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/301,176948539,2016-09-22 16:23:21,2016-09-14 16:02:15,"Rimini, RN - 3 camere da letto",,,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""La famiglia Rossi mette a disposizione 3 camere da letto per i terremotati, per ospitare eventualmente anche una intera famiglia.Rimini Via Santa Cristina"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3341591662""}","<pre><yamldata>tel: '3341591662'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/301,176948539,2016-09-22 16:23:40,2016-09-14 16:02:15,"Rimini, RN - 3 camere da letto",44.04252,12.53566,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""La famiglia Rossi mette a disposizione 3 camere da letto per i terremotati, per ospitare eventualmente anche una intera famiglia.Rimini Via Santa Cristina"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": ""44.04252"", ""link"": """", ""lon"": ""12.53566"", ""tel"": ""3341591662""}","<pre><yamldata>tel: '3341591662'
 email: ''
 descrizione: 'La famiglia Rossi mette a disposizione 3 camere da letto per i terremotati, per ospitare eventualmente anche una intera famiglia.Rimini Via Santa Cristina'
 indirizzo: ''
-lat: ''
-lon: ''
+lat: '44.04252'
+lon: '12.53566'
 link: ''
 immagine: ''
 data: 14/09/2016
