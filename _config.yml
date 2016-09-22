@@ -115,6 +115,9 @@ paginate: 5
 kramdown:
   input: GFM
 
+jekyll-mentions:
+  base_url: https://twitter.com
+
 # Default YAML values (more information on Jekyll's site)
 defaults:
   -
@@ -143,6 +146,8 @@ exclude:
   - README.md
   - CNAME
   - Vagrantfile
+  - vendor
+  - .gitlab-ci.yml
 
 # prose.io config
 prose:
@@ -206,8 +211,6 @@ gems:
   - jekyll-paginate
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
-
-exclude: [vendor]
 
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
