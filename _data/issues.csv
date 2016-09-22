@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/655,178619825,2016-09-22 14:10:10,2016-09-22 14:07:03,"Celico, CS - 2 monolocali con bagno e cucina",39.310475075525034,16.33950501680374,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""22/09/2016"", ""descrizione"": ""Celico - Calabria Metto a disposizione gratuitamente la mia struttura per ospitare due nuclei familiari bisognosi di alloggio. Si tratta di due monolocali con bagno e cucina di circa 40 mq. La capienza massima \u00e8 di 4 persone ciascuno, ma, nel bisogno, stringendosi un po', si pu\u00f2 arrivare a 5. Il tutto a partire dal 18 settembre, giusto il tempo di soddisfare le prenotazioni in corso e di preparare gli alloggi. Pietro Noce"", ""email"": ""beblameridiana.celico@gmail.com"", ""immagine"": """", ""indirizzo"": ""SS107, Celico, CS, Calabria, 87058, Italia"", ""lat"": ""39.310475075525034"", ""link"": """", ""lon"": ""16.33950501680374"", ""tel"": ""377 5365804""}","<pre><yamldata>tel: '377 5365804'
+email: beblameridiana.celico@gmail.com
+descrizione: 'Celico - Calabria Metto a disposizione gratuitamente la mia struttura per ospitare due nuclei familiari bisognosi di alloggio. Si tratta di due monolocali con bagno e cucina di circa 40 mq. La capienza massima è di 4 persone ciascuno, ma, nel bisogno, stringendosi un po'', si può arrivare a 5. Il tutto a partire dal 18 settembre, giusto il tempo di soddisfare le prenotazioni in corso e di preparare gli alloggi. Pietro Noce'
+indirizzo: 'SS107, Celico, CS, Calabria, 87058, Italia'
+lat: '39.310475075525034'
+lon: '16.33950501680374'
+link: ''
+immagine: ''
+data: 22/09/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/654,178618714,2016-09-22 14:03:53,2016-09-22 14:02:47,"Villorba, TV - abitazione per famiglia",45.7395269,12.2327902,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""22/09/2016"", ""descrizione"": ""Villorba - Veneto Mi rendo disponibile ad offrire una abitazione con terreno a famiglia (anche con bambini). Ben servita da mezzi e scuole sicuro inserimento sociale nella zona. Anche se lontano dal paese natale potrebbe aiutare a far passare l'inverno."", ""email"": ""ritabortoletto66@gmail.com"", ""immagine"": """", ""indirizzo"": ""Via Chiesa Villorba, Villorba, TV, Veneto, 31040, Italia"", ""lat"": ""45.7395269"", ""link"": """", ""lon"": ""12.2327902"", ""tel"": """"}","<pre><yamldata>tel: ''
 email: ritabortoletto66@gmail.com
 descrizione: 'Villorba - Veneto Mi rendo disponibile ad offrire una abitazione con terreno a famiglia (anche con bambini). Ben servita da mezzi e scuole sicuro inserimento sociale nella zona. Anche se lontano dal paese natale potrebbe aiutare a far passare l''inverno.'
@@ -233,17 +243,6 @@ lat: '42.6496118'
 lon: '13.3042554'
 link: ''
 immagine: ''
-data: 21/09/2016
-</yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/625,178277755,2016-09-22 07:07:24,2016-09-21 08:19:23,Raccolta fondi progetto Amatrice - L'Alba dei Piccoli Passi,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Raccolte Fondi""]",,,{},"<pre><yamldata>chi: 'Progetto Amatrice L''Alba dei Piccoli Passi'
-descrizione: 'Nata da un''iniziativa solidale di alcuni genitori di Amatrice per i bambini e ragazzi vittime del sisma del 24/08/2016, l''associazione attraverso la raccolta fondi si propone: # a breve termine, di istituire un centro polifunzionale in grado di erogare servizi sociali ed educativi, ricreativi e terapeutici, promuovere delle iniziative che saranno calendarizzate nei week end volte a creare una continuità sul territorio per i bambini e i ragazzi che temporaneamente si allontaneranno da Amatrice; # a lungo termine, di far evolvere il centro in una struttura permanente, capace di offrire progetti e attività di varia natura sempre finalizzati a dare a livello qualitativo e quantitativo i migliori servizi e il massimo supporto ai giovani di Amatrice'.
-intestazione: 'ASSOCIAZIONE AMATRICE L’ALBA DEI PICCOLI PASSI'
-iban: 'IT10H0832773470000000005382'
-bic: ''
-postale: ''
-causale: ''
-link: 'http://buonacausa.org/cause/amatricealbapiccolipassi'
-email: lalbadeipiccolipassi@libero.it
 data: 21/09/2016
 </yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/625,178277755,2016-09-22 07:07:24,2016-09-21 08:19:23,Raccolta fondi progetto Amatrice - L'Alba dei Piccoli Passi,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Raccolte Fondi""]",,,{},"<pre><yamldata>chi: 'Progetto Amatrice L''Alba dei Piccoli Passi'
