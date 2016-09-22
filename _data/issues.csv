@@ -986,7 +986,7 @@ link: ''
 immagine: ''
 data: 16/09/2016
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/526,177471111,2016-09-16 19:53:53,2016-09-16 16:48:39,casa di proprietà 10 posti (FM),43.0188204,13.49572,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""casa di propriet\u00e0 con 10 posti letto."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": ""43.0188204"", ""link"": """", ""lon"": ""13.49572"", ""tel"": ""3929987433""}","<pre><yamldata>tel: '3929987433'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/526,177471111,2016-09-22 15:50:48,2016-09-16 16:48:39,casa di proprietà 10 posti (FM),43.0188204,13.49572,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""casa di propriet\u00e0 con 10 posti letto."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": ""43.0188204"", ""link"": """", ""lon"": ""13.49572"", ""tel"": ""3929987433""}","<pre><yamldata>tel: '3929987433'
 email: ''
 descrizione: 'casa di proprietà con 10 posti letto.'
 indirizzo: ''
@@ -995,7 +995,7 @@ lon: '13.49572'
 link: ''
 immagine: ''
 data: 16/09/2016
-</yamldata></pre>",open
+</yamldata></pre>",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/525,177470819,2016-09-16 19:54:36,2016-09-16 16:46:57,appartamenti a disposizione,43.2589619,13.7569828,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""appartamenti a disposizione"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via San Giovanni Bosco, Porto Sant'Elpidio, FM, Marche, 63018, Italia"", ""lat"": ""43.2589619"", ""link"": """", ""lon"": ""13.7569828"", ""tel"": ""3921241035""}","<pre><yamldata>tel: '3921241035'
 email: ''
 descrizione: 'appartamenti a disposizione'
