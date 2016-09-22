@@ -1056,6 +1056,16 @@ link: ''
 immagine: ''
 data: 16/09/2016
 </yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/518,177466265,2016-09-22 15:56:45,2016-09-16 16:23:41,"Predappio, FC - Agri-campeggio ""La Banditina""",44.0662019,11.9700003,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""AGRICAMPEGGIO \""LA BANDITINA\"" offre sistemazioni momentanee per 10 persone."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via San Francesco d'Assisi, Sambuche, Predappio, FC, Emilia-Romagna, Italia"", ""lat"": ""44.0662019"", ""link"": """", ""lon"": ""11.9700003"", ""tel"": ""3477534680""}","<pre><yamldata>tel: '3477534680'
+email: ''
+descrizione: 'AGRICAMPEGGIO ""LA BANDITINA"" offre sistemazioni momentanee per 10 persone.'
+indirizzo: 'Via San Francesco d''Assisi, Sambuche, Predappio, FC, Emilia-Romagna, Italia'
+lat: '44.0662019'
+lon: '11.9700003'
+link: ''
+immagine: ''
+data: 16/09/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/517,177463134,2016-09-16 16:19:34,2016-09-16 16:08:27,Sportello INAIL a Rieti per chi ha subito infortunio sul lavoro a causa del sisma,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""INAIL apre a Rieti uno sportello per assistere i cittadini che hanno subito un infortunio sul lavoro in occasione del terremoto. Lo sportello sar\u00e0 in funzione dal luned\u00ec al venerd\u00ec presso la sede di via Matteucci 6, dalle ore 8,30 alle 12,30 e dalle 14,00 alle 15,00. Negli stessi orari sar\u00e0 anche possibile contattare i funzionari dello sportello telefonicamente, ai numeri 0746-283218, 0746-283236 e 0746-283203."", ""link"": ""https://www.inail.it/cs/internet/comunicazione/news-ed-eventi/news/news_infortuni_terremoto_amatrice.html"", ""titolo"": ""Sportello INAIL a Rieti per chi ha subito infortunio sul lavoro a causa del sisma""}","<pre><yamldata>titolo: 'Sportello INAIL a Rieti per chi ha subito infortunio sul lavoro a causa del sisma'
 descrizione: 'INAIL apre a Rieti uno sportello per assistere i cittadini che hanno subito un infortunio sul lavoro in occasione del terremoto. Lo sportello sarà in funzione dal lunedì al venerdì presso la sede di via Matteucci 6, dalle ore 8,30 alle 12,30 e dalle 14,00 alle 15,00. Negli stessi orari sarà anche possibile contattare i funzionari dello sportello telefonicamente, ai numeri 0746-283218, 0746-283236 e 0746-283203.'
 link: 'https://www.inail.it/cs/internet/comunicazione/news-ed-eventi/news/news_infortuni_terremoto_amatrice.html'
@@ -1310,6 +1320,17 @@ descrizione: 'L’Aquila. Le sezioni provinciali dell’Unione Italiana dei Ciec
 link: 'http://www.cityrumors.it/speciale-terremoto/308939-terremoto-occhiali-gratis-li-persi-uic-ipovedenti-laquila.html'
 data: 16/09/2016
 </yamldata></pre>",closed
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/476,177297104,2016-09-16 20:25:47,2016-09-15 21:41:15,"Arquata e Pescara del Tronto: grazie a Uic, occhiali e visite oculistiche gratuite",42.76214,13.29655,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form"", ""Notizie Utili""]",,,"{""cosa"": ""Occhiali e visite oculistiche gratis"", ""data"": ""15/09/2016"", ""descrizione"": ""Gli oculisti di Uic saranno il 19 settembre (e se necessario anche nei giorni successivi) a Arquata e Pescara del Tronto per visitare e donare occhiali da vista a chi li ha persi nel sisma."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Arquata del Tronto, AP, Marche, Italia"", ""lat"": ""42.76214"", ""link"": ""http://www.cityrumors.it/speciale-terremoto/308939-terremoto-occhiali-gratis-li-persi-uic-ipovedenti-laquila.html"", ""lon"": ""13.29655"", ""tel"": """"}","<pre><yamldata>tel: ''
+email: ''
+cosa: 'Occhiali e visite oculistiche gratis'
+descrizione: 'Gli oculisti di Uic saranno il 19 settembre (e se necessario anche nei giorni successivi) a Arquata e Pescara del Tronto per visitare e donare occhiali da vista a chi li ha persi nel sisma.'
+indirizzo: 'Arquata del Tronto, AP, Marche, Italia'
+lat: '42.76214'
+lon: '13.29655'
+link: 'http://www.cityrumors.it/speciale-terremoto/308939-terremoto-occhiali-gratis-li-persi-uic-ipovedenti-laquila.html'
+immagine: ''
+data: 15/09/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/476,177297104,2016-09-16 20:25:47,2016-09-15 21:41:15,"Arquata e Pescara del Tronto: grazie a Uic, occhiali e visite oculistiche gratuite",42.76214,13.29655,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form"", ""Notizie Utili""]",,,"{""cosa"": ""Occhiali e visite oculistiche gratis"", ""data"": ""15/09/2016"", ""descrizione"": ""Gli oculisti di Uic saranno il 19 settembre (e se necessario anche nei giorni successivi) a Arquata e Pescara del Tronto per visitare e donare occhiali da vista a chi li ha persi nel sisma."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Arquata del Tronto, AP, Marche, Italia"", ""lat"": ""42.76214"", ""link"": ""http://www.cityrumors.it/speciale-terremoto/308939-terremoto-occhiali-gratis-li-persi-uic-ipovedenti-laquila.html"", ""lon"": ""13.29655"", ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 cosa: 'Occhiali e visite oculistiche gratis'
