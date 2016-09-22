@@ -4095,6 +4095,16 @@ lon: 9.204282700000022
 link: http://www.dailymotion.com/
 immagine: https://terremoto.francescopinzauti.com/img/09-15-02gatto_scottish.jpg
 data: 09/09/2016</yamldata></pre>",closed
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/111,176020183,2016-09-10 19:15:57,2016-09-09 14:15:02,Nuovo utente!,45.48588769999999,9.204282700000022,"[""Accettato"", ""Donazioni"", ""Form""]",,https://terremoto.francescopinzauti.com/img/09-15-02gatto_scottish.jpg,"{""cosa"": ""Nuovo utente!"", ""data"": ""09/09/2016"", ""descrizione"": ""Prova con il nuovo utente"", ""email"": ""info@francescopinzauti.com"", ""immagine"": ""https://terremoto.francescopinzauti.com/img/09-15-02gatto_scottish.jpg"", ""indirizzo"": ""Piazza Luigi di Savoia, 9, 20124 Milano, Italia"", ""lat"": 45.48588769999999, ""link"": ""http://www.dailymotion.com/"", ""lon"": 9.204282700000022, ""tel"": 393272032790}","<pre><yamldata>tel: +393272032790
+email: info@francescopinzauti.com
+cosa: Nuovo utente!
+descrizione: Prova con il nuovo utente
+indirizzo: Piazza Luigi di Savoia, 9, 20124 Milano, Italia
+lat: 45.48588769999999
+lon: 9.204282700000022
+link: http://www.dailymotion.com/
+immagine: https://terremoto.francescopinzauti.com/img/09-15-02gatto_scottish.jpg
+data: 09/09/2016</yamldata></pre>",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/105,175871262,2016-09-09 16:00:19,2016-09-08 21:38:25,Test,41.9277619,12.455840399999943,"[""Accettato"", ""Alloggi"", ""Form""]",,https://terremoto.francescopinzauti.com/img/16-38-24WP_20160908_23_38_04_Pro.jpg,"{""data"": ""08/09/2016"", ""descrizione"": ""Test"", ""email"": ""macorte@gmail.com"", ""immagine"": ""https://terremoto.francescopinzauti.com/img/16-38-24WP_20160908_23_38_04_Pro.jpg"", ""indirizzo"": ""Viale dei Gladiatori, 63, 00135 Roma, Italia"", ""lat"": 41.9277619, ""link"": null, ""lon"": 12.455840399999943, ""tel"": 3476409364}","<pre><yamldata>tel: 3476409364
 email: macorte@gmail.com
 descrizione: Test
