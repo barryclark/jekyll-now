@@ -14,6 +14,6 @@
 <meta property="og:image" content="{% if page.image %}{{ site.url }}{{ page.image }}{% else %}{{ site.avatar }}{% endif %}" />
 <meta property="og:url" content="{% if page.url == "/index.html" %}{{ site.url }}{% elsif page.facebook_post %}{{ page.facebook_post }}{% else %}{{ site.url }}{{ page.url }}{% endif %}" />
 
-<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}" />
+<meta property="og:title" content="{% if page.title %}{{ page.title | xml_escape }}{% else %}{{ site.name }}{% endif %}" />
 
 <meta name="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html }}{% else %}{{ site.description }}{% endif %}" />
