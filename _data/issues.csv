@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/656,178620303,2016-09-22 14:11:33,2016-09-22 14:08:45,"Melta di Gardolo, TN - casa ",46.102869,11.1296199265191,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""22/09/2016"", ""descrizione"": ""Trentino Buongiorno metto a disposizione inverno primavera la mia casa in trentino per ospitare terremotati. Anna Cellana"", ""email"": ""acellana@libero.it"", ""immagine"": """", ""indirizzo"": ""Strada della Flora, Pinara, Melta di Gardolo, Trento, Territorio Val d'Adige, TN, Trentino-Alto Adige, 38121, Italia"", ""lat"": ""46.102869"", ""link"": """", ""lon"": ""11.1296199265191"", ""tel"": """"}","<pre><yamldata>tel: ''
+email: acellana@libero.it
+descrizione: 'Trentino Buongiorno metto a disposizione inverno primavera la mia casa in trentino per ospitare terremotati. Anna Cellana'
+indirizzo: 'Strada della Flora, Pinara, Melta di Gardolo, Trento, Territorio Val d''Adige, TN, Trentino-Alto Adige, 38121, Italia'
+lat: '46.102869'
+lon: '11.1296199265191'
+link: ''
+immagine: ''
+data: 22/09/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/655,178619825,2016-09-22 14:10:10,2016-09-22 14:07:03,"Celico, CS - 2 monolocali con bagno e cucina",39.310475075525034,16.33950501680374,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""22/09/2016"", ""descrizione"": ""Celico - Calabria Metto a disposizione gratuitamente la mia struttura per ospitare due nuclei familiari bisognosi di alloggio. Si tratta di due monolocali con bagno e cucina di circa 40 mq. La capienza massima \u00e8 di 4 persone ciascuno, ma, nel bisogno, stringendosi un po', si pu\u00f2 arrivare a 5. Il tutto a partire dal 18 settembre, giusto il tempo di soddisfare le prenotazioni in corso e di preparare gli alloggi. Pietro Noce"", ""email"": ""beblameridiana.celico@gmail.com"", ""immagine"": """", ""indirizzo"": ""SS107, Celico, CS, Calabria, 87058, Italia"", ""lat"": ""39.310475075525034"", ""link"": """", ""lon"": ""16.33950501680374"", ""tel"": ""377 5365804""}","<pre><yamldata>tel: '377 5365804'
 email: beblameridiana.celico@gmail.com
 descrizione: 'Celico - Calabria Metto a disposizione gratuitamente la mia struttura per ospitare due nuclei familiari bisognosi di alloggio. Si tratta di due monolocali con bagno e cucina di circa 40 mq. La capienza massima è di 4 persone ciascuno, ma, nel bisogno, stringendosi un po'', si può arrivare a 5. Il tutto a partire dal 18 settembre, giusto il tempo di soddisfare le prenotazioni in corso e di preparare gli alloggi. Pietro Noce'
