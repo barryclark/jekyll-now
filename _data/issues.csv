@@ -2417,7 +2417,7 @@ link: ''
 immagine: ''
 data: 14/09/2016
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/323,176988054,2016-09-14 18:47:37,2016-09-14 18:45:46,Resort Hotel Marinella Gabicce,43.967460,12.755939,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""Resort Hotel Marinella, Gabicce: mette a disposizione i suoi appartamenti a Gabicce per le famiglie colpite dal sisma"", ""email"": ""info@hotel-marinella.it"", ""immagine"": """", ""indirizzo"": ""Via Vittorio Veneto, 127 - 61011 Gabicce Mare PU"", ""lat"": ""43.967460"", ""link"": ""https://www.facebook.com/hotelmarinellagabicce/"", ""lon"": ""12.755939"", ""tel"": ""0541954571""}","<pre><yamldata>tel: '0541954571'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/323,176988054,2016-09-22 16:13:13,2016-09-14 18:45:46,Resort Hotel Marinella Gabicce,43.967460,12.755939,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""Resort Hotel Marinella, Gabicce: mette a disposizione i suoi appartamenti a Gabicce per le famiglie colpite dal sisma"", ""email"": ""info@hotel-marinella.it"", ""immagine"": """", ""indirizzo"": ""Via Vittorio Veneto, 127 - 61011 Gabicce Mare PU"", ""lat"": ""43.967460"", ""link"": ""https://www.facebook.com/hotelmarinellagabicce/"", ""lon"": ""12.755939"", ""tel"": ""0541954571""}","<pre><yamldata>tel: '0541954571'
 email: info@hotel-marinella.it
 descrizione: 'Resort Hotel Marinella, Gabicce: mette a disposizione i suoi appartamenti a Gabicce per le famiglie colpite dal sisma'
 indirizzo: 'Via Vittorio Veneto, 127 - 61011 Gabicce Mare PU'
@@ -2426,7 +2426,7 @@ lon: '12.755939'
 link: 'https://www.facebook.com/hotelmarinellagabicce/'
 immagine: ''
 data: 14/09/2016
-</yamldata></pre>",open
+</yamldata></pre>",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/322,176973642,2016-09-14 18:03:33,2016-09-14 17:45:06,Albergo Villa Rosa di Nusco,40.901245,15.084004,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""24/08/2016"", ""descrizione"": ""Albergo Villa Rosa di Nusco mette a disposizione sin da domani 25 agosto 2016 VITTO E ALLOGGIO GRATUITI PER FAMIGLIE COLPITE DAL TERREMOTO. Nell'impossibilit\u00e0 di contattare la Protezione Civile di Rieti, della quale il numero \u00e8 perennemente occupato, chiediamo di condividere il post affinch\u00e9 giunga alle persone interessate."", ""email"": ""info@albergovillarosa.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": ""40.901245"", ""link"": ""https://www.facebook.com/albergo.villarosa"", ""lon"": ""15.084004"", ""tel"": ""082764046 - 3289537991""}","<pre><yamldata>tel: '082764046 - 3289537991'
 email: info@albergovillarosa.it
 descrizione: 'Albergo Villa Rosa di Nusco mette a disposizione sin da domani 25 agosto 2016 VITTO E ALLOGGIO GRATUITI PER FAMIGLIE COLPITE DAL TERREMOTO. Nell''impossibilità di contattare la Protezione Civile di Rieti, della quale il numero è perennemente occupato, chiediamo di condividere il post affinché giunga alle persone interessate.'
