@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/649,178610669,2016-09-22 13:37:32,2016-09-22 13:32:07,Trecate - Piemonte Disponibili,45.434766,8.736838,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""22/09/2016"", ""descrizione"": ""Trecate - Piemonte Disponibilit\u00e0 ad ospitare una coppia che fatica a vivere in tenda. Franca Tacchino"", ""email"": ""tfranca@libero.it"", ""immagine"": """", ""indirizzo"": ""Via Galileo Ferraris, Madonna delle Grazie, Trecate, Novara, Piemonte, 28069, Italia"", ""lat"": ""45.434766"", ""link"": """", ""lon"": ""8.736838"", ""tel"": ""3343792788""}","<pre><yamldata>tel: '3343792788'
+email: tfranca@libero.it
+descrizione: 'Trecate - Piemonte Disponibilità ad ospitare una coppia che fatica a vivere in tenda. Franca Tacchino'
+indirizzo: 'Via Galileo Ferraris, Madonna delle Grazie, Trecate, Novara, Piemonte, 28069, Italia'
+lat: '45.434766'
+lon: '8.736838'
+link: ''
+immagine: ''
+data: 22/09/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/648,178609367,2016-09-22 13:34:51,2016-09-22 13:26:09,"Montepaone, CZ - spazio per famiglia",38.7214578,16.498972,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""22/09/2016"", ""descrizione"": ""Abbiamo spazio sufficiente per una famiglia con due/tre figli. Massimo Iiritano"", ""email"": ""massimo.iiritano@gmail.com"", ""immagine"": """", ""indirizzo"": ""B and B Visioni mediterranee, via Torino 34, Montepaone, CZ, Calabria, 88060, Italia"", ""lat"": ""38.7214578"", ""link"": """", ""lon"": ""16.498972"", ""tel"": ""3396847318""}","<pre><yamldata>tel: '3396847318'
 email: massimo.iiritano@gmail.com
 descrizione: 'Abbiamo spazio sufficiente per una famiglia con due/tre figli. Massimo Iiritano'
