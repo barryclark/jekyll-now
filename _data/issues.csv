@@ -866,7 +866,7 @@ link: ''
 immagine: ''
 data: 16/09/2016
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/538,177477284,2016-09-16 19:47:30,2016-09-16 17:21:34,Hotel Marinella Resort - 4 app,43.9667609,12.7573337,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""Hotel Marinella Resort - 4 appartamenti disponibili al momento"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via Sbarretti, Gabicce Mare, PU, Marche, 61011, Italia"", ""lat"": ""43.9667609"", ""link"": ""http://www.hotel-marinella.it/"", ""lon"": ""12.7573337"", ""tel"": ""0541 954571""}","<pre><yamldata>tel: '0541 954571'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/538,177477284,2016-09-22 15:39:37,2016-09-16 17:21:34,"Gabicce Mare, PU - Hotel Marinella Resort, 4 appartamenti",43.9667609,12.7573337,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""Hotel Marinella Resort - 4 appartamenti disponibili al momento"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via Sbarretti, Gabicce Mare, PU, Marche, 61011, Italia"", ""lat"": ""43.9667609"", ""link"": ""http://www.hotel-marinella.it/"", ""lon"": ""12.7573337"", ""tel"": ""0541 954571""}","<pre><yamldata>tel: '0541 954571'
 email: ''
 descrizione: 'Hotel Marinella Resort - 4 appartamenti disponibili al momento'
 indirizzo: 'Via Sbarretti, Gabicce Mare, PU, Marche, 61011, Italia'
