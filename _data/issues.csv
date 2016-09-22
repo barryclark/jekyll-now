@@ -876,7 +876,7 @@ link: 'http://www.hotel-marinella.it/'
 immagine: ''
 data: 16/09/2016
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/537,177475469,2016-09-16 19:48:09,2016-09-16 17:11:35,MAURO casa di proprietà FM,43.019379,13.4960348,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""MAURO offre casa di propriet\u00e0 (10 posti letto)"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Strada Provinciale 238 Ex SS433 Valdaso, Montefalcone Appennino, FM, Marche, 64024, Italia"", ""lat"": ""43.019379"", ""link"": """", ""lon"": ""13.4960348"", ""tel"": ""3929987433""}","<pre><yamldata>tel: '3929987433'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/537,177475469,2016-09-22 15:37:54,2016-09-16 17:11:35,MAURO casa di proprietà FM,43.019379,13.4960348,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""MAURO offre casa di propriet\u00e0 (10 posti letto)"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Strada Provinciale 238 Ex SS433 Valdaso, Montefalcone Appennino, FM, Marche, 64024, Italia"", ""lat"": ""43.019379"", ""link"": """", ""lon"": ""13.4960348"", ""tel"": ""3929987433""}","<pre><yamldata>tel: '3929987433'
 email: ''
 descrizione: 'MAURO offre casa di proprietà (10 posti letto)'
 indirizzo: 'Strada Provinciale 238 Ex SS433 Valdaso, Montefalcone Appennino, FM, Marche, 64024, Italia'
@@ -885,7 +885,7 @@ lon: '13.4960348'
 link: ''
 immagine: ''
 data: 16/09/2016
-</yamldata></pre>",open
+</yamldata></pre>",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/536,177475028,2016-09-16 19:49:18,2016-09-16 17:09:24,"AGRITURISMO ""CASA DEIMAR"" PG",43.0711952,12.6146669,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""AGRITURISMO \""CASA DEIMAR\"" 2 camere (tra Assisi e Loreto)"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Piazza del Comune, San Damiano, Assisi, PG, UMB, 06081, Italia"", ""lat"": ""43.0711952"", ""link"": """", ""lon"": ""12.6146669"", ""tel"": ""3357265070""}","<pre><yamldata>tel: '3357265070'
 email: ''
 descrizione: 'AGRITURISMO ""CASA DEIMAR"" 2 camere (tra Assisi e Loreto)'
