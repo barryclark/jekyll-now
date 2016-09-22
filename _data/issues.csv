@@ -836,7 +836,7 @@ link: ''
 immagine: ''
 data: 16/09/2016
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/541,177477938,2016-09-16 17:26:33,2016-09-16 17:24:58,Hotel Aristeo Familglia Zaghin,44.0500605,12.5994302,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""Hotel Aristeo Familglia Zaghini"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Viale Regina Elena, Bellariva, Rimini, RN, Emilia-Romagna, 47920, Italia"", ""lat"": ""44.0500605"", ""link"": """", ""lon"": ""12.5994302"", ""tel"": ""0541 381150""}","<pre><yamldata>tel: '0541 381150'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/541,177477938,2016-09-22 15:35:47,2016-09-16 17:24:58,"Rimini, RN - Hotel Aristeo ",44.0500605,12.5994302,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""Hotel Aristeo Familglia Zaghini"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Viale Regina Elena, Bellariva, Rimini, RN, Emilia-Romagna, 47920, Italia"", ""lat"": ""44.0500605"", ""link"": """", ""lon"": ""12.5994302"", ""tel"": ""0541 381150""}","<pre><yamldata>tel: '0541 381150'
 email: ''
 descrizione: 'Hotel Aristeo Familglia Zaghini'
 indirizzo: 'Viale Regina Elena, Bellariva, Rimini, RN, Emilia-Romagna, 47920, Italia'
