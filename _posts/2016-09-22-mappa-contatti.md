@@ -3,6 +3,7 @@ layout: post
 title: Mappa dei Contatti
 categories: mappe
 ---
+Qui di seguito la mappa dei contatti utili registrati ad oggi nei nostri sistemi.
 
 <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"/>
 <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>

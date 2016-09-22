@@ -4,6 +4,8 @@ title: Mappa dei Fabbisogni
 categories: mappe
 ---
 
+Qui di seguito la mappa dei Fabbisogni registrati ad oggi nei nostri sistemi.
+
 <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"/>
 <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
 <style>
