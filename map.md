@@ -8,13 +8,7 @@ permalink: /mappe/
   {% for post in site.posts %}
     {% if post.categories contains 'mappe' %}
       <article class="post">
-        <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-        <div class="entry">
-          {{ post.excerpt }}
-        </div>
-
-        <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Leggi tutto</a>
+        <h4><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
       </article>
     {% endif %}
   {% endfor %}
