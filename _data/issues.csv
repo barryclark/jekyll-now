@@ -1,8 +1,8 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/648,178609367,2016-09-22 13:26:35,2016-09-22 13:26:09,Abbiamo spazio sufficiente per,38.7214578,16.498972,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""22/09/2016"", ""descrizione"": ""Abbiamo spazio sufficiente per una famiglia con due/tre figli. Massimo Iiritano"", ""email"": ""massimo.iiritano@gmail.com"", ""immagine"": """", ""indirizzo"": ""Via Gregorio De Siena, Montepaone, CZ, Calabria, 88060, Italia"", ""lat"": ""38.7214578"", ""link"": """", ""lon"": ""16.498972"", ""tel"": ""3396847318""}","<pre><yamldata>tel: '3396847318'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/648,178609367,2016-09-22 13:28:12,2016-09-22 13:26:09,Abbiamo spazio sufficiente per,38.7214578,16.498972,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""22/09/2016"", ""descrizione"": ""Abbiamo spazio sufficiente per una famiglia con due/tre figli. Massimo Iiritano"", ""email"": ""massimo.iiritano@gmail.com"", ""immagine"": """", ""indirizzo"": ""B and B Visioni mediterranee, via Torino 34, Montepaone, CZ, Calabria, 88060, Italia"", ""lat"": ""38.7214578"", ""link"": """", ""lon"": ""16.498972"", ""tel"": ""3396847318""}","<pre><yamldata>tel: '3396847318'
 email: massimo.iiritano@gmail.com
 descrizione: 'Abbiamo spazio sufficiente per una famiglia con due/tre figli. Massimo Iiritano'
-indirizzo: 'Via Gregorio De Siena, Montepaone, CZ, Calabria, 88060, Italia'
+indirizzo: 'B and B Visioni mediterranee, via Torino 34, Montepaone, CZ, Calabria, 88060, Italia'
 lat: '38.7214578'
 lon: '16.498972'
 link: ''
