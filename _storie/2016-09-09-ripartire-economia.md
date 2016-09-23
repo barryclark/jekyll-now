@@ -3,6 +3,7 @@ layout: post
 title: Ripartire dall'economia
 categories: storie
 excerpt: Dopo le tante iniziative di "amatriciana solidale" estemporanee e di raccolta fondi per i luoghi colpiti dal sisma, arriva il momento di ripensare ad un piano strutturale di risollevamento dell'economia. 
+crosseverything_to_medium: true
 ---
 
 *di Giorgia Brugnerotto*

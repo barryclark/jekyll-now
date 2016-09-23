@@ -2,6 +2,7 @@
 layout: post
 title: Il bibliobus dell'Aquila arriva a Rieti
 categories: storie
+crosseverything_to_medium: true
 ---
 
 
