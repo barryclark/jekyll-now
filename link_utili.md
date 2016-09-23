@@ -4,13 +4,18 @@ title: Link utili
 permalink: /link_utili/
 ---
 
-Di seguito alcuni link utili per ricevere informazioni sull'evento.
+Di seguito la lista dei contatti registrati nei sistemi di terremotocenotroitalia
 
-* [Fonti Ufficiali](#fonti-ufficiali)
-* [Progetti Web](#progetti-web)
-* [Contatti](#contatti)
+# Contatti 
 
-# Fonti Ufficiali
+{% assign filteredissues = site.data.issuesjson | where: "state","open" %}
+{% for member in filteredissues %}
+{% if member.issue.labels contains "Contatti" %}
+* <a href="/issues/{{ member.number | datapage_url: '.' }}">{{member.title}}</a>
+{% endif %}
+{% endfor %}
+
+# Fonti Importanti
 
 - [Osservatorio Terremoti INGVterremoti](http://cnt.rm.ingv.it/)
 
@@ -24,15 +29,4 @@ Di seguito alcuni link utili per ricevere informazioni sull'evento.
 
 - [Volontariato Lazio](http://www.volontariato.lazio.it/)
 
-# Progetti Web
-
 - [Emergenza24](http://www.emergenza24.org/)
-
-# Contatti
-
-{% assign filteredissues = site.data.issuesjson | where: "state","open" %}
-{% for member in filteredissues %}
-{% if member.issue.labels contains "Contatti" %}
-* <a href="/issues/{{ member.number | datapage_url: '.' }}">{{member.title}}</a>
-{% endif %}
-{% endfor %}
