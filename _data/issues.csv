@@ -4060,7 +4060,7 @@ link: 'http://www.associazioneeneagrilli.org/index.php/news'
 email: ''
 data: 13/09/2016
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/172,176741481,2016-09-13 20:34:01,2016-09-13 20:30:03,Caritas - Cei,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Caritas - Cei"", ""data"": ""13/09/2016"", ""descrizione"": ""Domenica 18 settembre colletta nazionale in tutte le parrocchie d'Italia per sostenere la ricostruzione nelle zone colpite dal sisma."", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""http://www.caritasitaliana.it/pls/caritasitaliana/V3_S2EW_CONSULTAZIONE.mostra_pagina?id_pagina=6558"", ""postale"": """"}","<pre><yamldata>chi: 'Caritas - Cei'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/172,176741481,2016-09-23 21:25:55,2016-09-13 20:30:03,Caritas - Cei,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Caritas - Cei"", ""data"": ""13/09/2016"", ""descrizione"": ""Domenica 18 settembre colletta nazionale in tutte le parrocchie d'Italia per sostenere la ricostruzione nelle zone colpite dal sisma."", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""http://www.caritasitaliana.it/pls/caritasitaliana/V3_S2EW_CONSULTAZIONE.mostra_pagina?id_pagina=6558"", ""postale"": """"}","<pre><yamldata>chi: 'Caritas - Cei'
 descrizione: 'Domenica 18 settembre colletta nazionale in tutte le parrocchie d''Italia per sostenere la ricostruzione nelle zone colpite dal sisma.'
 intestazione: ''
 iban: ''
@@ -4070,7 +4070,7 @@ causale: ''
 link: 'http://www.caritasitaliana.it/pls/caritasitaliana/V3_S2EW_CONSULTAZIONE.mostra_pagina?id_pagina=6558'
 email: ''
 data: 13/09/2016
-</yamldata></pre>",open
+</yamldata></pre>",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/171,176722743,2016-09-13 19:01:50,2016-09-13 19:00:55,Regione Toscana e Anci Toscana,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": ""PASCITM1F17"", ""causale"": """", ""chi"": ""Regione Toscana e Anci Toscana"", ""data"": ""13/09/2016"", ""descrizione"": ""Attivo c/c presso \""Banca Mps ag.17 in via Novoli a Firenze\"""", ""email"": """", ""iban"": ""IT43Q 01030 02818 000000888832"", ""intestazione"": ""Toscana per l'emergenza terremoto centro Italia"", ""link"": ""http://www.toscana-notizie.it/-/terremoto-centro-italia-un-conto-corrente-per-le-donazioni-di-tutta-la-toscana"", ""postale"": """"}","<pre><yamldata>chi: 'Regione Toscana e Anci Toscana'
 descrizione: 'Attivo c/c presso ""Banca Mps ag.17 in via Novoli a Firenze""'
 intestazione: 'Toscana per l''emergenza terremoto centro Italia'
