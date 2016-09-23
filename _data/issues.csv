@@ -3840,10 +3840,10 @@ link: ''
 email: ''
 data: 13/09/2016
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/192,176763246,2016-09-13 22:08:46,2016-09-13 22:08:22,Avviso Pubblico - Enti locali e Regioni per la formazione civile contro le mafie,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Avviso Pubblico - Enti locali e Regioni per la formazione civile contro le mafie"", ""data"": ""13/09/2016"", ""descrizione"": """", ""email"": """", ""iban"": ""IT73H 05018 02800 000000131720, presso Banca Etica - Filiale di Firenze"", ""intestazione"": """", ""link"": ""http://www.avvisopubblico.it/home/terremoto-in-centro-italia-avviso-pubblico-lancia-campagna-di-raccolta-fondi-e-altre-forme-di-sostegno/"", ""postale"": """"}","<pre><yamldata>chi: 'Avviso Pubblico - Enti locali e Regioni per la formazione civile contro le mafie'
-descrizione: ''
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/192,176763246,2016-09-23 21:40:57,2016-09-13 22:08:22,Avviso Pubblico - Enti locali e Regioni per la formazione civile contro le mafie,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Avviso Pubblico - Enti locali e Regioni per la formazione civile contro le mafie"", ""data"": ""13/09/2016"", ""descrizione"": ""Presso Banca Etica - Filiale di Firenze"", ""email"": """", ""iban"": ""IT73H 05018 02800 000000131720"", ""intestazione"": """", ""link"": ""http://www.avvisopubblico.it/home/terremoto-in-centro-italia-avviso-pubblico-lancia-campagna-di-raccolta-fondi-e-altre-forme-di-sostegno/"", ""postale"": """"}","<pre><yamldata>chi: 'Avviso Pubblico - Enti locali e Regioni per la formazione civile contro le mafie'
+descrizione: 'Presso Banca Etica - Filiale di Firenze'
 intestazione: ''
-iban: 'IT73H 05018 02800 000000131720, presso Banca Etica - Filiale di Firenze'
+iban: 'IT73H 05018 02800 000000131720'
 bic: ''
 postale: ''
 causale: ''
