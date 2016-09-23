@@ -2659,7 +2659,7 @@ link: 'https://www.facebook.com/groups/1758670357733881/permalink/17657306970278
 immagine: ''
 data: 14/09/2016
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/308,176951571,2016-09-14 18:03:32,2016-09-14 16:13:45,Carburante,42.62865429351794,13.289680480957031,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Carburante"", ""data"": ""14/09/2016"", ""descrizione"": ""Necessit\u00e0 di carburante"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Palazzo Comunale, Piazza Orsini, Casale Zocchi, Amatrice, RI, Lazio, Italia"", ""lat"": ""42.62865429351794"", ""link"": """", ""lon"": ""13.289680480957031"", ""tel"": """"}","<pre><yamldata>tel: ''
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/308,176951571,2016-09-23 22:23:22,2016-09-14 16:13:45,Carburante,42.62865429351794,13.289680480957031,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Carburante"", ""data"": ""14/09/2016"", ""descrizione"": ""Necessit\u00e0 di carburante"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Palazzo Comunale, Piazza Orsini, Casale Zocchi, Amatrice, RI, Lazio, Italia"", ""lat"": ""42.62865429351794"", ""link"": """", ""lon"": ""13.289680480957031"", ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 cosa: Carburante
 descrizione: 'Necessità di carburante'
@@ -2669,7 +2669,7 @@ lon: '13.289680480957031'
 link: ''
 immagine: ''
 data: 14/09/2016
-</yamldata></pre>",open
+</yamldata></pre>",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/307,176951458,2016-09-20 14:41:46,2016-09-14 16:13:17,ARCI Nazionale,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""cosa"": ""ARCI Nazionale"", ""data"": ""14/09/2016"", ""descrizione"": ""Arci nazionale ha attivato un progetto di crowdfunding specifico per il Bibliobus, \""\""BIBLIOBUS ARCI \u2013 La Cultura per la Ricostruzione\""\"". Cosa finanzieremo con i fondi raccolti - Assicurazione autobus e volontari - Revisione autobus - Combustibile - Spese di gestione - Attivit\u00e0 itineranti (presentazioni con autori, iniziative pubbliche, etc.) - Acquisto nuovi libri - Abbonamenti a riviste e quotidiani - Acquisto di attrezzatura minuta (sedie, tavolino, ombrellone etc..)"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.produzionidalbasso.com/project/bibliobus-arci-la-cultura-per-la-ricostruzione/"", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 cosa: 'ARCI Nazionale'
