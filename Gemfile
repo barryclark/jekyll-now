@@ -21,6 +21,7 @@ group :jekyll_plugins do
   gem 'jekyll-github-metadata', '2.0.2'
   gem 'listen', '3.0.6'
   gem 'activesupport', '4.2.7'
+  gem 'jekyll-crosseverything-to-medium'
 end
 
 gem 'html-proofer'
