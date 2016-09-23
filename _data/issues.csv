@@ -1369,6 +1369,17 @@ link: ''
 immagine: ''
 data: 16/09/2016
 </yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/492,177435365,2016-09-23 22:51:08,2016-09-16 14:10:58,"CHIAMATA VOLONTARI. Brigate di Solidarietà Attiva portano cibo, vestiario, prodotti per l'igiene, ascoltano e hanno bisogno di volontari.",,,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""CHIAMATA VOLONTARI. Brigate di Solidariet\u00e0 Attiva portano cibo, vestiario, prodotti per l'igiene, ascoltano e hanno bisogno di volontari."", ""data"": ""29/08/2016"", ""descrizione"": ""Chiunque voglia unirsi al corpo volontari pu\u00f2 comunicarlo alla seguente mail: volontaribsa@gmail.com, indicando: - Nome e Cognome - Numero di telefono - Conferma maggiore et\u00e0 - Giorni di disponibilit\u00e0 (Per una migliore gestione dei turni dei volontari, si richiedono disponibilit\u00e0 della durata minima di 4-7 giorni.) - Se si \u00e8 auto-muniti - Competenze e professionalit\u00e0 particolari (idraulici, elettricisti, cuochi/e ect). - Se si \u00e8 pi\u00f9 di una persona, indicare riferimenti e ogni altra indicazione richiesta per ogni componente del gruppo."", ""email"": ""volontaribsa@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.facebook.com/terremotocentroitalia/posts/1358936524136360"", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
+email: volontaribsa@gmail.com
+cosa: 'CHIAMATA VOLONTARI. Brigate di Solidarietà Attiva portano cibo, vestiario, prodotti per l''igiene, ascoltano e hanno bisogno di volontari.'
+descrizione: 'Chiunque voglia unirsi al corpo volontari può comunicarlo alla seguente mail: volontaribsa@gmail.com, indicando: - Nome e Cognome - Numero di telefono - Conferma maggiore età - Giorni di disponibilità (Per una migliore gestione dei turni dei volontari, si richiedono disponibilità della durata minima di 4-7 giorni.) - Se si è auto-muniti - Competenze e professionalità particolari (idraulici, elettricisti, cuochi/e ect). - Se si è più di una persona, indicare riferimenti e ogni altra indicazione richiesta per ogni componente del gruppo.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: 'https://www.facebook.com/terremotocentroitalia/posts/1358936524136360'
+immagine: ''
+data: 29/08/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/491,177435262,2016-09-16 14:12:16,2016-09-16 14:10:26,Cercasi cuochi,,,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Cercasi cuochi"", ""data"": ""16/09/2016"", ""descrizione"": ""Federazione Cuochi Marche cerca 3 cuochi volontari per campo terremotati da affiancare ad altri cuochi gi\u00e0 in loco. Si offre vitto, alloggio e assicurazione."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.facebook.com/ascom.rieti/photos/a.1421929414799607.1073741826.1421929318132950/1683799888612557/?type=3"", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 cosa: 'Cercasi cuochi'
