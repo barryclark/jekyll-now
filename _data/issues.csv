@@ -2029,7 +2029,7 @@ link: ''
 immagine: ''
 data: 15/09/2016
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/379,177127549,2016-09-15 09:18:32,2016-09-15 09:18:23,Comitato C.da Rocchi di Rende (CS),,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Comitato C.da Rocchi di Rende (CS)"", ""data"": ""15/09/2016"", ""descrizione"": ""Raccolta di vestiario NUOVO (uomo, donna, bambino) e alimenti a lunga conservazione presso la sede del Comitato C.da Rocchi di Rende (CS) tutti i giorni dalle ore 16.00 alle ore 18.00 a partire dal giorno 25 agosto 2016"", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": """", ""postale"": """"}","<pre><yamldata>chi: 'Comitato C.da Rocchi di Rende (CS)'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/379,177127549,2016-09-23 21:53:32,2016-09-15 09:18:23,Comitato C.da Rocchi di Rende (CS),,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Comitato C.da Rocchi di Rende (CS)"", ""data"": ""15/09/2016"", ""descrizione"": ""Raccolta di vestiario NUOVO (uomo, donna, bambino) e alimenti a lunga conservazione presso la sede del Comitato C.da Rocchi di Rende (CS) tutti i giorni dalle ore 16.00 alle ore 18.00 a partire dal giorno 25 agosto 2016"", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": """", ""postale"": """"}","<pre><yamldata>chi: 'Comitato C.da Rocchi di Rende (CS)'
 descrizione: 'Raccolta di vestiario NUOVO (uomo, donna, bambino) e alimenti a lunga conservazione presso la sede del Comitato C.da Rocchi di Rende (CS) tutti i giorni dalle ore 16.00 alle ore 18.00 a partire dal giorno 25 agosto 2016'
 intestazione: ''
 iban: ''
@@ -2039,7 +2039,7 @@ causale: ''
 link: ''
 email: ''
 data: 15/09/2016
-</yamldata></pre>",open
+</yamldata></pre>",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/378,177127355,2016-09-15 09:17:44,2016-09-15 09:17:31,Gruppo Imprenditori della Vallesina,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Gruppo Imprenditori della Vallesina"", ""data"": ""15/09/2016"", ""descrizione"": ""Raccolta di PANNOLINI,ACQUA,ASSORBENTI PER ANZIANI E DONNE,CIBO IN SCATOLA, PIGIAMI,TUTE DA GINNASTICA, BAMBOLOTTI, POSATE CARTA E\u00a0TOVAGLIOLI da portare presso Giardini Pubblici di Jesi OGGI dalle 16 alle 20"", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": """", ""postale"": """"}","<pre><yamldata>chi: 'Gruppo Imprenditori della Vallesina'
 descrizione: ""Raccolta di PANNOLINI,ACQUA,ASSORBENTI PER ANZIANI E DONNE,CIBO IN SCATOLA, PIGIAMI,TUTE DA GINNASTICA, BAMBOLOTTI, POSATE CARTA E\_TOVAGLIOLI da portare presso Giardini Pubblici di Jesi OGGI dalle 16 alle 20""
 intestazione: ''
