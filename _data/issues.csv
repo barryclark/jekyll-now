@@ -4159,8 +4159,8 @@ link: ''
 email: ''
 data: 13/09/2016
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/163,176720596,2016-09-23 21:20:21,2016-09-13 18:52:38,Donazioni Croce Rossa Italiana: causale Sisma Centro Italia,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": ""CRPPIT2P086"", ""causale"": ""Sisma Centro Italia"", ""chi"": ""Croce Rossa Italiana"", ""data"": ""13/09/2016"", ""descrizione"": ""Tel: 06 5510"", ""email"": ""aiuti@cri.it"", ""iban"": ""IT40F 06230 03204 000030631681"", ""intestazione"": """", ""link"": ""http://www.cri.it/terremoto-centro-italia"", ""postale"": """"}","<pre><yamldata>chi: 'Croce Rossa Italiana'
-descrizione: 'Tel: 06 5510'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/163,176720596,2016-09-23 21:24:37,2016-09-13 18:52:38,Donazioni Croce Rossa Italiana: causale Sisma Centro Italia,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": ""CRPPIT2P086"", ""causale"": ""Sisma Centro Italia"", ""chi"": ""Croce Rossa Italiana"", ""data"": ""13/09/2016"", ""descrizione"": ""raccolta fondi Tel: 06 5510"", ""email"": ""aiuti@cri.it"", ""iban"": ""IT40F 06230 03204 000030631681"", ""intestazione"": """", ""link"": ""http://www.cri.it/terremoto-centro-italia"", ""postale"": """"}","<pre><yamldata>chi: 'Croce Rossa Italiana'
+descrizione: 'raccolta fondi Tel: 06 5510'
 intestazione: ''
 iban: 'IT40F 06230 03204 000030631681'
 bic: CRPPIT2P086
