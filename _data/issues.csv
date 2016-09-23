@@ -1325,7 +1325,7 @@ link: ''
 immagine: ''
 data: 16/09/2016
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/487,177431346,2016-09-16 13:54:48,2016-09-16 13:54:08,Tenda per due persone,42.60025,13.14813,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Tenda per due persone"", ""data"": ""16/09/2016"", ""descrizione"": ""All'interno devono entrare due lettini. La famiglia si trova a Cittareale: l'abitazione ha subito importanti lesioni. Fate riferimento come sempre alla sede dell'Acli."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": ""42.60025"", ""link"": ""https://www.associazione alcli onlus http://www.alcli.it/"", ""lon"": ""13.14813"", ""tel"": """"}","<pre><yamldata>tel: ''
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/487,177431346,2016-09-23 22:41:55,2016-09-16 13:54:08,Tenda per due persone,42.60025,13.14813,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Tenda per due persone"", ""data"": ""16/09/2016"", ""descrizione"": ""All'interno devono entrare due lettini. La famiglia si trova a Cittareale: l'abitazione ha subito importanti lesioni. Fate riferimento come sempre alla sede dell'Acli."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": ""42.60025"", ""link"": ""https://www.associazione alcli onlus http://www.alcli.it/"", ""lon"": ""13.14813"", ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 cosa: 'Tenda per due persone'
 descrizione: 'All''interno devono entrare due lettini. La famiglia si trova a Cittareale: l''abitazione ha subito importanti lesioni. Fate riferimento come sempre alla sede dell''Acli.'
@@ -1335,7 +1335,7 @@ lon: '13.14813'
 link: 'https://www.associazione alcli onlus http://www.alcli.it/'
 immagine: ''
 data: 16/09/2016
-</yamldata></pre>",open
+</yamldata></pre>",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/486,177430253,2016-09-16 13:50:19,2016-09-16 13:49:07,Cercasi Roulotte,42.55002,13.36260,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Cercasi Roulotte"", ""data"": ""16/09/2016"", ""descrizione"": ""Si cerca urgentemente 1 roulotte con due posti per portare avanti l'attivit\u00e0 locanda che in questi giorni \u00e8 frenetica."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": ""42.55002"", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1760699620864288/"", ""lon"": ""13.36260"", ""tel"": ""3451629957""}","<pre><yamldata>tel: '3451629957'
 email: ''
 cosa: 'Cercasi Roulotte'
