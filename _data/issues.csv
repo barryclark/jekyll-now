@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/671,178995466,2016-09-23 23:44:45,2016-09-23 23:44:29,"Amatrice, martedì 27/09 l’inaugurazione del Ponte a Retrosi",,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""23/09/2016"", ""descrizione"": ""Marted\u00ec 27 settembre, alle ore 15.00, il Sindaco di Amatrice, Sergio Pirozzi, parteciper\u00e0 all\u2019inaugurazione ufficiale del bypass viario del Ponte di Retrosi, ribattezzato Ponte \u2018Rosa\u2019."", ""link"": ""http://www.rietilife.com/2016/09/23/amatrice-martedi-linaugurazione-del-ponte-retrosi/"", ""titolo"": ""Amatrice, marted\u00ec 27/09 l\u2019inaugurazione del Ponte a Retrosi""}","<pre><yamldata>titolo: 'Amatrice, martedì 27/09 l’inaugurazione del Ponte a Retrosi'
+descrizione: 'Martedì 27 settembre, alle ore 15.00, il Sindaco di Amatrice, Sergio Pirozzi, parteciperà all’inaugurazione ufficiale del bypass viario del Ponte di Retrosi, ribattezzato Ponte ‘Rosa’.'
+link: 'http://www.rietilife.com/2016/09/23/amatrice-martedi-linaugurazione-del-ponte-retrosi/'
+data: 23/09/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/670,178991805,2016-09-23 23:10:52,2016-09-23 23:10:08,"Amatrice, 27 settembre inaugurazione del Ponte a Retrosi",,,"[""Accettato"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""23/09/2016"", ""descrizione"": ""Marted\u00ec 27 settembre, alle ore 15.00, il Sindaco di Amatrice parteciper\u00e0 all\u2019inaugurazione del bypass viario del Ponte di Retrosi, ribattezzato Ponte \u2018Rosa\u2019, costruito dal genio dell\u2019Esercito"", ""link"": ""http://www.rietilife.com/2016/09/23/amatrice-martedi-linaugurazione-del-ponte-retrosi/"", ""titolo"": ""Amatrice, 27 settembre inaugurazione del Ponte a Retrosi""}","<pre><yamldata>titolo: 'Amatrice, 27 settembre inaugurazione del Ponte a Retrosi'
 descrizione: 'Martedì 27 settembre, alle ore 15.00, il Sindaco di Amatrice parteciperà all’inaugurazione del bypass viario del Ponte di Retrosi, ribattezzato Ponte ‘Rosa’, costruito dal genio dell’Esercito'
 link: 'http://www.rietilife.com/2016/09/23/amatrice-martedi-linaugurazione-del-ponte-retrosi/'
@@ -4413,15 +4418,6 @@ lat: 42.63665812464417
 lon: 13.298821449279785
 link: https://www.facebook.com
 immagine: https://terremoto.francescopinzauti.com/img/14-35-11Screenshot%20%289%29.png
-data: 10/09/2016</yamldata></pre>",closed
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/131,176197968,2016-09-13 12:29:14,2016-09-10 19:29:07,Prova,42.658454266731226,13.22479248046875,"[""Accettato"", ""Alloggi"", ""Form""]",,https://terremoto.francescopinzauti.com/img/14-29-07Screenshot%20%286%29.png,"{""data"": ""10/09/2016"", ""descrizione"": ""Prova"", ""email"": ""francescopinzauti@gmail.com"", ""immagine"": ""https://terremoto.francescopinzauti.com/img/14-29-07Screenshot%20%286%29.png"", ""indirizzo"": ""Collemoresco, Amatrice, RI, Lazio, Italia"", ""lat"": 42.658454266731226, ""link"": ""http://www.ansa.it/sito/notizie/cronaca/2016/09/09/ateneo-cagliari-no-tasse-terremotati_ffe4ee7d-ebc2-4d8c-9d34-f99d0d1eaa7b.html"", ""lon"": 13.22479248046875, ""tel"": 393272032790}","<pre><yamldata>tel: +393272032790
-email: francescopinzauti@gmail.com
-descrizione: Prova
-indirizzo: Collemoresco, Amatrice, RI, Lazio, Italia
-lat: 42.658454266731226
-lon: 13.22479248046875
-link: http://www.ansa.it/sito/notizie/cronaca/2016/09/09/ateneo-cagliari-no-tasse-terremotati_ffe4ee7d-ebc2-4d8c-9d34-f99d0d1eaa7b.html
-immagine: https://terremoto.francescopinzauti.com/img/14-29-07Screenshot%20%286%29.png
 data: 10/09/2016</yamldata></pre>",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/131,176197968,2016-09-13 12:29:14,2016-09-10 19:29:07,Prova,42.658454266731226,13.22479248046875,"[""Accettato"", ""Alloggi"", ""Form""]",,https://terremoto.francescopinzauti.com/img/14-29-07Screenshot%20%286%29.png,"{""data"": ""10/09/2016"", ""descrizione"": ""Prova"", ""email"": ""francescopinzauti@gmail.com"", ""immagine"": ""https://terremoto.francescopinzauti.com/img/14-29-07Screenshot%20%286%29.png"", ""indirizzo"": ""Collemoresco, Amatrice, RI, Lazio, Italia"", ""lat"": 42.658454266731226, ""link"": ""http://www.ansa.it/sito/notizie/cronaca/2016/09/09/ateneo-cagliari-no-tasse-terremotati_ffe4ee7d-ebc2-4d8c-9d34-f99d0d1eaa7b.html"", ""lon"": 13.22479248046875, ""tel"": 393272032790}","<pre><yamldata>tel: +393272032790
 email: francescopinzauti@gmail.com
