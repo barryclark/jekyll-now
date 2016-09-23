@@ -2051,8 +2051,17 @@ link: ''
 email: ''
 data: 15/09/2016
 </yamldata></pre>",closed
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/377,177127210,2016-09-23 21:56:06,2016-09-15 09:16:49,Casetta Rossa Roma,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Casetta Rossa Roma"", ""data"": ""15/09/2016"", ""descrizione"": ""dal 26 dalle 11,00 e nei giorni seguenti a partire dalle 16,00: -acqua in bottiglia -cibo in scatola (fagioli, tonno, ecc..) -riso, pasta -biscotti, fette biscottate -materiale di primo soccorso (cerotti, acqua ossigenata, ecc) -pannolini -coperte. Casetta Rossa via Giovanni Battista Magnaghi, 14"", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": """", ""postale"": """"}","<pre><yamldata>chi: 'Casetta Rossa Roma'
-descrizione: 'dal 26 dalle 11,00 e nei giorni seguenti a partire dalle 16,00: -acqua in bottiglia -cibo in scatola (fagioli, tonno, ecc..) -riso, pasta -biscotti, fette biscottate -materiale di primo soccorso (cerotti, acqua ossigenata, ecc) -pannolini -coperte. Casetta Rossa via Giovanni Battista Magnaghi, 14'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/377,177127210,2016-09-23 21:57:32,2016-09-15 09:16:49,Casetta Rossa Roma,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Casetta Rossa Roma"", ""data"": ""15/09/2016"", ""descrizione"": ""dal 26 settembre, dalle 11,00 e nei giorni seguenti a partire dalle 16,00 si raccolgono:\n- acqua in bottiglia - cibo in scatola (fagioli, tonno, ecc..) - riso, pasta -biscotti, fette biscottate - materiale di primo soccorso (cerotti, acqua ossigenata, ecc) - pannolini - coperte.\nCasetta Rossa via Giovanni Battista Magnaghi, 14"", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": """", ""postale"": """"}","<pre><yamldata>chi: 'Casetta Rossa Roma'
+descrizione: 'dal 26 settembre, dalle 11,00 e nei giorni seguenti a partire dalle 16,00 si raccolgono: 
+
+- acqua in bottiglia 
+- cibo in scatola (fagioli, tonno, ecc..) 
+- riso, pasta -biscotti, fette biscottate 
+- materiale di primo soccorso (cerotti, acqua ossigenata, ecc) 
+- pannolini
+- coperte. 
+
+Casetta Rossa via Giovanni Battista Magnaghi, 14'
 intestazione: ''
 iban: ''
 bic: ''
