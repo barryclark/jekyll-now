@@ -2,6 +2,7 @@
 layout: post
 title: I successi reali della condivisione social
 categories: storie
+crosseverything_to_medium: true
 ---
 
 Come posso io (o tu, o chiunque) da casa mia, io che non sono mai stata ad Amatrice e certo non so “dove si possa trovare da comprare un cavo di rete di 5/10 metri vicino ad amatrice per un campo”, come chiede Giacomo Bartalesi della protezione civile - come posso dicevo, essere utile a risolvere questo problema? 
