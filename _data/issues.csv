@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/669,178967413,2016-09-23 20:33:31,2016-09-23 20:32:54,"Grande Moschea di Roma, 25 settembre amatriciana halal per Amatrice",,,"[""Accettato"", ""Bollettino"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Grande Moschea di Roma, 25 settembre amatriciana halal per Amatrice"", ""data"": ""23/09/2016"", ""descrizione"": ""Domenica 25 settembre presso la Grande Moschea di Roma si svolger\u00e0 la manifestazione: Amatriciana Halal, i cui proventi andranno ad Amatrice e ai suoi abitanti."", ""email"": ""http://www.askanews.it/regioni/lazio/grande-moschea-di-roma-il-25-amatriciana-halal-pro-terremotati_711894271.htm"", ""iban"": """", ""intestazione"": """", ""link"": """", ""postale"": """"}","<pre><yamldata>chi: 'Grande Moschea di Roma, 25 settembre amatriciana halal per Amatrice'
+descrizione: 'Domenica 25 settembre presso la Grande Moschea di Roma si svolgerà la manifestazione: Amatriciana Halal, i cui proventi andranno ad Amatrice e ai suoi abitanti.'
+intestazione: ''
+iban: ''
+bic: ''
+postale: ''
+causale: ''
+link: ''
+email: 'http://www.askanews.it/regioni/lazio/grande-moschea-di-roma-il-25-amatriciana-halal-pro-terremotati_711894271.htm'
+data: 23/09/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/668,178966023,2016-09-23 20:26:07,2016-09-23 20:25:28,"Comitato Desiocittaperta, Associazione Minhaj Ul Quran e Missionari Saveriani",,,"[""Accettato"", ""Facebook"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Comitato Desiocittaperta, Associazione Minhaj Ul Quran e Missionari Saveriani"", ""data"": ""23/09/2016"", ""descrizione"": ""Cena comunitaria di raccolta fondi per emergenza terremoto con piatti della tradizione siriana, pakistana e dolci dei paesi del mondo: sabato 15 ottobre 2016 (prenotazione obbligatoria)"", ""email"": ""desiocittaperta@gmail.com"", ""iban"": """", ""intestazione"": """", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1773573759576874/"", ""postale"": """"}","<pre><yamldata>chi: 'Comitato Desiocittaperta, Associazione Minhaj Ul Quran e Missionari Saveriani'
 descrizione: 'Cena comunitaria di raccolta fondi per emergenza terremoto con piatti della tradizione siriana, pakistana e dolci dei paesi del mondo: sabato 15 ottobre 2016 (prenotazione obbligatoria)'
 intestazione: ''
