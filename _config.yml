@@ -104,7 +104,7 @@ disqus: "terremotocentroitalia"
 google_analytics: "UA-47474515-3"
 
 jekyll-crosseverything_to_medium:
-  enabled: true
+  enabled: false
   cache: .jekyll-crosseverything_to_medium
   status: draft
 
