@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/676,179049712,2016-09-24 20:19:09,2016-09-24 20:18:45,"Amatrice Vive - Crowdfunding ""Amatrice 2.0""",,,"[""Accettato"", ""Facebook"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Amatrice Vive - Crowdfunding \""Amatrice 2.0\"""", ""data"": ""24/09/2016"", ""descrizione"": ""Amatrice 2.0 nasce per evitare che nel periodo che intercorre tra la prima emergenza e ricostruzione la comunit\u00e0 si disgreghi non avendo ne casa ne una fonte di reddito o sostentamento per le famiglie pi\u00f9 indigenti con sistemazioni provvisorie e sussidi. Incentivi per l'apertura delle attivit\u00e0 commerciali in loco. Creazione di centri ricreativi per anziani e giovani. Sostentamento studenti universitari le cui famiglie abbiano perso ogni forma di reddito."", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""https://www.gofundme.com/2pj4rr38"", ""postale"": """"}","<pre><yamldata>chi: 'Amatrice Vive - Crowdfunding ""Amatrice 2.0""'
+descrizione: 'Amatrice 2.0 nasce per evitare che nel periodo che intercorre tra la prima emergenza e ricostruzione la comunità si disgreghi non avendo ne casa ne una fonte di reddito o sostentamento per le famiglie più indigenti con sistemazioni provvisorie e sussidi. Incentivi per l''apertura delle attività commerciali in loco. Creazione di centri ricreativi per anziani e giovani. Sostentamento studenti universitari le cui famiglie abbiano perso ogni forma di reddito.'
+intestazione: ''
+iban: ''
+bic: ''
+postale: ''
+causale: ''
+link: 'https://www.gofundme.com/2pj4rr38'
+email: ''
+data: 24/09/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/675,179044873,2016-09-24 18:35:14,2016-09-24 18:33:22,Un libro per far rinascere la biblioteca di Amatrice,,,"[""Accettato"", ""Raccolte Fondi"", ""Twitter""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Un libro per far rinascere la biblioteca di Amatrice"", ""data"": ""24/09/2016"", ""descrizione"": ""\""Un libro per Amatrice\"": le adesioni di Sep\u00falveda, Maraini, Arbore e Severgnini"", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""http://www.rietilife.com/2016/09/24/un-libro-amatrice-le-adesioni-sepulveda-maraini-arbore-severgnini/"", ""postale"": """"}","<pre><yamldata>chi: 'Un libro per far rinascere la biblioteca di Amatrice'
 descrizione: '""Un libro per Amatrice"": le adesioni di Sepúlveda, Maraini, Arbore e Severgnini'
 intestazione: ''
@@ -1016,16 +1027,6 @@ indirizzo: 'Piazza Duomo, L''Aquila, AQ, Abruzzo, 67100, Italia'
 lat: '42.3488992'
 lon: '13.3981375'
 link: ''
-immagine: ''
-data: 16/09/2016
-</yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/538,177477284,2016-09-22 15:39:37,2016-09-16 17:21:34,"Gabicce Mare, PU - Hotel Marinella Resort, 4 appartamenti",43.9667609,12.7573337,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""Hotel Marinella Resort - 4 appartamenti disponibili al momento"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via Sbarretti, Gabicce Mare, PU, Marche, 61011, Italia"", ""lat"": ""43.9667609"", ""link"": ""http://www.hotel-marinella.it/"", ""lon"": ""12.7573337"", ""tel"": ""0541 954571""}","<pre><yamldata>tel: '0541 954571'
-email: ''
-descrizione: 'Hotel Marinella Resort - 4 appartamenti disponibili al momento'
-indirizzo: 'Via Sbarretti, Gabicce Mare, PU, Marche, 61011, Italia'
-lat: '43.9667609'
-lon: '12.7573337'
-link: 'http://www.hotel-marinella.it/'
 immagine: ''
 data: 16/09/2016
 </yamldata></pre>",open
