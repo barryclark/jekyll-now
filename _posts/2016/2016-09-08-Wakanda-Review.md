@@ -13,7 +13,6 @@ author: Rob Kalajian
 <h2>Prelude</h2>
 
 Wakanda is a game about building totem poles. Being a Blue Orange game I expected it to be fun, easy to learn, and great with the kids. It was all three. The goal of the game is to claim 3 totem poles and have the highest value of poles at the end of the game. The rules clear, and the game only takes a moment to learn. Scoring is based on how your build your totem poles, and what village tiles they’re built on.
-Play
 
 <h2>Play</h2>
 
@@ -25,7 +24,6 @@ Learning to play Wakanda was a breeze. The rules are two pages long and are perf
 The game continues until all 6 poles are claimed. Points are scored by the village tiles your poles are on, and if there are any Sun icons on your pole (unless it’s on the Sun village tile.) Keep in mind that the villages you’ve built on score for *all* your poles, not just the one built in that village.
 
 You can read the actual rule booklet by clicking the link in the Supporting Links at the bottom of this post.
-Pieces
 
 <h2>Pieces</h2>
 <img src="/images/wakanda/pieces.jpg" height="100" alt="Wakanda" class="float-left" />
