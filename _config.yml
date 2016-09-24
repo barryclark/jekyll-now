@@ -104,9 +104,8 @@ disqus: "terremotocentroitalia"
 google_analytics: "UA-47474515-3"
 
 jekyll-crosseverything_to_medium:
-  enabled: false
-  cache: .jekyll-crosseverything_to_medium
-  status: draft
+  enabled: true
+  useraccount: 'https://medium.com/terremotocentroitalia'
 
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
