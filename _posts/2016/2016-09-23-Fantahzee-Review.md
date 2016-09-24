@@ -43,7 +43,8 @@ That's the gist of it. I've linked to the full rules in the Supporting Links sec
 
 As usual, AEG has put out an excellent product with Fantahzee. Production quality is high. The box feels great, the cards are durable, and the counters aren't cheap. The artwork is colorful, beautiful, and really adds to the theme of the game. There's even a great fabric bag to store the dice, a plastic insert to hold all the cards with spaces for future cards.
 
-<img src="/images/fantahzee/baroncloven.jpg" alt="Bodyguard" class="float-right" /><h2>Perspective</h2>
+<h2>Perspective</h2>
+<img src="/images/fantahzee/baroncloven.jpg" alt="Bodyguard" class="float-right" />
 
 I played Fantahzee with my 11-year-old son and 6-year-old son, and we all had a blast. The rules are simple enough that we were able to jump right into the game and learn as we went.  Card combos became more apparent the longer we played, and by the end, each of us was pulling off some pretty great turns. In the end, my 6-year-old ended up creaming us by coming almost 15 points ahead of my 11-year-old, and more than 20 points ahead of me.
 
