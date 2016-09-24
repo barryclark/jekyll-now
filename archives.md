@@ -34,15 +34,6 @@ th, td {
         {{ post.date | date: "%a" }}
      {% endcapture %}
      {% assign week = week | plus: 0 %}
-     
-     <tr>
-      <td><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }} </a></td>
-       <td><font size="3">{{ post.date | date: "%A" }}</font></td>
-       {% if author.name %}
-          <td><i>{{ author.name }}</i></td></tr>
-       {% else %}
-          <td></td></tr>
-       {% endif %}
             
        {% if week < old_week %}
         <tr><td colspan="3">
@@ -72,6 +63,15 @@ th, td {
           <hr width="100%"> 
           </td></tr>			
           {% assign old_week = week %}
+       {% endif %}
+       
+       <tr>
+      <td><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }} </a></td>
+       <td><font size="3">{{ post.date | date: "%A" }}</font></td>
+       {% if author.name %}
+          <td><i>{{ author.name }}</i></td></tr>
+       {% else %}
+          <td></td></tr>
        {% endif %}
        
   {% endfor %}
