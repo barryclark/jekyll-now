@@ -14,7 +14,7 @@ layout: default
       {% if author.name %}<span class="post-list-author-name">by {{ author.name }}</span>{% endif %}
 
       <div class="entry">
-        {{ post.excerpt }}
+        {{ post.excerpt | truncate:500 }}
       </div>
 
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
