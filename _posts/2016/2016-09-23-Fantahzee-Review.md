@@ -18,7 +18,7 @@ Fantahzee is a game about using Yahtzee rolls to activate heroes, kill monsters,
 
 Fantahzee starts you off by creating 5 horde stacks. Each of these is comprised of a boss shuffled into level 2 monsters and topped with a bunch of level 1 monsters. Then you shuffle up the treasures in a pile, the town cards in a pile, and the hero and action cards into a pile. Flip over the top card on each hoard, deal five cards to each player and start the game.
 
-<img src="/images/fantahzee/bodyguard.jpg" alt="Bodyguard" class="float-right" />Each player's turn is divided into several phases:
+Each player's turn is divided into several phases:
 
 1. The Action Phase
 2. The Dice Phase
@@ -27,7 +27,7 @@ Fantahzee starts you off by creating 5 horde stacks. Each of these is comprised 
 
 Each phase is pretty easy and goes by really quickly once you get into the swing of the game.
 
-In the Action phase a player can play 2 heroes and 2 action cards in any order. Up to five hero cards can be in a player's party, so if you want to play another but already have five down you'll need to discard one that's already in play.
+<img src="/images/fantahzee/bodyguard.jpg" alt="Bodyguard" class="float-right" />In the Action phase a player can play 2 heroes and 2 action cards in any order. Up to five hero cards can be in a player's party, so if you want to play another but already have five down you'll need to discard one that's already in play.
 
 During the Dice Phase, a player rolls 5 dice, Yahtzee style. Basically, you get 3 rolls to try and match the dice on your hero cards to activate them. Once a hero has been activated you resolve its special ability and can add its strength to your attack in the next step. Once you're done rolling and activating you add up the strength of all the activated heroes and go kill some monsters. You need strength equal or greater than a monster's strength to kill it.
 
