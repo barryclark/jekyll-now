@@ -2,7 +2,7 @@
 layout: post
 title: La staffetta social
 categories: storie
-crosseverything_to_medium: true
+crosseverything_to_medium: false
 ---
 
 **di Giorgia Brugnerotto**
