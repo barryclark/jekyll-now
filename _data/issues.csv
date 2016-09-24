@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/675,179044873,2016-09-24 18:35:14,2016-09-24 18:33:22,Un libro per far rinascere la biblioteca di Amatrice,,,"[""Accettato"", ""Raccolte Fondi"", ""Twitter""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Un libro per far rinascere la biblioteca di Amatrice"", ""data"": ""24/09/2016"", ""descrizione"": ""\""Un libro per Amatrice\"": le adesioni di Sep\u00falveda, Maraini, Arbore e Severgnini"", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""http://www.rietilife.com/2016/09/24/un-libro-amatrice-le-adesioni-sepulveda-maraini-arbore-severgnini/"", ""postale"": """"}","<pre><yamldata>chi: 'Un libro per far rinascere la biblioteca di Amatrice'
+descrizione: '""Un libro per Amatrice"": le adesioni di Sepúlveda, Maraini, Arbore e Severgnini'
+intestazione: ''
+iban: ''
+bic: ''
+postale: ''
+causale: ''
+link: 'http://www.rietilife.com/2016/09/24/un-libro-amatrice-le-adesioni-sepulveda-maraini-arbore-severgnini/'
+email: ''
+data: 24/09/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/674,179044094,2016-09-24 18:20:28,2016-09-24 18:18:00,UMBRIA: provvedimento del Governo modifica lista dei comuni compresi nel cratere,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""24/09/2016"", ""descrizione"": ""cambia l'area del cratere in Umbria: prefabbricati solo a Norcia, ma finanziamenti per tutta l'Umbria e anche per la Valnerina ternana"", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1773900962877487/"", ""titolo"": ""UMBRIA: provvedimento del Governo modifica lista dei comuni compresi nel cratere""}","<pre><yamldata>titolo: 'UMBRIA: provvedimento del Governo modifica lista dei comuni compresi nel cratere'
 descrizione: 'cambia l''area del cratere in Umbria: prefabbricati solo a Norcia, ma finanziamenti per tutta l''Umbria e anche per la Valnerina ternana'
 link: 'https://www.facebook.com/groups/1758670357733881/permalink/1773900962877487/'
