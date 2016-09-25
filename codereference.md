@@ -7,6 +7,8 @@ permalink: /codereference/
 
 #### Personal reference for useful one liners/short coding tasks/anything I've ever had to google more than once.  
 
+Things that are now obvious kept for posterity's sake
+
 ### <font color="red">Linux Command Line</font>
 
 ##### Run a script on multiple files in a directory 
