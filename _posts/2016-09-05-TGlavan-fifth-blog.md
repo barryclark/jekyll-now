@@ -11,6 +11,8 @@ So with the lack of material to draw inspiration on this week I have taken the l
 
 In class we have broken down two of the Sherlock Holmes novels using Python prgramming laguage to preform a tf-idf analysis of the text.  This allowed us to determin the length of the short stories, look for word frequencies, and determine the basic structure of the book.  However, I have chosen to not use python and instead used a word cloud generating program which you can find here (http://www.wordclouds.com/).  Similar to python the program allows you to submit a body of text for analysis, which in this case I used the full script for Much Ado About Nothing which you can find here, http://shakespeare.mit.edu/much_ado/full.html, if you wish to read it. Once you have innput a body of text the program then sorts the text into a word frequency list removing common words that are not relavent to the meaning of the text (i.e.; it, the, a, etc.).  It should be noted that due to the vocabulary used by Shakespere not all of these word were caught as the program did not recognize them and though they were significant.  Below you can find the un-edited and edited lists I used to create the word clouds where in the edited list I removed some of the period specific vocabulary that does not add to the text. (Sorry in advance for the wall of text you are going to have to scroll through)
 
+*From this point on could be considered spoilers so if you dont like that kind of stuff I reccomend you go read the full play that I linked above or stop reading now.
+
 Un-edited:
 
 197	DON
@@ -2698,10 +2700,35 @@ So as you can see I chose to eliminate the plethora of words that appear less th
 
 LEONATO, PEDRO, BENEDICK, CLAUDIO, BEATRICE, DOGBERRY, JOHN, BORACHIO, MARGARET, CONRADE, URSULA, VERGES, FRANCIS, FRIAR, BALTHASAR
 
-Furthering this I can guess that based on the names and that Don, the name for the head of a family, is the most used word the setting for the play is in Southern Europe (I would guess Spain or Italy).  There also appears to be a theme of light and dark as Shakespere uses several polarizing words such as:
+Furthering this I can guess that based on the names and that Don, the a common name for the head of a family in latin european culture, is the most used word, the setting for the play is in Southern Europe, specifically Spain or Italy. I can also infer that the charaters are from the upper class based on the frequency of the words Lord, Lady, prince, and noble and that two of the characters are getting married and someone dies, neither of which are a surprise considering Shakespere's other works.  There also appears to be a theme of light and dark as Shakespere uses several polarizing words such as:
 
-Hero, love, good, God, true, faith, grace, fair, life, honest, loved, friend, truth, affection, joy, worship,  and merry
+Positive:
 
-as well as:
+Hero, love, good, God, true, faith, grace, fair, life, honest, loved, friend, truth, affection, joy, worship, and merry
 
+Negative:
 
+fool, die, death, villain, blood, sad, false, poor, pains, and dead.  
+
+From this we can assume the mood of the play is upbeat as the positive words occur far more frequently and in greater variety than their negative counterparts.
+
+Now, that we have a pretty good idea of what the play is about lets make a quick comparison to what spark notes tells us here (http://www.sparknotes.com/shakespeare/muchado/) and see how close we were.
+
+Characters: missed Hero but got everone else........................................................................................(+)
+Plot: Missed the betrayal wrongful accusation of Hero but got everything else.......................................................(+)
+Themes: I was pretty off here ......................................................................................................(-)
+Setting: Spot on....................................................................................................................(+)
+
+Final Score: 3/4 
+
+So in conclusion I was pretty close on just about everything and I did it all without reading a single sentence of the actual play so I'll chalk that up as a win for Digital Humanities.
+
+Also for those of you wondering what happend to the word clouds I generated you can find them here:
+
+Un-edited list: http://imgur.com/a/dul8P
+
+Edited: http://imgur.com/a/LUNby
+
+Till next time,
+
+Peace!
