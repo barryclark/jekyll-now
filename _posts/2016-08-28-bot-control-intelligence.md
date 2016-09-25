@@ -6,13 +6,10 @@ date:   2016-09-24 11:00
 categories: 虚拟机器人 Bot Chatbot 聊天机器人 一个AI yige.ai
 ---
 
-本文很长，但其实我只分享了以下两个个人观点：
-
+本文很长，但其实我只分享以下两个个人观点，欢迎大家指正：
 
 1. 对话交互会在IoT万物互联时代爆发，这是追逐交互效率的必然结果。
 2. 不同的bot和bot平台的差别其实只是在可控性和智能性之间的权衡不同。技术的发展只是在不断拓展可控性和智能性的帕累托边界而已。
-
-欢迎交流。
 
 
 # 对话交互将是人与机器最高效的交互方式
@@ -117,7 +114,7 @@ Api.ai好的可控性降低了开发者的使用和维护门槛，它的灵活�
 
 一个AI定位于服务国内开发者，所以也引入了一些中文相关的特性，例如查询接口支持未分词的整句话输入，以及分词后的语句输入。
 
-更多信息可见[一个AI官方文档](http://docs.yige.ai)，也欢迎大家去[一个AI官网（www.yige.ai）](http://www.yige.ai)逛逛，尝试创建年轻人的第一个AI应用吧^_^。
+关于一个AI的由来，可见我之前的文章“[创建Bot的中文平台——一个AI（yige.ai）][yigeai_blog]”。更多信息可见[一个AI官方文档](http://docs.yige.ai)，也欢迎大家去[一个AI官网（www.yige.ai）](http://www.yige.ai)逛逛，尝试创建年轻人的第一个AI应用吧^_^。
 
 
 ### 三、更智能的[Viv](http://viv.ai/)
@@ -190,6 +187,7 @@ Wit.ai正从api.ai和一个AI这端走向Viv那端。路是不是对的，只能
 [allo]: http://breezedeus.github.io/2016/05/19/breezedeus-google-allo-chat-smarter.html
 [viv]: http://breezedeus.github.io/2016/09/01/breezedeus-viv-ai-chatbots-generator.html
 [wit_blog]: http://breezedeus.github.io/2016/05/26/breezedeus-wit-ai-chatbots-generator.html
+[yigeai_blog]: http://breezedeus.github.io/2016/09/22/breezedeus-bot-yigeai.html
 [quora]: https://www.quora.com/Whats-the-difference-between-Siri-and-Viv
 [viv_video]: http://v.qq.com/x/page/p0327qchmhe.html
 
