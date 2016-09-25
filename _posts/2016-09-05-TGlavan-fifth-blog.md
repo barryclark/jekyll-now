@@ -2522,13 +2522,13 @@ Edited:
 146	BENEDICK
 140	CLAUDIO
 116	BEATRICE
-110	Hero
+110 Hero
 103	man
-88	love
-76	good
+88  love
+76  good
 66	lord
 58	DOGBERRY
-57	God
+57  God
 56	Claudio
 54	say
 52	Benedick
@@ -2559,10 +2559,10 @@ Edited:
 24	VERGES
 23	answer
 22	indeed
-22	true
+22  true
 21	Messenger
 21	Watchman
-21	faith
+21  faith
 21	night
 21	every
 21	hand
@@ -2582,8 +2582,8 @@ Edited:
 17	nothing
 17	SCENE
 16	great
-16	grace
-16	Good
+16  grace
+16  Good
 16	look
 16	fool
 16	die
@@ -2596,8 +2596,8 @@ Edited:
 15	death
 15	wear
 15	Exit
-15	fair
-15	life
+15  fair
+15  life
 15	show
 14	prince's
 14	better
@@ -2609,8 +2609,8 @@ Edited:
 14	part
 14	day
 13	villain
-13	honest
-13	loved
+13  honest
+13  loved
 13	words
 13	blood
 13	troth
@@ -2642,9 +2642,9 @@ Edited:
 11	strange
 11	married
 11	fellow
-11	friend
+11  friend
 11	father
-11	truth
+11  truth
 11	heard
 11	world
 11	swear
@@ -2655,7 +2655,7 @@ Edited:
 11	full
 11	eyes
 10	constable
-10	affection
+10  affection
 10	thousand
 10	masters
 10	tongue
@@ -2663,7 +2663,7 @@ Edited:
 10	little
 10	Sexton
 10	false
-10	loves
+10  joy
 10	stand
 10	hold
 10	says
@@ -2671,12 +2671,11 @@ Edited:
 10	poor
 10	even
 10	talk
-10	joy
 10	ill
 9	LEONATO'S
 9	neighbour
 9	counsel
-9	worship
+9 worship
 9	signior
 9	Messina
 9	master
@@ -2685,7 +2684,7 @@ Edited:
 9	knows
 9	uncle
 9	woman
-9	merry
+9 merry
 9	music
 9	noble
 9	dead
@@ -2695,6 +2694,14 @@ Edited:
 9	art
 9	lie
 
-So as you can see I chose to eliminate the plethora of words that appear less than 9 times in the text not only to avoid a headache but these words more likely than not do not hold great significance to the text as a whole.
+So as you can see I chose to eliminate the plethora of words that appear less than 9 times in the text not only to avoid a headache but these words more likely than not do not hold great significance to the text as a whole.  From my abreviated list I can guess with relative certainty that the main characters in the play are: 
+
+LEONATO, PEDRO, BENEDICK, CLAUDIO, BEATRICE, DOGBERRY, JOHN, BORACHIO, MARGARET, CONRADE, URSULA, VERGES, FRANCIS, FRIAR, BALTHASAR
+
+Furthering this I can guess that based on the names and that Don, the name for the head of a family, is the most used word the setting for the play is in Southern Europe (I would guess Spain or Italy).  There also appears to be a theme of light and dark as Shakespere uses several polarizing words such as:
+
+Hero, love, good, God, true, faith, grace, fair, life, honest, loved, friend, truth, affection, joy, worship,  and merry
+
+as well as:
 
 
