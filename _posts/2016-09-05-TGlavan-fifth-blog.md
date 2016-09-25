@@ -9,7 +9,7 @@ Salutations
 
 So with the lack of material to draw inspiration on this week I have taken the liberty of applying some of the methods we have covered in class to an unassigned piece of literature.  The peice I have chosen is William Shakespere's Much Ado About Nothing, which I have never read before and will not be reading for this blog as that would be boring.  The purpose of this is to see how much of an undestanding can I obtain without looking at summaries or reading the full text, then compare my understanding with the spark notes summary.
 
-In class we have broken down two of the Sherlock Holmes novels using Python prgramming laguage to preform a tf-idf analysis of the text.  This allowed us to determin the length of the short stories, look for word frequencies, and determine the basic structure of the book.  However, I have chosen to not use python and instead used a word cloud generating program which you can find here (http://www.wordclouds.com/).  Similar to python the program allows you to submit a body of text for analysis, which in this case I used the full script for Much Ado About Nothing. The program then sorts the text into a word frequency list removing common words that are not relavent to the meaning of the text (i.e.; it, the, a, etc.).  It should be noted that due to the vocabulary used by Shakespere not all of these word were caught as the program did not recognize them and though they were significant.  Below you can find the un edited and edited list I used to create the word clouds.
+In class we have broken down two of the Sherlock Holmes novels using Python prgramming laguage to preform a tf-idf analysis of the text.  This allowed us to determin the length of the short stories, look for word frequencies, and determine the basic structure of the book.  However, I have chosen to not use python and instead used a word cloud generating program which you can find here (http://www.wordclouds.com/).  Similar to python the program allows you to submit a body of text for analysis, which in this case I used the full script for Much Ado About Nothing which you can find here, http://shakespeare.mit.edu/much_ado/full.html, if you wish to read it. Once you have innput a body of text the program then sorts the text into a word frequency list removing common words that are not relavent to the meaning of the text (i.e.; it, the, a, etc.).  It should be noted that due to the vocabulary used by Shakespere not all of these word were caught as the program did not recognize them and though they were significant.  Below you can find the un-edited and edited lists I used to create the word clouds where in the edited list I removed some of the period specific vocabulary that does not add to the text. (Sorry in advance for the wall of text you are going to have to scroll through)
 
 Un-edited:
 
@@ -2695,5 +2695,6 @@ Edited:
 9	art
 9	lie
 
-*If you wish to read it before continuing you can find the text file I used here (http://shakespeare.mit.edu/much_ado/full.html)
+So as you can see I chose to eliminate the plethora of words that appear less than 9 times in the text not only to avoid a headache but these words more likely than not do not hold great significance to the text as a whole.
+
 
