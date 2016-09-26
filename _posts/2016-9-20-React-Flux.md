@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: Working With React and Flux
