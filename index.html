@@ -28,22 +28,22 @@ layout: default
   <ul class="pager">
     {% if paginator.previous_page %}
       <li class="previous">
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Older</a>
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer</a>
       </li>
     {% else %}
       <li class="previous">
-        <span>&larr; Older</span>
+        <span>&larr; Newer</span>
       </li>
     {% endif %}
 
 
     {% if paginator.next_page %}
       <li class="next">
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Newer &rarr;</a>
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older &rarr;</a>
       </li>
     {% else %}
       <li class="next">
-        <span>Newer &rarr;</span>
+        <span>Older &rarr;</span>
       </li>
     {% endif %}
   </ul>
