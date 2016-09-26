@@ -55,4 +55,4 @@ And that's it! Hopefully, this was a good example to introduce how React and the
 - [Full-stack React/Node/Mongo tutorial](http://sahatyalkabov.com/create-a-character-voting-app-using-react-nodejs-mongodb-and-socketio/)
 - [Getting started with React](https://facebook.github.io/react/docs/getting-started.html)
 - [Getting to Know Flux](https://scotch.io/tutorials/getting-to-know-flux-the-react-js-architecture)
-- [Adventures With React and Flux] (http://no-kill-switch.ghost.io/my-adventure-with-react-flux-setting-sails/)
+- [Adventures With React and Flux](http://no-kill-switch.ghost.io/my-adventure-with-react-flux-setting-sails/)
