@@ -12,6 +12,7 @@ These machine learning systems that are trained on a massive amount of data comi
 
 ### The Multi-Model Architecture
 Our machine learning system has to be capable of a few different tasks: 
+
 - It needs to efficienty store data, as well as pull data from several different sources. 
 - It should be capable of automatically re-training and testing itself. Since new data is always flowing to our system, it's probably not a good idea to train our model only once on an initial dataset. 
 - The time-consuming training phase should occur offline. When the model is trained, it should be deployed such that any arbitrary event can trigger it.
