@@ -196,12 +196,27 @@ ex. ENS0000001ENS0000002 -> ENS0000001 ENS0000002
 
         import os
         currentwd = os.getcwd()
+        
+##### Make a python package
+ 
+     Use skeleton of flupan
+
+##### Import python3 print functions
+    from __future__ import print_function
 
 ##### argparse Command line args
+    import argparse
+    
+    parser = argparse.ArgumentParser(description='Whatever')
+
+    parser.add_argument('identified_elution', action="store", type=str)
+    parser.add_argument("--prots", action="store", dest="proteins", nargs='+', required=False)
+    parser.add_argument('--bla', action="store", type=str)
+    inputs = parser.parse_args()
+    print(inputs.proteins)
 
 
-
-##### sys.argv Command line arguments
+##### sys.argv Command line arguments. Not using these anymore in favor of argparse
 
     import sys
     infile = sys.argv[1]
@@ -296,8 +311,8 @@ ex. ENS0000001ENS0000002 -> ENS0000001 ENS0000002
         sudo chown -R username:username *
 
 ##### Three main commands
-        git add .
-        git commit -m "commit message"
+        git add [file]
+        git commit -a 
         git push
 
 ##### Clone a repository
