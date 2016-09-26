@@ -7,7 +7,7 @@ permalink: /projects/splitwise/
 # Splitwise Redesign
 
 <figure>
-  <img src="/images/splitwise-users.jpg" alt="Splitwise Users Adding a Bill">
+  <img src="/images/splitwise/splitwise-users.jpg" alt="Splitwise Users Adding a Bill">
 </figure>
 
 **Prompt:** Choose an existing iOS or Android mobile experience you feel can be improved, and propose a new direction for it.
@@ -25,7 +25,7 @@ The home page needed work. Since this is where users land, we want them to know 
 Splitwise’s current add bill page further demonstrates the of lack of clarity: the text input fields are not labeled well, the bottom half of this screen is comprised of a series of unlabeled buttons that don’t look like buttons, and the verbiage is overall confusing (a common problem throughout the app).
 
 <figure class="full">
-  <img src="/images/splitwise_old.png" alt="Old Splitwise Screens">
+  <img src="/images/splitwise/splitwise_old.png" alt="Old Splitwise Screens">
 </figure>
 
 <p class="caption">Current Splitwise UI. Names and images grayed out.</p>
@@ -35,7 +35,7 @@ Splitwise’s current add bill page further demonstrates the of lack of clarity:
 I used Balsamiq Mockups to create wireframes based on a distilled and refined list of improvements I initially brainstormed.
 
 <figure class="full">
-  <img src="/images/splitwise_wireframe-home.png" alt="Splitwise Wireframes: Home Page and FAB Overlay">
+  <img src="/images/splitwise/splitwise_wireframe-home.png" alt="Splitwise Wireframes: Home Page and FAB Overlay">
 </figure>
 
 <p class="caption">Left to right: Home page v1, Home page v2, and FAB Overlay</p>
@@ -47,7 +47,7 @@ The FAB button is great because it is a call to action that stands out, is alway
 In the breakdown section I decided to modify the copy to sound a bit more like a natural sentence. This way users are able to read it clearly without their eyes jumping from margin to margin and easily identify who owes who. Additionally, this particular sentence structure allows for the convention of keeping the dollar amount at the end. The profile pictures associated with each bill listed belong to whomever owes the money. Keeping consistency and conventions like these make the app easy to use and remember.
 
 <figure class="full">
-  <img src="/images/splitwise_wireframe-nav&addbill.png" alt="Splitwise Wireframe: Nav Bar & Add Bill Page">
+  <img src="/images/splitwise/splitwise_wireframe-nav&addbill.png" alt="Splitwise Wireframe: Nav Bar & Add Bill Page">
 </figure>
 
 <p class="caption">Left to right: Navbar, Add Bill page v1, and Add Bill page v2</p>
@@ -61,13 +61,13 @@ A common complaint from some current Splitwise users is the lack of a defaulted 
 To further express my ideas and demonstrate flow through the application I decided to implement visual design using Sketch and [a clickable prototype using InVision](https://invis.io/2F618CMXC).
 
 <figure class="full">
-  <img src="/images/splitwise_mockup-home&fab.png" alt="Splitwise Mockup: Home Page & Navbar">
+  <img src="/images/splitwise/splitwise_mockup-home&fab.png" alt="Splitwise Mockup: Home Page & Navbar">
 </figure>
 
 <p class="caption">Left to right: Home page, Navbar, and FAB Overlay</p>
 
 <figure class="full">
-  <img src="/images/splitwise_mockup-addbill.png" alt="Splitwise Mockup: Add Bill Page">
+  <img src="/images/splitwise/splitwise_mockup-addbill.png" alt="Splitwise Mockup: Add Bill Page">
 </figure>
 
 <p class="caption">Left to right: Add Bill page, Split Type Dialogue, and Split Type Dropdown</p>
@@ -77,7 +77,7 @@ To further express my ideas and demonstrate flow through the application I decid
 Upon completing this redesign I stood back and tried to think of ways to increase a first-time user’s comprehension, speed, and “learnability”. The first thing that came to me was obvious, onboarding! Onboarding is very helpful by explaining the core features of an application. The onboarding process I have created goes through the most important feature of Splitwise, adding a bill.
 
 <figure class="full">
-  <img src="/images/splitwise_onboarding.png" alt="Splitwise Onboarding Process">
+  <img src="/images/splitwise/splitwise_onboarding.png" alt="Splitwise Onboarding Process">
 </figure>
 
 ## Conclusion
