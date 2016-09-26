@@ -43,7 +43,7 @@ Here, `bindActions` is an Alt function that binds actions to their action handle
 
 ### Creating the React Component
 
-Finally, we can create our React component. When our componenet is initially rendered, it sets its initial state to the store's state, and also subscribes a listener to the store to listen for changes so that its state can be updated accordingly (the `OnChange` function in the code below). Additionally, we can remove our store listener when the component is unmounted. Here's some basic boilerplate code that could be used to design this component:
+Our React componenet will fire off actions (such as, in our example, getting members from the backend) and listen to the store for state changes. When our componenet is initially rendered, it sets its initial state to the store's state, and also subscribes a listener to the store to listen for changes so that its state can be updated accordingly (the `OnChange` function in the code below). Additionally, we can remove our store listener when the component is unmounted. Here's some basic boilerplate code that could be used to design this component:
 
 <script src="https://gist.github.com/rohan-varma/719c4d36d1660710fc20e87e379d5be2.js"></script>
 
