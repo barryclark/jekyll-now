@@ -6,18 +6,19 @@ author: ezachock
 Notes for Once
 
 who talks to whom
-[back and forth] (one line)
+[back and forth] 
+(one line)
 
 (Doc, PC)(PC, D)(Grumpy, PC)(PC, D)[PC, SW]
 How to determine content?
-(Evil Queen, C)[EQ, SW][EQ, PC
+(Evil Queen, C)[EQ, SW]/[EQ, PC]
 (Henry, Woman)(Henry, Taxi Driver)
 [Emma, Man]
 [Henry, Emma]
 [SW, PC]
 [Henry, Emma]
-Guard to SW and PC, (Guard, R)[R,PC][R,SW]
-[Henry, Emma][Henry, Archie](Emma, Archie)
+Guard to SW and PC, (Guard, R)[R,PC]/[R,SW]
+[Henry, Emma]/[Henry, Archie]/(Emma, Archie)
 --did not finish direct--
 
 who appears in scenes with whom
