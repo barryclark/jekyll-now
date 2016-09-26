@@ -27,13 +27,19 @@ Huomiona, että Javascript ES6:ssa on tulossa let ja const avainsanat, jotka mah
 
 ## Lexical scope
 
-Scopeilla on pääsy ulompiin scopeihin, mutta ei toisin päin. Eli sisempi (child) scope pystyy käyttämään ulomman (parent) scopen muuttujia. Lexical scopea voidaan ajatella kerrostalona, kun lähdetään hakemaan muuttujaa A mennään ensimmäisenä kerrokseen, joka kuvaa meidän sisintä scope, jossa muuttujaa A:ta on kutsuttu. Ellei kerroksesta yksi löydy muuttujaa, mennään seuraavaan kerrokseen. Tätä jatkuu kunnes löydämme muuttujan tai pääsemme katolle, joka on global scope.
+Scopeilla on pääsy ulompiin scopeihin, mutta ei toisin päin. Eli sisempi (child) scope pystyy käyttämään ulomman (parent) scopen muuttujia. Lexical scopea voidaan ajatella kerrostalona. Lähdetään hakemaan muuttujaa A. Mennään ensimmäiseen kerrokseen, joka on sisimmäinen scope, jossa muuttujaa A:ta on kutsuttu. Ellei kerroksesta yksi löydy muuttujaa, mennään seuraavaan kerrokseen. Tätä jatkuu kunnes löydämme muuttujan tai pääsemme talon katolle, joka on global scope.
+
+{% gist pspfolio/623a53b6044c7625a3b06ca5d475cd5d %}
 
 Ensimmäinen A:ksi nimetty muuttuja joka löytyy, palautetaan kysyjälle. Eli jos kerroksessa kaksi on esitelty muuttuja A sekä katolla (global scope) on esitelty muuttuja A. Kerroksen kaksi muuttuja palautetaan, koska se löydetään ennen katolle pääsyä.
+
+{% gist pspfolio/70b58f419a84274ab167ddc84e751ead %}
 
 ## Javascriptin kummallisuus
 
 Jos muuttujaan asetetaan arvo ja muuttujaa ei löydy mistään scopesta. Tällöin Javascript puuttuu peliin ja toteaa, että loin sinulle tarvittavan muuttujan globaaliin scopeen. Tämä tapahtuu vain, jos yritetään asettaa muuttujaan tietoa, jota ei ole esitelty. Jos käytetään muuttujaa, jota ei ole esitelty antaa Javascript referenssi virheen. Tämän takia pitää muuttujat aina esitellä var -avainsanalla. 
+
+{% gist pspfolio/0bce3b125c707c35891b47a61494c545 %}
 
 Javascriptissä voidaan käyttää “use strict” -modea, joka antaa ylläkuvatussa tilanteessa virheen.
 
