@@ -13,7 +13,7 @@ the concept of unidirectional data flow, which complements React's components qu
 look as to how React and Flux can work together to create the components of a dynamic, responsive web application. I've learned a lot of this through the excellent [React Tutorial](https://facebook.github.io/react/docs/tutorial.html) and applied my knowledge through following along a [tutorial to create a full-stack app](https://facebook.github.io/react/docs/tutorial.html), both of which are excellent resources to check out. 
 
 ### React Overview
-React is a powerful UI library developed at Facebook that uses an innovative diff algorithm to efficiently re-render components when
+[React](https://facebook.github.io/react/) is a powerful UI library developed at Facebook that uses an innovative diff algorithm to efficiently re-render components when
 data changes. With React, we don't interact with the DOM directly - instead, React uses the concept of a Virtual DOM, which is just an abstract, 
 lightweight representation of the actual DOM. This virtual DOM can then be manipulated and then saved to the real DOM tree. A major advantage of React
 is that this is done in an efficient way through the diffing algorithm used under the hood. The algorithm calculates the minimum number of elements 
@@ -26,7 +26,7 @@ React also has a few other notable features that make it pretty useful:
 - Reusability and composability: React's components naturaly lend themselves to be reusable if they are designed well (for example, ensuring each component has only a single responsibility), and are therefore easy to compose with other components to quickly build complex user interfaces. 
 
 ### Flux Overview
-Flux is a pattern that complements React and the idea of unidirectional data flow. It's used internally at Facebook and is commonly paired with React. It's componsed of four components: Actions, Dispatcher, Store, and Controller Views, which manage the flow of data through an application and define what picks it up along the way. There's many implementations of Flux, and the one I've been using is Alt.js. 
+[Flux](https://facebook.github.io/flux/) is a pattern that complements React and the idea of unidirectional data flow. It's used internally at Facebook and is commonly paired with React. It's componsed of four components: Actions, Dispatcher, Store, and Controller Views, which manage the flow of data through an application and define what picks it up along the way. There's many implementations of Flux, and the one I've been using is Alt.js. 
 
 ## React + Flux Example
 Let's create a simple React component, along with actions and a store for it. The store will be responsible for listening for actions and updating the state of our componenet accordingly. We'll subscribe our React component to the store so that it knows about changes in the store, and can update its own state accordingly. Also, we'll define a few actions that fetch data and notify the store about whether the data fetch was successful or not. Let's get started with these actions first, which are placed into a file called `MyComponentActions.js`:
