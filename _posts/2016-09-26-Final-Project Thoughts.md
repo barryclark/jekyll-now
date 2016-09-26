@@ -18,6 +18,6 @@ Splatter art was created by Jackson Pollock. He added whole body movement to the
 
 I have some experience manipulating pictures in Java and MatLab, so this could be a more achievable goal. I would do an analysis of the colors of various pieces, possibly try to see which areas certain colors are more attracted to. The main problem would be getting access to pieces, wheres there would be no problem with Twitch chat.
 
-Varnedoe, Kirk and Karmel, Pepe, Jackson Pollock: Essays, Chronology, and Bibliography, Exhibition catalog, New York: The Museum of Modern Art, Chronology, p. 328, 1998, ISBN 0-87070-069-3
+ "Jackson Pollock and His Paintings." Jackson Pollock. N.p., n.d. Web. 26 Sept. 2016. <http://www.jackson-pollock.org/>.
 
 Hemphill, Libby. 2014. “Introducing Text Analytics to Undergraduates.” Libby Hemphill. October 16. http://libbyh.com/2014/10/16/introducing-text-analytics-to-undergraduates/
