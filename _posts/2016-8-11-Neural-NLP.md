@@ -6,7 +6,7 @@ title: Applying Neural Networks to Natural Language Processing Tasks
 
 ### Bringing Deep Learning into the field of NLP
 
-Recently, there’s been a lot of advancement in using neural networks and other deep learning algorithms to obtain high performance on a variety of NLP tasks. Traditionally, the bag of words model along with classifiers that use this model, such as the Maximum Entropy Classifier, have been successfully leveraged to make very accurate predictions in NLP tasks such as sentiment analysis. However, with the advent of deep learning research and its applications to NLP, discoveries have been made that improve the accuracy of these methods in primarily two ways: a supervised neural network to run your input through several layers of classification functions, and an unsupervised neural network to optimize feature selection as a pre-training step.
+Recently, there’s been a lot of advancement in using neural networks and other deep learning algorithms to obtain high performance on a variety of NLP tasks. Traditionally, the bag of words model along with classifiers that use this model, such as the Maximum Entropy Classifier, have been successfully leveraged to make very accurate predictions in NLP tasks such as sentiment analysis. However, with the advent of deep learning research and its applications to NLP, discoveries have been made that improve the accuracy of these methods in primarily two ways: a neural network with several layers of logistic functions, and unsupervised learning to optimize feature selection as a pre-training step. 
 
 ### How can Neural Networks and other Deep Learning algorithms help? 
 
@@ -18,9 +18,9 @@ The Max Entropy classifier, commonly abbreviated to a Maxent classifier, is a co
 
 ![Inputs into a neuron and its output.](https://raw.githubusercontent.com/rohan-varma/rohan-blog/gh-pages/images/NLPfirst.png "Inputs into a neuron and its output.")
 
-Here, x is our vector of inputs, the neuron computes the function with parameters w and b and outputs a single result in h.
+Here, *x* is our vector of inputs, the neuron computes the maximum entropy function with parameters *w* and *b* and outputs a single result in *h*.
 
-Then, a neural network with multiple neurons can simply be thought of feeding the same input to several different classification functions at the same time. The neural network is nothing more than running a given vector of inputs (x in our above picture) through many (as opposed to a single) functions, where each neuron represents a different regression function. As a result, we obtain a vector of outputs:
+Then, a neural network with multiple neurons can simply be thought of feeding input to several different classification functions at the same time. A given vector of inputs (*x* in our above picture) is run through many (as opposed to a single) functions, where each neuron represents a different regression function. As a result, we obtain a vector of outputs:
 
 ![Feeding output vectors to the next layer. ](https://raw.githubusercontent.com/rohan-varma/rohan-blog/gh-pages/images/NLP2nd.png "Feeding output vectors to the next layer.")
 
@@ -44,7 +44,7 @@ This unsupervised neural network is powerful, especially when considered in the 
 
 ### Recursive Neural Networks
 
-Current researchers are investigated the use of recursive neural networks to learn how sentences are broken down into tree structures. This recursive deep learning network can then successfully learn how to map similar sentences into the same vector space, even though they may be composed of words that mean entirely different things.
+Current researchers are investigating the use of recursive neural networks to learn how sentences are broken down into tree structures. This recursive deep learning network can then successfully learn how to map similar sentences into the same vector space, even though they may be composed of words that mean entirely different things.
 
 If you want to learn about deep learning and neural networks for NLP in detail, I’d highly recommend Stanford’s course on it: [Deep Learning for Natural Language Processing](http://cs224d.stanford.edu/).
 

@@ -6,7 +6,7 @@ Taking a look at how GraphQL can improve upon the REST paradigm.
 
 ![GraphQL](https://raw.githubusercontent.com/rohan-varma/rohan-blog/gh-pages/images/graphql.png "GraphQL")
 
-In this post, we'll take a look at [GraphQL]( https://facebook.github.io/graphql/), a querying langauge created by Facebook which was recently open-sourced. We'll learn about the querying powers that come with it, the benefits of using it, and compare it to traditional methods of querying RESTful APIs. 
+In this post, we'll take a look at [GraphQL]( https://facebook.github.io/graphql/), a querying langauge created by Facebook which was open-sourced in July 2015. We'll learn about the querying powers that come with it, the benefits of using it, and compare it to traditional methods of querying RESTful APIs. 
 
 ### What is GraphQL? 
 GraphQL is a data querying langauge that's designed with the data needs of the client-side in mind. It presents an alternative paradigm to REST, and we'll look at the differences between GraphQL and the REST paradigm throughout this post. GraphQL, at its core, consists of a type system that describes what data is available on the server-side, as well as a query language for the client to ask for the data it needs. 
@@ -114,7 +114,7 @@ So, we've asked our server for the name of a certain pokemon, the name of its fa
 
 <script src="https://gist.github.com/rohan-varma/4b5ec89548cf1f849bc4669cd9f526ca.js"></script>
 
-As you can see, such parsing can get pretty complicated very quickly if your connections are layered deep - imagine how ugly the above code would get if we asked for the favorite move of a friend of a friend of a friend of a certain pokemon, for example. Obviously, this is not the only solution using the RESTful paradigm - for example, an alternative solution could be to create different API endpoints on your backend that gets this particular set of data from the server. But with GraphQL, you only need **one endpoint to access your data**, and can easily query for connections defined on your server. 
+As you can see, such parsing can get pretty complicated very quickly if your connections are layered deep - imagine how ugly the above code would get if we asked for the favorite move of a friend of a friend of a friend of a certain pokemon, for example. Obviously, this is not the only solution using the RESTful paradigm - for example, an alternative solution could be to create different API endpoints on your backend that gets this particular set of data from the server. But with GraphQL, you only have **one endpoint to access your data**, and can easily query for connections defined on your server. 
 
 Essentially, GraphQL enhances the **seperation of concerns** between the front-end and backend. Developers on the front-end no longer need to worry about parsing server responses to get the specific set of data they need, and developers on the back-end no longer need to worry about creating different API endpoints for their application that retrieve very similar data. 
 
