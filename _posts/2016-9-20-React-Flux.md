@@ -4,7 +4,7 @@ layout: post
 title: Working With React and Flux
 ---
 
-![GraphQL](https://raw.githubusercontent.com/rohan-varma/rohan-blog/gh-pages/images/graphql.png "GraphQL")
+![React and Flux](http://no-kill-switch.ghost.io/content/images/2015/06/react.png)
 
 Recently, I've been learning a lot about React and Flux while developing a full-stack web application. 
 React is a JavaScript library for building user interfaces, and revolves around the idea of writing your components 
