@@ -28,6 +28,7 @@ to bring about more hidden, yet significant, findings previously undetected by o
 
 
 References (in order of appearance):
+
 Weng, C. Y., W. T. Chu, and J. L. Wu. 2009. “RoleNet: Movie Analysis from the Perspective of Social Networks.” 
 IEEE Transactions on Multimedia 11 (2): 256–71. doi:10.1109/TMM.2008.2009684.
 
