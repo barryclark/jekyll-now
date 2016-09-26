@@ -14,6 +14,10 @@ For the final project I’d like to use these two ideas. Specifically using text
 If that idea doesn’t work. Another option would be to do an analysis of modern art, or just art in general. I don’t think anyone really understands modern art specifically: 
 ![Modern Art](http://www.publicdomainpictures.net/pictures/50000/velka/abstract-paint-splatter.jpg)
 
+Splatter art was created by Jackson Pollock. He added whole body movement to the creation of art. At a point, Pollock stoped naming his art but instead he started to number it. I'd like to do a numeric analysis on his work. To either see if a pattern can be found in his work, to see if his work can be found by using quantitiive features. Another idea would be to compare his work to modern splatter art.
+
 I have some experience manipulating pictures in Java and MatLab, so this could be a more achievable goal. I would do an analysis of the colors of various pieces, possibly try to see which areas certain colors are more attracted to. The main problem would be getting access to pieces, wheres there would be no problem with Twitch chat.
+
+Varnedoe, Kirk and Karmel, Pepe, Jackson Pollock: Essays, Chronology, and Bibliography, Exhibition catalog, New York: The Museum of Modern Art, Chronology, p. 328, 1998, ISBN 0-87070-069-3
 
 Hemphill, Libby. 2014. “Introducing Text Analytics to Undergraduates.” Libby Hemphill. October 16. http://libbyh.com/2014/10/16/introducing-text-analytics-to-undergraduates/
