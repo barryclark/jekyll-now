@@ -8,7 +8,7 @@ title: Google hit 2 million self-driving miles, and they're pushing for much mor
     <script data-plotly="alexcthompson:467"  src="https://plot.ly/embed.js" async></script>
 </div>
 
-Google cars have driven 2 million miles in self-driving mode (if you believe in projections.) And Google is making a huge push to drive more autonomous miles.  In August of last year, Google's cars were drove nearly 100,000 miles (precisely, 93,023).  This August, they hit 169,935.  That's literally a one Toyota's worth of driving month, or two GM cars from the 80s ;)  Still, while that's a big jump, it is not that impressive when you realize that Google probably has to double autonomous mileage many times to prove out level 4 autonomy.
+Google cars have driven 2 million miles in self-driving mode (if you believe in projections.) And Google is making a huge push to drive more autonomous miles.  In August of last year, Google's cars were drove nearly 100,000 miles (precisely, 93,023).  This August, they hit 169,935.  That's enough driving to wear out one Toyota a month, or two GM cars from the 80s ;)  Still, while that's a big jump, it is not that impressive when you realize that Google probably has to double autonomous mileage many times to prove out level 4 autonomy.
 
 <div>
     <a href="https://plot.ly/~alexcthompson/461/" target="_blank" title="Google&#39;s Self-Driving Project Mileage" style="display: block; text-align: center;"><img src="https://plot.ly/~alexcthompson/461.png" alt="Google&#39;s Self-Driving Project Mileage" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
@@ -17,14 +17,14 @@ Google cars have driven 2 million miles in self-driving mode (if you believe in 
 
 *(I compiled this data from [Google's monthly reports](https://www.google.com/selfdrivingcar/reports/){:target="_blank"} on their Self Driving Car program.  You may grab an Excel sheet, as well as the code for these charts from [this GitHub repo](https://github.com/alexcthompson/google_autonomous_stats){:target="_blank"}.)*
 
-Total miles, the dashed line, conceals the real move.  While Google's driving miles only went up 83%, their miles in autonomous skyrocketed by 119%.  To do that, Google has steadily increasing the percentage of miles their cars drive in autonomous mode:
+Total miles, the dashed line, conceals the real move.  While Google's driving miles only went up 83%, their miles in autonomous skyrocketed by 119%.  To do that, Google has slowly increased the percentage of miles their cars drive in autonomous mode:
 
 <div>
     <a href="https://plot.ly/~alexcthompson/463/" target="_blank" title="Mileage in Autonomous Mode" style="display: block; text-align: center;"><img src="https://plot.ly/~alexcthompson/463.png" alt="Mileage in Autonomous Mode" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
     <script data-plotly="alexcthompson:463"  src="https://plot.ly/embed.js" async></script>
 </div>
 
-This is way more significant.  The race to level 4 autonomous cars is not about how many miles you can drive autonomously, it's about what % of situations the cars can safely and effectively drive themselves.  You could drive 1 million miles in autonomous mode, but if you also drove 9 million in manual mode, you're not doing so hot.
+This is way more significant.  The race to level 4 autonomous cars is not about how many miles you can drive autonomously, it's about what percentage of situations the cars can safely and effectively drive themselves.  You could drive 1 million miles in autonomous mode, but if you also drove 9 million in manual mode, you're not doing so hot. Each percentage point moved from the manual driving column to the autonomous column likely represents a lot of hard work to deal with different driving situations.
 
 One last graph, let's look at the # of autonomous miles driven per deployed car, per day:
 
@@ -51,7 +51,7 @@ The rest of this post is a bit of speculation about Google's position in the sel
 
 # What's next for Google
 
-Where is Google headed?  Google's strategy seems to rest on solving the 2nd hardest problem first: developed country urban driving.  If you rank the difficulty of various types of autonomous driving problems, a rough ranking might shake out by difficulty:
+Where is Google headed?  Google's strategy seems to rest on solving the 2nd hardest problem first: developed country urban driving.  If you rank the difficulty of broad types of autonomous driving problems, one rough ranking by difficulty might shake out like this:
 
 1. Everything outside the developed world
 2. Urban driving in the developed world
@@ -59,17 +59,17 @@ Where is Google headed?  Google's strategy seems to rest on solving the 2nd hard
 
 Google seems to have chosen to take on #2.  I think this makes sense: solve the biggest problem for the developed world, and highway driving is a quick solve after that.  Based on the fact that they're putting in loads of real autonomous miles, Google might have level 4 autonomy in urban settings years before anyone else.
 
-If I'm Google, my strategy to increase my lead might be to solve a specific subproblem of the developed-urban problem - driving low built lower density environments like Mountain View, Austin, Phoenix and Kirkland.  From there, I would find all the hairiest situations in those types of environment, and I could do it by:
+If I'm Google, a strategy to increase my lead might be to solve a specific subproblem of the developed-urban problem: driving mostly low built lower density environments like Mountain View, Austin, Phoenix and Kirkland.  In other words, NYC is not the first problem I chase.  Once limited to those types of cities, I would find all the hairiest situations in those environments, and I could do it by:
 
 - Driving more miles.
 - Adding cities that have varied driving policy and **weather**, but somewhat similar traffic levels and engineering.
 - And I would start to pushing to drive more night miles.
 
-The data is consistent with that.
+The data is consistent with that, though we have no idea how many night miles Google is driving.
 
 # Level 4 autonomy on fixed route
 
-It seems like Google's team might be ready to take on driving fixed routes autonomously.  It's a lot easier to drive the same route everyday.  Especially if you're an ever vigilant algorithm that never lets its' guard down, and doesn't fall into listless boredom.  Driving a fixed route allows you to limit your car to known traffic signals and road engineering, and be sure that you've seen most of the situations that will arise.
+It seems like Google's team might be ready to take on driving fixed routes autonomously.  It's a lot easier to drive the same route everyday.  Especially if you're an ever vigilant algorithm that never lets its guard down, and doesn't fall into listless boredom.  Driving a fixed route allows you to limit your car to known traffic signals and road engineering, and to expose your vehicle to 99.99% of the circumstances it might encounter, **before deployment,** reducing the surprise factor.
 
 Google has so many autonomous miles in Mountain View and adjacent cities, I wager they can pick out routes on which they've been almost completely autonomous.  With [Uber entering the realm of public transportation](http://gizmodo.com/uber-and-lyft-come-for-public-transportation-1785330916){:target="_blank"}, Google could put a big dent in Uber's uber appearance by deploying a self-driving public transit pilot.  
 
@@ -77,7 +77,7 @@ To mitigate your risk in new situations you could bias your autonomous vehicle t
 
 ![Google car and pedestrian play the who goes first game](http://s3.amazonaws.com/theoatmeal-img/blog/google_self_driving_car/intersection.png)
 
-To further mitigate risk, you could drop your speed.  Traffic studies consistently show that the risk of pedestrian dying from a collision increases dramatically as impact speed goes from 20 mph to 30 mph.  See for example, [this study by the AAA Foundation for Traffic Safety](https://www.aaafoundation.org/sites/default/files/2011PedestrianRiskVsSpeed.pdf){:target="_blank"}, where they found that the risk of pedestrian fatality is 10% at 23 mph impact speed, but rises to 50% by 31 mph.
+To further mitigate risk, you could drop your speed.  Traffic studies consistently show that the risk of a pedestrian dying from a collision increases dramatically as impact speed goes from 20 mph to 30 mph.  See for example, [this study by the AAA Foundation for Traffic Safety](https://www.aaafoundation.org/sites/default/files/2011PedestrianRiskVsSpeed.pdf){:target="_blank"}, where they found that the risk of pedestrian fatality is 10% at 23 mph impact speed, but rises to 50% by 31 mph.
 
 By limiting their cars to 25 mph, Google is almost guranteeing that their first serious collision with a pedestrian or cyclist will be below 20 mph, since the car has an extreme bias for safety.  This means that they're unlikely to be involved in anything nasty like Tesla was for a long time.
 
