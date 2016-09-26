@@ -1,10 +1,13 @@
 KEY:
+
 	PC = PRINCE CHARMING
 	SW = SNOW WHITE
 	EQ = EVIL QUEEN
 	RUMP = RUMPLESTILTSKIN
+	MM = MARY MARGRET
 
 Who talks to whom:
+
 	Ø PC <- DOC
 	Ø PC <- GRUMPY
 	Ø PC -> DWARFS
@@ -70,6 +73,7 @@ Who talks to whom:
 	Ø EMMA <-> MM
 
 Who appears in scenes with whom:
+
 	Ø PC & HORSE
 	Ø PC & DWARFS & SW
 	Ø PC & SW & PRIEST & COURT
@@ -95,4 +99,4 @@ Who appears in scenes with whom:
 	Ø GRANT & R & EMMA
 	Ø MM & STUDENTS
 	Ø MM & EMMA & R
-  Ø MM & EMMA
+  	Ø MM & EMMA
