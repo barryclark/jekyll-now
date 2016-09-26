@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/685,179271402,2016-09-26 20:55:25,2016-09-26 16:10:01,MASCI - Movimento Adulti Scout Cattolici Italiani,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""AIUTO TERREMOTO CENTRO ITALIA"", ""chi"": ""MASCI - Movimento Adulti Scout Cattolici Italiani"", ""data"": ""26/09/2016"", ""descrizione"": ""Il MASCI sta raccogliendo fondi tra i suoi associati( e da questi raccolti durante manifestazioni locali) per sostenere un progetto (in collaborazione con altri enti o associazioni) in favore dei un comune (o frazione) interessato dal terremoto, per il tramite della propria onlus ECCOMI"", ""email"": ""segretario@masci.it"", ""iban"": ""IT 77 Q 05018 03200000000118601"", ""intestazione"": ""ECCOMI onlus"", ""link"": ""www.eccomi.org  oppure  www.masci.it"", ""postale"": """"}","<pre><yamldata>chi: 'MASCI - Movimento Adulti Scout Cattolici Italiani'
+descrizione: 'Il MASCI sta raccogliendo fondi tra i suoi associati( e da questi raccolti durante manifestazioni locali) per sostenere un progetto (in collaborazione con altri enti o associazioni) in favore dei un comune (o frazione) interessato dal terremoto, per il tramite della propria onlus ECCOMI'
+intestazione: 'ECCOMI onlus'
+iban: 'IT 77 Q 05018 03200000000118601'
+bic: ''
+postale: ''
+causale: 'AIUTO TERREMOTO CENTRO ITALIA'
+link: 'www.eccomi.org  oppure  www.masci.it'
+email: segretario@masci.it
+data: 26/09/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/684,179269842,2016-09-26 16:06:57,2016-09-26 16:03:18,I provvedimenti di Inarcassa per i professionisti terremotati,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""26/09/2016"", ""descrizione"": ""Il Consiglio di Amministrazione di Inarcassa, nella riunione del 22 settembre scorso, ha deliberato i provvedimenti in favore dei liberi professionisti residenti in Abruzzo, Lazio, Marche e Umbria colpiti dal sisma del 24 agosto 2016."", ""link"": ""https://www.inarcassa.it/site/home/news/articolo7051.html"", ""titolo"": ""I provvedimenti di Inarcassa per i professionisti terremotati""}","<pre><yamldata>titolo: 'I provvedimenti di Inarcassa per i professionisti terremotati'
 descrizione: 'Il Consiglio di Amministrazione di Inarcassa, nella riunione del 22 settembre scorso, ha deliberato i provvedimenti in favore dei liberi professionisti residenti in Abruzzo, Lazio, Marche e Umbria colpiti dal sisma del 24 agosto 2016.'
 link: 'https://www.inarcassa.it/site/home/news/articolo7051.html'
