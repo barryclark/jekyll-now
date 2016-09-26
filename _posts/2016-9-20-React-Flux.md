@@ -26,24 +26,24 @@ React also has a few other notable features that make it pretty useful:
 - Reusability and composability: React's components naturaly lend themselves to be reusable if they are designed well (for example, ensuring each component has only a single responsibility), and are therefore easy to compose with other components to quickly build complex user interfaces. 
 
 ### Flux Overview
-Flux is a pattern that complements React and the idea of unidirectional data flow. It's used internally at Facebook along with several other companies. It's componsed of four components: Actions, Dispatcher, Store, and Controller Views, which manage the flow of data through an application and define what picks it up along the way. There's many implementations of Flux, and the one I've been using is Alt.js. 
+Flux is a pattern that complements React and the idea of unidirectional data flow. It's used internally at Facebook and is commonly paired with React. It's componsed of four components: Actions, Dispatcher, Store, and Controller Views, which manage the flow of data through an application and define what picks it up along the way. There's many implementations of Flux, and the one I've been using is Alt.js. 
 
 ## React + Flux Example
-Let's create a simple React component, along with actions and a store for it. The store will be responsible for listening for actions and updating the state of our componenet accordingly. We'll subscribe our React component to the store so that it knows about changes in the store, and can update its own state accordingly. Finally, we'll define a few actions that fetch data and notify the store about whether the data fetch was successful or not. Let's get started with these actions first, which are placed into a file called `MyComponentActions.js`:
+Let's create a simple React component, along with actions and a store for it. The store will be responsible for listening for actions and updating the state of our componenet accordingly. We'll subscribe our React component to the store so that it knows about changes in the store, and can update its own state accordingly. Also, we'll define a few actions that fetch data and notify the store about whether the data fetch was successful or not. Let's get started with these actions first, which are placed into a file called `MyComponentActions.js`:
 
 <script src="https://gist.github.com/rohan-varma/c76af8ce80cc1e99597c3521339a8aa4.js"></script>
 
-Here, we've defined three actions, one of which requests data from our backend, and two of which notify our store about the request's success or failure. Note that we haven't yet handled these two actions - that'll be done when we defined our handlers in the store. The store will also bind our actions to their handlers - sort of like a mapping from an action to the action handler. We'll revisit this when we define our `MyComponentStore` class. The last line of the above code simply exports our actions so that they can be imported elsewhere. 
+Here, we've defined three actions, one of which requests data from our backend, and two of which notify our store about the request's success or failure. Note that we haven't yet handled these two actions - that'll be done when we define our handlers in the store. The store will also bind our actions to their handlers - sort of like a mapping from an action to the action handler. We'll revisit this when we define our `MyComponentStore` class. The last line of the above code simply exports our actions so that they can be imported elsewhere. 
 
-### Defining the Footer Store
+### Defining the Component Store
 Now, we can move on to defining a store for our React componenet. The store will be responsible for handling the actions we've defined and updating the state accordingly, so that our componenet can listen for state changes. Let's put this code into a file called `MyComponentStore.js`:
 <script src="https://gist.github.com/rohan-varma/e580bd6ce605c838e5ed77454d9a540e.js"></script>
 
-`bindActions` is an Alt function that binds actions to their action handlers, with a specific naming convention. As an example, an action with name `doAction` will bind to `onDoAction` or just `doAction` (but not both). In this case, when our `getMyMembersSuccess` action occurs, the code in the handler `onGetMyMembersSuccess` will be executed and the members field of the state will be updated. With our actions and store defined, we're ready to define our actual React componenet. 
+Here, `bindActions` is an Alt function that binds actions to their action handlers, with a specific naming convention. As an example, an action with name `doAction` will bind to `onDoAction` or just `doAction` (but not both). In this case, when our `getMyMembersSuccess` action occurs, the code in the handler `onGetMyMembersSuccess` will be executed and the members field of the state will be updated. With our actions and store defined, we're ready to define our actual React componenet. 
 
 ### Creating the React Component
 
-Finally, we can create our React component. When our componenet is initially rendered, it sets its initial state to the store's state, and also subscribes a listener to the store to listen for changes so that it's state can be updated accordingly (the `OnChange` function in the code below). Additionally, we can remove our store listener when the component is unmounted. Here's some basic boilerplate code that could be used to design this component:
+Finally, we can create our React component. When our componenet is initially rendered, it sets its initial state to the store's state, and also subscribes a listener to the store to listen for changes so that its state can be updated accordingly (the `OnChange` function in the code below). Additionally, we can remove our store listener when the component is unmounted. Here's some basic boilerplate code that could be used to design this component:
 
 <script src="https://gist.github.com/rohan-varma/719c4d36d1660710fc20e87e379d5be2.js"></script>
 
