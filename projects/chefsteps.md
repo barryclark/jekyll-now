@@ -28,7 +28,7 @@ permalink: /projects/chefsteps/
 This was the design process I used for this exercise. I first learned of this process from one of my favorite YouTubers: <a href="https://www.youtube.com/user/DevTipsForDesigners">Travis Neilson (DevTips)</a> – an interaction designer at Google. Seriously, watch him. He's awesome.
 
 ## Discovery
-The first step in this design process identifying the problems and pain points.
+The first step in this design process was identifying the problems and pain points.
 
 <figure class="full">
   <a href="/images/chefsteps-current-android.png"  title="ChefSteps Current Android App">
