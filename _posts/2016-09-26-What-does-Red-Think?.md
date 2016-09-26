@@ -6,6 +6,7 @@ published: true
 ---
 
 #Red, programming, and snakes?
+===
 
 I don't think I've mentioned the fact that I'm studying for a degree in Computer Science(CS) at Illinois Institute of 
 Technology(IIT).  This semester I'm taking CS 331, which is a class about data structures and algorithms, sounds fun,right.
