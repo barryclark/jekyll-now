@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dominik's Blog Post
+title: Final Project Thoughts
 author: dslezak
 published: true
 ---
