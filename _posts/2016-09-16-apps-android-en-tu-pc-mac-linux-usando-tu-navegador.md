@@ -1,11 +1,11 @@
 ---
-published: false
+published: true
 id: 160916
-title: Apps Android en tu PC/Mac/Linux usando tu navegador
-date: 2016-09-16T00:00:00+00:00
+title: Apps Android en tu PC/Mac/Linux usando tu navegador Chrome
+date: 2016-09-27T00:00:00+00:00
 author: ovalenzuela
 layout: post
-guid: http://ovalenzuela.com/?p=160916
+guid: http://ovalenzuela.com/?p=270916
 permalink: /2016/09/apps-android-en-tu-pc-mac-linux-usando-tu-navegador.html
 categories:
   - General
@@ -16,26 +16,40 @@ tags:
   - hack
 ---
 
-Como desarrollador de apps, se lo dificil que es monitorizar un projecto y conseguir financiamiento. Por lo que puedo entender perfectamente que una excelente app que es gratuita, pase a convertirse en un servicio pagado por suscripciones. Razonable, no de lo mejor, pero razonable. Sin embargo el salto que algunas se dan, de pasar de gratuita a un costo de $50 dolares cada 12 meses, me parece no solo absurdo, sino patudo.
+<img class="alignleft" src="http://www.ovalenzuela.com/images/arc_welder.png" width="200px"/> Como desarrollador de apps, se lo dificil que es rentabilizar un projecto y conseguir financiamiento. Por lo que puedo entender 
+perfectamente que una excelente app que es gratuita, se convierta en un servicio pagado mediante suscripciones. Razonable, no de 
+lo mejor, pero razonable. Sin embargo el salto que algunos desarrolladores deciden dar, de pasar de gratuita a un costo de $50 dolares 
+cada 12 meses, me parece no solo absurdo, sino totalmente "patudo".
 
-Dado este hecho, decidi migrar de CloudMagic, el cliente de correos que usaba en Android, ChromeOS y Mac, a mi querido K9 Mail, un cliente de correo para Android espectacular. El problema, obviamente radica en que la app funciona en Android, pero no en los otros sistemas que utilizo.
+Dado este hecho, decidí migrar de CloudMagic, el cliente de correos que usaba en Android, ChromeOS y Mac, a mi querido K9 Mail, un cliente 
+de correo para Android espectacular. El problema, obviamente radica en que la app funciona en Android, pero no en los otros sistemas que utilizo.
 
-Aunque podria haber instalado un emulador de los que se usan comunmente para desarrollar aplicaciones Android, decidi utilizar ARC en Chrome para poder instalar las aplicacione directamente en Chrome. El proceso es algo largo, pero las apps funcionan bastante bien. Incluso soportan copy&paste desde un ambiente a otro.
+Aunque podria haber instalado un emulador de los usados comunmente para desarrollar aplicaciones en Android, pero dado que no tengo la intención 
+de instalar una app completa que consuma recursos constantemente sólo para leer el correo, me orienté a usar 
+<a href="https://developer.chrome.com/apps/getstarted_arc" target="_blank">ARC</a> sobre Chrome, despúes de todo,
+Chrome estaba ya instalado en mi computador y es soportado en casi todos los sistemas, <b>INCLUYENDO ChromeOS (Chromebook)</b>. El proceso para 
+emular una app es algo largo, pero las apps funcionan bastante bien. Incluso soportan copy&paste desde un ambiente a otro.
 
+Para quienes no lo saben, ARC Welder realiz&aacute; una simple conversi&oacute;n de nuestra APP para ser usada como una App de Chrome.
 
+Manos a la obra:
 
+# Lo primero es instalar el plugin <a href="http://goo.gl/gAn0Xh" target="_blank" alt="ARC Welder">ARC Welder</a> para Chrome. Una vez instalado,
+una nueva app estar&aacute; disponible en la secci&oacute;n correspondiente de tu Chrome.
 
+# Luego de instalar el plugin, debemos descargar el APK de la app que deseamos utilizar. C&oacute;mo antes lo hab&iacute;a se&ntilde;alado en otro 
+<a href="http://ovalenzuela.com/2016/02/ingenieria-inversa-de-android-apps.html" target="_blank">POST</a>, podemos usar el sitio web llamado 
+<a href="https://apkpure.com/" target="_blank">APK Pure</a> para buscar obtener el APK que queremos ejecutar en nuestro navegador.
 
+# El siguiente paso, es abrir ARC Welder e importar el archivo APK descargado, luego seleccionar los par&aacute;metros que deseamos 
+(orientaci&oacute;n, si la app soportar&aacute; redimensionamiento, etc.) y finalmente presionamos <b>DOWNLOAD ZIP</b> para obtener el c&oacute;digo 
+para ser usado luego en Chrome. Guardamos el ZIP y cerramos el conversor.
 
-<img class="alignleft" src="http://www.ovalenzuela.com/images/opensource_small.png" width="200px"/> Es muy raro como ocurren las cosas y la vida va cambiando, en ocasiones en formas ciclíca. No hace mucho, quizás algo así como una semana, me moví a un nuevo equipo en mi trabajo. La decisión fue orientada más que todo por las ganas de volver a las cosas que más me gustan: Programar y el Software Libre.
+# Finalmente, vamos al directorio donde el archivo ZIP fue descargado y lo "descomprimimos". Iniciamos Chrome, vamos a la configuraci&oacute;n de 
+extensiones poniendo "chrome://extensions/" en la barra de direcciones, y usamos la opci&oacute;n "Load unpacked extension", seleccionamos el 
+directorio donde el paquete ZIP fue descomprimido y bingo! nuestra app esta instalada.
 
-Trabajar en mi antiguo equipo fue expectacular, o sea con momentos feos como en todos los trabajos, pero al final del día puedo decir que aprendí mucho, más de lo que pensaba. De alguna extraña forma, el trabajo cambió mi forma de pensar y llevar, es divertido lo que ciertos conceptos como &#8220;Be always right&#8221; y &#8220;Dive deep&#8221; pueden ser incorporados en cada aspecto del día a día y aprovechados en excelente forma.
-
-Con todo lo aprendido, más mis ganas por volver a lo mío y la necesidad de bajar la cantidad de horas al día que estaba trabajando habitualmente, moverme al nuevo rol claramente fue una buena decisión, al menos hasta ahora.
-
-Ahora en mi equipo dedicado full al Open Source, he vuelto a tener la oportunidad de desarrollar, estudiar y terminar mi certificación de Arquitecto en la Nube. Y bueno, como no podía ser, migré mi blog a <a href="https://github.com" alt="Github Homepage">Github</a> + <a href="https://jekyllrb.com/" alt="Jekyll Homepage">Jekyll</a> con la idea de practicar nuevamente mis habilidades de programación y aprender un nuevo lenguaje.
-
-Quizás la próxima semana escribiré un tutorial, aunque tengo varios temas pendientes sobre los que publicar, pero es la idea y al menos tengo la intención.
+# Para acceder a tu app, simplemente vas "chrome://apps/" o tu lengueta de applicaciones, donde podr&aacute;s encontrar tu app lista para ser usada.
 
 
 _**Happy Coding!**_
