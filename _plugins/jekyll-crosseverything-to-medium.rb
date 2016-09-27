@@ -42,7 +42,6 @@ module Jekyll
             end
           end
 
-          #Jekyll 3.0, use hooks
           Jekyll::Hooks.register entity.to_sym, :post_render do |post|
             if ! post.published?
               next
