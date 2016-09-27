@@ -34,24 +34,24 @@ Para quienes no lo saben, ARC Welder realiz&aacute; una simple conversi&oacute;n
 
 Manos a la obra:
 
-# Lo primero es instalar el plugin <a href="http://goo.gl/gAn0Xh" target="_blank" alt="ARC Welder">ARC Welder</a> para Chrome. Una vez instalado,
+* Lo primero es instalar el plugin <a href="http://goo.gl/gAn0Xh" target="_blank" alt="ARC Welder">ARC Welder</a> para Chrome. Una vez instalado,
 una nueva app estar&aacute; disponible en la secci&oacute;n correspondiente de tu Chrome.
 
-# Luego de instalar el plugin, debemos descargar el APK de la app que deseamos utilizar. C&oacute;mo antes lo hab&iacute;a se&ntilde;alado en otro 
+* Luego de instalar el plugin, debemos descargar el APK de la app que deseamos utilizar. C&oacute;mo antes lo hab&iacute;a se&ntilde;alado en otro 
 <a href="http://ovalenzuela.com/2016/02/ingenieria-inversa-de-android-apps.html" target="_blank">POST</a>, podemos usar el sitio web llamado 
 <a href="https://apkpure.com/" target="_blank">APK Pure</a> para buscar obtener el APK que queremos ejecutar en nuestro navegador.
 
-# El siguiente paso, es abrir ARC Welder e importar el archivo APK descargado, luego seleccionar los par&aacute;metros que deseamos 
+* El siguiente paso, es abrir ARC Welder e importar el archivo APK descargado, luego seleccionar los par&aacute;metros que deseamos 
 (orientaci&oacute;n, si la app soportar&aacute; redimensionamiento, etc.) y finalmente presionamos <b>DOWNLOAD ZIP</b> para obtener el c&oacute;digo 
 para ser usado luego en Chrome. Guardamos el ZIP y cerramos el conversor.
 
 <img class="alignleft" src="http://www.ovalenzuela.com/images/2016/09/arc_welder_import.png"/>
 
-# Finalmente, vamos al directorio donde el archivo ZIP fue descargado y lo "descomprimimos". Iniciamos Chrome, vamos a la configuraci&oacute;n de 
+* Finalmente, vamos al directorio donde el archivo ZIP fue descargado y lo "descomprimimos". Iniciamos Chrome, vamos a la configuraci&oacute;n de 
 extensiones poniendo "chrome://extensions/" en la barra de direcciones, y usamos la opci&oacute;n "Load unpacked extension", seleccionamos el 
 directorio donde el paquete ZIP fue descomprimido y bingo! nuestra app esta instalada.
 
-# Para acceder a tu app, simplemente vas "chrome://apps/" o tu lengueta de applicaciones, donde podr&aacute;s encontrar tu app lista para ser usada.
+* Para acceder a tu app, simplemente vas "chrome://apps/" o tu lengueta de applicaciones, donde podr&aacute;s encontrar tu app lista para ser usada.
 
 
 _**Happy Coding!**_
