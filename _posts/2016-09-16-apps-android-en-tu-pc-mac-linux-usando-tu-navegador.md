@@ -45,6 +45,8 @@ una nueva app estar&aacute; disponible en la secci&oacute;n correspondiente de t
 (orientaci&oacute;n, si la app soportar&aacute; redimensionamiento, etc.) y finalmente presionamos <b>DOWNLOAD ZIP</b> para obtener el c&oacute;digo 
 para ser usado luego en Chrome. Guardamos el ZIP y cerramos el conversor.
 
+<img class="alignleft" src="http://www.ovalenzuela.com/images/2016/09/arc_welder_import.png"/>
+
 # Finalmente, vamos al directorio donde el archivo ZIP fue descargado y lo "descomprimimos". Iniciamos Chrome, vamos a la configuraci&oacute;n de 
 extensiones poniendo "chrome://extensions/" en la barra de direcciones, y usamos la opci&oacute;n "Load unpacked extension", seleccionamos el 
 directorio donde el paquete ZIP fue descomprimido y bingo! nuestra app esta instalada.
