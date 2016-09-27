@@ -48,7 +48,8 @@ module Jekyll
               next
             end
 
-            crosseverything = crossposteverything.include? post.data['title'].to_s.gsub!(/[^0-9A-Za-z]/, '')
+            checktitle = post.data['title'].dup
+            crosseverything = crossposteverything.include? checktitle.to_s.gsub!(/[^0-9A-Za-z]/, '')
             if crosseverything or ! post.data['crosseverything_to_medium']
               next
             end
