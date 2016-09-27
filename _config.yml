@@ -19,7 +19,6 @@ title: Terremoto Centro Italia
 description: Un progetto per informare sul terremoto del 24 Agosto 2016. Invia una segnalazione e ricevi aggiornamento costanti dalle fonti informative che stiamo raccogliendo costantemente.
 
 # --- Navigation bar options --- #
-
 # List of links in the navigation bar
 navbar-links:
   Aggiornamenti:
