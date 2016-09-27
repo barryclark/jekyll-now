@@ -220,6 +220,10 @@ img {
   max-width: 100%;
 }
 
+img + em {
+  font-size:10px;
+}
+
 .date {
   font-size: 60%;
   color: $gray;
