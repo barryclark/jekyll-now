@@ -8,7 +8,7 @@ tags: [video games, review, assault suit leynos, rising star games]
 author: Rob Kalajian
 ---
 
-<img src="/images/leynos/leynoslogo.jpg" alt="Cover" class="float-right" />
+<img src="/images/leynos/leynoslogo.jpg" width="250" alt="Cover" class="float-right" />
 
 <h2>Prelude</h2>
 
@@ -19,7 +19,7 @@ That's because it's a remake of Target Earth, or should I say, it's a remake of 
 Yeah. I feel a bit dumb. I'm not ashamed to admit that.
 
 ![Target Earth](/images/leynos/targetearth.jpg){: .center }
-*Such fond memories*
+*Such fond memories*{: .center }
 
 <h2>Play</h2>
 
@@ -38,7 +38,7 @@ While the Genesis obviously has limitations and had to reuse a lot of assets, th
 The biggest step in, in my opinion, is the interface. There's not much screen space lost to things like your health, selected weapons, available weapons, boss health, etc... Everything is seamless, yet still keeps that old-school feel.
 
 ![Bigger and better](/images/leynos/bigger.png){: .center }
-*Everything is a bit bigger and better*
+*Everything is a bit bigger and better*{: .center }
 
 <h2>Perspective</h2>
 
