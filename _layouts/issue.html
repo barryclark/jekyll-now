@@ -21,20 +21,24 @@ layout: base
   <div class="row"> <div class="col-md-2">Email:</div> <div class="col-md-10"> <a href="mailto:{{page.issue.data.email}}">{{page.issue.data.email}}</a></div> </div>
   {% endif %}
 
+  {% if page.issue.instestazione != blank %}
+  <div class="row"> <div class="col-md-2">Instestazione:</div> <div class="col-md-10"> {{page.issue.data.intestazione}}</div> </div>
+  {% endif %}
+  
   {% if page.issue.iban != blank %}
-  <div class="row"> <div class="col-md-2">IBAN:</div> <div class="col-md-10"> <img alt="immagine" src="{{page.issue.iban}}"></img> </div> </div>
+  <div class="row"> <div class="col-md-2">IBAN:</div> <div class="col-md-10"> {{page.issue.data.iban}}</div> </div>
   {% endif %}
 
   {% if page.issue.bic != blank %}
-  <div class="row"> <div class="col-md-2">BIC:</div> <div class="col-md-10"> <img alt="immagine" src="{{page.issue.bic}}"></img> </div> </div>
+  <div class="row"> <div class="col-md-2">BIC:</div> <div class="col-md-10"> {{page.issue.data.bic}}</div> </div>
   {% endif %}
 
   {% if page.issue.postale != blank %}
-  <div class="row"> <div class="col-md-2">Postale:</div> <div class="col-md-10"> <img alt="immagine" src="{{page.issue.postale}}"></img> </div> </div>
+  <div class="row"> <div class="col-md-2">Postale:</div> <div class="col-md-10"> {{page.issue.data.postale}}</div></div>
   {% endif %} 
 
   {% if page.issue.causale != blank %}
-  <div class="row"> <div class="col-md-2">Causale:</div> <div class="col-md-10"> <img alt="immagine" src="{{page.issue.causale}}"></img> </div> </div>
+  <div class="row"> <div class="col-md-2">Causale:</div> <div class="col-md-10"> {{page.issue.data.causale}}</div> </div>
   {% endif %}  
   
   {% if page.issue.image != blank %}
