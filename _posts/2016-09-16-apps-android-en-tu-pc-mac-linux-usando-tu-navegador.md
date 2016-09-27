@@ -16,7 +16,7 @@ tags:
   - hack
 ---
 
-<img class="alignleft" src="http://www.ovalenzuela.com/images/arc_welder.png" width="200px"/> Como desarrollador de apps, se lo dificil que es rentabilizar un projecto y conseguir financiamiento. Por lo que puedo entender 
+<img class="alignleft" src="http://www.ovalenzuela.com/images/2016/09/arc_welder.png" width="200px"/> Como desarrollador de apps, se lo dificil que es rentabilizar un projecto y conseguir financiamiento. Por lo que puedo entender 
 perfectamente que una excelente app que es gratuita, se convierta en un servicio pagado mediante suscripciones. Razonable, no de 
 lo mejor, pero razonable. Sin embargo el salto que algunos desarrolladores deciden dar, de pasar de gratuita a un costo de $50 dolares 
 cada 12 meses, me parece no solo absurdo, sino totalmente "patudo".
