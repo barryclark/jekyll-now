@@ -70,6 +70,7 @@ author:
 
 # Select which links to show in the footer
 footer-links-active:
+  androidapp: true
   rss: true
   facebook: true
   email: false
