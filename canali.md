@@ -6,7 +6,7 @@ permalink: /canali/
 
 <div class="segnala">
 <p>Se hai una necessità o vuoi comunicare aggiornamenti, ci sono numerosi modi di contattarci: </p>
- {% if site.author.facebook and site.footer-links-active.facebook %}
+         {% if site.author.facebook and site.footer-links-active.facebook %}
           <li>
             <a href="https://www.facebook.com/{{ site.author.facebook }}" title="Facebook">
               <span class="fa-stack fa-lg">
@@ -15,7 +15,17 @@ permalink: /canali/
               </span>&nbsp;&nbsp;Gruppo Facebook
             </a><span>da usare per comunicare con noi su Facebook</span>
           </li>
-          {% endif %}
+         {% endif %}
+         {% if site.author.facebook and site.footer-links-active.androidapp %}
+          <li>
+            <a href="https://play.google.com/store/apps/details?id=eh.terremotocentroitalia" title="Android App">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-android fa-stack-1x fa-inverse"></i>
+              </span>&nbsp;&nbsp;App Android
+            </a><span>consulta i contenuti da app android</span>
+          </li>
+         {% endif %}
          {% if site.author.github and site.footer-links-active.github %}
           <li>
             <a href="https://github.com/{{ site.author.github }}" title="GitHub">
