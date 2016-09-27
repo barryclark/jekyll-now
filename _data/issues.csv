@@ -1,10 +1,10 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/689,179439572,2016-09-27 12:53:41,2016-09-27 09:20:23,Rieti Centro: ospitalità per massimo due persone in appartamento privato.,,,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""27/09/2016"", ""descrizione"": ""Offro ospitalit\u00e0 per massimo due persone in appartamento in cui vivo a Rieti centro."", ""email"": ""elidepaola@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3471279187""}","<pre><yamldata>tel: '3471279187'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/689,179439572,2016-09-27 12:54:55,2016-09-27 09:20:23,Rieti Centro: ospitalità per massimo due persone in appartamento privato.,42.404391,12.857650,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""27/09/2016"", ""descrizione"": ""Offro ospitalit\u00e0 per massimo due persone in appartamento in cui vivo a Rieti centro."", ""email"": ""elidepaola@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": ""42.404391"", ""link"": """", ""lon"": ""12.857650"", ""tel"": ""3471279187""}","<pre><yamldata>tel: '3471279187'
 email: elidepaola@gmail.com
 descrizione: 'Offro ospitalità per massimo due persone in appartamento in cui vivo a Rieti centro.'
 indirizzo: ''
-lat: ''
-lon: ''
+lat: '42.404391'
+lon: '12.857650'
 link: ''
 immagine: ''
 data: 27/09/2016
