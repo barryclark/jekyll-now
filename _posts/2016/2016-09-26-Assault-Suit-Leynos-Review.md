@@ -8,11 +8,9 @@ tags: [video games, review, assault suit leynos, rising star games]
 author: Rob Kalajian
 ---
 
-<img src="/images/leynos/leynoslogo.jpg" width="250" alt="Cover" class="float-right" />
-
 <h2>Prelude</h2>
 
-I can't remember where I had gotten the game, but at some point in 1990, I first played Target Earth for the SEGA Genesis. I immediately fell in love with it. The graphics, the music, the difficulty, and the loadout based customization were an instant hit with a 9-year-old me. When I first heard about Assault Suit Leynos I thought to myself, "Wow! This looks great. It looks just like Target Earth!"
+<img src="/images/leynos/leynoslogo.jpg" width="250" alt="Cover" class="float-right" />I can't remember where I had gotten the game, but at some point in 1990, I first played Target Earth for the SEGA Genesis. I immediately fell in love with it. The graphics, the music, the difficulty, and the loadout based customization were an instant hit with a 9-year-old me. When I first heard about Assault Suit Leynos I thought to myself, "Wow! This looks great. It looks just like Target Earth!"
 
 That's because it's a remake of Target Earth, or should I say, it's a remake of the original Japanese title, Assault Suit Leynos.
 
