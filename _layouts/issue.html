@@ -21,23 +21,23 @@ layout: base
   <div class="row"> <div class="col-md-2">Email:</div> <div class="col-md-10"> <a href="mailto:{{page.issue.data.email}}">{{page.issue.data.email}}</a></div> </div>
   {% endif %}
 
-  {% if page.issue.instestazione != blank %}
+  {% if page.issue.data.intestazione != blank %}
   <div class="row"> <div class="col-md-2">Instestazione:</div> <div class="col-md-10"> {{page.issue.data.intestazione}}</div> </div>
   {% endif %}
   
-  {% if page.issue.iban != blank %}
+  {% if page.issue.data.iban != blank %}
   <div class="row"> <div class="col-md-2">IBAN:</div> <div class="col-md-10"> {{page.issue.data.iban}}</div> </div>
   {% endif %}
 
-  {% if page.issue.bic != blank %}
+  {% if page.issue.data.bic != blank %}
   <div class="row"> <div class="col-md-2">BIC:</div> <div class="col-md-10"> {{page.issue.data.bic}}</div> </div>
   {% endif %}
 
-  {% if page.issue.postale != blank %}
+  {% if page.issue.data.postale != blank %}
   <div class="row"> <div class="col-md-2">Postale:</div> <div class="col-md-10"> {{page.issue.data.postale}}</div></div>
   {% endif %} 
 
-  {% if page.issue.causale != blank %}
+  {% if page.issue.data.causale != blank %}
   <div class="row"> <div class="col-md-2">Causale:</div> <div class="col-md-10"> {{page.issue.data.causale}}</div> </div>
   {% endif %}  
   
