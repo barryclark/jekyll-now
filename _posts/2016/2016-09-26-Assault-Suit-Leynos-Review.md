@@ -8,36 +8,47 @@ tags: [video games, review, assault suit leynos, rising star games]
 author: Rob Kalajian
 ---
 
-<img src="/images/leynos/leynoslogo.jpb" alt="Cover" class="float-right" />
+<img src="/images/leynos/leynoslogo.jpg" alt="Cover" class="float-right" />
 
 <h2>Prelude</h2>
 
-If you haven't guessed my now I'm a huge fan of interactive fiction, so when I was offered a review copy of Out There Chronicles I didn't hesitate the download it to my phone and give it a whirl. The game is set in the same universe as Out There, a different interactive sci-fi graphic novel was written by FibreTigre. It's a choose-your-own-adventure style game with beautiful artwork and an eerie soundtrack.
+I can't remember where I had gotten the game, but at some point in 1990, I first played Target Earth for the SEGA Genesis. I immediately fell in love with it. The graphics, the music, the difficulty, and the loadout based customization were an instant hit with a 9-year-old me. When I first heard about Assault Suit Leynos I thought to myself, "Wow! This looks great. It looks just like Target Earth!"
+
+That's because it's a remake of Target Earth, or should I say, it's a remake of the original Japanese title, Assault Suit Leynos.
+
+Yeah. I feel a bit dumb. I'm not ashamed to admit that.
+
+![Target Earth](/images/leynos/targetearth.jpg){: .center }
+*Such fond memories*
 
 <h2>Play</h2>
 
-Gameplay is super simple and very minimal. As you read through the game you'll be presented with a set of options. Choose the one you want by tapping on it and the story continues. Sometimes a scene will play out and present you with some of the previous options, and sometimes there'll be a scene change or new options that open up to you.
+For those familiar with the original it plays almost exactly the same. The missions have been tweaked, some with multiple outcomes. Major additions to your arsenal are a shield, a boost, and a melee attack, all of which are extremely helpful throughout play.
 
-Sometimes you'll die.
+For those who aren't familiar, Assault Suit Leynos puts you in the cockpit of a giant Assualt Suit. There's 8 missions in the game, each with different objectives. Before each mission, you'll choose a loadout from all your current equipment and then be sent off to do what needs to be done. Some missions involve destroying a certain target. Others, protecting one or more things.
 
-Out There Chronicles, while sometimes a bit linear, doesn't hold your hand. There're times where your actions will get you into trouble. There're times where your actions will get you killed. In that case, you'll be whisked away back to a checkpoint where you'll have to play several scenes over again in hopes that you don't mess up as badly again.
+This updated version has a much faster pace to it, and a bit more of a bullet-hell feel. It also feels a bit easier than the original game, but if you're looking for a challenge you can always play through the original from the options menu. For even more challenges, there are even ways to customize the game's Arcade mode by unlocking modifiers throughout the game.
 
-It's a laid back experience where the story is first and foremost a part of the game. Different choices will lead to different outcomes and will always have a great bit of fiction to go along with them. Watching events unfold around you is satisfying.
-
-<img src="/images/outtherechronicles/screen.png" width="300" alt="Cover" class="float-right" />
 <h2>Pixels</h2>
 
-The artwork in Out There Chronicles is fantastic. All the illustrations are done by renowned artist Benjamin Carré, a man known for his work in science fiction. Siddhartha Barnhoorn provides the haunting music that accompanies the story and helps give emotion to the various scenes in the game.
+I'm really impressed with how Assault Suit Leynos looks. I'm even more impressed that the studio didn't go full 3D. The 2D sprites are ultra detailed and comparatively bigger than their original counterparts. Weapon fire, explosions, and all that good stuff is in your face, sometimes blocking your view of the action. This isn't a bad thing. It's just what is.
 
-All the artwork is still frame, and it works perfectly as to no distract from the story, but to enhance it. Text boxes are colored in a way so you can easily tell which characters are speaking, and what's descriptive text. All this combined with a simple UI make for an overall pleasant experience.
+While the Genesis obviously has limitations and had to reuse a lot of assets, the remake feels fresh throughout the whole game. The sheer size and breadth of the levels and enemies really takes things to a whole different level.
+
+The biggest step in, in my opinion, is the interface. There's not much screen space lost to things like your health, selected weapons, available weapons, boss health, etc... Everything is seamless, yet still keeps that old-school feel.
+
+![Bigger and better](/images/leynos/bigger.png){: .center }
+*Everything is a bit bigger and better*
 
 <h2>Perspective</h2>
 
-I'm a huge of the game. Out There Chronicles provides the pleasure of a good piece of science fiction with the excitement of old-school choose-your-own-adventure books. It's just the right length to keep you hooked without dragging on to the point where you lose interest.
+Getting a remake of Target Earth is a dream come true, and I'm extra glad that such care was taken in doing so. The game retains the feel of the original yet makes it modern in every way shape and form. The unlockable extras and classic mode are a great touch and the fact that they didn't try to add any kind of multiplayer puts a smile on my face.
 
-This is just the first episode of a longer storyline, and I'm eagerly awaiting the release of the next episode. If you're interested in the game it's currently on sale for 99 cents in both the Google Play and iTunes stores. I'd snag it now if I were you, though the game is still worth every penny of its full price.
+Assault Suit Leynos is out on Steam and the PS4. It's more than worth $20 even though the main campaign is a bit short.
 
-*A copy of Out There Chronicles was provided free for review by Mi-Clos Studio.*
+Now if someone would just remaster UN Squadron I'd be in geek heaven.
+
+*A copy of Assault Suit Leynos on Steam was provided free for review by Rising Star Games.*
 
 <h3>Supporting Links</h3>
 
