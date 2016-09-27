@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/692,179613068,2016-09-27 21:03:25,2016-09-27 21:03:00,Raccolta fondi per il Monastero Benedettino di Norcia,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Raccolte Fondi"", ""Twitter""]",,,"{""bic"": """", ""causale"": ""CNSP \u2013 Raccolta fondi terremoto 2016 \u2013 Monastero Benedettino di Norcia"", ""chi"": ""Raccolta fondi per il Monastero Benedettino di Norcia"", ""data"": ""27/09/2016"", ""descrizione"": ""La raccolta fondi servir\u00e0 a restaurare la Basilica e il Monastero, seriamente danneggiati dal sisma e ad oggi inagibili, nonch\u00e9 al sostegno delle popolazioni assistite dai minaci."", ""email"": """", ""iban"": ""IT88T0200801107000103966047"", ""intestazione"": ""Associazione Amici del Summorum Pontificum"", ""link"": ""http://www.summorumpontificum.org/?p=1030"", ""postale"": """"}","<pre><yamldata>chi: 'Raccolta fondi per il Monastero Benedettino di Norcia'
+descrizione: 'La raccolta fondi servirà a restaurare la Basilica e il Monastero, seriamente danneggiati dal sisma e ad oggi inagibili, nonché al sostegno delle popolazioni assistite dai minaci.'
+intestazione: 'Associazione Amici del Summorum Pontificum'
+iban: IT88T0200801107000103966047
+bic: ''
+postale: ''
+causale: 'CNSP – Raccolta fondi terremoto 2016 – Monastero Benedettino di Norcia'
+link: 'http://www.summorumpontificum.org/?p=1030'
+email: ''
+data: 27/09/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/689,179439572,2016-09-27 12:54:55,2016-09-27 09:20:23,Rieti Centro: ospitalità per massimo due persone in appartamento privato.,42.404391,12.857650,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""27/09/2016"", ""descrizione"": ""Offro ospitalit\u00e0 per massimo due persone in appartamento in cui vivo a Rieti centro."", ""email"": ""elidepaola@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": ""42.404391"", ""link"": """", ""lon"": ""12.857650"", ""tel"": ""3471279187""}","<pre><yamldata>tel: '3471279187'
 email: elidepaola@gmail.com
 descrizione: 'Offro ospitalità per massimo due persone in appartamento in cui vivo a Rieti centro.'
