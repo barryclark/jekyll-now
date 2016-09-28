@@ -31,7 +31,9 @@ He visto muchos casos de personas que realmente quieren conseguir trabajo en una
 muchisimo dinero por "enchular" su CV y ojo que he visto CVs "enchulados" por Coaches, psicologos laborales, profesores de lenguistica, etc. que 
 dejan los "enchulamientos" listos para ser presentados en el club de la comedia. No, no digo que todos sean poco efectivos, pero al menos si 
 pediras ayuda para mejorar tu CV usa tu buen juicio y pide ayuda a quien ya haya pasado por el proceso, o alguien que tenga experienca como reclutador 
-para una top tech. Entiendo que por mucha buena intencion que tenga una reclutadora que trabajaba consiguiendo tecnicos de soporte, probablemente no 
+para una top tech. 
+
+Entiendo que por mucha buena intencion que tenga una reclutadora que trabajaba consiguiendo tecnicos de soporte, probablemente no 
 tendra la experiencia y conocimiento para mejorar tu CV para ser presentado en Google. Y ojo, por mucho que respeto a los PSicologos, casi la mayoria 
 de las top tech no tienen pruebas psicologicas o similares, sino solo de inteligencia, lo mismo aplica al CV. Por lo que si van a gastar us$1.000 en 
 mejorar su CV, sigan mi recomendacion y compren los libros que recomiendo mas abajo y busquen a algun amigo o conocido que trabaje en una top tech, 
@@ -40,12 +42,15 @@ inviten un par de cervezas y pidan ayuda a ellos, les aseguro que no gastaran ma
 ## Desarrolladores inmaduros, sin experiencia o poco atrevidos?
 
 Durante los ultimos meses, varias top tech han ido a Chile en busca de SDEs, SDMs, o PMs. Asi es como he podido observar un patron frecuente:
-Cuando se publica la oferta, muchos manifiestan interes, pero menos del 20% de quienes lo hacen realmente envian un CV.
-De quienes envian el CV solo el 14% tiene el perfil o la experiencia para postular, pero de ese 14%, solo 11% continua el proceso, realizando los 
+* Cuando se publica la oferta, muchos manifiestan interes, pero menos del 20% de quienes lo hacen realmente envian un CV.
+* De quienes envian el CV solo el 14% tiene el perfil o la experiencia para postular, pero de ese 14%, solo 11% continua el proceso, realizando los 
 cambios sugeridos a su CV, pero la mayoria de quienes hacen los cambios y continuan llegan a la fase de la entrevista.
+
 Aqui veo otro patron, que realmente me preocupa y me entristese.
-Del 10% que llego a la entrevista, menos del 3% realmente se prepara. He visto casos de gente que llega casi sin siquiera haber abierto un libro 
-o practicado antes de la entrevista, pensando que sera evaluado solo por su hoja de vida o por lo "buena onda". Seamos francos, yo estoy 
+* Del 10% que llego a la entrevista, menos del 3% realmente se prepara. He visto casos de gente que llega casi sin siquiera haber abierto un libro 
+o practicado antes de la entrevista, pensando que sera evaluado solo por su hoja de vida o por lo "buena onda".
+
+Seamos francos, yo estoy 
 totalmente oxidado en cuanto a programacion y entiendo que muchos con varios anos de experiencia les pase lo mismo, pero por lo menos deberian 
 leer, investigar y prepararse, en vez de hacer perder el tiempo a los entrevistadores. Sino, mejor ni te presentes.
 
