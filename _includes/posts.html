@@ -9,6 +9,7 @@
       <hr />
       <div>
         {% include metadata/author.html %}
+        {% include metadata/publisher.html %}
         <span itemprop="datePublished" content="{{ post.date | date: "%Y-%m-%d" }}" class="date">
           {{ post.date | date: "%B %e, %Y" }}
         </span>
