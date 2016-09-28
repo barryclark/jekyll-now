@@ -9,9 +9,8 @@
   </div>
 
   <nav class="sidebar-nav">
-    <a class="sidebar-nav-item{% if page.title == "Home" %} active{% endif %}" href="/">Home</a>
+    <a class="sidebar-nav-item{% if page.title == "About" %} active{% endif %}" href="/">About</a>
 
-    <a class="sidebar-nav-item{% if page.title == "About" %} active{% endif %}" href="/about">About</a>
     <a class="sidebar-nav-item{% if page.title == "Selected Publications" %} active{% endif %}" href="/publications">Publications</a>
     <a class="sidebar-nav-item{% if page.title == "Presentations" %} active{% endif %}" href="/presentations">Presentations</a>
     <a class="sidebar-nav-item{% if page.title == "Software" %} active{% endif %}" href="/software">Software</a>
@@ -35,6 +34,31 @@
 
   </nav>
 
+  <div class="sidebar-item">
+    <p>
+          {% if site.author.github %}
+            <a href="https://github.com/{{ site.author.github }}" title="GitHub">
+              <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+            </a>
+          {% endif %}
+		  {% if site.author.twitter %}
+            <a href="https://twitter.com/{{ site.author.twitter }}" title="Twitter">
+              <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+            </a>
+          {% endif %}
+		  {% if site.author.email %}
+            <a href="mailto:{{ site.author.email }}" title="Email me">
+              <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+            </a>
+          {% endif %}
+		  {% if site.author.stackoverflow %}
+            <a href="https://stackoverflow.com/users/{{ site.author.stackoverflow }}" title="StackOverflow">
+              <i class="fa fa-stack-overflow fa-2x" aria-hidden="true"></i>
+            </a>
+          {% endif %}
+    </p>
+  </div>
+        
   <div class="sidebar-item">
     <p>
       &copy; {{ site.time | date: '%Y' }}. All rights reserved.

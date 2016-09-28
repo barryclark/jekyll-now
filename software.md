@@ -15,8 +15,9 @@ An R package for simulating different methods of recording data based on direct 
 
 ### clubSandwich
 
-An R package for calculating cluster-robust variance estimators (i.e., sandwich estimators) with small-sample corrections.
+An R package for calculating cluster-robust variance estimators (i.e., sandwich estimators) with small-sample corrections, including the bias-reduced linearization estimator of Bell and McCaffrey (2002). 
 
+- [Available on the Comprehensive R Archive Network](https://cran.r-project.org/web/packages/clubSandwich/)
 - [Source code on Github](https://github.com/jepusto/clubSandwich)
 
 ### scdhlm

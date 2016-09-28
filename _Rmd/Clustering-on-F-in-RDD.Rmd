@@ -6,55 +6,53 @@ date: June 13, 2016
 tags: [econometrics, sandwiches]
 ---
 
-# Model and notation
+# Notation and estimators
 
 Consider a regression discontinuity design in which the forcing variable $Z$ takes on integer values from $1,...,J$. Treatment is determined on the basis of a cut-score $c$, so that units with $Z \leq c$ receive treatment and those with $z > c$ do not receive treatment.  Let $t_j = 1$ if $z_j \leq c$ and $t_j = 0$ otherwise. Suppose that the sample include $n_j$ observations with $Z = j$. 
 
-Consider a model in which the mean specification is exactly linear within a certain bandwidth of the cut-score and the errors are independent and homoskedastic. The model can be written as
+The current standard practice for estimation of the local average treatment effect (that is, the average effect of receiving treatment for units _at the cut-score_) in an RDD is to use local linear regression. Suppose that the bandwidth is $b$ and weights are determined by some kernel function $k()$. The treatment effect would then be estimated by the weighted least squares regression 
 
 $$
-y_{ij} = \beta_1 (1 - t_j) + \beta_2 (1 - t_j) (z_j - c) + \beta_3 t_j + \beta_4 t_j (z_j - c) + e_{ij}, 
+y_{ij} = \beta_1 + \beta_2 (z_j - c) + \beta_3 t_j + \beta_4 t_j (z_j - c) + \epsilon_{ij}.
 $$
 
-where $\text{E}\left(e_{ij}\right) = 0$ and $\text{Var}\left(e_{ij}\right) = \sigma^2$. In this specification, the local average treatment effect is $\beta_3 - \beta_1$. Following standard practice, this treatment effect will be estimated using local linear regression within a bandwidth $b$ of the cut-score, using weights determined by a kernel $k()$. Let $w_j = k(j - c)$. Let 
+where $\beta_3$ represents the local average treatment effect. Because the predictors in this model vary only with $j$, it may be written equivalently as 
 
 $$
-\mathbf{x}_j = \left[(1 - t_j), \quad (1 - t_j)(z_j - c), \quad t_j, \quad t_j (z_j - c)\right]
+\bar{y}_j = \beta_1 + \beta_2 (z_j - c) + \beta_3 t_j + \beta_4 t_j (z_j - c) + \bar\epsilon_j,
 $$
 
-denote a $4 \times 1$ row vector of predictors for each value of the forcing variable, and let $\boldsymbol\beta$ denote the $4 \times 1$ vector of regression coefficients. Let $\mathbf{X}_j = \mathbf{1}_j \mathbf{x}_j$, where $\mathbf{1}_j$ is an $n_j \times 1$ vector with all entries equal to 1. Let $\mathbf{W}_j = w_j \mathbf{I}_j$, where $\mathbf{I}_j$ is an $n_j \times n_j$ identity matrix. Let $\mathbf{y}_j = \left(y_{1j},...y_{n_j j}\right)'$.
+where $\bar{y}_j = \sum_{i=1}^{n_j} y_{ij} / n_j$ and $\bar\epsilon_j = \sum_{i=1}^{n_j} \epsilon_{ij} / n_j$. Let $\mathbf{x}_j = \left[1, \ (z_j - c), \  t_j, \  t_j (z_j - c)\right]$ denote a $4 \times 1$ row vector of predictors for each value of the forcing variable, let $\boldsymbol\beta$ denote the $4 \times 1$ vector of regression coefficients, let $w_j = n_j k(j - c)$, and let $\mathbf{u} = [0, 0, 1, 0]'$ denote a $4 \times 1$ vector that indicates the treatment effect. Furthermore, let $\mathbf{X}_j = \mathbf{1}_j \mathbf{x}_j$, where $\mathbf{1}_j$ is an $n_j \times 1$ vector with all entries equal to 1; let $\mathbf{W}_j = w_j \mathbf{I}_j$, where $\mathbf{I}_j$ is an $n_j \times n_j$ identity matrix; and let $\mathbf{y}_j = \left(y_{1j},...y_{n_j j}\right)'$.
 
-The weighted least squares estimator of $\boldsymbol\beta$ is 
+The weighted least squares estimator of $\beta_3 = \mathbf{u}'\boldsymbol\beta$ is then 
 
 $$
 \begin{aligned}
-\boldsymbol{\hat\beta} &= \left(\sum_{j=1}^J \mathbf{X}_j' \mathbf{W}_j \mathbf{X}_j\right)^{-1} \sum_{j=1}^J \mathbf{X}_j' \mathbf{W}_j \mathbf{y}_j \\
-&= \mathbf{M} \sum_{j=1}^J n_j w_j \mathbf{x}_j' \bar{y}_j,
+\hat\beta_3 &= \mathbf{u}'\left(\sum_{j=1}^J \mathbf{X}_j' \mathbf{W}_j \mathbf{X}_j\right)^{-1} \sum_{j=1}^J \mathbf{X}_j' \mathbf{W}_j \mathbf{y}_j \\
+&= \mathbf{u}'\mathbf{M} \sum_{j=1}^J n_j w_j \mathbf{x}_j' \bar{y}_j,
 \end{aligned}*
 $$
 
-where $\mathbf{M} = \left(\sum_{j=1}^J n_j w_j \mathbf{x}_j' \mathbf{x}_j\right)^{-1}$ and $\bar{y}_j = \sum_{i=1}^{n_j} y_{ij} / n_j$. Thus, $\boldsymbol{\hat\beta}$ is equivalent to the weighted least squares estimator for a regression of the sample mean outcomes $\bar{y}_{1},...,\bar{y}_J$ on the corresponding covariate vectors, with weights equal to $n_j w_j$. 
+where $\mathbf{M} = \left(\sum_{j=1}^J w_j \mathbf{x}_j' \mathbf{x}_j\right)^{-1}$. Let $\mathbf{e}_j = \mathbf{y}_j - \mathbf{X}_j \boldsymbol{\hat\beta}$ denote the residual vector for units with $Z = j$ and $\mathbf{\bar{e}}_j = \bar{y} - \mathbf{x}_j \boldsymbol{\hat\beta}$ denote the average residual for these units. 
 
-Consider the usual sandwich estimator of $\text{Var}\left(\boldsymbol{\hat\beta}\right)$, clustering on the unique values of the forcing variable. Letting $\mathbf{e}_j = \mathbf{y}_j - \mathbf{X}_j \boldsymbol{\hat\beta}$ and $\mathbf{\bar{e}}_j = \bar{y} - \mathbf{x}_j \boldsymbol{\hat\beta}$,
+Consider a sandwich estimator of $\text{Var}\left(\hat\beta_3\right)$, with clustering on the unique values of the forcing variable. Allow for adjustments to the residual vectors of the form $\mathbf{I}_j - a_j \mathbf{1}_j \mathbf{1}_j'$, the sandwich estimator is
 
 $$
 \begin{aligned}
-\mathbf{V}^{CR0} &= \mathbf{M} \left(\sum_{j=1}^J \mathbf{X}_j' \mathbf{W}_j \mathbf{e}_j \mathbf{e}_j' \mathbf{W}_j \mathbf{X}_j\right) \mathbf{M} \\
-&= \mathbf{M} \left(\sum_{j=1}^J \left(n_j w_j\right)^2 \bar{e}_j^2 \mathbf{x}_j'\mathbf{x}_j \right) \mathbf{M}.
+V^{CR} &= \mathbf{u}'\mathbf{M} \left(\sum_{j=1}^J \mathbf{X}_j' \mathbf{W}_j \left(\mathbf{I}_j - a_j \mathbf{1}_j \mathbf{1}_j'\right)\mathbf{e}_j \mathbf{e}_j' \left(\mathbf{I}_j - a_j \mathbf{1}_j \mathbf{1}_j'\right) \mathbf{W}_j \mathbf{X}_j\right) \mathbf{M}\mathbf{u} \\
+&= \mathbf{u}'\mathbf{M} \left(\sum_{j=1}^J w_j^2 (1 - n_j a_j)^2 \bar{e}_j^2 \mathbf{x}_j'\mathbf{x}_j \right) \mathbf{M}\mathbf{u} \\
+&= \sum_{j=1}^J g_j^2 w_j^2 (1 - n_j a_j)^2 \bar{e}_j^2,
 \end{aligned}
 $$
 
-Thus, $\mathbf{V}^{CR0}$ is equivalent to the HC0 heteroskedasticity-robust variance estimator for the regression of the sample mean outcomes. 
+where $g_j = \mathbf{u}'\mathbf{M} \mathbf{x}_j$. Thus, $V^{CR}$ is equivalent to a heteroskedasticity-consistent sandwich variance estimator for the regression of the sample mean outcomes, where the squared sample residuals are adjusted by the term $\left(1 - n_j a_j\right)^2$. For the usual cluster-robust variance estimator (CR0), $a_j = 0$ and so $V^{CR}$ is equivalent to the HC0 heteroskedasticity-consistent sandwich estimator. 
 
-```{r}
-n <- 10
-a <- 0.04
-A <- diag(n) - a
-A_eig <- eigen(A)
-A_sisr <- A_eig$vectors %*% (A_eig$values^(-1/2) * t(A_eig$vectors))
-all.equal(diag(n), A_sisr %*% A %*% A_sisr)
-chol2inv(chol(A))
-diag(n) - a / (a * n - 1)
-B <- diag(n) - (1 - sqrt(1 / (1 - n * a))) / n
-```
+# Model 1
 
+Suppose that $\boldsymbol\epsilon_1,...,\boldsymbol\epsilon_J$ are mutually independent and multi-variate normally distributed, each with variance $\text{Var}\left(\boldsymbol\epsilon_j\right) = \sigma^2 \mathbf{I}_j + \tau^2 \mathbf{1}_j \mathbf{1}_j'$. This is the model used to capture mis-specification in the functional form of the regression of $Y$ on $Z$. Then $\text{Var}\left(\bar\epsilon_j\right) = \tau^2 + \sigma^2 / n_j$. 
+
+Now, let $\mathbf{H}$ denote the matrix with entries $\mathbf{x}_i \mathbf{M} \mathbf{x}_j' w_j$ for $i,j = 1,...,J$ and let $\boldsymbol\Sigma = \text{diag}\left(\tau^2 + \sigma^2 / n_1,...,\tau^2 + \sigma^2 / n_J\right)$. Let $\mathbf{A} =\text{diag}\left(g_1^2 w_1^2 \psi_1,...,g_J^2 w_J^2 \psi_J\right)$ for some adjustment factors $\psi_1,...,\psi_J$. Then 
+
+$$
+E\left(V^{HC}\right) = \text{tr}\left[\left(\mathbf{I} - \mathbf{H}\right) \boldsymbol\Sigma \left(\mathbf{I} - \mathbf{H}'\right) \mathbf{A}\right].
+$$

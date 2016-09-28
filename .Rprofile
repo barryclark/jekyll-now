@@ -39,6 +39,7 @@ r2jekyll <- function(filename, dpi = 192) {
 }
 
 # r2jekyll("Simulation-studies-in-R-2016")
+# r2jekyll("Bug-in-nlme-getVarCov")
 # r2jekyll("alternative-formulas-for-the-SMD")
 # r2jekyll("assigning-after-dplyr")
 # r2jekyll("unlucky-randomization")
