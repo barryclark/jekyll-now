@@ -6,28 +6,6 @@
         <a href="{{ post.url }}" itemprop="url">{% if post.facebook_post %}<i class="svg-icon facebook social_post"></i>{% elsif post.linkedin_post %}<i class="svg-icon linkedin social_post"></i>{% elsif post.tags contains 'family tree' %}<img src="/images/Family-Tree-icon-40.png" class="social_post" />{% elsif post.tags contains 'html5' %}<img src="/images/HTML5_Logo.svg" class="social_post" style="width: 40px; height: 40px;" />{% endif %}{{ post.title }}</a>
     </h2>
     {% include share.html url=post.url facebook_post=post.facebook_post %}
-  
-    {% capture post_url | strip_newlines | remove: ' ' %}
-        {% if post.facebook_post %}{{ post.facebook_post }}{% else %}{{ site.url }}{{ post.url }}{% endif %}
-    {% endcapture %}
-      <!-- LinkedIn Share -->
-      <div>
-        <script src="https://platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
-        <script type="IN/Share" data-url="{{ post_url }}" data-counter="right"></script>
-      </div>
-      
-      {% unless post.facebook_post %}
-      <!-- Facebook Like & Share -->
-      <div>
-        <div class="fb-like" 
-          data-href="{{ post_url }}" 
-          data-layout="standard" 
-          data-action="like" 
-          data-share="true"
-          data-show-faces="true">
-        </div>
-      </div>
-      {% endunless %}
       <hr />
       <div>
         {% include metadata/author.html %}
