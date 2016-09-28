@@ -119,6 +119,6 @@ $$
 [adaboost]: /images/adaboost.png "Adaboost算法"
 [exploss]: /images/exponentialloss.png "指数损失"
 
-#References
+# References
 
 [^graph_ml]: 杉山将，《图解机器学习》第9.3节，2015。

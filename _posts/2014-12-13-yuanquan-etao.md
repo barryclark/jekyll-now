@@ -6,7 +6,7 @@ date:   2012-11-01 01:36
 categories: 企业推荐系统 推荐算法 一淘
 ---
 
-#Talk1：Large-scale Ecommerce RS in Etao，袁全@一淘
+# Talk1：Large-scale Ecommerce RS in Etao，袁全@一淘
 
 【[ppt下载地址][yuanquan]】
 
@@ -52,7 +52,7 @@ categories: 企业推荐系统 推荐算法 一淘
 [xavier]: http://www.cnblogs.com/breezedeus/archive/2012/08/12/2634462.html "Xavier Amatriain @ RecSys'12"
 
 
-#References
+# References
 
 [^explain]: [Tagsplanations: Explaining Recommendations Using Tags](http://www.grouplens.org/system/files/vig-iui2009-tagsplanations.pdf).
 

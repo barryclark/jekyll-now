@@ -95,7 +95,7 @@ $$
 [fb]: http://www.facebook.com "Facebook"
 
 
-#References
+# References
 
 [^fhash]: Kilian Weinberger et al. Feature Hashing for Large Scale Multitask Learning, 2010.
 [^fhash2]: Joshua Attenberg et al. Collaborative Email-Spam Filtering with the Hashing-Trick, 2009.

@@ -49,7 +49,7 @@ ZooKeeper这种处理写请求的方法带来的一个问题是有些服务器�
 
 
 
-#References
+# References
 
 [^ibm_blog]: Mark Grover. [ZooKeeper fundamentals, deployment, and applications](http://www.ibm.com/developerworks/library/bd-zookeeper/), 2013.
 [^ali_blog]: Alibaba. [zookeeper使用和原理探究（一）](http://jm-blog.aliapp.com/?p=665). 

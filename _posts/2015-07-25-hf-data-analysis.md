@@ -19,6 +19,6 @@ categories: 数据分析 Head_First
 
 > 好的数据分析总是集中在你想从数据中获得什么结论这个问题上。
 
-#References
+# References
 
 [^xuxin]: 于俊燕，《资本传奇•徐新》，中华工商联合出版社，2008年。

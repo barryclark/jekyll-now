@@ -36,7 +36,7 @@ categories: machine_learning feature_engineering feature_learning
 [fb]: http://www.facebook.com "Facebook"
 
 
-#References
+# References
 
 [^esl]: Trevor Hastie et al. [The Elements of Statistical Learning](http://statweb.stanford.edu/~tibs/ElemStatLearn/), 2001.
 [^fhash]: Kilian Weinberger et al. Feature Hashing for Large Scale Multitask Learning, 2010.

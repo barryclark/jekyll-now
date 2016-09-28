@@ -9,7 +9,7 @@ categories: machine_learning feature_engineering feature_learning
 
 
 
-##离散化续篇
+## 离散化续篇
 
 在上节中我已经介绍了一些常用的离散化单个连续特征的方法，其中一个是*画图观察趋势*。画图观察趋势的好处是直观、可解释性强，坏处是很麻烦。当要离散化的特征很多时，这种方法可操作性较差。
 
@@ -27,7 +27,7 @@ categories: machine_learning feature_engineering feature_learning
 
 
 
-###使用决策树来抽取特征
+### 使用决策树来抽取特征
 
 [img_ori]: /images/nonlinear_function1.png "样本点"
 [img_equal_dist]: /images/nonlinear_function2.png "等距离散离散法"
@@ -38,7 +38,7 @@ categories: machine_learning feature_engineering feature_learning
 [fb]: http://www.facebook.com "Facebook"
 
 
-#References
+# References
 
 [^esl]: Trevor Hastie et al, [The Elements of Statistical Learning](http://statweb.stanford.edu/~tibs/ElemStatLearn/), 2001.
 [^fhash]: Kilian Weinberger et al, Feature Hashing for Large Scale Multitask Learning, 2010.
@@ -46,14 +46,14 @@ categories: machine_learning feature_engineering feature_learning
 
 
 
-#归一化：
+# 归一化：
   * 有些模型/优化
   * 方法的效果会强烈地依赖于特征是否归一化，如LogisticReg，SVM，NeuralNetwork，SGD等。
   * 有些模型则不受归一化影响，如DecisionTree。
   * 0/1取值的特征通常不需要归一化，归一化会破坏它的稀疏性
 
 
-#离散化：
+# 离散化：
  4. 单独用此特征和目标值来训练一个决策树，依据决策树的各节点的划分方法来离散化此特征
   * 特征离散化时不一定要保留所有的取值段对应的特征，可以通过特征选择或者领域知识去掉其中的一部分（经常是头部或尾部）
   * facebook用gbdt抽取特征
@@ -66,7 +66,7 @@ categories: machine_learning feature_engineering feature_learning
     * Paper: Feature Hashing for Large Scale Multitask Learning
 
 
-#特征抽取：
+# 特征抽取：
   * 尽可能人为删除特征里的非线性性，不要期待模型自己能很好地自动处理非线性性
   * 间接特征：通过其他模型抽取的特征
     * 如可以利用LDA的聚类结果作为特征

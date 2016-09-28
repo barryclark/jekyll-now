@@ -77,6 +77,6 @@ $$
  
 [proximal]: /images/proximal_gd.jpg "Proximal GD 近似"
 
-#References
+# References
 
 [^alg]: John Wright. Lecture III: Algorithms, 2013.

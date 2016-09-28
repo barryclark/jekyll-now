@@ -80,7 +80,7 @@ $$
 
 [l1tol2]: /images/l1tol2.png "迭代算法直观解释"
 
-#References
+# References
 
 [^g_inverse_matrix]: [广义逆矩阵](http://baike.baidu.com/view/2597901.htm)。
 [^graph_ml]: 杉山将，《图解机器学习》第5.2节，2015。

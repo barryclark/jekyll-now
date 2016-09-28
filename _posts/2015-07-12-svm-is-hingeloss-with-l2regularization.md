@@ -78,7 +78,7 @@ $$
 [hingeloss]: /images/hingeloss.png "0/1损失与Hinge损失"
 [hinge]: /images/hinge.png "折叶（hinge）"
 
-#References
+# References
 
 [^graph_ml]: 杉山将，《图解机器学习》第8.5节，2015。
 

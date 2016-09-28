@@ -130,7 +130,7 @@ Deep Learning (DL)利用多层隐藏层来构建深度神经网络模型。训�
 [long_conv]: /images/dating_attr_long_conv.png "转化链很长，反馈延迟"
 
 
-#References
+# References
 
 [^meituan1]: huawolf@美团，[实例详解机器学习如何解决问题](http://tech.meituan.com/mt-mlinaction-how-to-ml.html), 2015。
 [^meituan2]: caohao@美团，[机器学习中的数据清洗与特征处理综述](http://tech.meituan.com/machinelearning-data-feature-process.html), 2015。

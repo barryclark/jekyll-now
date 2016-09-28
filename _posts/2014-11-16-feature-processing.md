@@ -197,7 +197,7 @@ $$
 
 
 
-#References
+# References
 
 [^esl]: Trevor Hastie et al. [The Elements of Statistical Learning](http://statweb.stanford.edu/~tibs/ElemStatLearn/), 2001.
 [^gmail]: Douglas Aberdeen et al. The Learning Behind Gmail Priority Inbox, 2010.

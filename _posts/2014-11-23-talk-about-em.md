@@ -23,6 +23,6 @@ EM的想法其实也比较简单。我要最大化似然函数（或者后验概
 
 
 
-#References
+# References
 
 [^ml_things]: Pedro Domingos. [A few useful things to know about machine learning](http://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf), 2012.

@@ -20,6 +20,6 @@ categories: machine_learning algorithms
 [paper_cn]: http://www.valleytalk.org/wp-content/uploads/2012/11/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E9%82%A3%E4%BA%9B%E4%BA%8B.pdf "机器学习那些事"
 
 
-#References
+# References
 
 [^ml_things]: Pedro Domingos. [A few useful things to know about machine learning](http://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf), 2012.
