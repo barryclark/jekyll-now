@@ -1,5 +1,7 @@
 {% capture page_url | strip_newlines | remove: ' ' %}
-  {% if page.facebook_post %}
+  {% if include.url %}
+    {{ include.url }}
+  {% elsif page.facebook_post %}
     {{ page.facebook_post }}
   {% else %}
     {{ site.url }}{{ page.url }}
