@@ -1,18 +1,10 @@
 <!-- schema.org itemprop stuff from schema.html -->
 <meta itemprop="url" content="{% if page.url == "/index.html" %}{{ site.url }}{% else %}{{ site.url }}{{ page.url }}{% endif %}" />
 
-{% if layout.isPost %}<span itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="Joseph Hendrix" />
-    <span itemprop="alumniOf" itemscope itemtype="http://schema.org/CollegeOrUniversity">
-        <meta itemprop="name" content="Wright State University" />
-    </span>
-    <span itemprop="alumniOf" itemscope itemtype="http://schema.org/CollegeOrUniversity">
-        <meta itemprop="name" content="Sinclair Community College" />
-    </span>
-    <span itemprop="alumniOf" itemscope itemtype="http://schema.org/HighSchool">
-        <meta itemprop="name" content="Xenia High School" />
-    </span>
-</span>{% endif %}
+{% if layout.isPost %}
+    {% include metadata/author.html %}
+    {% include metadata/publisher.html %}
+{% endif %}
 
 {% for tag in page.tags %}<meta itemprop="keywords" content="{{ tag | replace:'_',' ' }}" />{% endfor %}
 {% for keyword in page.keywords %}<meta itemprop="keywords" content="{{ keyword }}" />{% endfor %}
