@@ -20,4 +20,4 @@ public class JavaApplication {
 }
 {% endhighlight %}
 
-“object1” is has default access. As others have said, that means that you can only access that feature (be it class, variable, method, etc.) from classes within the same package.
+"object1" has default access. As others have said, that means that you can only access that feature (be it class, variable, method, etc.) from classes within the same package.
