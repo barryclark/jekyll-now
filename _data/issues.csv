@@ -765,10 +765,10 @@ link: 'https://postribu.net/campagne/post-terremoto/'
 email: post.tribu@gmail.com
 data: 19/09/2016
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/595,177718162,2016-09-19 07:23:42,2016-09-19 07:20:42,Associazione Amatrice - L'alba dei piccoli passi,,,"[""Accettato"", ""Facebook"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Associazione Amatrice - L'alba dei piccoli passi"", ""data"": ""19/09/2016"", ""descrizione"": ""Raccolta fondi per promuovere indiziative a sostegno dei bambini e ragazzi di Amatrice che permettano loro di recuperare la serenit\u00e0 e la routine quotidiana. Raccolta online via PayPal."", ""email"": ""lalbadeipiccolipassi@libero.it"", ""iban"": """", ""intestazione"": """", ""link"": ""https://mobile.paypal.com/it/cgi-bin/webscr?cmd=_express-checkout-mobile&useraction=commit&token=EC-7SH13097E32300022#m"", ""postale"": """"}","<pre><yamldata>chi: 'Associazione Amatrice - L''alba dei piccoli passi'
-descrizione: 'Raccolta fondi per promuovere indiziative a sostegno dei bambini e ragazzi di Amatrice che permettano loro di recuperare la serenità e la routine quotidiana. Raccolta online via PayPal.'
-intestazione: ''
-iban: ''
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/595,177718162,2016-09-28 07:06:52,2016-09-19 07:20:42,Associazione Amatrice - L'alba dei piccoli passi,,,"[""Accettato"", ""Facebook"", ""Form"", ""Raccolte Fondi""]",,,{},"<pre><yamldata>chi: 'Associazione Amatrice - L''alba dei piccoli passi'
+descrizione: 'Raccolta fondi dell'associazione fondata da un gruppo di genitori di Amatrice per promuovere indiziative a sostegno dei bambini e ragazzi che permettano loro di recuperare la serenità e la routine quotidiana. La raccolta è anche online via PayPal.'
+intestazione: 'ASSOCIAZIONE AMATRICE L’ALBA DEI PICCOLI PASSI'
+iban: 'IT10H0832773470000000005382'
 bic: ''
 postale: ''
 causale: ''
