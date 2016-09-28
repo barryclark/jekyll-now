@@ -1,7 +1,7 @@
 <!-- schema.org itemprop stuff from schema.html -->
-{% if page.url == "/index.html" %}<meta itemprop="url" content="{{ site.url }}" />{% else %}<meta itemprop="url" content="{{ site.url }}{{ page.url }}" />{% endif %}
+<meta itemprop="url" content="{% if page.url == "/index.html" %}{{ site.url }}{% else %}{{ site.url }}{{ page.url }}{% endif %}" />
 
-<span itemprop="author" itemscope itemtype="http://schema.org/Person">
+{% if layout.isPost %}<span itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="Joseph Hendrix" />
     <span itemprop="alumniOf" itemscope itemtype="http://schema.org/CollegeOrUniversity">
         <meta itemprop="name" content="Wright State University" />
@@ -12,10 +12,10 @@
     <span itemprop="alumniOf" itemscope itemtype="http://schema.org/HighSchool">
         <meta itemprop="name" content="Xenia High School" />
     </span>
-</span>
+</span>{% endif %}
 
 {% for tag in page.tags %}<meta itemprop="keywords" content="{{ tag | replace:'_',' ' }}" />{% endfor %}
 {% for keyword in page.keywords %}<meta itemprop="keywords" content="{{ keyword }}" />{% endfor %}
 {% unless page.tags or page.keywords %}{% for tag in site.tags %}<meta itemprop="keywords" content="{{ tag[0] }}" />{% endfor %}{% endunless %}
 
-{% if page.image %}<meta itemprop="image" content="{{ site.url }}{{ page.image }}" />{% else %}<meta itemprop="image" content="{{ site.avatar }}" />{% endif %}
+<meta itemprop="image" content="{% if page.image %}{{ site.url }}{{ page.image }}{% else %}{{ site.avatar }}{% endif %}" />
