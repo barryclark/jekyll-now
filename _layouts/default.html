@@ -50,8 +50,8 @@
 {% endcapture %}{% assign jbcache = nil %}
 <!DOCTYPE html>
 <html lang="en-us">
-	<head>
-		<title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+	<head itemscope itemtype="http://schema.org/WebSite">
+		<title itemprop='name'>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 		{% if page.noindex or layout.noindex %}<meta name="robots" content="noindex" />{% endif %}
 		
 		{% include metadata/meta.html %}
