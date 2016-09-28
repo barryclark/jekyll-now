@@ -54,9 +54,9 @@
 		<title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 		{% if page.noindex or layout.noindex %}<meta name="robots" content="noindex" />{% endif %}
 		
-		{% include meta.html %}
-		{% include opengraph.html %}
-		{% include twittercard.html %}
+		{% include metadata/meta.html %}
+		{% include metadata/opengraph.html %}
+		{% include metadata/twittercard.html %}
 		
 		{% if mathjax %}<script type="text/x-mathjax-config">
 	    	MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
@@ -76,7 +76,7 @@
 		<link href="/favicon.ico?" rel="shortcut icon" type="image/x-icon" />
 	</head>
 	{% if layout.isPost %}<body itemscope itemtype="http://schema.org/BlogPosting">{% elsif page.url == "/index.html" or page.url contains "/tags/" or page.url contains "/page" %}<body itemscope itemtype="http://schema.org/Blog">{% else %}<body>{% endif %}
-    	{% include schema.html %}  
+    	{% include metadata/schema.html %}  
 	    {% include facebook.html %}	    
 	    <div class="wrapper-masthead">
   		<div class="container">
