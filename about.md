@@ -4,12 +4,5 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+This site will be a repository of drills, exercises, and good advice I have picked up over my coaching career that can be used as a reference for myself or my players to use.  Perform drills listed on this site at your own risk.
 
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
