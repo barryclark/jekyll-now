@@ -18,16 +18,18 @@ html {
 }
 
 body {
-	background: $white;
+	background: url(/images/background.jpg);
   font: 18px/1.4 $helvetica;
   color: $darkGray;
 }
 
 .container {
   margin: 0 auto;
-  max-width: 740px;
-  padding: 0 10px;
+  max-width: 540px;
+  background: $white;
+  padding: 10px 10px 10px 20px;
   width: 100%;
+  border-radius: 25px;
 }
 
 h1, h2, h3, h4, h5, h6 {
