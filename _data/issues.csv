@@ -993,6 +993,13 @@ lat: '43.110992'
 lon: '13.600152'
 data: 16/09/2016
 </yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/565,177527784,2016-09-17 13:24:17,2016-09-16 21:50:14,"Chiesa del SS. Sacramento, Grottazzolina",43.110992,13.600152,"[""Accettato"", ""Telegram""]",,http://i.imgur.com/6grbiw8.jpg,"{""data"": ""16/09/2016"", ""descrizione"": ""Chiesa del SS. Sacramento, Grottazzolina"", ""immagine"": ""http://i.imgur.com/6grbiw8.jpg"", ""lat"": ""43.110992"", ""lon"": ""13.600152"", ""telegram_user"": ""MarcoAlici""}","<pre><yamldata>telegram_user: MarcoAlici
+descrizione: 'Chiesa del SS. Sacramento, Grottazzolina'
+immagine: 'http://i.imgur.com/6grbiw8.jpg'
+lat: '43.110992'
+lon: '13.600152'
+data: 16/09/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/564,177484206,2016-09-22 13:58:13,2016-09-16 17:57:24,"Torrita di Siena, SI - comune offre appartamenti sfitti",43.1667601,11.7716466,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""Comune di Torrita di Siena offre appartamenti sfitti a terremotati. Gi\u00e0 4 le famiglie che saranno ospitate."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Torrita di Siena, SI, Tuscany, Italia"", ""lat"": ""43.1667601"", ""link"": ""https://t.co/OFWc5xtgnI"", ""lon"": ""11.7716466"", ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 descrizione: 'Comune di Torrita di Siena offre appartamenti sfitti a terremotati. Già 4 le famiglie che saranno ospitate.'
