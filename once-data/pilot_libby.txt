@@ -1,0 +1,28 @@
+Scene   Description Characters
+1   GlassCoffin     Charming (Dwarfs x 7) Snow
+2   Wedding     Snow Charming (Dwarfs x 7) Queen (Guests x 100)
+3   Bus     Henry BlondeLady GreyhoundAnnouncer 
+4   Taxi    Henry TaxiDriver
+5   Restaurant  Emma Brian
+6   Apartment   Emma Henry
+7   Castle  Snow Charming
+8   EmmaCar Emma Henry
+9   Prison  Guard Snow Charming Rumpelstiltskin
+10  EmmaCar Emma Henry Archie
+11  Table   Charming Snow Jiminy Dwarf1 Fairy Dwarf4
+12  MayorHouse Emma Henry Sherriff
+13  EmmaCar Emma
+14  GeppetoWorkshop Geppetto Boy
+15  Castle  Snow Charming
+16  Wall    Dwarf5 Dwarf6
+17  Jail    Leroy Emma Man Sherriff Regina
+18  ReginaHouse Emma Regina Sheriff
+19  School  MM  (Kids x 20) Emma Regina
+20  Castle  Snow Charming Doc Geppeto (Men x 2)
+21  Trail   Queen (Men x 20)
+22  HenryCastle Emma Henry
+23  Castle  Snow Charming Queen Man
+24  ReginaHouse     Regina Emma Henry
+25  Hospital    MM 
+26  ReginaHouse Henry
+27  Grannys Granny Girl Emma MrGold
