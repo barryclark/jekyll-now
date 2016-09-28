@@ -66,9 +66,7 @@
 		{% if jquery %}<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>{% endif %}
 		{% for javascript in javascripts %}{% unless javascript == blank %}<script src="{{ javascript }}"></script>{% endunless %}{% endfor %}
 		
-		<!--[if lt IE 9]>
-		  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
+		<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 		
 		{% for css in csses %}{% unless css == blank %}<link rel="stylesheet" type="text/css" href="{{ css }}" />{% endunless %}{% endfor %}
 		<link rel="stylesheet" type="text/css" href="/style.css" />
