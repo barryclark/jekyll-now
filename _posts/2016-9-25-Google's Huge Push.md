@@ -8,7 +8,7 @@ title: Google hit 2 million self-driving miles, and they're pushing for much mor
     <script data-plotly="alexcthompson:467"  src="https://plot.ly/embed.js" async></script>
 </div>
 
-Google cars have driven 2 million miles in self-driving mode (if you believe in projections.) And Google is making a huge push to drive more autonomous miles.  In August of last year, Google's cars were drove nearly 100,000 miles (precisely, 93,023).  This August, they hit 169,935.  That's enough driving to wear out one Toyota a month, or two GM cars from the 80s ;)  Still, while that's a big jump, it is not that impressive when you realize that Google probably has to double autonomous mileage many times to prove out level 4 autonomy.
+Google cars have driven 2 million miles in self-driving mode (if you believe in projections.) And Google is making a huge push to drive more autonomous miles.  In August of last year, Google's cars drove nearly 100,000 miles (precisely, 93,023).  This August, they hit 169,935.  That's enough driving to wear out one Toyota a month, or two GM cars from the 80s ;)  Still, while that's a big jump, it is not that impressive when you realize that Google probably has to double autonomous mileage many times to prove out level 4 autonomy.
 
 <div>
     <a href="https://plot.ly/~alexcthompson/461/" target="_blank" title="Google&#39;s Self-Driving Project Mileage" style="display: block; text-align: center;"><img src="https://plot.ly/~alexcthompson/461.png" alt="Google&#39;s Self-Driving Project Mileage" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
@@ -17,16 +17,16 @@ Google cars have driven 2 million miles in self-driving mode (if you believe in 
 
 *(I compiled this data from [Google's monthly reports](https://www.google.com/selfdrivingcar/reports/){:target="_blank"} on their Self Driving Car program.  You may grab an Excel sheet, as well as the code for these charts from [this GitHub repo](https://github.com/alexcthompson/google_autonomous_stats){:target="_blank"}.)*
 
-Total miles, the dashed line, conceals the real move.  While Google's driving miles only went up 83%, their miles in autonomous skyrocketed by 119%.  To do that, Google has slowly increased the percentage of miles their cars drive in autonomous mode:
+Total miles, the dashed line, conceals the real move.  While Google's driving miles only went up 83%, their miles in autonomous mode skyrocketed by 119%.  To do that, Google has slowly increased the percentage of miles their cars drive in autonomous mode:
 
 <div>
     <a href="https://plot.ly/~alexcthompson/463/" target="_blank" title="Mileage in Autonomous Mode" style="display: block; text-align: center;"><img src="https://plot.ly/~alexcthompson/463.png" alt="Mileage in Autonomous Mode" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
     <script data-plotly="alexcthompson:463"  src="https://plot.ly/embed.js" async></script>
 </div>
 
-This is way more significant.  The race to level 4 autonomous cars is not about how many miles you can drive autonomously, it's about what percentage of situations the cars can safely and effectively drive themselves.  You could drive 1 million miles in autonomous mode, but if you also drove 9 million in manual mode, you're not doing so hot. Each percentage point moved from the manual driving column to the autonomous column likely represents a lot of hard work to deal with different driving situations.
+This is way more significant.  The race to level 4 autonomous cars is not about how many miles you can drive autonomously, it's about the percentage of situations in which the cars can safely and effectively drive themselves.  You could drive 1 million miles in autonomous mode, but if you also drove 9 million miles in manual mode, you're not doing so hot. Each percentage point moved from the manual driving column to the autonomous column likely represents a lot of hard work to deal with different driving situations.
 
-One last graph, let's look at the # of autonomous miles driven per deployed car, per day:
+One last graph: let's look at the number of autonomous miles driven per deployed car, per day:
 
 <div>
     <a href="https://plot.ly/~alexcthompson/465/" target="_blank" title="Autonomous Miles Driven Per Day, Per Car" style="display: block; text-align: center;"><img src="https://plot.ly/~alexcthompson/465.png" alt="Autonomous Miles Driven Per Day, Per Car" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
