@@ -1,7 +1,7 @@
 ---
-published: false
+published: true
 layout: post
-title:  "对话交互时代的各种Bot：可控性与智能性的权衡"
+title:  "Chatbot 6: 对话交互时代的各种Bot——可控性与智能性的权衡"
 date:   2016-09-24 11:00
 categories: 虚拟机器人 Bot Chatbot 聊天机器人 一个AI yige.ai
 ---
@@ -164,6 +164,15 @@ Wit.ai正从api.ai和一个AI这端走向Viv那端。路是不是对的，只能
 2. 不同的bot和bot平台的差别其实只是在可控性和智能性之间的权衡不同。技术的发展只是在不断拓展可控性和智能性的帕累托边界而已。我个人认为目前api.ai和一个AI的范式最适合国内小微企业。
 
 
+---
+---
+
+
+
+*欢迎大家关注微信公众号ChatbotsChina，获取bot相关的更多信息。*
+
+{:.center}
+![微信公众号：ChatbotsChina][ChatbotsChina]
 
 
 [ci]: /images/bot_control_intelligence.png 
