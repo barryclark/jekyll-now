@@ -50,7 +50,7 @@
 {% endcapture %}{% assign jbcache = nil %}
 <!DOCTYPE html>
 <html lang="en-us">
-	<head>
+	<head>{{ layout }}
 		<title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 		{% if page.noindex %}<meta name="robots" content="noindex" />{% endif %}
 		
