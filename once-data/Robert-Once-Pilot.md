@@ -71,6 +71,17 @@ Who talks to whom:
 	Ø MM -> R
 	Ø R -> MM
 	Ø EMMA <-> MM
+	Ø PC <-> SW
+	Ø PC -> BABY
+	Ø EMMA <-> HENRY
+	Ø SW -> PC
+	Ø EQ <-> SW
+	Ø GUARD -> EQ
+	Ø SW <-> EQ
+	Ø R <-> EMMA
+	Ø EMMA -> R
+	Ø EMMA -> HOUSEKEEPER
+	Ø GOLD -> EMMA
 
 Who appears in scenes with whom:
 
@@ -100,3 +111,13 @@ Who appears in scenes with whom:
 	Ø MM & STUDENTS
 	Ø MM & EMMA & R
   	Ø MM & EMMA
+	Ø SW & PC & GAURDS
+	Ø EMMA & HENRY
+	Ø PC & SW
+	Ø PC & SW & EQ
+	Ø GUARD & EQ & PC & SW
+	Ø R & HENRY & EMMA
+	Ø HENRY & R
+	Ø MM & DAVID
+	Ø EMMA & HOUSEKEEPER
+	Ø GOLD & EMMA & HOUSEKEEPR
