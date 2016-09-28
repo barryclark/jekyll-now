@@ -6,8 +6,8 @@ categories: mappe
 
 Qui di seguito la mappa dei contatti utili registrati ad oggi nei nostri sistemi.
 
-<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"/>
-<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.0/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.0.0/dist/leaflet.js"></script>
 <style>
 #map{ height: 1000px; width: 100%; }
 </style>
