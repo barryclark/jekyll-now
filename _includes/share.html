@@ -14,8 +14,7 @@
 <script type="IN/Share" data-url="{{ page_url  | strip_newlines | strip }}" data-counter="right"></script>
 </div>
 
-{% unless page.facebook_post %}
-<!-- Facebook Like & Share -->
+{% unless page.facebook_post or include.facebook_post %}<!-- Facebook Like & Share -->
 <div>
   <div class="fb-like" 
     data-href="{{ page_url | strip }}" 
