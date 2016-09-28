@@ -14,7 +14,7 @@ Authenticating our users securely to our applications at Haufe has always been a
 Azure AD provides identity as a service and supports industry-standard protocols such as OAuth 2.0, OpenID Connect, WS-Federation, or SAML 2.0. It uses public key cryptography to sign keys and to ensure their validity. Azure AD issues security tokens which include information about the authenticated user/subject and their authorizations. These tokens are then used by applications to allow access for different tasks. [Here] you can get more information about the included information in a token.
 
 One of the common questions I am often asked is if Azure AD is only suitable for internally-used applications to which our internal users need to authenticate?
-The answer is no. You can create multiple directories and use them for different applications. Of course our corporate Active Directory is one of them and is in constant synchronization with our on-premise AD database. It is also possible to design multi-tenant application (in terms of authentication) to be able to authenticate to different Azure AD directories. 
+The answer is clearly No. You can create multiple directories and use them for different applications. Of course our corporate Active Directory is one of them and is in constant synchronization with our on-premise AD database. It is also possible to design multi-tenant application (in terms of authentication) to be able to authenticate to different Azure AD directories. 
 
 To be able to use Azure AD you need to register your application in the target directory(ies). To register the application Azure requires the following information to be able to communicate with it:
 
