@@ -29,11 +29,6 @@
       <hr />
       <div>
         {% include metadata/author.html %}
-        <span itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-    <meta itemprop="url" content="https://google.com/thumbnail1.jpg">
-    <meta itemprop="width" content="800">
-    <meta itemprop="height" content="800">
-        </span>
         <span itemprop="datePublished" content="{{ post.date | date: "%Y-%m-%d" }}" class="date">
           {{ post.date | date: "%B %e, %Y" }}
         </span>
