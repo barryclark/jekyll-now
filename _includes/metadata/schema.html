@@ -2,6 +2,7 @@
 <meta itemprop="url" content="{% if page.url == "/index.html" %}{{ site.url }}{% else %}{{ site.url }}{{ page.url }}{% endif %}" />
 
 {% if layout.isPost %}
+    <meta itemscope itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" itemid="{% if page.url == "/index.html" %}{{ site.url }}{% else %}{{ site.url }}{{ page.url }}{% endif %}"/>
     {% include metadata/author.html %}
     {% include metadata/publisher.html %}
     <span itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
