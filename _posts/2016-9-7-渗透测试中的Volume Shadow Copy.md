@@ -280,3 +280,7 @@ vssadmin delete shadows /all /quiet
 https://www.carbonblack.com/2015/08/03/new-crypto-ransomware-lurks-in-the-shadows/
 http://securityweekly.com/2012/10/15/volume-shadow-copies-the-los/
 https://technet.microsoft.com/en-us/library/ee923636.aspx
+
+---
+
+[LEAVE A REPLY](https://github.com/3gstudent/feedback/issues/new)
