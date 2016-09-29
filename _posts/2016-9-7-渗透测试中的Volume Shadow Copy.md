@@ -54,6 +54,7 @@ https://www.microsoft.com/en-us/download/details.aspx?id=3138
 
 ## 0x03 恢复系统自动还原点内保存的文件
 ---
+
 ### 常用命令
 
 通过vssadmin查看卷影镜像：
@@ -150,7 +151,7 @@ vshadow.exe -p c:\
 
 ![Alt text](https://raw.githubusercontent.com/3gstudent/3gstudent.github.io/master/_posts/2016-9-7/3-1.png)
 
-![Alt text](./3-2.png)
+![Alt text](https://raw.githubusercontent.com/3gstudent/3gstudent.github.io/master/_posts/2016-9-7/3-2.png)
 
 
 ### 2. 创建符号链接
