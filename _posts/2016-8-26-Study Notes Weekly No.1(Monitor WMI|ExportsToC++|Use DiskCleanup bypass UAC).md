@@ -4,17 +4,19 @@ title: Study Notes Weekly No.1(Monitor WMI/ExportsToC++/Use DiskCleanup bypass U
 ---
 
 
-#Study Notes Weekly No.1
+# Study Notes Weekly No.1
 Monitor WMI/ExportsToC++/Use DiskCleanup bypass UAC
 ---
 
 **About:**
+
 - Monitor WMI Persistence
 - Instructions about ExportsToC++ 
 - My test of using DiskCleanup on Windows 10 using DiskCleanup
 
 
 **目录：**
+
 - 介绍如何在系统日志中记录WMI Persistence，测试并分析如何绕过
 - dll劫持中会用到的一个辅助工具，自动读取dll的导出函数并生成对应的c++代码
 - 实际测试《using DiskCleanup on Windows 10 using DiskCleanup》，记录过程，虽然测试失败，但其中包含的绕过思路值得学习
@@ -59,6 +61,7 @@ Powershell v3.0
 **1、**运行脚本开启监控
 
 如图
+
 ![Alt text](https://raw.githubusercontent.com/3gstudent/3gstudent.github.io/master/_posts/2016-8-26//2-1.png)
 
 
@@ -87,6 +90,7 @@ wmic /NAMESPACE:"\\root\subscription" PATH __FilterToConsumerBinding CREATE Filt
 ```
 
 **注：**
+
 代码具体含义在《WMI Attacks》、《WMI Backdoor》、《WMI Defense》、《Study Notes of WMI Persistence using wmic.exe》作过具体介绍，此处略
 
 **3、**查看系统日志
@@ -247,6 +251,7 @@ c:\Windows\system32\dimsjob.dll
 运行dumpbin需要VS编译环境，在Visual Studio Tools中找到Developer Command Prompt for VS2012.lnk并运行，在弹出的cmd下运行ExportsToC++.exe
 
 **2、**生成c++代码
+
 如图
 
 ![Alt text](https://raw.githubusercontent.com/3gstudent/3gstudent.github.io/master/_posts/2016-8-26/3-2.png)
@@ -256,6 +261,7 @@ c:\Windows\system32\dimsjob.dll
 c:\Windows\system32\dimsjob.dll
 
 选择Convert-To C++ Wrapper，输入原dll的绝对路径：
+
 c:\Windows\system32\dimsjob.dll
 
 自动生成可供使用的c++代码，如下：
@@ -284,6 +290,7 @@ BOOL WINAPI DllMain(HINSTANCE hInst,DWORD reason,LPVOID)
 
 
 **3、**编译
+
 使用vc6.0新建dll工程，添加以上代码并加上payload：
 
 MessageBox(NULL,"testexport","testexport",MB_OK);
@@ -330,6 +337,7 @@ Invoke-ScheduledTaskComHandlerUserTask -Command "c:\test\testexport.dll" -Verbos
 **5、**注销用户，重启测试
 
 弹框成功
+
 如图
 
 ![Alt text](https://raw.githubusercontent.com/3gstudent/3gstudent.github.io/master/_posts/2016-8-26/3-4.png)
@@ -341,6 +349,7 @@ Invoke-ScheduledTaskComHandlerUserTask -Command "c:\test\testexport.dll" -Verbos
 
 
 **注：**
+
 在https://3gstudent.github.io/3gstudent.github.io/Userland-registry-hijacking/中使用的方法弹框后taskhost.exe进程报错，未给出bug的解决方法，本文介绍的方式能够解决这个bug
 
 ## 0x03 My test of using DiskCleanup on Windows 10 using DiskCleanup
@@ -385,15 +394,18 @@ KB3173428(无法手动卸载)
 **测试过程：**
 
 **1、**正常启动计划任务SilentCleanup
+
 开启ProcessMonitor
 
 手动开启服务SilentCleanup
+
 如图
 
 ![Alt text](https://raw.githubusercontent.com/3gstudent/3gstudent.github.io/master/_posts/2016-8-26/4-1.png)
 
 
 cleanmgr.exe创建临时目录
+
 如图
 
 ![Alt text](https://raw.githubusercontent.com/3gstudent/3gstudent.github.io/master/_posts/2016-8-26/4-2.png)
@@ -413,6 +425,7 @@ high权限运行的DismHost.exe
 
 
 **2、**通过POC脚本启动计划任务并测试
+
 开启ProcessMonitor
 
 根据LogProvider.dll的导出函数编写新的dll(过程略，可参考0x02)
@@ -435,6 +448,7 @@ DismHost.exe正常启动，但没有加载新的dll
 
 
 **补充：**
+
 虽然测试失败，但是绕过思路值得学习：
 - POC通过注册WMI事件来监控特定文件目录
 - 当目录下有特定文件生成的时候对其替换
