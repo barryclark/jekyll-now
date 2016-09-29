@@ -17,7 +17,7 @@ Emma, Henry
 ##Scene 3:  
 Snow, Prince  
 Snow, Geppetto  
-Prince Charming, Geppetto  
+Prince, Geppetto   
 Geppetto, Blue Fairy  
 Snow, Emma  
 Geppetto, Emma  
@@ -45,7 +45,7 @@ Prince, Geppetto
 Geppetto, Sherriff Graham  
   
 ##Scene 4:  
-Snow, Prince
+Snow, Prince  
 Prince, Baby Emma  
 Emma, Snow  
 Prince, Guards  
