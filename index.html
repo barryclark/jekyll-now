@@ -2,6 +2,20 @@
 layout: default
 ---
 
+<!-- Jumbotron at top of page -->
+<div class="jumbotron">
+  <video id="video-background" preload muted autoplay loop>
+    <source src="https://s3.amazonaws.com/distill-videos/videos/processed/2180/lighthouse.mp4" type="video/mp4">
+    <source src="" type="video/ogg">
+  </video>
+  <div class="jumbocontainer">
+    <h2>Hi, I'm Evan Waterman.</h2>
+    <h1>Full stack developer.</h1>
+    <p>But that's not all...</p>
+  </div>
+</div>
+
+<!-- Displays all posts. Will be usefull later -->
 <div class="posts">
   {% for post in site.posts %}
     <article class="post">
@@ -15,4 +29,39 @@ layout: default
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
     </article>
   {% endfor %}
+</div>
+
+<div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="http://www.seahawks.com/sites/seahawks.com/files/styles/312x312/public/wilson_russell_0.png" alt="...">
+      <div class="caption">
+        <h3>Thumbnail label</h3>
+        <p>...</p>
+        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="https://www.whitehouse.gov/sites/whitehouse.gov/files/images/twitter_cards_potus.jpg" alt="...">
+      <div class="caption">
+        <h3>Thumbnail label</h3>
+        <p>...</p>
+        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="http://www.seahawks.com/sites/seahawks.com/files/styles/borealis_no_limit_respondmedium/public/assets/images/imported/SEA/articleImages/players/2012/lynch-marshawn/lynch-hawkmail-062712.jpg?" alt="...">
+      <div class="caption">
+        <h3>Thumbnail label</h3>
+        <p>...</p>
+        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+      </div>
+    </div>
+  </div>
 </div>

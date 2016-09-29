@@ -18,14 +18,17 @@ html {
 }
 
 body {
-	background: $white;
+  text-align: center;
+  background: $darkGray;
   font: 18px/1.4 $helvetica;
   color: $darkGray;
+  background-image: url("http://decalpitstop.com/wallpaper/1280x800/body%20by%20pizza.jpg");
+  background-color: $darkGray;
 }
 
 .container {
   margin: 0 auto;
-  max-width: 740px;
+  //max-width: 740px;
   padding: 0 10px;
   width: 100%;
 }
@@ -212,7 +215,7 @@ img {
 
 nav {
   float: right;
-  margin-top: 23px; // @TODO: Vertically middle align
+  //margin-top: 23px; // @TODO: Vertically middle align
   font-family: $helveticaNeue;
   font-size: 18px;
 
@@ -236,6 +239,56 @@ nav {
     }
   }
 }
+
+// ---------------------------
+// TODO: put into own scss file
+// ---------------------------
+
+.navbar-default {
+  background-color: $darkGray;
+  border-color: $darkGray;
+}
+
+.jumbotron{
+  position: relative;
+  overflow: hidden;
+  height: 600px;
+}
+
+.jumbocontainer {
+  position: relative;
+  //color: #ffffff;
+  z-index: 2;
+}
+
+.jumbocontainer h1 {
+  color: $darkGray;
+  font-weight: bold;
+}
+
+.jumbocontainer h2 {
+  color: $darkGray;
+  font-weight: bold;
+}
+
+.jumbocontainer p {
+  color: $darkGray;
+}
+
+#video-background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 1;
+  width:100%;
+}
+
+// ---------------------------
+// END EVAN STUFF
+// ---------------------------
 
 //
 // .main

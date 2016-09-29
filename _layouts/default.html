@@ -1,43 +1,66 @@
 <!DOCTYPE html>
 <html>
   <head>
+
+    <!-- This is the default page that all other pages will be built off of. -->
+
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
     {% include meta.html %}
 
+    <!-- This fixes IE HTML5 problems -->
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
+    <!-- Stylesheets -->
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
 
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
   </head>
 
   <body>
+
+    <!-- adds some padding to end of body -->
     <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
 
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
-          </div>
+        <!-- header at top of page -->
+        <header>
+          <nav class="navbar navbar-default navbar-fixed-top" >
+            <div class="container-fluid">
 
-          <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand">Home</a>
+              </div>
+
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                  <a href="/#" class="btn btn-primary navbar-btn" role="button">THIS IS A BUTTON</a>
+                </ul>
+              </div>
+
+            </div>
           </nav>
         </header>
-      </div>
+
     </div>
 
-    <div id="main" role="main" class="container">
+    <!-- Holder for page content. The content of each "child" page resides here -->
+    <!-- TODO: changed class from "container", find out if that matters -->
+    <div id="main" role="main" class="contentcontainer">
       {{ content }}
     </div>
 
+    <!-- Footer -->
     <div class="wrapper-footer">
       <div class="container">
         <footer class="footer">
@@ -46,6 +69,7 @@
       </div>
     </div>
 
+    <!-- Google analytics. TODO: find out what this is exactly -->
     {% include analytics.html %}
   </body>
 </html>
