@@ -4,6 +4,7 @@ title: 渗透测试中的Volume Shadow Copy
 ---
 
 ## 0x00 前言
+---
 
 之前在《导出当前域内所有用户hash的技术整理》中研究过如何通过Volume Shadow Copy实现对ntds.dit文件的复制， 可用来导出域内所有用户hash。而最近在Carbon Black的博客上面又学到了一些新的利用方法，于是整理成文。
 
