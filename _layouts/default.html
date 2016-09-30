@@ -22,40 +22,41 @@
 
   <body>
 
-    <!-- adds some padding to end of body -->
-    <div class="wrapper-masthead">
+    <!--[if lt IE 7]>
+    <div id="content" style="margin-top:100px; text-align: center;">
+      <h2>AHOY THERE!</h2>
+      <p>It looks like you have stumbled across my website on a non compatible browser. Please download an awesome browser (I suggest <a href="http://www.mozilla.org/en-US/firefox">Firefox</a> or <a href="https://www.google.com/intl/en/chrome/browser/">Chome</a>) Then revisit my site so you can view it as intended.<br> Otherwise just contact me at <a href="mailto:evanjwaterman@gmail.com">:evanjwaterman@gmail.com</a>.</p>
+    </div>
+    <![endif]-->
 
-        <!-- header at top of page -->
-        <header>
-          <nav class="navbar navbar-default navbar-fixed-top" >
-            <div class="container-fluid">
+        <!-- navbar at top of page -->
+        <!--<header>-->
+          <!--<nav class="navbar navbar-default navbar-fixed-top" >-->
+            <!--<div class="container-fluid">-->
 
               <!-- Brand and toggle get grouped for better mobile display -->
-              <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand">Home</a>
-              </div>
+              <!--<div class="navbar-header">-->
+                <!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">-->
+                  <!--<span class="sr-only">Toggle navigation</span>-->
+                  <!--<span class="icon-bar"></span>-->
+                  <!--<span class="icon-bar"></span>-->
+                  <!--<span class="icon-bar"></span>-->
+                <!--</button>-->
+                <!--<a class="navbar-brand">Home</a>-->
+              <!--</div>-->
 
               <!-- Collect the nav links, forms, and other content for toggling -->
-              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                  <a href="/#" class="btn btn-primary navbar-btn" role="button">THIS IS A BUTTON</a>
-                </ul>
-              </div>
+              <!--<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">-->
+                <!--<ul class="nav navbar-nav navbar-right">-->
+                  <!--<a href="/#" class="btn btn-primary navbar-btn" role="button">THIS IS A BUTTON</a>-->
+                <!--</ul>-->
+              <!--</div>-->
 
-            </div>
-          </nav>
-        </header>
+            <!--</div>-->
+          <!--</nav>-->
+        <!--</header>-->
 
-    </div>
-
-    <!-- Holder for page content. The content of each "child" page resides here -->
-    <!-- TODO: changed class from "container", find out if that matters -->
+    <!-- Container for page content. The content of each "child" page resides here -->
     <div id="main" role="main" class="contentcontainer">
       {{ content }}
     </div>

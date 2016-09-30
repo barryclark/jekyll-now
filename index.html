@@ -3,33 +3,42 @@ layout: default
 ---
 
 <!-- Jumbotron at top of page -->
-<div class="jumbotron">
-  <video id="video-background" preload muted autoplay loop>
-    <source src="https://s3.amazonaws.com/distill-videos/videos/processed/2180/lighthouse.mp4" type="video/mp4">
-    <source src="" type="video/ogg">
-  </video>
-  <div class="jumbocontainer">
-    <h2>Hi, I'm Evan Waterman.</h2>
-    <h1>Full stack developer.</h1>
-    <p>But that's not all...</p>
-  </div>
-</div>
+<header>
+    <div class="jumbowrapper">
+        <div class="jumbotron">
+          <video id="video-background" preload muted autoplay loop>
+            <source src="https://s3.amazonaws.com/distill-videos/videos/processed/2180/lighthouse.mp4" type="video/mp4">
+            <source src="" type="video/ogg"> <!-- TODO: add ogg and other versions of video -->
+          </video>
+          <div class="jumbocontent">
+            <h2>Hi, I'm Evan Waterman.</h2>
+            <h1>Full stack developer.</h1>
+            <br>
+            <a href="#top" class="btn btn-success">But that's not all...</a>
+          </div>
+        </div>
+    </div>
+</header>
+
+
+<!-- Wrapper for main page content -->
+<div class="mainpagecontent">
 
 <!-- Displays all posts. Will be usefull later -->
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+<!--<div class="posts">-->
+  <!--{% for post in site.posts %}-->
+    <!--<article class="post">-->
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+      <!--<h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>-->
 
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
+      <!--<div class="entry">-->
+        <!--{{ post.excerpt }}-->
+      <!--</div>-->
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+      <!--<a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>-->
+    <!--</article>-->
+  <!--{% endfor %}-->
+<!--</div>-->
 
 <div class="row">
   <div class="col-sm-6 col-md-4">
@@ -64,4 +73,5 @@ layout: default
       </div>
     </div>
   </div>
+</div>
 </div>

@@ -15,15 +15,18 @@
 
 html {
   font-size: 100%;
+  height: 100%;
 }
 
 body {
   text-align: center;
   background: $darkGray;
   font: 18px/1.4 $helvetica;
+  //font-family: 'Raleway', sans-serif;
   color: $darkGray;
   background-image: url("http://decalpitstop.com/wallpaper/1280x800/body%20by%20pizza.jpg");
   background-color: $darkGray;
+  height: 100%;
 }
 
 .container {
@@ -153,9 +156,10 @@ img {
 // .masthead
 //
 
-.wrapper-masthead {
-  margin-bottom: 50px;
-}
+//.wrapper-masthead {
+//  margin-bottom: 50px;
+//  height: 100%;
+//}
 
 .masthead {
   padding: 20px 0;
@@ -249,30 +253,48 @@ nav {
   border-color: $darkGray;
 }
 
+.jumbowrapper{
+  background: #eeeeff;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: -1;
+}
+
 .jumbotron{
   position: relative;
   overflow: hidden;
-  height: 600px;
+  height: 100%;
+  //background-image: url("/images/hackBD.JPG");
 }
 
-.jumbocontainer {
+.mainpagecontent {
+  margin-top: 50%;
+  padding: 2% 2% 9%; // TODO: footer not relative right now...
+  background-color: $darkGray;
+}
+
+.jumbocontent {
   position: relative;
-  //color: #ffffff;
+  color: $darkGray;
+  text-shadow: $darkerGray 0 1px 1px;
   z-index: 2;
 }
 
-.jumbocontainer h1 {
-  color: $darkGray;
+.jumbocontent h1 {
   font-weight: bold;
+  font-size: 4vw;
 }
 
-.jumbocontainer h2 {
-  color: $darkGray;
+.jumbocontent h2 {
   font-weight: bold;
+  font-size: 3vw;
 }
 
-.jumbocontainer p {
-  color: $darkGray;
+.contentcontainer {
+  height: 100%;
+  padding-bottom: 50px;
 }
 
 #video-background {
@@ -325,10 +347,11 @@ nav {
 }
 
 .wrapper-footer {
-  margin-top: 50px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
+  //margin-top: 50px;
+  //border-top: 1px solid #ddd;
+  //border-bottom: 1px solid #ddd;
+  position: relative;
+  background-color: $gray;
 }
 
 footer {
