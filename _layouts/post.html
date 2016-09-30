@@ -13,7 +13,7 @@ amzn_assoc_marketplace = "amazon";
 amzn_assoc_region = "US";
 amzn_assoc_title = "";
 amzn_assoc_default_search_phrase = {% if page.amazonterm %}"{{ page.amazonterm }}"{% else %}"Hobby board games"{% endif %};
-amzn_assoc_default_category = "Toys";{% if page.amazoncat%}"{{ page.amazoncat }}"{% else %}"Toys"{% endif %};
+amzn_assoc_default_category = {% if page.amazoncat%}"{{ page.amazoncat }}"{% else %}"Toys"{% endif %};
 amzn_assoc_rows = "1";
 amzn_assoc_linkid = "e8bcf19004d5d57047646f8bcbaa9a21";
 </script>
