@@ -10,3 +10,34 @@ permalink: /hacker-showcase/
 We are hoping to foster a hacking community by sharing our experiences, and hopefully inspiring
 the next generation of hackers. If you have a project you would like to showcase, contact acm hack!</center>
 
+## <center>How to submit a Project</center>{: .acm-blue }
+<center>
+	Want to add your own project to the collection? Simply fill out this <a href="https://goo.gl/forms/r957uTzE0jdafQkd2"> survey</a>, and if the acm hack board is impressed by your project, it will be added to the gallery. Allow for one to two weeks for a response, and if you still don't receive a reply, please email Akhil Nadendla: <a href="mailto:anadendla@ucla.edu?Subject=Hacker Showcase Concern" target="_top">anadendla@ucla.edu</a>
+</center>
+<br>
+
+
+<div class="showcase_container">
+    <div class="showcase_image"> 
+    	<h2 class="acm-blue">Bruin Feed</h2>
+    	<a href="{{ site.baseurl }}/showcase-bruin-feed/" style="">
+    		<img src="../images/showcase/bruin-feed-icon.png" alt="bruin feed" height="200" width="200">
+    	</a>
+    </div>
+    <div class="showcase_image"> 
+    	<h2 class="acm-blue">Jet Penguin</h2>
+    	<a href="{{ site.baseurl }}/showcase-jet-penguin/" style="">
+    		<img src="../images/showcase/jet-penguin-icon.png" alt="jet penguin" height="200" width="200">
+    	</a>
+    </div>
+</div>
+
+
+<div class="showcase_container">
+    <div class="showcase_image"> 
+    	<h2 class="acm-blue">Early Alarm Clock</h2>
+    	<a href="{{ site.baseurl }}/showcase-early-alarm-clock/" style="">
+    		<img src="../images/showcase/early-alarm-clock-icon.png" alt="early alarm clock" height="200" width="200">
+    	</a>
+    </div>
+</div>
