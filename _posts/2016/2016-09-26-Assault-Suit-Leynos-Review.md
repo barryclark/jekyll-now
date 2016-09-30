@@ -5,6 +5,7 @@ description: "I've always loved Target Earth for the Genesis. Now the game gets 
 category: review
 featured: leynos.jpg
 tags: [video games, review, assault suit leynos, rising star games]
+amazonterm: "assault suit leynos"
 author: Rob Kalajian
 ---
 

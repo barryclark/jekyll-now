@@ -5,6 +5,7 @@ description: "Super Terraria World is an RPG mod for the wildly popular building
 category: video games
 featured: superterraria.png
 tags: [video games, terraria, super terraria world]
+amazonterm: terraria
 author: Rob Kalajian
 ---
 
