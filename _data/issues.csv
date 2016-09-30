@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/727,180250289,2016-09-30 08:40:11,2016-09-30 08:39:29,Ricostruzione e adeguamento sismico edifici: un corso gratuito per ingegneri e architetti dei comuni colpiti dal sisma,,,"[""Accettato"", ""Bollettino"", ""Da rilanciare"", ""Facebook"", ""Notizie Utili""]",,,"{""data"": ""30/09/2016"", ""descrizione"": ""In fase di APPRONTAMENTO UN SEMINARIO DEDICATO ALL'ADEGUAMENTO SISMICO DEGLI EDIFICI - IL TEMA SARA' DIAGNOSI, ANALISI E PROGETTAZIONE DEGLI INTERVENTI PER GLI EDIFICI IN MURATURA DELLE ZONE COLPITE DAL SISMA A CURA DEL PROF BORRI della FACOLTA' DI INGEGNERIA DI PERUGIA - cattedra di SCIENZA DELLE COSTRUZIONI - E' rivolto esclusivamente agli Ingegneri e agli Architetti residenti nei comuni colpiti dal sisma in forma strettamente GRATUITA. il Sindaco di Amatrice Sergio Pirozzi ha approvato l'iniziativa. Contatti: mail paolozorutti@gmail.com."", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1776383929295857/"", ""titolo"": ""Ricostruzione e adeguamento sismico edifici: un corso gratuito per ingegneri e architetti dei comuni colpiti dal sisma""}","<pre><yamldata>titolo: 'Ricostruzione e adeguamento sismico edifici: un corso gratuito per ingegneri e architetti dei comuni colpiti dal sisma'
+descrizione: 'In fase di APPRONTAMENTO UN SEMINARIO DEDICATO ALL''ADEGUAMENTO SISMICO DEGLI EDIFICI - IL TEMA SARA'' DIAGNOSI, ANALISI E PROGETTAZIONE DEGLI INTERVENTI PER GLI EDIFICI IN MURATURA DELLE ZONE COLPITE DAL SISMA A CURA DEL PROF BORRI della FACOLTA'' DI INGEGNERIA DI PERUGIA - cattedra di SCIENZA DELLE COSTRUZIONI - E'' rivolto esclusivamente agli Ingegneri e agli Architetti residenti nei comuni colpiti dal sisma in forma strettamente GRATUITA. il Sindaco di Amatrice Sergio Pirozzi ha approvato l''iniziativa. Contatti: mail paolozorutti@gmail.com.'
+link: 'https://www.facebook.com/groups/1758670357733881/permalink/1776383929295857/'
+data: 30/09/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/723,180245358,2016-09-30 08:25:19,2016-09-30 08:11:43,#Arquata aggiornamenti dal Comune sulla situazione abitativa sfollati,,,"[""Accettato"", ""Bollettino"", ""Facebook"", ""Notizie Utili""]",,,"{""data"": ""30/09/2016"", ""descrizione"": ""Annunciato ieri durante il Consiglio Comunale di Arquata: il campo di Borgo verr\u00e0 smantellato entro la prossima settimana e gli ultimi ospiti alloggiati in due strutture nel comune di Arquata, oltre i cas e gli alberghi gi\u00e0 previsti."", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1776267972640786/"", ""titolo"": ""#Arquata aggiornamenti situazione abitativa""}","<pre><yamldata>titolo: '#Arquata aggiornamenti situazione abitativa'
 descrizione: 'Annunciato ieri durante il Consiglio Comunale di Arquata: il campo di Borgo verrà smantellato entro la prossima settimana e gli ultimi ospiti alloggiati in due strutture nel comune di Arquata, oltre i cas e gli alberghi già previsti.'
 link: 'https://www.facebook.com/groups/1758670357733881/permalink/1776267972640786/'
@@ -2202,16 +2207,6 @@ https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/396,1771509
 tel: '3384996173'
 email: ''
 descrizione: 'Numero del Comune di Amatrice al quale possono chiamare i proprietari di seconde case che intendano metterle a disposizione di chi è rimasto senza. Dal lunedì al venerdì dalle 9 alle 12 e dalle 15 alle 17.'
-indirizzo: ''
-lat: ''
-lon: ''
-link: ''
-data: 15/09/2016
-</yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/395,177150710,2016-09-15 11:20:23,2016-09-15 11:19:49,Brigate di Solidarietà Attiva,,,"[""Accettato"", ""Contatti"", ""Form""]",,,"{""data"": ""15/09/2016"", ""descrizione"": """", ""email"": ""volontaribsa@gmail.com"", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""nome"": ""Brigate di Solidariet\u00e0 Attiva"", ""tel"": ""3299837400, 3394037385, 3397616665""}","<pre><yamldata>nome: 'Brigate di Solidarietà Attiva'
-tel: '3299837400, 3394037385, 3397616665'
-email: volontaribsa@gmail.com
-descrizione: ''
 indirizzo: ''
 lat: ''
 lon: ''
