@@ -4,6 +4,7 @@ title: "Pokémon Bank Updates and new Sun and Moon Pokémon."
 description: "The Pokémon bank is getting some updates to support Sun and Moon, but also to transfer from Red, Blue and Yellow."
 category: video games
 featured: pokebank.png
+amazonterm: "pokemon sun and moon"
 tags: [video games, pokemon, pokemon sun, pokemon moon, the pokemon company, gamefreak, nintendo, pokemon bank]
 author: Rob Kalajian
 ---

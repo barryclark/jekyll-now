@@ -4,6 +4,7 @@ title: "Force Grey: Giant Hunters"
 description: "A new weekly Dungeon & Dragons series, Force Grey: Giant Hunters, airs on the Nerdist YouTube channel"
 category: games
 featured: forcegrey.jpg
+amazonterm: "Storm King's Thunder"
 tags: [games, D&D, nerdist, rpgs, matthew mercer, video, forgotten realms, storm king's thunder]
 author: Rob Kalajian
 ---

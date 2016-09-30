@@ -4,6 +4,7 @@ title: "Review - Fantahzee: Hordes and Heroes"
 description: "Ever want to kill stuff with Yahtzee rolls? Fantahzee lets you do just that."
 category: review
 featured: fantahzee.png
+amazonterm: "AEG games"
 tags: [games, review, fantahzee, aeg]
 author: Rob Kalajian
 ---

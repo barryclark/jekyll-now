@@ -4,6 +4,7 @@ title: Assault Suit Leynos
 description: Assault Suit Leynos is a side-scrolling-bullet-hell-mech game that's reminiscent of Target Earth.
 category: video games
 featured: leynos.jpg
+amazonterm: "assault suit leynos"
 tags: [video games, assault suit leynos, rising star games]
 author: Rob Kalajian
 ---

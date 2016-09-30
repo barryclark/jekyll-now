@@ -4,6 +4,7 @@ title: Eight New Safari Toys Include an Amazing Behemoth
 description: Safari puts out some great toys, but their new Behemoth is an impressive sight.
 category: toys
 featured: behemoth.jpg
+amazonterm: "Safari Toys ltd"
 tags: [toys, safari toys, behemoth, mythical realms]
 author: Rob Kalajian
 ---

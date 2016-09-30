@@ -4,6 +4,7 @@ title: "Review - Baba Yaga"
 description: "Baba Yaga is a clever card game that's easy to learn, and great for kids."
 category: review
 featured: babayaga.jpg
+amazonterm: "baba yaga"
 tags: [games, review, baba yaga, gamewright]
 author: Rob Kalajian
 ---

@@ -4,6 +4,7 @@ title: "Pokémon Sun and Moon Early Purchase Bonus"
 description: "Purchase Pokémon Sun or Moon before January 11th, 2017 for a special Munchlax."
 category: video games
 featured: pulsnor.png
+amazonterm: "pokemon sun and moon"
 tags: [video games, pokemon, pokemon sun, pokemon moon, the pokemon company, gamefreak, nintendo]
 author: Rob Kalajian
 ---

@@ -4,6 +4,7 @@ title: Goldieblox Releases Invention Mansion
 description: Goldieblox releases its take on the dollhouse, the Invention Mansion.
 category: toys
 featured: inventionmansion.jpg
+amazonterm: Goldieblox
 tags: [toys, goldieblox, invention mansion, stem]
 author: Rob Kalajian
 ---

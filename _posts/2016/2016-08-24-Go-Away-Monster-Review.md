@@ -4,6 +4,7 @@ title: "Review - Go Away Monster"
 description: "Gamewright has a new edition of their classic kid's game. The new Go Away Monster is a charming treat."
 category: review
 featured: goaway.jpg
+amazonterm: "Go away monster"
 tags: [games, review, go away monster, gamewright]
 author: Rob Kalajian
 ---
