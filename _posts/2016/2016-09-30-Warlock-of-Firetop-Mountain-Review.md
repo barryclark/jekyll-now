@@ -5,7 +5,7 @@ description: "Steve Jackson's popular 80's adventure book is brought to life in 
 category: review
 featured: firetop.png
 tags: [video games, review, warlock of firetop mountain, fighting fantasy, steve jackson, tin man games]
-amazonterm: "warlock of firetop mountain"
+amazonterm: "the warlock of firetop mountain"
 author: Rob Kalajian
 ---
 
