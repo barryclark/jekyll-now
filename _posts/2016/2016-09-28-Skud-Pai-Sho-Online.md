@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Skud Pai Sho Online"
-description: "I've always loved Target Earth for the Genesis. Now the game gets a remake with its original Japanese title, Assualt Suit Leynos."
+description: "Skud is a Pai Sho variation using the Wiki Pai Sho tile set. Now you can play by email online!"
 category: games
 featured: paishoboard.png
 tags: [games, pai sho, skud pai sho]

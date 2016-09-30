@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Super Terraria World"
-description: "I've always loved Target Earth for the Genesis. Now the game gets a remake with its original Japanese title, Assualt Suit Leynos."
+description: "Super Terraria World is an RPG mod for the wildly popular building and exploration game."
 category: video games
 featured: superterraria.png
 tags: [video games, terraria, super terraria world]
