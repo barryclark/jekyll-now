@@ -6,7 +6,6 @@ category: review
 featured: leynos.jpg
 tags: [video games, review, assault suit leynos, rising star games]
 amazonterm: "assault suit leynos"
-amazoncat: books
 author: Rob Kalajian
 ---
 
