@@ -4,6 +4,7 @@ title: "Review - Emergents: Genesis"
 description: "A deck builder with an excellent comic book theme. Emergents: Genesis is worth your time."
 category: review
 featured: emergents.jpg
+amazonterm: "emergents genesis"
 tags: [games, review, emergents genesis, urban island games]
 author: Rob Kalajian
 ---

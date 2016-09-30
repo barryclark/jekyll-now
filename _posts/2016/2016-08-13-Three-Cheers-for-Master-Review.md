@@ -4,6 +4,7 @@ title: "Review - Three Cheers for Master"
 description: "Three Cheers for Master is a twisted game of little monster trying to please their master."
 category: review
 featured: threecheers.jpg
+amazonterm: "Three cheers for master"
 tags: [games, review, three cheers for master, atlas games]
 author: Rob Kalajian
 ---

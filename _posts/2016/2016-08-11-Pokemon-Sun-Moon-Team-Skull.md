@@ -4,6 +4,7 @@ title: Pokemon Sun and Moon Team Skull and More
 description: The Pokémon Company has released more Pokémon Sun and Moon information, including information on the Team Skull and Pokémon.
 category: video games
 featured: alola.png
+amazonterm: "pokemon sun and moon"
 tags: [video games, pokemon, pokemon sun, pokemon moon, the pokemon company, gamefreak, nintendo]
 author: Rob Kalajian
 ---

@@ -4,6 +4,7 @@ title: "Hasbro's Beyblade Burst App Briefly Hits iTunes Store"
 description: "Hasbro's Beyblade Burst app made a brief appearance on the iTunes store, and was quickly taken down."
 category: toys
 featured: beybladeburstapp.png
+amazonterm: "Beyblade burst"
 tags: [toys, beyblade, hasbro, beyblade burst, video games]
 author: Rob Kalajian
 ---
