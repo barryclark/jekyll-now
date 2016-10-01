@@ -18,13 +18,32 @@
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
 
+    <!-- Smooth scroll to page anchors -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+    <script>
+      $(function() {
+        $('a[href*="#"]:not([href="#"])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html, body').animate({
+                scrollTop: target.offset().top
+              }, 1000);
+              return false;
+            }
+          }
+        });
+      });
+    </script>
   </head>
 
   <body>
 
     <!--[if lt IE 7]>
     <div id="content" style="margin-top:100px; text-align: center;">
-      <h2>AHOY THERE!</h2>
+      <h2>HI THERE!</h2>
       <p>It looks like you have stumbled across my website on a non compatible browser. Please download an awesome browser (I suggest <a href="http://www.mozilla.org/en-US/firefox">Firefox</a> or <a href="https://www.google.com/intl/en/chrome/browser/">Chome</a>) Then revisit my site so you can view it as intended.<br> Otherwise just contact me at <a href="mailto:evanjwaterman@gmail.com">:evanjwaterman@gmail.com</a>.</p>
     </div>
     <![endif]-->

@@ -15,7 +15,7 @@
 
 html {
   font-size: 100%;
-  height: 100%;
+  //height: 100%;
 }
 
 body {
@@ -26,7 +26,7 @@ body {
   color: $darkGray;
   background-image: url("http://decalpitstop.com/wallpaper/1280x800/body%20by%20pizza.jpg");
   background-color: $darkGray;
-  height: 100%;
+  //height: 100%;
 }
 
 .container {
@@ -271,8 +271,12 @@ nav {
 
 .mainpagecontent {
   margin-top: 50%;
-  padding: 2% 2% 9%; // TODO: footer not relative right now...
+  padding: 2% 2% 2%;
   background-color: $darkGray;
+}
+
+.tempconstruction {
+  color: $lightGray;
 }
 
 .jumbocontent {
@@ -293,8 +297,8 @@ nav {
 }
 
 .contentcontainer {
-  height: 100%;
-  padding-bottom: 50px;
+  //height: 100%;
+  //padding-bottom: 50px;
 }
 
 #video-background {
