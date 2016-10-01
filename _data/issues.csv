@@ -3666,6 +3666,17 @@ link: 'http://www.rassegna.it/articoli/terremoto-attivato-fondo-cgil-cisl-uil-e-
 email: ''
 data: 14/09/2016
 </yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/248,176851242,2016-10-01 16:20:49,2016-09-14 08:54:38,Protezione civile Friuli Venezia Giulia,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Sisma centro Italia - il Friuli Venezia Giulia non dimentica"", ""chi"": ""Protezione civile Friuli Venezia Giulia"", ""data"": ""14/09/2016"", ""descrizione"": ""La Protezione civile regionale mette a disposizione il proprio conto corrente sul quale far confluire i gesti di liberalit\u00e0 da destinare alle popolazioni del centro Italia colpiti dal sisma del 24 agosto. Conto corrente della Protezione civile: attivo presso Unicredit Banca SpA"", ""email"": """", ""iban"": ""IT47W0200802230000003120964"", ""intestazione"": ""Tesoreria del Fondo regionale per la protezione civile"", ""link"": """", ""postale"": """"}","<pre><yamldata>chi: 'Protezione civile Friuli Venezia Giulia'
+descrizione: 'La Protezione civile regionale mette a disposizione il proprio conto corrente sul quale far confluire i gesti di liberalità da destinare alle popolazioni del centro Italia colpiti dal sisma del 24 agosto. Conto corrente della Protezione civile: attivo presso Unicredit Banca SpA'
+intestazione: 'Tesoreria del Fondo regionale per la protezione civile'
+iban: 'IT47W0200802230000003120964'
+bic: ''
+postale: ''
+causale: 'Sisma centro Italia - il Friuli Venezia Giulia non dimentica'
+link: ''
+email: ''
+data: 14/09/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/247,176850766,2016-10-01 12:56:00,2016-09-14 08:52:31,AMAtriciana solidale - mappa dei ristoranti aderenti,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""AMAtriciana solidale - mappa"", ""data"": ""14/09/2016"", ""descrizione"": ""La mappa di tutti i ristoranti che aderiscono all'iniziativa \""AMAtriciana\"", per aiutare le popolazioni colpite dal terremoto, devolvendo 2 euro per ogni piatto di pasta"", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""http://bit.ly/2bM1Nqs"", ""postale"": """"}","<pre><yamldata>chi: 'AMAtriciana solidale - mappa'
 descrizione: 'La mappa di tutti i ristoranti che aderiscono all''iniziativa ""AMAtriciana"", per aiutare le popolazioni colpite dal terremoto, devolvendo 2 euro per ogni piatto di pasta'
 intestazione: ''
