@@ -4199,17 +4199,6 @@ link: 'http://www.provincia.modena.it/page.asp?IDCategoria=6&IDSezione=343&ID=12
 email: ''
 data: 13/09/2016
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/195,176771688,2016-09-13 23:28:23,2016-09-13 22:56:21,Caritas di Parma,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Terremoto Centro Italia"", ""chi"": ""Caritas di Parma"", ""data"": ""13/09/2016"", ""descrizione"": ""Le offerte potranno essere portate direttamente negli uffici della sede della Caritas diocesana (Pazza Duomo 3)"", ""email"": """", ""iban"": ""IT88G 06230 12700 000037249796"", ""intestazione"": """", ""link"": """", ""postale"": """"}","<pre><yamldata>chi: 'Caritas di Parma'
-descrizione: 'Le offerte potranno essere portate direttamente negli uffici della sede della Caritas diocesana (Pazza Duomo 3)'
-intestazione: ''
-iban: 'IT88G 06230 12700 000037249796'
-bic: ''
-postale: ''
-causale: 'Terremoto Centro Italia'
-link: ''
-email: ''
-data: 13/09/2016
-</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/194,176764828,2016-09-13 22:17:31,2016-09-13 22:17:00,Caritas di Parma,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Terremoto Centro Italia"", ""chi"": ""Caritas di Parma"", ""data"": ""13/09/2016"", ""descrizione"": ""Le offerte potranno essere portate direttamente negli uffici della sede della Caritas diocesana (Pazza Duomo 3) (fonte: Gazzetta di Parma, 25/08/2016, pag. 7)"", ""email"": """", ""iban"": ""IT88G 06230 12700 000037249796"", ""intestazione"": """", ""link"": """", ""postale"": """"}","<pre><yamldata>chi: 'Caritas di Parma'
 descrizione: 'Le offerte potranno essere portate direttamente negli uffici della sede della Caritas diocesana (Pazza Duomo 3) (fonte: Gazzetta di Parma, 25/08/2016, pag. 7)'
 intestazione: ''
