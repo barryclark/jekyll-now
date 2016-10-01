@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/732,180457381,2016-10-01 17:00:37,2016-10-01 13:46:47,Osservatorio Lazio: gli atti amministrativi e le spese post sima della Regione Lazio,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""01/10/2016"", ""descrizione"": ""Un Osservatorio Sisma per sapere tutto quello che sta facendo la Regione Lazio, con una sezione per la trasparenza amministrativa dedicata agli atti amministrativi post terremoto, i documenti sono presenti anche nell'archivio di Terremotocentroitalia, tag Regione Lazio, https://archive.org/details/@terremotocentroita"", ""link"": ""http://www.regione.lazio.it/osservatoriosisma/dopo-il-sisma-tutti-gli-atti-amministrativi/"", ""titolo"": ""Dopo il sisma tutti gli atti amministrativi  con relative spese della Regione Lazio""}","<pre><yamldata>titolo: 'Dopo il sisma tutti gli atti amministrativi  con relative spese della Regione Lazio'
+descrizione: 'Un Osservatorio Sisma per sapere tutto quello che sta facendo la Regione Lazio, con una sezione per la trasparenza amministrativa dedicata agli atti amministrativi post terremoto, i documenti sono presenti anche nell''archivio di Terremotocentroitalia, tag Regione Lazio, https://archive.org/details/@terremotocentroita'
+link: 'http://www.regione.lazio.it/osservatoriosisma/dopo-il-sisma-tutti-gli-atti-amministrativi/'
+data: 01/10/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/731,180448465,2016-10-01 14:00:08,2016-10-01 09:49:49,ACQUISTO SOLIDALE pecorino Monti della Laga,,,"[""Accettato"", ""acquisto solidale"", ""Bollettino"", ""Facebook""]",,,"{""cosa"": ""ACQUISTO SOLIDALE pecorino Monti della Laga"", ""data"": ""01/10/2016"", ""descrizione"": ""SOS PECORINO DI AMATRICE - Consorzio Monti della Laga: ACQUISTO SOLIDALE"", ""email"": ""info@pecorinoamatriciano.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1776217779312472/"", ""lon"": """", ""tel"": ""3402334530""}","<pre><yamldata>tel: '3402334530'
 email: info@pecorinoamatriciano.it
 cosa: 'ACQUISTO SOLIDALE pecorino Monti della Laga'
@@ -3630,17 +3635,6 @@ bic: ''
 postale: ''
 causale: 'Donazione pro terremotati centro Italia'
 link: 'http://www.comune.pordenone.it/it/comunichiamo/comune-informa/notizie/conto-pro-terremotati-e-serate-di-beneficienza'
-email: ''
-data: 14/09/2016
-</yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/251,176851691,2016-09-14 09:00:38,2016-09-14 08:56:47,PayPal,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""PayPal"", ""data"": ""14/09/2016"", ""descrizione"": ""Fai una donazione con PayPal alla Croce Rossa Italiana."", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""https://www.paypal.it/acquisti/Croce_Rossa/"", ""postale"": """"}","<pre><yamldata>chi: PayPal
-descrizione: 'Fai una donazione con PayPal alla Croce Rossa Italiana.'
-intestazione: ''
-iban: ''
-bic: ''
-postale: ''
-causale: ''
-link: 'https://www.paypal.it/acquisti/Croce_Rossa/'
 email: ''
 data: 14/09/2016
 </yamldata></pre>",open
