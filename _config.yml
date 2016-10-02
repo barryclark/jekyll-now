@@ -6,7 +6,7 @@
 name: The Digital Technologist
 
 # Short bio or description (displayed in the header)
-description: A Digital Native of the Low Carbon Global Knowledge Economy.
+description: A Digital Native of the Low Carbon Global Knowledge Economy
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://avatars2.githubusercontent.com/u/20477036
@@ -18,7 +18,7 @@ avatar: https://avatars2.githubusercontent.com/u/20477036
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email:
+  email: thedigital@technologist.com
   facebook:
   flickr:
   github: barryclark/jekyll-now
