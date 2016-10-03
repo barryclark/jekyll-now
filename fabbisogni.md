@@ -12,7 +12,6 @@ permalink: /fabbisogni/
 		<h4 class="list-group-item-heading">{{member.title}}</h4>
 		<p class="list-group-item-text">{{member.issue.data.descrizione}}</p>
 	</a>
-	</div>
 <div class="panel-footer">
 <ul class="share-buttons">
   <li>Condividi:</li>
@@ -25,4 +24,5 @@ permalink: /fabbisogni/
 </div>
 {% endif %}
 {% endfor %}
+</div>
 </div>
