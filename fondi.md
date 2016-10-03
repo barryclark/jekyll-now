@@ -13,14 +13,14 @@ permalink: /fondi/
 		<h4 class="list-group-item-heading">{{member.title}}</h4>
 		<p class="list-group-item-text">{{member.issue.data.descrizione}}</p>
 </a>
-{% endif %}
-{% endfor %}
+
 </div>
 <div class="panel-footer">
 <ul class="share-buttons">
   <li>Condividi:</li>
   <li><a href="http://terremotocentroitalia.it/issues/{{ member.number | datapage_url: '.' }}" title="Copia link"><img alt="Copia link" src="/img/icone/link.png"></a></li>
-
+{% endif %}
+{% endfor %}
 </ul>
 </div>
 </div>
