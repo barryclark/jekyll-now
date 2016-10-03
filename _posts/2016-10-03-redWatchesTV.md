@@ -19,3 +19,5 @@ Trying to record everytime someone says something to another person, and then th
 Now after looking at my notes that I took, I don't see much use to it.  Of course, you see that some characters have a bigger role in the show than others because they speak more, but theres nothing else that I was able to understand form the data.  When you are taking the data, there are also problems you face. Does every single person that utters a word get put in the data?  Do crowds count?  What if it's an extra that yells words out of camera sight?
 
 If we look at who's in a scene with who, it's a lot easier to jot down but still doesn't give much depth as to what significance it has.
+
+And that's what Red thinks.
