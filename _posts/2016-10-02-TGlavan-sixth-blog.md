@@ -7,7 +7,7 @@ publish: true
 
 Welcome all,
 
-  Yes, its that time of year again and no I don't mean "pumpkin spice everything" and "candy corn suddenly being desireable" season.  No, I mean midterms and because of that I will try to keep this short and review what we have covered so far, been doing for class and readings, and look towards the ever looming final project.
+  Yes, its that time of year again and no I don't mean "pumpkin spice everything" and "candy corn suddenly being desireable" season.  No, I mean midterms and because of that I will try to keep this short and review what we have covered so far, been doing for class and the readings, and look towards the ever looming final project.
 
 The journey so far:
 
@@ -17,11 +17,11 @@ The journey so far:
 
 * In class this past week we covered networking and how chacters interact with eachother noting both the direction of and depth of the connection between characters. We then applied these methods to the Once Upon a Time pilot noting the direction of the dialogue between characters and their positions in scenes (methods-f16/once-data/).
 
-In addition to this I would like to touch on the readings for last week covering similar dialogue analysis methods being applied to  several disney "Princess" movies. The results of that research then shows us the trend of males dominating most of the dialogue up untill only the most recent Disney princess movies.  The predominate male voice in these movies then has a great impact on the highly influenced young minds of children and instills the cultural ideals of dominant males playing hero for their weaker female love interests.
+In addition to this I would like to touch on the readings for last week covering similar dialogue analysis methods being applied to  several Disney "Princess" movies. The results of that research then shows us the trend of males dominating most of the dialogue up untill only the most recent Disney "Princess" movies.  The dominate male voice in these movies then has a great impact on the highly influenced young minds of children that these movies target. They instill the cultural ideals of dominant males playing hero for their weaker female love interests and spawn the polarity between genders.
   
-Looking forward this weeks pre-class assignment we are continuing the visual theme looking into making our own videos, which I can only guess that we will use for some sort of visual representation or use the knowledege of video procution to further our analysis of visual media and eventually lead into the final project for the cousrse.
+Looking forward this weeks pre-class assignment we are continuing the visual theme looking into making our own videos, which I can only guess that we will use for some sort of visual representation or use the knowledege of video production to further our analysis of visual media which will eventually lead into the final project for the cousrse.
   
-This about wraps up this weeks blog and I hope this clarifies what the class has gone through if you have not been reading my other blogs and what we can expect moving forward.
+Well, that about wraps up this weeks blog and I hope this clarifies what the class has gone through if you have not been reading my other blogs and what we can expect moving forward.
 
 
   
