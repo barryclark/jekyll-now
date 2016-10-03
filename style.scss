@@ -23,9 +23,6 @@ body {
   background: $darkGray;
   font: 18px/1.4 $helvetica;
   //font-family: 'Raleway', sans-serif;
-  color: $darkGray;
-  background-image: url("http://decalpitstop.com/wallpaper/1280x800/body%20by%20pizza.jpg");
-  background-color: $darkGray;
   //height: 100%;
 }
 
@@ -38,11 +35,11 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
-  color: $darkerGray;
+  color: $darkGray;
   font-weight: bold;
 
   line-height: 1.7;
-  margin: 1em 0 15px;
+  margin: 20px 0 10px;
   padding: 0;
 
   @include mobile {
@@ -51,22 +48,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 5vw;
   a {
     color: inherit;
   }
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 3vw;
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 2vw;
 }
 
 h4 {
-  font-size: 18px;
+  font-size: 1vw;
   color: $gray;
 }
 
@@ -254,7 +251,6 @@ nav {
 }
 
 .jumbowrapper{
-  background: #eeeeff;
   position: fixed;
   width: 100%;
   height: 100%;
@@ -262,12 +258,19 @@ nav {
   z-index: -1;
 }
 
-.jumbotron{
+.jumbotron {
   position: relative;
   overflow: hidden;
   height: 100%;
   //background-image: url("/images/hackBD.JPG");
+  //opacity: 0.5;
+  //background-color: rgb(0, 179, 255); // Tint color
+  //background-blend-mode: multiply;
 }
+
+//.jumbotron h1, h2 {
+//  color: $darkGray;
+//}
 
 .mainpagecontent {
   margin-top: 50%;
@@ -275,25 +278,10 @@ nav {
   background-color: $darkGray;
 }
 
-.tempconstruction {
-  color: $lightGray;
-}
-
 .jumbocontent {
   position: relative;
-  color: $darkGray;
   text-shadow: $darkerGray 0 1px 1px;
   z-index: 2;
-}
-
-.jumbocontent h1 {
-  font-weight: bold;
-  font-size: 4vw;
-}
-
-.jumbocontent h2 {
-  font-weight: bold;
-  font-size: 3vw;
 }
 
 .contentcontainer {
@@ -310,6 +298,45 @@ nav {
   overflow: hidden;
   z-index: 1;
   width:100%;
+}
+
+//.allprogress {
+//  width: 50%;
+//
+//  @include mobile {
+//    line-height: 0.6;
+//    width: 60%;
+//  }
+//}
+
+// TODO: Why does h2, h3 (but not h1) overwrite jumbotron???! Something to do with bootstrap???!?!???
+.allprogress h1, h3, h4 {
+  color: $white;
+  line-height: 0.6;
+  text-align: center;
+
+  @include mobile {
+    line-height: 0.5;
+  }
+}
+
+.singleprogress h3 {
+  text-align: left;
+}
+
+.progress {
+  background-color: $darkGray;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+}
+
+.progress-bar {
+  padding-left: 20px;
+  text-align: left;
+}
+
+.tempconstruction h1, h4{
+  color: $white;
 }
 
 // ---------------------------
