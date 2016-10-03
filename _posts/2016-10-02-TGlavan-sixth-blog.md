@@ -13,6 +13,8 @@ The journey so far:
 
 * We defined digital humanities as the use of digitl technologies to view and analyze traditional humanities or the creation of humanities through digital mediums.
 
-* In class this past week we covered networking and utilized
+* Following this we looked further into textual analysis exploring methods such as tf-idf and visual representations of text to derive information without reading the full text or gain a deeper understanding of the construction of a text
+
+* In class this past week we covered networking and applied these methods to 
 
 
