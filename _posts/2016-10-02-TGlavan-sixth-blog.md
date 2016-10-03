@@ -17,9 +17,13 @@ The journey so far:
 
 * In class this past week we covered networking and how chacters interact with eachother noting both the direction of and depth of the connection between characters. We then applied these methods to the Once Upon a Time pilot noting the direction of the dialogue between characters and their positions in scenes (methods-f16/once-data/).
 
-  In addition to this I would like to touch on the readings for last week covering similar dialogue analysis methods of several disney "Princess" movies showing the trend of males dominating most of the dialogue up untill only the most recent ones.  The predominate male voice in these movies for highly influenced you minds instills the cultural ideals of dominant males playing hero for their weaker female love interests.
+In addition to this I would like to touch on the readings for last week covering similar dialogue analysis methods being applied to  several disney "Princess" movies. The results of that research then shows us the trend of males dominating most of the dialogue up untill only the most recent Disney princess movies.  The predominate male voice in these movies then has a great impact on the highly influenced young minds of children and instills the cultural ideals of dominant males playing hero for their weaker female love interests.
   
-  Looking forward this weeks pre-class assignment we are continuing the visual theme looking into making our own videos, which I can only guess that we will use for some sort of visual representation or use the knowledege of video procution to further our analysis of visual media and eventually lead into the final project for the cousrse.
+Looking forward this weeks pre-class assignment we are continuing the visual theme looking into making our own videos, which I can only guess that we will use for some sort of visual representation or use the knowledege of video procution to further our analysis of visual media and eventually lead into the final project for the cousrse.
+  
+This about wraps up this weeks blog and I hope this clarifies what the class has gone through if you have not been reading my other blogs and what we can expect moving forward.
+
+
   
   
 
