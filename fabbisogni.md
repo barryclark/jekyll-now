@@ -22,7 +22,7 @@ permalink: /fabbisogni/
  <li><a data-proofer-ignore href="mailto:?subject={{member.title|truncate:70|uri_escape}} | {{site.title}}&body={{member.title|truncate:70|uri_escape}}%20Clicca qui:%20http://terremotocentroitalia.info/issues/{{ member.number | datapage_url: '.' }}" title="Invia email"><img alt="Invia email" src="/img/icone/Email.png"></a></li>
 </ul>
 </div>
+</div>
 {% endif %}
 {% endfor %}
-</div>
 </div>
