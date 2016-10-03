@@ -6,6 +6,8 @@ permalink: /hack-nights/
 
 ## <center>About Hack Nights</center>{: .acm-blue }
 
+![_config.yml]({{ site.baseurl }}/images/hack-nights-logo.png){: .center-image }
+
 <center>Every week our goal is to teach technologies that are being used right now in industry. We will be bringing in students who have worked at the biggest names in Silicon Valley. You will learn actual languages, frameworks, and tools that they used during their time at these companies. You will then be able to use the skills they teach you to hack together your own projects. There will mentors to provide assistance and answer any and all questions you may have. Use our weekly Hack Nights to turn your project ideas into reality, meet like minded students, and get career advice from upperclassmen who have already tackled their coding interviews.
 </center>
 <br>
