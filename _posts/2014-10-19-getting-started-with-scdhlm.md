@@ -6,44 +6,35 @@ tags: [single-case-research]
 permalink: getting-started-with-scdhlm
 ---
 
-Here are step-by-step instructions on how to download and install the scdhlm package for R. You'll need to have a [copy of R installed](http://cran.us.r-project.org/). There are two ways to do the installation: from the pre-compiled Windows binary available on [my website]({{site.url}}/software) or from the source code on Github. I describe each approach in turn.
+**UPDATED 10/2/2016 after posting the package to CRAN**
 
-### Option 1A: From my website, for Windows
+Here are step-by-step instructions on how to download and install the scdhlm package for R. You'll need to have a [copy of R installed](http://cran.us.r-project.org/). There are two ways to do the installation: through the Comprehensive R Archive Network (CRAN) or from the source code on Github. I describe each approach in turn.
 
-Type the following sequence of commands at the R prompt:
+### Option 1: Via CRAN
 
-
-{% highlight r %}
-download.file("http://jepusto.github.io/files/software/scdhlm_0.2.1.zip", 
-  destfile="./scdhlm_0.2.1.zip")
-install.packages("scdhlm_0.2.1.zip", repo = NULL)
-library(scdhlm)
-{% endhighlight %}
-
-### Option 1B: From my website, for Mac
-
-Type the following sequence of commands at the R prompt:
+Go via CRAN to install the most recent stable version of the package. Type the following commands at the R prompt:
 
 
 {% highlight r %}
-download.file("http://jepusto.github.io/files/software/scdhlm_0.2.1.tar.gz", 
-  destfile="./scdhlm_0.2.1.tar.gz")
-install.packages("scdhlm_0.2.1.tar.gz", repo = NULL, type = "source")
+install.packages("scdhlm")
 library(scdhlm)
 {% endhighlight %}
 
 ### Option 2: Via Github
 
-For this option, you will first need to install the devtools package:
+Go via Github to get the latest development version of the package. For this option, you will first need to install the devtools package:
+
 
 {% highlight r %}
 install.packages("devtools")
 {% endhighlight %}
+
 Once you have successfully installed this package, type the following:
+
 
 {% highlight r %}
 library(devtools)
-install_github(repo = "scdhlm", username = "jepusto")
+install_github("jepusto/scdhlm")
 library(scdhlm)
 {% endhighlight %}
 
@@ -52,3 +43,22 @@ library(scdhlm)
 You'll only need to do the installation once. Once you've got the package installed, type the following in order to access the package within an R session: `library(scdhlm)`. 
 
 To open the package documentation, type `package?scdhlm`. To access the documentation for an individual function in this package, just type `?` followed by the name of the function. For instance, one of the main functions in the package is called `g_REML`; to access its documentation, type `?g_REML`.
+
+### web-interface for calculating effect sizes
+
+The package includes an interactive app (written with `shiny`) for calculating design-comparable standardized mean differences. To run this app on your computer, you will first need to [install RStudio](https://www.rstudio.com/products/rstudio/download/) (if you don't already have it). Then ensure that you have the `shiny`, `markdown`, and `ggplot2` packages installed by running the following:  
+
+{% highlight r %}
+install.packages("shiny")
+install.packages("markdown")
+install.packages("ggplot2")
+{% endhighlight %}
+
+Finally, open the app by typing the following at the prompt within RStudio:
+
+{% highlight r %}
+library(scdhlm)
+shine_scd()
+{% endhighlight %}
+
+The app should now open in your web browser. 
