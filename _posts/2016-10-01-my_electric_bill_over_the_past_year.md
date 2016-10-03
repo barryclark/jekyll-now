@@ -21,7 +21,7 @@ Because of this, my average usage over the last eleven months was just shy of 20
 
 I recently switched my energy supplier from Dayton Power and Light to AEP Energy. Since I live in Ohio, I was able to use the [Apples to Apples Comparison Chart](http://www.energychoice.ohio.gov/ApplesToApplesComparision.aspx?Category=Electric&TerritoryId=9&RateCode=1) on Ohio's Energy Choice website. DP&L was charging me 7.3&cent; per kilowatt (actually something more like 7.279&cent;, but 7.3&cent; is what was on the bill). AEP charges 4.59&cent; per kilowatt.
 
-It took two bills before AEP appeared on my DP&L bill. DP&L still bills me. The bill is split into two charges: "delivery" and "supply." "Supply" is what was affected the supplier change (not surprisingly). "Delivery" I believe is still going to DP&L. On the charts in this post, only the 11th month (which is September) is the supplier AES - all the rest are DP&L. You'll notice the sharp decrease in the supply over usage line in the last month on the chart below.
+It took two bills before AEP appeared on my DP&L bill - I signed up for AEP on July 28th and the first bill affected was on the September 26th. DP&L still bills me. The bill is split into two charges: "delivery" and "supply." "Supply" is what was affected the supplier change (not surprisingly). "Delivery" I believe is still going to DP&L. On the charts in this post, only the 11th month (which is September) is the supplier AES - all the rest are DP&L. You'll notice the sharp decrease in the supply over usage line in the last month on the chart below.
 
 {% include electric/cost_over_usage.html %}
 
