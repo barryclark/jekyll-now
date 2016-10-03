@@ -1,15 +1,13 @@
 ---
-layout: page
+layout: default
 title: About
 permalink: /about/
 ---
 
-Some information about you!
+## <center>About ACM Hack</center>{: .acm-blue }
 
-### More Information
+<center>UCLA’s premier hacking organization. We welcome all types of people interested in learning more about computer science, coding, and the art of hacking. Whether you have any prior experience or not we hope to provide a engaging platform to help you learn the basics or hone your skills to become an expert.</center>
 
-A place to include any other types of information that you'd like to include about yourself.
+## <center>Meet our Mentors</center>{: .acm-blue }
 
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+![_config.yml]({{ site.baseurl }}/images/acm-board.png){: .center-image }
