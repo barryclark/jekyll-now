@@ -16,6 +16,12 @@ permalink: /fondi/
 {% endif %}
 {% endfor %}
 </div>
+<div class="panel-footer">
+<ul class="share-buttons">
+  <li>Condividi:</li>
+  <li><a href="http://terremotocentroitalia.it/issues/{{ member.number | datapage_url: '.' }}" title="Copia link"><img alt="Copia link" src="/img/icone/link.png"></a></li>
 
+</ul>
+</div>
 </div>
 </div>
