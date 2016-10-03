@@ -7,7 +7,7 @@ publish: true
 
 Welcome all,
 
-  Yes, its that time of year again and no I dont mean pumpkin spice everything and candy corn suddenly being desireable season.  I mean midterms and because of that I will try to keep this short and review what we have covered so far, been doing in class as well as the readings and look towards the evr looming final project.
+  Yes, its that time of year again and no I don't mean "pumpkin spice everything" and "candy corn suddenly being desireable" season.  No, I mean midterms and because of that I will try to keep this short and review what we have covered so far, been doing for class and readings, and look towards the ever looming final project.
 
 The journey so far:
 
