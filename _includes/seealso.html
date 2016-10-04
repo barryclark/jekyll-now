@@ -1,3 +1,4 @@
+{% assign posts = "" | split: "" %}
 {% for tag in page.tags %}
   {% for post in site.tags[tag] %}
     {% unless posts contains post %}
