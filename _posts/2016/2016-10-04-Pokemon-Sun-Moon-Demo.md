@@ -17,7 +17,7 @@ Another new feature that was announced was Poké Pelago. In Poké Pelago, Pokém
 
 In some of the most exciting new news, the first evolutions for each of the starter Pokémon have been released. Though leaked a while ago, it's nice to have confirmation.
 
-<img src="/images/sunmoon/starter2.jpg" width="300" class="float-right"/>
+<img src="/images/sunmoon/starter2.jpg" height="600" class="float-right"/>
 **Dartrix**\\
 **Type: Grass-Flying**
 
