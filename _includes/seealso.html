@@ -1,17 +1,10 @@
 {% assign posts = "" | split: "" %}
 {% for post in site.posts %}
-  {% for tag in page.tags %}
-    {% unless post.tag = tag %}
+
       {% assign posts = posts | push: post %}
-    {% endunless %}
-  {% endfor %}
+
 {% endfor %}
     
-      
-    
-  
-
-
 {% unless posts %}
 <div id="see-also"><h2>You might also like:</h2></div>
 <script>
