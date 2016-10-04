@@ -38,6 +38,7 @@ Pairing or teaming up is optional, but highly encouraged. We believe a group siz
 
 We will actively maintain a culture of mutual respect and kindness. We encourage listening openly and honestly, assuming good faith, and speaking kindly. Anyone who adversely affects this environment for the people around them will be asked to change for the better or else leave. Harassment of any kind will never be tolerated.
 
+~~~~ 
 Example of a good interaction: 
 A: "Hi, I haven't used JavaScript before. How do I run it?" 
 B: "No worries, you can just open up Google Chrome, open the developer tools (DevTools for short), then click on the Console tab, and type some JavaScript, followed by pressing the Enter key." 
@@ -52,6 +53,7 @@ A: "Why are you on Pinterest?"
 B: "Oh, I'm finding a gift for my dad, and Pinterest's design is also an inspiration for some ideas I have for the chat app—"
 A: "That's such a girly interest to have. See, in my spare time, I learn more about circuits and radio designs. What are you doing in EE?"
 Person A above would get kicked out of Hack School very quickly (and actually ended up switching out of EE). Person B ended up doing very well in EE and beyond.
+~~~~ 
 
 <h3>Is diversity a concern?</h3>{: .acm-cerulean }
 
