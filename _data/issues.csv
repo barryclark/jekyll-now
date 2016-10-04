@@ -1,5 +1,5 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/748,180876174,2016-10-04 15:19:42,2016-10-04 12:12:54,RICHIESTA URGENTE AIUTO per famiglie di Sant’Angelo frazione di #Amatrice,,,"[""Accettato"", ""Bollettino"", ""Da rilanciare"", ""Fabbisogni"", ""Facebook""]",Milestone(number=1),,{},"<pre><yamldata>tel: '3472869633'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/748,180876174,2016-10-04 15:21:19,2016-10-04 12:12:54,"Sant'Angelo, RI - Richiesta aiuti per famiglie",,,"[""Accettato"", ""Bollettino"", ""Da rilanciare"", ""Fabbisogni"", ""Facebook""]",Milestone(number=1),,{},"<pre><yamldata>tel: '3472869633'
 email: 'eurosportello@aeceuropa.eu'
 cosa: 'Aiuto per famiglie di Sant'Angelo'
 descrizione: 'Quattro persone hanno bisogno di stufette possibilmente ad olio, mangime per galline e cani, almeno 30 kg, scarponi invernali numeri: 41 43 44 46, Marsupi, teloni verdi molto spessi'
