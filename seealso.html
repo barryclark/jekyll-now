@@ -5,7 +5,7 @@ jquery: true
 permalink: /seealso/
 ---
 
-<div id="see-also"></div>
+<div id="see-also"><h2>You might also like:</h2></div>
 <script>
 $( document ).ready(function() {
   var posts = [
@@ -15,7 +15,7 @@ $( document ).ready(function() {
   
   for(var i = 0; i < posts.length; i++) {
     post = posts[i];
-    $("#see-also").append("<h2><a href=\"" + post.url + "\">" + post.title + "</a></h2>");
+    $("#see-also").append("<h3><a href=\"" + post.url + "\">" + post.title + "</a></h3>");
     $("#see-also").append("<div class=\"excerpt\">" + post.excerpt + "</div>");
   } 
 });
