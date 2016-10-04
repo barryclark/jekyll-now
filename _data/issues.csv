@@ -1,16 +1,5 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/749,180926433,2016-10-04 16:10:23,2016-10-04 15:29:21,prova inserimento fabbisogni,-34.4105309,-58.7357519,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""prova inserimento fabbisogni"", ""data"": ""04/10/2016"", ""descrizione"": """", ""email"": ""mail@indirizzomail.it"", ""immagine"": """", ""indirizzo"": ""San Juan, Cri - Cri, Gar\u00edn Centro, Gar\u00edn, Partido de Escobar, Buenos Aires, Argentina"", ""lat"": ""-34.4105309"", ""link"": ""http://www.google.com"", ""lon"": ""-58.7357519"", ""tel"": ""3120654987""}","<pre><yamldata>tel: '3120654987'
-email: mail@indirizzomail.it
-cosa: 'prova inserimento fabbisogni'
-descrizione: ''
-indirizzo: 'San Juan, Cri - Cri, Garín Centro, Garín, Partido de Escobar, Buenos Aires, Argentina'
-lat: '-34.4105309'
-lon: '-58.7357519'
-link: 'http://www.google.com'
-immagine: ''
-data: 04/10/2016
-</yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/748,180876174,2016-10-04 15:21:19,2016-10-04 12:12:54,"Sant'Angelo, RI - Richiesta aiuti per famiglie",,,"[""Accettato"", ""Bollettino"", ""Da rilanciare"", ""Fabbisogni"", ""Facebook""]",Milestone(number=1),,{},"<pre><yamldata>tel: '3472869633'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/748,180876174,2016-10-04 16:28:02,2016-10-04 12:12:54,"Sant'Angelo, RI - Richiesta aiuti per famiglie",,,"[""Accettato"", ""Bollettino"", ""Da rilanciare"", ""Fabbisogni"", ""Facebook""]",Milestone(number=1),,{},"<pre><yamldata>tel: '3472869633'
 email: 'eurosportello@aeceuropa.eu'
 cosa: 'Aiuto per famiglie di Sant'Angelo'
 descrizione: 'Quattro persone hanno bisogno di stufette possibilmente ad olio, mangime per galline e cani, almeno 30 kg, scarponi invernali numeri: 41 43 44 46, Marsupi, teloni verdi molto spessi'
