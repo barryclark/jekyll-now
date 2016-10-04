@@ -13,7 +13,7 @@ $( document ).ready(function() {
     {url:"url2",title:"Title 2",excerpt:"Excerpt 2"}
   ];
   
-  for(int i = 0; i < posts.length; i++) {
+  for(var i = 0; i < posts.length; i++) {
     post = posts[i];
     $("#see-also").append("<h2><a href=\"" + post.url + "\">" + post.title + "</a></h2>");
     $("#see-also").append("<div class=\"excerpt\">" + post.excerpt + "</div>");
