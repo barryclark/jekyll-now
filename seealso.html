@@ -9,8 +9,9 @@ permalink: /seealso/
 <script>
 $( document ).ready(function() {
   var posts = [
-    {url:"url1",title:"Title 1",excerpt:"Excerpt 1"},
-    {url:"url2",title:"Title 2",excerpt:"Excerpt 2"}
+    {% for post in site.tags.quora %}
+      {url:"{{ post.url }}",title:"{{ post.title }}",excerpt:"{{ post.excerpt }}"}{% unless forloop.last %},{% endunless %}
+    {% endfor %}
   ];
   
   for(var i = 0; i < posts.length; i++) {
