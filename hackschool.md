@@ -8,7 +8,7 @@ permalink: /hack-school/
 
 ![_config.yml]({{ site.baseurl }}/images/hack-school-logo.png){: .center-image }
 
-<center>ACM Hack School is a quarter-long program that will teach beginners to build their personal web applications. Our goal is to take you from "zero to hero," teaching you modern full-stack web development as you build a real-time chat app.  It assumes no prior knowledge, will open-source all of its code, and is adopting diversity as a goal from the start. It will aim to have ~40 students that meet for weekly workshops. Students will leave with full knowledge on how to build real-world applications.</center>
+<center>Hack School is a quarter-long program that will teach beginners web development in JavaScript. Our goal is to take you from "zero to hero," teaching you modern full-stack web development as you build a real-time chat app.  It assumes no prior knowledge, will open-source all of its code, and is adopting diversity as a goal from the start. It will aim to have ~40 students that meet for weekly workshops. Students will leave with full knowledge on how to build real-world applications.</center>
 <br>
 
 ## <center>How to apply</center>{: .acm-blue }
@@ -70,10 +70,10 @@ permalink: /hack-school/
 
 <center>We will actively maintain a culture of mutual respect and kindness. We encourage listening openly and honestly, assuming good faith, and speaking kindly. Anyone who adversely affects this environment for the people around them will be asked to change for the better or else leave. Harassment of any kind will never be tolerated.</center>
 
-~~~~ 
-Example of a good interaction: 
-A: "Hi, I haven't used JavaScript before. How do I run it?" 
-B: "No worries, you can just open up Google Chrome, open the developer tools (DevTools for short), then click on the Console tab, and type some JavaScript, followed by pressing the Enter key." 
+```
+Example of a good interaction:
+A: "Hi, I haven't used JavaScript before. How do I run it?"
+B: "No worries, you can just open up Google Chrome, open the developer tools (DevTools for short), then click on the Console tab, and type some JavaScript, followed by pressing the Enter key."
 A: "Great, thank you!"
 B: "You're very welcome!"
 A: "Also, FYI, it looks like you're about to run out of battery on your laptop. If that happens often, I've found that Safari is much nicer than Chrome on battery life."
@@ -85,7 +85,7 @@ A: "Why are you on Pinterest?"
 B: "Oh, I'm finding a gift for my dad, and Pinterest's design is also an inspiration for some ideas I have for the chat app—"
 A: "That's such a girly interest to have. See, in my spare time, I learn more about circuits and radio designs. What are you doing in EE?"
 Person A above would get kicked out of Hack School very quickly (and actually ended up switching out of EE). Person B ended up doing very well in EE and beyond.
-~~~~ 
+```
 
 <h3><center>Is diversity a concern?</center></h3>{: .acm-cerulean }
 
