@@ -1,8 +1,8 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/748,180876174,2016-10-04 15:02:37,2016-10-04 12:12:54,RICHIESTA URGENTE AIUTO per famiglie di Sant’Angelo frazione di #Amatrice,42.6496118,13.3042554,"[""Accettato"", ""Bollettino"", ""Da rilanciare"", ""Fabbisogni"", ""Facebook""]",,,"{""cosa"": ""RICHIESTA URGENTE AIUTO per famiglie di Sant'Angelo frazione di #Amatrice"", ""data"": ""04/10/2016"", ""descrizione"": ""Quattro persone hanno bisogno di stufette possibilmente ad olio, \u00b7 mangime per galline e cani, almeno 30 kg \u00b7 scarponi invernali numeri: 41 43 44 46 \u00b7 Marsupi \u00b7 teloni verdi molto spessi"", ""email"": ""eurosportello@aeceuropa.eu"", ""immagine"": """", ""indirizzo"": ""SP20, Casale Zocchi, Amatrice, RI, Lazio, 02012, Italia"", ""lat"": ""42.6496118"", ""link"": ""https://www.facebook.com/permalink.php?story_fbid=1660800270916894&id=1657318057931782"", ""lon"": ""13.3042554"", ""tel"": ""3472869633""}","<pre><yamldata>tel: '3472869633'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/748,180876174,2016-10-04 15:19:42,2016-10-04 12:12:54,RICHIESTA URGENTE AIUTO per famiglie di Sant’Angelo frazione di #Amatrice,,,"[""Accettato"", ""Bollettino"", ""Da rilanciare"", ""Fabbisogni"", ""Facebook""]",Milestone(number=1),,{},"<pre><yamldata>tel: '3472869633'
 email: 'eurosportello@aeceuropa.eu'
-cosa: 'RICHIESTA URGENTE AIUTO per famiglie di Sant''Angelo frazione di #Amatrice'
-descrizione: 'Quattro persone hanno bisogno di stufette possibilmente ad olio, · mangime per galline e cani, almeno 30 kg · scarponi invernali numeri: 41 43 44 46 · Marsupi · teloni verdi molto spessi'
+cosa: 'Aiuto per famiglie di Sant'Angelo'
+descrizione: 'Quattro persone hanno bisogno di stufette possibilmente ad olio, mangime per galline e cani, almeno 30 kg, scarponi invernali numeri: 41 43 44 46, Marsupi, teloni verdi molto spessi'
 indirizzo: 'SP20, Casale Zocchi, Amatrice, RI, Lazio, 02012, Italia'
 lat: '42.6496118'
 lon: '13.3042554'
@@ -538,7 +538,7 @@ link: 'http://www.agid.gov.it/notizie/2016/09/22/pagopa-nelle-marche-attivo-serv
 email: ''
 data: 22/09/2016
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/658,178635620,2016-10-04 14:37:49,2016-09-22 15:04:16,Cercasi casetta di pochi metri quadrati,,,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Casetta di pochi metri quadrati"", ""data"": ""22/09/2016"", ""descrizione"": ""Cerchiamo casetta di pochi metri quadrati, di legno o qualsiasi altro materiale purch\u00e9 sia coibentata."", ""email"": ""tizianofisio@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3319715161""}","<pre><yamldata>tel: '3319715161'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/658,178635620,2016-10-04 15:07:39,2016-09-22 15:04:16,Cercasi casetta di pochi metri quadrati,,,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Casetta di pochi metri quadrati"", ""data"": ""22/09/2016"", ""descrizione"": ""Cerchiamo casetta di pochi metri quadrati, di legno o qualsiasi altro materiale purch\u00e9 sia coibentata."", ""email"": ""tizianofisio@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3319715161""}","<pre><yamldata>tel: '3319715161'
 email: 'tizianofisio@gmail.com'
 cosa: 'Casetta di pochi metri quadrati'
 descrizione: 'Cerchiamo casetta di pochi metri quadrati, di legno o qualsiasi altro materiale purché sia coibentata.'
