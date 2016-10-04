@@ -14,6 +14,8 @@ $( document ).ready(function() {
     {% endfor %}
   ];
   
+  posts.sort(function(){return Math.random() - 0.5;});
+  
   for(var i = 0; i < posts.length; i++) {
     post = posts[i];
     $("#see-also").append("<h3><a href=\"" + post.url + "\">" + post.title + "</a></h3>");
