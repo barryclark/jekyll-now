@@ -18,11 +18,6 @@ Another new feature that was announced was Poké Pelago. In Poké Pelago, Pokém
 In some of the most exciting new news, the first evolutions for each of the starter Pokémon have been released. Though leaked a while ago, it's nice to have confirmation.
 
 <img src="/images/sunmoon/starter2.jpg" height="575" class="float-right"/>
-**Dartrix**\\
-**Type: Grass-Flying**
-
-The Blade Quill Pokémon Dartrix evolves from Rowlet. Dartrix attacks by throwing its knife-edged feathers, and it possesses extremely sharp senses. This Pokémon can detect opponents behind it and can throw feathers to strike them without even seeing them. This Pokémon cares a great deal about its appearance, grooming its feathers in every spare moment it has.
-
 
 **Torracat**\\
 **Type: Fire**
@@ -33,3 +28,8 @@ The Fire Cat Pokémon Torracat evolves from Litten. This Pokémon produces flame
 **Type: Water**
 
 The Pop Star Pokémon Brionne evolves from Popplio. Brionne can dance in perfect time with others and is always cheery and positive. A very hard worker, Brionne learns dances by imitating other members of its colony and can sometimes even learn dances from humans. As this Pokémon dances, it creates balloons and slaps them into its target, making them explode and deal damage to its opponents.
+
+**Dartrix**\\
+**Type: Grass-Flying**
+
+The Blade Quill Pokémon Dartrix evolves from Rowlet. Dartrix attacks by throwing its knife-edged feathers, and it possesses extremely sharp senses. This Pokémon can detect opponents behind it and can throw feathers to strike them without even seeing them. This Pokémon cares a great deal about its appearance, grooming its feathers in every spare moment it has.
