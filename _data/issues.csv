@@ -1,8 +1,8 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/749,180926433,2016-10-04 15:29:51,2016-10-04 15:29:21,prova inserimento fabbisogni,-34.4105309,-58.7357519,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""prova inserimento fabbisogni"", ""data"": ""04/10/2016"", ""descrizione"": ""verifica funzionamento pagina fabbisogni df' vjvne'"", ""email"": ""mail@indirizzomail.it"", ""immagine"": """", ""indirizzo"": ""San Juan, Cri - Cri, Gar\u00edn Centro, Gar\u00edn, Partido de Escobar, Buenos Aires, Argentina"", ""lat"": ""-34.4105309"", ""link"": ""http://www.google.com"", ""lon"": ""-58.7357519"", ""tel"": ""3120654987""}","<pre><yamldata>tel: '3120654987'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/749,180926433,2016-10-04 16:10:23,2016-10-04 15:29:21,prova inserimento fabbisogni,-34.4105309,-58.7357519,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""prova inserimento fabbisogni"", ""data"": ""04/10/2016"", ""descrizione"": """", ""email"": ""mail@indirizzomail.it"", ""immagine"": """", ""indirizzo"": ""San Juan, Cri - Cri, Gar\u00edn Centro, Gar\u00edn, Partido de Escobar, Buenos Aires, Argentina"", ""lat"": ""-34.4105309"", ""link"": ""http://www.google.com"", ""lon"": ""-58.7357519"", ""tel"": ""3120654987""}","<pre><yamldata>tel: '3120654987'
 email: mail@indirizzomail.it
 cosa: 'prova inserimento fabbisogni'
-descrizione: 'verifica funzionamento pagina fabbisogni df'' vjvne'''
+descrizione: ''
 indirizzo: 'San Juan, Cri - Cri, Garín Centro, Garín, Partido de Escobar, Buenos Aires, Argentina'
 lat: '-34.4105309'
 lon: '-58.7357519'
