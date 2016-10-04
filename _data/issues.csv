@@ -1,7 +1,7 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/748,180876174,2016-10-04 16:28:02,2016-10-04 12:12:54,"Sant'Angelo, RI - Richiesta aiuti per famiglie",,,"[""Accettato"", ""Bollettino"", ""Da rilanciare"", ""Fabbisogni"", ""Facebook""]",Milestone(number=1),,{},"<pre><yamldata>tel: '3472869633'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/748,180876174,2016-10-04 16:38:11,2016-10-04 12:12:54,"Sant'Angelo, RI - Richiesta aiuti per famiglie",42.6496118,13.3042554,"[""Accettato"", ""Bollettino"", ""Da rilanciare"", ""Fabbisogni"", ""Facebook""]",Milestone(number=1),,"{""cosa"": ""Aiuto per famiglie di Sant'Angelo"", ""data"": ""04/10/2016"", ""descrizione"": ""Quattro persone hanno bisogno di stufette possibilmente ad olio, mangime per galline e cani, almeno 30 kg, scarponi invernali numeri: 41 43 44 46, Marsupi, teloni verdi molto spessi"", ""email"": ""eurosportello@aeceuropa.eu"", ""immagine"": """", ""indirizzo"": ""SP20, Casale Zocchi, Amatrice, RI, Lazio, 02012, Italia"", ""lat"": ""42.6496118"", ""link"": ""https://www.facebook.com/permalink.php?story_fbid=1660800270916894&id=1657318057931782"", ""lon"": ""13.3042554"", ""tel"": ""3472869633""}","<pre><yamldata>tel: '3472869633'
 email: 'eurosportello@aeceuropa.eu'
-cosa: 'Aiuto per famiglie di Sant'Angelo'
+cosa: 'Aiuto per famiglie di Sant''Angelo'
 descrizione: 'Quattro persone hanno bisogno di stufette possibilmente ad olio, mangime per galline e cani, almeno 30 kg, scarponi invernali numeri: 41 43 44 46, Marsupi, teloni verdi molto spessi'
 indirizzo: 'SP20, Casale Zocchi, Amatrice, RI, Lazio, 02012, Italia'
 lat: '42.6496118'
