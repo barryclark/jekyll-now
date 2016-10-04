@@ -1,5 +1,5 @@
 {% for tag in page.tags %}
-  {% for post in tag.posts %}
+  {% for post in site.tags[tag] %}
     {% unless posts contains post %}
       {% assign posts = posts | push: post %}
     {% endunless %}
