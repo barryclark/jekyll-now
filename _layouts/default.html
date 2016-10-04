@@ -1,7 +1,7 @@
 {% capture cache %}
 
 {% if page.mathjax %}{% assign mathjax = true %}{% endif %}
-{% if page.jquery %}{% assign jquery = true %}{% endif %}
+{% if page.jquery or layout.jquery %}{% assign jquery = true %}{% endif %}
 {% assign javascripts = "" | split: "" %}
 {% assign csses = "" | split: "" %}
 
