@@ -6,6 +6,7 @@
   {% endfor %}
 {% endfor %}
 
+{% unless posts %}
 <div id="see-also"><h2>You might also like:</h2></div>
 <script>
 $( document ).ready(function() {
@@ -24,3 +25,4 @@ $( document ).ready(function() {
   } 
 });
 </script>
+{% endunless %}
