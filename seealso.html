@@ -8,7 +8,14 @@ permalink: /seealso/
 <div id="see-also"></div>
 <script>
 $( document ).ready(function() {
-  $("#see-also").append("<a href=\"url\">Title</a>");
-  $("#see-also").append("<div class=\"excert\">A little about it...</div>");
+  var posts = [
+    {url:"url1",title:"Title 1",excerpt:"Excerpt 1"},
+    {url:"url2",title:"Title 2",excerpt:"Excerpt 2"}
+  ];
+  
+  for(post in posts) {
+      $("#see-also").append("<h2><a href=\"" + post.url + "\">" + post.title + "</a></h2>");
+      $("#see-also").append("<div class=\"excerpt\">" + post.excerpt + "</div>");
+  } 
 });
 </script>
