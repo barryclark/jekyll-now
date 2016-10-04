@@ -48,21 +48,26 @@ permalink: /hack-school/
 #### <center>Heroku - Deploy your Web Application</center>
 <br>
 
-## <center>FAQ (Frequently Asked Questions)</center>{: .acm-blue }
+<h2><center>FAQ (Frequently Asked Questions)</center></h2>{: .acm-blue }
 
-### <center>1. What qualifications are needed to join Hack School?</center>{: .acm-cerulean }
-<center>None! Previous programming experience would be very helpful though, and any web development background would accelerate your learning. That said, one of our principal goals is to empower students who would not normally have the opportunity to explore web development. We especially encourage you to come out if you have doubts about your qualifications. Impostor syndrome (http://www.scientificamerican.com/article/what-is-impostor-syndrome/) is real, and we're here to help you fight it. </center>
+<h3><center>What qualifications are needed to join Hack School?</center></h3>{: .acm-cerulean }
 
-### <center>2. What's your weekly schedule?</center>{: .acm-cerulean }
+<center>None! Previous programming experience would be very helpful though, and any web development background would accelerate your learning. That said, one of our principal goals is to empower students who would not normally have the opportunity to explore web development. We especially encourage you to come out if you have doubts about your qualifications. <a href="http://www.scientificamerican.com/article/what-is-impostor-syndrome/">Impostor Syndrome</a> is real, and we're here to help you fight it.</center>
+
+<h3><center>What's your weekly schedule?</center></h3>{: .acm-cerulean }
+
 <center>We'll meet every Wednesday from 7-9 PM.</center>
 
-### <center>3. I can't make that schedule, but can I still follow along?</center>{: .acm-cerulean }
-<center>Absolutely! We'll post all materials, including full explanatory blog posts to our website (coming up soon). We also encourage you to come out to other ACM Hack events this quarter, including Hack Nights, Local Hack Day, and Hacker Expo. More details will soon follow on all of them.</center>
+<h3><center>I can't make that schedule, but can I still follow along?</center></h3>{: .acm-cerulean }
 
-### <center>4. Will we be with partners or in teams?</center>{: .acm-cerulean }
-<center>Pairing or teaming up is optional, but highly encouraged. We believe a group size of 2-4 people, with each building their own copy of the app, would work best. If you'd like a team, but don't yet have suitable teammates, we will help you form groups before our 2nd session together (so that you can meet everyone during the 1st session).</center>
+<center>Absolutely! We'll post all materials, including full explanatory blog posts to this website. We also encourage you to come out to other ACM Hack events this quarter, including Hack Nights, Local Hack Day, and Hacker Expo. More details will soon follow on all of them.</center>
 
-### <center>5. What kind of learning atmosphere can I expect?</center>{: .acm-cerulean }
+<h3><center>Will we be with partners or in teams?</center></h3>{: .acm-cerulean }
+
+<center>Pairing or teaming up is optional, but highly encouraged. We believe a group size of 2-4 people, with each building their own copy of the app, would work best. If you'd like a team, but don't yet have suitable teammates, we will help you form groups before our 2nd session together (so that you can meet everyone during the 1st session.</center>
+
+<h3><center>What kind of learning atmosphere can I expect?</center></h3>{: .acm-cerulean }
+
 <center>We will actively maintain a culture of mutual respect and kindness. We encourage listening openly and honestly, assuming good faith, and speaking kindly. Anyone who adversely affects this environment for the people around them will be asked to change for the better or else leave. Harassment of any kind will never be tolerated.</center>
 
 ~~~~ 
@@ -82,11 +87,10 @@ A: "That's such a girly interest to have. See, in my spare time, I learn more ab
 Person A above would get kicked out of Hack School very quickly (and actually ended up switching out of EE). Person B ended up doing very well in EE and beyond.
 ~~~~ 
 
-### <center>6. Is diversity a concern?</center>{: .acm-cerulean }
-<center>You bet it is! We will be reaching out to groups like ACM-W, WATT, SWE, PAQ, NSBE, and SHIP throughout this week. The world of tech is missing out on a lot of wonderful ideas and impact. We want to change that. We welcome your feedback at any time (including now) for how we can do better.</center>
+<h3><center>Is diversity a concern?</center></h3>{: .acm-cerulean }
 
-### <center>7. Still have additional Questions?</center>{: .acm-cerulean }
-<center>If you have any questions not answered above, please post them on our Facebook group: <a href="https://www.facebook.com/groups/1134478866601931/">UCLA ACM Hack School</a>. For any topics that need to be discussed privately, please email Ky-Cuong: <a href="mailto:kycuonghuynh@ucla.edu?Subject=Hack School Student Concern" target="_top">kycuonghuynh@ucla.edu</a> or Akhil Nadendla: <a href="mailto:anadendla@ucla.edu?Subject=Hack School Student Concern" target="_top">anadendla@ucla.edu</a></center>
+<center>You bet it is! We have reached out to groups like ACM-W, WATT, SWE, PAQ, NSBE, and SHIP throughout this fall and will continue to do so. Our line-up of teachers and teaching assistants is already more diverse for it, and the leadership of these organizations is encouraging their members to join Hack School. The world of tech is missing out on a lot of wonderful ideas and impact. We want to change that. We welcome your feedback at any time (including now) for how we can do better.</center>
 
+<h3><center>Still have additional questions?</center></h3>{: .acm-cerulean }
 
-
+<center>If you have any questions not answered above, please post them on our Facebook group: <a href="https://www.facebook.com/groups/1134478866601931/">UCLA ACM Hack School</a>. For any topics that need to be discussed privately, please email Ky-Cuong: <a href="mailto:kycuonghuynh@ucla.edu?Subject=Hack School Student Concern" target="_top">kycuonghuynh@ucla.edu</a></center>
