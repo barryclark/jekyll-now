@@ -19,6 +19,11 @@ permalink: /sitemap2/
 {% for tag in site.tags %}
 * <a href="/tags/{{ tag[0] | replace: ' ', '_' }}/">{{ tag[0] }}</a>{% endfor %}
 
+## Pages
+
+{% for page in (1..paginator.total_pages) %}
+* {% if page == 1 %}<a href="/">{% else %}<a href="{{ site.paginate_path | replace: ':num', page }}/">Page {{ page }}</a>{% endif %}{% endfor %}
+
 ## 404s
 
 * [404](/404.html)
