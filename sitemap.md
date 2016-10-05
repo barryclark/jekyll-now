@@ -17,8 +17,4 @@ permalink: /sitemap/
 
 ## Tags
 
-{% for tag in site.tags %}{% capture page_url %}/tags/{{ tag[0] | replace: ' ', '_' }}/{% endcapture %}
-* [{{ tag[0] }}]({{ page_url }})
-{% endfor%}
-
 ## 404s
