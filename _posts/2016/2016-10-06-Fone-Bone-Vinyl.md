@@ -9,7 +9,7 @@ amazoncat: Books
 tags: [toys, bone, jeff smith, cryptozoic]
 author: Rob Kalajian
 ---
-![Fone Bone](/images/bone/bone.jpg){: .float-right }
+![Fone Bone](/images/bone/bone.png){: .float-right }
 
 Hobby store shelves got a bit more exciting lately with the release of Cryptozoic's Fone Bone 4" Vinyl Figure figure. For those unfamiliar, Fone Bone is the original protagonist of the classic Bone graphic novels by Jeff Smith. Fone is short, but brave, and the most courageous of his cousins in the books.
 
