@@ -23,7 +23,7 @@ permalink: /sitemap2/
 
 ## Pages
 
-{% for page in (1..paginator.total_pages) %}
+{% for page in (1..20) %}
 * {% if page == 1 %}<a href="/">{% else %}<a href="{{ site.paginate_path | replace: ':num', page }}/">Page {{ page }}</a>{% endif %}{% endfor %}
 
 ## 404s
