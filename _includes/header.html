@@ -1,0 +1,24 @@
+<div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      <div>
+        <a href="{{ site.baseurl }}/" class="site-avatar">
+          <img src="https://avatars.githubusercontent.com/u/12754677?v=3" alt="Joe's GitHub Profile Picture" />
+        </a>
+
+        <div class="site-info">
+          <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+          <p class="site-description">{{ site.description }}</p>
+        </div>
+
+        <nav>
+          {% for navlink in site.navlinks %}<a href="{{ navlink.url }}">{{ navlink.text }}</a>{% if forloop.last %}{% else %}|{% endif %}{% endfor %}
+        </nav>
+      </div>
+      <div style="margin-top: 75px;">
+{% include google/search.html %}
+      </div>
+    </header>
+{% include google/adsense.html %}	        	
+  </div>
+</div>
