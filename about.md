@@ -4,10 +4,10 @@ title: About
 permalink: /about/
 ---
 
-## <center>About ACM Hack</center>{: .acm-blue }
+## <center>About</center>{: .acm-blue }
 
-<center>UCLA’s premier hacking organization. We welcome all types of people interested in learning more about computer science, coding, and the art of hacking. Whether you have any prior experience or not we hope to provide a engaging platform to help you learn the basics or hone your skills to become an expert.</center>
+<center>We are a community of hackers at UCLA who love building cool things. We have workshops and tutorials to teach beginners how to start working on their own projects. We also have hack nights so that the more advanced students can collaborate and learn.</center>
 
-## <center>Meet our Mentors</center>{: .acm-blue }
+## <center>Our Team</center>{: .acm-blue }
 
 ![_config.yml]({{ site.baseurl }}/images/acm-board.png){: .center-image }

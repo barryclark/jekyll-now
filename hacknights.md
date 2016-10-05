@@ -8,10 +8,11 @@ permalink: /hack-nights/
 
 ![_config.yml]({{ site.baseurl }}/images/hack-nights-logo.png){: .center-image }
 
-<center>Every week our goal is to teach technologies that are being used right now in industry. We will be bringing in students who have worked at the biggest names in Silicon Valley. You will learn actual languages, frameworks, and tools that they used during their time at these companies. You will then be able to use the skills they teach you to hack together your own projects. There will mentors to provide assistance and answer any and all questions you may have. Use our weekly Hack Nights to turn your project ideas into reality, meet like minded students, and get career advice from upperclassmen who have already tackled their coding interviews.
+<center>Every week our goal is to teach technologies that are being used right now in industry. We will be bringing in students who have worked at the biggest names in Silicon Valley. You will learn actual languages, frameworks, and tools that they used during their time at these companies. You will then be able to use the skills they teach you to hack together your own projects. There will be mentors to provide assistance and answer any questions you may have.
+
+Turn your project ideas into reality, meet like minded students, and get career advice from upperclassmen who have already tackled their coding interviews.
 </center>
 <br>
-
 
 ## <center>How to apply</center>{: .acm-blue }
 <center>
@@ -23,7 +24,7 @@ permalink: /hack-nights/
 
 ### <center>Week 3 (October 10, 2016) </center>{: .acm-cerulean }
 
-#### <center>Facebook - Php/Hack</center>
+#### <center>Facebook - PHP/Hack</center>
 
 ### <center>Week 4 (October 17, 2016) </center>{: .acm-cerulean }
 
@@ -67,10 +68,10 @@ permalink: /hack-nights/
 ### <center>5. What kind of learning atmosphere can I expect?</center>{: .acm-cerulean }
 <center>We will actively maintain a culture of mutual respect and kindness. We encourage listening openly and honestly, assuming good faith, and speaking kindly. Anyone who adversely affects this environment for the people around them will be asked to change for the better or else leave. Harassment of any kind will never be tolerated.</center>
 
-~~~~ 
-Example of a good interaction: 
-A: "Hi, I haven't used JavaScript before. How do I run it?" 
-B: "No worries, you can just open up Google Chrome, open the developer tools (DevTools for short), then click on the Console tab, and type some JavaScript, followed by pressing the Enter key." 
+~~~~
+Example of a good interaction:
+A: "Hi, I haven't used JavaScript before. How do I run it?"
+B: "No worries, you can just open up Google Chrome, open the developer tools (DevTools for short), then click on the Console tab, and type some JavaScript, followed by pressing the Enter key."
 A: "Great, thank you!"
 B: "You're very welcome!"
 A: "Also, FYI, it looks like you're about to run out of battery on your laptop. If that happens often, I've found that Safari is much nicer than Chrome on battery life."
@@ -82,11 +83,10 @@ A: "Why are you on Pinterest?"
 B: "Oh, I'm finding a gift for my dad, and Pinterest's design is also an inspiration for some ideas I have for the chat app—"
 A: "That's such a girly interest to have. See, in my spare time, I learn more about circuits and radio designs. What are you doing in EE?"
 Person A above would get kicked out of Hack School very quickly (and actually ended up switching out of EE). Person B ended up doing very well in EE and beyond.
-~~~~ 
+~~~~
 
 ### <center>6. Is diversity a concern?</center>{: .acm-cerulean }
 <center>You bet it is! We will be reaching out to groups like ACM-W, WATT, SWE, PAQ, NSBE, and SHIP throughout this year. The world of tech is missing out on a lot of wonderful ideas and impact. We want to change that. We welcome your feedback at any time (including now) for how we can do better.</center>
 
 ### <center>7. Still have additional Questions?</center>{: .acm-cerulean }
 <center>If you have any questions not answered above, please post them on our Facebook group: <a href="https://www.facebook.com/groups/hackatucla/">hack@ucla</a>. For any topics that need to be discussed privately, please email Akhil Nadendla: <a href="mailto:anadendla@ucla.edu?Subject=Hack Nights Concern" target="_top">anadendla@ucla.edu</a></center>
-
