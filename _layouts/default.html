@@ -61,35 +61,16 @@
 		<link href="/favicon.ico?" rel="shortcut icon" type="image/x-icon" />
 	</head>
 	{% if layout.isPost %}<body itemscope itemtype="http://schema.org/BlogPosting">{% elsif page.url == "/index.html" or page.url contains "/tags/" or page.url contains "/page" %}<body itemscope itemtype="http://schema.org/Blog">{% else %}<body>{% endif %}
-    	{% include metadata/schema.html %}  
-	    {% include facebook.html %}	    
-	    <div class="wrapper-masthead">
-  		<div class="container">
-	        	<header class="masthead clearfix">
-	        		<div>
-	          		<a href="{{ site.baseurl }}/" class="site-avatar"><img src="https://avatars.githubusercontent.com/u/12754677?v=3" alt="Joe's GitHub Profile Picture" /></a>
+{% include metadata/schema.html %}  
+{% include facebook.html %}	    
+{% include header.html %}
 	
-		          	<div class="site-info">
-			            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-			            <p class="site-description">{{ site.description }}</p>
-		          	</div>
+<div id="main" role="main" class="container">
+{{ content }}
+</div>	
 	
-	          		<nav>
-	            	{% for navlink in site.navlinks %}<a href="{{ navlink.url }}">{{ navlink.text }}</a>{% if forloop.last %}{% else %}|{% endif %}{% endfor %}
-	          		</nav>
-	          		</div><div style="margin-top: 75px;">
-	          		{% include google/search.html %}
-	          		</div>
-	        	</header>
-	        	{% include google/adsense.html %}	        	
-	      	</div>
-		</div>
-		
-	    <div id="main" role="main" class="container">
-		{{ content }}
-	    </div>	
-	    {% include footer.html %}
-	    {% include viglink.html %}
-	    {% include google/analytics.html %}
-	</body>
+{% include footer.html %}
+{% include viglink.html %}
+{% include google/analytics.html %}
+</body>
 </html>
