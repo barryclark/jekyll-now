@@ -19,7 +19,7 @@ permalink: /sitemap/
 ## Tags
 
 {% for tag in site.tags %}
-* [{{ tag[0] }}](/tags/{{ tag[0] | replace: ' ', '_' }}/)
+* [{{ tag[0] }}](/tags/{{ tag[0] | replace: ' ', '_' }}/){% endfor %}
 
 ## Pages
 
