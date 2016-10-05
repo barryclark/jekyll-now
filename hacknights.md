@@ -12,6 +12,13 @@ permalink: /hack-nights/
 </center>
 <br>
 
+
+## <center>How to apply</center>{: .acm-blue }
+<center>
+	Currently there is no strict application to participate in Hack Nights, but interested students should join by completing the following <a href="https://goo.gl/forms/llBpQh1nfokjEsx82"> Sign Up Form</a>. After which you may start attending sessions.
+</center>
+<br>
+
 ## <center>Check out our Schedule </center>{: .acm-blue }
 
 ### <center>Week 3 (October 10, 2016) </center>{: .acm-cerulean }
