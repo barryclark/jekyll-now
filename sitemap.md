@@ -5,9 +5,11 @@ permalink: /sitemap2/
 
 ## Top Level
 
-* [index.html](/index.html)
+* [Front Page](/index.html)
 * [About](/about/)
 * [Privacy Policy](/privacy/)
+* [Sitemap (this page)](/sitemap/)
+* [Sitemap.xml](/sitemap.xml)
 
 ## Posts
 
