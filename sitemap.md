@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: /sitemap2/
+permalink: /sitemap/
 ---
 
 ## Top Level
@@ -19,7 +19,7 @@ permalink: /sitemap2/
 ## Tags
 
 {% for tag in site.tags %}
-* <a href="/tags/{{ tag[0] | replace: ' ', '_' }}/">{{ tag[0] }}</a>{% endfor %}
+* [{{ tag[0] }}](/tags/{{ tag[0] | replace: ' ', '_' }}/)
 
 ## Pages
 
