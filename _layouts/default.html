@@ -11,15 +11,11 @@
 	{% assign posts=paginator.posts %}
 {% endif %}
 
-{% if page.javascript %}{% assign javascripts = javascripts | push: page.javascript %}{% endif %}
-
 {% for javascript in page.javascripts %}
 	{% unless javascripts contains javascript %}
 		{% assign javascripts = javascripts | push: javascript %}
 	{% endunless %}
 {% endfor %}
-
-{% if page.css %}{% assign csses = csses | push: page.css %}{% endif %}
 
 {% for css in page.csses %}
 	{% unless csses contains css %}{% assign csses = csses | push: css %}{% endunless %}
@@ -29,18 +25,10 @@
 	{% for post in posts %}
 		{% if post.mathjax %}{% assign mathjax = true %}{% endif %}
 		{% if post.jquery %}{% assign jquery = true %}{% endif %}
-	
-		{% unless csses contains post.css %}
-			{% assign csses = csses | push: post.css %}
-		{% endunless %}
 		
 		{% for css in post.csses %}
 			{% unless csses contains css %}{% assign csses = csses | push: css %}{% endunless %}
 		{% endfor %}
-		
-		{% unless javascripts contains post.javascript %}
-			{% assign javascripts = javascripts | push: post.javascript %}
-		{% endunless %}
 		
 		{% for javascript in post.javascripts %}
 			{% unless javascripts contains javascript %}{% assign javascripts = javascripts | push: javascript %}{% endunless %}

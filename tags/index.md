@@ -2,7 +2,7 @@
 layout: default
 permalink: /tags/
 javascripts: [/js/d3.min.js, /js/d3.layout.cloud.js]
-css: /css/tags.css
+csses: [/css/tags.css]
 ---
 
 <hr />
