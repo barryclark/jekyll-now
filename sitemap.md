@@ -17,8 +17,8 @@ permalink: /sitemap2/
 
 ## Tags
 
-{% for tag in tags % | strip_new_lines }{% capture page_url %}/tags/{{ tag[0] | replace: ' ', '_' }}/{% endcapture %}
-* <a href="{{ page_url }}">{{ tag[0] }}</a>
+{% for tag in tags % | strip_new_lines }
+* <a href="/tags/{{ tag[0] | replace: ' ', '_' }}/">{{ tag[0] }}</a>
 {% endfor %}
 
 ## 404s
