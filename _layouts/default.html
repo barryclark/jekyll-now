@@ -35,8 +35,7 @@
 		{% endfor %}
 	{% endfor %}
 {% endunless %}
-{% endcapture %}{% assign jbcache = nil %}
-<!DOCTYPE html>
+{% endcapture %}{% assign jbcache = nil %}<!DOCTYPE html>
 <html lang="en-us">
 	<head itemscope itemtype="http://schema.org/WebSite">
 		<title itemprop='name'>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
@@ -82,15 +81,13 @@
 	          		{% include google/search.html %}
 	          		</div>
 	        	</header>
-	        	{% include google/adsense.html %}
-	        	
+	        	{% include google/adsense.html %}	        	
 	      	</div>
 		</div>
 		
 	    <div id="main" role="main" class="container">
-	  		{{ content }}
-	    </div>
-	
+		{{ content }}
+	    </div>	
 	    {% include footer.html %}
 	    {% include viglink.html %}
 	    {% include google/analytics.html %}
