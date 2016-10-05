@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Fone Bone 4" Vinyl Figure"
-description: "Cryptozoic captures Jeff Smith's Fone Bone in 4" Vinyl."
+title: 'Fone Bone 4" Vinyl Figure'
+description: 'Cryptozoic captures Jeff Smith's Fone Bone in 4" Vinyl.'
 category: toys
 featured: bonelogo.png
 amazonterm: "Bone"
