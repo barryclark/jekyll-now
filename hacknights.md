@@ -53,19 +53,19 @@ Turn your project ideas into reality, meet like minded students, and get career 
 
 ## <center>FAQ (Frequently Asked Questions)</center>{: .acm-blue }
 
-### <center>1. What qualifications are needed to come to Hack Nights?</center>{: .acm-cerulean }
-<center>None! Previous programming experience would be very helpful. The lectures will be a bit faster paced for complete beginners, however all skill levels are welcome: you will have access to mentors who will assist you throughout the evening, be able to participate in interactive Q & A, and meet like-minded students. If you are still hesitant please join Hack School, which is geared towards beginners and will take place on Wednesdays. Check the <a href="http://acm.cs.ucla.edu/calendar"> ACM Calendar</a> for more details!</center>
+### <center>What qualifications are needed to come to Hack Nights?</center>{: .acm-cerulean }
+<center>A lot of people have been asking, whether they need a lot of experience to come to hack nights. The workshops may be slightly fast for absolute beginners (Check out <a href="/hack-school/">Hack School</a>), but if you have done AP Computer Science/CS 31, have worked on a side project, or already know a language, then come out for hack nights. We will be teaching you skills from scratch assuming no prior knowledge on the topic, and then give you time to build your own projects. In short, you don't have to be a good programmer to come to hack nights, but by coming to hack nights you will absolutely leave a good programmer, and perhaps even get a job offer at an awesome company. There will be lots of mentors every night to provide assistance and answer any questions you may have.</center>
 
-### <center>2. What's your weekly schedule?</center>{: .acm-cerulean }
+### <center>What's your weekly schedule?</center>{: .acm-cerulean }
 <center>We'll meet every Monday from 7-11 PM, however you are free to leave after the Q & A and the lecture if you decide you don’t want to stay and hack.</center>
 
-### <center>3. I can't make that schedule, but can I still follow along?</center>{: .acm-cerulean }
+### <center>I can't make that schedule, but can I still follow along?</center>{: .acm-cerulean }
 <center>Absolutely! We'll post all materials, including full explanatory blog posts to our website. We also encourage you to come out to other ACM Hack events this quarter, including Hack School, Local Hack Day, and Hacker Expo. More details will soon follow on all of them.</center>
 
-### <center>4. What if I don’t have anybody to hack with?</center>{: .acm-cerulean }
+### <center>What if I don’t have anybody to hack with?</center>{: .acm-cerulean }
 <center>Pairing or teaming up is optional, but highly encouraged. If you'd like a team, but don't yet have suitable teammates, we will help you form groups.</center>
 
-### <center>5. What kind of learning atmosphere can I expect?</center>{: .acm-cerulean }
+### <center>What kind of learning atmosphere can I expect?</center>{: .acm-cerulean }
 <center>We will actively maintain a culture of mutual respect and kindness. We encourage listening openly and honestly, assuming good faith, and speaking kindly. Anyone who adversely affects this environment for the people around them will be asked to change for the better or else leave. Harassment of any kind will never be tolerated.</center>
 
 ~~~~
@@ -85,8 +85,8 @@ A: "That's such a girly interest to have. See, in my spare time, I learn more ab
 Person A above would get kicked out of Hack School very quickly (and actually ended up switching out of EE). Person B ended up doing very well in EE and beyond.
 ~~~~
 
-### <center>6. Is diversity a concern?</center>{: .acm-cerulean }
+### <center>Is diversity a concern?</center>{: .acm-cerulean }
 <center>You bet it is! We will be reaching out to groups like ACM-W, WATT, SWE, PAQ, NSBE, and SHIP throughout this year. The world of tech is missing out on a lot of wonderful ideas and impact. We want to change that. We welcome your feedback at any time (including now) for how we can do better.</center>
 
-### <center>7. Still have additional Questions?</center>{: .acm-cerulean }
+### <center>Still have additional Questions?</center>{: .acm-cerulean }
 <center>If you have any questions not answered above, please post them on our Facebook group: <a href="https://www.facebook.com/groups/hackatucla/">hack@ucla</a>. For any topics that need to be discussed privately, please email Akhil Nadendla: <a href="mailto:anadendla@ucla.edu?Subject=Hack Nights Concern" target="_top">anadendla@ucla.edu</a></center>
