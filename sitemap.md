@@ -3,7 +3,7 @@ layout: default
 permalink: /sitemap2/
 ---
 
-## Main
+## Top Level
 
 * [index.html](/index.html)
 * [About](/about/)
