@@ -18,3 +18,5 @@ permalink: /sitemap/
 ## Tags
 
 ## 404s
+
+* [404](/404.html)
