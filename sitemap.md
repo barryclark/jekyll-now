@@ -11,13 +11,13 @@ permalink: /sitemap2/
 
 ## Posts
 
-{% for post in site.posts | strip_new_lines  %}
+{% for post in site.posts %}
 * [{{ post.title }}]({{ post.url }})
 {% endfor%}
 
 ## Tags
 
-{% for tag in tags % | strip_new_lines }
+{% for tag in tags %}
 * <a href="/tags/{{ tag[0] | replace: ' ', '_' }}/">{{ tag[0] }}</a>
 {% endfor %}
 
