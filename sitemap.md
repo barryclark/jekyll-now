@@ -12,8 +12,7 @@ permalink: /sitemap2/
 ## Posts
 
 {% for post in site.posts %}
-* [{{ post.title }}]({{ post.url }})
-{% endfor%}
+* [{{ post.title }}]({{ post.url }}){% endfor%}
 
 ## Tags
 
