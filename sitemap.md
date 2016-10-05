@@ -12,12 +12,13 @@ permalink: /sitemap/
 ## Posts
 
 {% for post in site.posts %}
-### [{{ post.title }}]({{ post.url }})
+* [{{ post.title }}]({{ post.url }})
 {% endfor%}
 
 ## Tags
 
-{% for tag in site.tags %}
-{{ tag }}
-### [{{ tag[0] }}]({{ tag[1] }})
+{% for tag in site.tags %}{% capture page_url %}/tags/{{ tag[0] | replace: ' ', '_' }}/{% endcapture %}
+* [{{ tag[0] }}]({{ page_url }})
 {% endfor%}
+
+## 404s
