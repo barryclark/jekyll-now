@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: /sitemap/
+permalink: /sitemap2/
 ---
 
 ## Main
