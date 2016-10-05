@@ -5,9 +5,9 @@ permalink: /sitemap/
 
 ## Main
 
-### [index.html](/index.html)
-### [About](/about/)
-### [Privacy Policy](/privacy/)
+* [index.html](/index.html)
+* [About](/about/)
+* [Privacy Policy](/privacy/)
 
 ## Posts
 
