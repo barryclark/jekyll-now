@@ -4,7 +4,7 @@ title: Family Tree&#58; Name Analysis
 tags: [family tree]
 keywords: [names, statistics, data mining]
 javascripts: [/js/d3.min.js, /js/d3.layout.cloud.js]
-css: /css/names.css
+csses: [/css/names.css]
 excerpt: First name &amp; last name frequencies.
 image: /images/names.jpg
 ---
