@@ -7,27 +7,31 @@ csses: [/css/c3.css]
 
 <div id="balanceChart" style="width: 90%; height: 300px;"></div>
 <script type="text/javascript">
+    
+    function getBalances(item) {
+        var balances = [[0, item.balance, item.minpayment]];
+        
+        var month = 1;
+    
+        while (item.balance > 0) {
+            item.balance = item.balance * (1 + item.rate / 12) - item.payment;
+        
+            if(item.balance < 0) {
+                item.balance = 0;
+            }
+    
+            balances.push([month, item.balance, item.minpayment]);
 
+            month++;
+        }
+        
+        return balances;
+    }
+        
     var house = {balance:100000, rate:0.06, payment:1000, minpayment: 1000, minpaymenttype: 'dollar' };
     
-    var balances = [
-      ['month', 'balance', 'minpayment'],
-      [0, house.balance, house.minpayment]
-    ];
-    
-    var month = 1;
-    
-    while (house.balance > 0) {
-      house.balance = house.balance * (1 + house.rate / 12) - house.payment;
-        
-      if(house.balance < 0) {
-          house.balance = 0;
-      }
-    
-      balances.push([month, house.balance, house.minpayment]);
-        
-      month++;
-    }
+    var balances = [['month', 'balance', 'minpayment']];
+    balances.push(getBalances(house));
 
     var chart = c3.generate({
         bindto: '#balanceChart',
