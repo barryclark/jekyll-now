@@ -1,5 +1,6 @@
 ---
 layout: default
+published: true
 ---
 
 <article class="post">
@@ -28,7 +29,7 @@ layout: default
 {% endif %}  
   
   <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }} | {{ tags_content }}
+    Written on {{ page.date | date: "%B %e, %Y" }} <i>|</i> {{ tags_content }}
   </div>
 
   {% include disqus.html %}
