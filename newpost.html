@@ -132,10 +132,10 @@ $(document).ready(function() {
         if(debt.minpaymenttype == 'percent') {
             minpaymentString = minpaymentString + "max='100' value='" + debt.minpayment * 100 + "' />%";
         } else {
-            minpaymentString = "$" + minpaymentString + "value='" + debt.minpayment + "' />%";;
+            minpaymentString = "$" + minpaymentString + "value='" + debt.minpayment + "' />%";
         }
         
-        var row = '<tr><td>' + nameString + '</td><td>' + balanceString  + '</td><td>' + rateString + '</td><td>' + minpaymentString + '</td><td>' + minpaymenttypeString '</td></tr>';
+        var row = '<tr><td>' + nameString + '</td><td>' + balanceString  + '</td><td>' + rateString + '</td><td>' + minpaymentString + '</td><td>' + minpaymenttypeString + '</td></tr>';
         
         $('#debt-table').append(row);
     }
