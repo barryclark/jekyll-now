@@ -38,8 +38,10 @@ csses: [/css/c3.css]
         if(snowballs > 0) {
             var toSnowball = items.filter(function(item){return item.snowball == 0;});
             items.forEach(function(item){item.snowball = 0;});
-            var avalanche = highestRate(toSnowball);
-            avalanche.payment = avalanche.payment + snowballs;
+            if(toSnowball.length > 0) {
+                var avalanche = highestRate(toSnowball);
+                avalanche.payment = avalanche.payment + snowballs;
+            }
         }
     }
     
