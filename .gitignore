@@ -6,7 +6,6 @@ _site
 .sass-cache
 .jekyll-crosseverything_to_medium
 Gemfile.lock
-Gemfile.gitlab.lock
 node_modules
 package.json
 vendor
