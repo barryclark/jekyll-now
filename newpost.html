@@ -1,100 +1,130 @@
 ---
 layout: default
 permalink: /newpost/
+jquery: true
 javascripts: [/js/d3.min.js, /js/c3.min.js]
 csses: [/css/c3.css]
 ---
 
-<div id="balanceChart" style="width: 90%; height: 300px;"></div>
+<div id="balance-chart" style="width: 90%; height: 300px;"></div>
+<table id="">
+    <tr>
+        <th>Debt</th>
+        <th>Starting Balance</th>
+        <th>Rate</th>
+        <th>Minimum Payment</th>
+    </tr>
+</table>
 <script type="text/javascript">    
-function createDebt(balance,rate,payment,minpayment,minpaymenttype){
-    return {balance:balance,rate:rate,payment:payment,minpayment:minpayment,minpaymenttype:minpaymenttype,snowball:0,
-            getMinPayment:function(){
-                if(this.minpaymenttype=='percent'){return Math.round(this.balance*this.minpayment);}
-                else{return this.minpayment;}
-            },
-            update:function(){                    
-                this.balance = this.balance * (1 + this.rate / 12) - this.payment;
-                this.balance = Math.round(this.balance);
-
-                if(this.balance < this.payment){
-                    if(this.getminpaymenttype=='dollar'&&this.balance<this.minpayment){
-                        this.minpayment = this.balance;
-                    }
-                    this.snowball = this.payment - this.balance;
-                    this.payment = this.balance;
-                }
-
-                if(this.balance <= 0) {
-                    this.balance = 0;
-                    this.minpayment = 0;
-                    this.snowball = this.payment;
-                    this.payment = 0;
-                }
+function createDebt(name, balance, rate, payment, minpayment, minpaymenttype) {
+    return {
+        name: name,
+        balance: balance,
+        rate: rate,
+        payment: payment,
+        minpayment: minpayment,
+        minpaymenttype: minpaymenttype,
+        snowball: 0,
+        getMinPayment: function() {
+            if(this.minpaymenttype == 'percent') {
+                return Math.round(this.balance*this.minpayment);
+            } else {
+                return this.minpayment;
             }
+        },
+        update: function() {                    
+            this.balance = this.balance * (1 + this.rate / 12) - this.payment;
+            this.balance = Math.round(this.balance);
+
+            if(this.balance < this.payment){
+                if(this.getminpaymenttype=='dollar'&&this.balance<this.minpayment){
+                    this.minpayment = this.balance;
+                }
+                this.snowball = this.payment - this.balance;
+                this.payment = this.balance;
+            }
+
+            if(this.balance <= 0) {
+                this.balance = 0;
+                this.minpayment = 0;
+                this.snowball = this.payment;
+                this.payment = 0;
+            }
+        }
     };
 }
 
 function avalanche(items) {
-    var snowballs = items.reduce(function(p,c){return p + c.snowball;}, 0);
-    if(snowballs > 0){
-        var toSnowball = items.filter(function(item){return item.snowball == 0;});
-        items.forEach(function(item){item.snowball = 0;});
-        if(toSnowball.length > 0){
+    var snowballs = items.reduce(function(p, c) {return p + c.snowball;}, 0);
+    
+    if(snowballs > 0) {
+        var toSnowball = items.filter(function(item) {return item.snowball == 0;});
+        
+        items.forEach(function(item) {item.snowball = 0;});
+        
+        if(toSnowball.length > 0) {
             var avalanche = highestRate(toSnowball);
             avalanche.payment = avalanche.payment + snowballs;
         }
     }
 }
 
-function sumBalances(items){return items.reduce(function(p,c){return p + c.balance;},0);}
+function sumBalances(items) {
+    return items.reduce(function(p, c){return p + c.balance;}, 0);
+}
 
-function sumMinpayments(items){return items.reduce(function(p,c){return p + c.getMinPayment();},0);}
+function sumMinpayments(items) {
+    return items.reduce(function(p, c) {return p + c.getMinPayment();}, 0);
+}
 
 function lowestBalance(items){
-    return items.reduce(function(p, c){
-        if(p == null){return c;}
-        else if(p.balance > c.balance){return c;}
-        else{return p;}
+    return items.reduce(function(p, c) {
+        if(p == null) {return c;}
+        else if(p.balance > c.balance) {return c;}
+        else {return p;}
     });
  }
 
-function highestRate(items){
-    return items.reduce(function(p, c){
-        if(p == null){return c;}
-        else if(p.rate < c.rate){return c;}
+function highestRate(items) {
+    return items.reduce(function(p, c) {
+        if(p == null) {return c;}
+        else if(p.rate < c.rate) {return c;}
         else{return p;}
     });
 }
 
-function getBalances(items){        
-    var balances = [[0,sumBalances(items),sumMinpayments(items)]];
+function getBalances(items) {        
+    var balances = [[0,sumBalances(items), sumMinpayments(items)]];
 
     var month = 1;
 
-    while (sumBalances(items) > 0){
-        items.forEach(function(item){item.update();});
-        balances.push([month,sumBalances(items),sumMinpayments(items)]);
+    while (sumBalances(items) > 0) {
+        items.forEach(function(item) {item.update();});
+        balances.push([month,sumBalances(items), sumMinpayments(items)]);
+        
         avalanche(items);
         month++;
-        if(month > 500){break;}
+        
+        if(month > 500) {
+            break;
+        }
     }
 
     return balances;
 }
 
-var house = createDebt(20000,0.06,1000,100,'dollar');
-var car = createDebt(20000,0.1,250,250,'dollar');
-var creditcard = createDebt(5000,0.20,100,0.04,'percent');
-var everything = [house,car,creditcard];
+var house = createDebt('mortgage,' 20000, 0.06, 1000, 100, 'dollar');
+var car = createDebt('car loan', 20000, 0.1, 250, 250, 'dollar');
+var creditcard = createDebt('credit card', 5000, 0.20, 100, 0.04, 'percent');
+var everything = [house, car, creditcard];
 
-var balances = [['month','balance','minimum payment']];
+var balances = [['month', 'balance', 'minimum payment']];
 balances = balances.concat(getBalances(everything));
 
 var chart = c3.generate({
-    bindto:'#balanceChart',
-    data:{x:'month',rows:balances,type:'spline'},
-    axis:{x:{label:{text:'month',position:'outer-center'}},
-          y:{label:{text:'dollars',position:'outer-middle'}}}
+    bindto: '#balance-chart',
+    data:{x: 'month', rows:balances, type:'spline'},
+    axis:{x: {label: {text: 'month', position: 'outer-center'}},
+          y: {label: {text: 'dollars', position: 'outer-middle'}}}
 });
 </script>
