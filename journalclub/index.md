@@ -27,11 +27,11 @@ Journal club meetings take place on Tuesdays at 12:30 pm in the Life Sciences Bu
 - September 13: Luisa Le Donne
 - September 20: Jonathan Beck
 - September 27: Gulce Nazli Dikecligil
-- October 4: Yuan Zhao
 - October 11: Giancarlo La Camera
-- October 18: Sriram Ganeshan
-- October 25: Jin Wang
-- November 1: Shaohua Wang
+- October 18: Yuan Zhao
+- October 25: Sriram Ganeshan
+- November 1: Jin Wang
+- November 8: Shaohua Wang
 
 You can pick or [**suggest papers**](https://www.google.com/url?q=https://docs.google.com/document/d/17SuoVIIDbCae5GnxSHGO5BW2zbVP6wBCbaGGfgFLAOQ/edit?usp%3Dsharing&sa=D&ust=1472068897083000&usg=AFQjCNF5f_dZMloe4l3jWOm_mhxe7utbqw) to be discussed.
 
