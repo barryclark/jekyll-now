@@ -125,12 +125,13 @@ $(document).ready(function() {
         var nameString = "<input type='text' name='name' value='" + debt.name + "' />";
         var balanceString = "$<input type='number' name='balance' value='" + debt.balance + "' />";
         var rateString = "<input type='number' name='rate' min='0' max='100'  value='" + debt.rate * 100 + "' />%";;
-        var minpaymentString;
+        var minpaymentString = "<input type='number' name='minpayment' min='0' ";
+        var minpaymenttypeString = "<select><option value='dollar'>dollar</option><option value='percent'>percent</option></select>";
         
         if(debt.minpaymenttype == 'percent') {
-            minpaymentString = debt.minpayment * 100 + "%";
+            minpaymentString = minpaymentString + "max='100' value='" + debt.minpayment * 100 + " />%";
         } else {
-            minpaymentString = "$" + debt.minpayment;
+            minpaymentString = "$" + minpaymentString + "value='" + debt.minpayment + " />%";;
         }
         
         var row = '<tr><td>' + nameString + '</td><td>' + balanceString  + '</td><td>' + rateString + '</td><td>' + minpaymentString + '</td></tr>';
