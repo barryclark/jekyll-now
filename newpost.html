@@ -9,23 +9,36 @@ csses: [/css/c3.css]
 <script type="text/javascript">    
     function createItem(balance, rate, payment, minpayment) {
         return {balance:balance, 
-                    rate:rate, 
-                    payment:payment, 
-                    minpayment: minpayment, 
-                    minpaymenttype: 'dollar',
-                    update: function() {
-                        this.balance = this.balance * (1 + this.rate / 12) - this.payment;
-                        
-                        if(this.balance < this.minpayment) {
-                            this.minpayment = this.balance;   
-                        }
-        
-                        if(this.balance <= 0) {
-                            this.balance = 0;
-                            this.minpayment = 0;
-                        }
+                rate:rate, 
+                payment:payment, 
+                minpayment: minpayment,
+                minpaymenttype: 'dollar',
+                snowball:0,
+                update: function() {
+                    this.balance = this.balance * (1 + this.rate / 12) - this.payment;
+
+                    if(this.balance < this.payment) {
+                        this.minpayment = this.balance;
+                        this.snowball = this.payment - this.balance;
+                        this.payment = this.balance;
                     }
+
+                    if(this.balance <= 0) {
+                        this.balance = 0;
+                        this.minpayment = 0;
+                        this.snowball = this.payment;
+                        this.payment = 0;
+                    }
+                }
         };
+    }
+    
+    function avalanche(items) {
+        var snowballs = items.reduce(function(p, c){return p + c.snowball;}, 0)
+        items.forEach(function(item){item.snowball = 0;});
+        var avalanche = highestRate(items);
+        avalanche.payment = avalanche.payment + snowballs;
+        return avalanche;
     }
     
     function sumBalances(items) {
@@ -61,6 +74,8 @@ csses: [/css/c3.css]
             items.forEach(function(item){item.update();});
     
             balances.push([month,sumBalances(items),sumMinpayments(items)]);
+            
+            avalanche(items);
 
             month++;
             
