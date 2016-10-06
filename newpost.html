@@ -122,7 +122,9 @@ $(document).ready(function() {
     for(var i = 0; i < everything.length; i++) {
         var debt = everything[i];
         
-        var rateString = debt.rate * 100 + "%";
+        var nameString = "<input type='text' name='name' value='" + debt.name + "' />";
+        var balanceString = "$<input type='number' name='balance' value='" + debt.balance + "' />";
+        var rateString = "<input type='number' name='rate' min='0' max='100'  value='" + debt.rate * 100 + "' />%";;
         var minpaymentString;
         
         if(debt.minpaymenttype == 'percent') {
@@ -131,7 +133,7 @@ $(document).ready(function() {
             minpaymentString = "$" + debt.minpayment;
         }
         
-        var row = '<tr><td>' + debt.name + '</td><td>' + debt.balance  + '</td><td>' + rateString + '%</td><td>' + debt.minpayment + '</td></tr>';
+        var row = '<tr><td>' + nameString + '</td><td>' + balanceString  + '</td><td>' + rateString + '</td><td>' + minpaymentString + '</td></tr>';
         
         $('#debt-table').append(row);
     }
