@@ -120,9 +120,9 @@ $(document).ready(function() {
     var everything = [house, car, creditcard];
     
     for(var i = 0; i < everything.length; i++) {
-        var debt = everything[0];
+        var debt = everything[i];
         
-        var row = '<tr><td>' + debt.name + '</td><td>' + debt.balance  + '</td><td>' + debt.rate + '</td><td>' + debt.minpayment + '</td></tr>';
+        var row = '<tr><td>' + debt.name + '</td><td>' + debt.balance  + '</td><td>' + debt.rate + '%</td><td>' + debt.minpayment + '</td></tr>';
         
         $('#debt-table').append(row);
     }
