@@ -31,8 +31,7 @@ csses: [/css/c3.css]
     var house = {balance:100000, rate:0.06, payment:1000, minpayment: 1000, minpaymenttype: 'dollar' };
     
     var balances = [['month', 'balance', 'minpayment']];
-    var toAdd = getBalances(house);
-    balances.concat(toAdd);
+    balances = balances.concat(getBalances(house));
 
     var chart = c3.generate({
         bindto: '#balanceChart',
