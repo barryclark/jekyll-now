@@ -14,15 +14,15 @@ csses: [/css/c3.css]
                     minpayment: minpayment, 
                     minpaymenttype: 'dollar',
                     update: function() {
-                        balance = balance * (1 + rate / 12) - payment;
+                        this.balance = this.balance * (1 + this.rate / 12) - this.payment;
                         
-                        if(balance < minpayment) {
-                            minpayment = balance;   
+                        if(this.balance < this.minpayment) {
+                            this.minpayment = this.balance;   
                         }
         
-                        if(balance <= 0) {
-                            balance = 0;
-                            minpayment = 0;
+                        if(this.balance <= 0) {
+                            this.balance = 0;
+                            this.minpayment = 0;
                         }
                     }
         };
