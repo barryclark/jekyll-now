@@ -16,7 +16,7 @@ csses: [/css/c3.css]
                 snowball:0,
                 getMinPayment: function(){
                     if(this.minpaymenttype == 'percent') {
-                        return this.balance * this.minpayment;
+                        return Math.round(this.balance * this.minpayment);
                     } else {
                         return this.minpayment;
                     }
