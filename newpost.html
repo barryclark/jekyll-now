@@ -10,18 +10,15 @@ csses: [/css/c3.css]
 function createItem(balance,rate,payment,minpayment,minpaymenttype){
     return {balance:balance,rate:rate,payment:payment,minpayment:minpayment,minpaymenttype:minpaymenttype,snowball:0,
             getMinPayment:function(){
-                if(this.minpaymenttype == 'percent'){
-                    return Math.round(this.balance * this.minpayment);
-                } else {
-                    return this.minpayment;
-                }
+                if(this.minpaymenttype=='percent'){return Math.round(this.balance * this.minpayment);}
+                else{return this.minpayment;}
             },
-            update: function(){                    
+            update:function(){                    
                 this.balance = this.balance * (1 + this.rate / 12) - this.payment;
                 this.balance = Math.round(this.balance);
 
                 if(this.balance < this.payment){
-                    if(this.getminpaymenttype == 'dollar' && this.balance < this.minpayment) {
+                    if(this.getminpaymenttype=='dollar'&&this.balance<this.minpayment){
                         this.minpayment = this.balance;
                     }
                     this.snowball = this.payment - this.balance;
