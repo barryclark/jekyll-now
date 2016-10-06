@@ -36,7 +36,7 @@ csses: [/css/c3.css]
     function avalanche(items) {
         var snowballs = items.reduce(function(p, c){return p + c.snowball;}, 0)
         if(snowballs > 0) {
-            var toSnowball = items.filter(function(item){return item.snowball < 0;};);
+            var toSnowball = items.filter(function(item){return item.snowball < 0;});
             items.forEach(function(item){item.snowball = 0;});
             var avalanche = highestRate(toSnowball);
             avalanche.payment = avalanche.payment + snowballs;
