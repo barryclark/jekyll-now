@@ -37,7 +37,7 @@ csses: [/css/c3.css]
         var month = 1;
     
         while (items.reduce(function (p, c) { return p + c.balance; }, 0) > 0) {
-            items.foreach(function(item){item.update();});
+            items.forEach(function(item){item.update();});
     
             balances.push([month, 
                            items.reduce(function (p, c) { return p + c.balance; }, 0),
