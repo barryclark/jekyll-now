@@ -20,7 +20,7 @@ Come to one of our meetups in [Athens](http://www.meetup.com/BlockchainGreece-0/
 {% endfor %}
 </table>
 
-Last update: 2016-08-22
+Last update: 2016-10-06
 
 <!-- <div class="posts">
   {% for post in site.posts %}

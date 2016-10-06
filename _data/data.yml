@@ -326,6 +326,14 @@
   location_gr: Ελληνικό, Αττική, Ελλάδα
   location_en: Elliniko, Attica, Greece
 
+- company_gr: Φαρμακείο Βρανά και e-farmacy.gr
+  company_en: Vrana Pharmacy and e-farmacy.gr
+  url: http://www.e-farmacy.gr
+  category_gr: Φαρμακείο και ηλεκτρονικό φαρμακείο
+  category_en: Pharmacy and online pharmacy
+  location_gr: Ελληνικό, Αττική, Ελλάδα
+  location_en: Elliniko, Attica, Greece
+
 - company_gr: Galinos.gr
   company_en: Galinos.gr
   url: http://www.galinos.gr/
@@ -333,7 +341,7 @@
   category_en: Pharmaceutical drug guide
   location_gr: Θεσσαλονίκη, Μακεδονία, Ελλάδα
   location_en: Thessaloniki, Macedonia, Greece
- 
+   
 - company_gr: Κέντρο Γναθοπροσωπικής Παθολογίας & Χειρουργικής
   company_en: Oral & Maxillofacial Medicine & Surgery Center
   url: http://www.maxillofacial.gr
@@ -454,6 +462,14 @@
   location_gr: Ιστιαία, Εύβοια, Ελλάδα
   location_en: Istiaia, Evia, Greece    
 
+- company_gr: Here Comes The Paint TShirt Printing
+  company_en: Here Comes The Paint TShirt Printing
+  url: http://tshirtprinting.gr
+  category_gr: Εκτυπώσεις TShirts
+  category_en: TShirt Printing
+  location_gr: Αττική, Ελλάδα
+  location_en: Attica, Greece    
+
 - company_gr: Πανεπιστήμιο Λευκωσίας
   company_en: University of Nicosia
   url: http://www.unic.ac.cy
@@ -474,7 +490,7 @@
   company_en: Gyft
   url: https://gyft.com
   category_gr: Δωροκάρτες Ηνωμένων Πολιτειών (iTunes US, Amazon.com, eBay, Hotels.com, ...)
-  category_en: US gift cards (iTunes US, Amazon.com, eBay, Hotels.com, ...)
+  category_en: US gift cards (Amazon.com, eBay, Hotels.com, ...)
   location_gr: Διεθνές
   location_en: International
 
