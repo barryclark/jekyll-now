@@ -30,7 +30,7 @@ csses: [/css/c3.css]
     }
     
     function getBalances(items) {
-        var emptyItem = {balance:0,minpayment.0};
+        var emptyItem = {balance:0,minpayment:0};
         
         var balances = [[0, 
                          items.reduce(function (p, c) { return p.balance + c.balance; }, emptyItem),
