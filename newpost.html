@@ -45,6 +45,10 @@ csses: [/css/c3.css]
                            items.reduce(function (p, c) { return p + c.minpayment;}, 0)]);
 
             month++;
+            
+            if(month > 500) {
+                break;
+            }
         }
         
         return balances;
