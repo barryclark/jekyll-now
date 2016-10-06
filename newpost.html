@@ -10,7 +10,7 @@ csses: [/css/c3.css]
 function createItem(balance,rate,payment,minpayment,minpaymenttype){
     return {balance:balance,rate:rate,payment:payment,minpayment:minpayment,minpaymenttype:minpaymenttype,snowball:0,
             getMinPayment:function(){
-                if(this.minpaymenttype=='percent'){return Math.round(this.balance * this.minpayment);}
+                if(this.minpaymenttype=='percent'){return Math.round(this.balance*this.minpayment);}
                 else{return this.minpayment;}
             },
             update:function(){                    
