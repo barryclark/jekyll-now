@@ -24,7 +24,7 @@ csses: [/css/tags.css]
 <script type="text/javascript">
     var fill = d3.scale.category20();
     var layout = d3.layout.cloud().size([700, 500]).words([
-      {% for tag in site.tags %}{% assign t = tag | first %}{% assign posts = tag | last %}['{{ t }}', {{ posts | size }}]{% unless forloop.last %},{% endunless %}{% endfor %}
+      {% for tag in site.tags %}['{{ tag[0] }}', {{ tag[1] | size }}]{% unless forloop.last %},{% endunless %}{% endfor %}
     ].map(function(d) {
         return {
             text: d[0],
