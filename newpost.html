@@ -129,9 +129,9 @@ $(document).ready(function() {
         var minpaymenttypeString = "<select><option value='dollar'>dollar</option><option value='percent'>percent</option></select>";
         
         if(debt.minpaymenttype == 'percent') {
-            minpaymentString = minpaymentString + "max='100' value='" + debt.minpayment * 100 + " />%";
+            minpaymentString = minpaymentString + "max='100' value='" + debt.minpayment * 100 + "' />%";
         } else {
-            minpaymentString = "$" + minpaymentString + "value='" + debt.minpayment + " />%";;
+            minpaymentString = "$" + minpaymentString + "value='" + debt.minpayment + "' />%";;
         }
         
         var row = '<tr><td>' + nameString + '</td><td>' + balanceString  + '</td><td>' + rateString + '</td><td>' + minpaymentString + '</td></tr>';
