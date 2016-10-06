@@ -6,8 +6,7 @@ csses: [/css/c3.css]
 ---
 
 <div id="balanceChart" style="width: 90%; height: 300px;"></div>
-<script type="text/javascript">
-    
+<script type="text/javascript">    
     function createItem(balance, rate, payment, minpayment) {
         var item = {balance:balance, 
                     rate:rate, 
@@ -27,6 +26,8 @@ csses: [/css/c3.css]
                         }
                     }
         };
+        
+        return item;
     }
     
     function getBalances(items) {        
