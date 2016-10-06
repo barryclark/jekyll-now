@@ -16,9 +16,9 @@ csses: [/css/c3.css]
     ];
     
     for (i = 1; i < 12; i++) {
-      house.balance = house.balance * (1 + house.rate) - house.payment;
+      house.balance = house.balance * (1 + house.rate / 12) - house.payment;
     
-      balances.push([0, house.balance, house.minpayment]);
+      balances.push([i, house.balance, house.minpayment]);
     }
 
     var chart = c3.generate({
