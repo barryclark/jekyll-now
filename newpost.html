@@ -30,18 +30,20 @@ csses: [/css/c3.css]
     }
     
     function getBalances(items) {
+        var emptyItem = {balance:0,minpayment.0};
+        
         var balances = [[0, 
-                         items.reduce(function (p, c) { return p.balance + c.balance; }, 0),
-                         items.reduce(function (p, c) { return p.minpayment + c.minpayment;}, 0)]];
+                         items.reduce(function (p, c) { return p.balance + c.balance; }, emptyItem),
+                         items.reduce(function (p, c) { return p.minpayment + c.minpayment;}, emptyItem)]];
         
         var month = 1;
     
-        while (items.reduce(function (p, c) { return p.balance + c.balance; }, 0) > 0) {
+        while (items.reduce(function (p, c) { return p.balance + c.balance; }, emptyItem) > 0) {
             items.foreach(function(item){item.update();});
     
             balances.push([month, 
-                           items.reduce(function (p, c) { return p.balance + c.balance; }, 0),
-                           items.reduce(function (p, c) { return p.minpayment + c.minpayment;}, 0)]);
+                           items.reduce(function (p, c) { return p.balance + c.balance; }, emptyItem),
+                           items.reduce(function (p, c) { return p.minpayment + c.minpayment;}, emptyItem)]);
 
             month++;
         }
