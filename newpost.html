@@ -12,6 +12,7 @@ csses: [/css/c3.css]
         <th>Debt</th>
         <th>Starting Balance</th>
         <th>Rate</th>
+        <th>Payment</th>
         <th>Minimum Payment</th>
         <th>Minimum Payment Type</th>
     </tr>
@@ -125,17 +126,27 @@ $(document).ready(function() {
         
         var nameString = "<input type='text' name='name' value='" + debt.name + "' />";
         var balanceString = "$<input type='number' name='balance' value='" + debt.balance + "' />";
-        var rateString = "<input type='number' name='rate' min='0' max='100'  value='" + debt.rate * 100 + "' />%";;
+        var rateString = "<input type='number' name='rate' min='0' max='100'  value='" + debt.rate * 100 + "' />%";
+        var paymentString = "$<input type='number' name='payment' min='0' value='" + debt.payment + "' />;
         var minpaymentString = "<input type='number' name='minpayment' min='0' ";
-        var minpaymenttypeString = "<select><option value='dollar'" + (debt.minpaymenttype == 'dollar' ? ' selected' : '') + ">dollar</option><option value='percent'" + (debt.minpaymenttype == 'percent' ? ' selected' : '') + ">percent</option></select>";
+        var minpaymenttypeString = "<select><option value='dollar'" 
+            + (debt.minpaymenttype == 'dollar' ? ' selected' : '') 
+            + ">dollar</option><option value='percent'" 
+            + (debt.minpaymenttype == 'percent' ? ' selected' : '')
+            + ">percent</option></select>";
         
         if(debt.minpaymenttype == 'percent') {
             minpaymentString = minpaymentString + "max='100' value='" + debt.minpayment * 100 + "' />%";
         } else {
-            minpaymentString = "$" + minpaymentString + "value='" + debt.minpayment + "' />%";
+            minpaymentString = "$" + minpaymentString + "value='" + debt.minpayment + "' />";
         }
         
-        var row = '<tr><td>' + nameString + '</td><td>' + balanceString  + '</td><td>' + rateString + '</td><td>' + minpaymentString + '</td><td>' + minpaymenttypeString + '</td></tr>';
+        var row = '<tr><td>' + nameString + '</td><td>' 
+            + balanceString  + '</td><td>' 
+            + rateString + '</td><td>' 
+            + paymentString + '</td><td>' 
+            + minpaymentString + '</td><td>' 
+            + minpaymenttypeString + '</td></tr>';
         
         $('#debt-table').append(row);
     }
