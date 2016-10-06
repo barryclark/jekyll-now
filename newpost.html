@@ -15,10 +15,18 @@ csses: [/css/c3.css]
       [0, house.balance, house.minpayment]
     ];
     
-    for (i = 1; i < 12; i++) {
-      house.balance = house.balance * (1 + house.rate / 12) - house.payment;
+    var month = 1;
     
-      balances.push([i, house.balance, house.minpayment]);
+    while (house.balance > 0) {
+      house.balance = house.balance * (1 + house.rate / 12) - house.payment;
+        
+      if(house.balance < 0) {
+          house.balance = 0;
+      }
+    
+      balances.push([month, house.balance, house.minpayment]);
+        
+      month++;
     }
 
     var chart = c3.generate({
