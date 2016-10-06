@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/758,181520623,2016-10-06 20:44:28,2016-10-06 20:44:09,Accumoli - Avviso per richiesta Struttura Abitativa Emergenziale SAE Meglio - Errata corrige,,,"[""Accettato"", ""Bollettino"", ""Facebook"", ""Notizie Utili""]",,,"{""data"": ""06/10/2016"", ""descrizione"": ""Al fine di poter avere in dotazione la struttura abitativa emergenziale SAE (o MAP) si pregano tutti i cittadini residenti, per nuclei familiari, che a seguito della verifica della propria abitazione hanno avuto esito \u201cE\u201d, \u201cF\u201d o ricadenti all\u2019interno delle zone Rosse , le quali potranno subire restringimenti ad ultimazione delle verifiche dei fabbricati, di venire a sottoscrivere e depositare presso gli uffici comunali di Accumoli. Sul sito giorni e orari e ulteriori dettagli."", ""link"": ""http://comunicacity.net/accumoli/2016/10/04/avviso-per-la-richiesta-della-struttura-abitativa-emergenziale-sae-meglio-conosciuto-come-map-modulo-abitativo-provvisorio/"", ""titolo"": ""Accumoli - Avviso per richiesta Struttura Abitativa Emergenziale SAE Meglio - Errata corrige""}","<pre><yamldata>titolo: 'Accumoli - Avviso per richiesta Struttura Abitativa Emergenziale SAE Meglio - Errata corrige'
+descrizione: 'Al fine di poter avere in dotazione la struttura abitativa emergenziale SAE (o MAP) si pregano tutti i cittadini residenti, per nuclei familiari, che a seguito della verifica della propria abitazione hanno avuto esito “E”, “F” o ricadenti all’interno delle zone Rosse , le quali potranno subire restringimenti ad ultimazione delle verifiche dei fabbricati, di venire a sottoscrivere e depositare presso gli uffici comunali di Accumoli. Sul sito giorni e orari e ulteriori dettagli.'
+link: 'http://comunicacity.net/accumoli/2016/10/04/avviso-per-la-richiesta-della-struttura-abitativa-emergenziale-sae-meglio-conosciuto-come-map-modulo-abitativo-provvisorio/'
+data: 06/10/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/757,181517905,2016-10-06 20:32:21,2016-10-06 20:31:38,Amici di Grisciano,,,"[""Accettato"", ""Facebook"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Amici di Grisciano"", ""data"": ""06/10/2016"", ""descrizione"": ""Raccolta fondi su Rete del dono dell'associazione Amici di Grisciano per la ricostruzione di Grisciano."", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""http://www.associazioneamicidigrisciano.it/aiutaci-a-ricostruire-grisciano/"", ""postale"": """"}","<pre><yamldata>chi: 'Amici di Grisciano'
 descrizione: 'Raccolta fondi su Rete del dono dell''associazione Amici di Grisciano per la ricostruzione di Grisciano.'
 intestazione: ''
@@ -4851,17 +4856,6 @@ postale: ''
 causale: ''
 link: ''
 email: ''
-data: 13/09/2016
-</yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/161,176719155,2016-09-13 18:52:18,2016-09-13 18:48:01,Provincia di Reggio Emilia,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Terremoto Centro Italia 2016"", ""chi"": ""Provincia di Reggio Emilia"", ""data"": ""13/09/2016"", ""descrizione"": ""Le somme versate saranno destinate a progetti di assistenza e ricostruzione seguiti direttamente dalla Provincia di Reggio Emilia. Attivato c/c presso \""Unicredit\"""", ""email"": null, ""iban"": ""IT12I 02008 12800 000100658213"", ""intestazione"": ""La Provincia di Reggio Emilia per le emergenze e la solidariet\u00e0"", ""link"": """", ""postale"": """"}","<pre><yamldata>chi: 'Provincia di Reggio Emilia'
-descrizione: 'Le somme versate saranno destinate a progetti di assistenza e ricostruzione seguiti direttamente dalla Provincia di Reggio Emilia. Attivato c/c presso ""Unicredit""'
-intestazione: 'La Provincia di Reggio Emilia per le emergenze e la solidarietà'
-iban: 'IT12I 02008 12800 000100658213'
-bic: ''
-postale: ''
-causale: 'Terremoto Centro Italia 2016'
-link: ''
-email: 
 data: 13/09/2016
 </yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/161,176719155,2016-09-13 18:52:18,2016-09-13 18:48:01,Provincia di Reggio Emilia,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Terremoto Centro Italia 2016"", ""chi"": ""Provincia di Reggio Emilia"", ""data"": ""13/09/2016"", ""descrizione"": ""Le somme versate saranno destinate a progetti di assistenza e ricostruzione seguiti direttamente dalla Provincia di Reggio Emilia. Attivato c/c presso \""Unicredit\"""", ""email"": null, ""iban"": ""IT12I 02008 12800 000100658213"", ""intestazione"": ""La Provincia di Reggio Emilia per le emergenze e la solidariet\u00e0"", ""link"": """", ""postale"": """"}","<pre><yamldata>chi: 'Provincia di Reggio Emilia'
