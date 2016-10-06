@@ -13,6 +13,7 @@ csses: [/css/c3.css]
         <th>Starting Balance</th>
         <th>Rate</th>
         <th>Minimum Payment</th>
+        <th>Minimum Payment Type</th>
     </tr>
 </table>
 <script type="text/javascript">    
@@ -134,7 +135,7 @@ $(document).ready(function() {
             minpaymentString = "$" + minpaymentString + "value='" + debt.minpayment + "' />%";;
         }
         
-        var row = '<tr><td>' + nameString + '</td><td>' + balanceString  + '</td><td>' + rateString + '</td><td>' + minpaymentString + '</td></tr>';
+        var row = '<tr><td>' + nameString + '</td><td>' + balanceString  + '</td><td>' + rateString + '</td><td>' + minpaymentString + '</td><td>' + minpaymenttypeString '</td></tr>';
         
         $('#debt-table').append(row);
     }
