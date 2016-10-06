@@ -30,19 +30,39 @@ csses: [/css/c3.css]
         return item;
     }
     
+    function sumBalances(items) {
+        items.reduce(function(p, c){return p + c.balance;}, 0)
+    }
+    
+    function sumMinpayments(items) {
+        items.reduce(function(p, c){return p + c.minpayment;}, 0)
+    }
+    
+    function lowestBalance(items) {
+        items.reduce(function(p, c){
+            if(p == null){return c;}
+            else if(p.balance > c.balance){return c;}
+            else(){return p;}
+        }
+     }
+    
+    function highestRate(items) {
+        items.reduce(function(p, c){
+            if(p == null){return c;}
+            else if(p.rate < c.rate){return c;}
+            else(){return p;}
+        }
+    }
+    
     function getBalances(items) {        
-        var balances = [[0, 
-                         items.reduce(function (p, c) { return p + c.balance; }, 0),
-                         items.reduce(function (p, c) { return p + c.minpayment;}, 0)]];
+        var balances = [[0,sumBalances(items),sumMinpayments(items)]];
         
         var month = 1;
     
-        while (items.reduce(function (p, c) { return p + c.balance; }, 0) > 0) {
+        while (sumBalances(items) > 0) {
             items.forEach(function(item){item.update();});
     
-            balances.push([month, 
-                           items.reduce(function (p, c) { return p + c.balance; }, 0),
-                           items.reduce(function (p, c) { return p + c.minpayment;}, 0)]);
+            balances.push([month,sumBalances(items),sumMinpayments(items)]);
 
             month++;
             
