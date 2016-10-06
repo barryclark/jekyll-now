@@ -6,7 +6,7 @@ permalink: /temp/
 
 tag[0] = {{ tag[0] }}
 
-tag[2] = {{ tag[2] }}
+tag[1] size = {{ tag[2] | size }}
 
 {% break %}
 {% endfor %}
