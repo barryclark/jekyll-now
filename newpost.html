@@ -122,9 +122,9 @@ $(document).ready(function() {
     for(var i = 0; i < everything.length; i++) {
         var debt = everything[0];
         
-        var row = '<tr><td>' + debt.name + '</td><td>' + debt.balance  + '</td><td>' + debt.rate + '</td><td>' + debt.minpayment + '</td></tr>'
+        var row = '<tr><td>' + debt.name + '</td><td>' + debt.balance  + '</td><td>' + debt.rate + '</td><td>' + debt.minpayment + '</td></tr>';
         
-        $('#debt-table').appennd(row);
+        $('#debt-table').append(row);
     }
 
     var balances = [['month', 'balance', 'minimum payment']];
