@@ -20,7 +20,7 @@ csses: [/css/c3.css]
                     } else {
                         return this.minpayment;
                     }
-                }
+                },
                 update: function(){                    
                     this.balance = this.balance * (1 + this.rate / 12) - this.payment;
                     this.balance = Math.round(this.balance);
