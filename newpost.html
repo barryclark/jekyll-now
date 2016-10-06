@@ -49,8 +49,8 @@ csses: [/css/c3.css]
         return balances;
     }
         
-    var house = {balance:100000, rate:0.06, payment:1000, minpayment: 1000, minpaymenttype: 'dollar' };
-    var car = {balance:20000, rate:0.1, payment:250, minpayment: 250, minpaymenttype: 'dollar' };
+    var house = createItem(100000, 0.06, 1000, 1000);
+    var car = createItem(20000, 0.1, 250, 250);
     var everything = [house, car];
     
     var balances = [['month', 'balance', 'minpayment']];
