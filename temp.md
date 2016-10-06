@@ -1,4 +1,5 @@
 ---
+permalink: /temp/
 ---
 
 {% assign tag = site.tags[0] %}
