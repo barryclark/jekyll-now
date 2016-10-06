@@ -8,19 +8,40 @@ csses: [/css/c3.css]
 <div id="balanceChart" style="width: 90%; height: 300px;"></div>
 <script type="text/javascript">
     
-    function getBalances(item) {
-        var balances = [[0, item.balance, item.minpayment]];
+    function createItem(balance, rate, payment, minpayment) {
+        var item = {balance:balance, 
+                    rate:rate, 
+                    payment:payment, 
+                    minpayment: minpayment, 
+                    minpaymenttype: 'dollar',
+                    update: function() {
+                        balance = balance * (1 + rate / 12) - payment;
+                        
+                        if(balance < minpayment {
+                            minpayment = balance;   
+                        }
+        
+                        if(balance <= 0) {
+                            balance = 0;
+                            minpayment = 0;
+                        }
+                    }
+        };
+    }
+    
+    function getBalances(items) {
+        var balances = [[0, 
+                         items.reduce(function (p, c) { return p.balance + c.balance; }, 0),
+                         items.reduce(function (p, c) { return p.minpayment + c.minpayment;}, 0)]];
         
         var month = 1;
     
-        while (item.balance > 0) {
-            item.balance = item.balance * (1 + item.rate / 12) - item.payment;
-        
-            if(item.balance < 0) {
-                item.balance = 0;
-            }
+        while (items.reduce(function (p, c) { return p.balance + c.balance; }, 0) > 0) {
+            items.foreach(function(item){item.update();};
     
-            balances.push([month, item.balance, item.minpayment]);
+            balances.push([month, 
+                           items.reduce(function (p, c) { return p.balance + c.balance; }, 0),
+                           items.reduce(function (p, c) { return p.minpayment + c.minpayment;}, 0)]);
 
             month++;
         }
@@ -29,9 +50,11 @@ csses: [/css/c3.css]
     }
         
     var house = {balance:100000, rate:0.06, payment:1000, minpayment: 1000, minpaymenttype: 'dollar' };
+    var car = {balance:20000, rate:0.1, payment:250, minpayment: 250, minpaymenttype: 'dollar' };
+    var everything = [house, car];
     
     var balances = [['month', 'balance', 'minpayment']];
-    balances = balances.concat(getBalances(house));
+    balances = balances.concat(getBalances(everything));
 
     var chart = c3.generate({
         bindto: '#balanceChart',
