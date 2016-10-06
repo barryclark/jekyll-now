@@ -1,0 +1,45 @@
+---
+layout: default
+javascripts: [/js/d3.min.js, /js/c3.min.js]
+csses: [/css/c3.css]
+---
+
+<div id="balanceChart" style="width: 90%; height: 300px;"></div>
+<script type="text/javascript">
+
+    var house = {balance:100000, rate:0.06, payment:10000, minpayment: 10000, minpaymenttype: 'dollar' };
+    
+    var balances = [
+      ['month', 'balance', 'minpayment'],
+      [0, house.balance, house.minpayment]
+    ];
+    
+    for (i = 1; i < 12; i++) {
+      house.balance = house.balance * (1 + house.rate) - house.payment;
+    
+      balances.push([0, house.balance, house.minpayment]);
+    }
+
+    var chart = c3.generate({
+        bindto: '#balanceChart',
+        data: {
+            x: 'month',
+            rows: balances,
+            type: 'spline'
+        },
+        axis: {
+            x: {
+                label: {
+                    text: 'month',
+                    position: 'outer-center'
+                }
+            },
+            y: {
+                label: {
+                    text: 'dollars',
+                    position: 'outer-middle'
+                }
+            }
+        }
+    });
+</script>
