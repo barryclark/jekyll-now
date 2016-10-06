@@ -16,6 +16,7 @@ csses: [/css/c3.css]
                 snowball:0,
                 update: function() {
                     this.balance = this.balance * (1 + this.rate / 12) - this.payment;
+                    this.balance = Math.round(balance);
 
                     if(this.balance < this.payment) {
                         this.minpayment = this.balance;
