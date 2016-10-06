@@ -7,16 +7,19 @@ csses: [/css/c3.css, /css/debtChart.css]
 ---
 
 <div id="balance-chart" style="width: 90%; height: 300px;"></div>
-<table id="debt-table">
-    <tr>
-        <th>Debt</th>
-        <th>Starting Balance</th>
-        <th>Rate</th>
-        <th>Payment</th>
-        <th>Minimum Payment</th>
-        <th>Minimum Payment Type</th>
-    </tr>
-</table>
+<form name="form1" method="GET" action="newpost.html">		
+    <table id="debt-table">
+        <tr>
+            <th>Debt</th>
+            <th>Starting Balance</th>
+            <th>Rate</th>
+            <th>Payment</th>
+            <th>Minimum Payment</th>
+            <th>Minimum Payment Type</th>
+        </tr>
+    </table>
+    <input type="submit" value="Submit">
+</form>
 <script type="text/javascript">    
 function createDebt(name, balance, rate, payment, minpayment, minpaymenttype) {
     return {
