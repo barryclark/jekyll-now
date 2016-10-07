@@ -7,9 +7,9 @@ csses: [/css/c3.css, /css/debtChart.css]
 ---
 
 <h2>Total Balance and Minimum Payment over Time</h2>
-<div id="balance-chart" style="width: 90%; height: 300px;"></div>
+<div id="highest-rate-balance-chart" style="width: 90%; height: 300px;"></div>
 <h2>Average Interest Rate over Time</h2>
-<div id="interest-chart" style="width: 90%; height: 300px;"></div>
+<div id="highest-rate-interest-chart" style="width: 90%; height: 300px;"></div>
 <form name="form1" method="GET">		
     <table id="debt-table">
     	<thead>
@@ -112,20 +112,23 @@ function highestRate(debts) {
 }
 
 function getResults(debts) {
+	
 	var results = {
-		balances: [['month', 'balance', 'minimum payment'],
+		highestRate: {
+			balances: [['month', 'balance', 'minimum payment'],
 				  [0, sumBalances(debts), sumMinpayments(debts)]],
-		interests: [['month','interest'],
+			interests: [['month','interest'],
 				   [0, averageInterest(debts) * 100]]
+		}
 	};
 
     var month = 1;
-
+	
     while (sumBalances(debts) > 0) {
         debts.forEach(function(debt) {debt.update();});
 		
-        results.balances.push([month,sumBalances(debts), sumMinpayments(debts)]);
-	results.interests.push([month,averageInterest(debts) * 100]);
+        results.highestRate.balances.push([month,sumBalances(debts), sumMinpayments(debts)]);
+	results.highestRate.interests.push([month,averageInterest(debts) * 100]);
         
         avalanche(debts);
         month++;
@@ -203,15 +206,15 @@ $(document).ready(function() {
 	var results = getResults(debts);
 
     c3.generate({
-        bindto: '#balance-chart',
-        data:{x: 'month', rows:results.balances, type:'spline'},
+        bindto: '#highest-rate-balance-chart',
+        data:{x: 'month', rows:results.highestRate.balances, type:'spline'},
         axis:{x: {label: {text: 'month', position: 'outer-center'}},
               y: {label: {text: 'dollars', position: 'outer-middle'}}}
     });
 	
     c3.generate({
-        bindto: '#interest-chart',
-        data:{x: 'month', rows:results.interests, type:'spline'},
+        bindto: '#highest-rate-interest-chart',
+        data:{x: 'month', rows:results.highestRate.interests, type:'spline'},
         axis:{x: {label: {text: 'month', position: 'outer-center'}},
               y: {label: {text: 'percent', position: 'outer-middle'}}}
     });
