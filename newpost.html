@@ -122,42 +122,9 @@ $(document).ready(function() {
 	var everything = new Array();
 
 	if(hasKey('name') && hasKey('balance') && hasKey('rate') && hasKey('payment') && hasKey('minpayment')) {
-		var keyValues = getKeyValuePairs();
+		var debts = getObjectArray();
 		
-		for(var i = 0; i < keyValues.length; i++) {
-			var keyValue = keyValues[i];
-			
-			var name;
-			var balance;
-			var rate;
-			var payment;
-			var minpayment;
-			var minpaymenttype = 'dollar';
-			
-			switch(keyValue[0]) {
-				case 'name':
-					if(name !== null) {
-						everything.push(createDebt(name, balance, rate, payment, minpayment, minpaymenttype));
-					} 
-					
-					name = keyValue[1];
-					break;
-				case 'balance':
-					balance = keyValue[1];
-					break;
-				case 'rate':
-					rate = keyValue[1];
-					break;
-				case 'payment':
-					payment = keyValue[1];
-					break;
-				case 'minpayment':
-					minpayment = keyValue[1];
-					break;
-				case 'minpaymenttype':
-					minpaymenttype = keyValue[1];
-			}
-		}
+		
 	} else {
 		var house = createDebt('mortgage', 20000, 0.06, 1000, 100, 'dollar');
 		var car = createDebt('car loan', 20000, 0.1, 250, 250, 'dollar');
