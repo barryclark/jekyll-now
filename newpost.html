@@ -19,6 +19,7 @@ csses: [/css/c3.css, /css/debtChart.css]
         </tr>
     </table>
     <input type="button" value="Add Row" id="addRowButton" />
+    <input type="button" value="Remove Row" id="removeRowButton" />
     <input type="submit" value="Submit">
 </form>
 <script type="text/javascript">
@@ -151,6 +152,10 @@ $(document).ready(function() {
 	$("#addRowButton").click(function() {
 		var row = generateRow(new Debt('', 0, 0, 0, 0, 'dollar'));		
 		$('#debt-table').append(row);
+	});
+	
+	$("#removeRowButton").click(function() {	
+		$('#debt-table').last().remove();
 	});
 	
 	var debts;
