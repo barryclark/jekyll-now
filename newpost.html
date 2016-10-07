@@ -152,8 +152,8 @@ function getResults(debts) {
 	lowest.forEach(function(debt) {$.extend(debt, new DebtProto() );});
 	
 	var results = {
-		highestRate: usingMethod(debts, highestRate),
-		lowestBalance: usingMethod(debts, lowestBalance)
+		highestRate: usingMethod(highest, highestRate),
+		lowestBalance: usingMethod(lowest, lowestBalance)
 	};
 
     return results;
