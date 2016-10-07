@@ -5,11 +5,7 @@ permalink: /about/
 published: true
 ---
 
-Some information about you!
-
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
+My name is **Milan** and I am currently a student at [Anglia Ruskin University](www.anglia.ac.uk).
 
 ### Contact me
 
