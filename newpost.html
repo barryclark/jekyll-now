@@ -125,7 +125,7 @@ function getResults(debts) {
         debts.forEach(function(debt) {debt.update();});
 		
         results.balances.push([month,sumBalances(debts), sumMinpayments(debts)]);
-		results.interests.push([month,averageInterest(debts)]];
+	results.interests.push([month,averageInterest(debts)]);
         
         avalanche(debts);
         month++;
