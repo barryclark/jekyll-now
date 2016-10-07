@@ -10,4 +10,4 @@ image: /images/Family-Tree-icon-200.png
 
 A line / spline chart of the average and median ages per birth year... Showing no corrolation :cry:.
 
-{% include familyTree/meanMedianAges.html %}
+{% include familyTree/meanMedianAges.min.html %}
