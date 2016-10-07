@@ -1,5 +1,5 @@
 ---
 layout: blog_by_tag
-tag: Core-Skills
+tag: core-skills
 permalink: /tagged/core-skills/
 ---
