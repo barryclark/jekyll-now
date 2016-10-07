@@ -1,5 +1,3 @@
-// var spring_canvas;
-
 function spring_clearScreen(ctx, canvas) { 
 	ctx.setTransform(1, 0, 0, 1, 0, 0);
 	ctx.clearRect(0,0,canvas.width,canvas.height);
