@@ -111,10 +111,17 @@ function highestRate(debts) {
     });
 }
 
-function getResults(debts) {
+function getResults(debts) {	
+	var highest = $(debts).clone();
 	
 	var results = {
 		highestRate: {
+			balances: [['month', 'balance', 'minimum payment'],
+				  [0, sumBalances(debts), sumMinpayments(debts)]],
+			interests: [['month','interest'],
+				   [0, averageInterest(debts) * 100]]
+		},
+		lowestBalance: {
 			balances: [['month', 'balance', 'minimum payment'],
 				  [0, sumBalances(debts), sumMinpayments(debts)]],
 			interests: [['month','interest'],
@@ -124,13 +131,13 @@ function getResults(debts) {
 
     var month = 1;
 	
-    while (sumBalances(debts) > 0) {
-        debts.forEach(function(debt) {debt.update();});
+    while (sumBalances(highest) > 0) {
+        highest.forEach(function(debt) {highest.update();});
 		
-        results.highestRate.balances.push([month,sumBalances(debts), sumMinpayments(debts)]);
-	results.highestRate.interests.push([month,averageInterest(debts) * 100]);
+        results.highestRate.balances.push([month,sumBalances(highest), sumMinpayments(highest)]);
+	results.highestRate.interests.push([month,averageInterest(highest) * 100]);
         
-        avalanche(debts);
+        avalanche(highest);
         month++;
         
         if(month > 500) {
