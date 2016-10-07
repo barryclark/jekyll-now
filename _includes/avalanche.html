@@ -30,7 +30,7 @@ function DebtProto() {
 	this.snowball = 0;
 	this.getMinPayment = function() {
 	    if(this.minpaymenttype === 'percent') {
-			return Math.round(this.balance*this.minpayment);
+			return Math.max(Math.round(this.balance*this.minpayment), 1);
 	    } else {
 			return this.minpayment;
 	    }
