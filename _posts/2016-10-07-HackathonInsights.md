@@ -6,7 +6,7 @@ category: product
 tags: [Mobile, Open Source]
 author: anja_kienzler
 author_email: daniel.wehrle@haufe-lexware.com, anja.kienzler@haufe-lexware.com
-header-img: "images\bg-post.alt.jpg"
+header-img: images\bg-post.alt.jpg
 ---
 
 A Hackathon is a kind of software prototype development marathon. This year the second Freiburg hackathon took place. The target was to develop an application for “Newcomers” to the city of Freiburg in 48 hours (Friday evening to Sunday morning). We accepted this challenge with the idea to create less-stressful way to manage the necessary administrative procedures at “Burgeramt Freiburg” (city government administrative services) for foreigners and employees alike with the possibility to extend the system to other official city departments at a later point.
