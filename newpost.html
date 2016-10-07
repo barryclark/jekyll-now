@@ -22,21 +22,21 @@ csses: [/css/c3.css, /css/debtChart.css]
 </form>
 <script type="text/javascript">    
 function Debt(name, balance, rate, payment, minpayment, minpaymenttype) {
-	this.name: name;
-	this.balance: balance;
-	this.rate: rate;
-	this.payment: payment;
-	this.minpayment: minpayment;
-	this.minpaymenttype: minpaymenttype;
-	this.snowball: 0;
-	this.getMinPayment: function() {
+	this.name = name;
+	this.balance = balance;
+	this.rate = rate;
+	this.payment = payment;
+	this.minpayment = minpayment;
+	this.minpaymenttype = minpaymenttype;
+	this.snowball = 0;
+	this.getMinPayment = function() {
 	    if(this.minpaymenttype == 'percent') {
 		return Math.round(this.balance*this.minpayment);
 	    } else {
 		return this.minpayment;
 	    }
 	};
-	this.update: function() {                    
+	this.update = function() {          
 	    this.balance = this.balance * (1 + this.rate / 12) - this.payment;
 	    this.balance = Math.round(this.balance);
 
