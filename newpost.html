@@ -20,14 +20,8 @@ csses: [/css/c3.css, /css/debtChart.css]
     </table>
     <input type="submit" value="Submit">
 </form>
-<script type="text/javascript">    
-function Debt(name, balance, rate, payment, minpayment, minpaymenttype) {
-	this.name = name;
-	this.balance = balance;
-	this.rate = rate;
-	this.payment = payment;
-	this.minpayment = minpayment;
-	this.minpaymenttype = minpaymenttype;
+<script type="text/javascript">
+function DebtProto() {
 	this.snowball = 0;
 	this.getMinPayment = function() {
 	    if(this.minpaymenttype == 'percent') {
@@ -39,7 +33,6 @@ function Debt(name, balance, rate, payment, minpayment, minpaymenttype) {
 	this.update = function() {          
 	    this.balance = this.balance * (1 + this.rate / 12) - this.payment;
 	    this.balance = Math.round(this.balance);
-
 	    if(this.balance < this.payment){
 		if(this.getminpaymenttype=='dollar'&&this.balance<this.minpayment){
 		    this.minpayment = this.balance;
@@ -47,7 +40,6 @@ function Debt(name, balance, rate, payment, minpayment, minpaymenttype) {
 		this.snowball = this.payment - this.balance;
 		this.payment = this.balance;
 	    }
-
 	    if(this.balance <= 0) {
 		this.balance = 0;
 		this.minpayment = 0;
@@ -55,15 +47,25 @@ function Debt(name, balance, rate, payment, minpayment, minpaymenttype) {
 		this.payment = 0;
 	    }
 	};
+}	
+
+function Debt(name, balance, rate, payment, minpayment, minpaymenttype) {
+	this.name = name;
+	this.balance = balance;
+	this.rate = rate;
+	this.payment = payment;
+	this.minpayment = minpayment;
+	this.minpaymenttype = minpaymenttype;
+	$.extend( this, new DebtProto() );
 }
 
-function avalanche(items) {
-    var snowballs = items.reduce(function(p, c) {return p + c.snowball;}, 0);
+function avalanche(debts) {
+    var snowballs = debts.reduce(function(p, c) {return p + c.snowball;}, 0);
     
     if(snowballs > 0) {
-        var toSnowball = items.filter(function(item) {return item.snowball == 0;});
+        var toSnowball = debts.filter(function(debt) {return debt.snowball == 0;});
         
-        items.forEach(function(item) {item.snowball = 0;});
+        debts.forEach(function(debt) {debt.snowball = 0;});
         
         if(toSnowball.length > 0) {
             var avalanche = highestRate(toSnowball);
@@ -72,40 +74,40 @@ function avalanche(items) {
     }
 }
 
-function sumBalances(items) {
-    return items.reduce(function(p, c){return p + c.balance;}, 0);
+function sumBalances(debts) {
+    return debts.reduce(function(p, c){return p + c.balance;}, 0);
 }
 
-function sumMinpayments(items) {
-    return items.reduce(function(p, c) {return p + c.getMinPayment();}, 0);
+function sumMinpayments(debts) {
+    return debts.reduce(function(p, c) {return p + c.getMinPayment();}, 0);
 }
 
-function lowestBalance(items){
-    return items.reduce(function(p, c) {
+function lowestBalance(debts){
+    return debts.reduce(function(p, c) {
         if(p == null) {return c;}
         else if(p.balance > c.balance) {return c;}
         else {return p;}
     });
  }
 
-function highestRate(items) {
-    return items.reduce(function(p, c) {
+function highestRate(debts) {
+    return debts.reduce(function(p, c) {
         if(p == null) {return c;}
         else if(p.rate < c.rate) {return c;}
         else{return p;}
     });
 }
 
-function getBalances(items) {        
-    var balances = [[0,sumBalances(items), sumMinpayments(items)]];
+function getBalances(debts) {        
+    var balances = [[0,sumBalances(debts), sumMinpayments(debts)]];
 
     var month = 1;
 
-    while (sumBalances(items) > 0) {
-        items.forEach(function(item) {item.update();});
-        balances.push([month,sumBalances(items), sumMinpayments(items)]);
+    while (sumBalances(debts) > 0) {
+        debts.forEach(function(debt) {debt.update();});
+        balances.push([month,sumBalances(debts), sumMinpayments(debts)]);
         
-        avalanche(items);
+        avalanche(debts);
         month++;
         
         if(month > 500) {
@@ -122,7 +124,7 @@ $(document).ready(function() {
 	if(hasKey('name') && hasKey('balance') && hasKey('rate') && hasKey('payment') && hasKey('minpayment')) {
 		var debts = getObjectArray();
 		
-		
+		debts.forEach(function(debt) {$.extend( debt, new DebtProto() );});
 	} else {
 		var house = new Debt('mortgage', 20000, 0.06, 1000, 100, 'dollar');
 		var car = new Debt('car loan', 20000, 0.1, 250, 250, 'dollar');
