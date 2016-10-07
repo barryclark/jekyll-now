@@ -9,6 +9,7 @@ csses: [/css/c3.css, /css/debtChart.css]
 <div id="balance-chart" style="width: 90%; height: 300px;"></div>
 <form name="form1" method="GET">		
     <table id="debt-table">
+    	<thead>
         <tr>
             <th>Debt</th>
             <th>Starting Balance</th>
@@ -17,6 +18,7 @@ csses: [/css/c3.css, /css/debtChart.css]
             <th>Minimum Payment</th>
             <th>Minimum Payment Type</th>
         </tr>
+        </thead><tbody></tbody>
     </table>
     <input type="button" value="Add Row" id="addRowButton" />
     <input type="button" value="Remove Row" id="removeRowButton" />
@@ -151,11 +153,11 @@ function generateRow(debt) {
 $(document).ready(function() {
 	$("#addRowButton").click(function() {
 		var row = generateRow(new Debt('', 0, 0, 0, 0, 'dollar'));		
-		$('#debt-table').append(row);
+		$('#debt-table tbody').append(row);
 	});
 	
 	$("#removeRowButton").click(function() {	
-		$('#debt-table tr').last().remove();
+		$('#debt-table tbody tr').last().remove();
 	});
 	
 	var debts;
