@@ -10,4 +10,4 @@ image: /images/Family-Tree-icon-200.png
 
 A line / spline chart of the average and median ages per death year... This time showing correlation!
 
-{% include familyTree/meanMedianDeathYear.html %}
+{% include familyTree/meanMedianDeathYear.min.html %}
