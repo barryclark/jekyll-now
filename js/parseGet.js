@@ -18,6 +18,44 @@ var getKeyValuePairs = function() {
 	return pairs;
 }
 
+var getObjectArray = function() {
+	var array = getArray();
+	
+	var objects = new Array();
+	
+	var object = {};
+	
+	for(var i = 0; i < array.length; i++) {
+		var split = array[i].split('=');
+		
+		if (typeof object[split[0]] !== 'undefined') {
+			objects.push(object);
+			object = {};
+		}
+		
+		object[split[0]] = split[1];
+		
+		objects.push(object);
+	}
+	
+	return objects;
+}
+
+var getObject = function() {
+	var array = getArray();
+		
+	var object = {};
+	
+	for(var i = 0; i < array.length; i++) {
+		var split = array[i].split('=');
+				
+		object[split[0]] = split[1];
+	}
+	
+	return object;
+}
+
+
 var getValueOfFirstKey = function(key) {
 	if(key !== null || key.length > 0) {
 		var array = getArray();
