@@ -111,7 +111,7 @@ function highestRate(debts) {
 
 function getResults(debts) {
 	var results = {
-		balances: [['month', 'balance', 'minimum payment']],
+		balances: [['month', 'balance', 'minimum payment'],
 				  [0, sumBalances(debts), sumMinpayments(debts)]],
 		interests: [['month','interest'],
 				   [0, averageInterest(debts)]]
