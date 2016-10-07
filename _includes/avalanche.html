@@ -30,26 +30,35 @@ function DebtProto() {
 	this.snowball = 0;
 	this.getMinPayment = function() {
 	    if(this.minpaymenttype === 'percent') {
-		return Math.round(this.balance*this.minpayment);
+			return Math.round(this.balance*this.minpayment);
 	    } else {
-		return this.minpayment;
+			return this.minpayment;
 	    }
 	};
-	this.update = function() {          
-	    this.balance = this.balance * (1 + this.rate / 12) - this.payment;
-	    this.balance = Math.round(this.balance);
-	    if(this.balance < this.payment){
-		if(this.getminpaymenttype === 'dollar' && this.balance < this.minpayment) {
-		    this.minpayment = this.balance;
+	this.getPayment = function() {
+		if(this.onlymin) {
+			return this.getMinPayment();
+		} else {
+			return this.payment();
 		}
-		this.snowball = this.payment - this.balance;
-		this.payment = this.balance;
+	};
+	this.update = function() {		
+	    this.balance = this.balance * (1 + this.rate / 12) - this.getPayment();
+	    this.balance = Math.round(this.balance);
+		
+	    if(this.balance < this.payment) {
+			if(this.getminpaymenttype === 'dollar' && this.balance < this.minpayment) {
+		    	this.minpayment = this.balance;
+			}
+			this.snowball = this.payment - this.balance;
+			this.payment = this.balance;
 	    }
+		
 	    if(this.balance <= 0) {
-		this.balance = 0;
-		this.minpayment = 0;
-		this.snowball = this.payment;
-		this.payment = 0;
+			this.balance = 0;
+			this.minpayment = 0;
+			this.snowball = this.payment;
+			this.payment = 0;
 	    }
 	};
 }
@@ -156,6 +165,7 @@ function generateRow(debt) {
         var balanceString = "$<input type='number' name='balance' min='0' value='" + debt.balance + "' required />";
         var rateString = "<input type='number' name='rate' min='0' max='100'  value='" + debt.rate * 100 + "' required />%";
         var paymentString = "$<input type='number' name='payment' min='0' value='" + debt.payment + "' required />";
+	var onlyminString = "<input type='checkbox' name='onlymin' value='true' " + (debt.onlymin ? "checked " : "") +"/> Minimum";
         var minpaymentString = "<input type='number' name='minpayment' min='0' value='" + debt.minpayment + "' required />";
         var minpaymenttypeString = "<select name='minpaymenttype'><option value='dollar'" 
             + (debt.minpaymenttype == 'dollar' ? ' selected' : '') 
@@ -165,7 +175,7 @@ function generateRow(debt) {
         var row = '<tr><td>' + nameString + '</td><td>' 
             + balanceString  + '</td><td>' 
             + rateString + '</td><td>' 
-            + paymentString + '<input type="checkbox" name="onlymin" value="true" /> Minimum</td><td>' 
+            + paymentString + '</td><td>' 
             + minpaymentString + '</td><td>' 
             + minpaymenttypeString + '</td></tr>';
 	
