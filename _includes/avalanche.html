@@ -167,12 +167,22 @@ function generateRow(debt) {
         var rateString = "<input type='number' name='rate' min='0' max='100'  value='" + debt.rate * 100 + "' required />%";
         var paymentString = "$<input type='number' name='payment' min='0' value='" + debt.payment + "' required />";
 	var onlyminString = "<input type='checkbox' name='onlymin' value='true' " + (debt.onlymin ? "checked " : "") +"/> Minimum";
-        var minpaymentString = "<input type='number' name='minpayment' min='0' value='" + debt.minpayment + "' required />";
+        var minpaymentString = "<input type='number' name='minpayment' min='0' value='";
+	
+	if(debt.minpaymenttype === 'percent') {
+	    minpaymentString = minpaymentString + debt.minpayment * 100;
+	} else {
+	    minpaymentString = minpaymentString + debt.minpayment;
+	}
+	
+	minpaymentString = minpaymentString + "' required />";
+	
         var minpaymenttypeString = "<select name='minpaymenttype'><option value='dollar'" 
-            + (debt.minpaymenttype == 'dollar' ? ' selected' : '') 
+            + (debt.minpaymenttype === 'dollar' ? ' selected' : '') 
             + ">dollar</option><option value='percent'" 
-            + (debt.minpaymenttype == 'percent' ? ' selected' : '')
+            + (debt.minpaymenttype === 'percent' ? ' selected' : '')
             + ">percent</option></select>";
+	
         var row = '<tr><td>' + nameString + '</td><td>' 
             + balanceString  + '</td><td>' 
             + rateString + '</td><td>' 
