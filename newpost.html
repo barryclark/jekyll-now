@@ -112,7 +112,7 @@ function highestRate(debts) {
 }
 
 function getResults(debts) {	
-	var highest = $(debts).clone();
+	var highest = JSON.parse(JSON.stringify(debts));
 	
 	var results = {
 		highestRate: {
