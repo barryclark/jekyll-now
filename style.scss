@@ -30,7 +30,9 @@ body {
   width: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1{
+	color: white;
+	h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
   color: $white;
   font-weight: bold;
