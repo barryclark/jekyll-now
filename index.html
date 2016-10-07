@@ -2,17 +2,262 @@
 layout: default
 ---
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+<!--HEADER CONTROL-->
+<script>
+	$(function(){
+		// Check the initial Position of the Sticky Header
+		var stickyHeaderTop = $('.navbar-inverse').offset().top;
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+		// If top of the window is at the header, make it opaque.
+		// TODO: scroll isn't smooth on these ones.
+		$(window).scroll(function(){
+			if( $(window).scrollTop() > stickyHeaderTop - 1 ) {
+				$('.navbar-inverse').removeClass('transparent').addClass('opaque');
+			} else {
+				$('.navbar-inverse').addClass('transparent').removeClass('opaque');
+			}
+		});
+	});
+</script>
 
-      <div class="entry">
-        {{ post.excerpt }}
+<!--BACKGROUND LIVE UPDATE-->
+<script>
+	$(document).ready(function() {
+		$('.bg_color').keyup(function() {
+
+			var bg_color = $(this).val(); // grab color input value
+
+			if ($(this).val().length > 0 || (/^[a-zA-Z0-9#]*$/.test(bg_color)))
+			{
+				// replace css value on live preview
+				$('.jumbotron').css('background-color', bg_color);
+				$('.bg_color').css('background-color', bg_color);
+			}
+			else
+			{
+				//resorts back to default if no value entered
+				$('.jumbotron').css('background-color', '#222222');
+				$('.bg_color').css('background-color', '#222222');
+			}
+
+		});
+	});
+</script>
+
+<!-- TODO: add text box that submits to function that contains a css update -->
+
+<!-- Jumbotron at top of page -->
+<header>
+    <div class="jumbowrapper">
+      <div class="jumbotron">
+        <!--<video class="video-background" preload muted autoplay loop>-->
+          <!--<source src="https://s3.amazonaws.com/distill-videos/videos/processed/2180/lighthouse.mp4" type="video/mp4">-->
+          <!--<source src="" type="video/ogg">  TODO: add ogg and other versions of video -->
+        <!--</video>-->
+        <div class="jumbocontent">
+					<h2><b>&ltbody</b> style="background-color: <input type="text" name="bg_color" class="bg_color" value="#222222" pattern="[A-Za-z#0-9]*"/>"<b>></b></h2>
+					<br>
+					<h2>&nbsp&nbsp&nbsp&nbsp<b>&ltdiv</b> name=<strong>"Evan Waterman"</strong> class=<strong>"Full stack developer"</strong><b>></b></h2>
+					<!--<br>-->
+					<h2>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<b>&lth2></b>Click <b>&lta></b><a href="#mainpagewrapper">HERE</a><b>&lta></b> to see more... <b>&lt/h2></b></h2>
+					<!--<br>-->
+					<h2>&nbsp&nbsp&nbsp&nbsp<b>&lt/div></b></h2>
+					<!--<br>-->
+					<h2><b>&lt/body></b></h2>
+        </div>
       </div>
+    </div>
+</header>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
+<div class="mainpagewrapper" id="mainpagewrapper">
+
+	<!-- Header that fades in once it reaches the top of the page -->
+		<nav class="navbar navbar-inverse hidden-tablet hidden-phone">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav">
+						<li><a href="#allprogress"><h3>Skills</h3></a></li>
+						<li><a href="#timeline"><h3>My Timeline</h3></a></li>
+						<li><a href="#top"><h3>Back To Top</h3></a></li>
+						<li><a href="#personalinterests"><h3>My Interests</h3></a></li>
+						<li><a href="#tempconstruction"><h3>Contact Me</h3></a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</div>
+
+<!-- Wrapper for main page content -->
+<div class="mainpagecontent">
+
+  <div class="allprogress" id="allprogress">
+		<br>
+		<br>
+    <h1>Skills</h1>
+    <h3>The techniques I've gained over the years.</h3>
+    <br>
+		<!-- TODO: Add icons -->
+    <div class="row">
+    	<div class="col-sm-6 col-md-6">
+				<div class="singleprogress">
+					<h3>Programming Languages</h3>
+					<div class="progress">
+						<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+							Python
+						</div>
+					</div>
+					<div class="progress">
+						<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+							Java
+						</div>
+					</div>
+					<div class="progress">
+						<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+							C/C++
+						</div>
+					</div>
+					<div class="progress">
+						<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+							C# with Unity
+						</div>
+					</div>
+				</div>
+
+				<br>
+
+				<div class="singleprogress">
+					<h3>Front End Web Development</h3>
+					<div class="progress">
+						<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+							HTML
+						</div>
+					</div>
+					<div class="progress">
+						<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+							CSS/SCSS
+						</div>
+					</div>
+					<div class="progress">
+						<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+							JavaScript (Angular, React)
+						</div>
+					</div>
+					<div class="progress">
+						<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+							Bootstrap
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6 col-md-6">
+				<div class="singleprogress">
+					<h3>Back End Web Development</h3>
+					<div class="progress">
+						<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+							Ruby on Rails
+						</div>
+					</div>
+					<div class="progress">
+						<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+							JavaScript (Node)
+						</div>
+					</div>
+					<div class="progress">
+						<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+							PHP
+						</div>
+					</div>
+					<div class="progress">
+						<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+							SQL
+						</div>
+					</div>
+				</div>
+
+				<br>
+
+				<div class="singleprogress">
+					<h3>Everything Else</h3>
+					<div class="progress">
+						<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+							Git, Command Line Window and Linux (CentOS)
+						</div>
+					</div>
+					<div class="progress">
+						<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+							Shell
+						</div>
+					</div>
+					<div class="progress">
+						<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+							Photoshop
+						</div>
+					</div>
+					<div class="progress">
+						<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+							Testing (Unit, Integration, System)
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<br>
+		<br>
+	</div>
+
+	<div class="timeline" id="timeline">
+		<br>
+		<br>
+		<h1>My Timeline</h1>
+		<h3>How I got to where I am today.</h3>
+		<br>
+		<h3>Coming Soon...</h3>
+		<br>
+		<br>
+	</div>
+
+	<div class="personalinterests" id="personalinterests">
+		<br>
+		<br>
+		<h1>Personal Interests</h1>
+		<h3>A little bit about what makes me unique.</h3>
+		<br>
+		<h3>Coming Soon...</h3>
+		<br>
+		<br>
+	</div>
+
+	<div class="tempconstruction" id="tempconstruction">
+		<br>
+		<br>
+		<h1>Well, that's it for now...</h1>
+		<br>
+		<h3>This website is currently under construction. If you'd like to find out more about me, please visit the following links to my other pages.</h3>
+	</div>
+
+<!-- Displays all posts. TODO: add a blog! -->
+<!--<div class="posts">-->
+  <!--{% for post in site.posts %}-->
+    <!--<article class="post">-->
+
+      <!--<h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>-->
+
+      <!--<div class="entry">-->
+        <!--{{ post.excerpt }}-->
+      <!--</div>-->
+
+      <!--<a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>-->
+    <!--</article>-->
+  <!--{% endfor %}-->
+<!--</div>-->
+</div>
 </div>

@@ -15,28 +15,31 @@
 
 html {
   font-size: 100%;
+  //height: 100%;
 }
 
 body {
-	background: $white;
+  text-align: center;
+  background: $darkGray;
   font: 18px/1.4 $helvetica;
-  color: $darkGray;
+  //font-family: 'Raleway', sans-serif;
+  //height: 100%;
 }
 
 .container {
   margin: 0 auto;
-  max-width: 740px;
+  //max-width: 740px;
   padding: 0 10px;
   width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
-  color: $darkerGray;
+  color: $darkGray;
   font-weight: bold;
 
   line-height: 1.7;
-  margin: 1em 0 15px;
+  margin: 20px 0 10px;
   padding: 0;
 
   @include mobile {
@@ -45,22 +48,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 5vw;
   a {
     color: inherit;
   }
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 3vw;
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 2vw;
 }
 
 h4 {
-  font-size: 18px;
+  font-size: 1vw;
   color: $gray;
 }
 
@@ -150,9 +153,10 @@ img {
 // .masthead
 //
 
-.wrapper-masthead {
-  margin-bottom: 50px;
-}
+//.wrapper-masthead {
+//  margin-bottom: 50px;
+//  height: 100%;
+//}
 
 .masthead {
   padding: 20px 0;
@@ -212,7 +216,7 @@ img {
 
 nav {
   float: right;
-  margin-top: 23px; // @TODO: Vertically middle align
+  //margin-top: 23px; // @TODO: Vertically middle align
   font-family: $helveticaNeue;
   font-size: 18px;
 
@@ -236,6 +240,224 @@ nav {
     }
   }
 }
+
+// ---------------------------
+// START EVAN STUFF
+// ---------------------------
+
+.jumbowrapper{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: -1;
+}
+
+.jumbotron {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  background-color: #222222;
+  //background-image: url("/images/hackBD.JPG");
+  //opacity: 0.5;
+  //background-color: rgb(0, 179, 255); // Tint color
+  //background-blend-mode: multiply;
+}
+
+.bg_color {
+  background-color: #222222;
+  color: $lightGray;
+  font-weight: bold;
+  width: 10vw;
+  height: 7vh;
+}
+
+.jumbocontent {
+  position: relative;
+  text-align: left;
+  padding-left: 5vw;
+}
+
+.jumbocontent h2 {
+  line-height: 1.0;
+  font-weight: normal;
+  color: $lightGray;
+  font-size: 2vw;
+
+  @include mobile {
+    line-height: 0.7;
+  }
+}
+
+.jumbocontent strong {
+  color: chartreuse;
+}
+
+.jumbocontent b {
+  color: #edf06c;
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 1;
+  width:100%;
+}
+
+.mainpagewrapper {
+  margin-top: 100vh;
+}
+
+.mainpagecontent {
+  padding: 2% 7% 7%;
+  background-color: $darkGray;
+}
+
+.navbar-inverse {
+  width: 107vw;
+  border-width: 0;
+  z-index: 1;
+  background-color: transparent;
+  -moz-box-shadow: 0 0 0 #111;
+  -webkit-box-shadow: 0 0 0 #111;
+  box-shadow: 0 0 0 #111;
+}
+
+.navbar-inverse h3 {
+  color: $darkGray;
+}
+
+// removes navbar if window too small
+@media (max-width: 767px) {
+  .navbar{
+    display:none;
+  }
+}
+
+// TODO: alignment off when transitioning
+.navbar-inverse.opaque {
+  position: fixed;
+  top: 0;
+  background-color: $white;
+  -moz-box-shadow: 0 17px 20px #111;
+  -webkit-box-shadow: 0 17px 20px #111;
+  box-shadow: 0 17px 20px #111;
+
+  transition: all 2s ease 0s;
+  transition-property: box-shadow, -webkit-box-shadow, -moz-box-shadow, background-color;
+}
+
+.navbar-inverse.transparent {
+  position: static;
+  top: 100px;
+  background-color: transparent;
+  -moz-box-shadow: 0 0 0 #111;
+  -webkit-box-shadow: 0 0 0 #111;
+  box-shadow: 0 0 0 #111;
+
+  transition: all 2s ease 0s;
+  transition-property: box-shadow, -webkit-box-shadow, -moz-box-shadow, background-color;
+}
+
+.container-fluid {
+  float:right;
+  position:relative;
+  left:-50%;
+  text-align:left;
+}
+
+.container-fluid ul{
+  list-style:none;
+  position:relative;
+  left:50%;
+}
+
+.container-fluid li {
+  float:left;
+  position:relative;
+}
+
+.container-fluid a {
+  padding:2px 5px;
+  text-align:center;
+  white-space:nowrap;
+}
+
+.container-fluid h3{
+  &:hover {
+    text-decoration: underline;
+    -moz-text-decoration-color: $darkerGray;
+    text-decoration-color: $darkerGray;
+  }
+}
+
+// TODO: Why does h2, h3 (but not h1) overwrite jumbotron???! Something to do with bootstrap???!?!???
+.allprogress h1, h3, h4 {
+  color: $white;
+  line-height: 0.8;
+  text-align: center;
+
+  @include mobile {
+    line-height: 0.7;
+  }
+}
+
+.timeline h1, h3, h4 {
+  color: $white;
+  line-height: 0.8;
+  text-align: center;
+
+  @include mobile {
+    line-height: 0.7;
+  }
+}
+
+.personalinterests h1, h3, h4 {
+  color: $white;
+  line-height: 0.8;
+  text-align: center;
+
+  @include mobile {
+    line-height: 0.7;
+  }
+}
+
+.tempconstruction h1, h3, h4 {
+  color: $white;
+  line-height: 0.8;
+  text-align: center;
+
+  @include mobile {
+    line-height: 0.7;
+  }
+}
+
+.singleprogress h3 {
+  text-align: left;
+}
+
+.progress {
+  background-color: $darkGray;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+}
+
+.progress-bar {
+  padding-left: 20px;
+  text-align: left;
+}
+
+.tempconstruction h1, h4{
+  color: $white;
+}
+
+// ---------------------------
+// END EVAN STUFF
+// ---------------------------
 
 //
 // .main
@@ -272,10 +494,11 @@ nav {
 }
 
 .wrapper-footer {
-  margin-top: 50px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
+  //margin-top: 50px;
+  //border-top: 1px solid #ddd;
+  //border-bottom: 1px solid #ddd;
+  position: relative;
+  background-color: $gray;
 }
 
 footer {

@@ -1,43 +1,64 @@
 <!DOCTYPE html>
 <html>
   <head>
+
+    <!-- This is the default page that all other pages will be built off of. -->
+
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
     {% include meta.html %}
 
+    <!-- This fixes IE HTML5 problems -->
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
+    <!-- Stylesheets -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!--<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">-->
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+    <!-- Smooth scroll to page anchors -->
+    <script>
+      $(function() {
+        $('a[href*="#"]:not([href="#"])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html, body').animate({
+                scrollTop: target.offset().top
+              }, 1000);
+              return false;
+            }
+          }
+        });
+      });
+    </script>
   </head>
 
   <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
 
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
-          </div>
-
-          <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
-          </nav>
-        </header>
-      </div>
+    <!--[if lt IE 7]>
+    <div id="content" style="margin-top:100px; text-align: center;">
+      <h2>HI THERE!</h2>
+      <p>It looks like you have stumbled across my website on a non compatible browser. Please download an awesome browser (I suggest <a href="http://www.mozilla.org/en-US/firefox">Firefox</a> or <a href="https://www.google.com/intl/en/chrome/browser/">Chome</a>) Then revisit my site so you can view it as intended.<br> Otherwise just contact me at <a href="mailto:evanjwaterman@gmail.com">:evanjwaterman@gmail.com</a>.</p>
     </div>
+    <![endif]-->
 
-    <div id="main" role="main" class="container">
+
+
+    <!-- Container for page content. The content of each "child" page resides here -->
+    <div id="main" role="main" class="contentcontainer">
       {{ content }}
     </div>
 
+    <!-- Footer -->
     <div class="wrapper-footer">
       <div class="container">
         <footer class="footer">
@@ -46,6 +67,7 @@
       </div>
     </div>
 
+    <!-- Google analytics. TODO: find out what this is exactly -->
     {% include analytics.html %}
   </body>
 </html>
