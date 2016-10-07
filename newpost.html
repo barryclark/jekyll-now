@@ -126,8 +126,12 @@ $(document).ready(function() {
 		debts.forEach(function(debt) {
 			$.extend( debt, new DebtProto() );
 			debt.rate = debt.rate / 100;
+			debt.balance = parseInt(debt.balance);
+			debt.payment = parseInt(debt.payment);
 			if(debt.minpaymenttype === 'percent') {
 				debt.minpayment = debt.minpayment / 100;
+			} else {
+				debt.minpayment = parseInt(debt.minpayment);
 			}
 		});
 	} else {
