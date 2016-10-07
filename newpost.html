@@ -123,7 +123,13 @@ $(document).ready(function() {
 
 	if(hasKey('name') && hasKey('balance') && hasKey('rate') && hasKey('payment') && hasKey('minpayment')) {
 		debts = getObjectArray();		
-		debts.forEach(function(debt) {$.extend( debt, new DebtProto() );});
+		debts.forEach(function(debt) {
+			$.extend( debt, new DebtProto() );
+			debt.rate = debt.rate / 100;
+			if(debt.minpaymenttype === 'percent') {
+				debt.minpayment = debt.minpayment / 100;
+			}
+		});
 	} else {
 		debts = new Array();
 		
