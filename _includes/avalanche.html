@@ -1,3 +1,10 @@
+<h2>Just Making the Payments</h2>
+<h3>Total Paid</h3>
+<div id="just-payments-total-paid"></div>
+<h3>Total Balance and Minimum Payment over Time</h3>
+<div id="just-payments-balance-chart" style="width: 90%; height: 300px;"></div>
+<h3>Average Interest Rate over Time</h3>
+<div id="just-payments-interest-chart" style="width: 90%; height: 300px;"></div>
 <h2>Snowball Method Using the Highest Rate</h2>
 <h3>Total Paid</h3>
 <div id="highest-rate-total-paid"></div>
@@ -142,7 +149,8 @@ function usingMethod(debts, method) {
 				  [0, sumBalances(debts), sumMinpayments(debts)]],
 			interests: [['month','interest'],
 				   [0, averageInterest(debts) * 100]],
-			totalPaid: 0
+			totalPaid: 0,
+			months: 0;
 	};
 	
 	var month = 1;
@@ -154,13 +162,18 @@ function usingMethod(debts, method) {
 		results.interests.push([month,averageInterest(debts) * 100]);
 		results.totalPaid = results.totalPaid + sumPayments(debts);
         
-        avalanche(debts, method);
+		if(typeof method !== 'undefined') {
+			avalanche(debts, method);
+		}
+		
         month++;
         
         if(month > 500) {
             break;
         }
     }
+	
+	results.months = month;
 	
 	return results;
 }
@@ -172,9 +185,13 @@ function getResults(debts) {
 	var lowest = JSON.parse(JSON.stringify(debts));
 	lowest.forEach(function(debt) {$.extend(debt, new DebtProto() );});
 	
+	var just = JSON.parse(JSON.stringify(debts));
+	just.forEach(function(debt) {$.extend(debt, new DebtProto() );});
+	
 	var results = {
 		highestRate: usingMethod(highest, highestRate),
-		lowestBalance: usingMethod(lowest, lowestBalance)
+		lowestBalance: usingMethod(lowest, lowestBalance),
+		justPayments: usingMethod(just);
 	};
     return results;
 }
@@ -255,6 +272,21 @@ $(document).ready(function() {
 	
 	$('#highest-rate-total-paid').append('$' + results.highestRate.totalPaid);
 	$('#lowest-balance-total-paid').append('$' + results.lowestBalance.totalPaid);
+	$('#just-payments-total-paid').append('$' + results.justPayments.totalPaid);
+
+    c3.generate({
+        bindto: '#just-payments-balance-chart',
+        data:{x: 'month', rows:results.justPayments.balances, type:'spline'},
+        axis:{x: {label: {text: 'month', position: 'outer-center'}},
+              y: {label: {text: 'dollars', position: 'outer-middle'}}}
+    });
+	
+    c3.generate({
+        bindto: '#just-payments-interest-chart',
+        data:{x: 'month', rows:results.justPayments.interests, type:'spline'},
+        axis:{x: {label: {text: 'month', position: 'outer-center'}},
+              y: {label: {text: 'percent', position: 'outer-middle'}}}
+    });
     
     c3.generate({
         bindto: '#highest-rate-balance-chart',
