@@ -6,10 +6,16 @@ javascripts: [/js/d3.min.js, /js/c3.min.js, /js/parseGet.js]
 csses: [/css/c3.css, /css/debtChart.css]
 ---
 
-<h2>Total Balance and Minimum Payment over Time</h2>
+<h2>Snowball Method Using the Highest Rate</h2>
+<h3>Total Balance and Minimum Payment over Time</h3>
 <div id="highest-rate-balance-chart" style="width: 90%; height: 300px;"></div>
-<h2>Average Interest Rate over Time</h2>
+<h3>Average Interest Rate over Time</h3>
 <div id="highest-rate-interest-chart" style="width: 90%; height: 300px;"></div>
+<h2>Snowball Method Using the Lowest Balance</h2>
+<h3>Total Balance and Minimum Payment over Time</h3>
+<div id="lowest-balance-balance-chart" style="width: 90%; height: 300px;"></div>
+<h3>Average Interest Rate over Time</h3>
+<div id="lowest-balance-interest-chart" style="width: 90%; height: 300px;"></div>
 <form name="form1" method="GET">		
     <table id="debt-table">
     	<thead>
@@ -227,6 +233,20 @@ $(document).ready(function() {
     c3.generate({
         bindto: '#highest-rate-interest-chart',
         data:{x: 'month', rows:results.highestRate.interests, type:'spline'},
+        axis:{x: {label: {text: 'month', position: 'outer-center'}},
+              y: {label: {text: 'percent', position: 'outer-middle'}}}
+    });
+	
+   c3.generate({
+        bindto: '#lowest-balance-balance-chart',
+        data:{x: 'month', rows:results.lowestBalance.balances, type:'spline'},
+        axis:{x: {label: {text: 'month', position: 'outer-center'}},
+              y: {label: {text: 'dollars', position: 'outer-middle'}}}
+    });
+	
+    c3.generate({
+        bindto: '#lowest-balance-interest-chart',
+        data:{x: 'month', rows:results.lowestBalance.interests, type:'spline'},
         axis:{x: {label: {text: 'month', position: 'outer-center'}},
               y: {label: {text: 'percent', position: 'outer-middle'}}}
     });
