@@ -85,6 +85,7 @@ function avalanche(debts, method) {
         if(toSnowball.length > 0) {
             var avalanche = method(toSnowball);
             avalanche.payment = avalanche.payment + snowballs;
+		    avalanche.onlymin = false;
         }
     }
 }
