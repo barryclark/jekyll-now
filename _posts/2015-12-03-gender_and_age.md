@@ -10,4 +10,4 @@ image: /images/gender.jpg
 
 Average age compared between the two genders.
 
-{% include familyTree/gender.html %}
+{% include familyTree/gender.min.html %}
