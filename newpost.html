@@ -124,7 +124,7 @@ $(document).ready(function() {
 	if(hasKey('name') && hasKey('balance') && hasKey('rate') && hasKey('payment') && hasKey('minpayment')) {
 		var keyValues = getKeyValuePairs();
 		
-		for(var i = 0; i < everything.length; i++) {
+		for(var i = 0; i < keyValues.length; i++) {
 			var keyValue = keyValues[i];
 			
 			var name;
