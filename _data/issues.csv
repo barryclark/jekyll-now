@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/760,181602123,2016-10-07 07:54:15,2016-10-07 07:30:57,I chirurghi vascolari della Sicve sabato consegneranno al sindaco di Amatrice un ecografo all’avanguardia,,,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""07/10/2016"", ""descrizione"": ""Un\u2019apparecchiatura per diagnosticare malattie vascolari sar\u00e0 consegnata sabato 8 ottobre alle 11.30 al sindaco di Amatrice, Sergio Pirozzi, e alla direttrice generale dell\u2019Asl di Rieti, D.ssa Laura Figorilli ed alla presenza di sua Eccellenza Monsignor Domenico Pompili, presso il Centro Operativo Comunale di Amatrice. La SICVE ha stabilito la donazione di 25 mila euro che, grazie alla solidale collaborazione della casa produttrice Samsung, hanno permesso di acquistare uno strumento del valore di 78.494,80 euro che sar\u00e0 allocato nell\u2019ambulatorio di diagnostica vascolare di Amatrice."", ""link"": ""http://www.sicve.it/sisma-i-chirurghi-vascolari-della-sicve-sabato-consegneranno-al-sindaco-di-amatrice-un-ecografo-allavanguardia/"", ""titolo"": ""I chirurghi vascolari della Sicve sabato consegneranno al sindaco di Amatrice un ecografo all\u2019avanguardia""}","<pre><yamldata>titolo: 'I chirurghi vascolari della Sicve sabato consegneranno al sindaco di Amatrice un ecografo all’avanguardia'
+descrizione: 'Un’apparecchiatura per diagnosticare malattie vascolari sarà consegnata sabato 8 ottobre alle 11.30 al sindaco di Amatrice, Sergio Pirozzi, e alla direttrice generale dell’Asl di Rieti, D.ssa Laura Figorilli ed alla presenza di sua Eccellenza Monsignor Domenico Pompili, presso il Centro Operativo Comunale di Amatrice. La SICVE ha stabilito la donazione di 25 mila euro che, grazie alla solidale collaborazione della casa produttrice Samsung, hanno permesso di acquistare uno strumento del valore di 78.494,80 euro che sarà allocato nell’ambulatorio di diagnostica vascolare di Amatrice.'
+link: 'http://www.sicve.it/sisma-i-chirurghi-vascolari-della-sicve-sabato-consegneranno-al-sindaco-di-amatrice-un-ecografo-allavanguardia/'
+data: 07/10/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/759,181525431,2016-10-06 21:06:26,2016-10-06 21:05:38,Street Child Italia cerca volontari per attività a sostegno degli sfollati a S. Benedetto del Tronto,42.9525328,13.8807144,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Pubblicare su FB"", ""Twitter""]",,,"{""cosa"": ""Street Child Italia cerca volontari per attivit\u00e0 a sostegno degli sfollati a S. Benedetto del Tronto"", ""data"": ""06/10/2016"", ""descrizione"": ""Street Child Italia cerca 10 volontari per attivit\u00e0 a sostegno delle vittime del terremoto da svolgere attraverso i Centri di Ascolto del GUS a San Benedetto del Tronto (Ascoli Piceno), citt\u00e0 dove stati trasferiti molti sfollati laziali e marchigiani. I volontari partiranno a sostegno dell'intervento di Oxfam Italia e del GUS che ha attivato centri di ascolto fissi e mobili, con i quali raggiungere con psicologi e volontari le frazioni pi\u00f9 isolate. \u00c8 possibile aderire fino al 9 dicembre."", ""email"": ""luca.rubin@street-child.it"", ""immagine"": """", ""indirizzo"": ""Via Raffaello Sanzio, Marina centro, San Benedetto del Tronto, AP, Marche, 63039, Italia"", ""lat"": ""42.9525328"", ""link"": ""http://www.volontariperungiorno.it/vpug/activityview.php?Id=1745"", ""lon"": ""13.8807144"", ""tel"": ""3339464736""}","<pre><yamldata>tel: '3339464736'
 email: luca.rubin@street-child.it
 cosa: 'Street Child Italia cerca volontari per attività a sostegno degli sfollati a S. Benedetto del Tronto'
@@ -4833,6 +4838,17 @@ bic: ''
 postale: ''
 causale: 'Emergenza Terremoto Centro Italia'
 link: 'http://gusitalia.it/'
+email: ''
+data: 13/09/2016
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/164,176720862,2016-09-13 18:54:16,2016-09-13 18:53:48,Provincia di Modena,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Azioni di solidariet\u00e0 terremoto centro Italia del 24 agosto"", ""chi"": ""Provincia di Modena"", ""data"": ""13/09/2016"", ""descrizione"": ""Le somme verranno destinate a progetti di assistenza"", ""email"": """", ""iban"": ""IT 52 M 02008 12930 000003398693"", ""intestazione"": """", ""link"": """", ""postale"": """"}","<pre><yamldata>chi: 'Provincia di Modena'
+descrizione: 'Le somme verranno destinate a progetti di assistenza'
+intestazione: ''
+iban: 'IT 52 M 02008 12930 000003398693'
+bic: ''
+postale: ''
+causale: 'Azioni di solidarietà terremoto centro Italia del 24 agosto'
+link: ''
 email: ''
 data: 13/09/2016
 </yamldata></pre>",open
