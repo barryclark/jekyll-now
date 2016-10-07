@@ -18,6 +18,7 @@ csses: [/css/c3.css, /css/debtChart.css]
             <th>Minimum Payment Type</th>
         </tr>
     </table>
+    <input type="button" value="Add Row" id="addRowButton" />
     <input type="submit" value="Submit">
 </form>
 <script type="text/javascript">
@@ -117,8 +118,41 @@ function getBalances(debts) {
 
     return balances;
 }
+	
+function generateRow(debt) {
+	var nameString = "<input type='text' name='name' value='" + debt.name + "' />";
+        var balanceString = "$<input type='number' name='balance' value='" + debt.balance + "' />";
+        var rateString = "<input type='number' name='rate' min='0' max='100'  value='" + debt.rate * 100 + "' />%";
+        var paymentString = "$<input type='number' name='payment' min='0' value='" + debt.payment + "' />";
+        var minpaymentString = "<input type='number' name='minpayment' min='0' ";
+        var minpaymenttypeString = "<select name='minpaymenttype'><option value='dollar'" 
+            + (debt.minpaymenttype == 'dollar' ? ' selected' : '') 
+            + ">dollar</option><option value='percent'" 
+            + (debt.minpaymenttype == 'percent' ? ' selected' : '')
+            + ">percent</option></select>";
+        
+        if(debt.minpaymenttype == 'percent') {
+            minpaymentString = minpaymentString + "max='100' value='" + debt.minpayment * 100 + "' />%";
+        } else {
+            minpaymentString = "$" + minpaymentString + "value='" + debt.minpayment + "' />";
+        }
+        
+        var row = '<tr><td>' + nameString + '</td><td>' 
+            + balanceString  + '</td><td>' 
+            + rateString + '</td><td>' 
+            + paymentString + '</td><td>' 
+            + minpaymentString + '</td><td>' 
+            + minpaymenttypeString + '</td></tr>';
+	
+	return row;
+}
 
 $(document).ready(function() {
+	$("#addRowButton").click(function() {
+		var row = generateRow(new Debt('', 0, 0, 0, 0, 'dollar'););		
+		$('#debt-table').append(row);
+	});
+	
 	var debts;
 
 	if(hasKey('name') && hasKey('balance') && hasKey('rate') && hasKey('payment') && hasKey('minpayment')) {
@@ -146,31 +180,9 @@ $(document).ready(function() {
     for(var i = 0; i < debts.length; i++) {
         var debt = debts[i];
         
-        var nameString = "<input type='text' name='name' value='" + debt.name + "' />";
-        var balanceString = "$<input type='number' name='balance' value='" + debt.balance + "' />";
-        var rateString = "<input type='number' name='rate' min='0' max='100'  value='" + debt.rate * 100 + "' />%";
-        var paymentString = "$<input type='number' name='payment' min='0' value='" + debt.payment + "' />";
-        var minpaymentString = "<input type='number' name='minpayment' min='0' ";
-        var minpaymenttypeString = "<select name='minpaymenttype'><option value='dollar'" 
-            + (debt.minpaymenttype == 'dollar' ? ' selected' : '') 
-            + ">dollar</option><option value='percent'" 
-            + (debt.minpaymenttype == 'percent' ? ' selected' : '')
-            + ">percent</option></select>";
+
         
-        if(debt.minpaymenttype == 'percent') {
-            minpaymentString = minpaymentString + "max='100' value='" + debt.minpayment * 100 + "' />%";
-        } else {
-            minpaymentString = "$" + minpaymentString + "value='" + debt.minpayment + "' />";
-        }
-        
-        var row = '<tr><td>' + nameString + '</td><td>' 
-            + balanceString  + '</td><td>' 
-            + rateString + '</td><td>' 
-            + paymentString + '</td><td>' 
-            + minpaymentString + '</td><td>' 
-            + minpaymenttypeString + '</td></tr>';
-        
-        $('#debt-table').append(row);
+        $('#debt-table').append(generateRow(debt);
     }
 
     var balances = [['month', 'balance', 'minimum payment']];
