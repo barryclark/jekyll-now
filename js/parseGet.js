@@ -1,4 +1,4 @@
-var isGetPresent() {
+var isGetPresent = function() {
 	return location.search.length > 0;
 }
 
