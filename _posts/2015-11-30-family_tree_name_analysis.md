@@ -11,8 +11,8 @@ image: /images/names.jpg
 
 ## First-name frequency
 
-{% include familyTree/firstNames.html %}
+{% include familyTree/firstNames.min.html %}
 
 ## Last-name frequency
 
-{% include familyTree/lastNames.html %}
+{% include familyTree/lastNames.min.html %}
