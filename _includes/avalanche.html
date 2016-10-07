@@ -52,7 +52,8 @@ function DebtProto() {
 		this.payment = 0;
 	    }
 	};
-}	
+}
+
 function Debt(name, balance, rate, payment, minpayment, minpaymenttype) {
 	this.name = name;
 	this.balance = balance;
@@ -62,6 +63,7 @@ function Debt(name, balance, rate, payment, minpayment, minpaymenttype) {
 	this.minpaymenttype = minpaymenttype;
 	$.extend( this, new DebtProto() );
 }
+
 function avalanche(debts, method) {
     var snowballs = debts.reduce(function(p, c) {return p + c.snowball;}, 0);
     
@@ -76,9 +78,11 @@ function avalanche(debts, method) {
         }
     }
 }
+	
 function sumBalances(debts) {
     return debts.reduce(function(p, c){return p + c.balance;}, 0);
 }
+	
 function sumMinpayments(debts) {
     return debts.reduce(function(p, c) {return p + c.getMinPayment();}, 0);
 }
@@ -156,7 +160,7 @@ function generateRow(debt) {
         var row = '<tr><td>' + nameString + '</td><td>' 
             + balanceString  + '</td><td>' 
             + rateString + '</td><td>' 
-            + paymentString + '</td><td>' 
+            + paymentString + '<input type="checkbox" name="onlymin" /> Minimum</td><td>' 
             + minpaymentString + '</td><td>' 
             + minpaymenttypeString + '</td></tr>';
 	
