@@ -6,7 +6,9 @@ javascripts: [/js/d3.min.js, /js/c3.min.js, /js/parseGet.js]
 csses: [/css/c3.css, /css/debtChart.css]
 ---
 
+<h2>Total Balance and Minimum Payment over Time</h2>
 <div id="balance-chart" style="width: 90%; height: 300px;"></div>
+<h2>Average Interest Rate over Time</h2>
 <div id="interest-chart" style="width: 90%; height: 300px;"></div>
 <form name="form1" method="GET">		
     <table id="debt-table">
@@ -114,7 +116,7 @@ function getResults(debts) {
 		balances: [['month', 'balance', 'minimum payment'],
 				  [0, sumBalances(debts), sumMinpayments(debts)]],
 		interests: [['month','interest'],
-				   [0, averageInterest(debts)]]
+				   [0, averageInterest(debts) * 100]]
 	};
 
     var month = 1;
@@ -123,7 +125,7 @@ function getResults(debts) {
         debts.forEach(function(debt) {debt.update();});
 		
         results.balances.push([month,sumBalances(debts), sumMinpayments(debts)]);
-	results.interests.push([month,averageInterest(debts)]);
+	results.interests.push([month,averageInterest(debts) * 100]);
         
         avalanche(debts);
         month++;
