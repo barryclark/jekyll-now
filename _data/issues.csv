@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/762,181604570,2016-10-07 07:54:56,2016-10-07 07:47:01,Inaugurato il ponte di Retrosi,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""07/10/2016"", ""descrizione"": ""Il nuovo ponte modulare realizzato con tecnica 'Bailey' dal genio militare dell'esercito si trova sulla strada provinciale che da Prato porta ad Amatrice, passando per la frazione di Retrosi. L'opera, chiamata 'Ponte rosa', consente di riaprire anche la seconda, importante via d'accesso ad Amatrice, rimasta chiusa dopo i danni provocati alla viabilita' dal terremoto del 24 agosto."", ""link"": ""http://corrieredirieti.corr.it/news/home/234097/sisma-nel-pomeriggio-verra-inaugurato-il-ponte-bailey-di-retrosi.html"", ""titolo"": ""Inaugurato il ponte di Retrosi""}","<pre><yamldata>titolo: 'Inaugurato il ponte di Retrosi'
+descrizione: 'Il nuovo ponte modulare realizzato con tecnica ''Bailey'' dal genio militare dell''esercito si trova sulla strada provinciale che da Prato porta ad Amatrice, passando per la frazione di Retrosi. L''opera, chiamata ''Ponte rosa'', consente di riaprire anche la seconda, importante via d''accesso ad Amatrice, rimasta chiusa dopo i danni provocati alla viabilita'' dal terremoto del 24 agosto.'
+link: 'http://corrieredirieti.corr.it/news/home/234097/sisma-nel-pomeriggio-verra-inaugurato-il-ponte-bailey-di-retrosi.html'
+data: 07/10/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/761,181603667,2016-10-07 07:54:34,2016-10-07 07:41:17,"Brescia, Verdone e gli Stadio «attori» per solidarietà",,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""Raccolte Fondi""]",,,"{""data"": ""07/10/2016"", ""descrizione"": ""\u00abBrescia si Mobilita per Amatrice\u00bb sotto le insegne di Old Cinema, il 14 e il 15 ottobre: spettacolo e solidariet\u00e0 a braccetto per raccogliere fondi da devolvere ai terremotati. Ci saranno Verdone e gli Stadio, con frontman Gaetano Curreri come Andrea Fornili (chitarra), Roberto Drovandi (basso), Fabrizio Foschini (piano) e Iarin Munari ( batteria). Suoneranno alla stazione San Faustino della metropolitana."", ""link"": ""http://www.bresciaoggi.it/home/spettacoli/verdone-e-gli-stadio-attori-per-solidariet%C3%A0-1.5187312"", ""titolo"": ""Brescia, Verdone e gli Stadio \u00abattori\u00bb per solidariet\u00e0""}","<pre><yamldata>titolo: 'Brescia, Verdone e gli Stadio «attori» per solidarietà'
 descrizione: '«Brescia si Mobilita per Amatrice» sotto le insegne di Old Cinema, il 14 e il 15 ottobre: spettacolo e solidarietà a braccetto per raccogliere fondi da devolvere ai terremotati. Ci saranno Verdone e gli Stadio, con frontman Gaetano Curreri come Andrea Fornili (chitarra), Roberto Drovandi (basso), Fabrizio Foschini (piano) e Iarin Munari ( batteria). Suoneranno alla stazione San Faustino della metropolitana.'
 link: 'http://www.bresciaoggi.it/home/spettacoli/verdone-e-gli-stadio-attori-per-solidariet%C3%A0-1.5187312'
@@ -4832,17 +4837,6 @@ bic: ''
 postale: ''
 causale: 'Emilia-Romagna per sisma Centro Italia'
 link: 'http://www.regione.emilia-romagna.it/notizie/primo-piano/sisma-nell-italia-centrale-il-presidente-bonaccini-nelle-prossime-ore-sui-luoghi-colpiti'
-email: ''
-data: 13/09/2016
-</yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/165,176721021,2016-10-02 09:00:35,2016-09-13 18:54:26,GUS - Gruppo Umana Solidarietà,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Emergenza Terremoto Centro Italia"", ""chi"": ""GUS - Gruppo Umana Solidariet\u00e0"", ""data"": ""13/09/2016"", ""descrizione"": ""Donazione tramite Paypal o carta di credito"", ""email"": """", ""iban"": ""IT66Y0335901600100000131559"", ""intestazione"": """", ""link"": ""http://gusitalia.it/"", ""postale"": """"}","<pre><yamldata>chi: 'GUS - Gruppo Umana Solidarietà'
-descrizione: 'Donazione tramite Paypal o carta di credito'
-intestazione: ''
-iban: 'IT66Y0335901600100000131559'
-bic: ''
-postale: ''
-causale: 'Emergenza Terremoto Centro Italia'
-link: 'http://gusitalia.it/'
 email: ''
 data: 13/09/2016
 </yamldata></pre>",open
