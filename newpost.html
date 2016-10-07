@@ -28,32 +28,35 @@ csses: [/css/c3.css, /css/debtChart.css]
     <input type="submit" value="Submit">
 </form>
 <script type="text/javascript">
+var getMinPayment = function(debt) {
+	    if(debt.minpaymenttype === 'percent') {
+			return Math.round(debt.balance * debt.minpayment);
+	    } else {
+			return debt.minpayment;
+	    }
+}
+
+var updateDebt = function(debt) {          
+	    debt.balance = debt.balance * (1 + debt.rate / 12) - debt.payment;
+	    debt.balance = Math.round(debt.balance);
+	    if(debt.balance < debt.payment){
+		if(debt.getminpaymenttype === 'dollar' && debt.balance < debt.minpayment) {
+		    debt.minpayment = debt.balance;
+		}
+		debt.snowball = debt.payment - debt.balance;
+		debt.payment = debt.balance;
+	    }
+	    if(debt.balance <= 0) {
+			debt.balance = 0;
+			debt.minpayment = 0;
+			debt.snowball = debt.payment;
+			debt.payment = 0;
+	    }
+	};
+}	
+
 function DebtProto() {
 	this.snowball = 0;
-	this.getMinPayment = function() {
-	    if(this.minpaymenttype === 'percent') {
-		return Math.round(this.balance*this.minpayment);
-	    } else {
-		return this.minpayment;
-	    }
-	};
-	this.update = function() {          
-	    this.balance = this.balance * (1 + this.rate / 12) - this.payment;
-	    this.balance = Math.round(this.balance);
-	    if(this.balance < this.payment){
-		if(this.getminpaymenttype === 'dollar' && this.balance < this.minpayment) {
-		    this.minpayment = this.balance;
-		}
-		this.snowball = this.payment - this.balance;
-		this.payment = this.balance;
-	    }
-	    if(this.balance <= 0) {
-		this.balance = 0;
-		this.minpayment = 0;
-		this.snowball = this.payment;
-		this.payment = 0;
-	    }
-	};
 }	
 
 function Debt(name, balance, rate, payment, minpayment, minpaymenttype) {
@@ -86,7 +89,7 @@ function sumBalances(debts) {
 }
 
 function sumMinpayments(debts) {
-    return debts.reduce(function(p, c) {return p + c.getMinPayment();}, 0);
+    return debts.reduce(function(p, c) {return p + getMinPayment(c);}, 0);
 }
 	
 function averageInterest(debts) {
@@ -113,6 +116,7 @@ function highestRate(debts) {
 
 function getResults(debts) {	
 	var highest = JSON.parse(JSON.stringify(debts));
+	$.extend( highest, new DebtProto() );
 	
 	var results = {
 		highestRate: {
@@ -132,7 +136,7 @@ function getResults(debts) {
     var month = 1;
 	
     while (sumBalances(highest) > 0) {
-        highest.forEach(function(debt) {highest.update();});
+        highest.forEach(function(debt) {update(highest);});
 		
         results.highestRate.balances.push([month,sumBalances(highest), sumMinpayments(highest)]);
 	results.highestRate.interests.push([month,averageInterest(highest) * 100]);
