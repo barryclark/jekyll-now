@@ -66,7 +66,7 @@ function Debt(name, balance, rate, payment, minpayment, minpaymenttype) {
 	$.extend( this, new DebtProto() );
 }
 
-function avalanche(debts) {
+function avalanche(debts, method) {
     var snowballs = debts.reduce(function(p, c) {return p + c.snowball;}, 0);
     
     if(snowballs > 0) {
@@ -75,7 +75,7 @@ function avalanche(debts) {
         debts.forEach(function(debt) {debt.snowball = 0;});
         
         if(toSnowball.length > 0) {
-            var avalanche = highestRate(toSnowball);
+            var avalanche = method(toSnowball);
             avalanche.payment = avalanche.payment + snowballs;
         }
     }
@@ -111,40 +111,44 @@ function highestRate(debts) {
     });
 }
 
-function getResults(debts) {	
-	var highest = JSON.parse(JSON.stringify(debts));
-	highest.forEach(function(debt) {$.extend(debt, new DebtProto() );});
-	
+function usingMethod(debts, method) {
 	var results = {
-		highestRate: {
 			balances: [['month', 'balance', 'minimum payment'],
 				  [0, sumBalances(debts), sumMinpayments(debts)]],
 			interests: [['month','interest'],
 				   [0, averageInterest(debts) * 100]]
-		},
-		lowestBalance: {
-			balances: [['month', 'balance', 'minimum payment'],
-				  [0, sumBalances(debts), sumMinpayments(debts)]],
-			interests: [['month','interest'],
-				   [0, averageInterest(debts) * 100]]
-		}
 	};
-
-    var month = 1;
 	
-    while (sumBalances(highest) > 0) {
-        highest.forEach(function(debt) {debt.update();});
+	var month = 1;
+	
+    while (sumBalances(debts) > 0) {
+        debts.forEach(function(debt) {debt.update();});
 		
-        results.highestRate.balances.push([month,sumBalances(highest), sumMinpayments(highest)]);
-	results.highestRate.interests.push([month,averageInterest(highest) * 100]);
+        results.highestRate.balances.push([month,sumBalances(debts), sumMinpayments(debts)]);
+		results.highestRate.interests.push([month,averageInterest(debts) * 100]);
         
-        avalanche(highest);
+        avalanche(debts, method);
         month++;
         
         if(month > 500) {
             break;
         }
     }
+	
+	return result;
+}
+
+function getResults(debts) {	
+	var highest = JSON.parse(JSON.stringify(debts));
+	highest.forEach(function(debt) {$.extend(debt, new DebtProto() );});
+	
+	var lowest = JSON.parse(JSON.stringify(debts));
+	lowest.forEach(function(debt) {$.extend(debt, new DebtProto() );});
+	
+	var results = {
+		highestRate: usingMethod(debts, highestRate),
+		lowestBalance: usingMethod(debts, lowestBalance)
+	};
 
     return results;
 }
