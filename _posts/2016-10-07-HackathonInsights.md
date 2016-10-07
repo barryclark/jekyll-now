@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Project: B#1 
-subtitle: Insights from the Freiburg Hackathon: New online Queue Management in Bürgeramt
+title: Project - B#1 
+subtitle: Insights from the Freiburg Hackathon - New online Queue Management in Bürgeramt
 category: product
 tags: [Mobile, Open Source]
 author: daniel_wehrle, anja_kienzler
