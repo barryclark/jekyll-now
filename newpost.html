@@ -113,7 +113,7 @@ function highestRate(debts) {
 
 function getResults(debts) {	
 	var highest = JSON.parse(JSON.stringify(debts));
-	$.extend(highest, new DebtProto() );
+	highest.forEach(function(debt) {$.extend(debt, new DebtProto() );});
 	
 	var results = {
 		highestRate: {
