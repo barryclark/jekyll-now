@@ -124,8 +124,8 @@ function usingMethod(debts, method) {
     while (sumBalances(debts) > 0) {
         debts.forEach(function(debt) {debt.update();});
 		
-        results.highestRate.balances.push([month,sumBalances(debts), sumMinpayments(debts)]);
-		results.highestRate.interests.push([month,averageInterest(debts) * 100]);
+        results.balances.push([month,sumBalances(debts), sumMinpayments(debts)]);
+		results.interests.push([month,averageInterest(debts) * 100]);
         
         avalanche(debts, method);
         month++;
@@ -135,7 +135,7 @@ function usingMethod(debts, method) {
         }
     }
 	
-	return result;
+	return results;
 }
 
 function getResults(debts) {	
