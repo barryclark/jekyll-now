@@ -1,9 +1,13 @@
 <h2>Snowball Method Using the Highest Rate</h2>
+<h3>Total Paid</h3>
+<div id="highest-rate-total-paid"></div>
 <h3>Total Balance and Minimum Payment over Time</h3>
 <div id="highest-rate-balance-chart" style="width: 90%; height: 300px;"></div>
 <h3>Average Interest Rate over Time</h3>
 <div id="highest-rate-interest-chart" style="width: 90%; height: 300px;"></div>
 <h2>Snowball Method Using the Lowest Balance</h2>
+<h3>Total Paid</h3>
+<div id="lowest-balance-total-paid"></div>
 <h3>Total Balance and Minimum Payment over Time</h3>
 <div id="lowest-balance-balance-chart" style="width: 90%; height: 300px;"></div>
 <h3>Average Interest Rate over Time</h3>
@@ -97,6 +101,10 @@ function sumBalances(debts) {
 function sumMinpayments(debts) {
     return debts.reduce(function(p, c) {return p + c.getMinPayment();}, 0);
 }
+
+function sumPayments(debts) {
+    return debts.reduce(function(p, c) {return p + c.getPayment();}, 0);
+}
 	
 function averageInterest(debts) {
 	var totalBalance = sumBalances(debts);
@@ -108,14 +116,22 @@ function lowestBalance(debts){
     return debts.reduce(function(p, c) {
         if(p == null) {return c;}
         else if(p.balance > c.balance) {return c;}
-        else {return p;}
+        else if(p.balance === c.balance) {
+			if(p.rate < c.rate) {return c;}
+			else{return p;}
+		}
+		else {return p;}
     });
 }
 
 function highestRate(debts) {
     return debts.reduce(function(p, c) {
-        if(p == null) {return c;}
+        if(p == null) {return c;}		
         else if(p.rate < c.rate) {return c;}
+		else if(p.rate === c.rate) {
+			if(p.balance > c.balance) {return c;}
+			else {return p;}
+		} 
         else{return p;}
     });
 }
@@ -125,7 +141,8 @@ function usingMethod(debts, method) {
 			balances: [['month', 'balance', 'minimum payment'],
 				  [0, sumBalances(debts), sumMinpayments(debts)]],
 			interests: [['month','interest'],
-				   [0, averageInterest(debts) * 100]]
+				   [0, averageInterest(debts) * 100]],
+			totalPaid: 0
 	};
 	
 	var month = 1;
@@ -135,6 +152,7 @@ function usingMethod(debts, method) {
 		
         results.balances.push([month,sumBalances(debts), sumMinpayments(debts)]);
 		results.interests.push([month,averageInterest(debts) * 100]);
+		results.totalPaid = results.totalPaid + sumPayments(debts);
         
         avalanche(debts, method);
         month++;
@@ -234,6 +252,9 @@ $(document).ready(function() {
     }
 	
     var results = getResults(debts);
+	
+	$('#highest-rate-total-paid').append('$' + results.highestRate.totalPaid);
+	$('#lowest-balance-total-paid').append('$' + results.lowestBalance.totalPaid);
     
     c3.generate({
         bindto: '#highest-rate-balance-chart',
