@@ -6,7 +6,7 @@ category: howto, product
 tags: [Security, Mobile, Open Source, API]
 author: daniel_wehrle
 author_email: daniel.wehrle@haufe-lexware.com
-header-img: "images\bg-post.old.jpg"
+header-img: "images\bg-post.alt.jpg"
 ---
 
 Currently all of our Lexware “on-premise” products work, using the well-known user/password login authentication. But, in the last couple of years, new techniques for authentication have become available, and we tested some of these technologies - Windows Hello and Google Athtenticator - to make proposals for alternative authentication and authorization technologies for Lexware products - especially for our “on premise” products.
