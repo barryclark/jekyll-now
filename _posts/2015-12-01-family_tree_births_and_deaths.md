@@ -9,4 +9,4 @@ excerpt: Births &amp; deaths per decade and month.
 image: /images/Family-Tree-icon-200.png
 ---
 
-{% include familyTree/birthsAndDeaths.html %}
+{% include familyTree/birthsAndDeaths.min.html %}
