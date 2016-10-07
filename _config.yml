@@ -3,10 +3,10 @@
 #
 
 # Name of your site (displayed in the header)
-name: Your Name
+name: Николай Ботонов
 
 # Short bio or description (displayed in the header)
-description: Web Developer from Somewhere
+description: Web Developer from CEMI.online
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
@@ -21,7 +21,7 @@ footer-links:
   email:
   facebook:
   flickr:
-  github: barryclark/jekyll-now
+  github: botonov
   instagram:
   linkedin:
   pinterest:
