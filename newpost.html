@@ -29,7 +29,7 @@ csses: [/css/c3.css, /css/debtChart.css]
 function DebtProto() {
 	this.snowball = 0;
 	this.getMinPayment = function() {
-	    if(this.minpaymenttype == 'percent') {
+	    if(this.minpaymenttype === 'percent') {
 		return Math.round(this.balance*this.minpayment);
 	    } else {
 		return this.minpayment;
@@ -39,7 +39,7 @@ function DebtProto() {
 	    this.balance = this.balance * (1 + this.rate / 12) - this.payment;
 	    this.balance = Math.round(this.balance);
 	    if(this.balance < this.payment){
-		if(this.getminpaymenttype=='dollar'&&this.balance<this.minpayment){
+		if(this.getminpaymenttype === 'dollar' && this.balance < this.minpayment) {
 		    this.minpayment = this.balance;
 		}
 		this.snowball = this.payment - this.balance;
@@ -108,12 +108,10 @@ function highestRate(debts) {
         else{return p;}
     });
 }
-	
-
 
 function getResults(debts) {
 	var results = {
-		balances: [[['month', 'balance', 'minimum payment']],
+		balances: [['month', 'balance', 'minimum payment']],
 				  [0, sumBalances(debts), sumMinpayments(debts)]],
 		interests: [['month','interest'],
 				   [0, averageInterest(debts)]]
