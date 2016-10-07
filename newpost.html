@@ -123,11 +123,11 @@ function getBalances(debts) {
 }
 	
 function generateRow(debt) {
-	var nameString = "<input type='text' name='name' value='" + debt.name + "' />";
-        var balanceString = "$<input type='number' name='balance' min='0' value='" + debt.balance + "' />";
-        var rateString = "<input type='number' name='rate' min='0' max='100'  value='" + debt.rate * 100 + "' />%";
-        var paymentString = "$<input type='number' name='payment' min='0' value='" + debt.payment + "' />";
-        var minpaymentString = "<input type='number' name='minpayment' min='0' value='" + debt.minpayment + "' />";
+	var nameString = "<input type='text' name='name' value='" + debt.name + "' required />";
+        var balanceString = "$<input type='number' name='balance' min='0' value='" + debt.balance + "' required />";
+        var rateString = "<input type='number' name='rate' min='0' max='100'  value='" + debt.rate * 100 + "' required />%";
+        var paymentString = "$<input type='number' name='payment' min='0' value='" + debt.payment + "' required />";
+        var minpaymentString = "<input type='number' name='minpayment' min='0' value='" + debt.minpayment + "' required />";
         var minpaymenttypeString = "<select name='minpaymenttype'><option value='dollar'" 
             + (debt.minpaymenttype == 'dollar' ? ' selected' : '') 
             + ">dollar</option><option value='percent'" 
