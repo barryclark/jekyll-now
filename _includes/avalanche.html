@@ -195,6 +195,13 @@ function getResults(debts) {
 	};
     return results;
 }
+
+function getTimeString(months) {	
+	var years = Math.floor(months / 12);
+	var m = months - years * 12;
+	
+	return years + " years " + m + " months";
+}
 	
 function generateRow(debt) {
 	var nameString = "<input type='text' name='name' value='" + debt.name + "' required />";
@@ -226,6 +233,24 @@ function generateRow(debt) {
             + minpaymenttypeString + '</td></tr>';
 	
 	return row;
+}
+
+function make(divString, results) {
+	$('#' + divString + '-total-paid').append('$' + results.totalPaid + " in " + getTimeString(results.months));
+
+    c3.generate({
+        bindto: '#' + divString + '-balance-chart',
+        data:{x: 'month', rows:results.balances, type:'spline'},
+        axis:{x: {label: {text: 'month', position: 'outer-center'}},
+              y: {label: {text: 'dollars', position: 'outer-middle'}}}
+    });
+	
+    c3.generate({
+        bindto: '#' + divString + '-interest-chart',
+        data:{x: 'month', rows:results.interests, type:'spline'},
+        axis:{x: {label: {text: 'month', position: 'outer-center'}},
+              y: {label: {text: 'percent', position: 'outer-middle'}}}
+    });
 }
 
 $(document).ready(function() {
@@ -270,50 +295,8 @@ $(document).ready(function() {
 	
     var results = getResults(debts);
 	
-	$('#highest-rate-total-paid').append('$' + results.highestRate.totalPaid);
-	$('#lowest-balance-total-paid').append('$' + results.lowestBalance.totalPaid);
-	$('#just-payments-total-paid').append('$' + results.justPayments.totalPaid);
-
-    c3.generate({
-        bindto: '#just-payments-balance-chart',
-        data:{x: 'month', rows:results.justPayments.balances, type:'spline'},
-        axis:{x: {label: {text: 'month', position: 'outer-center'}},
-              y: {label: {text: 'dollars', position: 'outer-middle'}}}
-    });
-	
-    c3.generate({
-        bindto: '#just-payments-interest-chart',
-        data:{x: 'month', rows:results.justPayments.interests, type:'spline'},
-        axis:{x: {label: {text: 'month', position: 'outer-center'}},
-              y: {label: {text: 'percent', position: 'outer-middle'}}}
-    });
-    
-    c3.generate({
-        bindto: '#highest-rate-balance-chart',
-        data:{x: 'month', rows:results.highestRate.balances, type:'spline'},
-        axis:{x: {label: {text: 'month', position: 'outer-center'}},
-              y: {label: {text: 'dollars', position: 'outer-middle'}}}
-    });
-	
-    c3.generate({
-        bindto: '#highest-rate-interest-chart',
-        data:{x: 'month', rows:results.highestRate.interests, type:'spline'},
-        axis:{x: {label: {text: 'month', position: 'outer-center'}},
-              y: {label: {text: 'percent', position: 'outer-middle'}}}
-    });
-	
-   c3.generate({
-        bindto: '#lowest-balance-balance-chart',
-        data:{x: 'month', rows:results.lowestBalance.balances, type:'spline'},
-        axis:{x: {label: {text: 'month', position: 'outer-center'}},
-              y: {label: {text: 'dollars', position: 'outer-middle'}}}
-    });
-	
-    c3.generate({
-        bindto: '#lowest-balance-interest-chart',
-        data:{x: 'month', rows:results.lowestBalance.interests, type:'spline'},
-        axis:{x: {label: {text: 'month', position: 'outer-center'}},
-              y: {label: {text: 'percent', position: 'outer-middle'}}}
-    });
+	make('highest-rate', results.highestRate);
+	make('lowest-balance', results.lowestBalance);
+	make('just-payments', results.justPayments);
 });
 </script>
