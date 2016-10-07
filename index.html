@@ -2,61 +2,96 @@
 layout: default
 ---
 
+<!--HEADER CONTROL-->
 <script>
 	$(function(){
-		// Check the initial Poistion of the Sticky Header
-		var stickyHeaderTop = $('.stickyheader').offset().top;
+		// Check the initial Position of the Sticky Header
+		var stickyHeaderTop = $('.navbar-inverse').offset().top;
 
 		// If top of the window is at the header, make it opaque.
+		// TODO: scroll isn't smooth on these ones.
 		$(window).scroll(function(){
 			if( $(window).scrollTop() > stickyHeaderTop - 1 ) {
-				$('.stickyheader').removeClass('transparent').addClass('opaque');
+				$('.navbar-inverse').removeClass('transparent').addClass('opaque');
 			} else {
-				$('.stickyheader').addClass('transparent').removeClass('opaque');
+				$('.navbar-inverse').addClass('transparent').removeClass('opaque');
 			}
 		});
 	});
 </script>
 
+<!--BACKGROUND LIVE UPDATE-->
+<script>
+	$(document).ready(function() {
+		$('.bg_color').keyup(function() {
+
+			var bg_color = $(this).val(); // grab color input value
+
+			if ($(this).val().length > 0 || (/^[a-zA-Z0-9#]*$/.test(bg_color)))
+			{
+				// replace css value on live preview
+				$('.jumbotron').css('background-color', bg_color);
+				$('.bg_color').css('background-color', bg_color);
+			}
+			else
+			{
+				//resorts back to default if no value entered
+				$('.jumbotron').css('background-color', '#222222');
+				$('.bg_color').css('background-color', '#222222');
+			}
+
+		});
+	});
+</script>
+
+<!-- TODO: add text box that submits to function that contains a css update -->
+
 <!-- Jumbotron at top of page -->
 <header>
     <div class="jumbowrapper">
       <div class="jumbotron">
-        <video class="video-background" preload muted autoplay loop>
-          <source src="https://s3.amazonaws.com/distill-videos/videos/processed/2180/lighthouse.mp4" type="video/mp4">
+        <!--<video class="video-background" preload muted autoplay loop>-->
+          <!--<source src="https://s3.amazonaws.com/distill-videos/videos/processed/2180/lighthouse.mp4" type="video/mp4">-->
           <!--<source src="" type="video/ogg">  TODO: add ogg and other versions of video -->
-        </video>
+        <!--</video>-->
         <div class="jumbocontent">
-          <h2>Hi, I'm Evan Waterman.</h2>
-          <h1>Full stack developer.</h1>
-          <br>
-          <a href="#stickyheader" class="btn btn-success">But that's not all...</a>
+					<h2><b>&ltbody</b> style="background-color: <input type="text" name="bg_color" class="bg_color" value="#222222" pattern="[A-Za-z#0-9]*"/>"<b>></b></h2>
+					<br>
+					<h2>&nbsp&nbsp&nbsp&nbsp<b>&ltdiv</b> name=<strong>"Evan Waterman"</strong> class=<strong>"Full stack developer"</strong><b>></b></h2>
+					<!--<br>-->
+					<h2>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<b>&lth2></b>Click <b>&lta></b><a href="#mainpagewrapper">HERE</a><b>&lta></b> to see more... <b>&lt/h2></b></h2>
+					<!--<br>-->
+					<h2>&nbsp&nbsp&nbsp&nbsp<b>&lt/div></b></h2>
+					<!--<br>-->
+					<h2><b>&lt/body></b></h2>
         </div>
       </div>
     </div>
 </header>
 
-<div class="mainpagewrapper">
+<div class="mainpagewrapper" id="mainpagewrapper">
 
 	<!-- Header that fades in once it reaches the top of the page -->
-	<div class="stickyheader" id="stickyheader">
-		<div class="row">
-			<div class="col-sm-2 col-md-2 col-sm-offset-1 col-md-offset-1">
-				<a href="#allprogress"><h3>Skills</h3></a>
+		<nav class="navbar navbar-inverse hidden-tablet hidden-phone">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav">
+						<li><a href="#allprogress"><h3>Skills</h3></a></li>
+						<li><a href="#timeline"><h3>My Timeline</h3></a></li>
+						<li><a href="#top"><h3>Back To Top</h3></a></li>
+						<li><a href="#personalinterests"><h3>My Interests</h3></a></li>
+						<li><a href="#tempconstruction"><h3>Contact Me</h3></a></li>
+					</ul>
+				</div>
 			</div>
-			<div class="col-sm-2 col-md-2">
-				<a href="#timeline"><h3>My Timeline</h3></a>
-			</div>
-			<div class="col-sm-2 col-md-2">
-				<a href="#top"><h3>Back To Top</h3></a>
-			</div>
-			<div class="col-sm-2 col-md-2">
-				<a href="#personalinterests"><h3>My Interests</h3></a>
-			</div>
-			<div class="col-sm-2 col-md-2">
-				<a href="#tempconstruction"><h3>Contact Me</h3></a>
-			</div>
-		</div>
+		</nav>
 	</div>
 
 <!-- Wrapper for main page content -->
@@ -174,7 +209,6 @@ layout: default
 				</div>
 			</div>
 		</div>
-		<!--<a href="#timeline" class="btn btn-success">But that's not all...</a>-->
 		<br>
 		<br>
 		<br>
@@ -187,7 +221,6 @@ layout: default
 		<h3>How I got to where I am today.</h3>
 		<br>
 		<h3>Coming Soon...</h3>
-		<!--<a href="#personalinterests" class="btn btn-success">But that's not all...</a>-->
 		<br>
 		<br>
 	</div>
@@ -199,7 +232,6 @@ layout: default
 		<h3>A little bit about what makes me unique.</h3>
 		<br>
 		<h3>Coming Soon...</h3>
-		<!--<a href="#tempconstruction" class="btn btn-success">But that's not all...</a>-->
 		<br>
 		<br>
 	</div>

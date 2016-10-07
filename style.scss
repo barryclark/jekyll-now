@@ -242,13 +242,8 @@ nav {
 }
 
 // ---------------------------
-// TODO: put into own scss file
+// START EVAN STUFF
 // ---------------------------
-
-.navbar-default {
-  background-color: $darkGray;
-  border-color: $darkGray;
-}
 
 .jumbowrapper{
   position: fixed;
@@ -262,26 +257,44 @@ nav {
   position: relative;
   overflow: hidden;
   height: 100%;
-  background-color: $darkGray;
+  background-color: #222222;
   //background-image: url("/images/hackBD.JPG");
   //opacity: 0.5;
   //background-color: rgb(0, 179, 255); // Tint color
   //background-blend-mode: multiply;
 }
 
-//.jumbotron h1, h2 {
-//  color: $darkGray;
-//}
+.bg_color {
+  background-color: #222222;
+  color: $lightGray;
+  font-weight: bold;
+  width: 10vw;
+  height: 7vh;
+}
 
 .jumbocontent {
   position: relative;
-  text-shadow: $darkerGray 0 1px 1px;
-  z-index: 2;
+  text-align: left;
+  padding-left: 5vw;
 }
 
-.contentcontainer {
-  //height: 100%;
-  //padding-bottom: 50px;
+.jumbocontent h2 {
+  line-height: 1.0;
+  font-weight: normal;
+  color: $lightGray;
+  font-size: 2vw;
+
+  @include mobile {
+    line-height: 0.7;
+  }
+}
+
+.jumbocontent strong {
+  color: chartreuse;
+}
+
+.jumbocontent b {
+  color: #edf06c;
 }
 
 .video-background {
@@ -296,46 +309,91 @@ nav {
 }
 
 .mainpagewrapper {
-  margin-top: 90vh;
-  //background-color: $darkerGray;
+  margin-top: 100vh;
 }
 
 .mainpagecontent {
-  //margin-top: 50%;
-  //width: 75%;
   padding: 2% 7% 7%;
   background-color: $darkGray;
 }
 
-#stickyheader {
-  // TODO: switch to navbar to make smoother on mobile
-  width: 100%;
-  height: 50px;
+.navbar-inverse {
+  width: 107vw;
+  border-width: 0;
   z-index: 1;
+  background-color: transparent;
+  -moz-box-shadow: 0 0 0 #111;
+  -webkit-box-shadow: 0 0 0 #111;
+  box-shadow: 0 0 0 #111;
 }
 
-#stickyheader.opaque {
+.navbar-inverse h3 {
+  color: $darkGray;
+}
+
+// removes navbar if window too small
+@media (max-width: 767px) {
+  .navbar{
+    display:none;
+  }
+}
+
+// TODO: alignment off when transitioning
+.navbar-inverse.opaque {
   position: fixed;
   top: 0;
-  background-color: $darkGray;
-  transition: background-color 2s ease 0s;
+  background-color: $white;
+  -moz-box-shadow: 0 17px 20px #111;
+  -webkit-box-shadow: 0 17px 20px #111;
+  box-shadow: 0 17px 20px #111;
+
+  transition: all 2s ease 0s;
+  transition-property: box-shadow, -webkit-box-shadow, -moz-box-shadow, background-color;
 }
 
-#stickyheader.transparent {
+.navbar-inverse.transparent {
   position: static;
   top: 100px;
   background-color: transparent;
-  transition: background-color 2s ease 0s;
+  -moz-box-shadow: 0 0 0 #111;
+  -webkit-box-shadow: 0 0 0 #111;
+  box-shadow: 0 0 0 #111;
+
+  transition: all 2s ease 0s;
+  transition-property: box-shadow, -webkit-box-shadow, -moz-box-shadow, background-color;
 }
 
-//.allprogress {
-//  width: 50%;
-//
-//  @include mobile {
-//    line-height: 0.6;
-//    width: 60%;
-//  }
-//}
+.container-fluid {
+  float:right;
+  position:relative;
+  left:-50%;
+  text-align:left;
+}
+
+.container-fluid ul{
+  list-style:none;
+  position:relative;
+  left:50%;
+}
+
+.container-fluid li {
+  float:left;
+  position:relative;
+}
+
+.container-fluid a {
+  padding:2px 5px;
+  text-align:center;
+  white-space:nowrap;
+}
+
+.container-fluid h3{
+  &:hover {
+    text-decoration: underline;
+    -moz-text-decoration-color: $darkerGray;
+    text-decoration-color: $darkerGray;
+  }
+}
 
 // TODO: Why does h2, h3 (but not h1) overwrite jumbotron???! Something to do with bootstrap???!?!???
 .allprogress h1, h3, h4 {
