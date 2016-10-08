@@ -12,7 +12,7 @@ title: My Individual Strengths and Weaknesses
       <tbody>
         <tr>
           <th><h4>Strengths</h4></th>
-          <th>Opportunities</th>
+          <th><h4>Opportunities</h4></th>
         </tr>
         <tr>
           <td>
@@ -29,8 +29,8 @@ title: My Individual Strengths and Weaknesses
           </td>
         </tr>
         <tr>
-          <th>Weaknesses</th>
-          <th>Threats</th>
+          <th><h4>Weaknesses</h4></th>
+          <th><h4>Threats</h4></th>
         </tr>
         <tr>
           <td>
@@ -52,8 +52,8 @@ title: My Individual Strengths and Weaknesses
  <table style="width:100%">
       <tbody>
         <tr>
-          <th>Strengths</th>
-          <th>Opportunities</th>
+          <th><h4>Strengths</h4></th>
+          <th><h4>Opportunities</h4></th>
         </tr>
         <tr>
           <td>
@@ -70,8 +70,8 @@ title: My Individual Strengths and Weaknesses
           </td>
         </tr>
         <tr>
-          <th>Weaknesses</th>
-          <th>Threats</th>
+          <th><h4>Weaknesses</h4></th>
+          <th><h4>Threats</h4></th>
         </tr>
         <tr>
           <td>
@@ -95,8 +95,8 @@ title: My Individual Strengths and Weaknesses
  <table style="width:100%">
       <tbody>
         <tr>
-          <th>Strengths</th>
-          <th>Opportunities</th>
+          <th><h4>Strengths</h4></th>
+          <th><h4>Opportunities</h4></th>
         </tr>
         <tr>
           <td>
@@ -113,8 +113,8 @@ title: My Individual Strengths and Weaknesses
           </td>
         </tr>
         <tr>
-          <th>Weaknesses</th>
-          <th>Threats</th>
+          <th><h4>Weaknesses</h4></th>
+          <th><h4>Threats</h4></th>
         </tr>
         <tr>
           <td>
@@ -138,8 +138,8 @@ title: My Individual Strengths and Weaknesses
  <table style="width:100%">
       <tbody>
         <tr>
-          <th>Strengths</th>
-          <th>Opportunities</th>
+          <th><h4>Strengths</h4></th>
+          <th><h4>Opportunities</h4></th>
         </tr>
         <tr>
           <td>
@@ -156,8 +156,8 @@ title: My Individual Strengths and Weaknesses
           </td>
         </tr>
         <tr>
-          <th>Weaknesses</th>
-          <th>Threats</th>
+          <th><h4>Weaknesses</h4></th>
+          <th><h4>Threats</h4></th>
         </tr>
         <tr>
           <td>
