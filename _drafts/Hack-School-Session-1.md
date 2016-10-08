@@ -544,7 +544,7 @@ An element actually has several parts to it.
 In general, margins are outside of the element/block while padding is on the inside.
 You can use margin to separate the element from things outside, and padding can be used to move content away from the edges of the block.
 
-If you look back at our <h1> tag, you’ll see that there’s a margin that we don’t want. And there’s also a margin on our <body> that we don’t want either!
+If you look back at our `<h1>` tag, you’ll see that there’s a margin that we don’t want. And there’s also a margin on our <body> that we don’t want either!
 We didn’t put this there. It’s a default styling that can be overridden.
 
 ```css
@@ -717,7 +717,7 @@ That’s pretty much all the content we need for the navbar. Let’s style it!
 ```
 Set a similar background color, put some space between each nav item, and push it to the right side of our webpage.
 
-Lastly, we just need change the font to white. One thing to note is that anchor tags are a bit different to style compared to <h1> and <p>, so we’ll just target them directly:
+Lastly, we just need change the font to white. One thing to note is that anchor tags are a bit different to style compared to `<h1>` and `<p>`, so we’ll just target them directly:
 
 ```css
 #navbar a {
