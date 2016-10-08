@@ -3,13 +3,15 @@ published: true
 layout: post
 tags:
   - core-skills
+title: My Individual Strengths and Weaknesses (SWOT Analysis)
 ---
 
-## Communication Skills - Reading and Writing
+## Communication Skills 
+### Reading and Writing
  <table style="width:100%">
       <tbody>
         <tr>
-          <th>Strengths</th>
+          <th><h4>Strengths</h4></th>
           <th>Opportunities</th>
         </tr>
         <tr>
@@ -47,7 +49,7 @@ tags:
       </tbody>
     </table>
     
-## Communication Skills - Listening, Discussion and Presentation
+### Listening, Discussion and Presentation
  <table style="width:100%">
       <tbody>
         <tr>
