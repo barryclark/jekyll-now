@@ -17,7 +17,17 @@
 	{% endunless %}
 {% endfor %}
 
+{% for javascript in layout.javascripts %}
+	{% unless javascripts contains javascript %}
+		{% assign javascripts = javascripts | push: javascript %}
+	{% endunless %}
+{% endfor %}
+
 {% for css in page.csses %}
+	{% unless csses contains css %}{% assign csses = csses | push: css %}{% endunless %}
+{% endfor %}
+
+{% for css in layout.csses %}
 	{% unless csses contains css %}{% assign csses = csses | push: css %}{% endunless %}
 {% endfor %}
 
