@@ -8,8 +8,7 @@ title: My Individual Strengths and Weaknesses (SWOT Analysis)
 
 ## Communication Skills 
 
-### Reading and Writing
-
+<h3>Reading and Writing</h3>
  <table style="width:100%">
       <tbody>
         <tr>
@@ -51,7 +50,7 @@ title: My Individual Strengths and Weaknesses (SWOT Analysis)
       </tbody>
     </table>
     
-### Listening, Discussion and Presentation
+<h3>Listening, Discussion and Presentation</h3>
  <table style="width:100%">
       <tbody>
         <tr>
