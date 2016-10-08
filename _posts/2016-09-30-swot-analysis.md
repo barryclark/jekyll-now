@@ -8,6 +8,7 @@ title: My Individual Strengths and Weaknesses
 
 ## Communication Skills 
 <h3>Reading and Writing</h3>
+ <p>
  <table style="width:100%">
       <tbody>
         <tr>
@@ -48,6 +49,7 @@ title: My Individual Strengths and Weaknesses
         </tr>
       </tbody>
     </table>
+    </p>
 <h3>Listening, Discussion and Presentation</h3>
  <table style="width:100%">
       <tbody>
