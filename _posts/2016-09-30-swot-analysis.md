@@ -90,8 +90,8 @@ title: My Individual Strengths and Weaknesses
       </tbody>
     </table>
     
+    
 ## Time Management Skills 
-
  <table style="width:100%">
       <tbody>
         <tr>
