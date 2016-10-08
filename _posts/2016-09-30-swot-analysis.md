@@ -7,7 +7,9 @@ title: My Individual Strengths and Weaknesses (SWOT Analysis)
 ---
 
 ## Communication Skills 
+
 ### Reading and Writing
+
  <table style="width:100%">
       <tbody>
         <tr>
