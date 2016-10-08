@@ -3,7 +3,7 @@ published: true
 layout: post
 tags:
   - core-skills
-title: My Individual Strengths and Weaknesses (SWOT Analysis)
+title: My Individual Strengths and Weaknesses
 ---
 
 ## Communication Skills 
