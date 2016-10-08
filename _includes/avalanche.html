@@ -145,9 +145,9 @@ function highestRate(debts) {
 
 function usingMethod(debts, method) {
 	var results = {
-			balances: [['month', 'balance', 'minimum payment'],
+			balances: [['year', 'balance', 'minimum payment'],
 				  [0, sumBalances(debts), sumMinpayments(debts)]],
-			interests: [['month','interest'],
+			interests: [['year','interest'],
 				   [0, averageInterest(debts) * 100]],
 			totalPaid: 0,
 			months: 0
@@ -159,8 +159,8 @@ function usingMethod(debts, method) {
         debts.forEach(function(debt) {debt.update();});
 		
 		if(month % 12 === 0) {
-			results.balances.push([month, balance, sumMinpayments(debts)]);
-			results.interests.push([month, averageInterest(debts) * 100]);
+			results.balances.push([month / 12, balance, sumMinpayments(debts)]);
+			results.interests.push([month / 12, averageInterest(debts) * 100]);
 		}
 		
 		results.totalPaid = results.totalPaid + sumPayments(debts);
@@ -244,15 +244,15 @@ function make(divString, results) {
 
     c3.generate({
         bindto: '#' + divString + '-balance-chart',
-        data:{x: 'month', rows:results.balances, type:'spline'},
-        axis:{x: {label: {text: 'month', position: 'outer-center'}},
+        data:{x: 'year', rows:results.balances, type:'spline'},
+        axis:{x: {label: {text: 'year', position: 'outer-center'}},
               y: {label: {text: 'dollars', position: 'outer-middle'}}}
     });
 	
     c3.generate({
         bindto: '#' + divString + '-interest-chart',
-        data:{x: 'month', rows:results.interests, type:'spline'},
-        axis:{x: {label: {text: 'month', position: 'outer-center'}},
+        data:{x: 'year', rows:results.interests, type:'spline'},
+        axis:{x: {label: {text: 'year', position: 'outer-center'}},
               y: {label: {text: 'percent', position: 'outer-middle'}}}
     });
 }
