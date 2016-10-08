@@ -1,5 +1,5 @@
 ---
-title: Can gaming make a better world? A review of Jane McGonigal's TED Talk
+title: Can gaming make a better world?
 layout: post
 tags:
   - core-skills
