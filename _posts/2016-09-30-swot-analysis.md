@@ -4,11 +4,11 @@ layout: post
 tags:
   - core-skills
 title: My Individual Strengths and Weaknesses
+excerpt_separator: <!--more-->
 ---
 
 ## Communication Skills 
 <h3>Reading and Writing</h3>
- <p>
  <table style="width:100%">
       <tbody>
         <tr>
@@ -49,7 +49,8 @@ title: My Individual Strengths and Weaknesses
         </tr>
       </tbody>
     </table>
-    </p>
+<!--more--> 
+   
 <h3>Listening, Discussion and Presentation</h3>
  <table style="width:100%">
       <tbody>
@@ -91,7 +92,6 @@ title: My Individual Strengths and Weaknesses
         </tr>
       </tbody>
     </table>
-    
     
 ## Time Management Skills 
  <table style="width:100%">
