@@ -25,7 +25,7 @@ excerpt_separator: <!--more-->
           <td>
             <ul>
               <li>Finding myself in a country where English is used on a regular basis, I have an excellent opportunity to practice it regularly.</li>
-              <li>My university offers a service called Study Skills Plus which I could use to improve in this area.</li>
+              <li>My university offers a service called [Study Skills Plus](http://web.anglia.ac.uk/anet/studyskillsplus/) which I could use to improve in these areas.</li>
             </ul>
           </td>
         </tr>
@@ -36,7 +36,7 @@ excerpt_separator: <!--more-->
         <tr>
           <td>
             <ul>
-              <li>English is not and never will be my first language, so it might be that I'll never be able to match the skill of a native speaker.</li>
+              <li>English is not and never will be my first language, so it might be that I'll never be able to match the skill of a native speaker (or writer, as the case may be), or at least the confidence of one.</li>
               <li>Placeholder</li>
             </ul>
           </td>
@@ -67,7 +67,7 @@ excerpt_separator: <!--more-->
           </td>
           <td>
             <ul>
-              <li>Placeholder</li>
+              <li>English is not and never will be my first language, so it might be that I'll never be able to match the skill of a native speaker, or at least the confidence of one.</li>
               <li>Placeholder</li>
             </ul>
           </td>
@@ -109,7 +109,7 @@ excerpt_separator: <!--more-->
           </td>
           <td>
             <ul>
-              <li>My university offers a service called Study Skills Plus which I could use to improve in this area.</li>
+              <li>My university offers a service called [Study Skills Plus](http://web.anglia.ac.uk/anet/studyskillsplus/) which I could use to improve in this area.</li>
               <li>Placeholder</li>
             </ul>
           </td>
@@ -146,14 +146,14 @@ excerpt_separator: <!--more-->
         <tr>
           <td>
             <ul>
-              <li>I am somewhat experienced in using graphic editors such as Adobe Photoshop and Illustrator.</li>
+              <li>I am somewhat experienced in using Adobe applications such as Photoshop, Illustrator, InDesign and Flash.</li>
               <li>I have sufficient experience using Microsoft Office applications.</li>
             </ul>
           </td>
           <td>
             <ul>
-              <li>Placeholder</li>
-              <li>Placeholder</li>
+              <li>My university offers a service called [Study Skills Plus](http://web.anglia.ac.uk/anet/studyskillsplus/), as well as unlimited access to video tutorials on [Lynda.com](https://www.lynda.com/), which I could use to improve in this area.</li>
+              <li>The Internet offers </li>
             </ul>
           </td>
         </tr>
