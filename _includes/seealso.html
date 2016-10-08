@@ -2,7 +2,7 @@
 <script>
 $( document ).ready(function() {
   var posts = [{% for tag in page.tags %}{% for post in site.tags[tag] %}{% unless post_urls contains post.url %}{% assign post_urls = post_urls | push: post.url %}
-    {url:"{{ post.url }}",title:"{{ post.title | xml_escape }}",excerpt:'{{ post.excerpt | strip_newlines }}'},
+    {url:"{{ post.url }}",title:"{{ post.title | xml_escape }}",excerpt:'{{ post.excerpt | strip_newlines | replace: "'",  "&#39;" }}'},
   {% endunless %}{% endfor %}{% endfor %}];
   
   posts.sort(function(){return Math.random() - 0.5;});
