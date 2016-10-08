@@ -13,4 +13,4 @@ I was curious as to the difference between the two methods of snowballing debt. 
 
 Scroll down to the bottom to play with the variables. I used [c3](http://c3js.org/) for the charts, which in turn uses [d3](https://d3js.org/). I also used [jQuery](https://jquery.com/). After I was done, I used [jscompress.com](https://jscompress.com/) to minify and hopefully improve some performance. [Check out the unminified code here.](https://github.com/hendrixjoseph/hendrixjoseph.github.io/blob/master/_includes/avalanche.html)
 
-{% include avalanche.html %}
+{% include avalanche.min.html %}
