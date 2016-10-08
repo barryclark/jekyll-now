@@ -29,7 +29,7 @@
       </span>
       <hr />
       <div class="entry" style="margin-top: 15px;">
-        {% if post.facebook_post %}{% include facebook_post.html facebook_post=post.facebook_post %}{% else %}{{ post.content }}{% endif %}
+        {% if post.facebook_post %}{% include facebook_post.html facebook_post=post.facebook_post %}{% else %}{{ post.excerpt }}{% endif %}
       </div>
       
       {% unless post.facebook_post or post.linkedin_post %}<div class="fb-comments" data-href="{{ site.url }}{{ post.url }}" data-width="100%" data-numposts="5"></div>{% endunless %}
