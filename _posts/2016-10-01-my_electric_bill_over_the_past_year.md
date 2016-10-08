@@ -6,7 +6,6 @@ keywords: [electric, cost, average, DP&L, dayton power and light, chart, charts]
 javascripts: [/js/d3.min.js, /js/c3.min.js]
 csses: [/css/c3.css]
 image: /images/electric.jpg
-excerpt: I'm always looking for ways to reduce my expenses. Looking at my electric bill, there's not much there to cut. My average bill over the last eleven months was about $28.00.
 ---
 
 I'm always looking for ways to reduce my expenses. Looking at my electric bill, there's not much there to cut. My average bill over the last eleven months was about $28.00:
