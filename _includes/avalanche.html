@@ -2,23 +2,23 @@
 <h3>Total Paid</h3>
 <div id="just-payments-total-paid"></div>
 <h3>Total Balance and Minimum Payment over Time</h3>
-<div id="just-payments-balance-chart" style="width: 90%; height: 300px;"></div>
+<div id="just-payments-balance-chart" class="snowball-chart"></div>
 <h3>Average Interest Rate over Time</h3>
-<div id="just-payments-interest-chart" style="width: 90%; height: 300px;"></div>
+<div id="just-payments-interest-chart" class="snowball-chart"></div>
 <h2>Snowball Method Using the Highest Rate</h2>
 <h3>Total Paid</h3>
 <div id="highest-rate-total-paid"></div>
 <h3>Total Balance and Minimum Payment over Time</h3>
-<div id="highest-rate-balance-chart" style="width: 90%; height: 300px;"></div>
+<div id="highest-rate-balance-chart" class="snowball-chart"></div>
 <h3>Average Interest Rate over Time</h3>
-<div id="highest-rate-interest-chart" style="width: 90%; height: 300px;"></div>
+<div id="highest-rate-interest-chart" class="snowball-chart"></div>
 <h2>Snowball Method Using the Lowest Balance</h2>
 <h3>Total Paid</h3>
 <div id="lowest-balance-total-paid"></div>
 <h3>Total Balance and Minimum Payment over Time</h3>
-<div id="lowest-balance-balance-chart" style="width: 90%; height: 300px;"></div>
+<div id="lowest-balance-balance-chart" class="snowball-chart"></div>
 <h3>Average Interest Rate over Time</h3>
-<div id="lowest-balance-interest-chart" style="width: 90%; height: 300px;"></div>
+<div id="lowest-balance-interest-chart" class="snowball-chart"></div>
 <form name="form1" method="GET">		
     <table id="debt-table">
     	<thead>
@@ -155,12 +155,16 @@ function usingMethod(debts, method) {
 	
 	var month = 1;
 	
-    while (sumBalances(debts) > 0) {
+	for(var balance = sumBalances(debts); balance > 0; balance = sumBalances(debts)) {
         debts.forEach(function(debt) {debt.update();});
 		
-        results.balances.push([month,sumBalances(debts), sumMinpayments(debts)]);
-		results.interests.push([month,averageInterest(debts) * 100]);
+		if(month % 12 === 0) {
+			results.balances.push([month, balance, sumMinpayments(debts)]);
+			results.interests.push([month, averageInterest(debts) * 100]);
+		}
+		
 		results.totalPaid = results.totalPaid + sumPayments(debts);
+		
         
 		if(typeof method !== 'undefined') {
 			avalanche(debts, method);

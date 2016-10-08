@@ -2,3 +2,8 @@ input[type=number] {
   width: 5em;
   text-align: center;
 }
+
+.snowball-chart {
+	width: 90%;
+	height: 300px;
+}
