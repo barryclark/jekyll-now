@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hack School Session 1
+title: Hack School Session 1 (Introduction to HTML and CSS)
 ---
 
 We all hope you enjoyed your first Hack School session! As part of our
@@ -9,8 +9,7 @@ covered. For this first session, we learned HTML and CSS as part of
 constructing a personal webpage. You'll want such a page as a portfolio to show
 off your work to recruiters.
 
-
-### Tools for the Job
+<h3>Tools for the Job</h3>{: .acm-blue }
 
 A plain text editor is needed for this. We want to write plain text without any
 formatting applied, and we want do so in a monospaced (typewriter) font to let
@@ -23,8 +22,7 @@ The last thing we'll need is a web browser. Google Chrome and Safari are
 our recommendations to ensure that you're seeing support for the latest
 and greatest.
 
-
-### Debugging Tips
+<h3>Debugging Tips</h3>{: .acm-blue }
 
 Many people last night encountered errors along the way. Don't worry, this is
 perfectly normal. Computers are very particular in what they expect. If your
@@ -41,8 +39,7 @@ causes:
 
 * Closing quotes were missing around an attribute's value in a tag. For example, `rel="stylesheet` instead of `rel="stylesheet"`.
 
-
-### Style Tips
+<h3>Style Tips</h3>{: .acm-blue }
 
 In English, we're told to avoid run-on sentences, overly long paragraphs, and bad document formatting. A similar set of
 recommendations applies to code.
@@ -82,8 +79,7 @@ p {
 Notice that there is always a space before the opening curly brace (`{`),
 which is also on the same line as the selector.
 
-
-### Recommended References
+<h3>Recommended References</h3>{: .acm-blue }
 
 As you go along, you'll likely need to look up many things. 
 Here are some of the best places to do so: 
@@ -93,23 +89,19 @@ Here are some of the best places to do so:
 * [Mozilla Developer Network (MDN) HTML reference](https://developer.mozilla.org/en-US/docs/Web/HTML)
 * [Mozilla Developer Network (MDN) CSS reference](https://developer.mozilla.org/en-US/docs/Web/CSS)
 
-
-### What is HTML?
+<h3>What is HTML?</h3>{: .acm-blue }
 
 HTML stands for HyperText Markup Language. It's the language we use to tell the web browser what our website looks like. CSS stands for Cascading Style Sheets. We use CSS to describe the style of our website (spacing, colors, fonts, etc.). We use it to make our HTML pretty!
 
-
-### How to Write HTML
+<h3>How to Write HTML</h3>{: .acm-blue }
 
 HTML comprises of content surrounded by "tags", which have certain properties (or attributes). Each tag expresses its content differently and means something else in the context of the document. Tags usually have an "open tag" (`<p>` and a "close tag" (`</p>`), with the content in between them. Tags can have an **attribute** with an assigned value (`<p id="my-paragraph">`)
 
-
-### Useful Tags
+<h3>Useful Tags</h3>{: .acm-blue }
 
 Now let's see some of the most useful HTML tags.
 
-
-#### Header Tags
+<h3>Header Tags</h3>{: .acm-blue }
 
 The header tag can either be from 1-6, with one being the most important (biggest to 6 being the least important (smallest). Header tags are used to express section titles/subtitles and other important information.
 
@@ -117,15 +109,13 @@ The header tag can either be from 1-6, with one being the most important (bigges
 
 Other header tags: `<h1>`, `<h2>`, ..., `<h6>`
 
-
-#### Paragraph Tags
+<h3>Paragraph Tags</h3>{: .acm-blue }
 
 The `<p>` tag is a paragraph tag, and is used to hold text, even if it's just a line.
 
 `<p>Hack School is a quarter long course that will teach you the fundamentals of web development.</p>`
 
-
-#### Image Tags
+<h3>Image Tags</h3>{: .acm-blue }
 
 The `<img>` tag is used to insert images. `<img>` tags generally have a src attribute with a value of a URL to an image.
 
@@ -139,15 +129,13 @@ You can also use relative URLs if the image file is in a local folder.
 
 **Note**: The `<img>` tag does NOT have a closing `</img>` tag.
 
-
-#### Input Tags
+<h3>Input Tags</h3>{: .acm-blue }
 
 The `<input>` tag is used to get input from users. It has an attribute called *type* which indicates the type of value you want the user to input. Some possible values for this are "text", "number" and "email". `<input>` tags can also have a placeholder value that will show up in the box as a hint to the user.
 
 `<input type="text" placeholder="Your Name"`
 
-
-#### Divider Tags
+<h3>Divider Tags</h3>{: .acm-blue }
 
 A `<div>` tag is used for stylistic purposes. It displays no content. We use this tag to divide our HTML document into sections so that it doesn’t remain one big blob. Divs are usually accompanied by a class or id attribute.
 
@@ -157,8 +145,7 @@ A `<div>` tag is used for stylistic purposes. It displays no content. We use thi
 </div>
 ```
 
-
-### Basic Document Structure
+<h3>Basic Document Structure</h3>{: .acm-blue }
 
 HTML documents are usually structured like this:
 
@@ -182,15 +169,13 @@ tags are for information _about_ the document, like title, meta data, CSS
 links, scripts, etc., and are not displayed. Conversely, all content between
 `<body>` and `</body>` is to be displayed.
 
+<h2>The Project</h2>{: .acm-blue }
 
-## The Project
-
-### Getting Started
+<h3>Getting Started</h3>{: .acm-cerulean }
 
 Create a folder to put your files in, like `hack_school_week1`. Make sure when you edit your HTML and CSS, all of the files are in this folder. Name HTML files by appending ".html" to the end of them (e.g. `mywebsite.html`) and name CSS files by appending ".css" to the end of them (e.g. `mystyles.css`). Opening the HTML and CSS files in a plain text editor, like [Sublime Text](https://www.sublimetext.com), will let you edit them. Opening your HTML file in a web browser will let you see your website.
 
-
-### Let's Introduce Ourselves
+<h3>Let's Introduce Ourselves</h3>{: .acm-cerulean }
 
 We'll start off simple by making a website with a title and a header.
 Copy the layout below and put your name in `<h1> </h1>` tags for the world to see.
@@ -211,8 +196,7 @@ Save your changes to an html file like `hackschool.html` then open it up in your
 
 <!-- You should now see your shiny new website // TODO IMAGE -->
 
-
-### Show Off Your Looks
+<h3>Show Off Your Looks</h3>{: .acm-cerulean }
 
 Now let's show the world how awesome we look by adding an image to our page. First we need to get a picture of ourselves either from a website like facebook or on our computer. If you're using an online image, you just need the url like this: `<img src="http://www.facebook.com/yourprofilepicture.jpg">`
 
@@ -239,16 +223,14 @@ The resulting file should look like this
 
 <!-- // TODO after every html, put an image -->
 
-
-### Say Something About Yourself
+<h3>Say Something About Yourself</h3>{: .acm-cerulean }
 
 Now that we've been dazzled by your looks, let's get to know you more.
 Use the `<p> </p>` tag to add a short description about yourself.
 
 `<p>Student. Programmer. Taco enthusiast. </p>`
 
-
-### Add a Contact Field
+<h3>Add a Contact Field</h3>{: .acm-cerulean }
 
 With an award winning website like this, people are going to want to contact
 you, so let's give them the option. We're going to use the `<input>` tag to
@@ -294,8 +276,7 @@ Your site should now have the following code:
 
 <!-- And look like this: //TODO -->
 
-
-### Spice It Up with CSS
+<h3>Spice It Up with CSS</h3>{: .acm-cerulean }
 
 CSS stands for Cascading Style Sheets, and it “is used to describe the
 presentation of a document written in a markup language” (Wikipedia). It
@@ -306,8 +287,7 @@ Our website so far is pretty great, but it lacks style. We need to
 differentiate ourselves and really put our personality into it. That's what CSS
 allows us to do.
 
-
-#### How Does CSS Work?
+<h4>How Does CSS Work?</h4>{: .acm-cerulean }
 
 ```css
 selector {
@@ -318,8 +298,7 @@ selector {
 
 The selector specifies exactly what elements we wish to style. The property is the specific thing we want to change for those elements. The value is the actual value we want for that property.
 
-
-#### Selectors
+<h4>Selectors</h4>{: .acm-cerulean }
 
 You can select by element, by simply typing in the element. Note that this will select all elements that are of your selector type.
 
@@ -345,8 +324,7 @@ You can select by the id attribute (pound sign)
 }
 ```
 
-
-#### More on 'class' and 'id'
+<h4>More on 'class' and 'id'</h4>{: .acm-cerulean }
 
 HTML elements can have a class and/or id attribute that can be used for CSS.
 **class** can be applied to multiple elements while **id** can only be applied to one element.
@@ -381,8 +359,7 @@ Divs are usually accompanied by a class or id since they are mainly used for sty
 </div>
 ```
 
-
-#### Setting up for CSS
+<h4>Setting up for CSS</h4>{: .acm-cerulean }
 
 We can actually add style within our HTML file, but we like to keep our styles
 separate from our HTML to keep our files more organized.
@@ -404,8 +381,7 @@ Your HTML should look like this:
 </head>
 ```
 
-
-#### Re-sizing our image
+<h4>Re-sizing our image</h4>{: .acm-cerulean }
 
 In your `styles.css` file, add the following lines to change your image size:
 
@@ -424,8 +400,7 @@ every image on the page. If we haev other images on the page, they will also be
 re-sized. What we really want is to only target our profile image, so let's fix
 that.
 
-
-#### Select by id
+<h4>Select by id</h4>{: .acm-cerulean }
 
 In your HTML file, let's add an `id` attribute to your profile image. Update your img tag:
 `<img src="profile_pic.jpg" id="prof-pic">`
@@ -441,8 +416,7 @@ Now we can select by this id using the `#` character in our CSS. Update your CSS
 
 Now we only change the size of our profile image, so any other images on our page are safe.
 
-
-### What We Have So Far
+<h3>What We Have So Far</h3>{: .acm-blue }
 
 <!-- // TODO image -->
 
@@ -456,8 +430,7 @@ and adding more styles in the CSS.
 Since you already know the basics of HTML and CSS, the next section will be a
 little bit more fast paced.
 
-
-### What We're Going to Add
+<h3>What We're Going to Add</h3>{: .acm-blue }
 
 For our personal website, we're going to add two main sections.
 
@@ -469,8 +442,7 @@ For our personal website, we're going to add two main sections.
   * Your hobbies
   * Clubs you're interested in
 
-
-#### Breakdown of the Page
+<h4>Breakdown of the Page</h4>{: .acm-cerulean }
 
 We'll have one div that contains all our main section content. Each section will then live in its own div.
 
@@ -487,8 +459,7 @@ Restructure your HTML to look like this:
 
 <!-- // TODO html structure with divs -->
 
-
-#### About Me
+<h4>About Me</h4>{: .acm-cerulean }
 
 We can add a sub-title using the `<h2>` tag. Then, we can use `<p>` tags to inert some information about us. This all lies within our "about" `<div>`.
 
@@ -501,8 +472,7 @@ We can add a sub-title using the `<h2>` tag. Then, we can use `<p>` tags to iner
 </div>
 ```
 
-
-#### Lists
+<h4>Lists</h4>{: .acm-cerulean }
 
 We don't always want paragraphs and headers. Sometimes we want to make a list of things. For this, we can use the `<ul>` and `<ol>` tags.
 An unordered list (`ul`) has no numbers, just bullets. It is contained within `<ul>` and `</ul>` tags.
@@ -519,8 +489,7 @@ Example:
 </ol>
 ```
 
-
-#### Interests
+<h4>Interests</h4>{: .acm-cerulean }
 
 Now that we have filled out our "About" section, we can move onto your "Interests" section. We will tell our users what we like to do outside of school, as well as what topics we're interested in. We'll be using the list tags for this. All of this will be in our "interests" `<div>`.
 
@@ -543,8 +512,7 @@ Now that we have filled out our "About" section, we can move onto your "Interest
 
 We add our hobbies as an unordered list since we like them all equally. However, our school interests are listed in order of preference, so we use an ordered list.
 
-
-#### Anchors
+<h4>Anchors</h4>{: .acm-cerulean }
 
 By this point our webpage will have some decent content, but it would be nice to perhaps add a link to our Facebook, LinkedIn, or Twitter!
 We’ve gone through images, but not anchors! Anchors are similar to images except that instead of putting in a URL to an image, we put a URL to a website. There is an opening AND closing anchor tag, and whatever lies in between is clickable.
@@ -553,8 +521,7 @@ Example: `<a href="www.google.com">Click Here to go to Google</a>`
 
 We're going to use images and anchors to create a footer for our webpage.
 
-
-#### Footer
+<h4>Footer</h4>{: .acm-cerulean }
 
 Underneath your container div, add a div with the id="footer". Here, you can add links to your social media accounts.
 
@@ -589,13 +556,11 @@ it's worth learning how to use Chrome DevTools.
 A quick way to get started is Google's [official documentation](https://developers.google.com/web/tools/chrome-devtools/). A more in-depth tutorial
 can be found with [CodeSchool](https://www.codeschool.com/courses/discover-devtools).
 
-
-### Deep Dive into CSS
+<h3>Deep Dive into CSS</h3>{: .acm-blue }
 
 Now we've finished most of our HTML, but our webpage still doesn't look beautiful enough. With CSS, we can transform our webpage into a work of art!
 
-
-#### Styling Our Header
+<h3>Styling Our Header</h3>{: .acm-blue }
 
 Let's change the size of our header
 
@@ -627,8 +592,7 @@ We just need to add `color: white;` to our #header styles to change the text col
 }
 ```
 
-
-##### Positioning
+<h5>Positioning</h5>{: .acm-cerulean }
 
 An element actually has several parts to it.
 
@@ -679,14 +643,12 @@ We can add the following attribute to our image: `border-radius: 50%;`
 And if you want to add some padding or margins here and there to make your page look a bit prettier
 Suggestions: make the spacing between your picture, <p> tag, and input fields the same.
 
-
-#### Moving Onto the Main Content
+<h4>Moving Onto the Main Content</h4>{: .acm-cerulean }
 
 The main content includes everything including and within our “container” div.
 That includes, the `<div id=“about”>` and the `<div id=“interests”>` and any other div containing content.
 
-
-##### Creating a Column for Our Content
+<h5>Creating a Column for Our Content</h5>{: .acm-cerulean }
 
 With two (or more) sections of information, we’ll stack them on top of each other. We’ll give each `<div>` the same class “column”, since they’ll form one single column. They still have different ids -- “about” and “interests” though!
 
@@ -733,8 +695,7 @@ Centering things in HTML is actually pretty tough.
 For example, it takes different CSS attributes to center text within a div versus centering a div within a div.
 It’s actually not necessary to memorize how to do it. Often you can quickly Google the solution to it.
 
-
-##### A CSS Tip: Selectors
+<h5>A CSS Tip: Selectors</h5>{: .acm-cerulean }
 
 Let’s say that we want to bold the paragraphs in our “Interests” section. One way would be to assign them both a class, and then to give that a font-weight attribute with the value bold.
 
@@ -751,8 +712,7 @@ general bold. We made all paragraphs within #interests id bold. This particular
 CSS syntax scopes the selection to paragraphs within the `#interests` id. It’s
 pretty useful, especially when you only want to style particular things.
 
-
-##### Using `<span>` Tags to Style Inline Text
+<h5>Using `<span>` Tags to Style Inline Text</h5>{: .acm-cerulean }
 
 Now in my list of classes, I want to be able to highlight somehow which classes are my CS classes and which are GEs to help people easily differentiate. This can be done by adding html `<span>` tags.
 The `<span>` tag basically allows you to group inline elements and assign a class or id, which you can then style with CSS.
@@ -782,8 +742,7 @@ Meanwhile, we want the CS classes to be red and bolded (which can be styled usin
 }
 ```
 
-
-#### Finalizing the Footer
+<h4>Finalizing the Footer</h4>{: .acm-cerulean }
 
 Now that the header and main section of our webpage is finished, all that’s left is the footer. We also would like to center our footer.
 And because it’s always nice to play around with positioning, perhaps a margin here or padding there would be nice!
@@ -795,8 +754,7 @@ And because it’s always nice to play around with positioning, perhaps a margin
 }
 ```
 
-
-#### Adding a Navbar
+<h4>Adding a Navbar</h4>{: .acm-cerulean }
 
 A navbar is a useful tool for people on your site to navigate to different
 parts of the page, and perhaps also different webpages. While navbars are
@@ -860,8 +818,7 @@ You can find our reference implementation (as live-coded)
 [here](https://codepen.io/KyCuongHuynh/pen/rrdLbG).
 For easy cloning, here's a backup [GitHub Gist](https://gist.github.com/anonymous/c52e5f6551c58e1b49c9781f978d8625).
 
-
-### Other Stylistic Changes
+<h3>Other Stylistic Changes</h3>{: .acm-blue }
 
 Your webpage is about done! But maybe it’s not looking quite how you want it to. Here’s a few topics that might give you inspiration to make your webpage your own!
 
