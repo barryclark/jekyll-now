@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hack School Session 1: Introduction to HTML and CSS
+title: Hack School Session 1
 ---
 
 We all hope you enjoyed your first Hack School session! As part of our
