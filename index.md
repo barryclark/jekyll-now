@@ -2,7 +2,7 @@
 layout: default
 ---
 
-Ελάτε στην επόμενη συνάντησή μας στην [Αθήνα](http://www.meetup.com/BlockchainGreece-0/) ή στη [Θεσσαλονίκη](http://www.meetup.com/BlockchainGreece-1/). Γραφτείτε στο [Slack](http://bitcoingreece.herokuapp.com) (online chat) μας.
+Ελάτε στην επόμενη συνάντησή μας στην [Αθήνα](http://www.meetup.com/BlockchainGreece-0/) ή στη [Θεσσαλονίκη](http://www.meetup.com/BlockchainGreece-1/). Γραφτείτε στο [Slack](http://bitcoingreece.herokuapp.com) (online chat) μας. Διαβάστε το [BitcoinTalk](https://bitcointalk.org/gr) forum.
 
 - [Ποιες εταιρείες και επαγγελματίες δέχονται Bitcoin στην Ελλάδα;](#merchant-table)
 - [Ποιες γνωστές εταιρείες του εξωτερικού δέχονται Bitcoin;](#bluechips)
