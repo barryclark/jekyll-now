@@ -394,7 +394,7 @@ line: `<link rel="stylesheet" type="text/css" href="styles.css">`
 This links our CSS file to our HTML file, so our web browser can know where to
 look for our styles.
 
-Your html should look like this:
+Your HTML should look like this:
 
 ```html
 <head>
@@ -426,7 +426,7 @@ that.
 
 #### Select by id
 
-In your html file, let's add an `id` attribute to your profile image. Update your img tag:
+In your HTML file, let's add an `id` attribute to your profile image. Update your img tag:
 `<img src="profile_pic.jpg" id="prof-pic">`
 
 Now we can select by this id using the `#` character in our CSS. Update your css file as follows:
@@ -481,7 +481,7 @@ We'll have one div that contains all our main section content. Each section will
 
 // TODO slide 32, breakdown of page format
 
-Restructure your html to look like this:
+Restructure your HTML to look like this:
 
 // TODO html structure with divs
 
@@ -764,6 +764,7 @@ We want our GE class names to be blue:
 ```
 
 Meanwhile, we want the CS classes to be red and bolded (which can be styled using the `font-weight` attribute):
+
 ```css
 .cs-class {
   font-weight: bold;
@@ -841,7 +842,9 @@ Lastly, we just need change the font to white. One thing to note is that anchor 
 
 If you remember, the `#navbar a` selector picks out all anchor tags within the `#nav` div.
 
-// TODO final image
+And so our final result is: 
+
+![](../images/hack-school/session1/final-webpage.png)
 
 
 ### Other Stylistic Changes
@@ -856,5 +859,4 @@ Your webpage is about done! But maybe it’s not looking quite how you want it t
   two more columns, or perhaps adding a third column per row!
 
 * If there’s anything that you want to change or add, and you don’t know how,
-  just ask. Ask Google, ask me, ask someone else. Again, the best way to get
-  better at this is to just go for it and practice.
+  just Google for it and  practice.
