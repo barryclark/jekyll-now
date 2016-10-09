@@ -31,47 +31,27 @@ excerpt_separator: <!--more-->
 <!--more--> 
    
 <h3>Listening, Discussion and Presentation</h3>
- <table style="width:100%">
-      <tbody>
-        <tr>
-          <th><h4>Strengths</h4></th>
-          <th><h4>Opportunities</h4></th>
-        </tr>
-        <tr>
-          <td>
-            <ul>
-              <li>When I took IELTS, I scored 8.5 in Listening and 8 in Speaking.</li>
-              <li>I am used to speaking in front of large groups of people, since I used to attend poetry reading competitions.</li>
-              <li>I have previously made presentations as part of my elementary and secondary education.</li>
-              <li>I consider myself to be a good listener.</li>
-            </ul>
-          </td>
-          <td>
-            <ul>
-              <li>Creating a group presentation is part of the Core Skills module, as well as an excellent opportunity to improve in all three areas.</li>
-              <li>Books on this subject area are available in <a href="http://www.johnsmith.co.uk/aru">John Smith's Bookshop</a>. I can buy these books using my <a href="http://www.johnsmith.co.uk/aru/books-plus-scheme">Books Plus Card.</a></li>
-            </ul>
-          </td>
-        </tr>
-        <tr>
-          <th><h4>Weaknesses</h4></th>
-          <th><h4>Threats</h4></th>
-        </tr>
-        <tr>
-          <td>
-            <ul>
-              <li>English is not and never will be my first language, so it might be that I'll never be able to match the skill of a native speaker, or at least the confidence of one.</li>
-              <li>Despite the fact that I attended poetry reading competitions, I still get anxious before public speaking.</li>
-            </ul>
-          </td>
-          <td>
-            <ul>
-              <li>My shy nature could possibly hamper any opportunities for discussion.</li>
-            </ul>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+<h4>Strengths</h4>
+ <ul>
+    <li>When I took IELTS, I scored 8.5 in Listening and 8 in Speaking.</li>
+    <li>I am used to speaking in front of large groups of people, since I used to attend poetry reading competitions.</li>
+    <li>I have previously made presentations as part of my elementary and secondary education.</li>
+    <li>I consider myself to be a good listener.</li>
+  </ul>
+<h4>Opportunities</h4>
+  <ul>
+    <li>Creating a group presentation is part of the Core Skills module, as well as an excellent opportunity to improve in all three areas.</li>
+    <li>Books on this subject area are available in <a href="http://www.johnsmith.co.uk/aru">John Smith's Bookshop</a>. I can buy these books using my <a href="http://www.johnsmith.co.uk/aru/books-plus-scheme">Books Plus Card.</a></li>
+  </ul>
+<h4>Weaknesses</h4>
+<h4>Threats</h4>
+  <ul>
+    <li>English is not and never will be my first language, so it might be that I'll never be able to match the skill of a native speaker, or at least the confidence of one.</li>
+    <li>Despite the fact that I attended poetry reading competitions, I still get anxious before public speaking.</li>
+  </ul>
+  <ul>
+    <li>My shy nature could possibly hamper any opportunities for discussion.</li>
+  </ul>
     
 ## Time Management Skills 
  <table style="width:100%">
