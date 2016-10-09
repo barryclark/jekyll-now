@@ -214,7 +214,7 @@ Copy the layout below and put your name in `<h1> </h1>` tags for the world to se
 
 Save your changes to an html file like `hackschool.html` then open it up in your web browser.
 
-You should now see your shiny new website // TODO IMAGE
+<!-- You should now see your shiny new website // TODO IMAGE -->
 
 
 ### Show Off Your Looks
@@ -242,7 +242,7 @@ The resulting file should look like this
 </html>
 ```
 
-// TODO after every html, put an image
+<!-- // TODO after every html, put an image -->
 
 
 ### Say Something About Yourself
@@ -297,7 +297,7 @@ Your site should now have the following code:
 </html>
 ```
 
-And look like this: //TODO
+<!-- And look like this: //TODO -->
 
 
 ### Spice It Up with CSS
@@ -435,7 +435,8 @@ that.
 In your HTML file, let's add an `id` attribute to your profile image. Update your img tag:
 `<img src="profile_pic.jpg" id="prof-pic">`
 
-Now we can select by this id using the `#` character in our CSS. Update your css file as follows:
+Now we can select by this id using the `#` character in our CSS. Update your CSS file as follows:
+
 ```css
 #prof-pic {
   width: 100px;
@@ -448,7 +449,7 @@ Now we only change the size of our profile image, so any other images on our pag
 
 ### What We Have So Far
 
-// TODO image
+<!-- // TODO image -->
 
 Right now we have a basic page containing a header, image, short description
 and a mini contact form. We've learned the basics of HTML, but we still don't
@@ -485,11 +486,11 @@ We'll have one div that contains all our main section content. Each section will
 </div>
 ```
 
-// TODO slide 32, breakdown of page format
+<!-- // TODO slide 32, breakdown of page format -->
 
 Restructure your HTML to look like this:
 
-// TODO html structure with divs
+<!-- // TODO html structure with divs -->
 
 
 #### About Me
@@ -588,7 +589,10 @@ Now, in our `styles.css` file, we can change the width and height of our images:
 }
 ```
 
-// TODO somewhere 'Developer Tools', or just link to another article since this one is already overloaded.
+If you'd like to closely inspect and test changes to your page,
+it's worth learning how to use Chrome DevTools. 
+A quick way to get started is Google's [official documentation](https://developers.google.com/web/tools/chrome-devtools/). A more in-depth tutorial
+can be found with [CodeSchool](https://www.codeschool.com/courses/discover-devtools).
 
 
 ### Deep Dive into CSS
@@ -615,7 +619,7 @@ Now let's change some colors to make things less boring. We'll select our "heade
 }
 ```
 
-// TODO image
+<!-- // TODO image -->
 
 Oh no!, our text is now invisible :( . Thankfully, it's a quick fix.
 We just need to add `color: white;` to our #header styles to change the text color.
@@ -758,7 +762,7 @@ pretty useful, especially when you only want to style particular things.
 Now in my list of classes, I want to be able to highlight somehow which classes are my CS classes and which are GEs to help people easily differentiate. This can be done by adding html `<span>` tags.
 The `<span>` tag basically allows you to group inline elements and assign a class or id, which you can then style with CSS.
 
-Here's how we want it to look: // TODO image, slide 62
+<!-- Here's how we want it to look: // TODO image, slide 62 -->
 
 The `<span>` tags go around each snippet of text that you want to style a certain way, and classes will be added for each style you want to add. In this case, we want the CS classes to be styled a certain way and the GEs to be styled a certain way, so we make classes for each accordingly.
 
