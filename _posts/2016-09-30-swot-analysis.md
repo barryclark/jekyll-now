@@ -19,7 +19,6 @@ excerpt_separator: <!--more-->
           <td>
             <ul>
               <li>When I took IELTS, I scored 8.5 in Reading and 7 in Writing. Thus I believe that I have sufficient skills in both areas.</li>
-              <li>Placeholder</li>
             </ul>
           </td>
           <td>
@@ -86,7 +85,6 @@ excerpt_separator: <!--more-->
           <td>
             <ul>
               <li>My shy nature could potentially harm my opportunities for discussion.</li>
-              <li>Placeholder</li>
             </ul>
           </td>
         </tr>
@@ -153,7 +151,7 @@ excerpt_separator: <!--more-->
           </td>
           <td>
             <ul>
-              <li>Anglia Ruskin University offers a service called <a href="http://web.anglia.ac.uk/anet/studyskillsplus/">Study Skills Plus</a>, as well as unlimited access to video tutorials on [Lynda.com](https://www.lynda.com/), which I could use to improve in this area.</li>
+              <li>Anglia Ruskin University offers a service called <a href="http://web.anglia.ac.uk/anet/studyskillsplus/">Study Skills Plus</a>, as well as unlimited access to video tutorials on <a href="https://www.lynda.com/">Lynda.com</a>, which I could use to improve in this area.</li>
               <li>The Internet offers countless opportunities to improve in using all types of software.</li>
               <li>Some software, which has to be purchased or subscribed to, is available for free on university owned computers and <a href="http://web.anglia.ac.uk/it/services/remotedesktop/">Remote Desktops</a>.</li>
             </ul>
