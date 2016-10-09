@@ -36,10 +36,10 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   margin: 8px 0 15px;
   padding: 0;
-  line-height: 1.7;
+  line-height: 1.3;
 	
   @include mobile {
-    line-height: 1.5;
+    line-height: 1.0;
   }
 }
 
@@ -213,6 +213,7 @@ img {
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
+  line-height: 1.7;
 }
 
 .site-description {
