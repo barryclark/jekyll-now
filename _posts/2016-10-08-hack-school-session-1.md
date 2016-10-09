@@ -1,10 +1,7 @@
 ---
 layout: post
-title: Hack School Session 1
+title: Hack School Session 1: Introduction to HTML and CSS
 ---
-
-## Introduction to HTML and CSS
-6 October 2016
 
 We all hope you enjoyed your first Hack School session! As part of our
 commitment to your success, we'll post written versions of all the material
