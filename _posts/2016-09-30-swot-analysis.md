@@ -85,7 +85,7 @@ excerpt_separator: <!--more-->
           </td>
           <td>
             <ul>
-              <li>My shy nature could potentially hamper my opportunities for discussion.</li>
+              <li>My shy nature could potentially hamper any opportunities for discussion.</li>
             </ul>
           </td>
         </tr>
