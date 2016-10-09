@@ -19,5 +19,5 @@ She also believes that gamers possess four unique qualities that make them super
 
 Inspired by an ancient story captured by the Greek historian Herodotus, McGonigal created alternate reality games that affected reality through player participation, proving that her concept is indeed applicable in the real world.
 
-All in all, I  agree with and admire McGonigal's message that games can make the world a better place – who wouldn't want to better the world while also having fun, after all?
+All in all, I agree with and admire McGonigal's message that games can make the world a better place – after all, who wouldn't want to better the world while also having some fun doing it?
 
