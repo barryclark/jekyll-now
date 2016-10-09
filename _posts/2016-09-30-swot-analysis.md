@@ -90,7 +90,7 @@ excerpt_separator: <!--more-->
   </ul>
 <h4>Opportunities</h4>
   <ul>
-    <li>Anglia Ruskin University offers a service called <a href="http://web.anglia.ac.uk/anet/studyskillsplus/">Study Skills Plus</a>, as well as unlimited access to video tutorials on <a href="https://www.lynda.com/">Lynda.com</a>, which I could use to improve in this area.</li>
+    <li>Anglia Ruskin University offers a service called <a href="http://web.anglia.ac.uk/anet/studyskillsplus/">Study Skills Plus</a>, as well as unlimited access to video tutorials on <a href="https://www.lynda.com/">Lynda.com</a>, which I could use to further develop my skills in this area.</li>
      <li>The Internet offers countless opportunities to improve in using all types of software.</li>
      <li>Some software, which has to be purchased or subscribed to, is available for free on university owned computers and <a href="http://web.anglia.ac.uk/it/services/remotedesktop/">Remote Desktops</a>.</li>
   </ul>
