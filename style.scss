@@ -36,10 +36,10 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   margin: 1em 0 15px;
   padding: 0;
-  line-height: 1.7;
+  line-height: 1.2;
 	
   @include mobile {
-    line-height: 1.5;
+    line-height: 1.1;
   }
 }
 
@@ -212,6 +212,7 @@ img {
   font-family: $helveticaNeue;
   font-weight: 300;
   font-size: 28px;
+  line-height: 1.7;
   letter-spacing: 1px;
 }
 
