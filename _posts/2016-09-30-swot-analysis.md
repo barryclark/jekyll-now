@@ -24,7 +24,7 @@ excerpt_separator: <!--more-->
           </td>
           <td>
             <ul>
-              <li>Finding myself in a country where English is used on a regular basis, I have an excellent opportunity to practice it regularly.</li>
+              <li>Finding myself in a country where English is used on a regular basis, I have an excellent opportunity to practice writing it regularly.</li>
               <li>My university offers a service called [Study Skills Plus](http://web.anglia.ac.uk/anet/studyskillsplus/) which I could use to improve in these areas.</li>
             </ul>
           </td>
@@ -67,7 +67,7 @@ excerpt_separator: <!--more-->
           </td>
           <td>
             <ul>
-              <li>English is not and never will be my first language, so it might be that I'll never be able to match the skill of a native speaker, or at least the confidence of one.</li>
+              <li>Creating a group presentation is part of the Core Skills module, as well as an excellent opportunity to improve in all three areas.</li>
               <li>Placeholder</li>
             </ul>
           </td>
@@ -79,7 +79,7 @@ excerpt_separator: <!--more-->
         <tr>
           <td>
             <ul>
-              <li>Placeholder</li>
+              <li>English is not and never will be my first language, so it might be that I'll never be able to match the skill of a native speaker, or at least the confidence of one.</li>
               <li>Placeholder</li>
             </ul>
           </td>
@@ -121,14 +121,14 @@ excerpt_separator: <!--more-->
         <tr>
           <td>
             <ul>
-              <li>I often leave things unfinished until the last minute.</li>
+              <li>I often find myself procrastinating, leaving things unfinished until the last minute as a result.</li>
               <li>I don't get as much sleep as I should.</li>
             </ul>
           </td>
           <td>
             <ul>
               <li>I could potentially spend less time than is necessary studying, by volunteering and socializing excessively.</li>
-              <li>On the other hand, I could spend too little time on volunteering and socializing, which I believe are crucial to a fulfilling and successful student life.</li>
+              <li>On the other hand, I could spend too little time volunteering and socializing, which I believe to be crucial activities to a fulfilling and successful student life.</li>
             </ul>
           </td>
         </tr>
@@ -148,12 +148,14 @@ excerpt_separator: <!--more-->
             <ul>
               <li>I am somewhat experienced in using Adobe applications such as Photoshop, Illustrator, InDesign and Flash.</li>
               <li>I have sufficient experience using Microsoft Office applications.</li>
+              <li>I have basic understanding of video editing software, such as Windows Movie Maker.</li>
+              <li>I am efficient at browsing the Internet through browsers and searching for relevant information using search engines.</li>
             </ul>
           </td>
           <td>
             <ul>
               <li>My university offers a service called [Study Skills Plus](http://web.anglia.ac.uk/anet/studyskillsplus/), as well as unlimited access to video tutorials on [Lynda.com](https://www.lynda.com/), which I could use to improve in this area.</li>
-              <li>The Internet offers </li>
+              <li>The Internet offers countless opportunities to improve in using all types of software.</li>
             </ul>
           </td>
         </tr>
@@ -164,8 +166,8 @@ excerpt_separator: <!--more-->
         <tr>
           <td>
             <ul>
-              <li>Placeholder</li>
-              <li>Placeholder</li>
+              <li>I am inexperienced when it comes to using and running software on Operating Systems other than Microsoft Windows.</li>
+              <li>I am unfamiliar with 3D modelling software.</li>
             </ul>
           </td>
           <td>
