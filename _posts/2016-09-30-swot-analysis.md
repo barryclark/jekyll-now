@@ -24,7 +24,7 @@ excerpt_separator: <!--more-->
           <td>
             <ul>
               <li>Finding myself in a country where English is used on a regular basis, I have an excellent opportunity to practice writing and reading it regularly.</li>
-              <li>My university offers a service called <a href="http://web.anglia.ac.uk/anet/studyskillsplus/">Study Skills Plus</a> and access to <a href="http://www.skills4studycampus.com/palgrave/">skills4studycampus</a>, which I could use to improve in these areas, especially Academic Writing.</li>
+              <li>My university offers a service called <a href="http://web.anglia.ac.uk/anet/studyskillsplus/">Study Skills Plus</a>, and access to <a href="http://www.skills4studycampus.com/palgrave/">skills4studycampus</a>, which I could use to improve in these areas, especially Academic Writing.</li>
             </ul>
           </td>
         </tr>
