@@ -9,45 +9,25 @@ excerpt_separator: <!--more-->
 
 ## Communication Skills 
 <h3>Reading and Writing</h3>
- <table style="width:100%">
-      <tbody>
-        <tr>
-          <th><h4>Strengths</h4></th>
-          <th><h4>Opportunities</h4></th>
-        </tr>
-        <tr>
-          <td>
-            <ul>
+<h4>Strengths</h4>
+ <ul>
               <li>When I took IELTS, I scored 8.5 in Reading and 7 in Writing. Thus I believe that I have sufficient skills in both areas.</li>
             </ul>
-          </td>
-          <td>
+<h4>Opportunities</h4>
             <ul>
               <li>Finding myself in a country where English is used on a regular basis, I have an excellent opportunity to practice writing and reading it regularly.</li>
               <li>My university offers a service called <a href="http://web.anglia.ac.uk/anet/studyskillsplus/">Study Skills Plus</a>, which I could use to improve in these areas, especially Academic Writing.</li>
             </ul>
-          </td>
-        </tr>
-        <tr>
-          <th><h4>Weaknesses</h4></th>
-          <th><h4>Threats</h4></th>
-        </tr>
-        <tr>
-          <td>
-            <ul>
+<h4>Weaknesses</h4>
+ 		<ul>
               <li>English is not and never will be my first language, so it might be that I'll never be able to match the skill of a native speaker (or writer, as the case may be).</li>
               <li>When presented with a large block of text, I will resolve to skim-reading it.</li>
             </ul>
-          </td>
-          <td>
+<h4>Threats</h4>>
             <ul>
               <li>Skimming through text could result in either loss of potentially useful information or misinformation.</li>
               <li>Using informal words in academic writing could result in a loss of marks.</li>
             </ul>
-          </td>
-        </tr>
-      </tbody>
-    </table>
 <!--more--> 
    
 <h3>Listening, Discussion and Presentation</h3>
