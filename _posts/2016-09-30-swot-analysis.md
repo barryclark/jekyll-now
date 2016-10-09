@@ -23,7 +23,7 @@ excerpt_separator: <!--more-->
      <li>English is not and never will be my first language, so it might be that I'll never be able to match the skill of a native speaker (or writer, as the case may be).</li>
      <li>When presented with a large block of text, I will resolve to skim-reading it.</li>
    </ul>
-<h4>Threats</h4>>
+<h4>Threats</h4>
    <ul>
      <li>Skimming through text could result in either loss of potentially useful information or misinformation.</li>
      <li>Using informal words in academic writing could result in a loss of marks.</li>
