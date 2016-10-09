@@ -3,39 +3,44 @@ layout: post
 title: Hack School Session 1
 ---
 
-
 # Hack School Session 1
 ## Introduction to HTML and CSS
 6 October 2016
 
-We all hope you enjoyed your first Hack School session! As part of our commitment to your success, we'll post
-written versions of all the material covered. For this first session, we learned HTML and CSS as part of constructing
-a personal webpage. You'll want such a page as a portfolio to show off your work to recruiters.
+We all hope you enjoyed your first Hack School session! As part of our
+commitment to your success, we'll post written versions of all the material
+covered. For this first session, we learned HTML and CSS as part of
+constructing a personal webpage. You'll want such a page as a portfolio to show
+off your work to recruiters.
 
 
-### Pre-requisites
+### Tools for the Job
 
-A plain text editor is needed for this. We want to write plain text without any formatting
-applied, and we want do so in a monospaced (typewriter) font to let us vertically align
-code for readability.
+A plain text editor is needed for this. We want to write plain text without any
+formatting applied, and we want do so in a monospaced (typewriter) font to let
+us vertically align code for readability.
 
-Please download Sublime Text (or a text editor like Atom, Notepad++, etc. of your choice): https://www.sublimetext.com/3 Click the link for your operating system (OS X is if you
-use a Mac)
-
-
-
+Please download Sublime Text (or a text editor like Atom, Notepad++, etc. of
+your choice): https://www.sublimetext.com/3 Click the link for your operating
+system (OS X is if you use a Mac).
 
 
 ### Debugging Tips
 
-Many people last night encountered errors along the way. Don't worry, this is perfectly normal. Computers are very particular in what they expect. If your webpage wasn't displaying correctly last night, here were the most common causes:
+Many people last night encountered errors along the way. Don't worry, this is
+perfectly normal. Computers are very particular in what they expect. If your
+webpage wasn't displaying correctly last night, here were the most common
+causes:
 
 * CSS rule declarations were missing a semicolon. For example: `text-align: center` instead of `text-align: center;`
-* The HTML and CSS files were in different folders, which caused the wrong CSS file to be included via the `<link>` tag (if one was found at all). It probably looked like edits were having no effect, even after saving the file.
-* Edits were not saved, and so your web browser was rendering an old version of the files. Be sure to save before re-loading the webpage in your browser.
-* HTML tags or attributes were misspelled. For example, `tite` instead of `title`, `herf` instead of `href`, and so on.
-* Closing quotes were missing around an attribute's value in a tag. For example, `rel="stylesheet` instead of `rel="stylesheet"`.
 
+* The HTML and CSS files were in different folders, which caused the wrong CSS file to be included via the `<link>` tag (if one was found at all). It probably looked like edits were having no effect, even after saving the file.
+
+* Edits were not saved, and so your web browser was rendering an old version of the files. Be sure to save before re-loading the webpage in your browser.
+
+* HTML tags or attributes were misspelled. For example, `tite` instead of `title`, `herf` instead of `href`, and so on.
+
+* Closing quotes were missing around an attribute's value in a tag. For example, `rel="stylesheet` instead of `rel="stylesheet"`.
 
 
 ### Style Tips
@@ -81,34 +86,42 @@ which is also on the same line as the selector.
 
 ### Recommended References
 
+// TODO: Add links to MDN, W3Schools, etc.
 
 
 ### What is HTML?
+
 HTML stands for HyperText Markup Language. It's the language we use to tell the web browser what our website looks like. CSS stands for Cascading Style Sheets. We use CSS to describe the style of our website (spacing, colors, fonts, etc.). We use it to make our HTML pretty!
 
-### How to write HTML
+
+### How to Write HTML
+
 HTML comprises of content surrounded by "tags", which have certain properties (or attributes). Each tag expresses its content differently and means something else in the context of the document. Tags usually have an "open tag" (`<p>` and a "close tag" (`</p>`), with the content in between them. Tags can have an **attribute** with an assigned value (`<p id="my-paragraph">`)
 
-### Useful Tags
-#### &lt;div&gt;
-A `<div>` tag is used for stylistic purposes. It displays no content. We use this tag to divide our HTML document into sections so that it doesn’t remain one big blob. Divs are usually accompanied by a class or id attribute.
 
-```
-<div id="bestDivID" class="bestDivClass">
-  <!-- Content -->
-</div>
-```
-#### &lt;h1&gt;, &lt;h2&gt;, ... &lt;h6&gt;
+### Useful Tags
+
+Now let's see some of the most useful HTML tags.
+
+
+#### Header Tags
+
 The header tag can either be from 1-6, with one being the most important (biggest to 6 being the least important (smallest). Header tags are used to express section titles/subtitles and other important information.
 
 `<h2>About Me</h2>`
 
-#### &lt;p&gt;
+Other header tags: `<h1>`, `<h2>`, ..., `<h6>`
+
+
+#### Paragraph Tags
+
 The `<p>` tag is a paragraph tag, and is used to hold text, even if it's just a line.
 
 `<p>Hack School is a quarter long course that will teach you the fundamentals of web development.</p>`
 
-#### &lt;img&gt;
+
+#### Image Tags
+
 The `<img>` tag is used to insert images. `<img>` tags generally have a src attribute with a value of a URL to an image.
 
 You can use direct URLs, such as the images you can find on google.
@@ -121,15 +134,27 @@ You can also use relative URLs if the image file is in a local folder.
 
 **Note**: The `<img>` tag does NOT have a closing `</img>` tag.
 
-#### &lt;input&gt;
+
+#### Input Tags
+
 The `<input>` tag is used to get input from users. It has an attribute called *type* which indicates the type of value you want the user to input. Some possible values for this are "text", "number" and "email". `<input>` tags can also have a placeholder value that will show up in the box as a hint to the user.
 
 `<input type="text" placeholder="Your Name"`
 
 
+#### Divider Tags
+
+A `<div>` tag is used for stylistic purposes. It displays no content. We use this tag to divide our HTML document into sections so that it doesn’t remain one big blob. Divs are usually accompanied by a class or id attribute.
+
+```html
+<div id="bestDivID" class="bestDivClass">
+  <!-- Content -->
+</div>
+```
+
 
 ### Basic Document Structure
-HTML Documents are usually structured like this:
+HTML documents are usually structured like this:
 
 ```html
 <!DOCTYPE html>
@@ -146,12 +171,16 @@ HTML Documents are usually structured like this:
 
 The first line, `<!DOCTYPE html>`, tells the web browser how to interpret the page -- like an HTML document. All of the website content should be between the `<html>` and `</html>` tags. Information between the `<head>` and `</head>` tags are for information _about_ the document, like title, meta data, CSS links, scripts, etc., and are not displayed. Conversely, all content between `<body>` and `</body>` is to be displayed.
 
+
 ## The Project
 
-#### Getting Started
+### Getting Started
+
 Create a folder to put your files in, like `hack_school_week1`. Make sure when you edit your HTML and CSS, all of the files are in this folder. Name HTML files by appending ".html" to the end of them (e.g. `mywebsite.html`) and name CSS files by appending ".css" to the end of them (e.g. `mystyles.css`). Opening the HTML and CSS files in a plain text editor, like [Sublime Text](https://www.sublimetext.com), will let you edit them. Opening your HTML file in a web browser will let you see your website.
 
-#### Let's introduce ourselves
+
+### Let's introduce ourselves
+
 We'll start off simple by making a website with a title and a header.
 Copy the layout below and put your name in `<h1> </h1>` tags for the world to see.
 
@@ -171,7 +200,8 @@ Save your changes to an html file like `hackschool.html` then open it up in your
 
 You should now see your shiny new website // TODO IMAGE
 
-#### Show off your looks
+
+### Show off your looks
 
 Now let's show the world how awesome we look by adding an image to our page. First we need to get a picture of ourselves either from a website like facebook or on our computer. If you're using an online image, you just need the url like this: `<img src="http://www.facebook.com/yourprofilepicture.jpg">`
 
@@ -198,13 +228,16 @@ The resulting file should look like this
 
 // TODO after every html, put an image
 
-#### Say something about yourself
+
+### Say something about yourself
+
 Now that we've been dazzled by your looks, let's get to know you more.
 Use the `<p> </p>` tag to add a short description about yourself.
 
 `<p>Student. Programmer. Taco enthusiast. </p>`
 
-#### Add a contact field
+
+### Add a contact field
 With an award winning website like this, people are going to want to contact you, so let's give them the option. We're going to use the `<input>` tag to make a small contact form.
 
 Below your short description, add the following lines:  
@@ -243,13 +276,16 @@ Your site should now have the following code:
 
 And look like this: //TODO
 
-### Spice it up with CSS
+
+### Spice It Up with CSS
 
 CSS stands for Cascading Style Sheets, and it “is used to describe the presentation of a document written in a markup language” (Wikipedia). It basically makes your website look really pretty. It can be used to add color, change element sizes and format your page.
 
 Our website so far is pretty great, but it lacks style. We need to differentiate ourselves and really put our personality into it. That's what CSS allows us to do.
 
-#### How does CSS work?
+
+#### How Does CSS Work?
+
 ```css
 selector {
   property: value;
@@ -259,15 +295,19 @@ selector {
 
 The selector specifies exactly what elements we wish to style. The property is the specific thing we want to change for those elements. The value is the actual value we want for that property.
 
+
 #### Selectors
 
 You can select by element, by simply typing in the element. Note that this will select all elements that are of your selector type.
+
 ```css
 p {
   color: white;
 }
 ```
+
 You can select by the class attribute (period)
+
 ```css
 .class-name {
   color: blue;
@@ -275,13 +315,16 @@ You can select by the class attribute (period)
 ```
 
 You can select by the id attribute (pound sign)
+
 ```css
 #id-name {
   color: red
 }
 ```
 
+
 #### More on 'class' and 'id'
+
 HTML elements can have a class and/or id attribute that can be used for CSS.
 **class** can be applied to multiple elements while **id** can only be applied to one element.
 
@@ -314,7 +357,9 @@ Divs are usually accompanied by a class or id since they are mainly used for sty
 </div>
 ```
 
+
 #### Setting up for CSS
+
 We can actually add style within our HTML file, but we like to keep our styles separate from our HTML to keep our files more organized.
 
 First, create a file in the same folder as your HTML called `styles.css`.
@@ -333,7 +378,9 @@ Your html should look like this:
 </head>
 ```
 
+
 #### Re-sizing our image
+
 In your `styles.css` file, add the following lines to change your image size:
 ```css
 img {
@@ -346,6 +393,7 @@ We adjust the width and height properties to a smaller size of 100px.
 
 There's a problem here though. Since our selector is `img`, we have selected every image on the page. If we haev other images on the page, they will also be re-sized.
 What we really want is to only target our profile image, so let's fix that.
+
 
 #### Select by id
 
@@ -363,9 +411,9 @@ Now we can select by this id using the `#` character in our CSS. Update your css
 Now we only change the size of our profile image, so any other images on our page are safe.
 
 
-### What we have so far...
+### What We Have So Far
 
-// TOODO image
+// TODO image
 
 Right now we have a basic page containing a header, image, short description and a mini contact form. We've learned the basics of HTML, but we still don't know much yet. We learned how CSS works but we're not proficient yet.
 
@@ -373,7 +421,7 @@ In the following section, we'll be adding more content to our website via HTML, 
 
 Since you already know the basics of HTML and CSS, the next section will be a little bit more fast paced.
 
-### What we're going to add
+### What We're Going to Add
 
 For our personal website, we're going to add two main sections.
 
@@ -385,7 +433,8 @@ For our personal website, we're going to add two main sections.
   * Your hobbies
   * Clubs you're interested in
 
-#### Breakdown of the page
+
+#### Breakdown of the Page
 
 We'll have one div that contains all our main section content. Each section will then lie in its own div.
 
@@ -432,6 +481,7 @@ Example:
 </ol>
 ```
 
+
 #### Interests
 
 Now that we have filled out our "About" section, we can move onto your "Interests" section. We will tell our users what we like to do outside of school, as well as what topics we're interested in. We'll be using the list tags for this. All of this will be in our "interests" `<div>`.
@@ -454,6 +504,7 @@ Now that we have filled out our "About" section, we can move onto your "Interest
 ```
 We add our hobbies as an unordered list since we like them all equally. However, our school interests are listed in order of preference, so we use an ordered list.
 
+
 #### Anchors
 
 By this point our webpage will have some decent content, but it would be nice to perhaps add a link to our Facebook, LinkedIn, or Twitter!
@@ -462,6 +513,7 @@ We’ve gone through images, but not anchors! Anchors are similar to images exce
 Example: `<a href="www.google.com">Click Here to go to Google</a>`
 
 We're going to use images and anchors to create a footer for our webpage.
+
 
 #### Footer
 
@@ -492,11 +544,14 @@ Now, in our `styles.css` file, we can change the width and height of our images:
   height: 40px;
 }
 ```
+
 // TODO somewhere 'Developer Tools', or just link to another article since this one is already overloaded.
 
-### Deep dive into CSS
+
+### Deep Dive into CSS
 
 Now we've finished most of our HTML, but our webpage still doesn't look beautiful enough. With CSS, we can transform our webpage into a work of art!
+
 
 #### Styling our header
 
@@ -576,9 +631,12 @@ We can add the following attribute to our image: `border-radius: 50%;`
 And if you want to add some padding or margins here and there to make your page look a bit prettier
 Suggestions: make the spacing between your picture, <p> tag, and input fields the same.
 
+
 #### Moving onto the main content
+
 The main content includes everything including and within our “container” div.
 That includes, the `<div id=“about”>` and the `<div id=“interests”>` and any other div containing content.
+
 
 ##### Creating a column for our content
 
@@ -588,11 +646,13 @@ With two (or more) sections of information, we’ll stack them on top of each ot
 `<div class=“column” id="interests">`
 
 Since we want to keep them looking like columns, the width we want will be 40%, plus or minus a few percent to your liking.
+
 ```css
 .column {
     width: 40%;
 }
 ```
+
 To refine how our column looks a bit, we can add a line separating each one. We also want to keep our text in the column itself top-aligned (using vertical-align), that is, it is “stuck” to the top.
 
 ```css
@@ -615,6 +675,7 @@ A way to center a div within a div is as follows:
 }
 ```
 This automatically sets margin to the sides to push the div to the center.
+
 
 ##### Centering things in HTML
 
@@ -639,7 +700,9 @@ We didn’t make everything in #interests bold. Nor did we make all paragraphs i
 We made all paragraphs within #interests id bold. This particular CSS syntax scopes the selection to paragraphs within the #interests id.
 It’s pretty useful, especially when you only want to style particular things.
 
+
 ##### Using span tags to style inline text
+
 Now in my list of classes, I want to be able to highlight somehow which classes are my CS classes and which are GEs to help people easily differentiate. This can be done by adding html `<span>` tags.
 The `<span>` tag basically allows you to group inline elements and assign a class or id, which you can then style with css.
 
@@ -652,6 +715,7 @@ The `<span>` tags go around each snippet of text that you want to style a certai
 ```
 
 We want our GE class names to be blue:
+
 ```css
 .ge {
   color: blue;
@@ -666,7 +730,9 @@ Meanwhile, we want the CS classes to be red and bolded (which can be styled usin
 }
 ```
 
+
 #### Finalizing the footer
+
 Now that the header and main section of our webpage is finished, all that’s left is the footer. We also would like to center our footer.
 And because it’s always nice to play around with positioning, perhaps a margin here or padding there would be nice!
 
@@ -677,7 +743,9 @@ And because it’s always nice to play around with positioning, perhaps a margin
 }
 ```
 
+
 #### Adding a navbar
+
 A navbar is a useful tool for people on your site to navigate to different parts of the page, and perhaps also different webpages.
 While navbars are sometimes the first things built, I wanted things more set in stone before we tried to put it together.
 And the cool thing is now that we know HTML and CSS, we can hopefully start piecing them both together at once.
@@ -685,11 +753,13 @@ And the cool thing is now that we know HTML and CSS, we can hopefully start piec
 HTML actually has a pretty neat tag called <nav> that is more of a semantic, which is used to create navbars.
 
 Example:
+
 ```html
 <nav>
     <a>Your navbar content goes here.<a>
 </nav>
 ```
+
 Your navbar content will be listed out on the same line, one after the other. It’s a bit like an `<ol>` or `<ul>`, and `<a>` tags are generally used like `<li>`.
 
 So let’s go ahead and create our navbar. We’ll put it in it’s own div.
@@ -715,6 +785,7 @@ That’s pretty much all the content we need for the navbar. Let’s style it!
     text-align: right;
 }
 ```
+
 Set a similar background color, put some space between each nav item, and push it to the right side of our webpage.
 
 Lastly, we just need change the font to white. One thing to note is that anchor tags are a bit different to style compared to `<h1>` and `<p>`, so we’ll just target them directly:
@@ -724,12 +795,15 @@ Lastly, we just need change the font to white. One thing to note is that anchor 
     color: white;
 }
 ```
+
 If you remember, the `#navbar a` selector picks out all anchor tags within the `#nav` div.
 
 // TODO final image
 
+
 ### Other Stylistic Changes
-Your webpage is about done! But… maybe it’s not looking quite how you want it to. Here’s a few topics that might give you inspiration to make your webpage your own!
+
+Your webpage is about done! But maybe it’s not looking quite how you want it to. Here’s a few topics that might give you inspiration to make your webpage your own!
 
 * Fonts. In your body selector you can change your entire webpage’s font.
 * Margin/padding to make things more pretty.
