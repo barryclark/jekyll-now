@@ -79,7 +79,7 @@ excerpt_separator: <!--more-->
 <h4>Strengths</h4>
   <ul>
     <li>I am somewhat experienced in using Adobe applications such as Photoshop, Illustrator, InDesign and Flash.</li>
-    <li>I have sufficient experience using Microsoft Office applications.</li>
+    <li>I have sufficient experience working with Microsoft Office applications.</li>
     <li>I have basic understanding of video editing software, such as Windows Movie Maker.</li>
     <li>I am efficient at browsing the Internet through browsers and searching for relevant information using search engines.</li>
   </ul>
