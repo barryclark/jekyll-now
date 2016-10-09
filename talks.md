@@ -4,6 +4,11 @@ title: Talks
 permalink: /talks/
 ---
 
+### 2016-10-14 How programming can help solve (almost) all your problems
+
+A talk with the students at my former high school in Slovakia.
+Accompanying [slides (in Slovak)]({{site.url}}/talks/2016_gymy.pdf).
+
 ### 2015-09-21 Math popularization talk at GYMY
 
 A presentation (in both Slovak & English).
