@@ -512,6 +512,7 @@ An ordered list (`ol`) is used for ordering, and it automatically numbers list i
 To populate our list, we use `<li></li>` tags, which stand for list items.
 
 Example:
+
 ```html
 <ol>
   <li>First list item</li>
