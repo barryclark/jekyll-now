@@ -3,8 +3,6 @@ layout: post
 title: Hack School Session 1
 ---
 
-# Hack School Session 1
-
 ## Introduction to HTML and CSS
 6 October 2016
 
