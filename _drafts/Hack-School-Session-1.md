@@ -90,7 +90,13 @@ which is also on the same line as the selector.
 
 ### Recommended References
 
-// TODO: Add links to MDN, W3Schools, etc.
+As you go along, you'll likely need to look up many things. 
+Here are some of the best places to do so: 
+
+* [W3Schools' HTML Tutorial](http://www.w3schools.com/html/default.asp)
+* [W3Schools' CSS Tutorial](http://www.w3schools.com/css/default.asp)
+* [Mozilla Developer Network (MDN) HTML reference](https://developer.mozilla.org/en-US/docs/Web/HTML)
+* [Mozilla Developer Network (MDN) CSS reference](https://developer.mozilla.org/en-US/docs/Web/CSS)
 
 
 ### What is HTML?
@@ -211,7 +217,7 @@ Save your changes to an html file like `hackschool.html` then open it up in your
 You should now see your shiny new website // TODO IMAGE
 
 
-### Show off your looks
+### Show Off Your Looks
 
 Now let's show the world how awesome we look by adding an image to our page. First we need to get a picture of ourselves either from a website like facebook or on our computer. If you're using an online image, you just need the url like this: `<img src="http://www.facebook.com/yourprofilepicture.jpg">`
 
@@ -499,6 +505,7 @@ We can add a sub-title using the `<h2>` tag. Then, we can use `<p>` tags to iner
 </div>
 ```
 
+
 #### Lists
 
 We don't always want paragraphs and headers. Sometimes we want to make a list of things. For this, we can use the `<ul>` and `<ol>` tags.
@@ -626,12 +633,16 @@ We just need to add `color: white;` to our #header styles to change the text col
 
 An element actually has several parts to it.
 
-// TODO image of box model
 
 1. The actual content.
 2. Padding: Space around the content that is “cushion” from the inside.
 3. Border: A border around the element that you can also style.
 4. Margin: Sets white space outside the border.
+
+We can visualize all of this using the *CSS box model*
+(image from [here](http://www.mandalatv.net/itp/drivebys/css/)):
+
+![](../images/hack-school/session1/box-model.png)
 
 In general, margins are outside of the element/block while padding is on the inside.
 You can use margin to separate the element from things outside, and padding can be used to move content away from the edges of the block.
@@ -845,6 +856,10 @@ If you remember, the `#navbar a` selector picks out all anchor tags within the `
 And so our final result is: 
 
 ![](../images/hack-school/session1/final-webpage.png)
+
+You can find our reference implementation (as live-coded)
+[here](https://codepen.io/KyCuongHuynh/pen/rrdLbG).
+For easy cloning, here's a backup [GitHub Gist](https://gist.github.com/anonymous/c52e5f6551c58e1b49c9781f978d8625).
 
 
 ### Other Stylistic Changes
