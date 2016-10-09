@@ -61,6 +61,7 @@ excerpt_separator: <!--more-->
             <ul>
               <li>When I took IELTS, I scored 8.5 in Listening and 8 in Speaking.</li>
               <li>I am used to speaking in front of large groups of people, since I used to attend poetry reading competitions.</li>
+              <li>I have previously made presentations as part of my elementary and secondary education.</li>
               <li>I consider myself to be a good listener.</li>
             </ul>
           </td>
@@ -84,7 +85,7 @@ excerpt_separator: <!--more-->
           </td>
           <td>
             <ul>
-              <li>My shy nature could potentially harm my opportunities for discussion.</li>
+              <li>My shy nature could potentially hamper my opportunities for discussion.</li>
             </ul>
           </td>
         </tr>
@@ -107,7 +108,7 @@ excerpt_separator: <!--more-->
           <td>
             <ul>
               <li>My university offers a service called <a href="http://web.anglia.ac.uk/anet/studyskillsplus/">Study Skills Plus</a> which I could utilise to improve in this area.</li>
-              <li>Attending all my lectures and tutorials may help me stay on track.</li>
+              <li>Attending all my lectures and tutorials could help me stay on track.</li>
             </ul>
           </td>
         </tr>
