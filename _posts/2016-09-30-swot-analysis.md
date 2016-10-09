@@ -18,14 +18,14 @@ excerpt_separator: <!--more-->
         <tr>
           <td>
             <ul>
-              <li>When I took IELTS, I scored 8.5 in Reading and 7 in Writing.</li>
+              <li>When I took IELTS, I scored 8.5 in Reading and 7 in Writing. Thus I believe that I have sufficient skills in both areas.</li>
               <li>Placeholder</li>
             </ul>
           </td>
           <td>
             <ul>
-              <li>Finding myself in a country where English is used on a regular basis, I have an excellent opportunity to practice writing it regularly.</li>
-              <li>My university offers a service called [Study Skills Plus](http://web.anglia.ac.uk/anet/studyskillsplus/) which I could use to improve in these areas.</li>
+              <li>Finding myself in a country where English is used on a regular basis, I have an excellent opportunity to practice writing and reading it regularly.</li>
+              <li>My university offers a service called <a href="http://web.anglia.ac.uk/anet/studyskillsplus/">Study Skills Plus</a>, which I could use to improve in these areas, especially Academic Writing.</li>
             </ul>
           </td>
         </tr>
@@ -36,14 +36,13 @@ excerpt_separator: <!--more-->
         <tr>
           <td>
             <ul>
-              <li>English is not and never will be my first language, so it might be that I'll never be able to match the skill of a native speaker (or writer, as the case may be), or at least the confidence of one.</li>
-              <li>Placeholder</li>
+              <li>English is not and never will be my first language, so it might be that I'll never be able to match the skill of a native speaker (or writer, as the case may be).</li>
+              <li>When presented with a large block of text, I will resolve to skim-reading it.</li>
             </ul>
           </td>
           <td>
             <ul>
-              <li>Placeholder</li>
-              <li>Placeholder</li>
+              <li>Skimming through text could result in loss of potentially useful information, or misinformation.</li>
             </ul>
           </td>
         </tr>
@@ -61,14 +60,15 @@ excerpt_separator: <!--more-->
         <tr>
           <td>
             <ul>
-              <li>When I took IELTS I scored 8.5 in Listening and 8 in Speaking.</li>
-              <li>I am used to speaking before large groups of people, since I used to attend poetry reading competitions.</li>
+              <li>When I took IELTS, I scored 8.5 in Listening and 8 in Speaking.</li>
+              <li>I am used to speaking in front of large groups of people, since I used to attend poetry reading competitions.</li>
+              <li>I consider myself to be a good listener.</li>
             </ul>
           </td>
           <td>
             <ul>
               <li>Creating a group presentation is part of the Core Skills module, as well as an excellent opportunity to improve in all three areas.</li>
-              <li>Placeholder</li>
+              <li>Books on this subject area are available in <a href="http://www.johnsmith.co.uk/aru">John Smith's Bookshop</a>. I can buy these books using my <a href="http://www.johnsmith.co.uk/aru/books-plus-scheme">Books Plus Card.</a></li>
             </ul>
           </td>
         </tr>
@@ -80,12 +80,12 @@ excerpt_separator: <!--more-->
           <td>
             <ul>
               <li>English is not and never will be my first language, so it might be that I'll never be able to match the skill of a native speaker, or at least the confidence of one.</li>
-              <li>Placeholder</li>
+              <li>Despite the fact that I attended poetry reading competitions, I still get anxious before public speaking.</li>
             </ul>
           </td>
           <td>
             <ul>
-              <li>Placeholder</li>
+              <li>My shy nature could potentially harm my opportunities for discussion.</li>
               <li>Placeholder</li>
             </ul>
           </td>
@@ -103,14 +103,13 @@ excerpt_separator: <!--more-->
         <tr>
           <td>
             <ul>
-              <li>I always submit assignments on time.</li>
-              <li>Placeholder</li>
+              <li>N/A</li>
             </ul>
           </td>
           <td>
             <ul>
-              <li>My university offers a service called [Study Skills Plus](http://web.anglia.ac.uk/anet/studyskillsplus/) which I could use to improve in this area.</li>
-              <li>Placeholder</li>
+              <li>My university offers a service called <a href="http://web.anglia.ac.uk/anet/studyskillsplus/">Study Skills Plus</a> which I could utilise to improve in this area.</li>
+              <li>Attending all my lectures and tutorials may help me stay on track.</li>
             </ul>
           </td>
         </tr>
@@ -121,7 +120,7 @@ excerpt_separator: <!--more-->
         <tr>
           <td>
             <ul>
-              <li>I often find myself procrastinating, leaving things unfinished until the last minute as a result.</li>
+              <li>I often find myself procrastinating, occasionally leaving things unfinished until the last minute as a result.</li>
               <li>I don't get as much sleep as I should.</li>
             </ul>
           </td>
@@ -154,8 +153,9 @@ excerpt_separator: <!--more-->
           </td>
           <td>
             <ul>
-              <li>My university offers a service called [Study Skills Plus](http://web.anglia.ac.uk/anet/studyskillsplus/), as well as unlimited access to video tutorials on [Lynda.com](https://www.lynda.com/), which I could use to improve in this area.</li>
+              <li>Anglia Ruskin University offers a service called <a href="http://web.anglia.ac.uk/anet/studyskillsplus/">Study Skills Plus</a>, as well as unlimited access to video tutorials on [Lynda.com](https://www.lynda.com/), which I could use to improve in this area.</li>
               <li>The Internet offers countless opportunities to improve in using all types of software.</li>
+              <li>Some software, which has to be purchased or subscribed to, is available for free on university owned computers and <a href="http://web.anglia.ac.uk/it/services/remotedesktop/">Remote Desktops</a>.</li>
             </ul>
           </td>
         </tr>
@@ -166,14 +166,13 @@ excerpt_separator: <!--more-->
         <tr>
           <td>
             <ul>
-              <li>I am inexperienced when it comes to using and running software on Operating Systems other than Microsoft Windows.</li>
-              <li>I am unfamiliar with 3D modelling software.</li>
+              <li>I am inexperienced when it comes to using and running software on operating systems other than Microsoft Windows.</li>
+              <li>I am largely unfamiliar with 3D modelling software.</li>
             </ul>
           </td>
           <td>
             <ul>
-              <li>Placeholder</li>
-              <li>Placeholder</li>
+              <li>Some of the resources available online could be outdated.</li>
             </ul>
           </td>
         </tr>
