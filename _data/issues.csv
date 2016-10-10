@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/773,182111673,2016-10-10 20:49:18,2016-10-10 20:48:51,Raccolta fondi Brigate della Solidarietà - aggiornamento impiego donazioni,,,"[""Accettato"", ""Facebook"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Raccolta fondi Brigate della Solidariet\u00e0 - aggiornamento impiego donazioni"", ""data"": ""10/10/2016"", ""descrizione"": ""Grazie alla raccolta fondi lanciata dalle Brigate della Solidariet\u00e0, l'8 ottobre sono arrivati i 168 paia di scarponcini e stivali di cui aveva bisogno la popolazione amatriciana e non solo in vista dell'arrivo dell'inverno. L'acquisto \u00e8 costato euro 2.705,50."", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""https://www.facebook.com/terremotocentroitalia/posts/1398208940209118"", ""postale"": """"}","<pre><yamldata>chi: 'Raccolta fondi Brigate della Solidarietà - aggiornamento impiego donazioni'
+descrizione: 'Grazie alla raccolta fondi lanciata dalle Brigate della Solidarietà, l''8 ottobre sono arrivati i 168 paia di scarponcini e stivali di cui aveva bisogno la popolazione amatriciana e non solo in vista dell''arrivo dell''inverno. L''acquisto è costato euro 2.705,50.'
+intestazione: ''
+iban: ''
+bic: ''
+postale: ''
+causale: ''
+link: 'https://www.facebook.com/terremotocentroitalia/posts/1398208940209118'
+email: ''
+data: 10/10/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/772,182110145,2016-10-10 20:42:47,2016-10-10 20:42:03,"Protezione civile Marche, aggiornamento campi di accoglienza",,,"[""Accettato"", ""Bollettino"", ""Facebook"", ""Notizie Utili""]",,,"{""data"": ""10/10/2016"", ""descrizione"": ""Sceso a 81 il numero di tende allestite dalla Protezione civile nelle Marche e a 115 il numero di posti letto occupati. Le maggiori concentrazioni al campo di Borgo di Arquata (21 tende) e nella frazione Balzo di Montegallo (25), in provincia di Ascoli Piceno. Ci sono poi tre tende a Pretare di Arquata e 4 a Castelsantangelo sul Nera (Macerata), pi\u00f9 4 in punti sparsi della provincia di Ascoli Piceno e 24 in quella di Macerata. Domani 10 ottobre dovrebbero essere chiusi i posti letto del campo di Borgo di Arquata dove rimarranno solo la mensa, la tensostruttura della scuola, le tende e i moduli che ora ospitano gli uffici del Comune e i vari servizi. Sono 271 le persone ospitate in strutture ricettive, 1.199 i pasti erogati, 217 i volontari presenti."", ""link"": ""http://www.ansa.it/marche/notizie/2016/10/09/sisma-nelle-marche-solo-81-tende-e-115-posti-letto-occupati_a3de7be6-dbd0-4666-af4d-9eca45550b3d.html"", ""titolo"": ""Protezione civile Marche, aggiornamento campi di accoglienza""}","<pre><yamldata>titolo: 'Protezione civile Marche, aggiornamento campi di accoglienza'
 descrizione: 'Sceso a 81 il numero di tende allestite dalla Protezione civile nelle Marche e a 115 il numero di posti letto occupati. Le maggiori concentrazioni al campo di Borgo di Arquata (21 tende) e nella frazione Balzo di Montegallo (25), in provincia di Ascoli Piceno. Ci sono poi tre tende a Pretare di Arquata e 4 a Castelsantangelo sul Nera (Macerata), più 4 in punti sparsi della provincia di Ascoli Piceno e 24 in quella di Macerata. Domani 10 ottobre dovrebbero essere chiusi i posti letto del campo di Borgo di Arquata dove rimarranno solo la mensa, la tensostruttura della scuola, le tende e i moduli che ora ospitano gli uffici del Comune e i vari servizi. Sono 271 le persone ospitate in strutture ricettive, 1.199 i pasti erogati, 217 i volontari presenti.'
 link: 'http://www.ansa.it/marche/notizie/2016/10/09/sisma-nelle-marche-solo-81-tende-e-115-posti-letto-occupati_a3de7be6-dbd0-4666-af4d-9eca45550b3d.html'
@@ -908,17 +919,6 @@ link: 'https://www.facebook.com/events/978378065621271/'
 email: ''
 data: 21/09/2016
 </yamldata></pre>",closed
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/628,178373403,2016-10-01 18:45:14,2016-09-21 15:01:26,"Sommati, RI - Cercasi tunnel o teloni per ricoverare le pecore",42.6427994,13.3104626,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Facebook"", ""Form"", ""Notizie Utili""]",,,"{""cosa"": ""Tunnel o teloni per ricoverare le pecore"", ""data"": ""21/09/2016"", ""descrizione"": ""APPELLO URGENTE Abbiamo bisogno di trovare tunnel o teloni x ricoverare le pecore chi pu\u00f2 aiutare? Contattare Oipa o Wwf Umbria"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Sommati, Casale Zocchi, Amatrice, RI, Lazio, Italy"", ""lat"": ""42.6427994"", ""link"": ""https://www.facebook.com/permalink.php?story_fbid=619550514917706&id=513429392196486&comment_id=619803698225721&reply_comment_id=620069551532469&notif_t=feed_comment_reply&notif_id=1474466050539752"", ""lon"": ""13.3104626"", ""tel"": ""Antonella 3393676508""}","<pre><yamldata>tel: 'Antonella 3393676508'
-email: ''
-cosa: 'Tunnel o teloni per ricoverare le pecore'
-descrizione: 'APPELLO URGENTE Abbiamo bisogno di trovare tunnel o teloni x ricoverare le pecore chi può aiutare? Contattare Oipa o Wwf Umbria'
-indirizzo: 'Sommati, Casale Zocchi, Amatrice, RI, Lazio, Italy'
-lat: '42.6427994'
-lon: '13.3104626'
-link: 'https://www.facebook.com/permalink.php?story_fbid=619550514917706&id=513429392196486&comment_id=619803698225721&reply_comment_id=620069551532469&notif_t=feed_comment_reply&notif_id=1474466050539752'
-immagine: ''
-data: 21/09/2016
-</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/628,178373403,2016-10-01 18:45:14,2016-09-21 15:01:26,"Sommati, RI - Cercasi tunnel o teloni per ricoverare le pecore",42.6427994,13.3104626,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Facebook"", ""Form"", ""Notizie Utili""]",,,"{""cosa"": ""Tunnel o teloni per ricoverare le pecore"", ""data"": ""21/09/2016"", ""descrizione"": ""APPELLO URGENTE Abbiamo bisogno di trovare tunnel o teloni x ricoverare le pecore chi pu\u00f2 aiutare? Contattare Oipa o Wwf Umbria"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Sommati, Casale Zocchi, Amatrice, RI, Lazio, Italy"", ""lat"": ""42.6427994"", ""link"": ""https://www.facebook.com/permalink.php?story_fbid=619550514917706&id=513429392196486&comment_id=619803698225721&reply_comment_id=620069551532469&notif_t=feed_comment_reply&notif_id=1474466050539752"", ""lon"": ""13.3104626"", ""tel"": ""Antonella 3393676508""}","<pre><yamldata>tel: 'Antonella 3393676508'
 email: ''
 cosa: 'Tunnel o teloni per ricoverare le pecore'
