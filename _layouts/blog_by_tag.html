@@ -2,7 +2,7 @@
 layout: default
 published: true
 ---
-<h1>Articles tagged: {{ page.tag }}</h1>
+<h1>Articles tagged: {{ page.title }}</h1>
 <div>
     {% if site.tags[page.tag] %}
         {% for post in site.tags[page.tag] %}
