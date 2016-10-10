@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/777,182117354,2016-10-10 21:15:25,2016-10-10 21:15:01,Bimbi di Arquata a scuola nei moduli entro il 15 novembre,,,"[""Accettato"", ""Bollettino"", ""Facebook"", ""Notizie Utili""]",,,"{""data"": ""10/10/2016"", ""descrizione"": ""Entro il 15 novembre i circa 96 alunni delle scuole di Arquata, dalla materna alle medie, che ora frequentano le lezioni in una tensostruttura nel campo di Borgo si trasferiranno nella scuola a moduli donata dalla Fondazione \u00abFrancesca Rava\u00bb. Lo ha annunciato il vice sindaco Michele Franchi al termine di un lungo incontro tra il sindaco Aleandro Petrucci, la giunta comunale, il commissario straordinario Errani e il capo della Protezione civile Curcio."", ""link"": ""http://www.ilrestodelcarlino.it/ascoli/cronaca/terremoto-arquata-scuola-1.2574781"", ""titolo"": ""Bimbi di Arquata a scuola nei moduli entro il 15 novembre""}","<pre><yamldata>titolo: 'Bimbi di Arquata a scuola nei moduli entro il 15 novembre'
+descrizione: 'Entro il 15 novembre i circa 96 alunni delle scuole di Arquata, dalla materna alle medie, che ora frequentano le lezioni in una tensostruttura nel campo di Borgo si trasferiranno nella scuola a moduli donata dalla Fondazione «Francesca Rava». Lo ha annunciato il vice sindaco Michele Franchi al termine di un lungo incontro tra il sindaco Aleandro Petrucci, la giunta comunale, il commissario straordinario Errani e il capo della Protezione civile Curcio.'
+link: 'http://www.ilrestodelcarlino.it/ascoli/cronaca/terremoto-arquata-scuola-1.2574781'
+data: 10/10/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/776,182116951,2016-10-10 21:13:06,2016-10-10 21:12:42,Avviso sui ricoveri temporanei per ovini e bovini,,,"[""Accettato"", ""Bollettino"", ""Facebook"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""10/10/2016"", ""descrizione"": ""In previsione dell\u2019abbassamento della temperatura legata alla stagione invernale, la Regione Lazio intende procedere con l\u2019acquisto di ricoveri temporanei per bovini ed ovo-caprini nelle zone colpite dal sisma del 24 agosto."", ""link"": ""http://www.regione.lazio.it/rl_main/?vw=newsdettaglio&id=3615"", ""titolo"": ""Avviso sui ricoveri temporanei per ovini e bovini""}","<pre><yamldata>titolo: 'Avviso sui ricoveri temporanei per ovini e bovini'
 descrizione: 'In previsione dell’abbassamento della temperatura legata alla stagione invernale, la Regione Lazio intende procedere con l’acquisto di ricoveri temporanei per bovini ed ovo-caprini nelle zone colpite dal sisma del 24 agosto.'
 link: 'http://www.regione.lazio.it/rl_main/?vw=newsdettaglio&id=3615'
@@ -4114,17 +4119,6 @@ bic: BLOPIT22
 postale: ''
 causale: 'Solidarietà Terremoto'
 link: 'http://www.comune.acquasantaterme.ap.it/po/mostra_news.php?id=137&area=H'
-email: ''
-data: 14/09/2016
-</yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/241,176848691,2016-09-14 08:47:59,2016-09-14 08:42:33,Comune di Legnago (VR),,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": ""IBSPIT2P"", ""causale"": """", ""chi"": ""Comune di Legnago (VR)"", ""data"": ""14/09/2016"", ""descrizione"": ""Aperto presso la Cassa di Risparmio del Veneto - Ricordiamo che i fondi raccolti saranno devoluti direttamente ad uno dei paesi colpiti dal terremoto. Per informazioni: Ufficio Cultura - Tel. 0442.634820"", ""email"": """", ""iban"": ""IT98 F062 2512 1861 0000 0000 172"", ""intestazione"": ""COMUNE DI LEGNAGO - LEGNAGO PER I TERREMOTATI AGOSTO 2016"", ""link"": ""https://comunapp-ita.appspot.com/publishedItem?key=ag5zfmNvbXVuYXBwLWl0YXI4CxIGQ29tdW5lIghjb211bmFwcAwLEgZDb211bmUYgICAwKC5gwkMCxIESXRlbRiAgIDgxoGSCgw"", ""postale"": """"}","<pre><yamldata>chi: 'Comune di Legnago (VR)'
-descrizione: 'Aperto presso la Cassa di Risparmio del Veneto - Ricordiamo che i fondi raccolti saranno devoluti direttamente ad uno dei paesi colpiti dal terremoto. Per informazioni: Ufficio Cultura - Tel. 0442.634820'
-intestazione: 'COMUNE DI LEGNAGO - LEGNAGO PER I TERREMOTATI AGOSTO 2016'
-iban: 'IT98 F062 2512 1861 0000 0000 172'
-bic: IBSPIT2P
-postale: ''
-causale: ''
-link: 'https://comunapp-ita.appspot.com/publishedItem?key=ag5zfmNvbXVuYXBwLWl0YXI4CxIGQ29tdW5lIghjb211bmFwcAwLEgZDb211bmUYgICAwKC5gwkMCxIESXRlbRiAgIDgxoGSCgw'
 email: ''
 data: 14/09/2016
 </yamldata></pre>",open
