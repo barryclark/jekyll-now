@@ -127,7 +127,7 @@ function usingMethod(debts, method) {
 		var nowNumOpen = totalAccounts(debts);
 		
 		if(nowNumOpen !== numOpen) {
-			results.interests.push([month / 12, nowNumOpen]);
+			results.accounts.push([month / 12, nowNumOpen]);
 			numOpen = nowNumOpen;
 		}
 		
