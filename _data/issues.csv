@@ -1428,6 +1428,16 @@ link: 'http://www.lloydsbaiahotel.it'
 immagine: ''
 data: 16/09/2016
 </yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/550,177481724,2016-09-22 14:04:42,2016-09-16 17:44:42,"Salerno, SA - Lloyd’s Baia Hotel ",40.6801561,14.7596754,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""Il Lloyd\u2019s Baia Hotel a disposizione degli sfollati. Per coloro, tra gli sfollati di Accumoli, Arquata del Tronto, Amatrice e degli altri centri colpiti dal sisma, che avessero la possibilit\u00e0 di raggiungere la nostra regione, magari per la presenza di parenti, la famiglia Marinelli fa sapere che metter\u00e0 a disposizione adeguata sistemazione all\u2019interno della propria struttura.\tSalerno"", ""email"": ""info@lloydsbaiahotel.it"", ""immagine"": """", ""indirizzo"": ""Via Roberto il Guiscardo, Salerno, SA, Campania, 84121, Italia"", ""lat"": ""40.6801561"", ""link"": ""http://www.lloydsbaiahotel.it"", ""lon"": ""14.7596754"", ""tel"": ""0897633111""}","<pre><yamldata>tel: '0897633111'
+email: info@lloydsbaiahotel.it
+descrizione: ""Il Lloyd’s Baia Hotel a disposizione degli sfollati. Per coloro, tra gli sfollati di Accumoli, Arquata del Tronto, Amatrice e degli altri centri colpiti dal sisma, che avessero la possibilità di raggiungere la nostra regione, magari per la presenza di parenti, la famiglia Marinelli fa sapere che metterà a disposizione adeguata sistemazione all’interno della propria struttura.\tSalerno""
+indirizzo: 'Via Roberto il Guiscardo, Salerno, SA, Campania, 84121, Italia'
+lat: '40.6801561'
+lon: '14.7596754'
+link: 'http://www.lloydsbaiahotel.it'
+immagine: ''
+data: 16/09/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/549,177481248,2016-09-22 14:16:30,2016-09-16 17:42:02,"L'Aquila, AQ - ospitalità circolo Arci Querencia",42.3488992,13.3981375,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""\""Il circolo Arci Querencia dell'Aquila sta promuovendo un Coordinamento per offrire ospitalit\u00e0 a famigliari di persone ricoverate all\u2019ospedale dell\u2019Aquila, oppure con necessit\u00e0 analoghe. chi vuole aderire o conosce qualcuno che potrebbe essere interessato pu\u00f2 contattare il circolo\"""", ""email"": """", ""immagine"": """", ""indirizzo"": ""L'Aquila, AQ, Abruzzo, Italia"", ""lat"": ""42.3488992"", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1760302424237341/"", ""lon"": ""13.3981375"", ""tel"": ""3297792549""}","<pre><yamldata>tel: '3297792549'
 email: ''
 descrizione: '""Il circolo Arci Querencia dell''Aquila sta promuovendo un Coordinamento per offrire ospitalità a famigliari di persone ricoverate all’ospedale dell’Aquila, oppure con necessità analoghe. chi vuole aderire o conosce qualcuno che potrebbe essere interessato può contattare il circolo""'
