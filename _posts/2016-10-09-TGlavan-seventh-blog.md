@@ -19,4 +19,4 @@ Every Single Word - http://everysinglewordspoken.tumblr.com/
 
 Female Lines in... - http://www.theverge.com/2015/7/9/8920221/tumblr-dylan-marron-representation-race-Hollywood-film
 
-To quickly recap theses readings corvered the that looked into
+To quickly recap, these readings corvered the 
