@@ -216,9 +216,23 @@ canvas {
 	margin-top: 15px;
 }
 
+.posts {
+	width: 72%;
+	
+	@include mobile {
+		width: 100%;
+	}
+}
+
 .sidebar {
 	float: right;
-	width: 27%;
+	width: 25%;
+	font-size: 75%;
+	margin-top: 10px;
+	
+	h3 {
+		margin: 0;
+	}
 
 	@include mobile {
 		width: 100%;
