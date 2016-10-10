@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/770,182057421,2016-10-10 20:30:07,2016-10-10 16:24:25,AVVISO  ACQUISTO RICOVERI TEMPORANEI PER BOVINI ED OVINI - REGIONE LAZIO,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""Pubblicare su FB""]",,,"{""data"": ""10/10/2016"", ""descrizione"": ""In previsione dell\u2019abbassamento della temperatura legata alla stagione invernale, per evitare la perdita degli animali che si trovano attualmente presso le aziende locali e versano in gravi condizioni, la Regione Lazio intende procedere con l\u2019acquisto di ricoveri temporanei per bovini ed ovo-caprini, si tratta in particolare delle cosiddette \u201cstalle tunnel\"". Un provvedimento per sostenere la ripresa economica del sistema produttivo delle zone colpite dal sisma del 24 agosto scorso."", ""link"": ""http://www.regione.lazio.it/rl_main/?vw=newsDettaglio&id=3615"", ""titolo"": ""L\u2019AVVISO SUI RICOVERI TEMPORANEI PER BOVINI ED OVINI - REGIONE LAZIO SISMA""}","<pre><yamldata>titolo: 'L’AVVISO SUI RICOVERI TEMPORANEI PER BOVINI ED OVINI - REGIONE LAZIO SISMA'
+descrizione: 'In previsione dell’abbassamento della temperatura legata alla stagione invernale, per evitare la perdita degli animali che si trovano attualmente presso le aziende locali e versano in gravi condizioni, la Regione Lazio intende procedere con l’acquisto di ricoveri temporanei per bovini ed ovo-caprini, si tratta in particolare delle cosiddette “stalle tunnel"". Un provvedimento per sostenere la ripresa economica del sistema produttivo delle zone colpite dal sisma del 24 agosto scorso.'
+link: 'http://www.regione.lazio.it/rl_main/?vw=newsDettaglio&id=3615'
+data: 10/10/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/768,181871130,2016-10-09 07:19:16,2016-10-09 07:16:21,"Arquata, bambini a scuola nei moduli entro il 15 novembre",,,"[""Accettato"", ""Bollettino"", ""Facebook"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""09/10/2016"", ""descrizione"": ""I 96 alunni dalla materna alle medie, che ora frequentano le lezioni in una tensostruttura si trasferiranno nella struttura donata dalla Fondazione \""Francesca Rava\"". Lo ha annunciato il vice sindaco Michele Franchi."", ""link"": ""http://www.ilrestodelcarlino.it/ascoli/cronaca/terremoto-arquata-scuola-1.2574781"", ""titolo"": ""Arquata, bambini a scuola nei moduli entro il 15 novembre""}","<pre><yamldata>titolo: 'Arquata, bambini a scuola nei moduli entro il 15 novembre'
 descrizione: 'I 96 alunni dalla materna alle medie, che ora frequentano le lezioni in una tensostruttura si trasferiranno nella struttura donata dalla Fondazione ""Francesca Rava"". Lo ha annunciato il vice sindaco Michele Franchi.'
 link: 'http://www.ilrestodelcarlino.it/ascoli/cronaca/terremoto-arquata-scuola-1.2574781'
@@ -4150,17 +4155,6 @@ indirizzo: 'Via Guglielmo Farchioni, Casale Zocchi, Amatrice, RI, LAZ, Italia'
 lat: '42.63067508173938'
 lon: '13.292770385742188'
 link: 'https://postribu.net/2016/09/05/sos-pecorino-di-amatrice-acquisto-solidale/'
-immagine: ''
-data: 14/09/2016
-</yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/232,176842038,2016-09-14 09:50:10,2016-09-14 08:09:15,Brigate di Solidarietà Attiva - Chiamata Volontari - Acquasanta e Amatrice,42.63289,13.28937,"[""Accettato"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""Brigate di Solidariet\u00e0 Attiva - Chiamata Volontari - Acquasanta e Amatrice"", ""data"": ""14/09/2016"", ""descrizione"": ""Chiamata volontari per campi autogestiti. Qui modulo di adesione: https://goo.gl/forms/QyJsGtRQ65xbUqd63"", ""email"": ""volontaribsa@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": 42.63289, ""link"": ""https://www.facebook.com/terremotocentroitalia/posts/1365045246858821"", ""lon"": 13.28937, ""tel"": ""3299837400 - 3394037385 - 3397616665""}","<pre><yamldata>tel: '3299837400 - 3394037385 - 3397616665'
-email: volontaribsa@gmail.com
-cosa: 'Brigate di Solidarietà Attiva - Chiamata Volontari - Acquasanta e Amatrice'
-descrizione: 'Chiamata volontari per campi autogestiti. Qui modulo di adesione: https://goo.gl/forms/QyJsGtRQ65xbUqd63'
-indirizzo: ''
-lat: 42.63289
-lon: 13.28937
-link: 'https://www.facebook.com/terremotocentroitalia/posts/1365045246858821'
 immagine: ''
 data: 14/09/2016
 </yamldata></pre>",open
