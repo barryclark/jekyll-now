@@ -9,9 +9,9 @@ permalink: /test/
 <div id="comments"></div>
 <script>
   $( document ).ready(function() {
-    var count = social.facebook.count("http://hendrixjoseph.github.io/charting_the_snowball_method_of_paying_off_debts/");
-    
-    $("#likes").append(count.share_count);
-    $("#comments").append(count.comment_count);
+    social.facebook.count("http://hendrixjoseph.github.io/charting_the_snowball_method_of_paying_off_debts/", function(count) {
+      $("#likes").append(count.share_count);
+      $("#comments").append(count.comment_count);
+    });
   });
 </script>
