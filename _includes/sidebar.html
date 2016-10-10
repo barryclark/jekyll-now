@@ -1,0 +1,11 @@
+<div class="sidebar">
+  <h3>Tags</h3>
+  <hr />{% assign tags = site.tags | sort %}
+{% for tag in tags %}
+  <a href="/tags/{{ tag[0] | replace: ' ', '_' }}"{{ tag[0] }}</a>{% unless forloop.last %}|{% endunless %}
+{% endfor %}
+<hr />
+  <h3>Statistics</h3>
+  <p>{% site.posts | size %} posts</p>
+  <p>{% site.tags | size %} tags</p>
+</div>
