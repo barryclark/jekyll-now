@@ -218,9 +218,11 @@ canvas {
 
 .posts {
 	width: 72%;
+	float: left;
 	
 	@include mobile {
 		width: 100%;
+		float: none;
 	}
 }
 
@@ -235,7 +237,7 @@ canvas {
 	}
 
 	@include mobile {
-		width: 100%;
+		float: none;
 		clear: left;
 	}
 }
