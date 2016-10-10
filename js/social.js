@@ -14,6 +14,11 @@ var social = {
 					object: url,
 				})
 			}, function(response){});
+		},
+		countLikes: function(url) {
+			FB.api('/' + url, function(response) {
+  				console.log(response);
+			});	
 		}
 	}
 }
