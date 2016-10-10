@@ -220,9 +220,9 @@ function make(divString, results) {
     c3.generate({
         bindto: '#' + divString + '-account-chart',
         data:{x: 'year', rows:results.accounts, type:'area-step'},
-		line: {step: {type: 'step-after'}},
         axis:{x: {label: {text: 'year', position: 'outer-center'}},
-              y: {label: {text: 'number of debts', position: 'outer-middle'}}}
+              y: {label: {text: 'number of debts', position: 'outer-middle'}}},
+	    line: {step: {type: 'step-after'}}
     });
 }
 
