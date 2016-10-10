@@ -17,9 +17,13 @@ var social = {
 			}, function(response){});
 		},
 		countLikes: function(url) {
-			FB.api('/' + url, function(response) {
-  				console.log(response);
-			});	
+			var count;
+			
+			$.get("https://graph.facebook.com/",{id:url},function(data, status){
+				count = data.share.share_count;
+			});
+			
+			return count;
 		}
 	}
 }
