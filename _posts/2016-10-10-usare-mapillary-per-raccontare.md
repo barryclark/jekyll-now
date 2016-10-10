@@ -17,6 +17,8 @@ Mapillary è simile a Google Street View, ma è fatto dalle persone. Come mai us
 - Mapillary consente di fare più racconti dello stesso luogo nel tempo che passa e vedere come quel luogo cambia.
 - Mapillary crea coinvolgimento civico attorno alla città e ai territori, perchè tutti possono partecipare, liberamente e gratuitamente. Basta un po’ di voglia di fare. Alcuni lo fanno a piedi, altri in bici, altri in gruppo altri da soli.
 
+Il nostro invito è quindi quello di usarlo per essere voi stessi a descrivere questi luoghi. Si tratta di avere uno smartphone o una fotocamera da connettere ad uno smartphone (come una GoPro) e scattare foto con la APP di Mapillary che in seguito potrete usare per mettere le foto sulla mappa e renderle visibili a tutti.
+
 Per imparare ad usare Mapillary rimandiamo al [nostro semplice wiki](https://github.com/emergenzeHack/terremotocentro/wiki/Istruzioni-per-usare-Mapillary).
 
 ![mapillary](http://pratosmart.teo-soft.com/wp-content/uploads/2016/02/mapillary.jpg)
