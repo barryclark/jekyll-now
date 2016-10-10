@@ -237,7 +237,8 @@ canvas {
 	}
 
 	@include mobile {
+		width: 100%;
 		float: none;
-		clear: left;
+		text-align: center;
 	}
 }
