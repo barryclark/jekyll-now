@@ -72,7 +72,7 @@
 	</head>
 	{% if layout.isPost %}<body itemscope itemtype="http://schema.org/BlogPosting">{% elsif page.url == "/index.html" or page.url contains "/tags/" or page.url contains "/page" %}<body itemscope itemtype="http://schema.org/Blog">{% else %}<body>{% endif %}
 {% include metadata/schema.html %}  
-{% include facebook.html %}	    
+{% include social/facebook.html %}	    
 {% include header.html %}
 	
 <div id="main" role="main" class="container">
