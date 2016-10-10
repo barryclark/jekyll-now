@@ -5,9 +5,9 @@ author: TGlavan
 publish: true
 ---
 
-Welcome Back
+Welcome Back,
 
-I hope this blogs finds you not in a paniced state
+I hope this blogs finds you in a non-panicked state induced by Midterm grade abiguity, but regardless we must continue.
 
 Last week I briefly mentioned a few readings which can be found here:
 
