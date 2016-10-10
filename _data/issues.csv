@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/774,182113448,2016-10-10 20:56:31,2016-10-10 20:56:13,"""Ora e per sempre"" - Una canzone per sostenere Amatrice",,,"[""Accettato"", ""Facebook"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""\""Ora e per sempre\"" - Una canzone per sostenere Amatrice"", ""data"": ""10/10/2016"", ""descrizione"": ""Acquistando il brano \""Ora e sempre\"" si sosterr\u00e0 la ricostruzione di Amatrice, tutto l'incasso sar\u00e0 infatti devoluto al Comune di Amatrice."", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""https://www.facebook.com/permalink.php?story_fbid=1636554243302468&id=1627862690838290"", ""postale"": """"}","<pre><yamldata>chi: '""Ora e per sempre"" - Una canzone per sostenere Amatrice'
+descrizione: 'Acquistando il brano ""Ora e sempre"" si sosterrà la ricostruzione di Amatrice, tutto l''incasso sarà infatti devoluto al Comune di Amatrice.'
+intestazione: ''
+iban: ''
+bic: ''
+postale: ''
+causale: ''
+link: 'https://www.facebook.com/permalink.php?story_fbid=1636554243302468&id=1627862690838290'
+email: ''
+data: 10/10/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/773,182111673,2016-10-10 20:49:18,2016-10-10 20:48:51,Raccolta fondi Brigate della Solidarietà - aggiornamento impiego donazioni,,,"[""Accettato"", ""Facebook"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Raccolta fondi Brigate della Solidariet\u00e0 - aggiornamento impiego donazioni"", ""data"": ""10/10/2016"", ""descrizione"": ""Grazie alla raccolta fondi lanciata dalle Brigate della Solidariet\u00e0, l'8 ottobre sono arrivati i 168 paia di scarponcini e stivali di cui aveva bisogno la popolazione amatriciana e non solo in vista dell'arrivo dell'inverno. L'acquisto \u00e8 costato euro 2.705,50."", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""https://www.facebook.com/terremotocentroitalia/posts/1398208940209118"", ""postale"": """"}","<pre><yamldata>chi: 'Raccolta fondi Brigate della Solidarietà - aggiornamento impiego donazioni'
 descrizione: 'Grazie alla raccolta fondi lanciata dalle Brigate della Solidarietà, l''8 ottobre sono arrivati i 168 paia di scarponcini e stivali di cui aveva bisogno la popolazione amatriciana e non solo in vista dell''arrivo dell''inverno. L''acquisto è costato euro 2.705,50.'
 intestazione: ''
@@ -4780,17 +4791,6 @@ bic: ''
 postale: ''
 causale: ''
 link: 'https://www.actionaid.it/terremoto-in-centro-italia'
-email: ''
-data: 13/09/2016
-</yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/175,176750696,2016-09-13 21:14:18,2016-09-13 21:10:36,UniCoopFirenze,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""UniCoopFirenze"", ""data"": ""13/09/2016"", ""descrizione"": ""Soci e clienti possono versare quote di danaro direttamente alle casse oppure, solo nel caso dei soci, scaricare punti dalla tessera devolvendoli alle popolazioni colpite."", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""https://www.facebook.com/SezioneSociCoopFirenzeSudOvest/posts/1094597260625093"", ""postale"": """"}","<pre><yamldata>chi: UniCoopFirenze
-descrizione: 'Soci e clienti possono versare quote di danaro direttamente alle casse oppure, solo nel caso dei soci, scaricare punti dalla tessera devolvendoli alle popolazioni colpite.'
-intestazione: ''
-iban: ''
-bic: ''
-postale: ''
-causale: ''
-link: 'https://www.facebook.com/SezioneSociCoopFirenzeSudOvest/posts/1094597260625093'
 email: ''
 data: 13/09/2016
 </yamldata></pre>",open
