@@ -215,3 +215,13 @@ canvas {
 	margin-right: 5px;
 	margin-top: 15px;
 }
+
+.sidebar {
+	float: right;
+	width: 27%;
+
+	@include mobile {
+		width: 100%;
+		clear: left;
+	}
+}
