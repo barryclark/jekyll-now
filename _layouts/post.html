@@ -24,7 +24,7 @@ javascripts: [/js/seealso.js]
     {{ content }}
   </div>
 
-  {% unless page.facebook_post or page.linkedin_post %}<div class="fb-comments" data-href="{{ site.url }}{{ page.url }}" data-width="100%" data-numposts="5"></div>{% endunless %}
+  {% include social/comments.html %} 
   
 </article>
 
