@@ -1,29 +1,19 @@
 var social = {
 	facebook: {
-		accessToken: null,
 		share: function(url) {
 			FB.ui({
 				method: 'share',
 				href: url
 		  	}, function(response){});
 		},
-		like: function(url) {
-			FB.ui({
-				method: 'share_open_graph',
-				action_type: 'og.likes',
-				action_properties: JSON.stringify({
-					object: url,
-				})
-			}, function(response){});
-		},
-		countLikes: function(url) {
-			var count;
+		count: function(url) {
+			var result;
 			
-			$.get("https://graph.facebook.com/",{id:url},function(data, status){
-				count = data.share.share_count;
+			$.get("https://graph.facebook.com/",{id: url},function(data, status){
+				result = data.share;
 			});
 			
-			return count;
+			return result;
 		}
 	}
 }
