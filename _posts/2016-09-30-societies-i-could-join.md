@@ -20,6 +20,6 @@ Based on my personal interests, I've considered joining the following societies:
   <li>Tabletop and Gaming Society</li>
 </ul>
 
-One of them, the Tabletop and Gaming Society, may provide me with a network that could prove beneficial to my course. While the others are less likely to do that, they could still provide me with inspiration.
+One of them, the Tabletop and Gaming Society, could provide me with a network that may prove beneficial to my course. While the others are less likely to do that, they could still provide me with inspiration.
     
 EDIT: I am now a proud member of all the societies listed above.
