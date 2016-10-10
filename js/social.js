@@ -17,7 +17,7 @@ var social = {
 			}, function(response){});
 		},
 		countLikes: function(url) {
-			FB.api('/' + url + '?access_token=' + this.accessToken, function(response) {
+			FB.api('/' + url, function(response) {
   				console.log(response);
 			});	
 		}
