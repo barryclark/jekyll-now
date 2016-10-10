@@ -1,10 +1,11 @@
 var social = {
+	appId: '197946313591875',
 	facebook: {
 		share: function(url) {
 			FB.ui({
 				method: 'share',
 				href: url
-		  }	, function(response){});
+		  	}, function(response){});
 		},
 		like: function(url) {
 			FB.ui({
@@ -16,7 +17,7 @@ var social = {
 			}, function(response){});
 		},
 		countLikes: function(url) {
-			FB.api('/' + url, function(response) {
+			FB.api('/' + url + '?access_token=' + this.appId, function(response) {
   				console.log(response);
 			});	
 		}
