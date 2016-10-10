@@ -9,6 +9,11 @@ descrizione: 'In previsione dell’abbassamento della temperatura legata alla st
 link: 'http://www.regione.lazio.it/rl_main/?vw=newsDettaglio&id=3615'
 data: 10/10/2016
 </yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/769,181877667,2016-10-10 20:37:14,2016-10-09 09:43:42,Sportello di ascolto gratuito a Roma,,,"[""Accettato"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""09/10/2016"", ""descrizione"": ""A partire da gioved\u00ec 6 ottobre \u00e8 attivo uno Sportello di ascolto gratuito riservato alle vittime del terremoto del 24/08. L'iniziativa \u00e8 promossa dal Consorzio Universitario Humanitas, in collaborazione con il Policlinico Gemelli di Roma e la Societ\u00e0 Italiana di Psicologia dell'Emergenza. Lo sportello si trova a Roma in Via della Conciliazione 22, presso la sede del Consorzio Universitario Humanitas ed \u00e8 aperto marted\u00ec dalle 14:00 alle 18:00 e gioved\u00ec dalle 9:00 alle 13:00. Per info relative ai servizi offerti o per prenotare un primo appuntamento \u00e8 anche possibile contattare il numero 063224818 dal luned\u00ec al venerd\u00ec ore 9-13 e 14-18."", ""link"": ""http://www.consorziofortune.com/files/locandina_SPORTELLO_ASCOLTO_FINITO.pdf"", ""titolo"": ""Sportello di ascolto gratuito a Roma""}","<pre><yamldata>titolo: 'Sportello di ascolto gratuito a Roma'
+descrizione: 'A partire da giovedì 6 ottobre è attivo uno Sportello di ascolto gratuito riservato alle vittime del terremoto del 24/08. L''iniziativa è promossa dal Consorzio Universitario Humanitas, in collaborazione con il Policlinico Gemelli di Roma e la Società Italiana di Psicologia dell''Emergenza. Lo sportello si trova a Roma in Via della Conciliazione 22, presso la sede del Consorzio Universitario Humanitas ed è aperto martedì dalle 14:00 alle 18:00 e giovedì dalle 9:00 alle 13:00. Per info relative ai servizi offerti o per prenotare un primo appuntamento è anche possibile contattare il numero 063224818 dal lunedì al venerdì ore 9-13 e 14-18.'
+link: 'http://www.consorziofortune.com/files/locandina_SPORTELLO_ASCOLTO_FINITO.pdf'
+data: 09/10/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/768,181871130,2016-10-09 07:19:16,2016-10-09 07:16:21,"Arquata, bambini a scuola nei moduli entro il 15 novembre",,,"[""Accettato"", ""Bollettino"", ""Facebook"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""09/10/2016"", ""descrizione"": ""I 96 alunni dalla materna alle medie, che ora frequentano le lezioni in una tensostruttura si trasferiranno nella struttura donata dalla Fondazione \""Francesca Rava\"". Lo ha annunciato il vice sindaco Michele Franchi."", ""link"": ""http://www.ilrestodelcarlino.it/ascoli/cronaca/terremoto-arquata-scuola-1.2574781"", ""titolo"": ""Arquata, bambini a scuola nei moduli entro il 15 novembre""}","<pre><yamldata>titolo: 'Arquata, bambini a scuola nei moduli entro il 15 novembre'
 descrizione: 'I 96 alunni dalla materna alle medie, che ora frequentano le lezioni in una tensostruttura si trasferiranno nella struttura donata dalla Fondazione ""Francesca Rava"". Lo ha annunciato il vice sindaco Michele Franchi.'
 link: 'http://www.ilrestodelcarlino.it/ascoli/cronaca/terremoto-arquata-scuola-1.2574781'
@@ -1415,16 +1420,6 @@ indirizzo: 'Cordonata, Municipio Roma I, Roma, RM, Lazio, 00186, Italia'
 lat: '41.8935085'
 lon: '12.4825526'
 link: 'http://www.acli.it/le-notizie/news-nazionali/11048-terremoto-centro-italia-casacli-offre-ospitalita-alle-vittime-del-sisma#ixzz4ISSo4gdn'
-immagine: ''
-data: 16/09/2016
-</yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/550,177481724,2016-09-22 14:04:42,2016-09-16 17:44:42,"Salerno, SA - Lloyd’s Baia Hotel ",40.6801561,14.7596754,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""Il Lloyd\u2019s Baia Hotel a disposizione degli sfollati. Per coloro, tra gli sfollati di Accumoli, Arquata del Tronto, Amatrice e degli altri centri colpiti dal sisma, che avessero la possibilit\u00e0 di raggiungere la nostra regione, magari per la presenza di parenti, la famiglia Marinelli fa sapere che metter\u00e0 a disposizione adeguata sistemazione all\u2019interno della propria struttura.\tSalerno"", ""email"": ""info@lloydsbaiahotel.it"", ""immagine"": """", ""indirizzo"": ""Via Roberto il Guiscardo, Salerno, SA, Campania, 84121, Italia"", ""lat"": ""40.6801561"", ""link"": ""http://www.lloydsbaiahotel.it"", ""lon"": ""14.7596754"", ""tel"": ""0897633111""}","<pre><yamldata>tel: '0897633111'
-email: info@lloydsbaiahotel.it
-descrizione: ""Il Lloyd’s Baia Hotel a disposizione degli sfollati. Per coloro, tra gli sfollati di Accumoli, Arquata del Tronto, Amatrice e degli altri centri colpiti dal sisma, che avessero la possibilità di raggiungere la nostra regione, magari per la presenza di parenti, la famiglia Marinelli fa sapere che metterà a disposizione adeguata sistemazione all’interno della propria struttura.\tSalerno""
-indirizzo: 'Via Roberto il Guiscardo, Salerno, SA, Campania, 84121, Italia'
-lat: '40.6801561'
-lon: '14.7596754'
-link: 'http://www.lloydsbaiahotel.it'
 immagine: ''
 data: 16/09/2016
 </yamldata></pre>",open
