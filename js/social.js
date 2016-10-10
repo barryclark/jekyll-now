@@ -7,11 +7,9 @@ var social = {
 		  	}, function(response){});
 		},
 		count: function(url) {
-			var result;
+			var ajax = $.get("https://graph.facebook.com/",{id: url},function(data, status){});
 			
-			var s = $.get("https://graph.facebook.com/",{id: url},function(data, status){
-				result = data.share;
-			});
+			var result = ajax.share;
 			
 			return result;
 		}
