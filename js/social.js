@@ -12,7 +12,7 @@ var social = {
   				} else {
     					// the user isn't logged in to Facebook.
   				}	
-			}
+			});
 		},
 		share: function(url) {
 			FB.ui({
