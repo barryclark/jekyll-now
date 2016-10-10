@@ -7,7 +7,7 @@ published: true
   {% for post in site.posts %}
     <article class="post">
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1> on  {{ post.date | date: "%B %e, %Y" }}
+      <p><h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1> on  {{ post.date | date: "%B %e, %Y" }}</p>
 
       <div class="entry">
         {{ post.excerpt }}
