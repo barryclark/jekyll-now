@@ -8,7 +8,7 @@ Support for Categories and Tags were inspired by [this blog entry](http://www.mi
 
 Author support was inspired by [this blog entry](https://blog.sorryapp.com/blogging-with-jekyll/2014/02/06/adding-authors-to-your-jekyll-site.html). In order to add information on a new author, edit the `_data/authors.yml` file, then use the new key as `author` link in the posts. If an author cannot be found in `authors.yml`, the content of the `author` tag will be used verbose. In that case, no links to any social media (Twitter, Github and LinkedIn are currently supported) will be included.
 
-If you want to find out more about using `github-pages` for blogging or want to improve our blog the following links might be good starting points
+If you want to find out more about using `github-pages` for blogging or want to improve our blog the following links might be good starting points:
 
 * [Jekyll documentation, i.e. how to include images](http://jekyllrb.com/docs/posts/)
 * [Github pages powered by Jekyll](https://github.com/jekyll/jekyll/wiki/sites)
