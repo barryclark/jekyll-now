@@ -6,12 +6,10 @@ var social = {
 				href: url
 		  	}, function(response){});
 		},
-		count: function(url) {
-			var ajax = $.get("https://graph.facebook.com/",{id: url},function(data, status){});
-			
-			var result = ajax.responseJSON.share;
-			
-			return result;
+		count: function(url, callback) {
+			var ajax = $.get("https://graph.facebook.com/",{id: url},function(data, status){
+				callback(data.share);
+			});
 		}
 	}
 }
