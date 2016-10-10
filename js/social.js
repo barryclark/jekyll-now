@@ -1,6 +1,19 @@
 var social = {
 	appId: '197946313591875',
+	uid: null,
+	accessToken: null,
 	facebook: {
+		login: function() {
+			FB.getLoginStatus(function(response) {
+				if (response.status === 'connected') {
+    					this.uid = response.authResponse.userID;
+    					this.accessToken = response.authResponse.accessToken;
+  				} else if (response.status === 'not_authorized') {
+  				} else {
+    					// the user isn't logged in to Facebook.
+  				}	
+			}
+		},
 		share: function(url) {
 			FB.ui({
 				method: 'share',
