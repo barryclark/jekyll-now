@@ -9,7 +9,7 @@ var social = {
 		count: function(url) {
 			var ajax = $.get("https://graph.facebook.com/",{id: url},function(data, status){});
 			
-			var result = ajax.share;
+			var result = ajax.responseJSON.share;
 			
 			return result;
 		}
