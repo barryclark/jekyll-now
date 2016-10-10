@@ -108,7 +108,7 @@ function usingMethod(debts, method) {
 	var results = {
 			balances: [['year', 'balance', 'minimum payment'],
 				  [0, sumBalances(debts), sumMinpayments(debts)]],
-			accounts: [['year','interest'],
+			accounts: [['month','number of debts'],
 				   [0, numOpen]],
 			totalPaid: 0,
 			months: 0
@@ -127,7 +127,7 @@ function usingMethod(debts, method) {
 		var nowNumOpen = totalAccounts(debts);
 		
 		if(nowNumOpen !== numOpen) {
-			results.accounts.push([month / 12, nowNumOpen]);
+			results.accounts.push([month, nowNumOpen]);
 			numOpen = nowNumOpen;
 		}
 		
@@ -218,8 +218,9 @@ function make(divString, results) {
     });
 	
     c3.generate({
-        bindto: '#' + divString + '-interest-chart',
+        bindto: '#' + divString + '-account-chart',
         data:{x: 'year', rows:results.accounts, type:'area-step'},
+		line: {step: {type: 'step-after'}},
         axis:{x: {label: {text: 'year', position: 'outer-center'}},
               y: {label: {text: 'number of debts', position: 'outer-middle'}}}
     });
