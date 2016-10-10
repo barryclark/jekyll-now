@@ -9,7 +9,7 @@ var social = {
 		count: function(url) {
 			var result;
 			
-			$.get("https://graph.facebook.com/",{id: url},function(data, status){
+			var s = $.get("https://graph.facebook.com/",{id: url},function(data, status){
 				result = data.share;
 			});
 			
