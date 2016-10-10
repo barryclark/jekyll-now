@@ -2,3 +2,7 @@
 published: false
 ---
 The following are links to important Anglia Ruskin documents:
+
+<ul>
+<li><a href="http://web.anglia.ac.uk/anet/academic/public/academic_regs.pdf">Academic Regulations</a></li>
+    </ul>
