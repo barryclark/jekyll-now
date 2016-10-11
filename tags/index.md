@@ -30,7 +30,7 @@ csses: [/css/tags.css]
     var max = words.reduce(function(p,c){return Math.max(p, c.size);},0);
     var multiplier = function(size) {return 15 + (25 - 15) * (size - min) / (max - min);};
     
-    var layout = d3.layout.cloud().size([700, 500]).words()).rotate(function() {
+    var layout = d3.layout.cloud().size([700, 500]).words(words).rotate(function() {
         return ~~(Math.random() * 2) * 90;
     }).font('Impact').fontSize(function(d) {
         return multiplier(d.size);
