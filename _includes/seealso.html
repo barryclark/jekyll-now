@@ -1,8 +1,8 @@
 {% assign post_urls = "" | split: "" %}{% assign post_urls = post_urls | push: page.url %}<div id="see-also"><h2>You might also like:</h2></div>
 <script>
 $( document ).ready(function() {
-  var posts = [{% for tag in page.tags %}{% for post in site.tags[tag] %}{% unless post_urls contains post.url %}{% assign post_urls = post_urls | push: post.url %}{% capture post_excerpt %}{{ post.excerpt | replace: "'",  "&#39;" | strip_newlines }}{% endcapture %}
-    {url:"{{ post.url }}",title:"{{ post.title | xml_escape }}",excerpt:'{{ post_excerpt }}'},
+  var posts = [{% for tag in page.tags %}{% for post in site.tags[tag] %}{% unless post_urls contains post.url %}{% assign post_urls = post_urls | push: post.url %}
+    {url:"{{ post.url }}",title:"{{ post.title | xml_escape }}",excerpt:'{{ post.excerpt | strip_html | strip_newlines }}'},
   {% endunless %}{% endfor %}{% endfor %}];
   addSeeAlsos(posts);  
 });
