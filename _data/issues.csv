@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/781,182231698,2016-10-11 16:29:15,2016-10-11 10:42:57,"Asta di beneficenza ""Con le mani, col cuore"" Associazione Culturale Il Teatro delle Stelle",,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,{},"<pre><yamldata>chi: 'Antonio Scanferlato per l''Associazione Culturale ""Il Teatro delle Stelle""'
+descrizione: 'L''Associazione Culturale \""Il Teatro delle Stelle\"", con sede a Ghedi (Bs), ha deciso di fare qualcosa di concreto per aiutare le popolazioni terremotate del centro Italia ma in un modo un po' diverso dal consueto: abbiamo deciso di mettere all'asta solo oggetti creati dalle persone, con le loro mani o con il loro ingegno sicuramente donati col cuore perciò artisti, hobbysti, artigiani o chiunque abbia realizzato o voglia realizzare un manufatto da donare è il benvenuto. Abbiamo già raccolto l'adesione di molti artisti: pittori, scrittori, musicisti ma anche casalinghe, bricoleur e abilissimi artigiani. Il punto (virtuale) di ritrovo di noi tutti è il gruppo Facebook “Con le Mani, con il Cuore”, dove si può consultare il regolamento, dove ci si può confrontare, socializzare e dove visionare le prime opere poste all'incanto. L'evento avrà luogo presso la Sala Consiliare del Comune di Ghedi, domenica 20 Novembre, alle ore 15:30. Per ulteriori informazioni: info@ilteatrodellestelle.it, tel. 3925044965.'
+intestazione: 'Associazione Culturale ""Il Teatro delle Stelle""'
+iban: IT85A0857554570000000014209
+bic: ICRAITRRFZ0
+postale: ''
+causale: 'Donazione asta di beneficenza per terremoto centro Italia.'
+link: 'https://www.facebook.com/groups/663650213787679/'
+email: antonio.scanferlato@ilteatrodellestelle.it
+data: 11/10/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/780,182225969,2016-10-11 10:15:42,2016-10-11 10:12:54,Associazione ‘Le Castagne’ di Cossito (Amatrice),,,"[""Accettato"", ""Pubblicare su FB"", ""Pubblicare su TW"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Associazione \u2018Le Castagne\u2019 di Cossito (Amatrice)"", ""data"": ""11/10/2016"", ""descrizione"": ""Il 21 Ottobre l\u2019associazione \u2018Le Castagne\u2019 di Cossito (Amatrice), presso la Parrocchia della Chiesa Evangelica Metodista in via Firenze, 38 zona Termini. Ospiter\u00e0 la cena di beneficenza \u2018Amatrice, una realt\u00e0 fatta di frazioni, adottane una\u2019. La quota di partecipazione \u00e8 di 30 euro. L\u2019incasso della serata sar\u00e0 devoluto per attrezzature, ricostruzione e soluzioni abitative per gli sfollati del terremoto."", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""http://www.agenparl.com/terremoto-2110-lassociazione-le-castagne-cossito-cena-beneficenza-amatrice-realta-fatta-frazioni-adottane/"", ""postale"": """"}","<pre><yamldata>chi: 'Associazione ‘Le Castagne’ di Cossito (Amatrice)'
 descrizione: 'Il 21 Ottobre l’associazione ‘Le Castagne’ di Cossito (Amatrice), presso la Parrocchia della Chiesa Evangelica Metodista in via Firenze, 38 zona Termini. Ospiterà la cena di beneficenza ‘Amatrice, una realtà fatta di frazioni, adottane una’. La quota di partecipazione è di 30 euro. L’incasso della serata sarà devoluto per attrezzature, ricostruzione e soluzioni abitative per gli sfollati del terremoto.'
 intestazione: ''
@@ -2975,17 +2986,6 @@ bic: ''
 postale: ''
 causale: ''
 link: ''
-email: ''
-data: 15/09/2016
-</yamldata></pre>",closed
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/364,177120082,2016-09-15 08:40:16,2016-09-15 08:39:13,Moovenda,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Moovenda"", ""data"": ""15/09/2016"", ""descrizione"": ""Moovenda \u00e8 vicina agli abitanti di Amatrice e del centro italia, per questo insieme agli amici di Ambrogio, si impegna nella raccolta dei beni di prima necessit\u00e0 a Roma, mettendoci a disposizione per le prossime 24 ore per il ritiro gratuito direttamente a casa vostra o in ufficio dei beni di prima necessit\u00e0, che verranno portati domani a Rieti ed Amatrice. info 3381577381."", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""https://www.facebook.com/moovenda"", ""postale"": """"}","<pre><yamldata>chi: Moovenda
-descrizione: 'Moovenda è vicina agli abitanti di Amatrice e del centro italia, per questo insieme agli amici di Ambrogio, si impegna nella raccolta dei beni di prima necessità a Roma, mettendoci a disposizione per le prossime 24 ore per il ritiro gratuito direttamente a casa vostra o in ufficio dei beni di prima necessità, che verranno portati domani a Rieti ed Amatrice. info 3381577381.'
-intestazione: ''
-iban: ''
-bic: ''
-postale: ''
-causale: ''
-link: 'https://www.facebook.com/moovenda'
 email: ''
 data: 15/09/2016
 </yamldata></pre>",closed
