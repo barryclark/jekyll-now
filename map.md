@@ -45,7 +45,7 @@ permalink: /mappe/
       {% if category.logo and category.logo != empty %}
         <img src="{{ site.baseurl }}{{ category.logo }}" alt="{{ logo_alt }}">
       {% endif %}
-      Mappa {{ category.name }}
+      {{ category.name }}
     </a>
   {% endif %}
 {% endfor %}

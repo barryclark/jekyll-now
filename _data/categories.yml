@@ -22,3 +22,11 @@
   logo: /img/icone/11-comunicolpiti.png
   featured: true
   map_post: 2016-08-24-mappa-comuni-cratere
+- name: Foto Satellitari
+  logo: /img/icone/08-fotosatellitari.png
+  featured: true
+  map_post: 2016-08-28-foto-satellitari
+- name: Openstreetmap
+  logo: /img/icone/07-openstreetmap.png
+  featured: true
+  map_post: 2016-08-29-Risorse-e-attività-di-mappatura-su-Openstreetmap
