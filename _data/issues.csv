@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/782,182253573,2016-10-11 16:33:25,2016-10-11 12:42:48,#SOSAAA AmatriceAccumoliArquata - Ascoli Picchio,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""#SOSAAA"", ""chi"": ""#SOSAAA AmtriceAccumuliArquata - Ascoli Picchio"", ""data"": ""11/10/2016"", ""descrizione"": ""L'Ascoli Picchio ha stabilito che tutte le iniziative della s.s. 2016/2017 saranno collegate al progetto #SOSAAA AmatriceAccumoliArquata e vedranno il coinvolgimento delle persone colpite dal sisma dello scorso 24 agosto."", ""email"": """", ""iban"": ""IT86T0326813500052866955281"", ""intestazione"": """", ""link"": ""http://www.ascolipicchio.com/"", ""postale"": """"}","<pre><yamldata>chi: '#SOSAAA AmtriceAccumuliArquata - Ascoli Picchio'
+descrizione: 'L''Ascoli Picchio ha stabilito che tutte le iniziative della s.s. 2016/2017 saranno collegate al progetto #SOSAAA AmatriceAccumoliArquata e vedranno il coinvolgimento delle persone colpite dal sisma dello scorso 24 agosto.'
+intestazione: ''
+iban: IT86T0326813500052866955281
+bic: ''
+postale: ''
+causale: '#SOSAAA'
+link: 'http://www.ascolipicchio.com/'
+email: ''
+data: 11/10/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/781,182231698,2016-10-11 16:29:15,2016-10-11 10:42:57,"Asta di beneficenza ""Con le mani, col cuore"" Associazione Culturale Il Teatro delle Stelle",,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,{},"<pre><yamldata>chi: 'Antonio Scanferlato per l''Associazione Culturale ""Il Teatro delle Stelle""'
 descrizione: 'L''Associazione Culturale \""Il Teatro delle Stelle\"", con sede a Ghedi (Bs), ha deciso di fare qualcosa di concreto per aiutare le popolazioni terremotate del centro Italia ma in un modo un po' diverso dal consueto: abbiamo deciso di mettere all'asta solo oggetti creati dalle persone, con le loro mani o con il loro ingegno sicuramente donati col cuore perciò artisti, hobbysti, artigiani o chiunque abbia realizzato o voglia realizzare un manufatto da donare è il benvenuto. Abbiamo già raccolto l'adesione di molti artisti: pittori, scrittori, musicisti ma anche casalinghe, bricoleur e abilissimi artigiani. Il punto (virtuale) di ritrovo di noi tutti è il gruppo Facebook “Con le Mani, con il Cuore”, dove si può consultare il regolamento, dove ci si può confrontare, socializzare e dove visionare le prime opere poste all'incanto. L'evento avrà luogo presso la Sala Consiliare del Comune di Ghedi, domenica 20 Novembre, alle ore 15:30. Per ulteriori informazioni: info@ilteatrodellestelle.it, tel. 3925044965.'
 intestazione: 'Associazione Culturale ""Il Teatro delle Stelle""'
