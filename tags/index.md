@@ -24,9 +24,7 @@ csses: [/css/tags.css]
 <script type="text/javascript">
     var fill = d3.scale.category20();
     
-    var words = [
-      {% for tag in site.tags %}{text: '{{ tag[0] }}', size: '{{ tag[1] | size }}'}{% unless forloop.last %},{% endunless %}{% endfor %}
-    ]
+    var words = [{% for tag in site.tags %}{text: '{{ tag[0] }}', size: '{{ tag[1] | size }}'}{% unless forloop.last %},{% endunless %}{% endfor %}];
     
     var min = words.reduce(function(p,c){return Math.min(p, c.size);},0);
     var max = words.reduce(function(p,c){return Math.max(p, c.size);},0);
