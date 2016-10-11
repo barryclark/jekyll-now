@@ -9,13 +9,13 @@ author_email: daniel.wehrle@haufe-lexware.com
 header-img: "images\bg-post.alt.jpg"
 ---
 
-Currently all of our Lexware “on-premise” products work, using the well-known user/password login authentication. But, in the last couple of years, new techniques for authentication have become available, and we tested some of these technologies - Windows Hello and Google Athtenticator - to make proposals for alternative authentication and authorization technologies for Lexware products - especially for our “on premise” products.
+Currently all of our Lexware "on-premise" products work, using the well-known user/password login authentication. But, in the last couple of years, new techniques for authentication have become available, and we tested some of these technologies - Windows Hello and Google Athtenticator - to make proposals for alternative authentication and authorization technologies for Lexware products - especially for our "on premise" products.
 
 ### Windows Hello
 
-“Windows Hello” has been available since the release of Windows 10 and is integrated into Microsoft’s sign-on service “Microsoft Passport”. Windows uses this service to enable login by face recognition or by other biometric methods, like fingerprint recognition. The face recognition requires a special camera (“Intel RealSense”), consisting of two cameras for visible light (for 3D scanning), and one infrared camera, to ensure the face recognition is not run on a photograph. These cameras are not widely distributed across the laptop market.
+"Windows Hello" has been available since the release of Windows 10 and is integrated into Microsoft’s sign-on service "Microsoft Passport". Windows uses this service to enable login by face recognition or by other biometric methods, like fingerprint recognition. The face recognition requires a special camera ("Intel RealSense"), consisting of two cameras for visible light (for 3D scanning), and one infrared camera, to ensure the face recognition is not run on a photograph. These cameras are not widely distributed across the laptop market.
 
-I started to check and go through the information Microsoft provides for integrating “Passport” and “Hello” into applications.
+I started to check and go through the information Microsoft provides for integrating "Passport" and "Hello" into applications.
 
 I also started recoding the sample from the pages, creating a simple Universal Windows Platform (UWP) app that performed indentification by Face recognition - [See Sample on MSDN](https://msdn.microsoft.com/en-us/windows/uwp/security/microsoft-passport-login-auth-service). The sample was short and pretty straightforward. It contains a simple xml serialization framework that would need to be replaced by a more secure data layer for productive usage. But to get started it was a really good resource.
 
