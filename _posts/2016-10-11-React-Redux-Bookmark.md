@@ -3,9 +3,9 @@ layout: post
 title: React & Redux Bookmark
 ---
 
-##React
 
-* 공식 사이트 https://facebook.github.io/react/
+##React 
+   * 공식 사이트 https://facebook.github.io/react
 * 깃헙 https://github.com/facebook/react
 * 한글 번역 https://github.com/facebook/react/blob/master/docs/docs/
 * 유용한 툴들 https://github.com/facebook/react/wiki/Complementary-Tools
@@ -21,8 +21,8 @@ title: React & Redux Bookmark
     * https://egghead.io/courses/getting-started-with-redux
     * https://learnredux.com/
 * 참고자료
-    * flux 예제 redux 로 변경한거 // pro_react_redux.pdf  맥북 다운로드 파일에 있음
-    * 리덕스 설명(문주영) http://www.slideshare.net/youngmoon925/reduced-by-redux-58865573?ref=http://blog.hckrmn.net/?s=redux
-    * 리덕스 설명(검색자료)  http://www.slideshare.net/dalinaum/redux-55650128?qid=bf9e7313-bccc-4d0c-8202-0552d598e072&v=&b=&from_search=2
+   * flux 예제 redux 로 변경한거 // pro_react_redux.pdf  맥북 다운로드 파일에 있음
+   * 리덕스 설명(문주영) http://www.slideshare.net/youngmoon925/reduced-by-redux-58865573?ref=http://blog.hckrmn.net/?s=redux
+   * 리덕스 설명(검색자료)  http://www.slideshare.net/dalinaum/redux-55650128?qid=bf9e7313-bccc-4d0c-8202-0552d598e072&v=&b=&from_search=2
 
 
