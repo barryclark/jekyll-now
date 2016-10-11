@@ -13,7 +13,7 @@
 - name: Segnalazioni
   logo: /img/icone/05-segnalazioni.png
   featured: true
-  map_post: 2016-09-01-MappaHOTOSM-Telegram-Bot/
+  map_post: 2016-09-01-mappa-segnalazioni
 - name: Viabilità
   logo: /img/icone/09-traffico.png
   featured: true
@@ -29,4 +29,4 @@
 - name: Openstreetmap
   logo: /img/icone/07-openstreetmap.png
   featured: true
-  map_post: 2016-08-29-Risorse-e-attività-di-mappatura-su-Openstreetmap/
+  map_post: 2016-8-29-risorse-openstreetmap
