@@ -4,6 +4,6 @@ permalink: /allposts/
 
 {"posts": [
 {% for post in site.posts %}
-{"url":"{{ post.url }}","title":"{{ post.title | xml_escape }}","excerpt":"{{ post.excerpt | strip_newlines | replace: '"', '\"' }}"},
+{"url":"{{ post.url }}","title":"{{ post.title | xml_escape }}","excerpt":"{{ post.excerpt | replace: '"', '\"' | strip_newlines }}"},
 {% endfor %}
 ]}
