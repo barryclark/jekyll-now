@@ -1,19 +1,13 @@
 <!-- opengraph tags from opengraph.html -->
 <meta property="fb:admins" content="1274573288"/>
 <meta property="fb:app_id" content="197946313591875"/>
-
 <meta property="og:site_name" content="{{ site.name }}" />
 <meta property="og:type" content="blog" />
-
 <meta property="article:author" content="https://www.facebook.com/joseph.hendrix.5" />
-
 {% for tag in page.tags %}<meta property="article:tag" content="{{ tag | replace:'_',' ' }}" />{% endfor %}
 {% for keyword in page.keywords %}<meta property="article:tag" content="{{ keyword }}" />{% endfor %}
-
-<meta property="article:published_time" content="{% if page.date %}{{ page.date | date: "%Y-%m-%d" }}{% else %}{{ site.time | date: "%Y-%m-%d" }}{% endif %}" />
+<meta property="article:published_time" content="{% if page.date %}{{ page.date | date: '%Y-%m-%d' }}{% else %}{{ site.time | date: '%Y-%m-%d' }}{% endif %}" />
 <meta property="og:image" content="{% if page.image %}{{ site.url }}{{ page.image }}{% else %}{{ site.avatar }}{% endif %}" />
-<meta property="og:url" content="{% if page.url == "/index.html" %}{{ site.url }}{% elsif page.facebook_post %}{{ page.facebook_post }}{% else %}{{ site.url }}{{ page.url }}{% endif %}" />
-
+<meta property="og:url" content="{% if page.url == '/index.html' %}{{ site.url }}{% elsif page.facebook_post %}{{ page.facebook_post }}{% else %}{{ site.url }}{{ page.url }}{% endif %}" />
 <meta property="og:title" content="{% if page.title %}{{ page.title | xml_escape }}{% else %}{{ site.name }}{% endif %}" />
-
-<meta name="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html }}{% else %}{{ site.description }}{% endif %}" />
+<meta name="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | xml_escape }}{% else %}{{ site.description }}{% endif %}" />
