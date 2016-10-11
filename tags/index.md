@@ -30,7 +30,7 @@ csses: [/css/tags.css]
     
     var min = words.reduce(function(p,c){return Math.min(p, c.size);},0);
     var max = words.reduce(function(p,c){return Math.max(p, c.size);},0);
-    var multiplier = function(size) {return 15 + (25 - 15) * (size - min) / (max - min)};
+    var multiplier = function(size) {return 15 + (25 - 15) * (size - min) / (max - min);};
     
     var layout = d3.layout.cloud().size([700, 500]).words()).rotate(function() {
         return ~~(Math.random() * 2) * 90;
