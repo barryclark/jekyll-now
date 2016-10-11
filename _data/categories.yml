@@ -1,0 +1,24 @@
+- name: Fabbisogni
+  logo: /img/icone/01-fabbisogni.png
+  featured: true
+  map_post: 2016-09-22-mappa-fabbisogni
+- name: Contatti
+  logo: /img/icone/02-contatti.png
+  featured: true
+  map_post: 2016-09-22-mappa-contatti
+- name: Alloggi
+  logo: /img/icone/03-alloggi.png
+  featured: true
+  map_post: 2016-09-22-mappa-alloggi
+- name: Segnalazioni
+  logo: /img/icone/05-segnalazioni.png
+  featured: true
+  map_post: 2016-09-01-MappaHOTOSM-Telegram-Bot
+- name: Viabilità
+  logo: /img/icone/09-traffico.png
+  featured: true
+  map_post: 2016-08-25-mappa-traffico
+- name: Comuni Colpiti
+  logo: /img/icone/11-comunicolpiti.png
+  featured: true
+  map_post: 2016-08-24-mappa-comuni-cratere
