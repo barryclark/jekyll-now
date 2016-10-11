@@ -1,7 +1,7 @@
 <div class="wrapper-masthead">
   <div class="container">
     <header class="masthead clearfix">
-      <div>
+      <div style="overflow: auto;">
         <a href="{{ site.baseurl }}/" class="site-avatar">
           <img src="https://avatars.githubusercontent.com/u/12754677?v=3" alt="Joe's GitHub Profile Picture" />
         </a>
@@ -15,7 +15,7 @@
           {% for navlink in site.navlinks %}<a href="{{ navlink.url }}">{{ navlink.text }}</a>{% if forloop.last %}{% else %}|{% endif %}{% endfor %}
         </nav>
       </div>
-      <div style="margin-top: 75px;">
+      <div>
 {% include google/search.html %}
       </div>
     </header>
