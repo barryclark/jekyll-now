@@ -1,0 +1,149 @@
+@import 'libs/vars';
+@import 'libs/functions';
+@import 'libs/mixins';
+@import 'libs/skel';
+
+/*
+	Future Imperfect by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
+
+/* List */
+
+	ul {
+		&.posts {
+			article {
+				&:after {
+					clear: both;
+					content: '';
+					display: block;
+				}
+
+				.image {
+					display: table-cell;
+					vertical-align: top;
+				}
+
+				header {
+					display: table-cell;
+					padding-right: 1em;
+					vertical-align: top;
+				}
+			}
+		}
+	}
+
+/* Author */
+
+	.author {
+		.name {
+			display: inline-block;
+			vertical-align: middle;
+		}
+
+		img {
+			display: inline-block;
+			vertical-align: middle;
+		}
+	}
+
+/* Post */
+
+	.post {
+		&:after {
+			clear: both;
+			content: '';
+			display: block;
+		}
+
+		> header {
+			&:after {
+				clear: both;
+				content: '';
+				display: block;
+			}
+
+			.title {
+				display: table-cell;
+				vertical-align: top;
+				width: 65%;
+			}
+
+			.meta {
+				display: table-cell;
+				vertical-align: top;
+				width: 30%;
+			}
+		}
+
+		> footer {
+			&:after {
+				clear: both;
+				content: '';
+				display: block;
+			}
+
+			.actions {
+				display: inline-block;
+			}
+
+			.stats {
+				display: inline-block;
+				margin-left: 2em;
+			}
+		}
+	}
+
+/* Mini Post */
+
+	.mini-post {
+		.image {
+			display: block;
+		}
+	}
+
+/* Header */
+
+	#header {
+		&:after {
+			clear: both;
+			content: '';
+			display: block;
+		}
+
+		h1 {
+			float: left;
+		}
+
+		.links {
+			float: left;
+		}
+
+		.main {
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+	}
+
+/* Wrapper */
+
+	#wrapper {
+	}
+
+/* Sidebar */
+
+	#sidebar {
+		display: table-cell;
+		margin-right: 0;
+		padding-right: _size(section-spacing);
+		vertical-align: top;
+	}
+
+/* Main */
+
+	#main {
+		display: table-cell;
+		vertical-align: top;
+	}

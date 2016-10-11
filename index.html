@@ -4,19 +4,47 @@ layout: default
 
 <div class="posts">
   {% for post in site.posts %}
+    
     <article class="post">
+								<header>
+									<div class="title">
+										<h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+										<p>Sub title</p></p>
+									</div>
+									<div class="meta">
+										<time class="published" datetime="2015-11-01">{{ post.date | date: "%B %e, %Y" }}</time>
+										<a href="#" class="author"><span class="name">{{ post.author }}</span><img src="images/avatar.jpg" alt="" /></a>
+									</div>
+								</header>
+								
+								<!--
+								<a href="{{ site.baseurl }}{{ post.url }}" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+								-->
+								
+								<p>
+								  {{ post.excerpt }}
+								</p>
+								<footer>
+									<ul class="actions">
+										<li><a href="{{ site.baseurl }}{{ post.url }}" class="button big">Continue Reading</a></li>
+									</ul>
+									<ul class="stats">
+										<li><a href="#">{{ post.author }}</a></li>
+										<li><a href="#" class="icon fa-heart">28</a></li>
+										<li><a href="#" class="icon fa-comment">128</a></li>
+									</ul>
+								</footer>
+							</article>
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-      <div class="date">
-      Written on {{ post.date | date: "%B %e, %Y" }}, {{ post.author }}
-      </div>
-      
-      
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
+
+
+
+
+
   {% endfor %}
 </div>
+
+
+
+
