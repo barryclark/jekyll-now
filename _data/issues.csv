@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/780,182225969,2016-10-11 10:13:54,2016-10-11 10:12:54,Associazione ‘Le Castagne’ di Cossito (Amatrice),,,"[""Accettato"", ""Form"", ""Pubblicare su FB"", ""Pubblicare su TW"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Associazione \u2018Le Castagne\u2019 di Cossito (Amatrice)"", ""data"": ""11/10/2016"", ""descrizione"": ""Il 21 Ottobre l\u2019associazione \u2018Le Castagne\u2019 di Cossito (Amatrice), presso la Parrocchia della Chiesa Evangelica Metodista in via Firenze, 38 zona Termini. Ospiter\u00e0 la cena di beneficenza \u2018Amatrice, una realt\u00e0 fatta di frazioni, adottane una\u2019. La quota di partecipazione \u00e8 di 30 euro. L\u2019incasso della serata sar\u00e0 devoluto per attrezzature, ricostruzione e soluzioni abitative per gli sfollati del terremoto."", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""http://www.agenparl.com/terremoto-2110-lassociazione-le-castagne-cossito-cena-beneficenza-amatrice-realta-fatta-frazioni-adottane/"", ""postale"": """"}","<pre><yamldata>chi: 'Associazione ‘Le Castagne’ di Cossito (Amatrice)'
+descrizione: 'Il 21 Ottobre l’associazione ‘Le Castagne’ di Cossito (Amatrice), presso la Parrocchia della Chiesa Evangelica Metodista in via Firenze, 38 zona Termini. Ospiterà la cena di beneficenza ‘Amatrice, una realtà fatta di frazioni, adottane una’. La quota di partecipazione è di 30 euro. L’incasso della serata sarà devoluto per attrezzature, ricostruzione e soluzioni abitative per gli sfollati del terremoto.'
+intestazione: ''
+iban: ''
+bic: ''
+postale: ''
+causale: ''
+link: 'http://www.agenparl.com/terremoto-2110-lassociazione-le-castagne-cossito-cena-beneficenza-amatrice-realta-fatta-frazioni-adottane/'
+email: ''
+data: 11/10/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/779,182124895,2016-10-10 21:57:02,2016-10-10 21:56:30,17 ottobre ore 15 Consiglio regionale Lazio per comunicazioni del presidente sul terremoto,,,"[""Accettato"", ""Bollettino"", ""Notizie Utili"", ""Pubblicare su FB"", ""Twitter""]",,,"{""data"": ""10/10/2016"", ""descrizione"": ""Convocato per il 17 ottobre, ore 15.00 il Consiglio regionale del Lazio per comunicazioni del presidente Zingaretti sul terremoto del 24/8 ad Amatrice e Accumoli."", ""link"": ""https://twitter.com/consigliolazio/status/785519156552753152"", ""titolo"": ""17 ottobre ore 15 Consiglio regionale Lazio per comunicazioni del presidente sul terremoto""}","<pre><yamldata>titolo: '17 ottobre ore 15 Consiglio regionale Lazio per comunicazioni del presidente sul terremoto'
 descrizione: 'Convocato per il 17 ottobre, ore 15.00 il Consiglio regionale del Lazio per comunicazioni del presidente Zingaretti sul terremoto del 24/8 ad Amatrice e Accumoli.'
 link: 'https://twitter.com/consigliolazio/status/785519156552753152'
@@ -3772,17 +3783,6 @@ bic: ''
 postale: ''
 causale: ''
 link: 'http://www.pisainformaflash.it/notizie/dettaglio.html?nId=28205'
-email: ''
-data: 14/09/2016
-</yamldata></pre>",closed
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/273,176857642,2016-09-14 09:25:24,2016-09-14 09:24:36,Associazione Massimo Oddo e Bologna Fc,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Associazione Massimo Oddo e Bologna Fc"", ""data"": ""14/09/2016"", ""descrizione"": ""Vendita di magliette di Bologna Fc su Ebay. Il ricavato sar\u00e0 devoluto alle popolazioni colpite dal sisma"", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""https://www.bolognafc.it/partita-lasta-delle-maglie-rossoblu-a-sostegno-dei-terremotati/"", ""postale"": """"}","<pre><yamldata>chi: 'Associazione Massimo Oddo e Bologna Fc'
-descrizione: 'Vendita di magliette di Bologna Fc su Ebay. Il ricavato sarà devoluto alle popolazioni colpite dal sisma'
-intestazione: ''
-iban: ''
-bic: ''
-postale: ''
-causale: ''
-link: 'https://www.bolognafc.it/partita-lasta-delle-maglie-rossoblu-a-sostegno-dei-terremotati/'
 email: ''
 data: 14/09/2016
 </yamldata></pre>",closed
