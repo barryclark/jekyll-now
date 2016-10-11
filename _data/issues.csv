@@ -2989,6 +2989,17 @@ link: 'https://www.facebook.com/moovenda'
 email: ''
 data: 15/09/2016
 </yamldata></pre>",closed
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/364,177120082,2016-09-15 08:40:16,2016-09-15 08:39:13,Moovenda,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Moovenda"", ""data"": ""15/09/2016"", ""descrizione"": ""Moovenda \u00e8 vicina agli abitanti di Amatrice e del centro italia, per questo insieme agli amici di Ambrogio, si impegna nella raccolta dei beni di prima necessit\u00e0 a Roma, mettendoci a disposizione per le prossime 24 ore per il ritiro gratuito direttamente a casa vostra o in ufficio dei beni di prima necessit\u00e0, che verranno portati domani a Rieti ed Amatrice. info 3381577381."", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""https://www.facebook.com/moovenda"", ""postale"": """"}","<pre><yamldata>chi: Moovenda
+descrizione: 'Moovenda è vicina agli abitanti di Amatrice e del centro italia, per questo insieme agli amici di Ambrogio, si impegna nella raccolta dei beni di prima necessità a Roma, mettendoci a disposizione per le prossime 24 ore per il ritiro gratuito direttamente a casa vostra o in ufficio dei beni di prima necessità, che verranno portati domani a Rieti ed Amatrice. info 3381577381.'
+intestazione: ''
+iban: ''
+bic: ''
+postale: ''
+causale: ''
+link: 'https://www.facebook.com/moovenda'
+email: ''
+data: 15/09/2016
+</yamldata></pre>",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/363,177119718,2016-09-23 22:18:14,2016-09-15 08:37:05,Beni prima necessità,42.07653,12.27201,"[""Accettato"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""Beni prima necessit\u00e0"", ""data"": ""15/09/2016"", ""descrizione"": ""Beni alimentari inscatolati, necessario per bambini e neonati, come pannolini, abbigliamento nuovo e coperte confezionate. Tutti i supermercati di Anguillara Sabazia e l\u2019Ex Consorzio, in via Anguillarese, 145"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": 42.07653, ""link"": """", ""lon"": 12.27201, ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 cosa: 'Beni prima necessità'
