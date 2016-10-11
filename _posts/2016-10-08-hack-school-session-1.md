@@ -49,7 +49,7 @@ recommendations applies to code.
 
 To assist us in assisting us, please:
 
-* Use 2 or 4 spaces consistantly to indent your code like so:
+* Use 2 or 4 spaces consistently to indent your code like so:
 
 ```html
 <!DOCTYPE html>
@@ -85,8 +85,8 @@ which is also on the same line as the selector.
 
 ### Recommended References
 
-As you go along, you'll likely need to look up many things. 
-Here are some of the best places to do so: 
+As you go along, you'll likely need to look up many things.
+Here are some of the best places to do so:
 
 * [W3Schools' HTML Tutorial](http://www.w3schools.com/html/default.asp)
 * [W3Schools' CSS Tutorial](http://www.w3schools.com/css/default.asp)
@@ -254,7 +254,7 @@ With an award winning website like this, people are going to want to contact
 you, so let's give them the option. We're going to use the `<input>` tag to
 make a small contact form.
 
-Below your short description, add the following lines: 
+Below your short description, add the following lines:
 `<input type="email">`
 `<button>Contact me</button>`
 
@@ -586,7 +586,7 @@ Now, in our `styles.css` file, we can change the width and height of our images:
 ```
 
 If you'd like to closely inspect and test changes to your page,
-it's worth learning how to use Chrome DevTools. 
+it's worth learning how to use Chrome DevTools.
 A quick way to get started is Google's [official documentation](https://developers.google.com/web/tools/chrome-devtools/). A more in-depth tutorial
 can be found with [CodeSchool](https://www.codeschool.com/courses/discover-devtools).
 
@@ -853,7 +853,7 @@ Lastly, we just need change the font to white. One thing to note is that anchor 
 
 If you remember, the `#navbar a` selector picks out all anchor tags within the `#nav` div.
 
-And so our final result is: 
+And so our final result is:
 
 ![](../images/hack-school/session1/final-webpage.png)
 
