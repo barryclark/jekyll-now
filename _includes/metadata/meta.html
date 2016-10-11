@@ -6,6 +6,7 @@
 
 {% if page.url == "/index.html" %}<link rel="canonical" href="{{ site.url }}"  itemprop="url"/><link rel="alternate" href="{{ site.url }}" hreflang="en-us" />{% elsif page.facebook_post %}<link rel="canonical" href="{{ page.facebook_post }}" /><link rel="alternate" href="{{ page.facebook_post }}" hreflang="en-us" />{% else %}<link rel="canonical" href="{{ site.url }}{{ page.url }}"  itemprop="url"/><link rel="alternate" href="{{ site.url }}{{ page.url }}" hreflang="en-us" />{% endif %}
 
-{% if page.excerpt %}<meta name="description" content="{{ page.excerpt| strip_html | replace:'"','&quot;' }}" />{% else %}<meta name="description" content="{{ site.description }}" />{% endif %}
+{% if page.excerpt %}<meta name="description" content="{{ page.excerpt | strip_html | strip_newlines | xml_escape }}" />{% else %}<meta name="description" content="{{ site.description }}" />{% endif %}
 
+{% if layout.isPost %}<meta name="keywords" content="{% for keyword in page.keywords %}{{ keyword }},{% endfor %}{% for tag in page.tags %}{{ tag | replace:'_',' ' }}{% unless forloop.last %},{% endunless %}{% endfor %}" />{% endif %}
 <meta name="author" content="Joseph Hendrix" />
