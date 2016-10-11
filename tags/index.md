@@ -23,17 +23,19 @@ csses: [/css/tags.css]
 <div id="tagCloud" class="tagCloud" style=""></div>
 <script type="text/javascript">
     var fill = d3.scale.category20();
-    var layout = d3.layout.cloud().size([700, 500]).words([
-      {% for tag in site.tags %}['{{ tag[0] }}', {{ tag[1] | size }}]{% unless forloop.last %},{% endunless %}{% endfor %}
-    ].map(function(d) {
-        return {
-            text: d[0],
-            size: (d[1] + 10)
-        }
-    })).rotate(function() {
+    
+    var words = [
+      {% for tag in site.tags %}{text: '{{ tag[0] }}', size: '{{ tag[1] | size }}'}{% unless forloop.last %},{% endunless %}{% endfor %}
+    ]
+    
+    var min = words.reduce(function(p,c){return Math.min(p, c.size);},0);
+    var max = words.reduce(function(p,c){return Math.max(p, c.size);},0);
+    var multiplier = function(size) {return 15 + (25 - 15) * (size - min) / (max - min)};
+    
+    var layout = d3.layout.cloud().size([700, 500]).words()).rotate(function() {
         return ~~(Math.random() * 2) * 90;
     }).font('Impact').fontSize(function(d) {
-        return d.size;
+        return multiplier(d.size);
     }).on('end', draw);
     layout.start();
     function draw(w) {
