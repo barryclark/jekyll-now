@@ -3,8 +3,7 @@ layout: post
 title: React & Redux Bookmark
 ---
 
-##Reac
-
+##React
 
 * 공식 사이트 https://facebook.github.io/react/
 * 깃헙 https://github.com/facebook/react
