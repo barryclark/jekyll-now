@@ -2,7 +2,7 @@
 layout: post
 title: "Review - Safari Ltd Behemoth and Crystal Cavern Dragon"
 description: "Safari's Behemoth and Crystal Cave Dragon are beautiful, and are made to play."
-category: toys
+category: review
 featured: behemoth.jpg
 amazonterm: "Safari Toys ltd"
 tags: [toys, safari ltd, behemoth, mythical realms, review, crystal cavern dragon]
