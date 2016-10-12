@@ -27,7 +27,7 @@ Apart from the critical public reviews, professional critics generally gave Supe
 
 ![alt tag](/images/SGRT.png)
 
-
+It just goes to show that even a show that struggles to break the mold, is still subject to the same scathing criticism of the public, meanwhile, professional critics have more of a tendency to understand the social and historical context in which a show like this is inserted into when crafting their reviews.  Although, ultimately, it seems that bias still exists in both camps.
 
 Sources:
 * http://www.metacritic.com/tv/supergirl-2015
