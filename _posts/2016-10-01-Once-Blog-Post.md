@@ -2,6 +2,7 @@
 layout: post
 title: Operation Mongoose
 author: enunez
+published: true
 ---
 
 This post like my brain during midterms comes to you in three brief parts.
