@@ -32,5 +32,5 @@
   link: 2016-08-29-risorse-openstreetmap
 - name: Comuni del Decreto 11.10.16
   logo: /img/icone/11-comunicolpiti.png
-  map: true
+  map: false
   link: 2016-10-12-mappa-comuni-decreto1
