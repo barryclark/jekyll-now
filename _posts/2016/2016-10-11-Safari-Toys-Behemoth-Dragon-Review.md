@@ -11,7 +11,7 @@ author: Rob Kalajian
 
 <h2>Prelude</h2>
 
-Safari Ltd has always put out quality toys. I always remember seeing their stuff in museum gift shops, zoos, craft shops, and more. I even had a few of their dinosaur, wildlife, and marine toys on my dresser in my bedroom as a kid. Over the years their catalog has grown and I've become more and more interested in their fantasy lines. Today I'll be looking at their new Behemoth and Crystal Cave
+![How I Safari](/images/safaritoys/howisafari.jpg){: .float-right }Safari Ltd has always put out quality toys. I always remember seeing their stuff in museum gift shops, zoos, craft shops, and more. I even had a few of their dinosaur, wildlife, and marine toys on my dresser in my bedroom as a kid. Over the years their catalog has grown and I've become more and more interested in their fantasy lines. Today I'll be looking at their new Behemoth and Crystal Cave
 
 <h2>Play</h2>
 
@@ -30,7 +30,7 @@ The Crystal Cave Dragon is colorful and stands 4 ½ inches tall and is 5 inches 
 
 The Behemoth is a pretty stark contrast to the Dragon. It's shorter, squat, and ferocious. Its 5-inch-long body is littered with scars and its color scheme is much darker, grittier, and earthy. The beady red eyes are set in a squarish head filled with rows of different sized teeth. The Behemoth is on all fours, but the front two appendages are more like arms/hands. The whole figure ends with a stout, spine covered tail.
 
-![Crystal Cave Dragon](/images/safari/safaritoys.jpg){: .center }
+![Crystal Cave Dragon](/images/safaritoys/crystaldragonown.jpg){: .center }
 *Beautifully painted*{: .center }
 
 <h2>Perspective</h2>
