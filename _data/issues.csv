@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/791,182642189,2016-10-12 21:45:50,2016-10-12 21:44:59,"cibo per papere, galline conigli e gatti",42.694141,13.247683,"[""Accettato"", ""Fabbisogni"", ""Facebook"", ""Form""]",,,"{""cosa"": ""cibo per papere, galline conigli e gatti"", ""data"": ""12/10/2016"", ""descrizione"": ""#Accumoli - richiesta da parte di cibo per papere, galline conigli e gatti - RAMIRO 3336903233"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Frazione Fonte del Campo, Case Marini, Accumoli, RI, Lazio, 02011, Italy"", ""lat"": ""42.694141"", ""link"": ""https://www.facebook.com/angela.pignotti.5/posts/10210584989410747"", ""lon"": ""13.247683"", ""tel"": ""3336903233""}","<pre><yamldata>tel: '3336903233'
+email: ''
+cosa: 'cibo per papere, galline conigli e gatti'
+descrizione: '#Accumoli - richiesta da parte di cibo per papere, galline conigli e gatti - RAMIRO 3336903233'
+indirizzo: 'Frazione Fonte del Campo, Case Marini, Accumoli, RI, Lazio, 02011, Italy'
+lat: '42.694141'
+lon: '13.247683'
+link: 'https://www.facebook.com/angela.pignotti.5/posts/10210584989410747'
+immagine: ''
+data: 12/10/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/790,182473729,2016-10-12 17:32:09,2016-10-12 09:10:59,"Cesaventre #Accumoli, gli abitanti vogliono restare: ''cerchiamo 5 case su ruote''",,,"[""Accettato"", ""Bollettino"", ""Da rilanciare"", ""Fabbisogni"", ""Pubblicare su FB"", ""Pubblicare su TW""]",,,"{""cosa"": ""Segnalazione da Cesaventre"", ""data"": ""12/10/2016"", ""descrizione"": ""Nella frazione vivono 23 persone, ovvero 5 nuclei familiari, mentre una coppia di anziani si sono trasferite a L'Aquila. Ci sono minori (bambini e adolescenti) e anziani con problemi di salute. Non si registrano crolli maggiori, ma numerose case sono parzialmente inagibili e l'intera popolazione vive in roulotte da oltre 1 mese, tranne una famiglia che \u00e8 riuscita a ottenere una casa su ruote tramite una donazione privata. 2 bagni chimici sono arrivati solo dieci giorni fa' insieme all'allaccio di 6kw di corrente (prima andavano con un generatore). E' un caso in cui si potrebbe ottenere il rientro nelle case vere dopo le ristrutturazioni in tempi brevi e in cui non dovrebbero essere necessario la costruzione di sae/map. La signora che ci ha contattate molte volte ha avanzato la richiesta di avere informazioni e supporto per l'ottenimento di 5 case su ruote. La signora (Cinzia) pu\u00f2 essere contattata."", ""email"": ""sara.vegni@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3462865450""}","<pre><yamldata>tel: '3462865450'
 email: sara.vegni@gmail.com
 cosa: 'Segnalazione da Cesaventre'
