@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Operation Mongoose
+title: "Operation Mongoose"
 author: enunez2
 published: true
 ---
@@ -33,7 +33,7 @@ Network 2: Storybrooke
 
 Nodes: Emma Swan, Henry Mills, Regina Mills, Mary Margret, Sheriff, Archie, Leroy (jailed man), Granny (Inn Keep), Ruby (Girl in Inn), Mr. Gold, David Nolan (Comma Patient), Classroom Students
 
-Edges/Ties: Emma Swan-Henry Mills, Emma Swan-Regina Mills, Emma Swan-Mary Margret, Emma Swan-Sheriff, Emma Swan-Archie, Emma-Leroy, Emma Swan-Granny, Emma Swan-Mr. Gold, Henry Mills-Regina Mills, Henry Mills-Mary Margret, Henry-Mills-Sheriff, Henry Mills- Archie, Regina Mills-Sheriff, Regina Mills-Mary Margret, Mary Margret-Classroom, Mary Margret-David Nolan, Sheriff-Leroy, Granny-Ruby, Granny-Mr. Gold, 
+Edges/Ties: Emma Swan-Henry Mills, Emma Swan-Regina Mills, Emma Swan-Mary Margret, Emma Swan-Sheriff, Emma Swan-Archie, Emma-Leroy, Emma Swan-Granny, Emma Swan-Mr. Gold, Henry Mills-Regina Mills, Henry Mills-Mary Margret, Henry-Mills-Sheriff, Henry Mills- Archie, Regina Mills-Sheriff, Regina Mills-Mary Margret, Mary Margret-Classroom, Mary Margret-David Nolan, Sheriff-Leroy, Granny-Ruby, Granny-Mr. Gold. 
 
 
 
