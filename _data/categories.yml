@@ -1,32 +1,32 @@
-- name: Fabbisogni
+- name: Mappa Fabbisogni
   logo: /img/icone/01-fabbisogni.png
   featured: true
-  map_post: 2016-09-22-mappa-fabbisogni
-- name: Contatti
+  link: 2016-09-22-mappa-fabbisogni
+- name: Mappa Contatti
   logo: /img/icone/02-contatti.png
   featured: true
-  map_post: 2016-09-22-mappa-contatti
-- name: Alloggi
+  link: 2016-09-22-mappa-contatti
+- name: Mappa Alloggi
   logo: /img/icone/03-alloggi.png
   featured: true
-  map_post: 2016-09-22-mappa-alloggi
-- name: Segnalazioni
+  link: 2016-09-22-mappa-alloggi
+- name: Mappa Segnalazioni
   logo: /img/icone/05-segnalazioni.png
   featured: true
-  map_post: 2016-09-01-mappa-segnalazioni
-- name: Viabilità
+  link: 2016-09-01-mappa-segnalazioni
+- name: Mappa Viabilità
   logo: /img/icone/09-traffico.png
   featured: true
-  map_post: 2016-08-25-mappa-traffico
-- name: Comuni Colpiti
+  link: 2016-08-25-mappa-traffico
+- name: Mappa Comuni Colpiti
   logo: /img/icone/11-comunicolpiti.png
   featured: true
-  map_post: 2016-08-24-mappa-comuni-cratere
-- name: Foto Satellitari
+  link: 2016-08-24-mappa-comuni-cratere
+- name: Mappa Foto Satellitari
   logo: /img/icone/08-fotosatellitari.png
   featured: true
-  map_post: 2016-08-28-foto-satellitari
-- name: Openstreetmap
+  link: 2016-08-28-foto-satellitari
+- name: Attività Openstreetmap
   logo: /img/icone/07-openstreetmap.png
   featured: true
-  map_post: 2016-08-29-risorse-openstreetmap
+  link: 2016-08-29-risorse-openstreetmap
