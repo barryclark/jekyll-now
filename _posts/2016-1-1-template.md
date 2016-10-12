@@ -1,6 +1,10 @@
 ---
-layout: post
-title: You're up and running!
+layout    : post
+category  : 雜談
+title     : 範例文章
+tags      : [範例]
+date      : 2016-10-01 00:00:00
+published : false
 ---
 
 Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
