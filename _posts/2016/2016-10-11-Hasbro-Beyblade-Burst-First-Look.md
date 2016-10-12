@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Hasbro's Beyblade Burst App Briefly Hits iTunes Store"
+title: "Unboxing Hasbro's Beyblade Burst"
 description: "Hasbro's Beyblade Burst is on the shelves in Canada and will be in the US in January. Let's take a look!"
 category: unboxing
 featured: hasbroburst.jpg
