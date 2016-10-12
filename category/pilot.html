@@ -1,9 +1,12 @@
 ---
 layout: default
+title: Categories - javascript
 ---
 
+
+
 <div class="posts">
-  {% for post in site.posts %}
+  {% for post in site.categories.pilot %}
     
     <article class="post">
 		<header>
@@ -30,15 +33,17 @@ layout: default
 			</ul>
 			<ul class="stats">
 				<li><a href="#">{{ post.author }}</a></li>
-				<li><a href="#" class="icon fa-heart">test</a></li>
-				<li><a href="#" class="icon fa-comment">test</a></li>
-				<li><div class="fb-like" data-href="https://zumdev.github.io{{ post.url }}" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div></li>
+				<li><a href="#" class="icon fa-heart">28</a></li>
+				<li><a href="#" class="icon fa-comment">128</a></li>
 			</ul>
 		</footer>
 	</article>
+
+
+
+
+
+
+
   {% endfor %}
 </div>
-
-
-
-
