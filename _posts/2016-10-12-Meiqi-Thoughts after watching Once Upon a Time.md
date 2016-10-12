@@ -7,7 +7,7 @@ published: true
 
 This is a make up post, I just realized I didn't post the blog last week.
 
-# Some introductions about Once Upon a Time
+# Brief introduction about Once Upon a Time
 I haven't watched this show before the class, when the professor says we are going to watch ONCE, I was thinking about the film, the Irish musical romance film written and directed by John Carney, 2007.
 
 So for someone who's like me, haven't watched Once Upon a Time before, here is what it is:
