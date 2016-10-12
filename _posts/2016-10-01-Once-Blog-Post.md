@@ -7,11 +7,11 @@ published: true
 
 This post like my brain during midterms comes to you in three brief parts.
 
-##Part 1: What is Social Network Analysis?
+## Part 1: What is Social Network Analysis?
 
 It is a process of quantitative and qualitative analysis of a social network. It measures and maps the flow of relationships and relationship changes between knowledge-possessing entities, such as humans or computers.
 
-##Part 2: Key Words for Network Analysis 
+## Part 2: Key Words for Network Analysis 
 
 Network: A group of interacting things/people
 
@@ -19,7 +19,7 @@ Node: Object in network
 
 Edge/Tie: Connection between the objects in the network
 
-##Part 3: Example
+## Part 3: Example
 
 Tv show: Once Upon a Time Pilot Episode
 
