@@ -25,7 +25,7 @@ Apparently having feminism and diversity in male characters shoved in your face 
 
 Apart from the critical public reviews, professional critics generally gave Supergirl high ratings.  In fact, Rotten Tomatoes recieved 100% positive reviews on the Tomatometer.  Oddly, however, they have yet to categorize the show as "Cerified Fresh" like every other highly rated show on RT.  The screenshot below shows even lower percentages with the coveted Tomato Medal of Freshness next to them.
 
-![alt tag](/images/SGRT.PNG)
+![alt tag](/images/SGRT.PNG "Rotten Tomatoes")
 
 It just goes to show that even a show that struggles to break the mold, is still subject to the same scathing criticism of the public, meanwhile, professional critics have more of a tendency to understand the social and historical context in which a show like this is inserted into when crafting their reviews.  Although, ultimately, it seems that bias still exists in both camps.
 
