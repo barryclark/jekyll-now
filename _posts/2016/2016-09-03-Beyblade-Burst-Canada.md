@@ -2,7 +2,7 @@
 layout: post
 title: "Beyblade Burst on Shelves in Canada"
 description: "We're still waiting for the release in the US, but Beyblade Burst has been seen on Canadian shelves."
-category: video games
+category: toys
 featured: Beybladeburst_logo.png
 amazonterm: "beyblade burst"
 tags: [toys, beyblade, hasbro, beyblade burst]
