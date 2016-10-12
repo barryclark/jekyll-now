@@ -28,7 +28,7 @@
 			<div id="wrapper">
 				<!-- Header -->
 					<header id="header">
-						<h1><a href="#">ZUM Internet</a></h1>
+						<h1><a href="/">ZUM Internet</a></h1>
 						<nav class="links">
 							<ul>
 								<li><a href="/">BLOG</a></li>
@@ -66,25 +66,25 @@
 							<ul class="links">
 								<li>
 									<a href="/category/pilot">
-										<h3>PILOT PROJECT</h3>
+										<h3>PILOT PROJECT ({{ site.categories.pilot.size }})</h3>
 										<p>abc</p>
 									</a>
 								</li>
 								<li>
 									<a href="/category/javascript">
-										<h3>JAVASCRIPT</h3>
+										<h3>JAVASCRIPT ({{ site.categories.javascript.size }})</h3>
 										<p>test</p>
 									</a>
 								</li>
 								<li>
 									<a href="/category/java">
-										<h3>JAVA</h3>
+										<h3>JAVA ({{ site.categories.java.size }})</h3>
 										<p>111</p>
 									</a>
 								</li>
 								<li>
 									<a href="/category/tools">
-										<h3>TOOLS</h3>
+										<h3>TOOLS ({{ site.categories.tools.size }})</h3>
 										<p>ddddd</p>
 									</a>
 								</li>
@@ -137,47 +137,68 @@
 
 						<!-- Mini Posts -->
 						<section>
+							
+							<h2>CATEGORIES</h2>
+							
 							<div class="mini-posts">
+								
+								
+								
+								<!-- Mini Post -->
+								<article class="mini-post">
+									<header>
+										<h3><a href="/category/pilot">PILOT PROJECT ({{ site.categories.pilot.size }})</a></h3>
+										
+										{% for post in site.categories.pilot limit:3 %}
+										<a href="/{{ post.url }}"><time class="published" datetime="2015-10-20">{{ post.title }} {{ post.author }}({{ post.date | date: "%Y-%m-%d" }})</time></a>
+									  	{% endfor %}
+										
+										<!--<a href="#" class="author"><img src="/images/avatar.jpg" alt="" /></a>-->
+									</header>
+									<a href="/category/pilot" class="image"><img src="/images/pic04.jpg" alt="" /></a>
+								</article>
 
 								<!-- Mini Post -->
-									<article class="mini-post">
-										<header>
-											<h3><a href="/category/pilot">PILOT PROJECT</a></h3>
-											<time class="published" datetime="2015-10-20">October 20, 2015</time>
-											<!--<a href="#" class="author"><img src="/images/avatar.jpg" alt="" /></a>-->
-										</header>
-										<a href="#" class="image"><img src="/images/pic04.jpg" alt="" /></a>
-									</article>
+								<article class="mini-post">
+									<header>
+										<h3><a href="/category/javascript">JAVASCRIPT ({{ site.categories.javascript.size }})</a></h3>
+										{% for post in site.categories.javascript limit:3 %}
+										<a href="/{{ post.url }}"><time class="published" datetime="2015-10-20">{{ post.title }} {{ post.author }}({{ post.date | date: "%Y-%m-%d" }})</time></a>
+									  	{% endfor %}
+										<!--<a href="#" class="author"><img src="/images/avatar.jpg" alt="" /></a>-->
+									</header>
+									<a href="/category/javascript" class="image"><img src="/images/pic05.jpg" alt="" /></a>
+								</article>
 
 								<!-- Mini Post -->
-									<article class="mini-post">
-										<header>
-											<h3><a href="/category/javascript">JAVASCRIPT</a></h3>
-											<time class="published" datetime="2015-10-19">October 19, 2015</time>
-											<!--<a href="#" class="author"><img src="/images/avatar.jpg" alt="" /></a>-->
-										</header>
-										<a href="#" class="image"><img src="/images/pic05.jpg" alt="" /></a>
-									</article>
-
+								<article class="mini-post">
+									<header>
+										<h3><a href="/category/java">JAVA ({{ site.categories.java.size }})</a></h3>
+										{% for post in site.categories.java limit:3 %}
+										<a href="/{{ post.url }}"><time class="published" datetime="2015-10-20">{{ post.title }} {{ post.author }}({{ post.date | date: "%Y-%m-%d" }})</time></a>
+									  	{% endfor %}
+										<!--<a href="#" class="author"><img src="/images/avatar.jpg" alt="" /></a>-->
+									</header>
+									<a href="/category/java" class="image"><img src="/images/pic06.jpg" alt="" /></a>
+								</article>
+								
 								<!-- Mini Post -->
-									<article class="mini-post">
-										<header>
-											<h3><a href="/category/java">JAVA</a></h3>
-											<time class="published" datetime="2015-10-18">October 18, 2015</time>
-											<a href="#" class="author"><img src="/images/avatar.jpg" alt="" /></a>
-										</header>
-										<a href="#" class="image"><img src="/images/pic06.jpg" alt="" /></a>
-									</article>
-
-								<!-- Mini Post -->
-									<article class="mini-post">
-										<header>
-											<h3><a href="/category/tools">TOOLS</a></h3>
-											<time class="published" datetime="2015-10-17">October 17, 2015</time>
-											<a href="#" class="author"><img src="/images/avatar.jpg" alt="" /></a>
-										</header>
-										<a href="#" class="image"><img src="/images/pic07.jpg" alt="" /></a>
-									</article>
+								<article class="mini-post">
+									<header>
+										<h3><a href="/category/tools">TOOLS ({{ site.categories.tools.size }})</a></h3>
+										{% for post in site.categories.tools limit:3 %}
+										<a href="/{{ post.url }}"><time class="published" datetime="2015-10-20">{{ post.title }} {{ post.author }}({{ post.date | date: "%Y-%m-%d" }})</time></a>
+									  	{% endfor %}
+										<!--<a href="#" class="author"><img src="/images/avatar.jpg" alt="" /></a>-->
+									</header>
+									<a href="/category/tools" class="image"><img src="/images/pic07.jpg" alt="" /></a>
+								</article>
+								
+								
+								
+								
+								
+								
 
 							</div>
 						</section>
@@ -186,10 +207,10 @@
 						<section>
 							
 							
-							
+							<h2>Recent Posts</h2>
 							
 							<ul class="posts">
-								{% for post in site.posts %}
+								{% for post in site.posts limit:10 %}
 								<li>
 									<article>
 										<header>
@@ -213,7 +234,7 @@
 						<!-- About -->
 						<section class="blurb">
 							<h2>About</h2>
-							<p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod amet placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at phasellus sed ultricies.</p>
+							<p>Test</p>
 							<ul class="actions">
 								<li><a href="/about/" class="button">Learn More</a></li>
 							</ul>
