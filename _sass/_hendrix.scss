@@ -216,30 +216,3 @@ canvas {
 	margin-right: 5px;
 	margin-top: 15px;
 }
-
-.posts {
-	width: 72%;
-	float: left;
-	
-	@include mobile {
-		width: 100%;
-		float: none;
-	}
-}
-
-.sidebar {
-	float: right;
-	width: 25%;
-	font-size: 75%;
-	margin-top: 40px;
-	
-	h3 {
-		margin: 0;
-	}
-
-	@include mobile {
-		width: 100%;
-		float: none;
-		text-align: center;
-	}
-}
