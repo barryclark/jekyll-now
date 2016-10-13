@@ -77,6 +77,12 @@
 									</a>
 								</li>
 								<li>
+									<a href="/category/tools">
+										<h3>PROGRAMMING ({{ site.categories.programming.size }})</h3>
+										<p>ddddd</p>
+									</a>
+								</li>
+								<li>
 									<a href="/category/java">
 										<h3>TOOLS ({{ site.categories.tools.size }})</h3>
 										<p>111</p>
@@ -84,13 +90,7 @@
 								</li>
 								<li>
 									<a href="/category/tools">
-										<h3>??? ({{ site.categories.tools.size }})</h3>
-										<p>ddddd</p>
-									</a>
-								</li>
-								<li>
-									<a href="/category/tools">
-										<h3>??? ({{ site.categories.tools.size }})</h3>
+										<h3>ZUMINTERNET ({{ site.categories.zuminternet.size }})</h3>
 										<p>ddddd</p>
 									</a>
 								</li>
@@ -154,28 +154,26 @@
 							
 							<div class="mini-posts">
 								
-								
-								
 								<!-- Mini Post -->
 								<article class="mini-post">
 									<header>
 										<h3><a href="/category/pilot">PILOT PROJECT ({{ site.categories.pilot.size }})</a></h3>
 										
 										{% for post in site.categories.pilot limit:3 %}
-										<a href="/{{ post.url }}"><time class="published" datetime="2015-10-20">{{ post.title }} {{ post.author }}({{ post.date | date: "%Y-%m-%d" }})</time></a>
+										<a href="{{ post.url }}"><time class="published" datetime="2015-10-20">{{ post.title }} {{ post.author }}({{ post.date | date: "%Y-%m-%d" }})</time></a>
 									  	{% endfor %}
 										
 										<!--<a href="#" class="author"><img src="/images/avatar.jpg" alt="" /></a>-->
 									</header>
 									<!--<a href="/category/pilot" class="image"><img src="/images/btn_left_pilot.png" alt="" /></a>-->
 								</article>
-
+	
 								<!-- Mini Post -->
 								<article class="mini-post">
 									<header>
 										<h3><a href="/category/study">STUDY ({{ site.categories.study.size }})</a></h3>
 										{% for post in site.categories.study limit:3 %}
-										<a href="/{{ post.url }}"><time class="published" datetime="2015-10-20">{{ post.title }} {{ post.author }}({{ post.date | date: "%Y-%m-%d" }})</time></a>
+										<a href="{{ post.url }}"><time class="published" datetime="2015-10-20">{{ post.title }} {{ post.author }}({{ post.date | date: "%Y-%m-%d" }})</time></a>
 									  	{% endfor %}
 										<!--<a href="#" class="author"><img src="/images/avatar.jpg" alt="" /></a>-->
 									</header>
@@ -185,36 +183,31 @@
 								<!-- Mini Post -->
 								<article class="mini-post">
 									<header>
+										<h3><a href="/category/programming">PROGRAMMING ({{ site.categories.programming.size }})</a></h3>
+										{% for post in site.categories.programming limit:3 %}
+										<a href="{{ post.url }}"><time class="published" datetime="2015-10-20">{{ post.title }} {{ post.author }}({{ post.date | date: "%Y-%m-%d" }})</time></a>
+									  	{% endfor %}
+										<!--<a href="#" class="author"><img src="/images/avatar.jpg" alt="" /></a>-->
+									</header>
+								</article>
+								
+								<!-- Mini Post -->
+								<article class="mini-post">
+									<header>
 										<h3><a href="/category/tools">TOOLS ({{ site.categories.tools.size }})</a></h3>
 										{% for post in site.categories.tools limit:3 %}
-										<a href="/{{ post.url }}"><time class="published" datetime="2015-10-20">{{ post.title }} {{ post.author }}({{ post.date | date: "%Y-%m-%d" }})</time></a>
-									  	{% endfor %}
-										<!--<a href="#" class="author"><img src="/images/avatar.jpg" alt="" /></a>-->
-									</header>
-								</article>
-
-								
-								<!-- Mini Post -->
-								<article class="mini-post">
-									<header>
-										<h3><a href="/category/java">?? ({{ site.categories.java.size }})</a></h3>
-										{% for post in site.categories.java limit:3 %}
-										<a href="/{{ post.url }}"><time class="published" datetime="2015-10-20">{{ post.title }} {{ post.author }}({{ post.date | date: "%Y-%m-%d" }})</time></a>
+										<a href="{{ post.url }}"><time class="published" datetime="2015-10-20">{{ post.title }} {{ post.author }}({{ post.date | date: "%Y-%m-%d" }})</time></a>
 									  	{% endfor %}
 										<!--<a href="#" class="author"><img src="/images/avatar.jpg" alt="" /></a>-->
 									</header>
 								</article>
 								
-								
-								
-								
 								<!-- Mini Post -->
 								<article class="mini-post">
 									<header>
-										<h3><a href="/category/pilot">?? ({{ site.categories.pilot.size }})</a></h3>
-										
-										{% for post in site.categories.pilot limit:3 %}
-										<a href="/{{ post.url }}"><time class="published" datetime="2015-10-20">{{ post.title }} {{ post.author }}({{ post.date | date: "%Y-%m-%d" }})</time></a>
+										<h3><a href="/category/pilot">ZUMINTERNET ({{ site.categories.zuminternet.size }})</a></h3>
+										{% for post in site.categories.zuminternet limit:3 %}
+										<a href="{{ post.url }}"><time class="published" datetime="2015-10-20">{{ post.title }} {{ post.author }}({{ post.date | date: "%Y-%m-%d" }})</time></a>
 									  	{% endfor %}
 										
 										<!--<a href="#" class="author"><img src="/images/avatar.jpg" alt="" /></a>-->
@@ -227,7 +220,7 @@
 										<h3><a href="/category/pilot">ETC ({{ site.categories.etc.size }})</a></h3>
 										
 										{% for post in site.categories.etc limit:3 %}
-										<a href="/{{ post.url }}"><time class="published" datetime="2015-10-20">{{ post.title }} {{ post.author }}({{ post.date | date: "%Y-%m-%d" }})</time></a>
+										<a href="{{ post.url }}"><time class="published" datetime="2015-10-20">{{ post.title }} {{ post.author }}({{ post.date | date: "%Y-%m-%d" }})</time></a>
 									  	{% endfor %}
 										
 										<!--<a href="#" class="author"><img src="/images/avatar.jpg" alt="" /></a>-->
@@ -252,7 +245,7 @@
 											<h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
 											<time class="published" datetime="2015-10-20">{{ post.date | date: "%B %e, %Y" }} {{ post.author }}</time>
 										</header>
-										<a href="{{ site.baseurl }}{{ post.url }}" class="image"><img src="/images/pic08.jpg" alt="" /></a>
+										<a href="/{{ post.url }}" class="image"><img src="/images/pic08.jpg" alt="" /></a>
 									</article>
 								</li>
 								{% endfor %}
