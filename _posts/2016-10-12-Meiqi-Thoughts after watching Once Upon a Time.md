@@ -19,6 +19,7 @@ I watched the snow white one, and it made me thinking, is there really something
 
 ## Thoughts after watching Once Upon a Time
 *Thoughts here may be hard to follow, but I'll explain it as details as I can.*
+
 Once upon a time I heard a theory about "history coming again and again"; which means histories are not the past, and it's never gonna past, it's going to be back. For instance, you may have this kind of experince before: A scene, a situation, an event, a place you have never been to and never experienced before, seems very familiar to you, and you feel like you have really experienced it and you even know what is going to happen the next. Right? I think most of people have this kind of experience in their lives. But how did it come up? A theory says that is because you experienced what you have experienced again. 
 I know it's a little bit hard to understand, but see like this - the world we are living in is a plane, there are few more or may be tons more planes, for example, we are living in 21st century, and  what we can see and what we are experiencing on this world is happening on 21st century; but maybe in parallel space, histories are never gone, in some other spaces, 6th century is still exist, the Great Alexander is still conquering the Europe...
 
