@@ -5,6 +5,7 @@ tags: [culture, old blog]
 keywords: [mafia, Japanese, yakuza, Al Capone, soup kitchen, Great Depression]
 excerpt: From The Daily Beast&#58; The worst of times sometimes brings out the best in people, even in Japan’s “losers” a.k.a. the Japanese mafia, the yakuza.
 image: /images/acoffee.jpg
+thumbnail: true
 ---
 
 From [The Daily Beast](http://www.thedailybeast.com/blogs-and-stories/2011-03-18/japanese-yakuza-aid-earthquake-relief-efforts/):

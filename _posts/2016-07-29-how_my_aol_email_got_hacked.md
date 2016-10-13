@@ -4,6 +4,7 @@ title: How My AOL Email Got Hacked
 tags: [culture]
 keywords: [aol, social engineering, hacking, crime]
 image: /images/aol.jpg
+thumbnail: true
 ---
 
 If hacking is mysterious to you and something only the most elite hackers can do, this blog post might disappoint you.

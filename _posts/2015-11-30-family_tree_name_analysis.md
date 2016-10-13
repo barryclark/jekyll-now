@@ -7,6 +7,7 @@ javascripts: [/js/d3.min.js, /js/d3.layout.cloud.js]
 csses: [/css/names.css]
 excerpt: First name &amp; last name frequencies.
 image: /images/names.jpg
+thumbnail: true
 ---
 
 ## First-name frequency

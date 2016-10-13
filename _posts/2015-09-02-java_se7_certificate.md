@@ -3,6 +3,7 @@ layout: post
 title: Oracle Certified Associate, Java SE 7 Programmer
 tags: [java, oracle, certificate]
 image: /images/hendrix_oracle_certified_associate_java_se_7_programmer_logo_large.png
+thumbnail: true
 ---
 
 So at my midpoint review for this year, my boss wanted me to get some kind of certificate.

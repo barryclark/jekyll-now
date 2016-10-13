@@ -4,6 +4,7 @@ title: The Chinese Trump Tie
 tags: [culture, politics]
 keywords: [Donald Trump, tie, libertarian, Gary Johnson, Jill Stein, china, chinese]
 image: /images/trump_tie.jpg
+thumbnail: true
 ---
 
 Jumping on the never Trump bandwagon.
