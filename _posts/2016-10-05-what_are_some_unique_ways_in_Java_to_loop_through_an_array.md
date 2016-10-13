@@ -4,6 +4,7 @@ title: What are some unique ways in Java to loop through an array?
 tags: [java, quora]
 keywords: [programming, list, array, loop, iterable, recursion, foreach]
 image: /images/Java_logo.jpg
+thumbnail: true
 excerpt: "Kenny Yu mentioned the standard ways to loop through an array. A unique way, I suppose, is to use recursion."
 ---
 
