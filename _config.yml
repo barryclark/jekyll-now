@@ -19,30 +19,16 @@ authors:
   wendell:
     name: Wendell Adriel
     gravatar: d36a082aacb53b6f76869748fb4b81d4
-    email: wendell@codeshare.com.br
+    email: wendelladriel.ti@gmail.com
     github: WendellAdriel
     linkedin: wendelladrielti/en
     facebook: wendell.adriel.7
     site: http://wendelladriel.github.io
-    bio: "Sou formado em Análise e Desenvolvimento de Sistemas, sou um Zend
-    Certified PHP Engineer e Scrum Fundamentals Certified. Atuo como Consultor
-    em desenvolvimento de aplicações Web com foco em PHP (aplicações Laravel) e
-    em Front-end (com foco em JavaScript). Ajudo na definição de processos,
-    arquitetura, ferramentas, etc. Também atuo desenvolvendo soluções e/ou
-    melhorando soluções existentes com foco na melhoria da qualidade do código
-    já desenvolvido, definições de padrões de desenvolvimento e testes e também
-    na melhoria na performance das aplicações. Também sou Criador e Tutor da
-    CodeShare e Professor da Webschool. Trabalho com desenvolvimento de sites e
-    softwares desde 2009 e sempre procuro me manter atualizado nas melhores
-    tecnologias e metodologias no desenvolvimento de softwares. Desde 2010 estou
-     focado no desenvolvimento Web e desde 2015 também estou focado no
-     desenvolvimento Mobile. Já fiz (e continuo fazendo) diversos cursos na área
-      de desenvolvimento e conheço diversas linguagens e tecnologias. Gosto muito
-      de trabalhar com desenvolvimento Front-End e Back-End. Minhas linguagens
-      Back-End preferidas são PHP, JavaScript, Ruby, Python e Java. No Front-End
-      meu foco é em JavaScript e seus Frameworks, mas gosto muito de trabalhar
-      com CSS (principalmente com o Pré-processador Stylus) e também com HTML
-      (principalmente com Jade)."
+    bio: "Criador da CodeShare, Desenvolvedor Full Stack, Zend Certified PHP Engineer,
+    Graduado em Análise e Desenvolvimento de Sistemas, Gamer, Baixista e baterista. Trabalho com desenvolvimento desktop
+    e web desde 2009 e com desenvolvimento mobile desde 2015. Gosto de sempre aprimorar e atualizar meus conhecimentos e
+    também trocar experiências e conhecimentos com os que estão à minha volta. Gosto de trabalhar com desenvolvimento
+    Front-end e Back-end. Trabalho com diversas tecnologias e você pode conferir a lista completa de minhas skills em meu site pessoal."
 
 # Build settings
 markdown: kramdown
