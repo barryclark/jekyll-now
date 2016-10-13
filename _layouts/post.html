@@ -3,28 +3,36 @@ layout: default
 ---
 
 <article class="post">
-  <h1>{{ page.title }}</h1>
-  <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}, {{ page.author }}
-  </div>
+  <header>
+  	<div class="title">
+  		<h2>{{ page.title }}</h2>
+  		<p>{{ page.subtitle }}</p><p></p>
+  	</div>
+  	<div class="meta">
+  		<time class="published" datetime="2015-11-01">{{ page.date | date: "%B %e, %Y" }}</time>
+  		<a href="/{{ page.nickname }}" class="author"><span class="name">{{ page.author }}</span><img src="/images/{{ page.nickname }}.png" alt="" width="44.8px" height="44.8px"></a>
+  	</div>
+	</header>
   
   <div class="entry">
     {{ content }}
   </div>
   
-  
-  <a href="/category/pilot" class="button small">{{ page.category }}</a>
-  {% for tag in page.tags %}
-  <a href="/blog/tag/" class="button small">{{ tag }}</a>
-  {% endfor %}
-  
-  <div class="fb-follow" data-href="https://www.facebook.com/sieunkr" data-layout="standard" data-size="large" data-show-faces="true"></div>
-  <br />
-  <br />
-  <div class="fb-like" data-href="https://zumdev.github.io{{ page.url }}" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+  <footer>
+		<ul class="actions">
+			<li><a href="javascript:history.back();" class="button small">BACK</a></li>
+		</ul>
+		<ul class="stats">
+				<li><a href="/category/{{ page.category }}" class="icon fa-heart">{{ page.category }}</a></li>
+				{% for tag in page.tags limit:3 %}
+				<li><a href="/blog/tag/" class="icon fa-comment">{{ tag }}</a></li>
+				{% endfor %}
+				<li><div class="fb-like" data-href="https://zumdev.github.io{{ page.url }}" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div></li>
+			</ul>
+	</footer>
   <!-- 페이스북 댓글 -->
   <div class="fb-comments" data-href="https://zumdev.github.io{{ page.url }}" data-numposts="5" data-width="100%"></div>
-  
+	
   {% include disqus.html %}
 </article>
 

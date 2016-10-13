@@ -1486,11 +1486,11 @@
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #2ebaae !important;
+			color: #092fed !important;
 		}
 
 			a:hover:before {
-				color: #2ebaae !important;
+				color: #092fed !important;
 			}
 
 	strong, b {
@@ -1727,8 +1727,8 @@
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			box-shadow: inset 0 0 0 1px #2ebaae;
-			color: #2ebaae !important;
+			box-shadow: inset 0 0 0 1px #092fed;
+			color: #092fed !important;
 		}
 
 			input[type="submit"]:hover:active,
@@ -3405,7 +3405,7 @@
 					}
 
 					#menu .links > li a:hover h3 {
-						color: #2ebaae;
+						color: #092fed;
 					}
 
 				#menu .links > li:first-child {
