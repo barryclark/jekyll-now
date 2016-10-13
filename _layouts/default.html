@@ -72,19 +72,31 @@
 								</li>
 								<li>
 									<a href="/category/javascript">
-										<h3>JAVASCRIPT ({{ site.categories.javascript.size }})</h3>
+										<h3>STUDY ({{ site.categories.study.size }})</h3>
 										<p>test</p>
 									</a>
 								</li>
 								<li>
 									<a href="/category/java">
-										<h3>JAVA ({{ site.categories.java.size }})</h3>
+										<h3>TOOLS ({{ site.categories.tools.size }})</h3>
 										<p>111</p>
 									</a>
 								</li>
 								<li>
 									<a href="/category/tools">
-										<h3>TOOLS ({{ site.categories.tools.size }})</h3>
+										<h3>??? ({{ site.categories.tools.size }})</h3>
+										<p>ddddd</p>
+									</a>
+								</li>
+								<li>
+									<a href="/category/tools">
+										<h3>??? ({{ site.categories.tools.size }})</h3>
+										<p>ddddd</p>
+									</a>
+								</li>
+								<li>
+									<a href="/category/tools">
+										<h3>ETC ({{ site.categories.etc.size }})</h3>
 										<p>ddddd</p>
 									</a>
 								</li>
@@ -107,12 +119,12 @@
 				  		{{ content }}
 
 						<!-- Pagination -->
-						<!--  
+						  
 						<ul class="actions pagination">
 							<li><a href="" class="disabled button big previous">Previous Page</a></li>
 							<li><a href="#" class="button big next">Next Page</a></li>
 						</ul>
-	        			-->
+	        			
 
 
 					</div>
@@ -122,16 +134,16 @@
 
 						<!-- Intro -->
 						<section id="intro">
-						  <img src="/images/zum_logo.png" alt="" />
+						    <!--
+						    <img src="/images/company_01.gif" alt="" />
 							
-							<!--
 							<a href="#" class="logo">
 							  <img src="/images/logo.jpg" alt="" />
 							</a>
 							-->
 							<header>
 								<h2>줌인터넷</h2>
-								<p>포털개발팀 기술블로그</a></p>
+								<p>포털개발팀 블로그</a></p>
 							</header>
 						</section>
 
@@ -155,31 +167,19 @@
 										
 										<!--<a href="#" class="author"><img src="/images/avatar.jpg" alt="" /></a>-->
 									</header>
-									<a href="/category/pilot" class="image"><img src="/images/pic04.jpg" alt="" /></a>
+									<!--<a href="/category/pilot" class="image"><img src="/images/btn_left_pilot.png" alt="" /></a>-->
 								</article>
 
 								<!-- Mini Post -->
 								<article class="mini-post">
 									<header>
-										<h3><a href="/category/javascript">JAVASCRIPT ({{ site.categories.javascript.size }})</a></h3>
-										{% for post in site.categories.javascript limit:3 %}
+										<h3><a href="/category/study">STUDY ({{ site.categories.study.size }})</a></h3>
+										{% for post in site.categories.study limit:3 %}
 										<a href="/{{ post.url }}"><time class="published" datetime="2015-10-20">{{ post.title }} {{ post.author }}({{ post.date | date: "%Y-%m-%d" }})</time></a>
 									  	{% endfor %}
 										<!--<a href="#" class="author"><img src="/images/avatar.jpg" alt="" /></a>-->
 									</header>
-									<a href="/category/javascript" class="image"><img src="/images/pic05.jpg" alt="" /></a>
-								</article>
-
-								<!-- Mini Post -->
-								<article class="mini-post">
-									<header>
-										<h3><a href="/category/java">JAVA ({{ site.categories.java.size }})</a></h3>
-										{% for post in site.categories.java limit:3 %}
-										<a href="/{{ post.url }}"><time class="published" datetime="2015-10-20">{{ post.title }} {{ post.author }}({{ post.date | date: "%Y-%m-%d" }})</time></a>
-									  	{% endfor %}
-										<!--<a href="#" class="author"><img src="/images/avatar.jpg" alt="" /></a>-->
-									</header>
-									<a href="/category/java" class="image"><img src="/images/pic06.jpg" alt="" /></a>
+									<!--<a href="/category/study" class="image"><img src="/images/btn_left_study.png" alt="" /></a>-->
 								</article>
 								
 								<!-- Mini Post -->
@@ -191,11 +191,48 @@
 									  	{% endfor %}
 										<!--<a href="#" class="author"><img src="/images/avatar.jpg" alt="" /></a>-->
 									</header>
-									<a href="/category/tools" class="image"><img src="/images/pic07.jpg" alt="" /></a>
+								</article>
+
+								
+								<!-- Mini Post -->
+								<article class="mini-post">
+									<header>
+										<h3><a href="/category/java">?? ({{ site.categories.java.size }})</a></h3>
+										{% for post in site.categories.java limit:3 %}
+										<a href="/{{ post.url }}"><time class="published" datetime="2015-10-20">{{ post.title }} {{ post.author }}({{ post.date | date: "%Y-%m-%d" }})</time></a>
+									  	{% endfor %}
+										<!--<a href="#" class="author"><img src="/images/avatar.jpg" alt="" /></a>-->
+									</header>
 								</article>
 								
 								
 								
+								
+								<!-- Mini Post -->
+								<article class="mini-post">
+									<header>
+										<h3><a href="/category/pilot">?? ({{ site.categories.pilot.size }})</a></h3>
+										
+										{% for post in site.categories.pilot limit:3 %}
+										<a href="/{{ post.url }}"><time class="published" datetime="2015-10-20">{{ post.title }} {{ post.author }}({{ post.date | date: "%Y-%m-%d" }})</time></a>
+									  	{% endfor %}
+										
+										<!--<a href="#" class="author"><img src="/images/avatar.jpg" alt="" /></a>-->
+									</header>
+								</article>
+								
+								<!-- Mini Post -->
+								<article class="mini-post">
+									<header>
+										<h3><a href="/category/pilot">ETC ({{ site.categories.etc.size }})</a></h3>
+										
+										{% for post in site.categories.etc limit:3 %}
+										<a href="/{{ post.url }}"><time class="published" datetime="2015-10-20">{{ post.title }} {{ post.author }}({{ post.date | date: "%Y-%m-%d" }})</time></a>
+									  	{% endfor %}
+										
+										<!--<a href="#" class="author"><img src="/images/avatar.jpg" alt="" /></a>-->
+									</header>
+								</article>
 								
 								
 								
@@ -206,9 +243,7 @@
 						<!-- Posts List -->
 						<section>
 							
-							
 							<h2>Recent Posts</h2>
-							
 							<ul class="posts">
 								{% for post in site.posts limit:10 %}
 								<li>
@@ -222,15 +257,9 @@
 								</li>
 								{% endfor %}
 							</ul>
-							
-							
-							
-							
-							
-							
-							
 						</section>
-
+						
+						
 						<!-- About -->
 						<section class="blurb">
 							<h2>About</h2>

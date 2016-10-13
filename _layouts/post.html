@@ -13,8 +13,12 @@ layout: default
   </div>
   
   
-  <div class="fb-follow" data-href="https://www.facebook.com/sieunkr" data-layout="standard" data-size="large" data-show-faces="true"></div>
+  <a href="/category/pilot" class="button small">{{ page.category }}</a>
+  {% for tag in page.tags %}
+  <a href="/blog/tag/" class="button small">{{ tag }}</a>
+  {% endfor %}
   
+  <div class="fb-follow" data-href="https://www.facebook.com/sieunkr" data-layout="standard" data-size="large" data-show-faces="true"></div>
   <br />
   <br />
   <div class="fb-like" data-href="https://zumdev.github.io{{ page.url }}" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>

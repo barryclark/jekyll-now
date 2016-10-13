@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Categories - javascript
+title: Categories - study
 ---
 
 
 
 <div class="posts">
-  {% for post in site.categories.java %}
+  {% for post in site.categories.study %}
     
     <article class="post">
 		<header>
@@ -16,7 +16,7 @@ title: Categories - javascript
 			</div>
 			<div class="meta">
 				<time class="published" datetime="2015-11-01">{{ post.date | date: "%B %e, %Y" }}</time>
-				<a href="#" class="author"><span class="name">{{ post.author }}</span><img src="images/avatar.jpg" alt="" /></a>
+				<a href="/{{ post.nickname }}" class="author"><span class="name">{{ post.author }}</span><img src="/images/{{ post.nickname }}.png" alt="" width="44.8px" height="44.8px"/></a>
 			</div>
 		</header>
 		
@@ -27,14 +27,16 @@ title: Categories - javascript
 		<p>
 		  {{ post.excerpt }}
 		</p>
+		
 		<footer>
 			<ul class="actions">
 				<li><a href="{{ site.baseurl }}{{ post.url }}" class="button big">Continue Reading</a></li>
 			</ul>
 			<ul class="stats">
-				<li><a href="#">{{ post.author }}</a></li>
-				<li><a href="#" class="icon fa-heart">28</a></li>
-				<li><a href="#" class="icon fa-comment">128</a></li>
+				<li><a href="/category/{{ post.category }}" class="icon fa-heart">{{ post.category }}</a></li>
+				{% for tag in post.tags limit:3 %}
+				<li><a href="/blog/tag/" class="icon fa-comment">{{ tag }}</a></li>
+				{% endfor %}
 				<li><div class="fb-like" data-href="https://zumdev.github.io{{ post.url }}" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div></li>
 			</ul>
 		</footer>
