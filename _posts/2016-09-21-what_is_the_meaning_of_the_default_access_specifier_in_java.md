@@ -4,6 +4,7 @@ title: What is the meaning of the "default access specifier" in Java?
 tags: [java, quora]
 keywords: [programming, access specifier, default]
 image: /images/Java_logo.jpg
+thumbnail: true
 excerpt: "There are four access specifiers in Java: public, private, protected, and default. Three of them use their associated word, while default uses none."
 ---
 

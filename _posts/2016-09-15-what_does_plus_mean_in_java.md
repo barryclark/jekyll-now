@@ -4,6 +4,7 @@ title: What does "+" mean in Java?
 tags: [java, quora]
 keywords: [programming, plus, concatenate, string]
 image: /images/Java_logo.jpg
+thumbnail: true
 excerpt: When dealing with numbers, it adds them like you’d expect. When dealing with string, it concatenates them. That is, puts one after another into another string.
 ---
 
