@@ -42,7 +42,7 @@ published: true
       {{ content }}
     </div>  
     <!-- Pagination links -->
-{% if page.layout == "compress" %}
+{% if page.layout == "default" %}
 <div class="pagination">
   {% if paginator.previous_page %}
     <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
