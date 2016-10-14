@@ -47,7 +47,7 @@ Ribombee is the Evolution of Cutiefly. This Pokémon collects flower nectar and 
 
 There's been some new Alolan variation Pokémon announced, too. This time it's Alolan Grimer and Muk.
 
-![Grimer/Muk](/images/sunmoon/grimermuk.jpg){: .float-right}
+<img alt="Grimer/Muk" src="/images/sunmoon/grimermuk.jpg" width="300" style="float-right" />
 
 **Alolan Grimer**\\
 **Type: Poison-Dark**
