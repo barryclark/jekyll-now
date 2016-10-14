@@ -40,8 +40,8 @@ var social = {
 					}
 				}
 				
-				var c = array.reduce(function(total,current){return total + current.count;});
-				var s = array.reduce(function(total,current){return total + current.score;});
+				var c = array.reduce(function(total,current){return total + current.count;},0);
+				var s = array.reduce(function(total,current){return total + current.score;},0);
 				
 				callback({
 					items: array,
