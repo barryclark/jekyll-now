@@ -14,7 +14,11 @@ var social = {
 	facebook: {
 		process: function(url, callback) {
 			$.get("https://graph.facebook.com/",{id: url},function(response, status){
-				callback(response.share);
+				if(response.hasOwnProperty('share')) {
+					callback(response.share);
+				} else {
+					callback(0);
+				}
 			});
 		}
 	},
