@@ -1,7 +1,7 @@
 var social = {
 	linkedin: {
 		process: function(url, callback) {
-			$.get("https://graph.facebook.com/",{id: url},function(data, status){
+			$.get("https://www.linkedin.com/countserv/count/share",{id: url},function(data, status){
 				callback(data.count);
 			});
 		}
