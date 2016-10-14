@@ -13,7 +13,7 @@ var social = {
 		}
 	},
 	reddit: {
-		count: function(domain) {
+		process: function(domain, callback) {
 			$.get("https://api.reddit.com/domain/" + domain,function(data, status){
 				var results = data.data.children;
 				results.sort(function(a, b){return a.data.url.localeCompare(b.data.url)});
@@ -39,7 +39,12 @@ var social = {
 						old.count = old.count + 1;
 					}
 				}
-					
+				
+				callback({
+					items: array,
+					count: array.reduce(function(total,current){return total + current.count;}),
+					score: array.reduce(function(total,current){return total + current.score;})
+				});					
 			});
 		}
 	}
