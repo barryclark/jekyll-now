@@ -40,7 +40,7 @@ We set out to create some tools for us and others to use, should they find them 
 
 Whilst simple, the above two exporters helps us capture the metrics from the APIs and present them for scraping by the prometheus server. We can use these metrics to measure our contribution back to the community.
 
-Github fortunately has a simple, well documented API to retrieve the information you need. We made us of the Prometheus client libraries and some python to extract the data we needed from repositories and organisations.
+Fortunately, Github has a simple, well documented API to retrieve the information we needed. We made use of the Prometheus client libraries and some python to extract the data we needed from repositories and organisations.
 
 Docker Hub also has a API, unfortunately it's somewhat un-documented at this stage. Thanks to [@thebsdbox](https://twitter.com/thebsdbox?lang=en-gb) for a pointer in the right direction and we were away, again using a simple python script to collect the data and present it to Prometheus to scrape.
 
@@ -67,7 +67,7 @@ Secondly, we have an overview of our DockerHub activity, click [here]({{ site.ba
 
 ## What's next?
 
-This is very much a first step in the direction of what we hope can be achieved. We would like to compliment the data gathered with richer metrics, from more sources. How many Slack messages did we exchange today? How many cups of coffee did the team last month? The list is endless, but we've made a start. And of course, it's all open-source. We encourage you to get involved and improve upon what's there so far.
+This is very much a first step in the direction of what we hope can be achieved. We would like to complement the data gathered with richer metrics, from more sources. How many Slack messages did we exchange today? How many cups of coffee did the team last month? The list is endless, but we've made a start. And of course, it's all open-source. We encourage you to get involved and improve upon what's there so far.
 
 The exporters are linked above, the config used to deploy this and the exported Grafana dashboard are available [here](https://github.com/infinityworksltd/infin-eye)
 
