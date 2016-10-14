@@ -4,6 +4,13 @@ descrizione: 'Si svolgerà domenica 16 ottobre alle ore 21.00 ad Amatrice, press
 link: 'http://www.agi.it/regioni/lazio/2016/10/13/news/terremoto_amatrice_consiglio_comunale_su_fondi_sostegnio_reddito-1160530/'
 data: 14/10/2016
 </yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/802,183029509,2016-10-14 14:01:14,2016-10-14 11:42:39,Operazioni di smantellamento campo di Borgo (Arquata),42.775079,13.298379,"[""Accettato"", ""Telegram""]",,http://i.imgur.com/jA7xRec.jpg,"{""data"": ""14/10/2016"", ""descrizione"": ""Operazioni di smantellamento del campo di Borgo (Arquata) in corso. Ad oggi restano 5 residenti nella tendopoli."", ""immagine"": ""http://i.imgur.com/jA7xRec.jpg"", ""lat"": ""42.775079"", ""lon"": ""13.298379"", ""telegram_user"": """"}","<pre><yamldata>telegram_user: ''
+descrizione: 'Operazioni di smantellamento del campo di Borgo (Arquata) in corso. Ad oggi restano 5 residenti nella tendopoli.'
+immagine: 'http://i.imgur.com/jA7xRec.jpg'
+lat: '42.775079'
+lon: '13.298379'
+data: 14/10/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/801,182974140,2016-10-14 06:36:52,2016-10-14 06:36:11,Online il blog AmatriceVive.it,,,"[""Accettato"", ""Notizie Utili"", ""Pubblicare su FB"", ""Twitter""]",,,"{""data"": ""14/10/2016"", ""descrizione"": ""Nel blog http://www.amatricevive.it notizie sulla storia e la cultura di Amatrice e sulla sua ripresa turistico-commerciale dopo il terremoto del 24 agosto 2016."", ""link"": ""https://m.facebook.com/ComunediAmatrice/posts/1132985596780774"", ""titolo"": ""Online il blog AmatriceVive.it""}","<pre><yamldata>titolo: 'Online il blog AmatriceVive.it'
 descrizione: 'Nel blog http://www.amatricevive.it notizie sulla storia e la cultura di Amatrice e sulla sua ripresa turistico-commerciale dopo il terremoto del 24 agosto 2016.'
 link: 'https://m.facebook.com/ComunediAmatrice/posts/1132985596780774'
@@ -2898,16 +2905,6 @@ indirizzo: 'P.zza Arringo, 7 (AP)'
 lat: 42.85358
 lon: 13.57753
 link: 'http://www.comuneap.gov.it/home'
-data: 15/09/2016
-</yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/386,177137952,2016-09-15 10:09:36,2016-09-15 10:08:59,Protezione civile del Comune di Rieti,42.40919,12.85309,"[""Accettato"", ""Contatti"", ""Form""]",,,"{""data"": ""15/09/2016"", ""descrizione"": """", ""email"": """", ""indirizzo"": """", ""lat"": 42.40919, ""link"": ""http://www.comune.rieti.it/ambiente-protezione-civile-ufficioprotciv"", ""lon"": 12.85309, ""nome"": ""Protezione civile del Comune di Rieti"", ""tel"": ""3488856270 o 3386200349""}","<pre><yamldata>nome: 'Protezione civile del Comune di Rieti'
-tel: '3488856270 o 3386200349'
-email: ''
-descrizione: ''
-indirizzo: ''
-lat: 42.40919
-lon: 12.85309
-link: 'http://www.comune.rieti.it/ambiente-protezione-civile-ufficioprotciv'
 data: 15/09/2016
 </yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/386,177137952,2016-09-15 10:09:36,2016-09-15 10:08:59,Protezione civile del Comune di Rieti,42.40919,12.85309,"[""Accettato"", ""Contatti"", ""Form""]",,,"{""data"": ""15/09/2016"", ""descrizione"": """", ""email"": """", ""indirizzo"": """", ""lat"": 42.40919, ""link"": ""http://www.comune.rieti.it/ambiente-protezione-civile-ufficioprotciv"", ""lon"": 12.85309, ""nome"": ""Protezione civile del Comune di Rieti"", ""tel"": ""3488856270 o 3386200349""}","<pre><yamldata>nome: 'Protezione civile del Comune di Rieti'
