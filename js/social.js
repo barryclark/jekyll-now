@@ -5,9 +5,8 @@ var social = {
 			this.savedValues.push(data);
 		},
 		process: function(url, callback) {
-			this.usercallback = callback;
 			$.getScript("https://www.linkedin.com/countserv/count/share?format=jsonp&callback=social.linkedin.callback&url=" + url, function() {
-				var data = this.savedValues.find(function(value){return value.url === url});
+				var data = social.linkedin.savedValues.find(function(value){return value.url === url});
 				callback(data);
 			});
 		}
