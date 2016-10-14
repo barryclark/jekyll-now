@@ -1,18 +1,23 @@
-{% capture page_url | strip_newlines | strip %}
+{% capture page_url %}
   {% if include.url %}
     {{ site.url }}{{ include.url }}
-  {% elsif page.facebook_post %}
-    {{ page.facebook_post }}
   {% else %}
     {{ site.url }}{{ page.url }}
   {% endif %}
 {% endcapture %}
+{% capture page_id %}
+  {% if include.url %}
+    {{ include.url }}
+  {% else %}
+    {{ page.url }}
+  {% endif %}
+{% endcapture %}
 {% capture url %}{{ page_url  | strip_newlines | strip | uri_escape }}{% endcapture %}
-{% capture id %}{{ include.url | replace: '/', '-' }}{% endcapture %}
+{% capture id %}{{ page_id | remove: '/' | replace: '_', '-' }}{% endcapture %}
 
 <script>
 $( document ).ready(function() {
-	social.facebook.count("{{ url | uri_escape }}", function(count) {
+	social.facebook.count("{{ url }}", function(count) {
 		$("#{{ id }} .facebook .count").append(intToString(count.share_count));
 	});
 });
