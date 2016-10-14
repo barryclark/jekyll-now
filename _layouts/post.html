@@ -6,7 +6,7 @@ javascripts: [/js/social.js, /js/seealso.js]
 ---
 
 <article class="post">
-  <h1 itemprop="headline">{% if page.facebook_post %}<i class="svg-icon facebook social_post"></i>{% elsif page.linkedin_post %}<i class="svg-icon linkedin social_post"></i>{% elsif page.tags contains 'family tree' %}<img src="/images/Family-Tree-icon-40.png" class="social_post" />{% elsif page.tags contains 'html5' %}<img src="/images/HTML5_Logo.svg" class="social_post" style="width: 40px; height: 40px;" />{% endif %}{{ page.title }}</h1>
+  <h1 itemprop="headline" class="post-header">{% if page.facebook_post %}<i class="svg-icon facebook social_post"></i>{% elsif page.linkedin_post %}<i class="svg-icon linkedin social_post"></i>{% elsif page.tags contains 'family tree' %}<img src="/images/Family-Tree-icon-40.png" class="social_post" />{% elsif page.tags contains 'html5' %}<img src="/images/HTML5_Logo.svg" class="social_post" style="width: 40px; height: 40px;" />{% endif %}{{ page.title }}</h1>
   
   {% include social/share.html %} 
 
