@@ -40,10 +40,13 @@ var social = {
 					}
 				}
 				
+				var c = array.reduce(function(total,current){return total + current.count;});
+				var s = array.reduce(function(total,current){return total + current.score;});
+				
 				callback({
 					items: array,
-					count: array.reduce(function(total,current){return total + current.count;}),
-					score: array.reduce(function(total,current){return total + current.score;})
+					count: c,
+					score: s
 				});					
 			});
 		}
