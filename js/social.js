@@ -1,11 +1,14 @@
 var social = {
 	linkedin: {
-		callback: function(data) {console.log("data");console.log(data);},
+		usercallback: undefined,
+		callback: function(data) {
+			if(typeof this.usercallback !== undefined) {
+				this.usercallback(data.count);
+			}
+		},
 		process: function(url, callback) {
-			$.getScript("https://www.linkedin.com/countserv/count/share?url=" + url + "&format=jsonp&callback=social.linkedin.callback", function(response,status) {
-				console.log("response");
-				console.log(response);
-			});
+			this.usercallback = callback;
+			$.getScript("https://www.linkedin.com/countserv/count/share?format=jsonp&callback=social.linkedin.callback&url=" + url);
 		}
 	},
 	facebook: {
