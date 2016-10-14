@@ -17,7 +17,7 @@
 
 <script>
 $( document ).ready(function() {
-	social.facebook.count("{{ url }}", function(count) {
+	social.facebook.process("{{ url }}", function(count) {
 		$("#{{ id }} .facebook .count").append(intToString(count.share_count));
 	});
 	
