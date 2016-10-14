@@ -3,7 +3,7 @@
   {% for post in posts %}<article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting" content="{{ site.name }}" class="post">
   <meta itemscope itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" itemid="{{ site.url }}{{ post.url }}" />
 
-    <h2 itemprop="headline" class="postHeader">
+    <h2 itemprop="headline" class="post-header">
         <a href="{{ post.url }}" itemprop="url">{% if post.facebook_post %}<i class="svg-icon facebook social_post"></i>{% elsif post.linkedin_post %}<i class="svg-icon linkedin social_post"></i>{% elsif post.tags contains 'family tree' %}<img src="/images/Family-Tree-icon-40.png" class="social_post" />{% elsif post.tags contains 'html5' %}<img src="/images/HTML5_Logo.svg" class="social_post" style="width: 40px; height: 40px;" />{% endif %}{{ post.title }}</a>
     </h2>
     {% include social/share.html url=post.url facebook_post=post.facebook_post %}
