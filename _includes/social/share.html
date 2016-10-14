@@ -1,4 +1,4 @@
-{% capture page_url | strip_newlines | remove: ' ' %}
+{% capture url | strip_newlines | strip %}
   {% if include.url %}
     {{ site.url }}{{ include.url }}
   {% elsif page.facebook_post %}
@@ -8,20 +8,40 @@
   {% endif %}
 {% endcapture %}
 
-<!-- LinkedIn Share -->
-<div>
-<script src="https://platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
-<script type="IN/Share" data-url="{{ page_url  | strip_newlines | strip }}" data-counter="right"></script>
-</div>
+<script>
+function intToString(integer) {
+	if(integer === 0) {
+		return "";
+	} else if(integer < 1000) {
+		return integer;
+	} else if(integer < 1000000) {
+	    return Math.round(integer / 1000) + "k";
+	} else {
+		return Math.round(integer / 1000000) + "m";
+	}
+}
 
-{% unless page.facebook_post or include.facebook_post %}<!-- Facebook Like & Share -->
-<div>
-  <div class="fb-like" 
-    data-href="{{ page_url | strip }}" 
-    data-layout="standard" 
-    data-action="like" 
-    data-share="true"
-    data-show-faces="true">
-  </div>
+  $( document ).ready(function() {
+    social.facebook.count("{{ url | uri_escape }}", function(count) {
+      $(".share.facebook .count").append(intToString(count.share_count));
+    });
+  });
+</script>
+
+<div class="share-block">
+<a href="https://www.facebook.com/sharer/sharer.php?u={{ url | uri_escape }}" target="_blank">
+	<div class="share facebook">facebook<span class="count"></span></div>
+</a>
+<a href="https://twitter.com/home?status={{ url | uri_escape }}" target="_blank">
+	<div class="share twitter">twitter<span class="count"></span></div>
+</a>
+<a href="https://www.linkedin.com/shareArticle?url={{ url | uri_escape }}" target="_blank">
+	<div class="share linkedin">LinkedIn<span class="count"></span></div>
+</a>
+<a href="http://www.reddit.com/submit?url={{ url | uri_escape }}" target="_blank">
+	<div class="share reddit">reddit<span class="count"></span></div>
+</a>
+<a href="http://www.stumbleupon.com/likecontent?url={{ url | uri_escape }}" target="_blank">
+	<div class="share stumbleupon">stumbleupon<span class="count"></span></div>
+</a>
 </div>
-{% endunless %}
