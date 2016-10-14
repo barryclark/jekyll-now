@@ -15,7 +15,7 @@ var social = {
 	reddit: {
 		domainJson: null,
 		setDomainJson: function(domain) {
-			$.get("https://api.reddit.com/domain/",{id: domain},function(data, status){
+			$.get("https://api.reddit.com/domain/" + domain,function(data, status){
 				domainJson = data;
 			});
 		}
