@@ -4,10 +4,12 @@
 
 .share {
 	display: inline-block;
+	width: 19%;
 }
 
 .share.facebook {
-
+	background-color: rgb(59, 89, 152);
+	color: fgb(255, 255, 255);
 }
 
 .share.twitter {
