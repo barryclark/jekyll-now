@@ -7,8 +7,16 @@ var social = {
 		  	}, function(response){});
 		},
 		count: function(url, callback) {
-			var ajax = $.get("https://graph.facebook.com/",{id: url},function(data, status){
+			$.get("https://graph.facebook.com/",{id: url},function(data, status){
 				callback(data.share);
+			});
+		}
+	},
+	reddit: {
+		domainJson: null,
+		setDomainJson: function(domain) {
+			$.get("https://api.reddit.com/domain/",{id: domain},function(data, status){
+				domainJson = data;
 			});
 		}
 	}
