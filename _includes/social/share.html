@@ -8,7 +8,7 @@
   {% endif %}
 {% endcapture %}
 {% capture url %}{{ page_url  | strip_newlines | strip | uri_escape }}{% endcapture %}
-{% capture id %}{{ page.url | replace: '/', '-' }}{% endcapture %}
+{% capture id %}{{ include.url | replace: '/', '-' }}{% endcapture %}
 
 <script>
 $( document ).ready(function() {
