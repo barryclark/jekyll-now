@@ -13,7 +13,7 @@ them some cool examples related to software popping up in unexpected places.
 You can take a quick look at [the slides]({{site.url}}/talks/2016_gymy.pdf), but unfortunately, they're only in Slovak.
 
 At the end, I presented my proof-of-concept idea of teaching a voluntary extra-curricular Intro to Computer Science course.
-I'll post more information about this later, if someone [signs up](https://goo.gl/forms/OsDEQGVMwZTZ1HZh2) :smiley:
+I'll post more information about this later, if someone [signs up](https://goo.gl/forms/OsDEQGVMwZTZ1HZh2) :)
 
-P.S.: Check out the talk I did [last year]({{site.url/Math-popularization-talk-at-gymy}}).
+P.S.: Check out the talk I did [last year]({{site.url}}/Math-popularization-talk-at-gymy/).
 
