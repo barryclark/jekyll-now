@@ -21,14 +21,23 @@ var social = {
 				var array = new Array();
 				
 				for(var i = 0; i < results.length; i++) {
-					var result = results[i];
+					var url = results[i].data.url;
+					var score = results[i].data.score;
 					
-					var value = {
-						url: result.data.url,
-						score: result.data.score
-					};
+					var old = array.find(function(v){return v.url === url});
 					
-					array.push(value);
+					if(typeof old === "undefined") {					
+						var value = {
+							url: result.data.url,
+							score: result.data.score,
+							count: 1
+						};
+
+						array.push(value);
+					} else {
+						old.score = old.score + score;
+						old.count = old.count + 1;
+					}
 				}
 					
 			});
