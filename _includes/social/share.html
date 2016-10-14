@@ -13,7 +13,7 @@
   {% endif %}
 {% endcapture %}
 {% capture url %}{{ page_url  | strip_newlines | strip | uri_escape }}{% endcapture %}
-{% capture id %}{{ page_id | remove: '/' | replace: '_', '-' }}{% endcapture %}
+{% capture id %}{{ page_id | remove: '/' | replace: '_', '-' | strip }}{% endcapture %}
 
 <script>
 $( document ).ready(function() {
