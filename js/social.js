@@ -51,7 +51,7 @@ var social = {
 }
 
 function intToString(integer) {
-	if(integer === 0) {
+	if(isNaN(integer) || integer <= 0) {
 		return "";
 	} else if(integer < 1000) {
 		return integer;
