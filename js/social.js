@@ -2,7 +2,7 @@ var social = {
 	linkedin: {
 		callback: function(data) {console.log("data");console.log(data);},
 		process: function(url, callback) {
-			$.getScript("https://www.linkedin.com/countserv/count/share?url=" + url + "&format=json&callback=social.linkedin.callback", function(response,status) {
+			$.getScript("https://www.linkedin.com/countserv/count/share?url=" + url + "&format=jsonp&callback=social.linkedin.callback", function(response,status) {
 				console.log("response");
 				console.log(response);
 			});
