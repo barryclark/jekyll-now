@@ -5,7 +5,7 @@ author: ed_marshall
 image: visual_header.jpeg
 ---
 
-Visualisation has always been a critical component of the services I've worked on. I beleive that visualising the services you run and the systems you manage, is a key part of engaging your teams and enabling them to buy into the services you provide. I'll likely explore this subject further in a future blog, for now though I'd like to talk about visualisation, in this instance of our digital footprint at Infinity Works.
+Visualisation has always been a critical component of the services I've worked on. I believe that visualising the services you run and the systems you manage, is a key part of engaging your teams and enabling them to buy into the services you provide. I'll likely explore this subject further in a future blog, for now though I'd like to talk about visualisation, in this instance of our digital footprint at Infinity Works.
 
 On a recent trip back to our head office in Leeds, I took a moment to observe the teams based there. They do an excellent job of visualising work in progress through physical kanban boards, they also do an excellent job of visualising the systems we manage and the key business metrics for those services. I say 'business metrics', what I mean are real-time metrics which quantify the quality and reliability of the services we provide, and how our customers are interacting with our products.
 
