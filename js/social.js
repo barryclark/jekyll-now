@@ -1,14 +1,14 @@
 var social = {
 	linkedin: {
 		process: function(url, callback) {
-			$.get("https://www.linkedin.com/countserv/count/share",{id: url},function(data, status){
+			$.get("https://www.linkedin.com/countserv/count/share",{format: "json", url: url},function(data, status){
 				callback(data.count);
 			});
 		}
 	},
 	facebook: {
 		process: function(url, callback) {
-			$.get("https://graph.facebook.com/",{format: "json", url: url},function(data, status){
+			$.get("https://graph.facebook.com/",{id: url},function(data, status){
 				callback(data.share);
 			});
 		}
