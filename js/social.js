@@ -15,9 +15,7 @@ var social = {
 	reddit: {
 		process: function(domain, callback) {
 			$.get("https://api.reddit.com/domain/" + domain,function(data, status){
-				var results = data.data.children;
-				results.sort(function(a, b){return a.data.url.localeCompare(b.data.url)});
-				
+				var results = data.data.children;				
 				var array = new Array();
 				
 				for(var i = 0; i < results.length; i++) {
@@ -39,14 +37,14 @@ var social = {
 						old.count = old.count + 1;
 					}
 				}
-				
-				var c = array.reduce(function(total,current){return total + current.count;},0);
-				var s = array.reduce(function(total,current){return total + current.score;},0);
-				
+								
 				callback({
 					items: array,
-					count: c,
-					score: s
+					count: array.reduce(function(total,current){return total + current.count;},0),
+					score: array.reduce(function(total,current){return total + current.score;},0),
+					find: function(url) {
+						return items.find(function(item){return item.url === url})
+					}
 				});					
 			});
 		}
