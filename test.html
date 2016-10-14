@@ -5,14 +5,12 @@ jquery: true
 permalink: /test/
 ---
 
-{% assign url = "http://hendrixjoseph.github.io/charting_the_snowball_method_of_paying_off_debts/" %}
+{% assign url = "http://www.google.com" %}
 
-<div id="comments"></div>
 <script>
   $( document ).ready(function() {
     social.facebook.count("{{ url | uri_escape }}", function(count) {
       $(".share.facebook .count").append(count.share_count);
-      $("#comments").append(count.comment_count);
     });
   });
 </script>
