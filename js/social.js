@@ -1,13 +1,14 @@
 var social = {
-	facebook: {
-		share: function(url) {
-			FB.ui({
-				method: 'share',
-				href: url
-		  	}, function(response){});
-		},
-		count: function(url, callback) {
+	linkedin: {
+		process: function(url, callback) {
 			$.get("https://graph.facebook.com/",{id: url},function(data, status){
+				callback(data.count);
+			});
+		}
+	},
+	facebook: {
+		process: function(url, callback) {
+			$.get("https://graph.facebook.com/",{format: "json", url: url},function(data, status){
 				callback(data.share);
 			});
 		}
