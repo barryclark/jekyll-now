@@ -21,4 +21,6 @@ Il nostro invito è quindi quello di usarlo per essere voi stessi a descrivere q
 
 Per imparare ad usare Mapillary rimandiamo al [nostro semplice wiki](https://github.com/emergenzeHack/terremotocentro/wiki/Istruzioni-per-usare-Mapillary).
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7-l07pf3XMs" frameborder="0" allowfullscreen></iframe>
+
 ![mapillary](http://pratosmart.teo-soft.com/wp-content/uploads/2016/02/mapillary.jpg)
