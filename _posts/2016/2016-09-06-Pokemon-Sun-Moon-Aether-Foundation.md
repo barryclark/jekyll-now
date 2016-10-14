@@ -4,6 +4,7 @@ title: "Pokémon Sun and Moon Aether Foundation, Differences, More Reveals"
 description: "Pokémon Sun or Moon are a bit different than previous titles in a big way. Also, more reveals!"
 category: video games
 featured: pokefinder.jpg
+amazonterm: "pokemon sun and moon"
 tags: [video games, pokemon, pokemon sun, pokemon moon, the pokemon company, gamefreak, nintendo]
 author: Rob Kalajian
 ---
