@@ -22,15 +22,15 @@ permalink: /test/
 	<div class="share facebook">facebook<span class="count"></span></div>
 </a>
 <a href="https://twitter.com/home?status={{ url | uri_escape }}">
-<div class="share twitter">twitter<span class="count"></span></div>
+	<div class="share twitter">twitter<span class="count"></span></div>
 </a>
-<a href="https://www.linkedin.com/shareArticle?url=rtfdffdsfdsdf{{ url | uri_escape }}">
-<div class="share linkedin">LinkedIn<span class="count"></span></div>
+<a href="https://www.linkedin.com/shareArticle?url={{ url | uri_escape }}">
+	<div class="share linkedin">LinkedIn<span class="count"></span></div>
 </a>
-<a href="{{ url | uri_escape }}">
-<div class="share reddit">reddit<span class="count"></span></div>
+<a href="http://www.reddit.com/submit?url={{ url | uri_escape }}">
+	<div class="share reddit">reddit<span class="count"></span></div>
 </a>
-<a href="{{ url | uri_escape }}">
-<div class="share stumbleupon">stumbleupon<span class="count"></span></div>
+<a href="http://www.stumbleupon.com/likecontent?url={{ url | uri_escape }}">
+	<div class="share stumbleupon">stumbleupon<span class="count"></span></div>
 </a>
 </div>
