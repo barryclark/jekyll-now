@@ -8,6 +8,10 @@
 	display: inline-block;
 	width: 19%;
 	padding-left: 0.5em;
+	
+	@include mobile {
+		padding-left: 0;
+	}
 }
 
 .share .count {
