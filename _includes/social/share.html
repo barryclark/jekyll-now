@@ -29,8 +29,8 @@ $( document ).ready(function() {
 		}
 	});
 	
-	social.linkedin.process("{{ url }}", function(count) {
-		$("#{{ id }} .linkedin .count").append(intToString(count));
+	social.linkedin.process("{{ url }}", function(result) {
+		$("#{{ id }} .linkedin .count").append(intToString(result.count));
 	});
 });
 </script>
