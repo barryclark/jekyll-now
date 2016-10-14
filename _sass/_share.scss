@@ -43,3 +43,9 @@
 	background-color: #EB4823;
 	color: #FFFFFF;
 }
+
+.mobile-hide {
+	@include mobile {
+		display: none;
+	}
+}
