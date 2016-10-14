@@ -24,7 +24,9 @@ $( document ).ready(function() {
 	social.reddit.process("hendrixjoseph.github.io", function(result) {
 		var c = result.find("{{ url }}");
 		
-		$("#{{ id }} .reddit .count").append(intToString(c.score));
+		if(typeof c !== "undefined") {		
+			$("#{{ id }} .reddit .count").append(intToString(c.score));
+		}
 	});
 });
 </script>
