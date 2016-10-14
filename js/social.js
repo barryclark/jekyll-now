@@ -13,10 +13,11 @@ var social = {
 		}
 	},
 	reddit: {
-		domainJson: null,
-		setDomainJson: function(domain) {
+		count: function(domain) {
 			$.get("https://api.reddit.com/domain/" + domain,function(data, status){
-				domainJson = data;
+				var result = data.data.children;
+				
+				
 			});
 		}
 	}
