@@ -10,16 +10,16 @@ permalink: /test/
 <script>
   $( document ).ready(function() {
     social.facebook.count("http://hendrixjoseph.github.io/charting_the_snowball_method_of_paying_off_debts/", function(count) {
-      $("#likes").append(count.share_count);
+      $(".share.facebook .count").append(count.share_count);
       $("#comments").append(count.comment_count);
     });
   });
 </script>
 
 <div class="share-block">
-<div class="share facebook">facebook</div>
-<div class="share twitter">twitter</div>
-<div class="share linkedin">LinkedIn</div>
-<div class="share reddit">reddit</div>
-<div class="share stumbleupon">stumbleupon</div>
+<div class="share facebook">facebook<span class="count"></span></div>
+<div class="share twitter">twitter<span class="count"></span></div>
+<div class="share linkedin">LinkedIn<span class="count"></span></div>
+<div class="share reddit">reddit<span class="count"></span></div>
+<div class="share stumbleupon">stumbleupon<span class="count"></span></div>
 </div>
