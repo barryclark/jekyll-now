@@ -13,7 +13,7 @@
 			<strong>{{ page }}</strong>
 		{% elsif page == 1 %}
 			<a href="/">{{ page }}</a>
-		{% elseif page > 0 and page <= paginator.total_pages %}
+		{% elsif page > 0 and page <= paginator.total_pages %}
 			<a href="{{ site.paginate_path | replace: ':num', page }}/">{{ page }}</a>
 		{% endif %}
 	{% endfor %}
