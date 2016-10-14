@@ -28,6 +28,10 @@ $( document ).ready(function() {
 			$("#{{ id }} .reddit .count").append(intToString(c.score));
 		}
 	});
+	
+	social.linkedin.process("{{ url }}", function(count) {
+		$("#{{ id }} .linkedin .count").append(intToString(count));
+	});
 });
 </script>
 
