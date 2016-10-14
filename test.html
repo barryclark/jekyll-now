@@ -5,11 +5,12 @@ jquery: true
 permalink: /test/
 ---
 
-<div id="likes"></div>
+{% assign url = "http://hendrixjoseph.github.io/charting_the_snowball_method_of_paying_off_debts/" }
+
 <div id="comments"></div>
 <script>
   $( document ).ready(function() {
-    social.facebook.count("http://hendrixjoseph.github.io/charting_the_snowball_method_of_paying_off_debts/", function(count) {
+    social.facebook.count("{{ url | uri_escape }}", function(count) {
       $(".share.facebook .count").append(count.share_count);
       $("#comments").append(count.comment_count);
     });
@@ -17,9 +18,19 @@ permalink: /test/
 </script>
 
 <div class="share-block">
-<div class="share facebook">facebook<span class="count"></span></div>
+<a href="https://www.facebook.com/sharer/sharer.php?u={{ url | uri_escape }}">
+	<div class="share facebook">facebook<span class="count"></span></div>
+</a>
+<a href="https://twitter.com/home?status={{ url | uri_escape }}">
 <div class="share twitter">twitter<span class="count"></span></div>
+</a>
+<a href="https://www.linkedin.com/shareArticle?url=rtfdffdsfdsdf{{ url | uri_escape }}">
 <div class="share linkedin">LinkedIn<span class="count"></span></div>
+</a>
+<a href="{{ url | uri_escape }}">
 <div class="share reddit">reddit<span class="count"></span></div>
+</a>
+<a href="{{ url | uri_escape }}">
 <div class="share stumbleupon">stumbleupon<span class="count"></span></div>
+</a>
 </div>
