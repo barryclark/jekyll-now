@@ -1,22 +1,22 @@
 var social = {
 	linkedin: {
 		process: function(url, callback) {
-			$.get("https://www.linkedin.com/countserv/count/share",{format: "json", url: url},function(data, status){
-				callback(data.count);
+			$.getScript("https://www.linkedin.com/countserv/count/share?&format=json&callback=callback&url=" + url, function(response,status) {
+				console.log(response);
 			});
 		}
 	},
 	facebook: {
 		process: function(url, callback) {
-			$.get("https://graph.facebook.com/",{id: url},function(data, status){
-				callback(data.share);
+			$.get("https://graph.facebook.com/",{id: url},function(response, status){
+				callback(response.share);
 			});
 		}
 	},
 	reddit: {
 		process: function(domain, callback) {
-			$.get("https://api.reddit.com/domain/" + domain,function(data, status){
-				var results = data.data.children;				
+			$.get("https://api.reddit.com/domain/" + domain,function(response, status){
+				var results = response.data.children;				
 				var array = new Array();
 				
 				for(var i = 0; i < results.length; i++) {
