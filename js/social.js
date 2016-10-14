@@ -25,9 +25,3 @@ function intToString(integer) {
 		return Math.round(integer / 1000000) + "m";
 	}
 }
-
-$( document ).ready(function() {
-	social.facebook.count("{{ url | uri_escape }}", function(count) {
-		$(".share.facebook .count").append(intToString(count.share_count));
-	});
-});
