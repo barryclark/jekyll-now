@@ -28,8 +28,8 @@ var social = {
 					
 					if(typeof old === "undefined") {					
 						var value = {
-							url: result.data.url,
-							score: result.data.score,
+							url: url,
+							score: score,
 							count: 1
 						};
 
