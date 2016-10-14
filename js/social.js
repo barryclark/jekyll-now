@@ -43,7 +43,7 @@ var social = {
 					count: array.reduce(function(total,current){return total + current.count;},0),
 					score: array.reduce(function(total,current){return total + current.score;},0),
 					find: function(url) {
-						return items.find(function(item){return item.url === url})
+						return this.items.find(function(item){return item.url === url})
 					}
 				});					
 			});
