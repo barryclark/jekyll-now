@@ -59,7 +59,7 @@ As the population of the Alola region increased, dealing with garbage became a s
 
 Alolan Muk evolves from Alolan Grimer. The Muk in the Alola region produce and store their toxins within their bodies so, unlike Muk in other regions, you won’t detect any unpleasant aromas when you draw near one. Alolan Muk has the same poisonous crystals as Alolan Grimer, but they are all over the surface of its body. Alolan Muk uses them to attack, just like other Pokémon use their fangs or claws.
 
---
+---
 
 Last, but certainly not least, is the announcement of some new characters in the Pokémon world.
 
