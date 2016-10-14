@@ -38,6 +38,7 @@ nav {
         text-align: center;
         font-weight: 300;
         letter-spacing: 1px;
+	    
         @include mobile {
             margin: 0 10px;
             color: $blue;
@@ -156,6 +157,12 @@ h2.postHeader {
  	a {
     		color: inherit;
   	}
+}
+
+.post-header {
+	@include mobile {
+		text-align: center;	
+	}
 }
 
 .pagination {
