@@ -15,9 +15,22 @@ var social = {
 	reddit: {
 		count: function(domain) {
 			$.get("https://api.reddit.com/domain/" + domain,function(data, status){
-				var result = data.data.children;
+				var results = data.data.children;
+				results.sort(function(a, b){return a.data.url.localeCompare(b.data.url)});
 				
+				var array = new Array();
 				
+				for(var i = 0; i < results.length; i++) {
+					var result = results[i];
+					
+					var value = {
+						url: result.data.url,
+						score: result.data.score
+					};
+					
+					array.push(value);
+				}
+					
 			});
 		}
 	}
