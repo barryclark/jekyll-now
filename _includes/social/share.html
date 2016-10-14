@@ -22,9 +22,9 @@ $( document ).ready(function() {
 	});
 	
 	social.reddit.process("hendrixjoseph.github.io", function(result) {
-		var c = result.find(function(v){return v.url === "{{ url }}"});
+		var c = result.find("{{ url }}");
 		
-		$("#{{ id }} .reddit .count").append(intToString(c.count));
+		$("#{{ id }} .reddit .count").append(intToString(c.score));
 	});
 });
 </script>
