@@ -1,7 +1,8 @@
 var social = {
 	linkedin: {
+		callback: function(data) {console.log(data);},
 		process: function(url, callback) {
-			$.getScript("https://www.linkedin.com/countserv/count/share?&format=json&callback=callback&url=" + url, function(response,status) {
+			$.getScript("https://www.linkedin.com/countserv/count/share?&format=json&callback=social.linkedin.callback&url=" + url, function(response,status) {
 				console.log(response);
 			});
 		}
