@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+El mejor lugar. para encontrar los mejores precios en viajes.
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+En __ViajanGo__ queremos que viajes más. Es por ello que encontramos para tí los precios más bajos para viajar a los destinos más increíbles del planeta. 
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[mariana.soriano.licona@gmail.com](mailto:mariana.soriano.licona@gmail.com)
