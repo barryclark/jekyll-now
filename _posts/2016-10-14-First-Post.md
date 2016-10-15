@@ -3,8 +3,8 @@ layout: post
 title: This is my first Jekyll Blog!
 ---
 
-I just want to post in this blog in the fast and easy way. Now I don't understand much, but
-in the future it should be the best option for my business _config.yml file in the root of your repository (shown below).
+I just want to make a blog post in the fastest and easiest way. Now, I don't understand much, but
+in the future, it should be the best option for my business. _config.yml file in the root of your repository (shown below).
 
 ![_config.yml]({{ site.baseurl }}/images/config.png)
 
