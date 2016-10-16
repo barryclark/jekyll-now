@@ -4,7 +4,7 @@ title: Opendata
 permalink: /opendata/
 ---
 
-<p>In questa pagina saranno raccolti i link dinamici a tutti i dati a cui puoi accedere tramite TerremotoCentroItalia. Le licenze e i dettagli relativi le trovi in ogni dataset</p>
+<p>In questa pagina saranno raccolti i link a tutti i contenuti e tutti i dati a cui puoi accedere tramite TerremotoCentroItalia.</p>
 
 {: .table .table-striped #opendata}
 |Nome            |Dataset      |Licenza        |Link Licenza   |Fonte

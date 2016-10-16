@@ -31,13 +31,14 @@ navbar-links:
     - Alloggi: "alloggi/"
     - Vittime: "vittime/"
     - Link utili: "link_utili/"
-  Mappe: "mappe/"
+  Utilità:
+    - Mappe: "mappe/"
+    - Opendata: "opendata/"
   Vuoi donare?:
     - Raccolta Fondi: "fondi/"
     - Fabbisogni: "fabbisogni/"
   Il Progetto:
    - About: "about/"
-   - Opendata: "opendata/"
    - Contribuisci: 'https://github.com/emergenzeHack/terremotocentro/wiki" target="_blank'
    - Press: "press/"
    - Canali di Comunicazione: "canali/"
