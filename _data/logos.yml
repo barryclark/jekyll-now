@@ -31,18 +31,18 @@
   map: true
   link: 2016-08-29-risorse-openstreetmap
 - name: SEGNALA
-  logo: /img/icone/tci-segnala.png
+  logo: /img/icone/tci-segnala2.png
   map: false
   link: segnala
 - name: ALLOGGI
-  logo: /img/icone/tci-alloggi.png
+  logo: /img/icone/tci-alloggi2.png
   map: false
   link: alloggi
 - name: FABBISOGNI
-  logo: /img/icone/tci-fabbisogni.png
+  logo: /img/icone/tci-fabbisogni2.png
   map: false
   link: fabbisogni
 - name: ULTIM'ORA
-  logo: /img/icone/tci-news.png
+  logo: /img/icone/tci-news2.png
   map: false
   link: news
