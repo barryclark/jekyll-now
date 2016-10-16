@@ -6,7 +6,7 @@
 name: Martin di Martino-Marriott
 
 # Short bio or description (displayed in the header)
-description: Web Developer from Nottingham - HTML, SASS, Javascript Umbraco &amp; Wordpress
+description: Web Developer from Nottingham - HTML, SASS, Javascript, Umbraco &amp; Wordpress
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://avatars2.githubusercontent.com/u/7467069
@@ -17,11 +17,11 @@ avatar: https://avatars2.githubusercontent.com/u/7467069
 
 # Includes an icon in the footer for each username you enter
 footer-links:
-  dribbble: https://dribbble.com/martindm
+  dribbble: martindm
   email: martinonotts@gmail.com
   facebook:
-  flickr: https://www.flickr.com/photos/martinblueprint/
-  github: http://martindm/martindm.github.io
+  flickr: martinblueprint
+  github: martindm
   instagram: martinonotts
   linkedin:
   pinterest:

@@ -26,3 +26,8 @@ $titleFont: 'Montserrat', sans-serif;
     @content;
   }
 }
+
+.posts__meta--dets {
+  color: #ccc;
+  font-size: .8em;
+}
