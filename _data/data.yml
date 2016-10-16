@@ -118,14 +118,14 @@
   location_gr: Αγία Παρασκευή, Αττική, Ελλάδα
   location_en: Agia Paraskevi, Attica, Greece
 
-- company_gr: Order Optix
-  company_en: Order Optix
-  url: http://orderoptix.gr
-  category_gr: Φακοί επαφής
-  category_en: Contact lenses
-  location_gr: Πάτρα, Αχαΐα, Ελλάδα
-  location_en: Patras, Achaia, Greece
-  
+- company_gr: Oceancube
+  company_en: Oceancube
+  url: https://www.oceancube.gr/
+  category_gr: Web sites, e-shops, mobile apps
+  category_en: Web sites, e-shops, mobile apps
+  location_gr: Αττική, Ελλάδα
+  location_en: Αττική, Greece
+
 - company_gr: Pointer.gr
   company_en: Pointer.gr
   url: https://www.pointer.gr
