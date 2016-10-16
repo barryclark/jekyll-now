@@ -14,7 +14,8 @@ permalink: /teaching/
 
 ### Research Design and Methods for Psychology and Education
 
-* [2016 (Spring) Syllabus]({{ site.url }}/files/syllabi/EDP381C-2-10790-Research Design-2016S.pdf)
+* [2016 (Fall) Syllabus]({{ site.url }}/files/syllabi/EDP381C-2-10770-Research-Design-2016F.pdf)
+* [2016 (Spring) Syllabus]({{ site.url }}/files/syllabi/EDP381C-2-10790-Research-Design-2016S.pdf)
 * [2015 (Fall) Syllabus]({{ site.url }}/files/syllabi/EDP381C-2-10790-Research-Design-2015F.pdf)
 * [2015 (Spring) Syllabus]({{ site.url }}/files/syllabi/EDP384-10594-Research-Design-2015S.pdf)
 * [2014 (Fall) Syllabus]({{ site.url }}/files/syllabi/EDP384-10977-Research-Design-2014F.pdf)
