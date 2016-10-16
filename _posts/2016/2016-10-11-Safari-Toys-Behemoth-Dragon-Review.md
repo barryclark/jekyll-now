@@ -37,7 +37,7 @@ The Behemoth is a pretty stark contrast to the Dragon. It's shorter, squat, and 
 
 I've always loved to stuff Safari puts out. Seeing their wares in the store always brings back memories of trips to the New York Museum of Natural History gift shop or those of zoos and aquariums. These two figures sent over are both great and I hope to add much more from the dragon and mythical realms lines to my collection.
 
-Both the Behemoth and Crystal Cave Dragon are both well suited for play or collecting. Priced at $14.99 and $11.99 respectivly, they also won't break the bank.
+Both the Behemoth and Crystal Cave Dragon are both well suited for play or collecting. Priced at $14.99 and $11.99 respectively, they also won't break the bank.
 
 *A Behemoth and Crystal Cave Dragon were provided by Safari Toys for review.*
 
