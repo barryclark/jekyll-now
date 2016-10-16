@@ -4,37 +4,56 @@ title: Terremoto Centro Italia
 subtitle: Un progetto per informare sul terremoto del 24 Agosto 2016
 ---
 
-<div class="col-lg-12 col-md-12">
-  <div class="col-md-3 col-xs-12" style="margin-bottom: 5px">
-    <a href="{{ site.url }}/segnala/" class="btn btn-primary btn-lg btn-block">Segnala</a>
-  </div>
-  <div class="col-md-3 col-xs-12" style="margin-bottom: 5px">
-    <a href="{{ site.url }}/news/" class="btn btn-primary btn-lg btn-block">Ultim'ora</a>
-  </div>
-  <div class="col-md-3 col-xs-12" style="margin-bottom: 5px">
-    <a href="{{ site.url }}/alloggi/" class="btn btn-primary btn-lg btn-block">Alloggi</a>
-  </div>
-  <div class="col-md-3 col-xs-12" style="margin-bottom: 5px">
-    <a href="{{ site.url }}/fabbisogni" class="btn btn-primary btn-lg btn-block">Fabbisogni</a>
-  </div>
+<style>
+
+.homepage-categories,
+.theme-gallery {
+  text-align: justify;
+}
+
+/* allows last line of categories to be justify aligned */
+.homepage-categories:after,
+.theme-gallery:after {
+  display: inline-block;
+  width: 100%;
+  content: '';
+}
+
+.homepage-categories .thumbnail {
+  display: inline-block;
+  min-width: 120px;
+  text-align: center;
+  border: none;
+  padding: 10px;
+}
+
+.homepage-categories .thumbnail img {
+  height: 180px;
+}
+
+.homepage-categories a {
+  color: #000;
+}
+</style>
+
+
+<div class="homepage-categories">
+{% for category in site.data.logos %}
+  {% if category.map == false %}
+    {% capture logo_alt %}{{ category.name }}{% if category.logo_credit and category.logo_credit != empty %} logo by {{ category.logo_credit }}{% endif %}{% endcapture %}
+    <a href="{{ site.baseurl }}/{{ category.link | slugify }}" class="thumbnail" title="{{ logo_alt }}">
+      {% if category.logo and category.logo != empty %}
+        <img src="{{ site.baseurl }}{{ category.logo }}" alt="{{ logo_alt }}">
+      {% endif %}
+      {{ category.name }}
+    </a>
+  {% endif %}
+{% endfor %}
 </div>
 
 <hr class="col-lg-12">
 
-<p class="lead">Di seguito l'elenco delle segnalazioni raccolte ora per ora online dai volontari del progetto TerremotoCentroItalia.info. Usa il box per la ricerca per filtrarle, potrebbe essercene qualcuna di tuo interesse.</p>
-
-<div class="row">
-  <div id="filtri" class="col-lg-12 col-md-12">
-    <div class="btn-group col-md-6 col-xs-12" style="margin-bottom: 5px">
-      <a href="#Aperte" class="btn-block btn btn-danger btn-lg">Aperte</a>
-    </div>
-    <div class="brn-group col-md-6 col-xs-12" style="margin-bottom: 5px">
-      <a href="#Chiuse" class="btn-block btn btn-danger btn-lg">Chiuse</a>
-    </div>
-  </div>
-</div>
-
-<h3 id="Aperte">Segnalazioni Aperte</h3>
+<p class="lead">Di seguito l'elenco delle segnalazioni aperte raccolte dai volontari del progetto TerremotoCentroItalia.info. Usa il box per la ricerca per filtrarle, potrebbe essercene qualcuna di tuo interesse.</p>
 
 <div class="panel-group sieve">
 {% assign filteredissues = site.data.issuesjson | where: "state","open" %}
@@ -82,88 +101,6 @@ subtitle: Un progetto per informare sul terremoto del 24 Agosto 2016
 </div>
 {% endif %}
 {% endfor %}
-</div>
-
-<h3 id="Chiuse">Segnalazioni Chiuse</h3>
-
-<div class="panel-group sieve">
-{% assign filteredissues = site.data.issuesjson | where: "state","closed" %}
-{% for member in filteredissues %}
-{% if member.issue.labels contains "Bollettino" %}
-{% capture memberName %}{{member.issue.data.descrizione}}{% endcapture %}
-{% assign memberId = member.number %}
-{% capture memberUrl %}{{site.url}}/issues/{{member.number}}{% endcapture %}
-<div class="panel panel-info">
-<div class="panel-heading"><span class="anchor" id="{{memberId}}"></span>
-<a href="{{memberUrl}}">{{member.title}}</a>
-</div>
-<div class="panel-body">
-{% if member.issue.data.descrizione != blank %}
-<div class="row">
-<div class="col-md-12">{{member.issue.data.descrizione}}</div>
-</div>
-{% endif %}
-{% if member.issue.data.data != blank %}
-<div class="row">
-<div class="col-md-2"><b>Data: </b></div><div class="col-md-10">{{member.issue.data.data}}</div>
-</div>
-{% endif %}
-{% if member.issue.data.indirizzo != blank %}
-<div class="row">
-<div class="col-md-2"><b>Indirizzo: </b></div><div class="col-md-10">{{member.issue.data.indirizzo}}</div>
-</div>
-{% endif %}
-{% if member.issue.data.link != blank %}
-<div class="row">
-<div class="col-md-2"><b>Link: </b></div><div class="col-md-10"><a href="{{member.issue.data.link}}">{{member.issue.data.link}}</a></div>
-</div>
-{% endif %}
-</div>
-<div class="panel-footer">
-<ul class="share-buttons">
-  <li>Condividi:</li>
-  <li><a href="{{memberUrl}}" title="Copia link"><img alt="Copia link" src="/img/icone/link.png"></a></li>
-  <li><a href="https://www.facebook.com/sharer/sharer.php?u={{memberUrl | uri_escape}}&title={{memberName|truncate:70|uri_escape}} | {{ site.title }}" title="Condividi su Facebook" target="_blank"><img alt="Condividi su Facebook" src="/img/icone/Facebook.png"></a></li>
-  <li><a href="https://twitter.com/intent/tweet?url={{memberUrl |uri_escape}}&text={{memberName|truncate:50|uri_escape}}&via=terremotocentro&hashtags=terremotocentroitalia" target="_blank" title="Tweet"><img alt="Tweet" src="/img/icone/Twitter.png"></a></li>
- <li><a href="https://plus.google.com/share?url={{memberUrl |uri_escape}}" target="_blank" title="Condividi su Google+"><img alt="Condividi su Google+" src="/img/icone/Google+.png"></a></li>
- <li><a data-proofer-ignore href="mailto:?subject={{page.title}} | {{site.title}}&body={{memberName|uri_escape}}%20Clicca qui:%20{{memberUrl |uri_escape}}" title="Invia email"><img alt="Invia email" src="/img/icone/Email.png"></a></li>
-</ul>
-</div>
-</div>
-{% endif %}
-{% endfor %}
-</div>
-
-<div class="posts">
-  {% for post in site.posts %}
-    {% if post.categories contains 'bollettino' %}
-      <article class="post">
-        <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-        <div class="entry">
-          {{ post.excerpt }}
-        </div>
-
-        <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-      </article>
-    {% endif %}
-  {% endfor %}
-</div>
-
-<div class="posts">
-  {% for post in site.posts %}
-    {% if post.categories contains 'bollettino' %}
-      <article class="post">
-        <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-        <div class="entry">
-          {{ post.excerpt }}
-        </div>
-
-        <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-      </article>
-    {% endif %}
-  {% endfor %}
 </div>
 
 
