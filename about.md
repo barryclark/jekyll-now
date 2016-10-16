@@ -1,15 +1,19 @@
 ---
 layout: page
-title: About
+title: 關於我
 permalink: /about/
 ---
 
-Some information about you!
+就只是靜靜的宅著。
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+非本科出身碼農一枚，學歷不好看只有被慣老闆殺價的份，還被面試官說你後悔了齁。最近學了點Java，不知道能不能抗跌一些。
+吃貨，尤其愛吃肉類，但只要是人類的食物都吃，所以別再浪費時間問我吃不吃X這種問題。
+總有一天要攢夠錢離開這個鬼地方。日本看起來是個不錯的落腳處，隨然每個人都說日本人很悶，不過對同樣被批說很悶的我豈不剛好。
+雖然不是無神論，不過那種有個誰站出來演救世主然後頤指氣使說三道四的邪教只有被我唾棄的份，誰敢踩我地雷後果自負。
+對現世不抱任何希望，嚮往動漫中各種穿越到異世界的橋段，如果能轉生成萌妹子更好。
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[i@pingu.moe](mailto:i@pingu.moe)
