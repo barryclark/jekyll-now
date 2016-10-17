@@ -81,6 +81,7 @@ echo "Hello UCLA!;
 ```
 
 We should get an error output for incorrect syntax
+
 ```
 Parse error: parse error, expecting `"variable (T_VARIABLE)"' or `"${ (T_DOLLAR_OPEN_CURLY_BRACES)"' or `"{$ (T_CURLY_OPEN)"' in /Users/anadendla/Documents/Hack Nights/Facebook-Hack-Night/php-intro/first-program.php on line 9
 ```
