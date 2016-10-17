@@ -539,7 +539,8 @@ php composer-setup.php
 php -r "unlink('composer-setup.php');"
 ```
 
-These terminal commands will do the following
+These terminal commands will do the following:
+
 * Download the installer to the current directory
 * Verify the installer SHA-384 which you can also cross-check here
 * Run the installer
