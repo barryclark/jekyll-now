@@ -1,6 +1,6 @@
 ---
 2	layout: post
-3	title: "Study of Race Transitions in Classic Media: Final Project"
+3	title: Study of Racial Representation in Classic Media
 4	author: rbrooks6
 5	---
 
