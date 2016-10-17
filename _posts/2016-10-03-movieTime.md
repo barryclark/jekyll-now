@@ -5,7 +5,7 @@ author: rsjudka
 ---
 
 
-###Welcome to Fairytale Land
+### Welcome to Fairytale Land
 
 
 To be honest, I felt like association networks were just a waste of time. While practicing making them while watching the first episode of Once Upon a Time (a TV series I'm really hooked on at the moment) it felt like it was just a bunch of random connections and a bunch of useless data that really had no context. However. By looking into this concept of "character association" a bit more in detail, I started to kind of get a feeling of the applications for it (also the question prompts given to my by my professor helped in that too). Just by looking at a character map, you can see which characters are the ones driving the action, kind of get an understanding of the relations of characters and who seems related to the plot. And, in the specific case of Once Upon a Time, you can see the constant switches between the real world and the fairytale land.
