@@ -9,6 +9,13 @@ descrizione: 'In programma Domenica 16 ottobre ad Arquata del Tronto il primo in
 link: 'https://www.facebook.com/events/511371879059589'
 data: 15/10/2016
 </yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/808,183202193,2016-10-17 06:37:11,2016-10-15 10:31:39,Foto della nuova scuola in costruzione ad #ArquatadelTronto,42.777181,13.294143,"[""Accettato"", ""Bollettino"", ""Notizie Utili"", ""Telegram""]",,http://i.imgur.com/zpbU4PV.jpg,"{""data"": ""15/10/2016"", ""descrizione"": ""Ad Arquata del Tronto lavori in corso per la costruzione della nuova scuola."", ""immagine"": ""http://i.imgur.com/zpbU4PV.jpg"", ""lat"": ""42.777181"", ""lon"": ""13.294143"", ""telegram_user"": ""chiccap""}","<pre><yamldata>telegram_user: chiccap
+descrizione: 'Ad Arquata del Tronto lavori in corso per la costruzione della nuova scuola.'
+immagine: 'http://i.imgur.com/zpbU4PV.jpg'
+lat: '42.777181'
+lon: '13.294143'
+data: 15/10/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/805,183198172,2016-10-15 08:56:29,2016-10-15 08:54:32,Pro Loco #Arquatadeltronto:  un sito per sostenere la ripresa dei produttori e dell'economia locale,,,"[""Accettato"", ""acquisto solidale"", ""Bollettino"", ""Facebook"", ""Notizie Utili""]",,,"{""data"": ""15/10/2016"", ""descrizione"": ""Sul nuovo sito della Pro Loco Arquata del Tronto dove \u00e8 possibile anche sostenere le attivit\u00e0 produttive della zona"", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1783214901946093/"", ""titolo"": ""Pro Loco #Arquatadeltronto:  in sito per sostenere la ripresa dei produttori e dell'conomia locale""}","<pre><yamldata>titolo: 'Pro Loco #Arquatadeltronto:  in sito per sostenere la ripresa dei produttori e dell''conomia locale'
 descrizione: 'Sul nuovo sito della Pro Loco Arquata del Tronto dove è possibile anche sostenere le attività produttive della zona'
 link: 'https://www.facebook.com/groups/1758670357733881/permalink/1783214901946093/'
@@ -4992,17 +4999,6 @@ bic: ''
 postale: ''
 causale: ''
 link: 'http://www.comune.amatrice.rieti.it/codice-iban-del-comune-di-amatrice/'
-email: ''
-data: 13/09/2016
-</yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/178,176753997,2016-09-13 21:25:30,2016-09-13 21:25:00,Cisom - Corpo Italiano Soccorso Ordine di Malta,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": ""UNCRITMM"", ""causale"": """", ""chi"": ""Cisom - Corpo Italiano Soccorso Ordine di Malta"", ""data"": ""13/09/2016"", ""descrizione"": """", ""email"": """", ""iban"": ""IT50E 02008 05074 000103744409"", ""intestazione"": ""Fondazione Corpo italiano di soccorso dell'Ordine di Malta"", ""link"": ""http://www.cisom.org/le-nostre-news-da/direzione-nazionale/297-terremoto-in-italia.html"", ""postale"": """"}","<pre><yamldata>chi: 'Cisom - Corpo Italiano Soccorso Ordine di Malta'
-descrizione: ''
-intestazione: 'Fondazione Corpo italiano di soccorso dell''Ordine di Malta'
-iban: 'IT50E 02008 05074 000103744409'
-bic: UNCRITMM
-postale: ''
-causale: ''
-link: 'http://www.cisom.org/le-nostre-news-da/direzione-nazionale/297-terremoto-in-italia.html'
 email: ''
 data: 13/09/2016
 </yamldata></pre>",open
