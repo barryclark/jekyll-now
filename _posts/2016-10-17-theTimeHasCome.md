@@ -1,8 +1,7 @@
 ---
 layout: post
 title: The Time Has Come
-author1: rsjudka
-author2: Red
+author: rsjudka and Red
 ---
 
 
