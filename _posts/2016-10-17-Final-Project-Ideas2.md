@@ -5,16 +5,16 @@ author: dslezak
 published: true
 ---
 
-I already did a post on final project ideas but it was not in the correct format with topic, question, and significance. 
+I already did a post on final project ideas but it was not in the correct format with a topic, question, and significance. 
 
 Final Project Idea 1:
 Topic: Splatter Art
 Question: What are quantifiable features of splatter art?
 Significance: What does it mean to be splatter art and how can quantifiable features be used to spot splatter art?
 
-Splatter art was created by Jackson Pollock. He would use his entire range of motion to create art, which is going to be a challenge to quantify. There were two reasons that drew me towards splatter art. The first one is that I would like to practice some of my coding skills, and in both of the coding classes I took we had to manipulate a picture. So I feel like this would be within my skill range. The other reason is that during the discussions in class, it seemed that part of digital humanities was quantifying humanities/media that normally is not quantified such as the amount of white space in a book, or the amount of action verbs for each gender. In art classes I have taken, I have heard details about an artist's style, background, perspective, etc. But I have never heard an artist be described by how much of a certain color they use or where they put that color. 
+Splatter art was created by Jackson Pollock. He would use his entire range of motion to create art, which is going to be a challenge to quantify. There were two reasons that drew me towards splatter art. The first one is that I would like to practice some of my coding skills. In both of the coding classes I took we had to manipulate a picture, so I feel like this would be within my skill range. The other reason is that during the discussions in class, it seemed that part of digital humanities was quantifying humanities/media that normally are not quantified such as the amount of white space in a book, or the amount of action verbs for each gender. In art classes I have taken, I have heard details about an artist's style, background, perspective, etc. But I have never heard an artist be described by how much of a certain color they use or where they put that color. 
 
-For the artifact I would like to create a picture with the average of the average color per position for someone like Jackson Pollock. Though it might just create a black picture, so I might need a different artifact. 
+For the artifact I would like to create a picture with the average color per position for someone like Jackson Pollock. Though it might just create a black picture, so I might need a different artifact. 
 
 Final Project Idea 2:
 Topic: Twitch Chat
