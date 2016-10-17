@@ -11,4 +11,6 @@ permalink: /working_papers/
 
 ### Single-case research
 
-* Pustejovsky (2015). Procedural sensitivities of the non-overlap effect sizes for single-case designs. [[pdf (Nov, 2015)]({{ site.url }}/files/Pustejovsky-2015-Nov-Non-overlap-measures.pdf)] [[Supplementary materials]({{ site.url }}/files/Pustejovsky-2015-Nov-Non-overlap-measures-Supplementary-materials.pdf)]
+* Pustejovsky, J.E. (2016). Procedural sensitivities of effect sizes for single-case designs with behavioral outcome measures.
+    * [[pdf (Oct, 2016)](https://osf.io/pxn24/)] [[Supplementary materials](https://osf.io/hkzsm/)] [[Source code](https://osf.io/j4gvt/)] [[Interactive graphics](https://jepusto.shinyapps.io/SCD-effect-size-sensitivities/)]
+    * [[pdf (Nov, 2015)]({{ site.url }}/files/Pustejovsky-2015-Nov-Non-overlap-measures.pdf)] [[Supplementary materials]({{ site.url }}/files/Pustejovsky-2015-Nov-Non-overlap-measures-Supplementary-materials.pdf)]
