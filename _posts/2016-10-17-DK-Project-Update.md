@@ -32,5 +32,6 @@ to further develop my research project. I have to continue working on researchin
 video, commentate over my findings, edit the clips, conduct sound editting, and complete the video artifact.
 
 Works Cited:
+
 Rhee, Kyung Yong, and Wang-Bae Kim. "The Adoption and Use of the Internet in South Korea." Wiley Online Library. John Wiley & Sons, 
 Inc., July 2004. Web. Oct. 2016. <http://onlinelibrary.wiley.com/doi/10.1111/j.1083-6101.2004.tb00299.x/full>.
