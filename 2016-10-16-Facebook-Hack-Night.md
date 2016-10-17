@@ -511,6 +511,7 @@ Now let’s go to your desktop, or any place that you would like in your compute
 Let’s add a file called index.php and a file called php.ini.
 
 index.php
+
 ```php
 <!DOCTYPE html>
 <html>
@@ -521,6 +522,7 @@ index.php
 ```
 
 php.ini
+
 ```php
 display_errors = on
 display_startup_errors = on
@@ -536,6 +538,7 @@ php -r "if (hash_file('SHA384', 'composer-setup.php') === 'e115a8dc7871f15d85314
 php composer-setup.php
 php -r "unlink('composer-setup.php');"
 ```
+
 These terminal commands will do the following
 * Download the installer to the current directory
 * Verify the installer SHA-384 which you can also cross-check here
@@ -544,6 +547,7 @@ These terminal commands will do the following
 
 Now let’s add a file to manage our packages
 composer.json
+
 ```
 {
   "require" : {
@@ -570,6 +574,7 @@ At this point your [Source Code](https://github.com/AkhilNadendla/Facebook-Hack-
 Let’s create three new files, one called login.php that will set up the login button, one called fb-callback that will handle the authentication, and another file events.php that we will redirect to.
 
 But let’s update index.php 
+
 ```php
 <?php
     date_default_timezone_set('UTC');
@@ -613,6 +618,7 @@ Create a login.php, which will display the login button and redirect all button 
 ```
 
 Now let's create a fb-callback.php file that will generate the login session, and store the access token before redirecting to the events.php file
+
 ```php
 <?php
   date_default_timezone_set('UTC');
@@ -664,6 +670,7 @@ Now let's create a fb-callback.php file that will generate the login session, an
 ```
 
 Finally let's create a mostly empty events.php file that we will land on when our authentication is done.
+
 ```php
 <!DOCTYPE html>
 <html>
@@ -682,6 +689,7 @@ At this point your [Source Code](https://github.com/AkhilNadendla/Facebook-Hack-
 ### Stage 3: Stage 3: Setting up our profile 
 
 Let's do a basic update of index.php
+
 ```php
 <?php
     date_default_timezone_set('UTC');
@@ -698,6 +706,7 @@ Let's do a basic update of index.php
 ```
 
 Next let's update events.php, by including a grab-profile.php file that we will add next, as well as by adding session information (which is needed on any page we use the facebook sdk).
+
 ```php
 <?php
     date_default_timezone_set('UTC');
@@ -713,6 +722,7 @@ Next let's update events.php, by including a grab-profile.php file that we will 
 ```
 
 Finally let's add the grab-profile.php file which will do the work for grabbing all our profile information
+
 ```php
 <?php
   # Autoload the required vendor files
@@ -757,6 +767,7 @@ Finally let's add the grab-profile.php file which will do the work for grabbing 
   echo '<br>';
 ?>
 ```
+
 At this point your webite should be able to do this when you press the login button
 ![_config.yml]({{ site.baseurl }}/images/hack-nights/facebook/stage3.png)
 ![_config.yml]({{ site.baseurl }}/images/hack-nights/facebook/stage3b.png)
@@ -766,6 +777,7 @@ At this point your [Source Code](https://github.com/AkhilNadendla/Facebook-Hack-
 ### Stage 4: Grabbing the Event Data 
 
 Let's start off again by doing a basic update of index.php
+
 ```php
 <?php
     date_default_timezone_set('UTC');
@@ -782,6 +794,7 @@ Let's start off again by doing a basic update of index.php
 ```
 
 Let's do a basic update of events.php, by including the grab-events.php file
+
 ```php
 <?php
     date_default_timezone_set('UTC');
@@ -798,6 +811,7 @@ Let's do a basic update of events.php, by including the grab-events.php file
 ```
 
 Finally let's add the grab-events.php file which will do the work for grabbing all our events information
+
 ```php
 <?php
   	# Autoload the required vendor files
@@ -869,6 +883,7 @@ First let’s copy in folders css, js, font-awesome, and font from the [Github S
 Next you want to copy index_replacement.php and events_replacement.php. These will be the styled versions of your index.php and events.php. These will work once you insert in your php includes in the following places:
 
 Find this spot in index_replacement.php 
+
 ```html
 <!-- Header -->
     <header id="top" class="header">
@@ -882,6 +897,7 @@ Find this spot in index_replacement.php
 ```
 
 Then update it to look like this
+
 ```html
 <!-- Header -->
     <header id="top" class="header">
@@ -894,7 +910,8 @@ Then update it to look like this
     </header>
 ```
 
-Similarily in events_replacement.php, replace the following with 
+Similarily in events_replacement.php, replace the following with
+
 ```html
 	<header id="top" class="profile-header">
         <div class="text-vertical-center">
