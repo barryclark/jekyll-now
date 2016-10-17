@@ -2,6 +2,7 @@
 layout: post
 title: Setting Up a Blog
 header: '/images/tech/jekyll.png'
+header-text-color: 'light'
 ---
 
 When I re-did my website, I decided to make some sort of blog to go with it. After some quick searching on the different ways to set one up, I decided to go with [Jekyll](http://jekyllrb.com/), a static site generator written in Ruby and that can be installed as a RubyGem.
@@ -45,7 +46,7 @@ In this post, for example, my default layout centers content within a container 
   <header>
     <div class='site-info'>
       <h1><a href='{{ site.baseurl }}/'>{{ site.name }}</a></h1>
-      <p>{{ site.description }}</p>
+      <p>Software is hard</p>
     </div>
   </header>
   <section class='content'>
@@ -59,11 +60,9 @@ The `post.html` file is then rendered in the content section. My `post.html` lay
 {% highlight html %}
 <article class="post">
   <h1 class='post-title'>{{ page.title }}</h1>
-
   <div class="date">
     Written on {{ page.date | date: "%B %e, %Y" }}
   </div>
-
   <div class="entry">
     // Inject content with Liquid here
   </div>

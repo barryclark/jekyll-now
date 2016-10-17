@@ -5,16 +5,24 @@ layout: default
 <article class='post'>
   <div
     style='background-image: url({{ site.baseurl }}{{ page.header }})'
-    class='post-header {{ page.header-text }}'>
+    class='post-header {{ page.header-text-color }}'>
     <div class='container'>
-      <h1 class='post-title'>{{ page.title }}</h1>
-      <div class='date'>
-        {{ page.date | date: '%B %e, %Y' }}
-      </div>
+      {% if page.header-text %}
+        <h1 class='post-title'>{{ page.title }}</h1>
+        <div class='date'>
+          {{ page.date | date: '%B %e, %Y' }}
+        </div>
+      {% endif %}
     </div>
   </div>
 
   <div class='container entry'>
+    {% if page.header-text == false %}
+      <h1 class='post-title'>{{ page.title }}</h1>
+      <div class='date'>
+        {{ page.date | date: '%B %e, %Y' }}
+      </div>
+    {% endif %}
     {{ content }}
     {% include disqus.html %}
   </div>

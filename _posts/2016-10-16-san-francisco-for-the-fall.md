@@ -2,7 +2,7 @@
 layout: post
 title: San Francisco in the Fall
 header: '/images/california/fall.jpg'
-header-text: 'light'
+header-text-color: 'light'
 ---
 
 I did not know whether I would be back in the United States so soon, but my internships have once again led me to the bay area, this time in the heart of San Francisco.
