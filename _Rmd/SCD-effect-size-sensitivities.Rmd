@@ -5,7 +5,9 @@ date: October 17, 2016
 tags: [effect-sizes, single-case-research]
 ---
 
-I've just posted a new version of my working paper, _Procedural sensitivities of effect sizes for single-case designs with behavioral outcome measures_. The abstract is below. The paper itself is available on the Open Science Framework ([here](https://osf.io/pxn24/)), as are the [supplementary materials](https://osf.io/hkzsm/) and [Source code](https://osf.io/j4gvt/). I also created interaction versions of the graphics from the main paper and the supplementary materials, which can be viewed in [this shiny app](https://jepusto.shinyapps.io/SCD-effect-size-sensitivities/). I would welcome any comments, questions, or feedback that readers may have.
+I've just posted a new version of my working paper, _Procedural sensitivities of effect sizes for single-case designs with behavioral outcome measures_. The abstract is below. This version is a major update of an [earlier paper]({{ site.url }}/files/Pustejovsky-2015-Nov-Non-overlap-measures.pdf) that focused only on the non-overlap measures. The new version also includes analysis of two other effect sizes (the within-case standardized mean difference and the log response ratio) as well as additional results and more succinct summaries of the main findings. 
+
+The paper itself is available on the Open Science Framework ([here](https://osf.io/pxn24/)), as are the [supplementary materials](https://osf.io/hkzsm/) and [Source code](https://osf.io/j4gvt/). I also created interaction versions of the graphics from the main paper and the supplementary materials, which can be viewed in [this shiny app](https://jepusto.shinyapps.io/SCD-effect-size-sensitivities/). I would welcome any comments, questions, or feedback that readers may have.
 
 
 ### Abstract 
