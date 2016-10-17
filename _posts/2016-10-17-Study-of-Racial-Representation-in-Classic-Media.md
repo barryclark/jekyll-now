@@ -1,8 +1,8 @@
 ---
-2	layout: post
-3	title: Study of Racial Representation in Classic Media
-4	author: rbrooks6
-5	---
+layout: post
+title: Study of Racial Representation in Classic Media
+author: rbrooks6
+---
 
 
 For my final project, I plan to make an infographic representing the changes in diversity over various seasons of Saturday Night Live. I chose this because I want to study if popular classic television shows are getting more or less diverse, this is important, because popular television has a strong influence on culture as a whole. 
