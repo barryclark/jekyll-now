@@ -20,10 +20,10 @@ your choice).
 We'll also need a web browser. Google Chrome and Safari are our recommendations to ensure that you're seeing support for the latest
 and greatest.
 
-Finally you will need to install php. If you are mac this should come pre-installed, but if you are on windows then you need to follow the following steps:
+Finally you will need to install php. If you are on a Mac this should come pre-installed, but if you are on windows then you need to follow the following steps:
 
 * Install [Chocolatey](https://chocolatey.org/)
-* Run the following commang in your terminal: choco install php
+* Run the following command in your terminal: choco install php
 
 
 ## Source Code and Slides
@@ -604,7 +604,7 @@ Create a login.php, which will display the login button and redirect all button 
       'app_id' => '1005350496240851',
       // Replace {app-secret} with your app secret
       'app_secret' => 'ce763571e38e35b4e6257021149988c3',
-      // Replace {graph-version} with your app secret
+      // Replace {graph-version} with your graph version
       'default_graph_version' => 'v2.8',
     ]);
     # Create the login helper object
@@ -628,8 +628,11 @@ Now let's create a fb-callback.php file that will generate the login session, an
   session_start();
   # Set up the app with default parameters
   $fb = new Facebook\Facebook([
-    'app_id' => '1005350496240851', // Replace {app-id} with your app id
+  	// Replace {app-id} with your app id
+    'app_id' => '1005350496240851',
+    // Replace {app-secret} with your app secret
     'app_secret' => 'ce763571e38e35b4e6257021149988c3',
+    // Replace {graph-version} with your graph version
     'default_graph_version' => 'v2.8',
     ]);
   # Create the login helper object
@@ -730,8 +733,11 @@ Finally let's add the grab-profile.php file which will do the work for grabbing 
   require_once __DIR__ . '/vendor/autoload.php';
   # Set up the app with default parameters
   $fb = new Facebook\Facebook([
+  	// Replace {app-id} with your app id
     'app_id' => '1005350496240851',
+    // Replace {app-secret} with your app secret
     'app_secret' => 'ce763571e38e35b4e6257021149988c3',
+    // Replace {graph-version} with your graph version
     'default_graph_version' => 'v2.8',
   ]);
   //grab the access token from session variable before
@@ -819,8 +825,11 @@ Finally let's add the grab-events.php file which will do the work for grabbing a
     require_once __DIR__ . '/vendor/autoload.php';
   	# Set up the app with default parameters
     $fb = new Facebook\Facebook([
+    	// Replace {app-id} with your app id
       'app_id' => '1005350496240851',
+       // Replace {app-secret} with your app secret
       'app_secret' => 'ce763571e38e35b4e6257021149988c3',
+      // Replace {graph-version} with your graph version
       'default_graph_version' => 'v2.8',
     ]);
 	$fb->setDefaultAccessToken($_SESSION['fb_access_token']);
