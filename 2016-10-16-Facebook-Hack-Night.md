@@ -104,7 +104,9 @@ Comments will not get executed by your program's compiler, and are generally for
 
 
 ### Variables
+
 #### Few things about variables
+
 * Variables are used as containers to store some information
 
 * Variables start with a dollar sign and can not begin with a number, so a variable name like $2test is not allowed
@@ -117,6 +119,7 @@ Comments will not get executed by your program's compiler, and are generally for
 
 <br>
 variables.php
+
 ```php
 <?php
 	$bruin = "I'm a Bruin! It's Fall ";
@@ -128,7 +131,9 @@ variables.php
 	echo "<h1>Hack Nights are awesome!</h1>";
 ?> 
 ```
+
 Browser Output:
+
 ```
 I'm a Bruin! It's Fall2016
 I'm a Bruin! It's Fall2016
@@ -136,6 +141,7 @@ Hack Nights are awesome!
 ```
 
 more-variables.php
+
 ```php
 <?php
 	$number = 25;
@@ -148,7 +154,9 @@ more-variables.php
 	echo $$n; // Can double reference variables using $$
 ?> 
 ```
+
 Browser Output:
+
 ```
 12.5
 David Smallberg is teaching CS 31
@@ -157,18 +165,22 @@ Eggert
 ```
 
 ### If Else Statements
+
 #### Few things about conditionals
+
 * The if construct is one of the most important features of many languages, PHP included. It allows for conditional execution of code fragments. PHP features an if structure that is similar to that of C:
 * if statement - executes some code if one condition is true
 * if...else statement - executes some code if a condition is true and another code if that condition is false
 * if...elseif....else statement - executes different codes for more than two conditions
 
 This is the basic structure for conditionals in php
+
 ``` 
 if (condition) {
     code to be executed if condition is true;
 }
 ```
+
 ``` 
 if (condition) {
     code to be executed if condition is true;
@@ -176,6 +188,7 @@ if (condition) {
     code to be executed if condition is false;
 }
 ```
+
 ``` 
 if (condition) {
     code to be executed if condition is true;
@@ -187,6 +200,7 @@ if (condition) {
 ```
 
 Here are some basic comparators in php
+
 ``` 
 //Equal
 $a == $b //TRUE if $a is equal to $b after type juggling.
@@ -209,6 +223,7 @@ $a <=> $b //An integer less than, equal to, or greater than zero when $a is resp
 ```
 
 conditionals.php
+
 ```php
 <?php
 	$walk_from_south_to_north_campus = 15;
@@ -223,12 +238,15 @@ conditionals.php
 	}
 ?>
 ```
+
 Browser Output:
+
 ```
 Late to class again!
 ```
 
 more-conditionals.php
+
 ```php
 <?php
 	$year = 1;
@@ -243,19 +261,24 @@ more-conditionals.php
 	}
 ?>
 ```
+
 Browser Output:
+
 ```
 Watch out for that freshman 15
 You're probably living off-campus
 ```
 
 ### Arrays
+
 #### Few things about arrays
+
 * Arrays are special types of variables that can hold multiple values, and can be created using the array() function
 
 * Array indexes can be accessed in the following manner, with $array[0] being the first element, $array[1] being the second, and so on.
 
 arrays.php
+
 ```php
 <?php
 	$ucla_dining=array("BPlate","Covel","BCafe"); // Initialize arrays like this
@@ -269,7 +292,9 @@ arrays.php
 	print_r($ucla_dorms);
 ?> 
 ```
+
 Browser Output:
+
 ```
 Array ( [0] => BPlate [1] => Covel [2] => BCafe ) 
 BPlate
@@ -278,6 +303,7 @@ Array ( [0] => Holly [1] => Delta Terrace )
 
 
 more-arrays.php
+
 ```php
 <?php
 	$ucla_buildings=array(
@@ -291,7 +317,9 @@ more-arrays.php
 	print_r($ucla_buildings);
 ?>
 ```
+
 Browser Output:
+
 ```
 Array ( [Library] => Powell [Track] => Drake Stadium [Gym] => Wooden ) 
 4
@@ -299,17 +327,21 @@ Array ( [Library] => Powell [Track] => Drake Stadium [Gym] => Wooden [Football] 
 ```
 
 #### Few more things about arrays
+
 * Php naturally supports key-value pairs in arrays, where you can use a specific key to retrieve a value. For instance in the previous example $ucla_buildings[“library”] will return Powell
 
 * You can also retrieve the size of an array using count, for instance count($ucla_buildings) should return a value of 4
 
 ### For and Foreach Loops
+
 This is the For loop basic structure
+
 ``` 
 for (init counter; test counter; increment counter) {
     code to be executed;
 }
 ```
+
 This is the Foreach loop basic structure
 
 ``` 
@@ -319,6 +351,7 @@ foreach ($array as $value) {
 ```
 
 for-loops.php
+
 ```php
 <?php
 	for($i = 0; $i < 5; $i++){
@@ -330,7 +363,9 @@ for-loops.php
 	}
 ?>
 ```
+
 Browser Output:
+
 ```
 0
 1
@@ -343,7 +378,9 @@ Building: Gym, Name: Wooden
 ```
 
 ### While Loops
+
 This is the While loop basic structure
+
 ``` 
 while (condition is true) {
     code to be executed;
@@ -351,6 +388,7 @@ while (condition is true) {
 ```
 
 while-loops.php
+
 ```php
 <?php
 	$i = 0;
@@ -364,7 +402,9 @@ while-loops.php
 	}
 ?>
 ```
+
 Browser Output:
+
 ```
 0
 1
@@ -377,9 +417,11 @@ Building: 2, Name: Wooden
 ```
 
 ### Get and Post Variables
+
 This is a more advanced topic, you can get more info at [Tutorial Point](https://www.tutorialspoint.com/php/php_get_post.htm/)
 
 #### Some important facts
+
 * Both GET and POST create an array (e.g. array( key => value, key2 => value2, key3 => value3, ...)). This array holds key/value pairs, where keys are the names of the form controls and values are the input data from the user.
 
 * Both GET and POST are treated as $_GET and $_POST. These are superglobals, which means that they are always accessible, regardless of scope - and you can access them from any function, class or file without having to do anything special.
