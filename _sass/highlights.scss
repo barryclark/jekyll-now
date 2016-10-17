@@ -1,3 +1,8 @@
+code {
+  font-family:'hack';
+  font-size: 1.1rem;
+  background: $light-gray;
+}
 
 .highlight {
   background-color: #2B2B2B;
@@ -5,11 +10,11 @@
   margin: 3rem 0;
   padding: 0.5rem 2rem;
   color: $white;
-}
 
-code {
-  font-family:'hack';
-  font-size: 1.1rem;
+  code {
+    background: initial;
+    padding: 1px;
+  }
 }
 
 .highlight .c { color: #586E75 } /* Comment */

@@ -39,13 +39,13 @@
 
 .post {
   h2, p { margin: 2.5rem 0; }
-
-  a { color: $base-font-color; }
 }
 
 .entry {
   margin-top: 1.3rem;
   margin-top: 1.3rem;
+
+  a { text-decoration: underline; }
 }
 
 .excerpt {

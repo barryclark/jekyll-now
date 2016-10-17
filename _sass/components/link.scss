@@ -1,6 +1,11 @@
 a {
-  color: $blue;
+  $link-color: $base-font-color;
+  color: lighten($link-color, 20%);
   display: inline-block;
   position: relative;
   text-decoration: none;
+
+  &:hover {
+    color: $link-color;
+  }
 }
