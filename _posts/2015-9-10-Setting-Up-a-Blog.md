@@ -1,9 +1,8 @@
 ---
 layout: post
 title: Setting Up a Blog
+header: '/images/tech/jekyll.png'
 ---
-
-![Jekyll header](http://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2015/02/1424055625jekyll.png)
 
 When I re-did my website, I decided to make some sort of blog to go with it. After some quick searching on the different ways to set one up, I decided to go with [Jekyll](http://jekyllrb.com/), a static site generator written in Ruby and that can be installed as a RubyGem.
 

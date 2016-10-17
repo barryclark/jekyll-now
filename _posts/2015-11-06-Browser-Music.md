@@ -1,9 +1,8 @@
 ---
 layout: post
 title: Vivaldi, Opera's Musical Brother
+header: '/images/tech/vivaldi.jpg'
 ---
-
-![Vivaldi Banner](http://cdn.techpp.com/wp-content/uploads/2015/11/Vivaldi_Browser.jpg)
 
 Chrome is a great browser, and like many people I haven't often strayed from the powerful, all-knowing embrace of Google. That's why when I first heard of Vivaldi, I was skeptical. Made by many of the same developers who worked on Opera, Vivaldi is a new browser with roots in Chromium that promises to be a powerful, privacy-focused browser with features for advanced users.
 

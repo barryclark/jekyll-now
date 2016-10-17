@@ -1,3 +1,5 @@
 .container {
   @include outer-container(760px);
+  padding: 2rem;
+  padding-top: 0;
 }

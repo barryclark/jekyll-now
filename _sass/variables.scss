@@ -1,15 +1,18 @@
 // Style Variables
 $content-width: rem(960);
 $font-weight: 100;
-$font-size: 1.25rem;
-$font-family: 'medium-content-serif-font', Georgia, Cambria, 'Times New Roman', Times, serif;
+$font-size: 1.4rem;
 $line-height: 1.7;
 
 // Color Variables
-$blue:        #4A75D4;
+$blue:        #2e63c3;
 $dark-gray:   #2B2B2B;
 $gray:        #606060;
 $green:       #70FF70;
 $orange:      #F5D5BE;
 $red:         #F5BEBE;
 $white:       #ECECEC;
+
+// Media Query Variables
+$mobile: 480px;
+$desktop: 1280px;

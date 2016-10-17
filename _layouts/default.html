@@ -6,26 +6,18 @@
     {% include meta.html %}
 
     <!--[if lt IE 9]>
-      <script src='http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <script src='http://html5shiv.googlecode.com/svn/trunk/html5.js'></script>
     <![endif]-->
 
     <link rel='stylesheet' type='text/css' href='{{ site.baseurl }}/style.css' />
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display' rel='stylesheet'>
     <link rel='stylesheet' href='//cdn.jsdelivr.net/font-hack/2.013/css/hack.min.css'>
     <link rel='alternate' type='application/rss+xml' title='{{ site.name }} - {{ site.description }}' href='{{ site.baseurl }}/feed.xml' />
   </head>
 
   <body>
-    <div class='container'>
-      <header>
-        <div class='site-info'>
-          <h1><a href='{{ site.url }}/'>{{ site.name }}</a></h1>
-          {{ site.description }}
-        </div>
-      </header>
-      <section class='content'>
-        {{ content }}
-      </section>
-    </div>
+    <section class='content'>
+      {{ content }}
+    </section>
   </body>
 </html>

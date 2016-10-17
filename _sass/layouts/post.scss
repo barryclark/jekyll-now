@@ -1,11 +1,36 @@
 .posts {
-  margin-top: 3rem;
-
   .date { font-size: 1.1rem; }
+
+  h1 {
+    margin-bottom: 3rem;
+  }
+
+  article {
+    margin-top: 3rem;
+
+    img {
+      height: 14rem;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
 }
 
 .post-header {
-  margin: 3rem 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height: 40rem;
+  padding-top: 3rem;
+
+  @media screen and (max-width: $mobile) {
+    height: 20rem;
+  }
+
+  &.light {
+    color: $white;
+  }
 }
 
 .post-title {
@@ -13,17 +38,21 @@
 }
 
 .post {
-  margin: 3rem 0;
   h2, p { margin: 2.5rem 0; }
+
+  a { color: $base-font-color; }
 }
 
 .entry {
+  margin-top: 1.3rem;
   margin-top: 1.3rem;
 }
 
 .excerpt {
     margin: 0.6rem 0;
   img {
+    height: 14rem;
+    object-fit: cover;
     width: 100%;
   }
   p { margin-bottom: 0.5rem; }
