@@ -13,6 +13,8 @@ I've already [reviewed](http://www.purplepawn.com/2016/05/second-look-storyline-
 
 Similar to Fairy Tales you're getting 2 tales and over 100 cards. As is expected, you can combine both games to make even crazier stories.
 
+I didn't take as many shots of the game as I did the first one. Just enough to get an idea of how to new artwork, cards, and tokens look.
+
 ![Scary Tales Box]({{ site.url }}/images/storyline/scarytales-box.jpg)
 ![Scary Tales Back]({{ site.url }}/images/storyline/scarytales-back.jpg)
 ![Scary Tales Rules]({{ site.url }}/images/storyline/scarytales-rules.jpg)
