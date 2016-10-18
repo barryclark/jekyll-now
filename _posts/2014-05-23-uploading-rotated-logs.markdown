@@ -50,7 +50,7 @@ Well yeah, there were two options for the solution implementation:
 ### Implementation
 End of the story we implemented and did some file renaming in the process of file upload to comply with client requirements. Finally it was over.
 
-The code can be fork or looked at on my Github Account. The project name is [RotatedLogs_Upload](https://github.com/enriquemanuel/rotatedlogs_upload)
+The code can be fork or looked at on my Github Account. The project name is [Uploader](https://github.com/enriquemanuel/uploader) and there is a folder for old projects that also contain old bash scripts.
 
 #### Caveats:
 Just beware that the SFTP needs to have the `<< ENDOFSCRIPT` or whatever you want to call it and that mark, should not have any spaces before or after to close the SFTP scripting correctly.
