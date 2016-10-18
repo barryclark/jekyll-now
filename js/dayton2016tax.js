@@ -8,4 +8,4 @@ $(document).ready(function() {
     $("#dayton-tax-25").val(newtax);
     $("#dayton-tax-025").val(difference);
   }
-}
+});
