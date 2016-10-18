@@ -4,7 +4,7 @@ title: Issue 9 Dayton Income Tax Increase - Nov 8 2016 Election Ballot
 tags: [money, politics]
 keywords: [dayton, income tax, tax, levy, issue 9]
 jquery: true
-javascripts: []
+javascripts: [/js/dayton2016tax.js]
 permalink: /newpost/
 ---
 
