@@ -31,6 +31,7 @@ Now let's figure it out for the entire year. [Just don't divide by 52 and you ge
 So, are they trying to lie how much the tax will cost, or can they just not do simple math? Either way, would you trust them with your money?
 
 Use the following table to calculate how much the tax could cost you:
+
 <table><thead><tr><th>Income</th><th></th><th>Taxes at 2.25%</th><th>Taxes at 2.5%</th><th>Increase</th></tr>
 <tbody><tr>
 <td><input type="number" id="income" min="0" required /></td>
