@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/814,183593295,2016-10-18 11:06:39,2016-10-18 05:25:22,Il Consiglio Regionale del Lazio approva tre risoluzioni per la ricostruzione,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,{},"<pre><yamldata>titolo: 'Lazio, tre risoluzioni per la ricostruzione'
+descrizione: 'Il Consiglio regionale del Lazio ha approvato il 17 ottobre tre risoluzioni per le zone terremotate. La prima impegna la Giunta a valutare insieme al Consiglio una legge regionale per la ricostruzione, a istituire un ufficio speciale per la ricostruzione composto da Regione e comuni interessati e a ristabilire le funzionalità del nuovo ospedale di Amatrice e della scuola alberghiera. La seconda impegna Zingaretti a valutare rapidamente la proposta di legge n. 341 del 14 settembre ""Disposizioni in materia di riduzione del rischio sismico e di ricostruzione dei comuni colpiti dal sisma"", a ristabilire la piena funzionalità dell'ospedale ""Grifoni"" di Amatrice e del De Lellis di Rieti. Sempre lo stesso atto di indirizzo impegna il presidente della Regione a estendere il finanziamento per gli immobili delle zone terremotate pure ai magazzini e a quelli con altre destinazioni d'uso. Infine una terza risoluzione impegna Zingaretti e assessori al varo di campagne di formazione sui terremoti e un sito web sulle attività amministrative, economiche e gestionali per emergenza e ricostruzione.'
+link: 'http://www.consiglio.regione.lazio.it/consiglioweb/news_dettaglio.php?id=2205&tblId=NEWS'
+data: 18/10/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/812,183260629,2016-10-17 06:31:34,2016-10-16 10:49:41,#ArquatadelTronto in arrivo 140 casette in legno (MAP - moduli abitativi provvisori) entro il mese di aprile,,,"[""Accettato"", ""Bollettino"", ""Facebook"", ""Notizie Utili""]",,,"{""data"": ""16/10/2016"", ""descrizione"": ""I Map verranno garantiti solamente ai RESIDENTI EFFETTIVI del territorio di Arquata che non riescono a rendere agibili le proprie abitazioni nel giro di poco tempo."", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1783699348564315/"", ""titolo"": ""#ArquatadelTronto in arrivo 140 casette in legno (MAP - moduli abitativi provvisori) entro il mese di aprile""}","<pre><yamldata>titolo: '#ArquatadelTronto in arrivo 140 casette in legno (MAP - moduli abitativi provvisori) entro il mese di aprile'
 descrizione: 'I Map verranno garantiti solamente ai RESIDENTI EFFETTIVI del territorio di Arquata che non riescono a rendere agibili le proprie abitazioni nel giro di poco tempo.'
 link: 'https://www.facebook.com/groups/1758670357733881/permalink/1783699348564315/'
@@ -1917,16 +1922,6 @@ descrizione: 'HOTEL ""DE LA VILLE"" di AVELLINO (vitto e alloggio per una famigl
 indirizzo: 'Avellino, AV, Campania, 83100, Italia'
 lat: '40.9141958'
 lon: '14.7888764'
-link: ''
-immagine: ''
-data: 16/09/2016
-</yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/525,177470819,2016-09-22 15:52:12,2016-09-16 16:46:57,"Porto Sant''Elpidio, FM - Appartamenti a disposizione",43.2589619,13.7569828,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""appartamenti a disposizione"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via San Giovanni Bosco, Porto Sant'Elpidio, FM, Marche, 63018, Italia"", ""lat"": ""43.2589619"", ""link"": """", ""lon"": ""13.7569828"", ""tel"": ""3921241035""}","<pre><yamldata>tel: '3921241035'
-email: ''
-descrizione: 'appartamenti a disposizione'
-indirizzo: 'Via San Giovanni Bosco, Porto Sant''Elpidio, FM, Marche, 63018, Italia'
-lat: '43.2589619'
-lon: '13.7569828'
 link: ''
 immagine: ''
 data: 16/09/2016
