@@ -32,11 +32,4 @@ So, are they trying to lie how much the tax will cost, or can they just not do s
 
 Use the following table to calculate how much the tax could cost you:
 
-<table><thead><tr><th>Income</th><th></th><th>Taxes at 2.25%</th><th>Taxes at 2.5%</th><th>Increase</th></tr>
-<tbody><tr>
-<td><input type="number" id="income" min="0" required /></td>
-<td><input type="number" id="tax-225" min="0" readonly /></td>
-<td><input type="number" id="tax-25" min="0" readonly /></td>
-<td><input type="number" id="tax-025" min="0" readonly /></td>
-</tr></tbody></table>
-<input type="button" value="Calculate" id="calculate-tax" />
+{% include dayton2016tax.html %}
