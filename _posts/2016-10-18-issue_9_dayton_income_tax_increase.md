@@ -5,7 +5,6 @@ tags: [money, politics]
 keywords: [dayton, income tax, tax, levy, issue 9]
 jquery: true
 javascripts: [/js/dayton2016tax.js]
-permalink: /newpost/
 ---
 
 The City of Dayton is [asking is residents and workers for another 0.25%](http://www.daytonwater.org/674/Issue-9) of their income this November. Currently the rate is 2.25% - one of the highest in Ohio - so, if the tax is passed, the rate would climb to 2.5%.
