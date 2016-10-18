@@ -33,3 +33,9 @@ So, are they trying to lie how much the tax will cost, or can they just not do s
 Use the following table to calculate how much the tax could cost you:
 
 {% include dayton2016tax.html %}
+
+Further reading:
+
+* http://daytonmayor.blogspot.com/2016/09/vote-no-on-issue-9-here-is-why.html
+* http://wdtn.com/2016/09/06/city-of-dayton-income-tax-hike-to-be-on-november-ballot/
+* http://www.daytondailynews.com/news/local-govt--politics/dayton-ask-voters-raise-income-taxes/JgQgxXL2mMazJPD4EvrBSP/
