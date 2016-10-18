@@ -1,5 +1,5 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/814,183593295,2016-10-18 11:06:39,2016-10-18 05:25:22,Il Consiglio Regionale del Lazio approva tre risoluzioni per la ricostruzione,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,{},"<pre><yamldata>titolo: 'Lazio, tre risoluzioni per la ricostruzione'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/814,183593295,2016-10-18 11:06:59,2016-10-18 05:25:22,Consiglio Regionale del Lazio approva 3 risoluzioni per la ricostruzione,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,{},"<pre><yamldata>titolo: 'Lazio, tre risoluzioni per la ricostruzione'
 descrizione: 'Il Consiglio regionale del Lazio ha approvato il 17 ottobre tre risoluzioni per le zone terremotate. La prima impegna la Giunta a valutare insieme al Consiglio una legge regionale per la ricostruzione, a istituire un ufficio speciale per la ricostruzione composto da Regione e comuni interessati e a ristabilire le funzionalità del nuovo ospedale di Amatrice e della scuola alberghiera. La seconda impegna Zingaretti a valutare rapidamente la proposta di legge n. 341 del 14 settembre ""Disposizioni in materia di riduzione del rischio sismico e di ricostruzione dei comuni colpiti dal sisma"", a ristabilire la piena funzionalità dell'ospedale ""Grifoni"" di Amatrice e del De Lellis di Rieti. Sempre lo stesso atto di indirizzo impegna il presidente della Regione a estendere il finanziamento per gli immobili delle zone terremotate pure ai magazzini e a quelli con altre destinazioni d'uso. Infine una terza risoluzione impegna Zingaretti e assessori al varo di campagne di formazione sui terremoti e un sito web sulle attività amministrative, economiche e gestionali per emergenza e ricostruzione.'
 link: 'http://www.consiglio.regione.lazio.it/consiglioweb/news_dettaglio.php?id=2205&tblId=NEWS'
 data: 18/10/2016
@@ -4331,6 +4331,17 @@ link: 'http://www.diregiovani.it/2016/08/30/49317-terremoto-jazz-italiano-amatri
 email: ''
 data: 14/09/2016
 </yamldata></pre>",closed
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/243,176848996,2016-09-14 08:47:45,2016-09-14 08:44:03,Associazione Docenti Senza Frontiere,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Contributo Terremoto Italia"", ""chi"": ""Associazione Docenti Senza Frontiere"", ""data"": ""14/09/2016"", ""descrizione"": ""E' attivo conto corrente per una raccolta fondi immediata destinata alla ricostruzione di edifici scolastici, per aiutare, gli alunni, i Dirigenti Scolastici e gli insegnanti nella ricostruzione della comunit\u00e0 scolastica e al ripristino veloce delle condizioni di normalit\u00e0."", ""email"": """", ""iban"": ""IT46T0501812101000000175233"", ""intestazione"": ""Docenti Senza Frontiere"", ""link"": ""http://www.docentisenzafrontiere.org/it/sostienici/speciale-emergenze/terremoto.html"", ""postale"": """"}","<pre><yamldata>chi: 'Associazione Docenti Senza Frontiere'
+descrizione: 'E'' attivo conto corrente per una raccolta fondi immediata destinata alla ricostruzione di edifici scolastici, per aiutare, gli alunni, i Dirigenti Scolastici e gli insegnanti nella ricostruzione della comunità scolastica e al ripristino veloce delle condizioni di normalità.'
+intestazione: 'Docenti Senza Frontiere'
+iban: IT46T0501812101000000175233
+bic: ''
+postale: ''
+causale: 'Contributo Terremoto Italia'
+link: 'http://www.docentisenzafrontiere.org/it/sostienici/speciale-emergenze/terremoto.html'
+email: ''
+data: 14/09/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/243,176848996,2016-09-14 08:47:45,2016-09-14 08:44:03,Associazione Docenti Senza Frontiere,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Contributo Terremoto Italia"", ""chi"": ""Associazione Docenti Senza Frontiere"", ""data"": ""14/09/2016"", ""descrizione"": ""E' attivo conto corrente per una raccolta fondi immediata destinata alla ricostruzione di edifici scolastici, per aiutare, gli alunni, i Dirigenti Scolastici e gli insegnanti nella ricostruzione della comunit\u00e0 scolastica e al ripristino veloce delle condizioni di normalit\u00e0."", ""email"": """", ""iban"": ""IT46T0501812101000000175233"", ""intestazione"": ""Docenti Senza Frontiere"", ""link"": ""http://www.docentisenzafrontiere.org/it/sostienici/speciale-emergenze/terremoto.html"", ""postale"": """"}","<pre><yamldata>chi: 'Associazione Docenti Senza Frontiere'
 descrizione: 'E'' attivo conto corrente per una raccolta fondi immediata destinata alla ricostruzione di edifici scolastici, per aiutare, gli alunni, i Dirigenti Scolastici e gli insegnanti nella ricostruzione della comunità scolastica e al ripristino veloce delle condizioni di normalità.'
 intestazione: 'Docenti Senza Frontiere'
