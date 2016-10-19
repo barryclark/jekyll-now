@@ -26,4 +26,4 @@ Method: needs to figure out.
 Timeline: needs to figure out in detail, but deadline is December 1st. 
 
 ## Artifact
-Video would be preferred, or research paper. 
+Video, and the research paper. 
