@@ -37,7 +37,11 @@ $( document ).ready(function() {
 
 <div id="{{ id }}" class="share-block">
 <a href="https://www.facebook.com/sharer/sharer.php?u={{ url }}" target="_blank">
-	<div class="share facebook">f<span class="mobile-hide">acebook</span><span class="count"></span></div>
+	<div class="share facebook">
+		<i class="fa fa-facebook mobile-only" aria-hidden="true"></i>
+		<span class="mobile-hide">facebook</span>
+		<span class="count"></span>
+	</div>
 </a>
 <a href="https://twitter.com/home?status={{ url }}" target="_blank">
 	<div class="share twitter">
@@ -47,12 +51,24 @@ $( document ).ready(function() {
 	</div>
 </a>
 <a href="https://www.linkedin.com/shareArticle?url={{ url }}" target="_blank">
-	<div class="share linkedin"><span class="mobile-hide">linked</span>in<span class="count"></span></div>
+	<div class="share linkedin">
+		<i class="fa fa-linkedin mobile-only" aria-hidden="true"></i>
+		<span class="mobile-hide">linkedin</span>
+		<span class="count"></span>
+	</div>
 </a>
 <a href="http://www.reddit.com/submit?url={{ url }}" target="_blank">
-	<div class="share reddit">r<span class="mobile-hide">eddit</span><span class="count"></span></div>
+	<div class="share reddit">
+		<i class="fa fa-reddit-alien mobile-only" aria-hidden="true"></i>
+		<span class="mobile-hide">reddit</span>
+		<span class="count"></span>
+	</div>
 </a>
 <a href="http://www.stumbleupon.com/likecontent?url={{ url }}" target="_blank">
-	<div class="share stumbleupon">s<span class="mobile-hide">tumble</span>u<span class="mobile-hide">pon</span><span class="count"></span></div>
+	<div class="share stumbleupon">
+		<i class="fa fa-stumbleupon mobile-only" aria-hidden="true"></i>
+		<span class="mobile-hide">stumbleupon</span>
+		<span class="count"></span>
+	</div>
 </a>
 </div>
