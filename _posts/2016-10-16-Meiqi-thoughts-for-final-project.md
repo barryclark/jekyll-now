@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Thoughts after watching Supergirl
+title: Thoughts for Final project
 author: meiqi
 published: true
 ---
