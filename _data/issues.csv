@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/820,183970588,2016-10-19 14:03:06,2016-10-19 14:02:14,Regione Marche - Sito dedicato al terremoto,,,"[""Accettato"", ""Bollettino"", ""Contatti"", ""Notizie Utili""]",,,"{""data"": ""19/10/2016"", ""descrizione"": ""Sezione del sito della Regione Marche tutta dedicata al terremoto del 24 aogsto con news, documenti, mosuli, ordinanze, contatti utili, dati sul sisma, ecc."", ""email"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""http://www.regione.marche.it/Regione-Utile/Terremoto-Marche"", ""lon"": """", ""nome"": ""Regione Marche - Sito dedicato al terremoto"", ""tel"": """"}","<pre><yamldata>nome: 'Regione Marche - Sito dedicato al terremoto'
+tel: ''
+email: ''
+descrizione: 'Sezione del sito della Regione Marche tutta dedicata al terremoto del 24 aogsto con news, documenti, mosuli, ordinanze, contatti utili, dati sul sisma, ecc.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: 'http://www.regione.marche.it/Regione-Utile/Terremoto-Marche'
+data: 19/10/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/819,183966543,2016-10-19 13:48:00,2016-10-19 13:47:14,"Regione Marche, approvata l’organizzazione per completare gli interventi di emergenza post sisma",,,"[""Accettato"", ""Bollettino"", ""Facebook"", ""Notizie Utili"", ""pubblicare in archive.org""]",,,"{""data"": ""19/10/2016"", ""descrizione"": ""La giunta della Regione Marche, il 13 ottobre riunita in seduta straordinaria, ha approvato una delibera che individua le strutture organizzative e le attribuzioni di specifici compiti connessi alla realizzazione degli interventi di emergenza conseguenti al sisma del 24 agosto scorso."", ""link"": ""http://www.regione.marche.it/News-ed-Eventi/Post/15327/SISMA-LA-GIUNTA-APPROVA-L-ORGANIZZAZIONE-PER-COMPLETARE-GLI-INTERVENTI-DI-EMERGENZA"", ""titolo"": ""Regione Marche, approvata l\u2019organizzazione per completare gli interventi di emergenza post sisma""}","<pre><yamldata>titolo: 'Regione Marche, approvata l’organizzazione per completare gli interventi di emergenza post sisma'
 descrizione: 'La giunta della Regione Marche, il 13 ottobre riunita in seduta straordinaria, ha approvato una delibera che individua le strutture organizzative e le attribuzioni di specifici compiti connessi alla realizzazione degli interventi di emergenza conseguenti al sisma del 24 agosto scorso.'
 link: 'http://www.regione.marche.it/News-ed-Eventi/Post/15327/SISMA-LA-GIUNTA-APPROVA-L-ORGANIZZAZIONE-PER-COMPLETARE-GLI-INTERVENTI-DI-EMERGENZA'
