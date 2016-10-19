@@ -11,7 +11,7 @@ This post like Tina, Gene, and Louise comes to you in three parts.
   I have been watching the YouTuber Laci Green for a couple of years now, and I recently rewatched her video "Is Bob's Burgers a Feminist Masterpiece?" Green argues various points about how the subject matter of the show alines with pro-feminist beliefs. Durign my first viewing I completely agreed with her and it made me love Bob's Burgers even more. Looking back now however, I wonder if these pro-feminist themes are consistant episode to episode.
 
 ## Part 2: Do I have a Plan? 
-## Maybe.
+Maybe.
 
   In a previous post I briefly discussed social networks. It intrigues me to look at who talks to who, as well as who dominates the converstion. I'm interested to see how social networks would play out over a season of Bob's Burgers. Is there an even amount of women and men in the show? Which gender dominates the conversations? Are pro-feminist topics discussed or addressed in the plot from each episode? Can each episode of  Bob's Burgers pass the Bechdal test?
    I will be assessing the show based on its first season of 13 episodes and its latest season of 19 episodes. The show has been airing for five years now, and I believe it will be interesting to see if the show has changed its format. This especailly intrigues me bacuse the Laci Green video came out in 2015, but the show has been airing since 2011.
