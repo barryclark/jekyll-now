@@ -66,6 +66,7 @@
 		<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 		
 		{% for css in csses %}{% unless css == blank %}<link rel="stylesheet" type="text/css" href="{{ css }}" />{% endunless %}{% endfor %}
+		<link rel="stylesheet" href="/css/font-awesome/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="/style.css" />
 		<link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 		<link href="/favicon.ico?" rel="shortcut icon" type="image/x-icon" />
