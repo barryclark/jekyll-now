@@ -1,8 +1,8 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/820,183970588,2016-10-19 15:48:24,2016-10-19 14:02:14,Regione Marche - Sito dedicato al terremoto,,,"[""Accettato"", ""Notizie Utili""]",,,"{""data"": ""19/10/2016"", ""descrizione"": ""Sezione del sito della Regione Marche tutta dedicata al terremoto del 24 aogsto con news, documenti, mosuli, ordinanze, contatti utili, dati sul sisma, ecc."", ""email"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""http://www.regione.marche.it/Regione-Utile/Terremoto-Marche"", ""lon"": """", ""nome"": ""Regione Marche - Sito dedicato al terremoto"", ""tel"": """"}","<pre><yamldata>nome: 'Regione Marche - Sito dedicato al terremoto'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/820,183970588,2016-10-19 17:31:20,2016-10-19 14:02:14,Regione Marche - Sito dedicato al terremoto,,,"[""Accettato"", ""Notizie Utili""]",,,"{""data"": ""19/10/2016"", ""descrizione"": ""Sezione del sito della Regione Marche tutta dedicata al terremoto del 24 agosto con news, documenti, moduli, ordinanze, contatti utili, dati sul sisma, ecc."", ""email"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""http://www.regione.marche.it/Regione-Utile/Terremoto-Marche"", ""lon"": """", ""nome"": ""Regione Marche - Sito dedicato al terremoto"", ""tel"": """"}","<pre><yamldata>nome: 'Regione Marche - Sito dedicato al terremoto'
 tel: ''
 email: ''
-descrizione: 'Sezione del sito della Regione Marche tutta dedicata al terremoto del 24 aogsto con news, documenti, mosuli, ordinanze, contatti utili, dati sul sisma, ecc.'
+descrizione: 'Sezione del sito della Regione Marche tutta dedicata al terremoto del 24 agosto con news, documenti, moduli, ordinanze, contatti utili, dati sul sisma, ecc.'
 indirizzo: ''
 lat: ''
 lon: ''
