@@ -6,7 +6,7 @@ title: コーダーの心得
 # 背景
 freecodecamp.comを進めてたらとても共感できるフレーズがたくさん出てきたので、翻訳メモを残します。
 
-[Learn What to Do If You Get Stuck | Free Code Camp](https://www.freecodecamp.com/challenges/learn-what-to-do-if-you-get-stuck)
+[Learn What to Do If You Get Stuck - Free Code Camp](https://www.freecodecamp.com/challenges/learn-what-to-do-if-you-get-stuck)
 
 ※一部、一般的な表現とするために意訳しています。
 
