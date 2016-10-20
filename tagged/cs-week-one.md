@@ -1,7 +1,7 @@
 ---
 layout: blog_by_tag
-tag: cs-week-one
+tag: cs-week-1
 title: Week 1
-permalink: /tagged/cs-week-one
+permalink: /tagged/cs-week-1
 published: true
 ---
