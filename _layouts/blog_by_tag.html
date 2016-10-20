@@ -4,8 +4,8 @@ published: true
 ---
 <h1>Articles tagged: {{ page.title }}</h1>
 <div>
-    {% if paginator.tags[page.tag] %}
-        {% for post in paginator.tags[page.tag] %}
+    {% if site.tags[page.tag] %}
+        {% for post in site.tags[page.tag] %}
   <ul><li><a href="{{ post.url }}/">{{ post.title }}</a></li></ul>
         {% endfor %}
     {% else %}
