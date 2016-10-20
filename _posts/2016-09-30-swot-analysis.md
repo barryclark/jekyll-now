@@ -3,6 +3,7 @@ published: true
 layout: post
 tags:
   - core-skills
+  - cs-week-one
 title: My Individual Strengths and Weaknesses
 excerpt_separator: <!--more-->
 ---
