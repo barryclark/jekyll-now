@@ -4,7 +4,7 @@ layout: post
 title: Important Anglia Ruskin Documents
 tags:
   - core-skills
-  - cs-week-1
+  - cs-week-one
 excerpt_separator: <!--more-->
 ---
 The following are links to important Anglia Ruskin documents:
