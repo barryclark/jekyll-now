@@ -6,7 +6,7 @@ published: true
 <div>
     {% if site.tags[page.tag] %}
         {% for post in site.tags[page.tag] %}
-  <ul><li><a href="{{ post.url }}/">{{ post.title }}</a></li></ul>
+  <ul><li><a href="{{ post.url }}">{{ post.title }}</a></li></ul>
         {% endfor %}
     {% else %}
         <p>There are no posts for this tag.</p>
