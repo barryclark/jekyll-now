@@ -3,6 +3,7 @@ published: true
 layout: post
 tags:
   - core-skills
+  - cs-week-one
 excerpt_separator: <!--more-->
 title: Clubs and Societies I Could Join
 ---
