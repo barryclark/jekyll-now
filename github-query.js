@@ -54,10 +54,14 @@ jQuery.fn.loadRepositories = function(username) {
                         + '<span class="left floated code"><i class="code icon"></i>' + commitCount + ' commits</span>'
                         + '<span class="right floated star"><i class="star icon"></i>' + repo.stargazers_count + '</span>'
                     + '</div>'
-                    //+ '<div class="ui standard teal progress">'
-                    + '<div class="ui bottom attached teal progress">'
-                        + '<div class="bar"></div>'
+                    + '<div class="ui bottom attached button">'
+                        + '<i class="github alternate icon"></i>'
+                        + 'View on GitHub'
                     + '</div>'
+                    //+ '<div class="ui standard teal progress">'
+//                     + '<div class="ui bottom attached teal progress">'
+//                         + '<div class="bar"></div>'
+//                     + '</div>'
                     + "</div>");
             });
 
