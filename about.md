@@ -48,14 +48,14 @@ Did A-Levels in :
 
 #### Programming :
 
-Fluent in
+##### Fluent in
 
 |       |       |       |       |       |
 | --- | --- | --- | --- | --- | 
 | C     | C++   | Python | Matlab | Processing |
 | R     | HTML  | CSS   | Javascript |  |
 
-Experience in
+##### Experience in
 
 |       |       |       |
 |  ---  |  ---  |  ---  |
