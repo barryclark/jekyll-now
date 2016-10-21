@@ -54,7 +54,7 @@ jQuery.fn.loadRepositories = function(username) {
                         + '<span class="left floated code"><i class="code icon"></i>' + commitCount + ' commits</span>'
                         + '<span class="right floated star"><i class="star icon"></i>' + repo.stargazers_count + '</span>'
                     + '</div>'
-                    + '<a style='' href='"+ repo.html_url + "''><div class="ui bottom attached button">'
+                    + '<a style="" href="'+ repo.html_url + '""><div class="ui bottom attached button">'
                         + '<i class="github alternate icon"></i>'
                         + 'View on GitHub'
                     + '</div></a>'
