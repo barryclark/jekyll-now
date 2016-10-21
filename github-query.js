@@ -79,7 +79,7 @@ jQuery.fn.loadRepositories = function(username) {
                        $("#"+repo.name).css("background-position", 'center');
                        $("#"+repo.name).css("min-height", '150px');
                     } else {
-                       $("#"+repo.name).append('<h3>No Image Found</h3>');
+                       $("#"+repo.name).append('<h4>Image Not Available</h4>');
                     }
                 });
             });
