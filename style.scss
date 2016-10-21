@@ -293,7 +293,10 @@ footer {
   margin: 0px;
 }
 
-td, th {
+article table thead {
+  display: none;
+}
+article tbody td, th {
   padding: 5px;
 }
 
