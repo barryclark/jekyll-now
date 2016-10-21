@@ -56,11 +56,8 @@ Did A-Levels in :
 
 |     |       |       |       |       |       |       |       |       |       |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| *Fluent in : * | C     | C++   | Python | Matlab | Processing | R     | HTML  | CSS   | Javascript | 
-
-|       |       |       |       |       |       |       |
-|  ---  |  ---  |  ---  |  ---  |  ---  |  ---  |  ---  | 
-| *Experience in : * | C#    | Bash  | Java  | php   | Lua   | PostgreSQL |
+| **Fluent in :** | C     | C++   | Python | Matlab | Processing | R     | HTML  | CSS   | Javascript | 
+| **Experience in :** | C#    | Bash  | Java  | php   | Lua   | PostgreSQL |  |  |  |
 
 ##### Hardware :
 
@@ -77,42 +74,36 @@ Did A-Levels in :
 | Linux System Administration | Version Control (Git & GitHub) | Game Development (Unity) |
 | Graphic Design (Adobe Photoshop, Adobe Illustrator) | Video Editing (Adobe Premiere Pro) | |
 
-##### Languages 
-
-##### 
+##### Languages : 
 
 |  |  |  |  |
 |  ---  |  ---  |  ---  |  ---  |
-| *Fluent in: *  | English (1st language) | Mandarin | Malay |
+| **Fluent in:**  | English (1st language) | Mandarin | Malay |
 
 # Work Experience
 
-##### 2016  Engineering Lead for Imperial College Tech-Art Installation: Sensorium 
+##### 2016 : Engineering Lead for Imperial College Tech-Art Installation: Sensorium 
 * The project was built for display at Imperial College London’s annual event Imperial Festival 2016, and consisted of a 5m long, full-body LED mirror where silhouettes of people are displayed on a large (6720 LED’s) LED matrix in real time
 * Led a team of 8 engineers over the course of 3 months in planning and implementation of a large-scale electronics project, and worked closely with other teams within the project consisting of people from a variety of backgrounds including scientists, design engineers, art installation specialists and fashion designers 
 * More information about the project online at [https://github.com/JunShern/Sensorium](https://github.com/JunShern/Sensorium)
 
-##### 2016  Data Analysis Intern at Maxis Berhad Malaysia (telecommunications company)
+##### 2016 : Data Analysis Intern at Maxis Berhad Malaysia (telecommunications company)
 * Gained insight into telecommunications industry
 * Used R to perform customer analytics tasks, and took initiative to create a web-app using R and R Shiny to streamline a labour-intensive part of the workflow (available online at [https://github.com/JunShern/sliced](https://github.com/JunShern/sliced))
 
-##### 2016  Engineering Consultant (Paid freelance contract) for The Tile Project
+##### 2016 : Engineering Consultant (Paid freelance contract) for The Tile Project
 * The Tile Project is a capacitive touch-based human-computer interface developed by Clarissa Kang as a graduating project at the Royal College of Art, London
 * Prototyped electronics on Bare Conductive’s Touch Board (Arduino-like microcontroller), and created interactive visuals in Processing to demonstrate how the controls map onto a computer
 * Project website: [http://www.tileproject.info](http://www.tileproject.info)
 
 # Other Projects
 
-### 2015-Present
-
-##### Pyano  (Virtual MIDI Piano Keyboard)
+##### 2016 : Pyano  (Virtual MIDI Piano Keyboard)
 
 * Wrote a powerful open-source virtual MIDI piano keyboard in Python, which allows users to use QWERTY keyboards as piano (MIDI) keyboards, routable to software synthesizers and other MIDI-compatible programs
 * More information (and demo video) available at [https://github.com/JunShern/Pyano](https://github.com/JunShern/Pyano)
 
-### 2015-2016
-
-##### Neurospell  (Brain-Computer Interface)
+##### 2015 : Neurospell  (Brain-Computer Interface)
 
 * 2nd year Electrical and Electronic Engineering project at Imperial College London
 * Worked in a team of 7 members over the course of 6 months to create a low-cost Brain-Computer Interface device to allow motor-impaired people to type on a computer keyboard 
@@ -164,13 +155,11 @@ Did A-Levels in :
 
 * Autonomous Hovercraft Competition - Mentored a team of high school participants, teaching electronics as well as coding for an Arduino-based autonomous obstacle-avoiding hovercraft 
 
-### 2012-2013
+### 2013 & earlier
 
 ##### Editorial Board - Head of Graphic Design for college magazine
 
 ##### Leo Club (community service club) - Funding Director 
-
-### 2010-2011
 
 ##### Social Studies Club          - President
 
