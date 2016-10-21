@@ -23,7 +23,7 @@ Completed module topics:
 Did A-Levels in :
 
 | Subject | Grade |
-| --- | :---: |
+| --- | --- |
 | Mathematics | A\* |
 | Psychology | A\* |
 | Physics | A\* |
@@ -51,21 +51,21 @@ Did A-Levels in :
 Fluent in
 
 |       |       |       |       |       |
-| :---: | :---: | :---: | :---: | :---: | 
+| --- | --- | --- | --- | --- | 
 | C     | C++   | Python | Matlab | Processing |
 | R     | HTML  | CSS   | Javascript |  |
 
 Experience in
 
 |       |       |       |
-| :---: | :---: | :---: |
+|  ---  |  ---  |  ---  |
 | C#    | Bash  | Java  |
 | php   | Lua   | PostgreSQL |
 
 #### Hardware :
 
 |       |       |       |
-| :---: | :---: | :---: | 
+|  ---  |  ---  |  ---  | 
 | Arduino | Raspberry Pi | Circuit design & analysis |
 | PIC | AVR | FPGA & Verilog |
 | 3D printing | Laser cutting | CAD modelling (SketchUp, Fusion 360)|
@@ -73,7 +73,7 @@ Experience in
 #### IT : 
 
 |  |  |  |
-| :---: | :---: | :---: |
+|  ---  |  ---  |  ---  |
 | Linux System Administration | Version Control (Git & GitHub) | Game Development (Unity) |
 | Graphic Design (Adobe Photoshop, Adobe Illustrator) | Video Editing (Adobe Premiere Pro) | |
 
@@ -82,7 +82,7 @@ Experience in
 Fluent in 
 
 |  |  |  |
-| :---: | :---: | :---: |
+|  ---  |  ---  |  ---  |
 | English (1st language) | Malay | Mandarin |
 
 # Work Experience
@@ -94,7 +94,7 @@ Fluent in
 
 #### 2016  Data Analysis Intern at Maxis Berhad Malaysia (telecommunications company)
 * Gained insight into telecommunications industry
-* Used R to perform customer analytics tasks, and took initiative to create a web-app using R and R Shiny to streamline a labour-intensive part of the workflow (available online at [https://github.com/JunShern/sliced](https://github.com/JunShern/sliced) )
+* Used R to perform customer analytics tasks, and took initiative to create a web-app using R and R Shiny to streamline a labour-intensive part of the workflow (available online at [https://github.com/JunShern/sliced](https://github.com/JunShern/sliced))
 
 #### 2016  Engineering Consultant (Paid freelance contract) for The Tile Project
 * The Tile Project is a capacitive touch-based human-computer interface developed by Clarissa Kang as a graduating project at the Royal College of Art, London
