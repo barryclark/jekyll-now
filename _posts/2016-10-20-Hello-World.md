@@ -8,3 +8,4 @@ Next you can update your site name, avatar and other options using the _config.y
 ![_config.yml]({{ site.baseurl }}/images/config.png)
 
 This is my first post!!
+I am so excited about GitHub!!!
