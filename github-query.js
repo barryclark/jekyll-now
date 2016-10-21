@@ -40,10 +40,10 @@ jQuery.fn.loadRepositories = function(username) {
                     commitCount = commitCount + contributors[i].contributions; // Add up the contributions (# of commits) of each contributor
                 }
                 target.append("<div class='"+ /*colour +*/ " card'>"
-                    + "<div id=" + repo.name + " class='content' style='background-color:white'>"
+                    + "<div id=" + repo.name + " class='content' style='background-color:white'><a style='' href='"+ repo.html_url + "''>"
                     //+ '<i class="right floated like icon"></i><i class="right floated star icon"></i>'
                     + "<div style='text-align:center'><a style='' href='"+ repo.html_url + "''>" + repo.name + "</a></div>"
-                    + "</div>"
+                    + "</a></div>"
                     + '<div class="extra content">'
                         + "<div class='description'><p>" + repo.description + "</p></div>"
                     + "</div>"
@@ -65,7 +65,7 @@ jQuery.fn.loadRepositories = function(username) {
                 var readmeUrl = data.download_url;
                 $.get(readmeUrl, function(data){
                     var imgUrl = parseForImage(data);
-                    console.log(repo.name + ' : ' + imgUrl);
+                    //console.log(repo.name + ' : ' + imgUrl);
                     $("#"+repo.name).css("background-size", 'cover');
                     $("#"+repo.name).css("background-image", 'url(\''+imgUrl+'\')');
                     $("#"+repo.name).css("background-position", 'center');
