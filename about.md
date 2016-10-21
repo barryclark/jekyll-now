@@ -1,12 +1,13 @@
 ---
 layout: page
-title: About
+title: Curriculum Vitae
 permalink: /about/
 ---
 
 # Education
 
 #### 2014-Current  Imperial College London
+
 ##### 3rd year Electrical and Electronic Engineering (MEng) student - Predicted 1st Class Honours
 Completed module topics: 
 
@@ -18,6 +19,7 @@ Completed module topics:
 | Power Engineering | Semiconductor Devices |  |  |
 
 #### 2012-2013 Methodist College Kuala Lumpur
+
 Did A-Levels in :
 
 | Subject | Grade |
@@ -47,18 +49,21 @@ Did A-Levels in :
 #### Programming :
 
 Fluent in
+
 |       |       |       |       |       |
 | :---: | :---: | :---: | :---: | :---: | 
 | C     | C++   | Python | Matlab | Processing |
 | R     | HTML  | CSS   | Javascript |  |
 
 Experience in
+
 |       |       |       |
 | :---: | :---: | :---: |
 | C#    | Bash  | Java  |
 | php   | Lua   | PostgreSQL |
 
 #### Hardware :
+
 |       |       |       |
 | :---: | :---: | :---: | 
 | Arduino | Raspberry Pi | Circuit design & analysis |
@@ -66,13 +71,16 @@ Experience in
 | 3D printing | Laser cutting | CAD modelling (SketchUp, Fusion 360)|
 
 #### IT : 
+
 |  |  |  |
 | :---: | :---: | :---: |
 | Linux System Administration | Version Control (Git & GitHub) | Game Development (Unity) |
 | Graphic Design (Adobe Photoshop, Adobe Illustrator) | Video Editing (Adobe Premiere Pro) | |
 
 #### Languages 
+
 Fluent in 
+
 |  |  |  |
 | :---: | :---: | :---: |
 | English (1st language) | Malay | Mandarin |
@@ -82,68 +90,78 @@ Fluent in
 #### 2016  Engineering Lead for Imperial College Tech-Art Installation: Sensorium 
 * The project was built for display at Imperial College London’s annual event Imperial Festival 2016, and consisted of a 5m long, full-body LED mirror where silhouettes of people are displayed on a large (6720 LED’s) LED matrix in real time
 * Led a team of 8 engineers over the course of 3 months in planning and implementation of a large-scale electronics project, and worked closely with other teams within the project consisting of people from a variety of backgrounds including scientists, design engineers, art installation specialists and fashion designers 
-* More information about the project online at [https://github.com/JunShern/Sensorium]
+* More information about the project online at [https://github.com/JunShern/Sensorium](https://github.com/JunShern/Sensorium)
 
 #### 2016  Data Analysis Intern at Maxis Berhad Malaysia (telecommunications company)
 * Gained insight into telecommunications industry
-* Used R to perform customer analytics tasks, and took initiative to create a web-app using R and R Shiny to streamline a labour-intensive part of the workflow (available online at [https://github.com/JunShern/sliced])
+* Used R to perform customer analytics tasks, and took initiative to create a web-app using R and R Shiny to streamline a labour-intensive part of the workflow (available online at [https://github.com/JunShern/sliced](https://github.com/JunShern/sliced) )
 
 #### 2016  Engineering Consultant (Paid freelance contract) for The Tile Project
 * The Tile Project is a capacitive touch-based human-computer interface developed by Clarissa Kang as a graduating project at the Royal College of Art, London
 * Prototyped electronics on Bare Conductive’s Touch Board (Arduino-like microcontroller), and created interactive visuals in Processing to demonstrate how the controls map onto a computer
-* Project website: [http://www.tileproject.info]
+* Project website: [http://www.tileproject.info](http://www.tileproject.info)
 
 # Other Projects
 
 ### 2015-Present
 
-#### Pyano  (Virtual MIDI Piano Keyboard)                      
+#### Pyano  (Virtual MIDI Piano Keyboard)
+
 * Wrote a powerful open-source virtual MIDI piano keyboard in Python, which allows users to use QWERTY keyboards as piano (MIDI) keyboards, routable to software synthesizers and other MIDI-compatible programs
-* More information (and demo video) available at [https://github.com/JunShern/Pyano]
+* More information (and demo video) available at [https://github.com/JunShern/Pyano](https://github.com/JunShern/Pyano)
 
 ### 2015-2016
 
-#### Neurospell  (Brain-Computer Interface)                                
+#### Neurospell  (Brain-Computer Interface)
+
 * 2nd year Electrical and Electronic Engineering project at Imperial College London
 * Worked in a team of 7 members over the course of 6 months to create a low-cost Brain-Computer Interface device to allow motor-impaired people to type on a computer keyboard 
 * Hardware contribution : Helped to assemble EEG device (consisting of signal capture and amplifier boards from OpenEEG) and analyzed signals from the EEG probes
 * Software contribution : Created a program which flashes letters in a grid to stimulate a response in the user’s visual cortex, and wrote the interface between the custom UI and our chosen software OpenVibe, which performs digital signal processing and signal classification
-* Project website: [http://www.ee.ic.ac.uk/jorn.voegtli14/yr2proj/default.html]
+* Project website: [http://www.ee.ic.ac.uk/jorn.voegtli14/yr2proj/default.html](http://www.ee.ic.ac.uk/jorn.voegtli14/yr2proj/default.html)
 
 # Achievements & Responsibilities
 
 #### 2016-2017 
 
 ##### Imperial College Energy Society - Webmaster 
+
 * In charge of creating a new society website 
 * Led a rebranding of the society by designing a fresh new logo and online visual identity
 * Gained experience in web development, in particular using php and CSS within a Wordpress.org setup
-* Website currently hosted at [https://www.union.ic.ac.uk/scc/energy/]
+* Website currently hosted at [https://www.union.ic.ac.uk/scc/energy/](https://www.union.ic.ac.uk/scc/energy/)
 
 #### 2015-2016 
 
 ##### IC Hack ‘16 special prize “Best use of Amazon Web Services”
+
 * Hackathon prize winner: Worked in a team to create a web-application which recommends location-based free parking spaces from security camera images
 
 ##### HackScience 2016 1st Runner Up - Automated Fractioning Column
+
 * Hackathon prize winner: Worked in a team to automate common fractioning tasks in chemistry labs, capable of saving many hours of human labour per lab per day
 * Project to be developed by team members into a startup to make automated lab equipment widely available 
 
 ##### Imperial College Union Game Development Society
+
 * Active member, worked on several games in Unity (plans to release in 2017)
 
 ###### Imperial College Union Malaysian Society
+
 * Hip-hop dance choreographer for Imperial College Malaysian Night
 * Choreographed and instructed a team of 19 dancers
 
 #### 2014-2015 
 
 ##### Imperial College Robotics Society
+
 * Worked on numerous hobby electronics projects including a headphone guitar amp, a guitar looper pedal, and a 4x4 grid MIDI controller 
 * Completed ‘Robotics 102’ course : Used Matlab and Simulink with Arduino and Raspberry Pi to program 2-wheeled (differential drive) robots to play football against each other
 
 #### 2013-2014 
+
 ##### University of Nottingham Robotics Society
+
 * Autonomous Hovercraft Competition - Mentored a team of high school participants, teaching electronics as well as coding for an Arduino-based autonomous obstacle-avoiding hovercraft 
 
 #### 2012-2013
