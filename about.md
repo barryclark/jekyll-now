@@ -180,11 +180,11 @@ Did A-Levels in :
 
 # Awards
 
-#### 2014  Maxis Scholarship for Excellence 
+##### 2014  Maxis Scholarship for Excellence 
 * Full scholarship for degree at Imperial College London
 
-#### 2012  Merit Scholarship 
+##### 2012  Merit Scholarship 
 * Partial scholarship for A-Levels studies at Methodist College Kuala Lumpur
 
-#### 2011  Outstanding Achievement Award 
+##### 2011  Outstanding Achievement Award 
 * 10/10 A’s in Malaysian national examinations (Wesley Methodist School)
