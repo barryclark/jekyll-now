@@ -17,6 +17,8 @@
 		display: block;
 	}
 
+	article img { max-width: 100%; }
+
 	body {
 		line-height: 1;
 	}
@@ -1560,9 +1562,18 @@
 		padding: 0.5em 0 0.5em 2em;
 	}
 
+	blockquote p:last-child {
+    margin-bottom: 0;
+	}
+
+	blockquote p {
+	    font-size: 100%;
+	    font-weight: 300;
+	    line-height: 1.25;
+	}
+
 	code {
 		background: rgba(160, 160, 160, 0.075);
-		border: solid 1px rgba(160, 160, 160, 0.3);
 		font-family: "Courier New", monospace;
 		font-size: 0.9em;
 		margin: 0 0.25em;
