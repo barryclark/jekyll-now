@@ -4,6 +4,8 @@ title: Curriculum Vitae
 permalink: /about/
 ---
 
+Last updated 21/10/2016. Download the 2-page PDF version [here](junshern.github.io/images/CV_21-10-2016.pdf).
+
 # Education
 
 ### 2014-Current
@@ -124,7 +126,7 @@ Did A-Levels in :
 
 # Achievements & Responsibilities
 
-#### 2016-2017 
+### 2016-2017 
 
 ##### Imperial College Energy Society - Webmaster 
 
@@ -133,7 +135,7 @@ Did A-Levels in :
 * Gained experience in web development, in particular using php and CSS within a Wordpress.org setup
 * Website currently hosted at [https://www.union.ic.ac.uk/scc/energy/](https://www.union.ic.ac.uk/scc/energy/)
 
-#### 2015-2016 
+### 2015-2016 
 
 ##### IC Hack ‘16 special prize “Best use of Amazon Web Services”
 
@@ -153,26 +155,26 @@ Did A-Levels in :
 * Hip-hop dance choreographer for Imperial College Malaysian Night
 * Choreographed and instructed a team of 19 dancers
 
-#### 2014-2015 
+### 2014-2015 
 
 ##### Imperial College Robotics Society
 
 * Worked on numerous hobby electronics projects including a headphone guitar amp, a guitar looper pedal, and a 4x4 grid MIDI controller 
 * Completed ‘Robotics 102’ course : Used Matlab and Simulink with Arduino and Raspberry Pi to program 2-wheeled (differential drive) robots to play football against each other
 
-#### 2013-2014 
+### 2013-2014 
 
 ##### University of Nottingham Robotics Society
 
 * Autonomous Hovercraft Competition - Mentored a team of high school participants, teaching electronics as well as coding for an Arduino-based autonomous obstacle-avoiding hovercraft 
 
-#### 2012-2013
+### 2012-2013
 
 ##### Editorial Board - Head of Graphic Design for college magazine
 
 ##### Leo Club (community service club) - Funding Director 
 
-#### 2010-2011
+### 2010-2011
 
 ##### Social Studies Club          - President
 
