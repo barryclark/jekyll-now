@@ -6,7 +6,7 @@ permalink: /about/
 
 Last updated 21/10/2016. Download the 2-page PDF version [here](junshern.github.io/images/CV_21-10-2016.pdf).
 
-# Education
+# <i> Education
 
 ### 2014-Current
 
@@ -52,21 +52,17 @@ Did A-Levels in :
 
 # Skills
 
-#### Programming :
+##### Programming :
 
-##### Fluent in
+|     |       |       |       |       |       |       |       |       |       |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| *Fluent in : * | C     | C++   | Python | Matlab | Processing | R     | HTML  | CSS   | Javascript | 
 
-|       |       |       |       |       |       |       |       |       |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| C     | C++   | Python | Matlab | Processing | R     | HTML  | CSS   | Javascript | 
+|       |       |       |       |       |       |       |
+|  ---  |  ---  |  ---  |  ---  |  ---  |  ---  |  ---  | 
+| *Experience in : * | C#    | Bash  | Java  | php   | Lua   | PostgreSQL |
 
-##### Experience in
-
-|       |       |       |       |       |       |
-|  ---  |  ---  |  ---  |  ---  |  ---  |  ---  | 
-| C#    | Bash  | Java  | php   | Lua   | PostgreSQL |
-
-#### Hardware :
+##### Hardware :
 
 |       |       |       |
 |  ---  |  ---  |  ---  | 
@@ -74,33 +70,33 @@ Did A-Levels in :
 | PIC | AVR | FPGA & Verilog |
 | 3D printing | Laser cutting | CAD modelling (SketchUp, Fusion 360)|
 
-#### IT : 
+##### IT : 
 
 |  |  |  |
 |  ---  |  ---  |  ---  |
 | Linux System Administration | Version Control (Git & GitHub) | Game Development (Unity) |
 | Graphic Design (Adobe Photoshop, Adobe Illustrator) | Video Editing (Adobe Premiere Pro) | |
 
-#### Languages 
+##### Languages 
 
-##### Fluent in 
+##### 
 
-|  |  |  |
-|  ---  |  ---  |  ---  |
-| English (1st language) | Mandarin | Malay |
+|  |  |  |  |
+|  ---  |  ---  |  ---  |  ---  |
+| *Fluent in: *  | English (1st language) | Mandarin | Malay |
 
 # Work Experience
 
-#### 2016  Engineering Lead for Imperial College Tech-Art Installation: Sensorium 
+##### 2016  Engineering Lead for Imperial College Tech-Art Installation: Sensorium 
 * The project was built for display at Imperial College London’s annual event Imperial Festival 2016, and consisted of a 5m long, full-body LED mirror where silhouettes of people are displayed on a large (6720 LED’s) LED matrix in real time
 * Led a team of 8 engineers over the course of 3 months in planning and implementation of a large-scale electronics project, and worked closely with other teams within the project consisting of people from a variety of backgrounds including scientists, design engineers, art installation specialists and fashion designers 
 * More information about the project online at [https://github.com/JunShern/Sensorium](https://github.com/JunShern/Sensorium)
 
-#### 2016  Data Analysis Intern at Maxis Berhad Malaysia (telecommunications company)
+##### 2016  Data Analysis Intern at Maxis Berhad Malaysia (telecommunications company)
 * Gained insight into telecommunications industry
 * Used R to perform customer analytics tasks, and took initiative to create a web-app using R and R Shiny to streamline a labour-intensive part of the workflow (available online at [https://github.com/JunShern/sliced](https://github.com/JunShern/sliced))
 
-#### 2016  Engineering Consultant (Paid freelance contract) for The Tile Project
+##### 2016  Engineering Consultant (Paid freelance contract) for The Tile Project
 * The Tile Project is a capacitive touch-based human-computer interface developed by Clarissa Kang as a graduating project at the Royal College of Art, London
 * Prototyped electronics on Bare Conductive’s Touch Board (Arduino-like microcontroller), and created interactive visuals in Processing to demonstrate how the controls map onto a computer
 * Project website: [http://www.tileproject.info](http://www.tileproject.info)
@@ -109,14 +105,14 @@ Did A-Levels in :
 
 ### 2015-Present
 
-#### Pyano  (Virtual MIDI Piano Keyboard)
+##### Pyano  (Virtual MIDI Piano Keyboard)
 
 * Wrote a powerful open-source virtual MIDI piano keyboard in Python, which allows users to use QWERTY keyboards as piano (MIDI) keyboards, routable to software synthesizers and other MIDI-compatible programs
 * More information (and demo video) available at [https://github.com/JunShern/Pyano](https://github.com/JunShern/Pyano)
 
 ### 2015-2016
 
-#### Neurospell  (Brain-Computer Interface)
+##### Neurospell  (Brain-Computer Interface)
 
 * 2nd year Electrical and Electronic Engineering project at Imperial College London
 * Worked in a team of 7 members over the course of 6 months to create a low-cost Brain-Computer Interface device to allow motor-impaired people to type on a computer keyboard 
