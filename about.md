@@ -6,7 +6,7 @@ permalink: /about/
 
 Last updated 21/10/2016. Download the 2-page PDF version [here](junshern.github.io/images/CV_21-10-2016.pdf).
 
-# <i> Education
+# Education
 
 ### 2014-Current
 
