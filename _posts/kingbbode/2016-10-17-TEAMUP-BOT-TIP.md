@@ -8,8 +8,7 @@ nickname: kingbbode
 tag: [spring,boot,bot,teamup]
 ---
 
-Spring Boot로 TEAMUP BOT 만들기 - (2)
--------------------------------------
+![post_main](/images/2016/2016_10_13_TEAMUP_BOT_START/main.png)
 
 이전 포스팅에서 기본적인 봇의 뼈대를 완성했다면, 이번 포스팅에서는 보다 체계적인 구조와 기능을 완성하기 위해 스프링에서 제공해주는 아래 기능들을 활용해보려고 합니다!
 
