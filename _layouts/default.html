@@ -208,7 +208,7 @@
 								<!-- Mini Post -->
 								<article class="mini-post">
 									<header>
-										<h3><a href="/category/pilot">ZUMINTERNET ({% if site.categories.zuminternet.size > 0 %}{{site.categories.zuminternet.size}}{% else %}0{% endif %})</a></h3>
+										<h3><a href="/category/zuminternet">ZUMINTERNET ({% if site.categories.zuminternet.size > 0 %}{{site.categories.zuminternet.size}}{% else %}0{% endif %})</a></h3>
 										{% for post in site.categories.zuminternet limit:3 %}
 										<a href="{{ post.url }}"><time class="published" datetime="2015-10-20">{{ post.title }} {{ post.author }}({{ post.date | date: "%Y-%m-%d" }})</time></a>
 									  	{% endfor %}
@@ -220,7 +220,7 @@
 								<!-- Mini Post -->
 								<article class="mini-post">
 									<header>
-										<h3><a href="/category/pilot">ETC ({% if site.categories.etc.size > 0 %}{{site.categories.etc.size}}{% else %}0{% endif %})</a></h3>
+										<h3><a href="/category/etc">ETC ({% if site.categories.etc.size > 0 %}{{site.categories.etc.size}}{% else %}0{% endif %})</a></h3>
 										
 										{% for post in site.categories.etc limit:3 %}
 										<a href="{{ post.url }}"><time class="published" datetime="2015-10-20">{{ post.title }} {{ post.author }}({{ post.date | date: "%Y-%m-%d" }})</time></a>
