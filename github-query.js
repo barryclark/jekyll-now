@@ -73,10 +73,14 @@ jQuery.fn.loadRepositories = function(username) {
                 $.get(readmeUrl, function(data){
                     var imgUrl = parseForImage(data);
                     //console.log(repo.name + ' : ' + imgUrl);
-                    $("#"+repo.name).css("background-size", 'cover');
-                    $("#"+repo.name).css("background-image", 'url(\''+imgUrl+'\')');
-                    $("#"+repo.name).css("background-position", 'center');
-                    $("#"+repo.name).css("min-height", '150px');
+                    if (imgUrl) {
+                       $("#"+repo.name).css("background-size", 'cover');
+                       $("#"+repo.name).css("background-image", 'url(\''+imgUrl+'\')');
+                       $("#"+repo.name).css("background-position", 'center');
+                       $("#"+repo.name).css("min-height", '150px');
+                    } else {
+                       $("#"+repo.name).append('<h3>No Image Found</h3>');
+                    }
                 });
             });
 
