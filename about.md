@@ -8,9 +8,7 @@ Last updated 21/10/2016. Download the 2-page PDF version [here](junshern.github.
 
 # Education
 
-### 2014-Current
-
-#### Imperial College London
+### 2014-Current : Imperial College London
 
 ##### 3rd year Electrical and Electronic Engineering (MEng) student - Predicted 1st Class Honours
 Completed module topics: 
@@ -22,9 +20,7 @@ Completed module topics:
 | Communications | Signals and Linear Systems | Control Systems | Electromagnetic Fields |
 | Power Engineering | Semiconductor Devices |  |  |
 
-### 2012-2013 
-
-#### Methodist College Kuala Lumpur
+### 2012-2013 : Methodist College Kuala Lumpur
 
 Did A-Levels in :
 
@@ -52,14 +48,14 @@ Did A-Levels in :
 
 # Skills
 
-##### Programming :
+##### Programming
 
 |     |       |       |       |       |       |       |       |       |       |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | **Fluent in :** | C     | C++   | Python | Matlab | Processing | R     | HTML  | CSS   | Javascript | 
 | **Experience in :** | C#    | Bash  | Java  | php   | Lua   | PostgreSQL |  |  |  |
 
-##### Hardware :
+##### Hardware
 
 |       |       |       |
 |  ---  |  ---  |  ---  | 
@@ -67,14 +63,14 @@ Did A-Levels in :
 | PIC | AVR | FPGA & Verilog |
 | 3D printing | Laser cutting | CAD modelling (SketchUp, Fusion 360)|
 
-##### IT : 
+##### IT
 
 |  |  |  |
 |  ---  |  ---  |  ---  |
 | Linux System Administration | Version Control (Git & GitHub) | Game Development (Unity) |
 | Graphic Design (Adobe Photoshop, Adobe Illustrator) | Video Editing (Adobe Premiere Pro) | |
 
-##### Languages : 
+##### Languages
 
 |  |  |  |  |
 |  ---  |  ---  |  ---  |  ---  |
@@ -157,15 +153,15 @@ Did A-Levels in :
 
 ### 2013 & earlier
 
-##### Editorial Board - Head of Graphic Design for college magazine
+* Social Studies Club          - **President**
 
-##### Leo Club (community service club) - Funding Director 
+* Prefectorial Board           - **Secretary**
 
-##### Social Studies Club          - President
+* Interact Club (community service club)   - **International Understanding Director**
 
-##### Prefectorial Board           - Secretary 
+* Editorial Board - **Head of Graphic Design** for college magazine
 
-##### Interact Club (community service club)   - International Understanding Director
+* Leo Club (community service club) - **Funding Director**
 
 # Awards
 
