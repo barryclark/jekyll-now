@@ -67,49 +67,51 @@
 							<ul class="links">
 								<li>
 									<a href="/category/pilot">
-										<h3>PILOT PROJECT ({{ site.categories.pilot.size }})</h3>
-										<p>abc</p>
+										<h3>PILOT PROJECT ({% if site.categories.pilot.size > 0 %}{{site.categories.pilot.size}}{% else %}0{% endif %})</h3>
+										<!--<p>abc</p>-->
 									</a>
 								</li>
 								<li>
 									<a href="/category/javascript">
-										<h3>STUDY ({{ site.categories.study.size }})</h3>
-										<p>test</p>
+										<h3>STUDY ({% if site.categories.study.size > 0 %}{{site.categories.study.size}}{% else %}0{% endif %})</h3>
+										<!--<p>test</p>-->
 									</a>
 								</li>
 								<li>
 									<a href="/category/tools">
-										<h3>PROGRAMMING ({{ site.categories.programming.size }})</h3>
-										<p>ddddd</p>
+										<h3>PROGRAMMING ({% if site.categories.programming.size > 0 %}{{site.categories.programming.size}}{% else %}0{% endif %})</h3>
+										<!--<p>ddddd</p>-->
 									</a>
 								</li>
 								<li>
 									<a href="/category/java">
-										<h3>TOOLS ({{ site.categories.tools.size }})</h3>
-										<p>111</p>
+										<h3>TOOLS ({% if site.categories.tools.size > 0 %}{{site.categories.tools.size}}{% else %}0{% endif %})</h3>
+										<!--<p>111</p>-->
 									</a>
 								</li>
 								<li>
 									<a href="/category/tools">
-										<h3>ZUMINTERNET ({{ site.categories.zuminternet.size }})</h3>
-										<p>ddddd</p>
+										<h3>ZUMINTERNET ({% if site.categories.zuminternet.size > 0 %}{{site.categories.zuminternet.size}}{% else %}0{% endif %})</h3>
+										<!--<p>ddddd</p>-->
 									</a>
 								</li>
 								<li>
 									<a href="/category/tools">
-										<h3>ETC ({{ site.categories.etc.size }})</h3>
-										<p>ddddd</p>
+										<h3>ETC ({% if site.categories.etc.size > 0 %}{{site.categories.etc.size}}{% else %}0{% endif %})</h3>
+										<!--<p>ddddd</p>-->
 									</a>
 								</li>
 							</ul>
 						</section>
 
 						<!-- Actions -->
+						
 						<section>
 							<ul class="actions vertical">
-								<li><a href="#" class="button big fit">TEST</a></li>
+								<li><a href="/" class="button big fit">ALL</a></li>
 							</ul>
 						</section>
+						
 
 					</section>
 
@@ -158,7 +160,7 @@
 								<!-- Mini Post -->
 								<article class="mini-post">
 									<header>
-										<h3><a href="/category/pilot">PILOT PROJECT ({{ site.categories.pilot.size }})</a></h3>
+										<h3><a href="/category/pilot">PILOT PROJECT ({% if site.categories.pilot.size > 0 %}{{site.categories.pilot.size}}{% else %}0{% endif %})</a></h3>
 										
 										{% for post in site.categories.pilot limit:3 %}
 										<a href="{{ post.url }}"><time class="published" datetime="2015-10-20">{{ post.title }} {{ post.author }}({{ post.date | date: "%Y-%m-%d" }})</time></a>
@@ -172,7 +174,7 @@
 								<!-- Mini Post -->
 								<article class="mini-post">
 									<header>
-										<h3><a href="/category/study">STUDY ({{ site.categories.study.size }})</a></h3>
+										<h3><a href="/category/study">STUDY ({% if site.categories.study.size > 0 %}{{site.categories.study.size}}{% else %}0{% endif %})</a></h3>
 										{% for post in site.categories.study limit:3 %}
 										<a href="{{ post.url }}"><time class="published" datetime="2015-10-20">{{ post.title }} {{ post.author }}({{ post.date | date: "%Y-%m-%d" }})</time></a>
 									  	{% endfor %}
@@ -184,7 +186,7 @@
 								<!-- Mini Post -->
 								<article class="mini-post">
 									<header>
-										<h3><a href="/category/programming">PROGRAMMING ({{ site.categories.programming.size }})</a></h3>
+										<h3><a href="/category/programming">PROGRAMMING ({% if site.categories.programming.size > 0 %}{{site.categories.programming.size}}{% else %}0{% endif %})</a></h3>
 										{% for post in site.categories.programming limit:3 %}
 										<a href="{{ post.url }}"><time class="published" datetime="2015-10-20">{{ post.title }} {{ post.author }}({{ post.date | date: "%Y-%m-%d" }})</time></a>
 									  	{% endfor %}
@@ -195,7 +197,7 @@
 								<!-- Mini Post -->
 								<article class="mini-post">
 									<header>
-										<h3><a href="/category/tools">TOOLS ({{ site.categories.tools.size }})</a></h3>
+										<h3><a href="/category/tools">TOOLS ({% if site.categories.tools.size > 0 %}{{site.categories.tools.size}}{% else %}0{% endif %})</a></h3>
 										{% for post in site.categories.tools limit:3 %}
 										<a href="{{ post.url }}"><time class="published" datetime="2015-10-20">{{ post.title }} {{ post.author }}({{ post.date | date: "%Y-%m-%d" }})</time></a>
 									  	{% endfor %}
@@ -206,7 +208,7 @@
 								<!-- Mini Post -->
 								<article class="mini-post">
 									<header>
-										<h3><a href="/category/pilot">ZUMINTERNET ({{ site.categories.zuminternet.size }})</a></h3>
+										<h3><a href="/category/pilot">ZUMINTERNET ({% if site.categories.zuminternet.size > 0 %}{{site.categories.zuminternet.size}}{% else %}0{% endif %})</a></h3>
 										{% for post in site.categories.zuminternet limit:3 %}
 										<a href="{{ post.url }}"><time class="published" datetime="2015-10-20">{{ post.title }} {{ post.author }}({{ post.date | date: "%Y-%m-%d" }})</time></a>
 									  	{% endfor %}
@@ -218,7 +220,7 @@
 								<!-- Mini Post -->
 								<article class="mini-post">
 									<header>
-										<h3><a href="/category/pilot">ETC ({{ site.categories.etc.size }})</a></h3>
+										<h3><a href="/category/pilot">ETC ({% if site.categories.etc.size > 0 %}{{site.categories.etc.size}}{% else %}0{% endif %})</a></h3>
 										
 										{% for post in site.categories.etc limit:3 %}
 										<a href="{{ post.url }}"><time class="published" datetime="2015-10-20">{{ post.title }} {{ post.author }}({{ post.date | date: "%Y-%m-%d" }})</time></a>
