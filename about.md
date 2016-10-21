@@ -6,7 +6,9 @@ permalink: /about/
 
 # Education
 
-#### 2014-Current  Imperial College London
+### 2014-Current
+
+#### Imperial College London
 
 ##### 3rd year Electrical and Electronic Engineering (MEng) student - Predicted 1st Class Honours
 Completed module topics: 
@@ -18,7 +20,9 @@ Completed module topics:
 | Communications | Signals and Linear Systems | Control Systems | Electromagnetic Fields |
 | Power Engineering | Semiconductor Devices |  |  |
 
-#### 2012-2013 Methodist College Kuala Lumpur
+### 2012-2013 
+
+#### Methodist College Kuala Lumpur
 
 Did A-Levels in :
 
@@ -29,18 +33,18 @@ Did A-Levels in :
 | Physics | A\* |
 | Economics | B |
 
-#### Massively Open Online Courses (MOOCs)
+### Massively Open Online Courses (MOOCs)
 
-##### 2016         Intro to Artificial Intelligence by Sebastian Thrun and Peter Norvig (Udacity)
+##### 2016 : Intro to Artificial Intelligence by Sebastian Thrun and Peter Norvig ([Udacity](https://www.udacity.com/course/intro-to-artificial-intelligence--cs271))
 * Gained understanding of search algorithms and heuristics, Machine Learning algorithms, Bayes networks, Markov Decision Processes, Hidden Markov Models, and Particle Filters & Kalman Filters
 
-##### 2016         Intro to Computer Vision by Aaron Bobick (Udacity)
+##### 2016 : Intro to Computer Vision by Aaron Bobick ([Udacity](https://www.udacity.com/course/introduction-to-computer-vision--ud810))
 * Learned about image processing using convolution kernels, edge detection, Hough transforms, feature detection (Harris detector, SIFT detector),  and 3D vision topics (SLAM, SfM)
 
-##### 2015         Intro to Machine Learning by Andrew Ng (Coursera)
+##### 2015 : Machine Learning by Andrew Ng ([Coursera](https://www.coursera.org/learn/machine-learning))
 * Learned to apply various machine algorithms such as Linear Regression, Logistic Regression, Neural Networks, Support Vector Machines, and k-Means Clustering
 
-##### 2014         Johns Hopkins Data Science Specialization by Jeff Leek, Roger D Peng & Brian Caffo (Coursera)
+##### 2014 : Johns Hopkins Data Science Specialization by Jeff Leek, Roger D Peng & Brian Caffo ([Coursera](https://www.coursera.org/specializations/jhu-data-science))
 * (Data Scientist’s Toolbox, R Programming, Getting & Cleaning Data - Completed with Distinction)
 * Gained familiarity with R, learned about data science workflows and best practices 
 
@@ -50,17 +54,15 @@ Did A-Levels in :
 
 ##### Fluent in
 
-|       |       |       |       |       |
-| --- | --- | --- | --- | --- | 
-| C     | C++   | Python | Matlab | Processing |
-| R     | HTML  | CSS   | Javascript |  |
+|       |       |       |       |       |       |       |       |       |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| C     | C++   | Python | Matlab | Processing | R     | HTML  | CSS   | Javascript | 
 
 ##### Experience in
 
-|       |       |       |
-|  ---  |  ---  |  ---  |
-| C#    | Bash  | Java  |
-| php   | Lua   | PostgreSQL |
+|       |       |       |       |       |       |
+|  ---  |  ---  |  ---  |  ---  |  ---  |  ---  | 
+| C#    | Bash  | Java  | php   | Lua   | PostgreSQL |
 
 #### Hardware :
 
@@ -79,11 +81,11 @@ Did A-Levels in :
 
 #### Languages 
 
-Fluent in 
+##### Fluent in 
 
 |  |  |  |
 |  ---  |  ---  |  ---  |
-| English (1st language) | Malay | Mandarin |
+| English (1st language) | Mandarin | Malay |
 
 # Work Experience
 
@@ -146,7 +148,7 @@ Fluent in
 
 * Active member, worked on several games in Unity (plans to release in 2017)
 
-###### Imperial College Union Malaysian Society
+##### Imperial College Union Malaysian Society
 
 * Hip-hop dance choreographer for Imperial College Malaysian Night
 * Choreographed and instructed a team of 19 dancers
