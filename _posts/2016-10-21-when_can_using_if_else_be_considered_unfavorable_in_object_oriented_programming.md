@@ -5,7 +5,7 @@ tags: [java, quora]
 keywords: [programming, if, else, oop, object oriented, object oriented programming]
 image: /images/Java_logo.jpg
 thumbnail: true
-excerpt: One way using if/else would be bad design, from and OOP standpoint, is if you’re using a chain of instanceof checks instead of polymorphism.
+excerpt: One way using if/else would be bad design, from an OOP standpoint, is if you’re using a chain of instanceof checks instead of polymorphism.
 ---
 
 This is my answer to [this question](https://www.quora.com/Why-is-it-a-bad-programming-practice-to-use-if-else-I-am-asking-this-question-from-the-point-of-view-of-good-OO-design) on [Quora](https://www.quora.com).
