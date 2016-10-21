@@ -42,7 +42,10 @@ jQuery.fn.loadRepositories = function(username) {
                 target.append("<div class='"+ /*colour +*/ " card'>"
                     + "<div id=" + repo.name + " class='content' style='background-color:white'>"
                     //+ '<i class="right floated like icon"></i><i class="right floated star icon"></i>'
-                    + "<div style='text-align:center'><a style='' href='"+ repo.html_url + "''>" + repo.name + "</a></div>"
+                    //+ "<div style='text-align:center'><a style='' href='"+ repo.html_url + "''>" + repo.name + "</a></div>"
+                    + "</div>"
+                    + '<div class="extra content">'
+                        + "<a style='' href='"+ repo.html_url + "''>" + repo.name + "</a>"
                     + "</div>"
                     + '<div class="extra content">'
                         + "<div class='description'><p>" + repo.description + "</p></div>"
