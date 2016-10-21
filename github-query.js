@@ -40,10 +40,10 @@ jQuery.fn.loadRepositories = function(username) {
                     commitCount = commitCount + contributors[i].contributions; // Add up the contributions (# of commits) of each contributor
                 }
                 target.append("<div class='"+ /*colour +*/ " card'>"
-                    + "<div id=" + repo.name + " class='content' style='background-color:white'><a style='' href='"+ repo.html_url + "''>"
+                    + "<div id=" + repo.name + " class='content' style='background-color:white'>"
                     //+ '<i class="right floated like icon"></i><i class="right floated star icon"></i>'
                     + "<div style='text-align:center'><a style='' href='"+ repo.html_url + "''>" + repo.name + "</a></div>"
-                    + "</a></div>"
+                    + "</div>"
                     + '<div class="extra content">'
                         + "<div class='description'><p>" + repo.description + "</p></div>"
                     + "</div>"
@@ -54,10 +54,10 @@ jQuery.fn.loadRepositories = function(username) {
                         + '<span class="left floated code"><i class="code icon"></i>' + commitCount + ' commits</span>'
                         + '<span class="right floated star"><i class="star icon"></i>' + repo.stargazers_count + '</span>'
                     + '</div>'
-                    + '<div class="ui bottom attached button">'
+                    + '<a style='' href='"+ repo.html_url + "''><div class="ui bottom attached button">'
                         + '<i class="github alternate icon"></i>'
                         + 'View on GitHub'
-                    + '</div>'
+                    + '</div></a>'
                     //+ '<div class="ui standard teal progress">'
 //                     + '<div class="ui bottom attached teal progress">'
 //                         + '<div class="bar"></div>'
