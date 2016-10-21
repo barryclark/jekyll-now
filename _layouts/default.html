@@ -24,17 +24,18 @@
       <div class="container">
         <header class="masthead clearfix">
           <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
-
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
+          
+          <div>
+            <div class="site-info">
+              <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+              <p class="site-description">{{ site.description }}</p>
+            </div>
+            <nav>
+              <a href="{{ site.baseurl }}/">Home</a>
+              <a href="{{ site.baseurl }}/about">CV</a>
+              <a href="{{ site.baseurl }}/blog">Blog</a>
+            </nav>
           </div>
-
-          <nav>
-            <a href="{{ site.baseurl }}/">Home</a>
-            <a href="{{ site.baseurl }}/about">CV</a>
-            <a href="{{ site.baseurl }}/blog">Blog</a>
-          </nav>
           
           <div>
             <p>I'm a maker, programmer and 3rd year Electrical and Electronic Engineering student at Imperial College London. 
@@ -42,11 +43,14 @@
               However, I'm generally enthusiastic about all making / programming / electronics-related topics, 
               so do get in touch with me if you'd like to collaborate on a project or chat about any of my existing work!</p>
             <div class="container">
-              <footer class="footer">
-                {% include svg-icons.html %}
-              </footer>
+              <a href="mailto:chanjunshern@gmail.com"><i class="svg-icon email"></i>
+                <p>chanjunshern@gmail.com</p></a>
+              <br>
+              <a href="https://github.com/JunShern"><i class="svg-icon github"></i>
+                <p>Visit me on GitHub</p></a>
             </div>
           </div>
+          
         </header>
       </div>
     </div>
