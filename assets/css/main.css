@@ -18,6 +18,8 @@
 	}
 
 	article img { max-width: 100%; }
+	
+	img[alt=post_main] { width: 100%; }
 
 	body {
 		line-height: 1;
