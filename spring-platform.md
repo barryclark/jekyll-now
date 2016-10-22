@@ -1,6 +1,5 @@
 ---
 layout: page
-title: Spring Platform
 permalink: /spring-platform
 ---
 
