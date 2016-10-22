@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Hal-i Cünunum
+permalink: /hal-i-cünunum
 ---
 
 <a href="#18Oct2016">18 Ekim 2016 - 16:30</a>

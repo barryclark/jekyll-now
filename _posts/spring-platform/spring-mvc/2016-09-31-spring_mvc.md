@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Spring MVC Introduction
+permalink: /blog/spring-mvc-introduction
 ---
 
 Merhaba arkadaslar, bu yazımda Spring MVC konusuna giriş yapacağız.
@@ -89,7 +90,7 @@ public class Client {
 
     // Constructor
     Client() {
-       
+
     }
 
     public void setService(Service service){
@@ -116,7 +117,7 @@ NOT 2 : Spring MVC öğrenmek için Servlet ve kısmen de olsa JSP bilmeniz gere
 
 Spring MVC'in mimarisine bakalım;
 
-<img class="size-full wp-image-1462 aligncenter" src="http://alicanakkus.com/wp-content/uploads/2016/08/Screenshot-from-2016-08-14-18-58-36.png" alt="Screenshot from 2016-08-14 18-58-36" width="735" height="471" />
+![spring mvc request lifecycle](/images/spring-platform/spring-mvc-request.png)
 
 Spring MVC, request oriented bir mimariye sahiptir. JSF gibi component based değildir, component based'ın dez avantajları yoktur bu nedenle. Spring MVC en temelde bir Front Controller ile çalışır.
 
@@ -124,21 +125,20 @@ Front Controller, tüm request'lerin ana bir merkezden geçmesini sağlar. Front
 
 Front Controller en basit olarak bir Servlet'tir. URL mapping olarak Spring'in handle etmesi istediğiniz request'ler için bir mapping yaparsınız(misal /*) ve bu isteklerin tamamı FrontController tarafından ilk olarak yakalanır. DispatcherServlet olarak adlandırılır.
 
-<img class="size-full wp-image-1463 aligncenter" src="http://alicanakkus.com/wp-content/uploads/2016/08/Screenshot-from-2016-08-14-19-03-54.png" alt="Screenshot from 2016-08-14 19-03-54" width="583" height="498" />
+![spring mvc design](/images/spring-platform/spring-mvc-design.png)
 
 Yukarıdaki figür'den sonra bir request'in ilk çıkış anından son kullanıcıya ulaşmasına kadar gerçekleşen adımları belirtelim;
-<ol>
- 	<li>Client/Browser herhangi bir sayfaya bir istekde bulunur.</li>
- 	<li>Spring Front Controller(Dispatcher Controller) bu isteği yakalar.</li>
- 	<li>Gelen istek ile ilişkilendirilmiş bir Controller arar. HandlerMapping yardımıyla isteği handle edecek controller aranır,  index.jsp için şu controller çalışsın diyebilirsiniz. Controller bulunamaz ise request lifecycle kesilir ve hata dönülür.</li>
- 	<li>Controller ile ilişkilendirildi ise istek yoluna devam eder. Controller, Model ile gerekli aksiyonları gerçekleştirerek bir view döndürür. DispatcherServlet, ViewResolver yardımı ile view'ı bulur ve var ise model bilgilerini view'a bind eder. View Resolver olarak JSP, Thymeleaf gibi çözümler kullanılabilir. İkisi ile de örnekler yapacağız.</li>
- 	<li>Request'e response olarak içerisine model bind edilmiş bir view döndürülür.</li>
-</ol>
+
+1. Client/Browser herhangi bir sayfaya bir istekde bulunur.
+2. Spring Front Controller(Dispatcher Controller) bu isteği yakalar.
+ 	Gelen istek ile ilişkilendirilmiş bir Controller arar. HandlerMapping yardımıyla isteği handle edecek controller aranır,  index.jsp için şu controller çalışsın diyebilirsiniz. Controller bulunamaz ise request lifecycle kesilir ve hata dönülür.
+3. Controller ile ilişkilendirildi ise istek yoluna devam eder. Controller, Model ile gerekli aksiyonları gerçekleştirerek bir view döndürür. DispatcherServlet, ViewResolver yardımı ile view'ı bulur ve var ise model bilgilerini view'a bind eder. View Resolver olarak JSP, Thymeleaf gibi çözümler kullanılabilir. İkisi ile de örnekler yapacağız.
+4. Request'e response olarak içerisine model bind edilmiş bir view döndürülür.
+
 Tüm akış aşağıdakine benzerdir;
 
-<img class="size-full wp-image-1464 aligncenter" src="http://alicanakkus.com/wp-content/uploads/2016/08/lifecycle.jpg" alt="lifecycle" width="638" height="479" />
+![spring mvc lifecycle](/images/spring-platform/spring-mvc-lifecycle.jpg)
 
-&nbsp;
 
 DispatcherServlet'i temel olarak url mapping yapan birşey gibi görmeyin. Spring IoC ile beraber kullanabileceğiniz ve diğer tüm Spring özelliklerini kullanabileceğiniz bir yapıdır.
 
