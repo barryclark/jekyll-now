@@ -10,7 +10,7 @@ permalink: /spring-platform
       <div class="panel-heading">Spring MVC</div>
       <div class="panel-body">
         <ul>
-          <li>Spring MVC Introduction -> <a href="{{ site.baseurl }}/blog/spring-mvc-introduction/">Read More</a></li>
+          <li>Spring MVC Introduction -> <a href="{{ site.baseurl }}/blog/spring-aop-introduction">Read More</a></li>
         </ul>
       </div>
     </div>
@@ -18,7 +18,7 @@ permalink: /spring-platform
       <div class="panel-heading">Spring AOP</div>
       <div class="panel-body">
         <ul>
-          <li>Spring AOP Introduction -> <a href="{{ site.baseurl }}/blog/spring-aop-introduction/">Read More</a></li>
+          <li>Spring AOP Introduction -> <a href="{{ site.baseurl }}/blog/spring-aop-introduction">Read More</a></li>
         </ul>
       </div>
     </div>
