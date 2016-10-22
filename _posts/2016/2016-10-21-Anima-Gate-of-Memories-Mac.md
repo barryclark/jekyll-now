@@ -4,8 +4,8 @@ title: "Anima: Gate of Memories Coming to Mac"
 description: "Kickstarted, then released in June, Anima will be available on Mac on October 28th."
 category: video games
 featured: animagate.jpg
-amazonterm: Anima
-tags: [games, unboxing, smiths of winterforge, table tyrant, kickstarter]
+amazonterm: "Anima"
+tags: [video games, anima, badland games]
 author: Rob Kalajian
 ---
 
