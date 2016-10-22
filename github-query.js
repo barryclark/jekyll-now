@@ -11,7 +11,7 @@ jQuery.githubReadme = function(repo_url, callback) {
 }
  
 jQuery.fn.loadRepositories = function(username) {
-    this.html("<span>Querying GitHub for " + username +"'s repositories...</span>");
+    this.html("<span><i class="spinner loading icon"></i> Querying GitHub for " + username +"'s repositories...</span>");
      
     var target = this;
     $.githubUser(username, function(data) {
