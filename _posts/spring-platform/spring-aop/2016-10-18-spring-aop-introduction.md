@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Spring AOP Introduction
-permalink: /blog/spring-aop-introduction
+permalink: /blog/spring-platform/spring-aop-tutorial/spring-aop-introduction
 ---
 
 

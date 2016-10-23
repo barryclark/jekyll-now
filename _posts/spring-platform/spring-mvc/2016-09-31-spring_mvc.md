@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Spring MVC Introduction
-permalink: /blog/spring-mvc-introduction
+permalink: /blog/spring-platform/spring-mvc-tutorial/spring-mvc-introduction
 ---
 
 Merhaba arkadaslar, bu yazımda Spring MVC konusuna giriş yapacağız.

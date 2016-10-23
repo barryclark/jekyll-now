@@ -14,10 +14,17 @@
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
+    <script>
+			function info(){
+        $("#myModal").modal('show');
+      }
+		</script>
+
+
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
   </head>
 
-  <body>
+  <body onload="info()">
     <div class="wrapper-masthead">
       <div class="container">
         <header class="masthead clearfix">
@@ -25,14 +32,50 @@
 
           <div class="site-info">
             <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
+            <p class="site-description">{{ site.description }} <a href="{{ site.baseurl }}/hal-i-cünunum">Hal-i Cünunum</a> <a href="{{ site.baseurl }}/about">About</a></p>
           </div>
 
-          <nav>
-            <a href="{{ site.baseurl }}/">Home</a>
-            <a href="{{ site.baseurl }}/spring-platform">Spring Platform</a>
-            <a href="{{ site.baseurl }}/hal-i-cünunum">Hal-i Cünunum</a>
-            <a href="{{ site.baseurl }}/about">About</a>
+          <nav class="navbar navbar-inverse">
+              <div class="navbar-header">
+                <a class="navbar-brand active" href="{{ site.baseurl }}/">Home</a>
+              </div>
+              <ul class="nav navbar-nav">
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="{{ site.baseurl }}/spring-platform">Spring<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                      <li><a href="{{ site.baseurl }}/blog/spring-platform/spring-mvc/spring-mvc-tutorial">Spring MVC</a></li>
+                      <li><a href="{{ site.baseurl }}/blog/spring-platform/spring-aop/spring-aop-tutorial">Spring AOP</a></li>
+                      <li><a href="{{ site.baseurl }}/blog/spring-platform/spring-data/spring-data-tutorial">Spring DATA</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="{{ site.baseurl }}/java-ee">Java EE<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                      <li><a href="{{ site.baseurl }}/blog/java-ee/servlet-jsp/servlet-jsp-tutorial">Servlet&JSP</a></li>
+                      <li><a href="{{ site.baseurl }}/blog/java-ee/play-framework/play-framework-tutorial">Play Framework</a></li>
+                      <li><a href="{{ site.baseurl }}/blog/java-ee/vaadin/vaadin-tutorial">Vaadin</a></li>
+                      <li><a href="{{ site.baseurl }}/blog/java-ee/web-services/jax-rs-tutorial">JAX-RS</a></li>
+                      <li><a href="{{ site.baseurl }}/blog/java-ee/web-services/jax-ws-tutorial">JAX-WS</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="{{ site.baseurl }}/apache">Apache Guys<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                      <li><a href="{{ site.baseurl }}/blog/apache/apache-maven/apache-maven-tutorial">Apache Maven</a></li>
+                      <li><a href="{{ site.baseurl }}/blog/apache/apache-mina/apache-mina-tutorial">Apache Mina</a></li>
+                      <li><a href="{{ site.baseurl }}/blog/apache/apache-log4j/apache-log4j-tutorial">Apache Log4j</a></li>
+                      <li><a href="{{ site.baseurl }}/blog/apache/apache-hadoop/apache-hadoop-tutorial">Apache Hadoop</a></li>                
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="{{ site.baseurl }}/java-ee">View Tech.<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                      <li><a href="{{ site.baseurl }}/blog/view-tech/backbone/backbone-tutorial">Backbone.js</a></li>
+                      <li><a href="{{ site.baseurl }}/blog/view-tech/thymeleaf/thymeleaf-tutorial">Thymeleaf</a></li>
+                      <li><a href="{{ site.baseurl }}/blog/java-ee/servlet-jsp/servlet-jsp-tutorial">JSP</a></li>
+                  </ul>
+                </li>
+              </ul>
           </nav>
         </header>
       </div>
@@ -49,6 +92,24 @@
         </footer>
       </div>
     </div>
+
+    <div id="myModal" class="modal fade">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal"
+							aria-hidden="true">&times;</button>
+						<h4 class="modal-title">Site Info</h4>
+					</div>
+					<div class="modal-body">
+						<p>Merhabalar, <a href="http://www.alicanakkus.com">alicanakkus.com</a> adresinde ki yazıları bu adrese taşımaktayım. Taşıma işlemi bittikten sonra tekrar ziyaret ediniz :)</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
 
     {% include analytics.html %}
   </body>
