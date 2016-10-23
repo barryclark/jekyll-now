@@ -117,7 +117,7 @@ nal message -->
     <table class="full-width-table" border="0" align="center" cellspacing="30" style="margin-left: auto; margin-right: auto; width: 500px; border-spacing: 30px; border-collapse:separate;">
       <tr>
         <td style="" height="20" align="center" valign="middle" ><b
-r/><a id="applyLink" href="https://www.amazon.com/gp/r.html?C=3DBO2ZZ2TZDRG8&R=3DFI83HBZOQ5TW&T=3DC&U=3Dhttps%3A%2F%2Fwww.amazon.com%2Fgp%2Fcss%2Fgc%2Fpayment%2Fview-gc-balance%3Fcode%3DCMKMLLYRQHR8GR%26ref_%3Dpe_1870990_140900700&A=3DCOBRDXVWRJ5KQWF3AHLPSWYZFPUA&H=3D7SGUYP5JX6ZVH6SKH7OGCNCB2HIA&ref_=3Dpe_1870990_140900700"><img width="300" src="https://images-na.ssl-images-amazon.com/images/G/01/gc/formation/assets/us_apply._CB278630597.png"/></a>
+r/><a id="applyLink" href="https://www.amazon.com/gp/r.html?C=3DBO2ZZ2TZDRG8&R=3DFI83HBZOQ5TW&T=3DC&U=3Dhttps%3A%2F%2Fwww.amazon.com%2Fgp%2Fcss%2Fgc%2Fpayment%2Fview-gc-balance%3Fcode%3DCMKMLLYRQHR8GR%26ref_%3Dpe_1870990_140900700&A=3DCOBRDXVWRJ5KQWF3AHLPSWYZFPUA&H=3D7SGUYP5JX6ZVH6SKH7OGCNCB2HIA&ref_=3Dpe_1870990_140900700"><img width="300" src="https://images-na.ssl-images-amazon.com/images/G/01/gc/formation/assets/us_apply._CB278630597_.png"/></a>
           <p style="font-size:13px; font-family:Arial,Helvetica,sans-seri=
 f; color:#666;">Don't have an Amazon account?<br/><a href="https://www.amazon.com/gp/r.html?C=3DBO2ZZ2TZDRG8&R=3DFI83HBZOQ5TW&T=3DC&U=3D&A=3DSVBEHCPKJ4H0LI90NUNNUAAJICGA&H=3D7UUIHTVBAESCVJHDD6KMAYZBNCWA" style="color: #0066c0;">Sign-up</a> to redeem.</p></td>
       </tr>
@@ -166,5 +166,5 @@ Order Number: 116-4628309-3213821</p></td>
       </tr>
     </table>
     <!-- End Bottom ToC Section -->
-  </td></tr></table>
-<img width="1" height="1" src="https://www.amazon.com/gp/r.html?C=3DBO2ZZ2TZDRG8&R=3DFI83HBZOQ5TW&T=3DE&U=3Dhttps%3A%2F%2Fimages-na.ssl-images-amazon.com%2Fimages%2FG%2F01%2Fnav%2Ftransp.gif&A=3DCSWIL22PAJV3H65AAFTINEZMGGAA&H=3DT6XOD9BWPSSATWE9J5XDWPN8XAYA&ref_=3Dpe_1870990_140900700_open" /></div>
+  </td>
+<img width="1" height="1" src="https://www.amazon.com/gp/r.html?C=3DBO2ZZ2TZDRG8&R=3DFI83HBZOQ5TW&T=3DE&U=3Dhttps%3A%2F%2Fimages-na.ssl-images-amazon.com%2Fimages%2FG%2F01%2Fnav%2Ftransp.gif&A=3DCSWIL22PAJV3H65AAFTINEZMGGAA&H=3DT6XOD9BWPSSATWE9J5XDWPN8XAYA&ref_=3Dpe_1870990_140900700_open" />
