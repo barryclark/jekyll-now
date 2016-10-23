@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Sydney
+title: Happy Birthday, Sydney
 permalink: /sydney/
 published: true
 ---
