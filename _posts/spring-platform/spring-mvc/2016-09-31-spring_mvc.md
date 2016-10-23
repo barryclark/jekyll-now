@@ -117,7 +117,7 @@ NOT 2 : Spring MVC öğrenmek için Servlet ve kısmen de olsa JSP bilmeniz gere
 
 Spring MVC'in mimarisine bakalım;
 
-![spring mvc request lifecycle](/images/spring-platform/spring-mvc-request.png)
+![spring mvc request lifecycle](/images/spring-platform/spring-mvc/spring-mvc-request.png)
 
 Spring MVC, request oriented bir mimariye sahiptir. JSF gibi component based değildir, component based'ın dez avantajları yoktur bu nedenle. Spring MVC en temelde bir Front Controller ile çalışır.
 
@@ -125,7 +125,7 @@ Front Controller, tüm request'lerin ana bir merkezden geçmesini sağlar. Front
 
 Front Controller en basit olarak bir Servlet'tir. URL mapping olarak Spring'in handle etmesi istediğiniz request'ler için bir mapping yaparsınız(misal /*) ve bu isteklerin tamamı FrontController tarafından ilk olarak yakalanır. DispatcherServlet olarak adlandırılır.
 
-![spring mvc design](/images/spring-platform/spring-mvc-design.png)
+![spring mvc design](/images/spring-platform/spring-mvc/spring-mvc-design.png)
 
 Yukarıdaki figür'den sonra bir request'in ilk çıkış anından son kullanıcıya ulaşmasına kadar gerçekleşen adımları belirtelim;
 
@@ -137,7 +137,7 @@ Yukarıdaki figür'den sonra bir request'in ilk çıkış anından son kullanıc
 
 Tüm akış aşağıdakine benzerdir;
 
-![spring mvc lifecycle](/images/spring-platform/spring-mvc-lifecycle.jpg)
+![spring mvc lifecycle](/images/spring-platform/spring-mvc/spring-mvc-lifecycle.jpg)
 
 
 DispatcherServlet'i temel olarak url mapping yapan birşey gibi görmeyin. Spring IoC ile beraber kullanabileceğiniz ve diğer tüm Spring özelliklerini kullanabileceğiniz bir yapıdır.

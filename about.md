@@ -23,15 +23,7 @@ Günde ortalama ~15 bardak çay içiyorum.
 Istanbul Java User Group facebook <span style="color: #808080;"><a style="color: #808080;" href="http://www.facebook.com/groups/istanbuljug" target="_blank">adresi</a></span> ve <span style="color: #808080;"><a style="color: #808080;" href="http://istanbul-jug.org/" target="_blank">sitesi</a></span>.
 
 Java SE, Java EE, Android, OOP, Web konularında hafta içi online ders ve haftasonu çay eşliğinde bir cafe'de bu konuları beraber çalışabiliriz.
-asd
 
-
-asd
-as
-d
-asd
-as
-d
 
 İletişim için 536-762-06-00 numaramdan bana ulaşabilirsiniz yada mail gönderebilirsiniz.
 
