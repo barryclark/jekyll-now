@@ -1,7 +1,7 @@
 ---
 published: false
 layout: post
-title: Where do I borrow equipment from?
+title: Where Do I Borrow Equipment From?
 tags:
   - core skills
 ---
