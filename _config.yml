@@ -6,7 +6,7 @@
 name: Nathaniel Joselson
 
 # Short bio or description (displayed in the header)
-description: Statistics Enthusiast committed to making all forms of oppression fall.
+description: Statistics student committed to making all forms of oppression fall.
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://raw.githubusercontent.com/Njoselson/Njoselson.github.io/master/images/meimage.jpg
@@ -34,7 +34,7 @@ footer-links:
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
-disqus:
+disqus: www-njoselson-github-io
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 google_analytics:
