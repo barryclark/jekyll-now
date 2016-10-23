@@ -16,7 +16,18 @@
 
     <script>
 			function info(){
-        $("#myModal").modal('show');
+        if (typeof(Storage) !== "undefined") {
+            // Code for localStorage/sessionStorage.
+
+            var info = localStorage.getItem("info");
+            if(info == "true"){
+              //don't need anythings here
+            }else{
+                localStorage.setItem("info", "true");
+                $("#myModal").modal('show');
+            }
+        }
+
       }
 		</script>
 
@@ -32,13 +43,13 @@
 
           <div class="site-info">
             <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }} <a href="{{ site.baseurl }}/hal-i-cünunum">Hal-i Cünunum</a> <a href="{{ site.baseurl }}/about">About</a></p>
+            <p>{{ site.description }}
+              <a href="{{ site.baseurl }}/hal-i-cünunum"><span class="label label-default">Hal-i Cünunum</span></a>
+              <a href="{{ site.baseurl }}/about"><span class="label label-info">About</span></a>
+            </p>
           </div>
 
           <nav class="navbar navbar-inverse">
-              <div class="navbar-header">
-                <a class="navbar-brand active" href="{{ site.baseurl }}/">Home</a>
-              </div>
               <ul class="nav navbar-nav">
                 <li class="dropdown">
                   <a class="dropdown-toggle" data-toggle="dropdown" href="{{ site.baseurl }}/spring-platform">Spring<span class="caret"></span></a>
@@ -64,11 +75,11 @@
                       <li><a href="{{ site.baseurl }}/blog/apache/apache-maven/apache-maven-tutorial">Apache Maven</a></li>
                       <li><a href="{{ site.baseurl }}/blog/apache/apache-mina/apache-mina-tutorial">Apache Mina</a></li>
                       <li><a href="{{ site.baseurl }}/blog/apache/apache-log4j/apache-log4j-tutorial">Apache Log4j</a></li>
-                      <li><a href="{{ site.baseurl }}/blog/apache/apache-hadoop/apache-hadoop-tutorial">Apache Hadoop</a></li>                
+                      <li><a href="{{ site.baseurl }}/blog/apache/apache-hadoop/apache-hadoop-tutorial">Apache Hadoop</a></li>
                   </ul>
                 </li>
                 <li class="dropdown">
-                  <a class="dropdown-toggle" data-toggle="dropdown" href="{{ site.baseurl }}/java-ee">View Tech.<span class="caret"></span></a>
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="{{ site.baseurl }}/java-ee">View Technology<span class="caret"></span></a>
                   <ul class="dropdown-menu">
                       <li><a href="{{ site.baseurl }}/blog/view-tech/backbone/backbone-tutorial">Backbone.js</a></li>
                       <li><a href="{{ site.baseurl }}/blog/view-tech/thymeleaf/thymeleaf-tutorial">Thymeleaf</a></li>
