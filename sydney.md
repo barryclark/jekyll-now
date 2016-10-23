@@ -4,13 +4,9 @@ title: Sydney
 permalink: /sydney/
 published: true
 ---
-<div style=3D"padding: 0; margin: 0; font-family:Arial,Helvetica,sans-seri=
-f"><img width=3D"1" height=3D"1" src=3D"https://www.amazon.com/gp/r.html?C=
-=3DBO2ZZ2TZDRG8&R=3DFI83HBZOQ5TW&T=3DO&U=3Dhttps%3A%2F%2Fimages-na.ssl-imag=
-es-amazon.com%2Fimages%2FG%2F01%2Fnav%2Ftransp.gif&A=3DR8NFUICYCQAYH4C6J6PE=
-3LQKCUGA&H=3DAIAFE96VKLTTFXMLJKOQAUZVOAGA&ref_=3Dpe_1870990_140900700_opens=
-" />
-  <div style=3D"display:none !important;
+<div style="padding: 0; margin: 0; font-family:Arial,Helvetica,sans-serif"><img width="1" height="1" src="https://www.amazon.com/gp/r.html?C=3DBO2ZZ2TZDRG8&R=3DFI83HBZOQ5TW&T=3DO&U=3Dhttps%3A%2F%2Fimages-na.ssl-imag=
+es-amazon.com%2Fimages%2FG%2F01%2Fnav%2Ftransp.gif&A=3DR8NFUICYCQAYH4C6J6PE3LQKCUGA&H=3DAIAFE96VKLTTFXMLJKOQAUZVOAGA&ref_=3Dpe_1870990_140900700_opens"/>
+  <div style="display:none !important;
            visibility:hidden;
            mso-hide:all;
            font-size:1px;
@@ -20,7 +16,7 @@ es-amazon.com%2Fimages%2FG%2F01%2Fnav%2Ftransp.gif&A=3DR8NFUICYCQAYH4C6J6PE=
            max-width:0px;
            opacity:0;
            overflow:hidden;">Hope you enjoy this Amazon gift card! </div>
-  <div style=3D"display:none !important;
+  <div style="display:none !important;
            visibility:hidden;
            mso-hide:all;
            font-size:1px;
@@ -29,13 +25,10 @@ es-amazon.com%2Fimages%2FG%2F01%2Fnav%2Ftransp.gif&A=3DR8NFUICYCQAYH4C6J6PE=
            max-height:0px;
            max-width:0px;
            opacity:0;
-           overflow:hidden;">Apply to your Amazon account to use on million=
-s of items.</div>
+           overflow:hidden;">Apply to your Amazon account to use on millions of items.</div>
   <!-- Wrapper table for background color -->
-  <table width=3D"100%" border=3D"0" align=3D"center" cellpadding=3D"0" cel=
-lspacing=3D"0"><tr><td width=3D"100%" bgcolor=3D"f3f3f3" style=3D"font-size=
-:12px; font-family:Arial,Helvetica,sans-serif; color:#666666; line-height:1=
-.2em;">
+  <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0"><tr><td width="100%" bgcolor="f3f3f3" style="font-size=
+:12px; font-family:Arial,Helvetica,sans-serif; color:#666666; line-height:1.2em;">
     <style>
       a[x-apple-data-detectors] {
         color: inherit !important;
@@ -66,51 +59,51 @@ lspacing=3D"0"><tr><td width=3D"100%" bgcolor=3D"f3f3f3" style=3D"font-size=
       }
     </style>
     <!-- Top area text -->
-    <table style=3D"border-collapse: separate; border-spacing: 10px; margin=
--left: auto; margin-right: auto;" border=3D"0" align=3D"center" cellpadding=
-=3D"30" cellspacing=3D"0">
+    <table style="border-collapse: separate; border-spacing: 10px; margin=
+-left: auto; margin-right: auto;" border="0" align="center" cellpadding=
+"30" cellspacing="0">
       <tr>
-        <td align=3D"center" valign=3D"middle" style=3D"width: 500px; paddi=
-ng-top:50px;"><img id=3D"alogo" width=3D"100" src=3D"https://images-na.ssl-=
+        <td align="center" valign="middle" style="width: 500px; paddi=
+ng-top:50px;"><img id="alogo" width="100" src="https://images-na.ssl-=
 images-amazon.com/images/G/01/gc/formation/assets/amazon_logo_color_135x42.=
 _CB280672829_.png"/></td>
       </tr>
     </table>
 
     <!-- Main section table manages the drop shadow -->
-    <table bgcolor=3D"f3f3f3" class=3D"full-width-table" border=3D"0" align=
-=3D"center" cellpadding=3D"0" cellspacing=3D"0" style=3D"padding: 0; width:=
+    <table bgcolor="f3f3f3" class="full-width-table" border="0" align
+="center" cellpadding="0" cellspacing="0" style="padding: 0; width:=
  500px; margin-left: auto; margin-right: auto;">
       <tr>
         <td>
           <!-- Inner table holds design image, claim code buttons and perso=
 nal message -->
-            <table border=3D"0" bgcolor=3D"ffffff" align=3D"center" cellpad=
-ding=3D"0" cellspacing=3D"0" style=3D"padding: 0; margin: 0; border-radius:=
+            <table border="0" bgcolor="ffffff" align="center" cellpad
+ding="0" cellspacing="0" style="padding: 0; margin: 0; border-radius:=
  4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -moz-box-shadow:=
 0px 1px 3px #cacaca !important; -webkit-box-shadow:0px 1px 3px #cacaca !imp=
 ortant; box-shadow:0px 1px 3px #cacaca !important; border-collapse:separate=
  !important;">
               <tr>
-                <td align=3D"center" style=3D"line-height:0 !important;"><a=
- href=3D"https://www.amazon.com/gp/r.html?C=3DBO2ZZ2TZDRG8&R=3DFI83HBZOQ5TW=
+                <td align="center" style="line-height:0 !important;"><a=
+ href="https://www.amazon.com/gp/r.html?C=3DBO2ZZ2TZDRG8&R=3DFI83HBZOQ5TW=
 &T=3DC&U=3Dhttps%3A%2F%2Fwww.amazon.com%2Fgp%2Fcss%2Fgc%2Fpayment%2Fview-gc=
 -balance%3Fcode%3DCMKMLLYRQHR8GR%26ref_%3Dpe_1870990_140900700&A=3DCOBRDXVW=
 RJ5KQWF3AHLPSWYZFPUA&H=3D7SGUYP5JX6ZVH6SKH7OGCNCB2HIA&ref_=3Dpe_1870990_140=
 900700">
-                  <img src=3D"https://images-na.ssl-images-amazon.com/image=
-s/G/01/gc/formation/assets/B01FIS88SYD._CB277123205_.png" alt=3D"Amazon.com=
- Gift Card" border=3D"0" align=3D"center" style=3D"width: 100%; display:blo=
+                  <img src="https://images-na.ssl-images-amazon.com/image=
+s/G/01/gc/formation/assets/B01FIS88SYD._CB277123205_.png" alt="Amazon.com=
+ Gift Card" border="0" align="center" style="width: 100%; display:blo=
 ck; border-radius: 4px 4px 0 0; -webkit-border-radius: 4px 4px 0 0; -moz-bo=
-rder-radius: 4px 4px 0 0; " id=3D"mainImage"/>
+rder-radius: 4px 4px 0 0; " id="mainImage"/>
                     </a></td>
               </tr>
               <tr>
-                <td style=3D"border-bottom: 1px solid #eee;">
-                  <table width=3D"100%" cellspacing=3D"30" cellpadding=3D"0=
-" style=3D"padding: 0; border-collapse: separate; border-spacing: 30px;">
+                <td style="border-bottom: 1px solid #eee;">
+                  <table width="100%" cellspacing="30" cellpadding="0=
+" style="padding: 0; border-collapse: separate; border-spacing: 30px;">
                     <tr><td>
-                      <p class=3D"gc-message" style=3D"font-family: Georgia=
+                      <p class="gc-message" style="font-family: Georgia=
 , serif; font-size:20px; color:#333; line-height:32px; margin: 0; padding: =
 0;">Hope you enjoy this Amazon gift card!</p>
                     </td></tr>
@@ -119,30 +112,30 @@ rder-radius: 4px 4px 0 0; " id=3D"mainImage"/>
               </tr>
               <tr>
                 <td>
-                  <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"30=
-" style=3D"padding-bottom: 0 !important; border-collapse: separate; border-=
+                  <table width="100%" cellpadding="0" cellspacing="30=
+" style="padding-bottom: 0 !important; border-collapse: separate; border-=
 spacing: 30px;">
                     <tr>
-                      <td width=3D"70%" valign=3D"middle" style=3D"font-siz=
+                      <td width="70%" valign="middle" style="font-siz=
 e:40px; font-family:Arial,Helvetica,sans-serif; color:#333;">
-                        <table cellpadding=3D"0" cellspacing=3D"0" width=3D=
+                        <table cellpadding="0" cellspacing="0" width=
 "100%">
-                          <tr><td height=3D"35" valign=3D"middle" align=3D"=
+                          <tr><td height="35" valign="middle" align="
 left">
-                            <span class=3D"amount" style=3D"font-family: Ar=
+                            <span class="amount" style="font-family: Ar=
 ial,Helvetica,sans-serif; font-weight: bold; line-height: 28px; font-size:2=
 8px;">$1.00</span>
                           </td></tr>
-                          <tr><td valign=3D"middle" align=3D"left">
-                            <span class=3D"no-style" style=3D"vertical-alig=
+                          <tr><td valign="middle" align="left">
+                            <span class="no-style" style="vertical-alig=
 n: text-top; font-size:18px; font-family:Arial,Helvetica,sans-serif; color:=
-#888; text-decoration: none;"><span style=3D"text-decoration: none; color: =
+#888; text-decoration: none;"><span style="text-decoration: none; color: =
 inherit;">Amazon.com</span> Gift Card</span>
                           </td></tr>
                         </table>
                       </td>
-                      <td width=3D"30%" align=3D"right" valign=3D"middle">
-                        <img id=3D"footLogo" src=3D"https://images-na.ssl-i=
+                      <td width="30%" align="right" valign="middle">
+                        <img id="footLogo" src="https://images-na.ssl-i=
 mages-amazon.com/images/G/01/gc/formation/assets/smile._CB284583314_.png"/>
                       </td>
                     </tr>
@@ -156,31 +149,20 @@ mages-amazon.com/images/G/01/gc/formation/assets/smile._CB284583314_.png"/>
     <!-- End main section table -->
 
     <!-- Bottom area text -->
-    <table class=3D"full-width-table" border=3D"0" align=3D"center" cellspa=
-cing=3D"30" style=3D"margin-left: auto; margin-right: auto; width: 500px; b=
+    <table class="full-width-table" border="0" align="center" cellspa
+cing="30" style="margin-left: auto; margin-right: auto; width: 500px; b=
 order-spacing: 30px; border-collapse:separate;">
       <tr>
-        <td style=3D"" height=3D"20" align=3D"center" valign=3D"middle" ><b=
-r/><a id=3D"applyLink" href=3D"https://www.amazon.com/gp/r.html?C=3DBO2ZZ2T=
-ZDRG8&R=3DFI83HBZOQ5TW&T=3DC&U=3Dhttps%3A%2F%2Fwww.amazon.com%2Fgp%2Fcss%2F=
-gc%2Fpayment%2Fview-gc-balance%3Fcode%3DCMKMLLYRQHR8GR%26ref_%3Dpe_1870990_=
-140900700&A=3DCOBRDXVWRJ5KQWF3AHLPSWYZFPUA&H=3D7SGUYP5JX6ZVH6SKH7OGCNCB2HIA=
-&ref_=3Dpe_1870990_140900700"><img width=3D"300" src=3D"https://images-na.s=
-sl-images-amazon.com/images/G/01/gc/formation/assets/us_apply._CB278630597_=
-.png"/></a>
-          <p style=3D"font-size:13px; font-family:Arial,Helvetica,sans-seri=
-f; color:#666;">Don't have an Amazon account?<br/><a href=3D"https://www.am=
-azon.com/gp/r.html?C=3DBO2ZZ2TZDRG8&R=3DFI83HBZOQ5TW&T=3DC&U=3D&A=3DSVBEHCP=
-KJ4H0LI90NUNNUAAJICGA&H=3D7UUIHTVBAESCVJHDD6KMAYZBNCWA" style=3D"color: #00=
-66c0;">Sign-up</a> to redeem.</p></td>
+        <td style=3D"" height="20" align="center" valign="middle" ><b
+r/><a id="applyLink" href="https://www.amazon.com/gp/r.html?C=3DBO2ZZ2TZDRG8&R=3DFI83HBZOQ5TW&T=3DC&U=3Dhttps%3A%2F%2Fwww.amazon.com%2Fgp%2Fcss%2Fgc%2Fpayment%2Fview-gc-balance%3Fcode%3DCMKMLLYRQHR8GR%26ref_%3Dpe_1870990_140900700&A=3DCOBRDXVWRJ5KQWF3AHLPSWYZFPUA&H=3D7SGUYP5JX6ZVH6SKH7OGCNCB2HIA&ref_=3Dpe_1870990_140900700"><img width="300" src="https://images-na.ssl-images-amazon.com/images/G/01/gc/formation/assets/us_apply._CB278630597.png"/></a>
+          <p style="font-size:13px; font-family:Arial,Helvetica,sans-seri=
+f; color:#666;">Don't have an Amazon account?<br/><a href="https://www.amazon.com/gp/r.html?C=3DBO2ZZ2TZDRG8&R=3DFI83HBZOQ5TW&T=3DC&U=3D&A=3DSVBEHCP=
+KJ4H0LI90NUNNUAAJICGA&H=3D7UUIHTVBAESCVJHDD6KMAYZBNCWA" style="color: #0066c0;">Sign-up</a> to redeem.</p></td>
       </tr>
     </table>
 
     <!-- Bottom Info -->
-    <table style=3D"font-size:12px; font-family:Arial,Helvetica,sans-serif;=
- color:#666666; line-height:1.2em; border-spacing: 30px; border-collapse:se=
-parate;" bgcolor=3D"444444" width=3D"100%" border=3D"0" align=3D"center" ce=
-llpadding=3D"10" cellspacing=3D"0">
+    <table style="font-size:12px; font-family:Arial,Helvetica,sans-serif; color:#666666; line-height:1.2em; border-spacing: 30px; border-collapse:separate;" bgcolor="444444" width="100%" border="0" align="center" cellpadding="10" cellspacing="0">
       <tr>
         <td>
           <table class=3D"full-width-table" style=3D"margin-left: auto; mar=
