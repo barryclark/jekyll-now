@@ -3,6 +3,7 @@ title: Can Gaming Make a Better World?
 layout: post
 tags:
   - core-skills
+  - cs-week-two
   - ted-talks
 published: true
 ---
