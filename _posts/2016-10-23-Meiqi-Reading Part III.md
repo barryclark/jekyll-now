@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Meiqi's blog post 1
+title: Mei
 author: meiqi
 published: true
 ---
@@ -9,4 +9,3 @@ This post is based on the reading, Craft of Research, Part III: Making a claim a
 
 ## Making Good Arguments: An Overview
 
-sss
