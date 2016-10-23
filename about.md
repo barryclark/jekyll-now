@@ -4,8 +4,7 @@ title: About
 permalink: /about/
 ---
 
-I am a 23 year old statistics student currently residing in Cape Town, South Africa. 
-My self
+I am a 23 year old statistics student currently residing in Cape Town, South Africa. My self
 my self...
 
 
