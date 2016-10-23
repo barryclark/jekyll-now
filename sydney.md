@@ -105,8 +105,6 @@ nal message -->
                       </td>
                     </tr>
                   </table>
-              </tr>
-            </table>
           <!-- End inner table -->
         </td>
       </tr>
