@@ -19,7 +19,7 @@ This blog is an attempt to fill a gap in the decolonization discussion, as it re
 
 I am currently finishing my Honours degree in Statistical Sciences at the University of Cape Town. 
 I am passionate about Statistics, Data Visualization and Social Equity, not in any particular order.
-Link to my [CV](https://raw.githubusercontent.com/Njoselson/Njoselson.github.io/images/cv.pdf).
+Link to my [CV](https://raw.githubusercontent.com/Njoselson/Njoselson.github.io/master/images/cv.pdf).
 
 ### Contact me
 
