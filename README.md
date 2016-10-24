@@ -36,16 +36,15 @@ Outputs:
 /Users/yourcomputername/.rvm/rubies/ruby-2.3.1/bin/ruby
 ruby 2.3.1p112 (2016-04-26 revision 54768) [x86_64-darwin15]
 
-And now I believe you should be able to run `gem install jekyll`
-
-Alternatively,
-If you're completely lost with these ruby gems and have issues... cd into uclaam.github.io
-`gem uninstall --all` (if you already have things installed in this directory)
+Now you have two choices:
+First, you can use a Gemfile + bundle install.
+So cd into uclaac.github.io folder...
 `gem install bundler`
-In the root directory, create a file named `Gemfile`
-Add the following lines:
+Create a file named `Gemfile`
+Add the following lines to this file:
 `source 'https://rubygems.org'`
 `gem 'github-pages', group: :jekyll_plugins`
+Now in your terminal, you can run:
 `bundle install`
 `bundle exec jekyll serve` to see the magic happen.
 
@@ -55,10 +54,14 @@ Run the command `jekyll serve` or `bundle exec jekyll serve` and see the magic h
 
 Make sure you're in the top level directory and not in /_posts or some other folder as you might encounter some issues.
 
-### Step 4) Adding blog posts
+### Step 4a) Adding blog posts
 
 To add a blog post, create a file in `/_posts/` with the format `YYYY-MM-DD-Your-File-Name.md`. There's should already be some blog posts up for reference.
 
 Make sure you add layout and title, which you can also see other posts for reference.
 
 Save your file, and at index.html (the home screen) you should be able to see your newly added blog post.
+
+### Step 4b) Adding other things
+
+You're not just limited to adding blog posts. We'll need actual event pages for Hack On The Hill, Hacker Showcase, JS.LA, etc. These will be created in our root folder.
