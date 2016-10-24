@@ -2,7 +2,6 @@
 layout: default
 ---
 <!-- Look the author details up from the site config. -->
-{% assign author = site.data.authors[page.author] %}
 
 <article class="post">
   <h1>{{ page.title }}</h1>
@@ -14,9 +13,16 @@ layout: default
   <div class="date">
     Written on {{ page.date | date: "%B %e, %Y" }} 
     <!-- Output author details if some exist. -->
-    {% if author %}
-      <!-- Personal Info. -->
-      by {% if author.web %}<a href="{{ author.web }}" target="_blank">{% endif %}{{ author.name }}{% if author.web %}</a>{% endif %}
+    {% if page.author %}
+      by
+      {% for name in page.author %}
+        {% assign author = site.data.authors[name] %}
+        <!-- Personal Info. -->
+        {% if author.web %}<a href="{{ author.web }}" target="_blank">{% endif %}{{ author.name }}{% if author.web %}</a>{% endif %}
+          {% if forloop.last != true %}
+          and
+          {% endif %}
+      {% endfor %}
     {% endif %}
   </div>
 
