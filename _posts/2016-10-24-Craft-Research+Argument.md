@@ -18,6 +18,16 @@ A quick review for section three of "The Craft of Research".
    Sub claim: They were the most dominate regular season team of all time.
    Evidence: They had the best regular season record of all time, beating the 1996 Bull's record.
    Counterargument: They lost in the finals while the Bull’s won the 1996 finals. 
-   Answer: The Warriors lost to LeBron James, one of the greatest if not the greatest basketball players of all time. The Cavs also got a    great performance from Kyrie Irving and supporting cast. The 1996 Bulls faced the Supersonics, who did have a hall of famer in Gary        Payton but no once in a generation player like LeBron James.
+   Answer: The Warriors lost to LeBron James, one of the greatest if not the greatest basketball players of all time. The Cavs also got    a great performance from Kyrie Irving and supporting cast. The 1996 Bulls faced the Supersonics, who did have a hall of famer in Gary    Payton but no once in a generation player like LeBron James.
+   
+   
+   
+   I had an argument on how the Warriors were a more balanced team but I didn't realize that the stat I found was for the 2014-2015 Warriors. I probably could have a better argument if I say they are the best regular season team of all time. Also it turns out research and arugments are hard. 
+   
+References:
 
-cont.
+  collegebb_ref. "College Basketball Statistics and History | College Basketball at Sports-Reference.com." College Basketball at Sports-Reference.com. N.p., n.d. Web. 24 Oct. 2016.
+  
+  Booth, Wayne C., Gregory G. Colomb, and Joseph M. Williams. The Craft of Research. Chicgo: U of Chicago, 2008. Print.
+
+
