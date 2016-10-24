@@ -70,7 +70,7 @@ kramdown:
 
 # Set the Sass partials directory, as we're using @imports
 sass:
-  style: http://img.taopic.com/uploads/allimg/121223/234744-12122311452434.jpg # You might prefer to minify using :compressed
+  style: Acana  # You might prefer to minify using :compressed
 
 # Use the following plug-ins
 gems:
