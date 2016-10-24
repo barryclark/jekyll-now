@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Shellcode Via JScript & VBScript
+title: Study Notes Weekly No.2(Shellcode Via JScript & VBScript)
 ---
 **About:**
 
