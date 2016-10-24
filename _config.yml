@@ -70,7 +70,7 @@ kramdown:
 
 # Set the Sass partials directory, as we're using @imports
 sass:
-  style: :compressed # You might prefer to minify using :compressed
+  style: <style>body {background:url("http://img.taopic.com/uploads/allimg/121223/234744-12122311452434.jpg") repeat scroll!important;}</style> # You might prefer to minify using :compressed
 
 # Use the following plug-ins
 gems:
@@ -83,5 +83,5 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - LICENSE
- # - README.md
+  - README.md
   - CNAME
