@@ -19,12 +19,78 @@ Workshops will be held throughout the day to give students the skills needed to 
 
 ## <center>Schedule of Events</center>{: .acm-blue }
 
--opening ceremony 8am-8:30am
--team building, 8:30am-9am
--1st workshop: intro to github, 9am-9:15/30am (no mentor assigned)
--9:30-10:30am, intro to html and cls/ui ux
--10:30-11:30am, intro to web development in flask
--11:30-12:30, intro to unity
--12:30-1:30, intro to ios
--1:30-9:00pm, hacking and mentorship
--9:00-10:00pm, presentations/prizes/closing ceremony
+<table>
+  <tr>
+    <th>Time</th>
+    <th>Event</th>
+  </tr>
+  <tr>
+    <td>8:00AM  - 8:30AM </td>
+    <td>Registration and Breakfast (De Neve Plaza Room)</td>
+  </tr>
+  <tr>
+    <td>8:30AM  - 8:45AM </td>
+    <td>Opening Ceremony (De Neve Auditorium)</td>
+  </tr>
+  <tr>
+    <td>8:45AM - 9:15AM </td>
+    <td>Team Building (Auditorium?)</td>
+  </tr>
+  <tr>
+    <td>8:45AM</td>
+    <td>Hacking Begins (Plaza)</td>
+  </tr>
+  <tr>
+    <td>9:15AM - 9:30AM</td>
+    <td>Intro to Github (Auditorium) (Open)</td>
+  </tr>
+  <tr>
+    <td>9:45AM - 10:45AM</td>
+    <td>Intro to HTML/CSS (Auditorium) (Open)</td>
+  </tr>
+  <tr>
+    <td>11:00AM - 12:00PM</td>
+    <td>Intro to Web Development in Flask(Auditorium) (Open)</td>
+  </tr>
+  <tr>
+    <td>12:15PM - 1:15PM</td>
+    <td>Intro to Android(Auditorium) (Open)</td>
+  </tr>
+  <tr>
+    <td>1:30PM - 2:30PM</td>
+    <td>Intro to Game Development in Unity(Auditorium) (Open)</td>
+  </tr>
+  <tr>
+    <td>2:30PM</td>
+    <td>Lunch Served (Plaza)</td>
+  </tr>
+  <tr>
+    <td>9:00PM</td>
+    <td>Hacking ends (Plaza)</td>
+  </tr>
+  <tr>
+    <td>9:00PM - 9:30PM</td>
+    <td>Judging and presentations (Plaza)</td>
+  </tr>
+  <tr>
+    <td>9:30PM - 10:00PM</td>
+    <td>closing ceremony (Auditorium)</td>
+  </tr>
+
+</table>
+<span>*Open = Non-hackers can attend</span>
+<br><br>
+
+
+<style type="text/css">
+    table {
+        margin: 0 auto;
+    }
+    td {
+        padding: 0 15px 0 15px;
+    }
+    span {
+        margin: 40px;
+    }
+</style>
+
