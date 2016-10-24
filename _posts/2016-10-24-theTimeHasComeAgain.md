@@ -1,7 +1,9 @@
 ---
 layout: post
 title: The Time Has Come Again
-author: rsjudka
+author: 
+- rsjudka
+- Red
 ---
 
 ### Finals are upon us
