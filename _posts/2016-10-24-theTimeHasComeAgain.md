@@ -5,6 +5,7 @@ author: rsjudka
 ---
 
 ### Finals are upon us
+
 #### Seriously though, like even more than last time!
 
 So, I know my final project sounded amazing and we were going to uncover a whole new understanding of humans beings, but something just didn't sit well with Red and I. So, it's sad to say, we've changed our final project idea. Actually, our idea has changed a few times since the time of our last post, but we have finally made our final choice (fingers crossed!). 
