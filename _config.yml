@@ -55,7 +55,7 @@ markdown: kramdown
 highlighter: rouge
 permalink: /:title/
 
-paginate: 3
+paginate: 5
 paginate_path: "/page:num"
 
 # redcarpet:
