@@ -4,9 +4,8 @@ title: Hack School Session 2
 ---
 
 Session 2 was our introduction to JavaScript, the language of the web.
-It shares some similarities to C++, but it's completely different. Nevertheless,
-it's a great language that will stick around for quite a while, so definitely pick it up!
+It's a great language that will stick around for quite a while, so definitely pick it up!
 
-### Insert stuff here.
+You can find the slides [here](https://docs.google.com/presentation/d/1WNizozF99q4Qqx_R04rf1d9a1lIoodTa_FIVSFftHbI/edit?usp=sharing)
 
-Blog will be updated.
+This blog post will be updated with full information soon.

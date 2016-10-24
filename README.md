@@ -21,7 +21,7 @@ You should now have a working copy of this repository on your machine now.
 If you have Ruby up and running, you can simply run the following command:
 `gem install jekyll`
 
-You may get some permission denied error. Which is fine. You'll just have to head on over to http://rvm.io/ which stands for Ruby Version Manager. You can use this to manage your gems.
+You may get some permission denied error. You'll just have to head on over to http://rvm.io/ which stands for Ruby Version Manager. You can use this to manage your gems.
 Install rvm: `\curl -sSL https://get.rvm.io | bash -s stable`
 
 Run the following command once rvm is installed: 
@@ -47,6 +47,8 @@ Add the following lines to this file:
 Now in your terminal, you can run:
 `bundle install`
 `bundle exec jekyll serve` to see the magic happen.
+
+This is a lot like npm install + package.json if you use node.
 
 ### Step 3) View this site!
 
