@@ -13,3 +13,7 @@ permalink: /hack-events/
 <a href="{{ site.baseurl }}/hack-nights/">
 	![_config.yml]({{ site.baseurl }}/images/hack-night-event.png){: .center-image }
 </a>
+
+<a>
+	![_config.yml]({{ site.baseurl }}/images/hack-on-the-hill-event.png){: .center-image }
+</a>
