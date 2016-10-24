@@ -4,7 +4,6 @@ title: Shellcode Via JScript & VBScript
 ---
 
 **About:**
-
 - DynamicWrapperX
 - Generate shellcode
 - Write JS and SCT script
@@ -36,6 +35,7 @@ Casey Smith@subTee近日更新了新的博客，介绍了如何利用脚本附�
 
 ## 0x01 DynamicWrapperX简介
 ---
+
 ### 1. 下载获得dynwrapx.dll
 
 **下载地址：**
