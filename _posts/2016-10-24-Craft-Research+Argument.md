@@ -22,7 +22,7 @@ A quick review for section three of "The Craft of Research".
    
    
    
-   I had an argument on how the Warriors were a more balanced team but I didn't realize that the stat I found was for the 2014-2015 Warriors. I probably could have a better argument if I say they are the best regular season team of all time. Also it turns out research and arugments are hard. 
+   I had an argument on how the Warriors were a more balanced team but I didn't realize that the stat I found was for the 2014-2015 Warriors. I probably could have a better argument if I say they are the best regular season team of all time. Also it turns out research and arguments are hard. 
    
 References:
 
