@@ -419,6 +419,7 @@ int main(int argc, char* argv[])
 ## 0x05 去除多余数据
 ---
 上面提到，去除辅助数据块的内容对PNG图像的浏览没有影响，下面就尝试去除PNG文件的所有辅助数据块
+
 ### 1、工具实现
 
 如图，使用`Hex Editor`去除辅助数据块gAMA、cHRM和bKGD
