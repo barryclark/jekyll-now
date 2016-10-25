@@ -1,5 +1,9 @@
 #see-also {
     text-align: center;
+    
+    h2 {
+        text-align: left;   
+    }
 }
 
 .related-post {
@@ -14,14 +18,13 @@
     text-align: left;
     color: #333;
     overflow: hidden;
-    
-    
+   
     @include mobile {
       display: block;
       width: 100%;
     }
-}
-
-.related-post h3 {
-    margin: 0em 0 15px;
+    
+    h3 {
+        margin: 0em 0 15px;
+    }
 }
