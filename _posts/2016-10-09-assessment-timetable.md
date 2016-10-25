@@ -3,7 +3,9 @@ published: true
 layout: post
 tags:
   - core skills
+title: Year One - Course Assessments
 ---
+## Semester 1
 <table cellpadding="10">
 <tbody>
 <tr>
