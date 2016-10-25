@@ -5,6 +5,9 @@ permalink: /about/
 ---
 `# --- begin: matt.elggren setup ---`
 
+`PATH="~/bin:$PATH"`
+`export PATH`
+
 `export LESS="eMqc"`  
 `alias desktop="cd ~/Desktop"`  
 `alias ls="ls -la"`  
@@ -22,7 +25,6 @@ permalink: /about/
 `local PROMPT_COLOR=${BICYAN}`   
 `local SUDO_PROMPT_TEXT="Yes, my lord? "`  
 `local SUDO_PROMPT_COLOR=${BIRED}`  
-`export to PS1`  
 `export PS1="\[\e]2;\u@\H \w\a\e${PROMPT_COLOR}${PROMPT_TEXT}\[\e[0m\] "`  
 `export SUDO_PS1="\[\e]2;\u@\H \w\a\e${SUDO_PROMPT_COLOR}${SUDO_PROMPT_TEXT}\[\e[0m\] "`  
 `}`  
