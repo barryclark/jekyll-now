@@ -17,7 +17,7 @@ No, not that way.  I am referring to a proper academic argument to support your 
 
 2. Reasons and Evidence - Provide information from outside sources to your reader.  This will help them see and understand your opinion as well as allow them to form their own.
 
-3. Acknowledgements and Respoces - Look at your argument from an outsider's perspective and close or give reason to any gaps you find. Critique your own argument, this should be hard so try to be as cynical and self doubting as possible beacuse that is the mentality of the people you are trying to convince.
+3. Acknowledgements and Responses - Look at your argument from an outsider's perspective and close or give reason to any gaps you find. Critique your own argument, this should be hard so try to be as cynical and self doubting as possible beacuse that is the mentality of the people you are trying to convince.
 
 4. Warrents - This is the fact check portion where the reasons an evidence you provide are connected to your claim and gives your agument weight.  Make sure the information you provide to your reader is relavent to what you are saying otherwise anything you say will be thrown out the window.  The better these connections are the better your argument will be.
 
