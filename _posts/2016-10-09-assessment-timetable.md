@@ -32,7 +32,7 @@ excerpt_separator: <!--more-->
 <td>On the spot</td>
 <td>18/10/16 by 1PM<br>15/11/16 by 1PM<br>06/12/16 by 1PM</td>
 </tr>
-<tr class="middle-row" style="border-top: 0;">
+<tr>
 <td>Assignment</td>
 <td>40%</td>
 <td><a href="http://www.turnitinuk.com/">Turnitin</a></td>
