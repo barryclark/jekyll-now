@@ -1,15 +1,31 @@
 ---
 layout: page
-title: About
+title: about
 permalink: /about/
 ---
+`# --- begin: matt.elggren setup ---`
 
-Some information about you!
+`export LESS="eMqc"`  
+`alias desktop="cd ~/Desktop"`  
+`alias ls="ls -la"`  
+`alias rm="rm -i"`  
+`alias cp="cp -i"`  
+`alias mv="mv -i"`  
+`alias bb="bbedit"`  
+`alias sublime="subl";`
 
-### More Information
+`function prompt`  
+`{`  
+`local BICYAN="\[\033[1;96m\]"`  
+`local BIRED="\[\033[1;91m\]"`  
+`local PROMPT_TEXT="Yes, master? "`  
+`local PROMPT_COLOR=${BICYAN}`   
+`local SUDO_PROMPT_TEXT="Yes, my lord? "`  
+`local SUDO_PROMPT_COLOR=${BIRED}`  
+`export to PS1`  
+`export PS1="\[\e]2;\u@\H \w\a\e${PROMPT_COLOR}${PROMPT_TEXT}\[\e[0m\] "`  
+`export SUDO_PS1="\[\e]2;\u@\H \w\a\e${SUDO_PROMPT_COLOR}${SUDO_PROMPT_TEXT}\[\e[0m\] "`  
+`}`  
+`prompt`  
 
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+`# --- end: matt.elggren setup ---`  
