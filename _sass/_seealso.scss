@@ -22,6 +22,8 @@
     @include mobile {
       display: block;
       width: 100%;
+      height: inherit;
+      max-height: 13.5em;
     }
     
     h3 {
