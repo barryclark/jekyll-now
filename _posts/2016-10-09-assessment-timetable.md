@@ -9,10 +9,10 @@ title: Year One - Course Assessments
 <table cellpadding="10" cellspacing="10" width="100%">
 <tbody>
 <tr>
-<td>Course</td>
-<td>Assignment</td>
-<td>Submission</td>
-<td>Due Date</td>
+<th>Course</th>
+<th>Assignment</th>
+<th>Submission</th>
+<th>Due Date</th>
 </tr>
 <tr>
 <td>&nbsp;</td>
