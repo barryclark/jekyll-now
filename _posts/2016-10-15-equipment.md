@@ -17,3 +17,5 @@ The following gear is available for me to loan:
 <li>Video playback equipment</li>
 <li>Data projectors</li>
 </ul>
+
+I will be loaning a digital camcorder to help with my assignment.
