@@ -24,7 +24,7 @@ excerpt_separator: <!--more-->
 <td><a href="http://www.turnitinuk.com/">Turnitin</a></td>
 <td>23/12/16 by 2PM</td>
 </tr>
-<div class="middle-row">
+<span class="middle-row">
 <tr>
 <th rowspan="2"><a href="https://e-vision.anglia.ac.uk/mdf//MOD002547_ZZF_ZZZF_2016.pdf">Foundation Mathematics</a></th>
 <td>In-Class Tests</td>
