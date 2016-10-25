@@ -3,11 +3,16 @@ layout: page
 title: about
 permalink: /about/
 ---
-##Matt Elggren
-__Keywords:__ software, engineering, quality, books, typography, baseball, history, code, utah, seattle, apple, unix, music, sailing, culture, technology, family, dogs, cats, people, nature, science, religion, philosophy, politics, pragmatism, idealism, government, math, counter-culture, design, fiction, cinema, photography, cycling, ...
-###Desk Shot
-![Not just any desk.](https://dl.dropboxusercontent.com/u/37666732/Photos/desk_161025.jpg "Not just any desk.")
-###Bash Profile
+matt elggren
+------------
+__Keywords:__ software, engineering, quality, books, typography, baseball, history, code, utah, seattle, apple, unix, music, sailing, culture, technology, family, dogs, cats, people, nature, science, religion, philosophy, politics, pragmatism, idealism, government, math, counter-culture, design, fiction, cinema, photography, cycling, ...  
+
+desk shot
+---------
+![Not just any desk.](https://dl.dropboxusercontent.com/u/37666732/Photos/desk_161025.jpg "Not just any desk.")  
+
+bash profile
+------------
 `# Perhaps sharing one's bash_profile goes to far?`  
 `# This one's kept in Dropbox and included on all my machines with the following source statement:`  
 `source "/Users/mattelggren/Dropbox/Projects/_config/bash/bash_profile_shared.sh"`  
