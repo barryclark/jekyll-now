@@ -20,7 +20,7 @@ title: Year One – Course Assessments
 <td>Turnitin</td>
 <td>23/12/16 by 2:00PM</td>
 </tr>
-<tr>
+<tr class="middle-row">
 <th rowspan="2">Foundation Mathematics</th>
 <td>In-Class Tests (60%)</td>
 <td>On the spot</td>
@@ -34,7 +34,7 @@ title: Year One – Course Assessments
 <tr>
 <th rowspan="2">Foundation Gaming Technology</th>
 <td>Project Plan (30%)</td>
-<td>iCentre</td>
+<td><a href="http://web.anglia.ac.uk/anet/student_services/icentre/index.phtml">iCentre</a></td>
 <td>16/12/16 by 2:00PM</td>
 </tr>
 <tr>
