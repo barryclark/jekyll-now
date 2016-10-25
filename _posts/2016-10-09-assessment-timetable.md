@@ -13,8 +13,8 @@ excerpt_separator: <!--more-->
 <tr>
 <th>Course</th>
 <th>Assessment</th>
-<th>Submission</th>
 <th>Weighting</th>
+<th>Submission</th>
 <th>Due Date</th>
 </tr>
 <tr>
