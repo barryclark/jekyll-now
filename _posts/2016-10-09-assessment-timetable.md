@@ -6,7 +6,7 @@ tags:
 title: Year One - Course Assessments
 ---
 ## Semester 1
-<table cellpadding="10" cellspacing="10">
+<table cellpadding="10" cellspacing="10" width="100%">
 <tbody>
 <tr>
 <td>Course</td>
