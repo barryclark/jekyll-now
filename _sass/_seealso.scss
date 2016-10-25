@@ -3,6 +3,10 @@
     
     h2 {
         text-align: left;   
+        
+        @include mobile {
+            text-align: center;
+        }
     }
 }
 
@@ -28,5 +32,9 @@
     
     h3 {
         margin: 0em 0 15px;
+        
+        @include mobile {
+            text-align: center;
+        }
     }
 }
