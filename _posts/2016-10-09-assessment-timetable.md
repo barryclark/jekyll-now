@@ -15,13 +15,13 @@ title: Year One – Course Assessments
 <th>Due Date</th>
 </tr>
 <tr>
-<th>Core Skills</td>
+<th>Core Skills</th>
 <td>Extensive Portfolio of Evidence of Learning (100%)</td>
 <td>Turnitin</td>
 <td>23/12/16 by 2:00PM</td>
 </tr>
 <tr>
-<th rowspan="2">Foundation Mathematics</td>
+<th rowspan="2">Foundation Mathematics</th>
 <td>In-Class Tests (60%)</td>
 <td>On the spot</td>
 <td>18/10/2016 by 1:00PM<br>15/11/2016 by 1:00PM<br>06/12/2016 by 1:00PM</td>
@@ -31,7 +31,7 @@ title: Year One – Course Assessments
 <td>Turnitin</td>
 <td>23/12/16 by 2:00PM</td>
 </tr>
-<th rowspan="2">Foundation Gaming Technology</td>
+<th rowspan="2">Foundation Gaming Technology</th>
 <td>Project Plan (30%)</td>
 <td>iCentre</td>
 <td>16/12/16 by 2:00PM</td>
