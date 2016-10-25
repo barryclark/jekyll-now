@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Why do believers use Bible as the only scource of defense for all attacks?
+title: Why do believers use the Bible as their only source?
 tags: [religion, quora]
 keywords: [bible, inerrant, infallible, sola scriptura, apologetics, church, god, christian, christianity]
 excerpt: First, they believe the Bible to be inerrant and infallible. That is, it contains no mistakes or errors.
