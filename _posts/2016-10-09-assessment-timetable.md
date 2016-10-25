@@ -4,6 +4,7 @@ layout: post
 tags:
   - core-skills
 title: Year One – Course Assessments
+excerpt_seperator: <!-- more -->
 ---
 ## Semester 1
 <table cellpadding="15" cellspacing="10" width="100%" style="text-align: center;">
@@ -44,4 +45,5 @@ title: Year One – Course Assessments
 </tr>
 </tbody>
 </table>
+<!-- more -->
 <br>
