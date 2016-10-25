@@ -1,3 +1,7 @@
+#see-also {
+    text-align: center;
+}
+
 .related-post {
     display: inline-block;
     width: 30%;
@@ -6,9 +10,14 @@
     border-radius: 10px;
     margin: 0.5em;
     padding: 0.5em;
+    text-align: left;
     
     @include mobile {
       display: block;
       width: 100%;
     }
+}
+
+.related-post h3 {
+    margin: 0em 0 15px;
 }
