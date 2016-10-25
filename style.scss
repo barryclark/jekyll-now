@@ -116,6 +116,7 @@ img {
 }
 
 .date {
+  text-align: right;
   font-style: italic;
   color: $gray;
 }
@@ -212,9 +213,10 @@ img {
 
 nav {
   float: right;
-  margin-top: 23px; // @TODO: Vertically middle align
+  margin-top: 16px; // @TODO: Vertically middle align
   font-family: $helveticaNeue;
   font-size: 18px;
+  text-transform: lowercase;
 
   @include mobile {
     float: none;
@@ -225,8 +227,8 @@ nav {
 
   a {
     margin-left: 20px;
+    text-align: left;
     color: $darkGray;
-    text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
 
@@ -266,8 +268,7 @@ nav {
   }
 
   .read-more {
-    text-transform: uppercase;
-    font-size: 15px;
+    text-transform: lowercase;
   }
 }
 
