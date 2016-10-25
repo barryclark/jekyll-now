@@ -2,11 +2,11 @@
 published: true
 layout: post
 tags:
-  - core skills
+  - core-skills
 title: Year One - Course Assessments
 ---
 ## Semester 1
-<table cellpadding="10">
+<table cellpadding="10" cellspacing="10">
 <tbody>
 <tr>
 <td>Course</td>
