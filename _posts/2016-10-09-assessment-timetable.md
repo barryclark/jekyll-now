@@ -3,6 +3,8 @@ published: true
 layout: post
 tags:
   - core-skills
+  - foundation-mathematics
+  - foundation-gaming-technology
 title: Foundation Year – Course Assessments
 excerpt_seperator: <!-- more -->
 excerpt_separator: <!--more-->
