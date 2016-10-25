@@ -8,6 +8,7 @@ summary: Merhaba arkadaslar, bu yazımda Spring MVC konusuna giriş yapacağız.
 Merhaba arkadaslar, bu yazımda Spring MVC konusuna giriş yapacağız.
 
 Öncelikle Spring'in ne olduğundan, neyi amaçladığından, kime ne olarak alternatif olduğundan bahsetmek gerekir.
+
 ### SPRING PLATFORM
 İlk sürümü 2003'de çıkan, open source olan ve minimum core paket boyutu 2mb civarı olan, sağlam/güvenilir/esnek/hızlı ve basitçe uygulamalar yazmanızı sağlayan bir platform'dur ve hemen hemen dünyanın tamamında kullanılır.
 
