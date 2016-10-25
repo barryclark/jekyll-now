@@ -8,11 +8,13 @@ __Matt Elggren__
 keywords: software, engineering, quality, books, typography, baseball, history, code, utah, seattle, apple, unix, music, sailing, culture, technology, family, dogs, cats, people, nature, science, religion, philosophy, politics, pragmatism, idealism, government, math, counter-culture, design, fiction, cinema, photography, cycling, epistemology, intelligence, machines, goedel, escher, bach ...  
 
 __contrafactum.io__  
+
 [Contrafactum](https://en.wikipedia.org/wiki/Contrafactum) is a fascinatingly little recursive loop. It's something we do without even noticing; taking something familiar and re-working it into something new.  
 
-See various references the idea in Hofstadter's *"Gödel, Escher, Bach: an Eternal Golden Braid"*.   
+Various references in Hofstadter's *"Gödel, Escher, Bach: an Eternal Golden Braid"*.   
 
 __Desk Shot__  
+
 ![Not just any desk.](https://dl.dropboxusercontent.com/u/37666732/Photos/desk_161025.jpg "Not just any desk.")  
 
 __Bash Profile__  
