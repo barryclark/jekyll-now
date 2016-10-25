@@ -9,7 +9,7 @@ keywords: software, engineering, quality, books, typography, baseball, history, 
 
 __contrafactum.io__  
 
-[Contrafactum](https://en.wikipedia.org/wiki/Contrafactum) is a fascinating recursive loop. Humans produce it without even noticing; taking something familiar and re-working it into something new.  
+[Contrafactum](https://en.wikipedia.org/wiki/Contrafactum) is the product of a recursive loop. Humans do it without even noticing; taking something familiar and re-working it into something new.  
 
 Various references in Hofstadter's *"Gödel, Escher, Bach: an Eternal Golden Braid"*.   
 
