@@ -21,64 +21,79 @@ Workshops will be held throughout the day to give students the skills needed to 
 
 <table>
   <tr>
-    <th>Time</th>
-    <th>Event</th>
+    <th class="header">Time</th>
+    <th class="header">Event</th>
+    <th class="header">Download</th>
   </tr>
   <tr>
     <td>8:00AM  - 8:30AM </td>
-    <td>Registration and Breakfast (De Neve Plaza Room)</td>
+    <td>Registration and Breakfast (Plaza Room)</td>
+    <td></td>
   </tr>
   <tr>
     <td>8:30AM  - 8:45AM </td>
-    <td>Opening Ceremony (De Neve Auditorium)</td>
+    <td>Opening Ceremony (Auditorium)</td>
+    <td></td>
   </tr>
   <tr>
     <td>8:45AM - 9:15AM </td>
-    <td>Team Building (Auditorium?)</td>
+    <td>Team Building (Auditorium)</td>
+    <td></td>
   </tr>
   <tr>
     <td>8:45AM</td>
-    <td>Hacking Begins (Plaza)</td>
+    <td>Hacking Begins (Plaza Room)</td>
+    <td></td>
   </tr>
   <tr>
     <td>9:15AM - 9:30AM</td>
-    <td>Intro to Github (Auditorium) (Open)</td>
+    <td>Intro to Github (Auditorium)<span class="asterik-red">*</span></td>
+    <td>Git</td>
   </tr>
   <tr>
     <td>9:45AM - 10:45AM</td>
-    <td>Intro to HTML/CSS (Auditorium) (Open)</td>
+    <td>Intro to HTML/CSS (Auditorium)<span class="asterik-red">*</span></td>
+    <td></td>
   </tr>
   <tr>
     <td>11:00AM - 12:00PM</td>
-    <td>Intro to Web Development in Flask(Auditorium) (Open)</td>
+    <td>Intro to Web Development in Flask (Auditorium)<span class="asterik-red">*</span></td>
+    <td>Flask</td>
   </tr>
   <tr>
     <td>12:15PM - 1:15PM</td>
-    <td>Intro to Android(Auditorium) (Open)</td>
+    <td>Intro to Android(Auditorium)<span class="asterik-red">*</span></td>
+    <td>Android</td>
   </tr>
   <tr>
     <td>1:30PM - 2:30PM</td>
-    <td>Intro to Game Development in Unity(Auditorium) (Open)</td>
+    <td>Intro to Game Development in Unity (Auditorium)<span class="asterik-red">*</span></td>
+    <td>Unity</td>
   </tr>
   <tr>
     <td>2:30PM</td>
-    <td>Lunch Served (Plaza)</td>
+    <td>Lunch Served (Plaza Room)</td>
+    <td></td>
   </tr>
   <tr>
     <td>9:00PM</td>
-    <td>Hacking ends (Plaza)</td>
+    <td>Hacking ends (Plaza Room)</td>
+    <td></td>
   </tr>
   <tr>
     <td>9:00PM - 9:30PM</td>
-    <td>Judging and presentations (Plaza)</td>
+    <td>Judging and presentations (Plaza Room)</td>
+    <td></td>
   </tr>
   <tr>
     <td>9:30PM - 10:00PM</td>
-    <td>closing ceremony (Auditorium)</td>
+    <td>Closing Ceremony (Auditorium)</td>
+    <td></td>
   </tr>
 
 </table>
-<span>*Open = Non-hackers can attend</span>
+<span class="asterik-red footer">*</span>Open to all, non-hackers can attend<br>
+<span class="asterik-black footer">*</span>All locations are in De Neve (De Neve Plaza Room, De Neve Auditorium)
 <br><br>
 
 
@@ -86,11 +101,20 @@ Workshops will be held throughout the day to give students the skills needed to 
     table {
         margin: 0 auto;
     }
+    .header {
+        text-align: left;
+        padding-left: 10px;
+        font-weight: bold;
+    }
     td {
-        padding: 0 15px 0 15px;
+        padding: 0 10px 0 10px;
     }
-    span {
-        margin: 40px;
+    .asterik-red {
+        color: red;
     }
+    .footer {
+        margin-left: 25px;
+    }
+
 </style>
 
