@@ -24,7 +24,7 @@ title: Year One – Course Assessments
 <th rowspan="2"><a href="https://e-vision.anglia.ac.uk/mdf//MOD002547_ZZF_ZZZF_2016.pdf">Foundation Mathematics</a></th>
 <td>In-Class Tests (60%)</td>
 <td>On the spot</td>
-<td>18/10/2016 by 1PM<br>15/11/2016 by 1PM<br>06/12/2016 by 1PM</td>
+<td>18/10/16 by 1PM<br>15/11/16 by 1PM<br>06/12/16 by 1PM</td>
 </tr>
 <tr>
 <td>Assignment (40%)</td>
