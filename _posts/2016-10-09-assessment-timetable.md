@@ -16,7 +16,7 @@ title: Year One – Course Assessments
 </tr>
 <tr>
 <th><a href="https://e-vision.anglia.ac.uk/mdf//MOD003211_ZZF_ZZZF_2016.pdf">Core Skills</a></th>
-<td>Extensive Portfolio of Evidence of Learning (100%)</td>
+<td>Portfolio of Evidence of Learning (100%)</td>
 <td><a href="http://www.turnitinuk.com/">Turnitin</a></td>
 <td>23/12/16 by 2PM</td>
 </tr>
