@@ -9,4 +9,4 @@ Originally forked from [Jekyll Now](https://github.com/barryclark/jekyll-now) by
 
 ## Screenshot
 
-![screenshot](https://raw.githubusercontent.com/JunShern/junshern.github.io/master/images/website_screenshot.PNG)
+![screenshot](https://raw.githubusercontent.com/JunShern/junshern.github.io/master/images/website_screenshot.PNG?raw=true "screenshot")
