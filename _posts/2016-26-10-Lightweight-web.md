@@ -1,6 +1,6 @@
 ---
 layout: post
-title: You're up and running!
+title: Welcome, lightweight web.
 published: true
 ---
 Like many people I've started to get annoyed with Wordpress.  It's large and clunky and always has security issues (which is testament to its popularity, and admittedly worse if you forget to update it regularly).
