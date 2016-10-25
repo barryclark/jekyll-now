@@ -7,7 +7,7 @@ permalink: /blog/spring-platform/spring-mvc-tutorial/spring-mvc-introduction
 Merhaba arkadaslar, bu yazımda Spring MVC konusuna giriş yapacağız.
 
 Öncelikle Spring'in ne olduğundan, neyi amaçladığından, kime ne olarak alternatif olduğundan bahsetmek gerekir.
-<h3>SPRING PLATFORM</h3>
+### SPRING PLATFORM
 İlk sürümü 2003'de çıkan, open source olan ve minimum core paket boyutu 2mb civarı olan, sağlam/güvenilir/esnek/hızlı ve basitçe uygulamalar yazmanızı sağlayan bir platform'dur ve hemen hemen dünyanın tamamında kullanılır.
 
 Bazı kimseler Spring'e bağımlı kalmamak için bulaşmak istemezler. Ama bana göre eğer destekli/mantıklı/ihtiyaca göre servis/çatı/platform seçilirse bunun adı bağımlılık olmaz, tekerleği yeniden icat etmeye gerek yok. Ayrıca Spring, birçok platform/teknoloji ile de rahatça entegre olabilmektedir. Mesela, Spring MVC yazdığım bir uygulama da J2EE security kullandım, bu bir örnektir.
@@ -18,25 +18,27 @@ Evet, Spring koca bir platform'dur. İçerisinde birçok modül barındıran bir
 
 Aşağıdaki görselde Spring'in ekosistemini görebilirsiniz;
 
-<img class="size-full wp-image-1461 aligncenter" src="http://alicanakkus.com/wp-content/uploads/2016/08/spring.png" alt="spring" width="694" height="514" />
+![Spring platform](/images/spring-platform/spring.png)
 
-Spring, belli amaçlar için belli bölümlere ayrılmıştır. Minimum bir Spring uygulaması yazmak istiyor iseniz en azından Core Contaıner'ı kullanmış olursunuz. Bunun yanunda ihtiyaca göre birçok modülden yararlanabilirsiniz. Spring'in bir platform oldugundan söz etmiştik. Şuradan Spring projelerine bakabilirsiniz : <a href="https://spring.io/projects">https://spring.io/projects</a>
-<h4>Spring neden bu kadar ünlü?</h4>
+
+Spring, belli amaçlar için belli bölümlere ayrılmıştır. Minimum bir Spring uygulaması yazmak istiyor iseniz en azından Core Contaıner'ı kullanmış olursunuz. Bunun yanunda ihtiyaca göre birçok modülden yararlanabilirsiniz. Spring'in bir platform oldugundan söz etmiştik. Şuradan Spring projelerine bakabilirsiniz : [spring.io](https://spring.io/projects)
+
+#### Spring neden bu kadar ünlü?
 DI(Dependency Injection), IOC(Inversion of Control), AOP(Aspect Oriented Programming) gibi çok kesin çözümler ile developer'ın hayatını kolaylaştıran birçok yaklaşımı gerçeklemesinden dolayı Java dünyasında oldukça popüler olmuştur. Karmaşık ve zor logicleri EJB gibi yapılardan ziyade pure POJO class'ları ile gerçekleyebiliyor desem hoşunuza gider sanırım :) Bu yüzden tercih edilmektedir.
-<h4>IoC(Inversion of Control)</h4>
+#### IoC(Inversion of Control)
 Inversion of Control, kontrolün el değişmesi anlamındadır. Object oritented bir dil olan Java'da nesne oluşturmanın tek yolu new anahtar kelimesi ile nesne oluşturmaktan geçer. Developer, nesne oluşturmaktan onu yönetmeye kadar nesnenin tüm lifecycle'ına hakim olması gerekmetedir. IoC ile bu görevi developer'dan alıp bir Contaıner'a verecegiz. Burada amaç daha önce developer'ın ugrasmak zorunda olduğu birçok şey'i contaıner'ın yapmasını sağlamaktır.
 
 Bu sayede biz developer'lar sadece uygulamamıza/logic'imize odaklanabiliriz. Peki IoC Contaıner bunu nasıl yapıyor veya yapacak?
 
 Yukarıda belirttigim gibi new'leme dışından hiçbir şekilde yeni nesne oluşturulamaz. IoC Contaıner'da arka planda bizim için new'leme işlemini yapacaktır. Daha detaylı olarak farklı kaynaklardan yararlanmanızı tavsiye ederim.
-<h4>DI(Dependency Injection)</h4>
+#### DI(Dependency Injection)
 DI, IoC'un bir implementasyonudur. Bağımlılıkların zerk edilmesi/enjekte edilmesi gibi birçok yerde açıklamalar mevcut ama bana anlamsız geliyor. Neyi zerk ediyoruz? Zerk ne? enjekte de ne oluyor? hasta? doktor?
 
 Dependency Injection en temelde bir işi biri yapıyor ise tek başına ve/veya kendi yapabilmelidir anlamı taşır. Bir işi yapmak için başka bir nesneye/service bağımlı iseniz yada bağlı olduğunuz herhangi birşey'in ömrü ile ömrünüz belirleniyorsa orada sıkıntı vardır ve DI uygulanmalıdır. Mesela,
 
 Örneğin;
 
-``` java
+```java
 // An example without dependency injection
 public class Client {
     // Internal reference to the service used by this client
@@ -61,7 +63,7 @@ Cevap olarak Client nesnesi oluşurken constructor içerisinde yer alıyor olaca
 
 En kötü senaryo ile bir injection yapalım, bağımlılığı ortadan kaldıralım yani. Service objesi Client dışında da var olabilsin yani.
 
-``` java
+```java
 // An example with dependency injection
 public class Client {
     // Internal reference to the service used by this client
@@ -108,12 +110,12 @@ Aynı injectionu, bağımlılığı kaldırmak için setter ile yaptık. Yazdı�
 Bunlar kısa birer örneklerdi, detaylarına lütfen bolca bakınız.
 
 Konumuza dönelim, SPRING MVC.
-<h4>Spring MVC</h4>
+#### Spring MVC
 Spring MVC, Spring'in diğer tüm modüllerini kullanabileceginiz, sağlam, MVC mimarisinde web uygulamalarını oluşturabileceğiniz bir Spring modülüdür. Merkezi bir Servlet üzerinden tüm işlemler gerçekleşir.
 
 NOT : Her zaman belirtmeye gayret gösterdim. Tekrar dile getiriyorum, dikkate alınız lütfen. Şaşıracaksınız ama Spring MVC'nin de temeli Servlet'tir. Servlet'lerden kurtulamayız :) Her zaman ilk tavsiye olarak Servlet'lerin öğrenilmesini tavsiye ettim. Arkadaslar, Java Web'in temeli Servlet'tir. Servlet'siz hiç birşey yapamazsınız.
 
-NOT 2 : Spring MVC öğrenmek için Servlet ve kısmen de olsa JSP bilmeniz gerekiyor. 19 adet Servlet&amp;JSP yazılarıma <a href="http://alicanakkus.com/java-ee/servletjsp/servlet-yazi-dizisi/">şuradan</a> ulaşabilirsiniz.
+NOT 2 : Spring MVC öğrenmek için Servlet ve kısmen de olsa JSP bilmeniz gerekiyor. 19 adet Servlet&amp;JSP yazılarıma [şuradan](http://alicanakkus.com/java-ee/servletjsp/servlet-yazi-dizisi/) ulaşabilirsiniz.
 
 Spring MVC'in mimarisine bakalım;
 
