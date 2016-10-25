@@ -1,7 +1,10 @@
 ---
 published: true
+layout: post
+tags:
+  - core skills
 ---
-<table cellpadding="10>
+<table cellpadding="10">
 <tbody>
 <tr>
 <td>Course</td>
