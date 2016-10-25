@@ -3,7 +3,7 @@ published: true
 layout: post
 tags:
   - core-skills
-title: Year One – Course Assessments
+title: Foundation Year – Course Assessments
 excerpt_seperator: <!-- more -->
 ---
 ## Semester 1
