@@ -214,12 +214,16 @@ canvas {
 }
 
 .entry {
-    	overflow: auto;
+	overflow: auto;
+	margin-top: 15px;
+}
+
+.sample.entry p {
+	margin: 0;
 }
 
 .thumbnail {
 	float: left;
 	max-width: 100px;
 	margin-right: 5px;
-	margin-top: 15px;
 }
