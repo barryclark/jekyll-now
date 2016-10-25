@@ -28,7 +28,7 @@ title: Year One – Course Assessments
 </tr>
 <tr>
 <td>Assignment (40%)</td>
-<td>Turnitin</td>
+<td><a href="http://www.turnitinuk.com/">Turnitin</a></td>
 <td>23/12/16 by 2:00PM</td>
 </tr>
 <tr>
