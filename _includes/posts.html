@@ -28,7 +28,7 @@
           <meta itemprop="height" content="800">
       </span>
       <hr />
-      <div class="sample entry" style="margin-top: 15px;">
+      <div class="sample entry">
         {% if post.image %}<img src="{% if post.thumbnail %}{{ post.image | replace_first: 'images','images/thumbnails' }}{% else %}{{ post.image }}{% endif %}" class="thumbnail" />{% endif %}
         {% if post.facebook_post %}{% include facebook_post.html facebook_post=post.facebook_post %}{% else %}{{ post.excerpt }}{% endif %}
       </div>
