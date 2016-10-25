@@ -31,6 +31,7 @@ title: Year One – Course Assessments
 <td>Turnitin</td>
 <td>23/12/16 by 2:00PM</td>
 </tr>
+<tr>
 <th rowspan="2">Foundation Gaming Technology</th>
 <td>Project Plan (30%)</td>
 <td>iCentre</td>
