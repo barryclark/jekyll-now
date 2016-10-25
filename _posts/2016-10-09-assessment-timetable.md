@@ -15,7 +15,7 @@ title: Year One – Course Assessments
 <th>Due Date</th>
 </tr>
 <tr>
-<td colspan="2">Core Skills</td>
+<td rowspan="2">Core Skills</td>
 <td></td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
