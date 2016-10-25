@@ -5,6 +5,7 @@ tags:
   - core-skills
 title: Foundation Year – Course Assessments
 excerpt_seperator: <!-- more -->
+excerpt_separator: <!--more-->
 ---
 ## Semester 1
 <table cellpadding="15" cellspacing="10" width="100%" style="text-align: center;">
@@ -45,5 +46,5 @@ excerpt_seperator: <!-- more -->
 </tr>
 </tbody>
 </table>
-<!-- more -->
+<!--more-->
 <br>
