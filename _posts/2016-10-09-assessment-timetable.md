@@ -1,7 +1,7 @@
 ---
 published: true
 ---
-<table>
+<table cellpadding="10>
 <tbody>
 <tr>
 <td>Course</td>
