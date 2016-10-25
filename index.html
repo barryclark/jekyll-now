@@ -6,7 +6,11 @@ layout: default
   {% for post in site.posts %}
     <article class="post">
 
-      <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }} - Read More</a></h3>
+      <h4><a style="color: #808000;" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
+
+      <div class="entry">
+        {{ post.summary }}..<a style="color: #808000;" href="{{ site.baseurl }}{{ post.url }}">Read More</a>
+      </div>
 
     </article>
   {% endfor %}
