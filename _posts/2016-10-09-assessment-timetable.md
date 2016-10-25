@@ -24,21 +24,19 @@ excerpt_separator: <!--more-->
 <td><a href="http://www.turnitinuk.com/">Turnitin</a></td>
 <td>23/12/16 by 2PM</td>
 </tr>
-<span class="middle-row">
-<tr>
+<tr class="middle-row">
 <th rowspan="2"><a href="https://e-vision.anglia.ac.uk/mdf//MOD002547_ZZF_ZZZF_2016.pdf">Foundation Mathematics</a></th>
 <td>In-Class Tests</td>
 <td>60%</td>
 <td>On the spot</td>
 <td>18/10/16 by 1PM<br>15/11/16 by 1PM<br>06/12/16 by 1PM</td>
 </tr>
-<tr>
+<tr class="middle-row">
 <td>Assignment</td>
 <td>40%</td>
 <td><a href="http://www.turnitinuk.com/">Turnitin</a></td>
 <td>23/12/16 by 2PM</td>
 </tr>
-</span>
 <tr>
 <th rowspan="2"><a href="https://e-vision.anglia.ac.uk/mdf//MOD003547_ZZF_ZZZF_2016.pdf">Foundation Gaming Technology</a></th>
 <td>Project Plan</td>
