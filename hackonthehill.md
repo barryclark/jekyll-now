@@ -114,7 +114,7 @@ Workshops will be held throughout the day to give students the skills needed to 
         color: red;
     }
     .footer {
-        margin-left: 25px;
+        margin-left: 10px;
     }
 
 </style>
