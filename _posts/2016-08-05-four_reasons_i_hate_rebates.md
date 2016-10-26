@@ -3,7 +3,6 @@ layout: post
 title: Four Reasons I Hate Rebates
 tags: [money]
 keywords: [list, rebates]
-excerpt: 1.It doesn’t reduce the price as much as an equally-priced coupon; 2. It requires extra work; 3. They often want the original copy of the receipt and UPC; 4. Rebates are often given in the form of Visa or MasterCard gift cards
 ---
 
 I really don’t like rebates for some reason. I suppose they’re better than nothing, but I’d rather have a coupon or just reduce the price. Here are four reasons I hate rebates:
