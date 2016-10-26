@@ -27,7 +27,7 @@ Bana kalırsa seni bütün dünya çok sever,
 Ben de seni çok severim ama şu an konu bu değil.</p>
 ~ Ali Lidar
 
-<a href="#1Sem2016">1 Eylül 2016 - 00:00</a>
+<a href="#1Sem2016">1 Eylül 2016 - 00:10</a>
 
 Son Feci Bisiklet - Bu Kız
 
