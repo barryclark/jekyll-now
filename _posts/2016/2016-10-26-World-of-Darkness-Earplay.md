@@ -2,7 +2,7 @@
 layout: post
 title: Unboxing Acquire
 description: "Dave Grossman and Richard Dansky have written a World of Darkness game for Earplay enabled devices."
-category: unboxing
+category: games
 featured: earplay.png
 amazonterm: "amazon echo"
 amazoncat: Electronics
