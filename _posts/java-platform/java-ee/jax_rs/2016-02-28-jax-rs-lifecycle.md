@@ -296,6 +296,7 @@ return false;
 Göreceginiz üzere implementasyon var ama içi boş, doldurmadım :)
 
 <span style="color: #808000;">com.wora.db</span>
+
 ```java
 
 package com.wora.db;
