@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Hal-i Cünunum
+heading: Hal-i Cünunum
 permalink: /hal-i-cünunum
 ---
 
