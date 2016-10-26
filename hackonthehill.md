@@ -52,23 +52,23 @@ Workshops will be held throughout the day to give students the skills needed to 
   </tr>
   <tr>
     <td>9:45AM - 10:45AM</td>
-    <td>Intro to HTML/CSS (Auditorium)<span class="asterik-red">*</span></td>
-    <td></td>
+    <td><a href="https://www.facebook.com/events/1603226859982071/">Intro to HTML/CSS</a> (Auditorium)<span class="asterik-red">*</span></td>
+    <td><a href="https://www.sublimetext.com/">Sublime Text</a></td>
   </tr>
   <tr>
     <td>11:00AM - 12:00PM</td>
-    <td>Intro to Web Development in Flask (Auditorium)<span class="asterik-red">*</span></td>
-    <td>Flask</td>
+    <td><a href="https://www.facebook.com/events/1790861301153530/">Intro to Web Development in Flask</a> (Auditorium)<span class="asterik-red">*</span></td>
+    <td><a href="https://www.python.org/downloads/">Python</a></td>
   </tr>
   <tr>
     <td>12:15PM - 1:15PM</td>
-    <td>Intro to Android(Auditorium)<span class="asterik-red">*</span></td>
-    <td>Android</td>
+    <td><a href="https://www.facebook.com/events/161079424291683/">Intro to Android</a> (Auditorium)<span class="asterik-red">*</span></td>
+    <td><a href="https://developer.android.com/studio/index.html">Android</a>, <a href="https://www.java.com/en/download/">Java</a></td>
   </tr>
   <tr>
     <td>1:30PM - 2:30PM</td>
-    <td>Intro to Game Development in Unity (Auditorium)<span class="asterik-red">*</span></td>
-    <td>Unity</td>
+    <td><a href="https://www.facebook.com/events/1799821720234596/">Intro to Game Development in Unity</a> (Auditorium)<span class="asterik-red">*</span></td>
+    <td><a href="https://unity3d.com/get-unity/download">Unity</a></td>
   </tr>
   <tr>
     <td>2:30PM</td>
@@ -100,6 +100,7 @@ Workshops will be held throughout the day to give students the skills needed to 
 <style type="text/css">
     table {
         margin: 0 auto;
+        width: 110%;
     }
     .header {
         text-align: left;
