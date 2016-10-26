@@ -1,5 +1,5 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/842,185462747,2016-10-26 18:27:55,2016-10-26 17:45:27,Dopo la scossa tutti i vigili ,42.7743,13.298385,"[""Accettato"", ""Telegram""]",,http://i.imgur.com/9IVZ4Uz.jpg,"{""data"": ""26/10/2016"", ""descrizione"": ""Dopo la scossa tutti i vigili del fuoco in azione e possibili altri crolli zona rocca di Arquata."", ""immagine"": ""http://i.imgur.com/9IVZ4Uz.jpg"", ""lat"": ""42.7743"", ""lon"": ""13.298385"", ""telegram_user"": """"}","<pre><yamldata>telegram_user: ''
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/842,185462747,2016-10-26 20:07:03,2016-10-26 17:45:27,Dopo la scossa tutti i vigili ,42.7743,13.298385,"[""Accettato"", ""Bollettino"", ""Telegram""]",,http://i.imgur.com/9IVZ4Uz.jpg,"{""data"": ""26/10/2016"", ""descrizione"": ""Dopo la scossa tutti i vigili del fuoco in azione e possibili altri crolli zona rocca di Arquata."", ""immagine"": ""http://i.imgur.com/9IVZ4Uz.jpg"", ""lat"": ""42.7743"", ""lon"": ""13.298385"", ""telegram_user"": """"}","<pre><yamldata>telegram_user: ''
 descrizione: 'Dopo la scossa tutti i vigili del fuoco in azione e possibili altri crolli zona rocca di Arquata.'
 immagine: 'http://i.imgur.com/9IVZ4Uz.jpg'
 lat: '42.7743'
