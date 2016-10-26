@@ -84,3 +84,6 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+
+# Include files from these folders to parse for production
+include: ['_pages']
