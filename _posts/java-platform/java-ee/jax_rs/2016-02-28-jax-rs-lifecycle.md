@@ -236,6 +236,7 @@ public class ServiceFacade {
 
 <span style="color: #808000;">com.wora.dao.person.IPersonDao</span>
 ```java
+
 package com.wora.dao.person;
 
 import java.util.Properties;
@@ -252,7 +253,9 @@ public abstract boolean savePerson(Person person) throws Exception;
 İmplementasyonuna bakalım;
 
 <span style="color: #808000;">com.wora.dao.person.PersonDaoImp</span>
+
 ```java
+
 package com.wora.dao.person;
 
 import java.util.Properties;
@@ -294,6 +297,7 @@ Göreceginiz üzere implementasyon var ama içi boş, doldurmadım :)
 
 <span style="color: #808000;">com.wora.db</span>
 ```java
+
 package com.wora.db;
 
 import java.sql.Connection;
