@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/843,185500299,2016-10-26 20:24:35,2016-10-26 20:24:17,Safety Check di Facebook,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""26/10/2016"", ""descrizione"": ""Facebook ha aperto un safety check per il terremoto del 26/10/2016"", ""link"": ""https://www.facebook.com/safetycheck/preci-earthquake-oct26-2016/"", ""titolo"": ""Safety Check di Facebook""}","<pre><yamldata>titolo: 'Safety Check di Facebook'
+descrizione: 'Facebook ha aperto un safety check per il terremoto del 26/10/2016'
+link: 'https://www.facebook.com/safetycheck/preci-earthquake-oct26-2016/'
+data: 26/10/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/842,185462747,2016-10-26 20:07:03,2016-10-26 17:45:27,Dopo la scossa tutti i vigili ,42.7743,13.298385,"[""Accettato"", ""Bollettino"", ""Telegram""]",,http://i.imgur.com/9IVZ4Uz.jpg,"{""data"": ""26/10/2016"", ""descrizione"": ""Dopo la scossa tutti i vigili del fuoco in azione e possibili altri crolli zona rocca di Arquata."", ""immagine"": ""http://i.imgur.com/9IVZ4Uz.jpg"", ""lat"": ""42.7743"", ""lon"": ""13.298385"", ""telegram_user"": """"}","<pre><yamldata>telegram_user: ''
 descrizione: 'Dopo la scossa tutti i vigili del fuoco in azione e possibili altri crolli zona rocca di Arquata.'
 immagine: 'http://i.imgur.com/9IVZ4Uz.jpg'
@@ -3622,16 +3627,6 @@ link: 'https://www.facebook.com/groups/1758670357733881/permalink/17628568973152
 immagine: ''
 data: 14/09/2016
 </yamldata></pre>",closed
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/327,176993224,2016-09-22 16:07:47,2016-09-14 19:07:36,"Roccaraso, AQ - Hotel ""Vetta D'Abruzzo""",41.850455,14.079666,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""HOTEL \""VETTA D'ABRUZZO\"" ROCCARASO AQ (per 2 famiglie)"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": ""41.850455"", ""link"": """", ""lon"": ""14.079666"", ""tel"": ""086462695""}","<pre><yamldata>tel: '086462695'
-email: ''
-descrizione: 'HOTEL ""VETTA D''ABRUZZO"" ROCCARASO AQ (per 2 famiglie)'
-indirizzo: ''
-lat: '41.850455'
-lon: '14.079666'
-link: ''
-immagine: ''
-data: 14/09/2016
-</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/327,176993224,2016-09-22 16:07:47,2016-09-14 19:07:36,"Roccaraso, AQ - Hotel ""Vetta D'Abruzzo""",41.850455,14.079666,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""HOTEL \""VETTA D'ABRUZZO\"" ROCCARASO AQ (per 2 famiglie)"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": ""41.850455"", ""link"": """", ""lon"": ""14.079666"", ""tel"": ""086462695""}","<pre><yamldata>tel: '086462695'
 email: ''
 descrizione: 'HOTEL ""VETTA D''ABRUZZO"" ROCCARASO AQ (per 2 famiglie)'
