@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/846,185516128,2016-10-26 21:33:28,2016-10-26 21:32:48,Comuni dell'Umbria dove le scuole resteranno chiuse a causa del #terremoto,,,"[""Accettato"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""26/10/2016"", ""descrizione"": ""Domani 27 ottobre scuole e universit\u00e0 chiuse nei comuni di: Perugia, Norcia, Assisi, Bastia, Nocera Umbra, Valtopina, Foligno, Spello, Trevi, Sellano, Campello sul Clitunno, Gualdo Cattaneo, Giano dell\u2019Umbria, Castel Ritaldi, Spoleto, Cerreto di Spoleto, Preci, Vallo di Nera, Sant\u2019Anatolia di Narco, Poggiodomo, Scheggino, Monteleone di Spoleto Cascia Ferentillo, Polino. Nei restanti comuni valuteranno i sindaci."", ""link"": ""https://twitter.com/giornaleprociv/status/791385075304828933"", ""titolo"": ""Comuni dell'Umbria dove le scuole resteranno chiuse a causa del #terremoto""}","<pre><yamldata>titolo: 'Comuni dell''Umbria dove le scuole resteranno chiuse a causa del #terremoto'
+descrizione: 'Domani 27 ottobre scuole e università chiuse nei comuni di: Perugia, Norcia, Assisi, Bastia, Nocera Umbra, Valtopina, Foligno, Spello, Trevi, Sellano, Campello sul Clitunno, Gualdo Cattaneo, Giano dell’Umbria, Castel Ritaldi, Spoleto, Cerreto di Spoleto, Preci, Vallo di Nera, Sant’Anatolia di Narco, Poggiodomo, Scheggino, Monteleone di Spoleto Cascia Ferentillo, Polino. Nei restanti comuni valuteranno i sindaci.'
+link: 'https://twitter.com/giornaleprociv/status/791385075304828933'
+data: 26/10/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/845,185505648,2016-10-26 21:00:56,2016-10-26 20:46:44,"FOTO - Gli ospiti della ""Casa del parco"" ad #Arquata aspettano di essere trasferiti",42.774479,13.297897,"[""Accettato"", ""Bollettino"", ""Telegram""]",,http://i.imgur.com/gkg3fIb.jpg,"{""data"": ""26/10/2016"", ""descrizione"": ""Gli ospiti della \""casa del parco\"" di Arquata stanno aspettando per essere trasferiti a San Benedetto. Intanto si preparano i letti dentro la tenda mensa."", ""immagine"": ""http://i.imgur.com/gkg3fIb.jpg"", ""lat"": ""42.774479"", ""lon"": ""13.297897"", ""telegram_user"": """"}","<pre><yamldata>telegram_user: ''
 descrizione: 'Gli ospiti della ""casa del parco"" di Arquata stanno aspettando per essere trasferiti a San Benedetto. Intanto si preparano i letti dentro la tenda mensa.'
 immagine: 'http://i.imgur.com/gkg3fIb.jpg'
@@ -3902,17 +3907,6 @@ indirizzo: ''
 lat: '44.04252'
 lon: '12.53566'
 link: ''
-immagine: ''
-data: 14/09/2016
-</yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/300,176948051,2016-09-14 18:03:32,2016-09-14 16:00:27,Libri e cancelleria,,,"[""Accettato"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""Libri e cancelleria"", ""data"": ""14/09/2016"", ""descrizione"": ""L\u2019Associazione Nazionale Presidi del Lazio e il Progetto Bambini dell\u2019U.N.I.T.A.L.S.I. (Unione Nazionale Italiana Trasporto Ammalati a Lourdes e Santuari Internazionali) hanno lanciato l\u2019iniziativa \u201cScuola solidale\u201d grazie alla quale verranno raccolti fondi a favore dell\u2019Istituto omnicomprensivo di Amatrice che \u00e8 andato completamente distrutto a causa del sisma - IN TUTTA ITALIA"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""http://www.corriere.it/scuola/primaria/16_agosto_26/terremoto-al-via-scuola-solidale-raccolta-fondi-bambini-amatrice-c0196278-6b66-11e6-8bdd-2a860cc068c8.shtml?refresh_ce-cp"", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
-email: ''
-cosa: 'Libri e cancelleria'
-descrizione: 'L’Associazione Nazionale Presidi del Lazio e il Progetto Bambini dell’U.N.I.T.A.L.S.I. (Unione Nazionale Italiana Trasporto Ammalati a Lourdes e Santuari Internazionali) hanno lanciato l’iniziativa “Scuola solidale” grazie alla quale verranno raccolti fondi a favore dell’Istituto omnicomprensivo di Amatrice che è andato completamente distrutto a causa del sisma - IN TUTTA ITALIA'
-indirizzo: ''
-lat: ''
-lon: ''
-link: 'http://www.corriere.it/scuola/primaria/16_agosto_26/terremoto-al-via-scuola-solidale-raccolta-fondi-bambini-amatrice-c0196278-6b66-11e6-8bdd-2a860cc068c8.shtml?refresh_ce-cp'
 immagine: ''
 data: 14/09/2016
 </yamldata></pre>",open
