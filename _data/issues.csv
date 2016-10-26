@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/847,185517490,2016-10-26 22:04:16,2016-10-26 21:38:52,Ad Ascoli sfollati di Arquata e Pescara del Tronto dormono in auto,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""Pubblicare su FB""]",,,"{""data"": ""26/10/2016"", ""descrizione"": ""Pare che questa notte alcuni tra gli Arquatani e i Pescaresi che usufruivano dell autonoma sistemazione ad Ascoli siano tutti in giro alla ricerc di uno spazio aperto dove parcheggiare ka macchina e trascorrere la notte.Noi siamo al parcheggio di BRICO (ascoli piceno zona al battente)"", ""link"": """", ""titolo"": ""Un'altra notte da sfollati""}","<pre><yamldata>titolo: 'Un''altra notte da sfollati'
+descrizione: 'Pare che questa notte alcuni tra gli Arquatani e i Pescaresi che usufruivano dell autonoma sistemazione ad Ascoli siano tutti in giro alla ricerc di uno spazio aperto dove parcheggiare ka macchina e trascorrere la notte.Noi siamo al parcheggio di BRICO (ascoli piceno zona al battente)'
+link: ''
+data: 26/10/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/846,185516128,2016-10-26 22:01:59,2016-10-26 21:32:48,Comuni dell'Umbria dove le scuole resteranno chiuse a causa del #terremoto,,,"[""Accettato"", ""Bollettino"", ""Notizie Utili"", ""Pubblicare su FB"", ""Twitter""]",,,"{""data"": ""26/10/2016"", ""descrizione"": ""Domani 27 ottobre scuole e universit\u00e0 chiuse nei comuni di: Perugia, Norcia, Assisi, Bastia, Nocera Umbra, Valtopina, Foligno, Spello, Trevi, Sellano, Campello sul Clitunno, Gualdo Cattaneo, Giano dell\u2019Umbria, Castel Ritaldi, Spoleto, Cerreto di Spoleto, Preci, Vallo di Nera, Sant\u2019Anatolia di Narco, Poggiodomo, Scheggino, Monteleone di Spoleto Cascia Ferentillo, Polino, Terni, Magione, Marsciano, Todi, Citt\u00e0 della Pieve, Narni. Nei restanti comuni valuteranno i sindaci."", ""link"": ""https://twitter.com/giornaleprociv/status/791385075304828933"", ""titolo"": ""Comuni dell'Umbria dove le scuole resteranno chiuse a causa del #terremoto""}","<pre><yamldata>titolo: 'Comuni dell''Umbria dove le scuole resteranno chiuse a causa del #terremoto'
 descrizione: 'Domani 27 ottobre scuole e università chiuse nei comuni di: Perugia, Norcia, Assisi, Bastia, Nocera Umbra, Valtopina, Foligno, Spello, Trevi, Sellano, Campello sul Clitunno, Gualdo Cattaneo, Giano dell’Umbria, Castel Ritaldi, Spoleto, Cerreto di Spoleto, Preci, Vallo di Nera, Sant’Anatolia di Narco, Poggiodomo, Scheggino, Monteleone di Spoleto Cascia Ferentillo, Polino, Terni, Magione, Marsciano, Todi, Città della Pieve, Narni. Nei restanti comuni valuteranno i sindaci.'
 link: 'https://twitter.com/giornaleprociv/status/791385075304828933'
@@ -4205,17 +4210,6 @@ bic: BCITITMM
 postale: '15204639'
 causale: 'Chiese Amandola e Beni Culturali Amandola'
 link: 'https://www.facebook.com/groups/1758670357733881/permalink/1764952897105627/'
-email: ''
-data: 14/09/2016
-</yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/271,176857171,2016-10-01 16:19:53,2016-09-14 09:22:27,ANCI Toscana,,,"[""Accettato"", ""Form"", ""Notizie Utili"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""ANCI Toscana"", ""data"": ""14/09/2016"", ""descrizione"": ""#ToscanaperlaRicostruzione pagina sul sito di ANCI Toscana dove vengono raccolte tutte le iniziative dei Comuni toscani in sostegno delle popolazioni colpite dal terremoto"", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""http://www.ancitoscana.it/component/k2/603-terremoto-una-pagina-ad-hoc-per-le-iniziative-dei-comuni-toscani.html"", ""postale"": """"}","<pre><yamldata>chi: 'ANCI Toscana'
-descrizione: '#ToscanaperlaRicostruzione pagina sul sito di ANCI Toscana dove vengono raccolte tutte le iniziative dei Comuni toscani in sostegno delle popolazioni colpite dal terremoto'
-intestazione: ''
-iban: ''
-bic: ''
-postale: ''
-causale: ''
-link: 'http://www.ancitoscana.it/component/k2/603-terremoto-una-pagina-ad-hoc-per-le-iniziative-dei-comuni-toscani.html'
 email: ''
 data: 14/09/2016
 </yamldata></pre>",open
