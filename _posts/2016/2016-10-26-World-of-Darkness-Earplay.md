@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Unboxing Acquire
+title: Interactive Audio World of Darkness Project
 description: "Dave Grossman and Richard Dansky have written a World of Darkness game for Earplay enabled devices."
 category: games
 featured: earplay.png
