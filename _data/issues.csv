@@ -1,4 +1,11 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/842,185462747,2016-10-26 18:27:55,2016-10-26 17:45:27,Dopo la scossa tutti i vigili ,42.7743,13.298385,"[""Accettato"", ""Telegram""]",,http://i.imgur.com/9IVZ4Uz.jpg,"{""data"": ""26/10/2016"", ""descrizione"": ""Dopo la scossa tutti i vigili del fuoco in azione e possibili altri crolli zona rocca di Arquata."", ""immagine"": ""http://i.imgur.com/9IVZ4Uz.jpg"", ""lat"": ""42.7743"", ""lon"": ""13.298385"", ""telegram_user"": """"}","<pre><yamldata>telegram_user: ''
+descrizione: 'Dopo la scossa tutti i vigili del fuoco in azione e possibili altri crolli zona rocca di Arquata.'
+immagine: 'http://i.imgur.com/9IVZ4Uz.jpg'
+lat: '42.7743'
+lon: '13.298385'
+data: 26/10/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/841,185355207,2016-10-26 17:09:50,2016-10-26 10:31:32,Associazione cerca progetto per popolazione colpita dal sisma a cui destinare raccolta fondi ,43.974924,7.945147,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form"", ""Pubblicare su FB""]",,http://i.imgur.com/QllTxpl.jpg,"{""cosa"": ""fondi disponibili per un progetto concreto ed attuale"", ""data"": ""26/10/2016"", ""descrizione"": ""Abbiamo raccolto circa 7.000\u20ac da destinare ad un progetto per le popolazioni colpite dal terremoto. Vorremmo individuare una realt\u00e0 specifica a cui donare i soldi per un'idea concreta ed immediatamente realizzabile, o ancora meglio fare degli acquisti in base ai bisogni del progetto in corso. Abbiamo gi\u00e0 individuato alcune necessit\u00e0, ma vorremmo vagliarne anche altre. Mandateci le vostre richieste."", ""email"": ""associazioneucastellu@gmail.com"", ""immagine"": ""http://i.imgur.com/QllTxpl.jpg"", ""indirizzo"": ""SP24, Borgomaro, Imperia, Liguria, 18021, Italia"", ""lat"": ""43.974924"", ""link"": ""https://www.facebook.com/AssociazioneUCastellu/"", ""lon"": ""7.945147"", ""tel"": """"}","<pre><yamldata>tel: ''
 email: associazioneucastellu@gmail.com
 cosa: 'fondi disponibili per un progetto concreto ed attuale'
