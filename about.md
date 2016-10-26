@@ -1,15 +1,13 @@
 ---
-layout: page
+layout: default
 title: About
 permalink: /about/
 ---
 
-Some information about you!
+## <center>About</center>{: .acm-blue }
 
-### More Information
+<center>We are a community of hackers at UCLA who love building cool things. We have workshops and tutorials to teach beginners how to start working on their own projects. We also have hack nights so that the more advanced students can collaborate and learn.</center>
 
-A place to include any other types of information that you'd like to include about yourself.
+## <center>Our Team</center>{: .acm-blue }
 
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+![_config.yml]({{ site.baseurl }}/images/acm-board.png){: .center-image }
