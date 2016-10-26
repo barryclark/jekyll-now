@@ -11,6 +11,7 @@ permalink: /sitemap/
 * [Privacy Policy](/privacy/)
 * [Sitemap (this page)](/sitemap/)
 * [Sitemap.xml](/sitemap.xml)
+* [robots.txt](/robots.txt)
 
 ## Posts
 
