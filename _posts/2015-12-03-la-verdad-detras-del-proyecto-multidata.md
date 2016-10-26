@@ -20,8 +20,8 @@ categories:
 <div style="color:#222222;font-family:arial, sans-serif;font-size:small;">
   <div style="text-align:justify;">
     <div class="separator" style="clear:both;text-align:center;">
-      <a href="/wp-content/upload/10/multidata.png" style="clear:left;float:left;margin-bottom:1em;margin-right:1em;">
-<img border="0" height="200" src="wp-content/upload/10/multidata.png" width="200" /></a>
+      <a href="/wp-content/uploads/2016/10/multidata.png" style="clear:left;float:left;margin-bottom:1em;margin-right:1em;">
+<img border="0" height="200" src="/wp-content/uploads/2016/10/multidata.png" width="200" /></a>
     </div>
     
     <p>
