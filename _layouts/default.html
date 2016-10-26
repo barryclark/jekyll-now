@@ -31,20 +31,6 @@
 	{% unless csses contains css %}{% assign csses = csses | push: css %}{% endunless %}
 {% endfor %}
 
-{% unless layout.isPost %}
-	{% for post in posts %}
-		{% if post.mathjax %}{% assign mathjax = true %}{% endif %}
-		{% if post.jquery %}{% assign jquery = true %}{% endif %}
-		
-		{% for css in post.csses %}
-			{% unless csses contains css %}{% assign csses = csses | push: css %}{% endunless %}
-		{% endfor %}
-		
-		{% for javascript in post.javascripts %}
-			{% unless javascripts contains javascript %}{% assign javascripts = javascripts | push: javascript %}{% endunless %}
-		{% endfor %}
-	{% endfor %}
-{% endunless %}
 {% endcapture %}{% assign jbcache = nil %}<!DOCTYPE html>
 <html lang="en-us">
 	<head itemscope itemtype="http://schema.org/WebSite">
