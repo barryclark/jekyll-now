@@ -6,11 +6,11 @@ permalink: /udi/
 
 *Web page of a extra-curricular course at taught at GYMY in 2016/2017.*
 
-# Plan: UDI 01 -- Open Source, Languages and Reading -- 2016/11/03
+## Plan: UDI 01 -- Open Source, Languages and Reading -- 2016/11/03
 
 
 
-# UDI 01 -- Git and GitHub -- 2016/10/27
+## UDI 01 -- Git and GitHub -- 2016/10/27
 
 Links:
 
