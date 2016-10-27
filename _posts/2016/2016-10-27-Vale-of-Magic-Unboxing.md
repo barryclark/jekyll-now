@@ -22,5 +22,6 @@ I tried to get one of each new advancement type and vale in their respective pic
 ![Vale of Magic Cards]({{ site.url }}/images/mysticvale/vom-cards.jpg)
 
 
-[^1]: [Unboxing Mystic Vale](http://pawnsperspective.com/Mystic-Vale-Unboxing/)\\
+[^1]: [Unboxing Mystic Vale](http://pawnsperspective.com/Mystic-Vale-Unboxing/)
+
 [^2]: [Second Look - Mystic Vale](http://www.purplepawn.com/2016/08/second-look-mystic-vale/)
