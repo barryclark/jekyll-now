@@ -5158,6 +5158,17 @@ link: ''
 immagine: ''
 data: 13/09/2016
 </yamldata></pre>",closed
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/188,176759830,2016-09-13 22:06:58,2016-09-13 21:51:23,A Capricchia (Amatrice) servono tende invernali,42.62549668058208,13.279767036437988,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""A Capricchia (Amatrice) servono tende invernali"", ""data"": ""13/09/2016"", ""descrizione"": ""Frazione danneggiata con case inagibili ma senza crollo ne' feriti. Presenza di tende estive, ma sono in zone vicine ai palazzi danneggiati e a rischio crollo. Necessit\u00e0: 1) spostare le tende dalle zone in cui sono state messe ora 2) tende invernali"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Strada Regionale 260 Picente, Amatrice, RI, LAZ, Italia"", ""lat"": ""42.62549668058208"", ""link"": """", ""lon"": ""13.279767036437988"", ""tel"": """"}","<pre><yamldata>tel: ''
+email: ''
+cosa: 'A Capricchia (Amatrice) servono tende invernali'
+descrizione: 'Frazione danneggiata con case inagibili ma senza crollo ne'' feriti. Presenza di tende estive, ma sono in zone vicine ai palazzi danneggiati e a rischio crollo. Necessità: 1) spostare le tende dalle zone in cui sono state messe ora 2) tende invernali'
+indirizzo: 'Strada Regionale 260 Picente, Amatrice, RI, LAZ, Italia'
+lat: '42.62549668058208'
+lon: '13.279767036437988'
+link: ''
+immagine: ''
+data: 13/09/2016
+</yamldata></pre>",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/187,176759732,2016-09-13 21:52:50,2016-09-13 21:50:56,Le creative di Natale al Poggio,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Le creative di Natale al Poggio"", ""data"": ""13/09/2016"", ""descrizione"": ""Pagina Facebook dove vengono pubblicati oggetti messi in vendita con la modalit\u00e0 dell'asta dalle creative. Chi compra non paga la creativa ma dona all'ente / associazione indicata"", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""https://www.facebook.com/Creare-per-Ricostruire-1745760672344729/"", ""postale"": """"}","<pre><yamldata>chi: 'Le creative di Natale al Poggio'
 descrizione: 'Pagina Facebook dove vengono pubblicati oggetti messi in vendita con la modalità dell''asta dalle creative. Chi compra non paga la creativa ma dona all''ente / associazione indicata'
 intestazione: ''
