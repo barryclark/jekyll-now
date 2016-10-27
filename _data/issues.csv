@@ -1,4 +1,11 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/850,185608862,2016-10-27 09:35:30,2016-10-27 08:50:56,Arquata del Tronto. Crolli.,42.773936,13.298718,"[""Accettato"", ""Sisma Ottobre"", ""Telegram""]",,http://i.imgur.com/p36tW2h.jpg,"{""data"": ""27/10/2016"", ""descrizione"": ""Arquata del Tronto. Nella notte altri crolli in zona rossa."", ""immagine"": ""http://i.imgur.com/p36tW2h.jpg"", ""lat"": ""42.773936"", ""lon"": ""13.298718"", ""telegram_user"": """"}","<pre><yamldata>telegram_user: ''
+descrizione: 'Arquata del Tronto. Nella notte altri crolli in zona rossa.'
+immagine: 'http://i.imgur.com/p36tW2h.jpg'
+lat: '42.773936'
+lon: '13.298718'
+data: 27/10/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/849,185598875,2016-10-27 08:05:23,2016-10-27 08:00:43,#Umbertide (PG): disponibilità 6 alloggi,43.2421299,12.2230585,"[""Accettato"", ""Alloggi"", ""Sisma Ottobre""]",,,"{""data"": ""27/10/2016"", ""descrizione"": ""Buongiorno abbiamo disponibilit\u00e0 di 6 ex case vacanze nella zona di Preggio- Umbertide ( 20km da Perugia) con possibilit\u00e0 di ospitare fino a 30 persone. Provviste di riscaldamento televisione camino biancheria cucine comprese di tutto. E\u2019 necessaria la macchina in quanto la struttura \u00e8 ubicata in campagna. Il sito intrenet \u00e8 ancora presente e rintracciabile tramite: villa degli olivi Umbertide Preggio. La struttura \u00e8 al momento chiusa per problemi di salute dei miei genitori ma \u00e8 tutto funzionante."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via del Comune, Preggio, Umbertide, PG, UMB, 06019, Italia"", ""lat"": ""43.2421299"", ""link"": """", ""lon"": ""12.2230585"", ""tel"": ""3497396548""}","<pre><yamldata>tel: '3497396548'
 email: ''
 descrizione: 'Buongiorno abbiamo disponibilità di 6 ex case vacanze nella zona di Preggio- Umbertide ( 20km da Perugia) con possibilità di ospitare fino a 30 persone. Provviste di riscaldamento televisione camino biancheria cucine comprese di tutto. E’ necessaria la macchina in quanto la struttura è ubicata in campagna. Il sito intrenet è ancora presente e rintracciabile tramite: villa degli olivi Umbertide Preggio. La struttura è al momento chiusa per problemi di salute dei miei genitori ma è tutto funzionante.'
@@ -3589,16 +3596,6 @@ link: 'https://www.facebook.com/asilo.laquila'
 immagine: ''
 data: 14/09/2016
 </yamldata></pre>",closed
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/334,176996434,2016-09-22 16:06:06,2016-09-14 19:21:34,"Tuscania, VT - Albergo ""Palazzo Ranucci""",42.417114,11.873651,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""ALBERGO \""PALAZZO RANUCCI\"" di TUSCANIA (2 camere matrimoniali e vitto). Disposti ad andare a prendere le persone in difficolt\u00e0."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via della Torretta, 8, 01017 Tuscania VT"", ""lat"": ""42.417114"", ""link"": """", ""lon"": ""11.873651"", ""tel"": ""0761434394 - 3202631361""}","<pre><yamldata>tel: '0761434394 - 3202631361'
-email: ''
-descrizione: 'ALBERGO ""PALAZZO RANUCCI"" di TUSCANIA (2 camere matrimoniali e vitto). Disposti ad andare a prendere le persone in difficoltà.'
-indirizzo: 'Via della Torretta, 8, 01017 Tuscania VT'
-lat: '42.417114'
-lon: '11.873651'
-link: ''
-immagine: ''
-data: 14/09/2016
-</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/334,176996434,2016-09-22 16:06:06,2016-09-14 19:21:34,"Tuscania, VT - Albergo ""Palazzo Ranucci""",42.417114,11.873651,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""ALBERGO \""PALAZZO RANUCCI\"" di TUSCANIA (2 camere matrimoniali e vitto). Disposti ad andare a prendere le persone in difficolt\u00e0."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via della Torretta, 8, 01017 Tuscania VT"", ""lat"": ""42.417114"", ""link"": """", ""lon"": ""11.873651"", ""tel"": ""0761434394 - 3202631361""}","<pre><yamldata>tel: '0761434394 - 3202631361'
 email: ''
 descrizione: 'ALBERGO ""PALAZZO RANUCCI"" di TUSCANIA (2 camere matrimoniali e vitto). Disposti ad andare a prendere le persone in difficoltà.'
