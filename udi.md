@@ -6,7 +6,13 @@ permalink: /udi/
 
 *Web page of a extra-curricular course at taught at GYMY in 2016/2017.*
 
-## Plan: UDI 01 -- Open Source, Languages and Reading -- 2016/11/03
+**Please, do not share the recorded sessions outside of our group. Thank you.**
+If this happens, we will stop recording them and take them down.
+
+All the materials and code that I give out is licensed under the CC-BY-SA license and
+the MIT license respectively.
+
+## Plan: UDI 02 -- Open Source, Languages and Reading -- 2016/11/03
 
 
 
