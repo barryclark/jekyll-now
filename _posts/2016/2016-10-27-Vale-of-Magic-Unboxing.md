@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Unboxing Mysic Vale: Vale of Magic"
+title: "Unboxing Mystic Vale: Vale of Magic"
 description: "Mystic Vale's first expansion, Vale of Magic, is out. Let's look inside."
 category: unboxing
 featured: valeofmagic.jpg
