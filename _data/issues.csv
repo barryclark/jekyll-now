@@ -3599,6 +3599,16 @@ link: ''
 immagine: ''
 data: 14/09/2016
 </yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/334,176996434,2016-09-22 16:06:06,2016-09-14 19:21:34,"Tuscania, VT - Albergo ""Palazzo Ranucci""",42.417114,11.873651,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""ALBERGO \""PALAZZO RANUCCI\"" di TUSCANIA (2 camere matrimoniali e vitto). Disposti ad andare a prendere le persone in difficolt\u00e0."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via della Torretta, 8, 01017 Tuscania VT"", ""lat"": ""42.417114"", ""link"": """", ""lon"": ""11.873651"", ""tel"": ""0761434394 - 3202631361""}","<pre><yamldata>tel: '0761434394 - 3202631361'
+email: ''
+descrizione: 'ALBERGO ""PALAZZO RANUCCI"" di TUSCANIA (2 camere matrimoniali e vitto). Disposti ad andare a prendere le persone in difficoltà.'
+indirizzo: 'Via della Torretta, 8, 01017 Tuscania VT'
+lat: '42.417114'
+lon: '11.873651'
+link: ''
+immagine: ''
+data: 14/09/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/333,176996087,2016-09-14 19:20:32,2016-09-14 19:20:06,Supermecato Tigre - Pescara,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Supermecato Tigre - Pescara"", ""data"": ""14/09/2016"", ""descrizione"": ""Supermercato Tigre gestito dalla Simone SRL (via San Donato 29, Pescara) dalle 08:30 alle 12:30 e dalle 15:30 alle 19:30 del 26/08/2016 In quest'occasione raccoglieremo solo ed esclusivamente: -olio; -zucchero; -pelati; -legumi; -caff\u00e8; -tonno"", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""https://www.facebook.com/events/1239431849414852/"", ""postale"": """"}","<pre><yamldata>chi: 'Supermecato Tigre - Pescara'
 descrizione: 'Supermercato Tigre gestito dalla Simone SRL (via San Donato 29, Pescara) dalle 08:30 alle 12:30 e dalle 15:30 alle 19:30 del 26/08/2016 In quest''occasione raccoglieremo solo ed esclusivamente: -olio; -zucchero; -pelati; -legumi; -caffè; -tonno'
 intestazione: ''
