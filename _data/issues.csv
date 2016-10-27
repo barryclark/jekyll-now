@@ -3381,6 +3381,17 @@ link: 'https://www.facebook.com/ultras1898/'
 email: ''
 data: 15/09/2016
 </yamldata></pre>",closed
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/369,177123672,2016-09-23 21:51:22,2016-09-15 08:58:50,Ultras 1898,,,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Ultras 1898"", ""data"": ""15/09/2016"", ""descrizione"": ""La raccolta di beni di prima necessit\u00e0 \u00e8 attiva presso la sede degli Ultras 1898 in via Erasmo Mari 32 ad Ascoli Piceno dalle 18:00 alle 20:00 e dalle 21:00 alle 24:00. Questi i beni di prima necessit\u00e0 richiesti: - stoviglie di carta (bicchieri, piatti, posate, tovaglioli); - acqua minerale; - cibo a lunga conservazione; - coperte e vestiti; - pannolini e materiale per bambini; - materiale per igiene intima."", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""https://www.facebook.com/ultras1898/"", ""postale"": """"}","<pre><yamldata>chi: 'Ultras 1898'
+descrizione: 'La raccolta di beni di prima necessità è attiva presso la sede degli Ultras 1898 in via Erasmo Mari 32 ad Ascoli Piceno dalle 18:00 alle 20:00 e dalle 21:00 alle 24:00. Questi i beni di prima necessità richiesti: - stoviglie di carta (bicchieri, piatti, posate, tovaglioli); - acqua minerale; - cibo a lunga conservazione; - coperte e vestiti; - pannolini e materiale per bambini; - materiale per igiene intima.'
+intestazione: ''
+iban: ''
+bic: ''
+postale: ''
+causale: ''
+link: 'https://www.facebook.com/ultras1898/'
+email: ''
+data: 15/09/2016
+</yamldata></pre>",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/368,177122822,2016-09-23 22:18:39,2016-09-15 08:54:33,Materiale di Prima necessità,45.07523,7.69829,"[""Accettato"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""Materiale di Prima necessit\u00e0"", ""data"": ""15/09/2016"", ""descrizione"": ""- acqua minerale; - cibo a lunga conservazione; - coperte e vestiti; - pannolini e materiale per bambini; - Materiale per igiene intima."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Caff\u00e8 Basaglia, Via Mantova, 34, 10153 Torino"", ""lat"": 45.07523, ""link"": """", ""lon"": 7.69829, ""tel"": ""3473352631""}","<pre><yamldata>tel: '3473352631'
 email: ''
 cosa: 'Materiale di Prima necessità'
