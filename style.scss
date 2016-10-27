@@ -301,6 +301,10 @@ footer {
 //
 // Tables
 //
+table {
+  overflow-x: auto;	
+}
+
 th {
   font-weight: bold;
 }
