@@ -25,13 +25,13 @@ The Soloist Pokémon Primarina is the fully evolved form of the Water-type first
 **Type: Fire/Dark**
 The Heel Pokémon Incineroar is the fully evolved form of the Fire-type first-partner Pokémon Litten. As Incineroar’s fighting spirit increases, the flames it produces within its body burst from its navel and waistline. These flames resemble a championship belt, which it uses to unleash its moves. Incineroar is the only Pokémon able to learn the move Darkest Lariat. This new Dark-type physical attack allows Incineroar to deal damage to an enemy whilst ignoring the effects of any stat changes on that enemy.
 
-<img src="/images/sunmoon/cosmog.png" width="200" style="float-right" alt="Cosmog"/>
+<img src="/images/sunmoon/cosmog.png" width="200" class="float-right" alt="Cosmog"/>
 **Cosmog**\\
 Type: Psychic
 
 The Nebula Pokémon Cosmog is extremely rare, known only to a select few across Alola. Named by the Aether Foundation, Cosmog is very curious, and its gaseous body is so lightweight that it’s sent flying when the wind blows. When light falls on the Pokémon, Cosmog can absorb it and grow bigger.
 
-<img src="/images/sunmoon/alolanpersian.png" width="200" style="float-right" alt="Alolan Persian"/>
+<img src="/images/sunmoon/alolanpersian.png" width="200" class="float-right" alt="Alolan Persian"/>
 **Alolan Persian**\\
 **Type: Dark**
 
@@ -58,7 +58,7 @@ All of the guardian deities can use the special Z-Move Guardian of Alola. When u
 
 ---
 
-<img src="/images/sunmoon/redblue.png" width="300" style="float-right" alt="Cosmog"/>That's not all the news, though! We all know there's no Pokémon League in Alola yet, but it seems that there's plans to construct one at the peak of a mountain. After your major achievement in completing the island challenge, will the day come when you also take on the Pokémon League to become the strongest Pokémon Trainer?
+<img src="/images/sunmoon/redblue.png" width="300" class="float-right" alt="Cosmog"/>That's not all the news, though! We all know there's no Pokémon League in Alola yet, but it seems that there's plans to construct one at the peak of a mountain. After your major achievement in completing the island challenge, will the day come when you also take on the Pokémon League to become the strongest Pokémon Trainer?
 
 The biggest news, in my opinon, is that of the Battle Tree. It’s a place where Trainers who have completed their island challenge, or who are strong enough to have done so, battle one another. You can scout an opponent you’ve battled against so they can partner and fight alongside you in future battles. You may even see some familiar faces, including the Trainers *Red and Blue* from the Kanto region! There's not indication if the two will have any part of the story, or will just be in the game to battle. What teams will each have? I'm guessing ones similar to their teams in Pokémon Origins and Pokémon Generations. Could we see other famous trainers? I sure hope so!
 
