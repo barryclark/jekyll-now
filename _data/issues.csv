@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/852,185613686,2016-10-27 09:38:06,2016-10-27 09:12:59,Comune di #Matelica: Prime Misure Emergenza Post Sisma del 26/10/2016. Informazioni alla Cittadinanza,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""27/10/2016"", ""descrizione"": ""A seguito delle scosse sismiche del 26/10/2016, ieri sera e stamattina si \u00e8 riunito in Centro Operativo Comunale. Sono state assunte le seguenti misure disponibilit\u00e0 di tende su piazzale della STADIO Loc. Boschetto disponibilit\u00e0 della Palestra Mancinelli in via Bellini In questi siti, coloro che non possono o non vogliono fare ritorno nelle abitazioni , possono trovare riparo e sistemazione E' STATA DISPOSTA LA CHIUSURA DELLE SCUOLE DI OGNI ORDINE E GRADO PRESENTI SUL TERRITORIO CITTADINO, CHE RESTERANNO CHIUSE FINO A MERCOLEDI 02/11/2016 Nella mattinata del 27/10/2016 (GIOVEDI) saranno eseguiti i primi sopralluoghi presso immobili e strutture pubbliche I cittadini che sono interessati a chiedere sopralluoghi per verifiche negli immobili privati, devono farlo presentando l'apposito modulo , con le modalit\u00e0 indicate sul sito. Gli uffici comunali hanno subito danni e sono in corso di definizione le verifiche e una nuova allocazione degli stessi."", ""link"": ""https://www.facebook.com/comunedimatelica/?fref=nf"", ""titolo"": ""Comune di Matelica: Prime Misure Emergenza Post Sisma del 26/10/2016. Informazioni alla Cittadinanza""}","<pre><yamldata>titolo: 'Comune di Matelica: Prime Misure Emergenza Post Sisma del 26/10/2016. Informazioni alla Cittadinanza'
+descrizione: 'A seguito delle scosse sismiche del 26/10/2016, ieri sera e stamattina si è riunito in Centro Operativo Comunale. Sono state assunte le seguenti misure disponibilità di tende su piazzale della STADIO Loc. Boschetto disponibilità della Palestra Mancinelli in via Bellini In questi siti, coloro che non possono o non vogliono fare ritorno nelle abitazioni , possono trovare riparo e sistemazione E'' STATA DISPOSTA LA CHIUSURA DELLE SCUOLE DI OGNI ORDINE E GRADO PRESENTI SUL TERRITORIO CITTADINO, CHE RESTERANNO CHIUSE FINO A MERCOLEDI 02/11/2016 Nella mattinata del 27/10/2016 (GIOVEDI) saranno eseguiti i primi sopralluoghi presso immobili e strutture pubbliche I cittadini che sono interessati a chiedere sopralluoghi per verifiche negli immobili privati, devono farlo presentando l''apposito modulo , con le modalità indicate sul sito. Gli uffici comunali hanno subito danni e sono in corso di definizione le verifiche e una nuova allocazione degli stessi.'
+link: 'https://www.facebook.com/comunedimatelica/?fref=nf'
+data: 27/10/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/851,185611345,2016-10-27 09:37:31,2016-10-27 09:02:09,Notte difficile a Montegallo,42.841026,13.332316,"[""Accettato"", ""Telegram""]",,,"{""data"": ""27/10/2016"", ""descrizione"": ""Notte difficile anche a Montegallo. Altri crolli in zona rossa e tutta la comunit\u00e0 in strada. L'amministrazione sta valutando in queste ore come attrezzare un'area di accoglienza."", ""immagine"": """", ""lat"": ""42.841026"", ""lon"": ""13.332316"", ""telegram_user"": """"}","<pre><yamldata>telegram_user: ''
 descrizione: 'Notte difficile anche a Montegallo. Altri crolli in zona rossa e tutta la comunità in strada. L''amministrazione sta valutando in queste ore come attrezzare un''area di accoglienza.'
 immagine: ''
@@ -3057,16 +3062,6 @@ https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/397,1771509
 tel: '0649972969'
 email: ''
 descrizione: 'Dal lunedì al venerdì, via dei Sabelli, Roma, Umberto I.'
-indirizzo: ''
-lat: ''
-lon: ''
-link: ''
-data: 15/09/2016
-</yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/396,177150909,2016-09-22 16:03:46,2016-09-15 11:21:02,"Amatrice, RI - Segnalazione disponibilità seconde case Amatrice",,,"[""Accettato"", ""Alloggi"", ""Contatti"", ""Donazioni"", ""Form""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""Numero del Comune di Amatrice al quale possono chiamare i proprietari di seconde case che intendano metterle a disposizione di chi \u00e8 rimasto senza. Dal luned\u00ec al venerd\u00ec dalle 9 alle 12 e dalle 15 alle 17."", ""email"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""nome"": ""Segnalazione disponibilit\u00e0 seconde case Amatrice"", ""tel"": ""3384996173""}","<pre><yamldata>nome: 'Segnalazione disponibilità seconde case Amatrice'
-tel: '3384996173'
-email: ''
-descrizione: 'Numero del Comune di Amatrice al quale possono chiamare i proprietari di seconde case che intendano metterle a disposizione di chi è rimasto senza. Dal lunedì al venerdì dalle 9 alle 12 e dalle 15 alle 17.'
 indirizzo: ''
 lat: ''
 lon: ''
