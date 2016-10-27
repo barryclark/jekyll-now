@@ -10,6 +10,7 @@ excerpt_seperator: <!-- more -->
 excerpt_separator: <!--more-->
 ---
 ## Semester 1
+<div class="videoWrapper">
 <table cellpadding="15" cellspacing="10" width="100%" style="text-align: center;">
 <tbody>
 <tr>
@@ -54,5 +55,6 @@ excerpt_separator: <!--more-->
 </tr>
 </tbody>
 </table>
+</div>
 <!--more-->
 <br>
