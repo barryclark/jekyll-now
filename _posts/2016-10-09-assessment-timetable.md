@@ -15,7 +15,7 @@ excerpt_separator: <!--more-->
 <tr>
 <th>Course</th>
 <th>Assessment</th>
-<th>Weight</th>
+<th> </th>
 <th>Submission</th>
 <th>Due Date</th>
 </tr>
