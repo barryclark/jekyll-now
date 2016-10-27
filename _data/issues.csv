@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/868,185777780,2016-10-27 20:55:35,2016-10-27 20:54:52,"Regione #Marche, aggiornamento su sfollati e situazione accoglienza",,,"[""Accettato"", ""Bollettino"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""27/10/2016"", ""descrizione"": ""Oltre 4000 sfollati, una quindicina i comuni colpiti dal sisma. Allestiti moduli cucina/mensa e primi campi di accoglienza, stoccate scorte d'acqua. Il comunicato della Regione Marche dopo riunione del Centro operativo regionale (Cor) presso la Sala operativa unificata della Regione."", ""link"": ""http://www.regione.marche.it/In-Primo-Piano/ComunicatiStampa?id=25925"", ""titolo"": ""Regione #Marche, aggiornamento su sfollati e situazione accoglienza""}","<pre><yamldata>titolo: 'Regione #Marche, aggiornamento su sfollati e situazione accoglienza'
+descrizione: 'Oltre 4000 sfollati, una quindicina i comuni colpiti dal sisma. Allestiti moduli cucina/mensa e primi campi di accoglienza, stoccate scorte d''acqua. Il comunicato della Regione Marche dopo riunione del Centro operativo regionale (Cor) presso la Sala operativa unificata della Regione.'
+link: 'http://www.regione.marche.it/In-Primo-Piano/ComunicatiStampa?id=25925'
+data: 27/10/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/867,185746729,2016-10-27 20:35:54,2016-10-27 18:33:55,Richiesta URGENTE - Cercasi gruppo elettrogeno di emergenza a #Norcia,42.853017366816786,13.097312450408936,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""Gruppo elettrogeno di emergenza"", ""data"": ""27/10/2016"", ""descrizione"": ""Alla Pro Loco di Campi di Norcia serve urgentemente un gruppo elettrogeno di emergenza che permetterebbe di far funzionare gli impianti della struttura che attualmente sta garantendo assistenza alla comunit\u00e0, il generatore dovrebbe essere da almeno 10/12kw con uscita 220. Si tratta di assoluta urgenza. Contattare Luca Tonellotto."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via Fiume, Casa Cupa, Norcia, PG, UMB, 06046, Italia"", ""lat"": ""42.853017366816786"", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1790456101221973/"", ""lon"": ""13.097312450408936"", ""tel"": ""3292860627""}","<pre><yamldata>tel: '3292860627'
 email: ''
 cosa: 'Gruppo elettrogeno di emergenza'
@@ -3309,17 +3314,6 @@ lon: ''
 link: 'http://www.protezionecivile.gov.it/jcms/it/home.wp'
 data: 15/09/2016
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/381,177128901,2016-09-23 22:37:21,2016-09-15 09:24:53,Materiale di prima necessità,42.85161,13.68729,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Materiale di prima necessit\u00e0"", ""data"": ""15/09/2016"", ""descrizione"": ""Servono i seguenti beni: - stoviglie di carta (bicchieri, piatti, posate e tovaglioli) - tantissima acqua in vari formati - cibo a lunga scadenza preconfezionato e facilmente divisibile - materiale igiene intima - pannolini e materiale bambini - coperte e vestiario. Orari di apertura capannone: 8,30 - 12,30 14,00 - 18,30"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": 42.85161, ""link"": """", ""lon"": 13.68729, ""tel"": """"}","<pre><yamldata>tel: ''
-email: ''
-cosa: 'Materiale di prima necessità'
-descrizione: 'Servono i seguenti beni: - stoviglie di carta (bicchieri, piatti, posate e tovaglioli) - tantissima acqua in vari formati - cibo a lunga scadenza preconfezionato e facilmente divisibile - materiale igiene intima - pannolini e materiale bambini - coperte e vestiario. Orari di apertura capannone: 8,30 - 12,30 14,00 - 18,30'
-indirizzo: ''
-lat: 42.85161
-lon: 13.68729
-link: ''
-immagine: ''
-data: 15/09/2016
-</yamldata></pre>",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/381,177128901,2016-09-23 22:37:21,2016-09-15 09:24:53,Materiale di prima necessità,42.85161,13.68729,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Materiale di prima necessit\u00e0"", ""data"": ""15/09/2016"", ""descrizione"": ""Servono i seguenti beni: - stoviglie di carta (bicchieri, piatti, posate e tovaglioli) - tantissima acqua in vari formati - cibo a lunga scadenza preconfezionato e facilmente divisibile - materiale igiene intima - pannolini e materiale bambini - coperte e vestiario. Orari di apertura capannone: 8,30 - 12,30 14,00 - 18,30"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": 42.85161, ""link"": """", ""lon"": 13.68729, ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 cosa: 'Materiale di prima necessità'
