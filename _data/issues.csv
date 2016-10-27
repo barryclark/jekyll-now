@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/867,185746729,2016-10-27 18:39:58,2016-10-27 18:33:55,Gruppo elettrogeno di emergenza,42.853017366816786,13.097312450408936,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Gruppo elettrogeno di emergenza"", ""data"": ""27/10/2016"", ""descrizione"": ""Alla Pro Loco di Campi di Norcia, serve urgentemente un gruppo elettrogeno di emergenza che permetterebbe di far funzionare gli impianti della struttura della struttura che attualmente sta garantendo assistenza alla comunit\u00e0, il generatore dovrebbe essere da almeno 10/12kw con uscita 220. Contattare Luca Tonellotto."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via Fiume, Casa Cupa, Norcia, PG, UMB, 06046, Italia"", ""lat"": ""42.853017366816786"", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1790456101221973/"", ""lon"": ""13.097312450408936"", ""tel"": ""3292860627""}","<pre><yamldata>tel: '3292860627'
+email: ''
+cosa: 'Gruppo elettrogeno di emergenza'
+descrizione: 'Alla Pro Loco di Campi di Norcia, serve urgentemente un gruppo elettrogeno di emergenza che permetterebbe di far funzionare gli impianti della struttura della struttura che attualmente sta garantendo assistenza alla comunità, il generatore dovrebbe essere da almeno 10/12kw con uscita 220. Contattare Luca Tonellotto.'
+indirizzo: 'Via Fiume, Casa Cupa, Norcia, PG, UMB, 06046, Italia'
+lat: '42.853017366816786'
+lon: '13.097312450408936'
+link: 'https://www.facebook.com/groups/1758670357733881/permalink/1790456101221973/'
+immagine: ''
+data: 27/10/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/864,185737052,2016-10-27 17:51:34,2016-10-27 17:50:42,A #Norcia arrivato modulo cucina di Anpas con 40 volontari,,,"[""Accettato"", ""Form"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""27/10/2016"", ""descrizione"": ""A Norcia Norcia \u00e8 arrivato un modulo cucina con quaranta volontari Anpas completo di cucina tensostruttura, servizi, dispensa, tavoli e panche e capace di cucinare millecinquecento pasti ogni pasto."", ""link"": ""http://www.anpas.org/categoria-news-pc/2472-terremoto-2016-26ottobre.html"", ""titolo"": ""A #Norcia arrivato modulo cucina di Anpas con 40 volontari""}","<pre><yamldata>titolo: 'A #Norcia arrivato modulo cucina di Anpas con 40 volontari'
 descrizione: 'A Norcia Norcia è arrivato un modulo cucina con quaranta volontari Anpas completo di cucina tensostruttura, servizi, dispensa, tavoli e panche e capace di cucinare millecinquecento pasti ogni pasto.'
 link: 'http://www.anpas.org/categoria-news-pc/2472-terremoto-2016-26ottobre.html'
