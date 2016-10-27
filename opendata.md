@@ -12,7 +12,7 @@ permalink: /opendata/
 **Dati**
 
 {: .table .table-striped #opendata}
-Nome            |Dataset      |Licenza        |Link Licenza   |Fonte
-:---------------|:------------|:--------------|:--------------|:-------------
+Nome            |Dataset         |Licenza         |Link Licenza    |Fonte
+:---------------|:---------------|:---------------|:---------------|:---------------
 {% for member in site.data.opendata %} {{member.Nome}} | [Dataset]({{member.Dataset}}) | {{member.Licenza}} | [Link Licenza]({{member.Linklicenza}}) | [Fonte]({{member.Fonte}})
 {% endfor %}
