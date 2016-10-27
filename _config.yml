@@ -21,19 +21,19 @@ description: Un progetto per informare sul terremoto avvenuto il 24 Agosto e il 
 # --- Navigation bar options --- #
 # List of links in the navigation bar
 navbar-links:
+  Segnala: "segnala/"
+  Richieste:
+    - Fabbisogni: "fabbisogni/"
+  Offerte:
+    - Risorse: "risorse-disponibili/"
+    - Alloggi: "alloggi/"
+    - Link: "link_utili/"
+  Raccolte Fondi: "fondi/"
   Aggiornamenti:
     - News: "news/"
     - Blog: "post/"
     - Storie: "storie/"
     - Vittime: "vittime/"
-  Segnala: "segnala/"
-  Offerte:
-    - Risorse: "risorse-disponibili/"
-    - Alloggi: "alloggi/"
-    - Link: "link_utili/"
-  Richieste:
-    - Fabbisogni: "fabbisogni/"
-  Raccolte Fondi: "fondi/"
   Utilità:
     - Mappe: "mappe/"
     - Opendata: "opendata/"
