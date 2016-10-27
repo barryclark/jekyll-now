@@ -16,7 +16,7 @@ url: "http://terremotocentroitalia.info"
 title: Terremoto Centro Italia
 
 # Short description of your site
-description: Un progetto per informare sul terremoto avvenuto il 24 Agosto e il 26 Ottobre 2016. 
+description: Un progetto per informare sul terremoto avvenuto il 24 Agosto e il 26 Ottobre 2016.
 
 # --- Navigation bar options --- #
 # List of links in the navigation bar
@@ -25,18 +25,18 @@ navbar-links:
     - News: "news/"
     - Blog: "post/"
     - Storie: "storie/"
-  Hai bisogno?:
-    - Segnala: "segnala/"
-    - Risorse disponibili: "risorse-disponibili/"
-    - Alloggi: "alloggi/"
     - Vittime: "vittime/"
-    - Link utili: "link_utili/"
+  Segnala: "segnala/"
+  Offerte:
+    - Risorse: "risorse-disponibili/"
+    - Alloggi: "alloggi/"
+    - Link: "link_utili/"
+  Richieste:
+    - Fabbisogni: "fabbisogni/"
+  Raccolte Fondi: "fondi/"
   Utilità:
     - Mappe: "mappe/"
     - Opendata: "opendata/"
-  Vuoi donare?:
-    - Raccolte Fondi: "fondi/"
-    - Fabbisogni: "fabbisogni/"
   Il Progetto:
    - About: "about/"
    - Contribuisci: 'https://github.com/emergenzeHack/terremotocentro/wiki" target="_blank'

@@ -24,7 +24,7 @@ layout: base
   {% if page.issue.data.intestazione != blank %}
   <div class="row"> <div class="col-md-2">Instestazione:</div> <div class="col-md-10"> {{page.issue.data.intestazione}}</div> </div>
   {% endif %}
-  
+
   {% if page.issue.data.iban != blank %}
   <div class="row"> <div class="col-md-2">IBAN:</div> <div class="col-md-10"> {{page.issue.data.iban}}</div> </div>
   {% endif %}
@@ -35,12 +35,12 @@ layout: base
 
   {% if page.issue.data.postale != blank %}
   <div class="row"> <div class="col-md-2">Postale:</div> <div class="col-md-10"> {{page.issue.data.postale}}</div></div>
-  {% endif %} 
+  {% endif %}
 
   {% if page.issue.data.causale != blank %}
   <div class="row"> <div class="col-md-2">Causale:</div> <div class="col-md-10"> {{page.issue.data.causale}}</div> </div>
-  {% endif %}  
-  
+  {% endif %}
+
   {% if page.issue.image != blank %}
   <div class="row"> <div class="col-md-2">Immagine:</div> <div class="col-md-10"> <img alt="immagine" src="{{page.issue.image}}"></img> </div> </div>
   {% endif %}

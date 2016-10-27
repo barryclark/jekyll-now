@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Risorse disponibili
+title: Risorse
 permalink: /risorse-disponibili/
 ---
 <div class="panel-group">

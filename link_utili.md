@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Link utili
+title: Link
 permalink: /link_utili/
 ---
 
 Di seguito la lista dei contatti registrati nei sistemi di terremotocenotroitalia
 
-# Contatti 
+# Contatti
 
 {% assign filteredissues = site.data.issuesjson | where: "state","open" %}
 {% for member in filteredissues %}
