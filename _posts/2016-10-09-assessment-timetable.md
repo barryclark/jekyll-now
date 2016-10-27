@@ -10,7 +10,7 @@ excerpt_seperator: <!-- more -->
 excerpt_separator: <!--more-->
 ---
 ## Semester 1
-<div style="overflow-x: scroll;">
+<div style="overflow-x: auto;">
 <table cellpadding="15" cellspacing="10" style="text-align: center;">
 <tbody>
 <tr>
