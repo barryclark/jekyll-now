@@ -1,6 +1,10 @@
-# UDI
+---
+layout: page
+title: UDI
+permalink: /udi/
+---
 
-Web page of a extra-curricular course at taught at GYMY in 2016/2017.
+*Web page of a extra-curricular course at taught at GYMY in 2016/2017.*
 
 # Plan: UDI 01 -- Open Source, Languages and Reading -- 2016/11/03
 
