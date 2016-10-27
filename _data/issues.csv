@@ -3320,6 +3320,17 @@ link: ''
 immagine: ''
 data: 15/09/2016
 </yamldata></pre>",closed
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/381,177128901,2016-09-23 22:37:21,2016-09-15 09:24:53,Materiale di prima necessità,42.85161,13.68729,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Materiale di prima necessit\u00e0"", ""data"": ""15/09/2016"", ""descrizione"": ""Servono i seguenti beni: - stoviglie di carta (bicchieri, piatti, posate e tovaglioli) - tantissima acqua in vari formati - cibo a lunga scadenza preconfezionato e facilmente divisibile - materiale igiene intima - pannolini e materiale bambini - coperte e vestiario. Orari di apertura capannone: 8,30 - 12,30 14,00 - 18,30"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": 42.85161, ""link"": """", ""lon"": 13.68729, ""tel"": """"}","<pre><yamldata>tel: ''
+email: ''
+cosa: 'Materiale di prima necessità'
+descrizione: 'Servono i seguenti beni: - stoviglie di carta (bicchieri, piatti, posate e tovaglioli) - tantissima acqua in vari formati - cibo a lunga scadenza preconfezionato e facilmente divisibile - materiale igiene intima - pannolini e materiale bambini - coperte e vestiario. Orari di apertura capannone: 8,30 - 12,30 14,00 - 18,30'
+indirizzo: ''
+lat: 42.85161
+lon: 13.68729
+link: ''
+immagine: ''
+data: 15/09/2016
+</yamldata></pre>",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/380,177128048,2016-09-23 22:19:01,2016-09-15 09:20:41,Materiale di prima necessità,,,"[""Accettato"", ""Donazioni"", ""Form""]",,,{},"<pre><yamldata>tel: '07441981283'
 email: 'terni@asciuttissimi.it'
 cosa: 'Materiale di prima necessità'
