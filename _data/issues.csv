@@ -1,4 +1,11 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/857,185690862,2016-10-27 15:05:07,2016-10-27 14:50:17,La scuola di Montegallo (Ap) rimarrà chiusa fino al 2 novembre,42.840288,13.331949,"[""Accettato"", ""Notizie Utili"", ""Sisma Ottobre"", ""Telegram""]",,,"{""data"": ""27/10/2016"", ""descrizione"": ""La scuola di Montegallo rimarr\u00e0 chiusa sino a mercoled\u00ec 2 novembre compreso."", ""immagine"": """", ""lat"": ""42.840288"", ""lon"": ""13.331949"", ""telegram_user"": ""ClaudiaMazzanti""}","<pre><yamldata>telegram_user: ClaudiaMazzanti
+descrizione: 'La scuola di Montegallo rimarrà chiusa sino a mercoledì 2 novembre compreso.'
+immagine: ''
+lat: '42.840288'
+lon: '13.331949'
+data: 27/10/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/856,185673633,2016-10-27 13:49:52,2016-10-27 13:49:04,Combattiamo la paura con la solidarietà! Stasera a #Macerata incontro degli studenti universitari,,,"[""Accettato"", ""Bollettino"", ""Notizie Utili"", ""Pubblicare su FB"", ""Sisma Ottobre"", ""Twitter""]",,,"{""data"": ""27/10/2016"", ""descrizione"": ""L'associazione Officina Universitaria invita tutti gli studenti dell'Universit\u00e0 di Macerata, e in particolare gli studenti Erasmus, a incontrarsi stasera 27 ottobre in zona logge di Corso della Repubblica tra le 21.30 e le 23.00 per \""provare a combattere la forte paura stando insieme e facendoci forza a vicenda, per poi dirigerci, sempre tutti insieme, al palazzetto dello sport di Fontescodella\"". Il palazzetto dello sport \u00e8 stato debitamente attrezzato e gli studenti potranno trascorrere la notte qui."", ""link"": ""https://twitter.com/DavClem/status/791631359827640320"", ""titolo"": ""Combattiamo la paura con la solidariet\u00e0! Stasera a #Macerata incontro degli studenti universitari""}","<pre><yamldata>titolo: 'Combattiamo la paura con la solidarietà! Stasera a #Macerata incontro degli studenti universitari'
 descrizione: 'L''associazione Officina Universitaria invita tutti gli studenti dell''Università di Macerata, e in particolare gli studenti Erasmus, a incontrarsi stasera 27 ottobre in zona logge di Corso della Repubblica tra le 21.30 e le 23.00 per ""provare a combattere la forte paura stando insieme e facendoci forza a vicenda, per poi dirigerci, sempre tutti insieme, al palazzetto dello sport di Fontescodella"". Il palazzetto dello sport è stato debitamente attrezzato e gli studenti potranno trascorrere la notte qui.'
 link: 'https://twitter.com/DavClem/status/791631359827640320'
@@ -5144,17 +5151,6 @@ indirizzo: 'Museo civico Cola Filotesio, 47, Via Cola, Casale Zocchi, Amatrice, 
 lat: '42.62991729384457'
 lon: '13.287620544433594'
 link: 'http://www.ilgiornaledellaprotezionecivile.it/dal-territorio/amatrice-appello-a-bikers-ed-enduristi-aiutateci-a-raggiungere-le-zone-isolate'
-immagine: ''
-data: 13/09/2016
-</yamldata></pre>",closed
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/188,176759830,2016-09-13 22:06:58,2016-09-13 21:51:23,A Capricchia (Amatrice) servono tende invernali,42.62549668058208,13.279767036437988,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""A Capricchia (Amatrice) servono tende invernali"", ""data"": ""13/09/2016"", ""descrizione"": ""Frazione danneggiata con case inagibili ma senza crollo ne' feriti. Presenza di tende estive, ma sono in zone vicine ai palazzi danneggiati e a rischio crollo. Necessit\u00e0: 1) spostare le tende dalle zone in cui sono state messe ora 2) tende invernali"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Strada Regionale 260 Picente, Amatrice, RI, LAZ, Italia"", ""lat"": ""42.62549668058208"", ""link"": """", ""lon"": ""13.279767036437988"", ""tel"": """"}","<pre><yamldata>tel: ''
-email: ''
-cosa: 'A Capricchia (Amatrice) servono tende invernali'
-descrizione: 'Frazione danneggiata con case inagibili ma senza crollo ne'' feriti. Presenza di tende estive, ma sono in zone vicine ai palazzi danneggiati e a rischio crollo. Necessità: 1) spostare le tende dalle zone in cui sono state messe ora 2) tende invernali'
-indirizzo: 'Strada Regionale 260 Picente, Amatrice, RI, LAZ, Italia'
-lat: '42.62549668058208'
-lon: '13.279767036437988'
-link: ''
 immagine: ''
 data: 13/09/2016
 </yamldata></pre>",closed
