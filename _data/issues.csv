@@ -5753,6 +5753,15 @@ lat: 45.47906709999999
 lon: 9.845243299999993
 link: https://www.google.com
 data: 07/09/2016</yamldata></pre>",closed
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/78,175550060,2016-09-07 16:41:52,2016-09-07 16:35:49,Una cosa,45.47906709999999,9.845243299999993,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Una cosa"", ""data"": ""07/09/2016"", ""descrizione"": ""Prova%3A Ciao"", ""email"": ""francescopinzauti@gmail.com"", ""indirizzo"": ""Cascina Barbonina, Provincia di Bergamo, Italia"", ""lat"": 45.47906709999999, ""link"": ""https://www.google.com"", ""lon"": 9.845243299999993, ""tel"": 393272032790}","<pre><yamldata>tel: +393272032790
+email: francescopinzauti@gmail.com
+cosa: Una cosa
+descrizione: Prova%3A Ciao
+indirizzo: Cascina Barbonina, Provincia di Bergamo, Italia
+lat: 45.47906709999999
+lon: 9.845243299999993
+link: https://www.google.com
+data: 07/09/2016</yamldata></pre>",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/77,175549786,2016-09-07 16:41:52,2016-09-07 16:34:30,Bho,45.4430336,12.332174900000041,"[""Accettato"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""Bho"", ""data"": ""07/09/2016"", ""descrizione"": ""A caso"", ""email"": ""francescopinzauti@gmail.com"", ""indirizzo"": ""Str. Nova, 2215, 30121 Venezia, Italia"", ""lat"": 45.4430336, ""link"": ""https://github.com"", ""lon"": 12.332174900000041, ""tel"": 393272032790}","<pre><yamldata>tel: +393272032790
 email: francescopinzauti@gmail.com
 cosa: Bho
