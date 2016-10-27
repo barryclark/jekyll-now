@@ -1,7 +1,0 @@
-= UDI 00 -- Git and GitHub
-
-Links:
-
-* https://classroom.github.com/assignment-invitations/569106c48c103d80a3480dfbbdc3eda9[Git classroom assignment]
-* https://www.youtube.com/watch?v=RjeaOO8cdjY[YouTube broadcast]
-* https://hangouts.google.com/call/dzowug6ynfeppbfsulranoe6lee[Join Hangout on Air]
