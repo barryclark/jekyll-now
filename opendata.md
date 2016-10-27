@@ -9,7 +9,7 @@ permalink: /opendata/
 **Contenuti**
 - [Archivio Documentazione TerremotoCentroItalia](https://archive.org/details/terremotocentroitalia)
 
-**Datii**
+**Dati**
 
 
 {: .table .table-striped #opendata}
