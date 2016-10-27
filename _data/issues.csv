@@ -1,4 +1,11 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/851,185611345,2016-10-27 09:37:31,2016-10-27 09:02:09,Notte difficile a Montegallo,42.841026,13.332316,"[""Accettato"", ""Telegram""]",,,"{""data"": ""27/10/2016"", ""descrizione"": ""Notte difficile anche a Montegallo. Altri crolli in zona rossa e tutta la comunit\u00e0 in strada. L'amministrazione sta valutando in queste ore come attrezzare un'area di accoglienza."", ""immagine"": """", ""lat"": ""42.841026"", ""lon"": ""13.332316"", ""telegram_user"": """"}","<pre><yamldata>telegram_user: ''
+descrizione: 'Notte difficile anche a Montegallo. Altri crolli in zona rossa e tutta la comunità in strada. L''amministrazione sta valutando in queste ore come attrezzare un''area di accoglienza.'
+immagine: ''
+lat: '42.841026'
+lon: '13.332316'
+data: 27/10/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/850,185608862,2016-10-27 09:35:30,2016-10-27 08:50:56,Arquata del Tronto. Crolli.,42.773936,13.298718,"[""Accettato"", ""Sisma Ottobre"", ""Telegram""]",,http://i.imgur.com/p36tW2h.jpg,"{""data"": ""27/10/2016"", ""descrizione"": ""Arquata del Tronto. Nella notte altri crolli in zona rossa."", ""immagine"": ""http://i.imgur.com/p36tW2h.jpg"", ""lat"": ""42.773936"", ""lon"": ""13.298718"", ""telegram_user"": """"}","<pre><yamldata>telegram_user: ''
 descrizione: 'Arquata del Tronto. Nella notte altri crolli in zona rossa.'
 immagine: 'http://i.imgur.com/p36tW2h.jpg'
@@ -2709,11 +2716,6 @@ descrizione: 'Il Decreto della Presidenza del Consiglio dei Ministri del 21 giug
 link: 'http://www.regione.abruzzo.it/portale/index.asp?modello=articolo&servizio=xList&stileDiv=mono&msv=articolo114250&tom=14250'
 data: 15/09/2016
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/463,177190526,2016-10-01 18:25:18,2016-09-15 14:20:46,Fondi per prevenzione rischio sismico,,,"[""Accettato"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""Il Decreto della Presidenza del Consiglio dei Ministri del 21 giugno 2016 assegna all'Abruzzo la somma di 10 milioni e 90 mila euro per interventi di prevenzione del rischio sismico, di cui circa 1 ML per approfondire gli studi di microzonazione sismica e 8,9 ML per finanziare interventi antisismici su edifici ritenuti \""strategici\"" pubblici e su edifici privati."", ""link"": ""http://www.regione.abruzzo.it/portale/index.asp?modello=articolo&servizio=xList&stileDiv=mono&msv=articolo114250&tom=14250"", ""titolo"": ""Fondi per prevenzione rischio sismico""}","<pre><yamldata>titolo: 'Fondi per prevenzione rischio sismico'
-descrizione: 'Il Decreto della Presidenza del Consiglio dei Ministri del 21 giugno 2016 assegna all''Abruzzo la somma di 10 milioni e 90 mila euro per interventi di prevenzione del rischio sismico, di cui circa 1 ML per approfondire gli studi di microzonazione sismica e 8,9 ML per finanziare interventi antisismici su edifici ritenuti ""strategici"" pubblici e su edifici privati.'
-link: 'http://www.regione.abruzzo.it/portale/index.asp?modello=articolo&servizio=xList&stileDiv=mono&msv=articolo114250&tom=14250'
-data: 15/09/2016
-</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/462,177190520,2016-10-01 18:25:31,2016-09-15 14:20:46,Selezione di tweets rilevanti in inglese realizzata da Standby Task Force NGO,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""Storify che raccoglie molti tweet (in lingua inglese) utili per chi \u00e8 stato colpito dal sisma e non solo."", ""link"": ""https://storify.com/LizSBTF/italy-earthquake?utm_campaign=website&utm_source=email&utm_medium=email"", ""titolo"": ""Selezione di tweets rilevanti in inglese realizzata da Standby Task Force NGO""}","<pre><yamldata>titolo: 'Selezione di tweets rilevanti in inglese realizzata da Standby Task Force NGO'
 descrizione: 'Storify che raccoglie molti tweet (in lingua inglese) utili per chi è stato colpito dal sisma e non solo.'
 link: 'https://storify.com/LizSBTF/italy-earthquake?utm_campaign=website&utm_source=email&utm_medium=email'
@@ -3055,6 +3057,16 @@ https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/397,1771509
 tel: '0649972969'
 email: ''
 descrizione: 'Dal lunedì al venerdì, via dei Sabelli, Roma, Umberto I.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+data: 15/09/2016
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/396,177150909,2016-09-22 16:03:46,2016-09-15 11:21:02,"Amatrice, RI - Segnalazione disponibilità seconde case Amatrice",,,"[""Accettato"", ""Alloggi"", ""Contatti"", ""Donazioni"", ""Form""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""Numero del Comune di Amatrice al quale possono chiamare i proprietari di seconde case che intendano metterle a disposizione di chi \u00e8 rimasto senza. Dal luned\u00ec al venerd\u00ec dalle 9 alle 12 e dalle 15 alle 17."", ""email"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""nome"": ""Segnalazione disponibilit\u00e0 seconde case Amatrice"", ""tel"": ""3384996173""}","<pre><yamldata>nome: 'Segnalazione disponibilità seconde case Amatrice'
+tel: '3384996173'
+email: ''
+descrizione: 'Numero del Comune di Amatrice al quale possono chiamare i proprietari di seconde case che intendano metterle a disposizione di chi è rimasto senza. Dal lunedì al venerdì dalle 9 alle 12 e dalle 15 alle 17.'
 indirizzo: ''
 lat: ''
 lon: ''
