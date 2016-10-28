@@ -228,3 +228,19 @@ canvas {
 	margin-right: 1em;
 	border-radius: 10px;
 }
+
+.float-right {
+	float: right;
+	
+	@include mobile {
+		float: none;
+	}
+}
+
+.float-left {
+	float: left;
+	
+	@include mobile {
+		float: none;
+	}
+}
