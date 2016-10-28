@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/874,186009567,2016-10-28 20:48:13,2016-10-28 20:04:23,"COMUNE DI AMATRICE - REPORT RIEPILOGATIVO DELLE SCHEDE DI RILEVAMENTO DEL DANNO, PRONTO INTERVENTO E AGIBILITA' (AEDES)",,,"[""Accettato"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""28/10/2016"", ""descrizione"": ""Pubblicati i primi report di censimento danni, schede AEDES, nell'albo pretorio del Comune di Amatrice, scaricabili anche dal nostro archivio, potete essere aggiornati sul materiale presente nell'archivio documentazione di terremotocentroitalia nella seguente pagina Facebook: https://www.facebook.com/terremotocentroita/?fref=ts"", ""link"": ""https://archive.org/details/DocumentoAmatrice"", ""titolo"": ""COMUNE DI AMATRICE - REPORT RIEPILOGATIVO DELLE SCHEDE DI RILEVAMENTO DEL DANNO, PRONTO INTERVENTO E AGIBILITA' (AEDES)""}","<pre><yamldata>titolo: 'COMUNE DI AMATRICE - REPORT RIEPILOGATIVO DELLE SCHEDE DI RILEVAMENTO DEL DANNO, PRONTO INTERVENTO E AGIBILITA'' (AEDES)'
+descrizione: 'Pubblicati i primi report di censimento danni, schede AEDES, nell''albo pretorio del Comune di Amatrice, scaricabili anche dal nostro archivio, potete essere aggiornati sul materiale presente nell''archivio documentazione di terremotocentroitalia nella seguente pagina Facebook: https://www.facebook.com/terremotocentroita/?fref=ts'
+link: 'https://archive.org/details/DocumentoAmatrice'
+data: 28/10/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/873,185949094,2016-10-28 15:42:19,2016-10-28 15:14:24,[Foto] Assemblea in corso tra sindaco e popolazione di #Ussita,42.942573,13.138969,"[""Accettato"", ""Bollettino"", ""Notizie Utili"", ""Sisma Ottobre"", ""Telegram""]",,http://i.imgur.com/IRtUfBD.jpg,"{""data"": ""28/10/2016"", ""descrizione"": ""Assemblea in corso tra il sindaco e la popolazione di Ussita."", ""immagine"": ""http://i.imgur.com/IRtUfBD.jpg"", ""lat"": ""42.942573"", ""lon"": ""13.138969"", ""telegram_user"": """"}","<pre><yamldata>telegram_user: ''
 descrizione: 'Assemblea in corso tra il sindaco e la popolazione di Ussita.'
 immagine: 'http://i.imgur.com/IRtUfBD.jpg'
@@ -5076,17 +5081,6 @@ bic: ''
 postale: ''
 causale: 'Emergenza terremoto centro Italia'
 link: 'http://www.anci.it/index.cfm?layout=dettaglio&IdSez=821212&IdDett=57029'
-email: ''
-data: 13/09/2016
-</yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/203,176772941,2016-09-13 23:27:06,2016-09-13 23:03:57,Roma Capitale,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": ""UNCRITMM"", ""causale"": ""Roma adotta Amatrice"", ""chi"": ""Roma Capitale"", ""data"": ""13/09/2016"", ""descrizione"": """", ""email"": """", ""iban"": ""IT 94 F 02008 05117 000104430239"", ""intestazione"": """", ""link"": ""http://www.comune.roma.it/pcr/it/newsview.page?contentId=NEW1169363"", ""postale"": """"}","<pre><yamldata>chi: 'Roma Capitale'
-descrizione: ''
-intestazione: ''
-iban: 'IT 94 F 02008 05117 000104430239'
-bic: UNCRITMM
-postale: ''
-causale: 'Roma adotta Amatrice'
-link: 'http://www.comune.roma.it/pcr/it/newsview.page?contentId=NEW1169363'
 email: ''
 data: 13/09/2016
 </yamldata></pre>",open
