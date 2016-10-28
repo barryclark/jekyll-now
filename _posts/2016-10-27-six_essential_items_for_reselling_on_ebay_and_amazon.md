@@ -9,7 +9,7 @@ Earlier this year I started a new hobby - flipping things I find at garage sales
 
 ## [1.	Scotch 3M Bubble Mailers Size 0 (6" x 9") - 25ct](https://www.amazon.com/gp/product/B000PE46I8/ref=as_li_ss_tl?ie=UTF8&psc=1&linkCode=ll1&tag=hendrixjoseph-20&linkId=5373af65e78b96768f06ffe42a399f09)
 
-<div style="overflow: auto;"><div class="eighty-width">
+<div style="overflow: auto;"><div class="eighty-width float-left">
 DVD cases fit snuggly into these. They’re great for other small things, too. If you buy them individually at the store (say, Kroger or Meijer), the cost roughly 70$cent; a mailer. Amazon has them for around $7.50, which makes them cost 30&cent; apiece, which is less than half the cost. Yeah, I know it’s *only* 40&cent;, but it adds up - that’s $10 a box!
 
 I’ve already ordered my second box.
@@ -22,7 +22,7 @@ I’ve already ordered my second box.
 
 ## [2.	Scotch Bubble Mailer, 8.5 x 11-Inches, Size #2, 25-Pack](https://www.amazon.com/gp/product/B009MPB9KY/ref=as_li_ss_tl?ie=UTF8&psc=1&linkCode=ll1&tag=hendrixjoseph-20&linkId=eef5b99d251f8b4ce1fc479dda91f914)
 
-<div style="overflow: auto;"><div class="eighty-width">
+<div style="overflow: auto;"><div class="eighty-width float-right">
 Same thing as #1, but only bigger. I haven’t used as many as these as the first one - I’m still on my first box. They still cost a lot less than buying them individually at the store - around 80&cent; to $1.00 at the store, compared to around $10 on Amazon. A savings of $15 a box!
 </div>
 
@@ -32,7 +32,7 @@ Same thing as #1, but only bigger. I haven’t used as many as these as the firs
 
 ## 3.	[200 - 10x13 WHITE POLY MAILERS ENVELOPES BAGS 10 x 13](https://www.amazon.com/gp/product/B000HG9J6I/ref=as_li_ss_tl?ie=UTF8&psc=1&linkCode=ll1&tag=hendrixjoseph-20&linkId=480536d64e14a33bd0e6ed93c6ccb107)
 
-<div style="overflow: auto;"><div class="eighty-width">
+<div style="overflow: auto;"><div class="eighty-width float-left">
 I don’t even know where to buy these offline. I’ve only used these a few times, but they’re good for things that won’t fit in the other two items I mentioned that don’t need any bubble protection. For instance, I shipped a Fram cabin air filter that was new in box the other day in one of these.
 </div>
 
@@ -42,7 +42,7 @@ I don’t even know where to buy these offline. I’ve only used these a few tim
 
 ## 4.	[MFLABEL 200 Half Sheet - Shipping Labels - 5-1/2" X 8-1/2"](https://www.amazon.com/gp/product/B015PXX7AG/ref=as_li_ss_tl?ie=UTF8&psc=1&linkCode=ll1&tag=hendrixjoseph-20&linkId=2ee81049220620b80c411d1707aadd35)
 
-<div style="overflow: auto;"><div class="eighty-width">
+<div style="overflow: auto;"><div class="eighty-width float-right">
 The best thing about shipping labels is that they’re so easy to apply. Before I got these, I was just printing my labels on regular paper, cutting the paper, and then taping it to my packages. This was a real pain and I frequently found myself cussing at the box. Plus I was wasting a lot of tape.
 
 The trick with these is to set the paper size so that you print on only one label a time.
