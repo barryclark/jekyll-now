@@ -5090,6 +5090,17 @@ link: 'http://www.comune.roma.it/pcr/it/newsview.page?contentId=NEW1169363'
 email: ''
 data: 13/09/2016
 </yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/203,176772941,2016-09-13 23:27:06,2016-09-13 23:03:57,Roma Capitale,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": ""UNCRITMM"", ""causale"": ""Roma adotta Amatrice"", ""chi"": ""Roma Capitale"", ""data"": ""13/09/2016"", ""descrizione"": """", ""email"": """", ""iban"": ""IT 94 F 02008 05117 000104430239"", ""intestazione"": """", ""link"": ""http://www.comune.roma.it/pcr/it/newsview.page?contentId=NEW1169363"", ""postale"": """"}","<pre><yamldata>chi: 'Roma Capitale'
+descrizione: ''
+intestazione: ''
+iban: 'IT 94 F 02008 05117 000104430239'
+bic: UNCRITMM
+postale: ''
+causale: 'Roma adotta Amatrice'
+link: 'http://www.comune.roma.it/pcr/it/newsview.page?contentId=NEW1169363'
+email: ''
+data: 13/09/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/202,176772819,2016-09-13 23:26:56,2016-09-13 23:03:12,Comune di Firenze,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Raccolta fondi per terremoto"", ""chi"": ""Comune di Firenze"", ""data"": ""13/09/2016"", ""descrizione"": """", ""email"": """", ""iban"": ""IT20X 06160 02832 000000161C01"", ""intestazione"": """", ""link"": ""http://www.comune.fi.it/export/sites/retecivica/comune_firenze/ultime_notizie/e0707.html"", ""postale"": """"}","<pre><yamldata>chi: 'Comune di Firenze'
 descrizione: ''
 intestazione: ''
