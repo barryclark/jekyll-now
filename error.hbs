@@ -1,0 +1,51 @@
+{{!< default}}
+{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
+
+{{! This bellow code is for loading header aria}}
+{{> "header"}}
+
+   <!-- Fullscreen Page 
+   ================================================== -->
+   <div id="fullscreen">
+       <div id="sidebar" class="blog blog-error">
+           <div class="error-page-bg featured-img"></div> 
+       </div>
+<script>                    
+    if ( Error_Page_BG ) {                            
+        $('.error-page-bg').append('<img src="'+Error_Page_BG+'" alt="Page Not Found!">');
+    } else {
+        $('.error-page-bg').append('<img src="http://lorempixel.com/400/700" alt="Page Not Found!">');
+    } 
+</script>
+       <div class="container blog-error">
+           <div class="row">
+               <div id="left" class="col-sm-12 col-md-12">
+                    <div id="menu" data-toggle="offcanvas" data-target=".navmenu" data-canvas="body">
+                        <div class="menu-wrap">
+                            <i class="fa fa-bars"></i><span>Menu</span>
+                        </div>
+                    </div> <!-- /#menu -->
+                   <div id="page-detail" class="error-page text-center">
+                        <span class="plogo"><img src="{{asset "img/error.png"}}" alt="{{@blog.name}}"></span>
+                       <h1>Nothing Found!</h1>
+                       <div class="space"></div>
+                       <div class="back-to-home">
+                            <ul class="tags">
+                                <script>                    
+                                    for ( var Url in Error_Page_Menu ) {                            
+                                        document.write('<li><a href="' + Error_Page_Menu[Url] + '" class="btn">'+ Url + '</a></li>');
+                                    } 
+                                </script>
+                            </ul>
+                       </div>
+                       <div class="space"></div>
+                   </div>
+               </div> <!--- End Left Content -->
+           </div> <!-- end Container -->
+       </div> <!-- End Container -->
+
+       <!-- Navigation Bar -->
+       {{> "page-footer"}}
+   </div> <!--- End Full Screen Blog Post Page -->
+
+

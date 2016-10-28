@@ -1,0 +1,7 @@
+/*
+Last Updated: 2016年6月10日 11:07:03
+
+COTA
+http://cota.jp
+*/
+@import url('reset.css');body{background:#f7f7f7 url(../images/pattern.png) repeat top left;color:#000;font-family:'Arial Narrow',Arial,sans-serif;font-size:13px;min-height:2000px}a{color:#000;text-decoration:none}.clr{clear:both}h1{padding:20px;font-size:28px;color:#333;font-family:'Josefin Slab',Georgia,serif;font-weight:400;text-align:center;text-shadow:1px 1px 1px #fff}h1 span{font-size:18px;color:#1693eb}.more{font-family:'Josefin Slab',Georgia,serif;margin:0 auto;text-align:center;color:#ddd;font-size:15px;color:#444}.more p{display:block;margin:10px}.more a{color:#666;white-space:nowrap;font-weight:bold;background:#fff;padding:1px 6px;-webkit-box-shadow:1px 1px 2px rgba(0,0,0,0.2);-moz-box-shadow:1px 1px 2px rgba(0,0,0,0.2);box-shadow:1px 1px 2px rgba(0,0,0,0.2)}.more a.current,.more a.current:hover{color:#fff;background:#000}.more a:hover{background-color:#1693eb;color:#fff}.header{line-height:24px;font-size:11px;background:#000;opacity:.9;text-transform:uppercase;z-index:4;-moz-box-shadow:1px 0 2px #000;-webkit-box-shadow:1px 0 2px #000;box-shadow:1px 0 2px #000}.header a{padding:0 10px;letter-spacing:1px;color:#ddd;display:block;float:left}.header a:hover{color:#fff}.header span.right{float:right}.header span.right a{float:none;display:inline}

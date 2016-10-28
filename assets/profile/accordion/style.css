@@ -1,0 +1,7 @@
+/*
+Last Updated: 2016年6月10日 11:07:03
+
+COTA
+http://cota.jp
+*/
+.wrapper{width:90%;max-width:800px;margin:30px auto}.st-accordion{width:100%;margin:0 auto}.st-accordion ul li{height:100px;border-bottom:1px solid #c7deef;border-top:1px solid #fff;overflow:hidden}.st-accordion ul li:first-child{border-top:0}.st-accordion ul li>a{text-shadow:1px 1px 1px #fff;font-size:46px;display:block;position:relative;line-height:100px;outline:0;-webkit-transition:color .2s ease-in-out;-moz-transition:color .2s ease-in-out;-o-transition:color .2s ease-in-out;-ms-transition:color .2s ease-in-out;transition:color .2s ease-in-out}.st-accordion ul li>a span{background:transparent url(down.png) no-repeat center center;text-indent:-9000px;width:26px;height:14px;position:absolute;top:50%;right:-26px;margin-top:-7px;opacity:0;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;-ms-transition:all .2s ease-in-out;transition:all .2s ease-in-out}.st-accordion ul li>a:hover{color:#1693eb}.st-accordion ul li>a:hover span{opacity:1;right:10px}.st-accordion ul li.st-open>a{color:#1693eb}.st-accordion ul li.st-open>a span{-webkit-transform:rotate(180deg);-moz-transform:rotate(180deg);transform:rotate(180deg);right:10px;opacity:1}.st-content{padding:5px 0 30px 0}.st-content p{font-size:16px;font-family:Georgia,serif;font-style:italic;line-height:28px;padding:0 4px 15px 4px}

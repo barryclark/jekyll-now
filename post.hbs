@@ -1,0 +1,169 @@
+{{!< default}}
+{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
+
+{{! This bellow code is for loading header aria}}
+{{> "header"}}
+
+{{! This code to show Post in single page }}
+
+{{#post}}
+<!-- Fullscreen Page 
+================================================== -->
+<div id="fullscreen">
+    <div id="sidebar" class="blog blog-single">
+        <div class="featured-img"><img src="{{#if image}}{{image}}{{else}}{{asset "/img/no-thumb.png"}}{{/if}}" alt="{{title}}"></div> <!-- featured image-->
+    </div>
+    <div class="container" id="blog-single-page">
+        <div class="row">
+            <div id="left" class="col-md-6">
+                <div id="menu" data-toggle="offcanvas" data-target=".navmenu" data-canvas="body">
+                    <div class="menu-wrap">
+                        <i class="fa fa-bars"></i><span>Menu</span>
+                    </div>
+                </div> <!-- /#menu -->
+                <div id="page-detail">
+                    <h2>{{title}}</h2>
+                    {{#if tags}}
+                        <div class="tags">
+                          {{tags prefix="In &nbsp;" separator="-"}}
+                        </div>
+                    {{/if}}
+                    <div class="space"></div>
+                    <h6>Share This:</h6>
+                    <ul class="social-links">
+                        <script type="text/javascript">
+                            function acronymPopupWindow(url, title, w, h) {
+                                var left = (screen.width / 2) - (w / 2);
+                                var top = (screen.height / 2) - (h / 2);
+                                return window.open(url, title, 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=' + w + ', height=' + h + ', top=' + top + ', left=' + left);
+                            } 
+                        </script>
+                        <li><a href="https://twitter.com/home?status={{url absolute='true'}}" onclick="acronymPopupWindow(this.href, 'facebook-share', 580, 400); return false;"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.facebook.com/sharer/sharer.php?u={{url absolute='true'}}" onclick="acronymPopupWindow(this.href, 'facebook-share', 580, 400); return false;"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://plus.google.com/share?url={{url absolute='true'}}" onclick="acronymPopupWindow(this.href, 'google-plus-share', 550,530); return false;"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="javascript:void((function()%7Bvar%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','http://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)%7D)());"><i class="fa fa-pinterest"></i></a></li>
+                        <li><a href="https://www.linkedin.com/shareArticle?mini=true&amp;url={{url absolute='true'}}" onclick="acronymPopupWindow(this.href, 'linkedin-share', 550,530); return false;"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div> <!-- /#page-detail -->
+            </div> <!-- /#left -->
+
+            <div id="right" class="col-md-6">
+                <div id="post">
+                    <div class="clearfix"></div>
+                    <div class="text">
+                        <div class="clearfix"></div>
+                        {{content}}
+                        <div class="clearfix"></div>
+                        <span class="meta-author pull-left">Posted by: {{author}}</span>
+                        <span class="meta-date pull-right">Posted on: {{date format="DD MMMM YYYY"}}</span>
+                        <div class="clearfix"></div>
+                        <!-- Comment Area -->
+                        <div id="comments-area">
+                            <div class="comments-num">
+                                <hr>
+                                <h4><span class="fa fa-comment"></span><a class="comments-link" href="{{url}}#disqus_thread">0 Comments</a></h4>
+                                <hr>
+                            </div> <!-- /.comments-num -->
+                            <div class="comment-lists">
+                                {{! Code for Disqus Comment}}
+                                <div class="comments-area" id="comments-disqus"></div>
+                            </div>
+                        </div> <!-- /#comments-area -->
+                    </div>
+                    <div class="space"></div>
+                    <div class="clearfix"></div>
+                </div> <!-- /#post -->
+            </div><!---#right -->
+        </div> <!-- /.row -->
+    </div> <!-- /.Container -->
+
+    <!-- Navigation Bar -->
+    <nav id="footer-nav" class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+        <div class="container">
+        {{#next_post}}
+            <div class="pull-left text-left">
+                <h6>Pervious Post</h6>
+                <a href="{{url}}"><span class="prev-link">{{title}}</span></a>
+            </div>
+        {{/next_post}}
+        {{#prev_post}}
+            <div class="pull-right text-right">
+                <h6>Next Post</h6>
+                <a href="{{url}}"><span class="next-link">{{title}}</span></a>
+            </div>
+        {{/prev_post}}
+        </div>
+    </nav>
+</div> <!--- /#fullscreen-->
+{{/post}}
+
+<!-- Mobile Page 
+================================================== -->
+{{#post}}
+<div id="mobile-single-page">
+    <div class="left-responsive">    
+        <div class="container">
+            <div class="row" id="mobile-row-left">
+                
+            </div> <!-- /.row -->
+        </div> <!-- /.container -->
+    </div> <!-- /.left-responsive -->    
+    <div class="right-responsive">    
+        <div class="container">
+            <div class="row" id="mobile-row-right">
+                <div class="col-md-12 post-mobile"></div>
+                <div class="col-md-12 post-nav">
+                    <div class="mobile-post-nav clearfix">
+                        <hr>
+                        {{#next_post}}
+                            <div class="pull-left text-left">
+                                <h6>Pervious Post</h6>
+                                <a href="{{url}}"><span class="prev-link">{{title}}</span></a>
+                            </div>
+                        {{/next_post}}
+                        {{#prev_post}}
+                            <div class="pull-right text-right">
+                                <h6>Next Post</h6>
+                                <a href="{{url}}"><span class="next-link">{{title}}</span></a>
+                            </div>
+                        {{/prev_post}}
+                    </div> <!-- /.mobile-post-nav -->
+                </div>
+                <div class="col-md-12">
+                    <div class="comments-num">
+                        <hr>
+                        <h4><span class="fa fa-comment"></span><a class="comments-link" href="{{url}}#disqus_thread">0 Comments</a></h4>
+                        <hr>
+                    </div> <!-- /.comments-num -->
+                    <div id="mobile-disqus-comment"></div>
+                </div>
+            </div> <!-- /.row -->
+        </div> <!-- /.container -->
+    </div> <!-- /.left-responsive -->
+</div> <!-- /#mobile-single-page -->
+
+<script>
+    $('#sidebar.blog-single').clone().prependTo('#mobile-single-page');
+    $('#blog-single-page #left').clone().prependTo('#mobile-single-page #mobile-row-left');
+    $('#blog-single-page #right #post .text').clone().appendTo('#mobile-single-page #mobile-row-right .col-md-12.post-mobile');
+    if ($(window).width() < 992) {
+        var iDiv = document.createElement('div');
+        iDiv.id = 'disqus_thread';
+        document.getElementById('mobile-disqus-comment').appendChild(iDiv);
+    } else {
+        var iDiv = document.createElement('div');
+        iDiv.id = 'disqus_thread';
+        document.getElementById('comments-disqus').appendChild(iDiv);
+    }
+</script>
+<script type="text/javascript">
+    if (typeof( disqus_shortname ) != "undefined") {
+        var disqus_identifier = '{{post.id}}';
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    }
+</script>
+{{/post}}

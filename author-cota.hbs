@@ -1,0 +1,692 @@
+{{!< default}}
+{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
+
+<script type="text/javascript" src="{{asset "js/vendor/set-iframe-height-parent-min.js"}}"></script>
+{{! This bellow code is for loading header aria}}
+{{> "header"}}
+
+
+		
+
+
+        <!-- Container -->
+        <section id="container">
+        
+            <!-- Header -->
+			<header> 
+            	<!-- Logo -->
+            	<div id="logo">
+                	<h2><span class="cota-cotalogo"></span></h2>
+                   
+                </div>
+                <!-- /Logo -->
+                
+                <!-- Social Icons -->
+                <ul class="socialicons">
+                    <li class="socials-text">Copyrightc 2000-2016 Cota design unit.</li>
+                </ul>
+                <!-- /Social Icons -->
+            </header>
+            <!-- /Header -->
+            
+            <!-- Content -->
+            <section id="content" style="background:none; box-shadow:none; background-color:none;" >
+            
+                <!-- Profile -->
+                <div id="profile"> 
+                 	<!-- About section -->
+                	<div class="about">
+                    	<!--<div class="photo-inner">
+                            <ul>
+                                <li><img src="images/photo.jpg" height="186" width="153" /></li>
+                                <li><img src="images/photo1.png" height="186" width="153" /></li>
+                            </ul>
+                        </div>-->
+                        <h1><span class="cota-cotalogo "></span></h1>
+                        <h3>クリエイティブサービス</h3>
+                        <p>変わらない物を求めて、変わり続ける</p>
+                    </div>
+                    <!-- /About section -->
+                     
+                    <!-- Personal info section -->
+                	<ul class="personal-info">
+			<li><label>名前</label><span>Cota (こた)</span></li>
+                        <li><label>誕生日</label><span>03.13</span></li>
+						
+						<li><label>趣味タグ</label>
+						<span>アニソン, 盆栽</span>
+						
+						<span><i data-icon="&#x68;"></i></font> <a href="/hobby/">趣味のノート</a></span></li>
+                        <li><label>
+						サイト</label>
+						<span class="word-wrap"><i data-icon="&#x6a;"></i> <strong><a href="/">cota.jp</a></strong></span></li>
+
+						<li><label>ツイッター</label>
+						<span class="word-wrap"><i data-icon="&#x6a;"></i> <a href="http://twitter.com/cotajp" target="_blank"><strong>twitter.com</strong>/cotajp</a></span></li>
+				
+
+						<!--http://line.naver.jp/ti/p/cotajp-->
+						<li><label>LINE</label>
+						<span class="word-wrap"><i data-icon="&#x6a;"></i> <a href="http://line.me/ti/p/Aju9TpU8sR" target="_blank"><strong>@cotajp</strong></a></span></li>
+				
+	
+				
+                    </ul>
+                    <!-- /Personal info section -->
+                </div>        
+                <!-- /Profile --> 
+
+                <!-- Menu -->
+                <nav class="menu">
+                	<ul class="tabs">
+						<li class="tmenu"><a href="#profile" class="tab-profile"><i><span class="cota-user"></span></i>人物</a></li>
+						<li class="tmenu"><a href="#portfolio"><i><span class="cota-images"></span></i>制作物</a></li>
+                        <li class="tmenu"><a href="#resume"><i><span class="cota-notebook"></span></i>履歴</a></li>
+						<li class="tmenu"><a href="#nomination"><i><span class="cota-quill"></span></i>推薦文</a></li>
+                        <li class="tmenu"><a href="#contact"><i><span class="cota-mail"></span></i>連絡先</a></li>
+						<li class="tmenu"><a href="#sns"><i><span class="cota-profile"></span></i>所属</a></li>
+                    </ul>
+                    <a class="prev" id="menu-prev" href="#">&#xe073;</a>
+                    <a class="next" id="menu-next" href="#">&#xe076;</a>
+
+                </nav>
+                <!-- /Menu --> 
+
+
+				<!-- nomination -->
+                <section id="nomination" style="background-color:#FFF;">
+					
+					<!--<div class="extra-text"><a href="/tag/nomination/" style="margin:2px; text-decoration: none;" class="btn btn-danger" data-toggle="tooltip" data-placement="top" title="" data-original-title="すべての推薦文を見る">すべての推薦文</a></div>-->
+					
+                    <h3 class="main-heading">推薦文</h3>  
+					
+					<p>お寄せ頂きありがとうございます</p>
+	
+						 <div class="clear"></div>
+                    
+                    
+                    {{!#get "posts" filter="tags:portfolio,featured:true"}} 
+        {{#get "posts" filter="tags:nomination,featured:true"}}  
+					
+                            {{#foreach posts}}
+					<section class="col-sm-6 col-md-6 items">
+						<div class="honbun">{{content}}</div>
+						<div class="clear"></div>
+					</section>
+                                {{/foreach}}
+{{/get}}
+                    <div class="clear"></div>
+						
+                </section>
+                <!-- /nomination -->
+                
+                <!-- Resume -->
+                <section id="resume"  style="background-color:#FFF;">
+                	 <div class="timeline-section">
+                                             <!-- Timeline for Employment  --> 
+                        <h3 class="main-heading">所属歴</h3>   
+                        <ul class="timeline">
+                            <li>
+                                                   
+                                <div class="timelineUnit">
+                                    <h4>会社所属クリエイティブ部門<span class="timelineDate">2012 - </span></h4>
+                                    <h5>社名非公表</h5>
+                                    <p>ウェブデザイン、印刷物</p>
+                                </div>
+                            </li>
+							<li>
+                                <div class="timelineUnit">
+                                    <h4>ウェブデザイナー<span class="timelineDate">(2008) - 2011</span></h4>
+                                    <h5>ナショナルクリエイターズカンファレンス</h5>
+                                    <p>ウェブデザイン、印刷物</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="timelineUnit">
+                                    <h4>デザイナー<span class="timelineDate">2007 - (2010)</span></h4>
+                                    <h5>アン・テナ</h5>
+                                    <p>ウェブデザイン、印刷物</p>
+                                </div>
+                            </li>
+                            
+                            <div class="clear"></div>
+                        </ul> 
+                        <!-- /Timeline for Employment  -->
+
+                        <!-- Timeline for Education  -->   
+                       <h3 class="main-heading">学歴</h3>   
+                         <ul class="timeline">
+                            <li>             
+                                <div class="timelineUnit">
+                                    <h4>東京ビジュアルアーツ（東京写真専門学校）<span class="timelineDate">2005 - 2007</span></h4>
+                                    <h5>デザイン・ディレクション</h5>
+                                    <p>マルチメディアディレクター専攻</p>
+                                </div>
+                            </li>
+							<li>            
+                                <div class="timelineUnit">
+                                    <h4>オルト美術学院・大塚美術学院<span class="timelineDate">2003 - 2005</span></h4>
+                                    <h5>デッサン・デザイン</h5>
+                                </div>
+                            </li>
+							 <li>            
+                                <div class="timelineUnit">
+                                    <h4>湘南美術学院<span class="timelineDate">2003</span></h4>
+                                    <h5>デッサン・グラフィックデザイン</h5>
+                                    <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing Vivamus sit amet ligula non lectus.consectetur adipiscingVivamus sit amet </p>-->
+                                </div>
+                            </li>
+							 <li>            
+                                <div class="timelineUnit">
+                                    <h4>横浜美術学院<<span class="timelineDate">2003</span></h4>
+                                    <h5>デッサン</h5>
+                                    <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing Vivamus sit amet ligula non lectus.consectetur adipiscingVivamus sit amet </p>-->
+                                </div>
+                            </li>
+							 <li>            
+                                <div class="timelineUnit">
+                                    <h4>御茶ノ水美術学院<span class="timelineDate">2003</span></h4>
+                                    <h5>デッサン・グラフィックデザイン</h5>
+                                    <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing Vivamus sit amet ligula non lectus.consectetur adipiscingVivamus sit amet </p>-->
+                                </div>
+                            </li>
+							 <!--
+								1991～ 小
+								1997～ 中
+								2000～ 高-->
+							 
+							 <li><h5>中略</h5>
+							 <li>            
+                                <div class="timelineUnit">
+                                    <h4>ふぞく幼稚園 (蒲田保育専門学校附属幼稚園)<span class="timelineDate">1989 - 1991</span></h4>
+                                    <h5>生きるために必要なこと</h5>
+                                    <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing Vivamus sit amet ligula non lectus.consectetur adipiscingVivamus sit amet </p>-->
+                                </div>
+                            </li>
+                            <div class="clear"></div>
+                        </ul>
+                        <!-- /Timeline for Education  -->              
+                    </div>
+                    <div class="skills-section">
+                        <!-- Skills 
+                        <h3 class="main-heading">Graphics and media skills</h3> 
+                        <ul class="skills">
+                            <li>
+                                <h4>Photoshop</h4>
+                                <div class="rating" data-rat="4"></div>
+
+                            </li>
+                            <li>
+                                <h4>Indesign</h4>
+                                <div class="rating" data-rat="6"></div>
+                            </li>
+                            <li>
+                                <h4>Illustrator</h4>
+                                <div class="rating" data-rat="5"></div>
+                            </li>
+                            <li>
+                                <h4>Flash</h4>
+                                <div class="rating" data-rat="3"></div>
+                            </li>
+                            <li>
+                                <h4>Corel Draw</h4>
+                                <div class="rating" data-rat="5"></div>
+                            </li>
+                            <li>
+                                <h4>Cinema4D</h4>
+                                <div class="rating" data-rat="4"></div>
+                            </li> 
+                        </ul>
+                   
+                        <h3 class="main-heading">Programming Skills</h3> 
+                        <ul class="skills">
+                            <li>
+                                <h4>Dreamweaver</h4>
+                                <div class="rating" data-rat="6"></div>
+                            </li>
+                            <li>
+                                <h4>Php/Sql</h4>
+                                <div class="rating" data-rat="4"></div>
+                            </li>
+                            <li>
+                                <h4>Javascript</h4>
+                                <div class="rating" data-rat="7"></div>
+                            </li>
+                            <li>
+                                <h4>Wordpress</h4>
+                                <div class="rating" data-rat="5"></div>
+                            </li>
+                            <li>
+                                <h4>Drupal</h4>
+                                <div class="rating" data-rat="4"></div>
+                            </li>
+                        </ul>
+                        <h3 class="main-heading">Design Skills</h3> 
+                        <ul class="skills">
+                            <li>
+                                <h4>Graphic Design</h4>
+                                <div class="rating" data-rat="6"></div>
+                            </li>
+                            <li>
+                                <h4>Web design</h4>
+                                <div class="rating" data-rat="5"></div>
+                            </li>
+                            <li>
+                                <h4>Print Design</h4>
+                                <div class="rating" data-rat="2"></div>
+                            </li>
+                        </ul>
+                      /Skills -->
+                     </div>
+                     <div class="clear"></div>
+                     <!--<a href="#" class="button transition">Download resume as PDF format</a>-->
+				</section>
+                <!-- /Resume --> 
+                                        
+                <!-- Portfolio -->
+                <section id="portfolio"  style="background-color:#FFF;min-height: 94% !important;">
+                   
+					
+					
+                    <div class="extra-text"><a href="/tag/portfolio/" style="margin:2px; text-decoration: none;" class="btn btn-danger" data-toggle="tooltip" data-placement="top" title="" data-original-title="ポートフォリオのすべての作品を見る">すべての作品一覧</a></div>
+					
+					
+					<h2 class="title">制作物の一部</h2>
+                    
+					
+					
+															
+	
+                            
+                           {{! index post grid sorting }}
+	                       {{!> sort}}
+							
+
+                            
+                            
+                           
+                            
+                            <div id="post-portfolios">
+<div class="clearfix"></div>
+                            <div class="portfolios-two" id="portfolio-two">
+	
+	{{!#get "posts" filter="tags:portfolio,featured:true"}} 
+        {{#get "posts" filter="tags:portfolio"}}                       
+                            {{#foreach posts}}
+	
+                                    <div class="col-sm-4 col-md-4 items">
+										<a href="{{url}}" title='{{title}}'>
+                                        <div class="portfolio-container">                                            
+                                            <div class="image-area">
+                                                    <img src="{{#if image}}{{image}}{{else}}{{asset "/img/no-thumb.png"}}{{/if}}" alt='{{title}}' class="hacking"/>
+                                            </div>
+                                            
+                                        </div> <!-- /.portfolio-container -->
+										</a>
+                                    </div>  <!-- /.item -->
+	
+                                {{/foreach}}
+		{{/get}}
+					</div>
+					
+ </div>
+													
+			
+					<div class="clearfix"></div>
+                  
+					
+                </section>
+                <!-- /Portfolio -->  
+                 
+                <!-- Contact -->
+                <section id="contact" style="background-color:#FFF;">
+					<!--<div id="map"></div>-->
+                	<!-- Contact Info -->
+                    <!--<div class="contact-info">
+                        <h3 class="main-heading"><span>お問い合わせ</span></h3>
+                    	<ul>
+                            <li>Melbourne Victoria 3000 Australia<br /><br /></li>
+                            <li>Email: John.smith@gmail.com</li>
+                            <li>Phone: +123 456 789 111</li>
+                            <li>Website: www.johnsmith.com</li>
+                        </ul>
+                    </div>-->
+                    <!-- /Contact Info -->
+                    
+                    <!-- Contact Form -->
+                    <div class="contact-form">
+                        <h3 class="main-heading"><span>連絡フォーム</span></h3>
+						
+						<p>下記ボタンより臨時で開設しているフォームからお気軽にお寄せください</p>
+                        <!--<div id="contact-status"></div>
+                        <form action="" id="contactform">
+                            <p>
+                            	<label for="name">Your Name</label>
+                            	<input type="text" name="name" class="input" >
+                            </p>
+                            <p>
+                            	<label for="email">Your Email</label>
+                            	<input type="text" name="email" class="input">
+                            </p>
+                            <p>
+                            	<label for="message">Your Message</label>
+                                <textarea name="message" cols="88" rows="6" class="textarea" ></textarea>
+                            </p>
+                            <input type="submit" name="submit" value="Send your message" class="button transition">
+                        </form>-->
+						<div class="clear"></div>
+						<iframe scrolling="no" src="https://master.cota.jp/mastermailvcard/?fromurl={{url}}" style="width:100%;"></iframe>
+						<div class="clear"></div>
+						
+						<!--<a href="/contact/" style="margin:2px; text-decoration: none;" class="btn btn-danger" data-toggle="tooltip" data-placement="top" title="" data-original-title="フォームを開く">連絡先フォーム</a>-->
+						
+						
+                    </div>
+                    <!-- /Contact Form -->
+                </section>
+                <!-- /contact -->  
+
+
+
+<!-- Sns -->
+                <section id="sns">
+				<!-- Profile -->
+                <div id="profile2"> 
+                 	<!-- About section -->
+                	<div class="about">
+
+                        <h1 style="transform: rotateY( 180deg );text-align: right;"><span class="cota-cotalogo" style="color:#fdc750;"></span></h1>
+    
+						
+                        <p style="transform: rotateY( 180deg );text-align: right;">変わらない物を求めて、変わり続ける</p>
+						
+						
+                    </div>
+                    <!-- /About section -->
+                     
+                    <!-- Personal info section -->
+                	<ul class="personal-info">
+                        <li><label>サイト</label>
+						<span class="word-wrap"><i data-icon="&#x6a;"></i> <strong><a href="/">cota.jp</a></strong></span></li>
+				
+						<li><label>スナップ</label>
+						<span class="word-wrap"><i data-icon="&#x6a;"></i> <a href="http://instagram.com/cota" target="_blank"><strong>instagram.com</strong>/cota</a></span></li>
+				
+						<li><label>スクラップ</label>
+						<span class="word-wrap"><i data-icon="&#x6a;"></i> <a href="http://cota.tumblr.com" target="_blank">cota.<strong>tumblr.com</strong></a></span></li>
+				
+						<li><label>写真</label>
+						<span class="word-wrap"><i data-icon="&#x6a;"></i> <a href="http://www.flickr.com/cotajp" target="_blank"><strong>flickr.com</strong>/cotajp</a></span></li>
+				
+						<li><label>動画</label>
+						<span class="word-wrap"><i data-icon="&#x6a;"></i> <a href="http://youtube.com/cotajp" target="_blank"><strong>youtube.com</strong>/cotajp</a></span></li>
+				
+						<li><label>随筆</label>
+						<span class="word-wrap"><i data-icon="&#x6a;"></i> <a href="http://medium.com/@cota" target="_blank"><strong>medium.com</strong>/@cota</a></span></li>
+				
+				
+						<li><label>アバター</label>
+						<span class="word-wrap"><i data-icon="&#x6a;"></i> <a href="http://gravatar.com/cotajp" target="_blank"><strong>gravatar.com</strong>/cotajp</a></span></li>
+				
+
+				
+						<li><label>ツイッター</label>
+						<span class="word-wrap"><i data-icon="&#x6a;"></i> <a href="http://twitter.com/cotajp" target="_blank"><strong>twitter.com</strong>/cotajp</a></span></li>
+				
+						<li><label>グーグル</label>
+						<span class="word-wrap"><i data-icon="&#x6a;"></i> <a href="http://google.com/+CotaJp" target="_blank"><strong>google.com</strong>/+CotaJp</a></span></li>
+				
+						<li><label>Facebook</label>
+						<span class="word-wrap"><i data-icon="&#x6a;"></i> <a href="http://www.facebook.com/cotajp" target="_blank"><strong>facebook.com</strong>/cotajp</a></span></li>
+						
+						<li><label>LINE<</label>
+						<span class="word-wrap"><i data-icon="&#x6a;"></i> <a href="http://line.me/ti/p/Aju9TpU8sR" target="_blank"><strong>@cotajp</strong></a></span></li>
+				
+	
+				
+                    </ul><div class="clear"></div>
+                    <!-- /Personal info section -->
+                </div>        
+                <!-- /Profile --> 
+
+	
+	
+
+                </section>
+                <!-- /Sns -->
+
+
+
+
+
+            </section>
+            <!-- /Content -->
+            
+            <!-- Footer -->
+			<footer>
+            	<div class="copyright copyright-text">Copyrightc 2000-2016 Cota design unit.</div>
+    </div>
+            </footer>
+            <!-- /Footer --> 
+			
+			
+			
+			<div class="blog-area">
+			<nav class="navbar navbar-default" id="top-nav">
+            <div class="container">
+                <div class="pull-right text-right">
+                    <div id="more-page">
+                        <ul class="pagination">
+                            <li><a href="/">⇐ トップに戻る</a></li>
+                        </ul>
+                    </div>
+                </div>            
+            </div>
+        </nav>
+			</div>
+			
+			
+			
+            
+        </section>
+		<!-- /Container -->
+		
+		
+<style>
+			
+	.author-template .featured-img {
+		background-position: 50% 50% !important;
+		background-repeat: no-repeat !important;
+		background-size: cover !important;
+		height: 30em;
+		position: relative;
+		opacity: 0.2;
+	}
+	
+			
+	@media only screen and (max-width: 992px){
+		#mobile-blog {
+			background-color:#FFF !important;
+			display: none;
+			}}
+	
+		@media only screen and (max-width: 767px){
+			#mobile-blog {
+				background-color:#FFF !important;
+				display: block;
+			}}
+			
+	#fullscreen-blog .blog-area {
+    background-color:#FFF !important;
+    bottom: 15px;
+    display: block;
+    left: 75px;
+    position: fixed;
+    right: 75px;
+    top: 15px;
+    /*z-index: 999;*/
+}
+		
+	@media only screen and (max-width: 767px) {
+	#porfolio-two-mobile {
+	background-color:#FFF !important;
+			}
+			#fullscreen-blog #portfolio-two{z-index:999;}
+			#mobile-blog {background-color:#FFF !important;}
+			#fullscreen-blog .portfolio-container{z-index:999;}
+		}
+	
+	#fullscreen-blog #top-nav .menu-wrap {color: #fff;}
+	.blog-area{position:absolute;}
+	#author-cota #container section
+	{
+		background-color:#FFF !important;
+		background:#FFF !important;
+	}
+	
+	
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: " ";
+}
+.clearfix, .clearfix:after {
+  clear: both;
+}
+	
+	body#authorCota #content
+	{padding-top:0px;}
+	
+	
+	
+
+	
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 768px) {
+	.portfolios-two .items{float:left; padding:0px;}
+	}
+		
+	
+	
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (max-width: 767px) {
+	.portfolios-two .items{float:none; }
+	}
+	
+	
+	
+	
+	#fullscreen-blog .blog-area {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0 !important;
+  bottom: 15px;
+  display: block;
+  left: 75px;
+  position: absolute;
+  right: 75px;
+  top: 15px;
+}
+	
+	
+	
+
+	
+	/*main.css*/
+	nav.menu a,nav.menu a:hover {text-decoration: none;}
+	
+	
+	/*bootstrap*/
+	*{box-sizing:content-box !important;}
+	*::before, *::after {box-sizing:content-box !important;}
+</style>
+		
+
+<style type="text/css"><!--	
+	p{margin-bottom:20px;}
+	div.ttshowcase_rl_quote {
+	font-size:1.25em;
+	line-height: 165%;
+	}
+	#logo h2 {text-align: left;/*cota*/}
+	#logo h2 span {font-size: 80px; speak: none; display: block;/*cota*/}
+	#content .about h1{ font-size: 150px; speak: none;  }
+	.socialicons li a {
+		font-family: none;
+		font-size: 16px;
+		display: block;
+		padding: 0px 0px;
+		background-color:none;
+		color: none;
+		}
+	.socialicons .socials-text {
+		padding:0px;
+		height:0px;
+		background-color:none;
+		color:none;
+		margin-bottom:40px;
+	}
+	.socialicons {
+		float:right;
+		margin-top:0px;
+	}
+	#authorBox header#vcard {
+		overflow:visible;
+	}
+	header {overflow:visible;}
+	
+	
+	#wpstats{display:none !important;}
+	
+	/*推薦文追加*/
+	/*-------------------------------------------------------*/
+		/* Portfolio Section */
+	/*-------------------------------------------------------*/
+    #nomination {padding:20px 20px 20px 20px;}
+	.ttshowcase_rl_box{position: static !important;}
+	.ttshowcase_masonry{height: auto !important;}
+
+	
+	 #profile2 {
+		background:/*mainColor*/#ffffff; 
+		background-image:url(../images/header-shadow.png);
+		background-position:center bottom;
+		background-repeat:repeat-x;
+		overflow:hidden;	
+	}
+	
+	
+	ul.pagination  {
+		z-index:999;
+	}
+	nav.menu {z-index:0;}
+	
+	#container{margin-top:60px;}
+	
+	
+	section#nomination [class*='col-'] {
+		padding-right:0px;
+		padding-left:0px;
+		
+	}
+	section#nomination section div.honbun{
+		padding-right:25px;
+		padding-left:25px;
+	}
+	
+	
+	p{
+    line-height: 1.75em;
+    margin-bottom: 1.45em;
+		margin: auto !important;
+    padding: auto !important;
+}
+	
+	h1, h2, h3, h4, h5, h6{
+	font-family: 'Montserrat', sans-serif;
+    line-height: 1.2em;	
+	margin: auto !important;
+    padding: auto !important;}
+	
+	
+	
+--></style>

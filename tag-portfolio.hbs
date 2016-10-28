@@ -1,0 +1,205 @@
+{{!< default}}
+{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
+
+
+<!--<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>-->
+<script src="https://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
+<script>
+    // On document ready:
+$(function(){
+	// Instantiate MixItUp:
+	$('#pfContainer').mixItUp();
+});
+</script>
+
+
+
+{{! This bellow code is for loading header aria}}
+{{> "header"}}
+
+
+
+
+<!-- Fullscreen Page 
+================================================== -->
+<div id="fullscreen-blog" class="fullscreen home blog"> 
+    <div class="bg"></div>
+    <!-- Top Navigation Bar -->
+    <!--<div class="blog-area">-->
+        <nav id="top-nav" class="navbar navbar-default">
+			
+						
+			
+
+            <div class="container">
+                <div class="pull-left text-left">
+                    <div id="menu" data-toggle="offcanvas" data-target=".navmenu" data-canvas="body">
+                        <div class="menu-wrap">
+                            <i class="fa fa-bars"></i><span>Menu</span>
+                        </div>
+                    </div> <!-- /#menu -->
+                </div>
+                <div class="pull-right text-right">
+                    <div id="more-page">
+                        <ul class="pagination">
+                            <li><a href="{{@blog.url}}">&#x21d0; トップへ戻る</a></li>
+                            {{! Previous/next page links - displayed on every page }}
+                            {{!pagination}}
+                        </ul>
+                    </div>
+                </div>            
+            </div>
+        </nav> <!-- End Top Navigation Bar -->
+
+        <div id ="blog">
+            <div class="container">     
+				
+				{{! index post grid sorting }}
+	                       {{> sort}}
+                <div id="content">
+                    <!--<div class="text">--> <!--  Text -->
+                        <!-- Start Blog Posts --> 
+                        <div id="posts" class="portfolio">
+                            <div class="row">
+
+			
+			<div id="post-portfolios"><div id="portfolio-two" class="portfolios-two">
+										<div class="cotaPortfolio">
+	
+                            
+
+                            
+                            
+                           
+                            
+                            
+<div id="pfContainer" class="cotacontainer">
+	
+	
+                                {{#get "posts" limit="all" filter="tags:portfolio" include="tags"}}
+                            {{#foreach posts}}
+                                    <div class="col-sm-6 col-md-6 items mix {{#foreach tags}}{{slug}} {{/foreach}}"  data-myorder="{{id}}">
+                                        <div class="portfolio-container">                                            
+                                            <div class="image-area">
+                                                <img src="{{#if image}}{{image}}{{else}}{{asset "/img/no-thumb.png"}}{{/if}}" alt='{{title}}'/>
+                                            </div>
+                                            <div class="image-content">
+                                                <div class="inner-content">
+                                                    <a class="zoom-btn" href="{{#if image}}{{image}}{{else}}{{asset "/img/no-thumb.png"}}{{/if}}" title='{{title}}'>
+                                                        <img src="{{#if image}}{{image}}{{else}}{{asset "/img/no-thumb.png"}}{{/if}}" alt='{{title}}'/>
+                                                        <i class="fa fa-search-plus"></i>
+                                                    </a>
+                                                    <a class="single-link" href="{{url}}">
+                                                        <i class="fa fa-location-arrow"></i>
+                                                    </a>
+                                                </div> <!-- /.inner-content -->  
+                                            </div> <!-- /.image-content -->
+                                            
+                                        </div> <!-- /.portfolio-container -->
+                                    </div>  <!-- /.item -->
+                                {{/foreach}}
+{{/get}}
+	
+	
+	<div class="gap"></div>
+	<div class="gap"></div>
+</div>           
+   
+			</div>
+				
+                </div></div>
+                        
+              </div> 
+                            <div class="clearfix"></div>
+                        </div> <!-- /.blog --> 
+						
+					
+					
+					
+                   <!-- </div>  /.text -->
+               <!---</div>   /.content-->
+            </div> <!-- /.container -->
+        </div> <!-- /#blog -->
+    <!--</div> /.blog-area -->
+    <!-- Navigation Bar -->
+	<div id="mobile-blog">
+		<div class="container">
+			
+		</div> <!-- /.container -->
+	</div> <!-- /#mobile-blog -->
+</div> <!--- End Full Screen Blog Post Page -->
+
+
+
+
+<script>
+	$('#posts').clone().appendTo('#mobile-blog .container');       
+	$('#top-nav').clone().prependTo('#mobile-blog .container');       
+    if ( blog_load === 'blog'){
+        $('#fullscreen-main').addClass('hidden');
+        $('.navmenu-fixed').css('display', 'none');
+        $('#fullscreen-blog').removeClass('hidden');
+    }
+</script>
+
+
+
+
+<style>
+	#fullscreen-blog #top-nav .menu-wrap {color: #fff;}
+	
+	{{!Jquery mCustomScrollbarで高さ取得がうまくいかず、スクロールバーが表示・非表示を繰り返すバグ対策}}
+	.mCustomScrollBox {padding-bottom: 50%;}
+
+	@media only screen and (max-width: 992px){#mobile-blog #posts {display: none;	}}
+	@media only screen and (max-width: 992px){
+		#mobile-blog {
+			background: none;
+			display: none;
+			}}
+	@media only screen and (max-width: 767px){
+			#mobile-blog {
+			background: none;
+			display: block;
+			}}
+			
+	#fullscreen-blog .blog-area {
+    background: none !important;
+    bottom: 15px;
+    display: block;
+    left: 75px;
+    position: fixed;
+    right: 75px;
+    top: 15px;
+    /*z-index: 999;*/
+	}
+		
+	@media only screen and (max-width: 767px) {
+	#porfolio-two-mobile, #mobile-blog {display: none  !important;}
+	#fullscreen-blog #portfolio-two, #fullscreen-blog .portfolio-container{z-index:999;}
+	}
+		
+        	
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 768px) {
+	.portfolios-two .items{float:left; padding:0px;}
+	}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (max-width: 767px) {
+	.portfolios-two .items{float:none; }
+	}
+	
+
+</style>
+   
+<!--<script>
+ $("#content").mCustomScrollbar({
+                theme: "inset-2-dark",
+                mouseWheelPixels: 185
+            });
+</script>-->
+		
+
+

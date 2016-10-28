@@ -1,0 +1,130 @@
+{{!< default}}
+{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
+
+{{! This bellow code is for loading header aria}}
+{{> "header"}}
+
+<!-- Fullscreen Page 
+================================================== -->
+<div id="author-template">
+{{#author}}
+    <div id="sidebar" class="blog">
+        <div class="featured-img">
+            <img src="{{#if cover}}{{cover}}{{else}}http://dummyimage.com/700x700{{/if}}" alt="{{name}}">
+        </div> <!-- featured image-->
+    </div>
+
+    <div class="container"> 
+        <div class="row"> 
+            <div id="left" class="col-sm-6 col-md-6">
+                <div id="menu" data-toggle="offcanvas" data-target=".navmenu" data-canvas="body">
+                    <div class="menu-wrap">
+                        <i class="fa fa-bars"></i><span>Menu</span>
+                    </div>
+                </div> <!-- /#menu -->
+                <div id="page-detail">
+                    <div class="author-section">                        
+                        <div class="author-image">
+                            <img src="{{#if image}}{{image}}{{else}}http://www.clancodes.com/images/avatar/avatar-missing.png{{/if}}" alt="{{name}}'s Picture">
+                        </div>
+                        <div class="author-details">                            
+                            <h4 class="author-name">{{name}}</h4>
+                            {{#if location}}
+                                <p class="author-location">{{location}}</p>
+                            {{/if}}
+                            <span class="author-posts">{{plural ../pagination.total empty='No posts' singular='% post' plural='% posts'}}</span>
+                            <div class="clearfix"></div>
+                            <p class="author-bio">
+                                {{#if bio}}{{bio}}{{/if}}
+                            </p>
+                            <div class="author-meta">
+                                <dl class="dl-horizontal">
+                                    {{#if website}}
+                                        <dt>Web :</dt>
+                                        <dd><a href="{{website}}" target="_blank">{{website}}</a></dd>
+                                    {{/if}}
+                                </dl>
+                            </div>
+                        </div> <!-- /.author-details -->
+                    </div> <!-- /.author-section -->
+                    <div class="space"></div>
+                </div>
+           </div> <!--- End Left Content -->
+{{/author}}
+            <div id="right" class="col-md-6"> 
+                <div id="post-tag" class="mCustomScrollbar">
+                    <div class="text">
+                        <div class="row">
+                            <div class="clearfix"></div>
+                            <div class="tag-content" id="tag-content-wrap">
+                                {{#foreach posts}}
+                                    <div class="col-sm-12 col-md-12 item">
+                                        <div class="item-content">                                            
+                                            <div class="image-area">
+                                                <img src="{{#if image}}{{image}}{{else}}{{asset "/img/no-thumb.png"}}{{/if}}" alt='{{title}}'/>
+                                            </div>
+                                            <div class="details">
+                                                <a href="{{url}}"><h4>{{title}}</h4></a>
+                                                <span class="meta-author">Posted In&nbsp;:&nbsp;{{tags}}</span>
+                                            </div>
+                                        </div> <!-- /.portfolio-container -->                                        
+                                    </div>  <!-- /.item -->
+                                {{/foreach}}
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div><!--- /#post-tag -->
+            </div><!--- /#right -->
+        </div> <!-- /.row -->
+   </div> <!-- /.container -->
+
+   <!-- Navigation Bar -->
+    <nav id="footer-nav" class="home navbar navbar-default navbar-fixed-bottom" role="navigation">
+        <div class="container">
+            <div class="pull-right text-right copyright-text">
+                <nav id="more-page">
+                    <ul class="pagination">
+                        <li><a href="{{@blog.url}}">&#x21d0; Back To Homepage</a></li>                
+                        {{pagination}}
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </nav>
+</div> <!--- /#fullscreen -->
+
+<!-- Mobile Device Portfolio -->
+<div id="author-mobile">
+    <div id="tag-content-top">
+        <div class="tag-content-area">        
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row" id="tag-mobile-wrap"></div>
+    </div>
+    <div class="container">
+        <div class="text-center">
+            <nav id="more-page">
+                <ul class="pagination">
+                    <li><a href="{{@blog.url}}">&#x21d0; Back To Homepage</a></li>
+                    {{! Previous/next page links - displayed on every page }}
+                    {{pagination}}
+                </ul>
+            </nav>
+        </div> 
+    </div>
+</div>
+<!-- End Mobile Device Portfolio -->  
+
+<script>
+    $('#menu').clone().appendTo('#tag-content-top .container .row .col-md-12');
+    $('#page-detail').clone().appendTo('#tag-content-top .container .row .col-md-12');
+    $('#sidebar .featured-img').clone().prependTo('#tag-content-top');
+    $('#post-tag .text').clone().appendTo('#tag-mobile-wrap');
+</script>  

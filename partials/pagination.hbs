@@ -1,0 +1,24 @@
+{{#is "home, paged"}}
+    {{^is "tag, author"}}
+		{{#if prev}}
+			<li><a href="{{page_url prev}}?blog_page=blog">&#10094; まえ</a></li>
+		{{/if}}
+
+		<li class="mobile-none"><a class="disabled" href="javascript:void(0)">{{page}} / {{pages}}</a></li>
+
+		{{#if next}}
+			<li class="pagination-naxt"><a href="{{page_url next}}?blog_page=blog">つぎ &#10095;</a></li>
+		{{/if}}
+    {{/is}}
+{{/is}}
+{{#is "tag, author"}}
+	{{#if prev}}
+		<li><a href="{{page_url prev}}">&#10094; まえ</a></li>
+	{{/if}}
+
+	<li class="mobile-none"><a class="disabled" href="javascript:void(0)">{{page}} / {{pages}}</a></li>
+
+	{{#if next}}
+		<li class="pagination-naxt"><a href="{{page_url next}}">つぎ &#10095;</a></li>
+	{{/if}}
+{{/is}}
