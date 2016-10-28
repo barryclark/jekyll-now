@@ -13,6 +13,8 @@ I'm a huge fan of the economics of open source, and I'm always pushing the work 
 
 How, as a consultancy do we visualise our own digital footprint? Why don't we track, measure and visualise this, as we do so well for our customers? we thought we would have a little go at creating something exciting, the aim being we could put something that represents our digital footprint and the things we do in the wider community. 
 
+![Docker Pulls]({{ site.baseurl }}/images/pull_graph.png "Docker Pulls")
+
 # What to measure
 
 How could we visualise such a thing? we wanted to know:
