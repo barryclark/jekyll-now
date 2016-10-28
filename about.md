@@ -4,6 +4,8 @@ title: About
 permalink: /about/
 ---
 
+![Me](https://raw.githubusercontent.com/Njoselson/Njoselson.github.io/master/images/meimage.jpg)
+
 I am a 23 year old Statistics student currently residing in Cape Town, South Africa. 
 I believe that our generation's struggle is the decolonial struggle, working to undo complex systems of oppression which dictate nearly every aspect of our lives. 
 As a cis-gendered, middle-class, white, heterosexual man, I was not required to engage on the intersections between my privilege and others' oppression until adulthood.
@@ -28,5 +30,4 @@ Link to my [CV](https://Njoselson.github.io/pdfs/cv.pdf).
 
 ### Contact me
 
-Please get in touch either over email, facebook or twitter.
-[nathaniel.joselson@gmail.com](mailto:nathaniel.joselson@gmail.com)
+Please get in touch either over email, facebook or twitter via the links at the bottom!
