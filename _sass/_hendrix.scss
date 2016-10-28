@@ -247,6 +247,7 @@ canvas {
 
 .eighty-width {
 	width: 80%;
+	width: calc(100% - 140px);
 	
 	@include mobile {
 		width: 100%;
