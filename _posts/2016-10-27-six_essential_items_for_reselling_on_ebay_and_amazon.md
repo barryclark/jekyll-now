@@ -8,13 +8,21 @@ image: /images/covers/flipping-cover.png
 
 Earlier this year I started a new hobby - flipping things I find at garage sales, thrift stores, and even regular retail stores. Flipping essentially means I sell it elsewhere more than what I paid for. I sell most of these items on eBay, and some on Amazon, which means I need to ship these items.
 
+## [0. Postal Scale](https://www.amazon.com/s/ref=as_li_ss_tl?url=search-alias=office-products&field-keywords=postal+scale&sprefix=postal+sc,aps,202&crid=BLUW22FIP4VV&n=1068986&linkCode=ll2&tag=hendrixjoseph-20&linkId=ee08714a2a4cfae1473616a99f00debf)
+
+How did I forget this? When you ship things on Amazon or eBay, you need to know how much it weighs. This is simply because you'll be purchasing shipping through Amazon or eBay because they offer a discount over what you'd pay at USPS at the counter.
+
+This is so important I'm making it the zeroth item. Also zeroth so I can keep the title.
+
+(Thank you, [WithoutLampsTheredBe](https://www.reddit.com/user/WithoutLampsTheredBe) for [pointing this out](https://www.reddit.com/r/eBaySellerAdvice/comments/59x3pp/six_essential_items_for_reselling_on_ebay_and/d9c12x4/)!)
+
+
 ## [1.	Scotch 3M Bubble Mailers Size 0 (6" x 9") - 25ct](https://www.amazon.com/gp/product/B000PE46I8/ref=as_li_ss_tl?ie=UTF8&psc=1&linkCode=ll1&tag=hendrixjoseph-20&linkId=5373af65e78b96768f06ffe42a399f09)
 
-<div style="overflow: auto;"><div class="eighty-width float-left">
-DVD cases fit snuggly into these. They’re great for other small things, too. If you buy them individually at the store (say, Kroger or Meijer), the cost roughly 70$cent; a mailer. Amazon has them for around $7.50, which makes them cost 30&cent; apiece, which is less than half the cost. Yeah, I know it’s <i>only</i> 40&cent;, but it adds up - that’s $10 a box!
+<div style="overflow: auto;">
+DVD cases fit snuggly into these. They’re great for other small things, too. If you buy them individually at the store (say, Kroger or Meijer), the cost roughly 70&cent; a mailer. Amazon has them for around $7.50, which makes them cost 30&cent; apiece, which is less than half the cost. Yeah, I know it’s <i>only</i> 40&cent;, but it adds up - that’s $10 a box!
 
 I’ve already ordered my second box.
-</div>
 
 <div class="float-right mobile-center">
 <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=hendrixjoseph-20&marketplace=amazon&region=US&placement=B000PE46I8&asins=B000PE46I8&linkId=1c4cb9a8dd5d724433a1476eb72718e6&show_border=true&link_opens_in_new_window=true"></iframe>
