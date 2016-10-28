@@ -3314,6 +3314,16 @@ lon: ''
 link: 'http://www.protezionecivile.gov.it/jcms/it/home.wp'
 data: 15/09/2016
 </yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/382,177135092,2016-09-15 10:03:55,2016-09-15 09:54:52,Protezione Civile Nazionale,,,"[""Accettato"", ""Contatti"", ""Form""]",,,"{""data"": ""15/09/2016"", ""descrizione"": """", ""email"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""http://www.protezionecivile.gov.it/jcms/it/home.wp"", ""lon"": """", ""nome"": ""Protezione Civile Nazionale"", ""tel"": ""800840840""}","<pre><yamldata>nome: 'Protezione Civile Nazionale'
+tel: '800840840'
+email: ''
+descrizione: ''
+indirizzo: ''
+lat: ''
+lon: ''
+link: 'http://www.protezionecivile.gov.it/jcms/it/home.wp'
+data: 15/09/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/381,177128901,2016-09-23 22:37:21,2016-09-15 09:24:53,Materiale di prima necessità,42.85161,13.68729,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Materiale di prima necessit\u00e0"", ""data"": ""15/09/2016"", ""descrizione"": ""Servono i seguenti beni: - stoviglie di carta (bicchieri, piatti, posate e tovaglioli) - tantissima acqua in vari formati - cibo a lunga scadenza preconfezionato e facilmente divisibile - materiale igiene intima - pannolini e materiale bambini - coperte e vestiario. Orari di apertura capannone: 8,30 - 12,30 14,00 - 18,30"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": 42.85161, ""link"": """", ""lon"": 13.68729, ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 cosa: 'Materiale di prima necessità'
