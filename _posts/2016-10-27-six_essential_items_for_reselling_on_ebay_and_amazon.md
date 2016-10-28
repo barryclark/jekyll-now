@@ -31,7 +31,7 @@ Same thing as #1, but only bigger. I haven’t used as many as these as the firs
 <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=hendrixjoseph-20&marketplace=amazon&region=US&placement=B009MPB9KY&asins=B009MPB9KY&linkId=7ed7c3b666fa765988e54425240c2dca&show_border=true&link_opens_in_new_window=true"></iframe>
 </div></div>
 
-## 3.	[200 - 10x13 WHITE POLY MAILERS ENVELOPES BAGS 10 x 13](https://www.amazon.com/gp/product/B000HG9J6I/ref=as_li_ss_tl?ie=UTF8&psc=1&linkCode=ll1&tag=hendrixjoseph-20&linkId=480536d64e14a33bd0e6ed93c6ccb107)
+## [3.	200 - 10x13 WHITE POLY MAILERS ENVELOPES BAGS 10 x 13](https://www.amazon.com/gp/product/B000HG9J6I/ref=as_li_ss_tl?ie=UTF8&psc=1&linkCode=ll1&tag=hendrixjoseph-20&linkId=480536d64e14a33bd0e6ed93c6ccb107)
 
 <div style="overflow: auto;"><div class="eighty-width float-left">
 I don’t even know where to buy these offline. I’ve only used these a few times, but they’re good for things that won’t fit in the other two items I mentioned that don’t need any bubble protection. For instance, I shipped a Fram cabin air filter that was new in box the other day in one of these.
@@ -41,7 +41,7 @@ I don’t even know where to buy these offline. I’ve only used these a few tim
 <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=hendrixjoseph-20&marketplace=amazon&region=US&placement=B000HG9J6I&asins=B000HG9J6I&linkId=400b8d9ac463ab8330e6b8e6013d1744&show_border=true&link_opens_in_new_window=true"></iframe>
 </div></div>
 
-## 4.	[MFLABEL 200 Half Sheet - Shipping Labels - 5-1/2" X 8-1/2"](https://www.amazon.com/gp/product/B015PXX7AG/ref=as_li_ss_tl?ie=UTF8&psc=1&linkCode=ll1&tag=hendrixjoseph-20&linkId=2ee81049220620b80c411d1707aadd35)
+## [4.	MFLABEL 200 Half Sheet - Shipping Labels - 5-1/2" X 8-1/2"](https://www.amazon.com/gp/product/B015PXX7AG/ref=as_li_ss_tl?ie=UTF8&psc=1&linkCode=ll1&tag=hendrixjoseph-20&linkId=2ee81049220620b80c411d1707aadd35)
 
 <div style="overflow: auto;"><div class="eighty-width float-right">
 The best thing about shipping labels is that they’re so easy to apply. Before I got these, I was just printing my labels on regular paper, cutting the paper, and then taping it to my packages. This was a real pain and I frequently found myself cussing at the box. Plus I was wasting a lot of tape.
@@ -53,13 +53,13 @@ The trick with these is to set the paper size so that you print on only one labe
 <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=hendrixjoseph-20&marketplace=amazon&region=US&placement=B015PXX7AG&asins=B015PXX7AG&linkId=2e28c60e197f61381dcc6127e4d9db54&show_border=true&link_opens_in_new_window=true"></iframe>
 </div></div>
 
-## 5. [Shipping Tape](https://www.amazon.com/s/ref=as_li_ss_tl?url=search-alias=office-products&field-keywords=shipping+tape&sprefix=shipping+ta,aps,212&crid=I3W5FEPK359O&n=1069242&linkCode=ll2&tag=hendrixjoseph-20&linkId=1ac8ba9e8f31c304e1c1c2a8a207c49e)
+## [5. Shipping Tape](https://www.amazon.com/s/ref=as_li_ss_tl?url=search-alias=office-products&field-keywords=shipping+tape&sprefix=shipping+ta,aps,212&crid=I3W5FEPK359O&n=1069242&linkCode=ll2&tag=hendrixjoseph-20&linkId=1ac8ba9e8f31c304e1c1c2a8a207c49e)
 
 <div>
 This is just a must have. You need someway to seal boxes. Just don't use it to tape your labels - use shipping labels that stick!
 </div>
 
-## 6. [Laser Printer](https://www.amazon.com/s/ref=as_li_ss_tl?url=search-alias=office-products&field-keywords=laser+printer&sprefix=laser+print,undefined,183&n=172648&crid=1YAQ0TYS3LA7J&rh=n:1064954,k:laser+printer&linkCode=ll2&tag=hendrixjoseph-20&linkId=763cbd318dc4c840214471671542859e)
+## [6. Laser Printer](https://www.amazon.com/s/ref=as_li_ss_tl?url=search-alias=office-products&field-keywords=laser+printer&sprefix=laser+print,undefined,183&n=172648&crid=1YAQ0TYS3LA7J&rh=n:1064954,k:laser+printer&linkCode=ll2&tag=hendrixjoseph-20&linkId=763cbd318dc4c840214471671542859e)
 
 <div>
 These have come down in price recently, and they're about the same size are inkjets. So you don't need a huge thousand dollar printer like you might see at the office. The real advatage to these is they use a lot less ink - actually, toner - than inkjet printers.
