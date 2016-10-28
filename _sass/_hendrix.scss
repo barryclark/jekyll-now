@@ -244,3 +244,11 @@ canvas {
 		float: none;
 	}
 }
+
+.eighty-width {
+	width: 80%;
+	
+	@include mobile {
+		width: 100%;
+	}
+}
