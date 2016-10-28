@@ -17,4 +17,4 @@ Warlock's Tower is a puzzle game with over 100 rooms, each harder to solve than 
 The video above is enough to get my nostalgic juices flowing. The game can't come out fast enough and I'm hoping to get a preview build of it soon for review.
 
 ![Warlock's Tower Screens](/images/wizardstower/screens.jpg)
-*Looks like the good 'ol days'*{: .center }
+*Looks like the good 'ol days*{: .center }
