@@ -12,9 +12,9 @@ author: Rob Kalajian
 
 Developed by Brazilian indie studio Midipixel, Warlock's Tower is an aural and visual tribute to the wonderful Nintendo Game Boy. It will arrive in Jan 2017 on Steam, iOS, and Android. 3DS and Vita releases will follow shortly.
 
-Wizard's Tower is a puzzle game with over 100 rooms, each harder to solve than the last. The gimmick here is that every step you take diminishes your life.
+Warlock's Tower is a puzzle game with over 100 rooms, each harder to solve than the last. The gimmick here is that every step you take diminishes your life.
 
 The video above is enough to get my nostalgic juices flowing. The game can't come out fast enough and I'm hoping to get a preview build of it soon for review.
 
-![Wizard's Tower Screens](/images/wizardstower/screens.jpg)
+![Warlock's Tower Screens](/images/wizardstower/screens.jpg)
 *Looks like the good 'ol days'*{: .center }
