@@ -3,6 +3,7 @@ layout: post
 title: Six Essential Items for Reselling on eBay and Amazon
 tags: [money]
 keywords: [ebay, amazon, thrift store, thrift stores, garage sale, garage sales, resell, reselling, ship, shipping, mailer, label, shipping label, flip, flipping]
+image: /images/flipping-cover.png
 ---
 
 Earlier this year I started a new hobby - flipping things I find at garage sales, thrift stores, and even regular retail stores. Flipping essentially means I sell it elsewhere more than what I paid for. I sell most of these items on eBay, and some on Amazon, which means I need to ship these items.
