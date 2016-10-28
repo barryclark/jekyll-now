@@ -48,6 +48,12 @@ try:
 except:
     jwr=None
 
+try:
+    GEOJSONFILE=sys.argv[3]
+    gjwr=file(GEOJSONFILE,"w+")
+except:
+    gjwr=None
+
 wr=file(CSVFILE,"w+")
 csvwriter=csv.writer(wr,quotechar='"')
 
@@ -64,6 +70,9 @@ issues=r.get_issues(since=lastTime,labels=filter_labels,state='all')
 csvwriter.writerow(("url","id","updated_at","created_at","title","lat","lon","labels","milestone","image","data","body","state"))
 if jwr:
     jwr.write("[")
+
+if gjwr:
+    gjwr.write('{ "type": "FeatureCollection", "features": [')
 
 for issue in issues:
     labels = json.dumps([l.name for l in issue.labels])
@@ -115,6 +124,11 @@ for issue in issues:
     if jwr:
         jwr.write(json.dumps({"title":issue.title,"number":issue.number,"state":issue.state,"issue":{"url":issue.html_url,"id":issue.id,"updated_at":issue.updated_at.isoformat()+"+00:00","created_at":issue.created_at.isoformat()+"+00:00","title":title,"lat":lat,"lon":lon,"labels":eval(labels) if labels else None,"milestone":issue.milestone.title if issue.milestone else None,"image":image,"data":data,"body":issue.body.encode('utf-8')}}, sort_keys=True)+",\n")
 
+    if gjwr:
+        gjwr.write(json.dumps({"type":"Feature","geometry":{"type":"Point","coordinates":[lon,lat]},"properties":{"title":issue.title,"number":issue.number,"state":issue.state,"url":issue.html_url,"id":issue.id,"updated_at":issue.updated_at.isoformat()+"+00:00","created_at":issue.created_at.isoformat()+"+00:00","labels":eval(labels) if labels else None,"milestone":issue.milestone.title if issue.milestone else None,"image":image,"data":data,"body":issue.body.encode('utf-8')}}, sort_keys=True)+",\n")
 
 if jwr:
     jwr.write("]")
+
+if gjwr:
+    gjwr.write("]}")
