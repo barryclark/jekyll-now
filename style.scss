@@ -110,6 +110,26 @@ img {
   max-width: 100%;
 }
 
+ul.share-buttons{
+	list-style: none;
+	padding: 0;
+}
+
+ul.share-buttons li{
+	display: inline;
+}
+
+ul.share-buttons .sr-only {
+	position: absolute;
+	clip: rect(1px 1px 1px 1px);
+	clip: rect(1px, 1px, 1px, 1px);
+	padding: 0;
+	border: 0;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
 // Fixes images in popup boxes from Google Translate
 .gmnoprint img {
   max-width: none;
@@ -283,25 +303,6 @@ footer {
   text-align: center;
 }
 
-ul.share-buttons{
-	list-style: none;
-	padding: 0;
-}
-
-ul.share-buttons li{
-	display: inline;
-}
-
-ul.share-buttons .sr-only {
-	position: absolute;
-	clip: rect(1px 1px 1px 1px);
-	clip: rect(1px, 1px, 1px, 1px);
-	padding: 0;
-	border: 0;
-	height: 1px;
-	width: 1px;
-	overflow: hidden;
-}
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
