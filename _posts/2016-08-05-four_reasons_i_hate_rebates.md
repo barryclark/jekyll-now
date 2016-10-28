@@ -2,7 +2,8 @@
 layout: post
 title: Four Reasons I Hate Rebates
 tags: [money]
-keywords: [list, rebates]
+keywords: [rebate, rebates, coupon, gift card, gift cards]
+image: /images/covers/rebate_cover.jpg
 ---
 
 I really don’t like rebates for some reason. I suppose they’re better than nothing, but I’d rather have a coupon or just reduce the price. Here are four reasons I hate rebates:
