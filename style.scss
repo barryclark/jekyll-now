@@ -110,24 +110,23 @@ img {
   max-width: 100%;
 }
 
-ul.share-buttons{
-	list-style: none;
-	padding: 0;
-}
+.share-page {
+	text-align: center;
+	background: $secondary-color;
+	color: $light-color;
+	padding: 8px 15px;
+	border-radius: 5px;
+	margin: 1.5 * $spacing-unit 0;
 
-ul.share-buttons li{
-	display: inline;
-}
+	a {
+		font-weight: 700;
+		color: #fff;
+		margin-left: 10px;
 
-ul.share-buttons .sr-only {
-	position: absolute;
-	clip: rect(1px 1px 1px 1px);
-	clip: rect(1px, 1px, 1px, 1px);
-	padding: 0;
-	border: 0;
-	height: 1px;
-	width: 1px;
-	overflow: hidden;
+		&:hover {
+			border-bottom: 1px dashed #fff;
+		}
+	}
 }
 
 // Fixes images in popup boxes from Google Translate
