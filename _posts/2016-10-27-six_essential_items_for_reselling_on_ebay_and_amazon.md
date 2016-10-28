@@ -15,7 +15,7 @@ DVD cases fit snuggly into these. They’re great for other small things, too. I
 I’ve already ordered my second box.
 </div>
 
-<div class="float-right">
+<div class="float-right mobile-center">
 <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=hendrixjoseph-20&marketplace=amazon&region=US&placement=B000PE46I8&asins=B000PE46I8&linkId=1c4cb9a8dd5d724433a1476eb72718e6&show_border=true&link_opens_in_new_window=true"></iframe>
 </div></div>
 
@@ -26,7 +26,7 @@ I’ve already ordered my second box.
 Same thing as #1, but only bigger. I haven’t used as many as these as the first one - I’m still on my first box. They still cost a lot less than buying them individually at the store - around 80&cent; to $1.00 at the store, compared to around $10 on Amazon. A savings of $15 a box!
 </div>
 
-<div class="float-left">
+<div class="float-left mobile-center">
 <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=hendrixjoseph-20&marketplace=amazon&region=US&placement=B009MPB9KY&asins=B009MPB9KY&linkId=7ed7c3b666fa765988e54425240c2dca&show_border=true&link_opens_in_new_window=true"></iframe>
 </div></div>
 
@@ -36,7 +36,7 @@ Same thing as #1, but only bigger. I haven’t used as many as these as the firs
 I don’t even know where to buy these offline. I’ve only used these a few times, but they’re good for things that won’t fit in the other two items I mentioned that don’t need any bubble protection. For instance, I shipped a Fram cabin air filter that was new in box the other day in one of these.
 </div>
 
-<div class="float-right">
+<div class="float-right mobile-center">
 <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=hendrixjoseph-20&marketplace=amazon&region=US&placement=B000HG9J6I&asins=B000HG9J6I&linkId=400b8d9ac463ab8330e6b8e6013d1744&show_border=true&link_opens_in_new_window=true"></iframe>
 </div></div>
 
@@ -48,7 +48,7 @@ The best thing about shipping labels is that they’re so easy to apply. Before 
 The trick with these is to set the paper size so that you print on only one label a time.
 </div>
 
-<div class="float-left">
+<div class="float-left mobile-center">
 <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=hendrixjoseph-20&marketplace=amazon&region=US&placement=B015PXX7AG&asins=B015PXX7AG&linkId=2e28c60e197f61381dcc6127e4d9db54&show_border=true&link_opens_in_new_window=true"></iframe>
 </div></div>
 

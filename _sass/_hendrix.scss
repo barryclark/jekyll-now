@@ -252,3 +252,9 @@ canvas {
 		width: 100%;
 	}
 }
+
+.mobile-center {
+	@include mobile {
+		text-align: center;
+	}
+}
