@@ -1,7 +1,0 @@
-/*
-Last Updated: 2016年6月10日 11:07:03
-
-COTA
-http://cota.jp
-*/
-(function(a){a.fn.twentytwenty=function(b){var b=a.extend({default_offset_pct:0.5},b);return this.each(function(){var f=b.default_offset_pct;var c=a(this);c.wrap("<div class='twentytwenty-wrapper'></div>");c.append("<div class='twentytwenty-overlay'></div>");var m=c.find("img:first");var k=c.find("img:last");c.append("<div class='twentytwenty-handle'></div>");var d=c.find(".twentytwenty-handle");d.append("<span class='twentytwenty-left-arrow'></span>");d.append("<span class='twentytwenty-right-arrow'></span>");c.addClass("twentytwenty-container");m.addClass("twentytwenty-before");k.addClass("twentytwenty-after");var h=c.find(".twentytwenty-overlay");h.append("<div class='twentytwenty-before-label'></div>");h.append("<div class='twentytwenty-after-label'></div>");var g=function(o){var n=m.width();var p=m.height();return{w:n+"px",h:p+"px",cw:(o*n)+"px"}};var e=function(n){m.css("clip","rect(0,"+n.cw+","+n.h+",0)");c.css("height",n.h)};var j=function(n){var o=g(n);d.css("left",o.cw);e(o)};a(window).on("resize.twentytwenty",function(n){j(f)});var i=0;var l=0;c.on("movestart",function(n){if((n.distX>n.distY&&n.distX<-n.distY)||(n.distX<n.distY&&n.distX>-n.distY)){n.preventDefault()}c.addClass("active");i=c.offset().left;l=m.width()});c.on("moveend",function(n){c.removeClass("active")});c.on("move",function(n){if(c.hasClass("active")){f=(n.pageX-i)/l;if(f<0){f=0}if(f>1){f=1}j(f)}});c.find("img").on("mousedown",function(n){n.preventDefault()});a(window).trigger("resize.twentytwenty")})}})(jQuery);
