@@ -1,6 +1,9 @@
 ---
 layout: post
 title: A Motivation for Decolonizing Statistics
+image:
+  feature: decolonize-your-mind-6-300x225.jpg
+    thumb: decolonize-your-mind-6-300x225.jpg
 ---
 
 ![Decolonization]({{ site.baseurl }}/images/decolonize-your-mind-6-300x225.jpg)
