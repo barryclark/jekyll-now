@@ -3,7 +3,7 @@ layout: post
 title: Decolonization can be hard to see...
 ---
 
-![Decolonization]({{ site.baseurl }}/images/trig3.JPG)
+![Decolonization Trigonometry](https://raw.githubusercontent.com/Njoselson/Njoselson.github.io/master/images/trig3.jpg)
 
 [C K Raju](http://ckraju.net/) is an Indian mathematician, physicist, post-colonial philosopher, historian and part time statistician.
 Most of this post is taken directly from a talk he gave at MIT about the imperialism of expecting the post-colonial world to teach according to the MIT/Harvard MOOC's (Massive Open Online Courses) curriculum for Trigonometry, available [here](http://ckraju.net/papers/presentations/MIT.pdf).
