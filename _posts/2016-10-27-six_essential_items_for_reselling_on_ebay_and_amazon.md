@@ -5,11 +5,11 @@ tags: [money]
 keywords: [ebay, amazon, thrift store, thrift stores, garage sale, garage sales, resell, reselling, ship, shipping, mailer, label, shipping label, flip, flipping]
 ---
 
-Earlier this year I started a new hobby – flipping things I find at garage sales, thrift stores, and even regular retail stores. Flipping essentially means I sell it elsewhere more than what I paid for. I sell most of these items on eBay, and some on Amazon, which means I need to ship these items.
+Earlier this year I started a new hobby - flipping things I find at garage sales, thrift stores, and even regular retail stores. Flipping essentially means I sell it elsewhere more than what I paid for. I sell most of these items on eBay, and some on Amazon, which means I need to ship these items.
 
 ## 1.	[Scotch 3M Bubble Mailers Size 0 (6" x 9") - 25ct](https://www.amazon.com/gp/product/B000PE46I8/ref=as_li_ss_tl?ie=UTF8&psc=1&linkCode=ll1&tag=hendrixjoseph-20&linkId=5373af65e78b96768f06ffe42a399f09)
 
-DVD cases fit snuggly into these. They’re great for other small things, too. If you buy them individually at the store (say, Kroger or Meijer), the cost roughly 70$cent; a mailer. Amazon has them for around $7.50, which makes them cost 30&cent; apiece, which is less than half the cost. Yeah, I know it’s *only* 40&cent;, but it adds up – that’s $10 a box!
+DVD cases fit snuggly into these. They’re great for other small things, too. If you buy them individually at the store (say, Kroger or Meijer), the cost roughly 70$cent; a mailer. Amazon has them for around $7.50, which makes them cost 30&cent; apiece, which is less than half the cost. Yeah, I know it’s *only* 40&cent;, but it adds up - that’s $10 a box!
 
 I’ve already ordered my second box.
 
@@ -17,7 +17,7 @@ I’ve already ordered my second box.
 
 ## 2.	[Scotch Bubble Mailer, 8.5 x 11-Inches, Size #2, 25-Pack](https://www.amazon.com/gp/product/B009MPB9KY/ref=as_li_ss_tl?ie=UTF8&psc=1&linkCode=ll1&tag=hendrixjoseph-20&linkId=eef5b99d251f8b4ce1fc479dda91f914)
 
-Same thing as #1, but only bigger. I haven’t used as many as these as the first one - I’m still on my first box. They still cost a lot less than buying them individually at the store – around 80&cent; to $1.00 at the store, compared to around $10 on Amazon. A savings of $15 a box!
+Same thing as #1, but only bigger. I haven’t used as many as these as the first one - I’m still on my first box. They still cost a lot less than buying them individually at the store - around 80&cent; to $1.00 at the store, compared to around $10 on Amazon. A savings of $15 a box!
 
 <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=hendrixjoseph-20&marketplace=amazon&region=US&placement=B009MPB9KY&asins=B009MPB9KY&linkId=7ed7c3b666fa765988e54425240c2dca&show_border=true&link_opens_in_new_window=true"></iframe>
 
