@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/886,186093015,2016-10-29 18:22:58,2016-10-29 18:21:13,"UISP Rieti insieme a RCS, Running Motivator e il magazine Correre",,,"[""Accettato"", ""Raccolte Fondi"", ""Twitter""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""UISP Rieti insieme a RCS, Running Motivator e il magazine Correre"", ""data"": ""29/10/2016"", ""descrizione"": ""raccolta fondi \u00e8 finalizzata a sostegno di iniziative a carattere sociale e sportivo, dall'adeguamento alla realizzazione di impianti per lo svolgimento di attivit\u00e0 sportive o ricreative, oltre che per lo sviluppo di progetti necessari a favorire l\u2019aggregazione sociale, soprattutto di giovani e anziani."", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""https://www.retedeldono.it/siamoconvoi"", ""postale"": """"}","<pre><yamldata>chi: 'UISP Rieti insieme a RCS, Running Motivator e il magazine Correre'
+descrizione: 'raccolta fondi è finalizzata a sostegno di iniziative a carattere sociale e sportivo, dall''adeguamento alla realizzazione di impianti per lo svolgimento di attività sportive o ricreative, oltre che per lo sviluppo di progetti necessari a favorire l’aggregazione sociale, soprattutto di giovani e anziani.'
+intestazione: ''
+iban: ''
+bic: ''
+postale: ''
+causale: ''
+link: 'https://www.retedeldono.it/siamoconvoi'
+email: ''
+data: 29/10/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/885,186083099,2016-10-29 16:12:34,2016-10-29 15:05:24,COMUNE DI #SERRAVALLE DI CHIENTI: apertura uffici comunali per emergenza sismica,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""29/10/2016"", ""descrizione"": ""A seguito dell\u2019emergenza sismica il comune rester\u00e0 aperto anche nei giorni festivi del 30/10/2016 e del 01/11/2016."", ""link"": ""http://www.comune.serravalledichienti.mc.it/avvisi-cms/apertura-uffici-comunali-per-emergenza-sismica/"", ""titolo"": ""COMUNE DI #SERRAVALLE DI CHIENTI:Apertura uffici comunali per emergenza sismica.""}","<pre><yamldata>titolo: 'COMUNE DI #SERRAVALLE DI CHIENTI:Apertura uffici comunali per emergenza sismica.'
 descrizione: 'A seguito dell’emergenza sismica il comune resterà aperto anche nei giorni festivi del 30/10/2016 e del 01/11/2016.'
 link: 'http://www.comune.serravalledichienti.mc.it/avvisi-cms/apertura-uffici-comunali-per-emergenza-sismica/'
