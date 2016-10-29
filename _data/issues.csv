@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/881,186079436,2016-10-29 15:57:31,2016-10-29 13:46:59,COMUNE DI #PIEVETORINA: dove si può ricevere cibo,,,"[""Accettato"", ""Bollettino"", ""Cibo"", ""Form"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""29/10/2016"", ""descrizione"": ""Si comunica alla popolazione ed in particolar modo per la cittadinanza delle frazioni che \u00e8 possibile mangiare presso la struttura della protezione civile nell'area camper vicino al campo sportivo. Si prega di fare il passa parola."", ""link"": ""https://www.facebook.com/ComunePieveTorina/?fref=nf"", ""titolo"": ""COMUNE DI #PIEVETORINA: COMUNICATO""}","<pre><yamldata>titolo: 'COMUNE DI #PIEVETORINA: COMUNICATO'
+descrizione: 'Si comunica alla popolazione ed in particolar modo per la cittadinanza delle frazioni che è possibile mangiare presso la struttura della protezione civile nell''area camper vicino al campo sportivo. Si prega di fare il passa parola.'
+link: 'https://www.facebook.com/ComunePieveTorina/?fref=nf'
+data: 29/10/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/880,186069622,2016-10-29 10:18:30,2016-10-29 09:41:43,A #Ussita c'è bisogno di 2 camper per alcune famiglie che dormono in auto,42.94261,13.138755,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Pubblicare su FB"", ""Sisma Ottobre"", ""Telegram""]",,,"{""data"": ""29/10/2016"", ""descrizione"": ""Ussita: per alcune famiglie che da 3 notti dormono in macchina c'\u00e8 bisogno di 2 camper. Contatti: Sara Vegni Actionaid 3462865450"", ""immagine"": """", ""lat"": ""42.94261"", ""lon"": ""13.138755"", ""telegram_user"": """"}","<pre><yamldata>telegram_user: ''
 descrizione: 'Ussita: per alcune famiglie che da 3 notti dormono in macchina c''è bisogno di 2 camper. Contatti: Sara Vegni Actionaid 3462865450'
 immagine: ''
