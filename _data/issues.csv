@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/877,186063205,2016-10-29 07:31:26,2016-10-29 06:41:01,LUISS mette a disposizione borse di studio per gli studenti colpiti dal terremoto,,,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""29/10/2016"", ""descrizione"": ""Cinque esoneri a copertura totale destinati ai ragazzi colpiti dal sisma del 24 agosto."", ""link"": ""http://www.luiss.it/news/2016/10/14/luiss-mette-disposizione-borse-di-studio-gli-studenti-colpiti-dal-terremoto#"", ""titolo"": ""LUISS mette a disposizione borse di studio per gli studenti colpiti dal terremoto""}","<pre><yamldata>titolo: 'LUISS mette a disposizione borse di studio per gli studenti colpiti dal terremoto'
+descrizione: 'Cinque esoneri a copertura totale destinati ai ragazzi colpiti dal sisma del 24 agosto.'
+link: 'http://www.luiss.it/news/2016/10/14/luiss-mette-disposizione-borse-di-studio-gli-studenti-colpiti-dal-terremoto#'
+data: 29/10/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/875,186018276,2016-10-28 21:39:49,2016-10-28 20:47:07,Pro Loco Campi (Norcia) - Richiesta gemellaggio con altre Pro Loco per aiuto a sfollati ,42.8493534,13.0947414,"[""Accettato"", ""Bollettino"", ""Contatti"", ""Fabbisogni"", ""Form"", ""Pubblicare su FB"", ""Sisma Ottobre""]",,,"{""data"": ""28/10/2016"", ""descrizione"": ""Gemellaggio con altre Pro Loco in aiuto degli sfollati post-sisma."", ""email"": """", ""indirizzo"": ""Via dei Casali, Casa Cupa, Norcia, PG, UMB, 06046, Italia"", ""lat"": ""42.8493534"", ""link"": ""https://www.facebook.com/proloco.campi/"", ""lon"": ""13.0947414"", ""nome"": ""Pro Loco Campi"", ""tel"": ""0743 820225""}","<pre><yamldata>nome: 'Pro Loco Campi'
 tel: '0743 820225'
 email: ''
