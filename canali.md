@@ -118,5 +118,21 @@ permalink: /canali/
               </span>&nbsp;&nbsp;Email
             </a>per segnalare contenuti da rimuovere o scriverci
           </li>
+          <li>
+            <a itemprop="sameAs" href="{{ site.author.archiveorg }}" title="archive.org">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-archive fa-stack-1x fa-inverse"></i>
+              </span>&nbsp;&nbsp;Archive.org
+            </a>archivio dati
+          </li>
+	         <li>
+            <a href="https://telegram.me/joinchat/BgW6eEBsI3rLKsJk9L7FJg" title="Bot Telegram">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-paper-plane fa-stack-1x fa-inverse"></i>
+              </span>&nbsp;&nbsp;Gruppo Telegram
+            </a><span>per coordinarci internamente</span>
+          </li>
           <p>Tutto ciò che ci invii sarà gestito dal nostro team, che potrà provvedere alla pubblicazione delle informazioni sul sito appena possibile. Ricordati che usando i nostri canali accetti automaticamente di sottoscrivere l'<a href="http://terremotocentroitalia.info/legal_segnalazioni/">informativa legale</a> per le informazioni di questo progetto.</p>
 </div>
