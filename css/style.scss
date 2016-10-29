@@ -19,7 +19,7 @@ html {
 
 body {
 	background: $white;
-  font: 18px/1.4 $helvetica;
+  font: 15px/1.4 $helvetica;
   color: $darkGray;
   transition: background-color .5s;
 }
@@ -30,19 +30,6 @@ body {
   padding: 0 10px;
   width: 100%;
   transition: margin-left .5s;
-}
-
-#sidebar {
-  height: 100%;
-  padding-right: 0;
-  padding-top: 20px;
-}
-#sidebar .nav {
-  width: 95%;
-}
-#sidebar li {
-  border:0 #f2f2f2 solid;
-  border-bottom-width:1px;
 }
 
 /* collapsed sidebar styles */
