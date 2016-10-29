@@ -1,14 +1,127 @@
-% This file was created with JabRef 2.9.2.
 % Encoding: UTF-8
 
-@ARTICLE{Archer2015a,
+@InProceedings{Zhao2016d,
+  author        = {Zhao, Yuan and Park, Il Memming},
+  title         = {Interpretable Nonlinear Dynamic Modeling of Neural Trajectories},
+  booktitle     = {Advances in Neural Information Processing Systems (NIPS)},
+  year          = {2016},
+  abstract      = {A central challenge in neuroscience is understanding how neural system
+implements computation through its dynamics. We propose a nonlinear
+time series model aimed at characterizing interpretable dynamics
+from neural trajectories. Our model assumes low-dimensional continuous
+dynamics in a finite volume. It incorporates a prior assumption about
+globally contractional dynamics to avoid overly enthusiastic extrapolation
+outside of the support of observed trajectories. We show that our
+model can recover qualitative features of the phase portrait such
+as attractors, slow points, and bifurcations, while also producing
+reliable long-term future predictions in a variety of dynamical models
+and in real neural data.},
+  archiveprefix = {arXiv},
+  eprint        = {1608.06546},
+  keywords      = {autoregressive, bifurcation, chaos, continuous-attractor, dynamics, neural-dynamics, nips, oscillation, tensorflow},
+  primaryclass  = {q-bio.QM},
+}
+
+@INPROCEEDINGS{Zhao2016c,
+  author = {Yuan Zhao and Il Memming Park},
+  title = {Variational inference of latent {G}aussian neural dynamics},
+  booktitle = {International Conference on Machine Learning (ICML) Workshop on Computational
+	Biology},
+  year = {2016}
+}
+
+@INPROCEEDINGS{Zhao2016b,
+  author = {Yuan Zhao and Il Memming Park},
+  title = {Inferring low-dimensional network dynamics with variational latent
+	{G}aussian process},
+  booktitle = {Organization for Computational Neuroscience (CNS)},
+  year = {2016}
+}
+
+@Unpublished{Zhao2016a,
+  author               = {Zhao, Yuan and Park, Il Memming},
+  title                = {Variational Latent {G}aussian Process for Recovering Single-Trial Dynamics from Population Spike Trains},
+  note                 = {(under review)},
+  month                = apr,
+  year                 = {2016},
+  abstract             = {A small number of common factors often explain most of the interdependence
+	among simultaneously recorded neurons, a signature of underlying
+	low-dimensional dynamics. We posit that simple neural coding and
+	computation manifest as low-dimensional nonlinear dynamics implemented
+	redundantly within a large population of neurons. Recovering the
+	latent dynamics from observations can offer a deeper understanding
+	of neural computation. We improve upon previously-proposed methods
+	for recovering latent dynamics, which assume either an inappropriate
+	observation model or linear dynamics. We propose a practical and
+	efficient inference method for a generative model with explicit point
+	process observations and an assumption of smooth nonlinear dynamics.
+	We validate our method on both simulated data and population recording
+	from primary visual cortex.},
+  archiveprefix        = {arXiv},
+  citeulike-article-id = {14025142},
+  citeulike-linkout-0  = {http://arxiv.org/abs/1604.03053},
+  citeulike-linkout-1  = {http://arxiv.org/pdf/1604.03053},
+  day                  = {22},
+  eprint               = {1604.03053},
+  journal              = {ArXiv e-prints},
+  keywords             = {bayesian, computational-neuroscience, gaussian-process, glm, latent-dynamics, latent-variable, spike-train, statistical-neuroscience, statistics, torus, variational-bayes},
+  posted-at            = {2016-04-30 16:02:05},
+  primaryclass         = {stat.ML},
+  youtube              = {https://www.youtube.com/watch?v=CrY5AfNH1ik},
+}
+
+@INPROCEEDINGS{Dikecligil2016,
+  author = {Gulce Nazli Dikecligil and Dustin Graham and Il Memming Park and
+	Alfredo Fontanini},
+  title = {Layer Specific Sensorimotor Activity in the Gustatory Cortex of Licking
+	Mice},
+  booktitle = {Society for Neuroscience},
+  year = {2016},
+  owner = {memming}
+}
+
+@INPROCEEDINGS{Yates2015a,
+  author = {Jacob Yates and Evan Archer and Alexander C. Huk and Il Memming Park},
+  title = {Canonical correlations reveal co-variability between spike trains
+	and local field potentials in area {MT}},
+  booktitle = {Organization for Computational Neuroscience (CNS)},
+  year = {2015}
+}
+
+@INPROCEEDINGS{Wu2015b,
+  author = {Anqi Wu and Il Memming Park and Jonathan Pillow},
+  title = {Convolutional spike-triggered covariance analysis for neural subunit
+	models},
+  booktitle = {Advances in Neural Information Processing Systems (NIPS)},
+  year = {2015},
+  owner = {memming}
+}
+
+@INPROCEEDINGS{Wu2015a,
+  author = {Anqi Wu and Il Memming Park and Jonathan Pillow},
+  title = {Convolutional spike-triggered covariance analysis for estimating
+	subunit models},
+  booktitle = {Computational and Systems Neuroscience (COSYNE)},
+  year = {2015},
+  owner = {memming}
+}
+
+@INPROCEEDINGS{Park2015a,
+  author = {Il Memming Park and Jacob Yates and Alex Huk and Jonathan Pillow},
+  title = {Dynamic correlations between visual and decision areas during perceptual
+	decision-making},
+  booktitle = {Computational and Systems Neuroscience (COSYNE)},
+  year = {2015},
+  owner = {memming}
+}
+
+@UNPUBLISHED{Archer2015a,
   author = {Archer, Evan and Park, Il Memming and Buesing, Lars and Cunningham,
 	John and Paninski, Liam},
   title = {Black box variational inference for state space models},
   journal = {ArXiv e-prints},
   year = {2015},
   month = nov,
-  note = {(to be submitted)},
   abstract = {Latent variable time-series models are among the most heavily used
 	tools from machine learning and applied statistics. These models
 	have the advantage of learning latent structure both from noisy observations
@@ -42,82 +155,271 @@
   posted-at = {2016-02-23 15:24:40},
   primaryclass = {stat.ML},
   priority = {2},
-  url = {http://arxiv.org/abs/1511.07367}
 }
 
-@ARTICLE{Archer2014a,
-  author = {Archer, Evan and Park, Il Memming and Pillow, Jonathan},
-  title = {{Bayes}ian Entropy Estimation for Countable Discrete Distributions},
-  journal = {Journal of Machine Learning Research},
+@INPROCEEDINGS{Yates2014a,
+  author = {Jacob L. Yates and Leor N. Katz and Il Memming Park and Jonathan
+	W. Pillow and Alexander C. Huk},
+  title = {Correlations and choice probabilities in simultaneously recorded
+	{MT} and {LIP} neurons},
+  booktitle = {Society for Neuroscience},
+  year = {2014}
+}
+
+@ARTICLE{Park2014d,
+  author = {Park, Il Memming and Meister, Miriam L. R. and Huk, Alexander C.
+	and Pillow, Jonathan W.},
+  title = {Encoding and decoding in parietal cortex during sensorimotor decision-making},
+  journal = {Nature Neuroscience},
   year = {2014},
-  volume = {15},
-  pages = {2833--2868},
-  url = {http://jmlr.org/papers/v15/archer14a.html}
+  volume = {17},
+  pages = {1395--1403},
+  number = {10},
+  month = oct,
+  citeulike-article-id = {13342234},
+  citeulike-linkout-0 = {http://dx.doi.org/10.1038/nn.3800},
+  doi = {10.1038/nn.3800},
+  issn = {1097-6256},
+  keywords = {computational-neuroscience, decision-making, glm, lip, monkey, neural-code,
+	neural-decoding},
+  posted-at = {2014-08-31 22:37:11},
+  priority = {0}
 }
 
-@ARTICLE{Archer2013a,
-  author = {Archer, Evan and Park, Il Memming and Pillow, Jonathan},
-  title = {{Bayes}ian Entropy Estimation for Countable Discrete Distributions},
-  journal = {ArXiv e-prints},
-  year = {2013},
-  month = feb,
-  abstract = {We consider the problem of estimating Shannon's entropy $H$ from discrete
-	data, in cases where the number of possible symbols is unknown or
-	even countably infinite. The {Pitman-Yor} process, a generalization
-	of Dirichlet process, provides a tractable prior distribution over
-	the space of countably infinite discrete distributions, and has found
-	major applications in Bayesian non-parametric statistics and machine
-	learning. Here we show that it also provides a natural family of
-	priors for Bayesian entropy estimation, due to the fact that moments
-	of the induced posterior distribution over $H$ can be computed analytically.
-	We derive formulas for the posterior mean (Bayes' least squares estimate)
-	and variance under Dirichlet and {Pitman-Yor} process priors. Moreover,
-	we show that a fixed Dirichlet or {Pitman-Yor} process prior implies
-	a narrow prior distribution over $H$, meaning the prior strongly
-	determines the entropy estimate in the under-sampled regime. We derive
-	a family of continuous mixing measures such that the resulting mixture
-	of {Pitman-Yor} processes produces an approximately flat prior over
-	$H$. We show that the resulting {Pitman-Yor} Mixture ({PYM}) entropy
-	estimator is consistent for a large class of distributions. We explore
-	the theoretical properties of the resulting estimator, and show that
-	it performs well both in simulation and in application to real data.},
+@INPROCEEDINGS{Park2014c,
+  author = {Park, Il Memming and Seth, Sohan and Steven Van Vaerenbergh},
+  title = {Probabilistic Kernel Least Mean Squares Algorithms},
+  booktitle = {IEEE International Conference on Acoustics, Speech, and Signal Processing
+	(ICASSP)},
+  year = {2014},
+  doi = {10.1109/ICASSP.2014.6855214},
+  url = {http://gtas.unican.es/pub/393},
+  publisher = {IEEE}
+}
+
+@INPROCEEDINGS{Park2014b,
+  author = {Il Memming Park and Evan Archer and Kenneth Latimer and Jonathan
+	Pillow},
+  title = {Scalable nonparametric models for binary spike patterns},
+  booktitle = {Computational and Systems Neuroscience (COSYNE)},
+  year = {2014}
+}
+
+@ARTICLE{Park2014a,
+  author = {Il Memming Park and Yuriy V. Bobkov and Barry W. Ache and Jos\'e
+	C. Pr\'incipe},
+  title = {Intermittency coding in the primary olfactory system: A neural substrate
+	for olfactory scene analysis},
+  journal = {The Journal of Neuroscience},
+  year = {2014},
+  volume = {34},
+  pages = {941--952},
+  number = {3},
+  month = jan,
+  abstract = {The spatial and temporal characteristics of the visual and acoustic
+	sensory input are indispensable attributes for animals to perform
+	scene analysis. In contrast, research in olfaction has focused almost
+	exclusively on how the nervous system analyzes the quality and quantity
+	of the sensory signal and largely ignored the spatiotemporal dimension
+	especially in longer time scales. Yet, detailed analyses of the turbulent,
+	intermittent structure of water- and air-borne odor plumes strongly
+	suggest that spatio-temporal information in longer time scales can
+	provide major cues for olfactory scene analysis for animals. We show
+	that a bursting subset of primary olfactory receptor neurons ({bORNs})
+	in lobster has the unexpected capacity to encode the temporal properties
+	of intermittent odor signals. Each {bORN} is tuned to a specific
+	range of stimulus intervals, and collectively {bORNs} can instantaneously
+	encode a wide spectrum of intermittencies. Our theory argues for
+	the existence of a novel peripheral mechanism for encoding the temporal
+	pattern of odor that potentially serves as a neural substrate for
+	olfactory scene analysis.},
+  day = {15},
+  doi = {10.1523/jneurosci.2204-13.2014},
+  issn = {1529-2401},
+  keywords = {neural-code, odor-plume, olfactory, uncoupled-oscillator},
+  publisher = {Society for Neuroscience}
+}
+
+@INPROCEEDINGS{Huk2014a,
+  author = {Alexander Huk and Jacob Yates and Leor Katz and Il Memming Park and
+	Jonathan Pillow},
+  title = {Dissociated functional significance of choice-related activity across
+	the primate dorsal stream},
+  booktitle = {Computational and Systems Neuroscience (COSYNE)},
+  year = {2014}
+}
+
+@Article{Archer2014a,
+  author        = {Archer, Evan and Park, Il Memming and Pillow, Jonathan},
+  title         = {{Bayes}ian Entropy Estimation for Countable Discrete Distributions},
+  journal       = {Journal of Machine Learning Research},
+  year          = {2014},
+  volume        = {15},
+  pages         = {2833--2868},
   archiveprefix = {arXiv},
+  eprint        = {1302.0328},
+  keywords      = {bayesian, entropy-estimation, nonparametric-bayes, pitman-yor-process},
+  url           = {http://jmlr.org/papers/v15/archer14a.html},
+  abstract      = {We consider the problem of estimating Shannon's entropy $H$ from discrete data, in cases where the number of possible symbols is unknown or even countably infinite. The {Pitman-Yor} process, a generalization of Dirichlet process, provides a tractable prior distribution over the space of countably infinite discrete distributions, and has found major applications in Bayesian non-parametric statistics and machine learning. Here we show that it also provides a natural family of priors for Bayesian entropy estimation, due to the fact that moments of the induced posterior distribution over $H$ can be computed analytically. We derive formulas for the posterior mean (Bayes' least squares estimate) and variance under Dirichlet and {Pitman-Yor} process priors. Moreover, we show that a fixed Dirichlet or {Pitman-Yor} process prior implies a narrow prior distribution over $H$, meaning the prior strongly determines the entropy estimate in the under-sampled regime. We derive a family of continuous mixing measures such that the resulting mixture of {Pitman-Yor} processes produces an approximately flat prior over $H$. We show that the resulting {Pitman-Yor} Mixture ({PYM}) entropy estimator is consistent for a large class of distributions. We explore the theoretical properties of the resulting estimator, and show that it performs well both in simulation and in application to real data.},
+  archiveprefix        = {arXiv},
   citeulike-article-id = {12071222},
-  citeulike-linkout-0 = {http://arxiv.org/abs/1302.0328},
-  citeulike-linkout-1 = {http://arxiv.org/pdf/1302.0328},
-  day = {2},
-  eprint = {1302.0328},
-  keywords = {bayesian, entropy-estimation, nonparametric-bayes, pitman-yor-process},
-  posted-at = {2013-02-25 03:18:15},
-  primaryclass = {cs.IT},
-  priority = {0},
-  url = {http://arxiv.org/abs/1302.0328}
+  citeulike-linkout-0  = {http://arxiv.org/abs/1302.0328},
+  day                  = {2},
+  eprint               = {1302.0328},
+  primaryclass         = {cs.IT},
 }
 
-@INPROCEEDINGS{Archer2013b,
-  author = {Evan Archer and Il Memming Park and Jonathan Pillow},
-  title = {Semi-parametric {Bayes}ian entropy estimation for binary spike trains},
+@INPROCEEDINGS{Yates2013b,
+  author = {Jacob Yates and Il Memming Park and Lawrence Cormack and Jonathan
+	Pillow and Alexander Huk},
+  title = {Precise characterization of dorsal stream neural activity during
+	decision making},
+  booktitle = {Society for Neuroscience},
+  year = {2013}
+}
+
+@INPROCEEDINGS{Yates2013a,
+  author = {Jacob Yates and Il Memming Park and Lawrence Cormack and Jonathan
+	Pillow and Alexander Huk},
+  title = {Precise characterization of multiple {LIP} neurons in relation to
+	stimulus and behavior},
   booktitle = {Computational and Systems Neuroscience (COSYNE)},
   year = {2013}
 }
 
-@ARTICLE{Archer2013c,
-  author = {Archer, Evan and Park, Il Memming and Pillow, Jonathan},
-  title = {{Bayes}ian and {Quasi-{Bayes}ian} Estimators for Mutual Information
-	from Discrete Data},
-  journal = {Entropy},
+@INPROCEEDINGS{Pillow2013a,
+  author = {Jonathan Pillow and Il Memming Park},
+  title = {Beyond Barlow: a {Bayes}ian theory of efficient neural coding},
+  booktitle = {Computational and Systems Neuroscience (COSYNE)},
+  year = {2013}
+}
+
+@Unpublished{Park2013g,
+  author               = {Park, Il Memming and Seth, Sohan and Van Vaerenbergh, Steven},
+  title                = {{Bayes}ian Extensions of Kernel Least Mean Squares},
+  month                = oct,
+  year                 = {2013},
+  abstract             = {The kernel least mean squares ({KLMS}) algorithm is a computationally
+	efficient nonlinear adaptive filtering method that "kernelizes" the
+	celebrated (linear) least mean squares algorithm. We demonstrate
+	that the least mean squares algorithm is closely related to the Kalman
+	filtering, and thus, the {KLMS} can be interpreted as an approximate
+	Bayesian filtering method. This allows us to systematically develop
+	extensions of the {KLMS} by modifying the underlying state-space
+	and observation models. The resulting extensions introduce many desirable
+	properties such as "forgetting", and the ability to learn from discrete
+	data, while retaining the computational simplicity and time complexity
+	of the original algorithm.},
+  archiveprefix        = {arXiv},
+  citeulike-article-id = {12732257},
+  citeulike-linkout-0  = {http://arxiv.org/abs/1310.5347},
+  citeulike-linkout-1  = {http://arxiv.org/pdf/1310.5347},
+  day                  = {20},
+  eprint               = {1310.5347},
+  journal              = {ArXiv e-prints},
+  keywords             = {adaptive-filter, bayesian, kernel-method, klms, online-algorithm, poisson-observation},
+  posted-at            = {2013-10-23 12:18:03},
+  primaryclass         = {st.ML},
+}
+
+@INPROCEEDINGS{Park2013f,
+  author = {Il Memming Park and Evan Archer and Nicholas Priebe and Jonathan
+	W. Pillow},
+  title = {Spectral methods for neural characterization using generalized quadratic
+	models},
+  booktitle = {Advances in Neural Information Processing Systems (NIPS)},
   year = {2013},
-  volume = {15},
-  pages = {1738--1755},
-  number = {5},
-  month = may,
-  abstract = {Mutual information ({MI}) quantifies the statistical dependency between
+  owner = {memming}
+}
+
+@INPROCEEDINGS{Park2013e,
+  author = {Il Memming Park and Evan Archer and Kenneth Latimer and Jonathan
+	W. Pillow},
+  title = {Universal models for binary spike patterns using centered {D}irichlet
+	processes},
+  booktitle = {Advances in Neural Information Processing Systems (NIPS)},
+  year = {2013},
+  owner = {memming}
+}
+
+@INPROCEEDINGS{Park2013c,
+  author = {Il Memming Park and Evan Archer and Jonathan Pillow},
+  title = {{B}ayesian entropy estimators for spike trains},
+  booktitle = {Computational Neuroscience (CNS)},
+  year = {2013}
+}
+
+@INPROCEEDINGS{Park2013b,
+  author = {Il Memming Park and Evan Archer and Nicholas Priebe and Jonathan
+	Pillow},
+  title = {Got a moment or two? {N}eural models and linear dimensionality reduction},
+  booktitle = {Computational and Systems Neuroscience (COSYNE)},
+  year = {2013}
+}
+
+@ARTICLE{Park2013a,
+  author = {Park, Il Memming and Seth, Sohan and Paiva, Antonio R. C. and Li,
+	Lin and Principe, Jose C.},
+  title = {Kernel methods on spike train space for neuroscience: a tutorial},
+  journal = {IEEE Signal Processing Magazine},
+  year = {2013},
+  volume = {30},
+  pages = {149--160},
+  number = {4},
+  month = jul,
+  abstract = {Over the last decade several positive definite kernels have been proposed
+	to treat spike trains as objects in Hilbert space. However, for the
+	most part, such attempts still remain a mere curiosity for both computational
+	neuroscientists and signal processing experts. This tutorial illustrates
+	why kernel methods can, and have already started to, change the way
+	spike trains are analyzed and processed. The presentation incorporates
+	simple mathematical analogies and convincing practical examples in
+	an attempt to show the yet unexplored potential of positive definite
+	functions to quantify point processes. It also provides a detailed
+	overview of the current state of the art and future challenges with
+	the hope of engaging the readers in active participation.},
+  day = {24},
+  doi = {10.1109/msp.2013.2251072},
+  eprint = {1302.5964},
+  issn = {1053-5888}
+}
+
+@INBOOK{Paiva2011,
+  title = {Instantaneous cross-correlation analysis of neural ensembles with
+	high temporal resolution},
+  publisher = {Wiley},
+  year = {2013},
+  editor = {Dario Farina and Winnie Jensen and Metin Akay},
+  author = {Ant\'onio R. C. Paiva and Il Park and Jos\'e C. Pr\'incipe and Justin
+	Sanchez},
+  booktitle = {Neural engineering applied to neurorehabilitation}
+}
+
+@INPROCEEDINGS{Archer2013d,
+  author = {Evan Archer and Il Memming Park and Jonathan W. Pillow},
+  title = {{Bayes}ian entropy estimation for binary spike train data using parametric
+	prior knowledge},
+  booktitle = {Advances in Neural Information Processing Systems (NIPS)},
+  year = {2013},
+  owner = {memming}
+}
+
+@Article{Archer2013c,
+  author               = {Archer, Evan and Park, Il Memming and Pillow, Jonathan},
+  title                = {{Bayes}ian and Quasi-{Bayes}ian Estimators for Mutual Information from Discrete Data},
+  journal              = {Entropy},
+  year                 = {2013},
+  volume               = {15},
+  number               = {5},
+  pages                = {1738--1755},
+  month                = may,
+  abstract             = {Mutual information ({MI}) quantifies the statistical dependency between
 	a pair of random variables, and plays a central role in the analysis
 	of engineering and biological systems. Estimation of {MI} is difficult
 	due to its dependence on an entire joint distribution, which is difficult
 	to estimate from samples. Here we discuss several regularized estimators
 	for {MI} that employ priors based on the Dirichlet distribution.
-	First, we discuss three ” {quasi-Bayesian}” estimators that result
+	First, we discuss three {quasi-Bayesian} estimators that result
 	from linear combinations of Bayesian estimates for conditional and
 	marginal entropies. We show that these estimators are not in fact
 	Bayesian, and do not arise from a well-defined posterior distribution
@@ -132,154 +434,77 @@
 	outperform our Bayesian estimator. We discuss outstanding challenges
 	for {MI} estimation and suggest promising avenues for future research.},
   citeulike-article-id = {12335521},
-  citeulike-linkout-0 = {http://dx.doi.org/10.3390/e15051738},
-  citeulike-linkout-1 = {http://www.mdpi.com/1099-4300/15/5/1738},
-  citeulike-linkout-2 = {http://www.mdpi.com/1099-4300/15/5/1738/pdf},
-  day = {10},
-  doi = {10.3390/e15051738},
-  keywords = {bayesian, entropy-estimation, estimation, information-theory, mutual-information},
-  posted-at = {2013-05-10 23:03:57},
-  priority = {0}
+  citeulike-linkout-0  = {http://dx.doi.org/10.3390/e15051738},
+  citeulike-linkout-1  = {http://www.mdpi.com/1099-4300/15/5/1738},
+  citeulike-linkout-2  = {http://www.mdpi.com/1099-4300/15/5/1738/pdf},
+  day                  = {10},
+  doi                  = {10.3390/e15051738},
+  keywords             = {bayesian, entropy-estimation, estimation, information-theory, mutual-information},
+  posted-at            = {2013-05-10 23:03:57},
 }
 
-@INPROCEEDINGS{Archer2012a,
+@INPROCEEDINGS{Archer2013b,
   author = {Evan Archer and Il Memming Park and Jonathan Pillow},
-  title = {{Bayes}ian entropy estimation for infinite neural alphabets},
+  title = {Semi-parametric {Bayes}ian entropy estimation for binary spike trains},
+  booktitle = {Computational and Systems Neuroscience (COSYNE)},
+  year = {2013}
+}
+
+@INPROCEEDINGS{Park2012e,
+  author = {Il Memming Park and Miriam L. R. Meister and Alexander C. Huk and
+	Jonathan W. Pillow},
+  title = {Deciphering the code for sensorimotor decision-making at the level
+	of single neurons in parietal cortex},
+  booktitle = {Society for Neuroscience},
+  year = {2012},
+  note = {(oral presentation)},
+  owner = {memming}
+}
+
+@Unpublished{Park2012c,
+  author        = {Il Memming Park and Marcel Nassar and Mijung Park},
+  title         = {Active {Bayes}ian Optimization: Minimizing Minimizer Entropy},
+  month         = feb,
+  year          = {2012},
+  abstract      = {The ultimate goal of optimization is to find the minimizer of a target
+	{function.However}, typical criteria for active optimization often
+	ignore the uncertainty about the minimizer. We propose a novel criterion
+	for global optimization and an associated sequential active learning
+	strategy using Gaussian {processes.Our} criterion is the reduction
+	of uncertainty in the posterior distribution of the function minimizer.
+	It can also flexibly incorporate multiple global minimizers. We implement
+	a tractable approximation of the criterion and demonstrate that it
+	obtains the global minimizer accurately compared to conventional
+	Bayesian optimization criteria.},
+  adsnote       = {Provided by the SAO/NASA Astrophysics Data System},
+  adsurl        = {http://adsabs.harvard.edu/abs/2012arXiv1202.2143M},
+  archiveprefix = {arXiv},
+  eprint        = {1202.2143},
+  journal       = {ArXiv e-prints},
+  keywords      = {Statistics - Methodology, Computer Science - Learning, Statistics - Machine Learning},
+  primaryclass  = {stat.ME},
+}
+
+@INPROCEEDINGS{Park2012b,
+  author = {Il Memming Park and Jonathan Pillow},
+  title = {{Bayes}ian spike-triggered covariance and the elliptical {LNP} model},
   booktitle = {Computational and Systems Neuroscience (COSYNE)},
   year = {2012},
   owner = {memming}
 }
 
-@INPROCEEDINGS{Archer2013d,
-  author = {Evan Archer and Il Memming Park and Jonathan W. Pillow},
-  title = {{Bayes}ian entropy estimation for binary spike train data using parametric
-	prior knowledge},
-  booktitle = {Advances in Neural Information Processing Systems (NIPS)},
-  year = {2013},
-  owner = {memming}
-}
-
-@INPROCEEDINGS{Archer2012b,
-  author = {Evan Archer and Il Memming Park and Jonathan W. Pillow},
-  title = {{Bayes}ian estimation of discrete entropy with mixtures of stick
-	breaking priors},
-  booktitle = {Advances in Neural Information Processing Systems (NIPS)},
+@ARTICLE{Park2012a,
+  author = {Il Memming Park and Sohan Seth and Murali Rao and Jos\'e C. Pr\'incipe},
+  title = {Strictly positive definite spike train kernels for point process
+	divergences},
+  journal = {Neural Computation},
   year = {2012},
-  owner = {memming}
-}
-
-@ARTICLE{Bobkov2012a,
-  author = {Yuriy Bobkov and Il Park and Kirill Ukhanov and Jos\'e C. Pr\'incipe
-	and Barry W. Ache},
-  title = {Cellular basis for response diversity in the olfactory periphery},
-  journal = {PLoS One},
-  year = {2012},
-  volume = {7},
-  pages = {e34843+},
-  number = {4},
-  month = apr,
-  abstract = {An emerging idea in olfaction is that temporal coding of odor specificity
-	can be intrinsic to the primary olfactory receptor neurons ({ORNs}).
-	As a first step towards understanding whether lobster {ORNs} are
-	capable of generating odor-specific temporal activity and what mechanisms
-	underlie any such heterogeneity in discharge pattern, we characterized
-	different patterns of activity in lobster {ORNs} individually and
-	ensemble using patch-clamp recording and calcium imaging. We demonstrate
-	that lobster {ORNs} show tonic excitation, tonic inhibition, phaso-tonic
-	excitation, and bursting, and that these patterns are faithfully
-	reflected in the calcium signal. We then demonstrate that the various
-	dynamic patterns of response are inherent in the cells, and that
-	this inherent heterogeneity is largely determined by heterogeneity
-	in the underlying intrinsic conductances.},
-  day = {13},
-  doi = {10.1371/journal.pone.0034843}
-}
-
-@INPROCEEDINGS{Bobkov2009a,
-  author = {Yuriy Bobkov and Il Park and Kirill Ukhanov and Jos\'e C. Pr\'incipe
-	and Barry W. Ache},
-  title = {Population coding within an ensemble of rhythmically active primary
-	olfactory receptor},
-  booktitle = {Society for Neuroscience},
-  year = {2009},
+  volume = {24},
+  month = aug,
+  issue = {8},
+  doi = {10.1162/NECO_a_00309},
   owner = {memming},
-  timestamp = {2010.01.15}
-}
-
-@INPROCEEDINGS{Bobkov2010a,
-  author = {Yuriy Bobkov and Kirill Ukhanov and Il Park and Jos\'e C. Pr\'incipe
-	and Barry Ache},
-  title = {Measuring Ensemble Activity in Lobster {ORN}s through Calcium Imaging},
-  booktitle = {AChemS},
-  year = {2010},
-  abstract = {Lobster ORNs can be imaged in the olfactory organ in situ, thereby
-	maintaining the normal polarity of the cells and the ionic environment
-	of the olfactory cilia. The preparation gives simultaneous access
-	to hundreds of ORNs that are viable for hours, thereby allowing rigorous
-	characterization of their steadystate and dynamic properties. Odorants
-	change the level of cytoplasmic Ca2+ in a dose-dependent manner in
-	ORNs loaded with Ca2+-sensitive indicator either through bath application
-	or via a patch electrode. The kinetics and amplitude of the odorantevoked
-	Ca2+ signal correlate with the excitatory inward current, the degree
-	of membrane depolarization, and the number of evoked action potentials,
-	thereby establishing the physiological relevance of the Ca2+ signal.
-	Spontaneous periodic Ca2+ transients in many ORNs correlate with
-	spontaneous bursts of action potentials measured in single cells
-	in the same cluster. We are using signal processing algorithms to
-	analyze the level of correlated activity between these ORNs and the
-	extent to which periodic calcium oscillations in different ORNs are
-	synchronized by common intermittent excitatory input to test the
-	predictions of our computational model for ensemble burst coding
-	in these cells and the potential relevance of bursting input to olfactory
-	scene analysis.},
-  owner = {memming},
-  timestamp = {2010.07.15}
-}
-
-@INPROCEEDINGS{Brockmeier2010a,
-  author = {Austin J. Brockmeier and Il Park and Babak Mahmoudi and Justin C.
-	Sanchez and Jos\'e C. Pr\'incipe},
-  title = {Spatio-Temporal Clustering of Firing Rates for Neural State Estimation},
-  booktitle = {Annual International Conference of the IEEE Engineering in Medicine
-	and Biology Society (EMBS)},
-  year = {2010},
-  owner = {memming},
-  timestamp = {2010.06.29}
-}
-
-@INPROCEEDINGS{Dikecligil2016,
-  author = {Gulce Nazli Dikecligil and Dustin Graham and Il Memming Park and
-	Alfredo Fontanini},
-  title = {Layer Specific Sensorimotor Activity in the Gustatory Cortex of Licking
-	Mice},
-  booktitle = {Society for Neuroscience},
-  year = {2016},
-  owner = {memming}
-}
-
-@ARTICLE{Dockendorf2008,
-  author = {Karl Dockendorf and Il Park and Ping He and Jos\'e C. Pr\'incipe
-	and Thomas B. DeMarse},
-  title = {Liquid State Machines and Cultured Cortical Networks: The Separation
-	Property},
-  journal = {Biosystems},
-  year = {2009},
-  volume = {95},
-  pages = {90--97},
-  number = {2},
-  month = feb,
-  doi = {10.1016/j.biosystems.2008.08.001},
-  owner = {memming},
-  timestamp = {2008.04.15}
-}
-
-@INPROCEEDINGS{Huk2014a,
-  author = {Alexander Huk and Jacob Yates and Leor Katz and Il Memming Park and
-	Jonathan Pillow},
-  title = {Dissociated functional significance of choice-related activity across
-	the primate dorsal stream},
-  booktitle = {Computational and Systems Neuroscience (COSYNE)},
-  year = {2014}
+  timestamp = {2010.02.20}
 }
 
 @INPROCEEDINGS{Li2012b,
@@ -290,44 +515,6 @@
 	Biology Society (EMBC)},
   year = {2012},
   pages = {1331--1334}
-}
-
-@ARTICLE{Li2011a,
-  author = {Lin Li and Il Park and Sohan Seth and Justin C. Sanchez and Jos\'e
-	C. Pr\'incipe},
-  title = {Functional Connectivity Dynamics Among Cortical Neurons: A Dependence
-	Analysis},
-  journal = {IEEE Transactions on Neural Systems and Rehabilitation Engineering},
-  year = {2012},
-  volume = {20},
-  pages = {18--30},
-  number = {1},
-  month = jan,
-  doi = {10.1109/TNSRE.2011.2176749},
-  issn = {1534-4320},
-  keywords = {behavior task;cortical neurons;cross correlation;dependence analysis;firing
-	rates;food reaching task;functional connectivity dynamics;mean square
-	contingency;monkey cortex;movement states;mutual information;neural
-	assembly functional connectivity;neural ensemble recordings;pairwise
-	functional connectivity;phase synchronization;phase-based metrics;robust
-	estimators;statistical analysis;temporal resolutions;time 100 ms
-	to 1000 ms;bioelectric potentials;biomechanics;brain;correlation
-	methods;estimation theory;medical signal processing;neurophysiology;statistical
-	analysis;synchronisation;},
-  owner = {memmingpark},
-  timestamp = {2010.12.30}
-}
-
-@INPROCEEDINGS{Li2010a,
-  author = {Lin Li and Il Park and Sohan Seth and Justin C. Sanchez and Jos\'e
-	C. Pr\'incipe},
-  title = {Neuronal Functional Connectivity Dynamics in Cortex: An {MSC}-based
-	Analysis},
-  booktitle = {Annual International Conference of the IEEE Engineering in Medicine
-	and Biology Society (EMBS)},
-  year = {2010},
-  owner = {memming},
-  timestamp = {2010.06.29}
 }
 
 @ARTICLE{Li2012a,
@@ -362,73 +549,196 @@
 	representations}
 }
 
+@ARTICLE{Li2011a,
+  author = {Lin Li and Il Park and Sohan Seth and Justin C. Sanchez and Jos\'e
+	C. Pr\'incipe},
+  title = {Functional Connectivity Dynamics Among Cortical Neurons: A Dependence
+	Analysis},
+  journal = {IEEE Transactions on Neural Systems and Rehabilitation Engineering},
+  year = {2012},
+  volume = {20},
+  pages = {18--30},
+  number = {1},
+  month = jan,
+  doi = {10.1109/TNSRE.2011.2176749},
+  issn = {1534-4320},
+  keywords = {behavior task;cortical neurons;cross correlation;dependence analysis;firing
+	rates;food reaching task;functional connectivity dynamics;mean square
+	contingency;monkey cortex;movement states;mutual information;neural
+	assembly functional connectivity;neural ensemble recordings;pairwise
+	functional connectivity;phase synchronization;phase-based metrics;robust
+	estimators;statistical analysis;temporal resolutions;time 100 ms
+	to 1000 ms;bioelectric potentials;biomechanics;brain;correlation
+	methods;estimation theory;medical signal processing;neurophysiology;statistical
+	analysis;synchronisation;},
+  owner = {memmingpark},
+  timestamp = {2010.12.30}
+}
+
+@ARTICLE{Bobkov2012a,
+  author = {Yuriy Bobkov and Il Park and Kirill Ukhanov and Jos\'e C. Pr\'incipe
+	and Barry W. Ache},
+  title = {Cellular basis for response diversity in the olfactory periphery},
+  journal = {PLoS One},
+  year = {2012},
+  volume = {7},
+  pages = {e34843+},
+  number = {4},
+  month = apr,
+  abstract = {An emerging idea in olfaction is that temporal coding of odor specificity
+	can be intrinsic to the primary olfactory receptor neurons ({ORNs}).
+	As a first step towards understanding whether lobster {ORNs} are
+	capable of generating odor-specific temporal activity and what mechanisms
+	underlie any such heterogeneity in discharge pattern, we characterized
+	different patterns of activity in lobster {ORNs} individually and
+	ensemble using patch-clamp recording and calcium imaging. We demonstrate
+	that lobster {ORNs} show tonic excitation, tonic inhibition, phaso-tonic
+	excitation, and bursting, and that these patterns are faithfully
+	reflected in the calcium signal. We then demonstrate that the various
+	dynamic patterns of response are inherent in the cells, and that
+	this inherent heterogeneity is largely determined by heterogeneity
+	in the underlying intrinsic conductances.},
+  day = {13},
+  doi = {10.1371/journal.pone.0034843}
+}
+
+@INPROCEEDINGS{Archer2012b,
+  author = {Evan Archer and Il Memming Park and Jonathan W. Pillow},
+  title = {{Bayes}ian estimation of discrete entropy with mixtures of stick
+	breaking priors},
+  booktitle = {Advances in Neural Information Processing Systems (NIPS)},
+  year = {2012},
+  owner = {memming}
+}
+
+@InProceedings{Archer2012a,
+  author    = {Evan Archer and Il Memming Park and Jonathan Pillow},
+  title     = {{Bayes}ian entropy estimation for infinite neural alphabets},
+  booktitle = {Computational and Systems Neuroscience (COSYNE)},
+  year      = {2012},
+  owner     = {memming},
+}
+
+@ARTICLE{Seth2011a,
+  author = {Sohan Seth and Murali Rao and Il Park and Jos\'e C. Pr\'incipe},
+  title = {A Unified Framework for Quadratic Measures of Independence},
+  journal = {IEEE Transactions on Signal Processing},
+  year = {2011},
+  volume = {59},
+  pages = {3624--3635},
+  month = aug,
+  issue = {8},
+  doi = {10.1109/TSP.2011.2153197},
+  owner = {memming},
+  timestamp = {2010.07.27}
+}
+
+
+@INPROCEEDINGS{Park2011d,
+  author = {Park, Il and Seth, Sohan and Rao, Murali. and Principe, Jos\'e C.},
+  title = {Estimation of symmetric chi-square divergence for point processes},
+  booktitle = {IEEE International Conference on Acoustics, Speech, and Signal Processing
+	(ICASSP)},
+  year = {2011},
+  pages = {2016--2019},
+  month = may,
+  publisher = {IEEE},
+  citeulike-article-id = {11334584},
+  citeulike-linkout-0 = {http://dx.doi.org/10.1109/ICASSP.2011.5946907},
+  citeulike-linkout-1 = {http://ieeexplore.ieee.org/xpls/abs\_all.jsp?arnumber=5946907},
+  doi = {10.1109/ICASSP.2011.5946907},
+  institution = {Dept. of Biomed. Eng., Univ. of Florida, Gainesville, FL, USA},
+  isbn = {978-1-4577-0538-0},
+  issn = {1520-6149},
+  keywords = {divergence, hypothesis-test, point-process},
+  posted-at = {2012-09-27 14:09:53},
+  priority = {2}
+}
+
+@INPROCEEDINGS{Park2011c,
+  author = {Il Memming Park and Jonathan W. Pillow},
+  title = {{Bayes}ian Spike Triggered Covariance Analysis},
+  booktitle = {Advances in Neural Information Processing Systems (NIPS)},
+  year = {2011},
+  owner = {memming},
+  timestamp = {2011.10.24}
+}
+
+@CONFERENCE{Park2011b,
+  author = {Il Memming Park and Sohan Seth and Jos\'e C. Pr\'incipe},
+  title = {Spike Train Kernel Methods for Neuroscience},
+  booktitle = {Joint Statistical Meeting},
+  year = {2011},
+  abstract = {Positive definite kernels has been widely used in the context of machine
+	learning by the, so called, kernel machines such as the support vector
+	machine and the kernel principal component analysis. An attractive
+	property of a kernel machine is that it can be applied to arbitrary
+	spaces as long as appropriate kernel is provided. We have developed
+	spike train kernels and analyzed their properties in the context
+	of two-sample problem, probability embedding as well as regression
+	and classification. We discuss strictly positive definite kernels
+	that provide theoretical foundation for its power.},
+  owner = {memming},
+  timestamp = {2011.07.14}
+}
+
+@INPROCEEDINGS{Park2011a,
+  author = {Il Memming Park and Miriam Meister and Alexander Huk and Jonathan
+	W Pillow},
+  title = {Detailed encoding and decoding of choice-related information from
+	{LIP} spike trains},
+  booktitle = {Frontiers in Systems Neuroscience. Conference Abstract: Computational
+	and Systems Neuroscience (COSYNE)},
+  year = {2011},
+  owner = {memming}
+}
+
 @CONFERENCE{Li2011b,
   author = {Lin Li and Il Memming Park and Sohan Seth and John Choi and Joseph
 	T. Francis and Justin C. Sanchez and Jos\'e C. Pr\'incipe},
   title = {An adaptive decoder from spike trains to micro-stimulation using
 	kernel least-mean-square ({KLMS}) algorithm},
-  booktitle = {IEEE International Workshop on Machine Learning for Signal Processing
-	(MLSP)},
+  booktitle = {IEEE International Workshop on Machine Learning for Signal Processing (MLSP)},
+  doi = {10.1109/MLSP.2011.6064603},
   year = {2011}
 }
 
-@CONFERENCE{Li2009,
-  author = {Lin Li and Sohan Seth and Il Park and Justin C. Sanchez and Jos\'e
-	C. Pr\'incipe},
-  title = {Estimation and Visualization of Neuronal Functional Connectivity
-	in Motor Tasks},
-  booktitle = {Annual International Conference of the IEEE Engineering in Medicine
-	and Biology Society (EMBS)},
-  year = {2009},
-  abstract = {In brain-machine interface (BMI) modeling, the firing patterns of
-	hundreds of neurons are used to reconstruct a variety of kinematic
-	variables. The large number of neurons produces an explosion in the
-	number of free parameters, which affects model generalization. This
-	paper proposes a model-free measure of pairwise neural dependence
-	to rank the importance of neurons in neural to motor mapping. Compared
-	to a model-dependent approach such as sensitivity analysis, sixty
-	percent of the neurons with the strongest dependence coincide with
-	the top 10 most sensitive neurons trained through the model. Using
-	this data-driven approach that operates on the input data alone,
-	it is possible to perform neuron selection in a more efficient way
-	that is not subject to assumptions about decoding models. To further
-	understand the functional dependencies that influence neural to motor
-	mapping, we use an open source available graph visualization toolkit
-	called Prefuse to visualize the neural dependency graph and quantify
-	the functional connectivity in motor cortex. This tool when adapted
-	to the analysis of neuronal recordings has the potential to easily
-	display the relationships in data of large dimension.},
-  doi = {10.1109/IEMBS.2009.5333991},
+@INPROCEEDINGS{Seth2010a,
+  author = {Sohan Seth and Il Park and Austin J. Brockmeier and Mulugeta Semework
+	and John Choi and Joe Francis and Jos\'e C. Pr\'incipe},
+  title = {A novel family of non-parametric cumulative based divergences for
+	point processes},
+  booktitle = {Advances in Neural Information Processing Systems (NIPS)},
+  year = {2010},
+  pages = {2119--2127},
+  owner = {memming},
+  timestamp = {2010.02.18}
+}
+
+@BOOK{Principe2010,
+  title = {Information Theoretic Learning},
+  publisher = {Springer},
+  year = {2010},
+  author = {Jos\'e C. Pr\'incipe},
+  isbn = {1441915699},
+  url = {http://www.springer.com/us/book/9781441915696},
+  owner = {memming},
+  timestamp = {2009.05.19}
+}
+
+@INPROCEEDINGS{Park2010b,
+  author = {Il Park and Jos\'e C. Pr\'incipe},
+  title = {Quantification of Inter-trial Non-stationarity in Spike Trains from
+	Periodically Stimulated Neural Cultures},
+  booktitle = {IEEE International Conference on Acoustics, Speech, and Signal Processing
+	(ICASSP)},
+  year = {2010},
+  pages = {5442--5445},
+  note = {Special session on Multivariate Analysis of Brain Signals: Methods
+	and Applications},
+  doi = {10.1109/ICASSP.2010.5494920},
   owner = {memming},
   timestamp = {2009.12.15}
-}
-
-@ARTICLE{Liu2009b,
-  author = {Weifeng Liu and Il Park and Jos\'e C. Pr\'incipe},
-  title = {An Information Theoretic Approach of Designing Sparse Kernel Adaptive
-	Filters},
-  journal = {IEEE Transactions on Neural Network},
-  year = {2009},
-  volume = {20},
-  pages = {1950--1961},
-  number = {12},
-  month = dec,
-  doi = {10.1109/TNN.2009.2033676},
-  owner = {memming},
-  timestamp = {2009.03.22}
-}
-
-@ARTICLE{Liu2009a,
-  author = {Weifeng Liu and Il Park and Yiwen Wang and Jos\'e C. Pr\'incipe},
-  title = {Extended Kernel Recursive Least Squares Algorithm},
-  journal = {IEEE Transactions on Signal Processing},
-  year = {2009},
-  volume = {57},
-  pages = {3801--3814},
-  number = {10},
-  month = oct,
-  owner = {memming},
-  timestamp = {2009.03.22}
 }
 
 @PHDTHESIS{Park2010a,
@@ -477,37 +787,6 @@
   timestamp = {2010.05.24}
 }
 
-@INPROCEEDINGS{Paiva2007b,
-  author = {Ant\'onio R. C. Paiva and Il Park and Jos{\'e} C. Pr{\'{\i}}ncipe},
-  title = {Innovating Signal Processing for Spike Train Data},
-  booktitle = {International Conference of the IEEE Engineering in Medicine and
-	Biology Society (EMBC)},
-  year = {2007},
-  address = {Lyon, France},
-  owner = {memming},
-  timestamp = {2009.12.15}
-}
-
-@INPROCEEDINGS{Paiva2008e,
-  author = {Ant\'onio R. C. Paiva and Il Park and Jos{\'e} C. Pr{\'i}ncipe},
-  title = {Reproducing Kernel {H}ilbert Spaces for Spike Train Analysis},
-  booktitle = {Conference on Computational Neuroscience},
-  year = {2008},
-  owner = {memming},
-  timestamp = {2010.01.20}
-}
-
-@INBOOK{Paiva2010a,
-  title = {Optimization in Reproducing Kernel {H}ilbert Spaces of Spike Trains},
-  publisher = {Springer},
-  year = {(in press)},
-  editor = {W. Art Chaovalitwongse and Panos Pardalos and Petros Xanthopoulos,},
-  author = {Ant\'onio R. C. Paiva and Il Park and Jos\'e C. Pr\'incipe},
-  booktitle = {Computational Neuroscience},
-  owner = {memming},
-  timestamp = {2010.01.15}
-}
-
 @INBOOK{Paiva2010b,
   title = {Inner Products for Representation and Learning in the Spike Train
 	Domain},
@@ -521,7 +800,7 @@
   timestamp = {2010.01.15}
 }
 
-@ARTICLE{Paiva2008d,
+ARTICLE{Paiva2008d,
   author = {Ant\'onio R. C. Paiva and Il Park and Jos\'e C. Pr\'incipe},
   title = {Optimization in Reproducing Kernel {H}ilbert Spaces of Spike Trains},
   journal = {(book chapter in press)},
@@ -542,512 +821,27 @@
   timestamp = {2009.12.15}
 }
 
-@ARTICLE{Paiva2008b,
-  author = {Ant\'onio R. C. Paiva and Il Park and Jos\'e C. Pr\'incipe},
-  title = {A Reproducing Kernel {H}ilbert Space framework for Spike Trains},
-  journal = {Neural Computation},
-  year = {2009},
-  volume = {21},
-  pages = {424--449},
-  number = {2},
-  month = feb,
-  doi = {10.1162/neco.2008.09-07-614},
-  owner = {memming},
-  timestamp = {2008.10.08}
-}
-
-@INPROCEEDINGS{Paiva2008a,
-  author = {Ant\'onio R. C. Paiva and Il Park and Jos\'e C. Pr\'incipe},
-  title = {Reproducing Kernel {H}ilbert Spaces for Spike Train Analysis},
-  booktitle = {IEEE International Conference on Acoustics, Speech, and Signal Processing
-	(ICASSP)},
-  year = {2008},
-  doi = {10.1109/ICASSP.2008.4518834},
-  owner = {memming},
-  timestamp = {2008.04.15}
-}
-
-@INBOOK{Paiva2011,
-  title = {Instantaneous cross-correlation analysis of neural ensembles with
-	high temporal resolution},
-  publisher = {Wiley},
-  year = {2013},
-  editor = {Dario Farina and Winnie Jensen and Metin Akay},
-  author = {Ant\'onio R. C. Paiva and Il Park and Jos\'e C. Pr\'incipe and Justin
-	Sanchez},
-  booktitle = {Neural engineering applied to neurorehabilitation}
-}
-
-@ARTICLE{Paiva2008c,
-  author = {Ant\'onio R. C. Paiva and Il Park and Justin Sanchez and Jos\'e C.
-	Pr\'incipe},
-  title = {Peri-event Cross-Correlation over Time for Analysis of Interactions
-	in Neuronal Firing},
-  journal = {International Conference of the IEEE Engineering in Medicine and
-	Biology Society (EMBC)},
-  year = {2008},
-  owner = {memming},
-  timestamp = {2008.10.08}
-}
-
-@INPROCEEDINGS{Paiva2007a,
-  author = {Ant\'onio R. C. Paiva and Sudhir Rao and Il Park and Jos{\'e} C.
-	Pr{\'{\i}}ncipe},
-  title = {Spectral Clustering of Synchronous Spike Trains},
-  booktitle = {IEEE International Joint Conference on Neural Networks (IJCNN)},
-  year = {2007},
-  address = {Orlando, FL, USA},
-  month = aug,
-  file = {2007c.pdf:2007c.pdf:PDF},
-  owner = {memming},
-  timestamp = {2008.04.15}
-}
-
-@MASTERSTHESIS{ParkMSThesis2007,
-  author = {Park, Il},
-  title = {CONTINUOUS TIME CORRELATION ANALYSIS TECHNIQUES FOR SPIKE TRAINS},
-  school = {University of Florida},
-  year = {2007},
-  owner = {memming},
-  timestamp = {2009.04.24}
-}
-
-@INPROCEEDINGS{Park2009b,
-  author = {Il Park and Yuriy Bobkov and Kirill Ukhanov and Barry W. Ache and
-	Jos\'e C. Pr\'incipe},
-  title = {Input Driven Synchrony of Oscillating Olfactory Receptor Neurons:
-	A Computational Modeling Study},
-  booktitle = {AChemS},
-  year = {2009},
-  owner = {memming},
-  timestamp = {2010.01.15}
-}
-
-@ARTICLE{Park2008a,
-  author = {Il Park and Ant\'onio R. C. Paiva and Thomas B. DeMarse and Jos\'e
+@INPROCEEDINGS{Li2010a,
+  author = {Lin Li and Il Park and Sohan Seth and Justin C. Sanchez and Jos\'e
 	C. Pr\'incipe},
-  title = {An efficient algorithm for continuous-time cross correlogram of spike
-	trains},
-  journal = {Journal of Neuroscience Methods},
-  year = {2008},
-  volume = {168},
-  pages = {514--523},
-  number = {2},
-  month = mar,
-  abstract = {We propose an efficient algorithm to compute the smoothed correlogram
-	for the detection of temporal relationship between two spike trains.
-	Unlike the conventional histogram-based correlogram estimations,
-	the proposed algorithm operates on continuous time and does not bin
-	either the spike train nor the correlogram. Hence it can be more
-	precise in detecting the effective delay between two recording sites.
-	Moreover, it can take advantage of the higher temporal resolution
-	of the spike times provided by the current recording methods. The
-	Laplacian kernel for smoothing enables efficient computation of the
-	algorithm. We also provide the basic statistics of the estimator
-	and a guideline for choosing the kernel size. This new technique
-	is demonstrated by estimating the effective delays in a neuronal
-	network from synthetic data and recordings of dissociated cortical
-	tissue.},
-  doi = {10.1016/j.jneumeth.2007.10.005},
-  owner = {memming},
-  timestamp = {2007.10.21}
-}
-
-@INPROCEEDINGS{Park2007,
-  author = {Il Park and Ant\'onio R. C. Paiva and Thomas B. DeMarse and Jose
-	C. Pr\'incipe and John Harris},
-  title = {A Closed Form Solution for Multiple-Input Spike Based Adaptive Filters},
-  booktitle = {IEEE International Joint Conference on Neural Networks (IJCNN)},
-  year = {2007},
-  owner = {memming},
-  timestamp = {2008.04.15}
-}
-
-@INPROCEEDINGS{Park2007b,
-  author = {Il Park and Ant\'onio R. C. Paiva and Jos\'e C. Pr\'incipe and Thomas
-	B. DeMarse},
-  title = {An Efficient Computation of Continuous-time Correlogram of Spike
-	Trains},
-  booktitle = {Frontiers in Systems Neuroscience. Conference Abstract: Computational
-	and Systems Neuroscience (COSYNE)},
-  year = {2007},
-  owner = {memming},
-  timestamp = {2010.01.20}
-}
-
-@INPROCEEDINGS{Park2005,
-  author = {Il Park and Jong C. Park},
-  title = {Modeling Causality in Biological Pathways for Logical Identification
-	of Drug Targets},
-  booktitle = {Bioinfo, Busan, Korea},
-  year = {2005},
-  month = sep,
-  owner = {memming},
-  timestamp = {2008.04.15}
-}
-
-@CONFERENCE{Park2010b,
-  author = {Il Park and Jos\'e C. Pr\'incipe},
-  title = {Quantification of Inter-trial Non-stationarity in Spike Trains from
-	Periodically Stimulated Neural Cultures},
-  booktitle = {IEEE International Conference on Acoustics, Speech, and Signal Processing
-	(ICASSP)},
+  title = {Neuronal Functional Connectivity Dynamics in Cortex: An {MSC}-based
+	Analysis},
+  booktitle = {Annual International Conference of the IEEE Engineering in Medicine
+	and Biology Society (EMBS)},
   year = {2010},
-  pages = {5442--5445},
-  note = {Special session on Multivariate Analysis of Brain Signals: Methods
-	and Applications},
-  doi = {10.1109/ICASSP.2010.5494920},
   owner = {memming},
-  timestamp = {2009.12.15}
+  timestamp = {2010.06.29}
 }
 
-@INPROCEEDINGS{Park2009c,
-  author = {Il Park and Jos\'e C. Pr\'incipe},
-  title = {Significance test for spike trains based on finite point process
-	estimation},
-  booktitle = {Society for Neuroscience},
-  year = {2009},
-  owner = {memming},
-  timestamp = {2010.01.15}
-}
-
-@INPROCEEDINGS{Park2008b,
-  author = {Il Park and Jos\'e C. Pr\'incipe},
-  title = {Correntropy based Granger causality},
-  booktitle = {IEEE International Conference on Acoustics, Speech, and Signal Processing
-	(ICASSP)},
-  year = {2008},
-  owner = {memming},
-  timestamp = {2009.03.06}
-}
-
-@INPROCEEDINGS{Park2009a,
-  author = {Il Park and Murali Rao and Thomas B. DeMarse and Jos\'e C. Pr\'incipe},
-  title = {Point Process Model for Precisely Timed Spike Trains.},
-  booktitle = {Frontiers in Systems Neuroscience. Conference Abstract: Computational
-	and Systems Neuroscience (COSYNE)},
-  year = {2009},
-  doi = {doi: 10.3389/conf.neuro.06.2009.03.227},
-  owner = {memming},
-  timestamp = {2009.03.06}
-}
-
-@INPROCEEDINGS{Park2011d,
-  author = {Park, Il and Seth, Sohan and Rao, Murali. and Principe, Jos\'e C.},
-  title = {Estimation of symmetric chi-square divergence for point processes},
-  booktitle = {IEEE International Conference on Acoustics, Speech, and Signal Processing
-	(ICASSP)},
-  year = {2011},
-  pages = {2016--2019},
-  month = may,
-  publisher = {IEEE},
-  citeulike-article-id = {11334584},
-  citeulike-linkout-0 = {http://dx.doi.org/10.1109/ICASSP.2011.5946907},
-  citeulike-linkout-1 = {http://ieeexplore.ieee.org/xpls/abs\_all.jsp?arnumber=5946907},
-  doi = {10.1109/ICASSP.2011.5946907},
-  institution = {Dept. of Biomed. Eng., Univ. of Florida, Gainesville, FL, USA},
-  isbn = {978-1-4577-0538-0},
-  issn = {1520-6149},
-  keywords = {divergence, hypothesis-test, point-process},
-  posted-at = {2012-09-27 14:09:53},
-  priority = {2}
-}
-
-@INPROCEEDINGS{Park2006,
-  author = {Il Park and Dongming Xu and Thomas B. DeMarse and Jos\'e C. Pr\'incipe},
-  title = {Modeling of Synchronized Burst in Dissociated Cortical Tissue: An
-	Exploration of Parameter Space},
-  booktitle = {IEEE International Joint Conference on Neural Networks (IJCNN)},
-  year = {2006},
-  doi = {10.1109/IJCNN.2006.246734},
-  owner = {memming},
-  timestamp = {2008.04.15}
-}
-
-@INPROCEEDINGS{Park2014b,
-  author = {Il Memming Park and Evan Archer and Kenneth Latimer and Jonathan
-	Pillow},
-  title = {Scalable nonparametric models for binary spike patterns},
-  booktitle = {Computational and Systems Neuroscience (COSYNE)},
-  year = {2014}
-}
-
-@INPROCEEDINGS{Park2013e,
-  author = {Il Memming Park and Evan Archer and Kenneth Latimer and Jonathan
-	W. Pillow},
-  title = {Universal models for binary spike patterns using centered {D}irichlet
-	processes},
-  booktitle = {Advances in Neural Information Processing Systems (NIPS)},
-  year = {2013},
-  owner = {memming}
-}
-
-@INPROCEEDINGS{Park2013c,
-  author = {Il Memming Park and Evan Archer and Jonathan Pillow},
-  title = {{B}ayesian entropy estimators for spike trains},
-  booktitle = {Computational Neuroscience (CNS)},
-  year = {2013}
-}
-
-@INPROCEEDINGS{Park2013b,
-  author = {Il Memming Park and Evan Archer and Nicholas Priebe and Jonathan
-	Pillow},
-  title = {Got a moment or two? {N}eural models and linear dimensionality reduction},
-  booktitle = {Computational and Systems Neuroscience (COSYNE)},
-  year = {2013}
-}
-
-@INPROCEEDINGS{Park2013f,
-  author = {Il Memming Park and Evan Archer and Nicholas Priebe and Jonathan
-	W. Pillow},
-  title = {Spectral methods for neural characterization using generalized quadratic
-	models},
-  booktitle = {Advances in Neural Information Processing Systems (NIPS)},
-  year = {2013},
-  owner = {memming}
-}
-
-@ARTICLE{Park2014a,
-  author = {Il Memming Park and Yuriy V. Bobkov and Barry W. Ache and Jos\'e
-	C. Pr\'incipe},
-  title = {Intermittency coding in the primary olfactory system: A neural substrate
-	for olfactory scene analysis},
-  journal = {The Journal of Neuroscience},
-  year = {2014},
-  volume = {34},
-  pages = {941--952},
-  number = {3},
-  month = jan,
-  abstract = {The spatial and temporal characteristics of the visual and acoustic
-	sensory input are indispensable attributes for animals to perform
-	scene analysis. In contrast, research in olfaction has focused almost
-	exclusively on how the nervous system analyzes the quality and quantity
-	of the sensory signal and largely ignored the spatiotemporal dimension
-	especially in longer time scales. Yet, detailed analyses of the turbulent,
-	intermittent structure of water- and air-borne odor plumes strongly
-	suggest that spatio-temporal information in longer time scales can
-	provide major cues for olfactory scene analysis for animals. We show
-	that a bursting subset of primary olfactory receptor neurons ({bORNs})
-	in lobster has the unexpected capacity to encode the temporal properties
-	of intermittent odor signals. Each {bORN} is tuned to a specific
-	range of stimulus intervals, and collectively {bORNs} can instantaneously
-	encode a wide spectrum of intermittencies. Our theory argues for
-	the existence of a novel peripheral mechanism for encoding the temporal
-	pattern of odor that potentially serves as a neural substrate for
-	olfactory scene analysis.},
-  day = {15},
-  doi = {10.1523/jneurosci.2204-13.2014},
-  issn = {1529-2401},
-  keywords = {neural-code, odor-plume, olfactory, uncoupled-oscillator},
-  publisher = {Society for Neuroscience}
-}
-
-@INPROCEEDINGS{Park2011a,
-  author = {Il Memming Park and Miriam Meister and Alexander Huk and Jonathan
-	W Pillow},
-  title = {Detailed encoding and decoding of choice-related information from
-	{LIP} spike trains},
-  booktitle = {Frontiers in Systems Neuroscience. Conference Abstract: Computational
-	and Systems Neuroscience (COSYNE)},
-  year = {2011},
-  owner = {memming}
-}
-
-@ARTICLE{Park2014d,
-  author = {Park, Il Memming and Meister, Miriam L. R. and Huk, Alexander C.
-	and Pillow, Jonathan W.},
-  title = {Encoding and decoding in parietal cortex during sensorimotor decision-making},
-  journal = {Nature Neuroscience},
-  year = {2014},
-  volume = {17},
-  pages = {1395--1403},
-  number = {10},
-  month = oct,
-  citeulike-article-id = {13342234},
-  citeulike-linkout-0 = {http://dx.doi.org/10.1038/nn.3800},
-  doi = {10.1038/nn.3800},
-  issn = {1097-6256},
-  keywords = {computational-neuroscience, decision-making, glm, lip, monkey, neural-code,
-	neural-decoding},
-  posted-at = {2014-08-31 22:37:11},
-  priority = {0}
-}
-
-@INPROCEEDINGS{Park2012e,
-  author = {Il Memming Park and Miriam L. R. Meister and Alexander C. Huk and
-	Jonathan W. Pillow},
-  title = {Deciphering the code for sensorimotor decision-making at the level
-	of single neurons in parietal cortex},
-  booktitle = {Society for Neuroscience},
-  year = {2012},
-  note = {Oral presentation},
-  owner = {memming}
-}
-
-@ARTICLE{Park2012c,
-  author = {Il Memming Park and Marcel Nassar and Mijung Park},
-  title = {Active {Bayes}ian Optimization: Minimizing Minimizer Entropy},
-  journal = {ArXiv e-prints},
-  year = {2012},
-  month = feb,
-  abstract = {The ultimate goal of optimization is to find the minimizer of a target
-	{function.However}, typical criteria for active optimization often
-	ignore the uncertainty about the minimizer. We propose a novel criterion
-	for global optimization and an associated sequential active learning
-	strategy using Gaussian {processes.Our} criterion is the reduction
-	of uncertainty in the posterior distribution of the function minimizer.
-	It can also flexibly incorporate multiple global minimizers. We implement
-	a tractable approximation of the criterion and demonstrate that it
-	obtains the global minimizer accurately compared to conventional
-	Bayesian optimization criteria.},
-  adsnote = {Provided by the SAO/NASA Astrophysics Data System},
-  adsurl = {http://adsabs.harvard.edu/abs/2012arXiv1202.2143M},
-  archiveprefix = {arXiv},
-  eprint = {1202.2143},
-  keywords = {Statistics - Methodology, Computer Science - Learning, Statistics
-	- Machine Learning},
-  primaryclass = {stat.ME}
-}
-
-@INPROCEEDINGS{Park2012b,
-  author = {Il Memming Park and Jonathan Pillow},
-  title = {{Bayes}ian spike-triggered covariance and the elliptical {LNP} model},
-  booktitle = {Computational and Systems Neuroscience (COSYNE)},
-  year = {2012},
-  owner = {memming}
-}
-
-@INPROCEEDINGS{Park2011c,
-  author = {Il Memming Park and Jonathan W. Pillow},
-  title = {{Bayes}ian Spike Triggered Covariance Analysis},
-  booktitle = {Advances in Neural Information Processing Systems (NIPS)},
-  year = {2011},
-  owner = {memming},
-  timestamp = {2011.10.24}
-}
-
-@ARTICLE{Park2013a,
-  author = {Park, Il Memming and Seth, Sohan and Paiva, Antonio R. C. and Li,
-	Lin and Principe, Jose C.},
-  title = {Kernel methods on spike train space for neuroscience: a tutorial},
-  journal = {IEEE Signal Processing Magazine},
-  year = {2013},
-  volume = {30},
-  pages = {149--160},
-  number = {4},
-  month = jul,
-  abstract = {Over the last decade several positive definite kernels have been proposed
-	to treat spike trains as objects in Hilbert space. However, for the
-	most part, such attempts still remain a mere curiosity for both computational
-	neuroscientists and signal processing experts. This tutorial illustrates
-	why kernel methods can, and have already started to, change the way
-	spike trains are analyzed and processed. The presentation incorporates
-	simple mathematical analogies and convincing practical examples in
-	an attempt to show the yet unexplored potential of positive definite
-	functions to quantify point processes. It also provides a detailed
-	overview of the current state of the art and future challenges with
-	the hope of engaging the readers in active participation.},
-  day = {24},
-  doi = {10.1109/msp.2013.2251072},
-  eprint = {1302.5964},
-  issn = {1053-5888}
-}
-
-@CONFERENCE{Park2011b,
-  author = {Il Memming Park and Sohan Seth and Jos\'e C. Pr\'incipe},
-  title = {Spike Train Kernel Methods for Neuroscience},
-  booktitle = {Joint Statistical Meeting},
-  year = {2011},
-  abstract = {Positive definite kernels has been widely used in the context of machine
-	learning by the, so called, kernel machines such as the support vector
-	machine and the kernel principal component analysis. An attractive
-	property of a kernel machine is that it can be applied to arbitrary
-	spaces as long as appropriate kernel is provided. We have developed
-	spike train kernels and analyzed their properties in the context
-	of two-sample problem, probability embedding as well as regression
-	and classification. We discuss strictly positive definite kernels
-	that provide theoretical foundation for its power.},
-  owner = {memming},
-  timestamp = {2011.07.14}
-}
-
-@ARTICLE{Park2012a,
-  author = {Il Memming Park and Sohan Seth and Murali Rao and Jos\'e C. Pr\'incipe},
-  title = {Strictly positive definite spike train kernels for point process
-	divergences},
-  journal = {Neural Computation},
-  year = {2012},
-  volume = {24},
-  month = aug,
-  issue = {8},
-  owner = {memming},
-  timestamp = {2010.02.20}
-}
-
-@INPROCEEDINGS{Park2014c,
-  author = {Park, Il Memming and Seth, Sohan and Steven Van Vaerenbergh},
-  title = {Probabilistic Kernel Least Mean Squares Algorithms},
-  booktitle = {IEEE International Conference on Acoustics, Speech, and Signal Processing
-	(ICASSP)},
-  year = {2014},
-  publisher = {IEEE}
-}
-
-@ARTICLE{Park2013g,
-  author = {Park, Il Memming and Seth, Sohan and Van Vaerenbergh, Steven},
-  title = {{Bayes}ian Extensions of Kernel Least Mean Squares},
-  journal = {ArXiv e-prints},
-  year = {2013},
-  month = oct,
-  abstract = {The kernel least mean squares ({KLMS}) algorithm is a computationally
-	efficient nonlinear adaptive filtering method that "kernelizes" the
-	celebrated (linear) least mean squares algorithm. We demonstrate
-	that the least mean squares algorithm is closely related to the Kalman
-	filtering, and thus, the {KLMS} can be interpreted as an approximate
-	Bayesian filtering method. This allows us to systematically develop
-	extensions of the {KLMS} by modifying the underlying state-space
-	and observation models. The resulting extensions introduce many desirable
-	properties such as "forgetting", and the ability to learn from discrete
-	data, while retaining the computational simplicity and time complexity
-	of the original algorithm.},
-  archiveprefix = {arXiv},
-  citeulike-article-id = {12732257},
-  citeulike-linkout-0 = {http://arxiv.org/abs/1310.5347},
-  citeulike-linkout-1 = {http://arxiv.org/pdf/1310.5347},
-  day = {20},
-  eprint = {1310.5347},
-  keywords = {adaptive-filter, bayesian, kernel-method, klms, online-algorithm,
-	poisson-observation},
-  posted-at = {2013-10-23 12:18:03},
-  primaryclass = {st.ML},
-  priority = {0},
-  url = {http://arxiv.org/abs/1310.5347}
-}
-
-@INPROCEEDINGS{Park2015a,
-  author = {Il Memming Park and Jacob Yates and Alex Huk and Jonathan Pillow},
-  title = {Dynamic correlations between visual and decision areas during perceptual
-	decision-making},
-  booktitle = {Computational and Systems Neuroscience (COSYNE)},
-  year = {2015},
-  owner = {memming}
-}
-
-@INPROCEEDINGS{Pillow2013a,
-  author = {Jonathan Pillow and Il Memming Park},
-  title = {Beyond Barlow: a {Bayes}ian theory of efficient neural coding},
-  booktitle = {Computational and Systems Neuroscience (COSYNE)},
-  year = {2013}
-}
-
-@BOOK{Principe2010,
-  title = {Information Theoretic Learning},
-  publisher = {Springer},
+@INPROCEEDINGS{Brockmeier2010a,
+  author = {Austin J. Brockmeier and Il Park and Babak Mahmoudi and Justin C.
+	Sanchez and Jos\'e C. Pr\'incipe},
+  title = {Spatio-Temporal Clustering of Firing Rates for Neural State Estimation},
+  booktitle = {Annual International Conference of the IEEE Engineering in Medicine
+	and Biology Society (EMBS)},
   year = {2010},
-  author = {Jos\'e C. Pr\'incipe},
-  isbn = {1441915699},
   owner = {memming},
-  timestamp = {2009.05.19}
+  timestamp = {2010.06.29}
 }
 
 @INBOOK{bookch2010a,
@@ -1064,16 +858,34 @@
   timestamp = {2009.12.16}
 }
 
-@INPROCEEDINGS{Seth2010a,
-  author = {Sohan Seth and Il Park and Austin J. Brockmeier and Mulugeta Semework
-	and John Choi and Joe Francis and Jos\'e C. Pr\'incipe},
-  title = {A novel family of non-parametric cumulative based divergences for
-	point processes},
-  booktitle = {Advances in Neural Information Processing Systems (NIPS)},
+@INPROCEEDINGS{Bobkov2010a,
+  author = {Yuriy Bobkov and Kirill Ukhanov and Il Park and Jos\'e C. Pr\'incipe
+	and Barry Ache},
+  title = {Measuring Ensemble Activity in Lobster {ORN}s through Calcium Imaging},
+  booktitle = {Association for Chemoreception (AChemS) Annual Meeting},
   year = {2010},
-  pages = {2119--2127},
+  abstract = {Lobster ORNs can be imaged in the olfactory organ in situ, thereby
+	maintaining the normal polarity of the cells and the ionic environment
+	of the olfactory cilia. The preparation gives simultaneous access
+	to hundreds of ORNs that are viable for hours, thereby allowing rigorous
+	characterization of their steadystate and dynamic properties. Odorants
+	change the level of cytoplasmic Ca2+ in a dose-dependent manner in
+	ORNs loaded with Ca2+-sensitive indicator either through bath application
+	or via a patch electrode. The kinetics and amplitude of the odorantevoked
+	Ca2+ signal correlate with the excitatory inward current, the degree
+	of membrane depolarization, and the number of evoked action potentials,
+	thereby establishing the physiological relevance of the Ca2+ signal.
+	Spontaneous periodic Ca2+ transients in many ORNs correlate with
+	spontaneous bursts of action potentials measured in single cells
+	in the same cluster. We are using signal processing algorithms to
+	analyze the level of correlated activity between these ORNs and the
+	extent to which periodic calcium oscillations in different ORNs are
+	synchronized by common intermittent excitatory input to test the
+	predictions of our computational model for ensemble burst coding
+	in these cells and the potential relevance of bursting input to olfactory
+	scene analysis.},
   owner = {memming},
-  timestamp = {2010.02.18}
+  timestamp = {2010.07.15}
 }
 
 @INPROCEEDINGS{Seth2009a,
@@ -1087,44 +899,137 @@
   timestamp = {2009.03.06}
 }
 
-@ARTICLE{Seth2010b,
-  author = {Sohan Seth and Murali Rao and Il Park and Jos\'e C. Pr\'incipe},
-  title = {A unified framework for quadratic measures of independence},
-  journal = {IEEE Transactions on Signal Processing},
-  year = {2011},
+@INPROCEEDINGS{Park2009c,
+  author = {Il Park and Jos\'e C. Pr\'incipe},
+  title = {Significance test for spike trains based on finite point process
+	estimation},
+  booktitle = {Society for Neuroscience},
+  year = {2009},
   owner = {memming},
-  timestamp = {2010.07.27}
+  timestamp = {2010.01.15}
 }
 
-@ARTICLE{Seth2011a,
-  author = {Sohan Seth and Murali Rao and Il Park and Jos\'e C. Pr\'incipe},
-  title = {A Unified Framework for Quadratic Measures of Independence},
+@INPROCEEDINGS{Park2009b,
+  author = {Il Park and Yuriy Bobkov and Kirill Ukhanov and Barry W. Ache and
+	Jos\'e C. Pr\'incipe},
+  title = {Input Driven Synchrony of Oscillating Olfactory Receptor Neurons:
+	A Computational Modeling Study},
+  booktitle = {Association for Chemoreception (AChemS) Annual Meeting},
+  year = {2009},
+  owner = {memming},
+  timestamp = {2010.01.15}
+}
+
+@INPROCEEDINGS{Park2009a,
+  author = {Il Park and Murali Rao and Thomas B. DeMarse and Jos\'e C. Pr\'incipe},
+  title = {Point Process Model for Precisely Timed Spike Trains.},
+  booktitle = {Frontiers in Systems Neuroscience. Conference Abstract: Computational
+	and Systems Neuroscience (COSYNE)},
+  year = {2009},
+  doi = {doi: 10.3389/conf.neuro.06.2009.03.227},
+  owner = {memming},
+  timestamp = {2009.03.06}
+}
+
+@ARTICLE{Paiva2008b,
+  author = {Ant\'onio R. C. Paiva and Il Park and Jos\'e C. Pr\'incipe},
+  title = {A Reproducing Kernel {H}ilbert Space framework for Spike Trains},
+  journal = {Neural Computation},
+  year = {2009},
+  volume = {21},
+  pages = {424--449},
+  number = {2},
+  month = feb,
+  doi = {10.1162/neco.2008.09-07-614},
+  owner = {memming},
+  timestamp = {2008.10.08}
+}
+
+@ARTICLE{Liu2009b,
+  author = {Weifeng Liu and Il Park and Jos\'e C. Pr\'incipe},
+  title = {An Information Theoretic Approach of Designing Sparse Kernel Adaptive
+	Filters},
+  journal = {IEEE Transactions on Neural Network},
+  year = {2009},
+  volume = {20},
+  pages = {1950--1961},
+  number = {12},
+  month = dec,
+  doi = {10.1109/TNN.2009.2033676},
+  owner = {memming},
+  timestamp = {2009.03.22}
+}
+
+@ARTICLE{Liu2009a,
+  author = {Weifeng Liu and Il Park and Yiwen Wang and Jos\'e C. Pr\'incipe},
+  title = {Extended Kernel Recursive Least Squares Algorithm},
   journal = {IEEE Transactions on Signal Processing},
-  year = {2011},
-  volume = {59},
-  pages = {3624--3635},
-  month = aug,
-  issue = {8},
-  owner = {memmingpark},
-  timestamp = {2011.05.05}
+  year = {2009},
+  volume = {57},
+  pages = {3801--3814},
+  number = {10},
+  month = oct,
+  doi = {10.1109/TSP.2009.2022007},
+  owner = {memming},
+  timestamp = {2009.03.22}
 }
 
-@INPROCEEDINGS{Wu2015a,
-  author = {Anqi Wu and Il Memming Park and Jonathan Pillow},
-  title = {Convolutional spike-triggered covariance analysis for estimating
-	subunit models},
-  booktitle = {Computational and Systems Neuroscience (COSYNE)},
-  year = {2015},
-  owner = {memming}
+@INPROCEEDINGS{Li2009,
+  author = {Lin Li and Sohan Seth and Il Park and Justin C. Sanchez and Jos\'e
+	C. Pr\'incipe},
+  title = {Estimation and Visualization of Neuronal Functional Connectivity
+	in Motor Tasks},
+  booktitle = {Annual International Conference of the IEEE Engineering in Medicine
+	and Biology Society (EMBS)},
+  year = {2009},
+  abstract = {In brain-machine interface (BMI) modeling, the firing patterns of
+	hundreds of neurons are used to reconstruct a variety of kinematic
+	variables. The large number of neurons produces an explosion in the
+	number of free parameters, which affects model generalization. This
+	paper proposes a model-free measure of pairwise neural dependence
+	to rank the importance of neurons in neural to motor mapping. Compared
+	to a model-dependent approach such as sensitivity analysis, sixty
+	percent of the neurons with the strongest dependence coincide with
+	the top 10 most sensitive neurons trained through the model. Using
+	this data-driven approach that operates on the input data alone,
+	it is possible to perform neuron selection in a more efficient way
+	that is not subject to assumptions about decoding models. To further
+	understand the functional dependencies that influence neural to motor
+	mapping, we use an open source available graph visualization toolkit
+	called Prefuse to visualize the neural dependency graph and quantify
+	the functional connectivity in motor cortex. This tool when adapted
+	to the analysis of neuronal recordings has the potential to easily
+	display the relationships in data of large dimension.},
+  doi = {10.1109/IEMBS.2009.5333991},
+  owner = {memming},
+  timestamp = {2009.12.15}
 }
 
-@INPROCEEDINGS{Wu2015b,
-  author = {Anqi Wu and Il Memming Park and Jonathan Pillow},
-  title = {Convolutional spike-triggered covariance analysis for neural subunit
-	models},
-  booktitle = {Advances in Neural Information Processing Systems (NIPS)},
-  year = {2015},
-  owner = {memming}
+@ARTICLE{Dockendorf2008,
+  author = {Karl Dockendorf and Il Park and Ping He and Jos\'e C. Pr\'incipe
+	and Thomas B. DeMarse},
+  title = {Liquid State Machines and Cultured Cortical Networks: The Separation
+	Property},
+  journal = {Biosystems},
+  year = {2009},
+  volume = {95},
+  pages = {90--97},
+  number = {2},
+  month = feb,
+  doi = {10.1016/j.biosystems.2008.08.001},
+  owner = {memming},
+  timestamp = {2008.04.15}
+}
+
+@INPROCEEDINGS{Bobkov2009a,
+  author = {Yuriy Bobkov and Il Park and Kirill Ukhanov and Jos\'e C. Pr\'incipe
+	and Barry W. Ache},
+  title = {Population coding within an ensemble of rhythmically active primary
+	olfactory receptor},
+  booktitle = {Society for Neuroscience},
+  year = {2009},
+  owner = {memming},
+  timestamp = {2010.01.15}
 }
 
 @ARTICLE{Xu2008,
@@ -1159,122 +1064,168 @@
   priority = {0}
 }
 
-@INPROCEEDINGS{Yates2015a,
-  author = {Jacob Yates and Evan Archer and Alexander C. Huk and Il Memming Park},
-  title = {Canonical correlations reveal co-variability between spike trains
-	and local field potentials in area {MT}},
-  booktitle = {Organization for Computational Neuroscience (CNS)},
-  year = {2015}
+@INPROCEEDINGS{Park2008b,
+  author = {Il Park and Jos\'e C. Pr\'incipe},
+  title = {Correntropy based Granger causality},
+  booktitle = {IEEE International Conference on Acoustics, Speech, and Signal Processing
+	(ICASSP)},
+  year = {2008},
+  doi = {10.1109/ICASSP.2008.4518432},
+  owner = {memming},
+  timestamp = {2009.03.06}
 }
 
-@INPROCEEDINGS{Yates2013a,
-  author = {Jacob Yates and Il Memming Park and Lawrence Cormack and Jonathan
-	Pillow and Alexander Huk},
-  title = {Precise characterization of multiple {LIP} neurons in relation to
-	stimulus and behavior},
-  booktitle = {Computational and Systems Neuroscience (COSYNE)},
-  year = {2013}
+@ARTICLE{Park2008a,
+  author = {Il Park and Ant\'onio R. C. Paiva and Thomas B. DeMarse and Jos\'e
+	C. Pr\'incipe},
+  title = {An efficient algorithm for continuous-time cross correlogram of spike
+	trains},
+  journal = {Journal of Neuroscience Methods},
+  year = {2008},
+  volume = {168},
+  pages = {514--523},
+  number = {2},
+  month = mar,
+  abstract = {We propose an efficient algorithm to compute the smoothed correlogram
+	for the detection of temporal relationship between two spike trains.
+	Unlike the conventional histogram-based correlogram estimations,
+	the proposed algorithm operates on continuous time and does not bin
+	either the spike train nor the correlogram. Hence it can be more
+	precise in detecting the effective delay between two recording sites.
+	Moreover, it can take advantage of the higher temporal resolution
+	of the spike times provided by the current recording methods. The
+	Laplacian kernel for smoothing enables efficient computation of the
+	algorithm. We also provide the basic statistics of the estimator
+	and a guideline for choosing the kernel size. This new technique
+	is demonstrated by estimating the effective delays in a neuronal
+	network from synthetic data and recordings of dissociated cortical
+	tissue.},
+  doi = {10.1016/j.jneumeth.2007.10.005},
+  owner = {memming},
+  timestamp = {2007.10.21}
 }
 
-@INPROCEEDINGS{Yates2013b,
-  author = {Jacob Yates and Il Memming Park and Lawrence Cormack and Jonathan
-	Pillow and Alexander Huk},
-  title = {Precise characterization of dorsal stream neural activity during
-	decision making},
-  booktitle = {Society for Neuroscience},
-  year = {2013}
+@ARTICLE{Paiva2008c,
+  author = {Ant\'onio R. C. Paiva and Il Park and Justin Sanchez and Jos\'e C.
+	Pr\'incipe},
+  title = {Peri-event Cross-Correlation over Time for Analysis of Interactions
+	in Neuronal Firing},
+  journal = {International Conference of the IEEE Engineering in Medicine and
+	Biology Society (EMBC)},
+  year = {2008},
+  owner = {memming},
+  timestamp = {2008.10.08}
 }
 
-@INPROCEEDINGS{Yates2014a,
-  author = {Jacob L. Yates and Leor N. Katz and Il Memming Park and Jonathan
-	W. Pillow and Alexander C. Huk},
-  title = {Correlations and choice probabilities in simultaneously recorded
-	{MT} and {LIP} neurons},
-  booktitle = {Society for Neuroscience},
-  year = {2014}
+@INPROCEEDINGS{Paiva2008a,
+  author = {Ant\'onio R. C. Paiva and Il Park and Jos\'e C. Pr\'incipe},
+  title = {Reproducing Kernel {H}ilbert Spaces for Spike Train Analysis},
+  booktitle = {IEEE International Conference on Acoustics, Speech, and Signal Processing
+	(ICASSP)},
+  year = {2008},
+  doi = {10.1109/ICASSP.2008.4518834},
+  owner = {memming},
+  timestamp = {2008.04.15}
 }
 
-@ARTICLE{Zhao2016a,
-  author = {Zhao, Yuan and Park, Il Memming},
-  title = {Variational Latent {G}aussian Process for Recovering Single-Trial
-	Dynamics from Population Spike Trains},
-  journal = {ArXiv e-prints},
-  year = {2016},
-  month = apr,
-  note = {(under review)},
-  abstract = {A small number of common factors often explain most of the interdependence
-	among simultaneously recorded neurons, a signature of underlying
-	low-dimensional dynamics. We posit that simple neural coding and
-	computation manifest as low-dimensional nonlinear dynamics implemented
-	redundantly within a large population of neurons. Recovering the
-	latent dynamics from observations can offer a deeper understanding
-	of neural computation. We improve upon previously-proposed methods
-	for recovering latent dynamics, which assume either an inappropriate
-	observation model or linear dynamics. We propose a practical and
-	efficient inference method for a generative model with explicit point
-	process observations and an assumption of smooth nonlinear dynamics.
-	We validate our method on both simulated data and population recording
-	from primary visual cortex.},
-  archiveprefix = {arXiv},
-  citeulike-article-id = {14025142},
-  citeulike-linkout-0 = {http://arxiv.org/abs/1604.03053},
-  citeulike-linkout-1 = {http://arxiv.org/pdf/1604.03053},
-  day = {22},
-  eprint = {1604.03053},
-  keywords = {bayesian, computational-neuroscience, gaussian-process, glm, latent-dynamics,
-	latent-variable, spike-train, statistical-neuroscience, statistics,
-	torus, variational-bayes},
-  posted-at = {2016-04-30 16:02:05},
-  primaryclass = {stat.ML},
-  priority = {0},
-  url = {http://arxiv.org/abs/1604.03053}
+@MASTERSTHESIS{ParkMSThesis2007,
+  author = {Park, Il},
+  title = {CONTINUOUS TIME CORRELATION ANALYSIS TECHNIQUES FOR SPIKE TRAINS},
+  school = {University of Florida},
+  year = {2007},
+  owner = {memming},
+  timestamp = {2009.04.24}
 }
 
-@INPROCEEDINGS{Zhao2016b,
-  author = {Yuan Zhao and Il Memming Park},
-  title = {Inferring low-dimensional network dynamics with variational latent
-	{G}aussian process},
-  booktitle = {Organization for Computational Neuroscience (CNS)},
-  year = {2016}
+@INPROCEEDINGS{Park2007b,
+  author = {Il Park and Ant\'onio R. C. Paiva and Jos\'e C. Pr\'incipe and Thomas
+	B. DeMarse},
+  title = {An Efficient Computation of Continuous-time Correlogram of Spike
+	Trains},
+  booktitle = {Frontiers in Systems Neuroscience. Conference Abstract: Computational
+	and Systems Neuroscience (COSYNE)},
+  year = {2007},
+  owner = {memming},
+  timestamp = {2010.01.20}
 }
 
-@INPROCEEDINGS{Zhao2016c,
-  author = {Yuan Zhao and Il Memming Park},
-  title = {Variational inference of latent {G}aussian neural dynamics},
-  booktitle = {International Conference on Machine Learning (ICML) Workshop on Computational
-	Biology},
-  year = {2016}
+@INPROCEEDINGS{Park2007,
+  author = {Il Park and Ant\'onio R. C. Paiva and Thomas B. DeMarse and Jose
+	C. Pr\'incipe and John Harris},
+  title = {A Closed Form Solution for Multiple-Input Spike Based Adaptive Filters},
+  booktitle = {IEEE International Joint Conference on Neural Networks (IJCNN)},
+  year = {2007},
+  owner = {memming},
+  timestamp = {2008.04.15}
 }
 
-@INPROCEEDINGS{Zhao2016d,
-  author = {Zhao, Yuan and Park, Il Memming},
-  title = {Interpretable Nonlinear Dynamic Modeling of Neural Trajectories},
-  booktitle = {Advances in Neural Information Processing Systems (NIPS)},
-  year = {2016},
-  abstract = {A central challenge in neuroscience is understanding how neural system
-	implements computation through its dynamics. We propose a nonlinear
-	time series model aimed at characterizing interpretable dynamics
-	from neural trajectories. Our model assumes low-dimensional continuous
-	dynamics in a finite volume. It incorporates a prior assumption about
-	globally contractional dynamics to avoid overly enthusiastic extrapolation
-	outside of the support of observed trajectories. We show that our
-	model can recover qualitative features of the phase portrait such
-	as attractors, slow points, and bifurcations, while also producing
-	reliable long-term future predictions in a variety of dynamical models
-	and in real neural data.},
-  archiveprefix = {arXiv},
-  eprint = {1608.06546},
-  journal = {ArXiv e-prints},
-  keywords = {autoregressive, bifurcation, chaos, continuous-attractor, dynamics,
-	neural-dynamics, nips, oscillation, tensorflow},
-  primaryclass = {q-bio.QM}
+@INPROCEEDINGS{Paiva2007b,
+  author = {Ant\'onio R. C. Paiva and Il Park and Jos{\'e} C. Pr{\'{\i}}ncipe},
+  title = {Innovating Signal Processing for Spike Train Data},
+  booktitle = {International Conference of the IEEE Engineering in Medicine and
+	Biology Society (EMBC)},
+  year = {2007},
+  address = {Lyon, France},
+  owner = {memming},
+  timestamp = {2009.12.15}
 }
 
-@comment{jabref-meta: selector_keywords:}
+@INPROCEEDINGS{Paiva2007a,
+  author = {Ant\'onio R. C. Paiva and Sudhir Rao and Il Park and Jos{\'e} C.
+	Pr{\'{\i}}ncipe},
+  title = {Spectral Clustering of Synchronous Spike Trains},
+  booktitle = {IEEE International Joint Conference on Neural Networks (IJCNN)},
+  year = {2007},
+  address = {Orlando, FL, USA},
+  month = aug,
+  file = {2007c.pdf:2007c.pdf:PDF},
+  owner = {memming},
+  timestamp = {2008.04.15}
+}
 
-@comment{jabref-meta: selector_journal:}
+@INPROCEEDINGS{Park2006,
+  author = {Il Park and Dongming Xu and Thomas B. DeMarse and Jos\'e C. Pr\'incipe},
+  title = {Modeling of Synchronized Burst in Dissociated Cortical Tissue: An
+	Exploration of Parameter Space},
+  booktitle = {IEEE International Joint Conference on Neural Networks (IJCNN)},
+  year = {2006},
+  doi = {10.1109/IJCNN.2006.246734},
+  owner = {memming},
+  timestamp = {2008.04.15}
+}
 
-@comment{jabref-meta: selector_publisher:}
+@InProceedings{Park2005,
+  author    = {Il Park and Jong C. Park},
+  title     = {Modeling Causality in Biological Pathways for Logical Identification of Drug Targets},
+  booktitle = {Bioinfo},
+  year      = {2005},
+  address   = {Busan, Korea},
+  month     = sep,
+  owner     = {memming},
+  timestamp = {2008.04.15},
+}
 
-@comment{jabref-meta: selector_author:}
+INPROCEEDINGS{Paiva2008e,
+  author = {Ant\'onio R. C. Paiva and Il Park and Jos{\'e} C. Pr{\'i}ncipe},
+  title = {Reproducing Kernel {H}ilbert Spaces for Spike Train Analysis},
+  booktitle = {Conference on Computational Neuroscience},
+  year = {2008},
+  owner = {memming},
+  timestamp = {2010.01.20}
+}
 
+@InBook{Paiva2010a,
+  title     = {Optimization in Reproducing Kernel {H}ilbert Spaces of Spike Trains},
+  publisher = {Springer},
+  year      = {?},
+  author    = {Ant\'onio R. C. Paiva and Il Park and Jos\'e C. Pr\'incipe},
+  editor    = {W. Art Chaovalitwongse and Panos Pardalos and Petros Xanthopoulos,},
+  note      = {(in press)},
+  booktitle = {Computational Neuroscience},
+  owner     = {memming},
+  timestamp = {2010.01.15},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
+
+@Comment{jabref-meta: saveOrderConfig:specified;year;true;bibtexkey;true;author;true;}
