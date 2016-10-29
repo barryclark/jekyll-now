@@ -1,2 +1,6 @@
-Nome,Dataset,Licenza,Linklicenza,Fonte
-Segnalazioni Aggiornate da TerremotoCentroItalia,https://raw.githubusercontent.com/emergenzeHack/terremotocentro/master/_data/issues.csv, CC-BY 3.0, https://creativecommons.org/licenses/by/3.0/it/, http://www.terremotocentroitalia.info
+Nome,Dataset,Licenza,Linklicenza,Fonte,Formato
+Segnalazioni Aggiornate da TerremotoCentroItalia,https://raw.githubusercontent.com/emergenzeHack/terremotocentro/master/_data/issues.csv, CC-BY 3.0, https://creativecommons.org/licenses/by/3.0/it/, http://www.terremotocentroitalia.info, CSV
+Segnalazioni Aggiornate da TerremotoCentroItalia,https://github.com/emergenzeHack/terremotocentro/blob/master/_data/issuesjson.json, CC-BY 3.0, https://creativecommons.org/licenses/by/3.0/it/, http://www.terremotocentroitalia.info, JSON
+Elenco delle vittime, https://docs.google.com/spreadsheets/d/1-OIq4Cmb-eURusfbAVmaJONSSAqJGh7NB0dTxduwwcg/pub?gid=746874049&single=true&output=csv, CC-BY 3.0, https://creativecommons.org/licenses/by/3.0/it/, vedi file dati, CSV
+Lista dei Comuni del Cratere del 24 Agosto 2016,https://docs.google.com/spreadsheets/d/14onftpJmPN586rWzHk9Y7Np3KtV7GE7tyBug81yzfwI/pub?gid=0&single=true&output=csv, CC-BY 3.0, https://creativecommons.org/licenses/by/3.0/it/, http://www.mef.gov.it/ufficio-stampa/comunicati/2016/comunicato_0153.html, CSV
+Lista dei Comuni del Cratere del 26 Ottobre 2016,https://docs.google.com/spreadsheets/d/1cDw6doPl-WTn9KgNNyxwm92gKLnemMyrE1iCjCE5Cds/pub?output=csv, CC-BY 3.0, https://creativecommons.org/licenses/by/3.0/it/, http://www.ansa.it/marche/notizie/2016/10/27/20-i-comuni-marche-colpiti-dal-sisma_8ac2d1e7-c271-45a3-bffc-231d4dc80f50.html, CSV
