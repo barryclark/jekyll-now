@@ -1,0 +1,1453 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>CATNIP Lab Publications</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="/js/jquery.tablesorter.js"></script> 
+<script>
+$(document).ready(function() { 
+    $("table").tablesorter({sortList: [[2,1],[4,0]]}); 
+}); 
+</script>
+<script type="text/javascript">
+<!--
+// QuickSearch script for JabRef HTML export (no Abstract/BibTeX)
+// Version: 3.0
+//
+// Copyright (c) 2006-2011, Mark Schenk
+//
+// This software is distributed under a Creative Commons Attribution 3.0 License
+// http://creativecommons.org/licenses/by/3.0/
+//
+// Features:
+// - intuitive find-as-you-type searching
+//    ~ case insensitive
+//    ~ ignore diacritics (optional)
+//
+// - search with/without Regular Expressions
+// - match BibTeX key
+//
+
+// Search settings
+var noSquiggles = true; 	// ignore diacritics when searching
+var searchRegExp = false; 	// enable RegExp searches
+
+
+if (window.addEventListener) {
+	window.addEventListener("load",initSearch,false); }
+else if (window.attachEvent) {
+	window.attachEvent("onload", initSearch); }
+
+function initSearch() {
+	// check for quick search table and searchfield
+	if (!document.getElementById('qs_table')||!document.getElementById('quicksearch')) { return; }
+
+	// load all the rows and sort into arrays
+	loadTableData();
+	
+	//find the query field
+	qsfield = document.getElementById('qs_field');
+
+	// previous search term; used for speed optimisation
+	prevSearch = '';
+
+	//find statistics location
+	stats = document.getElementById('stat');
+	setStatistics(-1);
+	
+	// set up preferences
+	initPreferences();
+
+	// shows the searchfield
+	document.getElementById('quicksearch').style.display = 'block';
+	document.getElementById('qs_field').onkeyup = quickSearch;
+}
+
+function loadTableData() {
+	// find table and appropriate rows
+	searchTable = document.getElementById('qs_table');
+	var allRows = searchTable.getElementsByTagName('tbody')[0].getElementsByTagName('tr');
+
+	// split all rows into entryRows and infoRows (e.g. abstract, review, bibtex)
+	entryRows = new Array();
+
+	// get data from each row
+	entryRowsData = new Array();
+	
+	BibTeXKeys = new Array();
+	
+	for (var i=0, k=0, j=0; i<allRows.length;i++) {
+		if (allRows[i].className.match(/entry/)) {
+			entryRows[j] = allRows[i];
+			entryRowsData[j] = stripDiacritics(getTextContent(allRows[i]));
+			allRows[i].id ? BibTeXKeys[j] = allRows[i].id : allRows[i].id = 'autokey_'+j;
+			j ++;
+		}
+	}
+	//number of entries and rows
+	numEntries = entryRows.length;
+}
+
+function quickSearch(){
+	
+	tInput = qsfield;
+
+	if (tInput.value.length == 0) {
+		showAll();
+		setStatistics(-1);
+		qsfield.className = '';
+		return;
+	} else {
+		t = stripDiacritics(tInput.value);
+
+		if(!searchRegExp) { t = escapeRegExp(t); }
+			
+		// only search for valid RegExp
+		try {
+			textRegExp = new RegExp(t,"i");
+			qsfield.className = '';
+		}
+			catch(err) {
+			prevSearch = tInput.value;
+			qsfield.className = 'invalidsearch';
+			return;
+		}
+	}
+	
+	// count number of hits
+	var hits = 0;
+
+	// start looping through all entry rows
+	for (var i = 0; cRow = entryRows[i]; i++){
+
+		// only show search the cells if it isn't already hidden OR if the search term is getting shorter, then search all
+		if(cRow.className.indexOf('noshow')==-1 || tInput.value.length <= prevSearch.length){
+			var found = false; 
+
+			if (entryRowsData[i].search(textRegExp) != -1 || BibTeXKeys[i].search(textRegExp) != -1){ 
+				found = true;
+			}
+			
+			if (found){
+				cRow.className = 'entry show';
+				hits++;
+			} else {
+				cRow.className = 'entry noshow';
+			}
+		}
+	}
+
+	// update statistics
+	setStatistics(hits)
+	
+	// set previous search value
+	prevSearch = tInput.value;
+}
+
+
+// Strip Diacritics from text
+// http://stackoverflow.com/questions/990904/javascript-remove-accents-in-strings
+
+// String containing replacement characters for stripping accents 
+var stripstring = 
+    'AAAAAAACEEEEIIII'+
+    'DNOOOOO.OUUUUY..'+
+    'aaaaaaaceeeeiiii'+
+    'dnooooo.ouuuuy.y'+
+    'AaAaAaCcCcCcCcDd'+
+    'DdEeEeEeEeEeGgGg'+
+    'GgGgHhHhIiIiIiIi'+
+    'IiIiJjKkkLlLlLlL'+
+    'lJlNnNnNnnNnOoOo'+
+    'OoOoRrRrRrSsSsSs'+
+    'SsTtTtTtUuUuUuUu'+
+    'UuUuWwYyYZzZzZz.';
+
+function stripDiacritics(str){
+
+    if(noSquiggles==false){
+        return str;
+    }
+
+    var answer='';
+    for(var i=0;i<str.length;i++){
+        var ch=str[i];
+        var chindex=ch.charCodeAt(0)-192;   // Index of character code in the strip string
+        if(chindex>=0 && chindex<stripstring.length){
+            // Character is within our table, so we can strip the accent...
+            var outch=stripstring.charAt(chindex);
+            // ...unless it was shown as a '.'
+            if(outch!='.')ch=outch;
+        }
+        answer+=ch;
+    }
+    return answer;
+}
+
+// http://stackoverflow.com/questions/3446170/escape-string-for-use-in-javascript-regex
+// NOTE: must escape every \ in the export code because of the JabRef Export...
+function escapeRegExp(str) {
+  return str.replace(/[-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&");
+}
+
+function setStatistics (hits) {
+	if(hits < 0) { hits=numEntries; }
+	if(stats) { stats.firstChild.data = hits + '/' + numEntries}
+}
+
+function getTextContent(node) {
+	// Function written by Arve Bersvendsen
+	// http://www.virtuelvis.com
+	
+	if (node.nodeType == 3) {
+	return node.nodeValue;
+	} // text node
+	if (node.nodeType == 1 && node.className != "infolinks") { // element node
+	var text = [];
+	for (var chld = node.firstChild;chld;chld=chld.nextSibling) {
+		text.push(getTextContent(chld));
+	}
+	return text.join("");
+	} return ""; // some other node, won't contain text nodes.
+}
+
+function showAll(){
+	for (var i = 0; i < numEntries; i++){ entryRows[i].className = 'entry show'; }
+}
+
+function clearQS() {
+	qsfield.value = '';
+	showAll();
+}
+
+function redoQS(){
+	showAll();
+	quickSearch(qsfield);
+}
+
+function updateSetting(obj){
+	var option = obj.id;
+	var checked = obj.value;
+
+	switch(option)
+	 {
+	 case "opt_useRegExp":
+	   searchRegExp=!searchRegExp;
+	   redoQS();
+	   break;
+	 case "opt_noAccents":
+	   noSquiggles=!noSquiggles;
+	   loadTableData();
+	   redoQS();
+	   break;
+	 }
+}
+
+function initPreferences(){
+	if(noSquiggles){document.getElementById("opt_noAccents").checked = true;}
+	if(searchRegExp){document.getElementById("opt_useRegExp").checked = true;}
+}
+
+function toggleSettings(){
+	var togglebutton = document.getElementById('showsettings');
+	var settings = document.getElementById('settings');
+	
+	if(settings.className == "hidden"){
+		settings.className = "show";
+		togglebutton.innerText = "close settings";
+		togglebutton.textContent = "close settings";
+	}else{
+		settings.className = "hidden";
+		togglebutton.innerText = "settings...";		
+		togglebutton.textContent = "settings...";
+	}
+}
+
+-->
+</script>
+<style type="text/css">
+body { background-color: white; font-family: Arial, sans-serif; font-size: 13px; line-height: 1.2; padding: 1em; color: #2E2E2E; margin: auto 2em; }
+
+form#quicksearch { width: auto; border-style: solid; border-color: gray; border-width: 1px 0px; padding: 0.7em 0.5em; display:none; position:relative; }
+span#searchstat {padding-left: 1em;}
+
+div#settings { margin-top:0.7em; /* border-bottom: 1px transparent solid; background-color: #efefef; border: 1px grey solid; */ }
+div#settings ul {margin: 0; padding: 0; }
+div#settings li {margin: 0; padding: 0 1em 0 0; display: inline; list-style: none; }
+div#settings li + li { border-left: 2px #efefef solid; padding-left: 0.5em;}
+div#settings input { margin-bottom: 0px;}
+
+div#settings.hidden {display:none;}
+
+#showsettings { border: 1px grey solid; padding: 0 0.5em; float:right; line-height: 1.6em; text-align: right; }
+#showsettings:hover { cursor: pointer; }
+
+.invalidsearch { background-color: red; }
+input[type="button"] { background-color: #efefef; border: 1px #2E2E2E solid;}
+
+table { width: 100%; empty-cells: show; border-spacing: 0em 0.2em; margin: 1em 0em; border-style: none; }
+th, td { border: 1px gray solid; border-width: 1px 1px; padding: 0.5em; vertical-align: top; text-align: left; }
+th { background-color: #efefef; }
+td + td, th + th { border-left: none; }
+
+td a { color: navy; text-decoration: none; }
+td a:hover  { text-decoration: underline; }
+
+tr.noshow { display: none;}
+tr.highlight td { background-color: #EFEFEF; border-top: 2px #2E2E2E solid; font-weight: bold; }
+tr.abstract td, tr.review td, tr.bibtex td { background-color: #EFEFEF; text-align: justify; border-bottom: 2px #2E2E2E solid; }
+tr.nextshow td { border-bottom: 1px gray solid; }
+
+tr.bibtex pre { width: 100%; overflow: auto; white-space: pre-wrap;}
+p.infolinks { margin: 0.3em 0em 0em 0em; padding: 0px; }
+
+@media print {
+	p.infolinks, #qs_settings, #quicksearch, t.bibtex { display: none !important; }
+	tr { page-break-inside: avoid; }
+}
+</style>
+</head>
+<body>
+<a href="/"><h1>CATNIP Lab Publications</h1></a>
+<form action="" id="quicksearch">
+<input type="text" id="qs_field" autocomplete="off" placeholder="Type to search..." /> <input type="button" onclick="clearQS()" value="clear" />
+<span id="searchstat">Matching entries: <span id="stat">0</span></span>
+<div id="showsettings" onclick="toggleSettings()">settings...</div>
+<div id="settings" class="hidden">
+<ul>
+<li><input type="checkbox" class="search_setting" id="opt_useRegExp" onchange="updateSetting(this)"><label for="opt_useRegExp"> use RegExp</label></li>
+<li><input type="checkbox" class="search_setting" id="opt_noAccents" onchange="updateSetting(this)"><label for="opt_noAccents"> ignore accents</label></li>
+</ul>
+</div>
+</form>
+<table id="qs_table" border="1">
+<thead><tr><th width="20%">Author</th><th width="30%">Title</th><th width="5%">Year</th><th width="30%">Journal/Proceedings</th><th width="10%">Reftype</th><th width="5%">DOI/URL</th></tr></thead>
+<tbody>
+<tr id="Archer2015a" class="entry">
+	<td>Archer, E., Park, I.M., Buesing, L., Cunningham, J. and Paninski, L.</td>
+	<td>Black box variational inference for state space models</td>
+	<td>2015</td>
+	<td>ArXiv e-prints&nbsp;</td>
+	<td>unpublished
+	</td>
+	<td>
+
+
+
+<a href="https://arxiv.org/abs/1511.07367">arXiv</a> 
+	</td>
+</tr>
+<tr id="Archer2012a" class="entry">
+	<td>Archer, E., Park, I.M. and Pillow, J.</td>
+	<td>Bayesian entropy estimation for infinite neural alphabets</td>
+	<td>2012</td>
+	<td>Frontiers in Systems Neuroscience. Conference Abstract: Computational and Systems Neuroscience (COSYNE)&nbsp;</td>
+	<td>inproceedings
+	</td>
+	<td>
+
+
+
+
+	</td>
+</tr>
+<tr id="Archer2013b" class="entry">
+	<td>Archer, E., Park, I.M. and Pillow, J.</td>
+	<td>Semi-parametric Bayesian entropy estimation for binary spike trains</td>
+	<td>2013</td>
+	<td>Frontiers in Systems Neuroscience. Conference Abstract: Computational and Systems Neuroscience (COSYNE)&nbsp;</td>
+	<td>inproceedings
+	</td>
+	<td>
+
+
+
+
+	</td>
+</tr>
+<tr id="Archer2013c" class="entry">
+	<td>Archer, E., Park, I.M. and Pillow, J.</td>
+	<td>Bayesian and Quasi-Bayesian Estimators for Mutual Information from Discrete Data</td>
+	<td>2013</td>
+	<td>Entropy<br/>Vol. 15(5), pp. 1738-1755&nbsp;</td>
+	<td>article
+	</td>
+	<td>
+<a href="http://doi.org/10.3390/e15051738">DOI</a> 
+
+
+
+	</td>
+</tr>
+<tr id="Archer2014a" class="entry">
+	<td>Archer, E., Park, I.M. and Pillow, J.</td>
+	<td>Bayesian Entropy Estimation for Countable Discrete Distributions</td>
+	<td>2014</td>
+	<td>Journal of Machine Learning Research<br/>Vol. 15, pp. 2833-2868&nbsp;</td>
+	<td>article
+	</td>
+	<td>
+
+<a href="http://jmlr.org/papers/v15/archer14a.html">URL </a>
+
+<a href="https://arxiv.org/abs/1302.0328">arXiv</a> 
+	</td>
+</tr>
+<tr id="Archer2012b" class="entry">
+	<td>Archer, E., Park, I.M. and Pillow, J.W.</td>
+	<td>Bayesian estimation of discrete entropy with mixtures of stick breaking priors</td>
+	<td>2012</td>
+	<td>Advances in Neural Information Processing Systems (NIPS)&nbsp;</td>
+	<td>inproceedings
+	</td>
+	<td>
+
+
+
+
+	</td>
+</tr>
+<tr id="Archer2013d" class="entry">
+	<td>Archer, E., Park, I.M. and Pillow, J.W.</td>
+	<td>Bayesian entropy estimation for binary spike train data using parametric prior knowledge</td>
+	<td>2013</td>
+	<td>Advances in Neural Information Processing Systems (NIPS)&nbsp;</td>
+	<td>inproceedings
+	</td>
+	<td>
+
+
+
+
+	</td>
+</tr>
+<tr id="Bobkov2009a" class="entry">
+	<td>Bobkov, Y., Park, I., Ukhanov, K., Pr&iacute;ncipe, J.C. and Ache, B.W.</td>
+	<td>Population coding within an ensemble of rhythmically active primary olfactory receptor</td>
+	<td>2009</td>
+	<td>Society for Neuroscience&nbsp;</td>
+	<td>inproceedings
+	</td>
+	<td>
+
+
+
+
+	</td>
+</tr>
+<tr id="Bobkov2012a" class="entry">
+	<td>Bobkov, Y., Park, I., Ukhanov, K., Pr&iacute;ncipe, J.C. and Ache, B.W.</td>
+	<td>Cellular basis for response diversity in the olfactory periphery</td>
+	<td>2012</td>
+	<td>PLoS One<br/>Vol. 7(4), pp. e34843+&nbsp;</td>
+	<td>article
+	</td>
+	<td>
+<a href="http://doi.org/10.1371/journal.pone.0034843">DOI</a> 
+
+
+
+	</td>
+</tr>
+<tr id="Bobkov2010a" class="entry">
+	<td>Bobkov, Y., Ukhanov, K., Park, I., Pr&iacute;ncipe, J.C. and Ache, B.</td>
+	<td>Measuring Ensemble Activity in Lobster ORNs through Calcium Imaging</td>
+	<td>2010</td>
+	<td>Association for Chemoreception (AChemS) Annual Meeting&nbsp;</td>
+	<td>inproceedings
+	</td>
+	<td>
+
+
+
+
+	</td>
+</tr>
+<tr id="Brockmeier2010a" class="entry">
+	<td>Brockmeier, A.J., Park, I., Mahmoudi, B., Sanchez, J.C. and Pr&iacute;ncipe, J.C.</td>
+	<td>Spatio-Temporal Clustering of Firing Rates for Neural State Estimation</td>
+	<td>2010</td>
+	<td>Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBS)&nbsp;</td>
+	<td>inproceedings
+	</td>
+	<td>
+
+
+
+
+	</td>
+</tr>
+<tr id="Dikecligil2016" class="entry">
+	<td>Dikecligil, G.N., Graham, D., Park, I.M. and Fontanini, A.</td>
+	<td>Layer Specific Sensorimotor Activity in the Gustatory Cortex of Licking Mice</td>
+	<td>2016</td>
+	<td>Society for Neuroscience&nbsp;</td>
+	<td>inproceedings
+	</td>
+	<td>
+
+
+
+
+	</td>
+</tr>
+<tr id="Dockendorf2008" class="entry">
+	<td>Dockendorf, K., Park, I., He, P., Pr&iacute;ncipe, J.C. and DeMarse, T.B.</td>
+	<td>Liquid State Machines and Cultured Cortical Networks: The Separation Property</td>
+	<td>2009</td>
+	<td>Biosystems<br/>Vol. 95(2), pp. 90-97&nbsp;</td>
+	<td>article
+	</td>
+	<td>
+<a href="http://doi.org/10.1016/j.biosystems.2008.08.001">DOI</a> 
+
+
+
+	</td>
+</tr>
+<tr id="Huk2014a" class="entry">
+	<td>Huk, A., Yates, J., Katz, L., Park, I.M. and Pillow, J.</td>
+	<td>Dissociated functional significance of choice-related activity across the primate dorsal stream</td>
+	<td>2014</td>
+	<td>Frontiers in Systems Neuroscience. Conference Abstract: Computational and Systems Neuroscience (COSYNE)&nbsp;</td>
+	<td>inproceedings
+	</td>
+	<td>
+
+
+
+
+	</td>
+</tr>
+<tr id="Li2012b" class="entry">
+	<td>Li, L., Choi, J., Francis, J., Sanchez, J. and Principe, J.</td>
+	<td>Decoding stimuli from multi-source neural responses</td>
+	<td>2012</td>
+	<td>International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC), pp. 1331-1334&nbsp;</td>
+	<td>inproceedings
+	</td>
+	<td>
+
+
+
+
+	</td>
+</tr>
+<tr id="Li2010a" class="entry">
+	<td>Li, L., Park, I., Seth, S., Sanchez, J.C. and Pr&iacute;ncipe, J.C.</td>
+	<td>Neuronal Functional Connectivity Dynamics in Cortex: An MSC-based Analysis</td>
+	<td>2010</td>
+	<td>Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBS)&nbsp;</td>
+	<td>inproceedings
+	</td>
+	<td>
+
+
+
+
+	</td>
+</tr>
+<tr id="Li2011a" class="entry">
+	<td>Li, L., Park, I., Seth, S., Sanchez, J.C. and Pr&iacute;ncipe, J.C.</td>
+	<td>Functional Connectivity Dynamics Among Cortical Neurons: A Dependence Analysis</td>
+	<td>2012</td>
+	<td>IEEE Transactions on Neural Systems and Rehabilitation Engineering<br/>Vol. 20(1), pp. 18-30&nbsp;</td>
+	<td>article
+	</td>
+	<td>
+<a href="http://doi.org/10.1109/TNSRE.2011.2176749">DOI</a> 
+
+
+
+	</td>
+</tr>
+<tr id="Li2012a" class="entry">
+	<td>Li, L., Park, I.M., Brockmeier, A., Chen, B., Seth, S., Francis, J.T., Sanchez, J.C. and Pr&iacute;ncipe, J.C.</td>
+	<td>Adaptive Inverse Control of Neural Spatiotemporal Spike Patterns with a Reproducing Kernel Hilbert Space (RKHS) Framework</td>
+	<td>2012</td>
+	<td>IEEE Transactions on Neural Systems and Rehabilitation Engineering<br/>Vol. 21(4), pp. 532-543&nbsp;</td>
+	<td>article
+	</td>
+	<td>
+<a href="http://doi.org/10.1109/TNSRE.2012.2200300">DOI</a> 
+
+
+
+	</td>
+</tr>
+<tr id="Li2011b" class="entry">
+	<td>Li, L., Park, I.M., Seth, S., Choi, J., Francis, J.T., Sanchez, J.C. and Pr&iacute;ncipe, J.C.</td>
+	<td>An adaptive decoder from spike trains to micro-stimulation using kernel least-mean-square (KLMS) algorithm</td>
+	<td>2011</td>
+	<td>IEEE International Workshop on Machine Learning for Signal Processing (MLSP)&nbsp;</td>
+	<td>conference
+	</td>
+	<td>
+<a href="http://doi.org/10.1109/MLSP.2011.6064603">DOI</a> 
+
+
+
+	</td>
+</tr>
+<tr id="Li2009" class="entry">
+	<td>Li, L., Seth, S., Park, I., Sanchez, J.C. and Pr&iacute;ncipe, J.C.</td>
+	<td>Estimation and Visualization of Neuronal Functional Connectivity in Motor Tasks</td>
+	<td>2009</td>
+	<td>Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBS)&nbsp;</td>
+	<td>inproceedings
+	</td>
+	<td>
+<a href="http://doi.org/10.1109/IEMBS.2009.5333991">DOI</a> 
+
+
+
+	</td>
+</tr>
+<tr id="Liu2009b" class="entry">
+	<td>Liu, W., Park, I. and Pr&iacute;ncipe, J.C.</td>
+	<td>An Information Theoretic Approach of Designing Sparse Kernel Adaptive Filters</td>
+	<td>2009</td>
+	<td>IEEE Transactions on Neural Network<br/>Vol. 20(12), pp. 1950-1961&nbsp;</td>
+	<td>article
+	</td>
+	<td>
+<a href="http://doi.org/10.1109/TNN.2009.2033676">DOI</a> 
+
+
+
+	</td>
+</tr>
+<tr id="Liu2009a" class="entry">
+	<td>Liu, W., Park, I., Wang, Y. and Pr&iacute;ncipe, J.C.</td>
+	<td>Extended Kernel Recursive Least Squares Algorithm</td>
+	<td>2009</td>
+	<td>IEEE Transactions on Signal Processing<br/>Vol. 57(10), pp. 3801-3814&nbsp;</td>
+	<td>article
+	</td>
+	<td>
+<a href="http://doi.org/10.1109/TSP.2009.2022007">DOI</a> 
+
+
+
+	</td>
+</tr>
+<tr id="Paiva2010c" class="entry">
+	<td>Paiva, A.R.C. and Park, I.</td>
+	<td>Which measure should we use for unsupervised spike train learning?</td>
+	<td>2010</td>
+	<td>Statistical Analysis of Neuronal Data (SAND5)&nbsp;</td>
+	<td>conference
+	</td>
+	<td>
+
+
+
+
+	</td>
+</tr>
+<tr id="Paiva2007b" class="entry">
+	<td>Paiva, A.R.C., Park, I. and Pr\incipe, J.C.</td>
+	<td>Innovating Signal Processing for Spike Train Data</td>
+	<td>2007</td>
+	<td>International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC)&nbsp;</td>
+	<td>inproceedings
+	</td>
+	<td>
+
+
+
+
+	</td>
+</tr>
+<tr id="Paiva2010a" class="entry">
+	<td>Paiva, A.R.C., Park, I. and Pr&iacute;ncipe, J.C.</td>
+	<td>Optimization in Reproducing Kernel Hilbert Spaces of Spike Trains</td>
+	<td>?</td>
+	<td>Computational Neuroscience&nbsp;</td>
+	<td>inbook
+	<br/>(in press)</td>
+	<td>
+
+
+
+
+	</td>
+</tr>
+<tr id="Paiva2010b" class="entry">
+	<td>Paiva, A.R.C., Park, I. and Pr&iacute;ncipe, J.C.</td>
+	<td>Inner Products for Representation and Learning in the Spike Train Domain</td>
+	<td>2010</td>
+	<td>Statistical Signal Processing for Neuroscience&nbsp;</td>
+	<td>inbook
+	</td>
+	<td>
+
+
+
+
+	</td>
+</tr>
+<tr id="Paiva2008a" class="entry">
+	<td>Paiva, A.R.C., Park, I. and Pr&iacute;ncipe, J.C.</td>
+	<td>Reproducing Kernel Hilbert Spaces for Spike Train Analysis</td>
+	<td>2008</td>
+	<td>IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP)&nbsp;</td>
+	<td>inproceedings
+	</td>
+	<td>
+<a href="http://doi.org/10.1109/ICASSP.2008.4518834">DOI</a> 
+
+
+
+	</td>
+</tr>
+<tr id="Paiva2008b" class="entry">
+	<td>Paiva, A.R.C., Park, I. and Pr&iacute;ncipe, J.C.</td>
+	<td>A Reproducing Kernel Hilbert Space framework for Spike Trains</td>
+	<td>2009</td>
+	<td>Neural Computation<br/>Vol. 21(2), pp. 424-449&nbsp;</td>
+	<td>article
+	</td>
+	<td>
+<a href="http://doi.org/10.1162/neco.2008.09-07-614">DOI</a> 
+
+
+
+	</td>
+</tr>
+<tr id="Paiva2009a" class="entry">
+	<td>Paiva, A.R.C., Park, I. and Pr&iacute;ncipe, J.C.</td>
+	<td>A Comparison of Binless Spike Train Measures</td>
+	<td>2010</td>
+	<td>Neural Computing &amp; Applications<br/>Vol. 19, pp. 405-419&nbsp;</td>
+	<td>article
+	</td>
+	<td>
+<a href="http://doi.org/10.1007/s00521-009-0307-6">DOI</a> 
+
+
+
+	</td>
+</tr>
+<tr id="Paiva2011" class="entry">
+	<td>Paiva, A.R.C., Park, I., Pr&iacute;ncipe, J.C. and Sanchez, J.</td>
+	<td>Instantaneous cross-correlation analysis of neural ensembles with high temporal resolution</td>
+	<td>2013</td>
+	<td>Neural engineering applied to neurorehabilitation&nbsp;</td>
+	<td>inbook
+	</td>
+	<td>
+
+
+
+
+	</td>
+</tr>
+<tr id="Paiva2008c" class="entry">
+	<td>Paiva, A.R.C., Park, I., Sanchez, J. and Pr&iacute;ncipe, J.C.</td>
+	<td>Peri-event Cross-Correlation over Time for Analysis of Interactions in Neuronal Firing</td>
+	<td>2008</td>
+	<td>International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC)&nbsp;</td>
+	<td>article
+	</td>
+	<td>
+
+
+
+
+	</td>
+</tr>
+<tr id="Paiva2007a" class="entry">
+	<td>Paiva, A.R.C., Rao, S., Park, I. and Pr\incipe, J.C.</td>
+	<td>Spectral Clustering of Synchronous Spike Trains</td>
+	<td>2007</td>
+	<td>IEEE International Joint Conference on Neural Networks (IJCNN)&nbsp;</td>
+	<td>inproceedings
+	</td>
+	<td>
+
+
+
+
+	</td>
+</tr>
+<tr id="ParkMSThesis2007" class="entry">
+	<td>Park, I.</td>
+	<td>Continuous time correlation analysis techniques for spike trains</td>
+	<td>2007</td>
+	<td><i>School</i>: The University of Florida&nbsp;</td>
+	<td>mastersthesis
+	</td>
+	<td>
+
+
+
+
+	</td>
+</tr>
+<tr id="Park2009b" class="entry">
+	<td>Park, I., Bobkov, Y., Ukhanov, K., Ache, B.W. and Pr&iacute;ncipe, J.C.</td>
+	<td>Input Driven Synchrony of Oscillating Olfactory Receptor Neurons: A Computational Modeling Study</td>
+	<td>2009</td>
+	<td>Association for Chemoreception (AChemS) Annual Meeting&nbsp;</td>
+	<td>inproceedings
+	</td>
+	<td>
+
+
+
+
+	</td>
+</tr>
+<tr id="Park2008a" class="entry">
+	<td>Park, I., Paiva, A.R.C., DeMarse, T.B. and Pr&iacute;ncipe, J.C.</td>
+	<td>An efficient algorithm for continuous-time cross correlogram of spike trains</td>
+	<td>2008</td>
+	<td>Journal of Neuroscience Methods<br/>Vol. 168(2), pp. 514-523&nbsp;</td>
+	<td>article
+	</td>
+	<td>
+<a href="http://doi.org/10.1016/j.jneumeth.2007.10.005">DOI</a> 
+
+
+
+	</td>
+</tr>
+<tr id="Park2007" class="entry">
+	<td>Park, I., Paiva, A.R.C., DeMarse, T.B., Pr&iacute;ncipe, J.C. and Harris, J.</td>
+	<td>A Closed Form Solution for Multiple-Input Spike Based Adaptive Filters</td>
+	<td>2007</td>
+	<td>IEEE International Joint Conference on Neural Networks (IJCNN)&nbsp;</td>
+	<td>inproceedings
+	</td>
+	<td>
+
+
+
+
+	</td>
+</tr>
+<tr id="Park2007b" class="entry">
+	<td>Park, I., Paiva, A.R.C., Pr&iacute;ncipe, J.C. and DeMarse, T.B.</td>
+	<td>An Efficient Computation of Continuous-time Correlogram of Spike Trains</td>
+	<td>2007</td>
+	<td>Frontiers in Systems Neuroscience. Conference Abstract: Computational and Systems Neuroscience (COSYNE)&nbsp;</td>
+	<td>inproceedings
+	</td>
+	<td>
+
+
+
+
+	</td>
+</tr>
+<tr id="Park2005" class="entry">
+	<td>Park, I. and Park, J.C.</td>
+	<td>Modeling Causality in Biological Pathways for Logical Identification of Drug Targets</td>
+	<td>2005</td>
+	<td>Bioinfo&nbsp;</td>
+	<td>inproceedings
+	</td>
+	<td>
+
+
+
+
+	</td>
+</tr>
+<tr id="Park2008b" class="entry">
+	<td>Park, I. and Pr&iacute;ncipe, J.C.</td>
+	<td>Correntropy based Granger causality</td>
+	<td>2008</td>
+	<td>IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP)&nbsp;</td>
+	<td>inproceedings
+	</td>
+	<td>
+<a href="http://doi.org/10.1109/ICASSP.2008.4518432">DOI</a> 
+
+
+
+	</td>
+</tr>
+<tr id="Park2009c" class="entry">
+	<td>Park, I. and Pr&iacute;ncipe, J.C.</td>
+	<td>Significance test for spike trains based on finite point process estimation</td>
+	<td>2009</td>
+	<td>Society for Neuroscience&nbsp;</td>
+	<td>inproceedings
+	</td>
+	<td>
+
+
+
+
+	</td>
+</tr>
+<tr id="Park2010b" class="entry">
+	<td>Park, I. and Pr&iacute;ncipe, J.C.</td>
+	<td>Quantification of Inter-trial Non-stationarity in Spike Trains from Periodically Stimulated Neural Cultures</td>
+	<td>2010</td>
+	<td>IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP), pp. 5442-5445&nbsp;</td>
+	<td>inproceedings
+	<br/>Special session on Multivariate Analysis of Brain Signals: Methods and Applications</td>
+	<td>
+<a href="http://doi.org/10.1109/ICASSP.2010.5494920">DOI</a> 
+
+
+
+	</td>
+</tr>
+<tr id="Park2009a" class="entry">
+	<td>Park, I., Rao, M., DeMarse, T.B. and Pr&iacute;ncipe, J.C.</td>
+	<td>Point Process Model for Precisely Timed Spike Trains.</td>
+	<td>2009</td>
+	<td>Frontiers in Systems Neuroscience. Conference Abstract: Computational and Systems Neuroscience (COSYNE)&nbsp;</td>
+	<td>inproceedings
+	</td>
+	<td>
+<a href="doi: 10.3389/conf.neuro.06.2009.03.227">DOI</a> 
+
+
+
+	</td>
+</tr>
+<tr id="Park2011d" class="entry">
+	<td>Park, I., Seth, S., Rao, M. and Principe, J.C.</td>
+	<td>Estimation of symmetric chi-square divergence for point processes</td>
+	<td>2011</td>
+	<td>IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP), pp. 2016-2019&nbsp;</td>
+	<td>inproceedings
+	</td>
+	<td>
+<a href="http://doi.org/10.1109/ICASSP.2011.5946907">DOI</a> 
+
+
+
+	</td>
+</tr>
+<tr id="Park2006" class="entry">
+	<td>Park, I., Xu, D., DeMarse, T.B. and Pr&iacute;ncipe, J.C.</td>
+	<td>Modeling of Synchronized Burst in Dissociated Cortical Tissue: An Exploration of Parameter Space</td>
+	<td>2006</td>
+	<td>IEEE International Joint Conference on Neural Networks (IJCNN)&nbsp;</td>
+	<td>inproceedings
+	</td>
+	<td>
+<a href="http://doi.org/10.1109/IJCNN.2006.246734">DOI</a> 
+
+
+
+	</td>
+</tr>
+<tr id="Park2010a" class="entry">
+	<td>Park, I.M.</td>
+	<td>Capturing spike train similarity structure: A point process divergence approach</td>
+	<td>2010</td>
+	<td><i>School</i>: The University of Florida&nbsp;</td>
+	<td>phdthesis
+	</td>
+	<td>
+
+
+
+
+	</td>
+</tr>
+<tr id="Park2014b" class="entry">
+	<td>Park, I.M., Archer, E., Latimer, K. and Pillow, J.</td>
+	<td>Scalable nonparametric models for binary spike patterns</td>
+	<td>2014</td>
+	<td>Frontiers in Systems Neuroscience. Conference Abstract: Computational and Systems Neuroscience (COSYNE)&nbsp;</td>
+	<td>inproceedings
+	</td>
+	<td>
+
+
+
+
+	</td>
+</tr>
+<tr id="Park2013e" class="entry">
+	<td>Park, I.M., Archer, E., Latimer, K. and Pillow, J.W.</td>
+	<td>Universal models for binary spike patterns using centered Dirichlet processes</td>
+	<td>2013</td>
+	<td>Advances in Neural Information Processing Systems (NIPS)&nbsp;</td>
+	<td>inproceedings
+	</td>
+	<td>
+
+
+
+
+	</td>
+</tr>
+<tr id="Park2013c" class="entry">
+	<td>Park, I.M., Archer, E. and Pillow, J.</td>
+	<td>Bayesian entropy estimators for spike trains</td>
+	<td>2013</td>
+	<td>Computational Neuroscience (CNS)&nbsp;</td>
+	<td>inproceedings
+	</td>
+	<td>
+
+
+
+
+	</td>
+</tr>
+<tr id="Park2013b" class="entry">
+	<td>Park, I.M., Archer, E., Priebe, N. and Pillow, J.</td>
+	<td>Got a moment or two? Neural models and linear dimensionality reduction</td>
+	<td>2013</td>
+	<td>Frontiers in Systems Neuroscience. Conference Abstract: Computational and Systems Neuroscience (COSYNE)&nbsp;</td>
+	<td>inproceedings
+	</td>
+	<td>
+
+
+
+
+	</td>
+</tr>
+<tr id="Park2013f" class="entry">
+	<td>Park, I.M., Archer, E., Priebe, N. and Pillow, J.W.</td>
+	<td>Spectral methods for neural characterization using generalized quadratic models</td>
+	<td>2013</td>
+	<td>Advances in Neural Information Processing Systems (NIPS)&nbsp;</td>
+	<td>inproceedings
+	</td>
+	<td>
+
+
+
+
+	</td>
+</tr>
+<tr id="Park2014a" class="entry">
+	<td>Park, I.M., Bobkov, Y.V., Ache, B.W. and Pr&iacute;ncipe, J.C.</td>
+	<td>Intermittency coding in the primary olfactory system: A neural substrate for olfactory scene analysis</td>
+	<td>2014</td>
+	<td>The Journal of Neuroscience<br/>Vol. 34(3), pp. 941-952&nbsp;</td>
+	<td>article
+	</td>
+	<td>
+<a href="http://doi.org/10.1523/jneurosci.2204-13.2014">DOI</a> 
+
+
+
+	</td>
+</tr>
+<tr id="Park2011a" class="entry">
+	<td>Park, I.M., Meister, M., Huk, A. and Pillow, J.W.</td>
+	<td>Detailed encoding and decoding of choice-related information from LIP spike trains</td>
+	<td>2011</td>
+	<td>Frontiers in Systems Neuroscience. Conference Abstract: Computational and Systems Neuroscience (COSYNE)&nbsp;</td>
+	<td>inproceedings
+	</td>
+	<td>
+
+
+
+
+	</td>
+</tr>
+<tr id="Park2012e" class="entry">
+	<td>Park, I.M., Meister, M.L.R., Huk, A.C. and Pillow, J.W.</td>
+	<td>Deciphering the code for sensorimotor decision-making at the level of single neurons in parietal cortex</td>
+	<td>2012</td>
+	<td>Society for Neuroscience&nbsp;</td>
+	<td>inproceedings
+	<br/>(oral presentation)</td>
+	<td>
+
+
+
+
+	</td>
+</tr>
+<tr id="Park2014d" class="entry">
+	<td>Park, I.M., Meister, M.L.R., Huk, A.C. and Pillow, J.W.</td>
+	<td>Encoding and decoding in parietal cortex during sensorimotor decision-making</td>
+	<td>2014</td>
+	<td>Nature Neuroscience<br/>Vol. 17(10), pp. 1395-1403&nbsp;</td>
+	<td>article
+	</td>
+	<td>
+<a href="http://doi.org/10.1038/nn.3800">DOI</a> 
+
+
+
+	</td>
+</tr>
+<tr id="Park2012c" class="entry">
+	<td>Park, I.M., Nassar, M. and Park, M.</td>
+	<td>Active Bayesian Optimization: Minimizing Minimizer Entropy</td>
+	<td>2012</td>
+	<td>ArXiv e-prints&nbsp;</td>
+	<td>unpublished
+	</td>
+	<td>
+
+
+
+<a href="https://arxiv.org/abs/1202.2143">arXiv</a> 
+	</td>
+</tr>
+<tr id="Park2012b" class="entry">
+	<td>Park, I.M. and Pillow, J.</td>
+	<td>Bayesian spike-triggered covariance and the elliptical LNP model</td>
+	<td>2012</td>
+	<td>Frontiers in Systems Neuroscience. Conference Abstract: Computational and Systems Neuroscience (COSYNE)&nbsp;</td>
+	<td>inproceedings
+	</td>
+	<td>
+
+
+
+
+	</td>
+</tr>
+<tr id="Park2011c" class="entry">
+	<td>Park, I.M. and Pillow, J.W.</td>
+	<td>Bayesian Spike Triggered Covariance Analysis</td>
+	<td>2011</td>
+	<td>Advances in Neural Information Processing Systems (NIPS)&nbsp;</td>
+	<td>inproceedings
+	</td>
+	<td>
+
+
+
+
+	</td>
+</tr>
+<tr id="Park2013a" class="entry">
+	<td>Park, I.M., Seth, S., Paiva, A.R.C., Li, L. and Principe, J.C.</td>
+	<td>Kernel methods on spike train space for neuroscience: a tutorial</td>
+	<td>2013</td>
+	<td>IEEE Signal Processing Magazine<br/>Vol. 30(4), pp. 149-160&nbsp;</td>
+	<td>article
+	</td>
+	<td>
+<a href="http://doi.org/10.1109/msp.2013.2251072">DOI</a> 
+
+
+<a href="https://arxiv.org/abs/1302.5964">arXiv</a> 
+	</td>
+</tr>
+<tr id="Park2011b" class="entry">
+	<td>Park, I.M., Seth, S. and Pr&iacute;ncipe, J.C.</td>
+	<td>Spike Train Kernel Methods for Neuroscience</td>
+	<td>2011</td>
+	<td>Joint Statistical Meeting&nbsp;</td>
+	<td>conference
+	</td>
+	<td>
+
+
+
+
+	</td>
+</tr>
+<tr id="Park2012a" class="entry">
+	<td>Park, I.M., Seth, S., Rao, M. and Pr&iacute;ncipe, J.C.</td>
+	<td>Strictly positive definite spike train kernels for point process divergences</td>
+	<td>2012</td>
+	<td>Neural Computation<br/>Vol. 24(8), pp. 2223-2250&nbsp;</td>
+	<td>article
+	</td>
+	<td>
+<a href="http://doi.org/10.1162/NECO_a_00309">DOI</a> 
+
+
+
+	</td>
+</tr>
+<tr id="Park2014c" class="entry">
+	<td>Park, I.M., Seth, S. and Vaerenbergh, S.V.</td>
+	<td>Probabilistic Kernel Least Mean Squares Algorithms</td>
+	<td>2014</td>
+	<td>IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP)&nbsp;</td>
+	<td>inproceedings
+	</td>
+	<td>
+<a href="http://doi.org/10.1109/ICASSP.2014.6855214">DOI</a> 
+<a href="http://gtas.unican.es/pub/393">URL </a>
+
+
+	</td>
+</tr>
+<tr id="Park2013g" class="entry">
+	<td>Park, I.M., Seth, S. and Van Vaerenbergh, S.</td>
+	<td>Bayesian Extensions of Kernel Least Mean Squares</td>
+	<td>2013</td>
+	<td>ArXiv e-prints&nbsp;</td>
+	<td>unpublished
+	</td>
+	<td>
+
+
+
+<a href="https://arxiv.org/abs/1310.5347">arXiv</a> 
+	</td>
+</tr>
+<tr id="Park2015a" class="entry">
+	<td>Park, I.M., Yates, J., Huk, A. and Pillow, J.</td>
+	<td>Dynamic correlations between visual and decision areas during perceptual decision-making</td>
+	<td>2015</td>
+	<td>Frontiers in Systems Neuroscience. Conference Abstract: Computational and Systems Neuroscience (COSYNE)&nbsp;</td>
+	<td>inproceedings
+	</td>
+	<td>
+
+
+
+
+	</td>
+</tr>
+<tr id="Pillow2013a" class="entry">
+	<td>Pillow, J. and Park, I.M.</td>
+	<td>Beyond Barlow: a Bayesian theory of efficient neural coding</td>
+	<td>2013</td>
+	<td>Frontiers in Systems Neuroscience. Conference Abstract: Computational and Systems Neuroscience (COSYNE)&nbsp;</td>
+	<td>inproceedings
+	</td>
+	<td>
+
+
+
+
+	</td>
+</tr>
+<tr id="Principe2010" class="entry">
+	<td>Pr&iacute;ncipe, J.C.</td>
+	<td>Information Theoretic Learning</td>
+	<td>2010</td>
+	<td>&nbsp;</td>
+	<td>book
+	</td>
+	<td>
+
+<a href="http://www.springer.com/us/book/9781441915696">URL </a>
+
+
+	</td>
+</tr>
+<tr id="bookch2010a" class="entry">
+	<td>Pr&iacute;ncipe, J.C., Xu, J.W., Jenssen, R., Paiva, A. and Park, I.</td>
+	<td>A Reproducing Kernel Hilbert Space Framework for Information-Theoretic Learning</td>
+	<td>2010</td>
+	<td>&nbsp;</td>
+	<td>inbook
+	</td>
+	<td>
+
+
+
+
+	</td>
+</tr>
+<tr id="Seth2010a" class="entry">
+	<td>Seth, S., Park, I., Brockmeier, A.J., Semework, M., Choi, J., Francis, J. and Pr&iacute;ncipe, J.C.</td>
+	<td>A novel family of non-parametric cumulative based divergences for point processes</td>
+	<td>2010</td>
+	<td>Advances in Neural Information Processing Systems (NIPS), pp. 2119-2127&nbsp;</td>
+	<td>inproceedings
+	</td>
+	<td>
+
+
+
+
+	</td>
+</tr>
+<tr id="Seth2009a" class="entry">
+	<td>Seth, S., Park, I. and Pr&iacute;ncipe, J.C.</td>
+	<td>A new nonparametric measure of conditional independence</td>
+	<td>2009</td>
+	<td>IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP)&nbsp;</td>
+	<td>inproceedings
+	</td>
+	<td>
+<a href="http://doi.org/10.1109/ICASSP.2009.4960250">DOI</a> 
+
+
+
+	</td>
+</tr>
+<tr id="Seth2011a" class="entry">
+	<td>Seth, S., Rao, M., Park, I. and Pr&iacute;ncipe, J.C.</td>
+	<td>A Unified Framework for Quadratic Measures of Independence</td>
+	<td>2011</td>
+	<td>IEEE Transactions on Signal Processing<br/>Vol. 59, pp. 3624-3635&nbsp;</td>
+	<td>article
+	</td>
+	<td>
+<a href="http://doi.org/10.1109/TSP.2011.2153197">DOI</a> 
+
+
+
+	</td>
+</tr>
+<tr id="Wu2015a" class="entry">
+	<td>Wu, A., Park, I.M. and Pillow, J.</td>
+	<td>Convolutional spike-triggered covariance analysis for estimating subunit models</td>
+	<td>2015</td>
+	<td>Frontiers in Systems Neuroscience. Conference Abstract: Computational and Systems Neuroscience (COSYNE)&nbsp;</td>
+	<td>inproceedings
+	</td>
+	<td>
+
+
+
+
+	</td>
+</tr>
+<tr id="Wu2015b" class="entry">
+	<td>Wu, A., Park, I.M. and Pillow, J.</td>
+	<td>Convolutional spike-triggered covariance analysis for neural subunit models</td>
+	<td>2015</td>
+	<td>Advances in Neural Information Processing Systems (NIPS)&nbsp;</td>
+	<td>inproceedings
+	</td>
+	<td>
+
+
+
+
+	</td>
+</tr>
+<tr id="Xu2008" class="entry">
+	<td>Xu, J.W., Paiva, A.R.C., Park, I. and Pr&iacute;ncipe, J.C.</td>
+	<td>A Reproducing Kernel Hilbert Space Framework for Information-Theoretic Learning</td>
+	<td>2008</td>
+	<td>IEEE Transactions on Signal Processing<br/>Vol. 56(12), pp. 5891-5902&nbsp;</td>
+	<td>article
+	</td>
+	<td>
+<a href="http://doi.org/10.1109/TSP.2008.2005085">DOI</a> 
+
+
+
+	</td>
+</tr>
+<tr id="Yates2015a" class="entry">
+	<td>Yates, J., Archer, E., Huk, A.C. and Park, I.M.</td>
+	<td>Canonical correlations reveal co-variability between spike trains and local field potentials in area MT</td>
+	<td>2015</td>
+	<td>Organization for Computational Neuroscience (CNS)&nbsp;</td>
+	<td>inproceedings
+	</td>
+	<td>
+
+
+
+
+	</td>
+</tr>
+<tr id="Yates2013a" class="entry">
+	<td>Yates, J., Park, I.M., Cormack, L., Pillow, J. and Huk, A.</td>
+	<td>Precise characterization of multiple LIP neurons in relation to stimulus and behavior</td>
+	<td>2013</td>
+	<td>Frontiers in Systems Neuroscience. Conference Abstract: Computational and Systems Neuroscience (COSYNE)&nbsp;</td>
+	<td>inproceedings
+	</td>
+	<td>
+
+
+
+
+	</td>
+</tr>
+<tr id="Yates2013b" class="entry">
+	<td>Yates, J., Park, I.M., Cormack, L., Pillow, J. and Huk, A.</td>
+	<td>Precise characterization of dorsal stream neural activity during decision making</td>
+	<td>2013</td>
+	<td>Society for Neuroscience&nbsp;</td>
+	<td>inproceedings
+	</td>
+	<td>
+
+
+
+
+	</td>
+</tr>
+<tr id="Yates2014a" class="entry">
+	<td>Yates, J.L., Katz, L.N., Park, I.M., Pillow, J.W. and Huk, A.C.</td>
+	<td>Correlations and choice probabilities in simultaneously recorded MT and LIP neurons</td>
+	<td>2014</td>
+	<td>Society for Neuroscience&nbsp;</td>
+	<td>inproceedings
+	</td>
+	<td>
+
+
+
+
+	</td>
+</tr>
+<tr id="Zhao2016a" class="entry">
+	<td>Zhao, Y. and Park, I.M.</td>
+	<td>Variational Latent Gaussian Process for Recovering Single-Trial Dynamics from Population Spike Trains</td>
+	<td>2016</td>
+	<td>ArXiv e-prints&nbsp;</td>
+	<td>unpublished
+	<br/>(under review)</td>
+	<td>
+
+
+<a href="https://www.youtube.com/watch?v=CrY5AfNH1ik">youtube</a> 
+<a href="https://arxiv.org/abs/1604.03053">arXiv</a> 
+	</td>
+</tr>
+<tr id="Zhao2016b" class="entry">
+	<td>Zhao, Y. and Park, I.M.</td>
+	<td>Inferring low-dimensional network dynamics with variational latent Gaussian process</td>
+	<td>2016</td>
+	<td>Organization for Computational Neuroscience (CNS)&nbsp;</td>
+	<td>inproceedings
+	</td>
+	<td>
+
+
+
+
+	</td>
+</tr>
+<tr id="Zhao2016c" class="entry">
+	<td>Zhao, Y. and Park, I.M.</td>
+	<td>Variational inference of latent Gaussian neural dynamics</td>
+	<td>2016</td>
+	<td>International Conference on Machine Learning (ICML) Workshop on Computational Biology&nbsp;</td>
+	<td>inproceedings
+	</td>
+	<td>
+
+
+
+
+	</td>
+</tr>
+<tr id="Zhao2016d" class="entry">
+	<td>Zhao, Y. and Park, I.M.</td>
+	<td>Interpretable Nonlinear Dynamic Modeling of Neural Trajectories</td>
+	<td>2016</td>
+	<td>Advances in Neural Information Processing Systems (NIPS)&nbsp;</td>
+	<td>inproceedings
+	</td>
+	<td>
+
+
+
+<a href="https://arxiv.org/abs/1608.06546">arXiv</a> 
+	</td>
+</tr>
+</tbody>
+</table>
+<footer>
+<small>Created by <a href="http://jabref.sourceforge.net">JabRef</a> on 29/10/2016.</small>
+</footer>
+</body>
+</html>
