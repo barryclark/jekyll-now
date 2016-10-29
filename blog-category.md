@@ -216,7 +216,7 @@ heading: Blog
 
             <!-- apache-myself -->
             <div id="apache-myself" class="panel panel-info">
-              <div class="panel-heading">Apache MySelf <span class="label label-info">1</span></div>
+              <div class="panel-heading">Log Analys <span class="label label-info">1</span></div>
               <div class="panel-body">
                 <p>Üniversite bitirme projesi olarak, cluster ortamda çalışan bir Log Analiz uygulaması yapmıştım. Başlangıçta sadece Log analizi olarak düşünmüşken proje ilerledikçe farklı dosya türlerine destek verecek yapıya büründü proje.</p>
 
