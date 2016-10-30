@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/947,186145340,2016-10-30 16:17:01,2016-10-30 16:14:08,[Video] Elisoccorso Guardia di Finanza su #Castelluccio di #Norcia,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""30/10/2016"", ""descrizione"": ""LIVE/ Elisoccorso alpino Guardia di Finanza in sorvolo su Castelluccio di Norcia [Fonte: Rai]"", ""link"": ""https://twitter.com/Radio1Rai/status/792756620711321600"", ""titolo"": ""[Video] Elisoccorso Guardia di Finanza su #Castelluccio di #Norcia""}","<pre><yamldata>titolo: '[Video] Elisoccorso Guardia di Finanza su #Castelluccio di #Norcia'
+descrizione: 'LIVE/ Elisoccorso alpino Guardia di Finanza in sorvolo su Castelluccio di Norcia [Fonte: Rai]'
+link: 'https://twitter.com/Radio1Rai/status/792756620711321600'
+data: 30/10/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/946,186145284,2016-10-30 16:15:12,2016-10-30 16:13:17,USL Umbria 2 - Spostamento guardia medica a #Foligno,,,"[""Accettato"", ""Bollettino"", ""Notizie Utili"", ""Sisma Ottobre"", ""Twitter""]",,,"{""data"": ""30/10/2016"", ""descrizione"": ""La Usl Umbria 2 comunica che la Guardia medica di Foligno \u00e8 temporaneamente spostata da via del Campanile a Via dell\u2019Ospedale, c/o sede del Centro di Salute."", ""link"": ""https://twitter.com/uslumbria2/status/792759882835427328"", ""titolo"": ""USL Umbria 2 - Spostamento guardia medica a #Foligno""}","<pre><yamldata>titolo: 'USL Umbria 2 - Spostamento guardia medica a #Foligno'
 descrizione: 'La Usl Umbria 2 comunica che la Guardia medica di Foligno è temporaneamente spostata da via del Campanile a Via dell’Ospedale, c/o sede del Centro di Salute.'
 link: 'https://twitter.com/uslumbria2/status/792759882835427328'
@@ -218,16 +223,6 @@ lat: '43.4870518'
 lon: '11.3747003'
 link: ''
 immagine: ''
-data: 30/10/2016
-</yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/899,186130350,2016-10-30 11:21:16,2016-10-30 11:13:00,Metto a disposizione appartamento in provincia di Forlì-Cesena,44.0712863,12.3242981,"[""Accettato"", ""Alloggi"", ""Bollettino"", ""Form"", ""Sisma Ottobre""]",,http://i.imgur.com/oJ5mT4B.jpg,"{""data"": ""30/10/2016"", ""descrizione"": ""Metto a disposizione un appartamento per i terremotati di Norcia e paesi limitrofi . Ha una camera matrimoniale, bagno, cucinotto e soggiorno con divano letto matrimoniale. Sarebbe bello se fossero anziani, ma non \u00e8 prioritario. Sar\u00e0 gioia grande ospitarvi"", ""email"": ""robertasama@libero.it"", ""immagine"": ""http://i.imgur.com/oJ5mT4B.jpg"", ""indirizzo"": ""Via Tosoni, Longiano, FC, Emilia-Romagna, Italia"", ""lat"": ""44.0712863"", ""link"": """", ""lon"": ""12.3242981"", ""tel"": ""3494699977""}","<pre><yamldata>tel: '3494699977'
-email: robertasama@libero.it
-descrizione: 'Metto a disposizione un appartamento per i terremotati di Norcia e paesi limitrofi . Ha una camera matrimoniale, bagno, cucinotto e soggiorno con divano letto matrimoniale. Sarebbe bello se fossero anziani, ma non è prioritario. Sarà gioia grande ospitarvi'
-indirizzo: 'Via Tosoni, Longiano, FC, Emilia-Romagna, Italia'
-lat: '44.0712863'
-lon: '12.3242981'
-link: ''
-immagine: 'http://i.imgur.com/oJ5mT4B.jpg'
 data: 30/10/2016
 </yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/899,186130350,2016-10-30 11:21:16,2016-10-30 11:13:00,Metto a disposizione appartamento in provincia di Forlì-Cesena,44.0712863,12.3242981,"[""Accettato"", ""Alloggi"", ""Bollettino"", ""Form"", ""Sisma Ottobre""]",,http://i.imgur.com/oJ5mT4B.jpg,"{""data"": ""30/10/2016"", ""descrizione"": ""Metto a disposizione un appartamento per i terremotati di Norcia e paesi limitrofi . Ha una camera matrimoniale, bagno, cucinotto e soggiorno con divano letto matrimoniale. Sarebbe bello se fossero anziani, ma non \u00e8 prioritario. Sar\u00e0 gioia grande ospitarvi"", ""email"": ""robertasama@libero.it"", ""immagine"": ""http://i.imgur.com/oJ5mT4B.jpg"", ""indirizzo"": ""Via Tosoni, Longiano, FC, Emilia-Romagna, Italia"", ""lat"": ""44.0712863"", ""link"": """", ""lon"": ""12.3242981"", ""tel"": ""3494699977""}","<pre><yamldata>tel: '3494699977'
