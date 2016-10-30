@@ -26,7 +26,7 @@ tags:
 - jee
 comments:
 
-    [...]How to get the file path of a Log4J log file? | Coder&#039;s Block[...]...
+    [...]How to get the file path of a Log4J log file? | Coders Block[...]...
 ---
 
 Assume the log4j.properties file is as below,
@@ -43,7 +43,7 @@ log4j.appender.migration.layout.conversionPattern = %d %-5p %c - %m%n
 
 In such case, your Java code should be as follows,
       
-```Java
+```java
 Logger logger = Logger.getLogger("migrationlog"); //Defining the LoggerFileAppender 
 appender = (FileAppender)logger.getAppender("migration");
 return new File(appender.getFile());  
