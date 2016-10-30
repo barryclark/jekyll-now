@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/902,186132251,2016-10-30 12:14:38,2016-10-30 12:00:37,Si mette a disposizione alloggio a Buja (Ud),46.2099772,13.1279943,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""30/10/2016"", ""descrizione"": ""Si mette a disposizione per il tempo necessario una camera doppia con cucina salotto bagno privati presso parte di abitazione a Buja (Udine) ricostruita post terremoto 1976 del Friuli in contesto rurale. Porte aperte, subito a disposizione."", ""email"": ""gabriellafabbro@yahoo.it"", ""immagine"": """", ""indirizzo"": ""16, Via Ceved\u00e2l, Santo Stefano, Buja, UD, Friuli Venezia Giulia, 33030, Italia"", ""lat"": ""46.2099772"", ""link"": """", ""lon"": ""13.1279943"", ""tel"": ""3297760476""}","<pre><yamldata>tel: '3297760476'
+email: gabriellafabbro@yahoo.it
+descrizione: 'Si mette a disposizione per il tempo necessario una camera doppia con cucina salotto bagno privati presso parte di abitazione a Buja (Udine) ricostruita post terremoto 1976 del Friuli in contesto rurale. Porte aperte, subito a disposizione.'
+indirizzo: '16, Via Cevedâl, Santo Stefano, Buja, UD, Friuli Venezia Giulia, 33030, Italia'
+lat: '46.2099772'
+lon: '13.1279943'
+link: ''
+immagine: ''
+data: 30/10/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/901,186131862,2016-10-30 11:59:49,2016-10-30 11:50:52,ROULOTTE PER MAMMA CON BAMBINA PICCOLA,42.6292367,13.2891755,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""ROULOTTE PER MAMMA CON BAMBINA PICCOLA"", ""data"": ""30/10/2016"", ""descrizione"": ""Ad Amatrice serve urgentemente una roulotte per una mamma (24 anni) con una bambina piccola (3 anni). Contattare Antonella."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Piazza Cacciatori del Tevere, Casalene, Amatrice, RI, Lazio, 02012, Italia"", ""lat"": ""42.6292367"", ""link"": """", ""lon"": ""13.2891755"", ""tel"": ""366 3434996""}","<pre><yamldata>tel: '366 3434996'
 email: ''
 cosa: 'ROULOTTE PER MAMMA CON BAMBINA PICCOLA'
@@ -2887,11 +2897,6 @@ link: 'https://www.facebook.com/orasiriparte/'
 immagine: ''
 data: 16/09/2016
 </yamldata></pre>",closed
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/480,177396363,2016-10-01 18:20:22,2016-09-16 10:47:33,Polizia stradale dona 140 scarponcini a sfollati di Amatrice,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""La Polizia stradale in collaborazione con Nu.vol.a. (Nuclei Volontari Alpini) di Trento ha donato 140 scarponcini nuovi, pi\u00f9 altri indumenti, agli sfollati di Amatrice ospiti del campo messo in piedi dalla regione Friuli."", ""link"": ""http://www.asaps.it/56407-_i_centauri_consegnano_scarponcini_agli_sfollati_di_amatrice_in_poche_ore_ne_fan.html"", ""titolo"": ""Polizia stradale dona 140 scarponcini a sfollati di Amatrice""}","<pre><yamldata>titolo: 'Polizia stradale dona 140 scarponcini a sfollati di Amatrice'
-descrizione: 'La Polizia stradale in collaborazione con Nu.vol.a. (Nuclei Volontari Alpini) di Trento ha donato 140 scarponcini nuovi, più altri indumenti, agli sfollati di Amatrice ospiti del campo messo in piedi dalla regione Friuli.'
-link: 'http://www.asaps.it/56407-_i_centauri_consegnano_scarponcini_agli_sfollati_di_amatrice_in_poche_ore_ne_fan.html'
-data: 16/09/2016
-</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/480,177396363,2016-10-01 18:20:22,2016-09-16 10:47:33,Polizia stradale dona 140 scarponcini a sfollati di Amatrice,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""La Polizia stradale in collaborazione con Nu.vol.a. (Nuclei Volontari Alpini) di Trento ha donato 140 scarponcini nuovi, pi\u00f9 altri indumenti, agli sfollati di Amatrice ospiti del campo messo in piedi dalla regione Friuli."", ""link"": ""http://www.asaps.it/56407-_i_centauri_consegnano_scarponcini_agli_sfollati_di_amatrice_in_poche_ore_ne_fan.html"", ""titolo"": ""Polizia stradale dona 140 scarponcini a sfollati di Amatrice""}","<pre><yamldata>titolo: 'Polizia stradale dona 140 scarponcini a sfollati di Amatrice'
 descrizione: 'La Polizia stradale in collaborazione con Nu.vol.a. (Nuclei Volontari Alpini) di Trento ha donato 140 scarponcini nuovi, più altri indumenti, agli sfollati di Amatrice ospiti del campo messo in piedi dalla regione Friuli.'
 link: 'http://www.asaps.it/56407-_i_centauri_consegnano_scarponcini_agli_sfollati_di_amatrice_in_poche_ore_ne_fan.html'
