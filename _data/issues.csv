@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/910,186134777,2016-10-30 13:01:49,2016-10-30 12:58:21,#CERRETO DI #SPOLETO #BORGOCERRETO (PG) Servono roulotte o camper,42.8210425,12.9176291,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""#CERRETO DI #SPOLETO #BORGOCERRETO (PG) Servono roulotte o camper"", ""data"": ""30/10/2016"", ""descrizione"": ""Servono roulotte o camper per aiutare famiglie in difficolt\u00e0 senza casa che hanno bisogno di un posto dove potersi appoggiare. Se avete roulotte o camper da mettere a disposizione contattate Matilde D'Anania ai numeri 3345978758 oppure 3333550760. In alternativa chiedono posti letto"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Piazza Pontano, Cerreto di Spoleto, PG, UMB, 06041, Italy"", ""lat"": ""42.8210425"", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1792004511067132/"", ""lon"": ""12.9176291"", ""tel"": ""3345978758""}","<pre><yamldata>tel: '3345978758'
+email: ''
+cosa: '#CERRETO DI #SPOLETO #BORGOCERRETO (PG) Servono roulotte o camper'
+descrizione: 'Servono roulotte o camper per aiutare famiglie in difficoltà senza casa che hanno bisogno di un posto dove potersi appoggiare. Se avete roulotte o camper da mettere a disposizione contattate Matilde D''Anania ai numeri 3345978758 oppure 3333550760. In alternativa chiedono posti letto'
+indirizzo: 'Piazza Pontano, Cerreto di Spoleto, PG, UMB, 06041, Italy'
+lat: '42.8210425'
+lon: '12.9176291'
+link: 'https://www.facebook.com/groups/1758670357733881/permalink/1792004511067132/'
+immagine: ''
+data: 30/10/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/905,186133894,2016-10-30 13:01:29,2016-10-30 12:38:39,Tecnici per effettuare le prime verifiche post terremoto SAN SEVERINO MARCHE,43.2290211,13.1779663,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Tecnici per effettuare le prime verifiche post terremoto SAN SEVERINO MARCHE"", ""data"": ""30/10/2016"", ""descrizione"": ""Il sindaco di San Severino Marche lancia un appello. Nel Comune mancano tecnici per effettuare le prime verifiche post terremoto. Si richiedono geometri, architetti, ingegneri e professionisti qualificati che vogliano rendersi disponibili per gli accertamenti. APPELLO a chi intendesse mettersi a disposizione gratuitamente."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Piazza del Popolo, San Severino Marche, MC, Marche, Italia"", ""lat"": ""43.2290211"", ""link"": ""http://l.facebook.com/l.php?u=http%3A%2F%2Fwww.comune.sanseverinomarche.mc.it%2Fcomunicati-cms%2Fterremoto-infinita-la-conta-dei-danni-ultimi-sopralluoghi-portano-inagibilita-degli-edifici-al-42%2F%23more-47080&h=pAQE4Dwmv"", ""lon"": ""13.1779663"", ""tel"": ""0733641222""}","<pre><yamldata>tel: '0733641222'
 email: ''
 cosa: 'Tecnici per effettuare le prime verifiche post terremoto SAN SEVERINO MARCHE'
@@ -821,6 +832,11 @@ https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/770,1820574
 descrizione: 'In previsione dell’abbassamento della temperatura legata alla stagione invernale, per evitare la perdita degli animali che si trovano attualmente presso le aziende locali e versano in gravi condizioni, la Regione Lazio intende procedere con l’acquisto di ricoveri temporanei per bovini ed ovo-caprini, si tratta in particolare delle cosiddette “stalle tunnel"". Un provvedimento per sostenere la ripresa economica del sistema produttivo delle zone colpite dal sisma del 24 agosto scorso.'
 link: 'http://www.regione.lazio.it/rl_main/?vw=newsDettaglio&id=3615'
 data: 10/10/2016
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/769,181877667,2016-10-10 20:37:14,2016-10-09 09:43:42,Sportello di ascolto gratuito a Roma,,,"[""Accettato"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""09/10/2016"", ""descrizione"": ""A partire da gioved\u00ec 6 ottobre \u00e8 attivo uno Sportello di ascolto gratuito riservato alle vittime del terremoto del 24/08. L'iniziativa \u00e8 promossa dal Consorzio Universitario Humanitas, in collaborazione con il Policlinico Gemelli di Roma e la Societ\u00e0 Italiana di Psicologia dell'Emergenza. Lo sportello si trova a Roma in Via della Conciliazione 22, presso la sede del Consorzio Universitario Humanitas ed \u00e8 aperto marted\u00ec dalle 14:00 alle 18:00 e gioved\u00ec dalle 9:00 alle 13:00. Per info relative ai servizi offerti o per prenotare un primo appuntamento \u00e8 anche possibile contattare il numero 063224818 dal luned\u00ec al venerd\u00ec ore 9-13 e 14-18."", ""link"": ""http://www.consorziofortune.com/files/locandina_SPORTELLO_ASCOLTO_FINITO.pdf"", ""titolo"": ""Sportello di ascolto gratuito a Roma""}","<pre><yamldata>titolo: 'Sportello di ascolto gratuito a Roma'
+descrizione: 'A partire da giovedì 6 ottobre è attivo uno Sportello di ascolto gratuito riservato alle vittime del terremoto del 24/08. L''iniziativa è promossa dal Consorzio Universitario Humanitas, in collaborazione con il Policlinico Gemelli di Roma e la Società Italiana di Psicologia dell''Emergenza. Lo sportello si trova a Roma in Via della Conciliazione 22, presso la sede del Consorzio Universitario Humanitas ed è aperto martedì dalle 14:00 alle 18:00 e giovedì dalle 9:00 alle 13:00. Per info relative ai servizi offerti o per prenotare un primo appuntamento è anche possibile contattare il numero 063224818 dal lunedì al venerdì ore 9-13 e 14-18.'
+link: 'http://www.consorziofortune.com/files/locandina_SPORTELLO_ASCOLTO_FINITO.pdf'
+data: 09/10/2016
 </yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/769,181877667,2016-10-10 20:37:14,2016-10-09 09:43:42,Sportello di ascolto gratuito a Roma,,,"[""Accettato"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""09/10/2016"", ""descrizione"": ""A partire da gioved\u00ec 6 ottobre \u00e8 attivo uno Sportello di ascolto gratuito riservato alle vittime del terremoto del 24/08. L'iniziativa \u00e8 promossa dal Consorzio Universitario Humanitas, in collaborazione con il Policlinico Gemelli di Roma e la Societ\u00e0 Italiana di Psicologia dell'Emergenza. Lo sportello si trova a Roma in Via della Conciliazione 22, presso la sede del Consorzio Universitario Humanitas ed \u00e8 aperto marted\u00ec dalle 14:00 alle 18:00 e gioved\u00ec dalle 9:00 alle 13:00. Per info relative ai servizi offerti o per prenotare un primo appuntamento \u00e8 anche possibile contattare il numero 063224818 dal luned\u00ec al venerd\u00ec ore 9-13 e 14-18."", ""link"": ""http://www.consorziofortune.com/files/locandina_SPORTELLO_ASCOLTO_FINITO.pdf"", ""titolo"": ""Sportello di ascolto gratuito a Roma""}","<pre><yamldata>titolo: 'Sportello di ascolto gratuito a Roma'
 descrizione: 'A partire da giovedì 6 ottobre è attivo uno Sportello di ascolto gratuito riservato alle vittime del terremoto del 24/08. L''iniziativa è promossa dal Consorzio Universitario Humanitas, in collaborazione con il Policlinico Gemelli di Roma e la Società Italiana di Psicologia dell''Emergenza. Lo sportello si trova a Roma in Via della Conciliazione 22, presso la sede del Consorzio Universitario Humanitas ed è aperto martedì dalle 14:00 alle 18:00 e giovedì dalle 9:00 alle 13:00. Per info relative ai servizi offerti o per prenotare un primo appuntamento è anche possibile contattare il numero 063224818 dal lunedì al venerdì ore 9-13 e 14-18.'
@@ -3523,16 +3539,6 @@ indirizzo: ''
 lat: ''
 lon: ''
 link: 'http://www.regione.lazio.it/rl_protezione_civile/'
-data: 15/09/2016
-</yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/382,177135092,2016-09-15 10:03:55,2016-09-15 09:54:52,Protezione Civile Nazionale,,,"[""Accettato"", ""Contatti"", ""Form""]",,,"{""data"": ""15/09/2016"", ""descrizione"": """", ""email"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""http://www.protezionecivile.gov.it/jcms/it/home.wp"", ""lon"": """", ""nome"": ""Protezione Civile Nazionale"", ""tel"": ""800840840""}","<pre><yamldata>nome: 'Protezione Civile Nazionale'
-tel: '800840840'
-email: ''
-descrizione: ''
-indirizzo: ''
-lat: ''
-lon: ''
-link: 'http://www.protezionecivile.gov.it/jcms/it/home.wp'
 data: 15/09/2016
 </yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/382,177135092,2016-09-15 10:03:55,2016-09-15 09:54:52,Protezione Civile Nazionale,,,"[""Accettato"", ""Contatti"", ""Form""]",,,"{""data"": ""15/09/2016"", ""descrizione"": """", ""email"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""http://www.protezionecivile.gov.it/jcms/it/home.wp"", ""lon"": """", ""nome"": ""Protezione Civile Nazionale"", ""tel"": ""800840840""}","<pre><yamldata>nome: 'Protezione Civile Nazionale'
