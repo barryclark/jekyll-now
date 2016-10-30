@@ -3142,6 +3142,17 @@ link: ''
 immagine: ''
 data: 15/09/2016
 </yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/469,177246860,2016-09-20 15:21:58,2016-09-15 18:06:04,Roulotte,,,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Cercasi roulotte"", ""data"": ""15/09/2016"", ""descrizione"": ""Serve una roulotte in buone condizioni per una famiglia di Scai (Amatrice) con un bimbo di due anni. Per il trasporto ho gi\u00e0 chi pu\u00f2 provvedere. Grazie!"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3393773303""}","<pre><yamldata>tel: '3393773303'
+email: ''
+cosa: Cercasi roulotte
+descrizione: 'Serve una roulotte in buone condizioni per una famiglia di Scai (Amatrice) con un bimbo di due anni. Per il trasporto ho già chi può provvedere. Grazie!'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 15/09/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/468,177216445,2016-10-01 18:22:28,2016-09-15 15:56:13,"Anas: ""Case disponibili per sfollati"". Ma il DPC non risponde",,,"[""Accettato"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""Dopo l'articolo, ha replicato l'Anas Spa, attraverso il suo ufficio stampa nazionale. Innanzitutto \""abbiamo contato male\"": le casette non sono 12, bens\u00ec ben 18 e, come abbiamo gi\u00e0 sottolineato, potrebbero soddisfare l'esigenze di un intero borgo terremotato, considerando le dimensioni demografiche modeste dei territori colpiti dal terremoto. [continua nel link]"", ""link"": ""http://news-town.it/cronaca/13270-case-per-sfollati,-anas-sono-disponibili-ma-protezione-civile-non-risponde.html"", ""titolo"": ""Anas: \""Case disponibili per sfollati\"". Ma il DPC non risponde""}","<pre><yamldata>titolo: 'Anas: ""Case disponibili per sfollati"". Ma il DPC non risponde'
 descrizione: 'Dopo l''articolo, ha replicato l''Anas Spa, attraverso il suo ufficio stampa nazionale. Innanzitutto ""abbiamo contato male"": le casette non sono 12, bensì ben 18 e, come abbiamo già sottolineato, potrebbero soddisfare l''esigenze di un intero borgo terremotato, considerando le dimensioni demografiche modeste dei territori colpiti dal terremoto. [continua nel link]'
 link: 'http://news-town.it/cronaca/13270-case-per-sfollati,-anas-sono-disponibili-ma-protezione-civile-non-risponde.html'
