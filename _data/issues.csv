@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/896,186128611,2016-10-30 10:39:51,2016-10-30 10:31:53,COMUNE DI AMATRICE - Recarsi ad Amatrice per le festività solo in caso di estrema necessità ,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""30/10/2016"", ""descrizione"": ""L'amministrazione comunale di Amatrice, a causa della recente attivit\u00e0 sismica che ha interessato nuovamente l'Italia centrale, invita tutti coloro che avrebbero voluto raggiungere il territorio amatriciano in occasione delle festivit\u00e0 del 1\u00b0 novembre e della commemorazione dei defunti, a farlo solo in caso di estrema necessit\u00e0."", ""link"": ""https://www.facebook.com/ComunediAmatrice/photos/a.452463244833016.1073741829.232379030174773/1148533848559282/?type=3"", ""titolo"": ""COMUNICATO STAMPA COMUNE DI AMATRICE""}","<pre><yamldata>titolo: 'COMUNICATO STAMPA COMUNE DI AMATRICE'
+descrizione: 'L''amministrazione comunale di Amatrice, a causa della recente attività sismica che ha interessato nuovamente l''Italia centrale, invita tutti coloro che avrebbero voluto raggiungere il territorio amatriciano in occasione delle festività del 1° novembre e della commemorazione dei defunti, a farlo solo in caso di estrema necessità.'
+link: 'https://www.facebook.com/ComunediAmatrice/photos/a.452463244833016.1073741829.232379030174773/1148533848559282/?type=3'
+data: 30/10/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/895,186128029,2016-10-30 10:37:22,2016-10-30 10:16:31,Offerta casa di campagna con 6 posti letto in provincia di Piacenza,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""30/10/2016"", ""descrizione"": ""Disponiamo di una casa di campagna con 6 posti letto e tre bagni. Anche se la nostra provincia \u00e8 piuttosto distante dalla zona del terremoto, possiamo ospitare chi ha bisogno senza problema. I piccoli animali sono ben accetti. Il nostro indirizzo: Via Badenigo 7. 29010 Ziano Piacentino (PC), frazione di Vicobarone"", ""email"": ""marc.lecannu@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""349 5671721""}","<pre><yamldata>tel: '349 5671721'
 email: marc.lecannu@gmail.com
 descrizione: 'Disponiamo di una casa di campagna con 6 posti letto e tre bagni. Anche se la nostra provincia è piuttosto distante dalla zona del terremoto, possiamo ospitare chi ha bisogno senza problema. I piccoli animali sono ben accetti. Il nostro indirizzo: Via Badenigo 7. 29010 Ziano Piacentino (PC), frazione di Vicobarone'
@@ -2579,17 +2584,6 @@ link: 'http://www.3e32.org/'
 immagine: ''
 data: 16/09/2016
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/504,177445764,2016-09-23 22:49:27,2016-09-16 14:54:29,San Benedetto del Tronto: Stivali di gomma per uomo e donna,,,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""San Benedetto del Tronto: Stivali di gomma per uomo e donna"", ""data"": ""16/09/2016"", ""descrizione"": ""Gli stivali di gomma (donna/uomo) richiesti per zone terremotate sono raccolti a San Benedetto del Tronto alla sede della Protezione Civile, lato sud del Palazzetto dello Sport."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.facebook.com/cittasbt/posts/1091173454296184"", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
-email: ''
-cosa: 'San Benedetto del Tronto: Stivali di gomma per uomo e donna'
-descrizione: 'Gli stivali di gomma (donna/uomo) richiesti per zone terremotate sono raccolti a San Benedetto del Tronto alla sede della Protezione Civile, lato sud del Palazzetto dello Sport.'
-indirizzo: ''
-lat: ''
-lon: ''
-link: 'https://www.facebook.com/cittasbt/posts/1091173454296184'
-immagine: ''
-data: 16/09/2016
-</yamldata></pre>",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/504,177445764,2016-09-23 22:49:27,2016-09-16 14:54:29,San Benedetto del Tronto: Stivali di gomma per uomo e donna,,,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""San Benedetto del Tronto: Stivali di gomma per uomo e donna"", ""data"": ""16/09/2016"", ""descrizione"": ""Gli stivali di gomma (donna/uomo) richiesti per zone terremotate sono raccolti a San Benedetto del Tronto alla sede della Protezione Civile, lato sud del Palazzetto dello Sport."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.facebook.com/cittasbt/posts/1091173454296184"", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 cosa: 'San Benedetto del Tronto: Stivali di gomma per uomo e donna'
