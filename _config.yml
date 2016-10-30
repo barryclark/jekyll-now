@@ -19,7 +19,7 @@ avatar: https://avatars3.githubusercontent.com/u/1032108?v=3&s=466
 footer-links:
   dribbble:
   email:
-  facebook:gunith
+  facebook: gunith
   flickr:
   github: gunith
   instagram:
@@ -41,7 +41,7 @@ google_analytics: UA-86496151-1
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url:http://gunith.github.io
+url: http://gunith.github.io
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
