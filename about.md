@@ -15,9 +15,9 @@ permalink: /about/
 
 
 Questo è un progetto non profit, organizzato interamente da volontari. È nato per condividere informazioni utili e
-verificate sul Terremoto del 24 Agosto, 26-30 Ottobre 2016 in Italia.
+verificate sugli eventi sismici che hanno coinvolto il centro Italia durante il 2016.
 
-Il terremoto ha interessato molti comuni del centro Italia causando numerose vittime e notevoli danni. Al momento in cui viene scritta questa pagina le notizie che provengono dalle fonti ufficiali sono sempre in divenire e vengono aggiornate con informazioni dettagliate e puntuali non appena possibile. Al momento il consiglio per avere informazioni di dettaglio sull'evento è di fare riferimento alla [pagina di Wikipedia dedicata all'evento e disponibile a questo link](https://it.wikipedia.org/wiki/Terremoto_del_Centro_Italia_del_2016).
+Il terremoto ha interessato molti comuni del centro Italia causando numerose vittime e notevoli danni. Al momento in cui viene scritta questa pagina le notizie che provengono dalle fonti ufficiali sono sempre in divenire e vengono aggiornate con informazioni dettagliate e puntuali non appena possibile. 
 
 Il progetto non vuole in alcun modo sostituirsi a fonti istituzionali di informazione a cui rimandiamo caldamente per l'attendibilità. Il progetto si pone come scopo quello di aggregare e non disperdere contenuti utili a tutti provenienti da fonti di varia natura (ufficiali e non) al fine creare valore in un momento di crisi per il paese.
 
