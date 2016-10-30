@@ -5,11 +5,21 @@ layout: default
 <div class="posts">
   {% for post in site.posts %}
     <article class="post">
+      <div class="media">
+        {% if post.image %}
+        <div class="media-left">
+          <a href="{{ site.baseurl }}{{ post.url }}" class="media-object"><img class="img" src="{{ post.image }}" /></a>
+        </div>
+        {% endif %}
 
-      <h4><a style="color: #808000;" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
+        <div class="media-body">
+          <h4 class="media-heading"><a style="color: #808000;" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
 
-      <div class="entry">
-        {{ post.summary }}..<a style="color: #808000;" href="{{ site.baseurl }}{{ post.url }}">Read More</a>
+          <div class="entry">
+            {{ post.summary }}..<a style="color: #808000;" href="{{ site.baseurl }}{{ post.url }}">Read More</a>
+          </div>
+
+        </div>
       </div>
 
     </article>
