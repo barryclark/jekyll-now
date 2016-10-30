@@ -15,11 +15,13 @@ permalink: /about/
 
 
 Questo è un progetto non profit, organizzato interamente da volontari. È nato per condividere informazioni utili e
-verificate sul Terremoto del 24 Agosto 2016 in Italia.
+verificate sul Terremoto del 24 Agosto, 26-30 Ottobre 2016 in Italia.
 
-Il terremoto ha interessato le province di Rieti, Ascoli Piceno e Perugia, causando numerose vittime e notevoli danni. Al momento in cui viene scritta questa pagina (27 agosto) le notizie che provengono dalle fonti ufficiali sono ancora in divenire e verranno aggiornate con informazioni dettagliate e puntuali non appena possibile. Al momento il consiglio per avere informazioni di dettaglio sull'evento è di fare riferimento alla [pagina di Wikipedia dedicata all'evento e disponibile a questo link](https://it.wikipedia.org/wiki/Terremoto_del_Centro_Italia_del_2016).
+Il terremoto ha interessato molti comuni del centro Italia causando numerose vittime e notevoli danni. Al momento in cui viene scritta questa pagina le notizie che provengono dalle fonti ufficiali sono sempre in divenire e vengono aggiornate con informazioni dettagliate e puntuali non appena possibile. Al momento il consiglio per avere informazioni di dettaglio sull'evento è di fare riferimento alla [pagina di Wikipedia dedicata all'evento e disponibile a questo link](https://it.wikipedia.org/wiki/Terremoto_del_Centro_Italia_del_2016).
 
 Il progetto non vuole in alcun modo sostituirsi a fonti istituzionali di informazione a cui rimandiamo caldamente per l'attendibilità. Il progetto si pone come scopo quello di aggregare e non disperdere contenuti utili a tutti provenienti da fonti di varia natura (ufficiali e non) al fine creare valore in un momento di crisi per il paese.
+
+Come è strutturato il progetto puoi approfondirlo tramite il nostro [wiki](https://github.com/emergenzeHack/terremotocentro/wiki).
 
 L'idea è di [Matteo Tempestini](https://twitter.com/il_tempe) e [Matteo Fortini](https://twitter.com/matt_fortini) e nasce a seguito di maturata esperienza di hacking civico, ma il sostegno è di chiunque vuole darlo (privati, associazioni, imprese, istituzioni) purché l'iniziativa non sia strumentalizzata per secondi fini e di questo chi ha ideato il progetto cerca di farsi garante. Sotto riportiamo chi sta già collaborando, ti aspettiamo!
 
