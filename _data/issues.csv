@@ -5327,6 +5327,17 @@ link: ''
 email: ''
 data: 13/09/2016
 </yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/199,176772303,2016-09-13 23:25:28,2016-09-13 22:59:51,Caritas di Modena,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Colletta terremoto centro Italia"", ""chi"": ""Caritas di Modena"", ""data"": ""13/09/2016"", ""descrizione"": ""Conti correnti attivati presso diverse banche."", ""email"": """", ""iban"": ""\""IT25X 05034 12900 000000004682, presso Banco S. Geminiano IT89B 05387 12900 000000030436, presso Banca popolare dell'Emilia romagna IT35Z 02008 12930 000003106219, presso Unicredit IT72X 05018 024000 00000503060, presso Banca Etica \"""", ""intestazione"": """", ""link"": """", ""postale"": """"}","<pre><yamldata>chi: 'Caritas di Modena'
+descrizione: 'Conti correnti attivati presso diverse banche.'
+intestazione: ''
+iban: '""IT25X 05034 12900 000000004682, presso Banco S. Geminiano IT89B 05387 12900 000000030436, presso Banca popolare dell''Emilia romagna IT35Z 02008 12930 000003106219, presso Unicredit IT72X 05018 024000 00000503060, presso Banca Etica ""'
+bic: ''
+postale: ''
+causale: 'Colletta terremoto centro Italia'
+link: ''
+email: ''
+data: 13/09/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/198,176772168,2016-09-13 23:28:47,2016-09-13 22:59:00,Regione Lazio,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": ""UNCRITMM"", ""causale"": """", ""chi"": ""Regione Lazio"", ""data"": ""13/09/2016"", ""descrizione"": """", ""email"": """", ""iban"": ""IT60P 02008 05255 000104428939 e IT42H 07601 03200 001034116671"", ""intestazione"": ""Regione Lazio per Amatrice e Accumoli"", ""link"": ""http://www.regione.lazio.it/rl_main/?vw=newsDettaglio&id=3551"", ""postale"": """"}","<pre><yamldata>chi: 'Regione Lazio'
 descrizione: ''
 intestazione: 'Regione Lazio per Amatrice e Accumoli'
