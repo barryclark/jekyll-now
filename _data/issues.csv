@@ -6322,7 +6322,8 @@ indirizzo: Piazzale della Stazione Tiburtina, 495, 00162 Roma, Italia
 lat: 41.910103
 lon: 12.530233100000032
 link: http://www.ilsito.com
-data: 07/09/2016</yamldata></pre>",closed
+data: 07/09/2016</yamldata></pre>
+",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/78,175550060,2016-09-07 16:41:52,2016-09-07 16:35:49,Una cosa,45.47906709999999,9.845243299999993,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Una cosa"", ""data"": ""07/09/2016"", ""descrizione"": ""Prova%3A Ciao"", ""email"": ""francescopinzauti@gmail.com"", ""indirizzo"": ""Cascina Barbonina, Provincia di Bergamo, Italia"", ""lat"": 45.47906709999999, ""link"": ""https://www.google.com"", ""lon"": 9.845243299999993, ""tel"": 393272032790}","<pre><yamldata>tel: +393272032790
 email: francescopinzauti@gmail.com
 cosa: Una cosa
@@ -6331,7 +6332,8 @@ indirizzo: Cascina Barbonina, Provincia di Bergamo, Italia
 lat: 45.47906709999999
 lon: 9.845243299999993
 link: https://www.google.com
-data: 07/09/2016</yamldata></pre>",closed
+data: 07/09/2016</yamldata></pre>
+",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/77,175549786,2016-09-07 16:41:52,2016-09-07 16:34:30,Bho,45.4430336,12.332174900000041,"[""Accettato"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""Bho"", ""data"": ""07/09/2016"", ""descrizione"": ""A caso"", ""email"": ""francescopinzauti@gmail.com"", ""indirizzo"": ""Str. Nova, 2215, 30121 Venezia, Italia"", ""lat"": 45.4430336, ""link"": ""https://github.com"", ""lon"": 12.332174900000041, ""tel"": 393272032790}","<pre><yamldata>tel: +393272032790
 email: francescopinzauti@gmail.com
 cosa: Bho
@@ -6340,7 +6342,8 @@ indirizzo: Str. Nova, 2215, 30121 Venezia, Italia
 lat: 45.4430336
 lon: 12.332174900000041
 link: https://github.com
-data: 07/09/2016</yamldata></pre>",closed
+data: 07/09/2016</yamldata></pre>
+",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/76,175549685,2016-09-07 16:41:52,2016-09-07 16:34:01,Raccolta Fondi,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": 234, ""causale"": 324, ""chi"": ""Raccolta Fondi"", ""data"": ""07/09/2016"", ""descrizione"": ""asd"", ""email"": ""francescopinzauti@gmail.com"", ""iban"": 3423, ""intestazione"": ""aasd"", ""link"": ""http://ciao.com"", ""postale"": 324}","<pre><yamldata>chi: Raccolta Fondi
 descrizione: asd
 intestazione: aasd
@@ -6350,7 +6353,8 @@ postale: 324
 causale: 324
 link: http://ciao.com
 email: francescopinzauti@gmail.com
-data: 07/09/2016</yamldata></pre>",closed
+data: 07/09/2016</yamldata></pre>
+",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/75,175514648,2016-09-07 16:41:52,2016-09-07 14:18:40,Test Fabbisogni,43.4279725,11.84692480000001,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Test Fabbisogni"", ""data"": ""07/09/2016"", ""descrizione"": ""Test"", ""email"": ""francescopinzauti@gmail.com"", ""indirizzo"": ""Localit\u00e0 Olmo, 416, 52100 Arezzo AR, Italia"", ""lat"": 43.4279725, ""link"": ""https://www.twitter.com"", ""lon"": 11.84692480000001, ""tel"": 393272032790}","<pre><yamldata>tel: +393272032790
 email: francescopinzauti@gmail.com
 cosa: Test Fabbisogni
@@ -6359,7 +6363,8 @@ indirizzo: Località Olmo, 416, 52100 Arezzo AR, Italia
 lat: 43.4279725
 lon: 11.84692480000001
 link: https://www.twitter.com
-data: 07/09/2016</yamldata></pre>",closed
+data: 07/09/2016</yamldata></pre>
+",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/74,175512523,2016-09-07 16:41:52,2016-09-07 14:09:58,Prova,41.90278349999999,12.496365500000024,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""07/09/2016"", ""descrizione"": ""Prova"", ""email"": ""support@francescopinzauti.com"", ""indirizzo"": ""Piazza della Repubblica, 10, 00185 Roma, Italia"", ""lat"": 41.90278349999999, ""link"": ""https://www.google.com"", ""lon"": 12.496365500000024, ""tel"": 393272032790}","<pre><yamldata>tel: +393272032790
 email: support@francescopinzauti.com
 descrizione: Prova
@@ -6367,7 +6372,8 @@ indirizzo: Piazza della Repubblica, 10, 00185 Roma, Italia
 lat: 41.90278349999999
 lon: 12.496365500000024
 link: https://www.google.com
-data: 07/09/2016</yamldata></pre>",closed
+data: 07/09/2016</yamldata></pre>
+",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/71,175507196,2016-09-07 14:09:27,2016-09-07 13:48:37,Un test,,,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,{},"<pre><yamldata>tel: +393272032790
             email: info@francescopinzauti.com
             cosa: Un test
@@ -6376,7 +6382,8 @@ https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/71,17550719
             lat: 40.8517746
             lon: 14.268124400000033
             link: https://www.google.com
-            data: 07/09/2016</pre></yamldata>",closed
+            data: 07/09/2016</pre></yamldata>
+",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/69,175491734,2016-09-07 13:53:29,2016-09-07 12:37:38,Prova!,,,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,{},"tel: +393272032790
             email: info@francescopinzauti.com
             cosa: Prova!
@@ -6385,7 +6392,8 @@ https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/69,17549173
             lat: 45.4654219
             lon: 9.18592430000001
             link: https://developer.github.com/v3/issues/#create-an-issue
-            data: 07/09/2016",closed
+            data: 07/09/2016
+",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/63,175466580,2016-09-13 12:29:13,2016-09-07 10:22:23,TEST - ,,,"[""Accettato"", ""Alloggi"", ""Donazioni""]",,,{},"lat:
 lon:
 Alloggio disponibile, possibilità di accogliere 3 persone.
