@@ -1,5 +1,5 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/934,186139683,2016-10-30 14:34:18,2016-10-30 14:30:02,"Buongiono, Ho una casa ad Oratino (CB)",,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""30/10/2016"", ""descrizione"": ""Buongiono, Ho una casa ad Oratino ( a circa 10 km da Campobasso) circa 65 mq + cantina con 2/5 posti letto ( un letto matrimoniale + un divano letto 2 persone e una poltrona letto ) lo rendo disponibile per l'inverno. Tiziana Re email: t.re57@libero.it tel 339 7959352 http://terremotocentroitalia.info/alloggi/ Inviato da iPad"", ""email"": ""t.re57@libero.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""339 7950352""}","<pre><yamldata>tel: '339 7950352'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/934,186139683,2016-10-30 14:44:52,2016-10-30 14:30:02,"Buongiono, Ho una casa ad Oratino (CB)",,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""30/10/2016"", ""descrizione"": ""Buongiono, Ho una casa ad Oratino ( a circa 10 km da Campobasso) circa 65 mq + cantina con 2/5 posti letto ( un letto matrimoniale + un divano letto 2 persone e una poltrona letto ) lo rendo disponibile per l'inverno. Tiziana Re email: t.re57@libero.it tel 339 7959352 http://terremotocentroitalia.info/alloggi/ Inviato da iPad"", ""email"": ""t.re57@libero.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""339 7950352""}","<pre><yamldata>tel: '339 7950352'
 email: t.re57@libero.it
 descrizione: 'Buongiono, Ho una casa ad Oratino ( a circa 10 km da Campobasso) circa 65 mq + cantina con 2/5 posti letto ( un letto matrimoniale + un divano letto 2 persone e una poltrona letto ) lo rendo disponibile per l''inverno. Tiziana Re email: t.re57@libero.it tel 339 7959352 http://terremotocentroitalia.info/alloggi/ Inviato da iPad'
 indirizzo: ''
@@ -8,7 +8,7 @@ lon: ''
 link: ''
 immagine: ''
 data: 30/10/2016
-</yamldata></pre>",open
+</yamldata></pre>",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/933,186139681,2016-10-30 14:31:42,2016-10-30 14:30:01,"BENI DI PRIMA NECESSITA' - Camping Medusa, Porto Recanati",43.4350815,13.6630083,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Pubblicare su FB"", ""Pubblicare su TW"", ""Sisma Ottobre""]",,,"{""cosa"": ""BENI DI PRIMA NECESSITA' - Camping Medusa, Porto Recanati"", ""data"": ""30/10/2016"", ""descrizione"": ""Occorrono beni di prima necessit\u00e0 ai nuovi sfollati collocati al Camping Medusa di Porto Recanati (MC). Chiamare Silvia."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via Manin, Porto Recanati, MC, Marche, 62017, Italia"", ""lat"": ""43.4350815"", ""link"": """", ""lon"": ""13.6630083"", ""tel"": ""339 8161481""}","<pre><yamldata>tel: '339 8161481'
 email: ''
 cosa: 'BENI DI PRIMA NECESSITA'' - Camping Medusa, Porto Recanati'
