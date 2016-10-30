@@ -47,15 +47,15 @@ Assume the log4j.properties file is as below,
 
       log4j.logger.migrationlog = INFO, migration
       log4j.appender.migration = org.apache.log4j.RollingFileAppender
-      log4j.appender.migration.File = C:/work/log/migration.log
+      log4j.appender.migration.File = C:/\work/\log/\migration.log
       log4j.appender.migration.MaxFileSize=20MB
       log4j.appender.migration.MaxBackupIndex=1
       log4j.appender.migration.layout = org.apache.log4j.PatternLayout
-      log4j.appender.migration.layout.conversionPattern = %d %-5p %c - %m%n  
+      log4j.appender.migration.layout.conversionPattern = %\d %\-5p %\c - %m\%\n  
       
 In such case, your Java code should be as follows,
       
-      Logger logger = Logger.getLogger("migrationlog"); //Defining the LoggerFileAppender 
+      Logger logger = Logger.getLogger("\migrationlog"\); /\/\Defining the LoggerFileAppender 
       appender = (FileAppender)logger.getAppender("migration");
       return new File(appender.getFile());  
       
