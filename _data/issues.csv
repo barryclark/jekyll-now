@@ -1983,6 +1983,11 @@ descrizione: 'Disponibili sul sito di Ispra i report giornalieri elaborati dai t
 link: 'http://www.isprambiente.gov.it/it/evidenza/sisma-italia-centrale/terremoto-nellitalia-centrale-2'
 data: 21/09/2016
 </yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/622,178263031,2016-10-01 18:46:13,2016-09-21 07:00:19,Online report giornalieri tecnici Ispra nelle zone del sisma,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""Twitter""]",,,"{""data"": ""21/09/2016"", ""descrizione"": ""Disponibili sul sito di Ispra i report giornalieri elaborati dai tecnici operativi, sotto il coordinamento della Protezione civile nazionale, che sin dal 25 agosto stanno monitorando i rischi ambientali prodotti dal sisma."", ""link"": ""http://www.isprambiente.gov.it/it/evidenza/sisma-italia-centrale/terremoto-nellitalia-centrale-2"", ""titolo"": ""Online report giornalieri tecnici Ispra nelle zone del sisma""}","<pre><yamldata>titolo: 'Online report giornalieri tecnici Ispra nelle zone del sisma'
+descrizione: 'Disponibili sul sito di Ispra i report giornalieri elaborati dai tecnici operativi, sotto il coordinamento della Protezione civile nazionale, che sin dal 25 agosto stanno monitorando i rischi ambientali prodotti dal sisma.'
+link: 'http://www.isprambiente.gov.it/it/evidenza/sisma-italia-centrale/terremoto-nellitalia-centrale-2'
+data: 21/09/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/621,178194425,2016-09-21 12:48:25,2016-09-20 22:14:31,Associazione Pescara del Tronto 24/08/2016,42.7510272,13.2714902,"[""Accettato"", ""Contatti"", ""Form""]",,,"{""data"": ""20/09/2016"", ""descrizione"": ""Associazione creata dai cittadini di Pescara del Tronto dopo il terremoto."", ""email"": ""pescaradeltronto@hotmail.com"", ""indirizzo"": """", ""lat"": ""42.7510272"", ""link"": ""http://facebook.com/pescaradeltronto"", ""lon"": ""13.2714902"", ""nome"": ""Associazione Pescara del Tronto 24/08/2016"", ""tel"": """"}","<pre><yamldata>nome: 'Associazione Pescara del Tronto 24/08/2016'
 tel: ''
 email: pescaradeltronto@hotmail.com
