@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/942,186142217,2016-10-30 15:20:48,2016-10-30 15:16:48,COMUNE DI #PERUGIA: CHIUSI ASILI NIDO E TUTTI EDIFICI PUBBLICI,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""30/10/2016"", ""descrizione"": ""A seguito della scossa di 6.5 registrata questa mattina, si \u00e8 immediatamente riunito il COC di Perugia, con il Sindaco Romizi, il Vicesindaco Barelli, dirigenti e tecnici per monitorare in tempo reale la situazione in citt\u00e0. Confermata la chiusura degli asili nidi non solo pubblici ma anche privati e delle scuole materne per la giornata di domani, Luned\u00ec 31 ottobre. A partire da oggi e fino a nuova disposizione, sono chiusi con ordinanza del Sindaco anche tutti gli edifici pubblici adibiti a manifestazioni varie sull\u2019intero territorio comunale. Si ricorda che per eventuali segnalazioni di danni i numeri da chiamare sono: 075 5773116 - 075 5773117"", ""link"": ""http://istituzionale.comune.perugia.it/notizie/evento-sismico-del-30-ottobre-2016"", ""titolo"": ""COMUNE DI #PERUGIA: CHIUSI ASILI NIDO E MATERNE PUBBLICI E PRIVATI E TUTTI GLI EDIFICI PUBBLICI ADIBITI A MANIFESTAZIONI""}","<pre><yamldata>titolo: 'COMUNE DI #PERUGIA: CHIUSI ASILI NIDO E MATERNE PUBBLICI E PRIVATI E TUTTI GLI EDIFICI PUBBLICI ADIBITI A MANIFESTAZIONI'
+descrizione: 'A seguito della scossa di 6.5 registrata questa mattina, si è immediatamente riunito il COC di Perugia, con il Sindaco Romizi, il Vicesindaco Barelli, dirigenti e tecnici per monitorare in tempo reale la situazione in città. Confermata la chiusura degli asili nidi non solo pubblici ma anche privati e delle scuole materne per la giornata di domani, Lunedì 31 ottobre. A partire da oggi e fino a nuova disposizione, sono chiusi con ordinanza del Sindaco anche tutti gli edifici pubblici adibiti a manifestazioni varie sull’intero territorio comunale. Si ricorda che per eventuali segnalazioni di danni i numeri da chiamare sono: 075 5773116 - 075 5773117'
+link: 'http://istituzionale.comune.perugia.it/notizie/evento-sismico-del-30-ottobre-2016'
+data: 30/10/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/941,186141912,2016-10-30 15:18:18,2016-10-30 15:11:36,Comune di #Caldarola - informazioni sul COC,,,"[""Accettato"", ""Bollettino"", ""Notizie Utili"", ""Pubblicare su TW""]",,,{},"Il sindaco rassicura tutti, non ci sono danni alle persone. Per qualsiasi informazione di qualsiasi tipo rivolgersi al COC (centro operativo comunale) presso il piazzale della Protezione Civile situato nella zona industriale di Caldarola. Per i pasti e per il pernottamento c'è da prenotarsi quanto prima sempre al COC.
 Fonte: https://goo.gl/mk9bWL
 ",open
@@ -4926,17 +4931,6 @@ bic: ''
 postale: ''
 causale: 'Donazione pro terremotati centro Italia'
 link: 'http://www.comune.pordenone.it/it/comunichiamo/comune-informa/notizie/conto-pro-terremotati-e-serate-di-beneficienza'
-email: ''
-data: 14/09/2016
-</yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/251,176851691,2016-09-14 09:00:38,2016-09-14 08:56:47,PayPal,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""PayPal"", ""data"": ""14/09/2016"", ""descrizione"": ""Fai una donazione con PayPal alla Croce Rossa Italiana."", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""https://www.paypal.it/acquisti/Croce_Rossa/"", ""postale"": """"}","<pre><yamldata>chi: PayPal
-descrizione: 'Fai una donazione con PayPal alla Croce Rossa Italiana.'
-intestazione: ''
-iban: ''
-bic: ''
-postale: ''
-causale: ''
-link: 'https://www.paypal.it/acquisti/Croce_Rossa/'
 email: ''
 data: 14/09/2016
 </yamldata></pre>",open
