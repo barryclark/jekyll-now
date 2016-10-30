@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/890,186123419,2016-10-30 09:03:11,2016-10-30 08:19:37,VIABILITA' ROMA,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""30/10/2016"", ""descrizione"": ""Tor Pignattara CHIUSA Via Gabrio Serbelloni tra Via Ciro da Urbino e Via Muzio Oddi per verifica stabilit\u00e0 a seguito terremoto."", ""link"": """", ""titolo"": ""VIABILITA' ROMA""}","<pre><yamldata>titolo: 'VIABILITA'' ROMA'
+descrizione: 'Tor Pignattara CHIUSA Via Gabrio Serbelloni tra Via Ciro da Urbino e Via Muzio Oddi per verifica stabilità a seguito terremoto.'
+link: ''
+data: 30/10/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/889,186123348,2016-10-30 09:02:27,2016-10-30 08:17:39,VIABILITA' ROMA,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""30/10/2016"", ""descrizione"": ""Via Bartolomeo Cristofori Roma - accertamenti tecnici verifica stabilit\u00e0 edificio per caduta ascensore."", ""link"": """", ""titolo"": ""VIABILITA' ROMA""}","<pre><yamldata>titolo: 'VIABILITA'' ROMA'
 descrizione: 'Via Bartolomeo Cristofori Roma - accertamenti tecnici verifica stabilità edificio per caduta ascensore.'
 link: ''
@@ -3043,11 +3048,6 @@ data: 15/09/2016
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/436,177177637,2016-10-01 16:45:38,2016-09-15 13:33:18,Da CNA Rieti un sito di informazioni utili e opportunità di ripresa per artigiani e imprenditori colpiti dal sisma,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""Il Sito CNA (Conferderazione Nazionale Artigianato e PMI) sede di Rieti aggrega e pubblica informazioni utili e opportunit\u00e0 di ripresa attivit\u00e0 per artigiani e imprenditori colpiti dal sisma"", ""link"": ""http://www.cnarieti.org/"", ""titolo"": ""CNA Rieti""}","<pre><yamldata>titolo: 'CNA Rieti'
 descrizione: 'Il Sito CNA (Conferderazione Nazionale Artigianato e PMI) sede di Rieti aggrega e pubblica informazioni utili e opportunità di ripresa attività per artigiani e imprenditori colpiti dal sisma'
 link: 'http://www.cnarieti.org/'
-data: 15/09/2016
-</yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/435,177177513,2016-10-01 16:45:48,2016-09-15 13:32:50,Amandola (FM)  post sisma: un sito dedicato e aggiornamenti costanti sulla pagina facebook del Comune,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""Il Comune ha una pagina Facebook ufficiale (amandolacomuneofficial) e ha aperto un sito per raccolgiere tutte le informazioni e moduli e notizie utili post-sisma"", ""link"": ""http://www.jlorb85.it/Amandola/index.html"", ""titolo"": ""Comune di Amandola (FM)""}","<pre><yamldata>titolo: 'Comune di Amandola (FM)'
-descrizione: 'Il Comune ha una pagina Facebook ufficiale (amandolacomuneofficial) e ha aperto un sito per raccolgiere tutte le informazioni e moduli e notizie utili post-sisma'
-link: 'http://www.jlorb85.it/Amandola/index.html'
 data: 15/09/2016
 </yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/435,177177513,2016-10-01 16:45:48,2016-09-15 13:32:50,Amandola (FM)  post sisma: un sito dedicato e aggiornamenti costanti sulla pagina facebook del Comune,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""Il Comune ha una pagina Facebook ufficiale (amandolacomuneofficial) e ha aperto un sito per raccolgiere tutte le informazioni e moduli e notizie utili post-sisma"", ""link"": ""http://www.jlorb85.it/Amandola/index.html"", ""titolo"": ""Comune di Amandola (FM)""}","<pre><yamldata>titolo: 'Comune di Amandola (FM)'
