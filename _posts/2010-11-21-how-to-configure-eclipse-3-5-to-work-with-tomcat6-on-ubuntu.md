@@ -33,6 +33,7 @@ When I was trying to add Tomcat 6 on Eclipse's server list I got the following e
 `Cannot create a server using the selected type`
 
 The fix is as follows,
+
 ```shell
 sudo apt-get install tomcat6
 cd /usr/share/tomcat6
