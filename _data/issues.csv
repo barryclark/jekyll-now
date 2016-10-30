@@ -10,6 +10,16 @@ link: ''
 immagine: ''
 data: 30/10/2016
 </yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/900,186131216,2016-10-30 11:59:04,2016-10-30 11:34:37,Disponibilità alloggio per famiglia a Radda in Chianti (Si),43.4870518,11.3747003,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""30/10/2016"", ""descrizione"": ""Disponibilit\u00e0 alloggio per famiglia 4/6 persone"", ""email"": ""protezionecivile@comune.raddainchianti.si.it"", ""immagine"": """", ""indirizzo"": ""Radda in Chianti, SI, Tuscany, Italia"", ""lat"": ""43.4870518"", ""link"": """", ""lon"": ""11.3747003"", ""tel"": ""3292606300""}","<pre><yamldata>tel: '3292606300'
+email: protezionecivile@comune.raddainchianti.si.it
+descrizione: 'Disponibilità alloggio per famiglia 4/6 persone'
+indirizzo: 'Radda in Chianti, SI, Tuscany, Italia'
+lat: '43.4870518'
+lon: '11.3747003'
+link: ''
+immagine: ''
+data: 30/10/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/899,186130350,2016-10-30 11:21:16,2016-10-30 11:13:00,Metto a disposizione appartamento in provincia di Forlì-Cesena,44.0712863,12.3242981,"[""Accettato"", ""Alloggi"", ""Bollettino"", ""Form"", ""Sisma Ottobre""]",,http://i.imgur.com/oJ5mT4B.jpg,"{""data"": ""30/10/2016"", ""descrizione"": ""Metto a disposizione un appartamento per i terremotati di Norcia e paesi limitrofi . Ha una camera matrimoniale, bagno, cucinotto e soggiorno con divano letto matrimoniale. Sarebbe bello se fossero anziani, ma non \u00e8 prioritario. Sar\u00e0 gioia grande ospitarvi"", ""email"": ""robertasama@libero.it"", ""immagine"": ""http://i.imgur.com/oJ5mT4B.jpg"", ""indirizzo"": ""Via Tosoni, Longiano, FC, Emilia-Romagna, Italia"", ""lat"": ""44.0712863"", ""link"": """", ""lon"": ""12.3242981"", ""tel"": ""3494699977""}","<pre><yamldata>tel: '3494699977'
 email: robertasama@libero.it
 descrizione: 'Metto a disposizione un appartamento per i terremotati di Norcia e paesi limitrofi . Ha una camera matrimoniale, bagno, cucinotto e soggiorno con divano letto matrimoniale. Sarebbe bello se fossero anziani, ma non è prioritario. Sarà gioia grande ospitarvi'
@@ -3799,11 +3809,6 @@ data: 14/09/2016
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/349,177009349,2016-10-01 16:04:19,2016-09-14 20:17:27,Storify in inglese sul terremoto,,,"[""Accettato"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""A cura dei volontari della Standby Task Force, \u00e8 uno Storify in lingua inglese che raccoglie informazioni utili relative al terremoto per persone che non parlano italiano."", ""link"": ""https://storify.com/LizSBTF/italy-earthquake"", ""titolo"": ""Storify in inglese sul terremoto""}","<pre><yamldata>titolo: 'Storify in inglese sul terremoto'
 descrizione: 'A cura dei volontari della Standby Task Force, è uno Storify in lingua inglese che raccoglie informazioni utili relative al terremoto per persone che non parlano italiano.'
 link: 'https://storify.com/LizSBTF/italy-earthquake'
-data: 14/09/2016
-</yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/348,177009021,2016-09-20 13:39:53,2016-09-14 20:16:03,Supporto informatico,,,"[""Accettato"", ""Donazioni"", ""Form""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""I volontari dell'associazione Informatici Senza Frontiere offrono supporto informatico nelle aree colpite dal sisma."", ""link"": ""http://www.informaticisenzafrontiere.org"", ""titolo"": ""Supporto informatico""}","<pre><yamldata>titolo: 'Supporto informatico'
-descrizione: 'I volontari dell''associazione Informatici Senza Frontiere offrono supporto informatico nelle aree colpite dal sisma.'
-link: 'http://www.informaticisenzafrontiere.org'
 data: 14/09/2016
 </yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/348,177009021,2016-09-20 13:39:53,2016-09-14 20:16:03,Supporto informatico,,,"[""Accettato"", ""Donazioni"", ""Form""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""I volontari dell'associazione Informatici Senza Frontiere offrono supporto informatico nelle aree colpite dal sisma."", ""link"": ""http://www.informaticisenzafrontiere.org"", ""titolo"": ""Supporto informatico""}","<pre><yamldata>titolo: 'Supporto informatico'
