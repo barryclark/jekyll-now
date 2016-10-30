@@ -40,10 +40,10 @@ log4j.appender.migration.layout.conversionPattern = %d %-5p %c - %m%n
 
 In such case, your Java code should be as follows,
       
-```Java
+```java
 Logger logger = Logger.getLogger("migrationlog"); //Defining the LoggerFileAppender 
 appender = (FileAppender)logger.getAppender("migration");
-return new File(appender.getFile());  
+return new File(appender.getFile());
 ```
 
 Note that its not migrationlog which was used when making the logger object is used when retrieving the file name, but migration
