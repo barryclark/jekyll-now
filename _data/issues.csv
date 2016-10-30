@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/898,186128662,2016-10-30 10:43:21,2016-10-30 10:33:11,Offerta alloggio a Bernareggi (Monza),,,"[""Accettato"", ""Alloggi"", ""Bollettino"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""30/10/2016"", ""descrizione"": ""Vivo in una villa a Bernareggio (Monza) che ha delle stanze libere che posso mettere a disposizione"", ""email"": ""Terremoto@Tavazzani.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3295365576""}","<pre><yamldata>tel: '3295365576'
+email: Terremoto@Tavazzani.it
+descrizione: 'Vivo in una villa a Bernareggio (Monza) che ha delle stanze libere che posso mettere a disposizione'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 30/10/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/897,186128633,2016-10-30 10:41:53,2016-10-30 10:32:26,L'associazione Cibo Amico Allergia Alimentare e Anafilassi dona alimenti senza e medicine per allergici,,,"[""Accettato"", ""Cibo"", ""Donazioni"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""30/10/2016"", ""descrizione"": ""Ciao ragazzi, parlo anche a nome del presidente dell'associazione Cibo Amico Allergia Alimentare e Anafilassi di Firenze. Anche noi vorremmo dare una mano con alimenti e medicine necessarie alle persone con allergie alimentari e non. A chi possiamo rivolgerci? C'\u00e8 un referente che si occupa delle esigenze delle persone terremotate? Grazie. Rachele, vicepresidente Cibo Amico"", ""link"": ""http://www.ciboamico.it/3/jo/index.php"", ""titolo"": ""L'associazione Cibo Amico Allergia Alimentare e Anafilassi dona alimenti senza e medicine per allergici""}","<pre><yamldata>titolo: 'L''associazione Cibo Amico Allergia Alimentare e Anafilassi dona alimenti senza e medicine per allergici'
 descrizione: 'Ciao ragazzi, parlo anche a nome del presidente dell''associazione Cibo Amico Allergia Alimentare e Anafilassi di Firenze. Anche noi vorremmo dare una mano con alimenti e medicine necessarie alle persone con allergie alimentari e non. A chi possiamo rivolgerci? C''è un referente che si occupa delle esigenze delle persone terremotate? Grazie. Rachele, vicepresidente Cibo Amico'
 link: 'http://www.ciboamico.it/3/jo/index.php'
@@ -4048,11 +4058,6 @@ lat: 41.49390
 lon: 13.04892
 link: ''
 immagine: ''
-data: 14/09/2016
-</yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/315,176959632,2016-10-01 16:23:02,2016-09-14 16:45:11,Contributo fino a 600 Euro per ogni famiglia,,,"[""Accettato"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""Ordinanza della Protezione Civile n.388 articolo 3."", ""link"": ""https://twitter.com/cypherinfo/status/769874038244122625"", ""titolo"": ""Contributo fino a 600 Euro per ogni famiglia""}","<pre><yamldata>titolo: 'Contributo fino a 600 Euro per ogni famiglia'
-descrizione: 'Ordinanza della Protezione Civile n.388 articolo 3.'
-link: 'https://twitter.com/cypherinfo/status/769874038244122625'
 data: 14/09/2016
 </yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/315,176959632,2016-10-01 16:23:02,2016-09-14 16:45:11,Contributo fino a 600 Euro per ogni famiglia,,,"[""Accettato"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""Ordinanza della Protezione Civile n.388 articolo 3."", ""link"": ""https://twitter.com/cypherinfo/status/769874038244122625"", ""titolo"": ""Contributo fino a 600 Euro per ogni famiglia""}","<pre><yamldata>titolo: 'Contributo fino a 600 Euro per ogni famiglia'
