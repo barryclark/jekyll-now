@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/959,186152853,2016-10-30 18:21:43,2016-10-30 18:21:14,Riattivato numero solidale 45500,,,"[""Accettato"", ""Form"", ""Notizie Utili"", ""Raccolte Fondi"", ""Sisma Ottobre""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Riattivato numero solidale 45500"", ""data"": ""30/10/2016"", ""descrizione"": ""Il Dipartimento nazionale di Protezione civile ha riattivato il NUMERO SOLIDALE 45500 per donazioni via sms o telefono fisso."", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": """", ""postale"": """"}","<pre><yamldata>chi: 'Riattivato numero solidale 45500'
+descrizione: 'Il Dipartimento nazionale di Protezione civile ha riattivato il NUMERO SOLIDALE 45500 per donazioni via sms o telefono fisso.'
+intestazione: ''
+iban: ''
+bic: ''
+postale: ''
+causale: ''
+link: ''
+email: ''
+data: 30/10/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/957,186152074,2016-10-30 18:08:01,2016-10-30 18:07:43,Regione Marche: 25mila stima sfollati,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""30/10/2016"", ""descrizione"": ""I tecnici della protezione civile della Regione Marche stimano gli sfollati nelle zone colpite dal sisma a 25mila persone."", ""link"": ""https://twitter.com/giornaleprociv/status/792785131022979076"", ""titolo"": ""Regione Marche: 25mila stima sfollati""}","<pre><yamldata>titolo: 'Regione Marche: 25mila stima sfollati'
 descrizione: 'I tecnici della protezione civile della Regione Marche stimano gli sfollati nelle zone colpite dal sisma a 25mila persone.'
 link: 'https://twitter.com/giornaleprociv/status/792785131022979076'
@@ -815,11 +826,6 @@ descrizione: 'Ad Arquata del Tronto lavori in corso per la costruzione della nuo
 immagine: 'http://i.imgur.com/zpbU4PV.jpg'
 lat: '42.777181'
 lon: '13.294143'
-data: 15/10/2016
-</yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/805,183198172,2016-10-15 08:56:29,2016-10-15 08:54:32,Pro Loco #Arquatadeltronto:  un sito per sostenere la ripresa dei produttori e dell'economia locale,,,"[""Accettato"", ""acquisto solidale"", ""Bollettino"", ""Facebook"", ""Notizie Utili""]",,,"{""data"": ""15/10/2016"", ""descrizione"": ""Sul nuovo sito della Pro Loco Arquata del Tronto dove \u00e8 possibile anche sostenere le attivit\u00e0 produttive della zona"", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1783214901946093/"", ""titolo"": ""Pro Loco #Arquatadeltronto:  in sito per sostenere la ripresa dei produttori e dell'conomia locale""}","<pre><yamldata>titolo: 'Pro Loco #Arquatadeltronto:  in sito per sostenere la ripresa dei produttori e dell''conomia locale'
-descrizione: 'Sul nuovo sito della Pro Loco Arquata del Tronto dove è possibile anche sostenere le attività produttive della zona'
-link: 'https://www.facebook.com/groups/1758670357733881/permalink/1783214901946093/'
 data: 15/10/2016
 </yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/805,183198172,2016-10-15 08:56:29,2016-10-15 08:54:32,Pro Loco #Arquatadeltronto:  un sito per sostenere la ripresa dei produttori e dell'economia locale,,,"[""Accettato"", ""acquisto solidale"", ""Bollettino"", ""Facebook"", ""Notizie Utili""]",,,"{""data"": ""15/10/2016"", ""descrizione"": ""Sul nuovo sito della Pro Loco Arquata del Tronto dove \u00e8 possibile anche sostenere le attivit\u00e0 produttive della zona"", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1783214901946093/"", ""titolo"": ""Pro Loco #Arquatadeltronto:  in sito per sostenere la ripresa dei produttori e dell'conomia locale""}","<pre><yamldata>titolo: 'Pro Loco #Arquatadeltronto:  in sito per sostenere la ripresa dei produttori e dell''conomia locale'
