@@ -43,16 +43,20 @@ comments:
 
     [...]How to get the file path of a Log4J log file? | Coder&#039;s Block[...]...
 ---
-<p>Assume the log4j.properties file is as below,</p>
-<pre>log4j.logger.<strong>migrationlog<&#47;strong> = INFO, <em><strong>migration<&#47;strong><&#47;em><&#47;pre></p>
-<pre>log4j.appender.<em><strong>migration<&#47;strong><&#47;em> = org.apache.log4j.RollingFileAppender<&#47;pre></p>
-<pre>log4j.appender.<em><strong>migration<&#47;strong><&#47;em>.File = C:&#47;work&#47;log&#47;migration.log<&#47;pre></p>
-<pre>log4j.appender.<em><strong>migration<&#47;strong><&#47;em>.MaxFileSize=20MB<&#47;pre></p>
-<pre>log4j.appender.<em><strong>migration<&#47;strong><&#47;em>.MaxBackupIndex=1<&#47;pre></p>
-<pre>log4j.appender.<em><strong>migration<&#47;strong><&#47;em>.layout = org.apache.log4j.PatternLayout<&#47;pre></p>
-<pre>log4j.appender.<em><strong>migration<&#47;strong><&#47;em>.layout.conversionPattern = %d %-5p %c - %m%n<&#47;pre><br />
-In such case, your Java code should be as follows,</p>
-<pre>Logger logger = Logger.getLogger("<strong>migrationlog<&#47;strong>"); &#47;&#47;Defining the Logger<&#47;pre></p>
-<pre>FileAppender appender = (FileAppender)logger.getAppender("<em><strong>migration<&#47;strong><&#47;em>");<&#47;pre></p>
-<pre>return new File(appender.getFile());<&#47;pre><br />
-Note that its not <strong>migrationlog<&#47;strong> which was used when making the logger object is used when retrieving the file name, but <em><strong>migration<&#47;strong><&#47;em></p>
+Assume the log4j.properties file is as below,
+
+      log4j.logger.migrationlog = INFO, migration
+      log4j.appender.migration = org.apache.log4j.RollingFileAppender
+      log4j.appender.migration.File = C:/work/log/migration.log
+      log4j.appender.migration.MaxFileSize=20MB
+      log4j.appender.migration.MaxBackupIndex=1
+      log4j.appender.migration.layout = org.apache.log4j.PatternLayout
+      log4j.appender.migration.layout.conversionPattern = %d %-5p %c - %m%n  
+      
+In such case, your Java code should be as follows,
+      
+      Logger logger = Logger.getLogger("migrationlog"); //Defining the LoggerFileAppender 
+      appender = (FileAppender)logger.getAppender("migration");
+      return new File(appender.getFile());  
+      
+Note that its not migrationlog which was used when making the logger object is used when retrieving the file name, but migration
