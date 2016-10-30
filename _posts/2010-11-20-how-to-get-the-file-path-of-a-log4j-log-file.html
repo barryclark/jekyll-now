@@ -1,0 +1,58 @@
+---
+layout: post
+status: publish
+published: true
+title: How to get the file path of a Log4J log file?
+author:
+  display_name: Gunith
+  login: admin
+  email: gunith@gmail.com
+  url: ''
+author_login: admin
+author_email: gunith@gmail.com
+wordpress_id: 8
+wordpress_url: http://www.beta.gunith.com/?p=8
+date: '2010-11-20 18:55:26 +0530'
+date_gmt: '2010-11-20 13:25:26 +0530'
+categories:
+- Java
+- Log4J
+tags:
+- programming
+- Java
+- logging
+- log4j
+- code
+- jee
+comments:
+- id: 603
+  author: Verzekering auto
+  author_email: Ugur@yaham.com
+  author_url: http://www.i-autoverzekering.net/
+  date: '2011-01-26 00:11:06 +0530'
+  date_gmt: '2011-01-25 18:41:06 +0530'
+  content: wow. I never thought about this in that way
+- id: 762
+  author: java programming lesson
+  author_email: ''
+  author_url: http://java2k11.blogspot.com/search?updated-max=2010-12-30T22%3A54%3A00-08%3A00&amp;max-results=1
+  date: '2011-10-16 17:56:45 +0530'
+  date_gmt: '2011-10-16 12:26:45 +0530'
+  content: |-
+    <strong>java programming lesson...<&#47;strong>
+
+    [...]How to get the file path of a Log4J log file? | Coder&#039;s Block[...]...
+---
+<p>Assume the log4j.properties file is as below,</p>
+<pre>log4j.logger.<strong>migrationlog<&#47;strong> = INFO, <em><strong>migration<&#47;strong><&#47;em><&#47;pre></p>
+<pre>log4j.appender.<em><strong>migration<&#47;strong><&#47;em> = org.apache.log4j.RollingFileAppender<&#47;pre></p>
+<pre>log4j.appender.<em><strong>migration<&#47;strong><&#47;em>.File = C:&#47;work&#47;log&#47;migration.log<&#47;pre></p>
+<pre>log4j.appender.<em><strong>migration<&#47;strong><&#47;em>.MaxFileSize=20MB<&#47;pre></p>
+<pre>log4j.appender.<em><strong>migration<&#47;strong><&#47;em>.MaxBackupIndex=1<&#47;pre></p>
+<pre>log4j.appender.<em><strong>migration<&#47;strong><&#47;em>.layout = org.apache.log4j.PatternLayout<&#47;pre></p>
+<pre>log4j.appender.<em><strong>migration<&#47;strong><&#47;em>.layout.conversionPattern = %d %-5p %c - %m%n<&#47;pre><br />
+In such case, your Java code should be as follows,</p>
+<pre>Logger logger = Logger.getLogger("<strong>migrationlog<&#47;strong>"); &#47;&#47;Defining the Logger<&#47;pre></p>
+<pre>FileAppender appender = (FileAppender)logger.getAppender("<em><strong>migration<&#47;strong><&#47;em>");<&#47;pre></p>
+<pre>return new File(appender.getFile());<&#47;pre><br />
+Note that its not <strong>migrationlog<&#47;strong> which was used when making the logger object is used when retrieving the file name, but <em><strong>migration<&#47;strong><&#47;em></p>
