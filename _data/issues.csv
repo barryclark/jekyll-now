@@ -1,4 +1,11 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/912,186137155,2016-10-30 13:49:45,2016-10-30 13:47:55,Campanile della chiesa di s. G,43.111742,13.603804,"[""Accettato"", ""Telegram""]",,http://i.imgur.com/jdVWDf5.jpg,"{""data"": ""30/10/2016"", ""descrizione"": ""Campanile della chiesa di s. Giovanni pericolante, minaccia crollo su chiesa o abitazioni vicine."", ""immagine"": ""http://i.imgur.com/jdVWDf5.jpg"", ""lat"": ""43.111742"", ""lon"": ""13.603804"", ""telegram_user"": ""MarcoAlici""}","<pre><yamldata>telegram_user: MarcoAlici
+descrizione: 'Campanile della chiesa di s. Giovanni pericolante, minaccia crollo su chiesa o abitazioni vicine.'
+immagine: 'http://i.imgur.com/jdVWDf5.jpg'
+lat: '43.111742'
+lon: '13.603804'
+data: 30/10/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/911,186134923,2016-10-30 13:02:23,2016-10-30 13:01:25,Camera doppia privata con bagno #milano,45.5119694,9.1264346,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""30/10/2016"", ""descrizione"": ""Camera doppia privata, bagno privato, balcone. Nuova costruzione, arredata. A disposizione chiunque avesse necessit\u00e0."", ""email"": ""zecco07@gmail.com"", ""immagine"": """", ""indirizzo"": ""8505_32501, Municipio 8, Milano, Lombardia, 20156, Italia"", ""lat"": ""45.5119694"", ""link"": """", ""lon"": ""9.1264346"", ""tel"": ""3406784733""}","<pre><yamldata>tel: '3406784733'
 email: zecco07@gmail.com
 descrizione: 'Camera doppia privata, bagno privato, balcone. Nuova costruzione, arredata. A disposizione chiunque avesse necessità.'
