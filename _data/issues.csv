@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/948,186145899,2016-10-30 16:39:25,2016-10-30 16:23:00,"#Viabilità - aggiornamenti da #Umbria, #Marche, #Lazio e #Abruzzo",,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""30/10/2016"", ""descrizione"": ""Sono numerose le strade statali e provinciali chiuse nelle marche, nel Lazio, in Umbria e in Abruzzo per i crolli o per i rischi che sono legati al violento terremoto di questa mattina: al link un aggiornamento della situazione alle 14 diffuso da Umbria24."", ""link"": ""http://www.umbria24.it/terremoto-la-situazione-della-viabilita-in-umbria-marche-lazio-e-abruzzo/419581.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+Umbria24+%28Umbria24.it%29"", ""titolo"": ""#Viabilit\u00e0 - aggiornamenti da #Umbria, #Marche, #Lazio e #Abruzzo""}","<pre><yamldata>titolo: '#Viabilità - aggiornamenti da #Umbria, #Marche, #Lazio e #Abruzzo'
+descrizione: 'Sono numerose le strade statali e provinciali chiuse nelle marche, nel Lazio, in Umbria e in Abruzzo per i crolli o per i rischi che sono legati al violento terremoto di questa mattina: al link un aggiornamento della situazione alle 14 diffuso da Umbria24.'
+link: 'http://www.umbria24.it/terremoto-la-situazione-della-viabilita-in-umbria-marche-lazio-e-abruzzo/419581.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+Umbria24+%28Umbria24.it%29'
+data: 30/10/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/947,186145340,2016-10-30 16:17:01,2016-10-30 16:14:08,[Video] Elisoccorso Guardia di Finanza su #Castelluccio di #Norcia,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""30/10/2016"", ""descrizione"": ""LIVE/ Elisoccorso alpino Guardia di Finanza in sorvolo su Castelluccio di Norcia [Fonte: Rai]"", ""link"": ""https://twitter.com/Radio1Rai/status/792756620711321600"", ""titolo"": ""[Video] Elisoccorso Guardia di Finanza su #Castelluccio di #Norcia""}","<pre><yamldata>titolo: '[Video] Elisoccorso Guardia di Finanza su #Castelluccio di #Norcia'
 descrizione: 'LIVE/ Elisoccorso alpino Guardia di Finanza in sorvolo su Castelluccio di Norcia [Fonte: Rai]'
 link: 'https://twitter.com/Radio1Rai/status/792756620711321600'
@@ -4279,11 +4284,6 @@ lat: '42.414332240033445'
 lon: '12.864990234375'
 link: 'https://www.facebook.com/groups/1758670357733881/permalink/1762438200690430/'
 immagine: ''
-data: 14/09/2016
-</yamldata></pre>",closed
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/317,176962194,2016-10-19 14:31:41,2016-09-14 16:56:07,Comune di Amatrice - persone scomparse,,,"[""Accettato"", ""Form"", ""Notizie Utili""]",Milestone(number=1),,"{""data"": ""14/09/2016"", ""descrizione"": ""CHIUNQUE ABBIA NOTIZIE DI PERSONE SCOMPARSE DEVE SEGNALARLO PRESSO L'ATTUALE SEDE PROVVISORIA DEL COMUNE (liceo scientifico)"", ""link"": ""https://www.facebook.com/ComunediAmatrice/posts/1091653897580611"", ""titolo"": ""Comune di Amatrice - persone scomparse""}","<pre><yamldata>titolo: 'Comune di Amatrice - persone scomparse'
-descrizione: 'CHIUNQUE ABBIA NOTIZIE DI PERSONE SCOMPARSE DEVE SEGNALARLO PRESSO L''ATTUALE SEDE PROVVISORIA DEL COMUNE (liceo scientifico)'
-link: 'https://www.facebook.com/ComunediAmatrice/posts/1091653897580611'
 data: 14/09/2016
 </yamldata></pre>",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/317,176962194,2016-10-19 14:31:41,2016-09-14 16:56:07,Comune di Amatrice - persone scomparse,,,"[""Accettato"", ""Form"", ""Notizie Utili""]",Milestone(number=1),,"{""data"": ""14/09/2016"", ""descrizione"": ""CHIUNQUE ABBIA NOTIZIE DI PERSONE SCOMPARSE DEVE SEGNALARLO PRESSO L'ATTUALE SEDE PROVVISORIA DEL COMUNE (liceo scientifico)"", ""link"": ""https://www.facebook.com/ComunediAmatrice/posts/1091653897580611"", ""titolo"": ""Comune di Amatrice - persone scomparse""}","<pre><yamldata>titolo: 'Comune di Amatrice - persone scomparse'
