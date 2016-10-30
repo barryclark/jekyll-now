@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/913,186137526,2016-10-30 14:00:04,2016-10-30 13:56:24,Metto a disposizione gratuitam,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""30/10/2016"", ""descrizione"": ""Metto a disposizione gratuitamente una camera matrimoniale, con possibilit\u00e0 di aggiungere un lettino, con bagno del mio bed and breakfast. Utilizzo in comune della mia cucina. Localit\u00e0 Osimo (AN). Disponibilit\u00e0 immediata."", ""email"": ""francesco@mollificiopirani.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3497747037""}","<pre><yamldata>tel: '3497747037'
+email: francesco@mollificiopirani.it
+descrizione: 'Metto a disposizione gratuitamente una camera matrimoniale, con possibilità di aggiungere un lettino, con bagno del mio bed and breakfast. Utilizzo in comune della mia cucina. Località Osimo (AN). Disponibilità immediata.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 30/10/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/912,186137155,2016-10-30 13:59:36,2016-10-30 13:47:55,[Foto] Campanile della chiesa di San Giovanni pericolante,43.111742,13.603804,"[""Accettato"", ""Bollettino"", ""Telegram""]",,http://i.imgur.com/jdVWDf5.jpg,"{""data"": ""30/10/2016"", ""descrizione"": ""Campanile della chiesa di S. Giovanni pericolante, minaccia crollo su chiesa o abitazioni vicine."", ""immagine"": ""http://i.imgur.com/jdVWDf5.jpg"", ""lat"": ""43.111742"", ""lon"": ""13.603804"", ""telegram_user"": ""MarcoAlici""}","<pre><yamldata>telegram_user: MarcoAlici
 descrizione: 'Campanile della chiesa di S. Giovanni pericolante, minaccia crollo su chiesa o abitazioni vicine.'
 immagine: 'http://i.imgur.com/jdVWDf5.jpg'
@@ -1061,17 +1071,6 @@ descrizione: 'A un mese dalle scosse che hanno colpito Amatrice, Accumoli e i pa
 link: 'http://www.piccolimaestri.org/piccoli-maestri-per-amatrice/'
 data: 02/10/2016
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/737,180502759,2016-10-11 21:32:10,2016-10-02 08:54:57,#Amatricianasolidale a Lissone (MB) per il Comune di #Acquasanta (AP) domenica 9 ottobre 2016,,,"[""Accettato"", ""Bollettino"", ""Facebook"", ""Raccolte Fondi""]",Milestone(number=12),,"{""bic"": """", ""causale"": """", ""chi"": ""#Amatricianasolidale a Lissone (MB) per il Comune di #Acquasanta (AP) domenica 9 ottobre 2016"", ""data"": ""02/10/2016"", ""descrizione"": ""Insieme per sostenere il comune di #Acquasanta in provincia di Ascoli Piceno. Il sindaco di Acquasanta ha comunicato la necessit\u00e0 di garantire l'attivit\u00e0 didattica per le scuole dell'infanzia e primaria crollate ed inagibili. Ora i bambini sono in strutture di emergenza. Pranziamo insieme! Un gesto semplice e spontaneo pu\u00f2 sostenere e trasmettere vicinanza. Prenotazioni entro il 7 ottobre 2016 (tel. 039 7397257)."", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1777339639200286/"", ""postale"": """"}","<pre><yamldata>chi: '#Amatricianasolidale a Lissone (MB) per il Comune di #Acquasanta (AP) domenica 9 ottobre 2016'
-descrizione: 'Insieme per sostenere il comune di #Acquasanta in provincia di Ascoli Piceno. Il sindaco di Acquasanta ha comunicato la necessità di garantire l''attività didattica per le scuole dell''infanzia e primaria crollate ed inagibili. Ora i bambini sono in strutture di emergenza. Pranziamo insieme! Un gesto semplice e spontaneo può sostenere e trasmettere vicinanza. Prenotazioni entro il 7 ottobre 2016 (tel. 039 7397257).'
-intestazione: ''
-iban: ''
-bic: ''
-postale: ''
-causale: ''
-link: 'https://www.facebook.com/groups/1758670357733881/permalink/1777339639200286/'
-email: ''
-data: 02/10/2016
-</yamldata></pre>",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/737,180502759,2016-10-11 21:32:10,2016-10-02 08:54:57,#Amatricianasolidale a Lissone (MB) per il Comune di #Acquasanta (AP) domenica 9 ottobre 2016,,,"[""Accettato"", ""Bollettino"", ""Facebook"", ""Raccolte Fondi""]",Milestone(number=12),,"{""bic"": """", ""causale"": """", ""chi"": ""#Amatricianasolidale a Lissone (MB) per il Comune di #Acquasanta (AP) domenica 9 ottobre 2016"", ""data"": ""02/10/2016"", ""descrizione"": ""Insieme per sostenere il comune di #Acquasanta in provincia di Ascoli Piceno. Il sindaco di Acquasanta ha comunicato la necessit\u00e0 di garantire l'attivit\u00e0 didattica per le scuole dell'infanzia e primaria crollate ed inagibili. Ora i bambini sono in strutture di emergenza. Pranziamo insieme! Un gesto semplice e spontaneo pu\u00f2 sostenere e trasmettere vicinanza. Prenotazioni entro il 7 ottobre 2016 (tel. 039 7397257)."", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1777339639200286/"", ""postale"": """"}","<pre><yamldata>chi: '#Amatricianasolidale a Lissone (MB) per il Comune di #Acquasanta (AP) domenica 9 ottobre 2016'
 descrizione: 'Insieme per sostenere il comune di #Acquasanta in provincia di Ascoli Piceno. Il sindaco di Acquasanta ha comunicato la necessità di garantire l''attività didattica per le scuole dell''infanzia e primaria crollate ed inagibili. Ora i bambini sono in strutture di emergenza. Pranziamo insieme! Un gesto semplice e spontaneo può sostenere e trasmettere vicinanza. Prenotazioni entro il 7 ottobre 2016 (tel. 039 7397257).'
 intestazione: ''
