@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/899,186130350,2016-10-30 11:21:16,2016-10-30 11:13:00,Metto a disposizione appartamento in provincia di Forlì-Cesena,44.0712863,12.3242981,"[""Accettato"", ""Alloggi"", ""Bollettino"", ""Form"", ""Sisma Ottobre""]",,http://i.imgur.com/oJ5mT4B.jpg,"{""data"": ""30/10/2016"", ""descrizione"": ""Metto a disposizione un appartamento per i terremotati di Norcia e paesi limitrofi . Ha una camera matrimoniale, bagno, cucinotto e soggiorno con divano letto matrimoniale. Sarebbe bello se fossero anziani, ma non \u00e8 prioritario. Sar\u00e0 gioia grande ospitarvi"", ""email"": ""robertasama@libero.it"", ""immagine"": ""http://i.imgur.com/oJ5mT4B.jpg"", ""indirizzo"": ""Via Tosoni, Longiano, FC, Emilia-Romagna, Italia"", ""lat"": ""44.0712863"", ""link"": """", ""lon"": ""12.3242981"", ""tel"": ""3494699977""}","<pre><yamldata>tel: '3494699977'
+email: robertasama@libero.it
+descrizione: 'Metto a disposizione un appartamento per i terremotati di Norcia e paesi limitrofi . Ha una camera matrimoniale, bagno, cucinotto e soggiorno con divano letto matrimoniale. Sarebbe bello se fossero anziani, ma non è prioritario. Sarà gioia grande ospitarvi'
+indirizzo: 'Via Tosoni, Longiano, FC, Emilia-Romagna, Italia'
+lat: '44.0712863'
+lon: '12.3242981'
+link: ''
+immagine: 'http://i.imgur.com/oJ5mT4B.jpg'
+data: 30/10/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/898,186128662,2016-10-30 10:43:21,2016-10-30 10:33:11,Offerta alloggio a Bernareggi (Monza),,,"[""Accettato"", ""Alloggi"", ""Bollettino"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""30/10/2016"", ""descrizione"": ""Vivo in una villa a Bernareggio (Monza) che ha delle stanze libere che posso mettere a disposizione"", ""email"": ""Terremoto@Tavazzani.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3295365576""}","<pre><yamldata>tel: '3295365576'
 email: Terremoto@Tavazzani.it
 descrizione: 'Vivo in una villa a Bernareggio (Monza) che ha delle stanze libere che posso mettere a disposizione'
@@ -3788,11 +3798,6 @@ data: 14/09/2016
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/347,177008675,2016-10-01 16:26:49,2016-09-14 20:14:44,Animali domestici,,,"[""Accettato"", ""Donazioni"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""La pensione per animali La Campagnola di Sorbara di Modena, attraverso il suo gestore Cinzia Vescovini, mette a disposizione la propria struttura per ospitare gratuitamente animali di privati colpiti dal recente terremoto (cani e gatti, conigli, cavie, uccelli). Tel. 3398099494 - 059907006."", ""link"": """", ""titolo"": ""Animali domestici""}","<pre><yamldata>titolo: 'Animali domestici'
 descrizione: 'La pensione per animali La Campagnola di Sorbara di Modena, attraverso il suo gestore Cinzia Vescovini, mette a disposizione la propria struttura per ospitare gratuitamente animali di privati colpiti dal recente terremoto (cani e gatti, conigli, cavie, uccelli). Tel. 3398099494 - 059907006.'
 link: ''
-data: 14/09/2016
-</yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/346,177008224,2016-10-01 16:04:04,2016-09-14 20:12:46,Save the children,,,"[""Accettato"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""Decalogo di informazioni utili per assistenza ai bambini in caso di terremoto."", ""link"": ""http://www.vita.it/it/article/2016/08/24/10-cose-da-fare-per-proteggere-i-bambini-dopo-un-evento-drammatico/140471/"", ""titolo"": ""Save the children""}","<pre><yamldata>titolo: 'Save the children'
-descrizione: 'Decalogo di informazioni utili per assistenza ai bambini in caso di terremoto.'
-link: 'http://www.vita.it/it/article/2016/08/24/10-cose-da-fare-per-proteggere-i-bambini-dopo-un-evento-drammatico/140471/'
 data: 14/09/2016
 </yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/346,177008224,2016-10-01 16:04:04,2016-09-14 20:12:46,Save the children,,,"[""Accettato"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""Decalogo di informazioni utili per assistenza ai bambini in caso di terremoto."", ""link"": ""http://www.vita.it/it/article/2016/08/24/10-cose-da-fare-per-proteggere-i-bambini-dopo-un-evento-drammatico/140471/"", ""titolo"": ""Save the children""}","<pre><yamldata>titolo: 'Save the children'
