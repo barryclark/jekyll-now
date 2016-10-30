@@ -1,7 +1,7 @@
 ---
 layout: post
 published: true
-title: How to get the file path of a Log4J log file?
+title: How to get the file path of a Log4J log file in Java level?
 author:
   display_name: Gunith
   login: admin
@@ -46,5 +46,6 @@ appender = (FileAppender)logger.getAppender("migration");
 return new File(appender.getFile());
 ```
 
-Note that its not migrationlog which was used when making the logger object is used when retrieving the file name, but migration
+Note that its not `migrationlog` which was used when making the logger object is used when retrieving the file name, but `migration`
 
+_Migrated from gunith.com_
