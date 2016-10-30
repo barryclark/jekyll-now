@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/949,186146264,2016-10-30 16:41:04,2016-10-30 16:29:06,Ordine psicologi #Umbria: sostegno popolazione #Norcia,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""30/10/2016"", ""descrizione"": ""Sostegno psicologi per i terremotati \u00abE\u2019 stato riattivato il posto di aiuto psicologico a Norcia \u2013 informa l\u2019Ordine degli psicologi dell\u2019Umbria -. Alcuni psicologi sono gi\u00e0 sul posto per gestire i primi momenti di emergenza\u00bb. Il presidente David Lazzari ha annunciato \u00abl\u2019immediata disponibilit\u00e0 del centro di ascolto presso l\u2019azienda ospedaliera di Terni per chi ne avesse bisogno\u00bb. Contatti Ordine Psicologi Umbria: https://goo.gl/VMgIKG"", ""link"": ""https://archive.is/k8Urd#selection-769.0-771.346"", ""titolo"": ""Ordine #psicologi #Umbria: sostegno popolazione""}","<pre><yamldata>titolo: 'Ordine #psicologi #Umbria: sostegno popolazione'
+descrizione: 'Sostegno psicologi per i terremotati «E’ stato riattivato il posto di aiuto psicologico a Norcia – informa l’Ordine degli psicologi dell’Umbria -. Alcuni psicologi sono già sul posto per gestire i primi momenti di emergenza». Il presidente David Lazzari ha annunciato «l’immediata disponibilità del centro di ascolto presso l’azienda ospedaliera di Terni per chi ne avesse bisogno». Contatti Ordine Psicologi Umbria: https://goo.gl/VMgIKG'
+link: 'https://archive.is/k8Urd#selection-769.0-771.346'
+data: 30/10/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/948,186145899,2016-10-30 16:39:25,2016-10-30 16:23:00,"#Viabilità - aggiornamenti da #Umbria, #Marche, #Lazio e #Abruzzo",,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""30/10/2016"", ""descrizione"": ""Sono numerose le strade statali e provinciali chiuse nelle marche, nel Lazio, in Umbria e in Abruzzo per i crolli o per i rischi che sono legati al violento terremoto di questa mattina: al link un aggiornamento della situazione alle 14 diffuso da Umbria24."", ""link"": ""http://www.umbria24.it/terremoto-la-situazione-della-viabilita-in-umbria-marche-lazio-e-abruzzo/419581.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+Umbria24+%28Umbria24.it%29"", ""titolo"": ""#Viabilit\u00e0 - aggiornamenti da #Umbria, #Marche, #Lazio e #Abruzzo""}","<pre><yamldata>titolo: '#Viabilità - aggiornamenti da #Umbria, #Marche, #Lazio e #Abruzzo'
 descrizione: 'Sono numerose le strade statali e provinciali chiuse nelle marche, nel Lazio, in Umbria e in Abruzzo per i crolli o per i rischi che sono legati al violento terremoto di questa mattina: al link un aggiornamento della situazione alle 14 diffuso da Umbria24.'
 link: 'http://www.umbria24.it/terremoto-la-situazione-della-viabilita-in-umbria-marche-lazio-e-abruzzo/419581.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+Umbria24+%28Umbria24.it%29'
@@ -4272,17 +4277,6 @@ indirizzo: 'Via San Lorenzo di Casanova, Sant''Olcese, GE, LIG, 16162, Italia'
 lat: '44.457309801319305'
 lon: '8.931884765625'
 link: 'https://www.facebook.com/notes/music-for-peace-creativi-della-notte/music-for-peace-comunicato-ufficiale-con-preghiera-di-lettura-in-risposta-alle-c/10153594265106991'
-immagine: ''
-data: 14/09/2016
-</yamldata></pre>",closed
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/318,176964426,2016-09-23 22:13:48,2016-09-14 17:05:49,Infermiere area critica,42.414332240033445,12.864990234375,"[""Accettato"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""Infermiere area critica"", ""data"": ""14/09/2016"", ""descrizione"": ""Mariano De Persio, infermiere di area critica all'Ospedale di Terni, con esperienza in vari terremoti, offre la sua disponibilit\u00e0 ed esperienza."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via Giulio de Iuliis, Micioccoli, Rieti, RI, LAZ, 02100, Italia"", ""lat"": ""42.414332240033445"", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1762438200690430/"", ""lon"": ""12.864990234375"", ""tel"": """"}","<pre><yamldata>tel: ''
-email: ''
-cosa: 'Infermiere area critica'
-descrizione: 'Mariano De Persio, infermiere di area critica all''Ospedale di Terni, con esperienza in vari terremoti, offre la sua disponibilità ed esperienza.'
-indirizzo: 'Via Giulio de Iuliis, Micioccoli, Rieti, RI, LAZ, 02100, Italia'
-lat: '42.414332240033445'
-lon: '12.864990234375'
-link: 'https://www.facebook.com/groups/1758670357733881/permalink/1762438200690430/'
 immagine: ''
 data: 14/09/2016
 </yamldata></pre>",closed
