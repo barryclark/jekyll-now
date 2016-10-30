@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/953,186147254,2016-10-30 16:49:25,2016-10-30 16:46:43,Offerta casa per una famiglia a Fara in Sabina (Rieti) ,42.209813508296726,12.716224193572998,"[""Accettato"", ""Alloggi"", ""Bollettino"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""30/10/2016"", ""descrizione"": ""Casa mia (prima casa ma ci sono poco) \u00e8 a Fara in Sabina (Rieti, ma verso Roma) ed \u00e8 visitabile qui https://www.airbnb.it/rooms/5821143?preview Normalmente l'affitto ma ci mancherebbe.. diventa subito disponibile. Anche se con qualche difficolt\u00e0 si possono sistemare anche pi\u00f9 persone, direi che per una famiglia di 4 va benissimo. Serve auto perche' no mezzi pubblici e sconsiglio per disabili perch\u00e8 ha scale. Io sono il Segretario Generale di Actionaid, ma l'offerta \u00e8 del tutto privata."", ""email"": ""marco.deponte@actionaid.org"", ""immagine"": """", ""indirizzo"": ""Chiesa Nostra Signora di Fatima, Via Prime Case, Corese Terra, Fara in Sabina, RI, Lazio, 02032, Italia"", ""lat"": ""42.209813508296726"", ""link"": ""https://www.airbnb.it/rooms/5821143?preview"", ""lon"": ""12.716224193572998"", ""tel"": ""3351253351""}","<pre><yamldata>tel: '3351253351'
+email: marco.deponte@actionaid.org
+descrizione: 'Casa mia (prima casa ma ci sono poco) è a Fara in Sabina (Rieti, ma verso Roma) ed è visitabile qui https://www.airbnb.it/rooms/5821143?preview Normalmente l''affitto ma ci mancherebbe.. diventa subito disponibile. Anche se con qualche difficoltà si possono sistemare anche più persone, direi che per una famiglia di 4 va benissimo. Serve auto perche'' no mezzi pubblici e sconsiglio per disabili perchè ha scale. Io sono il Segretario Generale di Actionaid, ma l''offerta è del tutto privata.'
+indirizzo: 'Chiesa Nostra Signora di Fatima, Via Prime Case, Corese Terra, Fara in Sabina, RI, Lazio, 02032, Italia'
+lat: '42.209813508296726'
+lon: '12.716224193572998'
+link: 'https://www.airbnb.it/rooms/5821143?preview'
+immagine: ''
+data: 30/10/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/952,186147087,2016-10-30 16:46:49,2016-10-30 16:44:07,A #Norcia e  #Preci non bere #acqua dei rubinetti,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""30/10/2016"", ""descrizione"": ""A Norcia e Preci non bere acqua dei rubinetti \u00abLa societ\u00e0 Vus, Valle Umbra Servizi, che gestisce la rete idrica anche della Valnerina, comunica che, al momento, a scopo precauzionale, deve essere evitato l\u2019utilizzo dell\u2019acqua per usi alimentari a Norcia e Preci. Sono state fatte verifiche in tutti i comuni dell\u2019area della Valnerina\u00bb. Lo ha scritto in un post su Facebook il presidente della Regione Umbria Catiuscia Marini."", ""link"": ""http://www.umbria24.it/terremoto-violenta-scossa-alle-7-41-avvertita-in-umbria-magnitudo-6-1-danni-a-san-benedetto/419431.html"", ""titolo"": ""A #Norcia e  #Preci non bere #acqua dei rubinetti""}","<pre><yamldata>titolo: 'A #Norcia e  #Preci non bere #acqua dei rubinetti'
 descrizione: 'A Norcia e Preci non bere acqua dei rubinetti «La società Vus, Valle Umbra Servizi, che gestisce la rete idrica anche della Valnerina, comunica che, al momento, a scopo precauzionale, deve essere evitato l’utilizzo dell’acqua per usi alimentari a Norcia e Preci. Sono state fatte verifiche in tutti i comuni dell’area della Valnerina». Lo ha scritto in un post su Facebook il presidente della Regione Umbria Catiuscia Marini.'
 link: 'http://www.umbria24.it/terremoto-violenta-scossa-alle-7-41-avvertita-in-umbria-magnitudo-6-1-danni-a-san-benedetto/419431.html'
@@ -1972,16 +1982,6 @@ https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/622,1782630
 descrizione: 'Disponibili sul sito di Ispra i report giornalieri elaborati dai tecnici operativi, sotto il coordinamento della Protezione civile nazionale, che sin dal 25 agosto stanno monitorando i rischi ambientali prodotti dal sisma.'
 link: 'http://www.isprambiente.gov.it/it/evidenza/sisma-italia-centrale/terremoto-nellitalia-centrale-2'
 data: 21/09/2016
-</yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/621,178194425,2016-09-21 12:48:25,2016-09-20 22:14:31,Associazione Pescara del Tronto 24/08/2016,42.7510272,13.2714902,"[""Accettato"", ""Contatti"", ""Form""]",,,"{""data"": ""20/09/2016"", ""descrizione"": ""Associazione creata dai cittadini di Pescara del Tronto dopo il terremoto."", ""email"": ""pescaradeltronto@hotmail.com"", ""indirizzo"": """", ""lat"": ""42.7510272"", ""link"": ""http://facebook.com/pescaradeltronto"", ""lon"": ""13.2714902"", ""nome"": ""Associazione Pescara del Tronto 24/08/2016"", ""tel"": """"}","<pre><yamldata>nome: 'Associazione Pescara del Tronto 24/08/2016'
-tel: ''
-email: pescaradeltronto@hotmail.com
-descrizione: 'Associazione creata dai cittadini di Pescara del Tronto dopo il terremoto.'
-indirizzo: ''
-lat: '42.7510272'
-lon: '13.2714902'
-link: 'http://facebook.com/pescaradeltronto'
-data: 20/09/2016
 </yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/621,178194425,2016-09-21 12:48:25,2016-09-20 22:14:31,Associazione Pescara del Tronto 24/08/2016,42.7510272,13.2714902,"[""Accettato"", ""Contatti"", ""Form""]",,,"{""data"": ""20/09/2016"", ""descrizione"": ""Associazione creata dai cittadini di Pescara del Tronto dopo il terremoto."", ""email"": ""pescaradeltronto@hotmail.com"", ""indirizzo"": """", ""lat"": ""42.7510272"", ""link"": ""http://facebook.com/pescaradeltronto"", ""lon"": ""13.2714902"", ""nome"": ""Associazione Pescara del Tronto 24/08/2016"", ""tel"": """"}","<pre><yamldata>nome: 'Associazione Pescara del Tronto 24/08/2016'
 tel: ''
