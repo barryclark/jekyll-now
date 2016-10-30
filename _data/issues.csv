@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/889,186123348,2016-10-30 09:02:27,2016-10-30 08:17:39,VIABILITA' ROMA,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""30/10/2016"", ""descrizione"": ""Via Bartolomeo Cristofori Roma - accertamenti tecnici verifica stabilit\u00e0 edificio per caduta ascensore."", ""link"": """", ""titolo"": ""VIABILITA' ROMA""}","<pre><yamldata>titolo: 'VIABILITA'' ROMA'
+descrizione: 'Via Bartolomeo Cristofori Roma - accertamenti tecnici verifica stabilità edificio per caduta ascensore.'
+link: ''
+data: 30/10/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/886,186093015,2016-10-29 19:52:22,2016-10-29 18:21:13,"UISP Rieti insieme a RCS, Running Motivator e al magazine Correre",,,"[""Accettato"", ""Raccolte Fondi"", ""Twitter""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""UISP Rieti insieme a RCS, Running Motivator e il magazine Correre"", ""data"": ""29/10/2016"", ""descrizione"": ""raccolta fondi \u00e8 finalizzata a sostegno di iniziative a carattere sociale e sportivo, dall'adeguamento alla realizzazione di impianti per lo svolgimento di attivit\u00e0 sportive o ricreative, oltre che per lo sviluppo di progetti necessari a favorire l\u2019aggregazione sociale, soprattutto di giovani e anziani."", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""https://www.retedeldono.it/siamoconvoi"", ""postale"": """"}","<pre><yamldata>chi: 'UISP Rieti insieme a RCS, Running Motivator e il magazine Correre'
 descrizione: 'raccolta fondi è finalizzata a sostegno di iniziative a carattere sociale e sportivo, dall''adeguamento alla realizzazione di impianti per lo svolgimento di attività sportive o ricreative, oltre che per lo sviluppo di progetti necessari a favorire l’aggregazione sociale, soprattutto di giovani e anziani.'
 intestazione: ''
@@ -5943,15 +5948,6 @@ https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/71,17550719
             lon: 14.268124400000033
             link: https://www.google.com
             data: 07/09/2016</pre></yamldata>",closed
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/69,175491734,2016-09-07 13:53:29,2016-09-07 12:37:38,Prova!,,,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,{},"tel: +393272032790
-            email: info@francescopinzauti.com
-            cosa: Prova!
-            descrizione: Una prova
-            indirizzo: Via Dante, 1, 20121 Milano, Italia
-            lat: 45.4654219
-            lon: 9.18592430000001
-            link: https://developer.github.com/v3/issues/#create-an-issue
-            data: 07/09/2016",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/69,175491734,2016-09-07 13:53:29,2016-09-07 12:37:38,Prova!,,,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,{},"tel: +393272032790
             email: info@francescopinzauti.com
             cosa: Prova!
