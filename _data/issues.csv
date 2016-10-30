@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/971,186165157,2016-10-30 22:25:30,2016-10-30 21:19:53,#Viabilità #Roma: chiusura tratto finale tangenziale est,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""30/10/2016"", ""descrizione"": ""Per crepe su tangenziale est a Roma, rimane chiuso fino a nuovo ordine il tratto finale [Fonte: Protezione Civile]"", ""link"": ""https://goo.gl/6cF77i"", ""titolo"": ""#Viabilit\u00e0 #Roma: chiusura tratto finale #tangenziale #est""}","<pre><yamldata>titolo: '#Viabilità #Roma: chiusura tratto finale #tangenziale #est'
+descrizione: 'Per crepe su tangenziale est a Roma, rimane chiuso fino a nuovo ordine il tratto finale [Fonte: Protezione Civile]'
+link: 'https://goo.gl/6cF77i'
+data: 30/10/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/970,186164502,2016-10-30 22:18:11,2016-10-30 21:08:45,Stanza con letto doppio disponibile a Roma,41.8711875,12.5154678,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""30/10/2016"", ""descrizione"": ""Stanza con letto doppio disponibile a Roma appio per bo, due/tre settimane? Mi rendo conto che non \u00e8 molto tempo ma chiunque ne abbia bisogno \u00e8 benvenuto"", ""email"": ""massi.roma@gmail.com"", ""immagine"": """", ""indirizzo"": ""Via Pietro Fedele, San Giovanni, Municipio Roma VII, Roma, RM, Lazio, 00179, Italia"", ""lat"": ""41.8711875"", ""link"": """", ""lon"": ""12.5154678"", ""tel"": ""3925024954""}","<pre><yamldata>tel: '3925024954'
 email: massi.roma@gmail.com
 descrizione: 'Stanza con letto doppio disponibile a Roma appio per bo, due/tre settimane? Mi rendo conto che non è molto tempo ma chiunque ne abbia bisogno è benvenuto'
