@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/905,186133894,2016-10-30 13:01:29,2016-10-30 12:38:39,Tecnici per effettuare le prime verifiche post terremoto SAN SEVERINO MARCHE,43.2290211,13.1779663,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Tecnici per effettuare le prime verifiche post terremoto SAN SEVERINO MARCHE"", ""data"": ""30/10/2016"", ""descrizione"": ""Il sindaco di San Severino Marche lancia un appello. Nel Comune mancano tecnici per effettuare le prime verifiche post terremoto. Si richiedono geometri, architetti, ingegneri e professionisti qualificati che vogliano rendersi disponibili per gli accertamenti. APPELLO a chi intendesse mettersi a disposizione gratuitamente."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Piazza del Popolo, San Severino Marche, MC, Marche, Italia"", ""lat"": ""43.2290211"", ""link"": ""http://l.facebook.com/l.php?u=http%3A%2F%2Fwww.comune.sanseverinomarche.mc.it%2Fcomunicati-cms%2Fterremoto-infinita-la-conta-dei-danni-ultimi-sopralluoghi-portano-inagibilita-degli-edifici-al-42%2F%23more-47080&h=pAQE4Dwmv"", ""lon"": ""13.1779663"", ""tel"": ""0733641222""}","<pre><yamldata>tel: '0733641222'
+email: ''
+cosa: 'Tecnici per effettuare le prime verifiche post terremoto SAN SEVERINO MARCHE'
+descrizione: 'Il sindaco di San Severino Marche lancia un appello. Nel Comune mancano tecnici per effettuare le prime verifiche post terremoto. Si richiedono geometri, architetti, ingegneri e professionisti qualificati che vogliano rendersi disponibili per gli accertamenti. APPELLO a chi intendesse mettersi a disposizione gratuitamente.'
+indirizzo: 'Piazza del Popolo, San Severino Marche, MC, Marche, Italia'
+lat: '43.2290211'
+lon: '13.1779663'
+link: 'http://l.facebook.com/l.php?u=http%3A%2F%2Fwww.comune.sanseverinomarche.mc.it%2Fcomunicati-cms%2Fterremoto-infinita-la-conta-dei-danni-ultimi-sopralluoghi-portano-inagibilita-degli-edifici-al-42%2F%23more-47080&h=pAQE4Dwmv'
+immagine: ''
+data: 30/10/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/904,186133619,2016-10-30 12:59:28,2016-10-30 12:32:37,Comune San Severino Marche cerca tecnici per verifiche,,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""30/10/2016"", ""descrizione"": ""Appello del Sindaco di San Severino Marche \""Abbiamo una grande carenza di tecnici non solo per compilare le schede Aedes ma anche per effettuare le prime verifiche. Per questo vorrei fare appello a chi intendesse mettersi a disposizione gratuitamente della nostra struttura, professionisti qualificati siano essi geometri, ingegneri, architetti o altro, a presentarsi presso i nostri uffici. C\u2019\u00e8 anche un numero di telefono, che \u00e8 lo 0733641222, cui potersi rivolgere. Abbiamo bisogno dell\u2019aiuto di tutti per garantire la sicurezza ai cittadini e per fornire risposte tempestive a chi \u00e8 in attesa dei sopralluoghi\"""", ""link"": ""http://www.comune.sanseverinomarche.mc.it/comunicati-cms/terremoto-infinita-la-conta-dei-danni-ultimi-sopralluoghi-portano-inagibilita-degli-edifici-al-42/#"", ""titolo"": ""Comune San Severino Marche cerca tecnici per verifiche""}","<pre><yamldata>titolo: 'Comune San Severino Marche cerca tecnici per verifiche'
 descrizione: 'Appello del Sindaco di San Severino Marche ""Abbiamo una grande carenza di tecnici non solo per compilare le schede Aedes ma anche per effettuare le prime verifiche. Per questo vorrei fare appello a chi intendesse mettersi a disposizione gratuitamente della nostra struttura, professionisti qualificati siano essi geometri, ingegneri, architetti o altro, a presentarsi presso i nostri uffici. C’è anche un numero di telefono, che è lo 0733641222, cui potersi rivolgere. Abbiamo bisogno dell’aiuto di tutti per garantire la sicurezza ai cittadini e per fornire risposte tempestive a chi è in attesa dei sopralluoghi""'
 link: 'http://www.comune.sanseverinomarche.mc.it/comunicati-cms/terremoto-infinita-la-conta-dei-danni-ultimi-sopralluoghi-portano-inagibilita-degli-edifici-al-42/#'
@@ -3524,6 +3535,16 @@ lon: ''
 link: 'http://www.protezionecivile.gov.it/jcms/it/home.wp'
 data: 15/09/2016
 </yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/382,177135092,2016-09-15 10:03:55,2016-09-15 09:54:52,Protezione Civile Nazionale,,,"[""Accettato"", ""Contatti"", ""Form""]",,,"{""data"": ""15/09/2016"", ""descrizione"": """", ""email"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""http://www.protezionecivile.gov.it/jcms/it/home.wp"", ""lon"": """", ""nome"": ""Protezione Civile Nazionale"", ""tel"": ""800840840""}","<pre><yamldata>nome: 'Protezione Civile Nazionale'
+tel: '800840840'
+email: ''
+descrizione: ''
+indirizzo: ''
+lat: ''
+lon: ''
+link: 'http://www.protezionecivile.gov.it/jcms/it/home.wp'
+data: 15/09/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/381,177128901,2016-09-23 22:37:21,2016-09-15 09:24:53,Materiale di prima necessità,42.85161,13.68729,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Materiale di prima necessit\u00e0"", ""data"": ""15/09/2016"", ""descrizione"": ""Servono i seguenti beni: - stoviglie di carta (bicchieri, piatti, posate e tovaglioli) - tantissima acqua in vari formati - cibo a lunga scadenza preconfezionato e facilmente divisibile - materiale igiene intima - pannolini e materiale bambini - coperte e vestiario. Orari di apertura capannone: 8,30 - 12,30 14,00 - 18,30"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": 42.85161, ""link"": """", ""lon"": 13.68729, ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 cosa: 'Materiale di prima necessità'
@@ -5312,17 +5333,6 @@ iban: 'IT72H 02008 02515 000104427989,'
 bic: ''
 postale: ''
 causale: 'Sottoscrizione terremoto Centro Italia'
-link: ''
-email: ''
-data: 13/09/2016
-</yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/199,176772303,2016-09-13 23:25:28,2016-09-13 22:59:51,Caritas di Modena,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Colletta terremoto centro Italia"", ""chi"": ""Caritas di Modena"", ""data"": ""13/09/2016"", ""descrizione"": ""Conti correnti attivati presso diverse banche."", ""email"": """", ""iban"": ""\""IT25X 05034 12900 000000004682, presso Banco S. Geminiano IT89B 05387 12900 000000030436, presso Banca popolare dell'Emilia romagna IT35Z 02008 12930 000003106219, presso Unicredit IT72X 05018 024000 00000503060, presso Banca Etica \"""", ""intestazione"": """", ""link"": """", ""postale"": """"}","<pre><yamldata>chi: 'Caritas di Modena'
-descrizione: 'Conti correnti attivati presso diverse banche.'
-intestazione: ''
-iban: '""IT25X 05034 12900 000000004682, presso Banco S. Geminiano IT89B 05387 12900 000000030436, presso Banca popolare dell''Emilia romagna IT35Z 02008 12930 000003106219, presso Unicredit IT72X 05018 024000 00000503060, presso Banca Etica ""'
-bic: ''
-postale: ''
-causale: 'Colletta terremoto centro Italia'
 link: ''
 email: ''
 data: 13/09/2016
