@@ -626,6 +626,13 @@ lat: '42.840288'
 lon: '13.331949'
 data: 27/10/2016
 </yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/857,185690862,2016-10-27 15:50:16,2016-10-27 14:50:17,La scuola di Montegallo (Ap) rimarrà chiusa fino al 2 novembre,42.840288,13.331949,"[""Accettato"", ""Bollettino"", ""Notizie Utili"", ""Sisma Ottobre"", ""Telegram""]",,,"{""data"": ""27/10/2016"", ""descrizione"": ""La scuola di Montegallo rimarr\u00e0 chiusa sino a mercoled\u00ec 2 novembre compreso."", ""immagine"": """", ""lat"": ""42.840288"", ""lon"": ""13.331949"", ""telegram_user"": ""ClaudiaMazzanti""}","<pre><yamldata>telegram_user: ClaudiaMazzanti
+descrizione: 'La scuola di Montegallo rimarrà chiusa sino a mercoledì 2 novembre compreso.'
+immagine: ''
+lat: '42.840288'
+lon: '13.331949'
+data: 27/10/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/856,185673633,2016-10-27 13:49:52,2016-10-27 13:49:04,Combattiamo la paura con la solidarietà! Stasera a #Macerata incontro degli studenti universitari,,,"[""Accettato"", ""Bollettino"", ""Notizie Utili"", ""Pubblicare su FB"", ""Sisma Ottobre"", ""Twitter""]",,,"{""data"": ""27/10/2016"", ""descrizione"": ""L'associazione Officina Universitaria invita tutti gli studenti dell'Universit\u00e0 di Macerata, e in particolare gli studenti Erasmus, a incontrarsi stasera 27 ottobre in zona logge di Corso della Repubblica tra le 21.30 e le 23.00 per \""provare a combattere la forte paura stando insieme e facendoci forza a vicenda, per poi dirigerci, sempre tutti insieme, al palazzetto dello sport di Fontescodella\"". Il palazzetto dello sport \u00e8 stato debitamente attrezzato e gli studenti potranno trascorrere la notte qui."", ""link"": ""https://twitter.com/DavClem/status/791631359827640320"", ""titolo"": ""Combattiamo la paura con la solidariet\u00e0! Stasera a #Macerata incontro degli studenti universitari""}","<pre><yamldata>titolo: 'Combattiamo la paura con la solidarietà! Stasera a #Macerata incontro degli studenti universitari'
 descrizione: 'L''associazione Officina Universitaria invita tutti gli studenti dell''Università di Macerata, e in particolare gli studenti Erasmus, a incontrarsi stasera 27 ottobre in zona logge di Corso della Repubblica tra le 21.30 e le 23.00 per ""provare a combattere la forte paura stando insieme e facendoci forza a vicenda, per poi dirigerci, sempre tutti insieme, al palazzetto dello sport di Fontescodella"". Il palazzetto dello sport è stato debitamente attrezzato e gli studenti potranno trascorrere la notte qui.'
 link: 'https://twitter.com/DavClem/status/791631359827640320'
