@@ -9,6 +9,16 @@ link: ''
 immagine: ''
 data: 30/10/2016
 </yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/891,186125594,2016-10-30 09:42:05,2016-10-30 09:18:30,Offerta appartamento a Ferrara ,44.8433298,11.609086,"[""Accettato"", ""Alloggi"", ""Bollettino"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""30/10/2016"", ""descrizione"": ""Vivo in un appartamento spazioso. Ho posto comodo per 6 persone in centro storico a Ferrara. Due bagni, due camere matrimoniali, una camera pi\u00f9 piccola con due posti letto, cucina e salotto. Metto a disposizione gli spazi per chiunque avesse bisogno di allontanarsi dalla zona a rischio sismico."", ""email"": ""buchettadellelettere@gmail.com"", ""immagine"": """", ""indirizzo"": ""Viale Cavour, Centro cittadino, Giardino, Ferrara, FE, Emilia-Romagna, 44121, Italia"", ""lat"": ""44.8433298"", ""link"": """", ""lon"": ""11.609086"", ""tel"": ""+393495954549""}","<pre><yamldata>tel: '+393495954549'
+email: buchettadellelettere@gmail.com
+descrizione: 'Vivo in un appartamento spazioso. Ho posto comodo per 6 persone in centro storico a Ferrara. Due bagni, due camere matrimoniali, una camera più piccola con due posti letto, cucina e salotto. Metto a disposizione gli spazi per chiunque avesse bisogno di allontanarsi dalla zona a rischio sismico.'
+indirizzo: 'Viale Cavour, Centro cittadino, Giardino, Ferrara, FE, Emilia-Romagna, 44121, Italia'
+lat: '44.8433298'
+lon: '11.609086'
+link: ''
+immagine: ''
+data: 30/10/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/890,186123419,2016-10-30 09:03:11,2016-10-30 08:19:37,VIABILITA' ROMA,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""30/10/2016"", ""descrizione"": ""Tor Pignattara CHIUSA Via Gabrio Serbelloni tra Via Ciro da Urbino e Via Muzio Oddi per verifica stabilit\u00e0 a seguito terremoto."", ""link"": """", ""titolo"": ""VIABILITA' ROMA""}","<pre><yamldata>titolo: 'VIABILITA'' ROMA'
 descrizione: 'Tor Pignattara CHIUSA Via Gabrio Serbelloni tra Via Ciro da Urbino e Via Muzio Oddi per verifica stabilità a seguito terremoto.'
 link: ''
