@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/943,186143207,2016-10-30 15:40:01,2016-10-30 15:36:10,Appello #Coldiretti #Marche: servono roulotte e camper per gli allevatori,,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""#Terremoto, l'appello di #Coldiretti: \""Servono roulotte e #camper per gli #allevatori\"""", ""data"": ""30/10/2016"", ""descrizione"": ""Un appello agli agricoltori associati di tutta Italia e a tutti gli altri per l\u2019invio immediato di roulotte e camper per consentire agli allevatori terremotati di non abbandonare le aziende di continuare ad accudire ai propri animali. A lanciarlo \u00e8 la Coldiretti Marche dopo la nuova scossa che ha colpito il Maceratese e le altre zone aggravando una situazione gi\u00e0 drammatica. \u201cIl terremoto ha causato il crollo di altre strutture e peggiorato ulteriormente la situazione di quelle gi\u00e0 lesionate- si legge in una nota - rendendo molte abitazioni vicino alle stalle inagibili. [Fonte \u200f@Agenzia_Dire]"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""http://www.dire.it/30-10-2016/85947-terremoto-lappello-coldiretti-servono-roulotte-camper-gli-allevatori/"", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
+email: ''
+cosa: '#Terremoto, l''appello di #Coldiretti: ""Servono roulotte e #camper per gli #allevatori""'
+descrizione: 'Un appello agli agricoltori associati di tutta Italia e a tutti gli altri per l’invio immediato di roulotte e camper per consentire agli allevatori terremotati di non abbandonare le aziende di continuare ad accudire ai propri animali. A lanciarlo è la Coldiretti Marche dopo la nuova scossa che ha colpito il Maceratese e le altre zone aggravando una situazione già drammatica. “Il terremoto ha causato il crollo di altre strutture e peggiorato ulteriormente la situazione di quelle già lesionate- si legge in una nota - rendendo molte abitazioni vicino alle stalle inagibili. [Fonte ‏@Agenzia_Dire]'
+indirizzo: ''
+lat: ''
+lon: ''
+link: 'http://www.dire.it/30-10-2016/85947-terremoto-lappello-coldiretti-servono-roulotte-camper-gli-allevatori/'
+immagine: ''
+data: 30/10/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/942,186142217,2016-10-30 15:20:48,2016-10-30 15:16:48,COMUNE DI #PERUGIA: CHIUSI ASILI NIDO E TUTTI EDIFICI PUBBLICI,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""30/10/2016"", ""descrizione"": ""A seguito della scossa di 6.5 registrata questa mattina, si \u00e8 immediatamente riunito il COC di Perugia, con il Sindaco Romizi, il Vicesindaco Barelli, dirigenti e tecnici per monitorare in tempo reale la situazione in citt\u00e0. Confermata la chiusura degli asili nidi non solo pubblici ma anche privati e delle scuole materne per la giornata di domani, Luned\u00ec 31 ottobre. A partire da oggi e fino a nuova disposizione, sono chiusi con ordinanza del Sindaco anche tutti gli edifici pubblici adibiti a manifestazioni varie sull\u2019intero territorio comunale. Si ricorda che per eventuali segnalazioni di danni i numeri da chiamare sono: 075 5773116 - 075 5773117"", ""link"": ""http://istituzionale.comune.perugia.it/notizie/evento-sismico-del-30-ottobre-2016"", ""titolo"": ""COMUNE DI #PERUGIA: CHIUSI ASILI NIDO E MATERNE PUBBLICI E PRIVATI E TUTTI GLI EDIFICI PUBBLICI ADIBITI A MANIFESTAZIONI""}","<pre><yamldata>titolo: 'COMUNE DI #PERUGIA: CHIUSI ASILI NIDO E MATERNE PUBBLICI E PRIVATI E TUTTI GLI EDIFICI PUBBLICI ADIBITI A MANIFESTAZIONI'
 descrizione: 'A seguito della scossa di 6.5 registrata questa mattina, si è immediatamente riunito il COC di Perugia, con il Sindaco Romizi, il Vicesindaco Barelli, dirigenti e tecnici per monitorare in tempo reale la situazione in città. Confermata la chiusura degli asili nidi non solo pubblici ma anche privati e delle scuole materne per la giornata di domani, Lunedì 31 ottobre. A partire da oggi e fino a nuova disposizione, sono chiusi con ordinanza del Sindaco anche tutti gli edifici pubblici adibiti a manifestazioni varie sull’intero territorio comunale. Si ricorda che per eventuali segnalazioni di danni i numeri da chiamare sono: 075 5773116 - 075 5773117'
 link: 'http://istituzionale.comune.perugia.it/notizie/evento-sismico-del-30-ottobre-2016'
@@ -3472,16 +3483,6 @@ descrizione: 'Il Comune di Amatrice sul sito comunica che per le singole iniziat
 indirizzo: ''
 lat: 42.62990
 lon: 13.28795
-link: ''
-data: 15/09/2016
-</yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/402,177153138,2016-09-15 11:34:30,2016-09-15 11:34:00,Per segnalare disponibilità di mezzi e materiali - Regione Lazio,,,"[""Accettato"", ""Contatti"", ""Form""]",,,"{""data"": ""15/09/2016"", ""descrizione"": """", ""email"": ""sismarieti@regione.lazio.it"", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""nome"": ""Per segnalare disponibilit\u00e0 di mezzi e materiali - Regione Lazio"", ""tel"": """"}","<pre><yamldata>nome: 'Per segnalare disponibilità di mezzi e materiali - Regione Lazio'
-tel: ''
-email: sismarieti@regione.lazio.it
-descrizione: ''
-indirizzo: ''
-lat: ''
-lon: ''
 link: ''
 data: 15/09/2016
 </yamldata></pre>",open
