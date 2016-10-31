@@ -12,7 +12,7 @@ Deep Learning is coool. But expensive.
 
 Lets see what options do we have for training deep models. Naturally, one would need a big iron machine to do real interesting stuff.
 
-![Mainframe](https://commons.wikimedia.org/wiki/File:Front_Z9_2094.jpg#/media/File:Front_Z9_2094.jpg)
+![Mainframe](https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Front_Z9_2094.jpg/1200px-Front_Z9_2094.jpg)
 
 Here are the options to consider:
 
