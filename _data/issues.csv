@@ -71,6 +71,16 @@ link: ''
 immagine: ''
 data: 31/10/2016
 </yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/982,186251409,2016-10-31 13:42:10,2016-10-31 10:32:08,Offro mini appartamento a Lecce nei amarsi (Avezzano),,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""31/10/2016"", ""descrizione"": ""Offro mini appartamento (max due persone) Lecce nei Marsi (Avezzano)."", ""email"": ""piergentili.ale@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3356195700""}","<pre><yamldata>tel: '3356195700'
+email: piergentili.ale@gmail.com
+descrizione: 'Offro mini appartamento (max due persone) Lecce nei Marsi (Avezzano).'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 31/10/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/980,186244861,2016-10-31 13:39:33,2016-10-31 10:00:35,[Foto] Sospensione attività tribunale di #Rieti,42.39999,12.858058,"[""Accettato"", ""Notizie Utili"", ""Sisma Ottobre"", ""Telegram""]",,http://i.imgur.com/iNAo5f3.jpg,"{""data"": ""31/10/2016"", ""descrizione"": ""Sospensione attivit\u00e0 tribunale di Rieti"", ""immagine"": ""http://i.imgur.com/iNAo5f3.jpg"", ""lat"": ""42.39999"", ""lon"": ""12.858058"", ""telegram_user"": """"}","<pre><yamldata>telegram_user: ''
 descrizione: 'Sospensione attività tribunale di Rieti'
 immagine: 'http://i.imgur.com/iNAo5f3.jpg'
@@ -4175,12 +4185,6 @@ data: 15/09/2016
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/418,177170239,2016-10-01 16:32:48,2016-09-15 13:02:06,Unità speciale per soccorso disabili ha raggiunto Amatrice,,,"[""Accettato"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""Un'unit\u00e0 speciale dei Vigili del fuoco del Friuli ha raggiunto Amatrice per affrontare e risolvere i problemi relativi all'accoglienza di sfollati con disabilit\u00e0"", ""link"": ""http://www.abiliaproteggere.net/2016/08/29/vigili-del-fuoco-in-soccorso-ai-disabili-ununita-speciale/"", ""titolo"": ""Unit\u00e0 speciale per soccorso disabili ha raggiunto Amatrice""}","<pre><yamldata>titolo: 'Unità speciale per soccorso disabili ha raggiunto Amatrice'
 descrizione: 'Un''unità speciale dei Vigili del fuoco del Friuli ha raggiunto Amatrice per affrontare e risolvere i problemi relativi all''accoglienza di sfollati con disabilità'
 link: 'http://www.abiliaproteggere.net/2016/08/29/vigili-del-fuoco-in-soccorso-ai-disabili-ununita-speciale/'
-data: 15/09/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/416,177170116,2016-10-01 16:32:56,2016-09-15 13:01:34,Comune di Amandola,,,"[""Accettato"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""INFORMA CHE: le segnalazioni relative al sisma si ricevono SOLAMENTE presso l'Ufficio Turistico sito in Piazza Risorgimento o al numero 0736/840731. RICORDA CHE: essendo Amandola rientrata nei benefici fiscali del decreto Pres. Consiglio dei Ministri del 24 Agosto 2016 i pagamenti delle bollette di acqua e luce ( a seguito di riscontri gi\u00e0 effettuati) dovrebbero essere stati sospesi fino a data da definire con possibile futura rateizzazione dell'importo generale. Per avere la certezza della sospensione invitia a contattare il numero verde dei fornitori."", ""link"": ""https://www.facebook.com/amandolacomuneofficial/?fref=nf"", ""titolo"": ""Comune di Amandola""}","<pre><yamldata>titolo: 'Comune di Amandola'
-descrizione: 'INFORMA CHE: le segnalazioni relative al sisma si ricevono SOLAMENTE presso l''Ufficio Turistico sito in Piazza Risorgimento o al numero 0736/840731. RICORDA CHE: essendo Amandola rientrata nei benefici fiscali del decreto Pres. Consiglio dei Ministri del 24 Agosto 2016 i pagamenti delle bollette di acqua e luce ( a seguito di riscontri già effettuati) dovrebbero essere stati sospesi fino a data da definire con possibile futura rateizzazione dell''importo generale. Per avere la certezza della sospensione invitia a contattare il numero verde dei fornitori.'
-link: 'https://www.facebook.com/amandolacomuneofficial/?fref=nf'
 data: 15/09/2016
 </yamldata></pre>
 ",open
