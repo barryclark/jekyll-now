@@ -4,7 +4,7 @@ title: Josh's Final Project Argument
 author: Josh
 ---
 
-Within this post, I'll detail my project's argument according to the rhetorical principals we've discussed in class / read about in *The Craft of Research,* and then categorize my argument based on [Semenza's 6 types of arguments](https://books.google.com/books/about/Graduate_Study_for_the_Twenty_First_Cent.html?id=CZdWTaW_7toC)(see chapter 5).
+Within this post, I'll detail my project's argument according to the rhetorical principals we've discussed in class / read about in *The Craft of Research,* and then categorize my argument based on [Semenza's 6 types of arguments](https://books.google.com/books/about/Graduate_Study_for_the_Twenty_First_Cent.html?id=CZdWTaW_7toC) (see chapter 5).
 
 ### Components of my argument
 
