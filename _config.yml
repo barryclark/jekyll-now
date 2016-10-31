@@ -3,7 +3,7 @@
 #
 
 # Name of your site (displayed in the header)
-name: Coder''s Block
+name: Coder's Block
 
 # Short bio or description (displayed in the header)
 description: Thoughts and Codes of Gunith Devasurendra
@@ -18,8 +18,8 @@ avatar: https://avatars3.githubusercontent.com/u/1032108?v=3&s=466
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email: gunith@gmail.com
-  facebook: gunith
+  email: #gunith@gmail.com
+  facebook: #gunith
   flickr: gunith
   github: gunith
   instagram:
@@ -27,7 +27,7 @@ footer-links:
   pinterest: gunith
   rss: # just type anything here for a working RSS icon
   twitter: gunith
-  stackoverflow: /users/264069/gunith-d # your stackoverflow profile, e.g. "users/50476/bart-kiers"
+  stackoverflow: users/264069/gunith-d # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: u/0/+GunithDevasurendra # anything in your profile username that comes after plus.google.com/
 
