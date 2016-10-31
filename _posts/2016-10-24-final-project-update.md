@@ -1,11 +1,13 @@
 ---
 layout: post
-title: Final Project Upadate
-author: maddimarie95
+title: Final Project Update
+author: 
+- maddimarie95
+- ezachock
 ---
 
-Emma and I's final project involves video analysis of the hit TV show Shameless (U.S edition). As a show that has taken Hollywood by 
-storm, with its seemingly endless controversial topics, crude language, and borderline pornographic scenes, Shameless is a goldmine 
+Emma and I's final project involves video analysis of the hit TV show [_Shameless_](http://www.sho.com/shameless) (U.S edition). As a show that has taken Hollywood by 
+storm, with its seemingly endless controversial topics, crude language, and borderline pornographic scenes, _Shameless_ is a goldmine 
 for analysis. Although not finalized yet, we have many ideas we are considering looking at. 
 We are thinking of looking not just the characters in the show, but also the objects and props used. In one idea, we were thinking 
 of picking a popular yet nonchalant object that is ties back to a social and/or political area for our society. Another idea consists 

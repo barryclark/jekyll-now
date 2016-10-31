@@ -1,11 +1,13 @@
 ---
 layout: post
 title: Pop music trends
-author: Red
+author: 
+- Red
+- rsjudka
 publish: true
 ---
 
-#Pop Music Trend Since 2000
+# Pop Music Trend Since 2000
 =
 
 Is it just me or has music gotten more and more vulgar?  It seems that older music that hit
@@ -17,7 +19,7 @@ opposed to today's chart toping songs, which seem to me to not care much about w
 For me and my partner's final project we decided to see if what we thought we saw in pop music
 was indeed an actual phenomenon or just our imagination(similar to our parents saying, "Back in
 my day, we were more discrete...").  At first we were gonna do all the top songs of every year
-since 1958 to 2015.(-_-). We immeaditly realized thats like a bujilion songs, and 2 bujilion lines
+since 1958 to 2015.(-_-). We immediately realized thats like a bujilion songs, and 2 bujilion lines
 of lyrics to scan.  So we capped it from the turn of the century (2000) to 2015.  Considering
 the fact that there is still 100 top sings in every year, we were still gonna have 1500 songs
 to scan. No, that was still a crap ton so we settled on top 10 songs of each year, to have a 

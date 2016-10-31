@@ -1,7 +1,9 @@
 ---
 layout: post
 title: Final post
-author: bcarlson8582, akrlicevic
+author: 
+- bear 
+- akay
 ---
 
 For our final project, Amina and I are contiuing our research on the presidential candidates' 
