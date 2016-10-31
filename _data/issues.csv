@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1008,186394089,2016-10-31 22:46:21,2016-10-31 20:50:41,Ad #Amatrice cercasi urgentemente un gazebo per camper e un container,,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,http://i.imgur.com/ufCGqwj.jpg,"{""cosa"": ""#amatrice Cercasi urgentemente un gazebo per camper e un container"", ""data"": ""31/10/2016"", ""descrizione"": ""Cercasi urgentemente un gazebo per camper e un container non per uso abitativo per una famiglia colpita dal terremoto in grande difficolt\u00e0. La consegna deve avvenire sul posto, per chi potesse aiutare contattare 392 7015986."", ""email"": """", ""immagine"": ""http://i.imgur.com/ufCGqwj.jpg"", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.facebook.com/emanuela.bignami.9/posts/10154612533584449"", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
+email: ''
+cosa: '#amatrice Cercasi urgentemente un gazebo per camper e un container'
+descrizione: 'Cercasi urgentemente un gazebo per camper e un container non per uso abitativo per una famiglia colpita dal terremoto in grande difficoltà. La consegna deve avvenire sul posto, per chi potesse aiutare contattare 392 7015986.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: 'https://www.facebook.com/emanuela.bignami.9/posts/10154612533584449'
+immagine: 'http://i.imgur.com/ufCGqwj.jpg'
+data: 31/10/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1006,186375953,2016-10-31 19:35:22,2016-10-31 19:33:22,"Appartamento con tre camere da letto, bagno cucina, ampio salone (provincia BG)",,,"[""Accettato"", ""Alloggi"", ""Facebook"", ""Sisma Ottobre""]",,,"{""data"": ""31/10/2016"", ""descrizione"": ""Buonasera, Per quello che io e la mia famiglia possiamo fare da lontano. Abbiamo a disposizione, per chi volesse trascorrere il Natale e le feste natalizie in serenit\u00e0 e al caldo, vorremmo offrire il nostro appartamento. Caldo, con tre camere da letto bagno cucina ampio salone. Per ora posso solo quello. Intendo gratis. Siamo un po lontani, siamo in provincia di Bergamo ma cmq se si volesse si pu\u00f2 fare. Con tutto il cuore. Vanessa Merelli"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1792788464322070/"", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 descrizione: 'Buonasera, Per quello che io e la mia famiglia possiamo fare da lontano. Abbiamo a disposizione, per chi volesse trascorrere il Natale e le feste natalizie in serenità e al caldo, vorremmo offrire il nostro appartamento. Caldo, con tre camere da letto bagno cucina ampio salone. Per ora posso solo quello. Intendo gratis. Siamo un po lontani, siamo in provincia di Bergamo ma cmq se si volesse si può fare. Con tutto il cuore. Vanessa Merelli'
@@ -4792,18 +4803,6 @@ postale: ''
 causale: ''
 link: 'https://www.facebook.com/ultras1898/'
 email: ''
-data: 15/09/2016
-</yamldata></pre>
-",closed
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/368,177122822,2016-09-23 22:18:39,2016-09-15 08:54:33,Materiale di Prima necessità,45.07523,7.69829,"[""Accettato"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""Materiale di Prima necessit\u00e0"", ""data"": ""15/09/2016"", ""descrizione"": ""- acqua minerale; - cibo a lunga conservazione; - coperte e vestiti; - pannolini e materiale per bambini; - Materiale per igiene intima."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Caff\u00e8 Basaglia, Via Mantova, 34, 10153 Torino"", ""lat"": 45.07523, ""link"": """", ""lon"": 7.69829, ""tel"": ""3473352631""}","<pre><yamldata>tel: '3473352631'
-email: ''
-cosa: 'Materiale di Prima necessità'
-descrizione: '- acqua minerale; - cibo a lunga conservazione; - coperte e vestiti; - pannolini e materiale per bambini; - Materiale per igiene intima.'
-indirizzo: 'Caffè Basaglia, Via Mantova, 34, 10153 Torino'
-lat: 45.07523
-lon: 7.69829
-link: ''
-immagine: ''
 data: 15/09/2016
 </yamldata></pre>
 ",closed
