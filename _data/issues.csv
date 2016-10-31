@@ -81,6 +81,16 @@ link: ''
 immagine: ''
 data: 31/10/2016
 </yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/981,186246471,2016-10-31 13:45:09,2016-10-31 10:08:47,Offro camera matrimoniale a Biosco (Monza),45.7230251,9.2520767,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""31/10/2016"", ""descrizione"": ""Vivo solo in una casa indipendente con tre camere da letto. Metto a disposizione una camera matrimoniale per il periodo invernale a persone autonome, perch\u00e8 ci sono le scale."", ""email"": ""an.ma.colombo@alice.it"", ""immagine"": """", ""indirizzo"": ""Via Galileo Galilei, Briosco, Monza e della Brianza, Lombardia, 20836, Italia"", ""lat"": ""45.7230251"", ""link"": """", ""lon"": ""9.2520767"", ""tel"": ""3475469312""}","<pre><yamldata>tel: '3475469312'
+email: an.ma.colombo@alice.it
+descrizione: 'Vivo solo in una casa indipendente con tre camere da letto. Metto a disposizione una camera matrimoniale per il periodo invernale a persone autonome, perchè ci sono le scale.'
+indirizzo: 'Via Galileo Galilei, Briosco, Monza e della Brianza, Lombardia, 20836, Italia'
+lat: '45.7230251'
+lon: '9.2520767'
+link: ''
+immagine: ''
+data: 31/10/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/980,186244861,2016-10-31 13:39:33,2016-10-31 10:00:35,[Foto] Sospensione attività tribunale di #Rieti,42.39999,12.858058,"[""Accettato"", ""Notizie Utili"", ""Sisma Ottobre"", ""Telegram""]",,http://i.imgur.com/iNAo5f3.jpg,"{""data"": ""31/10/2016"", ""descrizione"": ""Sospensione attivit\u00e0 tribunale di Rieti"", ""immagine"": ""http://i.imgur.com/iNAo5f3.jpg"", ""lat"": ""42.39999"", ""lon"": ""12.858058"", ""telegram_user"": """"}","<pre><yamldata>telegram_user: ''
 descrizione: 'Sospensione attività tribunale di Rieti'
 immagine: 'http://i.imgur.com/iNAo5f3.jpg'
@@ -1207,12 +1217,6 @@ link: 'https://www.facebook.com/groups/1758670357733881/permalink/17832149019460
 data: 15/10/2016
 </yamldata></pre>
 ",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/805,183198172,2016-10-15 08:56:29,2016-10-15 08:54:32,Pro Loco #Arquatadeltronto:  un sito per sostenere la ripresa dei produttori e dell'economia locale,,,"[""Accettato"", ""acquisto solidale"", ""Bollettino"", ""Facebook"", ""Notizie Utili""]",,,"{""data"": ""15/10/2016"", ""descrizione"": ""Sul nuovo sito della Pro Loco Arquata del Tronto dove \u00e8 possibile anche sostenere le attivit\u00e0 produttive della zona"", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1783214901946093/"", ""titolo"": ""Pro Loco #Arquatadeltronto:  in sito per sostenere la ripresa dei produttori e dell'conomia locale""}","<pre><yamldata>titolo: 'Pro Loco #Arquatadeltronto:  in sito per sostenere la ripresa dei produttori e dell''conomia locale'
-descrizione: 'Sul nuovo sito della Pro Loco Arquata del Tronto dove è possibile anche sostenere le attività produttive della zona'
-link: 'https://www.facebook.com/groups/1758670357733881/permalink/1783214901946093/'
-data: 15/10/2016
-</yamldata></pre>
-",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/804,183103183,2016-10-28 14:59:01,2016-10-14 17:11:28,Richiesta di beni per affrontare l'inverno ad #Amatrice,,,"[""Accettato"", ""Bollettino"", ""Da rilanciare"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""RICHIESTA DI BENI"", ""data"": ""14/10/2016"", ""descrizione"": ""Sono necessari Scarponi impermeabili, 100 stufette elettriche anche economiche per potersi riscaldare e cucinare, Teloni della dimensione di 10*10,per poter coprire determinate cose, ma anche dei pannelli in coibentato utili per Roulotte, o Container, Stalle della dimensione ciascuno di almeno 4 cm."", ""email"": ""christianvarani@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.facebook.com/pantera.laganord?ref=ts&fref=ts"", ""lon"": """", ""tel"": ""3291631198""}","<pre><yamldata>tel: '3291631198'
 email: christianvarani@gmail.com
 cosa: 'RICHIESTA DI BENI'
@@ -1467,6 +1471,18 @@ email: ''
 data: 10/10/2016
 </yamldata></pre>
 ",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/773,182111673,2016-10-10 20:49:18,2016-10-10 20:48:51,Raccolta fondi Brigate della Solidarietà - aggiornamento impiego donazioni,,,"[""Accettato"", ""Facebook"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Raccolta fondi Brigate della Solidariet\u00e0 - aggiornamento impiego donazioni"", ""data"": ""10/10/2016"", ""descrizione"": ""Grazie alla raccolta fondi lanciata dalle Brigate della Solidariet\u00e0, l'8 ottobre sono arrivati i 168 paia di scarponcini e stivali di cui aveva bisogno la popolazione amatriciana e non solo in vista dell'arrivo dell'inverno. L'acquisto \u00e8 costato euro 2.705,50."", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""https://www.facebook.com/terremotocentroitalia/posts/1398208940209118"", ""postale"": """"}","<pre><yamldata>chi: 'Raccolta fondi Brigate della Solidarietà - aggiornamento impiego donazioni'
+descrizione: 'Grazie alla raccolta fondi lanciata dalle Brigate della Solidarietà, l''8 ottobre sono arrivati i 168 paia di scarponcini e stivali di cui aveva bisogno la popolazione amatriciana e non solo in vista dell''arrivo dell''inverno. L''acquisto è costato euro 2.705,50.'
+intestazione: ''
+iban: ''
+bic: ''
+postale: ''
+causale: ''
+link: 'https://www.facebook.com/terremotocentroitalia/posts/1398208940209118'
+email: ''
+data: 10/10/2016
+</yamldata></pre>
+",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/772,182110145,2016-10-10 20:42:47,2016-10-10 20:42:03,"Protezione civile Marche, aggiornamento campi di accoglienza",,,"[""Accettato"", ""Bollettino"", ""Facebook"", ""Notizie Utili""]",,,"{""data"": ""10/10/2016"", ""descrizione"": ""Sceso a 81 il numero di tende allestite dalla Protezione civile nelle Marche e a 115 il numero di posti letto occupati. Le maggiori concentrazioni al campo di Borgo di Arquata (21 tende) e nella frazione Balzo di Montegallo (25), in provincia di Ascoli Piceno. Ci sono poi tre tende a Pretare di Arquata e 4 a Castelsantangelo sul Nera (Macerata), pi\u00f9 4 in punti sparsi della provincia di Ascoli Piceno e 24 in quella di Macerata. Domani 10 ottobre dovrebbero essere chiusi i posti letto del campo di Borgo di Arquata dove rimarranno solo la mensa, la tensostruttura della scuola, le tende e i moduli che ora ospitano gli uffici del Comune e i vari servizi. Sono 271 le persone ospitate in strutture ricettive, 1.199 i pasti erogati, 217 i volontari presenti."", ""link"": ""http://www.ansa.it/marche/notizie/2016/10/09/sisma-nelle-marche-solo-81-tende-e-115-posti-letto-occupati_a3de7be6-dbd0-4666-af4d-9eca45550b3d.html"", ""titolo"": ""Protezione civile Marche, aggiornamento campi di accoglienza""}","<pre><yamldata>titolo: 'Protezione civile Marche, aggiornamento campi di accoglienza'
 descrizione: 'Sceso a 81 il numero di tende allestite dalla Protezione civile nelle Marche e a 115 il numero di posti letto occupati. Le maggiori concentrazioni al campo di Borgo di Arquata (21 tende) e nella frazione Balzo di Montegallo (25), in provincia di Ascoli Piceno. Ci sono poi tre tende a Pretare di Arquata e 4 a Castelsantangelo sul Nera (Macerata), più 4 in punti sparsi della provincia di Ascoli Piceno e 24 in quella di Macerata. Domani 10 ottobre dovrebbero essere chiusi i posti letto del campo di Borgo di Arquata dove rimarranno solo la mensa, la tensostruttura della scuola, le tende e i moduli che ora ospitano gli uffici del Comune e i vari servizi. Sono 271 le persone ospitate in strutture ricettive, 1.199 i pasti erogati, 217 i volontari presenti.'
 link: 'http://www.ansa.it/marche/notizie/2016/10/09/sisma-nelle-marche-solo-81-tende-e-115-posti-letto-occupati_a3de7be6-dbd0-4666-af4d-9eca45550b3d.html'
@@ -1702,18 +1718,6 @@ link: 'http://www.piccolimaestri.org/piccoli-maestri-per-amatrice/'
 data: 02/10/2016
 </yamldata></pre>
 ",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/737,180502759,2016-10-11 21:32:10,2016-10-02 08:54:57,#Amatricianasolidale a Lissone (MB) per il Comune di #Acquasanta (AP) domenica 9 ottobre 2016,,,"[""Accettato"", ""Bollettino"", ""Facebook"", ""Raccolte Fondi""]",Milestone(number=12),,"{""bic"": """", ""causale"": """", ""chi"": ""#Amatricianasolidale a Lissone (MB) per il Comune di #Acquasanta (AP) domenica 9 ottobre 2016"", ""data"": ""02/10/2016"", ""descrizione"": ""Insieme per sostenere il comune di #Acquasanta in provincia di Ascoli Piceno. Il sindaco di Acquasanta ha comunicato la necessit\u00e0 di garantire l'attivit\u00e0 didattica per le scuole dell'infanzia e primaria crollate ed inagibili. Ora i bambini sono in strutture di emergenza. Pranziamo insieme! Un gesto semplice e spontaneo pu\u00f2 sostenere e trasmettere vicinanza. Prenotazioni entro il 7 ottobre 2016 (tel. 039 7397257)."", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1777339639200286/"", ""postale"": """"}","<pre><yamldata>chi: '#Amatricianasolidale a Lissone (MB) per il Comune di #Acquasanta (AP) domenica 9 ottobre 2016'
-descrizione: 'Insieme per sostenere il comune di #Acquasanta in provincia di Ascoli Piceno. Il sindaco di Acquasanta ha comunicato la necessità di garantire l''attività didattica per le scuole dell''infanzia e primaria crollate ed inagibili. Ora i bambini sono in strutture di emergenza. Pranziamo insieme! Un gesto semplice e spontaneo può sostenere e trasmettere vicinanza. Prenotazioni entro il 7 ottobre 2016 (tel. 039 7397257).'
-intestazione: ''
-iban: ''
-bic: ''
-postale: ''
-causale: ''
-link: 'https://www.facebook.com/groups/1758670357733881/permalink/1777339639200286/'
-email: ''
-data: 02/10/2016
-</yamldata></pre>
-",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/737,180502759,2016-10-11 21:32:10,2016-10-02 08:54:57,#Amatricianasolidale a Lissone (MB) per il Comune di #Acquasanta (AP) domenica 9 ottobre 2016,,,"[""Accettato"", ""Bollettino"", ""Facebook"", ""Raccolte Fondi""]",Milestone(number=12),,"{""bic"": """", ""causale"": """", ""chi"": ""#Amatricianasolidale a Lissone (MB) per il Comune di #Acquasanta (AP) domenica 9 ottobre 2016"", ""data"": ""02/10/2016"", ""descrizione"": ""Insieme per sostenere il comune di #Acquasanta in provincia di Ascoli Piceno. Il sindaco di Acquasanta ha comunicato la necessit\u00e0 di garantire l'attivit\u00e0 didattica per le scuole dell'infanzia e primaria crollate ed inagibili. Ora i bambini sono in strutture di emergenza. Pranziamo insieme! Un gesto semplice e spontaneo pu\u00f2 sostenere e trasmettere vicinanza. Prenotazioni entro il 7 ottobre 2016 (tel. 039 7397257)."", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1777339639200286/"", ""postale"": """"}","<pre><yamldata>chi: '#Amatricianasolidale a Lissone (MB) per il Comune di #Acquasanta (AP) domenica 9 ottobre 2016'
 descrizione: 'Insieme per sostenere il comune di #Acquasanta in provincia di Ascoli Piceno. Il sindaco di Acquasanta ha comunicato la necessità di garantire l''attività didattica per le scuole dell''infanzia e primaria crollate ed inagibili. Ora i bambini sono in strutture di emergenza. Pranziamo insieme! Un gesto semplice e spontaneo può sostenere e trasmettere vicinanza. Prenotazioni entro il 7 ottobre 2016 (tel. 039 7397257).'
 intestazione: ''
@@ -2232,6 +2236,18 @@ email: ''
 data: 23/09/2016
 </yamldata></pre>
 ",closed
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/659,178731251,2016-09-22 21:57:28,2016-09-22 21:56:59,Regione Marche attiva raccolta fondi online per territori colpiti dal sisma,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Raccolte Fondi"", ""Twitter""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Regione Marche attiva raccolta fondi online per territori colpiti dal sisma"", ""data"": ""22/09/2016"", ""descrizione"": ""La Regione Marche ha attivato un servizio di raccolta fondi online attraverso PagoPa, il sistema dei pagamenti elettronici in favore della PA, da destinare ad iniziative in favore dei territori colpiti dal sisma."", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""http://www.agid.gov.it/notizie/2016/09/22/pagopa-nelle-marche-attivo-servizio-raccolta-fondi-il-terremoto"", ""postale"": """"}","<pre><yamldata>chi: 'Regione Marche attiva raccolta fondi online per territori colpiti dal sisma'
+descrizione: 'La Regione Marche ha attivato un servizio di raccolta fondi online attraverso PagoPa, il sistema dei pagamenti elettronici in favore della PA, da destinare ad iniziative in favore dei territori colpiti dal sisma.'
+intestazione: ''
+iban: ''
+bic: ''
+postale: ''
+causale: ''
+link: 'http://www.agid.gov.it/notizie/2016/09/22/pagopa-nelle-marche-attivo-servizio-raccolta-fondi-il-terremoto'
+email: ''
+data: 22/09/2016
+</yamldata></pre>
+",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/658,178635620,2016-10-04 16:07:37,2016-09-22 15:04:16,Cercasi casetta di pochi metri quadrati,,,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Casetta di pochi metri quadrati"", ""data"": ""22/09/2016"", ""descrizione"": ""Cerchiamo casetta di pochi metri quadrati, di legno o qualsiasi altro materiale purch\u00e9 sia coibentata."", ""email"": ""tizianofisio@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3319715161""}","<pre><yamldata>tel: '3319715161'
 email: tizianofisio@gmail.com
 cosa: 'Casetta di pochi metri quadrati'
@@ -2495,18 +2511,6 @@ email: ''
 data: 21/09/2016
 </yamldata></pre>
 ",closed
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/628,178373403,2016-10-01 18:45:14,2016-09-21 15:01:26,"Sommati, RI - Cercasi tunnel o teloni per ricoverare le pecore",42.6427994,13.3104626,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Facebook"", ""Form"", ""Notizie Utili""]",,,"{""cosa"": ""Tunnel o teloni per ricoverare le pecore"", ""data"": ""21/09/2016"", ""descrizione"": ""APPELLO URGENTE Abbiamo bisogno di trovare tunnel o teloni x ricoverare le pecore chi pu\u00f2 aiutare? Contattare Oipa o Wwf Umbria"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Sommati, Casale Zocchi, Amatrice, RI, Lazio, Italy"", ""lat"": ""42.6427994"", ""link"": ""https://www.facebook.com/permalink.php?story_fbid=619550514917706&id=513429392196486&comment_id=619803698225721&reply_comment_id=620069551532469&notif_t=feed_comment_reply&notif_id=1474466050539752"", ""lon"": ""13.3104626"", ""tel"": ""Antonella 3393676508""}","<pre><yamldata>tel: 'Antonella 3393676508'
-email: ''
-cosa: 'Tunnel o teloni per ricoverare le pecore'
-descrizione: 'APPELLO URGENTE Abbiamo bisogno di trovare tunnel o teloni x ricoverare le pecore chi può aiutare? Contattare Oipa o Wwf Umbria'
-indirizzo: 'Sommati, Casale Zocchi, Amatrice, RI, Lazio, Italy'
-lat: '42.6427994'
-lon: '13.3104626'
-link: 'https://www.facebook.com/permalink.php?story_fbid=619550514917706&id=513429392196486&comment_id=619803698225721&reply_comment_id=620069551532469&notif_t=feed_comment_reply&notif_id=1474466050539752'
-immagine: ''
-data: 21/09/2016
-</yamldata></pre>
-",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/628,178373403,2016-10-01 18:45:14,2016-09-21 15:01:26,"Sommati, RI - Cercasi tunnel o teloni per ricoverare le pecore",42.6427994,13.3104626,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Facebook"", ""Form"", ""Notizie Utili""]",,,"{""cosa"": ""Tunnel o teloni per ricoverare le pecore"", ""data"": ""21/09/2016"", ""descrizione"": ""APPELLO URGENTE Abbiamo bisogno di trovare tunnel o teloni x ricoverare le pecore chi pu\u00f2 aiutare? Contattare Oipa o Wwf Umbria"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Sommati, Casale Zocchi, Amatrice, RI, Lazio, Italy"", ""lat"": ""42.6427994"", ""link"": ""https://www.facebook.com/permalink.php?story_fbid=619550514917706&id=513429392196486&comment_id=619803698225721&reply_comment_id=620069551532469&notif_t=feed_comment_reply&notif_id=1474466050539752"", ""lon"": ""13.3104626"", ""tel"": ""Antonella 3393676508""}","<pre><yamldata>tel: 'Antonella 3393676508'
 email: ''
 cosa: 'Tunnel o teloni per ricoverare le pecore'
