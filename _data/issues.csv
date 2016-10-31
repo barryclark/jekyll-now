@@ -6852,6 +6852,18 @@ email: ''
 data: 13/09/2016
 </yamldata></pre>
 ",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/162,176719966,2016-09-13 18:50:41,2016-09-13 18:50:05,Corriere della Sera e TG La7,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Corriere della Sera e TG La7"", ""data"": ""13/09/2016"", ""descrizione"": ""Attivato c/c presso \""Banca Prossima\"""", ""email"": """", ""iban"": ""IT17E 03359 01600 100000145551"", ""intestazione"": ""Un aiuto subito - Terremoto in Centro Italia 6.0"", ""link"": """", ""postale"": """"}","<pre><yamldata>chi: 'Corriere della Sera e TG La7'
+descrizione: 'Attivato c/c presso ""Banca Prossima""'
+intestazione: 'Un aiuto subito - Terremoto in Centro Italia 6.0'
+iban: 'IT17E 03359 01600 100000145551'
+bic: ''
+postale: ''
+causale: ''
+link: ''
+email: ''
+data: 13/09/2016
+</yamldata></pre>
+",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/161,176719155,2016-09-13 18:52:18,2016-09-13 18:48:01,Provincia di Reggio Emilia,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Terremoto Centro Italia 2016"", ""chi"": ""Provincia di Reggio Emilia"", ""data"": ""13/09/2016"", ""descrizione"": ""Le somme versate saranno destinate a progetti di assistenza e ricostruzione seguiti direttamente dalla Provincia di Reggio Emilia. Attivato c/c presso \""Unicredit\"""", ""email"": null, ""iban"": ""IT12I 02008 12800 000100658213"", ""intestazione"": ""La Provincia di Reggio Emilia per le emergenze e la solidariet\u00e0"", ""link"": """", ""postale"": """"}","<pre><yamldata>chi: 'Provincia di Reggio Emilia'
 descrizione: 'Le somme versate saranno destinate a progetti di assistenza e ricostruzione seguiti direttamente dalla Provincia di Reggio Emilia. Attivato c/c presso ""Unicredit""'
 intestazione: 'La Provincia di Reggio Emilia per le emergenze e la solidarietà'
