@@ -6,7 +6,7 @@ noindex: true
 ---
 
 <hr />
-  <nav class="tags" style="float: none;">
+  <nav class="tags" style="float: none; text-align: center;">
     {% assign tags = site.tags | sort %}
     {% for tag in tags %}
       {% capture page_name %}/tags/{{ tag[0] | replace: ' ', '_' }}/{% endcapture %}
