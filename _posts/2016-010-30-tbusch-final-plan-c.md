@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Project Update: You need to pay to access this data
+title: Project Update You need to pay to access this data
 author: tbusch15
 published: true
 ---
