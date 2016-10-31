@@ -95,7 +95,7 @@ In the `/WEB-INF/classes` folder have the `applicationContext.xml` file.
     </property>
 </bean>
 
-<!-- <strong>Transaction manager for a single Hibernate SessionFactory</strong> (alternative to JTA) -->
+<!-- Transaction manager for a single Hibernate SessionFactory</strong> (alternative to JTA) -->
 <bean id="transactionManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager">
     <property name="sessionFactory"><ref local="sessionFactory"/></property>
 </bean>
