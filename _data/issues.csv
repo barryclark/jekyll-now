@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1006,186375953,2016-10-31 19:35:13,2016-10-31 19:33:22,"Appartamento con tre camere da letto, bagno cucina, ampio salone (provincia BG)",,,"[""Accettato"", ""Alloggi"", ""Facebook""]",,,"{""data"": ""31/10/2016"", ""descrizione"": ""Buonasera, Per quello che io e la mia famiglia possiamo fare da lontano. Abbiamo a disposizione, per chi volesse trascorrere il Natale e le feste natalizie in serenit\u00e0 e al caldo, vorremmo offrire il nostro appartamento. Caldo, con tre camere da letto bagno cucina ampio salone. Per ora posso solo quello. Intendo gratis. Siamo un po lontani, siamo in provincia di Bergamo ma cmq se si volesse si pu\u00f2 fare. Con tutto il cuore. Vanessa Merelli"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1792788464322070/"", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
+email: ''
+descrizione: 'Buonasera, Per quello che io e la mia famiglia possiamo fare da lontano. Abbiamo a disposizione, per chi volesse trascorrere il Natale e le feste natalizie in serenità e al caldo, vorremmo offrire il nostro appartamento. Caldo, con tre camere da letto bagno cucina ampio salone. Per ora posso solo quello. Intendo gratis. Siamo un po lontani, siamo in provincia di Bergamo ma cmq se si volesse si può fare. Con tutto il cuore. Vanessa Merelli'
+indirizzo: ''
+lat: ''
+lon: ''
+link: 'https://www.facebook.com/groups/1758670357733881/permalink/1792788464322070/'
+immagine: ''
+data: 31/10/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1004,186362900,2016-10-31 18:45:24,2016-10-31 18:38:13,Il Vecchio Molino a #PieveTorina ha bisogno di beni alimentari di prima necessità,42.9978554,13.0574021,"[""Accettato"", ""Bollettino"", ""Cibo"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""VECCHIO MOLINO - BISOGNO DI CIBO"", ""data"": ""31/10/2016"", ""descrizione"": ""Il Vecchio Molino di Casavecchia, Pieve Torina \u00e8 una delle poche attivit\u00e0 rimaste in piedi tra Castelsant'Angelo e Muccia. La struttura sfama oltre 150 vigili del fuoco a pasto e chi non ha pi\u00f9 una casa. Non esiste pi\u00f9 un negozio per fare la spesa nelle vicinanze. C'E' BISOGNO DI CIBO: CARNE, PASTA, SUGHI, VERDURE,BEVANDE, CAFF\u00c8, Piatti e Bicchieri di plastica. Contattare Silvia Fronzi."", ""email"": ""fronzice@tiscali.it"", ""immagine"": """", ""indirizzo"": ""Strada Provinciale 209 Valnerina, Pieve Torina, MC, Marche, Italia"", ""lat"": ""42.9978554"", ""link"": ""https://www.facebook.com/serefro91/posts/10211343643936769"", ""lon"": ""13.0574021"", ""tel"": ""339 871 2991""}","<pre><yamldata>tel: '339 871 2991'
 email: fronzice@tiscali.it
 cosa: 'VECCHIO MOLINO - BISOGNO DI CIBO'
@@ -6397,18 +6407,6 @@ bic: ''
 postale: ''
 causale: 'Terremoto centro Italia'
 link: ''
-email: ''
-data: 13/09/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/214,176774502,2016-09-13 23:26:20,2016-09-13 23:14:17,Regione Umbria,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Regione Umbria"", ""data"": ""13/09/2016"", ""descrizione"": ""Donazioni anche online sul sito della Regione - https://pagoumbria.regione.umbria.it/pagoumbria/addon/bollettino_bianco/edit.jsf?cdTrbEnte=TERREMOTO2016&idEnte=33ED3E1B55346CBB0001"", ""email"": """", ""iban"": ""IT32R 02008 03033 000104429137"", ""intestazione"": ""Regione Umbria_Sisma agosto 2016"", ""link"": ""http://www.presidente.regione.umbria.it/news/-/asset_publisher/epXtRtYVn9JP/content/sisma-umbria-aperto-conto-corrente-bancario-per-raccolta-fondi"", ""postale"": """"}","<pre><yamldata>chi: 'Regione Umbria'
-descrizione: 'Donazioni anche online sul sito della Regione - https://pagoumbria.regione.umbria.it/pagoumbria/addon/bollettino_bianco/edit.jsf?cdTrbEnte=TERREMOTO2016&idEnte=33ED3E1B55346CBB0001'
-intestazione: 'Regione Umbria_Sisma agosto 2016'
-iban: 'IT32R 02008 03033 000104429137'
-bic: ''
-postale: ''
-causale: ''
-link: 'http://www.presidente.regione.umbria.it/news/-/asset_publisher/epXtRtYVn9JP/content/sisma-umbria-aperto-conto-corrente-bancario-per-raccolta-fondi'
 email: ''
 data: 13/09/2016
 </yamldata></pre>
