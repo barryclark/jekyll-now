@@ -2517,6 +2517,17 @@ link: 'http://facebook.com/pescaradeltronto'
 data: 20/09/2016
 </yamldata></pre>
 ",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/621,178194425,2016-09-21 12:48:25,2016-09-20 22:14:31,Associazione Pescara del Tronto 24/08/2016,42.7510272,13.2714902,"[""Accettato"", ""Contatti"", ""Form""]",,,"{""data"": ""20/09/2016"", ""descrizione"": ""Associazione creata dai cittadini di Pescara del Tronto dopo il terremoto."", ""email"": ""pescaradeltronto@hotmail.com"", ""indirizzo"": """", ""lat"": ""42.7510272"", ""link"": ""http://facebook.com/pescaradeltronto"", ""lon"": ""13.2714902"", ""nome"": ""Associazione Pescara del Tronto 24/08/2016"", ""tel"": """"}","<pre><yamldata>nome: 'Associazione Pescara del Tronto 24/08/2016'
+tel: ''
+email: pescaradeltronto@hotmail.com
+descrizione: 'Associazione creata dai cittadini di Pescara del Tronto dopo il terremoto.'
+indirizzo: ''
+lat: '42.7510272'
+lon: '13.2714902'
+link: 'http://facebook.com/pescaradeltronto'
+data: 20/09/2016
+</yamldata></pre>
+",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/620,178192035,2016-09-21 08:03:10,2016-09-20 22:01:36,Amatrice Scoiattolo Infopoint - Numero Verde,,,"[""Accettato"", ""Contatti"", ""Form""]",,,"{""data"": ""20/09/2016"", ""descrizione"": ""Numero Verde 800 608 535 dedicato a tutti i piccoli imprenditori: agricoltori, allevatori, artigiani e commercianti che hanno subito danni alla loro attivit\u00e0 nei comuni colpiti dal terremoto. L'iniziativa \u00e8 collaterale al punto di ascolto \""Amatrice Scoiattolo Infopoint\"" promosso dal Rotary Club di Ascoli Piceno."", ""email"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.facebook.com/Amatricescoiattoloinfopoint/photos/a.1844858829062796.1073741828.1844846815730664/1846750778873601/?type=3&theater"", ""lon"": """", ""nome"": ""Amatrice Scoiattolo Infopoint - Numero Verde"", ""tel"": ""800 608 535""}","<pre><yamldata>nome: 'Amatrice Scoiattolo Infopoint - Numero Verde'
 tel: '800 608 535'
 email: ''
