@@ -275,6 +275,12 @@ link: 'https://goo.gl/RsOVyu'
 data: 30/10/2016
 </yamldata></pre>
 ",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/964,186158170,2016-10-30 20:59:26,2016-10-30 19:49:04,#vigilidelfuoco terminata ricognizione centro storico #Norcia,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""30/10/2016"", ""descrizione"": ""(30ott-20:00) #Usar Team #vigilidelfuoco terminata ricognizione e bonifica su siti di crollo in centro storico #Norcia: no persone coinvolte [Fonte Vigili del Fuoco]"", ""link"": ""https://goo.gl/9bF1AB"", ""titolo"": ""#vigilidelfuoco terminata ricognizione centro storico #Norcia""}","<pre><yamldata>titolo: '#vigilidelfuoco terminata ricognizione centro storico #Norcia'
+descrizione: '(30ott-20:00) #Usar Team #vigilidelfuoco terminata ricognizione e bonifica su siti di crollo in centro storico #Norcia: no persone coinvolte [Fonte Vigili del Fuoco]'
+link: 'https://goo.gl/9bF1AB'
+data: 30/10/2016
+</yamldata></pre>
+",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/963,186157726,2016-10-30 20:42:32,2016-10-30 19:41:44,Comune #Perugia: conferma apertura uffici,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""30/10/2016"", ""descrizione"": ""#perugia \""confermiamo apertura edifici pubblici e Tribunale\"" Fonte: Comune di Perugia"", ""link"": ""https://goo.gl/UjZttU"", ""titolo"": ""Comune #Perugia: conferma apertura uffici""}","<pre><yamldata>titolo: 'Comune #Perugia: conferma apertura uffici'
 descrizione: '#perugia ""confermiamo apertura edifici pubblici e Tribunale"" Fonte: Comune di Perugia'
 link: 'https://goo.gl/UjZttU'
@@ -486,18 +492,6 @@ https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/933,1861396
 email: 'info@campinglamedusa.it'
 cosa: 'BENI DI PRIMA NECESSITA'' - Camping Medusa, Porto Recanati'
 descrizione: 'Occorrono beni di prima necessità ai nuovi sfollati collocati al Camping Medusa di Porto Recanati (MC). In particolare servono asciugamani, saponi, vestiti, omogeneizzati e cibo per bambini.'
-indirizzo: 'Via Manin, Porto Recanati, MC, Marche, 62017, Italia'
-lat: '43.4350815'
-lon: '13.6630083'
-link: ''
-immagine: ''
-data: 30/10/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/929,186139509,2016-10-31 09:48:55,2016-10-30 14:26:31,"Ricerca beni di PRIMA NECESSITA' - Camping Medusa, Porto Recanati",43.4350815,13.6630083,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""BENI DI PRIMA NECESSITA' - Camping Medusa, Porto Recanati"", ""data"": ""30/10/2016"", ""descrizione"": ""Occorrono beni di prima necessit\u00e0 ai nuovi sfollati collocati al Camping Medusa di Porto Recanati (MC). Chiamare Silvia."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via Manin, Porto Recanati, MC, Marche, 62017, Italia"", ""lat"": ""43.4350815"", ""link"": """", ""lon"": ""13.6630083"", ""tel"": ""339 8161481""}","<pre><yamldata>tel: '339 8161481'
-email: ''
-cosa: 'BENI DI PRIMA NECESSITA'' - Camping Medusa, Porto Recanati'
-descrizione: 'Occorrono beni di prima necessità ai nuovi sfollati collocati al Camping Medusa di Porto Recanati (MC). Chiamare Silvia.'
 indirizzo: 'Via Manin, Porto Recanati, MC, Marche, 62017, Italia'
 lat: '43.4350815'
 lon: '13.6630083'
