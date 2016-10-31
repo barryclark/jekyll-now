@@ -61,13 +61,16 @@ In the `/WEB-INF/classes` folder have the `applicationContext.xml` file.
 
 ```xml
 <beans>
+
 <!-- ========================= HIBERNATE CONFIG ========================= -->
 <!-- Configurer that replaces ${...} placeholders with values from a properties file -->
 <!-- (in this case, JDBC-related settings for the dataSource definition below) -->
+
 <bean id="propertyConfigurer">
     <property name="location"><value>conf/jdbc.properties</value></property>
 </bean>
-<!-- <strong>Local DataSource that works in any environment</strong> -->
+
+<!-- Local DataSource that works in any environment -->
 <!-- Note that DriverManagerDataSource does not pool; it is not intended for production -->
 <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
     <property name="driverClassName"><value>${jdbc.driverClassName}</value></property>
@@ -102,6 +105,7 @@ In the `/WEB-INF/classes` folder have the `applicationContext.xml` file.
         <ref bean="sessionFactory"/>
     </property>
 </bean>
+
 </beans>
 ```
 
@@ -115,11 +119,11 @@ In the `<beans>` tag of applicationContext, have the following
 ```xml
 <!-- ========================= APP BEANS ========================= -->
 <bean id="Product" class="gunith.jtest.model.impl.BasicProduct"></bean>
-<bean id="ProductDao" class="gunith.jtest.dao.hibernate.ProductHibernateDao">
 
-<property name="hibernateTemplate">
-<pre style="padding-left: 60px;"><ref bean="hibernateTemplate"/>
-</property>
+<bean id="ProductDao" class="gunith.jtest.dao.hibernate.ProductHibernateDao">
+  <property name="hibernateTemplate">
+    <pre style="padding-left: 60px;"><ref bean="hibernateTemplate"/>
+  </property>
 </bean>
 ```
 
@@ -129,20 +133,19 @@ This is the definition of spring beans related to the business logic. BasicProdu
 
 ```xml
 <hibernate-mapping>
-    <class name="gunith.jtest.model.Product" table="product">
-        <id name="id">
+   <class name="gunith.jtest.model.Product" table="product">
+      <id name="id">
         <generator class="native"></generator>
-    </id>
-    <discriminator column="type"></discriminator>
-
-    <property name="name"></property>
-    <property name="price"></property>
-    <many-to-one name="brand" class="gunith.jtest.model.Brand" column="brand_id" lazy="false"></many-to-one>
-    <subclass name="gunith.jtest.model.impl.BasicProduct" discriminator-value="0"></subclass>
-    <subclass name="gunith.jtest.model.impl.MeasurableProduct" discriminator-value="1">
-    <property name="unit"></property>
-    </subclass>
-    </class>
+      </id>
+      <discriminator column="type"></discriminator>
+      <property name="name"></property>
+      <property name="price"></property>
+      <many-to-one name="brand" class="gunith.jtest.model.Brand" column="brand_id" lazy="false"></many-to-one>
+      <subclass name="gunith.jtest.model.impl.BasicProduct" discriminator-value="0"></subclass>
+      <subclass name="gunith.jtest.model.impl.MeasurableProduct" discriminator-value="1">
+        <property name="unit"></property>
+      </subclass>
+   </class>
 </hibernate-mapping>
 ```
 
