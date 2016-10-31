@@ -14,6 +14,17 @@ descrizione: 'E'' in arrivo ad Ascoli Piceno una nuova cucina da campo della Cro
 link: 'http://www.ilgiornaledellaprotezionecivile.it/dal-territorio/sisma-italia-centrale-litalia-si-mobilita-di-nuovo'
 data: 31/10/2016
 </yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/997,186296433,2016-10-31 14:47:27,2016-10-31 14:25:09,Roulotte o camper.,,,"[""Accettato"", ""Bollettino"", ""Da rilanciare"", ""Fabbisogni"", ""Form"", ""Pubblicare su FB"", ""Sisma Ottobre""]",,,"{""cosa"": ""Roulotte o camper."", ""data"": ""31/10/2016"", ""descrizione"": ""Buongiorno, sono residente nel Comune di Cascia, mio padre e la famiglia di mio fratello avrebbero bisogno di un camper o una roulotte dato che l' abitazione \u00e8 lesionata e al momento l'unica soluzione proposta dalle istituzioni \u00e8 quella di recarsi negli hotel del Trasimeno ma, avendo una attivit\u00e0 sul posto preferirebbero rimanere. Ringrazio in anticipo per la disponibilit\u00e0 e resto in attesa. Cordiali saluti."", ""email"": ""paolonifabio@libero.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3477320592""}","<pre><yamldata>tel: '3477320592'
+email: paolonifabio@libero.it
+cosa: 'Roulotte o camper.'
+descrizione: 'Buongiorno, sono residente nel Comune di Cascia, mio padre e la famiglia di mio fratello avrebbero bisogno di un camper o una roulotte dato che l'' abitazione è lesionata e al momento l''unica soluzione proposta dalle istituzioni è quella di recarsi negli hotel del Trasimeno ma, avendo una attività sul posto preferirebbero rimanere. Ringrazio in anticipo per la disponibilità e resto in attesa. Cordiali saluti.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 31/10/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/994,186289046,2016-10-31 13:55:46,2016-10-31 13:55:06,Cercasi due roulotte zona #Preci,42.87848895,13.0390821148298,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Sisma Ottobre"", ""Twitter""]",,,"{""cosa"": ""Cercasi due roulotte zona Preci"", ""data"": ""31/10/2016"", ""descrizione"": ""RICHIESTA IMPORTANTE siamo alla ricerca di un paio di roulotte per la zona di Preci. Chiunque fosse interessato a metterle a disposizione pu\u00f2 contattarci tramite messaggio o telefono. Grazie."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via della Libert\u00e0, Preci, Casale Maggiori, Preci, PG, UMB, 06047, Italia"", ""lat"": ""42.87848895"", ""link"": ""https://www.facebook.com/permalink.php?story_fbid=1100543740061243&id=128113723970921"", ""lon"": ""13.0390821148298"", ""tel"": ""0758012737""}","<pre><yamldata>tel: '0758012737'
 email: ''
 cosa: 'Cercasi due roulotte zona Preci'
@@ -264,12 +275,6 @@ link: 'https://goo.gl/RsOVyu'
 data: 30/10/2016
 </yamldata></pre>
 ",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/964,186158170,2016-10-30 20:59:26,2016-10-30 19:49:04,#vigilidelfuoco terminata ricognizione centro storico #Norcia,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""30/10/2016"", ""descrizione"": ""(30ott-20:00) #Usar Team #vigilidelfuoco terminata ricognizione e bonifica su siti di crollo in centro storico #Norcia: no persone coinvolte [Fonte Vigili del Fuoco]"", ""link"": ""https://goo.gl/9bF1AB"", ""titolo"": ""#vigilidelfuoco terminata ricognizione centro storico #Norcia""}","<pre><yamldata>titolo: '#vigilidelfuoco terminata ricognizione centro storico #Norcia'
-descrizione: '(30ott-20:00) #Usar Team #vigilidelfuoco terminata ricognizione e bonifica su siti di crollo in centro storico #Norcia: no persone coinvolte [Fonte Vigili del Fuoco]'
-link: 'https://goo.gl/9bF1AB'
-data: 30/10/2016
-</yamldata></pre>
-",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/963,186157726,2016-10-30 20:42:32,2016-10-30 19:41:44,Comune #Perugia: conferma apertura uffici,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""30/10/2016"", ""descrizione"": ""#perugia \""confermiamo apertura edifici pubblici e Tribunale\"" Fonte: Comune di Perugia"", ""link"": ""https://goo.gl/UjZttU"", ""titolo"": ""Comune #Perugia: conferma apertura uffici""}","<pre><yamldata>titolo: 'Comune #Perugia: conferma apertura uffici'
 descrizione: '#perugia ""confermiamo apertura edifici pubblici e Tribunale"" Fonte: Comune di Perugia'
 link: 'https://goo.gl/UjZttU'
@@ -481,6 +486,18 @@ https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/933,1861396
 email: 'info@campinglamedusa.it'
 cosa: 'BENI DI PRIMA NECESSITA'' - Camping Medusa, Porto Recanati'
 descrizione: 'Occorrono beni di prima necessità ai nuovi sfollati collocati al Camping Medusa di Porto Recanati (MC). In particolare servono asciugamani, saponi, vestiti, omogeneizzati e cibo per bambini.'
+indirizzo: 'Via Manin, Porto Recanati, MC, Marche, 62017, Italia'
+lat: '43.4350815'
+lon: '13.6630083'
+link: ''
+immagine: ''
+data: 30/10/2016
+</yamldata></pre>
+",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/929,186139509,2016-10-31 09:48:55,2016-10-30 14:26:31,"Ricerca beni di PRIMA NECESSITA' - Camping Medusa, Porto Recanati",43.4350815,13.6630083,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""BENI DI PRIMA NECESSITA' - Camping Medusa, Porto Recanati"", ""data"": ""30/10/2016"", ""descrizione"": ""Occorrono beni di prima necessit\u00e0 ai nuovi sfollati collocati al Camping Medusa di Porto Recanati (MC). Chiamare Silvia."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via Manin, Porto Recanati, MC, Marche, 62017, Italia"", ""lat"": ""43.4350815"", ""link"": """", ""lon"": ""13.6630083"", ""tel"": ""339 8161481""}","<pre><yamldata>tel: '339 8161481'
+email: ''
+cosa: 'BENI DI PRIMA NECESSITA'' - Camping Medusa, Porto Recanati'
+descrizione: 'Occorrono beni di prima necessità ai nuovi sfollati collocati al Camping Medusa di Porto Recanati (MC). Chiamare Silvia.'
 indirizzo: 'Via Manin, Porto Recanati, MC, Marche, 62017, Italia'
 lat: '43.4350815'
 lon: '13.6630083'
