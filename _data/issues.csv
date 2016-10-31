@@ -61,6 +61,16 @@ descrizione: '#VAB a #Muccia: Vigilanza Antincendi Boschivi #VAB Partenza in pri
 link: 'https://www.facebook.com/vabcollinemedicee.onlus/posts/1158411544237995'
 data: 31/10/2016
 </yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/984,186253721,2016-10-31 13:40:38,2016-10-31 10:44:33,Offresi in centro storico di #Todi appartamento di 40mq,42.7823253,12.4060462,"[""Accettato"", ""Alloggi"", ""Bollettino"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""31/10/2016"", ""descrizione"": ""Centro storico di Todi appartamento 40mq per 3 persone cucina bagno camera. Disponibilit\u00e0 immediata"", ""email"": ""andrea.cannavicci@cblelectronics.com"", ""immagine"": """", ""indirizzo"": ""Piazza del Popolo, Ponterio, Rosceto le Cinque Torri, Todi, PG, UMB, 06059, Italia"", ""lat"": ""42.7823253"", ""link"": """", ""lon"": ""12.4060462"", ""tel"": ""3297606112""}","<pre><yamldata>tel: '3297606112'
+email: andrea.cannavicci@cblelectronics.com
+descrizione: 'Centro storico di Todi appartamento 40mq per 3 persone cucina bagno camera. Disponibilità immediata'
+indirizzo: 'Piazza del Popolo, Ponterio, Rosceto le Cinque Torri, Todi, PG, UMB, 06059, Italia'
+lat: '42.7823253'
+lon: '12.4060462'
+link: ''
+immagine: ''
+data: 31/10/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/980,186244861,2016-10-31 13:39:33,2016-10-31 10:00:35,[Foto] Sospensione attività tribunale di #Rieti,42.39999,12.858058,"[""Accettato"", ""Notizie Utili"", ""Sisma Ottobre"", ""Telegram""]",,http://i.imgur.com/iNAo5f3.jpg,"{""data"": ""31/10/2016"", ""descrizione"": ""Sospensione attivit\u00e0 tribunale di Rieti"", ""immagine"": ""http://i.imgur.com/iNAo5f3.jpg"", ""lat"": ""42.39999"", ""lon"": ""12.858058"", ""telegram_user"": """"}","<pre><yamldata>telegram_user: ''
 descrizione: 'Sospensione attività tribunale di Rieti'
 immagine: 'http://i.imgur.com/iNAo5f3.jpg'
@@ -3991,12 +4001,6 @@ data: 15/09/2016
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/453,177185936,2016-10-03 08:14:39,2016-09-15 14:03:26,Mappa campi e tende aggiornata al 2 settembre 2016,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""Fabio Refrigeri ha reso disponibile una mappa aggiornata a 2 settembre dei campi e delle tende"", ""link"": ""https://www.google.com/maps/d/viewer?mid=1-wdTR-Z51PvWTFMYVL7kHSbL9Wk"", ""titolo"": ""Mappa campi e tende""}","<pre><yamldata>titolo: 'Mappa campi e tende'
 descrizione: 'Fabio Refrigeri ha reso disponibile una mappa aggiornata a 2 settembre dei campi e delle tende'
 link: 'https://www.google.com/maps/d/viewer?mid=1-wdTR-Z51PvWTFMYVL7kHSbL9Wk'
-data: 15/09/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/452,177184715,2016-10-01 16:37:31,2016-09-15 13:58:47,Dipartimento Protezione Civile indicazioni operative per censimento danni e verifiche di agibilità,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""Indicazioni operative per censimento danni e verifiche di agibilit\u00e0"", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1763749377225979/"", ""titolo"": ""Dipartimento Protezione Civile indicazioni operative per censimento danni e verifiche di agibilit\u00e0""}","<pre><yamldata>titolo: 'Dipartimento Protezione Civile indicazioni operative per censimento danni e verifiche di agibilità'
-descrizione: 'Indicazioni operative per censimento danni e verifiche di agibilità'
-link: 'https://www.facebook.com/groups/1758670357733881/permalink/1763749377225979/'
 data: 15/09/2016
 </yamldata></pre>
 ",open
