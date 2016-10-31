@@ -18,7 +18,7 @@ Reasons: Lip struggles to seperate his south side upbringing nature from his pro
 Evidence: We expect our evidence to show that Lip's interactions and experiences growing up on the south side of Chicago, severly effects the decisions he makes throughout the rest of his adult life.
 
 
-Alternatives: 
+Alternatives: However, due to the complexity of Lip's character and childhood experiences, we do have to acknowledge the alternative claim that Lip's upbringing has had a positive effect on the decisions he makes as an adult.
 
 
-Warrent:
+Warrent: Lip's childhood and the environment in which he was raised has severly impacted what kind of man Lip is today. His character and personal identity have all been impacted by the childhood in which he was nurtured in.
