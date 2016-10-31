@@ -54,6 +54,11 @@ link: ''
 immagine: ''
 data: 31/10/2016
 </yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/978,186239347,2016-10-31 11:50:42,2016-10-31 09:31:51,Colonna mobile #protezionecivile #Regione #Puglia diretta a #Camerino,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""Pubblicare su TW"", ""Sisma Ottobre""]",,,"{""data"": ""31/10/2016"", ""descrizione"": ""#terremoto, in partenza la colonna mobile della #protezionecivile @RegionePuglia diretta a #Camerino [Fonte: Tg Rai Puglia]"", ""link"": ""https://twitter.com/TgrRaiPuglia/status/793020805424766976"", ""titolo"": ""Colonna mobile #protezionecivile #Regione #Puglia diretta a #Camerino""}","<pre><yamldata>titolo: 'Colonna mobile #protezionecivile #Regione #Puglia diretta a #Camerino'
+descrizione: '#terremoto, in partenza la colonna mobile della #protezionecivile @RegionePuglia diretta a #Camerino [Fonte: Tg Rai Puglia]'
+link: 'https://twitter.com/TgrRaiPuglia/status/793020805424766976'
+data: 31/10/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/977,186231441,2016-10-31 11:49:26,2016-10-31 08:46:17,#ProtezioneCivile: 15 mila persone assistite,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""Pubblicare su TW""]",,,"{""data"": ""31/10/2016"", ""descrizione"": ""#Terremoto: 15 mila persone assistite da #ProtezioneCivile ++ #terremotocentroitalia #socialprociv [Fonte: Protezione Civile]"", ""link"": ""https://goo.gl/Y1eK4X"", ""titolo"": ""#ProtezioneCivile: 15 mila persone assistite""}","<pre><yamldata>titolo: '#ProtezioneCivile: 15 mila persone assistite'
 descrizione: '#Terremoto: 15 mila persone assistite da #ProtezioneCivile ++ #terremotocentroitalia #socialprociv [Fonte: Protezione Civile]'
 link: 'https://goo.gl/Y1eK4X'
@@ -6837,18 +6842,6 @@ postale: ''
 causale: 'Sisma Centro Italia'
 link: 'http://www.cri.it/terremoto-centro-italia'
 email: aiuti@cri.it
-data: 13/09/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/162,176719966,2016-09-13 18:50:41,2016-09-13 18:50:05,Corriere della Sera e TG La7,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Corriere della Sera e TG La7"", ""data"": ""13/09/2016"", ""descrizione"": ""Attivato c/c presso \""Banca Prossima\"""", ""email"": """", ""iban"": ""IT17E 03359 01600 100000145551"", ""intestazione"": ""Un aiuto subito - Terremoto in Centro Italia 6.0"", ""link"": """", ""postale"": """"}","<pre><yamldata>chi: 'Corriere della Sera e TG La7'
-descrizione: 'Attivato c/c presso ""Banca Prossima""'
-intestazione: 'Un aiuto subito - Terremoto in Centro Italia 6.0'
-iban: 'IT17E 03359 01600 100000145551'
-bic: ''
-postale: ''
-causale: ''
-link: ''
-email: ''
 data: 13/09/2016
 </yamldata></pre>
 ",open
