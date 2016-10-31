@@ -6413,6 +6413,18 @@ email: ''
 data: 13/09/2016
 </yamldata></pre>
 ",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/214,176774502,2016-09-13 23:26:20,2016-09-13 23:14:17,Regione Umbria,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Regione Umbria"", ""data"": ""13/09/2016"", ""descrizione"": ""Donazioni anche online sul sito della Regione - https://pagoumbria.regione.umbria.it/pagoumbria/addon/bollettino_bianco/edit.jsf?cdTrbEnte=TERREMOTO2016&idEnte=33ED3E1B55346CBB0001"", ""email"": """", ""iban"": ""IT32R 02008 03033 000104429137"", ""intestazione"": ""Regione Umbria_Sisma agosto 2016"", ""link"": ""http://www.presidente.regione.umbria.it/news/-/asset_publisher/epXtRtYVn9JP/content/sisma-umbria-aperto-conto-corrente-bancario-per-raccolta-fondi"", ""postale"": """"}","<pre><yamldata>chi: 'Regione Umbria'
+descrizione: 'Donazioni anche online sul sito della Regione - https://pagoumbria.regione.umbria.it/pagoumbria/addon/bollettino_bianco/edit.jsf?cdTrbEnte=TERREMOTO2016&idEnte=33ED3E1B55346CBB0001'
+intestazione: 'Regione Umbria_Sisma agosto 2016'
+iban: 'IT32R 02008 03033 000104429137'
+bic: ''
+postale: ''
+causale: ''
+link: 'http://www.presidente.regione.umbria.it/news/-/asset_publisher/epXtRtYVn9JP/content/sisma-umbria-aperto-conto-corrente-bancario-per-raccolta-fondi'
+email: ''
+data: 13/09/2016
+</yamldata></pre>
+",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/213,176774413,2016-09-13 23:26:27,2016-09-13 23:13:40,Regione Marche,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": ""BPPIITRRXXX"", ""causale"": """", ""chi"": ""Regione Marche"", ""data"": ""13/09/2016"", ""descrizione"": """", ""email"": """", ""iban"": ""IT17Y 07601 02600 001034116044"", ""intestazione"": ""Reg. Marche donaz. favore territori Marche colpiti sisma 24 agosto 2016"", ""link"": ""http://www.regione.marche.it/"", ""postale"": ""1034116044""}","<pre><yamldata>chi: 'Regione Marche'
 descrizione: ''
 intestazione: 'Reg. Marche donaz. favore territori Marche colpiti sisma 24 agosto 2016'
