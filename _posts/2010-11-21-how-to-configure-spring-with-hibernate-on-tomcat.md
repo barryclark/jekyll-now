@@ -44,7 +44,8 @@ comments:
 ---
 The steps below guides how to set up the back end of a Java Webapp on Tomcat while using Spring with Hibernate as the ORM.
 
-### Configure Connection String
+## Configure Connection String
+
 In the `/WEB-INF/classes/conf/jdbc.properties`, we store the connection info,
 
 ```
@@ -54,7 +55,8 @@ jdbc.password=admin
 hib.dialect=org.hibernate.dialect.MySQLDialect
 ```
 
-### Configure Spring for Hibernate related beans: SessionFactory, Transaction Manager and [HibernateTemplate](http://static.springsource.org/spring/docs/2.5.6/api/org/springframework/orm/hibernate3/HibernateTemplate.html)
+## Configure Spring for Hibernate related beans: SessionFactory, Transaction Manager and [HibernateTemplate](http://static.springsource.org/spring/docs/2.5.6/api/org/springframework/orm/hibernate3/HibernateTemplate.html)
+
 In the `/WEB-INF/classes` folder have the `applicationContext.xml` file.
 
 ```xml
@@ -106,7 +108,7 @@ In the `/WEB-INF/classes` folder have the `applicationContext.xml` file.
 `HibernateTemplate` is a Spring class to bridge between Hibernate. More details [here](http://www.packtpub.com/article/data-access-using-spring-framework-hibernate-template)
 
 
-### Configure the Persistence classes and DAO classes
+## Configure the Persistence classes and DAO classes
 
 In the `<beans>` tag of applicationContext, have the following
 
@@ -121,7 +123,8 @@ In the `<beans>` tag of applicationContext, have the following
 </bean>
 ```
 
-### Create the Mapping File
+## Create the Mapping File
+
 This is the definition of spring beans related to the business logic. BasicProduct is a persistence POJ class, the realization of an interface Product. The 2 are mapped in the `/WEB-INF/classes/Product.hbm.xml`. (Here we have another class called MeasurableProduct)
 
 ```xml
@@ -143,7 +146,8 @@ This is the definition of spring beans related to the business logic. BasicProdu
 </hibernate-mapping>
 ```
 
-### Create The DAO
+## Create The DAO
+
 The Database operations of Product is done by the `gunith.jtest.dao.hibernate.ProductHibernateDao`.  It extends `org.springframework.orm.hibernate3.support.HibernateDaoSupport`. (Note that there's a setter for hibernateTemplate in spring config)
 
 ```java
