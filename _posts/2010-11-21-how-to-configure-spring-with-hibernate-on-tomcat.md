@@ -73,7 +73,8 @@ In the `/WEB-INF/classes` folder have the `applicationContext.xml` file.
     <property name="username"><value>${jdbc.username}</value></property>
     <property name="password"><value>${jdbc.password}</value></property>
 </bean>
-<!-- <strong>Hibernate SessionFactory</strong> -->
+
+<!-- Hibernate SessionFactory -->
 <bean id="sessionFactory" class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
     <property name="dataSource"><ref local="dataSource"/></property>
     <property name="mappingResources">
@@ -122,6 +123,7 @@ In the `<beans>` tag of applicationContext, have the following
 
 ### Create the Mapping File
 This is the definition of spring beans related to the business logic. BasicProduct is a persistence POJ class, the realization of an interface Product. The 2 are mapped in the `/WEB-INF/classes/Product.hbm.xml`. (Here we have another class called MeasurableProduct)
+
 ```xml
 <hibernate-mapping>
     <class name="gunith.jtest.model.Product" table="product">
