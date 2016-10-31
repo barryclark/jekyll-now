@@ -2,6 +2,7 @@
 layout: post
 title: Project Update: You need to pay to access this data
 author: tbusch15
+published: true
 ---
 
 So this past week in class we talked about our research projects. We went over some different ways to do them, and I believe the approach that we were told most of us would be taking and is the one I am, is a pragmatic proposal. Our proposals are given, and we support them accordingly with our research and what it all means. 
