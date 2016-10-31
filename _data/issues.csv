@@ -169,6 +169,17 @@ immagine: ''
 data: 30/10/2016
 </yamldata></pre>
 ",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/975,186170439,2016-10-31 13:46:09,2016-10-30 22:45:04,Offro miniappartamento a Bra (Cuneo),,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""30/10/2016"", ""descrizione"": ""metto a disposizione un piccolo alloggio a Bra (Cn). 1 camera da letto, un bagno e una zona cucina-living con un divano letto matrimoniale."", ""email"": ""cinziaskaffidi@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""335 8333588""}","<pre><yamldata>tel: '335 8333588'
+email: cinziaskaffidi@gmail.com
+descrizione: 'metto a disposizione un piccolo alloggio a Bra (Cn). 1 camera da letto, un bagno e una zona cucina-living con un divano letto matrimoniale.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 30/10/2016
+</yamldata></pre>
+",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/974,186170306,2016-10-30 22:43:22,2016-10-30 22:42:50,Comune di #Rieti: aree attrezzate di attesa all'aperto e coperte,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""30/10/2016"", ""descrizione"": ""L'Amministrazione comunale di Rieti sta attrezzando le 21 aree di attesa e ritrovo con bagni chimici, in particolare dove non sono presenti strutture pubbliche con servizi igienici. In ogni area il Comune metter\u00e0 a disposizione della popolazione anche bottiglie di acqua e coperte. Si tratta di luoghi sicuri dove \u00e8 possibile sostare temporaneamente anche con le auto. Aree di attesa all'aperto per il comune di Rieti. 1. Piazza Oberdan e Piazza Mazzini per la zona centro 2. largo De Santis e parco di via Comotti, zona Porta Romana 3. parco via Liberato di Benedetto 4. parco e campi sportivi via Salvo D'Acquisto 5. parco comunale VI Giugno 1944 via della Cavatella 6. parco di via Lama, Quattro Strade 7. area centro commerciale l'Aliante 8. Largo lago di Ventina, Piazza Tevere 9. Piazzale Leoni, Citt\u00e0 giardino 10. Parcheggio PalaSojourner, Villa Reatina 11. Piazza Bettino Craxi, Campoloniano 12. Parco della Meridiana, Villa Reatina 13. parcheggio e piazzale di via Lombardia, Vazia 14. parco di via Vaiano Nuova 15. parco di via Pierluigi Mariani 16. Campo Sportivo di Casette 17. San Giovanni Reatino parco pubblico 18. Piani Poggio Fidoni campo sportivo 19. Terminillo Parcheggio Pian de Valli 20. Piazza Marconi Giardino di Ito 21. Via Pistignano Parcheggio Area di attesa coperte 1. MAKO via Micioccoli 2. Bocciodromo Comunale via De Gasperi 3. Pistino coperto stadio atletica R. Guidobaldi Piazzale A. Leoni 4. campi coperti da tennis via dupre theseider 5. impianto Palaspes Piani Poggio Fidoni 6. impianto polivalente Casette, via cicolana I centri di raccolta coperti sono messi a disposizione dal Comune di Rieti per coloro che non vogliono rimanere nelle proprie abitazioni. Sono impianti sportivi dotati di servizi igienici. Saranno disponibili dalle ore 20."", ""link"": ""http://www.comune.rieti.it/article/16/10/emergenza-terremoto-elenco-delle-aree-di-attesa-il-comune-di-rieti"", ""titolo"": ""Comune di #Rieti: aree attrezzate di attesa all'aperto e coperte""}","<pre><yamldata>titolo: 'Comune di #Rieti: aree attrezzate di attesa all''aperto e coperte'
 descrizione: 'L''Amministrazione comunale di Rieti sta attrezzando le 21 aree di attesa e ritrovo con bagni chimici, in particolare dove non sono presenti strutture pubbliche con servizi igienici. In ogni area il Comune metterà a disposizione della popolazione anche bottiglie di acqua e coperte. Si tratta di luoghi sicuri dove è possibile sostare temporaneamente anche con le auto. Aree di attesa all''aperto per il comune di Rieti. 1. Piazza Oberdan e Piazza Mazzini per la zona centro 2. largo De Santis e parco di via Comotti, zona Porta Romana 3. parco via Liberato di Benedetto 4. parco e campi sportivi via Salvo D''Acquisto 5. parco comunale VI Giugno 1944 via della Cavatella 6. parco di via Lama, Quattro Strade 7. area centro commerciale l''Aliante 8. Largo lago di Ventina, Piazza Tevere 9. Piazzale Leoni, Città giardino 10. Parcheggio PalaSojourner, Villa Reatina 11. Piazza Bettino Craxi, Campoloniano 12. Parco della Meridiana, Villa Reatina 13. parcheggio e piazzale di via Lombardia, Vazia 14. parco di via Vaiano Nuova 15. parco di via Pierluigi Mariani 16. Campo Sportivo di Casette 17. San Giovanni Reatino parco pubblico 18. Piani Poggio Fidoni campo sportivo 19. Terminillo Parcheggio Pian de Valli 20. Piazza Marconi Giardino di Ito 21. Via Pistignano Parcheggio Area di attesa coperte 1. MAKO via Micioccoli 2. Bocciodromo Comunale via De Gasperi 3. Pistino coperto stadio atletica R. Guidobaldi Piazzale A. Leoni 4. campi coperti da tennis via dupre theseider 5. impianto Palaspes Piani Poggio Fidoni 6. impianto polivalente Casette, via cicolana I centri di raccolta coperti sono messi a disposizione dal Comune di Rieti per coloro che non vogliono rimanere nelle proprie abitazioni. Sono impianti sportivi dotati di servizi igienici. Saranno disponibili dalle ore 20.'
 link: 'http://www.comune.rieti.it/article/16/10/emergenza-terremoto-elenco-delle-aree-di-attesa-il-comune-di-rieti'
@@ -3056,17 +3067,6 @@ indirizzo: 'Piazza Duomo, L''Aquila, AQ, Abruzzo, 67100, Italia'
 lat: '42.3488992'
 lon: '13.3981375'
 link: 'https://m.facebook.com/story.php?story_fbid=1776527635969992&id=100008383175419&hc_location=ufi'
-immagine: ''
-data: 16/09/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/560,177483187,2016-09-22 14:00:52,2016-09-16 17:52:07,"San Mauro Pascoli, FC - camere presso Hotel Jole di San Mauro Mare",44.1631101,12.4466459,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""Hotel Jole di San Mauro Mare FC, mette a disposizione dai prossimi giorni le camere disponibili per ospitare le persone che sono state costrette a lasciare le proprie abitazioni a causa del sisma del centro Italia. Via Marina 17 San Mauro Mare FC"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Viale Marina, San Mauro Pascoli, FC, Emilia-Romagna, 47030, Italia"", ""lat"": ""44.1631101"", ""link"": ""https://m.facebook.com/laurella.cruiser?refid=0&fref=ts"", ""lon"": ""12.4466459"", ""tel"": ""0541 346177 Laura""}","<pre><yamldata>tel: '0541 346177 Laura'
-email: ''
-descrizione: 'Hotel Jole di San Mauro Mare FC, mette a disposizione dai prossimi giorni le camere disponibili per ospitare le persone che sono state costrette a lasciare le proprie abitazioni a causa del sisma del centro Italia. Via Marina 17 San Mauro Mare FC'
-indirizzo: 'Viale Marina, San Mauro Pascoli, FC, Emilia-Romagna, 47030, Italia'
-lat: '44.1631101'
-lon: '12.4466459'
-link: 'https://m.facebook.com/laurella.cruiser?refid=0&fref=ts'
 immagine: ''
 data: 16/09/2016
 </yamldata></pre>
