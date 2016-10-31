@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Josh's Final Project Argument'
+title: Josh's Final Project Argument
 author: Josh
 ---
 
