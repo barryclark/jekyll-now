@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1009,186395815,2016-10-31 22:48:35,2016-10-31 20:58:16,Raccolta fondi del Comune di #PieveTorina,,,"[""Accettato"", ""Bollettino"", ""Raccolte Fondi"", ""Sisma Ottobre"", ""Twitter""]",,,"{""bic"": """", ""causale"": ""EMERGENZA TERREMOTO"", ""chi"": ""Raccolta fondi del Comune di Pieve Torina"", ""data"": ""31/10/2016"", ""descrizione"": ""Raccolta fondi per ricostruire Pieve Torina promossa dal Comune."", ""email"": """", ""iban"": ""IT75U0605569080000000001554"", ""intestazione"": """", ""link"": ""http://www.viverecamerino.it/2016/11/01/terremoto-partita-una-raccolta-fondi-per-pieve-torina/613316/"", ""postale"": """"}","<pre><yamldata>chi: 'Raccolta fondi del Comune di Pieve Torina'
+descrizione: 'Raccolta fondi per ricostruire Pieve Torina promossa dal Comune.'
+intestazione: ''
+iban: IT75U0605569080000000001554
+bic: ''
+postale: ''
+causale: 'EMERGENZA TERREMOTO'
+link: 'http://www.viverecamerino.it/2016/11/01/terremoto-partita-una-raccolta-fondi-per-pieve-torina/613316/'
+email: ''
+data: 31/10/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1008,186394089,2016-10-31 22:46:21,2016-10-31 20:50:41,Ad #Amatrice cercasi urgentemente un gazebo per camper e un container,,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,http://i.imgur.com/ufCGqwj.jpg,"{""cosa"": ""#amatrice Cercasi urgentemente un gazebo per camper e un container"", ""data"": ""31/10/2016"", ""descrizione"": ""Cercasi urgentemente un gazebo per camper e un container non per uso abitativo per una famiglia colpita dal terremoto in grande difficolt\u00e0. La consegna deve avvenire sul posto, per chi potesse aiutare contattare 392 7015986."", ""email"": """", ""immagine"": ""http://i.imgur.com/ufCGqwj.jpg"", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.facebook.com/emanuela.bignami.9/posts/10154612533584449"", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 cosa: '#amatrice Cercasi urgentemente un gazebo per camper e un container'
@@ -5030,12 +5041,6 @@ link: 'http://www.interno.gov.it/it/notizie/terremoto-centro-italia-situazione-v
 data: 14/09/2016
 </yamldata></pre>
 ",closed
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/339,177004323,2016-10-01 16:04:59,2016-09-14 19:55:36,Risarcimenti a tutti i danneggiati dal sisma,,,"[""Accettato"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""Sottosegretario alla Presidenza del consiglio Claudio De Vincenti assicura che tutti quelli che hanno avuto danni saranno risarciti."", ""link"": ""https://www.facebook.com/photo.php?fbid=10154122952182886&set=a.10153788132322886.1073741826.513172885&type=3&theater"", ""titolo"": ""Risarcimenti a tutti i danneggiati dal sisma""}","<pre><yamldata>titolo: 'Risarcimenti a tutti i danneggiati dal sisma'
-descrizione: 'Sottosegretario alla Presidenza del consiglio Claudio De Vincenti assicura che tutti quelli che hanno avuto danni saranno risarciti.'
-link: 'https://www.facebook.com/photo.php?fbid=10154122952182886&set=a.10153788132322886.1073741826.513172885&type=3&theater'
-data: 14/09/2016
-</yamldata></pre>
-",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/339,177004323,2016-10-01 16:04:59,2016-09-14 19:55:36,Risarcimenti a tutti i danneggiati dal sisma,,,"[""Accettato"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""Sottosegretario alla Presidenza del consiglio Claudio De Vincenti assicura che tutti quelli che hanno avuto danni saranno risarciti."", ""link"": ""https://www.facebook.com/photo.php?fbid=10154122952182886&set=a.10153788132322886.1073741826.513172885&type=3&theater"", ""titolo"": ""Risarcimenti a tutti i danneggiati dal sisma""}","<pre><yamldata>titolo: 'Risarcimenti a tutti i danneggiati dal sisma'
 descrizione: 'Sottosegretario alla Presidenza del consiglio Claudio De Vincenti assicura che tutti quelli che hanno avuto danni saranno risarciti.'
 link: 'https://www.facebook.com/photo.php?fbid=10154122952182886&set=a.10153788132322886.1073741826.513172885&type=3&theater'
