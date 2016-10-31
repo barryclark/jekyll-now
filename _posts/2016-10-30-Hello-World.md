@@ -3,4 +3,6 @@ layout: post
 title: Hello World!
 published: true
 ---
-Welcome to the fun world of programming with me: Gunith!
+Obligatory Hello World post :). All preceding articles are imported from the legacy gunith.com, site previously owned by me. All following articles are original github pages. 
+
+Cheers!
