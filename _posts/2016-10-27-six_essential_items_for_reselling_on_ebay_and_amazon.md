@@ -6,7 +6,7 @@ keywords: [ebay, amazon, thrift store, thrift stores, garage sale, garage sales,
 image: /images/covers/flipping-cover.png
 ---
 
-Earlier this year I started a new hobby - flipping things I find at garage sales, thrift stores, and even regular retail stores. Flipping essentially means I sell it elsewhere more than what I paid for. I sell most of these items on eBay, and some on Amazon, which means I need to ship these items.
+Earlier this year I started a new hobby - flipping things I find at garage sales, thrift stores, and even regular retail stores. Flipping essentially means I sell it elsewhere more than what I paid for. I sell most of these items on eBay, and some on Amazon, which means I need to ship these items. There are a few things I've found essential for shipping, and here's a list of six of them:
 
 ## [0. Postal Scale](https://www.amazon.com/s/ref=as_li_ss_tl?url=search-alias=office-products&field-keywords=postal+scale&sprefix=postal+sc,aps,202&crid=BLUW22FIP4VV&n=1068986&linkCode=ll2&tag=hendrixjoseph-20&linkId=ee08714a2a4cfae1473616a99f00debf)
 
