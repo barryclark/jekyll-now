@@ -4487,6 +4487,17 @@ link: 'http://www.regione.lazio.it/rl_protezione_civile/'
 data: 15/09/2016
 </yamldata></pre>
 ",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/383,177135207,2016-09-15 10:02:47,2016-09-15 09:55:19,Protezione Civile Lazio,,,"[""Accettato"", ""Contatti"", ""Form""]",,,"{""data"": ""15/09/2016"", ""descrizione"": """", ""email"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""http://www.regione.lazio.it/rl_protezione_civile/"", ""lon"": """", ""nome"": ""Protezione Civile Lazio"", ""tel"": ""803555""}","<pre><yamldata>nome: 'Protezione Civile Lazio'
+tel: '803555'
+email: ''
+descrizione: ''
+indirizzo: ''
+lat: ''
+lon: ''
+link: 'http://www.regione.lazio.it/rl_protezione_civile/'
+data: 15/09/2016
+</yamldata></pre>
+",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/382,177135092,2016-09-15 10:03:55,2016-09-15 09:54:52,Protezione Civile Nazionale,,,"[""Accettato"", ""Contatti"", ""Form""]",,,"{""data"": ""15/09/2016"", ""descrizione"": """", ""email"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""http://www.protezionecivile.gov.it/jcms/it/home.wp"", ""lon"": """", ""nome"": ""Protezione Civile Nazionale"", ""tel"": ""800840840""}","<pre><yamldata>nome: 'Protezione Civile Nazionale'
 tel: '800840840'
 email: ''
