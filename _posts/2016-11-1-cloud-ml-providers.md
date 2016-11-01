@@ -46,13 +46,13 @@ Just out of *beta*, Google Cloud ML platform is a very promising offering. It is
 
 Even though Cloud ML is a recent product, Google Cloud itself is a very mature platform, with App Engine, multiple storage options, management and logging tools.
 
-One can choose among several different types of workers. I tried the standard (cheapest) one, and was somewhat disappointed by the performance --- time per batch was **7 times(!) slower** than the cheapest EC2 machine (`g2.xlarge`). Looks like to get anywhere one needs to write training code for distributed architecture from the start.
+One can choose among several different types of workers. I tried the standard (cheapest) one, and was somewhat disappointed by the performance --- time per batch was **7 times(!) slower** than the cheapest EC2 machine (`g2.2xlarge`). Looks like to get anywhere one needs to write training code for distributed architecture from the start.
 
 ### Pros
 
 * Managed platform
 * Distributed TensorFlow is built-in
-* $300 credit to get started
+* $300 credit to get startedf
 
 ### Cons
 
@@ -60,7 +60,7 @@ One can choose among several different types of workers. I tried the standard (c
 * Locks you down into Google cloud infrastructure (have to use Google Storage for data).
 
 ## Rescale
-Very easy to start, has nice no-nonsense dashboard. GPU workers are pretty fast (at par or better than EC2 `g2.xlarge`).
+Very easy to start, has nice no-nonsense dashboard. GPU workers are pretty fast (at par or better than EC2 `g2.2xlarge`).
 TensorFlow is pre-installed. Cluster startup time is considerble (4--8 minutes). 
 
 I experienced this problem: just making a typo in the startup script leads (understandably)
