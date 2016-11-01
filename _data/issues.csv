@@ -4,7 +4,7 @@ descrizione: '(aun) – foligno, 31 ott. 016 - Sono complessivamente 2 mila 763 
 link: 'http://www.regione.umbria.it/notizie/-/asset_publisher/54m7RxsCDsHr/content/protciv-33-sisma-assistenza-post-sisma-i-dati-della-protezione-civile-dell%E2%80%99umbria?read_more=true'
 data: 01/11/2016
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1023,186516042,2016-11-01 12:01:11,2016-11-01 11:50:33,Cercasi capannone zona #Macerata per macchinari birrificio distrutto da sisma,43.1472936,13.2086672,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""Birra MC - 77 #Macerata"", ""data"": ""01/11/2016"", ""descrizione"": ""Loc. Caccamo di Serrapetrona - Macerata: a causa del terremoto e i danni riportati alla nostra struttura stiamo smontando il birrificio, alcune macchinari sono gi\u00e0 stati piazzati ma abbiamo bisogno di altro spazio, se qualcuno sa di un capannone libero e intatto in zone sicure ci darebbe un grande aiuto. In questo momento la priorit\u00e0 \u00e8 portare al sicuro ci\u00f2 che \u00e8 dentro il capannone."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via Nazionale, Serrapetrona, MC, Marche, Italia"", ""lat"": ""43.1472936"", ""link"": ""https://www.facebook.com/BirraMC77/?fref=nf"", ""lon"": ""13.2086672"", ""tel"": ""3282662782""}","<pre><yamldata>tel: '3282662782'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1023,186516042,2016-11-01 13:05:27,2016-11-01 11:50:33,Cercasi capannone zona #Macerata per macchinari birrificio distrutto da sisma,43.1472936,13.2086672,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Facebook"", ""Sisma Ottobre""]",,,"{""cosa"": ""Birra MC - 77 #Macerata"", ""data"": ""01/11/2016"", ""descrizione"": ""Loc. Caccamo di Serrapetrona - Macerata: a causa del terremoto e i danni riportati alla nostra struttura stiamo smontando il birrificio, alcune macchinari sono gi\u00e0 stati piazzati ma abbiamo bisogno di altro spazio, se qualcuno sa di un capannone libero e intatto in zone sicure ci darebbe un grande aiuto. In questo momento la priorit\u00e0 \u00e8 portare al sicuro ci\u00f2 che \u00e8 dentro il capannone."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via Nazionale, Serrapetrona, MC, Marche, Italia"", ""lat"": ""43.1472936"", ""link"": ""https://www.facebook.com/BirraMC77/?fref=nf"", ""lon"": ""13.2086672"", ""tel"": ""3282662782""}","<pre><yamldata>tel: '3282662782'
 email: ''
 cosa: 'Birra MC - 77 #Macerata'
 descrizione: 'Loc. Caccamo di Serrapetrona - Macerata: a causa del terremoto e i danni riportati alla nostra struttura stiamo smontando il birrificio, alcune macchinari sono già stati piazzati ma abbiamo bisogno di altro spazio, se qualcuno sa di un capannone libero e intatto in zone sicure ci darebbe un grande aiuto. In questo momento la priorità è portare al sicuro ciò che è dentro il capannone.'
@@ -6725,6 +6725,18 @@ bic: ''
 postale: ''
 causale: ''
 link: 'http://www.misericordia.firenze.it/News/Dettaglio/1854/Sottoscrizione-vittime-terremoto'
+email: ''
+data: 13/09/2016
+</yamldata></pre>
+",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/200,176772447,2016-09-13 23:25:09,2016-09-13 23:00:50,Quotidiano nazionale,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Sottoscrizione terremoto Centro Italia"", ""chi"": ""Quotidiano nazionale"", ""data"": ""13/09/2016"", ""descrizione"": ""Attivato c/c presso \""Unicredit\"""", ""email"": """", ""iban"": ""IT72H 02008 02515 000104427989,"", ""intestazione"": """", ""link"": """", ""postale"": """"}","<pre><yamldata>chi: 'Quotidiano nazionale'
+descrizione: 'Attivato c/c presso ""Unicredit""'
+intestazione: ''
+iban: 'IT72H 02008 02515 000104427989,'
+bic: ''
+postale: ''
+causale: 'Sottoscrizione terremoto Centro Italia'
+link: ''
 email: ''
 data: 13/09/2016
 </yamldata></pre>
