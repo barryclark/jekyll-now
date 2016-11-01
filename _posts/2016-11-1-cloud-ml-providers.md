@@ -81,9 +81,11 @@ Again, as configured, I should have had about 8-10 hours of "free" play time.
 * Billing mechanism is not clear as they apparently charge for configuration errors(!?)
 
 ## The Cost of Learning is Hidden Deep
-The cost is quoted per worker and per hour. Workers are wildly different. Comparing pricing at its face value is misleading.
+All cloud ML providers quote cost per worker and per hour. Workers are wildly different. Comparing pricing at its face value is misleading.
 
-Would you pay twice more per hour to make model train four times faster? Sure you would!
+A mental experiment:
+Would you pay twice more per hour to make your model train four times faster? Sure you would! You will spend less 
+money to train your model on a more expensive (per hour) machine.
 
 What one really wants is the cost per model per epoch of training. And it still may vary significantly depending on your model. Such an analysis is yet to be done.
 
@@ -96,4 +98,4 @@ For my tasks EC2 still seems like the best option, because:
   So no surprises when deploying in the cloud
 * My amount of training data is still pretty small --- no need to go for cloud storage yet
 
-We should get prepared to write **distributed** TensorFlow training code. Sooner or later my data will grow over the capabilities of a single worker.
+We should get prepared to write **distributed** TensorFlow training code. Sooner or later data will grow over the capabilities of a single worker.
