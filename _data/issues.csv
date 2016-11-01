@@ -3664,6 +3664,17 @@ immagine: ''
 data: 16/09/2016
 </yamldata></pre>
 ",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/520,177468403,2016-09-22 15:54:57,2016-09-16 16:34:11,"Messina, ME - Appartamento",38.1937571,15.5542082,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""AHMED mette a disposizione appartamento ammobiliato."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Piazza Antonello, IV Circoscrizione, Messina, ME, Sicily, 98122, Italia"", ""lat"": ""38.1937571"", ""link"": """", ""lon"": ""15.5542082"", ""tel"": ""3926364133""}","<pre><yamldata>tel: '3926364133'
+email: ''
+descrizione: 'AHMED mette a disposizione appartamento ammobiliato.'
+indirizzo: 'Piazza Antonello, IV Circoscrizione, Messina, ME, Sicily, 98122, Italia'
+lat: '38.1937571'
+lon: '15.5542082'
+link: ''
+immagine: ''
+data: 16/09/2016
+</yamldata></pre>
+",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/519,177468125,2016-09-22 15:56:50,2016-09-16 16:32:44,"Vicopisano, PI - Casa, 6 posti letto",43.6873261,10.5462333,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""Laura offre casa (6 posti letto)"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via di Villa, Case Grandiana, Vicopisano, PI, Tuscany, 56021, Italia"", ""lat"": ""43.6873261"", ""link"": """", ""lon"": ""10.5462333"", ""tel"": ""004795104142""}","<pre><yamldata>tel: '004795104142'
 email: ''
 descrizione: 'Laura offre casa (6 posti letto)'
