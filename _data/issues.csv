@@ -10,6 +10,17 @@ link: 'http://www.ilcittadinodirecanati.it/porto-recanati/30794-porto-recanati-i
 immagine: ''
 data: 01/11/2016
 </yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1021,186513141,2016-11-01 11:46:45,2016-11-01 11:32:05,COMUNE DI #USSITA - Raccolta fondi,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Raccolte Fondi"", ""Sisma Ottobre""]",,,"{""bic"": """", ""causale"": ""\u201cEmergenza Terremoto Ussita\u201d"", ""chi"": ""COMUNE DI #USSITA"", ""data"": ""01/11/2016"", ""descrizione"": ""Donazioni di denaro a favore del Comune di Ussita (MC). Chi vuole donare fondi in favore della popolazione di Ussita (MC) duramente colpita dal sisma del 24 agosto 2016 e da quelli successivi del 26 e del 30 ottobre 2016, pu\u00f2 farlo tramite bonifico utilizzando le seguenti coordinate:"", ""email"": """", ""iban"": ""IT 60 P 06055 69230 000000000948"", ""intestazione"": ""COMUNE DI USSITA"", ""link"": ""http://www.comune.ussita.mc.it/avvisi-cms/donazioni-a-favore-del-comune-di-ussita/"", ""postale"": """"}","<pre><yamldata>chi: 'COMUNE DI #USSITA'
+descrizione: 'Donazioni di denaro a favore del Comune di Ussita (MC). Chi vuole donare fondi in favore della popolazione di Ussita (MC) duramente colpita dal sisma del 24 agosto 2016 e da quelli successivi del 26 e del 30 ottobre 2016, può farlo tramite bonifico utilizzando le seguenti coordinate:'
+intestazione: 'COMUNE DI USSITA'
+iban: 'IT 60 P 06055 69230 000000000948'
+bic: ''
+postale: ''
+causale: '“Emergenza Terremoto Ussita”'
+link: 'http://www.comune.ussita.mc.it/avvisi-cms/donazioni-a-favore-del-comune-di-ussita/'
+email: ''
+data: 01/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1018,186496350,2016-11-01 11:21:25,2016-11-01 09:55:16,BENI PRIMA NECESSITA' - #VISSO,42.9312321,13.087449,"[""Accettato"", ""Bollettino"", ""Cibo"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""BENI PRIMA NECESSITA' - #VISSO"", ""data"": ""01/11/2016"", ""descrizione"": ""A Visso servono generi alimentari di prima necessit\u00e0 per emergenza sisma. Chiamare Assessore Serfaustini Patrizia lei vi dar\u00e0 tutte le indicazioni: Frutta/Verdura/Ortaggi Spezie Legumi vari Scatolame vario Salumi Merendine Th\u00e8 solubile Succhi Latte Zucchero Marmellata (monodose) Set posate (monouso) Vino bianco/rosso"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Piazza Martiri Vissani, Visso, MC, Marche, 62039, Italia"", ""lat"": ""42.9312321"", ""link"": ""https://www.facebook.com/permalink.php?story_fbid=1598395833799861&id=1575145466124898"", ""lon"": ""13.087449"", ""tel"": ""334 1167103""}","<pre><yamldata>tel: '334 1167103'
 email: ''
 cosa: 'BENI PRIMA NECESSITA'' - #VISSO'
@@ -3681,18 +3692,6 @@ indirizzo: ''
 lat: ''
 lon: ''
 link: 'http://www.oipa.org/italia/emergenzaterremoto/'
-immagine: ''
-data: 16/09/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/507,177450068,2016-09-23 22:45:46,2016-09-16 15:12:22,"Libri, riviste, giochi e quanto serva per socialità.",,,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Libri, riviste, giochi e quanto serva per socialit\u00e0."", ""data"": ""16/09/2016"", ""descrizione"": ""Centro servizi volontariato Torino e Anpas Piemonte hanno bisogno di materiali (libri, riviste, giochi, ecc.) per luogo di aggregazione anziani che stanno allestendo a Amatrice."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""http://volontariato.torino.it/vol-to-anpas-insieme-realizzare-un-centro-incontro-anziani-ad-amatrice/"", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
-email: ''
-cosa: 'Libri, riviste, giochi e quanto serva per socialità.'
-descrizione: 'Centro servizi volontariato Torino e Anpas Piemonte hanno bisogno di materiali (libri, riviste, giochi, ecc.) per luogo di aggregazione anziani che stanno allestendo a Amatrice.'
-indirizzo: ''
-lat: ''
-lon: ''
-link: 'http://volontariato.torino.it/vol-to-anpas-insieme-realizzare-un-centro-incontro-anziani-ad-amatrice/'
 immagine: ''
 data: 16/09/2016
 </yamldata></pre>
