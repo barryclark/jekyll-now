@@ -4,8 +4,8 @@ title: Emergence of Cloud Machine Learning
 author: Mike Kroutikov
 ---
 
-Deep Learning is coool. But expensive.
-Lets see what options do we have for training deep models. 
+Deep Learning is cool. But expensive.
+Lets see what options do we have for training deep models in the cloud. 
 
 Naturally, one would need a pretty big machine to do really interesting stuff.
 
