@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Emergence of Cloud Machine Learning
+title: Emergence of Cloud Machine Learning
 author: Mike Kroutikov
 ---
 
