@@ -1046,6 +1046,17 @@ immagine: ''
 data: 30/10/2016
 </yamldata></pre>
 ",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/893,186127595,2016-10-30 10:35:47,2016-10-30 10:05:47,Mettiamo a disposizione casa per famiglia a Varazze (Sv),,,"[""Accettato"", ""Alloggi"", ""Bollettino"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""30/10/2016"", ""descrizione"": ""Mettiamo a disposizione casa per famiglia con bambini, 4 posti letto, in piccola localit\u00e0 di mare Varazze (SV) per persone danneggiate dal terremoto. In pi\u00f9 offriamo ospitalit\u00e0 presso nostra abitazione nella citt\u00e0 di Genova per mamma con bambini."", ""email"": ""dspiridi@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3383788135""}","<pre><yamldata>tel: '3383788135'
+email: dspiridi@gmail.com
+descrizione: 'Mettiamo a disposizione casa per famiglia con bambini, 4 posti letto, in piccola località di mare Varazze (SV) per persone danneggiate dal terremoto. In più offriamo ospitalità presso nostra abitazione nella città di Genova per mamma con bambini.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 30/10/2016
+</yamldata></pre>
+",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/892,186125811,2016-10-30 09:42:53,2016-10-30 09:24:42,Offresi alloggio a Buja (UD),,,"[""Accettato"", ""Alloggi"", ""Bollettino"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""30/10/2016"", ""descrizione"": ""Offresi disponibilit\u00e0 presso propria abitazione a Buja (UD), una camera doppia con bagno ed eventuali altre due persone (famiglia o altro) per il tempo necessario"", ""email"": ""val_gue@hotmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""348/3051736""}","<pre><yamldata>tel: 348/3051736
 email: val_gue@hotmail.com
 descrizione: 'Offresi disponibilità presso propria abitazione a Buja (UD), una camera doppia con bagno ed eventuali altre due persone (famiglia o altro) per il tempo necessario'
@@ -5597,6 +5608,12 @@ lat: ''
 lon: ''
 link: ''
 immagine: ''
+data: 14/09/2016
+</yamldata></pre>
+",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/312,176955947,2016-10-01 16:01:24,2016-09-14 16:30:42,Donazioni deducibili per i terremotati. Individuati gli enti nell'ascolano,,,"[""Accettato"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""Il prefetto di Ascoli Piceno ha firmato il decreto che individua gli organismi attraverso i quali \u00e8 possibile fare donazioni esentasse a favore della popolazione della provincia, duramente colpita dal terremoto del 24 agosto scorso."", ""link"": ""http://www.interno.gov.it/it/notizie/donazioni-deducibili-i-terremotati-individuati-enti-nellascolano"", ""titolo"": ""Donazioni deducibili per i terremotati. Individuati gli enti nell'ascolano""}","<pre><yamldata>titolo: 'Donazioni deducibili per i terremotati. Individuati gli enti nell''ascolano'
+descrizione: 'Il prefetto di Ascoli Piceno ha firmato il decreto che individua gli organismi attraverso i quali è possibile fare donazioni esentasse a favore della popolazione della provincia, duramente colpita dal terremoto del 24 agosto scorso.'
+link: 'http://www.interno.gov.it/it/notizie/donazioni-deducibili-i-terremotati-individuati-enti-nellascolano'
 data: 14/09/2016
 </yamldata></pre>
 ",open
