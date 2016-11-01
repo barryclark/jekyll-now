@@ -1,14 +1,4 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1038,186645406,2016-11-01 21:00:25,2016-11-01 20:58:34,Disponibilità alloggio in albergo a Tornimparte (Abruzzo),,,"[""Accettato"", ""Alloggi"", ""Facebook"", ""Sisma Ottobre""]",,,"{""data"": ""01/11/2016"", ""descrizione"": ""Ciao a tutti vi scrivo dall Hotel Grazia,Ristorante la Capricciosa mettiamo a disposizione dai prossimi giorni la nostra struttura alberghiera per ospitare le persone che sono state costrette a lasciare le proprie abitazioni a causa del sisma del centro Italia. Condividete questo post in modo da poter raggiungere le persone interessate. Indirizzo : Via Delle Conserve 14,Tornimparte, Telefono : Tel 0862 72765"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.facebook.com/photo.php?fbid=1173217876102051&set=a.440602599363586.1073741825.100002415508365&type=3"", ""lon"": """", ""tel"": ""333 2057945""}","<pre><yamldata>tel: '333 2057945'
-email: ''
-descrizione: 'Ciao a tutti vi scrivo dall Hotel Grazia,Ristorante la Capricciosa mettiamo a disposizione dai prossimi giorni la nostra struttura alberghiera per ospitare le persone che sono state costrette a lasciare le proprie abitazioni a causa del sisma del centro Italia. Condividete questo post in modo da poter raggiungere le persone interessate. Indirizzo : Via Delle Conserve 14,Tornimparte, Telefono : Tel 0862 72765'
-indirizzo: ''
-lat: ''
-lon: ''
-link: 'https://www.facebook.com/photo.php?fbid=1173217876102051&set=a.440602599363586.1073741825.100002415508365&type=3'
-immagine: ''
-data: 01/11/2016
-</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1037,186612351,2016-11-01 20:59:21,2016-11-01 18:38:27,"Hotel Grazia, in provincia dell'Aquila, offre ospitalità a sfollati",42.2905404,13.2666188,"[""Accettato"", ""Alloggi"", ""Facebook"", ""Sisma Ottobre""]",,,"{""data"": ""01/11/2016"", ""descrizione"": ""Hotel Grazia - Ristorante la Capricciosa: mettiamo a disposizione dai prossimi giorni la nostra struttura alberghiera per ospitare le persone che sono state costrette a lasciare le proprie abitazioni a causa del sisma del centro Italia. Indirizzo: Via Delle Conserve 14, Tornimparte (AQ)"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Tornimparte, AQ, Abruzzo, Italia"", ""lat"": ""42.2905404"", ""link"": """", ""lon"": ""13.2666188"", ""tel"": ""333 205 7945; 0862 72765""}","<pre><yamldata>tel: '333 205 7945; 0862 72765'
 email: ''
 descrizione: 'Hotel Grazia - Ristorante la Capricciosa: mettiamo a disposizione dai prossimi giorni la nostra struttura alberghiera per ospitare le persone che sono state costrette a lasciare le proprie abitazioni a causa del sisma del centro Italia. Indirizzo: Via Delle Conserve 14, Tornimparte (AQ)'
