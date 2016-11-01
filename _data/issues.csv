@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1051,186677245,2016-11-01 23:41:20,2016-11-01 23:39:31,"Comune di #Tolentino, info su interruzioni viabilità causa sisma",,,"[""Accettato"", ""Facebook"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""01/11/2016"", ""descrizione"": ""Si comunica che \u00e8 ancora chiuso al traffico, sempre per pericoli di crollo, viale Vittorio Veneto nel tratto compreso tra il civico 7 e il numero 15. In via Montegrappa invertito il senso di marcia da viale Trento e Trieste a viale Vittorio Veneto. In viale Trento e Trieste compreso tra i numeri civici 1 e 5, senso unico di marcia con direzione viale Trento e Trieste. Nell\u2019ultimo tratto di viale Cappellacci invertito il senso di marcia con direzione viale Vittorio Veneto \u2013 Trento e Trieste. In via Adamello obbligo di svolta a sinistra, nel tratto che esce su via Montegrappa, invertito in direzione viale Vittorio Veneto con direzione viale Vittorio Veneto. Ancora chiusa via dei Vasari a causa di un cedimento di un edificio che risulta danneggiato e transennate una porzione di Via Lauro Cappellacci per il possibile crollo di una abitazione e parte di viale Matteotti in prossimit\u00e0 della Bnl per il pericolo di crollo del marciapiede. Riaperte sia via Laura Zampeschi e via San Nicola. Si sta lavorando per riaprire entro domani 2 novembre tutte le vie di accesso al centro storico anche con l\u2019intento di rendere fruibili e facilmente raggiungibili le attivit\u00e0 commerciali."", ""link"": ""http://www.comune.tolentino.mc.it/comunicati-cms/la-situazione-a-tolentino-alle-ore-20-del-1-novembre/"", ""titolo"": ""Comune di #Tolentino, info su interruzioni viabilit\u00e0 causa sisma""}","<pre><yamldata>titolo: 'Comune di #Tolentino, info su interruzioni viabilità causa sisma'
+descrizione: 'Si comunica che è ancora chiuso al traffico, sempre per pericoli di crollo, viale Vittorio Veneto nel tratto compreso tra il civico 7 e il numero 15. In via Montegrappa invertito il senso di marcia da viale Trento e Trieste a viale Vittorio Veneto. In viale Trento e Trieste compreso tra i numeri civici 1 e 5, senso unico di marcia con direzione viale Trento e Trieste. Nell’ultimo tratto di viale Cappellacci invertito il senso di marcia con direzione viale Vittorio Veneto – Trento e Trieste. In via Adamello obbligo di svolta a sinistra, nel tratto che esce su via Montegrappa, invertito in direzione viale Vittorio Veneto con direzione viale Vittorio Veneto. Ancora chiusa via dei Vasari a causa di un cedimento di un edificio che risulta danneggiato e transennate una porzione di Via Lauro Cappellacci per il possibile crollo di una abitazione e parte di viale Matteotti in prossimità della Bnl per il pericolo di crollo del marciapiede. Riaperte sia via Laura Zampeschi e via San Nicola. Si sta lavorando per riaprire entro domani 2 novembre tutte le vie di accesso al centro storico anche con l’intento di rendere fruibili e facilmente raggiungibili le attività commerciali.'
+link: 'http://www.comune.tolentino.mc.it/comunicati-cms/la-situazione-a-tolentino-alle-ore-20-del-1-novembre/'
+data: 01/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1050,186676681,2016-11-01 23:40:48,2016-11-01 23:35:28,Comune di #Tolentino - Informazioni e contatti per sopralluoghi e segnalazione danni,,,"[""Accettato"", ""Bollettino"", ""Facebook"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""01/11/2016"", ""descrizione"": ""Chi avesse bisogno di segnalare danni o richieste di sopralluoghi possono rivolgersi o al COC il cui ufficio \u00e8 stato spostato da piazza della Libert\u00e0 nella nuova sede di piazza Peramezza (ex locali Linea Casa, nelle vicinanze dell\u2019Hotel 77 \u2013 attivo a partire dalle ore 10) oppure compilare l\u2019apposita domanda modello IPP scaricabile sul sito del Comune di Tolentino all\u2019indirizzo www.comune.tolentino.mc.it che pu\u00f2 essere inviata via mail all\u2019indirizzo info@comune.tolentino.mc.it. Per ogni informazione o chiarimento si pu\u00f2 contattare il numero 0733.1960101 oppure il numero della Polizia Locale 901263."", ""link"": ""http://www.comune.tolentino.mc.it/comunicati-cms/la-situazione-a-tolentino-alle-ore-20-del-1-novembre/"", ""titolo"": ""Comune di #Tolentino - Informazioni e contatti per sopralluoghi e segnalazione danni""}","<pre><yamldata>titolo: 'Comune di #Tolentino - Informazioni e contatti per sopralluoghi e segnalazione danni'
 descrizione: 'Chi avesse bisogno di segnalare danni o richieste di sopralluoghi possono rivolgersi o al COC il cui ufficio è stato spostato da piazza della Libertà nella nuova sede di piazza Peramezza (ex locali Linea Casa, nelle vicinanze dell’Hotel 77 – attivo a partire dalle ore 10) oppure compilare l’apposita domanda modello IPP scaricabile sul sito del Comune di Tolentino all’indirizzo www.comune.tolentino.mc.it che può essere inviata via mail all’indirizzo info@comune.tolentino.mc.it. Per ogni informazione o chiarimento si può contattare il numero 0733.1960101 oppure il numero della Polizia Locale 901263.'
 link: 'http://www.comune.tolentino.mc.it/comunicati-cms/la-situazione-a-tolentino-alle-ore-20-del-1-novembre/'
@@ -18,6 +23,11 @@ lat: '43.1090812'
 lon: '12.3607212'
 link: 'https://www.facebook.com/1421014554788410/photos/a.1421019758121223.1073741828.1421014554788410/1889441507945710/?type=3'
 immagine: ''
+data: 01/11/2016
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1047,186670297,2016-11-01 23:41:45,2016-11-01 22:57:04,"Comune di #Spoleto, centri di accoglienza",,,"[""Accettato"", ""Bollettino"", ""Notizie Utili"", ""Sisma Ottobre"", ""Twitter""]",,,"{""data"": ""01/11/2016"", ""descrizione"": ""Tre sono i centri di accoglienza allestiti: oltre la sede del COC in via dei Tessili 15, il Palatenda in via Pasquale Laureti, il Palarota a Piazza d\u2019Armi e il verde attrezzato di Eggi. Ad oggi, 1 novembre, sono oltre 350 le persone ospitate nei nei centri."", ""link"": ""http://www.comunespoleto.gov.it/terremoto-piu-di-350-persone-nei-centri-di-accoglienza/"", ""titolo"": ""Comune di #Spoleto, centri di accoglienza""}","<pre><yamldata>titolo: 'Comune di #Spoleto, centri di accoglienza'
+descrizione: 'Tre sono i centri di accoglienza allestiti: oltre la sede del COC in via dei Tessili 15, il Palatenda in via Pasquale Laureti, il Palarota a Piazza d’Armi e il verde attrezzato di Eggi. Ad oggi, 1 novembre, sono oltre 350 le persone ospitate nei nei centri.'
+link: 'http://www.comunespoleto.gov.it/terremoto-piu-di-350-persone-nei-centri-di-accoglienza/'
 data: 01/11/2016
 </yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1046,186663196,2016-11-01 22:17:39,2016-11-01 22:17:21,Comune San Severino - C.o.c.,43.2289071,13.1836971,"[""Accettato"", ""Contatti"", ""Sisma Ottobre""]",,,"{""data"": ""01/11/2016"", ""descrizione"": ""Comune San Severino Marche - C.O.C. Centro Operativo Comunale presso palasport \u201cAlbino Ciarapica\u201d in viale Mazzini, tel. 3204082044."", ""email"": """", ""indirizzo"": ""Viale Mazzini, San Severino Marche, MC, Marche, Italia"", ""lat"": ""43.2289071"", ""link"": ""http://www.comune.sanseverinomarche.mc.it/comunicati-cms/terremoto-i-cittadini-proprietari-di-immobili-inagibili-invitati-a-utilizzare-gli-alberghi-in-questa-prima-fase/"", ""lon"": ""13.1836971"", ""nome"": ""Comune San Severino - C.o.c."", ""tel"": ""3204082044""}","<pre><yamldata>nome: 'Comune San Severino - C.o.c.'
@@ -546,11 +556,6 @@ lat: ''
 lon: ''
 link: ''
 immagine: ''
-data: 31/10/2016
-</yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/978,186239347,2016-10-31 11:50:42,2016-10-31 09:31:51,Colonna mobile #protezionecivile #Regione #Puglia diretta a #Camerino,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""Pubblicare su TW"", ""Sisma Ottobre""]",,,"{""data"": ""31/10/2016"", ""descrizione"": ""#terremoto, in partenza la colonna mobile della #protezionecivile @RegionePuglia diretta a #Camerino [Fonte: Tg Rai Puglia]"", ""link"": ""https://twitter.com/TgrRaiPuglia/status/793020805424766976"", ""titolo"": ""Colonna mobile #protezionecivile #Regione #Puglia diretta a #Camerino""}","<pre><yamldata>titolo: 'Colonna mobile #protezionecivile #Regione #Puglia diretta a #Camerino'
-descrizione: '#terremoto, in partenza la colonna mobile della #protezionecivile @RegionePuglia diretta a #Camerino [Fonte: Tg Rai Puglia]'
-link: 'https://twitter.com/TgrRaiPuglia/status/793020805424766976'
 data: 31/10/2016
 </yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/978,186239347,2016-10-31 11:50:42,2016-10-31 09:31:51,Colonna mobile #protezionecivile #Regione #Puglia diretta a #Camerino,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""Pubblicare su TW"", ""Sisma Ottobre""]",,,"{""data"": ""31/10/2016"", ""descrizione"": ""#terremoto, in partenza la colonna mobile della #protezionecivile @RegionePuglia diretta a #Camerino [Fonte: Tg Rai Puglia]"", ""link"": ""https://twitter.com/TgrRaiPuglia/status/793020805424766976"", ""titolo"": ""Colonna mobile #protezionecivile #Regione #Puglia diretta a #Camerino""}","<pre><yamldata>titolo: 'Colonna mobile #protezionecivile #Regione #Puglia diretta a #Camerino'
@@ -7351,18 +7356,6 @@ postale: ''
 causale: 'Sisma Centro Italia'
 link: 'http://www.cri.it/terremoto-centro-italia'
 email: aiuti@cri.it
-data: 13/09/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/162,176719966,2016-09-13 18:50:41,2016-09-13 18:50:05,Corriere della Sera e TG La7,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Corriere della Sera e TG La7"", ""data"": ""13/09/2016"", ""descrizione"": ""Attivato c/c presso \""Banca Prossima\"""", ""email"": """", ""iban"": ""IT17E 03359 01600 100000145551"", ""intestazione"": ""Un aiuto subito - Terremoto in Centro Italia 6.0"", ""link"": """", ""postale"": """"}","<pre><yamldata>chi: 'Corriere della Sera e TG La7'
-descrizione: 'Attivato c/c presso ""Banca Prossima""'
-intestazione: 'Un aiuto subito - Terremoto in Centro Italia 6.0'
-iban: 'IT17E 03359 01600 100000145551'
-bic: ''
-postale: ''
-causale: ''
-link: ''
-email: ''
 data: 13/09/2016
 </yamldata></pre>
 ",open
