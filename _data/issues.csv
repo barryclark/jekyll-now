@@ -35,6 +35,11 @@ link: 'https://www.facebook.com/1421014554788410/photos/a.1421019758121223.10737
 immagine: ''
 data: 01/11/2016
 </yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1039,186655587,2016-11-01 22:10:39,2016-11-01 21:41:31,Comune di #Palmiano (Ap) - Ordinanza di sgombero,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""01/11/2016"", ""descrizione"": ""ORDINANZA DI DIVIETO CAUTELATIVO DI ACCESSO ALLE ABITAZIONI ED EDIFICI PUBBLICI"", ""link"": ""http://www.tecuting2.it/c044056/po/mostra_news.php?id=58&area=H"", ""titolo"": ""Comune di Palmiano - Ordinanza di sgombero""}","<pre><yamldata>titolo: 'Comune di Palmiano - Ordinanza di sgombero'
+descrizione: 'ORDINANZA DI DIVIETO CAUTELATIVO DI ACCESSO ALLE ABITAZIONI ED EDIFICI PUBBLICI'
+link: 'http://www.tecuting2.it/c044056/po/mostra_news.php?id=58&area=H'
+data: 01/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1037,186612351,2016-11-01 20:59:21,2016-11-01 18:38:27,"Hotel Grazia, in provincia dell'Aquila, offre ospitalità a sfollati",42.2905404,13.2666188,"[""Accettato"", ""Alloggi"", ""Facebook"", ""Sisma Ottobre""]",,,"{""data"": ""01/11/2016"", ""descrizione"": ""Hotel Grazia - Ristorante la Capricciosa: mettiamo a disposizione dai prossimi giorni la nostra struttura alberghiera per ospitare le persone che sono state costrette a lasciare le proprie abitazioni a causa del sisma del centro Italia. Indirizzo: Via Delle Conserve 14, Tornimparte (AQ)"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Tornimparte, AQ, Abruzzo, Italia"", ""lat"": ""42.2905404"", ""link"": """", ""lon"": ""13.2666188"", ""tel"": ""333 205 7945; 0862 72765""}","<pre><yamldata>tel: '333 205 7945; 0862 72765'
 email: ''
 descrizione: 'Hotel Grazia - Ristorante la Capricciosa: mettiamo a disposizione dai prossimi giorni la nostra struttura alberghiera per ospitare le persone che sono state costrette a lasciare le proprie abitazioni a causa del sisma del centro Italia. Indirizzo: Via Delle Conserve 14, Tornimparte (AQ)'
@@ -1258,12 +1263,6 @@ lat: ''
 lon: ''
 link: ''
 immagine: ''
-data: 27/10/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/854,185620304,2016-10-27 10:24:49,2016-10-27 09:41:58,UNIVERSITA' DEGLI STUDI' DI #CAMERINO: ATTIVITA' DIDATTICHE SOSPESE,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""27/10/2016"", ""descrizione"": ""Per permettere tutte le verifiche e i sopralluoghi necessari a garantire la massima incolumit\u00e0 agli studenti e al personale, comunichiamo che tutte le attivit\u00e0 didattiche, gli esami e le sedute di laurea sono sospesi fino a nuova disposizione. Quanto prima comunicheremo la data di ripresa delle attivit\u00e0."", ""link"": ""http://www.unicam.it/"", ""titolo"": ""UNIVERSITA' DEGLI STUDI' DI CAMERINO: ATTIVITA' DIDATTICHE SOSPESE""}","<pre><yamldata>titolo: 'UNIVERSITA'' DEGLI STUDI'' DI CAMERINO: ATTIVITA'' DIDATTICHE SOSPESE'
-descrizione: 'Per permettere tutte le verifiche e i sopralluoghi necessari a garantire la massima incolumità agli studenti e al personale, comunichiamo che tutte le attività didattiche, gli esami e le sedute di laurea sono sospesi fino a nuova disposizione. Quanto prima comunicheremo la data di ripresa delle attività.'
-link: 'http://www.unicam.it/'
 data: 27/10/2016
 </yamldata></pre>
 ",open
