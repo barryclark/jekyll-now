@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1035,186610633,2016-11-01 20:44:15,2016-11-01 18:31:26,Offro appartamento 100 mq in un casale tra Perugia e Trasimeno,,,"[""Accettato"", ""Alloggi"", ""Bollettino"", ""Form"", ""Sisma Ottobre""]",,http://i.imgur.com/rZYxBuf.jpg,"{""data"": ""01/11/2016"", ""descrizione"": ""Vorrei ospitare chi ha bisogno nell'appartamento a piano terra del mio casale a met\u00e0 strada tra Perugia e il Trasimeno. Nei 100 mq. ci sono due camere doppie e due bagni, un grande salone con un divano letto matrimoniale, una cucina e una grande area esterna attrezzata. Tutto arredato ed accessoriato poich\u00e9 attualmente viene affittato ai turisti per brevi periodi. Qui non abbiamo mai avvertito scosse"", ""email"": ""tenaglia.paola@gmail.com"", ""immagine"": ""http://i.imgur.com/rZYxBuf.jpg"", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""347 5422101""}","<pre><yamldata>tel: '347 5422101'
+email: tenaglia.paola@gmail.com
+descrizione: 'Vorrei ospitare chi ha bisogno nell''appartamento a piano terra del mio casale a metà strada tra Perugia e il Trasimeno. Nei 100 mq. ci sono due camere doppie e due bagni, un grande salone con un divano letto matrimoniale, una cucina e una grande area esterna attrezzata. Tutto arredato ed accessoriato poiché attualmente viene affittato ai turisti per brevi periodi. Qui non abbiamo mai avvertito scosse'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: 'http://i.imgur.com/rZYxBuf.jpg'
+data: 01/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1033,186597028,2016-11-01 17:54:01,2016-11-01 17:38:05,Offro posto letto provincia di #Perugia,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""01/11/2016"", ""descrizione"": ""Offro posto letto in camera singola per un breve periodo in contesto immerso nel vede a 20 km da Perugia. Necessaria auto per spostamenti."", ""email"": ""pressoffice67@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3493088138""}","<pre><yamldata>tel: '3493088138'
 email: pressoffice67@gmail.com
 descrizione: 'Offro posto letto in camera singola per un breve periodo in contesto immerso nel vede a 20 km da Perugia. Necessaria auto per spostamenti.'
@@ -1026,14 +1036,6 @@ data: 29/10/2016
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/881,186079436,2016-10-29 15:57:31,2016-10-29 13:46:59,COMUNE DI #PIEVETORINA: dove si può ricevere cibo,,,"[""Accettato"", ""Bollettino"", ""Cibo"", ""Form"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""29/10/2016"", ""descrizione"": ""Si comunica alla popolazione ed in particolar modo per la cittadinanza delle frazioni che \u00e8 possibile mangiare presso la struttura della protezione civile nell'area camper vicino al campo sportivo. Si prega di fare il passa parola."", ""link"": ""https://www.facebook.com/ComunePieveTorina/?fref=nf"", ""titolo"": ""COMUNE DI #PIEVETORINA: COMUNICATO""}","<pre><yamldata>titolo: 'COMUNE DI #PIEVETORINA: COMUNICATO'
 descrizione: 'Si comunica alla popolazione ed in particolar modo per la cittadinanza delle frazioni che è possibile mangiare presso la struttura della protezione civile nell''area camper vicino al campo sportivo. Si prega di fare il passa parola.'
 link: 'https://www.facebook.com/ComunePieveTorina/?fref=nf'
-data: 29/10/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/880,186069622,2016-10-29 10:18:30,2016-10-29 09:41:43,A #Ussita c'è bisogno di 2 camper per alcune famiglie che dormono in auto,42.94261,13.138755,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Pubblicare su FB"", ""Sisma Ottobre"", ""Telegram""]",,,"{""data"": ""29/10/2016"", ""descrizione"": ""Ussita: per alcune famiglie che da 3 notti dormono in macchina c'\u00e8 bisogno di 2 camper. Contatti: Sara Vegni Actionaid 3462865450"", ""immagine"": """", ""lat"": ""42.94261"", ""lon"": ""13.138755"", ""telegram_user"": """"}","<pre><yamldata>telegram_user: ''
-descrizione: 'Ussita: per alcune famiglie che da 3 notti dormono in macchina c''è bisogno di 2 camper. Contatti: Sara Vegni Actionaid 3462865450'
-immagine: ''
-lat: '42.94261'
-lon: '13.138755'
 data: 29/10/2016
 </yamldata></pre>
 ",open
