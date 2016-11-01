@@ -1,0 +1,26 @@
+http://stackoverflow.com/questions/40341346/kibana-on-docker-cannot-connect-to-elasticsearch
+
+https://hub.docker.com/r/seeruk/docker-kibana-sense/
+
+https://www.elastic.co/webinars/getting-started-elasticsearch?baymax=default&storm=cta1&elektra=home
+
+version: "2"
+
+services:
+
+  elasticsearch:
+    image: elasticsearch:2.4
+    ports:
+      - "9200:9200"
+    volumes:
+      - ./esdata/:/usr/share/elasticsearch/data/
+
+  kibana:
+    image: seeruk/docker-kibana-sense:4.5
+    ports:
+      - "5601:5601"
+    environment:
+      - ELASTICSEARCH_URL=http://elasticsearch:9200
+
+
+docker-compose up
