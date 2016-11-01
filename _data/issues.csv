@@ -10,6 +10,17 @@ link: 'http://www.comune.tolentino.mc.it/comunicati-cms/si-cercano-urgentemente-
 immagine: ''
 data: 01/11/2016
 </yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1015,186489820,2016-11-01 10:06:24,2016-11-01 09:17:17,Comune di Camerino,,,"[""Accettato"", ""Donazioni"", ""Form"", ""Raccolte Fondi"", ""Sisma Ottobre""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Comune di Camerino"", ""data"": ""01/11/2016"", ""descrizione"": ""Codice IBAN attivato dal Comune di Camerino per l\u2019emergenza terremoto"", ""email"": """", ""iban"": ""IT 86 C 05308 6883 000000004280"", ""intestazione"": ""UBI>"", ""link"": """", ""postale"": """"}","<pre><yamldata>chi: 'Comune di Camerino'
+descrizione: 'Codice IBAN attivato dal Comune di Camerino per l’emergenza terremoto'
+intestazione: UBI>
+iban: 'IT 86 C 05308 6883 000000004280'
+bic: ''
+postale: ''
+causale: ''
+link: ''
+email: ''
+data: 01/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1012,186423553,2016-10-31 23:12:59,2016-10-31 23:00:28,"Poste italiane - Uffici mobili, servizi e agevolazioni per cittadini colpiti dal sisma",,,"[""Accettato"", ""Bollettino"", ""Facebook"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""31/10/2016"", ""descrizione"": ""A Visso, Pieve Torina, Ussita, Pievebogliana, Mergnano e Monte Cavallo presenti uffici postali mobili. Disponibile gratis servizio \""Seguimi\"" per il recapito della posta a cittadini temporaneamente trasferiti, i residenti potranno riscuotere la pensione in tutti gli uffici postali attivi sul territorio nazionale. Sospesi i pagamenti di rate di mutui e finanziamenti per i residenti delle aree colpite. Bloccato anche il recupero crediti. Altre info utili nel comunicato di Poste italiani (vedi link)."", ""link"": ""http://www.posteitaliane.it/ol/comunicatostampa.do?id=972"", ""titolo"": ""Poste italiane - Uffici mobili, servizi e agevolazioni per cittadini colpiti dal sisma""}","<pre><yamldata>titolo: 'Poste italiane - Uffici mobili, servizi e agevolazioni per cittadini colpiti dal sisma'
 descrizione: 'A Visso, Pieve Torina, Ussita, Pievebogliana, Mergnano e Monte Cavallo presenti uffici postali mobili. Disponibile gratis servizio ""Seguimi"" per il recapito della posta a cittadini temporaneamente trasferiti, i residenti potranno riscuotere la pensione in tutti gli uffici postali attivi sul territorio nazionale. Sospesi i pagamenti di rate di mutui e finanziamenti per i residenti delle aree colpite. Bloccato anche il recupero crediti. Altre info utili nel comunicato di Poste italiani (vedi link).'
 link: 'http://www.posteitaliane.it/ol/comunicatostampa.do?id=972'
@@ -1703,14 +1714,6 @@ postale: ''
 causale: ''
 link: 'http://www.associazioneamicidigrisciano.it/aiutaci-a-ricostruire-grisciano/'
 email: ''
-data: 06/10/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/756,181515042,2016-10-07 16:52:56,2016-10-06 20:18:33,Redazione provvisoria di Chiedi alla Polvere,42.7744,13.299574,"[""Accettato"", ""Contatti"", ""Telegram""]",,http://i.imgur.com/Mpgp3sE.jpg,"{""data"": ""06/10/2016"", ""descrizione"": ""Redazione provvisoria di chiedi alla polvere"", ""immagine"": ""http://i.imgur.com/Mpgp3sE.jpg"", ""lat"": ""42.7744"", ""lon"": ""13.299574"", ""telegram_user"": """"}","<pre><yamldata>telegram_user: ''
-descrizione: 'Redazione provvisoria di chiedi alla polvere'
-immagine: 'http://i.imgur.com/Mpgp3sE.jpg'
-lat: '42.7744'
-lon: '13.299574'
 data: 06/10/2016
 </yamldata></pre>
 ",open
