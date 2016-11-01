@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Eugenics and Statistics: Karl Pearson and R. A. Fisher
+title: Eugenics and Statistics, Discussing Karl Pearson and R. A. Fisher
 ---
 
 ![Galton's Labs]({{ site.baseurl }}/images/Galton_s_lab.jpg)
