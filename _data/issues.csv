@@ -1,4 +1,19 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1044,186661143,2016-11-01 22:06:54,2016-11-01 22:06:23,Comune di #Ascoli: aree di accoglienza fino al 6 novembre,,,"[""Accettato"", ""Notizie Utili"", ""Pubblicare su FB"", ""Sisma Ottobre""]",,,"{""data"": ""01/11/2016"", ""descrizione"": ""Informazione sull'emergenza. Le 4 aree di ritrovo e le 3 palestre operative fini a domenica 6 novembre. Visto il perdurare della crisi sismica il Sindaco ha deciso di mantenere operative (almeno) fino a domenica 6 novembre le 4 aree di ritrovo all'aperto e le 3 strutture sportive destinate a chi non volesse/potesse dormire in casa. Si ricordano le ubicazioni delle aree e delle palestre: - piazzale cimitero solesta; - piazzale stadio con bagni chimici; - parcheggio Centro commerciale; - parcheggio Centro commerciale Citt\u00e0 delle stelle Le palestre a disposizione sono: Monticelli, campo Squarcia e Forlini. Si consiglia di portare con s\u00e9 lo stretto necessario. Malati disabili e non autosufficienti possono informarsi ai numeri 3293603850 3293603851. I possessori di roulotte e camper possono sostare presso parcheggio in via Castagneti. Alla Casa Albergo Ferrucci accoglienza per gli anziani nel pomeriggio. Telefono 07362442505."", ""link"": ""https://www.facebook.com/ascolipiceno/posts/1322034711164488"", ""titolo"": ""Comune di #Ascoli: aree di accoglienza fino al 6 novembre""}","<pre><yamldata>titolo: 'Comune di #Ascoli: aree di accoglienza fino al 6 novembre'
+descrizione: 'Informazione sull''emergenza. Le 4 aree di ritrovo e le 3 palestre operative fini a domenica 6 novembre. Visto il perdurare della crisi sismica il Sindaco ha deciso di mantenere operative (almeno) fino a domenica 6 novembre le 4 aree di ritrovo all''aperto e le 3 strutture sportive destinate a chi non volesse/potesse dormire in casa. Si ricordano le ubicazioni delle aree e delle palestre: - piazzale cimitero solesta; - piazzale stadio con bagni chimici; - parcheggio Centro commerciale; - parcheggio Centro commerciale Città delle stelle Le palestre a disposizione sono: Monticelli, campo Squarcia e Forlini. Si consiglia di portare con sé lo stretto necessario. Malati disabili e non autosufficienti possono informarsi ai numeri 3293603850 3293603851. I possessori di roulotte e camper possono sostare presso parcheggio in via Castagneti. Alla Casa Albergo Ferrucci accoglienza per gli anziani nel pomeriggio. Telefono 07362442505.'
+link: 'https://www.facebook.com/ascolipiceno/posts/1322034711164488'
+data: 01/11/2016
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1042,186660490,2016-11-01 22:06:58,2016-11-01 22:03:04,"LA ROCCA DI MANTIGNANA, Corciano (PG)",43.1600436,12.2864765,"[""Accettato"", ""Alloggi"", ""Facebook"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""01/11/2016"", ""descrizione"": ""LA ROCCA DI MANTIGNANA, Corciano (PG): disponibili 2 appartamenti per due nuclei familiari da 4 persone l'uno. Contattare Anna."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via Michelangelo Buonarroti, Corciano, PG, UMB, 06073, Italia"", ""lat"": ""43.1600436"", ""link"": ""https://www.facebook.com/permalink.php?story_fbid=1214366278637704&id=119031281504548"", ""lon"": ""12.2864765"", ""tel"": ""3478553422""}","<pre><yamldata>tel: '3478553422'
+email: ''
+descrizione: 'LA ROCCA DI MANTIGNANA, Corciano (PG): disponibili 2 appartamenti per due nuclei familiari da 4 persone l''uno. Contattare Anna.'
+indirizzo: 'Via Michelangelo Buonarroti, Corciano, PG, UMB, 06073, Italia'
+lat: '43.1600436'
+lon: '12.2864765'
+link: 'https://www.facebook.com/permalink.php?story_fbid=1214366278637704&id=119031281504548'
+immagine: ''
+data: 01/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1041,186659626,2016-11-01 21:59:55,2016-11-01 21:59:10,"Terremoviamoci.it, portale per promuovere aziende e prodotti delle zone colpite dal sisma del 24 agosto",,,"[""Accettato"", ""Bollettino"", ""Notizie Utili""]",,,"{""data"": ""01/11/2016"", ""descrizione"": ""Terremoviamoci.it \u00e8 un portale nato dopo il terremoto del 24 agosto. Segnala le aziende produttive e di servizi nella zona del terremoto, per agevolarne la ripresa economica post sisma. L\u2019 inserimento nel data base \u00e8 completamente gratuito, n\u00e8 gli amministratori percepiscono alcun compenso per questa attivit\u00e0. Il sito non contiene pubblicit\u00e0 di alcun tipo."", ""link"": ""http://www.terremoviamoci.it"", ""titolo"": ""Terremoviamoci.it, portale per promuovere aziende e prodotti delle zone colpite dal sisma del 24 agosto""}","<pre><yamldata>titolo: 'Terremoviamoci.it, portale per promuovere aziende e prodotti delle zone colpite dal sisma del 24 agosto'
 descrizione: 'Terremoviamoci.it è un portale nato dopo il terremoto del 24 agosto. Segnala le aziende produttive e di servizi nella zona del terremoto, per agevolarne la ripresa economica post sisma. L’ inserimento nel data base è completamente gratuito, nè gli amministratori percepiscono alcun compenso per questa attività. Il sito non contiene pubblicità di alcun tipo.'
 link: 'http://www.terremoviamoci.it'
@@ -3339,18 +3354,6 @@ immagine: ''
 data: 17/09/2016
 </yamldata></pre>
 ",closed
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/569,177565128,2016-10-07 15:05:33,2016-09-17 09:01:25,"Faete, AP - Materiale per costruzione tettoia e un sistema di riscaldamento",42.7696827,13.3043513,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form""]",Milestone(number=1),,"{""cosa"": ""comunit\u00e0 autogestita ha bisogno di materiale per costruire una tettoia e un sistema di riscaldamento"", ""data"": ""17/09/2016"", ""descrizione"": ""A Faete di Arquata del Tronto, c'\u00e8 una comunit\u00e0 autogestita che ha bisogno di materiale per costruire una tettoia e un sistema di riscaldamento. Per info su come aiutare contattateci. Grazie"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Strada Provinciale 20 Colle, Arquata del Tronto, AP, Marche, Italia"", ""lat"": ""42.7696827"", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1770419146559002/"", ""lon"": ""13.3043513"", ""tel"": ""3701377864""}","<pre><yamldata>tel: '3701377864'
-email: ''
-cosa: 'comunità autogestita ha bisogno di materiale per costruire una tettoia e un sistema di riscaldamento'
-descrizione: 'A Faete di Arquata del Tronto, c''è una comunità autogestita che ha bisogno di materiale per costruire una tettoia e un sistema di riscaldamento. Per info su come aiutare contattateci. Grazie'
-indirizzo: 'Strada Provinciale 20 Colle, Arquata del Tronto, AP, Marche, Italia'
-lat: '42.7696827'
-lon: '13.3043513'
-link: 'https://www.facebook.com/groups/1758670357733881/permalink/1770419146559002/'
-immagine: ''
-data: 17/09/2016
-</yamldata></pre>
-",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/567,177564923,2016-10-01 18:34:42,2016-09-17 08:55:12,"FERMO: 14 settembre pressing per la rimozione delle tende, ora si cerca un tetto per tutti gli sfollati",,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""17/09/2016"", ""descrizione"": ""Cronoprogramma per i servizi all'ospedale di Amandola. Summit dei Sindaci in Prefettura."", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1770418396559077/"", ""titolo"": ""FERMO: 14 settembre pressing per la rimozione delle tende, ora si cerca un tetto per tutti gli sfollati""}","<pre><yamldata>titolo: 'FERMO: 14 settembre pressing per la rimozione delle tende, ora si cerca un tetto per tutti gli sfollati'
 descrizione: 'Cronoprogramma per i servizi all''ospedale di Amandola. Summit dei Sindaci in Prefettura.'
 link: 'https://www.facebook.com/groups/1758670357733881/permalink/1770418396559077/'
@@ -4735,17 +4738,6 @@ link: ''
 data: 15/09/2016
 </yamldata></pre>
 ",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/396,177150909,2016-09-22 16:03:46,2016-09-15 11:21:02,"Amatrice, RI - Segnalazione disponibilità seconde case Amatrice",,,"[""Accettato"", ""Alloggi"", ""Contatti"", ""Donazioni"", ""Form""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""Numero del Comune di Amatrice al quale possono chiamare i proprietari di seconde case che intendano metterle a disposizione di chi \u00e8 rimasto senza. Dal luned\u00ec al venerd\u00ec dalle 9 alle 12 e dalle 15 alle 17."", ""email"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""nome"": ""Segnalazione disponibilit\u00e0 seconde case Amatrice"", ""tel"": ""3384996173""}","<pre><yamldata>nome: 'Segnalazione disponibilità seconde case Amatrice'
-tel: '3384996173'
-email: ''
-descrizione: 'Numero del Comune di Amatrice al quale possono chiamare i proprietari di seconde case che intendano metterle a disposizione di chi è rimasto senza. Dal lunedì al venerdì dalle 9 alle 12 e dalle 15 alle 17.'
-indirizzo: ''
-lat: ''
-lon: ''
-link: ''
-data: 15/09/2016
-</yamldata></pre>
-",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/395,177150710,2016-09-15 11:20:23,2016-09-15 11:19:49,Brigate di Solidarietà Attiva,,,"[""Accettato"", ""Contatti"", ""Form""]",,,"{""data"": ""15/09/2016"", ""descrizione"": """", ""email"": ""volontaribsa@gmail.com"", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""nome"": ""Brigate di Solidariet\u00e0 Attiva"", ""tel"": ""3299837400, 3394037385, 3397616665""}","<pre><yamldata>nome: 'Brigate di Solidarietà Attiva'
 tel: '3299837400, 3394037385, 3397616665'
 email: volontaribsa@gmail.com
@@ -5963,6 +5955,18 @@ bic: ''
 postale: ''
 causale: ''
 link: 'https://www.facebook.com/photo.php?fbid=10207026011384485&set=gm.1765227793744804&type=3&theater'
+email: ''
+data: 14/09/2016
+</yamldata></pre>
+",closed
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/277,176858561,2016-09-28 12:10:10,2016-09-14 09:28:45,Teatro Eliseo di Roma,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Teatro Eliseo di Roma"", ""data"": ""14/09/2016"", ""descrizione"": ""Il 26 e 27 settembre il Teatro Eliseo di Roma metter\u00e0 in scena le preview straordinarie di Americani e American Buffalo a sostegno delle popolazioni del Centro Italia colpite dal sisma nella notte del 24 agosto. L'incasso delle due serate fuori cartellone sar\u00e0 interamente devoluto a progetti di carattere educativo-culturale rivolti alle giovani generazioni delle zone terremotate."", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""https://www.facebook.com/events/1795723097317338/"", ""postale"": """"}","<pre><yamldata>chi: 'Teatro Eliseo di Roma'
+descrizione: 'Il 26 e 27 settembre il Teatro Eliseo di Roma metterà in scena le preview straordinarie di Americani e American Buffalo a sostegno delle popolazioni del Centro Italia colpite dal sisma nella notte del 24 agosto. L''incasso delle due serate fuori cartellone sarà interamente devoluto a progetti di carattere educativo-culturale rivolti alle giovani generazioni delle zone terremotate.'
+intestazione: ''
+iban: ''
+bic: ''
+postale: ''
+causale: ''
+link: 'https://www.facebook.com/events/1795723097317338/'
 email: ''
 data: 14/09/2016
 </yamldata></pre>
