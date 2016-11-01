@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1038,186645406,2016-11-01 21:00:25,2016-11-01 20:58:34,Disponibilità alloggio in albergo a Tornimparte (Abruzzo),,,"[""Accettato"", ""Alloggi"", ""Facebook"", ""Sisma Ottobre""]",,,"{""data"": ""01/11/2016"", ""descrizione"": ""Ciao a tutti vi scrivo dall Hotel Grazia,Ristorante la Capricciosa mettiamo a disposizione dai prossimi giorni la nostra struttura alberghiera per ospitare le persone che sono state costrette a lasciare le proprie abitazioni a causa del sisma del centro Italia. Condividete questo post in modo da poter raggiungere le persone interessate. Indirizzo : Via Delle Conserve 14,Tornimparte, Telefono : Tel 0862 72765"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.facebook.com/photo.php?fbid=1173217876102051&set=a.440602599363586.1073741825.100002415508365&type=3"", ""lon"": """", ""tel"": ""333 2057945""}","<pre><yamldata>tel: '333 2057945'
+email: ''
+descrizione: 'Ciao a tutti vi scrivo dall Hotel Grazia,Ristorante la Capricciosa mettiamo a disposizione dai prossimi giorni la nostra struttura alberghiera per ospitare le persone che sono state costrette a lasciare le proprie abitazioni a causa del sisma del centro Italia. Condividete questo post in modo da poter raggiungere le persone interessate. Indirizzo : Via Delle Conserve 14,Tornimparte, Telefono : Tel 0862 72765'
+indirizzo: ''
+lat: ''
+lon: ''
+link: 'https://www.facebook.com/photo.php?fbid=1173217876102051&set=a.440602599363586.1073741825.100002415508365&type=3'
+immagine: ''
+data: 01/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1037,186612351,2016-11-01 20:59:21,2016-11-01 18:38:27,"Hotel Grazia, in provincia dell'Aquila, offre ospitalità a sfollati",42.2905404,13.2666188,"[""Accettato"", ""Alloggi"", ""Facebook"", ""Sisma Ottobre""]",,,"{""data"": ""01/11/2016"", ""descrizione"": ""Hotel Grazia - Ristorante la Capricciosa: mettiamo a disposizione dai prossimi giorni la nostra struttura alberghiera per ospitare le persone che sono state costrette a lasciare le proprie abitazioni a causa del sisma del centro Italia. Indirizzo: Via Delle Conserve 14, Tornimparte (AQ)"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Tornimparte, AQ, Abruzzo, Italia"", ""lat"": ""42.2905404"", ""link"": """", ""lon"": ""13.2666188"", ""tel"": ""333 205 7945; 0862 72765""}","<pre><yamldata>tel: '333 205 7945; 0862 72765'
 email: ''
 descrizione: 'Hotel Grazia - Ristorante la Capricciosa: mettiamo a disposizione dai prossimi giorni la nostra struttura alberghiera per ospitare le persone che sono state costrette a lasciare le proprie abitazioni a causa del sisma del centro Italia. Indirizzo: Via Delle Conserve 14, Tornimparte (AQ)'
@@ -62,7 +72,7 @@ link: ''
 immagine: ''
 data: 01/11/2016
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1030,186566676,2016-11-01 20:59:55,2016-11-01 15:40:58,I Love #Norcia: nasce il consorzio salva #Valnerina,,,"[""Accettato"", ""acquisto solidale"", ""Cibo"", ""Form"", ""Notizie Utili"", ""Sisma Ottobre"", ""Twitter""]",,,"{""data"": ""01/11/2016"", ""descrizione"": ""Imprenditori, commercianti, agricoltori, gi\u00e0 riunitisi in un consorzio, stanno pensando a come poter realizzare un prodotto alimentare innovativo tipico della Valnerina, da proporre sul mercato mondiale mondiale con il brand \""I Love Norcia\"". La gastronomia \u00e8 infatti uno dei cuori pulsanti di queste zone, attrazione e meta di migliaia di turisti da ogni parte del mondo. Ma, soprattutto \u00e8 tanta la voglia di restare qui. Tra le idee per rilanciare Norcia, anche quella di poter realizzare una scuola di alta formazione dedicata al turismo."", ""link"": ""http://www.perugiatoday.it/cronaca/terremoto-i-love-norcia-brand-prodotti-tipici-creazione-consorzio.html"", ""titolo"": ""I Love Norcia: nasce il consorzio salva-Valnerina""}","<pre><yamldata>titolo: 'I Love Norcia: nasce il consorzio salva-Valnerina'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1030,186566676,2016-11-01 21:00:19,2016-11-01 15:40:58,I Love #Norcia: nasce il consorzio salva #Valnerina,,,"[""Accettato"", ""acquisto solidale"", ""Cibo"", ""Form"", ""Notizie Utili"", ""Sisma Ottobre"", ""Twitter""]",,,"{""data"": ""01/11/2016"", ""descrizione"": ""Imprenditori, commercianti, agricoltori, gi\u00e0 riunitisi in un consorzio, stanno pensando a come poter realizzare un prodotto alimentare innovativo tipico della Valnerina, da proporre sul mercato mondiale mondiale con il brand \""I Love Norcia\"". La gastronomia \u00e8 infatti uno dei cuori pulsanti di queste zone, attrazione e meta di migliaia di turisti da ogni parte del mondo. Ma, soprattutto \u00e8 tanta la voglia di restare qui. Tra le idee per rilanciare Norcia, anche quella di poter realizzare una scuola di alta formazione dedicata al turismo."", ""link"": ""http://www.perugiatoday.it/cronaca/terremoto-i-love-norcia-brand-prodotti-tipici-creazione-consorzio.html"", ""titolo"": ""I Love Norcia: nasce il consorzio salva-Valnerina""}","<pre><yamldata>titolo: 'I Love Norcia: nasce il consorzio salva-Valnerina'
 descrizione: 'Imprenditori, commercianti, agricoltori, già riunitisi in un consorzio, stanno pensando a come poter realizzare un prodotto alimentare innovativo tipico della Valnerina, da proporre sul mercato mondiale mondiale con il brand ""I Love Norcia"". La gastronomia è infatti uno dei cuori pulsanti di queste zone, attrazione e meta di migliaia di turisti da ogni parte del mondo. Ma, soprattutto è tanta la voglia di restare qui. Tra le idee per rilanciare Norcia, anche quella di poter realizzare una scuola di alta formazione dedicata al turismo.'
 link: 'http://www.perugiatoday.it/cronaca/terremoto-i-love-norcia-brand-prodotti-tipici-creazione-consorzio.html'
 data: 01/11/2016
@@ -5309,18 +5319,6 @@ immagine: ''
 data: 14/09/2016
 </yamldata></pre>
 ",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/333,176996087,2016-09-14 19:20:32,2016-09-14 19:20:06,Supermecato Tigre - Pescara,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Supermecato Tigre - Pescara"", ""data"": ""14/09/2016"", ""descrizione"": ""Supermercato Tigre gestito dalla Simone SRL (via San Donato 29, Pescara) dalle 08:30 alle 12:30 e dalle 15:30 alle 19:30 del 26/08/2016 In quest'occasione raccoglieremo solo ed esclusivamente: -olio; -zucchero; -pelati; -legumi; -caff\u00e8; -tonno"", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""https://www.facebook.com/events/1239431849414852/"", ""postale"": """"}","<pre><yamldata>chi: 'Supermecato Tigre - Pescara'
-descrizione: 'Supermercato Tigre gestito dalla Simone SRL (via San Donato 29, Pescara) dalle 08:30 alle 12:30 e dalle 15:30 alle 19:30 del 26/08/2016 In quest''occasione raccoglieremo solo ed esclusivamente: -olio; -zucchero; -pelati; -legumi; -caffè; -tonno'
-intestazione: ''
-iban: ''
-bic: ''
-postale: ''
-causale: ''
-link: 'https://www.facebook.com/events/1239431849414852/'
-email: ''
-data: 14/09/2016
-</yamldata></pre>
-",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/333,176996087,2016-09-14 19:20:32,2016-09-14 19:20:06,Supermecato Tigre - Pescara,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Supermecato Tigre - Pescara"", ""data"": ""14/09/2016"", ""descrizione"": ""Supermercato Tigre gestito dalla Simone SRL (via San Donato 29, Pescara) dalle 08:30 alle 12:30 e dalle 15:30 alle 19:30 del 26/08/2016 In quest'occasione raccoglieremo solo ed esclusivamente: -olio; -zucchero; -pelati; -legumi; -caff\u00e8; -tonno"", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""https://www.facebook.com/events/1239431849414852/"", ""postale"": """"}","<pre><yamldata>chi: 'Supermecato Tigre - Pescara'
 descrizione: 'Supermercato Tigre gestito dalla Simone SRL (via San Donato 29, Pescara) dalle 08:30 alle 12:30 e dalle 15:30 alle 19:30 del 26/08/2016 In quest''occasione raccoglieremo solo ed esclusivamente: -olio; -zucchero; -pelati; -legumi; -caffè; -tonno'
 intestazione: ''
