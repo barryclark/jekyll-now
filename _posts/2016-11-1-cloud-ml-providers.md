@@ -61,7 +61,7 @@ You can choose among several different types of workers. I tried the standard (c
 
 ## Rescale
 Very easy to start, has nice no-nonsense dashboard. GPU workers are pretty fast (on par or better than EC2 `g2.2xlarge`).
-TensorFlow is pre-installed. Cluster startup time is considerble (4--8 minutes). 
+TensorFlow is pre-installed. Cluster startup time is considerable (4--8 minutes). 
 
 The long start-up time led to an issue when I used Rescale. A typo in the startup script produced (understandably)
 a failure. But I had to wait that 4-8 minutes for the cluster to start to realise the error. 
