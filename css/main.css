@@ -732,6 +732,12 @@ div.panel-info > div.panel-heading > span.anchor {
   line-height: inherit;
 }
 
+.search {
+	width: 50%;
+	margin: 0 auto;
+	padding: 100px 0;
+}
+
 /* Pagina canali di comunicazione */
 div.segnala  {
 	margin-left: 5%;
