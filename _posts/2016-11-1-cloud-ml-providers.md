@@ -15,12 +15,13 @@ Here are some options to consider:
 
 * Buy a server
     - For example, from [System76](https://system76.com/desktops/silverback)
+    - Or from [Exxact](http://exxactcorp.com/deep-learning-overview.php)
 * Rent from
     - [Amazon EC2](https://aws.amazon.com/ec2/instance-types/)
     - [Google Cloud ML](https://cloud.google.com/products/machine-learning/)
     - [Rescale](http://www.rescale.com/pricing/)
 
-Let us look in some more details on cloud ML providers. With the goal to use TensorFlow as the ML tool.
+Let us look in some more details on cloud ML providers. With the goal to use [TensorFlow](https://www.tensorflow.org/) as the ML tool.
 
 **Disclaimer:** *The opinions herein are based on my limited experience using each of the mentioned platforms. 
 I may be grossly off in my analysis. Take with the ton of salt! You've been warned!*
@@ -82,6 +83,10 @@ Again, as configured, I should have had about 8-10 hours of "free" play time.
 
 ## The Cost of Learning is Hidden Deep
 All cloud ML providers quote cost per worker and per hour. Workers are wildly different. Comparing pricing at its face value is misleading.
+
+In any case, running large experiements requires large budget.
+
+<p><a href="https://twitter.com/eturner303/status/781891060695916545"><img src="../images/deep-cost.png"></a></p>
 
 A mental experiment:
 Would you pay twice more per hour to make your model train four times faster? Sure you would! You will spend less 
