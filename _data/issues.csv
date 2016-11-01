@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1036,186610666,2016-11-01 20:52:28,2016-11-01 18:31:32,URGENTE Cercasi macchina con gancio per portare roulotte da #Piombino a #Cittareale,42.934824,10.52212,"[""Accettato"", ""Fabbisogni"", ""Form"", ""Pubblicare su FB"", ""Sisma Ottobre""]",,,"{""cosa"": ""Macchina con gancio per roulotte - #Piombino"", ""data"": ""01/11/2016"", ""descrizione"": ""Domani 2/10 serve per portare da Piombino a Cittareale una roulotte ad una famiglia di sei persone che ne ha urgente bisogno. Contattare su Facebook Dolce D'oro Doriana Tobaldo."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via della Capriola, Localit\u00e0 Falcone, Piombino, LI, Tuscany, Italia"", ""lat"": ""42.934824"", ""link"": ""https://www.facebook.com/dori.art1?fref=nf"", ""lon"": ""10.52212"", ""tel"": """"}","<pre><yamldata>tel: ''
+email: ''
+cosa: 'Macchina con gancio per roulotte - #Piombino'
+descrizione: 'Domani 2/10 serve per portare da Piombino a Cittareale una roulotte ad una famiglia di sei persone che ne ha urgente bisogno. Contattare su Facebook Dolce D''oro Doriana Tobaldo.'
+indirizzo: 'Via della Capriola, Località Falcone, Piombino, LI, Tuscany, Italia'
+lat: '42.934824'
+lon: '10.52212'
+link: 'https://www.facebook.com/dori.art1?fref=nf'
+immagine: ''
+data: 01/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1035,186610633,2016-11-01 20:44:15,2016-11-01 18:31:26,Offro appartamento 100 mq in un casale tra Perugia e Trasimeno,,,"[""Accettato"", ""Alloggi"", ""Bollettino"", ""Form"", ""Sisma Ottobre""]",,http://i.imgur.com/rZYxBuf.jpg,"{""data"": ""01/11/2016"", ""descrizione"": ""Vorrei ospitare chi ha bisogno nell'appartamento a piano terra del mio casale a met\u00e0 strada tra Perugia e il Trasimeno. Nei 100 mq. ci sono due camere doppie e due bagni, un grande salone con un divano letto matrimoniale, una cucina e una grande area esterna attrezzata. Tutto arredato ed accessoriato poich\u00e9 attualmente viene affittato ai turisti per brevi periodi. Qui non abbiamo mai avvertito scosse"", ""email"": ""tenaglia.paola@gmail.com"", ""immagine"": ""http://i.imgur.com/rZYxBuf.jpg"", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""347 5422101""}","<pre><yamldata>tel: '347 5422101'
 email: tenaglia.paola@gmail.com
 descrizione: 'Vorrei ospitare chi ha bisogno nell''appartamento a piano terra del mio casale a metà strada tra Perugia e il Trasimeno. Nei 100 mq. ci sono due camere doppie e due bagni, un grande salone con un divano letto matrimoniale, una cucina e una grande area esterna attrezzata. Tutto arredato ed accessoriato poiché attualmente viene affittato ai turisti per brevi periodi. Qui non abbiamo mai avvertito scosse'
