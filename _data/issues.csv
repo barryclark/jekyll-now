@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1023,186516042,2016-11-01 12:01:11,2016-11-01 11:50:33,Cercasi capannone zona #Macerata per macchinari birrificio distrutto da sisma,43.1472936,13.2086672,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""Birra MC - 77 #Macerata"", ""data"": ""01/11/2016"", ""descrizione"": ""Loc. Caccamo di Serrapetrona - Macerata: a causa del terremoto e i danni riportati alla nostra struttura stiamo smontando il birrificio, alcune macchinari sono gi\u00e0 stati piazzati ma abbiamo bisogno di altro spazio, se qualcuno sa di un capannone libero e intatto in zone sicure ci darebbe un grande aiuto. In questo momento la priorit\u00e0 \u00e8 portare al sicuro ci\u00f2 che \u00e8 dentro il capannone."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via Nazionale, Serrapetrona, MC, Marche, Italia"", ""lat"": ""43.1472936"", ""link"": ""https://www.facebook.com/BirraMC77/?fref=nf"", ""lon"": ""13.2086672"", ""tel"": ""3282662782""}","<pre><yamldata>tel: '3282662782'
+email: ''
+cosa: 'Birra MC - 77 #Macerata'
+descrizione: 'Loc. Caccamo di Serrapetrona - Macerata: a causa del terremoto e i danni riportati alla nostra struttura stiamo smontando il birrificio, alcune macchinari sono già stati piazzati ma abbiamo bisogno di altro spazio, se qualcuno sa di un capannone libero e intatto in zone sicure ci darebbe un grande aiuto. In questo momento la priorità è portare al sicuro ciò che è dentro il capannone.'
+indirizzo: 'Via Nazionale, Serrapetrona, MC, Marche, Italia'
+lat: '43.1472936'
+lon: '13.2086672'
+link: 'https://www.facebook.com/BirraMC77/?fref=nf'
+immagine: ''
+data: 01/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1022,186514964,2016-11-01 11:47:24,2016-11-01 11:43:37,Raccolta beni e indumenti - Centro di raccolta Palestra Diaz a #PortoRecanati,43.4350815,13.6630083,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Pubblicare su FB"", ""Sisma Ottobre"", ""Twitter""]",,,"{""cosa"": ""Raccolta beni e indumenti - Centro di raccolta Palestra Diaz a #PortoRecanati"", ""data"": ""01/11/2016"", ""descrizione"": ""Da ieri, 31 ottobre, \u00e8 attivo a Porto Recanati il centro di raccolta alla Palestra della Scuola ex Diaz per raccogliere beni di prima necessit\u00e0 e indumenti per gli sfollati ospitati in vari camping e strutture di Porto Recanati. In particolare si raccolgono coperte, biancheria intima uomo/donna, pigiami, ciabatte, jeans uomo/donna taglia 44-46-48-50. Non portare altri tipi di indumenti. Il centro \u00e8 l'unico abilitato a raccogliere questo tipo di materiale."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via Manin, Porto Recanati, MC, Marche, 62017, Italia"", ""lat"": ""43.4350815"", ""link"": ""http://www.ilcittadinodirecanati.it/porto-recanati/30794-porto-recanati-in-prima-linea-nell-accoglienza-agli-sfollati-sono-gia-quasi-500-in-tre-camping"", ""lon"": ""13.6630083"", ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 cosa: 'Raccolta beni e indumenti - Centro di raccolta Palestra Diaz a #PortoRecanati'
@@ -1246,12 +1257,6 @@ lat: ''
 lon: ''
 link: 'http://rinascitacuoregiovane.it/come-richiedere-il-contributo/'
 immagine: ''
-data: 24/10/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/836,184898864,2016-10-24 17:05:13,2016-10-24 17:04:23,"A due mesi dal terremoto, il Dipartimento Nazionale di Protezione Civile fa il punto",,,"[""Accettato"", ""Bollettino"", ""Notizie Utili"", ""Pubblicare su FB""]",,,"{""data"": ""24/10/2016"", ""descrizione"": ""A due mesi dal terremoto del 24 agosto che ha colpito il Centro Italia, con la chiusura quasi completa dei campi di accoglienza, la gestione dell\u2019emergenza nelle Regioni Lazio, Marche, Abruzzo e Umbria si sta concentrando sulle attivit\u00e0 finalizzate a garantire soluzioni abitative di medio termine. Il Dipartimento Nazionale di Protezione Civile fa il punto sulla popolazione sfollata, sullo stato di case, scuole, imprese e beni culturali, sui moduli abitativi e sulle donazioni che ad oggi, via sms, hanno permesso di raccogliere oltre 15 milioni di euro."", ""link"": ""http://www.protezionecivile.gov.it/jcms/it/view_new.wp?contentId=NEW60567"", ""titolo"": ""A due mesi dal terremoto, il Dipartimento Nazionale di Protezione Civile fa il punto""}","<pre><yamldata>titolo: 'A due mesi dal terremoto, il Dipartimento Nazionale di Protezione Civile fa il punto'
-descrizione: 'A due mesi dal terremoto del 24 agosto che ha colpito il Centro Italia, con la chiusura quasi completa dei campi di accoglienza, la gestione dell’emergenza nelle Regioni Lazio, Marche, Abruzzo e Umbria si sta concentrando sulle attività finalizzate a garantire soluzioni abitative di medio termine. Il Dipartimento Nazionale di Protezione Civile fa il punto sulla popolazione sfollata, sullo stato di case, scuole, imprese e beni culturali, sui moduli abitativi e sulle donazioni che ad oggi, via sms, hanno permesso di raccogliere oltre 15 milioni di euro.'
-link: 'http://www.protezionecivile.gov.it/jcms/it/view_new.wp?contentId=NEW60567'
 data: 24/10/2016
 </yamldata></pre>
 ",open
