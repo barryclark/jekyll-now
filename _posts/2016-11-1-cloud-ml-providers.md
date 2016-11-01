@@ -23,7 +23,7 @@ Here are some options to consider:
 Let us look in some more details on cloud ML providers. With the goal to use TensorFlow as the ML tool.
 
 **Disclaimer:** *The opinions herein are based on my limited experience using each of the mentioned platforms. 
-I may be grossly off in my analysis. Take with a grain of salt! You've been warned!*
+I may be grossly off in my analysis. Take with the ton of salt! You've been warned!*
 
 ## Amazon EC2
 Here we have a choice from older systems for just $0.65/hour, and up to the bleeding-edge monster of 16GPUs+64CPUs at $14.40/hour.
@@ -41,7 +41,7 @@ EC2 is an established platform, with a lot of tools built on top of it.
 * Not a managed platform: if cluster of instancies is needed, have to use fairly low-level AWS api to configure, provision, and manage the cluster.
 
 ## Google Cloud ML
-Just out of **beta**, Google Cloud ML platform is a very promising offering. It is right from the company behind the TensorFlow --- we can expect all the latest bells and whistles.
+Just out of *beta*, Google Cloud ML platform is a very promising offering. It is right from the company behind the TensorFlow --- we can expect all the latest bells and whistles.
 
 Even though Cloud ML is a recent product, Google Cloud itself is a very mature platform, with App Engine, multiple storage options, management and logging tools.
 
