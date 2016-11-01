@@ -5,7 +5,7 @@ author: Mike Kroutikov
 ---
 
 Deep Learning is cool. But expensive.
-Lets see what options do we have for training deep models in the cloud. 
+Lets see what options we have for training deep models in the cloud. 
 
 Naturally, one would need a pretty big machine to do really interesting stuff.
 
