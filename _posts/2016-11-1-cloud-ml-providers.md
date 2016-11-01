@@ -7,7 +7,7 @@ author: Mike Kroutikov
 Deep Learning is coool. But expensive.
 Lets see what options do we have for training deep models. 
 
-Naturally, one would need a pretty big machine to do real interesting stuff.
+Naturally, one would need a pretty big machine to do really interesting stuff.
 
 <p><a href="https://commons.wikimedia.org/wiki/File:Inside_Z9_2094.jpg#/media/File:Inside_Z9_2094.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Inside_Z9_2094.jpg" alt="Inside Z9 2094.jpg" height="480" width="384"></a></p>
 
