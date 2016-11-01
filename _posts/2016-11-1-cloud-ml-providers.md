@@ -33,8 +33,8 @@ EC2 is an established platform, with a lot of tools built on top of it.
 
 ### Pros
 
-* Full-cloud Linux platform, no limitations
-* Very familiar
+* Full Linux platform in the cloud, no limitations
+* Very familiar AWS toolset
 
 ### Cons
 
@@ -42,11 +42,11 @@ EC2 is an established platform, with a lot of tools built on top of it.
 * Not a managed platform: if cluster of instancies is needed, have to use fairly low-level AWS APIs to configure, provision, and manage the cluster
 
 ## Google Cloud ML
-Just out of *beta*, the Google Cloud ML platform looks very promising. It was developed by the same minds at Google who were responsible for TensorFlow --- so we can expect all the latest bells and whistles.
+Just out of *beta*, the Google Cloud ML platform looks very promising. It was developed by the same company that created TensorFlow --- so we can expect all the latest bells and whistles.
 
 Even though Cloud ML is a recent product, Google Cloud itself is a very mature platform, with App Engine, multiple storage options, and management and logging tools.
 
-You can choose among several different types of workers. I tried the standard (cheapest) one, and was somewhat disappointed by the performance --- time per batch was **7 times(!) slower** than the cheapest EC2 machine (`g2.2xlarge`). I seems as though  you need to write training code for distributed architecture from the start to get anywhere.
+You can choose among several different types of workers. I tried the standard (cheapest) one, and was somewhat disappointed by the performance --- time per batch was **3 times(!) slower** than the cheapest EC2 machine (`g2.2xlarge`). I seems as though  you need to write training code for distributed architecture from the start to get anywhere.
 
 ### Pros
 
@@ -89,7 +89,7 @@ In any case, running large experiements requires large budget.
 
 A mental experiment:
 Would you pay twice as much per hour to make your model train four times faster? Sure you would! You will spend less 
-money to train your model on a more expensive (per hour) machine.
+money to train your model on a more expensive (per hour) machine, and you will get the results faster!
 
 What we really want is the cost per model per epoch of training. And it still may vary significantly depending on your model. Such an analysis has yet to be completed.
 
