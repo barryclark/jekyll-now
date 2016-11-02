@@ -68,6 +68,7 @@ author:
   telegram: https://telegram.me/terremotocentroitalia
   medium: https://medium.com/@terremotocentroitalia
   archiveorg: https://archive.org/details/@terremotocentroita
+  messenger: messenger
 
 # Select which links to show in the footer
 footer-links-active:
@@ -85,6 +86,7 @@ footer-links-active:
   telegram: true
   medium: true
   archiveorg: true
+  messenger: true
 
 # Select which share links to show in posts
 share-links-active:

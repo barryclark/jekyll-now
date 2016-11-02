@@ -56,6 +56,16 @@ permalink: /canali/
             </a><span>per vedere le foto su Instagram</span>
           </li>
           {% endif %}
+           {% if site.author.messenger and site.footer-links-active.messenger %}
+          <li>
+            <a href="https://m.me/terremotocentroita" title="Messenger">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-bullhorn fa-stack-1x fa-inverse"></i>
+              </span>&nbsp;&nbsp;Canale Facebook Messenger
+            </a><span>per restare aggiornato direttamente da Messenger.</span>
+          </li>
+          {% endif %}
           {% if site.author.telegram and site.footer-links-active.telegram %}
           <li>
             <a href="{{ site.author.telegram }}" title="telegram">
