@@ -1,2 +1,2 @@
-# The Digital Technologist – A Digital Native of the Low Carbon Global Knowledge Economy
+# The Digital Technologist
 This blog was created using the **Jekyll Now** template.
