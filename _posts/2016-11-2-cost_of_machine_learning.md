@@ -5,6 +5,7 @@ author: Mike Kroutikov
 style: |
   table {border-collapse: collapse;}
   td, th {border: 1pt solid gray; padding-left: 1em; padding-right: 1em;}
+  th {background-color: lightblue;}
 ---
 
 How much Deep Learning costs, anyway? Let me compare some cloud hardware and get down to dollars and cents.
