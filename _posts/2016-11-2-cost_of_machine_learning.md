@@ -4,7 +4,7 @@ title: Cost of Machine Learning
 author: Mike Kroutikov
 style: |
   table {border-collapse: collapse;}
-  td {border: 1pt solid gray;}
+  td, th {border: 1pt solid gray; padding-left: 1em; padding-right: 1em;}
 ---
 
 How much Deep Learning costs, anyway? Let me compare some cloud hardware and get down to dollars and cents.
