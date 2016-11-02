@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1077,186948180,2016-11-02 23:41:00,2016-11-02 23:36:13,Servono volontari al camping Medusa di #PortoRecanati,43.4540987,13.652593,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""Servono volontari al camping Medusa di #PortoRecanati"", ""data"": ""02/11/2016"", ""descrizione"": ""Serve aiuto per coprire dei turni di assistenza presso il camping Medusa di Porto Recanati dove sono ospitati i terremotati."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Viale Ludovico Scarfiotti, Porto Recanati, MC, Marche, 62017, Italia"", ""lat"": ""43.4540987"", ""link"": ""https://twitter.com/wineblogroll/status/793894894737711104"", ""lon"": ""13.652593"", ""tel"": ""071 7500725""}","<pre><yamldata>tel: '071 7500725'
+email: ''
+cosa: 'Servono volontari al camping Medusa di #PortoRecanati'
+descrizione: 'Serve aiuto per coprire dei turni di assistenza presso il camping Medusa di Porto Recanati dove sono ospitati i terremotati.'
+indirizzo: 'Viale Ludovico Scarfiotti, Porto Recanati, MC, Marche, 62017, Italia'
+lat: '43.4540987'
+lon: '13.652593'
+link: 'https://twitter.com/wineblogroll/status/793894894737711104'
+immagine: ''
+data: 02/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1067,186923755,2016-11-02 21:23:12,2016-11-02 21:22:17,ACQUISTI SOLIDALI DI PRODOTTI DALLE TERRE COLPITE DAL TERREMOTO: apre il sito Terremoviamoci,,,"[""Accettato"", ""acquisto solidale"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""02/11/2016"", ""descrizione"": ""Un aiuto concreto, un'idea solidale con la quale sostenere e salvaguardare un patrimonio cruciale del nostro territorio. Il contributo del sito va a tutte quelle attivit\u00e0 umane che devono tornare ad essere per la coraggiosa continuit\u00e0 della propria storia. Nato come Facebook Group \u00e8 ora un sito nel quale cercheremo di dare voce, grazie alle vostre segnalazioni, a tutte quelle attivit\u00e0 da sostenere ed aiutare a ripartire."", ""link"": ""http://www.terremoviamoci.it/"", ""titolo"": ""ACQUISTI SOLIDALI DI PRODOTTI DELLE TERRE COLPITE DAL TERREMOTO: apre il sito Terremoviamoci""}","<pre><yamldata>titolo: 'ACQUISTI SOLIDALI DI PRODOTTI DELLE TERRE COLPITE DAL TERREMOTO: apre il sito Terremoviamoci'
 descrizione: 'Un aiuto concreto, un''idea solidale con la quale sostenere e salvaguardare un patrimonio cruciale del nostro territorio. Il contributo del sito va a tutte quelle attività umane che devono tornare ad essere per la coraggiosa continuità della propria storia. Nato come Facebook Group è ora un sito nel quale cercheremo di dare voce, grazie alle vostre segnalazioni, a tutte quelle attività da sostenere ed aiutare a ripartire.'
 link: 'http://www.terremoviamoci.it/'
@@ -6217,6 +6228,18 @@ email: ''
 data: 14/09/2016
 </yamldata></pre>
 ",closed
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/268,176856590,2016-09-14 09:20:53,2016-09-14 09:19:58,Asd Arieti Rugby Rieti 2014,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Asd Arieti Rugby Rieti 2014"", ""data"": ""14/09/2016"", ""descrizione"": ""Il rugby reatino ha aperto un conto per la raccolta di fondi finalizzati alla ricostruzione dei campi sportivi amatriciani, il tutto in continuo contatto con i consiglieri comunali di amatrice Filippo Palombini e Patrizia Catenacci, delegati al progetto, e con il sostegno della Federazione Italiana Rugby, che ha coinvolto tutte le societ\u00e0 italiane. Il conto \u00e8 stato aperto presso la Banca di Credito Cooperativo del Velino, Filiale di Rieticon."", ""email"": """", ""iban"": ""IT07L0874314600000020302818"", ""intestazione"": """", ""link"": ""http://www.rietilife.com/2016/09/04/anche-il-rugby-adotta-unopera-limpegno-di-arieti-e-azzurri-a-ricostruire-impianti-sportivi/"", ""postale"": """"}","<pre><yamldata>chi: 'Asd Arieti Rugby Rieti 2014'
+descrizione: 'Il rugby reatino ha aperto un conto per la raccolta di fondi finalizzati alla ricostruzione dei campi sportivi amatriciani, il tutto in continuo contatto con i consiglieri comunali di amatrice Filippo Palombini e Patrizia Catenacci, delegati al progetto, e con il sostegno della Federazione Italiana Rugby, che ha coinvolto tutte le società italiane. Il conto è stato aperto presso la Banca di Credito Cooperativo del Velino, Filiale di Rieticon.'
+intestazione: ''
+iban: IT07L0874314600000020302818
+bic: ''
+postale: ''
+causale: ''
+link: 'http://www.rietilife.com/2016/09/04/anche-il-rugby-adotta-unopera-limpegno-di-arieti-e-azzurri-a-ricostruire-impianti-sportivi/'
+email: ''
+data: 14/09/2016
+</yamldata></pre>
+",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/268,176856590,2016-09-14 09:20:53,2016-09-14 09:19:58,Asd Arieti Rugby Rieti 2014,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Asd Arieti Rugby Rieti 2014"", ""data"": ""14/09/2016"", ""descrizione"": ""Il rugby reatino ha aperto un conto per la raccolta di fondi finalizzati alla ricostruzione dei campi sportivi amatriciani, il tutto in continuo contatto con i consiglieri comunali di amatrice Filippo Palombini e Patrizia Catenacci, delegati al progetto, e con il sostegno della Federazione Italiana Rugby, che ha coinvolto tutte le societ\u00e0 italiane. Il conto \u00e8 stato aperto presso la Banca di Credito Cooperativo del Velino, Filiale di Rieticon."", ""email"": """", ""iban"": ""IT07L0874314600000020302818"", ""intestazione"": """", ""link"": ""http://www.rietilife.com/2016/09/04/anche-il-rugby-adotta-unopera-limpegno-di-arieti-e-azzurri-a-ricostruire-impianti-sportivi/"", ""postale"": """"}","<pre><yamldata>chi: 'Asd Arieti Rugby Rieti 2014'
 descrizione: 'Il rugby reatino ha aperto un conto per la raccolta di fondi finalizzati alla ricostruzione dei campi sportivi amatriciani, il tutto in continuo contatto con i consiglieri comunali di amatrice Filippo Palombini e Patrizia Catenacci, delegati al progetto, e con il sostegno della Federazione Italiana Rugby, che ha coinvolto tutte le società italiane. Il conto è stato aperto presso la Banca di Credito Cooperativo del Velino, Filiale di Rieticon.'
 intestazione: ''
