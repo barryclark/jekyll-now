@@ -4,7 +4,7 @@ title: Privacy Policy
 permalink: /privacy/
 ---
 
-*Revised October 10, 2016.*
+*Revised November 2, 2016.*
 
 ## Google Analytics
 
@@ -34,4 +34,4 @@ The comment section underneath most of the posts is Facebook's comment plugin. T
 
 ### Share
 
-Each post currently has two share links: a Facebook Share links and a LinkedIn share link. Sharing a post requires an account with the associated service as well as adherence to their privacy policies.
+Each post currently has five share links: Facebook, Twitter, LinkedIn, Reddit, and StumbleUpon. Sharing a post requires an account with the associated service as well as adherence to their privacy policies.
