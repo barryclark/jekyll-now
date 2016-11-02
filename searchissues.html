@@ -10,10 +10,15 @@ layout: search
 <ul id="search-results"></ul>
 
 <script>
+
+function urldecode(str) {
+   return decodeURIComponent((str+'').replace(/\+/g, '%20'));
+}
+
 window.store = {};
     {% for member in site.data.issuesjson %}
 window.store["{{site.url}}/issues/{{member.number}}"]={
-        "title": decodeURI("{{ member.title | strip_html | uri_escape | replace: "'", "&apos;" | replace:  "\"", "&quot;" }}"),
+        "title": urldecode("{{ member.title | strip_html | url_encode }}"),
         {% if member.issue.labels contains "Notizie Utili" %}
         "category": "Notizie Utili",
         {% elsif member.issue.labels contains "Alloggi" %}
@@ -30,7 +35,7 @@ window.store["{{site.url}}/issues/{{member.number}}"]={
         "category": "",
         {% endif %}
         {% if member.issue.data.descrizione != blank %}
-        "content": decodeURI("{{ member.issue.data.descrizione | uri_escape|replace: "'", "&apos;" | replace: "\"", "&quot;" }}"),
+        "content": urldecode("{{ member.issue.data.descrizione | url_encode }}"),
         {% else %}
         "content": "",
         {% endif %}
