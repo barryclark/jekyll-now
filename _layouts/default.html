@@ -11,6 +11,11 @@
 
      <link rel="icon" href="images/favicon.ico" type="image/x-icon">
      <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+     {% if page.style %}
+       <style type="text/css">
+         {{ page.style }}
+       </style>
+     {% endif %}
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
