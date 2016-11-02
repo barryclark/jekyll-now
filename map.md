@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: map
 title: Map
 permalink: /map/
 published: true
