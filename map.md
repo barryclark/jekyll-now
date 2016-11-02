@@ -6,7 +6,7 @@ published: true
 ---
 
 <div class="tree" style="overflow: auto; overflow-y: hidden;">
- <ul>
+ <ul style="overflow: auto; overflow-y: hidden;">
   <li>
    <a href="#">The Digital Technologist</a>
     <ul>
