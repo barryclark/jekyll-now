@@ -6,29 +6,29 @@ published: true
 ---
 
 <div class="tree">
-	<ul>
-		<li>
-			<a href="#">The Digital Technologist</a>
-			<ul>
-				<li>
-					<a href="#">Computer Gaming Technology</a>
-					<ul>
-						<li>
-							<a href="#">Foundation Year</a>
-							<ul>
-								<li>
-									<a href="#">Semester 1</a>
-									<ul>
-								     <li><a href="#">Core Skills</a></li>
-									  <li><a href="#">Foundation Gaming Technology</a></li>
-									   <li><a href="#">Foundation Mathematics</a></li>
-							</ul>
-						</li>
-					</ul>
-		 	</li>
-		 </ul>
-		</li>
-	 </ul>
+ <ul>
+  <li>
+   <a href="#">The Digital Technologist</a>
+    <ul>
+     <li>
+      <a href="#">Computer Gaming Technology</a>
+       <ul>
+        <li>
+         <a href="#">Foundation Year</a>
+          <ul>
+	   <li>
+	    <a href="#">Semester 1</a>
+	     <ul>
+	      <li><a href="#">Core Skills</a></li>
+	      <li><a href="#">Foundation Gaming Technology</a></li>
+	      <li><a href="#">Foundation Mathematics</a></li>
+	     </ul>
+	   </li>
+          </ul>
+        </li>
+       </ul>
+    </li>
+   </ul>
   </li>
  </ul>
 </div>
