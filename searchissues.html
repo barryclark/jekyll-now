@@ -10,10 +10,10 @@ layout: search
 <ul id="search-results"></ul>
 
 <script>
-  window.store = {
+window.store = {};
     {% for member in site.data.issuesjson %}
-    "{{site.url}}/issues/{{member.number}}": {
-        "title": "{{ member.title | xml_escape }}",
+window.store["{{site.url}}/issues/{{member.number}}"]={
+        "title": decodeURI("{{ member.title | strip_html | uri_escape | replace: "'", "&apos;" | replace:  "\"", "&quot;" }}"),
         {% if member.issue.labels contains "Notizie Utili" %}
         "category": "Notizie Utili",
         {% elsif member.issue.labels contains "Alloggi" %}
@@ -30,15 +30,13 @@ layout: search
         "category": "",
         {% endif %}
         {% if member.issue.data.descrizione != blank %}
-        "content": "{{ member.issue.data.descrizione | cgi_escape }}",
+        "content": decodeURI("{{ member.issue.data.descrizione | uri_escape|replace: "'", "&apos;" | replace: "\"", "&quot;" }}"),
         {% else %}
         "content": "",
         {% endif %}
         "url": "{{site.url}}/issues/{{member.number}}"
-      }
-      {% unless forloop.last %},{% endunless %}
+};
     {% endfor %}
-  };
 </script>
 <script type="text/javascript" src="../js/lunr.min.js"></script>
 <script type="text/javascript" src="../js/search.js"></script>
