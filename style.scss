@@ -350,7 +350,7 @@ th, td {
 	-moz-transition: all 0.5s;
 }
 
-/*We will use ::before and ::after to draw the connectors*/
+/*Draws the connectors*/
 
 .tree li::before, .tree li::after{
 	content: '';
@@ -363,21 +363,21 @@ th, td {
 	border-left: 1px solid #ccc;
 }
 
-/*We need to remove left-right connectors from elements without 
+/*Removes left-right connectors from elements without 
 any siblings*/
 .tree li:only-child::after, .tree li:only-child::before {
 	display: none;
 }
 
-/*Remove space from the top of single children*/
+/*Removes space from the top of single children*/
 .tree li:only-child{ padding-top: 0;}
 
-/*Remove left connector from first child and 
+/*Removes left connector from first child and 
 right connector from last child*/
 .tree li:first-child::before, .tree li:last-child::after{
 	border: 0 none;
 }
-/*Adding back the vertical connector to the last nodes*/
+/*Adds back the vertical connector to the last nodes*/
 .tree li:last-child::before{
 	border-right: 1px solid #ccc;
 	border-radius: 0 5px 0 0;
@@ -390,7 +390,7 @@ right connector from last child*/
 	-moz-border-radius: 5px 0 0 0;
 }
 
-/*Time to add downward connectors from parents*/
+/*Downward connectors from parents*/
 .tree ul ul::before{
 	content: '';
 	position: absolute; top: 0; left: 50%;
