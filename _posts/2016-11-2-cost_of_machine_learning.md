@@ -36,8 +36,8 @@ I am not patient enough to re-run the complete training. Instead, I will time on
 Will try the following AWS EC2 machines (prices are quoted as of Nov 2016):
 
 * `c4.8xlarge` (32 CPUs, no GPUs) at $1.675 per hour
-* `g2.2xlarge` (4 CPUs, one K520 GPU) at $0.65/hour
-* `p2.xlarge`  (2 CPUs, one K80 GPU) at $0.90/hour
+* `g2.2xlarge` (8 CPUs, one K520 GPU) at $0.65/hour
+* `p2.xlarge`  (4 CPUs, one K80 GPU) at $0.90/hour
 
 Training time and cost for one epoch for `tf-lstm-char-cnn` model.
 
