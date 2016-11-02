@@ -1,6 +1,6 @@
 ---
-layout: map
-title: Map
+layout: page
+title: Site Map
 permalink: /map/
 published: true
 ---
