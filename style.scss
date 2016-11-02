@@ -333,7 +333,7 @@ th, td {
 
 .tree ul {
 	padding-top: 20px; position: relative;
-	padding-left: none;
+	padding-left: none !important;
 	transition: all 0.5s;
 	-webkit-transition: all 0.5s;
 	-moz-transition: all 0.5s;
