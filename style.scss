@@ -243,7 +243,7 @@ nav {
 
 .posts > .post {
   padding-bottom: 2em;
-  border-bottom: none;
+  border-bottom: 1px solid $lightGray;
 }
 
 .posts > .post:last-child {
