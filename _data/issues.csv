@@ -41,6 +41,17 @@ link: ''
 immagine: ''
 data: 02/11/2016
 </yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1068,186926288,2016-11-02 23:44:02,2016-11-02 21:33:57,COMUNE DI #CASCIA - Raccolta fondi,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Raccolte Fondi"", ""Sisma Ottobre""]",,,"{""bic"": """", ""causale"": ""SPECIFICARE CUSALE: DONAZIONI PRO-TERREMOTATI"", ""chi"": ""COMUNE DI #CASCIA"", ""data"": ""02/11/2016"", ""descrizione"": ""CHI VOLESSE CONTRIBUIRE PER IL SOSTEGNO DELLA POPOLAZIONE TERREMOTATA DI CASCIA PUO UTILIZZARE LE SEGUENTI COORDINATE BANCARIE:"", ""email"": """", ""iban"": ""IBAN  IT 39C 0570438330000000000714"", ""intestazione"": """", ""link"": ""http://www.comune.cascia.pg.it/?p=8170"", ""postale"": """"}","<pre><yamldata>chi: 'COMUNE DI #CASCIA'
+descrizione: 'CHI VOLESSE CONTRIBUIRE PER IL SOSTEGNO DELLA POPOLAZIONE TERREMOTATA DI CASCIA PUO UTILIZZARE LE SEGUENTI COORDINATE BANCARIE:'
+intestazione: ''
+iban: 'IBAN  IT 39C 0570438330000000000714'
+bic: ''
+postale: ''
+causale: 'SPECIFICARE CUSALE: DONAZIONI PRO-TERREMOTATI'
+link: 'http://www.comune.cascia.pg.it/?p=8170'
+email: ''
+data: 02/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1067,186923755,2016-11-02 21:23:12,2016-11-02 21:22:17,ACQUISTI SOLIDALI DI PRODOTTI DALLE TERRE COLPITE DAL TERREMOTO: apre il sito Terremoviamoci,,,"[""Accettato"", ""acquisto solidale"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""02/11/2016"", ""descrizione"": ""Un aiuto concreto, un'idea solidale con la quale sostenere e salvaguardare un patrimonio cruciale del nostro territorio. Il contributo del sito va a tutte quelle attivit\u00e0 umane che devono tornare ad essere per la coraggiosa continuit\u00e0 della propria storia. Nato come Facebook Group \u00e8 ora un sito nel quale cercheremo di dare voce, grazie alle vostre segnalazioni, a tutte quelle attivit\u00e0 da sostenere ed aiutare a ripartire."", ""link"": ""http://www.terremoviamoci.it/"", ""titolo"": ""ACQUISTI SOLIDALI DI PRODOTTI DELLE TERRE COLPITE DAL TERREMOTO: apre il sito Terremoviamoci""}","<pre><yamldata>titolo: 'ACQUISTI SOLIDALI DI PRODOTTI DELLE TERRE COLPITE DAL TERREMOTO: apre il sito Terremoviamoci'
 descrizione: 'Un aiuto concreto, un''idea solidale con la quale sostenere e salvaguardare un patrimonio cruciale del nostro territorio. Il contributo del sito va a tutte quelle attività umane che devono tornare ad essere per la coraggiosa continuità della propria storia. Nato come Facebook Group è ora un sito nel quale cercheremo di dare voce, grazie alle vostre segnalazioni, a tutte quelle attività da sostenere ed aiutare a ripartire.'
 link: 'http://www.terremoviamoci.it/'
@@ -1491,12 +1502,6 @@ lon: '12.2230585'
 link: ''
 immagine: ''
 data: 27/10/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/848,185527576,2016-10-27 06:33:18,2016-10-26 22:30:01,Giovedì 27/10 scuole chiuse a Sarnano (MC),,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""26/10/2016"", ""descrizione"": ""Si comunica che, per ragioni puramente precauzionali, gioved\u00ec 27 ottobre 2016 a Sarnano (MC), le scuole di ogni ordine e grado rimarranno chiuse, cos\u00ec da consentire le opportune verifiche sui plessi scolastici."", ""link"": """", ""titolo"": ""Gioved\u00ec 27/10 scuole chiuse a Sarnano (MC)""}","<pre><yamldata>titolo: 'Giovedì 27/10 scuole chiuse a Sarnano (MC)'
-descrizione: 'Si comunica che, per ragioni puramente precauzionali, giovedì 27 ottobre 2016 a Sarnano (MC), le scuole di ogni ordine e grado rimarranno chiuse, così da consentire le opportune verifiche sui plessi scolastici.'
-link: ''
-data: 26/10/2016
 </yamldata></pre>
 ",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/848,185527576,2016-10-27 06:33:18,2016-10-26 22:30:01,Giovedì 27/10 scuole chiuse a Sarnano (MC),,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""26/10/2016"", ""descrizione"": ""Si comunica che, per ragioni puramente precauzionali, gioved\u00ec 27 ottobre 2016 a Sarnano (MC), le scuole di ogni ordine e grado rimarranno chiuse, cos\u00ec da consentire le opportune verifiche sui plessi scolastici."", ""link"": """", ""titolo"": ""Gioved\u00ec 27/10 scuole chiuse a Sarnano (MC)""}","<pre><yamldata>titolo: 'Giovedì 27/10 scuole chiuse a Sarnano (MC)'
