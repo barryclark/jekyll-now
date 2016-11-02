@@ -5,10 +5,10 @@ permalink: /map/
 published: true
 ---
 
-<div class="tree" style="overflow: auto; overflow-y: hidden; padding-left: 125px;">
+<div class="tree">
  <ul style="width: 500px;">
   <li>
-   <a href="{{ site.baseurl }}">The Digital Technologist</a>
+   <a href="{{ site.baseurl }}/">The Digital Technologist</a>
     <ul>
      <li>
       <a href="#">Computer Gaming Technology</a>
