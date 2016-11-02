@@ -5,8 +5,8 @@ permalink: /map/
 published: true
 ---
 
-<div class="tree" style="overflow: auto; overflow-y: hidden;">
- <ul style="overflow: auto; overflow-y: hidden;">
+<div class="tree">
+ <ul style="overflow: auto; overflow-y: hidden; width: 500px;">
   <li>
    <a href="#">The Digital Technologist</a>
     <ul>
