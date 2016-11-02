@@ -334,6 +334,11 @@ th, td {
 .tree {
         overflow: auto; 
 	overflow-y: hidden; 
+	padding-left: 125px;
+	
+	@include mobile {
+        padding-left: 0px;
+  }
 }
 
 .tree ul {
