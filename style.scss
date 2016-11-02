@@ -326,10 +326,16 @@ th, td {
 }
 
 //
-// Mindmap / Tree
+// Site Map / Tree
 //
 
 * {margin: 0; padding: 0;}
+
+.tree {
+        overflow: auto; 
+	overflow-y: hidden; 
+	padding-left: 125px;
+}
 
 .tree ul {
 	padding-top: 20px; position: relative;
@@ -343,7 +349,7 @@ th, td {
 	float: left; text-align: center;
 	list-style-type: none;
 	position: relative;
-	padding: 20px 5px 0 5px;
+	padding: 18px 5px 0 5px;
 	
 	transition: all 0.5s;
 	-webkit-transition: all 0.5s;
