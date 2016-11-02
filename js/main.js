@@ -1,5 +1,5 @@
 // Dean Attali / Beautiful Jekyll 2016
-
+NProgress.start();
 var main = {
 
   bigImgEl : null,
@@ -157,3 +157,7 @@ var main = {
 // 2fc73a3a967e97599c9763d05e564189
 
 document.addEventListener('DOMContentLoaded', main.init);
+
+$( document ).ready(function() {
+    NProgress.done();
+});
