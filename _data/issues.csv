@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1066,186921814,2016-11-02 21:14:05,2016-11-02 21:13:40,"REGIONE LAZIO, ATTIVATO CAMPER A LEONESSA PER VALUTARE DANNI AZIENDE AGRICOLE",,,"[""Accettato"", ""Bollettino"", ""Notizie Utili"", ""Pubblicare su FB"", ""Sisma Ottobre""]",,,"{""data"": ""02/11/2016"", ""descrizione"": ""La Regione Lazio ha trasferito da Accumoli, dove sono terminati i rilievi, al Comune di Leonessa, il camper regionale che fornisce servizio di assistenza e di intervento a sostegno degli allevatori e agricoltori dei Comuni gravemente danneggiati dalle ultime scosse di terremoto del 30 ottobre."", ""link"": ""http://www.comunedileonessa.eu/sisma-30102016-danni-aziende-agricole/"", ""titolo"": ""REGIONE LAZIO, ATTIVATO CAMPER A LEONESSA PER VALUTARE DANNI AZIENDE AGRICOLE""}","<pre><yamldata>titolo: 'REGIONE LAZIO, ATTIVATO CAMPER A LEONESSA PER VALUTARE DANNI AZIENDE AGRICOLE'
+descrizione: 'La Regione Lazio ha trasferito da Accumoli, dove sono terminati i rilievi, al Comune di Leonessa, il camper regionale che fornisce servizio di assistenza e di intervento a sostegno degli allevatori e agricoltori dei Comuni gravemente danneggiati dalle ultime scosse di terremoto del 30 ottobre.'
+link: 'http://www.comunedileonessa.eu/sisma-30102016-danni-aziende-agricole/'
+data: 02/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1065,186909313,2016-11-02 20:48:50,2016-11-02 20:20:24,Camerino -  Chiusura delle scuole e dell’Asilo Nido fino al 20 novembre 2016,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",Milestone(number=30),,"{""data"": ""02/11/2016"", ""descrizione"": ""il Sindaco ha disposto la proroga della chiusura delle scuole (infanzia, primaria, secondaria di primo grado e secondaria di secondo grado) e dell\u2019Asilo Nido fino al 20 novembre 2016, per la verifica dell'agibilit\u00e0 degli edifici. L'ordinanza \u00e8 scaricabile nell'albo pretorio del Comune e nell'archivio documentazione di Terrremotocentroitalia."", ""link"": ""http://www.comune.camerino.mc.it/albo-pretorio/   e   https://ia601501.us.archive.org/2/items/DocumentoProrogaChiusuraScuole/Documento_-proroga_chiusura_scuole.pdf"", ""titolo"": ""Camerino -  Chiusura delle scuole e dell\u2019Asilo Nido fino al 20 novembre 2016""}","<pre><yamldata>titolo: 'Camerino -  Chiusura delle scuole e dell’Asilo Nido fino al 20 novembre 2016'
 descrizione: 'il Sindaco ha disposto la proroga della chiusura delle scuole (infanzia, primaria, secondaria di primo grado e secondaria di secondo grado) e dell’Asilo Nido fino al 20 novembre 2016, per la verifica dell''agibilità degli edifici. L''ordinanza è scaricabile nell''albo pretorio del Comune e nell''archivio documentazione di Terrremotocentroitalia.'
 link: 'http://www.comune.camerino.mc.it/albo-pretorio/   e   https://ia601501.us.archive.org/2/items/DocumentoProrogaChiusuraScuole/Documento_-proroga_chiusura_scuole.pdf'
@@ -7626,17 +7631,6 @@ lat: 45.4654219
 lon: 9.18592430000001
 link: http://www.dailymotion.com/
 immagine: https://terremoto.francescopinzauti.com/img/13-02-29terremoto.jpg
-data: 09/09/2016</yamldata></pre>
-",closed
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/114,176068847,2016-09-10 19:15:57,2016-09-09 17:52:18,Nuovo user,41.90278349999999,12.496365500000024,"[""Accettato"", ""Fabbisogni"", ""Form""]",,https://terremoto.francescopinzauti.com/img/12-52-18logo.png,"{""cosa"": ""Nuovo user"", ""data"": ""09/09/2016"", ""descrizione"": ""Ciao!"", ""email"": ""francescopinzauti@gmail.com"", ""immagine"": ""https://terremoto.francescopinzauti.com/img/12-52-18logo.png"", ""indirizzo"": ""Piazza della Repubblica, 10, 00185 Roma, Italia"", ""lat"": 41.90278349999999, ""link"": ""http://www.dailymotion.com/"", ""lon"": 12.496365500000024, ""tel"": 393272032790}","<pre><yamldata>tel: +393272032790
-email: francescopinzauti@gmail.com
-cosa: Nuovo user
-descrizione: Ciao!
-indirizzo: Piazza della Repubblica, 10, 00185 Roma, Italia
-lat: 41.90278349999999
-lon: 12.496365500000024
-link: http://www.dailymotion.com/
-immagine: https://terremoto.francescopinzauti.com/img/12-52-18logo.png
 data: 09/09/2016</yamldata></pre>
 ",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/114,176068847,2016-09-10 19:15:57,2016-09-09 17:52:18,Nuovo user,41.90278349999999,12.496365500000024,"[""Accettato"", ""Fabbisogni"", ""Form""]",,https://terremoto.francescopinzauti.com/img/12-52-18logo.png,"{""cosa"": ""Nuovo user"", ""data"": ""09/09/2016"", ""descrizione"": ""Ciao!"", ""email"": ""francescopinzauti@gmail.com"", ""immagine"": ""https://terremoto.francescopinzauti.com/img/12-52-18logo.png"", ""indirizzo"": ""Piazza della Repubblica, 10, 00185 Roma, Italia"", ""lat"": 41.90278349999999, ""link"": ""http://www.dailymotion.com/"", ""lon"": 12.496365500000024, ""tel"": 393272032790}","<pre><yamldata>tel: +393272032790
