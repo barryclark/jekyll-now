@@ -32,3 +32,4 @@ published: true
   </li>
  </ul>
 </div>
+<div style="clear:both;"></div>
