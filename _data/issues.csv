@@ -1,5 +1,5 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1056,186806908,2016-11-02 15:30:00,2016-11-02 13:55:00,ospitalità per una famiglia fino a fine gennaio a #casalpusterlengo (Lodi),,,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""02/11/2016"", ""descrizione"": ""ospito in famiglia una famiglia fino a fine gennaio a Casalpusterlengo"", ""email"": ""franco.algieri@libero.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""347 5758039""}","<pre><yamldata>tel: '347 5758039'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1056,186806908,2016-11-02 15:30:18,2016-11-02 13:55:00,ospitalità per una famiglia fino a fine gennaio a #casalpusterlengo (Lodi),,,"[""Accettato"", ""Alloggi"", ""Form""]",Milestone(number=29),,"{""data"": ""02/11/2016"", ""descrizione"": ""ospito in famiglia una famiglia fino a fine gennaio a Casalpusterlengo"", ""email"": ""franco.algieri@libero.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""347 5758039""}","<pre><yamldata>tel: '347 5758039'
 email: franco.algieri@libero.it
 descrizione: 'ospito in famiglia una famiglia fino a fine gennaio a Casalpusterlengo'
 indirizzo: ''
