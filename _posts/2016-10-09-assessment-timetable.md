@@ -32,7 +32,7 @@ excerpt_separator: <!--more-->
 <td>In-Class Tests</td>
 <td>60%</td>
 <td>On the spot</td>
-<td>18/10/16 by 1PM<br>15/11/16 by 1PM<br>06/12/16 by 1PM</td>
+<td>19/10/16 by 1PM<br>16/11/16 by 1PM<br>07/12/16 by 1PM</td>
 </tr>
 <tr style="border-bottom: 1px solid #ddd; border-right: 1px solid #ddd; background-color: #eee;">
 <td>Assignment</td>
