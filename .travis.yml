@@ -18,4 +18,4 @@ env:
 sudo: false
 
 after_success:
-            'cd _site; find -exec curl --ftp-create-dirs -T {} -u $FTP_USER:$FTP_PASSWORD ftp://teo-soft.com/terremotocentroitalia/{}'
+            'cd _site; find -exec curl --ftp-create-dirs -T {} -u $FTP_USER:$FTP_PASSWORD ftp://teo-soft.com/terremotocentroitalia/{} \; '
