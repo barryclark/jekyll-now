@@ -1,0 +1,44 @@
+---
+layout: search
+---
+<form action="{{ site.baseurl }}/search" method="get">
+  <label for="search-box">Cosa Stai Cercando?</label>
+  <input type="text" id="search-box" name="query">
+  <input type="submit" value="Cerca">
+</form>
+
+<ul id="search-results"></ul>
+
+<script>
+  window.store = {
+    {% for member in site.data.issuesjson %}
+    "{{site.url}}/issues/{{member.number}}": {
+        "title": "{{ member.title | xml_escape }}",
+        {% if member.issue.labels contains "Notizie Utili" %}
+        "category": "Notizie Utili",
+        {% elsif member.issue.labels contains "Alloggi" %}
+        "category": "Alloggi",
+        {% elsif member.issue.labels contains "Donazioni" %}
+        "category": "Donazioni",
+        {% elsif member.issue.labels contains "Fabbisogni" %}
+        "category": "Fabbisogni",
+        {% elsif member.issue.labels contains "Raccolte Fondi" %}
+        "category": "Raccolte Fondi",
+        {% elsif member.issue.labels contains "Bollettino" %}
+        "category": "Bollettino",
+        {% else %}
+        "category": "",
+        {% endif %}
+        {% if member.issue.data.descrizione != blank %}
+        "content": "{{ member.issue.data.descrizione | cgi_escape }}",
+        {% else %}
+        "content": "",
+        {% endif %}
+        "url": "{{site.url}}/issues/{{member.number}}"
+      }
+      {% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  };
+</script>
+<script type="text/javascript" src="../js/lunr.min.js"></script>
+<script type="text/javascript" src="../js/search.js"></script>
