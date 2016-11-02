@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1056,186806908,2016-11-02 15:29:06,2016-11-02 13:55:00,ospito in famiglia una famigli,,,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""02/11/2016"", ""descrizione"": ""ospito in famiglia una famiglia fino a fine gennaio a Casalpusterlengo"", ""email"": ""franco.algieri@libero.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""347 5758039""}","<pre><yamldata>tel: '347 5758039'
+email: franco.algieri@libero.it
+descrizione: 'ospito in famiglia una famiglia fino a fine gennaio a Casalpusterlengo'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 02/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1055,186733499,2016-11-02 08:03:07,2016-11-02 07:55:46,Comune di #Cantalice (#Rieti) - Ordinanza di sgombero,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""pubblicare in archive.org"", ""Sisma Ottobre""]",,,"{""data"": ""02/11/2016"", ""descrizione"": ""ORDINANZA N. 42 SGOMBERO DELLA POPOLAZIONE RESIDENTE NELL'AREA SOTTOSTANTE LA PARETE ROCCIOSA SITA IN PIAZZA DELLA REPUBBLICA"", ""link"": ""https://ia601505.us.archive.org/2/items/OrdinanzaDiSgomberoDellaPopolazione/ordinanza%20di%20sgombero%20della%20popolazione.pdf"", ""titolo"": ""Comune di Cantalice - Rieti""}","<pre><yamldata>titolo: 'Comune di Cantalice - Rieti'
 descrizione: 'ORDINANZA N. 42 SGOMBERO DELLA POPOLAZIONE RESIDENTE NELL''AREA SOTTOSTANTE LA PARETE ROCCIOSA SITA IN PIAZZA DELLA REPUBBLICA'
 link: 'https://ia601505.us.archive.org/2/items/OrdinanzaDiSgomberoDellaPopolazione/ordinanza%20di%20sgombero%20della%20popolazione.pdf'
@@ -3948,7 +3958,7 @@ immagine: ''
 data: 16/09/2016
 </yamldata></pre>
 ",closed
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/508,177450401,2016-09-23 22:48:20,2016-09-16 15:13:33,Sono necessari alimenti per animali da cortile e gabbie da degenza.,,,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Sono necessari alimenti per animali da cortile e gabbie da degenza."", ""data"": ""16/09/2016"", ""descrizione"": ""Con urgenza servono gabbie trappola di media dimensione; gabbie pieghevoli (quelle di degenza) per cani e gatti di media dimensione; cibo per cani e gatti al momento \u00e8 a sufficienza, quindi quello pi\u00f9 urgente al momento \u00e8 per gli animali \""da reddito\"" dispersi sul territorio. Per maggiori info sulla lista dei beni cfr sito Oipa."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""http://www.oipa.org/italia/emergenzaterremoto/"", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/508,177450401,2016-11-02 15:23:17,2016-09-16 15:13:33,Sono necessari alimenti per animali da cortile e gabbie da degenza.,,,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Sono necessari alimenti per animali da cortile e gabbie da degenza."", ""data"": ""16/09/2016"", ""descrizione"": ""Con urgenza servono gabbie trappola di media dimensione; gabbie pieghevoli (quelle di degenza) per cani e gatti di media dimensione; cibo per cani e gatti al momento \u00e8 a sufficienza, quindi quello pi\u00f9 urgente al momento \u00e8 per gli animali \""da reddito\"" dispersi sul territorio. Per maggiori info sulla lista dei beni cfr sito Oipa."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""http://www.oipa.org/italia/emergenzaterremoto/"", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 cosa: 'Sono necessari alimenti per animali da cortile e gabbie da degenza.'
 descrizione: 'Con urgenza servono gabbie trappola di media dimensione; gabbie pieghevoli (quelle di degenza) per cani e gatti di media dimensione; cibo per cani e gatti al momento è a sufficienza, quindi quello più urgente al momento è per gli animali ""da reddito"" dispersi sul territorio. Per maggiori info sulla lista dei beni cfr sito Oipa.'
