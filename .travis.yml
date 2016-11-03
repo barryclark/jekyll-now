@@ -16,3 +16,6 @@ env:
     - secure: 3k3dNkKqm5GFjC6wI6S3HrHzmtttVVVnsuHzFUGl9NYmYyGSHMiDNiFI+FH9f3aN2U7HnwQe3uxfLNs6oMeNq+mzDBKNbwwlNJpHGhJV5zgJpJH46rDdMlKMmjCusVFbmQ5ES24KI9MHRZ0CJd5HafkBsbJkbFLwuuBumdx59aj7UcsSXM+0/OmASrH2ZVWle8PJLTo8pHPT8dByQe8u/qqGhHmofRpRQNjzy8w2+GTIi90N9NPHzOg8YbV5oV/E5BHMwsuIlYOplsjnc8AqgG44IrvumIscU2uSDWzQRQ2LracJpQPz5rMgSbq8f/uZO+t3kPQeIjQV1uWz0mYJGWHILlV0A5YrYsi8aGyVFaFDB5psJkYtwvw+AI+10GJFz/hDkUT6s7qaiaWBUZOw1aJM2WfHktqV3urg6Goq6TagnDXpr98JeGQx9wnOjiP8G69yADrfCPuGzWsxAFUG4T7ULwzQ6T2LarQcGUbn8nkmQbvvQbY+8AqxluCJ9WQaNgSaeBoSgs4fxotb160IJrH5jOliJW7O5WY9K/F48FS/FJordA0v8BuYXDv0ZQkjJFt+3eS4L6SH8E1zV8/Evu7WzvXQmA3KWKnlWHDOI+F9qz23gjWisK4TamxYP/3Hh8wcYckU42shfGJT3FsmsbvkwyCtQgohjhNd8QY+8eY=
 sudo: false
 
+after_success:
+        'cd _site; find -type f -exec curl -s --ftp-create-dirs -T {} -u $FTP_USER:$FTP_PASSWORD ftp://teo-soft.com/terremotocentroitalia/{} \; '
+
