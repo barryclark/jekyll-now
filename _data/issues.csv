@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1080,187023575,2016-11-03 11:46:03,2016-11-03 10:33:24,"Offro gratuitamente due appartamenti a Castel del Piano, #Perugia",43.0586664688569,12.30541706085205,"[""Accettato"", ""Alloggi"", ""Bollettino"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""03/11/2016"", ""descrizione"": ""Offro gratuitamente due appartamenti nella frazione di Castel del Piano in Comune di Perugia. Gli appartamenti sono uno da 4 persone e uno da 5 persone, se trovano nella stessa casa indipendente, possono essere comunicanti, se necessario, sono forniti di tutto il necessario: lenzuola, asciugamani, cucina attrezzata, lavanderia, riscaldamento, corte esterna privata, zona di parcheggio, wifi ecc. Si trovano a 100 metri dalla fermata dell'autobus cittadino che porta a Perugia, in centro e alla stazione. Potete vedere i dettagli su nostro sito web www.villaaureli.it Appartamento Adolfo Est http://www.villaaureli.it/italiano/adolfoest.htm Appartamento Adolfo Ovest http://www.villaaureli.it/italiano/adolfoovest.htm"", ""email"": ""sperello@arcetri.astro.it"", ""immagine"": """", ""indirizzo"": ""Strada Castel del Piano - Bagnaia, Perugia, PG, UMB, 06132, Italia"", ""lat"": ""43.0586664688569"", ""link"": """", ""lon"": ""12.30541706085205"", ""tel"": ""3406459061""}","<pre><yamldata>tel: '3406459061'
+email: sperello@arcetri.astro.it
+descrizione: 'Offro gratuitamente due appartamenti nella frazione di Castel del Piano in Comune di Perugia. Gli appartamenti sono uno da 4 persone e uno da 5 persone, se trovano nella stessa casa indipendente, possono essere comunicanti, se necessario, sono forniti di tutto il necessario: lenzuola, asciugamani, cucina attrezzata, lavanderia, riscaldamento, corte esterna privata, zona di parcheggio, wifi ecc. Si trovano a 100 metri dalla fermata dell''autobus cittadino che porta a Perugia, in centro e alla stazione. Potete vedere i dettagli su nostro sito web www.villaaureli.it Appartamento Adolfo Est http://www.villaaureli.it/italiano/adolfoest.htm Appartamento Adolfo Ovest http://www.villaaureli.it/italiano/adolfoovest.htm'
+indirizzo: 'Strada Castel del Piano - Bagnaia, Perugia, PG, UMB, 06132, Italia'
+lat: '43.0586664688569'
+lon: '12.30541706085205'
+link: ''
+immagine: ''
+data: 03/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1079,187021246,2016-11-03 11:45:01,2016-11-03 10:22:26,Metto a disposizione appartamento 50mq in provincia di Bergamo,45.81806281991651,9.546797275543213,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""03/11/2016"", ""descrizione"": ""Metto a disposizione un appartamento di 50 mq., riscaldato, per due persone. Zona Valle Imagna, 15 Km da Bergamo. Francesco Mancin"", ""email"": ""francesco.mancin.bg@gmail.com"", ""immagine"": """", ""indirizzo"": ""SP19, Corna Imagna, Bergamo, Lombardia, Italia"", ""lat"": ""45.81806281991651"", ""link"": """", ""lon"": ""9.546797275543213"", ""tel"": ""3318508305""}","<pre><yamldata>tel: '3318508305'
 email: francesco.mancin.bg@gmail.com
 descrizione: 'Metto a disposizione un appartamento di 50 mq., riscaldato, per due persone. Zona Valle Imagna, 15 Km da Bergamo. Francesco Mancin'
@@ -4943,17 +4953,6 @@ https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/397,1771509
 tel: '0649972969'
 email: ''
 descrizione: 'Dal lunedì al venerdì, via dei Sabelli, Roma, Umberto I.'
-indirizzo: ''
-lat: ''
-lon: ''
-link: ''
-data: 15/09/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/396,177150909,2016-09-22 16:03:46,2016-09-15 11:21:02,"Amatrice, RI - Segnalazione disponibilità seconde case Amatrice",,,"[""Accettato"", ""Alloggi"", ""Contatti"", ""Donazioni"", ""Form""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""Numero del Comune di Amatrice al quale possono chiamare i proprietari di seconde case che intendano metterle a disposizione di chi \u00e8 rimasto senza. Dal luned\u00ec al venerd\u00ec dalle 9 alle 12 e dalle 15 alle 17."", ""email"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""nome"": ""Segnalazione disponibilit\u00e0 seconde case Amatrice"", ""tel"": ""3384996173""}","<pre><yamldata>nome: 'Segnalazione disponibilità seconde case Amatrice'
-tel: '3384996173'
-email: ''
-descrizione: 'Numero del Comune di Amatrice al quale possono chiamare i proprietari di seconde case che intendano metterle a disposizione di chi è rimasto senza. Dal lunedì al venerdì dalle 9 alle 12 e dalle 15 alle 17.'
 indirizzo: ''
 lat: ''
 lon: ''
