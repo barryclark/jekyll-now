@@ -501,6 +501,17 @@ link: ''
 email: ''
 data: 01/11/2016
 </yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1015,186489820,2016-11-03 15:33:20,2016-11-01 09:17:17,Comune di #Camerino - Raccolta fondi per emergenza sisma,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Raccolte Fondi"", ""Sisma Ottobre""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Comune di Camerino"", ""data"": ""01/11/2016"", ""descrizione"": ""Codice IBAN attivato dal Comune di Camerino per l\u2019emergenza terremoto"", ""email"": """", ""iban"": ""IT 86 C 05308 6883 000000004280"", ""intestazione"": ""UBI"", ""link"": """", ""postale"": """"}","<pre><yamldata>chi: 'Comune di Camerino'
+descrizione: 'Codice IBAN attivato dal Comune di Camerino per l’emergenza terremoto'
+intestazione: UBI
+iban: 'IT 86 C 05308 6883 000000004280'
+bic: ''
+postale: ''
+causale: ''
+link: ''
+email: ''
+data: 01/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1013,186434932,2016-11-01 11:58:32,2016-11-01 00:19:28,"A Paganica villetta antisismica per famiglia, anche per persone con difficoltà motoria",,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""01/11/2016"", ""descrizione"": ""a paganica zona alta villetta su due piani giardino strada privata. possibilit\u00e0 di due appartamenti per sfollati sisma del centro italia. L'immobile \u00e8 stato realizzato con criteri antisismici ed \u00e8 munito della relativa certificazione del genio civile ed \u00e8 quindi anche assicurato per l'evento sisma. L'appartamento al piano terra \u00e8 comodo ed adatto per famiglia composta da persone con difficolt\u00e0 motoria (sedia a rotelle ecc)"", ""email"": ""paloca2@libero.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3451526258""}","<pre><yamldata>tel: '3451526258'
 email: paloca2@libero.it
 descrizione: 'a paganica zona alta villetta su due piani giardino strada privata. possibilità di due appartamenti per sfollati sisma del centro italia. L''immobile è stato realizzato con criteri antisismici ed è munito della relativa certificazione del genio civile ed è quindi anche assicurato per l''evento sisma. L''appartamento al piano terra è comodo ed adatto per famiglia composta da persone con difficoltà motoria (sedia a rotelle ecc)'
@@ -6877,6 +6888,18 @@ postale: ''
 causale: ''
 link: 'http://www.slowfood.it/un-futuro-amatrice-locali-aderenti/'
 email: unfuturoperamatrice@slowfood.it
+data: 13/09/2016
+</yamldata></pre>
+",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/221,176775392,2016-09-13 23:24:53,2016-09-13 23:19:44,Comune di Accumoli,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Contributo sisma agosto 2016"", ""chi"": ""Comune di Accumoli"", ""data"": ""13/09/2016"", ""descrizione"": """", ""email"": """", ""iban"": ""IT83 E030 6914 6011 0000 0046 108"", ""intestazione"": """", ""link"": ""http://www.comune.accumoli.ri.it/sisma-centro-italia-2016/"", ""postale"": """"}","<pre><yamldata>chi: 'Comune di Accumoli'
+descrizione: ''
+intestazione: ''
+iban: 'IT83 E030 6914 6011 0000 0046 108'
+bic: ''
+postale: ''
+causale: 'Contributo sisma agosto 2016'
+link: 'http://www.comune.accumoli.ri.it/sisma-centro-italia-2016/'
+email: ''
 data: 13/09/2016
 </yamldata></pre>
 ",open
