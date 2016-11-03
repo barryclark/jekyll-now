@@ -1,12 +1,9 @@
 ---
-layout: post
-title: Spring Boot로 TEAMUP BOT 만들기 - (1)
-subtitle: Spring Boot로 TEAMUP BOT 뼈대 만들기!
-category: zuminternet
-author: 권용근
-nickname: kingbbode
+
+layout: post title: Spring Boot로 TEAMUP BOT 만들기 - (1) subtitle: Spring Boot로 TEAMUP BOT 뼈대 만들기! category: zuminternet author: 권용근 nickname: kingbbode
+
 tag: [spring,boot,bot,teamup]
----
+-----------------------------
 
 ![post_main](/images/2016/2016_10_13_TEAMUP_BOT_START/main.png)
 
@@ -218,7 +215,7 @@ public class ApplicationConfig {
 }
 ```
 
-`eventRestOperations`의 ReadTimeout이 30초인 이유는 아래에 `RealTime Message Event`에 설명하겠습니다!<br> 두 개 이상의 같은 객체를 반환되는 `Bean`을 설정할 때는 `@Primary` 어노테이션으로 default로 사용될 Bean을 명시해주어야 합니다.
+두 개 이상의 같은 객체를 반환되는 `Bean`을 설정할 때는 `@Primary` 어노테이션으로 default로 사용될 Bean을 명시해주어야 합니다.
 
 <br>
 
@@ -423,69 +420,121 @@ public class EventTemplate extends BaseTemplate {
 }
 ```
 
-실시간으로 메세지를 처리하기 위해 `ThreadPoolTaskExecutor`를 사용할 것 입니다. 이벤트 대기 상태에서 이벤트가 반환되었을 때 바로 다음 이벤트를 대기할 수 있도록 `teamUpEventSensorRunner.exceute()`를 실행하여 이벤트 대기 스레드를 병렬로 할당합니다.
+실시간으로 메세지를 처리하기 위해 `Queue`를 사용할 것 입니다. `TeamUpEventSensor`는 `@Schedule`을 사용해서 0.01초 단위로 메소드를 실행하도록 했습니다. `Component`는 `Singleton`이므로 0.01초 후부터 sensingEvent 메소드가 끝날 때까지 대기 한 후 바로 실행되어 실시간으로 `Queue`에 이벤트를 쌓을 수 있습니다.
+
+큐를 편하게 사용하기 위하여 `class`를 만들었고 이 클레스를 `Bean`으로 등록하여 사용할 것 입니다.
+
+> src/main/java/com.teamup.bot/common/EventQueue.java
+
+```java
+public class EventQueue<T> {
+    private Queue<T> queue = new ConcurrentLinkedQueue<>();
+
+    public boolean hasNext(){
+        return queue.size()>0;
+    }
+
+    public void offer(T e) {
+        if (e == null) {
+            return;
+        }
+        queue.offer(e);
+    }
+
+    public T poll() {
+        return queue.poll();
+    }
+}
+```
+
+> src/main/java/com.teamup.bot/config/ApplicationConfig.java
+
+```java
+			...
+
+	@Bean
+    EventQueue<EventResponse.Event> eventQueue(){
+        return new EventQueue<>();
+    }
+			...
+```
 
 > src/main/java/com.teamup.bot/sensor/TeamUpEventSensor.java
 
 ```java
 @Component
+@EnableScheduling
 public class TeamUpEventSensor {
-        ...
 
-    private static final String EVENT_MESSAGE = "chat.message";
-    private static final String EVENT_JOIN = "chat.join";    
+    private static final Logger logger = LoggerFactory.getLogger(TeamUpEventSensor.class);
 
-    public void sensingEvent(){
+    @Autowired
+    private EventTemplate eventTemplate;
+
+    @Autowired
+    private EventQueue<EventResponse.Event> eventQueue;
+
+    @Scheduled(fixedDelay = 10)
+    public void sensingEvent() {
         EventResponse eventResponse = null;
         try {
             eventResponse = eventTemplate.getEvent();
-        }catch (Exception e) {
+        } catch (Exception e) {
             logger.error("TeamUpEventSensor - sensingEvent : {}", e);
         }
-        teamUpEventSensorRunner.exceute();
         if (!ObjectUtils.isEmpty(eventResponse)) {
-            ArrayList<EventResponse.Event> eventTypes = eventResponse.getEvents();
-            if (eventTypes.size() > 0) {
-                eventTypes.stream().forEach(event->{
-                    if(EVENT_MESSAGE.equals(event.getType())){
-                        messageService.readMessage(event.getChat().getMsg(), event.getChat().getRoom(), event.getChat().getUser());
-                    }else if(EVENT_JOIN.equals(event.getType())){
-                        messageService.sendMessage(BrainUtil.getGreeting(),event.getChat().getRoom());
-                    }
-                });
+            ArrayList<EventResponse.Event> events = eventResponse.getEvents();
+            if (events != null && !events.isEmpty()) {
+                events.stream().forEach(event -> this.eventQueue.offer(event));
             }
         }
     }
 }
 ```
 
-`ThreadPoolTaskExecutor`를 사용하는 구현체입니다. Task로 `TeamUpEventSensor`의 sesingEvent를 사용합니다.
+`ThreadPoolTaskExecutor`를 사용하는 구현체입니다. `Queue`에 쌓인 Event를 각각 Thread로 할당하여 병렬로 Task를 수행합니다. 마찬가지로 `@Scheduled`를 사용하여 `Queue`의 이벤트를 실시간으로 처리합니다.
 
-> src/main/java/com.teamup.bot/sensor/TeamUpEventSensorRunner.java
+> src/main/java/com.teamup.bot/sensor/TaskRunner.java
 
 ```java
 @Service
-public class TeamUpEventSensorRunner {
-    public static class FetcherTask implements Runnable {
-        TeamUpEventSensor teamUpEventSensor;
-        public FetcherTask(TeamUpEventSensor teamUpEventSensor) {
-            this.teamUpEventSensor = teamUpEventSensor;
-        }
-
-        @Override
-        public void run() {
-            teamUpEventSensor.sensingEvent();
-        }
-    }
+@EnableScheduling
+public class TaskRunner {
+    private static final String EVENT_MESSAGE = "chat.message";
+    private static final String EVENT_JOIN = "chat.join";
 
     @Autowired
     private ThreadPoolTaskExecutor executer;
 
     @Autowired
-    private TeamUpEventSensor teamUpEventSensor;
+    private MessageService messageService;
 
-    public void exceute() {
-        executer.execute(new FetcherTask(teamUpEventSensor));
+    @Autowired
+    private EventQueue<EventResponse.Event> eventQueue;
+
+    @Scheduled(fixedDelay = 10)
+    private void execute(){
+        while(eventQueue.hasNext()){
+            executer.execute(new FetcherTask(messageService, eventQueue.poll()));
+        }
+    }
+
+    public static class FetcherTask implements Runnable {
+        MessageService messageService;
+        EventResponse.Event event;
+        public FetcherTask(MessageService messageService, EventResponse.Event event) {
+            this.messageService = messageService;
+            this.event = event;
+        }
+
+        @Override
+        public void run() {
+            if(EVENT_MESSAGE.equals(event.getType())){
+                messageService.readMessage(event.getChat().getMsg(), event.getChat().getRoom(), event.getChat().getUser());
+            }else if(EVENT_JOIN.equals(event.getType())){
+                messageService.sendMessage(BrainUtil.getGreeting(),event.getChat().getRoom());
+            }            
+        }
     }
 }
 ```
