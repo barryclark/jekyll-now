@@ -19,6 +19,7 @@ permalink: /alloggi/
 <a href="/issues/{{ member.number }}" class="list-group-item">
 	<h4 class="list-group-item-heading">{{member.title}}</h4>
 	<p class="list-group-item-text">{{member.issue.data.descrizione}}</p>
+	<p class="list-group-item-text">{{member.issue.data.data}}</p>
 </a>
 
 <div class="panel-footer">
@@ -67,7 +68,7 @@ for (var i=0; i<markerList.length; i++) {
         var popupURL = markerList[i][3];
 
         if (!isNaN(lat) && !isNaN(lon)) {
-                var markerLocation = new L.LatLng(lat, lon); 
+                var markerLocation = new L.LatLng(lat, lon);
                 var marker = new L.Marker(markerLocation);
                 map.addLayer(marker);
 

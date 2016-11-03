@@ -11,7 +11,9 @@ permalink: /risorse-disponibili/
 <a href="/issues/{{ member.number | datapage_url: '.' }}" class="list-group-item">
 	<h4 class="list-group-item-heading">{{member.title}}</h4>
 	<p class="list-group-item-text">{{member.issue.data.descrizione}}</p>
+	<p class="list-group-item-text">{{member.issue.data.data}}</p>
 </a>
+{% endif %}
 <div class="panel-footer">
 <ul class="share-buttons">
   <li>Condividi:</li>
