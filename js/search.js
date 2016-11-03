@@ -6,8 +6,17 @@
 
       for (var i = 0; i < results.length; i++) {  // Iterate over the results
         var item = store[results[i].ref];
-        appendString += '<li><a href="' + item.url + '"><h3>' + item.title + '</h3></a>';
-        appendString += '<p>' + item.content.substring(0, 150) + '...</p></li>';
+
+        appendString += '<div class="panel-group">';
+        appendString += '<div class="panel-body">';
+
+          appendString += '<a href="' + item.url + '" class="list-group-item">';
+          appendString += '<h4 class="list-group-item-heading">' + item.title + '</h4>';
+          appendString += '<p class="list-group-item-text">' + item.content.substring(0, 250) + '...</p>'
+          appendString += '<p class="list-group-item-text">' + item.date + '</p></a>'
+
+        appendString += '</div></div>';
+  
       }
 
       searchResults.innerHTML = appendString;
@@ -37,7 +46,8 @@
         'title': window.store[key].title,
         'author': window.store[key].author,
         'category': window.store[key].category,
-        'content': window.store[key].content
+        'content': window.store[key].content,
+        'date': window.store[key].date
       });
 
       var results = idx.search(searchTerm); // Get lunr to perform a search
