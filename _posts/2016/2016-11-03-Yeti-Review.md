@@ -35,23 +35,23 @@ Coins are a one-shot currency to buy anything on the photo track. You can buy a 
 
 Sherpas let you climb the mountain.
 
-1 Sherpa lets you ascend 1 level.
-3 Sherpa let you ascend 2 levels.
+1 Sherpa lets you ascend 1 level.\\
+3 Sherpa let you ascend 2 levels.\\
 6 Sherpa let you ascend 3 levels.
 
 Climbing the mountain earns you bonuses on any footprints you roll. There's also a bonus waiting for the first person to make it to the top, and lower bonuses for every other person who makes it up there. At the end of your turn, you return back to base camp unless you have rolled tents.
 
 Tents allow you to start your next turn at a certain level, providing you're already on the mountain. You can never climb the mountain using tents.
 
-1 Tent: Your Mountaineer makes camp on level 1.
-2 Tents: Your Mountaineer makes camp on level 2.
+1 Tent: Your Mountaineer makes camp on level 1.\\
+2 Tents: Your Mountaineer makes camp on level 2.\\
 3 Tents: Your Mountaineer makes camp the peak.
 
 Last, but certainly one of the most important die faces, is the footprint. You get a certain number of victory points per footprint rolled depending where on the mountain you are.
 
-Base Camp: You receive 1 Victory Point per Footprint.
-Level 1: You receive 2 Victory Points per Footprint.
-Level 2: You receive 3 Victory Points per Footprint.
+Base Camp: You receive 1 Victory Point per Footprint.\\
+Level 1: You receive 2 Victory Points per Footprint.\\
+Level 2: You receive 3 Victory Points per Footprint.\\
 Peak: You receive 4 Victory Points per Footprint.
 
 The final round is triggered when one person lands on or overtakes the yeti on the score track. After that final round, the person with the more victory points wins. Ties are decided with equipment values.
