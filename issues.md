@@ -5,9 +5,9 @@ permalink: /issues/
 ---
 
 <div class="text-center">
-	<a href="#notizie-utili" class="btn btn-primary btn-lg" role="button">Notizie Utili</a>
-	<a href="#alloggi" class="btn btn-primary btn-lg" role="button">Alloggi</a>
-	<a href="#donazioni" class="btn btn-primary btn-lg" role="button">Donazioni</a>
+	<a href="#notizie-utili" class="btn btn-warning btn-lg" role="button">Notizie Utili</a>
+	<a href="#alloggi" class="btn btn-success btn-lg" role="button">Alloggi</a>
+	<a href="#donazioni" class="btn btn-danger btn-lg" role="button">Donazioni</a>
 	<a href="#fabbisogni" class="btn btn-primary btn-lg" role="button">Fabbisogni</a>
 	<a href="#raccolte-fondi" class="btn btn-primary btn-lg" role="button">Raccolte Fondi</a>
 </div>
@@ -16,6 +16,8 @@ permalink: /issues/
 
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.0/dist/leaflet.css" />
 <script src="https://unpkg.com/leaflet@1.0.0/dist/leaflet.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.min.js"></script>
 <style>
 #map{ height: 400px }
 </style>
@@ -188,9 +190,47 @@ permalink: /issues/
 var markerList=[];
 {% for member in site.data.issuesjson %}
 {% if member.issue.lat != blank and member.issue.lon != blank %}
-markerList.push([{{member.issue.lat}}, {{member.issue.lon}}, "{{member.title|uri_escape}}", "{{ member.number }}"]);
+{% if member.issue.labels contains "Notizie Utili" %}
+markerList.push([{{member.issue.lat}}, {{member.issue.lon}}, "{{member.title|uri_escape}}", "{{ member.number }}", "Notizie Utili"]);
+{% elsif member.issue.labels contains "Alloggi" %}
+markerList.push([{{member.issue.lat}}, {{member.issue.lon}}, "{{member.title|uri_escape}}", "{{ member.number }}", "Alloggi"]);
+{% elsif member.issue.labels contains "Fabbisogni" %}
+markerList.push([{{member.issue.lat}}, {{member.issue.lon}}, "{{member.title|uri_escape}}", "{{ member.number }}", "Fabbisogni"]);
+{% elsif member.issue.labels contains "Donazioni" %}
+markerList.push([{{member.issue.lat}}, {{member.issue.lon}}, "{{member.title|uri_escape}}", "{{ member.number }}", "Donazioni"]);
+{% elsif member.issue.labels contains "Raccolte Fondi" %}
+markerList.push([{{member.issue.lat}}, {{member.issue.lon}}, "{{member.title|uri_escape}}", "{{ member.number }}", "Raccolte Fondi"]);
+{% else %}
+markerList.push([{{member.issue.lat}}, {{member.issue.lon}}, "{{member.title|uri_escape}}", "{{ member.number }}", ""]);
+{% endif %}
 {% endif %}
 {% endfor %}
+
+var alloggiMarker = L.AwesomeMarkers.icon({
+icon: 'home',
+prefix: 'fa',
+markerColor: 'green'
+});
+var fabbisogniMarker = L.AwesomeMarkers.icon({
+icon: 'child',
+prefix: 'fa',
+markerColor: 'blue'
+});
+var notizieutiliMarker = L.AwesomeMarkers.icon({
+icon: 'newspaper-o',
+prefix: 'fa',
+markerColor: 'orange'
+});
+var donazioniMarker = L.AwesomeMarkers.icon({
+icon: 'handshake-o',
+prefix: 'fa',
+markerColor: 'red'
+});
+var raccoltefondiMarker = L.AwesomeMarkers.icon({
+icon: 'money',
+prefix: 'fa',
+markerColor: 'blue'
+});
 
 // initialize the map
 var map = L.map('map')
@@ -210,10 +250,24 @@ for (var i=0; i<markerList.length; i++) {
         var lon = markerList[i][1];
         var popupText = markerList[i][2];
         var popupURL = markerList[i][3];
+        var type = markerList[i][4]
 
         if (!isNaN(lat) && !isNaN(lon)) {
                 var markerLocation = new L.LatLng(lat, lon); 
-                var marker = new L.Marker(markerLocation);
+                if (type == 'Donazioni') {
+                        var marker = new L.Marker(markerLocation, {icon: donazioniMarker});
+                } else if (type == 'Alloggi') {
+                        var marker = new L.Marker(markerLocation, {icon: alloggiMarker});
+                } else if (type == 'Fabbisogni') {
+                        var marker = new L.Marker(markerLocation, {icon: fabbisogniMarker});
+                } else if (type == 'Notizie Utili') {
+                        var marker = new L.Marker(markerLocation, {icon: notizieutiliMarker});
+                } else if (type == 'Raccolte Fondi') {
+                        var marker = new L.Marker(markerLocation, {icon: raccoltefondiMarker});
+                } else {
+                        var marker = new L.Marker(markerLocation);
+                }
+
                 map.addLayer(marker);
 
                 marker.bindPopup("<a href=\"" + popupURL + "\">" + decodeURI(popupText) + "</a>");
@@ -223,7 +277,7 @@ for (var i=0; i<markerList.length; i++) {
         }
 }
 
-map.addLayer(osm).setView([sumLat / markerList.length, sumLon / markerList.length], 6);
+map.addLayer(osm).setView([42.629381, 13.288372], 6);
 var geocoder = L.Control.geocoder({collapsed:false,placeholder:"Cerca...",
         defaultMarkGeocode: false, geocodingQueryParams: { countrycodes: "it" },
     })
