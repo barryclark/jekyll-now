@@ -423,8 +423,9 @@ right connector from last child*/
 	transition: all 0.5s;
 	-webkit-transition: all 0.5s;
 	-moz-transition: all 0.5s;
-	 &:hover, &:active {
-    	color: $blue;
+	&:hover, &:active {
+    	 color: $blue;
+	}
 }
 
 
