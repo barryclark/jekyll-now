@@ -6,6 +6,9 @@ permalink: /alloggi/
 
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.0/dist/leaflet.css" />
 <script src="https://unpkg.com/leaflet@1.0.0/dist/leaflet.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.min.js"></script>
+
 <style>
 #map{ height: 400px }
 </style>
@@ -38,6 +41,11 @@ permalink: /alloggi/
 </div>
 
 <script>
+var houseMarker = L.AwesomeMarkers.icon({
+icon: 'home',
+prefix: 'fa',
+markerColor: 'green'
+});
 var markerList=[];
 {% for member in filteredissues %}
 {% if member.issue.labels contains "Alloggi" %}
@@ -69,7 +77,7 @@ for (var i=0; i<markerList.length; i++) {
 
         if (!isNaN(lat) && !isNaN(lon)) {
                 var markerLocation = new L.LatLng(lat, lon);
-                var marker = new L.Marker(markerLocation);
+                var marker = new L.Marker(markerLocation, { icon: houseMarker} );
                 map.addLayer(marker);
 
                 marker.bindPopup("<a href=\"" + popupURL + "\">" + decodeURI(popupText) + "</a>");
