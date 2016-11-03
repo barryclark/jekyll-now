@@ -9,7 +9,7 @@ tags: [games, review, yeti, aeg, pegasus spiele]
 author: Rob Kalajian
 ---
 
-<img src="/images/yeti/box.jpg" alt="Yeti Box" class="float-right" />
+<img src="/images/yeti/box.jpg" alt="Yeti Box" width="300" class="float-right" />
 
 <h2>Prelude</h2>
 
