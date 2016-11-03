@@ -10,6 +10,22 @@ link: 'http://www.valnerinaonline.it/notizia/NORCIA/15257/Dove_comprare_i_prodot
 immagine: ''
 data: 03/11/2016
 </yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1088,187090689,2016-11-03 16:05:09,2016-11-03 15:20:37,COMUNE DI #SAN SEVERINO #MARCHE: RACCOLTA FONDI,,,"[""Accettato"", ""Form"", ""Raccolte Fondi"", ""Sisma Ottobre""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""COMUNE DI #SAN SEVERINO #MARCHE: RACCOLTA FONDI"", ""data"": ""03/11/2016"", ""descrizione"": ""il Comune di San Severino ha attivato una raccolta fondi da destinare alle famiglie e alle persone senzatetto"", ""email"": """", ""iban"": ""IT63Y0605569151000000007432"", ""intestazione"": """", ""link"": ""http://www.comune.sanseverinomarche.mc.it/comunicati-cms/terremoto-il-comune-attiva-una-raccolta-fondi-da-destinare-alle-famiglie-e-alle-persone-senzatetto/"", ""postale"": """"}","<pre><yamldata>chi: 'COMUNE DI #SAN SEVERINO #MARCHE: RACCOLTA FONDI'
+descrizione: 'il Comune di San Severino ha attivato una raccolta fondi da destinare alle famiglie e alle persone senzatetto'
+intestazione: ''
+iban: IT63Y0605569151000000007432
+bic: ''
+postale: ''
+causale: ''
+link: 'http://www.comune.sanseverinomarche.mc.it/comunicati-cms/terremoto-il-comune-attiva-una-raccolta-fondi-da-destinare-alle-famiglie-e-alle-persone-senzatetto/'
+email: ''
+data: 03/11/2016
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1087,187088589,2016-11-03 16:04:48,2016-11-03 15:13:54,#ARQUATA DEL TRONTO: COMUNICAZIONE URGENTE SULLA SITUAZIONE SCUOLA,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""03/11/2016"", ""descrizione"": ""In riferimento alla situazione scolastica per i ragazzi delle scuole di Arquata del Tronto, il Comune comunica che stiamo individuando una struttura che possa accogliere per il corrente anno l\u2019intero plesso composto da materna, elementare e media nel Comune di San Benedetto del Tronto. Resta invariato il corpo docente e quello non docente. Fiduciosi dell\u2019accoglimento di tale istanza, vi terremo aggiornati per ulteriori sviluppi che concerteremo con voi in merito."", ""link"": ""http://comunicacity.net/arquatadeltronto/2016/11/03/comunicazione-urgente-sulla-situazione-scuola/"", ""titolo"": ""#ARQUATA DEL TRONTO: COMUNICAZIONE URGENTE SULLA SITUAZIONE SCUOLA""}","<pre><yamldata>titolo: '#ARQUATA DEL TRONTO: COMUNICAZIONE URGENTE SULLA SITUAZIONE SCUOLA'
+descrizione: 'In riferimento alla situazione scolastica per i ragazzi delle scuole di Arquata del Tronto, il Comune comunica che stiamo individuando una struttura che possa accogliere per il corrente anno l’intero plesso composto da materna, elementare e media nel Comune di San Benedetto del Tronto. Resta invariato il corpo docente e quello non docente. Fiduciosi dell’accoglimento di tale istanza, vi terremo aggiornati per ulteriori sviluppi che concerteremo con voi in merito.'
+link: 'http://comunicacity.net/arquatadeltronto/2016/11/03/comunicazione-urgente-sulla-situazione-scuola/'
+data: 03/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1085,187054415,2016-11-03 14:11:38,2016-11-03 13:06:06,Salviamo #CasteldiLuco. L'appello dei cittadini per la messa in sicurezza del paese,,,"[""Accettato"", ""Bollettino"", ""Da rilanciare"", ""Form"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""03/11/2016"", ""descrizione"": ""A seguito di nuovi e disastrosi eventi sismici, sono notevolmente aumentati i danni a Castel di Luco (http://www.casteldiluco.it/) che ora \u00e8 a rischio crollo. Chiediamo ai Vigili del fuoco, alla Protezione civile e al Comune di Acquasanta Terme (Ap) l'immediata messa in sicurezza della struttura. In alternativa: un'ordinanza che deleghi noi proprietari alla messa in sicurezza tramite impresa qualificata e secondo le normative vigenti. In caso di mancato intervento, decliniamo ogni responsabilit\u00e0 circa la perdita irreversibile di un immobile storico tutelato dalla Soprintendenza per i Beni Architettonici e per il Paesaggio. Laura Amici e Francesco Amici, proprietari di Castel di Luco. Contatti: Tel. +39 0736 802319, Cellulare: 338 2132286, E-mail: info@casteldiluco.com"", ""link"": ""https://www.facebook.com/francesco.amici.7?fref=ts"", ""titolo"": ""Salviamo Castel di Luco""}","<pre><yamldata>titolo: 'Salviamo Castel di Luco'
 descrizione: 'A seguito di nuovi e disastrosi eventi sismici, sono notevolmente aumentati i danni a Castel di Luco (http://www.casteldiluco.it/) che ora è a rischio crollo. Chiediamo ai Vigili del fuoco, alla Protezione civile e al Comune di Acquasanta Terme (Ap) l''immediata messa in sicurezza della struttura. In alternativa: un''ordinanza che deleghi noi proprietari alla messa in sicurezza tramite impresa qualificata e secondo le normative vigenti. In caso di mancato intervento, decliniamo ogni responsabilità circa la perdita irreversibile di un immobile storico tutelato dalla Soprintendenza per i Beni Architettonici e per il Paesaggio. Laura Amici e Francesco Amici, proprietari di Castel di Luco. Contatti: Tel. +39 0736 802319, Cellulare: 338 2132286, E-mail: info@casteldiluco.com'
 link: 'https://www.facebook.com/francesco.amici.7?fref=ts'
@@ -488,17 +504,6 @@ lat: '43.2083044'
 lon: '13.2832656'
 link: 'http://www.comune.tolentino.mc.it/comunicati-cms/si-cercano-urgentemente-tecnici-per-i-sopralluoghi/'
 immagine: ''
-data: 01/11/2016
-</yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1015,186489820,2016-11-03 15:33:20,2016-11-01 09:17:17,Comune di #Camerino - Raccolta fondi per emergenza sisma,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Raccolte Fondi"", ""Sisma Ottobre""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Comune di Camerino"", ""data"": ""01/11/2016"", ""descrizione"": ""Codice IBAN attivato dal Comune di Camerino per l\u2019emergenza terremoto"", ""email"": """", ""iban"": ""IT 86 C 05308 6883 000000004280"", ""intestazione"": ""UBI"", ""link"": """", ""postale"": """"}","<pre><yamldata>chi: 'Comune di Camerino'
-descrizione: 'Codice IBAN attivato dal Comune di Camerino per l’emergenza terremoto'
-intestazione: UBI
-iban: 'IT 86 C 05308 6883 000000004280'
-bic: ''
-postale: ''
-causale: ''
-link: ''
-email: ''
 data: 01/11/2016
 </yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1015,186489820,2016-11-03 15:33:20,2016-11-01 09:17:17,Comune di #Camerino - Raccolta fondi per emergenza sisma,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Raccolte Fondi"", ""Sisma Ottobre""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Comune di Camerino"", ""data"": ""01/11/2016"", ""descrizione"": ""Codice IBAN attivato dal Comune di Camerino per l\u2019emergenza terremoto"", ""email"": """", ""iban"": ""IT 86 C 05308 6883 000000004280"", ""intestazione"": ""UBI"", ""link"": """", ""postale"": """"}","<pre><yamldata>chi: 'Comune di Camerino'
@@ -5550,6 +5555,12 @@ link: 'https://twitter.com/crisislabtweet/status/768397208873996288'
 data: 14/09/2016
 </yamldata></pre>
 ",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/345,177008012,2016-10-01 16:03:53,2016-09-14 20:11:39,Twitter - Account utili,,,"[""Accettato"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""Lista pubblica di CrisisLab su Twitter, gli account che forniscono informazioni utili per seguire l'evoluzione degli eventi sul terremoto."", ""link"": ""https://twitter.com/crisislabtweet/status/768397208873996288"", ""titolo"": ""Twitter - Account utili""}","<pre><yamldata>titolo: 'Twitter - Account utili'
+descrizione: 'Lista pubblica di CrisisLab su Twitter, gli account che forniscono informazioni utili per seguire l''evoluzione degli eventi sul terremoto.'
+link: 'https://twitter.com/crisislabtweet/status/768397208873996288'
+data: 14/09/2016
+</yamldata></pre>
+",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/344,177007682,2016-09-20 13:41:55,2016-09-14 20:10:13,Supporto Psicologico Associazione 180amici,,,"[""Accettato"", ""Donazioni"", ""Form""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""Supporto psicologico offerto dall'associazione 180amici gestito da psicologi aquilani attivi nei 9 mesi post-terremoto aquilano e nei 3 mesi post terremoto emiliano. Tel: +393661990081."", ""link"": """", ""titolo"": ""Supporto Psicologico Associazione 180amici""}","<pre><yamldata>titolo: 'Supporto Psicologico Associazione 180amici'
 descrizione: 'Supporto psicologico offerto dall''associazione 180amici gestito da psicologi aquilani attivi nei 9 mesi post-terremoto aquilano e nei 3 mesi post terremoto emiliano. Tel: +393661990081.'
 link: ''
@@ -6888,18 +6899,6 @@ postale: ''
 causale: ''
 link: 'http://www.slowfood.it/un-futuro-amatrice-locali-aderenti/'
 email: unfuturoperamatrice@slowfood.it
-data: 13/09/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/221,176775392,2016-09-13 23:24:53,2016-09-13 23:19:44,Comune di Accumoli,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Contributo sisma agosto 2016"", ""chi"": ""Comune di Accumoli"", ""data"": ""13/09/2016"", ""descrizione"": """", ""email"": """", ""iban"": ""IT83 E030 6914 6011 0000 0046 108"", ""intestazione"": """", ""link"": ""http://www.comune.accumoli.ri.it/sisma-centro-italia-2016/"", ""postale"": """"}","<pre><yamldata>chi: 'Comune di Accumoli'
-descrizione: ''
-intestazione: ''
-iban: 'IT83 E030 6914 6011 0000 0046 108'
-bic: ''
-postale: ''
-causale: 'Contributo sisma agosto 2016'
-link: 'http://www.comune.accumoli.ri.it/sisma-centro-italia-2016/'
-email: ''
 data: 13/09/2016
 </yamldata></pre>
 ",open
