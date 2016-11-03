@@ -18,5 +18,3 @@ sudo: false
 
 after_success:
         '# cd _site; find -type f -exec curl --ftp-create-dirs -T {} -u $FTP_USER:$FTP_PASSWORD ftp://teo-soft.com/terremotocentroitalia/{} \; '
-        # lftp -c "set ftp:list-options -a; open ftp://$FTP_USER:$FTP_PASSWORD@teo-soft.com;lcd ./_site;cd terremotocentroitalia;mirror --reverse --use-cache --verbose --allow-chown --allow-suid --no-umask --parallel=2"
-        lftp -v
