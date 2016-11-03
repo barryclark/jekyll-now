@@ -1,7 +1,6 @@
 ---
 published: false
-title: >-
-  2016-11-03-training-and-deploying-your-first-tensorflow-vision-model-with-android
+title: training-and-deploying-your-first-tensorflow-vision-model-with-android
 ---
 ## A New Post
 
