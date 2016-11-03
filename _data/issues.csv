@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1105,187213109,2016-11-03 23:09:11,2016-11-03 23:01:24,Comune di #Civitanova cerca case e alloggi,43.3055233,13.7229297,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Facebook"", ""Raccolte Fondi""]",,,"{""cosa"": ""Comune di #Civitanova cerca case e alloggi"", ""data"": ""03/11/2016"", ""descrizione"": ""Chiunque abbia una seconda casa a Civitanova e dintorni, o delle stanze da mettere a disposizione all'interno della propria casa, lo faccia. IL COMUNE DI CIVITANOVA RICEVE LE DISPONIBILITA' PRESSO L'UFFICIO DEL TURISMO: TEL. O733822213."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via San Marone, Civitanova Marche, MC, Marche, 62012, Italia"", ""lat"": ""43.3055233"", ""link"": ""https://www.facebook.com/francesca.conti74/posts/10209612470462990"", ""lon"": ""13.7229297"", ""tel"": ""O733822213""}","<pre><yamldata>tel: O733822213
+email: ''
+cosa: 'Comune di #Civitanova cerca case e alloggi'
+descrizione: 'Chiunque abbia una seconda casa a Civitanova e dintorni, o delle stanze da mettere a disposizione all''interno della propria casa, lo faccia. IL COMUNE DI CIVITANOVA RICEVE LE DISPONIBILITA'' PRESSO L''UFFICIO DEL TURISMO: TEL. O733822213.'
+indirizzo: 'Via San Marone, Civitanova Marche, MC, Marche, 62012, Italia'
+lat: '43.3055233'
+lon: '13.7229297'
+link: 'https://www.facebook.com/francesca.conti74/posts/10209612470462990'
+immagine: ''
+data: 03/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1097,187201715,2016-11-03 21:58:33,2016-11-03 21:58:10,Volontariato a sostegno degli sfollati con Gus - Gruppo Umana Solidarietà,,,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""Volontariato a sostegno degli sfollati con Gus - Gruppo Umana Solidariet\u00e0"", ""data"": ""03/11/2016"", ""descrizione"": ""Il Gus dispone di una rete di ascolto in tutti i comuni terremotati. Per partecipare, in forma volontaria, alle attivit\u00e0 di sostegno della popolazione colpita, \u00e8 possibile candidarsi scrivendo una mail a: volontariatosisma2016@gusitalia.it"", ""email"": ""volontariatosisma2016@gusitalia.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""http://gusitalia.it/"", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
 email: volontariatosisma2016@gusitalia.it
 cosa: 'Volontariato a sostegno degli sfollati con Gus - Gruppo Umana Solidarietà'
@@ -7879,6 +7890,17 @@ indirizzo: Str. Nova, 2215, 30121 Venezia, Italia
 lat: 45.4430336
 lon: 12.332174900000041
 link: https://github.com
+data: 07/09/2016</yamldata></pre>
+",closed
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/76,175549685,2016-09-07 16:41:52,2016-09-07 16:34:01,Raccolta Fondi,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": 234, ""causale"": 324, ""chi"": ""Raccolta Fondi"", ""data"": ""07/09/2016"", ""descrizione"": ""asd"", ""email"": ""francescopinzauti@gmail.com"", ""iban"": 3423, ""intestazione"": ""aasd"", ""link"": ""http://ciao.com"", ""postale"": 324}","<pre><yamldata>chi: Raccolta Fondi
+descrizione: asd
+intestazione: aasd
+iban: 3423
+bic: 234
+postale: 324
+causale: 324
+link: http://ciao.com
+email: francescopinzauti@gmail.com
 data: 07/09/2016</yamldata></pre>
 ",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/76,175549685,2016-09-07 16:41:52,2016-09-07 16:34:01,Raccolta Fondi,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": 234, ""causale"": 324, ""chi"": ""Raccolta Fondi"", ""data"": ""07/09/2016"", ""descrizione"": ""asd"", ""email"": ""francescopinzauti@gmail.com"", ""iban"": 3423, ""intestazione"": ""aasd"", ""link"": ""http://ciao.com"", ""postale"": 324}","<pre><yamldata>chi: Raccolta Fondi
