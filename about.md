@@ -14,6 +14,10 @@ Social information about me.
   <img class="img" src="https://badge.facebook.com/badge/1274573288.3852.1218662383.png" style="border: 0px;" alt="" />
 </a>
 
+## Twitter
+
+<a href="https://twitter.com/JoesGitHubBlog" class="twitter-follow-button" data-show-count="false">Follow @JoesGitHubBlog</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 ## GitHub
 
 <a href="https://github.com/{{ site.footer-links.github }}"><i class="svg-icon github"></i></a> My projects
