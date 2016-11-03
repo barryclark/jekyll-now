@@ -4961,6 +4961,17 @@ link: ''
 data: 15/09/2016
 </yamldata></pre>
 ",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/396,177150909,2016-09-22 16:03:46,2016-09-15 11:21:02,"Amatrice, RI - Segnalazione disponibilità seconde case Amatrice",,,"[""Accettato"", ""Alloggi"", ""Contatti"", ""Donazioni"", ""Form""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""Numero del Comune di Amatrice al quale possono chiamare i proprietari di seconde case che intendano metterle a disposizione di chi \u00e8 rimasto senza. Dal luned\u00ec al venerd\u00ec dalle 9 alle 12 e dalle 15 alle 17."", ""email"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""nome"": ""Segnalazione disponibilit\u00e0 seconde case Amatrice"", ""tel"": ""3384996173""}","<pre><yamldata>nome: 'Segnalazione disponibilità seconde case Amatrice'
+tel: '3384996173'
+email: ''
+descrizione: 'Numero del Comune di Amatrice al quale possono chiamare i proprietari di seconde case che intendano metterle a disposizione di chi è rimasto senza. Dal lunedì al venerdì dalle 9 alle 12 e dalle 15 alle 17.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+data: 15/09/2016
+</yamldata></pre>
+",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/395,177150710,2016-09-15 11:20:23,2016-09-15 11:19:49,Brigate di Solidarietà Attiva,,,"[""Accettato"", ""Contatti"", ""Form""]",,,"{""data"": ""15/09/2016"", ""descrizione"": """", ""email"": ""volontaribsa@gmail.com"", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""nome"": ""Brigate di Solidariet\u00e0 Attiva"", ""tel"": ""3299837400, 3394037385, 3397616665""}","<pre><yamldata>nome: 'Brigate di Solidarietà Attiva'
 tel: '3299837400, 3394037385, 3397616665'
 email: volontaribsa@gmail.com
