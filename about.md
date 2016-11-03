@@ -16,7 +16,7 @@ Social information about me.
 
 ## Twitter
 
-<a href="https://twitter.com/JoesGitHubBlog" class="twitter-follow-button" data-show-count="false">Follow @JoesGitHubBlog</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<a class="twitter-timeline" data-height="500" data-theme="light" href="https://twitter.com/JoesGitHubBlog">Tweets by JoesGitHubBlog</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## GitHub
 
