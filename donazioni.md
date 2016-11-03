@@ -13,7 +13,6 @@ permalink: /risorse-disponibili/
 	<p class="list-group-item-text">{{member.issue.data.descrizione}}</p>
 	<p class="list-group-item-text">{{member.issue.data.data}}</p>
 </a>
-{% endif %}
 <div class="panel-footer">
 <ul class="share-buttons">
   <li>Condividi:</li>
