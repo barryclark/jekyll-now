@@ -770,3 +770,34 @@ div.segnala > li {
 }
 
 /* FINE Pagina canali di comunicazione */
+
+/* Icone navigazione */
+.homepage-categories,
+.theme-gallery {
+  text-align: justify;
+}
+
+.homepage-categories:after,
+.theme-gallery:after {
+  display: inline-block;
+  width: 100%;
+  content: '';
+}
+
+.homepage-categories .thumbnail {
+  display: inline-block;
+  min-width: 120px;
+  text-align: center;
+  border: none;
+  padding: 10px;
+}
+
+.homepage-categories .thumbnail img {
+  height: 80px;
+}
+
+.homepage-categories a {
+  color: #000;
+}
+
+/*FINE Icone navigazione*/

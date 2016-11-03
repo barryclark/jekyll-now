@@ -4,39 +4,6 @@ title: Mappe
 permalink: /mappe/
 ---
 
-<style>
-
-.homepage-categories,
-.theme-gallery {
-  text-align: justify;
-}
-
-/* allows last line of categories to be justify aligned */
-.homepage-categories:after,
-.theme-gallery:after {
-  display: inline-block;
-  width: 100%;
-  content: '';
-}
-
-.homepage-categories .thumbnail {
-  display: inline-block;
-  min-width: 120px;
-  text-align: center;
-  border: none;
-  padding: 10px;
-}
-
-.homepage-categories .thumbnail img {
-  height: 80px;
-}
-
-.homepage-categories a {
-  color: #000;
-}
-</style>
-
-
 <div class="homepage-categories">
 {% for category in site.data.logos %}
   {% if category.map == true %}
