@@ -4,50 +4,6 @@ title: Terremoto Centro Italia
 subtitle: Un progetto per informare sugli eventi sismici che hanno colpito il Centro Italia nel 2016
 ---
 
-<style>
-
-.homepage-categories,
-.theme-gallery {
-  text-align: justify;
-}
-
-/* allows last line of categories to be justify aligned */
-.homepage-categories:after,
-.theme-gallery:after {
-  display: inline-block;
-  width: 100%;
-  content: '';
-}
-
-.homepage-categories .thumbnail {
-  display: inline-block;
-  min-width: 120px;
-  text-align: center;
-  border: none;
-  padding: 5px;
-}
-
-.homepage-categories .thumbnail img {
-  height: 120px;
-}
-
-.form-group-lg .form-control {
-    height: 56px;
-    padding: 10px 16px;
-    font-size: 18px;
-    line-height: 1.3333333;
-    border-radius: 6px;
-}
-
-.container {
-    width: 1400px;
-}
-
-.homepage-categories a {
-  color: #000;
-}
-</style>
-
 <div class="homepage-categories">
 {% for category in site.data.logos %}
   {% if category.map == false %}
