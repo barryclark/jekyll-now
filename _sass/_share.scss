@@ -1,7 +1,7 @@
 .share-block {
 	width: 100%;
 	white-space: nowrap;
-	overflow: hidden;
+	overflow: visible;
 }
 
 .share {
@@ -11,7 +11,7 @@
 }
 
 .share:hover {
-	box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 10px 10px 0 rgba(0, 0, 0);
 	transform: scale(1.1);
 }
 
@@ -35,6 +35,7 @@
 }
 
 .share.reddit {
+	background-color: #FFFFFF;
 	color: #000000;
 	border: 1px solid black;
 	border-radius: 5px;
