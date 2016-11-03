@@ -25,6 +25,17 @@ descrizione: '[comunicato Dip. Naz. Prot. Civ. 2 novembre] Dopo la forte scossa 
 link: 'http://www.protezionecivile.gov.it/jcms/it/view_new.wp?contentId=NEW60785'
 data: 03/11/2016
 </yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1101,187209768,2016-11-03 23:12:05,2016-11-03 22:40:41,Offresi furgone e disponibilità a chi deve sgomberare casa - 5 e 6 novembre,43.3379699,13.4348943,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Facebook"", ""Sisma Ottobre""]",,,"{""cosa"": ""G.F. Impianti offre furgone e disponibilit\u00e0 a chi deve sgomberare casa - 5 e 6 novembre"", ""data"": ""03/11/2016"", ""descrizione"": ""Vorremmo essere utili alle nostre comunit\u00e0 dell'alta Valle del Potenza, percui ci mettiamo a disposizione con il nostro furgone per poter aiutare chi deve sgomberare la propria abitazione. La Nostra disponibilit\u00e0 sar\u00e0 per sabato 5 e domenica 6 novembre."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via Piane Potenza, Montecassiano, MC, Marche, 62110, Italia"", ""lat"": ""43.3379699"", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1794220834178833/"", ""lon"": ""13.4348943"", ""tel"": ""Andrea Falchetti 3480318676, Carlo Grelloni 3409088160.""}","<pre><yamldata>tel: 'Andrea Falchetti 3480318676, Carlo Grelloni 3409088160.'
+email: ''
+cosa: 'G.F. Impianti offre furgone e disponibilità a chi deve sgomberare casa - 5 e 6 novembre'
+descrizione: 'Vorremmo essere utili alle nostre comunità dell''alta Valle del Potenza, percui ci mettiamo a disposizione con il nostro furgone per poter aiutare chi deve sgomberare la propria abitazione. La Nostra disponibilità sarà per sabato 5 e domenica 6 novembre.'
+indirizzo: 'Via Piane Potenza, Montecassiano, MC, Marche, 62110, Italia'
+lat: '43.3379699'
+lon: '13.4348943'
+link: 'https://www.facebook.com/groups/1758670357733881/permalink/1794220834178833/'
+immagine: ''
+data: 03/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1097,187201715,2016-11-03 21:58:33,2016-11-03 21:58:10,Volontariato a sostegno degli sfollati con Gus - Gruppo Umana Solidarietà,,,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""Volontariato a sostegno degli sfollati con Gus - Gruppo Umana Solidariet\u00e0"", ""data"": ""03/11/2016"", ""descrizione"": ""Il Gus dispone di una rete di ascolto in tutti i comuni terremotati. Per partecipare, in forma volontaria, alle attivit\u00e0 di sostegno della popolazione colpita, \u00e8 possibile candidarsi scrivendo una mail a: volontariatosisma2016@gusitalia.it"", ""email"": ""volontariatosisma2016@gusitalia.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""http://gusitalia.it/"", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
 email: volontariatosisma2016@gusitalia.it
 cosa: 'Volontariato a sostegno degli sfollati con Gus - Gruppo Umana Solidarietà'
@@ -4747,6 +4758,12 @@ data: 15/09/2016
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/456,177187381,2016-10-01 16:36:35,2016-09-15 14:09:01,Esonero tasse universitarie da Università Telematica San Raffaele Roma,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""Esonero tasse universitarie da Universit\u00e0 Telematica San Raffaele Roma"", ""link"": ""http://www.unisanraffaele.gov.it/universita/terremoto-universita-telematica-san-raffaele-roma-esonera-dal-pagamento-delle-tasse-universitarie-gli-studenti-delle-zone-colpite.html"", ""titolo"": ""Esonero tasse universitarie da Universit\u00e0 Telematica San Raffaele Roma""}","<pre><yamldata>titolo: 'Esonero tasse universitarie da Università Telematica San Raffaele Roma'
 descrizione: 'Esonero tasse universitarie da Università Telematica San Raffaele Roma'
 link: 'http://www.unisanraffaele.gov.it/universita/terremoto-universita-telematica-san-raffaele-roma-esonera-dal-pagamento-delle-tasse-universitarie-gli-studenti-delle-zone-colpite.html'
+data: 15/09/2016
+</yamldata></pre>
+",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/455,177186914,2016-10-01 16:36:44,2016-09-15 14:07:11,Sisma Centro Italia: misure per le imprese umbre,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""Dalla Regione Umbria e dal sistema camerale arriva il sostegno alle imprese danneggiate dal sisma."", ""link"": ""https://twitter.com/cypherinfo/status/771638061084004353"", ""titolo"": ""Sisma Centro Italia: misure per le imprese umbre""}","<pre><yamldata>titolo: 'Sisma Centro Italia: misure per le imprese umbre'
+descrizione: 'Dalla Regione Umbria e dal sistema camerale arriva il sostegno alle imprese danneggiate dal sisma.'
+link: 'https://twitter.com/cypherinfo/status/771638061084004353'
 data: 15/09/2016
 </yamldata></pre>
 ",open
