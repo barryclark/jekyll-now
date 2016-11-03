@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Review - Yeti"
-description: "Ever want to kill stuff with Yahtzee rolls? Fantahzee lets you do just that."
+description: "There's a yeti on the mountain. Snap pics, climb the mountain, and find the yet to win!"
 category: review
 featured: yeti.jpg
 amazonterm: "aeg yeti"
