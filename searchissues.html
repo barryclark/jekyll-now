@@ -55,7 +55,7 @@ window.store["{{site.url}}/issues/{{member.number}}"]={
         "content": "",
         {% endif %}
         {% if member.issue.created_at != blank %}
-        "date": "{{member.issue.created_at | date: '%-d/%m/%Y'' }}",
+        "date": "{{member.issue.created_at | date: '%-d/%m/%Y' }}",
         {% endif %}
         "url": "{{site.url}}/issues/{{member.number}}"
 };
