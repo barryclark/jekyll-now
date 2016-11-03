@@ -7609,13 +7609,6 @@ lat: 42.839213
 lon: 13.331344
 data: 13/09/2016</yamldata></pre>
 ",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/146,176590672,2016-09-13 12:29:14,2016-09-13 09:19:52,Prova 2,41.57342,12.584849,"[""Accettato"", ""Telegram""]",,http://i.imgur.com/zKTIrlp.jpg,"{""Telegram_user"": ""matteotempestini"", ""data"": ""13/09/2016"", ""descrizione"": ""Prova 2"", ""immagine"": ""http://i.imgur.com/zKTIrlp.jpg"", ""lat"": 41.57342, ""lon"": 12.584849}","<pre><yamldata>Telegram_user: matteotempestini
-descrizione: Prova 2
-immagine: http://i.imgur.com/zKTIrlp.jpg
-lat: 41.57342
-lon: 12.584849
-data: 13/09/2016</yamldata></pre>
-",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/143,176579027,2016-09-13 12:29:14,2016-09-13 08:20:16,Test,41.452078,12.584819,"[""Accettato"", ""Telegram""]",,https://terremotocentroitalia.herokuapp.com/wordpress/wp-content/uploads/telegram-bot/84/1473754815.jpg,"{""Telegram_user"": ""matteotempestini"", ""data"": ""13/09/2016"", ""descrizione"": ""Test"", ""immagine"": ""https://terremotocentroitalia.herokuapp.com/wordpress/wp-content/uploads/telegram-bot/84/1473754815.jpg"", ""lat"": 41.452078, ""lon"": 12.584819}","<pre><yamldata>Telegram_user: matteotempestini
 descrizione: Test
 immagine: https://terremotocentroitalia.herokuapp.com/wordpress/wp-content/uploads/telegram-bot/84/1473754815.jpg
