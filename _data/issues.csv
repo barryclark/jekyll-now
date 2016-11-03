@@ -5983,14 +5983,6 @@ immagine: ''
 data: 14/09/2016
 </yamldata></pre>
 ",closed
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/293,176867458,2016-09-14 11:01:32,2016-09-14 10:09:09,Scuola media di Arquata danneg,42.776289,13.29453,"[""Accettato"", ""Telegram""]",,http://i.imgur.com/ieYxjf9.jpg,"{""data"": ""14/09/2016"", ""descrizione"": ""Scuola media di Arquata danneggiata"", ""immagine"": ""http://i.imgur.com/ieYxjf9.jpg"", ""lat"": ""42.776289"", ""lon"": ""13.29453"", ""telegram_user"": """"}","<pre><yamldata>telegram_user: ''
-descrizione: 'Scuola media di Arquata danneggiata'
-immagine: 'http://i.imgur.com/ieYxjf9.jpg'
-lat: '42.776289'
-lon: '13.29453'
-data: 14/09/2016
-</yamldata></pre>
-",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/292,176867155,2016-09-14 10:08:50,2016-09-14 10:07:40,Scuola danneggiata,42.776289,13.29453,"[""Accettato"", ""Telegram""]",,http://i.imgur.com/zTCZhMk.jpg,"{""data"": ""14/09/2016"", ""descrizione"": ""Scuola danneggiata"", ""immagine"": ""http://i.imgur.com/zTCZhMk.jpg"", ""lat"": ""42.776289"", ""lon"": ""13.29453"", ""telegram_user"": """"}","<pre><yamldata>telegram_user: ''
 descrizione: 'Scuola danneggiata'
 immagine: 'http://i.imgur.com/zTCZhMk.jpg'
@@ -7616,48 +7608,6 @@ lat: 41.452078
 lon: 12.584819
 data: 13/09/2016</yamldata></pre>
 ",closed
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/135,176240530,2016-09-13 12:30:01,2016-09-11 12:01:37,Prova con heroku,42.62810172281644,13.292555809020996,"[""Accettato"", ""Fabbisogni"", ""Form""]",,http://i.imgur.com/NsaBzs0.png,"{""cosa"": ""Prova con heroku"", ""data"": ""11/09/2016"", ""descrizione"": ""Prova"", ""email"": null, ""immagine"": ""http://i.imgur.com/NsaBzs0.png"", ""indirizzo"": ""Via del Castagneto, Casale Zocchi, Amatrice, RI, Lazio, Italia"", ""lat"": 42.62810172281644, ""link"": null, ""lon"": 13.292555809020996, ""tel"": null}","<pre><yamldata>tel: 
-email: 
-cosa: Prova con heroku
-descrizione: Prova
-indirizzo: Via del Castagneto, Casale Zocchi, Amatrice, RI, Lazio, Italia
-lat: 42.62810172281644
-lon: 13.292555809020996
-link: 
-immagine: http://i.imgur.com/NsaBzs0.png
-data: 11/09/2016</yamldata></pre>
-",closed
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/133,176199443,2016-09-12 09:19:20,2016-09-10 19:55:50,Prova,42.6970719613491,13.118362426757812,"[""Accettato"", ""Contatti"", ""Form""]",,,"{""data"": ""10/09/2016"", ""descrizione"": ""Bho"", ""email"": ""sdfsdfinzauti@gmail.com"", ""indirizzo"": ""Strada provinciale di Norcia, Cascia, PG, UMB, 06043, Italia"", ""lat"": 42.6970719613491, ""link"": ""http://www.ansa.it/sito/notizie/cronaca/2016/09/09/ateneo-cagliari-no-tasse-terremotati_ffe4ee7d-ebc2-4d8c-9d34-f99d0d1eaa7b.html"", ""lon"": 13.118362426757812, ""nome"": ""Prova"", ""tel"": 393272032790}","<pre><yamldata>nome: Prova
-tel: +393272032790
-email: sdfsdfinzauti@gmail.com
-descrizione: Bho
-indirizzo: Strada provinciale di Norcia, Cascia, PG, UMB, 06043, Italia
-lat: 42.6970719613491
-lon: 13.118362426757812
-link: http://www.ansa.it/sito/notizie/cronaca/2016/09/09/ateneo-cagliari-no-tasse-terremotati_ffe4ee7d-ebc2-4d8c-9d34-f99d0d1eaa7b.html
-data: 10/09/2016</yamldata></pre>
-",closed
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/132,176198289,2016-09-13 12:29:14,2016-09-10 19:35:11,Test,42.63665812464417,13.298821449279785,"[""Accettato"", ""Fabbisogni"", ""Form""]",,https://terremoto.francescopinzauti.com/img/14-35-11Screenshot%20%289%29.png,"{""cosa"": ""Test"", ""data"": ""10/09/2016"", ""descrizione"": ""Una descrizione di prova"", ""email"": ""gfdgfdg@gmail.com"", ""immagine"": ""https://terremoto.francescopinzauti.com/img/14-35-11Screenshot%20%289%29.png"", ""indirizzo"": ""SP20, Casale Zocchi, Amatrice, RI, Lazio, Italia"", ""lat"": 42.63665812464417, ""link"": ""https://www.facebook.com"", ""lon"": 13.298821449279785, ""tel"": 393272032790}","<pre><yamldata>tel: +393272032790
-email: gfdgfdg@gmail.com
-cosa: Test
-descrizione: Una descrizione di prova
-indirizzo: SP20, Casale Zocchi, Amatrice, RI, Lazio, Italia
-lat: 42.63665812464417
-lon: 13.298821449279785
-link: https://www.facebook.com
-immagine: https://terremoto.francescopinzauti.com/img/14-35-11Screenshot%20%289%29.png
-data: 10/09/2016</yamldata></pre>
-",closed
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/131,176197968,2016-09-13 12:29:14,2016-09-10 19:29:07,Prova,42.658454266731226,13.22479248046875,"[""Accettato"", ""Alloggi"", ""Form""]",,https://terremoto.francescopinzauti.com/img/14-29-07Screenshot%20%286%29.png,"{""data"": ""10/09/2016"", ""descrizione"": ""Prova"", ""email"": ""francescopinzauti@gmail.com"", ""immagine"": ""https://terremoto.francescopinzauti.com/img/14-29-07Screenshot%20%286%29.png"", ""indirizzo"": ""Collemoresco, Amatrice, RI, Lazio, Italia"", ""lat"": 42.658454266731226, ""link"": ""http://www.ansa.it/sito/notizie/cronaca/2016/09/09/ateneo-cagliari-no-tasse-terremotati_ffe4ee7d-ebc2-4d8c-9d34-f99d0d1eaa7b.html"", ""lon"": 13.22479248046875, ""tel"": 393272032790}","<pre><yamldata>tel: +393272032790
-email: francescopinzauti@gmail.com
-descrizione: Prova
-indirizzo: Collemoresco, Amatrice, RI, Lazio, Italia
-lat: 42.658454266731226
-lon: 13.22479248046875
-link: http://www.ansa.it/sito/notizie/cronaca/2016/09/09/ateneo-cagliari-no-tasse-terremotati_ffe4ee7d-ebc2-4d8c-9d34-f99d0d1eaa7b.html
-immagine: https://terremoto.francescopinzauti.com/img/14-29-07Screenshot%20%286%29.png
-data: 10/09/2016</yamldata></pre>
-",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/120,176182652,2016-10-01 15:58:57,2016-09-10 14:34:43,"Ateneo Cagliari, niente tasse per i terremotati",,,"[""Accettato"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""10/09/2016"", ""descrizione"": ""L'Universit\u00e0 di Cagliari ha deciso di esonerare totalmente dal pagamento delle tasse e dei contributi universitari gli studenti residenti, o famiglia residente, nei comuni colpiti dall'evento sismico del 24 agosto, che ha interessato Abruzzo, Lazio, Marche e Umbria."", ""link"": ""http://www.ansa.it/sito/notizie/cronaca/2016/09/09/ateneo-cagliari-no-tasse-terremotati_ffe4ee7d-ebc2-4d8c-9d34-f99d0d1eaa7b.html"", ""titolo"": ""Ateneo Cagliari, niente tasse per i terremotati""}","<pre><yamldata>titolo: Ateneo Cagliari, niente tasse per i terremotati
 descrizione: L'Università di Cagliari ha deciso di esonerare totalmente dal pagamento delle tasse e dei contributi universitari gli studenti residenti, o famiglia residente, nei comuni colpiti dall'evento sismico del 24 agosto, che ha interessato Abruzzo, Lazio, Marche e Umbria.
 link: http://www.ansa.it/sito/notizie/cronaca/2016/09/09/ateneo-cagliari-no-tasse-terremotati_ffe4ee7d-ebc2-4d8c-9d34-f99d0d1eaa7b.html
@@ -7683,17 +7633,6 @@ link: http://www.wikipedia.org
 immagine: https://terremoto.francescopinzauti.com/img/13-33-09android-chrome-192x192.png
 data: 09/09/2016</yamldata></pre>
 ",closed
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/115,176071006,2016-09-10 19:15:57,2016-09-09 18:02:29,Prova,45.4654219,9.18592430000001,"[""Accettato"", ""Donazioni"", ""Form""]",,https://terremoto.francescopinzauti.com/img/13-02-29terremoto.jpg,"{""cosa"": ""Prova"", ""data"": ""09/09/2016"", ""descrizione"": ""Una prova"", ""email"": ""francescopinzauti@gmail.com"", ""immagine"": ""https://terremoto.francescopinzauti.com/img/13-02-29terremoto.jpg"", ""indirizzo"": ""Via Dante, 1, 20121 Milano, Italia"", ""lat"": 45.4654219, ""link"": ""http://www.dailymotion.com/"", ""lon"": 9.18592430000001, ""tel"": 393272032790}","<pre><yamldata>tel: +393272032790
-email: francescopinzauti@gmail.com
-cosa: Prova
-descrizione: Una prova
-indirizzo: Via Dante, 1, 20121 Milano, Italia
-lat: 45.4654219
-lon: 9.18592430000001
-link: http://www.dailymotion.com/
-immagine: https://terremoto.francescopinzauti.com/img/13-02-29terremoto.jpg
-data: 09/09/2016</yamldata></pre>
-",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/114,176068847,2016-09-10 19:15:57,2016-09-09 17:52:18,Nuovo user,41.90278349999999,12.496365500000024,"[""Accettato"", ""Fabbisogni"", ""Form""]",,https://terremoto.francescopinzauti.com/img/12-52-18logo.png,"{""cosa"": ""Nuovo user"", ""data"": ""09/09/2016"", ""descrizione"": ""Ciao!"", ""email"": ""francescopinzauti@gmail.com"", ""immagine"": ""https://terremoto.francescopinzauti.com/img/12-52-18logo.png"", ""indirizzo"": ""Piazza della Repubblica, 10, 00185 Roma, Italia"", ""lat"": 41.90278349999999, ""link"": ""http://www.dailymotion.com/"", ""lon"": 12.496365500000024, ""tel"": 393272032790}","<pre><yamldata>tel: +393272032790
 email: francescopinzauti@gmail.com
 cosa: Nuovo user
@@ -7703,17 +7642,6 @@ lat: 41.90278349999999
 lon: 12.496365500000024
 link: http://www.dailymotion.com/
 immagine: https://terremoto.francescopinzauti.com/img/12-52-18logo.png
-data: 09/09/2016</yamldata></pre>
-",closed
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/111,176020183,2016-09-10 19:15:57,2016-09-09 14:15:02,Nuovo utente!,45.48588769999999,9.204282700000022,"[""Accettato"", ""Donazioni"", ""Form""]",,https://terremoto.francescopinzauti.com/img/09-15-02gatto_scottish.jpg,"{""cosa"": ""Nuovo utente!"", ""data"": ""09/09/2016"", ""descrizione"": ""Prova con il nuovo utente"", ""email"": ""info@francescopinzauti.com"", ""immagine"": ""https://terremoto.francescopinzauti.com/img/09-15-02gatto_scottish.jpg"", ""indirizzo"": ""Piazza Luigi di Savoia, 9, 20124 Milano, Italia"", ""lat"": 45.48588769999999, ""link"": ""http://www.dailymotion.com/"", ""lon"": 9.204282700000022, ""tel"": 393272032790}","<pre><yamldata>tel: +393272032790
-email: info@francescopinzauti.com
-cosa: Nuovo utente!
-descrizione: Prova con il nuovo utente
-indirizzo: Piazza Luigi di Savoia, 9, 20124 Milano, Italia
-lat: 45.48588769999999
-lon: 9.204282700000022
-link: http://www.dailymotion.com/
-immagine: https://terremoto.francescopinzauti.com/img/09-15-02gatto_scottish.jpg
 data: 09/09/2016</yamldata></pre>
 ",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/105,175871262,2016-09-09 16:00:19,2016-09-08 21:38:25,Test,41.9277619,12.455840399999943,"[""Accettato"", ""Alloggi"", ""Form""]",,https://terremoto.francescopinzauti.com/img/16-38-24WP_20160908_23_38_04_Pro.jpg,"{""data"": ""08/09/2016"", ""descrizione"": ""Test"", ""email"": ""macorte@gmail.com"", ""immagine"": ""https://terremoto.francescopinzauti.com/img/16-38-24WP_20160908_23_38_04_Pro.jpg"", ""indirizzo"": ""Viale dei Gladiatori, 63, 00135 Roma, Italia"", ""lat"": 41.9277619, ""link"": null, ""lon"": 12.455840399999943, ""tel"": 3476409364}","<pre><yamldata>tel: 3476409364
@@ -7746,16 +7674,6 @@ lat: 41.90278349999999
 lon: 12.496365500000024
 link: https://www.google.it
 immagine: https://terremoto.francescopinzauti.com/img/08-42-253827986e-75d7-11e6-9b56-66b3210cb67e.jpg
-data: 08/09/2016</yamldata></pre>
-",closed
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/95,175745273,2016-09-08 13:02:18,2016-09-08 12:51:06,Prova da mobile,44.05487,12.436493199999973,"[""Accettato"", ""Alloggi"", ""Form""]",,https://terremoto.francescopinzauti.com/img/07-51-06IMG_20160902_232649.jpg,"{""data"": ""08/09/2016"", ""descrizione"": ""Prova da mobile"", ""email"": ""francescopinzauti@gmail.com"", ""immagine"": ""https://terremoto.francescopinzauti.com/img/07-51-06IMG_20160902_232649.jpg"", ""indirizzo"": ""Via Casetti Contea, 12, 47822 Santarcangelo di Romagna RN, Italia"", ""lat"": 44.05487, ""link"": ""https://www.google.it"", ""lon"": 12.436493199999973, ""tel"": 393272032790}","<pre><yamldata>tel: +393272032790
-email: francescopinzauti@gmail.com
-descrizione: Prova da mobile
-indirizzo: Via Casetti Contea, 12, 47822 Santarcangelo di Romagna RN, Italia
-lat: 44.05487
-lon: 12.436493199999973
-link: https://www.google.it
-immagine: https://terremoto.francescopinzauti.com/img/07-51-06IMG_20160902_232649.jpg
 data: 08/09/2016</yamldata></pre>
 ",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/94,175726778,2016-09-08 13:02:18,2016-09-08 11:11:14,Test 3033030,41.7881513,12.424488800000063,"[""Accettato"", ""Fabbisogni"", ""Form""]",,https://terremoto.francescopinzauti.com/img/06-11-141-2-1.jpg,"{""cosa"": ""Test 3033030"", ""data"": ""08/09/2016"", ""descrizione"": ""DEsc 30303"", ""email"": ""francescopinzauti@gmail.com"", ""immagine"": ""https://terremoto.francescopinzauti.com/img/06-11-141-2-1.jpg"", ""indirizzo"": ""Via Cristoforo Colombo, 00128 Roma, Italia"", ""lat"": 41.7881513, ""link"": ""https://wwww.google.com"", ""lon"": 12.424488800000063, ""tel"": 393272032790}","<pre><yamldata>tel: +393272032790
@@ -7801,16 +7719,6 @@ lon: 12.530233100000032
 link: http://www.ilsito.com
 data: 07/09/2016</yamldata></pre>
 ",closed
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/78,175550060,2016-09-07 16:41:52,2016-09-07 16:35:49,Una cosa,45.47906709999999,9.845243299999993,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Una cosa"", ""data"": ""07/09/2016"", ""descrizione"": ""Prova%3A Ciao"", ""email"": ""francescopinzauti@gmail.com"", ""indirizzo"": ""Cascina Barbonina, Provincia di Bergamo, Italia"", ""lat"": 45.47906709999999, ""link"": ""https://www.google.com"", ""lon"": 9.845243299999993, ""tel"": 393272032790}","<pre><yamldata>tel: +393272032790
-email: francescopinzauti@gmail.com
-cosa: Una cosa
-descrizione: Prova%3A Ciao
-indirizzo: Cascina Barbonina, Provincia di Bergamo, Italia
-lat: 45.47906709999999
-lon: 9.845243299999993
-link: https://www.google.com
-data: 07/09/2016</yamldata></pre>
-",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/77,175549786,2016-09-07 16:41:52,2016-09-07 16:34:30,Bho,45.4430336,12.332174900000041,"[""Accettato"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""Bho"", ""data"": ""07/09/2016"", ""descrizione"": ""A caso"", ""email"": ""francescopinzauti@gmail.com"", ""indirizzo"": ""Str. Nova, 2215, 30121 Venezia, Italia"", ""lat"": 45.4430336, ""link"": ""https://github.com"", ""lon"": 12.332174900000041, ""tel"": 393272032790}","<pre><yamldata>tel: +393272032790
 email: francescopinzauti@gmail.com
 cosa: Bho
@@ -7842,15 +7750,6 @@ lon: 11.84692480000001
 link: https://www.twitter.com
 data: 07/09/2016</yamldata></pre>
 ",closed
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/74,175512523,2016-09-07 16:41:52,2016-09-07 14:09:58,Prova,41.90278349999999,12.496365500000024,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""07/09/2016"", ""descrizione"": ""Prova"", ""email"": ""support@francescopinzauti.com"", ""indirizzo"": ""Piazza della Repubblica, 10, 00185 Roma, Italia"", ""lat"": 41.90278349999999, ""link"": ""https://www.google.com"", ""lon"": 12.496365500000024, ""tel"": 393272032790}","<pre><yamldata>tel: +393272032790
-email: support@francescopinzauti.com
-descrizione: Prova
-indirizzo: Piazza della Repubblica, 10, 00185 Roma, Italia
-lat: 41.90278349999999
-lon: 12.496365500000024
-link: https://www.google.com
-data: 07/09/2016</yamldata></pre>
-",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/71,175507196,2016-09-07 14:09:27,2016-09-07 13:48:37,Un test,,,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,{},"<pre><yamldata>tel: +393272032790
             email: info@francescopinzauti.com
             cosa: Un test
@@ -7860,16 +7759,6 @@ https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/71,17550719
             lon: 14.268124400000033
             link: https://www.google.com
             data: 07/09/2016</pre></yamldata>
-",closed
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/69,175491734,2016-09-07 13:53:29,2016-09-07 12:37:38,Prova!,,,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,{},"tel: +393272032790
-            email: info@francescopinzauti.com
-            cosa: Prova!
-            descrizione: Una prova
-            indirizzo: Via Dante, 1, 20121 Milano, Italia
-            lat: 45.4654219
-            lon: 9.18592430000001
-            link: https://developer.github.com/v3/issues/#create-an-issue
-            data: 07/09/2016
 ",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/63,175466580,2016-09-13 12:29:13,2016-09-07 10:22:23,TEST - ,,,"[""Accettato"", ""Alloggi"", ""Donazioni""]",,,{},"lat:
 lon:
