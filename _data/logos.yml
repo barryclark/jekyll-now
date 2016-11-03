@@ -46,3 +46,7 @@
   logo: /img/icone/news2-tci.png
   map: false
   link: news
+- name: MAPPE
+  logo: /img/icone/11-comunicolpiti.png
+  map: false
+  link: mappe
