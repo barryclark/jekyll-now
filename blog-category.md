@@ -207,8 +207,8 @@ heading: Blog
         <div class="panel-heading">Apache Mina <span class="label label-info">2</span></div>
         <div class="panel-body">
           <ul>
-            <li>Chapter 0 : <a href="{{site.baseurl}}/blog/java/apache-mina/apache-mina-introduction/">Apache Mina Introduction</a></li>
-            <li>Chapter 1 : <a href="{{site.baseurl}}/blog/java/apache-mina/apache-mina-client/">Mina Client</a></li>
+            <li>Chapter 0 : <a href="{{site.baseurl}}/blog/apache-guys/apache-mina/apache-mina-introduction">Apache Mina Introduction</a></li>
+            <li>Chapter 1 : <a href="{{site.baseurl}}/blog/apache-guys/apache-mina/apache-mina-client">Mina Client</a></li>
           </ul>
         </div>
       </div>
