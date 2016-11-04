@@ -18,6 +18,26 @@ Over time the writers at Purple Pawn have started referring to ourselves as Pawn
 
 I should also mention that I don't cover a broad range of anything. You won't see all the latest board game, toy, and video game news and releases. I won't be reviewing or unboxing everything that I see/can get my hands on. If I post it here it's because I have a personal interest in it.
 
+### Equipment
+
+**Phone/Camera:**
+
+[OnePlus 2](https://oneplus.net/oneplus-2)
+
+**Everyday Laptop:**
+
+MacBook Pro (Retina, 15-inch, Mid 2014)
+Processor: 2.5GHz Intel Core i7
+Memory: 16 GB 1600 MHz DDR3
+Graphics: Intel Iris Pro 1536 MB
+Storage: 250GB SSD
+
+**Gaming Laptop:**
+
+Lenovo Y510P
+(Stats coming soon)
+
+
 ### Contact me
 
 rkalajian [at] gmail.com
@@ -28,5 +48,6 @@ rkalajian [at] gmail.com
 Logo designed by [DPH Studioz](http://dphstudioz.com/)\\
 Design advice by [DPH Studioz](http://dphstudioz.com/) and [Denagh Design](http://denaghdesign.com/)\\
 Powered by [jekyll](https://jekyllrb.com/), hosted on [GitHub Pages](https://pages.github.com/)\\
-Theme based off the [Jekyll Grid Theme](http://25x52.com/Jekyll-Grid/) by [femmebot](https://github.com/femmebot)
-Instagram photos on the homepage are pulled using [Lightwidget](https://lightwidget.com/)
+Theme based off the [Jekyll Grid Theme](http://25x52.com/Jekyll-Grid/) by [femmebot](https://github.com/femmebot)\\
+Instagram photos on the homepage are pulled using [Lightwidget](https://lightwidget.com/)\\
+Posts are written using [Atom](https://atom.io/)
