@@ -23,12 +23,10 @@ body {
 }
 
 .navbar {
-	width: 20%;
+	width: 24%;
 	padding: 1%;
-
-	@include mobile {	
-		border-top: 1px solid black;
-	}
+    background-color: whitesmoke;
+    border-radius: 25px;
 }
 
 .posts, .navbar {
