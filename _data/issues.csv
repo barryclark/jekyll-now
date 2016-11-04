@@ -7170,18 +7170,6 @@ email: ''
 data: 13/09/2016
 </yamldata></pre>
 ",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/211,176773977,2016-09-13 23:26:41,2016-09-13 23:10:59,UISP Rieti,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""UISP Rieti"", ""data"": ""13/09/2016"", ""descrizione"": ""Iniziativa di crowdfunding su Rete del Dono"", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""https://www.retedeldono.it/it/siamoconvoi"", ""postale"": """"}","<pre><yamldata>chi: 'UISP Rieti'
-descrizione: 'Iniziativa di crowdfunding su Rete del Dono'
-intestazione: ''
-iban: ''
-bic: ''
-postale: ''
-causale: ''
-link: 'https://www.retedeldono.it/it/siamoconvoi'
-email: ''
-data: 13/09/2016
-</yamldata></pre>
-",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/210,176773917,2016-09-13 23:26:48,2016-09-13 23:10:34,National Italian American Fondation,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""National Italian American Fondation"", ""data"": ""13/09/2016"", ""descrizione"": """", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""http://italianamericanrelief.org"", ""postale"": """"}","<pre><yamldata>chi: 'National Italian American Fondation'
 descrizione: ''
 intestazione: ''
