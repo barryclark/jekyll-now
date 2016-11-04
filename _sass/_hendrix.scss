@@ -24,11 +24,17 @@ body {
 
 .navbar {
 	width: 20%;
+	padding: 1%;
 }
 
 .posts, .navbar {
 	display: inline-block;
 	vertical-align: top;
+	
+	@include mobile {
+		display: block;
+		width: 100%;
+	}
 }
 
 nav {
