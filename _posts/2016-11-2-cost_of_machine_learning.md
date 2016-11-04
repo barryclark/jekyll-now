@@ -8,16 +8,16 @@ style: |
   td, th {border: 1pt solid gray; padding-left: 1em; padding-right: 1em;}
 ---
 
-How much does deep learning cost, anyway? Let me compare some cloud hardware and get down to dollars and cents.
+Exactly how much does deep learning cost? And are those prices fixed, or can they be optimized? Let me compare some cloud hardware and get down to dollars and cents to uncover some answers.
 
 The ultimate goal of deep learning is to create a good model. This requires a lot of data, patience, and some luck.
 Basically, what we are doing is runing many experiments on the training data. The amount of training data for
 a task is pretty much fixed. The number of experiments depends on how many different hyperparameters you want to try.
 
-When talking about cost, what really matters is the cost of training **one epoch**. This is the cost of showing my training algorithm every example in my training set *exactly once*.
+When talking about cost, what really matters is the cost of training **one epoch**. This is the cost of running my training algorithm on every example in my training set *exactly once*.
 
-As defined, the *cost of one epoch* is very problem-specific. It is also model-specific. Thus, when we talk about the cost,
-it is very specific to the problem we are solving. Each problem needs its own cost analysis to be performed, and it may happen that the cheapest platform for `model1` is not the cheapest one for `model2`. Beware!
+As defined, the *cost of one epoch* is very problem specific. It is also model specific. Thus, when we talk about the cost,
+it is very specific to the problem we are solving. Each problem, therefore, needs its own cost analysis to be performed, and the cheapest platform for `model1` may not be the cheapest for `model2`. Beware!
 
 ## Methodology
 I will use my TensorFlow port of
@@ -50,10 +50,10 @@ to rent (per hour).
 Can we do better? Sure!
 
 The default training parameters were selected assuming 4Gb of GPU memory. By changing `batch_size` training
-parameter, we change the amount of memory that training requires.
+parameter, we change the amount of memory required to perform that training.
 Increasing batch size proportionally decreases the number of batches in the epoch, while processing time per batch should stay roughly unchanged.
 
-Ideally, we will choose the batch size to utilize the 100% of GPU memory.
+Ideally, we choose a batch size that will use 100% of GPU memory.
 
 Here is an extension to the table above:
 
@@ -63,5 +63,7 @@ Here is an extension to the table above:
 | cost (cents)  | 11          | 4.3                         |
 
 So, by choosing the correct hardware, and tweaking the trainig procedure 
-to fully utilize this hardware, we reduced the cost of training
-from 60 cents/epoch to 4 cents/epoch. This should make the accounting department happy :)
+to make full use of this hardware, we reduced the cost of training
+from 60 cents/epoch to 4 cents/epoch. 
+
+This should make the accounting department happy :)
