@@ -4,7 +4,7 @@
     if (results.length) { // Are there any results?
       var appendString = '';
 
-        appendString += '<div class="row"><div class="panel-group">';
+        appendString += '<div class="panel-group">';
       for (var i = 0; i < results.length; i++) {  // Iterate over the results
               var item = store[results[i].ref];
               appendString += '<a href="' + item.url + '" class="list-group-item">';
@@ -14,14 +14,15 @@
               appendString += '</div>';
               appendString += '<div class="panel-body">';
 
+              appendString += '<small>';
               appendString += '<p class="list-group-item-text">' + item.content.substring(0, 250) + '...</p>'
               appendString += '<p class="list-group-item-text">' + item.date + '</p>'
+              appendString += '</small>';
 
               appendString += '</div>';
               appendString += '</div>';
               appendString += '</a>';
       }
-        appendString += '</div>';
         appendString += '</div>';
 
       searchResults.innerHTML = appendString;
