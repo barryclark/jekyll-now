@@ -4,7 +4,7 @@ permalink: /blog/category
 heading: Blog
 ---
 
-<ul class="nav nav-tabs">
+<ul class="nav nav-pills">
   <li class="active dropdown">
     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Java EE&SE<span class="caret"></span></a>
     <ul class="dropdown-menu">
@@ -449,8 +449,76 @@ heading: Blog
     Örnek olarak default cookine name ile tomcat şöyle bir session id olusturur : https://webapp.com/index.jsp;jsessionid=557206C363F1267A24AB769CA0DE4529.node01
 
     Değişiklik sonrası şunun gibi olacaktır : https://webapp.com/index.jsp;JCaysever=557206C363F1267A24AB769CA0DE4529.node01
-
   </div>  
+</div>
+
+<div class="tab-content" style="padding-top: 20px;">
+  <div id="apache-guys" class="tab-pane fade">
+    <div class="panel-group">
+    <!-- apache-log4j yazıları -->
+    <div id="apache-log4j" class="panel panel-info">
+    <div class="panel-heading">Apache Log4j <span class="label label-info">1</span></div>
+    <div class="panel-body">
+    <ul>
+    <li>Chapter 0 : <a href="{{site.baseurl}}/blog/java/apache-log4j/log4j-introduction/">Log4j Introduction</a></li>
+    </ul>
+    </div>
+    </div>
+
+    <!-- apache-maven yazıları -->
+    <div id="apache-maven" class="panel panel-info">
+    <div class="panel-heading">Apache Maven <span class="label label-info">3</span></div>
+    <div class="panel-body">
+    <ul>
+    <li>Chapter 0 : <a href="{{site.baseurl}}/blog/java/apache-maven/maven-introduction/">Maven Introduction</a></li>
+    <li>Chapter 1 : <a href="{{site.baseurl}}/blog/java/apache-maven/simple-maven-project/">Simple Maven Project</a></li>
+    <li>Chapter 2 : <a href="{{site.baseurl}}/blog/java/apache-maven/maven-pom/">Maven POM</a></li>
+    </ul>
+    </div>
+    </div>
+
+    <!-- apache-mina yazıları -->
+    <div id="apache-maven" class="panel panel-info">
+    <div class="panel-heading">Apache Mina <span class="label label-info">2</span></div>
+    <div class="panel-body">
+    <ul>
+    <li>Chapter 0 : <a href="{{site.baseurl}}/blog/java/apache-mina/apache-mina-introduction/">Apache Mina Introduction</a></li>
+    <li>Chapter 1 : <a href="{{site.baseurl}}/blog/java/apache-mina/apache-mina-client/">Mina Client</a></li>
+    </ul>
+    </div>
+    </div>
+
+    <!-- apache-myself -->
+    <div id="apache-myself" class="panel panel-info">
+    <div class="panel-heading">Log Analys <span class="label label-info">1</span></div>
+    <div class="panel-body">
+    <p>Üniversite bitirme projesi olarak, cluster ortamda çalışan bir Log Analiz uygulaması yapmıştım. Başlangıçta sadece Log analizi olarak düşünmüşken proje ilerledikçe farklı dosya türlerine destek verecek yapıya büründü proje.</p>
+
+    <p>Log Analiz App, Apache Hadoop üzerinde çalışan ve uygulamaların oluşturmuş olduğu log dosyalarının analizini gerçekleştiren Java’da yazılmış bir araçtır. Specification içerisinde bazı kurallar tanımlıdır, bunlardan en önemlisi analiz edilecek olan datanın başında ASCII STX(Start Of Text) ve sonunda ASCII ETX(End Of Text) karekterlerinin olmasıdır. Template desteği ile istenilen stx ve etx karekteri ayarlanabilmektedir. Detaylara pdf dosyasından erişebilirsiniz.</p>
+
+    Log Analiz uygulamamızın en önemli avantajı tamamen configuration dosyası üzerinden tüm işlemlerin yapılmasıdır. Detaylarına pdf'den erişebileceginiz gibi ufak detaylar da vermek isterim. Uygulama kullanıcısı, configuration dosyası içerisinde hangi verinin nasıl işleneceğini(Template Definition), işlenen veririn nasıl sunulacağını(Monitoring Definition), analiz sonucu oluşan temiz data'nın nereye aktarılacağı(Export Adaptor Definition) gibi işlemleri yapabilmektedir. Örnek olarak kullanıcı; Web Server log dosyası için aynı anda farklı template'ler tanımlayabilir, bu template'ler context initialization ve/veya context destroy işlemleri olabilirken aynı anda method execute time, method invoke count vb olabilir. Template sonucunu file/db export adaptorlerine aktarabilir ve aynı anda http üzerinden(port vs conf. tabanlı) monitoringi yapabilir.
+
+    <h4>Log Analiz v0.3 şuan da aşağıdaki özelliklere sahiptir</h4>
+    <ul>
+    <li>Verilen dosyaların nasıl işleneceğini belirten en önemli konfigürasyon tanımıdır. Log satırının neler içerdiği, tiplerinin ne olduğunu ve bu alanlar üzeride tanımlanmış formatları belirtir. Templates içerisidne ve birden fazla template tanımlanabilir. </li>
+    <li> Method bazında : Methodların toplam çalışma zamanı, bir log dosyası içerisinde çağrılan toplam method sayısı. Bu methodların çağrılma zamanları gibi analizleri yapabilmektedir.</li>
+    <li> Log dosyası eğer Java Web Application ise Context initialization ve Context destroyed aksiyonları için uygulamanın server’da ne kadar sürede ayağa kalktığı ve durduğu tespit edilebilmektedir.</li>
+    <li> Bir method içerisinde tanımı gerçekleştirilen değişken tanımları sayısı ve bu değişkenlerin bellekte kapladığı alanın byte cinsinden değeri bulunabilmektedir.</li>
+    <li> Analiz sonucu oluşan dataların HTTP üzerinden monitoringi yapılabilmektedir. Burada herhangi bir external web server gerekli değildir, uygulama çalışmaya başladığında embeded bir tomcat ayağa kaldırak hazır war uygulamasını da deploy etmektedir. Bu sayede analizi edilen dataların sunulabilmesi sağlanmıştır.</li>
+    <li> Log dosyasında boyut sınırlaması bulunmamaktadır. Hadoop ile cluster mimari de çalıştığı için dosya boyutunun büyük olması tercih edilebilir, küçük dosyalar da hız avantajı net görülemeyebiliyor çünkü.</li>
+    <li> Export Destinations : File/DB/Socket seçeneklerinden aynı anda bir veya daha fazlasını seçerek analiz sonucu elde edilen data'yı istediği yere aktarabilir. Her Definition için özel ayarlar mevcuttur. Örneğin file için dosyaya yazma formatı, max dosya boyutu, db için table/column tanımları, socket için port/ip ve mesaj yazma interval gibi degerler conf. bazlıdır.</li>
+    <li>Analiz edilen verilerin kaybedilmemesi için uygulama kendi içerisinde H2 memory database ayağa kaldırmaktadır. Gerekli tablo ve tablo desenleri conf'da ki tanımlamalardan yola çıkılarak oluşturulur.</li>
+    </ul>
+
+    Proje dokümanına <a href="{{site.baseurl}}/v2-alican-abdurrahman_bitirme_tez.pdf">buradan</a> , proje sunumuna <a href="{{site.baseurl}}/bitirme_sunum.pdf">buradan</a> kodlara ise <a href="https://github.com/AlicanAkkus/LogAnalys">şuradan</a> erişebilirsiniz.
+    </div>
+    </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="tab-content" style="padding-top: 20px;">
   <!-- spring platform -->
   <div id="spring" class="tab-pane fade">
     <div class="panel-group">
@@ -493,72 +561,9 @@ heading: Blog
 
     </div>
   </div>
+</div>
 
-
-  <div id="apache-guys" class="tab-pane fade">
-    <div class="panel-group">
-      <!-- apache-log4j yazıları -->
-      <div id="apache-log4j" class="panel panel-info">
-        <div class="panel-heading">Apache Log4j <span class="label label-info">1</span></div>
-        <div class="panel-body">
-          <ul>
-            <li>Chapter 0 : <a href="{{site.baseurl}}/blog/java/apache-log4j/log4j-introduction/">Log4j Introduction</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- apache-maven yazıları -->
-      <div id="apache-maven" class="panel panel-info">
-        <div class="panel-heading">Apache Maven <span class="label label-info">3</span></div>
-        <div class="panel-body">
-          <ul>
-            <li>Chapter 0 : <a href="{{site.baseurl}}/blog/java/apache-maven/maven-introduction/">Maven Introduction</a></li>
-            <li>Chapter 1 : <a href="{{site.baseurl}}/blog/java/apache-maven/simple-maven-project/">Simple Maven Project</a></li>
-            <li>Chapter 2 : <a href="{{site.baseurl}}/blog/java/apache-maven/maven-pom/">Maven POM</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- apache-mina yazıları -->
-      <div id="apache-maven" class="panel panel-info">
-        <div class="panel-heading">Apache Mina <span class="label label-info">2</span></div>
-        <div class="panel-body">
-          <ul>
-            <li>Chapter 0 : <a href="{{site.baseurl}}/blog/java/apache-mina/apache-mina-introduction/">Apache Mina Introduction</a></li>
-            <li>Chapter 1 : <a href="{{site.baseurl}}/blog/java/apache-mina/apache-mina-client/">Mina Client</a></li>
-          </ul>
-        </div>
-      </div>
-
-            <!-- apache-myself -->
-            <div id="apache-myself" class="panel panel-info">
-              <div class="panel-heading">Log Analys <span class="label label-info">1</span></div>
-              <div class="panel-body">
-                <p>Üniversite bitirme projesi olarak, cluster ortamda çalışan bir Log Analiz uygulaması yapmıştım. Başlangıçta sadece Log analizi olarak düşünmüşken proje ilerledikçe farklı dosya türlerine destek verecek yapıya büründü proje.</p>
-
-                <p>Log Analiz App, Apache Hadoop üzerinde çalışan ve uygulamaların oluşturmuş olduğu log dosyalarının analizini gerçekleştiren Java’da yazılmış bir araçtır. Specification içerisinde bazı kurallar tanımlıdır, bunlardan en önemlisi analiz edilecek olan datanın başında ASCII STX(Start Of Text) ve sonunda ASCII ETX(End Of Text) karekterlerinin olmasıdır. Template desteği ile istenilen stx ve etx karekteri ayarlanabilmektedir. Detaylara pdf dosyasından erişebilirsiniz.</p>
-
-                Log Analiz uygulamamızın en önemli avantajı tamamen configuration dosyası üzerinden tüm işlemlerin yapılmasıdır. Detaylarına pdf'den erişebileceginiz gibi ufak detaylar da vermek isterim. Uygulama kullanıcısı, configuration dosyası içerisinde hangi verinin nasıl işleneceğini(Template Definition), işlenen veririn nasıl sunulacağını(Monitoring Definition), analiz sonucu oluşan temiz data'nın nereye aktarılacağı(Export Adaptor Definition) gibi işlemleri yapabilmektedir. Örnek olarak kullanıcı; Web Server log dosyası için aynı anda farklı template'ler tanımlayabilir, bu template'ler context initialization ve/veya context destroy işlemleri olabilirken aynı anda method execute time, method invoke count vb olabilir. Template sonucunu file/db export adaptorlerine aktarabilir ve aynı anda http üzerinden(port vs conf. tabanlı) monitoringi yapabilir.
-
-                <h4>Log Analiz v0.3 şuan da aşağıdaki özelliklere sahiptir</h4>
-                <ul>
-                  <li>Verilen dosyaların nasıl işleneceğini belirten en önemli konfigürasyon tanımıdır. Log satırının neler içerdiği, tiplerinin ne olduğunu ve bu alanlar üzeride tanımlanmış formatları belirtir. Templates içerisidne ve birden fazla template tanımlanabilir. </li>
-                  <li> Method bazında : Methodların toplam çalışma zamanı, bir log dosyası içerisinde çağrılan toplam method sayısı. Bu methodların çağrılma zamanları gibi analizleri yapabilmektedir.</li>
-                  <li> Log dosyası eğer Java Web Application ise Context initialization ve Context destroyed aksiyonları için uygulamanın server’da ne kadar sürede ayağa kalktığı ve durduğu tespit edilebilmektedir.</li>
-                  <li> Bir method içerisinde tanımı gerçekleştirilen değişken tanımları sayısı ve bu değişkenlerin bellekte kapladığı alanın byte cinsinden değeri bulunabilmektedir.</li>
-                  <li> Analiz sonucu oluşan dataların HTTP üzerinden monitoringi yapılabilmektedir. Burada herhangi bir external web server gerekli değildir, uygulama çalışmaya başladığında embeded bir tomcat ayağa kaldırak hazır war uygulamasını da deploy etmektedir. Bu sayede analizi edilen dataların sunulabilmesi sağlanmıştır.</li>
-                  <li> Log dosyasında boyut sınırlaması bulunmamaktadır. Hadoop ile cluster mimari de çalıştığı için dosya boyutunun büyük olması tercih edilebilir, küçük dosyalar da hız avantajı net görülemeyebiliyor çünkü.</li>
-                  <li> Export Destinations : File/DB/Socket seçeneklerinden aynı anda bir veya daha fazlasını seçerek analiz sonucu elde edilen data'yı istediği yere aktarabilir. Her Definition için özel ayarlar mevcuttur. Örneğin file için dosyaya yazma formatı, max dosya boyutu, db için table/column tanımları, socket için port/ip ve mesaj yazma interval gibi degerler conf. bazlıdır.</li>
-                  <li>Analiz edilen verilerin kaybedilmemesi için uygulama kendi içerisinde H2 memory database ayağa kaldırmaktadır. Gerekli tablo ve tablo desenleri conf'da ki tanımlamalardan yola çıkılarak oluşturulur.</li>
-                </ul>
-
-                Proje dokümanına <a href="{{site.baseurl}}/v2-alican-abdurrahman_bitirme_tez.pdf">buradan</a> , proje sunumuna <a href="{{site.baseurl}}/bitirme_sunum.pdf">buradan</a> kodlara ise <a href="https://github.com/AlicanAkkus/LogAnalys">şuradan</a> erişebilirsiniz.
-              </div>
-            </div>
-
-    </div>
-  </div>
-
+<div class="tab-content" style="padding-top: 20px;">
   <div id="android-tutorial" class="tab-pane fade">
       <div class="panel panel-info">
         <div class="panel-heading">Android Tutorial <span class="label label-info">21</span></div>
@@ -589,9 +594,9 @@ heading: Blog
         </div>
       </div>
   </div>
+</div>
 
-
+<div class="tab-content" style="padding-top: 20px;">
   <div id="view-tech" class="tab-pane fade">
-
   </div>
 </div>
