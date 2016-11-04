@@ -10,6 +10,17 @@ link: 'https://www.facebook.com/largano.portorecanati/posts/648678321977944'
 immagine: ''
 data: 04/11/2016
 </yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1112,187408188,2016-11-04 23:00:39,2016-11-04 18:36:43,Gus Gruppo Umana Solidarietà - Raccolta fondi per moduli abitativi,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Raccolte Fondi"", ""Sisma Ottobre""]",,,"{""bic"": """", ""causale"": ""Emergenza Terremoto Centro Italia"", ""chi"": ""Gus Gruppo Umana Solidariet\u00e0"", ""data"": ""04/11/2016"", ""descrizione"": ""Raccolta fondi per rendere fruibili i moduli abitativi per gli allevatori che vogliono restare vicini ai loro animali."", ""email"": ""alessio.ruta@gmail.com"", ""iban"": ""IT66Y0335901600100000131559"", ""intestazione"": ""Allevatori - Moduli abitativi per restare accanto agli animali"", ""link"": ""https://goo.gl/3WfBz1"", ""postale"": """"}","<pre><yamldata>chi: 'Gus Gruppo Umana Solidarietà'
+descrizione: 'Raccolta fondi per rendere fruibili i moduli abitativi per gli allevatori che vogliono restare vicini ai loro animali.'
+intestazione: 'Allevatori - Moduli abitativi per restare accanto agli animali'
+iban: IT66Y0335901600100000131559
+bic: ''
+postale: ''
+causale: 'Emergenza Terremoto Centro Italia'
+link: 'https://goo.gl/3WfBz1'
+email: alessio.ruta@gmail.com
+data: 04/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1110,187358882,2016-11-04 15:39:27,2016-11-04 15:12:29,Cercasi roulotte a #Amatrice per una famiglia,,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""Roulotte"", ""data"": ""04/11/2016"", ""descrizione"": ""Stiamo cercando una roulotte per una famiglia di Amatrice che ha deciso di rimanere a vivere vicino alla propria casa."", ""email"": ""valeria.patacchiola.arci@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3494639384""}","<pre><yamldata>tel: '3494639384'
 email: valeria.patacchiola.arci@gmail.com
 cosa: Roulotte
@@ -759,17 +770,6 @@ indirizzo: ''
 lat: ''
 lon: ''
 link: 'https://www.facebook.com/groups/1758670357733881/permalink/1792788464322070/'
-immagine: ''
-data: 31/10/2016
-</yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1005,186372154,2016-11-02 21:09:34,2016-10-31 19:16:48,Beni di prima necessità - Porto Recanati,43.4350815,13.6630083,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""Beni di prima necessit\u00e0 - Porto Recanati"", ""data"": ""31/10/2016"", ""descrizione"": ""CAMPING BELLAMARE Porto Recanati: i cittadini di Ussita sono stati tutti trasferiti qui. Hanno bisogno di tutto: Alimentari a lunga scadenza (anche succhi di frutta, merendine), Prodotti per il bagno, Vestiti anche leggeri, Gonne, Biancheria per uomo/donna, Scarpe adulti e scarpe bambini, Giochi per bambini. Rivolgersi a Frontignano BikePark o portarle direttamente."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via Manin, Porto Recanati, MC, Marche, 62017, Italia"", ""lat"": ""43.4350815"", ""link"": ""https://www.facebook.com/frontignano.bikepark/posts/1813500948865652"", ""lon"": ""13.6630083"", ""tel"": ""335 565 1639""}","<pre><yamldata>tel: '335 565 1639'
-email: ''
-cosa: 'Beni di prima necessità - Porto Recanati'
-descrizione: 'CAMPING BELLAMARE Porto Recanati: i cittadini di Ussita sono stati tutti trasferiti qui. Hanno bisogno di tutto: Alimentari a lunga scadenza (anche succhi di frutta, merendine), Prodotti per il bagno, Vestiti anche leggeri, Gonne, Biancheria per uomo/donna, Scarpe adulti e scarpe bambini, Giochi per bambini. Rivolgersi a Frontignano BikePark o portarle direttamente.'
-indirizzo: 'Via Manin, Porto Recanati, MC, Marche, 62017, Italia'
-lat: '43.4350815'
-lon: '13.6630083'
-link: 'https://www.facebook.com/frontignano.bikepark/posts/1813500948865652'
 immagine: ''
 data: 31/10/2016
 </yamldata></pre>",open
