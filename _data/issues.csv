@@ -2696,6 +2696,18 @@ email: ''
 data: 28/09/2016
 </yamldata></pre>
 ",closed
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/696,179704556,2016-10-02 08:47:53,2016-09-28 07:58:24,Comune di Cassano d'Adda (MI),,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",Milestone(number=6),,"{""bic"": """", ""causale"": """", ""chi"": ""Comune di Cassano d'Adda (MI)"", ""data"": ""28/09/2016"", ""descrizione"": ""Presso l'alzabandiera di Piazza Garibaldi: - Sabato 1 ottobre dalle 19.30 alle 21.30 - Domenica 2 ottobre dalle 12.00 alle 14.00; Amatriciana della solidariet\u00e0!"", ""email"": """", ""iban"": ""IT67V0200833590000104429665"", ""intestazione"": """", ""link"": ""http://www.comune.cassanodadda.mi.it/upload/cassanodadda_ecm8/gestionedocumentale/amatricianaperamatricevolantino_784_9528.pdf"", ""postale"": """"}","<pre><yamldata>chi: 'Comune di Cassano d''Adda (MI)'
+descrizione: 'Presso l''alzabandiera di Piazza Garibaldi: - Sabato 1 ottobre dalle 19.30 alle 21.30 - Domenica 2 ottobre dalle 12.00 alle 14.00; Amatriciana della solidarietà!'
+intestazione: ''
+iban: IT67V0200833590000104429665
+bic: ''
+postale: ''
+causale: ''
+link: 'http://www.comune.cassanodadda.mi.it/upload/cassanodadda_ecm8/gestionedocumentale/amatricianaperamatricevolantino_784_9528.pdf'
+email: ''
+data: 28/09/2016
+</yamldata></pre>
+",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/695,179689215,2016-10-01 17:25:57,2016-09-28 06:19:52,Protezione Civile: chiarimenti per aziende agricole su Contributo autonoma sistemazione,,,"[""Accettato"", ""Bollettino"", ""Facebook"", ""Notizie Utili""]",,,"{""data"": ""28/09/2016"", ""descrizione"": ""CONTRIBUTO AUTONOMA SISTEMAZIONE, NUOVI CHIARIMENTI DAL DIPARTIMENTO DI PROTEZIONE CIVILE. AL CENTRO DELL\u2019ATTENZIONE LE ATTIVIT\u00c0 AGRICOLE."", ""link"": ""http://www.regione.marche.it/Regione-Utile/Terremoto-Marche/News-ed-eventi/Post/14960/Contributo-Autonoma-Sistemazione-nuovi-chiarimenti-dal-Dipartimento-di-Protezione-Civile-Al-centro-dell-attenzione-le-attivit%C3%A0-agricole"", ""titolo"": ""Protezione Civile: chiarimenti per aziende agricole su Contributo autonoma sistemazione""}","<pre><yamldata>titolo: 'Protezione Civile: chiarimenti per aziende agricole su Contributo autonoma sistemazione'
 descrizione: 'CONTRIBUTO AUTONOMA SISTEMAZIONE, NUOVI CHIARIMENTI DAL DIPARTIMENTO DI PROTEZIONE CIVILE. AL CENTRO DELL’ATTENZIONE LE ATTIVITÀ AGRICOLE.'
 link: 'http://www.regione.marche.it/Regione-Utile/Terremoto-Marche/News-ed-eventi/Post/14960/Contributo-Autonoma-Sistemazione-nuovi-chiarimenti-dal-Dipartimento-di-Protezione-Civile-Al-centro-dell-attenzione-le-attivit%C3%A0-agricole'
