@@ -26,10 +26,10 @@ I should also mention that I don't cover a broad range of anything. You won't se
 
 **Everyday Laptop:**
 
-MacBook Pro (Retina, 15-inch, Mid 2014)
-Processor: 2.5GHz Intel Core i7
-Memory: 16 GB 1600 MHz DDR3
-Graphics: Intel Iris Pro 1536 MB
+MacBook Pro (Retina, 15-inch, Mid 2014)\\
+Processor: 2.5GHz Intel Core i7\\
+Memory: 16 GB 1600 MHz DDR3\\
+Graphics: Intel Iris Pro 1536 MB\\
 Storage: 250GB SSD
 
 **Gaming Laptop:**
