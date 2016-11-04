@@ -17,6 +17,6 @@ Ci giungono però da alcuni giorni **segnalazioni di ricerca camper o roulotte u
 Per esempio, **un’azienda che si occupa di rimessaggio di camper e roulotte, potrebbe comunicare ai propri clienti questa emergenza**, coordinarne la disponibilità per le persone sfollate in uno dei comuni colpiti, rinunciare a un introito di qualche settimana o mese.
 
 
-Noi di TerremotoCentroItalia ci siamo e possiamo fare da ‘ponte’ tra queste disponibilità e le persone che stanno cercando di restare o tra queste e le istituzioni e le forze sul campo.
+Noi di TerremotoCentroItalia ci siamo e possiamo fare da ‘ponte’ tra queste disponibilità e le persone che stanno cercando di restare o tra queste e le istituzioni e le forze sul campo. Il modulo da usare per segnalare l'esistenza di roulotte è [questo](http://www.terremotocentroitalia.info/segnala/) ma potete anche [scriverci una mail](mailto:terremotocentroita@gmail.com)
 
 **Contate su di noi.** Ci piace essere operativi e pragmatici, continueremo a farlo finché ce ne sarà bisogno, però ci piace anche sognare e chiamare in causa le persone, così come abbiamo deciso di chiamarci in causa noi. Ognuno per quello che può. Grazie, davvero
