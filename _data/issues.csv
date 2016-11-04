@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1110,187358882,2016-11-04 15:39:27,2016-11-04 15:12:29,Cercasi roulotte a #Amatrice per una famiglia,,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""Roulotte"", ""data"": ""04/11/2016"", ""descrizione"": ""Stiamo cercando una roulotte per una famiglia di Amatrice che ha deciso di rimanere a vivere vicino alla propria casa."", ""email"": ""valeria.patacchiola.arci@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3494639384""}","<pre><yamldata>tel: '3494639384'
+email: valeria.patacchiola.arci@gmail.com
+cosa: Roulotte
+descrizione: 'Stiamo cercando una roulotte per una famiglia di Amatrice che ha deciso di rimanere a vivere vicino alla propria casa.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 04/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1108,187312167,2016-11-04 11:37:25,2016-11-04 11:36:51,"Busitalia #Umbria, servizi trasporto a supporto terremotati #Valnerina",43.1119613,12.3890104,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Facebook"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""Busitalia #Umbria, servizi trasporto a supporto terremotati #Valnerina"", ""data"": ""04/11/2016"", ""descrizione"": ""A seguito degli eventi sismici culminati con le forti scosse del 30 ottobre, la Regione Umbria ha richiesto anche la collaborazione di Busitalia Umbria (Gruppo FS Italiane) per far fronte alle esigenze delle popolazioni colpite. In particolare, dal primo pomeriggio di domenica 30 ottobre Busitalia Umbria ha messo a disposizione 29 autobus, reperiti da diversi depositi regionali, che si sono attestati a Spoleto per lo svolgimento dei servizi dedicati. Da Spoleto, in coordinamento con Regione, Protezione Civile e Polizia Stradale, i mezzi sono stati trasferiti in gruppi di 5/6 nelle aree dei Comuni di Norcia e Cascia."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Piazza IV Novembre, San Marco, Perugia, PG, UMB, 06100, Italia"", ""lat"": ""43.1119613"", ""link"": ""http://www.umbriajournal.com/economia/trasporti-economia/busitalia-umbria-servizi-trasporto-a-supporto-terremotati-valnerina-219079/"", ""lon"": ""12.3890104"", ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 cosa: 'Busitalia #Umbria, servizi trasporto a supporto terremotati #Valnerina'
@@ -5213,17 +5224,6 @@ indirizzo: ''
 lat: ''
 lon: ''
 link: ''
-data: 15/09/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/392,177149336,2016-09-15 11:16:32,2016-09-15 11:11:51,Comune di Rieti,,,"[""Accettato"", ""Contatti"", ""Form""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""Indirizzo mail da contattare per chi volesse partecipare come volontario. Ringraziando quanti finora hanno manifestato la propria disponibilit\u00e0 ad aiutare a diverso titolo i bambini delle aree colpite dal terremoto di questi giorni, l\u2019Assessorato alle politiche socio sanitarie del Comune di Rieti, attraverso l\u2019equipe di Rieti citt\u00e0 amica dei bambini sta attivando un coordinamento, mediante il quale verranno programmati e gestiti in accordo con i referenti territoriali, tutte le iniziative a sostegno dei bambini e dei ragazzi coinvolti dal sisma. In tal senso ci si avvarr\u00e0 della collaborazione degli esperti in pedagogia dell\u2019emergenza dell\u2019Universit\u00e0 dell\u2019aquila, coordinati dal prof. Alessandro Vaccarelli . Al fine di evitare interventi non appropriati e disomogenei si chiede di non attivarsi in maniera autonoma. Tutte le associazioni e i professionisti interessati, possono manifestare la propria disponibilit\u00e0 al seguente indirizzo mail cittadeibambini@comune.rieti.it indicando il proprio nome, tipologia delle attivit\u00e0 svolte, profili professionali, recapiti telefonici e mail, nominativo referente."", ""email"": ""emergenzaterremoto@comune.rieti.it"", ""indirizzo"": """", ""lat"": """", ""link"": ""http://www.comune.rieti.it/"", ""lon"": """", ""nome"": ""Comune di Rieti"", ""tel"": ""0746 287874, 3356605125""}","<pre><yamldata>nome: 'Comune di Rieti'
-tel: '0746 287874, 3356605125'
-email: emergenzaterremoto@comune.rieti.it
-descrizione: 'Indirizzo mail da contattare per chi volesse partecipare come volontario. Ringraziando quanti finora hanno manifestato la propria disponibilità ad aiutare a diverso titolo i bambini delle aree colpite dal terremoto di questi giorni, l’Assessorato alle politiche socio sanitarie del Comune di Rieti, attraverso l’equipe di Rieti città amica dei bambini sta attivando un coordinamento, mediante il quale verranno programmati e gestiti in accordo con i referenti territoriali, tutte le iniziative a sostegno dei bambini e dei ragazzi coinvolti dal sisma. In tal senso ci si avvarrà della collaborazione degli esperti in pedagogia dell’emergenza dell’Università dell’aquila, coordinati dal prof. Alessandro Vaccarelli . Al fine di evitare interventi non appropriati e disomogenei si chiede di non attivarsi in maniera autonoma. Tutte le associazioni e i professionisti interessati, possono manifestare la propria disponibilità al seguente indirizzo mail cittadeibambini@comune.rieti.it indicando il proprio nome, tipologia delle attività svolte, profili professionali, recapiti telefonici e mail, nominativo referente.'
-indirizzo: ''
-lat: ''
-lon: ''
-link: 'http://www.comune.rieti.it/'
 data: 15/09/2016
 </yamldata></pre>
 ",open
