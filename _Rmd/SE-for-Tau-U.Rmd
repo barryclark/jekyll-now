@@ -1,0 +1,42 @@
+---
+layout: post
+title: Standard errors for Tau-U
+date: November 4, 2016
+tags: [effect-sizes, single-case-research]
+---
+
+In two previous posts, I've discussed the [shifting definition]({{site.url}}/What-is-Tau-U) and [procedural sensitivity]({{site.url}}/Tau-U) of the Tau-U effect size indices for single-case designs. Putting all of those issues aside, in this post I'll focus on the purely statistical question of how to estimate the sampling variance (i.e., standard error) of Tau-U. 
+
+The original article by [Parker, Vannest, Davis, and Sauber (2011)](http://dx.doi.org/10.1016/j.beth.2010.08.006) is not very clear about how to calculate a standard error for any of the Tau-U statistics that involve making adjustments for baseline and/or treatment phase time trends. The web-calculator at [singlecaseresearch.org](http://www.singlecaseresearch.org/calculators/tau-u) provides a standard error for the version of Tau-U with baseline trend correction (labelled as "SDtau" in the output), but the formula it uses is not documented. As far as I can tell, the web-calculator uses the same formula for the standard error as for Tau (_without_ baseline trend correction). 
+
+As I [explained in an earlier post]({{site.url}}/NAP-SEs-and-CIs), the web-calculator calculates the standard error for Tau as 
+
+$$
+\text{SE}_{\text{Tau}} = \sqrt{\frac{m + n + 1}{3 m n}},
+$$
+
+where $m$ is the length of the baseline phase and $n$ is the length of the treatment phase. This formula is only correct when the true effect size is zero. For non-null effects, it will tend to over-estimate the variability of Tau (without baseline correction). Furthermore, using it as an estimate of the sampling variability of Tau-U (with baseline correction) ignores that the baseline trend correction is itself an estimate, subject to random error. If the baseline phase is short, using the baseline trend correction could introduce a non-trivial amount of further variability, so that $\text{SE}_{\text{Tau}}$ might over- or under-estimate the true uncertainty in Tau-U. It is thus of interest to find better estimators of the sampling variance of Tau-U. 
+
+## Notation
+
+Tau-U is actually a family of several different effect size indices, and even for the most widely applied version (with baseline trend correction), there are [multiple versions]({{site.url}}/What-is-Tau-U) of the index. In this post, I'll work with a general formulation that covers all of the various versions of Tau-U. As in previous posts, suppose that we have data from the baseline and treatment phases for a single case, where the baseline phase has $m$ observations and treatment phase has $n$ observations. Let $y^A_1,...,y^A_m$ denote the baseline phase data and $y^B_1,...,y^B_n$ denote the treatment phase data. Define the indices $T_A$, $T_B$, and $T_P$ as follows:
+
+$$
+\begin{aligned}
+T_A &= \frac{2}{m (m - 1)}\sum_{i=1}^{m - 1} \sum_{j = i + 1}^m \left[I\left(y^A_j > y^A_i\right) - I\left(y^A_j < y^A_i\right)\right], \\
+T_B &= \frac{2}{n (n - 1)}\sum_{i=1}^{n - 1} \sum_{j = i + 1}^n \left[I\left(y^B_j > y^B_i\right) - I\left(y^B_j < y^B_i\right)\right], \\
+T_P &= \frac{1}{mn} \sum_{i=1}^m \sum_{j=1}^n \left[I\left(y^B_j > y^A_i\right) - I\left(y^B_j < y^A_i\right)\right]. \\
+\end{aligned}
+$$
+
+$T_A$ is the Kendall Tau-a statistic measuring the rank-correlation between the outcome measures and the measurement times in the baseline phase; $T_B$ is the corresponding rank-correlation statistic for the treatment phase; and $T_P$ is the Tau statistic (without baseline trend correction) contrasting the baseline and treatment phases. Any of the versions of Tau-U can be calculated as linear combinations of these three statistics: 
+
+$$
+\text{Tau-U} = c_A T_A + c_B T_B + c_P T_P,
+$$
+
+for some constants $c_A$, $c_B$, and $c_P$. For example, the version of Tau-U calculated by [singlecaseresearch.org](http://www.singlecaseresearch.org/calculators/tau-u) would use $c_A = -(m - 1) / (2 n), c_B = 0, c_P = 1$. Another version of Tau-U would use a positive constant for $c_B$ to account for improving trend in the treatment pahse, as described in [Parker, Vannest, Davis, and Sauber (2011)](http://dx.doi.org/10.1016/j.beth.2010.08.006). 
+
+## Assumptions
+
+Standard errors for Tau-U can be calculated by looking at the sampling distributions of the component pieces $T_A, T_B, T_P$, which are available from previous statistical research (some of it quite old). However, these existing methods involve some non-trivial assumptions. In what follows, I will assume that the outcomes within each phase are __independent__ and __identically distributed__. The independence assumption means that the formulas will not work if the data exhibit auto-correlation or other forms of serial dependence. The assumption that the outcomes are identically distributed within each phase rules out the possibility of systematic time trends. These are both quite stringent assumptions, and I will look later at how well the standard errors work if one or the other assumption is violated.
