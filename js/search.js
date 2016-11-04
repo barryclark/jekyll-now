@@ -4,20 +4,25 @@
     if (results.length) { // Are there any results?
       var appendString = '';
 
+        appendString += '<div class="row"><div class="panel-group">';
       for (var i = 0; i < results.length; i++) {  // Iterate over the results
-        var item = store[results[i].ref];
+              var item = store[results[i].ref];
+              appendString += '<a href="' + item.url + '" class="list-group-item">';
+              appendString += '<div class="panel panel-default">';
+              appendString += '<div class="panel-heading">';
+              appendString += '<h4>' + item.title + '</h4>';
+              appendString += '</div>';
+              appendString += '<div class="panel-body">';
 
-        appendString += '<div class="panel-group">';
-        appendString += '<div class="panel-body">';
+              appendString += '<p class="list-group-item-text">' + item.content.substring(0, 250) + '...</p>'
+              appendString += '<p class="list-group-item-text">' + item.date + '</p>'
 
-          appendString += '<a href="' + item.url + '" class="list-group-item">';
-          appendString += '<h4 class="list-group-item-heading">' + item.title + '</h4>';
-          appendString += '<p class="list-group-item-text">' + item.content.substring(0, 250) + '...</p>'
-          appendString += '<p class="list-group-item-text">' + item.date + '</p></a>'
-
-        appendString += '</div></div>';
-  
+              appendString += '</div>';
+              appendString += '</div>';
+              appendString += '</a>';
       }
+        appendString += '</div>';
+        appendString += '</div>';
 
       searchResults.innerHTML = appendString;
     } else {
@@ -41,16 +46,19 @@
   function loadIssue(searchTerm){
     NProgress.start();
     for (var key in window.store) { // Add the data to lunr
-      idx.add({
+      idx.addDoc({
         'id': key,
         'title': window.store[key].title,
-        'author': window.store[key].author,
         'category': window.store[key].category,
         'content': window.store[key].content,
         'date': window.store[key].date
       });
 
-      var results = idx.search(searchTerm); // Get lunr to perform a search
+      var results = idx.search(searchTerm,{
+    "fields": {
+        "title": {"boost": 10},
+    }
+      }); // Get elasticlunr to perform a search
       displaySearchResults(results, window.store); // We'll write this in the next section 
     }
     //NProgress.done();
@@ -65,12 +73,11 @@
 
     // Initalize lunr with the fields it will be searching on. I've given title
     // a boost of 10 to indicate matches on this field are more important.
-    var idx = lunr(function () {
-      this.field('id');
-      this.field('title', { boost: 10 });
-      this.field('author');
-      this.field('category');
-      this.field('content');
+    var idx = elasticlunr(function () {
+      this.addField('title', { boost: 10 });
+      this.addField('category');
+      this.addField('content');
+      this.setRef('id');
     });
 
     setTimeout( function() { 
