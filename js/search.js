@@ -74,6 +74,7 @@
     // Initalize lunr with the fields it will be searching on. I've given title
     // a boost of 10 to indicate matches on this field are more important.
     var idx = elasticlunr(function () {
+      this.use(elasticlunr.it);
       this.addField('title', { boost: 10 });
       this.addField('category');
       this.addField('content');
