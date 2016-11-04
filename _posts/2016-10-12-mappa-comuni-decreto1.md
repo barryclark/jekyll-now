@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Mappa dei Comuni Interessati al Decreto del 11.10.2016
-categories: blog mappe
+categories: mappe
 ---
 
 Qui di seguito la mappa dei comuni interessati al [decreto governativo del 11.10.2016](http://www.governo.it/articolo/comunicato-stampa-del-consiglio-dei-ministri-n135/5896).
