@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1107,187305937,2016-11-04 11:04:43,2016-11-04 11:03:01,Presidio veterinario di #Muccia,43.0817007,13.0429675,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Facebook"", ""Form""]",,,"{""cosa"": ""Presidio veterinario di Muccia"", ""data"": ""04/11/2016"", ""descrizione"": ""\u00c8 operativo, a Muccia, in localit\u00e0 Maddalena, il Presidio dell\u2019area veterinaria e sicurezza alimentare per gestire le esigenze marchigiane legate al terremoto."", ""email"": ""vesa.marche@sanita.marche.it"", ""immagine"": """", ""indirizzo"": ""Via Clementina, Muccia, MC, Marche, Italia"", ""lat"": ""43.0817007"", ""link"": ""https://www.facebook.com/notes/regione-marche/terremoto-presidio-veterinario-di-muccia-i-recapiti-per-segnalare-le-necessit%C3%A0-d/1136895079733506"", ""lon"": ""13.0429675"", ""tel"": ""cellulare presidio: 3351209386 \u2013 telefoni 07376392 (chiamate filtrate da Camerino) e 07336421 (chiamate filtrare da San Severino Marche)""}","<pre><yamldata>tel: 'cellulare presidio: 3351209386 – telefoni 07376392 (chiamate filtrate da Camerino) e 07336421 (chiamate filtrare da San Severino Marche)'
+email: vesa.marche@sanita.marche.it
+cosa: 'Presidio veterinario di Muccia'
+descrizione: 'È operativo, a Muccia, in località Maddalena, il Presidio dell’area veterinaria e sicurezza alimentare per gestire le esigenze marchigiane legate al terremoto.'
+indirizzo: 'Via Clementina, Muccia, MC, Marche, Italia'
+lat: '43.0817007'
+lon: '13.0429675'
+link: 'https://www.facebook.com/notes/regione-marche/terremoto-presidio-veterinario-di-muccia-i-recapiti-per-segnalare-le-necessit%C3%A0-d/1136895079733506'
+immagine: ''
+data: 04/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1106,187302988,2016-11-04 10:51:25,2016-11-04 10:48:04,RACCOLTA DI BENI di prima necessità per gli ANIMALI #MACERATA,43.3007275,13.4535897,"[""Accettato"", ""Fabbisogni"", ""Facebook"", ""Form"", ""Sisma Ottobre""]",,http://i.imgur.com/EhbOodb.jpg,"{""cosa"": ""RACCOLTA DI BENI di prima necessit\u00e0 per gli ANIMALI"", ""data"": ""04/11/2016"", ""descrizione"": ""Palestra Popolare Macerata ha aderito alla campagna di RACCOLTA DI BENI di prima necessit\u00e0 per gli ANIMALI dei luoghi colpiti dal sisma, in special modo del canile di Camerino. Abbiamo attivato due punti di raccolta: - TABACCHERIA UTILE & FUTILE: Via Prezzolini Giuseppe 11, Mc - NEGOZIO Pizzi e Ricami: Corso Cairoli 202, Mc Ogni venerd\u00ec verranno ritirati i beni e consegnati personalmente ogni fine settimana dai ragazzi della palestra e dall'associazione L'albero delle stelle. Per chi volesse prestare VOLONTARIATO dando un aiuto concreto ai nostri amici animali contattare i numeri di riferimento!"", ""email"": """", ""immagine"": ""http://i.imgur.com/EhbOodb.jpg"", ""indirizzo"": ""Piazza della Libert\u00e0, Centro Storico, Macerata, MC, Marche, 62100, Italia"", ""lat"": ""43.3007275"", ""link"": ""https://www.facebook.com/popolaremacerata/photos/a.401133440013054.1073741827.392696897523375/1018739418252450/?type=3&theater"", ""lon"": ""13.4535897"", ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 cosa: 'RACCOLTA DI BENI di prima necessità per gli ANIMALI'
@@ -2684,18 +2695,6 @@ link: 'http://www.gioventuserviziocivilenazionale.gov.it/dgscn-news/2016/9/ii_in
 data: 28/09/2016
 </yamldata></pre>
 ",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/696,179704556,2016-10-02 08:47:53,2016-09-28 07:58:24,Comune di Cassano d'Adda (MI),,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",Milestone(number=6),,"{""bic"": """", ""causale"": """", ""chi"": ""Comune di Cassano d'Adda (MI)"", ""data"": ""28/09/2016"", ""descrizione"": ""Presso l'alzabandiera di Piazza Garibaldi: - Sabato 1 ottobre dalle 19.30 alle 21.30 - Domenica 2 ottobre dalle 12.00 alle 14.00; Amatriciana della solidariet\u00e0!"", ""email"": """", ""iban"": ""IT67V0200833590000104429665"", ""intestazione"": """", ""link"": ""http://www.comune.cassanodadda.mi.it/upload/cassanodadda_ecm8/gestionedocumentale/amatricianaperamatricevolantino_784_9528.pdf"", ""postale"": """"}","<pre><yamldata>chi: 'Comune di Cassano d''Adda (MI)'
-descrizione: 'Presso l''alzabandiera di Piazza Garibaldi: - Sabato 1 ottobre dalle 19.30 alle 21.30 - Domenica 2 ottobre dalle 12.00 alle 14.00; Amatriciana della solidarietà!'
-intestazione: ''
-iban: IT67V0200833590000104429665
-bic: ''
-postale: ''
-causale: ''
-link: 'http://www.comune.cassanodadda.mi.it/upload/cassanodadda_ecm8/gestionedocumentale/amatricianaperamatricevolantino_784_9528.pdf'
-email: ''
-data: 28/09/2016
-</yamldata></pre>
-",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/696,179704556,2016-10-02 08:47:53,2016-09-28 07:58:24,Comune di Cassano d'Adda (MI),,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",Milestone(number=6),,"{""bic"": """", ""causale"": """", ""chi"": ""Comune di Cassano d'Adda (MI)"", ""data"": ""28/09/2016"", ""descrizione"": ""Presso l'alzabandiera di Piazza Garibaldi: - Sabato 1 ottobre dalle 19.30 alle 21.30 - Domenica 2 ottobre dalle 12.00 alle 14.00; Amatriciana della solidariet\u00e0!"", ""email"": """", ""iban"": ""IT67V0200833590000104429665"", ""intestazione"": """", ""link"": ""http://www.comune.cassanodadda.mi.it/upload/cassanodadda_ecm8/gestionedocumentale/amatricianaperamatricevolantino_784_9528.pdf"", ""postale"": """"}","<pre><yamldata>chi: 'Comune di Cassano d''Adda (MI)'
 descrizione: 'Presso l''alzabandiera di Piazza Garibaldi: - Sabato 1 ottobre dalle 19.30 alle 21.30 - Domenica 2 ottobre dalle 12.00 alle 14.00; Amatriciana della solidarietà!'
 intestazione: ''
