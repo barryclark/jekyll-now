@@ -25,6 +25,10 @@ body {
 .navbar {
 	width: 20%;
 	padding: 1%;
+
+	@include mobile {	
+		border-top: 1px solid black;
+	}
 }
 
 .posts, .navbar {
