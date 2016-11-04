@@ -23,7 +23,12 @@ body {
 }
 
 .navbar {
-	width: 25%;
+	width: 20%;
+}
+
+.posts, .navbar {
+	display: inline-block;
+	vertical-align: top;
 }
 
 nav {
