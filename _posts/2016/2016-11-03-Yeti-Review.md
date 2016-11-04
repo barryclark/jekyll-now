@@ -4,7 +4,7 @@ title: "Review - Yeti"
 description: "There's a yeti on the mountain. Snap pics, climb the mountain, and find the yet to win!"
 category: review
 featured: yeti.jpg
-amazonterm: "aeg yeti"
+amazonterm: "yeti game"
 tags: [games, review, yeti, aeg, pegasus spiele]
 author: Rob Kalajian
 ---

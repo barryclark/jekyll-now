@@ -4,7 +4,7 @@ title: Unboxing Attack on Titan Deckbuilding Game
 description: "Cryptozoic follows up the amazing popular Attack on Titan anime with a deckbuilding game. Let's see what's inside."
 category: unboxing
 featured: attackontitan.jpg
-amazonterm: "attack on titan deckbuilding game"
+amazonterm: "cryptozoic"
 tags: [games, unboxing, attack on titan, cryptozoic]
 author: Rob Kalajian
 ---

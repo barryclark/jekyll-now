@@ -4,7 +4,7 @@ title: Unboxing Yeti
 description: "AEG just released Yeti, a game with a sweet 3D board. Let's look inside."
 category: unboxing
 featured: yeti.jpg
-amazonterm: "aeg yeti"
+amazonterm: "yeti game"
 tags: [games, unboxing, yeti, aeg, pegasus spiele]
 author: Rob Kalajian
 ---
