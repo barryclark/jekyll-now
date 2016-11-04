@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="shortcut icon" href="assets/img/favicon.png">
+
+	<title>MapTune - Mappa dei dati</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="assets/css/bootstrap.css" rel="stylesheet">
+
+	<!-- Custom styles for this template -->
+	<link href="assets/css/main.css" rel="stylesheet">
+
+	<!-- map api styles -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+
+	</style>
+
+	<link href="assets/css/bootstrap-datetimepicker.css" rel="stylesheet">
+
+	<link media="screen" href="css/anyfeedmap.css" rel="stylesheet" type="text/css" />
+	<link media="screen" href="css/anyfeedmap_custom.css" rel="stylesheet" type="text/css" />
+	<link media="print" href="css/anyfeedmap_print.css" rel="stylesheet" type="text/css" />
+
+	<link media="screen" href="css/messagebox.css" rel="stylesheet" type="text/css" />
+	<link media="screen" href="css/layerlist.css" rel="stylesheet" type="text/css" />
+	<link media="screen" href="css/date.css" rel="stylesheet" type="text/css" />
+
+	<!--[if lte IE 8]>
+		<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.ie.css" />
+	<![endif]-->
+
+	<!-- scripts -->
+
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+
+</head>
+
+<body>
+
+	<div id="dynamic-content" style="flow:left;margin:0;padding:0;">
+		<div >
+			<div >
+				<div id="map" >
+
+
+					<div id="sidebar-content" role="tabpanel" class="col-lg-6 col-md-6 col-xs-6" style="margin:0;padding:0">
+
+					  <!-- Tab panes -->
+					  <div id="tab-content" class="tab-content" >
+						<div role="tabpanel" class="tab-pane active" id="itemlist-pane" >
+							<div id="itemlist" style="height:600px;overflow:auto" >
+							</div>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="dialog-pane" >
+							<div id="layer" style="height:600px;overflow:auto;background:#fff">
+								(empty)
+							</div>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="load-dialog">
+						...
+						</div>
+						<div role="tabpanel" class="tab-pane" id="settings">
+						...
+						</div>
+					  </div>
+
+					</div>
+
+					<div id="map-pane" class="col-lg-6 col-md-6 col-xs-6" style="margin:0;padding:0" >
+						<div id="map-content" style="height:600px">
+						</div>
+						<div id="myPopupDivBG" style="width:100%;height=100%;background:#444;opacity:0.5;visibibity:hidden;z-index:9999">
+						</div>
+						<div id="myPopupDiv" style="visibibity:hidden;z-index:9999">
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div><!-- /row -->
+
+	</div><!-- /container -->
+
+	<!--=========================================================================
+		popups and helper
+	<!--========================================================================= -->
+
+	<!--=========================================================================
+		popups and helper
+	<!--========================================================================= -->
+
+	<div id="footer-loading" style="position:absolute;top:50%;left:45%;pointer-events:none;z-index:999">
+	    <div style="text-align:center;margin:auto;">
+			<p id="loading" class="ui-corner-all"
+							style=" position:relative;
+									top:0px;
+									left:0px;
+									padding:0px;
+									margin:0px;
+									padding-top:-2px;
+									padding-bottom:5px;
+									padding-left:15px;
+									visibility:hidden;
+									background:transparent;
+									opacity:0.9;
+									">
+									<img style="position:relative;top:6px;left:-5px;" alt="mill" src="resources/ui/spinner.gif" height="35px" />
+			</p>
+			<p id="error-div" class="ui-corner-all"
+							style=" position:relative;
+									top:0px;
+									left:0px;
+									padding:0px;
+									margin:0px;
+									padding-top:-2px;
+									padding-bottom:5px;
+									padding-left:15px;
+									visibility:hidden;
+									background:white;
+									-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+									opacity:0.8;
+									">
+									<span id="error-message" style="position:relative;top:2px;padding-right:10px;font-size:1.5em;color:#666666"></span>
+			</p>
+		</div>
+	</div>
+
+	<div id="velo" style="	visibility:hidden;
+							background-color:#444444;
+							opacity:0.2;
+							position:absolute;
+							top:0px;
+							left:0px;
+							width:98%;
+							height:98%;"  >
+	</div>
+
+	<div id="help" style="visibility:hidden"  >
+	</div>
+
+
+	<div id="dialog" style="font-size:14px;line-height:14px;background-color:white;vertical-align:-20%;letter-spacing:9px;" >
+	</div>
+
+
+    <!-- core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+	<!-- Map -->
+	<script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+
+	<script src="js/maptune/maptune.Mapstraction.js" type="text/javascript" > </script>
+	<script src="js/mxn-2.0.18/mxn.js?(leaflet)" type="text/javascript" charset="utf-8" ></script>
+	<!-- -->
+
+	<!-- Fonts from Google Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css'>
+
+	<script src="assets/js/jquery-1.10.2.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+
+	<!-- ui -->
+    <script src = "js/jquery/plugins/jquery.getUrlParam.js"></script>
+    <script src = "js/jquery/plugins/jquery.csv.js"></script>
+    <script src = "js/jquery/plugins/papaparse.js"></script>
+
+	<script src="js/maptune/tools/messagebox.js" type="text/javascript"></script>
+
+    <script src="assets/js/moment.min.js"></script>
+    <script src="assets/js/bootstrap-datetimepicker.min.js"></script>
+
+	<!-- MAPtune -->
+	<script src="js/maptune/maptune.api.js" type="text/javascript"></script>
+	<script src="js/maptune/maptune.up.js" type="text/javascript"></script>
+	<script src="js/maptune/maptune.feed.js?()" type="text/javascript"></script>
+
+	<!-- maptune -->
+	<script src="js/maptune.js" type="text/javascript"></script>
+	<script src="js/maptune_map_ext.js" type="text/javascript"></script>
+
+	<!-- marker clusterer ->
+	<script src="js/maptune/tools/marker-clusterer.js" type="text/javascript"></script>
+	-->
+
+	<!-- marker declutter -->
+	<script src="js/maptune/tools/marker-declutter.js" type="text/javascript"></script>
+	<!-- -->
+
+
+	<script type="text/javascript" charset="utf-8">
+
+	var MapParam = {
+		"all" :
+			{
+			"smallInfoClipDescription" : "500",
+			"smallInfoKeepImage" : "true"
+			},
+		"default":
+			{
+			"thumbnailRoot" : "resources/images/tn/",
+			"markerImageRoot" : "resources/icons/map-icons-collection/numeric/orange",
+			"markerImageType" : "png"
+			}
+		,
+		"layerdialog":
+			{
+			"href" : "./layer.html"
+			}
+		,
+		"layertab":
+			{
+			"href" : "./layer.html"
+			}
+		,
+		"layer":
+			{
+			"href" : "./layer.html"
+			}
+	};
+
+	$(document).ready(function() {
+
+		_TRACE("on document ready --->");
+
+		var height = window.innerHeight-10;
+
+		$("#map-content").height(height+"px");
+		$("#sidebar-content").height(height+"px");
+		$("#itemlist").height(height+"px");
+		$("#layer").height(height+"px");
+
+		var mapUp = new maptune.jsapi.MapUp("map-content","itemlist","legend","directions-result","leaflet");
+
+		maptune.setView([42.755332746654964,13.208563232421875],10);
+
+		maptune.jsapi.reset();
+		maptune.jsapi.checkResize();
+		maptune.jsapi.mapParam = MapParam;
+
+		maptune.addFeedLayer('https://raw.githubusercontent.com/emergenzeHack/terremotocentro/master/_data/issues.csv',{
+			type:'csv',
+			format:'csv',
+			flag:'open|zoomto',
+			title:'Segnalazioni',
+			proxy:'true',
+			name:'Segnalazioni',
+			parser:{
+				lat: 'lat',
+				lon: 'lon',
+				title: 'title',
+				image: 'image',
+				timeStart: 'created_at',
+				label: 'true',
+				info: 'url|id|created_at|updated_at|title|labels|milestone|image|body|state'
+			},
+			layer:{'name': 'Segnalazioni',
+				'markerImage' : 'resources/icons/map-icons-collection/flag_red.png',
+				'smallImage' :  'resources/icons/default/default-small_red.png',
+				'markerType' : 'categorical',
+				'category'   : 'state',
+				'categoryList': {
+					  'closed':
+							  { 'markerImage' : 'resources/icons/default/default_dark_green.png',
+								'smallImage' :  'resources/icons/default/default-small_dark_green.png'
+							  },
+					  'open':
+							  { 'markerImage' : 'resources/icons/default/default_red.png',
+								'smallImage' :  'resources/icons/default/default-small_red.png'
+							  }
+				},
+				'markerImageType' : 'png',
+				'initialTimeScope':'all',
+				'sort' : 'timeDown',
+				}
+			});
+
+		maptune.jsapi.onImageClick = function(szImage,szTitle){
+			maptune.lightBox(szImage,szTitle);
+		};
+
+	});
+
+
+	</script>
+
+  </body>
+</html>

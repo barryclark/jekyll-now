@@ -1,0 +1,87 @@
+@import "anyfeedmap.css";
+
+html {
+	overflow: auto;
+}
+#content {
+	position: relative;
+}
+#map {
+	position: relative;
+	top: 0px;
+	height: auto;
+}
+#legend {
+	position: relative;
+	top: 5px;
+	left: 0px;
+	height: auto;
+	width: auto;
+	overflow: visible;
+}
+#sidebar {
+	position: relative;
+	top: 5px;
+	left: 0px;
+	height: auto;
+	width: auto;
+	overflow: visible;
+	border: solid #d0d0d0;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0;
+}
+.listtable a:link, .listtable a:visited {
+	color: #808080;
+	text-decoration: none;
+	visibility:visible;
+	font-size: 1.3em;
+}
+.listtable a:hover, .listtable a:active {
+	color:#AC1411;
+	text-decoration: none;
+	visibility:visible;
+}
+.listtable tr {
+	color:#808080;
+	margin-top: 5px;
+}
+a:link.listitemname {
+	color: #3C4D6A;
+	font-weight: bold;
+	font-size: 1.3em;
+}
+.listheader a{
+	visibility: hidden;
+}
+.listheader {
+	text-indent: -20px;
+	font-size: 1.3em;
+	font-weight: bold;
+	color:#808080;
+	margin-bottom: -15px;
+	margin-top: 15px;
+}
+a.listitem{
+	color: #3C4D6A;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+span.noprint{
+	visibility:hidden;
+}
+.noprint img{
+	visibility:hidden;
+}
+.noprint a.noprint{
+	visibility:hidden;
+}
+#footer {
+	visibility:hidden;
+}
+#audioplayer {
+	visibility:hidden;
+}
+

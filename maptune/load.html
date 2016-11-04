@@ -1,0 +1,387 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8" >
+<title>iXmps - Editor - Dataimport</title>
+<script src="../ui/libs/csv/jquery.csv.js"></script>
+<script>
+
+	$(document).ready(function() {
+
+		var fFTReady = false;
+
+		if(isAPIAvailable()) {
+			$('#fileInput').bind('change', handleFileSelect);
+		}
+
+		$('#run').bind('click', doTextData);
+
+//		$('#fusiontable-id').bind('change', doFTImport);
+		$('#importFT').bind('click', doFTImport);
+		$('#importFTNew').bind('click', doFTImportNew);
+
+		$('#loadData').bind('click', doDataUrl);
+		$('#loadFile').bind('click', doLoadFile);
+
+		$('#loadJSONstat').bind('click', doLoadJSONstat);
+
+		var options = {packages: ['corechart'], callback : FTReady};
+		google.load('visualization', '1', options);
+
+	});
+	function FTReady(){
+		fFTReady = true;
+	}
+
+	/**
+	 * isAPIAvailable  
+	 * checks the browser support for the HTML5 File API
+	 * displays a warning if the browser doesn't support it
+	 * @type boolean
+	 * @return true,false
+	 */
+	function isAPIAvailable() {
+		// Check for the various File API support.
+		if (window.File && window.FileReader && window.FileList && window.Blob) {
+			  // Great success! All the File APIs are supported.
+			  return true;
+		} else {
+			  alert("The browser you're using does not currently support\nthe HTML5 File API. As a result the file loading demo\nwon't work properly.");
+			  return false;
+		}
+	}
+	/**
+	 * handleFileSelect  
+	 * parses the textfield input into the map data source
+	 * @param evt the evemt handle
+	 * @type void
+	 */
+	function handleFileSelect(evt) {
+		var files = evt.target.files; // FileList object
+		for(var i=0, len=files.length; i<len; i++) {
+			doFile(files[i], i);
+		}
+	}
+	/**
+	 * doFile  
+	 * reads the file and
+	 * parses the data into the map data source
+	 * @param file filename
+	 * @param i filenumber
+	 * @type void
+	 */
+	 var actFile = null;
+	function doFile(file, i) {
+		$("#fileName").val(file.name);
+		actFile = file;
+	}
+	/**
+	 * doFile  
+	 * reads the file and
+	 * parses the data into the map data source
+	 * @param file filename
+	 * @param i filenumber
+	 * @type void
+	 */
+	function doLoadFile() {alert("hi");
+		var reader = new FileReader();
+		reader.readAsText(actFile);
+		reader.onload = function(event){
+		  var data = JSON.parse(event.target.result);
+          maptune.feed.processFeed(data,{
+						 type:'GeoJson',
+						 format:'json',
+						 flag:'zoomto'
+						 });
+
+	};
+		reader.onerror = function(){ alert('Unable to open ' + actFile.name); };
+	}
+
+	/**
+	 * doDataUrl 
+	 * parses the textfield input into the map data source
+	 * @type void
+	 */
+	function doDataUrl() {
+		var szUrl = String($('#dataURL').val());
+		if ( !szUrl.match(/http:/) && !szUrl.match(/https:/) ){
+			szUrl = maptune.embeddedApi.editor.szExternalDataPath + "csv/" + szUrl;
+		}
+		$.ajax({
+			type: "GET",
+			url: szUrl,
+			dataType: "text",
+			success: function(data) {
+			  processCSVData(data,szUrl);
+			},
+			error: function() {
+				alert("\"" + szUrl + "\" could not be loaded!");
+			}
+		 });
+	 }
+
+	/**
+	 * doFTImport  
+	 * reads from Google Fusion Table 
+	 * parses the data into the map data source
+	 * @param file filename
+	 * @param i filenumber
+	 * @type void
+	 */
+	function doFTImport() {
+
+		var ftId = $('#fusiontable-id').val();
+
+        // Construct query
+        var query = "SELECT * FROM " + ftId;
+        var queryText = encodeURIComponent(query);
+        var gvizQuery = new google.visualization.Query('http://www.google.com/fusiontables/gvizdata?tq=' + queryText);
+
+        // Send query and draw table with data in response
+        gvizQuery.send(function(response) {
+
+			var numRows = response.getDataTable().getNumberOfRows();
+			var numCols = response.getDataTable().getNumberOfColumns();
+
+			var newData = new Array();
+
+			var newRow = new Array();
+			for (var i = 0; i < numCols; i++) {
+				newRow.push(response.getDataTable().getColumnLabel(i));
+			}
+			newData.push(newRow);
+
+			for (var i = 0; i < numRows; i++) {
+				newRow = new Array();
+				for(var j = 0; j < numCols; j++) {
+					newRow.push(response.getDataTable().getValue(i, j));
+				}
+				newData.push(newRow);
+			}
+
+			createThemeDataObject(newData,"FT",ftId);
+       });
+	}
+
+	function doFTImportNew() {
+
+		var ftId = $('#fusiontable-id').val();
+		var szKey = "AIzaSyDu2i9dN3cXy-g-Y4rmhXyTLCTEadhL-BM";
+		var szFT  = "https://www.googleapis.com/fusiontables/v1/query?";
+
+        // Construct query
+        var szUrl = szFT + "sql=SELECT * FROM " + ftId + "&key=" + szKey;
+
+		$.getJSON(szUrl,function( data, textStatus, jqxhr ) {
+
+			var newData = new Array();
+
+			newData.push(data.columns);
+			for (var i = 0; i < data.rows.length; i++) {
+				newData.push(data.rows[i]);
+			}
+			createThemeDataObject(newData,"FTV1",ftId);
+		});
+	}
+
+	/**
+	 * doFTImport  
+	 * reads from Google Fusion Table 
+	 * parses the data into the map data source
+	 * @param file filename
+	 * @param i filenumber
+	 * @type void
+	 */
+	function doLoadJSONstat() {
+
+		var szUrl = $('#jsonstatURL').val();
+		//szUrl = "http://json-stat.org/samples/oecd-canada.json";
+		//szUrl = "http://apistat.istat.it/?q=getdatajson&dataset=DICA_POPLEGALE&dim=0,0,3,182,1&lang=0&tr=&te=";
+		if ( !szUrl.match(/http:/) ){
+			var szPathA = maptune.embeddedApi.editor.szExternalDataPath.split('/');
+			szPathA = szPathA.slice(1);
+			szUrl = szPathA.join('/') + "jsonstat/" + szUrl;
+		}
+		JSONstat( szUrl, 
+			function(){
+				var dataA = new Array();
+				var row = this.Dataset(0).Dimension(2).id;
+				row.unshift( this.Dataset(0).Dimension(1).label );
+				dataA.push(row);
+				for (var i=0; i<this.Dataset(0).Dimension(1).length; i++ ){
+					var row = new Array();
+					row.push(this.Dataset(0).Dimension(1).id[i]);
+					for (var ii=0; ii<this.Dataset(0).Dimension(2).length; ii++ ){
+						row.push(this.Dataset(0).Data([0,i,ii]).value);
+					}
+					dataA.push(row);
+				}
+				createThemeDataObject(dataA,"jsonstat",szUrl);
+			}
+		);
+	}
+
+	/**
+	 * doTextData  
+	 * parses the textfield input into the map data source
+	 * @type void
+	 */
+	function doTextData() {
+		processCSVData($('#textInput').val(),"text");
+	}
+	function processCSVData(csv,szSource) {
+
+		var c1 = null;
+		var c2 = null;
+		var newData1 = new Array(0);
+		var newData2 = new Array(0);
+
+		try{
+			var newData1 = $.csv.toArrays(csv,{separator:','});
+			var c1 = doCheckTable(newData1,szSource);
+		}
+		catch (e){}
+		try{
+			var newData2 = $.csv.toArrays(csv,{separator:';'});
+			var c2 = doCheckTable(newData2,szSource);
+		}
+		catch (e){}
+
+		if ( c1 && (c1 > c2) ){
+			createThemeDataObject(newData1,"csv",szSource);
+			return true;
+		}else
+		if ( c2 && (c2 > c1) ){
+			createThemeDataObject(newData2,"csv",szSource);
+			return true;
+		}
+		return false;
+	}
+	function doCheckTable(newData,szSource){
+		for ( i=2; i<newData.length; i++ ){
+			if ( newData[i].length != newData[i-1].length ){
+				maptune.error("'"+szSource+"' - error at line:"+i+"\n \n"+newData[i]+"\n"+newData[i-1]+"\n\have different record length!");
+				return false;
+			}
+		}
+		return newData[i-1].length;
+	}
+
+	/**
+	 * createThemeDataObject  
+	 * take the loaded data and create a json object with the maptune data structure
+	 * @type void
+	 */
+	function createThemeDataObject(dataA,szDataType,szDataSource){
+
+		var zValues = 0;
+		var nValues = 0;
+
+		// cerate data object
+		// ------------
+		var themeDataObj = new Object();
+
+		// first row of data => object.fields
+		// ------------
+		themeDataObj.fields = new Array ();
+		for ( var a in dataA[0] ){
+			themeDataObj.fields.push({id:(dataA[0][a]||" "),typ:0,width:60,decimals:0});
+		}
+
+		// following rows => object.ecords
+		// records array
+		// --------------
+		themeDataObj.records = new Array ();
+
+		// get all values we want 
+		// loop over countries
+		for ( i=1; i<dataA.length; i++ ){
+			// add one record
+			var valuesA = new Array ();
+			for ( var a in dataA[i] ){
+				valuesA.push(dataA[i][a]);
+			}
+			themeDataObj.records.push(valuesA);
+		}
+
+		// finish the data object by creating object.table
+		// -----------------------------------------------
+		themeDataObj.table = {records:dataA.length-1 , fields:dataA[0].length };
+
+		// I. deploy the object into the map
+		// ---------------------------------
+		maptune.embeddedApi.embeddedSVG.window.themeDataObj = themeDataObj;
+
+		// II. deploy the object into the editor
+		// -------------------------------------
+		//maptune.embeddedApi.window.themeDataObj = themeDataObj;
+		//maptune.embeddedApi.window.szExternalDataTable = "themeDataObj" + " " + szDataType+ " url(" + szDataSource + ")";
+
+		// re-initialize the editor
+		// -------------------------------------
+		maptune.embeddedApi.editor.setData(themeDataObj,"themeDataObj" + " " + szDataType+ " url(" + szDataSource + ")");
+		maptune.embeddedApi.editor.initChart("","themeDataObj");
+
+		// close the dialog
+		__dataImportDialog();
+	}
+
+		$('#loadFile').bind('click', doLoadFile);
+
+	// ------------------------
+	// end of code 
+	// ------------------------
+
+</script>
+
+<!-- Styles ------------------------ -->
+
+<style>
+	body #importdiv{
+		background:#fff;
+		overflow:auto;
+		width:90%;
+		height:50%;
+		padding: 1em;
+		-moz-box-shadow: 0px 1px 8px /*{global-box-shadow-size}*/ 			rgba(0,0,0,.5) /*{global-box-shadow-color}*/ ;
+		-webkit-box-shadow: 0px 1px 8px /*{global-box-shadow-size}*/ 		rgba(0,0,0,.5) /*{global-box-shadow-color}*/ ;
+		box-shadow: 0px 1px 8px /*{global-box-shadow-size}*/ 				rgba(0,0,0,.5) /*{global-box-shadow-color}*/ ;
+	}
+	textarea {
+		width:90%;
+	}
+	/* Track */
+	::-webkit-scrollbar-track {
+		-webkit-box-shadow: inset 0 0 4px rgba(0,0,0,0.1); 
+		-webkit-border-radius: 0px;
+		border-radius: 0px;
+	}
+	/* Handle */
+	::-webkit-scrollbar-thumb {
+		-webkit-border-radius: 0px;
+		border-radius: 0px;
+		background: rgba(232,232,232,0.6); 
+		-webkit-box-shadow: inset 0 0 0px rgba(0,0,0,0.1); 
+	}
+	::-webkit-scrollbar-thumb:window-inactive {
+		background: rgba(222,222,222,0.4); 
+	}
+
+</style>
+</head>
+
+<!-- End of Header ------------------------ -->
+
+<body>
+<div id="feedlist" >
+<div id="importdiv">
+  <div>
+    <p>Please select a <a href="#" title="First line must contains fieldnames and values must be separated by ';'">CSV</a> from your drive</p>
+    <input id=fileInput type=file name=files[] multiple /><br>
+    <input type="text" id="fileName" style="width:450px"></input>&nbsp;<input id="loadFile" type="button"  value="Load" style="vertical-align:top;"/>
+    <hr />
+  </div>
+</body>
+</html>

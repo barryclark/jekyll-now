@@ -1,0 +1,191 @@
+
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400|Raleway:100");
+
+@font-face {
+    font-family: 'bebas_neueregular';
+    src: url('font/bebasneue-webfont.eot');
+    src: url('font/bebasneue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/bebasneue-webfont.woff') format('woff'),
+         url('font/bebasneue-webfont.ttf') format('truetype'),
+         url('font/bebasneue-webfont.svg#bebas_neueregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+#layerlist {  
+	font-family: normal "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: regular;
+	font-size: 1.2em;
+	color: #222;
+}
+#layerlist p {  
+	font-family: normal "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: regular;
+	font-size: 22px;
+	color: #000;
+}
+#layerlist h1, #layerlist h2, #layerlist h3, #layerlist h4, #layerlist h5 {
+	font-family: normal "bebas_neueregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #444;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+#layerlist h1 {
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 46px;
+	letter-spacing: -1px;
+	color: #000;
+	line-height: 48px;
+}
+#layerlist h3 {
+	text-align:left;
+}
+
+#layerlist li > a:hover {
+	text-decoration:underline;
+}
+#layerlist ul{
+	margin: 0px;
+	-webkit-padding-start: 0px;
+	-moz-padding-start: 0px;
+	padding-left: 0px;
+	border-bottom:#ddd solid 1px;
+	margin-top: 0.5em; 
+	margin-bottom: 1.5em; 
+}
+#layerlist ul > p {
+	color:#222;
+	font-style:italic;
+	margin: 0px;
+	margin-top:10px;
+}
+#layerlist ul > li {
+	list-style: none;
+	padding-left:0px;
+	padding-top:6px;
+	border-top:#ddd solid 1px;
+	margin-bottom:5px;
+}
+
+#layerlist a {
+	color: #3366CC;
+	text-decoration:none;
+}
+#layerlist a.active {
+	color: #ffffff;
+	text-decoration:none;
+}
+#layerlist a:hover {
+	color: #3344ff;
+	text-decoration: none;
+}
+#layerlist a.active:hover {
+	color: #ffffff;
+	text-decoration: none;
+}
+#layerlist .button > a{
+	font-size: 0.9em;
+	font-weight: bold;
+}
+#layerlist .accordion-button {
+	font-size: 1.25em;
+	color:#444;
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-right:30px;
+	border-top:#ddd solid 1px;
+	text-shadow: 0 /*{d-bar-shadow-x}*/ 1px /*{d-bar-shadow-y}*/ 0 /*{d-bar-shadow-radius}*/ #fcfcf8 /*{d-bar-shadow-color}*/;
+	-moz-border-radius: 				.0em /*{global-radii-blocks}*/;
+	-webkit-border-radius: 				.0em /*{global-radii-blocks}*/;
+	border-radius: 						.0em /*{global-radii-blocks}*/;
+	background:							url(../../../../ui/html/resources/icons/expanded1.png) no-repeat 98% 14px;
+	background-size:					15px;
+}
+#layerlist .accordion-button a {
+	font-size: 1.25em;
+	color:#444;
+	font-weight:normal;
+	line-height: 22px;
+	margin-bottom:5px;
+	text-shadow: 0 /*{d-bar-shadow-x}*/ 1px /*{d-bar-shadow-y}*/ 0 /*{d-bar-shadow-radius}*/ #fcfcf8 /*{d-bar-shadow-color}*/;
+	-moz-border-radius: 				.0em /*{global-radii-blocks}*/;
+	-webkit-border-radius: 				.0em /*{global-radii-blocks}*/;
+	border-radius: 						.0em /*{global-radii-blocks}*/;
+}
+#layerlist h3.accordion-button{
+	font-size: 1.25em;
+	-webkit-margin-before: 0em;
+	-webkit-margin-after: 0em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+}
+#layerlist .accordion-pane{
+	margin-bottom: 0.5em;
+}
+#layerlist .title{
+	font-size: 0.9em;
+	font-weight: bold;
+	color: #444;
+	margin: 0px;
+}
+#layerlist .item{
+	margin-top: 0.2em;
+	margin-bottom: 0.5em;
+	font-size: 1em;
+	display:block;
+	color: #666;
+}
+#layerlist .item > a{
+	font-size: 1em;
+}
+#layerlist .item > a:hover{
+	font-size: 1em;
+}
+#layerlist .item > a > img{
+	height:14px;
+	margin-left:-3px;
+	vertical-align: middle;
+}
+#layerlist img.inlineicon{
+	height:14px;
+	margin-left:-3px;
+	vertical-align: middle;
+}
+#layerlist p.comment {
+	font-size: 0.9em;
+	line-height: 1.2em;
+}
+#layerlist .comment{
+	margin-top: 0.2em;
+	margin-bottom: 0.5em;
+	display:block;
+	color: #666;
+}
+#layerlist .comment > a{
+	font-size: 1em;
+}
+#layerlist .comment > a:hover{
+	font-size: 1em;
+}
+#layerlist .footnote, #layerlist p.footnote, #layerlist span.footnote{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-size: 0.8em;
+	display:block;
+	color: #aaa;
+}
+#layerlist .bottom-space{
+	height:0.5em;
+}
+#accordion{
+	float:left;
+	width:100%;
+}
+#layerlist h5 {
+	font-size:1.1em; 
+}
+#layerlist .description {
+	font-size: 1em;
+	color: #888;
+}

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Feeds</title>
+	<link rel="stylesheet" href="css/layerlist.css" />
+
+</head>
+
+<body style="align:center"  >
+
+	<div id="layertab">
+		<div id="layerlist" >
+
+			<div id="feedlist">
+
+				<div id="feedlist-header">
+					<div style="margin-top:5px;">
+						<img alt="layer" src="resources/images/layer-circle.png" height="36px"
+						title="aggiungere punti clickando sui nomi" />
+						<a href="javascript:maptune.selectFeedDialog('hide');" style="font-size:1em;float:right;margin:0.5em"><span class="glyphicon glyphicon-remove" aria-hidden="true" ></span></a>
+					</div>
+					<h2>aggiungi alla mappa ...<br><br>
+					</h2> 
+				</div>
+
+				<div id="feedlist-list" >
+
+				<h3>
+					da 'Terremoto Centro Italia'
+				</h3> 
+
+
+				<div class="varicolumn">
+				<ul><li>
+
+					<a href="javascript:maptune.addFeedLayer('https://corsme.herokuapp.com/http://docs.google.com/spreadsheets/d/1G4uDDVwNFXXQHmVf6bIrDOGTYF65TZrnsJ7ciudb5Jg/export?format=csv&gid=0&single=true',{
+						type:'csv',
+						format:'csv',
+						name:'Terremoto Centro Italia - Foto',
+						title:'Terremoto Centro Italia - Foto',
+						proxy:'true',
+						parser: 
+							{
+							title: 'Location Name (city or name of building with that city)',
+							lat:   'Latitude',
+							lon:   'Longitude',
+							image: 'Link of photo (not page)',
+							label: 'true'
+							},
+						layer: 
+							{ 'name': 'Terremoto Centro Italia - Foto',
+							  'markerType' :'custom',
+							  'markerImage' : 'resources/icons/map-icons-collection/photo.png',
+							  'smallImage' : 'resources/icons/default/default-small_dark_blue.png',
+							  'markerImageType' : 'png',
+							  'markerCluster' : 'false',
+								  'description': '',
+							},
+						flag:'open',
+						maxLargeIcons: 30});" ><b>Luoghi - Foto</b></a> 
+					<p class="description">fonte: terremotocentroitalia.info<span style="float:right">
+					<a href="http://docs.google.com/spreadsheets/d/1G4uDDVwNFXXQHmVf6bIrDOGTYF65TZrnsJ7ciudb5Jg" target="_blank"> Google Doc</a>, 
+					<a href="http://docs.google.com/spreadsheets/d/1G4uDDVwNFXXQHmVf6bIrDOGTYF65TZrnsJ7ciudb5Jg/export?format=csv&gid=0&single=true" target="_blank"> csv</a>
+					</span></p>
+
+					</li><li>
+
+					<a href="javascript:maptune.addFeedLayer('http://crossorigin.me/http://docs.google.com/spreadsheets/d/17lnDV6v0sertzCgvIfjZ2lvXCtquW3KWuUv_1VgCLJA/export?format=csv&gid=0&single=true',{
+						type:'csv',
+						format:'csv',
+						name:'Terremoto Centro Italia - Centri Raccolta Beni',
+						title:'Terremoto Centro Italia - Centri Raccolta Beni',
+						proxy:'true',
+						parser: 
+							{
+							title: 'Nome',
+							lat:   'latitude',
+							lon:   'longitude',
+							label: 'true'
+							},
+						layer: 
+							{ 'name': 'Terremoto Centro Italia - Centri Raccolta Beni',
+							  'markerType' :'custom',
+							  'markerImage' : 'resources/icons/map-icons-collection/sozialeeinrichtung.png',
+							  'smallImage' : 'resources/icons/default/default-small_red.png',
+							  'markerImageType' : 'png',
+							  'markerCluster' : 'false',
+							  'description': '',
+							  'minLargeIconZoom' : '11'
+							},
+						'flag':'open|zoomto',
+						'minLargeIconZoom' : '10'
+					});" ><b>Centri Raccolta Beni per terremoto Centro Italia</b></a> 
+					<p class="description">fonte: terremotocentroitalia.info<span style="float:right">
+					<a href="http://docs.google.com/spreadsheets/d/17lnDV6v0sertzCgvIfjZ2lvXCtquW3KWuUv_1VgCLJA" target="_blank"> Gooble Doc</a>,
+					<a href="http://docs.google.com/spreadsheets/d/17lnDV6v0sertzCgvIfjZ2lvXCtquW3KWuUv_1VgCLJA/export?format=csv&gid=0&single=true" target="_blank"> csv</a>
+					</span></p>
+
+					</li><li>
+
+					<a href="javascript:maptune.addFeedLayer('https://raw.githubusercontent.com/emergenzeHack/terremotocentro/master/_data/issues.csv',{
+						type:'csv',
+						format:'csv',
+						flag:'open|zoomto',
+						title:'Segnalazioni',
+						proxy:'true',
+						name:'Segnalazioni',
+						parser:{
+							lat: 'lat',
+							lon: 'lon',
+							title: 'title',
+							image: 'image',
+							timeStart: 'created_at',
+							label: 'true',
+							info: 'url|id|created_at|updated_at|title|labels|milestone|image|body|state'
+						},
+						layer:{'name': 'Segnalazioni',
+							'markerImage' : 'resources/icons/map-icons-collection/flag_red.png',
+							'smallImage' :  'resources/icons/default/default-small_red.png',
+							'markerType' : 'categorical',
+							'category'   : 'state', 
+							'categoryList': { 
+								  'closed':
+										  { 'markerImage' : 'resources/icons/default/default_dark_green.png',
+											'smallImage' :  'resources/icons/default/default-small_dark_green.png'
+										  },
+								  'open':
+										  { 'markerImage' : 'resources/icons/default/default_red.png',
+											'smallImage' :  'resources/icons/default/default-small_red.png'
+										  }
+							},
+							'markerImageType' : 'png',
+							'initialTimeScope':'all',
+							'sort' : 'timeDown',
+							}
+						});" ><b>Segnalazioni</b></a><br>
+					<span class="description">Dati rivenienti da terremotocentroitalia.info</span>
+
+					</li><li>
+
+					<a href="javascript:maptune.addFeedLayer('http://www.google.com/maps/d/u/0/kml?mid=1vqLY9VlCBnX-WupbnzqDr6KZ79A&lid=f1iuOrlfWTQ&forcekml=1',{
+						type:'kml',
+						format:'xml',
+						proxy:false,
+						name:'AMAtriciana',
+						title:'AMAtriciana',
+						layer: 
+							{ 'name': 'AMAtriciana',
+							  'markerType' :'custom',
+							  'markerImage' : 'resources/icons/map-icons-collection/pasta.png',
+							  'smallImage' : 'resources/icons/default/default-small_orange.png',
+							  'markerImageType' : 'png',
+							  'description' : '<img src=\'./resources/images/14051606_172175873209340_2713903784236085089_n.jpg\' width=\'100%\'>',
+							  'minLargeIconZoom' : '11'
+							},
+						flag:'open|zoomto|nosublayer'
+						});" ><b>AMAtriciana</b></a>
+					<p class="description">fonte: terremotocentroitalia.info<span style="float:right">
+					<a href="https://www.google.com/maps/d/u/0/viewer?lid=f1iuOrlfWTQ&mid=1vqLY9VlCBnX-WupbnzqDr6KZ79A" target="_blank"> Gooble Maps</a>,
+					<a href="http://www.google.com/maps/d/u/0/kml?mid=1vqLY9VlCBnX-WupbnzqDr6KZ79A&lid=f1iuOrlfWTQ&forcekml=1" target="_blank"> kml</a>
+					</span>
+					</p>
+
+					</li><li>
+
+					<a href="javascript:maptune.addFeedLayer('http://www.ipersoft.it/amatrice/',{
+						type:'json',
+						format:'json',
+						proxy:false,
+						name:'Eventi FB',
+						title:'Eventi FB',
+						parser: 
+							{
+							title: 'EM01_NAME',
+							lat:   'EM02_PLACE_LOCATION_LATITUDE',
+							lon:   'EM02_PLACE_LOCATION_LONGITUDE',
+							timeStart: 'EM02_START_TIME',
+							timeEnd:  'EM02_END_TIME',
+							label: 'false'
+							},
+						layer: 
+							{ 'name': 'Eventi FB',
+							  'markerType' :'custom',
+							  'markerImage' : 'resources/icons/map-icons-collection/flag_red.png',
+							  'smallImage' : 'resources/icons/default/default-small_red.png',
+							  'markerImageType' : 'png',
+							  'minLargeIconZoom' : '11'
+							},
+						flag:'open|showinfo|zoomto|nosublayer'
+						});" ><b>Eventi Facebook</b></a>
+					<p class="description">fonte: terremotocentroitalia.info<span style="float:right">
+					<a href="http://www.ipersoft.it/amatrice/" target="_blank"> JSON</a>
+					</span></p>
+
+
+					</li></ul>
+				</div>
+
+				<h3>
+					Teremoti - dati dal INGV</h3> 
+				<div class="varicolumn">
+
+				<ul><li>
+
+					<a class="touch" href="javascript:maptune.addFeedLayer('http://webservices.rm.ingv.it/fdsnws/event/1/query?starttime=2016-08-20T00%3A00%3A00&minmag=3&maxmag=10&mindepth=0&maxdepth=1000&minlat=-90&maxlat=90&minlon=-180&maxlon=180&minversion=100&orderby=time-asc&format=atom&limit=4000',
+						{type:'GeoRSS',
+						 format:'xml',
+						 flag:'open|zoomto',
+						 name:'INGV - attività  sismica',
+						 layer:{'name': 'INGV - attività  sismica',
+								'description':'Terremoti dal 20 Agosto in poi e con Magnitude 3 e più <a href=\'javascript:maptune.playTimeline({framerate:24,unit:&quot;hours&quot;,tail:10})\'><br> start sequenza temporale &nbsp;&nbsp;<span class=\'glyphicon glyphicon-play\' style=\'font-size:1em;\' aria-hidden=\'true\'></span></a>',
+								'markerType' : 'symbol',
+								'markerImage' : 'resources/icons/default/symbols/red_circle.png',
+								'smallImage' : 'resources/icons/default/symbols/red_circle.png',
+								'markerImageType' : 'png',
+								'initListState' : 'noinfo',
+								'sort' : 'timeDown',
+								'markerSizeRule': {	'source': 'name',
+												    'regex' : '/.* Magnitude\\(..\\) ?([0-9]+\\.([0-9])?|\\.[0-9])?/i',
+													'matchIndex' : 1,
+												   normalSizeValue: 3,
+												   pow: 2
+												  }
+								},
+						 proxy:true
+						 });" >
+						<b>tutti terremoti dal 20 <strong>agosto</strong> in poi - Magnitude 3+</b><span style="font-size:8px;"</span></a>
+					<br><span class="description">fonte: INGV -> GeoRSS (atom feed)</span>
+
+					</li><li>
+
+					<a class="touch" href="javascript:maptune.addFeedLayer('http://webservices.ingv.it/fdsnws/event/1/query?starttime=2016-10-20T00%3A00%3A00&minmag=3&maxmag=10&mindepth=0&maxdepth=1000&minlat=-90&maxlat=90&minlon=-180&maxlon=180&minversion=100&orderby=time-asc&format=atom&limit=4000',
+						{type:'GeoRSS',
+						 format:'xml',
+						 flag:'open|zoomto',
+						 name:'INGV - attività  sismica',
+						 layer:{'name': 'INGV - attività  sismica',
+								'description':'Terremoti dal 20 Ottobre in poi e con Magnitude 3 e più <a href=\'javascript:maptune.playTimeline({framerate:24,unit:&quot;hours&quot;,tail:10})\'><br> start sequenza temporale &nbsp;&nbsp;<span class=\'glyphicon glyphicon-play\' style=\'font-size:1em;\' aria-hidden=\'true\'></span></a>',
+								'markerType' : 'symbol',
+								'markerImage' : 'resources/icons/default/symbols/red_circle.png',
+								'smallImage' : 'resources/icons/default/symbols/red_circle.png',
+								'markerImageType' : 'png',
+								'initListState' : 'noinfo',
+								'sort' : 'timeDown',
+								'markerSizeRule': {	'source': 'name',
+												    'regex' : '/.* Magnitude\\(..\\) ?([0-9]+\\.([0-9])?|\\.[0-9])?/i',
+													'matchIndex' : 1,
+												   normalSizeValue: 3,
+												   pow: 2
+												  }
+								},
+						 proxy:true
+						 });" >
+						<b>tutti terremoti dal 20 <strong>ottobre</strong> in poi - Magnitude 3+</b><span style="font-size:8px;"</span></a>
+					<br><span class="description">fonte: INGV -> GeoRSS (atom feed)</span>
+
+					</li><li>
+
+					<a class="touch" href="javascript:maptune.load_INGV_GeoRSS()" >
+						<b>tutti terremoti di <strong>oggi</strong></b><span style="font-size:8px;"</span></a>
+					<br><span class="description">fonte: INGV -> GeoRSS (atom feed)</span>
+
+					</li><li>
+
+					<a class="touch" href="javascript:maptune.load_INGV_KML()" >
+						<b>tutti terremoti di <strong>oggi</strong></b><span style="font-size:8px;"</span></a>
+					<br><span class="description">fonte: INGV -> KML (con simboli definiti dal INGV)</span>
+
+					</li><li>
+
+					<a class="touch" href="javascript:maptune.load_INGV_GeoJson()" >
+						<b>tutti terremoti di <strong>oggi</strong></b><span style="font-size:8px;"</span></a>
+					<br><span class="description">fonte: INGV -> GeoJson</span>
+
+				</li></ul>
+
+				<h3>
+					Teremoti - dati dal USGS</h3> 
+				<div class="varicolumn">
+
+				<ul><li>
+
+					<a href="javascript:maptune.addFeedLayer('http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.atom',
+						{type:'GeoRSS',
+						 format:'xml',
+						 flag:'open|zoomto',
+						 layer:{name:'USGS All Earthquakes, Past Week',
+								initialTimeScope: 'all',
+								markerType : 'symbol',
+								markerImage : 'resources/icons/default/symbols/red_circle.png',
+								smallImage : 'resources/icons/default/symbols/red_circle.png',
+								markerImageType : 'png',
+								markerSizeRule: { source: 'name',
+												   regex : '/M ?([0-9]+\\.([0-9])?|\\.[0-9])?/i',
+												   matchIndex : 1,
+												   normalSizeValue: 4,
+												   pow: 2
+												 }
+								}
+						});" >
+					Earthquakes worldwide - last week<span style="font-size:8px;"></span></a>
+					<br><span class="description">da USGS - formato: GeoRSS</span>
+					<br><span class="description">formato originale: shapefile --> trasformato: GeoJSON</span>
+
+				</li>
+				</ul>
+				</div>
+
+				<h3>
+					Cartografia
+				</h3> 
+				<span class="description">Esempio di progetti QGIS (shapefiles + styling) trasformato in un GeoJSON dialetto (GeoJSON + layer and sublayer definitions)</span>
+				<div class="varicolumn">
+
+				<ul><li>
+					<a class="touch" href="javascript:maptune.addFeedLayer('http://maps.ixmaps.com/assets/maps/layer/jsonp/seismic_hazard.js.gz',
+						{type:'data',
+						 format:'json',
+						 name:'seismic_hazard'
+						 });" >
+					<img src="./resources/images/cartografia.png" style="height:22px;padding-right:5px;" />	Seismic Hazard<span style="font-size:8px;"> (4 Mb)</span></a>
+
+				</li><li>
+
+					<a class="touch" href="javascript:maptune.addFeedLayer('./data/gz/franeesondazioni.js.gz',
+						{type:'data',
+						 format:'json',
+						 name:'franeesondazioni',
+						 flag:'open|showinfo|zoomto'
+						});" >
+					<img src="./resources/images/cartografia.png" style="height:22px;padding-right:5px;" />Frane &amp; Esondazioni (PAI)<span style="font-size:8px;"></span></a>
+					<span class="description"></span>
+
+				</li></ul>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+</body>	
+</html>
