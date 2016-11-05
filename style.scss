@@ -299,8 +299,19 @@ footer {
 }
 
 //
+// Images
+//
+
+.centered {
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
+//
 // Tables
 //
+
 table {
   overflow-x: auto;
 }
