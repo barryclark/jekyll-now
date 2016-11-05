@@ -11,7 +11,7 @@ My calendar of choice is Apple's [iCloud Calendar](https://support.apple.com/kb/
 
 When setting up a new event, users can specify its name, location, duration and whether it is a regular event and is to appear in the calendar repeatedly. Reminders can also be set up
 
-<img class="centered" src="{{site.baseurl}}/images/icloud-calendar-integration.jpg" alt="iCloud Calendar integration" width="250">
+<img class="centered" src="{{site.baseurl}}/images/icloud-calendar-integration.jpg" alt="iCloud Calendar integration">
 
 The app integrates into others, underlining times, days and dates, allowing the user to add them to the calendar.
 
