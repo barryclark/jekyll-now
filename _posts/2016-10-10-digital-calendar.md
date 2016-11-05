@@ -9,6 +9,10 @@ It is a lot more practical for a person as immersed in the digital realm as I am
 
 My calendar of choice is Apple's [iCloud Calendar](https://support.apple.com/kb/ph2672?locale=en_GB), iPhone's native calendar application. This nativity is precisely why I use it – as most anyone nowadays, I always have my phone on my person. If I ever did find myself in a situation where I didn't have my smartphone, I could [access the calendar online](https://www.icloud.com/#calendar) (log-in required) through any standard web browser.
 
-As always, countless alternatives are available, the most popular being [Outlook Calendar](https://outlook.live.com/) and [Google Calendar](https://support.google.com/calendar/answer/2465776?co=GENIE.Platform%3DDesktop&hl=en).
+When setting up a new event, users can specify its name, location, duration and whether it is a regular event and is to appear in the calendar repeatedly. Reminders can also be set up
+
+The app integrates into others, underlining times, days and dates, allowing the user to add them to the calendar.
+
+As always, countless alternatives are available, the most popular being [Outlook Calendar](https://outlook.live.com/) and [Google Calendar](https://support.google.com/calendar/answer/2465776?co=GENIE.Platform%3DDesktop&hl=en). They offer features similar to the calendar I use and the differences between them are minuscule.
 
 
