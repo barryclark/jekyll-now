@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1120,187488466,2016-11-05 10:14:03,2016-11-05 10:13:40,Usl Umbria 2 attiva Unità di Crisi Emergenza Terremoto: contatti e info utili,,,"[""Accettato"", ""Bollettino"", ""Notizie Utili"", ""Raccolte Fondi"", ""Twitter""]",,,"{""data"": ""05/11/2016"", ""descrizione"": ""Presso l\u2019Unit\u00e0 di Crisi Emergenza Terremoto dell\u2019Usl Umbria n. 2 \u00e8 attivo il numero telefonico 0742 3397419 e una casella di posta elettronica emergenza@uslumbria2.it, presidiati tutti i giorni, dalle ore 8 alle 20. Qualunque problematica conseguente agli eventi sismici ed inerente l\u2019erogazione dei servizi sanitari pu\u00f2 essere comunicata o chiamando il numero sopra indicato o inviando una mail."", ""link"": ""http://www.uslumbria2.it/notizie/unita-di-crisi-emergenza-terremoto-dellusl-umbria"", ""titolo"": ""Usl Umbria 2 attiva Unit\u00e0 di Crisi Emergenza Terremoto: contatti e info utili""}","<pre><yamldata>titolo: 'Usl Umbria 2 attiva Unità di Crisi Emergenza Terremoto: contatti e info utili'
+descrizione: 'Presso l’Unità di Crisi Emergenza Terremoto dell’Usl Umbria n. 2 è attivo il numero telefonico 0742 3397419 e una casella di posta elettronica emergenza@uslumbria2.it, presidiati tutti i giorni, dalle ore 8 alle 20. Qualunque problematica conseguente agli eventi sismici ed inerente l’erogazione dei servizi sanitari può essere comunicata o chiamando il numero sopra indicato o inviando una mail.'
+link: 'http://www.uslumbria2.it/notizie/unita-di-crisi-emergenza-terremoto-dellusl-umbria'
+data: 05/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1118,187483672,2016-11-05 08:05:44,2016-11-05 08:04:40,Disponibilità barbiere itinerante da Civitanova Marche,,,"[""Accettato"", ""Donazioni"", ""Facebook"", ""Sisma Ottobre""]",,,"{""cosa"": ""Disponibilit\u00e0 barbiere itinerante da Civitanova Marche"", ""data"": ""05/11/2016"", ""descrizione"": ""Ricevuto e volentieri condiviso: Buongiorno, sono un barbiere di Civitanova marche, volevo offrire la mia disponibilit\u00e0 nei giorni di domenica e lunedi con i miei servizi se ce ne fosse bisogno nelle varie tendopoli a titolo completamente gratuito, se ci fosse necessit\u00e0 avrei bisogno solo di corrente e una sedia, al resto porto tutto io. grazie. Alain Devauchelles Bartolini mio numero 348 8143577"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1794984074102509/"", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 cosa: 'Disponibilità barbiere itinerante da Civitanova Marche'
@@ -5566,18 +5571,6 @@ postale: ''
 causale: ''
 link: 'https://www.facebook.com/ultras1898/'
 email: ''
-data: 15/09/2016
-</yamldata></pre>
-",closed
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/368,177122822,2016-09-23 22:18:39,2016-09-15 08:54:33,Materiale di Prima necessità,45.07523,7.69829,"[""Accettato"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""Materiale di Prima necessit\u00e0"", ""data"": ""15/09/2016"", ""descrizione"": ""- acqua minerale; - cibo a lunga conservazione; - coperte e vestiti; - pannolini e materiale per bambini; - Materiale per igiene intima."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Caff\u00e8 Basaglia, Via Mantova, 34, 10153 Torino"", ""lat"": 45.07523, ""link"": """", ""lon"": 7.69829, ""tel"": ""3473352631""}","<pre><yamldata>tel: '3473352631'
-email: ''
-cosa: 'Materiale di Prima necessità'
-descrizione: '- acqua minerale; - cibo a lunga conservazione; - coperte e vestiti; - pannolini e materiale per bambini; - Materiale per igiene intima.'
-indirizzo: 'Caffè Basaglia, Via Mantova, 34, 10153 Torino'
-lat: 45.07523
-lon: 7.69829
-link: ''
-immagine: ''
 data: 15/09/2016
 </yamldata></pre>
 ",closed
