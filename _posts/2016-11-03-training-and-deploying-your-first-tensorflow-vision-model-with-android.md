@@ -55,7 +55,7 @@ After training the model and ensuring it has a reasonable accuracy, the next ste
 
  3. We now need to "freeze" the graph. Freezing merges the operations graph and the weights checkpoint file into one file. It also transforms the graph in a way that is required to make it run  on Android (the graph contains variable operations, they need to be transformed to constant operations to run in Android's C++ tensorflow environment).
  
-   The third cell takes the graph and checkpoint files and generates the frozen graph file. It requires that 
+   The third cell takes the graph and checkpoint files and generates the frozen graph file. It need freeze_graph.py to run 
 
 ## Image format
 
