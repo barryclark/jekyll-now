@@ -11,19 +11,19 @@ Patterni on yksinkertainen toteuttaa. Se on function expression, joka on ympär�
 
 Patterni voidaan toteuttaa kahdella eri tapaa. Sulkeet, jotka suorittavat funktion ovat ympäröivän sulkeiden sisä- tai ulkopuolella. Toiminnallisuus on kuitenkin täysin sama, joten valinta on täysin tyylillinen.
 
-{% gist pspfolio/a4d16e8491bf61a8351ac8078139d371 %}
-{% gist pspfolio/fa22b836089bbbd4c0eec8d998ec66be %}
+Tähän esimerkki 1
+Tähän esimerkki 2
 
 Mikä on patternin idea? Javascriptissä jokainen funktio luo oman scopen. IIFE luo siis oman scopen ja kaikki muuttujat ja funktiot, jotka esitellään tämän sisällä on lokaalisti esiteltyjä eivätkä ne saastuta global scopea.
 
-IIFE voidaan myös antaa parametrejä, jolloin ne on nopeampi käyttää, kuin global scopesta haettuna. Esimerkissä annamme parametreinä window objekti.
+IIFE voidaan myös antaa parametrejä, jolloin ne on nopeampi käyttää, kuin global scopesta. Esimerkissä annamme parametreinä window objectin ja jQueryn objectin.
 
-{% gist pspfolio/1a64fa9827269b576fc5f45e9d137264 %}
+Tähän esimerkki 3
 
-IIFE-patterni on iso osa module-patternia. Perusidea module patternissa on kirjoittaa selviä moduuleja jotka eivät vuoda koodia globaliin scopeen. Se sallii meidän kirjoittaa koodia, josta voimme valita osat jotka haluamme näkyvän ulos päin moduulista (public / private).
+IIFE-patterni on iso osa module patternia. Perusidea module patternissa on kirjoittaa selviä moduuleja jotka eivät vuoda koodia globaaliin scopeen. Se sallii meidän kirjoittaa koodia, josta voimme valita osat jotka haluamme näkyvän ulos päin moduulista (public / private).
  
 Esimerkissä luomme loggingModuulin, jonka yksinkertainen tehtävä on kirjoittaa konsoliin parametrinä saatu teksti. Paljastamme meidän log funktion maailmalle, mutta meidän defaultMsg muuttuja on privaatti eikä sitä voida vaihtaa tai käyttää ulkopuolelta.
 
-{% gist pspfolio/80acba48c4a325d1e7e1a6d73d595220 %}
+Tähän esimerkki 4
 
-IIFE-patterni on tärkeä osata ja ymmärtää, jotta ei saastuteta globaalia scopea sekä voidaan luoda moduuleja, joilla on yksityisiä sekä julkisia muuttujia.
+IIFE-patterni on tärkeä osata ja ymmärtää, jotta ei turhaan saastuteta globaalia scopea sekä voidaan luoda moduuleja, joilla on yksityisiä sekä julkisia muuttujia.
