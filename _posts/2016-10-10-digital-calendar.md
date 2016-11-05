@@ -7,6 +7,8 @@ title: What Digital Calendar Do I Use?
 ---
 It is a lot more practical for a person as immersed in the digital realm as I am to rely on a digital calendar instead of an analog one, which is precisely why I use one! 
 
+<div class="centered"><img src="{{site.baseurl}}/images/icloud-calendar.jpg" alt="iCloud Calendar"></div>
+
 My calendar of choice is Apple's [iCloud Calendar](https://support.apple.com/kb/ph2672?locale=en_GB), iPhone's native calendar application. This nativity is precisely why I use it – as most anyone nowadays, I always have my phone on my person. If I ever did find myself in a situation where I didn't have my smartphone, I could [access the calendar online](https://www.icloud.com/#calendar) (log-in required) through any standard web browser.
 
 <div class="centered"><img src="{{site.baseurl}}/images/icloud-calendar-event.jpg" alt="iCloud Calendar event set-up"></div>
