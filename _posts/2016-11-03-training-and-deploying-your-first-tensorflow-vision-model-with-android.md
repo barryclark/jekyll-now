@@ -33,6 +33,13 @@ and
 
 We will need these names later when we feed the inputs into the model and want to read the prediction output. Also notice that the input expects a two dimensional tensor (or array). The first dimension correspends to images, so if we want, we can send multiple images to be identified at once. The second dimension has the pixel values of each image (784 being the values of a flattened 28x28 pixel image).
 
+The third cell is the training cell. It's the one takes the most time. It took about 30 minutes to run on my 2010 Macbook Pro, but about 10 minutes on both my i5 desktop and 2015 Macbook Air. 
+
+This cell is also where the magic happens. It is where TensorFlow will take an image, pass it through the computation graph (initially set to random weights), compare the output of the computation with the actual value of the image (the dataset has both the images and the labels saying what digit is in each image -- this is a supervised learning exercise), and then when it sees that the output is way off from the actual value, it will go back and adjust the weights so that the next computation will be closer to the expected value (this is the jist of the backpropegation algorithm, a central concept in neural networks).
+
+When we do this process many times with all the images in the training dataset, we will end up with a good set of weights that make our model highly accurate. 
+
+To test how accurate our model is, we make it compute its predictions of our test dataset (which we sat aside and did not used in the training process) and compare its predictions with the actualy values. In this case, the model had an accuracy of 97.7%.
 
 ## Exporting the model
 After installing TensorFlow on your computer and going through the tutorials, the next step would be to somehow extract a serialization of the model that we can then package within our app. 
