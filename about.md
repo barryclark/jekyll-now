@@ -7,6 +7,8 @@ published: true
 
 I'm UX Designer living in Madrid. Currently working at The-cocktail, a consultancy with focus in digital products and services.
 
+Worked with companys like Santander, EVO, El Corte Inglés and many others.
+
 ### Experience
 
 - [The-cocktail](https://the-cocktail.com/en "The-cocktail") (current)
