@@ -6458,6 +6458,18 @@ email: ''
 data: 14/09/2016
 </yamldata></pre>
 ",closed
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/280,176859116,2016-09-23 21:21:49,2016-09-14 09:31:13,La Montecarlo,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""La Montecarlo"", ""data"": ""14/09/2016"", ""descrizione"": ""Il 19 settembre dodici artisti italiani vi serviranno, a partire dalle ore 19 presso la pizzeria La Montecarlo , un piatto di amatriciana e una bibita a scelta , al prezzo di \u20ac 15. L'incasso della serata sar\u00e0 interamente devoluto, a sostegno dei terremotati, all'associazione \""Vico Badio\"" di Fonte del Campo di Accumoli, epicentro del sisma del 24 agosto. NON SI PRENOTA, l'evento sar\u00e0 organizzato come \""sagra\"", con il solo fine di raccogliere fondi e aiutare le persone colpite dal sisma. La Montecarlo I, Vicolo Savelli, 12, 00186 Roma"", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1765529567047960/"", ""postale"": """"}","<pre><yamldata>chi: 'La Montecarlo'
+descrizione: 'Il 19 settembre dodici artisti italiani vi serviranno, a partire dalle ore 19 presso la pizzeria La Montecarlo , un piatto di amatriciana e una bibita a scelta , al prezzo di € 15. L''incasso della serata sarà interamente devoluto, a sostegno dei terremotati, all''associazione ""Vico Badio"" di Fonte del Campo di Accumoli, epicentro del sisma del 24 agosto. NON SI PRENOTA, l''evento sarà organizzato come ""sagra"", con il solo fine di raccogliere fondi e aiutare le persone colpite dal sisma. La Montecarlo I, Vicolo Savelli, 12, 00186 Roma'
+intestazione: ''
+iban: ''
+bic: ''
+postale: ''
+causale: ''
+link: 'https://www.facebook.com/groups/1758670357733881/permalink/1765529567047960/'
+email: ''
+data: 14/09/2016
+</yamldata></pre>
+",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/279,176859035,2016-09-23 21:43:50,2016-09-14 09:30:51,Associazione culturale Illica,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Pro Terremoto Illica"", ""chi"": ""Associazione culturale Illica"", ""data"": ""14/09/2016"", ""descrizione"": ""Tutto il ricavato della raccolta dei fondi, della quale sar\u00e0 possibile avere visione e dettaglio  sul sito www.illica.org, sar\u00e0 utilizzato in pieno accordo e nel rispetto degli interventi previsti dagli Enti preposti alla ricostruzione."", ""email"": """", ""iban"": ""IT32N0760103200000071446603"", ""intestazione"": ""Associazione Culturale Illica"", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1765128903754693/"", ""postale"": """"}","<pre><yamldata>chi: 'Associazione culturale Illica'
 descrizione: 'Tutto il ricavato della raccolta dei fondi, della quale sarà possibile avere visione e dettaglio  sul sito www.illica.org, sarà utilizzato in pieno accordo e nel rispetto degli interventi previsti dagli Enti preposti alla ricostruzione.'
 intestazione: 'Associazione Culturale Illica'
