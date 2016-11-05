@@ -19,8 +19,9 @@ html {
 
 body {
 	background: $white;
-  font: 18px/1.4 $helvetica;
+  font: 18px/1.4 $opensans;
   color: $darkGray;
+  -webkit-font-smoothing: antialiased;
 }
 
 .container {
@@ -31,9 +32,9 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
+  font-family: $opensans;
   color: $darkerGray;
-  font-weight: bold;
+  font-weight: 600;
 
   line-height: 1.7;
   margin: 1em 0 15px;
@@ -45,7 +46,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 40px;
   a {
     color: inherit;
   }
@@ -66,14 +67,16 @@ h4 {
 
 p {
   margin: 15px 0;
+  line-height: 1.58;
 }
 
 a {
-  color: $blue;
+  color: $pink;
   text-decoration: none;
 	cursor: pointer;
+  transition: color .2s ease-in;
   &:hover, &:active {
-    color: $blue;
+    color: $pink;
   }
 }
 
@@ -194,7 +197,7 @@ img {
   margin: 0;
   color: $darkGray;
   cursor: pointer;
-  font-family: $helveticaNeue;
+  font-family: $opensans;
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
@@ -213,7 +216,7 @@ img {
 nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
+  font-family: $opensans;
   font-size: 18px;
 
   @include mobile {
@@ -232,7 +235,7 @@ nav {
 
     @include mobile {
       margin: 0 10px;
-      color: $blue;
+      color: $pink;
     }
   }
 }

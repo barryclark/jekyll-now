@@ -3,7 +3,7 @@
 #
 
 # Name of your site (displayed in the header)
-name: Your Name
+name: pspfolio
 
 # Short bio or description (displayed in the header)
 description: Web Developer from Somewhere
@@ -47,7 +47,7 @@ url:
 # (http://yourusername.github.io/repository-name)
 # and NOT your User repository (http://yourusername.github.io)
 # then add in the baseurl here, like this: "/repository-name"
-baseurl: ""
+baseurl: "https://pspfolio.github.io/jekyll-now/" #"https://pspfolio.github.io/jekyll-now/"
 
 #
 # !! You don't need to change any of the configuration flags below !!
@@ -70,12 +70,13 @@ kramdown:
 
 # Set the Sass partials directory, as we're using @imports
 sass:
-  style: :expanded # You might prefer to minify using :compressed
+  style: :compressed # You might prefer to minify using :compressed
 
 # Use the following plug-ins
 gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
+  - jekyll-gist
 
 # Exclude these files from your production _site
 exclude:
