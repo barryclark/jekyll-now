@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1123,187530001,2016-11-05 23:26:10,2016-11-05 23:10:28,Acquisto prodotti regioni terremotate - Il database #CampagnaAmica di Coldiretti,,,"[""Accettato"", ""acquisto solidale"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""05/11/2016"", ""descrizione"": ""Uno dei canali sicuri attraverso cui individuare le aziende agricole delle regioni colpite dal terremoto e quindi acquistarne i prodotti per sostenerne la sopravvivenza \u00e8 il database disponibile sul sito Campagna Amica di Coldiretti. Per Umbria e Marche sono disponibili oltre 450 aziende agricole e fattorie."", ""link"": ""http://www.campagnamica.it/cerca/Pagine/SearchResult.aspx?Prod=00000000-0000-0000-0000-000000000000&Reg=-1&Ambito=Comprare"", ""titolo"": ""Acquisto prodotti regioni colpite dal sisma - Il database #CampagnaAmica di Coldiretti""}","<pre><yamldata>titolo: 'Acquisto prodotti regioni colpite dal sisma - Il database #CampagnaAmica di Coldiretti'
+descrizione: 'Uno dei canali sicuri attraverso cui individuare le aziende agricole delle regioni colpite dal terremoto e quindi acquistarne i prodotti per sostenerne la sopravvivenza è il database disponibile sul sito Campagna Amica di Coldiretti. Per Umbria e Marche sono disponibili oltre 450 aziende agricole e fattorie.'
+link: 'http://www.campagnamica.it/cerca/Pagine/SearchResult.aspx?Prod=00000000-0000-0000-0000-000000000000&Reg=-1&Ambito=Comprare'
+data: 05/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1122,187514138,2016-11-05 23:03:53,2016-11-05 18:25:43,Offerta alloggio a Chigiano - #SanSeverino #Marche,43.3017018,13.1363017,"[""Accettato"", ""Alloggi"", ""Bollettino"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""05/11/2016"", ""descrizione"": ""Alloggio a disposizione localit\u00e0 Chigiano (Sanseverino)"", ""email"": ""scagnolisandro@gmail.com"", ""immagine"": """", ""indirizzo"": ""Strada provinciale Apirese, San Severino Marche, MC, Marche, Italia"", ""lat"": ""43.3017018"", ""link"": """", ""lon"": ""13.1363017"", ""tel"": ""+39.3337452768""}","<pre><yamldata>tel: '+39.3337452768'
 email: scagnolisandro@gmail.com
 descrizione: 'Alloggio a disposizione località Chigiano (Sanseverino)'
@@ -4125,6 +4130,17 @@ immagine: ''
 data: 16/09/2016
 </yamldata></pre>
 ",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/536,177475028,2016-09-22 15:40:33,2016-09-16 17:09:24,"Assisi, PG - Agriturismo ""Casa Deimar""",43.0711952,12.6146669,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""AGRITURISMO \""CASA DEIMAR\"" 2 camere (tra Assisi e Loreto)"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Piazza del Comune, San Damiano, Assisi, PG, UMB, 06081, Italia"", ""lat"": ""43.0711952"", ""link"": """", ""lon"": ""12.6146669"", ""tel"": ""3357265070""}","<pre><yamldata>tel: '3357265070'
+email: ''
+descrizione: 'AGRITURISMO ""CASA DEIMAR"" 2 camere (tra Assisi e Loreto)'
+indirizzo: 'Piazza del Comune, San Damiano, Assisi, PG, UMB, 06081, Italia'
+lat: '43.0711952'
+lon: '12.6146669'
+link: ''
+immagine: ''
+data: 16/09/2016
+</yamldata></pre>
+",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/535,177474652,2016-09-22 15:43:21,2016-09-16 17:07:22,"Cascia, PG - HOTEL ""GAN"" Marco e M.Grazia",42.7157111,13.0247721,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""HOTEL \""GAN\"" (Marco e Maria Grazia) Indirizzo: via Tranquillo Graziani 10/a, Cascia (PG)"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via Tranquillo Graziani, Cascia, PG, UMB, 06043, Italia"", ""lat"": ""42.7157111"", ""link"": """", ""lon"": ""13.0247721"", ""tel"": ""3398856382 - 0743795006""}","<pre><yamldata>tel: '3398856382 - 0743795006'
 email: ''
 descrizione: 'HOTEL ""GAN"" (Marco e Maria Grazia) Indirizzo: via Tranquillo Graziani 10/a, Cascia (PG)'
@@ -6446,18 +6462,6 @@ email: ''
 data: 14/09/2016
 </yamldata></pre>
 ",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/280,176859116,2016-09-23 21:21:49,2016-09-14 09:31:13,La Montecarlo,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""La Montecarlo"", ""data"": ""14/09/2016"", ""descrizione"": ""Il 19 settembre dodici artisti italiani vi serviranno, a partire dalle ore 19 presso la pizzeria La Montecarlo , un piatto di amatriciana e una bibita a scelta , al prezzo di \u20ac 15. L'incasso della serata sar\u00e0 interamente devoluto, a sostegno dei terremotati, all'associazione \""Vico Badio\"" di Fonte del Campo di Accumoli, epicentro del sisma del 24 agosto. NON SI PRENOTA, l'evento sar\u00e0 organizzato come \""sagra\"", con il solo fine di raccogliere fondi e aiutare le persone colpite dal sisma. La Montecarlo I, Vicolo Savelli, 12, 00186 Roma"", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1765529567047960/"", ""postale"": """"}","<pre><yamldata>chi: 'La Montecarlo'
-descrizione: 'Il 19 settembre dodici artisti italiani vi serviranno, a partire dalle ore 19 presso la pizzeria La Montecarlo , un piatto di amatriciana e una bibita a scelta , al prezzo di € 15. L''incasso della serata sarà interamente devoluto, a sostegno dei terremotati, all''associazione ""Vico Badio"" di Fonte del Campo di Accumoli, epicentro del sisma del 24 agosto. NON SI PRENOTA, l''evento sarà organizzato come ""sagra"", con il solo fine di raccogliere fondi e aiutare le persone colpite dal sisma. La Montecarlo I, Vicolo Savelli, 12, 00186 Roma'
-intestazione: ''
-iban: ''
-bic: ''
-postale: ''
-causale: ''
-link: 'https://www.facebook.com/groups/1758670357733881/permalink/1765529567047960/'
-email: ''
-data: 14/09/2016
-</yamldata></pre>
-",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/280,176859116,2016-09-23 21:21:49,2016-09-14 09:31:13,La Montecarlo,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""La Montecarlo"", ""data"": ""14/09/2016"", ""descrizione"": ""Il 19 settembre dodici artisti italiani vi serviranno, a partire dalle ore 19 presso la pizzeria La Montecarlo , un piatto di amatriciana e una bibita a scelta , al prezzo di \u20ac 15. L'incasso della serata sar\u00e0 interamente devoluto, a sostegno dei terremotati, all'associazione \""Vico Badio\"" di Fonte del Campo di Accumoli, epicentro del sisma del 24 agosto. NON SI PRENOTA, l'evento sar\u00e0 organizzato come \""sagra\"", con il solo fine di raccogliere fondi e aiutare le persone colpite dal sisma. La Montecarlo I, Vicolo Savelli, 12, 00186 Roma"", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1765529567047960/"", ""postale"": """"}","<pre><yamldata>chi: 'La Montecarlo'
 descrizione: 'Il 19 settembre dodici artisti italiani vi serviranno, a partire dalle ore 19 presso la pizzeria La Montecarlo , un piatto di amatriciana e una bibita a scelta , al prezzo di € 15. L''incasso della serata sarà interamente devoluto, a sostegno dei terremotati, all''associazione ""Vico Badio"" di Fonte del Campo di Accumoli, epicentro del sisma del 24 agosto. NON SI PRENOTA, l''evento sarà organizzato come ""sagra"", con il solo fine di raccogliere fondi e aiutare le persone colpite dal sisma. La Montecarlo I, Vicolo Savelli, 12, 00186 Roma'
 intestazione: ''
