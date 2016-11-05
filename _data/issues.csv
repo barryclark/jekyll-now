@@ -8031,27 +8031,3 @@ link: http://ciao.com
 email: francescopinzauti@gmail.com
 data: 07/09/2016</yamldata></pre>
 ",closed
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/75,175514648,2016-09-07 16:41:52,2016-09-07 14:18:40,Test Fabbisogni,43.4279725,11.84692480000001,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Test Fabbisogni"", ""data"": ""07/09/2016"", ""descrizione"": ""Test"", ""email"": ""francescopinzauti@gmail.com"", ""indirizzo"": ""Localit\u00e0 Olmo, 416, 52100 Arezzo AR, Italia"", ""lat"": 43.4279725, ""link"": ""https://www.twitter.com"", ""lon"": 11.84692480000001, ""tel"": 393272032790}","<pre><yamldata>tel: +393272032790
-email: francescopinzauti@gmail.com
-cosa: Test Fabbisogni
-descrizione: Test
-indirizzo: Località Olmo, 416, 52100 Arezzo AR, Italia
-lat: 43.4279725
-lon: 11.84692480000001
-link: https://www.twitter.com
-data: 07/09/2016</yamldata></pre>
-",closed
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/71,175507196,2016-09-07 14:09:27,2016-09-07 13:48:37,Un test,,,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,{},"<pre><yamldata>tel: +393272032790
-            email: info@francescopinzauti.com
-            cosa: Un test
-            descrizione: UNa descrizione
-            indirizzo: Corso Giuseppe Garibaldi, 1115, 80142 Napoli, Italia
-            lat: 40.8517746
-            lon: 14.268124400000033
-            link: https://www.google.com
-            data: 07/09/2016</pre></yamldata>
-",closed
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/63,175466580,2016-09-13 12:29:13,2016-09-07 10:22:23,TEST - ,,,"[""Accettato"", ""Alloggi"", ""Donazioni""]",,,{},"lat:
-lon:
-Alloggio disponibile, possibilità di accogliere 3 persone.
-",closed
