@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Eugenics and Statistics, Discussing Karl Pearson and R. A. Fisher
+author: Nathaniel Joselson
+tags: Eugenics Statistics Pearson Fisher Decolonization Mathematics ANOVA 
 ---
 
 ![Galton's Labs]({{ site.baseurl }}/images/Galton_s_lab.jpg)

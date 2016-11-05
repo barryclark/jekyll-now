@@ -1,8 +1,8 @@
 ---
 layout: post
 title: A Motivation for Decolonizing Statistics
-image:
-  feature: decolonize-your-mind-6-300x225.jpg
+author: Nathaniel Joselson
+tags: Decolonization Statistics Science Colonization University
 ---
 
 ![Decolonization]({{ site.baseurl }}/images/decolonize-your-mind-6-300x225.jpg)

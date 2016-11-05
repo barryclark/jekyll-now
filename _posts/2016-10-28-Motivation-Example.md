@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Decolonization can be hard to see...
+author: Nathaniel Joselson
+tags: Trigonometry Decolonization Statistics CKRaju Ganita Calculus Mathematics Colonization
 ---
 
 ![Decolonization Trigonometry](https://raw.githubusercontent.com/Njoselson/Njoselson.github.io/master/images/trig3.JPG)
