@@ -9,7 +9,7 @@ It is a lot more practical for a person as immersed in the digital realm as I am
 
 My calendar of choice is Apple's [iCloud Calendar](https://support.apple.com/kb/ph2672?locale=en_GB), iPhone's native calendar application. This nativity is precisely why I use it – as most anyone nowadays, I always have my phone on my person. If I ever did find myself in a situation where I didn't have my smartphone, I could [access the calendar online](https://www.icloud.com/#calendar) (log-in required) through any standard web browser.
 
-When setting up a new event, users can specify its name, location, duration and whether it is a regular event and is to appear in the calendar repeatedly. Reminders can also be set up
+When setting up a new event, users can specify its name, location, duration and whether it is a regular event and is to appear in the calendar repeatedly. Reminders can also be set up.
 
 <img class="centered" src="{{site.baseurl}}/images/icloud-calendar-integration.jpg" alt="iCloud Calendar integration">
 
