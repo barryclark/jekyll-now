@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1122,187514138,2016-11-05 23:03:53,2016-11-05 18:25:43,Offerta alloggio a Chigiano - #SanSeverino #Marche,43.3017018,13.1363017,"[""Accettato"", ""Alloggi"", ""Bollettino"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""05/11/2016"", ""descrizione"": ""Alloggio a disposizione localit\u00e0 Chigiano (Sanseverino)"", ""email"": ""scagnolisandro@gmail.com"", ""immagine"": """", ""indirizzo"": ""Strada provinciale Apirese, San Severino Marche, MC, Marche, Italia"", ""lat"": ""43.3017018"", ""link"": """", ""lon"": ""13.1363017"", ""tel"": ""+39.3337452768""}","<pre><yamldata>tel: '+39.3337452768'
+email: scagnolisandro@gmail.com
+descrizione: 'Alloggio a disposizione località Chigiano (Sanseverino)'
+indirizzo: 'Strada provinciale Apirese, San Severino Marche, MC, Marche, Italia'
+lat: '43.3017018'
+lon: '13.1363017'
+link: ''
+immagine: ''
+data: 05/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1120,187488466,2016-11-05 10:14:15,2016-11-05 10:13:40,Usl Umbria 2 attiva Unità di Crisi Emergenza Terremoto: contatti e info utili,,,"[""Accettato"", ""Bollettino"", ""Notizie Utili"", ""Sisma Ottobre"", ""Twitter""]",,,"{""data"": ""05/11/2016"", ""descrizione"": ""Presso l\u2019Unit\u00e0 di Crisi Emergenza Terremoto dell\u2019Usl Umbria n. 2 \u00e8 attivo il numero telefonico 0742 3397419 e una casella di posta elettronica emergenza@uslumbria2.it, presidiati tutti i giorni, dalle ore 8 alle 20. Qualunque problematica conseguente agli eventi sismici ed inerente l\u2019erogazione dei servizi sanitari pu\u00f2 essere comunicata o chiamando il numero sopra indicato o inviando una mail."", ""link"": ""http://www.uslumbria2.it/notizie/unita-di-crisi-emergenza-terremoto-dellusl-umbria"", ""titolo"": ""Usl Umbria 2 attiva Unit\u00e0 di Crisi Emergenza Terremoto: contatti e info utili""}","<pre><yamldata>titolo: 'Usl Umbria 2 attiva Unità di Crisi Emergenza Terremoto: contatti e info utili'
 descrizione: 'Presso l’Unità di Crisi Emergenza Terremoto dell’Usl Umbria n. 2 è attivo il numero telefonico 0742 3397419 e una casella di posta elettronica emergenza@uslumbria2.it, presidiati tutti i giorni, dalle ore 8 alle 20. Qualunque problematica conseguente agli eventi sismici ed inerente l’erogazione dei servizi sanitari può essere comunicata o chiamando il numero sopra indicato o inviando una mail.'
 link: 'http://www.uslumbria2.it/notizie/unita-di-crisi-emergenza-terremoto-dellusl-umbria'
