@@ -26,7 +26,7 @@ $Log:maptune_flat.htmls,v $
 	<meta name="author" content="">
 	<link rel="shortcut icon" href="assets/img/favicon.png">
 
-	<title>MapTune - FEED Map</title>
+	<title>Mappa</title>
 
 	<!-- Bootstrap core CSS -->
 	<link href="assets/css/bootstrap.css" rel="stylesheet">
@@ -46,7 +46,7 @@ $Log:maptune_flat.htmls,v $
 			-webkit-font-smoothing: antialiased;
 			-webkit-overflow-scrolling: touch;
 		}
-		
+
 		.leaflet-container label {
 			font-family: 'Lato', sans-serif;
 			font-weight: 300;
@@ -56,7 +56,7 @@ $Log:maptune_flat.htmls,v $
 			margin: 0;
 			padding: 0;
 		}
-		
+
 		.leaflet-container a.leaflet-popup-close-button {
 			position: absolute;
 			top: 0;
@@ -72,7 +72,7 @@ $Log:maptune_flat.htmls,v $
 			font-weight: bold;
 			background: transparent;
 		}
-		
+
 		code {
 			text-align: left;
 			color: #000;
@@ -85,17 +85,17 @@ $Log:maptune_flat.htmls,v $
 			margin-bottom: 15px;
 			overflow: hidden;
 		}
-		
+
 		#map-pane {
 			-webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 4px 0;
 			box-shadow: rgba(0, 0, 0, 0.3) 0 1px 4px 0;
 		}
-		
+
 		#tab-content {
 			-webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 4px 0;
 			box-shadow: rgba(0, 0, 0, 0.3) 0 1px 4px 0;
 		}
-		
+
 		#view-icon {
 			-webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 4px 0;
 			box-shadow: rgba(0, 0, 0, 0.3) 0 1px 4px 0;
@@ -105,25 +105,25 @@ $Log:maptune_flat.htmls,v $
 			border-right-width: 33px;
 			border-style: dashed;
 		}
-		
+
 		.shadow {
 			-webkit-text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
 			text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
 		}
-		
+
 		.navbar-default .navbar-nav > li > a:hover,
 		.navbar-default .navbar-nav > li > a:focus {
 			color: #FFeeee;
 			background-color: transparent;
 		}
-		
+
 		.filter-fixed-top {
 			position: fixed;
 			right: 0;
 			left: 0;
 			z-index: 1031;
 		}
-		
+
 		.navbar-toggle {
 			display:none;
 		}
@@ -195,7 +195,7 @@ $Log:maptune_flat.htmls,v $
 					<div class="input-group-btn">
 						<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></button>
 						<ul class="dropdown-menu dropdown-menu-right" role="menu" id="filter-preset-1">
-							<!--	
+							<!--
 					  <li><a href="javascript:maptune.jsapi.setSearchFilter('Musica')">Musica</a></li>
 					  <li><a href="javascript:maptune.jsapi.setSearchFilter('Teatro')">Teatro</a></li>
 					  <li><a href="javascript:maptune.jsapi.setSearchFilter('Danza')">Danza</a></li>
@@ -240,7 +240,7 @@ $Log:maptune_flat.htmls,v $
 						<div class="input-group-btn">
 							<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></button>
 							<ul class="dropdown-menu dropdown-menu-right" role="menu" id="filter-preset-2">
-								<!--	
+								<!--
 							  <li><a href="javascript:maptune.jsapi.setSearchFilter('Musica')">Musica</a></li>
 							  <li><a href="javascript:maptune.jsapi.setSearchFilter('Teatro')">Teatro</a></li>
 							  <li><a href="javascript:maptune.jsapi.setSearchFilter('Danza')">Danza</a></li>
@@ -279,7 +279,7 @@ $Log:maptune_flat.htmls,v $
 						<label class="btn btn-default btn-lg" id="showtimelinedate" style="z-index:999">
 					</div>
 				</div><!-- /col-lg-6 -->
-				
+
 			</div><!-- /row -->
 		</div><!-- /container -->
 	</div><!-- /headerwrap -->
@@ -375,7 +375,7 @@ $Log:maptune_flat.htmls,v $
 			</div>
 
 		</div><!-- /row -->
-		
+
 		<div id="list-nav-bottom" class="row">
 			<div class="col-lg-12 ">
 				<div style="margin-top:0.5em;float:left">
@@ -397,67 +397,30 @@ $Log:maptune_flat.htmls,v $
 
 		<div id="image-popup" class="row" style="position:absolute;top:0px;left:0px;width:100%;height:100%;z-index:9999;display:none;">
 			<div style="background:black;opacity:0.7;width:100%;height:100%"></div>
-			<div id="image-popup-content" class="shadow" style="position:absolute;top:80px;left:80px;"> </div>			
+			<div id="image-popup-content" class="shadow" style="position:absolute;top:80px;left:80px;"> </div>
 		</div><!-- /row -->
 
 	</div><!-- /container -->
-	
+
 	<!-- info/help -->
 
 	<div id="info" class="container">
 		<div class="row mt ">
 			<div class="col-lg-8 col-md-9 col-xs-12">
-				<h3>informazioni per l'uso</h3>
-				MapTune visualizza elementi di dataset georeferenziati con una mappa e una lista</br>
-				Questi due modi della visualizzazione sono collegati e si sincronizzano a vicenda.</br>
-				<h4>la mappa</h4>
-				è realizzata come un 'Mashup' sulla base della molto conosciuta Map API 'Leaflet'. Leaflet offre
-				elementi 'standard' per ingrandire o spostare la mappa.<br>In questa applicazione sono configurate varie mappe con aspetti diversi,
-				tutti da servizi mappa liberi, che si fondano su dati di 'OpenStreetMap'.
- 				
-
-				<h4>La lista</h4>
-				<p>è una tabella in HTML che contiene i layer e gli elementi caricati sulla mappa. Per ogni layer, MapTune crea un titolo
-				che contiene gli elementi per modificare la rappresentazione del layer o praticare la sua rimozione.</p>
-				<ul>
-				<li>la lista degli elementi conosce 3 stati:<br>
+				<h3>Informazioni per l'uso</h3>
+				Questa pagina visualizza dati georeferenziati con una mappa e una lista</br>
+					<li>La lista degli elementi è composta da 3 stati:<br>
 					<ol><li>
 					<img src="./resources/ui/listview.jpg" style="opacity:0.5;vertical-align:-6px;" height="24" />
-					<b>Lista</b>: vengono elencati solo l'icona, i titoli ed eventualmente la data
+					<b>Lista</b>: vengono elencati come icone, i titoli ed eventualmente la data
 					</li><li>
 					<img src="./resources/ui/articelview.jpg" style="opacity:0.5;vertical-align:-6px;" height="24" />
-					<b>Articolo</b>: vengono visualizzate tutte le informazioni dell'elemento. In questo stato è possibile selezionare l'elemento per la 'mia mappa'
+					<b>Articolo</b>: vengono visualizzate tutte le informazioni dell'elemento.
 					</li><li>
 					<img src="./resources/ui/galleryview.jpg" style="opacity:0.5;vertical-align:-6px;" height="24" />
-					<b>Galleria</b>: mostra solo le immagini presenti nei metadati
+					<b>Galleria</b>: mostra solo le immagini presenti nei metadati (se esistono)
 					</li></ol><br>
 				</li>
-				<li>La lista si adatta automaticamente agli 'zoom' e 'pan' della mappa.
-					Vegono visualizzati solo elementi visibili nella mappa. In fondo alla lista si trova anche un link per visualizzare eventuali elementi nascosti dai vari filtri.</li>
-				<li>cliccando su un elemento della lista, si apre l'informazione collegata sulla mappa. Cliccando ripetutamente sullo stesso elemento si ingrandisce la mappa su questo punto.</li>
-				</ul>
-
-				<h4>Altri elementi:</h4>
-				<span class="glyphicon glyphicon-list" aria-hidden="true"></span> 
-				attiva la lista di tutti gli elementi dei layer caricati sulla mappa. 
-
-				<h4>aggiungere un feed</h4>
-				<span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
-				vengono proposte altre fonti di open data, in gran parte linkate direttamente al portale 'Open Data' di Matera, e configurate 
-				per una visualizzazione in MapTune.
-
-				<h4>'la mia mappa'</h4>
-				<span class="glyphicon glyphicon-star" aria-hidden="true"></span> 
-				'La mia mappa' contiene gli elementi che sono stati 'collezionati' attraveso il link 'collect' in fondo alle informazioni dell'elemento. 
-
-				<h4>pulire la mappa</h4>
-				<span class="glyphicon glyphicon-repeat" aria-hidden="true"></span>
-				Tutti elementi di tutti i layer vengono cancellati dalla mappa.
-
-				<h4>estendere la mappa</h4>
-				<span class="glyphicon glyphicon-resize-full" aria-hidden="true"></span>
-				La mappa si estende e copre la lista accanto.
-
 
 			</div><!-- /col-lg-8 -->
 		</div><!-- /row -->
@@ -469,6 +432,7 @@ $Log:maptune_flat.htmls,v $
 		<div class="row">
 			<div class="col-lg-6 ">
 			Credits:<br>
+			Maptune: <a href="https://github.com/gjrichter/maptune"</a>Repository Github</a><br>
 			Mapstraction: <a href="http://mapstraction.com"</a>mapstraction.com</a><br>
 			Leaflet: <a href="http://leafletjs.com">leafletjs.com</a><br>
 			mapicons:  <a href="http://mapicons.nicolasmollet.com">mapicons.nicolasmollet.com</a><br>
@@ -479,12 +443,12 @@ $Log:maptune_flat.htmls,v $
 		</div><!-- /row -->
 		<hr>
 	</div><!-- /container -->
-	
-	<!--========================================================================= 
+
+	<!--=========================================================================
 		popups and helper
 	<!--========================================================================= -->
 
-	<!--========================================================================= 
+	<!--=========================================================================
 		popups and helper
 	<!--========================================================================= -->
 
@@ -549,12 +513,12 @@ $Log:maptune_flat.htmls,v $
 	<!-- Map -->
 	<script src="js/leaflet-0.7.7/leaflet.js"></script>
 	<script src="js/maptune/maptune.Mapstraction.js" type="text/javascript" > </script>
-	<script src="js/mxn-2.0.18/mxn.js?(leaflet)" type="text/javascript" charset="utf-8" ></script> 
+	<script src="js/mxn-2.0.18/mxn.js?(leaflet)" type="text/javascript" charset="utf-8" ></script>
 	<!-- -->
 
 	<!-- Fonts from Google Fonts -->
 	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css'>
-	
+
 	<script src="assets/js/jquery-1.10.2.min.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/jquery.easing.min.js"></script>
@@ -587,7 +551,7 @@ $Log:maptune_flat.htmls,v $
 	<!-- -->
 
 
-	<script type="text/javascript" charset="utf-8"> 
+	<script type="text/javascript" charset="utf-8">
 
 	maptune.flags = maptune.flags || {};
 
@@ -617,7 +581,7 @@ $Log:maptune_flat.htmls,v $
 
 	var MapParam = {
 		"all" :
-			{ 
+			{
 			"smallInfoClipDescription" : "500",
 			"smallInfoKeepImage" : "true"
 			},
@@ -629,17 +593,17 @@ $Log:maptune_flat.htmls,v $
 			}
 		,
 		"layerdialog":
-			{ 
+			{
 			"href" : "./layer.html"
 			}
 		,
 		"layertab":
-			{ 
+			{
 			"href" : "./layer.html"
 			}
 		,
 		"layer":
-			{ 
+			{
 			"href" : "./layer.html"
 			}
 	};
@@ -652,7 +616,7 @@ $Log:maptune_flat.htmls,v $
 	var defaultconfigFile = "./param.js";
 
 	$(document).ready(function() {
-      
+
 		_TRACE("on document ready --->");
 
 		// read config file from url and go --->
@@ -675,7 +639,7 @@ $Log:maptune_flat.htmls,v $
 			setTimeout("$(\"#error\").css(\"visibility\",\"hidden\");$(\"#error-message\").html(\"\");",1000);
 			});
 
-		// CUSTOM SCROLL SCRIPT FUNCTION FOR NAVBAR 
+		// CUSTOM SCROLL SCRIPT FUNCTION FOR NAVBAR
 		$(function () {
 			$('.scrollclass a').bind('click', function (event) { //just pass scrollclass in design and start scrolling
 				var $anchor = $(this);
@@ -721,7 +685,7 @@ $Log:maptune_flat.htmls,v $
 
     		});
 		});
-		
+
 		// activate datetime picker
 		$(function () {
 			$('#datetimepicker1').datetimepicker();
@@ -772,9 +736,9 @@ $Log:maptune_flat.htmls,v $
 				if ( MapParam.filter ){
 					var szFilter = "";
 					for ( f in MapParam.filter ){
-					  szFilter += "<li><a href='javascript:maptune.jsapi.setSearchFilter(\""+(MapParam.filter[f].replace(/\'/g,"&#x27;"))+"\")'>"+f+"</a></li>"					
+					  szFilter += "<li><a href='javascript:maptune.jsapi.setSearchFilter(\""+(MapParam.filter[f].replace(/\'/g,"&#x27;"))+"\")'>"+f+"</a></li>"
 					}
-					szFilter += "<li><a href=\"javascript:maptune.jsapi.setSearchFilter('')\">clear</a></li>"					
+					szFilter += "<li><a href=\"javascript:maptune.jsapi.setSearchFilter('')\">clear</a></li>"
 					$("#filter-preset-1").html(szFilter);
 					$("#filter-preset-2").html(szFilter);
 				}
@@ -791,13 +755,13 @@ $Log:maptune_flat.htmls,v $
 				// initial time filter
 				document.getElementById("all").checked = true;
 
-				// make reactive layout - completes bootstrap reactive layout 
+				// make reactive layout - completes bootstrap reactive layout
 				__resizeApplication();
 
-			}).error(function() { 
+			}).error(function() {
 
 				// no specific configurationn found
-				// make default setup and open feed dialog 
+				// make default setup and open feed dialog
 
 				maptune.message("loading",false);
 				maptune.infoMessage("<h3 style='text-align:center'>no specific configuration</h3>",1000);
@@ -816,23 +780,23 @@ $Log:maptune_flat.htmls,v $
 				// initial time filter
 				document.getElementById("all").checked = true;
 
-				// make reactive layout - completes bootstrap reactive layout 
+				// make reactive layout - completes bootstrap reactive layout
 				__resizeApplication();
 
 				// open feeds dialog to select a ayer for the map
 				maptune.selectFeedDialog("show");
 			});
 		};
-	
+
 	// ==================================================
-	// resize and manage the application canvas 
+	// resize and manage the application canvas
 	// ==================================================
 
 	var __actualView = null;
 
 	/**
-	 * setView 
-	 * sets the maptune canvas to: map, list or both 
+	 * setView
+	 * sets the maptune canvas to: map, list or both
 	 * @param szView "map" or "list" or "both"
 	 * @type void
 	 */
@@ -865,8 +829,8 @@ $Log:maptune_flat.htmls,v $
 	};
 
 	/**
-	 * forceMap 
-	 * in reactive design, make shure the map is visible 
+	 * forceMap
+	 * in reactive design, make shure the map is visible
 	 * @type void
 	 */
 	maptune.jsapi.forceMap = function(){
@@ -884,8 +848,8 @@ $Log:maptune_flat.htmls,v $
 	};
 
 	/**
-	 * forceList 
-	 * in reactive design, make shure the list view is visible 
+	 * forceList
+	 * in reactive design, make shure the list view is visible
 	 * @type void
 	 */
 	maptune.jsapi.forceList = function(){
@@ -904,12 +868,12 @@ $Log:maptune_flat.htmls,v $
 	};
 
 	/**
-	 * popupFullDescription 
-	 * sets the maptune canvas to: map, list or both 
+	 * popupFullDescription
+	 * sets the maptune canvas to: map, list or both
 	 * @param szView "map" or "list" or "both"
 	 * @type void
 	 */
-	maptune.jsapi.popupFullDescription = function() { 
+	maptune.jsapi.popupFullDescription = function() {
 	   this.redraw();
 	   // if portrait mode, scroll to list
 	   if (	$("#map-pane").attr("class") == "col-sx-10" ){
@@ -918,8 +882,8 @@ $Log:maptune_flat.htmls,v $
 	};
 
 	/**
-	 * toggleFilter 
-	 * show/hide the textual/temporal filter bar 
+	 * toggleFilter
+	 * show/hide the textual/temporal filter bar
 	 * @param flag if set, show the fiter bar
 	 * @type void
 	 */
@@ -933,13 +897,13 @@ $Log:maptune_flat.htmls,v $
 			$("#header-filter-switch").css("color","white");
 			$("#headerwrap3").css("margin-bottom","0.4em");
 			$("#headerwrap3").css("margin-top","-0.3em");
-			// fixed filter -> create space 
+			// fixed filter -> create space
 			if ($(".filter-fixed-top").length){
 				$("#dynamic-content").css("margin-top","4em");
 			}else{
 				$("#dynamic-content").css("margin-top","0");
 			}
-		}else{	
+		}else{
 			$("#headerwrap3").hide();
 			$("#header-filter-switch").css("color","#c00");
 			$("#dynamic-content").css("margin-top","-0.5em");
@@ -950,20 +914,20 @@ $Log:maptune_flat.htmls,v $
 	};
 
 	/**
-	 * refreshFilter 
-	 * repeat show/hide filterbar, to manage page size after window resized 
+	 * refreshFilter
+	 * repeat show/hide filterbar, to manage page size after window resized
 	 * @type void
 	 */
 	maptune.jsapi.refreshFilter = function(){
 		if ( !($("#headerwrap3").css("display") == "none") ){
-			maptune.jsapi.toggleFilter(true);		
+			maptune.jsapi.toggleFilter(true);
 		}
 	};
 
 	/**
-	 * onChangeTimeWindow 
+	 * onChangeTimeWindow
 	 * called by maptune if time window has changed
-	 * user may apply his code 
+	 * user may apply his code
 	 * @param szFlag timescope like "month","today" ...
 	 * @param nDays time extension in days
 	 * @type void
@@ -975,7 +939,7 @@ $Log:maptune_flat.htmls,v $
 	};
 
 	/**
-	 * onWindowResize 
+	 * onWindowResize
 	 * called by maptune if application window size changed
 	 * @type void
 	 */
@@ -984,14 +948,14 @@ $Log:maptune_flat.htmls,v $
 	};
 
 	// ==================================================
-	// make all reactive adaptions to classes and styles 
+	// make all reactive adaptions to classes and styles
 	// - recognize landscape/portrait window size
 	// - recognize screen size
-	// - choose optimal list/map pane configuration   
+	// - choose optimal list/map pane configuration
 	// ==================================================
 
 	/**
-	 * __resizeApplicatio 
+	 * __resizeApplicatio
 	 * @type void
 	 */
 	__resizeApplication = function(){
@@ -1024,15 +988,15 @@ $Log:maptune_flat.htmls,v $
 		$("#header-map-button").hide();
 		$("#header-plus-button").hide();
 		$("#header-collection-switch-text").show();
-		
+
 		$("#map-pane").css("margin","0");
 
 		if ( width < 1024 ){
-			
-			// ------------------------------------------	
+
+			// ------------------------------------------
 			// small screens
-			// ------------------------------------------	
-			
+			// ------------------------------------------
+
 			$("#toolbar").hide();
 
 			// small nav-bar icons
@@ -1056,7 +1020,7 @@ $Log:maptune_flat.htmls,v $
 
 			if ( height > width || width < 500 ){
 
-				// portrait mode	
+				// portrait mode
 				// ---------------------------------------
 
 				maptune.flags.screenOrientation = "portrait";
@@ -1106,7 +1070,7 @@ $Log:maptune_flat.htmls,v $
 
 			}else{
 
-				// landscape mode (small screens)	
+				// landscape mode (small screens)
 				// -----------------------------------------
 
 				// map width half
@@ -1159,7 +1123,7 @@ $Log:maptune_flat.htmls,v $
 				$("#fullscreen-button").css("left","15px");
 			}
 
-			// in both cases, if screen height small, hide header 
+			// in both cases, if screen height small, hide header
 			// --------------------------------------------------
 			if ( height < (height>width?400:500) ){
 
@@ -1196,7 +1160,7 @@ $Log:maptune_flat.htmls,v $
 			$("#headerwrap3-row").css("width","100%");
 
 			// landscape mode
-			//			
+			//
 			$("#map-pane").attr("class","col-lg-6 col-md-6 col-xs-5");
 
 			$("#map-nav").addClass("nav-stacked");
@@ -1211,8 +1175,8 @@ $Log:maptune_flat.htmls,v $
 			$(".input-group").css("width","11em");
 			$(".leaflet-control-layers").show();
 
-			// set the height of map/sidebar  
-			// 
+			// set the height of map/sidebar
+			//
 			nHeader = $("#headerwrap3 .container").height() + 20 + $(".navbar").height();
 			$("#map-content").height(height-nHeader);
 			$("#sidebar-content").height(height-nHeader);
@@ -1235,29 +1199,29 @@ $Log:maptune_flat.htmls,v $
 		$("#footer-loading").css("top","50%");
 		$("#footer-loading").show();
 
-		// remove placeholder and show it all ( only important on initialization )  
+		// remove placeholder and show it all ( only important on initialization )
 		// -----------------------------------------------------------------------
 		$("#dynamic-placeholder").hide();
 		$("#dynamic-content").show();
 
-		// trigger map api to adapt to the new width and height !!  
+		// trigger map api to adapt to the new width and height !!
 		// -------------------------------------------------------
 		maptune.jsapi.checkResize();
 
-		// trigger map api to adapt the filter pane to the new width and height !!  
+		// trigger map api to adapt the filter pane to the new width and height !!
 		// -------------------------------------------------------
 		maptune.jsapi.refreshFilter(true);
 
 	};
 
 	// ==================================================
-	// collection dataset 
+	// collection dataset
 	// - show/hide collection items
 	// ==================================================
 
 	/**
 	 * __switchCollection
-	 * show or hide collection layer 
+	 * show or hide collection layer
 	 * @type void
 	 */
 	__switchCollection = function(){
@@ -1273,7 +1237,7 @@ $Log:maptune_flat.htmls,v $
 
 	/**
 	 * __setCollection
-	 * show the collection layer 
+	 * show the collection layer
 	 * @type void
 	 */
 	__setCollection = function(){
@@ -1284,7 +1248,7 @@ $Log:maptune_flat.htmls,v $
 
 	/**
 	 * __setMap
-	 * hide collection layer 
+	 * hide collection layer
 	 * @type void
 	 */
 	__setMap = function(){
@@ -1294,12 +1258,12 @@ $Log:maptune_flat.htmls,v $
 	};
 
 	// ==================================================
-	// select new feed  dialog 
+	// select new feed  dialog
 	// ==================================================
 
 	/**
-	 * selectFeedDialog 
-	 * show or hide the select feed dialog (to add layer to maptune) 
+	 * selectFeedDialog
+	 * show or hide the select feed dialog (to add layer to maptune)
 	 * @param szFlag timescope like "month","today" ...
 	 * @type void
 	 */
