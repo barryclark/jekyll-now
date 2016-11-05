@@ -42,8 +42,20 @@ When we do this process many times with all the images in the training dataset, 
 To test how accurate our model is, we make it compute its predictions of our test dataset (which we sat aside and did not used in the training process) and compare its predictions with the actualy values. In this case, the model had an accuracy of 97.7%.
 
 ## Exporting the model
-After installing TensorFlow on your computer and going through the tutorials, the next step would be to somehow extract a serialization of the model that we can then package within our app. 
+After training the model and ensuring it has a reasonable accuracy, the next step is to export it into a file we can package within our app. TensorFlow uses Google's protobuff protocol for serialization.	There are three steps in the exporting process:
+ 1. In the second cell in the notebook, we had this command that wrote the computation graph to a file
 
+        tf.train.write_graph(sess.graph.as_graph_def(), FLAGS.model_dir, input_graph_name)
+
+   This file contains the operations that are used to calculate a prediction. It is missing one key element, however. Computing a prediction needs both the graph of operations as well as the weights that resulted from the training process.
+
+ 2. The weights are saved to a "checkpoint" file in the third cell using this command:
+ 
+        saver.save(sess, checkpoint_file, global_step=0, latest_filename=checkpoint_state_name)
+
+ 3. We now need to "freeze" the graph. Freezing merges the operations graph and the weights checkpoint file into one file. It also transforms the graph in a way that is required to make it run  on Android (the graph contains variable operations, they need to be transformed to constant operations to run in Android's C++ tensorflow environment).
+ 
+   The third cell takes the graph and checkpoint files and generates the frozen graph file. It requires that 
 
 ## Image format
 
