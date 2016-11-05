@@ -215,38 +215,7 @@
 						<b>tutti terremoti di <strong>oggi</strong></b><span style="font-size:8px;"</span></a>
 					<br><span class="description">fonte: INGV -> GeoJson</span>
 
-				</li></ul>
-
-				<h3>
-					Terremoti - dati dal USGS</h3>
-				<div class="varicolumn">
-
-				<ul><li>
-
-					<a href="javascript:maptune.addFeedLayer('http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.atom',
-						{type:'GeoRSS',
-						 format:'xml',
-						 flag:'open|zoomto',
-						 layer:{name:'USGS All Earthquakes, Past Week',
-								initialTimeScope: 'all',
-								markerType : 'symbol',
-								markerImage : 'resources/icons/default/symbols/red_circle.png',
-								smallImage : 'resources/icons/default/symbols/red_circle.png',
-								markerImageType : 'png',
-								markerSizeRule: { source: 'name',
-												   regex : '/M ?([0-9]+\\.([0-9])?|\\.[0-9])?/i',
-												   matchIndex : 1,
-												   normalSizeValue: 4,
-												   pow: 2
-												 }
-								}
-						});" >
-					Earthquakes worldwide - last week<span style="font-size:8px;"></span></a>
-					<br><span class="description">da USGS - formato: GeoRSS</span>
-					<br><span class="description">formato originale: shapefile --> trasformato: GeoJSON</span>
-
 				</li>
-				</ul>
 				</div>
 
 				<h3>
