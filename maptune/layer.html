@@ -20,15 +20,15 @@
 						title="aggiungere punti clickando sui nomi" />
 						<a href="javascript:maptune.selectFeedDialog('hide');" style="font-size:1em;float:right;margin:0.5em"><span class="glyphicon glyphicon-remove" aria-hidden="true" ></span></a>
 					</div>
-					<h2>aggiungi alla mappa ...<br><br>
-					</h2> 
+					<h2>Aggiungi alla mappa ...<br><br>
+					</h2>
 				</div>
 
 				<div id="feedlist-list" >
 
 				<h3>
 					da 'Terremoto Centro Italia'
-				</h3> 
+				</h3>
 
 
 				<div class="varicolumn">
@@ -40,7 +40,7 @@
 						name:'Terremoto Centro Italia - Foto',
 						title:'Terremoto Centro Italia - Foto',
 						proxy:'true',
-						parser: 
+						parser:
 							{
 							title: 'Location Name (city or name of building with that city)',
 							lat:   'Latitude',
@@ -48,7 +48,7 @@
 							image: 'Link of photo (not page)',
 							label: 'true'
 							},
-						layer: 
+						layer:
 							{ 'name': 'Terremoto Centro Italia - Foto',
 							  'markerType' :'custom',
 							  'markerImage' : 'resources/icons/map-icons-collection/photo.png',
@@ -58,9 +58,9 @@
 								  'description': '',
 							},
 						flag:'open',
-						maxLargeIcons: 30});" ><b>Luoghi - Foto</b></a> 
+						maxLargeIcons: 30});" ><b>Luoghi - Foto</b></a>
 					<p class="description">fonte: terremotocentroitalia.info<span style="float:right">
-					<a href="http://docs.google.com/spreadsheets/d/1G4uDDVwNFXXQHmVf6bIrDOGTYF65TZrnsJ7ciudb5Jg" target="_blank"> Google Doc</a>, 
+					<a href="http://docs.google.com/spreadsheets/d/1G4uDDVwNFXXQHmVf6bIrDOGTYF65TZrnsJ7ciudb5Jg" target="_blank"> Google Doc</a>,
 					<a href="http://docs.google.com/spreadsheets/d/1G4uDDVwNFXXQHmVf6bIrDOGTYF65TZrnsJ7ciudb5Jg/export?format=csv&gid=0&single=true" target="_blank"> csv</a>
 					</span></p>
 
@@ -72,14 +72,14 @@
 						name:'Terremoto Centro Italia - Centri Raccolta Beni',
 						title:'Terremoto Centro Italia - Centri Raccolta Beni',
 						proxy:'true',
-						parser: 
+						parser:
 							{
 							title: 'Nome',
 							lat:   'latitude',
 							lon:   'longitude',
 							label: 'true'
 							},
-						layer: 
+						layer:
 							{ 'name': 'Terremoto Centro Italia - Centri Raccolta Beni',
 							  'markerType' :'custom',
 							  'markerImage' : 'resources/icons/map-icons-collection/sozialeeinrichtung.png',
@@ -91,7 +91,7 @@
 							},
 						'flag':'open|zoomto',
 						'minLargeIconZoom' : '10'
-					});" ><b>Centri Raccolta Beni per terremoto Centro Italia</b></a> 
+					});" ><b>Centri Raccolta Beni per terremoto Centro Italia</b></a>
 					<p class="description">fonte: terremotocentroitalia.info<span style="float:right">
 					<a href="http://docs.google.com/spreadsheets/d/17lnDV6v0sertzCgvIfjZ2lvXCtquW3KWuUv_1VgCLJA" target="_blank"> Gooble Doc</a>,
 					<a href="http://docs.google.com/spreadsheets/d/17lnDV6v0sertzCgvIfjZ2lvXCtquW3KWuUv_1VgCLJA/export?format=csv&gid=0&single=true" target="_blank"> csv</a>
@@ -119,8 +119,8 @@
 							'markerImage' : 'resources/icons/map-icons-collection/flag_red.png',
 							'smallImage' :  'resources/icons/default/default-small_red.png',
 							'markerType' : 'categorical',
-							'category'   : 'state', 
-							'categoryList': { 
+							'category'   : 'state',
+							'categoryList': {
 								  'closed':
 										  { 'markerImage' : 'resources/icons/default/default_dark_green.png',
 											'smallImage' :  'resources/icons/default/default-small_dark_green.png'
@@ -135,70 +135,12 @@
 							'sort' : 'timeDown',
 							}
 						});" ><b>Segnalazioni</b></a><br>
-					<span class="description">Dati rivenienti da terremotocentroitalia.info</span>
+					<span class="description">Segnalazioni provenienti da terremotocentroitalia.info</span>
 
-					</li><li>
-
-					<a href="javascript:maptune.addFeedLayer('http://www.google.com/maps/d/u/0/kml?mid=1vqLY9VlCBnX-WupbnzqDr6KZ79A&lid=f1iuOrlfWTQ&forcekml=1',{
-						type:'kml',
-						format:'xml',
-						proxy:false,
-						name:'AMAtriciana',
-						title:'AMAtriciana',
-						layer: 
-							{ 'name': 'AMAtriciana',
-							  'markerType' :'custom',
-							  'markerImage' : 'resources/icons/map-icons-collection/pasta.png',
-							  'smallImage' : 'resources/icons/default/default-small_orange.png',
-							  'markerImageType' : 'png',
-							  'description' : '<img src=\'./resources/images/14051606_172175873209340_2713903784236085089_n.jpg\' width=\'100%\'>',
-							  'minLargeIconZoom' : '11'
-							},
-						flag:'open|zoomto|nosublayer'
-						});" ><b>AMAtriciana</b></a>
-					<p class="description">fonte: terremotocentroitalia.info<span style="float:right">
-					<a href="https://www.google.com/maps/d/u/0/viewer?lid=f1iuOrlfWTQ&mid=1vqLY9VlCBnX-WupbnzqDr6KZ79A" target="_blank"> Gooble Maps</a>,
-					<a href="http://www.google.com/maps/d/u/0/kml?mid=1vqLY9VlCBnX-WupbnzqDr6KZ79A&lid=f1iuOrlfWTQ&forcekml=1" target="_blank"> kml</a>
-					</span>
-					</p>
-
-					</li><li>
-
-					<a href="javascript:maptune.addFeedLayer('http://www.ipersoft.it/amatrice/',{
-						type:'json',
-						format:'json',
-						proxy:false,
-						name:'Eventi FB',
-						title:'Eventi FB',
-						parser: 
-							{
-							title: 'EM01_NAME',
-							lat:   'EM02_PLACE_LOCATION_LATITUDE',
-							lon:   'EM02_PLACE_LOCATION_LONGITUDE',
-							timeStart: 'EM02_START_TIME',
-							timeEnd:  'EM02_END_TIME',
-							label: 'false'
-							},
-						layer: 
-							{ 'name': 'Eventi FB',
-							  'markerType' :'custom',
-							  'markerImage' : 'resources/icons/map-icons-collection/flag_red.png',
-							  'smallImage' : 'resources/icons/default/default-small_red.png',
-							  'markerImageType' : 'png',
-							  'minLargeIconZoom' : '11'
-							},
-						flag:'open|showinfo|zoomto|nosublayer'
-						});" ><b>Eventi Facebook</b></a>
-					<p class="description">fonte: terremotocentroitalia.info<span style="float:right">
-					<a href="http://www.ipersoft.it/amatrice/" target="_blank"> JSON</a>
-					</span></p>
-
-
-					</li></ul>
-				</div>
+					</li>
 
 				<h3>
-					Teremoti - dati dal INGV</h3> 
+					Terremoti - dati INGV</h3>
 				<div class="varicolumn">
 
 				<ul><li>
@@ -225,7 +167,7 @@
 								},
 						 proxy:true
 						 });" >
-						<b>tutti terremoti dal 20 <strong>agosto</strong> in poi - Magnitude 3+</b><span style="font-size:8px;"</span></a>
+						<b>tutti terremoti dal 20 <strong>Agosto</strong> in poi - Magnitude 3+</b><span style="font-size:8px;"</span></a>
 					<br><span class="description">fonte: INGV -> GeoRSS (atom feed)</span>
 
 					</li><li>
@@ -276,7 +218,7 @@
 				</li></ul>
 
 				<h3>
-					Teremoti - dati dal USGS</h3> 
+					Terremoti - dati dal USGS</h3>
 				<div class="varicolumn">
 
 				<ul><li>
@@ -309,7 +251,7 @@
 
 				<h3>
 					Cartografia
-				</h3> 
+				</h3>
 				<span class="description">Esempio di progetti QGIS (shapefiles + styling) trasformato in un GeoJSON dialetto (GeoJSON + layer and sublayer definitions)</span>
 				<div class="varicolumn">
 
@@ -340,5 +282,5 @@
 	</div>
 
 
-</body>	
+</body>
 </html>
