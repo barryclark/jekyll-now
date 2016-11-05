@@ -34,7 +34,7 @@ function __directions_handleErrors(){
 	var result = $("#directions-result")[0];
 
 	if (gdir.getStatus().code == G_GEO_UNKNOWN_ADDRESS)
-		result.innerHTML = ("Indirizzo sconosciuto. Forse è troppo nuovo o sbagliato.\n Codice errore: " + gdir.getStatus().code);
+		result.innerHTML = ("Indirizzo sconosciuto. Forse Ã¨ troppo nuovo o sbagliato.\n Codice errore: " + gdir.getStatus().code);
 	else if (gdir.getStatus().code == G_GEO_SERVER_ERROR)
 		result.innerHTML = ("Richiesta non riuscita.\n Codice errore: " + gdir.getStatus().code);
 

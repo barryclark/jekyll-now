@@ -550,7 +550,7 @@ function __directions_handleErrors(status){
 		{result.innerHTML = ("Troppi punti");}
 	else
 	if (status == google.maps.DirectionsStatus.NOT_FOUND)
-		{result.innerHTML = ("Indirizzo sconosciuto. Forse è troppo nuovo o sbagliato");}
+		{result.innerHTML = ("Indirizzo sconosciuto. Forse Ã¨ troppo nuovo o sbagliato");}
 	else
 	if (status == google.maps.DirectionsStatus.OVER_QUERY_LIMIT)
 		{result.innerHTML = ("Troppi richieste dalla pagina in poco tempo!");}
