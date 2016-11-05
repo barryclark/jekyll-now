@@ -1,7 +1,7 @@
 ---
 published: false
 layout: post
-title: Evaluation of MSDNAA Software
+title: Evaluation of Microsoft Imagine Software
 tags:
   - core-skills
 ---
