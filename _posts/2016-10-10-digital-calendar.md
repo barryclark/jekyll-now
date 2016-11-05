@@ -15,4 +15,4 @@ When setting up a new event, users can specify its name, location, duration and 
 
 The app integrates into others, underlining times, days and dates, allowing the user to add them to the calendar.
 
-As always, countless alternatives are available, the most popular being [Outlook Calendar](https://outlook.live.com/) and [Google Calendar](https://support.google.com/calendar/answer/2465776?co=GENIE.Platform%3DDesktop&hl=en). They offer features similar to the calendar I use and the differences between them are minuscule.
+As always, countless alternatives are available, the most popular being [Outlook Calendar](https://outlook.live.com/) and [Google Calendar](https://support.google.com/calendar/answer/2465776?co=GENIE.Platform%3DDesktop&hl=en). The features they offer are similar to the calendar I use and the differences between them are minuscule.
