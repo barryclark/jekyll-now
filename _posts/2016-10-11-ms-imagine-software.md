@@ -17,7 +17,7 @@ The products available can be categorized accordingly:
 
 ## Operating Systems
 
-I used the **Windows 10 Education** Edition key to upgrade my own **Windows 10 Home** Edition, [as it was clearly superior](http://wincom.blob.core.windows.net/documents/Win10CompareTable_FY17.pdf), while making use of the provided **Windows 7** and **Windows 8.1** by making them into 64-bit virtual machines in [VirtualBox](https://www.virtualbox.org/).
+I used the **Windows 10 Education Edition** key to upgrade my own **Windows 10 Home Edition**, [as it was clearly superior](http://wincom.blob.core.windows.net/documents/Win10CompareTable_FY17.pdf), while making use of the provided **Windows 7** and **Windows 8.1** by making them into 64-bit virtual machines in [VirtualBox](https://www.virtualbox.org/).
 
 ## Applications
 
