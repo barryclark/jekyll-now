@@ -33,6 +33,7 @@ tags:
 - propertyutilbeans
 - clonable
 - clone
+excerpt_separator: <!--more-->
 comments:
 - id: 9
   author: Guus Bloemsma
@@ -107,6 +108,7 @@ comments:
     theory I can't figure out sure how to test. We can't do a hashCode test, can we?"
 ---
 <p>To Construct Domain Objects Dynamically from Struts Forms was a problem in the project I was working in. This is an extension in making Clones of non-<a href="http://download.oracle.com/javase/1.4.2/docs/api/java/lang/Cloneable.html" target="_blank">Clonable</a> Objects. So, we did a little bit of research and found a way to do this,</p>
+<!--more-->
 <p>In Apache Commons BeanUtils, there exists the class <a href="http://commons.apache.org/beanutils/api/org/apache/commons/beanutils/BeanUtilsBean.html" target="_blank">BeanUtilsBean</a>. Check the following method,</p>
 <a href="http://commons.apache.org/beanutils/api/org/apache/commons/beanutils/BeanUtilsBean.html#copyProperties%28java.lang.Object,%20java.lang.Object%29" target="_blank">org.apache.commons.beanutils.BeanUtilsBean#copyProperties(destBean, origBean) </a><br />
 As per the official documentation,</p>
