@@ -1,15 +1,4 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1140,187561137,2016-11-06 13:45:33,2016-11-06 13:19:52,AIUTIAMO Azienda Casetta di Marzapane Bijoux - #MONTEGALLO,42.8473894,13.3434963,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""AIUTIAMO Azienda Casetta di Marzapane Bijoux - #MONTEGALLO"", ""data"": ""06/11/2016"", ""descrizione"": ""Azienda Casetta di Marzapane Bijoux produce gioielli fatti a mano, la produzione a Abetito di Montegallo ed \u00e8 ferma da due mesi, il 4/10 \u00e8 stato riaperto il negozio ad Ascoli per disperazione ma hanno solo giacenze di magazzino e devono affrontare il Natale. Serve un container in cui spostare l'attivit\u00e0. Contattare Anna."", ""email"": ""a.ferri@casettadimarzapanebijoux.com"", ""immagine"": """", ""indirizzo"": ""Strada Provinciale 89 Valfluvione, Montegallo, AP, Marche, 63094, Italia"", ""lat"": ""42.8473894"", ""link"": ""https://www.facebook.com/Casetta.Di.Marzapane.Bijoux/?fref=ts"", ""lon"": ""13.3434963"", ""tel"": ""3284671567""}","<pre><yamldata>tel: '3284671567'
-email: a.ferri@casettadimarzapanebijoux.com
-cosa: 'AIUTIAMO Azienda Casetta di Marzapane Bijoux - #MONTEGALLO'
-descrizione: 'Azienda Casetta di Marzapane Bijoux produce gioielli fatti a mano, la produzione a Abetito di Montegallo ed è ferma da due mesi, il 4/10 è stato riaperto il negozio ad Ascoli per disperazione ma hanno solo giacenze di magazzino e devono affrontare il Natale. Serve un container in cui spostare l''attività. Contattare Anna.'
-indirizzo: 'Strada Provinciale 89 Valfluvione, Montegallo, AP, Marche, 63094, Italia'
-lat: '42.8473894'
-lon: '13.3434963'
-link: 'https://www.facebook.com/Casetta.Di.Marzapane.Bijoux/?fref=ts'
-immagine: ''
-data: 06/11/2016
-</yamldata></pre>",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1139,187561053,2016-11-06 13:46:01,2016-11-06 13:18:33,AIUTI A #MONTEGALLO,42.8473894,13.3434963,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""AIUTI A #MONTEGALLO"", ""data"": ""06/11/2016"", ""descrizione"": ""A Montegallo siamo abbandonati, c' \u00e8 l' ordine di evacuazione, sono stati tutti portati sulla costa, siamo rimasti in pochissimi a sorvegliare i paesi e a resistere, non ci sono posti di blocco per impedire agli sciacalli di arrivare nel cratere abbandonato da tutti, il CAS (contributo per autonoma sistemazione) non \u00e8 stato erogato, la protezione civile \u00e8 andata via, non hanno portato tende n\u00e8 container n\u00e8 casette, noi siamo costretti a vivere in condizioni pietose."", ""email"": ""a.ferri@casettadimarzapanebijoux.com"", ""immagine"": """", ""indirizzo"": ""Strada Provinciale 89 Valfluvione, Montegallo, AP, Marche, 63094, Italia"", ""lat"": ""42.8473894"", ""link"": """", ""lon"": ""13.3434963"", ""tel"": ""3284671567""}","<pre><yamldata>tel: '3284671567'
 email: a.ferri@casettadimarzapanebijoux.com
 cosa: 'AIUTI A #MONTEGALLO'
@@ -5523,17 +5512,6 @@ indirizzo: 'Piazza Cesare Battisti,10 - 02100 Rieti'
 lat: 42.40205
 lon: 12.85996
 link: 'http://www.prefettura.it/rieti/multidip/index.htm'
-data: 15/09/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/384,177135294,2016-09-15 09:58:10,2016-09-15 09:55:47,Protezione Civile Marche,43.60982,13.50866,"[""Accettato"", ""Contatti"", ""Form""]",,,"{""data"": ""15/09/2016"", ""descrizione"": """", ""email"": """", ""indirizzo"": ""Via Gentile da Fabriano \u2013 60125 ANCONA (AN)"", ""lat"": 43.60982, ""link"": ""http://protezionecivile.regione.marche.it/"", ""lon"": 13.50866, ""nome"": ""Protezione Civile Marche"", ""tel"": ""840 001111""}","<pre><yamldata>nome: 'Protezione Civile Marche'
-tel: '840 001111'
-email: ''
-descrizione: ''
-indirizzo: 'Via Gentile da Fabriano – 60125 ANCONA (AN)'
-lat: 43.60982
-lon: 13.50866 
-link: http://protezionecivile.regione.marche.it/
 data: 15/09/2016
 </yamldata></pre>
 ",open
