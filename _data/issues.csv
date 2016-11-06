@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1151,187596361,2016-11-06 23:11:18,2016-11-06 22:56:51,"Acquisti solidali: i cesti natalizi di ""Un cuore per ricostruire""",42.94457585,13.8153963686883,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Facebook"", ""Sisma Ottobre""]",,,"{""cosa"": ""Acquisti solidali: i cesti natalizi di \""Un cuore per ricostruire\"""", ""data"": ""06/11/2016"", ""descrizione"": ""Zafferano Piceno \u00e8 una azienda agricola che coltiva e produce zafferano tra le colline del Piceno nel paese di Acquaviva. Per sostenere l'economia locale, duramente colpita dal terremoto, ha ideato il progetto \u201cUn cuore per ricostruire\u201d mettendo a disposizione di chi voglia aiutare le aziende agricole di Umbria e Marche tre tipologie di cesti, perfetti per essere donati e per dare allo stesso tempo un aiuto concreto a chi non ha pi\u00f9 nulla. Ogni cesto contiene prodotti di assoluta eccellenza, provenienti da produttori della zona del piceno e limitrofi che sono stati pesantemente danneggiati dal sisma: Arquata del Tronto, Pescara del Tronto, Montemonaco, cos\u00ec come tutta l\u2019area dei monti Sibillini, ma anche Norcia e Castelluccio di Norcia. Per ogni cesto venduto verranno donati 2 euro all\u2019associazione \u201cCapodacqua viva\u201d di Capodacqua di Arquata (AP), associazione molto attiva sul territorio nell\u2019aiutare tutta la popolazione colpita dal sisma. Inoltre daremo e darete un aiuto concreto a tantissimi produttori locali che stanno collaborato a questa iniziativa, visto l\u2019assoluta necessit\u00e0 di vendere il pi\u00f9 possibile per poi ricostruire. I cesti gi\u00e0 ordinabili verranno spediti a partire da fine novembre e saranno spediti in tutto il mondo."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Strada Provinciale 1 Rosso Piceno Superiore, Acquaviva Picena, AP, Marche, Italia"", ""lat"": ""42.94457585"", ""link"": ""http://www.zafferanopiceno.it/"", ""lon"": ""13.8153963686883"", ""tel"": """"}","<pre><yamldata>tel: ''
+email: ''
+cosa: 'Acquisti solidali: i cesti natalizi di ""Un cuore per ricostruire""'
+descrizione: 'Zafferano Piceno è una azienda agricola che coltiva e produce zafferano tra le colline del Piceno nel paese di Acquaviva. Per sostenere l''economia locale, duramente colpita dal terremoto, ha ideato il progetto “Un cuore per ricostruire” mettendo a disposizione di chi voglia aiutare le aziende agricole di Umbria e Marche tre tipologie di cesti, perfetti per essere donati e per dare allo stesso tempo un aiuto concreto a chi non ha più nulla. Ogni cesto contiene prodotti di assoluta eccellenza, provenienti da produttori della zona del piceno e limitrofi che sono stati pesantemente danneggiati dal sisma: Arquata del Tronto, Pescara del Tronto, Montemonaco, così come tutta l’area dei monti Sibillini, ma anche Norcia e Castelluccio di Norcia. Per ogni cesto venduto verranno donati 2 euro all’associazione “Capodacqua viva” di Capodacqua di Arquata (AP), associazione molto attiva sul territorio nell’aiutare tutta la popolazione colpita dal sisma. Inoltre daremo e darete un aiuto concreto a tantissimi produttori locali che stanno collaborato a questa iniziativa, visto l’assoluta necessità di vendere il più possibile per poi ricostruire. I cesti già ordinabili verranno spediti a partire da fine novembre e saranno spediti in tutto il mondo.'
+indirizzo: 'Strada Provinciale 1 Rosso Piceno Superiore, Acquaviva Picena, AP, Marche, Italia'
+lat: '42.94457585'
+lon: '13.8153963686883'
+link: 'http://www.zafferanopiceno.it/'
+immagine: ''
+data: 06/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1150,187592047,2016-11-06 22:41:34,2016-11-06 21:51:54,"#Acquasantaterme: tensostruttura adibita a scuola danneggiata da raffiche vento, sospesa l'attività",,,"[""Accettato"", ""Bollettino"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""06/11/2016"", ""descrizione"": ""Le forti raffiche di vento hanno danneggiato la tensostruttura adibita a scuola dell'infanzia ad Arli di Acquasanta Terme (Ascoli Piceno), uno dei comuni colpiti dal terremoto. \""Una parte della copertura \u00e8 danneggiata - dice il sindaco Sante Stangoni - non bastava il sisma\"". Lezioni sospese da domani ma, si spera, \""non oltre il 14 novembre\"". Nella scuola ponte (quella in muratura \u00e8 inagibile) vanno 135 bambini di asilo ed elementari. Una seconda struttura temporanea aprir\u00e0 il 25/11 a Centrale."", ""link"": ""https://www.google.it/amp/www.repubblica.it/cronaca/2016/11/06/news/terremoto_vento_danneggia_scuola-tenda_acquasanta_amatrice_no_dei_genitori_a_spostamenti_scuole-151459947/amp/"", ""titolo"": ""#acquasanta terme tensostruttura adibita a scuola danneggiata da raffiche vento, sospesa l'attivit\u00e0""}","<pre><yamldata>titolo: '#acquasanta terme tensostruttura adibita a scuola danneggiata da raffiche vento, sospesa l''attività'
 descrizione: 'Le forti raffiche di vento hanno danneggiato la tensostruttura adibita a scuola dell''infanzia ad Arli di Acquasanta Terme (Ascoli Piceno), uno dei comuni colpiti dal terremoto. ""Una parte della copertura è danneggiata - dice il sindaco Sante Stangoni - non bastava il sisma"". Lezioni sospese da domani ma, si spera, ""non oltre il 14 novembre"". Nella scuola ponte (quella in muratura è inagibile) vanno 135 bambini di asilo ed elementari. Una seconda struttura temporanea aprirà il 25/11 a Centrale.'
 link: 'https://www.google.it/amp/www.repubblica.it/cronaca/2016/11/06/news/terremoto_vento_danneggia_scuola-tenda_acquasanta_amatrice_no_dei_genitori_a_spostamenti_scuole-151459947/amp/'
@@ -4705,6 +4716,18 @@ indirizzo: ''
 lat: ''
 lon: ''
 link: 'https://www.facebook.com/groups/1758670357733881/permalink/1765674217033495/'
+immagine: ''
+data: 16/09/2016
+</yamldata></pre>
+",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/496,177436758,2016-09-20 15:20:55,2016-09-16 14:17:01,Si ricerca stufa a pellet da inserire in struttura in legno,42.62225,13.33966,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Stufa a pellet da inserire in struttura in legno"", ""data"": ""16/09/2016"", ""descrizione"": ""Si ricerca stufa a pellet da inserire nella nuova struttura in legno per affrontare il freddo."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": ""42.62225"", ""link"": """", ""lon"": ""13.33966"", ""tel"": ""3661990081""}","<pre><yamldata>tel: '3661990081'
+email: ''
+cosa: 'Stufa a pellet da inserire in struttura in legno'
+descrizione: 'Si ricerca stufa a pellet da inserire nella nuova struttura in legno per affrontare il freddo.'
+indirizzo: ''
+lat: '42.62225'
+lon: '13.33966'
+link: ''
 immagine: ''
 data: 16/09/2016
 </yamldata></pre>
