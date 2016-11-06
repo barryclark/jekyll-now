@@ -21,10 +21,10 @@ I used the Windows 10 Education Edition key to upgrade my own Windows 10 Home Ed
 
 ## Applications
 
-<a href="https://products.office.com/en-us/access" target="_blank"><img src="https://static.onthehub.com/production/attachments/9/9713830e-0d62-e511-9410-b8ca3a5db7a1/84a6efa1-faa3-e511-9413-b8ca3a5db7a1.png" alt="Access 2016"></a>
+<a href="https://products.office.com/en-us/access" target="_blank"><img src="https://c.s-microsoft.com/en-us/CMSImages/Logo_Access_159x60.png?version=23a3d796-28d8-46a2-2122-db76fcfb5814" alt="Access 2016"></a>
 
-![Project Professional 2016](https://static.onthehub.com/production/attachments/9/30dba567-c83a-e511-940f-b8ca3a5db7a1/2e788ab7-3a0f-4119-a1f8-7dc943b217a7.png)
+<a href="https://products.office.com/en-us/access" target="_blank"><img src="https://static.onthehub.com/production/attachments/9/30dba567-c83a-e511-940f-b8ca3a5db7a1/2e788ab7-3a0f-4119-a1f8-7dc943b217a7.png" alt="Project Professional 2016"></a>
 
-![Visio Professional 2016](https://static.onthehub.com/production/attachments/9/20f87f43-c83a-e511-940f-b8ca3a5db7a1/8c2be168-a74d-46ac-b5da-16ab93986484.png)
+<a href="https://products.office.com/en-us/access" target="_blank"><img src="https://static.onthehub.com/production/attachments/9/20f87f43-c83a-e511-940f-b8ca3a5db7a1/8c2be168-a74d-46ac-b5da-16ab93986484.png" alt="Visio Professional 2016"></a>
 
 Although there are countless other applications in the university's WebStore, many of them are outdated, some of them have been made freely accessible outside of the Microsoft Imagine service and others aren't currently of any interest or use to me.
