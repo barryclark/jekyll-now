@@ -32,7 +32,7 @@ The following is a list of tutorials, templates and support pages for Microsoft 
 <li><a href="http://www.hloom.com/">Hloom.com</a></li>
 <li><a href="http://www.layoutready.com/">LayoutReady</a></li>
 </ul>
-#### Specific Templates for Word
+<h4>Specific Templates for Word</h4>
 <ul>
 <li><a href="http://www.purdue.edu/gradschool/research/thesis/templates.html">Thesis Templates by Purdue University</a></li>
 <li><a href="http://www.american.edu/provost/grad/etd/templates.cfm#Wordt">Thesis Templates by American University</a></li>
