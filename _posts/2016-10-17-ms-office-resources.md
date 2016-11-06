@@ -17,6 +17,7 @@ The following is a list of tutorials, templates and support pages for Microsoft 
 
 ### Specific Tutorials
 <li><a href="https://support.office.com/en-us/article/Create-a-table-of-contents-in-Word-882e8564-0edb-435e-84b5-1d8552ccf0c0">Create a table of contents in Word</a></li>
+<li><a href="https://support.office.com/en-us/article/Move-around-in-a-document-using-the-Navigation-pane-394787be-bca7-459b-894e-3f8511515e55">Move around in a document using the Navigation pane</a></li>
 
 ## Unofficial Resources
 
