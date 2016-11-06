@@ -5509,6 +5509,17 @@ link: 'http://www.prefettura.it/rieti/multidip/index.htm'
 data: 15/09/2016
 </yamldata></pre>
 ",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/385,177137151,2016-09-15 10:05:56,2016-09-15 10:04:54,Prefettura di Rieti,42.40205,12.85996,"[""Accettato"", ""Contatti"", ""Form""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""Il numero e l'indirizzo mail da contattare da chiunque volesse offrire ospitalit\u00e0 alle vittime."", ""email"": ""prefettura.rieti@interno.it"", ""indirizzo"": ""Piazza Cesare Battisti,10 - 02100 Rieti"", ""lat"": 42.40205, ""link"": ""http://www.prefettura.it/rieti/multidip/index.htm"", ""lon"": 12.85996, ""nome"": ""Prefettura di Rieti"", ""tel"": ""07462991""}","<pre><yamldata>nome: 'Prefettura di Rieti'
+tel: '07462991'
+email: prefettura.rieti@interno.it
+descrizione: 'Il numero e l''indirizzo mail da contattare da chiunque volesse offrire ospitalità alle vittime.'
+indirizzo: 'Piazza Cesare Battisti,10 - 02100 Rieti'
+lat: 42.40205
+lon: 12.85996
+link: 'http://www.prefettura.it/rieti/multidip/index.htm'
+data: 15/09/2016
+</yamldata></pre>
+",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/384,177135294,2016-09-15 09:58:10,2016-09-15 09:55:47,Protezione Civile Marche,43.60982,13.50866,"[""Accettato"", ""Contatti"", ""Form""]",,,"{""data"": ""15/09/2016"", ""descrizione"": """", ""email"": """", ""indirizzo"": ""Via Gentile da Fabriano \u2013 60125 ANCONA (AN)"", ""lat"": 43.60982, ""link"": ""http://protezionecivile.regione.marche.it/"", ""lon"": 13.50866, ""nome"": ""Protezione Civile Marche"", ""tel"": ""840 001111""}","<pre><yamldata>nome: 'Protezione Civile Marche'
 tel: '840 001111'
 email: ''
