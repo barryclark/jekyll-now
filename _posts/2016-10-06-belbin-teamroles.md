@@ -5,7 +5,7 @@ tags:
   - core-skills
 title: What Belbin Team Roles Do I Best Fit Into?
 ---
-Based on self-assessment, I believe I fit into the following [Belbin Roles](http://www.belbin.com/about/belbin-team-roles/).
+Based on my self-assessment, I believe I fit into the following [Belbin Roles](http://www.belbin.com/about/belbin-team-roles/).
 
 <div style="padding: 5px; float: left"><img src="http://www.belbin.com/media/1326/teamworker.png" width="45"/></div>  
 
