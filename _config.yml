@@ -56,8 +56,8 @@ baseurl: ""
 twitter:
   username: gunith
   
-author:
-  twitter: gunith
+#author:
+#  twitter: gunith
   
 logo: https://avatars3.githubusercontent.com/u/1032108?v=3&s=466
 
