@@ -65,6 +65,7 @@ comments:
 JQuery gives nonsense when Umlauts are entered.
 
 2 Important things to fix here
+
 * Set the content type to: `application/x-www-form-urlencoded; charset=UTF-8`
 * Use POST
 
