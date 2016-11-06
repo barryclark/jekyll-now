@@ -52,6 +52,26 @@ url: http://gunith.github.io
 # then add in the baseurl here, like this: "/repository-name"
 baseurl: ""
 
+# SEO start
+twitter:
+  username: gunith
+  
+author:
+  twitter: gunith
+  
+logo: https://avatars3.githubusercontent.com/u/1032108?v=3&s=466
+
+social:
+  name: Gunith Devasurendra
+  links:
+    - https://twitter.com/gunith
+    - https://www.facebook.com/gunith
+    - https://www.linkedin.com/in/Gunith
+    - https://plus.google.com/u/0/+GunithDevasurendra
+    - https://github.com/gunith
+    - http://stackoverflow.com/users/264069/gunith-devasurendra
+# SEO end
+
 #
 # !! You don't need to change any of the configuration flags below !!
 #
