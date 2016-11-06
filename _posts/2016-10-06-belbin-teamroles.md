@@ -10,7 +10,7 @@ Based on self-assessment, I believe I fit into the following [Belbin Roles](http
 <div style="padding: 5px; float: left"><img src="http://www.belbin.com/media/1326/teamworker.png" width="50"/></div>  
 
 ## Teamworker
-
+<div style="clear:both"></div>
 Help the team to gel, using their versatility to identify the work required and complete it on behalf of the team
 
 <ul>
@@ -21,7 +21,7 @@ Help the team to gel, using their versatility to identify the work required and 
 <div style="padding: 5px; float: left"><img src="http://www.belbin.com/media/1318/completor.png" width="50"/></div>   
 
 ## Completer Finisher
-
+<div style="clear:both"></div>
 Most effectively used at the end of tasks to polish and scrutinise the work for errors, subjecting it to the highest standards of quality control.
 
 <ul>
