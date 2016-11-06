@@ -29,14 +29,14 @@ tags:
 comments: []
 ---
 <p>While I was deploying Spring, I got the following Exception,</p>
-<pre>java.security.AccessControlException: access denied (java.util.PropertyPermission cglib.debugLocation read)<&#47;pre><br />
+<pre>java.security.AccessControlException: access denied (java.util.PropertyPermission cglib.debugLocation read)</pre><br />
 The fix for such "access denied" is as follows,</p>
 <ul>
-<li>Open [CATALINA_HOME]&#47;conf&#47;policy.d&#47;04webapps.policy (ON UBUNTU)<&#47;li>
-<li>Add the following to that file inside the grant{} block<&#47;li><br />
-<&#47;ul></p>
-<pre>permission java.util.PropertyPermission "cglib.debugLocation","read";<&#47;pre><br />
+<li>Open [CATALINA_HOME]/conf/policy.d/04webapps.policy (ON UBUNTU)</li>
+<li>Add the following to that file inside the grant{} block</li><br />
+</ul></p>
+<pre>permission java.util.PropertyPermission "cglib.debugLocation","read";</pre><br />
 Likewise, for</p>
-<pre>access denied (java.lang.RuntimePermission getProtectionDomain)<&#47;pre><br />
+<pre>access denied (java.lang.RuntimePermission getProtectionDomain)</pre><br />
 Add this,</p>
-<pre>permission java.lang.RuntimePermission "getProtectionDomain";<&#47;pre></p>
+<pre>permission java.lang.RuntimePermission "getProtectionDomain";</pre></p>
