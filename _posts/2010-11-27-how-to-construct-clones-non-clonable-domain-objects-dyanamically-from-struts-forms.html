@@ -1,0 +1,119 @@
+---
+layout: post
+status: publish
+published: true
+title: How to Construct Clones of Non-Clonable Objects Or Construct Domain Objects
+  Dynamically from Struts Forms
+author:
+  display_name: Gunith
+  login: admin
+  email: gunith@gmail.com
+  url: ''
+author_login: admin
+author_email: gunith@gmail.com
+wordpress_id: 62
+wordpress_url: http://www.gunith.com/?p=62
+date: '2010-11-27 09:12:10 +0530'
+date_gmt: '2010-11-27 03:42:10 +0530'
+categories:
+- Java
+- Struts
+- Apache Commons
+tags:
+- programming
+- Java
+- code
+- jee
+- coding
+- struts
+- commons
+- beanutils
+- beanutilbeans
+- propertyutils
+- propertyutilbeans
+- clonable
+- clone
+comments:
+- id: 9
+  author: Guus Bloemsma
+  author_email: guus@bloemsma.net
+  author_url: http://www.bloemsma.net
+  date: '2010-11-27 17:05:33 +0530'
+  date_gmt: '2010-11-27 11:35:33 +0530'
+  content: "These methods rely on reflection to copy all properties. This means they
+    circumvent all business logic with all the consequences that can have.\r\n\r\nI
+    understand that sometimes such a hack is necessary, but for maintainability's
+    sake you are much better off introducing a copy constructor."
+- id: 10
+  author: Gunith
+  author_email: gunith@gmail.com
+  author_url: ''
+  date: '2010-11-27 18:15:19 +0530'
+  date_gmt: '2010-11-27 12:45:19 +0530'
+  content: Thanks adding your very valid point of view.. It is very true that we would
+    have customisations when we copy properties from one object to the other. If a
+    Bean has 10 attributes, the idea is to do all 10 in one go using this method and
+    thereafter set the odd 3 attributes using setters and custom validations and type
+    conversions
+- id: 59
+  author: Martin
+  author_email: martin.boehm@thomsonreuters.com
+  author_url: ''
+  date: '2010-12-02 13:53:30 +0530'
+  date_gmt: '2010-12-02 08:23:30 +0530'
+  content: "This approach only works well for \"simple\" properties. It becomes questionable
+    for collection properties, as you have to build a \"shadow\" copy of the business
+    object in the ActionForm. In any case you to expose detailed knowledge of the
+    structure of your business objects to the view layer. \r\nAnd you circumvent any
+    access- and validity control that might need to be applied in your business logic
+    (as Guus already said). \r\nUnder these circumstances you could fill the business
+    objects themselves in the ActionForm (which you should really not do), avoiding
+    the #copyProperties step alltogether."
+- id: 81
+  author: Gunith
+  author_email: gunith@gmail.com
+  author_url: ''
+  date: '2010-12-04 08:30:43 +0530'
+  date_gmt: '2010-12-04 03:00:43 +0530'
+  content: "Hi Martin, Thanks to you for adding your valid point of view. \r\n\r\nI
+    actually tested your theory to test if the code above creates a security problem.
+    Here are the details. \r\n\r\nI made 2 classes, one the bean class the other the
+    testing class.\r\n<strong>The Bean Class </strong>>>\r\n\r\n<code>package
+    gunith.evillab;\r\n\r\npublic class SampleBean {\r\n    private boolean noGetter;\r\n
+    \   private boolean getterSetter;\r\n\r\n    /**\r\n     * @param noGetter
+    the noGetter to set\r\n     */\r\n    public void setNoGetter(boolean noGetter)
+    {\r\n        this.noGetter = noGetter;\r\n    }\r\n\r\n    /**\r\n     * @return
+    the getterSetter\r\n     */\r\n    public boolean isGetterSetter() {\r\n        return
+    getterSetter;\r\n    }\r\n\r\n    /**\r\n     * @param getterSetter the getterSetter
+    to set\r\n     */\r\n    public void setGetterSetter(boolean getterSetter)
+    {\r\n        this.getterSetter = getterSetter;\r\n    }\r\n\r\n    /* (non-Javadoc)\r\n
+    \    * @see java.lang.Object#toString()\r\n     */\r\n\r\n    @Override\r\n
+    \   public String toString() {\r\n        StringBuilder builder = new StringBuilder();\r\n
+    \       builder.append(\"SampleBean [noGetter=\");\r\n        builder.append(noGetter);\r\n
+    \       builder.append(\", getterSetter=\");\r\n        builder.append(getterSetter);\r\n
+    \       builder.append(\"]\");\r\n        return builder.toString();\r\n    }\r\n}</code>\r\n\r\nThen
+    <strong>the test class</strong> >>\r\n\r\npackage gunith.evillab;\r\n<code>\r\nimport
+    java.lang.reflect.InvocationTargetException;\r\nimport org.apache.commons.beanutils.BeanUtilsBean;\r\n\r\npublic
+    class SampleBeanCopier {\r\n\r\n    public static void main(String[] args) {\r\n
+    \       SampleBean src = new SampleBean();\r\n        SampleBean dest = new SampleBean();\r\n
+    \       \r\n        src.setGetterSetter(true);\r\n        src.setNoGetter(true);\r\n\r\n
+    \       BeanUtilsBean bub = new BeanUtilsBean();\r\n\r\n        try {\r\n            bub.copyProperties(dest,
+    src);\r\n        }\r\n        catch (IllegalAccessException e) {\r\n            e.printStackTrace();\r\n
+    \       }\r\n        catch (InvocationTargetException e) {\r\n            e.printStackTrace();\r\n
+    \       }\r\n        System.out.println(dest.toString());\r\n    }\r\n}</code>\r\n\r\nWell,
+    the result is that the boolean without the getter (noGetter) has false while getterSetter
+    returns true. That shows that class the BeanUtilBeans uses getters and setters
+    instead of the private properties.\r\n\r\nAs for the one about the 'shadow collection'
+    theory I can't figure out sure how to test. We can't do a hashCode test, can we?"
+---
+<p>To Construct Domain Objects Dynamically from Struts Forms was a problem in the project I was working in. This is an extension in making Clones of non-<a href="http://download.oracle.com/javase/1.4.2/docs/api/java/lang/Cloneable.html" target="_blank">Clonable</a> Objects. So, we did a little bit of research and found a way to do this,</p>
+<p>In Apache Commons BeanUtils, there exists the class <a href="http://commons.apache.org/beanutils/api/org/apache/commons/beanutils/BeanUtilsBean.html" target="_blank">BeanUtilsBean</a>. Check the following method,</p>
+<a href="http://commons.apache.org/beanutils/api/org/apache/commons/beanutils/BeanUtilsBean.html#copyProperties%28java.lang.Object,%20java.lang.Object%29" target="_blank">org.apache.commons.beanutils.BeanUtilsBean#copyProperties(destBean, origBean) </a><br />
+As per the official documentation,</p>
+<blockquote><p>Copy property values from the origin bean to the destination bean  for all cases where the property names are the same.  For each  property, a conversion is attempted as necessary.  All combinations of  standard JavaBeans and DynaBeans as origin and destination are  supported.  Properties that exist in the origin bean, but do not exist  in the destination bean (or are read-only in the destination bean) are  silently ignored.</blockquote><br />
+Which is pretty ideal for the job.</p>
+<p>The other day, I found the Official Struts option for this while I was browsing through the <a href="http://struts.apache.org/1.x/faqs/actionForm.html" target="_blank">Struts 1.x documentation for ActionForm</a>. It talks about this method which does pretty much the same,</p>
+<a href="http://commons.apache.org/beanutils/api/src-html/org/apache/commons/beanutils/PropertyUtils.html#line.179" target="_blank">org.apache.commons.beanutils.PropertyUtils.copyProperties(actionForm, businessObject);</a><br />
+They are in the Same BeanUtils project and internally calls the following method,</p>
+<a href="http://commons.apache.org/beanutils/api/org/apache/commons/beanutils/PropertyUtilsBean.html#copyProperties%28java.lang.Object,%20java.lang.Object%29">org.apache.commons.beanutils.PropertyUtilsBean.copyProperties(java.lang.Object, java.lang.Object)</a><br />
+I tried understanding the differences between these 2 types of methods (BeanUtilsBean vs PropertyUtilsBen). I haven't tried the PropertyUtils way, but the BeanUtilsBean works like a charm :-D</p>
