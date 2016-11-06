@@ -8,7 +8,7 @@ excerpt_separator: <!--more-->
 ---
 The following is a list of tutorials, templates and support pages for Microsoft Office applications:
 
-## Official
+## Official Resources
 <ul>
 <li><a href="https://support.office.com/">Office Support</a></li>
 <li><a href="https://templates.office.com/">Office Templates</a></li>
@@ -18,7 +18,7 @@ The following is a list of tutorials, templates and support pages for Microsoft 
 ### Specific Tutorials
 <li><a href="https://support.office.com/en-us/article/Create-a-table-of-contents-in-Word-882e8564-0edb-435e-84b5-1d8552ccf0c0">Create a table of contents in Word</a></li>
 
-## Unofficial
+## Unofficial Resources
 
 ### Tutorials
 <ul>
