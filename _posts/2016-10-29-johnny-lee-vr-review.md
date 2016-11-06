@@ -13,4 +13,4 @@ Eight years ago, Johnny Lee uploaded a video to YouTube, explaining how to creat
 
 The Wii Remote contains an infrared camera that can be used to track anything with two sources of infrared right to create a makeshift head tracking camera. In the video, Johnny places the Remote in front of a 2D display and uses the [Wii Sensor Bar](https://www.nintendo.co.uk/Support/Wii/Usage/Wii-Menus/Sensor-Bar/Sensor-Bar-242923.html) and a pair of [safety glasses](http://www.ebay.co.uk/bhp/led-safety-glasses) with its LEDs replaced with infrared light to create a VR window effect. 
 
-Sadly, this technology only works for one user at a time, but it is amazing nonetheless and the fact that we haven't seen any widespread use of it in over eight years is rather perplexing!
+Sadly, this technology only works for one user at a time, but it is amazing nonetheless and the fact that we haven't seen any widespread use of it in over eight years is rather perplexing, as it could have various interesting applications, especially in video games!
