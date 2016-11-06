@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1128,187534506,2016-11-06 01:06:57,2016-11-06 01:05:39,"A San Benedetto del Tronto servono ferri, uncinetti, cotone e lana per anziane sfollate",42.9525328,13.8807144,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Facebook"", ""Sisma Ottobre""]",,,"{""cosa"": ""A San Benedetto del Tronto servono ferri, uncinetti, cotone e lana per anziane sfollate"", ""data"": ""06/11/2016"", ""descrizione"": ""Alla protezione civile di San Benedetto del Tronto (ex Scuola Curzi) stanno raccogliendo ferri per lana, uncinetti, matassine di cotone e lana per far passare qualche ora alle persone della terza et\u00e0. Chi pu\u00f2 portare li qualcosa o spedirla a me che la porto a mano appena arriva. Daniela Camusi"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via Raffaello Sanzio, Marina centro, San Benedetto del Tronto, AP, Marche, 63039, Italia"", ""lat"": ""42.9525328"", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1795206237413626/"", ""lon"": ""13.8807144"", ""tel"": """"}","<pre><yamldata>tel: ''
+email: ''
+cosa: 'A San Benedetto del Tronto servono ferri, uncinetti, cotone e lana per anziane sfollate'
+descrizione: 'Alla protezione civile di San Benedetto del Tronto (ex Scuola Curzi) stanno raccogliendo ferri per lana, uncinetti, matassine di cotone e lana per far passare qualche ora alle persone della terza età. Chi può portare li qualcosa o spedirla a me che la porto a mano appena arriva. Daniela Camusi'
+indirizzo: 'Via Raffaello Sanzio, Marina centro, San Benedetto del Tronto, AP, Marche, 63039, Italia'
+lat: '42.9525328'
+lon: '13.8807144'
+link: 'https://www.facebook.com/groups/1758670357733881/permalink/1795206237413626/'
+immagine: ''
+data: 06/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1127,187534367,2016-11-06 01:06:38,2016-11-06 01:01:50,A Porto Sant'Elpidio cercasi parrucchieri uomo/donna per gli sfollati,43.2589619,13.7569828,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Sisma Ottobre""]",,,"{""cosa"": ""A Porto Sant'Elpidio cercasi parrucchieri uomo/donna per gli sfollati"", ""data"": ""06/11/2016"", ""descrizione"": ""Si richiede la disponibilit\u00e0 di parrucchieri per uomo e donna sia a domicilio (Holiday, Mimose, Risacca, Pineta, Belvedere) per la Domenica e Luned\u00ec o comunque disponibili anche in altri giorni presso le proprie sedi se vicine alle sopra citate strutture. Per disponibilit\u00e0 contattare 3346085693."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via San Giovanni Bosco, Porto Sant'Elpidio, FM, Marche, 63018, Italia"", ""lat"": ""43.2589619"", ""link"": ""https://www.facebook.com/NazarenoFranchellucciSindaco/posts/699856143498559"", ""lon"": ""13.7569828"", ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 cosa: 'A Porto Sant''Elpidio cercasi parrucchieri uomo/donna per gli sfollati'
@@ -4778,18 +4789,6 @@ https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/477,1773499
 descrizione: 'L’Aquila. Le sezioni provinciali dell’Unione Italiana dei Ciechi (Uic) e degli Ipovedenti de L’Aquila e Ascoli Piceno, in collaborazione con l’U.N.I.Vo.C. ( Unione Nazionale Volontari Pro Ciechi) L’Aquila e l’ottica aquilana Genitti hanno organizzato visite oculistiche gratuite per le popolazioni del Centro Italia colpite dal sisma del 24 agosto.'
 link: 'http://www.cityrumors.it/speciale-terremoto/308939-terremoto-occhiali-gratis-li-persi-uic-ipovedenti-laquila.html'
 data: 16/09/2016
-</yamldata></pre>
-",closed
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/476,177297104,2016-09-23 22:20:17,2016-09-15 21:41:15,"Arquata e Pescara del Tronto: grazie a Uic, occhiali e visite oculistiche gratuite",42.76214,13.29655,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""Occhiali e visite oculistiche gratis"", ""data"": ""15/09/2016"", ""descrizione"": ""Gli oculisti di Uic saranno il 19 settembre (e se necessario anche nei giorni successivi) a Arquata e Pescara del Tronto per visitare e donare occhiali da vista a chi li ha persi nel sisma."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Arquata del Tronto, AP, Marche, Italia"", ""lat"": ""42.76214"", ""link"": ""http://www.cityrumors.it/speciale-terremoto/308939-terremoto-occhiali-gratis-li-persi-uic-ipovedenti-laquila.html"", ""lon"": ""13.29655"", ""tel"": """"}","<pre><yamldata>tel: ''
-email: ''
-cosa: 'Occhiali e visite oculistiche gratis'
-descrizione: 'Gli oculisti di Uic saranno il 19 settembre (e se necessario anche nei giorni successivi) a Arquata e Pescara del Tronto per visitare e donare occhiali da vista a chi li ha persi nel sisma.'
-indirizzo: 'Arquata del Tronto, AP, Marche, Italia'
-lat: '42.76214'
-lon: '13.29655'
-link: 'http://www.cityrumors.it/speciale-terremoto/308939-terremoto-occhiali-gratis-li-persi-uic-ipovedenti-laquila.html'
-immagine: ''
-data: 15/09/2016
 </yamldata></pre>
 ",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/476,177297104,2016-09-23 22:20:17,2016-09-15 21:41:15,"Arquata e Pescara del Tronto: grazie a Uic, occhiali e visite oculistiche gratuite",42.76214,13.29655,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""Occhiali e visite oculistiche gratis"", ""data"": ""15/09/2016"", ""descrizione"": ""Gli oculisti di Uic saranno il 19 settembre (e se necessario anche nei giorni successivi) a Arquata e Pescara del Tronto per visitare e donare occhiali da vista a chi li ha persi nel sisma."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Arquata del Tronto, AP, Marche, Italia"", ""lat"": ""42.76214"", ""link"": ""http://www.cityrumors.it/speciale-terremoto/308939-terremoto-occhiali-gratis-li-persi-uic-ipovedenti-laquila.html"", ""lon"": ""13.29655"", ""tel"": """"}","<pre><yamldata>tel: ''
