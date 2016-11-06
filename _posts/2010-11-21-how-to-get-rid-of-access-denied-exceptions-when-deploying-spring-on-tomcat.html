@@ -1,0 +1,42 @@
+---
+layout: post
+status: publish
+published: true
+title: How to get rid of *access denied* Exceptions when deploying Spring On Tomcat?
+author:
+  display_name: Gunith
+  login: admin
+  email: gunith@gmail.com
+  url: ''
+author_login: admin
+author_email: gunith@gmail.com
+wordpress_id: 22
+wordpress_url: http://www.beta.gunith.com/?p=22
+date: '2010-11-21 13:24:18 +0530'
+date_gmt: '2010-11-21 07:54:18 +0530'
+categories:
+- Linux
+- Java
+- Tomcat
+- Spring
+tags:
+- Java
+- ubuntu
+- tomcat
+- jee
+- security
+- spring
+comments: []
+---
+<p>While I was deploying Spring, I got the following Exception,</p>
+<pre>java.security.AccessControlException: access denied (java.util.PropertyPermission cglib.debugLocation read)<&#47;pre><br />
+The fix for such "access denied" is as follows,</p>
+<ul>
+<li>Open [CATALINA_HOME]&#47;conf&#47;policy.d&#47;04webapps.policy (ON UBUNTU)<&#47;li>
+<li>Add the following to that file inside the grant{} block<&#47;li><br />
+<&#47;ul></p>
+<pre>permission java.util.PropertyPermission "cglib.debugLocation","read";<&#47;pre><br />
+Likewise, for</p>
+<pre>access denied (java.lang.RuntimePermission getProtectionDomain)<&#47;pre><br />
+Add this,</p>
+<pre>permission java.lang.RuntimePermission "getProtectionDomain";<&#47;pre></p>
