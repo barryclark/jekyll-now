@@ -48,4 +48,4 @@ var txt = f.txt.value.replace(/\'/,'\x27').replace(/\"/,'\x22');
 ```
 
 This replaces the characters with char codes in the textbox called `txt` in the form named `f` and assigns to the var `txt`. (I used JQuery to get values of the `txt`.. That's JQuery notation. But you can also use vanilla JS for this)
-You can find another use/example  [here]("http://stackoverflow.com/questions/1372492/assign-javascript-string-without-escaping")
+You can find another use/example  [here](http://stackoverflow.com/questions/1372492/assign-javascript-string-without-escaping)
