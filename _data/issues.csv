@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1139,187561053,2016-11-06 13:21:44,2016-11-06 13:18:33,AIUTI A #MONTEGALLO,42.8473894,13.3434963,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""AIUTI A #MONTEGALLO"", ""data"": ""06/11/2016"", ""descrizione"": ""A Montegallo siamo abbandonati, c' \u00e8 l' ordine di evacuazione, sono stati tutti portati sulla costa, siamo rimasti in pochissimi a sorvegliare i paesi e a resistere, non ci sono posti di blocco per impedire agli sciacalli di arrivare nel cratere abbandonato da tutti, il CAS (contributo per autonoma sistemazione) non \u00e8 stato erogato, la protezione civile \u00e8 andata via, non hanno portato tende n\u00e8 container n\u00e8 casette, noi siamo costretti a vivere in condizioni pietose."", ""email"": ""a.ferri@casettadimarzapanebijoux.com"", ""immagine"": """", ""indirizzo"": ""Strada Provinciale 89 Valfluvione, Montegallo, AP, Marche, 63094, Italia"", ""lat"": ""42.8473894"", ""link"": """", ""lon"": ""13.3434963"", ""tel"": ""3284671567""}","<pre><yamldata>tel: '3284671567'
+email: a.ferri@casettadimarzapanebijoux.com
+cosa: 'AIUTI A #MONTEGALLO'
+descrizione: 'A Montegallo siamo abbandonati, c'' è l'' ordine di evacuazione, sono stati tutti portati sulla costa, siamo rimasti in pochissimi a sorvegliare i paesi e a resistere, non ci sono posti di blocco per impedire agli sciacalli di arrivare nel cratere abbandonato da tutti, il CAS (contributo per autonoma sistemazione) non è stato erogato, la protezione civile è andata via, non hanno portato tende nè container nè casette, noi siamo costretti a vivere in condizioni pietose.'
+indirizzo: 'Strada Provinciale 89 Valfluvione, Montegallo, AP, Marche, 63094, Italia'
+lat: '42.8473894'
+lon: '13.3434963'
+link: ''
+immagine: ''
+data: 06/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1136,187559502,2016-11-06 12:45:41,2016-11-06 12:45:11,Contatto per invio beni di prima necessità a #Norcia e dintorni,,,"[""Accettato"", ""Bollettino"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""06/11/2016"", ""descrizione"": ""Per l'invio di beni di prima necessit\u00e0 nelle zone di Norcia la persona di riferimento \u00e8 Alberto Allegrini Vice Presidente della Pro Loco di Norcia M 0039 339 5414342"", ""link"": ""https://www.facebook.com/ilovenorcia/posts/364279227248079"", ""titolo"": ""Contatto per invio beni di prima necessit\u00e0 a #Norcia e dintorni""}","<pre><yamldata>titolo: 'Contatto per invio beni di prima necessità a #Norcia e dintorni'
 descrizione: 'Per l''invio di beni di prima necessità nelle zone di Norcia la persona di riferimento è Alberto Allegrini Vice Presidente della Pro Loco di Norcia M 0039 339 5414342'
 link: 'https://www.facebook.com/ilovenorcia/posts/364279227248079'
