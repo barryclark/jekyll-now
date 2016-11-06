@@ -3,7 +3,7 @@ published: true
 layout: post
 tags:
   - core-skills
-title: What Roles Do I Best Fit Into From the Belbin Team Roles?
+title: What Belbin Team Roles Do I Best Fit Into?
 ---
 <img src="http://www.belbin.com/media/1318/completor.png" width="50"/> <b>Completer Finisher</b>
 
