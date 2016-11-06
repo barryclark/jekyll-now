@@ -31,10 +31,11 @@ tags:
 - coding
 comments: []
 ---
-<p>The idea is to construct a queue of tasks, in terms of Threads, to get executed one after the other. The JDK itself has classes to do Thread Pools: java.util.concurrent.ExecutorService.&nbsp; This is just one way of using it.</p>
+<p>The idea is to construct a queue of tasks, in terms of Threads, to get executed one after the other. The JDK itself has classes to do Thread Pools: java.util.concurrent.ExecutorService. </p>
+<p>This is just one way of using it.</p>
 <p>Try the following code,</p>
-<h4>Thread Pool Class</h4>
-<pre>
+<h2>Thread Pool Class</h2>
+<pre class="highlight">
   package gunith.evillab;
   import java.util.concurrent.ExecutorService;
   import java.util.concurrent.Executors;
@@ -51,8 +52,8 @@ comments: []
   }
 </pre>
 
-<h4>The (Dummy) Runnable Class</h4>
-<pre>
+<h2>The (Dummy) Runnable Class</h2>
+<pre class="highlight">
 class Boogie implements Runnable{
   int id;
   public Boogie(int id) {
