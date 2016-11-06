@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1141,187565997,2016-11-06 15:03:25,2016-11-06 14:54:13,Comune #SanSeverino: aperta mensa per sfollati,,,"[""Accettato"", ""Bollettino"", ""Facebook"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""06/11/2016"", ""descrizione"": ""Comune di San Severino Marche ha aperto una mensa, con cucina da campo, per chi ha l\u2019abitazione inagibile nel piazzale del palasport \u201cAlbino Ciarapica\u201d di viale Mazzini. Per accedervi occorrer\u00e0 registrarsi con un documento di riconoscimento presso l\u2019ufficio Servizi alla Persona, presente con un proprio sportello all\u2019interno del palasport. Si ricorda che la prenotazione dei pasti deve essere fatta entro le ore 10 del mattino. L\u2019orario dei pasti \u00e8 il seguente: colazione ore 8, pranzo ore 12,30, cena ore 19.30."", ""link"": ""http://www.comune.sanseverinomarche.mc.it/comunicati-cms/terremoto-nel-piazzale-del-palasport-aperta-una-mensa-per-chi-non-ha-labitazione-agibile/"", ""titolo"": ""Comune #SanSeverino: aperta mensa per sfollati""}","<pre><yamldata>titolo: 'Comune #SanSeverino: aperta mensa per sfollati'
+descrizione: 'Comune di San Severino Marche ha aperto una mensa, con cucina da campo, per chi ha l’abitazione inagibile nel piazzale del palasport “Albino Ciarapica” di viale Mazzini. Per accedervi occorrerà registrarsi con un documento di riconoscimento presso l’ufficio Servizi alla Persona, presente con un proprio sportello all’interno del palasport. Si ricorda che la prenotazione dei pasti deve essere fatta entro le ore 10 del mattino. L’orario dei pasti è il seguente: colazione ore 8, pranzo ore 12,30, cena ore 19.30.'
+link: 'http://www.comune.sanseverinomarche.mc.it/comunicati-cms/terremoto-nel-piazzale-del-palasport-aperta-una-mensa-per-chi-non-ha-labitazione-agibile/'
+data: 06/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1138,187560033,2016-11-06 14:44:06,2016-11-06 12:57:06,COMUNE DI #USSITA: ACCESSI ALLA ZONA ROSSA,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""06/11/2016"", ""descrizione"": ""Premesso che: - l\u2019intero territorio del Comune di Ussita \u00e8 zona rossa; - vi sono rischi concreti di crolli con minaccia alla incolumit\u00e0 delle persone; - per motivi di sicurezza assumono prioritaria importanza gli accessi delle persone residenti che debbono prelevare beni di prima necessit\u00e0; Si chiede cortesemente ai proprietari/possessori/affittuari delle seconde case di astenersi dal recarsi a Ussita. Certi della vostra comprensione, ringraziamo tutti con la speranza che il sisma vada scemando. Sar\u00e0 nostra cura avvertirvi quando le condizioni consentiranno un accesso anche alle seconde case, che sar\u00e0 comunque regolamentato a tutela dell\u2019incolumit\u00e0 e della sicurezza pubblica."", ""link"": ""http://www.comune.ussita.mc.it/avvisi-cms/avviso-importante-regolamentazione-accessi-alla-zona-rossa/"", ""titolo"": ""COMUNE DI #USSITA: ACCESSI ALLA ZONA ROSSA""}","<pre><yamldata>titolo: 'COMUNE DI #USSITA: ACCESSI ALLA ZONA ROSSA'
 descrizione: 'Premesso che: - l’intero territorio del Comune di Ussita è zona rossa; - vi sono rischi concreti di crolli con minaccia alla incolumità delle persone; - per motivi di sicurezza assumono prioritaria importanza gli accessi delle persone residenti che debbono prelevare beni di prima necessità; Si chiede cortesemente ai proprietari/possessori/affittuari delle seconde case di astenersi dal recarsi a Ussita. Certi della vostra comprensione, ringraziamo tutti con la speranza che il sisma vada scemando. Sarà nostra cura avvertirvi quando le condizioni consentiranno un accesso anche alle seconde case, che sarà comunque regolamentato a tutela dell’incolumità e della sicurezza pubblica.'
 link: 'http://www.comune.ussita.mc.it/avvisi-cms/avviso-importante-regolamentazione-accessi-alla-zona-rossa/'
@@ -5495,17 +5500,6 @@ indirizzo: ''
 lat: 42.40919
 lon: 12.85309
 link: 'http://www.comune.rieti.it/ambiente-protezione-civile-ufficioprotciv'
-data: 15/09/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/385,177137151,2016-09-15 10:05:56,2016-09-15 10:04:54,Prefettura di Rieti,42.40205,12.85996,"[""Accettato"", ""Contatti"", ""Form""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""Il numero e l'indirizzo mail da contattare da chiunque volesse offrire ospitalit\u00e0 alle vittime."", ""email"": ""prefettura.rieti@interno.it"", ""indirizzo"": ""Piazza Cesare Battisti,10 - 02100 Rieti"", ""lat"": 42.40205, ""link"": ""http://www.prefettura.it/rieti/multidip/index.htm"", ""lon"": 12.85996, ""nome"": ""Prefettura di Rieti"", ""tel"": ""07462991""}","<pre><yamldata>nome: 'Prefettura di Rieti'
-tel: '07462991'
-email: prefettura.rieti@interno.it
-descrizione: 'Il numero e l''indirizzo mail da contattare da chiunque volesse offrire ospitalità alle vittime.'
-indirizzo: 'Piazza Cesare Battisti,10 - 02100 Rieti'
-lat: 42.40205
-lon: 12.85996
-link: 'http://www.prefettura.it/rieti/multidip/index.htm'
 data: 15/09/2016
 </yamldata></pre>
 ",open
