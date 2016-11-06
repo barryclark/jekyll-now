@@ -55,6 +55,9 @@ After training the model and ensuring it has a reasonable accuracy, the next ste
 
  3. We now need to "freeze" the graph. Freezing merges the operations graph and the weights checkpoint file into one file. It also transforms the graph in a way that is required to make it run  on Android (the graph contains variable operations, they need to be transformed to constant operations to run in Android's C++ tensorflow environment).
  
+   Freezing is handled by [freeze_graph.py](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/python/tools/freeze_graph.py). There are two ways to do it. First is to checkout the tensorflow source, install bazel, build freeze_graph as a TensorFlow python tool, and then ask it to freeze the graph via the command line.
+   
+   The second is to just copy the code (or import it as a part of a python module).
    The third cell takes the graph and checkpoint files and generates the frozen graph file. It need freeze_graph.py to run 
 
 ## Image format
