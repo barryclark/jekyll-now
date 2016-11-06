@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1134,187558408,2016-11-06 12:24:29,2016-11-06 12:23:18,Disponibilità di beni di prima necessità a #Nemo #Norcia,42.7899469,13.095505,"[""Accettato"", ""Acqua"", ""Bollettino"", ""Cibo"", ""Donazioni"", ""Facebook"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""Disponibilit\u00e0 di beni di prima necessit\u00e0 a #Nemo #Norcia"", ""data"": ""06/11/2016"", ""descrizione"": ""Centinaia di scatoloni pieni di beni di prima necessita\u2019 sono arrivati nella palestra Nemo, in via della stazione 54. C\u2019e\u2019 bisogno adesso del vostro aiuto per l\u2019organizzazione del materiale raccolto all\u2019interno della palestra e per la distribuzione. Abbiamo gia\u2019 ricevuto un gran quantitativo di pasta. Se possibile, inviate prodotti in scatola (tonno etc. etc..). La macchina della solidarieta\u2019 anche questa volta ha raggiunto risultati sorprendenti. Grazie di cuore! Referente raccolta Alberto Allegrini"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Viale della Stazione, Casa Coletti, Norcia, PG, UMB, 06046, Italia"", ""lat"": ""42.7899469"", ""link"": ""https://www.facebook.com/ilovenorcia/photos/a.337401369935865.1073741828.337254609950541/366146890394646/?type=3&theater"", ""lon"": ""13.095505"", ""tel"": """"}","<pre><yamldata>tel: ''
+email: ''
+cosa: 'Disponibilità di beni di prima necessità a #Nemo #Norcia'
+descrizione: 'Centinaia di scatoloni pieni di beni di prima necessita’ sono arrivati nella palestra Nemo, in via della stazione 54. C’e’ bisogno adesso del vostro aiuto per l’organizzazione del materiale raccolto all’interno della palestra e per la distribuzione. Abbiamo gia’ ricevuto un gran quantitativo di pasta. Se possibile, inviate prodotti in scatola (tonno etc. etc..). La macchina della solidarieta’ anche questa volta ha raggiunto risultati sorprendenti. Grazie di cuore! Referente raccolta Alberto Allegrini'
+indirizzo: 'Viale della Stazione, Casa Coletti, Norcia, PG, UMB, 06046, Italia'
+lat: '42.7899469'
+lon: '13.095505'
+link: 'https://www.facebook.com/ilovenorcia/photos/a.337401369935865.1073741828.337254609950541/366146890394646/?type=3&theater'
+immagine: ''
+data: 06/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1133,187557969,2016-11-06 12:17:10,2016-11-06 12:14:10,PER UNA RETE DI PRESIDI CIVICI DELLE COMUNITA’ COINVOLTE DAL SISMA IN UMBRIA: INCONTRO CON CITTADINANZATTIVA A SPOLETO,,,"[""Accettato"", ""Bollettino"", ""Facebook"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""06/11/2016"", ""descrizione"": ""CONVOCAZIONE INCONTRO PRESSO LA SEDE DI CITTADINANZATTIVA SPOLETO marted\u00ec 8 novembre ore 18,30 Via XXV Aprile 44 Spoleto - 0743 222208"", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1795680274032889/"", ""titolo"": ""PER UNA RETE DI PRESIDI CIVICI DELLE COMUNITA\u2019 COINVOLTE DAL SISMA IN UMBRIA: INCONTRO CON CITTADINANZATTIVA A SPOLETO""}","<pre><yamldata>titolo: 'PER UNA RETE DI PRESIDI CIVICI DELLE COMUNITA’ COINVOLTE DAL SISMA IN UMBRIA: INCONTRO CON CITTADINANZATTIVA A SPOLETO'
 descrizione: 'CONVOCAZIONE INCONTRO PRESSO LA SEDE DI CITTADINANZATTIVA SPOLETO martedì 8 novembre ore 18,30 Via XXV Aprile 44 Spoleto - 0743 222208'
 link: 'https://www.facebook.com/groups/1758670357733881/permalink/1795680274032889/'
@@ -1021,11 +1032,6 @@ lat: ''
 lon: ''
 link: ''
 immagine: ''
-data: 31/10/2016
-</yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/987,186265266,2016-10-31 11:52:00,2016-10-31 11:50:28,Gli aggiornamenti sulla viabilità dopo il sisma,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""Pubblicare su FB""]",,,"{""data"": ""31/10/2016"", ""descrizione"": ""La situazione sulle strade gestite da Anas e da Astral a seguito del sisma che ha colpito l\u2019Italia centrale nella giornata di domenica 30 ottobre."", ""link"": ""http://www.regione.lazio.it/rl_main/?vw=newsdettaglio&id=3658"", ""titolo"": ""Gli aggiornamenti sulla viabilit\u00e0 dopo il sisma""}","<pre><yamldata>titolo: 'Gli aggiornamenti sulla viabilità dopo il sisma'
-descrizione: 'La situazione sulle strade gestite da Anas e da Astral a seguito del sisma che ha colpito l’Italia centrale nella giornata di domenica 30 ottobre.'
-link: 'http://www.regione.lazio.it/rl_main/?vw=newsdettaglio&id=3658'
 data: 31/10/2016
 </yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/987,186265266,2016-10-31 11:52:00,2016-10-31 11:50:28,Gli aggiornamenti sulla viabilità dopo il sisma,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""Pubblicare su FB""]",,,"{""data"": ""31/10/2016"", ""descrizione"": ""La situazione sulle strade gestite da Anas e da Astral a seguito del sisma che ha colpito l\u2019Italia centrale nella giornata di domenica 30 ottobre."", ""link"": ""http://www.regione.lazio.it/rl_main/?vw=newsdettaglio&id=3658"", ""titolo"": ""Gli aggiornamenti sulla viabilit\u00e0 dopo il sisma""}","<pre><yamldata>titolo: 'Gli aggiornamenti sulla viabilità dopo il sisma'
