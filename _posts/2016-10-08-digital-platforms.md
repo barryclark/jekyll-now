@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 tags:
   - core skills
@@ -9,7 +9,7 @@ Storing knowledge in the form of digital data on the cloud and accessing it onli
 
 ## Cloud storage services
 
-### Dropbox
+### [Dropbox](https://www.dropbox.com/)
 
 ### Google Drive
 
