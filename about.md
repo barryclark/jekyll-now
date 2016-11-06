@@ -11,4 +11,4 @@ I pride myself in developing testable, readable, elegant programs (and tests) in
 I'm interested in improving myself on new technologies and methods and in sharing my knowledge via public speaking.
 
 ## Contact me
-![Email me](images/email.png) or Use the links in the footer :)
+![Email me](/images/email.png) or Use the links in the footer :)
