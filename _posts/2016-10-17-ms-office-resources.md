@@ -16,9 +16,11 @@ The following is a list of tutorials, templates and support pages for Microsoft 
 <!--more-->
 
 ### Specific Tutorials
+<ul>
 <li><a href="https://support.office.com/en-us/article/Create-a-bibliography-17686589-4824-4940-9c69-342c289fa2a5?ui=en-US&rs=en-US&ad=US">Create a bibliography</a></li>
 <li><a href="https://support.office.com/en-us/article/Create-a-table-of-contents-in-Word-882e8564-0edb-435e-84b5-1d8552ccf0c0">Create a table of contents in Word</a></li>
 <li><a href="https://support.office.com/en-us/article/Move-around-in-a-document-using-the-Navigation-pane-394787be-bca7-459b-894e-3f8511515e55">Move around in a document using the Navigation pane</a></li>
+</ul>
 
 ## Unofficial Resources
 
