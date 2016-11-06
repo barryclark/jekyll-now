@@ -36,9 +36,9 @@ comments: []
 <ul>
 <li>Open [CATALINA_HOME]/conf/policy.d/04webapps.policy (ON UBUNTU)</li>
 <li>Add the following to that file inside the grant{} block</li><br />
+  <pre class='highlight'><code>permission java.util.PropertyPermission "cglib.debugLocation","read";</code></pre>
 </ul>
-<pre class='highlight'>permission java.util.PropertyPermission "cglib.debugLocation","read";</pre>
 <p>Likewise, for</p>
-<pre class='highlight'>access denied (java.lang.RuntimePermission getProtectionDomain)</pre>
+<pre class='highlight'><code>access denied (java.lang.RuntimePermission getProtectionDomain)</code></pre>
 <p>Add this,</p>
-<pre class='highlight'>permission java.lang.RuntimePermission "getProtectionDomain";</pre>
+<pre class='highlight'><code>permission java.lang.RuntimePermission "getProtectionDomain";</code></pre>
