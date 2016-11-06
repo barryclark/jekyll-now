@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1132,187555920,2016-11-06 12:16:14,2016-11-06 11:27:12,Bagno chimico,,,"[""Accettato"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""Bagno chimico"", ""data"": ""06/11/2016"", ""descrizione"": ""Ho la possibilit\u00e0 di donare un bagno chimico praticamente nuovo..si trova in provincia d Napoli e non so cm farlo arrivare."", ""email"": ""alessiamaturi@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3382996082""}","<pre><yamldata>tel: '3382996082'
+email: alessiamaturi@gmail.com
+cosa: 'Bagno chimico'
+descrizione: 'Ho la possibilità di donare un bagno chimico praticamente nuovo..si trova in provincia d Napoli e non so cm farlo arrivare.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 06/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1130,187535927,2016-11-06 01:47:12,2016-11-06 01:46:29,Raccolta di beni a #Fermo,43.1457577,13.8120882,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Facebook"", ""Sisma Ottobre""]",,,"{""cosa"": ""Raccolta di beni a #Fermo"", ""data"": ""06/11/2016"", ""descrizione"": ""Al centro sociale di Marina Palmense, centro unico di raccolta del fermano, si raccolgono coperte, pannoloni, vestiario e prodotti di igiene personale. Al link info e contatti."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via dei Palmensi, Fermo, FM, Marche, 63823, Italia"", ""lat"": ""43.1457577"", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1795453390722244/"", ""lon"": ""13.8120882"", ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 cosa: 'Raccolta di beni a #Fermo'
@@ -2212,12 +2223,6 @@ data: 13/10/2016
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/798,182704862,2016-10-13 06:23:26,2016-10-13 06:18:59,"Terremoto #Umbria, stanziati 72 milioni per il piano di rilancio del comparto agricolo umbro",,,"[""Accettato"", ""Facebook"", ""Notizie Utili""]",,,"{""data"": ""13/10/2016"", ""descrizione"": ""Il pacchetto di misure prevede un piano strategico di rilancio da 220 milioni di euro a carico dello Stato, finalizzati anche alla promozione e commercializzazione dei prodotti"", ""link"": ""https://www.facebook.com/lanotiziaquotidiana/posts/1114416485312755"", ""titolo"": ""Terremoto #Umbria, stanziati 72 milioni per il piano di rilancio del comparto agricolo umbro""}","<pre><yamldata>titolo: 'Terremoto #Umbria, stanziati 72 milioni per il piano di rilancio del comparto agricolo umbro'
 descrizione: 'Il pacchetto di misure prevede un piano strategico di rilancio da 220 milioni di euro a carico dello Stato, finalizzati anche alla promozione e commercializzazione dei prodotti'
 link: 'https://www.facebook.com/lanotiziaquotidiana/posts/1114416485312755'
-data: 13/10/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/797,182704495,2016-10-13 06:21:38,2016-10-13 06:15:47,"Agenda Digitale dell’Umbria: #Norcia, banca dati dei fabbricati a disposizione.",,,"[""Accettato"", ""Bollettino"", ""Notizie Utili""]",,,"{""data"": ""13/10/2016"", ""descrizione"": ""Una banca dati dei fabbricati ad intera copertura regionale, nella quale per ogni singolo \u201ccassone edilizio\u201d si conosce: il foglio e la particella catastale di riferimento, il numero dei piani fuori terra, lo stato di costruzione del fabbricato e la data del rilievo. E\u2019 quanto il Sistema Informativo Geografico della Regione Umbria ha realizzato e messo a disposizione dei tecnici che stanno portando avanti l\u2019attivit\u00e0 di censimento dei danni e di agibilit\u00e0 degli edifici colpiti dal terremoto del 24 agosto scorso."", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1782626975338219/"", ""titolo"": ""Agenda Digitale dell\u2019Umbria: #Norcia, banca dati dei fabbricati a disposizione.""}","<pre><yamldata>titolo: 'Agenda Digitale dell’Umbria: #Norcia, banca dati dei fabbricati a disposizione.'
-descrizione: 'Una banca dati dei fabbricati ad intera copertura regionale, nella quale per ogni singolo “cassone edilizio” si conosce: il foglio e la particella catastale di riferimento, il numero dei piani fuori terra, lo stato di costruzione del fabbricato e la data del rilievo. E’ quanto il Sistema Informativo Geografico della Regione Umbria ha realizzato e messo a disposizione dei tecnici che stanno portando avanti l’attività di censimento dei danni e di agibilità degli edifici colpiti dal terremoto del 24 agosto scorso.'
-link: 'https://www.facebook.com/groups/1758670357733881/permalink/1782626975338219/'
 data: 13/10/2016
 </yamldata></pre>
 ",open
