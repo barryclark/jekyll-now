@@ -78,3 +78,4 @@ function ajaxFileUpload(){
       })
     return false;
 }
+```
