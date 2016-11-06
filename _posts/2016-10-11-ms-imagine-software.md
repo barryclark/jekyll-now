@@ -14,3 +14,15 @@ The products available can be categorized accordingly:
   <li>Servers</li>
   <li>Applications</li>
 </ul>
+
+## Operating Systems
+
+I used the Windows 10 Education Edition key to upgrade my own Windows 10 Home Edition, [as it was clearly superior](http://wincom.blob.core.windows.net/documents/Win10CompareTable_FY17.pdf) and made 64-bit virtual machines in [VirtualBox](https://www.virtualbox.org/) out of the provided Windows 7 and Windows 8.1.
+
+## Applications
+
+![Access 2016]({{site.baseurl}}/https://static.onthehub.com/production/attachments/9/9713830e-0d62-e511-9410-b8ca3a5db7a1/84a6efa1-faa3-e511-9413-b8ca3a5db7a1.png)
+
+![Project Professional 2016]({{site.baseurl}}/https://static.onthehub.com/production/attachments/9/30dba567-c83a-e511-940f-b8ca3a5db7a1/2e788ab7-3a0f-4119-a1f8-7dc943b217a7.png)
+
+![Visio Professional 2016]({{site.baseurl}}/https://static.onthehub.com/production/attachments/9/20f87f43-c83a-e511-940f-b8ca3a5db7a1/8c2be168-a74d-46ac-b5da-16ab93986484.png)
