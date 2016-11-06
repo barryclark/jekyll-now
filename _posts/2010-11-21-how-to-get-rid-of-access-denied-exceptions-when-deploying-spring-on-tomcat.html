@@ -35,8 +35,9 @@ comments: []
 <p>The fix for such "access denied" is as follows,</p>
 <ul>
 <li>Open [CATALINA_HOME]/conf/policy.d/04webapps.policy (ON UBUNTU)</li>
-<li>Add the following to that file inside the grant{} block</li><br />
+<li>Add the following to that file inside the grant{} block<br />
   <pre class='highlight'><code>permission java.util.PropertyPermission "cglib.debugLocation","read";</code></pre>
+</li>
 </ul>
 <p>Likewise, for</p>
 <pre class='highlight'><code>access denied (java.lang.RuntimePermission getProtectionDomain)</code></pre>
