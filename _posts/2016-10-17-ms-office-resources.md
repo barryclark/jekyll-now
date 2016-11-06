@@ -4,6 +4,7 @@ layout: post
 tags:
   - core-skills
 title: 'Web Resources: Microsoft Office'
+excerpt_separator: <!--more-->
 ---
 The following is a list of tutorials, templates and support pages for Microsoft Office applications:
 
@@ -12,7 +13,7 @@ The following is a list of tutorials, templates and support pages for Microsoft 
 <li><a href="https://support.office.com/">Office Support</a></li>
 <li><a href="https://templates.office.com/">Office Templates</a></li>
 </ul>
-
+<!--more-->
 ## Unofficial
 
 ### Tutorials
