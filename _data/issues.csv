@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1127,187534367,2016-11-06 01:06:38,2016-11-06 01:01:50,A Porto Sant'Elpidio cercasi parrucchieri uomo/donna per gli sfollati,43.2589619,13.7569828,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Sisma Ottobre""]",,,"{""cosa"": ""A Porto Sant'Elpidio cercasi parrucchieri uomo/donna per gli sfollati"", ""data"": ""06/11/2016"", ""descrizione"": ""Si richiede la disponibilit\u00e0 di parrucchieri per uomo e donna sia a domicilio (Holiday, Mimose, Risacca, Pineta, Belvedere) per la Domenica e Luned\u00ec o comunque disponibili anche in altri giorni presso le proprie sedi se vicine alle sopra citate strutture. Per disponibilit\u00e0 contattare 3346085693."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via San Giovanni Bosco, Porto Sant'Elpidio, FM, Marche, 63018, Italia"", ""lat"": ""43.2589619"", ""link"": ""https://www.facebook.com/NazarenoFranchellucciSindaco/posts/699856143498559"", ""lon"": ""13.7569828"", ""tel"": """"}","<pre><yamldata>tel: ''
+email: ''
+cosa: 'A Porto Sant''Elpidio cercasi parrucchieri uomo/donna per gli sfollati'
+descrizione: 'Si richiede la disponibilità di parrucchieri per uomo e donna sia a domicilio (Holiday, Mimose, Risacca, Pineta, Belvedere) per la Domenica e Lunedì o comunque disponibili anche in altri giorni presso le proprie sedi se vicine alle sopra citate strutture. Per disponibilità contattare 3346085693.'
+indirizzo: 'Via San Giovanni Bosco, Porto Sant''Elpidio, FM, Marche, 63018, Italia'
+lat: '43.2589619'
+lon: '13.7569828'
+link: 'https://www.facebook.com/NazarenoFranchellucciSindaco/posts/699856143498559'
+immagine: ''
+data: 06/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1126,187534166,2016-11-06 00:57:19,2016-11-06 00:56:49,A #Cittareale servono roulotte,42.6182543,13.1596844,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Facebook"", ""Sisma Ottobre""]",,,"{""cosa"": ""A #Cittareale servono roulotte"", ""data"": ""06/11/2016"", ""descrizione"": ""Nella zona di Cittareale molte abitazioni sono diventate inagibili a causa del terremoto, si cercano con urgenza roulottes."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Corso Vittorio Emanuele, Cittareale, RI, LAZ, Italia"", ""lat"": ""42.6182543"", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1794314920836091/"", ""lon"": ""13.1596844"", ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 cosa: 'A #Cittareale servono roulotte'
@@ -4767,6 +4778,18 @@ https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/477,1773499
 descrizione: 'L’Aquila. Le sezioni provinciali dell’Unione Italiana dei Ciechi (Uic) e degli Ipovedenti de L’Aquila e Ascoli Piceno, in collaborazione con l’U.N.I.Vo.C. ( Unione Nazionale Volontari Pro Ciechi) L’Aquila e l’ottica aquilana Genitti hanno organizzato visite oculistiche gratuite per le popolazioni del Centro Italia colpite dal sisma del 24 agosto.'
 link: 'http://www.cityrumors.it/speciale-terremoto/308939-terremoto-occhiali-gratis-li-persi-uic-ipovedenti-laquila.html'
 data: 16/09/2016
+</yamldata></pre>
+",closed
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/476,177297104,2016-09-23 22:20:17,2016-09-15 21:41:15,"Arquata e Pescara del Tronto: grazie a Uic, occhiali e visite oculistiche gratuite",42.76214,13.29655,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""Occhiali e visite oculistiche gratis"", ""data"": ""15/09/2016"", ""descrizione"": ""Gli oculisti di Uic saranno il 19 settembre (e se necessario anche nei giorni successivi) a Arquata e Pescara del Tronto per visitare e donare occhiali da vista a chi li ha persi nel sisma."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Arquata del Tronto, AP, Marche, Italia"", ""lat"": ""42.76214"", ""link"": ""http://www.cityrumors.it/speciale-terremoto/308939-terremoto-occhiali-gratis-li-persi-uic-ipovedenti-laquila.html"", ""lon"": ""13.29655"", ""tel"": """"}","<pre><yamldata>tel: ''
+email: ''
+cosa: 'Occhiali e visite oculistiche gratis'
+descrizione: 'Gli oculisti di Uic saranno il 19 settembre (e se necessario anche nei giorni successivi) a Arquata e Pescara del Tronto per visitare e donare occhiali da vista a chi li ha persi nel sisma.'
+indirizzo: 'Arquata del Tronto, AP, Marche, Italia'
+lat: '42.76214'
+lon: '13.29655'
+link: 'http://www.cityrumors.it/speciale-terremoto/308939-terremoto-occhiali-gratis-li-persi-uic-ipovedenti-laquila.html'
+immagine: ''
+data: 15/09/2016
 </yamldata></pre>
 ",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/476,177297104,2016-09-23 22:20:17,2016-09-15 21:41:15,"Arquata e Pescara del Tronto: grazie a Uic, occhiali e visite oculistiche gratuite",42.76214,13.29655,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""Occhiali e visite oculistiche gratis"", ""data"": ""15/09/2016"", ""descrizione"": ""Gli oculisti di Uic saranno il 19 settembre (e se necessario anche nei giorni successivi) a Arquata e Pescara del Tronto per visitare e donare occhiali da vista a chi li ha persi nel sisma."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Arquata del Tronto, AP, Marche, Italia"", ""lat"": ""42.76214"", ""link"": ""http://www.cityrumors.it/speciale-terremoto/308939-terremoto-occhiali-gratis-li-persi-uic-ipovedenti-laquila.html"", ""lon"": ""13.29655"", ""tel"": """"}","<pre><yamldata>tel: ''
