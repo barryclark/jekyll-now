@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1147,187579896,2016-11-06 18:43:12,2016-11-06 18:42:21,Disponibilità modulo abitativo 70 mq (necessita di trasporto da Passignano sul Trasimeno - PG),43.194143,12.12925,"[""Accettato"", ""Donazioni""]",,,"{""cosa"": ""Disponibilit\u00e0 modulo abitativo 70 mq da Passignano sul Trasimeno (PG)"", ""data"": ""06/11/2016"", ""descrizione"": ""Contatto: Puccetta Stefano 3487710091-99 Protezione Civile C.O.V.E.R. Passignano sul Trasimeno (PG) noi possiamo mettere a disposizione modulo abitativo da 70mq ha bisogno di qualche lavoro interno e mobilio, una volta aperto dispone di grande sala con angolo cucina due camere e bagno l'unico problema e portarlo li da voi, se riuscite ad organizzarvi \u00e8 a disposizione."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via Enrico Fermi, Passignano sul Trasimeno, PG, UMB, 06065, Italia"", ""lat"": ""43.194143"", ""link"": ""http://terremotocentroitalia.info/issues/997/index.html"", ""lon"": ""12.12925"", ""tel"": ""3487710091""}","<pre><yamldata>tel: '3487710091'
+email: ''
+cosa: 'Disponibilità modulo abitativo 70 mq da Passignano sul Trasimeno (PG)'
+descrizione: 'Contatto: Puccetta Stefano 3487710091-99 Protezione Civile C.O.V.E.R. Passignano sul Trasimeno (PG) noi possiamo mettere a disposizione modulo abitativo da 70mq ha bisogno di qualche lavoro interno e mobilio, una volta aperto dispone di grande sala con angolo cucina due camere e bagno l''unico problema e portarlo li da voi, se riuscite ad organizzarvi è a disposizione.'
+indirizzo: 'Via Enrico Fermi, Passignano sul Trasimeno, PG, UMB, 06065, Italia'
+lat: '43.194143'
+lon: '12.12925'
+link: 'http://terremotocentroitalia.info/issues/997/index.html'
+immagine: ''
+data: 06/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1145,187567619,2016-11-06 15:27:13,2016-11-06 15:22:07,#Valnerina: tutte le scuole chiuse fino al 13 novembre,,,"[""Accettato"", ""Bollettino"", ""Facebook"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""06/11/2016"", ""descrizione"": ""In Valnerina scuole chiuse fino al 13 novembre. In seguito all\u2019incontro tra la Regione Umbria, l\u2019Ufficio scolastico regionale per l\u2019Umbria, l\u2019Anci Umbria, le Province e i funzionari della Protezione civile, \u00e8 emerso un quadro rassicurante che consente, per luned\u00ec 7 novembre, la ripresa dell\u2019attivit\u00e0 didattica nella maggior parte delle scuole umbre ad eccezione di Norcia, Cascia, Preci e Monteleone di Spoleto dove, sicuramente, non riprender\u00e0 prima di luned\u00ec 14 novembre: lo comunica l\u2019assessore regionale, Antonio Bartolini."", ""link"": ""http://www.valnerinaoggi.it/norcia/terremoto-valnerina-scuole-chiuse-al-13-novembre-5138/"", ""titolo"": ""#Valnerina: tutte le scuole chiuse fino al 13 novembre""}","<pre><yamldata>titolo: '#Valnerina: tutte le scuole chiuse fino al 13 novembre'
 descrizione: 'In Valnerina scuole chiuse fino al 13 novembre. In seguito all’incontro tra la Regione Umbria, l’Ufficio scolastico regionale per l’Umbria, l’Anci Umbria, le Province e i funzionari della Protezione civile, è emerso un quadro rassicurante che consente, per lunedì 7 novembre, la ripresa dell’attività didattica nella maggior parte delle scuole umbre ad eccezione di Norcia, Cascia, Preci e Monteleone di Spoleto dove, sicuramente, non riprenderà prima di lunedì 14 novembre: lo comunica l’assessore regionale, Antonio Bartolini.'
 link: 'http://www.valnerinaoggi.it/norcia/terremoto-valnerina-scuole-chiuse-al-13-novembre-5138/'
@@ -6065,18 +6076,6 @@ postale: ''
 causale: ''
 link: 'https://www.facebook.com/SanGiulianoRugby/posts/923542134424444'
 email: ''
-data: 14/09/2016
-</yamldata></pre>
-",closed
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/329,176993891,2016-09-14 19:11:38,2016-09-14 19:10:28,Robotica educativa,44.90375,11.12939,"[""Accettato"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""Robotica educativa"", ""data"": ""14/09/2016"", ""descrizione"": ""Alberto Michelini, un insegnante in servizio presso l'istituto \""G.Galilei\"" di Mirandola (MO), scrive che la sua scuola pu\u00f2 donare materiale ed esperienza di robotica educativa. \""Proprio sotto le tende noi conoscemmo la robotica educativa, grazie alla scuola di robotica di Genova ed a media direct. Ci aiut\u00f2 molto a svolgere una didattica alternativa, dovendo gestire fino a quattro classi contemporaneamente. Ma quello fu solo l'inizio di un'attivit\u00e0 che riproponiamo agli studenti ogni anno, con progetti gare ed altro. So che questo non risolver\u00e0 i problemi del terremoto, ma fidatevi da chi l'ha vissuto, dar\u00e0 un enorme aiuto a quei docenti per lo svolgimento delle lezioni in una situazione di emergenza\"". Alberto chiede di essere messo in contatto con qualcuno della scuola Capranica di Amatrice per capire se la sua proposta interessa."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": 44.90375, ""link"": ""https://m.facebook.com/groups/1758670357733881?view=permalink&id=1762459764021607"", ""lon"": 11.12939, ""tel"": """"}","<pre><yamldata>tel: ''
-email: ''
-cosa: 'Robotica educativa'
-descrizione: 'Alberto Michelini, un insegnante in servizio presso l''istituto ""G.Galilei"" di Mirandola (MO), scrive che la sua scuola può donare materiale ed esperienza di robotica educativa. ""Proprio sotto le tende noi conoscemmo la robotica educativa, grazie alla scuola di robotica di Genova ed a media direct. Ci aiutò molto a svolgere una didattica alternativa, dovendo gestire fino a quattro classi contemporaneamente. Ma quello fu solo l''inizio di un''attività che riproponiamo agli studenti ogni anno, con progetti gare ed altro. So che questo non risolverà i problemi del terremoto, ma fidatevi da chi l''ha vissuto, darà un enorme aiuto a quei docenti per lo svolgimento delle lezioni in una situazione di emergenza"". Alberto chiede di essere messo in contatto con qualcuno della scuola Capranica di Amatrice per capire se la sua proposta interessa.'
-indirizzo: ''
-lat: 44.90375
-lon: 11.12939
-link: 'https://m.facebook.com/groups/1758670357733881?view=permalink&id=1762459764021607'
-immagine: ''
 data: 14/09/2016
 </yamldata></pre>
 ",closed
