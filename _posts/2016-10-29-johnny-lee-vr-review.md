@@ -1,3 +1,11 @@
 ---
-published: false
+published: true
+layout: post
+tags:
+  - core-skills
+title: A Look Back at Head Tracking for Desktop VR Displays using the WiiRemote
 ---
+<div class="videoWrapper">
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=Jd3-eiid-Uw" frameborder="0" allowfullscreen></iframe>
+</div>
+
