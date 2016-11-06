@@ -27,8 +27,12 @@ Storing knowledge in the form of digital data on the cloud and accessing it onli
 
 ### [GitHub](https://github.com/)
 
+A service perfect for storing projects and version control. GitHub also offers web hosting in the form of [GitHub Pages](https://pages.github.com/). The website you host on GitHub Pages can be a personal or organization website or a website about one of your projects hosted on GitHub.
+
 ## Blog applications
 
 ### [WordPress](https://wordpress.org/)
 
 ### [Jekyll](https://jekyllrb.com/)
+
+This is the route I chose for my logbook in the end. **The Digital Technologist** is hosted on 
