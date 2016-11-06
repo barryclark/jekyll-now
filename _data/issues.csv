@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1130,187535927,2016-11-06 01:47:00,2016-11-06 01:46:29,Raccolta di beni a #Fermo,43.1457577,13.8120882,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Facebook"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""Raccolta di beni a #Fermo"", ""data"": ""06/11/2016"", ""descrizione"": ""Al centro sociale di Marina Palmense, centro unico di raccolta del fermano, si raccolgono coperte, pannoloni, vestiario e prodotti di igiene personale. Al link info e contatti."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via dei Palmensi, Fermo, FM, Marche, 63823, Italia"", ""lat"": ""43.1457577"", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1795453390722244/"", ""lon"": ""13.8120882"", ""tel"": """"}","<pre><yamldata>tel: ''
+email: ''
+cosa: 'Raccolta di beni a #Fermo'
+descrizione: 'Al centro sociale di Marina Palmense, centro unico di raccolta del fermano, si raccolgono coperte, pannoloni, vestiario e prodotti di igiene personale. Al link info e contatti.'
+indirizzo: 'Via dei Palmensi, Fermo, FM, Marche, 63823, Italia'
+lat: '43.1457577'
+lon: '13.8120882'
+link: 'https://www.facebook.com/groups/1758670357733881/permalink/1795453390722244/'
+immagine: ''
+data: 06/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1129,187535602,2016-11-06 01:39:24,2016-11-06 01:38:25,"A #Camerino i giovani dell'associazione ""Io non crollo""",,,"[""Accettato"", ""Bollettino"", ""Contatti"", ""Facebook"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""06/11/2016"", ""descrizione"": ""\""Io non crollo\"" l'Associazione fondata da un gruppo di giovani di Camerino per sostenere la ricostruzione. Organizza attivit\u00e0 ricreative, ludiche e di supporto ai volontari."", ""link"": ""https://www.facebook.com/iononcrollo/"", ""titolo"": ""A #Camerino i giovani dell'associazione \""Io non crollo\""""}","<pre><yamldata>titolo: 'A #Camerino i giovani dell''associazione ""Io non crollo""'
 descrizione: '""Io non crollo"" l''Associazione fondata da un gruppo di giovani di Camerino per sostenere la ricostruzione. Organizza attività ricreative, ludiche e di supporto ai volontari.'
 link: 'https://www.facebook.com/iononcrollo/'
