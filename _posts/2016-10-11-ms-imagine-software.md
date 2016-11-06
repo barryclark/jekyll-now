@@ -26,3 +26,5 @@ I used the Windows 10 Education Edition key to upgrade my own Windows 10 Home Ed
 ![Project Professional 2016]({{site.baseurl}}/https://static.onthehub.com/production/attachments/9/30dba567-c83a-e511-940f-b8ca3a5db7a1/2e788ab7-3a0f-4119-a1f8-7dc943b217a7.png)
 
 ![Visio Professional 2016]({{site.baseurl}}/https://static.onthehub.com/production/attachments/9/20f87f43-c83a-e511-940f-b8ca3a5db7a1/8c2be168-a74d-46ac-b5da-16ab93986484.png)
+
+Although there are countless other applications in the university's WebStore, many of them are outdated, some of them have been made freely accessible outside of the Microsoft Imagine service and others aren't currently of any interest or use to me.
