@@ -12,7 +12,7 @@
     {% endif %}
     <meta name="author" content="{{ site.author }}" />
     {% if page.tags %}
-    <meta name="keywords" content="{{ page.tags }}" />
+    <meta name="keywords" content="{% for tag in page.tags %}{{ tag }}, {% endfor %}"/>
     {% endif %}
 
     {% if page.title %}
