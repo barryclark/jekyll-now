@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1149,187582368,2016-11-06 19:20:43,2016-11-06 19:20:11,ORDINANZA DI SOSPENSIONE ATTIVITA’ DIDATTICHE SCUOLE DI #AMATRICE,,,"[""Accettato"", ""Bollettino"", ""Facebook"", ""Notizie Utili"", ""pubblicare in archive.org""]",,,"{""data"": ""06/11/2016"", ""descrizione"": ""Amatrice: strade pericolanti, scuole chiuse"", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1795900464010870/"", ""titolo"": ""ORDINANZA DI SOSPENSIONE ATTIVITA\u2019 DIDATTICHE SCUOLE DI #AMATRICE""}","<pre><yamldata>titolo: 'ORDINANZA DI SOSPENSIONE ATTIVITA’ DIDATTICHE SCUOLE DI #AMATRICE'
+descrizione: 'Amatrice: strade pericolanti, scuole chiuse'
+link: 'https://www.facebook.com/groups/1758670357733881/permalink/1795900464010870/'
+data: 06/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1147,187579896,2016-11-06 18:44:36,2016-11-06 18:42:21,Disponibilità modulo abitativo 70 mq (necessita di trasporto da Passignano sul Trasimeno - PG),43.194143,12.12925,"[""Accettato"", ""Donazioni""]",,,"{""cosa"": ""Disponibilit\u00e0 modulo abitativo 70 mq da Passignano sul Trasimeno (PG)"", ""data"": ""06/11/2016"", ""descrizione"": ""Contatto: Puccetta Stefano 3487710091-99 Protezione Civile C.O.V.E.R. Passignano sul Trasimeno (PG) noi possiamo mettere a disposizione modulo abitativo da 70mq ha bisogno di qualche lavoro interno e mobilio, una volta aperto dispone di grande sala con angolo cucina due camere e bagno l'unico problema e portarlo li da voi, se riuscite ad organizzarvi \u00e8 a disposizione."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via Enrico Fermi, Passignano sul Trasimeno, PG, UMB, 06065, Italia"", ""lat"": ""43.194143"", ""link"": ""http://terremotocentroitalia.info/issues/997/index.html"", ""lon"": ""12.12925"", ""tel"": ""3487710091""}","<pre><yamldata>tel: '3487710091'
 email: ''
 cosa: 'Disponibilità modulo abitativo 70 mq da Passignano sul Trasimeno (PG)'
@@ -5483,17 +5488,6 @@ postale: ''
 causale: 'Emergenza terremoto'
 link: 'http://www.bancaetica.it/git/lazio-sud/articolo/adottiamo-lo-spaccio-di-elvis'
 email: ''
-data: 15/09/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/390,177148234,2016-09-20 14:52:30,2016-09-15 11:05:30,Aiutiamo Amatrice,,,"[""Accettato"", ""Contatti"", ""Form""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""Pagina Facebook del comitato di cittadini di Amatrice #Iocisono."", ""email"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.facebook.com/Aiutiamo-Amatrice-1574932246143457"", ""lon"": """", ""nome"": ""Comitato IOCISONO"", ""tel"": """"}","<pre><yamldata>nome: 'Comitato IOCISONO'
-tel: ''
-email: ''
-descrizione: 'Pagina Facebook del comitato di cittadini di Amatrice #Iocisono.'
-indirizzo: ''
-lat: ''
-lon: ''
-link: 'https://www.facebook.com/Aiutiamo-Amatrice-1574932246143457'
 data: 15/09/2016
 </yamldata></pre>
 ",open
