@@ -10,12 +10,12 @@ Based on my self-assessment, I believe I fit into the following [Belbin Roles](h
 <div style="padding: 5px; float: left"><img src="http://www.belbin.com/media/1326/teamworker.png" width="45"/></div>  
 
 ## Teamworker
-Help the team to gel, using their versatility to identify the work required and complete it on behalf of the team
+Help the team to gel, using their versatility to identify the work required and complete it on behalf of the team.
 
 <ul>
-  <li><b>Strengths</b>: Co-operative, perceptive and diplomatic. Listens and averts friction</li>
-<li><b>Allowable weaknesses</b>: Can be indecisive in crunch situations and tends to avoid confrontation</li>
-<li><b>Don't be surprised to find that</b>: They might be hesitant to make unpopular decisions</li></ul>
+  <li><b>Strengths</b>: Co-operative, perceptive and diplomatic. Listens and averts friction.</li>
+<li><b>Allowable weaknesses</b>: Can be indecisive in crunch situations and tends to avoid confrontation.</li>
+<li><b>Don't be surprised to find that</b>: They might be hesitant to make unpopular decisions.</li></ul>
 
 <div style="padding: 5px; float: left"><img src="http://www.belbin.com/media/1318/completor.png" width="45"/></div>   
 
