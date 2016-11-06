@@ -212,6 +212,11 @@ img {
 
 .search {
   float: right;
+  margin: -5pt;
+
+  .gsc-control-cse {
+     padding: 0em;
+  }
 }
 
 nav {
