@@ -26,17 +26,19 @@ tags:
 - jee
 - security
 - spring
+excerpt_separator: <!--more-->
 comments: []
 ---
 <p>While I was deploying Spring, I got the following Exception,</p>
-<pre class='highlight'>java.security.AccessControlException: access denied (java.util.PropertyPermission cglib.debugLocation read)</pre><br />
-The fix for such "access denied" is as follows,</p>
+<pre class='highlight'>java.security.AccessControlException: access denied (java.util.PropertyPermission cglib.debugLocation read)</pre>
+<!--more-->
+<p>The fix for such "access denied" is as follows,</p>
 <ul>
 <li>Open [CATALINA_HOME]/conf/policy.d/04webapps.policy (ON UBUNTU)</li>
 <li>Add the following to that file inside the grant{} block</li><br />
-</ul></p>
-<pre class='highlight'>permission java.util.PropertyPermission "cglib.debugLocation","read";</pre><br />
-Likewise, for</p>
-<pre class='highlight'>access denied (java.lang.RuntimePermission getProtectionDomain)</pre><br />
-Add this,</p>
-<pre class='highlight'>permission java.lang.RuntimePermission "getProtectionDomain";</pre></p>
+</ul>
+<pre class='highlight'>permission java.util.PropertyPermission "cglib.debugLocation","read";</pre>
+<p>Likewise, for</p>
+<pre class='highlight'>access denied (java.lang.RuntimePermission getProtectionDomain)</pre>
+<p>Add this,</p>
+<pre class='highlight'>permission java.lang.RuntimePermission "getProtectionDomain";</pre>
