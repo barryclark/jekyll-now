@@ -11,24 +11,24 @@ Storing knowledge in the form of digital data on the cloud and accessing it onli
 
 ### [Dropbox](https://www.dropbox.com/)
 
-### Google Drive
+### [Google Drive](https://www.google.com/drive/)
 
-### OneDrive
+### [OneDrive](https://onedrive.live.com/)
 
 ## Note-taking applications
 
-### OneNote
+### [OneNote](https://www.onenote.com/)
 
-### Evernote
+### [Evernote](https://evernote.com/)
 
 ## Project management applications
 
-### Trello
+### [Trello](https://trello.com/)
 
-### GitHub
+### [GitHub](https://github.com/)
 
 ## Blog applications
 
-### WordPress
+### [WordPress](https://wordpress.org/)
 
-### Jekyll
+### [Jekyll](https://jekyllrb.com/)
