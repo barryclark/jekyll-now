@@ -4,5 +4,5 @@
   {% assign categories = page.categories %}
 {% endif %}
 {% for category in categories %}
-  <span class="entry-categories"><a href="{{ site.url }}/{{ page.category-url }}/" rel="category">{{ page.category }}</a></span>{% unless forloop.last %},{% endunless %}
+  <span class="entry-categories"><a href="{{ site.url }}/{{ category }}/" rel="category">{{ category }}</a></span>{% unless forloop.last %},{% endunless %}
 {% endfor %}
