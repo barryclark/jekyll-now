@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 permalink: /blog/category
 heading: Blog
 ---

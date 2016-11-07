@@ -5,6 +5,13 @@ heading: Hal-i Cünunum
 permalink: /hal-i-cünunum
 ---
 
+<a href="#7Now2016">7 Kasım 2016 - 22:05</a>
+<p id="7Now2016">Neşeli müzikler besteleyemiyorum, ne yapsam insan olmanın hüznü çıkıyor ortaya, biz sizi eğlendiremeyiz, sadece eyleriz.</p>
+<p>~ Erkan Oğur</p>
+<iframe width="550" height="385" id="7Now2016" src="https://www.youtube.com/embed/gAElM_w0vls"></iframe>
+
+
+
 <a href="#18Oct2016">18 Ekim 2016 - 16:30</a>
 <p id="18Oct2016">Gök çoğalınca,
 Göğe açılan göz kapanınca,
