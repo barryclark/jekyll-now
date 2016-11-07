@@ -3,7 +3,7 @@ published: true
 layout: post
 tags:
   - core-skills
-title: My Time Management Plan
+title: Where Does My Time Go?
 ---
 ## Semester 1
 <div>
