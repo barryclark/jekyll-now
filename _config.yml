@@ -102,7 +102,7 @@ gems:
   - jekyll-seo-tag
   - jekyll-sitemap
 
-include: ["_pages"]
+include: ["_categories"]
 
 # Exclude these files from your production _site
 exclude:
