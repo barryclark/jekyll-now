@@ -20,9 +20,6 @@ date: '2010-11-27 10:41:45 +0530'
 date_gmt: '2010-11-27 05:11:45 +0530'
 categories:
 - Java
-- JavaScript
-- JQuery
-- Apache Commons
 tags:
 - programming
 - Java

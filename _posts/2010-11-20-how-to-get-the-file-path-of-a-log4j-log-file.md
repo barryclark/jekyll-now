@@ -15,7 +15,6 @@ date: '2010-11-20 18:55:26 +0530'
 date_gmt: '2010-11-20 13:25:26 +0530'
 categories:
 - Java
-- Log4J
 tags:
 - programming
 - Java
@@ -35,13 +34,13 @@ log4j.appender.migration.File = C:/work/log/migration.log
 log4j.appender.migration.MaxFileSize=20MB
 log4j.appender.migration.MaxBackupIndex=1
 log4j.appender.migration.layout = org.apache.log4j.PatternLayout
-log4j.appender.migration.layout.conversionPattern = %d %-5p %c - %m%n 
+log4j.appender.migration.layout.conversionPattern = %d %-5p %c - %m%n
 ```
 
 In such case, your Java code should be as follows,
-      
+
 ```java
-Logger logger = Logger.getLogger("migrationlog"); //Defining the LoggerFileAppender 
+Logger logger = Logger.getLogger("migrationlog"); //Defining the LoggerFileAppender
 appender = (FileAppender)logger.getAppender("migration");
 return new File(appender.getFile());
 ```

@@ -16,7 +16,6 @@ date: '2010-11-20 18:49:44 +0530'
 date_gmt: '2010-11-20 13:19:44 +0530'
 categories:
 - Linux
-- Rhythmbox
 tags:
 - linux
 - multimedia

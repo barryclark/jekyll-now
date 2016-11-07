@@ -55,10 +55,10 @@ baseurl: ""
 # SEO start
 #twitter:
 #  username: gunith
-  
+
 #author:
 #  twitter: gunith
-  
+
 logo: https://avatars3.githubusercontent.com/u/1032108?v=3&s=466
 
 social:
@@ -101,6 +101,8 @@ gems:
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
   - jekyll-seo-tag
   - jekyll-sitemap
+
+include: ["_pages"]
 
 # Exclude these files from your production _site
 exclude:

@@ -19,7 +19,6 @@ date: '2010-11-21 14:41:44 +0530'
 date_gmt: '2010-11-21 09:11:44 +0530'
 categories:
 - JavaScript
-- JQuery
 tags:
 - programming
 - code
