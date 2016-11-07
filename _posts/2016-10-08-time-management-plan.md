@@ -38,7 +38,7 @@ title: My Time Management Plan
 <td>0 (at time of writing)</td>
 </tr>
 <tr>
-<td>Socialising</td>
+<td>Socialising (offline / online)</td>
 <td>24</td>
 </tr>
 <tr class="gray">
@@ -48,5 +48,4 @@ title: My Time Management Plan
 </tbody>
 </table>
 </div>
-<!--more-->
-<br>
+Since there are 168 hours in a week, that leaves me with 34 hours of spare time. Perhaps I should spend some of that time volunteering or working, or possibly socialising more.
