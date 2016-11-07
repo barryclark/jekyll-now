@@ -111,10 +111,14 @@ img {
 }
 
 .post-bottom {
-    text-transform: uppercase;
-    font-size: 10pt;
-    font-weight: bold;
-    color: $gray;
+  text-transform: uppercase;
+  font-size: 10pt;
+  font-weight: bold;
+  color: $gray;
+  
+  .date {
+    font-style: normal;
+  }
 }
 
 // Fixes images in popup boxes from Google Translate
