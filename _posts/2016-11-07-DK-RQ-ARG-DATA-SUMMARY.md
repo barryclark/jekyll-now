@@ -41,4 +41,6 @@ McDonald, Mark (2011). “Home Internet may get even faster in South Korea." *Ne
 Sedimo, Nonofo, C., Bwalya, Kelvin, J. & Plessis, Tanya Du (2011). "Conquering the digital divide: Botswana and South
 Korea digital divide status and interventions." *Original Research.* http://www.sajim.co.za/index.php/SAJIM/article/viewFile/471/509
 
+Kocurek, Carly, A (2012). “The Agony and the Exidy: A History of Video Game Violence and the Legacy of Death Race.” Game Studies 12 (1). http://gamestudies.org/1201/articles/carly_kocurek.
 
+Nakamura, Lisa (2009). “Don’t Hate the Player, Hate the Game: The Racialization of Labor in World of Warcraft.” Critical Studies in Media Communication 26 (2): 128–44. doi:10.1080/15295030902860252.
