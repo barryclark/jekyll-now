@@ -11,39 +11,39 @@ title: My Time Management Plan
 <tbody>
 <tr>
 <th>Activity</th>
-<th>Time</th>
+<th>Time (in hours)</th>
 </tr>
 <tr>
 <td>Sleeping</td>
-<td></td>
+<td>46</td>
 </tr>
 <tr class="gray">
 <td>Food prep / eating</td>
-<td></td>
+<td>10</td>
 </tr>
 <tr>
-<td>Personal Hygiene</td>
-<td></td>
+<td>Personal hygiene</td>
+<td>8</td>
 </tr>
 <tr class="gray">
 <td>Commuting</td>
-<td></td>
+<td>7</td>
 </tr>
 <tr>
-<td>Timetabled Time</td>
-<td></td>
+<td>Timetabled time</td>
+<td>11</td>
 </tr>
 <tr class="gray">
-<td>Work</td>
+<td>Work / volunteering</td>
 <td>0 (at time of writing)</td>
 </tr>
 <tr>
 <td>Socialising</td>
-<td></td>
+<td>24</td>
 </tr>
 <tr class="gray">
 <td>Studying</td>
-<td></td>
+<td>28</td>
 </tr>
 </tbody>
 </table>
