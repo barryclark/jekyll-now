@@ -30,6 +30,6 @@ It is crucial to remember that no matter which type of scholarly writing one cho
 
 **References**
 
-Semenza, Gregory M. Colón. 2010. Graduate Study for the Twenty-First Century: How to Build an Academic Career in the Humanities. 
+Semenza, Gregory M. Colón. 2010. *Graduate Study for the Twenty-First Century: How to Build an Academic Career in the Humanities.* 
 Rev. & updated 2nd ed. New York: Palgrave Macmillan.
 
