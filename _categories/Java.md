@@ -4,4 +4,5 @@ title: Java
 category: Java
 permalink: /Java/
 ---
-Java category
+{% assign category = "Java" %}
+{% include category.html %}
