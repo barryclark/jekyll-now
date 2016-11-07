@@ -4,8 +4,12 @@ layout: post
 tags:
   - core-skills
 title: Where Does My Time Go?
+excerpt_seperator: <!--more-->
 ---
-## Semester 1
+## Foundation Year
+
+### Semester 1
+
 <div>
 <table width="100%" cellpadding="15" cellspacing="10" style="text-align: center;">
 <tbody>
@@ -48,4 +52,5 @@ title: Where Does My Time Go?
 </tbody>
 </table>
 </div>
+<!--more--> 
 Since there are 168 hours in a week, that leaves me with 34 hours of spare time. Perhaps I should spend some of that time volunteering or working, or possibly socialising more.
