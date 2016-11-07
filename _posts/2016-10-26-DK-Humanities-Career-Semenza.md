@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Building a Humanities Career - Semenza"
+title: "Building a Humanities Career & Six Types of Argumentation - Semenza"
 author: dkomarovo
 ---
 
@@ -19,7 +19,16 @@ This is important because it teaches the valueable life lesson that if one does 
 at the appropriate (earlier) point in their life, they cannot truly escape it. Sooner or later they will have to commit to the knowledge, 
 but acquiring it may prove to be a greater challenge in the future.
 
-References
+Another important topic covered by Semenza is six recommended types of scholarly argumentation. They are examples of 
+practical approaches to research topics. Semenza's six types are as follows: controversy, textual crux, gap in scholarship, 
+historical contextualization, pragmatic proposal, and theoretical application. Controversy is a common form which attempts
+to resolve a debate and/or become closer to its resolution. Textual crux argues the importance of a specific term, 
+phrase, and/or text, and attempts to convince the audience of the signifance(s). The gap in scholarship refers to a case where a certain topic may not have been studied; therefore, it may lead to further research in related areas. Historical contextualization pairs one's argument with history; by reinterpreting historical pieces, new thoughts upon meaning(s) of certain events and/or artifacts are brought to the table. The final form is theoretical application, where theories are constructed towards a text or other work. 
+
+It is crucial to remember that no matter which type of scholarly writing one chooses to conduct, their ultimate goal should be to suggest new and/or valuable ideas regarding a subject. Such makes for thinkers, not simply reiterators.
+
+
+**References**
 
 Semenza, Gregory M. Colón. 2010. Graduate Study for the Twenty-First Century: How to Build an Academic Career in the Humanities. 
 Rev. & updated 2nd ed. New York: Palgrave Macmillan.
