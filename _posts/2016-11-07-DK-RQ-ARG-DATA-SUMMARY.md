@@ -19,8 +19,8 @@ internet speeds; a famous distinction and trademark of development and progressi
 
 The data I am collecting in my project includes statistics provided by the World Bank, an international financial organization since 
 1944, detailing national internet usage percentages of almost any country worldwide. Next, I consult financial documentation from 
-MarketLine, from Datamonitor international corporation, which contains further statistics, as well as charts: charts, graphs, 
-network maps, etc. In addition, I found three articles (NYT, Wiley Online Library, and Forbes), as well as a research paper 
+MarketLine, from Datamonitor international corporation, which contains further statistics, as well as: charts, graphs, 
+and network maps. Additionally, I found three articles (NYT, Wiley Online Library, and Forbes), as well as a research paper 
 contrasting the DOI (Digital Opportunity Index) development in Botswana, in contrast to that of South Korea.
 
 For this week’s assigned readings, the data summary from professor Kocurek and Nakamura’s research articles entails usage of: images, 
@@ -30,11 +30,15 @@ Nakamura used social media, images, websites, and articles, which strengthened h
 in MMO games, it is a persisting one. Overall, it is evident that the use of diverse forms of evidence can dramatically improve the 
 success of one’s argument in their research endeavors.
 
-**Sources:**
+**References (in order of appearance):**
+
+Semenza, Gregory M. Colón (2010). Graduate Study for the Twenty-First Century: How to Build an Academic Career in the Humanities. Rev. & updated 2nd ed. New York: Palgrave Macmillan.
 
 2015 Statistics available at: Korea, Rep. - http://data.worldbank.org/indicator/IT.NET.USER.P2?locations=KR&name_desc=false
 
-“Home Internet may get even faster in South Korea” (2011) - http://www.nytimes.com/2011/02/22/technology/22iht-broadband22.html?_r=0
+McDonald, Mark (2011). “Home Internet may get even faster in South Korea." *New York Times Company.* http://www.nytimes.com/2011/02/22/technology/22iht-broadband22.html?_r=0
 
-Conquering the digital divide: Botswana and South Korea digital divide status and interventions” (2011) - 
-http://www.sajim.co.za/index.php/SAJIM/article/viewFile/471/509
+Sedimo, Nonofo, C., Bwalya, Kelvin, J. & Plessis, Tanya Du (2011). "Conquering the digital divide: Botswana and South
+Korea digital divide status and interventions." *Original Research.* http://www.sajim.co.za/index.php/SAJIM/article/viewFile/471/509
+
+
