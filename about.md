@@ -18,6 +18,14 @@ Over time the writers at Purple Pawn have started referring to ourselves as Pawn
 
 I should also mention that I don't cover a broad range of anything. You won't see all the latest board game, toy, and video game news and releases. I won't be reviewing or unboxing everything that I see/can get my hands on. If I post it here it's because I have a personal interest in it.
 
+### Review/Preview Policy
+
+Most products that are sent to me for review are provided free of charge. This will always be stated at the bottom of a post where this is the case. This fact does not color my opinions on said products in any way, shape, or form. There are times where I will review a product I have purchased on my own, or received as a gift. Again, this will be disclosed at the bottom of the post and does not have any bearing on the review at all.
+
+I do also accept paid reviews. These posts will not only have this disclosed at the bottom of the post, but an icon will appear in both the post's title, headline, and overlaid on its preview thumbnail. Paid reviews may be commission based or done for a flat fee. A paid review does not guarantee a positive review.
+
+The above items being stated, I should mention that I generally accept review products, or reach out for review products, for items I have a personal interest in. I try not to bother with things I feel I won't enjoy, or that my readership wouldn't enjoy.
+
 ### Equipment
 
 **Phone/Camera:**
@@ -37,12 +45,11 @@ Storage: 250GB SSD
 Lenovo Y510P
 (Stats coming soon)
 
-
 ### Contact me
 
 rkalajian [at] gmail.com
 
-### [My Game Collection](https://gamestockpile.com/stockpiles/user7d121f84b5fadf3b09be78adc625ef48)
+### [My Game Collection](https://boardgamegeek.com/collection/user/rkalajian?own=1&subtype=boardgame&ff=1)
 
 ### Attribution
 Logo designed by [DPH Studioz](http://dphstudioz.com/)\\
