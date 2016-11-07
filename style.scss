@@ -110,6 +110,12 @@ img {
   max-width: 100%;
 }
 
+.page-categories {
+    text-transform: uppercase;
+    font-size: 10pt;
+    font-weight: bold;
+}
+
 // Fixes images in popup boxes from Google Translate
 .gmnoprint img {
   max-width: none;
