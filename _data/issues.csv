@@ -1516,6 +1516,18 @@ immagine: ''
 data: 30/10/2016
 </yamldata></pre>
 ",closed
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/940,186140976,2016-11-06 00:32:38,2016-10-30 14:54:31,A Borgo di #Arquata rete telefonica inefficiente per far fronte all'emergenza,42.775157,13.2955824,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""RETE TELEFONICA INEFFICIENTE"", ""data"": ""30/10/2016"", ""descrizione"": ""Dal campo: a Borgo di Arquata il funzionamento delle linee telefoniche \u00e8 troppo scarso per poter far fronte in modo efficace all'emergenza. Serve che vengano immediatamente rese efficienti."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Strada Provinciale 129 Trisungo d'Arquata - Tufo, Arquata del Tronto, AP, Marche, Italia"", ""lat"": ""42.775157"", ""link"": """", ""lon"": ""13.2955824"", ""tel"": ""3462865450""}","<pre><yamldata>tel: '3462865450'
+email: ''
+cosa: 'RETE TELEFONICA INEFFICIENTE'
+descrizione: 'Dal campo: a Borgo di Arquata il funzionamento delle linee telefoniche è troppo scarso per poter far fronte in modo efficace all''emergenza. Serve che vengano immediatamente rese efficienti.'
+indirizzo: 'Strada Provinciale 129 Trisungo d''Arquata - Tufo, Arquata del Tronto, AP, Marche, Italia'
+lat: '42.775157'
+lon: '13.2955824'
+link: ''
+immagine: ''
+data: 30/10/2016
+</yamldata></pre>
+",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/939,186140971,2016-10-30 15:17:27,2016-10-30 14:54:25,Offro parte di casa indipendente a Ferrara centro per 3-4 persone,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""30/10/2016"", ""descrizione"": ""Offro parte di casa indipendente al secondo piano in Ferrara centro. Possibilit\u00e0 di alloggio per 3/4 persone che abbiano necessit\u00e0 immediata ."", ""email"": ""valeria.salvetti57@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
 email: valeria.salvetti57@gmail.com
 descrizione: 'Offro parte di casa indipendente al secondo piano in Ferrara centro. Possibilità di alloggio per 3/4 persone che abbiano necessità immediata .'
