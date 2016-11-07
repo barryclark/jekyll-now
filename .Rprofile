@@ -38,6 +38,7 @@ r2jekyll <- function(filename, dpi = 192) {
   unlink("{{site.url}}", recursive=T)
 }
 
+# r2jekyll("Bug-in-nlme-with-fixed-sigma")
 # r2jekyll("What-is-Tau-U")
 # r2jekyll("SCD-effect-size-sensitivities")
 # r2jekyll("Simulation-studies-in-R-2016")
