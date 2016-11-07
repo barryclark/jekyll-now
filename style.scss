@@ -331,6 +331,11 @@ th, td {
   height: 25px;
 }
 
+.gray th, td {
+  border: 1px solid #ddd; 
+  background-color: #eee;
+}
+
 //
 // Pagination
 //
