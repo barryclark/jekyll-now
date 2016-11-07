@@ -9,10 +9,10 @@ layout: default
     {{ content }}
   </div>
 
-  <div class="page-categories">Categories: {% include post-categories.html %}</div>
-  
-  <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
+  <div class="post-bottom">
+    <div class="page-categories">Categories: {% include post-categories.html %}</div>
+
+    <div class="date">Written on {{ page.date | date: "%B %e, %Y" }}</div>
   </div>
 
   {% include disqus.html %}
