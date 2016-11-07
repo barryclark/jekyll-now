@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Death RACE!!!!!!!!!
-author: bcarlson8582,akrlicevic
+author: bcarlson8582, akrlicevic
 ---
 Claim: The video game/movie, Death Race, is a very violent game, and has a negative
 impact on society due to its suggestive themes.
