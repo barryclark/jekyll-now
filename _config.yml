@@ -56,6 +56,7 @@ baseurl: ""
 permalink: date
 paginate: 5
 paginate_path: "/:num/"
+excerpt_separator: <!--more-->
 
 # The release of Jekyll Now that you're using
 version: v1.2.0
