@@ -7,7 +7,7 @@ title: My Time Management Plan
 ---
 ## Semester 1
 <div style="overflow: auto; overflow-y: hidden">
-<table cellpadding="15" cellspacing="10" style="text-align: center;">
+<table width="100%" cellpadding="15" cellspacing="10" style="text-align: center;">
 <tbody>
 <tr>
 <th>Activity</th>
