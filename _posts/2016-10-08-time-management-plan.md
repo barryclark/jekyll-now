@@ -17,7 +17,7 @@ title: My Time Management Plan
 <td>Sleeping</td>
 <td></td>
 </tr>
-<tr style="border-top: 1px solid #ddd; border-left: 1px solid #ddd; border-right: 1px solid #ddd; background-color: #eee;}">
+<tr class="gray">
 <td>Food prep / eating</td>
 <td></td>
 </tr>
@@ -25,7 +25,7 @@ title: My Time Management Plan
 <td>Personal Hygiene</td>
 <td></td>
 </tr>
-<tr style="border-top: 1px solid #ddd; border-left: 1px solid #ddd; border-right: 1px solid #ddd; background-color: #eee;}">
+<tr class="gray">
 <td>Commuting</td>
 <td></td>
 </tr>
@@ -33,7 +33,7 @@ title: My Time Management Plan
 <td>Timetabled Time</td>
 <td></td>
 </tr>
-<tr style="border-top: 1px solid #ddd; border-left: 1px solid #ddd; border-right: 1px solid #ddd; background-color: #eee;}">
+<tr class="gray">
 <td>Work</td>
 <td>0 (at time of writing)</td>
 </tr>
@@ -41,7 +41,7 @@ title: My Time Management Plan
 <td>Socialising</td>
 <td></td>
 </tr>
-<tr style="border-top: 1px solid #ddd; border-left: 1px solid #ddd; border-right: 1px solid #ddd; background-color: #eee;}">
+<tr class="gray">
 <td>Studying</td>
 <td></td>
 </tr>
