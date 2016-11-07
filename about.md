@@ -24,6 +24,8 @@ Most products that are sent to me for review are provided free of charge. This w
 
 I do also accept paid reviews. These posts will not only have this disclosed at the bottom of the post, but an icon will appear in both the post's title, headline, and overlaid on its preview thumbnail. Paid reviews may be commission based or done for a flat fee. A paid review does not guarantee a positive review.
 
+A majority of products reviewed are final, retail products. Sometimes I will do a preview based of a prototype, or unfinished item. Again, this will be disclosed at the bottom of the post, as well as the headline.
+
 The above items being stated, I should mention that I generally accept review products, or reach out for review products, for items I have a personal interest in. I try not to bother with things I feel I won't enjoy, or that my readership wouldn't enjoy.
 
 ### Equipment
