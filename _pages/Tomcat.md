@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Tomcat
-category: Tomcat
-permalink: /Tomcat/
+title: Hibernate
+category: Hibernate
+permalink: /Hibernate/
 ---
-Tomcat category
+Hibernate category
