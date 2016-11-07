@@ -2406,7 +2406,7 @@ MapUp.prototype.makeItemListGallery = function(layerObj,defaultIcon,markers) {
 				}
 				catch (e){}
 
-				szListImage += "<img class=\"gallery-image\" src=\""+szImg+"\" title=\""+szTitle+"\" onerror='this.src = \"image-not-found-2.png\";' />";
+				szListImage += "<img class=\"gallery-image\" src=\""+szImg+"\" title=\""+szTitle+"\" onerror='this.src = \"resources/images/image-not-found.png\";' />";
 
 				szListImage += "<p style='font-size:0.7em;line-height:1.2em;margin:0;margin-top:0.5em;'><a href=\"javascript:void()\">"+szTitle+"</a></p>";
 
@@ -3495,7 +3495,7 @@ function _mapup_createMarkerClickHandler(map, marker, layer, info, szMode, i) {
 				var	match = info.properties.description.match(/<img.+?src=[\"\'](.+?)[\"\'].*?>/i);
 				var szImg = (match && (match.length>1))?(match[1]):"";
 				if ( szImg && szImg.length ){
-					szDesc += "<a href=\"javascript:void()\"><img src='"+szImg+"' title='"+szTitle+"' style='margin-top:1em;margin-bottom:0.5em;margin-right:3px;height:100px;' onerror='this.src = \"image-not-found-2.png\";' /></a>";
+					szDesc += "<a href=\"javascript:void()\"><img src='"+szImg+"' title='"+szTitle+"' style='margin-top:1em;margin-bottom:0.5em;margin-right:3px;height:100px;' onerror='this.src = \"resources/images/image-not-found.png\";' /></a>";
 				}
 			}
 			/**

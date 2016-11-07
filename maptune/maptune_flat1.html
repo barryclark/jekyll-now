@@ -24,7 +24,6 @@ $Log:maptune_flat.htmls,v $
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<meta name="description" content="">
 	<meta name="author" content="">
-	<link rel="shortcut icon" href="assets/img/favicon.png">
 
 	<title>Mappa</title>
 
@@ -176,7 +175,7 @@ $Log:maptune_flat.htmls,v $
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-				<a class="navbar-brand" href="#">MAP<span style="font-size:0.7em">tune</span></a>
+				<a class="navbar-brand" href="http://public.ixmaps.com/maptune">MAP<span style="font-size:0.7em">tune</span></a>
 				<a id="header-filter-switch" class="navbar-brand" href="javascript:maptune.jsapi.toggleFilter();" style="color:#cc0000;"> filter <span class="glyphicon glyphicon-filter" aria-hidden="true" style="font-size:0.9em"></span></a>
 				<a id="header-list-button" class="navbar-brand" href="javascript:maptune.jsapi.forceList();" style="color:#fff;display:none;">list <span class="glyphicon glyphicon-list" aria-hidden="true" style="font-size:0.9em"></span></a>
 				<a id="header-map-button" class="navbar-brand" href="javascript:maptune.jsapi.forceMap();" style="color:#fff;display:none;">map <span class="glyphicon glyphicon-map-marker" aria-hidden="true" style="font-size:0.9em"></span></a>
@@ -411,13 +410,13 @@ $Log:maptune_flat.htmls,v $
 				Questa pagina visualizza dati georeferenziati con una mappa e una lista</br>
 					<li>La lista degli elementi è composta da 3 stati:<br>
 					<ol><li>
-					<img src="./resources/ui/listview.jpg" style="opacity:0.5;vertical-align:-6px;" height="24" />
+					<img src="./resources/ui/listview.jpg" alt="listview" style="opacity:0.5;vertical-align:-6px;" height="24" />
 					<b>Lista</b>: vengono elencati come icone, i titoli ed eventualmente la data
 					</li><li>
-					<img src="./resources/ui/articelview.jpg" style="opacity:0.5;vertical-align:-6px;" height="24" />
+					<img src="./resources/ui/articelview.jpg" alt="articelview" style="opacity:0.5;vertical-align:-6px;" height="24" />
 					<b>Articolo</b>: vengono visualizzate tutte le informazioni dell'elemento.
 					</li><li>
-					<img src="./resources/ui/galleryview.jpg" style="opacity:0.5;vertical-align:-6px;" height="24" />
+					<img src="./resources/ui/galleryview.jpg" alt="galleryview" style="opacity:0.5;vertical-align:-6px;" height="24" />
 					<b>Galleria</b>: mostra solo le immagini presenti nei metadati (se esistono)
 					</li></ol><br>
 				</li>
@@ -613,7 +612,7 @@ $Log:maptune_flat.htmls,v $
 	var normalSidebarWidth = 380;
 
 	var defaultLayerDialog = "./layer.html";
-	var defaultconfigFile = "./param.js";
+	var defaultconfigFile = "./config.js";
 
 	$(document).ready(function() {
 
