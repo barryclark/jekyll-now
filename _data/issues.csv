@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1166,187853557,2016-11-07 22:58:29,2016-11-07 22:54:38,Scarpe nuove per i terremotati di Marcelli e Porto Recanati,43.4311624,13.6644569,"[""Accettato"", ""Fabbisogni"", ""Form""]",,http://i.imgur.com/WIKqlSR.jpg,"{""cosa"": ""Scarpe nuove per i terremotati di Marcelli e Porto Recanati"", ""data"": ""07/11/2016"", ""descrizione"": ""Servono scarpe nuove per i terremotati di Marcelli e Porto Recanati attualmente ospitati dai Camping della Riviera. In particolare ai Calzaturifici delle Marche \u00e8 rivolto questo appello."", ""email"": """", ""immagine"": ""http://i.imgur.com/WIKqlSR.jpg"", ""indirizzo"": ""Corso Giacomo Matteotti, Porto Recanati, MC, Marche, 62017, Italia"", ""lat"": ""43.4311624"", ""link"": """", ""lon"": ""13.6644569"", ""tel"": """"}","<pre><yamldata>tel: ''
+email: ''
+cosa: 'Scarpe nuove per i terremotati di Marcelli e Porto Recanati'
+descrizione: 'Servono scarpe nuove per i terremotati di Marcelli e Porto Recanati attualmente ospitati dai Camping della Riviera. In particolare ai Calzaturifici delle Marche è rivolto questo appello.'
+indirizzo: 'Corso Giacomo Matteotti, Porto Recanati, MC, Marche, 62017, Italia'
+lat: '43.4311624'
+lon: '13.6644569'
+link: ''
+immagine: 'http://i.imgur.com/WIKqlSR.jpg'
+data: 07/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1161,187849414,2016-11-07 22:39:26,2016-11-07 22:34:57,#Abruzzo: 12.391 richieste per le verifiche di agibilità,,,"[""Accettato"", ""Bollettino"", ""Facebook"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""07/11/2016"", ""descrizione"": ""Ammontano a 12.391 le richieste di sopralluoghi per edifici privati con segnalazione di danni pervenute al Centro Operativo Regionale (COR) aggiornate al 4 novembre. I sopralluoghi interessano 106 comuni abruzzesi.Circa 100 sono i sopralluoghi richiesti per i danni agli edifici di culto e oltre 200 quelli che interessano gli edifici strategici. Al link \u00e8 possibile scaricare l'intero report."", ""link"": ""http://www.improntalaquila.org/2016/11/06/terremoto-in-abruzzo-12-391-richieste-per-le-verifiche-di-agibilita/"", ""titolo"": ""#Abruzzo: 12.391 richieste per le verifiche di agibilit\u00e0""}","<pre><yamldata>titolo: '#Abruzzo: 12.391 richieste per le verifiche di agibilità'
 descrizione: 'Ammontano a 12.391 le richieste di sopralluoghi per edifici privati con segnalazione di danni pervenute al Centro Operativo Regionale (COR) aggiornate al 4 novembre. I sopralluoghi interessano 106 comuni abruzzesi.Circa 100 sono i sopralluoghi richiesti per i danni agli edifici di culto e oltre 200 quelli che interessano gli edifici strategici. Al link è possibile scaricare l''intero report.'
 link: 'http://www.improntalaquila.org/2016/11/06/terremoto-in-abruzzo-12-391-richieste-per-le-verifiche-di-agibilita/'
@@ -5427,17 +5438,6 @@ descrizione: 'Il Comune di Amatrice sul sito comunica che per le singole iniziat
 indirizzo: ''
 lat: 42.62990
 lon: 13.28795
-link: ''
-data: 15/09/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/402,177153138,2016-09-15 11:34:30,2016-09-15 11:34:00,Per segnalare disponibilità di mezzi e materiali - Regione Lazio,,,"[""Accettato"", ""Contatti"", ""Form""]",,,"{""data"": ""15/09/2016"", ""descrizione"": """", ""email"": ""sismarieti@regione.lazio.it"", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""nome"": ""Per segnalare disponibilit\u00e0 di mezzi e materiali - Regione Lazio"", ""tel"": """"}","<pre><yamldata>nome: 'Per segnalare disponibilità di mezzi e materiali - Regione Lazio'
-tel: ''
-email: sismarieti@regione.lazio.it
-descrizione: ''
-indirizzo: ''
-lat: ''
-lon: ''
 link: ''
 data: 15/09/2016
 </yamldata></pre>
