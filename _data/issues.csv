@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1154,187682396,2016-11-07 15:39:18,2016-11-07 11:01:54,Acquisti solidali: kit natalizio con prodotti di #Norcia,,,"[""Accettato"", ""acquisto solidale"", ""Donazioni"", ""Form"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""07/11/2016"", ""descrizione"": ""Kit natalizio con prelibatezze da Norcia"", ""link"": ""https://libraduepuntozero.wordpress.com/2016/11/07/aiuta-con-gusto-kit-prelibatezze-da-norcia/"", ""titolo"": ""AIUTA CON GUSTO!""}","<pre><yamldata>titolo: 'AIUTA CON GUSTO!'
+descrizione: 'Kit natalizio con prelibatezze da Norcia'
+link: 'https://libraduepuntozero.wordpress.com/2016/11/07/aiuta-con-gusto-kit-prelibatezze-da-norcia/'
+data: 07/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1152,187597124,2016-11-06 23:11:39,2016-11-06 23:09:00,A Vallefoglia (Pu) raccolta beni fino a sabato 12 novembre,43.8559848,12.7622487,"[""Accettato"", ""Fabbisogni"", ""Facebook"", ""Sisma Ottobre""]",,,"{""cosa"": ""A Vallefoglia (Pu) raccolta beni fino a sabato 12 novembre"", ""data"": ""06/11/2016"", ""descrizione"": ""Da sabato 5 fino a sabato 12 novembre presso Gio Calzature a Montecchio di Vallefoglia, Via Pio La Torre n.6 si raccolgono questi beni, in collaborazione con la Bottega del Libro di Macerata. ALIMENTARI IN GENERE A LUNGA CONSERVAZIONE SIA PER LE PERSONE (particolare attenzione per bambini e neonati) CHE PER GLI ANIMALI \u2013 DA COMPAGNIA E DA ALLEVAMENTO; ABITI PER UOMO \u2013 DONNA \u2013 BAMBINO; MATERIALE PER IGIENE INTIMA. In particolare: - Mutandine assorbenti - Assorbenti intimi - Schiuma barba, rasoi, salviettine e similari - Saponi e similari - MATERIALE PULIZIA CASA - LENZUOLA COPERTE ASCIUGAMANI E VARIO - MATERIALE PER PROTEGGERE LE ROULOTTE E IL FIENO - TELONI in plastica e vario materiale disponibile - TANICHE PER ACQUA E ALTRO MATERIALE UTILE - MATERIALE CANCELLERIA E GIOCHI PER I BIMBI (cos\u00ec si svagano e si deconcentrano dal pensiero del terremoto)"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Strada Provinciale Fogliense, Vallefoglia, PU, Marche, 61022, Italia"", ""lat"": ""43.8559848"", ""link"": ""https://www.facebook.com/permalink.php?story_fbid=539307819595964&id=288612484665500"", ""lon"": ""12.7622487"", ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 cosa: 'A Vallefoglia (Pu) raccolta beni fino a sabato 12 novembre'
@@ -4384,17 +4389,6 @@ descrizione: 'AGRICAMPEGGIO ""PUNTO VERDE"" di MARTINSICURO (se avete una tenda,
 indirizzo: 'Martinsicuro, TE, Abruzzo, 64014, Italia'
 lat: '42.8509874'
 lon: '13.9215523'
-link: ''
-immagine: ''
-data: 16/09/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/530,177472157,2016-09-22 15:47:43,2016-09-16 16:54:39,"San Mauro Pascoli, FC - Hotel ""Jole""",44.1631101,12.4466459,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""HOTEL \""JOLE\"""", ""email"": """", ""immagine"": """", ""indirizzo"": ""Viale Marina, San Mauro Pascoli, FC, Emilia-Romagna, 47030, Italia"", ""lat"": ""44.1631101"", ""link"": """", ""lon"": ""12.4466459"", ""tel"": ""0541346177""}","<pre><yamldata>tel: '0541346177'
-email: ''
-descrizione: 'HOTEL ""JOLE""'
-indirizzo: 'Viale Marina, San Mauro Pascoli, FC, Emilia-Romagna, 47030, Italia'
-lat: '44.1631101'
-lon: '12.4466459'
 link: ''
 immagine: ''
 data: 16/09/2016
