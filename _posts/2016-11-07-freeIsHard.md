@@ -12,7 +12,6 @@ However, in the world we live in today, nothing can be free or easy anymore. I l
 
 All in all, it was a good experience learning about differnt ways to access information on the web, it just sucks that I will not be able to utilize any of it in my project. 
 
-#AND AGAIN, I REPEAT, IF ANYONE HAS SOME GENIUS WAY OF FIGURING THIS OUT, PLEASE LET ME KNOW
-
-
 But please, by the grace of god, if anyone who reads this has any idea on how to get song lyrics without having to manually do it and paying more than my life savings, please let me know so I can be spared of the pain of hours of manual labor.
+
+#AND AGAIN, I REPEAT, IF ANYONE HAS SOME GENIUS WAY OF FIGURING THIS OUT, PLEASE LET ME KNOW
