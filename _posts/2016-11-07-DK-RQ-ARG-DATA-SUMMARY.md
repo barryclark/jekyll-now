@@ -31,6 +31,7 @@ in MMO games, it is a persisting one. Overall, it is evident that the use of div
 success of one’s argument in their research endeavors.
 
 **Sources:**
+
 2015 Statistics available at: Korea, Rep. - http://data.worldbank.org/indicator/IT.NET.USER.P2?locations=KR&name_desc=false
 
 “Home Internet may get even faster in South Korea” (2011) - http://www.nytimes.com/2011/02/22/technology/22iht-broadband22.html?_r=0
