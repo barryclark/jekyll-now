@@ -126,7 +126,7 @@ maptune.feed.parse = maptune.feed.parse || {};
 					if ( !szVal.match(/\<img/i) && 
 						(szLab == parser.image || szVal.match(/jpg/) || szVal.match(/jpeg/) || szVal.match(/gif/) || szVal.match(/png/) || szVal.match(/bmp/) || szVal.match(/tiff/)) ){
 						szVal = szVal.replace(/https/g,'http');
-						szData += "<tr>"+szLabTD+"<td><img src='"+szVal+"' height='120' onerror='this.src = \"image-not-found-2.png\";'></td></tr>";
+						szData += "<tr>"+szLabTD+"<td><img src='"+szVal+"' height='120' onerror='this.src = \"resources/images/image-not-found.png\";'></td></tr>";
 					}else
 					// link
 					if ( szLab == parser.sito || szLab == parser.link || (szLab == "url") || szVal.match(/http/)){
