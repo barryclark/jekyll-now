@@ -140,13 +140,26 @@ maptune.feed.parse = maptune.feed.parse || {};
 						szData += "<tr>"+szLabTD+"<td><a href='mailto:"+szVal+"'>"+ szVal +"</a></td></tr>";
 					}else
 					// image
-					if ( !szVal.match(/\<img/i) && 
-						(szLab == parser.image || szVal.match(/jpg/) || szVal.match(/jpeg/) || szVal.match(/gif/) || szVal.match(/png/) || szVal.match(/bmp/) || szVal.match(/tiff/)) ){
+					if ( (szLab == "image") || szLab == parser.image ){
 						szVal = szVal.replace(/https/g,'http');
-						szData += "<tr>"+szLabTD+"<td><img src='"+szVal+"' height='120' onerror='this.src = \"resources/images/image-not-found.png\";'></td></tr>";
+						if ( szVal && szVal.length ){
+							szData += "<tr>"+szLabTD+"<td><img src='"+szVal+"' height='120' onerror='this.src = \"resources/images/image-not-found.png\";'></td></tr>";
+						}else{
+							szData += "<tr>"+szLabTD+"</tr>";
+						}
+					}else
+					if ( !parser.image &&
+							!szVal.match(/\<img/i) && 
+						( szVal.match(/jpg/) || szVal.match(/jpeg/) || szVal.match(/gif/) || szVal.match(/png/) || szVal.match(/bmp/) || szVal.match(/tiff/)) ){
+						szVal = szVal.replace(/https/g,'http');
+						if ( szVal && szVal.length ){
+							szData += "<tr>"+szLabTD+"<td><img src='"+szVal+"' height='120' onerror='this.src = \"resources/images/image-not-found.png\";'></td></tr>";
+						}else{
+							szData += "<tr>"+szLabTD+"</tr>";
+						}
 					}else
 					// link
-					if ( szLab == parser.sito || szLab == parser.link || (szLab == "url") || szVal.match(/http/)){
+					if ( szLab == parser.sito || szLab == parser.link || (szLab == "url") || szVal.substring(0,4).match(/http/)){
 						var szLink = szVal;
 						if ( szLink.length > 30 ){
 							szLink = szLink.substr(0,29) + " ...";
@@ -224,7 +237,11 @@ maptune.feed.parse = maptune.feed.parse || {};
 					for ( b in row ){
 						var col = dataA[0][b];
 						var val = row[b];
-						feature.properties[col] = val;
+						if ( val.substring(0,1) == "{" ){
+							feature.properties[col] = JSON.parse(val);
+						}else{
+							feature.properties[col] = val;
+						}
 					}
 
 					//feature.properties			    = row;

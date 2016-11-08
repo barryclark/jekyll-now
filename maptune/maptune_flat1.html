@@ -101,18 +101,23 @@ $Log:maptune_flat.htmls,v $
 			background-color: white;
 			border-radius: 20px;
 			border: solid 2px white;
-			border-right-width: 33px;
+			border-right-width: 34px;
 			border-style: dashed;
+			color:#e8e8e8;
 		}
 
 		.shadow {
 			-webkit-text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
 			text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
 		}
-
+		
+		.navbar-default {
+			color: #FFeeee;
+			background-color: #eeeeee;
+		}
 		.navbar-default .navbar-nav > li > a:hover,
 		.navbar-default .navbar-nav > li > a:focus {
-			color: #FFeeee;
+			color: #eeeeee;
 			background-color: transparent;
 		}
 
@@ -175,16 +180,15 @@ $Log:maptune_flat.htmls,v $
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-				<a class="navbar-brand" href="http://public.ixmaps.com/maptune">MAP<span style="font-size:0.7em">tune</span></a>
-				<a id="header-filter-switch" class="navbar-brand" href="javascript:maptune.jsapi.toggleFilter();" style="color:#cc0000;"> filter <span class="glyphicon glyphicon-filter" aria-hidden="true" style="font-size:0.9em"></span></a>
-				<a id="header-list-button" class="navbar-brand" href="javascript:maptune.jsapi.forceList();" style="color:#fff;display:none;">list <span class="glyphicon glyphicon-list" aria-hidden="true" style="font-size:0.9em"></span></a>
-				<a id="header-map-button" class="navbar-brand" href="javascript:maptune.jsapi.forceMap();" style="color:#fff;display:none;">map <span class="glyphicon glyphicon-map-marker" aria-hidden="true" style="font-size:0.9em"></span></a>
-				<a id="header-plus-button" class="navbar-brand" href="javascript:maptune.selectFeedDialog('show');" style="color:#fff;display:none;float:right"> <span class="glyphicon glyphicon-plus-sign" aria-hidden="true" style="font-size:1.1em"></span></a>
+				<a id="header-filter-switch" class="navbar-brand" href="javascript:maptune.jsapi.toggleFilter();" style="color:#bbb"> filter <span class="glyphicon glyphicon-filter" aria-hidden="true" style="font-size:0.9em"></span></a>
+				<a id="header-list-button" class="navbar-brand" href="javascript:maptune.jsapi.forceList();" style="color:#bbb;display:none;">list <span class="glyphicon glyphicon-list" aria-hidden="true" style="font-size:0.9em"></span></a>
+				<a id="header-map-button" class="navbar-brand" href="javascript:maptune.jsapi.forceMap();" style="color:#bbb;display:none;">map <span class="glyphicon glyphicon-map-marker" aria-hidden="true" style="font-size:0.9em"></span></a>
+				<a id="header-plus-button" class="navbar-brand" href="javascript:maptune.selectFeedDialog('show');" style="color:#444;display:none;float:right"> <span class="glyphicon glyphicon-plus-sign" aria-hidden="true" style="font-size:1.1em"></span></a>
 			</div>
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav navbar-right scrollclass">
 					<li><a href="javascript:maptune.selectFeedDialog('show')"><span class="glyphicon glyphicon-plus-sign shadow" style="font-size:2.0em;line-height:0.5em;vertical-align:-10px"></span></a></li>
-					<li><a href="#info"><span class="glyphicon glyphicon-info-sign" style="font-size:1.5em;line-height:0.5em;vertical-align:-6px;color:#cc0000"></span></a></li>
+					<li><a href="#info"><span class="glyphicon glyphicon-info-sign" style="font-size:1.5em;line-height:0.5em;vertical-align:-6px;color:#666666"></span></a></li>
 				</ul>
 				<div id="filter-navbar" class="input-group input-group-lg pull-left" style="margin-right:0.3em;z-index:999;display:none">
 					<form id="IndicatorFilterFormH" role="form" action="javascript:maptune.jsapi.search();" name="IndicatorFilterForm">
@@ -194,14 +198,6 @@ $Log:maptune_flat.htmls,v $
 					<div class="input-group-btn">
 						<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></button>
 						<ul class="dropdown-menu dropdown-menu-right" role="menu" id="filter-preset-1">
-							<!--
-					  <li><a href="javascript:maptune.jsapi.setSearchFilter('Musica')">Musica</a></li>
-					  <li><a href="javascript:maptune.jsapi.setSearchFilter('Teatro')">Teatro</a></li>
-					  <li><a href="javascript:maptune.jsapi.setSearchFilter('Danza')">Danza</a></li>
-					  <li><a href="javascript:maptune.jsapi.setSearchFilter('Cinema')">Cinema</a></li>
-					  <li><a href="javascript:maptune.jsapi.setSearchFilter('Sport')">Sport</a></li>
-					  <li><a href="javascript:maptune.jsapi.setSearchFilter('cinema|musei|museo|arte|mostre|fotografia')">Cultura</a></li>
-					  -->
 							<li><a href="javascript:maptune.jsapi.setSearchFilter('')">tutto</a></li>
 						</ul>
 					</div>
@@ -239,14 +235,6 @@ $Log:maptune_flat.htmls,v $
 						<div class="input-group-btn">
 							<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></button>
 							<ul class="dropdown-menu dropdown-menu-right" role="menu" id="filter-preset-2">
-								<!--
-							  <li><a href="javascript:maptune.jsapi.setSearchFilter('Musica')">Musica</a></li>
-							  <li><a href="javascript:maptune.jsapi.setSearchFilter('Teatro')">Teatro</a></li>
-							  <li><a href="javascript:maptune.jsapi.setSearchFilter('Danza')">Danza</a></li>
-							  <li><a href="javascript:maptune.jsapi.setSearchFilter('Cinema')">Cinema</a></li>
-							  <li><a href="javascript:maptune.jsapi.setSearchFilter('Sport')">Sport</a></li>
-							  <li><a href="javascript:maptune.jsapi.setSearchFilter('cinema|musei|museo|arte|mostre|fotografia')">Cultura</a></li>
-							-->
 								<li><a href="javascript:maptune.jsapi.setSearchFilter('')">clear</a></li>
 							</ul>
 						</div>
@@ -451,51 +439,6 @@ $Log:maptune_flat.htmls,v $
 		popups and helper
 	<!--========================================================================= -->
 
-	<div id="footer-loading" style="position:absolute;top:50%;left:45%;pointer-events:none;z-index:999">
-	    <div style="text-align:center;margin:auto;">
-			<p id="loading" class="ui-corner-all"
-							style=" position:relative;
-									top:0px;
-									left:0px;
-									padding:0px;
-									margin:0px;
-									padding-top:-2px;
-									padding-bottom:5px;
-									padding-left:15px;
-									visibility:hidden;
-									background:transparent;
-									opacity:0.9;
-									">
-									<img style="position:relative;top:6px;left:-5px;" alt="mill" src="resources/ui/spinner.gif" height="35px" />
-			</p>
-			<p id="error-div" class="ui-corner-all"
-							style=" position:relative;
-									top:0px;
-									left:0px;
-									padding:0px;
-									margin:0px;
-									padding-top:-2px;
-									padding-bottom:5px;
-									padding-left:15px;
-									visibility:hidden;
-									background:white;
-									-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
-									opacity:0.8;
-									">
-									<span id="error-message" style="position:relative;top:2px;padding-right:10px;font-size:1.5em;color:#666666"></span>
-			</p>
-		</div>
-	</div>
-
-	<div id="velo" style="	visibility:hidden;
-							background-color:#444444;
-							opacity:0.2;
-							position:absolute;
-							top:0px;
-							left:0px;
-							width:98%;
-							height:98%;"  >
-	</div>
 
 	<div id="help" style="visibility:hidden"  >
 	</div>
@@ -893,7 +836,7 @@ $Log:maptune_flat.htmls,v $
 		}
 		if ( ($("#headerwrap3").css("display") == "none") || flag ){
 			$("#headerwrap3").show();
-			$("#header-filter-switch").css("color","white");
+			$("#header-filter-switch").css("color","#444");
 			$("#headerwrap3").css("margin-bottom","0.4em");
 			$("#headerwrap3").css("margin-top","-0.3em");
 			// fixed filter -> create space
@@ -904,7 +847,7 @@ $Log:maptune_flat.htmls,v $
 			}
 		}else{
 			$("#headerwrap3").hide();
-			$("#header-filter-switch").css("color","#c00");
+			$("#header-filter-switch").css("color","#bbb");
 			$("#dynamic-content").css("margin-top","-0.5em");
 		}
 		__fInToggleFilter = true;
@@ -954,7 +897,7 @@ $Log:maptune_flat.htmls,v $
 	// ==================================================
 
 	/**
-	 * __resizeApplicatio
+	 * __resizeApplication
 	 * @type void
 	 */
 	__resizeApplication = function(){
@@ -996,8 +939,6 @@ $Log:maptune_flat.htmls,v $
 			// small screens
 			// ------------------------------------------
 
-			$("#toolbar").hide();
-
 			// small nav-bar icons
 
 			$(".btn-lg").removeClass("btn-lg").addClass("btn-sm");
@@ -1008,16 +949,9 @@ $Log:maptune_flat.htmls,v $
 
 			$(".form-control").css("height","30px");
 
-			// + - timeselection within map
-
-			$("#timelapbuttons-date").css("margin-top","0.3em");
-			$("#timelapbuttons-date").css("margin-left","0em");
-			$("#timelapbuttons-date").css("margin-bottom","-5em");
-			$("#headerwrap3-row").css("width","500px");
-
 			// if rotated in portrait or very small width
 
-			if ( height > width || width < 500 ){
+			if ( height > width*1.5 || width < 500 ){
 
 				// portrait mode
 				// ---------------------------------------
@@ -1073,7 +1007,7 @@ $Log:maptune_flat.htmls,v $
 				// -----------------------------------------
 
 				// map width half
-				$("#map-pane").attr("class","col-lg-6 col-md-7 col-xs-7");
+				$("#map-pane").attr("class","col-lg-7 col-md-7 col-xs-7");
 
 				// sidebar width half
 				$("#sidebar-content").attr("class","col-lg-5 col-md-5 col-xs-5");
@@ -1082,28 +1016,9 @@ $Log:maptune_flat.htmls,v $
 				$("#fullscreen-button").show();
 
 				if ( width < 800 ){
-					// content buttons horizontal in between
-					$("#map-nav").removeClass("nav-stacked");
-					$("#map-nav").css("margin-top","0");
-					$("#map-nav").css("margin-bottom","0.5em");
-					$("#map-nav").css("margin-left","0em");
-					$("#map-nav").parent().css("float","");
-
-					$("#globe-pill").hide();
-					$("#fullscreen-pill").hide();
-					$("#reset-pill").hide();
-
-					$("#map-nav").hide();
-					$(".listheader").hide();
-
-					$("#headerwrap3").hide();
 					$("#dynamic-content").css("padding","0");
+					$("#header-plus-button").show();
 				}else{
-					// content buttons vertical on the right
-					$("#map-nav").addClass("nav-stacked");
-					$("#map-nav").css("margin-bottom","0.5em");
-					$("#map-nav").css("margin-left","0.5em");
-					$("#map-nav").parent().css("float","right");
 				}
 
 				// other
@@ -1114,7 +1029,8 @@ $Log:maptune_flat.htmls,v $
 				nHeader = $("#headerwrap3 .container").height() + 30 + $(".navbar").height();
 				$("#map-content").height(height-nHeader);
 				$("#sidebar-content").height(height-nHeader);
-				$("#itemlist").height(height-nHeader-5);
+				$("#itemlist").height(height-nHeader-1);
+				$("#layer").height(height-nHeader-20);
 
 				$("#fullscreen-button").show();
 				$("#fullscreen-button").css("position","absolute");
@@ -1133,7 +1049,8 @@ $Log:maptune_flat.htmls,v $
 				nHeader = $("#headerwrap3 .container").height() - 15;
 				$("#map-content").height(height-nHeader);
 				$("#sidebar-content").height(height-nHeader);
-				$("#itemlist").height(height-nHeader-5);
+				$("#itemlist").height(height-nHeader-1);
+				$("#layer").height(height-nHeader-20);
 			}
 
 		}else{
@@ -1142,7 +1059,6 @@ $Log:maptune_flat.htmls,v $
 			// big  screens
 			// ----------------------------------
 
-			$("#toolbar").show();
 
 			// big nav-bar icons
 			//
