@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1176,188100971,2016-11-08 20:57:17,2016-11-08 20:55:47,Lavatrice a #Scai,42.5980591,13.2305149,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Pubblicare su FB""]",,,"{""cosa"": ""Lavatrice a #Scai"", ""data"": ""08/11/2016"", ""descrizione"": ""Serve urgentemente una lavatrice a Scai (Amatrice). Contattare Carlo."", ""email"": """", ""immagine"": """", ""indirizzo"": ""SP19, Amatrice, RI, Lazio, Italia"", ""lat"": ""42.5980591"", ""link"": """", ""lon"": ""13.2305149"", ""tel"": ""3338275919""}","<pre><yamldata>tel: '3338275919'
+email: ''
+cosa: 'Lavatrice a #Scai'
+descrizione: 'Serve urgentemente una lavatrice a Scai (Amatrice). Contattare Carlo.'
+indirizzo: 'SP19, Amatrice, RI, Lazio, Italia'
+lat: '42.5980591'
+lon: '13.2305149'
+link: ''
+immagine: ''
+data: 08/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1174,188037370,2016-11-08 18:52:34,2016-11-08 16:23:54,CERCASI AUTOTRASPORTATORE #USSITA,43.583333,11.316667,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Pubblicare su FB"", ""Sisma Ottobre""]",,,"{""cosa"": ""CERCASI AUTOTRASPORTATORE #USSITA"", ""data"": ""08/11/2016"", ""descrizione"": ""Serve autorasportatore per trasportare 2 roulotte da Greve in Chianti fino a Ussita. Contattare Sara."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": ""43.583333"", ""link"": """", ""lon"": ""11.316667"", ""tel"": ""+393462865450""}","<pre><yamldata>tel: '+393462865450'
 email: ''
 cosa: 'CERCASI AUTOTRASPORTATORE #USSITA'
@@ -506,16 +517,6 @@ indirizzo: ''
 lat: ''
 lon: ''
 link: 'http://gusitalia.it/'
-immagine: ''
-data: 03/11/2016
-</yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1096,187175488,2016-11-03 21:58:54,2016-11-03 20:04:38,Hotel in provincia di Teramo offre ospitalità agli sfollati,42.840101163043656,13.914012908935545,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""03/11/2016"", ""descrizione"": ""Al confine fra Villa Rosa di Martinsicuro ed Alba Adriatica, in prima collina, fra dolci declivi punteggiati di uliveti e macchia mediterranea, in ammirevole posizione fra mari e monti, sorge l'Hotel Villa Luigi. Le nostre confortevoli camere, sia per fumatori che per non fumatori, vi permetteranno di sentirvi a vostro agio in un ambiente dove nessun particolare \u00e8 stato trascurato. Diamo ospitalit\u00e0 a sfollati mettendo a disposizione dai prossimi giorni la nostra struttura alberghiera per ospitare le persone che sono state costrette a lasciare le proprie abitazioni a causa del sisma del centro Italia. La meravigliosa area piscina che si affaccia sul parco con oltre 100 palme ed ulivi secolari, comodamente accessibile, sia ad adulti che bambini."", ""email"": ""info@hotelvillaluigi.it"", ""immagine"": """", ""indirizzo"": ""Hotel Villa Luigi, Strada Provinciale 56 della Civita, Colonnella, TE, Abruzzo, 64010, Italia"", ""lat"": ""42.840101163043656"", ""link"": ""htto://www.hotelvillaluigi.it"", ""lon"": ""13.914012908935545"", ""tel"": ""0861753506""}","<pre><yamldata>tel: '0861753506'
-email: info@hotelvillaluigi.it
-descrizione: 'Al confine fra Villa Rosa di Martinsicuro ed Alba Adriatica, in prima collina, fra dolci declivi punteggiati di uliveti e macchia mediterranea, in ammirevole posizione fra mari e monti, sorge l''Hotel Villa Luigi. Le nostre confortevoli camere, sia per fumatori che per non fumatori, vi permetteranno di sentirvi a vostro agio in un ambiente dove nessun particolare è stato trascurato. Diamo ospitalità a sfollati mettendo a disposizione dai prossimi giorni la nostra struttura alberghiera per ospitare le persone che sono state costrette a lasciare le proprie abitazioni a causa del sisma del centro Italia. La meravigliosa area piscina che si affaccia sul parco con oltre 100 palme ed ulivi secolari, comodamente accessibile, sia ad adulti che bambini.'
-indirizzo: 'Hotel Villa Luigi, Strada Provinciale 56 della Civita, Colonnella, TE, Abruzzo, 64010, Italia'
-lat: '42.840101163043656'
-lon: '13.914012908935545'
-link: 'htto://www.hotelvillaluigi.it'
 immagine: ''
 data: 03/11/2016
 </yamldata></pre>",open
