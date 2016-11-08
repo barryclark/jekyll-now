@@ -13,7 +13,7 @@ Let's start with a simple example. Say you're helping a friend who wants to buy 
 
 It's not easy to tell without a frame of reference. So you ask your friends who have bought houses in that same neighborhoods, and you end up with three data points:
 
- Area (sq ft) | Price 
+ Area (sq ft)(x) | Price (y)
  ---: | :--- 
  2,104 | 399,900 
  1,600 | 329,900 
@@ -22,9 +22,23 @@ It's not easy to tell without a frame of reference. So you ask your friends who 
 Personally, my first instinct would be to get the average price per sq ft. That comes to $183 per sq ft. Multiply that by the area of the house, and you get $366,000.
 
 Let us visualize this process:
+[Gif]
 
+This is a form of prediction. This is a simple predictive model that takes an input, does a calculation, and gives an output (since the output can be of infinite values, the technical name for what we have would be a "regression model")
 
-This is a form of prediction. This is a simple predictive model that takes an input, does a calculation, and gives an output
+[figure]
+
+But can we do better? Let's try. Let's first define what it means to be better in this scenario. If we apply our model to the three data points we have, how good of a job would it do?
+
+[Gif]
+
+That's quite a bit of yellow line. Yellow line is bad. Yellow line is error. We want to shrink that as much as we can.
+
+ Area (sq ft) (x) | Price (y) | Prediction (y_) | y - y_ | (y - y_)²
+ ---: | :--- 
+ 2,104 | 399,900 
+ 1,600 | 329,900 
+ 2,400 | 369,000 
 
 ## Groundwork
 The first required reading for this tutorial is the official [MNIST For ML Beginners](https://www.tensorflow.org/versions/r0.11/tutorials/mnist/beginners/index.html) tutorial. It introduces the dataset we will be using to train our model. It's called MNIST, and it has 70,000 images of digits that we can use to train and test our model. Each of these images is 28x28 pixels. Each pixel is a byte whose value ranges from 0 (white) to 255 (black). The tutorial introduces the mechanics of dealing with the model, then helps you build and train a simple model that ends up having 92% accuracy of digit detection.
