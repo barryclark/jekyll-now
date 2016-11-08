@@ -4,7 +4,7 @@ layout: post
 tags:
   - core-skills
 title: My Individual Strengths and Weaknesses
-excerpt_seperator: <!--more-->
+excerpt_separator: <!--more-->
 ---
 
 ## Communication Skills 
