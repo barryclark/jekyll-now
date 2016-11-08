@@ -48,7 +48,7 @@ Un grazie sentito a :
 .....
 (i ringraziamenti sono in progress ogni giorno....Non avertene a male se non compari ancora, grazie lo stesso!)
 
-## Credit per la pagina Mappa
+### Credit per la Mappa
 
 - [Maptune](https://github.com/gjrichter/maptune)
 - [Mapstraction](http://mapstraction.com)
