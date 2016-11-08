@@ -22,7 +22,7 @@ title: >-
 
 
 
-In November 2015, Google [announced](https://googleblog.blogspot.com/2015/11/tensorflow-smarter-machine-learning-for.html) and open sourced [TensorFlow](https://www.tensorflow.org/), its latest and greatest machine learning library. This is a big deal for three reasons:
+<span style="color:red;">In</span> November 2015, Google [announced](https://googleblog.blogspot.com/2015/11/tensorflow-smarter-machine-learning-for.html) and open sourced [TensorFlow](https://www.tensorflow.org/), its latest and greatest machine learning library. This is a big deal for three reasons:
 
 1. Machine Learning expertise: Google is a dominant force in machine learning. Its prominence in search owes a lot to the strides it achieved in machine learning. 
 2. Scalability: the announcement noted that TensorFlow was initially designed for internal use and that it's already in production for some live product features.
