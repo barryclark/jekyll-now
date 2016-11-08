@@ -58,6 +58,10 @@
 				szZoomTo += "<a href='javascript:maptune.jsapi.forceMap();'><span class='glyphicon glyphicon-map-marker' aria-hidden='true' style='font-size:2em'></span></a>";
 				szZoomTo += "</div>";
 			szInfo += szZoomTo;
+		}else{
+			if ( !szInfo.match(/descrizione/) ){
+				szInfo += info.properties.data.descrizione;
+			}
 		}
 		return szInfo;
 	};
