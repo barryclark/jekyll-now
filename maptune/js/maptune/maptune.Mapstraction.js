@@ -166,6 +166,7 @@ function _map_loadMap(target,szMapService) {
 			  });
 
 			/** MapQuest */
+			 /**
 			  mapstraction.addTileLayer("http://{s}.mqcdn.com/tiles/1.0.0/osm/{z}/{x}/{y}.png", {
 				 name: "MapQuest - Open",
 				 myname: "MapQuest - Open",
@@ -173,6 +174,7 @@ function _map_loadMap(target,szMapService) {
 				 subdomains: ['otile1','otile2','otile3','otile4'],
 				 maxZoom: 19
 			  });
+			**/
 
 			/** ArcGis */
 			 /**
@@ -241,6 +243,7 @@ function _map_loadMap(target,szMapService) {
 
 
 			/** GeoIQ */
+			/**
 			  mapstraction.addTileLayer("http://{s}.acetate.geoiq.com/tiles/acetate/{z}/{x}/{y}.png", {
 				 name: "Stamen - GeoIQ - acetate",
 				 myname: "GeoIQ - acetate",
@@ -249,6 +252,7 @@ function _map_loadMap(target,szMapService) {
 				 subdomains: ['a','b','c','d'],
 				 maxZoom: 20
 			  });
+			**/
 
 			/** Stamen */
 
@@ -270,13 +274,14 @@ function _map_loadMap(target,szMapService) {
 			  });
 
 			/** MapBox */
-
+			/**
 			  mapstraction.addTileLayer("http://{s}.tiles.mapbox.com/v3/examples.bc17bb2a/{z}/{x}/{y}.png", {
 				 name: "MapBox - OSM",
 				 myname: "MapBox - OSM",
 				 attribution: "Map data &copy; 2013 OpenStreetMap contributors, Imagery &copy; 2013 OpenStreetMap",
 				 subdomains: ['a','b','c','d']
 			  });
+			**/
 
 			/** CartoDB */
 			  mapstraction.addTileLayer("http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png", {
@@ -301,7 +306,7 @@ function _map_loadMap(target,szMapService) {
 			  });
 
 			/** Spaghetti Opne Data */
-
+			/**
 			  mapstraction.addTileLayer("http://public.maptune.com/stage/maps/tiles/FB_SOD/{z}/{x}/{y}.png", {
 				 name: "SOD",
 				 myname: "SOD",
@@ -309,6 +314,7 @@ function _map_loadMap(target,szMapService) {
 				 subdomains: ['khm0','khm1','khm2','khm3'],
 				 maxZoom: 7
 			  });
+			**/
 				mapstraction.addControls({
 					pan: false, 
 					zoom: {position:'bottomleft'},
