@@ -48,7 +48,14 @@ Un grazie sentito a :
 .....
 (i ringraziamenti sono in progress ogni giorno....Non avertene a male se non compari ancora, grazie lo stesso!)
 
+## Credit per la pagina Mappa
 
+- [Maptune](https://github.com/gjrichter/maptune)
+- [Mapstraction](http://mapstraction.com)
+- [Leaflet](http://leafletjs.com)
+- [Mapicons](http://mapicons.nicolasmollet.com)
+- [Bootstrap](http://getbootstrap.com/)
+- [Glyphicons](http://glyphicons.com)
 
 ### Contatti
 - [Mail](mailto:terremotocentroita@gmail.com): per segnalare informazioni utili;
