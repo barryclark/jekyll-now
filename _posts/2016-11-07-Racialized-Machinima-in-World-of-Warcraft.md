@@ -1,3 +1,10 @@
+---
+layout: post
+title: Racialized Machinima in World of Warcraft
+author: dslezak
+published: true
+---
+
 The research question, argument, and data will be discussed about “Don’t Hate the Player, Hate the Game: The Racialization of Labor in World of Warcraft” by Lisa Nakamura.
 
 When playing an MMO most people would not expect to deal with real world problems such as racism. But communities find ways to racialize certain behavior, specifically they find ways to add negative racial connotation to behavior that is negatively viewed by the community.
