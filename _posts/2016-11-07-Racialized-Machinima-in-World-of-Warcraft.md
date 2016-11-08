@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Racialied Machinima in World of Warcraft
+title: Racialized Machinima in World of Warcraft
 author: dslezak
 published: true
 ---
