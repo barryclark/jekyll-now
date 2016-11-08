@@ -6,6 +6,26 @@ In my [previous post](http://jalammar.github.io/Supercharging-android-apps-using
 
 In this post, we will go a step further. We will see the entire journey from creating another vision machine-learning model until deploying it on Android. We will be building on the official TensorFlow tutorials as well as modifying the example app to serve our purpose. In the end, we will have an app that detects digits.
 
+## Prediction Primer
+Let us discuss a couple of the basic concepts of prediction before we proceed. You can skip this section if you have a good understanding of machine learning.
+
+Let's start with a simple example. Say you're helping a friend who wants to buy a house. She was quoted $400,000 for a 2000 sq ft house (185 meters). Is this a good price or not?
+
+It's not easy to tell without a frame of reference. So you ask your friends who have bought houses in that same neighborhoods, and you end up with three data points:
+
+ Area (sq ft) | Price 
+ ---: | :--- 
+ 2,104 | 399,900 
+ 1,600 | 329,900 
+ 2,400 | 369,000 
+
+Personally, my first instinct would be to get the average price per sq ft. That comes to $183 per sq ft. Multiply that by the area of the house, and you get $366,000.
+
+Let us visualize this process:
+
+
+This is a form of prediction. This is a simple predictive model that takes an input, does a calculation, and gives an output
+
 ## Groundwork
 The first required reading for this tutorial is the official [MNIST For ML Beginners](https://www.tensorflow.org/versions/r0.11/tutorials/mnist/beginners/index.html) tutorial. It introduces the dataset we will be using to train our model. It's called MNIST, and it has 70,000 images of digits that we can use to train and test our model. Each of these images is 28x28 pixels. Each pixel is a byte whose value ranges from 0 (white) to 255 (black). The tutorial introduces the mechanics of dealing with the model, then helps you build and train a simple model that ends up having 92% accuracy of digit detection.
 
