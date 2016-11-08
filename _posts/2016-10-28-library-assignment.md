@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 tags:
   - core-skills
@@ -19,4 +19,3 @@ The results change depending on certain variables.
 ![Advanced Search]({{site.baseurl}}/images/library_assign_cgt03.jpg)
 <li>Advanched Search: Any contains Computer Gaming AND Any contains Technology = <b>76,761</b> (Expand My Results to include items not available in full text / not at ARU)</li>
 ![Advanced Search Expanded]({{site.baseurl}}/images/library_assign_cgt04.jpg)
-
