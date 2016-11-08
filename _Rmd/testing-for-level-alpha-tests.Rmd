@@ -5,19 +5,192 @@ date: October 11, 2016
 tags: [simulation]
 ---
 
-Some of my current work involves examining the rejection rates of different types of hypothesis testing procedures that are based on heteroskedasticity-robust or cluster-robust variance estimators. In some cases, we are examining the rejection rates of a fairly large number of alternative tests under a fairly large number of data-generating mechanisms. 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(message = FALSE, warning = FALSE, cache = TRUE)
+```
 
-One of the questions of interest is which of these tests are level-$\alpha$, meaning that they have true rejection rates that are _always_ less than or equal to the nominal Type-I error rate. I'd like to find a formal hypothesis test that can be used to address this question. Here's the statistical setup.
+Some of my current work examines the performance of different types of hypothesis testing procedures that are based on heteroskedasticity-robust or cluster-robust variance estimators. In this work, we use simulation methods to assess the rejection rates of various testing procedures under a fairly large number of different data-generating mechanisms. One question involved here is whether a given testing procedure is level-$\alpha$, meaning that its rejection rate is _always_ less than or equal to the nominal type-I error rate $\alpha$ when the null hypothesis holds. Thus far, we have mostly used graphical diagnostics to check on this (e.g., box-plots of rejection rates across different data-generating mechanisms), but I've been wondering whether there would be a better, more formal way to assess this question. 
+
+### A test for a single testing procedure
 
 Consider first the performance of a single hypothesis testing procedure, across a range of different data-generating models/conditions (where model includes specific values of the relevant parameters, such as the degree of heteroskedasticity). Suppose that there are $M$ models in all, and that the true rejection rates of the test under these models are $\pi_1,...,\pi_M$. For each model, we observe an independent, binomial random sample based on $N$ trials:
 
 $$n_m \sim \text{Bin}\left(\pi_m, N\right)$$
 
-for $m = 1,...,M$. Typical values of $N$ range from 2000 and 10000.
+for $m = 1,...,M$. Typical values of $N$ are 2000 or larger (in some work, we've gone up to 20,000 replications per condition). Let $p_m = n_m / N$.
 
-The goal is to test the hypothesis $H_0: \pi_m \leq \alpha$ for each $m = 1,...,M$ against the alternative that $H_A: \pi_m > \alpha$ for at least one model $m$. 
-
-The likelihood ratio test statistic for this hypothesis set is as follows. Let $p_m = n_m / N$. Then 
+The goal is to test the hypothesis $H_0: \pi_m \leq \alpha$ for each $m = 1,...,M$ against the alternative that $H_A: \pi_m > \alpha$ for at least one model $m$. The likelihood ratio test statistic for this hypothesis set is: 
 
 $$D = -2 \log \Lambda = 2 N \sum_{m = 1}^M I\left(p_m > \alpha\right)\left[ p_m \log\left(\frac{p_m}{\alpha}\right) + (1 - p_m) \log\left(\frac{1 - p_m}{1 - \alpha}\right)\right].$$
-The question is then how to approximate the distribution of $D$ under $H_0$. El Barmi and Johnson (2006) present a solution to a more general case.
+The question is then how to approximate the distribution of $D$ under $H_0$. El Barmi and Johnson (2006) present a solution to a much more general hypothesis testing problem where the null can be expressed in terms of inequalities in linear combinations of the parameters in a set of independent multinomial distributions. The present case is particularly simple because a) it involves binomial rather than multinomial distributions and b) each constraint pertains to a different, independent distribution. With these simplifications, El Barmi and Johnson's results imply that $D$ follows a weighted sum of $\chi^2$ distributions with degrees of freedom ranging from 0 to $M$, where the weights correspond to the values of the binomial probability mass function with size $M$ and probability 1/2. More precisely,
+
+$$
+\text{Pr}(D > d) \approx \frac{1}{2^M}\sum_{m = 0}^M {{M}\choose{m}} \text{Pr}\left(\chi^2_m > d\right).
+$$
+
+This expression can be used to directly compute a p-value for an observed value $d$ of the LRT statistic. It is a large-sample approximation, valid as $N \to \infty$, and so it is of course prudent to check how well it holds for the sort of sample sizes we're dealing with. 
+
+### Some quick simulations
+
+Here is a function that calculates LRT test statistics: 
+
+```{r}
+
+binom_LRT <- function(p, N, alpha) {
+  p_ <- p[p > alpha]
+  2 * N * sum(p_ * (log(p_) - log(alpha)) + (1 - p_) * (log(1 - p_) - log(1 - alpha)))
+}
+
+
+(p <- rbinom(5, size = 5000, prob = 0.05) / 5000)
+      
+(D <- binom_LRT(p = p, N = 2000, alpha = 0.05))
+```
+
+Here is function to compute the LRT statistic and corresponding p-value using the asymptotic approximation given above:
+```{r}
+
+p_LRT <- function(p, N, alpha, M = length(p)) {
+  D <- binom_LRT(p = p, N = N, alpha = alpha)
+  a_vals <- dbinom(0:M, size = M, prob = 1/2L)
+  chisq <- pchisq(D, df = 0:M, lower.tail = FALSE)
+  p_val <- sum(a_vals * chisq)
+  c(D = D, p = p_val)
+}
+
+p_LRT(p = p, N = 5000, alpha = 0.05)
+
+```
+
+Here's some code to generate a bunch of LRT statistics and p-values:
+```{r}
+
+r_DP <- function(alpha, N, M, scale_down, reps = 100) {
+  pis <- alpha * c(rep(0.8, M * scale_down), rep(1, M * (1 - scale_down)))
+  DP <- replicate(reps, {
+      p <- rbinom(M, size = N, prob = pis) / N
+      p_LRT(p = p, N = N, alpha = alpha, M = M)
+  })
+  data.frame(D = DP[1,], p = DP[2,])
+}
+```
+
+The function sets `M * (1 - scale_down)` of the true rejection rates to $\alpha$ and the remaining `M * scale_down` of the true rejection rates to $0.8 \alpha$. If `scale_down = 0`, all of the true rejection rates will be exactly nominal, while `scale_down > 0` will lead to some of the rejection rates being less than nominal. The output of the function is a nice, uniform distribution of p-values:
+```{r}
+res <- r_DP(alpha = 0.05, N = 2000, M = 20, scale_down = 0, reps = 1000)
+hist(res$p)
+```
+
+Here's some quick simulation results that vary the number of models involved ($M$), the $\alpha$-level, and the proportion of rejection rates that are below nominal. I assume that there are $N = 5000$ trials for each model, and I use 2000 replications for each condition.
+
+```{r, fig.width = 10, fig.height = 8}
+
+library(ggplot2)
+
+params <- expand.grid(alpha = c(0.005, 0.01, 0.05),
+                      M = c(5, 10, 20, 50),
+                      N = 5000,
+                      scale_down = c(0, 0.2, 0.4),
+                      reps = 2000)
+
+p_vals <- plyr::mdply(params, r_DP)
+
+ggplot(p_vals, aes(sample = p, color = factor(scale_down))) + 
+  geom_qq(geom = "line", distribution = stats::qunif) + 
+  geom_abline(slope = 1, color = "grey", linetype = "dashed") + 
+  facet_grid(alpha ~ M, labeller = "label_both") + 
+  theme_minimal() + theme(legend.position = "bottom") + 
+  labs(color = "Proportion of rejection rates at 80% nominal alpha")
+
+```
+
+Look first at the red lines, which correspond to conditions where all of the rejection rates are exactly equal to the nominal $\alpha$. The test does very well (producing uniform $p$-values) for $\alpha = .05$, as well as for $\alpha = .01$ when $M$ is on the smaller side. The test has slightly sub-nominal rejection rates for $\alpha = .005$. Of course, there's an easy fix for this: just simulate the distribution of the LRT statistics under the null (as I've already done!), and use the resulting reference distribution for computing $p$-values. This will ensure that the test has exactly nominal Type-I error when the true rejection rates are all exactly nominal. 
+
+Now consider the blue and green lines, which correspond to conditions where some of the true rejection rates are _below_ nominal---e.g., the test has true rejection rates of 4% instead of 5% for 20% (green) or 40% (blue) of the models under consideration. Under these conditions (which are the one's I'm mainly concerned with for the applications I have in mind), the asymptotic critical values lead to a test with below-nominal Type-I error. In other words, the test rejects less often than it should. That's less than ideal for my application because it suggests that a procedure with  some true rejection rates below $\alpha$ could be flagged less often than a procedure with most rejection rates very close to alpha, even if both of the procedures have excess Type-I error under some models. What's more, simulating the distribution of the LRT statistic using $\pi_1 = \pi_2 = \cdots = \pi_M = \alpha$ doesn't solve this problem either---the test will still tend to under-reject. 
+
+### Parametric bootstrap
+
+The idea of simulating the distribution of the LRT statistic for $\pi_1 = \pi_2 = \cdots = \pi_M = \alpha$ is very similar to a parametric bootstrap test. For this problem, a parametric bootstrap test would work as follows:
+
+1. Given the observed values $p_1,...,p_M$, calculate the LRT statistic $d$. 
+2. Simulate $R$ LRT statistics $d^*_1,...,d^*_R$ using $\pi_i = \text{min}\{p_i, \alpha\}$ for $i = 1,...,M$. 
+3. Calculate a p-value by taking the proportion of simulated LRT statistics that are as large or larger than the observed, i.e., $\displaystyle{p = \frac{1}{R} \sum_{r=1}^R I(d^*_r \geq d)}$. 
+
+Let's see if this approach works. Here is function to compute the LRT statistic and corresponding p-value by simulating the distribution of the LRT statistic under the null:
+```{r}
+
+p_LRT_sim <- function(p, N, alpha, M = length(p), reps = 2000, plot = FALSE) {
+  D <- binom_LRT(p = p, N = N, alpha = alpha)
+  p_null <- pmin(p, alpha)
+  D_sim <- replicate(reps, {
+    p_sim <- rbinom(M, size = N, prob = p_null) / N
+    binom_LRT(p = p_sim, N = N, alpha = alpha)
+  })
+
+  if (plot) {
+    hist(D_sim)
+    abline(v = D, col = "red")
+  }
+  c(D = D, p_val = mean(D <= D_sim))
+}
+
+p_LRT_sim(p = p, N = 5000, alpha = 0.05, plot = TRUE)
+```
+
+Here's an updated function for generating a bunch of LRT statistics and p-values:
+
+```{r}
+
+r_DP_sim <- function(alpha, N, M, scale_down, reps = 100, p_reps = 2000) {
+  pis <- alpha * c(rep(0.8, M * scale_down), rep(1, M * (1 - scale_down)))
+  DP <- replicate(reps, {
+      p <- rbinom(M, size = N, prob = pis) / N
+      p_LRT_sim(p = p, N = N, alpha = alpha, M = M, reps = p_reps)
+  })
+  data.frame(D = DP[1,], p = DP[2,])
+}
+
+res <- r_DP_sim(alpha = 0.05, N = 5000, M = 5, scale_down = 0, reps = 1000)
+hist(res$p)
+
+```
+
+Hrrmmm....that's odd...the p-value distribution does not look uniform. To check whether this holds more generally, I'll repeat the same simulation as above (after turning on parallelization).
+
+```{r, fig.width = 10, fig.height = 8}
+source_obj <- ls()
+library(Pusto)
+cluster <- start_parallel(source_obj = source_obj)
+
+params$p_reps <- 1000
+
+p_vals_sim <- plyr::mdply(params, r_DP_sim, .parallel = TRUE)
+
+stopCluster(cluster)
+
+ggplot(p_vals_sim, aes(sample = p, color = factor(scale_down))) + 
+  geom_qq(geom = "line", distribution = stats::qunif) + 
+  geom_abline(slope = 1, color = "grey", linetype = "dashed") + 
+  facet_grid(alpha ~ M, labeller = "label_both") + 
+  theme_minimal() + theme(legend.position = "bottom") + 
+  labs(color = "Proportion of rejection rates at 80% nominal alpha")
+
+```
+
+Indeed, the issue does seem to apply generally. The parametric bootstrap test appears to have excess Type-I error, even when all true rejection rates are exactly equal to nominal (i.e., $\pi_1 = \cdots = \pi_M = \alpha$). Very odd! Performance also worsens for larger $M$. Here's a different view, focusing on rejection rates for nominally 5% tests:
+
+```{r, fig.width = 10, fig.height = 5}
+
+library(tidyr)
+library(dplyr, warn.conflicts = FALSE)
+
+p_vals_sim %>%
+  group_by(alpha, M, scale_down) %>%
+  summarise(rejection_rate = mean(p < .05)) %>%
+  ggplot(aes(M, rejection_rate, color = factor(scale_down))) + 
+  geom_line() + geom_point() +
+  facet_wrap(~ alpha, labeller = "label_both") + 
+  theme_minimal() + theme(legend.position = "bottom") + 
+  labs(color = "Proportion of rejection rates at 80% nominal alpha")
+```
+
