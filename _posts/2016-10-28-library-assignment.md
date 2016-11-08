@@ -5,7 +5,7 @@ tags:
   - core-skills
 title: 'Assignment: Library Exercise'
 ---
-The library computer catalogue can be accessed by terminals located within the library or via the library website http://libweb.anglia.ac.uk.
+The library computer catalogue can be accessed by terminals located within the library or via the library website [http://libweb.anglia.ac.uk](http://libweb.anglia.ac.uk).
 
 ## 1) Type ‘Computer Gaming Technology’ in the search function.
 
