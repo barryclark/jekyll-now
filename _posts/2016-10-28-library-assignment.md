@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 tags:
   - core-skills
@@ -11,10 +11,11 @@ The library computer catalogue can be accessed by terminals located within the l
 
 ### How many records are listed in total? 
 The results change depending on certain variables.
+![Simple Search]({{site.baseurl}}/images/library_assign_cgt01.jpg)
 <li>Simple Search: Computer Gaming Technology = <b>45,461</b></li>
-
-<li>Simple Search: Computer Gaming Technology = <b>57,581</b> (Expand My Results to include items not available in full text / not at ARU)</li>
-
-<li>Advanched Search: Any contains Computer Gaming AND Any contains Technology = <b>57,482</b></li>
-
+![Simple Search Expanded]({{site.baseurl}}/images/library_assign_cgt02.jpg)
+<li>Simple Search: Computer Gaming Technology = <b>57,482</b> (Expand My Results to include items not available in full text / not at ARU)</li>
+![Advanced Search]({{site.baseurl}}/images/library_assign_cgt03.jpg)
+<li>Advanched Search: Any contains Computer Gaming AND Any contains Technology = <b>57,581</b></li>
+![Advanced Search Expanded]({{site.baseurl}}/images/library_assign_cgt04.jpg)
 <li>Advanched Search: Any contains Computer Gaming AND Any contains Technology = <b>76,761</b> (Expand My Results to include items not available in full text / not at ARU)</li>
