@@ -4,6 +4,9 @@ title: training-and-deploying-your-first-tensorflow-vision-model-with-android
 ---
 _fdsafd_
 
+{% if 1==1 %}
+  Hello {{ user.name }}!
+{% endif %}
 
 In my [previous post](http://jalammar.github.io/Supercharging-android-apps-using-tensorflow/), we looked at how TensorFLow's [example Android app](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/examples/android) works. We saw how it loaded an object-detection machine-learning model, and used it to make predictions about what it sees from the camera.
 
