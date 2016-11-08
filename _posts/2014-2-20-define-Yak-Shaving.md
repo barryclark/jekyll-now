@@ -1,6 +1,6 @@
 ---
 layout: post
-title: #define Yak Shaving
+title: &#35;define Yak Shaving
 ---
 
 From [Wiktionary](http://en.wiktionary.org/wiki/yak_shaving):
