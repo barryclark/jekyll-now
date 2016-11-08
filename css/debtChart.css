@@ -1,6 +1,11 @@
 input[type=number] {
-  width: 5em;
-  text-align: right;
+	width: 5em;
+	text-align: right;
+	max-width: 80%;
+}
+
+input[type=text] {
+	max-width: 80%;
 }
 
 .snowball-chart {
@@ -27,4 +32,8 @@ span.input-percent {
 
 input.input-percent {
 	padding-right: 15px;
+}
+
+table td {
+	text-align: center;	
 }
