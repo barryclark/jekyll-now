@@ -1,7 +1,9 @@
 ---
 layout: post
 published: true
-title: "Supercharging Android Apps With TensorFlow (Google's Open Source Machine Learning Library)"
+title: >-
+  Supercharging Android Apps With TensorFlow (Google's Open Source Machine
+  Learning Library)
 ---
 
 
@@ -22,7 +24,7 @@ title: "Supercharging Android Apps With TensorFlow (Google's Open Source Machine
 
 In November 2015, Google [announced](https://googleblog.blogspot.com/2015/11/tensorflow-smarter-machine-learning-for.html) and open sourced [TensorFlow](https://www.tensorflow.org/), its latest and greatest machine learning library. This is a big deal for three reasons:
 
-1. Machine Learning expertise: Google is a dominant force in machine learning. Its prominence in search owes a lot to the strides it achieved in machine learning. 
+1. Machine Learning _expertise_: Google is a dominant force in machine learning. Its prominence in search owes a lot to the strides it achieved in machine learning. 
 2. Scalability: the announcement noted that TensorFlow was initially designed for internal use and that it's already in production for some live product features.
 3. Ability to run on Mobile.
 
