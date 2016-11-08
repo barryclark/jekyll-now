@@ -42,7 +42,7 @@ binom_LRT <- function(p, N, alpha) {
 }
 
 
-(p <- rbinom(5, size = 2000, prob = 0.05) / 2000)
+(p <- rbinom(5, size = 5000, prob = 0.05) / 5000)
       
 (D <- binom_LRT(p = p, N = 2000, alpha = 0.05))
 ```
@@ -58,7 +58,7 @@ p_LRT <- function(p, N, alpha, M = length(p)) {
   c(D = D, p = p_val)
 }
 
-p_LRT(p = p, N = 2000, alpha = 0.05)
+p_LRT(p = p, N = 5000, alpha = 0.05)
 
 ```
 
@@ -114,7 +114,7 @@ The idea of simulating the distribution of the LRT statistic for $\pi_1 = \pi_2 
 
 1. Given the observed values $p_1,...,p_M$, calculate the LRT statistic $d$. 
 2. Simulate $R$ LRT statistics $d^*_1,...,d^*_R$ using $\pi_i = \text{min}\{p_i, \alpha\}$ for $i = 1,...,M$. 
-3. Calculate a p-value by taking the proportion of simulated LRT statistics that are larger than the observed, i.e., $\displaystyle{p = \frac{1}{R} \sum_{r=1}^R I(d^*_r > d)}$. 
+3. Calculate a p-value by taking the proportion of simulated LRT statistics that are as large or larger than the observed, i.e., $\displaystyle{p = \frac{1}{R} \sum_{r=1}^R I(d^*_r \geq d)}$. 
 
 Let's see if this approach works. Here is function to compute the LRT statistic and corresponding p-value by simulating the distribution of the LRT statistic under the null:
 ```{r}
@@ -131,10 +131,10 @@ p_LRT_sim <- function(p, N, alpha, M = length(p), reps = 2000, plot = FALSE) {
     hist(D_sim)
     abline(v = D, col = "red")
   }
-  c(D = D, p_val = mean(D < D_sim))
+  c(D = D, p_val = mean(D <= D_sim))
 }
 
-p_LRT_sim(p = p, N = 2000, alpha = 0.05, plot = TRUE)
+p_LRT_sim(p = p, N = 5000, alpha = 0.05, plot = TRUE)
 ```
 
 Here's an updated function for generating a bunch of LRT statistics and p-values:
@@ -150,7 +150,7 @@ r_DP_sim <- function(alpha, N, M, scale_down, reps = 100, p_reps = 2000) {
   data.frame(D = DP[1,], p = DP[2,])
 }
 
-res <- r_DP_sim(alpha = 0.05, N = 2000, M = 5, scale_down = 0, reps = 1000)
+res <- r_DP_sim(alpha = 0.05, N = 5000, M = 5, scale_down = 0, reps = 1000)
 hist(res$p)
 
 ```
