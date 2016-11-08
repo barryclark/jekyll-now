@@ -2,8 +2,7 @@
 published: false
 title: training-and-deploying-your-first-tensorflow-vision-model-with-android
 ---
-#### fdsfdsaf
-
+_fdsafd_
 
 
 In my [previous post](http://jalammar.github.io/Supercharging-android-apps-using-tensorflow/), we looked at how TensorFLow's [example Android app](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/examples/android) works. We saw how it loaded an object-detection machine-learning model, and used it to make predictions about what it sees from the camera.
@@ -44,12 +43,12 @@ Test text
 That's quite a bit of yellow line. Yellow line is bad. Yellow line is error. We want to shrink that as much as we can.
 
  Area (sq ft) (x) | Price (y) | Prediction (y_) | y - y_ | (y - y_)²
- ---: | :--- 
- 2,104 | 399,900 |  |
- 1,600 | 329,900 
- 2,400 | 369,000 
+ --- |  --- | --- | --- | --- 
+ 2,104 | 399,900 | 385,000  | 10,000 | 100,000,000
+ 1,600 | 329,900 | 385,000  | 10,000 | 100,000,000
+ 2,400 | 369,000 | 385,000  | 10,000 | 100,000,000
 
-![](http://dump.thecybershadow.net/6c736bfd11ded8cdc5e2bda009a6694a/colortext.svg)
+
 ## Groundwork
 The first required reading for this tutorial is the official [MNIST For ML Beginners](https://www.tensorflow.org/versions/r0.11/tutorials/mnist/beginners/index.html) tutorial. It introduces the dataset we will be using to train our model. It's called MNIST, and it has 70,000 images of digits that we can use to train and test our model. Each of these images is 28x28 pixels. Each pixel is a byte whose value ranges from 0 (white) to 255 (black). The tutorial introduces the mechanics of dealing with the model, then helps you build and train a simple model that ends up having 92% accuracy of digit detection.
 
