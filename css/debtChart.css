@@ -1,6 +1,6 @@
 input[type=number] {
   width: 5em;
-  text-align: center;
+  text-align: right;
 }
 
 .snowball-chart {
@@ -10,12 +10,12 @@ input[type=number] {
 
 span.input-dollar {
 	position: relative;
-	left: 20px;
-	font-family: Arial;
+	left: 10px;
 	font-weight: normal;
 	font-size: small;
 }
 
 input.input-dollar {
-	padding-left: 24px;
+	width: 6em;
+	padding-left: 10px;
 }
