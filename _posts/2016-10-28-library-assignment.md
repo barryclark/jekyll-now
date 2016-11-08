@@ -21,3 +21,13 @@ The results change depending on certain variables.
 <li><b>Advanched Search</b>: Computer Gaming AND Any contains Technology = <b>76,761</b> (Expand My Results to include items not available in full text / not at ARU)
 <a href="{{site.baseurl}}/images/library_assign_cgt04.jpg" target="_blank"><img src="{{site.baseurl}}/images/library_assign_cgt04.jpg" alt="Advanced Search Expanded"/></a></li>
 </ul>
+
+### b) What is the class number, (and location) of the most useful books listed?
+<ul>
+<li>Cambridge Main Collection 794.81526</li>
+<li>Chelmsford Main Collection 794.816693</li>
+</ul>
+
+
+
+
