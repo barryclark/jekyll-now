@@ -5772,6 +5772,17 @@ link: http://protezionecivile.regione.marche.it/
 data: 15/09/2016
 </yamldata></pre>
 ",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/384,177135294,2016-09-15 09:58:10,2016-09-15 09:55:47,Protezione Civile Marche,43.60982,13.50866,"[""Accettato"", ""Contatti"", ""Form""]",,,"{""data"": ""15/09/2016"", ""descrizione"": """", ""email"": """", ""indirizzo"": ""Via Gentile da Fabriano \u2013 60125 ANCONA (AN)"", ""lat"": 43.60982, ""link"": ""http://protezionecivile.regione.marche.it/"", ""lon"": 13.50866, ""nome"": ""Protezione Civile Marche"", ""tel"": ""840 001111""}","<pre><yamldata>nome: 'Protezione Civile Marche'
+tel: '840 001111'
+email: ''
+descrizione: ''
+indirizzo: 'Via Gentile da Fabriano – 60125 ANCONA (AN)'
+lat: 43.60982
+lon: 13.50866 
+link: http://protezionecivile.regione.marche.it/
+data: 15/09/2016
+</yamldata></pre>
+",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/383,177135207,2016-09-15 10:02:47,2016-09-15 09:55:19,Protezione Civile Lazio,,,"[""Accettato"", ""Contatti"", ""Form""]",,,"{""data"": ""15/09/2016"", ""descrizione"": """", ""email"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""http://www.regione.lazio.it/rl_protezione_civile/"", ""lon"": """", ""nome"": ""Protezione Civile Lazio"", ""tel"": ""803555""}","<pre><yamldata>nome: 'Protezione Civile Lazio'
 tel: '803555'
 email: ''
