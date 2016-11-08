@@ -21,6 +21,17 @@ link: 'https://www.facebook.com/groups/1758670357733881/permalink/17968724405803
 immagine: ''
 data: 08/11/2016
 </yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1177,188118645,2016-11-08 22:50:54,2016-11-08 22:15:12,A #Tolentino c'è bisogno di telo per coprire tetto,,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""Telo per coprire tetto"", ""data"": ""08/11/2016"", ""descrizione"": ""Si cerca a tolentino un telone per coprire un tetto di circa 60mq"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3298057011""}","<pre><yamldata>tel: '3298057011'
+email: ''
+cosa: 'Telo per coprire tetto'
+descrizione: 'Si cerca a tolentino un telone per coprire un tetto di circa 60mq'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 08/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1176,188100971,2016-11-08 21:51:22,2016-11-08 20:55:47,Cercasi urgentemente lavatrice a #Scai (#Amatrice),42.5980591,13.2305149,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Pubblicare su FB""]",,,"{""cosa"": ""Lavatrice a #Scai"", ""data"": ""08/11/2016"", ""descrizione"": ""Serve urgentemente una lavatrice a Scai (Amatrice). Contattare Carlo."", ""email"": """", ""immagine"": """", ""indirizzo"": ""SP19, Amatrice, RI, Lazio, Italia"", ""lat"": ""42.5980591"", ""link"": """", ""lon"": ""13.2305149"", ""tel"": ""3338275919""}","<pre><yamldata>tel: '3338275919'
 email: ''
 cosa: 'Lavatrice a #Scai'
@@ -5758,17 +5769,6 @@ indirizzo: 'Piazza Cesare Battisti,10 - 02100 Rieti'
 lat: 42.40205
 lon: 12.85996
 link: 'http://www.prefettura.it/rieti/multidip/index.htm'
-data: 15/09/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/384,177135294,2016-09-15 09:58:10,2016-09-15 09:55:47,Protezione Civile Marche,43.60982,13.50866,"[""Accettato"", ""Contatti"", ""Form""]",,,"{""data"": ""15/09/2016"", ""descrizione"": """", ""email"": """", ""indirizzo"": ""Via Gentile da Fabriano \u2013 60125 ANCONA (AN)"", ""lat"": 43.60982, ""link"": ""http://protezionecivile.regione.marche.it/"", ""lon"": 13.50866, ""nome"": ""Protezione Civile Marche"", ""tel"": ""840 001111""}","<pre><yamldata>nome: 'Protezione Civile Marche'
-tel: '840 001111'
-email: ''
-descrizione: ''
-indirizzo: 'Via Gentile da Fabriano – 60125 ANCONA (AN)'
-lat: 43.60982
-lon: 13.50866 
-link: http://protezionecivile.regione.marche.it/
 data: 15/09/2016
 </yamldata></pre>
 ",open
