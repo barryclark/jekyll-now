@@ -10,6 +10,16 @@ link: ''
 immagine: ''
 data: 08/11/2016
 </yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1175,188079416,2016-11-08 21:52:17,2016-11-08 19:19:05,Offro gratuitamente alloggio per 4-5 persone a Monfalcone (Go),,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""08/11/2016"", ""descrizione"": ""Offro gratuitamente alloggio indipendente su due piani in centro a Monfalcone (GO) per 4-5 persone, riscaldato, arredato (compreso accessori: stoviglie, biancheria, ecc.) e con tutte le utenze attive"", ""email"": ""flavianaclaudio@tiscali.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""0481484346  -  3466317085""}","<pre><yamldata>tel: '0481484346  -  3466317085'
+email: flavianaclaudio@tiscali.it
+descrizione: 'Offro gratuitamente alloggio indipendente su due piani in centro a Monfalcone (GO) per 4-5 persone, riscaldato, arredato (compreso accessori: stoviglie, biancheria, ecc.) e con tutte le utenze attive'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 08/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1174,188037370,2016-11-08 18:52:34,2016-11-08 16:23:54,CERCASI AUTOTRASPORTATORE #USSITA,43.583333,11.316667,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Pubblicare su FB"", ""Sisma Ottobre""]",,,"{""cosa"": ""CERCASI AUTOTRASPORTATORE #USSITA"", ""data"": ""08/11/2016"", ""descrizione"": ""Serve autorasportatore per trasportare 2 roulotte da Greve in Chianti fino a Ussita. Contattare Sara."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": ""43.583333"", ""link"": """", ""lon"": ""11.316667"", ""tel"": ""+393462865450""}","<pre><yamldata>tel: '+393462865450'
 email: ''
 cosa: 'CERCASI AUTOTRASPORTATORE #USSITA'
@@ -506,17 +516,6 @@ indirizzo: ''
 lat: ''
 lon: ''
 link: 'https://www.facebook.com/mattia.mariuccini/posts/10209667785143974'
-immagine: ''
-data: 03/11/2016
-</yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1097,187201715,2016-11-03 21:58:33,2016-11-03 21:58:10,Volontariato a sostegno degli sfollati con Gus - Gruppo Umana Solidarietà,,,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""Volontariato a sostegno degli sfollati con Gus - Gruppo Umana Solidariet\u00e0"", ""data"": ""03/11/2016"", ""descrizione"": ""Il Gus dispone di una rete di ascolto in tutti i comuni terremotati. Per partecipare, in forma volontaria, alle attivit\u00e0 di sostegno della popolazione colpita, \u00e8 possibile candidarsi scrivendo una mail a: volontariatosisma2016@gusitalia.it"", ""email"": ""volontariatosisma2016@gusitalia.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""http://gusitalia.it/"", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
-email: volontariatosisma2016@gusitalia.it
-cosa: 'Volontariato a sostegno degli sfollati con Gus - Gruppo Umana Solidarietà'
-descrizione: 'Il Gus dispone di una rete di ascolto in tutti i comuni terremotati. Per partecipare, in forma volontaria, alle attività di sostegno della popolazione colpita, è possibile candidarsi scrivendo una mail a: volontariatosisma2016@gusitalia.it'
-indirizzo: ''
-lat: ''
-lon: ''
-link: 'http://gusitalia.it/'
 immagine: ''
 data: 03/11/2016
 </yamldata></pre>",open
