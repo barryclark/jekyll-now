@@ -7,3 +7,15 @@ input[type=number] {
 	width: 90%;
 	height: 300px;
 }
+
+span.input-dollar {
+	position: relative;
+	left: 20px;
+	font-family: Arial;
+	font-weight: normal;
+	font-size: small;
+}
+
+input.input-dollar {
+	padding-left: 24px;
+}
