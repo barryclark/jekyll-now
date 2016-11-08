@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1174,188037370,2016-11-08 17:14:04,2016-11-08 16:23:54,CERCASI AUTOTRASPORTATORE #USSITA,,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Pubblicare su FB"", ""Sisma Ottobre""]",,,"{""cosa"": ""CERCASI AUTOTRASPORTATORE #USSITA"", ""data"": ""08/11/2016"", ""descrizione"": ""Serve autorasportatore per trasportare 2 roulotte da Greve in Chianti fino a Ussita. Contattare Sara."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""+393462865450""}","<pre><yamldata>tel: '+393462865450'
+email: ''
+cosa: 'CERCASI AUTOTRASPORTATORE #USSITA'
+descrizione: 'Serve autorasportatore per trasportare 2 roulotte da Greve in Chianti fino a Ussita. Contattare Sara.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 08/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1173,188026485,2016-11-08 15:51:48,2016-11-08 15:45:41,Disponibilità roulotte da Padova,,,"[""Accettato"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""Disponibilit\u00e0 roulotte da Padova"", ""data"": ""08/11/2016"", ""descrizione"": ""Sono di Padova, ho una roulotte che posso donare a chi ne avesse bisogno. La roulotte \u00e8 vecchiotta ma \u00e8 di buona fattura (\u00e8 una Nardi modello Monica). E' da qualche anno che non cammina, per cui dovremmo fare un po' di revisione prima di metterla in moto, e dovrei trovare il modo di recapitarla fino a destinazione, non possedendo pi\u00f9 la macchina con il gancio. Come posso fare per metterla a disposizione a chi ne avesse bisogno? Per caso avete dei canali per trovare qualcuno che possa avvicinarla o farla arrivare alla destinazione? Contatto: leomadvr@gmail.com"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 cosa: 'Disponibilità roulotte da Padova'
