@@ -12,12 +12,12 @@ The library computer catalogue can be accessed by terminals located within the l
 ### a) How many records are listed in total? 
 The results change depending on certain variables.
 <ul>
-<li>Simple Search: Computer Gaming Technology = <b>45,461</b>
+<li><b>Simple Search</b>: Computer Gaming Technology = <b>45,461</b>
 <a href="{{site.baseurl}}/images/library_assign_cgt01.jpg" target="_blank"><img src="{{site.baseurl}}/images/library_assign_cgt01.jpg" alt="Simple Search"/></a></li>
-<li>Simple Search: Computer Gaming Technology = <b>57,482</b> (Expand My Results to include items not available in full text / not at ARU)
+<li><b>Simple Search</b>: Computer Gaming Technology = <b>57,482</b> (Expand My Results to include items not available in full text / not at ARU)
 <a href="{{site.baseurl}}/images/library_assign_cgt02.jpg" target="_blank"><img src="{{site.baseurl}}/images/library_assign_cgt02.jpg" alt="Simple Search Expanded"/></a></li>
-<li>Advanched Search: Computer Gaming AND Any contains Technology = <b>57,581</b>
+<li><b>Advanched Search</b>: Computer Gaming AND Any contains Technology = <b>57,581</b>
 <a href="{{site.baseurl}}/images/library_assign_cgt03.jpg" target="_blank"><img src="{{site.baseurl}}/images/library_assign_cgt03.jpg" alt="Advanced Search"/></a></li>
-<li>Advanched Search: Computer Gaming AND Any contains Technology = <b>76,761</b> (Expand My Results to include items not available in full text / not at ARU)
+<li><b>Advanched Search</b>: Computer Gaming AND Any contains Technology = <b>76,761</b> (Expand My Results to include items not available in full text / not at ARU)
 <a href="{{site.baseurl}}/images/library_assign_cgt04.jpg" target="_blank"><img src="{{site.baseurl}}/images/library_assign_cgt04.jpg" alt="Advanced Search Expanded"/></a></li>
 </ul>
