@@ -7,7 +7,6 @@ title: Where Does My Time Go?
 excerpt_seperator: <!--more-->
 ---
 ## Foundation Year
-
 ### Semester 1
 
 <div>
