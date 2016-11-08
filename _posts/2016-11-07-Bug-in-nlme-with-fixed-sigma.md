@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Possible bug in nlme::lme with fixed sigma"
+title: "Bug in nlme::lme with fixed sigma and REML estimation"
 date: November 7, 2016
 tags: [programming]
 permalink: Bug-in-nlme-with-fixed-sigma
@@ -14,7 +14,7 @@ In this post, I document several examples of discrepant estimates between `lme()
 2. The discrepancies are present whether or not the `varFixed` specification is used.
 3. The discrepancies are mostly small (with minimal impact on the standard errors of the fixed effect estimates), but are larger than I would expect from computational/convergence differences alone.
 
-Another example, based on a different dataset, is documented in [this bug report](https://bugs.r-project.org/bugzilla3/show_bug.cgi?id=16975). 
+Another example, based on a different dataset, is documented in [this bug report](https://bugs.r-project.org/bugzilla3/show_bug.cgi?id=16975). Wolfgang Viechtbauer, author of the `metafor` package, identified this problem with `lme` a few months ago already (see his responses in [this thread](https://stat.ethz.ch/pipermail/r-sig-mixed-models/2016q2/024862.html) on the R mixed models mailing list) and noted that the issue was localized to REML estimation. My thanks to Wolfgang for providing feedback on this post.
 
 ### Basic random effects model
 
@@ -25,7 +25,7 @@ This example fits a basic random effects model to the BCG vaccine data, availabl
 library(metafor)
 library(nlme)
 
-bcg_example <- function(method, constant_var = FALSE) {
+bcg_example <- function(method = "REML", constant_var = FALSE) {
   
   data(dat.bcg)
   dat <- escalc(measure="OR", ai=tpos, bi=tneg, ci=cpos, di=cneg, data=dat.bcg)
@@ -34,12 +34,22 @@ bcg_example <- function(method, constant_var = FALSE) {
   if (constant_var) dat$vi <- v_bar
   
   # random-effects model using rma.uni()
-  LOR_uni <- with(rma(yi, vi, data=dat, method = method), 
-                  data.frame(f = "rma.uni", est = as.numeric(b), se = se, tau = sqrt(tau2)))
+  LOR_uni_fit <- rma(yi, vi, data=dat, method = method)
+  LOR_uni <- with(LOR_uni_fit, 
+                  data.frame(f = "rma.uni", 
+                             logLik = logLik(LOR_uni_fit),
+                             est = as.numeric(b), 
+                             se = se, 
+                             tau = sqrt(tau2)))
   
   # random-effects model using rma.mv()
-  LOR_mv <- with(rma.mv(yi, vi, random = ~ 1 | trial, data=dat, method = method), 
-                 data.frame(f = "rma.mv", est = as.numeric(b), se = se, tau = sqrt(sigma2)))
+  LOR_mv_fit <- rma.mv(yi, vi, random = ~ 1 | trial, data=dat, method = method)
+  LOR_mv <- with(LOR_mv_fit, 
+                 data.frame(f = "rma.mv", 
+                            logLik = logLik(LOR_mv_fit),
+                            est = as.numeric(b), 
+                            se = se, 
+                            tau = sqrt(sigma2)))
   
   # random-effects model using lme()
   if (constant_var) {
@@ -55,6 +65,7 @@ bcg_example <- function(method, constant_var = FALSE) {
     tau <- sqrt(as.numeric(coef(LOR_lme_fit$modelStruct$reStruct, unconstrained = FALSE)))
   }
   LOR_lme <- data.frame(f = "lme", 
+                        logLik = logLik(LOR_lme_fit),
                         est = as.numeric(fixef(LOR_lme_fit)), 
                         se = as.numeric(sqrt(vcov(LOR_lme_fit))), 
                         tau = tau)
@@ -69,10 +80,10 @@ bcg_example("REML", constant_var = FALSE)
 
 
 {% highlight text %}
-##         f        est        se       tau
-## 1 rma.uni -0.7451778 0.1860279 0.5811816
-## 2  rma.mv -0.7451778 0.1860280 0.5811818
-## 3     lme -0.7471979 0.1916902 0.6030524
+##         f    logLik        est        se       tau
+## 1 rma.uni -12.57566 -0.7451778 0.1860279 0.5811816
+## 2  rma.mv -12.57566 -0.7451778 0.1860280 0.5811818
+## 3     lme -13.34043 -0.7471979 0.1916902 0.6030524
 {% endhighlight %}
 
 
@@ -84,10 +95,10 @@ bcg_example("REML", constant_var = TRUE)
 
 
 {% highlight text %}
-##         f        est        se       tau
-## 1 rma.uni -0.7716272 0.1977007 0.5911451
-## 2  rma.mv -0.7716272 0.1977007 0.5911452
-## 3     lme -0.7716272 0.1899448 0.5571060
+##         f    logLik        est        se       tau
+## 1 rma.uni -12.96495 -0.7716272 0.1977007 0.5911451
+## 2  rma.mv -12.96495 -0.7716272 0.1977007 0.5911452
+## 3     lme -15.62846 -0.7716272 0.1899448 0.5571060
 {% endhighlight %}
 
 
@@ -99,10 +110,10 @@ bcg_example("ML", constant_var = FALSE)
 
 
 {% highlight text %}
-##         f        est        se       tau
-## 1 rma.uni -0.7419668 0.1779534 0.5499605
-## 2  rma.mv -0.7419669 0.1779534 0.5499608
-## 3     lme -0.7419668 0.1779534 0.5499605
+##         f    logLik        est        se       tau
+## 1 rma.uni -13.07276 -0.7419668 0.1779534 0.5499605
+## 2  rma.mv -13.07276 -0.7419669 0.1779534 0.5499608
+## 3     lme -13.07276 -0.7419668 0.1779534 0.5499605
 {% endhighlight %}
 
 
@@ -114,10 +125,10 @@ bcg_example("ML", constant_var = TRUE)
 
 
 {% highlight text %}
-##         f        est        se       tau
-## 1 rma.uni -0.7716272 0.1899447 0.5571059
-## 2  rma.mv -0.7716272 0.1899447 0.5571059
-## 3     lme -0.7716272 0.1899447 0.5571060
+##         f     logLik        est        se       tau
+## 1 rma.uni -13.525084 -0.7716272 0.1899447 0.5571059
+## 2  rma.mv -13.525084 -0.7716272 0.1899447 0.5571059
+## 3     lme  -2.479133 -0.7716272 0.1899447 0.5571060
 {% endhighlight %}
 
 ### Bi-variate random effects model
@@ -126,7 +137,7 @@ This example fits a bi-variate random effects model, also to the BCG vaccine dat
 
 
 {% highlight r %}
-bcg_bivariate <- function(method, constant_var = FALSE) {
+bcg_bivariate <- function(method = "REML", constant_var = FALSE) {
   data(dat.bcg)
   dat_long <- to.long(measure="OR", ai=tpos, bi=tneg, ci=cpos, di=cneg, data=dat.bcg)
   levels(dat_long$group) <- c("exp", "con")
@@ -144,7 +155,7 @@ bcg_bivariate <- function(method, constant_var = FALSE) {
                        struct = "UN", method = method,
                        data=dat_long)
   bv_rma <- with(bv_rma_fit, data.frame(f = "rma.mv",
-                                        logLik = fit.stats[1,2],
+                                        logLik = logLik(bv_rma_fit),
                                         tau1 = sqrt(tau2[1]),
                                         tau2 = sqrt(tau2[2])))
   
@@ -166,7 +177,7 @@ bcg_bivariate <- function(method, constant_var = FALSE) {
   }
   
   bv_lme <- data.frame(f = "lme",
-                       logLik = bv_lme_fit$logLik,
+                       logLik = logLik(bv_lme_fit),
                        tau1 = sqrt(tau_sq[1]),
                        tau2 = sqrt(tau_sq[2]))
   
@@ -209,7 +220,7 @@ bcg_bivariate("ML", constant_var = FALSE)
 
 {% highlight text %}
 ##        f    logLik     tau1     tau2
-## 1 rma.mv -31.54211 1.551558 1.196399
+## 1 rma.mv -33.08793 1.551558 1.196399
 ## 2    lme -33.08793 1.551558 1.196399
 {% endhighlight %}
 
@@ -223,7 +234,7 @@ bcg_bivariate("ML", constant_var = TRUE)
 
 {% highlight text %}
 ##        f     logLik     tau1    tau2
-## 1 rma.mv -31.135713 1.578434 1.14226
+## 1 rma.mv -32.647023 1.578434 1.14226
 ## 2    lme  -2.237355 1.578434 1.14226
 {% endhighlight %}
 
@@ -233,7 +244,7 @@ This example fits a three-level random-effects model to the data from Konstantop
 
 
 {% highlight r %}
-Konstantopoulos <- function(method, constant_var = FALSE) {
+Konstantopoulos <- function(method = "REML", constant_var = FALSE) {
   
   dat <- get(data(dat.konstantopoulos2011))
   v_bar <- mean(dat$vi)
@@ -244,7 +255,7 @@ Konstantopoulos <- function(method, constant_var = FALSE) {
   
   ml_rma <- with(ml_rma_fit, 
                  data.frame(f = "rma.mv", 
-                            logLik = fit.stats[1,2],
+                            logLik = logLik(ml_rma_fit),
                             est = as.numeric(b), 
                             se = se, 
                             tau1 = sqrt(sigma2[1]), 
@@ -266,7 +277,7 @@ Konstantopoulos <- function(method, constant_var = FALSE) {
     
   }  
   ml_lme <- data.frame(f = "lme",
-                       logLik = ml_lme_fit$logLik,
+                       logLik = logLik(ml_lme_fit),
                        est = as.numeric(fixef(ml_lme_fit)),
                        se = as.numeric(sqrt(diag(vcov(ml_lme_fit)))),
                        tau1 = tau[2],
@@ -311,7 +322,7 @@ Konstantopoulos("ML", constant_var = FALSE)
 
 {% highlight text %}
 ##        f    logLik       est         se      tau1      tau2
-## 1 rma.mv -7.983047 0.1844554 0.08048168 0.2402881 0.1812865
+## 1 rma.mv -8.394936 0.1844554 0.08048168 0.2402881 0.1812865
 ## 2    lme -8.394936 0.1844554 0.08048168 0.2402881 0.1812865
 {% endhighlight %}
 
@@ -324,8 +335,8 @@ Konstantopoulos("ML", constant_var = TRUE)
 
 
 {% highlight text %}
-##        f   logLik       est         se      tau1      tau2
-## 1 rma.mv -9.75044 0.1712365 0.07645094 0.2250687 0.1881229
-## 2    lme 90.21692 0.1712365 0.07645093 0.2250687 0.1881228
+##        f    logLik       est         se      tau1      tau2
+## 1 rma.mv -10.11095 0.1712365 0.07645094 0.2250687 0.1881229
+## 2    lme  90.21692 0.1712365 0.07645093 0.2250687 0.1881228
 {% endhighlight %}
 
