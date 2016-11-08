@@ -10,6 +10,17 @@ link: 'https://www.facebook.com/groups/1758670357733881/permalink/17967091172633
 immagine: ''
 data: 08/11/2016
 </yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1179,188123765,2016-11-08 22:49:18,2016-11-08 22:40:14,Casa di riposo nel maceratese ha bisogno di beni e cibo a lunga scadenza,43.2383009,13.0673041,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Facebook"", ""Sisma Ottobre""]",,,"{""cosa"": ""Casa di riposo nel maceratese ha bisogno di beni e cibo a lunga scadenza"", ""data"": ""08/11/2016"", ""descrizione"": ""A Gagliole (MC) la Casa di riposo Chierichetti ha bisogno di: - pannoloni per adulti - omogeneizzati - scatolame, olio, pomodori, prodotti a lunga cadenza. Referente: Giuseppe Pup Cingolani, c/o Casa di riposo Chierichetti via Bergoni, 40 - Gagliole, 62022 Macerata."", ""email"": ""aspgagliole@libero.it-aspgagliole@gmail.com"", ""immagine"": """", ""indirizzo"": ""Scoglietti, Gagliole, MC, Marche, Italia"", ""lat"": ""43.2383009"", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1796872440580339/"", ""lon"": ""13.0673041"", ""tel"": ""0737/641183""}","<pre><yamldata>tel: 0737/641183
+email: aspgagliole@libero.it-aspgagliole@gmail.com
+cosa: 'Casa di riposo nel maceratese ha bisogno di beni e cibo a lunga scadenza'
+descrizione: 'A Gagliole (MC) la Casa di riposo Chierichetti ha bisogno di: - pannoloni per adulti - omogeneizzati - scatolame, olio, pomodori, prodotti a lunga cadenza. Referente: Giuseppe Pup Cingolani, c/o Casa di riposo Chierichetti via Bergoni, 40 - Gagliole, 62022 Macerata.'
+indirizzo: 'Scoglietti, Gagliole, MC, Marche, Italia'
+lat: '43.2383009'
+lon: '13.0673041'
+link: 'https://www.facebook.com/groups/1758670357733881/permalink/1796872440580339/'
+immagine: ''
+data: 08/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1176,188100971,2016-11-08 21:51:22,2016-11-08 20:55:47,Cercasi urgentemente lavatrice a #Scai (#Amatrice),42.5980591,13.2305149,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Pubblicare su FB""]",,,"{""cosa"": ""Lavatrice a #Scai"", ""data"": ""08/11/2016"", ""descrizione"": ""Serve urgentemente una lavatrice a Scai (Amatrice). Contattare Carlo."", ""email"": """", ""immagine"": """", ""indirizzo"": ""SP19, Amatrice, RI, Lazio, Italia"", ""lat"": ""42.5980591"", ""link"": """", ""lon"": ""13.2305149"", ""tel"": ""3338275919""}","<pre><yamldata>tel: '3338275919'
 email: ''
 cosa: 'Lavatrice a #Scai'
@@ -5025,18 +5036,6 @@ immagine: ''
 data: 16/09/2016
 </yamldata></pre>
 ",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/484,177428637,2016-09-16 13:42:42,2016-09-16 13:41:57,Ad Accumoli servono farmaci specifici,42.69294,13.25991,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Ad Accumoli servono farmaci specifici"", ""data"": ""16/09/2016"", ""descrizione"": ""Accumoli: insulina, cardioaspirine, betabloccanti, misuratori di pressione"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": ""42.69294"", ""link"": ""http://m.nuovavenezia.gelocal.it/video/dossier/terremoto-24-agosto-2016/accumoli-emergenza-farmaci-mandateci-insulina-cardioaspirine-betabloccanti/60093/60398?ref=hfnvveev1-1"", ""lon"": ""13.25991"", ""tel"": """"}","<pre><yamldata>tel: ''
-email: ''
-cosa: 'Ad Accumoli servono farmaci specifici'
-descrizione: 'Accumoli: insulina, cardioaspirine, betabloccanti, misuratori di pressione'
-indirizzo: ''
-lat: '42.69294'
-lon: '13.25991'
-link: 'http://m.nuovavenezia.gelocal.it/video/dossier/terremoto-24-agosto-2016/accumoli-emergenza-farmaci-mandateci-insulina-cardioaspirine-betabloccanti/60093/60398?ref=hfnvveev1-1'
-immagine: ''
-data: 16/09/2016
-</yamldata></pre>
-",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/484,177428637,2016-09-16 13:42:42,2016-09-16 13:41:57,Ad Accumoli servono farmaci specifici,42.69294,13.25991,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Ad Accumoli servono farmaci specifici"", ""data"": ""16/09/2016"", ""descrizione"": ""Accumoli: insulina, cardioaspirine, betabloccanti, misuratori di pressione"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": ""42.69294"", ""link"": ""http://m.nuovavenezia.gelocal.it/video/dossier/terremoto-24-agosto-2016/accumoli-emergenza-farmaci-mandateci-insulina-cardioaspirine-betabloccanti/60093/60398?ref=hfnvveev1-1"", ""lon"": ""13.25991"", ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 cosa: 'Ad Accumoli servono farmaci specifici'
