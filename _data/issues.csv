@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1170,187990487,2016-11-08 13:24:27,2016-11-08 13:23:35,Veicolo 4x4 - Comune di #Castelsantangelo sul Nera,42.8944919,13.1542505,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Facebook"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""Veicolo 4x4 - Comune di #Castelsantangelo sul Nera"", ""data"": ""08/11/2016"", ""descrizione"": ""Urgente necessit\u00e0 di un veicolo 4x4 (pick-up 4 posti o Fiat Panda 4x4) per agevolare spostamenti tra il paese e la costa o raggiungere gli allevatori della zona. Per segnalazioni rispondere alla segnalazione su Facebook di Franco Romito, link di seguito."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via Sant'Angelo, Castelsantangelo sul Nera, MC, Marche, Italia"", ""lat"": ""42.8944919"", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1796639933936923/"", ""lon"": ""13.1542505"", ""tel"": """"}","<pre><yamldata>tel: ''
+email: ''
+cosa: 'Veicolo 4x4 - Comune di #Castelsantangelo sul Nera'
+descrizione: 'Urgente necessità di un veicolo 4x4 (pick-up 4 posti o Fiat Panda 4x4) per agevolare spostamenti tra il paese e la costa o raggiungere gli allevatori della zona. Per segnalazioni rispondere alla segnalazione su Facebook di Franco Romito, link di seguito.'
+indirizzo: 'Via Sant''Angelo, Castelsantangelo sul Nera, MC, Marche, Italia'
+lat: '42.8944919'
+lon: '13.1542505'
+link: 'https://www.facebook.com/groups/1758670357733881/permalink/1796639933936923/'
+immagine: ''
+data: 08/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1168,187943741,2016-11-08 09:54:15,2016-11-08 09:40:08,casa in affitto a Spoleto,,,"[""Accettato"", ""Alloggi"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""casa in affitto a Spoleto"", ""data"": ""08/11/2016"", ""descrizione"": ""Cerchiamo un alloggio per 3 persone (madre e due figli di 9 e 16 anni) da affittare a Spoleto, come appoggio per consentire ai ragazzi di riprendere presto scuola, fino a conclusione dell\u2019anno scolastico. Il budget e\u2019 intorno alle 200-300 euro, possibilmente ad un piano basso e stabile antisismico, in periferia di Spoleto. Molte grazie."", ""email"": ""natale.s1970@libero.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3809005770""}","<pre><yamldata>tel: '3809005770'
 email: natale.s1970@libero.it
 cosa: 'casa in affitto a Spoleto'
@@ -4054,12 +4065,6 @@ data: 17/09/2016
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/580,177610419,2016-10-01 18:32:43,2016-09-17 21:31:05,A Pescara del Tronto nasce associazione di cittadini per monitorare la ricostruzione,,,"[""Accettato"", ""Bollettino"", ""Facebook"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""17/09/2016"", ""descrizione"": ""A Pescara del Tronto nasce l'associazione di cittadini \""Pescara del Tronto\"" per monitorare la ricostruzione. L'associazione ha una pagina Facebook e ha lanciato una raccolta di fondi."", ""link"": ""https://www.facebook.com/pages/Pescara-del-Tronto/176959459025369"", ""titolo"": ""A Pescara del Tronto nasce associazione di cittadini per monitorare la ricostruzione""}","<pre><yamldata>titolo: 'A Pescara del Tronto nasce associazione di cittadini per monitorare la ricostruzione'
 descrizione: 'A Pescara del Tronto nasce l''associazione di cittadini ""Pescara del Tronto"" per monitorare la ricostruzione. L''associazione ha una pagina Facebook e ha lanciato una raccolta di fondi.'
 link: 'https://www.facebook.com/pages/Pescara-del-Tronto/176959459025369'
-data: 17/09/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/579,177607973,2016-10-02 09:09:27,2016-09-17 20:50:19,Umbria - Disponibili 500 posti in albergo per sfollati,,,"[""Accettato"", ""Alloggi"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""Twitter""]",,,"{""data"": ""17/09/2016"", ""descrizione"": ""Cinquecento posti letto in albergo disponibili per gli sfollati di Norcia. Complessivamente sono ottanta le strutture alberghiere umbre che hanno risposto all\u2019avviso della Regione manifestando la disponibilit\u00e0 ad accogliere le famiglie rimaste senza una casa a seguito del terremoto del 24 agosto. Negli ultimi dieci giorni, ossia dall\u20198 settembre quando in Umbria la protezione civile ha contato 1.111 sfollati, il numero delle persone assistite \u00e8 sceso a 660."", ""link"": ""http://www.umbria24.it/per-gli-sfollati-di-norcia-pronti-da-dieci-giorni-500-posti-letto-in-albergo/414013.html"", ""titolo"": ""Disponibili 500 posti in albergo per sfollati di Norcia""}","<pre><yamldata>titolo: 'Disponibili 500 posti in albergo per sfollati di Norcia'
-descrizione: 'Cinquecento posti letto in albergo disponibili per gli sfollati di Norcia. Complessivamente sono ottanta le strutture alberghiere umbre che hanno risposto all’avviso della Regione manifestando la disponibilità ad accogliere le famiglie rimaste senza una casa a seguito del terremoto del 24 agosto. Negli ultimi dieci giorni, ossia dall’8 settembre quando in Umbria la protezione civile ha contato 1.111 sfollati, il numero delle persone assistite è sceso a 660.'
-link: 'http://www.umbria24.it/per-gli-sfollati-di-norcia-pronti-da-dieci-giorni-500-posti-letto-in-albergo/414013.html'
 data: 17/09/2016
 </yamldata></pre>
 ",open
