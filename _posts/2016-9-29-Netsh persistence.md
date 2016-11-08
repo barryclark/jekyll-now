@@ -27,14 +27,14 @@ http://www.adaptforward.com/2016/09/using-netshell-to-execute-evil-dlls-and-pers
 
 
 ## 0x00 简介
-
+---
 在渗透测试中，使用系统中默认支持的命令常常可以绕过各种检测和拦截，比如我在《Use bitsadmin to maintain persistence and bypass Autoruns》中介绍过如何利用系统默认支持的bitsadmin来实现自启动，并绕过Autoruns的检测。
 
 Matthew Demaske在最近分享了一个他发现的方法，同样是利用系统中默认支持的命令——using netshell to execute evil dlls and persist on a host，本文将对其方法进行整理，并补全文中未具体介绍的dll编写方法
 
 
 ## 0x01 netsh简介
-
+---
 是windows系统本身提供的功能强大的网络配置命令行工具，常用命令如下：
 
 查看ip配置信息：
@@ -77,7 +77,7 @@ add helper - Installs a helper DLL.
 
 
 ## 0x02 编写helper DLL
-
+---
 每个helper DLL都需要包含导出函数InitHelperDll
 
 在添加helper DLL后，每次netsh在初始加载的时候会调用该helper DLL中的导出函数InitHelperDll
@@ -164,7 +164,7 @@ https://github.com/outflankbv/NetshHelperBeacon
 
 
 ## 0x03 添加自定义helper dll
-
+---
 **注：**
 
 需要管理员权限
@@ -197,7 +197,7 @@ https://github.com/outflankbv/NetshHelperBeacon
 
 
 ## 0x04 触发后门
-
+---
 helper dll添加成功后，每次调用netsh，均会加载c:\test\netshtest.dll
 
 如图，运行netsh命令，加载c:\test\netshtest.dll，弹出计算器
@@ -224,12 +224,14 @@ helper dll添加成功后，每次调用netsh，均会加载c:\test\netshtest.dl
 
 
 ## 0x05 Persistence
+---
 
 - netsh作为系统常用命令，存在被用户正常使用的概率，所以只要启动netsh即可触发payload
 
 - 如果被添加为常用的开机启动项，也很有迷惑性，因为显示的仅仅是启动netsh.exe
 
 ## 0x06 检测
+---
 
 监控注册表位置```HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NetSh```
 
@@ -242,6 +244,7 @@ helper dll添加成功后，每次调用netsh，均会加载c:\test\netshtest.dl
 
 
 ## 0x07 清除
+---
 
 通过cmd:
 
@@ -255,6 +258,7 @@ helper dll添加成功后，每次调用netsh，均会加载c:\test\netshtest.dl
 
 
 ## 0x08 小结
+---
 
 - Netsh Persistence实现的前提是已经获得了管理员权限
 
