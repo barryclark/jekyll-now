@@ -28,7 +28,7 @@ L4를 Load Balancer로 사용하여 28대의 서버에 균등하게 요청을 �
 자세한 내용은 [joinc님의 포스팅](http://www.joinc.co.kr/w/man/12/proxy)을 참조하시면 더욱 이해하기 쉬우실 것 같습니다. <br/>
 
 ### 시작 전에..
-아래에서 사용한 예제 코드의 경우 모두 [Github](https://github.com/jojoldu/blog-code/tree/master/server/nginx-cache)에서 확인할 수 있으며, 내용들은 모두 제 [개인 블로그](http://jojoldu.tistory.com/59)에도 동시 포스팅 되었음을 미리 말씀드립니다. <br/>
+아래에서 사용한 예제 코드의 경우 모두 [Github](https://github.com/jojoldu/blog-code/tree/master/server/nginx-cache)에서 확인할 수 있으며, 내용들은 모두 제 [개인 블로그](http://jojoldu.tistory.com/60)에도 동시 포스팅 되었음을 미리 말씀드립니다. <br/>
 예제를 실행하기 위해선 Java8, Nginx, CentOS가 설치되어 있어야만 합니다. <br/>
 혹시나 Nginx가 설치되어있는지 확인이 필요하다면 아래와 같은 명령어로 확인이 가능합니다. <br/>
 
