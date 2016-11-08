@@ -4,7 +4,7 @@ layout: post
 tags:
   - core-skills
 title: Where Does My Time Go?
-excerpt_seperator: <!--more-->
+excerpt_separator: <!--more-->
 ---
 ## Foundation Year
 
