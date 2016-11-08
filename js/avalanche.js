@@ -177,9 +177,9 @@ function getTimeString(months) {
 	
 function generateRow(debt) {
 	var nameString = "<input type='text' name='name' value='" + debt.name + "' required />";
-        var balanceString = "$<input type='number' name='balance' min='0' value='" + debt.balance + "' required />";
+        var balanceString = "<span class='input-dollar'>$</span><input type='number' name='balance' class='input-dollar' min='0' value='" + debt.balance + "' required />";
         var rateString = "<input type='number' name='rate' min='0' max='100' step='0.01' value='" + debt.rate * 100 + "' required />%";
-        var paymentString = "$<input type='number' name='payment' min='0' value='" + debt.payment + "' required />";
+        var paymentString = "<span class='input-dollar'>$</span><input type='number' name='payment' class='input-dollar' min='0' value='" + debt.payment + "' required />";
 	var onlyminString = "<input type='checkbox' name='onlymin' value='true' " + (debt.onlymin ? "checked " : "") +"/> Minimum";
         var minpaymentString = "<input type='number' name='minpayment' min='0' value='";
 	
