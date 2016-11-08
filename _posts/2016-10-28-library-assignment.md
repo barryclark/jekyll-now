@@ -7,9 +7,9 @@ title: 'Assignment: Library Exercise'
 ---
 The library computer catalogue can be accessed by terminals located within the library or via the library website http://libweb.anglia.ac.uk.
 
-## 1)	Type ‘Computer Gaming Technology’ in the search function.
+## 1) Type ‘Computer Gaming Technology’ in the search function.
 
-### How many records are listed in total? 
+### a) How many records are listed in total? 
 The results change depending on certain variables.
 <li>Simple Search: Computer Gaming Technology = <b>45,461</b></li>
 ![Simple Search]({{site.baseurl}}/images/library_assign_cgt01.jpg)
