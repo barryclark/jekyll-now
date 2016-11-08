@@ -11,11 +11,20 @@ input[type=number] {
 span.input-dollar {
 	position: relative;
 	left: 10px;
-	font-weight: normal;
 	font-size: small;
 }
 
 input.input-dollar {
 	width: 6em;
 	padding-left: 10px;
+}
+
+span.input-percent {
+	font-size: small;
+	position: relative;
+	left: -15px;
+}
+
+input.input-percent {
+	padding-right: 15px;
 }
