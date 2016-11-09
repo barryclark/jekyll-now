@@ -127,6 +127,10 @@ header h1 {
     clear: both;
     padding-top: 100px;
     line-height: 1.05;
+    
+    @include mobile{
+        padding-top: 20px;    
+    }
 }
 header h1 span {
     display: inline-block;
@@ -134,6 +138,10 @@ header h1 span {
     border: #fff solid 10px;
     border-radius: 0.3em;
     font-size: 72px;
+    
+    @include mobile {
+        padding:0.2em 0em;
+    }
 }
 
 // Fixes images in popup boxes from Google Translate
