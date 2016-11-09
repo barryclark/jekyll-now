@@ -8,7 +8,8 @@
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
@@ -29,8 +30,13 @@
           <nav>
             <a href="{{ site.baseurl }}/">Work</a>
             <a href="{{ site.baseurl }}/about">About me</a>
-            <a href="#contact">Contact</a>
+            <a href="{{ site.baseurl }}/#contact">Contact</a>
           </nav>
+          
+          <h1>
+              <span>Igor Khailin</span>
+          </h1>
+          <p class="kicker">Developer</p>
         </header>
       </div>
     </div>
