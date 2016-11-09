@@ -19,12 +19,12 @@ link: ''
 immagine: ''
 data: 09/11/2016
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1187,188344323,2016-11-09 21:02:49,2016-11-09 20:27:21,Offriamo ospitalità,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""09/11/2016"", ""descrizione"": ""Offriamo ospitalit\u00e0 (solo per week end ma anche per tempi pi\u00f9 lunghi secondo le necessit\u00e0) a San Cesario sul Panaro (MO) in appartamento semi-arredato (possiamo recuperare ci\u00f2 che manca, ma abitiamo comunque nello stesso condominio) al primo piano con ascensore composto da soggiorno con terrazzo, cucina, una stanza matrimoniale e una singola, bagno."", ""email"": ""francibucci@hotmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3497714772""}","<pre><yamldata>tel: '3497714772'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1187,188344323,2016-11-09 21:14:21,2016-11-09 20:27:21,Offriamo ospitalità,44.5620370,11.0342222,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""09/11/2016"", ""descrizione"": ""Offriamo ospitalit\u00e0 (solo per week end ma anche per tempi pi\u00f9 lunghi secondo le necessit\u00e0) a San Cesario sul Panaro (MO) in appartamento semi-arredato (possiamo recuperare ci\u00f2 che manca, ma abitiamo comunque nello stesso condominio) al primo piano con ascensore composto da soggiorno con terrazzo, cucina, una stanza matrimoniale e una singola, bagno."", ""email"": ""francibucci@hotmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": ""44.5620370"", ""link"": """", ""lon"": ""11.0342222"", ""tel"": ""3497714772""}","<pre><yamldata>tel: '3497714772'
 email: francibucci@hotmail.com
 descrizione: 'Offriamo ospitalità (solo per week end ma anche per tempi più lunghi secondo le necessità) a San Cesario sul Panaro (MO) in appartamento semi-arredato (possiamo recuperare ciò che manca, ma abitiamo comunque nello stesso condominio) al primo piano con ascensore composto da soggiorno con terrazzo, cucina, una stanza matrimoniale e una singola, bagno.'
 indirizzo: ''
-lat: ''
-lon: ''
+lat: '44.5620370'
+lon: '11.0342222'
 link: ''
 immagine: ''
 data: 09/11/2016
