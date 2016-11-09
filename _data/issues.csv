@@ -8076,6 +8076,18 @@ email: ''
 data: 13/09/2016
 </yamldata></pre>
 ",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/182,176756583,2016-09-13 21:38:14,2016-09-13 21:36:24,Monte dei Paschi di Siena,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Monte dei Paschi di Siena"", ""data"": ""13/09/2016"", ""descrizione"": ""Versamenti sono possibili anche chiamando il numero verde 800 41 41 41."", ""email"": """", ""iban"": ""IT 77 H 01030 14200 000008605376"", ""intestazione"": ""Terremoto Italia centrale agosto 2016"", ""link"": ""http://www.bancaforte.it/notizie/2016/08/mps-un-aiuto-per-la-popolazione-colpita-dal-sisma"", ""postale"": """"}","<pre><yamldata>chi: 'Monte dei Paschi di Siena'
+descrizione: 'Versamenti sono possibili anche chiamando il numero verde 800 41 41 41.'
+intestazione: 'Terremoto Italia centrale agosto 2016'
+iban: 'IT 77 H 01030 14200 000008605376'
+bic: ''
+postale: ''
+causale: ''
+link: 'http://www.bancaforte.it/notizie/2016/08/mps-un-aiuto-per-la-popolazione-colpita-dal-sisma'
+email: ''
+data: 13/09/2016
+</yamldata></pre>
+",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/181,176756059,2016-09-13 22:06:14,2016-09-13 21:34:01,"MUTANDE, CALZINI, REGGISENI e MAGLIETTE/CANOTTIERE INTIME.",,,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""MUTANDE, CALZINI, REGGISENI e MAGLIETTE/CANOTTIERE INTIME."", ""data"": ""13/09/2016"", ""descrizione"": ""Richiesta dal Campo protezione civile ad Amatrice. Il tutto di varie taglie, soprattutto medio grandi per uomini, donne e bambini di ambo i sessi. Ovviamente l'intimo va rigorosamente consegnato nuovo per una questione di igiene. \u00c8 urgente."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.facebook.com/daniela.tassinari.3/posts/10210515585996963?pnref=story"", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 cosa: 'MUTANDE, CALZINI, REGGISENI e MAGLIETTE/CANOTTIERE INTIME.'
