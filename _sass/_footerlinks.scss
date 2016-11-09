@@ -27,6 +27,7 @@
 
 .footer-link.github .fa {
   font-size: 47px;
+  margin: 0;
   color: black;
 }
 
@@ -36,4 +37,8 @@
 
 .footer-link.linkedin .fa {
     margin: 8px 0px 0px;
+}
+
+.footer-link.wrightstate {
+  border-radius: 0;   
 }
