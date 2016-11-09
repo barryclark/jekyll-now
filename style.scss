@@ -29,7 +29,7 @@ body {
   margin: 0 auto;
   width: 100%;
 }
-.container .main{
+.main{
   margin: 0 auto;
   width: 100%;
   max-width: 740px;
@@ -293,8 +293,11 @@ nav {
     font-weight: 300;
     letter-spacing: 1px;
     text-shadow: 0 0 15px $blue;
+<<<<<<< HEAD
     transition-duration: 0.5s;
     text-transform: capitalize;
+=======
+>>>>>>> master
 
 
     @include mobile {
