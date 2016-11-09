@@ -2085,6 +2085,17 @@ immagine: ''
 data: 30/10/2016
 </yamldata></pre>
 ",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/892,186125811,2016-10-30 09:42:53,2016-10-30 09:24:42,Offresi alloggio a Buja (UD),,,"[""Accettato"", ""Alloggi"", ""Bollettino"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""30/10/2016"", ""descrizione"": ""Offresi disponibilit\u00e0 presso propria abitazione a Buja (UD), una camera doppia con bagno ed eventuali altre due persone (famiglia o altro) per il tempo necessario"", ""email"": ""val_gue@hotmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""348/3051736""}","<pre><yamldata>tel: 348/3051736
+email: val_gue@hotmail.com
+descrizione: 'Offresi disponibilità presso propria abitazione a Buja (UD), una camera doppia con bagno ed eventuali altre due persone (famiglia o altro) per il tempo necessario'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 30/10/2016
+</yamldata></pre>
+",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/891,186125594,2016-10-30 09:42:05,2016-10-30 09:18:30,Offerta appartamento a Ferrara ,44.8433298,11.609086,"[""Accettato"", ""Alloggi"", ""Bollettino"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""30/10/2016"", ""descrizione"": ""Vivo in un appartamento spazioso. Ho posto comodo per 6 persone in centro storico a Ferrara. Due bagni, due camere matrimoniali, una camera pi\u00f9 piccola con due posti letto, cucina e salotto. Metto a disposizione gli spazi per chiunque avesse bisogno di allontanarsi dalla zona a rischio sismico."", ""email"": ""buchettadellelettere@gmail.com"", ""immagine"": """", ""indirizzo"": ""Viale Cavour, Centro cittadino, Giardino, Ferrara, FE, Emilia-Romagna, 44121, Italia"", ""lat"": ""44.8433298"", ""link"": """", ""lon"": ""11.609086"", ""tel"": ""+393495954549""}","<pre><yamldata>tel: '+393495954549'
 email: buchettadellelettere@gmail.com
 descrizione: 'Vivo in un appartamento spazioso. Ho posto comodo per 6 persone in centro storico a Ferrara. Due bagni, due camere matrimoniali, una camera più piccola con due posti letto, cucina e salotto. Metto a disposizione gli spazi per chiunque avesse bisogno di allontanarsi dalla zona a rischio sismico.'
