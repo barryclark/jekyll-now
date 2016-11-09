@@ -264,12 +264,12 @@ nav {
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
-    text-shadow: 0 0 15px #00ffad;
+    text-shadow: 0 0 15px $blue;
 
     @include mobile {
       margin: 0 10px;
       color: $blue;
-      text-shadow: 0 0 15px #00ffad;
+      text-shadow: 0 0 15px $blue;
     }
   }
 }
