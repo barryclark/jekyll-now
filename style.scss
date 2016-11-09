@@ -133,7 +133,6 @@ header h1 span {
     padding: 0.2em 0.5em;
     border: #fff solid 10px;
     border-radius: 0.3em;
-    text-shadow: 4px 4px 3px gray;
     font-size: 72px;
 }
 
@@ -268,6 +267,7 @@ nav {
     text-shadow: 0 0 15px $blue;
     transition-duration: 0.5s;
     text-transform: capitalize;
+
 
     @include mobile {
       text-transform: capitalize;
