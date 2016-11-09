@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1176,188100971,2016-11-08 20:57:17,2016-11-08 20:55:47,Lavatrice a #Scai,42.5980591,13.2305149,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Pubblicare su FB""]",,,"{""cosa"": ""Lavatrice a #Scai"", ""data"": ""08/11/2016"", ""descrizione"": ""Serve urgentemente una lavatrice a Scai (Amatrice). Contattare Carlo."", ""email"": """", ""immagine"": """", ""indirizzo"": ""SP19, Amatrice, RI, Lazio, Italia"", ""lat"": ""42.5980591"", ""link"": """", ""lon"": ""13.2305149"", ""tel"": ""3338275919""}","<pre><yamldata>tel: '3338275919'
+email: ''
+cosa: 'Lavatrice a #Scai'
+descrizione: 'Serve urgentemente una lavatrice a Scai (Amatrice). Contattare Carlo.'
+indirizzo: 'SP19, Amatrice, RI, Lazio, Italia'
+lat: '42.5980591'
+lon: '13.2305149'
+link: ''
+immagine: ''
+data: 08/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1174,188037370,2016-11-08 18:52:34,2016-11-08 16:23:54,CERCASI AUTOTRASPORTATORE #USSITA,43.583333,11.316667,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Pubblicare su FB"", ""Sisma Ottobre""]",,,"{""cosa"": ""CERCASI AUTOTRASPORTATORE #USSITA"", ""data"": ""08/11/2016"", ""descrizione"": ""Serve autorasportatore per trasportare 2 roulotte da Greve in Chianti fino a Ussita. Contattare Sara."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": ""43.583333"", ""link"": """", ""lon"": ""11.316667"", ""tel"": ""+393462865450""}","<pre><yamldata>tel: '+393462865450'
 email: ''
 cosa: 'CERCASI AUTOTRASPORTATORE #USSITA'
