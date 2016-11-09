@@ -8,7 +8,7 @@ tags: [video games, party hard, high crimes, tinybuild]
 author: Rob Kalajian
 ---
 
-![High Crimes](/images/partyhard/highcrimes.gif){.center}
+![High Crimes](/images/partyhard/highcrimes.gif){: .center }
 
 [Party Hard](http://store.steampowered.com/agecheck/app/356570/) has some new DLC, new Twitch integration features, and an iOS and Google Play builds coming out tomorrow. This is great news for those who have played through the main game and are looking for a bit more out of the excellent, quirky, slasher game.
 
