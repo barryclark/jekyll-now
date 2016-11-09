@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1193,188371582,2016-11-09 23:12:10,2016-11-09 22:41:04,I ragazzi del 50/A,42.7685858,12.7510342,"[""Accettato"", ""Bollettino"", ""Contatti"", ""Donazioni"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""09/11/2016"", ""descrizione"": ""Un gruppo di ragazzi che si \u00e8 formato dopo il terremoto del 24 Agosto 2016 per portare aiuto alle persone coinvolte dal sisma. Il Centro di Raccolta \u00e8 aperto dal Luned\u00ec al Venerd\u00ec dalle 09:00 alle 12:00 e dalle 15:00 alle 18:00 ed \u00e8 situato in Via Luigi Einaudi 49 \u2013 06049 Spoleto (PG)."", ""email"": ""iragazzidel50a@gmail.com"", ""indirizzo"": ""Madonna di Lugo, Spoleto, PG, UMB, 06049, Italy"", ""lat"": ""42.7685858"", ""link"": ""https://www.facebook.com/iragazzidel50a/"", ""lon"": ""12.7510342"", ""nome"": ""I ragazzi del 50/A"", ""tel"": ""393 01 20 789""}","<pre><yamldata>nome: 'I ragazzi del 50/A'
+tel: '393 01 20 789'
+email: iragazzidel50a@gmail.com
+descrizione: 'Un gruppo di ragazzi che si è formato dopo il terremoto del 24 Agosto 2016 per portare aiuto alle persone coinvolte dal sisma. Il Centro di Raccolta è aperto dal Lunedì al Venerdì dalle 09:00 alle 12:00 e dalle 15:00 alle 18:00 ed è situato in Via Luigi Einaudi 49 – 06049 Spoleto (PG).'
+indirizzo: 'Madonna di Lugo, Spoleto, PG, UMB, 06049, Italy'
+lat: '42.7685858'
+lon: '12.7510342'
+link: 'https://www.facebook.com/iragazzidel50a/'
+data: 09/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1192,188369627,2016-11-09 23:10:36,2016-11-09 22:30:42,Caritas Diocesana di Spoleto - Archidiocesi di Spoleto – Norcia,42.7346574,12.7384492403508,"[""Accettato"", ""Bollettino"", ""Contatti"", ""Donazioni"", ""Form"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""09/11/2016"", ""descrizione"": ""Per l\u2019Archidiocesi di Spoleto \u2013 Norcia e per le altre Diocesi dell\u2019Umbria \u00e8 la Caritas diocesana locale a coordinare la raccolta degli aiuti. Chi volesse collaborare con l\u2019invio di generi di prima necessit\u00e0, deve prima contattare gli operatori della Caritas al numero 0743-220485. I volontari, poi, distribuiranno nelle varie comunit\u00e0 della Valnerina quanto ricevuto."", ""email"": ""caritas@spoletonorcia.it"", ""indirizzo"": ""Via Aurelio Saffi, Spoleto, PG, UMB, 06049, Italy"", ""lat"": ""42.7346574"", ""link"": ""http://www.spoletonorcia.it"", ""lon"": ""12.7384492403508"", ""nome"": ""Caritas Diocesana di Spoleto - Archidiocesi di Spoleto \u2013 Norcia"", ""tel"": ""0743 22 04 85""}","<pre><yamldata>nome: 'Caritas Diocesana di Spoleto - Archidiocesi di Spoleto – Norcia'
 tel: '0743 22 04 85'
 email: caritas@spoletonorcia.it
@@ -8064,18 +8074,6 @@ immagine: ''
 data: 13/09/2016
 </yamldata></pre>
 ",closed
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/182,176756583,2016-09-13 21:38:14,2016-09-13 21:36:24,Monte dei Paschi di Siena,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Monte dei Paschi di Siena"", ""data"": ""13/09/2016"", ""descrizione"": ""Versamenti sono possibili anche chiamando il numero verde 800 41 41 41."", ""email"": """", ""iban"": ""IT 77 H 01030 14200 000008605376"", ""intestazione"": ""Terremoto Italia centrale agosto 2016"", ""link"": ""http://www.bancaforte.it/notizie/2016/08/mps-un-aiuto-per-la-popolazione-colpita-dal-sisma"", ""postale"": """"}","<pre><yamldata>chi: 'Monte dei Paschi di Siena'
-descrizione: 'Versamenti sono possibili anche chiamando il numero verde 800 41 41 41.'
-intestazione: 'Terremoto Italia centrale agosto 2016'
-iban: 'IT 77 H 01030 14200 000008605376'
-bic: ''
-postale: ''
-causale: ''
-link: 'http://www.bancaforte.it/notizie/2016/08/mps-un-aiuto-per-la-popolazione-colpita-dal-sisma'
-email: ''
-data: 13/09/2016
-</yamldata></pre>
-",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/182,176756583,2016-09-13 21:38:14,2016-09-13 21:36:24,Monte dei Paschi di Siena,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Monte dei Paschi di Siena"", ""data"": ""13/09/2016"", ""descrizione"": ""Versamenti sono possibili anche chiamando il numero verde 800 41 41 41."", ""email"": """", ""iban"": ""IT 77 H 01030 14200 000008605376"", ""intestazione"": ""Terremoto Italia centrale agosto 2016"", ""link"": ""http://www.bancaforte.it/notizie/2016/08/mps-un-aiuto-per-la-popolazione-colpita-dal-sisma"", ""postale"": """"}","<pre><yamldata>chi: 'Monte dei Paschi di Siena'
 descrizione: 'Versamenti sono possibili anche chiamando il numero verde 800 41 41 41.'
 intestazione: 'Terremoto Italia centrale agosto 2016'
