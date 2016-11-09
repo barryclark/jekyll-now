@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1187,188344323,2016-11-09 21:02:49,2016-11-09 20:27:21,Offriamo ospitalità,,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""09/11/2016"", ""descrizione"": ""Offriamo ospitalit\u00e0 (solo per week end ma anche per tempi pi\u00f9 lunghi secondo le necessit\u00e0) a San Cesario sul Panaro (MO) in appartamento semi-arredato (possiamo recuperare ci\u00f2 che manca, ma abitiamo comunque nello stesso condominio) al primo piano con ascensore composto da soggiorno con terrazzo, cucina, una stanza matrimoniale e una singola, bagno."", ""email"": ""francibucci@hotmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3497714772""}","<pre><yamldata>tel: '3497714772'
+email: francibucci@hotmail.com
+descrizione: 'Offriamo ospitalità (solo per week end ma anche per tempi più lunghi secondo le necessità) a San Cesario sul Panaro (MO) in appartamento semi-arredato (possiamo recuperare ciò che manca, ma abitiamo comunque nello stesso condominio) al primo piano con ascensore composto da soggiorno con terrazzo, cucina, una stanza matrimoniale e una singola, bagno.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 09/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1186,188311157,2016-11-09 20:59:43,2016-11-09 17:54:52,Rimessaggio offre roulotte a prezzi bassi - #AlbaAdriatica (Te),42.8343422,13.927816,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""Rimessaggio offre roulotte a prezzi bassi - #albadriatrica"", ""data"": ""09/11/2016"", ""descrizione"": ""Un rimessaggio di Alba Adriatica ha a disposizione 4 roulotte da 1.800-2.000 \u20ac. Contattare Stefano per maggiori dettagli."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Viale Giuseppe Mazzini, Alba Adriatica, TE, Abruzzo, 64011, Italia"", ""lat"": ""42.8343422"", ""link"": """", ""lon"": ""13.927816"", ""tel"": ""3477331509""}","<pre><yamldata>tel: '3477331509'
 email: ''
 cosa: 'Rimessaggio offre roulotte a prezzi bassi - #albadriatrica'
@@ -2758,18 +2768,6 @@ email: antonio.scanferlato@ilteatrodellestelle.it
 data: 11/10/2016
 </yamldata></pre>
 ",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/780,182225969,2016-10-21 21:35:19,2016-10-11 10:12:54,"Associazione ‘Le Castagne’ di Cossito (Amatrice) - Cena di solidarietà, Roma 21 ottobre",,,"[""Accettato"", ""Pubblicare su FB"", ""Pubblicare su TW"", ""Raccolte Fondi""]",Milestone(number=22),,"{""bic"": """", ""causale"": """", ""chi"": ""Associazione \u2018Le Castagne\u2019 di Cossito (Amatrice)"", ""data"": ""11/10/2016"", ""descrizione"": ""Il 21 Ottobre l\u2019associazione \u2018Le Castagne\u2019 di Cossito (Amatrice) organizza a Roma, presso la Parrocchia della Chiesa Evangelica Metodista, in via Firenze, 38 zona Termini, la cena di beneficenza \u2018Amatrice, una realt\u00e0 fatta di frazioni, adottane una\u2019. La quota di partecipazione \u00e8 di 30 euro. L\u2019incasso della serata sar\u00e0 devoluto per attrezzature, ricostruzione e soluzioni abitative per gli sfollati del terremoto."", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""http://www.agenparl.com/terremoto-2110-lassociazione-le-castagne-cossito-cena-beneficenza-amatrice-realta-fatta-frazioni-adottane/"", ""postale"": """"}","<pre><yamldata>chi: 'Associazione ‘Le Castagne’ di Cossito (Amatrice)'
-descrizione: 'Il 21 Ottobre l’associazione ‘Le Castagne’ di Cossito (Amatrice) organizza a Roma, presso la Parrocchia della Chiesa Evangelica Metodista, in via Firenze, 38 zona Termini, la cena di beneficenza ‘Amatrice, una realtà fatta di frazioni, adottane una’. La quota di partecipazione è di 30 euro. L’incasso della serata sarà devoluto per attrezzature, ricostruzione e soluzioni abitative per gli sfollati del terremoto.'
-intestazione: ''
-iban: ''
-bic: ''
-postale: ''
-causale: ''
-link: 'http://www.agenparl.com/terremoto-2110-lassociazione-le-castagne-cossito-cena-beneficenza-amatrice-realta-fatta-frazioni-adottane/'
-email: ''
-data: 11/10/2016
-</yamldata></pre>
-",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/780,182225969,2016-10-21 21:35:19,2016-10-11 10:12:54,"Associazione ‘Le Castagne’ di Cossito (Amatrice) - Cena di solidarietà, Roma 21 ottobre",,,"[""Accettato"", ""Pubblicare su FB"", ""Pubblicare su TW"", ""Raccolte Fondi""]",Milestone(number=22),,"{""bic"": """", ""causale"": """", ""chi"": ""Associazione \u2018Le Castagne\u2019 di Cossito (Amatrice)"", ""data"": ""11/10/2016"", ""descrizione"": ""Il 21 Ottobre l\u2019associazione \u2018Le Castagne\u2019 di Cossito (Amatrice) organizza a Roma, presso la Parrocchia della Chiesa Evangelica Metodista, in via Firenze, 38 zona Termini, la cena di beneficenza \u2018Amatrice, una realt\u00e0 fatta di frazioni, adottane una\u2019. La quota di partecipazione \u00e8 di 30 euro. L\u2019incasso della serata sar\u00e0 devoluto per attrezzature, ricostruzione e soluzioni abitative per gli sfollati del terremoto."", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""http://www.agenparl.com/terremoto-2110-lassociazione-le-castagne-cossito-cena-beneficenza-amatrice-realta-fatta-frazioni-adottane/"", ""postale"": """"}","<pre><yamldata>chi: 'Associazione ‘Le Castagne’ di Cossito (Amatrice)'
 descrizione: 'Il 21 Ottobre l’associazione ‘Le Castagne’ di Cossito (Amatrice) organizza a Roma, presso la Parrocchia della Chiesa Evangelica Metodista, in via Firenze, 38 zona Termini, la cena di beneficenza ‘Amatrice, una realtà fatta di frazioni, adottane una’. La quota di partecipazione è di 30 euro. L’incasso della serata sarà devoluto per attrezzature, ricostruzione e soluzioni abitative per gli sfollati del terremoto.'
 intestazione: ''
