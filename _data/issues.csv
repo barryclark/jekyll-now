@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1194,188375158,2016-11-09 23:13:19,2016-11-09 23:00:50,Contatti Centro Operativo Comunale #Cascia,42.718279392224865,13.013370037078857,"[""Accettato"", ""Bollettino"", ""Contatti"", ""Form"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""09/11/2016"", ""descrizione"": ""Il Centro Operativo Comunale (COC) di Cascia \u00e8 il punto di riferimento per tutte le richieste di informazioni, di assistenza e per le donazioni nel Comune di Cascia."", ""email"": ""coc.cascia@gmail.com"", ""indirizzo"": ""Via del Plebiscito, Cascia, PG, UMB, 06043, Italy"", ""lat"": ""42.718279392224865"", ""link"": ""http://www.comune.cascia.pg.it"", ""lon"": ""13.013370037078857"", ""nome"": ""Centro Operativo Comunale Cascia"", ""tel"": ""0743 76 592 - 0743 75 02 09""}","<pre><yamldata>nome: 'Centro Operativo Comunale Cascia'
+tel: '0743 76 592 - 0743 75 02 09'
+email: coc.cascia@gmail.com
+descrizione: 'Il Centro Operativo Comunale (COC) di Cascia è il punto di riferimento per tutte le richieste di informazioni, di assistenza e per le donazioni nel Comune di Cascia.'
+indirizzo: 'Via del Plebiscito, Cascia, PG, UMB, 06043, Italy'
+lat: '42.718279392224865'
+lon: '13.013370037078857'
+link: 'http://www.comune.cascia.pg.it'
+data: 09/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1193,188371582,2016-11-09 23:12:10,2016-11-09 22:41:04,I ragazzi del 50/A,42.7685858,12.7510342,"[""Accettato"", ""Bollettino"", ""Contatti"", ""Donazioni"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""09/11/2016"", ""descrizione"": ""Un gruppo di ragazzi che si \u00e8 formato dopo il terremoto del 24 Agosto 2016 per portare aiuto alle persone coinvolte dal sisma. Il Centro di Raccolta \u00e8 aperto dal Luned\u00ec al Venerd\u00ec dalle 09:00 alle 12:00 e dalle 15:00 alle 18:00 ed \u00e8 situato in Via Luigi Einaudi 49 \u2013 06049 Spoleto (PG)."", ""email"": ""iragazzidel50a@gmail.com"", ""indirizzo"": ""Madonna di Lugo, Spoleto, PG, UMB, 06049, Italy"", ""lat"": ""42.7685858"", ""link"": ""https://www.facebook.com/iragazzidel50a/"", ""lon"": ""12.7510342"", ""nome"": ""I ragazzi del 50/A"", ""tel"": ""393 01 20 789""}","<pre><yamldata>nome: 'I ragazzi del 50/A'
 tel: '393 01 20 789'
 email: iragazzidel50a@gmail.com
