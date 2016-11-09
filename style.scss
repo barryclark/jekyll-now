@@ -161,6 +161,10 @@ header .small-text{
     color: #fff;
     line-height: 1;
     text-shadow: 0 0 15px $blue;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: $helvetica;
 }
 .header_bottom_hr{
     border-bottom: 1px solid $lightGray;
