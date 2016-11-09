@@ -162,6 +162,12 @@ header .small-text{
     line-height: 1;
     text-shadow: 0 0 15px $blue;
 }
+.header_bottom_hr{
+    border-bottom: 1px solid #eee;
+    width: 100%;
+    max-width: 740px;
+    margin: 0 auto;
+}
 
 // Fixes images in popup boxes from Google Translate
 .gmnoprint img {
@@ -293,12 +299,8 @@ nav {
     font-weight: 300;
     letter-spacing: 1px;
     text-shadow: 0 0 15px $blue;
-<<<<<<< HEAD
     transition-duration: 0.5s;
     text-transform: capitalize;
-=======
->>>>>>> master
-
 
     @include mobile {
       text-transform: capitalize;
