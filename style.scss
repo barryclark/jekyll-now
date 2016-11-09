@@ -163,7 +163,7 @@ header .small-text{
     text-shadow: 0 0 15px $blue;
 }
 .header_bottom_hr{
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid $lightGray;
     width: 100%;
     max-width: 740px;
     margin: 0 auto;
@@ -224,8 +224,6 @@ header .small-text{
 
 .masthead {
   padding: 20px 0 0 0;
-  margin-bottom: 20px;
-  border-bottom: 1px solid $lightGray;
 
   @include mobile {
     text-align: center;
