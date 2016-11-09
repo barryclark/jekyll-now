@@ -10,6 +10,11 @@ link: ''
 immagine: ''
 data: 09/11/2016
 </yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1185,188306781,2016-11-09 20:58:18,2016-11-09 17:34:16,Mappa delle postazioni #CroceRossa nelle Marche,,,"[""Accettato"", ""Bollettino"", ""Notizie Utili"", ""Sisma Ottobre"", ""Twitter""]",,,"{""data"": ""09/11/2016"", ""descrizione"": ""Su Google Map una mappa dettagliata delle Marche, in cui sono evidenziate tutte le postazioni ed i territori nei quali Croce Rossa \u00e8 impegnata durante l\u2019emergenza terremoto."", ""link"": ""https://www.cri.it/08-11-2016-terremoto-centro-italia-mappa-postazioni-croce-rossa"", ""titolo"": ""Mappa delle postazioni #CroceRossa nelle Marche""}","<pre><yamldata>titolo: 'Mappa delle postazioni #CroceRossa nelle Marche'
+descrizione: 'Su Google Map una mappa dettagliata delle Marche, in cui sono evidenziate tutte le postazioni ed i territori nei quali Croce Rossa è impegnata durante l’emergenza terremoto.'
+link: 'https://www.cri.it/08-11-2016-terremoto-centro-italia-mappa-postazioni-croce-rossa'
+data: 09/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1184,188306327,2016-11-09 20:57:52,2016-11-09 17:32:30,"Banca Etica, campagna crowdfunding ""Il Bio che non trema"" per aziende bio delle #Marche",,,"[""Accettato"", ""Bollettino"", ""Raccolte Fondi"", ""Sisma Ottobre"", ""Twitter""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Banca Etica, campagna crowdfunding \""Il Bio che non trema\"" per aziende bio delle #Marche"", ""data"": ""09/11/2016"", ""descrizione"": ""Crowdfunding di Banca Etica sulla piattaforma Produzioni dal basso in sostegno alle aziende agricole bio marchigiane colpite dal terremoto."", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""https://www.produzionidalbasso.com/project/il-bio-che-non-trema/?error=True&utm_content=buffer27364&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer"", ""postale"": """"}","<pre><yamldata>chi: 'Banca Etica, campagna crowdfunding ""Il Bio che non trema"" per aziende bio delle #Marche'
 descrizione: 'Crowdfunding di Banca Etica sulla piattaforma Produzioni dal basso in sostegno alle aziende agricole bio marchigiane colpite dal terremoto.'
 intestazione: ''
@@ -7368,18 +7373,6 @@ bic: IBSPIT2P
 postale: ''
 causale: ''
 link: 'https://comunapp-ita.appspot.com/publishedItem?key=ag5zfmNvbXVuYXBwLWl0YXI4CxIGQ29tdW5lIghjb211bmFwcAwLEgZDb211bmUYgICAwKC5gwkMCxIESXRlbRiAgIDgxoGSCgw'
-email: ''
-data: 14/09/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/240,176847679,2016-09-14 08:40:47,2016-09-14 08:37:58,Caritas Frosinone - Veroli - Ferentino,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Terremoto Centro Italia"", ""chi"": ""Caritas Frosinone - Veroli - Ferentino"", ""data"": ""14/09/2016"", ""descrizione"": ""Al momento si procede solo a raccolta di offerte in denaro tramite versamento sui conti correnti indicati. Tranne le Parrocchie, nessuno \u00e8 incaricato di raccogliere offerte in contanti a nome della Caritas."", ""email"": """", ""iban"": ""IT93 C052 9714 801C C103 0008 343"", ""intestazione"": ""Caritas diocesana di Frosinone-Veroli-Ferentino"", ""link"": ""http://caritas.diocesifrosinone.it/18-/-sp-930/149-terremoto-centro-italia-domenica-18-settembre-2016-colletta-in-tutte-le-chiese.html"", ""postale"": """"}","<pre><yamldata>chi: 'Caritas Frosinone - Veroli - Ferentino'
-descrizione: 'Al momento si procede solo a raccolta di offerte in denaro tramite versamento sui conti correnti indicati. Tranne le Parrocchie, nessuno è incaricato di raccogliere offerte in contanti a nome della Caritas.'
-intestazione: 'Caritas diocesana di Frosinone-Veroli-Ferentino'
-iban: 'IT93 C052 9714 801C C103 0008 343'
-bic: ''
-postale: ''
-causale: 'Terremoto Centro Italia'
-link: 'http://caritas.diocesifrosinone.it/18-/-sp-930/149-terremoto-centro-italia-domenica-18-settembre-2016-colletta-in-tutte-le-chiese.html'
 email: ''
 data: 14/09/2016
 </yamldata></pre>
