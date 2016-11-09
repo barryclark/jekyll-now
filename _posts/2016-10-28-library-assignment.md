@@ -24,8 +24,34 @@ The results change depending on certain variables.
 
 ### b) What is the class number, (and location) of the most useful books listed?
 <ul>
-<li>Cambridge Main Collection 794.81526</li>
-<li>Chelmsford Main Collection 794.816693</li>
+<li>Cambridge Main Collection 794.81</li>
+<li>Chelmsford Main Collection 794.81</li>
+</ul>
+
+### c) How many databases are provided? 
+<b>21</b>, listed below.
+<ul>
+<li>ProQuest Central</li>
+<li>Facet SciTech Premium Collection</li>
+<li>Technology Collection</li>
+<li>ProQuest SciTech Collection</li>
+<li>ProQuest Advanced Technologies & Aerospace Collection</li>
+<li>ProQuest Computer Science Collection</li>
+<li>ProQuest Central (new)</li>
+<li>ProQuest Business Collection</li>
+<li>Business Premium Collection</li>
+<li>ABI/INFORM Complete</li>
+<li>ProQuest Research Library</li>
+<li>ProQuest Discovery</li>
+<li>ProQuest Pharma Collection</li>
+<li>OneFile (GALE)</li>
+<li>ABI/INFORM Dateline</li>
+<li>Social Science Premium Collection</li>
+<li>ProQuest Social Sciences Premium Collection</li>
+<li>Scopus (Elsevier)</li>
+<li>Advanced Technologies Database with Aerospace</li>
+<li>Computer and Information Systems Abstracts</li>
+<li>Chelmsford</li>
 </ul>
 
 
