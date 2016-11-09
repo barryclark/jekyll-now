@@ -76,6 +76,10 @@ a {
 	cursor: pointer;
   &:hover, &:active {
     color: $blue;
+    text-shadow: 0 0 14px $black;
+    background-color: $black;
+    box-shadow: 0 0 25px 13px $black;
+    transition-duration: 0.5s;
   }
 }
 
@@ -174,7 +178,7 @@ header h1 span {
 
 .wrapper-masthead {
   margin-bottom: 50px;
-  background-position: 50% 50%;
+  background-position: 50% 30%;
   background-image: url(../images/header-2.png);
   padding-bottom: 50px;
 }
@@ -256,14 +260,16 @@ nav {
 
   a {
     margin-left: 20px;
-    color: $darkGray;
+    color: $white;
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
+    text-shadow: 0 0 15px #00ffad;
 
     @include mobile {
       margin: 0 10px;
       color: $blue;
+      text-shadow: 0 0 15px #00ffad;
     }
   }
 }
