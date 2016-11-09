@@ -286,25 +286,24 @@ nav {
     margin-top: 23px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 18px;
-    padding-right: 1em;
     justify-content: center;
     
     @include mobile {
         float: none;
         margin-top: 9px;
-        display: block;
+        display: flex;
         font-size: 16px;
     }
 
   a {
-    margin-left: 20px;
+    margin: 0px 5em;
     color: $white;
-    text-align: right;
-    font-weight: 300;
+    text-align: center;
+    font-weight: 800;
     letter-spacing: 1px;
     text-shadow: 0 0 15px $blue;
     transition-duration: 0.5s;
-    text-transform: capitalize;
+    text-transform: uppercase;
 
     @include mobile {
       text-transform: capitalize;
