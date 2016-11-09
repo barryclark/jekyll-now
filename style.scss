@@ -213,7 +213,7 @@ header .small-text{
   margin-bottom: 50px;
   background-position: 50% 30%;
   background-image: url(../images/header-2.png);
-  padding-bottom: 50px;
+  padding-bottom: 23px;
   box-shadow: 0 0px 33px 0px black;
 }
 .wrapper-masthead, .wrapper-footer{
@@ -278,17 +278,19 @@ header .small-text{
 }
 
 nav {
-  float: right;
-  margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
-  font-size: 18px;
-  padding-right: 1em;
-  @include mobile {
-    float: none;
-    margin-top: 9px;
-    display: block;
-    font-size: 16px;
-  }
+    display: flex;
+    margin-top: 23px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    padding-right: 1em;
+    justify-content: center;
+    
+    @include mobile {
+        float: none;
+        margin-top: 9px;
+        display: block;
+        font-size: 16px;
+    }
 
   a {
     margin-left: 20px;
