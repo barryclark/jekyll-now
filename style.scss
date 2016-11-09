@@ -196,6 +196,7 @@ header .small-text{
   background-position: 50% 30%;
   background-image: url(../images/header-2.png);
   padding-bottom: 50px;
+  box-shadow: 0 0px 33px 0px black;
 }
 .wrapper-masthead, .wrapper-footer{
     background-repeat: no-repeat;
@@ -205,7 +206,8 @@ header .small-text{
 }
 
 .masthead {
-  padding: 20px 0;
+  padding: 20px 0 0 0;
+  margin-bottom: 20px;
   border-bottom: 1px solid $lightGray;
 
   @include mobile {
@@ -331,7 +333,7 @@ nav {
   margin-top: 50px;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
+  background-image: url(../images/header-2.png);
 }
 
 footer {
