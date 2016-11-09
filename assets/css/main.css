@@ -1425,8 +1425,7 @@
 
 	body, input, select, textarea {
 		color: #646464;
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
-		font-size: 14pt;
+		font-family:'Malgun Gothic';
 		font-weight: 400;
 		line-height: 1.75;
 	}
@@ -1512,7 +1511,7 @@
 
 	h1, h2, h3, h4, h5, h6 {
 		color: #3c3b3b;
-		font-family: "Raleway", Helvetica, sans-serif;
+		font-family:'Malgun Gothic';
 		font-weight: 800;
 		letter-spacing: 0.25em;
 		line-height: 1.65;
@@ -3504,3 +3503,29 @@ pre code {
   max-height: 340px;
   overflow-y: scroll;
 }
+
+
+
+
+
+/*custom */
+
+#content h1, #content h2, #content h3, #content h4, #content h5{
+font-family:"Nanum Gothic"; font-weight: bold; position: relative; border-radius: 4px;
+border-color:#259CE0; border-left-style: solid; border-left-width:0.25em; padding-left:0.25em; font-weight:bold;
+}
+#content h1:after, #content h2:after, #content h3:after, #content h4:after, #content h5:after {
+content: ""; position: absolute; bottom: 0; left: 0; right:0; height: 1px;
+background-image: -ms-linear-gradient(left, #259CE0, #fff);
+background-image: -webkit-linear-gradient(left, #259CE0, #fff);
+background-image: -moz-linear-gradient(left, #259CE0, #fff);
+background-image: -o-linear-gradient(left, #259CE0, #fff);
+}
+
+/*#content h1:before, #content h2:before, #content h3:before, #content h4:before, #content h5:before{ content:'＃ '; }*/
+#content h1{ font-size:2.00rem; padding-top:0.60em; padding-bottom:0.60em; margin-top:2.00em; border-left-width:0.35em; }
+#content h2{ font-size:1.80rem; padding-top:0.50em; padding-bottom:0.50em; margin-top:1.75em; border-left-width:0.30em; }
+#content h3{ font-size:1.60rem; padding-top:0.40em; padding-bottom:0.40em; margin-top:1.50em; border-left-width:0.25em; }
+#content h4{ font-size:1.40rem; padding-top:0.30em; padding-bottom:0.30em; margin-top:1.25em; border-left-width:0.20em; }
+#content h5{ font-size:1.20rem; padding-top:0.20em; padding-bottom:0.20em; margin-top:1.00em; border-left-width:0.15em; }
+
