@@ -70,7 +70,7 @@ p {
   margin: 15px 0;
 }
 
-a {
+nav a {
   color: $blue;
   text-decoration: none;
 	cursor: pointer;
@@ -81,6 +81,15 @@ a {
     box-shadow: 0 0 25px 13px $black;
     transition-duration: 0.5s;
     border-radius: 1em;
+  }
+}
+
+a {
+  color: $black;
+  text-decoration: none;
+	cursor: pointer;
+  &:hover, &:active {
+    color: $blue;
   }
 }
 
@@ -201,7 +210,6 @@ header .small-text{
 .wrapper-masthead, .wrapper-footer{
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 50% 50%;
     background-blend-mode: normal;
 }
 
@@ -331,9 +339,9 @@ nav {
 
 .wrapper-footer {
   margin-top: 50px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
   background-image: url(../images/header-2.png);
+  background-position: 50% 84%;
+  box-shadow: 0 0px 33px 0px black;
 }
 
 footer {
