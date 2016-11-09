@@ -1,7 +1,18 @@
-.footer-links {
-
+.footer-link {
+    color: white;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    border-radius: 200px;
 }
 
-.footer-links.facebook {
+.footer-link fa {
+  vertical-align: middle;
+  margin: 10px 0px 0px;
+  font-size: larger;
+}
 
+.footer-link.facebook {
+  background: linear-gradient(135deg, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); 
 }
