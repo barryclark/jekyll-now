@@ -134,7 +134,8 @@ maptune.feed.parse = maptune.feed.parse || {};
 				var szTitle		= $(this).find('title:first').text();
 				var szLink		= $(this).find('link:first').text();
 				var szDate		= $(this).find('pubDate').text();
-				    szDate		= $(this).find('dc:date').text();
+				    szDate		= szDate || $(this).find('dc:date').text();
+
 				// test
 				if ( $(this).find('category') )	{
 					var szCategory	= $(this).find('category').text();
@@ -175,7 +176,7 @@ maptune.feed.parse = maptune.feed.parse || {};
 					feature.properties.icon			= szIcon;
 					feature.properties.smallicon	= szSmallIcon;
 					feature.properties.category		= szCategory;
-					feature.properties.legenditem	= "Piceno News";
+					feature.properties.legenditem	= "GeoRSS";
 
 				var d = new Date(szDate);
 				feature.properties.utime = d.getTime();
@@ -217,14 +218,18 @@ maptune.feed.parse = maptune.feed.parse || {};
 					}else
 					// GeoRSS 1.0
 					if ( version && version.match(/1.0/) ){
-						var pointA = $(this).filterNodeGetFirst('georss:point').split(" ");
-						feature.setPosition(pointA[1],pointA[0]);
+						try	{
+							var pointA = $(this).filterNodeGetFirst('georss:point').split(" ");
+							feature.setPosition(pointA[1],pointA[0]);
+						}catch(e){}
 					}else
 					// GeoRSS 2.0
 					if ( version && version.match(/2.0/) ){
-						var lat = $(this).filterNodeGetFirst('geo:lat').text();
-						var lng = $(this).filterNodeGetFirst('geo:long').text();
-						feature.setPosition(lng,lat);
+						try	{
+							var lat = $(this).filterNodeGetFirst('geo:lat').text();
+							var lng = $(this).filterNodeGetFirst('geo:long').text();
+							feature.setPosition(lng,lat);
+						}catch(e){}
 					}else
 					// default = channel position, if defined
 					if ( channelLat && channelLng ){

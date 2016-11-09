@@ -52,7 +52,7 @@
 							  'smallImage' : 'resources/icons/default/default-small_dark_blue.png',
 							  'markerImageType' : 'png',
 							  'markerCluster' : 'false',
-								  'description': '',
+							  'description': '',
 							},
 						flag:'open',
 						maxLargeIcons: 30});" ><b>Luoghi - Foto</b></a>
@@ -63,6 +63,30 @@
 
 					</li><li>
 
+					<a href="javascript:maptune.addFeedLayer('https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=f530d375f8717890b8d505e2de33d768&&format=feed-georss&group_id=3003557@N20',{
+						type:'GeoRSS',
+						format:'xml',
+						name:'Terremoto Centro Italia - Flickr',
+						title:'Terremoto Centro Italia - Flickr',
+						proxy:'true',
+						layer:
+							{ 'name': 'Terremoto Centro Italia - Flickr',
+							  'markerType' :'custom',
+							  'markerImage' : 'resources/icons/map-icons-collection/photo.png',
+							  'smallImage' : 'resources/icons/default/default-small_dark_blue.png',
+							  'markerImageType' : 'png',
+							  'markerCluster' : 'true',
+							  'description': '',
+							  'minLargeIconZoom': '12'
+							},
+						flag:'open'
+						});" ><b>Flickr - Foto</b></a>
+					<p class="description">fonte: terremotocentroitalia.info<span style="float:right">
+					<a href="https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=f530d375f8717890b8d505e2de33d768&&format=feed-georss&group_id=3003557@N20" target="_blank"> Flickr Foto Stream</a>,
+					<a href="https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=f530d375f8717890b8d505e2de33d768&&format=feed-georss&group_id=3003557@N20" target="_blank"> GeoRSS</a>
+					</span></p>
+
+					</li><li>
 					<a href="javascript:maptune.addFeedLayer('http://crossorigin.me/http://docs.google.com/spreadsheets/d/17lnDV6v0sertzCgvIfjZ2lvXCtquW3KWuUv_1VgCLJA/export?format=csv&gid=0&single=true',{
 						type:'csv',
 						format:'csv',
@@ -86,8 +110,7 @@
 							  'description': '',
 							  'minLargeIconZoom' : '11'
 							},
-						'flag':'open|zoomto',
-						'minLargeIconZoom' : '10'
+						'flag':'open|zoomto'
 					});" ><b>Centri Raccolta Beni per terremoto Centro Italia</b></a>
 					<p class="description">fonte: terremotocentroitalia.info<span style="float:right">
 					<a href="http://docs.google.com/spreadsheets/d/17lnDV6v0sertzCgvIfjZ2lvXCtquW3KWuUv_1VgCLJA" target="_blank"> Gooble Doc</a>,
