@@ -111,6 +111,26 @@ strong, b {
 img {
   max-width: 100%;
 }
+header h1 {
+    text-align: center;
+    font-size: 72px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 20px;
+    clear: both;
+    padding-top: 100px;
+    line-height: 1.05;
+}
+header h1 span {
+    display: inline-block;
+    padding: 0.2em 0.5em;
+    border: #fff solid 10px;
+    border-radius: 0.3em;
+    text-shadow: 4px 4px 3px gray;
+    font-size: 72px;
+}
 
 // Fixes images in popup boxes from Google Translate
 .gmnoprint img {
