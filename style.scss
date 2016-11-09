@@ -143,6 +143,13 @@ header h1 span {
         padding:0.2em 0em;
     }
 }
+header .small-text{
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #fff;
+    line-height: 1;
+    text-shadow: 0 0 15px $blue;
+}
 
 // Fixes images in popup boxes from Google Translate
 .gmnoprint img {
