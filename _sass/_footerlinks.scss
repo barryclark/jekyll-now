@@ -7,6 +7,10 @@
     border-radius: 200px;
 }
 
+.footer-link:hover {
+    transform: translateY(-10px);
+}
+
 .footer-link .fa {
   vertical-align: middle;
   margin: 10px 0px 0px;
