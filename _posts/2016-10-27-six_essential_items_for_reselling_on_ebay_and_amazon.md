@@ -70,9 +70,9 @@ This is just a must have. You need someway to seal boxes. Just don't use it to t
 ## [6. Laser Printer](https://www.amazon.com/s/ref=as_li_ss_tl?url=search-alias=office-products&field-keywords=laser+printer&sprefix=laser+print,undefined,183&n=172648&crid=1YAQ0TYS3LA7J&rh=n:1064954,k:laser+printer&linkCode=ll2&tag=hendrixjoseph-20&linkId=763cbd318dc4c840214471671542859e)
 
 <div>
-These have come down in price recently, and they're about the same size are inkjets. So you don't need a huge thousand dollar printer like you might see at the office. The real advatage to these is they use a lot less ink - actually, toner - than inkjet printers.
+These have come down in price recently, and they're about the same size are inkjets. So you don't need a huge thousand dollar printer like you might see at the office. The real advantage to these is they use a lot less ink - actually, toner - than inkjet printers.
 
-Of course, I feel somewhat hyprocrital about that last one because I still am using my inkjet printer that I bought a decade ago. Hey, it still works!
+Of course, I feel somewhat hypocritical about that last one because I still am using my inkjet printer that I bought a decade ago. Hey, it still works!
 </div>
 
 Do you think I missed anything? Comment below!
