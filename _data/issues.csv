@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1195,188376309,2016-11-09 23:14:00,2016-11-09 23:07:33,Contatti Centro Operativo Comunale #Norcia,42.7952898,13.0918788,"[""Accettato"", ""Bollettino"", ""Contatti"", ""Form"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""09/11/2016"", ""descrizione"": ""Il Centro Operativo Comunale (COC) di Norcia \u00e8 il punto di riferimento per tutte le richieste di informazioni, di assistenza e per le donazioni nel Comune di Norcia."", ""email"": """", ""indirizzo"": ""Via Circonvallazione, Casa Cupa, Norcia, PG, UMB, 06046, Italy"", ""lat"": ""42.7952898"", ""link"": ""http://www.comune.norcia.pg.it"", ""lon"": ""13.0918788"", ""nome"": ""Centro Operativo Comunale Norcia"", ""tel"": ""0743 81 79 01 / 82 87 11""}","<pre><yamldata>nome: 'Centro Operativo Comunale Norcia'
+tel: '0743 81 79 01 / 82 87 11'
+email: ''
+descrizione: 'Il Centro Operativo Comunale (COC) di Norcia è il punto di riferimento per tutte le richieste di informazioni, di assistenza e per le donazioni nel Comune di Norcia.'
+indirizzo: 'Via Circonvallazione, Casa Cupa, Norcia, PG, UMB, 06046, Italy'
+lat: '42.7952898'
+lon: '13.0918788'
+link: 'http://www.comune.norcia.pg.it'
+data: 09/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1194,188375158,2016-11-09 23:13:19,2016-11-09 23:00:50,Contatti Centro Operativo Comunale #Cascia,42.718279392224865,13.013370037078857,"[""Accettato"", ""Bollettino"", ""Contatti"", ""Form"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""09/11/2016"", ""descrizione"": ""Il Centro Operativo Comunale (COC) di Cascia \u00e8 il punto di riferimento per tutte le richieste di informazioni, di assistenza e per le donazioni nel Comune di Cascia."", ""email"": ""coc.cascia@gmail.com"", ""indirizzo"": ""Via del Plebiscito, Cascia, PG, UMB, 06043, Italy"", ""lat"": ""42.718279392224865"", ""link"": ""http://www.comune.cascia.pg.it"", ""lon"": ""13.013370037078857"", ""nome"": ""Centro Operativo Comunale Cascia"", ""tel"": ""0743 76 592 - 0743 75 02 09""}","<pre><yamldata>nome: 'Centro Operativo Comunale Cascia'
 tel: '0743 76 592 - 0743 75 02 09'
 email: coc.cascia@gmail.com
@@ -2066,17 +2076,6 @@ data: 30/10/2016
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/893,186127595,2016-10-30 10:35:47,2016-10-30 10:05:47,Mettiamo a disposizione casa per famiglia a Varazze (Sv),,,"[""Accettato"", ""Alloggi"", ""Bollettino"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""30/10/2016"", ""descrizione"": ""Mettiamo a disposizione casa per famiglia con bambini, 4 posti letto, in piccola localit\u00e0 di mare Varazze (SV) per persone danneggiate dal terremoto. In pi\u00f9 offriamo ospitalit\u00e0 presso nostra abitazione nella citt\u00e0 di Genova per mamma con bambini."", ""email"": ""dspiridi@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3383788135""}","<pre><yamldata>tel: '3383788135'
 email: dspiridi@gmail.com
 descrizione: 'Mettiamo a disposizione casa per famiglia con bambini, 4 posti letto, in piccola località di mare Varazze (SV) per persone danneggiate dal terremoto. In più offriamo ospitalità presso nostra abitazione nella città di Genova per mamma con bambini.'
-indirizzo: ''
-lat: ''
-lon: ''
-link: ''
-immagine: ''
-data: 30/10/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/892,186125811,2016-10-30 09:42:53,2016-10-30 09:24:42,Offresi alloggio a Buja (UD),,,"[""Accettato"", ""Alloggi"", ""Bollettino"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""30/10/2016"", ""descrizione"": ""Offresi disponibilit\u00e0 presso propria abitazione a Buja (UD), una camera doppia con bagno ed eventuali altre due persone (famiglia o altro) per il tempo necessario"", ""email"": ""val_gue@hotmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""348/3051736""}","<pre><yamldata>tel: 348/3051736
-email: val_gue@hotmail.com
-descrizione: 'Offresi disponibilità presso propria abitazione a Buja (UD), una camera doppia con bagno ed eventuali altre due persone (famiglia o altro) per il tempo necessario'
 indirizzo: ''
 lat: ''
 lon: ''
