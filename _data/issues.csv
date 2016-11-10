@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1204,188502290,2016-11-10 18:12:54,2016-11-10 12:59:25,casa di legno,,,"[""Accettato"", ""Bollettino"", ""Da rilanciare"", ""Fabbisogni"", ""Form"", ""Pubblicare su FB"", ""Pubblicare su TW"", ""Sisma Ottobre""]",,,"{""cosa"": "" cercasi casa di legno #CASCIA"", ""data"": ""10/11/2016"", ""descrizione"": ""Con la presente chiedo se e possibile avere una piccola casa di legno per mia madre invalida, dializzata da 21 anni vedova di 85 anni abita al centro storico un po isolato. Grazie mille anche se faccio una richiesta un po grande.."", ""email"": ""patriziabruni1957@libero.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3398925891""}","<pre><yamldata>tel: '3398925891'
+email: patriziabruni1957@libero.it
+cosa: ' cercasi casa di legno #CASCIA'
+descrizione: 'Con la presente chiedo se e possibile avere una piccola casa di legno per mia madre invalida, dializzata da 21 anni vedova di 85 anni abita al centro storico un po isolato. Grazie mille anche se faccio una richiesta un po grande..'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 10/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1200,188474186,2016-11-10 11:38:44,2016-11-10 10:40:22,Attrezzatura medica essenziale - #CASCIA #PERUGIA,42.7170082,13.0135022,"[""Accettato"", ""Bollettino"", ""Da rilanciare"", ""Fabbisogni"", ""Form"", ""Pubblicare su FB"", ""Pubblicare su TW"", ""Sisma Ottobre""]",,,"{""cosa"": ""Attrezzatura medica essenziale - #CASCIA #PERUGIA"", ""data"": ""10/11/2016"", ""descrizione"": ""CASCIA - LOC. PALMAIOLO Il Dr. Simone Cariani ha perso tutto il materiale medico essenziale sotto le macerie. Per poter svolgere il suo lavoro ha bisogno di: 1 computer, 1 telefono cellulare, 1 borsa da medico, 1 analizzatore glicemia, 1 sfigmomanometro, 1 fonendoscopio litmann, 1 otoscopio. Contattare il Dr. Cariani."", ""email"": ""carianisimone@gmail.com"", ""immagine"": """", ""indirizzo"": ""Largo Monsignor Antonio Elemosina, Cascia, PG, UMB, 06043, Italia"", ""lat"": ""42.7170082"", ""link"": """", ""lon"": ""13.0135022"", ""tel"": ""3383202296""}","<pre><yamldata>tel: '3383202296'
 email: carianisimone@gmail.com
 cosa: 'Attrezzatura medica essenziale - #CASCIA #PERUGIA'
