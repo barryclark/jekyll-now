@@ -284,7 +284,7 @@ header .small-text{
 nav {
     display: flex;
     margin-top: 23px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: $helveticaNeue;
     font-size: 18px;
     justify-content: center;
     
@@ -306,10 +306,13 @@ nav {
     text-transform: uppercase;
 
     @include mobile {
-      text-transform: capitalize;
+      display: flex;
+      justify-content: center;
+      text-transform: uppercase;
       margin: 0 10px;
       color: $blue;
       text-shadow: 0 0 15px $blue;
+      transition-duration: 0.5s;
     }
   }
 }
