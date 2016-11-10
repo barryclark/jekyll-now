@@ -2,11 +2,6 @@
 published: false
 title: training-and-deploying-your-first-tensorflow-vision-model-with-android
 ---
-_fdsafd_
-
-{% if 1==1 %}
-  Hello {{ user.name }}!
-{% endif %}
 
 In my [previous post](http://jalammar.github.io/Supercharging-android-apps-using-tensorflow/), we looked at how TensorFLow's [example Android app](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/examples/android) works. We saw how it loaded an object-detection machine-learning model, and used it to make predictions about what it sees from the camera.
 
@@ -38,18 +33,19 @@ But can we do better? Let's try. Let's first define what it means to be better i
 
 [Gif]
 
-
-Test text
-{: style="color:gray; font-size: 80%; text-align: center;"}
-
-
 That's quite a bit of yellow line. Yellow line is bad. Yellow line is error. We want to shrink that as much as we can.
 
- Area (sq ft) (x) | Price (y) | Prediction (y_) | y - y_ | (y - y_)²
+ Area (1000 sq ft) (x) | Price (y) | Prediction (y_) | y - y_ | (y - y_)²
  --- |  --- | --- | --- | --- 
- 2,104 | 399,900 | 385,000  | 10,000 | 100,000,000
- 1,600 | 329,900 | 385,000  | 10,000 | 100,000,000
- 2,400 | 369,000 | 385,000  | 10,000 | 100,000,000
+ 2,104 | 399.9 | 385  | 14 | 196
+ 1,600 | 329.9 | 292  | 37 | 1,369
+ 2,400 | 369   | 439  | -70 | 4,900
+| | | Total: |6,465
+
+Here we can see the actual price value, the predicted price value, and the difference between them. Then we'll need to sum up the difference so we have a number that tells us how much error there is in this prediction model. The problem is, the 3rd row has -70 as its value. We have to deal with this negative value if we want to use the difference between the prediction and price as our error measuring stick. That's why we introduce an additional column that shows the error squared, thus getting rid of the negative value.
+
+This is now our definition of doing better -- a better model is one that has less error. Total error is measured as the sum of the errors for each point in our data set. For each point, the error is measured by the difference between the actual value and the predicted value, raised to the power of 2. This is called our **loss function** (also, **cost function**).
+
 
 
 ## Groundwork
