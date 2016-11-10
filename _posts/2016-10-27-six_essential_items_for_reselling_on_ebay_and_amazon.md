@@ -20,7 +20,7 @@ This is so important I'm making it the zeroth item. Also zeroth so I can keep th
 ## [1.	Scotch 3M Bubble Mailers Size 0 (6" x 9") - 25ct](https://www.amazon.com/gp/product/B000PE46I8/ref=as_li_ss_tl?ie=UTF8&psc=1&linkCode=ll1&tag=hendrixjoseph-20&linkId=5373af65e78b96768f06ffe42a399f09)
 
 <div style="overflow: auto;"><div class="eighty-width float-left">
-DVD cases fit snuggly into these. They’re great for other small things, too. If you buy them individually at the store (say, Kroger or Meijer), the cost roughly 70&cent; a mailer. Amazon has them for around $7.50, which makes them cost 30&cent; apiece, which is less than half the cost. Yeah, I know it’s <i>only</i> 40&cent;, but it adds up - that’s $10 a box!
+DVD cases fit snugly into these. They’re great for other small things, too. If you buy them individually at the store (say, Kroger or Meijer), the cost roughly 70&cent; a mailer. Amazon has them for around $7.50, which makes them cost 30&cent; apiece, which is less than half the cost. Yeah, I know it’s <i>only</i> 40&cent;, but it adds up - that’s $10 a box!
 
 I’ve already ordered my second box.</div>
 
