@@ -148,6 +148,7 @@ nerdinator add webservices/service2
 cd ~/api
 nerdinator add webapis/api
 nerdinator start webservices
+tmux a -t service1 # Attach to service1
 {% endhighlight %}
 
 You can then perform actions like:
@@ -176,6 +177,12 @@ nerdinator start
 
 There are a number more features I want to add to nerdinator, but for now I'm happy with how it lets me easily
 start all of my tmuxinator sessions for our projects.
+
+Some features I want to add in the near future:
+
+1. Better error handling for invalid namespaces and other commands
+2. Flags for auto attaching to the session
+3. Command for initializing the current directory with an unconfigured tmuxinator.yml
 
 At this point I have come a long way from writing down a bunch of commands on a notepad
 and I'm really pleased with the setup I've made for managing all of my terminals.
