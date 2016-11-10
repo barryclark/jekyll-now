@@ -703,7 +703,15 @@ footer {
         transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
     }
 }
-
+.logo:hover{
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #2aab33;
+  background-image: linear-gradient(to right, #FC373C 0%, #FAD64F 28.2%, #323C40 100%);
+  /* Запрещаем рисовать градиент Опере,
+     понимающей префикс -webkit- */
+  background-image: -o-linear-gradient(transparent, transparent);
+}
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
