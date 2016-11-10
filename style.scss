@@ -703,7 +703,7 @@ footer {
         transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
     }
 }
-.logo:hover{
+h1 a .logo:hover{
     -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: #2aab33;
