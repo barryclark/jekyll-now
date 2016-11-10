@@ -3,7 +3,7 @@ layout: post
 title: Swift 3 - Salesforce Mobile SDK 4.3.1
 ---
 
-At Dreamforce16 as expected there were many innovation intorduced. On mobile front two especially have peacked my interest, S1 Mobile app customization and submited to Appstore as your own and Swift support in Mobile SDK. At first glance S1 mobile app branding seem huge, but digging bit deeper it turned out to push your own S1 Mobile app to AppStore you need Salesforce Professional services contract and it can be done for a fee. That can be great option for Enterprise customers who wnat to have Appstore presence. For mobile developers we want to do some code. 
+At Dreamforce16 as expected there were many innovation intorduced. On mobile front two especially have peacked my interest, S1 Mobile app customization and submited to Appstore as your own and Swift support in Mobile SDK. At first glance S1 mobile app branding seem huge, but digging bit deeper it turned out to push your own S1 Mobile app to AppStore you need Salesforce Professional services contract and it can be done for a fee. That can be great option for Enterprise customers who want to have the Appstore presence. For mobile developers we want to write some code. 
 
 Next is Mobile SDK + Swift, here we will try to explore support for Xcode 8 & Swift 3. As this article been written during the week of DF16 the Salesforce Mobile SDK version is 4.3.1 sadly neither master nor unstable branches seem to support Swift 3. However, Swift 2.3 with conversion step does work well. So we can explore this part on how set up sdk and new build Swift project:
 
