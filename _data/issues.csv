@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1222,188644219,2016-11-10 23:12:18,2016-11-10 23:11:51,"""Sangue per la bimba terremotata"". Ma l'appello via WhatsApp è una bufala",,,"[""Accettato"", ""Bollettino"", ""Bufale"", ""Sisma Ottobre""]",,,"{""data"": ""10/11/2016"", ""descrizione"": ""In questi giorni gira su Whatsapp e via sms un messaggio che chiede una donazione di sangue per conto del Policlinico di Milano per una bambina sopravvissuta al terremoto. La richiesta, come dichiarato dal Policlinico e poi riportato da alcuni organi di stampa, \u00e8 assolutamente falsa. Come precisato in una nota \""il Policlinico ha ben altri canali per la raccolta di sangue, anche in situazioni di estrema urgenza\""."", ""link"": ""http://www.ilgiorno.it/milano/cronaca/bambina-terremoto-sangue-bufala-1.2652466?wt_mc=twitteruser"", ""titolo"": ""\""Sangue per la bimba terremotata\"". Ma l'appello via WhatsApp \u00e8 una bufala""}","<pre><yamldata>titolo: '""Sangue per la bimba terremotata"". Ma l''appello via WhatsApp è una bufala'
+descrizione: 'In questi giorni gira su Whatsapp e via sms un messaggio che chiede una donazione di sangue per conto del Policlinico di Milano per una bambina sopravvissuta al terremoto. La richiesta, come dichiarato dal Policlinico e poi riportato da alcuni organi di stampa, è assolutamente falsa. Come precisato in una nota ""il Policlinico ha ben altri canali per la raccolta di sangue, anche in situazioni di estrema urgenza"".'
+link: 'http://www.ilgiorno.it/milano/cronaca/bambina-terremoto-sangue-bufala-1.2652466?wt_mc=twitteruser'
+data: 10/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1220,188642773,2016-11-10 23:04:05,2016-11-10 23:03:31,La falsa notizia del terremoto magnitudo 7.1,,,"[""Accettato"", ""Bufale"", ""Sisma Ottobre"", ""Twitter""]",,,"{""data"": ""10/11/2016"", ""descrizione"": ""Nei minuti immediatamente successivi alla violenta scossa che ha colpito l'Italia centrale il 30 ottobre, chi andava in cerca di notizie e aggiornamenti su quanto successo ha appreso da agenzie, televisioni e giornali che si era appena verificato un terremoto di magnitudo 7.1. Come \u00e8 stato poi confermato, il terremoto del 30 ottobre \u00e8 stato in realt\u00e0 di magnitudo 6.5, la pi\u00f9 alta dal sisma dell'Irpinia del 1980. Un terremoto forte, dunque, ma non 7.1. E non si \u00e8 trattato di un errore, poi corretto, dei sismologi, ma di una notizia falsa che in pochissimi minuti ha fatto il giro del pianeta, ripresa dai media di mezzo mondo, senza che nessuno ne verificasse la fonte e la veridicit\u00e0. Per capire come \u00e8 nata e si \u00e8 diffusa questa bufala vedi articolo pubblicato da Valigia Blu."", ""link"": ""http://www.valigiablu.it/notizia-falsa-terremoto/"", ""titolo"": ""La falsa notizia del terremoto magnitudo 7.1""}","<pre><yamldata>titolo: 'La falsa notizia del terremoto magnitudo 7.1'
 descrizione: 'Nei minuti immediatamente successivi alla violenta scossa che ha colpito l''Italia centrale il 30 ottobre, chi andava in cerca di notizie e aggiornamenti su quanto successo ha appreso da agenzie, televisioni e giornali che si era appena verificato un terremoto di magnitudo 7.1. Come è stato poi confermato, il terremoto del 30 ottobre è stato in realtà di magnitudo 6.5, la più alta dal sisma dell''Irpinia del 1980. Un terremoto forte, dunque, ma non 7.1. E non si è trattato di un errore, poi corretto, dei sismologi, ma di una notizia falsa che in pochissimi minuti ha fatto il giro del pianeta, ripresa dai media di mezzo mondo, senza che nessuno ne verificasse la fonte e la veridicità. Per capire come è nata e si è diffusa questa bufala vedi articolo pubblicato da Valigia Blu.'
 link: 'http://www.valigiablu.it/notizia-falsa-terremoto/'
@@ -7637,18 +7642,6 @@ bic: ''
 postale: ''
 causale: 'Terremoto Centro Italia'
 link: 'http://caritas.diocesifrosinone.it/18-/-sp-930/149-terremoto-centro-italia-domenica-18-settembre-2016-colletta-in-tutte-le-chiese.html'
-email: ''
-data: 14/09/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/239,176847545,2016-09-14 08:40:41,2016-09-14 08:37:13,Unione dei comuni Empolese Valdelsa,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": ""BAPPIT21T63"", ""causale"": ""Emergenza Terremoto Centro Italia 2016"", ""chi"": ""Unione dei comuni Empolese Valdelsa"", ""data"": ""14/09/2016"", ""descrizione"": """", ""email"": """", ""iban"": ""IT97 V 05034 37831 000000000135"", ""intestazione"": ""Unione dei Comuni Circondario dell'Empolese Valdelsa"", ""link"": ""http://www.empolese-valdelsa.it/"", ""postale"": """"}","<pre><yamldata>chi: 'Unione dei comuni Empolese Valdelsa'
-descrizione: ''
-intestazione: 'Unione dei Comuni Circondario dell''Empolese Valdelsa'
-iban: 'IT97 V 05034 37831 000000000135'
-bic: BAPPIT21T63
-postale: ''
-causale: 'Emergenza Terremoto Centro Italia 2016'
-link: 'http://www.empolese-valdelsa.it/'
 email: ''
 data: 14/09/2016
 </yamldata></pre>
