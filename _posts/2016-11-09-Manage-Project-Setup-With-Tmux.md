@@ -45,7 +45,7 @@ You can do a lot with tmux but I only use a small set of core commands regularly
 * `s`: Open menu to switch sessions
 * `d`: Detach from the current session
 
-## Using Tmux to Manage my Project
+## Managing a Project
 
 These core commands make it pretty easy to get the layout of logs, consoles, and servers that I need to setup for my application, but I still have to set all of this up every time I reboot.
 
@@ -167,9 +167,9 @@ nerdinator start webservices
 
 {% highlight bash %}
 nerdinator start
-//start service1
-//start service2
-//start api
+// start service1
+// start service2
+// start api
 {% endhighlight %}
 
 There are a number more features I want to add to nerdinator, but for now it lets me easily
