@@ -13,7 +13,7 @@ This natural step in the development process can be eased by services like Vagra
 
 We were using vagrant, but there were still a number of things to run in the command line before I could get going and I'm sure many web developers can relate. I had to do `npm run dev` locally for fast hot reloading of assets, ssh into vagrant to run the server also using npm, as well as start some required services on the vm, tail some log files and set up a db console for convenience.
 
-I initially wrote down these steps and that can be fine, since I rarely restart my computer it isn't too much of a hassle to re-run everything and while tabbing between terminal instances isn't very efficient, it works fine.
+I initially wrote down these steps which was fine, since I rarely restart my computer it isn't too much of a hassle to re-run everything and then tab between my different terminals.
 
 ## Using Tmux Effectively
 
