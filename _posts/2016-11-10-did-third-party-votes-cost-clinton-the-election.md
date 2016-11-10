@@ -2,8 +2,8 @@
 layout: post
 title: Did Third Party Votes Cost Clinton the Election?
 tags: [politics]
+keywords: [trump, donald trump, clinton, hillary clinton, president, electoral college, elector, election, elections, vote, votes, third party]
 csses: [/css/election2016.css]
-permalink: /newpost/
 ---
 
 I've noticed that on my social media feeds a lot of people are deeply upset that Donald Trump was elected President. Well, technically, he hasn't been elected yet. The [Electoral College](https://en.wikipedia.org/wiki/Electoral_College_%28United_States%29) will [meet on Monday, December 12th, 2016 in their respective state capitals](https://en.wikipedia.org/wiki/Electoral_College_%28United_States%29#Meetings) to cast their votes, but it's highly unlikely anyone will be a [faithless elector](https://en.wikipedia.org/wiki/Faithless_elector).
@@ -31,7 +31,7 @@ This is how things stand now - with 233 votes pledged for Clinton and 305 pledge
   <div class="trump-div" style="width: 57%">Trump: 305</div>
 </div>
 
-For this case, I'll focus on two state: Utah and Arizona. Utah because Utahns cast the highest percentage for third party (28% percent for Clinton,	47% for Trump, and 25% for a third party), and Arizona because it was one of the closest states to a tie (888374 votes for Clinton, 972900 votes for Trump,	and 98779 votes for a third party).
+For this case, I'll focus on two states: Utah and Arizona. Utah because Utahns cast the highest percentage for third party (28% percent for Clinton,	47% for Trump, and 25% for a third party), and Arizona because it was one of the closest states to a tie (888374 votes for Clinton, 972900 votes for Trump,	and 98779 votes for a third party).
 
 If those people who voted third party had not voted at all (or at least for president), then, in Utah, Trump would have received [63%](https://www.google.com/search?q=47%2F(47%2B28)) of the vote and Clinton would have received [37%](https://www.google.com/search?q=28%2F(47%2B28)). Similarly for Arizona, Clinton would have received [48%](https://www.google.com/search?q=888374%2F%28888374%2B972900%29) and Trump [52%](https://www.google.com/search?q=972900%2F%28888374%2B972900%29). Trump still wins, and this is true across all states.
 
@@ -64,7 +64,7 @@ This is the opposite of case three. Here, all third party votes would've ended u
   <div class="trump-div" style="width: 57%">Trump: 305</div>
 </div>
 
-In this final scenario (that I'm presenting, at least), third party votes "siphoned off" and equal amount of votes from both Clinton and Trump. This case is as unexciting as the first one.
+In this final scenario (that I'm presenting, at least), third party votes "siphoned off" an equal amount of votes from both Clinton and Trump. This case is as unexciting as the first one.
 
 Let's look at Utah and Arizona again. In Utah, Trump would have received [60%](https://www.google.com/search?q=47%2B25%2F2) of the vote and Clinton would have received [40%](https://www.google.com/search?q=27%2B25%2F2). For Arizona, Clinton would have received [937763](https://www.google.com/search?q=888374%2B98779%2F2) and Trump [1022289](https://www.google.com/search?q=972900%2B98779%2F2). (Some poor voter's vote got split down the middle.) Trump will still win, and again this is true for all states.
 
