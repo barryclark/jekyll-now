@@ -3,6 +3,7 @@ layout: post
 title: Did Third Party Votes Cost Clinton the Election?
 tags: [politics]
 keywords: [trump, donald trump, clinton, hillary clinton, president, electoral college, elector, election, elections, vote, votes, third party]
+image: /images/covers/2016election-cover.jpg
 csses: [/css/election2016.css]
 ---
 
