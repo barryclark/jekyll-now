@@ -144,12 +144,20 @@ header h1 {
         padding-top: 20px;    
     }
 }
+h3 #work{
+    font-size: 40px;
+    padding: 0 0 0 2em;
+    border-bottom: 3px solid #00ffad;
+    line-height: 1;
+    margin: 0 0 20px 0px; 
+}
 header h1 span {
     display: inline-block;
     padding: 0.2em 0.5em;
     border: #fff solid 10px;
     border-radius: 0.3em;
     font-size: 72px;
+    border-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='50'><defs><linearGradient id='redgradient'><stop offset='0' stop-color='%23FC373C'/><stop offset='0.362' stop-color='%23FAD64F'/><stop offset='1' stop-color='%23323C40'/></linearGradient></defs><g id='Layer_1'><path d='M0,0 L50,0 L50,50 L0,50 L0,0 z' fill='url(%23redgradient)' width='100%' height='100%'/></g></svg>") 10% stretch;
     
     @include mobile {
         padding:0.2em 0em;
@@ -167,10 +175,11 @@ header .small-text{
     font-family: $helvetica;
 }
 .header_bottom_hr{
-    border-bottom: 1px solid $lightGray;
+    border-bottom: 2px solid #D4B94C;
     width: 100%;
     max-width: 740px;
     margin: 0 auto;
+    border-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='50'><defs><linearGradient id='redgradient'><stop offset='0' stop-color='%23FC373C'/><stop offset='0.362' stop-color='%23FAD64F'/><stop offset='1' stop-color='%23323C40'/></linearGradient></defs><g id='Layer_1'><path d='M0,0 L50,0 L50,50 L0,50 L0,0 z' fill='url(%23redgradient)' width='100%' height='100%'/></g></svg>") 10% stretch;
 }
 
 // Fixes images in popup boxes from Google Translate
@@ -459,7 +468,7 @@ footer {
     position: relative;
     display: block;
     float: left;
-    width: 25%;
+    width: 33%;
     cursor: pointer
 }
 
