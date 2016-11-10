@@ -80,10 +80,10 @@ link: ''
 immagine: ''
 data: 10/11/2016
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1204,188502290,2016-11-10 22:01:01,2016-11-10 12:59:25,Cercasi casa di legno a #CASCIA,,,"[""Accettato"", ""Bollettino"", ""Da rilanciare"", ""Fabbisogni"", ""Form"", ""Pubblicare su FB"", ""Pubblicare su TW"", ""Sisma Ottobre""]",,,"{""cosa"": "" cercasi casa di legno #CASCIA"", ""data"": ""10/11/2016"", ""descrizione"": ""Con la presente chiedo se e possibile avere una piccola casa di legno per mia madre invalida, dializzata da 21 anni vedova di 85 anni abita al centro storico un po isolato. Grazie mille anche se faccio una richiesta un po grande.."", ""email"": ""patriziabruni1957@libero.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3398925891""}","<pre><yamldata>tel: '3398925891'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1204,188502290,2016-11-10 22:02:05,2016-11-10 12:59:25,Cercasi casa di legno a #CASCIA,,,"[""Accettato"", ""Bollettino"", ""Da rilanciare"", ""Fabbisogni"", ""Form"", ""Pubblicare su FB"", ""Pubblicare su TW"", ""Sisma Ottobre""]",,,"{""cosa"": "" cercasi casa di legno #CASCIA"", ""data"": ""10/11/2016"", ""descrizione"": ""Con la presente chiedo se \u00e8 possibile avere una piccola casa di legno per mia madre invalida, dializzata da 21 anni, vedova di 85 anni, abita nel centro storico un po' isolato. Grazie mille, anche se faccio una richiesta un po' grande.."", ""email"": ""patriziabruni1957@libero.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3398925891""}","<pre><yamldata>tel: '3398925891'
 email: patriziabruni1957@libero.it
 cosa: ' cercasi casa di legno #CASCIA'
-descrizione: 'Con la presente chiedo se e possibile avere una piccola casa di legno per mia madre invalida, dializzata da 21 anni vedova di 85 anni abita al centro storico un po isolato. Grazie mille anche se faccio una richiesta un po grande..'
+descrizione: 'Con la presente chiedo se è possibile avere una piccola casa di legno per mia madre invalida, dializzata da 21 anni, vedova di 85 anni, abita nel centro storico un po'' isolato. Grazie mille, anche se faccio una richiesta un po'' grande..'
 indirizzo: ''
 lat: ''
 lon: ''
