@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1198,188457846,2016-11-10 09:26:12,2016-11-10 09:24:35,Tappeto srotolabile 20m - #CASCIA,,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Pubblicare su FB"", ""Pubblicare su TW"", ""Sisma Ottobre""]",,,"{""cosa"": ""Tappeto srotolabile 20m - #CASCIA"", ""data"": ""10/11/2016"", ""descrizione"": ""1 tappeto srotolabile (tipo erba sintetica) per sopperire minimamente alla quantit\u00e0 di fango che si \u00e8 creata in adiacenza delle tende e dei camper dove le persone stanno vivendo. Almeno 20 metri loc. palmaiolo di Cascia. Contattare Simone."", ""email"": ""carianisimone@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""\u202a338\u00a0320\u00a02296\u202c""}","<pre><yamldata>tel: ""‪338\_320\_2296‬""
+email: carianisimone@gmail.com
+cosa: 'Tappeto srotolabile 20m - #CASCIA'
+descrizione: '1 tappeto srotolabile (tipo erba sintetica) per sopperire minimamente alla quantità di fango che si è creata in adiacenza delle tende e dei camper dove le persone stanno vivendo. Almeno 20 metri loc. palmaiolo di Cascia. Contattare Simone.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 10/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1197,188382570,2016-11-09 23:47:03,2016-11-09 23:46:28,"Richiesta beni e derrate alimentari per #Amatrice, #Muccia e #Sarnano (Mc)",,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Facebook"", ""Sisma Ottobre""]",,,"{""cosa"": ""Richiesta beni e derrate alimentari per #Amatrice, #Muccia e #Sarnano (Mc)"", ""data"": ""09/11/2016"", ""descrizione"": ""Il Coordinamento nazionale alluvionati e terremotati sta raccogliendo derrate alimentari a lunga conservazione (per adulti e bambini), indumenti, biancheria, prodotti igiene personale e per la casa, giochi e cancelleria per bambini, stoviglie, pannelli, teloni, stufette. Tutti i beni vengono consegnate direttamente dal Coordinamento a chi ne ha fatto richiesta. Per ulteriori info vedi pagina Facebook: https://www.facebook.com/groups/CoordinamentoComitatiAec/"", ""email"": ""eurosportello@aeceuropa.eu"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""http://www.aeceuropa.eu/richieste_aiuto_terremotati_gest.htm"", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
 email: eurosportello@aeceuropa.eu
 cosa: 'Richiesta beni e derrate alimentari per #Amatrice, #Muccia e #Sarnano (Mc)'
