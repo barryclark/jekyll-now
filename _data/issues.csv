@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1217,188637722,2016-11-10 22:37:50,2016-11-10 22:37:29,Regione #Umbria attiva task force per interventi socio-sanitari,,,"[""Accettato"", ""Bollettino"", ""Notizie Utili"", ""Sisma Ottobre"", ""Twitter""]",,,"{""data"": ""10/11/2016"", ""descrizione"": ""(aun) \u2013 perugia, 10 nov. 016 - L'assessorato regionale alla Sanit\u00e0, alla Coesione Sociale e al Welfare ha istituito una speciale task force a sostegno dei Coc (Centri operativi comunali), che coordiner\u00e0 e supporter\u00e0 gli interventi in ambito socio-sanitario in favore dei terremotati per assicurare risposte complete e uniformi: lo ha reso noto l'assessore Luca Barberini, nel corso di un incontro con amministratori dei comuni su cui insistono le strutture alberghiere umbre che ospitano gli sfollati della Valnerina, dopo il sisma del 30 ottobre scorso, e referenti delle principali associazioni di volontariato che collaborano nella gestione dell'accoglienza."", ""link"": ""http://www.regione.umbria.it/notizie/-/asset_publisher/54m7RxsCDsHr/content/terremoto-costituita-task-force-per-interventi-socio-sanitari?read_more=true#sthash.jhGWAZWr.hYxutGS5.dpuf"", ""titolo"": ""Regione #Umbria attiva task force per interventi socio-sanitari""}","<pre><yamldata>titolo: 'Regione #Umbria attiva task force per interventi socio-sanitari'
+descrizione: '(aun) – perugia, 10 nov. 016 - L''assessorato regionale alla Sanità, alla Coesione Sociale e al Welfare ha istituito una speciale task force a sostegno dei Coc (Centri operativi comunali), che coordinerà e supporterà gli interventi in ambito socio-sanitario in favore dei terremotati per assicurare risposte complete e uniformi: lo ha reso noto l''assessore Luca Barberini, nel corso di un incontro con amministratori dei comuni su cui insistono le strutture alberghiere umbre che ospitano gli sfollati della Valnerina, dopo il sisma del 30 ottobre scorso, e referenti delle principali associazioni di volontariato che collaborano nella gestione dell''accoglienza.'
+link: 'http://www.regione.umbria.it/notizie/-/asset_publisher/54m7RxsCDsHr/content/terremoto-costituita-task-force-per-interventi-socio-sanitari?read_more=true#sthash.jhGWAZWr.hYxutGS5.dpuf'
+data: 10/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1216,188633669,2016-11-10 22:26:35,2016-11-10 22:17:26,Acquisti solidali: i produttori Slow Food nella #Marche e nel #Lazio,,,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Sisma Ottobre"", ""Twitter""]",,,"{""data"": ""10/11/2016"", ""descrizione"": ""Sul sito di Slow Food elenco in continuo aggiornamento dei produttori dei Presidi Slow Food nelle Marche e nel Lazio dai quali \u00e8 possibile acquistare i prodotti per sostenere le economie e la ripresa delle attivit\u00e0 nei luoghi del terremoto."", ""link"": ""http://www.slowfood.it/terremoto-aiutiamo-le-aziende-colpite-scegliamo-i-loro-prodotti/"", ""titolo"": ""Acquisti solidali: i produttori Slow Food nella #Marche e nel #Lazio""}","<pre><yamldata>titolo: 'Acquisti solidali: i produttori Slow Food nella #Marche e nel #Lazio'
 descrizione: 'Sul sito di Slow Food elenco in continuo aggiornamento dei produttori dei Presidi Slow Food nelle Marche e nel Lazio dai quali è possibile acquistare i prodotti per sostenere le economie e la ripresa delle attività nei luoghi del terremoto.'
 link: 'http://www.slowfood.it/terremoto-aiutiamo-le-aziende-colpite-scegliamo-i-loro-prodotti/'
@@ -3806,18 +3811,6 @@ postale: ''
 causale: ''
 link: 'http://www.agid.gov.it/notizie/2016/09/22/pagopa-nelle-marche-attivo-servizio-raccolta-fondi-il-terremoto'
 email: ''
-data: 22/09/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/658,178635620,2016-10-04 16:07:37,2016-09-22 15:04:16,Cercasi casetta di pochi metri quadrati,,,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Casetta di pochi metri quadrati"", ""data"": ""22/09/2016"", ""descrizione"": ""Cerchiamo casetta di pochi metri quadrati, di legno o qualsiasi altro materiale purch\u00e9 sia coibentata."", ""email"": ""tizianofisio@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3319715161""}","<pre><yamldata>tel: '3319715161'
-email: tizianofisio@gmail.com
-cosa: 'Casetta di pochi metri quadrati'
-descrizione: 'Cerchiamo casetta di pochi metri quadrati, di legno o qualsiasi altro materiale purché sia coibentata.'
-indirizzo: ''
-lat: ''
-lon: ''
-link: ''
-immagine: ''
 data: 22/09/2016
 </yamldata></pre>
 ",open
