@@ -1,13 +1,17 @@
 .election-div {
   width: 100%;
+  white-space: nowrap;
 }
 
 .election-div div {
   display: inline-block;
+  padding: 1px 5px 1px 5px;
+  color: white;
 }
 
 .trump-div {
   background-color: blue;
+  text-align: right;
 }
 
 .clinton-div {
