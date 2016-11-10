@@ -2,6 +2,7 @@
 layout: post
 title: newpost
 tags: [politics]
+csses: [/css/election2016.css]
 permalink: /newpost/
 ---
 
