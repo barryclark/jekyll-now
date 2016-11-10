@@ -51,7 +51,7 @@ These core features make it pretty easy to get the layout of logs, consoles, and
 
 I wanted something that would do all of that automatically for me and I heard about a powerful tmux manager and ruby gem aptly named [Tmuxinator](https://github.com/tmuxinator/tmuxinator).
 
-Tmuxinator lets you define a YAML config file that pre-configures your sessions and panes so that you can just run `tmuxinator [name]` to set up your sessions the exactly how you want it.
+Tmuxinator lets you define a YAML config file that pre-configures your sessions and panes so that you can set up the layout and automatic commands that should be run in your windows and panes.
 
 My multi-step setup became a relatively simple tmuxinator config like this:
 
@@ -84,13 +84,13 @@ windows:
         - htop
 {% endhighlight %}
 
-With this config I can run `tmuxinator start generic-project-name` and start a new tmux
+You can create any number of tmuxinator configs with the `tmuxinator new [name]` command that creates a
+config file in the `~/.tmuxinator/[name].yml`.
+
+With this particular config I can then run `tmuxinator start generic-project-name` and start a new tmux
 session named **generic-project-name** with one window and 5 different panes distributed
 in a tile layout of three panes per row. You can choose different types of pre-configured
 layouts or import your own with the exact sizing and placement of panes that you prefer.
-
-You can create any number of tmuxinator configs with the `tmuxinator new [name]` command that creates a
-config file in the `~/.tmuxinator/[name].yml`.
 
 At this point I can put away my notes and not have to worry about doing anymore manual setup.
 On a big monitor I can now manage my vagrant database console, servers, git, and system processes via htop,
@@ -175,7 +175,7 @@ nerdinator start
 // start api
 {% endhighlight %}
 
-There are a number more features I want to add to nerdinator, but for now I'm happy with how it lets me easily
+There are a number of additional features I want to add to nerdinator, but for now I'm happy with how it lets me easily
 start all of my tmuxinator sessions for our projects.
 
 Some features I want to add in the near future:
