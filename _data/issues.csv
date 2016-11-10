@@ -32,10 +32,10 @@ link: ''
 immagine: ''
 data: 10/11/2016
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1205,188537537,2016-11-10 18:15:12,2016-11-10 15:26:39,vestiario e altro,,,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""vestiario e altro"", ""data"": ""10/11/2016"", ""descrizione"": ""Disponibilita' di coperte; giacconi e maglioni pesanti ,usati ma in buonissimo stato. Cerchiamo contatto a cui consegnare a fine mese."", ""email"": ""mmior@libero.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3294262904""}","<pre><yamldata>tel: '3294262904'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1205,188537537,2016-11-10 19:12:57,2016-11-10 15:26:39,Donazione di vestiario invernale e coperte. Consegna entro fine mese,,,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""vestiario e altro"", ""data"": ""10/11/2016"", ""descrizione"": ""Disponibilita' di coperte; giacconi e maglioni pesanti, usati ma in buonissimo stato. Cerchiamo contatto a cui consegnare a fine mese."", ""email"": ""mmior@libero.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3294262904""}","<pre><yamldata>tel: '3294262904'
 email: mmior@libero.it
 cosa: 'vestiario e altro'
-descrizione: 'Disponibilita'' di coperte; giacconi e maglioni pesanti ,usati ma in buonissimo stato. Cerchiamo contatto a cui consegnare a fine mese.'
+descrizione: 'Disponibilita'' di coperte; giacconi e maglioni pesanti, usati ma in buonissimo stato. Cerchiamo contatto a cui consegnare a fine mese.'
 indirizzo: ''
 lat: ''
 lon: ''
