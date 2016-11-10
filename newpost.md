@@ -6,7 +6,7 @@ csses: [/css/election2016.css]
 permalink: /newpost/
 ---
 
-I've noticed that on my social media feeds a lot of people are deeply upset that Donald Trump was elected President. Well, technically, he hasn't been elected yet. The [Electoral College](https://en.wikipedia.org/wiki/Electoral_College_%28United_States%29) will [meet on Monday, December 12th, 2016 in their respective state capitals](https://en.wikipedia.org/wiki/Electoral_College_%28United_States%29#Meetings) to caste their votes, but it's highly unlikely anyone will be a [faithless elector](https://en.wikipedia.org/wiki/Faithless_elector).
+I've noticed that on my social media feeds a lot of people are deeply upset that Donald Trump was elected President. Well, technically, he hasn't been elected yet. The [Electoral College](https://en.wikipedia.org/wiki/Electoral_College_%28United_States%29) will [meet on Monday, December 12th, 2016 in their respective state capitals](https://en.wikipedia.org/wiki/Electoral_College_%28United_States%29#Meetings) to cast their votes, but it's highly unlikely anyone will be a [faithless elector](https://en.wikipedia.org/wiki/Faithless_elector).
 
 One of the biggest claims is that people [voting third party](http://hendrixjoseph.github.io/vote_third_party/) cost Clinton the election. Is this really true? Let's look at some numbers for four different scenarios, and then I'll say whether it's true or not.
 
@@ -66,7 +66,7 @@ This is the opposite of case three. Here, all third party votes would've ended u
 
 In this final scenario (that I'm presenting, at least), third party votes "siphoned off" and equal amount of votes from both Clinton and Trump. This case is as unexciting as the first one.
 
-Let's look at Utah and Arizona again. In Utah, Trump would have received [60%](https://www.google.com/search?q=47%2B25%2F2) of the vote and Clinton would have received [40%](https://www.google.com/search?q=27%2B25%2F2). For Arizona, Clinton would have received [937763](https://www.google.com/search?q=888374%2B98779%2F2) and Trump [1022289](https://www.google.com/search?q=972900%2B98779%2F2). (Some poor voter's vote got split down the middle.) Trump will still wins, and again this is true for all states.
+Let's look at Utah and Arizona again. In Utah, Trump would have received [60%](https://www.google.com/search?q=47%2B25%2F2) of the vote and Clinton would have received [40%](https://www.google.com/search?q=27%2B25%2F2). For Arizona, Clinton would have received [937763](https://www.google.com/search?q=888374%2B98779%2F2) and Trump [1022289](https://www.google.com/search?q=972900%2B98779%2F2). (Some poor voter's vote got split down the middle.) Trump will still win, and again this is true for all states.
 
 ## Closing Remarks
 
