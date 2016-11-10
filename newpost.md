@@ -1,6 +1,6 @@
 ---
 layout: post
-title: newpost
+title: Did Third Party Votes Cost Clinton the Election?
 tags: [politics]
 csses: [/css/election2016.css]
 permalink: /newpost/
@@ -74,4 +74,4 @@ A few other scenarios I didn't cover were if all [Libertarian](https://www.lp.or
 
 Did third party votes cost Clinton the election? Should there have been only two candidates on the ballot in every state?
 
-I say not. Should we force people to vote for who we want them to vote? If so, then what is the point of elections?
+[I say no.](https://en.wikipedia.org/wiki/Betteridge's_law_of_headlines) Should we force people to vote for who we want them to vote? If so, then what is the point of elections?
