@@ -9,6 +9,34 @@ permalink: /newpost/
 ## Case 0: It is as it is
 
 <div class="election-div">
-  <div class="clinton-div" style="width: 43%">Clinton: 43%</div>
-  <div class="trump-div" style="width: 57%">Trump: 57%</div>
+  <div class="clinton-div" style="width: 43%">Clinton: 233</div>
+  <div class="trump-div" style="width: 57%">Trump: 305</div>
+</div>
+
+## Case 1: Other Votes Never Voted
+
+<div class="election-div">
+  <div class="clinton-div" style="width: 43%">Clinton: 233</div>
+  <div class="trump-div" style="width: 57%">Trump: 305</div>
+</div>
+
+## Case 2: Other Votes Go to Clinton
+
+<div class="election-div">
+  <div class="clinton-div" style="width: 58%">Clinton: 314</div>
+  <div class="trump-div" style="width: 40%">Trump: 213</div>
+</div>
+
+## Case 3: Other Votes Go to Trump
+
+<div class="election-div">
+  <div class="clinton-div" style="width: 34%">Clinton: 182</div>
+  <div class="trump-div" style="width: 64%">Trump: 343</div>
+</div>
+
+## Case 4: Other Votes Are Split Equally
+
+<div class="election-div">
+  <div class="clinton-div" style="width: 43%">Clinton: 233</div>
+  <div class="trump-div" style="width: 57%">Trump: 305</div>
 </div>
