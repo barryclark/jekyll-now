@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1206,188544857,2016-11-10 18:14:35,2016-11-10 15:53:41,camper,,,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form""]",,,{},"<pre><yamldata>tel: '3346650737'
+email: widmann@tiscali.it
+cosa: camper
+descrizione: 'Buongiorno, mio padre donerebbe il suo vecchio furgone Fiat Gran Ducato trasformato in camper. Mi sto informando per la revisione e per la sistemazione (era fermo da qualche tempo). Potrebbe essere una sistemazione comoda e dignitosa per 2-3 persone e se qualcuno ne avesse bisogno potrei portarlo in loco dal Trentino e tornare in treno. Mio padre chiede solo una contribuzione per le eventuali spese per la messa su strada (che documenteremo in anticipo, non dovrebbero esserci sorprese) e di sostenere il passaggio di proprietà. Potrei con l'occasione fare in zona una raccolta di indumenti pesanti o di quello che vi potrebbe servire. Elvira'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 10/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1204,188502290,2016-11-10 18:12:54,2016-11-10 12:59:25,casa di legno,,,"[""Accettato"", ""Bollettino"", ""Da rilanciare"", ""Fabbisogni"", ""Form"", ""Pubblicare su FB"", ""Pubblicare su TW"", ""Sisma Ottobre""]",,,"{""cosa"": "" cercasi casa di legno #CASCIA"", ""data"": ""10/11/2016"", ""descrizione"": ""Con la presente chiedo se e possibile avere una piccola casa di legno per mia madre invalida, dializzata da 21 anni vedova di 85 anni abita al centro storico un po isolato. Grazie mille anche se faccio una richiesta un po grande.."", ""email"": ""patriziabruni1957@libero.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3398925891""}","<pre><yamldata>tel: '3398925891'
 email: patriziabruni1957@libero.it
 cosa: ' cercasi casa di legno #CASCIA'
@@ -294,17 +305,6 @@ indirizzo: ''
 lat: '42.7366700'
 lon: '13.4968743'
 link: ''
-immagine: ''
-data: 08/11/2016
-</yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1170,187990487,2016-11-08 21:14:41,2016-11-08 13:23:35,Veicolo 4x4 - Comune di #Castelsantangelo sul Nera,42.8944919,13.1542505,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Facebook"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""Veicolo 4x4 - Comune di #Castelsantangelo sul Nera"", ""data"": ""08/11/2016"", ""descrizione"": ""Comune di Castelsantangelo sul Nera ha urgente necessit\u00e0 di un veicolo 4x4 (pick-up 4 posti o Fiat Panda 4x4) per agevolare spostamenti tra il paese e la costa e per raggiungere gli allevatori della zona. Per segnalazioni rispondere al post su Facebook di Franco Romito, link di seguito."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via Sant'Angelo, Castelsantangelo sul Nera, MC, Marche, Italia"", ""lat"": ""42.8944919"", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1796639933936923/"", ""lon"": ""13.1542505"", ""tel"": """"}","<pre><yamldata>tel: ''
-email: ''
-cosa: 'Veicolo 4x4 - Comune di #Castelsantangelo sul Nera'
-descrizione: 'Comune di Castelsantangelo sul Nera ha urgente necessità di un veicolo 4x4 (pick-up 4 posti o Fiat Panda 4x4) per agevolare spostamenti tra il paese e la costa e per raggiungere gli allevatori della zona. Per segnalazioni rispondere al post su Facebook di Franco Romito, link di seguito.'
-indirizzo: 'Via Sant''Angelo, Castelsantangelo sul Nera, MC, Marche, Italia'
-lat: '42.8944919'
-lon: '13.1542505'
-link: 'https://www.facebook.com/groups/1758670357733881/permalink/1796639933936923/'
 immagine: ''
 data: 08/11/2016
 </yamldata></pre>",open
@@ -1294,6 +1294,16 @@ postale: ''
 causale: '“Emergenza Terremoto Ussita”'
 link: 'http://www.comune.ussita.mc.it/avvisi-cms/donazioni-a-favore-del-comune-di-ussita/'
 email: ''
+data: 01/11/2016
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1020,186510928,2016-11-01 11:53:05,2016-11-01 11:18:57,Offro appartamento per 4 persone a Calmazzo di Fossombrone (Pu),,,"[""Accettato"", ""Alloggi"", ""Bollettino"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""01/11/2016"", ""descrizione"": ""metto a disposizione appartamento con 4 posti letto ed eventuali altri 3 posti letti in casa con mia madre in zona Calmazzo di Fossombrone PU"", ""email"": ""sparna@libero.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3382951470""}","<pre><yamldata>tel: '3382951470'
+email: sparna@libero.it
+descrizione: 'metto a disposizione appartamento con 4 posti letto ed eventuali altri 3 posti letti in casa con mia madre in zona Calmazzo di Fossombrone PU'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
 data: 01/11/2016
 </yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1020,186510928,2016-11-01 11:53:05,2016-11-01 11:18:57,Offro appartamento per 4 persone a Calmazzo di Fossombrone (Pu),,,"[""Accettato"", ""Alloggi"", ""Bollettino"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""01/11/2016"", ""descrizione"": ""metto a disposizione appartamento con 4 posti letto ed eventuali altri 3 posti letti in casa con mia madre in zona Calmazzo di Fossombrone PU"", ""email"": ""sparna@libero.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3382951470""}","<pre><yamldata>tel: '3382951470'
