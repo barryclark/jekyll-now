@@ -59,28 +59,28 @@ My multi-step setup became a relatively simple tmuxinator config like this:
 name: generic-project-name
 root: /Projects/generic-project
 windows:
-  - editor:
+  - main:
     layout: tiled
     panes:
       # Run application server
-      - vagrant_server
+      - vagrant_server:
         - cd <%= @settings['project_path'] %>
         - ssh -F ./custom_config default
         - cd <%= @settings['mount_path'] %>
         - NODE_ENV=development npm run start
       # Open DB console
-      - vagrant_db
+      - vagrant_db:
         - cd <%= @settings['project_path'] %>
         - ssh -F ./custom_config default
         - cd <%= @settings['mount_path'] %>
         - make dbconsole
       # Run Hot Reloading
-      - local_server
+      - local_server:
         - cd <%= @settings['project_path'] %>
         - npm run start-dev
-      - local_terminal
+      - local_terminal:
         - git status
-      - system
+      - system:
         - htop
 {% endhighlight %}
 
