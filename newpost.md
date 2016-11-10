@@ -24,36 +24,46 @@ This is how things stand now - with 233 votes pledged for Clinton and 305 pledge
 
 > ...the statewide winners have consistently swept all of the state’s districts as well.  Consequently, neither state has ever split its electoral votes.
 
-## Case 1: Other Votes Never Cast
+## Case 1: Third Party Votes Never Cast
 
 <div class="election-div">
   <div class="clinton-div" style="width: 43%">Clinton: 233</div>
   <div class="trump-div" style="width: 57%">Trump: 305</div>
 </div>
 
-For this case, and the rest, I'll focus on two state: Utah and Arizona. Utah because Utahns cast the highest percentage for third party (28% percent for Clinton,	47% for Trump, and 25% for a third party), and Arizona because it was one of the closest states to a tie (888374 votes for Clinton, 972900 votes for Trump,	and 98779 votes for a third party).
+For this case, I'll focus on two state: Utah and Arizona. Utah because Utahns cast the highest percentage for third party (28% percent for Clinton,	47% for Trump, and 25% for a third party), and Arizona because it was one of the closest states to a tie (888374 votes for Clinton, 972900 votes for Trump,	and 98779 votes for a third party).
 
 If those people who voted third party had not voted at all (or at least for president), then, in Utah, Trump would have received [63%](https://www.google.com/search?q=47%2F(47%2B28)) of the vote and Clinton would have received [27%](https://www.google.com/search?q=47%2F(47%2B28)). Similary for Arizona, Clinton would have received [48%](https://www.google.com/search?q=888374%2F%28888374%2B972900%29) and Trump [52%](https://www.google.com/search?q=972900%2F%28888374%2B972900%29). Trump still wins, and this is true accross all states.
 
 I find this to be the most likely scenerio.
 
-## Case 2: Other Votes Go to Clinton
+## Case 2: Third Party Votes Go to Clinton
 
 <div class="election-div">
   <div class="clinton-div" style="width: 60%">Clinton: 325</div>
   <div class="trump-div" style="width: 40%">Trump: 213</div>
 </div>
 
-## Case 3: Other Votes Go to Trump
+This scenerio is probably what everyone who is complaining about thinks (or is wishing) would've happened. If so, she would have won Arizona, Florida, Michigan, Pennsylvania, Utah, and Wisconsin, transferring  92 votes from Trump to her, enough to make her win.
+
+I highly doubt every third party would've voted for her as their second choice, however.
+
+## Case 3: Third Party Votes Go to Trump
 
 <div class="election-div">
   <div class="clinton-div" style="width: 34%">Clinton: 182</div>
   <div class="trump-div" style="width: 66%">Trump: 356</div>
 </div>
 
-## Case 4: Other Votes Are Split Equally
+This is the opposite of case three. Here, all third party votes would've ended up with Trump. In this case, Trump gains Colorado, Maine, Minnesota, Nevada, New Hampshire, New Mexico, and Virginia for 51 more votes.
+
+## Case 4: Third Party Votes Are Split Equally
 
 <div class="election-div">
   <div class="clinton-div" style="width: 43%">Clinton: 233</div>
   <div class="trump-div" style="width: 57%">Trump: 305</div>
 </div>
+
+In this final scenerio (that I'm presenting, at least), third party votes "siphoned off" and equal amount of votes from both Clinton and Trump. This case is as unexciting as the first one.
+
+Let's look at Utah and Arizona again. In Utah, Trump would have received [63%](https://www.google.com/search?q=47%2F(47%2B28)) of the vote and Clinton would have received [27%](https://www.google.com/search?q=47%2F(47%2B28)). Similary for Arizona, Clinton would have received [48%](https://www.google.com/search?q=888374%2F%28888374%2B972900%29) and Trump [52%](https://www.google.com/search?q=972900%2F%28888374%2B972900%29). Trump will still wins, and again this is true accross all states.
