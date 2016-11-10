@@ -23,7 +23,7 @@ permalink: /newpost/
 ## Case 2: Other Votes Go to Clinton
 
 <div class="election-div">
-  <div class="clinton-div" style="width: 58%">Clinton: 314</div>
+  <div class="clinton-div" style="width: 60%">Clinton: 325</div>
   <div class="trump-div" style="width: 40%">Trump: 213</div>
 </div>
 
@@ -31,7 +31,7 @@ permalink: /newpost/
 
 <div class="election-div">
   <div class="clinton-div" style="width: 34%">Clinton: 182</div>
-  <div class="trump-div" style="width: 64%">Trump: 343</div>
+  <div class="trump-div" style="width: 66%">Trump: 356</div>
 </div>
 
 ## Case 4: Other Votes Are Split Equally
