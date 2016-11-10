@@ -710,7 +710,7 @@ h1 a .logo:hover{
   background-image: linear-gradient(to right, #FC373C 0%, #FAD64F 28.2%, #323C40 108%);
   background-image: -o-linear-gradient(transparent, transparent);
   transition-duration: 1.2s;
-  box-shadow: 0 0 15px #fbc74d;
+  box-shadow: 0 0 18px 2px #fbc74d;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
