@@ -10,6 +10,17 @@ link: ''
 immagine: ''
 data: 10/11/2016
 </yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1205,188537537,2016-11-10 18:15:12,2016-11-10 15:26:39,vestiario e altro,,,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form""]",,,"{""cosa"": ""vestiario e altro"", ""data"": ""10/11/2016"", ""descrizione"": ""Disponibilita' di coperte; giacconi e maglioni pesanti ,usati ma in buonissimo stato. Cerchiamo contatto a cui consegnare a fine mese."", ""email"": ""mmior@libero.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3294262904""}","<pre><yamldata>tel: '3294262904'
+email: mmior@libero.it
+cosa: 'vestiario e altro'
+descrizione: 'Disponibilita'' di coperte; giacconi e maglioni pesanti ,usati ma in buonissimo stato. Cerchiamo contatto a cui consegnare a fine mese.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 10/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1204,188502290,2016-11-10 18:12:54,2016-11-10 12:59:25,casa di legno,,,"[""Accettato"", ""Bollettino"", ""Da rilanciare"", ""Fabbisogni"", ""Form"", ""Pubblicare su FB"", ""Pubblicare su TW"", ""Sisma Ottobre""]",,,"{""cosa"": "" cercasi casa di legno #CASCIA"", ""data"": ""10/11/2016"", ""descrizione"": ""Con la presente chiedo se e possibile avere una piccola casa di legno per mia madre invalida, dializzata da 21 anni vedova di 85 anni abita al centro storico un po isolato. Grazie mille anche se faccio una richiesta un po grande.."", ""email"": ""patriziabruni1957@libero.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3398925891""}","<pre><yamldata>tel: '3398925891'
 email: patriziabruni1957@libero.it
 cosa: ' cercasi casa di legno #CASCIA'
@@ -1294,16 +1305,6 @@ postale: ''
 causale: '“Emergenza Terremoto Ussita”'
 link: 'http://www.comune.ussita.mc.it/avvisi-cms/donazioni-a-favore-del-comune-di-ussita/'
 email: ''
-data: 01/11/2016
-</yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1020,186510928,2016-11-01 11:53:05,2016-11-01 11:18:57,Offro appartamento per 4 persone a Calmazzo di Fossombrone (Pu),,,"[""Accettato"", ""Alloggi"", ""Bollettino"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""01/11/2016"", ""descrizione"": ""metto a disposizione appartamento con 4 posti letto ed eventuali altri 3 posti letti in casa con mia madre in zona Calmazzo di Fossombrone PU"", ""email"": ""sparna@libero.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3382951470""}","<pre><yamldata>tel: '3382951470'
-email: sparna@libero.it
-descrizione: 'metto a disposizione appartamento con 4 posti letto ed eventuali altri 3 posti letti in casa con mia madre in zona Calmazzo di Fossombrone PU'
-indirizzo: ''
-lat: ''
-lon: ''
-link: ''
-immagine: ''
 data: 01/11/2016
 </yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1020,186510928,2016-11-01 11:53:05,2016-11-01 11:18:57,Offro appartamento per 4 persone a Calmazzo di Fossombrone (Pu),,,"[""Accettato"", ""Alloggi"", ""Bollettino"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""01/11/2016"", ""descrizione"": ""metto a disposizione appartamento con 4 posti letto ed eventuali altri 3 posti letti in casa con mia madre in zona Calmazzo di Fossombrone PU"", ""email"": ""sparna@libero.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3382951470""}","<pre><yamldata>tel: '3382951470'
@@ -3508,6 +3509,18 @@ bic: ''
 postale: ''
 causale: ''
 link: 'http://www.anpas.org/categoria-news-generale/2447-arterie-con-anpas-per-amatrice.html'
+email: ''
+data: 25/09/2016
+</yamldata></pre>
+",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/680,179088136,2016-09-25 14:30:32,2016-09-25 14:10:58,"""Adotta il sogno di Ilaria e Lorenzo"". Campagna di crowdfunding",,,"[""Accettato"", ""Bollettino"", ""Facebook"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""\""Adotta il sogno di Ilaria e Lorenzo\"". Campagna di crowdfunding"", ""data"": ""25/09/2016"", ""descrizione"": ""Ilaria e Lorenzo sono due giovani agricoltori di zafferano. La loro casa e azienda agricola a Norcia \u00e8 stata distrutta dal sisma. Grazie alla sono riusciti a salvare 120mila bulbi di zafferano ma adesso c'\u00e8 da fare la raccolta e rimettere in piedi tutta l'azienda. Il denaro raccolto servir\u00e0 per acquistare le attrezzature andate perse e quelle mancanti, rimettere in funzione il magazzino di lavorazione dello zafferano, per la distribuzione del prodotto (packaging, etichettatura,marketing, trasporto) e per riavviare appena possibile le colture perse. Il budget necessario \u00e8 di circa 20.000 \u20ac."", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""https://www.produzionidalbasso.com/project/un-sos-da-san-pellegrino-di-norcia-adotta-il-sogno-di-ilaria-e-lorenzo/"", ""postale"": """"}","<pre><yamldata>chi: '""Adotta il sogno di Ilaria e Lorenzo"". Campagna di crowdfunding'
+descrizione: 'Ilaria e Lorenzo sono due giovani agricoltori di zafferano. La loro casa e azienda agricola a Norcia è stata distrutta dal sisma. Grazie alla sono riusciti a salvare 120mila bulbi di zafferano ma adesso c''è da fare la raccolta e rimettere in piedi tutta l''azienda. Il denaro raccolto servirà per acquistare le attrezzature andate perse e quelle mancanti, rimettere in funzione il magazzino di lavorazione dello zafferano, per la distribuzione del prodotto (packaging, etichettatura,marketing, trasporto) e per riavviare appena possibile le colture perse. Il budget necessario è di circa 20.000 €.'
+intestazione: ''
+iban: ''
+bic: ''
+postale: ''
+causale: ''
+link: 'https://www.produzionidalbasso.com/project/un-sos-da-san-pellegrino-di-norcia-adotta-il-sogno-di-ilaria-e-lorenzo/'
 email: ''
 data: 25/09/2016
 </yamldata></pre>
