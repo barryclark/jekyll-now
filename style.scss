@@ -74,11 +74,11 @@ p {
 }
 
 nav a {
-  color: $blue;
+  color: $yellow;
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
-    color: $blue;
+    color: $yellow;
     text-shadow: 0 0 14px $black;
     background-color: $black;
     box-shadow: 0 0 25px 13px $black;
@@ -146,6 +146,8 @@ header h1 {
 }
 h3#work{
     font-size: 40px;
+    font-style: italic;
+    font-weight: 400;
     padding: 0 0 0 2em;
     border-bottom: 3px solid #00ffad;
     line-height: 1;
@@ -169,7 +171,7 @@ header .small-text{
     letter-spacing: 0.05em;
     color: #fff;
     line-height: 1;
-    text-shadow: 0 0 15px $blue;
+    text-shadow: 0 0 15px $yellow;
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 700;
@@ -312,7 +314,7 @@ nav {
     text-align: center;
     font-weight: 800;
     letter-spacing: 1px;
-    text-shadow: 0 0 15px $blue;
+    text-shadow: 0 0 15px $yellow;
     transition-duration: 0.5s;
     text-transform: uppercase;
 
@@ -322,7 +324,7 @@ nav {
       text-transform: uppercase;
       margin: 0 10px;
       color: $blue;
-      text-shadow: 0 0 15px $blue;
+      text-shadow: 0 0 15px $yellow;
       transition-duration: 0.5s;
     }
   }
