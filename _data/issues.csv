@@ -8311,8 +8311,8 @@ email: ''
 data: 13/09/2016
 </yamldata></pre>
 ",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/174,176749759,2016-09-13 21:09:01,2016-09-13 21:06:26,Comune di Arquata del Tronto,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Solidariet\u00e0 Terremoto Arquata del Tronto"", ""chi"": ""Comune di Arquata del Tronto"", ""data"": ""13/09/2016"", ""descrizione"": """", ""email"": """", ""iban"": ""IT33W 03069 693701 00000000246"", ""intestazione"": """", ""link"": ""https://www.facebook.com/ascolipiceno/photos/a.334802869887682.85935.131745913526713/1253222841379009/?type=3"", ""postale"": """"}","<pre><yamldata>chi: 'Comune di Arquata del Tronto'
-descrizione: ''
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/174,176749759,2016-11-10 21:14:59,2016-09-13 21:06:26,Comune di Arquata del Tronto,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Solidariet\u00e0 Terremoto Arquata del Tronto"", ""chi"": ""Comune di Arquata del Tronto"", ""data"": ""13/09/2016"", ""descrizione"": ""Conto Corrente del Comune di Arquata per la raccolta fondi in favore delle popolazioni colpite dal sisma: Intesa San Paolo, Filiale di Arquata del Tronto"", ""email"": """", ""iban"": ""IT33W 03069 693701 00000000246"", ""intestazione"": """", ""link"": ""https://www.facebook.com/ascolipiceno/photos/a.334802869887682.85935.131745913526713/1253222841379009/?type=3"", ""postale"": """"}","<pre><yamldata>chi: 'Comune di Arquata del Tronto'
+descrizione: 'Conto Corrente del Comune di Arquata per la raccolta fondi in favore delle popolazioni colpite dal sisma: Intesa San Paolo, Filiale di Arquata del Tronto'
 intestazione: ''
 iban: 'IT33W 03069 693701 00000000246'
 bic: ''
