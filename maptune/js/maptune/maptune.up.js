@@ -2130,7 +2130,7 @@ MapUp.prototype.makeItemListItems = function(layerObj,defaultIcon,markers) {
 		listItem.setAttribute("class","listitem filterhint");
 
 		if ( nItems > 10 ){
-			$("<span> "+(nItems)+"</span> elementi nella lista<br>").appendTo(listItem); 
+			$("<span>&nbsp;"+(nItems)+"</span> elementi nella lista<br>").appendTo(listItem); 
 		}
 
 		if ( layerObj.nMarkerOutOfTime ){
@@ -2144,7 +2144,7 @@ MapUp.prototype.makeItemListItems = function(layerObj,defaultIcon,markers) {
 			$("<a href=\'javascript:maptune.jsapi.setListContent(\""+layer.properties.name+"\",\"piu\");\' >&nbsp;+ "+(nMarkerOutside)+" elementi fuori quadro<img src='resources/ui/zoomto.png' style='margin-left:10px;vertical-align:-2px;height:14px'/></a>").appendTo(listItem); 
 		}
 
-		$("<hr>&nbsp;totale: "+(markers.length)+"<br><br><br><br><br><br>").appendTo(listItem); 
+		$("<hr>&nbsp;totale: "+(markers.length)+"<br>").appendTo(listItem); 
 
 		listTable.appendChild(listItem);
 	}

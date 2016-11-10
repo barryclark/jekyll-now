@@ -212,7 +212,7 @@ $Log:maptune_flat.htmls,v $
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6">
-					<div style="height:4em">&nbsp;</div>
+					<div style="height:50px">&nbsp;</div>
 				</div>
 				<!-- /col-lg-6 -->
 			</div>
@@ -796,18 +796,16 @@ $Log:maptune_flat.htmls,v $
 		if ( ($("#headerwrap3").css("display") == "none") || flag ){
 			$("#headerwrap3").show();
 			$("#header-filter-switch").css("color","#444");
-			$("#headerwrap3").css("margin-bottom","0.4em");
-			$("#headerwrap3").css("margin-top","-0.3em");
 			// fixed filter -> create space
 			if ($(".filter-fixed-top").length){
-				$("#dynamic-content").css("margin-top","4em");
+				$("#dynamic-content").css("margin-top","4.6em");
 			}else{
 				$("#dynamic-content").css("margin-top","0");
 			}
 		}else{
 			$("#headerwrap3").hide();
 			$("#header-filter-switch").css("color","#bbb");
-			$("#dynamic-content").css("margin-top","-0.5em");
+			$("#dynamic-content").css("margin-top","0.1em");
 		}
 		__fInToggleFilter = true;
 		__resizeApplication();
@@ -870,7 +868,7 @@ $Log:maptune_flat.htmls,v $
 		// reset some vars to default
 		// ---------------------------
 		$("#headerwrap3").css("margin-bottom","0.4em");
-		$("#headerwrap3").css("margin-top","-0.3em");
+		$("#headerwrap3").css("margin-top","0.6em");
 		$("#headerwrap3").removeClass("filter-fixed-top");
 
 		$(".navbar-fixed-top").show();
@@ -988,8 +986,8 @@ $Log:maptune_flat.htmls,v $
 				nHeader = $("#headerwrap3 .container").height() + 30 + $(".navbar").height();
 				$("#map-content").height(height-nHeader);
 				$("#sidebar-content").height(height-nHeader);
-				$("#itemlist").height(height-nHeader-1);
-				$("#layer").height(height-nHeader-20);
+				$("#itemlist").height(height-nHeader);
+				$("#layer").height(height-nHeader);
 
 				$("#fullscreen-button").show();
 				$("#fullscreen-button").css("position","absolute");

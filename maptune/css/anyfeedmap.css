@@ -256,7 +256,7 @@ div.cloud{
 	xborder-color: #dddddd;
 	xborder-width: 1px 0px 0px 0px;
 	display: block;
-	margin: 0px;
+	margin: 0 1em 0 1.6em;
 	padding-right: 25px;
 	padding-top: 14px;
 	padding-bottom: 12px;
@@ -443,7 +443,7 @@ div.listitem-right {
 	}
 div.filterhint{
 	margin-top: 0.5em;
-	margin-bottom: 0.5em;
+	margin-bottom: 1em;
 	color:#888;
 	font-size:1em;
 	line-height: 1.5em;

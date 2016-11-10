@@ -77,14 +77,14 @@
 	// query eventi dal INGV con data di oggi 
 	// --------------------------------------------
 
-	maptune.load_INGV_KML = function() {
+	maptune.load_INGV_KML = function(nDays) {
 
 		var starttime = "2016-10-30T00:00:00";	
 
 		var d = new Date();
-
-		// - 7 days
-		d.setDate(d.getDate()-7);
+		// - n days
+		nDays = nDays || 1;
+		d.setDate(d.getDate()-nDays);
 
 		var szToday = d.toLocaleString();
 		var dateA = szToday.split(",")[0].split("/");
@@ -118,11 +118,15 @@
 			});
 		};
 
-	maptune.load_INGV_GeoJson = function() {
+	maptune.load_INGV_GeoJson = function(nDays) {
 
 		var starttime = "2016-10-30T00:00:00";	
 
 		var d = new Date();
+		// - n days
+		nDays = nDays || 1;
+		d.setDate(d.getDate()-nDays);
+
 		var szToday = d.toLocaleString();
 		var dateA = szToday.split(",")[0].split("/");
 		starttime = (Number(dateA[2])+"-"+Number(dateA[1]).pad(2)+"-"+Number(dateA[0]).pad(2)) + "T00:00:00";
@@ -160,13 +164,14 @@
 			});
 		};
 
-	maptune.load_INGV_GeoRSS = function() {
+	maptune.load_INGV_GeoRSS = function(nDays) {
 
 		var starttime = "2016-10-30T00:00:00";	
 
 		var d = new Date();
-		// - 7 days
-		d.setDate(d.getDate()-7);
+		// - n days
+		nDays = nDays || 1;
+		d.setDate(d.getDate()-nDays);
 
 		var szToday = d.toLocaleString();
 		var dateA = szToday.split(",")[0].split("/");
