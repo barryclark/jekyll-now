@@ -1,0 +1,15 @@
+.election-div {
+  width: 100%;
+}
+
+.election-div div {
+  display: inline-block;
+}
+
+.trump-div {
+  background-color: blue;
+}
+
+.clinton-div {
+  background-color: red;
+}
