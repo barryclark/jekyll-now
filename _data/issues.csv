@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1211,188600742,2016-11-10 20:48:25,2016-11-10 19:46:30,COMUNE DI #NORCIA: IBAN PER DONAZIONI,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": ""CRSPIT31010"", ""causale"": ""Emergenza Sisma"", ""chi"": ""COMUNE DI #NORCIA: IBAN PER DONAZIONI"", ""data"": ""10/11/2016"", ""descrizione"": ""Per effettuare donazioni al Comune di Norcia"", ""email"": """", ""iban"": ""IT48 M063 1538 5801 0000 0300 005"", ""intestazione"": """", ""link"": ""http://www.comune.norcia.pg.it/2016/11/07/emergenza-sisma-iban-per-donazioni/"", ""postale"": """"}","<pre><yamldata>chi: 'COMUNE DI #NORCIA: IBAN PER DONAZIONI'
+descrizione: 'Per effettuare donazioni al Comune di Norcia'
+intestazione: ''
+iban: 'IT48 M063 1538 5801 0000 0300 005'
+bic: CRSPIT31010
+postale: ''
+causale: 'Emergenza Sisma'
+link: 'http://www.comune.norcia.pg.it/2016/11/07/emergenza-sisma-iban-per-donazioni/'
+email: ''
+data: 10/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1210,188592505,2016-11-10 19:11:45,2016-11-10 19:11:01,Telefono Azzurro cerca volontari per interventi ad #Amatrice e altre zone terremotate,,,"[""Accettato"", ""Fabbisogni"", ""Sisma Ottobre"", ""Twitter""]",,,"{""cosa"": ""Telefono Azzurro cerca volontari per interventi ad #Amatrice e altre zone terremotate"", ""data"": ""10/11/2016"", ""descrizione"": ""A fronte del lavoro che ci aspetta nei prossimi mesi per cercare non solo di intervenire nell'emergenza, ma anche di offrire un lento e graduale ritorno alla normalit\u00e0, invitiamo chiunque voglia impegnarsi come volontario nelle aree di AMATRICE e delle ALTRE ZONE DEL CENTRO ITALIA colpite dal TERREMOTO, che abbia maturato esperienza con i bambini e che condivida la mission di Telefono Azzurro a compilare il presente modulo. Tutti i candidati selezionati saranno adeguatamente formati e preparati dai nostri operatori professionisti, prima di intraprendere la loro esperienza sul campo. Al link il modulo da compilare per le candidature."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://docs.google.com/forms/d/e/1FAIpQLSf2L4vgBPRlG4WDyUtDkSOKKD__Mqzs2m5oesIxlVZJZSsWVg/viewform?c=0&w=1"", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 cosa: 'Telefono Azzurro cerca volontari per interventi ad #Amatrice e altre zone terremotate'
