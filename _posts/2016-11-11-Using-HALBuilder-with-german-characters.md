@@ -9,6 +9,8 @@ author_email: filip.fiat@haufe-lexware.com
 header-img: "images/bg-post.jpg"
 ---
 
+Just to set the scene on this post, a couple of definitions and links, before I present a solution to a very annoying problem when dealing with "umlauts":
+
 >HATEOAS (Hypermedia as the Engine of Application State) is a constraint of the REST application architecture. A hypermedia-driven site provides information to navigate the site's REST interfaces dynamically by including hypermedia links with the responses.
 
 [Understanding HATEOAS - Spring](https://spring.io/understanding/HATEOAS)
@@ -42,9 +44,11 @@ Searching the documentation, some relevat tech forums and codebase, I was not ab
 ### "Good old JAVA" solves any problem
 
 Create a String object from the outcome of this method with the right encoding (UTF-8), i.e. my code looks like this
+
 ```java 
 halRepresentationUTF8 = new String(halRepresentation.toString(RepresentationFactory.HAL_JSON).getBytes(), "UTF-8")
 ```
+
 And this does the trick ;)... the string, `halRepresentationUTF8` is properly UTF-8 encoded.
 In fact this is a simple way to make sure the outcome (`HAL_JSON` representation), which is basically a string, will be properly encoded as UTF-8.
 
