@@ -3721,6 +3721,18 @@ MapUp.prototype.isMarkerInSearchQuery = function(layer,marker) {
 		}
 	}
 	if ( this.szSearchString && this.szSearchString.length && marker.properties.name ){
+
+		if ( this.szSearchString.match(":") ){
+			this.szSearchColumn = this.szSearchString.split(":")[0];
+			this.szSearchString = this.szSearchString.split(":")[1];
+		}
+		if ( (typeof(this.szSearchColumn) != "undefined") && this.szSearchColumn.length && marker.properties.data && marker.properties[this.szSearchColumn] ){
+			if ( eval('marker.properties.'+this.szSearchColumn+'.match(/'+this.szSearchString+'/i)') ){
+				return true;
+			}else{
+				return false;
+			}
+		}
 		if ( eval('marker.properties.name.match(/'+this.szSearchString+'/i)') ){
 			return true;
 		}else

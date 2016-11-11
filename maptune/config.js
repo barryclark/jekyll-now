@@ -27,14 +27,36 @@
 		,
 		"layer" :{"href":"layer.html"}
 		,
-		"filter": { "segnalazioni aperti" : "open",
-					"segnalazioni chiusi" : "closed",
-					"elimina filtri":""
+		"filter": { 
+					"Contatti"			  : "labels:Contatti",
+					"Fabbisogni"		  : "labels:Fabbisogni",
+					"Alloggi"			  : "labels:Alloggi",
+					"Donazioni"			  : "labels:Donazioni",
+					"Notizie Utili"		  : "labels:Notizie Utili",
+					"---"				  : "",					
+					"Roulotte/Camper"	  : "labels:Roulotte|Camper",
+					"Acquisto solidale"	  : "labels:acquisto solidale",
+					"----"				  : "",					
+					"da Facebook"			  : "labels:Facebook",
+					"da Form"				  : "labels:Form",
+					"da Telegram"			  : "labels:Telegram",
+					"-----"				  : "",					
+					"Segnalazioni aperti" : "open",
+					"Segnalazioni chiusi" : "closed",
+					"------"			  : "",					
+					"Tutto":""
 				}
 		,
 		"layers": []
 
 	};
+
+	maptune.jsapi.onGetIcon = function(icon,info,i) {
+		if ( info.properties.labels.match(/Alloggi/)){
+			icon.image = "resources/icons/map-icons-collection/lodging_0star.png";
+		}
+		return icon;
+	}
 
 	__init = function(){
 		maptune.jsapi.setMapType("OpenStreetMap");

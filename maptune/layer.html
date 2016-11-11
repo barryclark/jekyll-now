@@ -87,37 +87,6 @@
 					</span></p>
 
 					</li><li>
-					<a href="javascript:maptune.addFeedLayer('http://crossorigin.me/http://docs.google.com/spreadsheets/d/17lnDV6v0sertzCgvIfjZ2lvXCtquW3KWuUv_1VgCLJA/export?format=csv&gid=0&single=true',{
-						type:'csv',
-						format:'csv',
-						name:'Terremoto Centro Italia - Centri Raccolta Beni',
-						title:'Terremoto Centro Italia - Centri Raccolta Beni',
-						proxy:'true',
-						parser:
-							{
-							title: 'Nome',
-							lat:   'latitude',
-							lon:   'longitude',
-							label: 'true'
-							},
-						layer:
-							{ 'name': 'Terremoto Centro Italia - Centri Raccolta Beni',
-							  'markerType' :'custom',
-							  'markerImage' : 'resources/icons/map-icons-collection/sozialeeinrichtung.png',
-							  'smallImage' : 'resources/icons/default/default-small_red.png',
-							  'markerImageType' : 'png',
-							  'markerCluster' : 'false',
-							  'description': '',
-							  'minLargeIconZoom' : '11'
-							},
-						'flag':'open|zoomto'
-					});" ><b>Centri Raccolta Beni per terremoto Centro Italia</b></a>
-					<p class="description">fonte: terremotocentroitalia.info<span style="float:right">
-					<a href="http://docs.google.com/spreadsheets/d/17lnDV6v0sertzCgvIfjZ2lvXCtquW3KWuUv_1VgCLJA" target="_blank"> Gooble Doc</a>,
-					<a href="http://docs.google.com/spreadsheets/d/17lnDV6v0sertzCgvIfjZ2lvXCtquW3KWuUv_1VgCLJA/export?format=csv&gid=0&single=true" target="_blank"> csv</a>
-					</span></p>
-
-					</li><li>
 
 					<a href="javascript:maptune.addFeedLayer('https://raw.githubusercontent.com/emergenzeHack/terremotocentro/master/_data/issues.csv',{
 						type:'csv',
@@ -139,20 +108,33 @@
 							'markerImage' : 'resources/icons/map-icons-collection/flag_red.png',
 							'smallImage' :  'resources/icons/default/default-small_red.png',
 							'markerType' : 'categorical',
-							'category'   : 'state',
+							'category'   : 'labels',
 							'categoryList': {
-								  'closed':
+								  'Alloggi':
 										  { 'markerImage' : 'resources/icons/default/default_dark_green.png',
 											'smallImage' :  'resources/icons/default/default-small_dark_green.png'
 										  },
-								  'open':
+								  'Fabbisogni':
 										  { 'markerImage' : 'resources/icons/default/default_red.png',
 											'smallImage' :  'resources/icons/default/default-small_red.png'
+										  },
+								  'Contatti':
+										  { 'markerImage' : 'resources/icons/default/default_blue.png',
+											'smallImage' :  'resources/icons/default/default-small_blue.png'
+										  },
+								  'Donazioni':
+										  { 'markerImage' : 'resources/icons/default/default_light_green.png',
+											'smallImage' :  'resources/icons/default/default-small_light_green.png'
+										  },
+								  'Notizie Utili':
+										  { 'markerImage' : 'resources/icons/default/default_yellow.png',
+											'smallImage' :  'resources/icons/default/default-small_yellow.png'
 										  }
 							},
 							'markerImageType' : 'png',
 							'initialTimeScope':'all',
 							'sort' : 'timeDown',
+							'minLargeIconZoom': '12'
 							}
 						});" ><b>Segnalazioni</b></a><br>
 					<span class="description">Segnalazioni provenienti da terremotocentroitalia.info</span>
@@ -180,13 +162,13 @@
 								'markerSizeRule': {	'source': 'name',
 												    'regex' : '/.* Magnitude\\(..\\) ?([0-9]+\\.([0-9])?|\\.[0-9])?/i',
 													'matchIndex' : 1,
-												   normalSizeValue: 3,
-												   pow: 2
+												    'normalSizeValue': 3,
+												    'pow': 2
 												  }
 								},
 						 proxy:true
 						 });" >
-						<b>tutti terremoti dal 20 <strong>Agosto</strong> in poi - Magnitude 3+</b><span style="font-size:8px;"</span></a>
+						<b>tutti terremoti dal 20 <strong>Agosto</strong> in poi<br>Magnitudine 3+</b><span style="font-size:8px;"</span></a>
 					<br><span class="description">fonte: INGV -> GeoRSS (atom feed)</span>
 
 					</li><li>
@@ -213,7 +195,7 @@
 								},
 						 proxy:true
 						 });" >
-						<b>tutti terremoti dal 20 <strong>ottobre</strong> in poi - Magnitude 3+</b><span style="font-size:8px;"</span></a>
+						<b>tutti terremoti dal 20 <strong>ottobre</strong> in poi<br>Magnitudine 3+</b><span style="font-size:8px;"</span></a>
 					<br><span class="description">fonte: INGV -> GeoRSS (atom feed)</span>
 
 					</li><li>
@@ -221,18 +203,6 @@
 					<a class="touch" href="javascript:maptune.load_INGV_GeoRSS(1)" >
 						<b>tutti terremoti di <strong>oggi</strong></b><span style="font-size:8px;"</span></a>
 					<br><span class="description">fonte: INGV -> GeoRSS (atom feed)</span>
-
-					</li><li>
-
-					<a class="touch" href="javascript:maptune.load_INGV_KML(1)" >
-						<b>tutti terremoti di <strong>oggi</strong></b><span style="font-size:8px;"</span></a>
-					<br><span class="description">fonte: INGV -> KML (con simboli definiti dal INGV)</span>
-
-					</li><li>
-
-					<a class="touch" href="javascript:maptune.load_INGV_GeoJson(1)" >
-						<b>tutti terremoti di <strong>oggi</strong></b><span style="font-size:8px;"</span></a>
-					<br><span class="description">fonte: INGV -> GeoJson</span>
 
 				</li>
 				</div>
