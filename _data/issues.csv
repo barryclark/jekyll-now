@@ -9,10 +9,10 @@ lon: ''
 link: 'http://www.norciaciok.it/'
 data: 11/11/2016
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1226,188702047,2016-11-11 08:47:54,2016-11-11 07:36:36,Acquisti Solidali: Norcineria Felici di #Norcia,42.79357417068833,13.09246301651001,"[""Accettato"", ""acquisto solidale"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""11/11/2016"", ""descrizione"": ""Necessario svuotare il magazzino."", ""email"": """", ""indirizzo"": ""Fioreria del Teatro, Piazza Vittorio Veneto, Casa Cupa, Norcia, PG, UMB, 06046, Italia"", ""lat"": ""42.79357417068833"", ""link"": ""http://www.norcineriafelici.it/"", ""lon"": ""13.09246301651001"", ""nome"": ""Norcineria Felici di Norcia"", ""tel"": ""0743 828615""}","<pre><yamldata>nome: 'Norcineria Felici di Norcia'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1226,188702047,2016-11-11 08:49:30,2016-11-11 07:36:36,Acquisti Solidali: Norcineria Felici di #Norcia,42.79357417068833,13.09246301651001,"[""Accettato"", ""acquisto solidale"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""11/11/2016"", ""descrizione"": ""Necessario svuotare il magazzino della piccola azienda a conduzione familiare. Si vendono i prodotti tramite il sito ma \u00e8 consigliabile chiamare il numero di riferimento. Grazie per il supporto."", ""email"": """", ""indirizzo"": ""Fioreria del Teatro, Piazza Vittorio Veneto, Casa Cupa, Norcia, PG, UMB, 06046, Italia"", ""lat"": ""42.79357417068833"", ""link"": ""http://www.norcineriafelici.it/"", ""lon"": ""13.09246301651001"", ""nome"": ""Norcineria Felici di Norcia"", ""tel"": ""0743 828615""}","<pre><yamldata>nome: 'Norcineria Felici di Norcia'
 tel: '0743 828615'
 email: ''
-descrizione: 'Necessario svuotare il magazzino.'
+descrizione: 'Necessario svuotare il magazzino della piccola azienda a conduzione familiare. Si vendono i prodotti tramite il sito ma è consigliabile chiamare il numero di riferimento. Grazie per il supporto.'
 indirizzo: 'Fioreria del Teatro, Piazza Vittorio Veneto, Casa Cupa, Norcia, PG, UMB, 06046, Italia'
 lat: '42.79357417068833'
 lon: '13.09246301651001'
