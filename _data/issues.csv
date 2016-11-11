@@ -4641,9 +4641,9 @@ email: ''
 data: 17/09/2016
 </yamldata></pre>
 ",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/572,177568087,2016-09-17 16:25:49,2016-09-17 10:18:31,Associazione 180 Amici L'Aquila,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,{},"<pre><yamldata>chi: 'Associazione 180 amici L'Aquila'
-descrizione: 'Raccolta fondi dell'associazione 180 Amici dell'Aquila che garantisce sportelli di servizi alla persona nelle aree colpite dal sisma e nelle zone dove alloggiano temporaneamente le persone.'
-intestazione: 'Associazione 180 amici L'Aquila onlus'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/572,177568087,2016-11-11 17:42:46,2016-09-17 10:18:31,Associazione 180 Amici L'Aquila,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""donazione per contributo intervento nel sisma del centro Italia 2016"", ""chi"": ""Associazione 180 amici L'Aquila"", ""data"": ""17/09/2016"", ""descrizione"": ""Raccolta fondi dell'associazione 180 Amici dell'Aquila che garantisce sportelli di servizi alla persona nelle aree colpite dal sisma e nelle zone dove alloggiano temporaneamente le persone."", ""email"": ""l.aquila180amici@gmail.com"", ""iban"": ""IT67S0538703601000000165363"", ""intestazione"": ""Associazione 180 amici L'Aquila onlus"", ""link"": ""https://180amiciaq.wordpress.com/2016/08/31/sisma-centro-italia/"", ""postale"": """"}","<pre><yamldata>chi: 'Associazione 180 amici L''Aquila'
+descrizione: 'Raccolta fondi dell''associazione 180 Amici dell''Aquila che garantisce sportelli di servizi alla persona nelle aree colpite dal sisma e nelle zone dove alloggiano temporaneamente le persone.'
+intestazione: 'Associazione 180 amici L''Aquila onlus'
 iban: IT67S0538703601000000165363
 bic: ''
 postale: ''
