@@ -58,7 +58,8 @@
       var results = idx.search(searchTerm,{
     "fields": {
         "title": {"boost": 10},
-    }
+    },
+      boolean: "AND"
       }); // Get elasticlunr to perform a search
       displaySearchResults(results, window.store); // We'll write this in the next section 
     }
