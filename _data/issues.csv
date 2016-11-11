@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1227,188702282,2016-11-11 07:49:00,2016-11-11 07:38:42,Cioccolateria Vetusta Nursia,,,"[""Accettato"", ""acquisto solidale"", ""Bollettino"", ""Fabbisogni"", ""Form""]",,,"{""data"": ""11/11/2016"", ""descrizione"": ""Necessit\u00e0 di svuotare il magazzino dai prodotti."", ""email"": ""info@norciaciok.it"", ""indirizzo"": """", ""lat"": """", ""link"": ""http://www.norciaciok.it/"", ""lon"": """", ""nome"": ""Cioccolateria Vetusta Nursia"", ""tel"": ""0743 817 370""}","<pre><yamldata>nome: 'Cioccolateria Vetusta Nursia'
+tel: '0743 817 370'
+email: info@norciaciok.it
+descrizione: 'Necessità di svuotare il magazzino dai prodotti.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: 'http://www.norciaciok.it/'
+data: 11/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1226,188702047,2016-11-11 07:47:59,2016-11-11 07:36:36,Norcineria Felici di Norcia,42.79357417068833,13.09246301651001,"[""Accettato"", ""acquisto solidale"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""11/11/2016"", ""descrizione"": ""Necessario svuotare il magazzino."", ""email"": """", ""indirizzo"": ""Fioreria del Teatro, Piazza Vittorio Veneto, Casa Cupa, Norcia, PG, UMB, 06046, Italia"", ""lat"": ""42.79357417068833"", ""link"": ""http://www.norcineriafelici.it/"", ""lon"": ""13.09246301651001"", ""nome"": ""Norcineria Felici di Norcia"", ""tel"": ""0743 828615""}","<pre><yamldata>nome: 'Norcineria Felici di Norcia'
 tel: '0743 828615'
 email: ''
@@ -1839,17 +1849,6 @@ data: 30/10/2016
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/971,186165157,2016-10-30 22:25:30,2016-10-30 21:19:53,#Viabilità #Roma: chiusura tratto finale tangenziale est,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""30/10/2016"", ""descrizione"": ""Per crepe su tangenziale est a Roma, rimane chiuso fino a nuovo ordine il tratto finale [Fonte: Protezione Civile]"", ""link"": ""https://goo.gl/6cF77i"", ""titolo"": ""#Viabilit\u00e0 #Roma: chiusura tratto finale #tangenziale #est""}","<pre><yamldata>titolo: '#Viabilità #Roma: chiusura tratto finale #tangenziale #est'
 descrizione: 'Per crepe su tangenziale est a Roma, rimane chiuso fino a nuovo ordine il tratto finale [Fonte: Protezione Civile]'
 link: 'https://goo.gl/6cF77i'
-data: 30/10/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/970,186164502,2016-10-30 22:18:11,2016-10-30 21:08:45,Stanza con letto doppio disponibile a Roma,41.8711875,12.5154678,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""30/10/2016"", ""descrizione"": ""Stanza con letto doppio disponibile a Roma appio per bo, due/tre settimane? Mi rendo conto che non \u00e8 molto tempo ma chiunque ne abbia bisogno \u00e8 benvenuto"", ""email"": ""massi.roma@gmail.com"", ""immagine"": """", ""indirizzo"": ""Via Pietro Fedele, San Giovanni, Municipio Roma VII, Roma, RM, Lazio, 00179, Italia"", ""lat"": ""41.8711875"", ""link"": """", ""lon"": ""12.5154678"", ""tel"": ""3925024954""}","<pre><yamldata>tel: '3925024954'
-email: massi.roma@gmail.com
-descrizione: 'Stanza con letto doppio disponibile a Roma appio per bo, due/tre settimane? Mi rendo conto che non è molto tempo ma chiunque ne abbia bisogno è benvenuto'
-indirizzo: 'Via Pietro Fedele, San Giovanni, Municipio Roma VII, Roma, RM, Lazio, 00179, Italia'
-lat: '41.8711875'
-lon: '12.5154678'
-link: ''
-immagine: ''
 data: 30/10/2016
 </yamldata></pre>
 ",open
