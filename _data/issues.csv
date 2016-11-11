@@ -1853,6 +1853,17 @@ immagine: ''
 data: 30/10/2016
 </yamldata></pre>
 ",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/970,186164502,2016-10-30 22:18:11,2016-10-30 21:08:45,Stanza con letto doppio disponibile a Roma,41.8711875,12.5154678,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""30/10/2016"", ""descrizione"": ""Stanza con letto doppio disponibile a Roma appio per bo, due/tre settimane? Mi rendo conto che non \u00e8 molto tempo ma chiunque ne abbia bisogno \u00e8 benvenuto"", ""email"": ""massi.roma@gmail.com"", ""immagine"": """", ""indirizzo"": ""Via Pietro Fedele, San Giovanni, Municipio Roma VII, Roma, RM, Lazio, 00179, Italia"", ""lat"": ""41.8711875"", ""link"": """", ""lon"": ""12.5154678"", ""tel"": ""3925024954""}","<pre><yamldata>tel: '3925024954'
+email: massi.roma@gmail.com
+descrizione: 'Stanza con letto doppio disponibile a Roma appio per bo, due/tre settimane? Mi rendo conto che non è molto tempo ma chiunque ne abbia bisogno è benvenuto'
+indirizzo: 'Via Pietro Fedele, San Giovanni, Municipio Roma VII, Roma, RM, Lazio, 00179, Italia'
+lat: '41.8711875'
+lon: '12.5154678'
+link: ''
+immagine: ''
+data: 30/10/2016
+</yamldata></pre>
+",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/969,186164159,2016-10-30 22:16:55,2016-10-30 21:03:38,"#Camerino: allargata zona rossa, oltre 1000 persone trasferite",,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""30/10/2016"", ""descrizione"": ""Allargati i confini della zona rossa di Camerino che ora \u00e8 molto pi\u00f9 estesa e ricomprende ormai tutto il centro storico ed alcune zone a ridosso delle mura cittadine. Domenica hanno trovato ospitalit\u00e0 nei centri di accoglienza circa 600 persone e altrettante sono state trasferite negli alberghi della costa convenzionati con la Regione Marche. Le richieste per trasferirsi negli hotel possono essere compilate al Centro Operativo Comunale che si trova in via Le Mosse 19. Rimane anche la possibilit\u00e0 di richiedere il Contributo di Autonoma Sistemazione per quelle persone che vorranno provvedere autonomamente a trovare una collocazione."", ""link"": ""https://goo.gl/KxovwK"", ""titolo"": ""#Camerino - dichiarazioni del #Sindaco""}","<pre><yamldata>titolo: '#Camerino - dichiarazioni del #Sindaco'
 descrizione: 'Allargati i confini della zona rossa di Camerino che ora è molto più estesa e ricomprende ormai tutto il centro storico ed alcune zone a ridosso delle mura cittadine. Domenica hanno trovato ospitalità nei centri di accoglienza circa 600 persone e altrettante sono state trasferite negli alberghi della costa convenzionati con la Regione Marche. Le richieste per trasferirsi negli hotel possono essere compilate al Centro Operativo Comunale che si trova in via Le Mosse 19. Rimane anche la possibilità di richiedere il Contributo di Autonoma Sistemazione per quelle persone che vorranno provvedere autonomamente a trovare una collocazione.'
 link: 'https://goo.gl/KxovwK'
