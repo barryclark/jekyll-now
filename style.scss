@@ -99,10 +99,54 @@ ul ul, ol ul {
 
 em, i {
   font-style: italic;
+}
+
+
+.prediction table{
+  font-size: 80% ;
+  border-collapse: collapse;
+}
+
+.prediction table tr{
+  padding: 1px 30px;
+
+}
+
+.prediction table th{
+  padding: 4px 16px;
+  font-weight: bold;
+}
+
+
+
+.prediction table td{
+  padding: 4px 16px;
+  border-top: 1px solid #333;
+}
+
+
+.prediction td:nth-child(2) {
   color: #EC008C;
 }
 
-td:nth-child(3), td:nth-child(4) { color: #F8CA00 }
+
+
+.prediction td:nth-child(3) {
+  color: #31A2DA;
+}
+
+
+.prediction td:nth-child(4), td:nth-child(5) {
+  color: #F8CA00;
+ }
+
+
+
+.prediction .total{
+  color:#333;
+  font-weight: bold;
+}
+
 
 strong, b {
   font-weight: bold;
