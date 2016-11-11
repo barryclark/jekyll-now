@@ -30,13 +30,17 @@ These days I was doing some updates on the Meinkonto RESTful API using this HAL 
 Basically this library is very robust and we are using it without any major impediments for generating and consuming HAL resources in pure Java, but seems to have some flaws in working with UTF-8 encoded special characters.
 
 For instances of 
+
 ```java 
 com.theoryinpractise.halbuilder.api.Representation
 ``` 
+
 they provide this method 
+
 ```java 
 toString(RepresentationFactory.HAL_JSON)
 ``` 
+
 for generating the JSON string from a `JsonRepresentation `object.
 Unfortunately for strings with German characters the outcome is not quite the expected one, i.e. "ä" becomes "Ã¤" and so on.
 Searching the documentation, some relevat tech forums and codebase, I was not able to find a way to specify the correct encoding, thus I've ended using the following construction.
