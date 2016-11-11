@@ -33,24 +33,11 @@ function urldecode(str) {
 }
 
 window.store = {};
-    {% for member in site.data.issuesjson %}
+    {% assign filteredissues = site.data.issuesjson | where: "state","open" %}
+    {% for member in filteredissues %}
 window.store["{{site.url}}/issues/{{member.number}}"]={
         "title": urldecode("{{ member.title | strip_html | url_encode }}"),
-        {% if member.issue.labels contains "Notizie Utili" %}
-        "category": "Notizie Utili",
-        {% elsif member.issue.labels contains "Alloggi" %}
-        "category": "Alloggi",
-        {% elsif member.issue.labels contains "Donazioni" %}
-        "category": "Donazioni",
-        {% elsif member.issue.labels contains "Fabbisogni" %}
-        "category": "Fabbisogni",
-        {% elsif member.issue.labels contains "Raccolte Fondi" %}
-        "category": "Raccolte Fondi",
-        {% elsif member.issue.labels contains "Bollettino" %}
-        "category": "Bollettino",
-        {% else %}
-        "category": "",
-        {% endif %}
+        "category": "{{member.issue.labels | join: ' '}}",
         {% if member.issue.data.descrizione != blank %}
         "content": urldecode("{{ member.issue.data.descrizione | url_encode }}"),
         {% else %}
