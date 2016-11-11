@@ -33,7 +33,7 @@ function urldecode(str) {
 }
 
 window.store = {};
-    {% assign filteredissues = site.data.issuesjson | where: "state","open" %}
+    {% assign filteredissues = site.data.issuesjson %}
     {% for member in filteredissues %}
 window.store["{{site.url}}/issues/{{member.number}}"]={
         "title": urldecode("{{ member.title | strip_html | url_encode }}"),
@@ -46,7 +46,8 @@ window.store["{{site.url}}/issues/{{member.number}}"]={
         {% if member.issue.created_at != blank %}
         "date": "{{member.issue.created_at | date: '%-d/%m/%Y' }}",
         {% endif %}
-        "url": "{{site.url}}/issues/{{member.number}}"
+        "url": "{{site.url}}/issues/{{member.number}}",
+        "state": "{{member.state}}"
 };
     {% endfor %}
 </script>

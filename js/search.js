@@ -7,21 +7,46 @@
         appendString += '<div class="panel-group">';
       for (var i = 0; i < results.length; i++) {  // Iterate over the results
               var item = store[results[i].ref];
-              appendString += '<a href="' + item.url + '" class="list-group-item">';
-              appendString += '<div class="panel panel-default">';
-              appendString += '<div class="panel-heading">';
-              appendString += '<h4>' + item.title + '</h4>';
-              appendString += '</div>';
-              appendString += '<div class="panel-body">';
+              if (item.state == "open") {
+                      appendString += '<a href="' + item.url + '" class="list-group-item">';
+                      appendString += '<div class="panel panel-default">';
+                      appendString += '<div class="panel-heading">';
+                      appendString += '<h4>' + item.title + '</h4>';
+                      appendString += '</div>';
+                      appendString += '<div class="panel-body">';
 
-              appendString += '<small>';
-              appendString += '<p class="list-group-item-text">' + item.content.substring(0, 250) + '...</p>'
-              appendString += '<p class="list-group-item-text">' + item.date + '</p>'
-              appendString += '</small>';
+                      appendString += '<small>';
+                      appendString += '<p class="list-group-item-text">' + item.content.substring(0, 250) + '...</p>'
+                      appendString += '<p class="list-group-item-text">' + item.date + '</p>'
+                      appendString += '</small>';
 
-              appendString += '</div>';
-              appendString += '</div>';
-              appendString += '</a>';
+                      appendString += '</div>';
+                      appendString += '</div>';
+                      appendString += '</a>';
+              }
+      }
+        appendString += '</div>';
+
+        appendString += '<div class="panel-group">';
+      for (var i = 0; i < results.length; i++) {  // Iterate over the results
+              var item = store[results[i].ref];
+              if (item.state != "open") {
+                      appendString += '<a href="' + item.url + '" class="list-group-item">';
+                      appendString += '<div class="panel panel-default">';
+                      appendString += '<div class="panel-heading">';
+                      appendString += '<strike><h4>' + item.title + '</h4></strike>';
+                      appendString += '</div>';
+                      appendString += '<div class="panel-body">';
+
+                      appendString += '<small>';
+                      appendString += '<p class="list-group-item-text">' + item.content.substring(0, 250) + '...</p>'
+                      appendString += '<p class="list-group-item-text">' + item.date + '</p>'
+                      appendString += '</small>';
+
+                      appendString += '</div>';
+                      appendString += '</div>';
+                      appendString += '</a>';
+              }
       }
         appendString += '</div>';
 
@@ -52,6 +77,7 @@
         'title': window.store[key].title,
         'category': window.store[key].category,
         'content': window.store[key].content,
+        'state': window.store[key].state,
         'date': window.store[key].date
       });
 
@@ -80,6 +106,7 @@
       this.addField('title', { boost: 10 });
       this.addField('category');
       this.addField('content');
+      this.addField('state');
       this.setRef('id');
     });
 
