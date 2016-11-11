@@ -19,10 +19,10 @@ lon: '13.09246301651001'
 link: 'http://www.norcineriafelici.it/'
 data: 11/11/2016
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1225,188701724,2016-11-11 08:42:59,2016-11-11 07:33:48,Acquisti Solidali: #norcinerie umbre - Il Norcino #Norcia,42.7927706,13.0930812,"[""Accettato"", ""acquisto solidale"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""11/11/2016"", ""descrizione"": ""Necessit\u00e0 di svuotare il magazzino da tutti i prodotti."", ""email"": ""alessandro@ilnorcino.net"", ""indirizzo"": ""Piazza San Benedetto, Casa Coletti, Norcia, PG, UMB, 06046, Italia"", ""lat"": ""42.7927706"", ""link"": ""http://www.ilnorcino.net/salumi.di.norcia/"", ""lon"": ""13.0930812"", ""nome"": ""Il Norcino"", ""tel"": ""0743.820133  339.4376139""}","<pre><yamldata>nome: 'Il Norcino'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1225,188701724,2016-11-11 08:44:32,2016-11-11 07:33:48,Acquisti Solidali: #norcinerie umbre - Il Norcino #Norcia,42.7927706,13.0930812,"[""Accettato"", ""acquisto solidale"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""11/11/2016"", ""descrizione"": ""Necessit\u00e0 di svuotare il magazzino da tutti i prodotti. \u00c8 possibile acquistare i prodotti attraverso il link al sito ma \u00e8 sempre meglio telefonate ai contatti di riferimento data la situazione precaria."", ""email"": ""alessandro@ilnorcino.net"", ""indirizzo"": ""Piazza San Benedetto, Casa Coletti, Norcia, PG, UMB, 06046, Italia"", ""lat"": ""42.7927706"", ""link"": ""http://www.ilnorcino.net/salumi.di.norcia/"", ""lon"": ""13.0930812"", ""nome"": ""Il Norcino"", ""tel"": ""0743.820133  339.4376139""}","<pre><yamldata>nome: 'Il Norcino'
 tel: '0743.820133  339.4376139'
 email: alessandro@ilnorcino.net
-descrizione: 'Necessità di svuotare il magazzino da tutti i prodotti.'
+descrizione: 'Necessità di svuotare il magazzino da tutti i prodotti. È possibile acquistare i prodotti attraverso il link al sito ma è sempre meglio telefonate ai contatti di riferimento data la situazione precaria.'
 indirizzo: 'Piazza San Benedetto, Casa Coletti, Norcia, PG, UMB, 06046, Italia'
 lat: '42.7927706'
 lon: '13.0930812'
