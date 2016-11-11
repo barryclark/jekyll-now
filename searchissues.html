@@ -33,7 +33,8 @@ function urldecode(str) {
 }
 
 window.store = {};
-    {% for member in site.data.issuesjson %}
+    {% assign filteredissues = site.data.issuesjson | where: "state","open" %}
+    {% for member in filteredissues %}
 window.store["{{site.url}}/issues/{{member.number}}"]={
         "title": urldecode("{{ member.title | strip_html | url_encode }}"),
         "category": "{{member.issue.labels | join: ' '}}",
