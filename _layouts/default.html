@@ -1,8 +1,12 @@
+---
+layout: compress
+published: true
+---
 <!DOCTYPE html>
 <html>
   <head>
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
-
+    <link rel="shortcut icon" href="/favicon.ico">
     {% include meta.html %}
 
     <!--[if lt IE 9]>
@@ -27,7 +31,7 @@
           </div>
 
           <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
+            <a href="{{ site.baseurl }}/map">Map</a>
             <a href="{{ site.baseurl }}/about">About</a>
           </nav>
         </header>
@@ -36,7 +40,23 @@
 
     <div id="main" role="main" class="container">
       {{ content }}
-    </div>
+    </div>  
+    <!-- Pagination links -->
+{% if page.layout == "default" %}
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="next">← Next</a>
+  {% else %}
+    <span class="previous">← Next</span>
+  {% endif %}
+  <span class="page_number ">{{ paginator.page }} of {{ paginator.total_pages }}</span>
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="previous">Prev →</a>
+  {% else %}
+    <span class="next ">Prev →</span>
+  {% endif %}
+</div>
+{% endif %}
 
     <div class="wrapper-footer">
       <div class="container">

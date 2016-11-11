@@ -2,14 +2,11 @@
 layout: page
 title: About
 permalink: /about/
+published: true
 ---
 
-Some information about you!
-
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
+My name is **Milan** and I am currently a student at [Anglia Ruskin University](www.anglia.ac.uk). This blog serves as my digital logbook.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[thedigital@technologist.com](mailto:thedigital@technologist.com)

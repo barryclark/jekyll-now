@@ -1,9 +1,10 @@
 ---
 layout: default
+published: true
 ---
 
 <div class="posts">
-  {% for post in site.posts %}
+  {% for post in paginator.posts %}
     <article class="post">
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
@@ -12,7 +13,7 @@ layout: default
         {{ post.excerpt }}
       </div>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+      <p class="read-more">{{ post.date | date: "%B %e, %Y" }}  | <a href="{{ site.baseurl }}{{ post.url }}">Read More</a></p>
     </article>
   {% endfor %}
 </div>
