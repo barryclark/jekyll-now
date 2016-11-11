@@ -1,8 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1227,188702282,2016-11-11 08:50:57,2016-11-11 07:38:42,Acquisti solidali: Cioccolateria Vetusta Nursia #Norcia,,,"[""Accettato"", ""acquisto solidale"", ""Bollettino"", ""Fabbisogni"", ""Form""]",,,"{""data"": ""11/11/2016"", ""descrizione"": ""Necessit\u00e0 di svuotare il magazzino dai prodotti."", ""email"": ""info@norciaciok.it"", ""indirizzo"": """", ""lat"": """", ""link"": ""http://www.norciaciok.it/"", ""lon"": """", ""nome"": ""Cioccolateria Vetusta Nursia"", ""tel"": ""0743 817 370""}","<pre><yamldata>nome: 'Cioccolateria Vetusta Nursia'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1227,188702282,2016-11-11 08:53:13,2016-11-11 07:38:42,Acquisti solidali: Cioccolateria Vetusta Nursia #Norcia,,,"[""Accettato"", ""acquisto solidale"", ""Bollettino"", ""Fabbisogni"", ""Form""]",,,"{""data"": ""11/11/2016"", ""descrizione"": ""A Norcia non ci solo solo norcinerie ma \u00e8 famosa anche per il cioccolato. Questa piccola attivit\u00e0 a conduzione familiare ha necessit\u00e0 di svuotare il magazzino pericolante a causa del sisma dai prodotti. \u00c8 possibile acquistare i prodotti tramite il sito e per informazioni contattare il numero di riferimento."", ""email"": ""info@norciaciok.it"", ""indirizzo"": """", ""lat"": """", ""link"": ""http://www.norciaciok.it/"", ""lon"": """", ""nome"": ""Cioccolateria Vetusta Nursia"", ""tel"": ""0743 817 370""}","<pre><yamldata>nome: 'Cioccolateria Vetusta Nursia'
 tel: '0743 817 370'
 email: info@norciaciok.it
-descrizione: 'Necessità di svuotare il magazzino dai prodotti.'
+descrizione: 'A Norcia non ci solo solo norcinerie ma è famosa anche per il cioccolato. Questa piccola attività a conduzione familiare ha necessità di svuotare il magazzino pericolante a causa del
+sisma dai prodotti. È possibile acquistare i prodotti tramite il sito e per informazioni contattare il numero di riferimento.'
 indirizzo: ''
 lat: ''
 lon: ''
