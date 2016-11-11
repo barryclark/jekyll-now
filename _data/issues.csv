@@ -3759,6 +3759,18 @@ immagine: ''
 data: 24/09/2016
 </yamldata></pre>
 ",closed
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/677,179050419,2016-10-02 05:58:12,2016-09-24 20:34:21,"A Cesa Ventre, fraz. Accumoli, servono generatori, bagni chimici e altro per campo autogestito",42.661814,13.2148933,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Facebook"", ""Form"", ""OK""]",,,"{""cosa"": ""Da Accumoli richiesta di alcuni beni per campo autogestito"", ""data"": ""24/09/2016"", ""descrizione"": ""A Cesa Ventre, frazione di Accumoli, un gruppo di sfollati (agricoltori e allevatori) in campo autogestito ha bisogno di: 3 paia di calzettoni pesanti a numero (dal 36 al 46) per un totale di 30 paia di calzettoni; 3 paia di stivali di gomma (dal 36 al 46) per un totale di 30 paia di stivali; 1 generatore 8chilowatt (Santa Giusta, che offre pranzo e cena gratuitamente a decine di persone); 1 generatore 6 chilowatt; 1 bagno chimico (ne hanno 1 ma lo usano in 24 persone tra uomini e donne)."", ""email"": ""centro.culturale.libra@gmail.com"", ""immagine"": """", ""indirizzo"": ""Strada Statale 4 Via Salaria, Amatrice, RI, LAZ, Italia"", ""lat"": ""42.661814"", ""link"": ""https://www.facebook.com/mmaggi/posts/10209013074458606"", ""lon"": ""13.2148933"", ""tel"": """"}","<pre><yamldata>tel: ''
+email: centro.culturale.libra@gmail.com
+cosa: 'Da Accumoli richiesta di alcuni beni per campo autogestito'
+descrizione: 'A Cesa Ventre, frazione di Accumoli, un gruppo di sfollati (agricoltori e allevatori) in campo autogestito ha bisogno di: 3 paia di calzettoni pesanti a numero (dal 36 al 46) per un totale di 30 paia di calzettoni; 3 paia di stivali di gomma (dal 36 al 46) per un totale di 30 paia di stivali; 1 generatore 8chilowatt (Santa Giusta, che offre pranzo e cena gratuitamente a decine di persone); 1 generatore 6 chilowatt; 1 bagno chimico (ne hanno 1 ma lo usano in 24 persone tra uomini e donne).'
+indirizzo: 'Strada Statale 4 Via Salaria, Amatrice, RI, LAZ, Italia'
+lat: '42.661814'
+lon: '13.2148933'
+link: 'https://www.facebook.com/mmaggi/posts/10209013074458606'
+immagine: ''
+data: 24/09/2016
+</yamldata></pre>
+",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/676,179049712,2016-10-01 18:07:29,2016-09-24 20:18:45,"Amatrice Vive - Crowdfunding ""Amatrice 2.0""",,,"[""Accettato"", ""Bollettino"", ""Facebook"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Amatrice Vive - Crowdfunding \""Amatrice 2.0\"""", ""data"": ""24/09/2016"", ""descrizione"": ""Amatrice 2.0 nasce per evitare che nel periodo che intercorre tra la prima emergenza e ricostruzione la comunit\u00e0 si disgreghi non avendo ne casa ne una fonte di reddito o sostentamento per le famiglie pi\u00f9 indigenti con sistemazioni provvisorie e sussidi. Incentivi per l'apertura delle attivit\u00e0 commerciali in loco. Creazione di centri ricreativi per anziani e giovani. Sostentamento studenti universitari le cui famiglie abbiano perso ogni forma di reddito."", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""https://www.gofundme.com/2pj4rr38"", ""postale"": """"}","<pre><yamldata>chi: 'Amatrice Vive - Crowdfunding ""Amatrice 2.0""'
 descrizione: 'Amatrice 2.0 nasce per evitare che nel periodo che intercorre tra la prima emergenza e ricostruzione la comunità si disgreghi non avendo ne casa ne una fonte di reddito o sostentamento per le famiglie più indigenti con sistemazioni provvisorie e sussidi. Incentivi per l''apertura delle attività commerciali in loco. Creazione di centri ricreativi per anziani e giovani. Sostentamento studenti universitari le cui famiglie abbiano perso ogni forma di reddito.'
 intestazione: ''
