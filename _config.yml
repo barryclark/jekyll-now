@@ -34,6 +34,7 @@ navbar-links:
     - Blog: "post/"
     - Storie: "storie/"
     - Vittime: "vittime/"
+    - Bufale: "bufale/"
   Utilità:
     - Mappe: "mappe/"
     - Opendata: "opendata/"
