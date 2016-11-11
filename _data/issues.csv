@@ -7598,6 +7598,18 @@ email: ''
 data: 14/09/2016
 </yamldata></pre>
 ",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/250,176851544,2016-09-14 09:00:45,2016-09-14 08:56:09,Aci Ascoli Piceno,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Donazione Terremoto"", ""chi"": ""Aci Ascoli Piceno"", ""data"": ""14/09/2016"", ""descrizione"": ""Coloro che vorranno dare il proprio contributo potranno effettuare il versamento in contanti presso gli sportelli Aci di Ascoli Piceno oppure tramite bonifico bancario."", ""email"": """", ""iban"": ""IT 31 W 08474 13502 000150102890"", ""intestazione"": ""Aci Ascoli Piceno  BCC Picena \u2013 Ag. Ascoli Piceno \u2013 Viale Vellei"", ""link"": ""https://www.facebook.com/automobileclub.ascolipicenofermo/photos/a.943656578986817.1073741826.943656545653487/1278764215476050/?type=3"", ""postale"": """"}","<pre><yamldata>chi: 'Aci Ascoli Piceno'
+descrizione: 'Coloro che vorranno dare il proprio contributo potranno effettuare il versamento in contanti presso gli sportelli Aci di Ascoli Piceno oppure tramite bonifico bancario.'
+intestazione: 'Aci Ascoli Piceno  BCC Picena – Ag. Ascoli Piceno – Viale Vellei'
+iban: 'IT 31 W 08474 13502 000150102890'
+bic: ''
+postale: ''
+causale: 'Donazione Terremoto'
+link: 'https://www.facebook.com/automobileclub.ascolipicenofermo/photos/a.943656578986817.1073741826.943656545653487/1278764215476050/?type=3'
+email: ''
+data: 14/09/2016
+</yamldata></pre>
+",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/249,176851390,2016-09-14 09:00:53,2016-09-14 08:55:20,"Confindustria, Cgil, Cisl, Uil",,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": ""PASCITMMRM"", ""causale"": ""Fondo di solidariet\u00e0 per le popolazioni centro Italia"", ""chi"": ""Confindustria, Cgil, Cisl, Uil"", ""data"": ""14/09/2016"", ""descrizione"": ""\u201cFondo di intervento a favore delle popolazioni del Centro Italia\u201d nel quale confluiranno contributi volontari da parte dei lavoratori di tutto il territorio nazionale, pari a un\u2019ora di lavoro e un contributo equivalente, per ogni lavoratore, da parte delle imprese. La raccolta fondi terminer\u00e0 il 31 gennaio 2017"", ""email"": """", ""iban"": ""IT94V0103003201 000002589031"", ""intestazione"": """", ""link"": ""http://www.rassegna.it/articoli/terremoto-attivato-fondo-cgil-cisl-uil-e-confindustria"", ""postale"": """"}","<pre><yamldata>chi: 'Confindustria, Cgil, Cisl, Uil'
 descrizione: '“Fondo di intervento a favore delle popolazioni del Centro Italia” nel quale confluiranno contributi volontari da parte dei lavoratori di tutto il territorio nazionale, pari a un’ora di lavoro e un contributo equivalente, per ogni lavoratore, da parte delle imprese. La raccolta fondi terminerà il 31 gennaio 2017'
 intestazione: ''
