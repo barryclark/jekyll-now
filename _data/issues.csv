@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1242,188930008,2016-11-12 19:46:15,2016-11-12 19:33:42,"#Foligno, approvati i criteri per utilizzare le casette di legno",,,"[""Accettato"", ""Bollettino"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""12/11/2016"", ""descrizione"": ""La giunta comunale di Foligno ha approvato una delibera che disciplina i criteri di utilizzo dei prefabbricati in legno. Resta la priorit\u00e0 per le situazioni di emergenza e quindi ogni struttura potr\u00e0 essere messa a disposizione immediatamente ma vengono indicate le precedenze per ottenere in locazione le casette (a cominciare dalle situazioni di presenza di persone con disabilit\u00e0 o invalidit\u00e0) per l\u2019assegnazione degli alloggi disponibili, sino al 30 giugno 2019. Il Comune pubblicher\u00e0 un avviso che indicher\u00e0 le modalit\u00e0 di presentazione delle domande, entro il prossimo 30 novembre. Al link ulteriori informazioni."", ""link"": ""http://www.rgunotizie.it/articoli/cronaca/foligno-approvati-criteri-utilizzare-le-casette-legno"", ""titolo"": ""#Foligno, approvati i criteri per utilizzare le casette di legno""}","<pre><yamldata>titolo: '#Foligno, approvati i criteri per utilizzare le casette di legno'
+descrizione: 'La giunta comunale di Foligno ha approvato una delibera che disciplina i criteri di utilizzo dei prefabbricati in legno. Resta la priorità per le situazioni di emergenza e quindi ogni struttura potrà essere messa a disposizione immediatamente ma vengono indicate le precedenze per ottenere in locazione le casette (a cominciare dalle situazioni di presenza di persone con disabilità o invalidità) per l’assegnazione degli alloggi disponibili, sino al 30 giugno 2019. Il Comune pubblicherà un avviso che indicherà le modalità di presentazione delle domande, entro il prossimo 30 novembre. Al link ulteriori informazioni.'
+link: 'http://www.rgunotizie.it/articoli/cronaca/foligno-approvati-criteri-utilizzare-le-casette-legno'
+data: 12/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1238,188898699,2016-11-12 07:44:28,2016-11-12 07:42:05,"Pubblicato in Gazzetta Ufficiale I DECRETO LEGGE 11 novembre 2016, n. 205 Nuovi interventi urgenti(GU n. 264 del 11-11-2016) Vigente al: 11-11-2016",,,"[""Accettato"", ""Bollettino"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""12/11/2016"", ""descrizione"": ""DECRETO-LEGGE 11 novembre 2016, n. 205 Nuovi interventi urgenti in favore delle popolazioni e dei territori interessati dagli eventi sismici del 2016. (GU n. 264 del 11-11-2016) Vigente al: 11-11-2016"", ""link"": ""https://archive.org/details/DecretoleggeNuoviInferventiurgentisisna2016"", ""titolo"": ""Pubblicato in Gazzetta Ufficiale il Pubblicato in Gazzetta Ufficiale il decreto DECRETO-LEGGE 11 novembre 2016, n. 205 Nuovi interventi urgenti(GU n. 264 del 11-11-2016) Vigente al: 11-11-2016""}","<pre><yamldata>titolo: 'Pubblicato in Gazzetta Ufficiale il Pubblicato in Gazzetta Ufficiale il decreto DECRETO-LEGGE 11 novembre 2016, n. 205 Nuovi interventi urgenti(GU n. 264 del 11-11-2016) Vigente al: 11-11-2016'
 descrizione: 'DECRETO-LEGGE 11 novembre 2016, n. 205 Nuovi interventi urgenti in favore delle popolazioni e dei territori interessati dagli eventi sismici del 2016. (GU n. 264 del 11-11-2016) Vigente al: 11-11-2016'
 link: 'https://archive.org/details/DecretoleggeNuoviInferventiurgentisisna2016'
@@ -1034,6 +1039,17 @@ lat: ''
 lon: ''
 link: ''
 immagine: ''
+data: 03/11/2016
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1094,187132505,2016-11-03 21:47:09,2016-11-03 17:10:48,Compagnia delle buffe offre intrattenimento per i bambini delle famiglie sfollate sulla costa,,,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form"", ""Sisma Ottobre""]",,http://i.imgur.com/UkhhuO4.jpg,"{""cosa"": ""Intrattenimento per bambini"", ""data"": ""03/11/2016"", ""descrizione"": ""Insieme ad alcuni colleghi animatori marchigiani ci rendiamo disponibili a offrire un p\u00f2 di svago ai bambini delle famiglie sfollate nelle strutture della costa. Se chi organizza gli aiuti ritiene il servizio utile contattateci e ci atterremo alle vostre indicazioni. Romina - Compagnia delle Buffe"", ""email"": ""compagniadellebuffe@gmail.com"", ""immagine"": ""http://i.imgur.com/UkhhuO4.jpg"", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.facebook.com/compagniadellebuffe"", ""lon"": """", ""tel"": ""3382517177""}","<pre><yamldata>tel: '3382517177'
+email: compagniadellebuffe@gmail.com
+cosa: 'Intrattenimento per bambini'
+descrizione: 'Insieme ad alcuni colleghi animatori marchigiani ci rendiamo disponibili a offrire un pò di svago ai bambini delle famiglie sfollate nelle strutture della costa. Se chi organizza gli aiuti ritiene il servizio utile contattateci e ci atterremo alle vostre indicazioni. Romina - Compagnia delle Buffe'
+indirizzo: ''
+lat: ''
+lon: ''
+link: 'https://www.facebook.com/compagniadellebuffe'
+immagine: 'http://i.imgur.com/UkhhuO4.jpg'
 data: 03/11/2016
 </yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1094,187132505,2016-11-03 21:47:09,2016-11-03 17:10:48,Compagnia delle buffe offre intrattenimento per i bambini delle famiglie sfollate sulla costa,,,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form"", ""Sisma Ottobre""]",,http://i.imgur.com/UkhhuO4.jpg,"{""cosa"": ""Intrattenimento per bambini"", ""data"": ""03/11/2016"", ""descrizione"": ""Insieme ad alcuni colleghi animatori marchigiani ci rendiamo disponibili a offrire un p\u00f2 di svago ai bambini delle famiglie sfollate nelle strutture della costa. Se chi organizza gli aiuti ritiene il servizio utile contattateci e ci atterremo alle vostre indicazioni. Romina - Compagnia delle Buffe"", ""email"": ""compagniadellebuffe@gmail.com"", ""immagine"": ""http://i.imgur.com/UkhhuO4.jpg"", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.facebook.com/compagniadellebuffe"", ""lon"": """", ""tel"": ""3382517177""}","<pre><yamldata>tel: '3382517177'
@@ -7564,18 +7580,6 @@ bic: ''
 postale: ''
 causale: ''
 link: 'https://www.gofundme.com/internet4amatrice'
-email: ''
-data: 14/09/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/256,176853603,2016-09-14 09:16:16,2016-09-14 09:05:47,Consorzio Parmigiano Reggiano,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Consorzio Parmigiano Reggiano"", ""data"": ""14/09/2016"", ""descrizione"": ""1\u20ac PER RINASCERE: SOLIDARIET\u00c0 PER LE POPOLAZIONI COLPITE DEL CENTRO ITALIA COLPITE DAL SISMA Per ogni kg venduto i caseifici aderenti verseranno 1\u20ac ad un fondo destinato ad aiutare le popolazioni colpite. sul sito del consorzio l'elenco dei caseifici aderenti."", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""http://www.parmigianoreggiano.it/comunicazione/rinascere_solidarieta_popolazioni_colpite_centro_italia.aspx"", ""postale"": """"}","<pre><yamldata>chi: 'Consorzio Parmigiano Reggiano'
-descrizione: '1€ PER RINASCERE: SOLIDARIETÀ PER LE POPOLAZIONI COLPITE DEL CENTRO ITALIA COLPITE DAL SISMA Per ogni kg venduto i caseifici aderenti verseranno 1€ ad un fondo destinato ad aiutare le popolazioni colpite. sul sito del consorzio l''elenco dei caseifici aderenti.'
-intestazione: ''
-iban: ''
-bic: ''
-postale: ''
-causale: ''
-link: 'http://www.parmigianoreggiano.it/comunicazione/rinascere_solidarieta_popolazioni_colpite_centro_italia.aspx'
 email: ''
 data: 14/09/2016
 </yamldata></pre>
