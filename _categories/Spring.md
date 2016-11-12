@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Java
-category: Java
-permalink: /Java/
+title: Spring
+category: Spring
+permalink: /Spring/
 ---
-Java category
+Spring category
