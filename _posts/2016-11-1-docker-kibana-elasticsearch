@@ -1,8 +1,12 @@
+So I was trying to learn elasticsearch for work. So I was looking for some tutorials and I came across [this official tutorial] (https://www.elastic.co/webinars/getting-started-elasticsearch?baymax=default&storm=cta1&elektra=home)
+
+I was going to setup elasticsearch and kibana for it and I thought it's better to do this in Docker.
+
 http://stackoverflow.com/questions/40341346/kibana-on-docker-cannot-connect-to-elasticsearch
 
 https://hub.docker.com/r/seeruk/docker-kibana-sense/
 
-https://www.elastic.co/webinars/getting-started-elasticsearch?baymax=default&storm=cta1&elektra=home
+
 
 version: "2"
 
