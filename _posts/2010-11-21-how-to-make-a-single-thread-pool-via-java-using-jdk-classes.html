@@ -1,0 +1,74 @@
+---
+layout: post
+status: publish
+published: true
+title: How to make a Single Thread Pool via Java using JDK classes
+author:
+  display_name: Gunith
+  login: admin
+  email: gunith@gmail.com
+  url: ''
+author_login: admin
+author_email: gunith@gmail.com
+excerpt: 'The idea is to construct a queue of tasks, in terms of Threads, to get executed
+  one after the other. The JDK itself has classes to do Thread Pools: java.util.concurrent.ExecutorService.  This
+  is just one way of using it.'
+wordpress_id: 35
+wordpress_url: http://www.beta.gunith.com/?p=35
+date: '2010-11-21 14:22:55 +0530'
+date_gmt: '2010-11-21 08:52:55 +0530'
+categories:
+- Java
+tags:
+- programming
+- Java
+- code
+- jee
+- threading
+- multithreading
+- jdk
+- threads
+- coding
+comments: []
+---
+<p>The idea is to construct a queue of tasks, in terms of Threads, to get executed one after the other. The JDK itself has classes to do Thread Pools: java.util.concurrent.ExecutorService. </p>
+<p>This is just one way of using it.</p>
+<p>Try the following code,</p>
+<h2>Thread Pool Class</h2>
+<pre class="highlight">
+  package gunith.evillab;
+  import java.util.concurrent.ExecutorService;
+  import java.util.concurrent.Executors;
+
+  public class SingleThreadPool {
+    public static void main(String[] args) {
+      ExecutorService xServ = Executors.newSingleThreadExecutor();
+      for(int i=0;i<4;i++){
+        xServ.submit(new Boogie(i));
+      }
+      xServ.shutdown();
+      System.out.println("Sent all the Boogie's to dance");
+    }
+  }
+</pre>
+
+<h2>The (Dummy) Runnable Class</h2>
+<pre class="highlight">
+class Boogie implements Runnable{
+  int id;
+  public Boogie(int id) {
+    this.id = id;
+  }
+  @Override
+  public void run() {
+    for (int i=0;i<3;i++) {
+      System.out.println(id + " does the boogie times x " + i);
+      try {
+        Thread.sleep(3*1000);
+      } catch (InterruptedException e) {
+        e.printStackTrace();
+      }
+    }
+  }
+}
+</pre>

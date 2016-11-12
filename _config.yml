@@ -3,13 +3,16 @@
 #
 
 # Name of your site (displayed in the header)
-name: Your Name
+name: Coder's Block
+
+# Author
+author: Gunith Devasurendra
 
 # Short bio or description (displayed in the header)
-description: Web Developer from Somewhere
+description: Thoughts and Codes by Gunith Devasurendra
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
+avatar: https://avatars3.githubusercontent.com/u/1032108?v=3&s=466
 
 #
 # Flags below are optional
@@ -18,36 +21,56 @@ avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/je
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email:
-  facebook:
-  flickr:
-  github: barryclark/jekyll-now
+  email: #&#103;&#117;&#110;&#105;&#116;&#104;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;
+  facebook: #gunith
+  flickr: gunith
+  github: gunith
   instagram:
-  linkedin:
-  pinterest:
+  linkedin: gunith
+  pinterest: gunith
   rss: # just type anything here for a working RSS icon
-  twitter: jekyllrb
-  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
+  twitter: gunith
+  stackoverflow: users/264069/gunith-devasurendra # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
-  googleplus: # anything in your profile username that comes after plus.google.com/
+  googleplus: u/0/+GunithDevasurendra # anything in your profile username that comes after plus.google.com/
 
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
-disqus:
+disqus: gunith
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics:
+google_analytics: UA-86496151-1
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url:
+url: http://gunith.github.io
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
 # and NOT your User repository (http://yourusername.github.io)
 # then add in the baseurl here, like this: "/repository-name"
 baseurl: ""
+
+# SEO start
+#twitter:
+#  username: gunith
+
+#author:
+#  twitter: gunith
+
+logo: https://avatars3.githubusercontent.com/u/1032108?v=3&s=466
+
+social:
+  name: Gunith Devasurendra
+  links:
+    - https://twitter.com/gunith
+    - https://www.facebook.com/gunith
+    - https://www.linkedin.com/in/Gunith
+    - https://plus.google.com/u/0/+GunithDevasurendra
+    - https://github.com/gunith
+    - http://stackoverflow.com/users/264069/gunith-devasurendra
+# SEO end
 
 #
 # !! You don't need to change any of the configuration flags below !!
@@ -76,6 +99,10 @@ sass:
 gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+include: ["_categories"]
 
 # Exclude these files from your production _site
 exclude:
