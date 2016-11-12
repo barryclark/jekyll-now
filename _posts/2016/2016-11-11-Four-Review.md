@@ -10,11 +10,11 @@ author: Rob Kalajian
 
 <a class="center" href="http://www.marchforthgames.com/idevaffiliate/idevaffiliate.php?id=1_2_1_3" target="_blank"><img style="border:0px" src="http://www.marchforthgames.com/idevaffiliate/media/banners/FOUR-Banner-2.jpg" width="728" height="90" alt=""></a>
 
-<img src="/images/four/box.jpg" alt="Four Box" width="300" class="float-right" />
+
 
 <h2>Prelude</h2>
 
-I hadn't previously heard about March Forth Games until they reached out to me to do a review of their game, Four.  I took a quick look at their page while waiting for the game to come in, but there wasn't much in-depth detail there. Once the game came in I was pleasantly surprised to find a fun, little, family team game.
+<img src="/images/four/box.jpg" alt="Four Box" width="300" class="float-right" />I hadn't previously heard about March Forth Games until they reached out to me to do a review of their game, Four.  I took a quick look at their page while waiting for the game to come in, but there wasn't much in-depth detail there. Once the game came in I was pleasantly surprised to find a fun, little, family team game.
 
 <h2>Play</h2>
 
