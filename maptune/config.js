@@ -34,15 +34,15 @@
 					"Donazioni"			  : "labels:Donazioni",
 					"Notizie Utili"		  : "labels:Notizie Utili",
 					"---"				  : "",					
-					"Roulotte/Camper"	  : "labels:Roulotte|Camper",
-					"Acquisto solidale"	  : "labels:acquisto solidale",
+					"Roulotte/Camper"	  : "Roulotte|Camper",
+					"Acquisto solidale"	  : "acquisto solidale",
 					"----"				  : "",					
 					"da Facebook"			  : "labels:Facebook",
 					"da Form"				  : "labels:Form",
 					"da Telegram"			  : "labels:Telegram",
 					"-----"				  : "",					
-					"Segnalazioni aperti" : "open",
-					"Segnalazioni chiusi" : "closed",
+					"Segnalazioni aperti" : "state:open",
+					"Segnalazioni chiusi" : "state:closed",
 					"------"			  : "",					
 					"Tutto":""
 				}
@@ -59,19 +59,20 @@
 	}
 
 	__init = function(){
-		maptune.jsapi.setMapType("OpenStreetMap");
+		maptune.jsapi.setMapType("OpenStreetMap - Humanitarian");
 		maptune.selectFeedDialog("show");
 
 	};
 
 	maptune.onMapReady = function(){
-		maptune.setView([42.755332746654964,13.208563232421875],10);
+		maptune.setView([42.755332746654964,13.208563232421875],8);
 		setTimeout("__init()",1);
 	};
 
 
 	maptune.jsapi.onOpenInfoWindow = function(szInfo,info,szContext) {
 		if ( szContext == "sidebar" ){
+
 			var szZoomTo  = "<div style='float:right;margin-top:-1em;'>";
 				szZoomTo += maptune.jsapi.getZoomLink(info.geometry.coordinates[1]+","+info.geometry.coordinates[0]);
 				szZoomTo += "</div>";
@@ -85,6 +86,11 @@
 				szInfo += info.properties.data.descrizione;
 			}
 		}
+		if ( info.properties.url && info.properties.url.match(/issues/) ){
+			var issue = info.properties.url.split("issues/")[1];
+			szInfo += "<div style='margin-top:0.2em;'><a href='http://terremotocentroitalia.info/issues/"+issue+"' target='_blank'>vai alla segnalazione</a></div>";
+		}
+
 		return szInfo;
 	};
 

@@ -819,6 +819,12 @@ maptune.jsapi.searchDelay = function(szLayer,szValue) {
 			__mapUp.szSearchString = $("#IndicatorFilterForm > input").val();
 		}
 	}
+	if (__mapUp.szSearchString.match(/:/)){
+		__mapUp.szSearchColumn = __mapUp.szSearchString.split(':')[0];
+		__mapUp.szSearchString = __mapUp.szSearchString.split(':')[1];
+	}else{
+		__mapUp.szSearchColumn = "";
+	}
 	__mapUp.redraw();
 };
 
@@ -861,6 +867,12 @@ maptune.jsapi.setSearchFilter = function(szString) {
 	$("#IndicatorFilterForm > input").val(szString);
 	$("#IndicatorFilterFormQuery").val(szString);
 	__mapUp.szSearchString = szString;
+	if (__mapUp.szSearchString.match(/:/)){
+		__mapUp.szSearchColumn = __mapUp.szSearchString.split(':')[0];
+		__mapUp.szSearchString = __mapUp.szSearchString.split(':')[1];
+	}else{
+		__mapUp.szSearchColumn = "";
+	}
 	__mapUp.redraw();
 };
 
