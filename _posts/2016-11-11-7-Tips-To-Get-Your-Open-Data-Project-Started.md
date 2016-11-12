@@ -6,7 +6,7 @@ title: 7 Tips To Get Your Open Data Project Started
 
 There is so much open data available - whether it's on a [national](http://data.gov) level, [state](http://data.delaware.gov) level, or [local](https://www.opendataphilly.org/) level.  With so much data available, it can be daunting to figure out what to do with it.  How can you actually accomplish something that is both important to you and important to your community?  It's a tough question.
 
-At this past week's [Open Data Delaware Meetup](https://www.meetup.com/Open-Data-Delaware/events/235184082/) we kicked off our 2017 Open Data Challenge (look out for way more info coming soon!) by helping to give people a place to start when looking at starting their own open data project.  These aren't hard and fast steps, but they're a start.  They certainly don't need to be followed in order.  Take a look below and then [reach out to us](http:www.twitter.com/opendatade) to let us know - what project are you going to start?
+At this past week's [Open Data Delaware Meetup](https://www.meetup.com/Open-Data-Delaware/events/235184082/) we kicked off our 2017 Open Data Challenge (look out for way more info coming soon!) by helping to give people a place to start when looking at starting their own open data project ([full slide deck here](https://www.dropbox.com/s/4x8idnr44dse4t5/16-11-10%20Open%20Data%20Challenge%20Kickoff%20%28for%20web%29.pdf?dl=0).  These aren't hard and fast steps, but they're a start.  They certainly don't need to be followed in order.  Take a look below and then [reach out to us](http:www.twitter.com/opendatade) to let us know - what project are you going to start?
 
 ### 1. Look through the available datasets
 
@@ -18,7 +18,7 @@ Eventually, something is going to pop out at you that seems really interesting. 
 
 ### 3. What could you build with what is there?  Would it be useful?
 
-This is where you should start taking a deeper look at what is actually *in* the datasets available.  This can really help you to figure out what you could build.  First, let's talk about the [Professional and Occupational Licensing](https://data.delaware.gov/Licenses-and-Certifications/Professional-and-Occupational-Licensing/pjnv-eaih) dataset first.  This document gives a ton of great information:
+This is where you should start taking a deeper look at what is actually *in* the datasets available.  This can really help you to figure out what you could build.  Let's talk about the [Professional and Occupational Licensing](https://data.delaware.gov/Licenses-and-Certifications/Professional-and-Occupational-Licensing/pjnv-eaih) dataset first.  This document gives a ton of great information:
 
 * Last Name
 * First Name
