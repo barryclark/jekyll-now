@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Visual Studio Live: DC
+title: "Visual Studio Live: DC"
 ---
 
 ![Visual Studio Live laptop bag swag](http://stuff.faaberg.org/images/vslivebag.jpg)

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Developer toolkit: Personal dry erase board
+title: "Developer toolkit: Personal dry erase board"
 ---
 
 ![Dry erase board](/content/images/2016/05/image1--1-.JPG)

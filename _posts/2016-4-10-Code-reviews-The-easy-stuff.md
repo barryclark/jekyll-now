@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Code reviews: The easy stuff
+title: "Code reviews: The easy stuff"
 ---
 
 I take code reviews seriously. If I'm looking at someone else's changes, then I want to devote the appropriate amount of time and energy to provide thoughtful feedback. It can be hard to take a step back and take in suggestions on why your baby may not be the prettiest around, but long term it makes you a better programmer and improves the average quality of the code.
