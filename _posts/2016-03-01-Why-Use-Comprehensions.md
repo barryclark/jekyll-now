@@ -12,9 +12,7 @@ rather than on the procedure. For example :
 
 Somewhat more compactly we could write this as:
 
-```python
-collection = [d if check_type(d) else process(d) for d in product_list]
-```
+{% gist pranav93/ca5851262465a84a225e55951cd1e923 %}
 
 We don't have to worry about state of collection in above line of code. So,
 deugging is easy as compared imperative approach. There are many types of 
