@@ -445,11 +445,11 @@ footer {
 }
 .modal__trigger {
   position: relative;
-  display: inline-block;
   cursor: pointer;
   -webkit-transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
   transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
-  width: 32%;
+  -webkit-flex: 0 0 33%;
+  flex: 0 0 33%;
     @include mobile {
          margin: 0 5%;
          position: relative;
@@ -568,6 +568,14 @@ div.info{
     -ms-flex-pack: center;
     justify-content: center;
     
+}
+.flex-p{
+    display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	-webkit-justify-content: center;
+	justify-content:center;
 }
 //end demo
 
