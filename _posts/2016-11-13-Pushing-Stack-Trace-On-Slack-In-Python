@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Pushing Stack Trace On Slack In Python
+title: Pushing Stack Trace Of Error On Slack Channel
 ---
 
 Wouldn't it be awesome if we could get the error trace on slack.
