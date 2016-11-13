@@ -451,7 +451,7 @@ footer {
   transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
   width: 32%;
     @include mobile {
-         margin: 0 5%
+         margin: 0 5%;
          position: relative;
          display: inline-block;
          cursor: pointer;
