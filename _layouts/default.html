@@ -44,31 +44,63 @@
 
     <section class="section-work">
         <h3 id="work">Work</h3>
-            <a href="#" class="btn btn--show-overlay"><img src="/images/thumb.jpg" alt="proj-2"></a>
-               <a href="#" class="btn btn--show-overlay"><img src="/images/thumb(1).jpg" alt="proj-3"></a>
-               <a href="#" class="btn btn--show-overlay"><img src="/images/thumb(2).jpg" alt="proj-4"></a>
-               <a href="#" class="btn btn--show-overlay"><img src="/images/thumb(3).jpg" alt="proj-5"></a>
-               <a href="#" class="btn btn--show-overlay"><img src="/images/thumb(4).jpg" alt="proj-6"></a>
-               <a href="#" class="btn btn--show-overlay"><img src="/images/thumb(5).jpg" alt="proj-7"></a>
-               <a href="#" class="btn btn--show-overlay"><img src="/images/thumb(6).jpg" alt="proj-8"></a>
-               <a href="#" class="btn btn--show-overlay"><img src="/images/thumb(7).jpg" alt="proj-9"></a>
-                <div id="modal" class="modal">
-                    <button id="modal__close" class="modal__close">Close</button>
-                        <div id="svg-wrapper" class="svg-wrapper" data-btn-hovered="M1220.267,723.2c0,0-293.547,0-580.267,0c-333.653,0-584.533,0-584.533,0s0-104.783,0-334.854
-                      c0-188.981,0-334.846,0-334.846s251.733,0,584.533,0c362.667,0,580.267,0,580.267,0s0,116.7,0,344.803
-                      C1220.267,613.127,1220.267,723.2,1220.267,723.2L1220.267,723.2" data-modal-open="M1220.267,723.2c0,0-292.456-47.624-579.176-47.624c-333.653,0-585.624,47.624-585.624,47.624
-                      s83.149-104.783,83.149-334.854c0-188.981-83.149-334.846-83.149-334.846s251.324,49.105,584.124,49.105
-                      c362.667,0,580.676-49.105,580.676-49.105s-72.201,123.987-72.201,352.09C1148.065,620.414,1220.267,723.2,1220.267,723.2
-                      L1220.267,723.2">
+            <div class="info">
+			<div class="buttons">
+				<p>
+					<a href="" data-modal="#modal" class="modal__trigger">Modal 1</a>
+					<a href="" data-modal="#modal2" class="modal__trigger">Modal 2</a>
+					<a href="" data-modal="#modal3" class="modal__trigger">Modal 3</a>
+				</p>
+			</div>
+			<p>Click a button to activate a modal.<br><a href="http://ettrics.com/code/material-design-modal/" target="_blank" class="link">Read the how-to on Ettrics.com</a></p>
+		</div>
 
-                          <svg id="svg" width="100%" height="100%" viewbox="0 0 1280 800"  preserveaspectratio="none">
-                            <path id="svg-path" d="M1220.267,723.2c0,0-293.547,0-580.267,0c-333.653,0-584.533,0-584.533,0s0-3.505,0-11.2
-                      c0-6.321,0-11.2,0-11.2s251.733,0,584.533,0c362.667,0,580.267,0,580.267,0s0,3.903,0,11.533
-                      C1220.267,719.519,1220.267,723.2,1220.267,723.2L1220.267,723.2" />
-                          </svg>
+	<!-- Modal -->
+	<div id="modal" class="modal modal__bg" role="dialog" aria-hidden="true">
+		<div class="modal__dialog">
+			<div class="modal__content">
+				<h1>Modal</h1>
+				<p>Church-key American Apparel trust fund, cardigan mlkshk small batch Godard mustache pickled bespoke meh seitan. Wes Anderson farm-to-table vegan, kitsch Carles 8-bit gastropub paleo YOLO jean shorts health goth lo-fi. Normcore chambray locavore Banksy, YOLO meditation master cleanse readymade Bushwick.</p>
+				
+				<!-- modal close button -->
+				<a href="" class="modal__close demo-close">
+					<svg class="" viewbox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"/><path d="M0 0h24v24h-24z" fill="none"/></svg>
+				</a>
+				
+			</div>
+		</div>
+	</div>
 
-                        </div>
-                </div>
+	<div id="modal2" class="modal modal--align-top modal__bg" role="dialog" aria-hidden="true">
+		<div class="modal__dialog">
+			<div class="modal__content">
+				<h1>Big Modal</h1>
+				<h3>This modal is pretty tall.</h3>
+				<p>Selfies normcore four dollar toast four loko listicle artisan. Hoodie Marfa authentic, wayfarers church-key tofu Banksy pop-up Kickstarter Brooklyn heirloom swag synth. Echo Park cray synth mixtape. Tofu gastropub squid readymade, trust fund Wes Anderson DIY PBR 8-bit try-hard +1 Shoreditch lo-fi tote bag.</p>
+				<p><img src="http://unsplash.it/600/300" alt="" /></p>
+				<p>Mumblecore cred selfies fingerstache. Tousled skateboard plaid lo-fi shabby chic salvia, swag Odd Future Etsy art party Austin cronut. Crucifix whatever Pinterest food truck, pickled viral cray 90's DIY chambray keffiyeh biodiesel Vice blog. Cred meh yr tofu.</p>
+				<p>Mumblecore cred selfies fingerstache. Tousled skateboard plaid lo-fi shabby chic salvia, swag Odd Future Etsy art party Austin cronut. Crucifix whatever Pinterest food truck, pickled viral cray 90's DIY chambray keffiyeh biodiesel Vice blog. Cred meh yr tofu.</p>
+				<!-- modal close button -->
+				<a href="" class="modal__close demo-close">
+					<svg class="" viewbox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"/><path d="M0 0h24v24h-24z" fill="none"/></svg>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div id="modal3" class="modal modal__bg" role="dialog" aria-hidden="true">
+		<div class="modal__dialog">
+			<div class="modal__content">
+				<h1>Modal 3</h1>
+				<p>Church-key American Apparel trust fund, cardigan mlkshk small batch Godard mustache pickled bespoke meh seitan. Wes Anderson farm-to-table vegan, kitsch Carles 8-bit gastropub paleo YOLO jean shorts health goth lo-fi.</p>
+				
+				<!-- modal close button -->
+				<a href="" class="modal__close demo-close">
+					<svg class="" viewbox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"/><path d="M0 0h24v24h-24z" fill="none"/></svg>
+				</a>
+			</div>
+		</div>
+	</div>
 </section>      
   
    
@@ -84,83 +116,198 @@
       </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.3.0/snap.svg-min.js"></script>
     <script>
-    (function() {
-	
-	var svgModal = {
-		showOverlay: $('.btn--show-overlay'),						
-		closeOverlay: $('#modal__close'),
-		modal: $('#modal'),											
-		svgWrapper: $("#svg-wrapper"),								 
-		pathElement: undefined,
-		modalOpen: false,
-		btnHovered: false,											
-		paths: {
-			default: $('#svg-path').attr('d'),						
-			active: $("#svg-wrapper").data('btn-hovered'),			
-			modalOpen: $('#svg-wrapper').data('modal-open')
-		},
-		init: function() {
-			
-			var s = Snap("#svg");
-      
-			svgModal.pathElement = s.select('path');
-			this.events();													
-		},
-		events: function() {
-			svgModal.showOverlay.on('mouseenter', this.btnHover);
-			svgModal.showOverlay.on('mouseleave', this.btnHover);
-			svgModal.showOverlay.on('click', this.toggleModal);
-			svgModal.closeOverlay.on('click', this.toggleModal);
-		},
-		btnHover: function(e) {
-			e.preventDefault();
-			
-			var $this = $(this);
-			
-			if (!svgModal.modalOpen) {
+    var Modal = (function() {
 
-				svgModal.pathElement.stop().animate({
-					
-					'path': svgModal.btnHovered ? svgModal.paths.default : svgModal.paths.active
-					
-				}, 250, mina.easeout);
-				
-				svgModal.btnHovered = !svgModal.btnHovered;
-				
-			}
-		},
-		toggleModal: function(e) {
-			e.preventDefault();
-			
-			var $this = $(this);
+  var trigger = $qsa('.modal__trigger'); // what you click to activate the modal
+  var modals = $qsa('.modal'); // the entire modal (takes up entire window)
+  var modalsbg = $qsa('.modal__bg'); // the entire modal (takes up entire window)
+  var content = $qsa('.modal__content'); // the inner content of the modal
+	var closers = $qsa('.modal__close'); // an element used to close the modal
+  var w = window;
+  var isOpen = false;
+	var contentDelay = 400; // duration after you click the button and wait for the content to show
+  var len = trigger.length;
 
-			setTimeout(function() {
-				$('body').toggleClass('modal--active');
-			}, 100);
-			
-			svgModal.pathElement.stop().animate({
-				
-				'path': svgModal.paths.modalOpen
-				
-			}, 300, mina.easeout, function() {
+  // make it easier for yourself by not having to type as much to select an element
+  function $qsa(el) {
+    return document.querySelectorAll(el);
+  }
 
-				svgModal.pathElement.stop().animate({
-					'path': svgModal.modalOpen ? svgModal.paths.active : svgModal.paths.default
-				}, svgModal.modalOpen ? 800 : 300, svgModal.modalOpen ? mina.elastic : mina.easeout);
+  var getId = function(event) {
 
+    event.preventDefault();
+    var self = this;
+    // get the value of the data-modal attribute from the button
+    var modalId = self.dataset.modal;
+    var len = modalId.length;
+    // remove the '#' from the string
+    var modalIdTrimmed = modalId.substring(1, len);
+    // select the modal we want to activate
+    var modal = document.getElementById(modalIdTrimmed);
+    // execute function that creates the temporary expanding div
+    makeDiv(self, modal);
+  };
+
+  var makeDiv = function(self, modal) {
+
+    var fakediv = document.getElementById('modal__temp');
+
+    /**
+     * if there isn't a 'fakediv', create one and append it to the button that was
+     * clicked. after that execute the function 'moveTrig' which handles the animations.
+     */
+
+    if (fakediv === null) {
+      var div = document.createElement('div');
+      div.id = 'modal__temp';
+      self.appendChild(div);
+      moveTrig(self, modal, div);
+    }
+  };
+
+  var moveTrig = function(trig, modal, div) {
+    var trigProps = trig.getBoundingClientRect();
+    var m = modal;
+    var mProps = m.querySelector('.modal__content').getBoundingClientRect();
+    var transX, transY, scaleX, scaleY;
+    var xc = w.innerWidth / 2;
+    var yc = w.innerHeight / 2;
+
+    // this class increases z-index value so the button goes overtop the other buttons
+    trig.classList.add('modal__trigger--active');
+
+    // these values are used for scale the temporary div to the same size as the modal
+    scaleX = mProps.width / trigProps.width;
+    scaleY = mProps.height / trigProps.height;
+
+    scaleX = scaleX.toFixed(3); // round to 3 decimal places
+    scaleY = scaleY.toFixed(3);
+
+
+    // these values are used to move the button to the center of the window
+    transX = Math.round(xc - trigProps.left - trigProps.width / 2);
+    transY = Math.round(yc - trigProps.top - trigProps.height / 2);
+
+		// if the modal is aligned to the top then move the button to the center-y of the modal instead of the window
+    if (m.classList.contains('modal--align-top')) {
+      transY = Math.round(mProps.height / 2 + mProps.top - trigProps.top - trigProps.height / 2);
+    }
+
+
+		// translate button to center of screen
+		trig.style.transform = 'translate(' + transX + 'px, ' + transY + 'px)';
+		trig.style.webkitTransform = 'translate(' + transX + 'px, ' + transY + 'px)';
+		// expand temporary div to the same size as the modal
+		div.style.transform = 'scale(' + scaleX + ',' + scaleY + ')';
+		div.style.webkitTransform = 'scale(' + scaleX + ',' + scaleY + ')';
+
+
+		window.setTimeout(function() {
+			window.requestAnimationFrame(function() {
+				open(m, div);
 			});
+		}, contentDelay);
 
-      svgModal.btnHovered = false;
+  };
 
-			svgModal.modalOpen = !svgModal.modalOpen;
-			
-		}
- 	};
-	svgModal.init();
-	
-})();  
+  var open = function(m, div) {
+
+    if (!isOpen) {
+      // select the content inside the modal
+      var content = m.querySelector('.modal__content');
+      // reveal the modal
+      m.classList.add('modal--active');
+      // reveal the modal content
+      content.classList.add('modal__content--active');
+
+      /**
+       * when the modal content is finished transitioning, fadeout the temporary
+       * expanding div so when the window resizes it isn't visible ( it doesn't
+       * move with the window).
+       */
+
+      content.addEventListener('transitionend', hideDiv, false);
+
+      isOpen = true;
+    }
+
+    function hideDiv() {
+      // fadeout div so that it can't be seen when the window is resized
+      div.style.opacity = '0';
+      content.removeEventListener('transitionend', hideDiv, false);
+    }
+  };
+
+  var close = function(event) {
+
+		event.preventDefault();
+    event.stopImmediatePropagation();
+
+    var target = event.target;
+    var div = document.getElementById('modal__temp');
+
+    /**
+     * make sure the modal__bg or modal__close was clicked, we don't want to be able to click
+     * inside the modal and have it close.
+     */
+
+    if (isOpen && target.classList.contains('modal__bg') || target.classList.contains('modal__close')) {
+
+      // make the hidden div visible again and remove the transforms so it scales back to its original size
+      div.style.opacity = '1';
+      div.removeAttribute('style');
+
+			/**
+			* iterate through the modals and modal contents and triggers to remove their active classes.
+      * remove the inline css from the trigger to move it back into its original position.
+			*/
+
+			for (var i = 0; i < len; i++) {
+				modals[i].classList.remove('modal--active');
+				content[i].classList.remove('modal__content--active');
+				trigger[i].style.transform = 'none';
+        trigger[i].style.webkitTransform = 'none';
+				trigger[i].classList.remove('modal__trigger--active');
+			}
+
+      // when the temporary div is opacity:1 again, we want to remove it from the dom
+			div.addEventListener('transitionend', removeDiv, false);
+
+      isOpen = false;
+
+    }
+
+    function removeDiv() {
+      setTimeout(function() {
+        window.requestAnimationFrame(function() {
+          // remove the temp div from the dom with a slight delay so the animation looks good
+          div.remove();
+        });
+      }, contentDelay - 50);
+    }
+
+  };
+
+  var bindActions = function() {
+    for (var i = 0; i < len; i++) {
+      trigger[i].addEventListener('click', getId, false);
+      closers[i].addEventListener('click', close, false);
+      modalsbg[i].addEventListener('click', close, false);
+    }
+  };
+
+  var init = function() {
+    bindActions();
+  };
+
+  return {
+    init: init
+  };
+
+}());
+
+Modal.init();
     </script>
     {% include analytics.html %}
   </body>
