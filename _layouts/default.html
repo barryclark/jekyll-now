@@ -44,7 +44,24 @@
 
     <section class="section-work">
         <h3 id="work">Work</h3>
-        
+            <a href="#" class="btn btn--show-overlay">Click me</a>
+                <div id="modal" class="modal">
+                    <button id="modal__close" class="modal__close">Close</button>
+                        <div id="svg-wrapper" class="svg-wrapper" data-btn-hovered="M1220.267,723.2c0,0-293.547,0-580.267,0c-333.653,0-584.533,0-584.533,0s0-104.783,0-334.854
+                      c0-188.981,0-334.846,0-334.846s251.733,0,584.533,0c362.667,0,580.267,0,580.267,0s0,116.7,0,344.803
+                      C1220.267,613.127,1220.267,723.2,1220.267,723.2L1220.267,723.2" data-modal-open="M1220.267,723.2c0,0-292.456-47.624-579.176-47.624c-333.653,0-585.624,47.624-585.624,47.624
+                      s83.149-104.783,83.149-334.854c0-188.981-83.149-334.846-83.149-334.846s251.324,49.105,584.124,49.105
+                      c362.667,0,580.676-49.105,580.676-49.105s-72.201,123.987-72.201,352.09C1148.065,620.414,1220.267,723.2,1220.267,723.2
+                      L1220.267,723.2">
+
+                          <svg id="svg" width="100%" height="100%" viewBox="0 0 1280 800"  preserveAspectRatio="none">
+                            <path id="svg-path" d="M1220.267,723.2c0,0-293.547,0-580.267,0c-333.653,0-584.533,0-584.533,0s0-3.505,0-11.2
+                      c0-6.321,0-11.2,0-11.2s251.733,0,584.533,0c362.667,0,580.267,0,580.267,0s0,3.903,0,11.533
+                      C1220.267,719.519,1220.267,723.2,1220.267,723.2L1220.267,723.2" />
+                          </svg>
+
+                        </div>
+                </div>
 </section>      
   
    
@@ -60,7 +77,84 @@
       </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.3.0/snap.svg-min.js"></script>
+    <script>
+    (function() {
+	
+	var svgModal = {
+		showOverlay: $('.btn--show-overlay'),						
+		closeOverlay: $('#modal__close'),
+		modal: $('#modal'),											
+		svgWrapper: $("#svg-wrapper"),								 
+		pathElement: undefined,
+		modalOpen: false,
+		btnHovered: false,											
+		paths: {
+			default: $('#svg-path').attr('d'),						
+			active: $("#svg-wrapper").data('btn-hovered'),			
+			modalOpen: $('#svg-wrapper').data('modal-open')
+		},
+		init: function() {
+			
+			var s = Snap("#svg");
+      
+			svgModal.pathElement = s.select('path');
+			this.events();													
+		},
+		events: function() {
+			svgModal.showOverlay.on('mouseenter', this.btnHover);
+			svgModal.showOverlay.on('mouseleave', this.btnHover);
+			svgModal.showOverlay.on('click', this.toggleModal);
+			svgModal.closeOverlay.on('click', this.toggleModal);
+		},
+		btnHover: function(e) {
+			e.preventDefault();
+			
+			var $this = $(this);
+			
+			if (!svgModal.modalOpen) {
+
+				svgModal.pathElement.stop().animate({
+					
+					'path': svgModal.btnHovered ? svgModal.paths.default : svgModal.paths.active
+					
+				}, 250, mina.easeout);
+				
+				svgModal.btnHovered = !svgModal.btnHovered;
+				
+			}
+		},
+		toggleModal: function(e) {
+			e.preventDefault();
+			
+			var $this = $(this);
+
+			setTimeout(function() {
+				$('body').toggleClass('modal--active');
+			}, 100);
+			
+			svgModal.pathElement.stop().animate({
+				
+				'path': svgModal.paths.modalOpen
+				
+			}, 300, mina.easeout, function() {
+
+				svgModal.pathElement.stop().animate({
+					'path': svgModal.modalOpen ? svgModal.paths.active : svgModal.paths.default
+				}, svgModal.modalOpen ? 800 : 300, svgModal.modalOpen ? mina.elastic : mina.easeout);
+
+			});
+
+      svgModal.btnHovered = false;
+
+			svgModal.modalOpen = !svgModal.modalOpen;
+			
+		}
+ 	};
+	svgModal.init();
+	
+})();  
+    </script>
     {% include analytics.html %}
   </body>
 </html>
