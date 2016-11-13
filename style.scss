@@ -427,6 +427,7 @@ footer {
 }
 .modal__content {
   will-change: transform, opacity;
+  background: $white;
   position: relative;
   padding: 2.4rem;
   background-clip: padding-box;
