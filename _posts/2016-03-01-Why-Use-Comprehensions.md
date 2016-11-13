@@ -8,15 +8,7 @@ Comprehension makes code more compact and shifts our focus from the
 same keywords as loop and conditional blocks, but focuses on the data
 rather than on the procedure. For example :
 
-```python
-collection = list()
-for a_product in product_list:
-  if check_type(a_product) == 'media':
-    collection.append(a_product)
-  else:
-    new = process(a_product)
-    collection.append(new)
-```
+{% gist pranav93/385c7a6e258434ddc0f90b9e773a403e.js" %}
 
 Somewhat more compactly we could write this as:
 
