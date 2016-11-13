@@ -571,7 +571,7 @@ div.info{
 	-webkit-justify-content: center;
 	justify-content:center;
 }
-img:hover{
+img.modall:hover{
     //transform: matrix(0.55,-0.15,0,0.8,-100,0);
     transform: scale(0.8);
     transition-duration: 0.5s;
