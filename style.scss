@@ -429,7 +429,6 @@ footer {
   will-change: transform, opacity;
   position: relative;
   padding: 2.4rem;
-  background: #ffebee;
   background-clip: padding-box;
   box-shadow: 0 12px 15px 0 rgba(0,0,0,0.25);
   opacity: 0;
@@ -471,7 +470,6 @@ footer {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #ffebee;
   -webkit-transform: none;
           transform: none;
   opacity: 1;
@@ -489,7 +487,6 @@ img {
 }
 .demo-btns header {
   padding: 7vh 10vw;
-  background: #ffebee;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -574,6 +571,11 @@ div.info{
 	flex-flow: row wrap;
 	-webkit-justify-content: center;
 	justify-content:center;
+}
+figure:hover{
+    transform: matrix(0.55,-0.15,0,0.8,-100,0);
+    transition-duration: 0.5s;
+    box-shadow: -18px -14px 20px 2px rgba(128, 128, 128, 0.59);
 }
 //end demo
 
