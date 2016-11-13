@@ -572,7 +572,7 @@ div.info{
 	-webkit-justify-content: center;
 	justify-content:center;
 }
-figure:hover{
+a.modal__trigger:hover{
     transform: matrix(0.55,-0.15,0,0.8,-100,0);
     transition-duration: 0.5s;
     box-shadow: -18px -14px 20px 2px rgba(128, 128, 128, 0.59);
