@@ -16,11 +16,11 @@ As, you can see hook is needed so that our messages are passed to a channel in s
 You can find information about how to create an incoming wehook here 
 [https://api.slack.com/](https://api.slack.com/)
 
-At last call your logger when exception occurs as
+At last, call your logger when exception occurs as,
 ```
 slacker.exception(exc)
 ```
-And you will get the stack trace on your channel.
+, and you will get the stack trace on your channel.
 
 The final project is at 
 [https://github.com/pranav93/slack_trace](https://github.com/pranav93/slack_trace)
