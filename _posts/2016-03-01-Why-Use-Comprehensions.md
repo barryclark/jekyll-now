@@ -8,7 +8,7 @@ Comprehension makes code more compact and shifts our focus from the
 same keywords as loop and conditional blocks, but focuses on the data
 rather than on the procedure. For example :
 
-{% gist pranav93/385c7a6e258434ddc0f90b9e773a403e.js" %}
+{% gist pranav93/385c7a6e258434ddc0f90b9e773a403e %}
 
 Somewhat more compactly we could write this as:
 
