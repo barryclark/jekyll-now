@@ -1,2 +1,1 @@
-h1fhgjhggj
-klj
+![_config.yml]({{ site.baseurl }}/images/config.png)
