@@ -323,7 +323,7 @@ nav {
       justify-content: center;
       text-transform: uppercase;
       margin: 0 10px;
-      color: $blue;
+      color: $white;
       text-shadow: 0 0 15px $yellow;
       transition-duration: 0.5s;
     }
@@ -446,19 +446,19 @@ footer {
 .modal__trigger {
   position: relative;
   display: inline-block;
-  padding: 1.2rem 2.4rem;
-  color: rgba(0,0,0,0.7);
-  line-height: 1;
   cursor: pointer;
-  background: #ffebee;
-  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.26);
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
   -webkit-transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
   transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  width: 32%;
+    @include mobile {
+         margin: 0 5%
+         position: relative;
+         display: inline-block;
+         cursor: pointer;
+         -webkit-transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+         transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    
 }
 .modal__trigger--active {
   z-index: 10;
@@ -507,7 +507,7 @@ img {
   font-weight: 300;
 }
 .demo-btns .info {
-  background: #f44336;
+  background: $white;
   padding: 3vh 10vw;
   height: 70vh;
   display: -webkit-box;
