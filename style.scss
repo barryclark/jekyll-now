@@ -452,8 +452,9 @@ footer {
   flex: 0 0 33%;
     @include mobile {
          margin: 0 5%;
+         -webkit-flex: 0 0 100%;
+         flex: 0 0 100%;
          position: relative;
-         display: inline-block;
          cursor: pointer;
          -webkit-transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
          transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
