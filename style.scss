@@ -378,6 +378,85 @@ footer {
 
 //work section
 
+//modal begin
+.btn {
+	text-align: center;
+	z-index: 10;
+	width: 250px;
+	height: 105px;
+	line-height: 96px;
+	left: 50%;
+	margin-left: -130px;
+	font-weight: bold;
+	text-transform: uppercase;
+	position: absolute;
+}
+
+.svg-wrapper {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+
+  svg {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+}
+
+path {
+	fill: #2e2e2e;
+	stroke: #2e2e2e;
+	stroke-width: 1px;
+}
+
+.modal {
+	position: relative;
+	margin: 0 auto;
+	width: 250px;
+	height: 105px;
+	-webkit-transition: height 0.6s, width 0.6s;
+	transition: height 0.6s, width 0.6s;
+}
+
+.modal__close {
+	display: none;
+	position: absolute;
+	text-transform: uppercase;
+	top: 65px;
+	right: 85px;
+	color: white;
+	z-index: 10;
+	border: none;
+	background-color: transparent;
+	border-bottom: 2px solid transparent;
+
+  &:hover,
+  &:focus {
+    border-bottom-color: white;
+  }
+}
+
+.modal--active {
+  
+  .modal {
+	  width: 100%;
+	  height: 630px;
+  }
+  
+  .btn {
+	  display: none;
+  }
+  
+  .modal__close {
+    display: block;
+  }
+}
+//end modal section
+
+
 h1 a .logo:hover{
     -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
