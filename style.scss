@@ -464,9 +464,6 @@ footer {
 .modal__trigger--active {
   z-index: 10;
 }
-.modal__trigger:hover {
-  background: #e5d3d6;
-}
 #modal__temp {
   will-change: transform, opacity;
   position: absolute;
