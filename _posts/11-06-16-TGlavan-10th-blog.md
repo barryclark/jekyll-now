@@ -23,11 +23,11 @@ Argument:
 
 * Claim - Not all of the WoW community is racist towards "Chinses player workers"
 
-* Reasons - Those who have strong opinions about something are more likeley to vocalize those opinions, specifically if they're are negative as whatever they stand against 
+* Reasons - Those who have strong opinions about something are more likeley to vocalize those opinions, specifically if they're are negative. For most cases this is a result of wanting to get rid of what the individual deems to be the sourse of their complaints.
 
-* Evidence - 
+* Evidence - Nakamura references several comments portraying disagreement with some of the racist things said in the Machinima videos
 
-* Alternatives - 
+* Alternatives - Nakamura also provides additional comments where the commenter suggest that the videos themselves are not racist but an expression of anger with "Chinese player workers" ruining the experience and immersion that they desire when playing WoW.
 
 * Warrents - 
 
