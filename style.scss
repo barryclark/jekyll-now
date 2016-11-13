@@ -405,6 +405,8 @@ footer {
   opacity: 0;
   -webkit-transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
   transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+     -webkit-transition-delay: 0s;
+          transition-delay: 0s;
 }
 .modal--active {
   visibility: visible;
