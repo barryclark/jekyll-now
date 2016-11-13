@@ -4,7 +4,7 @@ title: Why Use Comprehensions?
 ---
 
 Comprehension makes code more compact and shifts our focus from the
-“how” to the “what.” A comprehension is an expression that uses the
+“how” to the “what”. A comprehension is an expression that uses the
 same keywords as loop and conditional blocks, but focuses on the data
 rather than on the procedure. For example :
 
