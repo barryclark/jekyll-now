@@ -486,10 +486,6 @@ footer {
 /**
  * Demo specific CSS
  */
-body {
-  height: 100vh;
-  background: #f44336;
-}
 img {
   max-width: 100%;
 }
@@ -565,22 +561,13 @@ img {
 .demo-close:hover {
   background: rgba(0,0,0,0.6);
 }
-.logo {
-  position: fixed;
-  bottom: 3vh;
-  right: 3vw;
-  z-index: 2;
-}
-.logo img {
-  width: 45px;
-  -webkit-transform: rotate(0);
-          transform: rotate(0);
-  -webkit-transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
-  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
-}
-.logo img:hover {
-  -webkit-transform: rotate(180deg) scale(1.1);
-          transform: rotate(180deg) scale(1.1);
+div.info{
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    
 }
 //end demo
 
