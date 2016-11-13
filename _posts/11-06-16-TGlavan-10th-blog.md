@@ -29,6 +29,6 @@ Argument:
 
 * Alternatives - Nakamura also provides additional comments where the commenter suggest that the videos themselves are not racist but an expression of anger with "Chinese player workers" ruining the experience and immersion that they desire when playing WoW.
 
-* Warrents - 
+* Warrents - The reasons and evidence that Nakamura provides deliberately show the conflict of opinions on "Chinese player workers"  where some are not neccesarily pleased with them but accept them as a part of the game and others view them as cheaters that should be ousted for ruining the game, neither of which is inherently racist beyond the assosiation of the Chinese ethnicity with worker players.
 
-Summary:
+That about wraps it up for this weeks blog.  See you next week for and update on the Final Project.
