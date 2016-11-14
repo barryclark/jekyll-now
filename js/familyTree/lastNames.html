@@ -1,5 +1,4 @@
-<div id="lastNamesCloud" class="namesCloud"></div>
-<script type="text/javascript">
+$(document).ready(function() {
     var fill = d3.scale.category20();
     var layout = d3.layout.cloud().size([1000, 500]).words([
         ['Thoroman', 184],
@@ -45,4 +44,4 @@
             return d.text;
         });
     }
-</script>
+});
