@@ -9,7 +9,7 @@ name: Test TESTer
 description: Web Developer from Somewhere
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
+avatar: https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/%D0%9F%D0%B0%D1%80%D0%BA_%D0%BD%D0%BE%D1%87%D1%8C%D1%8E_%D0%B2_%D0%94%D0%B5%D0%BD%D0%B8%D0%B7%D0%BB%D0%B8.jpg/270px-%D0%9F%D0%B0%D1%80%D0%BA_%D0%BD%D0%BE%D1%87%D1%8C%D1%8E_%D0%B2_%D0%94%D0%B5%D0%BD%D0%B8%D0%B7%D0%BB%D0%B8.jpg
 
 #
 # Flags below are optional
@@ -18,15 +18,15 @@ avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/je
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email:
+  email:mail@mail.mail
   facebook:
   flickr:
-  github: barryclark/jekyll-now
+  github: sergey637
   instagram:
   linkedin:
   pinterest:
   rss: # just type anything here for a working RSS icon
-  twitter: jekyllrb
+  twitter: 
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
