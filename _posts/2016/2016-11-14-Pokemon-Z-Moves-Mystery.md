@@ -37,6 +37,8 @@ One of the Ultra Beasts is known as UB-03 Lighting. More will be revealed during
 
 This beast has an astounding appetite, and it will completely devour anything in front of its eyes. It’s said that it devours not only objects, but the ground, rivers, and even the seas. There is a belief that it converts the abnormal amount it eats entirely into energy to sustain itself, leaving no waste product behind. Whether this is true or not is a mystery.
 
+It's still not clear if Ultra Beasts are Pokémon or not. Clearly these two are a bit more horrific that we're usually used to seeing, but it's weird to think about any creature in the Pokémon world that *isn't* a Pokémon in some way, shape, or form.
+
 ---
 
 <img src="/images/sunmoon/zmoves.jpg" width="300" class="float-right" alt="Z-Moves"/>The Z-Moves for all the final evolutions of the Starter Pokémon are as follows:
