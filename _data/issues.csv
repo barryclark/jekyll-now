@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1269,189245595,2016-11-14 22:33:17,2016-11-14 22:32:53,A #Tolentino una rete per trovare alloggi in affitto agli sfollati,,,"[""Accettato"", ""Alloggi"", ""Bollettino"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""14/11/2016"", ""descrizione"": ""Una rete di contatti per agevolare i terremotati rimasti senza casa a trovare un alloggio in affitto. L\u2019idea \u00e8 nata nella riunione della settimana scorsa, a Tolentino, promossa dallo studio di architettura e design Trepuntozero e alla quale hanno partecipato architetti, ingegneri, geometri, geologi e tecnici provenienti da diverse province della regione. \u00abAbbiamo organizzato insieme ad altri colleghi una rete di proprietari di immobili agibili ed agenzie immobiliari sia sulla costa che nell\u2019entroterra che hanno disponibilit\u00e0 di appartamenti in affitto \u2013 spiega Alessia Scarpeccio, architetto \u2013 in questo modo chi sta cercando una casa sicura in cui vivere almeno in questi primi mesi pu\u00f2 inviare una mail a: casapertutti2016@gmail.com. E\u2019 necessario specificare il comune di residenza, dove si cerca l\u2019immobile e le particolari esigenze di ciascun richiedente. L\u2019attivit\u00e0 \u00e8 completamente gratuita\u00bb."", ""link"": ""http://m.cronachemaceratesi.it/2016/11/14/case-in-affitto-per-gli-sfollati-nasce-una-rete-trova-alloggi/886947/"", ""titolo"": ""A #Tolentino una rete per trovare alloggi in affitto agli sfollati""}","<pre><yamldata>titolo: 'A #Tolentino una rete per trovare alloggi in affitto agli sfollati'
+descrizione: 'Una rete di contatti per agevolare i terremotati rimasti senza casa a trovare un alloggio in affitto. L’idea è nata nella riunione della settimana scorsa, a Tolentino, promossa dallo studio di architettura e design Trepuntozero e alla quale hanno partecipato architetti, ingegneri, geometri, geologi e tecnici provenienti da diverse province della regione. «Abbiamo organizzato insieme ad altri colleghi una rete di proprietari di immobili agibili ed agenzie immobiliari sia sulla costa che nell’entroterra che hanno disponibilità di appartamenti in affitto – spiega Alessia Scarpeccio, architetto – in questo modo chi sta cercando una casa sicura in cui vivere almeno in questi primi mesi può inviare una mail a: casapertutti2016@gmail.com. E’ necessario specificare il comune di residenza, dove si cerca l’immobile e le particolari esigenze di ciascun richiedente. L’attività è completamente gratuita».'
+link: 'http://m.cronachemaceratesi.it/2016/11/14/case-in-affitto-per-gli-sfollati-nasce-una-rete-trova-alloggi/886947/'
+data: 14/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1268,189244274,2016-11-14 22:27:18,2016-11-14 22:26:39,Sosteniamo #Arquata: le magliette della Pro Loco di Arquata per la ricostruzione,,,"[""Accettato"", ""Bollettino"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Sosteniamo #Arquata: le magliette della Pro Loco di Arquata per la ricostruzione"", ""data"": ""14/11/2016"", ""descrizione"": ""Aiutiamo Arquata a ripartire: campagna di raccolta fondi della Proloco di Arquata del Tronto. Il ricavato delle vendite on line sar\u00e0 rivolto interamente a finanziare iniziative a vantaggio della comunit\u00e0 dei residenti, che dopo l\u2019ultima forte scossa ha dovuto evacuare il territorio comunale, gi\u00e0 gravemente ferito dal terremoto di agosto e oggi in buona parte distrutto. L\u2019acquisto pu\u00f2 essere fatto on line tramite Paypal, carta di credito o bonifico bancario."", ""email"": ""info@sostieniamoarquata.it"", ""iban"": """", ""intestazione"": """", ""link"": ""http://sosteniamoarquata.it/"", ""postale"": """"}","<pre><yamldata>chi: 'Sosteniamo #Arquata: le magliette della Pro Loco di Arquata per la ricostruzione'
 descrizione: 'Aiutiamo Arquata a ripartire: campagna di raccolta fondi della Proloco di Arquata del Tronto. Il ricavato delle vendite on line sarà rivolto interamente a finanziare iniziative a vantaggio della comunità dei residenti, che dopo l’ultima forte scossa ha dovuto evacuare il territorio comunale, già gravemente ferito dal terremoto di agosto e oggi in buona parte distrutto. L’acquisto può essere fatto on line tramite Paypal, carta di credito o bonifico bancario.'
 intestazione: ''
@@ -5832,17 +5837,6 @@ descrizione: 'VALENTINA offre posto per 2/3 persone a Camposanto (Mo).'
 indirizzo: ''
 lat: '44.79816'
 lon: '11.18855'
-link: ''
-immagine: ''
-data: 15/09/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/472,177288141,2016-09-22 16:01:30,2016-09-15 20:58:02,"Montelanico, RM - Casa in campagna",41.59965,12.98018,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""NOEMI mette a disposizione casa in campagna per 4/6 persone a Montelanico (Roma)."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": ""41.59965"", ""link"": """", ""lon"": ""12.98018"", ""tel"": ""327 369 2383""}","<pre><yamldata>tel: '327 369 2383'
-email: ''
-descrizione: 'NOEMI mette a disposizione casa in campagna per 4/6 persone a Montelanico (Roma).'
-indirizzo: ''
-lat: '41.59965'
-lon: '12.98018'
 link: ''
 immagine: ''
 data: 15/09/2016
