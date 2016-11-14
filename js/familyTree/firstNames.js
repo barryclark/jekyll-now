@@ -1,5 +1,4 @@
-<div id="firstNamesCloud" class="namesCloud"></div>
-<script type="text/javascript">
+$(document).ready(function() {
     var fill = d3.scale.category20();
     var layout = d3.layout.cloud().size([700, 500]).words([
         ['John', 76],
@@ -45,4 +44,4 @@
             return d.text;
         });
     }
-</script>
+});
