@@ -23,6 +23,18 @@
 	{% endunless %}
 {% endfor %}
 
+{% for deferedjavascript in page.deferedjavascript %}
+	{% unless deferedjavascripts contains deferedjavascript %}
+		{% assign deferedjavascripts = deferedjavascripts | push: deferedjavascript %}
+	{% endunless %}
+{% endfor %}
+
+{% for deferedjavascript in layout.deferedjavascripts %}
+	{% unless deferedjavascripts contains deferedjavascript %}
+		{% assign deferedjavascripts = deferedjavascripts | push: deferedjavascript %}
+	{% endunless %}
+{% endfor %}
+
 {% for css in page.csses %}
 	{% unless csses contains css %}{% assign csses = csses | push: css %}{% endunless %}
 {% endfor %}
@@ -49,6 +61,7 @@
 
 		{% if jquery %}<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>{% endif %}
 		{% for javascript in javascripts %}{% unless javascript == blank %}<script async src="{{ javascript }}"></script>{% endunless %}{% endfor %}
+		{% for javascript in deferedjavascripts %}{% unless javascript == blank %}<script defer src="{{ javascript }}"></script>{% endunless %}{% endfor %}
 		
 		<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 		
