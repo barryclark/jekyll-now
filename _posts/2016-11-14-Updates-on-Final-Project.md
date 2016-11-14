@@ -21,36 +21,26 @@ An edgecase: sometimes words will be parenthesized, and that can throw off this 
 
 
 Below, I have some psuedocode for my potential program. PLEASE NOTE THAT THIS CODE IS NOT WORKING AND IS RIDDLED WITH ERRORS I NEED TO TAKE CARE OF.
+
 Pseudocode:
 
-#empty dictionary for character to go into
+	#empty dictionary for character to go into
+	char_dict = {}
+	script = With open(script, x)
+	#splits the script into words
+	Words = script.split( )
+	For word in words:
+		#some edge cases for symbols and numbers here
+		xxxxxxxxxxxxx
+		#if the word is uppercase 
+		if word isupper():
+			if word is in char_dict:
+				#somehow add the following words up until next character to dictionary word count
+				Continue
+			Else:
+				#add word as a new entry in the dictionary
+				#somehow count the next few words until the next uppercase towards the dictionary
 
-char_dict = {}
-
-Script = With open(script, how to open)
-
-#splits the script into words
-
-Words = script.split( )
-
-For word in words:
-
-	#some edge cases for symbols and numbers here
-	
-	xxxxxxxxxxxxx
-	
-	#if the word is uppercase 
-	
-	If word isupper():
-	
-		If word is in char_dict:
-		
-			Continue
-		Else:
-			#add word as a new entry in the dictionary
-			
-	#somehow count the next few words until the next uppercase towards the dictionary
-  
 
 Clearly there is a lot to still be done, some edge cases to take into account, ect, but at least I have a general idea or skeleton 
 of what this code will look like. If necessary, I will come to my CS 331 professor with this and get help (because the man is a python
