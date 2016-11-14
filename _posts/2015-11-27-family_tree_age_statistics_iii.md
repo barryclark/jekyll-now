@@ -11,4 +11,4 @@ image: /images/covers/meanMedianDeathYear.png
 
 A line / spline chart of the average and median ages per death year... This time showing correlation!
 
-{% include familyTree/meanMedianDeathYear.min.html %}
+<div id="meanMedianChart" style="width: 100%; height: 300px;"></div>
