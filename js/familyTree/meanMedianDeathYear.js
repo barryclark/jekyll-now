@@ -1,5 +1,4 @@
-<div id="deathChart" style="width: 100%; height: 300px;"></div>
-<script type="text/javascript">
+$(document).ready(function() {
     c3.generate({
         bindto: '#deathChart',
         data: {
@@ -192,4 +191,4 @@
             }
         }
     });
-</script>
+});
