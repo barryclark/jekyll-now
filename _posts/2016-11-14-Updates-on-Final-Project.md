@@ -22,20 +22,33 @@ An edgecase: sometimes words will be parenthesized, and that can throw off this 
 
 Below, I have some psuedocode for my potential program. PLEASE NOTE THAT THIS CODE IS NOT WORKING AND IS RIDDLED WITH ERRORS I NEED TO TAKE CARE OF.
 Pseudocode:
+
 #empty dictionary for character to go into
+
 char_dict = {}
+
 Script = With open(script, how to open)
+
 #splits the script into words
+
 Words = script.split( )
+
 For word in words:
+
 	#some edge cases for symbols and numbers here
+	
 	xxxxxxxxxxxxx
+	
 	#if the word is uppercase 
+	
 	If word isupper():
+	
 		If word is in char_dict:
+		
 			Continue
 		Else:
 			#add word as a new entry in the dictionary
+			
 	#somehow count the next few words until the next uppercase towards the dictionary
   
 
