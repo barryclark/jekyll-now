@@ -4,6 +4,7 @@ title: Family Tree&#58; Age Statistics
 tags: [family tree, math]
 keywords: [age, statistics, data mining]
 javascripts: [/js/d3.min.js, /js/c3.min.js]
+deferedjavascripts: [js/familyTree/ageChart.min.js]
 csses: [/css/c3.css]
 image: /images/Family-Tree-icon-200.png
 ---
@@ -19,4 +20,4 @@ Q3: | 80
 Maximum age: | 98
 Average age: | 61.27333333333333
 
-{% include familyTree/ageChart.min.html %}
+<div id="ageChart" style="width: 100%; height: 300px;"></div>
