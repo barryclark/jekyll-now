@@ -3,6 +3,7 @@
 {% if page.mathjax %}{% assign mathjax = true %}{% endif %}
 {% if page.jquery or layout.jquery %}{% assign jquery = true %}{% endif %}
 {% assign javascripts = "" | split: "" %}
+{% assign deferedjavascripts = "" | split: "" %}
 {% assign csses = "" | split: "" %}
 
 {% if page.permalink contains '/tags/' %}
@@ -75,8 +76,6 @@
 {% include metadata/schema.html %}  
 {% include social/facebook.html %}	    
 {% include header.html %}
-
-{{ page.deferedjavascripts }}
 	
 <div id="main" role="main" class="container">
 {{ content }}
