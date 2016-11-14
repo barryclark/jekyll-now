@@ -13,7 +13,7 @@ Pokémon Sun and Moon are right around the corner, and The Pokémon Company has 
 
 First is the Alolan variations of Diglett and Dugtrio, each with some fabulous hair.
 
-<img src="/images/sunmoon/digdug.jpg" width="300" class="float-right" alt="Alolan Diglett/Dugtrio"/>
+<img src="/images/sunmoon/digdug.jpg" width="200" class="float-right" alt="Alolan Diglett/Dugtrio"/>
 
 **Alolan Diglett**\\
 **Type: Ground–Steel**
@@ -27,7 +27,7 @@ Alolan Dugtrio is the evolved form of Alolan Diglett. Alolan Dugtrio’s whisker
 
 ---
 
-<img src="/images/sunmoon/ultrab.jpg" width="300" class="float-right" alt="Ultra Beasts"/>There have also been two new Ultra Beasts announced:
+<img src="/images/sunmoon/ultrab.jpg" width="200" class="float-right" alt="Ultra Beasts"/>There have also been two new Ultra Beasts announced:
 
 **UB-03 Lighting**
 
