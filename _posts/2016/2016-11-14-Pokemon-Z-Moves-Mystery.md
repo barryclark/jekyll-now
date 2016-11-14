@@ -60,7 +60,7 @@ With flames spouting from its flame belt, Incineroar leaps high into the sky and
 
 Z-Moves are special moves that a Pokémon can use when it’s holding a Z-Crystal that corresponds to its move’s type. Their effects vary greatly depending on whether they’re based on attack moves or status moves. Z-Moves based on attack moves have far greater power than standard moves, but how powerful they will be seems to depend on the power of the original move that a Z-Move is based on. Since Z-Moves are full-powered attacks, they also seem to be impossible to fully ward off with moves like Protect and Detect—they still do some damage. When you use your Z-Power based on a status move, it will be powered up with additional effects. These effects come in many varieties, including raising your own Pokémon’s stats, healing the next Pokémon to switch in and more!
 
---
+---
 
 Last, but certainly not least, is the announcement of a Mystery Pokémon. No other info has been provided except the following image:
 
