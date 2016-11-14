@@ -297,3 +297,11 @@ canvas {
 	margin: 0 auto;
 }
 
+.inline-block {
+	display: inline-block;
+  
+	@include mobile {
+		display: block;
+	}
+}
+
