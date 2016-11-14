@@ -7668,8 +7668,8 @@ email: ''
 data: 14/09/2016
 </yamldata></pre>
 ",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/265,176855261,2016-09-23 21:41:26,2016-09-14 09:13:43,Un racconto in aiuto,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,{},"<pre><yamldata>chi: 'Un racconto in aiuto'
-descrizione: 'La scrittrice Sara Rattaro pubblica il racconto “Il matrimonio di Alice” per raccogliere una piccola parte di fondi utili alla ricostruzione dei paesi colpiti dal sisma. Donazione online al momento dell'acquisto del racconto.'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/265,176855261,2016-11-14 22:20:43,2016-09-14 09:13:43,Un racconto in aiuto,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Un racconto in aiuto"", ""data"": ""14/09/2016"", ""descrizione"": ""La scrittrice Sara Rattaro pubblica il racconto \u201cIl matrimonio di Alice\u201d per raccogliere una piccola parte di fondi utili alla ricostruzione dei paesi colpiti dal sisma. Donazione online al momento dell'acquisto del racconto."", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""http://www.sara4you.it/"", ""postale"": """"}","<pre><yamldata>chi: 'Un racconto in aiuto'
+descrizione: 'La scrittrice Sara Rattaro pubblica il racconto “Il matrimonio di Alice” per raccogliere una piccola parte di fondi utili alla ricostruzione dei paesi colpiti dal sisma. Donazione online al momento dell''acquisto del racconto.'
 intestazione: ''
 iban: ''
 bic: ''
