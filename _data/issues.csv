@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1266,189236519,2016-11-14 21:51:50,2016-11-14 21:51:23,Acquisti solidali: cesti natalizi di Confartigiato #AscoliPiceno #Fermo con i prodotti delle aziende colpite dal sisma,42.8545996,13.5754669,"[""Accettato"", ""acquisto solidale"", ""Bollettino"", ""Fabbisogni"", ""Sisma Ottobre""]",,http://i.imgur.com/Kq7euQF.jpg,"{""cosa"": ""Acquisti solidali: cesti natalizi di Confartigiato #AscoliPiceno #Fermo con i prodotti delle aziende colpite dal sisma"", ""data"": ""14/11/2016"", ""descrizione"": ""La Confartigianato di Ascoli Piceno e Fermo a seguito del sisma che a pi\u00f9 riprese ha sconvolto le vite e le economie dei residenti nei territori colpiti, considerando l\u2019approssimarsi delle festivit\u00e0 Natalizie, ha lanciato un importante programma di solidariet\u00e0. Si \u00e8 pensato di predisporre un\u2019iniziativa che ha come fine l\u2019acquisto di strenne Natalizie confezionate con i prodotti tipici delle aziende operanti nei territori terremotati che hanno dato gi\u00e0 la loro disponibilit\u00e0 a soddisfare le commesse che perverranno. E\u2019 stato predisposto un listino contenente le varie tipologie di strenne acquistabili con il dettaglio dei prodotti, provenienti esclusivamente dalle aziende artigiane dislocate nei comuni di Arquata del Tronto ed Acquasanta Terme. I cesti, articolati in tre tipologie, contengono, a seconda del tipo vari prodotti. Per conoscere maggiori dettagli, i costi e le tipologie dei cesti natalizi previsti, oppure per segnalare altre necessit\u00e0, \u00e8 possibile contattare: Stefano Santini, tel. 0736/336402, stefano.santini@confartigianato.apfm.it"", ""email"": ""stefano.santini@confartigianato.apfm.it"", ""immagine"": ""http://i.imgur.com/Kq7euQF.jpg"", ""indirizzo"": ""Piazza del Popolo, Santa Maria Intervineas, Ascoli Piceno, AP, Marche, 63100, Italia"", ""lat"": ""42.8545996"", ""link"": ""http://confartigianato.apfm.it/component/tags/tag/994-terremoto.html"", ""lon"": ""13.5754669"", ""tel"": ""0736/336402""}","<pre><yamldata>tel: 0736/336402
+email: stefano.santini@confartigianato.apfm.it
+cosa: 'Acquisti solidali: cesti natalizi di Confartigiato #AscoliPiceno #Fermo con i prodotti delle aziende colpite dal sisma'
+descrizione: 'La Confartigianato di Ascoli Piceno e Fermo a seguito del sisma che a più riprese ha sconvolto le vite e le economie dei residenti nei territori colpiti, considerando l’approssimarsi delle festività Natalizie, ha lanciato un importante programma di solidarietà. Si è pensato di predisporre un’iniziativa che ha come fine l’acquisto di strenne Natalizie confezionate con i prodotti tipici delle aziende operanti nei territori terremotati che hanno dato già la loro disponibilità a soddisfare le commesse che perverranno. E’ stato predisposto un listino contenente le varie tipologie di strenne acquistabili con il dettaglio dei prodotti, provenienti esclusivamente dalle aziende artigiane dislocate nei comuni di Arquata del Tronto ed Acquasanta Terme. I cesti, articolati in tre tipologie, contengono, a seconda del tipo vari prodotti. Per conoscere maggiori dettagli, i costi e le tipologie dei cesti natalizi previsti, oppure per segnalare altre necessità, è possibile contattare: Stefano Santini, tel. 0736/336402, stefano.santini@confartigianato.apfm.it'
+indirizzo: 'Piazza del Popolo, Santa Maria Intervineas, Ascoli Piceno, AP, Marche, 63100, Italia'
+lat: '42.8545996'
+lon: '13.5754669'
+link: 'http://confartigianato.apfm.it/component/tags/tag/994-terremoto.html'
+immagine: 'http://i.imgur.com/Kq7euQF.jpg'
+data: 14/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1265,189236272,2016-11-14 21:50:53,2016-11-14 21:50:16,AiutiaAMO Retrosi - Amatrice,,,"[""Accettato"", ""Bollettino"", ""Facebook"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Pro terremoto Retrosi"", ""chi"": ""AiutiaAMO Retrosi - Amatrice"", ""data"": ""14/11/2016"", ""descrizione"": ""La Soc. di mutuo soccorso Pro Retrosi sta raccogliendo fondi da destinare alla ricostruzione di beni e infrastrutture di utilit\u00e0 collettiva di Retrosi."", ""email"": """", ""iban"": ""IT44J0832773470000000001325"", ""intestazione"": ""Soc. di mutuo soccorso Pro Retrosi"", ""link"": ""https://www.facebook.com/aiutiamoretrosi/"", ""postale"": """"}","<pre><yamldata>chi: 'AiutiaAMO Retrosi - Amatrice'
 descrizione: 'La Soc. di mutuo soccorso Pro Retrosi sta raccogliendo fondi da destinare alla ricostruzione di beni e infrastrutture di utilità collettiva di Retrosi.'
 intestazione: 'Soc. di mutuo soccorso Pro Retrosi'
@@ -5169,17 +5180,6 @@ descrizione: 'HOTEL ""MILETTO"" - fino a 40 persone'
 indirizzo: 'Sella del Perrone-Campitello Matese, Grondari, San Massimo, CB, Molise, Italia'
 lat: '41.4618523'
 lon: '14.3934605'
-link: ''
-immagine: ''
-data: 16/09/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/533,177473029,2016-09-22 15:45:13,2016-09-16 16:59:09,"Firenze, FI - 3/4 posti letto",43.7698712,11.2555757,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""FABIO abita tra Firenze e Siena, ma mette a disposizione 3/4 posti letto (animali ammessi) a casa sua"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Piazza della Signoria, Quartiere 1, Firenze, Metropolitan City of Florence, Tuscany, 50122, Italia"", ""lat"": ""43.7698712"", ""link"": """", ""lon"": ""11.2555757"", ""tel"": ""3931839574""}","<pre><yamldata>tel: '3931839574'
-email: ''
-descrizione: 'FABIO abita tra Firenze e Siena, ma mette a disposizione 3/4 posti letto (animali ammessi) a casa sua'
-indirizzo: 'Piazza della Signoria, Quartiere 1, Firenze, Metropolitan City of Florence, Tuscany, 50122, Italia'
-lat: '43.7698712'
-lon: '11.2555757'
 link: ''
 immagine: ''
 data: 16/09/2016
