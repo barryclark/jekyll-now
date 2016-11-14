@@ -11,11 +11,14 @@ Earlier this month my fiancee and a couple of her siblings & significant others 
 <style>
 .nov-hike {
   width: 32%;
+  vertical-align: middle;
 }
 
 @media screen and (max-width: 900px) {
-  width: initial;
-  max-width: 100%;
+  .nov-hike {
+    width: initial;
+    max-width: 100%;
+  }
 }
 </style>
 
