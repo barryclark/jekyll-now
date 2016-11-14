@@ -3224,7 +3224,7 @@ email: ''
 data: 12/10/2016
 </yamldata></pre>
 ",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/792,182647266,2016-10-13 22:05:45,2016-10-12 22:12:37,Associazione RicostruiAmo Saletta - Quadrangolare di calcio,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Ass. ricostruiamo Saletta frazione di #Amatrice"", ""data"": ""12/10/2016"", ""descrizione"": ""In campo per Saletta: quadrangolare di calcio di beneficienza. Domenica 30 ottobre 2016 h 17."", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1781991578735092/"", ""postale"": """"}","<pre><yamldata>chi: 'Ass. ricostruiamo Saletta frazione di #Amatrice'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/792,182647266,2016-11-14 22:12:00,2016-10-12 22:12:37,Associazione RicostruiAmo Saletta - Quadrangolare di calcio,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Ass. ricostruiamo Saletta frazione di #Amatrice"", ""data"": ""12/10/2016"", ""descrizione"": ""In campo per Saletta: quadrangolare di calcio di beneficienza. Domenica 30 ottobre 2016 h 17."", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1781991578735092/"", ""postale"": """"}","<pre><yamldata>chi: 'Ass. ricostruiamo Saletta frazione di #Amatrice'
 descrizione: 'In campo per Saletta: quadrangolare di calcio di beneficienza. Domenica 30 ottobre 2016 h 17.'
 intestazione: ''
 iban: ''
@@ -3235,7 +3235,7 @@ link: 'https://www.facebook.com/groups/1758670357733881/permalink/17819915787350
 email: ''
 data: 12/10/2016
 </yamldata></pre>
-",open
+",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/791,182642189,2016-10-28 15:12:21,2016-10-12 21:44:59,"#Accumoli - richiesta cibo per papere, galline conigli e gatti",42.694141,13.247683,"[""Accettato"", ""Fabbisogni"", ""Facebook""]",,,"{""cosa"": ""cibo per papere, galline conigli e gatti"", ""data"": ""12/10/2016"", ""descrizione"": ""#Accumoli - richiesta di cibo per papere, galline conigli e gatti - RAMIRO 3336903233"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Frazione Fonte del Campo, Case Marini, Accumoli, RI, Lazio, 02011, Italy"", ""lat"": ""42.694141"", ""link"": ""https://www.facebook.com/angela.pignotti.5/posts/10210584989410747"", ""lon"": ""13.247683"", ""tel"": ""3336903233""}","<pre><yamldata>tel: '3336903233'
 email: ''
 cosa: 'cibo per papere, galline conigli e gatti'
