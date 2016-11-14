@@ -23,9 +23,9 @@
 	{% endunless %}
 {% endfor %}
 
-{% for deferedjavascript in page.deferedjavascript %}
-	{% unless deferedjavascripts contains deferedjavascript %}
-		{% assign deferedjavascripts = deferedjavascripts | push: deferedjavascript %}
+{% for javascript in page.deferedjavascripts %}
+	{% unless deferedjavascripts contains javascript %}
+		{% assign deferedjavascripts = deferedjavascripts | push: javascript %}
 	{% endunless %}
 {% endfor %}
 
