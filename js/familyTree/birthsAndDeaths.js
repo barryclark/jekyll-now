@@ -1,6 +1,4 @@
-<div style="text-align: center;" class="title">Births and Deaths per Month</div>
-<div id="perMonthChart" class="charts"></div>
-<script type="text/javascript">
+$(document).ready(function() {
     c3.generate({
         bindto: '#perMonthChart',
         data: {
@@ -41,10 +39,7 @@
             }
         }
     });
-</script>
-<div style="text-align: center;" class="title">Birth and Deaths per Decade</div>
-<div id="perDecadeChart" class="charts"></div>
-<script type="text/javascript">
+
     c3.generate({
         bindto: '#perDecadeChart',
         data: {
@@ -106,10 +101,7 @@
             }
         }
     });
-</script>
-<div style="text-align: center;" class="title">Births and Deaths per Decade, estimated assuming average age</div>
-<div id="perDecadeCleanChart" class="charts"></div>
-<script type="text/javascript">
+
     c3.generate({
         bindto: '#perDecadeCleanChart',
         data: {
@@ -172,10 +164,7 @@
             }
         }
     });
-</script>
-<div style="text-align: center;" class="title">Births and Deaths per Decade, known and estimated</div>
-<div id="perDecadeCombined" class="charts"></div>
-<script type="text/javascript">
+
     c3.generate({
         bindto: '#perDecadeCombined',
         data: {
@@ -244,4 +233,4 @@
             }
         }
     });
-</script>
+});
