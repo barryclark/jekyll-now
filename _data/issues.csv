@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1259,189135670,2016-11-14 15:23:06,2016-11-14 15:08:19,Raccolta fondi - Salviamo #CasteldiLuco,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Raccolte Fondi"", ""Sisma Ottobre""]",,,"{""bic"": """", ""causale"": ""Salviamo Castel di Luco"", ""chi"": ""Salviamo Castel di Luco"", ""data"": ""14/11/2016"", ""descrizione"": ""La Dimora Storica Castel di Luco ha subito danni dagli eventi sismici. Per mettere in sicurezza e avviare i lavori di restauro la famiglia Amici, proprietaria della dimora (gi\u00e0 Bene Culturale vincolato dal Comune di Acquasanta Terme) ha avviato una raccolta fondi. Per trasparenza saranno pubblicati online tutti gli interventi effettuati grazie alle donazioni sul sito http://www.casteldiluco.it/"", ""email"": """", ""iban"": ""IT 26 B 08474 69400 000010111223"", ""intestazione"": ""Amici Francesco/Laura"", ""link"": ""https://www.facebook.com/dimora-storica-castel-di-luco-131208256981642/"", ""postale"": """"}","<pre><yamldata>chi: 'Salviamo Castel di Luco'
+descrizione: 'La Dimora Storica Castel di Luco ha subito danni dagli eventi sismici. Per mettere in sicurezza e avviare i lavori di restauro la famiglia Amici, proprietaria della dimora (già Bene Culturale vincolato dal Comune di Acquasanta Terme) ha avviato una raccolta fondi. Per trasparenza saranno pubblicati online tutti gli interventi effettuati grazie alle donazioni sul sito http://www.casteldiluco.it/'
+intestazione: 'Amici Francesco/Laura'
+iban: 'IT 26 B 08474 69400 000010111223'
+bic: ''
+postale: ''
+causale: 'Salviamo Castel di Luco'
+link: 'https://www.facebook.com/dimora-storica-castel-di-luco-131208256981642/'
+email: ''
+data: 14/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1258,189082976,2016-11-14 15:21:35,2016-11-14 10:55:44,Offresi gratuitamente 3 casolari a 30 km da #Foligno,42.543384,12.551164,"[""Accettato"", ""Alloggi"", ""Bollettino"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""14/11/2016"", ""descrizione"": ""Il signor Angelo Angelucci (338 9894896) mette a disposizione gratuitamente 3 casolari a Vio di Sellano vicino al Valico del Soglio a circa 30 km da Foligno."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": ""42.543384"", ""link"": """", ""lon"": ""12.551164"", ""tel"": ""338 9894896""}","<pre><yamldata>tel: '338 9894896'
 email: ''
 descrizione: 'Il signor Angelo Angelucci (338 9894896) mette a disposizione gratuitamente 3 casolari a Vio di Sellano vicino al Valico del Soglio a circa 30 km da Foligno.'
@@ -5828,12 +5839,6 @@ data: 15/09/2016
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/462,177190520,2016-10-01 18:25:31,2016-09-15 14:20:46,Selezione di tweets rilevanti in inglese realizzata da Standby Task Force NGO,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""Storify che raccoglie molti tweet (in lingua inglese) utili per chi \u00e8 stato colpito dal sisma e non solo."", ""link"": ""https://storify.com/LizSBTF/italy-earthquake?utm_campaign=website&utm_source=email&utm_medium=email"", ""titolo"": ""Selezione di tweets rilevanti in inglese realizzata da Standby Task Force NGO""}","<pre><yamldata>titolo: 'Selezione di tweets rilevanti in inglese realizzata da Standby Task Force NGO'
 descrizione: 'Storify che raccoglie molti tweet (in lingua inglese) utili per chi è stato colpito dal sisma e non solo.'
 link: 'https://storify.com/LizSBTF/italy-earthquake?utm_campaign=website&utm_source=email&utm_medium=email'
-data: 15/09/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/461,177189413,2016-10-01 18:25:41,2016-09-15 14:16:56,Monte dei Paschi di Siena elimina spese su bonifici per post sisma,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""Monte dei Paschi non applica le spese sui bonifici rivolti agli IBAN dei conti correnti espressamente attivati dai Comuni colpiti dal sisma, Amatrice, Accumoli e Arquata del Tronto."", ""link"": ""https://www.facebook.com/m.simona.bellini.palombini/posts/10209088836532396?pnref=story"", ""titolo"": ""Monte dei Paschi di Siena""}","<pre><yamldata>titolo: 'Monte dei Paschi di Siena'
-descrizione: 'Monte dei Paschi non applica le spese sui bonifici rivolti agli IBAN dei conti correnti espressamente attivati dai Comuni colpiti dal sisma, Amatrice, Accumoli e Arquata del Tronto.'
-link: 'https://www.facebook.com/m.simona.bellini.palombini/posts/10209088836532396?pnref=story'
 data: 15/09/2016
 </yamldata></pre>
 ",open
