@@ -3338,18 +3338,18 @@ email: ''
 data: 11/10/2016
 </yamldata></pre>
 ",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/781,182231698,2016-10-19 14:22:54,2016-10-11 10:42:57,"Asta di beneficenza ""Con le mani, col cuore"" Associazione Culturale Il Teatro delle Stelle",,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",Milestone(number=20),,{},"<pre><yamldata>chi: 'Antonio Scanferlato per l''Associazione Culturale ""Il Teatro delle Stelle""'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/781,182231698,2016-11-14 22:13:30,2016-10-11 10:42:57,"Asta di beneficenza ""Con le mani, col cuore"" Associazione Culturale Il Teatro delle Stelle",,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",Milestone(number=20),,{},"<pre><yamldata>chi: 'Antonio Scanferlato per l''Associazione Culturale ""Il Teatro delle Stelle""'
 descrizione: 'L''Associazione Culturale \""Il Teatro delle Stelle\"", con sede a Ghedi (Bs), ha deciso di fare qualcosa di concreto per aiutare le popolazioni terremotate del centro Italia ma in un modo un po'' diverso dal consueto: abbiamo deciso di mettere all''asta solo oggetti creati dalle persone, con le loro mani o con il loro ingegno sicuramente donati col cuore perciò artisti, hobbysti, artigiani o chiunque abbia realizzato o voglia realizzare un manufatto da donare è il benvenuto. Abbiamo già raccolto l''adesione di molti artisti: pittori, scrittori, musicisti ma anche casalinghe, bricoleur e abilissimi artigiani. Il punto (virtuale) di ritrovo è il gruppo Facebook “Con le Mani, con il Cuore”, dove si può consultare il regolamento, dove si possono visionare le prime opere poste all'incanto. L''evento avrà luogo presso la Sala Consiliare del Comune di Ghedi, domenica 20 novembre, alle ore 15:30. Per ulteriori informazioni: info@ilteatrodellestelle.it, tel. 3925044965.'
 intestazione: 'Associazione Culturale ""Il Teatro delle Stelle""'
-iban: IT85A0857554570000000014209
-bic: ICRAITRRFZ0
+iban: 'IT85A0857554570000000014209'
+bic: 'ICRAITRRFZ0'
 postale: ''
 causale: 'Donazione asta di beneficenza per terremoto centro Italia.'
 link: 'https://www.facebook.com/groups/663650213787679/'
-email: antonio.scanferlato@ilteatrodellestelle.it
+email: 'antonio.scanferlato@ilteatrodellestelle.it'
 data: 11/10/2016
 </yamldata></pre>
-",open
+",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/780,182225969,2016-10-21 21:35:19,2016-10-11 10:12:54,"Associazione ‘Le Castagne’ di Cossito (Amatrice) - Cena di solidarietà, Roma 21 ottobre",,,"[""Accettato"", ""Pubblicare su FB"", ""Pubblicare su TW"", ""Raccolte Fondi""]",Milestone(number=22),,"{""bic"": """", ""causale"": """", ""chi"": ""Associazione \u2018Le Castagne\u2019 di Cossito (Amatrice)"", ""data"": ""11/10/2016"", ""descrizione"": ""Il 21 Ottobre l\u2019associazione \u2018Le Castagne\u2019 di Cossito (Amatrice) organizza a Roma, presso la Parrocchia della Chiesa Evangelica Metodista, in via Firenze, 38 zona Termini, la cena di beneficenza \u2018Amatrice, una realt\u00e0 fatta di frazioni, adottane una\u2019. La quota di partecipazione \u00e8 di 30 euro. L\u2019incasso della serata sar\u00e0 devoluto per attrezzature, ricostruzione e soluzioni abitative per gli sfollati del terremoto."", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""http://www.agenparl.com/terremoto-2110-lassociazione-le-castagne-cossito-cena-beneficenza-amatrice-realta-fatta-frazioni-adottane/"", ""postale"": """"}","<pre><yamldata>chi: 'Associazione ‘Le Castagne’ di Cossito (Amatrice)'
 descrizione: 'Il 21 Ottobre l’associazione ‘Le Castagne’ di Cossito (Amatrice) organizza a Roma, presso la Parrocchia della Chiesa Evangelica Metodista, in via Firenze, 38 zona Termini, la cena di beneficenza ‘Amatrice, una realtà fatta di frazioni, adottane una’. La quota di partecipazione è di 30 euro. L’incasso della serata sarà devoluto per attrezzature, ricostruzione e soluzioni abitative per gli sfollati del terremoto.'
 intestazione: ''
