@@ -29,9 +29,9 @@
 	{% endunless %}
 {% endfor %}
 
-{% for deferedjavascript in layout.deferedjavascripts %}
-	{% unless deferedjavascripts contains deferedjavascript %}
-		{% assign deferedjavascripts = deferedjavascripts | push: deferedjavascript %}
+{% for javascript in layout.deferedjavascripts %}
+	{% unless deferedjavascripts contains javascript %}
+		{% assign deferedjavascripts = deferedjavascripts | push: javascript %}
 	{% endunless %}
 {% endfor %}
 
@@ -75,6 +75,8 @@
 {% include metadata/schema.html %}  
 {% include social/facebook.html %}	    
 {% include header.html %}
+
+{{ page.deferedjavascripts }}
 	
 <div id="main" role="main" class="container">
 {{ content }}
