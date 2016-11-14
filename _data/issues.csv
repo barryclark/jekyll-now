@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1265,189236272,2016-11-14 21:50:53,2016-11-14 21:50:16,AiutiaAMO Retrosi - Amatrice,,,"[""Accettato"", ""Bollettino"", ""Facebook"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Pro terremoto Retrosi"", ""chi"": ""AiutiaAMO Retrosi - Amatrice"", ""data"": ""14/11/2016"", ""descrizione"": ""La Soc. di mutuo soccorso Pro Retrosi sta raccogliendo fondi da destinare alla ricostruzione di beni e infrastrutture di utilit\u00e0 collettiva di Retrosi."", ""email"": """", ""iban"": ""IT44J0832773470000000001325"", ""intestazione"": ""Soc. di mutuo soccorso Pro Retrosi"", ""link"": ""https://www.facebook.com/aiutiamoretrosi/"", ""postale"": """"}","<pre><yamldata>chi: 'AiutiaAMO Retrosi - Amatrice'
+descrizione: 'La Soc. di mutuo soccorso Pro Retrosi sta raccogliendo fondi da destinare alla ricostruzione di beni e infrastrutture di utilità collettiva di Retrosi.'
+intestazione: 'Soc. di mutuo soccorso Pro Retrosi'
+iban: IT44J0832773470000000001325
+bic: ''
+postale: ''
+causale: 'Pro terremoto Retrosi'
+link: 'https://www.facebook.com/aiutiamoretrosi/'
+email: ''
+data: 14/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1264,189233343,2016-11-14 21:37:42,2016-11-14 21:37:13,Gambero rosso:  inchiesta sulle cantine marchigiane danneggiate dal sisma,,,"[""Accettato"", ""Bollettino"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""14/11/2016"", ""descrizione"": ""L'inchiesta di Gambero Rosso sulle cantine marchigiane danneggiate dal terremoto. I disagi pi\u00f9 importanti sono stati rilevati nel maceratese, tra Serrapetrona, San Severino Marche e soprattutto Matelica."", ""link"": ""http://www.gamberorosso.it/it/wine/1025940"", ""titolo"": ""Gambero rosso:  inchiesta sulle cantine marchigiane danneggiate dal sisma""}","<pre><yamldata>titolo: 'Gambero rosso:  inchiesta sulle cantine marchigiane danneggiate dal sisma'
 descrizione: 'L''inchiesta di Gambero Rosso sulle cantine marchigiane danneggiate dal terremoto. I disagi più importanti sono stati rilevati nel maceratese, tra Serrapetrona, San Severino Marche e soprattutto Matelica.'
 link: 'http://www.gamberorosso.it/it/wine/1025940'
