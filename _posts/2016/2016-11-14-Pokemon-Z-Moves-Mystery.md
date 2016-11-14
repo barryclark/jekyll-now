@@ -43,7 +43,7 @@ At this point we'll have to wait until the 18th to see what's really going on wi
 
 ---
 
-<img src="/images/sunmoon/zmoves.jpg" width="300" class="float-right" alt="Z-Moves"/>The Z-Moves for all the final evolutions of the Starter Pokémon are as follows:
+<img src="/images/sunmoon/zmoves.jpg" width="200" class="float-right" alt="Z-Moves"/>The Z-Moves for all the final evolutions of the Starter Pokémon are as follows:
 
 **Z-Move: Sinister Arrow Raid**\\
 **Pokémon: Decidueye**
