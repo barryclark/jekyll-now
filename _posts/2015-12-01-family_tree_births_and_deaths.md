@@ -7,7 +7,7 @@ javascripts: [/js/d3.min.js, /js/c3.min.js]
 deferedjavascripts: [/js/familyTree/birthsAndDeaths.min.js]
 csses: [/css/c3.css]
 excerpt: Births &amp; deaths per decade and month.
-image: /images/Family-Tree-icon-200.png
+image: /images/covers/births-and-deaths.png
 ---
 
 <div style="text-align: center;" class="title">Births and Deaths per Month</div>
