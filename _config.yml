@@ -1,15 +1,15 @@
 # Site settings
 description: "O conhecimento que você precisa, do jeito que você quer!"
 baseurl: ""
-url: "http://education.codeshare.com.br"
+url: "https://blog.codeshare.com.br"
 icon: https://raw.githubusercontent.com/CodeShareEducation/CodeShareEducation.github.io/master/src/img/icons/favicon.ico
 
 # User settings
-username: CodeShare Education
+username: CodeShare Blog
 user_description: O conhecimento que você precisa, do jeito que você quer!
 user_title: O conhecimento que você precisa, do jeito que você quer!
 user_gravatar: d36a082aacb53b6f76869748fb4b81d4
-email: contato@codeshare.com.br
+email: contact@codeshare.com.br
 github_username:  CodeShareEducation
 gplus_username: CodeshareBrEducation
 twitter_username: wendell_adriel
