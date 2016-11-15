@@ -1,0 +1,33 @@
+{
+  "name": "CodeShare Blog",
+  "short_name": "CodeShare Blog",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "orientation": "portrait",
+  "lang": "pt-br",
+  "background_color": "#fff",
+  "theme_color": "#ff6d00",
+  "description": "CodeShare Platform Blog",
+  "prefer_related_applications": false,
+  "icons": [{
+    "src": "assets/img/icons/apple-touch-icon-60x60.png",
+    "sizes": "60x60",
+    "type": "image/png"
+    },
+    {
+      "src": "assets/img/icons/apple-touch-icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/img/icons/apple-touch-icon-114x114.png",
+      "sizes": "114x114",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/img/icons/apple-touch-icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    }
+  ]
+}
