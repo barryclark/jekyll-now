@@ -12,6 +12,10 @@ title: Ricerca
         <div class="input-group">
             <form class="form-inline global-search" role="form" action="/searchissues" method="get">
                 <div class="form-group-lg col-xs-12">
+                    <label for="label">Categoria</label>
+                    <select class="form-control" id="labelchoice" name="label"><option value=""></option></select>
+                </div>
+                <div class="form-group-lg col-xs-12">
                     <label class="search-box" for="search-box">Cosa Stai Cercando?</label>
                     <input type="text" class="form-control" id="search-box" name="query" placeholder="">
                 </div>
@@ -32,12 +36,17 @@ function urldecode(str) {
    return decodeURIComponent((str+'').replace(/\+/g, '%20'));
 }
 
+
+labelset=new Set();
 window.store = {};
     {% assign filteredissues = site.data.issuesjson %}
     {% for member in filteredissues %}
+    for (var lab of "{{member.issue.labels | join: ','}}".split(',')) {
+            labelset.add(lab);
+    }
 window.store["{{site.url}}/issues/{{member.number}}"]={
         "title": urldecode("{{ member.title | strip_html | url_encode }}"),
-        "category": "{{member.issue.labels | join: ' '}}",
+        "label": "{{member.issue.labels | join: ','}}",
         {% if member.issue.data.descrizione != blank %}
         "content": urldecode("{{ member.issue.data.descrizione | url_encode }}"),
         {% else %}
@@ -50,6 +59,15 @@ window.store["{{site.url}}/issues/{{member.number}}"]={
         "state": "{{member.state}}"
 };
     {% endfor %}
+    var dropdown = document.getElementById("labelchoice");
+    if (dropdown) {
+            for (lab of labelset.values()) {
+                    var option = document.createElement("option");
+                    option.text = lab;
+                    dropdown.add(option);
+            }
+    }
+
 </script>
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/elasticlunr/0.9.5/elasticlunr.min.js"></script>
 <script type="text/javascript" src="../js/lunr.stemmer.support.min.js"></script>

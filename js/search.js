@@ -21,6 +21,9 @@
                       appendString += '</small>';
 
                       appendString += '</div>';
+                      appendString += '<div class="panel-footer">';
+                      appendString += item.label;
+                      appendString += '</div>';
                       appendString += '</div>';
                       appendString += '</a>';
               }
@@ -43,6 +46,9 @@
                       appendString += '<p class="list-group-item-text">' + item.date + '</p>'
                       appendString += '</small>';
 
+                      appendString += '</div>';
+                      appendString += '<div class="panel-footer">';
+                      appendString += item.label;
                       appendString += '</div>';
                       appendString += '</div>';
                       appendString += '</a>';
@@ -69,24 +75,25 @@
     }
   }
   
-  function loadIssue(searchTerm){
+  function loadIssue(searchTerm,searchLabel){
     NProgress.start();
     for (var key in window.store) { // Add the data to lunr
-      idx.addDoc({
-        'id': key,
-        'title': window.store[key].title,
-        'category': window.store[key].category,
-        'content': window.store[key].content,
-        'state': window.store[key].state,
-        'date': window.store[key].date
-      });
+        if (!searchLabel || $.inArray(searchLabel,window.store[key].label.toLowerCase().split(","))>=0) {
+            idx.addDoc({
+                'id': key,
+                'title': window.store[key].title,
+                'content': window.store[key].content,
+                'state': window.store[key].state,
+                'date': window.store[key].date,
+                'label': window.store[key].label,
+            });
+        }
 
       var results = idx.search(searchTerm,{
     "fields": {
         "title": {"boost": 10},
-        "category": {"boost": 100},
     },
-      boolean: "AND"
+      bool: "AND"
       }); // Get elasticlunr to perform a search
       displaySearchResults(results, window.store); // We'll write this in the next section 
     }
@@ -94,7 +101,12 @@
   }
 
   var searchTerm = getQueryVariable('query');
-    
+  var searchLabel = getQueryVariable('label');
+
+  if (searchLabel) {
+      document.getElementById('labelchoice').value= searchLabel;
+      searchLabel=searchLabel.toLowerCase();
+  }
     
   if (searchTerm) {
     NProgress.start();
@@ -105,14 +117,14 @@
     var idx = elasticlunr(function () {
       this.use(elasticlunr.it);
       this.addField('title', { boost: 10 });
-      this.addField('category');
+      this.addField('label');
       this.addField('content');
       this.addField('state');
       this.setRef('id');
     });
 
     setTimeout( function() { 
-      loadIssue(searchTerm); // We'll write this in the next section 
+      loadIssue(searchTerm,searchLabel); // We'll write this in the next section 
     }, 0 );
   }
 })();
