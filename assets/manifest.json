@@ -1,7 +1,7 @@
 {
   "name": "CodeShare Blog",
   "short_name": "CodeShare Blog",
-  "start_url": "/index.html",
+  "start_url": "index.html",
   "display": "standalone",
   "orientation": "portrait",
   "lang": "pt-br",
