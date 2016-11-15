@@ -61,7 +61,11 @@ window.store["{{site.url}}/issues/{{member.number}}"]={
     {% endfor %}
     var dropdown = document.getElementById("labelchoice");
     if (dropdown) {
+            var labellist=[];
             for (lab of labelset.values()) {
+                labellist.push(lab);
+            }
+            for (lab of labellist.sort()) {
                     var option = document.createElement("option");
                     option.text = lab;
                     dropdown.add(option);
