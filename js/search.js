@@ -93,7 +93,7 @@
     "fields": {
         "title": {"boost": 10},
     },
-      bool: "AND"
+      bool: "OR"
       }); // Get elasticlunr to perform a search
       displaySearchResults(results, window.store); // We'll write this in the next section 
     }
