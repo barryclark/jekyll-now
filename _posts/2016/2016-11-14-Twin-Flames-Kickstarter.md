@@ -4,7 +4,6 @@ title: "Kickstarter - Twin Flames"
 description: "Twin Flames is a 2D action platformer with roguelike elements to spice it up. It's my first Kickstarter pick for November."
 category: kickstarter
 featured: twinflames.jpg
-amazonterm: "pokemon sun and moon"
 tags: [video games, twin flames, kickstarter, fat panda games]
 author: Rob Kalajian
 ---
