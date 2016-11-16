@@ -1,78 +1,77 @@
 (function() {
-
     Set.prototype.intersection = function(setB) {
-    var intersection = new Set();
-    for (var elem of setB) {
-        if (this.has(elem)) {
-            intersection.add(elem);
+        var intersection = new Set();
+        for (var elem of setB) {
+            if (this.has(elem)) {
+                intersection.add(elem);
+            }
+        }
+        return intersection;
+    }
+    function displaySearchResults(results, store, usedLabels) {
+        var searchResults = document.getElementById('search-results');
+        if (results.length) { // Are there any results?
+            var appendString = '';
+
+            appendString += '<div class="panel-group">';
+            for (var i = 0; i < results.length; i++) {  // Iterate over the results
+                var item = store[results[i].ref];
+                if (item.state == "open") {
+                    appendString += '<a href="' + item.url + '" class="list-group-item">';
+                    appendString += '<div class="panel panel-default">';
+                    appendString += '<div class="panel-heading">';
+                    appendString += '<h4>' + item.title + '</h4>';
+                    appendString += '</div>';
+                    appendString += '<div class="panel-body">';
+
+                    appendString += '<small>';
+                    appendString += '<p class="list-group-item-text">' + item.content.substring(0, 250) + '...</p>'
+                    appendString += '<p class="list-group-item-text">' + item.date + '</p>'
+                    appendString += '</small>';
+
+                    appendString += '</div>';
+                    appendString += '<div class="panel-footer">';
+                    itemLabels = new Set(item.label.split(','));
+                    appendString += Array.from(itemLabels.intersection(usedLabels).values());
+                    appendString += '</div>';
+                    appendString += '</div>';
+                    appendString += '</a>';
+                }
+            }
+            appendString += '</div>';
+
+            appendString += '<div class="panel-group">';
+            for (var i = 0; i < results.length; i++) {  // Iterate over the results
+                var item = store[results[i].ref];
+                if (item.state != "open") {
+                    appendString += '<a href="' + item.url + '" class="list-group-item">';
+                    appendString += '<div class="panel panel-default">';
+                    appendString += '<div class="panel-heading">';
+                    appendString += '<strike><h4>' + item.title + '</h4></strike>';
+                    appendString += '</div>';
+                    appendString += '<div class="panel-body">';
+
+                    appendString += '<small>';
+                    appendString += '<p class="list-group-item-text">' + item.content.substring(0, 250) + '...</p>'
+                    appendString += '<p class="list-group-item-text">' + item.date + '</p>'
+                    appendString += '</small>';
+
+                    appendString += '</div>';
+                    appendString += '<div class="panel-footer">';
+                    itemLabels = new Set(item.label.split(','));
+                    appendString += Array.from(itemLabels.intersection(usedLabels).values());
+                    appendString += '</div>';
+                    appendString += '</div>';
+                    appendString += '</a>';
+                }
+            }
+            appendString += '</div>';
+
+            searchResults.innerHTML = appendString;
+        } else {
+            searchResults.innerHTML = '<li>Nessuna segnalazione trovata</li>';
         }
     }
-    return intersection;
-}
-  function displaySearchResults(results, store, usedLabels) {
-    var searchResults = document.getElementById('search-results');
-    if (results.length) { // Are there any results?
-      var appendString = '';
-
-        appendString += '<div class="panel-group">';
-      for (var i = 0; i < results.length; i++) {  // Iterate over the results
-              var item = store[results[i].ref];
-              if (item.state == "open") {
-                      appendString += '<a href="' + item.url + '" class="list-group-item">';
-                      appendString += '<div class="panel panel-default">';
-                      appendString += '<div class="panel-heading">';
-                      appendString += '<h4>' + item.title + '</h4>';
-                      appendString += '</div>';
-                      appendString += '<div class="panel-body">';
-
-                      appendString += '<small>';
-                      appendString += '<p class="list-group-item-text">' + item.content.substring(0, 250) + '...</p>'
-                      appendString += '<p class="list-group-item-text">' + item.date + '</p>'
-                      appendString += '</small>';
-
-                      appendString += '</div>';
-                      appendString += '<div class="panel-footer">';
-                      itemLabels = new Set(item.label.split(','));
-                      appendString += Array.from(itemLabels.intersection(usedLabels).values());
-                      appendString += '</div>';
-                      appendString += '</div>';
-                      appendString += '</a>';
-              }
-      }
-        appendString += '</div>';
-
-        appendString += '<div class="panel-group">';
-      for (var i = 0; i < results.length; i++) {  // Iterate over the results
-              var item = store[results[i].ref];
-              if (item.state != "open") {
-                      appendString += '<a href="' + item.url + '" class="list-group-item">';
-                      appendString += '<div class="panel panel-default">';
-                      appendString += '<div class="panel-heading">';
-                      appendString += '<strike><h4>' + item.title + '</h4></strike>';
-                      appendString += '</div>';
-                      appendString += '<div class="panel-body">';
-
-                      appendString += '<small>';
-                      appendString += '<p class="list-group-item-text">' + item.content.substring(0, 250) + '...</p>'
-                      appendString += '<p class="list-group-item-text">' + item.date + '</p>'
-                      appendString += '</small>';
-
-                      appendString += '</div>';
-                      appendString += '<div class="panel-footer">';
-                      itemLabels = new Set(item.label.split(','));
-                      appendString += Array.from(itemLabels.intersection(usedLabels).values());
-                      appendString += '</div>';
-                      appendString += '</div>';
-                      appendString += '</a>';
-              }
-      }
-        appendString += '</div>';
-
-      searchResults.innerHTML = appendString;
-    } else {
-      searchResults.innerHTML = '<li>Nessuna segnalazione trovata</li>';
-    }
-  }
 
     function displayAllResults(searchLabel,store) {
         var searchResults = document.getElementById('search-results');
@@ -141,19 +140,19 @@
         }
     }
 
-  function getQueryVariable(variable) {
-    var query = window.location.search.substring(1);
-    var vars = query.split('&');
+    function getQueryVariable(variable) {
+        var query = window.location.search.substring(1);
+        var vars = query.split('&');
 
-    for (var i = 0; i < vars.length; i++) {
-      var pair = vars[i].split('=');
+        for (var i = 0; i < vars.length; i++) {
+            var pair = vars[i].split('=');
 
-      if (pair[0] === variable) {
-        return decodeURIComponent(pair[1].replace(/\+/g, '%20'));
-      }
+            if (pair[0] === variable) {
+                return decodeURIComponent(pair[1].replace(/\+/g, '%20'));
+            }
+        }
     }
-  }
-  
+
     function loadIssue(searchTerm,searchLabel,usedLabels){
         NProgress.start();
 
@@ -184,16 +183,16 @@
         //NProgress.done();
     }
 
-  var usedLabels= new Set([ "Alloggi", "Bollettino", "Bufale", "Contatti", "Donazioni", "Fabbisogni", "Notizie Utili", "Raccolte Fondi",]);
+    var usedLabels= new Set([ "Alloggi", "acquisto solidale", "Bollettino", "Bufale", "Contatti", "Donazioni", "Fabbisogni", "Notizie Utili", "Raccolte Fondi",]);
 
-  var searchTerm = getQueryVariable('query');
-  var searchLabel = getQueryVariable('label');
+    var searchTerm = getQueryVariable('query');
+    var searchLabel = getQueryVariable('label');
 
-  if (searchLabel) {
-      document.getElementById('labelchoice').value= searchLabel;
-      searchLabel=searchLabel.toLowerCase();
-  }
-    
+    if (searchLabel) {
+        document.getElementById('labelchoice').value= searchLabel;
+        searchLabel=searchLabel.toLowerCase();
+    }
+
     NProgress.start();
     if (searchTerm) {
         document.getElementById('search-box').setAttribute("value", searchTerm);
