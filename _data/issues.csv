@@ -68,7 +68,7 @@ link: ''
 immagine: ''
 data: 15/11/2016
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1270,189248087,2016-11-15 07:46:34,2016-11-14 22:45:18,A #Fiastra (Mc) servono stufette e lavasciuga,43.0361407,13.1554547,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Facebook"", ""Sisma Ottobre""]",,,"{""cosa"": ""A Fiastra (Mc) servono stufette e lavasciuga"", ""data"": ""14/11/2016"", ""descrizione"": ""Nel comune di Fiastra (MC) servono stufette per scaldare le tensostrutture e almeno una lavasciuga (o una lavatrice + un'asciugatrice). Chiunque possa aiutarci mi scriva su Facebook, anche in privato. Grazie!"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via Roma, Fiastra, MC, Marche, 62035, Italia"", ""lat"": ""43.0361407"", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1799556680311915/"", ""lon"": ""13.1554547"", ""tel"": """"}","<pre><yamldata>tel: ''
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1270,189248087,2016-11-16 21:46:24,2016-11-14 22:45:18,A #Fiastra (Mc) servono stufette e lavasciuga,43.0361407,13.1554547,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Facebook"", ""Sisma Ottobre""]",,,"{""cosa"": ""A Fiastra (Mc) servono stufette e lavasciuga"", ""data"": ""14/11/2016"", ""descrizione"": ""Nel comune di Fiastra (MC) servono stufette per scaldare le tensostrutture e almeno una lavasciuga (o una lavatrice + un'asciugatrice). Chiunque possa aiutarci mi scriva su Facebook, anche in privato. Grazie!"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via Roma, Fiastra, MC, Marche, 62035, Italia"", ""lat"": ""43.0361407"", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1799556680311915/"", ""lon"": ""13.1554547"", ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 cosa: 'A Fiastra (Mc) servono stufette e lavasciuga'
 descrizione: 'Nel comune di Fiastra (MC) servono stufette per scaldare le tensostrutture e almeno una lavasciuga (o una lavatrice + un''asciugatrice). Chiunque possa aiutarci mi scriva su Facebook, anche in privato. Grazie!'
@@ -5460,6 +5460,18 @@ indirizzo: ''
 lat: ''
 lon: ''
 link: 'https://www.facebook.com/centrosmistamentocittareale/posts/746470725507282'
+immagine: ''
+data: 16/09/2016
+</yamldata></pre>
+",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/514,177454434,2016-09-23 22:50:33,2016-09-16 15:29:31,"Esperti d'arte,  restauratori,  studenti universitari dell'Accademia dell'Arte, geologi e ingegneri.",,,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Esperti d'arte,  restauratori,  studenti universitari dell'Accademia dell'Arte, geologi e ingegneri."", ""data"": ""16/09/2016"", ""descrizione"": ""L'Associazione onlus Proteggere Insieme (Via Vernazza 6, Alba, Cuneo, tel. 0173/293163, e-mail: proteggereinsieme@libero.it) fa un appello a tutti gli esperti d'arte, i restauratori, gli studenti universitari dell'Accademia dell'Arte, i geologi, gli ingegneri che intendano avvicinarsi al mondo della Protezione Civile. L'associazione a riguardo del sisma che ha colpito molti centri abitati, edifici religiosi, palazzi d'epoca, dimore storiche, nelle regioni Lazio, Marche e Abruzzo, si sta avvicinando alla fase di attivazione dei volontari e avrebbe necessit\u00e0 di poter contare anche su esperti del settore."", ""email"": ""proteggereinsieme@libero.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""http://www.ilgiornaledellaprotezionecivile.it/attualita/proteggere-insieme-per-il-sisma-la-protezione-civile-cerca-esperti-darte"", ""lon"": """", ""tel"": ""0173/293163""}","<pre><yamldata>tel: 0173/293163
+email: proteggereinsieme@libero.it
+cosa: 'Esperti d''arte,  restauratori,  studenti universitari dell''Accademia dell''Arte, geologi e ingegneri.'
+descrizione: 'L''Associazione onlus Proteggere Insieme (Via Vernazza 6, Alba, Cuneo, tel. 0173/293163, e-mail: proteggereinsieme@libero.it) fa un appello a tutti gli esperti d''arte, i restauratori, gli studenti universitari dell''Accademia dell''Arte, i geologi, gli ingegneri che intendano avvicinarsi al mondo della Protezione Civile. L''associazione a riguardo del sisma che ha colpito molti centri abitati, edifici religiosi, palazzi d''epoca, dimore storiche, nelle regioni Lazio, Marche e Abruzzo, si sta avvicinando alla fase di attivazione dei volontari e avrebbe necessità di poter contare anche su esperti del settore.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: 'http://www.ilgiornaledellaprotezionecivile.it/attualita/proteggere-insieme-per-il-sisma-la-protezione-civile-cerca-esperti-darte'
 immagine: ''
 data: 16/09/2016
 </yamldata></pre>
