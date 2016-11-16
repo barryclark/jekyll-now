@@ -1555,6 +1555,16 @@ link: ''
 immagine: ''
 data: 02/11/2016
 </yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1056,186806908,2016-11-03 11:46:48,2016-11-02 13:55:00,Ospitalità per una famiglia fino a fine gennaio a Casalpusterlengo (Lodi),,,"[""Accettato"", ""Alloggi"", ""Form""]",Milestone(number=29),,"{""data"": ""02/11/2016"", ""descrizione"": ""Ospito in famiglia una famiglia fino a fine gennaio a Casalpusterlengo"", ""email"": ""franco.algieri@libero.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""347 5758039""}","<pre><yamldata>tel: '347 5758039'
+email: franco.algieri@libero.it
+descrizione: 'Ospito in famiglia una famiglia fino a fine gennaio a Casalpusterlengo'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 02/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1055,186733499,2016-11-02 08:03:07,2016-11-02 07:55:46,Comune di #Cantalice (#Rieti) - Ordinanza di sgombero,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""pubblicare in archive.org"", ""Sisma Ottobre""]",,,"{""data"": ""02/11/2016"", ""descrizione"": ""ORDINANZA N. 42 SGOMBERO DELLA POPOLAZIONE RESIDENTE NELL'AREA SOTTOSTANTE LA PARETE ROCCIOSA SITA IN PIAZZA DELLA REPUBBLICA"", ""link"": ""https://ia601505.us.archive.org/2/items/OrdinanzaDiSgomberoDellaPopolazione/ordinanza%20di%20sgombero%20della%20popolazione.pdf"", ""titolo"": ""Comune di Cantalice - Rieti""}","<pre><yamldata>titolo: 'Comune di Cantalice - Rieti'
 descrizione: 'ORDINANZA N. 42 SGOMBERO DELLA POPOLAZIONE RESIDENTE NELL''AREA SOTTOSTANTE LA PARETE ROCCIOSA SITA IN PIAZZA DELLA REPUBBLICA'
 link: 'https://ia601505.us.archive.org/2/items/OrdinanzaDiSgomberoDellaPopolazione/ordinanza%20di%20sgombero%20della%20popolazione.pdf'
