@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1287,189869219,2016-11-16 22:32:39,2016-11-16 22:32:17,Raccolta donazioni a favore del Comune di Ripe San Ginesio – Borgofuturo,,,"[""Accettato"", ""Facebook"", ""Raccolte Fondi"", ""Sisma Ottobre""]",,,"{""bic"": ""CCRTIT2T84A"", ""causale"": """", ""chi"": ""Raccolta donazioni a favore del Comune di Ripe San Ginesio \u2013 Borgofuturo"", ""data"": ""16/11/2016"", ""descrizione"": """", ""email"": """", ""iban"": ""IT 13 M 05018 02600 000000236862"", ""intestazione"": """", ""link"": ""https://www.facebook.com/borgofuturo.net/posts/1437357989625705"", ""postale"": """"}","<pre><yamldata>chi: 'Raccolta donazioni a favore del Comune di Ripe San Ginesio – Borgofuturo'
+descrizione: ''
+intestazione: ''
+iban: 'IT 13 M 05018 02600 000000236862'
+bic: CCRTIT2T84A
+postale: ''
+causale: ''
+link: 'https://www.facebook.com/borgofuturo.net/posts/1437357989625705'
+email: ''
+data: 16/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1285,189809619,2016-11-16 21:52:31,2016-11-16 19:03:20,Si cerca un camper o roulotte per famiglia colpita dal sisma,,,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""camper o roulotte"", ""data"": ""16/11/2016"", ""descrizione"": ""Vorrei sapere se ci fosse disponibilit\u00e0 di un camper o roulotte per una famiglia colpita dal terremoto.....o contatti utili per poter sapere chi le mette a disposizione ...grazie molte"", ""email"": ""ultr75@libero.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3281713034""}","<pre><yamldata>tel: '3281713034'
 email: ultr75@libero.it
 cosa: 'camper o roulotte'
@@ -5139,17 +5150,6 @@ indirizzo: 'L''Aquila, AQ, Abruzzo, Italia'
 lat: '42.3488992'
 lon: '13.3981375'
 link: 'https://www.facebook.com/groups/1758670357733881/permalink/1760302424237341/'
-immagine: ''
-data: 16/09/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/548,177481064,2016-09-22 15:22:45,2016-09-16 17:41:08,"Castiglion Fiorentino, AR - Stanza per 3 persone",43.3420464,11.9227306,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""Gabriele Galimberti - 28 agosto-8 settembre stanza per 3 persone (pi\u00f9 un divanoletto) con bagno privato, uso cucina compreso, disponibili anche 2 biciclette. Servita bene da treno."", ""email"": ""info@gabrielegalimberti.it"", ""immagine"": """", ""indirizzo"": ""Castiglion Fiorentino, AR, Tuscany, Italia"", ""lat"": ""43.3420464"", ""link"": """", ""lon"": ""11.9227306"", ""tel"": ""3286241806""}","<pre><yamldata>tel: '3286241806'
-email: info@gabrielegalimberti.it
-descrizione: 'Gabriele Galimberti - 28 agosto-8 settembre stanza per 3 persone (più un divanoletto) con bagno privato, uso cucina compreso, disponibili anche 2 biciclette. Servita bene da treno.'
-indirizzo: 'Castiglion Fiorentino, AR, Tuscany, Italia'
-lat: '43.3420464'
-lon: '11.9227306'
-link: ''
 immagine: ''
 data: 16/09/2016
 </yamldata></pre>
