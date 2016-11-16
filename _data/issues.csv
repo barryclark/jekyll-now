@@ -4,6 +4,16 @@ descrizione: ''
 link: 'http://www.unipa.it/Terremoto-UniPa-accoglie-gli-studenti-degli-Atenei-italiani-colpiti/'
 data: 16/11/2016
 </yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1283,189665994,2016-11-16 21:35:19,2016-11-16 10:53:37,Ospitalità a Como per famiglia con figli in età scuola elementare ,,,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""16/11/2016"", ""descrizione"": ""Offro ospitalit\u00e0 a famiglia con 1-2 bimbi in et\u00e0 scuola elementare in provincia di como. Appartamento indipendende in condominio. Scuola elementare a 30 metri dall'immobile."", ""email"": ""mario_bernasconi@libero.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""335 833 4835""}","<pre><yamldata>tel: '335 833 4835'
+email: mario_bernasconi@libero.it
+descrizione: 'Offro ospitalità a famiglia con 1-2 bimbi in età scuola elementare in provincia di como. Appartamento indipendende in condominio. Scuola elementare a 30 metri dall''immobile.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 16/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1282,189658567,2016-11-16 21:34:00,2016-11-16 10:26:13,Si cercano un'asciugatrice e un materasso matrimoniale per famiglia a #Cascia con casa inagiblie,42.7183264,13.0178778,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""asciugatrice"", ""data"": ""16/11/2016"", ""descrizione"": ""Buongiono sono una signora di Cascia terremotata, la mia casa \u00e8 inagibile, ho uma sistemazione provvisoria houna una bambina nata il 18 ottobre, avrei bisogno se possibile di una asciugatrice e di un materasso matrimoniale. Grazie infinite."", ""email"": ""federicalu.93@gmail.com"", ""immagine"": """", ""indirizzo"": ""Viale Cavour, Cascia, PG, UMB, 06043, Italia"", ""lat"": ""42.7183264"", ""link"": """", ""lon"": ""13.0178778"", ""tel"": ""3338623782""}","<pre><yamldata>tel: '3338623782'
 email: federicalu.93@gmail.com
 cosa: asciugatrice
@@ -4322,17 +4332,6 @@ immagine: ''
 data: 22/09/2016
 </yamldata></pre>
 ",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/652,178616595,2016-09-22 13:56:31,2016-09-22 13:54:57,"Firenze, FI - camera per 4 con bagno privato",43.7469581,11.2357186,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""22/09/2016"", ""descrizione"": ""Firenze - Toscana Ho a disposizione presso la mia abitazione grande camera con 2 divani letti matrimoniali e bagno privato. Accesso autonomo Barbara Cesa"", ""email"": ""bcesa.vet@gmail.com"", ""immagine"": """", ""indirizzo"": ""Via Ferdinando Ciolini, Quartiere 3, Firenze, Metropolitan City of Florence, Tuscany, 50124, Italia"", ""lat"": ""43.7469581"", ""link"": """", ""lon"": ""11.2357186"", ""tel"": ""3476255557""}","<pre><yamldata>tel: '3476255557'
-email: bcesa.vet@gmail.com
-descrizione: 'Firenze - Toscana Ho a disposizione presso la mia abitazione grande camera con 2 divani letti matrimoniali e bagno privato. Accesso autonomo Barbara Cesa'
-indirizzo: 'Via Ferdinando Ciolini, Quartiere 3, Firenze, Metropolitan City of Florence, Tuscany, 50124, Italia'
-lat: '43.7469581'
-lon: '11.2357186'
-link: ''
-immagine: ''
-data: 22/09/2016
-</yamldata></pre>
-",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/651,178612947,2016-09-22 14:14:44,2016-09-22 13:41:17,"Milano, MI - stanza con bagno",45.4968471,9.2237053,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""22/09/2016"", ""descrizione"": ""Milano - Lombardia Stanza con bagno indipendente, spazio anche per un gattino o cagnolino Annastella Gambini"", ""email"": ""210ieri@gmail.com"", ""immagine"": """", ""indirizzo"": ""Via Felicita Morandi, Loreto, Municipio 2, Milano, Milan, Lombardia, 20127, Italia"", ""lat"": ""45.4968471"", ""link"": """", ""lon"": ""9.2237053"", ""tel"": ""3407774622""}","<pre><yamldata>tel: '3407774622'
 email: 210ieri@gmail.com
 descrizione: 'Milano - Lombardia Stanza con bagno indipendente, spazio anche per un gattino o cagnolino Annastella Gambini'
@@ -8524,6 +8523,18 @@ bic: UNCRITMM
 postale: ''
 causale: ''
 link: 'http://www.regione.lazio.it/rl_main/?vw=newsDettaglio&id=3551'
+email: ''
+data: 13/09/2016
+</yamldata></pre>
+",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/197,176771902,2016-09-13 23:28:42,2016-09-13 22:57:37,Regione Emilia Romagna,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": ""UNCRITM1BA2"", ""causale"": """", ""chi"": ""Regione Emilia Romagna"", ""data"": ""13/09/2016"", ""descrizione"": """", ""email"": """", ""iban"": ""IT69G 02008 02435 000104428964"", ""intestazione"": ""Emilia-Romagna per sisma Centro Italia"", ""link"": ""http://www.regione.emilia-romagna.it/notizie/primo-piano/sisma-in-italia-centrale-dalla-regione-un-milione"", ""postale"": """"}","<pre><yamldata>chi: 'Regione Emilia Romagna'
+descrizione: ''
+intestazione: 'Emilia-Romagna per sisma Centro Italia'
+iban: 'IT69G 02008 02435 000104428964'
+bic: UNCRITM1BA2
+postale: ''
+causale: ''
+link: 'http://www.regione.emilia-romagna.it/notizie/primo-piano/sisma-in-italia-centrale-dalla-regione-un-milione'
 email: ''
 data: 13/09/2016
 </yamldata></pre>
