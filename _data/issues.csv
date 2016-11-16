@@ -1154,15 +1154,15 @@ link: 'https://www.facebook.com/largano.portorecanati/posts/648678321977944'
 immagine: ''
 data: 04/11/2016
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1112,187408188,2016-11-07 15:50:36,2016-11-04 18:36:43,Gus Gruppo Umana Solidarietà - Raccolta fondi per moduli abitativi,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Raccolte Fondi"", ""Sisma Ottobre""]",,,{},"<pre><yamldata>chi: 'Gus Gruppo Umana Solidarietà'
-descrizione: 'Raccolta fondi per rendere fruibili i moduli abitativi per gli allevatori dell'Alto Maceratese che vogliono restare vicini ai loro animali. Le forniture dovrebbero essere consegnate entro fine novemmbre.'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1112,187408188,2016-11-16 16:56:38,2016-11-04 18:36:43,Gus Gruppo Umana Solidarietà - Raccolta fondi per moduli abitativi,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Raccolte Fondi"", ""Sisma Ottobre""]",,,"{""bic"": """", ""causale"": ""Emergenza Terremoto Centro Italia"", ""chi"": ""Gus Gruppo Umana Solidariet\u00e0"", ""data"": ""04/11/2016"", ""descrizione"": ""Raccolta fondi per rendere fruibili i moduli abitativi per gli allevatori dell'Alto Maceratese che vogliono restare vicini ai loro animali. Le forniture dovrebbero essere consegnate entro fine novembre."", ""email"": ""alessio.ruta@gmail.com"", ""iban"": ""IT66Y0335901600100000131559"", ""intestazione"": ""Allevatori - Moduli abitativi per restare accanto agli animali"", ""link"": ""https://goo.gl/3WfBz1"", ""postale"": """"}","<pre><yamldata>chi: 'Gus Gruppo Umana Solidarietà'
+descrizione: 'Raccolta fondi per rendere fruibili i moduli abitativi per gli allevatori dell''Alto Maceratese che vogliono restare vicini ai loro animali. Le forniture dovrebbero essere consegnate entro fine novembre.'
 intestazione: 'Allevatori - Moduli abitativi per restare accanto agli animali'
-iban: IT66Y0335901600100000131559
+iban: 'IT66Y0335901600100000131559'
 bic: ''
 postale: ''
 causale: 'Emergenza Terremoto Centro Italia'
 link: 'https://goo.gl/3WfBz1'
-email: alessio.ruta@gmail.com
+email: 'alessio.ruta@gmail.com'
 data: 04/11/2016
 </yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1110,187358882,2016-11-04 15:39:27,2016-11-04 15:12:29,Cercasi roulotte a #Amatrice per una famiglia,,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""Roulotte"", ""data"": ""04/11/2016"", ""descrizione"": ""Stiamo cercando una roulotte per una famiglia di Amatrice che ha deciso di rimanere a vivere vicino alla propria casa."", ""email"": ""valeria.patacchiola.arci@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3494639384""}","<pre><yamldata>tel: '3494639384'
