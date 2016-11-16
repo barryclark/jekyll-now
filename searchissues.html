@@ -3,26 +3,49 @@ layout: search
 title: Ricerca
 ---
 
-<div class="row">
-    <div class="col-md-12">Qui puoi vedere i risultati di una ricerca fatta nelle nostre segnalazioni</div>
-</div>
-
-<div class="row">
-    <div class="col-lg-7 col-lg-offset-3">
-        <div class="input-group">
-            <form class="form-inline global-search" role="form" action="/searchissues" method="get">
-                <div class="form-group-lg col-xs-12">
-                    <label for="label">Categoria</label>
-                    <select class="form-control" id="labelchoice" name="label"><option value=""></option></select>
+<title>{{ page.title }}</title>
+<div class="intro-header no-img">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="page-heading">
+                    <h1>{{ page.title }}</h1>
+                    <h2 class="page-subheading">Qui puoi vedere i risultati di una ricerca fatta nelle nostre segnalazioni</h2>
                 </div>
-                <div class="form-group-lg col-xs-12">
-                    <label class="search-box" for="search-box">Cosa Stai Cercando?</label>
-                    <input type="text" class="form-control" id="search-box" name="query" placeholder="">
-                </div>
-            </form>
+            </div>
         </div>
     </div>
 </div>
+
+<div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12">
+            <form class="form-inline global-search" role="form" action="/searchissues" method="get">
+                <div class="form-group">
+                    <label for="search-box">Cosa cerchi?</label>
+                    <input type="text" class="form-control" id="search-box" name="query" placeholder="">
+                </div>
+                <div class="form-group">
+                    <label for="labelchoice">Categoria</label>
+                    <select class="form-control" id="labelchoice" name="label">
+                        <option value=""></option>
+                        <option value="Alloggi">Alloggi</option>
+                        <option value="Bollettino">Bollettino</option>
+                        <option value="Bufale">Bufale</option>
+                        <option value="Contatti">Contatti</option>
+                        <option value="Donazioni">Donazioni</option>
+                        <option value="Fabbisogni">Fabbisogni</option>
+                        <option value="Notizie Utili">Notizie Utili</option>
+                        <option value="Raccolte Fondi">Raccolte Fondi</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input type="submit" class="btn btn-primary" value="Cerca">
+                </div>
+            </form>
+    </div>
+</div>
+
+<hr class="col-lg-12"/>
 
 <div class="row">
 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12">
@@ -37,13 +60,9 @@ function urldecode(str) {
 }
 
 
-labelset=new Set();
 window.store = {};
     {% assign filteredissues = site.data.issuesjson %}
     {% for member in filteredissues %}
-    for (var lab of "{{member.issue.labels | join: ','}}".split(',')) {
-            labelset.add(lab);
-    }
 window.store["{{site.url}}/issues/{{member.number}}"]={
         "title": urldecode("{{ member.title | strip_html | url_encode }}"),
         "label": "{{member.issue.labels | join: ','}}",
@@ -59,18 +78,6 @@ window.store["{{site.url}}/issues/{{member.number}}"]={
         "state": "{{member.state}}"
 };
     {% endfor %}
-    var dropdown = document.getElementById("labelchoice");
-    if (dropdown) {
-            var labellist=[];
-            for (lab of labelset.values()) {
-                labellist.push(lab);
-            }
-            for (lab of labellist.sort()) {
-                    var option = document.createElement("option");
-                    option.text = lab;
-                    dropdown.add(option);
-            }
-    }
 
 </script>
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/elasticlunr/0.9.5/elasticlunr.min.js"></script>

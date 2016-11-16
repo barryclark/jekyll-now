@@ -1,5 +1,15 @@
 (function() {
-  function displaySearchResults(results, store) {
+
+    Set.prototype.intersection = function(setB) {
+    var intersection = new Set();
+    for (var elem of setB) {
+        if (this.has(elem)) {
+            intersection.add(elem);
+        }
+    }
+    return intersection;
+}
+  function displaySearchResults(results, store, usedLabels) {
     var searchResults = document.getElementById('search-results');
     if (results.length) { // Are there any results?
       var appendString = '';
@@ -22,7 +32,8 @@
 
                       appendString += '</div>';
                       appendString += '<div class="panel-footer">';
-                      appendString += item.label;
+                      itemLabels = new Set(item.label.split(','));
+                      appendString += Array.from(itemLabels.intersection(usedLabels).values());
                       appendString += '</div>';
                       appendString += '</div>';
                       appendString += '</a>';
@@ -48,7 +59,8 @@
 
                       appendString += '</div>';
                       appendString += '<div class="panel-footer">';
-                      appendString += item.label;
+                      itemLabels = new Set(item.label.split(','));
+                      appendString += Array.from(itemLabels.intersection(usedLabels).values());
                       appendString += '</div>';
                       appendString += '</div>';
                       appendString += '</a>';
@@ -62,7 +74,7 @@
     }
   }
 
-    function displayAllResults(searchLabe,store) {
+    function displayAllResults(searchLabel,store) {
         var searchResults = document.getElementById('search-results');
         if (Object.keys(store).length) { // Are there any results?
             var appendString = '';
@@ -85,7 +97,8 @@
 
                         appendString += '</div>';
                         appendString += '<div class="panel-footer">';
-                        appendString += item.label;
+                        itemLabels = new Set(item.label.split(','));
+                        appendString += Array.from(itemLabels.intersection(usedLabels).values());
                         appendString += '</div>';
                         appendString += '</div>';
                         appendString += '</a>';
@@ -112,7 +125,8 @@
 
                         appendString += '</div>';
                         appendString += '<div class="panel-footer">';
-                        appendString += item.label;
+                        itemLabels = new Set(item.label.split(','));
+                        appendString += Array.from(itemLabels.intersection(usedLabels).values());
                         appendString += '</div>';
                         appendString += '</div>';
                         appendString += '</a>';
@@ -140,7 +154,7 @@
     }
   }
   
-    function loadIssue(searchTerm,searchLabel){
+    function loadIssue(searchTerm,searchLabel,usedLabels){
         NProgress.start();
 
         if (searchTerm) {
@@ -163,12 +177,14 @@
                 bool: "OR"
             }); // Get elasticlunr to perform a search
 
-            displaySearchResults(results, window.store); // We'll write this in the next section 
+            displaySearchResults(results, window.store,usedLabels); // We'll write this in the next section 
         } else {
-            displayAllResults(searchLabel, window.store); // We'll write this in the next section 
+            displayAllResults(searchLabel, window.store,usedLabels); // We'll write this in the next section 
         }
         //NProgress.done();
     }
+
+  var usedLabels= new Set([ "Alloggi", "Bollettino", "Bufale", "Contatti", "Donazioni", "Fabbisogni", "Notizie Utili", "Raccolte Fondi",]);
 
   var searchTerm = getQueryVariable('query');
   var searchLabel = getQueryVariable('label');
@@ -195,7 +211,7 @@
     });
 
     setTimeout( function() { 
-        loadIssue(searchTerm,searchLabel); // We'll write this in the next section 
+        loadIssue(searchTerm,searchLabel,usedLabels); // We'll write this in the next section 
     }, 0 );
 })();
 
