@@ -3,7 +3,7 @@ layout: post
 title: Think pure and make functions great again
 ---
 
-!["Pipes" Chris Smart by ](/content/images/2016/08/5865519128_224430423c_o.jpg)
+!["Pipes" Chris Smart by ](5865519128_224430423c_o.jpg)
 
 There has been something of a functional programming renaissance happening recently, in a variety of languages. I've been delving into F# and Elm, and regardless of whether or not I ever use either in my work, I've discovered that there's a lot that I can take back to C#-land to improve the quality of my code. These are concepts that have been known for awhile by those who work primarily in the functional world, but they are a breath of fresh air for me as a functional newbie.
 
