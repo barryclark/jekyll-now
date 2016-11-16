@@ -8873,7 +8873,7 @@ email: ''
 data: 13/09/2016
 </yamldata></pre>
 ",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/165,176721021,2016-10-02 09:00:35,2016-09-13 18:54:26,GUS - Gruppo Umana Solidarietà,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Emergenza Terremoto Centro Italia"", ""chi"": ""GUS - Gruppo Umana Solidariet\u00e0"", ""data"": ""13/09/2016"", ""descrizione"": ""Donazione tramite Paypal o carta di credito"", ""email"": """", ""iban"": ""IT66Y0335901600100000131559"", ""intestazione"": """", ""link"": ""http://gusitalia.it/"", ""postale"": """"}","<pre><yamldata>chi: 'GUS - Gruppo Umana Solidarietà'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/165,176721021,2016-11-16 17:19:30,2016-09-13 18:54:26,GUS: Raccolta fondi per Moduli abitativi per allevatori,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Emergenza Terremoto Centro Italia"", ""chi"": ""GUS - Gruppo Umana Solidariet\u00e0"", ""data"": ""13/09/2016"", ""descrizione"": ""Donazione tramite Paypal o carta di credito"", ""email"": """", ""iban"": ""IT66Y0335901600100000131559"", ""intestazione"": """", ""link"": ""http://gusitalia.it/"", ""postale"": """"}","<pre><yamldata>chi: 'GUS - Gruppo Umana Solidarietà'
 descrizione: 'Donazione tramite Paypal o carta di credito'
 intestazione: ''
 iban: 'IT66Y0335901600100000131559'
