@@ -35,19 +35,19 @@ Nesse primeiro post vamos construir uma pequena e simples aplicação, apenas pa
 
 Agora vamos baixar o `CLI` oficial do **Aurelia**:
 
-```
+{% highlight shell %}
 npm i -g aurelia-cli
-```
+{% endhighlight %}
 
 Acesse o diretório que deseja criar a aplicação pela linha de comando e execute o comando a seguir para criar uma nova aplicação **Aurelia**:
 
-```
+{% highlight shell %}
 au new
-```
+{% endhighlight %}
 
 Agora você irá responder algumas questões que o `CLI` irá te fazer:
 
-```
+{% highlight shell %}
 Please enter a name for your new project below.
 # Digite aurelia-first-app
 
@@ -71,39 +71,51 @@ Would you like to create this project?
 
 Would you like to install the project dependencies?
 # Apenas digite enter para instalar as dependências
-```
+{% endhighlight %}
 
 Aguarde as dependências serem instaladas e acesse o diretório de sua aplicação:
 
-```
+{% highlight shell %}
 cd aurelia-first-app
-```
+{% endhighlight %}
 
-O `CLI` do **Aurelia** nos fornece alguns comandos para ajudar no desenvolvimento de nossa aplicação:
+O `CLI` do **Aurelia** nos fornece alguns comandos para ajudar no desenvolvimento de nossa aplicação, entre eles:
 
 - Para executar sua aplicação execute o comando:
 
-```
+{% highlight shell %}
 au run
-```
+{% endhighlight %}
 
 - Caso queira ativar o **hot-reload** utilize o comando:
 
-```
+{% highlight shell %}
 au run --watch
-```
+{% endhighlight %}
+
+- Para executar os testes utilize o comando:
+
+{% highlight shell %}
+au test
+{% endhighlight %}
+
+- Caso queira ativar os testes automáticos utilize o comando:
+
+{% highlight shell %}
+au test --watch
+{% endhighlight %}
 
 - Para criar sua aplicação para produção utilize o comando:
 
-```
+{% highlight shell %}
 au build --env prod
-```
+{% endhighlight %}
 
-- Para obter alguma ajuda sobre o `CLI` utilize o comando:
+- Para obter alguma ajuda sobre o `CLI` e ver outros comandos disponíveis utilize o comando:
 
-```
+{% highlight shell %}
 au help
-```
+{% endhighlight %}
 
 Para garantir que tudo ocorreu bem execute o comando `au run` para ver sua aplicação executando e acesse: `http://localhost:9000` em seu browser. Você deve ver apenas um título: **"Hello World!"** que indicará que o projeto está executando com sucesso.
 
