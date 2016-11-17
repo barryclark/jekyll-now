@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Navegando na Web com o Go/Golang – Ivan Queiroz – Pai, analista e desenvolvedor de software.</title>
+
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="Após muito tempo trago mais um post sobre Go, confesso que a demora foi devido a o meu interesse atual pelo Dukescript, que me fez deixar de lado um pouco os estudos do Go. Mas decidi retomar aos poucos os estudos da linguagem revendo meu pequeno projeto de manipulação da API web do Steam.
+" />
+    <meta property="og:description" content="Após muito tempo trago mais um post sobre Go, confesso que a demora foi devido a o meu interesse atual pelo Dukescript, que me fez deixar de lado um pouco os estudos do Go. Mas decidi retomar aos poucos os estudos da linguagem revendo meu pequeno projeto de manipulação da API web do Steam.
+" />
+    
+    <meta name="author" content="Ivan Queiroz" />
+
+    
+    <meta property="og:title" content="Navegando na Web com o Go/Golang" />
+    <meta property="twitter:title" content="Navegando na Web com o Go/Golang" />
+    
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Ivan Queiroz - Pai, analista e desenvolvedor de software." href="/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/" class="site-avatar"><img src="https://raw.githubusercontent.com/ivanqueiroz/ivanqueiroz.github.io/master/images/avatar.jpg" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">Ivan Queiroz</a></h1>
+            <p class="site-description">Pai, analista e desenvolvedor de software.</p>
+          </div>
+
+          <nav>
+            <a href="/">Blog</a>
+            <a href="/about">Sobre</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <article class="post">
+  <h1>Navegando na Web com o Go/Golang</h1>
+
+  <div class="entry">
+    <p>Após muito tempo trago mais um post sobre Go, confesso que a demora foi devido a o meu interesse atual pelo <a href="https://dukescript.com/">Dukescript</a>, que me fez deixar de lado um pouco os estudos do Go. Mas decidi retomar aos poucos os estudos da linguagem revendo meu pequeno projeto de manipulação da <a href="https://developer.valvesoftware.com/wiki/Steam_Web_API">API web do Steam</a>.</p>
+
+<h2>HTTP em Go/Golang</h2>
+
+<p>Para usar a api do Steam precisei manipular chamadas HTTP e logo descobri que pode ser feito facilmente com a utilização do pacote <code>net/http</code> e <code>net/url</code> do Go.</p>
+
+<div class="highlight"><pre><code class="language-go" data-lang="go"><span class="kn">import</span> <span class="p">(</span>
+    <span class="s">&quot;net/http&quot;</span>
+  <span class="s">&quot;net/url&quot;</span>
+<span class="p">)</span></code></pre></div>
+
+<p>Com o import desses pacotes, já se pode utilizar as funções cliente do pacote:</p>
+
+<div class="highlight"><pre><code class="language-go" data-lang="go"><span class="nx">resp</span><span class="p">,</span> <span class="nx">err</span> <span class="o">:=</span> <span class="nx">http</span><span class="p">.</span><span class="nx">Get</span><span class="p">(</span><span class="s">&quot;http://teste.com/&quot;</span><span class="p">)</span>
+
+<span class="nx">resp</span><span class="p">,</span> <span class="nx">err</span> <span class="o">:=</span> <span class="nx">http</span><span class="p">.</span><span class="nx">Post</span><span class="p">(</span><span class="s">&quot;http://teste.com.br/upload&quot;</span><span class="p">,</span> <span class="s">&quot;image/jpeg&quot;</span><span class="p">,</span> <span class="o">&amp;</span><span class="nx">buf</span><span class="p">)</span>
+
+<span class="nx">resp</span><span class="p">,</span> <span class="nx">err</span> <span class="o">:=</span> <span class="nx">http</span><span class="p">.</span><span class="nx">PostForm</span><span class="p">(</span><span class="s">&quot;http://teste.com.br/form&quot;</span><span class="p">,</span>
+    <span class="nx">url</span><span class="p">.</span><span class="nx">Values</span><span class="p">{</span><span class="s">&quot;key&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s">&quot;Value&quot;</span><span class="p">},</span> <span class="s">&quot;id&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s">&quot;123&quot;</span><span class="p">}})</span></code></pre></div>
+
+<p>Para o meu propósito coloquei uma função que trata o retorno de erro:</p>
+
+<div class="highlight"><pre><code class="language-go" data-lang="go"><span class="kd">func</span> <span class="nx">perror</span><span class="p">(</span><span class="nx">err</span> <span class="kt">error</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="nx">err</span> <span class="o">!=</span> <span class="kc">nil</span> <span class="p">{</span>
+        <span class="nb">panic</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></div>
+
+<p>Basicamente a função <code>perror</code> verifica se houve erro e chama a função <code>panic</code> para interromper a execução do programa. Então criei uma função que recebe o endereço http e retorna uma string com o conteúdo da resposta:</p>
+
+<div class="highlight"><pre><code class="language-go" data-lang="go"><span class="kd">func</span> <span class="nx">navigateToString</span><span class="p">(</span><span class="nx">address</span> <span class="kt">string</span><span class="p">)</span> <span class="p">(</span><span class="nx">response</span> <span class="kt">string</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">_</span><span class="p">,</span> <span class="nx">err</span> <span class="o">:=</span> <span class="nx">url</span><span class="p">.</span><span class="nx">Parse</span><span class="p">(</span><span class="nx">address</span><span class="p">)</span>
+    <span class="nx">perror</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span>
+
+    <span class="nx">resp</span><span class="p">,</span> <span class="nx">err</span> <span class="o">:=</span> <span class="nx">http</span><span class="p">.</span><span class="nx">Get</span><span class="p">(</span><span class="nx">address</span><span class="p">)</span>
+    <span class="nx">perror</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span>
+
+    <span class="k">defer</span> <span class="nx">resp</span><span class="p">.</span><span class="nx">Body</span><span class="p">.</span><span class="nx">Close</span><span class="p">()</span>
+    <span class="nx">body</span><span class="p">,</span> <span class="nx">err</span> <span class="o">:=</span> <span class="nx">ioutil</span><span class="p">.</span><span class="nx">ReadAll</span><span class="p">(</span><span class="nx">resp</span><span class="p">.</span><span class="nx">Body</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="nb">string</span><span class="p">(</span><span class="nx">body</span><span class="p">)</span>
+<span class="p">}</span></code></pre></div>
+
+<p>Como a função <code>http.Get</code> retorna o tipo <a href="https://golang.org/pkg/net/http/#Response">Response</a> que possui o elemento <code>Body</code> (que é um Reader), usei a função ReadAll do pacote utilitário <code>io/ioutil</code> para convertê-lo em um array de bytes e construir a string de retorno. Segue o código completo para testar a função:</p>
+
+<div class="highlight"><pre><code class="language-go" data-lang="go"><span class="kn">package</span> <span class="nx">main</span>
+
+<span class="kn">import</span> <span class="p">(</span>
+    <span class="s">&quot;fmt&quot;</span>
+    <span class="s">&quot;io/ioutil&quot;</span>
+    <span class="s">&quot;net/http&quot;</span>
+    <span class="s">&quot;net/url&quot;</span>
+<span class="p">)</span>
+
+<span class="kd">func</span> <span class="nx">perror</span><span class="p">(</span><span class="nx">err</span> <span class="kt">error</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="nx">err</span> <span class="o">!=</span> <span class="kc">nil</span> <span class="p">{</span>
+        <span class="nb">panic</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">func</span> <span class="nx">navigateToString</span><span class="p">(</span><span class="nx">address</span> <span class="kt">string</span><span class="p">)</span> <span class="p">(</span><span class="nx">response</span> <span class="kt">string</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">_</span><span class="p">,</span> <span class="nx">err</span> <span class="o">:=</span> <span class="nx">url</span><span class="p">.</span><span class="nx">Parse</span><span class="p">(</span><span class="nx">address</span><span class="p">)</span>
+    <span class="nx">perror</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span>
+
+    <span class="nx">resp</span><span class="p">,</span> <span class="nx">err</span> <span class="o">:=</span> <span class="nx">http</span><span class="p">.</span><span class="nx">Get</span><span class="p">(</span><span class="nx">address</span><span class="p">)</span>
+    <span class="nx">perror</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span>
+
+    <span class="k">defer</span> <span class="nx">resp</span><span class="p">.</span><span class="nx">Body</span><span class="p">.</span><span class="nx">Close</span><span class="p">()</span>
+    <span class="nx">body</span><span class="p">,</span> <span class="nx">err</span> <span class="o">:=</span> <span class="nx">ioutil</span><span class="p">.</span><span class="nx">ReadAll</span><span class="p">(</span><span class="nx">resp</span><span class="p">.</span><span class="nx">Body</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="nb">string</span><span class="p">(</span><span class="nx">body</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="kd">func</span> <span class="nx">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="nx">navigateToString</span><span class="p">(</span><span class="s">&quot;http://www.atarde.com.br&quot;</span><span class="p">))</span>
+<span class="p">}</span></code></pre></div>
+
+<p>O código de <a href="https://raw.githubusercontent.com/ivanqueiroz/steam4go/9c67291b0e8c6f7bde8dffd11ca4fad44bba346d/webapiutils.go">webapiutils.go</a> que criei se baseia na utilização do pacote <code>net/url</code> para obter a lista de métodos disponíveis na Steam Web API, no formato JSON, e possui funções que retornam a resposta como string, array de bytes ou como uma <code>struct</code>.</p>
+
+<p>Em um futuro post mostrarei como manipular um objeto JSON no Go é fácil e como retornar uma <code>struct</code> que representa esse objeto.</p>
+
+<p>Até mais!</p>
+
+  </div>
+
+  <div class="date">
+    <!-- Whitespace added for readability -->
+    Escrito em 
+    13
+    Julho
+      
+    de
+    2015
+  </div>
+  
+	<ul class="share-buttons">
+	  <li><a href="https://www.facebook.com/sharer/sharer.php?u=http://blog.ivanqueiroz.com/navegando-paginas-go/" title="Compartilhe no Facebook" target="_blank"><img src="/images/icons/Facebook.png"></a></li>
+	  <li><a href="https://twitter.com/intent/tweet?source=http://blog.ivanqueiroz.com/navegando-paginas-go/&text=Navegando na Web com o Go/Golang&url=http://blog.ivanqueiroz.com/navegando-paginas-go/&via=ivanqueiroz" target="_blank" title="Tweet"><img src="/images/icons/Twitter.png"></a></li>
+	  <li><a href="https://plus.google.com/share?url=http://blog.ivanqueiroz.com/navegando-paginas-go/" target="_blank" title="Compartilhe no Google+"><img src="/images/icons/Google+.png"></a></li>
+	  <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=http://blog.ivanqueiroz.com/navegando-paginas-go/&title=Navegando na Web com o Go/Golang&summary=Navegando na Web com o Go/Golang" target="_blank" title="Compartilhe no LinkedIn"><img src="/images/icons/LinkedIn.png"></a></li>
+	  <li><a href="mailto:?subject=Navegando na Web com o Go/Golang&body=http://blog.ivanqueiroz.com/navegando-paginas-go/" target="_blank" title="Email"><img src="/images/icons/Email.png"></a></li>
+	</ul>
+
+
+  
+<div class="comments">
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+
+	    var disqus_shortname = 'blogivanqueiroz';
+
+	    (function() {
+	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          
+<a href="mailto:ivanqueiroz@gmail.com"><i class="svg-icon email"></i></a>
+<a href="https://www.facebook.com/ivan.queiroz"><i class="svg-icon facebook"></i></a>
+
+<a href="https://github.com/ivanqueiroz"><i class="svg-icon github"></i></a>
+
+<a href="https://www.linkedin.com/in/ivanqueiroz"><i class="svg-icon linkedin"></i></a>
+
+<a href="/feed.xml"><i class="svg-icon rss"></i></a>
+<a href="https://www.twitter.com/ivanqueiroz"><i class="svg-icon twitter"></i></a>
+
+
+<a href="https://plus.google.com/u/0/+IvanQueiroz/"><i class="svg-icon googleplus"></i></a>
+        </footer>
+      </div>
+    </div>
+
+    
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-3633992-3', 'auto');
+		ga('send', 'pageview', {
+		  'page': '/navegando-paginas-go/',
+		  'title': 'Navegando na Web com o Go/Golang'
+		});
+	</script>
+	<!-- End Google Analytics -->
+
+
+  </body>
+</html>

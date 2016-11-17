@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>[OCEJWCD 6] - Respondendo o cliente – Ivan Queiroz – Pai, analista e desenvolvedor de software.</title>
+
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="Antes de escrever sobre a comunicação com o cliente HTTP, vou colocar aqui alguns benefícios da tecnologia Servlet do Java:
+" />
+    <meta property="og:description" content="Antes de escrever sobre a comunicação com o cliente HTTP, vou colocar aqui alguns benefícios da tecnologia Servlet do Java:
+" />
+    
+    <meta name="author" content="Ivan Queiroz" />
+
+    
+    <meta property="og:title" content="[OCEJWCD 6] - Respondendo o cliente" />
+    <meta property="twitter:title" content="[OCEJWCD 6] - Respondendo o cliente" />
+    
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Ivan Queiroz - Pai, analista e desenvolvedor de software." href="/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/" class="site-avatar"><img src="https://raw.githubusercontent.com/ivanqueiroz/ivanqueiroz.github.io/master/images/avatar.jpg" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">Ivan Queiroz</a></h1>
+            <p class="site-description">Pai, analista e desenvolvedor de software.</p>
+          </div>
+
+          <nav>
+            <a href="/">Blog</a>
+            <a href="/about">Sobre</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <article class="post">
+  <h1>[OCEJWCD 6] - Respondendo o cliente</h1>
+
+  <div class="entry">
+    <p>Antes de escrever sobre a comunicação com o cliente HTTP, vou colocar aqui alguns benefícios da tecnologia Servlet do Java:</p>
+
+<ul>
+<li>Os servlets são independentes de plataforma, pois são integrados na tecnologia java;</li>
+<li>são mais leves que os processos CGI (Common Gateway Inteface), já que cada requisição não gera um novo processo no servidor;</li>
+<li>oferecem segurança, escalabilidade e robustez;</li>
+<li>são integrados com toda a API J2EE tirando proveito de todos os serviços disponíveis como JNDI, JTA, JAAS e RMI.</li>
+</ul>
+
+<h2>API de Servlets</h2>
+
+<p>A interface <strong>javax.servlet.http.HttpServletRequest</strong> representa a requisição feita pelo cliente para o servidor e é subinterface da <strong>javax.servlets.ServletRequest</strong>, ambas definem vários métodos importantes, dentre eles:</p>
+
+<h4>ServletRequest</h4>
+
+<ul>
+<li>getParameter();</li>
+<li>getContentLength();</li>
+<li>getRequestDispatcher();</li>
+<li>getServletContext();</li>
+<li>getAttribute();</li>
+<li>e mais...</li>
+</ul>
+
+<h4>HttpServletRequest</h4>
+
+<ul>
+<li>getHeader();</li>
+<li>getHeaderNames();</li>
+<li>e mais...</li>
+</ul>
+
+<h3>Método getParameter</h3>
+
+<p>Obtém o valor do parâmetro passado pelo formulário na requisição, recebe uma String que representa o nome do parâmetro e retorna uma String com o valor do parâmetro. Ex:</p>
+
+<div class="highlight"><pre><code class="language-java" data-lang="java"><span class="n">String</span> <span class="n">var</span> <span class="o">=</span> <span class="n">req</span><span class="o">.</span><span class="na">getParameter</span><span class="o">(</span><span class="s">&quot;parametro&quot;</span><span class="o">);</span></code></pre></div>
+
+<h3>Método getHeader e getIntHeader</h3>
+
+<p>O <code>getHeader(String value)</code> obtém informação do cabeçalho (header) da requisição, recebe uma String com o nome do cabeçalho desejado e retorna uma String com o valor do mesmo.</p>
+
+<div class="highlight"><pre><code class="language-java" data-lang="java"><span class="n">String</span> <span class="n">head</span> <span class="o">=</span> <span class="n">req</span><span class="o">.</span><span class="na">getHeader</span><span class="o">(</span><span class="s">&quot;nome&quot;</span><span class="o">);</span></code></pre></div>
+
+<p>Já o método <code>getIntHeader(String value)</code> retorna o valor do cabeçalho escolhido como um int ou -1 caso não seja possível retornar valor.</p>
+
+<div class="highlight"><pre><code class="language-java" data-lang="java"><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">req</span><span class="o">.</span><span class="na">getIntHeader</span><span class="o">(</span><span class="s">&quot;value&quot;</span><span class="o">);</span></code></pre></div>
+
+<h3>Método getInputStream</h3>
+
+<p>Retorna um <strong>ServletInputStream</strong> que permite obter o corpo (body) da requisição como dados binários (stream).</p>
+
+<div class="highlight"><pre><code class="language-java" data-lang="java"><span class="n">InputStream</span> <span class="n">is</span> <span class="o">=</span> <span class="n">req</span><span class="o">.</span><span class="na">getInputStream</span><span class="o">();</span></code></pre></div>
+
+<p>Esse método está definido na interface ServletRequest.</p>
+
+<p>A interface <strong>javax.servlet.http.HttpServletResponse</strong> representa a resposta do servidor para a solicitação, sendo subinterface da <strong>javax.servlets.ServletResponse</strong>, definindo os seguintes métodos importantes:</p>
+
+<h4>ServletResponse</h4>
+
+<ul>
+<li>setContentType();</li>
+<li>setContentLength(int Len);</li>
+<li>getOutputStream();</li>
+<li>getWriter();</li>
+<li>e mais...</li>
+</ul>
+
+<h4>HttpServletResponse</h4>
+
+<ul>
+<li>addCookie();</li>
+<li>addHeader();</li>
+<li>encodeRedirect(URL)</li>
+<li>setHeader()</li>
+<li>e mais...</li>
+</ul>
+
+<h3>Método setContentType</h3>
+
+<p>Configura o tipo do conteúdo respondido para o cliente, seja um texto, imagem ou arquivo. No exemplo seguinte é configurada uma resposta html na codificação UTF-8:</p>
+
+<div class="highlight"><pre><code class="language-java" data-lang="java"><span class="n">res</span><span class="o">.</span><span class="na">setContentType</span><span class="o">(</span><span class="s">&quot;text/html; charset=UTF-8&quot;</span><span class="o">);</span></code></pre></div>
+
+<h3>Método setHeader</h3>
+
+<p>Configura um determinado cabeçalho com um valor passado, caso o cabeçalho já exista o valor é sobrescrito. Segue exemplo:</p>
+
+<div class="highlight"><pre><code class="language-java" data-lang="java"><span class="n">res</span><span class="o">.</span><span class="na">setHeader</span><span class="o">(</span><span class="s">&quot;Content-Language&quot;</span><span class="o">,</span> <span class="s">&quot;es&quot;</span><span class="o">);</span></code></pre></div>
+
+<h3>Método addHeader</h3>
+
+<p>Adiciona um cabeçalho com o valor informado na resposta, permitindo que a mesma tenha um ou mais cabeçalhos.</p>
+
+<div class="highlight"><pre><code class="language-java" data-lang="java"><span class="n">response</span><span class="o">.</span><span class="na">addHeader</span><span class="o">(</span><span class="s">&quot;Content-Disposition&quot;</span><span class="o">,</span><span class="s">&quot;inline&quot;</span><span class="o">);</span></code></pre></div>
+
+<h3>Método sendRedirect</h3>
+
+<p>Esse método envia uma resposta de redirecionamento para o cliente utilizando  a url informada, ele aceita caminhos relativos a raiz da aplicação, caso a url tenha um &quot;/&quot;, ou absolutos.
+Só deve ser chamado antes da resposta não ter sido efetivada, caso contrário será lançada uma <code>IllegalStateException</code>. No exemplo seguinte uma forma de direcionar uma consulta para o Google utilizando o sendRedirect:</p>
+
+<div class="highlight"><pre><code class="language-java" data-lang="java"><span class="n">String</span> <span class="n">name</span><span class="o">=</span><span class="n">request</span><span class="o">.</span><span class="na">getParameter</span><span class="o">(</span><span class="s">&quot;name&quot;</span><span class="o">);</span>
+<span class="n">response</span><span class="o">.</span><span class="na">sendRedirect</span><span class="o">(</span><span class="s">&quot;https://www.google.co.in/#q=&quot;</span><span class="o">+</span><span class="n">name</span><span class="o">);</span></code></pre></div>
+
+<h3>RequestDispatcher</h3>
+
+<p>O RequestDispatcher redireciona a requisição para outro elemento dentro do servidor (um servlet, jsp etc). Exemplo:</p>
+
+<div class="highlight"><pre><code class="language-java" data-lang="java"><span class="n">RequestDispatcher</span> <span class="n">requestDispatcher</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="na">getRequestDispatcher</span><span class="o">(</span><span class="s">&quot;/endereco.jsp&quot;</span><span class="o">);</span></code></pre></div>
+
+<p>Por ser realizado no lado do servidor o cliente não sabe que ocorreu o redirecionamento e a url no browser não muda.</p>
+
+<h3>Cookie</h3>
+
+<p>Cookies são pequenos pedaços de informação enviados pelo servlet para o browser segundo a documentação da API. Para criar um cookie basta instanciar um objeto do mesmo passando o nome e valor.</p>
+
+<div class="highlight"><pre><code class="language-java" data-lang="java"><span class="n">Cookie</span> <span class="n">cookie</span> <span class="o">=</span> <span class="k">new</span> <span class="nf">Cookie</span><span class="o">(</span><span class="s">&quot;usuario&quot;</span><span class="o">,</span><span class="s">&quot;1234&quot;</span><span class="o">);</span></code></pre></div>
+
+<p>Com o objeto cookie criado adicioná-lo a resposta através do método addCookie.</p>
+
+<div class="highlight"><pre><code class="language-java" data-lang="java"><span class="n">res</span><span class="o">.</span><span class="na">addCookie</span><span class="o">(</span><span class="n">cookie</span><span class="o">);</span></code></pre></div>
+
+<p>Sem mistérios e bem simples a utilização dos Cookies pela API.</p>
+
+<p>Por enquanto é só, próximo post será sobre o ciclo de vida dos servlets.</p>
+
+  </div>
+
+  <div class="date">
+    <!-- Whitespace added for readability -->
+    Escrito em 
+    13
+    Abril
+      
+    de
+    2015
+  </div>
+  
+	<ul class="share-buttons">
+	  <li><a href="https://www.facebook.com/sharer/sharer.php?u=http://blog.ivanqueiroz.com/2015/04/ocejwcd-6-respondendo-o-cliente.html" title="Compartilhe no Facebook" target="_blank"><img src="/images/icons/Facebook.png"></a></li>
+	  <li><a href="https://twitter.com/intent/tweet?source=http://blog.ivanqueiroz.com/2015/04/ocejwcd-6-respondendo-o-cliente.html&text=[OCEJWCD 6] - Respondendo o cliente&url=http://blog.ivanqueiroz.com/2015/04/ocejwcd-6-respondendo-o-cliente.html&via=ivanqueiroz" target="_blank" title="Tweet"><img src="/images/icons/Twitter.png"></a></li>
+	  <li><a href="https://plus.google.com/share?url=http://blog.ivanqueiroz.com/2015/04/ocejwcd-6-respondendo-o-cliente.html" target="_blank" title="Compartilhe no Google+"><img src="/images/icons/Google+.png"></a></li>
+	  <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=http://blog.ivanqueiroz.com/2015/04/ocejwcd-6-respondendo-o-cliente.html&title=[OCEJWCD 6] - Respondendo o cliente&summary=[OCEJWCD 6] - Respondendo o cliente" target="_blank" title="Compartilhe no LinkedIn"><img src="/images/icons/LinkedIn.png"></a></li>
+	  <li><a href="mailto:?subject=[OCEJWCD 6] - Respondendo o cliente&body=http://blog.ivanqueiroz.com/2015/04/ocejwcd-6-respondendo-o-cliente.html" target="_blank" title="Email"><img src="/images/icons/Email.png"></a></li>
+	</ul>
+
+
+  
+<div class="comments">
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+
+	    var disqus_shortname = 'blogivanqueiroz';
+
+	    (function() {
+	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          
+<a href="mailto:ivanqueiroz@gmail.com"><i class="svg-icon email"></i></a>
+<a href="https://www.facebook.com/ivan.queiroz"><i class="svg-icon facebook"></i></a>
+
+<a href="https://github.com/ivanqueiroz"><i class="svg-icon github"></i></a>
+
+<a href="https://www.linkedin.com/in/ivanqueiroz"><i class="svg-icon linkedin"></i></a>
+
+<a href="/feed.xml"><i class="svg-icon rss"></i></a>
+<a href="https://www.twitter.com/ivanqueiroz"><i class="svg-icon twitter"></i></a>
+
+
+<a href="https://plus.google.com/u/0/+IvanQueiroz/"><i class="svg-icon googleplus"></i></a>
+        </footer>
+      </div>
+    </div>
+
+    
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-3633992-3', 'auto');
+		ga('send', 'pageview', {
+		  'page': '/2015/04/ocejwcd-6-respondendo-o-cliente.html',
+		  'title': '[OCEJWCD 6] - Respondendo o cliente'
+		});
+	</script>
+	<!-- End Google Analytics -->
+
+
+  </body>
+</html>

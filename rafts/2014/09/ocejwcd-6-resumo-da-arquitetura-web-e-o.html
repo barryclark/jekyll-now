@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>[OCEJWCD 6] - Resumo da Arquitetura Web e o Protocolo HTTP – Ivan Queiroz – Pai, analista e desenvolvedor de software.</title>
+
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="A arquitetura web é baseada no modelo cliente-servidor onde o cliente faz uma requisição (request) para obter uma resposta (response). Para esse processo é necessário que os dois lados da comunicação possuam uma forma padrão de comunicação, um protocolo, para se entenderem no ambiente heterogêneo que é a Internet.
+" />
+    <meta property="og:description" content="A arquitetura web é baseada no modelo cliente-servidor onde o cliente faz uma requisição (request) para obter uma resposta (response). Para esse processo é necessário que os dois lados da comunicação possuam uma forma padrão de comunicação, um protocolo, para se entenderem no ambiente heterogêneo que é a Internet.
+" />
+    
+    <meta name="author" content="Ivan Queiroz" />
+
+    
+    <meta property="og:title" content="[OCEJWCD 6] - Resumo da Arquitetura Web e o Protocolo HTTP" />
+    <meta property="twitter:title" content="[OCEJWCD 6] - Resumo da Arquitetura Web e o Protocolo HTTP" />
+    
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Ivan Queiroz - Pai, analista e desenvolvedor de software." href="/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/" class="site-avatar"><img src="https://raw.githubusercontent.com/ivanqueiroz/ivanqueiroz.github.io/master/images/avatar.jpg" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">Ivan Queiroz</a></h1>
+            <p class="site-description">Pai, analista e desenvolvedor de software.</p>
+          </div>
+
+          <nav>
+            <a href="/">Blog</a>
+            <a href="/about">Sobre</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <article class="post">
+  <h1>[OCEJWCD 6] - Resumo da Arquitetura Web e o Protocolo HTTP</h1>
+
+  <div class="entry">
+    <p>A arquitetura web é baseada no modelo cliente-servidor onde o cliente faz uma requisição (<em>request</em>) para obter uma resposta (<em>response</em>). Para esse processo é necessário que os dois lados da comunicação possuam uma forma padrão de comunicação, um protocolo, para se entenderem no ambiente heterogêneo que é a Internet.</p>
+
+<p>O protocolo para a navegação de páginas é o <strong><em>Hypertext Transfer Protocol</em></strong> o famoso HTTP, que define um formato para as <em>requests</em> e <em>responses</em>, composto de um header (cabeçalho) e um body (corpo). O header possui metadados úteis sobre o pacote.</p>
+
+<p>Utilizando a ferramenta de TCP/IP Monitor do Eclipse é possível visualizar as requests e responses:</p>
+
+<p><strong>REQUEST</strong></p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">GET /OCEJWCD/OlaMundo HTTP/1.1
+Host: localhost:7000
+Connection: keep-alive
+Cache-Control: max-age<span class="o">=</span>0
+Accept: text/html,application/xhtml+xml,application/xml<span class="p">;</span><span class="nv">q</span><span class="o">=</span>0.9,image/webp,*/*<span class="p">;</span><span class="nv">q</span><span class="o">=</span>0.8
+User-Agent: Mozilla/5.0 <span class="o">(</span>Macintosh<span class="p">;</span> Intel Mac OS X 10_9_4<span class="o">)</span> AppleWebKit/537.36 <span class="o">(</span>KHTML, like Gecko<span class="o">)</span> Chrome/37.0.2062.94 Safari/537.36
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: pt-BR,pt<span class="p">;</span><span class="nv">q</span><span class="o">=</span>0.8,en-US<span class="p">;</span><span class="nv">q</span><span class="o">=</span>0.6,en<span class="p">;</span><span class="nv">q</span><span class="o">=</span>0.4,es<span class="p">;</span><span class="nv">q</span><span class="o">=</span>0.2</code></pre></div>
+
+<p><strong>RESPONSE</strong></p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">HTTP/1.1 <span class="m">200</span> OK
+Server: Apache-Coyote/1.1
+Content-Length: 0
+Date: Sun, <span class="m">07</span> Sep <span class="m">2014</span> 15:21:34 GMT</code></pre></div>
+
+<p>Na primeira parte da certificação é necessário ter conhecimento de Servlets e os métodos do protocolo HTTP. No total são oito métodos:</p>
+
+<ul>
+<li><p><strong>GET</strong> - utilizado para retornar um recurso do servidor é o método mais simples, pode enviar dados para o servidor em forma de parâmetros limitados a 255 caracteres - método doGet() da API de Servlets;</p></li>
+<li><p><strong>POST</strong> - parecido com o GET é utilizado quando há uma grande quantidade de dados para ser enviado para o servidor não limitado ao tamanho de 255 caracteres - método doPost() da API de Servlets;</p></li>
+<li><p><strong>HEAD</strong> - retorna o header de um recurso, é como o GET sem o corpo apenas com o cabeçalho - método doHead() da API de Servlets;</p></li>
+<li><p><strong>TRACE</strong> - permite rastrear o que o servidor está recebendo, permitindo o diagnóstico de problemas - método doTrace() da API de Servlets;</p></li>
+<li><p><strong>OPTIONS</strong> - solicita os métodos HTTP que podem ser respondidos pela URL - método doOptions() da API de Servlets;</p></li>
+<li><p><strong>PUT</strong> - faz uma requisição para colocar os dados anexados no corpo da mensagem na URL requisitada - método doPut() da API de Servlets;</p></li>
+<li><p><strong>DELETE</strong> - solicita a remoção de um recurso no servidor da URL - método doDelete() da API de Servlets;</p></li>
+<li><p><strong>CONNECT</strong> - método HTTP para a criação de tunelamento - não existe um método correspondente na API de Servlets.</p></li>
+</ul>
+
+<p>Na prática os mais utilizados são o GET e o POST.</p>
+
+<h2>Códigos de status HTTP</h2>
+
+<p>O HTTP é bem completo e fornece códigos de status de como a requisição foi processada pelo servidor, esses códigos são formados por três dígitos e são usados pelo lado cliente para determinar o que irá ser feito em seguida. Os códigos são divididos em cinco classes:</p>
+
+<ul>
+<li><p>Informativa (1xx) - São códigos provisórios que não indicam o fim da requisição e informam um status intermediário;</p></li>
+<li><p>Sucesso (2xx) - Indica sucesso no processamento da requisição;</p></li>
+<li><p>Redirecionamento (3xx) - O código de redirecionamento indica que o recurso solicitado na requisição foi movido para outro lugar;</p></li>
+<li><p>Erro de cliente (4xx) - Significa que houve erro na requisição criada pelo cliente;</p></li>
+<li><p>Erro de Servidor (5xx) - Houve erro por parte do servidor para responder a solicitação.</p></li>
+</ul>
+
+<h3>Cookies</h3>
+
+<p>São pequenos arquivos textos que são salvos no cliente para manter (persistir) configurações entre as visitas no site.</p>
+
+<p>Um abraço e até a próxima!</p>
+
+  </div>
+
+  <div class="date">
+    <!-- Whitespace added for readability -->
+    Escrito em 
+    20
+    Setembro
+      
+    de
+    2014
+  </div>
+  
+	<ul class="share-buttons">
+	  <li><a href="https://www.facebook.com/sharer/sharer.php?u=http://blog.ivanqueiroz.com/2014/09/ocejwcd-6-resumo-da-arquitetura-web-e-o.html" title="Compartilhe no Facebook" target="_blank"><img src="/images/icons/Facebook.png"></a></li>
+	  <li><a href="https://twitter.com/intent/tweet?source=http://blog.ivanqueiroz.com/2014/09/ocejwcd-6-resumo-da-arquitetura-web-e-o.html&text=[OCEJWCD 6] - Resumo da Arquitetura Web e o Protocolo HTTP&url=http://blog.ivanqueiroz.com/2014/09/ocejwcd-6-resumo-da-arquitetura-web-e-o.html&via=ivanqueiroz" target="_blank" title="Tweet"><img src="/images/icons/Twitter.png"></a></li>
+	  <li><a href="https://plus.google.com/share?url=http://blog.ivanqueiroz.com/2014/09/ocejwcd-6-resumo-da-arquitetura-web-e-o.html" target="_blank" title="Compartilhe no Google+"><img src="/images/icons/Google+.png"></a></li>
+	  <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=http://blog.ivanqueiroz.com/2014/09/ocejwcd-6-resumo-da-arquitetura-web-e-o.html&title=[OCEJWCD 6] - Resumo da Arquitetura Web e o Protocolo HTTP&summary=[OCEJWCD 6] - Resumo da Arquitetura Web e o Protocolo HTTP" target="_blank" title="Compartilhe no LinkedIn"><img src="/images/icons/LinkedIn.png"></a></li>
+	  <li><a href="mailto:?subject=[OCEJWCD 6] - Resumo da Arquitetura Web e o Protocolo HTTP&body=http://blog.ivanqueiroz.com/2014/09/ocejwcd-6-resumo-da-arquitetura-web-e-o.html" target="_blank" title="Email"><img src="/images/icons/Email.png"></a></li>
+	</ul>
+
+
+  
+<div class="comments">
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+
+	    var disqus_shortname = 'blogivanqueiroz';
+
+	    (function() {
+	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          
+<a href="mailto:ivanqueiroz@gmail.com"><i class="svg-icon email"></i></a>
+<a href="https://www.facebook.com/ivan.queiroz"><i class="svg-icon facebook"></i></a>
+
+<a href="https://github.com/ivanqueiroz"><i class="svg-icon github"></i></a>
+
+<a href="https://www.linkedin.com/in/ivanqueiroz"><i class="svg-icon linkedin"></i></a>
+
+<a href="/feed.xml"><i class="svg-icon rss"></i></a>
+<a href="https://www.twitter.com/ivanqueiroz"><i class="svg-icon twitter"></i></a>
+
+
+<a href="https://plus.google.com/u/0/+IvanQueiroz/"><i class="svg-icon googleplus"></i></a>
+        </footer>
+      </div>
+    </div>
+
+    
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-3633992-3', 'auto');
+		ga('send', 'pageview', {
+		  'page': '/2014/09/ocejwcd-6-resumo-da-arquitetura-web-e-o.html',
+		  'title': '[OCEJWCD 6] - Resumo da Arquitetura Web e o Protocolo HTTP'
+		});
+	</script>
+	<!-- End Google Analytics -->
+
+
+  </body>
+</html>

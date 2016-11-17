@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>[OCEJWCD 6] - A Estrutura de Arquivos e Diretórios das Aplicações Web – Ivan Queiroz – Pai, analista e desenvolvedor de software.</title>
+
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="Antes de ver a estrutura de arquivos e diretórios, irei explicar um pouco sobre o padrão MVC dentro do contexto da certificação, para ajudar a entender alguns pontos mais adiante. O padrão MVC significa Model-View-Controller (Modelo-Apresentação-Controlador), onde o Model é o arquivo java (onde está a lógica de negócio), a View são as páginas JSP e HTML (disponibilizadas para o usuário) e o Controller é o Servlet que atua como um intermediário entre os dois anteriores.
+" />
+    <meta property="og:description" content="Antes de ver a estrutura de arquivos e diretórios, irei explicar um pouco sobre o padrão MVC dentro do contexto da certificação, para ajudar a entender alguns pontos mais adiante. O padrão MVC significa Model-View-Controller (Modelo-Apresentação-Controlador), onde o Model é o arquivo java (onde está a lógica de negócio), a View são as páginas JSP e HTML (disponibilizadas para o usuário) e o Controller é o Servlet que atua como um intermediário entre os dois anteriores.
+" />
+    
+    <meta name="author" content="Ivan Queiroz" />
+
+    
+    <meta property="og:title" content="[OCEJWCD 6] - A Estrutura de Arquivos e Diretórios das Aplicações Web" />
+    <meta property="twitter:title" content="[OCEJWCD 6] - A Estrutura de Arquivos e Diretórios das Aplicações Web" />
+    
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Ivan Queiroz - Pai, analista e desenvolvedor de software." href="/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/" class="site-avatar"><img src="https://raw.githubusercontent.com/ivanqueiroz/ivanqueiroz.github.io/master/images/avatar.jpg" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">Ivan Queiroz</a></h1>
+            <p class="site-description">Pai, analista e desenvolvedor de software.</p>
+          </div>
+
+          <nav>
+            <a href="/">Blog</a>
+            <a href="/about">Sobre</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <article class="post">
+  <h1>[OCEJWCD 6] - A Estrutura de Arquivos e Diretórios das Aplicações Web</h1>
+
+  <div class="entry">
+    <p>Antes de ver a estrutura de arquivos e diretórios, irei explicar um pouco sobre o padrão MVC dentro do contexto da certificação, para ajudar a entender alguns pontos mais adiante. O padrão MVC significa <strong><em>Model-View-Controller</em></strong> (Modelo-Apresentação-Controlador), onde o <strong><em>Model</em></strong> é o arquivo java (onde está a lógica de negócio), a <strong><em>View</em></strong> são as páginas JSP e HTML (disponibilizadas para o usuário) e o <strong><em>Controller</em></strong> é o <strong><em>Servlet</em></strong> que atua como um intermediário entre os dois anteriores.</p>
+
+<div style="text-align: center; margin: 1em">
+  <figure style="margin: 0px auto;">
+      <a href="/images/20150906/MVC.png">
+         <img src="/images/20150906/MVC.png" alt="Tríade MVC">
+      </a>
+      <figcaption>
+          Tríade MVC
+      </figcaption>
+  </figure>
+</div>
+
+<p>Com os conceitos do MVC em mente, podemos avançar para a estrutura de arquivos e diretórios das aplicação Web servlet, onde podemos afirmar que há dois ambientes, o de desenvolvimento e o de deployement (implantação). Para melhor entendimento, sugiro criar os dois ambientes.</p>
+
+<p>Para o ambiente de desenvolvimento a seguinte estrutura foi criada:</p>
+
+<div style="text-align: center; margin: 1em">
+  <figure style="margin: 0px auto;">
+      <a href="/images/20150906/ambiente_desenvolvimento.png">
+         <img src="/images/20150906/ambiente_desenvolvimento.png" alt="Estrutura de arquivos do ambiente de desenvolvimento">
+      </a>
+      <figcaption>
+          Estrutura de arquivos do ambiente de desenvolvimento
+      </figcaption>
+  </figure>
+</div>
+
+<ul>
+<li>a pasta OlaMundo é a pasta principal da aplicação;</li>
+<li>a pasta etc contém o arquivo web.xml também conhecido como deployement descriptor;</li>
+<li>as bibliotecas da aplicação ficam na pasta lib;</li>
+<li>os códigos fontes da aplicação ficam na pasta src;</li>
+<li>arquivos compilados (.class) ficam na pasta classes;</li>
+<li>os arquivos HTML e jsp&#39;s são colocados na pasta web.</li>
+</ul>
+
+<p>Já o ambiente de implantação fica da seguinte maneira:</p>
+
+<div style="text-align: center; margin: 1em">
+  <figure style="margin: 0px auto;">
+      <a href="/images/20150906/ambiente_deployement.png">
+         <img src="/images/20150906/ambiente_deployement.png" alt="Estrutura de arquivos do ambiente de implantação">
+      </a>
+      <figcaption>
+          Estrutura de arquivos do ambiente de implantação
+      </figcaption>
+  </figure>
+</div>
+
+<p>A imagem é autoexplicativa e mostra como é a estutura de pastas e arquivos dentro do servidor web (no caso o tomcat), nosso ambiente de implantação está pronto mas há alguns pontos relevantes a citar:</p>
+
+<ul>
+<li>o arquivo web.xml sempre deve ficar na pasta WEB-INF;</li>
+<li>o contúdo da pasta WEB-INF não fica disponível para os clientes da aplicação.</li>
+</ul>
+
+<p>Concluíndo o post, discutimos aqui brevemente o MVC e como configurar o ambiente de desenvolvimento e implantação, o que nos permite começar a trabalhar com pequenas aplicações web.</p>
+
+<p>No próximo post sobre o ocejwcd irei mostrar como criar um servlet no ambiente de desenvolvimento e como testá-lo no ambiente de implantação.</p>
+
+<p>Um abraço e até a próxima!</p>
+
+  </div>
+
+  <div class="date">
+    <!-- Whitespace added for readability -->
+    Escrito em 
+    6
+    Setembro
+      
+    de
+    2015
+  </div>
+  
+	<ul class="share-buttons">
+	  <li><a href="https://www.facebook.com/sharer/sharer.php?u=http://blog.ivanqueiroz.com/2015/09/ocejwcd-6-estrutura-arquivos-diretorios.html" title="Compartilhe no Facebook" target="_blank"><img src="/images/icons/Facebook.png"></a></li>
+	  <li><a href="https://twitter.com/intent/tweet?source=http://blog.ivanqueiroz.com/2015/09/ocejwcd-6-estrutura-arquivos-diretorios.html&text=[OCEJWCD 6] - A Estrutura de Arquivos e Diretórios das Aplicações Web&url=http://blog.ivanqueiroz.com/2015/09/ocejwcd-6-estrutura-arquivos-diretorios.html&via=ivanqueiroz" target="_blank" title="Tweet"><img src="/images/icons/Twitter.png"></a></li>
+	  <li><a href="https://plus.google.com/share?url=http://blog.ivanqueiroz.com/2015/09/ocejwcd-6-estrutura-arquivos-diretorios.html" target="_blank" title="Compartilhe no Google+"><img src="/images/icons/Google+.png"></a></li>
+	  <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=http://blog.ivanqueiroz.com/2015/09/ocejwcd-6-estrutura-arquivos-diretorios.html&title=[OCEJWCD 6] - A Estrutura de Arquivos e Diretórios das Aplicações Web&summary=[OCEJWCD 6] - A Estrutura de Arquivos e Diretórios das Aplicações Web" target="_blank" title="Compartilhe no LinkedIn"><img src="/images/icons/LinkedIn.png"></a></li>
+	  <li><a href="mailto:?subject=[OCEJWCD 6] - A Estrutura de Arquivos e Diretórios das Aplicações Web&body=http://blog.ivanqueiroz.com/2015/09/ocejwcd-6-estrutura-arquivos-diretorios.html" target="_blank" title="Email"><img src="/images/icons/Email.png"></a></li>
+	</ul>
+
+
+  
+<div class="comments">
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+
+	    var disqus_shortname = 'blogivanqueiroz';
+
+	    (function() {
+	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          
+<a href="mailto:ivanqueiroz@gmail.com"><i class="svg-icon email"></i></a>
+<a href="https://www.facebook.com/ivan.queiroz"><i class="svg-icon facebook"></i></a>
+
+<a href="https://github.com/ivanqueiroz"><i class="svg-icon github"></i></a>
+
+<a href="https://www.linkedin.com/in/ivanqueiroz"><i class="svg-icon linkedin"></i></a>
+
+<a href="/feed.xml"><i class="svg-icon rss"></i></a>
+<a href="https://www.twitter.com/ivanqueiroz"><i class="svg-icon twitter"></i></a>
+
+
+<a href="https://plus.google.com/u/0/+IvanQueiroz/"><i class="svg-icon googleplus"></i></a>
+        </footer>
+      </div>
+    </div>
+
+    
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-3633992-3', 'auto');
+		ga('send', 'pageview', {
+		  'page': '/2015/09/ocejwcd-6-estrutura-arquivos-diretorios.html',
+		  'title': '[OCEJWCD 6] - A Estrutura de Arquivos e Diretórios das Aplicações Web'
+		});
+	</script>
+	<!-- End Google Analytics -->
+
+
+  </body>
+</html>

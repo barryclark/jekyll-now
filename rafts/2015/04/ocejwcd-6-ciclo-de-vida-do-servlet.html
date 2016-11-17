@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>[OCEJWCD 6] - Ciclo de Vida do Servlet – Ivan Queiroz – Pai, analista e desenvolvedor de software.</title>
+
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="O ciclo de vida do servlet passa através dos seguintes estágios:
+" />
+    <meta property="og:description" content="O ciclo de vida do servlet passa através dos seguintes estágios:
+" />
+    
+    <meta name="author" content="Ivan Queiroz" />
+
+    
+    <meta property="og:title" content="[OCEJWCD 6] - Ciclo de Vida do Servlet" />
+    <meta property="twitter:title" content="[OCEJWCD 6] - Ciclo de Vida do Servlet" />
+    
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Ivan Queiroz - Pai, analista e desenvolvedor de software." href="/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/" class="site-avatar"><img src="https://raw.githubusercontent.com/ivanqueiroz/ivanqueiroz.github.io/master/images/avatar.jpg" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">Ivan Queiroz</a></h1>
+            <p class="site-description">Pai, analista e desenvolvedor de software.</p>
+          </div>
+
+          <nav>
+            <a href="/">Blog</a>
+            <a href="/about">Sobre</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <article class="post">
+  <h1>[OCEJWCD 6] - Ciclo de Vida do Servlet</h1>
+
+  <div class="entry">
+    <p>O ciclo de vida do servlet passa através dos seguintes estágios:</p>
+
+<ul>
+<li>carregamento da classe servlet;</li>
+<li>instanciação da classe servlet;</li>
+<li>inicialização;</li>
+<li>serviço;</li>
+<li>destruição.</li>
+</ul>
+
+<p>Lembrando que um servlet não tem um método main() e é controlado pelo container. Segue uma figura representativa do ciclo:</p>
+
+<div style="text-align: center; margin: 1em">
+  <figure style="margin: 0px auto;">
+      <a href="/images/20150429/servlet_lc.png">
+         <img src="/images/20150429/servlet_lc.png" alt="Ciclo de Vida do Servlet">
+      </a>
+      <figcaption>
+          Ciclo de Vida do Servlet
+      </figcaption>
+  </figure>
+</div>
+
+<h2>Interação cliente-servidor</h2>
+
+<p>O que acontece quando uma <strong>request</strong> vem do browser? Vejamos esse código html:</p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">&quot;HelloServlet&quot;</span> <span class="na">method=</span><span class="s">&quot;POST&quot;</span><span class="nt">&gt;</span></code></pre></div>
+
+<p>Quando clicamos no botão de submit do form em questão o browser envia a solicitação para o container e o mesmo identifica que a solicitação é para um servlet e cria dois objetos, um do tipo <strong>HttpServletRequest</strong> e um <strong>HttpServletResponse</strong>. Em seguida encontra o servlet correto para a solicitação e cria uma thread para ele, no passo seguinte envia os dois objetos e chama o método service(), que repassa os objetos para o método apropriado em função do tipo de solicitação (POST nesse caso). A resposta correta é criada e entregue ao objeto response que por sua vez é retornado para o cliente.</p>
+
+<p>A figura seguinte representa o fluxo citado:</p>
+
+<div style="text-align: center; margin: 1em">
+  <figure style="margin: 0px auto;">
+      <a href="/images/20150429/client_server.png">
+         <img src="/images/20150429/client_server.png" alt="Fluxo cliente-servidor">
+      </a>
+      <figcaption>
+          Fluxo cliente-servidor
+      </figcaption>
+  </figure>
+</div>
+
+<h2>Repassando o tratamento de Request / Response</h2>
+
+<p>Relembrando:</p>
+
+<ol>
+<li>O servlet recebe uma request do container;</li>
+<li>o container cria um objeto do tipo HttpServletResponse e um HttpServletRequest baseado em encontrar o servlet correto;</li>
+<li>o container cria uma thread separada para cada requisição ao servlet;</li>
+<li>o container que entrega o objeto de requisição e resposta para a thread do servlet;</li>
+<li>o container chama o método service() do servlet;</li>
+<li>o método service() por sua vez, chama o método POST ou GET apropriado que foi definido na página HTML ou JSP.</li>
+<li>a resposta é gerada, e por sua vez e é retornada para o cliente;</li>
+<li>os objetos de resposta e de requisição são apagados pelo container.</li>
+</ol>
+
+<h2>Repassando o Ciclo de Vida do Servlet</h2>
+
+<div style="text-align: center; margin: 1em">
+  <figure style="margin: 0px auto;">
+      <a href="/images/20150429/ciclo_vida_detalhado.png">
+         <img src="/images/20150429/ciclo_vida_detalhado.png" alt="O Ciclo de Vida do Servlet em Detalhes">
+      </a>
+      <figcaption>
+          O Ciclo de Vida do Servlet em Detalhes
+      </figcaption>
+  </figure>
+</div>
+
+<p>Antes da classe do servlet ser criada, ela é carregada pelo container, e então é instanciada. Após a instanciação do servlet ele é iniciado através do método <code>init()</code>, é importante frisar que o servlet é inicializado apenas uma vez e que o método <code>init()</code> pode ser sobrescrito, após a inicialização o container chama o método <code>service()</code> (onde a maior parte do tempo do servlet é utilizada).
+O método <code>service()</code> não deve ser sobrescrito, para evitar comportamentos errados no servlet, a implementação padrão cria uma thread para a solicitação e identifica qual método deve ser chamado, <code>doGet()</code> ou <code>doPost()</code>, os quais devem ser sobrescritos para implementar o comportamento desejado. Após criação da resposta o conteiner chama o método <code>destroy()</code> e o servlet é finalizado, esse método é chamado apenas uma vez no ciclo de vida.</p>
+
+<p>A interface Servlet possui cinco métodos dos quais três fazem parte do ciclo de vida (init, service e destroy) e os outros dois (<code>getServletConfig()</code> e <code>getServletInfo()</code>) que retornam um objeto do tipo <code>ServletConfig</code> e uma <code>String</code> com informações sobre o servlet (como versão, autor etc) respectivamente. Os parâmetros são passados pelo deployement descriptor e preenchido no objeto <code>ServletConfig</code> passado para o método <code>init()</code>. Só há um objeto <code>ServletConfig</code> por servlet e um <code>ServletContext</code> por aplicação web.</p>
+
+<p>Em um post futuro irei detalhar melhor o ServletContext, até a próxima!</p>
+
+  </div>
+
+  <div class="date">
+    <!-- Whitespace added for readability -->
+    Escrito em 
+    29
+    Abril
+      
+    de
+    2015
+  </div>
+  
+	<ul class="share-buttons">
+	  <li><a href="https://www.facebook.com/sharer/sharer.php?u=http://blog.ivanqueiroz.com/2015/04/ocejwcd-6-ciclo-de-vida-do-servlet.html" title="Compartilhe no Facebook" target="_blank"><img src="/images/icons/Facebook.png"></a></li>
+	  <li><a href="https://twitter.com/intent/tweet?source=http://blog.ivanqueiroz.com/2015/04/ocejwcd-6-ciclo-de-vida-do-servlet.html&text=[OCEJWCD 6] - Ciclo de Vida do Servlet&url=http://blog.ivanqueiroz.com/2015/04/ocejwcd-6-ciclo-de-vida-do-servlet.html&via=ivanqueiroz" target="_blank" title="Tweet"><img src="/images/icons/Twitter.png"></a></li>
+	  <li><a href="https://plus.google.com/share?url=http://blog.ivanqueiroz.com/2015/04/ocejwcd-6-ciclo-de-vida-do-servlet.html" target="_blank" title="Compartilhe no Google+"><img src="/images/icons/Google+.png"></a></li>
+	  <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=http://blog.ivanqueiroz.com/2015/04/ocejwcd-6-ciclo-de-vida-do-servlet.html&title=[OCEJWCD 6] - Ciclo de Vida do Servlet&summary=[OCEJWCD 6] - Ciclo de Vida do Servlet" target="_blank" title="Compartilhe no LinkedIn"><img src="/images/icons/LinkedIn.png"></a></li>
+	  <li><a href="mailto:?subject=[OCEJWCD 6] - Ciclo de Vida do Servlet&body=http://blog.ivanqueiroz.com/2015/04/ocejwcd-6-ciclo-de-vida-do-servlet.html" target="_blank" title="Email"><img src="/images/icons/Email.png"></a></li>
+	</ul>
+
+
+  
+<div class="comments">
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+
+	    var disqus_shortname = 'blogivanqueiroz';
+
+	    (function() {
+	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          
+<a href="mailto:ivanqueiroz@gmail.com"><i class="svg-icon email"></i></a>
+<a href="https://www.facebook.com/ivan.queiroz"><i class="svg-icon facebook"></i></a>
+
+<a href="https://github.com/ivanqueiroz"><i class="svg-icon github"></i></a>
+
+<a href="https://www.linkedin.com/in/ivanqueiroz"><i class="svg-icon linkedin"></i></a>
+
+<a href="/feed.xml"><i class="svg-icon rss"></i></a>
+<a href="https://www.twitter.com/ivanqueiroz"><i class="svg-icon twitter"></i></a>
+
+
+<a href="https://plus.google.com/u/0/+IvanQueiroz/"><i class="svg-icon googleplus"></i></a>
+        </footer>
+      </div>
+    </div>
+
+    
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-3633992-3', 'auto');
+		ga('send', 'pageview', {
+		  'page': '/2015/04/ocejwcd-6-ciclo-de-vida-do-servlet.html',
+		  'title': '[OCEJWCD 6] - Ciclo de Vida do Servlet'
+		});
+	</script>
+	<!-- End Google Analytics -->
+
+
+  </body>
+</html>

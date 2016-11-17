@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Aprendendo GO/GOLANG – Ivan Queiroz – Pai, analista e desenvolvedor de software.</title>
+
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="Quando ouvi falar da linguagem Go em 2009 achei muito interssante, a sintaxe proposta para a utilização de concorrência através de goroutines, de duck typing e garbage colector, mas na época eu não fiquei interessado o suficiente para querer aprender a linguagem.
+" />
+    <meta property="og:description" content="Quando ouvi falar da linguagem Go em 2009 achei muito interssante, a sintaxe proposta para a utilização de concorrência através de goroutines, de duck typing e garbage colector, mas na época eu não fiquei interessado o suficiente para querer aprender a linguagem.
+" />
+    
+    <meta name="author" content="Ivan Queiroz" />
+
+    
+    <meta property="og:title" content="Aprendendo GO/GOLANG" />
+    <meta property="twitter:title" content="Aprendendo GO/GOLANG" />
+    
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Ivan Queiroz - Pai, analista e desenvolvedor de software." href="/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/" class="site-avatar"><img src="https://raw.githubusercontent.com/ivanqueiroz/ivanqueiroz.github.io/master/images/avatar.jpg" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">Ivan Queiroz</a></h1>
+            <p class="site-description">Pai, analista e desenvolvedor de software.</p>
+          </div>
+
+          <nav>
+            <a href="/">Blog</a>
+            <a href="/about">Sobre</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <article class="post">
+  <h1>Aprendendo GO/GOLANG</h1>
+
+  <div class="entry">
+    <p>Quando ouvi falar da linguagem Go em 2009 achei muito interssante, a sintaxe proposta para a utilização de concorrência através de <em>goroutines</em>, de <em>duck typing</em> e <em>garbage colector</em>, mas na época eu não fiquei interessado o suficiente para querer aprender a linguagem.</p>
+
+<p>Alguns anos se passaram desde então e eu senti a necessidade de aprender uma nova linguagem (principalmente após ler o livro O Progamador Apaixonado) e decidi pelo Go por ser bem diferente de Java (pra me tirar da zona de conforto) e por ser compilado.</p>
+
+<h3>Por onde começar?</h3>
+
+<p>Uma leve pesquisada no <a href="https://golang.org/">site oficial</a> e todas as instruções para instalar e configurar podem ser encontradas nesse <a href="https://golang.org/doc/install">link</a>, apenas chamo atenção para a importância da configuração das varáveis de ambiente <code>GO_PATH</code> e <code>GO_ROOT</code> que ficam sem muito destaque.</p>
+
+<p>No site oficial também tem um ótimo tutorial em várias línguas, dentre elas o <a href="http://go-tour-br.appspot.com/welcome/1">português</a>, que apresenta a sintaxe básica e de forma interativa através do <a href="https://play.golang.org/p/3VsQMI4Rx5">Go Playground</a>, uma ferramenta on-line bem simples e eficiente para execução de código Go.</p>
+
+<h3>Ferramentas do SDK</h3>
+
+<p>O sdk do Go vem com algumas ferramentas interessantes que demonstram a preocupação dos criadores quanto a manutenção do código e do gerenciamento de dependências, dentre elas as que achei mais importantes são:</p>
+
+<ul>
+<li><strong>go fmt</strong> - formata o código de acordo com o guia de estilo do Go;</li>
+<li><strong>go fix</strong> - reescreve o código substituido chamadas obsoletas por novas;</li>
+<li><strong>go vet</strong> - reporta erros em construções suspeitas da linguagem.</li>
+</ul>
+
+<p>Existem muitas outras ferramentas na SDK a função e a sintaxe delas pode ser encontrada na <a href="https://golang.org/cmd/go/">documentação on-line</a>.</p>
+
+<h3>IDE</h3>
+
+<p>Existem algumas IDE&#39;s e plugins que auxiliam muito o desenvolvimento, mas decidi usar o editor de texto Atom para o aprendizado, que já vem com reconhecimento da sintaxe do Go. Indico utilizar o plugin go-plus com o Atom.</p>
+
+<h3>Indo além do tutorial</h3>
+
+<p>Decidi obter o livro Programando em Go de <a href="http://www.casadocodigo.com.br/products/livro-google-go">Caio Filipini</a> publicado pela Casa do Código por ser para iniciantes na linguagem e o único em português. Além disso existem livros on-line grátis em inglês que vão além do básico que vale muito a pena indicar:</p>
+
+<ul>
+<li><a href="http://www.golang-book.com/">An Introduction to Programming in Go</a> - apresenta uma introdução mais completa da linguagem;</li>
+<li><a href="https://docs.google.com/file/d/0B2GBHFyTK2N8TzM4dEtIWjBJdEk/">Build Web Application with Golang</a> - mostra como desenvolver aplicações web com a linguagem;</li>
+<li><a href="http://codegangsta.gitbooks.io/building-web-apps-with-go/content/">Building Web Apps with Go</a> - mostra alguns frameworks em Go para auxiliar o desenvolvimento web;</li>
+<li><a href="http://jan.newmarch.name/go/">Network programming with Go</a> - os poderes da programação em rede do Go são mostrados nesse livro;</li>
+<li><a href="https://leanpub.com/gocrypto/read">Practical Cryptography With Go</a> - criptografia em Go.</li>
+</ul>
+
+<h3>Aplicação de aprendizado</h3>
+
+<p>Para aprender vou começar com um programa simples, uma biblioteca para utilizar a <a href="https://developer.valvesoftware.com/wiki/Steam_Web_API">API Web do Steam</a>, que pretendo utilizar no futuro para uma ideia de aplicativo. Vou disponibilizar o código no GitHub em <a href="https://github.com/ivanqueiroz/steam4go">https://github.com/ivanqueiroz/steam4go</a> e tentando trazer sempre dicas que eu aprenda no processo aqui para meu blog.</p>
+
+<p>Um abraço e até a próxima!</p>
+
+  </div>
+
+  <div class="date">
+    <!-- Whitespace added for readability -->
+    Escrito em 
+    21
+    Abril
+      
+    de
+    2015
+  </div>
+  
+	<ul class="share-buttons">
+	  <li><a href="https://www.facebook.com/sharer/sharer.php?u=http://blog.ivanqueiroz.com/2015/04/aprendendo-gogolang.html" title="Compartilhe no Facebook" target="_blank"><img src="/images/icons/Facebook.png"></a></li>
+	  <li><a href="https://twitter.com/intent/tweet?source=http://blog.ivanqueiroz.com/2015/04/aprendendo-gogolang.html&text=Aprendendo GO/GOLANG&url=http://blog.ivanqueiroz.com/2015/04/aprendendo-gogolang.html&via=ivanqueiroz" target="_blank" title="Tweet"><img src="/images/icons/Twitter.png"></a></li>
+	  <li><a href="https://plus.google.com/share?url=http://blog.ivanqueiroz.com/2015/04/aprendendo-gogolang.html" target="_blank" title="Compartilhe no Google+"><img src="/images/icons/Google+.png"></a></li>
+	  <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=http://blog.ivanqueiroz.com/2015/04/aprendendo-gogolang.html&title=Aprendendo GO/GOLANG&summary=Aprendendo GO/GOLANG" target="_blank" title="Compartilhe no LinkedIn"><img src="/images/icons/LinkedIn.png"></a></li>
+	  <li><a href="mailto:?subject=Aprendendo GO/GOLANG&body=http://blog.ivanqueiroz.com/2015/04/aprendendo-gogolang.html" target="_blank" title="Email"><img src="/images/icons/Email.png"></a></li>
+	</ul>
+
+
+  
+<div class="comments">
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+
+	    var disqus_shortname = 'blogivanqueiroz';
+
+	    (function() {
+	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          
+<a href="mailto:ivanqueiroz@gmail.com"><i class="svg-icon email"></i></a>
+<a href="https://www.facebook.com/ivan.queiroz"><i class="svg-icon facebook"></i></a>
+
+<a href="https://github.com/ivanqueiroz"><i class="svg-icon github"></i></a>
+
+<a href="https://www.linkedin.com/in/ivanqueiroz"><i class="svg-icon linkedin"></i></a>
+
+<a href="/feed.xml"><i class="svg-icon rss"></i></a>
+<a href="https://www.twitter.com/ivanqueiroz"><i class="svg-icon twitter"></i></a>
+
+
+<a href="https://plus.google.com/u/0/+IvanQueiroz/"><i class="svg-icon googleplus"></i></a>
+        </footer>
+      </div>
+    </div>
+
+    
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-3633992-3', 'auto');
+		ga('send', 'pageview', {
+		  'page': '/2015/04/aprendendo-gogolang.html',
+		  'title': 'Aprendendo GO/GOLANG'
+		});
+	</script>
+	<!-- End Google Analytics -->
+
+
+  </body>
+</html>

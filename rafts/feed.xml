@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ivan Queiroz</title>
+    <description>Pai, analista e desenvolvedor de software.</description>
+    <link>http://blog.ivanqueiroz.com</link>
+    <atom:link href="http://blog.ivanqueiroz.com/feed.xml" rel="self" type="application/rss+xml" />
+    
+      <item>
+        <title>[OCEJWCD 6] - A Estrutura de Arquivos e Diretórios das Aplicações Web</title>
+        <description>&lt;p&gt;Antes de ver a estrutura de arquivos e diretórios, irei explicar um pouco sobre o padrão MVC dentro do contexto da certificação, para ajudar a entender alguns pontos mais adiante. O padrão MVC significa &lt;strong&gt;&lt;em&gt;Model-View-Controller&lt;/em&gt;&lt;/strong&gt; (Modelo-Apresentação-Controlador), onde o &lt;strong&gt;&lt;em&gt;Model&lt;/em&gt;&lt;/strong&gt; é o arquivo java (onde está a lógica de negócio), a &lt;strong&gt;&lt;em&gt;View&lt;/em&gt;&lt;/strong&gt; são as páginas JSP e HTML (disponibilizadas para o usuário) e o &lt;strong&gt;&lt;em&gt;Controller&lt;/em&gt;&lt;/strong&gt; é o &lt;strong&gt;&lt;em&gt;Servlet&lt;/em&gt;&lt;/strong&gt; que atua como um intermediário entre os dois anteriores.&lt;/p&gt;
+
+&lt;div style=&quot;text-align: center; margin: 1em&quot;&gt;
+  &lt;figure style=&quot;margin: 0px auto;&quot;&gt;
+      &lt;a href=&quot;/images/20150906/MVC.png&quot;&gt;
+         &lt;img src=&quot;/images/20150906/MVC.png&quot; alt=&quot;Tríade MVC&quot;&gt;
+      &lt;/a&gt;
+      &lt;figcaption&gt;
+          Tríade MVC
+      &lt;/figcaption&gt;
+  &lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Com os conceitos do MVC em mente, podemos avançar para a estrutura de arquivos e diretórios das aplicação Web servlet, onde podemos afirmar que há dois ambientes, o de desenvolvimento e o de deployement (implantação). Para melhor entendimento, sugiro criar os dois ambientes.&lt;/p&gt;
+
+&lt;p&gt;Para o ambiente de desenvolvimento a seguinte estrutura foi criada:&lt;/p&gt;
+
+&lt;div style=&quot;text-align: center; margin: 1em&quot;&gt;
+  &lt;figure style=&quot;margin: 0px auto;&quot;&gt;
+      &lt;a href=&quot;/images/20150906/ambiente_desenvolvimento.png&quot;&gt;
+         &lt;img src=&quot;/images/20150906/ambiente_desenvolvimento.png&quot; alt=&quot;Estrutura de arquivos do ambiente de desenvolvimento&quot;&gt;
+      &lt;/a&gt;
+      &lt;figcaption&gt;
+          Estrutura de arquivos do ambiente de desenvolvimento
+      &lt;/figcaption&gt;
+  &lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;a pasta OlaMundo é a pasta principal da aplicação;&lt;/li&gt;
+&lt;li&gt;a pasta etc contém o arquivo web.xml também conhecido como deployement descriptor;&lt;/li&gt;
+&lt;li&gt;as bibliotecas da aplicação ficam na pasta lib;&lt;/li&gt;
+&lt;li&gt;os códigos fontes da aplicação ficam na pasta src;&lt;/li&gt;
+&lt;li&gt;arquivos compilados (.class) ficam na pasta classes;&lt;/li&gt;
+&lt;li&gt;os arquivos HTML e jsp&amp;#39;s são colocados na pasta web.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Já o ambiente de implantação fica da seguinte maneira:&lt;/p&gt;
+
+&lt;div style=&quot;text-align: center; margin: 1em&quot;&gt;
+  &lt;figure style=&quot;margin: 0px auto;&quot;&gt;
+      &lt;a href=&quot;/images/20150906/ambiente_deployement.png&quot;&gt;
+         &lt;img src=&quot;/images/20150906/ambiente_deployement.png&quot; alt=&quot;Estrutura de arquivos do ambiente de implantação&quot;&gt;
+      &lt;/a&gt;
+      &lt;figcaption&gt;
+          Estrutura de arquivos do ambiente de implantação
+      &lt;/figcaption&gt;
+  &lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;p&gt;A imagem é autoexplicativa e mostra como é a estutura de pastas e arquivos dentro do servidor web (no caso o tomcat), nosso ambiente de implantação está pronto mas há alguns pontos relevantes a citar:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;o arquivo web.xml sempre deve ficar na pasta WEB-INF;&lt;/li&gt;
+&lt;li&gt;o contúdo da pasta WEB-INF não fica disponível para os clientes da aplicação.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Concluíndo o post, discutimos aqui brevemente o MVC e como configurar o ambiente de desenvolvimento e implantação, o que nos permite começar a trabalhar com pequenas aplicações web.&lt;/p&gt;
+
+&lt;p&gt;No próximo post sobre o ocejwcd irei mostrar como criar um servlet no ambiente de desenvolvimento e como testá-lo no ambiente de implantação.&lt;/p&gt;
+
+&lt;p&gt;Um abraço e até a próxima!&lt;/p&gt;
+</description>
+        <pubDate>Sun, 06 Sep 2015 00:00:00 -0300</pubDate>
+        <link>http://blog.ivanqueiroz.com/2015/09/ocejwcd-6-estrutura-arquivos-diretorios.html</link>
+        <guid isPermaLink="true">http://blog.ivanqueiroz.com/2015/09/ocejwcd-6-estrutura-arquivos-diretorios.html</guid>
+      </item>
+    
+      <item>
+        <title>Navegando na Web com o Go/Golang</title>
+        <description>&lt;p&gt;Após muito tempo trago mais um post sobre Go, confesso que a demora foi devido a o meu interesse atual pelo &lt;a href=&quot;https://dukescript.com/&quot;&gt;Dukescript&lt;/a&gt;, que me fez deixar de lado um pouco os estudos do Go. Mas decidi retomar aos poucos os estudos da linguagem revendo meu pequeno projeto de manipulação da &lt;a href=&quot;https://developer.valvesoftware.com/wiki/Steam_Web_API&quot;&gt;API web do Steam&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2&gt;HTTP em Go/Golang&lt;/h2&gt;
+
+&lt;p&gt;Para usar a api do Steam precisei manipular chamadas HTTP e logo descobri que pode ser feito facilmente com a utilização do pacote &lt;code&gt;net/http&lt;/code&gt; e &lt;code&gt;net/url&lt;/code&gt; do Go.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-go&quot; data-lang=&quot;go&quot;&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;&amp;quot;net/http&amp;quot;&lt;/span&gt;
+  &lt;span class=&quot;s&quot;&gt;&amp;quot;net/url&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Com o import desses pacotes, já se pode utilizar as funções cliente do pacote:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-go&quot; data-lang=&quot;go&quot;&gt;&lt;span class=&quot;nx&quot;&gt;resp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;http://teste.com/&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;resp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Post&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;http://teste.com.br/upload&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;image/jpeg&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;buf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;resp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;PostForm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;http://teste.com.br/form&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;key&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Value&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;id&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;123&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}})&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Para o meu propósito coloquei uma função que trata o retorno de erro:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-go&quot; data-lang=&quot;go&quot;&gt;&lt;span class=&quot;kd&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;perror&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;nil&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nb&quot;&gt;panic&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Basicamente a função &lt;code&gt;perror&lt;/code&gt; verifica se houve erro e chama a função &lt;code&gt;panic&lt;/code&gt; para interromper a execução do programa. Então criei uma função que recebe o endereço http e retorna uma string com o conteúdo da resposta:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-go&quot; data-lang=&quot;go&quot;&gt;&lt;span class=&quot;kd&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;navigateToString&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;address&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;response&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;_&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Parse&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;address&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;perror&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+    &lt;span class=&quot;nx&quot;&gt;resp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;address&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;perror&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;defer&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;resp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Close&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;ioutil&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;ReadAll&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;resp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Como a função &lt;code&gt;http.Get&lt;/code&gt; retorna o tipo &lt;a href=&quot;https://golang.org/pkg/net/http/#Response&quot;&gt;Response&lt;/a&gt; que possui o elemento &lt;code&gt;Body&lt;/code&gt; (que é um Reader), usei a função ReadAll do pacote utilitário &lt;code&gt;io/ioutil&lt;/code&gt; para convertê-lo em um array de bytes e construir a string de retorno. Segue o código completo para testar a função:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-go&quot; data-lang=&quot;go&quot;&gt;&lt;span class=&quot;kn&quot;&gt;package&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;main&lt;/span&gt;
+
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;&amp;quot;fmt&amp;quot;&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;&amp;quot;io/ioutil&amp;quot;&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;&amp;quot;net/http&amp;quot;&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;&amp;quot;net/url&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;perror&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;nil&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nb&quot;&gt;panic&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;navigateToString&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;address&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;response&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;_&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Parse&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;address&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;perror&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+    &lt;span class=&quot;nx&quot;&gt;resp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;address&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;perror&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;defer&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;resp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Close&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;ioutil&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;ReadAll&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;resp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;fmt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Println&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;navigateToString&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;http://www.atarde.com.br&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;O código de &lt;a href=&quot;https://raw.githubusercontent.com/ivanqueiroz/steam4go/9c67291b0e8c6f7bde8dffd11ca4fad44bba346d/webapiutils.go&quot;&gt;webapiutils.go&lt;/a&gt; que criei se baseia na utilização do pacote &lt;code&gt;net/url&lt;/code&gt; para obter a lista de métodos disponíveis na Steam Web API, no formato JSON, e possui funções que retornam a resposta como string, array de bytes ou como uma &lt;code&gt;struct&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Em um futuro post mostrarei como manipular um objeto JSON no Go é fácil e como retornar uma &lt;code&gt;struct&lt;/code&gt; que representa esse objeto.&lt;/p&gt;
+
+&lt;p&gt;Até mais!&lt;/p&gt;
+</description>
+        <pubDate>Mon, 13 Jul 2015 00:00:00 -0300</pubDate>
+        <link>http://blog.ivanqueiroz.com/navegando-paginas-go/</link>
+        <guid isPermaLink="true">http://blog.ivanqueiroz.com/navegando-paginas-go/</guid>
+      </item>
+    
+      <item>
+        <title>DukeScript - HTML5 e Java juntos</title>
+        <description>&lt;p&gt;O fundador do projeto Netbeans e arquiteto de software Jaroslav Tulach junto com Anton Epple consultor e instrutor Java, ganharam o Duke&amp;#39;s Choice Award de 2014 ao apresentarem o Dukescript, uma tecnologia que tenta trazer o Java mais próximo da visão inicial de seu criador de levá-lo a todos os dispositivos escrevendo apenas um código (Write Once, Run Everywhere). Para isso utiliza o HTML5/Javascript como mecanismo de rendering e o Java no lado cliente (sem plug-in!!!) para a inteligência da aplicação.&lt;/p&gt;
+
+&lt;div style=&quot;text-align: center; margin: 1em&quot;&gt;
+  &lt;figure style=&quot;margin: 0px auto;&quot;&gt;
+      &lt;a href=&quot;/images/20150515/dca.jpg&quot;&gt;
+         &lt;img src=&quot;/images/20150515/dca.jpg&quot; alt=&quot;Da esquerda pra direita: Anto Epple e Jaroslav Tulach&quot;&gt;
+      &lt;/a&gt;
+      &lt;figcaption&gt;
+          Da esquerda pra direita: Anto Epple e Jaroslav Tulach
+      &lt;/figcaption&gt;
+  &lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;p&gt;O fundador do projeto &lt;a href=&quot;https://netbeans.org/&quot;&gt;Netbeans&lt;/a&gt; e arquiteto de software &lt;a href=&quot;https://twitter.com/jaroslavtulach&quot;&gt;Jaroslav Tulach&lt;/a&gt; junto com &lt;a href=&quot;https://twitter.com/monacotoni&quot;&gt;Anton Epple&lt;/a&gt; consultor e instrutor Java, ganharam o &lt;a href=&quot;https://www.java.net/dukeschoice&quot;&gt;Duke&amp;#39;s Choice Award de 2014&lt;/a&gt; ao apresentarem o &lt;a href=&quot;https://dukescript.com/&quot;&gt;Dukescript&lt;/a&gt;, uma tecnologia que tenta trazer o Java mais próximo da visão inicial de seu criador de levá-lo a todos os dispositivos escrevendo apenas um código (Write Once, Run Everywhere). Para isso utiliza o HTML5/Javascript, como mecanismo de rendering, e o Java no lado cliente (sem plug-in!!!) para as regras da aplicação.&lt;/p&gt;
+
+&lt;h2&gt;Funcionamento&lt;/h2&gt;
+
+&lt;p&gt;A arquitetura do Dukescript é formada de três componentes: uma JVM, um componente HTML-Renderer e o Dukescript. Em uma entrevista para a InfoQ, Epple explicou que o Dukescript une o componente HTML e a JVM atuando como uma ponte entre a lógica de negócio em execução na JVM e a interface do usuário escrita em HTML / Javascript. A aplicação Dukescript roda dentro da JVM e usa o componente HTML para escrever a página. Assim que a página é carregada o Dukescript realiza um bind dos elementos dinâmicos da página com o modelo de dados (em Java e não Javascript) usando o Knockout.js por debaixo dos panos.&lt;/p&gt;
+
+&lt;div style=&quot;text-align: center; margin: 1em&quot;&gt;
+  &lt;figure style=&quot;margin: 0px auto;&quot;&gt;
+      &lt;a href=&quot;/images/20150515/dukescript.jpg&quot;&gt;
+         &lt;img src=&quot;/images/20150515/dukescript.jpg&quot; alt=&quot;Dukescript e as VM&#39;s Utilizadas&quot;&gt;
+      &lt;/a&gt;
+      &lt;figcaption&gt;
+          Dukescript e as VM&#39;s Utilizadas
+      &lt;/figcaption&gt;
+  &lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;h2&gt;Por onde começar?&lt;/h2&gt;
+
+&lt;p&gt;O melhor início é no site oficial em &lt;a href=&quot;https://dukescript.com/&quot;&gt;https://dukescript.com/&lt;/a&gt;, há um tutorial muito bom com o Netbeans (que surpresa) explicando os principais conceitos utilizando a aplicação demonstrativa gerada pela IDE. Claro que também é possível construir e executar o código do Dukescript fora do Netbeans, mas é um caminho mais tortuoso já que a IDE abstrai a maior parte das configurações necessária. Existe um vídeo de criação de CRUD utilizando o Dukescript que pode ser encontrado em &lt;a href=&quot;http://wiki.apidesign.org/wiki/DukeScript&quot;&gt;http://wiki.apidesign.org/wiki/DukeScript&lt;/a&gt;.
+Estou brincando um pouco com essa nova tecnologia e em breve postarei alguns experimentos aqui.&lt;/p&gt;
+
+&lt;p&gt;Um abraço e até a próxima!&lt;/p&gt;
+</description>
+        <pubDate>Fri, 15 May 2015 00:00:00 -0300</pubDate>
+        <link>http://blog.ivanqueiroz.com/2015/05/dukescript-html5-e-java-juntos.html</link>
+        <guid isPermaLink="true">http://blog.ivanqueiroz.com/2015/05/dukescript-html5-e-java-juntos.html</guid>
+      </item>
+    
+      <item>
+        <title>[OCEJWCD 6] - Ciclo de Vida do Servlet</title>
+        <description>&lt;p&gt;O ciclo de vida do servlet passa através dos seguintes estágios:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;carregamento da classe servlet;&lt;/li&gt;
+&lt;li&gt;instanciação da classe servlet;&lt;/li&gt;
+&lt;li&gt;inicialização;&lt;/li&gt;
+&lt;li&gt;serviço;&lt;/li&gt;
+&lt;li&gt;destruição.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Lembrando que um servlet não tem um método main() e é controlado pelo container. Segue uma figura representativa do ciclo:&lt;/p&gt;
+
+&lt;div style=&quot;text-align: center; margin: 1em&quot;&gt;
+  &lt;figure style=&quot;margin: 0px auto;&quot;&gt;
+      &lt;a href=&quot;/images/20150429/servlet_lc.png&quot;&gt;
+         &lt;img src=&quot;/images/20150429/servlet_lc.png&quot; alt=&quot;Ciclo de Vida do Servlet&quot;&gt;
+      &lt;/a&gt;
+      &lt;figcaption&gt;
+          Ciclo de Vida do Servlet
+      &lt;/figcaption&gt;
+  &lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;h2&gt;Interação cliente-servidor&lt;/h2&gt;
+
+&lt;p&gt;O que acontece quando uma &lt;strong&gt;request&lt;/strong&gt; vem do browser? Vejamos esse código html:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;form&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;action=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;HelloServlet&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;method=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;POST&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Quando clicamos no botão de submit do form em questão o browser envia a solicitação para o container e o mesmo identifica que a solicitação é para um servlet e cria dois objetos, um do tipo &lt;strong&gt;HttpServletRequest&lt;/strong&gt; e um &lt;strong&gt;HttpServletResponse&lt;/strong&gt;. Em seguida encontra o servlet correto para a solicitação e cria uma thread para ele, no passo seguinte envia os dois objetos e chama o método service(), que repassa os objetos para o método apropriado em função do tipo de solicitação (POST nesse caso). A resposta correta é criada e entregue ao objeto response que por sua vez é retornado para o cliente.&lt;/p&gt;
+
+&lt;p&gt;A figura seguinte representa o fluxo citado:&lt;/p&gt;
+
+&lt;div style=&quot;text-align: center; margin: 1em&quot;&gt;
+  &lt;figure style=&quot;margin: 0px auto;&quot;&gt;
+      &lt;a href=&quot;/images/20150429/client_server.png&quot;&gt;
+         &lt;img src=&quot;/images/20150429/client_server.png&quot; alt=&quot;Fluxo cliente-servidor&quot;&gt;
+      &lt;/a&gt;
+      &lt;figcaption&gt;
+          Fluxo cliente-servidor
+      &lt;/figcaption&gt;
+  &lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;h2&gt;Repassando o tratamento de Request / Response&lt;/h2&gt;
+
+&lt;p&gt;Relembrando:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;O servlet recebe uma request do container;&lt;/li&gt;
+&lt;li&gt;o container cria um objeto do tipo HttpServletResponse e um HttpServletRequest baseado em encontrar o servlet correto;&lt;/li&gt;
+&lt;li&gt;o container cria uma thread separada para cada requisição ao servlet;&lt;/li&gt;
+&lt;li&gt;o container que entrega o objeto de requisição e resposta para a thread do servlet;&lt;/li&gt;
+&lt;li&gt;o container chama o método service() do servlet;&lt;/li&gt;
+&lt;li&gt;o método service() por sua vez, chama o método POST ou GET apropriado que foi definido na página HTML ou JSP.&lt;/li&gt;
+&lt;li&gt;a resposta é gerada, e por sua vez e é retornada para o cliente;&lt;/li&gt;
+&lt;li&gt;os objetos de resposta e de requisição são apagados pelo container.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2&gt;Repassando o Ciclo de Vida do Servlet&lt;/h2&gt;
+
+&lt;div style=&quot;text-align: center; margin: 1em&quot;&gt;
+  &lt;figure style=&quot;margin: 0px auto;&quot;&gt;
+      &lt;a href=&quot;/images/20150429/ciclo_vida_detalhado.png&quot;&gt;
+         &lt;img src=&quot;/images/20150429/ciclo_vida_detalhado.png&quot; alt=&quot;O Ciclo de Vida do Servlet em Detalhes&quot;&gt;
+      &lt;/a&gt;
+      &lt;figcaption&gt;
+          O Ciclo de Vida do Servlet em Detalhes
+      &lt;/figcaption&gt;
+  &lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Antes da classe do servlet ser criada, ela é carregada pelo container, e então é instanciada. Após a instanciação do servlet ele é iniciado através do método &lt;code&gt;init()&lt;/code&gt;, é importante frisar que o servlet é inicializado apenas uma vez e que o método &lt;code&gt;init()&lt;/code&gt; pode ser sobrescrito, após a inicialização o container chama o método &lt;code&gt;service()&lt;/code&gt; (onde a maior parte do tempo do servlet é utilizada).
+O método &lt;code&gt;service()&lt;/code&gt; não deve ser sobrescrito, para evitar comportamentos errados no servlet, a implementação padrão cria uma thread para a solicitação e identifica qual método deve ser chamado, &lt;code&gt;doGet()&lt;/code&gt; ou &lt;code&gt;doPost()&lt;/code&gt;, os quais devem ser sobrescritos para implementar o comportamento desejado. Após criação da resposta o conteiner chama o método &lt;code&gt;destroy()&lt;/code&gt; e o servlet é finalizado, esse método é chamado apenas uma vez no ciclo de vida.&lt;/p&gt;
+
+&lt;p&gt;A interface Servlet possui cinco métodos dos quais três fazem parte do ciclo de vida (init, service e destroy) e os outros dois (&lt;code&gt;getServletConfig()&lt;/code&gt; e &lt;code&gt;getServletInfo()&lt;/code&gt;) que retornam um objeto do tipo &lt;code&gt;ServletConfig&lt;/code&gt; e uma &lt;code&gt;String&lt;/code&gt; com informações sobre o servlet (como versão, autor etc) respectivamente. Os parâmetros são passados pelo deployement descriptor e preenchido no objeto &lt;code&gt;ServletConfig&lt;/code&gt; passado para o método &lt;code&gt;init()&lt;/code&gt;. Só há um objeto &lt;code&gt;ServletConfig&lt;/code&gt; por servlet e um &lt;code&gt;ServletContext&lt;/code&gt; por aplicação web.&lt;/p&gt;
+
+&lt;p&gt;Em um post futuro irei detalhar melhor o ServletContext, até a próxima!&lt;/p&gt;
+</description>
+        <pubDate>Wed, 29 Apr 2015 00:00:00 -0300</pubDate>
+        <link>http://blog.ivanqueiroz.com/2015/04/ocejwcd-6-ciclo-de-vida-do-servlet.html</link>
+        <guid isPermaLink="true">http://blog.ivanqueiroz.com/2015/04/ocejwcd-6-ciclo-de-vida-do-servlet.html</guid>
+      </item>
+    
+      <item>
+        <title>Aprendendo GO/GOLANG</title>
+        <description>&lt;p&gt;Quando ouvi falar da linguagem Go em 2009 achei muito interssante, a sintaxe proposta para a utilização de concorrência através de &lt;em&gt;goroutines&lt;/em&gt;, de &lt;em&gt;duck typing&lt;/em&gt; e &lt;em&gt;garbage colector&lt;/em&gt;, mas na época eu não fiquei interessado o suficiente para querer aprender a linguagem.&lt;/p&gt;
+
+&lt;p&gt;Alguns anos se passaram desde então e eu senti a necessidade de aprender uma nova linguagem (principalmente após ler o livro O Progamador Apaixonado) e decidi pelo Go por ser bem diferente de Java (pra me tirar da zona de conforto) e por ser compilado.&lt;/p&gt;
+
+&lt;h3&gt;Por onde começar?&lt;/h3&gt;
+
+&lt;p&gt;Uma leve pesquisada no &lt;a href=&quot;https://golang.org/&quot;&gt;site oficial&lt;/a&gt; e todas as instruções para instalar e configurar podem ser encontradas nesse &lt;a href=&quot;https://golang.org/doc/install&quot;&gt;link&lt;/a&gt;, apenas chamo atenção para a importância da configuração das varáveis de ambiente &lt;code&gt;GO_PATH&lt;/code&gt; e &lt;code&gt;GO_ROOT&lt;/code&gt; que ficam sem muito destaque.&lt;/p&gt;
+
+&lt;p&gt;No site oficial também tem um ótimo tutorial em várias línguas, dentre elas o &lt;a href=&quot;http://go-tour-br.appspot.com/welcome/1&quot;&gt;português&lt;/a&gt;, que apresenta a sintaxe básica e de forma interativa através do &lt;a href=&quot;https://play.golang.org/p/3VsQMI4Rx5&quot;&gt;Go Playground&lt;/a&gt;, uma ferramenta on-line bem simples e eficiente para execução de código Go.&lt;/p&gt;
+
+&lt;h3&gt;Ferramentas do SDK&lt;/h3&gt;
+
+&lt;p&gt;O sdk do Go vem com algumas ferramentas interessantes que demonstram a preocupação dos criadores quanto a manutenção do código e do gerenciamento de dependências, dentre elas as que achei mais importantes são:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;go fmt&lt;/strong&gt; - formata o código de acordo com o guia de estilo do Go;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;go fix&lt;/strong&gt; - reescreve o código substituido chamadas obsoletas por novas;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;go vet&lt;/strong&gt; - reporta erros em construções suspeitas da linguagem.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Existem muitas outras ferramentas na SDK a função e a sintaxe delas pode ser encontrada na &lt;a href=&quot;https://golang.org/cmd/go/&quot;&gt;documentação on-line&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3&gt;IDE&lt;/h3&gt;
+
+&lt;p&gt;Existem algumas IDE&amp;#39;s e plugins que auxiliam muito o desenvolvimento, mas decidi usar o editor de texto Atom para o aprendizado, que já vem com reconhecimento da sintaxe do Go. Indico utilizar o plugin go-plus com o Atom.&lt;/p&gt;
+
+&lt;h3&gt;Indo além do tutorial&lt;/h3&gt;
+
+&lt;p&gt;Decidi obter o livro Programando em Go de &lt;a href=&quot;http://www.casadocodigo.com.br/products/livro-google-go&quot;&gt;Caio Filipini&lt;/a&gt; publicado pela Casa do Código por ser para iniciantes na linguagem e o único em português. Além disso existem livros on-line grátis em inglês que vão além do básico que vale muito a pena indicar:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.golang-book.com/&quot;&gt;An Introduction to Programming in Go&lt;/a&gt; - apresenta uma introdução mais completa da linguagem;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://docs.google.com/file/d/0B2GBHFyTK2N8TzM4dEtIWjBJdEk/&quot;&gt;Build Web Application with Golang&lt;/a&gt; - mostra como desenvolver aplicações web com a linguagem;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://codegangsta.gitbooks.io/building-web-apps-with-go/content/&quot;&gt;Building Web Apps with Go&lt;/a&gt; - mostra alguns frameworks em Go para auxiliar o desenvolvimento web;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://jan.newmarch.name/go/&quot;&gt;Network programming with Go&lt;/a&gt; - os poderes da programação em rede do Go são mostrados nesse livro;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://leanpub.com/gocrypto/read&quot;&gt;Practical Cryptography With Go&lt;/a&gt; - criptografia em Go.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Aplicação de aprendizado&lt;/h3&gt;
+
+&lt;p&gt;Para aprender vou começar com um programa simples, uma biblioteca para utilizar a &lt;a href=&quot;https://developer.valvesoftware.com/wiki/Steam_Web_API&quot;&gt;API Web do Steam&lt;/a&gt;, que pretendo utilizar no futuro para uma ideia de aplicativo. Vou disponibilizar o código no GitHub em &lt;a href=&quot;https://github.com/ivanqueiroz/steam4go&quot;&gt;https://github.com/ivanqueiroz/steam4go&lt;/a&gt; e tentando trazer sempre dicas que eu aprenda no processo aqui para meu blog.&lt;/p&gt;
+
+&lt;p&gt;Um abraço e até a próxima!&lt;/p&gt;
+</description>
+        <pubDate>Tue, 21 Apr 2015 00:00:00 -0300</pubDate>
+        <link>http://blog.ivanqueiroz.com/2015/04/aprendendo-gogolang.html</link>
+        <guid isPermaLink="true">http://blog.ivanqueiroz.com/2015/04/aprendendo-gogolang.html</guid>
+      </item>
+    
+      <item>
+        <title>[OCEJWCD 6] - Respondendo o cliente</title>
+        <description>&lt;p&gt;Antes de escrever sobre a comunicação com o cliente HTTP, vou colocar aqui alguns benefícios da tecnologia Servlet do Java:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Os servlets são independentes de plataforma, pois são integrados na tecnologia java;&lt;/li&gt;
+&lt;li&gt;são mais leves que os processos CGI (Common Gateway Inteface), já que cada requisição não gera um novo processo no servidor;&lt;/li&gt;
+&lt;li&gt;oferecem segurança, escalabilidade e robustez;&lt;/li&gt;
+&lt;li&gt;são integrados com toda a API J2EE tirando proveito de todos os serviços disponíveis como JNDI, JTA, JAAS e RMI.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;API de Servlets&lt;/h2&gt;
+
+&lt;p&gt;A interface &lt;strong&gt;javax.servlet.http.HttpServletRequest&lt;/strong&gt; representa a requisição feita pelo cliente para o servidor e é subinterface da &lt;strong&gt;javax.servlets.ServletRequest&lt;/strong&gt;, ambas definem vários métodos importantes, dentre eles:&lt;/p&gt;
+
+&lt;h4&gt;ServletRequest&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;getParameter();&lt;/li&gt;
+&lt;li&gt;getContentLength();&lt;/li&gt;
+&lt;li&gt;getRequestDispatcher();&lt;/li&gt;
+&lt;li&gt;getServletContext();&lt;/li&gt;
+&lt;li&gt;getAttribute();&lt;/li&gt;
+&lt;li&gt;e mais...&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4&gt;HttpServletRequest&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;getHeader();&lt;/li&gt;
+&lt;li&gt;getHeaderNames();&lt;/li&gt;
+&lt;li&gt;e mais...&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Método getParameter&lt;/h3&gt;
+
+&lt;p&gt;Obtém o valor do parâmetro passado pelo formulário na requisição, recebe uma String que representa o nome do parâmetro e retorna uma String com o valor do parâmetro. Ex:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;req&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getParameter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;parametro&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;Método getHeader e getIntHeader&lt;/h3&gt;
+
+&lt;p&gt;O &lt;code&gt;getHeader(String value)&lt;/code&gt; obtém informação do cabeçalho (header) da requisição, recebe uma String com o nome do cabeçalho desejado e retorna uma String com o valor do mesmo.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;head&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;req&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getHeader&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;nome&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Já o método &lt;code&gt;getIntHeader(String value)&lt;/code&gt; retorna o valor do cabeçalho escolhido como um int ou -1 caso não seja possível retornar valor.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;req&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getIntHeader&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;value&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;Método getInputStream&lt;/h3&gt;
+
+&lt;p&gt;Retorna um &lt;strong&gt;ServletInputStream&lt;/strong&gt; que permite obter o corpo (body) da requisição como dados binários (stream).&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;n&quot;&gt;InputStream&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;is&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;req&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getInputStream&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Esse método está definido na interface ServletRequest.&lt;/p&gt;
+
+&lt;p&gt;A interface &lt;strong&gt;javax.servlet.http.HttpServletResponse&lt;/strong&gt; representa a resposta do servidor para a solicitação, sendo subinterface da &lt;strong&gt;javax.servlets.ServletResponse&lt;/strong&gt;, definindo os seguintes métodos importantes:&lt;/p&gt;
+
+&lt;h4&gt;ServletResponse&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;setContentType();&lt;/li&gt;
+&lt;li&gt;setContentLength(int Len);&lt;/li&gt;
+&lt;li&gt;getOutputStream();&lt;/li&gt;
+&lt;li&gt;getWriter();&lt;/li&gt;
+&lt;li&gt;e mais...&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4&gt;HttpServletResponse&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;addCookie();&lt;/li&gt;
+&lt;li&gt;addHeader();&lt;/li&gt;
+&lt;li&gt;encodeRedirect(URL)&lt;/li&gt;
+&lt;li&gt;setHeader()&lt;/li&gt;
+&lt;li&gt;e mais...&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Método setContentType&lt;/h3&gt;
+
+&lt;p&gt;Configura o tipo do conteúdo respondido para o cliente, seja um texto, imagem ou arquivo. No exemplo seguinte é configurada uma resposta html na codificação UTF-8:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;n&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setContentType&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;text/html; charset=UTF-8&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;Método setHeader&lt;/h3&gt;
+
+&lt;p&gt;Configura um determinado cabeçalho com um valor passado, caso o cabeçalho já exista o valor é sobrescrito. Segue exemplo:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;n&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setHeader&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Content-Language&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;es&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;Método addHeader&lt;/h3&gt;
+
+&lt;p&gt;Adiciona um cabeçalho com o valor informado na resposta, permitindo que a mesma tenha um ou mais cabeçalhos.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;n&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;addHeader&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Content-Disposition&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;inline&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;Método sendRedirect&lt;/h3&gt;
+
+&lt;p&gt;Esse método envia uma resposta de redirecionamento para o cliente utilizando  a url informada, ele aceita caminhos relativos a raiz da aplicação, caso a url tenha um &amp;quot;/&amp;quot;, ou absolutos.
+Só deve ser chamado antes da resposta não ter sido efetivada, caso contrário será lançada uma &lt;code&gt;IllegalStateException&lt;/code&gt;. No exemplo seguinte uma forma de direcionar uma consulta para o Google utilizando o sendRedirect:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getParameter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;name&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;sendRedirect&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;https://www.google.co.in/#q=&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;RequestDispatcher&lt;/h3&gt;
+
+&lt;p&gt;O RequestDispatcher redireciona a requisição para outro elemento dentro do servidor (um servlet, jsp etc). Exemplo:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;n&quot;&gt;RequestDispatcher&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;requestDispatcher&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getRequestDispatcher&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;/endereco.jsp&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Por ser realizado no lado do servidor o cliente não sabe que ocorreu o redirecionamento e a url no browser não muda.&lt;/p&gt;
+
+&lt;h3&gt;Cookie&lt;/h3&gt;
+
+&lt;p&gt;Cookies são pequenos pedaços de informação enviados pelo servlet para o browser segundo a documentação da API. Para criar um cookie basta instanciar um objeto do mesmo passando o nome e valor.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;n&quot;&gt;Cookie&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cookie&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Cookie&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;usuario&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;1234&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Com o objeto cookie criado adicioná-lo a resposta através do método addCookie.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;n&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;addCookie&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cookie&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Sem mistérios e bem simples a utilização dos Cookies pela API.&lt;/p&gt;
+
+&lt;p&gt;Por enquanto é só, próximo post será sobre o ciclo de vida dos servlets.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 13 Apr 2015 00:00:00 -0300</pubDate>
+        <link>http://blog.ivanqueiroz.com/2015/04/ocejwcd-6-respondendo-o-cliente.html</link>
+        <guid isPermaLink="true">http://blog.ivanqueiroz.com/2015/04/ocejwcd-6-respondendo-o-cliente.html</guid>
+      </item>
+    
+      <item>
+        <title>[OCEJWCD 6] - Resumo da Arquitetura Web e o Protocolo HTTP</title>
+        <description>&lt;p&gt;A arquitetura web é baseada no modelo cliente-servidor onde o cliente faz uma requisição (&lt;em&gt;request&lt;/em&gt;) para obter uma resposta (&lt;em&gt;response&lt;/em&gt;). Para esse processo é necessário que os dois lados da comunicação possuam uma forma padrão de comunicação, um protocolo, para se entenderem no ambiente heterogêneo que é a Internet.&lt;/p&gt;
+
+&lt;p&gt;O protocolo para a navegação de páginas é o &lt;strong&gt;&lt;em&gt;Hypertext Transfer Protocol&lt;/em&gt;&lt;/strong&gt; o famoso HTTP, que define um formato para as &lt;em&gt;requests&lt;/em&gt; e &lt;em&gt;responses&lt;/em&gt;, composto de um header (cabeçalho) e um body (corpo). O header possui metadados úteis sobre o pacote.&lt;/p&gt;
+
+&lt;p&gt;Utilizando a ferramenta de TCP/IP Monitor do Eclipse é possível visualizar as requests e responses:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;REQUEST&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;GET /OCEJWCD/OlaMundo HTTP/1.1
+Host: localhost:7000
+Connection: keep-alive
+Cache-Control: max-age&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;0
+Accept: text/html,application/xhtml+xml,application/xml&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;q&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;0.9,image/webp,*/*&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;q&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;0.8
+User-Agent: Mozilla/5.0 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;Macintosh&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; Intel Mac OS X 10_9_4&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; AppleWebKit/537.36 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;KHTML, like Gecko&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; Chrome/37.0.2062.94 Safari/537.36
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: pt-BR,pt&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;q&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;0.8,en-US&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;q&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;0.6,en&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;q&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;0.4,es&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;q&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;0.2&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;RESPONSE&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;HTTP/1.1 &lt;span class=&quot;m&quot;&gt;200&lt;/span&gt; OK
+Server: Apache-Coyote/1.1
+Content-Length: 0
+Date: Sun, &lt;span class=&quot;m&quot;&gt;07&lt;/span&gt; Sep &lt;span class=&quot;m&quot;&gt;2014&lt;/span&gt; 15:21:34 GMT&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Na primeira parte da certificação é necessário ter conhecimento de Servlets e os métodos do protocolo HTTP. No total são oito métodos:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;GET&lt;/strong&gt; - utilizado para retornar um recurso do servidor é o método mais simples, pode enviar dados para o servidor em forma de parâmetros limitados a 255 caracteres - método doGet() da API de Servlets;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;POST&lt;/strong&gt; - parecido com o GET é utilizado quando há uma grande quantidade de dados para ser enviado para o servidor não limitado ao tamanho de 255 caracteres - método doPost() da API de Servlets;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;HEAD&lt;/strong&gt; - retorna o header de um recurso, é como o GET sem o corpo apenas com o cabeçalho - método doHead() da API de Servlets;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;TRACE&lt;/strong&gt; - permite rastrear o que o servidor está recebendo, permitindo o diagnóstico de problemas - método doTrace() da API de Servlets;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;OPTIONS&lt;/strong&gt; - solicita os métodos HTTP que podem ser respondidos pela URL - método doOptions() da API de Servlets;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;PUT&lt;/strong&gt; - faz uma requisição para colocar os dados anexados no corpo da mensagem na URL requisitada - método doPut() da API de Servlets;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;DELETE&lt;/strong&gt; - solicita a remoção de um recurso no servidor da URL - método doDelete() da API de Servlets;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;CONNECT&lt;/strong&gt; - método HTTP para a criação de tunelamento - não existe um método correspondente na API de Servlets.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Na prática os mais utilizados são o GET e o POST.&lt;/p&gt;
+
+&lt;h2&gt;Códigos de status HTTP&lt;/h2&gt;
+
+&lt;p&gt;O HTTP é bem completo e fornece códigos de status de como a requisição foi processada pelo servidor, esses códigos são formados por três dígitos e são usados pelo lado cliente para determinar o que irá ser feito em seguida. Os códigos são divididos em cinco classes:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Informativa (1xx) - São códigos provisórios que não indicam o fim da requisição e informam um status intermediário;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Sucesso (2xx) - Indica sucesso no processamento da requisição;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Redirecionamento (3xx) - O código de redirecionamento indica que o recurso solicitado na requisição foi movido para outro lugar;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Erro de cliente (4xx) - Significa que houve erro na requisição criada pelo cliente;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Erro de Servidor (5xx) - Houve erro por parte do servidor para responder a solicitação.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Cookies&lt;/h3&gt;
+
+&lt;p&gt;São pequenos arquivos textos que são salvos no cliente para manter (persistir) configurações entre as visitas no site.&lt;/p&gt;
+
+&lt;p&gt;Um abraço e até a próxima!&lt;/p&gt;
+</description>
+        <pubDate>Sat, 20 Sep 2014 00:00:00 -0300</pubDate>
+        <link>http://blog.ivanqueiroz.com/2014/09/ocejwcd-6-resumo-da-arquitetura-web-e-o.html</link>
+        <guid isPermaLink="true">http://blog.ivanqueiroz.com/2014/09/ocejwcd-6-resumo-da-arquitetura-web-e-o.html</guid>
+      </item>
+    
+      <item>
+        <title>[OCEJWCD 6] - Iniciando Estudos</title>
+        <description>&lt;p&gt;Após procrastinar por muito tempo os estudos para a certificação (e deixar meu blog abandonado), devido ao trabalho e &amp;quot;desculpinhas&amp;quot; que sempre encontro para justificar a preguiça, decidi retomar os estudos e ao mesmo tempo movimentar meu blog.&lt;/p&gt;
+
+&lt;p&gt;Aqui irei descrever os passos que estarei fazendo, abordando os assuntos a medida que eu for estudando e quem quiser pode contribuir com comentários e críticas construtivas (por favor!).&lt;/p&gt;
+
+&lt;p&gt;Para o estudo vou utilizar o livro OCEJWCD Study Companion que um amigo meu me emprestou, e para praticar os assuntos vou utilizar o Tomcat junto com o Eclipse e/ou Netbeans postando aqui todo código produzido. Vou utilizar o Google Agenda para criar o meu plano de estudo e lembretes.&lt;/p&gt;
+
+&lt;p&gt;Um abraço e até a próxima!&lt;/p&gt;
+
+&lt;div style=&quot;text-align: center; margin: 1em&quot;&gt;
+  &lt;figure style=&quot;margin: 0px auto;&quot;&gt;
+      &lt;a href=&quot;/images/20140906/capa_ocejwcd_guia.jpeg&quot;&gt;
+         &lt;img src=&quot;/images/20140906/capa_ocejwcd_guia.jpeg&quot; alt=&quot;OCEJWCD Study Companion&quot;&gt;
+      &lt;/a&gt;
+      &lt;figcaption&gt;
+          OCEJWCD Study Companion
+      &lt;/figcaption&gt;
+  &lt;/figure&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Sat, 06 Sep 2014 00:00:00 -0300</pubDate>
+        <link>http://blog.ivanqueiroz.com/2014/09/ocejwcd-6-iniciando-estudos.html</link>
+        <guid isPermaLink="true">http://blog.ivanqueiroz.com/2014/09/ocejwcd-6-iniciando-estudos.html</guid>
+      </item>
+    
+      <item>
+        <title>Utilizando Tomcat 6 nas nuvens com o OpenShift</title>
+        <description>&lt;p&gt;Recentemente tive a vontade de colocar meu currículo on-line disponível em meu domínio principal (www.ivanqueiroz.com) e para isso tive a idéia de utilizar a plataforma Openshift da Red Hat. Para quem não conhece trata-se de uma plataforma como serviço (PaaS) de computação em nuvem, que possui suporte a várias plataformas (Java, Node.js, PHP, Python, Perl e Ruby) fornecendo a infra-estrutura  para o desenvolvimento, teste, construção e execução de aplicativos. A solução possui planos gratuitos (a utilizada nesse artigo) e pagos, para quem quer um suporte mais robusto.&lt;/p&gt;
+
+&lt;p&gt;Não é meu objetivo fazer um artigo com muitos detalhes da plataforma (até porque o site do projeto é muito rico em detalhes), e sim um artigo em que eu possa compartilhar as informações que não encontrei facilmente nas documentações do projeto.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/&quot;&gt;&lt;img src=&quot;/images/20121130/opass.png&quot; alt=&quot;Overview of Pass&quot;/&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2&gt;Iniciando&lt;/h2&gt;
+
+&lt;p&gt;O OpenShift fornece duas maneiras de manipular a configuração do ambiente, através de interface Web e via linha de comando. Aconselho utilizar o gerenciamento por linha de comando, pois é simples e completa e a parte de deploy não está disponível via browser (no caso da opção gratuita). A instalação do client de gerenciamento e a configuração inicial está muito bem detalhada para todos os principais sistemas operacionais neste &lt;a href=&quot;https://openshift.redhat.com/community/get-started&quot;&gt;link&lt;/a&gt;, e é necessário criar uma conta no site para ter acesso a plataforma.&lt;/p&gt;
+
+&lt;h2&gt;Tomcat 6 Cartridge&lt;/h2&gt;
+
+&lt;p&gt;A plataforma da Red Hat permite que na criação da infra-estrutura seja possível escolher a configuração do ambiente adicionando os chamados cartridges (cartuchos), que ao meu ver nada mais são do que módulos que adicionam funções ao ambiente montado.
+Um desses módulos é um servidor Tomcat 6, e para criar uma aplicação com utilizando-o é só digitar o seguinte comando:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;$ rhc app create jbossews-1.0&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Após executar o comando, será criado uma pasta com o nome escolhido para aplicação, gerenciado pelo GIT e com um projeto Web de exemplo com uma estrutura padrão. Se quiser utilizar a estrutura padrão é só criar os arquivos JSP e classes Java dentro dessa estrutura, mas se quiser efetuar um deploy de um arquivo WAR siga os seguintes passos:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Exclua o arquivo &lt;strong&gt;pom.xml&lt;/strong&gt; e o diretório &lt;strong&gt;src&lt;/strong&gt;;&lt;/li&gt;
+&lt;li&gt;gere o WAR em sua IDE de preferência e renomeio-o para &lt;strong&gt;ROOT.war&lt;/strong&gt; (para que a chamada ao endereço raiz de sua aplicação seja direcionada para a aplicação);&lt;/li&gt;
+&lt;li&gt;coloque o WAR na pasta webapps;&lt;/li&gt;
+&lt;li&gt;execute: &lt;strong&gt;&lt;code&gt;$ git add -A;&lt;/code&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;em seguida: &lt;strong&gt;&lt;code&gt;$ git commit -m &amp;quot;&amp;quot;&lt;/code&gt;;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;e finalize com um push para o servidor: &lt;strong&gt;&lt;code&gt;$ git push&lt;/code&gt;&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Pronto, após esses passos acesse no browser sua aplicação: &lt;strong&gt;http://nomedesuaaplicacao.rhcloud.com&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Se quiser pode alterar o endereço da aplicação para responder a um nome de domínio contratado. Pressupondo que já tenha configurado no seu provedor de DNS o redirecionamento do novo endereço para o endereço padrão, execute o seguinte comando: &lt;strong&gt;&lt;code&gt;$ rhc app add-alias -a --alias&lt;/code&gt;&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Agora sua aplicação está no ar em um servidor Tomcat 6 nas nuvens e respondendo através de um endereço próprio.&lt;/p&gt;
+
+&lt;p&gt;Abraços e até a próxima!&lt;/p&gt;
+</description>
+        <pubDate>Fri, 30 Nov 2012 00:00:00 -0300</pubDate>
+        <link>http://blog.ivanqueiroz.com/2014/09/ocejwcd-6-iniciando-estudos.html</link>
+        <guid isPermaLink="true">http://blog.ivanqueiroz.com/2014/09/ocejwcd-6-iniciando-estudos.html</guid>
+      </item>
+    
+  </channel>
+</rss>
