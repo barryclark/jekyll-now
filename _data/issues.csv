@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1290,189966523,2016-11-17 08:18:48,2016-11-17 07:49:00,Offresi materiale scolastico e ludico,,,"[""Accettato"", ""Donazioni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""Materiale scolastico e ludico"", ""data"": ""17/11/2016"", ""descrizione"": ""Offro zaini scuola per grandi e piccini - pacchi di colori per disegnare - libricini da colorare - giochini per bimbi piccoli - tutto nuovo. Invio a mie spese."", ""email"": ""antoshopping2@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": """"}","<pre><yamldata>tel: ''
+email: antoshopping2@gmail.com
+cosa: 'Materiale scolastico e ludico'
+descrizione: 'Offro zaini scuola per grandi e piccini - pacchi di colori per disegnare - libricini da colorare - giochini per bimbi piccoli - tutto nuovo. Invio a mie spese.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 17/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1289,189876069,2016-11-16 23:00:25,2016-11-16 22:58:58,#MadeWithLove: i pacchi-dono di Confindustria Ascoli Piceno con i prodotti di #Arquata,42.7723609,13.2965826,"[""Accettato"", ""acquisto solidale"", ""Bollettino"", ""Fabbisogni"", ""Facebook"", ""Sisma Ottobre""]",,,"{""cosa"": ""#MadeWithLove: Confindustria Ascoli Piceno lancia pacchi-dono con i prodotti di #Arquata"", ""data"": ""16/11/2016"", ""descrizione"": ""\""#MadeWithLove ovvero \u201cFatto con amore\u201d dai nostri produttori e \u201cFatto con amore\u201d da chi come te, vorr\u00e0 acquistare i nostri prodotti e donare il ricavato alle imprese delle zone terremotate di Arquata del Tronto, che in molti casi hanno perso tutto, ma non la voglia di creare e produrre il meglio delle prelibatezze del territorio piceno. Il Gruppo Giovani Imprenditori di Ascoli Piceno ha voluto cos\u00ec dare un segno di solidariet\u00e0 alle imprese di Arquata del Tronto: un aiuto concreto in questo momento di difficolt\u00e0!\"". Sul sito dedicato \u00e8 possibile scegliere tra vari prodotti e ordinare diverse tipologie di pacchi-dono."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Piazza Umberto I, Arquata del Tronto, AP, Marche, Italia"", ""lat"": ""42.7723609"", ""link"": ""http://www.madewithloveap.org/"", ""lon"": ""13.2965826"", ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 cosa: '#MadeWithLove: Confindustria Ascoli Piceno lancia pacchi-dono con i prodotti di #Arquata'
@@ -4858,18 +4869,6 @@ https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/593,1777057
 descrizione: 'Proseguono le verifiche di agibilità sugli edifici pubblici e privati. Ad oggi sono 114 le squadre di tecnici abilitati Aedes (Agibilità e danno nell''emergenza sismica) e di esperti impegnate nelle verifiche di agibilità post-sismica; in campo anche 48 tecnici a supporto dei Comuni per la gestione delle richieste di sopralluogo.'
 link: 'http://www.protezionecivile.gov.it/jcms/it/view_com.wp?contentId=COM59623'
 data: 19/09/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/592,177679135,2016-09-18 21:55:39,2016-09-18 21:37:29,Sostegno psicologico,41.8935085,12.4825526,"[""Accettato"", ""Donazioni"", ""Facebook"", ""Form""]",,,"{""cosa"": ""Sostegno psicologico"", ""data"": ""18/09/2016"", ""descrizione"": ""Barbara Celani, psicologa di Roma, offre sostegno psicologico gratuito a chi sia stato coinvolto direttamente o indirettamente nel terremoto del 24 agosto."", ""email"": ""info@psicologabarbaracelani.com"", ""immagine"": """", ""indirizzo"": ""Cordonata, Municipio Roma I, Roma, RM, LAZ, 00186, Italia"", ""lat"": ""41.8935085"", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1771217569812493/"", ""lon"": ""12.4825526"", ""tel"": """"}","<pre><yamldata>tel: ''
-email: 'info@psicologabarbaracelani.com'
-cosa: 'Sostegno psicologico'
-descrizione: 'Barbara Celani, psicologa di Roma, offre sostegno psicologico gratuito a chi sia stato coinvolto direttamente o indirettamente nel terremoto del 24 agosto.'
-indirizzo: 'Cordonata, Municipio Roma I, Roma, RM, LAZ, 00186, Italia'
-lat: '41.8935085'
-lon: '12.4825526'
-link: 'https://www.facebook.com/groups/1758670357733881/permalink/1771217569812493/'
-immagine: ''
-data: 18/09/2016
 </yamldata></pre>
 ",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/592,177679135,2016-09-18 21:55:39,2016-09-18 21:37:29,Sostegno psicologico,41.8935085,12.4825526,"[""Accettato"", ""Donazioni"", ""Facebook"", ""Form""]",,,"{""cosa"": ""Sostegno psicologico"", ""data"": ""18/09/2016"", ""descrizione"": ""Barbara Celani, psicologa di Roma, offre sostegno psicologico gratuito a chi sia stato coinvolto direttamente o indirettamente nel terremoto del 24 agosto."", ""email"": ""info@psicologabarbaracelani.com"", ""immagine"": """", ""indirizzo"": ""Cordonata, Municipio Roma I, Roma, RM, LAZ, 00186, Italia"", ""lat"": ""41.8935085"", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1771217569812493/"", ""lon"": ""12.4825526"", ""tel"": """"}","<pre><yamldata>tel: ''
