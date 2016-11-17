@@ -466,16 +466,17 @@ ggplot(data=selected_genes , aes(x=rate, y=expression, group=nutrient, color=nut
 <h3>Make it look nice</h3>
 <p>Getting the data accurately displayed is just the first step of plotting</p>
 <p>The default plot always needs to be cleaned up for publication/presentation</p>
+<p>loading cowplot increases text size and removes the default grey background</p>
+<p>It is also really useful for more advanced plotting later on</p>
+
+<p>Here, I'm adding and silencing features I want for the final plot</p>
+<p>I find plot features by googling something to the tune of:</p>
+<p> - change line thickness geom_line ggplot</p>
+<p> - ggplot use custom color palette</p>
+
+
 <pre class="r"><code>#custom palette
 palette &lt;- c(&quot;#0072B2&quot;,&quot;#E69F00&quot;,&quot;#009E24&quot;,&quot;#FF0000&quot;, &quot;#979797&quot;,&quot;#5530AA&quot;)
-
-# loading cowplot increases text size and removes the default grey background
-# It is also really useful for more advanced plotting later on
-
-# Here, I'm adding and silencing features I want for the final plot
-# I find plot features by googling something to the tune of:
-# change line thickness geom_line ggplot
-# ggplot use custom color palette
 
 pairs_plt &lt;- ggplot(data=selected_genes , aes(x=rate, y=expression, group=nutrient, color=nutrient)) +
      geom_line(size=1.5, alpha=0.9) +                                 # Thicker lines, and slightly transparent
