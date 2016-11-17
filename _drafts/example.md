@@ -1,0 +1,18 @@
+---
+layout: post
+title: "TESTE"
+date: 2016-11-17 13:40:21 # COLOQUE DATA E HORA NESSE MESMO FORMATO
+author: wendell # CASO NÃO TENHA PERFIL DE AUTOR CADASTRADO DEIXE O VALOR PADRÃO OU COM O NOME DO SEU PERFIL DE AUTOR
+image: '/assets/img/' # DEIXE ASSIM COMO PADRÃO
+description: 'TESTE' # PEQUENA DESCRIÇÃO SOBRE O POST - DEVE SER O MESMO DO twitter_text POR ISSO DEVE SER CURTO
+tags: # DÊ PREFERÊNCIA PARA TAGS QUE JÁ EXISTAM
+- teste
+- testando
+categories: # DÊ PREFERÊNCIA PARA CATEGORIAS QUE JÁ EXISTAM E USE APENAS UMA - EXCETO CASOS RAROS
+- teste
+twitter_text: 'TESTE' # MESMO TEXTO DA description
+---
+
+## Teste
+
+> Testando
