@@ -44,6 +44,19 @@ authors:
     Programmer e Java Web Component Developer.
     Tenho 2 anos de experiência com desenvolvimento de software voltados para web. Gosto muito de ler, e compartilhar
     conhecimento com os que estão a minha volta, e estou sempre a procura de um maior crescimento."
+  
+  vinicius:
+    name: Vinicius Oliveira da Silva
+    gravatar: e2ed81a1a0937c3cc302caec8964ae49
+    email: si.vinicius@hotmail.com
+    github: sivinicius
+    linkedin: sivinicius
+    twitter:
+    facebook: si.vinicius
+    site: http://sivinicius.github.io
+    bio: "Desenvolvedor Full Stack, Oracle Certified Java SE 8 Programmer I, graduado em Sistemas de Informação.
+    Atuei em diversos projetos onde adquirir grande conhecimento em diversas linguagens, tecnologias e frameworks.
+    Tenho foco em produtividade e qualidade de desenvolvimento de software e além de apaixonado por tecnologia tenho muito prazer em aprender e ensinar."
 
 # Build settings
 markdown: kramdown
