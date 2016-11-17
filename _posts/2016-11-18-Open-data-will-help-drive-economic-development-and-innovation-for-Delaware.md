@@ -21,4 +21,4 @@ For the small business, open data means optimization. This could mean everything
 The only limits to what can be accomplished with open data are imagination and the granularity of the data that is available.  As the amount of data that is released grows, the potential for innovation and economic development grows with it.  As a business leader, take a moment to look through Delaware’s Open Data Portal.  Look at the data available today and ask yourself, “How could my business use this information right now?”  Perhaps there is data that you would like to see on the Open Data Portal that is not yet available.  [Nominate a dataset](http://data.delaware.gov/nominate) and it will be considered for inclusion in the near future. Using open data as a community will help to drive innovative ideas and economic growth for Delaware.
 
 ---
-_The following article appeared in the Nov. 8, 2016 issue of the [Delaware Business Times](http://www.delawarebusinesstimes.com)._
+_This article appeared in the Nov. 8, 2016 issue of the [Delaware Business Times](http://www.delawarebusinesstimes.com)._
