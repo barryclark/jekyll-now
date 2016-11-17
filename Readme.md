@@ -36,8 +36,6 @@ npm i
 gulp
 ```
 
-- Caso esteja usando o **Windows** a task do **Gulp** pode dar um erro, se acontecer isso entre no arquivo `gulpfile.js`, descomente a linha `23` e comente a linha `24` para corrigir e tente novamente
-
 - Acesse `http://localhost:3000` para ver o blog executando localmente
 
 ### Enviando posts
