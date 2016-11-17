@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hiking in Yosemite Park
+title: Weekend in Yosemite Park
 header: '/images/california/yosemite.jpg'
 header-text-color: 'light'
 ---
