@@ -4,8 +4,6 @@ layout: post
 title: Open data will help drive economic development and innovation for Delaware
 ---
 
-> _The following article appeared in the Nov. 8, 2016 issue of the [Delaware Business Times](http://www.delawarebusinesstimes.com)._
-
 This past month, the State of Delaware launched its [Open Data Portal](http://data.delaware.gov) – an interactive, online repository of state issued datasets.  While this may seem to be a small step forward for the state, the Open Data Portal has the potential to be a driver for economic development and innovation.
 
 The open data movement, which traces its roots in the United States to the Freedom of Information Act of 1966, has gained substantial momentum across the country over the past decade.  Open data, as defined by Open Knowledge International, is data which “...can be freely used, modified, and shared by anyone for any purpose.” Typically, as is the case in Delaware, this implies the release of public information held by government agencies – whether local, state, or federal – in an easily accessible fashion with no restriction on its use by individuals or businesses.
@@ -21,3 +19,7 @@ Some of these innovations have come from the release of national level datasets 
 For the small business, open data means optimization. This could mean everything from optimizing delivery routes with open transportation data to optimizing the location of a new retail location by using open demographic data.  While many larger corporations have the tools and resources to gather this data on their own, small businesses often lack this ability.  Open data can help small businesses bridge the resource gap between themselves and larger corporations.
  
 The only limits to what can be accomplished with open data are imagination and the granularity of the data that is available.  As the amount of data that is released grows, the potential for innovation and economic development grows with it.  As a business leader, take a moment to look through Delaware’s Open Data Portal.  Look at the data available today and ask yourself, “How could my business use this information right now?”  Perhaps there is data that you would like to see on the Open Data Portal that is not yet available.  [Nominate a dataset](http://data.delaware.gov/nominate) and it will be considered for inclusion in the near future. Using open data as a community will help to drive innovative ideas and economic growth for Delaware.
+
+---
+_The following article appeared in the Nov. 8, 2016 issue of the [Delaware Business Times](http://www.delawarebusinesstimes.com)._
+---
