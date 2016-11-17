@@ -22,4 +22,3 @@ The only limits to what can be accomplished with open data are imagination and t
 
 ---
 _The following article appeared in the Nov. 8, 2016 issue of the [Delaware Business Times](http://www.delawarebusinesstimes.com)._
----
