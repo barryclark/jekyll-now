@@ -469,13 +469,13 @@ ggplot(data=selected_genes , aes(x=rate, y=expression, group=nutrient, color=nut
 <pre class="r"><code>#custom palette
 palette &lt;- c(&quot;#0072B2&quot;,&quot;#E69F00&quot;,&quot;#009E24&quot;,&quot;#FF0000&quot;, &quot;#979797&quot;,&quot;#5530AA&quot;)
 
-#loading cowplot increases text size and removes the default grey background
-#It is also really useful for more advanced plotting later on
+# loading cowplot increases text size and removes the default grey background
+# It is also really useful for more advanced plotting later on
 
-#Here, I'm adding and silencing features I want fir the final plot
-#I find plot features by googling something to the tune of:
-#      change line thickness geom_line ggplot
-#      ggplot use custom color palette
+# Here, I'm adding and silencing features I want for the final plot
+# I find plot features by googling something to the tune of:
+# change line thickness geom_line ggplot
+# ggplot use custom color palette
 
 pairs_plt &lt;- ggplot(data=selected_genes , aes(x=rate, y=expression, group=nutrient, color=nutrient)) +
      geom_line(size=1.5, alpha=0.9) +                                 # Thicker lines, and slightly transparent
@@ -527,19 +527,19 @@ print(negcor_genes)</code></pre>
 <pre><code>## Source: local data frame [50 x 3]
 ## Groups: gene [46]
 ## 
-##     gene  nutrient    Pearson
-##    &lt;chr&gt;     &lt;chr&gt;      &lt;dbl&gt;
-## 1  PEX22 Phosphate -0.9933471
-## 2  PFK26    Uracil -0.9958449
-## 3   PMA1  Ammonium -0.9908281
-## 4   POT1   Sulfate -0.9929707
-## 5   POX1   Sulfate -0.9913513
-## 6   PRM2 Phosphate -0.9919375
-## 7   PRX1 Phosphate -0.9980598
-## 8   PSK2  Ammonium -0.9929896
-## 9   RAD4  Ammonium -0.9957523
-## 10  RIB1   Glucose -0.9900264
-## # ... with 40 more rows</code></pre>
+####     gene  nutrient    Pearson
+####   &lt;chr&gt;     &lt;chr&gt;      &lt;dbl&gt;
+#### 1  PEX22 Phosphate -0.9933471
+#### 2  PFK26    Uracil -0.9958449
+#### 3   PMA1  Ammonium -0.9908281
+#### 4   POT1   Sulfate -0.9929707
+#### 5   POX1   Sulfate -0.9913513
+#### 6   PRM2 Phosphate -0.9919375
+#### 7   PRX1 Phosphate -0.9980598
+#### 8   PSK2  Ammonium -0.9929896
+#### 9   RAD4  Ammonium -0.9957523
+#### 10  RIB1   Glucose -0.9900264
+#### # ... with 40 more rows</code></pre>
 <pre class="r"><code>#Selecting the genes I found with high position correlation from the full dataset
 negcor &lt;- yeast %&gt;% 
      filter(gene %in% negcor_genes$gene) 
@@ -583,8 +583,8 @@ negplt_box </code></pre>
 <li>If a violin, jitter, or box plot can be used, it’s almost 100% the preferable way to present the data</li>
 <li>Once you start to look for bar plots +/- SEM in papers, you find them everywhere</li>
 </ul>
+<h3>Don't use standard error of the mean to hide variation</h3>
 <pre class="r"><code># Don't make plots like this
-# Don't use standard error of the mean to hide variation
 negplt_mean&lt;- ggplot(data=negcor , aes(x=rate, y=expression)) +
      geom_bar(stat=&quot;summary&quot;, fun.y=&quot;mean&quot;) +
      stat_summary(fun.data = mean_se, geom = &quot;errorbar&quot;) +
