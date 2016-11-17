@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1301,190175120,2016-11-17 21:57:40,2016-11-17 21:53:19,"Acquisti solidali: Marca Camerino, e-commerce per dare un aiuto ai produttori dei #MontiSibillini marchigiani colpiti dal sisma",42.9144515,13.1884697805732,"[""Accettato"", ""acquisto solidale"", ""Bollettino"", ""Fabbisogni"", ""Facebook"", ""Sisma Ottobre""]",,,"{""cosa"": ""Acquisti solidali: Marca Camerino, e-commerce per dare un aiuto ai produttori dei #MontiSibillini marchigiani colpiti dal sisma"", ""data"": ""17/11/2016"", ""descrizione"": ""Piattaforma attraverso cui \u00e8 possibile comprare online prodotti di aziende dei Monti Sibillini marchigiani danneggiate dal sisma, in particolare localizzate nell'area Camerte, una delle pi\u00f9 colpite. Per ognuna di esse, oltre ai prodotti messi in vendita, \u00e8 possibile visualizzare i contatti, le pagine social (se presenti) ed una breve \""storia aziendale\"". Oltre ad aziende alimentari e agricoltura le, sono presenti aziende informatiche, panettieri, fiorai."", ""email"": ""info@marcacamerino.net"", ""immagine"": """", ""indirizzo"": ""Creste Alte del Monte Bicco, Ussita, MC, Marche, Italia"", ""lat"": ""42.9144515"", ""link"": ""http://www.marcacamerino.net/"", ""lon"": ""13.1884697805732"", ""tel"": """"}","<pre><yamldata>tel: ''
+email: info@marcacamerino.net
+cosa: 'Acquisti solidali: Marca Camerino, e-commerce per dare un aiuto ai produttori dei #MontiSibillini marchigiani colpiti dal sisma'
+descrizione: 'Piattaforma attraverso cui è possibile comprare online prodotti di aziende dei Monti Sibillini marchigiani danneggiate dal sisma, in particolare localizzate nell''area Camerte, una delle più colpite. Per ognuna di esse, oltre ai prodotti messi in vendita, è possibile visualizzare i contatti, le pagine social (se presenti) ed una breve ""storia aziendale"". Oltre ad aziende alimentari e agricoltura le, sono presenti aziende informatiche, panettieri, fiorai.'
+indirizzo: 'Creste Alte del Monte Bicco, Ussita, MC, Marche, Italia'
+lat: '42.9144515'
+lon: '13.1884697805732'
+link: 'http://www.marcacamerino.net/'
+immagine: ''
+data: 17/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1297,190083762,2016-11-17 16:24:26,2016-11-17 15:48:04,La Protezione Civile di Castello di Godego raccoglie fondi per Castelluccio di Norcia,,,"[""Accettato"", ""Form"", ""Raccolte Fondi"", ""Sisma Ottobre""]",,,"{""data"": ""17/11/2016"", ""descrizione"": ""La Protezione Civile di Castello di Godego si mobilita per raccogliere fondi per la ricostruzione ed il sostegno ai terremotati di Castelluccio di Norcia, piccola frazione del comune di Norcia (PG) in Umbria. I volontari si occuperanno di raccogliere e di fare arrivare i fondi a destinazione per tale scopo. L\u2019attivit\u00e0 avr\u00e0 inizio il giorno 8 dicembre, con l\u2019occasione dei MERCATINI DI NATALE 2016 organizzato dalla Pro Loco di Castello di Godego. Chi volesse fare una donazione potr\u00e0 dare il prorio contributo presso lo stand del mercatino di Natale del 8 dicembre in piazza a Godego, oppure contattare la Protezione Civile di Castello di Godego attraverso il modulo di contatti online: protezionecivilecastellodigodego.it/it/contatti/ o via messaggio privato dalla pagina Facebook: facebook.com/ProtezioneCivileCastelloDiGodego"", ""link"": ""http://protezionecivilecastellodigodego.it/"", ""titolo"": ""La Protezione Civile di Castello di Godego raccoglie fondi per Castelluccio di Norcia""}","<pre><yamldata>titolo: 'La Protezione Civile di Castello di Godego raccoglie fondi per Castelluccio di Norcia'
 descrizione: 'La Protezione Civile di Castello di Godego si mobilita per raccogliere fondi per la ricostruzione ed il sostegno ai terremotati di Castelluccio di Norcia, piccola frazione del comune di Norcia (PG) in Umbria. I volontari si occuperanno di raccogliere e di fare arrivare i fondi a destinazione per tale scopo. L’attività avrà inizio il giorno 8 dicembre, con l’occasione dei MERCATINI DI NATALE 2016 organizzato dalla Pro Loco di Castello di Godego. Chi volesse fare una donazione potrà dare il prorio contributo presso lo stand del mercatino di Natale del 8 dicembre in piazza a Godego, oppure contattare la Protezione Civile di Castello di Godego attraverso il modulo di contatti online: protezionecivilecastellodigodego.it/it/contatti/ o via messaggio privato dalla pagina Facebook: facebook.com/ProtezioneCivileCastelloDiGodego'
 link: 'http://protezionecivilecastellodigodego.it/'
@@ -1039,17 +1050,6 @@ indirizzo: 'Via Enrico Fermi, Passignano sul Trasimeno, PG, UMB, 06065, Italia'
 lat: '43.194143'
 lon: '12.12925'
 link: 'http://terremotocentroitalia.info/issues/997/index.html'
-immagine: ''
-data: 06/11/2016
-</yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1146,187572200,2016-11-06 19:51:55,2016-11-06 16:31:52,Offresi spettacolo di strada per popolazioni colpite dal sisma a #Norcia e #Valnerina,,,"[""Accettato"", ""Donazioni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""SPETTACOLO \""IL LETTO VOLANTE\"""", ""data"": ""06/11/2016"", ""descrizione"": ""La Compagnia Libero Pensatore di Perugia \u00e8 disponibile a portare a Norcia & Valnerina il proprio spettacolo di teatro di strada, Il Letto Volante. Contattateci"", ""email"": ""angelo@liberopensatore.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.youtube.com/watch?v=A6tLWKDiwhw"", ""lon"": """", ""tel"": ""3480331144""}","<pre><yamldata>tel: '3480331144'
-email: angelo@liberopensatore.it
-cosa: 'SPETTACOLO ""IL LETTO VOLANTE""'
-descrizione: 'La Compagnia Libero Pensatore di Perugia è disponibile a portare a Norcia & Valnerina il proprio spettacolo di teatro di strada, Il Letto Volante. Contattateci'
-indirizzo: ''
-lat: ''
-lon: ''
-link: 'https://www.youtube.com/watch?v=A6tLWKDiwhw'
 immagine: ''
 data: 06/11/2016
 </yamldata></pre>",open
