@@ -56,4 +56,4 @@ up the Nevada Falls trail the day before was focused on the climb itself, this h
 appreciate the redwoods and rock formations that we were walking through. By the end of the hike we were satisfied with our time
 in the valley, having tried most trails, and we prepared to head home. We stopped at a vista called Inspiration Point on our way out of the park and then continued home, arriving in the evening.
 
-I really enjoyed the trip and will remember those two days at Yosemite for many more to come. 
+I really enjoyed the trip and will remember those two days at Yosemite for many more to come. To see some of our highlights from the weekend you can checkout my latest photos on [Unsplash](https://unsplash.com/@danreynolds).
