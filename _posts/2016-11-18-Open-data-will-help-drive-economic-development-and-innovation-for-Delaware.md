@@ -4,7 +4,7 @@ layout: post
 title: Open data will help drive economic development and innovation for Delaware
 ---
 
-_The following article was written by our co-founder, Ryan Harrington ([Twitter](http://www.twitter.com/rharrington31), [Linked In](http://www.linkedin.com/in/ryanmharrington)), and appeared in the Nov. 8, 2016 issue of the [Delaware Business Times](http://www.delawarebusinesstimes.com)._
+_The following article was written by our co-founder, Ryan Harrington ([Twitter](http://www.twitter.com/rharrington31), [LinkedIn](http://www.linkedin.com/in/ryanmharrington)), and appeared in the Nov. 8, 2016 issue of the [Delaware Business Times](http://www.delawarebusinesstimes.com)._
 
 This past month, the State of Delaware launched its [Open Data Portal](http://data.delaware.gov) – an interactive, online repository of state issued datasets.  While this may seem to be a small step forward for the state, the Open Data Portal has the potential to be a driver for economic development and innovation.
 
