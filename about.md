@@ -92,5 +92,7 @@ Github:  https://github.com/3gstudent
 ---
 
 <div align=center>
+
 ![Alt text](https://raw.githubusercontent.com/3gstudent/3gstudent.github.io/master/images/QRCode.png)
+
 </div>
