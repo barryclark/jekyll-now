@@ -71,7 +71,7 @@ Github:  https://github.com/3gstudent
 - Study Notes of WMI Persistence using wmic.exe
 - Study Notes Weekly No.1(Monitor WMI & ExportsToC++ & Use DiskCleanup bypass UAC)
 - Study Notes Weekly No.2(Shellcode Via JScript & VBScript)
-- Study-Notes-Weekly-No.3(Use odbcconf to load dll & Get-Exports & ETW USB Keylogger)
+- Study Notes Weekly No.3(Use odbcconf to load dll & Get-Exports & ETW USB Keylogger)
 - Study Notes Weekly No.4(Use tracker to load dll & Use csi to bypass UMCI & Execute C# from XSLT file)
 - Use MSBuild To Do More
 - Userland registry hijacking
