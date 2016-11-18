@@ -25,7 +25,7 @@
     text-align: left;
     color: #333;
     overflow: hidden;
-	background-color: white;
+    background-color: white;
    
     @include mobile {
       display: block;
@@ -37,7 +37,12 @@
     }
 	
     h3, div {
-    	margin: 0.5em;
+	font-size: 65%;
+    	margin: 1em;
+    }
+	
+    img {
+        max-height: 70%;    
     }
     
     h3 {        
