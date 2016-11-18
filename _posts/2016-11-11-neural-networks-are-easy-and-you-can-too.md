@@ -1,6 +1,6 @@
 ---
 layout: prediction_post
-published: True
+published: False
 title: A Visual Beginners Guide to Neural Networks
 ---
 <script src="/js/jquery-3.1.1.slim.min.js"></script>
