@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Study Notes Weekly No.1(Monitor WMI/ExportsToC++/Use DiskCleanup bypass UAC)
+title: Study Notes Weekly No.1(Monitor WMI & ExportsToC++ & Use DiskCleanup bypass UAC)
 ---
 
 **About:**
