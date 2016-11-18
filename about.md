@@ -71,17 +71,20 @@ Github:  https://github.com/3gstudent
 - Study Notes Weekly No.1(Monitor WMI/ExportsToC++/Use DiskCleanup bypass UAC)
 - Study Notes Weekly No.2(Shellcode Via JScript & VBScript)
 - Study-Notes-Weekly-No.3(odbcconf & Get-Exports & ETW USB Keylogger)
+- Study Notes Weekly No.4(tracker & csi & execute C# from XSLT file)
 - Use MSBuild To Do More
 - Userland registry hijacking
 - 故障诊断平台在渗透测试中的应用技巧
+- 渗透测试中的Application Compatibility Shims
 - 渗透测试中的Volume Shadow Copy
 - 隐写技巧——在PE文件的数字证书中隐藏Payload
 - 隐写技巧——PNG文件中的LSB隐写
+- 隐写技巧——利用JPEG文件格式隐藏payload
 - 隐写技巧——利用PNG文件格式隐藏Payload
 
 ---
 
 ### PowerPoint
 
-- Shell is Only the Beginning——后渗透阶段的攻防对抗(WHF2016)
+- Shell is Only the Beginning——后渗透阶段的攻防对抗( WHF2016 )
 
