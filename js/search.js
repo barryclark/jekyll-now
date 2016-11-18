@@ -1,7 +1,9 @@
 (function() {
     Set.prototype.intersection = function(setB) {
         var intersection = new Set();
-        for (var elem of setB) {
+        var elem;
+		for (var index = 0; index < setB.length; ++index) {
+			elem = setB[index];
             if (this.has(elem)) {
                 intersection.add(elem);
             }
