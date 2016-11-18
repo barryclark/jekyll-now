@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Study-Notes-Weekly-No.3(Use odbcconf to load dll & Get-Exports & ETW USB Keylogger)
+title: Study Notes Weekly No.3(Use odbcconf to load dll & Get-Exports & ETW USB Keylogger)
 ---
 
 
