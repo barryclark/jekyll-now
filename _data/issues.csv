@@ -7757,6 +7757,18 @@ email: ''
 data: 14/09/2016
 </yamldata></pre>
 ",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/279,176859035,2016-09-23 21:43:50,2016-09-14 09:30:51,Associazione culturale Illica,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Pro Terremoto Illica"", ""chi"": ""Associazione culturale Illica"", ""data"": ""14/09/2016"", ""descrizione"": ""Tutto il ricavato della raccolta dei fondi, della quale sar\u00e0 possibile avere visione e dettaglio  sul sito www.illica.org, sar\u00e0 utilizzato in pieno accordo e nel rispetto degli interventi previsti dagli Enti preposti alla ricostruzione."", ""email"": """", ""iban"": ""IT32N0760103200000071446603"", ""intestazione"": ""Associazione Culturale Illica"", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1765128903754693/"", ""postale"": """"}","<pre><yamldata>chi: 'Associazione culturale Illica'
+descrizione: 'Tutto il ricavato della raccolta dei fondi, della quale sarà possibile avere visione e dettaglio  sul sito www.illica.org, sarà utilizzato in pieno accordo e nel rispetto degli interventi previsti dagli Enti preposti alla ricostruzione.'
+intestazione: 'Associazione Culturale Illica'
+iban: IT32N0760103200000071446603
+bic: ''
+postale: ''
+causale: 'Pro Terremoto Illica'
+link: 'https://www.facebook.com/groups/1758670357733881/permalink/1765128903754693/'
+email: ''
+data: 14/09/2016
+</yamldata></pre>
+",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/278,176858693,2016-09-14 09:29:36,2016-09-14 09:29:20,Forni (Udine),,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Forni (Udine)"", ""data"": ""14/09/2016"", ""descrizione"": ""A Forni di Sotto (Udine) Amatriciana solidale l'11 settembre 2016 ore 12 in piazza del Municipio. Il ricavato sar\u00e0 devoluto a uno dei comuni colpiti dal sisma."", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""https://www.facebook.com/photo.php?fbid=10207026011384485&set=gm.1765227793744804&type=3&theater"", ""postale"": """"}","<pre><yamldata>chi: 'Forni (Udine)'
 descrizione: 'A Forni di Sotto (Udine) Amatriciana solidale l''11 settembre 2016 ore 12 in piazza del Municipio. Il ricavato sarà devoluto a uno dei comuni colpiti dal sisma.'
 intestazione: ''
