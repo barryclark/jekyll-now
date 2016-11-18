@@ -76,6 +76,8 @@ compress_html:
 links:
   - title: Home
     url: /
+  - title: Autores
+    url: /authors
   - title: Categorias
     url: /series
   - title: Tags

@@ -1,0 +1,54 @@
+---
+layout: authors
+title: "Autores"
+permalink: /authors/index.html
+image: '/assets/img/'
+description: "Encontre todos artigos separados por autor"
+---
+
+{% for authorObj in site.authors %}
+  <section class="author" itemprop="author">
+    <div class="details" itemscope itemtype="http://schema.org/Person">
+        <img itemprop="image" class="img-rounded author-list-img" src="https://www.gravatar.com/avatar/{{ authorObj[1].gravatar }}?s=110" alt="{{ authorObj[1].name }}">
+        <p class="def">Autor</p>
+        <h3 class="name">
+            <a style="border-bottom:none;"itemprop="name" href="https://br.linkedin.com/in/{{ authorObj[1].linkedin }}">{{ authorObj[1].name }}</a>
+        </h3>
+    </div>
+  </section>
+  {% assign authorPosts = site.posts | where: "author", authorObj[0] %}
+  {% assign numberOfPosts = authorPosts.size %}
+  {% if numberOfPosts > 0 %}
+    <ul class="post-list">
+      {% for post in authorPosts %}
+        <li>
+          <a href="{{ site.url }}{{ post.url }}">
+            {{ post.title }}
+            <span class="entry-date">
+              <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
+                {% assign m = post.date | date: "%-m" %}
+                {{ post.date | date: "%d" }} de
+                {% case m %}
+                  {% when '1' %}Janeiro
+                  {% when '2' %}Fevereiro
+                  {% when '3' %}Março
+                  {% when '4' %}Abril
+                  {% when '5' %}Maio
+                  {% when '6' %}Junho
+                  {% when '7' %}Julho
+                  {% when '8' %}Agosto
+                  {% when '9' %}Setembro
+                  {% when '10' %}Outubro
+                  {% when '11' %}Novembro
+                  {% when '12' %}Dezembro
+                {% endcase %}
+                de {{ post.date | date: "%Y" }}
+              </time>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p class="no-posts">Esse autor ainda não possui artigos publicados</p>
+  {% endif %}
+{% endfor %}

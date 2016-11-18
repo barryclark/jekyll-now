@@ -47,3 +47,98 @@
     .email
         text-decoration none
         color main
+
+.author-list
+    padding rem(40px) 0
+    img
+        max-width 100%
+        display block
+    p, h1, h2, h3, h4,ul,ol, .tags, iframe
+        padding 0 rem(20px)
+        margin 0 auto rem(30px)
+        mainFont(300)
+        font-size rem(18px)
+        line-height 2
+        letter-spacing 0.01rem
+        +above(cut)
+            font-size rem(20px)
+    p,li
+        color texts
+        code
+            color colorcode
+    a
+        mainFont(300)
+        color main
+        text-decoration none
+        border-bottom 2px solid main
+    iframe
+        margin-top rem(30px)
+        width 100%
+    #twitter-widget-0
+    	margin auto !important
+    h1,h2,h3,h4,h5
+        mainFont(800)
+    h1
+        font-size rem(30px)
+        line-height 1.4
+        +above(cut)
+            font-size rem(45px)
+    h2
+        font-size rem(22px)
+        line-height 1.4
+        +above(cut)
+            font-size rem(35px)
+    h3
+        font-size rem(18px)
+        line-height 1.4
+        +above(cut)
+            font-size rem(25px)
+    ul,ol
+        padding-left rem(40px)
+    ul.post-list
+        padding 0
+        +below(cut)
+            padding 0 rem(20px)
+    blockquote
+        center(rem(730px))
+        border-left rem(5px) solid main
+        padding 0 rem(30px)
+        margin rem(50px) auto
+        +below(cut)
+            width 70%
+        p
+            color rgba(0,0,0,0.6)
+            margin 0
+            +below(cut)
+                font-size rem(18px)
+                line-height 1.5
+                padding 0
+    hr
+    	center(rem(760px))
+    	border 1px solid lightGray
+    	margin 50px auto
+
+.post-list
+    width 80%
+    list-style none
+    margin rem(25px) auto
+    +below(cut)
+        padding 0 rem(20px)
+    a
+        display block
+        border-bottom 1px solid darken(lightGray,10%)
+        padding rem(10px) 0
+        text-decoration none
+        transition all .5s
+        &:hover
+            color hover
+            border-bottom 1px solid hover
+    .entry-date
+        float right
+        +below(cut)
+            display none
+
+.no-posts
+  font-size rem(20px) !important
+  font-weight bolder !important
+  text-align center
