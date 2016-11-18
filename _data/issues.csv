@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1313,190431110,2016-11-18 21:56:08,2016-11-18 21:55:31,Contatti #Mibact per segnalare danni a beni culturali nelle zone colpite dal sisma,,,"[""Accettato"", ""Bollettino"", ""Contatti"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""18/11/2016"", ""descrizione"": ""Per eventuali comunicazioni all'Unit\u00e0 di Crisi - Coordinamento Regionale (UCCR-MiBAT) e per segnalare danni a beni culturali si pu\u00f2 inviare una email all'indirizzo SR-mar.UCCR@beniculturali.it. Per aggiornamenti sulla messa in sicurezza dei beni culturali consultare la pagina dedicata sul sito del Mibact."", ""link"": ""http://www.beniculturali.it/mibac/export/MiBAC/sito-MiBAC/Contenuti/MibacUnif/Comunicati/visualizza_asset.html_919776048.html"", ""titolo"": ""Contatti #Mibact per segnalare danni a beni culturali nelle zone colpite dal sisma""}","<pre><yamldata>titolo: 'Contatti #Mibact per segnalare danni a beni culturali nelle zone colpite dal sisma'
+descrizione: 'Per eventuali comunicazioni all''Unità di Crisi - Coordinamento Regionale (UCCR-MiBAT) e per segnalare danni a beni culturali si può inviare una email all''indirizzo SR-mar.UCCR@beniculturali.it. Per aggiornamenti sulla messa in sicurezza dei beni culturali consultare la pagina dedicata sul sito del Mibact.'
+link: 'http://www.beniculturali.it/mibac/export/MiBAC/sito-MiBAC/Contenuti/MibacUnif/Comunicati/visualizza_asset.html_919776048.html'
+data: 18/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1312,190428210,2016-11-18 21:40:37,2016-11-18 21:40:12,Legambiente #Marche cerca volontari per gruppo protezione civile beni culturali,43.6170137,13.5170982,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Facebook"", ""Sisma Ottobre""]",,,"{""cosa"": ""Legambiente #Marche cerca volontari per gruppo protezione civile beni culturali"", ""data"": ""18/11/2016"", ""descrizione"": ""Legambiente Marche cerca volontari per il gruppo di protezione civile per i beni culturali che sta lavorando nelle zone colpite dal sisma per mettere in sicurezza e salvaguardare i beni culturali. \u00c8 previsto corso di formazione (il primo sar\u00e0 domenica 27 novembre a Osimo). Per ulteriori info: http://www.legambientemarche.org/progetto.php?id=132"", ""email"": ""protezionecivile@legambientemarche.org"", ""immagine"": """", ""indirizzo"": ""Piazza Camillo Benso Cavour, Cardeto, Borgo Rodi, Ancona, AN, Marche, 60122, Italia"", ""lat"": ""43.6170137"", ""link"": ""https://www.facebook.com/173662589723683/photos/a.175377952885480.1073741832.173662589723683/215266812229927/?type=3"", ""lon"": ""13.5170982"", ""tel"": """"}","<pre><yamldata>tel: ''
 email: protezionecivile@legambientemarche.org
 cosa: 'Legambiente #Marche cerca volontari per gruppo protezione civile beni culturali'
@@ -5113,18 +5118,6 @@ data: 17/09/2016
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/574,177573528,2016-10-01 18:33:40,2016-09-17 12:39:29,Rieti-Amatrice: servizio straordinario di Cotral,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""17/09/2016"", ""descrizione"": ""Cotral ha provveduto a rimodulare il servizio di trasporto pubblico nelle zone colpite dal terremoto. Ogni giorno, dal luned\u00ec al sabato, 14 corse collegano Rieti ad Amatrice. Per permettere ai passeggeri di raggiungere la zona rossa, \u00e8 stato attivato un servizio navetta che collega Amatrice con il nuovo capolinea nella frazione di Torrita attraverso San Benedetto, Ponte Romanella e Casale Nibbi, lungo un percorso di 12 chilometri con un tempo di percorrenza di circa 30 minuti. Al link gli orari."", ""link"": ""http://www.cotralspa.it/il-servizio-straordinario-nelle-zone-colpite-dal-terremoto/"", ""titolo"": ""Rieti-Amatrice: servizio straordinario di Cotral""}","<pre><yamldata>titolo: 'Rieti-Amatrice: servizio straordinario di Cotral'
 descrizione: 'Cotral ha provveduto a rimodulare il servizio di trasporto pubblico nelle zone colpite dal terremoto. Ogni giorno, dal lunedì al sabato, 14 corse collegano Rieti ad Amatrice. Per permettere ai passeggeri di raggiungere la zona rossa, è stato attivato un servizio navetta che collega Amatrice con il nuovo capolinea nella frazione di Torrita attraverso San Benedetto, Ponte Romanella e Casale Nibbi, lungo un percorso di 12 chilometri con un tempo di percorrenza di circa 30 minuti. Al link gli orari.'
 link: 'http://www.cotralspa.it/il-servizio-straordinario-nelle-zone-colpite-dal-terremoto/'
-data: 17/09/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/573,177568530,2016-09-17 12:50:57,2016-09-17 10:30:15,SOS Capricchia - adotta una frazione,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""SOS CAPRICCHIA"", ""chi"": ""SOS Capricchia - adotta una frazione"", ""data"": ""17/09/2016"", ""descrizione"": ""Dopo il terremoto di Amatrice aiutiamo una piccola comunit\u00e0 a ripartire. Voi mettete la generosit\u00e0, noi la tenacia."", ""email"": """", ""iban"": ""IT17L0569603234000002694X38"", ""intestazione"": ""Pro loco Capricchia"", ""link"": """", ""postale"": """"}","<pre><yamldata>chi: 'SOS Capricchia - adotta una frazione'
-descrizione: 'Dopo il terremoto di Amatrice aiutiamo una piccola comunità a ripartire. Voi mettete la generosità, noi la tenacia.'
-intestazione: 'Pro loco Capricchia'
-iban: IT17L0569603234000002694X38
-bic: ''
-postale: ''
-causale: 'SOS CAPRICCHIA'
-link: ''
-email: ''
 data: 17/09/2016
 </yamldata></pre>
 ",open
