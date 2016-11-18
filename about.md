@@ -58,3 +58,19 @@ Github:  https://github.com/3gstudent
 - 域渗透——Skeleton Key
 - 在远程系统上执行程序的技术整理
 - 中间人攻击利用框架bettercap测试
+
+### Recent Posts
+
+- Joomla 3.4.4-3.6.3 Account Creation &Privilege Escalation测试记录
+- Netsh persistence
+- Study Notes of WMI Persistence using wmic.exe
+- Study Notes Weekly No.1(Monitor WMI/ExportsToC++/Use DiskCleanup bypass UAC)
+- Study Notes Weekly No.2(Shellcode Via JScript & VBScript)
+- Study-Notes-Weekly-No.3(odbcconf & Get-Exports & ETW USB Keylogger)
+- Use MSBuild To Do More
+- Userland registry hijacking
+- 故障诊断平台在渗透测试中的应用技巧
+- 渗透测试中的Volume Shadow Copy
+- 隐写技巧——在PE文件的数字证书中隐藏Payload
+- 隐写技巧——PNG文件中的LSB隐写
+- 隐写技巧——利用PNG文件格式隐藏Payload
