@@ -70,6 +70,19 @@ authors:
     bio: "Apaixonado por escrever: seja em linguagem de máquina ou humana. Formado em Jornalismo e pós-graduado em Cibercultura,
     mas trabalho com desenvolvimento web desde 2015 - e amando! Meu maior desejo é nunca parar de aprender."
 
+  edson:
+    name: Edson Junior
+    gravatar: 95eef2ad27ac806bf77e5b837ddc47ec
+    email: junior.si16@gmail.com
+    github: roinuj16
+    linkedin: roinuj16
+    twitter: juniorsi16
+    facebook: Roinuj16
+    site: https://roinuj16.github.io/
+    bio: "ou desenvolvedor PHP, graduado em Sistemas de Informação e apaixonado por tecnologia, trabalho há mais de três anos como
+    desenvolvedor PHP, gosto de aprimorar e atualizar meus conhecimentos e também gosto de trocar experiência e conhecimento com
+    outras pessoas. O sucesso e a diversão que tenho no meu trabalho é imenso e mantém essa paixão ardentemente viva."
+
 # Build settings
 markdown: kramdown
 highlighter: rouge

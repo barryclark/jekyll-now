@@ -12,8 +12,31 @@ description: "Encontre todos artigos separados por autor"
         <img itemprop="image" class="img-rounded author-list-img" src="https://www.gravatar.com/avatar/{{ authorObj[1].gravatar }}?s=110" alt="{{ authorObj[1].name }}">
         <p class="def">Autor</p>
         <h3 class="name">
-            <a style="border-bottom:none;"itemprop="name" href="https://br.linkedin.com/in/{{ authorObj[1].linkedin }}">{{ authorObj[1].name }}</a>
+            <a style="border-bottom:none;" itemprop="name" href="https://br.linkedin.com/in/{{ authorObj[1].linkedin }}">{{ authorObj[1].name }}</a>
         </h3>
+        {% if authorObj[1].email %}
+          <a style="border-bottom:none;" itemprop="email" class="email" href="mailto:{{ authorObj[1].email }}">E-mail</a> -
+        {% endif %}
+
+        {% if authorObj[1].github %}
+          <a style="border-bottom:none;" itemprop="github" class="email" href="https://github.com/{{ authorObj[1].github }}">Github</a> -
+        {% endif %}
+
+        {% if authorObj[1].linkedin %}
+          <a style="border-bottom:none;" itemprop="linkedin" class="email" href="https://br.linkedin.com/in/{{ authorObj[1].linkedin }}">LinkedIn</a> -
+        {% endif %}
+
+        {% if authorObj[1].twitter %}
+          <a style="border-bottom:none;" itemprop="twitter" class="email" href="https://twitter.com/{{ authorObj[1].twitter }}">Twitter</a> -
+        {% endif %}
+
+        {% if authorObj[1].facebook %}
+          <a style="border-bottom:none;" itemprop="facebook" class="email" href="https://facebook.com/{{ authorObj[1].facebook }}">Facebook</a> -
+        {% endif %}
+
+        {% if authorObj[1].site %}
+          <a style="border-bottom:none;" itemprop="site" class="email" href="{{ authorObj[1].site }}">Site</a>
+        {% endif %}
     </div>
   </section>
   {% assign authorPosts = site.posts | where: "author", authorObj[0] %}
