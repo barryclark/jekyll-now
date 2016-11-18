@@ -40,20 +40,21 @@ Github:  https://github.com/3gstudent
 - WMI Backdoor
 - WMI Defense
 - WSC、JSRAT and WMI Backdoor
-- 中间人攻击利用框架bettercap测试
+- 导出当前域内所有用户hash的技术整理
 - 关于32位程序在64位系统下运行中需要注意的重定向问题
-- 内网渗透中的mimikatz
+- 基于WPAD的中间人攻击
 - 利用白名单绕过360实例
 - 利用白名单绕过限制的更多测试
-- 在远程系统上执行程序的技术整理
+- 浏览器利用框架BeEF测试
+- 内网渗透中的mimikatz
+- 渗透技巧——如何巧妙利用PSR监控Windows桌面
+- 渗透技巧——通过cmd上传文件的N种方法
+- 渗透技巧——Use AutoIt script to create a keylogger
 - 域渗透——Dump Clear-Text Password after KB2871997 installed
 - 域渗透——Hook PasswordChangeNotify
 - 域渗透——Pass The Hash & Pass The Key
 - 域渗透——Pass The Ticket
 - 域渗透——Security Support Provider
 - 域渗透——Skeleton Key
-- 基于WPAD的中间人攻击
-- 浏览器利用框架BeEF测试
-- 渗透技巧——如何巧妙利用PSR监控Windows桌面
-- 渗透技巧——通过cmd上传文件的N种方法
-- 渗透技巧——Use AutoIt script to create a keylogger
+- 在远程系统上执行程序的技术整理
+- 中间人攻击利用框架bettercap测试
