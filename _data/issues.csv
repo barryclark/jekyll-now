@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1318,190442236,2016-11-18 22:59:38,2016-11-18 22:59:09,"""RicostruiAmo Voceto"". Raccolta fondi associazione Amici di #Voceto - #Amatrice",,,"[""Accettato"", ""Facebook"", ""Raccolte Fondi""]",,,"{""bic"": ""ARBAIT33047"", ""causale"": ""Pro terremoto Voceto Amatrice"", ""chi"": ""\""RicostruiAmo Voceto\"". Raccolta fondi associazione Amici di #Voceto - #Amatrice"", ""data"": ""18/11/2016"", ""descrizione"": ""E' possibile contribuire alla ricostruzione di Voceto, frazione di Amatrice distrutta dal terremoto del 24 agosto, facendo una donazione all'Associazione senza fini di lucro \u00abAmici di Voceto\u00bb."", ""email"": """", ""iban"": ""IT65P0539073470000000091257"", ""intestazione"": ""Associazione Amici di Voceto"", ""link"": ""https://www.facebook.com/amicidivoceto/"", ""postale"": """"}","<pre><yamldata>chi: '""RicostruiAmo Voceto"". Raccolta fondi associazione Amici di #Voceto - #Amatrice'
+descrizione: 'E'' possibile contribuire alla ricostruzione di Voceto, frazione di Amatrice distrutta dal terremoto del 24 agosto, facendo una donazione all''Associazione senza fini di lucro «Amici di Voceto».'
+intestazione: 'Associazione Amici di Voceto'
+iban: IT65P0539073470000000091257
+bic: ARBAIT33047
+postale: ''
+causale: 'Pro terremoto Voceto Amatrice'
+link: 'https://www.facebook.com/amicidivoceto/'
+email: ''
+data: 18/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1315,190434324,2016-11-18 22:13:45,2016-11-18 22:12:29,Una biblioteca per #Visso,42.9312321,13.087449,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Facebook"", ""Sisma Ottobre""]",,,"{""cosa"": ""Una biblioteca per #Visso"", ""data"": ""18/11/2016"", ""descrizione"": ""Raccolgo l'appello lanciato da Loredana Lipperini che ha segnalato la bella idea di Silvia Sorana e Francesca Chiappa: una biblioteca per Visso. Prima itinerante, poi stabile. Se volete, inviate libri. Per bambini, per adulti. Che contengano sogni e speranza. Inviateli a KINDUSTRIA - Viale Martiri della Libert\u00e0 65B 62024 Matelica (MC). E scrivete FUTURO INFINITO sulla prima pagina. Spedire libri \u00e8 facilissimo, basta recarsi alle Poste e chiedere la spedizione Piego di libri che costa solo 1,28 euro. Se non volete spedire, potete portare i vostri libri ad Osimo presso la Libreria Il mercante di storie che si \u00e8 gentilmente offerta di fare da punto di raccolta fino al 30 novembre oppure potete darli a me! Ilaria Silvestrini."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Piazza Martiri Vissani, Visso, MC, Marche, 62039, Italia"", ""lat"": ""42.9312321"", ""link"": ""https://www.facebook.com/ilaria.silvestrini.9/posts/10154809394770087"", ""lon"": ""13.087449"", ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 cosa: 'Una biblioteca per #Visso'
@@ -6844,18 +6855,6 @@ email: ''
 data: 15/09/2016
 </yamldata></pre>
 ",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/372,177125095,2016-09-15 09:08:00,2016-09-15 09:06:07,Materiale di Prima necessità,41.85849,12.47025,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Materiale di Prima necessit\u00e0"", ""data"": ""15/09/2016"", ""descrizione"": ""Servono urgentemente soprattutto: - scatoloni di cartone e buste rigide -acqua -materiale di primo soccorso (cerotti, acqua ossigenata, ecc) -pannolini -carta igienica -rotoloni carta assorbente -bagnoschiuma -shampoo -prodotti ipoallergenici -assorbenti -salviette igieniche -spazzolini -dentifrici -coperte -vestiti uomo, donna, bambin*"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Acrobax (ex_cinodromo, via della vasca navale 6 \u2013 Ponte Marconi) Roma"", ""lat"": 41.85849, ""link"": """", ""lon"": 12.47025, ""tel"": """"}","<pre><yamldata>tel: ''
-email: ''
-cosa: 'Materiale di Prima necessità'
-descrizione: 'Servono urgentemente soprattutto: - scatoloni di cartone e buste rigide -acqua -materiale di primo soccorso (cerotti, acqua ossigenata, ecc) -pannolini -carta igienica -rotoloni carta assorbente -bagnoschiuma -shampoo -prodotti ipoallergenici -assorbenti -salviette igieniche -spazzolini -dentifrici -coperte -vestiti uomo, donna, bambin*'
-indirizzo: 'Acrobax (ex_cinodromo, via della vasca navale 6 – Ponte Marconi) Roma'
-lat: 41.85849
-lon: 12.47025
-link: ''
-immagine: ''
-data: 15/09/2016
-</yamldata></pre>
-",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/372,177125095,2016-09-15 09:08:00,2016-09-15 09:06:07,Materiale di Prima necessità,41.85849,12.47025,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Materiale di Prima necessit\u00e0"", ""data"": ""15/09/2016"", ""descrizione"": ""Servono urgentemente soprattutto: - scatoloni di cartone e buste rigide -acqua -materiale di primo soccorso (cerotti, acqua ossigenata, ecc) -pannolini -carta igienica -rotoloni carta assorbente -bagnoschiuma -shampoo -prodotti ipoallergenici -assorbenti -salviette igieniche -spazzolini -dentifrici -coperte -vestiti uomo, donna, bambin*"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Acrobax (ex_cinodromo, via della vasca navale 6 \u2013 Ponte Marconi) Roma"", ""lat"": 41.85849, ""link"": """", ""lon"": 12.47025, ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 cosa: 'Materiale di Prima necessità'
