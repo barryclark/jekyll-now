@@ -54,3 +54,7 @@
   logo: /img/icone/11-comunicolpiti.png
   map: false
   link: mappe
+- name: BUFALE
+  logo: /img/icone/bufala-tci-1.png
+  map: false
+  link: bufale
