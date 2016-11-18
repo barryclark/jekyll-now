@@ -4,6 +4,7 @@ title: "Review - Looting Atlantis"
 description: "Looting Atlantis is easy to learn but holds a bit of deeper critical thinking inside."
 category: review
 featured: lootingatlantis.jpg
+amazonterm: "Looting Atlantis"
 tags: [games, review, looting atlantis, shoot again games]
 author: Rob Kalajian
 ---
