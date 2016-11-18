@@ -9,7 +9,7 @@
         return intersection;
     }
     function displaySearchResults(results, store, usedLabels) {
-        var searchResults = document.getElementById('search-results');
+        var searchResults = $('#search-results');
         if (results.length) { // Are there any results?
             var appendString = '';
 
@@ -67,14 +67,14 @@
             }
             appendString += '</div>';
 
-            searchResults.innerHTML = appendString;
+            searchResults.html(appendString);
         } else {
-            searchResults.innerHTML = '<li>Nessuna segnalazione trovata</li>';
+            searchResults.html('<li>Nessuna segnalazione trovata</li>');
         }
     }
 
     function displayAllResults(searchLabel,store) {
-        var searchResults = document.getElementById('search-results');
+        var searchResults = $('#search-results');
         if (Object.keys(store).length) { // Are there any results?
             var appendString = '';
 
@@ -134,9 +134,9 @@
             }
             appendString += '</div>';
 
-            searchResults.innerHTML = appendString;
+            searchResults.html(appendString);
         } else {
-            searchResults.innerHTML = '<li>Nessuna segnalazione trovata</li>';
+            /searchResults.html('<li>Nessuna segnalazione trovata</li>');
         }
     }
 
@@ -180,7 +180,7 @@
         } else {
             displayAllResults(searchLabel, window.store,usedLabels); // We'll write this in the next section 
         }
-        //NProgress.done();
+        NProgress.done();
     }
 
     var usedLabels= new Set([ "Alloggi", "acquisto solidale", "Bollettino", "Bufale", "Contatti", "Donazioni", "Fabbisogni", "Notizie Utili", "Raccolte Fondi",]);
@@ -210,7 +210,9 @@
     });
 
     setTimeout( function() { 
-        loadIssue(searchTerm,searchLabel,usedLabels); // We'll write this in the next section 
+            if (window.store) {
+                    loadIssue(searchTerm,searchLabel,usedLabels); // We'll write this in the next section 
+            }
     }, 0 );
 })();
 
