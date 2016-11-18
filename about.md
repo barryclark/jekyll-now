@@ -69,10 +69,10 @@ Github:  https://github.com/3gstudent
 - Joomla 3.4.4-3.6.3 Account Creation &Privilege Escalation测试记录
 - Netsh persistence
 - Study Notes of WMI Persistence using wmic.exe
-- Study Notes Weekly No.1(Monitor WMI/ExportsToC++/Use DiskCleanup bypass UAC)
+- Study Notes Weekly No.1(Monitor WMI & ExportsToC++ & Use DiskCleanup bypass UAC)
 - Study Notes Weekly No.2(Shellcode Via JScript & VBScript)
 - Study-Notes-Weekly-No.3(Use odbcconf to load dll & Get-Exports & ETW USB Keylogger)
-- Study Notes Weekly No.4(tracker & csi & execute C# from XSLT file)
+- Study Notes Weekly No.4(Use tracker to load dll & Use csi to bypass UMCI & Execute C# from XSLT file)
 - Use MSBuild To Do More
 - Userland registry hijacking
 - 故障诊断平台在渗透测试中的应用技巧
