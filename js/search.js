@@ -136,7 +136,7 @@
 
             searchResults.html(appendString);
         } else {
-            /searchResults.html('<li>Nessuna segnalazione trovata</li>');
+            searchResults.html('<li>Nessuna segnalazione trovata</li>');
         }
     }
 
