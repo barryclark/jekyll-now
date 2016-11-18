@@ -11,6 +11,7 @@
         return intersection;
     }
 
+
     function displayDoc(item) {
         appendString = "";
         appendString += '<a href="' + item.url + '" class="list-group-item">';
@@ -34,7 +35,8 @@
         appendString += '</div>';
         appendString += '<div class="panel-footer">';
         itemLabels = new Set(item.label.split(','));
-        appendString += Array.from(itemLabels.intersection(usedLabels).values());
+        //appendString += Array.from(itemLabels.intersection(usedLabels).values());
+        appendString += item.label;
         appendString += '</div>';
         appendString += '</div>';
         appendString += '</a>';
