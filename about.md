@@ -61,6 +61,13 @@ Github:  https://github.com/3gstudent
 - 在远程系统上执行程序的技术整理
 - 中间人攻击利用框架bettercap测试
 
+
+
+---
+
+### PowerPoint
+
+- Shell is Only the Beginning——后渗透阶段的攻防对抗(WHF2016)
 ---
 
 ### Recent Posts
