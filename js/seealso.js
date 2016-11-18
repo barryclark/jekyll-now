@@ -5,9 +5,18 @@ function addSeeAlsos(posts) {
 		post = posts[i];
 		
 		var text = "<a href='" + post.url + "'><div class='related-post'>";
+		
+		if(typeof post.image !== 'undefined') {
+		   text = text + "<div><img src='" + post.image + "' /></div>";
+	   	}
+		
 		text = text + "<h3>" + post.title + "</h3>";
 		text = text + "<div class='date'>" + post.date + "</div>";
-		text = text + '<div class="excerpt">' + post.excerpt + "</div>";
+		
+		if(typeof post.image == 'undefined') {
+			text = text + '<div class="excerpt">' + post.excerpt + "</div>";
+		}
+		
 		text = text + "</div></a>";
 
 		$("#see-also").append(text);
