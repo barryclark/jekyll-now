@@ -5441,6 +5441,17 @@ immagine: ''
 data: 16/09/2016
 </yamldata></pre>
 ",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/532,177472819,2016-09-22 15:45:52,2016-09-16 16:58:11,"Poppi, AR - Albergo ""La Foresta""",43.7948641,11.8783932,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""ALBERGO \""LA FORESTA\"" Via Nazionale 13, Badia Prataglia"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via Sassopiano, Centro Montano Sant'Antonio, Poppi, AR, Tuscany, Italia"", ""lat"": ""43.7948641"", ""link"": """", ""lon"": ""11.8783932"", ""tel"": ""0575559009""}","<pre><yamldata>tel: '0575559009'
+email: ''
+descrizione: 'ALBERGO ""LA FORESTA"" Via Nazionale 13, Badia Prataglia'
+indirizzo: 'Via Sassopiano, Centro Montano Sant''Antonio, Poppi, AR, Tuscany, Italia'
+lat: '43.7948641'
+lon: '11.8783932'
+link: ''
+immagine: ''
+data: 16/09/2016
+</yamldata></pre>
+",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/531,177472364,2016-09-22 15:47:10,2016-09-16 16:55:44,"Martinsicuro, TE - Agri-campeggio ""Punto Verde""",42.8509874,13.9215523,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""AGRICAMPEGGIO \""PUNTO VERDE\"" di MARTINSICURO (se avete una tenda, un camper o altro per campeggio)  Via F. de Pinedo 39, Villa Rosa di Martinsicuro (TE)"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Martinsicuro, TE, Abruzzo, 64014, Italia"", ""lat"": ""42.8509874"", ""link"": """", ""lon"": ""13.9215523"", ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 descrizione: 'AGRICAMPEGGIO ""PUNTO VERDE"" di MARTINSICURO (se avete una tenda, un camper o altro per campeggio)  Via F. de Pinedo 39, Villa Rosa di Martinsicuro (TE)'
