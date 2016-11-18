@@ -58,6 +58,18 @@ authors:
     Atuei em diversos projetos onde adquiri grande conhecimento em diversas linguagens, tecnologias e frameworks.
     Tenho foco em produtividade e qualidade de desenvolvimento de software e além de apaixonado por tecnologia tenho muito prazer em aprender e ensinar."
 
+  matepaiva:
+    name: Mate Paiva
+    gravatar: 950673885841cd5d1c2dea7186a98730
+    email: mmccpp@gmail.com
+    github: matepaiva
+    linkedin: matepaiva
+    twitter:
+    facebook: matheusjor
+    site: http://matepaiva.com
+    bio: "Apaixonado por escrever: seja em linguagem de máquina ou humana. Formado em Jornalismo e pós-graduado em Cibercultura,
+    mas trabalho com desenvolvimento web desde 2015 - e amando! Meu maior desejo é nunca parar de aprender."
+
 # Build settings
 markdown: kramdown
 highlighter: rouge
