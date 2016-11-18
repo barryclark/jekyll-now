@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1319,190446516,2016-11-18 23:29:49,2016-11-18 23:29:16,Viaggiatore nel tempo che prevede i terremoti,,,"[""Accettato"", ""Bufale""]",,,"{""data"": ""18/11/2016"", ""descrizione"": ""\u201cLa Verit\u00e0\u201d dedica una pagina intera a tal Aleksander Trofimov, \""viaggiatore nel tempo\"" che prevede i terremoti ed \u00e8 in contatto con gli alieni."", ""link"": ""http://attivissimo.blogspot.it/2016/11/la-verita-pubblica-unintervista-un.html"", ""titolo"": ""Viaggiatore nel tempo che prevede i terremoti""}","<pre><yamldata>titolo: 'Viaggiatore nel tempo che prevede i terremoti'
+descrizione: '“La Verità” dedica una pagina intera a tal Aleksander Trofimov, ""viaggiatore nel tempo"" che prevede i terremoti ed è in contatto con gli alieni.'
+link: 'http://attivissimo.blogspot.it/2016/11/la-verita-pubblica-unintervista-un.html'
+data: 18/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1318,190442236,2016-11-18 22:59:38,2016-11-18 22:59:09,"""RicostruiAmo Voceto"". Raccolta fondi associazione Amici di #Voceto - #Amatrice",,,"[""Accettato"", ""Facebook"", ""Raccolte Fondi""]",,,"{""bic"": ""ARBAIT33047"", ""causale"": ""Pro terremoto Voceto Amatrice"", ""chi"": ""\""RicostruiAmo Voceto\"". Raccolta fondi associazione Amici di #Voceto - #Amatrice"", ""data"": ""18/11/2016"", ""descrizione"": ""E' possibile contribuire alla ricostruzione di Voceto, frazione di Amatrice distrutta dal terremoto del 24 agosto, facendo una donazione all'Associazione senza fini di lucro \u00abAmici di Voceto\u00bb."", ""email"": """", ""iban"": ""IT65P0539073470000000091257"", ""intestazione"": ""Associazione Amici di Voceto"", ""link"": ""https://www.facebook.com/amicidivoceto/"", ""postale"": """"}","<pre><yamldata>chi: '""RicostruiAmo Voceto"". Raccolta fondi associazione Amici di #Voceto - #Amatrice'
 descrizione: 'E'' possibile contribuire alla ricostruzione di Voceto, frazione di Amatrice distrutta dal terremoto del 24 agosto, facendo una donazione all''Associazione senza fini di lucro «Amici di Voceto».'
 intestazione: 'Associazione Amici di Voceto'
@@ -8089,18 +8094,6 @@ bic: ''
 postale: ''
 causale: ''
 link: 'http://www.parmigianoreggiano.it/comunicazione/rinascere_solidarieta_popolazioni_colpite_centro_italia.aspx'
-email: ''
-data: 14/09/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/255,176853376,2016-09-14 09:15:57,2016-09-14 09:04:42,Consiglio regionale del Piemonte,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Pro sisma Italia centrale"", ""chi"": ""Consiglio regionale del Piemonte"", ""data"": ""14/09/2016"", ""descrizione"": ""L\u2019Assemblea legislativa piemontese ha attivato un conto corrente postale per rendere possibile un gesto concreto di solidariet\u00e0 a favore della popolazione dell\u2019Italia centrale colpita dal forte sisma dei giorni scorsi."", ""email"": """", ""iban"": ""IT 47 Z07601 01000 001034162014"", ""intestazione"": ""Consiglio regionale del Piemonte - pro sisma Italia centrale servizio tesoreria."", ""link"": ""http://www.cr.piemonte.it/web/comunicati-stampa/comunicati-stampa-2016/419-agosto-2016/5805-un-conto-corrente-pro-terremotati"", ""postale"": """"}","<pre><yamldata>chi: 'Consiglio regionale del Piemonte'
-descrizione: 'L’Assemblea legislativa piemontese ha attivato un conto corrente postale per rendere possibile un gesto concreto di solidarietà a favore della popolazione dell’Italia centrale colpita dal forte sisma dei giorni scorsi.'
-intestazione: 'Consiglio regionale del Piemonte - pro sisma Italia centrale servizio tesoreria.'
-iban: 'IT 47 Z07601 01000 001034162014'
-bic: ''
-postale: ''
-causale: 'Pro sisma Italia centrale'
-link: 'http://www.cr.piemonte.it/web/comunicati-stampa/comunicati-stampa-2016/419-agosto-2016/5805-un-conto-corrente-pro-terremotati'
 email: ''
 data: 14/09/2016
 </yamldata></pre>
