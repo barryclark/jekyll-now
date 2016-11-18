@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1307,190368567,2016-11-18 17:13:44,2016-11-18 16:56:06,Container magazzino,,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""Container magazzino"", ""data"": ""18/11/2016"", ""descrizione"": ""Cerco container magazzino di medie dimensioni da collocare nel giardino della casa di Amatrice che si trova nella zona rossa"", ""email"": ""forliniernesto@libero.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3385856935""}","<pre><yamldata>tel: '3385856935'
+email: forliniernesto@libero.it
+cosa: 'Container magazzino'
+descrizione: 'Cerco container magazzino di medie dimensioni da collocare nel giardino della casa di Amatrice che si trova nella zona rossa'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 18/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1306,190343242,2016-11-18 15:50:41,2016-11-18 15:16:08,"Acquisti solidali: RicostruiAmo Natale, i cesti solidali del comitato Ricostruiamo #Saletta",,,"[""Accettato"", ""acquisto solidale"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""18/11/2016"", ""descrizione"": ""Presentiamo le proposte del Comitato Ricostruiamo Saletta per i vostri cesti solidali. Non perdete l'occasione di aiutare le aziende colpite dal terremoto e degustare prodotti di altissima qualit\u00e0. Per info e prenotazioni scrivete a ricostruiamonatale@gmail.com, oppure sulla pagina facebook RicostruiAmo Natale. Grazie!"", ""link"": ""https://www.facebook.com/regalodinatalesolidale/?ref=aymt_homepage_panel"", ""titolo"": ""RicostruiAmo Natale. Un aiuto concreto per le aziende del Centro Italia.""}","<pre><yamldata>titolo: 'RicostruiAmo Natale. Un aiuto concreto per le aziende del Centro Italia.'
 descrizione: 'Presentiamo le proposte del Comitato Ricostruiamo Saletta per i vostri cesti solidali. Non perdete l''occasione di aiutare le aziende colpite dal terremoto e degustare prodotti di altissima qualità. Per info e prenotazioni scrivete a ricostruiamonatale@gmail.com, oppure sulla pagina facebook RicostruiAmo Natale. Grazie!'
 link: 'https://www.facebook.com/regalodinatalesolidale/?ref=aymt_homepage_panel'
