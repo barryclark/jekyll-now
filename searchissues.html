@@ -1,25 +1,12 @@
 ---
-layout: search
+layout: page
 title: Ricerca
+subtitle: Qui puoi vedere i risultati di una ricerca fatta nelle nostre segnalazioni
 ---
-
-<title>{{ page.title }}</title>
-<div class="intro-header no-img">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="page-heading">
-                    <h1>{{ page.title }}</h1>
-                    <h2 class="page-subheading">Qui puoi vedere i risultati di una ricerca fatta nelle nostre segnalazioni</h2>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
 <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12">
-        <form class="form-inline global-search" role="form" action="/searchissues" method="get">
+        <form class="form-inline" role="form" action="/searchissues" method="get">
             <div class="form-group">
                 <label for="search-box">Cosa cerchi?</label>
                 <input type="text" class="form-control" id="search-box" name="query" placeholder="">
@@ -46,12 +33,15 @@ title: Ricerca
     </div>
 </div>
 
-<hr class="col-lg-12"/>
 
 <div class="row">
-<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12">
-<div id="search-results"></div>
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12">
+        <h2>Risultati</h2>
+    </div>
 </div>
+<div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12" id="search-results">
+    </div>
 </div>
 
 <script>
@@ -81,6 +71,7 @@ window.store["{{site.url}}/issues/{{member.number}}"]={
     {% endfor %}
 
 </script>
+<script src="//code.jquery.com/jquery-1.12.3.js"></script>
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/elasticlunr/0.9.5/elasticlunr.min.js"></script>
 <script type="text/javascript" src="../js/lunr.stemmer.support.min.js"></script>
 <script type="text/javascript" src="../js/lunr.it.min.js"></script>
