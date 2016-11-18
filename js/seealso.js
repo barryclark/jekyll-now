@@ -6,6 +6,7 @@ function addSeeAlsos(posts) {
 		
 		var text = "<a href='" + post.url + "'><div class='related-post'>";
 		text = text + "<h3>" + post.title + "</h3>";
+		text = text + "<div class='date'>" + post.date + "</div>;
 		text = text + '<div class="excerpt">' + post.excerpt + "</div>";
 		text = text + "</div></a>";
 
