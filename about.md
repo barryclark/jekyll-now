@@ -3,7 +3,6 @@ layout: page
 title: About
 permalink: /about/
 ---
-![Alt text](https://raw.githubusercontent.com/3gstudent/3gstudent.github.io/master/images/QRCode.png)
 
 Security Research
 
@@ -90,3 +89,6 @@ Github:  https://github.com/3gstudent
 
 - Shell is Only the Beginning——后渗透阶段的攻防对抗( WHF2016 )
 
+---
+
+![Alt text](https://raw.githubusercontent.com/3gstudent/3gstudent.github.io/master/images/QRCode.png)
