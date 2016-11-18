@@ -9,35 +9,35 @@
         return intersection;
     }
 
-    function displayDoc(key, item) {
-            appendString = "";
-            appendString += '<a href="' + item.url + '" class="list-group-item">';
-            appendString += '<div class="panel panel-default">';
-            appendString += '<div class="panel-heading">';
-            if (item.state != 'open') {
-                    appendString += '<strike>';
-            }
-            appendString += '<h4>' + item.title + '</h4>';
-            if (item.state != 'open') {
-                    appendString += '</strike>';
-            }
-            appendString += '</div>';
-            appendString += '<div class="panel-body">';
+    function displayDoc(item) {
+        appendString = "";
+        appendString += '<a href="' + item.url + '" class="list-group-item">';
+        appendString += '<div class="panel panel-default">';
+        appendString += '<div class="panel-heading">';
+        if (item.state != 'open') {
+            appendString += '<strike>';
+        }
+        appendString += '<h4>' + item.title + '</h4>';
+        if (item.state != 'open') {
+            appendString += '</strike>';
+        }
+        appendString += '</div>';
+        appendString += '<div class="panel-body">';
 
-            appendString += '<small>';
-            appendString += '<p class="list-group-item-text">' + item.content.substring(0, 250) + '...</p>'
-            appendString += '<p class="list-group-item-text">' + item.date + '</p>'
-            appendString += '</small>';
+        appendString += '<small>';
+        appendString += '<p class="list-group-item-text">' + item.content.substring(0, 250) + '...</p>'
+        appendString += '<p class="list-group-item-text">' + item.date + '</p>'
+        appendString += '</small>';
 
-            appendString += '</div>';
-            appendString += '<div class="panel-footer">';
-            itemLabels = new Set(item.label.split(','));
-            appendString += Array.from(itemLabels.intersection(usedLabels).values());
-            appendString += '</div>';
-            appendString += '</div>';
-            appendString += '</a>';
+        appendString += '</div>';
+        appendString += '<div class="panel-footer">';
+        itemLabels = new Set(item.label.split(','));
+        appendString += Array.from(itemLabels.intersection(usedLabels).values());
+        appendString += '</div>';
+        appendString += '</div>';
+        appendString += '</a>';
 
-            return appendString;
+        return appendString;
     }
 
     function displaySearchResults(results, store, usedLabels) {
@@ -49,7 +49,7 @@
             for (var i = 0; i < results.length; i++) {  // Iterate over the results
                 var item = store[results[i].ref];
                 if (item.state == "open") {
-                    appendString += displayDoc(i, item);
+                    appendString += displayDoc(item);
                 }
             }
             appendString += '</div>';
@@ -58,7 +58,7 @@
             for (var i = 0; i < results.length; i++) {  // Iterate over the results
                 var item = store[results[i].ref];
                 if (item.state != "open") {
-                    appendString += displayDoc(i, item);
+                    appendString += displayDoc(item);
                 }
             }
             appendString += '</div>';
@@ -75,23 +75,25 @@
             var appendString = '';
 
             appendString += '<div class="panel-group">';
-            for (var item of Object.values(store)) {  // Iterate over the results
+            $.each(store,function(index,item) {
                 if (!searchLabel || $.inArray(searchLabel,item.label.toLowerCase().split(","))>=0) {
                     if (item.state == "open") {
-                            appendString += displayDoc(null,item);
+                        appendString += displayDoc(item);
                     }
                 }
             }
+            )
             appendString += '</div>';
 
             appendString += '<div class="panel-group">';
-            for (var item of Object.values(store)) {  // Iterate over the results
+            $.each(store,function(index,item) {
                 if (!searchLabel || $.inArray(searchLabel,item.label.toLowerCase().split(","))>=0) {
                     if (item.state != "open") {
-                            appendString += displayDoc(null,item);
+                        appendString += displayDoc(item);
                     }
                 }
             }
+            )
             appendString += '</div>';
 
             searchResults.html(appendString);
