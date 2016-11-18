@@ -35,7 +35,7 @@ Github:  https://github.com/3gstudent
 - Use bitsadmin to maintain persistence and bypass Autoruns
 - Use Bots of Telegram as a C2 server
 - Use SCT to Bypass Application Whitelisting Protection
-- WinRAR(5.21)-0day漏洞-始末分析
+- WinRAR(5.21)0day漏洞始末分析
 - WMI Attacks
 - WMI Backdoor
 - WMI Defense
