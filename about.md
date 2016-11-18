@@ -56,6 +56,7 @@ Github:  https://github.com/3gstudent
 - 域渗透——Pass The Ticket
 - 域渗透——Security Support Provider
 - 域渗透——Skeleton Key
+- 域渗透——EFS文件解密
 - 在远程系统上执行程序的技术整理
 - 中间人攻击利用框架bettercap测试
 
