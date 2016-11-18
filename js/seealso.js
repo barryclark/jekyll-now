@@ -7,7 +7,7 @@ function addSeeAlsos(posts) {
 		var text = "<a href='" + post.url + "'><div class='related-post'>";
 		
 		if(typeof post.image !== 'undefined') {
-		   text = text + "<div><img src='" + post.image + "' /></div>";
+		   text = text + "<img src='" + post.image + "' />";
 	   	}
 		
 		text = text + "<div class='date'>" + post.date + "</div>";		
