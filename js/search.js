@@ -1,13 +1,6 @@
 (function() {
     Set.prototype.intersection = function(setB) {
-        var intersection = new Set();
-        var elem;
-		for (var index = 0; index < setB.length; ++index) {
-			elem = setB[index];
-            if (this.has(elem)) {
-                intersection.add(elem);
-            }
-        }
+        var intersection = new Set([...this].filter(x => setB.has(x)));
         return intersection;
     }
 
@@ -34,7 +27,13 @@
         appendString += '</div>';
         appendString += '<div class="panel-footer">';
         itemLabels = new Set(item.label.split(','));
-        appendString += Array.from(itemLabels.intersection(usedLabels).values());
+        itemLabels = itemLabels.intersection(usedLabels);
+
+        printLabels = [];
+        itemLabels.forEach(function(value) {
+            printLabels.push(value);
+        });
+        appendString += printLabels.join('|');
         appendString += '</div>';
         appendString += '</div>';
         appendString += '</a>';
