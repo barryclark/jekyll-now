@@ -52,6 +52,7 @@ Github:  https://github.com/3gstudent
 - 渗透技巧——Use AutoIt script to create a keylogger
 - 域渗透——Dump Clear-Text Password after KB2871997 installed
 - 域渗透——Hook PasswordChangeNotify
+- 域渗透——Local Administrator Password Solution
 - 域渗透——Pass The Hash & Pass The Key
 - 域渗透——Pass The Ticket
 - 域渗透——Security Support Provider
