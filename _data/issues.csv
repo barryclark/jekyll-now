@@ -1,4 +1,20 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1309,190371098,2016-11-18 17:18:45,2016-11-18 17:06:46,Entro dicembre 2000 container a #Norcia #Camerino #SanGinesio #Caldarola #Palmirano #Amatrice,,,"[""Accettato"", ""Bollettino"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""18/11/2016"", ""descrizione"": ""(AGENPARL, 18 nov 2016) Entro dicembre una prima parte di container sar\u00e0 sistemata nei 6 comuni terremotati del centro Italia che ne Hanna fatto richiesta. E\u2019 stata aggiudicata la procedura bandita da Consip lo scorso 12 novembre per il noleggio dei container, comprensivo di trasporto, montaggio e rimozione. La prima fornitura fornir\u00e0 assistenza a 2000 persone nei campi attrezzati. I comuni che ne hanno fatto richiesta sono Norcia, Camerino, San Ginesio, Caldarola, Palmiano, Amatrice, per una popolazione di 1800 persone."", ""link"": ""www.agenparl.com/terremoto-entro-dicembre-container-2000/"", ""titolo"": ""Entro dicembre 2000 container a #Norcia #Camerino #SanGinesio #Caldarola #Palmirano #Amatrice""}","<pre><yamldata>titolo: 'Entro dicembre 2000 container a #Norcia #Camerino #SanGinesio #Caldarola #Palmirano #Amatrice'
+descrizione: '(AGENPARL, 18 nov 2016) Entro dicembre una prima parte di container sarà sistemata nei 6 comuni terremotati del centro Italia che ne Hanna fatto richiesta. E’ stata aggiudicata la procedura bandita da Consip lo scorso 12 novembre per il noleggio dei container, comprensivo di trasporto, montaggio e rimozione. La prima fornitura fornirà assistenza a 2000 persone nei campi attrezzati. I comuni che ne hanno fatto richiesta sono Norcia, Camerino, San Ginesio, Caldarola, Palmiano, Amatrice, per una popolazione di 1800 persone.'
+link: www.agenparl.com/terremoto-entro-dicembre-container-2000/
+data: 18/11/2016
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1308,190370580,2016-11-18 17:18:08,2016-11-18 17:04:30,Cercasi lavatrice a #Cascia,42.7256264,13.0399312,"[""Accettato"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""lavatrice"", ""data"": ""18/11/2016"", ""descrizione"": ""Salve, mi chiamo Renata Di Nicola ed abito a Cascia. Dopo il Terremoto ho casa inagibile con mia madre di 88 anni a mio carico. Avrei bisogno se possibile di una lavatrice. Grazie in anticipo."", ""email"": ""renata.dinicola@gmail.com"", ""immagine"": """", ""indirizzo"": ""Strada provinciale di Cascia, Cascia, PG, UMB, 06043, Italia"", ""lat"": ""42.7256264"", ""link"": """", ""lon"": ""13.0399312"", ""tel"": ""3392543708""}","<pre><yamldata>tel: '3392543708'
+email: renata.dinicola@gmail.com
+cosa: lavatrice
+descrizione: 'Salve, mi chiamo Renata Di Nicola ed abito a Cascia. Dopo il Terremoto ho casa inagibile con mia madre di 88 anni a mio carico. Avrei bisogno se possibile di una lavatrice. Grazie in anticipo.'
+indirizzo: 'Strada provinciale di Cascia, Cascia, PG, UMB, 06043, Italia'
+lat: '42.7256264'
+lon: '13.0399312'
+link: ''
+immagine: ''
+data: 18/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1307,190368567,2016-11-18 17:16:05,2016-11-18 16:56:06,Cercasi ad #Amatrice container magazzino,42.6280156,13.292479100000037,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""Container magazzino"", ""data"": ""18/11/2016"", ""descrizione"": ""Cerco container magazzino di medie dimensioni da collocare nel giardino della casa di Amatrice che si trova nella zona rossa"", ""email"": ""forliniernesto@libero.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": ""42.6280156"", ""link"": """", ""lon"": ""13.292479100000037"", ""tel"": ""3385856935""}","<pre><yamldata>tel: '3385856935'
 email: forliniernesto@libero.it
 cosa: 'Container magazzino'
@@ -2063,17 +2079,6 @@ indirizzo: ''
 lat: ''
 lon: ''
 link: 'https://www.facebook.com/groups/1758670357733881/permalink/1792788464322070/'
-immagine: ''
-data: 31/10/2016
-</yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1005,186372154,2016-11-02 21:09:34,2016-10-31 19:16:48,Beni di prima necessità - Porto Recanati,43.4350815,13.6630083,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""Beni di prima necessit\u00e0 - Porto Recanati"", ""data"": ""31/10/2016"", ""descrizione"": ""CAMPING BELLAMARE Porto Recanati: i cittadini di Ussita sono stati tutti trasferiti qui. Hanno bisogno di tutto: Alimentari a lunga scadenza (anche succhi di frutta, merendine), Prodotti per il bagno, Vestiti anche leggeri, Gonne, Biancheria per uomo/donna, Scarpe adulti e scarpe bambini, Giochi per bambini. Rivolgersi a Frontignano BikePark o portarle direttamente."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via Manin, Porto Recanati, MC, Marche, 62017, Italia"", ""lat"": ""43.4350815"", ""link"": ""https://www.facebook.com/frontignano.bikepark/posts/1813500948865652"", ""lon"": ""13.6630083"", ""tel"": ""335 565 1639""}","<pre><yamldata>tel: '335 565 1639'
-email: ''
-cosa: 'Beni di prima necessità - Porto Recanati'
-descrizione: 'CAMPING BELLAMARE Porto Recanati: i cittadini di Ussita sono stati tutti trasferiti qui. Hanno bisogno di tutto: Alimentari a lunga scadenza (anche succhi di frutta, merendine), Prodotti per il bagno, Vestiti anche leggeri, Gonne, Biancheria per uomo/donna, Scarpe adulti e scarpe bambini, Giochi per bambini. Rivolgersi a Frontignano BikePark o portarle direttamente.'
-indirizzo: 'Via Manin, Porto Recanati, MC, Marche, 62017, Italia'
-lat: '43.4350815'
-lon: '13.6630083'
-link: 'https://www.facebook.com/frontignano.bikepark/posts/1813500948865652'
 immagine: ''
 data: 31/10/2016
 </yamldata></pre>",open
