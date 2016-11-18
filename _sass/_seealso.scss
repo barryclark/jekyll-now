@@ -35,10 +35,12 @@
       margin-left: auto;
       margin-right: auto;
     }
+	
+    h3, div {
+    	margin: 0.5em;
+    }
     
-    h3 {
-        margin: 0em 0 15px;
-        
+    h3 {        
         @include mobile {
             text-align: center;
         }
