@@ -91,5 +91,5 @@ Github:  https://github.com/3gstudent
 
 ---
 
-![](https://raw.githubusercontent.com/3gstudent/3gstudent.github.io/master/images/QRCode.png)
+![](https://raw.githubusercontent.com/3gstudent/3gstudent.github.io/master/images/QRCode.png "about")
 
