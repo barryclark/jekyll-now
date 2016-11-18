@@ -4852,6 +4852,14 @@ lon: '13.296992'
 data: 19/09/2016
 </yamldata></pre>
 ",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/606,177830762,2016-09-19 19:13:35,2016-09-19 16:23:55,Bar Ciccio punto ristoro campo,42.77466,13.296992,"[""Accettato"", ""Telegram""]",,http://i.imgur.com/2aUk4Cb.jpg,"{""data"": ""19/09/2016"", ""descrizione"": ""Bar Ciccio punto ristoro campo di Borgo ad Arquata del Tronto"", ""immagine"": ""http://i.imgur.com/2aUk4Cb.jpg"", ""lat"": ""42.77466"", ""lon"": ""13.296992"", ""telegram_user"": ""Sfreggio2s""}","<pre><yamldata>telegram_user: Sfreggio2s
+descrizione: 'Bar Ciccio punto ristoro campo di Borgo ad Arquata del Tronto'
+immagine: 'http://i.imgur.com/2aUk4Cb.jpg'
+lat: '42.77466'
+lon: '13.296992'
+data: 19/09/2016
+</yamldata></pre>
+",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/604,177816786,2016-09-23 23:01:21,2016-09-19 15:28:33,"Capricchia, RI - Servono 16 metri cubi di sabbia lavata grossolana",41.836563,12.598515,"[""Accettato"", ""Fabbisogni"", ""Telegram""]",,,"{""data"": ""19/09/2016"", ""descrizione"": ""Tommaso da Capricchia, frazione di Amatrice, segnala che qui servirebbero 16 metri cubi di sabbia lavata grossolana. Per qualsiasi segnalazione utile contattare il numero 3408131341."", ""immagine"": """", ""lat"": ""41.836563"", ""lon"": ""12.598515"", ""telegram_user"": """"}","<pre><yamldata>telegram_user: ''
 descrizione: 'Tommaso da Capricchia, frazione di Amatrice, segnala che qui servirebbero 16 metri cubi di sabbia lavata grossolana. Per qualsiasi segnalazione utile contattare il numero 3408131341.'
 immagine: ''
