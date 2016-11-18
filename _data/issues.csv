@@ -6856,6 +6856,18 @@ immagine: ''
 data: 15/09/2016
 </yamldata></pre>
 ",closed
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/372,177125095,2016-09-15 09:08:00,2016-09-15 09:06:07,Materiale di Prima necessità,41.85849,12.47025,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Materiale di Prima necessit\u00e0"", ""data"": ""15/09/2016"", ""descrizione"": ""Servono urgentemente soprattutto: - scatoloni di cartone e buste rigide -acqua -materiale di primo soccorso (cerotti, acqua ossigenata, ecc) -pannolini -carta igienica -rotoloni carta assorbente -bagnoschiuma -shampoo -prodotti ipoallergenici -assorbenti -salviette igieniche -spazzolini -dentifrici -coperte -vestiti uomo, donna, bambin*"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Acrobax (ex_cinodromo, via della vasca navale 6 \u2013 Ponte Marconi) Roma"", ""lat"": 41.85849, ""link"": """", ""lon"": 12.47025, ""tel"": """"}","<pre><yamldata>tel: ''
+email: ''
+cosa: 'Materiale di Prima necessità'
+descrizione: 'Servono urgentemente soprattutto: - scatoloni di cartone e buste rigide -acqua -materiale di primo soccorso (cerotti, acqua ossigenata, ecc) -pannolini -carta igienica -rotoloni carta assorbente -bagnoschiuma -shampoo -prodotti ipoallergenici -assorbenti -salviette igieniche -spazzolini -dentifrici -coperte -vestiti uomo, donna, bambin*'
+indirizzo: 'Acrobax (ex_cinodromo, via della vasca navale 6 – Ponte Marconi) Roma'
+lat: 41.85849
+lon: 12.47025
+link: ''
+immagine: ''
+data: 15/09/2016
+</yamldata></pre>
+",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/371,177124660,2016-09-23 21:50:55,2016-09-15 09:03:45,Centro di raccolta di beni di prima necessità Firenze,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Centro di raccolta di beni di prima necessit\u00e0 Firenze"", ""data"": ""15/09/2016"", ""descrizione"": ""Acqua, prodotti per igiene personale, vestiti, abiti per bambini, scarpe da ginnastica, calzini e biancheria, coperte e pannolini. Impianto Sportivo Padovani Viale P. Paoli, 23 \u2013 Zona Campo di Marte"", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": """", ""postale"": """"}","<pre><yamldata>chi: 'Centro di raccolta di beni di prima necessità Firenze'
 descrizione: 'Acqua, prodotti per igiene personale, vestiti, abiti per bambini, scarpe da ginnastica, calzini e biancheria, coperte e pannolini. Impianto Sportivo Padovani Viale P. Paoli, 23 – Zona Campo di Marte'
 intestazione: ''
