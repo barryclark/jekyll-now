@@ -1998,17 +1998,17 @@ link: ''
 immagine: ''
 data: 01/11/2016
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1031,186577440,2016-11-01 17:57:39,2016-11-01 16:20:37,#Caldarola: cercasi camper per una settimana per una famiglia con casa inagibile,,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",Milestone(number=28),,"{""cosa"": ""Camper"", ""data"": ""01/11/2016"", ""descrizione"": ""Cercasi camper per una settimana per una famiglia di caldarola che ha la casa inagibile..."", ""email"": ""merca2290@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3285321797""}","<pre><yamldata>tel: '3285321797'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1031,186577440,2016-11-19 22:45:41,2016-11-01 16:20:37,#Caldarola: cercasi camper per una settimana per una famiglia con casa inagibile,,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",Milestone(number=28),,"{""cosa"": ""Camper"", ""data"": ""01/11/2016"", ""descrizione"": ""Cercasi camper per una settimana per una famiglia di Caldarola che ha la casa inagibile..."", ""email"": ""merca2290@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3285321797""}","<pre><yamldata>tel: '3285321797'
 email: merca2290@gmail.com
 cosa: Camper
-descrizione: 'Cercasi camper per una settimana per una famiglia di caldarola che ha la casa inagibile...'
+descrizione: 'Cercasi camper per una settimana per una famiglia di Caldarola che ha la casa inagibile...'
 indirizzo: ''
 lat: ''
 lon: ''
 link: ''
 immagine: ''
 data: 01/11/2016
-</yamldata></pre>",open
+</yamldata></pre>",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1030,186566676,2016-11-07 21:22:49,2016-11-01 15:40:58,"Acquisti solidali: I Love #Norcia, nasce il consorzio salva #Valnerina",,,"[""Accettato"", ""acquisto solidale"", ""Form"", ""Notizie Utili"", ""Sisma Ottobre"", ""Twitter""]",,,"{""data"": ""01/11/2016"", ""descrizione"": ""Imprenditori, commercianti, agricoltori, gi\u00e0 riunitisi in un consorzio, stanno pensando a come poter realizzare un prodotto alimentare innovativo tipico della Valnerina, da proporre sul mercato mondiale mondiale con il brand \""I Love Norcia\"". La gastronomia \u00e8 infatti uno dei cuori pulsanti di queste zone, attrazione e meta di migliaia di turisti da ogni parte del mondo. Ma, soprattutto \u00e8 tanta la voglia di restare qui. Tra le idee per rilanciare Norcia, anche quella di poter realizzare una scuola di alta formazione dedicata al turismo."", ""link"": ""http://www.perugiatoday.it/cronaca/terremoto-i-love-norcia-brand-prodotti-tipici-creazione-consorzio.html"", ""titolo"": ""I Love Norcia: nasce il consorzio salva-Valnerina""}","<pre><yamldata>titolo: 'I Love Norcia: nasce il consorzio salva-Valnerina'
 descrizione: 'Imprenditori, commercianti, agricoltori, già riunitisi in un consorzio, stanno pensando a come poter realizzare un prodotto alimentare innovativo tipico della Valnerina, da proporre sul mercato mondiale mondiale con il brand ""I Love Norcia"". La gastronomia è infatti uno dei cuori pulsanti di queste zone, attrazione e meta di migliaia di turisti da ogni parte del mondo. Ma, soprattutto è tanta la voglia di restare qui. Tra le idee per rilanciare Norcia, anche quella di poter realizzare una scuola di alta formazione dedicata al turismo.'
 link: 'http://www.perugiatoday.it/cronaca/terremoto-i-love-norcia-brand-prodotti-tipici-creazione-consorzio.html'
