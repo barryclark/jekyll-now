@@ -8084,6 +8084,18 @@ email: ''
 data: 14/09/2016
 </yamldata></pre>
 ",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/258,176853889,2016-09-14 09:16:06,2016-09-14 09:07:06,Croce Rossa per l'estero,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": ""BPPIITRRXXX"", ""causale"": """", ""chi"": ""Croce Rossa per l'estero"", ""data"": ""14/09/2016"", ""descrizione"": ""Puoi donare dall\u2019estero per sostenere le persone colpite dal #terremoto attraverso iban Croce Rossa"", ""email"": """", ""iban"": ""IT38R0760103000000000900050"", ""intestazione"": ""Poste Italiane con Croce Rossa Italiana - Sisma del 24 agosto 2016"", ""link"": ""https://twitter.com/ItalyMFA/status/769155609547735040"", ""postale"": ""900050""}","<pre><yamldata>chi: 'Croce Rossa per l''estero'
+descrizione: 'Puoi donare dall’estero per sostenere le persone colpite dal #terremoto attraverso iban Croce Rossa'
+intestazione: 'Poste Italiane con Croce Rossa Italiana - Sisma del 24 agosto 2016'
+iban: IT38R0760103000000000900050
+bic: BPPIITRRXXX
+postale: '900050'
+causale: ''
+link: 'https://twitter.com/ItalyMFA/status/769155609547735040'
+email: ''
+data: 14/09/2016
+</yamldata></pre>
+",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/257,176853743,2016-09-14 09:15:49,2016-09-14 09:06:25,Disaster Tech Lab,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Disaster Tech Lab"", ""data"": ""14/09/2016"", ""descrizione"": ""Una rete internet per Amatrice, crowdfunding avviato da Disaster Tech Lab."", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""https://www.gofundme.com/internet4amatrice"", ""postale"": """"}","<pre><yamldata>chi: 'Disaster Tech Lab'
 descrizione: 'Una rete internet per Amatrice, crowdfunding avviato da Disaster Tech Lab.'
 intestazione: ''
