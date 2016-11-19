@@ -1,6 +1,6 @@
 ---
 layout: prediction_post
-published: False
+published: True
 title: A Visual Beginners Guide to Neural Networks
 ---
 <script src="/js/jquery-3.1.1.slim.min.js"></script>
@@ -72,12 +72,13 @@ That's quite a bit of yellow. Yellow is bad. Yellow is error. We want to shrink 
 <div class="one_variable">
 
 
-Area (sq ft) (x) | Price ($1000) (y_) | Prediction (y) | y_ - y | (y_ - y)²
+Area (sq ft) (x) | Price ($1000) (<span class="y_">y_</span>) | Prediction (<span class="y">y</span>) | <span class="y_">y_</span> - <span class="y">y</span> | (<span class="y_">y_</span> - <span class="y">y</span>)²
 --- |  --- | --- | --- | ---
 2,104 | 399.9 | 385  | 14 | 196
 1,600 | 329.9 | 292  | 37 | 1,369
 2,400 | 369   | 439  | -70 | 4,900
-| | | <span class="total"> Total:</span> |<b>6,465</b>
+| | | <span class="total"> Total:</span> |6,465
+| | | <span class="total"> Average:</span> |<b>2,155</b>
 
 
 </div>
@@ -167,9 +168,63 @@ How about you take a crack at training our toy neural network? Minimize the loss
 
 
 
-<script>
 
-</script>
+## Automation
+Congratulations on manually training your first neural network! Let's look at how to automate this training process. Below is another example with one additional button. This button uses an algorithm called "Gradient Descent" to try and take a step towards the correct weight and bias values that minimize the loss function.
+
+
+<div id="training-one-gd-chart" />
+
+<table id="training-one-gd">
+    <tr>
+        <td colspan="3">
+            <input type="button" value="GD Step" id="gradient-descent-button" />
+            <input type="button" value="GD 10 Steps " id="gradient-descent-10-button" />
+            <input type="button" value="GD 100 Steps " id="gradient-descent-100-button" />
+            <input type="button" value="GD 100 Steps " id="gradient-descent-converge-button" />
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Error
+        </td>
+        <td colspan="2">
+            <span id="error-value" ></span>
+        </td>
+
+    </tr>
+
+    <tr>
+        <td class="error-cell" colspan="3">
+            <span id="error-value-message"></span>&nbsp;
+        </td>
+
+    </tr>
+    <tr>
+        <td>
+            Weight
+        </td>
+        <td>
+            <input id="weightSlider" type="range" min="0" max="4" step="0.001">
+        </td>
+        <td class="slider-value">
+            <span id="weight">0</span>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Bias
+        </td>
+        <td>
+            <input id="biasSlider" type="range" min="-12.7" max="4" step="0.01">
+        </td>
+        <td class="slider-value">
+            <span id="bias">0</span>
+        </td>
+    </tr>
+</table>
+
+
 
 
 
@@ -215,7 +270,9 @@ We now have to find two weights (one for each input) and one bias to create our 
 Calculating Y looks like this:
 [figure]
 
-But how do we find w1 and w2? This is a little trickier. How much does having an extra bathroom change
+But how do we find w1 and w2? This is a little trickier than when we only had to worry about one weight value. How much does having an extra bathroom change how we predict the value of a home?
+
+
 
 
 <script type="text/javascript" src="/js/simple_nn.js"></script>

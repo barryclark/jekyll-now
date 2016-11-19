@@ -140,7 +140,7 @@ td.slider-value #bias {
 
 
 td span#error-value {
-  color: #c8a300;
+  color: $darkYellow;
   font-weight: bold;
 }
 
@@ -150,7 +150,7 @@ td.error-cell{
 }
 
 #error-value-message{
-  color:#30a2da;
+  color:$lightBlue;
   font-weight: bold;
 }
 
@@ -171,51 +171,57 @@ td.error-cell{
 }
 
 .prediction .dot{
-  fill:#30a2da;
+  fill:$lightBlue;
 }
 
 .prediction .line{
-  stroke: #EC008C;
+  stroke: $pink;
   stroke-width: 3;
 }
 
 .prediction .error-line{
-  stroke: #F8CA00;
+  stroke: $yellow;
   stroke-width: 3;
 
 }
 
 .prediction .prediction-dot{
-  fill: #EC008C;
+  fill: $pink;
 }
 
+
+.prediction .y_{  color: $lightBlue;  }
+.prediction .y {  color: $pink;  }
+
+.prediction .one_variable td:nth-child(4), td:nth-child(5) {
+  color: $darkYellow;
+}
 
 .prediction .one_variable td:nth-child(2) {
-  color: #31A2DA;
+  color: $lightBlue;
 }
 .prediction .one_variable td:nth-child(3) {
-  color: #EC008C;
+  color: $pink;
 }
 .prediction .one_variable td:nth-child(4), td:nth-child(5) {
-  color: #F8CA00;
+  color: $darkYellow;
  }
 
 
 .prediction .two_variables td:nth-child(3) {
-  color: #31A2DA;
+  color: $lightBlue;
 }
 .prediction .two_variables td:nth-child(4) {
-  color: #EC008C;
+  color: $pink;
 }
 .prediction .two_variables td:nth-child(5), td:nth-child(6) {
-  color: #F8CA00;
+  color: $yellow;
 }
 
 
 
 .prediction .total{
   color:$gray;
-  font-weight: bold;
 }
 
 
