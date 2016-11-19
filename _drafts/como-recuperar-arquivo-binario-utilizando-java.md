@@ -1,115 +1,95 @@
 ---
 layout: post
-title: "Enviando arquivo de uma página html para uma servlet"
-date: 2016-11-17 12:00:00
+title: "Como trabalhar com arquivos binários utilizando Java"
+date: 2016-11-19 12:00:00
 author: mcqueide
 image: '/assets/img/'
-description: 'Aprenda como enviar arquivos de um formúlario html para uma servlet'
+description: 'Aprenda manipular arquivos binarios com Java'
 tags:
 - java
 - servlet
 - io
 categories:
 - Java IO
-twitter_text: 'Aprenda como enviar arquivos de um formúlario html para uma servlet'
+twitter_text: 'Aprenda manipular arquivos binarios com Java'
 ---
 
 # Introdução
+Para maioria dos desenvolvedores Java, é uma dor de cabeça só de pensar que será necessário fazer uma operação de entrada e saída de dados, principalmente quando estamos trabalhando com arquivo binário. Esse material tem objetivo ser um guia para facilitar essas operações.
 
-Na maioria dos sites modernos, temos a necessidade de obter algum tipo de informação dada pelo usuário através de um formulário, na maior parte dos casos, essas captações de dados são bem simples. Podemos simplesmente utilizar objeto *request* para obtê-los, ```request.getParameter("nome_parametro")```, e esse método nos devolve uma string com o valor passado pelo usuário através do formulário ou como parâmetro de uma url inserida manualmente no navegador.
+# Então como fazer?
 
-Porém a casos que não são tão simples, e quando temos que receber um arquivo, por exemplo uma foto que será utilizada no perfil deste usuário? O nosso *getParameter* não nos ajudará, pois ele devolve uma string.
+## Leitura e escrita binária
 
-# Como receber arquivos no servidor
+Para esse processo iremos utilizar de duas classes abstratas, InputStream e OutputStream, e também utilizaremos de uma de suas classes concretas, FileInputStream e FileOutputStream, essas classes são classes para trabalhar com arquivos binários, senão for o caso podemos utilizar de classes mais alto nível que manipulam texto.
 
-Nesse material, é utilizado um servidor java web, como o tomcat, e uma servlet bem simples para capturar o arquivo e mostrá-lo para usuário, ou então apenas redirecionar para uma nova página informando que o arquivo foi recebido.
+A seguir temos um exemplo onde realizamos o processo de leitura de um arquivo em disco e escrevemos ele num arquivo de saída, assim replicando seu conteúdo.
 
-Vamos começar pelo nosso html que contém um formulário bem simples.
-
-{% highlight html %}
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Upload arquivo</title>
-</head>
-<body>
-	<form action="upload" enctype="multipart/form-data" method="post">
-		<p>Enviar Arquivo:
-			<input type="file" name="arquivo" />
-		</p>
-		<p>
-			<input type="checkbox" name="inspecionar" value="yes" /> Gostaria de visualizar o arquivo?
-		</p>
-		<p>
-			<input type="submit" value="Enviar" />
-		</p>
-	</form>
-</body>
-</html>
-{% endhighlight %}
-
-Perceba que temos um atributo especial nessa tag *form*, ```enctype="multipart/form-data"```, o atributo *enctype* informa que também será enviado arquivo por esse formulário. O primeiro input é o nosso input file, com ele o usuário irá escolher o arquivo que ele deseja enviar. O segundo input é um checkbox para o servlet saber se deve analisar esse arquivo ou não.
 
 {% highlight java %}
-@WebServlet("/upload")
-@MultipartConfig(fileSizeThreshold=1000000,maxRequestSize=10000000L)
-public class Upload extends HttpServlet{
+InputStream inputStream = new FileInputStream("in.txt");
+OutputStream outputStream = new FileOutputStream("out.txt");
 
-	private static final long serialVersionUID = 1L;
+byte[] buffer = new byte[1024];
+int numBytesDentroBuffer = 0;
 
-	public static String getFileName(Part p){
-		String h = p.getHeader("content-disposition");
-		String[] sections = h.split("\\s*;\\s*");
-		for(String s:sections){
-			if(s.startsWith("filename=")){
-				return s.substring(9).replace("\"", "");
-			}
-		}
-		return null;
-	}
+while((numBytesDentroBuffer = inputStream.read(buffer))!= -1){
+	outputStream.write(buffer,0,numBytesDentroBuffer);
+}
 
-	@Override
-	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		Part p = null;
-		try{
-			p = req.getPart("arquivo");
-		}catch(IllegalStateException ise){
-			resp.sendError(HttpServletResponse.SC_REQUEST_ENTITY_TOO_LARGE);
-			return;
-		}
+inputStream.close();
+outputStream.close();
+{% endhighlight %}
 
-		if(p==null){
-			resp.sendError(HttpServletResponse.SC_BAD_REQUEST,"Expected file1 part");
-			return;
-		}
+Na linha ```InputStream inputStream = new FileInputStream("in.txt");``` criamos um *inputStream* para o arquivo *in.txt* para realizarmos sua leitura. Já na próxima linha ```OutputStream outputStream = new FileOutputStream("out.txt");``` criamos um *outputStream* para a gravação do arquivo.
 
-		String mimeType = p.getContentType();
-		long fileSize = p.getSize();
-		String originalFileName = Upload.getFileName(p);
+O segredo se encontra nas próximas linhas, ```while((numBytesDentroBuffer = inputStream.read(buffer))!= -1)```, nessa linha o método *inputStream.read(buffer)* lê pedaço do arquivo e armazena dentro do array *buffer* e retorna a quantidade de bytes lidos que são atribuídos a variável *numBytesDentroBuffer*, isso se repete enquanto o arquivo não é totalmente lido, quando isso acontece é retornado o valor -1.
 
-		if("yes".equals(req.getParameter("inspecionar"))){
-			InputStream is = p.getInputStream();
-			ServletOutputStream outputStream = resp.getOutputStream();
-			byte[] buffer = new byte[1024];
-			int bytes;
-			while((bytes=is.read(buffer))!=-1){
-				outputStream.write(buffer, 0, bytes);
-			}
+Dentro do *while* temos o processo de escrita dos buffer lidos, o método ```outputStream.write(buffer,0,numBytesDentroBuffer);``` como se vê ele recebe 3 parâmetros, o primeiro paramêtro é o array com o conteúdo lido durante o laço de repetição, o segundo é de onde será iniciada a escriva com o conteúdo do array, o offset. Já o terceiro argumento contém a quantidade de bytes para serem escrito no outputStream durante a interação do *while*.
 
-			is.close();
-			return;
-		}else{
-			p.delete();
-			resp.sendRedirect("envio_ok.html");
-		}
-	}
+As demais linhas são apenas para fecharem os streams abertos, já que são recursos caros para continuarem abertos se nenhuma utilidade.
+
+Assim como falado anteriormente as classes InputStream e OutputStream tem outras implementações. Exemplos delas são ByteArrayInputStream utilizada para trabalhar diretamente com bytes, temos FileInputStream para arquivos e ObjectInputStream para objetos serializados.
+
+## Leitura e escrita de textos
+
+Anteriormente realizamos o processo de leitura e escrita manipulando byte a byte. Porém temos opções de classes melhores para facilitar nossa vida quando se trata da manipulação de textos.
+
+Para isso utilizaremos da classes BufferedReader, que por sua vez necessita receber um objeto Reader como argumento de seu construtor.
+
+{% highlight java %}
+File file = new File("in.txt");
+FileReader fileReader = new FileReader(file);
+BufferedReader bufferedReader = new BufferedReader(fileReader);
+
+String texto;
+while((texto = bufferedReader.readLine())!= null){
+	System.out.println(texto);
 }
 {% endhighlight %}
 
-Do lado da nossa servlet temos a declaração dela e definição de qual endereço ela irá atender pela anotação ```@WebServlet("/upload")```, até o momento nada especial, é apenas uma servlet comum. Para essa servlet capturar arquivos enviados pelo usuário faremos uso da anotação  ```@MultipartConfig(fileSizeThreshold=1000000,maxRequestSize=10000000L)```. Nessa anotação estamos determinando o tamanho máximo do arquivo enviado através do atributo *fileSizeThreshold* com um valor de 10MB, e o tamanho máximo do request.
+No trecho ```while((texto = bufferedReader.readLine())!= null){``` o *bufferedReader* realiza a leitura de uma linha se houver a retorna para nossa variável texto que é impressa na saída do terminal logo em seguida, e esse laço será repetido até quando não houver mais linhas para serem lidas, tendo assim o retorno de null dado pelo *bufferedReader.readLine()*.
 
-Para receber o request do cliente devemos sobrescrever  o método doPost, já que o nosso form está sendo enviado através do método post. Agora temos que ter acesso ao arquivo que o usuário enviou, e alcançamos isso com ```req.getPart("arquivo");```. Ele nos devolve um objeto Part, cujo podemos obter o stream deste arquivo através do ```p.getInputStream();```. A partir daí podemos fazer o que bem quisermos, no exemplo foi apenas realizado a leitura do arquivo e o mesmo foi escrito na resposta de volta para o navegador, caso ele selecione o inspecionar, caso contrário ele é apenas redirecionado para outra página que o informa do sucesso do envio.
+No processo de escrita temos a classe BufferedWriter, que recebe um Writer como parâmetro em seu construtor.
 
-Apesar do nosso objeto Part possuir um método *getName()*, ele não devolve o nome do arquivo em si, apenas o nome que foi atribuido no input file, no caso *arquivo*. Por isso temos a presença de um método para capturar o nome desse arquivo que foi enviado pelo usuário, e ele se encontra no header do nosso part file. Nós conseguimos obter ele pela chamada ao método ```p.getHeader("content-disposition");```, porém isso retorna conjunto de informações que não serão analizadas, já que estamos interessado apenas no nome do arquivo, ```if(s.startsWith("filename="))```.
+{% highlight java %}
+File file = new File("in.txt");
+FileReader fileReader = new FileReader(file);
+BufferedReader bufferedReader = new BufferedReader(fileReader);
 
-Apenas isso já é o suficiente para recebermos o arquivo enviado pelo usuário, a partir desse ponto podemos fazer o que quisermos, salvar esse arquivo no servidor, ou num servidor ftp, persistir ele em um banco de dados, ou que sua aplicação precisar.
+String texto;
+
+File file2 = new File("out.txt");
+FileWriter fileWriter = new FileWriter(file2);
+BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+
+while((texto = bufferedReader.readLine())!= null){
+	bufferedWriter.write(texto);
+	bufferedWriter.newLine();
+}
+
+bufferedReader.close();
+bufferedWriter.close();
+{% endhighlight %}
+
+O método ```bufferedWriter.write(texto);``` realiza a escrita da string passada por parâmetro, algo para se observar é que temos que indicar para *bufferedWriter* que queremos uma nova linha atravéz do método *newLine();*, caso contrário a escrita será realizada em apenas uma linha.
