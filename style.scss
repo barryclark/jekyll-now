@@ -237,6 +237,7 @@ nav {
     font-weight: 500;
     letter-spacing: 1.5px;
     &:hover{
+      color: $darkGray;
       &:after {
         transform: scaleX(1);
       }
