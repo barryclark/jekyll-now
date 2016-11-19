@@ -195,8 +195,8 @@ img {
   color: $darkGray;
   cursor: pointer;
   font-family: $helveticaNeue;
-  font-weight: 700;
-  font-size: 1.5rem;
+  font-weight: 800;
+  font-size: 1.75rem;
   letter-spacing: 1.75px;
   text-transform: lowercase;
 }
@@ -235,7 +235,18 @@ nav {
     text-align: right;
     font-weight: 500;
     letter-spacing: 1.5px;
-
+    &:hover{
+      &:after {
+        transform: scaleX(1);
+      }
+    }
+    &:after {
+      display:block;
+      content: '';
+      border-bottom: solid 3px #019fb6;  
+      transform: scaleX(0);  
+      transition: transform 250ms ease-in-out;
+    }
     @include mobile {
       margin: 0 10px;
       color: $blue;
