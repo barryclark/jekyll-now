@@ -228,6 +228,7 @@ nav {
   }
 
   a {
+    display: inline-block;
     font-size: 0.75rem;
     text-transform: uppercase;
     margin-left: 20px;
@@ -243,7 +244,7 @@ nav {
     &:after {
       display:block;
       content: '';
-      border-bottom: solid 3px #019fb6;  
+      border-bottom: solid 2px $darkGray;  
       transform: scaleX(0);  
       transition: transform 250ms ease-in-out;
     }
