@@ -202,9 +202,12 @@ img {
 }
 
 .site-description {
-  margin: -5px 0 0 0;
+  margin: -3px 0 0 0;
   color: $gray;
-  font-size: 16px;
+  font-size: 0.75rem;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  font-style: italic;
 
   @include mobile {
     margin: 3px 0;
