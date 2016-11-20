@@ -52,7 +52,7 @@ function average(data){
 
 var NN_trainer = function (svg_el, table_el, areas, prices, weight, bias, x1, y1, x2,
                            gradientDescentButton, gradientDescent10Button, gradientDescent100Button,
-                           gradientDescentConvergeButton) {
+                           gradientDescentConvergeButton, normalize, error_chart_el) {
     this.svg_el = svg_el;
     this.table_el = table_el;
     this.areas = areas;
@@ -62,17 +62,26 @@ var NN_trainer = function (svg_el, table_el, areas, prices, weight, bias, x1, y1
     this.x1 = x1;
     this.y1 = y1;
     this.x2 = x2;
-    this.y2 = 460;
+    this.y2 = x2 * weight + bias;
     this.data = [{x: this.x1, y: this.y1}, {x: this.x2, y: this.y2}];
     this.prediction = [];
     this.dataPoints = zip([this.areas, this.prices]);
+    this.normalize = normalize;
+    this.error_chart_el = error_chart_el;
+
 
     console.log(this.dataPoints);
 
-    this.normalizeFeatures(areas, prices);
+    // Normalization doesn't work quite yet. Actually decided to roll back during implementation
+    // because changing the weights and biases between examples would confuse readers.
+    if(normalize)
+        this.normalizeFeatures(areas, prices);
 
 
     this.initializeGraph();
+
+    if(error_chart_el != "")
+        this.initializeErrorGraph();
 
     // Set the initial values of the sliders
     this.updateWeightAndBias(this.weight, this.bias);
@@ -109,6 +118,10 @@ var NN_trainer = function (svg_el, table_el, areas, prices, weight, bias, x1, y1
             trainer_self.gradientDescentStep(1)
         });
     }
+
+
+    $(this.table_el + " #weightSlider").val(this.weight);
+    $(this.table_el + " #weightBias").val(this.bias);
 };
 
 
@@ -191,12 +204,105 @@ NN_trainer.prototype.initializeGraph = function(){
 };
 
 
+
+
+NN_trainer.prototype.initializeErrorGraph = function(){
+    console.log("initializeErrorGraph");
+
+    this.error_chart_history_x = 200;       // How many error data points to show
+    this.error_chart_history_y = 100000;    // How high the bar goes
+    this.error_history = [10000];
+
+
+    this.errorHolder = d3.select(this.error_chart_el) // select the 'body' element
+        .append("svg")           // append an SVG element to the body
+        .attr("width", 240)      // make the SVG element 449 pixels wide
+        .attr("height", 120);    // make the SVG element 249 pixels high
+
+        this.errorChartWidth = +this.errorHolder.attr("width") - this.margin.left - this.margin.right;
+        this.errorChartHeight = +this.errorHolder.attr("height") - this.margin.top - this.margin.bottom;
+        this.errorG = this.errorHolder.append("g").attr("transform", "translate(" + this.margin.left + "," + this.margin.top + ")");
+
+    // Initialize scales and axes
+    this.error_x = d3.scaleLinear()
+        .rangeRound([0, this.errorChartWidth])
+        .domain([this.x1, this.error_chart_history_x]);
+
+    this.error_y = d3.scaleLinear()
+        .rangeRound([this.errorChartHeight, 0])
+        .domain([this.y1, d3.max(this.error_history, function (d) { return d + d * 0.2; })]);
+
+
+
+    this.errorGraphLine = d3.line()
+        .x(function(d, i) { return this.error_x(i);}.bind(this))
+        .y(function(d, i) { return this.error_y(d); }.bind(this));
+
+    // Draw X axis
+    this.errorG.append("g")
+        .attr("class", "axis axis--x")
+        .attr("transform", "translate(0," + this.errorChartHeight + ")")
+        .call(d3.axisBottom(this.error_x).ticks(5));
+    // Draw Y axis
+    this.errorG.append("g")
+        .attr("class", "axis axis--y")
+        .call(d3.axisLeft(this.error_y).ticks(5));
+
+    this.errorG.append("defs").append("clipPath")
+        .attr("id", "clip")
+        .append("rect")
+        .attr("width", this.errorChartWidth)
+        .attr("height", this.errorChartHeight);
+
+    var trainer_self = this;
+
+    this.errorG.append("g")
+        .attr("clip-path", "url(#clip)")
+        .append("path")
+        .datum(this.error_history)
+        .attr("class", "error-history-line")
+
+};
+
+// Adds an error points to the error graph
+// https://gist.github.com/mbostock/1642874
+NN_trainer.prototype.addErrorPoint = function (value) {
+
+
+    this.error_history.push(value);
+    // Redraw the line.
+    d3.select(this.error_chart_el +" .error-history-line")
+        .attr("d", this.errorGraphLine)
+        .attr("transform", "translate(" + this.error_x(-1) + ",0)");
+
+    // Pop the old data point off the front.
+    if( this.error_history.length >= this.error_chart_history_x)
+        this.error_history.shift();
+
+    this.rescaleErrorGraph(this.max_error_y);
+};
+
+
+NN_trainer.prototype.rescaleErrorGraph = function (new_max_y) {
+    console.log("rescale");
+    //this.error_y.domain([0, new_max_y]);
+    this.error_y.domain([this.y1, d3.max(this.error_history, function (d) { return d; })]);
+
+    this.errorG.select(this.error_chart_el +" .axis--y")
+        .call(d3.axisLeft(this.error_y).ticks(5));
+};
+
+
 NN_trainer.prototype.calculatePrediction = function (x) {
-    
-    // scale
-    var scaled_x = (x - this.area_mean)/ this.area_std,
-        scaled_prediction = scaled_x * this.weight + this.bias,
+    var prediction;
+    if(this.normalize){
+        // scale
+        var scaled_x = (x - this.area_mean)/ this.area_std,
+            scaled_prediction = scaled_x * this.weight + this.bias;
         prediction = scaled_prediction * this.prices_std + this.prices_mean;
+    }
+    else
+        prediction = x * this.weight + this.bias;
     
     return prediction;
 };
@@ -230,6 +336,9 @@ NN_trainer.prototype.updateWeightAndBias = function (weight, bias) {
     }
     mean_delta_sum = delta_sum / this.prediction.length;
 
+    //Update error chart if available
+    if(this.error_chart_el != "")
+        this.addErrorPoint(mean_delta_sum);
     // Update the error/weight/bias indicators
     $(this.table_el + " span#weight").text(this.weight);
     $(this.table_el + " span#bias").text(this.bias);
@@ -321,9 +430,12 @@ NN_trainer.prototype.updateWeightAndBias = function (weight, bias) {
 
 NN_trainer.prototype.gradientDescentStep = function (number_of_steps) {
 
+    // I probably shouldn't do this. I started doing feature normalization so we can keep to one learning rate.
+    // I decided to do it this way to maintain narrative continuity.
+    this.learningRate = 0.00000001;
+    this.learningRate2 = 1;
+
     for( var c = 0; c < number_of_steps; c++){
-        this.learningRate = 0.00000001;
-        this.learningRate2 = 5;
 
         var sum_for_bias = 0, sum_for_weight = 0, bias_mean, weight_mean, bias_adjustment, weight_adjustment,
             new_b, new_w;
@@ -359,8 +471,6 @@ NN_trainer.prototype.gradientDescentStep = function (number_of_steps) {
 
 
 
-var w= 0.1, b = 150;
-
 var trainer = new NN_trainer("#training-one-chart",  "#training-one",
     [2104, 1600, 2400], // areas
     [399.900, 329.900, 369.000], // prices
@@ -369,20 +479,22 @@ var trainer = new NN_trainer("#training-one-chart",  "#training-one",
     0,      // x1
     0,      // y1
     2600,   // x2
-    "", "", "", "");
+    "", "", "", "", false, "");
 
 
 
 var trainer2 = new NN_trainer("#training-one-gd-chart",  "#training-one-gd",
     [2104, 1600, 2400],
     [399.900, 329.900, 369.000],
-    0.85,      // initial weight
-    0.001,      // initial bias
+    0.1,      // initial weight
+    150,      // initial bias
     0,      // x1
     0,      // y1
     2600,   // x2
     "#gradient-descent-button",
     "#gradient-descent-10-button",
     "#gradient-descent-100-button",
-    "#gradient-descent-converge-button"
+    "#gradient-descent-converge-button",
+    false,
+    "#training-one-gd-error-chart"
 );

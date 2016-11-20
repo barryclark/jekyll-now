@@ -154,20 +154,26 @@ td.error-cell{
   font-weight: bold;
 }
 
-.prediction div#training-one-chart {
+.prediction .training-chart{
   text-align:center;
 }
 
-.prediction #training-one-chart svg{
+.prediction .training-chart svg{
   background: #f0f0f0;
 }
 
-.prediction #training-one-chart svg .axis line{
+.prediction .training-chart svg .axis line{
   stroke:#565656;
 }
 
-.prediction #training-one-chart svg .axis text{
+.prediction .training-chart svg .axis text{
   fill:#565656;
+}
+
+.prediction .error-chart .error-history-line{
+  stroke: $yellow;
+  stroke-width: 1;
+  fill: none;
 }
 
 .prediction .dot{

@@ -1,6 +1,6 @@
 ---
 layout: prediction_post
-published: True
+published: False
 title: A Visual Beginners Guide to Neural Networks
 ---
 <script src="/js/jquery-3.1.1.slim.min.js"></script>
@@ -121,7 +121,7 @@ We can generalize it by saying that a neural network with one input and one outp
 How about you take a crack at training our toy neural network? Minimize the loss function by tweaking the weight and bias dials. Can you get an error value below 2,397?
 
 
-<div id="training-one-chart" />
+<div id="training-one-chart" class="training-chart"/>
 <table id="training-one">
 
     <tr>
@@ -173,7 +173,8 @@ How about you take a crack at training our toy neural network? Minimize the loss
 Congratulations on manually training your first neural network! Let's look at how to automate this training process. Below is another example with one additional button. This button uses an algorithm called "Gradient Descent" to try and take a step towards the correct weight and bias values that minimize the loss function.
 
 
-<div id="training-one-gd-chart" />
+<div id="training-one-gd-chart" class="training-chart"/>
+<div id="training-one-gd-error-chart" class="error-chart"/>
 
 <table id="training-one-gd">
     <tr>
@@ -205,7 +206,7 @@ Congratulations on manually training your first neural network! Let's look at ho
             Weight
         </td>
         <td>
-            <input id="weightSlider" type="range" min="0" max="4" step="0.001">
+            <input id="weightSlider" type="range" min="0" max="0.4" step="0.001">
         </td>
         <td class="slider-value">
             <span id="weight">0</span>
@@ -216,7 +217,7 @@ Congratulations on manually training your first neural network! Let's look at ho
             Bias
         </td>
         <td>
-            <input id="biasSlider" type="range" min="-12.7" max="4" step="0.01">
+            <input id="biasSlider" type="range" min="0" max="460" step="1">
         </td>
         <td class="slider-value">
             <span id="bias">0</span>
