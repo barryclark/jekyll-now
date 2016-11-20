@@ -98,13 +98,12 @@ layout: default
 
 ### <a name="wallet"></a>Πως μπορώ να αποκτήσω ένα πορτοφόλι Bitcoin;
 
-Μια λίστα με πορτοφόλια Bitcoin είναι αναρτημένη στο [bitcoin.org](https://bitcoin.org/en/choose-your-wallet), [εδώ](http://bitcoinx.io/wallets/) και [εδώ](https://en.bitcoin.it/wiki/Software). 
+Μια λίστα με πορτοφόλια Bitcoin είναι αναρτημένη στο [bitcoin.org](https://bitcoin.org/en/choose-your-wallet), [εδώ](http://bitcoinx.io/wallets/) και [εδώ](https://en.bitcoin.it/wiki/Software). Εδώ μπορείτε να δείτε ένα [βίντεο](https://www.youtube.com/watch?v=9qgqPvc6kgM) για το πως φτιάχνετε ένα πορτοφόλι CoPay.
 
 ### <a name="greekwallet"></a> Αναζητώ ένα πορτοφόλι Bitcoin που να λειτουργεί στα Ελληνικά
 
 Δοκιμάστε τα:
 
-- [Bitcoin Core](https://bitcoin.org/en/download), τρέχει σε Windows, Mac, Linux. Είναι full client (πρέπει να κατεβάσετε τα 48GB του Blockchain).
 - [Coinomi](https://coinomi.com), τρέχει σε Android. Είναι thin client.
 - [Electrum](https://electrum.org) τρέχει σε Windows, Mac, Linux, Android. Είναι thin client.
 - [MultiBit HD](https://multibit.org) τρέχει σε Windows, Mac, Linux. Είναι thin client.
@@ -145,7 +144,7 @@ layout: default
 
 ### <a name="demo"></a> Πως μπορώ να δω μια πληρωμή με Bitcoin από κοντά;
 
-Επισκευτείτε κάποιο από τα καταστήματα του πίνακα. Ελάτε σε κάποια [συνάντησή μας στην Αθήνα](http://www.meetup.com/BlockchainGreece-0/) ή στη [Θεσσαλονίκη](http://www.meetup.com/BlockchainGreece-1/). Γράψτε στο [Ελληνικό τμήμα του Bitcoin Talk](https://bitcointalk.org/gr). Γραφτείτε στο [Slack](http://bitcoingreece.herokuapp.com) (online chat) μας. 
+Επισκευτείτε κάποιο από τα καταστήματα του πίνακα. Ελάτε σε κάποια [συνάντησή μας στην Αθήνα](http://www.meetup.com/BlockchainGreece-0/) ή στη [Θεσσαλονίκη](http://www.meetup.com/BlockchainGreece-1/). Γράψτε στο [Ελληνικό τμήμα του Bitcoin Talk](https://bitcointalk.org/gr). Γραφτείτε στο [Slack](http://bitcoingreece.herokuapp.com) (online chat) μας. Δείτε αυτό το [βίντεο](https://www.youtube.com/watch?v=9qgqPvc6kgM) για το πως φτιάχνετε ένα πορτοφόλι και στέλνετε και λαμβάνετε Bitcoin.
 
 ### <a name="bitcointosepa"></a> Έχω Bitcoin και θέλω να καταθέσω Ευρώ σε λογαριασμό τρίτου σε Ελληνική τράπεζα ή σε τράπεζα της Ευρωζώνης
 
@@ -166,7 +165,7 @@ layout: default
 - Προσθέστε κάποια σχετική [εικόνα](https://en.bitcoin.it/wiki/Promotional_graphics) (π.χ. Bitcoin Accepted Here) στο κατάστημά σας και στην ιστοσελίδα σας.
 - Στείλε μας email (αναγράφεται στο τέλος της σελίδας) ώστε να σας προσθέσουμε στη σελίδα αυτή. Ή κάνετε ένα Pull Request στο GitHub!
 
-Τελευταία ενημέρωση: 2016-11-19
+Τελευταία ενημέρωση: 2016-11-20
 
 <!-- <div class="posts">
   {% for post in site.posts %}
