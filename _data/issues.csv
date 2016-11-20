@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1329,190586362,2016-11-20 21:52:30,2016-11-20 21:51:51,Cercasi camper o roulotte con 5  posti a #Norcia,42.7927706,13.0930812,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Facebook"", ""Raccolte Fondi""]",,,"{""cosa"": ""Cercasi camper o roulotte con 5  posti a #Norcia"", ""data"": ""20/11/2016"", ""descrizione"": ""Cerco camper o roulotte 5 posti per tornare a Norcia, attualmente in albergo dal 30. Siamo una famiglia con tre figli, mio marito fa il pendolare Perugia-Norcia per lavorare in quanto ha investito tutto in un una attivit\u00e0 a Norcia che fortunatamente ha resistito al sisma del 30 .Vogliamo stare tutti insieme, vi prego aiutateci."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Piazza San Benedetto, Casa Coletti, Norcia, PG, UMB, 06046, Italia"", ""lat"": ""42.7927706"", ""link"": ""https://www.facebook.com/groups/993292824038901/permalink/1330348846999962/"", ""lon"": ""13.0930812"", ""tel"": """"}","<pre><yamldata>tel: ''
+email: ''
+cosa: 'Cercasi camper o roulotte con 5  posti a #Norcia'
+descrizione: 'Cerco camper o roulotte 5 posti per tornare a Norcia, attualmente in albergo dal 30. Siamo una famiglia con tre figli, mio marito fa il pendolare Perugia-Norcia per lavorare in quanto ha investito tutto in un una attività a Norcia che fortunatamente ha resistito al sisma del 30 .Vogliamo stare tutti insieme, vi prego aiutateci.'
+indirizzo: 'Piazza San Benedetto, Casa Coletti, Norcia, PG, UMB, 06046, Italia'
+lat: '42.7927706'
+lon: '13.0930812'
+link: 'https://www.facebook.com/groups/993292824038901/permalink/1330348846999962/'
+immagine: ''
+data: 20/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1328,190571691,2016-11-20 17:42:01,2016-11-20 17:40:39,#Amatrice: iniziata la rimozione delle macerie. Saranno stoccate a Posta,,,"[""Accettato"", ""Bollettino"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""20/11/2016"", ""descrizione"": ""\u00c8 gi\u00e0 iniziata da qualche giorno la rimozione delle macerie dalle frazioni di Amatrice colpite dal sisma del 24 agosto scorso. Sono stati avviati anche i primi trasferimenti verso le aree di stoccaggio approntate dalla Regione Lazio nel comune di Posta. Le macerie di ogni edificio saranno depositate separatamente segnalando l\u2019indirizzo di provenienza, anche per consentire alla popolazione di recuperare gli effettivi personali non ancora rintracciati."", ""link"": ""http://www.rietilife.com/2016/11/18/le-macerie-amatrice-posta-saranno-divise-zone-provenienza/"", ""titolo"": ""#Amatrice: iniziata la rimozione delle macerie. Saranno stoccate a Posta""}","<pre><yamldata>titolo: '#Amatrice: iniziata la rimozione delle macerie. Saranno stoccate a Posta'
 descrizione: 'È già iniziata da qualche giorno la rimozione delle macerie dalle frazioni di Amatrice colpite dal sisma del 24 agosto scorso. Sono stati avviati anche i primi trasferimenti verso le aree di stoccaggio approntate dalla Regione Lazio nel comune di Posta. Le macerie di ogni edificio saranno depositate separatamente segnalando l’indirizzo di provenienza, anche per consentire alla popolazione di recuperare gli effettivi personali non ancora rintracciati.'
 link: 'http://www.rietilife.com/2016/11/18/le-macerie-amatrice-posta-saranno-divise-zone-provenienza/'
@@ -5689,17 +5700,6 @@ descrizione: 'Laura offre casa (6 posti letto)'
 indirizzo: 'Via di Villa, Case Grandiana, Vicopisano, PI, Tuscany, 56021, Italia'
 lat: '43.6873261'
 lon: '10.5462333'
-link: ''
-immagine: ''
-data: 16/09/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/518,177466265,2016-09-22 15:56:45,2016-09-16 16:23:41,"Predappio, FC - Agri-campeggio ""La Banditina""",44.0662019,11.9700003,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""AGRICAMPEGGIO \""LA BANDITINA\"" offre sistemazioni momentanee per 10 persone."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via San Francesco d'Assisi, Sambuche, Predappio, FC, Emilia-Romagna, Italia"", ""lat"": ""44.0662019"", ""link"": """", ""lon"": ""11.9700003"", ""tel"": ""3477534680""}","<pre><yamldata>tel: '3477534680'
-email: ''
-descrizione: 'AGRICAMPEGGIO ""LA BANDITINA"" offre sistemazioni momentanee per 10 persone.'
-indirizzo: 'Via San Francesco d''Assisi, Sambuche, Predappio, FC, Emilia-Romagna, Italia'
-lat: '44.0662019'
-lon: '11.9700003'
 link: ''
 immagine: ''
 data: 16/09/2016
