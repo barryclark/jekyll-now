@@ -1,0 +1,8 @@
+# Please rename this file to .github.cfg and fill it with your values
+# in order to run github2CSV.py
+
+[GitHub]
+TOKEN=YOUR TOKEN OR PASSWORD
+USER=YOUR GITHUB USERNAME
+REPO_NAME=YOUR REPOSITORY NAME (e.g. terremotoCentro_segnalazioni)
+ORG=ORGANIZATION NAME (e.g. emergenzeHack)

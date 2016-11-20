@@ -1,86 +1,227 @@
-#
-# This file contains configuration flags to customize your site
-#
+# --- General options --- #
 
-# Name of your site (displayed in the header)
-name: Your Name
+# url is the full website URL
+# baseurl is the website's URL without the hostname
 
-# Short bio or description (displayed in the header)
-description: Web Developer from Somewhere
+# If you are building a GitHub project page then use these settings:
+#url: "http://username.github.io/projectname"
+#baseurl: "http://terremotocentroitalia.info"
+
+#baseurl: "https://github.com/emergenzeha/terremotocentro"
+url: "http://terremotocentroitalia.info"
+
+# Of course don't forget to change the username and projectname to YOUR username and project
+
+# Name of website
+title: Terremoto Centro Italia
+
+# Short description of your site
+description: Un progetto per informare sugli eventi sismici che hanno colpito il Centro Italia nel 2016.
+
+# --- Navigation bar options --- #
+# List of links in the navigation bar
+navbar-links:
+  Segnala: "segnala/"
+  Richieste:
+    - Fabbisogni: "fabbisogni/"
+  Offerte:
+    - Risorse: "risorse-disponibili/"
+    - Alloggi: "alloggi/"
+    - Link: "link_utili/"
+  Raccolte Fondi:
+    - Fondi: "fondi/"
+    - Acquisti Solidali: "acquistisolidali/"
+  Aggiornamenti:
+    - News: "news/"
+    - Blog: "post/"
+    - Storie: "storie/"
+    - Vittime: "vittime/"
+    - Bufale: "bufale/"
+  Utilità:
+    - Mappe: "mappe/"
+    - Opendata: "opendata/"
+  Il Progetto:
+   - About: "about/"
+   - Contribuisci: 'https://github.com/emergenzeHack/terremotocentro/wiki" target="_blank'
+   - Press: "press/"
+   - Canali di Comunicazione: "canali/"
+
+# Image to show in the navigation bar - image must be a square (width = height)
+# Remove this parameter if you don't want an image in the navbar
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
+avatar: /images/noun_8681.png
 
-#
-# Flags below are optional
-#
+# --- Footer options --- #
 
-# Includes an icon in the footer for each username you enter
-footer-links:
-  dribbble:
-  email:
-  facebook:
-  flickr:
-  github: barryclark/jekyll-now
-  instagram:
-  linkedin:
-  pinterest:
-  rss: # just type anything here for a working RSS icon
-  twitter: jekyllrb
-  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
-  youtube: # channel/<your_long_string> or user/<user-name>
-  googleplus: # anything in your profile username that comes after plus.google.com/
+# Change all these values or delete the ones you don't want.
+# Important: you must keep the "name" parameter, everything else you can remove
+author:
+  name: TerremotoCentroItalia
+  #email: "youremail@domain.com"
+  facebook: groups/1758670357733881/  # eg. daattali
+  github: emergenzeHack/terremotocentro    # eg. daattali
+  twitter: terremotocentro   # eg. daattali
+  linkedin:   # eg. daattali
+  xing:       # eg. daattali
+  stackoverflow:   # eg. "3943160/daattali"
+  instagram: terremotocentro # eg. daattali
+  youtube: yourlink # eg. user/daattali or channel/daattali
+  rss: https://emergenzehack.github.io/terremotocentro/feed.xml
+  telegram: https://telegram.me/terremotocentroitalia
+  medium: https://medium.com/@terremotocentroitalia
+  archiveorg: https://archive.org/details/@terremotocentroita
+  messenger: messenger
 
+# Select which links to show in the footer
+footer-links-active:
+  androidapp: true
+  rss: true
+  facebook: true
+  email: false
+  twitter: true
+  github: true
+  linkedin: false
+  xing: false
+  stackoverflow: false
+  instagram: true
+  youtube: false
+  telegram: true
+  medium: true
+  archiveorg: true
+  messenger: true
 
-# Enter your Disqus shortname (not your username) to enable commenting on posts
-# You can find your shortname on the Settings page of your Disqus account
-disqus:
+# Select which share links to show in posts
+share-links-active:
+  twitter: true
+  facebook: true
+  google: false
+  linkedin: false
 
-# Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics:
+# How to display the link to the website in the footer
+# Remove this if you don't want a link in the footer
+# url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
 
-# Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
-# Used for Sitemap.xml and your RSS feed
-url:
+# --- Misc --- #
 
-# If you're hosting your site at a Project repository on GitHub pages
-# (http://yourusername.github.io/repository-name)
-# and NOT your User repository (http://yourusername.github.io)
-# then add in the baseurl here, like this: "/repository-name"
-baseurl: ""
+# Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
+disqus: "terremotocentroitalia"
 
-#
-# !! You don't need to change any of the configuration flags below !!
-#
+# Fill in your Google Analytics ID to track your website using GA
+google_analytics: "UA-47474515-3"
 
-permalink: /:title/
+jekyll-crosseverything_to_medium:
+  enabled: false
+  useraccount: 'https://medium.com/terremotocentroitalia'
 
-# The release of Jekyll Now that you're using
-version: v1.2.0
+# --- Don't need to touch anything below here (but you can if you want) --- #
 
-# Jekyll 3 now only supports Kramdown for Markdown
+# Output options (more information on Jekyll's site)
+timezone: "Europe/Rome"
+markdown: kramdown
+highlighter: rouge
+permalink: /:year-:month-:day-:title/
+paginate: 5
+
 kramdown:
-  # Use GitHub flavored markdown, including triple backtick fenced code blocks
   input: GFM
-  # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
-  syntax_highlighter: rouge
-  syntax_highlighter_opts:
-    # Use existing pygments syntax highlighting css
-    css_class: 'highlight'
 
-# Set the Sass partials directory, as we're using @imports
-sass:
-  style: :expanded # You might prefer to minify using :compressed
+jekyll-mentions:
+  base_url: https://twitter.com
 
-# Use the following plug-ins
-gems:
-  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
-  - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
+# Default YAML values (more information on Jekyll's site)
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      comments: true  # add comments to all blog posts
+      social-share: true # add social media sharing buttons to all blog posts
+  -
+    scope:
+      path: "" # all files
+    values:
+      layout: "page"
+      show-avatar: true
 
-# Exclude these files from your production _site
+# Use tags pages (not recommended if you are deploying via GitHub pages, only set to true if deploying locally with ruby)
+link-tags: false
+
+# Exclude these files from production site
 exclude:
   - Gemfile
   - Gemfile.lock
   - LICENSE
   - README.md
   - CNAME
+  - Vagrantfile
+  - vendor
+  - .gitlab-ci.yml
+
+# prose.io config
+prose:
+  rooturl: '_posts'
+  media: 'img'
+  ignore:
+    - 404.html
+    - LICENSE
+    - feed.xml
+    - _config.yml
+    - /_layouts
+    - /_includes
+    - /css
+    - /img
+    - /js
+    - /scripts
+    - /external
+  metadata:
+    _posts:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "post"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Post title"
+          placeholder: "Title"
+          alterable: true
+      - name: "subtitle"
+        field:
+          element: "textarea"
+          label: "Subtitle"
+          placeholder: "A description of your post."
+          alterable: true
+      - name: "date"
+        field:
+          element: "text"
+          label: "Date"
+          help: "Enter date of post."
+          placeholder: "yyyy-mm-dd"
+          alterable: true
+      - name: "published"
+        field:
+          element: "checkbox"
+          label: "Publish"
+          help: "Check to publish post, uncheck to hide."
+
+collections:
+  storie:
+    output: true
+
+page_gen-dirs: true # uncomment, if you prefer to generate named folders
+page_gen:
+  - data: issuesjson
+    template: issue
+    name: number
+    dir: issues
+
+gems:
+  - jekyll-paginate
+  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+  - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
+
+# Beautiful Jekyll / Dean Attali
+# 2fc73a3a967e97599c9763d05e564189

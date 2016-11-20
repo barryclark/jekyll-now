@@ -1,0 +1,31 @@
+image: ruby:2.3
+
+before_script:
+  - bundle install --clean --jobs $(nproc) --path vendor/bundle
+
+variables:
+  BUNDLE_GEMFILE: Gemfile.gitlab
+
+cache:
+  paths:
+    - vendor/bundle
+
+test:
+  stage: test
+  script:
+  - bundle exec jekyll build -d test
+  artifacts:
+    paths:
+    - test
+  except:
+  - master
+
+pages:
+  stage: deploy
+  script:
+  - bundle exec jekyll build -d public
+  artifacts:
+    paths:
+    - public
+  only:
+  - master

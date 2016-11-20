@@ -1,0 +1,78 @@
+---
+layout: page
+title: Ricerca
+subtitle: Qui puoi vedere i risultati di una ricerca fatta nelle nostre segnalazioni
+---
+
+<div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12">
+        <form class="form-inline" role="form" action="/searchissues" method="get">
+            <div class="form-group">
+                <label for="search-box">Cosa cerchi?</label>
+                <input type="text" class="form-control" id="search-box" name="query" placeholder="">
+            </div>
+            <div class="form-group">
+                <label for="labelchoice">Categoria</label>
+                <select class="form-control" id="labelchoice" name="label">
+                    <option value=""></option>
+                    <option value="Alloggi">Alloggi</option>
+                    <option value="acquisto solidale">Acquisto Solidale</option>
+                    <option value="Bollettino">Bollettino</option>
+                    <option value="Bufale">Bufale</option>
+                    <option value="Contatti">Contatti</option>
+                    <option value="Donazioni">Donazioni</option>
+                    <option value="Fabbisogni">Fabbisogni</option>
+                    <option value="Notizie Utili">Notizie Utili</option>
+                    <option value="Raccolte Fondi">Raccolte Fondi</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="submit" class="btn btn-primary" value="Cerca">
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12">
+        <h2>Risultati</h2>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12" id="search-results">
+    </div>
+</div>
+
+<script>
+
+function urldecode(str) {
+   return decodeURIComponent((str+'').replace(/\+/g, '%20'));
+}
+
+
+window.store = {};
+    {% assign filteredissues = site.data.issuesjson %}
+    {% for member in filteredissues %}
+window.store["{{site.url}}/issues/{{member.number}}"]={
+        "title": urldecode("{{ member.title | strip_html | url_encode }}"),
+        "label": "{{member.issue.labels | join: ','}}",
+        {% if member.issue.data.descrizione != blank %}
+        "content": urldecode("{{ member.issue.data.descrizione | url_encode }}"),
+        {% else %}
+        "content": "",
+        {% endif %}
+        {% if member.issue.created_at != blank %}
+        "date": "{{member.issue.created_at | date: '%-d/%m/%Y' }}",
+        {% endif %}
+        "url": "{{site.url}}/issues/{{member.number}}",
+        "state": "{{member.state}}"
+};
+    {% endfor %}
+
+</script>
+<script src="//code.jquery.com/jquery-1.12.3.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/elasticlunr/0.9.5/elasticlunr.min.js"></script>
+<script type="text/javascript" src="../js/lunr.stemmer.support.min.js"></script>
+<script type="text/javascript" src="../js/lunr.it.min.js"></script>
+<script type="text/javascript" src="../js/search.js"></script>

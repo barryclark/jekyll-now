@@ -1,0 +1,159 @@
+<footer itemscope="itemscope" itemtype="http://schema.org/WPFooter">
+  <div class="container beautiful-jekyll-footer">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          {% if site.author.facebook and site.footer-links-active.facebook %}
+          <li>
+            <a itemprop="sameAs" href="https://www.facebook.com/{{ site.author.facebook }}" title="Facebook">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %}
+          {% if site.author.github and site.footer-links-active.github %}
+          <li>
+            <a itemprop="sameAs" href="https://github.com/{{ site.author.github }}" title="GitHub">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %}
+		  {% if site.author.twitter and site.footer-links-active.twitter %}
+          <li>
+            <a itemprop="sameAs" href="https://twitter.com/{{ site.author.twitter }}" title="Twitter">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %}
+		  {% if site.author.email and site.footer-links-active.email %}
+          <li>
+            <a itemprop="sameAs" href="mailto:{{ site.author.email }}" title="Email me">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %}
+		  {% if site.author.linkedin and site.footer-links-active.linkedin %}
+          <li>
+            <a itemprop="sameAs" href="https://linkedin.com/in/{{ site.author.linkedin }}" title="LinkedIn">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %}
+		  {% if site.author.xing and site.footer-links-active.xing %}
+          <li>
+            <a itemprop="sameAs" href="https://www.xing.com/profile/{{ site.author.xing }}" title="Xing">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-xing fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %}
+		  {% if site.author.stackoverflow and site.footer-links-active.stackoverflow %}
+          <li>
+            <a itemprop="sameAs" href="https://stackoverflow.com/users/{{ site.author.stackoverflow }}" title="StackOverflow">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-stack-overflow fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %}
+      {% if site.author.instagram and site.footer-links-active.instagram %}
+          <li>
+            <a itemprop="sameAs" href="https://www.instagram.com/{{ site.author.instagram }}" title="Instagram">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %}
+      {% if site.author.youtube and site.footer-links-active.youtube %}
+          <li>
+            <a itemprop="sameAs" href="https://www.youtube.com/{{ site.author.youtube }}" title="YouTube">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %}
+      {% if site.author.telegram and site.footer-links-active.telegram %}
+          <li>
+            <a itemprop="sameAs" href="{{ site.author.telegram }}" title="telegram">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-paper-plane fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %}
+          {% if site.author.medium and site.footer-links-active.medium %}
+          <li>
+            <a itemprop="sameAs" href="{{ site.author.medium }}" title="medium">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-medium fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %}
+		  {% if site.author.archiveorg and site.footer-links-active.archiveorg %}
+          <li>
+            <a itemprop="sameAs" href="{{ site.author.archiveorg }}" title="archive.org">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-archive fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %}
+		  {% if site.footer-links-active.rss %}
+		  <li>
+			<a href="{{ '/feed.xml' | prepend: site.baseurl }}" title="RSS">
+			  <span class="fa-stack fa-lg">
+				<i class="fa fa-circle fa-stack-2x"></i>
+				<i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+			  </span>
+			</a>
+		  </li>
+          {% endif %}
+        </ul>
+        <p class="copyright text-muted">
+		  {{ site.author.name }}
+		  &nbsp;&bull;&nbsp;
+		  <span itemprop="copyrightYear">{{ site.time | date: '%Y' }}</span>
+
+		  {% if site.url-pretty %}
+		  &nbsp;&bull;&nbsp;
+		  <a href="{{ site.url }}">{{ site.url-pretty }}</a>
+		  {% endif %}
+		  &nbsp;&bull;&nbsp;
+		  <a href="http://terremotocentroitalia.info/legal/" target="_blank">Legal</a> 
+		  &nbsp;&bull;&nbsp;
+		  Con il sostegno di <a href="https://www.actionaid.it/" target="_blank"><img src="/images/actionaid-logo.png" alt="Actionaid - realizza il cambiamento"></a>
+	    </p>
+	        <!-- Please don't remove this, keep my open source work credited :) -->
+		<p class="theme-by text-muted">
+		  Theme by
+		  <a href="http://deanattali.com/beautiful-jekyll/">beautiful-jekyll</a>
+		</p>
+      </div>
+    </div>
+  </div>
+</footer>

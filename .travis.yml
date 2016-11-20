@@ -1,0 +1,20 @@
+language: ruby
+rvm:
+  - 2.1
+
+cache: bundler
+
+script: ./scripts/cibuild
+
+env:
+  global:
+    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+    - MEDIUM_USER_ID=test
+    - MEDIUM_INTEGRATION_TOKEN=test
+    - MEDIUM_ENTITY=test
+    - secure: 1Vrx/UMv2x3zn+ejcdPQxKeg4a+7EAyoEIAjTDfXY/xjXoQB0oiMz/OJImGnOVfSSr4DbQC23hSmCG29XSbSHyEvftsEhekthaaMU04+oWGJk4YdH+NkfdrrEnZuGUiHGkcEYOUFF47hpooKM3GxfrlVV5LPJkbltiKEUZ6aKQV/5zDyfJVk4M045RJk4gSYbZkZP4XVcS+30SErtTdW4koBiw5zQtuOPfycPxrctctP4gn+50gnjxVvQsqYmUz8+Aoeufl9QjarcAntV/krEspoDk0FDo2q2vAMQvkdHoEe2YMGBdnlUxSiXm7L9VulzuJAVzLDcLIpxtkNnZSJw/0hI/BWgK/lojPn92RDOE5S1+q9C9kqQtKdLTew+bCbcpt4i0Bj3VACXRfrVWvZw+Wdc6I9jDm9T5nnvcC2oGKMwmrExJIUSTmihzSigXG+Y6/lWYG0GqJgMwC0b0RPAr3Rj1gealjvDqNmWOsSj1KzWGkVXdDCeJidPwpv/t1z5tPeym6cBXkvmjvZZM+fcYXcHaIOM2t3jCgXM257PvTJAp4oF1p561FbycBPjR2VC1R3tfvQdUmrERx/XalrNNut0xp9MRgQBbDhSipobKcqNEFhdz+MlloeZX5lefX7zPayGQYyPbgWKEmDLh+p527EjttfXpw8AmISf+wtTUY=
+    - secure: 3k3dNkKqm5GFjC6wI6S3HrHzmtttVVVnsuHzFUGl9NYmYyGSHMiDNiFI+FH9f3aN2U7HnwQe3uxfLNs6oMeNq+mzDBKNbwwlNJpHGhJV5zgJpJH46rDdMlKMmjCusVFbmQ5ES24KI9MHRZ0CJd5HafkBsbJkbFLwuuBumdx59aj7UcsSXM+0/OmASrH2ZVWle8PJLTo8pHPT8dByQe8u/qqGhHmofRpRQNjzy8w2+GTIi90N9NPHzOg8YbV5oV/E5BHMwsuIlYOplsjnc8AqgG44IrvumIscU2uSDWzQRQ2LracJpQPz5rMgSbq8f/uZO+t3kPQeIjQV1uWz0mYJGWHILlV0A5YrYsi8aGyVFaFDB5psJkYtwvw+AI+10GJFz/hDkUT6s7qaiaWBUZOw1aJM2WfHktqV3urg6Goq6TagnDXpr98JeGQx9wnOjiP8G69yADrfCPuGzWsxAFUG4T7ULwzQ6T2LarQcGUbn8nkmQbvvQbY+8AqxluCJ9WQaNgSaeBoSgs4fxotb160IJrH5jOliJW7O5WY9K/F48FS/FJordA0v8BuYXDv0ZQkjJFt+3eS4L6SH8E1zV8/Evu7WzvXQmA3KWKnlWHDOI+F9qz23gjWisK4TamxYP/3Hh8wcYckU42shfGJT3FsmsbvkwyCtQgohjhNd8QY+8eY=
+sudo: false
+
+after_success:
+        '# cd _site; find -type f -exec curl --ftp-create-dirs -T {} -u $FTP_USER:$FTP_PASSWORD ftp://teo-soft.com/terremotocentroitalia/{} \; '

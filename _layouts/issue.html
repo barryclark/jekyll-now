@@ -1,0 +1,88 @@
+---
+layout: base
+---
+
+{% include header.html type="issue" %}
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.0/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.0.0/dist/leaflet.js"></script>
+    <style>
+    #map{ height: 150px }
+  </style>
+
+<div class="container" role="main">
+        <div class="row"> <div class="col-md-12">{% if page.state == "closed" %}<strike>{% endif %}<h2>{{page.issue.title}}</h2>{% if page.state == "closed" %}</strike>{% endif %} </div> </div>
+  <div class="row"> <div class="col-md-2">Stato:</div> <div class="col-md-10"> {{page.state}}</div> </div>
+  <div class="row"> <div class="col-md-2">Descrizione:</div> <div class="col-md-10"> {{page.issue.data.descrizione}}</div> </div>
+
+  {% if page.issue.data.tel != blank %}
+  <div class="row"> <div class="col-md-2">Telefono:</div> <div class="col-md-10"> <a href="tel:{{page.issue.data.tel}}">{{page.issue.data.tel}}</a></div> </div>
+  {% endif %}
+  {% if page.issue.data.email != blank %}
+  <div class="row"> <div class="col-md-2">Email:</div> <div class="col-md-10"> <a href="mailto:{{page.issue.data.email}}">{{page.issue.data.email}}</a></div> </div>
+  {% endif %}
+
+  {% if page.issue.data.intestazione != blank %}
+  <div class="row"> <div class="col-md-2">Instestazione:</div> <div class="col-md-10"> {{page.issue.data.intestazione}}</div> </div>
+  {% endif %}
+
+  {% if page.issue.data.iban != blank %}
+  <div class="row"> <div class="col-md-2">IBAN:</div> <div class="col-md-10"> {{page.issue.data.iban}}</div> </div>
+  {% endif %}
+
+  {% if page.issue.data.bic != blank %}
+  <div class="row"> <div class="col-md-2">BIC:</div> <div class="col-md-10"> {{page.issue.data.bic}}</div> </div>
+  {% endif %}
+
+  {% if page.issue.data.postale != blank %}
+  <div class="row"> <div class="col-md-2">Postale:</div> <div class="col-md-10"> {{page.issue.data.postale}}</div></div>
+  {% endif %}
+
+  {% if page.issue.data.causale != blank %}
+  <div class="row"> <div class="col-md-2">Causale:</div> <div class="col-md-10"> {{page.issue.data.causale}}</div> </div>
+  {% endif %}
+
+  {% if page.issue.image != blank %}
+  <div class="row"> <div class="col-md-2">Immagine:</div> <div class="col-md-10"> <img alt="immagine" src="{{page.issue.image}}"></img> </div> </div>
+  {% endif %}
+  {% if page.issue.data.link != blank %}
+  <div class="row"> <div class="col-md-2">Link Fonte:</div> <div class="col-md-10"> <a href="{{page.issue.data.link}}">{{page.issue.data.link}}</a></div> </div>
+  {% endif %}
+
+  {% if page.issue.data.indirizzo != blank %}
+  <div class="row"> <div class="col-md-2">Indirizzo:</div> <div class="col-md-10"> {{page.issue.data.indirizzo}}</div> </div>
+  {% endif %}
+
+  {% if page.issue.lat != blank %}
+  <div class="row"> <div class="col-md-2">latitudine:</div> <div class="col-md-10"> {{page.issue.lat}} </div> </div>
+  <div class="row"> <div class="col-md-2">longitudine:</div> <div class="col-md-10"> {{page.issue.lon}} </div> </div>
+  <div class="row"> <div class="col-md-2">Mappa:</div><div class="col-md-4"> <div id="map"></div> </div> </div>
+  {% endif %}
+
+  <div class="row"> <div class="col-md-2">Link Segnalazione:</div> <div class="col-md-10"> <a href="{{page.issue.url}}">{{page.issue.url}}</a></div> </div>
+  <div class="row"> <div class="col-md-2">Creato:</div> <div class="col-md-10"> {{page.issue.created_at | italianDate}} </div> </div>
+  <div class="row"> <div class="col-md-2">Aggiornato:</div> <div class="col-md-10"> {{page.issue.updated_at | italianDate}} </div> </div>
+
+{% include social-share.html %}
+
+    <div class="disqus-comments">
+      {% include disqus.html %}
+    </div>
+
+</div>
+
+<script>
+
+// initialize the map
+var map = L.map('map').setView([{{page.issue.lat}}, {{page.issue.lon}}], 16);
+
+// create the tile layer with correct attribution
+var osmUrl='http://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png';
+var osmAttrib='&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, Tiles courtesy of <a href="http://hot.openstreetmap.org/" target="_blank">Humanitarian OpenStreetMap Team</a>';
+var osm = new L.TileLayer(osmUrl, {minZoom: 8, maxZoom: 19, attribution: osmAttrib});
+
+map.addLayer(osm);
+
+var marker = L.marker([{{page.issue.lat}}, {{page.issue.lon}}]).addTo(map);
+
+
+</script>

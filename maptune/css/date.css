@@ -1,0 +1,16 @@
+.post_content{
+	background:#f2f2f0;
+	font:1.2em/19px "helvetica neue",Helvetica,Arial,Verdana,sans-serif;
+	color:#666;
+	position:relative;
+	xxbackground:url(../images/bg-post-content.png) 0 no-repeat;
+	margin:0 0 0 0;
+	-webkit-box-shadow: rgba(0,0,0,0.1) 0 1px 4px 0;
+	box-shadow: rgba(0,0,0,0.1) 0 1px 4px 0;
+	border-radius: 8px;
+	}
+.post_date{width:65px;height:85px;position:relative;top:0px;right:0px;}
+.post_date .dateinfo{font-weight:normal;color:#b2b3b4;font-size:9px;margin:0px 0 0 0;display:block;text-align:center;}
+.post_date .day{font-weight:bold;color:#444;font-size:27px;margin:1px 0 0 0;display:block;text-align:center;}
+.post_date .month{color:#b2b3b4;font-size:15px;text-transform:uppercase;display:block;margin:-19px 0 0 0;text-align:center;}
+.post_date .year{color:#b2b3b4;font-size:14px;text-transform:uppercase;display:block;margin:-23px 0 0 0;text-align:center;}

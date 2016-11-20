@@ -1,0 +1,56 @@
+- name: MAPPA GENERALE
+  logo: /img/icone/11-comunicolpiti.png
+  map: true
+  link: mappa
+- name: Mappa Fabbisogni
+  logo: /img/icone/01-fabbisogni.png
+  map: true
+  link: 2016-09-22-mappa-fabbisogni
+- name: Mappa Contatti
+  logo: /img/icone/02-contatti.png
+  map: true
+  link: 2016-09-22-mappa-contatti
+- name: Mappa Alloggi
+  logo: /img/icone/03-alloggi.png
+  map: true
+  link: 2016-09-22-mappa-alloggi
+- name: Mappa Segnalazioni
+  logo: /img/icone/05-segnalazioni.png
+  map: true
+  link: 2016-09-01-mappa-segnalazioni
+- name: Mappa Viabilità
+  logo: /img/icone/09-traffico.png
+  map: true
+  link: 2016-08-25-mappa-traffico
+- name: Mappa Comuni Colpiti
+  logo: /img/icone/11-comunicolpiti.png
+  map: true
+  link: 2016-08-24-mappa-comuni-cratere
+- name: Foto Satellitari
+  logo: /img/icone/08-fotosatellitari.png
+  map: true
+  link: 2016-08-28-foto-satellitari
+- name: Risorse Openstreetmap
+  logo: /img/icone/07-openstreetmap.png
+  map: true
+  link: 2016-08-29-risorse-openstreetmap
+- name: SEGNALA
+  logo: /img/icone/segnala2-tci.png
+  map: false
+  link: segnala
+- name: ALLOGGI
+  logo: /img/icone/alloggi2-tci.png
+  map: false
+  link: alloggi
+- name: FABBISOGNI
+  logo: /img/icone/fabbisogni2-tci.png
+  map: false
+  link: fabbisogni
+- name: NEWS
+  logo: /img/icone/news2-tci.png
+  map: false
+  link: news
+- name: MAPPE
+  logo: /img/icone/11-comunicolpiti.png
+  map: false
+  link: mappe
