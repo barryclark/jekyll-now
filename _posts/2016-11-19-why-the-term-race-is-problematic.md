@@ -3,7 +3,7 @@ layout: post
 title: Why the term "Race" is Problematic
 tags: [culture, quora]
 keywords: [race, specie, species, social construct]
-excerpt: &quot;Race&quot; is more of a social construct than a biological distinction. That doesn’t mean &quot;races&quot; don’t exist, it just means it’s difficult, if not impossible, to label people with a distinct, finite number of races.
+excerpt: "&quot;Race&quot; is more of a social construct than a biological distinction. That doesn’t mean &quot;races&quot; don’t exist, it just means it’s difficult, if not impossible, to label people with a distinct, finite number of races."
 ---
 
 This is my answer to [this question](https://www.quora.com/Is-%E2%80%9Crace-%E2%80%9D-as-we-think-of-it-a-social-construct) on [Quora](https://www.quora.com).
