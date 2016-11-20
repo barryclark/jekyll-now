@@ -158,6 +158,22 @@
   location_gr: Νέο Ηράκλειο, Αττική, Ελλάδα
   location_en: Neo Iraklio, Attica, Greece
 
+- company_gr: Computer Lab
+  company_en: Computer Lab
+  url: http://www.userpc.gr
+  category_gr: Κατάστημα υπολογιστών
+  category_en: Computer shop
+  location_gr: Νίκαια, Αττική, Ελλάδα
+  location_en: Nikaia, Attica, Greece
+
+- company_gr: Host Chefs
+  company_en: Host Chefs
+  url: https://hostchefs.eu
+  category_gr: Δημιουργία και φιλοξενία ιστοσελίδων
+  category_en: Web page design and hosting
+  location_gr: Βόλος, Ελλάδα
+  location_en: Volos, Greece
+
 - company_gr: Hotwater
   company_en: Hotwater
   url: http://www.hotwater-shop.gr
