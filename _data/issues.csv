@@ -1,6 +1,6 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1332,190812161,2016-11-21 20:29:27,2016-11-21 19:27:08,Consegna materiale a Norcia ed Amatrice il 23/11,,,"[""Accettato"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""21/11/2016"", ""descrizione"": ""Gli Urban Kaos Terni in collaborazione con l'Associazione Colle Cresce - Colle Cresce Aiuto di Colle Val d'Elsa (SI) mercoledi 23/11 consegneranno a Norcia ed Amatrice il materiale raccolto per le popolazioni terremotate in particolare prodotti alimentari (compresi alimenti freschi), stufette, torcie, piumoni, giacconi, scarponi e altro materiale invernale. Per qualsiasi necessit\u00e0 ed esigenze si pu\u00f2 prendere contatti tramite la pagina facebook Urban Kaos Terni."", ""link"": """", ""titolo"": ""Consegna materiale a Norcia ed Amatrice il 23/11""}","<pre><yamldata>titolo: 'Consegna materiale a Norcia ed Amatrice il 23/11'
-descrizione: 'Gli Urban Kaos Terni in collaborazione con l''Associazione Colle Cresce - Colle Cresce Aiuto di Colle Val d''Elsa (SI) mercoledi 23/11 consegneranno a Norcia ed Amatrice il materiale raccolto per le popolazioni terremotate in particolare prodotti alimentari (compresi alimenti freschi), stufette, torcie, piumoni, giacconi, scarponi e altro materiale invernale. Per qualsiasi necessità ed esigenze si può prendere contatti tramite la pagina facebook Urban Kaos Terni.'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1332,190812161,2016-11-21 20:30:15,2016-11-21 19:27:08,Consegna materiale a Norcia ed Amatrice il 23/11,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""Pubblicare su FB""]",,,"{""data"": ""21/11/2016"", ""descrizione"": ""Gli Urban Kaos Terni in collaborazione con l'Associazione Colle Cresce - Colle Cresce Aiuto di Colle Val d'Elsa (SI) mercoledi 23/11 consegneranno a Norcia ed Amatrice il materiale raccolto per le popolazioni terremotate in particolare prodotti alimentari (compresi alimenti freschi), stufette, torce, piumoni, giacconi, scarponi e altro materiale invernale. Per qualsiasi necessit\u00e0 ed esigenze si pu\u00f2 prendere contatti tramite la pagina facebook Urban Kaos Terni."", ""link"": """", ""titolo"": ""Consegna materiale a Norcia ed Amatrice il 23/11""}","<pre><yamldata>titolo: 'Consegna materiale a Norcia ed Amatrice il 23/11'
+descrizione: 'Gli Urban Kaos Terni in collaborazione con l''Associazione Colle Cresce - Colle Cresce Aiuto di Colle Val d''Elsa (SI) mercoledi 23/11 consegneranno a Norcia ed Amatrice il materiale raccolto per le popolazioni terremotate in particolare prodotti alimentari (compresi alimenti freschi), stufette, torce, piumoni, giacconi, scarponi e altro materiale invernale. Per qualsiasi necessità ed esigenze si può prendere contatti tramite la pagina facebook Urban Kaos Terni.'
 link: ''
 data: 21/11/2016
 </yamldata></pre>",open
@@ -5354,6 +5354,17 @@ indirizzo: 'Viale Marina, San Mauro Pascoli, FC, Emilia-Romagna, 47030, Italia'
 lat: '44.1631101'
 lon: '12.4466459'
 link: 'https://m.facebook.com/laurella.cruiser?refid=0&fref=ts'
+immagine: ''
+data: 16/09/2016
+</yamldata></pre>
+",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/557,177482470,2016-09-22 14:02:15,2016-09-16 17:48:26,"Cesenatico, FC - Albergo Hotel Turquoise",44.2011897,12.4006894,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""Samantha Laghi: mio padre di Martino Antonio mette a disposizione il nostro albergo Hotel Turquoise a Cesenatico per accogliere tutti i terremotati del nord o del centro Italia!! Aiutatemi a condividere questo post affinch\u00e9 arrivi alle persone che hanno bisogno di aiuto!"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Viale Ginesio Marconi, Valverde, Cesenatico, FC, Emilia-Romagna, 47042, Italia"", ""lat"": ""44.2011897"", ""link"": ""https://www.facebook.com/photo.php?fbid=1189082911134025&set=a.253571851351807.61777.100000969814577&type=3&theater"", ""lon"": ""12.4006894"", ""tel"": ""054786116\t054786116""}","<pre><yamldata>tel: ""054786116\t054786116""
+email: ''
+descrizione: 'Samantha Laghi: mio padre di Martino Antonio mette a disposizione il nostro albergo Hotel Turquoise a Cesenatico per accogliere tutti i terremotati del nord o del centro Italia!! Aiutatemi a condividere questo post affinché arrivi alle persone che hanno bisogno di aiuto!'
+indirizzo: 'Viale Ginesio Marconi, Valverde, Cesenatico, FC, Emilia-Romagna, 47042, Italia'
+lat: '44.2011897'
+lon: '12.4006894'
+link: 'https://www.facebook.com/photo.php?fbid=1189082911134025&set=a.253571851351807.61777.100000969814577&type=3&theater'
 immagine: ''
 data: 16/09/2016
 </yamldata></pre>
