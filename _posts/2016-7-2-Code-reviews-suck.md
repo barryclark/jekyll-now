@@ -3,7 +3,7 @@ layout: post
 title: Code reviews suck
 ---
 
-!["rain" by William Gantz](/content/images/2016/07/85391227_7cfb5ab29e_o.jpg)
+!["rain" by William Gantz]({{ site.baseurl }}/images/85391227_7cfb5ab29e_o.jpg)
 
 If you work in software development, you're probably doing code reviews. If not, you may be either in a loosey goosey sort of place that hasn't caught up to general good practices, or you're part of a shop full of full stack ninja rockstars who write flawless code in less time than it takes most of us to copy and paste from Stack Overflow.
 

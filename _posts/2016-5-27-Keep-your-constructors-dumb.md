@@ -3,7 +3,7 @@ layout: post
 title: Keep your constructors dumb
 ---
 
-!["Construction site" image by Hugh Dutton Associés](/content/images/2016/05/10537026884_f640986794_k.jpg)
+!["Construction site" image by Hugh Dutton Associés]({{ site.baseurl }}/images/10537026884_f640986794_k.jpg)
 
 In a [Pluralsight course by John Papa](https://www.pluralsight.com/courses/angular-2-first-look) covering Angular 2, he made an offhand comment about how constructors should be kept as simple as possible, and though it was the first time I had heard this philosophy, it made a lot of sense. [Brendan Enrick on his blog post from back in 2009](http://brendan.enrick.com/post/Constructors-Should-Be-Simple-and-Stupid) goes into more detail that really reinforces the idea, but it boils down to making your objects easy to use in testing and to avoid hidden complexity. 
 

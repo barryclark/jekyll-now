@@ -4,7 +4,7 @@ title: More understandable C# APIs through flags
 ---
 
 
-![Image of flags hanging from the ceiling at the Nixon Presidential Library in Yorba Linda, California](/content/images/2016/04/775287_10100542294938588_2026077564_o-1.jpg)
+![Image of flags hanging from the ceiling at the Nixon Presidential Library in Yorba Linda, California]({{ site.baseurl }}/images/775287_10100542294938588_2026077564_o-1.jpg)
 
 Making your APIs more understandable and easy to use is a constant consideration in programming. When I say API, I don't just mean APIs exposed via HTTP or whatever protocol. I also mean any public interface that another component might invoke in an application. Documentation can fill in some blanks, but nothing beats an intuitive signature. Have you ever written a method whose invocations tend to look something like this?
 

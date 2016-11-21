@@ -3,7 +3,7 @@ layout: post
 title: Good functions step down the stairs of abstraction
 ---
 
-![](/content/images/2016/01/cleancode.jpg)
+![]({{ site.baseurl }}/images/cleancode.jpg)
 
 I've been reading [Clean Code](http://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882) by Robert C. Martin lately, otherwise known as [Uncle Bob](http://blog.cleancoder.com/), and it's really helped me think about how to better organize my code. I could gush on half a dozen topics from the book, and hope to in future blog posts, but one that immediately stood out was in his chapter on functions. Like many books, Bob says that you should keep your functions small, which then leads to needing to break up functions that do a lot of things into many sub-functions (many of which may be grouped into dependencies), but how do you know what functionality to place in those separate functions?
 

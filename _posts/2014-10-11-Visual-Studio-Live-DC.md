@@ -3,7 +3,7 @@ layout: post
 title: "Visual Studio Live: DC"
 ---
 
-![Visual Studio Live laptop bag swag](http://stuff.faaberg.org/images/vslivebag.jpg)
+![Visual Studio Live laptop bag swag]({{ site.baseurl }}/images/vslivebag.jpg)
 
 This year I decided to try to attend my first software development conference, and it ended up being [Visual Studio Live](http://vslive.com/) in Washington DC. The conference just concluded yesterday, and now that I'm back after a full day of travel and haven't entirely passed out yet, I wanted to put some impressions down for anyone else considering going to one of their future events.
 

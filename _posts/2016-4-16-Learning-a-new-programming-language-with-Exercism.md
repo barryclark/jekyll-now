@@ -3,7 +3,7 @@ layout: post
 title: Learning a new programming language with Exercism
 ---
 
-![Exercism](/content/images/2016/04/exercism.png)
+![Exercism]({{ site.baseurl }}/images/exercism.png)
 
 Recently I learned about [Exercism](http://exercism.io), a neat website and a command line program that allows you to work on exercises in a variety of languages. Each comes with a description of the problem and a suite of unit tests that your module must pass. Upon submitting your solution you can see the solutions that other users submitted. Anyone can comment on submitted code to offer tips on style or optimization strategies.
 

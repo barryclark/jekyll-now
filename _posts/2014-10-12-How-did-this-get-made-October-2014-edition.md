@@ -3,7 +3,7 @@ layout: post
 title: How did this get made, October 2014 edition
 ---
 
-![Orcas Island Dock](http://stuff.faaberg.org/images/orcasislanddocksmaller.jpg)
+![Orcas Island Dock]({{ site.baseurl }}/images/orcasislanddocksmaller.jpg)
 
 So I've had this blog for awhile but it laid dormant for a few months. Now I've decided to tweak the theme slightly and make it feel a little more like home. I thought I'd document my current blog set-up for anyone else who is considering setting up their own blog, as well as to be able to compare in the future to see how my site has evolved.
 
