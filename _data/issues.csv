@@ -4219,17 +4219,6 @@ link: 'http://www.regione.marche.it/Regione-Utile/Terremoto-Marche/Appalti?id_13
 data: 28/09/2016
 </yamldata></pre>
 ",closed
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/693,179631717,2016-11-11 14:29:15,2016-09-27 22:27:16,GIULIANO BARTOLOMEI,,,"[""Accettato"", ""Contatti"", ""Form""]",,,"{""data"": ""27/09/2016"", ""descrizione"": ""Informazioni e consulenza per accesso ad opportunit\u00e0, strumenti e finanziamenti per le imprese colpite dal sisma del 24 agosto e vogliono ripartire e/o partire (start-up) con la propria attivit\u00e0 economica."", ""email"": ""fideas@topnet.it"", ""indirizzo"": """", ""lat"": """", ""link"": ""http://www.fideas.it"", ""lon"": """", ""nome"": ""GIULIANO BARTOLOMEI"", ""tel"": ""335373271""}","<pre><yamldata>nome: 'GIULIANO BARTOLOMEI'
-tel: '335373271'
-email: fideas@topnet.it
-descrizione: 'Informazioni e consulenza per accesso ad opportunità, strumenti e finanziamenti per le imprese colpite dal sisma del 24 agosto e vogliono ripartire e/o partire (start-up) con la propria attività economica.'
-indirizzo: ''
-lat: ''
-lon: ''
-link: 'http://www.fideas.it'
-data: 27/09/2016
-</yamldata></pre>
-",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/692,179613068,2016-10-02 08:48:12,2016-09-27 21:03:00,Raccolta fondi per il Monastero Benedettino di Norcia,,,"[""Accettato"", ""Bollettino"", ""Raccolte Fondi"", ""Twitter""]",,,"{""bic"": """", ""causale"": ""CNSP \u2013 Raccolta fondi terremoto 2016 \u2013 Monastero Benedettino di Norcia"", ""chi"": ""Raccolta fondi per il Monastero Benedettino di Norcia"", ""data"": ""27/09/2016"", ""descrizione"": ""La raccolta fondi servir\u00e0 a restaurare la Basilica e il Monastero, seriamente danneggiati dal sisma e ad oggi inagibili, nonch\u00e9 al sostegno delle popolazioni assistite dai minaci."", ""email"": """", ""iban"": ""IT88T0200801107000103966047"", ""intestazione"": ""Associazione Amici del Summorum Pontificum"", ""link"": ""http://www.summorumpontificum.org/?p=1030"", ""postale"": """"}","<pre><yamldata>chi: 'Raccolta fondi per il Monastero Benedettino di Norcia'
 descrizione: 'La raccolta fondi servirà a restaurare la Basilica e il Monastero, seriamente danneggiati dal sisma e ad oggi inagibili, nonché al sostegno delle popolazioni assistite dai minaci.'
 intestazione: 'Associazione Amici del Summorum Pontificum'
