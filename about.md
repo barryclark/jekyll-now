@@ -22,9 +22,9 @@ Github:  https://github.com/3gstudent
 ### Previous Posts on Drops ( Incomplete List )
 
 - A dirty way of tricking users to bypass UAC
-- Bypass McAfee Application Control——Code Execution.html
+- Bypass McAfee Application Control——Code Execution
 - Bypass McAfee Application Control——Write&Read Protection
-- Bypass Windows AppLocker.html
+- Bypass Windows AppLocker
 - CPL文件利用介绍
 - JavaScript Backdoor
 - JavaScript Phishing
