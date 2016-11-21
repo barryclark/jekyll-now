@@ -1,11 +1,11 @@
 (function() {
-    Set.prototype.intersection = function(setB) {
-        var intersection = new Set([...this].filter(x => setB.has(x)));
+    function arrayIntersect(array1,array2) {
+        var intersection = $.grep(array1,function(n,i) { return array2.indexOf(n) >= 0; });
         return intersection;
-    }
+    };
 
     function displayDoc(item) {
-        appendString = "";
+        var appendString = "";
         appendString += '<a href="' + item.url + '" class="list-group-item">';
         appendString += '<div class="panel panel-default">';
         appendString += '<div class="panel-heading">';
@@ -20,19 +20,15 @@
         appendString += '<div class="panel-body">';
 
         appendString += '<small>';
-        appendString += '<p class="list-group-item-text">' + item.content.substring(0, 250) + '...</p>'
-        appendString += '<p class="list-group-item-text">' + item.date + '</p>'
+        appendString += '<p class="list-group-item-text">' + item.content.substring(0, 250) + '...</p>';
+        appendString += '<p class="list-group-item-text">' + item.date + '</p>';
         appendString += '</small>';
 
         appendString += '</div>';
         appendString += '<div class="panel-footer">';
-        itemLabels = new Set(item.label.split(','));
-        itemLabels = itemLabels.intersection(usedLabels);
+        var itemLabels = item.label.split(',');
+        var printLabels = arrayIntersect(itemLabels,usedLabels);
 
-        printLabels = [];
-        itemLabels.forEach(function(value) {
-            printLabels.push(value);
-        });
         appendString += printLabels.join('|');
         appendString += '</div>';
         appendString += '</div>';
@@ -83,7 +79,7 @@
                     }
                 }
             }
-            )
+            );
             appendString += '</div>';
 
             appendString += '<div class="panel-group">';
@@ -94,7 +90,7 @@
                     }
                 }
             }
-            )
+            );
             appendString += '</div>';
 
             searchResults.html(appendString);
@@ -146,7 +142,7 @@
         NProgress.done();
     }
 
-    var usedLabels= new Set([ "Alloggi", "acquisto solidale", "Bollettino", "Bufale", "Contatti", "Donazioni", "Fabbisogni", "Notizie Utili", "Raccolte Fondi",]);
+    var usedLabels= ["Alloggi", "acquisto solidale", "Bollettino", "Bufale", "Contatti", "Donazioni", "Fabbisogni", "Notizie Utili", "Raccolte Fondi",];
 
     var searchTerm = getQueryVariable('query');
     var searchLabel = getQueryVariable('label');
