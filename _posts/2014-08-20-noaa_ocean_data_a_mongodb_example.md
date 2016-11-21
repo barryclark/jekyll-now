@@ -1,6 +1,7 @@
 ---
 title: NOAA ocean data - A MongoDB example
 author: kgorman
+comments: true
 layout: post
 ---
 
@@ -25,7 +26,7 @@ There are two main collections:
 
 Stations is metadata about each station (buoy). I pulled this list and converted it as a static list. Each document looks like:
 
-~~~ javascript
+``` javascript
 > db.stations.findOne()
 {
 	"_id" : ObjectId("53744abad3a11771ea04bac4"),
@@ -54,12 +55,12 @@ Stations is metadata about each station (buoy). I pulled this list and converted
 		}
 	]
 }
-~~~
+```
 
 
 The ocean_data collection is populated with the latest data each time fetcher.py runs. I process down each document to clean up the schema a bit, and end up with a data structure that looks like this:
 
-~~~ javascript
+```javascript
 > db.ocean_data.findOne()
 {
 	"_id" : ObjectId("53e4fcc42239c23dce3cb7bc"),
@@ -104,11 +105,12 @@ The ocean_data collection is populated with the latest data each time fetcher.py
 	"fetch_date" : ISODate("2014-08-08T16:37:22.640Z"),
 	"id" : 8461490
 }
-~~~
+```
+
 
 I took care to alter the data model with how this data set would be used in mind. The source data presents a nested 'products' array, but for simplification purposes I flatten that structure and just have a simple array with each product represented with it's name, and various parameters. Products simply refers to the various attributes being captured (temps, pressures, etc). I have limited them statically in fetcher.py to keep things simple:
 
-~~~ python
+``` python
 products = [
     'water_temperature',
     'air_temperature',
@@ -118,11 +120,11 @@ products = [
     'air_pressure',
     'salinity'
     ]
-~~~
+```
 
 Once created we need to create some indexes. In this case we can create a MongoDB geo-index on the lat/long pairs.
 
-~~~ javascript
+``` javascript
 > db.ocean_data.ensureIndex({"loc":"2dsphere"},{"background":true});
 > db.ocean_data.ensureIndex({"products.name":-1},{"background":true});
 > db.ocean_data.ensureIndex({"products.t":-1},{"background":true});
@@ -173,14 +175,14 @@ Once created we need to create some indexes. In this case we can create a MongoD
 		"background" : true
 	}
 ]
-~~~
+```
 
 And let's be sure to shard it so we can grow over time and continue to be fast
 
-~~~ javascript
+``` javascript
 sh.enableSharding("ocean"); // you don't need to do this on ObjectRocket
 sh.shardCollection("ocean.ocean_data", { "station_id":"hashed" });
-~~~
+```
 
 
 A couple interesting things come to mind about the data being organized in this manner:
@@ -196,7 +198,7 @@ A couple interesting things come to mind about the data being organized in this 
 
 This data isn't super interesting if you can't ask questions of it. For instance, we can look at average temperatures over time:
 
-~~~ javascript
+``` javascript
 // get average values group by year, and by product, where product = water temp
  db.ocean_data.aggregate(
    [
@@ -235,11 +237,11 @@ This data isn't super interesting if you can't ask questions of it. For instance
 	],
 	"ok" : 1
 }
-~~~
+```
 
 But what if we want to query the average temperatures by year for stations near San Diego CA? (MongoDB 2.4+)
 
-~~~ javascript
+``` javascript
 // add geo into the mix, stations near San Diego, group by date
 db.ocean_data.aggregate(
     [
@@ -285,7 +287,7 @@ db.ocean_data.aggregate(
 	"ok" : 1
 }
 
-~~~
+```
 
 ## Doing it yourself
 If you want to play with this data set yourself you have two choices. You can pull the dump file from my repo and get at it right away, or you can setup fetcher to start pulling data into your database on a timed basis.  See my [Github page](https://github.com/kgorman/ocean) for details! Enjoy.

@@ -1,6 +1,7 @@
 ---
 title: Backing up Oracle optimizer statistics
 author: kgorman
+comments: true
 layout: post
 permalink: backing-up-oracle-optimzer-stats
 fave-post_views:

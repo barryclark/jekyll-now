@@ -1,6 +1,7 @@
 ---
 title: Partially D podcast and beer for dinner
 author: kgorman
+comments: true
 layout: post
 categories:
 - database

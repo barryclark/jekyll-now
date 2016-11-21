@@ -1,6 +1,7 @@
 ---
 title: 'Performance Tuning: Be Proactive'
 author: kgorman
+comments: true
 layout: post
 permalink: performance-tuning-be-proactive
 fave-post_views:

@@ -1,6 +1,7 @@
 ---
 title: Hello Eventador Labs
 author: kgorman
+comments: true
 layout: post
 categories:
 - eventador

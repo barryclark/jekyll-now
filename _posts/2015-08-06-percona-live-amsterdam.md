@@ -1,6 +1,7 @@
 ---
 title: Percona Live Europe 2015
 author: kgorman
+comments: true
 layout: post
 categories:
 - mongodb

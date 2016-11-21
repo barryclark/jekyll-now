@@ -1,6 +1,7 @@
 ---
 title: The benefits of testing
 author: kgorman
+comments: true
 layout: post
 permalink: the-benefits-of-testing
 fave-post_views:

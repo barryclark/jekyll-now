@@ -1,6 +1,7 @@
 ---
 title: The history of mongostat
 author: kgorman
+comments: true
 layout: post
 ---
 

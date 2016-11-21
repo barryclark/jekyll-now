@@ -1,6 +1,7 @@
 ---
 title: Gaining perspective on the fallen
 author: kgorman
+comments: true
 layout: post
 categories:
 - database

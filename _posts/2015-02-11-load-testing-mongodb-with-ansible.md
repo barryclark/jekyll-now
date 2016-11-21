@@ -1,6 +1,7 @@
 ---
 title: Load testing MongoDB with sysbench-mongodb and Ansible
 author: kgorman
+comments: true
 layout: post
 categories:
 - mongodb

@@ -13,9 +13,10 @@ tags:
   - Oracle
   - Python
 ---
-I recently created some utility functions to startup, mount and stop Oracle via cx_Oracle and thought I would share them. You will want to make sure you have <a href=http://www.orafaq.com/wiki/Oracle\_database\_Security_FAQ>password files</a> setup correctly in order for this stuff to work.
+I recently created some utility functions to startup, mount and stop Oracle via cx_Oracle and thought I would share them. You will want to make sure you have [password files](http://www.orafaq.com/wiki/Oracle_database_Security_FAQ) setup correctly in order for this stuff to work.
 
-<pre lang="python"># shutdown abort:
+```python
+# shutdown abort:
 def shutdown_abort(sid):
  try:
    os.environ['TWO_TASK']=sid
@@ -86,4 +87,4 @@ def flashback_db(restore_point,sid):
  except cx_Oracle.DatabaseError,info:
    print "Error: ",info
    os.exit(1)
-</pre>
+```

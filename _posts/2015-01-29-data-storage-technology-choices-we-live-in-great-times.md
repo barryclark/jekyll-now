@@ -1,6 +1,7 @@
 ---
 title: Data storage technology choices, we live in great times
 author: kgorman
+comments: true
 layout: post
 ---
 

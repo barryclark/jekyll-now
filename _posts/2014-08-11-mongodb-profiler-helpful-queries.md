@@ -1,6 +1,7 @@
 ---
 layout: post
 title: MongoDB profiler helpful queries
+comments: true
 ---
 
 I thought I would post up some useful queries to analyze profiler output. I created a [gist](https://gist.github.com/kgorman/134896c7414fde8e090b) on GitHub with some of them, and enumerated a couple of the more interesting ones in this post.
@@ -22,23 +23,23 @@ The name of the game with workload tuning using the profiler is to widdle down t
 
 The most useful query is to simply sort on response time:
 
-~~~ javascript
+``` javascript
 // top 10 slowest queries
 //
 db.system.profile.find({}).sort({"$millis":-1}).limit(10);
-~~~
+```
 
 Other times it's good to see the data by the latest queries as they come in:
 
-~~~ javascript
+``` javascript
 // top 10 latest queries
 //
 db.system.profile.find({}).sort({"$natural":-1}).limi(10);
-~~~
+```
 
 But you can really start getting deeper by using the aggregation framework against the profiler collection. This query gets you a breakdown by namespace:
 
-~~~ javascript
+``` javascript
 // slowest by namespace
 //
 db.system.profile.aggregate(
@@ -51,13 +52,11 @@ db.system.profile.aggregate(
 {$sort: {
  "max response time":-1}
 });
-
-
-~~~
+```
 
 Going further, you can figure out the response time of various operations using this.  If you aren't familar with the concept of response time analysis for database performance, you can check out [Craigs paper](http://people.cis.ksu.edu/~hankley/d560/Oracle/Notes/Shallahamer%20RT6b.pdf) that basically defines the practice (albiet for Oracle systems.)
 
-~~~ javascript
+``` javascript
 db.system.profile.aggregate([
 	{ $project : {
 			"op" : "$op",
@@ -100,7 +99,7 @@ db.system.profile.aggregate([
                 { $avg : "$timeLockedMicroswMS" } }
 	}
 ]);
-~~~
+```
 
 ## Tuning
 

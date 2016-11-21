@@ -1,6 +1,7 @@
 ---
 title: Ansible for Database Management
 author: Kenny Gorman
+comments: true
 layout: post
 categories:
     - database management

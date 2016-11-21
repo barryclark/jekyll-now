@@ -1,6 +1,7 @@
 ---
 title: My favorite Atom editor settings
 author: kgorman
+comments: true
 layout: post
 categories:
 - Developers

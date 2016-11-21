@@ -20,15 +20,15 @@ author:
 
 paginate:         5
 
-# Custom vars
-version:          2.1.0
-
-markdown: kramdown
-highlighter: rouge
+markdown:         kramdown
+highlighter:      rouge
+kramdown:
+    input: GFM
+    syntax_highlighter: rouge
 permalink: /:title
 
 # The release of Jekyll Now that you're using
-version: v1.0.0
+version: 3.3
 
 # Set the Sass partials directory, as we're using @imports
 sass:
@@ -42,4 +42,7 @@ exclude:
     - LICENSE
     - README.md
 
-gems: [jekyll-paginate]
+gems:
+    - jekyll-seo-tag
+    - jekyll-sitemap
+    - jekyll-paginate

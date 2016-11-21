@@ -1,6 +1,7 @@
 ---
 title: My next chapter at Rackspace
 author: kgorman
+comments: true
 layout: post
 categories:
 - objectrocket

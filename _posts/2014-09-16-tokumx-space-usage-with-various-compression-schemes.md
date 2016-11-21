@@ -1,6 +1,7 @@
 ---
 title: TokuMX space usage with various compression schemes
 author: kgorman
+comments: true
 layout: post
 ---
 
@@ -22,19 +23,19 @@ Let's just jump right to the results, they speak for themselves.
 
 - *Total Disk Footprint* is the total file system usage (including oplog, ns, etc) for the instance. This is measured on the OS as:
 
-~~~javascript
+```javascript
 du -k
-~~~
+```
 
 - *Total Data* is the size of the intra-database storage usage. This is measured in the Database as:
 
-~~~javascript
+```javascript
 // TokuMX
 db.ocean_data.stats['storageSize']+
 db.ocean_data.stats['totalIndexStorageSize']
 // MongoDB
 db.ocean_data.stats['storageSize']
-~~~
+```
 
 ## Testing Environment
 
@@ -47,7 +48,7 @@ db.ocean_data.stats['storageSize']
 
 The dataset for this test is some of the NOAA sample data I [posted about previously](http://www.kennygorman.com/noaa_ocean_data_a_mongodb_example/). It's about 500,000 documents and just 1 secondary index. Each document has the following structure:
 
-~~~javascript
+```javascript
 db.ocean_data.findOne()
 {
 	"_id" : ObjectId("53e4fc2a2239c2398fd45521"),
@@ -108,7 +109,7 @@ db.ocean_data.findOne()
 		"name" : "station_id_-1"
 	}
 ]
-~~~
+```
 
 Here are the settings and raw output from the test.
 

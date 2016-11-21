@@ -1,6 +1,7 @@
 ---
 title: Thank you England and WTF Big Data.
 author: kgorman
+comments: true
 layout: post
 categories:
   - MongoDB

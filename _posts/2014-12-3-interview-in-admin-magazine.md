@@ -1,6 +1,7 @@
 ---
 title: Interview in Admin Magazine
 author: kgorman
+comments: true
 layout: post
 categories:
 - objectrocket
