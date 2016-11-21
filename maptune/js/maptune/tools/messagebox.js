@@ -84,6 +84,7 @@ function getMessageContent(messagType, header, content) {
         + '</div>';
     }
     else if (messagType == MESSAGE_TYPE.Lightbox) {
+		header = "<div style='float:left;max-width:90%'>"+header+"</div>"
         header += "<div style='float:right;margin-right:0.7em;margin-top:-0.2em;'>"
         + "<a id='MsgOkButton' href='#' data-role='button' data-theme='a'><div style='font-family:verdana;margin:2px;'>x</div></a>"
         + "</div>";

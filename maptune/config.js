@@ -51,9 +51,34 @@
 
 	};
 
+
 	maptune.jsapi.onGetIcon = function(icon,info,i) {
-		if ( info.properties.labels.match(/Alloggi/)){
-			icon.image = "resources/icons/map-icons-collection/lodging_0star.png";
+
+		if ( icon.image.match(/small/)){
+			if ( info.properties.state == "closed" ) {
+				if ( info.properties.labels.match(/Fabbisogni/) ){
+					icon.image = "resources/icons/default-closed/default-small_red.png";
+				}
+				if ( info.properties.labels.match(/Alloggi/) ){
+					icon.image = "resources/icons/default-closed/default-small_dark_green.png";
+				}
+				if ( info.properties.labels.match(/Donazioni/) ){
+					icon.image = "resources/icons/default-closed/default-small_light_green.png";
+				}
+				if ( info.properties.labels.match(/Contatti/) ){
+					icon.image = "resources/icons/default-closed/default-small_blue.png";
+				}
+				if ( info.properties.labels.match(/Notizie Utili/) ){
+					icon.image = "resources/icons/default-closed/default-small_yellow.png";
+				}
+			}
+
+			return icon;
+		}
+		if ( info.properties.state == "closed" ) {
+			if ( info.properties.labels.match(/Fabbisogni/) ){
+				icon.image = "resources/icons/default-closed/default_red.png";
+			}
 		}
 		return icon;
 	}
@@ -71,7 +96,25 @@
 
 
 	maptune.jsapi.onOpenInfoWindow = function(szInfo,info,szContext) {
+
 		if ( szContext == "sidebar" ){
+
+			szFilter = "";
+			if ( info.properties.labels.match(/Alloggi/)){
+				szFilter = "Alloggi";
+			}else
+			if ( info.properties.labels.match(/Fabbisogni/)){
+				szFilter = "Fabbisogni";
+			}else
+			if ( info.properties.labels.match(/Contatti/)){
+				szFilter = "Contatti";
+			}else
+			if ( info.properties.labels.match(/Donazioni/)){
+				szFilter = "Donazioni";
+			}else
+			if ( info.properties.labels.match(/Notizie Utili/)){
+				szFilter = "Notizie Utili";
+			}
 
 			var szZoomTo  = "<div style='float:right;margin-top:-1em;'>";
 				szZoomTo += maptune.jsapi.getZoomLink(info.geometry.coordinates[1]+","+info.geometry.coordinates[0]);
@@ -81,6 +124,11 @@
 				szZoomTo += "<a href='javascript:maptune.jsapi.forceMap();'><span class='glyphicon glyphicon-map-marker' aria-hidden='true' style='font-size:2em'></span></a>";
 				szZoomTo += "</div>";
 			szInfo += szZoomTo;
+			var szZoomTo  = "<div style='float:right;margin-top:-1em;'>";
+				szZoomTo += "<a href='javascript:maptune.jsapi.setSearchFilter(\""+szFilter+"\");'><span class='glyphicon glyphicon-filter' aria-hidden='true' style='font-size:2em'></span></a>";
+				szZoomTo += "</div>";
+			szInfo += szZoomTo;
+
 		}else{
 			if ( !szInfo.match(/descrizione/) ){
 				szInfo += info.properties.data.descrizione;
@@ -114,9 +162,10 @@
 		nDays = nDays || 1;
 		d.setDate(d.getDate()-nDays);
 
-		var szToday = d.toLocaleString();
-		var dateA = szToday.split(",")[0].split("/");
-		starttime = (Number(dateA[2])+"-"+Number(dateA[1]).pad(2)+"-"+Number(dateA[0]).pad(2)) + "T00:00:00";
+		var year = d.getYear();
+		var month = d.getMonth();
+		var day = d.getDate();
+		starttime = (Number(year+1900).pad(2)+"-"+Number(month+1).pad(2)+"-"+Number(day+1).pad(2)) + "T00:00:00";
 
 		maptune.addFeedLayer('http://webservices.ingv.it/fdsnws/event/1/query?starttime='+starttime+'&minmag=0&maxmag=10&mindepth=0&maxdepth=1000&minlat=-90&maxlat=90&minlon=-180&maxlon=180&minversion=100&orderby=time-asc&format=kml&limit=4000',
 			{
@@ -129,7 +178,7 @@
 				'markerType' : 'symbol',
 				'markerImageType' : 'png',
 				'initListState' : 'noinfo',
-				'sort' : 'timeDown',
+				'sort' : 'timeDown'
 				},
 			parser: 
 				{
@@ -142,7 +191,8 @@
 								return new Date(date);
 							},
 				},
-			proxy:true
+			proxy:true,
+			refresh:60
 			});
 		};
 
@@ -155,9 +205,10 @@
 		nDays = nDays || 1;
 		d.setDate(d.getDate()-nDays);
 
-		var szToday = d.toLocaleString();
-		var dateA = szToday.split(",")[0].split("/");
-		starttime = (Number(dateA[2])+"-"+Number(dateA[1]).pad(2)+"-"+Number(dateA[0]).pad(2)) + "T00:00:00";
+		var year = d.getYear();
+		var month = d.getMonth();
+		var day = d.getDate();
+		starttime = (Number(year+1900).pad(2)+"-"+Number(month+1).pad(2)+"-"+Number(day+1).pad(2)) + "T00:00:00";
 
 		maptune.addFeedLayer('http://webservices.ingv.it/fdsnws/event/1/query?starttime='+starttime+'&minmag=0&maxmag=10&mindepth=0&maxdepth=1000&minlat=-90&maxlat=90&minlon=-180&maxlon=180&minversion=100&orderby=time-asc&format=geojson&limit=4000',
 			{
@@ -188,7 +239,8 @@
 								    'pow': 2
 								  }
 			},
-			proxy:true
+			proxy:true,
+			refresh:60
 			});
 		};
 
@@ -201,9 +253,10 @@
 		nDays = nDays || 1;
 		d.setDate(d.getDate()-nDays);
 
-		var szToday = d.toLocaleString();
-		var dateA = szToday.split(",")[0].split("/");
-		starttime = (Number(dateA[2])+"-"+Number(dateA[1]).pad(2)+"-"+Number(dateA[0]).pad(2)) + "T00:00:00";
+		var year = d.getYear();
+		var month = d.getMonth();
+		var day = d.getDate();
+		starttime = (Number(year+1900).pad(2)+"-"+Number(month+1).pad(2)+"-"+Number(day+1).pad(2)) + "T00:00:00";
 
 		maptune.addFeedLayer('http://webservices.ingv.it/fdsnws/event/1/query?starttime='+starttime+'&minmag=0&maxmag=10&mindepth=0&maxdepth=1000&minlat=-90&maxlat=90&minlon=-180&maxlon=180&minversion=100&orderby=time-asc&format=atom&limit=4000',
 			{
@@ -227,7 +280,8 @@
 								    'pow' : 2
 								  }
 				},
-			proxy:true
+			proxy:true,
+			refresh:60
 			});
 		};
 

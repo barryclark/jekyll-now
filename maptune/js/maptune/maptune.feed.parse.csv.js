@@ -258,17 +258,23 @@ maptune.feed.parse = maptune.feed.parse || {};
 					// start and end time
 					// ------------------
 					if ( timeStart ){
-						var d1 =  new Date(timeStart);
+						var d1 = null;
 						if ( parser.timeParse ){
 							d1 = parser.timeParse(timeStart);
+						}else{
+							timeStart = timeStart.replace(/-/g,"/");
+							var d1 =  new Date(timeStart);
 						}
 						feature.properties.utime = d1.getTime();
 						feature.properties.utimeStart = d1.getTime();
 					}
 					if ( timeEnd ){
-						var d2 =  new Date(timeEnd);
+						var d2 = null;
 						if ( parser.timeParse ){
 							d2 = parser.timeParse(timeEnd);
+						}else{
+							timeEnd = timeStart.replace(/-/g,"/");
+							var d2 =  new Date(timeEnd);
 						}
 						feature.properties.utimeEnd = d2.getTime();
 					}
