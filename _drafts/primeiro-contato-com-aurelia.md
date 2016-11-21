@@ -17,8 +17,6 @@ twitter_text: 'Tendo o primeiro contato com o Framework Aurelia'
 
 ## Introdução
 
-Olá pessoal, depois de muito tempo sem conteúdo a **CodeShare está de volta!!!** A partir de agora como o time de autores da **CodeShare** está maior, a frequência de novos conteúdos irá aumentar bastante e iremos falar sobre diversos assuntos e tecnologias, então fique ligado!!!  
-
 Você deve estar pensando - **"WTF??? Outro Framework JavaScript???"** - sim, sim. Porém o **Aurelia** me chamou a atenção por causa de alguns pontos, entre eles:
 
 - Simples de se usar
