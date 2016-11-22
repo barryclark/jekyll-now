@@ -27,7 +27,6 @@ navbar-links:
   Offerte:
     - Risorse: "risorse-disponibili/"
     - Alloggi: "alloggi/"
-    - Link: "link_utili/"
   Raccolte Fondi:
     - Fondi: "fondi/"
     - Acquisti Solidali: "acquistisolidali/"
@@ -40,6 +39,7 @@ navbar-links:
   Utilità:
     - Mappe: "mappe/"
     - Opendata: "opendata/"
+    - Link e contatti utili: "link_utili/"
   Il Progetto:
    - About: "about/"
    - Contribuisci: 'https://github.com/emergenzeHack/terremotocentro/wiki" target="_blank'
