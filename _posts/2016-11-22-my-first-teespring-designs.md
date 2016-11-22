@@ -16,15 +16,12 @@ Without further ado, the shirts are:
 
 <a href="https://teespring.com/i-d-rather-be-camping-2016" target="_blank"><figure>
 <img src="\images\teespring\camping-shirt.png" alt="I'd Rather Be Camping T-Shirt" title="I'd Rather Be Camping T-Shirt" />
-<figcaption>I'd Rather Be Camping T-Shirt</figcaption>
-</figure></a>
+<figcaption>I'd Rather Be Camping T-Shirt</figcaption></figure></a>
 
 <a href="https://teespring.com/new-black-html-sarcasm-end-ta" target="_blank"><figure>
 <img src="\images\teespring\white-sarcasm-shirt.png" alt="White HTML Sarcasm T-Shirt" title="White HTML Sarcasm T-Shirt" />
-<figcaption>White HTML Sarcasm T-Shirt</figcaption>
-</figure></a>
+<figcaption>White HTML Sarcasm T-Shirt</figcaption></figure></a>
 
 <a href="https://teespring.com/black-html-sarcasm-end-tag" target="_blank"><figure>
 <img src="\images\teespring\black-sarcasm-shirt.png" alt="Black HTML Sarcasm T-Shirt" title="Black HTML Sarcasm T-Shirt" />
-<figcaption>Black HTML Sarcasm T-Shirt</figcaption>
-</figure></a>
+<figcaption>Black HTML Sarcasm T-Shirt</figcaption></figure></a>
