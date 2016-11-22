@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1337,190977718,2016-11-22 11:45:00,2016-11-22 11:43:35,Lavatrice e asciugatrice #Cascia,42.71867351380065,13.01804780960083,"[""Accettato"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""Lavatrice e asciugatrice #Cascia"", ""data"": ""22/11/2016"", ""descrizione"": ""A Cascia (PG) servirebbe un'asciugatrice e una lavatrice piccola con il cestello sopra. Indirizzo: viale Cavour, 32 - 06043. Persona di riferimento Dr. Cariani Simone."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Viale Cavour, Cascia, PG, UMB, 06043, Italia"", ""lat"": ""42.71867351380065"", ""link"": """", ""lon"": ""13.01804780960083"", ""tel"": ""3383202296""}","<pre><yamldata>tel: '3383202296'
+email: ''
+cosa: 'Lavatrice e asciugatrice #Cascia'
+descrizione: 'A Cascia (PG) servirebbe un''asciugatrice e una lavatrice piccola con il cestello sopra. Indirizzo: viale Cavour, 32 - 06043. Persona di riferimento Dr. Cariani Simone.'
+indirizzo: 'Viale Cavour, Cascia, PG, UMB, 06043, Italia'
+lat: '42.71867351380065'
+lon: '13.01804780960083'
+link: ''
+immagine: ''
+data: 22/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1332,190812161,2016-11-21 20:30:15,2016-11-21 19:27:08,Consegna materiale a Norcia ed Amatrice il 23/11,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""Pubblicare su FB""]",,,"{""data"": ""21/11/2016"", ""descrizione"": ""Gli Urban Kaos Terni in collaborazione con l'Associazione Colle Cresce - Colle Cresce Aiuto di Colle Val d'Elsa (SI) mercoledi 23/11 consegneranno a Norcia ed Amatrice il materiale raccolto per le popolazioni terremotate in particolare prodotti alimentari (compresi alimenti freschi), stufette, torce, piumoni, giacconi, scarponi e altro materiale invernale. Per qualsiasi necessit\u00e0 ed esigenze si pu\u00f2 prendere contatti tramite la pagina facebook Urban Kaos Terni."", ""link"": """", ""titolo"": ""Consegna materiale a Norcia ed Amatrice il 23/11""}","<pre><yamldata>titolo: 'Consegna materiale a Norcia ed Amatrice il 23/11'
 descrizione: 'Gli Urban Kaos Terni in collaborazione con l''Associazione Colle Cresce - Colle Cresce Aiuto di Colle Val d''Elsa (SI) mercoledi 23/11 consegneranno a Norcia ed Amatrice il materiale raccolto per le popolazioni terremotate in particolare prodotti alimentari (compresi alimenti freschi), stufette, torce, piumoni, giacconi, scarponi e altro materiale invernale. Per qualsiasi necessità ed esigenze si può prendere contatti tramite la pagina facebook Urban Kaos Terni.'
 link: ''
