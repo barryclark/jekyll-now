@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1339,191040800,2016-11-22 15:39:12,2016-11-22 15:38:32,A Fiastra (Mc) servono almeno 5 generatori da 3 a 10 kw,43.0361407,13.1554547,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""A Fiastra (Mc) servono almeno 5 generatori da 3 a 10 Kw"", ""data"": ""22/11/2016"", ""descrizione"": ""A Fiastra, in provincia di Macerata, il sindaco chiede aiuto per trovare almeno 5 generatori, ma se possibile anche di pi\u00f9, da 3 a 10 kw per le famiglie che vivono nelle tende e nelle roulotte. Per contatti: Maurizio, geometra comunale."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via Roma, Fiastra, MC, Marche, 62035, Italia"", ""lat"": ""43.0361407"", ""link"": """", ""lon"": ""13.1554547"", ""tel"": ""339 5803585""}","<pre><yamldata>tel: '339 5803585'
+email: ''
+cosa: 'A Fiastra (Mc) servono almeno 5 generatori da 3 a 10 Kw'
+descrizione: 'A Fiastra, in provincia di Macerata, il sindaco chiede aiuto per trovare almeno 5 generatori, ma se possibile anche di più, da 3 a 10 kw per le famiglie che vivono nelle tende e nelle roulotte. Per contatti: Maurizio, geometra comunale.'
+indirizzo: 'Via Roma, Fiastra, MC, Marche, 62035, Italia'
+lat: '43.0361407'
+lon: '13.1554547'
+link: ''
+immagine: ''
+data: 22/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1338,191021767,2016-11-22 14:28:40,2016-11-22 14:28:18,Bando Associazione Produttori Caravan per Comuni colpiti dal sisma,,,"[""Accettato"", ""Bollettino"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""22/11/2016"", ""descrizione"": ""A soli due mesi dall\u2019assegnazione dei premi per i Bandi 2016, avvenuta lo scorso settembre durante il Salone del Camper presso Fiere di Parma, l\u2019APC \u2013 Associazione Produttori Caravan e Camper \u00e8 gi\u00e0 pronta alla campagna di lancio dei Bandi del prossimo anno, con interessantissime novit\u00e0. Infatti, per il 2017 il Bando \u201cI Comuni del Turismo in Libert\u00e0\u201d, giunto alla XVI edizione, oltre alle classiche categorie \u201cNord Italia\u201d, \u201cCentro Italia\u201d, \u201cSud e Isole\u201d e \u201cProgetti di ristrutturazione e implementazione di aree di sosta gi\u00e0 esistenti\u201d, prevede anche la voce \u201cStraordinaria \u2013 Comuni terremotati dal sisma 2016 (Centro Italia)\u201d, completamente dedicata alle zone colpite dal terremoto dei mesi scorsi. Il contributo messo a disposizione da APC per l\u2019amministrazione vincitrice di questa nuova categoria sar\u00e0 di ben 30.000 euro: tutti i Comuni che, secondo la Protezione Civile, sono stati colpiti, potranno presentare progetti di un\u2019area di sosta multifunzionale che potr\u00e0 essere utilizzata prima come area destinata alla Protezione Civile e, in un secondo tempo, a favorire la ripresa economica del territorio attraverso l\u2019accoglienza dei Turisti in Libert\u00e0. Proprio questa peculiarit\u00e0 sar\u00e0 positivamente apprezzata nella valutazione dei progetti previsti per questa categoria speciale."", ""link"": ""http://www.frontierarieti.com/wordpress/camper-bandi-2017-apc-mette-disposizione-premio-30000-euro-comuni-colpiti-terremoto"", ""titolo"": ""Bando Associazione Produttori Caravan per Comuni colpiti dal sisma""}","<pre><yamldata>titolo: 'Bando Associazione Produttori Caravan per Comuni colpiti dal sisma'
 descrizione: 'A soli due mesi dall’assegnazione dei premi per i Bandi 2016, avvenuta lo scorso settembre durante il Salone del Camper presso Fiere di Parma, l’APC – Associazione Produttori Caravan e Camper è già pronta alla campagna di lancio dei Bandi del prossimo anno, con interessantissime novità. Infatti, per il 2017 il Bando “I Comuni del Turismo in Libertà”, giunto alla XVI edizione, oltre alle classiche categorie “Nord Italia”, “Centro Italia”, “Sud e Isole” e “Progetti di ristrutturazione e implementazione di aree di sosta già esistenti”, prevede anche la voce “Straordinaria – Comuni terremotati dal sisma 2016 (Centro Italia)”, completamente dedicata alle zone colpite dal terremoto dei mesi scorsi. Il contributo messo a disposizione da APC per l’amministrazione vincitrice di questa nuova categoria sarà di ben 30.000 euro: tutti i Comuni che, secondo la Protezione Civile, sono stati colpiti, potranno presentare progetti di un’area di sosta multifunzionale che potrà essere utilizzata prima come area destinata alla Protezione Civile e, in un secondo tempo, a favorire la ripresa economica del territorio attraverso l’accoglienza dei Turisti in Libertà. Proprio questa peculiarità sarà positivamente apprezzata nella valutazione dei progetti previsti per questa categoria speciale.'
 link: 'http://www.frontierarieti.com/wordpress/camper-bandi-2017-apc-mette-disposizione-premio-30000-euro-comuni-colpiti-terremoto'
@@ -5668,17 +5679,6 @@ descrizione: 'HOTEL ""JOLE""'
 indirizzo: 'Viale Marina, San Mauro Pascoli, FC, Emilia-Romagna, 47030, Italia'
 lat: '44.1631101'
 lon: '12.4466459'
-link: ''
-immagine: ''
-data: 16/09/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/529,177471994,2016-09-22 15:48:12,2016-09-16 16:53:39,"Filottrano, AN - Agriturismo ",43.436659,13.354474,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""Agriturismo"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via Italia, Filottrano, AN, Marche, 62021, Italia"", ""lat"": ""43.436659"", ""link"": """", ""lon"": ""13.354474"", ""tel"": ""3316570503""}","<pre><yamldata>tel: '3316570503'
-email: ''
-descrizione: Agriturismo
-indirizzo: 'Via Italia, Filottrano, AN, Marche, 62021, Italia'
-lat: '43.436659'
-lon: '13.354474'
 link: ''
 immagine: ''
 data: 16/09/2016
