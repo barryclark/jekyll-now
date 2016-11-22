@@ -1093,10 +1093,10 @@ link: ''
 immagine: ''
 data: 08/11/2016
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1176,188100971,2016-11-22 10:27:23,2016-11-08 20:55:47,Cercasi urgentemente lavatrice a #Varoni (#Amatrice),42.5980591,13.2305149,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Pubblicare su FB""]",,,"{""cosa"": ""Lavatrice a #Scai"", ""data"": ""08/11/2016"", ""descrizione"": ""Serve urgentemente una lavatrice a Scai (Amatrice). Contattare Carlo."", ""email"": """", ""immagine"": """", ""indirizzo"": ""SP19, Amatrice, RI, Lazio, Italia"", ""lat"": ""42.5980591"", ""link"": """", ""lon"": ""13.2305149"", ""tel"": ""3338275919""}","<pre><yamldata>tel: '3338275919'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1176,188100971,2016-11-22 10:28:27,2016-11-08 20:55:47,Cercasi urgentemente lavatrice a #Varoni (#Amatrice),42.5980591,13.2305149,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Pubblicare su FB""]",,,"{""cosa"": ""Lavatrice a #Scai"", ""data"": ""08/11/2016"", ""descrizione"": ""Serve urgentemente una lavatrice a Varoni (Amatrice). Contattare Carlo o Rosaria."", ""email"": """", ""immagine"": """", ""indirizzo"": ""SP19, Amatrice, RI, Lazio, Italia"", ""lat"": ""42.5980591"", ""link"": """", ""lon"": ""13.2305149"", ""tel"": ""3338275919""}","<pre><yamldata>tel: '3338275919'
 email: ''
 cosa: 'Lavatrice a #Scai'
-descrizione: 'Serve urgentemente una lavatrice a Scai (Amatrice). Contattare Carlo.'
+descrizione: 'Serve urgentemente una lavatrice a Varoni (Amatrice). Contattare Carlo o Rosaria.'
 indirizzo: 'SP19, Amatrice, RI, Lazio, Italia'
 lat: '42.5980591'
 lon: '13.2305149'
