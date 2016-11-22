@@ -8708,6 +8708,18 @@ email: ''
 data: 13/09/2016
 </yamldata></pre>
 ",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/216,176774807,2016-09-13 23:26:04,2016-09-13 23:16:19,Diocesi di Novara,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Colletta terremoto centro Italia"", ""chi"": ""Diocesi di Novara"", ""data"": ""13/09/2016"", ""descrizione"": """", ""email"": """", ""iban"": ""IT28E 05034 10100 000000009788"", ""intestazione"": """", ""link"": """", ""postale"": """"}","<pre><yamldata>chi: 'Diocesi di Novara'
+descrizione: ''
+intestazione: ''
+iban: 'IT28E 05034 10100 000000009788'
+bic: ''
+postale: ''
+causale: 'Colletta terremoto centro Italia'
+link: ''
+email: ''
+data: 13/09/2016
+</yamldata></pre>
+",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/215,176774600,2016-09-13 23:26:12,2016-09-13 23:14:54,Il Secolo XIX,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Terremoto centro Italia"", ""chi"": ""Il Secolo XIX"", ""data"": ""13/09/2016"", ""descrizione"": """", ""email"": """", ""iban"": ""1T95J 02008 01107 000103495139"", ""intestazione"": ""Nord Ovest Insieme Onlus"", ""link"": """", ""postale"": """"}","<pre><yamldata>chi: 'Il Secolo XIX'
 descrizione: ''
 intestazione: 'Nord Ovest Insieme Onlus'
