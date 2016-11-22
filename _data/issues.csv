@@ -4025,6 +4025,18 @@ email: ''
 data: 03/10/2016
 </yamldata></pre>
 ",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/742,180692278,2016-10-03 17:03:28,2016-10-03 17:01:52,RicostruiAmo #Saletta - Raccolta fondi del comitato civico,,,"[""Accettato"", ""Bollettino"", ""Raccolte Fondi"", ""Twitter""]",,,"{""bic"": """", ""causale"": ""Donazioni progetti Saletta"", ""chi"": ""RicostruiAmo Saletta"", ""data"": ""03/10/2016"", ""descrizione"": ""Raccolta fondi del comitato civico RicostruiAmo Saletta, fondato lo scorso 14 settembre da un gruppo di abitanti di Saletta, frazione di Amatrice, colpita dal terremoto."", ""email"": """", ""iban"": ""IT 62 H 0542803215000000001983"", ""intestazione"": ""Comitato RicostruiAmo Saletta"", ""link"": ""http://www.ricostruiamosaletta.org"", ""postale"": """"}","<pre><yamldata>chi: 'RicostruiAmo Saletta'
+descrizione: 'Raccolta fondi del comitato civico RicostruiAmo Saletta, fondato lo scorso 14 settembre da un gruppo di abitanti di Saletta, frazione di Amatrice, colpita dal terremoto.'
+intestazione: 'Comitato RicostruiAmo Saletta'
+iban: 'IT 62 H 0542803215000000001983'
+bic: ''
+postale: ''
+causale: 'Donazioni progetti Saletta'
+link: 'http://www.ricostruiamosaletta.org'
+email: ''
+data: 03/10/2016
+</yamldata></pre>
+",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/741,180689340,2016-10-03 18:47:28,2016-10-03 16:49:25,"Nasce il comitato ""RicostruiAmo Saletta""",,,"[""Accettato"", ""Bollettino"", ""Notizie Utili"", ""Twitter""]",,,"{""data"": ""03/10/2016"", ""descrizione"": ""Lo scorso 14 settembre si \u00e8 costituito il comitato civico \""RicostruiAmo Saletta\"" per sostenere la ricostruzione di Saletta, frazione del comune di Amatrice, colpita dal terremoto del 24 agosto che ha provocato la morte di 23 abitanti."", ""link"": ""http://www.ricostruiamosaletta.org"", ""titolo"": ""Nasce il comitato \""RicostruiAmo Saletta\""""}","<pre><yamldata>titolo: 'Nasce il comitato ""RicostruiAmo Saletta""'
 descrizione: 'Lo scorso 14 settembre si è costituito il comitato civico ""RicostruiAmo Saletta"" per sostenere la ricostruzione di Saletta, frazione del comune di Amatrice, colpita dal terremoto del 24 agosto che ha provocato la morte di 23 abitanti.'
 link: 'http://www.ricostruiamosaletta.org'
