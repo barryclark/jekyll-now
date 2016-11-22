@@ -1,3 +1,7 @@
+- name: MAPPA GENERALE
+  logo: /img/icone/11-comunicolpiti.png
+  map: true
+  link: mappa
 - name: Mappa Fabbisogni
   logo: /img/icone/01-fabbisogni.png
   map: true
@@ -50,3 +54,7 @@
   logo: /img/icone/11-comunicolpiti.png
   map: false
   link: mappe
+- name: BUFALE
+  logo: /img/icone/bufala-tci-1.png
+  map: false
+  link: bufale
