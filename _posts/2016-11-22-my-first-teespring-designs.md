@@ -16,14 +16,14 @@ There are several places where you can sell custom t-shirts online. One of the o
 
 Without further ado, the shirts are:
 
-## I'd Rather Be Camping T-Shirt
+## [I'd Rather Be Camping T-Shirt](https://teespring.com/i-d-rather-be-camping-2016)
 
 [![I'd Rather Be Camping T-Shirt](\images\teespring\camping-shirt.png "I'd Rather Be Camping T-Shirt")](https://teespring.com/i-d-rather-be-camping-2016)
 
-## White HTML Sarcasm T-Shirt
+## [White HTML Sarcasm T-Shirt](https://teespring.com/new-black-html-sarcasm-end-ta)
 
-![White HTML Sarcasm T-Shirt](\images\teespring\white-sarcasm-shirt.png "White HTML Sarcasm T-Shirt")
+[![White HTML Sarcasm T-Shirt](\images\teespring\white-sarcasm-shirt.png "White HTML Sarcasm T-Shirt")](https://teespring.com/new-black-html-sarcasm-end-ta)
 
-## Black HTML Sarcasm T-Shirt
+## [Black HTML Sarcasm T-Shirt](https://teespring.com/black-html-sarcasm-end-tag)
 
-![Black HTML Sarcasm T-Shirt](\images\teespring\black-sarcasm-shirt.png "Black HTML Sarcasm T-Shirt")
+[![Black HTML Sarcasm T-Shirt](\images\teespring\black-sarcasm-shirt.png "Black HTML Sarcasm T-Shirt")](https://teespring.com/black-html-sarcasm-end-tag)
