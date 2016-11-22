@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1344,191133281,2016-11-22 22:24:37,2016-11-22 21:48:34,Associazione offre donazione in denaro per inserimento lavorativo di giovane con disabilità in azienda colpita dal sisma,,,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""Donazione in denaro"", ""data"": ""22/11/2016"", ""descrizione"": ""LUNA BLU ONLUS attiva su Rieti, mette a disposizione una donazione in denaro per inserire un giovane con disabilit\u00e0 in un contesto lavorativo (agricolo o altro) in azienda danneggiata dal sisma. Grazie a chi voglia dare informazioni in merito o suggerimenti."", ""email"": ""lucagaborl76@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3332883946""}","<pre><yamldata>tel: '3332883946'
+email: lucagaborl76@gmail.com
+cosa: 'Donazione in denaro'
+descrizione: 'LUNA BLU ONLUS attiva su Rieti, mette a disposizione una donazione in denaro per inserire un giovane con disabilità in un contesto lavorativo (agricolo o altro) in azienda danneggiata dal sisma. Grazie a chi voglia dare informazioni in merito o suggerimenti.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 22/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1343,191072727,2016-11-22 19:42:05,2016-11-22 17:28:02,"Lazio, nominato direttore Ufficio speciale ricostruzione",,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""22/11/2016"", ""descrizione"": ""\u201cIl Presidente della Regione Lazio, Nicola Zingaretti in qualit\u00e0 di vice Commissario per la Ricostruzione ha nominato Stefano Fermante direttore dell\u2019Ufficio Speciale per la ricostruzione post sisma 2016. Fermante sar\u00e0 a capo di un Ufficio Strategico, previsto dal Decreto 189/2016, che avr\u00e0 il compito di curare la pianificazione urbanistica connessa alla ricostruzione, l\u2019istruttoria per il rilascio delle concessioni per i contributi e tutti gli altri provvedimenti previsti per la ricostruzione privata. L\u2019Ufficio Speciale della Regione Lazio aprir\u00e0 ufficialmente il prossimo 1\u00b0 dicembre a Rieti in Via Cintia. Gi\u00e0 nei prossimi giorni, comunque, sar\u00e0 possibile avere informazioni e ritirare materiali e moduli utili ai cittadini del posto\u201d. Lo comunica in una nota la Regione Lazio."", ""link"": """", ""titolo"": ""Lazio, nominato direttore ufficio speciale ricostruzione""}","<pre><yamldata>titolo: 'Lazio, nominato direttore ufficio speciale ricostruzione'
 descrizione: '“Il Presidente della Regione Lazio, Nicola Zingaretti in qualità di vice Commissario per la Ricostruzione ha nominato Stefano Fermante direttore dell’Ufficio Speciale per la ricostruzione post sisma 2016. Fermante sarà a capo di un Ufficio Strategico, previsto dal Decreto 189/2016, che avrà il compito di curare la pianificazione urbanistica connessa alla ricostruzione, l’istruttoria per il rilascio delle concessioni per i contributi e tutti gli altri provvedimenti previsti per la ricostruzione privata. L’Ufficio Speciale della Regione Lazio aprirà ufficialmente il prossimo 1° dicembre a Rieti in Via Cintia. Già nei prossimi giorni, comunque, sarà possibile avere informazioni e ritirare materiali e moduli utili ai cittadini del posto”. Lo comunica in una nota la Regione Lazio.'
 link: ''
@@ -8692,18 +8703,6 @@ bic: ''
 postale: ''
 causale: 'Emergenza sisma centro Italia'
 link: 'http://www.regione.veneto.it/web/guest/dettaglio-giunta-news?_spp_detailId=3049515'
-email: ''
-data: 13/09/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/216,176774807,2016-09-13 23:26:04,2016-09-13 23:16:19,Diocesi di Novara,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Colletta terremoto centro Italia"", ""chi"": ""Diocesi di Novara"", ""data"": ""13/09/2016"", ""descrizione"": """", ""email"": """", ""iban"": ""IT28E 05034 10100 000000009788"", ""intestazione"": """", ""link"": """", ""postale"": """"}","<pre><yamldata>chi: 'Diocesi di Novara'
-descrizione: ''
-intestazione: ''
-iban: 'IT28E 05034 10100 000000009788'
-bic: ''
-postale: ''
-causale: 'Colletta terremoto centro Italia'
-link: ''
 email: ''
 data: 13/09/2016
 </yamldata></pre>
