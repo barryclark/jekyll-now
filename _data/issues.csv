@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1338,191021767,2016-11-22 14:28:40,2016-11-22 14:28:18,Bando Associazione Produttori Caravan per Comuni colpiti dal sisma,,,"[""Accettato"", ""Bollettino"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""22/11/2016"", ""descrizione"": ""A soli due mesi dall\u2019assegnazione dei premi per i Bandi 2016, avvenuta lo scorso settembre durante il Salone del Camper presso Fiere di Parma, l\u2019APC \u2013 Associazione Produttori Caravan e Camper \u00e8 gi\u00e0 pronta alla campagna di lancio dei Bandi del prossimo anno, con interessantissime novit\u00e0. Infatti, per il 2017 il Bando \u201cI Comuni del Turismo in Libert\u00e0\u201d, giunto alla XVI edizione, oltre alle classiche categorie \u201cNord Italia\u201d, \u201cCentro Italia\u201d, \u201cSud e Isole\u201d e \u201cProgetti di ristrutturazione e implementazione di aree di sosta gi\u00e0 esistenti\u201d, prevede anche la voce \u201cStraordinaria \u2013 Comuni terremotati dal sisma 2016 (Centro Italia)\u201d, completamente dedicata alle zone colpite dal terremoto dei mesi scorsi. Il contributo messo a disposizione da APC per l\u2019amministrazione vincitrice di questa nuova categoria sar\u00e0 di ben 30.000 euro: tutti i Comuni che, secondo la Protezione Civile, sono stati colpiti, potranno presentare progetti di un\u2019area di sosta multifunzionale che potr\u00e0 essere utilizzata prima come area destinata alla Protezione Civile e, in un secondo tempo, a favorire la ripresa economica del territorio attraverso l\u2019accoglienza dei Turisti in Libert\u00e0. Proprio questa peculiarit\u00e0 sar\u00e0 positivamente apprezzata nella valutazione dei progetti previsti per questa categoria speciale."", ""link"": ""http://www.frontierarieti.com/wordpress/camper-bandi-2017-apc-mette-disposizione-premio-30000-euro-comuni-colpiti-terremoto"", ""titolo"": ""Bando Associazione Produttori Caravan per Comuni colpiti dal sisma""}","<pre><yamldata>titolo: 'Bando Associazione Produttori Caravan per Comuni colpiti dal sisma'
+descrizione: 'A soli due mesi dall’assegnazione dei premi per i Bandi 2016, avvenuta lo scorso settembre durante il Salone del Camper presso Fiere di Parma, l’APC – Associazione Produttori Caravan e Camper è già pronta alla campagna di lancio dei Bandi del prossimo anno, con interessantissime novità. Infatti, per il 2017 il Bando “I Comuni del Turismo in Libertà”, giunto alla XVI edizione, oltre alle classiche categorie “Nord Italia”, “Centro Italia”, “Sud e Isole” e “Progetti di ristrutturazione e implementazione di aree di sosta già esistenti”, prevede anche la voce “Straordinaria – Comuni terremotati dal sisma 2016 (Centro Italia)”, completamente dedicata alle zone colpite dal terremoto dei mesi scorsi. Il contributo messo a disposizione da APC per l’amministrazione vincitrice di questa nuova categoria sarà di ben 30.000 euro: tutti i Comuni che, secondo la Protezione Civile, sono stati colpiti, potranno presentare progetti di un’area di sosta multifunzionale che potrà essere utilizzata prima come area destinata alla Protezione Civile e, in un secondo tempo, a favorire la ripresa economica del territorio attraverso l’accoglienza dei Turisti in Libertà. Proprio questa peculiarità sarà positivamente apprezzata nella valutazione dei progetti previsti per questa categoria speciale.'
+link: 'http://www.frontierarieti.com/wordpress/camper-bandi-2017-apc-mette-disposizione-premio-30000-euro-comuni-colpiti-terremoto'
+data: 22/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1337,190977718,2016-11-22 11:45:00,2016-11-22 11:43:35,Lavatrice e asciugatrice #Cascia,42.71867351380065,13.01804780960083,"[""Accettato"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""Lavatrice e asciugatrice #Cascia"", ""data"": ""22/11/2016"", ""descrizione"": ""A Cascia (PG) servirebbe un'asciugatrice e una lavatrice piccola con il cestello sopra. Indirizzo: viale Cavour, 32 - 06043. Persona di riferimento Dr. Cariani Simone."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Viale Cavour, Cascia, PG, UMB, 06043, Italia"", ""lat"": ""42.71867351380065"", ""link"": """", ""lon"": ""13.01804780960083"", ""tel"": ""3383202296""}","<pre><yamldata>tel: '3383202296'
 email: ''
 cosa: 'Lavatrice e asciugatrice #Cascia'
@@ -8,6 +13,26 @@ lat: '42.71867351380065'
 lon: '13.01804780960083'
 link: ''
 immagine: ''
+data: 22/11/2016
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1336,190972470,2016-11-22 14:29:12,2016-11-22 11:18:45,Comitato 3.36 - Amatrice,42.6292367,13.2891755,"[""Accettato"", ""Contatti""]",,,"{""data"": ""22/11/2016"", ""descrizione"": ""Comitato di cittadini di Amatrice costituitosi in associazione il 19 settembre allo scopo di sostenere e monitorare la ricostruzione."", ""email"": ""segreteria@comitato336.it"", ""indirizzo"": ""Piazza Cacciatori del Tevere, Casalene, Amatrice, RI, LAZ, 02012, Italia"", ""lat"": ""42.6292367"", ""link"": ""http://www.comitato336.it/"", ""lon"": ""13.2891755"", ""nome"": ""Comitato 3.36 - Amatrice"", ""tel"": """"}","<pre><yamldata>nome: 'Comitato 3.36 - Amatrice'
+tel: ''
+email: segreteria@comitato336.it
+descrizione: 'Comitato di cittadini di Amatrice costituitosi in associazione il 19 settembre allo scopo di sostenere e monitorare la ricostruzione.'
+indirizzo: 'Piazza Cacciatori del Tevere, Casalene, Amatrice, RI, LAZ, 02012, Italia'
+lat: '42.6292367'
+lon: '13.2891755'
+link: 'http://www.comitato336.it/'
+data: 22/11/2016
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1335,190969537,2016-11-22 14:29:00,2016-11-22 11:04:56,Associazione La Via del Sale - Cittareale (Rieti),42.61883359176608,13.159539699554443,"[""Accettato"", ""Contatti""]",,,"{""data"": ""22/11/2016"", ""descrizione"": ""A seguito del sisma del 24 Agosto, il gruppo della poi futura associazione, si unisce: nel primo momento per supportare la popolazione prima dell'arrivo dei soccorsi e successivamente si prende la responsabilit\u00e0 del Centro di Smistamento di Cittareale. Il 19'settembre finalmente nasce ufficialmente l'associazione \""La Via del Sale Onlus\"" per far fronte alla necessit\u00e0 di promuovere raccolte fondi per finanziare singoli progetti."", ""email"": ""laviadelsaleonlus@gmail.com"", ""indirizzo"": ""Strada Provinciale per Norcia, Cittareale, RI, LAZ, Italia"", ""lat"": ""42.61883359176608"", ""link"": ""http://laviadelsaleonlus.it/blog/"", ""lon"": ""13.159539699554443"", ""nome"": ""Associazione La Via del Sale - Cittareale (Rieti)"", ""tel"": """"}","<pre><yamldata>nome: 'Associazione La Via del Sale - Cittareale (Rieti)'
+tel: ''
+email: laviadelsaleonlus@gmail.com
+descrizione: 'A seguito del sisma del 24 Agosto, il gruppo della poi futura associazione, si unisce: nel primo momento per supportare la popolazione prima dell''arrivo dei soccorsi e successivamente si prende la responsabilità del Centro di Smistamento di Cittareale. Il 19''settembre finalmente nasce ufficialmente l''associazione ""La Via del Sale Onlus"" per far fronte alla necessità di promuovere raccolte fondi per finanziare singoli progetti.'
+indirizzo: 'Strada Provinciale per Norcia, Cittareale, RI, LAZ, Italia'
+lat: '42.61883359176608'
+lon: '13.159539699554443'
+link: 'http://laviadelsaleonlus.it/blog/'
 data: 22/11/2016
 </yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1332,190812161,2016-11-21 20:30:15,2016-11-21 19:27:08,Consegna materiale a Norcia ed Amatrice il 23/11,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""Pubblicare su FB""]",,,"{""data"": ""21/11/2016"", ""descrizione"": ""Gli Urban Kaos Terni in collaborazione con l'Associazione Colle Cresce - Colle Cresce Aiuto di Colle Val d'Elsa (SI) mercoledi 23/11 consegneranno a Norcia ed Amatrice il materiale raccolto per le popolazioni terremotate in particolare prodotti alimentari (compresi alimenti freschi), stufette, torce, piumoni, giacconi, scarponi e altro materiale invernale. Per qualsiasi necessit\u00e0 ed esigenze si pu\u00f2 prendere contatti tramite la pagina facebook Urban Kaos Terni."", ""link"": """", ""titolo"": ""Consegna materiale a Norcia ed Amatrice il 23/11""}","<pre><yamldata>titolo: 'Consegna materiale a Norcia ed Amatrice il 23/11'
@@ -4010,18 +4035,6 @@ data: 03/10/2016
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/743,180702170,2016-10-03 17:47:50,2016-10-03 17:47:25,Inaugurati a Rieti sede provvisoria e anno formativo del centro di formazione professionale di Amatrice,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""03/10/2016"", ""descrizione"": ""Inaugurato oggi nella nuova sede provvisoria di Rieti l'anno formativo del centro di Formazione Professionale di Amatrice: questa apertura certifica l\u2019impegno delle istituzioni che ad ogni livello, attraverso un confronto continuo con le persone, si sono mosse anche per ricostruire opportunit\u00e0."", ""link"": ""http://www.regione.lazio.it/rl_main/?vw=newsdettaglio&id=3607"", ""titolo"": ""Inaugurati a Rieti sede provvisoria e anno formativo del centro di formazione professionale di Amatrice""}","<pre><yamldata>titolo: 'Inaugurati a Rieti sede provvisoria e anno formativo del centro di formazione professionale di Amatrice'
 descrizione: 'Inaugurato oggi nella nuova sede provvisoria di Rieti l''anno formativo del centro di Formazione Professionale di Amatrice: questa apertura certifica l’impegno delle istituzioni che ad ogni livello, attraverso un confronto continuo con le persone, si sono mosse anche per ricostruire opportunità.'
 link: 'http://www.regione.lazio.it/rl_main/?vw=newsdettaglio&id=3607'
-data: 03/10/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/742,180692278,2016-10-03 17:03:28,2016-10-03 17:01:52,RicostruiAmo #Saletta - Raccolta fondi del comitato civico,,,"[""Accettato"", ""Bollettino"", ""Raccolte Fondi"", ""Twitter""]",,,"{""bic"": """", ""causale"": ""Donazioni progetti Saletta"", ""chi"": ""RicostruiAmo Saletta"", ""data"": ""03/10/2016"", ""descrizione"": ""Raccolta fondi del comitato civico RicostruiAmo Saletta, fondato lo scorso 14 settembre da un gruppo di abitanti di Saletta, frazione di Amatrice, colpita dal terremoto."", ""email"": """", ""iban"": ""IT 62 H 0542803215000000001983"", ""intestazione"": ""Comitato RicostruiAmo Saletta"", ""link"": ""http://www.ricostruiamosaletta.org"", ""postale"": """"}","<pre><yamldata>chi: 'RicostruiAmo Saletta'
-descrizione: 'Raccolta fondi del comitato civico RicostruiAmo Saletta, fondato lo scorso 14 settembre da un gruppo di abitanti di Saletta, frazione di Amatrice, colpita dal terremoto.'
-intestazione: 'Comitato RicostruiAmo Saletta'
-iban: 'IT 62 H 0542803215000000001983'
-bic: ''
-postale: ''
-causale: 'Donazioni progetti Saletta'
-link: 'http://www.ricostruiamosaletta.org'
-email: ''
 data: 03/10/2016
 </yamldata></pre>
 ",open
