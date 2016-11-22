@@ -35,6 +35,17 @@ lon: '13.159539699554443'
 link: 'http://laviadelsaleonlus.it/blog/'
 data: 22/11/2016
 </yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1334,190962176,2016-11-22 14:38:10,2016-11-22 10:32:55,A #Norcia commerciante cerca furgone per trasporto alimenti ,42.473876,13.54668,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Pubblicare su FB"", ""Sisma Ottobre""]",,,"{""cosa"": ""Furgone per trasporto alimenti"", ""data"": ""22/11/2016"", ""descrizione"": ""Sono un commerciante di Norcia e causa terremoto ho perso il lavoro avendo una norcineria nel centro della citt\u00e0. Chiedo aiuto e mi affido alla benevolenza di qualcuno che mi voglia donare un furgone per trasportare i miei prodotti nelle fiere in Italia. Non ho risorse per ci\u00f2 chiedo aiuto."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": ""42.473876"", ""link"": """", ""lon"": ""13.54668"", ""tel"": ""3387925338""}","<pre><yamldata>tel: '3387925338'
+email: ''
+cosa: 'Furgone per trasporto alimenti'
+descrizione: 'Sono un commerciante di Norcia e causa terremoto ho perso il lavoro avendo una norcineria nel centro della città. Chiedo aiuto e mi affido alla benevolenza di qualcuno che mi voglia donare un furgone per trasportare i miei prodotti nelle fiere in Italia. Non ho risorse per ciò chiedo aiuto.'
+indirizzo: ''
+lat: '42.473876'
+lon: '13.54668'
+link: ''
+immagine: ''
+data: 22/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1332,190812161,2016-11-21 20:30:15,2016-11-21 19:27:08,Consegna materiale a Norcia ed Amatrice il 23/11,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""Pubblicare su FB""]",,,"{""data"": ""21/11/2016"", ""descrizione"": ""Gli Urban Kaos Terni in collaborazione con l'Associazione Colle Cresce - Colle Cresce Aiuto di Colle Val d'Elsa (SI) mercoledi 23/11 consegneranno a Norcia ed Amatrice il materiale raccolto per le popolazioni terremotate in particolare prodotti alimentari (compresi alimenti freschi), stufette, torce, piumoni, giacconi, scarponi e altro materiale invernale. Per qualsiasi necessit\u00e0 ed esigenze si pu\u00f2 prendere contatti tramite la pagina facebook Urban Kaos Terni."", ""link"": """", ""titolo"": ""Consegna materiale a Norcia ed Amatrice il 23/11""}","<pre><yamldata>titolo: 'Consegna materiale a Norcia ed Amatrice il 23/11'
 descrizione: 'Gli Urban Kaos Terni in collaborazione con l''Associazione Colle Cresce - Colle Cresce Aiuto di Colle Val d''Elsa (SI) mercoledi 23/11 consegneranno a Norcia ed Amatrice il materiale raccolto per le popolazioni terremotate in particolare prodotti alimentari (compresi alimenti freschi), stufette, torce, piumoni, giacconi, scarponi e altro materiale invernale. Per qualsiasi necessità ed esigenze si può prendere contatti tramite la pagina facebook Urban Kaos Terni.'
 link: ''
@@ -6749,17 +6760,6 @@ https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/394,1771504
 tel: ''
 email: antonio.passacantando@istruzione.it
 descrizione: 'Il Miur ha nominato il prof. Antonio Passacantando coordinatore degli aiuti e donazioni alle scuole terremotate.'
-indirizzo: ''
-lat: ''
-lon: ''
-link: ''
-data: 15/09/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/393,177149659,2016-09-15 11:16:40,2016-09-15 11:13:40,180 amici L'Aquila Onlus,,,"[""Accettato"", ""Contatti"", ""Form""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""Associazione di cittadini per la promozione \u00e8 la tutela della salute mentale"", ""email"": ""l.aquila180amici@gmail.com"", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""nome"": ""180 amici L'Aquila Onlus"", ""tel"": ""335340100, 366 199 00 81""}","<pre><yamldata>nome: '180 amici L''Aquila Onlus'
-tel: '335340100, 366 199 00 81'
-email: l.aquila180amici@gmail.com
-descrizione: 'Associazione di cittadini per la promozione è la tutela della salute mentale'
 indirizzo: ''
 lat: ''
 lon: ''
