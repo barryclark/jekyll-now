@@ -12,11 +12,13 @@ There are several places where you can sell custom t-shirts online. One of the o
 
 [TeeSpring](https://teespring.com/) has both an online designer, as well as the option to upload images. For that [first shirt](https://teespring.com/go-sports-team) I linked above, I just used their online designer. For my first "real" design, I used [Inkscape](https://inkscape.org) (which I found had a small learning curve), added an image I got from [The Noun Project](https://thenounproject.com/), and finished it off in [Paint.net](http://www.getpaint.net). My second and third designs (which are almost identical) I just made in [Paint.net](http://www.getpaint.net).
 
+<style>h2{ text-align: center; }</style>
+
 Without further ado, the shirts are:
 
 ## I'd Rather Be Camping T-Shirt
 
-![I'd Rather Be Camping T-Shirt](\images\teespring\camping-shirt.png "I'd Rather Be Camping T-Shirt")
+[![I'd Rather Be Camping T-Shirt](\images\teespring\camping-shirt.png "I'd Rather Be Camping T-Shirt")](https://teespring.com/i-d-rather-be-camping-2016)
 
 ## White HTML Sarcasm T-Shirt
 
