@@ -19,7 +19,7 @@ Without further ado, the shirts are:
 ## [I'd Rather Be Camping T-Shirt](https://teespring.com/i-d-rather-be-camping-2016)
 
 [![I'd Rather Be Camping T-Shirt](\images\teespring\camping-shirt.png "I'd Rather Be Camping T-Shirt")](https://teespring.com/i-d-rather-be-camping-2016)
-<div class="share-block" style="max-wdith: 500px;">
+<div class="share-block" style="max-width: 500px;">
 <a href="https://www.facebook.com/dialog/share?app_id=197946313591875&display=page&href=https://teespring.com/i-d-rather-be-camping-2016" target="_blank">
 <div class="share facebook" style="width: 50%;">
 <i class="fa fa-facebook mobile-only" aria-hidden="true"></i>
@@ -32,6 +32,8 @@ Without further ado, the shirts are:
 <span class="mobile-hide">twitter</span>
 </div>
 </a>
+
+
 
 ## [White HTML Sarcasm T-Shirt](https://teespring.com/new-black-html-sarcasm-end-ta)
 
