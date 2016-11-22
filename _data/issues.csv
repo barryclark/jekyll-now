@@ -2598,6 +2598,17 @@ immagine: ''
 data: 30/10/2016
 </yamldata></pre>
 ",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/972,186169633,2016-10-30 22:44:15,2016-10-30 22:31:38,Offresi alloggio 80mq a Torino,,,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""30/10/2016"", ""descrizione"": ""Alloggio 80mq mettiamo a disposizione in Torino."", ""email"": ""statino@yahoo.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3493270414""}","<pre><yamldata>tel: '3493270414'
+email: statino@yahoo.it
+descrizione: 'Alloggio 80mq mettiamo a disposizione in Torino.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 30/10/2016
+</yamldata></pre>
+",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/971,186165157,2016-10-30 22:25:30,2016-10-30 21:19:53,#Viabilità #Roma: chiusura tratto finale tangenziale est,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""30/10/2016"", ""descrizione"": ""Per crepe su tangenziale est a Roma, rimane chiuso fino a nuovo ordine il tratto finale [Fonte: Protezione Civile]"", ""link"": ""https://goo.gl/6cF77i"", ""titolo"": ""#Viabilit\u00e0 #Roma: chiusura tratto finale #tangenziale #est""}","<pre><yamldata>titolo: '#Viabilità #Roma: chiusura tratto finale #tangenziale #est'
 descrizione: 'Per crepe su tangenziale est a Roma, rimane chiuso fino a nuovo ordine il tratto finale [Fonte: Protezione Civile]'
 link: 'https://goo.gl/6cF77i'
