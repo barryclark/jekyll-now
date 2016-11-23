@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1363,191344735,2016-11-23 18:30:01,2016-11-23 18:08:31,Regione #Umbria: aggiornamento i dati sisma al 23 novembre,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""23/11/2016"", ""descrizione"": ""Popolazione assistita nelle strutture/aree di accoglienza 2.090. Popolazione alloggiata presso le strutture ricettive\t1.626. Totale popolazione\t3.716. FORZE IN CAMPO Volontari 70 Volontari regionali e nazionali. Personale regionale impiegato 75 Centri di coordinamento sovracomunale attivi (COR - COAR)\t2 P.M.A. (posto medico vanzato)\t2 nei Comuni di Cascia e Norcia Modulo Farmacia\t1 nel Comune di Norcia"", ""link"": ""http://www.regione.umbria.it/sisma-umbria-2016"", ""titolo"": ""Regione Umbria: i dati del Sisma al 23 novembre""}","<pre><yamldata>titolo: 'Regione Umbria: i dati del Sisma al 23 novembre'
+descrizione: ""Popolazione assistita nelle strutture/aree di accoglienza 2.090. Popolazione alloggiata presso le strutture ricettive\t1.626. Totale popolazione\t3.716. FORZE IN CAMPO Volontari 70 Volontari regionali e nazionali. Personale regionale impiegato 75 Centri di coordinamento sovracomunale attivi (COR - COAR)\t2 P.M.A. (posto medico vanzato)\t2 nei Comuni di Cascia e Norcia Modulo Farmacia\t1 nel Comune di Norcia""
+link: 'http://www.regione.umbria.it/sisma-umbria-2016'
+data: 23/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1362,191342880,2016-11-23 18:28:28,2016-11-23 17:59:42,Regione #Marche: situazione danni del sisma aggiornata al 23 novembre,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""23/11/2016"", ""descrizione"": ""Si aggiorna ancora la lista dei danni provocati dal sisma. 122 i Comuni marchigiani coinvolti, ( 54 Mc; 26 Fm; 28 Ap; 14 An). 283 le zone rosse a rischio nuovi crolli: (151 Mc; 16 Fm; 108 Ap; 8 An). 63 sono i municipi inagibili (36 nella provincia di Macerata, 8 di Fermo, 17 di Ascoli Piceno e 2 di Ancona). Le attivit\u00e0 produttive dichiarate inagibili sono a quota 1.000, di cui 917 nel maceratese, 37 nel fermano, 42 nell\u2019ascolano e 4 nell\u2019anconetano. Le stalle inagibili si attestano a 233, (116 nella provincia di Macerata, 20 in quella di Fermo, 38 nel Piceno e 59 nella provincia di Ancona. Le persone assistite sono ad oggi 25.423 in totale: di cui 5.818 in loco (palestre, capannoni, palazzetti); 11.444 in autonoma sistemazione e 8.161 in albergo."", ""link"": ""http://www.regione.marche.it/Regione-Utile/Terremoto-Marche/News-ed-eventi/post/16764"", ""titolo"": ""Regione Marche situazione  danni del sisma aggiornata al 23 novembre""}","<pre><yamldata>titolo: 'Regione Marche situazione  danni del sisma aggiornata al 23 novembre'
 descrizione: 'Si aggiorna ancora la lista dei danni provocati dal sisma. 122 i Comuni marchigiani coinvolti, ( 54 Mc; 26 Fm; 28 Ap; 14 An). 283 le zone rosse a rischio nuovi crolli: (151 Mc; 16 Fm; 108 Ap; 8 An). 63 sono i municipi inagibili (36 nella provincia di Macerata, 8 di Fermo, 17 di Ascoli Piceno e 2 di Ancona). Le attività produttive dichiarate inagibili sono a quota 1.000, di cui 917 nel maceratese, 37 nel fermano, 42 nell’ascolano e 4 nell’anconetano. Le stalle inagibili si attestano a 233, (116 nella provincia di Macerata, 20 in quella di Fermo, 38 nel Piceno e 59 nella provincia di Ancona. Le persone assistite sono ad oggi 25.423 in totale: di cui 5.818 in loco (palestre, capannoni, palazzetti); 11.444 in autonoma sistemazione e 8.161 in albergo.'
 link: 'http://www.regione.marche.it/Regione-Utile/Terremoto-Marche/News-ed-eventi/post/16764'
@@ -759,17 +764,6 @@ link: ''
 immagine: 'http://i.imgur.com/FOVSz6Y.jpg'
 data: 13/11/2016
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1248,188955628,2016-11-16 14:11:36,2016-11-13 06:40:51,Giocattoli per i bambini di #Preci,,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""Giocattoli"", ""data"": ""13/11/2016"", ""descrizione"": ""Siamo un gruppo di mamme con bambini dai 5 ai 10 anni di Preci con i propri cuccioli terrorizzati dalla paura del terremoto, chiedevano se per Natale potevano arrivare dei giochi e dei vestiti nuovi per rallegrare, soprattutto il loro animo, grazie Barbara D'Angeli."", ""email"": ""dangelibarbara@yahoo.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3298140621""}","<pre><yamldata>tel: '3298140621'
-email: dangelibarbara@yahoo.it
-cosa: Giocattoli
-descrizione: 'Siamo un gruppo di mamme con bambini dai 5 ai 10 anni di Preci con i propri cuccioli terrorizzati dalla paura del terremoto, chiedevano se per Natale potevano arrivare dei giochi e dei vestiti nuovi per rallegrare, soprattutto il loro animo, grazie Barbara D''Angeli.'
-indirizzo: ''
-lat: ''
-lon: ''
-link: ''
-immagine: ''
-data: 13/11/2016
-</yamldata></pre>",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1248,188955628,2016-11-16 14:11:36,2016-11-13 06:40:51,Giocattoli per i bambini di #Preci,,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""Giocattoli"", ""data"": ""13/11/2016"", ""descrizione"": ""Siamo un gruppo di mamme con bambini dai 5 ai 10 anni di Preci con i propri cuccioli terrorizzati dalla paura del terremoto, chiedevano se per Natale potevano arrivare dei giochi e dei vestiti nuovi per rallegrare, soprattutto il loro animo, grazie Barbara D'Angeli."", ""email"": ""dangelibarbara@yahoo.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3298140621""}","<pre><yamldata>tel: '3298140621'
 email: dangelibarbara@yahoo.it
 cosa: Giocattoli
@@ -8305,6 +8299,18 @@ email: info@leijimatsumoto.it
 data: 14/09/2016
 </yamldata></pre>
 ",closed
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/262,176854813,2016-09-14 09:15:06,2016-09-14 09:11:33,Coldiretti,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Coldiretti"", ""data"": ""14/09/2016"", ""descrizione"": ""Iniziativa con un impatto economico diretto sul territorio per fermare l'abbandono con il lavoro per la popolazione, che nelle campagne terremotate significa soprattutto salvare le stalle."", ""email"": """", ""iban"": ""IT 74 N 05704 03200 000000127000"", ""intestazione"": ""COLDIRETTI PRO-TERREMOTATI"", ""link"": ""http://www.agi.it/economia/2016/09/02/news/terremoto_arrivano_le_prime_caciotte_solidali_salva_mucche-1048380/"", ""postale"": """"}","<pre><yamldata>chi: Coldiretti
+descrizione: 'Iniziativa con un impatto economico diretto sul territorio per fermare l''abbandono con il lavoro per la popolazione, che nelle campagne terremotate significa soprattutto salvare le stalle.'
+intestazione: 'COLDIRETTI PRO-TERREMOTATI'
+iban: 'IT 74 N 05704 03200 000000127000'
+bic: ''
+postale: ''
+causale: ''
+link: 'http://www.agi.it/economia/2016/09/02/news/terremoto_arrivano_le_prime_caciotte_solidali_salva_mucche-1048380/'
+email: ''
+data: 14/09/2016
+</yamldata></pre>
+",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/262,176854813,2016-09-14 09:15:06,2016-09-14 09:11:33,Coldiretti,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Coldiretti"", ""data"": ""14/09/2016"", ""descrizione"": ""Iniziativa con un impatto economico diretto sul territorio per fermare l'abbandono con il lavoro per la popolazione, che nelle campagne terremotate significa soprattutto salvare le stalle."", ""email"": """", ""iban"": ""IT 74 N 05704 03200 000000127000"", ""intestazione"": ""COLDIRETTI PRO-TERREMOTATI"", ""link"": ""http://www.agi.it/economia/2016/09/02/news/terremoto_arrivano_le_prime_caciotte_solidali_salva_mucche-1048380/"", ""postale"": """"}","<pre><yamldata>chi: Coldiretti
 descrizione: 'Iniziativa con un impatto economico diretto sul territorio per fermare l''abbandono con il lavoro per la popolazione, che nelle campagne terremotate significa soprattutto salvare le stalle.'
 intestazione: 'COLDIRETTI PRO-TERREMOTATI'
