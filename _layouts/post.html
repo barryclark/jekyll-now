@@ -20,7 +20,7 @@ javascripts: [/js/social.js, /js/seealso.js]
   </div>
   <hr />
 
-  <div itemprop="articleBody" class="entry{% if page.twitter_post %} twitter-post{% endif %}">
+  <div itemprop="articleBody" class="entry{% if page.twitter_post %} twitter-post{% endif %}{% if post.facebook_post %} facebook-post{% endif %}">
     {{ content }}
   </div>
 
