@@ -117,11 +117,11 @@ function usingMethod(debts, method) {
 	var month = 1;
 	
 	for(var balance = sumBalances(debts); balance > 0; balance = sumBalances(debts)) {
-        debts.forEach(function(debt) {debt.update();});
+        
+		debts.forEach(function(debt) {debt.update();});
 		
 		if(month % 12 === 0) {
-			results.balances.push([month / 12, balance, sumMinpayments(debts)]);
-			
+			results.balances.push([month / 12, balance, sumMinpayments(debts)]);	
 		}
 		
 		var nowNumOpen = totalAccounts(debts);
@@ -138,12 +138,16 @@ function usingMethod(debts, method) {
 			avalanche(debts, method);
 		}
 		
-        month++;
-        
-        if(month > 500) {
-            break;
-        }
-    }
+		month++;
+
+		if(month > 500) {
+		    break;
+		}
+    	}
+	
+	if(month % 12 != 0) {
+		results.balances.push([month / 12, sumBalances(debts), sumMinpayments(debts)]);	
+	}
 	
 	results.months = month;
 	
