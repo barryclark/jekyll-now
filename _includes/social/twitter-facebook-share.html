@@ -1,15 +1,8 @@
 {% capture page_url %}
   {% if include.url %}
-    {{ site.url }}{{ include.url }}
-  {% else %}
-    {{ site.url }}{{ page.url }}
-  {% endif %}
-{% endcapture %}
-{% capture page_id %}
-  {% if include.url %}
     {{ include.url }}
   {% else %}
-    {{ page.url }}
+    {{ site.url }}{{ page.url }}
   {% endif %}
 {% endcapture %}
 {% capture url %}{{ page_url  | strip_newlines | strip | uri_escape }}{% endcapture %}
@@ -19,14 +12,12 @@
 	<div class="share facebook">
 		<i class="fa fa-facebook mobile-only" aria-hidden="true"></i>
 		<span class="mobile-hide">facebook</span>
-		<span class="count"></span>
 	</div>
 </a>
 <a href="https://twitter.com/intent/tweet?url={{ url }}&via={{ site.footer-links.twitter }}" target="_blank">
 	<div class="share twitter">
 		<i class="fa fa-twitter mobile-only" aria-hidden="true"></i>
 		<span class="mobile-hide">twitter</span>
-		<span class="count"></span>
 	</div>
 </a>
 </div>
