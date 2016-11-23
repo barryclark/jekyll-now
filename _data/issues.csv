@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1360,191236534,2016-11-23 13:42:22,2016-11-23 10:39:13,"""Monti Azzurri Tipicità"": vendita prodotti tipici #Muccia",43.0817007,13.0429675,"[""Accettato"", ""acquisto solidale"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""\""Monti Azzurri Tipicit\u00e0\"": vendita prodotti tipici #Muccia"", ""data"": ""23/11/2016"", ""descrizione"": ""Siamo una piccola attivit\u00e0 a conduzione familiare nata dall'amore per il nostro territorio e dalla tradizione nella lavorazione del maiale della nostra famiglia. Aiutateci a ripartire!!! Non esitate a contattarmi, grazie Fabio."", ""email"": ""capitani.fabio@gmail.com"", ""immagine"": """", ""indirizzo"": ""Via Clementina, Muccia, MC, Marche, Italia"", ""lat"": ""43.0817007"", ""link"": ""http://www.montiazzurritipicita.it/"", ""lon"": ""13.0429675"", ""tel"": ""0737 646508""}","<pre><yamldata>tel: '0737 646508'
+email: capitani.fabio@gmail.com
+cosa: '""Monti Azzurri Tipicità"": vendita prodotti tipici #Muccia'
+descrizione: 'Siamo una piccola attività a conduzione familiare nata dall''amore per il nostro territorio e dalla tradizione nella lavorazione del maiale della nostra famiglia. Aiutateci a ripartire!!! Non esitate a contattarmi, grazie Fabio.'
+indirizzo: 'Via Clementina, Muccia, MC, Marche, Italia'
+lat: '43.0817007'
+lon: '13.0429675'
+link: 'http://www.montiazzurritipicita.it/'
+immagine: ''
+data: 23/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1359,191235269,2016-11-23 13:41:34,2016-11-23 10:33:41,"Caseificio Artigianale ""AMICI"" #Camerino (MC)",43.1357641,13.0683092,"[""Accettato"", ""acquisto solidale"", ""Form"", ""Sisma Ottobre""]",,http://i.imgur.com/3PLKBr8.jpg,"{""cosa"": ""Caseificio Artigianale \""AMICI\"" #Camerino (MC)"", ""data"": ""23/11/2016"", ""descrizione"": ""Siamo una piccola azienda a conduzione familiare che lavora in ambito artigianale/locale. Nella foto in allegato il listino prezzi dei prodotti che confezioniamo. Contattare Andrea Amici. Grazie per il supporto!"", ""email"": """", ""immagine"": ""http://i.imgur.com/3PLKBr8.jpg"", ""indirizzo"": ""Piazza Cavour, Camerino, MC, Marche, 62032, Italia"", ""lat"": ""43.1357641"", ""link"": """", ""lon"": ""13.0683092"", ""tel"": ""0737637663""}","<pre><yamldata>tel: '0737637663'
 email: ''
 cosa: 'Caseificio Artigianale ""AMICI"" #Camerino (MC)'
@@ -6552,12 +6563,6 @@ data: 15/09/2016
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/447,177180609,2016-10-01 16:38:32,2016-09-15 13:43:42,Protezione Civile: indicazioni operative per censimento danni e verifiche di agibilità,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""Indicazioni operative per censimento danni e verifiche di agibilit\u00e0"", ""link"": ""http://www.protezionecivile.gov.it/jcms/it/view_new.wp?contentId=NEW59033"", ""titolo"": ""Protezione Civile""}","<pre><yamldata>titolo: 'Protezione Civile'
 descrizione: 'Indicazioni operative per censimento danni e verifiche di agibilità'
 link: 'http://www.protezionecivile.gov.it/jcms/it/view_new.wp?contentId=NEW59033'
-data: 15/09/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/446,177180428,2016-10-01 16:38:43,2016-09-15 13:43:04,Apre ad Amatrice sportello mobile Cna,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""Uno sportello mobile di Cna Rieti \u00e8 presente ad Amatrice nel parco comunale Minozzi per offrire supporto alle imprese colpite dal sisma."", ""link"": ""http://www.rietilife.com/2016/09/06/amatrice-la-cna-al-fianco-di-cittadini-e-imprese-con-una-postazione-mobile/"", ""titolo"": ""Apre ad Amatrice sportello mobile Cna""}","<pre><yamldata>titolo: 'Apre ad Amatrice sportello mobile Cna'
-descrizione: 'Uno sportello mobile di Cna Rieti è presente ad Amatrice nel parco comunale Minozzi per offrire supporto alle imprese colpite dal sisma.'
-link: 'http://www.rietilife.com/2016/09/06/amatrice-la-cna-al-fianco-di-cittadini-e-imprese-con-una-postazione-mobile/'
 data: 15/09/2016
 </yamldata></pre>
 ",open
