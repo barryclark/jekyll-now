@@ -19,12 +19,14 @@ Without further ado, the shirts are:
 ## [I'd Rather Be Camping T-Shirt](https://teespring.com/i-d-rather-be-camping-2016)
 
 [![I'd Rather Be Camping T-Shirt](\images\teespring\camping-shirt.png "I'd Rather Be Camping T-Shirt")](https://teespring.com/i-d-rather-be-camping-2016)
-{% include social/twitter-facebook-share.html url="https://teespring.com/i-d-rather-be-camping-2016" %}
+{% include social/twitter-facebook-share.html url="https://teespring.com/i-d-rather-be-camping-2016" width="500px" %}
 
 ## [White HTML Sarcasm T-Shirt](https://teespring.com/new-black-html-sarcasm-end-ta)
 
 [![White HTML Sarcasm T-Shirt](\images\teespring\white-sarcasm-shirt.png "White HTML Sarcasm T-Shirt")](https://teespring.com/new-black-html-sarcasm-end-ta)
+{% include social/twitter-facebook-share.html url="https://teespring.com/new-black-html-sarcasm-end-ta" width="500px" %}
 
 ## [Black HTML Sarcasm T-Shirt](https://teespring.com/black-html-sarcasm-end-tag)
 
 [![Black HTML Sarcasm T-Shirt](\images\teespring\black-sarcasm-shirt.png "Black HTML Sarcasm T-Shirt")](https://teespring.com/black-html-sarcasm-end-tag)
+{% include social/twitter-facebook-share.html url="https://teespring.com/black-html-sarcasm-end-tag" width="500px" %}

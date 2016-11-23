@@ -7,15 +7,15 @@
 {% endcapture %}
 {% capture url %}{{ page_url  | strip_newlines | strip | uri_escape }}{% endcapture %}
 
-<div class="share-block">
+<div class="share-block" style="text-align: center; width: {{ include.width }};">
 <a href="https://www.facebook.com/dialog/share?app_id=197946313591875&display=page&href={{ url }}" target="_blank">
-	<div class="share facebook">
+	<div class="share facebook" style="width: 50%;">
 		<i class="fa fa-facebook mobile-only" aria-hidden="true"></i>
 		<span class="mobile-hide">facebook</span>
 	</div>
 </a>
 <a href="https://twitter.com/intent/tweet?url={{ url }}&via={{ site.footer-links.twitter }}" target="_blank">
-	<div class="share twitter">
+	<div class="share twitter" style="width: 50%;">
 		<i class="fa fa-twitter mobile-only" aria-hidden="true"></i>
 		<span class="mobile-hide">twitter</span>
 	</div>
