@@ -4,6 +4,7 @@ title: The First Step to Success
 tags: [culture, twitter]
 keywords: [success, failure, step, steps]
 twitter_post: true
+expert: "#wednesdaywisdom the first step to #success is #failure - Joseph Hendrix (@JoesGitHubBlog) November 23, 2016"
 image: /images/covers/success.png
 ---
 
