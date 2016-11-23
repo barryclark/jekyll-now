@@ -7656,6 +7656,17 @@ immagine: ''
 data: 14/09/2016
 </yamldata></pre>
 ",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/316,176960957,2016-09-22 16:16:47,2016-09-14 16:51:02,"Sezze, LT - Famiglia Molinari offre ospitalità",41.4939,13.04892,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""La famiglia Molinari mette a disposizione un appartamento arredato per una famiglia di 4 persone"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Sezze (LT)"", ""lat"": 41.4939, ""link"": """", ""lon"": 13.04892, ""tel"": ""3400678842 (Giorgio Molinari)""}","<pre><yamldata>tel: '3400678842 (Giorgio Molinari)'
+email: ''
+descrizione: 'La famiglia Molinari mette a disposizione un appartamento arredato per una famiglia di 4 persone'
+indirizzo: 'Sezze (LT)'
+lat: 41.49390
+lon: 13.04892
+link: ''
+immagine: ''
+data: 14/09/2016
+</yamldata></pre>
+",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/315,176959632,2016-10-01 16:23:02,2016-09-14 16:45:11,Contributo fino a 600 Euro per ogni famiglia,,,"[""Accettato"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""Ordinanza della Protezione Civile n.388 articolo 3."", ""link"": ""https://twitter.com/cypherinfo/status/769874038244122625"", ""titolo"": ""Contributo fino a 600 Euro per ogni famiglia""}","<pre><yamldata>titolo: 'Contributo fino a 600 Euro per ogni famiglia'
 descrizione: 'Ordinanza della Protezione Civile n.388 articolo 3.'
 link: 'https://twitter.com/cypherinfo/status/769874038244122625'
