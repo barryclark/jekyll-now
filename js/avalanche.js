@@ -57,7 +57,7 @@ function avalanche(debts, method) {
         if(toSnowball.length > 0) {
             var avalanche = method(toSnowball);
             avalanche.payment = avalanche.payment + snowballs;
-		    avalanche.onlymin = false;
+	    avalanche.onlymin = false;
         }
     }
 }
@@ -80,25 +80,37 @@ function totalAccounts(debts) {
 
 function lowestBalance(debts){
     return debts.reduce(function(p, c) {
-        if(p == null) {return c;}
-        else if(p.balance > c.balance) {return c;}
-        else if(p.balance === c.balance) {
-			if(p.rate < c.rate) {return c;}
-			else{return p;}
+        if(p == null) {
+		return c;
+	} else if(p.balance > c.balance) {
+		return c;
+	} else if(p.balance === c.balance) {
+		if(p.rate < c.rate) {
+			return c;
+		} else {
+			return p;
 		}
-		else {return p;}
+	} else {
+		return p;
+	}
     });
 }
 
 function highestRate(debts) {
     return debts.reduce(function(p, c) {
-        if(p == null) {return c;}		
-        else if(p.rate < c.rate) {return c;}
-		else if(p.rate === c.rate) {
-			if(p.balance > c.balance) {return c;}
-			else {return p;}
-		} 
-        else{return p;}
+        if(p == null) {
+		return c;
+	} else if(p.rate < c.rate) {
+		return c;
+	} else if(p.rate === c.rate) {
+		if(p.balance > c.balance) {
+			return c;
+		} else {
+			return p;
+		}
+	} else {
+		return p;
+	}
     });
 }
 
