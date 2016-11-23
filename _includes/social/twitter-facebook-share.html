@@ -7,7 +7,7 @@
 {% endcapture %}
 {% capture url %}{{ page_url  | strip_newlines | strip | uri_escape }}{% endcapture %}
 
-<div class="share-block" style="text-align: center; width: {{ include.width }};">
+<div class="share-block" style="margin: 0 auto; width: {{ include.width }};">
 <a href="https://www.facebook.com/dialog/share?app_id=197946313591875&display=page&href={{ url }}" target="_blank">
 	<div class="share facebook" style="width: 50%;">
 		<i class="fa fa-facebook mobile-only" aria-hidden="true"></i>
