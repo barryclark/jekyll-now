@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1364,191345904,2016-11-23 18:31:11,2016-11-23 18:14:21,#Abruzzo: istituito l'Ufficio speciale ricostruzione post sisma 2016,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""23/11/2016"", ""descrizione"": ""La Giunta regionale dell'Abruzzo, su proposta del Presidente Luciano D'Alfonso, ha licenziato oggi il provvedimento che prende forza dall'articolo 3 del decreto legge 17 ottobre 2016, n. 189 concernente: \""Interventi urgenti in favore delle popolazioni colpite dal sisma del 24 agosto 2016\"", nella parte che prevede l'istituzione dell'Ufficio speciale per la ricostruzione post sisma 2016."", ""link"": ""http://cor.regione.abruzzo.it/index.php/news/81-istituzione-dell-ufficio-speciale-ricostruzione"", ""titolo"": ""Abruzzo:iIstituito l'Ufficio speciale ricostruzione post sisma 2016""}","<pre><yamldata>titolo: 'Abruzzo:iIstituito l''Ufficio speciale ricostruzione post sisma 2016'
+descrizione: 'La Giunta regionale dell''Abruzzo, su proposta del Presidente Luciano D''Alfonso, ha licenziato oggi il provvedimento che prende forza dall''articolo 3 del decreto legge 17 ottobre 2016, n. 189 concernente: ""Interventi urgenti in favore delle popolazioni colpite dal sisma del 24 agosto 2016"", nella parte che prevede l''istituzione dell''Ufficio speciale per la ricostruzione post sisma 2016.'
+link: 'http://cor.regione.abruzzo.it/index.php/news/81-istituzione-dell-ufficio-speciale-ricostruzione'
+data: 23/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1363,191344735,2016-11-23 18:30:01,2016-11-23 18:08:31,Regione #Umbria: aggiornamento i dati sisma al 23 novembre,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""23/11/2016"", ""descrizione"": ""Popolazione assistita nelle strutture/aree di accoglienza 2.090. Popolazione alloggiata presso le strutture ricettive\t1.626. Totale popolazione\t3.716. FORZE IN CAMPO Volontari 70 Volontari regionali e nazionali. Personale regionale impiegato 75 Centri di coordinamento sovracomunale attivi (COR - COAR)\t2 P.M.A. (posto medico vanzato)\t2 nei Comuni di Cascia e Norcia Modulo Farmacia\t1 nel Comune di Norcia"", ""link"": ""http://www.regione.umbria.it/sisma-umbria-2016"", ""titolo"": ""Regione Umbria: i dati del Sisma al 23 novembre""}","<pre><yamldata>titolo: 'Regione Umbria: i dati del Sisma al 23 novembre'
 descrizione: ""Popolazione assistita nelle strutture/aree di accoglienza 2.090. Popolazione alloggiata presso le strutture ricettive\t1.626. Totale popolazione\t3.716. FORZE IN CAMPO Volontari 70 Volontari regionali e nazionali. Personale regionale impiegato 75 Centri di coordinamento sovracomunale attivi (COR - COAR)\t2 P.M.A. (posto medico vanzato)\t2 nei Comuni di Cascia e Norcia Modulo Farmacia\t1 nel Comune di Norcia""
 link: 'http://www.regione.umbria.it/sisma-umbria-2016'
@@ -8299,18 +8304,6 @@ email: info@leijimatsumoto.it
 data: 14/09/2016
 </yamldata></pre>
 ",closed
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/262,176854813,2016-09-14 09:15:06,2016-09-14 09:11:33,Coldiretti,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Coldiretti"", ""data"": ""14/09/2016"", ""descrizione"": ""Iniziativa con un impatto economico diretto sul territorio per fermare l'abbandono con il lavoro per la popolazione, che nelle campagne terremotate significa soprattutto salvare le stalle."", ""email"": """", ""iban"": ""IT 74 N 05704 03200 000000127000"", ""intestazione"": ""COLDIRETTI PRO-TERREMOTATI"", ""link"": ""http://www.agi.it/economia/2016/09/02/news/terremoto_arrivano_le_prime_caciotte_solidali_salva_mucche-1048380/"", ""postale"": """"}","<pre><yamldata>chi: Coldiretti
-descrizione: 'Iniziativa con un impatto economico diretto sul territorio per fermare l''abbandono con il lavoro per la popolazione, che nelle campagne terremotate significa soprattutto salvare le stalle.'
-intestazione: 'COLDIRETTI PRO-TERREMOTATI'
-iban: 'IT 74 N 05704 03200 000000127000'
-bic: ''
-postale: ''
-causale: ''
-link: 'http://www.agi.it/economia/2016/09/02/news/terremoto_arrivano_le_prime_caciotte_solidali_salva_mucche-1048380/'
-email: ''
-data: 14/09/2016
-</yamldata></pre>
-",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/262,176854813,2016-09-14 09:15:06,2016-09-14 09:11:33,Coldiretti,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Coldiretti"", ""data"": ""14/09/2016"", ""descrizione"": ""Iniziativa con un impatto economico diretto sul territorio per fermare l'abbandono con il lavoro per la popolazione, che nelle campagne terremotate significa soprattutto salvare le stalle."", ""email"": """", ""iban"": ""IT 74 N 05704 03200 000000127000"", ""intestazione"": ""COLDIRETTI PRO-TERREMOTATI"", ""link"": ""http://www.agi.it/economia/2016/09/02/news/terremoto_arrivano_le_prime_caciotte_solidali_salva_mucche-1048380/"", ""postale"": """"}","<pre><yamldata>chi: Coldiretti
 descrizione: 'Iniziativa con un impatto economico diretto sul territorio per fermare l''abbandono con il lavoro per la popolazione, che nelle campagne terremotate significa soprattutto salvare le stalle.'
 intestazione: 'COLDIRETTI PRO-TERREMOTATI'
