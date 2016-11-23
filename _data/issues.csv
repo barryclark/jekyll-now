@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1358,191234102,2016-11-23 13:37:19,2016-11-23 10:28:14,Veicolo idoneo al traino,,,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""Veicolo idoneo al traino"", ""data"": ""23/11/2016"", ""descrizione"": ""Offro gratuitamente la mia disponibilit\u00e0 a trainare roulotte, ritirarle (preferibilmente centro/nord Italia) e consegnarle nelle zone terremotate, senza chiedere nulla per le relative spese (gasolio/autostrada). Possiedo un furgone Renault con capacit\u00e0 di traino di kg.2000. Lorenzo (Cesena - FC)"", ""email"": ""studiopirini@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3294972785""}","<pre><yamldata>tel: '3294972785'
+email: studiopirini@gmail.com
+cosa: 'Veicolo idoneo al traino'
+descrizione: 'Offro gratuitamente la mia disponibilità a trainare roulotte, ritirarle (preferibilmente centro/nord Italia) e consegnarle nelle zone terremotate, senza chiedere nulla per le relative spese (gasolio/autostrada). Possiedo un furgone Renault con capacità di traino di kg.2000. Lorenzo (Cesena - FC)'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 23/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1357,191206266,2016-11-23 07:50:32,2016-11-23 07:49:47,La bufala del terremoto che manda in tilt i pacemaker,,,"[""Accettato"", ""Bollettino"", ""Bufale""]",,,"{""data"": ""23/11/2016"", ""descrizione"": ""Su alcuni siti dopo il sisma nel centro Italia sono comparsi gli avvisi: le onde elettromagnetiche compromettono l'uso dei regolatori cardiaci. Su Repubblica si spiega perch\u00e9 si tratta di una bufala."", ""link"": ""http://www.repubblica.it/salute/2016/11/20/news/terremoto_bufala_tilt_defibrillatori-152420871/?ref=twhr&timestamp=1479665326000&utm_source=dlvr.it&utm_medium=twitter"", ""titolo"": ""La bufala del terremoto che manda in tilt i pacemaker""}","<pre><yamldata>titolo: 'La bufala del terremoto che manda in tilt i pacemaker'
 descrizione: 'Su alcuni siti dopo il sisma nel centro Italia sono comparsi gli avvisi: le onde elettromagnetiche compromettono l''uso dei regolatori cardiaci. Su Repubblica si spiega perché si tratta di una bufala.'
 link: 'http://www.repubblica.it/salute/2016/11/20/news/terremoto_bufala_tilt_defibrillatori-152420871/?ref=twhr&timestamp=1479665326000&utm_source=dlvr.it&utm_medium=twitter'
