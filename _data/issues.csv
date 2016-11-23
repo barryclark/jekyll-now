@@ -699,7 +699,7 @@ descrizione: 'COMUNE DI VISSO COMUNICA CHE LE RICHIESTE DI STRUTTURE ABITATIVE D
 link: 'https://www.facebook.com/photo.php?fbid=10210638083137956&set=gm.699026850252339&type=3'
 data: 13/11/2016
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1253,188983026,2016-11-23 18:19:35,2016-11-13 17:37:37,Acquisti solidali: a #Cascia azienda agricola vende legumi,42.42182,13.0486,"[""Accettato"", ""acquisto solidale"", ""Bollettino"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""Vendo legumi in magazzino della mia azienda agricola distrutta dal sisma"", ""data"": ""13/11/2016"", ""descrizione"": ""Ho un'azienda agricola con annesso agriturismo che si trova vicino a Cascia. Abbiamo bisogno di vendere i nostri legumi (farro, grano, orzo, avena, lenticchie, ceci e cicerchie), rimasti invenduti in magazzino, per cercare di riprendere l'attivit\u00e0. I legumi sono tutti di nostra produzione. Facciamo spedizioni in tutta Italia. Contattatemi per telefono o email. Grazie, Diego."", ""email"": ""diego86bisbis@gmail.com, info@casalesantantonio.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": ""42.42182"", ""link"": ""http://www.casalesantantonio.it"", ""lon"": ""13.0486"", ""tel"": ""3334360407""}","<pre><yamldata>tel: '3334360407'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1253,188983026,2016-11-23 18:27:27,2016-11-13 17:37:37,Acquisti solidali: a #Cascia azienda agricola vende legumi,42.42182,13.0486,"[""Accettato"", ""acquisto solidale"", ""Bollettino"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""Vendo legumi in magazzino della mia azienda agricola distrutta dal sisma"", ""data"": ""13/11/2016"", ""descrizione"": ""Ho un'azienda agricola con annesso agriturismo che si trova vicino a Cascia. Abbiamo bisogno di vendere i nostri legumi (farro, grano, orzo, avena, lenticchie, ceci e cicerchie), rimasti invenduti in magazzino, per cercare di riprendere l'attivit\u00e0. I legumi sono tutti di nostra produzione. Facciamo spedizioni in tutta Italia. Contattatemi per telefono o email. Grazie, Diego."", ""email"": ""diego86bisbis@gmail.com, info@casalesantantonio.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": ""42.42182"", ""link"": ""http://www.casalesantantonio.it"", ""lon"": ""13.0486"", ""tel"": ""3334360407""}","<pre><yamldata>tel: '3334360407'
 email: 'diego86bisbis@gmail.com, info@casalesantantonio.it' 
 cosa: 'Vendo legumi in magazzino della mia azienda agricola distrutta dal sisma'
 descrizione: 'Ho un''azienda agricola con annesso agriturismo che si trova vicino a Cascia. Abbiamo bisogno di vendere i nostri legumi (farro, grano, orzo, avena, lenticchie, ceci e cicerchie), rimasti invenduti in magazzino, per cercare di riprendere l''attività. I legumi sono tutti di nostra produzione. Facciamo spedizioni in tutta Italia. Contattatemi per telefono o email. Grazie, Diego.'
@@ -4501,6 +4501,12 @@ postale: ''
 causale: 'AIUTO TERREMOTO CENTRO ITALIA'
 link: 'https://eccomi.org'
 email: segretario@masci.it
+data: 26/09/2016
+</yamldata></pre>
+",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/684,179269842,2016-10-01 17:36:51,2016-09-26 16:03:18,I provvedimenti di Inarcassa per i professionisti terremotati,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""26/09/2016"", ""descrizione"": ""Il Consiglio di Amministrazione di Inarcassa, nella riunione del 22 settembre scorso, ha deliberato i provvedimenti in favore dei liberi professionisti residenti in Abruzzo, Lazio, Marche e Umbria colpiti dal sisma del 24 agosto 2016."", ""link"": ""https://www.inarcassa.it/site/home/news/articolo7051.html"", ""titolo"": ""I provvedimenti di Inarcassa per i professionisti terremotati""}","<pre><yamldata>titolo: 'I provvedimenti di Inarcassa per i professionisti terremotati'
+descrizione: 'Il Consiglio di Amministrazione di Inarcassa, nella riunione del 22 settembre scorso, ha deliberato i provvedimenti in favore dei liberi professionisti residenti in Abruzzo, Lazio, Marche e Umbria colpiti dal sisma del 24 agosto 2016.'
+link: 'https://www.inarcassa.it/site/home/news/articolo7051.html'
 data: 26/09/2016
 </yamldata></pre>
 ",open
