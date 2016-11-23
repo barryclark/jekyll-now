@@ -29,7 +29,12 @@
       </span>
       <hr />
       <div class="sample entry">
-        {% if post.facebook_post %}{% include facebook_post.html facebook_post=post.facebook_post %}{% else %}{% if post.image %}<img src="{% if post.thumbnail %}{{ post.image | replace_first: 'images','images/thumbnails' }}{% else %}{{ post.image }}{% endif %}" class="thumbnail" />{% endif %}{{ post.excerpt }}{% endif %}
+        {% if post.facebook_post %}{% include facebook_post.html facebook_post=post.facebook_post %}
+        {% else %}
+          {% unless post.twitter_post %}{% if post.image %}
+          <img src="{% if post.thumbnail %}{{ post.image | replace_first: 'images','images/thumbnails' }}{% else %}{{ post.image }}{% endif %}" class="thumbnail" />
+          {% endif %}{% endunless %}{{ post.excerpt }}
+        {% endif %}
       </div>
             
     </article>
