@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1357,191206266,2016-11-23 07:50:16,2016-11-23 07:49:47,La bufala del terremoto che manda in tilt i pacemaker,,,"[""Accettato"", ""Bollettino"", ""Bufale"", ""Raccolte Fondi""]",,,"{""data"": ""23/11/2016"", ""descrizione"": ""Su alcuni siti dopo il sisma nel centro Italia sono comparsi gli avvisi: le onde elettromagnetiche compromettono l'uso dei regolatori cardiaci. Su Repubblica si spiega perch\u00e9 si tratta di una bufala."", ""link"": ""http://www.repubblica.it/salute/2016/11/20/news/terremoto_bufala_tilt_defibrillatori-152420871/?ref=twhr&timestamp=1479665326000&utm_source=dlvr.it&utm_medium=twitter"", ""titolo"": ""La bufala del terremoto che manda in tilt i pacemaker""}","<pre><yamldata>titolo: 'La bufala del terremoto che manda in tilt i pacemaker'
+descrizione: 'Su alcuni siti dopo il sisma nel centro Italia sono comparsi gli avvisi: le onde elettromagnetiche compromettono l''uso dei regolatori cardiaci. Su Repubblica si spiega perché si tratta di una bufala.'
+link: 'http://www.repubblica.it/salute/2016/11/20/news/terremoto_bufala_tilt_defibrillatori-152420871/?ref=twhr&timestamp=1479665326000&utm_source=dlvr.it&utm_medium=twitter'
+data: 23/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1356,191204330,2016-11-23 07:37:09,2016-11-23 07:34:01,#Norcia Vive: raccolta fondi per una Casa delle associazioni della #Valnerina,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Raccolte Fondi"", ""Sisma Ottobre""]",,,"{""bic"": """", ""causale"": ""NORCIA VIVE"", ""chi"": ""#Norcia Vive: raccolta fondi per una Casa delle associazioni della #Valnerina"", ""data"": ""23/11/2016"", ""descrizione"": ""Il Cesvol, Centro servizi volontariato Perugia, si \u00e8 fatto promotore di un progetto di raccolta fondi finalizzato alla creazione di un centro polivalente da adibire a Casa dell\u2019associazionismo, dei gruppi informali, e di tutte le realt\u00e0 organizzate e non, che insieme vi potranno ritrovare un luogo di \u201crinascita sociale e culturale\u201d e di aggregazione, un contesto di relazioni sociali in grado di sostenere e rafforzare l\u2019intento di tutta la cittadinanza di ricreare e ricostruire un senso compiuto di cittadinanza attiva e di progettazione partecipata."", ""email"": ""cesvol@mclink.it"", ""iban"": ""IT42I0312703001000000004038"", ""intestazione"": ""Cesvol \u2013 Centro servizi per il volontariato di Perugia"", ""link"": ""http://www.pgcesvol.net/norcia-vive-un-centro-polivalente-per-le-associazioni-di-norcia-e-dintorni/"", ""postale"": """"}","<pre><yamldata>chi: '#Norcia Vive: raccolta fondi per una Casa delle associazioni della #Valnerina'
 descrizione: 'Il Cesvol, Centro servizi volontariato Perugia, si è fatto promotore di un progetto di raccolta fondi finalizzato alla creazione di un centro polivalente da adibire a Casa dell’associazionismo, dei gruppi informali, e di tutte le realtà organizzate e non, che insieme vi potranno ritrovare un luogo di “rinascita sociale e culturale” e di aggregazione, un contesto di relazioni sociali in grado di sostenere e rafforzare l’intento di tutta la cittadinanza di ricreare e ricostruire un senso compiuto di cittadinanza attiva e di progettazione partecipata.'
 intestazione: 'Cesvol – Centro servizi per il volontariato di Perugia'
@@ -7645,17 +7650,6 @@ link: 'https://www.facebook.com/ComunediAmatrice/posts/1091653897580611'
 data: 14/09/2016
 </yamldata></pre>
 ",closed
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/316,176960957,2016-09-22 16:16:47,2016-09-14 16:51:02,"Sezze, LT - Famiglia Molinari offre ospitalità",41.4939,13.04892,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""La famiglia Molinari mette a disposizione un appartamento arredato per una famiglia di 4 persone"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Sezze (LT)"", ""lat"": 41.4939, ""link"": """", ""lon"": 13.04892, ""tel"": ""3400678842 (Giorgio Molinari)""}","<pre><yamldata>tel: '3400678842 (Giorgio Molinari)'
-email: ''
-descrizione: 'La famiglia Molinari mette a disposizione un appartamento arredato per una famiglia di 4 persone'
-indirizzo: 'Sezze (LT)'
-lat: 41.49390
-lon: 13.04892
-link: ''
-immagine: ''
-data: 14/09/2016
-</yamldata></pre>
-",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/316,176960957,2016-09-22 16:16:47,2016-09-14 16:51:02,"Sezze, LT - Famiglia Molinari offre ospitalità",41.4939,13.04892,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""La famiglia Molinari mette a disposizione un appartamento arredato per una famiglia di 4 persone"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Sezze (LT)"", ""lat"": 41.4939, ""link"": """", ""lon"": 13.04892, ""tel"": ""3400678842 (Giorgio Molinari)""}","<pre><yamldata>tel: '3400678842 (Giorgio Molinari)'
 email: ''
 descrizione: 'La famiglia Molinari mette a disposizione un appartamento arredato per una famiglia di 4 persone'
