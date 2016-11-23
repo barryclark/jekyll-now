@@ -1,15 +1,19 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: Om Os
+permalink: /omos/
 ---
 
-Some information about you!
 
-### More Information
+### Foreningens information
 
-A place to include any other types of information that you'd like to include about yourself.
+IT-Tutor
+CVR:
+Åbogade 34
+8200
+Aarhus N
 
-### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+### Kontakt Os
+
+[alle@it-tutor.dk](alle@it-tutor.dk)
