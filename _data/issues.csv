@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1359,191235269,2016-11-23 13:41:34,2016-11-23 10:33:41,"Caseificio Artigianale ""AMICI"" #Camerino (MC)",43.1357641,13.0683092,"[""Accettato"", ""acquisto solidale"", ""Form"", ""Sisma Ottobre""]",,http://i.imgur.com/3PLKBr8.jpg,"{""cosa"": ""Caseificio Artigianale \""AMICI\"" #Camerino (MC)"", ""data"": ""23/11/2016"", ""descrizione"": ""Siamo una piccola azienda a conduzione familiare che lavora in ambito artigianale/locale. Nella foto in allegato il listino prezzi dei prodotti che confezioniamo. Contattare Andrea Amici. Grazie per il supporto!"", ""email"": """", ""immagine"": ""http://i.imgur.com/3PLKBr8.jpg"", ""indirizzo"": ""Piazza Cavour, Camerino, MC, Marche, 62032, Italia"", ""lat"": ""43.1357641"", ""link"": """", ""lon"": ""13.0683092"", ""tel"": ""0737637663""}","<pre><yamldata>tel: '0737637663'
+email: ''
+cosa: 'Caseificio Artigianale ""AMICI"" #Camerino (MC)'
+descrizione: 'Siamo una piccola azienda a conduzione familiare che lavora in ambito artigianale/locale. Nella foto in allegato il listino prezzi dei prodotti che confezioniamo. Contattare Andrea Amici. Grazie per il supporto!'
+indirizzo: 'Piazza Cavour, Camerino, MC, Marche, 62032, Italia'
+lat: '43.1357641'
+lon: '13.0683092'
+link: ''
+immagine: 'http://i.imgur.com/3PLKBr8.jpg'
+data: 23/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1358,191234102,2016-11-23 13:39:00,2016-11-23 10:28:14,Offresi trasporto gratuito di roulotte dal centro-nord Italia alle zone terremotate ,,,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""Veicolo idoneo al traino"", ""data"": ""23/11/2016"", ""descrizione"": ""Offro gratuitamente la mia disponibilit\u00e0 a trainare roulotte, ritirarle (preferibilmente centro/nord Italia) e consegnarle nelle zone terremotate, senza chiedere nulla per le relative spese (gasolio/autostrada). Possiedo un furgone Renault con capacit\u00e0 di traino di kg.2000. Lorenzo (Cesena - FC)"", ""email"": ""studiopirini@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3294972785""}","<pre><yamldata>tel: '3294972785'
 email: studiopirini@gmail.com
 cosa: 'Veicolo idoneo al traino'
@@ -3766,12 +3777,6 @@ link: 'https://www.facebook.com/groups/1758670357733881/permalink/17826269753382
 data: 13/10/2016
 </yamldata></pre>
 ",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/797,182704495,2016-10-13 06:21:38,2016-10-13 06:15:47,"Agenda Digitale dell’Umbria: #Norcia, banca dati dei fabbricati a disposizione.",,,"[""Accettato"", ""Bollettino"", ""Notizie Utili""]",,,"{""data"": ""13/10/2016"", ""descrizione"": ""Una banca dati dei fabbricati ad intera copertura regionale, nella quale per ogni singolo \u201ccassone edilizio\u201d si conosce: il foglio e la particella catastale di riferimento, il numero dei piani fuori terra, lo stato di costruzione del fabbricato e la data del rilievo. E\u2019 quanto il Sistema Informativo Geografico della Regione Umbria ha realizzato e messo a disposizione dei tecnici che stanno portando avanti l\u2019attivit\u00e0 di censimento dei danni e di agibilit\u00e0 degli edifici colpiti dal terremoto del 24 agosto scorso."", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1782626975338219/"", ""titolo"": ""Agenda Digitale dell\u2019Umbria: #Norcia, banca dati dei fabbricati a disposizione.""}","<pre><yamldata>titolo: 'Agenda Digitale dell’Umbria: #Norcia, banca dati dei fabbricati a disposizione.'
-descrizione: 'Una banca dati dei fabbricati ad intera copertura regionale, nella quale per ogni singolo “cassone edilizio” si conosce: il foglio e la particella catastale di riferimento, il numero dei piani fuori terra, lo stato di costruzione del fabbricato e la data del rilievo. E’ quanto il Sistema Informativo Geografico della Regione Umbria ha realizzato e messo a disposizione dei tecnici che stanno portando avanti l’attività di censimento dei danni e di agibilità degli edifici colpiti dal terremoto del 24 agosto scorso.'
-link: 'https://www.facebook.com/groups/1758670357733881/permalink/1782626975338219/'
-data: 13/10/2016
-</yamldata></pre>
-",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/796,182704037,2016-10-13 06:22:58,2016-10-13 06:11:37,Impianti sportivi #Amatrice:  annunciato dal Coni un contributo di 400 mila euro,,,"[""Accettato"", ""Bollettino"", ""Facebook"", ""Notizie Utili""]",,,"{""data"": ""13/10/2016"", ""descrizione"": """", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1782372915363625/"", ""titolo"": ""Impianti sportivi #Amatrice:  annunciato dal Coni un contributo di 400 mila euro""}","<pre><yamldata>titolo: 'Impianti sportivi #Amatrice:  annunciato dal Coni un contributo di 400 mila euro'
 descrizione: ''
 link: 'https://www.facebook.com/groups/1758670357733881/permalink/1782372915363625/'
@@ -6547,6 +6552,12 @@ data: 15/09/2016
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/447,177180609,2016-10-01 16:38:32,2016-09-15 13:43:42,Protezione Civile: indicazioni operative per censimento danni e verifiche di agibilità,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""Indicazioni operative per censimento danni e verifiche di agibilit\u00e0"", ""link"": ""http://www.protezionecivile.gov.it/jcms/it/view_new.wp?contentId=NEW59033"", ""titolo"": ""Protezione Civile""}","<pre><yamldata>titolo: 'Protezione Civile'
 descrizione: 'Indicazioni operative per censimento danni e verifiche di agibilità'
 link: 'http://www.protezionecivile.gov.it/jcms/it/view_new.wp?contentId=NEW59033'
+data: 15/09/2016
+</yamldata></pre>
+",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/446,177180428,2016-10-01 16:38:43,2016-09-15 13:43:04,Apre ad Amatrice sportello mobile Cna,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""Uno sportello mobile di Cna Rieti \u00e8 presente ad Amatrice nel parco comunale Minozzi per offrire supporto alle imprese colpite dal sisma."", ""link"": ""http://www.rietilife.com/2016/09/06/amatrice-la-cna-al-fianco-di-cittadini-e-imprese-con-una-postazione-mobile/"", ""titolo"": ""Apre ad Amatrice sportello mobile Cna""}","<pre><yamldata>titolo: 'Apre ad Amatrice sportello mobile Cna'
+descrizione: 'Uno sportello mobile di Cna Rieti è presente ad Amatrice nel parco comunale Minozzi per offrire supporto alle imprese colpite dal sisma.'
+link: 'http://www.rietilife.com/2016/09/06/amatrice-la-cna-al-fianco-di-cittadini-e-imprese-con-una-postazione-mobile/'
 data: 15/09/2016
 </yamldata></pre>
 ",open
