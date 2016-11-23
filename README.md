@@ -62,7 +62,6 @@ From the **root** directory:
 
 ```bash
 jekyll serve
-or
 # => Now browse to http://localhost:4000
 ```
 
