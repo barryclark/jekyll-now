@@ -27,10 +27,8 @@
 
           <nav>
               {% for p in site.pages %}
-                {% if p.url contains '404' %} 
-                  {% comment %}Remove 404 page{% endcomment %}
+                {% if p.group == 'nav' %} <!-- Only include page that has the group nav-->
                   
-                {% else %}
                   <a href="{{ p.url }}">{{ p.title }}</a>
 
                 {% endif %}

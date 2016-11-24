@@ -157,6 +157,7 @@ img {
 .masthead {
   padding: 20px 0;
   border-bottom: 1px solid $lightGray;
+  text-align: center;
 
   @include mobile {
     text-align: center;
@@ -164,10 +165,10 @@ img {
 }
 
 .site-avatar {
-  float: left;
   width: 650px;
   height: 85px;
-  margin-left: 25px;
+  margin-left: auto;
+  margin-right: auto;
 
   @include mobile {
     float: none;
@@ -212,8 +213,12 @@ img {
 }
 
 nav {
-  float: left;
+  display: inline-block;
+  text-align: center;
   margin-top: 23px; // @TODO: Vertically middle align
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
   font-family: $helveticaNeue;
   font-size: 18px;
 
@@ -225,7 +230,9 @@ nav {
   }
 
   a {
-    margin-left: 20px;
+    margin-left: 5px;
+    margin-right: 5px;    
+    text-align: center;
     color: $darkGray;
     text-align: right;
     font-weight: 300;

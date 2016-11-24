@@ -2,6 +2,7 @@
 layout: page
 title: Om Os
 permalink: /omos/
+group: nav
 ---
 
 

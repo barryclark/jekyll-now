@@ -2,6 +2,7 @@
 layout: page
 title: Vedtægter
 permalink: /vedtaegter/
+group: nav
 ---
 
 

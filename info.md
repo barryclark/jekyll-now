@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Bestyrelsen
-permalink: /bestyrelsen/
+title: Hold dig opdateret
+permalink: /info/
 group: nav
 ---
 
