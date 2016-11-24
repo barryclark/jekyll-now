@@ -7,12 +7,28 @@ permalink: /acquistisolidali/
 {% assign filteredissues = site.data.issuesjson | where: "state","open" %}
 {% for member in filteredissues %}
 {% if member.issue.labels contains "acquisto solidale" %}
-<div class="panel-body">
-<a href="/issues/{{ member.number | datapage_url: '.' }}" class="list-group-item">
-	<h4 class="list-group-item-heading">{{member.title}}</h4>
-	<p class="list-group-item-text">{{member.issue.data.descrizione}}</p>
-	<p class="list-group-item-text">{{member.issue.data.data}}</p>
+
+<div class="panel panel-default">
+<div class="panel-heading">
+<a href="/issues/{{ member.number | datapage_url: '.' }}">
+<h4>
+{{member.title}}
+</h4>
 </a>
+</div>
+<div class="panel-body">
+<p class="list-group-item-text">{{member.issue.data.descrizione|markdownify}}</p>
+  {% if member.issue.data.tel != blank %}
+  <p class="list-group-item-text"><i class="fa fa-phone"></i><a href="tel:{{page.issue.data.tel}}">{{member.issue.data.tel}}</a></p>
+  {% endif %}
+  {% if member.issue.data.email != blank %}
+  <p class="list-group-item-text"><i class="fa fa-envelope"></i> <a href="mailto:{{page.issue.data.email}}">{{member.issue.data.email}}</a></p>
+  {% endif %}
+  {% if member.issue.data.indirizzo != blank %}
+  <p class="list-group-item-text"><i class="fa fa-home"></i>{{member.issue.data.indirizzo}}</p>
+  {% endif %}
+<p class="list-group-item-text">{{member.issue.data.data}}</p>
+</div>
 <div class="panel-footer">
 <ul class="share-buttons">
   <li>Condividi:</li>
