@@ -1,17 +1,15 @@
 {% if site.disqus %}
 <div class="comments">
-	<div id="disqus_thread"></div>
-	<script type="text/javascript">
-
-	    var disqus_shortname = '{{jakpsatphp}}';
-
-	    (function() {
-	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-	        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-	    })();
-
-	</script>
-	<noscript>Prosím povolte JavaScript pro <a href="http://disqus.com/?ref_noscript">Disqus komentáře.</a></noscript>
+    <div id="disqus_thread"></div>
+    <script>
+        
+        (function () {
+            var d = document, s = d.createElement('script');
+            s.src = '//jakpsatphp.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Prosím povolte JavaScript pro <a href="http://disqus.com/?ref_noscript">Disqus komentáře.</a></noscript>
 </div>
 {% endif %}
