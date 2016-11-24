@@ -18,7 +18,7 @@ avatar: https://avatars3.githubusercontent.com/u/8727413
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email: tomotom.klima@centrum.cz
+  email:
   facebook:
   flickr:
   github: tomtomklima
@@ -27,7 +27,7 @@ footer-links:
   pinterest:
   rss: # just type anything here for a working RSS icon
   twitter: tomtomklima
-  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
+  stackoverflow: "users/4394743/tom" # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
 
