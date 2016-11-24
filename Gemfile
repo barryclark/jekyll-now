@@ -24,3 +24,5 @@ group :jekyll_plugins do
 end
 
 gem 'html-proofer'
+gem 'jekyll-tidy'
+
