@@ -7,7 +7,7 @@ group: nav
 
 Ansøgningsfristen for at blive tutor er i starten af april. Den specifikke dato fra år til år kan ses i kalderen under fanen Hold dig opdateret
 
-**--NÆRMERE OM ANSØGNINGSPROCEDUREN, INFORMØDE SAMT DEADLINE HER --** 
+**--NÆRMERE OM ANSØGNINGSPROCEDUREN, INFOMØDE SAMT DEADLINE KOMMER TIL AT STÅ HER  --** 
 
 Når man ansøger om at blive tutor forventes det af én at man kan deltage i de information møder der ligger i foråret samt rusdagene. For at man som tutor har mulighed for at fokusere på at give sit rushold den bedste start på universitetet, er der på disse informations møde indlagt tid til at man kan få planlagt aktiviteter samt lærer sit tutorhold at kende på de efterfølgende sociale arrangementer. 
 
