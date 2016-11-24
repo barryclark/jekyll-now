@@ -15,7 +15,17 @@ This site is written in Jekyll and hosted on github pages. This means that if yo
 This section will answer how to do the most common actions on [it-tutor.dk]
 
 ###Add a page
-To add a new page simply add a new .md file with the content in MarkDown to the root of this repository. The page will be automaticly added to the menu and published.
+To add a new page simply add a new .md file with the content in MarkDown to the root of this repository. The page will be automaticly be published. If you want the page in the main menu please add it to the grop "nav" by decalring it in the header of the .md file. An example of a header can be seen below:
+
+
+'''
+---
+layout: page
+title: THE TITLE
+permalink: /URL/
+group: nav <!-- #Includes it in the menu-->
+---
+''' 
 
 ###Edit a page
 Simply edit the .md file containing the page in the root folder
@@ -29,6 +39,9 @@ The front page look can be edited through /_layouts/default.html
 
 #Edit look of a page
 Most look is defined in style.scss the rest is found in the _sass folder
+
+#Submit a new post to the front page
+To submit a new post to the front page just add a new .md file to the _posts directory.
 
 
 ##Lokal Setup

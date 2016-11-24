@@ -30,7 +30,8 @@ Arbejdet i styregruppen består i at have kontakt til fakultetet, planlægge rus
 <br />
 <br />
 
-## Resterende styregruppe i IT-tutor
+
+## Den resterende styregruppe består af
 
 ### Sponsor Ansvarlig
 **Ninna Hoffmann** 
