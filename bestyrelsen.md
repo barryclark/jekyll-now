@@ -5,12 +5,9 @@ permalink: /bestyrelsen/
 group: nav
 ---
 
-Bestyrelsen består af 3 IT studerende. --Disse tager også del i styregruppen som står for den praktiske afvikling af rusdagene. Styregruppen består af i alt 6 studerende. --
+Bestyrelsen består af 3 IT studerende. *Disse tager også del i styregruppen som står for den praktiske afvikling af rusdagene. Styregruppen består af i alt 6 studerende.*
 
-Formand, Kasser og Næstformand 
-Menige medlemmer
-
-Arbejdet i bestyrelsen består i at have kontakt til fakultetet, planlægge rusdagsprogram samt udvælgelse af tutorer. 
+Arbejdet i styregruppen består i at have kontakt til fakultetet, planlægge rusdagsprogram samt udvælgelse af tutorer. 
 
 
 ## 2016/2017 bestyrelsen består af
