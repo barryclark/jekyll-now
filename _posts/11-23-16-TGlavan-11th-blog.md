@@ -12,7 +12,7 @@ http://cst.sagepub.com/content/3/2/59.short
 
 Summary:
 
-  So before we get to breaking down the argument that Bury makes in this piece we should have some idea of what she is speaking about (Looking at you people who didnt read the full thing and for those that did take the time to read the full article this should cement and clarify what you just read).  In the article Bury
+  So before we get to breaking down the argument that Bury makes in this piece we should have some idea of what she is speaking about (Looking at you people who didnt read the full thing and for those that did take the time to read the full article this should cement and clarify what you just read).  In the article Bury examine the textual poaching of the TV drama Six feet Under within its online fan culture.
 
 Reseach Question:
 
