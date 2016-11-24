@@ -29,7 +29,11 @@ Arbejdet i bestyrelsen består i at have kontakt til fakultetet, planlægge rusd
 [kasserer@it-tutor.dk](mailto:kasserer@it-tutor.dk)
 
 
-### Resterende styrergruppe i IT-tutor
+<br />
+<br />
+<br />
+
+## Resterende styrergruppe i IT-tutor
 
 ### Sponsor Ansvarlig
 **Ninna Hoffmann** 
