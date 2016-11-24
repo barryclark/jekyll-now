@@ -10,7 +10,25 @@ layout: default
   </div>
 
   <div class="date">
-    Skrevet den {{ page.date | date: "%B %e, %Y" }}
+<!-- Just adding date and redefining all month to get in in danish What a great hack-->
+    Skrevet 
+    {% assign m = page.date | date: "%-m" %}
+{{ page.date | date: "%-d" }}. <!-- <-The preiod after the date -->
+{% case m %}
+  {% when '1' %}Januar
+  {% when '2' %}Februar
+  {% when '3' %}Marts
+  {% when '4' %}April
+  {% when '5' %}Maj
+  {% when '6' %}Juni
+  {% when '7' %}Juli
+  {% when '8' %}August
+  {% when '9' %}September
+  {% when '10' %}Oktober
+  {% when '11' %}November
+  {% when '12' %}December
+{% endcase %}
+{{ page.date | date: "%Y" }}
   </div>
 
   {% include disqus.html %}
