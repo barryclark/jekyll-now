@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1366,191443482,2016-11-24 07:23:05,2016-11-24 06:34:50,Associazione offre disponibilità per raccolta beni a Colle Val d'Elsa (Si),,,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""raccolta beni"", ""data"": ""24/11/2016"", ""descrizione"": ""La nostra associazione Colle cresce aiuto di Colle di Val d'Elsa (Siena) \u00e8 disponibile ad effettuare raccolte di beni mirate (no denaro) da destinare direttamente alle popolazioni colpite dal sisma o a centri accoglienza von consegna a nostro carico. Abbiamo gi\u00e0 consegnato ad alcune famiglie di Amatrice e a centro raccolta di Norcia."", ""email"": ""sosterremoto@libero.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.facebook.com/groups/559978804127046/"", ""lon"": """", ""tel"": ""3346712506""}","<pre><yamldata>tel: '3346712506'
+email: sosterremoto@libero.it
+cosa: 'raccolta beni'
+descrizione: 'La nostra associazione Colle cresce aiuto di Colle di Val d''Elsa (Siena) è disponibile ad effettuare raccolte di beni mirate (no denaro) da destinare direttamente alle popolazioni colpite dal sisma o a centri accoglienza von consegna a nostro carico. Abbiamo già consegnato ad alcune famiglie di Amatrice e a centro raccolta di Norcia.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: 'https://www.facebook.com/groups/559978804127046/'
+immagine: ''
+data: 24/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1365,191417021,2016-11-24 07:18:31,2016-11-24 01:54:31,Regione #Marche: nominato il direttore dell'Ufficio speciale per la ricostruzione ,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""Sisma Ottobre""]",,,{},"<pre><yamldata>titolo: 'Protezione civile regione marche'
 descrizione: 'La Giunta regionale delle Marche ha conferito l’'incarico di direzione dell’'Ufficio speciale per la ricostruzione post sisma 2016 a Cesare Spuri. Il dirigente, che manterrà ad interim l’'incarico della Posizione di funzione Dipartimento per le politiche integrate di sicurezza e per la protezione civile, si occuperà di tutti gli adempimenti relativi alla ricostruzione: pianificazione urbanistica connessa alla ricostruzione; istruttoria sulla compatibilità urbanistica degli interventi richiesti a norma della legislazione vigente per il rilascio dei titoli abilitativi e dell’'autorizzazione paesaggistica; istruttoria e proposta di erogazione del contributo e tutti gli altri adempimenti relativi alla ricostruzione privata; attuazione degli interventi di ripristino o ricostruzione di opere pubbliche e beni culturali, realizzazione delle soluzioni temporanee per consentire la rapida ripresa dei servizi a supporto della popolazione terremotata; attuazione di ogni altro intervento di competenza degli enti locali necessari ai fini della ricostruzione.'
 link: 'http://www.regione.marche.it/In-Primo-Piano/ComunicatiStampa//id/26013/p/1/CESARE-SPURI-DIRETTORE-DELLUFFICIO-SPECIALE-PER-LA-RICOSTRUZIONE-POST-SISMA-'
@@ -2818,18 +2829,6 @@ data: 30/10/2016
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/960,186152867,2016-10-30 18:24:23,2016-10-30 18:21:29,#Jesi: ordinanza di chiusura scuole dal 31 ottobre,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""30/10/2016"", ""descrizione"": ""L'ordinanza del Comune di Jesi di chiusura di tutte le scuole di ogni ordine e grado, nidi compresi, per domani, luned\u00ec 31 Ottobre."", ""link"": ""https://twitter.com/ComuneJesi/status/792774574094032897/photo/1"", ""titolo"": ""#Jesi: #ordinanza di chiusura #scuole dal 31 ottobre""}","<pre><yamldata>titolo: '#Jesi: #ordinanza di chiusura #scuole dal 31 ottobre'
 descrizione: 'L''ordinanza del Comune di Jesi di chiusura di tutte le scuole di ogni ordine e grado, nidi compresi, per domani, lunedì 31 Ottobre.'
 link: 'https://twitter.com/ComuneJesi/status/792774574094032897/photo/1'
-data: 30/10/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/959,186152853,2016-10-30 18:21:43,2016-10-30 18:21:14,Riattivato numero solidale 45500,,,"[""Accettato"", ""Form"", ""Notizie Utili"", ""Raccolte Fondi"", ""Sisma Ottobre""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Riattivato numero solidale 45500"", ""data"": ""30/10/2016"", ""descrizione"": ""Il Dipartimento nazionale di Protezione civile ha riattivato il NUMERO SOLIDALE 45500 per donazioni via sms o telefono fisso."", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": """", ""postale"": """"}","<pre><yamldata>chi: 'Riattivato numero solidale 45500'
-descrizione: 'Il Dipartimento nazionale di Protezione civile ha riattivato il NUMERO SOLIDALE 45500 per donazioni via sms o telefono fisso.'
-intestazione: ''
-iban: ''
-bic: ''
-postale: ''
-causale: ''
-link: ''
-email: ''
 data: 30/10/2016
 </yamldata></pre>
 ",open
