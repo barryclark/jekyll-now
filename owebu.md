@@ -8,7 +8,7 @@ Web Jak psát PHP? píše Tomáš Klíma. Slouží jako odkladiště dobrých pr
 A ty by se mohli hodit i někomu dalšímu, proto jsou online. 
 Tento web vznikl náhodou, a to doslova. ![RNG tweet]({{site.baseurl}}/images/RNGtwwwt.png)
 
-Inspirace je čerpána z webů jako https://jakpsatweb.cz, https://php.vrana.cz a https://jecas.cz
+Inspirace je čerpána z webů jako <https://jakpsatweb.cz>, <https://php.vrana.cz> a <https://jecas.cz>. Díky, děláte to dobře!
 
 ### Kontakty
 
