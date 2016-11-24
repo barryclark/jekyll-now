@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Hello World!
+comments: true
 ---
 
 My first HELLO WORLD shouting post!
