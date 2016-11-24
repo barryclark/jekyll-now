@@ -12,7 +12,7 @@ layout: base
 <div class="container" role="main">
         <div class="row"> <div class="col-md-12">{% if page.state == "closed" %}<strike>{% endif %}<h2>{{page.issue.title}}</h2>{% if page.state == "closed" %}</strike>{% endif %} </div> </div>
   <div class="row"> <div class="col-md-2">Stato:</div> <div class="col-md-10"> {{page.state}}</div> </div>
-  <div class="row"> <div class="col-md-2">Descrizione:</div> <div class="col-md-10"> {{page.issue.data.descrizione}}</div> </div>
+  <div class="row"> <div class="col-md-2">Descrizione:</div> <div class="col-md-10"> {{page.issue.data.descrizione | markdownify}}</div> </div>
 
   {% if page.issue.data.tel != blank %}
   <div class="row"> <div class="col-md-2">Telefono:</div> <div class="col-md-10"> <a href="tel:{{page.issue.data.tel}}">{{page.issue.data.tel}}</a></div> </div>
@@ -22,7 +22,7 @@ layout: base
   {% endif %}
 
   {% if page.issue.data.intestazione != blank %}
-  <div class="row"> <div class="col-md-2">Instestazione:</div> <div class="col-md-10"> {{page.issue.data.intestazione}}</div> </div>
+  <div class="row"> <div class="col-md-2">Intestazione:</div> <div class="col-md-10"> {{page.issue.data.intestazione}}</div> </div>
   {% endif %}
 
   {% if page.issue.data.iban != blank %}
