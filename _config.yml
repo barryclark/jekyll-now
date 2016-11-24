@@ -27,8 +27,8 @@ navbar-links:
   Offerte:
     - Risorse: "risorse-disponibili/"
     - Alloggi: "alloggi/"
-  Raccolte Fondi:
-    - Fondi: "fondi/"
+  Raccolte:
+    - Raccolte Fondi: "fondi/"
     - Acquisti Solidali: "acquistisolidali/"
   Aggiornamenti:
     - News: "news/"
