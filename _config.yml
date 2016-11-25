@@ -225,8 +225,8 @@ gems:
   - jekyll-tidy
 
 jekyll_tidy:
-exclude: []
-compress_html: true
+  exclude: []
+  compress_html: true
 
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
