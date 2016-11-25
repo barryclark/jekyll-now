@@ -977,11 +977,11 @@ descrizione: 'Le associazioni A2O-Altra Ancona Ora, ORA - Organizzazione Ragazzi
 link: 'https://www.facebook.com/A2O.AltraAnconaOra/photos/a.346367495464330.1073741828.342999132467833/902540669847007/?type=3&theater'
 data: 11/11/2016
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1227,188702282,2016-11-22 22:02:19,2016-11-11 07:38:42,Acquisti solidali: Cioccolateria Vetusta Nursia #Norcia,,,"[""Accettato"", ""acquisto solidale"", ""Bollettino"", ""Form""]",,,"{""data"": ""11/11/2016"", ""descrizione"": ""A Norcia non ci solo solo norcinerie ma \u00e8 famosa anche per il cioccolato. Questa piccola attivit\u00e0 a conduzione familiare ha necessit\u00e0 di svuotare il magazzino pericolante a causa del sisma dai prodotti. \u00c8 possibile acquistare i prodotti tramite il sito e per informazioni contattare il numero di riferimento."", ""email"": ""info@norciaciok.it"", ""indirizzo"": """", ""lat"": """", ""link"": ""http://www.norciaciok.it/"", ""lon"": """", ""nome"": ""Cioccolateria Vetusta Nursia"", ""tel"": ""0743 817 370""}","<pre><yamldata>nome: 'Cioccolateria Vetusta Nursia'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1227,188702282,2016-11-25 23:46:06,2016-11-11 07:38:42,Acquisti solidali: Cioccolateria Vetusta Nursia #Norcia,,,"[""Accettato"", ""acquisto solidale"", ""Bollettino"", ""Form""]",,,"{""data"": ""11/11/2016"", ""descrizione"": ""A Norcia non ci solo solo norcinerie ma \u00e8 famosa anche per il cioccolato. Questa piccola attivit\u00e0 a conduzione familiare ha necessit\u00e0 di svuotare il magazzino pericolante a causa del sisma dai prodotti. \u00c8 possibile acquistare i prodotti tramite il sito e per informazioni \u00e8 possibile contattare il numero di riferimento."", ""email"": ""info@norciaciok.it"", ""indirizzo"": """", ""lat"": """", ""link"": ""http://www.norciaciok.it/"", ""lon"": """", ""nome"": ""Cioccolateria Vetusta Nursia"", ""tel"": ""0743 817 370""}","<pre><yamldata>nome: 'Cioccolateria Vetusta Nursia'
 tel: '0743 817 370'
 email: info@norciaciok.it
 descrizione: 'A Norcia non ci solo solo norcinerie ma è famosa anche per il cioccolato. Questa piccola attività a conduzione familiare ha necessità di svuotare il magazzino pericolante a causa del
-sisma dai prodotti. È possibile acquistare i prodotti tramite il sito e per informazioni contattare il numero di riferimento.'
+sisma dai prodotti. È possibile acquistare i prodotti tramite il sito e per informazioni è possibile contattare il numero di riferimento.'
 indirizzo: ''
 lat: ''
 lon: ''
