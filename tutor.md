@@ -5,7 +5,7 @@ permalink: /tutor/
 group: nav
 ---
 
-Ansøgningsfristen for at blive tutor er i starten af april. Den specifikke dato fra år til år kan ses i kalderen under fanen [/info](Hold dig opdateret)
+Ansøgningsfristen for at blive tutor er i starten af april. Den specifikke dato fra år til år kan ses i kalderen under fanen [Hold dig opdateret](/info)
 
 En uge inden ansøgningsfristen afholdes der et infomøde på Katrinebjerg. 
 
