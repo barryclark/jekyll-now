@@ -6394,7 +6394,7 @@ immagine: ''
 data: 16/09/2016
 </yamldata></pre>
 ",closed
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/483,177428181,2016-09-16 13:40:22,2016-09-16 13:39:53,GRUPPO ELETTROGENO,42.622598,13.340167,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""GRUPPO ELETTROGENO"", ""data"": ""16/09/2016"", ""descrizione"": ""Campo autogestito di Capricchia segnalano la necessit\u00e0 di un gruppo elettrogeno, in quanto \u00e8 stata staccata la corrente."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": ""42.622598"", ""link"": """", ""lon"": ""13.340167"", ""tel"": """"}","<pre><yamldata>tel: ''
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/483,177428181,2016-11-26 14:56:53,2016-09-16 13:39:53,GRUPPO ELETTROGENO,42.622598,13.340167,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""GRUPPO ELETTROGENO"", ""data"": ""16/09/2016"", ""descrizione"": ""Campo autogestito di Capricchia segnalano la necessit\u00e0 di un gruppo elettrogeno, in quanto \u00e8 stata staccata la corrente."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": ""42.622598"", ""link"": """", ""lon"": ""13.340167"", ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 cosa: 'GRUPPO ELETTROGENO'
 descrizione: 'Campo autogestito di Capricchia segnalano la necessità di un gruppo elettrogeno, in quanto è stata staccata la corrente.'
@@ -6405,7 +6405,7 @@ link: ''
 immagine: ''
 data: 16/09/2016
 </yamldata></pre>
-",open
+",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/482,177427657,2016-09-23 22:41:32,2016-09-16 13:37:33,Richiesta di indumenti intimi,42.63289,13.28937,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Richiesta di indumenti intimi"", ""data"": ""16/09/2016"", ""descrizione"": ""Oggi sono URGENTI gli indumenti meno pensabili e cio\u00e8 MUTANDE, CALZINI, REGGISENI e MAGLIETTE/CANOTTIERE INTIME. Il tutto di varie taglie, soprattutto medio grandi per uomini, donne e bambini di ambo i sessi. Ovviamente l'intimo va rigorosamente consegnato nuovo per una questione di igiene."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": ""42.63289"", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1760343367566580/"", ""lon"": ""13.28937"", ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 cosa: 'Richiesta di indumenti intimi'
