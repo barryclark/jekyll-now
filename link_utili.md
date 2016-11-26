@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Link e contatti utili
+title: Link e Contatti Utili
 permalink: /link_utili/
 ---
 
-Di seguito la lista dei contatti registrati nei sistemi di terremotocenotroitalia
+Di seguito la lista dei contatti e dei link registrati da TerremotoCentroItalia
 
 # Contatti
 
@@ -15,7 +15,7 @@ Di seguito la lista dei contatti registrati nei sistemi di terremotocenotroitali
 {% endif %}
 {% endfor %}
 
-# Fonti Importanti
+# Link
 
 - [Osservatorio Terremoti INGVterremoti](http://cnt.rm.ingv.it/)
 
