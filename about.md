@@ -16,12 +16,12 @@ Hvis du vil i kontakt bestyrelsen, skal du skrive til alle@it-tutor.dk
 
 ### Foreningens information
 
-IT-Tutor
-CVR:
-Åbogade 34
-8200
-Aarhus N
+IT-Tutor:  <br />
+CVR: 38189743 <br /> 
 
+Institut for Datalogi <br /> 
+Åbogade 34 <br />
+8200 Aarhus N <br />
 
 ### Kontakt Os
 

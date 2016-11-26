@@ -5,11 +5,14 @@ permalink: /tutor/
 group: nav
 ---
 
-Ansøgningsfristen for at blive tutor er i starten af april. Den specifikke dato fra år til år kan ses i kalderen under fanen Hold dig opdateret
+Ansøgningsfristen for at blive tutor er i starten af april. Den specifikke dato fra år til år kan ses i kalderen under fanen [/info](Hold dig opdateret)
 
-**--NÆRMERE OM ANSØGNINGSPROCEDUREN, INFOMØDE SAMT DEADLINE KOMMER TIL AT STÅ HER  --** 
+En uge inden ansøgningsfristen afholdes der et infomøde på Katrinebjerg. 
 
-Når man ansøger om at blive tutor forventes det af én at man kan deltage i de information møder der ligger i foråret samt rusdagene. For at man som tutor har mulighed for at fokusere på at give sit rushold den bedste start på universitetet, er der på disse informations møde indlagt tid til at man kan få planlagt aktiviteter samt lærer sit tutorhold at kende på de efterfølgende sociale arrangementer. 
+** Hvis du vil være sikker på ikke at gå glip af datoer kan du tilmelde dig vores nyhedsbrev med tutordeadlines nederest på siden. 
+
+## Om at være tutor 
+Når man ansøger om at blive tutor forventes det af én at man kan deltage i de information møder der ligger i foråret samt rusdagene. For at man som tutor har mulighed for at fokusere på at give sit rushold den bedste start på universitetet, er der på disse informations møde indlagt tid til at man kan få planlagt aktiviteter samt lærer sit tutorhold at kende på de efterfølgende sociale arrangementer.
 
 For at blive en del af dette års tutor hold, skal man inden deadline sende en **begrundet** ansøgning til ansoeg@it-tutor.dk. 
 Denne ansøgning skal som minimum indeholde:
