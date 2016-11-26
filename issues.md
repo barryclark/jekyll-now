@@ -39,7 +39,7 @@ permalink: /issues/
 <div class="panel-body">
 <a href="{{site.url}}/issues/{{member.number}}" class="list-group-item">
 	<h4 class="list-group-item-heading">{{member.title}}</h4>
-	<p class="list-group-item-text">{{member.issue.data.descrizione}}</p>
+	<p class="list-group-item-text">{{member.issue.data.descrizione|markdownify}}</p>
 </a>
 <div class="panel-footer">
 <ul class="share-buttons">
@@ -65,7 +65,7 @@ permalink: /issues/
 <div class="panel-body">
 <a href="{{site.url}}/issues/{{member.number}}" class="list-group-item">
 	<h4 class="list-group-item-heading">{{member.title}}</h4>
-	<p class="list-group-item-text">{{member.issue.data.descrizione}}</p>
+	<p class="list-group-item-text">{{member.issue.data.descrizione|markdownify}}</p>
 </a>
 <div class="panel-footer">
 <ul class="share-buttons">
@@ -91,7 +91,7 @@ permalink: /issues/
 <div class="panel-body">
 <a href="{{site.url}}/issues/{{member.number}}" class="list-group-item">
 	<h4 class="list-group-item-heading">{{member.title}}</h4>
-	<p class="list-group-item-text">{{member.issue.data.descrizione}}</p>
+	<p class="list-group-item-text">{{member.issue.data.descrizione|markdownify}}</p>
 </a>
 <div class="panel-footer">
 <ul class="share-buttons">
@@ -117,7 +117,7 @@ permalink: /issues/
 <div class="panel-body">
 <a href="{{site.url}}/issues/{{member.number}}" class="list-group-item">
 	<h4 class="list-group-item-heading">{{member.title}}</h4>
-	<p class="list-group-item-text">{{member.issue.data.descrizione}}</p>
+	<p class="list-group-item-text">{{member.issue.data.descrizione|markdownify}}</p>
 </a>
 <div class="panel-footer">
 <ul class="share-buttons">
@@ -143,7 +143,7 @@ permalink: /issues/
 <div class="panel-body">
 <a href="{{site.url}}/issues/{{member.number}}" class="list-group-item">
 	<h4 class="list-group-item-heading">{{member.title}}</h4>
-	<p class="list-group-item-text">{{member.issue.data.descrizione}}</p>
+	<p class="list-group-item-text">{{member.issue.data.descrizione|markdownify}}</p>
 </a>
 <div class="panel-footer">
 <ul class="share-buttons">
@@ -169,7 +169,7 @@ permalink: /issues/
 <div class="panel-body">
 <a href="{{site.url}}/issues/{{member.number}}" class="list-group-item">
 	<h4 class="list-group-item-heading">{{member.title}}</h4>
-	<p class="list-group-item-text">{{member.issue.data.descrizione}}</p>
+	<p class="list-group-item-text">{{member.issue.data.descrizione|markdownify}}</p>
 </a>
 <div class="panel-footer">
 <ul class="share-buttons">

@@ -33,7 +33,7 @@ permalink: /bollettino/
 <div class="panel-body">
 {% if member.issue.data.descrizione %}
 <div class="row">
-<div class="col-md-12">{{member.issue.data.descrizione}}</div>
+<div class="col-md-12">{{member.issue.data.descrizione|markdownify}}</div>
 </div>
 {% endif %}
 {% if member.issue.data.data %}
@@ -83,7 +83,7 @@ permalink: /bollettino/
 <div class="panel-body">
 {% if member.issue.data.descrizione %}
 <div class="row">
-<div class="col-md-12">{{member.issue.data.descrizione}}</div>
+<div class="col-md-12">{{member.issue.data.descrizione|markdownify}}</div>
 </div>
 {% endif %}
 {% if member.issue.data.data %}
