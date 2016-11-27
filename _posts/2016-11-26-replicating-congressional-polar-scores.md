@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Replication Study: #Polar Scores for Members of Congress'
+title: '#Polar Scores for Members of Congress'
 author: carol
 ---
 
