@@ -3,7 +3,7 @@ layout: post
 title: Welcome!
 ---
 
-Hello World!
+Hello World
 
 This is my very first blog post. Through this blog forum, I will focus on sharing my experiences with technology. In particular The Microsoft Azure Cloud - something I am very passionate about!
 
