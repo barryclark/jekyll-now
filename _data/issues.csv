@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1378,191834731,2016-11-27 00:39:55,2016-11-27 00:37:23,Presidi civici di Cittadinanzattiva nelle comunità terremotate dell'Umbria,,,"[""Accettato"", ""Bollettino"", ""Contatti"", ""Facebook"", ""Sisma Ottobre""]",,,"{""data"": ""27/11/2016"", ""descrizione"": ""Cittadinanzattiva ha creato dal Trasimeno alla Valnerina presidi civici per informare e assistere le popolazioni colpite dal terremoto."", ""email"": ""cittativ.umbria@libero.it"", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.facebook.com/presidicivici/"", ""lon"": """", ""nome"": ""Presidi civici di Cittadinanzattiva nelle comunit\u00e0 terremotate dell'Umbria"", ""tel"": """"}","<pre><yamldata>nome: 'Presidi civici di Cittadinanzattiva nelle comunità terremotate dell''Umbria'
+tel: ''
+email: cittativ.umbria@libero.it
+descrizione: 'Cittadinanzattiva ha creato dal Trasimeno alla Valnerina presidi civici per informare e assistere le popolazioni colpite dal terremoto.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: 'https://www.facebook.com/presidicivici/'
+data: 27/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1377,191834432,2016-11-27 00:39:30,2016-11-27 00:27:47,Raccolta fondi per comprare uno scuolabus a #Pievebovigliana,,,"[""Accettato"", ""Bollettino"", ""Facebook"", ""Raccolte Fondi"", ""Sisma Ottobre""]",,,"{""bic"": ""HELADEF1WEM"", ""causale"": ""\""Erdbeben Italien\u201c"", ""chi"": ""Raccolta fondi per comprare uno scuolabus a #Pievebovigliana"", ""data"": ""27/11/2016"", ""descrizione"": ""La Federazione delle Associazioni culturali italo-tedesche VDIG - Italienfreunde ha dato vita ad una raccolta fondi per acquistare uno scuolabus per gli scolari di Pievebovigliana, paesino marchigiano semidistrutto dal terremoto. Qui ulteriori informazioni: http://bit.ly/2frhW5K"", ""email"": """", ""iban"": ""DE84820510000301039771"", ""intestazione"": """", ""link"": ""https://www.facebook.com/radiocolonia.funkhaus/posts/1794383717497435"", ""postale"": """"}","<pre><yamldata>chi: 'Raccolta fondi per comprare uno scuolabus a #Pievebovigliana'
 descrizione: 'La Federazione delle Associazioni culturali italo-tedesche VDIG - Italienfreunde ha dato vita ad una raccolta fondi per acquistare uno scuolabus per gli scolari di Pievebovigliana, paesino marchigiano semidistrutto dal terremoto. Qui ulteriori informazioni: http://bit.ly/2frhW5K'
 intestazione: ''
@@ -1261,16 +1271,6 @@ indirizzo: 'Madonna di Lugo, Spoleto, PG, UMB, 06049, Italy'
 lat: '42.7685858'
 lon: '12.7510342'
 link: 'https://www.facebook.com/iragazzidel50a/'
-data: 09/11/2016
-</yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1192,188369627,2016-11-09 23:53:00,2016-11-09 22:30:42,Contatti Caritas #Spoleto - Centro raccolta aiuti Diocesi dell'#Umbria,42.7346574,12.7384492403508,"[""Accettato"", ""Bollettino"", ""Contatti"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""09/11/2016"", ""descrizione"": ""Per l\u2019Archidiocesi di Spoleto \u2013 Norcia e per le altre Diocesi dell\u2019Umbria \u00e8 la Caritas diocesana locale a coordinare la raccolta degli aiuti. Chi volesse collaborare con l\u2019invio di generi di prima necessit\u00e0, deve prima contattare gli operatori della Caritas al numero 0743-220485. I volontari, poi, distribuiranno nelle varie comunit\u00e0 della Valnerina quanto ricevuto."", ""email"": ""caritas@spoletonorcia.it"", ""indirizzo"": ""Via Aurelio Saffi, Spoleto, PG, UMB, 06049, Italy"", ""lat"": ""42.7346574"", ""link"": ""http://www.spoletonorcia.it"", ""lon"": ""12.7384492403508"", ""nome"": ""Caritas Diocesana di Spoleto - Archidiocesi di Spoleto \u2013 Norcia"", ""tel"": ""0743 22 04 85""}","<pre><yamldata>nome: 'Caritas Diocesana di Spoleto - Archidiocesi di Spoleto – Norcia'
-tel: '0743 22 04 85'
-email: caritas@spoletonorcia.it
-descrizione: 'Per l’Archidiocesi di Spoleto – Norcia e per le altre Diocesi dell’Umbria è la Caritas diocesana locale a coordinare la raccolta degli aiuti. Chi volesse collaborare con l’invio di generi di prima necessità, deve prima contattare gli operatori della Caritas al numero 0743-220485. I volontari, poi, distribuiranno nelle varie comunità della Valnerina quanto ricevuto.'
-indirizzo: 'Via Aurelio Saffi, Spoleto, PG, UMB, 06049, Italy'
-lat: '42.7346574'
-lon: '12.7384492403508'
-link: 'http://www.spoletonorcia.it'
 data: 09/11/2016
 </yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1192,188369627,2016-11-09 23:53:00,2016-11-09 22:30:42,Contatti Caritas #Spoleto - Centro raccolta aiuti Diocesi dell'#Umbria,42.7346574,12.7384492403508,"[""Accettato"", ""Bollettino"", ""Contatti"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""09/11/2016"", ""descrizione"": ""Per l\u2019Archidiocesi di Spoleto \u2013 Norcia e per le altre Diocesi dell\u2019Umbria \u00e8 la Caritas diocesana locale a coordinare la raccolta degli aiuti. Chi volesse collaborare con l\u2019invio di generi di prima necessit\u00e0, deve prima contattare gli operatori della Caritas al numero 0743-220485. I volontari, poi, distribuiranno nelle varie comunit\u00e0 della Valnerina quanto ricevuto."", ""email"": ""caritas@spoletonorcia.it"", ""indirizzo"": ""Via Aurelio Saffi, Spoleto, PG, UMB, 06049, Italy"", ""lat"": ""42.7346574"", ""link"": ""http://www.spoletonorcia.it"", ""lon"": ""12.7384492403508"", ""nome"": ""Caritas Diocesana di Spoleto - Archidiocesi di Spoleto \u2013 Norcia"", ""tel"": ""0743 22 04 85""}","<pre><yamldata>nome: 'Caritas Diocesana di Spoleto - Archidiocesi di Spoleto – Norcia'
