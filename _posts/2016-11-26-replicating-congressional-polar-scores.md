@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Replication Study: #Polar Scores for Members of Congress"
+title: 'Replication Study: #Polar Scores for Members of Congress'
 author: carol
 ---
 
@@ -8,14 +8,11 @@ My final project is a replication study of a forthcoming paper by Libby Hemphill
 
 * Locate original #Polar Scores paper (thanks, <a href = "https://telegram.me/scihubbot">scihub bot</a>!)
 * Launch and configure an <a href = "https://aws.amazon.com/">AWS</a> instance for 2016 election purpletag data
-* Collect, parse, score and serve <a href = "https://telegram.me/scihubbot">2016 election data</a> using purpletag
-* Create a table from existing #polar scores showing members of congress scores by date
+* Collect, parse, score and serve <a href = "http://purpletag.casmlab.org/30.html">2016 election data</a> using purpletag
+* Create a table from existing polar scores showing members of congress scores by date
 
 ![](https://libbyh.github.io/methods-f16/images/purpletag2016.png)
-*PurpleTag data: 2016 election*
-
-
-<img src="https://libbyh.github.io/methods-f16/images/purpletag2016.png">
+<center><b>PurpleTag data: 2016 election</b></center>
 
 Next steps include:
 
