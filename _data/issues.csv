@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1383,191859467,2016-11-27 12:45:08,2016-11-27 12:44:41,Comune di #Cascia: elenco aziende e produttori che vendono prodotti locali,,,"[""Accettato"", ""acquisto solidale"", ""Bollettino"", ""Sisma Ottobre""]",,,"{""data"": ""27/11/2016"", ""descrizione"": ""Sul sito del Comune di Cascia elenco delle Aziende, Produttori e Negozi del Comune di Cascia che vendono prodotti locali (elenco in continuo aggiornamento)."", ""link"": ""http://www.comune.cascia.pg.it/?p=8322"", ""titolo"": ""Comune di #Cascia: elenco aziende e produttori che vendono prodotti locali""}","<pre><yamldata>titolo: 'Comune di #Cascia: elenco aziende e produttori che vendono prodotti locali'
+descrizione: 'Sul sito del Comune di Cascia elenco delle Aziende, Produttori e Negozi del Comune di Cascia che vendono prodotti locali (elenco in continuo aggiornamento).'
+link: 'http://www.comune.cascia.pg.it/?p=8322'
+data: 27/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1382,191859166,2016-11-27 12:38:31,2016-11-27 12:37:40,Associazione Per la Vita di Castelluccio di Norcia,42.8287758,13.2076515,"[""Accettato"", ""Contatti"", ""Sisma Ottobre""]",,,"{""data"": ""27/11/2016"", ""descrizione"": ""Sabato 26 novembre 2016, presso la tensostruttura adibita a Chiesa parrocchiale a Norcia (PG), \u00e8 nata l'associazione \""Per la Vita di Castelluccio di Norcia ONLUS\"", con la firma dell'Atto Costitutivo e dello Statuto. Presidente \u00e8 Giovanni Perla -- 3334019306. Il sito internet dell'Associazione, attualmente in fase di costruzione, sar\u00e0 presto online."", ""email"": ""info@castellucciodinorciaonlus.it"", ""indirizzo"": ""Via Dietro la Torre, Norcia, PG, UMB, 06046, Italia"", ""lat"": ""42.8287758"", ""link"": ""http://www.castellucciodinorciaonlus.it/"", ""lon"": ""13.2076515"", ""nome"": ""Associazione Per la Vita di Castelluccio di Norcia"", ""tel"": ""3334019306""}","<pre><yamldata>nome: 'Associazione Per la Vita di Castelluccio di Norcia'
 tel: '3334019306'
 email: info@castellucciodinorciaonlus.it
@@ -6776,12 +6781,6 @@ data: 15/09/2016
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/437,177177922,2016-10-01 16:45:23,2016-09-15 13:34:26,Università di Cagliari: esonero tasse universitarie per gli studenti provenienti dai comuni colpiti dal sisma,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""L'Universit\u00e0 di Cagliari ha deciso di esonerare totalmente dal pagamento delle tasse e dei contributi universitari gli studenti residenti, o famiglia residente, nei comuni colpiti dall'evento sismico del 24 agosto"", ""link"": ""http://www.unica.it/pub/7/show.jsp?id=33656&iso=-2&is=7"", ""titolo"": ""Universit\u00e0 di Cagliari: esonero tasse universitarie per gli studenti provenienti dai comuni colpiti dal sisma""}","<pre><yamldata>titolo: 'Università di Cagliari: esonero tasse universitarie per gli studenti provenienti dai comuni colpiti dal sisma'
 descrizione: 'L''Università di Cagliari ha deciso di esonerare totalmente dal pagamento delle tasse e dei contributi universitari gli studenti residenti, o famiglia residente, nei comuni colpiti dall''evento sismico del 24 agosto'
 link: 'http://www.unica.it/pub/7/show.jsp?id=33656&iso=-2&is=7'
-data: 15/09/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/436,177177637,2016-10-01 16:45:38,2016-09-15 13:33:18,Da CNA Rieti un sito di informazioni utili e opportunità di ripresa per artigiani e imprenditori colpiti dal sisma,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""15/09/2016"", ""descrizione"": ""Il Sito CNA (Conferderazione Nazionale Artigianato e PMI) sede di Rieti aggrega e pubblica informazioni utili e opportunit\u00e0 di ripresa attivit\u00e0 per artigiani e imprenditori colpiti dal sisma"", ""link"": ""http://www.cnarieti.org/"", ""titolo"": ""CNA Rieti""}","<pre><yamldata>titolo: 'CNA Rieti'
-descrizione: 'Il Sito CNA (Conferderazione Nazionale Artigianato e PMI) sede di Rieti aggrega e pubblica informazioni utili e opportunità di ripresa attività per artigiani e imprenditori colpiti dal sisma'
-link: 'http://www.cnarieti.org/'
 data: 15/09/2016
 </yamldata></pre>
 ",open
