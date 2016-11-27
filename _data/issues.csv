@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1377,191834432,2016-11-27 00:39:30,2016-11-27 00:27:47,Raccolta fondi per comprare uno scuolabus a #Pievebovigliana,,,"[""Accettato"", ""Bollettino"", ""Facebook"", ""Raccolte Fondi"", ""Sisma Ottobre""]",,,"{""bic"": ""HELADEF1WEM"", ""causale"": ""\""Erdbeben Italien\u201c"", ""chi"": ""Raccolta fondi per comprare uno scuolabus a #Pievebovigliana"", ""data"": ""27/11/2016"", ""descrizione"": ""La Federazione delle Associazioni culturali italo-tedesche VDIG - Italienfreunde ha dato vita ad una raccolta fondi per acquistare uno scuolabus per gli scolari di Pievebovigliana, paesino marchigiano semidistrutto dal terremoto. Qui ulteriori informazioni: http://bit.ly/2frhW5K"", ""email"": """", ""iban"": ""DE84820510000301039771"", ""intestazione"": """", ""link"": ""https://www.facebook.com/radiocolonia.funkhaus/posts/1794383717497435"", ""postale"": """"}","<pre><yamldata>chi: 'Raccolta fondi per comprare uno scuolabus a #Pievebovigliana'
+descrizione: 'La Federazione delle Associazioni culturali italo-tedesche VDIG - Italienfreunde ha dato vita ad una raccolta fondi per acquistare uno scuolabus per gli scolari di Pievebovigliana, paesino marchigiano semidistrutto dal terremoto. Qui ulteriori informazioni: http://bit.ly/2frhW5K'
+intestazione: ''
+iban: DE84820510000301039771
+bic: HELADEF1WEM
+postale: ''
+causale: '""Erdbeben Italien“'
+link: 'https://www.facebook.com/radiocolonia.funkhaus/posts/1794383717497435'
+email: ''
+data: 27/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1376,191834239,2016-11-27 00:39:11,2016-11-27 00:21:42,#BastiaUmbra: iniziate verifiche di agibilità su 300 richieste. I sopralluoghi si concluderanno entro dicembre,,,"[""Accettato"", ""Bollettino"", ""Facebook"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""27/11/2016"", ""descrizione"": ""Il 23 novembre due squadre, composte da tecnici abilitati inviati dalla Protezione Civile della Regione Umbria, hanno iniziato i sopralluoghi sui fabbricati privati per i quali i proprietari hanno richiesto verifiche di agibilit\u00e0. Nel territorio comunale di Bastia Umbra, infatti, a seguito delle scosse iniziate il 30 ottobre scorso sono state presentate circa 300 richieste di verifiche tecniche, rispetto alle 50 che erano state presentate dopo il sisma del 24 agosto. I rilevamenti Fast della prima fase dovrebbero concludersi entro due settimane."", ""link"": ""http://www.bastiaoggi.it/politica/istituzioni/verifiche-post-terremoto-a-bastia-umbra-i-sopralluoghi-26471/"", ""titolo"": ""#BastiaUmbra: iniziate verifiche di agibilit\u00e0 su 300 richieste. I sopralluoghi si concluderanno entro dicembre""}","<pre><yamldata>titolo: '#BastiaUmbra: iniziate verifiche di agibilità su 300 richieste. I sopralluoghi si concluderanno entro dicembre'
 descrizione: 'Il 23 novembre due squadre, composte da tecnici abilitati inviati dalla Protezione Civile della Regione Umbria, hanno iniziato i sopralluoghi sui fabbricati privati per i quali i proprietari hanno richiesto verifiche di agibilità. Nel territorio comunale di Bastia Umbra, infatti, a seguito delle scosse iniziate il 30 ottobre scorso sono state presentate circa 300 richieste di verifiche tecniche, rispetto alle 50 che erano state presentate dopo il sisma del 24 agosto. I rilevamenti Fast della prima fase dovrebbero concludersi entro due settimane.'
 link: 'http://www.bastiaoggi.it/politica/istituzioni/verifiche-post-terremoto-a-bastia-umbra-i-sopralluoghi-26471/'
@@ -1250,6 +1261,16 @@ indirizzo: 'Madonna di Lugo, Spoleto, PG, UMB, 06049, Italy'
 lat: '42.7685858'
 lon: '12.7510342'
 link: 'https://www.facebook.com/iragazzidel50a/'
+data: 09/11/2016
+</yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1192,188369627,2016-11-09 23:53:00,2016-11-09 22:30:42,Contatti Caritas #Spoleto - Centro raccolta aiuti Diocesi dell'#Umbria,42.7346574,12.7384492403508,"[""Accettato"", ""Bollettino"", ""Contatti"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""09/11/2016"", ""descrizione"": ""Per l\u2019Archidiocesi di Spoleto \u2013 Norcia e per le altre Diocesi dell\u2019Umbria \u00e8 la Caritas diocesana locale a coordinare la raccolta degli aiuti. Chi volesse collaborare con l\u2019invio di generi di prima necessit\u00e0, deve prima contattare gli operatori della Caritas al numero 0743-220485. I volontari, poi, distribuiranno nelle varie comunit\u00e0 della Valnerina quanto ricevuto."", ""email"": ""caritas@spoletonorcia.it"", ""indirizzo"": ""Via Aurelio Saffi, Spoleto, PG, UMB, 06049, Italy"", ""lat"": ""42.7346574"", ""link"": ""http://www.spoletonorcia.it"", ""lon"": ""12.7384492403508"", ""nome"": ""Caritas Diocesana di Spoleto - Archidiocesi di Spoleto \u2013 Norcia"", ""tel"": ""0743 22 04 85""}","<pre><yamldata>nome: 'Caritas Diocesana di Spoleto - Archidiocesi di Spoleto – Norcia'
+tel: '0743 22 04 85'
+email: caritas@spoletonorcia.it
+descrizione: 'Per l’Archidiocesi di Spoleto – Norcia e per le altre Diocesi dell’Umbria è la Caritas diocesana locale a coordinare la raccolta degli aiuti. Chi volesse collaborare con l’invio di generi di prima necessità, deve prima contattare gli operatori della Caritas al numero 0743-220485. I volontari, poi, distribuiranno nelle varie comunità della Valnerina quanto ricevuto.'
+indirizzo: 'Via Aurelio Saffi, Spoleto, PG, UMB, 06049, Italy'
+lat: '42.7346574'
+lon: '12.7384492403508'
+link: 'http://www.spoletonorcia.it'
 data: 09/11/2016
 </yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1192,188369627,2016-11-09 23:53:00,2016-11-09 22:30:42,Contatti Caritas #Spoleto - Centro raccolta aiuti Diocesi dell'#Umbria,42.7346574,12.7384492403508,"[""Accettato"", ""Bollettino"", ""Contatti"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""09/11/2016"", ""descrizione"": ""Per l\u2019Archidiocesi di Spoleto \u2013 Norcia e per le altre Diocesi dell\u2019Umbria \u00e8 la Caritas diocesana locale a coordinare la raccolta degli aiuti. Chi volesse collaborare con l\u2019invio di generi di prima necessit\u00e0, deve prima contattare gli operatori della Caritas al numero 0743-220485. I volontari, poi, distribuiranno nelle varie comunit\u00e0 della Valnerina quanto ricevuto."", ""email"": ""caritas@spoletonorcia.it"", ""indirizzo"": ""Via Aurelio Saffi, Spoleto, PG, UMB, 06049, Italy"", ""lat"": ""42.7346574"", ""link"": ""http://www.spoletonorcia.it"", ""lon"": ""12.7384492403508"", ""nome"": ""Caritas Diocesana di Spoleto - Archidiocesi di Spoleto \u2013 Norcia"", ""tel"": ""0743 22 04 85""}","<pre><yamldata>nome: 'Caritas Diocesana di Spoleto - Archidiocesi di Spoleto – Norcia'
@@ -4267,17 +4288,6 @@ link: ''
 data: 04/10/2016
 </yamldata></pre>
 ",closed
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/746,180722911,2016-10-04 20:42:02,2016-10-03 19:19:16,Ospitalità per 3 persone a Forano (Rieti) ,42.2965835,12.595375,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""03/10/2016"", ""descrizione"": ""L'inverno si avvicina, siamo una famiglia di 3 persone, abbiamo l'opportunit\u00e0 di ospitare (finch\u00e9 non venderemo l'immobile) max 3 persone italiane che abbiano realmente bisogno di un tetto sopra la testa. La nostra abitazione \u00e8 di 147 mq con due bagni, tutta su un piano. Questo annuncio \u00e8 rivolto ai terremotati economicamente autonomi. Abitiamo a Forano (provincia di Rieti). Un grande abbraccio di solidariet\u00e0."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Strada Statale Sabina, Stimigliano, RI, Lazio, Italia"", ""lat"": ""42.2965835"", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1777942339140016/"", ""lon"": ""12.595375"", ""tel"": ""3391408093""}","<pre><yamldata>tel: '3391408093'
-email: ''
-descrizione: 'L''inverno si avvicina, siamo una famiglia di 3 persone, abbiamo l''opportunità di ospitare (finché non venderemo l''immobile) max 3 persone italiane che abbiano realmente bisogno di un tetto sopra la testa. La nostra abitazione è di 147 mq con due bagni, tutta su un piano. Questo annuncio è rivolto ai terremotati economicamente autonomi. Abitiamo a Forano (provincia di Rieti). Un grande abbraccio di solidarietà.'
-indirizzo: 'Strada Statale Sabina, Stimigliano, RI, Lazio, Italia'
-lat: '42.2965835'
-lon: '12.595375'
-link: 'https://www.facebook.com/groups/1758670357733881/permalink/1777942339140016/'
-immagine: ''
-data: 03/10/2016
-</yamldata></pre>
-",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/746,180722911,2016-10-04 20:42:02,2016-10-03 19:19:16,Ospitalità per 3 persone a Forano (Rieti) ,42.2965835,12.595375,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""03/10/2016"", ""descrizione"": ""L'inverno si avvicina, siamo una famiglia di 3 persone, abbiamo l'opportunit\u00e0 di ospitare (finch\u00e9 non venderemo l'immobile) max 3 persone italiane che abbiano realmente bisogno di un tetto sopra la testa. La nostra abitazione \u00e8 di 147 mq con due bagni, tutta su un piano. Questo annuncio \u00e8 rivolto ai terremotati economicamente autonomi. Abitiamo a Forano (provincia di Rieti). Un grande abbraccio di solidariet\u00e0."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Strada Statale Sabina, Stimigliano, RI, Lazio, Italia"", ""lat"": ""42.2965835"", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1777942339140016/"", ""lon"": ""12.595375"", ""tel"": ""3391408093""}","<pre><yamldata>tel: '3391408093'
 email: ''
 descrizione: 'L''inverno si avvicina, siamo una famiglia di 3 persone, abbiamo l''opportunità di ospitare (finché non venderemo l''immobile) max 3 persone italiane che abbiano realmente bisogno di un tetto sopra la testa. La nostra abitazione è di 147 mq con due bagni, tutta su un piano. Questo annuncio è rivolto ai terremotati economicamente autonomi. Abitiamo a Forano (provincia di Rieti). Un grande abbraccio di solidarietà.'
