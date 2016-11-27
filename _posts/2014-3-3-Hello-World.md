@@ -3,8 +3,8 @@ layout: post
 title: My First Post!
 ---
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+Hello World!
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
+This is my very first blog post. Through this blog forum, I will focus on sharing my experiences with technology. In particular The Microsoft Azure Cloud - something I am very passionate about!
 
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
+I am fortunate to be able to spend quiet a bit of time working on Azure. I hope to share my experiences in the hopes that it would help the others. 
