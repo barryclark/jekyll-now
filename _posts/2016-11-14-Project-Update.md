@@ -6,7 +6,7 @@ author:
 - mschindl301
 ---
 
-###RQ Question 
+### RQ Question 
 How has the language, syntax, and grammar of science fiction novels changed overtime? 
 
 ### Project 
@@ -16,7 +16,9 @@ Using text analysis, interpret significant textual differences of science fictio
 We have selected twenty popular science fiction books (ten past, ten present), based on reviews, popularity, and reader ratings.
 
 The twenty books are titled below:
-###Past
+
+### Past
+
 Frankenstein (1818) - Mary Shelley
 
 The Time Machine (1895) - HG Wells
@@ -37,7 +39,8 @@ Looking Backward: 2000-1887 (1888) - Edward Bellamy
 
 The Coming Race (1871) - Edward Bulwer-Lytton 
 
-###Present
+### Present
+
 The Martian (2011) - Andy Weir
 
 Ready Player One (2011) - Ernest Cline
