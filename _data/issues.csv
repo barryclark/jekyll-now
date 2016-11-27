@@ -30,8 +30,8 @@ descrizione: 'Dopo una ulteriore verifica effettuata mercoledì scorso, 23 novem
 link: 'http://www.spoletooggi.it/spoleto/terremoto-riapre-il-comune-a-spoleto-data-fissata-per-il-28-novembre-5837/'
 data: 27/11/2016
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1374,191806952,2016-11-26 19:00:34,2016-11-26 13:50:48,Offro una camera singola ad Arezzo,43.464194,11.882086,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Ottobre""]",,http://i.imgur.com/OJJ2tlR.jpg,"{""data"": ""26/11/2016"", ""descrizione"": ""Offro una camera singola in un bell'appartamento nel centro storico di Arezzo. Scrivere a luca.polpettini yahoo.it"", ""email"": """", ""immagine"": ""http://i.imgur.com/OJJ2tlR.jpg"", ""indirizzo"": ""Via Giuseppe Mazzini, Arezzo, La Torre, Arezzo, AR, Tuscany, 52100, Italy"", ""lat"": ""43.464194"", ""link"": """", ""lon"": ""11.882086"", ""tel"": ""0758557497""}","<pre><yamldata>tel: '0758557497'
-email: ''
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1374,191806952,2016-11-27 00:46:23,2016-11-26 13:50:48,Offro una camera singola ad Arezzo,43.464194,11.882086,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Ottobre""]",,http://i.imgur.com/OJJ2tlR.jpg,"{""data"": ""26/11/2016"", ""descrizione"": ""Offro una camera singola in un bell'appartamento nel centro storico di Arezzo. Scrivere a luca.polpettini yahoo.it"", ""email"": ""luca.polpettini yahoo.it"", ""immagine"": ""http://i.imgur.com/OJJ2tlR.jpg"", ""indirizzo"": ""Via Giuseppe Mazzini, Arezzo, La Torre, Arezzo, AR, Tuscany, 52100, Italy"", ""lat"": ""43.464194"", ""link"": """", ""lon"": ""11.882086"", ""tel"": ""0758557497""}","<pre><yamldata>tel: '0758557497'
+email: 'luca.polpettini yahoo.it'
 descrizione: 'Offro una camera singola in un bell''appartamento nel centro storico di Arezzo. Scrivere a luca.polpettini yahoo.it'
 indirizzo: 'Via Giuseppe Mazzini, Arezzo, La Torre, Arezzo, AR, Tuscany, 52100, Italy'
 lat: '43.464194'
