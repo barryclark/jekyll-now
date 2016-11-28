@@ -8,8 +8,12 @@ group: nav
 
 ## §1
 Foreningens navn er IT-Tutor, hjemmehørende på Institut For Datalogi, Åbogade 34, 8200, Aarhus N.
+
+
 ## §2
 Foreningen har til formål at arrangere og afholde studiestartsuge for nyimmatrikulerede studerende på Bacheloruddannelsen i IT på Institut for Datalogi ved Aarhus Universitet.
+
+
 ## §3
 **Stk. 1.** Foreningens medlemmer tæller udelukkende styregruppen som planlægger tutorarbejdet på Bacheloruddannelsen i IT på Institut for Datalogi.
 **Stk. 2.** Medlemskab varer indtil optagelse af nye medlemmer har fundet sted, jf. §3 Stk. 1. Stk. 3. Eksklusion kan ske, hvis særlige forhold giver anledning hertil. Beslutningen kræver, at mindst 2/3 af foreningens medlemmer har stemt for eksklusionen. Dog kan en enstemmig bestyrelse ekskludere et medlem, såfremt vedkommende ikke opfylder kravet om aktiv medvirken. Stk. 4. Skulle et medlem efter eget valg forlade foreningen, kan et nyt medlem optages hvis der i bestyrelsen er almindeligt flertal for dette.
@@ -54,6 +58,7 @@ Stk. 2. Bestyrelsen er selvkonstituerende og følgende poster skal være repræs
 Stk. 1. Har et bestyrelsesmedlem handlet i strid med sine beføjelser (uden fuldmagt eller uden for dennes grænser), vil foreningen ikke været bundet af den trufne aftale, hvorfor bestyrelsesmedlemmet selv må hæfte for opfyldelsen.
 Stk. 2. Vælger et bestyrelsesmedlem at forlade foreningen, og dermed bestyrelsen, kan bestyrelsen suppleres med en suppleant i fald sådanne er valgt. Er dette ikke tilfældet er bestyrelsen selvsupplerende.
 
+
 ## §9
 Tegningsregler og daglig ledelse
 **Stk. 1.**
@@ -62,8 +67,6 @@ Foreningen tegnes af
 • Den økonomi-ansvarlige
 **Stk. 2.**
 De i Stk. 1 nævnte må hver individuelt disponere over foreningens midler.
-
-
 
 
 ## §10
