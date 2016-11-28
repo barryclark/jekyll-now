@@ -14,7 +14,7 @@
 {% endcapture %}
 {% capture url %}{{ page_url  | strip_newlines | strip | uri_escape }}{% endcapture %}
 {% capture id %}{{ page_id | remove: '/' | replace: '_', '-' | strip }}{% endcapture %}
-{% capture text %}{% if include.text %}{{ include.text }}{% elsif page.title %}{{ page.title }}{{ endif }}{% endcapture %}
+{% capture text %}{% if include.text %}{{ include.text }}{% elsif page.title %}{{ page.title }}{% endif %}{% endcapture %}
 
 <script>
 $( document ).ready(function() {
