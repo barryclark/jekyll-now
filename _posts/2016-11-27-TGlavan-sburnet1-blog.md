@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Just Wow...
+title: WE DID THE THING
 author: TGlavan
 publish: true
 ---
