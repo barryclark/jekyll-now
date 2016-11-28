@@ -37,6 +37,13 @@ authors:
     linkedin: edward-marshall-9567b28
     twitter: rucknar
     github: rucknar
+  paul_lucas:
+    display_name: Paul Lucas
+    gravatar: d789a807efdb806b46174a57e7f5a78d
+    email: paul.lucas@infinityworks.com
+    web: https://www.infinityworks.com
+    web_short_name: infinityworks.com
+    linkedin: paul-lucas-3209203
 
 #
 # Flags below are optional
