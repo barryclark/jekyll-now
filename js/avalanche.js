@@ -117,7 +117,9 @@ function highestRate(debts) {
 function usingMethod(debts, method) {
 	var numOpen = totalAccounts(debts);
 	
-	method(debts).makeMin = false;
+	if(typeof method !== 'undefined') {
+		method(debts).makeMin = false;
+	}
 	
 	var results = {
 			balances: [['year', 'balance', 'minimum payment'],
