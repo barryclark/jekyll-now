@@ -5,7 +5,7 @@ tags: [money, math, javascript, html5]
 keywords: [avalanche, snowball, debt, debts, chart, charts, interest]
 jquery: true
 javascripts: [/js/d3.min.js, /js/c3.min.js, /js/parseGet.min.js]
-deferedjavascripts: [/js/avalanche.js]
+deferedjavascripts: [/js/avalanche.min.js]
 csses: [/css/c3.min.css, /css/debtChart.css]
 image: /images/avalanche.jpg
 thumbnail: true
@@ -15,4 +15,4 @@ I was curious as to the difference between the two methods of snowballing debt. 
 
 Scroll down to the bottom to play with the variables. I used [c3](http://c3js.org/) for the charts, which in turn uses [d3](https://d3js.org/). I also used [jQuery](https://jquery.com/). After I was done, I used [jscompress.com](https://jscompress.com/) to minify and hopefully improve some performance. [Check out the unminified code here.](https://github.com/hendrixjoseph/hendrixjoseph.github.io/blob/master/js/avalanche.js)
 
-{% include avalanche.html %}
+{% include avalanche.min.html %}
