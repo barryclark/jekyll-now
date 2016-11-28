@@ -12,7 +12,7 @@ Bestyrelsen består af 3 IT studerende.
 
 ### Formand
 **Daniel Graungaard** 
-[daniel@it-tutor.dk](mailto:daniel@it-tutor.dk)
+[formand@it-tutor.dk](mailto:formand@it-tutor.dk)
 
 ### Næstformand
 **Marie-Louise Sørensen** 
