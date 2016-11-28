@@ -8,7 +8,7 @@ function DebtProto() {
 	    }
 	};
 	this.getPayment = function() {
-		if(this.makeMin) {
+		if(this.makeMin || this.payment === null) {
 			this.payment =  this.getMinPayment();
 		}
 		
