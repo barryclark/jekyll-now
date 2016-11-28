@@ -305,7 +305,7 @@ descrizione: 'A soli due mesi dall’assegnazione dei premi per i Bandi 2016, av
 link: 'http://www.frontierarieti.com/wordpress/camper-bandi-2017-apc-mette-disposizione-premio-30000-euro-comuni-colpiti-terremoto'
 data: 22/11/2016
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1337,190977718,2016-11-22 11:45:00,2016-11-22 11:43:35,Lavatrice e asciugatrice #Cascia,42.71867351380065,13.01804780960083,"[""Accettato"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""Lavatrice e asciugatrice #Cascia"", ""data"": ""22/11/2016"", ""descrizione"": ""A Cascia (PG) servirebbe un'asciugatrice e una lavatrice piccola con il cestello sopra. Indirizzo: viale Cavour, 32 - 06043. Persona di riferimento Dr. Cariani Simone."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Viale Cavour, Cascia, PG, UMB, 06043, Italia"", ""lat"": ""42.71867351380065"", ""link"": """", ""lon"": ""13.01804780960083"", ""tel"": ""3383202296""}","<pre><yamldata>tel: '3383202296'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1337,190977718,2016-11-28 17:04:33,2016-11-22 11:43:35,Lavatrice e asciugatrice #Cascia,42.71867351380065,13.01804780960083,"[""Accettato"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""Lavatrice e asciugatrice #Cascia"", ""data"": ""22/11/2016"", ""descrizione"": ""A Cascia (PG) servirebbe un'asciugatrice e una lavatrice piccola con il cestello sopra. Indirizzo: viale Cavour, 32 - 06043. Persona di riferimento Dr. Cariani Simone."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Viale Cavour, Cascia, PG, UMB, 06043, Italia"", ""lat"": ""42.71867351380065"", ""link"": """", ""lon"": ""13.01804780960083"", ""tel"": ""3383202296""}","<pre><yamldata>tel: '3383202296'
 email: ''
 cosa: 'Lavatrice e asciugatrice #Cascia'
 descrizione: 'A Cascia (PG) servirebbe un''asciugatrice e una lavatrice piccola con il cestello sopra. Indirizzo: viale Cavour, 32 - 06043. Persona di riferimento Dr. Cariani Simone.'
@@ -315,7 +315,7 @@ lon: '13.01804780960083'
 link: ''
 immagine: ''
 data: 22/11/2016
-</yamldata></pre>",open
+</yamldata></pre>",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1336,190972470,2016-11-22 14:29:12,2016-11-22 11:18:45,Comitato 3.36 - Amatrice,42.6292367,13.2891755,"[""Accettato"", ""Contatti""]",,,"{""data"": ""22/11/2016"", ""descrizione"": ""Comitato di cittadini di Amatrice costituitosi in associazione il 19 settembre allo scopo di sostenere e monitorare la ricostruzione."", ""email"": ""segreteria@comitato336.it"", ""indirizzo"": ""Piazza Cacciatori del Tevere, Casalene, Amatrice, RI, LAZ, 02012, Italia"", ""lat"": ""42.6292367"", ""link"": ""http://www.comitato336.it/"", ""lon"": ""13.2891755"", ""nome"": ""Comitato 3.36 - Amatrice"", ""tel"": """"}","<pre><yamldata>nome: 'Comitato 3.36 - Amatrice'
 tel: ''
 email: segreteria@comitato336.it
