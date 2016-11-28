@@ -9654,14 +9654,14 @@ link: 'http://agensir.it/quotidiano/2016/9/12/terremoto-unitalsi-e-anp-consegnan
 data: 13/09/2016
 </yamldata></pre>
 ",closed
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/153,176676426,2016-11-10 22:14:11,2016-09-13 15:44:10,Si ricerca una roulotte,42.749867,13.269536,"[""Accettato"", ""Fabbisogni"", ""Telegram""]",Milestone(number=1),,"{""data"": ""13/09/2016"", ""descrizione"": ""Occorre una roulotte attrezzata per Enzo, unico rimasto nel borgo di Pescara del Tronto."", ""immagine"": """", ""lat"": ""42.749867"", ""lon"": ""13.269536"", ""telegram_user"": """"}","<pre><yamldata>telegram_user: ''
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/153,176676426,2016-11-28 09:05:10,2016-09-13 15:44:10,Si ricerca una roulotte,42.749867,13.269536,"[""Accettato"", ""Fabbisogni"", ""Telegram""]",Milestone(number=1),,"{""data"": ""13/09/2016"", ""descrizione"": ""Occorre una roulotte attrezzata per Enzo, unico rimasto nel borgo di Pescara del Tronto."", ""immagine"": """", ""lat"": ""42.749867"", ""lon"": ""13.269536"", ""telegram_user"": """"}","<pre><yamldata>telegram_user: ''
 descrizione: 'Occorre una roulotte attrezzata per Enzo, unico rimasto nel borgo di Pescara del Tronto.'
 immagine: ''
 lat: '42.749867'
 lon: '13.269536'
 data: 13/09/2016
 </yamldata></pre>
-",open
+",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/148,176622336,2016-09-13 12:18:39,2016-09-13 12:03:24,Arci Nazionale,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",Milestone(number=2),,"{""bic"": null, ""causale"": ""Terremoto centro italia"", ""chi"": ""Arci Nazionale"", ""data"": ""13/09/2016"", ""descrizione"": ""BIBLIOBUS ARCI \u2013 La Cultura per la Ricostruzione L'Arci sta cercando fondi per riempire di libri (e carburante) un autobus che porter\u00e0 cultura e momenti di distensione alle persone colpite nelle zone del terremoto del 24 Agosto scorso."", ""email"": null, ""iban"": ""IT 36 A 0501803200 000000000041"", ""intestazione"": ""Arci"", ""link"": ""https://www.produzionidalbasso.com/project/bibliobus-arci-la-cultura-per-la-ricostruzione/"", ""postale"": null}","<pre><yamldata>chi: Arci Nazionale
 descrizione: BIBLIOBUS ARCI – La Cultura per la Ricostruzione L'Arci sta cercando fondi per riempire di libri (e carburante) un autobus che porterà cultura e momenti di distensione alle persone colpite nelle zone del terremoto del 24 Agosto scorso.
 intestazione: Arci
