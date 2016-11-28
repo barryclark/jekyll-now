@@ -259,7 +259,7 @@ $(document).ready(function() {
 		debts = getObjectArray();		
 		debts.forEach(function(debt) {
 			$.extend( debt, new DebtProto() );
-			debt.name = decodeURIComponent(debt.name);
+			debt.name = decodeURIComponent(debt.name.replace(/\+/g,  " "));
 			debt.rate = debt.rate / 100;
 			debt.balance = parseInt(debt.balance);
 			if(debt.minpaymenttype === 'percent') {
@@ -268,7 +268,8 @@ $(document).ready(function() {
 			} else {
 				debt.minpayment = parseInt(debt.minpayment);
 				debt.payment = debt.minpayment;
-			}			
+			}
+			debt.makeMin = true;
 		});
 	} else {
 		debts = new Array();
