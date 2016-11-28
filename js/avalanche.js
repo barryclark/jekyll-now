@@ -2,17 +2,17 @@ function DebtProto() {
 	this.snowball = 0;
 	this.getMinPayment = function() {
 	    if(this.minpaymenttype === 'percent') {
-			return Math.max(Math.round(this.balance*this.minpayment), 1);
+			return Math.max(Math.round(this.balance * this.minpayment), 1);
 	    } else {
 			return this.minpayment;
 	    }
 	};
 	this.getPayment = function() {
-		if(this.onlymin) {
-			return this.getMinPayment();
-		} else {
-			return this.payment;
+		if(this.makeMin) {
+			this.payment =  this.getMinPayment();
 		}
+		
+		return this.payment;
 	};
 	this.update = function() {		
 	    this.balance = this.balance * (1 + this.rate / 12) - this.getPayment();
@@ -35,12 +35,12 @@ function DebtProto() {
 	};
 }
 
-function Debt(name, balance, rate, payment, onlymin, minpayment, minpaymenttype) {
+function Debt(name, balance, rate, minpayment, minpaymenttype) {
 	this.name = name;
 	this.balance = balance;
 	this.rate = rate;
-	this.payment = payment;
-	this.onlymin = onlymin;
+	this.payment = minpaymenttype === 'dollar' ? minpayment : minpayment * balance;
+	this.makeMin = true;
 	this.minpayment = minpayment;
 	this.minpaymenttype = minpaymenttype;
 	$.extend( this, new DebtProto() );
@@ -57,7 +57,7 @@ function avalanche(debts, method) {
         if(toSnowball.length > 0) {
             var avalanche = method(toSnowball);
             avalanche.payment = avalanche.payment + snowballs;
-	    avalanche.onlymin = false;
+	    avalanche.makeMin = false;
         }
     }
 }
@@ -116,6 +116,8 @@ function highestRate(debts) {
 
 function usingMethod(debts, method) {
 	var numOpen = totalAccounts(debts);
+	
+	method(debts).makeMin = false;
 	
 	var results = {
 			balances: [['year', 'balance', 'minimum payment'],
@@ -195,8 +197,6 @@ function generateRow(debt) {
 	var nameString = "<input type='text' name='name' value='" + debt.name + "' required />";
         var balanceString = "<span class='input-dollar'>$</span><input type='number' name='balance' class='input-dollar' min='0' value='" + debt.balance + "' required />";
         var rateString = "<input type='number' name='rate' class='input-percent' min='0' max='100' step='0.01' value='" + debt.rate * 100 + "' required /><span class='input-percent'>%</a>";
-        var paymentString = "<span class='input-dollar'>$</span><input type='number' name='payment' class='input-dollar' min='0' value='" + debt.payment + "' required />";
-	var onlyminString = "<input type='checkbox' name='onlymin' value='true' " + (debt.onlymin ? "checked " : "") +"/> Minimum";
         var minpaymentString = "<input type='number' name='minpayment' min='0' value='";
 	
 	if(debt.minpaymenttype === 'percent') {
@@ -215,9 +215,8 @@ function generateRow(debt) {
 	
         var row = '<tr><td>' + nameString + '</td><td>' 
             + balanceString  + '</td><td>' 
-            + rateString + '</td><td>' 
-            + paymentString + onlyminString + '</td><td>' 
-            + minpaymentString + '</td><td>' 
+            + rateString + '</td><td>'
+            + minpaymentString + '</td><td>'
             + minpaymenttypeString + '</td></tr>';
 	
 	return row;
@@ -254,26 +253,27 @@ $(document).ready(function() {
 	
 	var debts;
 	
-	if(hasKey('name') && hasKey('balance') && hasKey('rate') && hasKey('payment') && hasKey('minpayment')) {
+	if(hasKey('name') && hasKey('balance') && hasKey('rate') && hasKey('minpayment')) {
 		debts = getObjectArray();		
 		debts.forEach(function(debt) {
 			$.extend( debt, new DebtProto() );
 			debt.rate = debt.rate / 100;
 			debt.balance = parseInt(debt.balance);
-			debt.payment = parseInt(debt.payment);
 			if(debt.minpaymenttype === 'percent') {
 				debt.minpayment = debt.minpayment / 100;
+				debt.payment = debt.payment * debt.minpayment;
 			} else {
 				debt.minpayment = parseInt(debt.minpayment);
-			}
+				debt.payment = debt.minpayment;
+			}			
 		});
 	} else {
 		debts = new Array();
 		
-		var house = new Debt('mortgage', 150000, 0.03, 750, true, 750, 'dollar');
-		var car = new Debt('car loan', 20000, 0.1, 250, true, 250, 'dollar');
-		var creditcard1 = new Debt('credit card 1', 5000, 0.20, 100, false, 0.04, 'percent');
-		var creditcard2 = new Debt('credit card 2', 100, 0.01, 100, true, 0.04, 'percent');
+		var house = new Debt('mortgage', 150000, 0.03, 750, 'dollar');
+		var car = new Debt('car loan', 20000, 0.1, 250, 'dollar');
+		var creditcard1 = new Debt('credit card 1', 5000, 0.20, 0.04, 'percent');
+		var creditcard2 = new Debt('credit card 2', 100, 0.01, 0.04, 'percent');
 		debts = [house, car, creditcard1, creditcard2];
 	}
     
