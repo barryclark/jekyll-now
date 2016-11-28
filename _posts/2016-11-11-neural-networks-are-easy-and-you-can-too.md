@@ -1,11 +1,8 @@
 ---
 layout: prediction_post
 published: False
-title: A Visual Beginners Guide to Neural Networks
+title: DRAFT - A Visual Beginners Guide to Neural Networks
 ---
-<script src="/js/jquery-3.1.1.slim.min.js"></script>
-
-<script type="text/javascript" src="/js/d3.min.js"></script>
 
 
 
@@ -26,7 +23,7 @@ It's not easy to tell without a frame of reference. So you ask your friends who 
 
 </div>
 
-Personally, my first instinct would be to get the average price per sq ft. That comes to $183 per sq ft. Do you agree?
+Personally, my first instinct would be to get the average price per sq ft. That comes to $180 per sq ft.
 
 Welcome to your first neural network! Now it's not quite at Siri level yet, but now you know the fundamental building block. And it looks like this:
 
@@ -35,15 +32,15 @@ Welcome to your first neural network! Now it's not quite at Siri level yet, but 
 
 
 
-Multiply that by the area of the house, and you get $366,000.
+Multiply that by the area of the house, and you get $360,000. That's all there is to it at this level. Calculating the prediction is simple multiplication. But before that, we needed to think about the weight we'll be multiplying by. Here we started with an average, later we'll look at better algorithms that can scale as we get more inputs and more complicated models. Finding the weight is our "training" stage. So whenever you hear of someone "training" a neural network, it just means finding the weights we use to calculate the prediction.
 
-<p class="gif-space"/>
+<p class="gif-space-half"/>
 
-![]({{site.baseurl}}/images/NNs_animated_2.gif)
+![]({{site.baseurl}}/images/NNs_formula_no_bias.png)
 
-This is a form of prediction. This is a simple predictive model that takes an input, does a calculation, and gives an output (since the output can be of infinite values, the technical name for what we have would be a "regression model")
+This is a form of prediction. This is a simple predictive model that takes an input, does a calculation, and gives an output (since the output can be of continuous values, the technical name for what we have would be a "regression model")
 
-Let us visualize this process (for simplicity, our price axis will be $1000):
+Let us visualize this process (for simplicity, let's switch our price unit from $1 to $1000. Now our weights is 0.180 rather than 180):
 
 <p class="gif-space"/>
 
@@ -74,34 +71,38 @@ That's quite a bit of yellow. Yellow is bad. Yellow is error. We want to shrink 
 
 Area (sq ft) (x) | Price ($1000) (<span class="y_">y_</span>) | Prediction (<span class="y">y</span>) | <span class="y_">y_</span> - <span class="y">y</span> | (<span class="y_">y_</span> - <span class="y">y</span>)²
 --- |  --- | --- | --- | ---
-2,104 | 399.9 | 385  | 14 | 196
-1,600 | 329.9 | 292  | 37 | 1,369
-2,400 | 369   | 439  | -70 | 4,900
-| | | <span class="total"> Total:</span> |6,465
-| | | <span class="total"> Average:</span> |<b>2,155</b>
+2,104 | 399.9 | 379  | 21 | 449
+1,600 | 329.9 | 288  | 42 | 1756
+2,400 | 369   | 432  | -63 | 3969
+| | | <span class="total"> Average:</span> |<b>2,058</b>
+
+
+
 
 
 </div>
 
 
-Here we can see the actual price value, the predicted price value, and the difference between them. Then we'll need to sum up the difference so we have a number that tells us how much error there is in this prediction model. The problem is, the 3rd row has -70 as its value. We have to deal with this negative value if we want to use the difference between the prediction and price as our error measuring stick. That's why we introduce an additional column that shows the error squared, thus getting rid of the negative value.
+Here we can see the actual price value, the predicted price value, and the difference between them. Then we'll need to sum up the difference so we have a number that tells us how much error there is in this prediction model. The problem is, the 3rd row has -63 as its value. We have to deal with this negative value if we want to use the difference between the prediction and price as our error measuring stick. That's one reason why we introduce an additional column that shows the error squared, thus getting rid of the negative value.
 
-This is now our definition of doing better -- a better model is one that has less error. Total error is measured as the sum of the errors for each point in our data set. For each point, the error is measured by the difference between the actual value and the predicted value, raised to the power of 2. This is called our **loss function** (also, **cost function**).
+This is now our definition of doing better -- a better model is one that has less error. Total error is measured as the average of the errors for each point in our data set. For each point, the error is measured by the difference between the actual value and the predicted value, raised to the power of 2. This is called [Mean Square Error](http://mste.illinois.edu/patel/amar430/meansquare.html) . Using it as a guide to train our model makes it our **loss function** (also, **cost function**).
 
 
+Now that we defined our measuring stick for what makes a better model, let's experiment with a couple more weight values and compare them with our average pick:
 
-<p class="gif-space"/>
+
+<p class="gif-space" />
 
 ![]({{site.baseurl}}/images/lines_and_errors_animated.gif)
 
-<p class="gif-space"/>
+<p class="gif-space" />
 
 
 Our lines can better approximate our values now that we have this b value added to the line formula. In this context, we call it a "bias". This makes our neural network look like this:
 
 
 
-<p class="gif-space-half"/>
+<p class="gif-space-half" />
 
 ![]({{site.baseurl}}/images/NNs_bias.png)
 
@@ -111,20 +112,30 @@ Our lines can better approximate our values now that we have this b value added 
 We can generalize it by saying that a neural network with one input and one output (*spoiler warning:* and no hidden layers) looks like this:
 
 
-<p class="gif-space-half"/>
-
 ![]({{site.baseurl}}/images/NNs_bias_2.png)
 
-<p class="gif-space-half"/>
+
+
+Calculating a prediction now uses this formula:
+
+![]({{site.baseurl}}/images/NNs_formula.png)
+
+So our current model calculates predictions by plugging in the area of house as x in this formula:
+
+![]({{site.baseurl}}/images/NNs_formula_ex.png)
+
 
 ## Train Your Dragon
-How about you take a crack at training our toy neural network? Minimize the loss function by tweaking the weight and bias dials. Can you get an error value below 2,397?
+How about you take a crack at training our toy neural network? Minimize the loss function by tweaking the weight and bias dials. Can you get an error value below 799?
 
 
 <div id="training-one-chart" class="training-chart"/>
-<table id="training-one">
+<table id="training-one" class="training-table">
+
 
     <tr>
+
+        </td>
         <td>
             Error
         </td>
@@ -145,7 +156,7 @@ How about you take a crack at training our toy neural network? Minimize the loss
             Weight
         </td>
         <td>
-            <input id="weightSlider" type="range" min="0" max="0.4" step="0.001"
+            <input id="weightSlider" type="range" class="weight" min="0" max="0.4" step="0.001"
                 >
         </td>
         <td class="slider-value">
@@ -157,74 +168,93 @@ How about you take a crack at training our toy neural network? Minimize the loss
             Bias
         </td>
         <td>
-            <input id="biasSlider" type="range" min="0" max="460" step="1"
-                    >
+            <input id="biasSlider" type="range" class="bias"  min="0" max="460" step="1" >
         </td>
         <td class="slider-value">
             <span id="bias">0</span>
         </td>
     </tr>
+
 </table>
 
 
 
 
 ## Automation
-Congratulations on manually training your first neural network! Let's look at how to automate this training process. Below is another example with one additional button. This button uses an algorithm called "Gradient Descent" to try and take a step towards the correct weight and bias values that minimize the loss function.
+Congratulations on manually training your first neural network! Let's look at how to automate this training process. Below is another example with an additional autopilot-like functionality. These are the GD Step buttons. They use an algorithm called "Gradient Descent" to try to step towards the correct weight and bias values that minimize the loss function.
 
 
-<div id="training-one-gd-chart" class="training-chart"/>
-<div id="training-one-gd-error-chart" class="error-chart"/>
+<div class="container"  markdown="0">
+    <div class="row">
 
-<table id="training-one-gd">
-    <tr>
-        <td colspan="3">
-            <input type="button" value="GD Step" id="gradient-descent-button" />
-            <input type="button" value="GD 10 Steps " id="gradient-descent-10-button" />
-            <input type="button" value="GD 100 Steps " id="gradient-descent-100-button" />
-            <input type="button" value="GD 100 Steps " id="gradient-descent-converge-button" />
-        </td>
-    </tr>
-    <tr>
-        <td>
-            Error
-        </td>
-        <td colspan="2">
-            <span id="error-value" ></span>
-        </td>
+        <div class="col-sm-6 graphs">
+            <div id="training-one-gd-chart" class="training-chart" ></div>
 
-    </tr>
 
-    <tr>
-        <td class="error-cell" colspan="3">
-            <span id="error-value-message"></span>&nbsp;
-        </td>
+                <div class="row training-chart mini-charts">
+                    <div id="training-one-gd-error-chart" class="error-chart col-xs-6" ></div>
+                    <div id="training-one-gd-heatmap" class="error-chart col-xs-6" ></div>
+                </div>
 
-    </tr>
-    <tr>
-        <td>
-            Weight
-        </td>
-        <td>
-            <input id="weightSlider" type="range" min="0" max="0.4" step="0.001">
-        </td>
-        <td class="slider-value">
-            <span id="weight">0</span>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            Bias
-        </td>
-        <td>
-            <input id="biasSlider" type="range" min="0" max="460" step="1">
-        </td>
-        <td class="slider-value">
-            <span id="bias">0</span>
-        </td>
-    </tr>
-</table>
+        </div>
 
+        <div class="col-sm-6">
+
+            <table id="training-one-gd" class="training-table">
+                <tr>
+                    <td colspan="3" class="gd-buttons">
+                        <input type="button" value="GD Step" id="gradient-descent-button"  class="btn btn-primary" />
+                        <input type="button" value="10 GD Steps " id="gradient-descent-10-button"  class="btn btn-secondary" />
+                        <input type="button" value="100 GD Steps " id="gradient-descent-100-button"  class="btn btn-secondary" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Error
+                    </td>
+                    <td colspan="2">
+                        <span id="error-value" ></span>
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td class="error-cell" colspan="3">
+                        <span id="error-value-message"></span>&nbsp;
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        Weight
+                    </td>
+                    <td>
+                        <input id="weightSlider" type="range" class="weight" min="0" max="0.4" step="0.001">
+                    </td>
+                    <td class="slider-value">
+                        <span id="weight">0</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Bias
+                    </td>
+                    <td>
+                        <input id="biasSlider" type="range"  class="bias" min="0" max="460" step="1">
+                    </td>
+                    <td class="slider-value">
+                        <span id="bias">0</span>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+</div>
+
+The two new figures are to help you track the error values as you fiddle with the parameters (weight and bias) of the model . It's important to keep track of the error as the training process is all about reducing this error as much possible.
+
+How does gradient descent know where its next step should be? Calculus. You see, knowing the function we're minimizing (our loss function, the average of (y_ - y)² for all our data points), and knowing the current inputs into it (the current weight and bias, the derivatives of the loss function tell us which direction to nudge W and B in order to minimize the error.
 
 
 
@@ -269,11 +299,99 @@ Our neural network with two variables looks like this:
 We now have to find two weights (one for each input) and one bias to create our new model.
 
 Calculating Y looks like this:
-[figure]
+
+
+<p class="gif-space-half"/>
+
+![]({{site.baseurl}}/images/NNs_formula_two_variables.png)
+
+<p class="gif-space-half"/>
+
 
 But how do we find w1 and w2? This is a little trickier than when we only had to worry about one weight value. How much does having an extra bathroom change how we predict the value of a home?
 
+Take a stab finding the right weights and bias. You will start here to see the complexity we start getting into as the number of our inputs increase. We start losing the ability to create simple 2d shapes that allow us to visualize the model at a glance. Instead, we'll have to mainly rely on how the error value is evolving as we tweak our model parameters.
 
+
+<div class="container"  markdown="0">
+    <div class="row">
+
+        <div class="col-sm-6 graphs">
+            <div id="training-two-chart" class="training-chart" ></div>
+
+        </div>
+
+        <div class="col-sm-6">
+
+            <table id="training-one-gd" class="training-table">
+                <tr>
+                    <td colspan="3" class="gd-buttons">
+                        <input type="button" value="GD Step" id="gradient-descent-button"  class="btn btn-primary" />
+                        <input type="button" value="10 GD Steps " id="gradient-descent-10-button"  class="btn btn-secondary" />
+                        <input type="button" value="100 GD Steps " id="gradient-descent-100-button"  class="btn btn-secondary" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Error
+                    </td>
+                    <td colspan="2">
+                        <span id="error-value" ></span>
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td class="error-cell" colspan="3">
+                        <span id="error-value-message"></span>&nbsp;
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        Weight #1
+                    </td>
+                    <td>
+                        <input id="weightOneSlider" type="range" class="weight" min="0" max="0.4" step="0.001">
+                    </td>
+                    <td class="slider-value">
+                        <span id="weightOne">0</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Weight #2
+                    </td>
+                    <td>
+                        <input id="weightTwoSlider" type="range" class="weight" min="0" max="0.4" step="0.001">
+                    </td>
+                    <td class="slider-value">
+                        <span id="weightTwo">0</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Bias
+                    </td>
+                    <td>
+                        <input id="biasSlider_2" type="range"  class="bias" min="0" max="460" step="1">
+                    </td>
+                    <td class="slider-value">
+                        <span id="bias">0</span>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+</div>
+
+Our trusty gradient descent is here to help once again. It still is valuable in helping us find the right weights and bias.
+
+
+
+## Depth perspective
+As the problems we try to solve get more and more complicated, so must our tools get more and more powerful. The truth of the matter is, the models we saw in this post until now are very simple and aren't that useful in most real-life situations. There are cases where a straight line through data points is useful as it indicates some trend, but we're not going to build self-driving cars wih linear regression.
 
 
 <script type="text/javascript" src="/js/simple_nn.js"></script>

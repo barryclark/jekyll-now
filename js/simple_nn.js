@@ -50,9 +50,10 @@ function average(data){
 
 
 
-var NN_trainer = function (svg_el, table_el, areas, prices, weight, bias, x1, y1, x2,
+var NN_trainer = function (svg_el, table_el, areas, prices, weight, bias, x1, y1, x2, y2,
                            gradientDescentButton, gradientDescent10Button, gradientDescent100Button,
-                           gradientDescentConvergeButton, normalize, error_chart_el) {
+                           gradientDescentConvergeButton, normalize, error_chart_el, heatmap_el,
+                            weightRange, biasRange) {
     this.svg_el = svg_el;
     this.table_el = table_el;
     this.areas = areas;
@@ -62,15 +63,19 @@ var NN_trainer = function (svg_el, table_el, areas, prices, weight, bias, x1, y1
     this.x1 = x1;
     this.y1 = y1;
     this.x2 = x2;
-    this.y2 = x2 * weight + bias;
+    this.y2 = y2;
     this.data = [{x: this.x1, y: this.y1}, {x: this.x2, y: this.y2}];
     this.prediction = [];
     this.dataPoints = zip([this.areas, this.prices]);
     this.normalize = normalize;
     this.error_chart_el = error_chart_el;
+    this.heatmap_el = heatmap_el;
 
+    this.miniGraphWidth = 210;
+    this.miniGraphHeight = 180;
 
-    console.log(this.dataPoints);
+    this.weightRange = weightRange;
+    this.biasRange = biasRange;
 
     // Normalization doesn't work quite yet. Actually decided to roll back during implementation
     // because changing the weights and biases between examples would confuse readers.
@@ -82,18 +87,20 @@ var NN_trainer = function (svg_el, table_el, areas, prices, weight, bias, x1, y1
 
     if(error_chart_el != "")
         this.initializeErrorGraph();
+    if( this.heatmap_el != "")
+        this.initializeHeatmap();
 
     // Set the initial values of the sliders
-    this.updateWeightAndBias(this.weight, this.bias);
+    this.updateWeightAndBias(this.weight, this.bias, true);
 
     // Attach events to react to the user moving the sliders
     var trainer_self = this;
     $(this.table_el + " #weightSlider").on("input change", (function(){
-        trainer_self.updateWeightAndBias(this.value, -1)
+        trainer_self.updateWeightAndBias(this.value, -1, true)
     }));
 
     $(this.table_el + " #biasSlider").on("input change", (function(){
-        trainer_self.updateWeightAndBias(-1, this.value)
+        trainer_self.updateWeightAndBias(-1, this.value, true)
     }));
 
     if (gradientDescentButton != ''){
@@ -113,15 +120,10 @@ var NN_trainer = function (svg_el, table_el, areas, prices, weight, bias, x1, y1
         });
     }
 
-    if (gradientDescentConvergeButton != ''){
-        $(this.table_el + " " + gradientDescentConvergeButton).click(function(){
-            trainer_self.gradientDescentStep(1)
-        });
-    }
 
-
+    // Update the reading of the weight/bias numbers
     $(this.table_el + " #weightSlider").val(this.weight);
-    $(this.table_el + " #weightBias").val(this.bias);
+    $(this.table_el + " #biasSlider").val(this.bias);
 };
 
 
@@ -152,9 +154,9 @@ normalizeFeaturesArray = function(array, mean, std){
 NN_trainer.prototype.initializeGraph = function(){
     this.holder = d3.select(this.svg_el) // select the 'body' element
         .append("svg")           // append an SVG element to the body
-        .attr("width", 449)      // make the SVG element 449 pixels wide
+        .attr("width", 429)      // make the SVG element 449 pixels wide
         .attr("height", 249);    // make the SVG element 249 pixels high
-    this.margin = {top: 20, right: 20, bottom: 30, left: 50},
+    this.margin = {top: 20, right: 20, bottom: 50, left: 50},
         this.width = +this.holder.attr("width") - this.margin.left - this.margin.right,
         this.height = +this.holder.attr("height") - this.margin.top - this.margin.bottom,
         this.g = this.holder.append("g").attr("transform", "translate(" + this.margin.left + "," + this.margin.top + ")");
@@ -207,17 +209,17 @@ NN_trainer.prototype.initializeGraph = function(){
 
 
 NN_trainer.prototype.initializeErrorGraph = function(){
-    console.log("initializeErrorGraph");
 
-    this.error_chart_history_x = 200;       // How many error data points to show
+
+    this.error_chart_history_x = 300;       // How many error data points to show
     this.error_chart_history_y = 100000;    // How high the bar goes
     this.error_history = [10000];
 
 
     this.errorHolder = d3.select(this.error_chart_el) // select the 'body' element
         .append("svg")           // append an SVG element to the body
-        .attr("width", 240)      // make the SVG element 449 pixels wide
-        .attr("height", 120);    // make the SVG element 249 pixels high
+        .attr("width", this.miniGraphWidth)      // make the SVG element 449 pixels wide
+        .attr("height", this.miniGraphHeight);    // make the SVG element 249 pixels high
 
         this.errorChartWidth = +this.errorHolder.attr("width") - this.margin.left - this.margin.right;
         this.errorChartHeight = +this.errorHolder.attr("height") - this.margin.top - this.margin.bottom;
@@ -229,8 +231,8 @@ NN_trainer.prototype.initializeErrorGraph = function(){
         .domain([this.x1, this.error_chart_history_x]);
 
     this.error_y = d3.scaleLinear()
-        .rangeRound([this.errorChartHeight, 0])
-        .domain([this.y1, d3.max(this.error_history, function (d) { return d + d * 0.2; })]);
+        .rangeRound([this.errorChartHeight, 2])
+        .domain([1, d3.max(this.error_history, function (d) { return d; }) * 1.3]);
 
 
 
@@ -244,9 +246,11 @@ NN_trainer.prototype.initializeErrorGraph = function(){
         .attr("transform", "translate(0," + this.errorChartHeight + ")")
         .call(d3.axisBottom(this.error_x).ticks(5));
     // Draw Y axis
-    this.errorG.append("g")
+    this.errorYAxis = this.errorG.append("g")
         .attr("class", "axis axis--y")
         .call(d3.axisLeft(this.error_y).ticks(5));
+
+
 
     this.errorG.append("defs").append("clipPath")
         .attr("id", "clip")
@@ -268,7 +272,6 @@ NN_trainer.prototype.initializeErrorGraph = function(){
 // https://gist.github.com/mbostock/1642874
 NN_trainer.prototype.addErrorPoint = function (value) {
 
-
     this.error_history.push(value);
     // Redraw the line.
     d3.select(this.error_chart_el +" .error-history-line")
@@ -279,17 +282,48 @@ NN_trainer.prototype.addErrorPoint = function (value) {
     if( this.error_history.length >= this.error_chart_history_x)
         this.error_history.shift();
 
-    this.rescaleErrorGraph(this.max_error_y);
+    this.rescaleErrorGraph();
 };
 
 
-NN_trainer.prototype.rescaleErrorGraph = function (new_max_y) {
-    console.log("rescale");
+NN_trainer.prototype.batchAddErrorPoint = function (valuesArray) {
+
+    this.error_history = this.error_history.concat(valuesArray);
+
+
+
+    // Cut the needed number of elements to be within our specified error_chart_history_x
+    if( this.error_history.length > this.error_chart_history_x)
+    {
+        // How much are we over by
+        var overage = this.error_history.length - this.error_chart_history_x
+        this.error_history.splice(0, overage);
+
+    }
+
+    d3.select(this.error_chart_el +" .error-history-line")
+        .datum(this.error_history)
+        .attr("d", this.errorGraphLine)
+        .attr("transform", "translate(" + this.error_x(-valuesArray.length) + ",0)");
+
+
+
+    this.rescaleErrorGraph();
+
+};
+
+
+NN_trainer.prototype.rescaleErrorGraph = function () {
+
     //this.error_y.domain([0, new_max_y]);
-    this.error_y.domain([this.y1, d3.max(this.error_history, function (d) { return d; })]);
+    this.error_y.domain([1, d3.max(this.error_history, function (d) { return d; })]);
 
     this.errorG.select(this.error_chart_el +" .axis--y")
         .call(d3.axisLeft(this.error_y).ticks(5));
+
+    //this.heatmapColorScale
+    this.errorG.selectAll(this.error_chart_el +" .axis--y .tick text")
+        .attr("fill", function (d){return this.heatmapColorScale(d)}.bind(this))
 };
 
 
@@ -307,7 +341,7 @@ NN_trainer.prototype.calculatePrediction = function (x) {
     return prediction;
 };
 
-NN_trainer.prototype.updateWeightAndBias = function (weight, bias) {
+NN_trainer.prototype.updateWeightAndBias = function (weight, bias, updateUI) {
 
     var predictionDataPoints,
         errorLines,
@@ -336,37 +370,48 @@ NN_trainer.prototype.updateWeightAndBias = function (weight, bias) {
     }
     mean_delta_sum = delta_sum / this.prediction.length;
 
+    if( updateUI )
+    this.updateUI(mean_delta_sum, errorLineValues);
+
+
+
+    return mean_delta_sum;
+};
+
+NN_trainer.prototype.updateUI = function(mean_delta_sum, errorLineValues){
+
     //Update error chart if available
     if(this.error_chart_el != "")
         this.addErrorPoint(mean_delta_sum);
+
     // Update the error/weight/bias indicators
-    $(this.table_el + " span#weight").text(this.weight);
-    $(this.table_el + " span#bias").text(this.bias);
+    $(this.table_el + " span#weight").text(this.weight.toFixed(3));
+    $(this.table_el + " span#bias").text(this.bias.toFixed(3));
     $(this.table_el + " span#error-value").text(numberWithCommas(Math.round(mean_delta_sum)));
 
     // Update comment on the score
-    if (delta_sum < 1200) {
-        $(" span#error-value-message").html("I honestly didn't know this was possible..");
+    if (mean_delta_sum < 450) {
+        $(" span#error-value-message").html("I honestly didn't know this was humanly possible..");
     }
-    else if (delta_sum < 1500) {
+    else if (mean_delta_sum < 500) {
         $(this.table_el + " span#error-value-message").html("Hello there, superintelligent AI overlord..");
     }
-    else if (delta_sum < 1700) {
+    else if (mean_delta_sum < 600) {
         $(this.table_el + " span#error-value-message").html("Whoa whoa! Easy there, <a href='https://en.wikipedia.org/wiki/Yann_LeCun'>LeCun</a>!!");
     }
-    else if (delta_sum < 2000) {
-        $(this.table_el + " span#error-value-message").text("Nice! You cracked 2,000!");
+    else if (mean_delta_sum < 750) {
+        $(this.table_el + " span#error-value-message").text("Nice! You cracked 750!");
     }
-    else if (delta_sum < 2397) {
+    else if (mean_delta_sum < 799) {
         $(this.table_el + " span#error-value-message").text("Good job!");
     }
-    else if (delta_sum >= 1000000) {
+    else if (mean_delta_sum >= 800000) {
         $(this.table_el + " span#error-value-message").text("Are you even trying?");
     }
-    else if (delta_sum >= 50000) {
-        $(this.table_el + " span#error-value-message").text("seriously?");
+    else if (mean_delta_sum >= 100000) {
+        $(this.table_el + " span#error-value-message").text("Way off, buddy");
     }
-    else if (delta_sum >= 2397) {
+    else {
         $(this.table_el + " span#error-value-message").text("");
     }
 
@@ -396,7 +441,6 @@ NN_trainer.prototype.updateWeightAndBias = function (weight, bias) {
 
     predictionDataPoints = zip([this.areas, this.prediction]);
 
-
     // DRAW & UPDATE PREDICTION POINTS
     // Draw the line's predictions for our datapoints as dots
     // DATA JOIN - only really useful the first time. It adds an element for each datapoint
@@ -422,9 +466,13 @@ NN_trainer.prototype.updateWeightAndBias = function (weight, bias) {
             return this.y(d[1])
         }.bind(this));
 
+    if( this.heatmap_el != "")
+        this.updateHeatmapElement(this.weight, this.bias, mean_delta_sum);
+
+
+
     this.dataPointDots.moveUp();
 };
-
 
 
 
@@ -435,6 +483,8 @@ NN_trainer.prototype.gradientDescentStep = function (number_of_steps) {
     this.learningRate = 0.00000001;
     this.learningRate2 = 1;
 
+
+    var error, errors_array = [], weights_array = [], biases_array =[];
     for( var c = 0; c < number_of_steps; c++){
 
         var sum_for_bias = 0, sum_for_weight = 0, bias_mean, weight_mean, bias_adjustment, weight_adjustment,
@@ -444,31 +494,179 @@ NN_trainer.prototype.gradientDescentStep = function (number_of_steps) {
             sum_for_weight = sum_for_weight +  (this.prediction[i] - this.prices[i] ) * this.areas[i];
         }
 
-        console.log("sum: ", sum_for_weight, sum_for_bias );
+        //console.log("sum: ", sum_for_weight, sum_for_bias );
 
         bias_mean = sum_for_bias / this.areas.length;
         weight_mean = sum_for_weight / this.areas.length;
-        console.log("sum means: ", weight_mean, bias_mean);
+        //console.log("sum means: ", weight_mean, bias_mean);
 
         bias_adjustment = this.learningRate2 * bias_mean;
         weight_adjustment = this.learningRate * weight_mean;
-        console.log("adjustments: ", weight_adjustment, bias_adjustment);
+        //console.log("adjustments: ", weight_adjustment, bias_adjustment);
 
         new_b = this.bias - bias_adjustment;
         new_w =this.weight - weight_adjustment;
 
-        console.log("new weight & bias: ",new_w, new_b );
-        this.updateWeightAndBias( new_w, new_b);
+        // Only update the UI on the last step (if we're doing multiple steps
+        // And in that case, add the errors to the error graph as a batch
+        if( c == number_of_steps - 1) {
+
+            if( errors_array.length != 0 ){
+                this.batchAddErrorPoint(errors_array);
+            }
+
+
+            this.updateWeightAndBias(new_w, new_b, true);
+        }
+        else
+        {
+            error = this.updateWeightAndBias( new_w, new_b, false);
+            weights_array.push(new_w);
+            biases_array.push(new_b);
+            errors_array.push(error);
+        }
     }
 
     $(this.table_el + " #weightSlider").val(new_w);
-    $(this.table_el + " #weightBias").val(new_b);
+    $(this.table_el + " #biasSlider").val(new_b);
 
 
 };
 
 
+NN_trainer.prototype.initializeHeatmap = function(){
 
+
+    this.heatmapSideNumberOfElements = 15;
+    //this.heatmapColors = ['#f7fcf0','#e0f3db','#ccebc5','#a8ddb5','#7bccc4','#4eb3d3','#2b8cbe','#0868ac','#084081'].reverse();
+    this.heatmapColors = ['#F8CA00','#a1dab4','#41b6c4','#225ea8'].reverse();
+    this.heatmapData = this.generateHeatmapData(this.heatmapSideNumberOfElements);
+
+    this.heatmapHolder = d3.select(this.heatmap_el) // select the 'body' element
+        .append("svg")           // append an SVG element to the body
+        .attr("width", this.miniGraphWidth)
+        .attr("height", this.miniGraphHeight);
+
+    var marginBottom =
+    this.heatmapWidth = +this.heatmapHolder.attr("width") - this.margin.left - this.margin.right;
+    this.heatmapHeight = +this.heatmapHolder.attr("height") - this.margin.top - this.margin.bottom;
+    this.heatmapG = this.heatmapHolder.append("g").attr("transform", "translate(" + (this.margin.left + 15 )+ "," + this.margin.top + ")");
+
+
+
+    this.heatmapBoxSize = (this.heatmapHeight) / this.heatmapSideNumberOfElements;
+
+
+    // Initialize scales and axes
+
+    // Scales for the axes
+    this.heatmapXAxisScale = d3.scaleLinear()
+        .domain(this.weightRange)
+        .rangeRound([0, this.heatmapHeight]);
+    this.heatmapYAxisScale = d3.scaleLinear()
+        .domain(this.biasRange)
+        .range([this.heatmapHeight , 0]);
+
+
+    // Scales to map weight/bias to box number
+    // Maps [0, 0.4] to discreet box numbers [1, 2, 3, ... ] for the x axis
+    this.heatmapX = d3.scaleQuantile()
+        .domain(this.weightRange)
+        .range(d3.range(this.heatmapSideNumberOfElements));
+    // Maps [0,400] to discreet box numbers [15, 14, 13,, ... 1 ] for the y axis
+    this.heatmapY = d3.scaleQuantile()
+        .domain(this.biasRange)
+        .range(d3.range(this.heatmapSideNumberOfElements).map(function(d){
+            return this.heatmapSideNumberOfElements  -1 - d;
+        }.bind(this)));
+
+    //Color scale
+    this.heatmapColorScale = d3.scaleLinear()
+        .domain([400, 1000, 10000, 500000 ])
+        .range(this.heatmapColors);
+
+    // Draw X axis
+    this.heatmapG.append("g")
+        .attr("class", "axis axis--x")
+        .attr("transform", "translate(0," + this.heatmapHeight + ")")
+        .call(d3.axisBottom(this.heatmapXAxisScale).ticks(5));
+    // Draw Y axis
+    this.heatmapG.append("g")
+        .attr("class", "axis axis--y")
+        .call(d3.axisLeft(this.heatmapYAxisScale).ticks(5));
+
+    this.heatmapHolder.append("text")
+        .attr("text-anchor", "middle")  // this makes it easy to centre the text as the transform is applied to the anchor
+        .attr("transform", "translate("+ (this.heatmapHeight/2 + this.margin.left ) +","+(this.heatmapHeight + 55)+")")
+        .attr("class", "weight-axis-label")
+        .text("Weight");
+
+
+    this.heatmapHolder.append("text")
+        .attr("text-anchor", "middle")  // this makes it easy to centre the text as the transform is applied to the anchor
+        .attr("transform", "translate("+ (28) +","+(this.heatmapHeight/2 + this.margin.top)+")rotate(-90)")
+        .attr("class", "bias-axis-label")
+        .text("Bias");
+
+
+    this.updateHeatmap(this.heatmapData);
+};
+
+
+
+NN_trainer.prototype.updateHeatmap= function(data){
+    var heatmapBoxSize = this.heatmapBoxSize, heatmapColorScale = this.heatmapColorScale;
+
+
+    this.heatmap = this.heatmapG.selectAll(".heatmap-square")
+        .data(data);
+
+    this.heatmap.enter().append("rect")
+        .attr("x", function(d){return (d.x) * heatmapBoxSize})
+        .attr("y", function(d){return (d.y) * heatmapBoxSize})
+        .attr("width", heatmapBoxSize)
+        .attr("height", heatmapBoxSize)
+        .attr("class", "heatmap-square")
+        .attr("id", function(d){ return "box_" + d.x + "_" + d.y})
+        .attr("fill", function(d, i){  if(d.error == 0) return "#f0f0f0";  else  return heatmapColorScale(d.error);})
+};
+
+NN_trainer.prototype.updateHeatmapElement = function(weight, bias, error){
+
+    var x = this.heatmapX(weight), y = this.heatmapY(bias), heatmapColorScale = this.heatmapColorScale;
+
+    var r = d3.select("#box_"+ x + "_" + y)
+        .filter(function(d){return d.error == 0 })
+        .datum({x: x, y: y, error: error});
+
+
+    r.attr("fill", function(d, i){  return heatmapColorScale(d.error) })
+        .attr("stroke", "#888")
+        .attr("stroke-opacity",1)
+        .transition().duration(1000)
+        .attr("stroke-opacity",0);
+
+
+    //r.enter().append("rect")
+    //    .attr("x", function(d){console.log("XX"); return (d.x) * this.heatmapBoxSize})
+    //    .attr("y", function(d){return (d.y) * this.heatmapBoxSize})
+    //    .attr("width", this.heatmapBoxSize)
+    //    .attr("height", this.heatmapBoxSize)
+    //    .attr("class", "heatmap-square")
+    //    .attr("id", function(d){ return d.x + "_" + d.y})
+    //    .attr("fill", function(d, i){ console.log("FILLING") ; if(d.error == 0) return "#a0f0f0";  else  return heatmapColorScale(d.error);})
+
+};
+
+
+NN_trainer.prototype.generateHeatmapData= function(size){
+    var data = [];
+    for(var i = 0; i < size; i++)
+        for( var j = 0; j < size; j++)
+            data.push({x: i, y: j, error: 0});
+
+    return data;
+};
 
 
 var trainer = new NN_trainer("#training-one-chart",  "#training-one",
@@ -479,22 +677,29 @@ var trainer = new NN_trainer("#training-one-chart",  "#training-one",
     0,      // x1
     0,      // y1
     2600,   // x2
-    "", "", "", "", false, "");
+    410,    //y2
+    "", "", "", "", false, "", "", "", "");
 
 
 
 var trainer2 = new NN_trainer("#training-one-gd-chart",  "#training-one-gd",
     [2104, 1600, 2400],
     [399.900, 329.900, 369.000],
-    0.1,      // initial weight
-    150,      // initial bias
+    0,      // initial weight
+    0,      // initial bias
     0,      // x1
     0,      // y1
     2600,   // x2
+    410,    //y2
     "#gradient-descent-button",
     "#gradient-descent-10-button",
     "#gradient-descent-100-button",
     "#gradient-descent-converge-button",
     false,
-    "#training-one-gd-error-chart"
+    "#training-one-gd-error-chart",
+    "#training-one-gd-heatmap",
+    [0, 0.4],
+    [0, 460]
 );
+
+
