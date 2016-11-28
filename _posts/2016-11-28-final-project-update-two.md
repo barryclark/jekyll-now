@@ -1,3 +1,4 @@
+---
 layout: post
 title: Final Project Update 2
 author: kaminalu
