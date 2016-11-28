@@ -14,6 +14,7 @@
 {% endcapture %}
 {% capture url %}{{ page_url  | strip_newlines | strip | uri_escape }}{% endcapture %}
 {% capture id %}{{ page_id | remove: '/' | replace: '_', '-' | strip }}{% endcapture %}
+{% capture text %}{% if include.text %}{{ include.text }}{% elsif page.title %}{{ page.title }}{{ endif }}{% endcapture %}
 
 <script>
 $( document ).ready(function() {
@@ -43,7 +44,7 @@ $( document ).ready(function() {
 		<span class="count"></span>
 	</div>
 </a>
-<a href="https://twitter.com/intent/tweet?url={{ url }}&via={{ site.footer-links.twitter }}{% if page.title %}&text={{ page.title | url_encode }}{% endif %}" target="_blank">
+<a href="https://twitter.com/intent/tweet?url={{ url }}&via={{ site.footer-links.twitter }}{% if text %}&text={{ text | url_encode }}{% endif %}" target="_blank">
 	<div class="share twitter">
 		<i class="fa fa-twitter mobile-only" aria-hidden="true"></i>
 		<span class="mobile-hide">twitter</span>
