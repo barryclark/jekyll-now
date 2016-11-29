@@ -9,7 +9,7 @@ function DebtProto() {
 	this.update = function() {
 	    this.balance = this.balance * (1 + this.rate / 12);
 	    this.balance = Math.round(this.balance);
-	    return this.pay(getMinPayment());
+	    return this.pay(this.getMinPayment());
 	};
 	this.pay = function(amount) {
 	    var extra = 0;
