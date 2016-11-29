@@ -195,23 +195,6 @@ maptune.feed.parse = maptune.feed.parse || {};
 				var d = new Date(szDate);
 				feature.properties.utime = d.getTime();
 
-				// search date within description 
-				// ------------------------------
-				var dateA = new Array();
-				while( szText.length ){ 
-					var index = szText.search(/([0-2]\d|[3][0-1])\/([0]\d|[1][0-9])\/([1-2]\d|[0-9][0-9][0-9])/);
-					if ( index > 0 ){
-						dateA.push(szText.substr(index,10).split('/'));
-						szText = szText.substr(index+10,szText.length-index-10);
-					}else{
-						szText = "";
-					}
-				}
-				if ( dateA.length && (dateA[0][2].length == 4) ){
-					var d1 =  new Date(dateA[0][2],dateA[0][1]-1,dateA[0][0]);
-					feature.properties.utime = d1.getTime();
-				}
-
 				// make geometry 
 				// -------------
 

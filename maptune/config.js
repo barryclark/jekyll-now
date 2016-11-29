@@ -1,4 +1,4 @@
-	_TRACE("Potenza.js ------->");
+	_TRACE("config.js ------->");
 
 	// define default marker style for layers
 	var MapParam = {
@@ -50,7 +50,6 @@
 		"layers": []
 
 	};
-
 
 	maptune.jsapi.onGetIcon = function(icon,info,i) {
 
@@ -289,4 +288,4 @@
 	// EOF
 	// --------------------------------------
 
-	_TRACE("Terremoto.js ----- EOF");
+	_TRACE("config.js ----- EOF");

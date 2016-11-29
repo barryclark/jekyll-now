@@ -2732,6 +2732,7 @@ function _mapup_getIcon(map,defaultIcon,layer,markers,i,szFlag) {
 				icon.legendimage = maptune.jsapi.getResourceUrl(markers[i].properties.icon);
 
 			}else{
+				if ( markers[i].properties.icon ){
 				var nScale = markers[i].properties.iconscale? markers[i].properties.iconscale:1; 
 				icon.image = maptune.jsapi.getResourceUrl(markers[i].properties.icon);
 				icon.printImage = maptune.jsapi.getResourceUrl(markers[i].properties.icon);
@@ -2759,6 +2760,7 @@ function _mapup_getIcon(map,defaultIcon,layer,markers,i,szFlag) {
 					}
 				}else{
 					icon.iconAnchor = new GPoint(16*nScale, 32*nScale);
+				}
 				}
 			}
 		}
