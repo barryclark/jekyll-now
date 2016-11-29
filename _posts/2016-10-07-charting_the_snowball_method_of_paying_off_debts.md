@@ -5,7 +5,7 @@ tags: [money, math, javascript, html5]
 keywords: [avalanche, snowball, debt, debts, chart, charts, interest]
 jquery: true
 javascripts: [/js/d3.min.js, /js/c3.min.js, /js/parseGet.min.js]
-deferedjavascripts: [/js/avalanche.min.js]
+deferedjavascripts: [/js/avalanche.js]
 csses: [/css/c3.min.css, /css/debtChart.css]
 image: /images/avalanche.jpg
 thumbnail: true
