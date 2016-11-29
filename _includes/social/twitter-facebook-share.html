@@ -14,7 +14,7 @@
 		<span class="mobile-hide">facebook</span>
 	</div>
 </a>
-<a href="https://twitter.com/intent/tweet?url={{ url }}&via={{ site.footer-links.twitter }}" target="_blank">
+<a href="https://twitter.com/intent/tweet?url={{ url }}&via={{ site.footer-links.twitter }}{% if include.text %}&text={{ include.text | url_encode }}{% endif %}" target="_blank">
 	<div class="share twitter" style="width: 50%;">
 		<i class="fa fa-twitter mobile-only" aria-hidden="true"></i>
 		<span class="mobile-hide">twitter</span>
