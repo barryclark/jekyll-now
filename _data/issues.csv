@@ -31,6 +31,17 @@ lon: '12.68721342086792'
 link: 'http://www.uslumbria2.it/'
 data: 28/11/2016
 </yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1387,192003912,2016-11-29 08:21:42,2016-11-28 13:18:20,Si donano giochi e vestiti per bambini ,,,"[""Accettato"", ""Donazioni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""giochi e vestiti"", ""data"": ""28/11/2016"", ""descrizione"": ""Buongiorno, vorrei donare dei giocattoli per bambini dai 6 mesi ai 3 anni e dei vestiti per bambine, tutto tenuto bene. Mi piacerebbe darli a famiglie che hanno perso tutto o a scuole, associazioni culturali ecc. che ne abbiano necessit\u00e0 sul territorio."", ""email"": ""linda.pastorello@ryahoo.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3333767379""}","<pre><yamldata>tel: '3333767379'
+email: linda.pastorello@ryahoo.it
+cosa: 'giochi e vestiti'
+descrizione: 'Buongiorno, vorrei donare dei giocattoli per bambini dai 6 mesi ai 3 anni e dei vestiti per bambine, tutto tenuto bene. Mi piacerebbe darli a famiglie che hanno perso tutto o a scuole, associazioni culturali ecc. che ne abbiano necessità sul territorio.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 28/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1383,191859467,2016-11-27 12:45:08,2016-11-27 12:44:41,Comune di #Cascia: elenco aziende e produttori che vendono prodotti locali,,,"[""Accettato"", ""acquisto solidale"", ""Bollettino"", ""Sisma Ottobre""]",,,"{""data"": ""27/11/2016"", ""descrizione"": ""Sul sito del Comune di Cascia elenco delle Aziende, Produttori e Negozi del Comune di Cascia che vendono prodotti locali (elenco in continuo aggiornamento)."", ""link"": ""http://www.comune.cascia.pg.it/?p=8322"", ""titolo"": ""Comune di #Cascia: elenco aziende e produttori che vendono prodotti locali""}","<pre><yamldata>titolo: 'Comune di #Cascia: elenco aziende e produttori che vendono prodotti locali'
 descrizione: 'Sul sito del Comune di Cascia elenco delle Aziende, Produttori e Negozi del Comune di Cascia che vendono prodotti locali (elenco in continuo aggiornamento).'
 link: 'http://www.comune.cascia.pg.it/?p=8322'
@@ -7341,18 +7352,6 @@ email: ''
 data: 15/09/2016
 </yamldata></pre>
 ",closed
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/373,177125867,2016-09-15 09:13:44,2016-09-15 09:09:59,Protezione Civile Firenze e dintorni,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Protezione Civile Firenze e dintorni"", ""data"": ""15/09/2016"", ""descrizione"": ""Le Protezioni civili del Comune e della Citt\u00e0 metropolitana si sono mobilitate anche per raccogliere i beni di prima necessit\u00e0 (cibo e prodotti per l'igiene personale) che servono ai terremotati. Saranno loro poi ad occuparsi di farli arrivare a destinazione. Chi \u00e8 interessato a fare una donazione dovr\u00e0 contattare la Protezione civile comunale e della Metrocitt\u00e1 per telefono o via mail. - Per comune di Firenze Tel. 0557890 Indirizzo EMail. protezionecivile@comune.fi.it - Per citt\u00e0 metropolitana Tel. 0552761370 Indirizzo Email protezionecivile@cittametropolitana.fi.it Telefonate dalle 09.00 alle 19.00"", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""https://www.facebook.com/permalink.php?story_fbid=1201170246571777&id=304732699548874"", ""postale"": """"}","<pre><yamldata>chi: 'Protezione Civile Firenze e dintorni'
-descrizione: 'Le Protezioni civili del Comune e della Città metropolitana si sono mobilitate anche per raccogliere i beni di prima necessità (cibo e prodotti per l''igiene personale) che servono ai terremotati. Saranno loro poi ad occuparsi di farli arrivare a destinazione. Chi è interessato a fare una donazione dovrà contattare la Protezione civile comunale e della Metrocittá per telefono o via mail. - Per comune di Firenze Tel. 0557890 Indirizzo EMail. protezionecivile@comune.fi.it - Per città metropolitana Tel. 0552761370 Indirizzo Email protezionecivile@cittametropolitana.fi.it Telefonate dalle 09.00 alle 19.00'
-intestazione: ''
-iban: ''
-bic: ''
-postale: ''
-causale: ''
-link: 'https://www.facebook.com/permalink.php?story_fbid=1201170246571777&id=304732699548874'
-email: ''
-data: 15/09/2016
-</yamldata></pre>
-",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/373,177125867,2016-09-15 09:13:44,2016-09-15 09:09:59,Protezione Civile Firenze e dintorni,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""Protezione Civile Firenze e dintorni"", ""data"": ""15/09/2016"", ""descrizione"": ""Le Protezioni civili del Comune e della Citt\u00e0 metropolitana si sono mobilitate anche per raccogliere i beni di prima necessit\u00e0 (cibo e prodotti per l'igiene personale) che servono ai terremotati. Saranno loro poi ad occuparsi di farli arrivare a destinazione. Chi \u00e8 interessato a fare una donazione dovr\u00e0 contattare la Protezione civile comunale e della Metrocitt\u00e1 per telefono o via mail. - Per comune di Firenze Tel. 0557890 Indirizzo EMail. protezionecivile@comune.fi.it - Per citt\u00e0 metropolitana Tel. 0552761370 Indirizzo Email protezionecivile@cittametropolitana.fi.it Telefonate dalle 09.00 alle 19.00"", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""https://www.facebook.com/permalink.php?story_fbid=1201170246571777&id=304732699548874"", ""postale"": """"}","<pre><yamldata>chi: 'Protezione Civile Firenze e dintorni'
 descrizione: 'Le Protezioni civili del Comune e della Città metropolitana si sono mobilitate anche per raccogliere i beni di prima necessità (cibo e prodotti per l''igiene personale) che servono ai terremotati. Saranno loro poi ad occuparsi di farli arrivare a destinazione. Chi è interessato a fare una donazione dovrà contattare la Protezione civile comunale e della Metrocittá per telefono o via mail. - Per comune di Firenze Tel. 0557890 Indirizzo EMail. protezionecivile@comune.fi.it - Per città metropolitana Tel. 0552761370 Indirizzo Email protezionecivile@cittametropolitana.fi.it Telefonate dalle 09.00 alle 19.00'
 intestazione: ''
