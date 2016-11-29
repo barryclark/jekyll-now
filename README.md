@@ -83,9 +83,12 @@ jekyll serve
 =====Ressoruces=====
 
 **Markdown Cheat sheet:** [https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet]
+
 **Convert Google Docs to MarkDown:** [https://github.com/mangini/gdocs2md]
+
 **Liquid cheat sheet** [https://gist.github.com/smutnyleszek/9803727]
 
 Find out more: [https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/]
+
 Jekytll Docs: [https://jekyllrb.com/docs/home/]
 
