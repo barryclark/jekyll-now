@@ -6,16 +6,12 @@ function DebtProto() {
 			return this.minpayment;
 	    }
 	};
-	this.update = function() {		
-	    this.balance = this.balance * (1 + this.rate / 12) - this.getMinPayment();
+	this.update = function() {
+	    this.balance = this.balance * (1 + this.rate / 12);
 	    this.balance = Math.round(this.balance);
-				
-	    if(this.balance <= 0) {
-			this.balance = 0;
-			this.minpayment = 0;
-	    }
+	    return this.pay(getMinPayment());
 	};
-	this.payMore = function(amount) {
+	this.pay = function(amount) {
 	    var extra = 0;
 	    this.balance = this.balance - amount;
 		
@@ -33,7 +29,6 @@ function Debt(name, balance, rate, minpayment, minpaymenttype) {
 	this.name = name;
 	this.balance = balance;
 	this.rate = rate;
-	this.payment = minpaymenttype === 'dollar' ? minpayment : minpayment * balance;
 	this.minpayment = minpayment;
 	this.minpaymenttype = minpaymenttype;
 	$.extend( this, new DebtProto() );
@@ -42,17 +37,21 @@ function Debt(name, balance, rate, minpayment, minpaymenttype) {
 function avalanche(debts, method, totalPayment) {	
 	var snowball = totalPayment - sumMinpayments(debts);
 	
-	debts.forEach(function(debt) { debt.update(); });
+	snowball = snowball + payDebts(debts);
 
 	while(snowball > 0) {
 		debts = getDebtsWithBalances(debts);
 		if(debts.length > 0 ){
 			var avalanche = method(debts);
-			snowball = avalanche.payMore(snowball);	
+			snowball = avalanche.pay(snowball);	
 		} else {
 			snowball = 0;	
 		}
 	}
+}
+
+function payDebts(debts) {
+   return debts.reduce(function(p, c){return p + c.update();}, 0);	
 }
 
 function getDebtsWithBalances(debts) {
@@ -127,7 +126,7 @@ function usingMethod(debts, method) {
 		if(typeof method !== 'undefined') {
 			avalanche(debts, method, totalPayment);
 		} else {
-			debts.forEach(function(debt) { debt.update(); });
+			payDebts(debts);
 		}
         		
 		if(month % 12 === 0) {
@@ -142,7 +141,11 @@ function usingMethod(debts, method) {
 		}
 		
 		if(typeof method !== 'undefined') {
-			results.totalPaid = results.totalPaid + totalPayment;
+			if() {
+				results.totalPaid = results.totalPaid + totalPayment;
+		        } else {
+			   
+		   	}
 		} else {
 			results.totalPaid = results.totalPaid + sumMinpayments(debts);
 		}
@@ -251,12 +254,9 @@ $(document).ready(function() {
 			debt.balance = parseInt(debt.balance);
 			if(debt.minpaymenttype === 'percent') {
 				debt.minpayment = debt.minpayment / 100;
-				debt.payment = debt.payment * debt.minpayment;
 			} else {
 				debt.minpayment = parseInt(debt.minpayment);
-				debt.payment = debt.minpayment;
 			}
-			debt.makeMin = true;
 		});
 	} else {
 		debts = new Array();
