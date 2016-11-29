@@ -20,7 +20,7 @@ function DebtProto() {
 	    this.balance = this.balance - amount;
 		
 	    if(this.balance <= 0) {
-		extra = - balance;
+		extra = - this.balance;
 		this.balance = 0;
 		this.minpayment = 0;
 	    }
@@ -44,13 +44,9 @@ function avalanche(debts, method, totalPayment) {
 	
 	debts.forEach(function(debt) { debt.update(); });
 
-	debts = getDebtsWithBalances(debts);
-	var avalanche = method(debts);
-	snowball = avalanche.payMore(snowball);
-
 	while(snowball > 0) {
 		debts = getDebtsWithBalances(debts);
-		avalanche = method(debts);
+		var avalanche = method(debts);
 		snowball = avalanche.payMore(snowball);	
 	}
 }
