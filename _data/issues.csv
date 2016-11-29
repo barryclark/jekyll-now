@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1391,192251147,2016-11-29 13:21:16,2016-11-29 11:02:22,"Donazione di prodotti per l'igiene personale, vestiti per adulti e bambini, giocattoli ",,,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""donazione"", ""data"": ""29/11/2016"", ""descrizione"": ""Saremo in zona Fiastra domenica 11 dicembre 2016. Portiamo prodotti di igiene personale, vestiti sia da adulti che per bambini e giocattoli. Chiunque nelle zone limitrofi avesse bisogno di quanto abbiamo a disposizione vi prego di contattarmi, cercheremo di aiutarvi. Un forte abbraccio. Chiara - Pistoia"", ""email"": ""chiaramosi@email.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3298067677""}","<pre><yamldata>tel: '3298067677'
+email: chiaramosi@email.it
+cosa: donazione
+descrizione: 'Saremo in zona Fiastra domenica 11 dicembre 2016. Portiamo prodotti di igiene personale, vestiti sia da adulti che per bambini e giocattoli. Chiunque nelle zone limitrofi avesse bisogno di quanto abbiamo a disposizione vi prego di contattarmi, cercheremo di aiutarvi. Un forte abbraccio. Chiara - Pistoia'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 29/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1390,192138315,2016-11-29 08:19:55,2016-11-28 22:45:47,A #Cascia famiglia cerca roulotte o camper,,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Facebook"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""roulotte o camper"", ""data"": ""28/11/2016"", ""descrizione"": ""Siamo senza casa qui a Cascia a causa delle scosse del 26 e 30 ottobre e abbiamo una bimba di nove mesi. Cerchiamo una roulotte o camper a prezzo modico, nell'eventualit\u00e0 di una donazione provvediamo noi al trasporto, grazie."", ""email"": ""petrelligismondo@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3271559663""}","<pre><yamldata>tel: '3271559663'
 email: petrelligismondo@gmail.com
 cosa: 'roulotte o camper'
