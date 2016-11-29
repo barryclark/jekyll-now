@@ -27,7 +27,7 @@ Come to one of our meetups in [Athens](http://www.meetup.com/BlockchainGreece-0/
 
 ### <a name="buybitcoin"></a>How can I buy Bitcoin in Greece?
 
-- At the Bitcoin ATM at the Orizontes bookshop, Thiveou Ioannou 20, Aharnes 13671, Attica at the outskits of Athens.
+- At the [BitcoinsGreece](https://bitcoinsgreece.com/) Bitcoin ATM at the Orizontes bookshop, Thiveou Ioannou 20, Aharnes 13671, Attica at the outskits of Athens.
 - At the [BCash](https://bcash.gr/) Bitcoin ATM at Dimitrakopoulou 84, Athens, near the Syggrou-Fix Metro station. Watch this [video](https://www.youtube.com/watch?v=WsVAE-4xP9A) on how to buy Bitcoin from this ATM. They charge 7% over the [Kraken](https://www.kraken.com) exchange rate.
 - At any Bitcoin exchange in the world, via a bank transfer. Due to the capital controls in Greece, as of October 2016 you can wire up to €1000 abroad per month with no prior approval or paperwork. This method incurs the lowest fees, assuming you send the amount using a SEPA transfer (a Greek bank can charge as low as €1 for a SEPA transfer). Some exchanges that accept SEPA transfers are [Kraken](https://www.kraken.com), [Coinbase](https://www.coinbase.com/) and [BitStamp](https://www.bitstamp.net).
 - At a Bitcoin exchange that accepts debit or credit cards. An exchange that accepts Greek cards is [Coinbase](https://www.coinbase.com/) and charges 3.99%. Another exchange is [Circle](https://www.circle.com/). Some Greek banks do not allow their cards to be used at some Bitcoin exchanges.
@@ -65,7 +65,7 @@ Come to one of our meetups in [Athens](http://www.meetup.com/BlockchainGreece-0/
 
 	![](/images/Page 8.png)
 
-Last update: 2016-11-22
+Last update: 2016-11-29
 
 <!-- <div class="posts">
   {% for post in site.posts %}
