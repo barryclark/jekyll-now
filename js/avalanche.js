@@ -151,9 +151,7 @@ function usingMethod(debts, method) {
 		}
     	}
 	
-	if(month % 12 != 0) {
-		results.balances.push([month, sumBalances(debts), sumMinpayments(debts)]);	
-	}
+	results.balances.push([month, sumBalances(debts), sumMinpayments(debts)]);
 	
 	results.months = month;
 	
@@ -215,7 +213,7 @@ function generateRow(debt) {
 }
 
 function make(divString, results) {
-	$('#' + divString + '-total-paid').append('$' + results.totalPaid + " in " + getTimeString(results.months));
+	$('#' + divString + '-total-paid').append('$' + results.totalPaid.toLocaleString() + " in " + getTimeString(results.months));
 
     c3.generate({
         bindto: '#' + divString + '-balance-chart',
