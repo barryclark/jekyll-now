@@ -1,0 +1,102 @@
+---
+layout: post
+title: Legal Document Cross References
+author: David Nadeau
+---
+
+The first Innodata web service allows annotating cross references to law and rule books inside legal documents. 
+
+The Machine Learning engine behind the scene is a Deep Neural Network trained on a few public collections of rules such as X and Y. 
+
+
+## Authentication
+
+Sign up on our [developer portal](https://developer.innodatalabs.com/) to get your api key.
+
+
+## Overview
+
+<image>
+
+### 1. Post a document
+
+Perform a POST operation at:
+> http://api.innodatalabs.com/documents/input/{file}
+
+Where:
+* {file} is the filename you want to create (e.g., my-file.htm)
+* request data contains the file content (the XML or HTML content)
+
+Here's a sample CURL call (assuming there is a local file named 'my-file.htm' in the local directory):
+
+    curl --request POST \
+      --url http://api.innodatalabs.com/documents/input/my-file.htm \
+      --header 'user-key: <your_key>' \
+      --header 'content-type: application/octet-stream' \
+      --data-binary "@OLM_002.htm"
+
+Alternatively, the same can be achieved by passing the file content string directly
+
+    curl --request POST \
+      --url http://api.innodatalabs.com/documents/input/my-file.htm \
+      --header 'authorization: Basic YXBpZHJpdmVyOnRoaXNpc2F2ZXJ5dmVyeXNlY3JldGtleTc3Nzc=' \
+      --header 'user-key: <your_key>' \
+      --data '<html><body><h1>1. Hello</h1><p>a. Ola</p></body></html>'
+
+This call returns JSON response with filename and number of bytes:
+
+	{"input_filename": "my-file.htm", "bytes_accepted": 56001}
+  
+  
+### 2- Annotate the file
+
+Perform a GET operation at:
+> http://api.innodatalabs.com/reference/{file}
+
+Where:
+* {file} is the filename saved at step 1
+
+Here's a sample CURL call:
+
+    curl --request GET \
+      --url 'http://api.innodatalabs.com/reference/my-file.htm' \
+      --header 'user-key: <your_key>' \
+
+This call returns immediatly but **processing can take a lot of time!**. 
+
+This call returns the name of output file and the URL to get progress information :
+
+	{"output_filename": "my-file.htm.reference.xml", "progress_uri": "/reference/status/"}
+  
+### 3- Get Status information
+
+See the current progress and ETA for reference extraction completion.
+
+Perform a GET operation at:
+> http://api.innodatalabs.com/reference/status/
+
+Here's a sample CURL call:
+
+    curl --request GET \
+      --url 'http://api.innodatalabs.com/reference/status/' \
+      --header 'user-key: <your_key>' \
+
+This call returns the number of steps and current step (e.g., step 10 of 12):
+
+  {"progress": 10, "steps": 12, "completed": false}
+
+### 4- Fetch the output file (once operation completed)
+
+Perform a GET operation at:
+> http://api.innodatalabs.com/documents/output/my-file.htm.reference.xml
+
+Where {file} is the filename you want to read (e.g., my-file.htm.reference.xml)
+
+Here's a sample CURL call:
+
+    curl --request GET \
+      --url http://api.innodatalabs.com/documents/output/my-file.htm.reference.xml \
+      --header 'user-key: <your_key>' \
+
+This call returns the file content with the cross-reference annotations!
+
