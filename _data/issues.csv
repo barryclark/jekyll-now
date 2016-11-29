@@ -260,6 +260,17 @@ link: ''
 immagine: ''
 data: 23/11/2016
 </yamldata></pre>",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1355,191201713,2016-11-23 07:36:36,2016-11-23 07:12:37,"Offresi prodotti igiene personale, detersivi, cancelleria, vestiario (inclusa consegna)",,,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form"", ""Sisma Ottobre""]",Milestone(number=40),,"{""cosa"": ""prodotti igiene personale, detersivo, cancelleria, varia"", ""data"": ""23/11/2016"", ""descrizione"": ""Io e mia moglie stiamo facendo una raccolta di diversi prodotti, abbiamo a disposizione: \u2022\tcirca 200 flaconi di bagno schiuma \u2022\tcirca 200 flaconi di shampoo \u2022\tcirca 200 flaconi di detersivo per lavatrice \u2022\tprodotti vari tra cui: \uf0d8\tcreme viso e corpo \uf0d8\tcarta igienica, \uf0d8\tfazzoletti \uf0d8\tpannolini, \uf0d8\tspazzolini \uf0d8\tvestiario \uf0d8\tcancelleria varia. Se avete bisogno anche solo di qualcosa che abbiamo raccolto fatemi sapere tramite telefono o e-mail e sar\u00e0 nostra premura consegnarvela direttamente sul luogo da voi indicato. Siamo nella zona da sabato 26/11 a luned\u00ec 28/11."", ""email"": ""migliorelli.massimo@libero.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3498315495""}","<pre><yamldata>tel: '3498315495'
+email: migliorelli.massimo@libero.it
+cosa: 'prodotti igiene personale, detersivo, cancelleria, varia'
+descrizione: ""Io e mia moglie stiamo facendo una raccolta di diversi prodotti, abbiamo a disposizione: •\tcirca 200 flaconi di bagno schiuma •\tcirca 200 flaconi di shampoo •\tcirca 200 flaconi di detersivo per lavatrice •\tprodotti vari tra cui: \tcreme viso e corpo \tcarta igienica, \tfazzoletti \tpannolini, \tspazzolini \tvestiario \tcancelleria varia. Se avete bisogno anche solo di qualcosa che abbiamo raccolto fatemi sapere tramite telefono o e-mail e sarà nostra premura consegnarvela direttamente sul luogo da voi indicato. Siamo nella zona da sabato 26/11 a lunedì 28/11.""
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 23/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1354,191154400,2016-11-22 23:37:27,2016-11-22 23:36:29,Associazione Rinascita di Villanova,41.8935085,12.4825526,"[""Accettato"", ""Contatti"", ""Form""]",,,"{""data"": ""22/11/2016"", ""descrizione"": ""Onlus pensata e creata per la rinascita del nostro amato paese Villanova di Accumoli (RI)."", ""email"": """", ""indirizzo"": ""Cordonata, Municipio Roma I, Roma, RM, LAZ, 00186, Italia"", ""lat"": ""41.8935085"", ""link"": ""https://www.facebook.com/villanovadiaccumolionlus/?ref=page_internal"", ""lon"": ""12.4825526"", ""nome"": ""Associazione Rinascita di Villanova"", ""tel"": ""349 378 7626""}","<pre><yamldata>nome: 'Associazione Rinascita di Villanova'
 tel: '349 378 7626'
 email: ''
