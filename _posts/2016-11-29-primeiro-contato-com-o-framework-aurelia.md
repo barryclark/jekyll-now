@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Primeiro Contato com Aurelia"
-date: 2016-11-17 13:22:59
+title: "Primeiro Contato com o Framework Aurelia"
+date: 2016-11-29 17:24:29
 author: wendell
-image: '/assets/img/'
-description: 'Tendo o primeiro contato com o Framework Aurelia'
+image:
+description: 'Conheça um pouco sobre o Framework Aurelia'
 tags:
 - javascript
 - framework
@@ -12,7 +12,7 @@ tags:
 - aurelia
 categories:
 - Frameworks JavaScript
-twitter_text: 'Tendo o primeiro contato com o Framework Aurelia'
+twitter_text: 'Conheça um pouco sobre o Framework Aurelia'
 ---
 
 ## Introdução
