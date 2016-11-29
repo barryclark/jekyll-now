@@ -141,7 +141,11 @@ function usingMethod(debts, method) {
 			numOpen = nowNumOpen;
 		}
 		
-		results.totalPaid = results.totalPaid + sumPayments(debts);	
+		if(typeof method !== 'undefined') {
+			results.totalPaid = results.totalPaid + totalPayment;
+		} else {
+			results.totalPaid = results.totalPaid + sumMinpayments(debts);
+		}
     	}
 	
 	if(month % 12 != 0) {
