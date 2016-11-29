@@ -33,7 +33,7 @@ Come to one of our meetups in [Athens](http://www.meetup.com/BlockchainGreece-0/
 - At a Bitcoin exchange that accepts debit or credit cards. An exchange that accepts Greek cards is [Coinbase](https://www.coinbase.com/) and charges 3.99%. Another exchange is [Circle](https://www.circle.com/). Some Greek banks do not allow their cards to be used at some Bitcoin exchanges.
 - <strike>At the [BTCGreece](https://www.btcgreece.com) exchange that accepts transfers at their Greek bank accounts.</strike>
 - From a private Bitcoin trader you can find on [Localbitcoins](https://localbitcoins.com/) or at [BuyBitcoin.gr](https://www.facebook.com/BuyBitcoin.gr). You can exchange Euros with them using any method you want, e.g. in person, via Paypal, Western Union, Piraeus Bank Instant Cash (Lefta Sto Lepto), bank transfer etc.
-- From the [BitcoinsGreece](https://bitcoinsgreece.com/) Bitcoin exchange that accepts cash at the EasyPay Piraeus Bank machines or via a deposit at their Piraeus Bank and Eurobank accounts.
+- From the [BitcoinsGreece](https://bitcoinsgreece.com/) Bitcoin exchange that accepts cash at the EasyPay Piraeus Bank machines or via a deposit at their Piraeus Bank and Eurobank accounts. They also accept deposits at a German bank.
 - From the [Chip-Chap](https://chip-chap.com/) Bitcoin exchange that accepts cash at the EasyPay Piraeus Bank machines or via a deposit at their Piraeus Bank account. They charge 5% over the [Kraken](https://www.kraken.com) exchange rate at the time of purchase, that can be a few hours after your deposit. Here are some sample instructions:
 
 	Use use the Chip-Chap Android app or we visit [https://web.chip-chap.com](https://web.chip-chap.com/) and select EasyPay. At this time the iOS app does not support EasyPay.
