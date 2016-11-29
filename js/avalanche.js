@@ -112,7 +112,7 @@ function usingMethod(debts, method) {
 	var totalPayment = sumMinpayments(debts);
 	
 	var results = {
-			balances: [['year', 'balance', 'minimum payment'],
+			balances: [['month', 'balance', 'minimum payment'],
 				  [0, sumBalances(debts), sumMinpayments(debts)]],
 			accounts: [['month','number of debts'],
 				   [0, numOpen]],
@@ -131,7 +131,7 @@ function usingMethod(debts, method) {
 		}
         		
 		if(month % 12 === 0) {
-			results.balances.push([month / 12, balance, sumMinpayments(debts)]);	
+			results.balances.push([month, balance, sumMinpayments(debts)]);	
 		}
 		
 		var nowNumOpen = totalAccounts(debts);
@@ -149,7 +149,7 @@ function usingMethod(debts, method) {
     	}
 	
 	if(month % 12 != 0) {
-		results.balances.push([month / 12, sumBalances(debts), sumMinpayments(debts)]);	
+		results.balances.push([month, sumBalances(debts), sumMinpayments(debts)]);	
 	}
 	
 	results.months = month;
