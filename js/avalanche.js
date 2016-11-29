@@ -145,7 +145,7 @@ function usingMethod(debts, method) {
 		}
 		
 		if(typeof method !== 'undefined') {
-			if(totalPayment > sumBalances(debts)) {
+			if(totalPayment < sumBalances(debts)) {
 				results.totalPaid = results.totalPaid + totalPayment;
 		        } else {
 				results.totalPaid = results.totalPaid + sumBalances(debts);
