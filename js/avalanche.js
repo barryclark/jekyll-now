@@ -216,8 +216,8 @@ function make(divString, results) {
 
     c3.generate({
         bindto: '#' + divString + '-balance-chart',
-        data:{x: 'year', rows:results.balances, type:'spline'},
-        axis:{x: {label: {text: 'year', position: 'outer-center'}},
+        data:{x: 'month', rows:results.balances, type:'spline'},
+        axis:{x: {label: {text: 'month', position: 'outer-center'}},
               y: {label: {text: 'dollars', position: 'outer-middle'}}}
     });
 	
