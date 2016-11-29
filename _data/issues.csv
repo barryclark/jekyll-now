@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1388,192044946,2016-11-29 08:09:03,2016-11-28 16:04:38,Azienda Usl Umbria n. 2 - Servizio per emergenza sisma,42.95888803264323,12.68721342086792,"[""Accettato"", ""Contatti"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""28/11/2016"", ""descrizione"": ""Qualunque problematica conseguente agli eventi sismici e relativa all\u2019erogazione dei servizi sanitari pu\u00f2 essere comunicata al n. 0742 3397419 e/o alla mail emergenza@uslumbria2.it."", ""email"": ""emergenza@uslumbria2.it"", ""indirizzo"": ""Nuovo Ospedale San Giovanni Battista, Via Monsignor Luigi Novarese, Sant'Eraclio, Foligno, PG, UMB, 06034, Italy"", ""lat"": ""42.95888803264323"", ""link"": ""http://www.uslumbria2.it/"", ""lon"": ""12.68721342086792"", ""nome"": ""Azienda Usl Umbria n. 2"", ""tel"": ""0742 3397419""}","<pre><yamldata>nome: 'Azienda Usl Umbria n. 2'
+tel: '0742 3397419'
+email: emergenza@uslumbria2.it
+descrizione: 'Qualunque problematica conseguente agli eventi sismici e relativa all’erogazione dei servizi sanitari può essere comunicata al n. 0742 3397419 e/o alla mail emergenza@uslumbria2.it.'
+indirizzo: 'Nuovo Ospedale San Giovanni Battista, Via Monsignor Luigi Novarese, Sant''Eraclio, Foligno, PG, UMB, 06034, Italy'
+lat: '42.95888803264323'
+lon: '12.68721342086792'
+link: 'http://www.uslumbria2.it/'
+data: 28/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1383,191859467,2016-11-27 12:45:08,2016-11-27 12:44:41,Comune di #Cascia: elenco aziende e produttori che vendono prodotti locali,,,"[""Accettato"", ""acquisto solidale"", ""Bollettino"", ""Sisma Ottobre""]",,,"{""data"": ""27/11/2016"", ""descrizione"": ""Sul sito del Comune di Cascia elenco delle Aziende, Produttori e Negozi del Comune di Cascia che vendono prodotti locali (elenco in continuo aggiornamento)."", ""link"": ""http://www.comune.cascia.pg.it/?p=8322"", ""titolo"": ""Comune di #Cascia: elenco aziende e produttori che vendono prodotti locali""}","<pre><yamldata>titolo: 'Comune di #Cascia: elenco aziende e produttori che vendono prodotti locali'
 descrizione: 'Sul sito del Comune di Cascia elenco delle Aziende, Produttori e Negozi del Comune di Cascia che vendono prodotti locali (elenco in continuo aggiornamento).'
 link: 'http://www.comune.cascia.pg.it/?p=8322'
