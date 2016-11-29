@@ -46,8 +46,12 @@ function avalanche(debts, method, totalPayment) {
 
 	while(snowball > 0) {
 		debts = getDebtsWithBalances(debts);
-		var avalanche = method(debts);
-		snowball = avalanche.payMore(snowball);	
+		if(debts.length > 0 ){
+			var avalanche = method(debts);
+			snowball = avalanche.payMore(snowball);	
+		} else {
+			snowball = 0;	
+		}
 	}
 }
 
