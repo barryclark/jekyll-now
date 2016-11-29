@@ -1,10 +1,14 @@
 function DebtProto() {
 	this.getMinPayment = function() {
+	    var payment;
+		
 	    if(this.minpaymenttype === 'percent') {
-			return Math.max(Math.round(this.balance * this.minpayment), 1);
+			payment = Math.max(Math.round(this.balance * this.minpayment), 1);
 	    } else {
-			return this.minpayment;
+			payment = this.minpayment;
 	    }
+	    
+	    return Math.min(payment, this.balance);
 	};
 	this.update = function() {
 	    this.balance = this.balance * (1 + this.rate / 12);
