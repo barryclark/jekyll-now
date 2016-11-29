@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1396,192402788,2016-11-29 21:21:35,2016-11-29 21:21:05,"Lo sciacallo di Facebook, così ""rubava"" le donazioni per i terremotati di Norcia",,,"[""Accettato"", ""Bollettino"", ""Bufale"", ""Facebook"", ""Sisma Ottobre""]",,,"{""data"": ""29/11/2016"", ""descrizione"": ""Un messaggio strappalacrime, la foto giusta del terremoto di Norcia e un Iban per raccogliere i fondi. Peccato che il conto corrente fosse il suo. Dopo lunghe indagini i carabinieri di Norcia lo hanno stanato e denunciato."", ""link"": ""http://www.perugiatoday.it/cronaca/terremoto-norcia-denuncia-sciacallo-facebook-truffa-carabinieri-denuncia-terremotati.html"", ""titolo"": ""Lo sciacallo di Facebook, cos\u00ec \""rubava\"" le donazioni per i terremotati di Norcia""}","<pre><yamldata>titolo: 'Lo sciacallo di Facebook, così ""rubava"" le donazioni per i terremotati di Norcia'
+descrizione: 'Un messaggio strappalacrime, la foto giusta del terremoto di Norcia e un Iban per raccogliere i fondi. Peccato che il conto corrente fosse il suo. Dopo lunghe indagini i carabinieri di Norcia lo hanno stanato e denunciato.'
+link: 'http://www.perugiatoday.it/cronaca/terremoto-norcia-denuncia-sciacallo-facebook-truffa-carabinieri-denuncia-terremotati.html'
+data: 29/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1395,192347302,2016-11-29 20:52:14,2016-11-29 17:28:45,A #Cascia famiglia che vive in una casetta cerca asciugatrice,42.7170082,13.0135022,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""asciugatrice"", ""data"": ""29/11/2016"", ""descrizione"": ""Siamo una famiglia che per ora vive in una casetta di legno di amici. Abbiamo un grosso problema: il freddo non ci permette di asciugare i panni e spesso ci troviamo in difficolt\u00e0. Un'asciugatrice ci risolverebbe il problema."", ""email"": ""caterina.fiordiani@alice.it"", ""immagine"": """", ""indirizzo"": ""Largo Monsignor Antonio Elemosina, Cascia, PG, UMB, 06043, Italia"", ""lat"": ""42.7170082"", ""link"": """", ""lon"": ""13.0135022"", ""tel"": ""3392750292""}","<pre><yamldata>tel: '3392750292'
 email: caterina.fiordiani@alice.it
 cosa: asciugatrice
@@ -7636,12 +7641,6 @@ data: 14/09/2016
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/353,177011387,2016-10-01 16:26:11,2016-09-14 20:26:10,"Strutture, Villaggi, Agriturismi Umbria",,,"[""Accettato"", ""Donazioni"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""Le strutture (Ecovillaggi, RIVE Rete Italiana Villaggi Ecologici e non, Agriturismi e simili) che vogliono mettersi a disposizione per ospitare gli sfollati del sisma possono inviare una mail a: prociv@regione.umbria.it e sour@regione.umbria.it con breve descrizione struttura, servizi a disposizione e numeri posti letto disponibili."", ""link"": """", ""titolo"": ""Strutture, Villaggi, Agriturismi Umbria""}","<pre><yamldata>titolo: 'Strutture, Villaggi, Agriturismi Umbria'
 descrizione: 'Le strutture (Ecovillaggi, RIVE Rete Italiana Villaggi Ecologici e non, Agriturismi e simili) che vogliono mettersi a disposizione per ospitare gli sfollati del sisma possono inviare una mail a: prociv@regione.umbria.it e sour@regione.umbria.it con breve descrizione struttura, servizi a disposizione e numeri posti letto disponibili.'
 link: ''
-data: 14/09/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/352,177010434,2016-10-01 16:26:19,2016-09-14 20:22:21,Associazione Uildm,,,"[""Accettato"", ""Donazioni"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""L'associazione si mette a disposizione delle persone con malattie neuromuscolari e con disabilit\u00e0 residenti nelle zone interessate dal terremoto."", ""link"": ""http://www.uildm.org/2016/08/24/uildm-vicina-alle-popolazioni-colpite-dal-sisma/"", ""titolo"": ""Associazione Uildm""}","<pre><yamldata>titolo: 'Associazione Uildm'
-descrizione: 'L''associazione si mette a disposizione delle persone con malattie neuromuscolari e con disabilità residenti nelle zone interessate dal terremoto.'
-link: 'http://www.uildm.org/2016/08/24/uildm-vicina-alle-popolazioni-colpite-dal-sisma/'
 data: 14/09/2016
 </yamldata></pre>
 ",open
