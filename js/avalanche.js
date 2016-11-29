@@ -122,7 +122,7 @@ function usingMethod(debts, method) {
 	
 	var month = 1;
 	
-	for(var balance = sumBalances(debts); balance > 0; balance = sumBalances(debts)) {
+	for(var balance = sumBalances(debts); balance > 0 && month <= 500; balance = sumBalances(debts), month++) {
 		
 		if(typeof method !== 'undefined') {
 			avalanche(debts, method, totalPayment);
@@ -141,13 +141,7 @@ function usingMethod(debts, method) {
 			numOpen = nowNumOpen;
 		}
 		
-		results.totalPaid = results.totalPaid + sumPayments(debts);
-		
-		month++;
-
-		if(month > 500) {
-		    break;
-		}
+		results.totalPaid = results.totalPaid + sumPayments(debts);	
     	}
 	
 	if(month % 12 != 0) {
@@ -263,20 +257,17 @@ $(document).ready(function() {
 	} else {
 		debts = new Array();
 		
-		var house = new Debt('mortgage', 150000, 0.03, 750, 'dollar');
-		var car = new Debt('car loan', 20000, 0.1, 250, 'dollar');
-		var creditcard1 = new Debt('credit card 1', 5000, 0.20, 0.04, 'percent');
-		var creditcard2 = new Debt('credit card 2', 100, 0.01, 0.04, 'percent');
-		debts = [house, car, creditcard1, creditcard2];
+		var creditcard1 = new Debt('credit card 1', 3000, 0.13, 0.04, 'percent');
+		var creditcard2 = new Debt('credit card 2', 8000, 0.16, 0.04, 'percent');
+		debts = [creditcard1, creditcard2];
 	}
     
-    for(var i = 0; i < debts.length; i++) {
-        var debt = debts[i];
-                
-        $('#debt-table').append(generateRow(debt));
-    }
-	
-    var results = getResults(debts);
+	for(var i = 0; i < debts.length; i++) {
+		var debt = debts[i];                
+		$('#debt-table').append(generateRow(debt));
+	}
+
+	var results = getResults(debts);
 	
 	make('highest-rate', results.highestRate);
 	make('lowest-balance', results.lowestBalance);
