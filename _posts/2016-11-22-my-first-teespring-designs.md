@@ -26,10 +26,10 @@ Without further ado, the shirts are:
 
 {% include social/twitter-facebook-share.html url="https://teespring.com/white-html-sarcasm-end-tag" text="White HTML Sarcasm T-Shirt" width="500px" %}
 
-[![White HTML Sarcasm T-Shirt](/images/teespring/white-sarcasm-shirt.png "White HTML Sarcasm T-Shirt")](https://teespring.com/new-black-html-sarcasm-end-ta)
+[![White HTML Sarcasm T-Shirt](/images/teespring/white-sarcasm-shirt.png "White HTML Sarcasm T-Shirt")](https://teespring.com/white-html-sarcasm-end-tag)
 
-## [Black HTML Sarcasm T-Shirt](https://teespring.com/black-html-sarcasm-end-tag)
+## [Black HTML Sarcasm T-Shirt](https://teespring.com/black-html-sarcasm-end-tag2)
 
-{% include social/twitter-facebook-share.html url="https://teespring.com/black-html-sarcasm-end-tag" text="Black HTML Sarcasm T-Shirt" width="500px" %}
+{% include social/twitter-facebook-share.html url="https://teespring.com/black-html-sarcasm-end-tag2" text="Black HTML Sarcasm T-Shirt" width="500px" %}
 
-[![Black HTML Sarcasm T-Shirt](/images/teespring/black-sarcasm-shirt.png "Black HTML Sarcasm T-Shirt")](https://teespring.com/black-html-sarcasm-end-tag)
+[![Black HTML Sarcasm T-Shirt](/images/teespring/black-sarcasm-shirt.png "Black HTML Sarcasm T-Shirt")](https://teespring.com/black-html-sarcasm-end-tag2)
