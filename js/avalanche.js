@@ -1,5 +1,4 @@
 function DebtProto() {
-	this.snowball = 0;
 	this.getMinPayment = function() {
 	    if(this.minpaymenttype === 'percent') {
 			return Math.max(Math.round(this.balance * this.minpayment), 1);
@@ -7,31 +6,26 @@ function DebtProto() {
 			return this.minpayment;
 	    }
 	};
-	this.getPayment = function() {
-		if(this.makeMin || this.payment === null) {
-			this.payment =  this.getMinPayment();
-		}
-		
-		return this.payment;
-	};
 	this.update = function() {		
-	    this.balance = this.balance * (1 + this.rate / 12) - this.getPayment();
+	    this.balance = this.balance * (1 + this.rate / 12) - this.getMinPayment();
 	    this.balance = Math.round(this.balance);
-		
-	    if(this.balance < this.payment) {
-			if(this.getminpaymenttype === 'dollar' && this.balance < this.minpayment) {
-		    	this.minpayment = this.balance;
-			}
-			this.snowball = this.payment - this.balance;
-			this.payment = this.balance;
-	    }
-		
+				
 	    if(this.balance <= 0) {
 			this.balance = 0;
 			this.minpayment = 0;
-			this.snowball = this.payment;
-			this.payment = 0;
 	    }
+	};
+	this.payMore = function(amount) {
+	    var extra = 0;
+	    this.balance = this.balance - amount;
+		
+	    if(this.balance <= 0) {
+		extra = - balance;
+		this.balance = 0;
+		this.minpayment = 0;
+	    }
+		
+	    return extra;
 	};
 }
 
@@ -40,26 +34,29 @@ function Debt(name, balance, rate, minpayment, minpaymenttype) {
 	this.balance = balance;
 	this.rate = rate;
 	this.payment = minpaymenttype === 'dollar' ? minpayment : minpayment * balance;
-	this.makeMin = true;
 	this.minpayment = minpayment;
 	this.minpaymenttype = minpaymenttype;
 	$.extend( this, new DebtProto() );
 }
 
-function avalanche(debts, method) {
-    var snowballs = debts.reduce(function(p, c) {return p + c.snowball;}, 0);
-    
-    if(snowballs > 0) {
-        var toSnowball = debts.filter(function(debt) {return debt.snowball == 0;});
-        
-        debts.forEach(function(debt) {debt.snowball = 0;});
-        
-        if(toSnowball.length > 0) {
-            var avalanche = method(toSnowball);
-            avalanche.payment = avalanche.payment + snowballs;
-	    avalanche.makeMin = false;
-        }
-    }
+function avalanche(debts, method, totalPayment) {	
+	var snowball = totalPayment - sumMinpayments(debts);
+	
+	debts.forEach(function(debt) { debt.update(); });
+
+	debts = getDebtsWithBalances(debts);
+	var avalanche = method(debts);
+	snowball = avalanche.payMore(snowball);
+
+	while(snowball > 0) {
+		debts = getDebtsWithBalances(debts);
+		avalanche = method(debts);
+		snowball = avalanche.payMore(snowball);	
+	}
+}
+
+function getDebtsWithBalances(debts) {
+    return debts.filter(function(debt) {return debt.balance > 0;});	
 }
 	
 function sumBalances(debts) {
@@ -68,10 +65,6 @@ function sumBalances(debts) {
 	
 function sumMinpayments(debts) {
     return debts.reduce(function(p, c) {return p + c.getMinPayment();}, 0);
-}
-
-function sumPayments(debts) {
-    return debts.reduce(function(p, c) {return p + c.getPayment();}, 0);
 }
 
 function totalAccounts(debts) {
@@ -116,10 +109,7 @@ function highestRate(debts) {
 
 function usingMethod(debts, method) {
 	var numOpen = totalAccounts(debts);
-	
-	if(typeof method !== 'undefined') {
-		method(debts).makeMin = false;
-	}
+	var totalPayment = sumMinpayments(debts);
 	
 	var results = {
 			balances: [['year', 'balance', 'minimum payment'],
@@ -133,9 +123,13 @@ function usingMethod(debts, method) {
 	var month = 1;
 	
 	for(var balance = sumBalances(debts); balance > 0; balance = sumBalances(debts)) {
-        
-		debts.forEach(function(debt) {debt.update();});
 		
+		if(typeof method !== 'undefined') {
+			avalanche(debts, method, totalPayment);
+		} else {
+			debts.forEach(function(debt) { debt.update(); });
+		}
+        		
 		if(month % 12 === 0) {
 			results.balances.push([month / 12, balance, sumMinpayments(debts)]);	
 		}
@@ -148,11 +142,6 @@ function usingMethod(debts, method) {
 		}
 		
 		results.totalPaid = results.totalPaid + sumPayments(debts);
-		
-        
-		if(typeof method !== 'undefined') {
-			avalanche(debts, method);
-		}
 		
 		month++;
 
