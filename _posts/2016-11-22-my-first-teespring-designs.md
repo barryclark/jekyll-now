@@ -24,7 +24,7 @@ Without further ado, the shirts are:
 
 ## [White HTML Sarcasm T-Shirt](https://teespring.com/new-black-html-sarcasm-end-ta)
 
-{% include social/twitter-facebook-share.html url="https://teespring.com/new-black-html-sarcasm-end-ta" width="500px" %}
+{% include social/twitter-facebook-share.html url="https://teespring.com/white-html-sarcasm-end-tag" width="500px" %}
 
 [![White HTML Sarcasm T-Shirt](/images/teespring/white-sarcasm-shirt.png "White HTML Sarcasm T-Shirt")](https://teespring.com/new-black-html-sarcasm-end-ta)
 
