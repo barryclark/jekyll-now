@@ -8224,6 +8224,17 @@ immagine: ''
 data: 27/08/2016
 </yamldata></pre>
 ",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/296,176940161,2016-09-22 16:37:52,2016-09-14 15:32:25,"Ravenna, RA - Conventello House",44.42132,12.18868,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""27/08/2016"", ""descrizione"": ""Conventello House apre le porte. C'\u00e8 un campeggio con servizi e delle tende, il tempo \u00e8 buono possiamo ospitare tranquillamente chi ha bisogno."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": ""44.42132"", ""link"": """", ""lon"": ""12.18868"", ""tel"": """"}","<pre><yamldata>tel: ''
+email: ''
+descrizione: 'Conventello House apre le porte. C''è un campeggio con servizi e delle tende, il tempo è buono possiamo ospitare tranquillamente chi ha bisogno.'
+indirizzo: ''
+lat: '44.42132'
+lon: '12.18868'
+link: ''
+immagine: ''
+data: 27/08/2016
+</yamldata></pre>
+",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/295,176887436,2016-10-01 16:24:29,2016-09-14 11:54:18,Al via le trasmissioni di Radio Amatrice (99.100),,,"[""Accettato"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""Da domani alle 17, dagli studi di via Farchioni 8 a Rieti, inizieranno le trasmissioni di Radio Amatrice sui 99.100, stazione radiofonica dedicata all'informazione da e per Amatrice. L'iniziativa \u00e8 stata realizzata grazie al contributo della emittente Radio Dolce Musica. Ad Amatrice e Accumoli sar\u00e0 possibile ascoltare le comunicazioni utili in questa fase di emergenza. "", ""link"": ""http://www.ilmessaggero.it/rieti/rieti_terremoto_amatrice_radio-1964542.html"", ""titolo"": ""Domani al via le trasmissioni di Radio Amatrice (99.100)""}","<pre><yamldata>titolo: 'Domani al via le trasmissioni di Radio Amatrice (99.100)'
 descrizione: 'Da domani alle 17, dagli studi di via Farchioni 8 a Rieti, inizieranno le trasmissioni di Radio Amatrice sui 99.100, stazione radiofonica dedicata all''informazione da e per Amatrice. L''iniziativa è stata realizzata grazie al contributo della emittente Radio Dolce Musica. Ad Amatrice e Accumoli sarà possibile ascoltare le comunicazioni utili in questa fase di emergenza. '
 link: 'http://www.ilmessaggero.it/rieti/rieti_terremoto_amatrice_radio-1964542.html'
