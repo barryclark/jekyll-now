@@ -1,12 +1,12 @@
 ---
-published: false
+published: true
 id: 11216
 title: 'Cómo conseguir una pega en USA - Parte 2: La triste realidad chilena'
 date: 2016-12-01T00:00:00+00:00
 author: ovalenzuela
 layout: post
 guid: http://ovalenzuela.com/?p=11216
-permalink: /2016/10/pega-en-usa-parte-2-triste-realidad-chilena.html
+permalink: /2016/12/pega-en-usa-parte-2-triste-realidad-chilena.html
 categories:
   - General
   - Noticias Destacadas
@@ -58,4 +58,6 @@ los defienda para que les den otra oportunidad.
 * Algunos que me preguntan si puedo "mover los hilos adentro" para que lo contraten sin pasar la entrevista.
 Fucking really?
 
-### Capacidades vs preparacion
+## Capacidades vs preparación
+
+Realmente puedo entender aquellas personas que confían 100% en sus capacidades y experiencia, pero creo que la preparación es todo. Si vas a postular a una empresa grande e ir a las ligas mayores, entonces antes de comenzar, ponte a pensar, que es lo que se necesita, lo que debes aprender, lo que debes practicar, y comprométete, sera sacrificio, tiempo, estudio, dedicación, pero al final vendrá la recompensa.

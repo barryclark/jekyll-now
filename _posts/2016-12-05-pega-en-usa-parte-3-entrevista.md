@@ -6,7 +6,7 @@ date: 2016-12-05T00:00:00+00:00
 author: ovalenzuela
 layout: post
 guid: http://ovalenzuela.com/?p=51216
-permalink: /2016/10/pega-en-usa-parte-3-entrevista.html
+permalink: /2016/12/pega-en-usa-parte-3-entrevista.html
 categories:
   - General
   - Noticias Destacadas
