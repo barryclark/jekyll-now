@@ -6,7 +6,7 @@ author: David Nadeau
 
 The first Innodata web service allows annotating cross references to law and rule books inside legal documents. 
 
-The Machine Learning engine behind the scene is a Deep Neural Network trained on a few public collections of rules such as X and Y. 
+The Machine Learning engine behind the scene is a Deep Neural Network trained on a few public collections of legal documents. 
 
 
 ## Authentication
