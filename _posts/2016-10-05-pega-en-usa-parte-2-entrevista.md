@@ -21,7 +21,7 @@ tags:
   - visa
 ---
 
-Dado que el post anterior fue de utilidad para varias personas que buscaban mejorar su "Resume" antes de presentarlo en oportunidades de trabajo en el extranjero, quiero continuar con mi serie de post. Esta vez hablando sobre la entrevista, en particular como conseguir una y como prepararse. Pero antes, deseo compartir mi opinión en base a mi experiencia con otros "postulantes" que he intentado ayudar en mi país.
+Dado que el post anterior fue de utilidad para varias personas que buscaban mejorar su "Resume" antes de presentarlo en oportunidades de trabajo en el extranjero, quiero continuar con mi serie de post. Esta vez hablando sobre mi experiencia y opinión con algunos "postulantes" que he intentado ayudar.
 
 ## Ojo con las empresas o personas que "enchulan" tu curriculum
 
@@ -34,31 +34,30 @@ Finalmente, si van a gastar us$1.000 en mejorar su CV, sigan mi recomendación y
 
 ## Desarrolladores inmaduros, sin experiencia o poco atrevidos?
 
-Durante los ultimos meses, varias top tech han ido a Chile en busca de SDEs, SDMs, o PMs. Asi es como he podido observar un patron frecuente:
-* Cuando se publica la oferta, muchos manifiestan interes, pero menos del 20% de quienes lo hacen realmente envian un CV.
-* De quienes envian el CV solo el 14% tiene el perfil o la experiencia para postular, pero de ese 14%, solo 11% continua el proceso, realizando los 
-cambios sugeridos a su CV, pero la mayoria de quienes hacen los cambios y continuan llegan a la fase de la entrevista.
+Durante los últimos meses, varias veces Amazon y otras top tech han ido a buscar profesionales a Chile, y mientras he publicado las ofertas he podido observar un patrón frecuente:
+* Cuando se publica la oferta, muchos manifiestan interés, pero menos del 20% envían un CV para ser evaluado, por ejemplo de cada 100 personas que manifestaron interés, solo 20 envían un CV.
+* De esos 20 CVs que he recibido, solo 14 personas tienen el perfil o la experiencia para postular.
+* Generalmente, yo les proveo con recomendaciones para mejorar o ajustar el CV al perfil que postularan, pero solo 10 continua el proceso, realizando los cambios sugeridos a su CV. Gracias a la experiencia que tenemos haciendo cambios y mejorando el CV, casi la totalidad son invitados a participar en una entrevista.
 
-Aqui veo otro patron, que realmente me preocupa y me entristese.
-* Del 10% que llego a la entrevista, menos del 3% realmente se prepara. He visto casos de gente que llega casi sin siquiera haber abierto un libro 
+Y es aquí donde veo un patrón que realmente me preocupa y me entristese:
+
+* De los 10 que llego a la entrevista, solo 3 personas se prepararon realmente. He visto casos de gente que llega casi sin siquiera haber abierto un libro 
 o practicado antes de la entrevista, pensando que sera evaluado solo por su hoja de vida o por lo "buena onda".
 
-Seamos francos, yo estoy 
-totalmente oxidado en cuanto a programacion y entiendo que muchos con varios anos de experiencia les pase lo mismo, pero por lo menos deberian 
-leer, investigar y prepararse, en vez de hacer perder el tiempo a los entrevistadores. Sino, mejor ni te presentes.
+Seamos francos, yo estoy totalmente oxidado en cuanto a programación y entiendo que muchos con varios años de experiencia les pase lo mismo, pero por lo menos deberían leer, investigar y prepararse, en vez de hacer perder el tiempo a los entrevistadores. Osea, si no estas completamente comprometido, entonces mejor ni te presentes.
 
-Y esto es en serio, algunas anecdotas que he visto:
+Para ir al detalle, quiero compartir algunas anécdotas que he visto:
 
-* Personas que van a la entrevista, y antes de entrar a la evaluacion le preguntan a otros postulantes: "Oye, y tu sabes que hacemos aqui?"
-* Personas que van de corbata a una entrevista de empresa de USA, se estudiaron todos los examenes psicologicos, y piensan que en la pizarra les 
-* pediran dibujar un "hombre bajo la lluvia".
-* Personas que llegan a preguntar por sueldos a los entrevistadores tecnicos.
-* Desarrolladores senior de Java que llegan a desarrollar sus soluciones en C para que el entrevistador piense "que el es mas cool".
-* Super ingenieros que llegan de sabiondos y que no pasan la barra tecnica. Y dado que no se llevaron bien con los entrevistadores, no hay quien 
+* Postulantes que van a la entrevista, y antes de entrar a la evaluación le preguntan a otros postulantes: "Oye, y tu sabes que hacemos aquí?".
+* Algunos que van de corbata a una entrevista de empresa de USA, se estudiaron todos los exámenes psicológicos, y piensan que en la pizarra les pedirán dibujar un "hombre bajo la lluvia".
+* Postulantes que llegan a preguntar por sueldos a los entrevistadores técnicos.
+* Desarrolladores senior de Java que llegan a desarrollar sus soluciones en C para que el entrevistador piense "que saben mas y son COOL".
+* Super ingenieros que llegan de sabiondos y que no pasan la barra técnica. Y dado que no se llevaron bien con los entrevistadores al ser pedantes, no hay quien 
 los defienda para que les den otra oportunidad.
-* Personas que llegan tarde o que se quieren ir temprano.
+* Personas que llegan tarde o que se quieren ir temprano de la entrevista.
+* Algunos que me preguntan si puedo "mover los hilos adentro" para que lo contraten sin pasar la entrevista.
+Fucking really?
 
-### Estadisticas sobre los ultimos eventos
 ### Capacidades vs preparacion
 
 ## Como llamar la atencion de un reclutador
