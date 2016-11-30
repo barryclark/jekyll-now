@@ -23,6 +23,10 @@ Qui di seguito la mappa degli alloggi disponibili registrati ad oggi nei nostri 
 </div>
 
 <script>
+function urldecode(str) {
+   return decodeURIComponent((str+'').replace(/\+/g, '%20'));
+}
+
 var houseMarker = L.AwesomeMarkers.icon({
 icon: 'home',
 prefix: 'fa',
@@ -32,7 +36,7 @@ var markerList=[];
 {% for member in filteredissues %}
 {% if member.issue.labels contains "Alloggi" %}
 {% if member.issue.lat != blank and member.issue.lon != blank %}
-markerList.push([{{member.issue.lat}}, {{member.issue.lon}}, "{{member.title|uri_escape}}", "/issues/{{ member.number }}"]);
+markerList.push([{{member.issue.lat}}, {{member.issue.lon}}, "{{member.title|url_encode}}", "/issues/{{ member.number }}", "{{member.issue.image}}"]);
 {% endif %}
 {% endif %}
 {% endfor %}
@@ -56,13 +60,18 @@ for (var i=0; i<markerList.length; i++) {
         var lon = markerList[i][1];
         var popupText = markerList[i][2];
         var popupURL = markerList[i][3];
+        var popupIMG = markerList[i][4];
 
         if (!isNaN(lat) && !isNaN(lon)) {
                 var markerLocation = new L.LatLng(lat, lon);
                 var marker = new L.Marker(markerLocation, { icon: houseMarker} );
                 map.addLayer(marker);
 
-                marker.bindPopup("<a href=\"" + popupURL + "\">" + decodeURI(popupText) + "</a>");
+                if(popupIMG) {
+                        marker.bindPopup("<a href=\"" + popupURL + "\">" + urldecode(popupText) + "</a><br><img src=\""+popupIMG+"\" />");
+                } else {
+                        marker.bindPopup("<a href=\"" + popupURL + "\">" + urldecode(popupText) + "</a>");
+                }
 
                 sumLat += lat;
                 sumLon += lon;
