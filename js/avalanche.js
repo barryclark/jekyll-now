@@ -3,7 +3,7 @@ function DebtProto() {
 	    var payment;
 		
 	    if(this.minpaymenttype === 'percent') {
-			payment = Math.max(Math.round(this.balance * this.minpayment), 1);
+			payment = Math.max(Math.round(this.balance * this.minpayment), 5);
 	    } else {
 			payment = this.minpayment;
 	    }
