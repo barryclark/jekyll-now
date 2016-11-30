@@ -21,23 +21,16 @@ tags:
   - visa
 ---
 
-Dado que el post anterior fue de utilidad para varios para mejorar su "Resume" antes de presentarlo en oportunidades de trabajo en el extranjero,
-quiero continuar con mi serie de post, esta vez hablando sobre la entrevista, en particular como conseguir una y como prepararse. Pero antes
-deseo compartir una opinion muy personal en base a mi experiencia con "postulantes" en mi pais.
+Dado que el post anterior fue de utilidad para varias personas que buscaban mejorar su "Resume" antes de presentarlo en oportunidades de trabajo en el extranjero, quiero continuar con mi serie de post. Esta vez hablando sobre la entrevista, en particular como conseguir una y como prepararse. Pero antes, deseo compartir mi opinión en base a mi experiencia con otros "postulantes" que he intentado ayudar en mi país.
 
 ## Ojo con las empresas o personas que "enchulan" tu curriculum
 
-He visto muchos casos de personas que realmente quieren conseguir trabajo en una top tech, y han terminado en manos de scammers quienes cobran 
-muchisimo dinero por "enchular" su CV y ojo que he visto CVs "enchulados" por Coaches, psicologos laborales, profesores de lenguistica, etc. que 
-dejan los "enchulamientos" listos para ser presentados en el club de la comedia. No, no digo que todos sean poco efectivos, pero al menos si 
-pediras ayuda para mejorar tu CV usa tu buen juicio y pide ayuda a quien ya haya pasado por el proceso, o alguien que tenga experienca como reclutador 
-para una top tech. 
+He visto muchos casos de personas que realmente quieren conseguir trabajo en una "top tech", y han terminado en manos de scammers quienes cobran mucho dinero por "enchular" el CV y ojo que he visto CVs "enchulados" por Coaches, psicólogos laborales, profesores de lingüística, etc. que prometen dejar los "enchulamientos" listos para ser, aunque por los CV enchulados que he leído, estos estan listos para ser presentados en el club de la comedia. No, no digo que todos sean poco efectivos, pero al menos si necesitas ayuda para mejorar tu CV, entonces usa tu buen juicio y pide ayuda a quien ya haya pasado por el proceso y este trabajando en una top tech o consulta con alguien que realmente tenga experiencia como reclutador para una top tech.
 
-Entiendo que por mucha buena intencion que tenga una reclutadora que trabajaba consiguiendo tecnicos de soporte, probablemente no 
-tendra la experiencia y conocimiento para mejorar tu CV para ser presentado en Google. Y ojo, por mucho que respeto a los PSicologos, casi la mayoria 
-de las top tech no tienen pruebas psicologicas o similares, sino solo de inteligencia, lo mismo aplica al CV. Por lo que si van a gastar us$1.000 en 
-mejorar su CV, sigan mi recomendacion y compren los libros que recomiendo mas abajo y busquen a algun amigo o conocido que trabaje en una top tech, 
-inviten un par de cervezas y pidan ayuda a ellos, les aseguro que no gastaran mas de us$50 entre cervezas y los libros.
+Osea, por mucha buena intención que tenga una reclutadora que trabajaba consiguiendo técnicos de soporte, probablemente no tendrá la experiencia y/o conocimiento para mejorar tu CV con la idea de ser presentado en Google, Amazon, Microsoft, Apple, etc. Y ojo, por mucho que respeto a los Psicólogos, casi la mayoría 
+de las top tech NO TIENEN PRUEBAS PSICOLÓGICAS, ni de manchas, colores, dibujar hombres bajo la lluvia o similares, sino solo de inteligencia y conocimientos técnicos y justamente en esto debes enfocar tu CV. 
+
+Finalmente, si van a gastar us$1.000 en mejorar su CV, sigan mi recomendación y compren los libros que sugiero mas abajo y/o busquen a algún amigo o conocido que trabaje en una top tech, invítenle un par de cervezas y les aseguro que no gastaran mas de us$50 para obtener una buena oportunidad de conseguir el trabajo que quieres.
 
 ## Desarrolladores inmaduros, sin experiencia o poco atrevidos?
 
