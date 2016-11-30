@@ -16,7 +16,7 @@ Sign up on our [developer portal](https://developer.innodatalabs.com/) to get yo
 
 ## Overview
 
-<image>
+![API data flow](https://github.com/innodatalabs/citable-reference/blob/master/docs/citable-reference-api.png "API diagram")
 
 ### 1. Post a document
 
@@ -62,23 +62,23 @@ Here's a sample CURL call:
       --url 'http://api.innodatalabs.com/reference/my-file.htm' \
       --header 'user-key: <your_key>' \
 
-This call returns immediatly but **processing can take a lot of time!**. 
+This call returns immediatly but **processing can take time!**. 
 
 This call returns the name of output file and the URL to get progress information :
 
-	{"output_filename": "my-file.htm.reference.xml", "progress_uri": "/reference/status/"}
+	{"output_filename": "<output_file>", "progress_uri": "/reference/status/<task_id>"}
   
 ### 3- Get Status information
 
 See the current progress and ETA for reference extraction completion.
 
 Perform a GET operation at:
-> http://api.innodatalabs.com/reference/status/
+> http://api.innodatalabs.com/reference/status/{task_id}
 
 Here's a sample CURL call:
 
     curl --request GET \
-      --url 'http://api.innodatalabs.com/reference/status/' \
+      --url 'http://api.innodatalabs.com/reference/status/xyz-123' \
       --header 'user-key: <your_key>' \
 
 This call returns the number of steps and current step (e.g., step 10 of 12):
@@ -88,9 +88,9 @@ This call returns the number of steps and current step (e.g., step 10 of 12):
 ### 4- Fetch the output file (once operation completed)
 
 Perform a GET operation at:
-> http://api.innodatalabs.com/documents/output/my-file.htm.reference.xml
+> http://api.innodatalabs.com/documents/output/{output_file}
 
-Where {file} is the filename you want to read (e.g., my-file.htm.reference.xml)
+Where {output_file} is the filename you want to read (e.g., my-file.htm.reference.xml)
 
 Here's a sample CURL call:
 
