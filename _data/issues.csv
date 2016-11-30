@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1397,192405785,2016-11-30 14:10:21,2016-11-29 21:33:12,"Donazione di prodotti per l'igiene e la casa, vestiti, giocattoli, panettoni e calze della befana",,,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form"", ""Sisma Ottobre""]",Milestone(number=41),,"{""cosa"": ""Donazione"", ""data"": ""29/11/2016"", ""descrizione"": ""Doniamo prodotti per l''igiene della casa e della persona, abbigliamento da uomo donna e bambini, coperte, giocattoli, pandori panettoni e calze per la festa della befana. Siamo toscane, scendiamo il giorno 11 dicembre prossimo. Chiunque abbia bisogno del nostro aiuti mi contatti saremo contentissime di raggiungervi ! Un forte abbraccio"", ""email"": ""valentina3008@tiscali.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3476379599""}","<pre><yamldata>tel: '3476379599'
+email: valentina3008@tiscali.it
+cosa: Donazione
+descrizione: 'Doniamo prodotti per l''''igiene della casa e della persona, abbigliamento da uomo donna e bambini, coperte, giocattoli, pandori panettoni e calze per la festa della befana. Siamo toscane, scendiamo il giorno 11 dicembre prossimo. Chiunque abbia bisogno del nostro aiuti mi contatti saremo contentissime di raggiungervi ! Un forte abbraccio'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 29/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1396,192402788,2016-11-29 21:22:03,2016-11-29 21:21:05,"Lo sciacallo di Facebook, così ""rubava"" le donazioni per i terremotati di Norcia",,,"[""Accettato"", ""Bollettino"", ""Bufale"", ""Facebook"", ""Sisma Ottobre""]",,,"{""data"": ""29/11/2016"", ""descrizione"": ""Un messaggio strappalacrime, la foto giusta del terremoto di Norcia e un Iban per raccogliere i fondi. Peccato che il conto corrente fosse il suo. Dopo lunghe indagini i carabinieri di Norcia lo hanno stanato e denunciato."", ""link"": ""http://www.perugiatoday.it/cronaca/terremoto-norcia-denuncia-sciacallo-facebook-truffa-carabinieri-denuncia-terremotati.html"", ""titolo"": ""Lo sciacallo di Facebook, cos\u00ec \""rubava\"" le donazioni per i terremotati di Norcia""}","<pre><yamldata>titolo: 'Lo sciacallo di Facebook, così ""rubava"" le donazioni per i terremotati di Norcia'
 descrizione: 'Un messaggio strappalacrime, la foto giusta del terremoto di Norcia e un Iban per raccogliere i fondi. Peccato che il conto corrente fosse il suo. Dopo lunghe indagini i carabinieri di Norcia lo hanno stanato e denunciato.'
 link: 'http://www.perugiatoday.it/cronaca/terremoto-norcia-denuncia-sciacallo-facebook-truffa-carabinieri-denuncia-terremotati.html'
@@ -1243,17 +1254,6 @@ data: 10/11/2016
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1216,188633669,2016-11-25 23:52:10,2016-11-10 22:17:26,I produttori Slow Food nelle #Marche e nel #Lazio che è possibile sostenere ,,,"[""Accettato"", ""acquisto solidale"", ""Bollettino"", ""Sisma Ottobre"", ""Twitter""]",,,"{""data"": ""10/11/2016"", ""descrizione"": ""Sul sito di Slow Food elenco in continuo aggiornamento dei produttori dei Presidi Slow Food nelle Marche e nel Lazio dai quali \u00e8 possibile acquistare i prodotti per sostenere le economie e la ripresa delle attivit\u00e0 nei luoghi del terremoto."", ""link"": ""http://www.slowfood.it/terremoto-aiutiamo-le-aziende-colpite-scegliamo-i-loro-prodotti/"", ""titolo"": ""Acquisti solidali: i produttori Slow Food nella #Marche e nel #Lazio""}","<pre><yamldata>titolo: 'Acquisti solidali: i produttori Slow Food nella #Marche e nel #Lazio'
 descrizione: 'Sul sito di Slow Food elenco in continuo aggiornamento dei produttori dei Presidi Slow Food nelle Marche e nel Lazio dai quali è possibile acquistare i prodotti per sostenere le economie e la ripresa delle attività nei luoghi del terremoto.'
 link: 'http://www.slowfood.it/terremoto-aiutiamo-le-aziende-colpite-scegliamo-i-loro-prodotti/'
-data: 10/11/2016
-</yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1215,188632405,2016-11-10 22:41:46,2016-11-10 22:11:21,"""Il futuro non crolla"". Le magliette dell'Università di #Camerino per sostenere la ricostruzione",,,"[""Accettato"", ""Bollettino"", ""Raccolte Fondi"", ""Sisma Ottobre"", ""Twitter""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""\""il futuro non crolla\"". Le magliette dell'Universit\u00e0 di #Camerino per sostenere la ricostruzione"", ""data"": ""10/11/2016"", ""descrizione"": ""L\u2019Universit\u00e0 di Camerino ha attivato la vendita online delle magliette #ilfuturononcrolla per raccogliere fondi a sostegno del progetto volto alla edificazione di collegi per studenti Unicam meritevoli."", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""https://www.ilfuturononcrolla.it/"", ""postale"": """"}","<pre><yamldata>chi: '""il futuro non crolla"". Le magliette dell''Università di #Camerino per sostenere la ricostruzione'
-descrizione: 'L’Università di Camerino ha attivato la vendita online delle magliette #ilfuturononcrolla per raccogliere fondi a sostegno del progetto volto alla edificazione di collegi per studenti Unicam meritevoli.'
-intestazione: ''
-iban: ''
-bic: ''
-postale: ''
-causale: ''
-link: 'https://www.ilfuturononcrolla.it/'
-email: ''
 data: 10/11/2016
 </yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1215,188632405,2016-11-10 22:41:46,2016-11-10 22:11:21,"""Il futuro non crolla"". Le magliette dell'Università di #Camerino per sostenere la ricostruzione",,,"[""Accettato"", ""Bollettino"", ""Raccolte Fondi"", ""Sisma Ottobre"", ""Twitter""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""\""il futuro non crolla\"". Le magliette dell'Universit\u00e0 di #Camerino per sostenere la ricostruzione"", ""data"": ""10/11/2016"", ""descrizione"": ""L\u2019Universit\u00e0 di Camerino ha attivato la vendita online delle magliette #ilfuturononcrolla per raccogliere fondi a sostegno del progetto volto alla edificazione di collegi per studenti Unicam meritevoli."", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""https://www.ilfuturononcrolla.it/"", ""postale"": """"}","<pre><yamldata>chi: '""il futuro non crolla"". Le magliette dell''Università di #Camerino per sostenere la ricostruzione'
