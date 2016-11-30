@@ -21,7 +21,7 @@ tags:
   - visa
 ---
 
-Dado que el post anterior le sirvio a varios y permitio a varios mejorar su "Resume" para presentarlo en oportunidades de trabajo en el extranjero,
+Dado que el post anterior fue de utilidad para varios para mejorar su "Resume" antes de presentarlo en oportunidades de trabajo en el extranjero,
 quiero continuar con mi serie de post, esta vez hablando sobre la entrevista, en particular como conseguir una y como prepararse. Pero antes
 deseo compartir una opinion muy personal en base a mi experiencia con "postulantes" en mi pais.
 
