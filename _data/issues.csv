@@ -9094,7 +9094,7 @@ email: ''
 data: 13/09/2016
 </yamldata></pre>
 ",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/218,176775017,2016-09-13 23:25:50,2016-09-13 23:17:30,UNITALSI Progetto Bambini,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""UNITALSI Progetto Bambini"", ""data"": ""13/09/2016"", ""descrizione"": ""\""Unitalsi Progetto Bambini presso Monte dei Paschi di Siena \"""", ""email"": """", ""iban"": ""IT08F 01030 03298 000001152663"", ""intestazione"": ""Unitalsi Progetto Bambini"", ""link"": ""http://www.corriere.it/scuola/primaria/16_agosto_26/terremoto-al-via-scuola-solidale-raccolta-fondi-bambini-amatrice-c0196278-6b66-11e6-8bdd-2a860cc068c8.shtml?refresh_ce-cp"", ""postale"": ""48019863""}","<pre><yamldata>chi: 'UNITALSI Progetto Bambini'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/218,176775017,2016-11-30 23:13:18,2016-09-13 23:17:30,UNITALSI Progetto Bambini,,,"[""Accettato"", ""Bambini"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""UNITALSI Progetto Bambini"", ""data"": ""13/09/2016"", ""descrizione"": ""\""Unitalsi Progetto Bambini presso Monte dei Paschi di Siena \"""", ""email"": """", ""iban"": ""IT08F 01030 03298 000001152663"", ""intestazione"": ""Unitalsi Progetto Bambini"", ""link"": ""http://www.corriere.it/scuola/primaria/16_agosto_26/terremoto-al-via-scuola-solidale-raccolta-fondi-bambini-amatrice-c0196278-6b66-11e6-8bdd-2a860cc068c8.shtml?refresh_ce-cp"", ""postale"": ""48019863""}","<pre><yamldata>chi: 'UNITALSI Progetto Bambini'
 descrizione: '""Unitalsi Progetto Bambini presso Monte dei Paschi di Siena ""'
 intestazione: 'Unitalsi Progetto Bambini'
 iban: 'IT08F 01030 03298 000001152663'
