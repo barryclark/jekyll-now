@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1398,192430230,2016-11-30 14:11:29,2016-11-29 23:18:54,A #Visso cercasi con urgenza un camper,,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""Camper"", ""data"": ""29/11/2016"", ""descrizione"": ""Abbiamo bisogno urgentemente di un camper a Visso per mio marito che lavora l\u00ec. Noi siamo alloggiati a Porto Recanati ma lui non pu\u00f2 fare avanti e indietro troppo dispendioso. Aiutateci."", ""email"": ""silviavagni@vodafone.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3479119735""}","<pre><yamldata>tel: '3479119735'
+email: silviavagni@vodafone.it
+cosa: Camper
+descrizione: 'Abbiamo bisogno urgentemente di un camper a Visso per mio marito che lavora lì. Noi siamo alloggiati a Porto Recanati ma lui non può fare avanti e indietro troppo dispendioso. Aiutateci.'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 29/11/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1397,192405785,2016-11-30 14:10:21,2016-11-29 21:33:12,"Donazione di prodotti per l'igiene e la casa, vestiti, giocattoli, panettoni e calze della befana",,,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form"", ""Sisma Ottobre""]",Milestone(number=41),,"{""cosa"": ""Donazione"", ""data"": ""29/11/2016"", ""descrizione"": ""Doniamo prodotti per l''igiene della casa e della persona, abbigliamento da uomo donna e bambini, coperte, giocattoli, pandori panettoni e calze per la festa della befana. Siamo toscane, scendiamo il giorno 11 dicembre prossimo. Chiunque abbia bisogno del nostro aiuti mi contatti saremo contentissime di raggiungervi ! Un forte abbraccio"", ""email"": ""valentina3008@tiscali.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3476379599""}","<pre><yamldata>tel: '3476379599'
 email: valentina3008@tiscali.it
 cosa: Donazione
@@ -4545,12 +4556,6 @@ data: 02/10/2016
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/736,180501698,2016-10-02 08:43:52,2016-10-02 08:23:25,Firmato l'accordo per la cassa integrazione in edilizia ad Amatrice,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""02/10/2016"", ""descrizione"": ""ANAEPA Confartigianato Edilizia Rieti, FILCA CISL, FILLEA CGIL, FENEAL UIL hanno firmato, presso l\u2019ufficio di Amatrice dell\u2019Associazione in piazza del Donatore, l\u2019Accordo per la Cassa Integrazione Guadagni Ordinaria per evento sismico, a favore delle imprese del comparto delle costruzioni. Usufruiranno della misura di sostegno al reddito 18 dipendenti di 12 imprese edili che hanno sede nel territorio di Amatrice e Accumoli. La cassa integrazione decorrer\u00e0 dal 24 agosto 2016."", ""link"": ""http://www.ilgiornaledirieti.it/leggi_articolo_f2.asp?id_news=44149"", ""titolo"": ""Firmato l'accordo per la cassa integrazione in edilizia ad Amatrice""}","<pre><yamldata>titolo: 'Firmato l''accordo per la cassa integrazione in edilizia ad Amatrice'
 descrizione: 'ANAEPA Confartigianato Edilizia Rieti, FILCA CISL, FILLEA CGIL, FENEAL UIL hanno firmato, presso l’ufficio di Amatrice dell’Associazione in piazza del Donatore, l’Accordo per la Cassa Integrazione Guadagni Ordinaria per evento sismico, a favore delle imprese del comparto delle costruzioni. Usufruiranno della misura di sostegno al reddito 18 dipendenti di 12 imprese edili che hanno sede nel territorio di Amatrice e Accumoli. La cassa integrazione decorrerà dal 24 agosto 2016.'
 link: 'http://www.ilgiornaledirieti.it/leggi_articolo_f2.asp?id_news=44149'
-data: 02/10/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/735,180501497,2016-10-02 08:42:31,2016-10-02 08:18:34,#Amatrice Assistenza odontoiatrica gratuita agli sfollati,,,"[""Accettato"", ""Bollettino"", ""Facebook"", ""Notizie Utili""]",,,"{""data"": ""02/10/2016"", ""descrizione"": ""E\u2019 attivo presso il Posto di assistenza socio sanitaria di Amatrice il presidio di assistenza odontoiatrica gratuita per gli sfollati del terremoto allestito e presidiato dai dentisti volontari di Fondazione \u201cAssociazione nazionale dentisti italiani\u201d (Andi) onlus. Nell\u2019odonto-ambulanza, un\u2019unit\u00e0 mobile appositamente attrezzata, ogni luned\u00ec, mercoled\u00ec e sabato, dalle 10 alle 13 e dalle 15 alle 18, chi ne avr\u00e0 bisogno potr\u00e0 ricevere cure odontoiatriche gratuite tra cui terapie di tipo conservativo, estrazioni, piccola chirurgia e protesica mobile."", ""link"": ""http://agensir.it/quotidiano/2016/9/30/terremoto-andi-ad-amatrice-assistenza-odontoiatrica-gratuita-agli-sfollati/"", ""titolo"": ""Ad Amatrice assistenza odontoiatrica gratuita agli sfollati""}","<pre><yamldata>titolo: 'Ad Amatrice assistenza odontoiatrica gratuita agli sfollati'
-descrizione: 'E’ attivo presso il Posto di assistenza socio sanitaria di Amatrice il presidio di assistenza odontoiatrica gratuita per gli sfollati del terremoto allestito e presidiato dai dentisti volontari di Fondazione “Associazione nazionale dentisti italiani” (Andi) onlus. Nell’odonto-ambulanza, un’unità mobile appositamente attrezzata, ogni lunedì, mercoledì e sabato, dalle 10 alle 13 e dalle 15 alle 18, chi ne avrà bisogno potrà ricevere cure odontoiatriche gratuite tra cui terapie di tipo conservativo, estrazioni, piccola chirurgia e protesica mobile.'
-link: 'http://agensir.it/quotidiano/2016/9/30/terremoto-andi-ad-amatrice-assistenza-odontoiatrica-gratuita-agli-sfollati/'
 data: 02/10/2016
 </yamldata></pre>
 ",open
