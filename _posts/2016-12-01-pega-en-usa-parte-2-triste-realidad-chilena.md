@@ -51,7 +51,7 @@ o practicado antes de la entrevista, pensando que sera evaluado solo por su hoja
 
 Seamos francos, yo estoy totalmente oxidado en cuanto a programación y entiendo que muchos con varios años de experiencia les pase lo mismo, pero por lo menos deberían leer, investigar y prepararse, en vez de hacer perder el tiempo a los entrevistadores. Osea, si no estas completamente comprometido, entonces mejor ni te presentes.
 
-Para ir al detalle, quiero compartir algunas anécdotas que he visto:
+Para ir al detalle, quiero compartir algunas anécdotas de lo que he visto:
 
 * Postulantes que van a la entrevista, y antes de entrar a la evaluación le preguntan a otros postulantes: "Oye, y tu sabes que hacemos aquí?".
 
