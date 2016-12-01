@@ -16,7 +16,7 @@ Sign up on our [developer portal](https://developer.innodatalabs.com/) to get yo
 
 ## Overview
 
-![API data flow](https://github.com/innodatalabs/citable-reference/blob/master/docs/citable-reference-api.png "API diagram")
+![API data flow](../images/citable-reference-api.png "API diagram")
 
 ### 1. Post a document
 
