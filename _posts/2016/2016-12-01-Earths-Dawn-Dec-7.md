@@ -4,7 +4,7 @@ title: "Earth's Dawn Hits Steam on December 7th"
 description: "Earth’s Dawn takes place after the Earth was decimated by an invasion from an alien race known to humans as E.B.E. Time to fight back."
 category: video games
 featured: earthsdawn.png
-amazonterm: "steam"
+amazonterm: "earth's dawn"
 tags: [video games, earth's dawn, rising star games, oneoreight]
 author: Rob Kalajian
 ---
