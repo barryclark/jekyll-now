@@ -4,14 +4,14 @@ title: Legal Document Cross References
 author: David Nadeau
 ---
 
-The first Innodata web service allows annotating cross references to law and rule books inside legal documents. 
+The first Innodata web service allows cross references to law and rule books within legal documents to be annotated. 
 
-The Machine Learning engine behind the scene is a Deep Neural Network trained on a few public collections of legal documents. 
+The machine learning engine behind the scenes is a deep neural network that has been trained on a few public collections of legal documents. 
 
 
 ## Authentication
 
-Sign up on our [developer portal](https://developer.innodatalabs.com/) to get your api key.
+Sign up on our [developer portal](https://developer.innodatalabs.com/) to get your API key.
 
 
 ## Overview
@@ -35,7 +35,7 @@ Here's a sample CURL call (assuming there is a local file named 'my-file.htm' in
       --header 'content-type: application/octet-stream' \
       --data-binary "@OLM_002.htm"
 
-Alternatively, the same can be achieved by passing the file content string directly
+Alternatively, the same can be achieved by passing the file content string directly:
 
     curl --request POST \
       --url http://api.innodatalabs.com/documents/input/my-file.htm \
@@ -43,7 +43,7 @@ Alternatively, the same can be achieved by passing the file content string direc
       --header 'user-key: <your_key>' \
       --data '<html><body><h1>1. Hello</h1><p>a. Ola</p></body></html>'
 
-This call returns JSON response with filename and number of bytes:
+This call returns a JSON response with filename and number of bytes:
 
 	{"input_filename": "my-file.htm", "bytes_accepted": 56001}
   
@@ -54,7 +54,7 @@ Perform a GET operation at:
 > http://api.innodatalabs.com/reference/{file}
 
 Where:
-* {file} is the filename saved at step 1
+* {file} is the filename saved in step 1
 
 Here's a sample CURL call:
 
@@ -62,9 +62,9 @@ Here's a sample CURL call:
       --url 'http://api.innodatalabs.com/reference/my-file.htm' \
       --header 'user-key: <your_key>' \
 
-This call returns immediatly but **processing can take time!**. 
+This call returns immediatly, but **processing can take time!**. 
 
-This call returns the name of output file and the URL to get progress information :
+This call returns the name of output file and the URL to get progress information:
 
 	{"output_filename": "<output_file>", "progress_uri": "/reference/status/<task_id>"}
   
@@ -81,7 +81,7 @@ Here's a sample CURL call:
       --url 'http://api.innodatalabs.com/reference/status/xyz-123' \
       --header 'user-key: <your_key>' \
 
-This call returns the number of steps and current step (e.g., step 10 of 12):
+This call returns the number of steps, as well as the current step (e.g., step 10 of 12):
 
   {"progress": 10, "steps": 12, "completed": false}
 
@@ -90,7 +90,7 @@ This call returns the number of steps and current step (e.g., step 10 of 12):
 Perform a GET operation at:
 > http://api.innodatalabs.com/documents/output/{output_file}
 
-Where {output_file} is the filename you want to read (e.g., my-file.htm.reference.xml)
+Where {output_file} is the filename you want to read (e.g., my-file.htm.reference.xml).
 
 Here's a sample CURL call:
 
