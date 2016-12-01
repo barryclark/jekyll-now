@@ -1,0 +1,269 @@
+/* main styles */
+* {
+	box-sizing: border-box;
+	font-size: 16px;
+	font-family: open sans, sans-serif;
+}
+body, html {
+	margin: 0;
+	padding: 0;
+	/* 
+	 * considering smallest common screen size is 1024x768
+	 * and that this is the desktop site
+	 */
+	min-height: 700px;
+	min-width: 1000px;
+}
+body {
+	padding-top: 150px;
+	height: auto;
+}
+
+/* animations */
+@keyframes blink {
+	0%	{ color: #eeeeee; }
+	1%	{ color: transparent; }
+	50%	{ color: transparent; }
+	51%	{ color: #eeeeee; }
+	100% { color: #eeeeee; }
+}
+@keyframes loadAnimationFirstHalf {
+  0% { transform: rotate(0deg); opacity: 1; }
+  50% { transform: rotate(180deg); opacity: 0.5; }
+  100% { transform: rotate(180deg); opacity: 0; }
+}
+@keyframes loadAnimationSecondHalf {
+  from { transform: rotate(0deg); opacity: 0.5; }
+  to { transform: rotate(180deg); opacity: 0; }
+}
+
+/* other general tag styles */
+a {
+	text-decoration: none;
+	border-bottom: 1px dotted black;
+	outline: none;
+}
+/* need to tweak these header values */
+h1 {
+	font-size: 2em;
+}
+h2 {
+	font-size: 1.5em;
+}
+h3 {
+	font-size: 1.2em;
+}
+h4 {
+	font-size: 1em;
+}
+h5 {
+	font-size: 0.8em;
+}
+h6 {
+	font-size: 0.5em;
+} 
+hr {
+	height: 1px;
+	border: none;
+	background-image: linear-gradient(to right, transparent, #444444, transparent);
+	margin: 50px 0;
+}
+p {
+	line-height: 22px;
+	text-align: justify;
+	margin: 20px 0;
+}
+
+/* classes */
+.animate {
+	transition: all .2s;
+}
+.code {
+	font-family: courier new, monospace;
+}
+.noSelect {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+
+/* specific element styles */
+span#script {
+	display: none;
+}
+/* header styles */
+div#header {
+	height: 150px;
+	width: 100%;
+	background-color: #222222;
+	position: absolute;
+	top: 0;
+}
+div#title {
+	height: 100px;
+	line-height: 100px;
+	font-size: 40px;
+	font-family: courier new;
+	color: #eeeeee;
+	padding: 0 40px;
+	cursor: default;
+}
+div#title::before {
+	content: "~$ ";
+	color: #666666;
+}
+div#title::after {
+	content: "\2005\2589";
+	animation: blink 2s infinite;
+	animation-delay: 3s;
+}
+div#title.noDelay::after {
+	animation-delay: 0s;
+}
+nav#links {
+	height: 50px;
+}
+nav#links.fixed {
+	width: 100%;
+	position: fixed;
+	z-index: 2;
+	top: 0;
+}
+nav#links > a {
+	width: 25%;
+	float: left;
+	text-align: center;
+	border: none;
+	line-height: 50px;
+	font-size: 20px;
+	color: #eeeeee;
+	font-family: courier new;
+	overflow: hidden;
+	position: relative;
+	background-color: #222222;
+	transition: background-color 1s;
+}
+nav#links > a::before {
+	content: "cd ../";
+	display: inline-block;
+	text-decoration: none;
+	color: #666666;
+}
+nav#links > a:hover {
+	text-decoration: underline;
+}
+nav#links > a.currentPage {
+	font-weight: bold;
+	background-color: #333333;
+}
+nav#links > a.currentPage::before {
+	content: "~/";
+}
+nav#links > a.currentPage::after {
+	content: "$";
+	display: inline-block;
+	text-decoration: none;
+	padding-left: 0px;
+	color: #666666;
+}
+nav#links > a.currentPage:hover {
+	text-decoration: none;
+}
+div.ripple {
+	position: absolute;
+	background-color: white;
+	opacity: 0.5;
+	border-radius: 100%;
+}
+
+/* main page */
+div#container {
+	padding: 40px;
+}
+img#introductionImage {
+	position: absolute;
+}
+div#introduction {
+	position: relative;
+	width: calc(100% + 80px);
+	left: -40px;
+	top: -40px;
+	overflow: hidden;
+}
+div#introductionText {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.75);
+	padding: 20px;
+}
+div#introductionText > h1 {
+	font-size: 50px;
+	margin: 0 0 20px 0;
+}
+div#introductionText > p {
+	margin: 0;
+	text-align: center;
+}
+div.carouselButton {
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
+	background-color: rgba(255, 255, 255, 0.5);
+	cursor: pointer;
+	position: absolute;
+	top: 25px;
+}
+div.carouselButton:hover {
+	opacity: 0.75;
+}
+div.carouselButton.currentImage {
+	background-color: transparent;
+}
+div.loadAnimation {
+  border-radius: 100%;
+}
+div.loadAnimationMask {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  clip: rect(0, 50px, 50px, 25px);
+}
+div.loadAnimationMask.left {
+  position: absolute;
+  clip: rect(0, 25px, 50px, 0);
+}
+div.loadAnimationFill {
+  width: 100%;
+  height: 100%;
+  background-color: darkgrey;
+  position: absolute;
+  clip: rect(0, 25px, 50px, 0);
+  animation: loadAnimationFirstHalf 5s linear 1 forwards;
+}
+div.loadAnimationFill.left {
+  position: absolute;
+  clip: rect(0, 50px, 50px, 25px);
+  animation: loadAnimationSecondHalf 2.5s linear 1 forwards;
+  animation-delay: 2.5s;
+}
+div.loadAnimationOuter {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: white;
+  transition: all .2s;
+  opacity: 0.5;
+}
+div.loadAnimationOuter:hover {
+  opacity: 0.9;
+}
+div.loadAnimationContent {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+
+}

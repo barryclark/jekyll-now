@@ -2,17 +2,27 @@
 layout: default
 ---
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
-
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
+<div id="container">
+	<div id="introduction">
+		<img id="introductionImage" src="img/carousel/0.png" />
+		<div id="introductionText">
+			<h1 class="code"></h1>
+			<p></p>
+		</div>
+	</div>
+	<h1>Dummy Text</h1>
+	<h2>This is to show how content will be displayed, and to see how scrolling will work.</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mattis non nunc imperdiet accumsan. Maecenas eget diam et nisi hendrerit rhoncus eu in lectus. Ut ultrices ut tortor in pretium. Proin interdum fermentum libero ut condimentum. Donec eu tincidunt erat, ac viverra orci. Donec felis leo, euismod vel consectetur vitae, vestibulum eu purus. Etiam consequat nisl a lectus pretium, ac lobortis est sagittis.</p>
+	<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur porttitor vitae nulla vitae fermentum. Etiam ultrices augue vel elit euismod, sit amet tristique mauris lacinia. Nam eget erat quis lorem dignissim volutpat ac eget sapien. Nullam vel porttitor ipsum. Curabitur suscipit mauris tellus, in eleifend urna hendrerit in. Aenean sit amet ante faucibus, posuere lacus nec, pulvinar tortor. Quisque pulvinar fringilla velit, quis tristique nunc laoreet nec. Pellentesque aliquam sagittis ultrices.</p>
+	<p>Aenean dictum vitae tellus ac molestie. Praesent posuere lorem quis varius dapibus. Sed quis facilisis eros, id placerat turpis. Maecenas convallis lacus quis elit euismod pharetra. Duis malesuada dui lacus. Mauris iaculis placerat sapien, quis dapibus sem. Morbi interdum magna et nisi aliquet, ut malesuada quam feugiat. Etiam finibus egestas eros. Morbi quis ornare nibh. Vestibulum sed eleifend est. Sed erat eros, gravida ut consectetur vel, varius sit amet leo. Morbi tincidunt augue molestie, varius velit aliquam, ultrices magna.</p>
+	<p>Nulla facilisi. Sed id ullamcorper nibh. Suspendisse mollis ligula turpis, quis lacinia nisi vulputate vitae. Nam risus ipsum, interdum eget nisl sit amet, molestie luctus lorem. Donec sodales consectetur orci, eu malesuada lacus auctor in. Vestibulum eget commodo quam, a sagittis urna. Etiam lacinia, neque quis maximus luctus, sem dui malesuada urna, vitae dignissim magna ante non nibh. Integer sed vulputate quam.</p>
+	<p>Cras semper, sapien semper iaculis suscipit, dolor odio posuere nisl, at sagittis nisi purus et magna. Suspendisse faucibus bibendum lorem, vel pretium ante efficitur non. Nam ullamcorper erat nisi, eget malesuada magna vehicula sed. Nunc feugiat purus sit amet nulla ultrices ullamcorper. Aenean vitae lacus augue. Fusce a odio sit amet lectus pretium mollis ut at odio. Cras quis nulla libero. Aliquam aliquam finibus mauris ac suscipit. Nullam ultrices dolor eget mauris congue, vitae tincidunt risus lobortis. Suspendisse nec consectetur quam.</p>
+	<hr />
+	<h1>Next Updates</h1>
+	<h2>Potential ideas for upcoming updates</h2>
+	<p>Animations in tab display.</p>
+	<p>Footer?</p>
+	<p>Adding more content.</p>
+	<script src="/main.js"></script>
+	<span id="script">/main.js</span>
 </div>
