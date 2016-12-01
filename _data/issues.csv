@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1402,192864914,2016-12-01 14:51:40,2016-12-01 14:43:17,"""Tesori dell'Appennino"": pacchi natalizi per sostenere i produttori della zona di #Camerino colpiti dal sisma",43.1357641,13.0683092,"[""Accettato"", ""acquisto solidale"", ""Facebook"", ""Form"", ""Sisma Ottobre""]",,http://i.imgur.com/FbaCDal.png,"{""cosa"": ""\""Tesori dell'Appennino\"": pacchi natalizi per sostenere i produttori della zona di #Camerino colpiti dal sisma"", ""data"": ""01/12/2016"", ""descrizione"": ""Pacchi natalizi con vari prodotti locali, in sostegno dei produttori della zona di Camerino (Mc) e del progetto di ricostruzione dell'Associazione \""Iononcrollo\""."", ""email"": """", ""immagine"": ""http://i.imgur.com/FbaCDal.png"", ""indirizzo"": ""Piazza Cavour, Camerino, MC, Marche, 62032, Italia"", ""lat"": ""43.1357641"", ""link"": ""https://www.facebook.com/tesoriappennino/"", ""lon"": ""13.0683092"", ""tel"": """"}","<pre><yamldata>tel: ''
+email: ''
+cosa: '""Tesori dell''Appennino"": pacchi natalizi per sostenere i produttori della zona di #Camerino colpiti dal sisma'
+descrizione: 'Pacchi natalizi con vari prodotti locali, in sostegno dei produttori della zona di Camerino (Mc) e del progetto di ricostruzione dell''Associazione ""Iononcrollo"".'
+indirizzo: 'Piazza Cavour, Camerino, MC, Marche, 62032, Italia'
+lat: '43.1357641'
+lon: '13.0683092'
+link: 'https://www.facebook.com/tesoriappennino/'
+immagine: 'http://i.imgur.com/FbaCDal.png'
+data: 01/12/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1401,192688054,2016-11-30 21:43:45,2016-11-30 21:42:34,Commissione Europea: 30 milioni all'Italia per l'emergenza sisma,,,"[""Accettato"", ""Bollettino"", ""Notizie Utili"", ""Sisma Ottobre"", ""Twitter""]",,,"{""data"": ""30/11/2016"", ""descrizione"": ""Il presidente della Commissione europea ha annunciato che nei prossimi 7 giorni all'Italia sar\u00e0 erogato, attraverso il Fondo Europeo di Solidariet\u00e0, un primo finanziamento di 30 milioni di euro per l'emergenza sisma."", ""link"": ""http://europa.eu/rapid/press-release_IP-16-4095_en.htm"", ""titolo"": ""Commissione Europea: 30 milioni all'Italia per l'emergenza sisma""}","<pre><yamldata>titolo: 'Commissione Europea: 30 milioni all''Italia per l''emergenza sisma'
 descrizione: 'Il presidente della Commissione europea ha annunciato che nei prossimi 7 giorni all''Italia sarà erogato, attraverso il Fondo Europeo di Solidarietà, un primo finanziamento di 30 milioni di euro per l''emergenza sisma.'
 link: 'http://europa.eu/rapid/press-release_IP-16-4095_en.htm'
