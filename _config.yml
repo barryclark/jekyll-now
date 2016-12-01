@@ -3,13 +3,13 @@
 #
 
 # Name of your site (displayed in the header)
-name: Your Name
+name: injenuity
 
 # Short bio or description (displayed in the header)
-description: Web Developer from Somewhere
+description: provocative product management
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
+avatar: https://avatars3.githubusercontent.com/u/2328397?v=3&u=045be592fa013a3b3cb811391d0828106ef381b5&s=140
 
 #
 # Flags below are optional
@@ -18,15 +18,15 @@ avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/je
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email:
+  email: edtechjen@gmail.com
   facebook:
   flickr:
-  github: barryclark/jekyll-now
+  github: injenuity
   instagram:
-  linkedin:
+  linkedin: jenniferdalby
   pinterest:
-  rss: # just type anything here for a working RSS icon
-  twitter: jekyllrb
+  rss: subscribe
+  twitter: injenuity
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
