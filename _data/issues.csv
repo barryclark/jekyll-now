@@ -8919,6 +8919,18 @@ email: ''
 data: 14/09/2016
 </yamldata></pre>
 ",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/238,176847421,2016-09-14 08:40:33,2016-09-14 08:36:42,Arci,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Terremoto Centro Italia"", ""chi"": ""Arci"", ""data"": ""14/09/2016"", ""descrizione"": ""Donazioni raccolte da Arci presso Banca Popolare Etica"", ""email"": """", ""iban"": ""IT 36 A 0501803200 000000000041"", ""intestazione"": ""Arci"", ""link"": ""http://www.arci.it/blog/ambiente/archivio/ambiente/emergenza-terremoto-centro-italia/"", ""postale"": """"}","<pre><yamldata>chi: Arci
+descrizione: 'Donazioni raccolte da Arci presso Banca Popolare Etica'
+intestazione: Arci
+iban: 'IT 36 A 0501803200 000000000041'
+bic: ''
+postale: ''
+causale: 'Terremoto Centro Italia'
+link: 'http://www.arci.it/blog/ambiente/archivio/ambiente/emergenza-terremoto-centro-italia/'
+email: ''
+data: 14/09/2016
+</yamldata></pre>
+",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/237,176847247,2016-09-14 08:40:26,2016-09-14 08:35:46,3e32 / CaseMatte - Appello per L'Aquila - Asilo Occupato,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": ""CCRTIT2T84A"", ""causale"": """", ""chi"": ""3e32 / CaseMatte - Appello per L'Aquila - Asilo Occupato"", ""data"": ""14/09/2016"", ""descrizione"": ""AIUTI IN BASE ALLE ESIGENZE E COINVOLGIMENTO DIRETTO E IMMEDIATO DEGLI SFOLLATI In questa primissima fase a chi ci ha chiesto come aiutare rispondiamo che le richieste che riceviamo al momento dai territori colpiti cambiano di giorno in giorno e riusciamo a soddisfarle entro le 24 ore successive. Per questo riteniamo utile per ora raccogliere donazioni in denaro con cui far fronte a tali necessit\u00e0. Per velocizzare la raccolta fondi abbiamo optato per utilizzare il conto gi\u00e0 esistente dell'associazione"", ""email"": """", ""iban"": ""IT22Y0501803200000000141992"", ""intestazione"": ""L'Aquila in Comune"", ""link"": ""https://www.facebook.com/3e32LAquila/photos/a.291424847645.190035.275377592645/10155093265087646/?type=3&theater"", ""postale"": """"}","<pre><yamldata>chi: '3e32 / CaseMatte - Appello per L''Aquila - Asilo Occupato'
 descrizione: 'AIUTI IN BASE ALLE ESIGENZE E COINVOLGIMENTO DIRETTO E IMMEDIATO DEGLI SFOLLATI In questa primissima fase a chi ci ha chiesto come aiutare rispondiamo che le richieste che riceviamo al momento dai territori colpiti cambiano di giorno in giorno e riusciamo a soddisfarle entro le 24 ore successive. Per questo riteniamo utile per ora raccogliere donazioni in denaro con cui far fronte a tali necessità. Per velocizzare la raccolta fondi abbiamo optato per utilizzare il conto già esistente dell''associazione'
 intestazione: 'L''Aquila in Comune'
