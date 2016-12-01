@@ -71,3 +71,14 @@ Fucking really?
 ## Capacidades vs preparación
 
 Realmente puedo entender aquellas personas que confían 100% en sus capacidades y experiencia, pero creo que la preparación es todo. Si vas a postular a una empresa grande e ir a las ligas mayores, entonces antes de comenzar, ponte a pensar, que es lo que se necesita, lo que debes aprender, lo que debes practicar, y comprométete, sera sacrificio, tiempo, estudio, dedicación, pero al final vendrá la recompensa.
+
+<p style="text-align: justify;">
+  Próximamente:
+</p>
+
+<li style="text-align: justify;">
+  Parte 3: Cómo conseguir una entrevista
+</li>
+<li style="text-align: justify;">
+  Parte 4: Lo que debes hacer antes, durante y después de una entrevista.
+</li>

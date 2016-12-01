@@ -107,8 +107,11 @@ tags:
 </p>
 
 <li style="text-align: justify;">
-  Cómo conseguir una entrevista
+  <a href="/2016/12/pega-en-usa-parte-2-triste-realidad-chilena.html">Parte 2: La triste realidad chilena</a>
 </li>
 <li style="text-align: justify;">
-  Lo que debes hacer antes, durante y después de una entrevista.
+  Parte 3: Cómo conseguir una entrevista
+</li>
+<li style="text-align: justify;">
+  Parte 4: Lo que debes hacer antes, durante y después de una entrevista.
 </li>
