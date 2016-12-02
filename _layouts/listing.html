@@ -15,7 +15,7 @@
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300,400italic,700italic,300italic' rel='stylesheet' type='text/css'>
     <meta name="author" content="{{ site.name }}" />
-    <meta name="description" content="{{ site.description }}">
+    {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
 
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
