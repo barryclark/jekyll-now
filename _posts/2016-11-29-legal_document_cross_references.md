@@ -21,7 +21,8 @@ Sign up on our [developer portal](https://developer.innodatalabs.com/) to get yo
 ### 1. Post a document
 
 Perform a POST operation at:
-> http://api.innodatalabs.com/documents/input/{file}
+
+    http://api.innodatalabs.com/documents/input/{file}
 
 Where:
 * {file} is the filename you want to create (e.g., my-file.htm)
@@ -51,7 +52,8 @@ This call returns a JSON response with filename and number of bytes:
 ### 2- Annotate the file
 
 Perform a GET operation at:
-> http://api.innodatalabs.com/reference/{file}
+
+    http://api.innodatalabs.com/reference/{file}
 
 Where:
 * {file} is the filename saved in step 1
@@ -73,7 +75,8 @@ This call returns the name of output file and the URL to get progress informatio
 See the current progress and ETA for reference extraction completion.
 
 Perform a GET operation at:
-> http://api.innodatalabs.com/reference/status/{task_id}
+
+    http://api.innodatalabs.com/reference/status/{task_id}
 
 Here's a sample CURL call:
 
@@ -88,7 +91,8 @@ This call returns the number of steps, as well as the current step (e.g., step 1
 ### 4- Fetch the output file (once operation completed)
 
 Perform a GET operation at:
-> http://api.innodatalabs.com/documents/output/{output_file}
+
+    http://api.innodatalabs.com/documents/output/{output_file}
 
 Where {output_file} is the filename you want to read (e.g., my-file.htm.reference.xml).
 
