@@ -8536,6 +8536,18 @@ email: ''
 data: 14/09/2016
 </yamldata></pre>
 ",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/272,176857515,2016-09-14 09:25:32,2016-09-14 09:24:01,Comune di Amandola,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": ""BCITITMM"", ""causale"": ""Chiese Amandola e Beni Culturali Amandola"", ""chi"": ""Comune di Amandola"", ""data"": ""14/09/2016"", ""descrizione"": ""Conto per ricevere le donazioni per la ricostruzione dei beni culturali"", ""email"": """", ""iban"": ""IT 61X03069 69360100000046001"", ""intestazione"": """", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1764952897105627/"", ""postale"": ""15204639""}","<pre><yamldata>chi: 'Comune di Amandola'
+descrizione: 'Conto per ricevere le donazioni per la ricostruzione dei beni culturali'
+intestazione: ''
+iban: 'IT 61X03069 69360100000046001'
+bic: BCITITMM
+postale: '15204639'
+causale: 'Chiese Amandola e Beni Culturali Amandola'
+link: 'https://www.facebook.com/groups/1758670357733881/permalink/1764952897105627/'
+email: ''
+data: 14/09/2016
+</yamldata></pre>
+",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/271,176857171,2016-10-01 16:19:53,2016-09-14 09:22:27,ANCI Toscana,,,"[""Accettato"", ""Form"", ""Notizie Utili"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""ANCI Toscana"", ""data"": ""14/09/2016"", ""descrizione"": ""#ToscanaperlaRicostruzione pagina sul sito di ANCI Toscana dove vengono raccolte tutte le iniziative dei Comuni toscani in sostegno delle popolazioni colpite dal terremoto"", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""http://www.ancitoscana.it/component/k2/603-terremoto-una-pagina-ad-hoc-per-le-iniziative-dei-comuni-toscani.html"", ""postale"": """"}","<pre><yamldata>chi: 'ANCI Toscana'
 descrizione: '#ToscanaperlaRicostruzione pagina sul sito di ANCI Toscana dove vengono raccolte tutte le iniziative dei Comuni toscani in sostegno delle popolazioni colpite dal terremoto'
 intestazione: ''
