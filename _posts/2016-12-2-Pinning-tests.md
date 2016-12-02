@@ -9,7 +9,7 @@ The process of conducting a pinning test is the following:
 
 1. Create a new branch for your change.
 2. Capture everything that the existing program is doing. If it's a data retrieval operation, that could mean converting and then concatenating all the output into a JSON string. If it's writing to a data store, then prior to every write operation, log the command that's getting sent to the external store. Basically you need evidence of anything of importance that's happening in the chunk of code that you want to change and that will still have to occur post-code-change.
-3. Save that output to a file.
+3. Save that output to a file as a snapshot of pre-change behavior.
 4. Make your refactoring changes.
 5. Do the same thing as #2 and #3 with the new code.
 6. Do a diff between the file generated in #3 (pre-refactoring) and #5 (the new code)
