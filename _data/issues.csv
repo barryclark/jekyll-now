@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1407,193130023,2016-12-02 14:34:17,2016-12-02 14:33:44,Regione #Lazio: apre a #Rieti l'Ufficio per la Ricostruzione,,,"[""Accettato"", ""Bollettino"", ""Contatti"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""02/12/2016"", ""descrizione"": ""Inaugurato a Rieti, in via Cintia 87, l'Ufficio speciale per la Ricostruzione della Regione Lazio. Qui i cittadini potranno e dovranno depositare tutte le domande per i danni lievi o impegnativi. L'ufficiosi occuper\u00e0 della progettazione degli edifici pubblici, curer\u00e0 le pratiche dei rimborsi e dar\u00e0 i'ok alle richieste presentate. Nelle prossime settimane \u00e8 stata annunciata anche l'apertura di una sede ad Accumoli, una ad Amatrice e una terza a Posta per tutti gli altri Comuni della Regione. Per contattare l'Ufficio di Rieti: numero verde 800900707, email info@ricostruzionelazio.it"", ""link"": ""http://www.regione.lazio.it/rl/futuroinricostruzione/"", ""titolo"": ""Regione #Lazio: apre a #Rieti l'Ufficio per la Ricostruzione""}","<pre><yamldata>titolo: 'Regione #Lazio: apre a #Rieti l''Ufficio per la Ricostruzione'
+descrizione: 'Inaugurato a Rieti, in via Cintia 87, l''Ufficio speciale per la Ricostruzione della Regione Lazio. Qui i cittadini potranno e dovranno depositare tutte le domande per i danni lievi o impegnativi. L''ufficiosi occuperà della progettazione degli edifici pubblici, curerà le pratiche dei rimborsi e darà i''ok alle richieste presentate. Nelle prossime settimane è stata annunciata anche l''apertura di una sede ad Accumoli, una ad Amatrice e una terza a Posta per tutti gli altri Comuni della Regione. Per contattare l''Ufficio di Rieti: numero verde 800900707, email info@ricostruzionelazio.it'
+link: 'http://www.regione.lazio.it/rl/futuroinricostruzione/'
+data: 02/12/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1406,193072889,2016-12-02 14:00:34,2016-12-02 09:41:01,A #Cingoli (Mc) serve con urgenza un container ,,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""CONTAINER"", ""data"": ""02/12/2016"", ""descrizione"": ""il terremoto mi ha distrutto casa e struttura ricettiva. Mi occupo da diversi anni della riabilitazione di cavalli e cani per la LAV e la Protezione Animali quindi per me, che dedico la vita a loro, non \u00e8 pensabile lasciarli incustoditi e quindi mi preparo ai disagi che mi comporter\u00e0 il passare l\u2019inverno vicina a loro. Il container mi permetterebbe anche di poter recuperare le cose che ho in casa e che altrimenti andrebbero sicuramente perse visto che il tetto \u00e8 aperto, entra l\u2019acqua e probabilmente non sopporter\u00e0 la neve che potr\u00e0 cadere. Mi tiene in piedi sono il pensiero di poter ricominciare un giorno, la mia vita!! Vi prego se potete di sostenere questo pensiero. tel francesca (cell. 3404829219)"", ""email"": ""vailucia@hotmail.it"", ""immagine"": null, ""indirizzo"": null, ""lat"": null, ""link"": ""https://www.google.it/maps/place/Via+Lipparelli,+62011+Cingoli+MC/@43.3963819,13.2525108,17z/data=!3m1!4b1!4m5!3m4!1s0x132d96a85b99b979:0xd44ab2f80ecefebc!8m2!3d43.3963819!4d13.2546995"", ""lon"": null, ""tel"": ""A Cingoli serve con urgenza CONTAINER (anche dismesso, ma dove non entri acqua)""}","<pre><yamldata>tel: A Cingoli serve con urgenza CONTAINER (anche dismesso, ma dove non entri acqua)
 email: vailucia@hotmail.it
 cosa: CONTAINER
@@ -8524,18 +8529,6 @@ email: ''
 data: 14/09/2016
 </yamldata></pre>
 ",closed
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/272,176857515,2016-09-14 09:25:32,2016-09-14 09:24:01,Comune di Amandola,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": ""BCITITMM"", ""causale"": ""Chiese Amandola e Beni Culturali Amandola"", ""chi"": ""Comune di Amandola"", ""data"": ""14/09/2016"", ""descrizione"": ""Conto per ricevere le donazioni per la ricostruzione dei beni culturali"", ""email"": """", ""iban"": ""IT 61X03069 69360100000046001"", ""intestazione"": """", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1764952897105627/"", ""postale"": ""15204639""}","<pre><yamldata>chi: 'Comune di Amandola'
-descrizione: 'Conto per ricevere le donazioni per la ricostruzione dei beni culturali'
-intestazione: ''
-iban: 'IT 61X03069 69360100000046001'
-bic: BCITITMM
-postale: '15204639'
-causale: 'Chiese Amandola e Beni Culturali Amandola'
-link: 'https://www.facebook.com/groups/1758670357733881/permalink/1764952897105627/'
-email: ''
-data: 14/09/2016
-</yamldata></pre>
-",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/272,176857515,2016-09-14 09:25:32,2016-09-14 09:24:01,Comune di Amandola,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": ""BCITITMM"", ""causale"": ""Chiese Amandola e Beni Culturali Amandola"", ""chi"": ""Comune di Amandola"", ""data"": ""14/09/2016"", ""descrizione"": ""Conto per ricevere le donazioni per la ricostruzione dei beni culturali"", ""email"": """", ""iban"": ""IT 61X03069 69360100000046001"", ""intestazione"": """", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1764952897105627/"", ""postale"": ""15204639""}","<pre><yamldata>chi: 'Comune di Amandola'
 descrizione: 'Conto per ricevere le donazioni per la ricostruzione dei beni culturali'
 intestazione: ''
