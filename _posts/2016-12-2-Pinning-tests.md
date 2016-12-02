@@ -2,6 +2,7 @@
 layout: post
 title: "Pinning tests"
 image: pins.jpg
+description: Pinning tests are a valuable addition to any developer's toolkit. They come primarily into play when you're given the scary task of making updates to legacy code, especially when the original developers are long gone, no one has more than a vague idea of what it does, and concepts like unit test or integration tests are the stuff of fairytales. Refactors in general become a lot less scary and less likely to result in a desperate plea-via-3am-phone-call of "fix it!"
 ---
 
 !["New pins" by Buttontree Lane]({{ site.baseurl }}/images/pins.jpg)
