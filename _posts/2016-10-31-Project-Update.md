@@ -4,6 +4,7 @@ title: First Update
 author: 
  - sburnet1
  - TGlavan
+publish: true
 ---
 
 ### So what is going on here?
