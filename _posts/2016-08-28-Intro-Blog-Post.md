@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Intro? Digital Everywhere
+title: Intro? Digital Everywhere!
 author: sburnet1
 published: true
 ---
