@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Pinning tests"
+image: pins.jpg
 ---
 
 !["New pins" by Buttontree Lane]({{ site.baseurl }}/images/pins.jpg)
