@@ -1,0 +1,19 @@
+---
+layout: post
+title: "Research Project: Another Update"
+author: shamayel
+published: true
+---
+
+Sometimes programs and scripts don't run the way you want them to. The language barrier between humans and computers is being axed down constantly (with the gracious help of StackOverflow), but alas, time is almost always against us.   
+
+That being said, I was unable to run the tf-idf I wanted on the three religious texts: King James Bible, Qur'an, and the Tanakh. I let the program run for 6 hours but it was too stubborn to actually give me data so I decided to try something else. After fiddling with a different program that simply counts words frequencies without eliminating words that come too often for a few hours, I gave up on that too and decided to make a Google search to see if there are any programs online that can do word frequency counts for me.   
+
+And lucky for me, I found one such website that spat out the data like a good computer should. I have compiled the data into three different files and have generated word cloud for each as a visualization of the word frequencies.    
+
+I haven't really analyzed the data yet, but I do hope to do some in-depth close reading analysis. I want to manually compare the top words in each of the texts and see what kinds of conjectures or assumptions I can draw from them. I also hope to maybe upload my data into something like Microsoft Excel or something similar to generate more visualizations for my data.  
+
+For my delivereable, I unfortunately won't have time to create a nice infographic to display my findings (I overestimated the amount of time I would have the weekend before finals) and have settled on making some type of slide-presentation that will still have some pretty graphics.   
+
+I really enjoyed working on this project, but I feel no where near done playing with my materials. I do plan on continuing with this project next semester by hopefully getting tf-idf to work and maybe run some other tests on the texts. Maybe I can break up the passages or do some more interviewing and research regarding the historical context of these three texts. 
+
