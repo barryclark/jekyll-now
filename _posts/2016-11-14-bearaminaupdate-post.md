@@ -1,8 +1,11 @@
 ---
 layout: post
 title: Project Update!  
-author: bear, akrlicevic
+author: 
+-akrlicevic
+-bear
 ---
+
 For our final project, Bear and I are continuing our research on the presidential candidates’ campaigns. After compiling a week’s data of tweets manually from 
 both Hillary and Trump over the course of a single week,we've seen how their tweets are similar and different based on whether they were bashing each other or building on themselves.
 However, our argument will not be comparing tweets from other elections. So we are arguing that the majority of tweets from each presidential candidate are of bashing/criticism. 
