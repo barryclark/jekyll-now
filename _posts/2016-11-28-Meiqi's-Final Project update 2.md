@@ -7,7 +7,7 @@ published: true
 
 This is the second and will be the final posts.
 
-What has complished:
+## What has complished:
 
 1. Read through Gender, Race, and Ethinicity in the Workplace Vol.1; almost finished reading The Urban Underclass.
 
@@ -15,7 +15,7 @@ What has complished:
 
 3. Essay almosy done.
 
-What needs to be done:
+## What needs to be done:
 
 1. Make an video with those papers
 
