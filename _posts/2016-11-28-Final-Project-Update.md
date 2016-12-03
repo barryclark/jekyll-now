@@ -1,7 +1,7 @@
 ---
 layout: post 
 title: Final Project Update
-author: 
+authors: 
 - jescasa1
 - mschindl301
 published: true
