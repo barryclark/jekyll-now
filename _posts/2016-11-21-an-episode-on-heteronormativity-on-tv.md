@@ -1,6 +1,6 @@
 ---
 layout: post
-title: PLEASE POST PLEASE
+title: An Episode on Heteronormativity on TV 
 author: rbrooks6
 ---
 
