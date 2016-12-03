@@ -133,9 +133,16 @@ td.slider-value{
   font-weight: bold;
 }
 
-td.slider-value #weight {  color: $weightGreen;  }
-td.slider-value #bias {  color: $biasPurple;  }
+td.slider-value .weight {  color: $weightGreen; opacity: 0.7 ;}
+td.slider-value .bias {  color: $biasPurple;  opacity: 0.7; }
 
+
+.prediction .img-div {
+  max-width: 600px;
+  margin: auto;
+}
+.prediction .img-div img{
+}
 
 td span#error-value {
   color: $darkYellow;
@@ -169,20 +176,36 @@ td.error-cell{  text-align:center;  }
 
 .prediction .training-chart{  text-align:center;  }
 
-.prediction .training-chart svg{  background: #f0f0f0;  }
+.prediction .training-chart svg{  background: #fbfbfb;  }
 .prediction svg .axis line{  stroke:#aaa;  }
 .prediction svg .axis path{  stroke:#aaa;  }
 /*.prediction svg .axis text{  fill:#aaa;  }*/
 
+.prediction #training-one-gd-heatmap svg text.chart-title{
+  font-size: 9pt;
+  fill: $chartLabel;
+}
+
+.prediction #training-one-gd-error-chart svg text.chart-title{
+  font-size: 9pt;
+  fill: $chartLabel;
+}
 .prediction #training-one-gd-heatmap svg text.weight-axis-label{
   font-size: 9pt;
   fill: $weightGreen;
 }
-
+.prediction #training-one-gd-error-chart svg text.error-axis-label{
+  font-size: 9pt;
+  fill: #F8CA00;
+}
 
 .prediction #training-one-gd-heatmap svg text.bias-axis-label{
   font-size: 9pt;
   fill: $biasPurple;
+}
+
+.prediction #neural-network-two-graph svg{
+  border: 0px solid #bbb;
 }
 
 .prediction .mini-charts{
@@ -190,6 +213,12 @@ td.error-cell{  text-align:center;  }
   margin-left: -7px;
 }
 .prediction .error-chart svg{  background: #f0f0f0;  }
+
+.prediction .error-chart .error-history-line{
+  stroke: $yellow;
+  stroke-width: 2;
+  fill: none;
+}
 
 .prediction .error-chart .error-history-line{
   stroke: $yellow;
@@ -251,6 +280,46 @@ td.error-cell{  text-align:center;  }
 
 .prediction .viz-line {
   color: #EC008C;
+}
+
+/*           Neural Netowrk graph    */
+.nn-graph-area{
+  text-align: center;
+}
+
+.nn-graph-area svg{
+  border: 0px solid $gray;
+}
+.inputNode{
+  fill: $nnInputNode;
+  stroke: $darkGray;
+  stroke-width: $nnStrokeWidth;
+}
+
+.weightNode{
+  fill: $nnWeightNode;
+  stroke: $darkGray;
+  stroke-width: $nnStrokeWidth;
+}
+.biasNode{
+  fill: $nnBiasNode;
+  stroke: $darkGray;
+  stroke-width: $nnStrokeWidth;
+}
+
+.outputNode{
+  fill: $nnOutputNode;
+  stroke: $darkGray;
+  stroke-width: $nnStrokeWidth;
+}
+.arrow{
+  stroke-width:$nnStrokeWidth;
+  stroke:$darkGray;
+}
+
+#arrow{
+  stroke-width:1;
+  stroke-dasharray:0;
 }
 
 strong, b {

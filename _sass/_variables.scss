@@ -13,6 +13,7 @@ $weightGreen: #4db755;
 $biasPurple: #6761c5;
 
 
+
 // Grays
 $black: #000;
 $darkerGray: #222;
@@ -20,6 +21,16 @@ $darkGray: #333;
 $gray: #666;
 $lightGray: #eee;
 $white: #fff;
+
+$chartBackground: #fbfbfb;
+$chartLabel: #aaa;
+
+//Neural network graph parameters
+$nnInputNode: #e7b7f3;
+$nnWeightNode: #a8e7ad;
+$nnBiasNode: #ccc9fa;
+$nnOutputNode: #f2afc7;
+$nnStrokeWidth: 3px;
 
 // Font stacks
 $helvetica: Helvetica, Arial, sans-serif;

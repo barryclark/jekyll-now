@@ -4,8 +4,12 @@ published: False
 title: DRAFT - A Visual Beginners Guide to Neural Networks
 ---
 
+## Motivation
+I'm not a machine learning expert. I'm a software engineer whose only brushes with AI before 2015 were an expert systems class in college and minor experiments with recommendations and search engine optimization. I had always wanted to delve deeper into machine learning, but never really found my "in". That's why when Google open sourced TensorFlow in November 2015, I got super excited and knew it was time to jump in and start the learning journey. Not to sound dramatic, but to me, it actually felt kind of like Prometheus handing down fire to mankind from the Mount Olympus of machine learning. In the back of my head was the idea that the entire field of Big Data and technologies like Hadoop were vastly accelerated when Google researchers released their Map Reduce paper. This time it's not a paper -- it's the actual software they use internally after years and years of evolution.
 
+So I started learning what I can about the basics of
 
+## Start here
 Let's start with a simple example. Say you're helping a friend who wants to buy a house. She was quoted $400,000 for a 2000 sq ft house (185 meters). Is this a good price or not?
 
 It's not easy to tell without a frame of reference. So you ask your friends who have bought houses in that same neighborhoods, and you end up with three data points:
@@ -28,15 +32,18 @@ Personally, my first instinct would be to get the average price per sq ft. That 
 Welcome to your first neural network! Now it's not quite at Siri level yet, but now you know the fundamental building block. And it looks like this:
 
 
-![]({{site.baseurl}}/images/simple_NN_1.png)
+<div class="img-div" markdown="0">
+    <img src="/images/simple_NN_1.png" />
+</div>
+
+Diagrams like this show you the structure of the network and how it calculates a prediction. The calculation starts from the input node at the left. The input value flows to the right. It gets multiplied by the weight and the result becomes our output.
+
+Multiplying 2,000 sq ft by 180 gives us $360,000. That's all there is to it at this level. Calculating the prediction is simple multiplication. But before that, we needed to think about the weight we'll be multiplying by. Here we started with an average, later we'll look at better algorithms that can scale as we get more inputs and more complicated models. Finding the weight is our "training" stage. So whenever you hear of someone "training" a neural network, it just means finding the weights we use to calculate the prediction.
 
 
-
-Multiply that by the area of the house, and you get $360,000. That's all there is to it at this level. Calculating the prediction is simple multiplication. But before that, we needed to think about the weight we'll be multiplying by. Here we started with an average, later we'll look at better algorithms that can scale as we get more inputs and more complicated models. Finding the weight is our "training" stage. So whenever you hear of someone "training" a neural network, it just means finding the weights we use to calculate the prediction.
-
-<p class="gif-space-half"/>
-
-![]({{site.baseurl}}/images/NNs_formula_no_bias.png)
+<div class="img-div" markdown="0">
+    <img src="/images/NNs_formula_no_bias.png" />
+</div>
 
 This is a form of prediction. This is a simple predictive model that takes an input, does a calculation, and gives an output (since the output can be of continuous values, the technical name for what we have would be a "regression model")
 
@@ -102,9 +109,11 @@ Our lines can better approximate our values now that we have this b value added 
 
 
 
-<p class="gif-space-half" />
 
-![]({{site.baseurl}}/images/NNs_bias.png)
+<div class="img-div" markdown="0">
+    <img src="/images/NNs_bias.png" />
+</div>
+
 
 
 
@@ -112,17 +121,33 @@ Our lines can better approximate our values now that we have this b value added 
 We can generalize it by saying that a neural network with one input and one output (*spoiler warning:* and no hidden layers) looks like this:
 
 
-![]({{site.baseurl}}/images/NNs_bias_2.png)
+
+
+<div class="img-div" markdown="0">
+    <img src="/images/NNs_bias_2.png" />
+</div>
+Where W and b are values we find during the training process. X is the input we plug into the formula (area in sq ft in our example). Y is the predicted price.
 
 
 
 Calculating a prediction now uses this formula:
 
-![]({{site.baseurl}}/images/NNs_formula.png)
+
+
+<div class="img-div" markdown="0">
+    <img src="/images/NNs_formula.png" />
+</div>
+
+
 
 So our current model calculates predictions by plugging in the area of house as x in this formula:
 
-![]({{site.baseurl}}/images/NNs_formula_ex.png)
+
+
+
+<div class="img-div" markdown="0">
+    <img src="/images/NNs_formula_ex.png" />
+</div>
 
 
 ## Train Your Dragon
@@ -160,7 +185,7 @@ How about you take a crack at training our toy neural network? Minimize the loss
                 >
         </td>
         <td class="slider-value">
-            <span id="weight">0</span>
+            <span id="weight" class="weight">0</span>
         </td>
     </tr>
     <tr>
@@ -171,11 +196,12 @@ How about you take a crack at training our toy neural network? Minimize the loss
             <input id="biasSlider" type="range" class="bias"  min="0" max="460" step="1" >
         </td>
         <td class="slider-value">
-            <span id="bias">0</span>
+            <span id="bias" class="bias">0</span>
         </td>
     </tr>
-
 </table>
+
+<div id="neural-network-graph" class="nn-graph-area" ></div>
 
 
 
@@ -232,7 +258,7 @@ Congratulations on manually training your first neural network! Let's look at ho
                         <input id="weightSlider" type="range" class="weight" min="0" max="0.4" step="0.001">
                     </td>
                     <td class="slider-value">
-                        <span id="weight">0</span>
+                        <span id="weight" class="weight">0</span>
                     </td>
                 </tr>
                 <tr>
@@ -243,16 +269,17 @@ Congratulations on manually training your first neural network! Let's look at ho
                         <input id="biasSlider" type="range"  class="bias" min="0" max="460" step="1">
                     </td>
                     <td class="slider-value">
-                        <span id="bias">0</span>
+                        <span id="bias" class="bias">0</span>
                     </td>
                 </tr>
             </table>
 
+            <div id="neural-network-gd-graph" class="nn-graph-area" ></div>
         </div>
     </div>
 </div>
 
-The two new figures are to help you track the error values as you fiddle with the parameters (weight and bias) of the model . It's important to keep track of the error as the training process is all about reducing this error as much possible.
+The two new graphs are to help you track the error values as you fiddle with the parameters (weight and bias) of the model . It's important to keep track of the error as the training process is all about reducing this error as much possible.
 
 How does gradient descent know where its next step should be? Calculus. You see, knowing the function we're minimizing (our loss function, the average of (y_ - y)² for all our data points), and knowing the current inputs into it (the current weight and bias, the derivatives of the loss function tell us which direction to nudge W and B in order to minimize the error.
 
@@ -281,7 +308,6 @@ Say your friend does a bit more research and find a bunch more data points. She 
  | 1,427 | 	3 | 198,999 |
  | 1,380 | 	3 | 212,000 |
  | 1,494 | 	3 | 242,500 |
- | 1,940 | 	4 | 239,999 |
 
 
 </div>
@@ -290,40 +316,40 @@ Say your friend does a bit more research and find a bunch more data points. She 
 Our neural network with two variables looks like this:
 
 
-<p class="gif-space-half"/>
+<div class="img-div" markdown="0">
+    <img src="/images/NNs_2_variables.png" />
+</div>
 
-![]({{site.baseurl}}/images/NNs_2_variables.png)
 
-<p class="gif-space-half"/>
 
 We now have to find two weights (one for each input) and one bias to create our new model.
 
 Calculating Y looks like this:
 
 
-<p class="gif-space-half"/>
 
-![]({{site.baseurl}}/images/NNs_formula_two_variables.png)
+<div class="img-div" markdown="0">
+    <img src="/images/NNs_formula_two_variables.png" />
+</div>
 
-<p class="gif-space-half"/>
 
 
 But how do we find w1 and w2? This is a little trickier than when we only had to worry about one weight value. How much does having an extra bathroom change how we predict the value of a home?
 
-Take a stab finding the right weights and bias. You will start here to see the complexity we start getting into as the number of our inputs increase. We start losing the ability to create simple 2d shapes that allow us to visualize the model at a glance. Instead, we'll have to mainly rely on how the error value is evolving as we tweak our model parameters.
+Take a stab at finding the right weights and bias. You will start here to see the complexity we start getting into as the number of our inputs increase. We start losing the ability to create simple 2d shapes that allow us to visualize the model at a glance. Instead, we'll have to mainly rely on how the error value is evolving as we tweak our model parameters.
 
 
 <div class="container"  markdown="0">
     <div class="row">
 
         <div class="col-sm-6 graphs">
-            <div id="training-two-chart" class="training-chart" ></div>
+            <div id="training-two-chart" class="error-chart" ></div>
 
         </div>
 
         <div class="col-sm-6">
 
-            <table id="training-one-gd" class="training-table">
+            <table id="training-two-table" class="training-table">
                 <tr>
                     <td colspan="3" class="gd-buttons">
                         <input type="button" value="GD Step" id="gradient-descent-button"  class="btn btn-primary" />
@@ -352,10 +378,10 @@ Take a stab finding the right weights and bias. You will start here to see the c
                         Weight #1
                     </td>
                     <td>
-                        <input id="weightOneSlider" type="range" class="weight" min="0" max="0.4" step="0.001">
+                        <input id="weight0Slider" type="range" class="weight" min="-0.4" max="0.4" step="0.001">
                     </td>
                     <td class="slider-value">
-                        <span id="weightOne">0</span>
+                        <span id="weight0" class="weight">0</span>
                     </td>
                 </tr>
                 <tr>
@@ -363,10 +389,10 @@ Take a stab finding the right weights and bias. You will start here to see the c
                         Weight #2
                     </td>
                     <td>
-                        <input id="weightTwoSlider" type="range" class="weight" min="0" max="0.4" step="0.001">
+                        <input id="weight1Slider" type="range" class="weight" min="-100" max="200" step="0.001">
                     </td>
                     <td class="slider-value">
-                        <span id="weightTwo">0</span>
+                        <span id="weight1" class="weight">0</span>
                     </td>
                 </tr>
                 <tr>
@@ -374,13 +400,15 @@ Take a stab finding the right weights and bias. You will start here to see the c
                         Bias
                     </td>
                     <td>
-                        <input id="biasSlider_2" type="range"  class="bias" min="0" max="460" step="1">
+                        <input id="biasSlider" type="range"  class="bias" min="-100" max="300" step="1">
                     </td>
                     <td class="slider-value">
-                        <span id="bias">0</span>
+                        <span id="bias" class="bias">0</span>
                     </td>
                 </tr>
             </table>
+
+            <div id="neural-network-two-graph" class="nn-graph-area" ></div>
 
         </div>
     </div>
@@ -395,3 +423,4 @@ As the problems we try to solve get more and more complicated, so must our tools
 
 
 <script type="text/javascript" src="/js/simple_nn.js"></script>
+<script type="text/javascript" src="/js/two_variable_nn.js"></script>

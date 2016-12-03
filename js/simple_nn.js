@@ -53,7 +53,7 @@ function average(data){
 var NN_trainer = function (svg_el, table_el, areas, prices, weight, bias, x1, y1, x2, y2,
                            gradientDescentButton, gradientDescent10Button, gradientDescent100Button,
                            gradientDescentConvergeButton, normalize, error_chart_el, heatmap_el,
-                            weightRange, biasRange) {
+                           weightRange, biasRange, neuralNetworkGraphEl) {
     this.svg_el = svg_el;
     this.table_el = table_el;
     this.areas = areas;
@@ -77,6 +77,10 @@ var NN_trainer = function (svg_el, table_el, areas, prices, weight, bias, x1, y1
     this.weightRange = weightRange;
     this.biasRange = biasRange;
 
+    this.neuralNetworkGraphEl = neuralNetworkGraphEl;
+
+    this.miniGraphMargin =  {top: 30, right: 50, bottom: 35, left: 30};
+
     // Normalization doesn't work quite yet. Actually decided to roll back during implementation
     // because changing the weights and biases between examples would confuse readers.
     if(normalize)
@@ -89,6 +93,8 @@ var NN_trainer = function (svg_el, table_el, areas, prices, weight, bias, x1, y1
         this.initializeErrorGraph();
     if( this.heatmap_el != "")
         this.initializeHeatmap();
+    if( this.neuralNetworkGraphEl != "")
+        this.initializeNeuralNetworkGraph()
 
     // Set the initial values of the sliders
     this.updateWeightAndBias(this.weight, this.bias, true);
@@ -215,15 +221,19 @@ NN_trainer.prototype.initializeErrorGraph = function(){
     this.error_chart_history_y = 100000;    // How high the bar goes
     this.error_history = [10000];
 
-
+    this.miniErrorChartMargin = {top: 30, right: 30, bottom: 35, left: 65};
     this.errorHolder = d3.select(this.error_chart_el) // select the 'body' element
         .append("svg")           // append an SVG element to the body
         .attr("width", this.miniGraphWidth)      // make the SVG element 449 pixels wide
         .attr("height", this.miniGraphHeight);    // make the SVG element 249 pixels high
 
-        this.errorChartWidth = +this.errorHolder.attr("width") - this.margin.left - this.margin.right;
-        this.errorChartHeight = +this.errorHolder.attr("height") - this.margin.top - this.margin.bottom;
-        this.errorG = this.errorHolder.append("g").attr("transform", "translate(" + this.margin.left + "," + this.margin.top + ")");
+        this.errorChartWidth = +this.errorHolder.attr("width") -
+            this.miniErrorChartMargin.left - this.miniErrorChartMargin.right;
+        this.errorChartHeight = +this.errorHolder.attr("height") -
+            this.miniErrorChartMargin.top - this.miniErrorChartMargin.bottom;
+        this.errorG = this.errorHolder.append("g").attr("transform", "translate("
+            + this.miniErrorChartMargin.left + ","
+            + this.miniErrorChartMargin.top + ")");
 
     // Initialize scales and axes
     this.error_x = d3.scaleLinear()
@@ -233,7 +243,11 @@ NN_trainer.prototype.initializeErrorGraph = function(){
     this.error_y = d3.scaleLinear()
         .rangeRound([this.errorChartHeight, 2])
         .domain([1, d3.max(this.error_history, function (d) { return d; }) * 1.3]);
-
+    this.errorGraphScaleColors = ['#F8CA00','#feb24c','#fd8d3c','#fc4e2a'];
+    //Color scale
+    this.errorGraphScale = d3.scaleLinear()
+        .domain([400, 10000, 100000, 1000000 ])
+        .range(this.errorGraphScaleColors);
 
 
     this.errorGraphLine = d3.line()
@@ -250,6 +264,13 @@ NN_trainer.prototype.initializeErrorGraph = function(){
         .attr("class", "axis axis--y")
         .call(d3.axisLeft(this.error_y).ticks(5));
 
+    // Y axis label
+    this.errorHolder .append("text")
+        .attr("text-anchor", "middle")  // this makes it easy to centre the text as the transform is applied to the anchor
+        .attr("transform", "translate("+ 15 +","
+            +(this.errorChartHeight/2 + this.miniErrorChartMargin.top)+")rotate(-90)")
+        .attr("class", "error-axis-label")
+        .text("Error");
 
 
     this.errorG.append("defs").append("clipPath")
@@ -265,6 +286,17 @@ NN_trainer.prototype.initializeErrorGraph = function(){
         .append("path")
         .datum(this.error_history)
         .attr("class", "error-history-line")
+
+
+    // Chart title
+    this.errorHolder.append("text")
+        .attr("text-anchor", "middle")  // this makes it easy to centre the text as the transform is applied to the anchor
+        .attr("transform", "translate("+
+            ((this.miniErrorChartMargin.left + this.errorChartWidth + this.miniErrorChartMargin.right)/2)
+            +","+
+            20 +")")
+        .attr("class", "chart-title")
+        .text("Error Log");
 
 };
 
@@ -323,7 +355,7 @@ NN_trainer.prototype.rescaleErrorGraph = function () {
 
     //this.heatmapColorScale
     this.errorG.selectAll(this.error_chart_el +" .axis--y .tick text")
-        .attr("fill", function (d){return this.heatmapColorScale(d)}.bind(this))
+        .attr("fill", function (d){return this.errorGraphScale(d)}.bind(this))
 };
 
 
@@ -386,12 +418,12 @@ NN_trainer.prototype.updateUI = function(mean_delta_sum, errorLineValues){
 
     // Update the error/weight/bias indicators
     $(this.table_el + " span#weight").text(this.weight.toFixed(3));
-    $(this.table_el + " span#bias").text(this.bias.toFixed(3));
+    $(this.table_el + " span#bias").text(this.bias.toFixed(1));
     $(this.table_el + " span#error-value").text(numberWithCommas(Math.round(mean_delta_sum)));
 
     // Update comment on the score
     if (mean_delta_sum < 450) {
-        $(" span#error-value-message").html("I honestly didn't know this was humanly possible..");
+        $(" span#error-value-message").html("I honestly didn't know this was 'humanly' possible..");
     }
     else if (mean_delta_sum < 500) {
         $(this.table_el + " span#error-value-message").html("Hello there, superintelligent AI overlord..");
@@ -470,6 +502,8 @@ NN_trainer.prototype.updateUI = function(mean_delta_sum, errorLineValues){
         this.updateHeatmapElement(this.weight, this.bias, mean_delta_sum);
 
 
+    if( this.neuralNetworkGraphEl != "")
+        this.updateNeuralNetworkGraph()
 
     this.dataPointDots.moveUp();
 };
@@ -497,11 +531,11 @@ NN_trainer.prototype.gradientDescentStep = function (number_of_steps) {
         //console.log("sum: ", sum_for_weight, sum_for_bias );
 
         bias_mean = sum_for_bias / this.areas.length;
-        weight_mean = sum_for_weight / this.areas.length;
-        //console.log("sum means: ", weight_mean, bias_mean);
+        weightsMeans = sum_for_weight / this.areas.length;
+        //console.log("sum means: ", weightsMeans, bias_mean);
 
         bias_adjustment = this.learningRate2 * bias_mean;
-        weight_adjustment = this.learningRate * weight_mean;
+        weight_adjustment = this.learningRate * weightsMeans;
         //console.log("adjustments: ", weight_adjustment, bias_adjustment);
 
         new_b = this.bias - bias_adjustment;
@@ -534,12 +568,16 @@ NN_trainer.prototype.gradientDescentStep = function (number_of_steps) {
 };
 
 
+
 NN_trainer.prototype.initializeHeatmap = function(){
 
 
     this.heatmapSideNumberOfElements = 15;
     //this.heatmapColors = ['#f7fcf0','#e0f3db','#ccebc5','#a8ddb5','#7bccc4','#4eb3d3','#2b8cbe','#0868ac','#084081'].reverse();
-    this.heatmapColors = ['#F8CA00','#a1dab4','#41b6c4','#225ea8'].reverse();
+    //this.heatmapColors = ['#F8CA00','#a1dab4','#41b6c4','#225ea8'].reverse();
+    this.heatmapColors = ['#fcfc99','#feb24c','#fd8d3c','#fc4e2a'];
+    //this.heatmapColors = ['#ffffcc','#feb24c','#fd8d3c','#fc4e2a'];
+    this.heatmapEmptyBoxColor = "#f0f0f0";
     this.heatmapData = this.generateHeatmapData(this.heatmapSideNumberOfElements);
 
     this.heatmapHolder = d3.select(this.heatmap_el) // select the 'body' element
@@ -547,10 +585,9 @@ NN_trainer.prototype.initializeHeatmap = function(){
         .attr("width", this.miniGraphWidth)
         .attr("height", this.miniGraphHeight);
 
-    var marginBottom =
-    this.heatmapWidth = +this.heatmapHolder.attr("width") - this.margin.left - this.margin.right;
-    this.heatmapHeight = +this.heatmapHolder.attr("height") - this.margin.top - this.margin.bottom;
-    this.heatmapG = this.heatmapHolder.append("g").attr("transform", "translate(" + (this.margin.left + 15 )+ "," + this.margin.top + ")");
+    this.heatmapWidth = +this.heatmapHolder.attr("width") - this.miniGraphMargin.left - this.miniGraphMargin.right;
+    this.heatmapHeight = +this.heatmapHolder.attr("height") - this.miniGraphMargin.top - this.miniGraphMargin.bottom;
+    this.heatmapG = this.heatmapHolder.append("g").attr("transform", "translate(" + (this.miniGraphMargin.left + 15 )+ "," + this.miniGraphMargin.top + ")");
 
 
 
@@ -582,7 +619,7 @@ NN_trainer.prototype.initializeHeatmap = function(){
 
     //Color scale
     this.heatmapColorScale = d3.scaleLinear()
-        .domain([400, 1000, 10000, 500000 ])
+        .domain([400, 10000, 100000, 1000000 ])
         .range(this.heatmapColors);
 
     // Draw X axis
@@ -595,18 +632,32 @@ NN_trainer.prototype.initializeHeatmap = function(){
         .attr("class", "axis axis--y")
         .call(d3.axisLeft(this.heatmapYAxisScale).ticks(5));
 
+    // Weight axis label
     this.heatmapHolder.append("text")
         .attr("text-anchor", "middle")  // this makes it easy to centre the text as the transform is applied to the anchor
-        .attr("transform", "translate("+ (this.heatmapHeight/2 + this.margin.left ) +","+(this.heatmapHeight + 55)+")")
+        .attr("transform", "translate("+
+            (this.heatmapWidth/2 + this.miniGraphMargin.left ) +","
+            +( this.miniGraphMargin.top + this.heatmapHeight + this.miniGraphMargin.bottom - 5 )+")")
         .attr("class", "weight-axis-label")
         .text("Weight");
 
-
+    // Bias axis label
     this.heatmapHolder.append("text")
         .attr("text-anchor", "middle")  // this makes it easy to centre the text as the transform is applied to the anchor
-        .attr("transform", "translate("+ (28) +","+(this.heatmapHeight/2 + this.margin.top)+")rotate(-90)")
+        .attr("transform", "translate("+ (this.miniGraphMargin.left/2) +","
+            +(this.heatmapHeight/2 + this.miniGraphMargin.top)+")rotate(-90)")
         .attr("class", "bias-axis-label")
         .text("Bias");
+
+    // Chart title
+    this.heatmapHolder.append("text")
+        .attr("text-anchor", "middle")  // this makes it easy to centre the text as the transform is applied to the anchor
+        .attr("transform", "translate("+
+            ((this.miniGraphMargin.left + this.heatmapWidth + this.miniGraphMargin.right)/2)
+            +","+
+            20 +")")
+        .attr("class", "chart-title")
+        .text("Weight vs. Bias vs. Error");
 
 
     this.updateHeatmap(this.heatmapData);
@@ -628,7 +679,11 @@ NN_trainer.prototype.updateHeatmap= function(data){
         .attr("height", heatmapBoxSize)
         .attr("class", "heatmap-square")
         .attr("id", function(d){ return "box_" + d.x + "_" + d.y})
-        .attr("fill", function(d, i){  if(d.error == 0) return "#f0f0f0";  else  return heatmapColorScale(d.error);})
+        .attr("fill", function(d, i){
+            if(d.error == 0)
+                return this.heatmapEmptyBoxColor;
+            else
+                return heatmapColorScale(d.error);}.bind(this))
 };
 
 NN_trainer.prototype.updateHeatmapElement = function(weight, bias, error){
@@ -669,6 +724,121 @@ NN_trainer.prototype.generateHeatmapData= function(size){
 };
 
 
+NN_trainer.prototype.initializeNeuralNetworkGraph= function(){
+    this.nnGraphHolder = d3.select(this.neuralNetworkGraphEl) // select the 'body' element
+        .append("svg")           // append an SVG element to the body
+        .attr("width", 429)      // make the SVG element 449 pixels wide
+        .attr("height", 150);    // make the SVG element 249 pixels high
+    this.neuralNetworkMargin = {top: 10, right: 10, bottom: 10, left: 10},
+        this.neuralNetworkWidth = +this.nnGraphHolder.attr("width") - this.neuralNetworkMargin.left - this.neuralNetworkMargin.right,
+        this.neuralNetworkHeight = +this.nnGraphHolder.attr("height") - this.neuralNetworkMargin.top - this.neuralNetworkMargin.bottom,
+        this.neuralNetworkG = this.nnGraphHolder.append("g");
+
+    var nodeRadius = 30;
+
+    // Arrow
+    // http://bl.ocks.org/tomgp/d59de83f771ca2b6f1d4
+    var defs = this.nnGraphHolder.append("defs");
+
+    defs.append("marker")
+        .attrs({
+            "id":"arrow",
+            "viewBox":"0 -5 10 10",
+            "refX":5,
+            "refY":0,
+            "markerWidth":4,
+            "markerHeight":4,
+            "orient":"auto"
+        })
+        .append("path")
+        .attr("d", "M0,-5L10,0L0,5")
+        .attr("class","arrowHead");
+    this.neuralNetworkG.append('line')
+        .attrs({
+            "class":"arrow",
+            "marker-end":"url(#arrow)",
+            "x1":this.neuralNetworkMargin.left + 2 * nodeRadius,
+            "y1":this.neuralNetworkMargin.top + this.neuralNetworkHeight/2 ,
+            "x2":this.neuralNetworkWidth - 2 * nodeRadius + this.neuralNetworkMargin.left - 8,
+            "y2":this.neuralNetworkMargin.top + this.neuralNetworkHeight/2
+        });
+
+
+    // Input node
+    this.inputNode = this.neuralNetworkG
+        .append("circle")
+        .attr("class", "inputNode")
+        .attr("r", nodeRadius)
+        .attr("cx", this.neuralNetworkMargin.left + nodeRadius  )
+        .attr("cy", this.neuralNetworkMargin.top + this.neuralNetworkHeight / 2);
+
+    // Weight Node
+    this.weightG = this.neuralNetworkG.append("g")
+        .attr("transform", "translate("+
+            (this.neuralNetworkMargin.left + nodeRadius + this.neuralNetworkWidth / 3 - 10)
+            +","
+            +(this.neuralNetworkMargin.top + this.neuralNetworkHeight / 2)+")");
+    this.weightNode = this.weightG
+        .append("ellipse")
+        .attr("class", "weightNode")
+        .attr("rx", nodeRadius * 1.7)
+        .attr("ry", nodeRadius )
+        .attr("cx", 0)
+        .attr("cy", 0);
+    this.weightG.append("text")
+        .attr("id", "weightValue")
+        .attr("text-anchor", "middle")
+        .attr("y", 5)
+        .text("");
+
+
+    // Bias Node
+    this.biasG = this.neuralNetworkG.append("g")
+        .attr("transform", "translate("+
+            (this.neuralNetworkWidth * 2 / 3  - 20)
+            +","
+            +(this.neuralNetworkMargin.top + this.neuralNetworkHeight / 2 - nodeRadius)+")");
+    this.biasNode = this.biasG
+        .append("rect")
+        .attr("class", "biasNode")
+        .attr("width", nodeRadius * 2 )
+        .attr("height", nodeRadius * 2)
+        .attr("rx", nodeRadius / 4 )
+        .attr("ry", nodeRadius / 4 )
+        .attr("x", 0)
+        .attr("y", 0);
+    this.biasG.append("text")
+        .attr("id", "biasValue")
+        .attr("text-anchor", "middle")
+        .attr("x", nodeRadius)
+        .attr("y", nodeRadius + 5)
+        .text("-");
+
+
+    // Output node
+    this.outputNode = this.neuralNetworkG
+        .append("circle")
+        .attr("class", "outputNode")
+        .attr("r", nodeRadius)
+        .attr("cx", this.neuralNetworkWidth - nodeRadius + this.neuralNetworkMargin.left )
+        .attr("cy", this.neuralNetworkMargin.top + this.neuralNetworkHeight / 2);
+
+};
+
+
+NN_trainer.prototype.updateNeuralNetworkGraph = function(){
+    d3.select(this.neuralNetworkGraphEl + " #weightValue")
+        .text(this.weight.toFixed(3));
+
+    d3.select(this.neuralNetworkGraphEl + " #biasValue")
+        .text(this.bias.toFixed(1));
+
+
+
+}
+
+
+
 var trainer = new NN_trainer("#training-one-chart",  "#training-one",
     [2104, 1600, 2400], // areas
     [399.900, 329.900, 369.000], // prices
@@ -678,7 +848,7 @@ var trainer = new NN_trainer("#training-one-chart",  "#training-one",
     0,      // y1
     2600,   // x2
     410,    //y2
-    "", "", "", "", false, "", "", "", "");
+    "", "", "", "", false, "", "", "", "", "#neural-network-graph");
 
 
 
@@ -699,7 +869,8 @@ var trainer2 = new NN_trainer("#training-one-gd-chart",  "#training-one-gd",
     "#training-one-gd-error-chart",
     "#training-one-gd-heatmap",
     [0, 0.4],
-    [0, 460]
+    [0, 460],
+    "#neural-network-gd-graph"
 );
 
 
