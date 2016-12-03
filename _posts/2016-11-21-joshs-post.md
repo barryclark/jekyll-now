@@ -13,3 +13,6 @@ Booth aims to study the moments at which viewers of Doctor Who became fans (or *
 
 **Argument**
 What ties these experiences together is that they are similarly unique and that, collectively, these experience comprise the fandom.  
+
+**Data**
+The data used comprises 21 short passages collected from *Doctor Who* fans in which they recollect their *first time* stories.
