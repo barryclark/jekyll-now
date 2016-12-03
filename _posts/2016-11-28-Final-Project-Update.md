@@ -1,9 +1,9 @@
 ---
 layout: post 
 title: Final Project Update
-authors: 
+author: 
 - jescasa1
-- mschindl301
+- Mschindl301
 published: true
 ---
 <i>“The secret of getting ahead is getting started” – Mark Twain</i>
