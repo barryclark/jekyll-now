@@ -12,4 +12,4 @@ Once I'm done making GET requests, I'll probably have to put the data back into 
 
 From there, it'll just be a matter of making things look pretty and writing up an accompanying report/article that shows how whatever it is I find fits into (or doesn't fit into) the bigger picture of existing literature on Twitter use and social-networks/networking.
 
-[My code is here on GitHub](https://github.com/jbguberman/dh_final_project). I'm pretty sure that everything that has to happen *after* I finish writing my code will go quickly. I might update this again before class on Monday if I make significant progress between now and then (it's Saturday night as I write this), but I plan on spending most of that time fighting fascism. ☭
+[My code is here on GitHub](https://github.com/jbguberman/dh_final_project). I'm pretty sure that everything that has to happen *after* I finish writing my code will go quickly. I might update this again before class on Monday if I make significant progress between now and then (it's Saturday night as I write this), but I plan on spending most of that time fighting fascism and antionalism ☭
