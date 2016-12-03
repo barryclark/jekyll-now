@@ -15,11 +15,13 @@ published: true
 	
   Unfortunately, our class time did not permit finishing the entire episode, so it was cut short to around 35 minutes. The data I collected for men are as follows:
 
-###Total Speaking Time For Men (Recorded) - 16:22
-###Total Speaking Time For Women (Calculated) - 18:30
+### Total Speaking Time For Men (Recorded) - 16:22
 
-###Gender Interaction Changes- 35
-###Total Time Recorded- 34:52
+### Total Speaking Time For Women (Calculated) - 18:30
+
+### Gender Interaction Changes- 35
+
+### Total Time Recorded- 34:52
 	
   According to my data, men speak about 47% of the time, which is surprisingly higher than I would expect for a TV show that features a female main character. Although, I cannot make any assumptions about which gender dominates the plot and personality of this TV show (Despite it being titled “Supergirl”), it is apparent in my data that the speaking time percentages between men and women are almost equal (47% and 53%, respectively). Therefore, in conclusion, women are marginally more dominant than men in the realm of dialogue composition, as they speak slightly longer than men.
 
