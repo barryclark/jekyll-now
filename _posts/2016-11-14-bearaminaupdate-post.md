@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Project Update!  
+title: Project Update!
 author: 
--akrlicevic
--bear
+- akrlicevic
+- bcarlson8582
 ---
 
 For our final project, Bear and I are continuing our research on the presidential candidates’ campaigns. After compiling a week’s data of tweets manually from 
