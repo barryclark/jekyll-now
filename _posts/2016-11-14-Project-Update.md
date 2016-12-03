@@ -3,7 +3,7 @@ layout: post
 title: Project Update
 author: 	
 - jescasa1
-- mschindl301
+- Mschindl301
 ---
 
 ### RQ Question 
