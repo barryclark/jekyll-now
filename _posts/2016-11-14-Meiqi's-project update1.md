@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Meiqi Final Project's argument
+title: Meiqi Final Project update 1
 author: meiqi
 published: true
 ---
