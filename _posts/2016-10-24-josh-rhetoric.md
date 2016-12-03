@@ -11,4 +11,4 @@ As discussed in the reading, a good argument consists of four components:
 1. Claims: these are statements that take a stand on something
 2. Reasons: these are subsequent statements that bolseter one's claim
 3. Warrants: these are what connect the evidence to the claim
-4. Evidence: facts or information provided to strengthen one's claim
+4. Evidence: facts or information provided to strengthen one's claim 
