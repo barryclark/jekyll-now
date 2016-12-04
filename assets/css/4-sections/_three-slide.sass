@@ -1,0 +1,94 @@
+#three-slide
+	@include tile
+
+	.wrapper
+		@include wrapper
+	
+		.slider
+			position: relative
+			width: calc(100% - 60px)
+			height: 100%
+			margin: 0 auto
+			padding: 0
+			list-style: none
+			opacity: 1
+			transition: opacity .3s ease-in-out
+			
+			&.swap
+				opacity: 0
+				transition: opacity .3s ease-in-out
+			
+			li
+				position: absolute
+				top: 50%
+				transform: translateY(-50%)
+				width: 40%
+				opacity: 0
+				
+				@media (max-width: 900px)
+					width: 50%
+				
+				img
+					width: 100%
+					border-radius: 40%
+			
+			.back
+				left: 0
+				opacity: 1
+				
+			.current
+				left: 50%
+				transform: translate(-50%, -50%) scale(1.3)
+				opacity: 1
+				z-index: 10
+				
+			.front
+				right: 0
+				opacity: 1
+				
+			@media (max-width: 767px)
+				width: calc(100% - 30px)
+				
+				li
+					width: 75%
+					
+				.back,
+				.front
+					display: none
+				
+	i
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		width: 60px
+		height: 60px
+		font-size: 28px
+		text-align: center
+		line-height: 60px
+		background-color: $white
+		cursor: pointer
+		z-index: 10
+		transition: all .2s ease-in-out
+		
+		&:hover
+			transform: translateY(-50%) scale(1.1)
+	
+	.prev
+		left: 30px
+		
+	.next
+		right: 30px
+		
+	@media (max-width: 767px)
+		i
+			transform: translateY(-50%) scale(.7)
+			
+			&:hover
+				transform: translateY(-50%) scale(.8)
+				
+		.prev
+			left: 0
+			
+		.next
+			right: 0
+			

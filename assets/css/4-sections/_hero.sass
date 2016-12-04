@@ -1,0 +1,96 @@
+#hero
+	@include tile
+		
+	header
+		position: absolute
+		left: 50%
+		transform: translateX(-50%)
+		display: flex
+		width: 95%
+		height: 80px
+		align-items: center
+		justify-content: flex-end
+		z-index: 10
+			
+		.nav-toggle
+			position: relative
+			display: flex
+			width: 80px
+			align-items: center
+			justify-content: space-between
+			cursor: pointer
+			transform: scale(1.4)
+			p
+				margin-bottom: 0
+				font-size: 14px
+				font-family: $raleway
+				text-transform: uppercase
+				
+			span,
+			span:before,
+			span:after
+				content: ""
+				position: relative
+				display: block
+				width: 23px
+				height: 2px
+				background-color: $black
+				
+			span:before
+				bottom: 7px
+				
+			span:after
+				top: 5px
+				
+	.wrapper
+		@include wrapper
+			
+		.welcome
+			width: 45%
+		
+			&:after
+				content: ""
+				display: block
+				width: 1px
+				height: 70px
+				background-color: $black
+		
+			h1
+				@include heading
+				
+			p
+				max-width: 450px
+				margin-bottom: 30px
+				
+			@media (max-width: 1180px)
+				&:after
+					display: none
+					
+				p
+					margin-bottom: 0
+				
+		.pool
+			width: 55%
+			align-self: flex-end
+			line-height: 0
+			
+			img
+				width: 139%
+				opacity: .95
+				
+		@media (max-width: 1023px)
+			.welcome
+				display: flex
+				width: 100%
+				flex-direction: column
+				align-items: flex-end
+				text-align: right
+				
+			.pool
+				display: none
+				
+		@media (max-width: 640px)
+			.welcome
+				align-items: center
+				text-align: center
+				

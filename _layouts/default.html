@@ -241,7 +241,7 @@
     var mProps = m.querySelector('.modal__content').getBoundingClientRect();
     var transX, transY, scaleX, scaleY;
     var xc = w.innerWidth / 2;
-    var yc = w.innerHeight ;
+    var yc = w.innerHeight / 2;
 
     // this class increases z-index value so the button goes overtop the other buttons
     trig.classList.add('modal__trigger--active');
@@ -256,7 +256,7 @@
 
     // these values are used to move the button to the center of the window
     transX = Math.round(xc - trigProps.left - trigProps.width / 2);
-    transY = Math.round(yc - trigProps.top - trigProps.height );
+    transY = Math.round(yc - trigProps.top - trigProps.height / 2);
 
 		// if the modal is aligned to the top then move the button to the center-y of the modal instead of the window
     if (m.classList.contains('modal--align-top')) {

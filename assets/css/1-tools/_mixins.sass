@@ -1,0 +1,32 @@
+@mixin tile
+	position: relative
+	width: 1440px
+	max-width: 95%
+	height: 600px
+	margin: 30px auto
+	background-color: $background
+	overflow: hidden
+	
+	@media (max-width: 768px)
+		margin: 15px auto
+	
+@mixin wrapper
+	position: relative
+	display: flex
+	width: 1180px
+	max-width: 95%
+	height: 100%
+	margin: 0 auto
+	align-items: center
+	
+@mixin heading
+	margin-top: 0
+	margin-bottom: 30px
+	font-size: 42px
+	font-family: $raleway
+	font-weight: 100
+	
+	@media (max-width: 640px)
+		margin-bottom: 20px
+		font-size: 30px
+		

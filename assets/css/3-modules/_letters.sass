@@ -1,0 +1,36 @@
+svg
+	position: absolute
+	height: 100%
+	
+	path
+		fill: $svgcolor
+		
+#hero
+	svg
+		left: 70px
+		
+#about,
+#three-slide
+	svg
+		left: 0px
+		
+#full-slide
+	svg
+		left: 0px
+		opacity: .2
+		z-index: 9
+		
+#contact
+	svg
+		left: 70px
+		
+@media (max-width: 640px)
+	#hero,
+	#about,
+	#featured,
+	#three-slide,
+	#full-slide,
+	#contact
+		svg
+			left: 0
+			
