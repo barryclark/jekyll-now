@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1415,193344714,2016-12-04 11:00:42,2016-12-04 11:00:16,Consegnate ad #Amatrice 25 casette. Il montaggio si concluderà entro Natale,,,"[""Accettato"", ""Bollettino"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""04/12/2016"", ""descrizione"": ""Con gli ultimi carichi giunti oggi ad Amatrice il Consorzio nazionale servizi (Cns) ha ultimato in quattro giorni la consegna di tutte e 25 le Soluzioni abitative d'emergenza (Sae) destinate al Campo Lazio degli sfollati del terremoto. Gli ultimi moduli sono arrivati nel tardo pomeriggio nell'area che sar\u00e0 destinata a ospitare famiglie scampate al sisma del 24 agosto scorso nel Reatino. Secondo le stime dei tecnici del Cns-Sae, entro la prossima settimana sar\u00e0 concluso il montaggio di tutte le casette, ma sar\u00e0 necessario attendere un'altra decina di giorni per ultimare le rifiniture interne e per gli allacci delle utenze. Gli alloggi saranno pronti per la consegna a ridosso di Natale, rispettando cos\u00ec gli impegni assunti dal Governo e dal Dipartimento della Protezione civile, viene sottolineato. Campo Lazio ospita un alloggio da 80 metri quadri, 5 da 60 e 19 da 40."", ""link"": ""http://www.ansa.it/lazio/notizie/2016/12/03/amatrice-ultimata-consegna-casette_07d456cb-2a98-433c-ada7-82dfee030881.html"", ""titolo"": ""Consegnate ad #Amatrice 25 casette. Il montaggio si concluder\u00e0 entro Natale""}","<pre><yamldata>titolo: 'Consegnate ad #Amatrice 25 casette. Il montaggio si concluderà entro Natale'
+descrizione: 'Con gli ultimi carichi giunti oggi ad Amatrice il Consorzio nazionale servizi (Cns) ha ultimato in quattro giorni la consegna di tutte e 25 le Soluzioni abitative d''emergenza (Sae) destinate al Campo Lazio degli sfollati del terremoto. Gli ultimi moduli sono arrivati nel tardo pomeriggio nell''area che sarà destinata a ospitare famiglie scampate al sisma del 24 agosto scorso nel Reatino. Secondo le stime dei tecnici del Cns-Sae, entro la prossima settimana sarà concluso il montaggio di tutte le casette, ma sarà necessario attendere un''altra decina di giorni per ultimare le rifiniture interne e per gli allacci delle utenze. Gli alloggi saranno pronti per la consegna a ridosso di Natale, rispettando così gli impegni assunti dal Governo e dal Dipartimento della Protezione civile, viene sottolineato. Campo Lazio ospita un alloggio da 80 metri quadri, 5 da 60 e 19 da 40.'
+link: 'http://www.ansa.it/lazio/notizie/2016/12/03/amatrice-ultimata-consegna-casette_07d456cb-2a98-433c-ada7-82dfee030881.html'
+data: 04/12/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1414,193315334,2016-12-04 10:51:54,2016-12-03 21:42:44,"A #Cascia e #Savelli servono stufette, scarponi, cibo per animali, cibo, addobbi per Natale e altri beni",,,"[""Accettato"", ""Bollettino"", ""Cibo"", ""Da rilanciare"", ""Fabbisogni"", ""Facebook""]",,,{},"<pre><yamldata>tel: '3664008466'
 email: maggi.monica@gmail.com
 cosa: 'scarponi dal 36 al 46 pantaloni tuta dal 46 al 52 cibo per cani, gatti, conigli piatti di carta carta igienica detersivo lavatrice e a mano scottex stufette elettriche pasta, pelati, tonno, zucchero addobbi per Natale (luci e palline)'
@@ -6173,17 +6178,6 @@ descrizione: 'HOTEL ""MILETTO"" - fino a 40 persone'
 indirizzo: 'Sella del Perrone-Campitello Matese, Grondari, San Massimo, CB, Molise, Italia'
 lat: '41.4618523'
 lon: '14.3934605'
-link: ''
-immagine: ''
-data: 16/09/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/533,177473029,2016-09-22 15:45:13,2016-09-16 16:59:09,"Firenze, FI - 3/4 posti letto",43.7698712,11.2555757,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""FABIO abita tra Firenze e Siena, ma mette a disposizione 3/4 posti letto (animali ammessi) a casa sua"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Piazza della Signoria, Quartiere 1, Firenze, Metropolitan City of Florence, Tuscany, 50122, Italia"", ""lat"": ""43.7698712"", ""link"": """", ""lon"": ""11.2555757"", ""tel"": ""3931839574""}","<pre><yamldata>tel: '3931839574'
-email: ''
-descrizione: 'FABIO abita tra Firenze e Siena, ma mette a disposizione 3/4 posti letto (animali ammessi) a casa sua'
-indirizzo: 'Piazza della Signoria, Quartiere 1, Firenze, Metropolitan City of Florence, Tuscany, 50122, Italia'
-lat: '43.7698712'
-lon: '11.2555757'
 link: ''
 immagine: ''
 data: 16/09/2016
