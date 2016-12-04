@@ -3,7 +3,7 @@ layout: post
 title: A developer walks into a BAR
 ---
 
-Making major decisions in technology is hard. Breaking away from the status quo is likely to be met with friction at many points along the way, requiring buy-in from team members, management, and possibly your users as well. It seems easier to avoid making a decision until the drawbacks from your current choice begin to really weigh you down.
+Making major decisions in technology is hard. Breaking away from the status quo is likely to be met with friction at many points along the way, requiring buy-in from team members, management, and possibly your users as well. It seems easier to avoid making a decision until the drawbacks from your current choice begin to really weigh you down.<!--more-->
 
 Recently my wife and I attended a series of pregnancy classes put on by a nearby hospital. Rather than prescribe certain methods or techniques, the instructor laid out the different options we had for each step of the pregnancy, such as pain management and where to have the delivery. Before presenting those, though, she introduced us to the concept of BAR:
 

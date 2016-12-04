@@ -7,6 +7,8 @@ title: Think pure and make functions great again
 
 There has been something of a functional programming renaissance happening recently, in a variety of languages. I've been delving into F# and Elm, and regardless of whether or not I ever use either in my work, I've discovered that there's a lot that I can take back to C#-land to improve the quality of my code. These are concepts that have been known for awhile by those who work primarily in the functional world, but they are a breath of fresh air for me as a functional newbie.
 
+<!--more-->
+
 [Kris Jenkins has a good presentation](https://www.youtube.com/watch?v=tQRtTSIpye4) where he outlines his definition of functional programming is, and I think it's a good one: eliminating side effects in your code wherever possible, and controlling side effects where they are required. Essentially, most of us in the object-oriented world have become numb to the fact that when you see a function signature like this:
 
 ```

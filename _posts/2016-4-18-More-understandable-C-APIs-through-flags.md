@@ -6,7 +6,7 @@ title: More understandable C# APIs through flags
 
 ![Image of flags hanging from the ceiling at the Nixon Presidential Library in Yorba Linda, California]({{ site.baseurl }}/images/775287_10100542294938588_2026077564_o-1.jpg)
 
-Making your APIs more understandable and easy to use is a constant consideration in programming. When I say API, I don't just mean APIs exposed via HTTP or whatever protocol. I also mean any public interface that another component might invoke in an application. Documentation can fill in some blanks, but nothing beats an intuitive signature. Have you ever written a method whose invocations tend to look something like this?
+Making your APIs more understandable and easy to use is a constant consideration in programming. When I say API, I don't just mean APIs exposed via HTTP or whatever protocol. I also mean any public interface that another component might invoke in an application. Documentation can fill in some blanks, but nothing beats an intuitive signature.<!--more--> Have you ever written a method whose invocations tend to look something like this?
 
 ```
 LogTheInfo(relevantObject, true, false, true, false, false);
@@ -48,4 +48,4 @@ public enum LogOptions
 }
 ```
 
-This uses [bitwise operations](https://msdn.microsoft.com/en-us/library/17zwb64t.aspx) to shift to the left, which makes it easier to ensure that each value is the next power of 2 after the previous entry. It does require knowledge of what's going on with the calculation, but the conciseness is a big win. Whether you specify the values explicitly or use the bit shifting, it can make your methods much more easy to use and invocations more comprehensible at a glance. 
+This uses [bitwise operations](https://msdn.microsoft.com/en-us/library/17zwb64t.aspx) to shift to the left, which makes it easier to ensure that each value is the next power of 2 after the previous entry. It does require knowledge of what's going on with the calculation, but the conciseness is a big win. Whether you specify the values explicitly or use the bit shifting, it can make your methods much more easy to use and invocations more comprehensible at a glance.

@@ -5,7 +5,7 @@ title: "Visual Studio Live: DC"
 
 ![Visual Studio Live laptop bag swag]({{ site.baseurl }}/images/vslivebag.jpg)
 
-This year I decided to try to attend my first software development conference, and it ended up being [Visual Studio Live](http://vslive.com/) in Washington DC. The conference just concluded yesterday, and now that I'm back after a full day of travel and haven't entirely passed out yet, I wanted to put some impressions down for anyone else considering going to one of their future events.
+This year I decided to try to attend my first software development conference, and it ended up being [Visual Studio Live](http://vslive.com/) in Washington DC. The conference just concluded yesterday, and now that I'm back after a full day of travel and haven't entirely passed out yet, I wanted to put some impressions down for anyone else considering going to one of their future events.<!--more-->
 
 I wasn't sure what to expect going to a .NET-centric conference. The crowd probably had a higher average age than you'd find at, say, a Ruby on Rails conference, but there was still a wide variety of ages and skill-levels present. It was predominantly male, and at a guess I'd say there the attendees were about 10% female. It was nice to see some female presenters.
 

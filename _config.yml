@@ -11,6 +11,8 @@ description: Put a breakpoint on it!
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: http://rick.engineer/images/kid.jpg
 
+excerpt_separator: <!--more-->
+
 #
 # Flags below are optional
 #

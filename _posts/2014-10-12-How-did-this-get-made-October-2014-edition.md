@@ -5,7 +5,7 @@ title: How did this get made, October 2014 edition
 
 ![Orcas Island Dock]({{ site.baseurl }}/images/orcasislanddocksmaller.jpg)
 
-So I've had this blog for awhile but it laid dormant for a few months. Now I've decided to tweak the theme slightly and make it feel a little more like home. I thought I'd document my current blog set-up for anyone else who is considering setting up their own blog, as well as to be able to compare in the future to see how my site has evolved.
+So I've had this blog for awhile but it laid dormant for a few months. Now I've decided to tweak the theme slightly and make it feel a little more like home. I thought I'd document my current blog set-up for anyone else who is considering setting up their own blog, as well as to be able to compare in the future to see how my site has evolved.<!--more-->
 
 * Hosting: Currently using [A Small Orange](https://asmallorange.com/), which has so far been pretty easy to use. They've also responded to my support ticket requests very quickly, a big point in their favor. The hosting has been cheap for what is their smallest plan, but still adequate for me as I got things going.
 * Installation: [Softaculous](http://www.softaculous.com/) (included with ASO). This has made life so much easier for getting new  blogs up and running quickly, and also notifying me when new versions are available. I can't imagine how many moving parts they have to manage for each software package, but so far it's worked flawlessly.
