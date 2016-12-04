@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Semester/Course Reflection: What a Great Semester!
+title: "Semester/Course Reflection: What a Great Semester!"
 author: akrlicevic
 published: true
 ---
