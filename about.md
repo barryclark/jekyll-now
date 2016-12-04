@@ -1,7 +1,7 @@
 ---
-layout: page
-title: About/Sobre mí
-permalink: /about/
+layout: page_fullpage
+title: About-Sobre mí
+permalink: /About/
 ---
 
 Hi there! Welcome to my website. I'm a Pompeu Fabra University Economics graduate, currently pursuing an MSc in Economics and Finance at the Barcelona Graduate School of Economics. My passions are Macroeconomics and Econometrics although as time goes by you might find that I have a broad range of interests, so don't despair if from time to time you see a post on philosophy, politics, human towers, music, comics, judo or others. I hope you find something interesting, whether it's in the blog section, where I unload some premature ideas and personal opinions, or my (future) research/projects, where the real work will (should be) done.
