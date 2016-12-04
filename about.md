@@ -1,6 +1,6 @@
 ---
 layout: page_fullpage
-title: About-Sobre mí
+title: About
 permalink: /about/
 ---
 
