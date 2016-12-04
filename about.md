@@ -21,7 +21,9 @@ Esta página está basada en el generador de páginas web estáticas. Para más 
 
 Aquesta página web està basada en el generador web estàtic Jekyll/github. Per a més informació visita el repositori de Jekyll Now a GitHub
 
-*Hey, I think you are wrong/wanna discuss X. Not only wrong, but deeply wrong!/ Eh, creo que estás equivocado/quiero comentarte sobre X. No sólo equivocado, sino que rotundamente equivocado!./ Ei, crec que estás equivocat/ et vull comentar sobre X. No només equivocat, sinó rotundament equivocat!* Great, send me an e-mail explaining reasonably why and so I'll seriously consider your arguments./ Genial, mandame un correo explicando raonadamente porqué y tomaré en seria consideración tus argumentos./  Genial, envia'm un correu explicant raonadament perqué i pendré en seria consideració els teus arguments.
+**Hey, I think you are wrong/wanna discuss X. Not only wrong, but deeply wrong!/ Eh, creo que estás equivocado/quiero comentarte sobre X. No sólo equivocado, sino que rotundamente equivocado!./ Ei, crec que estás equivocat/ et vull comentar sobre X. No només equivocat, sinó rotundament equivocat!**
+
+Great, send me an e-mail explaining reasonably why and so I'll seriously consider your arguments./ Genial, mandame un correo explicando raonadamente porqué y tomaré en seria consideración tus argumentos./  Genial, envia'm un correu explicant raonadament perqué i pendré en seria consideració els teus arguments.
 
 
 ### Contact me/ Contacto/ Contacte
