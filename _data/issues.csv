@@ -6189,6 +6189,17 @@ immagine: ''
 data: 16/09/2016
 </yamldata></pre>
 ",open
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/533,177473029,2016-09-22 15:45:13,2016-09-16 16:59:09,"Firenze, FI - 3/4 posti letto",43.7698712,11.2555757,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""FABIO abita tra Firenze e Siena, ma mette a disposizione 3/4 posti letto (animali ammessi) a casa sua"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Piazza della Signoria, Quartiere 1, Firenze, Metropolitan City of Florence, Tuscany, 50122, Italia"", ""lat"": ""43.7698712"", ""link"": """", ""lon"": ""11.2555757"", ""tel"": ""3931839574""}","<pre><yamldata>tel: '3931839574'
+email: ''
+descrizione: 'FABIO abita tra Firenze e Siena, ma mette a disposizione 3/4 posti letto (animali ammessi) a casa sua'
+indirizzo: 'Piazza della Signoria, Quartiere 1, Firenze, Metropolitan City of Florence, Tuscany, 50122, Italia'
+lat: '43.7698712'
+lon: '11.2555757'
+link: ''
+immagine: ''
+data: 16/09/2016
+</yamldata></pre>
+",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/532,177472819,2016-09-22 15:45:52,2016-09-16 16:58:11,"Poppi, AR - Albergo ""La Foresta""",43.7948641,11.8783932,"[""Accettato"", ""Alloggi"", ""Form""]",,,"{""data"": ""16/09/2016"", ""descrizione"": ""ALBERGO \""LA FORESTA\"" Via Nazionale 13, Badia Prataglia"", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via Sassopiano, Centro Montano Sant'Antonio, Poppi, AR, Tuscany, Italia"", ""lat"": ""43.7948641"", ""link"": """", ""lon"": ""11.8783932"", ""tel"": ""0575559009""}","<pre><yamldata>tel: '0575559009'
 email: ''
 descrizione: 'ALBERGO ""LA FORESTA"" Via Nazionale 13, Badia Prataglia'
