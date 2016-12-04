@@ -27,7 +27,9 @@ Great, send me an e-mail explaining reasonably why and so I'll seriously conside
 ### Contact me/ Contacto/ Contacte
 
 You can send me an e-mail at (reverse) anidocgiupcull[at]gmail.com  
+
 Me puede mandar un correo electrónico a (inverso) anidocgiupcull[at]gmail.com
+
 Em pot enviar un correu electrònic a (invers) anidocgiupcull[at]gmail.com
 
 
