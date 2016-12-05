@@ -1,0 +1,8 @@
+---
+layout: post
+title: Amina's Seventh Blog!
+author: akrlicevic
+published: true
+---
+In class last week, we watched part of the first episode of Supergirl. Watching this show, and watching the other show from the previous week was completely different. Besides the fact that I personally liked Supergirl better, I would definitely say that it revolves more around female characters than it does around male characters. I didn’t get to finish the episode, but overall, I’d say that it focuses more on females, for a change! The main character is a woman, and a lot of the characters overall are women. The boss in Supergirl is also a female, which is definitely different than most shows or movies that I’ve watched. 
+Splitting the class into different groups was a smart decision because there was no way that one person could keep track of everything going on in the show. I actually decided to keep track of the time that females talked in the show. Everyone probably has different times, but they should all be close. The total time that I recorded was about 35 minutes, and the total time a woman spoke was about 20 minutes, more or less. Overall, women definitely had a bigger role in this show. But saying that every episode is like this, is not completely true. We can’t judge a whole show based off the first episode, but it is a good gist of it. It was great doing this for a change instead of just reading articles. This helped me understand more in digital humanities and how we can use different tools to help us analyze certain things, like in this case Supergirl and how gender plays a huge role in media. 

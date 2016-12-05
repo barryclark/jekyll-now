@@ -5,13 +5,21 @@ layout: default
 <div class="posts">
   {% for post in site.posts %}
 
-    {% assign author = site.data.authors[post.author] %}
-
     <article class="post">
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
-      {% if author.name %}<span class="post-list-author-name">by {{ author.name }}</span>{% endif %}
+      {% if post.author %}
+        {% for name in post.author %}
+          {% assign author = site.data.authors[name] %}
+            {% if author.name %}
+              {% if forloop.first == true %}<span class="post-list-author-name">by {% endif %}
+              {{ author.name }}
+              {% if forloop.last != true %} and {% else %}</span>{% endif %}
+            {% endif %}
+        {% endfor %}
+
+      {% endif %}
 
       <div class="entry">
         {{ post.excerpt | truncate:500 }}
