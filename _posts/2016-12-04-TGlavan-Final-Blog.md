@@ -49,5 +49,13 @@ For me specifically a few of the cultural competencies stood out as something th
 
 * Networking - As a person who is generally lacking in communication compenecies the requirement to work with my fellow classmates both in class and on the final project has helped me improve in this area
 
+Well I think that about wraps up my commitment for this blog.  To anyone who read all of my blogs I hope you enjoyed them.
+
+Regards,
+
+TGlavan
+
+P.S. The word cloud made for this blog used all of my prior blogs (Haha I'm so clever)
+
 
 
