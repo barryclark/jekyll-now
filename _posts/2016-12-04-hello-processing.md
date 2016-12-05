@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'How to Iterate On a Digital Sketch with Processing'
+title: 'Iterating On a Digital Sketch with Processing'
 author: carol
 ---
 
