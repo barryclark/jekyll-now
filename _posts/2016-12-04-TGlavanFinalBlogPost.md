@@ -21,7 +21,16 @@ Sixteen weeks and a couple thousand dollars later and you get this http://imgur.
 
 Well the answer is 
 
-You should
+- You should
 
+- Basically any internet research
+
+- You may not ever use this again but why take the chance
+
+- See answer 2
+
+- See answer 3
+
+Okay well some of those answers are pretty vague but that is the beauty of it.  The research and data analysis methods covered in this course are so generic they can be applied to almost any field.
 
 * make sense of the work you’ve done this term and to demonstrate that you have thoughtfully considered how the course material may or may not be useful to you in the future
