@@ -25,6 +25,3 @@ You should
 
 
 * make sense of the work you’ve done this term and to demonstrate that you have thoughtfully considered how the course material may or may not be useful to you in the future
-
-
-
