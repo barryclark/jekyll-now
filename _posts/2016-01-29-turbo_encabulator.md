@@ -2,7 +2,7 @@
 layout: post
 title: Turbo Encabulator
 tags: [science, youtube]
-keywords: [technobabble, technology]
+keywords: [technobabble, technology, humor]
 excerpt: Marvel at this most advanced piece of science and technology.
 ---
 
