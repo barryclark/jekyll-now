@@ -7,8 +7,8 @@ published: true
 <i>“Why are you here [at college]? If not to discover new ways of looking at the world?”
 – Milo Yiannopoulos
 	
-“What is Digital Humanities?”
-– Everyone at Research Methods </i>
+<i>“What is Digital Humanities?”
+– Everyone at Research Methods
 
   During the beginning of the semester, this question was surprisingly difficult to answer, but if this was reiterated to me now, I would simply say, “It is a unique application of humanities that is fueled by technological methods created through scholarly collaboration.” In simpler terms, Digital Humanities is a branch of humanities that utilizes technical skills through collaborative research. 
 
