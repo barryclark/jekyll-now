@@ -1,6 +1,6 @@
 ---
 layout: post
-title: You're up and running!
+title: Un comienzo
 ---
 
-Ahora podra hacer algunas cosas guays... si supiera cómo
+
