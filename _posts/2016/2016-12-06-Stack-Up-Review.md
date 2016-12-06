@@ -45,6 +45,6 @@ As a light family game for younger kids? It's great. The dexterity element is re
 
 <h3>Supporting Links</h3>
 
-[Stack Up! at Peaceable Kingdom](http://www.peaceablekingdom.com/product-detail/stack-up!-cooperative-preschool-skills-builder-game)
-[Stack Up! at BGG](https://boardgamegeek.com/boardgame/136563/stack)
+[Stack Up! at Peaceable Kingdom](http://www.peaceablekingdom.com/product-detail/stack-up!-cooperative-preschool-skills-builder-game)\\
+[Stack Up! at BGG](https://boardgamegeek.com/boardgame/136563/stack)\\
 [Purchase Stack Up!](https://www.amazon.com/gp/product/B00ATW9TYW/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&tag=pawnsperspect-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B00ATW9TYW&linkId=84b5b51f5d785a26c7d2d7dcc7073859)
