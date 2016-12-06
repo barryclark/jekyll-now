@@ -2,7 +2,28 @@
 <html>
 <head>
 <title>CATNIP Lab Publications</title>
-<meta http-equiv="Content-Type" content="text/html; charset=\encoding">
+    <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="Computational and Theoretical Neural Information Processing Laboratory">
+    <meta property="og:description" content="Computational and Theoretical Neural Information Processing Laboratory" />
+    
+    <meta name="author" content="CATNIP Lab" />
+
+    
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="CATNIP Lab - Computational and Theoretical Neural Information Processing Laboratory" href="/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+
 <script src="/js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="/js/jquery.tablesorter.js"></script> 
 <script>
@@ -308,8 +329,33 @@ p.infolinks { margin: 0.3em 0em 0em 0em; padding: 0px; }
 }
 </style>
 </head>
-<body>
-<a href="/"><h1>CATNIP Lab Publications</h1></a>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/" class="site-avatar"><img src="/images/catnip_lab_logo.png" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">CATNIP Lab Publication</a></h1>
+            <p class="site-description">Computational and Theoretical Neural Information Processing Laboratory</p>
+          </div>
+
+          <nav>
+            <a href="/">About</a>
+            <a href="/research">Research</a>
+            <a href="/people">People</a>
+            <a href="/publications.html">Publications</a>
+	    <a href="/journalclub">Journal Club</a>
+            <a href="/news">News</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <article class="page">
+
 <form action="" id="quicksearch">
 <input type="text" id="qs_field" autocomplete="off" placeholder="Type to search..." /> <input type="button" onclick="clearQS()" value="clear" />
 <span id="searchstat">Matching entries: <span id="stat">0</span></span>
