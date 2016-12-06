@@ -29,7 +29,7 @@ Of course, the game is really only very challenging for young children, which is
 
 <h2>Pieces</h2>
 
-![Stack Up Pieces]({{ site.url }}/images/stackup/Pieces.jpg){: .float-right }Peaceable Kingdom is great about using recycled materials, and their boards, cards, and rules are all very nicely made. The Stack Smasher is a thick cardboard on a plastic stand and seems sturdy enough for the amount of use it will actually see.
+![Stack Up Pieces]({{ site.url }}/images/stackup/pieces.jpg){: .float-right }Peaceable Kingdom is great about using recycled materials, and their boards, cards, and rules are all very nicely made. The Stack Smasher is a thick cardboard on a plastic stand and seems sturdy enough for the amount of use it will actually see.
 
 The wooden blocks are light, painted, and fairly good quality. This isn't fancy hardwood, but it works for what's needed in the game. It would probably be a bit tougher to younger players if they were much heavier.
 
