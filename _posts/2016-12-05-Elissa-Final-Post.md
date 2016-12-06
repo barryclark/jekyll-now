@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "title"
+title: "The Finale"
 author: enunez2
-published: false
+published: true
 ---
 
 This blog post like most of my finals comes to you in three parts for the last time.
