@@ -5,7 +5,7 @@
 # Name of your site (displayed in the header)
 name: La Vorágine
 # Short bio or description (displayed in the header)
-Por una edición libre y accesible
+description: Por una edición libre y accesible
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
 
