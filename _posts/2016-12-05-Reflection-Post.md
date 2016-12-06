@@ -12,6 +12,7 @@ Through this class, I have been able to apply many of the skills I learned in my
 
 
 *Sources*
+
 https://libbyh.github.io/methods-f16/What-in-the-HECK-is-Digital-Humanities/
 
 https://libbyh.github.io/methods-f16/Rachael-Final-DH-Project/
