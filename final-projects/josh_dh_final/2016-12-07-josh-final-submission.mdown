@@ -45,6 +45,8 @@ Looking at these two images, we can get somewhat of an idea of the average dista
 2. for users who use hashtag x, calculates the mean and median shortest distances to hashtag y (for all hashtag pairs).
 
 The script has been running for about 12 hours now, and may conceivably run for at least another 12 considering the number of paths it has to calculate.  So, unfortunately, I'm not able to share the results, presently.
+![calpaths](paths.png)
+(shortest path values represent number of edges)
 
 ###Discussion
 
