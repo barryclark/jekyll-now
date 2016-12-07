@@ -39,7 +39,7 @@ looking up online information, considering new sources, synthesized and dissemin
 amongst our peers while respecting multiple opinions and/or positions on topics.
 
 
-Specific examples of **new** course material can be observed in the following images (please right click & **open in new tab**):
+Specific examples of **new** course material can be observed in the following images (please **right click** & **open image in new tab**):
 
 Professor Hemphill provided us with what was indirectly, a map of September.  This represents the material covered early on, 
 especially regarding analyzing texts and visual sources. This chart comes from Ted Underwood’s “Seven ways humanists are 
