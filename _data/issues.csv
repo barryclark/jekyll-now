@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1430,194188171,2016-12-07 22:20:38,2016-12-07 22:19:17,Sabato 10 dicembre media tour a sostegno dei centri del Maceratese colpiti dal terremoto,,,"[""Accettato"", ""Bollettino"", ""Facebook"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""07/12/2016"", ""descrizione"": ""Un viaggio lungo cinque borghi alla scoperta di Belforte del Chienti, Caldarola, Cessapalombo, Camporotondo e Serrapetrona. I paesi del maceratese maggiormente colpiti dal terremoto diventano i protagonisti di un media tour, in programma sabato 10 dicembre, per esaltare la vera essenza delle Marche. Un gruppo di bloggers e instagramers, porteranno gratuitamente la loro esperienza sul campo, condividendo l\u2019accoglienza, l\u2019enogastronomia, le ricchezze storiche e paesaggistiche e tutto ci\u00f2 che rende unici questi luoghi. Info: igersmacerata@gmail.com"", ""link"": ""http://www.cultmarche.it/2016/12/07/il-turismo-riparte-dai-social-5-borghi-da-scoprire/18874/"", ""titolo"": ""Sabato 10 dicembre media tour a sostegno dei centri del Maceratese colpiti dal terremoto""}","<pre><yamldata>titolo: 'Sabato 10 dicembre media tour a sostegno dei centri del Maceratese colpiti dal terremoto'
+descrizione: 'Un viaggio lungo cinque borghi alla scoperta di Belforte del Chienti, Caldarola, Cessapalombo, Camporotondo e Serrapetrona. I paesi del maceratese maggiormente colpiti dal terremoto diventano i protagonisti di un media tour, in programma sabato 10 dicembre, per esaltare la vera essenza delle Marche. Un gruppo di bloggers e instagramers, porteranno gratuitamente la loro esperienza sul campo, condividendo l’accoglienza, l’enogastronomia, le ricchezze storiche e paesaggistiche e tutto ciò che rende unici questi luoghi. Info: igersmacerata@gmail.com'
+link: 'http://www.cultmarche.it/2016/12/07/il-turismo-riparte-dai-social-5-borghi-da-scoprire/18874/'
+data: 07/12/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1427,194174166,2016-12-07 21:57:41,2016-12-07 21:25:08,Offresi appartamento di 56mq a #Falconara Marittima (An),43.6293969,13.3966763,"[""Accettato"", ""Alloggi"", ""Bollettino"", ""Facebook"", ""Sisma Ottobre""]",,,"{""data"": ""07/12/2016"", ""descrizione"": ""Ciao a tutti. La coppia di ragazzi terremotati che abbiamo ospitato a casa nostra e' tornata a casa quindi ora l'appartamento e' nuovamente libero. Se potete aiutare me e mia moglie Manuela Farinelli mettendoci in contatto con dei terremotati che dovessero avere bisogno di un alloggio ve ne siamo grati. l'appartamento misura 56 mq calpestabili, 1 camera matrimoniale, 1 cameretta per bimbi con letti a castello, 1 sala con cucina, 1 bagno e due balconi. c'e' anche 1 posto auto in garage. non si richiede alcun compenso ne affitto OVVIAMENTE. l'appartamento e' libero fino al 25 giugno 2017. posizione: Falconara Marittima (AN). Sono contattabile via facebook o whatsapp al 00971529858909. Grazie a tutti per la collaborazione."", ""email"": ""Offresiappartamentodi56mqaFalconaraMarittimaAN"", ""immagine"": """", ""indirizzo"": ""Piazza Giuseppe Mazzini, Castelferretti, Falconara Marittima, AN, Marche, 60015, Italia"", ""lat"": ""43.6293969"", ""link"": ""https://www.facebook.com/abdullah.alatrash.7/posts/10210114778238715"", ""lon"": ""13.3966763"", ""tel"": ""00971529858909""}","<pre><yamldata>tel: '00971529858909'
 email: Offresiappartamentodi56mqaFalconaraMarittimaAN
 descrizione: 'Ciao a tutti. La coppia di ragazzi terremotati che abbiamo ospitato a casa nostra e'' tornata a casa quindi ora l''appartamento e'' nuovamente libero. Se potete aiutare me e mia moglie Manuela Farinelli mettendoci in contatto con dei terremotati che dovessero avere bisogno di un alloggio ve ne siamo grati. l''appartamento misura 56 mq calpestabili, 1 camera matrimoniale, 1 cameretta per bimbi con letti a castello, 1 sala con cucina, 1 bagno e due balconi. c''e'' anche 1 posto auto in garage. non si richiede alcun compenso ne affitto OVVIAMENTE. l''appartamento e'' libero fino al 25 giugno 2017. posizione: Falconara Marittima (AN). Sono contattabile via facebook o whatsapp al 00971529858909. Grazie a tutti per la collaborazione.'
@@ -9897,18 +9902,6 @@ bic: ''
 postale: ''
 causale: 'Emergenza Terremoto Centro Italia'
 link: 'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=43ZBXNKFMYHRS'
-email: ''
-data: 13/09/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/164,176720862,2016-09-13 18:54:16,2016-09-13 18:53:48,Provincia di Modena,,,"[""Accettato"", ""Form"", ""Raccolte Fondi""]",,,"{""bic"": """", ""causale"": ""Azioni di solidariet\u00e0 terremoto centro Italia del 24 agosto"", ""chi"": ""Provincia di Modena"", ""data"": ""13/09/2016"", ""descrizione"": ""Le somme verranno destinate a progetti di assistenza"", ""email"": """", ""iban"": ""IT 52 M 02008 12930 000003398693"", ""intestazione"": """", ""link"": """", ""postale"": """"}","<pre><yamldata>chi: 'Provincia di Modena'
-descrizione: 'Le somme verranno destinate a progetti di assistenza'
-intestazione: ''
-iban: 'IT 52 M 02008 12930 000003398693'
-bic: ''
-postale: ''
-causale: 'Azioni di solidarietà terremoto centro Italia del 24 agosto'
-link: ''
 email: ''
 data: 13/09/2016
 </yamldata></pre>
