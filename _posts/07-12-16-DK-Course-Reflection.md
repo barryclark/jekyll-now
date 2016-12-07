@@ -44,7 +44,7 @@ Professor Hemphill provided us with what was indirectly, a map of September.  Th
 on, especially regarding analyzing texts and visual sources. This chart comes from Ted Underwood’s “Seven ways humanists
 are using computers to understand text.” This is a 2015 blog post that mapped out the following:
 
-![Word Cloud](http://imgur.com/a/xcaX0)  
+![Imgur](http://imgur.com/a/xcaX0)  
 
 This diagram is meant to map a variety of ways to relate to different literary traditions, as ways of interpreting, 
 understanding, and reworking texts in unique methods. For example, converting a visual chart into a video project 
@@ -52,7 +52,7 @@ would be an example of some but not all of the map’s components. That’s the 
 but letting it serve as a loose recommendation to direct workflow in processing and further developing a text.
 
 
-![Word Cloud](http://imgur.com/a/KmX2s)  
+![Imgur](http://imgur.com/a/KmX2s)  
 
 This was one of the first social network maps we covered. It represented Once Upon A Time, in that Emma and Snow were two 
 nodes with the highest degree centrality, the most edges and ties in relation to the rest of the characters. This was 
@@ -61,7 +61,7 @@ from the rest of the chart, meaning they do not have direct connection(s) with o
 indication of not simply insignificance but of limited screen time as well. 
 
 
-![Word Cloud](http://imgur.com/a/bb51R)  
+![Imgur](http://imgur.com/a/bb51R)  
 
 In the 9/11 terrorist network, the central member has high degree centrality, while the top and bottom members are of 
 low centrality due to having few edges. This renders them outliers of the network. I found this network particularly 
