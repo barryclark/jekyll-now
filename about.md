@@ -5,7 +5,9 @@ permalink: /about/
 ---
 
 ![profile picture](/images/profile.jpg)    
-Thanh Nguyen   
+* Email: thanhnguyen2792 AT gmail DOT com  
+* [Quora](https://www.quora.com/profile/Nguyen-Tang-Thanh)
+* [Stackoverflow](http://stackoverflow.com/users/5098762/thanh-nguyentang)  
 
 ## News  
 * I realized blogging is good for my research  
