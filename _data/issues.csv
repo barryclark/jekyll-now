@@ -1,4 +1,14 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1427,194174166,2016-12-07 21:57:41,2016-12-07 21:25:08,Offresi appartamento di 56mq a #Falconara Marittima (An),43.6293969,13.3966763,"[""Accettato"", ""Alloggi"", ""Bollettino"", ""Facebook"", ""Sisma Ottobre""]",,,"{""data"": ""07/12/2016"", ""descrizione"": ""Ciao a tutti. La coppia di ragazzi terremotati che abbiamo ospitato a casa nostra e' tornata a casa quindi ora l'appartamento e' nuovamente libero. Se potete aiutare me e mia moglie Manuela Farinelli mettendoci in contatto con dei terremotati che dovessero avere bisogno di un alloggio ve ne siamo grati. l'appartamento misura 56 mq calpestabili, 1 camera matrimoniale, 1 cameretta per bimbi con letti a castello, 1 sala con cucina, 1 bagno e due balconi. c'e' anche 1 posto auto in garage. non si richiede alcun compenso ne affitto OVVIAMENTE. l'appartamento e' libero fino al 25 giugno 2017. posizione: Falconara Marittima (AN). Sono contattabile via facebook o whatsapp al 00971529858909. Grazie a tutti per la collaborazione."", ""email"": ""Offresiappartamentodi56mqaFalconaraMarittimaAN"", ""immagine"": """", ""indirizzo"": ""Piazza Giuseppe Mazzini, Castelferretti, Falconara Marittima, AN, Marche, 60015, Italia"", ""lat"": ""43.6293969"", ""link"": ""https://www.facebook.com/abdullah.alatrash.7/posts/10210114778238715"", ""lon"": ""13.3966763"", ""tel"": ""00971529858909""}","<pre><yamldata>tel: '00971529858909'
+email: Offresiappartamentodi56mqaFalconaraMarittimaAN
+descrizione: 'Ciao a tutti. La coppia di ragazzi terremotati che abbiamo ospitato a casa nostra e'' tornata a casa quindi ora l''appartamento e'' nuovamente libero. Se potete aiutare me e mia moglie Manuela Farinelli mettendoci in contatto con dei terremotati che dovessero avere bisogno di un alloggio ve ne siamo grati. l''appartamento misura 56 mq calpestabili, 1 camera matrimoniale, 1 cameretta per bimbi con letti a castello, 1 sala con cucina, 1 bagno e due balconi. c''e'' anche 1 posto auto in garage. non si richiede alcun compenso ne affitto OVVIAMENTE. l''appartamento e'' libero fino al 25 giugno 2017. posizione: Falconara Marittima (AN). Sono contattabile via facebook o whatsapp al 00971529858909. Grazie a tutti per la collaborazione.'
+indirizzo: 'Piazza Giuseppe Mazzini, Castelferretti, Falconara Marittima, AN, Marche, 60015, Italia'
+lat: '43.6293969'
+lon: '13.3966763'
+link: 'https://www.facebook.com/abdullah.alatrash.7/posts/10210114778238715'
+immagine: ''
+data: 07/12/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1425,193910345,2016-12-06 22:59:43,2016-12-06 22:59:12,"""Vetrine Sibilline"", vetrina online di CNA #Marche per l'acquisto di prodotti di imprese colpite dal sisma",,,"[""Accettato"", ""acquisto solidale"", ""Bollettino"", ""Form"", ""Sisma Ottobre""]",,,"{""bic"": """", ""causale"": """", ""chi"": ""\""Vetrine Sibilline\"", vetrina online di CNA #Marche per l'acquisto di prodotti di imprese colpite dal sisma"", ""data"": ""06/12/2016"", ""descrizione"": ""Parte \u201cVetrine Sibilline \u2013 Ci ritorNiAmo\u201d, progetto targato Cna Marche Sud, avviato per sostenere le aziende dei territori colpiti dal terremoto con l\u2019acquisto dei prodotti tipici dei Sibillini. Una vetrina di imprese che aderiscono al progetto, con l\u2019obiettivo di promuovere l\u2019acquisto dei prodotti enogastronomici quale veicolo di rilancio, economico ma anche turistico, dei territori che in questo momento sono in grande difficolt\u00e0 a seguito del terremoto. \u201cVetrine Sibilline\u201d \u00e8 online sui siti delle CNA territoriali di Macerata, Fermo e Ascoli Piceno, \u00e8 possibile consultare l\u2019elenco delle imprese, scegliere i prodotti e contattare le aziende. CNA Macerata promuove inoltre cesti regalo solidali realizzati in collaborazione con il Circuito Marchex e con il portale web Marca Camerino: info www.mc.cna.it oppure 0733/27951."", ""email"": """", ""iban"": """", ""intestazione"": """", ""link"": ""http://www.cnafermo.it/vetrine-sibilline-ci-ritorniamo/"", ""postale"": """"}","<pre><yamldata>chi: '""Vetrine Sibilline"", vetrina online di CNA #Marche per l''acquisto di prodotti di imprese colpite dal sisma'
 descrizione: 'Parte “Vetrine Sibilline – Ci ritorNiAmo”, progetto targato Cna Marche Sud, avviato per sostenere le aziende dei territori colpiti dal terremoto con l’acquisto dei prodotti tipici dei Sibillini. Una vetrina di imprese che aderiscono al progetto, con l’obiettivo di promuovere l’acquisto dei prodotti enogastronomici quale veicolo di rilancio, economico ma anche turistico, dei territori che in questo momento sono in grande difficoltà a seguito del terremoto. “Vetrine Sibilline” è online sui siti delle CNA territoriali di Macerata, Fermo e Ascoli Piceno, è possibile consultare l’elenco delle imprese, scegliere i prodotti e contattare le aziende. CNA Macerata promuove inoltre cesti regalo solidali realizzati in collaborazione con il Circuito Marchex e con il portale web Marca Camerino: info www.mc.cna.it oppure 0733/27951.'
 intestazione: ''
@@ -1797,17 +1807,6 @@ descrizione: 'Offro gratuitamente alloggio indipendente su due piani in centro a
 indirizzo: ''
 lat: ''
 lon: ''
-link: ''
-immagine: ''
-data: 08/11/2016
-</yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1174,188037370,2016-11-08 23:13:27,2016-11-08 16:23:54,CERCASI AUTOTRASPORTATORE per #USSITA,43.583333,11.316667,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Pubblicare su FB"", ""Sisma Ottobre""]",,,"{""cosa"": ""CERCASI AUTOTRASPORTATORE #USSITA"", ""data"": ""08/11/2016"", ""descrizione"": ""Serve autorasportatore per trasportare 2 roulotte da Greve in Chianti fino a Ussita. Contattare Sara."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": ""43.583333"", ""link"": """", ""lon"": ""11.316667"", ""tel"": ""+393462865450""}","<pre><yamldata>tel: '+393462865450'
-email: ''
-cosa: 'CERCASI AUTOTRASPORTATORE #USSITA'
-descrizione: 'Serve autorasportatore per trasportare 2 roulotte da Greve in Chianti fino a Ussita. Contattare Sara.'
-indirizzo: ''
-lat: '43.583333'
-lon: '11.316667'
 link: ''
 immagine: ''
 data: 08/11/2016
