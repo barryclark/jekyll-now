@@ -1,9 +1,7 @@
 ---
   layout: post
   title: The Suspense is Killing Me
-  author:
-  - sburnet1
-  - TGlavan
+  author: sburnet1
   publish: true
 ---
 
