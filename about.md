@@ -5,7 +5,7 @@ permalink:about
 published: true
 ---
 Thanh Nguyen
-
+![profile picture](/images/profile.jpg)    
 
 ## Research interests
 **Approximate Inference and Information Bottleneck for Deep Neural Network**
