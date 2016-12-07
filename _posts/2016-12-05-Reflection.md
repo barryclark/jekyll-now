@@ -1,8 +1,8 @@
 ---
-  layout: post;
-  title: Burnette Reflection Post;
-  author: sburnet1;
-  publish: true;
+  layout: post
+  title: Burnette Reflection Post
+  author: sburnet1
+  publish: true
 ---
 
 December, snow, cold, finals, oh my god.  It cannot be true, not yet.  This semester was suppose to be my last hurray, I was suppose to do so good that I surprised myself. But as true for many people in my shoes, things didn't go so well.  And this especially applies to this class.  You never know just how badly getting sick will affect your semester until it happens.  After this semester, I will never wish getting pneumonia on anyone.  Not only did it suck and hurt really bad, it made my last semester impossible.  To feel stuck at the beginning more than half way through the semester.  You honestly just do not want to do.  Not with six classes.  
