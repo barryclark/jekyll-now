@@ -1,8 +1,7 @@
 ---
 layout: page
 title: Work
-permalink:/work/
-published: true
+permalink: /work/
 ---  
 
 
