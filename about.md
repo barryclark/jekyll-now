@@ -2,7 +2,6 @@
 layout: page
 title: About
 permalink:about
-published: true
 ---
 
 ![profile picture](/images/profile.jpg)    
