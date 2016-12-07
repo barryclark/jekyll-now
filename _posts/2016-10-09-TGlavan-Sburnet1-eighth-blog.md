@@ -1,10 +1,10 @@
 ---
-layout: post
-title: The Suspense is Killing Me
-author:
-- Sburnet1
-- TGlavan
-publish: true
+  layout: post
+  title: The Suspense is Killing Me
+  author:
+   sburnet1
+   TGlavan
+  publish: true
 ---
 
 And now the moment you've all been waiting for...the final project, where videos and power points know no bounds.
