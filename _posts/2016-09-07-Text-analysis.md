@@ -1,9 +1,8 @@
 ---
-layout: post
-title: Textual Analysis?
-author: 
- - sburnet1
-publish: true
+ layout: post
+ title: Textual Analysis
+ author: sburnet1
+ publish: true
 ---
 
 ###So, how do computer change textual analysis?
