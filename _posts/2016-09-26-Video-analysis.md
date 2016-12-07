@@ -1,9 +1,8 @@
 ---
-layout: post
-title: Why I love Video!
-author: 
- - sburnet1
-publish: true
+ layout: post
+ title: Why I love Video
+ author: sburnet1
+ publish: true
 --- 
 
 You may remember this set from the Park, Oh, Jo text from this week.  
