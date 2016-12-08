@@ -2,6 +2,7 @@
 layout: post
 title: RM in DH Course Reflection
 author: dkomarovo
+published: true
 ---
 
 August 22nd, the first day of Research Methods, we gathered into groups to discuss and present our own definitions of the 
@@ -21,7 +22,7 @@ consistent deadlines for turning in written work that we believed was a reflecti
 allowed for thoughtful and critical writing, due to always having the opportunity to create a new post and increase 
 performance. I found that my posts certainly improved over time, as well as my writing skills. Additionally, learning to 
 use Github was completely new to me. However, there could have been more feedback given for posts by our professor, 
-regarding our writing, but that always something that could be improved upon in the future; truly, everyone can improve 
+regarding our writing, but that feedback could be improved upon in the future; truly, everyone can improve 
 their performance. 
 
 
