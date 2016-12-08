@@ -1,3 +1,5 @@
+**Counts for how many time each word was used in the entire data set**
+
 seduce: 1
 motherfucka: 1
 maxi: 1
