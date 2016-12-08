@@ -56,3 +56,7 @@ On the opposite side of the argument are those that believe that there is absolu
 I personally believe there to be an actual benefit to curse.  It helps relieve pain and stress when, for example, a heavy box falls on my foot and I in turn drop a F-bomb, it allows you to release your frustration in the form of a word.  In the same article from BBC, a study in which two participants were told to place thier arm into a bucket of ice water, showed that swearing acted as a hypoalgesic, pain lesener.  One group was told to yell out with profanity while the other group was told to shout out with clean language.  Another aspect that was noticed was that the heart rate of someone that uses swear words goes up leading to believe that there is an emotional response to using banned words(that study can be found [here](https://www.ncbi.nlm.nih.gov/pubmed/22078790)
 
 Whether or not swear words are an negative part of english language, one thing is for sure, curse words are becoming less and less of a taboo thing to say in music.  Plenty of chart topping singles, and albums as well, contain explicit language and content, and it seems like it's only going up.
+
+
+###The extras
+Also, if you're further interested or wanted to use some of our data for some other reason, we have compiled a huge folder of as much data we ca pull, organized in a ton of different ways, to use as you please. You can find all that data [here](https://github.com/libbyh/methods-f16/tree/master/final-projects/robert-carlos-countVulgar/data)
