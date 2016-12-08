@@ -1,3 +1,5 @@
+**Banned words per year**
+
 1960: 1
 1961: 2
 1962: 6
