@@ -38,9 +38,9 @@ This analysis showed us that we were correct in our original hypothesis, in whic
     <script data-plotly="rsjudka:6"  src="https://plot.ly/embed.js" async></script>
 </div>
 
-So from the graph above you can see that most of the curse words were used in the more recent years towards the right.  Not only did the frequency of previous curse words go up, but new ones that had not been used before also recieved an increase in use.   
+So from the [graph above](https://plot.ly/~rsjudka/6/) you can see that most of the curse words were used in the more recent years towards the right.  Not only did the frequency of previous curse words go up, but new ones that had not been used before also recieved an increase in use.   
 
-This next graph shows the total count of curse words used each year, an even better visual of the increase in curse words. The only caveat of our data is that the lyrics used for the larger range is only the first part of each song so it's not as accurate as it can be.
+This [next graph](https://plot.ly/~rsjudka/2/) shows the total count of curse words used each year, an even better visual of the increase in curse words. The only caveat of our data is that the lyrics used for the larger range is only the first part of each song so it's not as accurate as it can be.
 
 <div>
     <a href="https://plot.ly/~rsjudka/2/" target="_blank" title="" style="display: block; text-align: center;"><img src="https://plot.ly/~rsjudka/2.png" alt="" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
