@@ -59,4 +59,4 @@ Whether or not swear words are an negative part of english language, one thing i
 
 
 ###The extras
-Also, if you're further interested or wanted to use some of our data for some other reason, we have compiled a huge folder of as much data we ca pull, organized in a ton of different ways, to use as you please. You can find all that data [here](https://github.com/libbyh/methods-f16/tree/master/final-projects/robert-carlos-countVulgar/data)
+Also, if you're further interested or wanted to use some of our data for some other reason, we have compiled a huge folder of as much data we ca pull, organized in a ton of different ways, to use as you please. You can find all that data [here](https://github.com/libbyh/methods-f16/tree/master/final-projects/robert-carlos-countVulgar/data).
