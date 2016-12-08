@@ -1,5 +1,5 @@
 import plotly.plotly as py
-py.sign_in('rsjudka', 'jQOyOfRQc2bvvH7GH18e')
+py.sign_in('rsjudka', 'APIKEY')
 import plotly.graph_objs as go
 import numpy as np
 from collections import OrderedDict
