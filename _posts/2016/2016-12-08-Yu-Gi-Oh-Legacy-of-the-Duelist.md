@@ -4,6 +4,7 @@ title: "Yu-Gi-Oh! Legacy of the Duelist now available on Steam"
 description: "Yu-Gi-Oh! Legacy of the Duelist is now available on PC Steam in the Americas and Europe, marking the first time the Yu-Gi-Oh! franchise is available for the popular PC platform."
 category: video games
 featured: legacyoftheduelist.jpg
+amazonterm: yu-gi-oh
 tags: [video games, konami, yu-gi-oh, legacy of the duelist ]
 author: Rob Kalajian
 ---
