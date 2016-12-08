@@ -1,3 +1,5 @@
+**List of words used as 'banned words'**
+
 a55
 a55hole
 aeolus
