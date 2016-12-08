@@ -1,3 +1,5 @@
+**Counts for each word per year**
+
 1960: {'vixen': 1}
 1961: {'slave': 1, 'hell': 1}
 1962: {'diddle': 2, 'hell': 2, 'shit': 1, 'gay': 1}
