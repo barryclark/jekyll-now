@@ -1,11 +1,3 @@
----
-layout: post
-title: countVulgar
-author:
-- rsjudka
-- Red
----
-
 #Pop Music gets explicit
 
 
