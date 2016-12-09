@@ -1,0 +1,565 @@
+---
+title: "STG Tips and Workarounds"
+output:
+  prettydoc::html_pretty:
+    theme: cayman
+    highlight: github
+    toc: yes
+  pdf_document: default
+  word_document: default
+
+---
+## Who is SwissPeaks:
+SwissPeaks are established market research and data management experts, delivering exceptional research, monitoring, evaluation and data visualization services. We have a strong reputation for providing an extensive range of high quality market research services spanning collection, collation, analysis and reporting. We work closely with you throughout the process to deliver your brief quickly and efficiently, while keeping data quality an integral component throughout. 
+
+### SwissPeaks and SurveyToGo
+SurveyToGo is a Mobile Survey Software. SwissPeaks mostly uses SurveyToGo for all their data collection needs;
+
+- Questionnaire Scripting.
+- Offline Data Collection.
+- Interviewers Management.
+- Data Collection Monitoring.
+
+SwissPeaks would like to showcase its expertise in SurveyToGo Scripting as well as share some tips and workarounds.
+
+## Tips and Workarounds:
+
+### How to Generate random numbers
+ 
+You might want to generate a random number from an array, and use it later in the survey. To do this, we'll create a global var as follows;
+```
+var steps = RandomizeArray([20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50]);
+```
+The above will return a number between 20 and 50, selected randomly.
+
+<a href="#top">back to top</a>
+
+***
+
+### How to randomly select direction and steps to be followed during data collection
+
+We would like to set up 2 random number counters; one that random selects an integer in the range `1 to 3` and the other that randomly selects a number in the range `20 to 50`. The `1, 2 and 3` would then be used to inform the interviewer to walk to their `left (1)`, `straight on (2)` or to their `right (3)`. The `20 to 50` random number selected would then tell them how many paces to walk in the chosen direction.
+
+- Step 1:
+
+Add the following code in the `end script` of any question in your survey, before the question that shows the direction.
+```
+//This will create an arry of 3 numbers (1,2,3), then select one randomly.
+var direction = RandomizeArray([1,2,3]); 
+
+// Checks if the randomly selected number is 1
+if ((direction[0]==1)) 
+{
+//Returns the text "to your Right" if the randomly selected number is 1.
+	dblSetSpecificTopic(QRef(indexfordummyquestion),1,"to your Right"); 
+}
+// Checks if the randomly selected number is 2
+if ((direction[0]==2)) 
+{
+//Returns the text "to your Left" if the randomly selected number is 2.
+	dblSetSpecificTopic(QRef(indexfordummyquestion),1,"to your Left"); 
+}
+// Checks if the randomly selected number is 3
+if ((direction[0]==3)) 
+{
+//Returns the text "straight on" if the randomly selected number is 3.
+	dblSetSpecificTopic(QRef(indexfordummyquestion),1," straight on"); 
+}
+```
+
+- Step 2:
+
+Create an **Open ended grid** question that will store the texts we have created above, and replace `indexfordummyquestion` with the actual `index`.
+Under the topics, just enter `1`.
+Make sure to make the question `dummy/hidden`.
+
+- Step 3:
+
+On the question that shows direction to the interviewer, add 2 place holders like this;
+```INTERVIEWER:  Walk {0}, Then {1} steps in the chosen direction:``` then under scripts, enter this;
+```
+//Returns a number between 20 and 50, that is being used as the number of paces/steps
+var steps = RandomizeArray([20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50]);
+//Returns the direction and number of paces/steps on the questions text.
+SetTextFormat(CurrQues,AnswerChoice(QRef(2),1),steps[0]);
+```
+
+<a href="#top">back to top</a>
+
+***
+
+###  How to Sum check across questions
+
+Lets assume you have two integer questions, `Q1a` and `Q1b` and you would like to sum these questions together, then use the total sum as validation check for another question;
+
+- You'll first create a `function` in the `Advanced Scripts Section` as follows;
+
+```
+function mySum()
+{
+ var sum = 0
+ var Q1a = 0
+ var Q1b = 0
+ if(Answered(QRef(indexforQ1a))&&Answered(QRef(indexforQ1b)))
+ {
+  Q1a = AnswerChoice(QRef(indexforQ1a),1);
+  Q1b = AnswerChoice(QRef(indexforQ1b),1);
+  sum = Q1a + Q1b;
+ }
+return(sum);
+}
+```
+
+-  Then you add a validation rule in the question you want to validate 
+`mySum() != AnswerChoice(QRef(indexforvalidationquestion),1` and then enter the text that you would like to have as the error message.
+
+<a href="#top">back to top</a>
+
+***
+
+### How implement multiple languages in Dynamic Text Substitution
+You might have use DTS and your Survey is in 2 or more languages, when the enumerator switches bwteen the languages, the text does not change, based on the language. There is a way to do this;
+
+- Step 1:
+
+On the question that comes before the question that needs DTS, enter this under `Question End Script`;
+
+```
+//Checks selected option on control question
+((Answer(QRef(indexforcontrolquestion))==1))
+{
+//Returns text for Language 1
+ dblSetSpecificTopic(QRef(indexfordtsdummy),1,"Kenyan");
+//Returns text for Language 2
+ dblSetSpecificTopic(QRef(indexfordtsdummy),2,"Mkenya");
+ 
+//Checks selected option on control question
+if ((Answer(QRef(indexforcontrolquestion))==2))
+{
+//Returns text for Language 1
+ dblSetSpecificTopic(QRef(indexfordtsdummy),1,"British");
+//Returns text for Language 2
+ dblSetSpecificTopic(QRef(indexfordtsdummy),2,"M'Uingerza");
+}
+//Checks selected option on control question
+if ((Answer(QRef(indexforcontrolquestion))==3))
+{
+//Returns text for Language 1
+ dblSetSpecificTopic(QRef(indexfordtsdummy),1,"American");
+ //Returns text for Language 2
+ dblSetSpecificTopic(QRef(indexfordtsdummy),2,"M'Amerika");
+}
+//Checks selected option on control question
+if ((Answer(QRef(indexforcontrolquestion))==4))
+{
+//Returns text for Language 1
+ dblSetSpecificTopic(QRef(indexfordtsdummy),1,"German");
+ //Returns text for Language 2
+ dblSetSpecificTopic(QRef(indexfordtsdummy),2,"M'Jerumani");
+}
+```
+
+- Step 2:
+
+Create an **Open ended grid** question that will store the texts we have created above, and replace `indexfordtsdummy` with the actual `index`.
+Under the topics, enter `1` and `2` - These are for storing texts for the two languages.
+Make sure to make the question `dummy/hidden`.
+
+- Step 3:
+On the question that has DTS, enter this under `Question Start Scripts`
+
+```
+// Checks for the selected language
+var languageTopic = (LanguageMgr.IsDefaultLanguage) ? 1 : 2;
+//Pulls text based on the selected language.
+var textPipe = AnswerChoice(QRef(indexfordtsdummy),languageTopic);
+//Returns text based on the selected language.
+SetTextFormat(CurrQues,textPipe);
+```
+
+<a href="#top">back to top</a>
+
+***
+
+### How to Hide/Show Answers based on previous selections
+
+You might want to show or hide options based on previous selections, or filter Answers by Answers.
+
+For example if the filter question is index `1` and answer code is `1` and the answers that you want to hide are indexes `3,4` you will use this code in the `Question Start Scripts`
+
+```
+if(Answer(QRef(1))==1)
+{
+    SetAnswerVisible(CurrQues,false,false,3,4);
+}
+```
+
+If you would like to hide all the answer of `Q3` and show only option `4` if `1` was selected in `Q2` then you can use this script in the `Question start script` of `Q3`:
+
+```
+if(Answer(QRef(2))==1)
+{
+    SetAnswerVisible(QRef(3),false);
+    SetAnswerVisible(QRef(3),true,false,4);
+}
+```
+
+<a href="#top">back to top</a>
+
+***
+
+### How to Hide/Show topics based on previous selections
+
+To change the visibility of the topics in `Q25` by the answers selected in `Q22` adding the following in the `Q25` Start Script:
+
+```
+SetTopicVisible(CurrQues,false);
+//There are 5 topics
+for(var i = 1; i <= 5; i++)
+{
+ if((i != 5) && (Contains(Q22,i)))
+ {
+  SetTopicVisible(CurrQues,i,true);
+ }
+ else if((i = 5) && (Contains(Q22,6)))
+ {
+  SetTopicVisible(CurrQues,i,true);
+ }
+}
+```
+
+<a href="#top">back to top</a>
+
+***
+
+### How to implement loops from integer question types
+
+You might want to loop a set of questions a couple of times, based on a number entered in a previous question, for instance, a household roster.
+
+To do this follow these steps:
+
+- Add an integer question that will control the loop, lets assume its `Q24`
+
+- Add a `sub chapter` that will contain the questions to be repeated.
+
+- Under `Loops` on the `sub chapter` settings, select `iterate by scale`.
+
+- On the `iterate by scale` drop down, click create new and enter numbers upto to the highest number the control question created above can accept. Give your scale a name.
+
+- On the same screen, at the bottom, enter the following code on the `Iteration Entrance Rule`:
+
+```
+// This will repeat the questions as long as the value in the control question is greater than 0 and less than or equal to the iteration scale.
+IterationIndex != 1 && (IterationIndex <= Answer(24))
+```
+
+- Add questions within this `sub chapter`. 
+
+- Once done with the questions to be repeated, continue with other question in another `sub chapter`
+
+<a href="#top">back to top</a>
+
+***
+
+### How to Measure time between questions
+
+Time differences can be given in most of the common time formats seconds, minutes, etc'.
+
+In the place where you want to tick the **start time** you can use the following code:
+```
+//This will capture the current time & date within a global variable named "Start".
+Vars["Start"]=Now;
+```
+In the place you want to capture the **end time**, you should use the following code:
+
+```
+//This will capture the current time & date within a global variable named "End".
+Vars["End"]=Now;
+```
+
+*Note: These code lines would be best written within `start/end scripts`.
+
+*Note: You can give these variables any name you would like.
+
+Here are the functions optional for it:
+```
+TimeDiffYears(Vars["End"],Vars["Start"]);
+
+TimeDiffMonths(Vars["End"],Vars["Start"]);
+
+TimeDiffDays(Vars["End"],Vars["Start"]);
+
+TimeDiffHours(Vars["End"],Vars["Start"]);
+
+TimeDiffMinutes(Vars["End"],Vars["Start"]);
+
+TimeDiffMilliSeconds(Vars["End"],Vars["Start"]);
+
+TimeDiffSeconds(Vars["End"],Vars["Start"]);
+```
+
+Each will return a numeric value which corresponds to the difference in the given time format.
+You can return this value in an expression question, or even use it for rules and scripts!
+
+<a href="#top">back to top</a>
+
+***
+
+### How to sum up numeric questions and ignore negative values.
+
+Under `Advanced Scripts`, enter this code;
+```
+function SumNumericQuestionsInRange (inStartQ, inEndQ)
+{
+ var retVal = 0;
+ for (var i = inStartQ; i <= inEndQ; i++)
+ {
+  if (Answer(i) >= 0)
+  {
+      retVal += Answer(i);
+  }
+ }
+ 
+ return retVal;
+}
+```
+
+The function above will add to the sum only the values that are 0 or more.
+
+You can then call this function `SumNumericQuestionsInRange` anywhere on your questionnaire.
+
+<a href="#top">back to top</a>
+
+***
+
+### How to concatenate answers selected from different questions into one list.
+
+If you have a series of questions that you would like to concatenate all the selected answers into one list, you will need to create a `function` in the `Advanced Scripts` section using this code;
+```
+function GetAnswersTexts(QidxArr)
+{    
+ if (QidxArr.length == 0) return "";
+
+ var text = "";
+
+ for(var i=0; i<QidxArr.length; i++)
+ {
+  var answers = GetAnswers(QidxArr[i]);
+
+  for(var j=0; j<answers.length; j++)
+  {
+      var textToAdd = (IsOtherSpec(QidxArr[i],answers[j])) ? AdditionalAnswerText(QidxArr[i],answers[j]) : AnswerText(QidxArr[i],answers[j]);
+
+      text = text.concat(textToAdd);
+
+      if(i < QidxArr.length-1 || j < answers.length - 1)
+      {
+    text = text.concat(", ");
+      }
+  }
+ }
+
+ return text;
+
+}
+```
+The above function will receive an array of answers from different questions from which to concatenate to one text string.
+
+If you would like to use this function on your survey, add this code to the `Start Script` of the question you want the concatenated text to appear.
+
+```
+//Get the selected options for Q16 to Q23
+var pipe = GetAnswersTexts([QRef(16), QRef(17),QRef(18), QRef(19),QRef(20), QRef(21),QRef(22), QRef(23)]);
+
+SetTextFormat(CurrQues,pipe);
+```
+<a href="#top">back to top</a>
+
+***
+
+### How to create a loop based on the number of selections on a specific question
+
+There are 3 multiple choice questions that are answered based on a condition, which means one respondent can only answer one multiple choice.
+
+I would like to use the options selected in these questions, as a control for a loop.
+
+- Create a `function` in the `Advanced Scripts` like this;
+
+```
+function GetCurrText(inIterIdx)
+{
+ var retVal = "";
+ var quesIdx = -1;
+ var districtCode = Answer(QRef(5)).ToInt();
+
+ // choose the relevant question to pull text from
+ switch (districtCode)
+ {
+  case 1:
+      quesIdx = QRef(16);
+      break;
+  case 2:
+      quesIdx = QRef(17);
+      break;
+  case 3:
+      quesIdx = QRef(18);
+      break;
+  case 4:
+      quesIdx = QRef(19);
+      break;
+  case 5:
+      quesIdx = QRef(20);
+      break;
+  case 6:
+      quesIdx = QRef(21);
+      break;
+  case 7:
+      quesIdx = QRef(22);
+      break;
+  case 8:
+      quesIdx = QRef(23);
+      break;
+ }
+
+ // Question index 23 is an open ended quetion and will be handlled differently 
+ if (quesIdx != QRef(23))
+ {
+  var selectedAnswers = GetAnswers(quesIdx); // get an array of all selected indexes
+  // if the current iteration number meets the number of answers selected
+  if (selectedAnswers.length >= inIterIdx)
+  {
+      // get the text of the answer that is in the "initerIdx - 1" place in the array (as arrays are zero-based indexed)
+      retVal = AnswerText(quesIdx, selectedAnswers[inIterIdx - 1]);
+      // if this selected answer i an "other specify" answer, we ant to pull the additional text of it
+      if (IsOtherSpec(quesIdx, selectedAnswers[inIterIdx - 1]))
+      {
+    retVal = AdditionalAnswerText(quesIdx, selectedAnswers[inIterIdx - 1]);
+      }
+  }
+ }
+ // if this is the open ended question
+ else
+ {
+  retVal = Answer(quesIdx).ToString();
+ }
+
+ return retVal;
+}
+```
+
+I can then use the above `function` anywhere in the questionnaire;
+
+```
+SetTextFormat(CurrQues,GetCurrText(IterationIndex));
+```
+
+<a href="#top">back to top</a>
+
+***
+
+### How to sum up values in a Numeric Grid and ignore negative values
+
+On a numeric Grid, you can overwrite the custom **Total** and create your own function that will sum all values and ignore negative values.
+
+Create the function;
+
+```
+function myNumericGridSum(inQ)
+{
+ var retVal=0;
+ var numOfTopics=GetTopicCount(inQ);
+ var i;
+
+ for(i=1; i<=numOfTopics; i++)
+ {
+  if (IsTopicVisible(inQ,i) && AnswerChoice(inQ, i) > 0) {
+      retVal+=AnswerChoice(inQ,i);
+  }
+ }
+
+ return retVal;
+}
+```
+As you can see the code ignores into the sum values that are less than 0.
+
+You can now use this function in your script.
+
+
+<a href="#top">back to top</a>
+
+***
+
+### How to use values from a previous Loop in another loop
+
+I have 2 loops, controlled by one question **Household size**
+`Loop 1`, gets *name*,*age* and *gender* of each **household member**
+`Loop 2`, gets activities carried out by each **household member**
+
+I would like to pull in the *age* and *gender* of each **household member** from `Loop 1` and pipe it to the question text in `Loop 2`.
+
+I will use this code in the start script of questions to pipe the text in `Loop 2`:
+
+```
+//Gets the age from Loop 1 for the current iteration in Loop 2
+var age = AnswerIter(QRef(55),IterationIndex);
+//Gets the gender from Loop 1 for the current iteration in Loop 2
+var gender = SelectedAnswerTextIter(QRef(56),IterationIndex);
+
+//Concatenates the age and gender into the question text in Loop 2
+SetTextFormat(CurrQues,"Age: " + age +", Gender: " + gender);
+```
+
+<a href="#top">back to top</a>
+
+***
+
+### How to get the iteration index from a group of multiple choice questions
+
+Same as this, [*How to create a loop based on the number of selections on a specific question*](#how-to-create-a-loop-based-on-the-number-of-selections-on-a-specific-question), but this does not factor in the open ended question.
+
+```
+function determineQidxForLoop(iterIdx)
+{
+var numOfAnswers;
+if(Equals(5,1))
+{
+ numOfAnswers = NumOfSelectedChoices(16);
+}
+else if(Equals(5,2))
+{
+ numOfAnswers = NumOfSelectedChoices(17);
+}
+else if(Equals(5,3))
+{
+ numOfAnswers = NumOfSelectedChoices(18);
+}
+else if(Equals(5,4))
+{
+ numOfAnswers = NumOfSelectedChoices(19);
+}
+else if(Equals(5,5))
+{
+ numOfAnswers = NumOfSelectedChoices(20);
+}
+else if(Equals(5,6))
+{
+ numOfAnswers = NumOfSelectedChoices(21);
+}
+else if(Equals(5,7))
+{
+ numOfAnswers = NumOfSelectedChoices(22);
+}
+else if(Equals(5,8))
+{
+ numOfAnswers = 1
+}
+
+ return iterIdx <= numOfAnswers
+ }
+```
+ 
+<a href="#top">back to top</a>
+
+*** 
+ 
+ 
