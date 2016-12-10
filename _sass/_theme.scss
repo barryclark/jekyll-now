@@ -554,8 +554,19 @@ header.single-header .desc{
 
     }
 }
+header.single-header a.home{
+    color: #fff;
+    position: absolute;
+    z-index: 4;
+    top: 10px;
+    text-decoration: none;
+    font-family:akularegular;
+    font-size: 10px;
+}
+header.single-header a.home span.icon{}
 
 /* SINGLE POST (all this comes from my previous blog, keep DRY) */
+
 // scream
 .shout{
     header{
