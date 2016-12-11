@@ -47,7 +47,7 @@ published: true
     <td>What limited my learning? Which habits do I need to work on? </td>
   </tr>
   <tr>
-    <td>The factor that limited my learning was my lack of Scratch knowledge before hand causing me to struggle to know the cause and effect of doing different things on Scratch. There is a lot less things to work on than in previous lessons as I made a point to improve this week and that seemed to have worked.</td>
+    <td>The factor that limited my learning was my lack of Scratch knowledge before hand causing me to struggle to know the cause and effect of doing different things on Scratch. There are a lot less things to work on than in previous lessons as I made a point to improve this week and that seemed to have worked.</td>
   </tr>
   <tr>
     <td>What will I change for next time? How will I improve my learning?</td>
