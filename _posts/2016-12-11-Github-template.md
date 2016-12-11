@@ -23,7 +23,7 @@ published: true
   </tr>
   <tr>
     <td>Target for this lesson?</td>
-    <td>To make the game more refined by adding more code</td>
+    <td>To make the game more refined by adding more code.</td>
   </tr>
   <tr>
     <td>Did I reach my target? 
