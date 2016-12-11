@@ -11,9 +11,9 @@ header-img: "images/bg-post-api.jpg"
 
 ### Introduction
 
-Last Friday we released version 0.11.0 och our Open Source API Management System [wicked.haufe.io](http://wicked.haufe.io) ([GitHub Repository](https://github.com/Haufe-Lexware/wicked.haufe.io), [Release Notes](https://github.com/Haufe-Lexware/wicked.haufe.io/blob/master/doc/release-notes.md#0110-beta)). Over the course of the last couple of weeks our focus has been to make deployments to production easier and how to enable deployments to alternative runtimes (other than using `docker-compose`) or how to make them easier.
+Last Friday we released version 0.11.0 och our Open Source API Management System [wicked.haufe.io](http://wicked.haufe.io) ([GitHub Repository](https://github.com/Haufe-Lexware/wicked.haufe.io), [Release Notes](https://github.com/Haufe-Lexware/wicked.haufe.io/blob/master/doc/release-notes.md#0110-beta)). Over the course of the last couple of weeks our focus has been to make deployments to production easier and how to enable deployments to alternative runtimes (other than using `docker-compose`), or at least how to make them easier.
 
-This blog post will explain some of the changesand enhancements which were made and how you can update your existing API Configurations to benefit from them.
+This blog post will explain some of the changes and enhancements that were made and how you can update your existing API Configurations to benefit from them.
 
 ### Recap - Deployment Architecture
 
@@ -24,26 +24,31 @@ To set the scene a little, let's recap how the deployment architecture of a typi
 
 The two main blocks are the portal components and the Kong components (the actual API Gateway). Both blocks are made up of further smaller containers which fulfill specific tasks, such as the "mailer" or the "portal". The Kong components consist of _n_ Kong Gateways (depending on your scalability needs) and a Postgres database in which Kong stores its configuration.
 
+In front of both blocks resides the load balancer. This can be any load balancer capable of doing SSL termination and resolving VHOSTs (i.e. almost any LB). The default implementation is leveraging `docker-haproxy` for this purpose, but using an Apache LB, nginx proxy, or even an ELB or Azure LB is equally possible (albeit not preconfigured).
+
 ### Configuration and Persistent Data
 
-The API Portal needs to keep its configuration somewhere, and also needs to keep some data persistent. The configuration data is static and is usually retrieved from a source code repository (preferably git). This means this data does not need to be persisted, as it can be recreated from scratch/from code any time ("STATIC CONFIG"). Data which comes from the usage of the API Portal (users, applications, subscriptions and such) needs to be persisted in some way ("PERSISTENT DATA"):
+The API Portal needs to keep its configuration somewhere, and also needs to keep some data persistent. The configuration data is static and is usually retrieved from a source code repository (preferably git). This means this data does not need to be persisted, as it can be recreated from scratch/from code any time ("STATIC CONFIG"). Data which comes from the usage of the API Portal (users, applications, subscriptions and such) does need to be persisted in some way ("PERSISTENT DATA"):
 
 {:.center}
 ![Portal API configuration](/images/wicked-0-11-0/portal-api-data.png){:style="margin:auto"}
 
-How persistent storage is kept varies from orchestration to orchestration, but this is usually not a big issue; it's different, but as long as the runtime is able to mount a persistent volume at `/var/portal-api/dynamic` which remains the same over the entire lifecycle of the `portal-api` service container all is fine.
+How persistent storage is kept varies from orchestration to orchestration, but this is usually not a big issue; it's different, but as long as the runtime is able to mount a persistent volume at `/var/portal-api/dynamic` which remains the same over the entire lifecycle of the `portal-api` service container, all is fine.
 
-With regards to the static configuration which is assumed to reside in the `/var/portal-api/static` folder, the default deployment using `docker-compose` has always assumed that your are able to build a private image using `docker build` **on the docker host/swarm you are deploying to**. This is quite an issue with e.g. Kubernetes or Mesosphere which always assume that images are downloaded to the system, and not built on the cluster.
+With regards to the static configuration which usually resides in the `/var/portal-api/static` folder, the default deployment using `docker-compose` has always assumed that your are able to build a private image using `docker build` **on the docker host/swarm you are deploying to**. This is quite an issue with e.g. Kubernetes or Mesosphere which always assume that images are downloaded ("pulled") to the system, and not built on the cluster.
 
-The first workaround you can apply to circumvent this is to build a private image derived from `haufelexware/wicked.portal-api` which prepopulates the `/var/portal-api/static` directory with your API Configuration and push that to a private repository, from where the orchestration runtime (e.g. Kubernets) pulls it when deploying. This has a couple of obvious drawbacks, such as needing a private docker repository, or that you need to build a new docker image each time you want to deploy a new API configuration.
+The first workaround you can apply to circumvent this is to build a private image derived from `haufelexware/wicked.portal-api` which prepopulates the `/var/portal-api/static` directory with your API Configuration and push that to a private repository, from where the orchestration runtime (e.g. Kubernetes or Mesos) pulls it when deploying. This has a couple of obvious drawbacks, such as needing a private docker repository, or that you need to build a new docker image each time you want to deploy a new API configuration.
 
 ### Static Configuration using `git clone`
 
-In order to make the use case of updating the API configuration a lot easier, we have enhanced the startup script of the `portal-api` container to be able to by itself clone a git repository into the `/var/portal-api/static` folder. By specifying the following environment variables for the portal API container, this will be done at each container creation and restart:
+In order to make the use case of updating the API configuration easier, we enhanced the startup script of the `portal-api` container to be able to by itself clone a git repository into the `/var/portal-api/static` folder. By specifying the following environment variables for the portal API container, this will be done at each container creation and restart:
 
-* `GIT_REPO`, e.g. `bitbucket.org/yourorg/apim.config.git`
-* `GIT_CREDENTIALS`, e.g. `username:password`
-* `GIT_BRANCH` or `GIT_REVISION` to further specify which branch or SHA1 revision to be cloned
+| Variable | Description |
+| ---| --- |
+| `GIT_REPO` | The git repository of the API configuration, e.g. `bitbucket.org/yourorg/apim.config.git` |
+| `GIT_CREDENTIALS` | The git credentials, e.g. `username:password` |
+| `GIT_BRANCH` | The branch to clone; if specified, `HEAD` of that branch is retrieved, otherwise `master` |
+| `GIT_REVISION` | The exact SHA1 of the commit to retrieve; mutually exclusive with `GIT_BRANCH` | 
 
 This enables running the "vanilla" portal API image also in environments which do not support building docker images on the docker host, such as Kubernetes.
 
@@ -51,14 +56,14 @@ This enables running the "vanilla" portal API image also in environments which d
 
 The portal API container now also calculates a "config hash" MD5 value of the content of the configuration directory at `/var/portal-api/static` as soon as the container starts. This is not depending on the git clone method, but is also done if the configuration is prepopulated using a derived docker image or if it still uses the data only container approach to mount the static configuration directory into the container.
 
-This configuration has is used by the other containers to detect whether a configuration change has taken place. Except for the portal API container, all other wicked containers are stateless and draw their configuration from the API configuration (if necessary). This means they need to re-pull the settings as soon as the configuration has changed. When using the `docker-compose` method of deploying, this wasn't a big issue if you just did a `docker-compose up -d --force-recreate` after creating the new configuration container, but with runtimes such as Kubernets, this would introduce quite some overhead each time the configuration changed: All dependant containers would need to be restarted manually.
+This configuration hash is used by the other containers to detect whether a configuration change has taken place. Except for the portal API container, all other wicked containers are stateless and draw their configuration from the API configuration (if necessary). This means they need to re-pull the settings as soon as the configuration has changed. When using the `docker-compose` method of deploying, this wasn't a big issue if you just did a `docker-compose up -d --force-recreate` after creating the new configuration container, but with runtimes such as Kubernets, this would introduce quite some overhead each time the configuration changed: All dependant containers would need to be restarted one by one.
 
 This is how the core wicked containers behave now:
 
 {:.center}
 ![API configuration update](/images/wicked-0-11-0/config-update.png){:style="margin:auto"}
 
-The diagram above depicts how the portal API interacts with e.g. the portal container (Kong adapter, mailer and chatbot behave exactly the same):
+The diagram above depicts how the portal API interacts with e.g. the portal container (Kong adapter, mailer and chatbot also behave exactly the same):
 
 * At initial startup, the portal container retrieves the current config hash via the `/confighash` end point of the portal API; this hash is kept for comparison in the container
 * The configuration is updated, which triggers a CI/CD pipeline
