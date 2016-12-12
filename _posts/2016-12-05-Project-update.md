@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Project update
-author: bcarlson8582
+author: bear
 ---
 
 Finals week is among us! It's tough working on both the project and studying for finals, however,

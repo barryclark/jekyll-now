@@ -1,7 +1,9 @@
 ---
 layout: post
 title: Final Project Update
-author: akrlicevic, bcarlson8582
+author: 
+- akay 
+- bear
 published: true
 ---
 

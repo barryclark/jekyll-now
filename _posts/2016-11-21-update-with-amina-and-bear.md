@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Update on Final Project w/ Amina & Bear!
+title: "Update on Final Project w/ Amina & Bear!"
 author: 
-- akrlicevic
-- bcarlson8582
+- akay
+- bear
 publish: true
 ---
 With every popular video or writing written, there always comes an overeaction of its contents, and we call this

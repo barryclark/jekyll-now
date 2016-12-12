@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Meiqi's reflection
-author: Meiqi
+author: meiqi
 published: true
 ---
 

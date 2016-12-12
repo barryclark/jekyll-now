@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Course Overview
-author: bcarlson8582
+author: bear
 ---
 
 Many college students go into college with the hopes of discovering new and vital
