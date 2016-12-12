@@ -11,7 +11,7 @@ header-img: "images/bg-post-api.jpg"
 
 ### Introduction
 
-Last Friday we released version 0.11.0 och our Open Source API Management System [wicked.haufe.io](http://wicked.haufe.io) ([GitHub Repository](https://github.com/Haufe-Lexware/wicked.haufe.io), [Release Notes](https://github.com/Haufe-Lexware/wicked.haufe.io/blob/master/doc/release-notes.md#0110-beta)). Over the course of the last couple of weeks our focus has been to make deployments to production easier and how to enable deployments to alternative runtimes (other than using `docker-compose`), or at least how to make them easier.
+Last Friday we released version 0.11.0 of our Open Source API Management System [wicked.haufe.io](http://wicked.haufe.io) ([GitHub Repository](https://github.com/Haufe-Lexware/wicked.haufe.io), [Release Notes](https://github.com/Haufe-Lexware/wicked.haufe.io/blob/master/doc/release-notes.md#0110-beta)). Over the course of the last couple of weeks our focus has been to make deployments to production easier and how to enable deployments to alternative runtimes (other than using `docker-compose`), or at least how to make them easier.
 
 This blog post will explain some of the changes and enhancements that were made and how you can update your existing API Configurations to benefit from them.
 
