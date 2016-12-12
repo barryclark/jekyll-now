@@ -11,7 +11,7 @@ header-img: "images/bg-post-api.jpg"
 
 ### A start with  microserivces
 
-Keeping with the trend of having events based on technical topics that we are getting into at Haufe Group, we just had our Microservices Architecture Day - #msaday - internal event. We are currently looking to adopt microservices design patterns for new software and to refactor our older systems towards microservices andto make it easier to manage and grow our software. #msaday was a lot of fun and we were joined by many colleagues from other parts of Germany and from our offices in Switzerland, Romania and Spain.
+Keeping with the trend of having events based on technical topics that we are getting into at Haufe Group, we just had our Microservices Architecture Day - #msaday - internal event. We are currently looking to adopt microservices design patterns for new software, to refactor our older systems towards microservices and to make it easier to manage and grow our software. #msaday was a lot of fun and we were joined by many colleagues from other parts of Germany and from our offices in Switzerland, Romania and Spain.
 
 {:.center}
 ![Microservices audience](/images/Microservices-Day/Satisfied-Microservices-Customer.JPG){:style="margin:auto"}
@@ -28,7 +28,7 @@ In addition to these excellent presentations, some of our own people showcased H
 
 When I think back on where we were five years ago. It’s great to see that the technical development and Dev Community culture have come far enough along to even start thinking about developing using microservices patterns. And in fact, Haufe Group is actively targeting several systems as good candidates to begin the process of breaking down our monolithic code into service domains. 
 
-This is definitely going to be a longer process and we may never even reach a full microservices based architecture for some of these systems, but adopting a microservices view will definitely make further development easier and will be an interesting challenge
+This is definitely going to be a longer process and we may never even reach a full microservices based architecture for some of these systems, but adopting a microservices view will definitely make further development easier and will be an interesting challenge.
 
 ### Part of the Freiburg dev community
 
