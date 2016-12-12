@@ -56,26 +56,26 @@ Embedded taxes are the taxes paid via merchants when they increase their price s
 <script>
 $(document).ready(function() {
     var income = 120000.00;
-    var federal = 18558.75 + (income − 91150 − 6300 − 4050) * 0.28;
+    var federal = 18558.75 + (income - 91150 - 6300 - 4050) * 0.28;
     var ss = 118500 * 0.062;
     var medicare = income * 0.0145;
-    var state = 3231.96 + (income − 105300 − 6300 − 2200) * 0.4597;
+    var state = 3231.96 + (income - 105300 - 6300 - 2200) * 0.4597;
     var local = income * 0.01;
     var property = 100000 * 0.35 * 0.1;
     var fuel = 0.4818 * 4 * 3000 / 30;
-    var remaining = income - federal - ss- medicare - state - local - property - fuel;
+    var remaining = income - federal - ss - medicare - state - local - property - fuel;
 
     c3.generate({
         bindto: '#taxPie',
         data: {
             columns: [
                 ['Federal Tax', federal],
-                ['Social Security Tax', ss]
-                ['Medicare Tax', medicare]
-                ['State Tax', state]
-                ['Local Tax', local]
-                ['Property Tax', property]
-                ['Fuel Tax', fuel]
+                ['Social Security Tax', ss],
+                ['Medicare Tax', medicare],
+                ['State Tax', state],
+                ['Local Tax', local],
+                ['Property Tax', property],
+                ['Fuel Tax', fuel],
                 ['Remaining', remaining]
             ],
             type: 'pie'
