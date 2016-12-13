@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1444,194857683,2016-12-13 14:48:02,2016-12-11 21:24:39,Lavatrice e asciugatrice per la famiglia Procaccioli Nazzareno,,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""Lavatrice e asciugatrice per la famiglia Procaccioli Nazzareno"", ""data"": ""11/12/2016"", ""descrizione"": ""Il signor Pricaccioli Nazzareno non ha un indirizzo email per questo \u00e8 stato usato quello della signora Caterina. L'indirizzo del domicilio del signor Procaccioli \u00e8 Via Umbrua, 4 Norcia (PG). Il numero del cellulare \u00e8 della signora Pricaccioli"", ""email"": ""caterina.fiordiani@alice.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3341735948""}","<pre><yamldata>tel: '3341735948'
+email: caterina.fiordiani@alice.it
+cosa: 'Lavatrice e asciugatrice per la famiglia Procaccioli Nazzareno'
+descrizione: 'Il signor Pricaccioli Nazzareno non ha un indirizzo email per questo è stato usato quello della signora Caterina. L''indirizzo del domicilio del signor Procaccioli è Via Umbrua, 4 Norcia (PG). Il numero del cellulare è della signora Pricaccioli'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 11/12/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1442,194794495,2016-12-11 11:00:15,2016-12-10 21:14:11,A #Cascia c'è bisogno di un cannone ad aria calda per riscaldare una tenda,42.7170082,13.0135022,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""Cannone ad aria calda per riscaldamento di una tenda"", ""data"": ""10/12/2016"", ""descrizione"": ""Dormiamo in una tenda... le temperature di abbassano e quindi si sente abbastanza freddo. In questi giorni ci siamo riscaldati con una stufa elettrica ma non \u00e8 sufficiente. C'\u00e8 necessit\u00e0 di un Cannone ad aria calda, possibilmente a gasolio."", ""email"": ""vfedericos@libero.it"", ""immagine"": """", ""indirizzo"": ""Largo Monsignor Antonio Elemosina, Cascia, PG, UMB, 06043, Italia"", ""lat"": ""42.7170082"", ""link"": """", ""lon"": ""13.0135022"", ""tel"": ""3488811396""}","<pre><yamldata>tel: '3488811396'
 email: vfedericos@libero.it
 cosa: 'Cannone ad aria calda per riscaldamento di una tenda'
@@ -6758,18 +6769,6 @@ immagine: ''
 data: 16/09/2016
 </yamldata></pre>
 ",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/495,177436471,2016-11-30 15:05:24,2016-09-16 14:15:49,Cercasi scatoloni grandi e possibilmente un container dove mettere le cose perché devono sgombrare la casa.,42.552041,13.241457,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Si cercano scatoloni grandi e possibilmente un container dove mettere le cose perch\u00e9 devono sgombrare la casa."", ""data"": ""29/08/2016"", ""descrizione"": ""Azienda agruturismo La Casa Rosa a Colleverrico di Montereale: cercano scatoloni grandi e possibilmente un container dove mettere le cose perch\u00e9 devono sgombrare la casa. La Casa Rosa, Loc. Colle Verrico, telefono:0862902339"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": ""42.552041"", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1761317044135879/"", ""lon"": ""13.241457"", ""tel"": ""0862902339""}","<pre><yamldata>tel: '0862902339'
-email: ''
-cosa: 'Si cercano scatoloni grandi e possibilmente un container dove mettere le cose perché devono sgombrare la casa.'
-descrizione: 'Azienda agruturismo La Casa Rosa a Colleverrico di Montereale: cercano scatoloni grandi e possibilmente un container dove mettere le cose perché devono sgombrare la casa. La Casa Rosa, Loc. Colle Verrico, telefono:0862902339'
-indirizzo: ''
-lat: '42.552041'
-lon: '13.241457'
-link: 'https://www.facebook.com/groups/1758670357733881/permalink/1761317044135879/'
-immagine: ''
-data: 29/08/2016
-</yamldata></pre>
-",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/495,177436471,2016-11-30 15:05:24,2016-09-16 14:15:49,Cercasi scatoloni grandi e possibilmente un container dove mettere le cose perché devono sgombrare la casa.,42.552041,13.241457,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Si cercano scatoloni grandi e possibilmente un container dove mettere le cose perch\u00e9 devono sgombrare la casa."", ""data"": ""29/08/2016"", ""descrizione"": ""Azienda agruturismo La Casa Rosa a Colleverrico di Montereale: cercano scatoloni grandi e possibilmente un container dove mettere le cose perch\u00e9 devono sgombrare la casa. La Casa Rosa, Loc. Colle Verrico, telefono:0862902339"", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": ""42.552041"", ""link"": ""https://www.facebook.com/groups/1758670357733881/permalink/1761317044135879/"", ""lon"": ""13.241457"", ""tel"": ""0862902339""}","<pre><yamldata>tel: '0862902339'
 email: ''
 cosa: 'Si cercano scatoloni grandi e possibilmente un container dove mettere le cose perché devono sgombrare la casa.'
