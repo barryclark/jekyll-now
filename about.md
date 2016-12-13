@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Designer based in Taipei‎.
+Jas is a designer based in Taipei‎, Taiwan.
 
 ### More Information
 
