@@ -1,11 +1,11 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1444,194857683,2016-12-13 14:52:49,2016-12-11 21:24:39,Lavatrice e asciugatrice per la famiglia Procaccioli Nazzareno,,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""Lavatrice e asciugatrice per la famiglia Procaccioli Nazzareno"", ""data"": ""11/12/2016"", ""descrizione"": ""Il signor Pricaccioli Nazzareno e la sua famiglia, con casa inagibile per il terremoto, hanno bisogno di una lavatrice e una asciugatrice. La famiglia non ha un indirizzo email e per questo \u00e8 stato usato quello della signora Caterina. L'indirizzo del domicilio del signor Procaccioli \u00e8 Via Umbrua, 4 Norcia (PG). Il numero del cellulare \u00e8 della signora Pricaccioli. Grazie."", ""email"": ""caterina.fiordiani@alice.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3341735948""}","<pre><yamldata>tel: '3341735948'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1444,194857683,2016-12-13 14:53:54,2016-12-11 21:24:39,Lavatrice e asciugatrice per la famiglia Procaccioli Nazzareno,42.7927706,13.0930812,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""Lavatrice e asciugatrice per la famiglia Procaccioli Nazzareno"", ""data"": ""11/12/2016"", ""descrizione"": ""Il signor Pricaccioli Nazzareno e la sua famiglia, con casa inagibile per il terremoto, hanno bisogno di una lavatrice e una asciugatrice. La famiglia non ha un indirizzo email e per questo \u00e8 stato usato quello della signora Caterina. L'indirizzo del domicilio del signor Procaccioli \u00e8 Via Umbrua, 4 Norcia (PG). Il numero del cellulare \u00e8 della signora Pricaccioli. Grazie."", ""email"": ""caterina.fiordiani@alice.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": ""42.7927706"", ""link"": """", ""lon"": ""13.0930812"", ""tel"": ""3341735948""}","<pre><yamldata>tel: '3341735948'
 email: caterina.fiordiani@alice.it
 cosa: 'Lavatrice e asciugatrice per la famiglia Procaccioli Nazzareno'
 descrizione: 'Il signor Pricaccioli Nazzareno e la sua famiglia, con casa inagibile per il terremoto, hanno bisogno di una lavatrice e una asciugatrice. La famiglia non ha un indirizzo email e per questo è stato usato quello della signora Caterina. L''indirizzo del domicilio del signor Procaccioli è Via Umbrua, 4 Norcia (PG). Il numero del cellulare è della signora Pricaccioli. Grazie.'
 indirizzo: ''
-lat: ''
-lon: ''
+lat: '42.7927706'
+lon: '13.0930812'
 link: ''
 immagine: ''
 data: 11/12/2016
