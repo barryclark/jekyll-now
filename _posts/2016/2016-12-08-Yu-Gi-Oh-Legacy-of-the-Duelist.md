@@ -1,16 +1,16 @@
 ---
 layout: post
-title: "More Pokémon Arrive in Pokémon GO"
-description: "Pichu, Togepi, and more Pokémon from the Johto region are now in Pokémon GO."
+title: "Yu-Gi-Oh! Legacy of the Duelist now available on Steam"
+description: "Yu-Gi-Oh! Legacy of the Duelist is now available on PC Steam in the Americas and Europe, marking the first time the Yu-Gi-Oh! franchise is available for the popular PC platform."
 category: video games
-featured: pokexmas.jpg
-amazonterm: pokemon
-tags: [video games, niantic, the pokemon company, nintedo, pokemon go]
+featured: legacyoftheduelist.jpg
+amazonterm: yu-gi-oh
+tags: [video games, konami, yu-gi-oh, legacy of the duelist ]
 author: Rob Kalajian
 ---
 
-![Santa Pikachu](/images/pokemongo/santapikachu.jpg)
+Konami Digital Entertainment, Inc. (KONAMI) announced today that Yu-Gi-Oh! Legacy of the Duelist is now available on PC Steam in the Americas and Europe, marking the first time the Yu-Gi-Oh! franchise is available for the popular PC platform.
 
-New Pokémon arrive today in Pokémon GO, including Togepi, Pichu, and several more select Pokémon from the Johto region. These new Pokémon can only be hatched from eggs, so make sure you hit up all your favorite Pokéstops to fill up on the hatchables. Thanks to several all-new Pokémon GO promotional partnerships, such as one with Sprint in the US, more than 10,500 Sprint and Boost Mobile and Sprint at RadioShack locations have turned into PokéStops and Gyms.
+Newcomers players can hone their skills courtesy of the game’s accessible tutorial, while veteran players can dive into the rich Story Campaign and Duel with more than 90 characters, customize their Decks on the fly with a new Deck Editor, and compete with other Duelists online in new Battle Pack Sealed Deck and Draft play. Nine new sets of add-on content are also available bringing the total card pool to more than 7,400 cards. Each set is based off the TV series: Yu-Gi-Oh!, Yu-Gi-Oh! GX, and Yu-Gi-Oh! ARC-V, and includes a single-player story Duel, two complete Decks played by the characters in the Duel, and a character avatar.
 
-There's also a new Pikachu in town. Donning a festive Santa hat and available to capture until December 29, 2016, 11:00 A.M. PST.
+Yu-Gi-Oh! Legacy of the Duelist is available for purchase on [Steam](http://store.steampowered.com/app/480650/) for $19.99, with add-on content also available for purchase digitally for $4.99 each.
