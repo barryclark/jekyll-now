@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1445,194858213,2016-12-13 14:57:08,2016-12-11 21:33:45,roulotte,,,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""roulotte"", ""data"": ""11/12/2016"", ""descrizione"": ""regaliamo roulotte datata ma perfetta, sana, adatta a tre persone. Se avete altre offerte da zona Verona Lago di Garda metteteci in contatto che organizziamo transfer0458622470"", ""email"": ""paola12santi@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3332301536""}","<pre><yamldata>tel: '3332301536'
+email: paola12santi@gmail.com
+cosa: roulotte
+descrizione: 'regaliamo roulotte datata ma perfetta, sana, adatta a tre persone. Se avete altre offerte da zona Verona Lago di Garda metteteci in contatto che organizziamo transfer0458622470'
+indirizzo: ''
+lat: ''
+lon: ''
+link: ''
+immagine: ''
+data: 11/12/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1444,194857683,2016-12-13 14:54:31,2016-12-11 21:24:39,La famiglia Procaccioli di #Norcia cerca una lavatrice e asciugatrice,42.7927706,13.0930812,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""Lavatrice e asciugatrice per la famiglia Procaccioli Nazzareno"", ""data"": ""11/12/2016"", ""descrizione"": ""Il signor Pricaccioli Nazzareno e la sua famiglia, con casa inagibile per il terremoto, hanno bisogno di una lavatrice e una asciugatrice. La famiglia non ha un indirizzo email e per questo \u00e8 stato usato quello della signora Caterina. L'indirizzo del domicilio del signor Procaccioli \u00e8 Via Umbrua, 4 Norcia (PG). Il numero del cellulare \u00e8 della signora Pricaccioli. Grazie."", ""email"": ""caterina.fiordiani@alice.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": ""42.7927706"", ""link"": """", ""lon"": ""13.0930812"", ""tel"": ""3341735948""}","<pre><yamldata>tel: '3341735948'
 email: caterina.fiordiani@alice.it
 cosa: 'Lavatrice e asciugatrice per la famiglia Procaccioli Nazzareno'
