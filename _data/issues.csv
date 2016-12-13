@@ -1,8 +1,8 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1445,194858213,2016-12-13 14:57:08,2016-12-11 21:33:45,roulotte,,,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""roulotte"", ""data"": ""11/12/2016"", ""descrizione"": ""regaliamo roulotte datata ma perfetta, sana, adatta a tre persone. Se avete altre offerte da zona Verona Lago di Garda metteteci in contatto che organizziamo transfer0458622470"", ""email"": ""paola12santi@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3332301536""}","<pre><yamldata>tel: '3332301536'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1445,194858213,2016-12-13 14:57:29,2016-12-11 21:33:45,roulotte,,,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""roulotte"", ""data"": ""11/12/2016"", ""descrizione"": ""Regaliamo roulotte datata ma perfetta, sana, adatta a tre persone. Se avete altre offerte da zona Verona - Lago di Garda metteteci in contatto che organizziamo transferimento. Tel. 0458622470"", ""email"": ""paola12santi@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3332301536""}","<pre><yamldata>tel: '3332301536'
 email: paola12santi@gmail.com
 cosa: roulotte
-descrizione: 'regaliamo roulotte datata ma perfetta, sana, adatta a tre persone. Se avete altre offerte da zona Verona Lago di Garda metteteci in contatto che organizziamo transfer0458622470'
+descrizione: 'Regaliamo roulotte datata ma perfetta, sana, adatta a tre persone. Se avete altre offerte da zona Verona - Lago di Garda metteteci in contatto che organizziamo transferimento. Tel. 0458622470'
 indirizzo: ''
 lat: ''
 lon: ''
