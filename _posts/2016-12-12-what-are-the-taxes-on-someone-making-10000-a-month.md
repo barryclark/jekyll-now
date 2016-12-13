@@ -5,6 +5,7 @@ tags: [politics, money, math, quora]
 keywords: [income tax, property tax, fuel tax, tax, income tax bracket, tax bracket]
 javascripts: [/js/d3.min.js, /js/c3.min.js]
 csses: [/css/c3.css]
+image: /images/covers/tax-cover.jpg
 excerpt: $10,000 a month is $120,000 a year.
 ---
 
