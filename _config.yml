@@ -17,7 +17,7 @@ authors:
     avatar: /images/infinityworks.png
     web: https://www.infinityworks.com
     web_short_name: infinityworks.com
-    twitter: ukinfinityworks
+    twitter: InfinityWorks 
     github: infinityworksltd
   james_hall:
     display_name: James Hall
@@ -60,7 +60,7 @@ footer-links:
   linkedin:
   pinterest:
   rss: # just type anything here for a working RSS icon
-  twitter: ukinfinityworks
+  twitter: InfinityWorks 
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
