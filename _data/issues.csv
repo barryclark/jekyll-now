@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1452,195345964,2016-12-13 22:18:03,2016-12-13 19:30:49,A Bastia Umbra raccolta di giocattoli per i bambini di #Preci,43.0608196,12.5422118,"[""Accettato"", ""Bambini"", ""Bollettino"", ""Donazioni"", ""Form"", ""Sisma Ottobre""]",Milestone(number=43),,"{""cosa"": ""Giocattoli"", ""data"": ""13/12/2016"", ""descrizione"": ""Il Gruppo Comunale Volontari Protezione Civile di Bastia Umbra raccoglie giocattoli NUOVI (anni 6 +) da donare ai bambini di Preci, in occasione delle festivit\u00e0 natalizie. \u00c8 possibile portare questi regali il prossimo venerd\u00ec sera (16 dicembre) presso la sede del Gruppo (Bastia Umbra, via delle Nazioni). Sempre venerd\u00ec e sempre in sede ci sar\u00e0 anche una tombolata il cui ricavato sar\u00e0 destinato ai terremotati :-)"", ""email"": ""vaxdix1982@gmail.com"", ""immagine"": """", ""indirizzo"": ""Via delle Nazioni, Bastiola, Bastia Umbra, PG, UMB, 06083, Italia"", ""lat"": ""43.0608196"", ""link"": """", ""lon"": ""12.5422118"", ""tel"": ""3397502198""}","<pre><yamldata>tel: '3397502198'
+email: vaxdix1982@gmail.com
+cosa: Giocattoli
+descrizione: 'Il Gruppo Comunale Volontari Protezione Civile di Bastia Umbra raccoglie giocattoli NUOVI (anni 6 +) da donare ai bambini di Preci, in occasione delle festività natalizie. È possibile portare questi regali il prossimo venerdì sera (16 dicembre) presso la sede del Gruppo (Bastia Umbra, via delle Nazioni). Sempre venerdì e sempre in sede ci sarà anche una tombolata il cui ricavato sarà destinato ai terremotati :-)'
+indirizzo: 'Via delle Nazioni, Bastiola, Bastia Umbra, PG, UMB, 06083, Italia'
+lat: '43.0608196'
+lon: '12.5422118'
+link: ''
+immagine: ''
+data: 13/12/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1451,195317113,2016-12-13 22:12:43,2016-12-13 17:29:17,"Via alla riparazione dei danni lievi alle case. Quali sono, chi può farla e come",,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""13/12/2016"", ""descrizione"": ""La riparazione delle case danneggiate dal terremoto pu\u00f2 partire, anche se non tutto \u00e8 ancora chiaro sui contributi promessi dal governo. Per ora gli interventi riguardano solo gli immobili che a seguito delle verifiche sono stati dichiarati \u201ctemporaneamente inagibili\u201d con le schede Aedes (lettera B), o \u201cnon utilizzabili\u201d sulla base delle schede Fast. Anche se potranno essere riparati pure gli immobili che le schede Aedes hanno definito inagibili (lettera E) se la perizia asseverata dai tecnici incaricati della progettazione attesta un livello di danneggiamento diverso, riconducibile al danno \u201clieve\u201d."", ""link"": ""https://sibilla-online.com/2016/12/01/via-alla-riparazione-dei-danni-lievi-alle-case-quali-sono-chi-puo-farla-e-come/"", ""titolo"": ""VIa alla riparazione dei danni lievi alle case. Quali sono chi pu\u00f2 farla e come""}","<pre><yamldata>titolo: 'VIa alla riparazione dei danni lievi alle case. Quali sono chi può farla e come'
 descrizione: 'La riparazione delle case danneggiate dal terremoto può partire, anche se non tutto è ancora chiaro sui contributi promessi dal governo. Per ora gli interventi riguardano solo gli immobili che a seguito delle verifiche sono stati dichiarati “temporaneamente inagibili” con le schede Aedes (lettera B), o “non utilizzabili” sulla base delle schede Fast. Anche se potranno essere riparati pure gli immobili che le schede Aedes hanno definito inagibili (lettera E) se la perizia asseverata dai tecnici incaricati della progettazione attesta un livello di danneggiamento diverso, riconducibile al danno “lieve”.'
 link: 'https://sibilla-online.com/2016/12/01/via-alla-riparazione-dei-danni-lievi-alle-case-quali-sono-chi-puo-farla-e-come/'
@@ -8389,12 +8400,6 @@ lat: ''
 lon: ''
 link: ''
 immagine: ''
-data: 14/09/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/312,176955947,2016-10-01 16:01:24,2016-09-14 16:30:42,Donazioni deducibili per i terremotati. Individuati gli enti nell'ascolano,,,"[""Accettato"", ""Form"", ""Notizie Utili""]",,,"{""data"": ""14/09/2016"", ""descrizione"": ""Il prefetto di Ascoli Piceno ha firmato il decreto che individua gli organismi attraverso i quali \u00e8 possibile fare donazioni esentasse a favore della popolazione della provincia, duramente colpita dal terremoto del 24 agosto scorso."", ""link"": ""http://www.interno.gov.it/it/notizie/donazioni-deducibili-i-terremotati-individuati-enti-nellascolano"", ""titolo"": ""Donazioni deducibili per i terremotati. Individuati gli enti nell'ascolano""}","<pre><yamldata>titolo: 'Donazioni deducibili per i terremotati. Individuati gli enti nell''ascolano'
-descrizione: 'Il prefetto di Ascoli Piceno ha firmato il decreto che individua gli organismi attraverso i quali è possibile fare donazioni esentasse a favore della popolazione della provincia, duramente colpita dal terremoto del 24 agosto scorso.'
-link: 'http://www.interno.gov.it/it/notizie/donazioni-deducibili-i-terremotati-individuati-enti-nellascolano'
 data: 14/09/2016
 </yamldata></pre>
 ",open
