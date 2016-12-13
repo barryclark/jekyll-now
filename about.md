@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Designer based in Taipei‎.
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+Graphic design, Responsive Web design, Mobile UI design.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[jaschyo@gmail.com](mailto:email@domain.com)
