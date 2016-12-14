@@ -1,6 +1,5 @@
 + Layout: post for Final
 
-
 + Title: My View on Female Rples in Cinema 
 
 + Author: manarwala  
