@@ -23,7 +23,7 @@ html {
 body {
   background: $white;
   font: 18px/1.4 $helvetica;
-  color: $gray;
+  color: $darkerGray;
 }
 
 .container {
@@ -140,8 +140,11 @@ td.slider-value .bias {  color: $biasPurple;  opacity: 0.7; }
 .prediction .img-div {
   max-width: 600px;
   margin: auto;
+  font-size: 85%;
+  color: $gray;
 }
 .prediction .img-div img{
+  border: 1px solid $lightGray;
 }
 
 td span#error-value {
@@ -290,7 +293,7 @@ td.error-cell{  text-align:center;  }
 .nn-graph-area svg{
   border: 0px solid $gray;
 }
-.inputNode{
+.input-node{
   fill: $nnInputNode;
   stroke: $darkGray;
   stroke-width: $nnStrokeWidth;
@@ -307,7 +310,13 @@ td.error-cell{  text-align:center;  }
   stroke-width: $nnStrokeWidth;
 }
 
-.outputNode{
+.softmaxNode{
+  fill: $nnSoftmaxNode;
+  stroke: $darkGray;
+  stroke-width: $nnStrokeWidth;
+}
+
+.output-node{
   fill: $nnOutputNode;
   stroke: $darkGray;
   stroke-width: $nnStrokeWidth;
@@ -320,6 +329,23 @@ td.error-cell{  text-align:center;  }
 #arrow{
   stroke-width:1;
   stroke-dasharray:0;
+}
+
+
+// Neural Network Grapher
+.grapherWeightNode{
+  fill: $nnWeightNode;
+  stroke: $darkGray;
+  stroke-width: $nnStrokeWidth;
+}
+
+.grapherWeightNodeText{
+  font-size: 9px
+}
+
+.grapher-node-text{
+  font-size: 12px;
+  fill: #666;
 }
 
 strong, b {

@@ -303,7 +303,6 @@ NN_trainer.prototype.initializeErrorGraph = function(){
 // Adds an error points to the error graph
 // https://gist.github.com/mbostock/1642874
 NN_trainer.prototype.addErrorPoint = function (value) {
-
     this.error_history.push(value);
     // Redraw the line.
     d3.select(this.error_chart_el +" .error-history-line")
@@ -423,7 +422,7 @@ NN_trainer.prototype.updateUI = function(mean_delta_sum, errorLineValues){
 
     // Update comment on the score
     if (mean_delta_sum < 450) {
-        $(" span#error-value-message").html("I honestly didn't know this was 'humanly' possible..");
+        $(this.table_el + " span#error-value-message").html("I honestly didn't know this was 'humanly' possible..");
     }
     else if (mean_delta_sum < 500) {
         $(this.table_el + " span#error-value-message").html("Hello there, superintelligent AI overlord..");
@@ -767,7 +766,7 @@ NN_trainer.prototype.initializeNeuralNetworkGraph= function(){
     // Input node
     this.inputNode = this.neuralNetworkG
         .append("circle")
-        .attr("class", "inputNode")
+        .attr("class", "input-node")
         .attr("r", nodeRadius)
         .attr("cx", this.neuralNetworkMargin.left + nodeRadius  )
         .attr("cy", this.neuralNetworkMargin.top + this.neuralNetworkHeight / 2);
@@ -818,7 +817,7 @@ NN_trainer.prototype.initializeNeuralNetworkGraph= function(){
     // Output node
     this.outputNode = this.neuralNetworkG
         .append("circle")
-        .attr("class", "outputNode")
+        .attr("class", "output-node")
         .attr("r", nodeRadius)
         .attr("cx", this.neuralNetworkWidth - nodeRadius + this.neuralNetworkMargin.left )
         .attr("cy", this.neuralNetworkMargin.top + this.neuralNetworkHeight / 2);

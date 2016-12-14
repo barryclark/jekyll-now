@@ -64,9 +64,9 @@ var multiVariableNeuralNetworkTrainer = function (numberOfInputNodes,
     // Update with initial weight and bias values
     // This is needed to prime this.prediction for gradient descent
     d3.range(this.numberOfInputNodes).map(function(id){
-        trainerSelf.updateParameter("weight", id, trainerSelf.weights[id], true)
+        trainerSelf.updateParameter("weight", id, trainerSelf.weights[id], false)
     });
-    trainerSelf.updateParameter("bias", 0, this.bias, true)
+    trainerSelf.updateParameter("bias", 0, this.bias, true);
 
 
     // Update the sliders
@@ -166,7 +166,6 @@ multiVariableNeuralNetworkTrainer.prototype.updateParameter = function (key, key
     }
     mean_delta_sum = delta_sum / this.prediction.length;
 
-    this.addErrorPoint(mean_delta_sum);
 
     if( updateUI )
         this.updateUI(mean_delta_sum);
@@ -177,6 +176,7 @@ multiVariableNeuralNetworkTrainer.prototype.updateParameter = function (key, key
 
 multiVariableNeuralNetworkTrainer.prototype.updateUI = function (mean_delta_sum) {
 
+    this.addErrorPoint(mean_delta_sum);
 
     // Update the error/weight/bias indicators
     for (var c = 0; c < this.numberOfInputNodes; c++) {
@@ -190,6 +190,7 @@ multiVariableNeuralNetworkTrainer.prototype.updateUI = function (mean_delta_sum)
 
 multiVariableNeuralNetworkTrainer.prototype.addErrorPoint = function (value) {
 
+    console.log("addErrorPoint");
     this.error_history.push(value);
     // Redraw the line.
     d3.select(this.svg_el + " .error-history-line")
@@ -206,9 +207,11 @@ multiVariableNeuralNetworkTrainer.prototype.addErrorPoint = function (value) {
 
 multiVariableNeuralNetworkTrainer.prototype.batchAddErrorPoint = function (valuesArray) {
 
+    console.log("this.error_history before concat", this.error_history.length);
     this.error_history = this.error_history.concat(valuesArray);
 
-
+    console.log("valuesArray", valuesArray.length, "this.error_history",
+        this.error_history.length, "this.error_chart_history_x", this.error_chart_history_x);
     // Cut the needed number of elements to be within our specified error_chart_history_x
     if (this.error_history.length > this.error_chart_history_x) {
         // How much are we over by
@@ -307,7 +310,7 @@ multiVariableNeuralNetworkTrainer.prototype.initializeNeuralNetworkGraph = funct
     // Input node #1
     this.inputNode = this.neuralNetworkG
         .append("circle")
-        .attr("class", "inputNode")
+        .attr("class", "input-node")
         .attr("r", nodeRadius)
         .attr("cx", this.neuralNetworkMargin.left + nodeRadius  )
         .attr("cy", this.neuralNetworkMargin.top + nodeRadius);
@@ -350,7 +353,7 @@ multiVariableNeuralNetworkTrainer.prototype.initializeNeuralNetworkGraph = funct
     // Input node #2
     this.inputNode = this.neuralNetworkG
         .append("circle")
-        .attr("class", "inputNode")
+        .attr("class", "input-node")
         .attr("r", nodeRadius)
         .attr("cx", this.neuralNetworkMargin.left + nodeRadius  )
         .attr("cy", this.neuralNetworkHeight + this.neuralNetworkMargin.top - nodeRadius);
@@ -405,7 +408,7 @@ multiVariableNeuralNetworkTrainer.prototype.initializeNeuralNetworkGraph = funct
     // Output node
     this.outputNode = this.neuralNetworkG
         .append("circle")
-        .attr("class", "outputNode")
+        .attr("class", "output-node")
         .attr("r", nodeRadius)
         .attr("cx", this.neuralNetworkWidth - nodeRadius + this.neuralNetworkMargin.left )
         .attr("cy", this.neuralNetworkMargin.top + this.neuralNetworkHeight / 2);
@@ -482,7 +485,7 @@ multiVariableNeuralNetworkTrainer.prototype.gradientDescentStep = function (step
 
 
             d3.range(this.numberOfInputNodes).map(function(id){
-                this.updateParameter("weight", id, newWeights[id], true)
+                this.updateParameter("weight", id, newWeights[id], false)
             }.bind(this));
             this.updateParameter("bias", 0, newBias, true);
 

@@ -1,8 +1,11 @@
 ---
 layout: prediction_post
-published: False
-title: DRAFT - A Visual Beginners Guide to Neural Networks
+published: True
+title: DRAFT - A Visual and Interactive Guide to the Basics of Neural Networks
 ---
+
+NOTE: This is a draft and this post is still being reviewed. You can send it around to your friends, but please don't publish it anywhere public. I would very much appreciate it. Thanks. And please reach out to me on [Twitter](https://twitter.com/jalammer) for any corrections or feedback.
+
 
 ## Motivation
 I'm not a machine learning expert. I'm a software engineer whose only brushes with AI before 2015 were an expert systems class in college and minor experiments with recommendations and search engine optimization. I had always wanted to delve deeper into machine learning, but never really found my "in". That's why when Google open sourced TensorFlow in November 2015, I got super excited and knew it was time to jump in and start the learning journey. Not to sound dramatic, but to me, it actually felt kind of like Prometheus handing down fire to mankind from the Mount Olympus of machine learning. In the back of my head was the idea that the entire field of Big Data and technologies like Hadoop were vastly accelerated when Google researchers released their Map Reduce paper. This time it's not a paper -- it's the actual software they use internally after years and years of evolution.
@@ -416,11 +419,142 @@ Take a stab at finding the right weights and bias. You will start here to see th
 
 Our trusty gradient descent is here to help once again. It still is valuable in helping us find the right weights and bias.
 
+## Features
+Now that you you've seen neural networks with one and two features, you can sort of figure out how to add additional features and use them to calculate your predictions. The numbers of weights will continue to grow, and our implementation of gradient descent will have to be tweaked as we add each feature so that it can update the new weights associated with the new feature. Feature selection/processing is an entire discipline with its own set of best practices and considerations.
+
+One of the examples I like about exploring a dataset and choosing/cleaning the features we use to train a prediction model is [A Journey Through Titanic](https://www.kaggle.com/omarelgabry/titanic/a-journey-through-titanic). It's a notebook where Omar EL Gabry narrates his process for solving Kaggle's Titanic challenge. Kaggle makes available the passenger's manifest of the Titanic including data like name, sex, age, cabin, and whether the person survived or not. The challenge is to build a model that predicts whether a person survived or not given their other information.
+
+## Classification
+
+Let's continue to tweak our example. Assume your friend gives you a list of houses. This time, she has labeled which ones she thinks have a good size and number of bathrooms:
 
 
-## Depth perspective
-As the problems we try to solve get more and more complicated, so must our tools get more and more powerful. The truth of the matter is, the models we saw in this post until now are very simple and aren't that useful in most real-life situations. There are cases where a straight line through data points is useful as it indicates some trend, but we're not going to build self-driving cars wih linear regression.
+{::options parse_block_html="true" /}
+<div class="two_variables">
 
+ | Area (sq ft) (x1) | Bathrooms (x2) | Label (y) |
+ | --- | --- | --- |
+ | 2,104 |  3 | Good |
+ | 1,600 |  3 | Good |
+ | 2,400 |  3 | Good |
+ | 1,416 | 	2 | Bad |
+ | 3,000 | 	4 | Bad |
+ | 1,985 | 	4 | Good |
+ | 1,534 | 	3 | Bad |
+ | 1,427 | 	3 | Good |
+ | 1,380 | 	3 | Good |
+ | 1,494 | 	3 | Good |
+
+</div>
+
+She needs you to use this to create a model whether she would like a house or not given its size and number of bathrooms. You will use this list above to build the model, then she will use the model to classify many other houses. One additional change in the process, is that she has another list of 10 houses she has labeled, but she's keeping it from you. That other list would be used to evaluate your model after you've trained it -- thus trying to ensure your model grasps the conditions that actually make her like the features of the house.
+
+The neural networks we've been toying around with until now are all doing "regression" -- they calculate and output a "continuous" value (the output can be 4, or 100.6, or 2143.342343). In practice, however, neural networks are more often used in "classification" type problems. In these problems, the neural network's output has to be from a set of discreet values (or "classes") like "Good" or "Bad". How this works out in practice, is that we'll have a model that will say that it's 75% sure that a house is "Good" rather than just spit out "good" or "bad".
+
+
+
+<div class="img-div" markdown="0">
+    <img src="/images/android_tensorflow_classifier_results.jpg" />
+    The Tensorflow app I discussed in my <a href="">previous post</a> is a good example for a classification model in practice.
+
+</div>
+
+
+
+One way we can transform the network we've seen into a classification network is to have it output two values -- one for each class (our classes now being "good" and "bad"). We then pass these outputs through an operation called "softmax". The output of softmax is the probability of each class. For example, say the network outputs 2 for "good" and 4 for "bad", if we feed [2, 4] to softmax, it will return [0.11,  0.88] as the output. Which translates the output of the network to say that it's 88% sure that the inputted value is "bad" and our friend would not like that house.
+
+Softmax takes an array and outputs an array of the same length. Notice that it's output are all positive and sums up to 1, which is useful when we're outputting a probability value. Also notice that even though 4 is double 2, its probability is not only double, but is eight times that of 2. This is a useful property that exaggerates the difference in output thus improving our training process.
+
+
+ |  | output |
+ | --- | --- |
+ | softmax([ 1 ]) | [ 1 ] |
+ | softmax([ 1, 1 ]) | [ 0.5, 0.5 ] |
+ | softmax([ 0, 1 ]) | [ 0.26,  0.73 ] |
+ | softmax([ 2, 4 ]) | [ 0.11,  0.88 ] |
+ | softmax([ 5, 10 ]) | [ 0.007,  0.993 ] |
+ | softmax([ -1, 0, 1 ]) | [ 0.09,  0.24,  0.66 ] |
+ | softmax([ 1, 2, 4 ]) | [ 0.042,  0.11,  0.84 ] |
+
+As you can see in the last two rows, softmax extends to any number of inputs. So now if our friend adds a third label (say "Good, but I'll have to airbnb one room"), softmax scales to accomedate that change.
+
+Take a second to explore the shape of the network as you vary the number of features (x1, x2, x3...etc) (which can be area, number of bathrooms, price, proximity to school/work...etc) and vary the number of classes (y1, y2, y3...etc) (which can be "too expensive", "good deal", "good if I airbnb", "too small"):
+
+<table markdown="0">
+    <tr>
+        <td>
+            Number of features (x):
+        </td>
+        <td>
+           <div class="input-group" >
+                  <span class="input-group-btn">
+                      <button type="button" class="btn btn-default btn-number" data-type="minus" data-field="quant[1]">
+                          <span class="glyphicon glyphicon-minus"></span>
+                      </button>
+                  </span>
+                  <input type="text" name="quant[1]" class="form-control input-number" value="2">
+                  <span class="input-group-btn">
+                      <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                          <span class="glyphicon glyphicon-plus"></span>
+                      </button>
+                  </span>
+            </div>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            Number of classes (y):
+        </td>
+        <td>
+           <div class="input-group" >
+                  <span class="input-group-btn">
+                      <button type="button" class="btn btn-default btn-number" data-type="minus" data-field="quant[2]">
+                          <span class="glyphicon glyphicon-minus"></span>
+                      </button>
+                  </span>
+                  <input type="text" name="quant[2]" class="form-control input-number" value="2">
+                  <span class="input-group-btn">
+                      <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[2]">
+                          <span class="glyphicon glyphicon-plus"></span>
+                      </button>
+                  </span>
+            </div>
+        </td>
+    </tr>
+</table>
+
+<div id="shallow-neural-network-graph" class="nn-graph-area" ></div>
+
+## True Motivation
+If you have reached this far, I have to reveal to you another motivation of mine to write this post. This post is meant as an even gentler intro to TensorFlow tutorials. If you start working through [MNIST For ML Beginners](https://www.tensorflow.org/versions/r0.10/tutorials/mnist/beginners/index.html) now, and come across this graph:
+
+
+<div class="img-div" markdown="0">
+    <img src="/images/softmax-regression-scalargraph.png" />
+    I wrote this post to prepare people without machine learning experience for this graph in the TensorFlow introductory tutorial. That's why I simulated its style.
+</div>
+
+
+I hope you would feel prepared and that you have an understanding of this system and how you think of it and evolve it. So if you want to start tinkering with code and learning this way, feel free to pick up from the intro [tutorial](https://www.tensorflow.org/versions/r0.10/tutorials/mnist/beginners/index.html) and teach a neural network how to detect handwritten digits.
+
+You should also continue your education by learning the theoretical and mathimatical underpinnings of the concepts we discussed here. Good questions to ask now include:
+
+ * What other kinds of cost functions exist? Which are better for which applications?
+ * What's the algorithm to actually calculate new weights using gradient descent?
+ * What are the applications for machine learning in the fields you're already knowledgeable about? What new magic can you wield by mixing this spell with others in your spell book?
+
+
+Great learning resources include:
+
+ * Coursera's [Machine Learning](coursera.org/learn/machine-learning/) course by [Andrew Ng](https://twitter.com/AndrewYNg). This is the one I started with. Starts with regression then moves to classification and neural networks.
+ * Coursera's [Neural Networks for Machine Learning](https://www.coursera.org/learn/neural-networks) by [Geoffrey Hinton](https://en.wikipedia.org/wiki/Geoffrey_Hinton). More focused on neural networks and its visual applications.
+ * Stanford's [CS231n: Convolutional Neural Networks for Visual Recognition](https://www.youtube.com/watch?v=g-PvXUjD6qg&list=PLlJy-eBtNFt6EuMxFYRiNRS07MCWN5UIA) by [Andrej Karpathy](https://twitter.com/karpathy). It's interesting to see some advanced concepts and the state of the art in visual recognition using deep neural networks.
+
+
+Please contact me on [Twitter](https://twitter.com/jalammar) with any corrections or feedback.
 
 <script type="text/javascript" src="/js/simple_nn.js"></script>
 <script type="text/javascript" src="/js/two_variable_nn.js"></script>
+
+<script type="text/javascript" src="/js/shallow_nn_grapher.js"></script>
