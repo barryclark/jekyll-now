@@ -161,25 +161,18 @@ How about you take a crack at training our toy neural network? Minimize the loss
 
 <div id="training-one-chart" class="training-chart"/>
 <table id="training-one" class="training-table">
-
-
     <tr>
-
-        </td>
         <td>
             Error
         </td>
         <td colspan="2">
             <span id="error-value" ></span>
         </td>
-
     </tr>
-
     <tr>
         <td class="error-cell" colspan="3">
             <span id="error-value-message"></span>&nbsp;
         </td>
-
     </tr>
     <tr>
         <td>
