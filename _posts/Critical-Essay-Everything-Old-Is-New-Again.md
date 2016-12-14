@@ -1,7 +1,7 @@
 ---
 Layout: Post
 
-Title :Critical Essay–Everything Old Is New Again: A Barthesian Analysis of Tumblr.” Technoculture: An Online Journal of Technology in Society
+Title :Critical Essay
 
 Author: manarwala
 ---
