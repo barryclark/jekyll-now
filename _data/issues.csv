@@ -1066,7 +1066,7 @@ descrizione: '(AGENPARL, 18 nov 2016) Entro dicembre una prima parte di containe
 link: 'http://www.agenparl.com/terremoto-entro-dicembre-container-2000/'
 data: 18/11/2016
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1308,190370580,2016-11-21 11:40:36,2016-11-18 17:04:30,Cercasi lavatrice a #Cascia,42.7256264,13.0399312,"[""Accettato"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""lavatrice"", ""data"": ""18/11/2016"", ""descrizione"": ""Salve, mi chiamo Renata Di Nicola ed abito a Cascia. Dopo il Terremoto ho casa inagibile con mia madre di 88 anni a mio carico. Avrei bisogno se possibile di una lavatrice. Grazie in anticipo."", ""email"": ""renata.dinicola@gmail.com"", ""immagine"": """", ""indirizzo"": ""Strada provinciale di Cascia, Cascia, PG, UMB, 06043, Italia"", ""lat"": ""42.7256264"", ""link"": """", ""lon"": ""13.0399312"", ""tel"": ""3392543708""}","<pre><yamldata>tel: '3392543708'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1308,190370580,2016-12-14 17:11:57,2016-11-18 17:04:30,Cercasi lavatrice a #Cascia,42.7256264,13.0399312,"[""Accettato"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""lavatrice"", ""data"": ""18/11/2016"", ""descrizione"": ""Salve, mi chiamo Renata Di Nicola ed abito a Cascia. Dopo il Terremoto ho casa inagibile con mia madre di 88 anni a mio carico. Avrei bisogno se possibile di una lavatrice. Grazie in anticipo."", ""email"": ""renata.dinicola@gmail.com"", ""immagine"": """", ""indirizzo"": ""Strada provinciale di Cascia, Cascia, PG, UMB, 06043, Italia"", ""lat"": ""42.7256264"", ""link"": """", ""lon"": ""13.0399312"", ""tel"": ""3392543708""}","<pre><yamldata>tel: '3392543708'
 email: renata.dinicola@gmail.com
 cosa: lavatrice
 descrizione: 'Salve, mi chiamo Renata Di Nicola ed abito a Cascia. Dopo il Terremoto ho casa inagibile con mia madre di 88 anni a mio carico. Avrei bisogno se possibile di una lavatrice. Grazie in anticipo.'
@@ -1076,7 +1076,7 @@ lon: '13.0399312'
 link: ''
 immagine: ''
 data: 18/11/2016
-</yamldata></pre>",open
+</yamldata></pre>",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1307,190368567,2016-11-18 17:16:05,2016-11-18 16:56:06,Cercasi ad #Amatrice container magazzino,42.6280156,13.292479100000037,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""Container magazzino"", ""data"": ""18/11/2016"", ""descrizione"": ""Cerco container magazzino di medie dimensioni da collocare nel giardino della casa di Amatrice che si trova nella zona rossa"", ""email"": ""forliniernesto@libero.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": ""42.6280156"", ""link"": """", ""lon"": ""13.292479100000037"", ""tel"": ""3385856935""}","<pre><yamldata>tel: '3385856935'
 email: forliniernesto@libero.it
 cosa: 'Container magazzino'
