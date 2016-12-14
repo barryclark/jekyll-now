@@ -35,7 +35,7 @@ The final talk of the day was presented by Lorenzo, and focused on [‘A Visual 
 
 ### Wrapping up a Great Day!
 
-The day concluded with the Haufe team running a public meetup in the same venue, with Daniel presenting his updated “Seven (More) Deadly Sins of Microservices” talk, Martin reprising his presentation on Wicked.io, and another Haufe team talking about their journey with Dockerising an existing suite of applications.
+The day concluded with the Haufe Group running a public meetup in the same venue, with Daniel presenting his updated “Seven (More) Deadly Sins of Microservices” talk, Martin reprising his presentation on Wicked.io, and the Haufe Akademie team talking about their journey with DevOps processes, infrastructure as code and dockerising an existing suite of applications.
 
 There was lots to think about after watching all of the talks and chatting to attendees, and we concluded that there are many challenges with implementing changes like moving to a microservices architecture or migrating to the cloud within a company that has the successful history and size of Haufe. The primary issue for a leadership team is defining the role that IT will play within any transformation, and being very clear what the organisation is optimising for - the drive to minimise costs and maximise innovation are typically mutually exclusive. 
 
