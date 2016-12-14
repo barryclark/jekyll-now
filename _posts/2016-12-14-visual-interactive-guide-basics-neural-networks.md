@@ -12,7 +12,7 @@ NOTE: This is a draft and this post is still being reviewed. You can send it aro
 ## Motivation
 I'm not a machine learning expert. I'm a software engineer whose only brushes with AI before 2015 were an expert systems class in college and minor experiments with recommendations and search engine optimization. I had always wanted to delve deeper into machine learning, but never really found my "in". That's why when Google open sourced TensorFlow in November 2015, I got super excited and knew it was time to jump in and start the learning journey. Not to sound dramatic, but to me, it actually felt kind of like Prometheus handing down fire to mankind from the Mount Olympus of machine learning. In the back of my head was the idea that the entire field of Big Data and technologies like Hadoop were vastly accelerated when Google researchers released their Map Reduce paper. This time it's not a paper -- it's the actual software they use internally after years and years of evolution.
 
-So I started learning what I can about the basics of
+So I started learning what I can about the basics of the topic, and saw the need for gentler resources for people with no experience in the field. This is my attempt at that.
 
 ## Start here
 Let's start with a simple example. Say you're helping a friend who wants to buy a house. She was quoted $400,000 for a 2000 sq ft house (185 meters). Is this a good price or not?
