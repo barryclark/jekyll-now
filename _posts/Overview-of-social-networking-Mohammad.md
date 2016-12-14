@@ -1,13 +1,10 @@
 ---
-
 Layout:post
 
 Title : Overview of Social Network
 
 Author: manarwala
-
 ---
-
 Overview of Social Network
 Social networking play an important roles in our daily lifes , social networking make communication faster  and its reliable.  And World most popular social networking site has changed the world , and will be keep changing as time goes. Lets see the top social networking site which have changed the world completely.
 1)Facebook - used by more then billion people per day(according to facebook) , used for messaging , sharing  and also used for bussiness purposes and much more.
