@@ -71,7 +71,7 @@ var NN_trainer = function (svg_el, table_el, areas, prices, weight, bias, x1, y1
     this.error_chart_el = error_chart_el;
     this.heatmap_el = heatmap_el;
 
-    this.graphWidth = 370;
+    this.graphWidth = 350;
 
     this.miniGraphWidth = 180;
     this.miniGraphHeight = 180;

@@ -5,7 +5,7 @@ var shallowNeuralNetworkGrapher = function (inputNodeCount, outputNodeCount, svg
     this.inputNodeCount = inputNodeCount;
     this.outputNodeCount = outputNodeCount;
     this.svgElement = svgElement;
-    this.graphWidth = 370;
+    this.graphWidth = 350;
 
     this.initializeGraph();
     this.drawGraph()

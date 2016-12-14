@@ -17,7 +17,7 @@ var multiVariableNeuralNetworkTrainer = function (numberOfInputNodes,
     //this.data = [{x: this.x1, y: this.y1}, {x: this.x2, y: this.y2}];
     this.prediction = [];
 
-    this.graphWidth = 370;
+    this.graphWidth = 350;
     this.weightsRanges = weightsRanges;
     this.biasRanges = biasRanges;
 
