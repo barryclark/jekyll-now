@@ -1,7 +1,7 @@
 #Pop Music gets explicit
 
 
-###What is the worst thing possible in the music industry?
+### What is the worst thing possible in the music industry?
 
 It’s 1956, and a young man is performing one of his chart topping hits live on national television on “The Milton Berle Show”.  The whole country of USA goes crazy, with television critics claiming the performance was despicable due to it’s “appalling lack of musicality”, it’s “vulgarity” and “animalism”.
 
@@ -17,7 +17,7 @@ Flash forward to more recent trends in music, and you have songs with explicit l
 
 Me and my co-researcher decided to look into the music industry to try and find out if there was an actual increase in raunchy, adulterated themes in the most popular music.  In order to have an actual measurement of any possible change we settled on analysing the frequency of profanity and curse words.  To us it seemed that there had to have been some sort of increase in explicit songs becoming popular, because if you listen to a song from 1965 and a song from 2015, it is evident that there is a difference in the subtleties of old genres and the straightforward approach of today's top hits.
 
-###So what did you guys find out?
+### So what did you guys find out?
 Well, from the initial data we gathered we were wrong. I'm talking about the time span from 2000 - 2015, in which we had the full lyrics of each top ten song of every year.  This was surprising because out of the 150 songs we assumed that more swear words would appear in the later years because of the increase of rap artists that have become more mainstream than ever before.  Thought there was an increase in swear words in that time span there was not much of a difference in use.  The increase can even be attributed to an increase in songs being published that include more swear word than usual.
 
 After we got the results back from that range of years, we thought about it and chose to scan songs from a larger range, even though our data showed we were wrong.  
@@ -32,7 +32,7 @@ Were we surprised or what, when we saw that 1 list alone contained more the 700 
 
 This analysis showed us that we were correct in our original hypothesis, in which we believed that popular music has beccome more and more explicit.
 
-####Frequency of explicit curse words
+#### Frequency of explicit curse words
 <div>
     <a href="https://plot.ly/~rsjudka/6/" target="_blank" title="" style="display: block; text-align: center;"><img src="https://plot.ly/~rsjudka/6.png" alt="" style="max-width: 100%;width: 1000px;"  width="500" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
     <script data-plotly="rsjudka:6"  src="https://plot.ly/embed.js" async></script>
@@ -46,17 +46,17 @@ This [next graph](https://plot.ly/~rsjudka/2/) shows the total count of curse wo
     <a href="https://plot.ly/~rsjudka/2/" target="_blank" title="" style="display: block; text-align: center;"><img src="https://plot.ly/~rsjudka/2.png" alt="" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
     <script data-plotly="rsjudka:2"  src="https://plot.ly/embed.js" async></script>
 </div>
-*The words we considered as 'banned words' were compiled from 3 lists provided by Google, Facebook, and Flikr. We did this for two reasons. The firsy was to remove any bias we had towards specific words. The second was to expand on the various spellings of our vulgar words and include any words from the past that we may not have been familiar with. To see each list, [click here](https://github.com/rsjudka/countVulgar/blob/master/banned.txt), or [here](https://github.com/rsjudka/countVulgar/blob/master/banned2.txt), or even [here](https://github.com/rsjudka/countVulgar/blob/master/banned3.txt). 
+*The words we considered as 'banned words' were compiled from 3 lists provided by Google, Facebook, and Flickr. We did this for two reasons. The first was to remove any bias we had towards specific words. The second was to expand on the various spellings of our vulgar words and include any words from the past that we may not have been familiar with. To see each list, [click here](https://github.com/rsjudka/countVulgar/blob/master/banned.txt), or [here](https://github.com/rsjudka/countVulgar/blob/master/banned2.txt), or even [here](https://github.com/rsjudka/countVulgar/blob/master/banned3.txt). 
 
-###History of swearing
+### History of swearing
 Curse words are as old as the english language, and so have become, although controversial, a large part of American culture.  Many believe that profanity is the worst kind of language that can be used, due to it’s aggressive meaning and negative connotations.  The crutch of the inarticulate, the weapon of the uneducated, are just some of the descriptions given to swearing.  The way in which we use language gives other people a look into what kind of person we are and what is our character. In other words if a person uses explicit language, his peers look at him as a person that has lazy speech due to the fact that he can not come up with anything more creative.  Even the bible has various quotes stating not to use foul language. 
 
-On the opposite side of the argument are those that believe that there is absolutely nothing wrong with cursing and it’s a very useful part of the english language.  Their thinking is that curse words have a use in giving a sentence or thought an extra punch that makes whatever point that is trying to be explained more emphasized.  A publication in March of this year from [BBC](http://www.bbc.com/future/story/20160303-the-surprising-benefits-of-swearing), described some of the benefits of swearing and why it's not too bad of a language.  
+On the opposite side of the argument are those that believe that there is absolutely nothing wrong with cursing and it’s a very useful part of the English language.  Their thinking is that curse words have a use in giving a sentence or thought an extra punch that makes whatever point that is trying to be explained more emphasized.  A publication in March of this year from [BBC](http://www.bbc.com/future/story/20160303-the-surprising-benefits-of-swearing), described some of the benefits of swearing and why it's not too bad.  
 
 I personally believe there to be an actual benefit to curse.  It helps relieve pain and stress when, for example, a heavy box falls on my foot and I in turn drop a F-bomb, it allows you to release your frustration in the form of a word.  In the same article from BBC, a study in which two participants were told to place thier arm into a bucket of ice water, showed that swearing acted as a hypoalgesic, pain lesener.  One group was told to yell out with profanity while the other group was told to shout out with clean language.  Another aspect that was noticed was that the heart rate of someone that uses swear words goes up leading to believe that there is an emotional response to using banned words(that study can be found [here](https://www.ncbi.nlm.nih.gov/pubmed/22078790)
 
 Whether or not swear words are an negative part of english language, one thing is for sure, curse words are becoming less and less of a taboo thing to say in music.  Plenty of chart topping singles, and albums as well, contain explicit language and content, and it seems like it's only going up.
 
 
-###The extras
+### The extras
 Also, if you're further interested or wanted to use some of our data for some other reason, we have compiled a huge-ish folder of as much data we ca pull and organized in a ton of different ways. You can find all that data [here](https://github.com/rsjudka/countVulgar/tree/master/data).
