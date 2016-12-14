@@ -29,15 +29,15 @@ layout: default
 
 <table>
 {% for company in site.data.data %}
-  <tr text-align: center;>
+<tr>
 		{% if company.url %}
-		<td text-align: center;><a href="{{company.url}}" rel="nofollow">{{company.company_gr}}</a></td>
+		<td><a href="{{company.url}}" rel="nofollow">{{company.company_gr}}</a></td>
 		{% else %}
-		<td text-align: center;>{{company.company_gr}}</td>
+		<td>{{company.company_gr}}</td>
 		{% endif %}
-		<td text-align: center;>{{company.category_gr}}</td>
-		<td text-align: center;>{{company.location_gr}}</td>
-  </tr>
+		<td>{{company.category_gr}}</td>
+		<td>{{company.location_gr}}</td>
+</tr>
 {% endfor %}
 </table>
 
@@ -182,7 +182,7 @@ layout: default
 - Προσθέστε κάποια σχετική [εικόνα](https://en.bitcoin.it/wiki/Promotional_graphics) (π.χ. Bitcoin Accepted Here) στο κατάστημά σας και στην ιστοσελίδα σας.
 - Στείλε μας email (αναγράφεται στο τέλος της σελίδας) ώστε να σας προσθέσουμε στη σελίδα αυτή. Ή κάνετε ένα Pull Request στο GitHub!
 
-Τελευταία ενημέρωση: 2016-11-29
+Τελευταία ενημέρωση: 2016-12-14
 
 <!-- <div class="posts">
   {% for post in site.posts %}

@@ -55,7 +55,7 @@ baseurl: ""
 #
 
 # markdown: redcarpet
-highlighter: pygments
+# highlighter: pygments
 permalink: /:title/
 
 # The release of Jekyll Now that you're using

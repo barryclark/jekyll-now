@@ -13,14 +13,14 @@ Come to one of our meetups in [Athens](http://www.meetup.com/BlockchainGreece-0/
 
 <table>
 {% for company in site.data.data %}
-  <tr text-align: center;>
+  <tr>
 		{% if company.url %}
-		<td text-align: center;><a href="{{company.url}}" rel="nofollow">{{company.company_en}}</a></td>
+		<td><a href="{{company.url}}" rel="nofollow">{{company.company_en}}</a></td>
 		{% else %}
-		<td text-align: center;>{{company.company_en}}</td>
+		<td>{{company.company_en}}</td>
 		{% endif %}
-		<td text-align: center;>{{company.category_en}}</td>
-		<td text-align: center;>{{company.location_en}}</td>
+		<td>{{company.category_en}}</td>
+		<td>{{company.location_en}}</td>
   </tr>
 {% endfor %}
 </table>
@@ -66,7 +66,7 @@ Come to one of our meetups in [Athens](http://www.meetup.com/BlockchainGreece-0/
 
 	![](/images/Page 8.png)
 
-Last update: 2016-11-29
+Last update: 2016-12-14
 
 <!-- <div class="posts">
   {% for post in site.posts %}
