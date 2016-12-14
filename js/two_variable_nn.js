@@ -128,7 +128,7 @@ multiVariableNeuralNetworkTrainer.prototype.initializeErrorGraph = function () {
 
 
     this.errorG.append("defs").append("clipPath")
-        .attr("id", "clip")
+        .attr("id", "clip2")
         .append("rect")
         .attr("width", this.errorChartWidth)
         .attr("height", this.errorChartHeight);
@@ -136,7 +136,7 @@ multiVariableNeuralNetworkTrainer.prototype.initializeErrorGraph = function () {
     var trainer_self = this;
 
     this.errorG.append("g")
-        .attr("clip-path", "url(#clip)")
+        .attr("clip-path", "url(#clip2)")
         .append("path")
         .datum(this.error_history)
         .attr("class", "error-history-line")
