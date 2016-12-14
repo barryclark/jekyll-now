@@ -1,0 +1,10 @@
+version: "2"
+
+services:
+  jekyll:
+    ports:
+    - "4000:4000"
+    image: starefossen/github-pages
+    volumes:
+#    - "~/Source/Repos/SSpeights.github.io:/usr/src/app"
+    - ".:/usr/src/app"
