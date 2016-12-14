@@ -5,6 +5,7 @@ var shallowNeuralNetworkGrapher = function (inputNodeCount, outputNodeCount, svg
     this.inputNodeCount = inputNodeCount;
     this.outputNodeCount = outputNodeCount;
     this.svgElement = svgElement;
+    this.graphWidth = 370;
 
     this.initializeGraph();
     this.drawGraph()
@@ -20,7 +21,7 @@ shallowNeuralNetworkGrapher.prototype.updateNodeCount = function (nodeType, newV
 shallowNeuralNetworkGrapher.prototype.initializeGraph = function () {
     this.nnGraphHolder = d3.select(this.svgElement) // select the 'body' element
         .append("svg")           // append an SVG element to the body
-        .attr("width", 429)      // make the SVG element 449 pixels wide
+        .attr("width", this.graphWidth)      // make the SVG element 449 pixels wide
         .attr("height", 250);    // make the SVG element 249 pixels high
     this.neuralNetworkMargin = {top: 10, right: 10, bottom: 10, left: 10},
         this.neuralNetworkWidth = +this.nnGraphHolder.attr("width") - this.neuralNetworkMargin.left - this.neuralNetworkMargin.right,

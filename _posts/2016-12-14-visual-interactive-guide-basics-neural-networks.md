@@ -84,14 +84,50 @@ That's quite a bit of yellow. Yellow is bad. Yellow is error. We want to shrink 
 {::options parse_block_html="true" /}
 <div class="one_variable">
 
+<div class="one_variable">
 
-Area (sq ft) (x) | Price ($1000) (<span class="y_">y_</span>) | Prediction (<span class="y">y</span>) | <span class="y_">y_</span>-<span class="y">y</span> | (<span class="y_">y_</span>-<span class="y">y</span>)²
---- |  --- | --- | --- | ---
-2,104 | 399.9 | 379  | 21 | 449
-1,600 | 329.9 | 288  | 42 | 1756
-2,400 | 369   | 432  | -63 | 3969
-| | | <span class="total"> Average:</span> |<b>2,058</b>
+  <table>
+    <thead>
+      <tr>
+        <th>Area (sq ft) (x)</th>
+        <th>Price ($1000) (<span class="y_">y_</span>)</th>
+        <th>Prediction (<span class="y">y</span>)</th>
+        <th><span class="y_">y_</span>-<span class="y">y</span></th>
+        <th>(<span class="y_">y_</span>-<span class="y">y</span>)²</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>2,104</td>
+        <td>399.9</td>
+        <td>379</td>
+        <td>21</td>
+        <td>449</td>
+      </tr>
+      <tr>
+        <td>1,600</td>
+        <td>329.9</td>
+        <td>288</td>
+        <td>42</td>
+        <td>1756</td>
+      </tr>
+      <tr>
+        <td>2,400</td>
+        <td>369</td>
+        <td>432</td>
+        <td>-63</td>
+        <td>3969</td>
+      </tr>
+      <tr>
+        <td> </td>
+        <td> </td>
+        <td colspan="2"><span class="total"> Average:</span></td>
+        <td><b>2,058</b></td>
+      </tr>
+    </tbody>
+  </table>
 
+</div>
 
 
 

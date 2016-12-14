@@ -254,7 +254,7 @@ multiVariableNeuralNetworkTrainer.prototype.calculatePrediction = function (x) {
 multiVariableNeuralNetworkTrainer.prototype.initializeNeuralNetworkGraph = function () {
     this.nnGraphHolder = d3.select(this.neuralNetworkGraphEl) // select the 'body' element
         .append("svg")           // append an SVG element to the body
-        .attr("width", 429)      // make the SVG element 449 pixels wide
+        .attr("width", this.graphWidth)      // make the SVG element 449 pixels wide
         .attr("height", 250);    // make the SVG element 249 pixels high
     this.neuralNetworkMargin = {top: 10, right: 10, bottom: 10, left: 10},
         this.neuralNetworkWidth = +this.nnGraphHolder.attr("width") - this.neuralNetworkMargin.left - this.neuralNetworkMargin.right,
