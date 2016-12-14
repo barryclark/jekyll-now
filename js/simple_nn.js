@@ -73,7 +73,7 @@ var NN_trainer = function (svg_el, table_el, areas, prices, weight, bias, x1, y1
 
     this.graphWidth = 350;
 
-    this.miniGraphWidth = 180;
+    this.miniGraphWidth = 170;
     this.miniGraphHeight = 180;
 
     this.weightRange = weightRange;

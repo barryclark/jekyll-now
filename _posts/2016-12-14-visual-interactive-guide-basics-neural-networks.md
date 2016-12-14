@@ -518,7 +518,7 @@ Take a second to explore the shape of the network as you vary the number of feat
 <table markdown="0">
     <tr>
         <td>
-            Number of features (x):
+            # of features (x):
         </td>
         <td>
            <div class="input-group" >
@@ -536,10 +536,9 @@ Take a second to explore the shape of the network as you vary the number of feat
             </div>
         </td>
     </tr>
-
     <tr>
         <td>
-            Number of classes (y):
+            # of classes (y):
         </td>
         <td>
            <div class="input-group" >
