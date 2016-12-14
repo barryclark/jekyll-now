@@ -4,7 +4,7 @@ published: True
 title: DRAFT - A Visual and Interactive Guide to the Basics of Neural Networks
 ---
 
-NOTE: This is a draft and this post is still being reviewed. You can send it around to your friends, but please don't publish it anywhere public. I would very much appreciate it. Thanks. And please reach out to me on [Twitter](https://twitter.com/jalammer) for any corrections or feedback.
+NOTE: This is a draft and this post is still being reviewed. You can send it around to your friends, but please don't publish it anywhere public. I would very much appreciate it. Thanks. And please reach out to me on [Twitter](https://twitter.com/jalammar) for any corrections or feedback.
 
 
 <!--more-->
