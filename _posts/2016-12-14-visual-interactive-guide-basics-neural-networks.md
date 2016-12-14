@@ -89,7 +89,7 @@ That's quite a bit of yellow. Yellow is bad. Yellow is error. We want to shrink 
   <table>
     <thead>
       <tr>
-        <th>Area (sq ft) (x)</th>
+        <th>Area (x)</th>
         <th>Price ($1000) (<span class="y_">y_</span>)</th>
         <th>Prediction (<span class="y">y</span>)</th>
         <th><span class="y_">y_</span>-<span class="y">y</span></th>
@@ -121,7 +121,7 @@ That's quite a bit of yellow. Yellow is bad. Yellow is error. We want to shrink 
       <tr>
         <td> </td>
         <td> </td>
-        <td colspan="2"><span class="total"> Average:</span></td>
+        <td colspan="2" align="right"><span class="total"> Average:</span></td>
         <td><b>2,058</b></td>
       </tr>
     </tbody>
