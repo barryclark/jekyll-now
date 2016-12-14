@@ -190,7 +190,6 @@ multiVariableNeuralNetworkTrainer.prototype.updateUI = function (mean_delta_sum)
 
 multiVariableNeuralNetworkTrainer.prototype.addErrorPoint = function (value) {
 
-    console.log("addErrorPoint");
     this.error_history.push(value);
     // Redraw the line.
     d3.select(this.svg_el + " .error-history-line")
@@ -207,11 +206,8 @@ multiVariableNeuralNetworkTrainer.prototype.addErrorPoint = function (value) {
 
 multiVariableNeuralNetworkTrainer.prototype.batchAddErrorPoint = function (valuesArray) {
 
-    console.log("this.error_history before concat", this.error_history.length);
     this.error_history = this.error_history.concat(valuesArray);
 
-    console.log("valuesArray", valuesArray.length, "this.error_history",
-        this.error_history.length, "this.error_chart_history_x", this.error_chart_history_x);
     // Cut the needed number of elements to be within our specified error_chart_history_x
     if (this.error_history.length > this.error_chart_history_x) {
         // How much are we over by
@@ -418,7 +414,6 @@ multiVariableNeuralNetworkTrainer.prototype.initializeNeuralNetworkGraph = funct
 
 multiVariableNeuralNetworkTrainer.prototype.updateNeuralNetworkGraph = function () {
     for( var c = 0; c < this.weights.length; c++){
-        console.log(c);
         d3.select(this.neuralNetworkGraphEl + " #weight"+c+"Value")
             .text(this.weights[c].toFixed(3));
 
@@ -456,19 +451,16 @@ multiVariableNeuralNetworkTrainer.prototype.gradientDescentStep = function (step
             sumForBias = sumForBias + this.prediction[i] - this.labels[i];
         }
 
-        //console.log("sum: ", sumsForWeights, sumForBias );
 
         // Calculate the mean for each parameter
         for(var k = 0; k < this.numberOfInputNodes; k++)
             weightsMeans[k] = sumsForWeights[k] / this.labels.length;
         biasMean = sumForBias / this.labels.length;
-        //console.log("sum means: ", weightsMeans, biasMean);
 
         // Multiply with the learning rates
         for(var m = 0; m < this.numberOfInputNodes; m++)
             weightAdjustments[m] = this.weightLearningRates[m] * weightsMeans[m];
         biasAdjustment = this.biasLearningRate * biasMean;
-        //console.log("adjustments: ", weightAdjustments, biasAdjustment);
 
         // Subtract adjustment from current parameter value
         for(var p = 0; p < this.numberOfInputNodes; p++)

@@ -527,15 +527,12 @@ NN_trainer.prototype.gradientDescentStep = function (number_of_steps) {
             sum_for_weight = sum_for_weight +  (this.prediction[i] - this.prices[i] ) * this.areas[i];
         }
 
-        //console.log("sum: ", sum_for_weight, sum_for_bias );
 
         bias_mean = sum_for_bias / this.areas.length;
         weightsMeans = sum_for_weight / this.areas.length;
-        //console.log("sum means: ", weightsMeans, bias_mean);
 
         bias_adjustment = this.learningRate2 * bias_mean;
         weight_adjustment = this.learningRate * weightsMeans;
-        //console.log("adjustments: ", weight_adjustment, bias_adjustment);
 
         new_b = this.bias - bias_adjustment;
         new_w =this.weight - weight_adjustment;

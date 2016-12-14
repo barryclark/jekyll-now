@@ -90,7 +90,6 @@ shallowNeuralNetworkGrapher.prototype.drawGraph = function () {
         return grapher.weightNodeX(i);
     });
 
-    console.log("this.weightLayerXCoordinates", this.weightLayerXCoordinates)
 
     // Calculate the angles of the all the Input-to_Bias lines
     this.lineAngles = [];
@@ -111,7 +110,6 @@ shallowNeuralNetworkGrapher.prototype.drawGraph = function () {
     this.weightLayerCoordinates = [];
     for (var i = 0; i < this.inputNodeCount; i++)
         for (var j = 0; j < this.outputNodeCount; j++) {
-            console.log(Math.tan(this.lineAngles[j][i]))
             this.weightLayerCoordinates.push({
                 x: this.weightLayerXCoordinates[j],
                 y:  this.inputLayerCoordinates[i].y -
@@ -122,7 +120,6 @@ shallowNeuralNetworkGrapher.prototype.drawGraph = function () {
             })
         }
 
-    console.log("weightLayerCoordinates", this.weightLayerCoordinates);
 
     this.inputToBiasLines = [];
     // Calculate the coordiantes of the lines from input to bias
@@ -537,13 +534,12 @@ shallowNeuralNetworkGrapher.prototype.graphSoftmax = function (data) {
     var softmax = this.neuralNetworkG.selectAll(this.svgElement + " .softmax" )
         .data([data]);
 
-    console.log("data", data, softmax)
 
 
     var softmaxGroup = softmax.enter()
         .append("g")
         .attr("class", "softmax")
-        .attr("transform", function(d){ console.log("ddd", d)
+        .attr("transform", function(d){
             return "translate(" +
             (d.x)
             + ","
