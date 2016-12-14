@@ -1,6 +1,6 @@
 ---
 layout: Post
-title :Critical Essay
+title : Critical Essay
 author: manarwala
 ---
 
