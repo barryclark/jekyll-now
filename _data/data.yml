@@ -309,6 +309,14 @@
   category_en: Greek fast food
   location_gr: Θεσσαλονίκη, Μακεδονία, Ελλάδα
   location_en: Thessaloniki, Macedonia, Greece
+  
+- company_gr: SOFTWeb
+  company_en: SOFTWeb
+  url: http://www.softweb.gr/
+  category_gr: Υπηρεσίες Internet και εφαρμογών κινητών τηλεφώνων
+  category_en: Internet and mobile app services
+  location_gr: Θεσσαλονίκη, Μακεδονία, Ελλάδα
+  location_en: Thessaloniki, Macedonia, Greece  
 
 - company_gr: Kopa3ka
   company_en: Kopa3ka
