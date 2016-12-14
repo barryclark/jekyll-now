@@ -5,7 +5,7 @@ layout: post
 Title : Introduction to Digital Humanities
 
 Author: manarwala
-
+---
 "Digital humanities, which began as a term of consensus amongst a relatively small group of researchers is now backed on a growing number of campuses by a level of funding, 
 infrastructure, and administrative commitments that would have been unthinkable even a decade ago. Even more recently, I would argue, the network effects of blogs and Twitter
  at a moment when the academy itself is facing massive and often wrenching changes linked both to new technologies and the changing political and economic landscape has led 
