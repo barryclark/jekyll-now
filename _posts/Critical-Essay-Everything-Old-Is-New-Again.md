@@ -2,8 +2,7 @@ Layout: Post
 
 Title :Critical Essay–Everything Old Is New Again: A Barthesian Analysis of Tumblr.” Technoculture: An Online Journal of Technology in Society
 
-Author: Anne Francis
-
+Author: manarwala
 
 
 In her writing Anne Francis , which she was heavily influenced by  famous social theorist Pierre Bourdieu, she talks about birth and rise of Tumblr's. I will agree with author on this ,  since Tumblr started , Tumblr popularity had risen rapidly than any other social media , we can say Tumblr is star of social media . Also Anne Francis talks about how Tumblr  gained popularity  because of easy use  , which is true like twitter and facebook ,  without any incovience you  can write , posts pictures and videos with ease.  
