@@ -3,7 +3,7 @@ layout: post
 title: Ny Forening!
 ---
 
-Denne måned blev IT-tutor en realitet. IT-Tutor er en forening sat i verden for at varetage studiestarten for studerende på Bachelorudannelsen i IT ved Datalogisk institut på Aarhus Universitet.
+Denne måned blev IT-Tutor en realitet. IT-Tutor er en forening sat i verden for at varetage studiestarten for studerende på Bachelorudannelsen i IT ved Datalogisk institut på Aarhus Universitet.
 
 **Bliv tutor**
 Hvis du allerede nu ved at du vil være tutor og ikke vil gå glip af ansøgningsfristen kan du tilmelde dig vores mailliste og modtage løbende emails frem til deadlinen. Du finder maillisten på it-tutor.dk/tutor 
