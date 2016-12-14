@@ -7,6 +7,8 @@ title: DRAFT - A Visual and Interactive Guide to the Basics of Neural Networks
 NOTE: This is a draft and this post is still being reviewed. You can send it around to your friends, but please don't publish it anywhere public. I would very much appreciate it. Thanks. And please reach out to me on [Twitter](https://twitter.com/jalammer) for any corrections or feedback.
 
 
+<!--more-->
+
 ## Motivation
 I'm not a machine learning expert. I'm a software engineer whose only brushes with AI before 2015 were an expert systems class in college and minor experiments with recommendations and search engine optimization. I had always wanted to delve deeper into machine learning, but never really found my "in". That's why when Google open sourced TensorFlow in November 2015, I got super excited and knew it was time to jump in and start the learning journey. Not to sound dramatic, but to me, it actually felt kind of like Prometheus handing down fire to mankind from the Mount Olympus of machine learning. In the back of my head was the idea that the entire field of Big Data and technologies like Hadoop were vastly accelerated when Google researchers released their Map Reduce paper. This time it's not a paper -- it's the actual software they use internally after years and years of evolution.
 
