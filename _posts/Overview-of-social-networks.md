@@ -1,8 +1,6 @@
 ---
-Layout:post
-
+Layout: post
 Title : Overview of Social Network 
-
 Author: manarwala
 ---
 
