@@ -17,6 +17,7 @@ var multiVariableNeuralNetworkTrainer = function (numberOfInputNodes,
     //this.data = [{x: this.x1, y: this.y1}, {x: this.x2, y: this.y2}];
     this.prediction = [];
 
+    this.graphWidth = 370;
     this.weightsRanges = weightsRanges;
     this.biasRanges = biasRanges;
 
@@ -84,7 +85,7 @@ multiVariableNeuralNetworkTrainer.prototype.initializeErrorGraph = function () {
 
     this.errorHolder = d3.select(this.svg_el) // select the 'div' element to append the svg
         .append("svg")           // append an SVG element to the body
-        .attr("width", 429)      // make the SVG element 449 pixels wide
+        .attr("width", this.graphWidth)      // make the SVG element 449 pixels wide
         .attr("height", 249);    // make the SVG element 249 pixels high
 
     this.margin = {top: 20, right: 20, bottom: 50, left: 80};

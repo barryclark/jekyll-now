@@ -71,7 +71,9 @@ var NN_trainer = function (svg_el, table_el, areas, prices, weight, bias, x1, y1
     this.error_chart_el = error_chart_el;
     this.heatmap_el = heatmap_el;
 
-    this.miniGraphWidth = 210;
+    this.graphWidth = 370;
+
+    this.miniGraphWidth = 180;
     this.miniGraphHeight = 180;
 
     this.weightRange = weightRange;
@@ -160,7 +162,7 @@ normalizeFeaturesArray = function(array, mean, std){
 NN_trainer.prototype.initializeGraph = function(){
     this.holder = d3.select(this.svg_el) // select the 'body' element
         .append("svg")           // append an SVG element to the body
-        .attr("width", 429)      // make the SVG element 449 pixels wide
+        .attr("width", this.graphWidth)      // make the SVG element 449 pixels wide
         .attr("height", 249);    // make the SVG element 249 pixels high
     this.margin = {top: 20, right: 20, bottom: 50, left: 50},
         this.width = +this.holder.attr("width") - this.margin.left - this.margin.right,
@@ -217,7 +219,7 @@ NN_trainer.prototype.initializeGraph = function(){
 NN_trainer.prototype.initializeErrorGraph = function(){
 
 
-    this.error_chart_history_x = 300;       // How many error data points to show
+    this.error_chart_history_x = 200;       // How many error data points to show
     this.error_chart_history_y = 100000;    // How high the bar goes
     this.error_history = [10000];
 
@@ -258,7 +260,7 @@ NN_trainer.prototype.initializeErrorGraph = function(){
     this.errorG.append("g")
         .attr("class", "axis axis--x")
         .attr("transform", "translate(0," + this.errorChartHeight + ")")
-        .call(d3.axisBottom(this.error_x).ticks(5));
+        .call(d3.axisBottom(this.error_x).ticks(4));
     // Draw Y axis
     this.errorYAxis = this.errorG.append("g")
         .attr("class", "axis axis--y")
@@ -573,7 +575,7 @@ NN_trainer.prototype.initializeHeatmap = function(){
     //this.heatmapColors = ['#F8CA00','#a1dab4','#41b6c4','#225ea8'].reverse();
     this.heatmapColors = ['#fcfc99','#feb24c','#fd8d3c','#fc4e2a'];
     //this.heatmapColors = ['#ffffcc','#feb24c','#fd8d3c','#fc4e2a'];
-    this.heatmapEmptyBoxColor = "#f0f0f0";
+    this.heatmapEmptyBoxColor = "#fbfbfb";
     this.heatmapData = this.generateHeatmapData(this.heatmapSideNumberOfElements);
 
     this.heatmapHolder = d3.select(this.heatmap_el) // select the 'body' element
@@ -723,7 +725,7 @@ NN_trainer.prototype.generateHeatmapData= function(size){
 NN_trainer.prototype.initializeNeuralNetworkGraph= function(){
     this.nnGraphHolder = d3.select(this.neuralNetworkGraphEl) // select the 'body' element
         .append("svg")           // append an SVG element to the body
-        .attr("width", 429)      // make the SVG element 449 pixels wide
+        .attr("width", this.graphWidth)      // make the SVG element 449 pixels wide
         .attr("height", 150);    // make the SVG element 249 pixels high
     this.neuralNetworkMargin = {top: 10, right: 10, bottom: 10, left: 10},
         this.neuralNetworkWidth = +this.nnGraphHolder.attr("width") - this.neuralNetworkMargin.left - this.neuralNetworkMargin.right,

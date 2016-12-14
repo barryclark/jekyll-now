@@ -9,6 +9,10 @@ NOTE: This is a draft and this post is still being reviewed. You can send it aro
 
 <!--more-->
 
+<div class="img-div" markdown="0">
+    <img src="/images/NNs_2_variables.png" />
+</div>
+
 ## Motivation
 I'm not a machine learning expert. I'm a software engineer whose only brushes with AI before 2015 were an expert systems class in college and minor experiments with recommendations and search engine optimization. I had always wanted to delve deeper into machine learning, but never really found my "in". That's why when Google open sourced TensorFlow in November 2015, I got super excited and knew it was time to jump in and start the learning journey. Not to sound dramatic, but to me, it actually felt kind of like Prometheus handing down fire to mankind from the Mount Olympus of machine learning. In the back of my head was the idea that the entire field of Big Data and technologies like Hadoop were vastly accelerated when Google researchers released their Map Reduce paper. This time it's not a paper -- it's the actual software they use internally after years and years of evolution.
 
@@ -81,7 +85,7 @@ That's quite a bit of yellow. Yellow is bad. Yellow is error. We want to shrink 
 <div class="one_variable">
 
 
-Area (sq ft) (x) | Price ($1000) (<span class="y_">y_</span>) | Prediction (<span class="y">y</span>) | <span class="y_">y_</span> - <span class="y">y</span> | (<span class="y_">y_</span> - <span class="y">y</span>)²
+Area (sq ft) (x) | Price ($1000) (<span class="y_">y_</span>) | Prediction (<span class="y">y</span>) | <span class="y_">y_</span>-<span class="y">y</span> | (<span class="y_">y_</span>-<span class="y">y</span>)²
 --- |  --- | --- | --- | ---
 2,104 | 399.9 | 379  | 21 | 449
 1,600 | 329.9 | 288  | 42 | 1756

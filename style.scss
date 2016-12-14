@@ -112,19 +112,19 @@ em, i {
 }
 
 .prediction table tr{
-  padding: 1px 30px;
+  padding: 1px 10px;
 
 }
 
 .prediction table th{
-  padding: 4px 16px;
+  padding: 4px 5px;
   font-weight: bold;
 }
 
 
 
 .prediction table td{
-  padding: 4px 16px;
+  padding: 4px 5px;
   border-top: 1px solid #333;
 }
 
@@ -156,7 +156,7 @@ td.error-cell{  text-align:center;  }
 
 
 .prediction .graphs{
-  width:475px;
+  width:410px;
   margin: 0 auto;
 }
 
@@ -166,7 +166,7 @@ td.error-cell{  text-align:center;  }
 
 .prediction table.training-table{
   margin: 0 auto;
-  width: 438px;
+  width: 380px;
 }
 .prediction table.training-table td{
   border-top:0
@@ -212,10 +212,10 @@ td.error-cell{  text-align:center;  }
 }
 
 .prediction .mini-charts{
-  width: 438px;
-  margin-left: -7px;
+  width: 380px;
+  margin-left: -10px;
 }
-.prediction .error-chart svg{  background: #f0f0f0;  }
+.prediction .error-chart svg{  background: $chartBackground;  }
 
 .prediction .error-chart .error-history-line{
   stroke: $yellow;
