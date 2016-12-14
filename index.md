@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Πως αγοράζουμε, πουλάμε, ξοδεύουμε και δεχόμαστε Bitcoin στην Ελλάδα
 ---
 
 Ελάτε στην επόμενη συνάντησή μας στην [Αθήνα](http://www.meetup.com/BlockchainGreece-0/) ή στη [Θεσσαλονίκη](http://www.meetup.com/BlockchainGreece-1/). Γραφτείτε στο [Slack](http://bitcoingreece.herokuapp.com) (online chat) μας. Διαβάστε το [BitcoinTalk](https://bitcointalk.org/gr) forum.
