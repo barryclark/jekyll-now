@@ -1,7 +1,7 @@
 +---
 + Layout: post for Final
 +
-+ Title: My View on Female Rples in Cinema 
++ Title: My View on Female Roles in Cinema 
 +
 + Author: manarwala  
 +---
