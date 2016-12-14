@@ -1,5 +1,5 @@
 # Site settings
-description: "O conhecimento que você precisa, do jeito que você quer!"
+description: "O conhecimento que você precisa, do jeito que você quer"
 baseurl: ""
 url: "http://blog.codeshare.com.br"
 icon: https://raw.githubusercontent.com/CodeShareEducation/CodeShareEducation.github.io/master/src/img/icons/favicon.ico
@@ -12,7 +12,7 @@ user_gravatar: d36a082aacb53b6f76869748fb4b81d4
 email: contact@codeshare.com.br
 github_username:  CodeShareEducation
 gplus_username: CodeshareBrEducation
-twitter_username: wendell_adriel
+twitter_username: codeshare_br
 disqus_username: codeshareeducation
 
 authors:
@@ -40,11 +40,11 @@ authors:
     twitter:
     facebook:
     site:
-    bio: "Sou Desenvolvedor Java, graduado em Análise e Desenvolvimento de Sistemas, possuo as certificações Java
-    Programmer e Java Web Component Developer.
-    Tenho 2 anos de experiência com desenvolvimento de software voltados para web. Gosto muito de ler, e compartilhar
-    conhecimento com os que estão a minha volta, e estou sempre a procura de um maior crescimento."
-  
+    bio: "<p>Sou Desenvolvedor Java, graduado em Análise e Desenvolvimento de Sistemas, possuo as certificações Java
+    Programmer e Java Web Component Developer.</p>
+    <p>Tenho 2 anos de experiência com desenvolvimento de software voltados para web. Gosto muito de ler, e compartilhar
+    conhecimento com os que estão a minha volta, e estou sempre a procura de um maior crescimento.</p>"
+
   vinicius:
     name: Vinicius Oliveira da Silva
     gravatar: e2ed81a1a0937c3cc302caec8964ae49
@@ -57,6 +57,31 @@ authors:
     bio: "Desenvolvedor Full Stack, Oracle Certified Java SE 8 Programmer I, graduado em Sistemas de Informação.
     Atuei em diversos projetos onde adquiri grande conhecimento em diversas linguagens, tecnologias e frameworks.
     Tenho foco em produtividade e qualidade de desenvolvimento de software e além de apaixonado por tecnologia tenho muito prazer em aprender e ensinar."
+
+  matepaiva:
+    name: Mate Paiva
+    gravatar: 950673885841cd5d1c2dea7186a98730
+    email: mmccpp@gmail.com
+    github: matepaiva
+    linkedin: matepaiva
+    twitter:
+    facebook: matheusjor
+    site: http://matepaiva.com
+    bio: "Apaixonado por escrever: seja em linguagem de máquina ou humana. Formado em Jornalismo e pós-graduado em Cibercultura,
+    mas trabalho com desenvolvimento web desde 2015 - e amando! Meu maior desejo é nunca parar de aprender."
+
+  edson:
+    name: Edson Junior
+    gravatar: 95eef2ad27ac806bf77e5b837ddc47ec
+    email: junior.si16@gmail.com
+    github: roinuj16
+    linkedin: roinuj16
+    twitter: juniorsi16
+    facebook: Roinuj16
+    site: https://roinuj16.github.io/
+    bio: "ou desenvolvedor PHP, graduado em Sistemas de Informação e apaixonado por tecnologia, trabalho há mais de três anos como
+    desenvolvedor PHP, gosto de aprimorar e atualizar meus conhecimentos e também gosto de trocar experiência e conhecimento com
+    outras pessoas. O sucesso e a diversão que tenho no meu trabalho é imenso e mantém essa paixão ardentemente viva."
 
 # Build settings
 markdown: kramdown
@@ -76,6 +101,8 @@ compress_html:
 links:
   - title: Home
     url: /
+  - title: Autores
+    url: /authors
   - title: Categorias
     url: /series
   - title: Tags
