@@ -14,7 +14,7 @@ NOTE: This is a draft and this post is still being reviewed. You can send it aro
 </div>
 
 ## Motivation
-I'm not a machine learning expert. I'm a software engineer whose only brushes with AI before 2015 were an expert systems class in college and minor experiments with recommendations and search engine optimization. I had always wanted to delve deeper into machine learning, but never really found my "in". That's why when Google open sourced TensorFlow in November 2015, I got super excited and knew it was time to jump in and start the learning journey. Not to sound dramatic, but to me, it actually felt kind of like Prometheus handing down fire to mankind from the Mount Olympus of machine learning. In the back of my head was the idea that the entire field of Big Data and technologies like Hadoop were vastly accelerated when Google researchers released their Map Reduce paper. This time it's not a paper -- it's the actual software they use internally after years and years of evolution.
+I'm not a machine learning expert. I'm a software engineer by training and I've had little interaction with AI. I had always wanted to delve deeper into machine learning, but never really found my "in". That's why when Google open sourced TensorFlow in November 2015, I got super excited and knew it was time to jump in and start the learning journey. Not to sound dramatic, but to me, it actually felt kind of like Prometheus handing down fire to mankind from the Mount Olympus of machine learning. In the back of my head was the idea that the entire field of Big Data and technologies like Hadoop were vastly accelerated when Google researchers released their Map Reduce paper. This time it's not a paper -- it's the actual software they use internally after years and years of evolution.
 
 So I started learning what I can about the basics of the topic, and saw the need for gentler resources for people with no experience in the field. This is my attempt at that.
 
@@ -147,6 +147,9 @@ Now that we defined our measuring stick for what makes a better model, let's exp
 
 ![]({{site.baseurl}}/images/lines_and_errors_animated.gif)
 
+<div class="img-div" markdown="0">
+We can't improve much on the model by varying the weight any more. But if we add a bias we can find values that improve the model.
+</div>
 <p class="gif-space" />
 
 
@@ -268,8 +271,8 @@ Congratulations on manually training your first neural network! Let's look at ho
                 <tr>
                     <td colspan="3" class="gd-buttons">
                         <input type="button" value="GD Step" id="gradient-descent-button"  class="btn btn-primary" />
-                        <input type="button" value="10 GD Steps " id="gradient-descent-10-button"  class="btn btn-secondary" />
-                        <input type="button" value="100 GD Steps " id="gradient-descent-100-button"  class="btn btn-secondary" />
+                        <input type="button" value="10 GD Steps " id="gradient-descent-10-button"  class="btn btn-primary" />
+                        <input type="button" value="100 GD Steps " id="gradient-descent-100-button"  class="btn btn-primary" />
                     </td>
                 </tr>
                 <tr>
@@ -293,7 +296,7 @@ Congratulations on manually training your first neural network! Let's look at ho
                         Weight
                     </td>
                     <td>
-                        <input id="weightSlider" type="range" class="weight" min="0" max="0.4" step="0.001">
+                        <input id="weightSlider" type="range" class="weight" min="0" max="0.4" step="0.0001">
                     </td>
                     <td class="slider-value">
                         <span id="weight" class="weight">0</span>
@@ -304,7 +307,7 @@ Congratulations on manually training your first neural network! Let's look at ho
                         Bias
                     </td>
                     <td>
-                        <input id="biasSlider" type="range"  class="bias" min="0" max="460" step="1">
+                        <input id="biasSlider" type="range"  class="bias" min="0" max="460" step="0.1">
                     </td>
                     <td class="slider-value">
                         <span id="bias" class="bias">0</span>
@@ -391,8 +394,8 @@ Take a stab at finding the right weights and bias. You will start here to see th
                 <tr>
                     <td colspan="3" class="gd-buttons">
                         <input type="button" value="GD Step" id="gradient-descent-button"  class="btn btn-primary" />
-                        <input type="button" value="10 GD Steps " id="gradient-descent-10-button"  class="btn btn-secondary" />
-                        <input type="button" value="100 GD Steps " id="gradient-descent-100-button"  class="btn btn-secondary" />
+                        <input type="button" value="10 GD Steps " id="gradient-descent-10-button"  class="btn btn-primary" />
+                        <input type="button" value="100 GD Steps " id="gradient-descent-100-button"  class="btn btn-primary" />
                     </td>
                 </tr>
                 <tr>
@@ -416,7 +419,7 @@ Take a stab at finding the right weights and bias. You will start here to see th
                         Weight #1
                     </td>
                     <td>
-                        <input id="weight0Slider" type="range" class="weight" min="-0.4" max="0.4" step="0.001">
+                        <input id="weight0Slider" type="range" class="weight" min="-0.4" max="0.4" step="0.0001">
                     </td>
                     <td class="slider-value">
                         <span id="weight0" class="weight">0</span>
@@ -427,7 +430,7 @@ Take a stab at finding the right weights and bias. You will start here to see th
                         Weight #2
                     </td>
                     <td>
-                        <input id="weight1Slider" type="range" class="weight" min="-100" max="200" step="0.001">
+                        <input id="weight1Slider" type="range" class="weight" min="-100" max="200" step="0.0001">
                     </td>
                     <td class="slider-value">
                         <span id="weight1" class="weight">0</span>
@@ -438,7 +441,7 @@ Take a stab at finding the right weights and bias. You will start here to see th
                         Bias
                     </td>
                     <td>
-                        <input id="biasSlider" type="range"  class="bias" min="-100" max="300" step="1">
+                        <input id="biasSlider" type="range"  class="bias" min="-100" max="300" step="0.1">
                     </td>
                     <td class="slider-value">
                         <span id="bias" class="bias">0</span>
@@ -455,9 +458,10 @@ Take a stab at finding the right weights and bias. You will start here to see th
 Our trusty gradient descent is here to help once again. It still is valuable in helping us find the right weights and bias.
 
 ## Features
-Now that you you've seen neural networks with one and two features, you can sort of figure out how to add additional features and use them to calculate your predictions. The numbers of weights will continue to grow, and our implementation of gradient descent will have to be tweaked as we add each feature so that it can update the new weights associated with the new feature. Feature selection/processing is an entire discipline with its own set of best practices and considerations.
+Now that you you've seen neural networks with one and two features, you can sort of figure out how to add additional features and use them to calculate your predictions. The numbers of weights will continue to grow, and our implementation of gradient descent will have to be tweaked as we add each feature so that it can update the new weights associated with the new feature.
 
-One of the examples I like about exploring a dataset and choosing/cleaning the features we use to train a prediction model is [A Journey Through Titanic](https://www.kaggle.com/omarelgabry/titanic/a-journey-through-titanic). It's a notebook where Omar EL Gabry narrates his process for solving Kaggle's Titanic challenge. Kaggle makes available the passenger's manifest of the Titanic including data like name, sex, age, cabin, and whether the person survived or not. The challenge is to build a model that predicts whether a person survived or not given their other information.
+
+It's important to note here that we don't blindly feed the network everything we know about our examples. We have to be selective about which features we feed the model. Feature selection/processing is an entire discipline with its own set of best practices and considerations. If you want to see an example of the process of examining a dataset to choose which features to feed a prediction model, check out  [A Journey Through Titanic](https://www.kaggle.com/omarelgabry/titanic/a-journey-through-titanic). It's a notebook where [Omar EL Gabry](https://twitter.com/Omar_ElGabry)) narrates his process for solving Kaggle's Titanic challenge. Kaggle makes available the passenger's manifest of the Titanic including data like name, sex, age, cabin, and whether the person survived or not. The challenge is to build a model that predicts whether a person survived or not given their other information.
 
 ## Classification
 
@@ -484,7 +488,7 @@ Let's continue to tweak our example. Assume your friend gives you a list of hous
 
 She needs you to use this to create a model whether she would like a house or not given its size and number of bathrooms. You will use this list above to build the model, then she will use the model to classify many other houses. One additional change in the process, is that she has another list of 10 houses she has labeled, but she's keeping it from you. That other list would be used to evaluate your model after you've trained it -- thus trying to ensure your model grasps the conditions that actually make her like the features of the house.
 
-The neural networks we've been toying around with until now are all doing "regression" -- they calculate and output a "continuous" value (the output can be 4, or 100.6, or 2143.342343). In practice, however, neural networks are more often used in "classification" type problems. In these problems, the neural network's output has to be from a set of discreet values (or "classes") like "Good" or "Bad". How this works out in practice, is that we'll have a model that will say that it's 75% sure that a house is "Good" rather than just spit out "good" or "bad".
+The neural networks we've been toying around with until now are all doing "regression" -- they calculate and output a "continuous" value (the output can be 4, or 100.6, or 2143.342343). In practice, however, neural networks are more often used in "classification" type problems. In these problems, the neural network's output has to be from a set of discrete values (or "classes") like "Good" or "Bad". How this works out in practice, is that we'll have a model that will say that it's 75% sure that a house is "Good" rather than just spit out "good" or "bad".
 
 
 
@@ -496,7 +500,7 @@ The neural networks we've been toying around with until now are all doing "regre
 
 
 
-One way we can transform the network we've seen into a classification network is to have it output two values -- one for each class (our classes now being "good" and "bad"). We then pass these outputs through an operation called "softmax". The output of softmax is the probability of each class. For example, say the network outputs 2 for "good" and 4 for "bad", if we feed [2, 4] to softmax, it will return [0.11,  0.88] as the output. Which translates the output of the network to say that it's 88% sure that the inputted value is "bad" and our friend would not like that house.
+One way we can transform the network we've seen into a classification network is to have it output two values -- one for each class (our classes now being "good" and "bad"). We then pass these values through an operation called "softmax". The output of softmax is the probability of each class. For example, say that layer of the network outputs 2 for "good" and 4 for "bad", if we feed [2, 4] to softmax, it will return [0.11,  0.88] as the output. Which translates the values to say the network is 88% sure that the inputted value is "bad" and our friend would not like that house.
 
 Softmax takes an array and outputs an array of the same length. Notice that it's output are all positive and sums up to 1, which is useful when we're outputting a probability value. Also notice that even though 4 is double 2, its probability is not only double, but is eight times that of 2. This is a useful property that exaggerates the difference in output thus improving our training process.
 
@@ -509,7 +513,7 @@ Softmax takes an array and outputs an array of the same length. Notice that it's
  | softmax([ 2, 4 ]) | [ 0.11,  0.88 ] |
  | softmax([ 5, 10 ]) | [ 0.007,  0.993 ] |
  | softmax([ -1, 0, 1 ]) | [ 0.09,  0.24,  0.66 ] |
- | softmax([ 1, 2, 4 ]) | [ 0.042,  0.11,  0.84 ] |
+ | softmax([ 1, 2, 4 ]) | [ 0.04,  0.11,  0.84 ] |
 
 As you can see in the last two rows, softmax extends to any number of inputs. So now if our friend adds a third label (say "Good, but I'll have to airbnb one room"), softmax scales to accomedate that change.
 

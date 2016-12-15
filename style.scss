@@ -130,7 +130,7 @@ em, i {
 }
 
 td.slider-value{
-  min-width: 100px;
+  min-width: 70px;
   font-weight: bold;
 }
 
@@ -310,30 +310,30 @@ td.error-cell{  text-align:center;  }
 .input-node{
   fill: $nnInputNode;
   stroke: $darkGray;
-  stroke-width: $nnStrokeWidth;
+  stroke-width: $nnNodeStrokeWidth;
 }
 
 .weightNode{
   fill: $nnWeightNode;
   stroke: $darkGray;
-  stroke-width: $nnStrokeWidth;
+  stroke-width: $nnNodeStrokeWidth;
 }
 .biasNode{
   fill: $nnBiasNode;
   stroke: $darkGray;
-  stroke-width: $nnStrokeWidth;
+  stroke-width: $nnNodeStrokeWidth;
 }
 
 .softmaxNode{
   fill: $nnSoftmaxNode;
   stroke: $darkGray;
-  stroke-width: $nnStrokeWidth;
+  stroke-width: $nnNodeStrokeWidth;
 }
 
 .output-node{
   fill: $nnOutputNode;
   stroke: $darkGray;
-  stroke-width: $nnStrokeWidth;
+  stroke-width: $nnNodeStrokeWidth;
 }
 .arrow{
   stroke-width:$nnStrokeWidth;
