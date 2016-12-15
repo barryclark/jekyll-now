@@ -137,9 +137,9 @@ That's quite a bit of yellow. Yellow is bad. Yellow is error. We want to shrink 
 </div>
 
 
-Here we can see the actual price value, the predicted price value, and the difference between them. Then we'll need to sum up the difference so we have a number that tells us how much error there is in this prediction model. The problem is, the 3rd row has -63 as its value. We have to deal with this negative value if we want to use the difference between the prediction and price as our error measuring stick. That's one reason why we introduce an additional column that shows the error squared, thus getting rid of the negative value.
+Here we can see the <span class="y_">actual price value</span>, the <span class="y">predicted price value</span>, and the <span class="error-value">difference between them</a>. Then we'll need to average these differences so we have a number that tells us how much error there is in this prediction model. The problem is, the 3rd row has -63 as its value. We have to deal with this negative value if we want to use the difference between the prediction and price as our error measuring stick. That's one reason why we introduce an additional column that shows the error squared, thus getting rid of the negative value.
 
-This is now our definition of doing better -- a better model is one that has less error. Total error is measured as the average of the errors for each point in our data set. For each point, the error is measured by the difference between the actual value and the predicted value, raised to the power of 2. This is called [Mean Square Error](http://mste.illinois.edu/patel/amar430/meansquare.html). Using it as a guide to train our model makes it our **loss function** (also, **cost function**).
+This is now our definition of doing better -- a better model is one that has less error. Error is measured as the average of the errors for each point in our data set. For each point, the error is measured by the difference between the actual value and the predicted value, raised to the power of 2. This is called [Mean Square Error](http://mste.illinois.edu/patel/amar430/meansquare.html). Using it as a guide to train our model makes it our **loss function** (also, **cost function**).
 
 
 Now that we defined our measuring stick for what makes a better model, let's experiment with a couple more weight values and compare them with our average pick:
@@ -324,7 +324,7 @@ Congratulations on manually training your first neural network! Let's look at ho
 
 The two new graphs are to help you track the error values as you fiddle with the parameters (weight and bias) of the model . It's important to keep track of the error as the training process is all about reducing this error as much possible.
 
-How does gradient descent know where its next step should be? Calculus. You see, knowing the function we're minimizing (our loss function, the average of (y_ - y)² for all our data points), and knowing the current inputs into it (the current weight and bias, the derivatives of the loss function tell us which direction to nudge W and B in order to minimize the error.
+How does gradient descent know where its next step should be? Calculus. You see, knowing the function we're minimizing (our loss function, the average of (y_ - y)² for all our data points), and knowing the current inputs into it (the current weight and bias), the derivatives of the loss function tell us which direction to nudge W and B in order to minimize the error.
 
 Learn more about gradient descent and how to use it to calculate the new weights & bias in the first lectures of Coursera's [Machine Learning](https://www.coursera.org/learn/machine-learning) course.
 
@@ -332,7 +332,7 @@ Learn more about gradient descent and how to use it to calculate the new weights
 
 Is the size of the house the only variable that goes into how much it costs? Obviously there are many other factors. Let's add another variable and see how we can adjust our neural network to it.
 
-Say your friend does a bit more research and find a bunch more data points. She also finds out how many bathrooms each house has:
+Say your friend does a bit more research and finds a bunch more data points. She also finds out how many bathrooms each house has:
 
 {::options parse_block_html="true" /}
 <div class="two_variables">
@@ -459,10 +459,10 @@ Take a stab at finding the right weights and bias. You will start here to see th
 Our trusty gradient descent is here to help once again. It still is valuable in helping us find the right weights and bias.
 
 ## Features
-Now that you you've seen neural networks with one and two features, you can sort of figure out how to add additional features and use them to calculate your predictions. The numbers of weights will continue to grow, and our implementation of gradient descent will have to be tweaked as we add each feature so that it can update the new weights associated with the new feature.
+Now that you you've seen neural networks with one and two features, you can sort of figure out how to add additional features and use them to calculate your predictions. The number of weights will continue to grow, and our implementation of gradient descent will have to be tweaked as we add each feature so that it can update the new weights associated with the new feature.
 
 
-It's important to note here that we don't blindly feed the network everything we know about our examples. We have to be selective about which features we feed the model. Feature selection/processing is an entire discipline with its own set of best practices and considerations. If you want to see an example of the process of examining a dataset to choose which features to feed a prediction model, check out  [A Journey Through Titanic](https://www.kaggle.com/omarelgabry/titanic/a-journey-through-titanic). It's a notebook where [Omar EL Gabry](https://twitter.com/Omar_ElGabry)) narrates his process for solving Kaggle's Titanic challenge. Kaggle makes available the passenger's manifest of the Titanic including data like name, sex, age, cabin, and whether the person survived or not. The challenge is to build a model that predicts whether a person survived or not given their other information.
+It's important to note here that we don't blindly feed the network everything we know about our examples. We have to be selective about which features we feed the model. Feature selection/processing is an entire discipline with its own set of best practices and considerations. If you want to see an example of the process of examining a dataset to choose which features to feed a prediction model, check out  [A Journey Through Titanic](https://www.kaggle.com/omarelgabry/titanic/a-journey-through-titanic). It's a notebook where [Omar EL Gabry](https://twitter.com/Omar_ElGabry) narrates his process for solving Kaggle's Titanic challenge. Kaggle makes available the passenger's manifest of the Titanic including data like name, sex, age, cabin, and whether the person survived or not. The challenge is to build a model that predicts whether a person survived or not given their other information.
 
 ## Classification
 
@@ -487,7 +487,7 @@ Let's continue to tweak our example. Assume your friend gives you a list of hous
 
 </div>
 
-She needs you to use this to create a model whether she would like a house or not given its size and number of bathrooms. You will use this list above to build the model, then she will use the model to classify many other houses. One additional change in the process, is that she has another list of 10 houses she has labeled, but she's keeping it from you. That other list would be used to evaluate your model after you've trained it -- thus trying to ensure your model grasps the conditions that actually make her like the features of the house.
+She needs you to use this to create a model to predict whether she would like a house or not given its size and number of bathrooms. You will use this list above to build the model, then she will use the model to classify many other houses. One additional change in the process, is that she has another list of 10 houses she has labeled, but she's keeping it from you. That other list would be used to evaluate your model after you've trained it -- thus trying to ensure your model grasps the conditions that actually make her like the features of the house.
 
 The neural networks we've been toying around with until now are all doing "regression" -- they calculate and output a "continuous" value (the output can be 4, or 100.6, or 2143.342343). In practice, however, neural networks are more often used in "classification" type problems. In these problems, the neural network's output has to be from a set of discrete values (or "classes") like "Good" or "Bad". How this works out in practice, is that we'll have a model that will say that it's 75% sure that a house is "Good" rather than just spit out "good" or "bad".
 
@@ -495,7 +495,7 @@ The neural networks we've been toying around with until now are all doing "regre
 
 <div class="img-div" markdown="0">
     <img src="/images/android_tensorflow_classifier_results.jpg" />
-    The Tensorflow app I discussed in my <a href="">previous post</a> is a good example for a classification model in practice.
+    The TensorFlow app I discussed in my <a href="">previous post</a> is a good example for a classification model in practice.
 
 </div>
 
@@ -503,7 +503,7 @@ The neural networks we've been toying around with until now are all doing "regre
 
 One way we can transform the network we've seen into a classification network is to have it output two values -- one for each class (our classes now being "good" and "bad"). We then pass these values through an operation called "[softmax](https://rasbt.github.io/mlxtend/user_guide/classifier/SoftmaxRegression/)". The output of softmax is the probability of each class. For example, say that layer of the network outputs 2 for "good" and 4 for "bad", if we feed [2, 4] to softmax, it will return [0.11,  0.88] as the output. Which translates the values to say the network is 88% sure that the inputted value is "bad" and our friend would not like that house.
 
-Softmax takes an array and outputs an array of the same length. Notice that it's output are all positive and sums up to 1, which is useful when we're outputting a probability value. Also notice that even though 4 is double 2, its probability is not only double, but is eight times that of 2. This is a useful property that exaggerates the difference in output thus improving our training process.
+Softmax takes an array and outputs an array of the same length. Notice that its outputs are all positive and sum up to 1 -- which is useful when we're outputting a probability value. Also notice that even though 4 is double 2, its probability is not only double, but is eight times that of 2. This is a useful property that exaggerates the difference in output thus improving our training process.
 
 
  |  | output |
@@ -574,7 +574,7 @@ If you have reached this far, I have to reveal to you another motivation of mine
 
 <div class="img-div" markdown="0">
     <img src="/images/softmax-regression-scalargraph.png" />
-    I wrote this post to prepare people without machine learning experience for this graph in the TensorFlow introductory tutorial. That's why I simulated its style.
+    I wrote this post to prepare people without machine learning experience for this graph in the TensorFlow introductory tutorial. That's why I simulated its visual style.
 </div>
 
 

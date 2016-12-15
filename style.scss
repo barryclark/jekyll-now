@@ -153,6 +153,10 @@ td span#error-value {
   font-weight: bold;
 }
 
+.prediction .error-value{
+  color: $darkYellow;
+}
+
 td.error-cell{  text-align:center;  }
 
 
