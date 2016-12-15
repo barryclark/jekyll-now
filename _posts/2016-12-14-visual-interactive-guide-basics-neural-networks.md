@@ -1,13 +1,10 @@
 ---
 layout: prediction_post
 published: True
-title: DRAFT - A Visual and Interactive Guide to the Basics of Neural Networks
+title: A Visual and Interactive Guide to the Basics of Neural Networks
 ---
 
-NOTE: This is a draft and this post is still being reviewed. You can send it around to your friends, but please don't publish it anywhere public. I would very much appreciate it. Thanks. And please reach out to me on [Twitter](https://twitter.com/jalammar) for any corrections or feedback.
 
-
-<!--more-->
 
 <div class="img-div" markdown="0">
     <img src="/images/NNs_2_variables.png" />
@@ -16,7 +13,12 @@ NOTE: This is a draft and this post is still being reviewed. You can send it aro
 ## Motivation
 I'm not a machine learning expert. I'm a software engineer by training and I've had little interaction with AI. I had always wanted to delve deeper into machine learning, but never really found my "in". That's why when Google open sourced TensorFlow in November 2015, I got super excited and knew it was time to jump in and start the learning journey. Not to sound dramatic, but to me, it actually felt kind of like Prometheus handing down fire to mankind from the Mount Olympus of machine learning. In the back of my head was the idea that the entire field of Big Data and technologies like Hadoop were vastly accelerated when Google researchers released their Map Reduce paper. This time it's not a paper -- it's the actual software they use internally after years and years of evolution.
 
+
+
 So I started learning what I can about the basics of the topic, and saw the need for gentler resources for people with no experience in the field. This is my attempt at that.
+
+
+<!--more-->
 
 ## Start here
 Let's start with a simple example. Say you're helping a friend who wants to buy a house. She was quoted $400,000 for a 2000 sq ft house (185 meters). Is this a good price or not?
@@ -56,7 +58,7 @@ Multiplying 2,000 sq ft by 180 gives us $360,000. That's all there is to it at t
 
 This is a form of prediction. This is a simple predictive model that takes an input, does a calculation, and gives an output (since the output can be of continuous values, the technical name for what we have would be a "regression model")
 
-Let us visualize this process (for simplicity, let's switch our price unit from $1 to $1000. Now our weights is 0.180 rather than 180):
+Let us visualize this process (for simplicity, let's switch our price unit from $1 to $1000. Now our weight is 0.180 rather than 180):
 
 <p class="gif-space"/>
 
@@ -137,7 +139,7 @@ That's quite a bit of yellow. Yellow is bad. Yellow is error. We want to shrink 
 
 Here we can see the actual price value, the predicted price value, and the difference between them. Then we'll need to sum up the difference so we have a number that tells us how much error there is in this prediction model. The problem is, the 3rd row has -63 as its value. We have to deal with this negative value if we want to use the difference between the prediction and price as our error measuring stick. That's one reason why we introduce an additional column that shows the error squared, thus getting rid of the negative value.
 
-This is now our definition of doing better -- a better model is one that has less error. Total error is measured as the average of the errors for each point in our data set. For each point, the error is measured by the difference between the actual value and the predicted value, raised to the power of 2. This is called [Mean Square Error](http://mste.illinois.edu/patel/amar430/meansquare.html) . Using it as a guide to train our model makes it our **loss function** (also, **cost function**).
+This is now our definition of doing better -- a better model is one that has less error. Total error is measured as the average of the errors for each point in our data set. For each point, the error is measured by the difference between the actual value and the predicted value, raised to the power of 2. This is called [Mean Square Error](http://mste.illinois.edu/patel/amar430/meansquare.html). Using it as a guide to train our model makes it our **loss function** (also, **cost function**).
 
 
 Now that we defined our measuring stick for what makes a better model, let's experiment with a couple more weight values and compare them with our average pick:
@@ -324,8 +326,7 @@ The two new graphs are to help you track the error values as you fiddle with the
 
 How does gradient descent know where its next step should be? Calculus. You see, knowing the function we're minimizing (our loss function, the average of (y_ - y)² for all our data points), and knowing the current inputs into it (the current weight and bias, the derivatives of the loss function tell us which direction to nudge W and B in order to minimize the error.
 
-
-
+Learn more about gradient descent and how to use it to calculate the new weights & bias in the first lectures of Coursera's [Machine Learning](https://www.coursera.org/learn/machine-learning) course.
 
 ## And Then There Were Two
 
@@ -500,7 +501,7 @@ The neural networks we've been toying around with until now are all doing "regre
 
 
 
-One way we can transform the network we've seen into a classification network is to have it output two values -- one for each class (our classes now being "good" and "bad"). We then pass these values through an operation called "softmax". The output of softmax is the probability of each class. For example, say that layer of the network outputs 2 for "good" and 4 for "bad", if we feed [2, 4] to softmax, it will return [0.11,  0.88] as the output. Which translates the values to say the network is 88% sure that the inputted value is "bad" and our friend would not like that house.
+One way we can transform the network we've seen into a classification network is to have it output two values -- one for each class (our classes now being "good" and "bad"). We then pass these values through an operation called "[softmax](https://rasbt.github.io/mlxtend/user_guide/classifier/SoftmaxRegression/)". The output of softmax is the probability of each class. For example, say that layer of the network outputs 2 for "good" and 4 for "bad", if we feed [2, 4] to softmax, it will return [0.11,  0.88] as the output. Which translates the values to say the network is 88% sure that the inputted value is "bad" and our friend would not like that house.
 
 Softmax takes an array and outputs an array of the same length. Notice that it's output are all positive and sums up to 1, which is useful when we're outputting a probability value. Also notice that even though 4 is double 2, its probability is not only double, but is eight times that of 2. This is a useful property that exaggerates the difference in output thus improving our training process.
 
@@ -564,6 +565,9 @@ Take a second to explore the shape of the network as you vary the number of feat
 
 <div id="shallow-neural-network-graph" class="nn-graph-area" ></div>
 
+You can see an example of how to create and train this network using TensorFlow in [this notebook](https://github.com/jalammar/simpleTensorFlowClassificationExample/blob/master/Basic%20Classification%20Example%20with%20TensorFlow.ipynb) I created to accompany this post.
+
+
 ## True Motivation
 If you have reached this far, I have to reveal to you another motivation of mine to write this post. This post is meant as an even gentler intro to TensorFlow tutorials. If you start working through [MNIST For ML Beginners](https://www.tensorflow.org/versions/r0.10/tutorials/mnist/beginners/index.html) now, and come across this graph:
 
@@ -574,7 +578,7 @@ If you have reached this far, I have to reveal to you another motivation of mine
 </div>
 
 
-I hope you would feel prepared and that you have an understanding of this system and how you think of it and evolve it. So if you want to start tinkering with code and learning this way, feel free to pick up from the intro [tutorial](https://www.tensorflow.org/versions/r0.10/tutorials/mnist/beginners/index.html) and teach a neural network how to detect handwritten digits.
+I hope you would feel prepared and that you have an understanding of this system and how it works. If you want to start tinkering with code, feel free to pick up from the intro [tutorial](https://www.tensorflow.org/versions/r0.10/tutorials/mnist/beginners/index.html) and teach a neural network how to detect handwritten digits.
 
 You should also continue your education by learning the theoretical and mathimatical underpinnings of the concepts we discussed here. Good questions to ask now include:
 
