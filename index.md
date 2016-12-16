@@ -28,6 +28,8 @@ title: Πως αγοράζουμε, πουλάμε, ξοδεύουμε και δ
 
 [Αναζήτηση σε χάρτη](https://coinmap.org/#/world/38.81403111/24.63134766/6). Ενημερωθείτε για νέες καταχωρήσεις στον χάρτη [εδώ](https://twitter.com/hashtag/coinmap_gr?f=tweets&vertical=default&src=hash).
 
+![](/images/Coinmap.png)
+
 <table>
 {% for company in site.data.data %}
 <tr>
@@ -183,7 +185,7 @@ title: Πως αγοράζουμε, πουλάμε, ξοδεύουμε και δ
 - Προσθέστε κάποια σχετική [εικόνα](https://en.bitcoin.it/wiki/Promotional_graphics) (π.χ. Bitcoin Accepted Here) στο κατάστημά σας και στην ιστοσελίδα σας.
 - Στείλε μας email (αναγράφεται στο τέλος της σελίδας) ώστε να σας προσθέσουμε στη σελίδα αυτή. Ή κάνετε ένα Pull Request στο GitHub!
 
-Τελευταία ενημέρωση: 2016-12-14
+Τελευταία ενημέρωση: 2016-12-16
 
 <!-- <div class="posts">
   {% for post in site.posts %}

@@ -12,6 +12,8 @@ Come to one of our meetups in [Athens](http://www.meetup.com/BlockchainGreece-0/
 
 [Map search](https://coinmap.org/#/world/38.81403111/24.63134766/6). New map entries show up [here](https://twitter.com/hashtag/coinmap_gr?f=tweets&vertical=default&src=hash).
 
+![](/images/Coinmap.png)
+
 <table>
 {% for company in site.data.data %}
   <tr>
@@ -67,7 +69,7 @@ Come to one of our meetups in [Athens](http://www.meetup.com/BlockchainGreece-0/
 
 	![](/images/Page 8.png)
 
-Last update: 2016-12-14
+Last update: 2016-12-16
 
 <!-- <div class="posts">
   {% for post in site.posts %}
