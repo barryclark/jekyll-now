@@ -6,10 +6,10 @@
 name: Pronoy Barua
 
 # Short bio or description (displayed in the header)
-description: learn, build, repeat
+description: I code sometimes.
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/pronoy-barua/pronoy-barua.github.io/master/images/mind.jpg
+avatar: https://avatars0.githubusercontent.com/u/11797650?v=3&u=681b6a1664b61917c0cf2a9c9187d69bc9614ae0&s=400
 
 #
 # Flags below are optional
@@ -18,15 +18,15 @@ avatar: https://raw.githubusercontent.com/pronoy-barua/pronoy-barua.github.io/ma
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email:
+  email: pronoy.barua25@gmail.com
   facebook:
   flickr:
   github: pronoy-barua
   instagram:
-  linkedin:
+  linkedin: pronoybarua
   pinterest:
   rss: # just type anything here for a working RSS icon
-  twitter: 
+  twitter: pronoy_93
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
@@ -76,6 +76,12 @@ sass:
 gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
+  - jekyll-github-metadata
+  - jekyll-mentions
+  - jekyll-redirect-from
+  - jekyll-sitemap
+  - jemoji
+  - jekyll-seo-tag
 
 # Exclude these files from your production _site
 exclude:
@@ -86,11 +92,3 @@ exclude:
   - CNAME
 
 repository: pronoy-barua/pronoy-barua.github.io
-
-gems:
-- jekyll-github-metadata
-- jekyll-mentions
-- jekyll-redirect-from
-- jekyll-sitemap
-- jemoji
-- jekyll-seo-tag
