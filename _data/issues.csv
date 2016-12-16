@@ -1,4 +1,9 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1465,196106867,2016-12-16 17:05:21,2016-12-16 17:03:02,Cittadinanzattiva #Umbria presenta report sui Presidi civici nelle comunità terremotate,,,"[""Accettato"", ""Bollettino"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""16/12/2016"", ""descrizione"": ""Cittadinanzattiva Umbria presenta un report sulle iniziative in corso dopo l'avvio del programma presidi civici delle comunit\u00e0 colpite dal sisma."", ""link"": ""http://www.cittadinanzattiva.it/notizie/dal-territorio/9747-il-report-presidi-civici-delle-comunita-coinvolte-dal-sisma-in-umbria.html"", ""titolo"": ""Cittadinanzattiva #Umbria presenta report sui Presidi civici nelle comunit\u00e0 terremotate""}","<pre><yamldata>titolo: 'Cittadinanzattiva #Umbria presenta report sui Presidi civici nelle comunità terremotate'
+descrizione: 'Cittadinanzattiva Umbria presenta un report sulle iniziative in corso dopo l''avvio del programma presidi civici delle comunità colpite dal sisma.'
+link: 'http://www.cittadinanzattiva.it/notizie/dal-territorio/9747-il-report-presidi-civici-delle-comunita-coinvolte-dal-sisma-in-umbria.html'
+data: 16/12/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1464,196092756,2016-12-16 17:04:48,2016-12-16 16:04:24,"Offro scarpe, vestiti per bambini e giocattoli in ottimo stato",,,"[""Accettato"", ""Donazioni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""Scarpei bambina e giocattoli usato"", ""data"": ""16/12/2016"", ""descrizione"": ""Ho quattro paia di scarpe in ottimo stato numero 27, qualche vestito 2-3 anni, sempre in buono stato e qualche giocattolo tra cui una bicicletta a tre ruote per i bambini piccoli, tutto usato in ottimo stato. Sto in Ancona, ho difficolt\u00e0 a muovermi ma in qualche modo magari ci si riesce ad organizzare. Se interessati chiamatemi"", ""email"": ""alice.camaterou@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3488828831""}","<pre><yamldata>tel: '3488828831'
 email: alice.camaterou@gmail.com
 cosa: 'Scarpei bambina e giocattoli usato'
@@ -3579,17 +3584,6 @@ data: 30/10/2016
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/957,186152074,2016-10-30 18:08:01,2016-10-30 18:07:43,Regione Marche: 25mila stima sfollati,,,"[""Accettato"", ""Bollettino"", ""Form"", ""Notizie Utili"", ""Sisma Ottobre""]",,,"{""data"": ""30/10/2016"", ""descrizione"": ""I tecnici della protezione civile della Regione Marche stimano gli sfollati nelle zone colpite dal sisma a 25mila persone."", ""link"": ""https://twitter.com/giornaleprociv/status/792785131022979076"", ""titolo"": ""Regione Marche: 25mila stima sfollati""}","<pre><yamldata>titolo: 'Regione Marche: 25mila stima sfollati'
 descrizione: 'I tecnici della protezione civile della Regione Marche stimano gli sfollati nelle zone colpite dal sisma a 25mila persone.'
 link: 'https://twitter.com/giornaleprociv/status/792785131022979076'
-data: 30/10/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/955,186151243,2016-10-30 18:08:49,2016-10-30 17:53:34,Offro appartamento 90 mq a Villaguardia (CO),,,"[""Accettato"", ""Alloggi"", ""Form"", ""Sisma Ottobre""]",,,"{""data"": ""30/10/2016"", ""descrizione"": ""Ho un appartamento di circa 90 mq con 3 stanze pi\u00f9 servizi, con 5-6 posti letto, che potrei offrire gratuitamente a chi \u00e8 stato colpito dal terremoto in centro Italia. Si trova a Villa Guardia, provincia di Como."", ""email"": ""filispera@libero.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""377 1239623""}","<pre><yamldata>tel: '377 1239623'
-email: filispera@libero.it
-descrizione: 'Ho un appartamento di circa 90 mq con 3 stanze più servizi, con 5-6 posti letto, che potrei offrire gratuitamente a chi è stato colpito dal terremoto in centro Italia. Si trova a Villa Guardia, provincia di Como.'
-indirizzo: ''
-lat: ''
-lon: ''
-link: ''
-immagine: ''
 data: 30/10/2016
 </yamldata></pre>
 ",open
