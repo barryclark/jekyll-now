@@ -495,7 +495,7 @@ The neural networks we've been toying around with until now are all doing "regre
 
 <div class="img-div" markdown="0">
     <img src="/images/android_tensorflow_classifier_results.jpg" />
-    The TensorFlow app I discussed in my <a href="">previous post</a> is a good example for a classification model in practice.
+    The TensorFlow app I discussed in my <a href="https://jalammar.github.io/Supercharging-android-apps-using-tensorflow/">previous post</a> is a good example for a classification model in practice.
 
 </div>
 
