@@ -4,12 +4,8 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+### What do you wish you could accomplish in life?  
+Do you think you could achieve that goal with a little bit of elbow grease and dedication? 
+### I do.
 
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+Join me as I learn, make and do.
