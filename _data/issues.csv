@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1468,196214248,2016-12-17 14:29:12,2016-12-17 10:07:09,Cercasi roulotte a #Muccia (Mc),43.0823200,13.0432300,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""Roulotte vecchia in affitto o in prestito"", ""data"": ""17/12/2016"", ""descrizione"": ""Sono costretto per motivi di lavoro a tornare al mio paese di residenza Muccia, ho urgente bisogno di una roulotte vecchia per 4-5 mesi, non importa il suo stato."", ""email"": ""g.carlocop@alice.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": ""43.0823200"", ""link"": """", ""lon"": ""13.0432300"", ""tel"": ""Mucca -ho bisogno urgentemente di una roulotte in affitto o in prestito per 4-5 mesi""}","<pre><yamldata>tel: 'Mucca -ho bisogno urgentemente di una roulotte in affitto o in prestito per 4-5 mesi'
+email: g.carlocop@alice.it
+cosa: 'Roulotte vecchia in affitto o in prestito'
+descrizione: 'Sono costretto per motivi di lavoro a tornare al mio paese di residenza Muccia, ho urgente bisogno di una roulotte vecchia per 4-5 mesi, non importa il suo stato.'
+indirizzo: ''
+lat: '43.0823200'
+lon: '13.0432300'
+link: ''
+immagine: ''
+data: 17/12/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1467,196207483,2016-12-17 14:25:58,2016-12-17 07:09:57,Terremotata di #Preci cerca lavoro,42.8806900,13.0374700,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""Cerco lavoro"", ""data"": ""17/12/2016"", ""descrizione"": ""Salve, abito a Preci e con il terremoto ho perso tutti i miei piccoli lavori che facevo, cio\u00e8 pulizia delle case, accudire le persone anziane, ecc. Chi mi volesse aiutare lo faccia con il cuore. Grazie"", ""email"": ""dangelibarbara@yahoo.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": ""42.8806900"", ""link"": """", ""lon"": ""13.0374700"", ""tel"": ""3298140621""}","<pre><yamldata>tel: '3298140621'
 email: dangelibarbara@yahoo.it
 cosa: 'Cerco lavoro'
@@ -4070,17 +4081,6 @@ https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/877,1860632
 descrizione: 'Cinque esoneri a copertura totale destinati ai ragazzi colpiti dal sisma del 24 agosto.'
 link: 'http://www.luiss.it/news/2016/10/14/luiss-mette-disposizione-borse-di-studio-gli-studenti-colpiti-dal-terremoto#'
 data: 29/10/2016
-</yamldata></pre>
-",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/875,186018276,2016-10-28 21:39:49,2016-10-28 20:47:07,Pro Loco Campi (Norcia) - Richiesta gemellaggio con altre Pro Loco per aiuto a sfollati ,42.8493534,13.0947414,"[""Accettato"", ""Bollettino"", ""Contatti"", ""Fabbisogni"", ""Form"", ""Pubblicare su FB"", ""Sisma Ottobre""]",,,"{""data"": ""28/10/2016"", ""descrizione"": ""Gemellaggio con altre Pro Loco in aiuto degli sfollati post-sisma."", ""email"": """", ""indirizzo"": ""Via dei Casali, Casa Cupa, Norcia, PG, UMB, 06046, Italia"", ""lat"": ""42.8493534"", ""link"": ""https://www.facebook.com/proloco.campi/"", ""lon"": ""13.0947414"", ""nome"": ""Pro Loco Campi"", ""tel"": ""0743 820225""}","<pre><yamldata>nome: 'Pro Loco Campi'
-tel: '0743 820225'
-email: ''
-descrizione: 'Gemellaggio con altre Pro Loco in aiuto degli sfollati post-sisma.'
-indirizzo: 'Via dei Casali, Casa Cupa, Norcia, PG, UMB, 06046, Italia'
-lat: '42.8493534'
-lon: '13.0947414'
-link: 'https://www.facebook.com/proloco.campi/'
-data: 28/10/2016
 </yamldata></pre>
 ",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/875,186018276,2016-10-28 21:39:49,2016-10-28 20:47:07,Pro Loco Campi (Norcia) - Richiesta gemellaggio con altre Pro Loco per aiuto a sfollati ,42.8493534,13.0947414,"[""Accettato"", ""Bollettino"", ""Contatti"", ""Fabbisogni"", ""Form"", ""Pubblicare su FB"", ""Sisma Ottobre""]",,,"{""data"": ""28/10/2016"", ""descrizione"": ""Gemellaggio con altre Pro Loco in aiuto degli sfollati post-sisma."", ""email"": """", ""indirizzo"": ""Via dei Casali, Casa Cupa, Norcia, PG, UMB, 06046, Italia"", ""lat"": ""42.8493534"", ""link"": ""https://www.facebook.com/proloco.campi/"", ""lon"": ""13.0947414"", ""nome"": ""Pro Loco Campi"", ""tel"": ""0743 820225""}","<pre><yamldata>nome: 'Pro Loco Campi'
