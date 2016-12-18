@@ -9,7 +9,7 @@ author: Rob Kalajian
 ---
 
 
-<img src="/images/barnyardbattle/barnyardbattle.jpg" alt="Barnyard Battle" class="float-right" />
+<img src="/images/barnyardbattle/barnyardbattle.jpg" alt="Barnyard Battle" width="300" class="float-right" />
 <h2>Prelude</h2>
 
 KidRealm recently released a new stand-alone game called Barnyard Battle. Basically, it's a re-theme of Castle Combat using barnyard animals and wrapped in a retail-friendly package. I got the game in the mail a week or so ago and finally had a chance to sit down and play with my home's reigning Castle Combat champ, my 6-year-old.
