@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title:
 permalink: /about/
 ---
 
@@ -13,6 +13,10 @@ I like various sports, e.g., swimming, running, hiking & skiing.
 ### Contact
 
 [bian.andrewa _at_ gmail _dot_ com](mailto:bian.andrewa@gmail.com)
+
+### Homepage
+
+[neocortex.ch](http://neocortex.ch)
 
 ## News
 
