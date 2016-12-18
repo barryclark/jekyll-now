@@ -1,6 +1,6 @@
 ## Contributing
 
-Pull Requests from our design, development and operations teams of [Haufe.Group](http://www.haufe-lexware.com) and its subsidiaries are greatly appreciated. If you've never contributed to an open source project before we are more than happy to walk you through how to create a pull request.
+Pull Requests from our design, development and operations teams of [Haufe.Group](http://www.haufe-lexware.com) and its subsidiaries are greatly appreciated. If you've never contributed to an open source project before we are more than happy to walk you through how to create a pull request. 
 
 The short version of it is to fork this repo into (a) a repo of your own account under (b) the name `[your_account_name].github.io`. Upon your first commit the blog should be published at `http://[your_account_name].github.io`. In this way you can add your changes and test them live. When you are finished create a pull request with your changes and submit it against our blog repo.
 
