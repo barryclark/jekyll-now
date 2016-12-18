@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1471,196298148,2016-12-18 20:44:52,2016-12-18 20:44:22,A #Savelli di #Norcia è urgente la messa in sicurezza del campanile,42.7264537,13.1266875,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Sisma Ottobre""]",,http://i.imgur.com/yDZgnMA.jpg,"{""cosa"": ""A #Savelli di #Norcia \u00e8 urgente la messa in sicurezza del campanile"", ""data"": ""18/12/2016"", ""descrizione"": ""Dal terremoto del 30 ottobre il campanile della chiesa di Savelli \u00e8 pericolante e ad oggi nessuno ha provveduto a metterlo in sicurezza (La foto \u00e8 di Mauro Battiston)."", ""email"": """", ""immagine"": ""http://i.imgur.com/yDZgnMA.jpg"", ""indirizzo"": ""Strada provinciale di Norcia, Cascia, PG, UMB, 06043, Italia"", ""lat"": ""42.7264537"", ""link"": ""https://twitter.com/flaviaamabile/status/808652552380223489"", ""lon"": ""13.1266875"", ""tel"": """"}","<pre><yamldata>tel: ''
+email: ''
+cosa: 'A #Savelli di #Norcia è urgente la messa in sicurezza del campanile'
+descrizione: 'Dal terremoto del 30 ottobre il campanile della chiesa di Savelli è pericolante e ad oggi nessuno ha provveduto a metterlo in sicurezza (La foto è di Mauro Battiston).'
+indirizzo: 'Strada provinciale di Norcia, Cascia, PG, UMB, 06043, Italia'
+lat: '42.7264537'
+lon: '13.1266875'
+link: 'https://twitter.com/flaviaamabile/status/808652552380223489'
+immagine: 'http://i.imgur.com/yDZgnMA.jpg'
+data: 18/12/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1468,196214248,2016-12-17 14:29:12,2016-12-17 10:07:09,Cercasi roulotte a #Muccia (Mc),43.0823200,13.0432300,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""Roulotte vecchia in affitto o in prestito"", ""data"": ""17/12/2016"", ""descrizione"": ""Sono costretto per motivi di lavoro a tornare al mio paese di residenza Muccia, ho urgente bisogno di una roulotte vecchia per 4-5 mesi, non importa il suo stato."", ""email"": ""g.carlocop@alice.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": ""43.0823200"", ""link"": """", ""lon"": ""13.0432300"", ""tel"": ""Mucca -ho bisogno urgentemente di una roulotte in affitto o in prestito per 4-5 mesi""}","<pre><yamldata>tel: 'Mucca -ho bisogno urgentemente di una roulotte in affitto o in prestito per 4-5 mesi'
 email: g.carlocop@alice.it
 cosa: 'Roulotte vecchia in affitto o in prestito'
@@ -7055,18 +7066,6 @@ immagine: ''
 data: 16/09/2016
 </yamldata></pre>
 ",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/487,177431346,2016-09-23 22:41:55,2016-09-16 13:54:08,Tenda per due persone,42.60025,13.14813,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Tenda per due persone"", ""data"": ""16/09/2016"", ""descrizione"": ""All'interno devono entrare due lettini. La famiglia si trova a Cittareale: l'abitazione ha subito importanti lesioni. Fate riferimento come sempre alla sede dell'Acli."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": ""42.60025"", ""link"": ""https://www.associazione alcli onlus http://www.alcli.it/"", ""lon"": ""13.14813"", ""tel"": """"}","<pre><yamldata>tel: ''
-email: ''
-cosa: 'Tenda per due persone'
-descrizione: 'All''interno devono entrare due lettini. La famiglia si trova a Cittareale: l''abitazione ha subito importanti lesioni. Fate riferimento come sempre alla sede dell''Acli.'
-indirizzo: ''
-lat: '42.60025'
-lon: '13.14813'
-link: 'https://www.associazione alcli onlus http://www.alcli.it/'
-immagine: ''
-data: 16/09/2016
-</yamldata></pre>
-",closed
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/487,177431346,2016-09-23 22:41:55,2016-09-16 13:54:08,Tenda per due persone,42.60025,13.14813,"[""Accettato"", ""Fabbisogni"", ""Form""]",,,"{""cosa"": ""Tenda per due persone"", ""data"": ""16/09/2016"", ""descrizione"": ""All'interno devono entrare due lettini. La famiglia si trova a Cittareale: l'abitazione ha subito importanti lesioni. Fate riferimento come sempre alla sede dell'Acli."", ""email"": """", ""immagine"": """", ""indirizzo"": """", ""lat"": ""42.60025"", ""link"": ""https://www.associazione alcli onlus http://www.alcli.it/"", ""lon"": ""13.14813"", ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 cosa: 'Tenda per due persone'
