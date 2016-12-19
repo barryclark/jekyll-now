@@ -1,11 +1,15 @@
 ---
 layout: page
-title:
+title: null
 permalink: /work/
----  
+published: true
+---
+  
 
 
 # Pet Projects  
+* **Advanced Machine Learning Project: Learning to Attend Relevant Regions in Videos from Eye Fixations**  
+
 * **ISBI 2016: Skin Lesion Analysis Towards Melanoma Detection**  
 ![alt text](/images/task2b.jpg)    
 Ranked 8th in [Lesion Segmentation](https://challenge.kitware.com/#phase/566744dccad3a56fac786787) and 1st in [Lesion Dermoscopic Feature Segmentation](https://challenge.kitware.com/#phase/56fc26f7cad3a54f8bb80e4c)  
