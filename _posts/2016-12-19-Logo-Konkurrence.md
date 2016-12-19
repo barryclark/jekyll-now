@@ -3,7 +3,7 @@ layout: post
 title: Logo Konkurrence
 ---
 
-Hvis I ikke har set det endnu, har IT's tutorforening, IT-Tutor, oprettet en Facebookside [IT-Tutor](https://www.facebook.com/ITTutorforening/?ref=aymt_homepage_panel). 
+Hvis I ikke har set det endnu, har IT's tutorforening, IT-Tutor, oprettet en Facebookside [IT-Tutor](https://www.facebook.com/ITTutorforening) . 
 Hvor vi løbende vil komme med information omkring tutorforeningen, rusdagene og kommende events. 
 
 **IT-Tutor har brug for et super fedt logo!**
