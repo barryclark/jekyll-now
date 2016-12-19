@@ -13,4 +13,4 @@ Derfor har vi brug for jeres hjælp!
 Så hvis du har tid og lyst til at lave et logo til IT'ernes tutorforening vil vi meget gerne høre fra dig. 
 Det eneste I skal gøre er at opfylde disse guidelines: 
 
-![Logo Konkurrence krav:](/image/Logo-krav.png)
+![Logo Konkurrence krav:](/images/Logo-krav.png)
