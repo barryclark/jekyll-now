@@ -22,13 +22,17 @@ for $m = 1,...,M$. Typical values of $N$ are 2000 or larger (in some work, we've
 The goal is to test the hypothesis $H_0: \pi_m \leq \alpha$ for each $m = 1,...,M$ against the alternative that $H_A: \pi_m > \alpha$ for at least one model $m$. The likelihood ratio test statistic for this hypothesis set is: 
 
 $$D = -2 \log \Lambda = 2 N \sum_{m = 1}^M I\left(p_m > \alpha\right)\left[ p_m \log\left(\frac{p_m}{\alpha}\right) + (1 - p_m) \log\left(\frac{1 - p_m}{1 - \alpha}\right)\right].$$
-The question is then how to approximate the distribution of $D$ under $H_0$. El Barmi and Johnson (2006) present a solution to a much more general hypothesis testing problem where the null can be expressed in terms of inequalities in linear combinations of the parameters in a set of independent multinomial distributions. The present case is particularly simple because a) it involves binomial rather than multinomial distributions and b) each constraint pertains to a different, independent distribution. With these simplifications, El Barmi and Johnson's results imply that $D$ follows a weighted sum of $\chi^2$ distributions with degrees of freedom ranging from 0 to $M$, where the weights correspond to the values of the binomial probability mass function with size $M$ and probability 1/2. More precisely,
+The question is then how to approximate the distribution of $D$ under $H_0$. Shapiro (1988) provides results demonstrating that $D$ follows an asymptotic distribution equal to a weighted sum of $\chi^2$ distributions with degrees of freedom ranging from 0 to $M$, with weights given as follows. Let $q_m = \text{Pr}\left(p_m > \alpha | \pi_m\right)$. Let $x_1,...,x_m \in \{0,1\}$ be a vector of binary indicators and let $\mathcal{X}(m)$ denote the set of all values of $x_1,...,x_m$ such that $\sum_{j=1}^M x_j = m$. Now define the weights 
 
 $$
-\text{Pr}(D > d) \approx \frac{1}{2^M}\sum_{m = 0}^M {{M}\choose{m}} \text{Pr}\left(\chi^2_m > d\right).
+w_m = \sum_{\mathcal{X}(m)} \prod_{j=1}^M q_j^{x_j} \left(1 - q_j\right)^{1 - x_j}.
+$$
+It then follows that
+$$
+\text{Pr}(D > d) \approx \sum_{m = 0}^M w_m \text{Pr}\left(\chi^2_m > d\right).
 $$
 
-This expression can be used to directly compute a p-value for an observed value $d$ of the LRT statistic. It is a large-sample approximation, valid as $N \to \infty$, and so it is of course prudent to check how well it holds for the sort of sample sizes we're dealing with. 
+If the values of $q_j$ are calculated based on the maximum likelihood estimates (under the null), then this expression can be used to directly compute a p-value for an observed value $d$ of the LRT statistic. It is a large-sample approximation, valid as $N \to \infty$, and so it is of course prudent to check how well it holds for the sort of sample sizes we're dealing with. 
 
 ### Some quick simulations
 
@@ -50,11 +54,18 @@ binom_LRT <- function(p, N, alpha) {
 Here is function to compute the LRT statistic and corresponding p-value using the asymptotic approximation given above:
 ```{r}
 
-p_LRT <- function(p, N, alpha, M = length(p)) {
+p_LRT <- function(p, N, alpha, M = length(p), 
+                  X = expand.grid(rep(list(c(FALSE,TRUE)), M)),
+                  mx = rowSums(X)) {
   D <- binom_LRT(p = p, N = N, alpha = alpha)
-  a_vals <- dbinom(0:M, size = M, prob = 1/2L)
+  p_MLE <- pmin(p, alpha)
+  q <- 1 - pbinom(alpha * N + 1, size = N, prob = p_MLE)
+  lnq <- log(q)
+  lnqt <- log(1 - q)
+  q_x <- apply(X, 1, function(x) exp(sum(lnq[x]) + sum(lnqt[!x])))
+  wt <- tapply(q_x, mx, sum)
   chisq <- pchisq(D, df = 0:M, lower.tail = FALSE)
-  p_val <- sum(a_vals * chisq)
+  p_val <- sum(wt * chisq)
   c(D = D, p = p_val)
 }
 
@@ -67,17 +78,21 @@ Here's some code to generate a bunch of LRT statistics and p-values:
 
 r_DP <- function(alpha, N, M, scale_down, reps = 100) {
   pis <- alpha * c(rep(0.8, M * scale_down), rep(1, M * (1 - scale_down)))
+  X <- expand.grid(rep(list(c(FALSE,TRUE)), M))
+  mx <- rowSums(X)
+                   
   DP <- replicate(reps, {
       p <- rbinom(M, size = N, prob = pis) / N
-      p_LRT(p = p, N = N, alpha = alpha, M = M)
+      p_LRT(p = p, N = N, alpha = alpha, M = M, X = X, mx = mx)
   })
   data.frame(D = DP[1,], p = DP[2,])
 }
 ```
 
 The function sets `M * (1 - scale_down)` of the true rejection rates to $\alpha$ and the remaining `M * scale_down` of the true rejection rates to $0.8 \alpha$. If `scale_down = 0`, all of the true rejection rates will be exactly nominal, while `scale_down > 0` will lead to some of the rejection rates being less than nominal. The output of the function is a nice, uniform distribution of p-values:
+
 ```{r}
-res <- r_DP(alpha = 0.05, N = 2000, M = 20, scale_down = 0, reps = 1000)
+res <- r_DP(alpha = 0.05, N = 2000, M = 5, scale_down = 0, reps = 5000)
 hist(res$p)
 ```
 
