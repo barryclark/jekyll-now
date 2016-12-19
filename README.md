@@ -43,6 +43,15 @@ Most look is defined in style.scss the rest is found in the _sass folder
 #Submit a new post to the front page
 To submit a new post to the front page just add a new .md file to the _posts directory.
 
+Make sure to add the header found below to the .md file of all posts in order to display them on the front page.
+
+''
+---
+layout: post
+title: Ny Forening!
+---
+''
+
 
 ##Lokal Setup
 
