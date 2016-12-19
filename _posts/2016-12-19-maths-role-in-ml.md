@@ -1,5 +1,6 @@
 ---
-published: false
+title: Mathematics in AIML
+layout: post
 ---
 
 # Tool vs. target  
