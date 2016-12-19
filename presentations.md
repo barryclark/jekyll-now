@@ -4,6 +4,7 @@ title: Presentations
 permalink: /presentations/
 ---
 
+* [Effect sizes for single-case research]({{ site.url}}/files/Single-case-methods-IES-PI-meeting-2016.pdf). Presentation at Institute of Education Sciences 2016 Principal Investigators Meeting, December 19, 2016 in Washington, DC.
 * [Small-sample methods for cluster-robust variance estimation and hypothesis testing in fixed effects models]({{ site.url}}/files/CRVE-JSM-20160731.pdf). Presentation at the Joint Statistical Meetings, July 31, 2016 in Chicago, IL.
 * [When large samples act small: The importance of small-sample adjustments for cluster-robust inference in impact evaluations]({{ site.url}}/files/CRVE-AIR-20160715.pdf). Presentation at the American Institutes for Research Impact Working Group Lecture Series, July 18, 2016.
 * [When large samples act small: Cluster-robust variance estimation and hypothesis testing with few clusters]({{ site.url}}/files/PRC_talk_20160219.pdf). Presentation at the Population Research Center colloquium, February 19, 2016.
