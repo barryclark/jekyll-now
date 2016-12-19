@@ -176,7 +176,7 @@ We can generalize it by saying that a neural network with one input and one outp
 <div class="img-div" markdown="0">
     <img src="/images/NNs_bias_2.png" />
 </div>
-Where W and b are values we find during the training process. X is the input we plug into the formula (area in sq ft in our example). Y is the predicted price.
+In this graph, W and b are values we find during the training process. X is the input we plug into the formula (area in sq ft in our example). Y is the predicted price.
 
 
 
@@ -324,7 +324,7 @@ Congratulations on manually training your first neural network! Let's look at ho
 
 The two new graphs are to help you track the error values as you fiddle with the parameters (weight and bias) of the model. It's important to keep track of the error as the training process is all about reducing this error as much possible.
 
-How does gradient descent know where its next step should be? Calculus. You see, knowing the function we're minimizing (our loss function, the average of (y_ - y)² for all our data points), and knowing the current inputs into it (the current weight and bias), the derivatives of the loss function tell us which direction to nudge W and B in order to minimize the error.
+How does gradient descent know where its next step should be? Calculus. You see, knowing the function we're minimizing (our loss function, the average of (y_ - y)² for all our data points), and knowing the current inputs into it (the current weight and bias), the derivatives of the loss function tell us which direction to nudge W and b in order to minimize the error.
 
 Learn more about gradient descent and how to use it to calculate the new weights & bias in the first lectures of Coursera's [Machine Learning](https://www.coursera.org/learn/machine-learning) course.
 
@@ -459,7 +459,7 @@ Take a stab at finding the right weights and bias. You will start here to see th
 Our trusty gradient descent is here to help once again. It still is valuable in helping us find the right weights and bias.
 
 ## Features
-Now that you you've seen neural networks with one and two features, you can sort of figure out how to add additional features and use them to calculate your predictions. The number of weights will continue to grow, and our implementation of gradient descent will have to be tweaked as we add each feature so that it can update the new weights associated with the new feature.
+Now that you've seen neural networks with one and two features, you can sort of figure out how to add additional features and use them to calculate your predictions. The number of weights will continue to grow, and our implementation of gradient descent will have to be tweaked as we add each feature so that it can update the new weights associated with the new feature.
 
 
 It's important to note here that we don't blindly feed the network everything we know about our examples. We have to be selective about which features we feed the model. Feature selection/processing is an entire discipline with its own set of best practices and considerations. If you want to see an example of the process of examining a dataset to choose which features to feed a prediction model, check out  [A Journey Through Titanic](https://www.kaggle.com/omarelgabry/titanic/a-journey-through-titanic). It's a notebook where [Omar EL Gabry](https://twitter.com/Omar_ElGabry) narrates his process for solving Kaggle's Titanic challenge. Kaggle makes available the passenger's manifest of the Titanic including data like name, sex, age, cabin, and whether the person survived or not. The challenge is to build a model that predicts whether a person survived or not given their other information.
@@ -593,7 +593,7 @@ Great learning resources include:
  * Coursera's [Neural Networks for Machine Learning](https://www.coursera.org/learn/neural-networks) by [Geoffrey Hinton](https://en.wikipedia.org/wiki/Geoffrey_Hinton). More focused on neural networks and its visual applications.
  * Stanford's [CS231n: Convolutional Neural Networks for Visual Recognition](https://www.youtube.com/watch?v=g-PvXUjD6qg&list=PLlJy-eBtNFt6EuMxFYRiNRS07MCWN5UIA) by [Andrej Karpathy](https://twitter.com/karpathy). It's interesting to see some advanced concepts and the state of the art in visual recognition using deep neural networks.
  * The [Neural Network Zoo](http://www.asimovinstitute.org/neural-network-zoo/) is a great resource to learn more about the different types of neural networks.
-]
+
 
 
 ## Acknowledgements
