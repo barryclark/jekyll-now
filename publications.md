@@ -4,6 +4,10 @@ title: Selected Publications
 permalink: /publications/
 ---
 
+### Robust variance estimation
+
+* Pustejovsky, J. E. & Tipton, E. (2016). [Small sample methods for cluster-robust variance estimation and hypothesis testing in fixed effects models](http://doi.org/10.1080/07350015.2016.1247004). _Journal of Business and Economic Statistics_. In Press. 
+
 ### Meta-analysis methods
 
 * Tipton, E. & Pustejovsky, J. E. (2015). [Small-sample adjustments for tests of moderators and model fit using robust variance estimation in meta-regression.](http://doi.org/10.3102/1076998615606099) _Journal of Educational and Behavioral Statistics, 40_(6), 604-634. [Preprint]({{ site.url }}/files/Tipton-Pustejovsky-F-tests-with-RVE-May-2015.pdf).
