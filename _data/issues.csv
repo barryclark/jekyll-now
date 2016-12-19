@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1476,196444837,2016-12-19 15:41:30,2016-12-19 15:41:14,Il Comune di #Fiastra ha bisogno di due motoseghe,43.0361407,13.1554547,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""Il Comune di #Fiastra ha bisogno di due motoseghe"", ""data"": ""19/12/2016"", ""descrizione"": ""Il Comune di Fiastra ha bisogno urgente di un paio di motoseghe professionali (Still o Usqvarna) perch\u00e8 sono state rubate e il Comune \u00e8 rimasto senza, mentre in questo momento sarebbero molto utili. Per contatti: Maurizio, geometra del Comune."", ""email"": ""sia_82@hotmail.com"", ""immagine"": """", ""indirizzo"": ""Via Roma, Fiastra, MC, Marche, 62035, Italia"", ""lat"": ""43.0361407"", ""link"": """", ""lon"": ""13.1554547"", ""tel"": ""339 5803585""}","<pre><yamldata>tel: '339 5803585'
+email: sia_82@hotmail.com
+cosa: 'Il Comune di #Fiastra ha bisogno di due motoseghe'
+descrizione: 'Il Comune di Fiastra ha bisogno urgente di un paio di motoseghe professionali (Still o Usqvarna) perchè sono state rubate e il Comune è rimasto senza, mentre in questo momento sarebbero molto utili. Per contatti: Maurizio, geometra del Comune.'
+indirizzo: 'Via Roma, Fiastra, MC, Marche, 62035, Italia'
+lat: '43.0361407'
+lon: '13.1554547'
+link: ''
+immagine: ''
+data: 19/12/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1475,196430452,2016-12-19 15:13:42,2016-12-19 14:45:19,"Azienda agricola di #Pretare ha bisogno di mangime per bovini, equini e ovini",42.7978600,13.3004100,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""richiesta mangime"", ""data"": ""19/12/2016"", ""descrizione"": ""Buonasera, sono Santolini Santa, titolare dell'azienda agricola Le Terre delle fate, situata a Pretare, piccola frazione di Arquata del Tronto. Il mio paese \u00e8 stato duramente colpito dal sisma, cos\u00ec come la mia azienda. Essa \u00e8 composta da 20 bovini, 15 ovini e 4 equini. E' a conduzione familiare, gestita da me, con l'ausilio dei miei due figli. Ogni giorno siamo costretti a recarci da San Benedetto a Pretare, percorrendo circa 70 chilometri. Abbiamo necessit\u00e0 di almeno 50 quintali di mangime per soddisfare tutti i nostri animali. Purtroppo, a causa delle spese ingenti che stiamo affrontando, considerando anche le innumerevoli perdite economiche ricevute a causa del sisma, ci troviamo nella condizione di chiedere aiuto. Teniamo a precisare che la necessit\u00e0 \u00e8 reale e confidiamo nella comprensione di quanti vorranno darci una mano."", ""email"": ""mirkotrenta@libero.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": ""42.7978600"", ""link"": """", ""lon"": ""13.3004100"", ""tel"": ""3804323871""}","<pre><yamldata>tel: '3804323871'
 email: mirkotrenta@libero.it
 cosa: 'richiesta mangime'
@@ -2567,17 +2578,6 @@ link: 'https://goo.gl/3WfBz1'
 email: 'alessio.ruta@gmail.com'
 data: 04/11/2016
 </yamldata></pre>",closed
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1110,187358882,2016-11-04 15:39:27,2016-11-04 15:12:29,Cercasi roulotte a #Amatrice per una famiglia,,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""Roulotte"", ""data"": ""04/11/2016"", ""descrizione"": ""Stiamo cercando una roulotte per una famiglia di Amatrice che ha deciso di rimanere a vivere vicino alla propria casa."", ""email"": ""valeria.patacchiola.arci@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3494639384""}","<pre><yamldata>tel: '3494639384'
-email: valeria.patacchiola.arci@gmail.com
-cosa: Roulotte
-descrizione: 'Stiamo cercando una roulotte per una famiglia di Amatrice che ha deciso di rimanere a vivere vicino alla propria casa.'
-indirizzo: ''
-lat: ''
-lon: ''
-link: ''
-immagine: ''
-data: 04/11/2016
-</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1110,187358882,2016-11-04 15:39:27,2016-11-04 15:12:29,Cercasi roulotte a #Amatrice per una famiglia,,,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""Roulotte"", ""data"": ""04/11/2016"", ""descrizione"": ""Stiamo cercando una roulotte per una famiglia di Amatrice che ha deciso di rimanere a vivere vicino alla propria casa."", ""email"": ""valeria.patacchiola.arci@gmail.com"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": """", ""lon"": """", ""tel"": ""3494639384""}","<pre><yamldata>tel: '3494639384'
 email: valeria.patacchiola.arci@gmail.com
 cosa: Roulotte
