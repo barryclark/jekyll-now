@@ -3,7 +3,7 @@
 
 The IT-Tutor homepage. Written in Jekyll
 
-Based on [https://github.com/plusjade/jekyll-bootstrap]
+Based on (https://github.com/plusjade/jekyll-bootstrap)
 
 This site is written in Jekyll and hosted on github pages. This means that if you push changes to the master branch those changes will show up on [it-tutor.dk]. Cool right?!
 
