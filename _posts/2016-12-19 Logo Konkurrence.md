@@ -11,5 +11,6 @@ Hvor vi løbende vil komme med information omkring tutorforeningen, rusdagene og
 Derfor har vi brug for jeres hjælp! 
 
 Så hvis du har tid og lyst til at lave et logo til IT'ernes tutorforening vil vi meget gerne høre fra dig. 
-Det eneste I skal gøre er at opfylde disse krav: 
+Det eneste I skal gøre er at opfylde disse guidelines: 
+
 ![Logo Konkurrence krav:](/_posts/Logo-krav.png)
