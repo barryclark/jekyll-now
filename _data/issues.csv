@@ -1,4 +1,15 @@
 url,id,updated_at,created_at,title,lat,lon,labels,milestone,image,data,body,state
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1472,196370455,2016-12-19 15:09:04,2016-12-19 09:46:11,Offresi 22 plafoniere modulari con 4 neon ciascuna 60x60,43.1656,13.7242,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Form"", ""Sisma Ottobre""]",,http://i.imgur.com/6Js7eUZ.jpg,"{""cosa"": ""22 plafoniere modulari 60X60Cm"", ""data"": ""19/12/2016"", ""descrizione"": ""Doniamo 22 plafoniere modulari, tutte funzionanti con 4 neon ognuna, modulari 60x60 per controssoffitti. Sono usate ma in ottime condizioni. Siamo in provincia di Fermo."", ""email"": ""marco.pallotti@me.com"", ""immagine"": ""http://i.imgur.com/6Js7eUZ.jpg"", ""indirizzo"": """", ""lat"": ""43.1656"", ""link"": """", ""lon"": ""13.7242"", ""tel"": ""3495307024""}","<pre><yamldata>tel: '3495307024'
+email: marco.pallotti@me.com
+cosa: '22 plafoniere modulari 60X60Cm'
+descrizione: 'Doniamo 22 plafoniere modulari, tutte funzionanti con 4 neon ognuna, modulari 60x60 per controssoffitti. Sono usate ma in ottime condizioni. Siamo in provincia di Fermo.'
+indirizzo: ''
+lat: '43.1656'
+lon: '13.7242'
+link: ''
+immagine: 'http://i.imgur.com/6Js7eUZ.jpg'
+data: 19/12/2016
+</yamldata></pre>",open
 https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1471,196298148,2016-12-18 20:44:52,2016-12-18 20:44:22,A #Savelli di #Norcia è urgente la messa in sicurezza del campanile,42.7264537,13.1266875,"[""Accettato"", ""Bollettino"", ""Fabbisogni"", ""Sisma Ottobre""]",,http://i.imgur.com/yDZgnMA.jpg,"{""cosa"": ""A #Savelli di #Norcia \u00e8 urgente la messa in sicurezza del campanile"", ""data"": ""18/12/2016"", ""descrizione"": ""Dal terremoto del 30 ottobre il campanile della chiesa di Savelli \u00e8 pericolante e ad oggi nessuno ha provveduto a metterlo in sicurezza (La foto \u00e8 di Mauro Battiston)."", ""email"": """", ""immagine"": ""http://i.imgur.com/yDZgnMA.jpg"", ""indirizzo"": ""Strada provinciale di Norcia, Cascia, PG, UMB, 06043, Italia"", ""lat"": ""42.7264537"", ""link"": ""https://twitter.com/flaviaamabile/status/808652552380223489"", ""lon"": ""13.1266875"", ""tel"": """"}","<pre><yamldata>tel: ''
 email: ''
 cosa: 'A #Savelli di #Norcia è urgente la messa in sicurezza del campanile'
@@ -2304,14 +2315,14 @@ link: 'http://terremotocentroitalia.info/issues/997/index.html'
 immagine: ''
 data: 06/11/2016
 </yamldata></pre>",open
-https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1146,187572200,2016-11-06 19:51:55,2016-11-06 16:31:52,Offresi spettacolo di strada per popolazioni colpite dal sisma a #Norcia e #Valnerina,,,"[""Accettato"", ""Donazioni"", ""Form"", ""Sisma Ottobre""]",,,"{""cosa"": ""SPETTACOLO \""IL LETTO VOLANTE\"""", ""data"": ""06/11/2016"", ""descrizione"": ""La Compagnia Libero Pensatore di Perugia \u00e8 disponibile a portare a Norcia & Valnerina il proprio spettacolo di teatro di strada, Il Letto Volante. Contattateci"", ""email"": ""angelo@liberopensatore.it"", ""immagine"": """", ""indirizzo"": """", ""lat"": """", ""link"": ""https://www.youtube.com/watch?v=A6tLWKDiwhw"", ""lon"": """", ""tel"": ""3480331144""}","<pre><yamldata>tel: '3480331144'
-email: angelo@liberopensatore.it
-cosa: 'SPETTACOLO ""IL LETTO VOLANTE""'
-descrizione: 'La Compagnia Libero Pensatore di Perugia è disponibile a portare a Norcia & Valnerina il proprio spettacolo di teatro di strada, Il Letto Volante. Contattateci'
-indirizzo: ''
-lat: ''
-lon: ''
-link: 'https://www.youtube.com/watch?v=A6tLWKDiwhw'
+https://github.com/emergenzeHack/terremotocentro_segnalazioni/issues/1147,187579896,2016-11-06 19:47:30,2016-11-06 18:42:21,Disponibilità modulo abitativo 70 mq (necessita di trasporto da Passignano sul Trasimeno - PG),43.194143,12.12925,"[""Accettato"", ""Bollettino"", ""Donazioni"", ""Sisma Ottobre""]",,,"{""cosa"": ""Disponibilit\u00e0 modulo abitativo 70 mq da Passignano sul Trasimeno (PG)"", ""data"": ""06/11/2016"", ""descrizione"": ""Contatto: Puccetta Stefano 3487710091-99 Protezione Civile C.O.V.E.R. Passignano sul Trasimeno (PG) noi possiamo mettere a disposizione modulo abitativo da 70mq ha bisogno di qualche lavoro interno e mobilio, una volta aperto dispone di grande sala con angolo cucina due camere e bagno l'unico problema e portarlo li da voi, se riuscite ad organizzarvi \u00e8 a disposizione."", ""email"": """", ""immagine"": """", ""indirizzo"": ""Via Enrico Fermi, Passignano sul Trasimeno, PG, UMB, 06065, Italia"", ""lat"": ""43.194143"", ""link"": ""http://terremotocentroitalia.info/issues/997/index.html"", ""lon"": ""12.12925"", ""tel"": ""3487710091""}","<pre><yamldata>tel: '3487710091'
+email: ''
+cosa: 'Disponibilità modulo abitativo 70 mq da Passignano sul Trasimeno (PG)'
+descrizione: 'Contatto: Puccetta Stefano 3487710091-99 Protezione Civile C.O.V.E.R. Passignano sul Trasimeno (PG) noi possiamo mettere a disposizione modulo abitativo da 70mq ha bisogno di qualche lavoro interno e mobilio, una volta aperto dispone di grande sala con angolo cucina due camere e bagno l''unico problema e portarlo li da voi, se riuscite ad organizzarvi è a disposizione.'
+indirizzo: 'Via Enrico Fermi, Passignano sul Trasimeno, PG, UMB, 06065, Italia'
+lat: '43.194143'
+lon: '12.12925'
+link: 'http://terremotocentroitalia.info/issues/997/index.html'
 immagine: ''
 data: 06/11/2016
 </yamldata></pre>",open
