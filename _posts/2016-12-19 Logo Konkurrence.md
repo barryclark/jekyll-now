@@ -9,3 +9,4 @@ Hvor vi løbende vil komme med information.
 IT-Tutor har brug for et super fedt logo, derfor har vi brug for jeres hjælp! 
 Så hvis du har tid og lyst til at lave et logo til IT'ernes tutorforening vil vi meget gerne høre fra dig. 
 
+![Logo Konkurrence krav:](/images/logo.png)
