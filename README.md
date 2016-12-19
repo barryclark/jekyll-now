@@ -45,12 +45,12 @@ To submit a new post to the front page just add a new .md file to the _posts dir
 
 Make sure to add the header found below to the .md file of all posts in order to display them on the front page.
 
-''
+```
 ---
 layout: post
 title: Ny Forening!
 ---
-''
+```
 
 
 ##Lokal Setup
