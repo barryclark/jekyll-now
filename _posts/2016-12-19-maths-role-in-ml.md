@@ -13,7 +13,8 @@ In particular for AIML, *tool* is *mathematics* and *programming* while *target*
 
 **ML is not optimization**: The ultimate goal in optimization is to find optimum while that in ML is to minize generalization error. Optimum of cost function in ML do not neccessarily lead to optimal generalization error. In fact, it is very difficult to find the optimal solution in a hypothesis space in ML, instead we usually iteratively search for better solution until some good generalization error is met. 
 
-**Manifold in ML is not necessarily defined as rigoriously as in mathematics**: In the context of ML, manifold can be simply viewed as a connected set of points that can be well approximated by a lower-dimensional space embedded into a higher-dimensional space. 
+**Manifold in ML is not necessarily defined as rigoriously as in mathematics**: In the context of ML, manifold can be simply viewed as a connected set of points that can be well approximated by a lower-dimensional space embedded into a higher-dimensional space.   
+
 ![manifold](/images/manifold.png)  
 A 2-dimensional data is concentrated near a 1-dimensional manifold which is like a twisted string [1] 
 
