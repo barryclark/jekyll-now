@@ -6,9 +6,6 @@ author: David Nadeau
 
 The first Innodata web service allows cross references to law and rule books within legal documents to be annotated. 
 
-The machine learning engine behind the scenes is a deep neural network that has been trained on a few public collections of legal documents. 
-
-
 ## Authentication
 
 Sign up on our [developer portal](https://developer.innodatalabs.com/) to get your API key.
