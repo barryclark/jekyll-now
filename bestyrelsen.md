@@ -5,8 +5,8 @@ permalink: /bestyrelsen/
 group: nav
 ---
 
-Bestyrelsen består af 3 IT studerende. 
-*Disse tager også del i styregruppen som står for den praktiske afvikling af rusdagene. Styregruppen består af i alt 6 studerende som står for at tage kontakt til fakultetet, planlægge rusdagsprogram samt udvælgelse af tutorer.*
+Bestyrelsen består af 3 IT-studerende. 
+*Disse tager også del i styregruppen, som står for den praktiske afvikling af rusdagene. Styregruppen består af i alt 6 studerende, som står for kontakten med fakultetet, planlægningen rusdagsprogrammet samt udvælgelsen af tutorer.*
 
 ## 2016/2017 bestyrelsen består af: 
 
@@ -27,7 +27,7 @@ Bestyrelsen består af 3 IT studerende.
 
 ## Den resterende styregruppe består af
 
-### Sponsor Ansvarlig
+### Sponsoransvarlig
 **Ninna Hoffmann** 
 [ninna@it-tutor.dk](mailto:ninna@it-tutor.dk)
 
