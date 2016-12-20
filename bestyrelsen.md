@@ -35,7 +35,7 @@ Bestyrelsen består af 3 IT studerende.
 **Freja Sneibjerg Ebsen** 
 [freja@it-tutor.dk](mailto:freja@it-tutor.dk)
 
-### Glimrende korrekturlæser og levemand
+### Korrekturlæser
 **Magnus Høholt** 
 [magnus@it-tutor.dk](mailto:magnus@it-tutor.dk)
 
