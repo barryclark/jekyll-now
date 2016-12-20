@@ -12,13 +12,3 @@ I believe that one of the crutial and secret part of success for a career, parti
 In particular for AIML, *tool* is *mathematics* and *programming* while *target* is priors which are reasonable behaviors that you force your model to owe. Since *programming* can be viewed as just a realization of *mathematics* which is in the lower level, I only focus on *mathematics* when refer to *tool* in this post. From my perspective at this moment, *mathematics* in AIML field (I am talking about mathematics in a particular field AIML, not in general) in its own right is meaningless until you use them to encode priors into your model. In another word, *mathematics* is not intelligent in its own right, it simply follows logical rules. It is an AIML reseacher's role to come up with reasonable and well-educated priors and make use of *mathematics* to force such priors into their model's behaviors ,hence, giving *mathematics* a meaning.  
 
 **ML is not optimization**: The ultimate goal in optimization is to find optimum while that in ML is to minize generalization error. Optimum of cost function in ML do not neccessarily lead to optimal generalization error. In fact, it is very difficult to find the optimal solution in a hypothesis space in ML, instead we usually iteratively search for better solution until some good generalization error is met. 
-
-**Manifold in ML is not necessarily defined as rigoriously as in mathematics**: In the context of ML, manifold can be simply viewed as a connected set of points that can be well approximated by a lower-dimensional space embedded into a higher-dimensional space.   
-
-![manifold](/images/manifold.png)  
-A 2-dimensional data is concentrated near a 1-dimensional manifold which is like a twisted string [1] 
-
-
-
-**References**   
-[1] Deep Learning Book by Good Fellow et al.
