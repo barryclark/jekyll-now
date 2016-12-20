@@ -32,21 +32,23 @@ JMS bir abstraction ve/veya spec olduğu için alt vendorler ile çalışacağı
   3. Total de elimizde MQ üzerinde bir connection olacaktır. Bir sonraki adım ise Queue veya Topic'lere bağlanmaktır.
 
 ActiveMQ özelinde factory name ve default ayarlar şu şekilde;
-  * Factory name : org.apache.activemq.jndi.ActiveMQInitialContextFactory
-  * Provider URL : tcp://localhost:61616
-  * Connection Factory JNDI name : ConnectionFactory
-  * Queue JNDI name : dynamicQueues/{QueueName}
+
+* Factory name : org.apache.activemq.jndi.ActiveMQInitialContextFactory
+* Provider URL : tcp://localhost:61616
+* Connection Factory JNDI name : ConnectionFactory
+* Queue JNDI name : dynamicQueues/{QueueName}
 
 Default ayarları ActiveMQ/conf dizini altında bulabilirsiniz.
 
 > Yukarıda ifade edilecek şekilde bir MQ bağlantısı yaptığınız takdirde vendor bağımsız bir JMS çalışması yapmış olursunuz. Vendor, TibcoMQ, ActiveMQ, RabbitMQ, SonicMQ veya IBM MQ vs olabilir.
 
-> Provider url, bazı vendorler için tcp üzerinden erişilirken bazı vendorlerde ise IBM MQ gibi, Ldap provider url olabilir yada file systemde file binding olabilir.
+Provider url, bazı vendorler için tcp üzerinden erişilirken bazı vendorlerde ise IBM MQ gibi, Ldap provider url olabilir yada file systemde file binding olabilir.
 Birkaç örnek verelim;
-* IBM WebSphere MQ için Factory name com.sun.jndi.ldap.LdapCtxFactory ise provider URL de ldap://<ldap_url> şeklinde olmalıdır.
-* IBM WebSphere MQ için Factory name com.sun.jndi.fscontext.RefFSContextFactory ise provider URL de file:<url_ of_bindings_file> şeklinde olmalıdır.
-* ActiveMQ, SonicMQ için Provider URL -> tcp://<host>:<port>
-* TibcoMQ için Provider URL -> tibjmsnaming://<host>:<port> şeklindedir.
+
+* IBM WebSphere MQ için Factory name **com.sun.jndi.ldap.LdapCtxFactory** ise provider URL de **ldap://<ldap_url>** şeklinde olmalıdır.
+* IBM WebSphere MQ için Factory name **com.sun.jndi.fscontext.RefFSContextFactory** ise provider URL de **file:<url_ of_bindings_file>** şeklinde olmalıdır.
+* ActiveMQ, SonicMQ için Provider URL -> **tcp://host:port**
+* TibcoMQ için Provider URL -> **tibjmsnaming://host:port** şeklindedir.
 
 Bir tane Queue oluşturalım;
 ![activemq create queue](/images/java-platform/java-ee/jms/activemq_create_queue.png)
