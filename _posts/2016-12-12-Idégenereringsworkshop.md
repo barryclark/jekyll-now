@@ -5,7 +5,7 @@ title: Idégenereringsworkshop
 
 **Idégenereringsworkshop til studiestarten på IT**
 
-***Denne workshop finder sted den 31. januar kl. 17.00 - 20.00 i Stibitz***
+_Denne workshop finder sted den 31. januar kl. 17.00 - 20.00 i Stibitz_
 
 For at lave det bedste rusdagsprogram har vi brug for så mange idéer til, hvad de nye studerende kan lave i deres studiestart, som muligt! 
 Derfor er alle fra IT, der har interesse i at bidrage til en god studiestart, mere end velkomne til at deltage i denne idégenereringsworkshop.
